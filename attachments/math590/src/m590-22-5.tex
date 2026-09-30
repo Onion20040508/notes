@@ -1,0 +1,33 @@
+% Figure from MATH 590 notes, section 22. Compile with the notes preamble.
+\begin{tikzpicture}[scale=0.85,
+  mid/.style={decoration={markings, mark=at position 0.82 with {\arrow{Stealth[length=4pt]}}}, postaction={decorate}}]
+  % ---- the square ----
+  \fill[figB!12] (0,0) -- (2,0) -- (0,4) -- cycle;
+  \fill[figB!12] (2,0) -- (4,0) -- (4,4) -- cycle;
+  \fill[figR!15] (2,0) -- (4,4) -- (0,4) -- cycle;
+  \draw[black!55, thick] (2,0) -- (0,4);
+  \draw[black!55, thick] (2,0) -- (4,4);
+  \draw[black!70, thin] (0,0) rectangle (4,4);
+  % a time slice t = 0.4
+  \draw[black!50, dashed] (0,1.6) -- (4,1.6);
+  \node[font=\scriptsize, black!60, right] at (4,1.6) {$t$};
+  \node[font=\scriptsize, figB] at (0.62,0.7) {$f(2s)$};
+  \node[font=\scriptsize, figB] at (3.3,0.7) {$f(2-2s)$};
+  \node[font=\scriptsize, figR] at (2,2.8) {$f(1-t)$};
+  \foreach \x/\l in {0/0, 2/\tfrac12, 4/1} \node[font=\scriptsize, below] at (\x,0) {$\l$};
+  \node[font=\scriptsize, anchor=north] at (2,-0.45) {$t = 0$: \ $f * \bar f$};
+  \node[font=\scriptsize, anchor=south] at (2,4.05) {$t = 1$: \ $e_{x_0}$};
+  \node[font=\scriptsize, left] at (0,2.2) {$x_0$};
+  \node[font=\scriptsize, right] at (4,2.2) {$x_0$};
+  % ---- the path in X ----
+  \begin{scope}[shift={(6.2,1.2)}]
+    \draw[figB, thick, variable=\q, domain=0:1, samples=50, smooth] plot ({2.6*\q}, {0.5*\q+3.6*\q*(1-\q)});
+    \draw[figR, very thick, variable=\q, domain=0:0.6, samples=40, smooth] plot ({2.6*\q}, {0.5*\q+3.6*\q*(1-\q)});
+    \draw[figB, thick, -{Stealth[length=4pt]}] (2.21,0.884) -- (2.25,0.853);
+    \fill (0,0) circle (1.5pt) node[below, font=\scriptsize] {$x_0$};
+    \fill (2.6,0.5) circle (1.5pt) node[below, font=\scriptsize] {$x_1$};
+    \fill[figR] (1.56,1.164) circle (1.6pt) node[above, font=\scriptsize, yshift=1pt] {$f(1-t)$};
+    \node[font=\scriptsize, figB] at (2.5,1.1) {$f$};
+    \node[font=\small, black!60] at (3.0,1.9) {$X$};
+  \end{scope}
+\end{tikzpicture}

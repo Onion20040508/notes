@@ -252,6 +252,12 @@ tags: [topology, math590]
 
 ^ex-17-7
 
+![[m590-17-1.svg]]
+*The one-point compactification of $\mathbb{R}$: projecting from $N$ onto the tangent line at $S$ sends $p\in S^1\setminus\{N\}$ to $x\in\mathbb{R}$. A compact $C=[-M,M]$ (blue) corresponds to a closed arc away from $N$, and its complement (red: two rays plus an open arc through $N$) is exactly a type (2) neighborhood $Y\setminus C$ of $\infty=N$. Going to infinity in either direction means approaching $N$.*
+
+![[m590-17-2.svg]]
+*The same picture one dimension up, $\mathbb{R}^2\cup\{\infty\}\cong S^2$: the ray from $N$ through $p$ hits the tangent plane at $w$. The compact disk $C$ of radius $2$ (blue) corresponds to the lower hemisphere, and its complement (red) corresponds to the upper cap around $N$. Neighborhoods of $\infty$ are complements of compact sets.*
+
 ## Local Compactness in Hausdorff Spaces
 
 > [!theorem] Theorem §17.6: Characterization of Local Compactness (Munkres 29.2)

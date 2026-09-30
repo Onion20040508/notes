@@ -201,6 +201,9 @@ tags: [topology, math590]
 
 *Uses:* [[Topology §18 Countability Axioms#^thm-18-6|§18.6]]
 
+![[m590-18-1.svg]]
+*Proof of (3), separable $\Rightarrow$ second countable: given $x\in U$, pick $B(x,\varepsilon)\subseteq U$ (dashed), a point $d_i$ of the dense set $D$ (blue) with $d(x,d_i)<\varepsilon/2$, and $\frac1n<\varepsilon/2$. The basis ball $B(d_i,\frac1n)$ (red) contains $x$ and fits inside $B(x,\varepsilon)$ by the triangle inequality. Only countably many such balls exist.*
+
 > [!theorem] Proposition §18.5: Subspaces of Separable Metrizable Spaces
 > If $X$ is separable and metrizable, then every subspace $A \subseteq X$ is separable.
 

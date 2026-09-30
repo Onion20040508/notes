@@ -94,6 +94,9 @@ The main result of this section is [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1
 
 *Uses:* [[Lebesgue Number Lemma|§16.3]], [[Topology §15 Compact Spaces#^thm-15-10|§15.10]], [[Properties of Path Concatenation|§22.6]]
 
+![[m590-27-1.svg]]
+*The proof in one picture ($n = 3$). The loop $f$ is cut at $f(a_1), f(a_2) \in U \cap V$ into pieces lying in $U$ (blue: $f_1, f_3$) or in $V$ (green: $f_2$); $U$ and $V$ are open, so their boundaries are dashed. The red paths $\alpha_i$ run inside the path-connected overlap from $x_0$ to the cut points, turning the pieces into loops at $x_0$: $g_1 = f_1 * \bar\alpha_1$ in $U$, $g_2 = \alpha_1 * f_2 * \bar\alpha_2$ in $V$, $g_3 = \alpha_2 * f_3$ in $U$. Each $\alpha_i$ is traversed once each way, so the product $g_1 * g_2 * g_3$ is $f$ again.*
+
 > [!remark]- Connections
 > - Upgraded from “generate” to the exact group by the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]], whose surjectivity step is this theorem.
 
@@ -176,6 +179,9 @@ The main result of this section is [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1
 
 *Uses:* [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|§27.2]], [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Topology §23 The Fundamental Group#^ex-23-1|Ex. §23.1]], [[Topology §9 Continuous Functions#^prop-9-3|§9.3]], [[Topology §23 The Fundamental Group#^cor-23-6|§23.6]]
 
+![[m590-27-2.svg]]
+*Stereographic projection from the north pole $p$ (a cross-section through the $x_{n+1}$-axis): $f(x)$ is where the line from $p$ through $x$ meets the equatorial plane $\mathbb{R}^n = \{x_{n+1} = 0\}$. The lower hemisphere lands inside the unit ball, the upper hemisphere outside it, and points near $p$ run off to infinity, which is why $p$ must be removed. The south pole $q$ goes to $\vec 0$, so removing $q$ as well leaves $\mathbb{R}^n \setminus \{\vec 0\}$.*
+
 > [!remark]- Connections
 > - Stereographic projection first appeared for $S^1$ and $S^2$ in [[Topology §17 Local Compactness#^ex-17-7|One-Point Compactification of ℝ and ℝ²]].
 > - Recomputed with van Kampen in [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-1|Simply Connected Spheres via van Kampen]].
@@ -186,6 +192,9 @@ The main result of this section is [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1
 > This also explains why the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-9|no-retraction theorem for $B^{n+1} \to S^n$]] cannot be proved using $\pi_1$ when $n \geq 2$: $\pi_1(S^n) = 0$ gives no contradiction, and one needs homology instead.
 
 ^rem-27-3
+
+![[m590-27-3.svg]]
+*$U \cap V$ is a sphere with both poles removed. For $n = 2$ (left) any two points $a, b$ can be joined while avoiding $p$ and $q$ (red path). For $n = 1$ (right) the two removed points cut the circle into two arcs, homeomorphic to $(-\infty, 0)$ and $(0, \infty)$, and no path joins $a$ to $b$. That missing hypothesis is exactly what lets $\pi_1(S^1) \cong \mathbb{Z}$ be nontrivial.*
 
 > [!remark]- Connections
 > - The same observation from the retraction side: [[Topology §26 Deformation Retracts and Homotopy Type#^rem-26-4|Why Our Proof Does Not Generalize]].
@@ -232,6 +241,9 @@ The main result of this section is [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1
 > By [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]], $\pi_1(X) = 0$.
 
 ^ex-27-1
+
+![[m590-27-4.svg]]
+*The deformation retraction of $U = X \setminus \{q_2\}$ onto $S_1$: with $q_2$ removed, $S_2 \setminus \{q_2\} \cong \mathbb{R}^2$, and the straight-line contraction to the origin becomes a flow along great circles from $q_2$ toward the wedge point $p$ (red). $S_1$ (blue) never moves, so $\pi_1(U) \cong \pi_1(S^2) = 0$. $V = X \setminus \{q_1\}$ is the mirror image.*
 
 > [!remark]- Connections
 > - $S^2 \vee S^2$ is a [[Topology §28 Fundamental Group of Some Surfaces#^def-28-3|wedge sum]]; see also [[Topology §28 Fundamental Group of Some Surfaces#^ex-28-1|Wedge Sums]].

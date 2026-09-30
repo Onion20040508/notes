@@ -19,6 +19,9 @@ tags: [topology, math590]
 
 ^def-2-1
 
+![[m590-2-1.svg]]
+*Axiom (2) of a basis: wherever two basis elements $B_1, B_2$ (blue) overlap, each point $x$ of the overlap (darker) has its own basis element $B_3$ (red) with $x \in B_3 \subseteq B_1 \cap B_2$. The intersection itself need not be a basis element — it only has to contain one around each of its points.*
+
 > [!remark]- Connections
 > - Open sets are exactly unions of basis elements: [[Topology §2 Basis for a Topology#^lem-2-1|Topology Equals Union of Basis Elements]].
 > - Bases for constructions: [[Topology §3 Order Topology#^def-3-4|Order Topology]], [[Topology §4 Product Topology#^thm-4-1|Basis for Product Topology]], [[Topology §5 Subspace Topology#^lem-5-1|Basis for Subspace Topology]].
@@ -106,6 +109,9 @@ tags: [topology, math590]
 
 ^ex-2-5
 
+![[m590-2-2.svg]]
+*Why both topologies are strictly finer. Top: $[0,1)$ (red) is open in $\mathbb{R}_\ell$, but every standard interval $(a,b)$ around $0$ (blue) pokes out to the left of $0$. Bottom: $(-1,1)\setminus K$ (red, with the points $\tfrac1n$ removed, hollow) is open in $\mathbb{R}_K$, but the removed points pile up at $0$, so every $(a,b)$ around $0$ (blue) contains $\tfrac1n$ for all large $n$.*
+
 ## Comparing Topologies via Bases
 
 > [!theorem] Lemma §2.2: Comparing Topologies via Bases
@@ -121,6 +127,9 @@ tags: [topology, math590]
 > $(1) \Rightarrow (2)$: $\mathcal{T}' \supseteq \mathcal{T}$. Let $x \in X$, let $x \in B \in \mathcal{B}$. Then $B \in \mathcal{T} \subseteq \mathcal{T}'$. Since $B$ is open in $\mathcal{T}'$, there exists $B' \in \mathcal{B}'$ such that $x \in B' \subseteq B$.
 
 ^pf-2-2
+
+![[m590-2-3.svg]]
+*Condition (2) of Lemma §2.2 in $\mathbb{R}^2$, with $\mathcal{B}$ the open disks and $\mathcal{B}'$ the open squares. Left: whichever disk $B$ (blue) contains $x$, a small square $B'$ (red) around $x$ fits inside it, so $\mathcal{T}' \supseteq \mathcal{T}$. Right: with the roles exchanged a small disk fits inside any square, so $\mathcal{T} \supseteq \mathcal{T}'$, and disks and squares generate the same topology. The point $x$ need not be the center of the given element.*
 
 > [!theorem] Corollary §2.3: Comparing Topologies via Basis Openness
 > Let $\mathcal{T}_1, \mathcal{T}_2$ be topologies on $X$ with bases $\mathcal{B}_1, \mathcal{B}_2$ respectively.

@@ -61,6 +61,9 @@ tags: [topology, math590]
 
 ^ex-13-3
 
+![[m590-13-1.svg]]
+*A separation of $Y = [-1,0) \cup (0,1]$: both pieces are open in $Y$ (for example $[-1, 0) = (-2, 0) \cap Y$), disjoint, nonempty, and cover $Y$. The missing point $0$ (hollow) is the only point that could have connected them. It is a limit point of both pieces, but it is not in $Y$.*
+
 > [!theorem] Lemma §13.1: Characterization via Clopen Sets
 > A space $X$ is connected if and only if the only subsets of $X$ which are both open and closed are $\emptyset$ and $X$.
 
@@ -185,6 +188,9 @@ tags: [topology, math590]
 
 *Uses:* [[Topology §13 Connected Spaces#^lem-13-4|§13.4]]
 
+![[m590-13-2.svg]]
+*Connected sets $A_\alpha, A_\beta, A_\gamma$ sharing the point $p$ (red). If a separation $C, D$ of the union put $p$ in $C$, then [[Topology §13 Connected Spaces#^lem-13-4|Lemma §13.4]] would force each connected $A$ to lie entirely in $C$, since each contains $p$. That leaves $D$ empty.*
+
 ## Products of Connected Spaces
 
 > [!theorem] Theorem §13.6: Finite Product of Connected Spaces
@@ -204,6 +210,9 @@ tags: [topology, math590]
 ^pf-13-6
 
 *Uses:* [[Continuous Image of a Connected Space is Connected|§13.3]], [[Topology §13 Connected Spaces#^thm-13-5|§13.5]]
+
+![[m590-13-3.svg]]
+*The proof for $X \times Y$: $T_x$ is the cross formed by the horizontal $X \times b$ (blue) and the vertical $x \times Y$ (red), which meet at $x \times b$, so each $T_x$ is connected. Every cross contains the same horizontal line, hence the point $a \times b$. As $x$ varies (grey lines), the crosses cover $X \times Y$, and Theorem §13.5 finishes the proof.*
 
 > [!remark]- Connections
 > - Path-connected analogue: [[Topology §14 Connected Subspaces of ℝ#^thm-14-5|Product of Path-Connected Spaces]]; compact analogue: [[Topology §15 Compact Spaces#^thm-15-8|Finite Product of Compact Spaces]].

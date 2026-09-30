@@ -140,6 +140,9 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ^ex-12-2
 
+![[m590-12-2.svg]]
+*Gluing the endpoints of $[0,1]$: the two red endpoints become the single class $[0] = [1]$, and $f([t]) = e^{2\pi i t}$ wraps the interval once around $S^1$ (so $[\tfrac14] \mapsto i$). Only the endpoints are identified; every other class is a single point.*
+
 > [!example] Example §12.3: Torus as Quotient Space
 > $X = [0, 1] \times [0, 1]$. Define $\sim$ by:
 >
@@ -149,6 +152,9 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 > Then $X/{\sim} \cong$ torus.
 
 ^ex-12-3
+
+![[m590-12-3.svg]]
+*Square to torus: the edges $x \times 0$ and $x \times 1$ (blue, single arrows) are glued to form one circle on the torus, and $0 \times y$ and $1 \times y$ (red, double arrows) are glued to form another. The arrows show the orientations that are matched. All four corners become the single black point where the two circles cross.*
 
 > [!remark]- Connections
 > - The quotient map to $S^1 \times S^1$ is justified in [[Topology §12 Quotient Topology#^ex-12-6|Example §12.6: The Square-to-Torus Quotient Map]].
@@ -212,7 +218,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 > 2. $f$ is quotient map $\Leftrightarrow$ $g$ is quotient map
 >
 > ![[m590-12-1.svg]]
-> *The map $g$ factors through the quotient map $p$ as $g = f \circ p$, with $f$ the dashed induced map.*
+> *$g$ factors through the quotient map $p$ (double-headed arrow: surjective) as $g = f \circ p$. The red dashed arrow is the induced $f$, which exists and is unique because $g$ is constant on each fiber $p^{-1}(\{y\})$. Statements (1) and (2) say that $f$ inherits continuity, and the quotient property, from $g$.*
 
 ^thm-12-3
 

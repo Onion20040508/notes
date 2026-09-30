@@ -59,6 +59,9 @@ tags: [topology, math590]
 
 *Uses:* [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]], [[Topology §11 Metric Topology#^def-11-1|Def. §11.1]], [[Topology §11 Metric Topology#^def-11-3|Def. §11.3]]
 
+![[m590-20-1.svg]]
+*The half-radius trick: $B(a,\varepsilon_a)$ misses $Z$ and $B(z,\varepsilon_z)$ misses $A$ (dashed), so $d(a,z)\ge\max(\varepsilon_a,\varepsilon_z)$. The half-balls (solid) have radii adding up to at most $\max(\varepsilon_a,\varepsilon_z)$, so they cannot meet. $U$ and $V$ are the unions of all red and all blue half-balls.*
+
 > [!remark] Remark: Why Half-Radii?
 > Using $\varepsilon_a/2$ and $\varepsilon_z/2$ instead of $\varepsilon_a$ and $\varepsilon_z$ is the key trick. With full radii, $U$ and $V$ could overlap: a point near the boundary of $B(a, \varepsilon_a)$ might also be near $Z$. Halving the radii creates a “buffer zone” that the triangle inequality exploits. This is the same idea behind the proof that metric spaces are Hausdorff ([[Topology §11 Metric Topology#^thm-11-4|Theorem §11.4]]), scaled up from points to closed sets.
 
@@ -95,6 +98,9 @@ tags: [topology, math590]
 ^pf-20-2
 
 *Uses:* [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]], [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]]
+
+![[m590-20-2.svg]]
+*Stage 2 of the proof. Stage 1 gave, for each $a\in A$, disjoint open sets $U_a\ni a$ and $V_a\supseteq B$. Finitely many $U_{a_j}$ (red dashed) cover $A$. Their union is $U$ (red), and the intersection of the matching $V_{a_j}$ (blue dashed) is $V$ (blue). Each $V_{a_j}$ may meet the other $U$'s, like $V_{a_1}$ meeting $U_{a_2}$, but $V$ lies inside every $V_{a_j}$ and so misses all of $U$.*
 
 > [!remark] Remark: Not Covered: Urysohn's Lemma and Tietze Extension
 > Normality is the hypothesis for two deep results in Munkres §33–35 that were **not covered in this course**:

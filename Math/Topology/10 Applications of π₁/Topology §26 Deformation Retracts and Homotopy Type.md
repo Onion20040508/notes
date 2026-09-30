@@ -67,6 +67,9 @@ tags: [topology, math590]
 
 *Uses:* [[Functoriality of π₁|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|§26.1]]
 
+![[m590-26-8.svg]]
+*The homotopy $H(x,t) = (1-t)x + t\,x/\|x\|$ slides every point along its own ray (red) to the blue unit sphere, from outside and from inside alike. Nothing ever reaches the removed origin, and points of $S^n$ never move, so $S^n$ is a [[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-7|deformation retract]] of $\mathbb{R}^{n+1} \setminus \{0\}$ (drawn for $n = 1$). Keeping only the outer arrows gives [[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-4|Example §26.4]].*
+
 ## Retractions
 
 > [!definition] Definition §26.1: Retraction
@@ -204,6 +207,9 @@ tags: [topology, math590]
 
 *Uses:* [[Topology §23 The Fundamental Group#^def-23-4|Def. §23.4]], [[Functoriality of π₁|§23.5]], [[Fundamental Group of the Circle|§24.10]], [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|§26.5]]
 
+![[m590-26-9.svg]]
+*The blue boundary loop $f$ generates $\pi_1(S^1, b_0) \cong \mathbb{Z}$, but inside the convex disk the straight-line homotopy $(1-t)f(s) + t\,b_0$ shrinks it (lighter circles) to $b_0$. A retraction $r$ fixes $f$, so it would carry this shrinking into $S^1$ and contract a generator of $\mathbb{Z}$. That is the algebraic contradiction “$j_*: \mathbb{Z} \to 0$ is injective”, drawn as a picture.*
+
 > [!remark] Remark: Why This Matters
 > This is the first real application of $\pi_1$: a purely topological fact (no retraction exists) proved using algebra ($\mathbb{Z} \not\cong 0$). The proof pattern — assume a map exists, apply $\pi_1$, get a contradiction from group theory — is the template for all obstruction arguments. The [[Brouwer Fixed Point Theorem|Brouwer fixed point theorem below]] is a direct consequence.
 
@@ -277,6 +283,9 @@ tags: [topology, math590]
 
 *Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[No-Retraction Theorem|§26.6]]
 
+![[m590-26-10.svg]]
+*The ray construction. Starting at $f(x)$ and passing through $x$, the ray leaves $B^2$ at $r(x) = \gamma(t_0)$ (red). For a boundary point $y$ the exit point is $y$ itself ($t_0 = 1$), so $r$ fixes $S^1$. The construction needs only one thing: a direction $x - f(x) \neq 0$, i.e. no fixed point.*
+
 > [!remark] Remark
 > The Brouwer fixed point theorem is a purely existential result—it tells you a fixed point exists but gives no method for finding it. The proof illustrates the power of algebraic topology: the computation [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ ≠ 0]] (which took real work via [[Topology §24 Covering Spaces|covering spaces]]) has a concrete geometric consequence about maps of the disk to itself.
 
@@ -298,14 +307,14 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 > **($\Leftarrow$): Extension $\Rightarrow$ nullhomotopic.** Given $k: B^{n+1} \to X$ with $k|_{S^n} = h$, the homotopy is:
 >
 > ![[m590-26-1.svg]]
-> *The homotopy $H: S^n \times I \to X$, $(x, t) \mapsto k((1-t)x)$.*
+> *The homotopy (blue) evaluates $k$ on the shrinking sphere of radius $1-t$: at $t = 0$ it is $h = k|_{S^n}$, at $t = 1$ it is the constant $k(0)$. It stays inside $B^{n+1}$, which is all we need from $k$.*
 >
 > Check: $\|(1-t)x\| = 1-t \leq 1$ so $(1-t)x \in B^{n+1}$; $H(x,0) = k(x) = h(x)$; $H(x,1) = k(0)$ is constant.
 >
 > **($\Rightarrow$): Nullhomotopic $\Rightarrow$ extension.** We apply the Universal Property of Quotient Maps ([[Universal Property of Quotient Maps|§12.3]]). The maps involved are:
 >
 > ![[m590-26-2.svg]]
-> *The cone map $\pi: S^n \times I \to B^{n+1}$, the nullhomotopy $H: S^n \times I \to X$, and the induced extension $k: B^{n+1} \to X$ (dashed).*
+> *The cone map $\pi(x,t) = (1-t)x$ is a quotient map that crushes only the top $S^n \times \{1\}$ to the center $0$. The nullhomotopy $H$ is constant ($= c$) exactly there, so it factors through $\pi$: the red dashed $k$ with $k \circ \pi = H$ is the extension, and its bottom edge gives $k|_{S^n} = h$.*
 >
 > where $H: S^n \times I \to X$ is the nullhomotopy ($H(x,0) = h(x)$, $H(x,1) = c$) and $\pi(x, t) = (1-t)x$ is the cone map.
 >
@@ -335,7 +344,7 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 > For $n = 1$, we [[No-Retraction Theorem|proved this using π₁]]: a retraction $r: B^2 \to S^1$ would force an injection $j_*: \pi_1(S^1) \hookrightarrow \pi_1(B^2)$, i.e., $\mathbb{Z} \hookrightarrow 0$, which is impossible.
 >
 > ![[m590-26-3.svg]]
-> *The maps $S^1 \xrightarrow{j} B^2 \xrightarrow{r} S^1$ and the induced homomorphisms $\pi_1(S^1) \cong \mathbb{Z} \to \pi_1(B^2) = 0 \to \pi_1(S^1) \cong \mathbb{Z}$.*
+> *Apply $\pi_1$ to $r \circ j = \operatorname{id}_{S^1}$ (blue): the identity of $\mathbb{Z}$ (red) would have to factor through $\pi_1(B^2) = 0$, which is impossible. For $n \ge 2$ the bottom row becomes $0 \to 0 \to 0$ and this contradiction disappears.*
 >
 > For $n \geq 2$, this argument fails: $\pi_1(S^n) = 0$ ([[Sⁿ is Simply Connected for n ≥ 2|spheres of dimension ≥ 2 are simply connected]]), so the injection $0 \hookrightarrow 0$ is no contradiction. The proof for general $n$ requires **homology theory** (specifically, $H_n(S^n) \cong \mathbb{Z}$ replaces $\pi_1(S^1) \cong \mathbb{Z}$), which is beyond this course.
 >
@@ -352,7 +361,7 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 > The proof is identical to the [[Topology §26 Deformation Retracts and Homotopy Type#^pf-26-7|B² case]]—the ray construction works in any dimension. The logical structure is:
 >
 > ![[m590-26-4.svg]]
-> *No fixed point $\Rightarrow$ (ray construction) a retraction $r: B^{n+1} \to S^n$ $\Rightarrow$ contradiction.*
+> *The proof builds one thing, the red arrow: from a fixed-point-free $f$, the ray from $f(x)$ through $x$ produces a retraction $r: B^{n+1} \to S^n$, which the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-9|no-retraction theorem]] forbids.*
 >
 > Suppose $f(x) \neq x$ for all $x \in B^{n+1}$. Since $f(x)$ and $x$ are distinct, the ray $\gamma(t) = f(x) + t(x - f(x))$ for $t \geq 0$ is well-defined. The ray crosses $S^n$ when $\|\gamma(t)\| = 1$ (distance from $\gamma(t)$ to the origin equals $1$). Expanding $\|\gamma(t)\|^2 = 1$ in coordinates gives a quadratic $at^2 + bt + c = 0$ with:
 > - $a = \|x - f(x)\|^2 = \sum_{i=1}^{n+1} (x_i - f(x)_i)^2 > 0$ (since $f(x) \neq x$).
@@ -375,7 +384,7 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 > The full chain for dimension $n$:
 >
 > ![[m590-26-5.svg]]
-> *$\pi_1(S^1) \cong \mathbb{Z}$ (for $n = 1$ only) or $H_n(S^n) \cong \mathbb{Z}$ (general $n$) gives no retraction $B^{n+1} \to S^n$; the ray construction then gives Brouwer's theorem for $B^{n+1}$, and composing gives the fixed point property for retracts of $B^{n+1}$.*
+> *Blue arrows are proved in these notes; the dashed gray arrow (no retraction for general $n$, from $H_n(S^n) \cong \mathbb{Z}$) needs homology and is taken as given. Everything to the right of “no retraction” uses only the ray construction and composition, so it holds in every dimension once that one input is granted.*
 >
 > For $n = 1$, we proved everything from scratch. For $n \geq 2$, the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-9|no-retraction theorem]] is taken as given (it requires homology), but everything downstream follows by the same arguments.
 
@@ -457,6 +466,9 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 
 ^ex-26-2
 
+![[m590-26-11.svg]]
+*$H(x,y,z,t) = (x, y, (1-t)z)$ moves every point straight down (red) onto the blue plane $z = 0$; points below the plane rise the same way. Since $(x, y) \neq (0,0)$ never changes, no point ever touches the removed $z$-axis (red, dashed), and in particular none lands on the origin.*
+
 > [!example] Example §26.3: $B^2$ deformation retracts onto a point
 > $H: B^2 \times I \to B^2$ defined by $H(x, t) = (1-t)x$. So $\pi_1(B^2) = 0$ (trivial).
 
@@ -484,6 +496,9 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 > This illustrates that **isomorphic $\pi_1$ does not imply deformation retract**—the relationship is one-directional.
 
 ^ex-26-6
+
+![[m590-26-12.svg]]
+*The doubly punctured plane deformation retracts onto the figure eight (left) and onto the theta space (right): points flow away from the punctures $p, q$ and in from far away onto the blue graph. So both graphs have $\pi_1 \cong F_2$ and the same homotopy type as $\mathbb{R}^2 \setminus \{p, q\}$, although neither graph is a deformation retract of the other.*
 
 > [!example] Example §26.7: $S^n$ is a deformation retract of $\mathbb{R}^{n+1} \setminus \{0\}$
 > Via $H(x,t) = (1-t)x + tx/\|x\|$ (proved in the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|previous theorem]]). So $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) \cong \pi_1(S^n)$.
@@ -556,7 +571,7 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 > We want a deformation retraction $F: (T^2 \setminus \{pt\}) \times I \to T^2 \setminus \{pt\}$. We have $\tilde{F}$ on the square. Consider the diagram:
 >
 > ![[m590-26-6.svg]]
-> *The deformation retraction $\tilde{F}$ of the punctured square, the quotient maps $\pi \times \operatorname{id}$ and $\pi$, and the induced map $F$ on the punctured torus (dashed).*
+> *Upstairs, $\tilde F$ is an explicit straight-line push to the boundary; the vertical maps are the quotient maps. The red dashed $F$ is what the universal property delivers, and the only thing to check is that $\pi \circ \tilde F$ is constant on fibers, which holds because $\tilde F$ never moves the (glued) boundary points.*
 >
 > We want the dashed arrow $F$ to exist and be continuous. By the universal property ([[Universal Property of Quotient Maps|§12.3]]), the composite $\pi \circ \tilde{F}$ descends to a continuous map $F$ on $(T^2 \setminus \{pt\}) \times I$ if and only if $\pi \circ \tilde{F}$ is **constant on fibers** of $\pi \times \operatorname{id}$.
 >
@@ -595,6 +610,9 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 > This is the general strategy whenever you want to build continuous maps on quotient spaces: work upstairs where geometry is simple, verify the gluing is respected, then descend.
 
 ^ex-26-9
+
+![[m590-26-13.svg]]
+*Step 4 on the square $[0, 2\pi]^2$: the red rays push every point away from the puncture $q = (\pi, \pi)$ onto the boundary, which stays fixed. After gluing (the two $a$ edges together, the two $b$ edges together, all four corners to one point) the boundary is the figure eight $a \vee b$. The orange loop $t$ around $q$ expands to the boundary word $aba^{-1}b^{-1}$ ([[Topology §26 Deformation Retracts and Homotopy Type#^rem-26-8|the ungluing argument]]).*
 
 > [!remark]- Connections
 > - $\pi_1$ of the figure eight: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|π₁(S¹ ∨ S¹) ≅ ℤ ∗ ℤ]]. Used in [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-4|π₁(T²) ≅ ℤ × ℤ via van Kampen]].
@@ -726,7 +744,7 @@ The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §
 > In diagram form:
 >
 > ![[m590-26-7.svg]]
-> *The commutative triangle $k_* = \hat{\alpha} \circ h_*$ from $\pi_1(X, x_0)$, with $\hat{\alpha}: \pi_1(Y, h(x_0)) \to \pi_1(Y, k(x_0))$ an isomorphism.*
+> *The lemma asserts the red arrow: $k_*$ is $h_*$ followed by the basepoint-change isomorphism $\hat\alpha$ along the track $\alpha(t) = H(x_0, t)$ of the basepoint. If the basepoint does not move, $\hat\alpha = \operatorname{id}$ and the triangle collapses to $k_* = h_*$.*
 
 ^lem-26-14
 
@@ -756,6 +774,9 @@ The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §
 ^pf-26-14
 
 *Uses:* [[Basepoint Independence of π₁|§23.2]]
+
+![[m590-26-14.svg]]
+*The square $I \times I$, each corner labeled by its image under $H \circ (f \times \operatorname{id})$: bottom $h \circ f$, top $k \circ f$, both sides $\alpha$. The blue path (bottom, then right side) and the red path (left side, then top) have the same endpoints in the convex square, so they are path homotopic there (gray). Composing with $H \circ (f \times \operatorname{id})$ gives $(h \circ f) * \alpha \simeq_p \alpha * (k \circ f)$.*
 
 > [!remark] Remark
 > When $H(x_0, t) = y_0$ for all $t$ (the basepoint stays fixed), the path $\alpha$ is constant, so $\hat{\alpha} = \operatorname{id}$ and we recover [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|the earlier lemma]]: $k_* = h_*$.

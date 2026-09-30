@@ -97,6 +97,9 @@ Topology is the study of **topological spaces**, **continuous maps** between the
 
 ^ex-1-4
 
+![[m590-1-1.svg]]
+*The five collections of Example §1.4 on $X=\{a,b,c\}$ (the frame is $X$ itself; blue loops are the other open sets). $\mathcal{T}_4$ fails because the union $\{a,b\}$ of two of its open sets (dashed red) is missing; $\mathcal{T}_5$ fails because the intersection $\{b\}$ of two of its open sets (dashed red) is missing.*
+
 ## The Standard Topology on $\mathbb{R}$
 
 > [!example] Example §1.5: Standard Topology on $\mathbb{R}$

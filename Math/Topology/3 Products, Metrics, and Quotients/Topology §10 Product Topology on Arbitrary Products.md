@@ -108,3 +108,6 @@ tags: [topology, math590]
 > But $f^{-1}(U) = \bigcap_{n=1}^{\infty} \left(-\frac{1}{n}, \frac{1}{n}\right) = \{0\}$, which is not open in $\mathbb{R}$.
 
 ^ex-10-2
+
+![[m590-10-1.svg]]
+*Each vertical line is one factor of $\mathbb{R}^\omega$ and the blue segments are the $U_n$ (open endpoints hollow). The red dots are the point $f(t) = (t, t, \ldots)$. Left: a product basis element restricts only finitely many factors (here $n = 1, 2$), so $f(t)$ lies in it for all $|t| < \tfrac12$ and the preimage contains an interval. Right: the box set $U = \prod (-\tfrac1n, \tfrac1n)$ restricts every factor. Whatever $t \neq 0$ is, the intervals eventually shrink below height $t$ ($n \ge 3$ in the drawing), so $f^{-1}(U) = \{0\}$.*

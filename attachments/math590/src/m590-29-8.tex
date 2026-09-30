@@ -12,13 +12,13 @@
     \draw[black!75, thick, mid=0.55] (\a:1) arc (\a:\b:1);
     \pgfmathsetmacro{\m}{(\a+\b)/2}
     \node[font=\small] at (\m:1.2) {$a$};
-    \fill[black] (\a:1) circle (1.4pt);
   }
+  \foreach \k in {1,...,\n} {\fill[black] ({\s+(\k-1)*360/\n}:1) circle (1.4pt);}
   \draw[figG, very thick] (0,0) circle (0.3);
-  \draw[figG, very thick, -{Stealth[length=2.4mm, bend]}] (-20:0.3) arc (-20:14:0.3);
+  \draw[figG, very thick, -{Latex[length=2.2mm, width=2mm]}] (0.3,-0.08) -- (0.3,0.07);
   \filldraw[fill=white, draw=black] (0,0) circle (1.3pt);
   \node[font=\scriptsize, figG] at (0,0.42) {$t$};
-  \node[font=\scriptsize, figR] at (-0.28,-0.44) {$U$};
-  \node[font=\scriptsize, figB] at (0.66,-0.47) {$V$};
+  \node[font=\scriptsize, figR] at (0,-0.46) {$U$};
+  \node[font=\scriptsize, figB] at (0,-0.8) {$V$};
 
 \end{tikzpicture}

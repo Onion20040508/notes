@@ -14,10 +14,12 @@
   }
   % lift of f*g : x-axis from (0,0) to (1,0), then the circle at (1,0)
   \draw[figB, very thick, mid=0.6] (0,0) -- (1,0);
-  \draw[figR, very thick, mid=0.5] (1,0) arc (-90:270:\r);
+  \draw[figR, very thick] (1,0) arc (-90:270:\r);
+  \draw[figR, very thick, -{Latex[length=2mm, width=1.8mm]}] (1.12,2*\r) -- (0.94,2*\r);
   % lift of g*f : y-axis from (0,0) to (0,1), then the circle at (0,1)
   \draw[figR, very thick, mid=0.6] (0,0) -- (0,1);
-  \draw[figB, very thick, mid=0.5] (0,1) arc (180:540:\r);
+  \draw[figB, very thick] (0,1) arc (180:540:\r);
+  \draw[figB, very thick, -{Latex[length=2mm, width=1.8mm]}] (2*\r,0.88) -- (2*\r,1.06);
   \fill[black] (0,0) circle (1.7pt);
   \fill[black] (1,0) circle (1.7pt) (0,1) circle (1.7pt);
   \node[font=\scriptsize, below left] at (0,0) {$e_0$};

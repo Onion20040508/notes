@@ -58,6 +58,9 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^ex-15-3
 
+![[m590-15-1.svg]]
+*The cover $\{(\frac1n,1]\}$ of $(0,1]$ (gray) creeps toward $0$ but never reaches it: any finitely many members have union $(\frac1N,1]$ for the largest $N$ used, so a whole interval $(0,\frac1N]$ (red) stays uncovered. The missing endpoint $0$ is exactly what destroys compactness.*
+
 > [!example] Example §15.4
 > $X = \{0\} \cup \{\frac{1}{n} \mid n \in \mathbb{Z}_+\} \subseteq \mathbb{R}$. $X$ is compact.
 
@@ -75,6 +78,9 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 ^pf-ex-15-4
 
 *Uses:* [[Topology §5 Subspace Topology#^def-5-1|Def. §5.1]]
+
+![[m590-15-2.svg]]
+*Why $\{0\}\cup\{\frac1n\}$ is compact: the one set $U\ni 0$ (red) contains $(-\varepsilon,\varepsilon)\cap X$ and so swallows the entire tail of the sequence; only finitely many points $y_1,\dots,y_k$ (here $1,\frac12,\frac13$) are left, and one more cover element each (gray) finishes the job.*
 
 > [!remark]- Connections
 > - This $X$ reappears as the one-point compactification of $\{1/n\} \cong \mathbb{Z}_+$: [[Topology §17 Local Compactness#^ex-17-6|Example §17.6]].
@@ -236,6 +242,9 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 *Uses:* [[Topology §8 Hausdorff Spaces#^def-8-1|Def. §8.1]], [[Topology §15 Compact Spaces#^lem-15-1|§15.1]]
 
+![[m590-15-3.svg]]
+*The proof in one picture: for each $y\in Y$ Hausdorff gives disjoint $U_y\ni x$ (gray) and $V_y\ni y$ (blue); compactness cuts the $V_y$ down to finitely many, so the intersection $U=\bigcap U_{y_i}$ (red) is still open. It is a neighborhood of $x$ missing all of $Y$. Without the finite subcover we would need $\bigcap_{y\in Y}U_y$, and an infinite intersection of open sets need not be open.*
+
 > [!remark]- Connections
 > - The same point-by-point separation argument, applied twice, proves [[Topology §20 Normal Spaces#^thm-20-2|Every Compact Hausdorff Space is Normal]].
 
@@ -352,6 +361,9 @@ To prove this, we first establish a key lemma:
 
 ^rem-15-7
 
+![[m590-15-5.svg]]
+*The counterexample with $Y=\mathbb{R}$: the open set $N=\{|x|<1/(|y|+1)\}$ (blue) contains the slice $\{0\}\times\mathbb{R}$ but pinches toward it as $|y|\to\infty$. Every candidate tube $(-\varepsilon,\varepsilon)\times\mathbb{R}$ (red dashed) escapes $N$ once $|y|>\frac1\varepsilon-1$ (red regions). Covering the non-compact slice takes infinitely many basis boxes, and their widths have no positive lower bound.*
+
 > [!proof]+ Proof
 > For each $y \in Y$, the point $(x_0, y) \in N$. Since $N$ is open, there exists a [[Topology §4 Product Topology#^def-4-1|basis element]] $B_y \times C_y$ such that $(x_0, y) \in B_y \times C_y \subseteq N$.
 >
@@ -366,6 +378,9 @@ To prove this, we first establish a key lemma:
 ^pf-15-9
 
 *Uses:* [[Topology §4 Product Topology#^def-4-1|Def. §4.1]]
+
+![[m590-15-4.svg]]
+*The tube lemma: each point of the slice $x_0\times Y$ (blue line) sits in a basis box $B_{y_i}\times C_{y_i}\subseteq N$ (dashed); finitely many $C_{y_i}$ cover $Y$ by compactness, and $W=\bigcap B_{y_i}$ is the narrowest of the box widths. A point of the tube $W\times Y$ (red) lies in whichever box has its height in $C_{y_j}$, hence in $N$ (blue region).*
 
 > [!proof]+ Proof of Finite Product Theorem
 > Suffices to prove for two spaces (then use induction). Let $X, Y$ be compact. Let $\mathcal{A}$ be an open covering of $X \times Y$. We show $\mathcal{A}$ has a finite subcover.

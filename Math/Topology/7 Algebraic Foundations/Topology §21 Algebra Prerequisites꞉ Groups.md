@@ -480,6 +480,9 @@ tags: [topology, math590]
 
 ^ex-21-4
 
+![[m590-21-1.svg]]
+*Why order is permanent in $F_2$ but not in $\mathbb{Z} \times \mathbb{Z}$. In both pictures the vertices are group elements and an edge joins $w$ to $wa$ (blue) or to $wb$ (red). From the identity, the words $ab$ and $ba$ (gray paths) end at *different* vertices of the tree for $F_2$: a tree has no cycles, so each reduced word is its own path and no relation closes the square. In the grid for $\mathbb{Z} \times \mathbb{Z}$ the relation $ab = ba$ closes every square, and both words land on the same vertex.*
+
 > [!remark]- Connections
 > - Realized as $\pi_1$ of the figure eight: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|Example §29.2]].
 

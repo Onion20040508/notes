@@ -52,6 +52,9 @@ tags: [topology, math590]
 
 ^rem-7-2
 
+![[m590-7-1.svg]]
+*Three kinds of points for a set $A$ (blue; the solid part of the boundary belongs to $A$, the dashed part does not). The point $p$ has a neighborhood inside $A$, so it has room to wiggle and $p \in \text{Int}(A)$. The point $x$ is not in $A$, yet every neighborhood of it (red) meets $A$ (shaded), so $x \in \overline{A} \setminus \text{Int}(A)$ is on the boundary. The point $y$ has a neighborhood $U$ (gray) that misses $A$, so $y \notin \overline{A}$. This is exactly the test in Theorem §7.3.*
+
 > [!example] Example §7.1
 > $A = [0, 1] \subseteq \mathbb{R}$. Then $\text{Int}(A) = (0, 1)$ and $\overline{A} = [0, 1]$.
 
@@ -137,6 +140,9 @@ tags: [topology, math590]
 
 ^ex-7-4
 
+![[m590-7-2.svg]]
+*$B = \{\tfrac{n+1}{n}\} = \{2, \tfrac32, \tfrac43, \ldots\}$ (blue) piles up at $1$. Every neighborhood $(1-\varepsilon,1+\varepsilon)$ of $1$ (red) contains infinitely many points of $B$, so $1$ is a limit point even though $1\notin B$. A point like $\tfrac32$ is isolated: a small interval around it (blue) meets $B$ only in $\tfrac32$. So $B' = \{1\}$ and $\overline{B} = B \cup \{1\}$.*
+
 > [!example] Example §7.5
 > $(0,1)$: What are the limit points? Every point in $[0,1]$ is a limit point of $A$.
 
@@ -199,6 +205,9 @@ tags: [topology, math590]
 > $x_n = b \to a, b, c$ in the space $X = \{a,b,c\}$ [[Topology §7 Interior and Closure#^ex-7-7|above]], since every neighborhood of $a$ contains $b$, same for $b$ and $c$.
 
 ^ex-7-8
+
+![[m590-7-3.svg]]
+*The space of Examples §7.7–7.8. Its open sets are $\emptyset$, $\{b\}$ (red), $\{a,b\}$, $\{b,c\}$ (blue) and $X$. Every nonempty open set contains $b$, so the constant sequence $x_n = b$ lies in every neighborhood of $a$, of $b$ and of $c$, and it converges to all three. Also, $\{a,c\}$ is not among the open sets, so $\{b\}$ is not closed.*
 
 > [!remark]- Connections
 > - Contrast: [[Topology §8 Hausdorff Spaces#^thm-8-3|Unique Limits in Hausdorff Spaces]].

@@ -16,8 +16,13 @@
   \fill (0,0.2) circle (1.4pt) (1.6,0.2) circle (1.4pt);
   \node[font=\scriptsize, left=1pt] at (0,0.2) {$a$};
   \node[font=\scriptsize, right=1pt] at (1.6,0.2) {$z$};
-  \node[font=\scriptsize, figR] at (-0.15,1.85) {$B(a,\varepsilon_a)$};
-  \node[font=\scriptsize, figB] at (2.25,1.55) {$B(z,\varepsilon_z)$};
-  \node[font=\scriptsize, figR] at (0.05,-0.75) {$B(a,\tfrac{\varepsilon_a}2)$};
-  \node[font=\scriptsize, figB] at (1.75,-0.62) {$B(z,\tfrac{\varepsilon_z}2)$};
+  % radii
+  \draw[figR, -stealth] (0,0.2) -- ++(-90:0.725);
+  \node[font=\scriptsize, figR, right=0pt] at (0,-0.2) {$\tfrac{\varepsilon_a}2$};
+  \draw[figR, -stealth, dashed] (0,0.2) -- ++(225:1.45);
+  \node[font=\scriptsize, figR, fill=figR!12, inner sep=1pt] at (-0.62,-0.72) {$\varepsilon_a$};
+  \draw[figB, -stealth] (1.6,0.2) -- ++(-90:0.6);
+  \node[font=\scriptsize, figB, right=0pt] at (1.6,-0.12) {$\tfrac{\varepsilon_z}2$};
+  \draw[figB, -stealth, dashed] (1.6,0.2) -- ++(35:1.2);
+  \node[font=\scriptsize, figB, fill=figB!12, inner sep=1pt] at (2.1,0.75) {$\varepsilon_z$};
 \end{tikzpicture}

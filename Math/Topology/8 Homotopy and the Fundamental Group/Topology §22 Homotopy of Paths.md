@@ -58,6 +58,9 @@ Let $I = [0, 1]$.
 
 ^rem-22-2
 
+![[m590-22-1.svg]]
+*The straight-line homotopy from $f$ to $g$ in $\mathbb{R}^n$: each point $f(x)$ slides along the segment to $g(x)$ (red: one trajectory $t \mapsto H(x,t)$, passing $H(x,\tfrac12)$ at the midpoint). The dashed curves are the intermediate maps $H(\cdot,\tfrac13)$ and $H(\cdot,\tfrac23)$. The only thing the construction needs is that every segment stays in the target, which is convexity.*
+
 The straight-line homotopy is the most fundamental construction in homotopy theory. It recurs in three different forms throughout these notes:
 
 1. **Any two maps to $\mathbb{R}^n$ are homotopic** ([[Topology §22 Homotopy of Paths#^thm-22-1|above]]): $H(x, t) = (1-t)f(x) + tg(x)$. Works because $\mathbb{R}^n$ is convex.
@@ -116,6 +119,9 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 ^rem-22-5
 
+![[m590-22-2.svg]]
+*A path homotopy $F: I \times I \to X$. The bottom edge of the square goes to $f$ and the top edge to $f'$ (blue); the left and right edges are crushed to $x_0$ and $x_1$. Each horizontal slice at height $t$ (red) is an intermediate path $F(\cdot,t)$ from $x_0$ to $x_1$, one frame of the movie; the dashed slices are two more frames.*
+
 ## Homotopy is an Equivalence Relation
 
 > [!theorem] Lemma §22.3
@@ -158,6 +164,9 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 > At $s = 1/2$: $f(1) = x_1 = g(0)$, so both pieces agree. Continuous by the [[Pasting Lemma|pasting lemma]]. The product traverses $f$ then $g$, each at double speed.
 
 ^rem-22-6
+
+![[m590-22-3.svg]]
+*The product $f * g$: the first half of $I$ runs $f$ at double speed (blue), the second half runs $g$ at double speed (red). The pieces meet at $s = \tfrac12$, where $f(1) = x_1 = g(0)$.*
 
 ## Concatenation of Homotopy Classes
 
@@ -276,6 +285,9 @@ The following theorem shows that the product of path homotopy classes satisfies 
 
 ^rem-22-9
 
+![[m590-22-4.svg]]
+*The associativity homotopy drawn on its domain $I \times I$. The slice at height $t$ is cut at $s = (t+1)/4$ and $s = (t+2)/4$: it runs $f$ on the left piece, $g$ on the middle (red) and $h$ on the right. The bottom slice is the schedule of $(f*g)*h$, the top slice that of $f*(g*h)$. The red band has constant width $\tfrac14$, so only $f$ and $h$ trade time; the left edge stays at $x_0$ and the right edge at $x_3$.*
+
 > [!proof]+ Proof of (2a): Right Identity $[f] * [e_{x_1}] = [f]$
 > Define $H: I \times I \to X$ by:
 >
@@ -334,6 +346,9 @@ The following theorem shows that the product of path homotopy classes satisfies 
 ^pf-22-6-4
 
 *Uses:* [[Pasting Lemma|§9.5]]
+
+![[m590-22-5.svg]]
+*The inverse homotopy $f * \bar f \simeq_p e_{x_0}$. On the square, the slice at height $t$ runs $f(2s)$ out to $f(1-t)$, pauses there across the red triangle, then comes back along $f(2-2s)$. In $X$ (right) that slice traces only the red initial arc of $f$, out to $f(1-t)$ and back. As $t \to 1$ the arc shrinks to $x_0$ and the slice becomes $e_{x_0}$.*
 
 > [!proof]+ Proof of (3): Inverse — $\bar{f} * f \simeq_p e_{x_1}$
 > Define $H: I \times I \to X$ by:

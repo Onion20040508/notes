@@ -28,6 +28,9 @@ tags: [topology, math590]
 
 ^def-19-3
 
+![[m590-19-1.svg]]
+*The separation hierarchy. Dashed curves are open sets, solid-bordered regions are closed sets. $T_1$: every $y\ne x$ has a neighborhood $V_y$ missing $x$, which is the same as $\{x\}$ being closed. Hausdorff: two points get disjoint neighborhoods. Regular: a point and a closed set $B$ do. Normal: two disjoint closed sets $A,B$ do.*
+
 > [!remark] Remark: Why $T_1$ is Part of the Definition
 > The $T_1$ axiom (singletons are closed) is *built into* the definitions of regular and normal. This is Munkres's convention, and it is essential: without $T_1$, the implications [[Topology §19 Separation Axioms#^thm-19-1|Normal ⇒ Regular ⇒ Hausdorff]] would fail. For example, the separation property for closed sets is vacuously easy in the [[Topology §1 Topological Spaces#^ex-1-2|indiscrete topology]] (the only closed sets are $\emptyset$ and $X$, so there are no nontrivial disjoint closed sets to separate), but the indiscrete topology is not even [[Topology §8 Hausdorff Spaces#^def-8-1|Hausdorff]]. Including $T_1$ prevents such degeneracies.
 
@@ -99,6 +102,9 @@ tags: [topology, math590]
 
 ^ex-19-1
 
+![[m590-19-2.svg]]
+*Why $\mathbb{R}_K$ is not regular: a neighborhood $U$ of $0$ (red) can remove the points of $K=\{\frac1n\}$ (blue dots), but it must contain an interval $(a,b)\setminus K$. Any open $V\supseteq K$ (blue) contains a small interval around each $\frac1n$, and just below $\frac1n$ (here $\frac13$) that interval meets $(a,b)\setminus K$ at a point $z$. So $U\cap V\neq\emptyset$.*
+
 > [!remark]- Connections
 > - $\mathbb{R}_K$ is the [[Topology §2 Basis for a Topology#^ex-2-4|K-Topology]] of §2.
 
@@ -128,6 +134,9 @@ tags: [topology, math590]
 > Thus $U \cap V = \emptyset$, and $\mathbb{R}_\ell$ is normal. $\square$
 
 ^ex-19-2
+
+![[m590-19-3.svg]]
+*Normality of $\mathbb{R}_\ell$: each $a\in A$ gets a basis interval $[a,x_a)$ (red) missing $B$, and each $b\in B$ gets $[b,x_b)$ (blue) missing $A$. Every interval must stop before it reaches a point of the other set (dashed: not allowed). So if a red and a blue interval met, the one starting further left would contain the other's left endpoint.*
 
 ## Characterization of Regular and Normal Spaces
 
@@ -174,3 +183,6 @@ tags: [topology, math590]
 ^pf-19-2
 
 *Uses:* [[Topology §19 Separation Axioms#^def-19-2|Def. §19.2]], [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]], [[Closure Characterization|§7.3]]
+
+![[m590-19-4.svg]]
+*The closure characterization, (a) for regular and (b) for normal. The open set $W$ (hatched) contains $X\setminus U$ and is disjoint from $V$, so $\overline V$ (red) cannot reach $W$. The result is the nesting $x\in V\subseteq\overline V\subseteq U$ in (a) and $A\subseteq V\subseteq\overline V\subseteq U$ in (b), with $U$ dashed blue.*

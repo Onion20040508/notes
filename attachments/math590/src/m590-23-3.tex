@@ -1,0 +1,19 @@
+% Figure from MATH 590 notes, section 23. Compile with the notes preamble.
+\begin{tikzpicture}[
+  mid/.style={decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=4pt]}}}, postaction={decorate}}]
+  % x1 on the left, x0 on the right
+  \coordinate (x1) at (0,0);
+  \coordinate (x0) at (3.2,0.2);
+  % the lollipop: alpha-bar (x1 -> x0) on top, alpha (x0 -> x1) below
+  \draw[figR, thick, mid] (0,0.11) .. controls (1.0,0.83) and (2.2,-0.27) .. (3.2,0.31);
+  \draw[figR, thick, mid] (3.2,0.09) .. controls (2.2,-0.57) and (1.0,0.53) .. (0,-0.11);
+  % the loop f at x0
+  \draw[figB, thick, mid] (x0) .. controls (3.9,1.5) and (5.2,0.9) .. (5.0,0.0)
+        .. controls (4.8,-0.9) and (3.8,-0.8) .. (x0);
+  \fill (x1) circle (1.6pt) node[left, font=\scriptsize] {$x_1$};
+  \fill (x0) circle (1.6pt);
+  \node[font=\scriptsize, anchor=south east, inner sep=1.5pt] at (3.12,0.4) {$x_0$};
+  \node[font=\scriptsize, figR] at (1.25,0.72) {$\bar\alpha$};
+  \node[font=\scriptsize, figR] at (2.05,-0.42) {$\alpha$};
+  \node[font=\scriptsize, figB] at (5.25,0.45) {$f$};
+\end{tikzpicture}

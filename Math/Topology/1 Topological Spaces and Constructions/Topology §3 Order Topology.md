@@ -74,22 +74,22 @@ tags: [topology, math590]
 > **1. Open interval $(a \times b, c \times d)$ where $a < c$:**
 >
 > ![[m590-3-1.svg]]
-> *The interval $(a \times b, c \times d)$, $a < c$: the part of the line $x = a$ above $b$, every full vertical line strictly between $a$ and $c$, and the part of the line $x = c$ below $d$.*
+> *The interval $(a \times b, c \times d)$, $a < c$ (blue): the part of the line $x = a$ above $b$, every full vertical line strictly between $a$ and $c$ (hatched strip), and the part of the line $x = c$ below $d$. The endpoints (hollow) and the dashed half-lines are not in the interval.*
 >
 > **2. Open interval $(a \times b, a \times d)$ on the same vertical line ($b < d$):**
 >
 > ![[m590-3-2.svg]]
-> *The interval $(a \times b, a \times d)$: an open vertical segment on the line $x = a$.*
+> *The interval $(a \times b, a \times d)$: an open vertical segment on the line $x = a$ (blue, hollow endpoints). The rest of that line (dashed) is not in the interval.*
 >
 > **3. Ray $(a \times b, \infty)$:**
 >
 > ![[m590-3-3.svg]]
-> *The ray $(a \times b, \infty)$: the part of the line $x = a$ above $b$, together with every full vertical line to its right.*
+> *The ray $(a \times b, \infty)$: the part of the line $x = a$ above $b$ (hollow endpoint excluded), together with every full vertical line to its right (hatched, continuing forever to the right).*
 >
 > **4. Ray $(-\infty, c \times d)$:**
 >
 > ![[m590-3-4.svg]]
-> *The ray $(-\infty, c \times d)$: every full vertical line to the left of $c$, together with the part of the line $x = c$ below $d$.*
+> *The ray $(-\infty, c \times d)$: every full vertical line to the left of $c$ (hatched, continuing forever to the left), together with the part of the line $x = c$ below $d$ (hollow endpoint excluded).*
 >
 > **Key insight:** Unlike the standard topology on $\mathbb{R}^2$ (where open sets are “blobs”), open sets in the dictionary order topology are unions of vertical line segments and rays. The topology is much finer in the horizontal direction.
 
@@ -150,3 +150,6 @@ tags: [topology, math590]
 > So $\neq$ discrete topology.
 
 ^ex-3-7
+
+![[m590-3-5.svg]]
+*$X = \{1,2\}\times\mathbb{Z}_+$ in the dictionary order: all of the column $\{1\}\times\mathbb{Z}_+$ comes before $2\times 1$. A basis element $(1\times a,\ 2\times b)$ containing $2\times 1$ (red; the hollow endpoints are excluded) contains the whole tail $1\times(a+1),\ 1\times(a+2), \ldots$ of the first column, so $\{2\times 1\}$ is not open and the topology is not discrete. (Drawn with $a=2$, $b=3$.)*

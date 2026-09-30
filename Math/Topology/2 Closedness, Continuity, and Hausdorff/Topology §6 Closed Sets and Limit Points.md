@@ -29,6 +29,9 @@ tags: [topology, math590]
 
 ^ex-6-2
 
+![[m590-6-1.svg]]
+*The closed quadrant $\{x\le 0,\ y\le 0\}$ (blue, including its two boundary rays) and its complement: the union of the open half-planes $\mathbb{R}\times(0,\infty)$ and $(0,\infty)\times\mathbb{R}$ (red hatching, crossed where the two overlap).*
+
 > [!example] Example §6.3
 > In the [[Topology §1 Topological Spaces#^ex-1-3|discrete topology]] on a set $X$, every set $X \setminus A$ is open $\Rightarrow$ every subset $A \subseteq X$ is closed.
 

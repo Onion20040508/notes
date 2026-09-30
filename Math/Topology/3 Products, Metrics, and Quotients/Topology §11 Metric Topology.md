@@ -77,6 +77,9 @@ tags: [topology, math590]
 
 *Uses:* [[Topology §2 Basis for a Topology#^def-2-1|Def. §2.1]]
 
+![[m590-11-2.svg]]
+*The basis axiom for $\varepsilon$-balls: $y$ lies in both balls (blue, open), at distance $d(x_i, y)$ from each center. The slack left before each boundary is $\delta_i = \varepsilon_i - d(y, x_i)$ (red segments). The ball $B_d(y, \delta)$ with $\delta = \min(\delta_1, \delta_2)$ fits inside both. Here $\delta = \delta_2$, so the small ball touches the boundary of $B_d(x_2, \varepsilon_2)$ from inside without crossing it.*
+
 > [!remark]- Connections
 > - MATH 451 open sets in a metric space: [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^def-13-5|Definition §13.5: Open and Closed Subsets]].
 
@@ -150,6 +153,9 @@ tags: [topology, math590]
 
 *Uses:* [[Topology §11 Metric Topology#^lem-11-1|§11.1]], [[Topology §2 Basis for a Topology#^lem-2-2|§2.2]]
 
+![[m590-11-1.svg]]
+*The two inequalities as nested balls in $\mathbb{R}^2$ ($n = 2$): $B_\rho(x, \varepsilon/\sqrt2) \subseteq B_d(x, \varepsilon) \subseteq B_\rho(x, \varepsilon)$, a square (red) inside the disc (blue) inside a square (red). Every ball of one metric contains a ball of the other around the same center, which is exactly what [[Topology §11 Metric Topology#^lem-11-1|Lemma §11.1]] needs in both directions.*
+
 > [!remark]- Connections
 > - The same inequality in MATH 451: [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^prop-13-1|Proposition §13.1: Equivalence of the Two Distances]].
 
@@ -215,6 +221,9 @@ tags: [topology, math590]
 > Contradiction.
 
 ^pf-11-4
+
+![[m590-11-3.svg]]
+*With $\varepsilon = \tfrac{d(x,y)}{2}$ the two open balls just touch. The midpoint (hollow) is at distance exactly $\varepsilon$ from both centers, so it lies in neither ball, and $B(x,\varepsilon) \cap B(y,\varepsilon) = \varnothing$. This is the triangle-inequality argument drawn out.*
 
 > [!theorem] Corollary §11.5
 > Any non-Hausdorff space is not metrizable.

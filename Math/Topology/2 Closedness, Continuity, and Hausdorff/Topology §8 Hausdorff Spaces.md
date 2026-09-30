@@ -12,6 +12,9 @@ tags: [topology, math590]
 
 ^def-8-1
 
+![[m590-8-1.svg]]
+*Hausdorff separation: the distinct points $x_1, x_2$ sit in neighborhoods $U_1$ (blue) and $U_2$ (red) that do not meet (dashed boundaries: the sets are open). In the cofinite topology this picture cannot be drawn: two nonempty open sets have finite complements, so they always intersect.*
+
 > [!remark]- Connections
 > - Every metric space is Hausdorff: [[Topology §11 Metric Topology#^thm-11-4|Every Metric Space is Hausdorff]].
 > - Stronger separation axioms: [[Topology §19 Separation Axioms#^thm-19-1|Separation Hierarchy]].
@@ -67,6 +70,9 @@ tags: [topology, math590]
 > Let $x_n \to x$. If $y \neq x$, take $U_x, U_y$ neighborhoods of $x, y$ disjoint. Since $U_x$ contains all $x_n$ with $n \geq N_1$ for some $N_1$, but if $U_y$ also contains $x_n$ with $n \geq N_2$ for some $N_2$, then $U_x, U_y$ contains all points where $n \geq \max\{N_1, N_2\}$, contradiction.
 
 ^pf-8-3
+
+![[m590-8-2.svg]]
+*Why a limit is unique: from $N_1$ on, the whole tail of $(x_n)$ is trapped in $U_x$ (blue). Since $U_x \cap U_y = \varnothing$, no tail is left to enter $U_y$ (red), so $x_n \not\to y$. Only finitely many early terms, like $x_1, x_2$, lie outside $U_x$.*
 
 > [!remark]- Connections
 > - MATH 451 version: [[Single Variable Analysis §7 Limits of Sequences#^thm-7-1|Uniqueness of Limits]].

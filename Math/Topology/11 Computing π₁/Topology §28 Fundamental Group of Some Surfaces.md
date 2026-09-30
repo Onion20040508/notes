@@ -47,6 +47,9 @@ tags: [topology, math590]
 
 *Uses:* [[Topology §12 Quotient Topology#^def-12-2|Def. §12.2]], [[Topology §24 Covering Spaces#^def-24-1|Def. §24.1]]
 
+![[m590-28-1.svg]]
+*The evenly covered neighborhood from the proof: $U = B(x,\varepsilon)\cap S^2$ (dark red) and its antipodal copy $a(U)$ (light red, on the far side of the sphere) are disjoint because $\varepsilon < 1$ while $d(x,-x) = 2$ (dotted diameter). $p$ maps each of them homeomorphically onto the same set $p(U) \subseteq P^2$: two sheets over $p(U)$.*
+
 > [!theorem] Theorem §28.2: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$
 > The fundamental group of the projective plane is the cyclic group of order $2$.
 
@@ -78,6 +81,9 @@ tags: [topology, math590]
 > Traversing this loop twice gives a full great circle in $S^2$, which IS contractible (since [[Sⁿ is Simply Connected for n ≥ 2|$S^2$ is simply connected]]). So the generator has order $2$: $[g]^2 = [e]$.
 
 ^rem-28-1
+
+![[m590-28-2.svg]]
+*Why the generator has order $2$. The first traversal of $g$ lifts to the half great circle from $x_0$ to $-x_0$ (solid red), which is not a loop in $S^2$, so $[g] \neq [e]$. The second traversal lifts to the antipodal half (dashed) and returns to $x_0$; together they form a full great circle, a loop in the simply connected $S^2$, so $[g]^2 = [e]$.*
 
 ## Projective $n$-Space
 
@@ -155,6 +161,9 @@ tags: [topology, math590]
 > The **figure eight** space is $X = S^1 \vee S^1$, the [[Topology §28 Fundamental Group of Some Surfaces#^def-28-3|wedge sum]] of two circles. Concretely, $X = A \cup B$ where $A$ and $B$ are circles in $\mathbb{R}^2$ that intersect in exactly one point $x_0$ (the basepoint).
 
 ^def-28-4
+
+![[m590-28-3.svg]]
+*The figure eight $X = A \cup B$: the circles $A$ (blue, traversed by $f$) and $B$ (red, traversed by $g$) meet only at $x_0$. A basic neighborhood of $x_0$ (green, open ends hollow) contains a small open arc of each circle through $x_0$: the cross of Example §28.1.*
 
 We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|Seifert-van Kampen theorem, §29]]). But using covering spaces, we can prove the key fact that $\pi_1(X)$ is **non-abelian**: $[f] * [g] \neq [g] * [f]$ for the generators.
 
@@ -241,6 +250,9 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 
 *Uses:* [[Path Lifting Lemma|§24.6]], [[Topology §24 Covering Spaces#^thm-24-8|§24.8]], [[Topology §24 Covering Spaces#^thm-24-2|§24.2]]
 
+![[m590-28-4.svg]]
+*The covering $p: E \to X$ from the proof. The $x$-axis and the circles on the $y$-axis lie over $A$ (blue); the $y$-axis and the circles on the $x$-axis lie over $B$ (red). The lift of $f*g$ from $e_0$ runs along the $x$-axis to $(1,0)$ and then around the red circle there, so it ends at $(1,0)$. The lift of $g*f$ runs up to $(0,1)$ and around the blue circle, so it ends at $(0,1)$. Different endpoints, so $f*g \not\simeq_p g*f$.*
+
 > [!remark] Remark
 > This proves $\pi_1(X)$ is non-abelian, which already distinguishes the figure eight from any space with abelian $\pi_1$ (such as the [[Topology §23 The Fundamental Group#^cor-23-8|torus]], [[Fundamental Group of the Circle|$S^1$]], or any [[Sⁿ is Simply Connected for n ≥ 2|$S^n$]]). The full result $\pi_1(X) \cong F_2$ (the [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-8|free group]] on two generators — meaning not only non-abelian, but with *no relations at all* between $[f]$ and $[g]$) requires the [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|Seifert-van Kampen theorem (§29)]].
 
@@ -278,6 +290,9 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 ^pf-28-5
 
 *Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-9|§21.9]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-2|§21.2]], [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]]
+
+![[m590-28-5.svg]]
+*The figure eight $X$ (red) inside $\Sigma_2$: one circle around each hole, meeting at $x_0$ on the neck (dashed). The retraction $r$ collapses the neck to $x_0$ and then each torus onto its red circle, keeping $X$ fixed. This is why $j_*$ is injective and $r_*$ is surjective.*
 
 > [!proof]+ Alternative Proof (via surjection)
 > We use $r_*$ instead of $j_*$, applying the surjective direction.

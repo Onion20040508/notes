@@ -137,6 +137,9 @@ tags: [topology, math590]
 
 *Uses:* [[Continuous Image of a Connected Space is Connected|§13.3]]
 
+![[m590-14-2.svg]]
+*IVT via connectedness, drawn for $X = [a,b]$: $f(a) < r < f(b)$. If $r$ were not a value of $f$, the image $f(X)$ (right) would split at $r$ into $A = f(X) \cap (-\infty, r)$ (blue) and $B = f(X) \cap (r, \infty)$ (red), a separation of the connected set $f(X)$. So $r$ is hit, possibly several times (red dots), and $c$ is any one of them.*
+
 ## Path-Connectedness
 
 > [!definition] Definition §14.3: Path and Path-Connected
@@ -200,6 +203,9 @@ tags: [topology, math590]
 > This shows: connected $\not\Rightarrow$ path-connected. (Proof in Munkres.)
 
 ^ex-14-7
+
+![[m590-14-1.svg]]
+*The topologist's sine curve. $S$ (blue) is a continuous image of $(0,1]$, so it is connected. As $x \to 0^+$ it oscillates ever faster between $\pm1$ and accumulates on the whole segment $\{0\} \times [-1,1]$ (red), so $\overline{S} = S \cup \{0\} \times [-1,1]$ is connected. No path can travel from the red segment into $S$: it would have to pass through infinitely many oscillations of height $2$ in a finite parameter interval, which is incompatible with continuity.*
 
 > [!theorem] Theorem §14.5: Product of Path-Connected Spaces
 > If $X$ and $Y$ are path-connected, then $X \times Y$ is path-connected.

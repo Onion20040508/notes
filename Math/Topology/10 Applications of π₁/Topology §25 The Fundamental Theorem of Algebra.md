@@ -69,6 +69,9 @@ tags: [topology, math590]
 
 *Uses:* [[Fundamental Group of the Circle|§24.10]], [[Functoriality of π₁|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[Topology §24 Covering Spaces#^lem-24-12|§24.12]]
 
+![[m590-25-1.svg]]
+*Step 3 for $p(z) = z^3 + 0.6z$ ($n = 3$, $\sum|a_i| = 0.6$). If $p$ had no root in the blue disk $B^2$, the red loop $h = p|_{S^1}$ would extend over $B^2$ inside $\mathbb{R}^2 \setminus \{0\}$ and so be nullhomotopic. But $F(z,t) = z^3 + t \cdot 0.6z$ (gray: $t = \tfrac12$) slides the blue loop $g(z) = z^3$, which winds three times around $0$, onto $h$ without entering the gray disk $|w| < 1 - \sum|a_i| = 0.4$. So $h \simeq g$ also winds three times around $0$ and is not nullhomotopic, so $p$ must vanish somewhere in $B^2$ (here at $z = 0$).*
+
 > [!remark] Remark
 > This proof is remarkable: a theorem about *algebra* (roots of polynomials) is proved using *topology* ($\pi_1(S^1) \cong \mathbb{Z}$ and the nullhomotopy characterization). The key ingredients are:
 > - [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ]] (the power map $z^n$ induces multiplication by $n$, which is injective).

@@ -1,0 +1,24 @@
+% Figure from MATH 590 notes, section 14. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.44\textwidth, clip=false,
+  xmin=0, xmax=2.2, ymin=0.3, ymax=1.75,
+  xtick={0.2,1.8}, xticklabels={$a$,$b$}, ytick={0.9}, yticklabels={$r$}, xlabel={}, ylabel={}]
+  \draw[black!45, dashed, thin] (axis cs:0,0.9) -- (axis cs:2.0,0.9);
+  \draw[black!40, dotted] (axis cs:0.2,0.3) -- (axis cs:0.2,0.701) (axis cs:1.8,0.3) -- (axis cs:1.8,1.528);
+  \addplot[black!70, thick, domain=0.2:1.8, samples=150] {0.35+0.5*x+0.35*sin(deg(4*x))};
+  \addplot[only marks, mark=*, mark size=1.5pt, black] coordinates {(0.2,0.701) (1.8,1.528)};
+  \addplot[only marks, mark=*, mark size=1.6pt, figR] coordinates {(0.4,0.9) (0.571,0.9) (1.443,0.9)};
+  \draw[black!40, dotted] (axis cs:1.443,0.3) -- (axis cs:1.443,0.9);
+  \node[font=\scriptsize, figR] at (axis cs:1.443,0.38) {$c$};
+  % f(X) on the vertical axis, split at r
+  \draw[figB, line width=2.2pt] (axis cs:2.0,0.566) -- (axis cs:2.0,0.88);
+  \draw[figR, line width=2.2pt] (axis cs:2.0,0.92) -- (axis cs:2.0,1.528);
+  \node[circle, draw=black!70, fill=white, inner sep=0pt, minimum size=4pt] at (axis cs:2.0,0.9) {};
+  \node[font=\scriptsize, figB, anchor=west] at (axis cs:2.04,0.7) {$A$};
+  \node[font=\scriptsize, black!70] at (axis cs:2.0,0.47) {$f(X)$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:2.04,1.25) {$B$};
+  \node[font=\scriptsize, black!70] at (axis cs:1.47,1.28) {$f$};
+  \node[font=\scriptsize, black!60, anchor=north west] at (axis cs:0.21,0.69) {$f(a)$};
+  \node[font=\scriptsize, black!60, anchor=east] at (axis cs:1.76,1.56) {$f(b)$};
+\end{axis}
+\end{tikzpicture}

@@ -117,6 +117,9 @@ tags: [topology, math590]
 
 *Uses:* [[Topology §14 Connected Subspaces of ℝ#^thm-14-3|§14.3]], [[Topology §15 Compact Spaces#^thm-15-10|§15.10]], [[Bijection from Compact to Hausdorff is a Homeomorphism|§15.7]], [[Topology §9 Continuous Functions#^prop-9-3|§9.3]]
 
+![[m590-24-2.svg]]
+*The covering $p: \mathbb{R} \to S^1$ drawn as a helix over the circle: each $x \in \mathbb{R}$ sits directly above $p(x)$, one full turn per unit length. The right half-circle $U$ (red, open, hollow endpoints) is evenly covered. Its preimage is the stack of disjoint red slices $V_n = (n - \tfrac14, n + \tfrac14)$, each carried homeomorphically onto $U$ by $p$. The fiber over $b_0 = (1,0)$ is $\mathbb{Z}$ (black dots), one point in each slice.*
+
 > [!remark] Remark
 > This covering map is the key to computing [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]]. The idea: $\mathbb{R}$ is simply connected, and the covering map $p: \mathbb{R} \to S^1$ “unwinds” loops on $S^1$ into paths in $\mathbb{R}$. A loop that winds $n$ times around $S^1$ lifts to a path in $\mathbb{R}$ from $0$ to $n$. The integer $n$ is the winding number, and this gives the isomorphism $\pi_1(S^1) \cong \mathbb{Z}$.
 >
@@ -153,6 +156,9 @@ tags: [topology, math590]
 > **Consequence: lifting fails.** Consider a loop $f$ in $S^1$ that winds once clockwise from $(1,0)$. If we try to lift starting at $e_0 = 0$, we would need $\tilde{f}(s) = -s$ — but $-s \notin \mathbb{R}_+$ for $s > 0$. The lift “wants to go left” past $0$, but $\mathbb{R}_+$ has a boundary there. The disjoint-copies condition fails precisely at $V_0$, and this is where the lift breaks down.
 
 ^ex-24-2
+
+![[m590-24-3.svg]]
+*Why $p: \mathbb{R}_+ \to S^1$ is not a covering map. Over the same $U$ (red), the slices $V_1, V_2, \ldots$ are still full copies of $U$. But the bottom piece $V_0 = [0, \tfrac14)$ (orange) is cut off at $0$, because the dashed part $(-\tfrac14, 0)$ is missing from $\mathbb{R}_+$. So $p(V_0)$ is only the orange quarter of $U$ beginning at $b_0$. A clockwise loop from $b_0$ would have to lift into that missing dashed part.*
 
 ## Restriction to Subspaces
 
@@ -203,6 +209,9 @@ tags: [topology, math590]
 
 ^ex-24-3
 
+![[m590-24-4.svg]]
+*The covering $p \times p: \mathbb{R}^2 \to T^2$ wraps each unit square of the plane once around the torus. The fiber over the basepoint $(b_0, b_0)$ is the lattice $\mathbb{Z} \times \mathbb{Z}$ (black dots). The edge from $(0,0)$ to $(1,0)$ (red) maps to the loop $S^1 \times \{b_0\}$ around the hole. The edge from $(0,0)$ to $(0,1)$ (blue) maps to the loop $\{b_0\} \times S^1$ around the tube. These two loops are the generators of $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$.*
+
 ## Transport of Covering Maps
 
 If you know a covering map of a space $B$, you automatically get a covering map of any space homeomorphic to $B$.
@@ -215,7 +224,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 > is a covering map.
 >
 > ![[m590-24-1.svg]]
-> *The transported covering $p' = h^{-1} \circ p: E \to B'$, where $h: B' \to B$ is a homeomorphism.*
+> *The transported covering $p' = h^{-1} \circ p: E \to B'$ (red), where $h: B' \to B$ is a homeomorphism; the triangle commutes, $h \circ p' = p$.*
 
 ^prop-24-5
 
@@ -359,6 +368,9 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 
 ^rem-24-7
 
+![[m590-24-5.svg]]
+*The lifts from Example §24.5 and the remark above, drawn as graphs $s \mapsto \tilde f(s) \in \mathbb{R}$. Every lift starts at $0$ and ends at an integer, which is a point of the fiber $p^{-1}(b_0) = \mathbb{Z}$, and that endpoint is the winding number. The wiggly lift $\tilde{f'}$ (red) wanders up and down but ends at $2$, just like $\tilde f(s) = 2s$ (blue), so $f \simeq_p f'$. Since $\tilde g$ ends at $3$, $g \not\simeq_p f$.*
+
 ## Path Lifting
 
 > [!theorem] Lemma §24.6: Path Lifting Lemma
@@ -435,6 +447,9 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 ^pf-24-7
 
 *Uses:* [[Path Lifting Lemma|§24.6]], [[Lebesgue Number Lemma|§16.3]], [[Continuous Image of a Connected Space is Connected|§13.3]], [[Topology §13 Connected Spaces#^lem-13-4|§13.4]], [[Pasting Lemma|§9.5]]
+
+![[m590-24-6.svg]]
+*The order of construction in the homotopy lifting lemma. First lift the left edge $0 \times I$ and the bottom edge $I \times 0$ by path lifting (blue). Then fill in the small rectangles one at a time, in the numbered order. When the turn of $I_i \times J_j$ comes (red), $\tilde F$ is already defined on $C$, the rectangle's left and bottom edges. Since $C$ is connected, $\tilde F(C)$ lies in a single slice $V_0$, and $p_0^{-1} \circ F$ extends $\tilde F$ over the rectangle.*
 
 > [!theorem] Theorem §24.8: Lifts of Path-Homotopic Paths
 > Let $p: E \to B$ be a covering map with $p(e_0) = b_0$. Let $f, g$ be paths in $B$ from $b_0$ to $b_1$, and let $\tilde{f}, \tilde{g}$ be their lifts starting at $e_0$. If $f \simeq_p g$, then $\tilde{f}$ and $\tilde{g}$ end at the same point and $\tilde{f} \simeq_p \tilde{g}$.
@@ -569,6 +584,9 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 ^pf-24-10
 
 *Uses:* [[Topology §24 Covering Spaces#^thm-24-2|§24.2]], [[Topology §24 Covering Spaces#^def-24-7|Def. §24.7]], [[Topology §23 The Fundamental Group#^ex-23-1|Ex. §23.1]], [[Properties of the Lifting Correspondence|§24.9]], [[Pasting Lemma|§9.5]], [[Path Lifting Lemma|§24.6]]
+
+![[m590-24-7.svg]]
+*Step 3 in one picture. The lift of $f * g$ starting at $0$ follows $\tilde f(2s)$ up to $m$ (blue). The lift $\tilde g$ starts at $0$ (dashed), so it cannot be used as it is. Translated up by $m$ it starts where $\tilde f$ stopped (red), and it still lies over $g$ because $p(x + m) = p(x)$. The endpoint is $m + n$, which is why $\phi([f] * [g]) = \phi([f]) + \phi([g])$.*
 
 > [!remark]- Connections
 > - Consequences: [[Fundamental Theorem of Algebra (topological proof)|Fundamental Theorem of Algebra]], [[No-Retraction Theorem|No-Retraction Theorem]], [[Brouwer Fixed Point Theorem|Brouwer Fixed Point Theorem for $B^2$]].

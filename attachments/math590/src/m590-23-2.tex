@@ -1,0 +1,35 @@
+% Figure from MATH 590 notes, section 23. Compile with the notes preamble.
+\begin{tikzpicture}[
+  declare function={Rr(\a)=1+0.13*sin(3*\a);},
+  lp/.style={variable=\a, domain=0:360, samples=90, smooth}]
+  % ---------- left: convex X ----------
+  \begin{scope}
+    \fill[black!5] (0.05,0) ellipse (1.75 and 1.45);
+    \draw[black!55, thin] (0.05,0) ellipse (1.75 and 1.45);
+    \node[font=\small, black!60] at (-1.35,1.2) {$X$};
+    % trajectories s -> segment f(s) to x0
+    \foreach \a in {60,120,180,240,300} {
+      \draw[figR!70, thin] ({Rr(\a)*cos(\a)},{Rr(\a)*sin(\a)}) -- (1,0);
+    }
+    % intermediate loops H(., t) = x0 + (1-t)(f - x0)
+    \foreach \t in {0.4,0.7} {
+      \draw[black!50, dashed, lp] plot ({1+(1-\t)*(Rr(\a)*cos(\a)-1)},{(1-\t)*Rr(\a)*sin(\a)});
+    }
+    \draw[figB, thick, lp] plot ({Rr(\a)*cos(\a)},{Rr(\a)*sin(\a)});
+    \fill (1,0) circle (1.5pt) node[right, font=\scriptsize] {$x_0$};
+    \node[font=\scriptsize, figB] at (-0.93,-0.85) {$f$};
+  \end{scope}
+  % ---------- right: punctured plane ----------
+  \begin{scope}[shift={(4.3,0)}]
+    \fill[black!5] (-1.7,-1.45) rectangle (1.8,1.45);
+    \node[font=\small, black!60] at (-1.05,1.2) {$\mathbb{R}^2 \setminus \{0\}$};
+    \draw[black!50, dashed, lp] plot ({1+0.5*(Rr(\a)*cos(\a)-1)},{0.5*Rr(\a)*sin(\a)});
+    \draw[figB, thick, lp] plot ({Rr(\a)*cos(\a)},{Rr(\a)*sin(\a)});
+    \draw[figR, thick] (-1,0) -- (1,0);
+    \fill (1,0) circle (1.5pt) node[right, font=\scriptsize] {$x_0$};
+    \fill[figR] (-1,0) circle (1.4pt) node[left, font=\scriptsize] {$f(s)$};
+    \node[circle, inner sep=1.5pt, fill=white, draw=figR, thick] at (0,0) {};
+    \node[font=\scriptsize, figR, anchor=south east, inner sep=1pt] at (-0.07,0.07) {$0$};
+    \node[font=\scriptsize, figB] at (-0.93,-0.85) {$f$};
+  \end{scope}
+\end{tikzpicture}

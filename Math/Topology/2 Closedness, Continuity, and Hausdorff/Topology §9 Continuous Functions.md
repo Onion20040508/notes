@@ -24,6 +24,9 @@ tags: [topology, math590]
 
 *Uses:* [[Topology §2 Basis for a Topology#^lem-2-1|§2.1]]
 
+![[m590-9-1.svg]]
+*Continuity is a statement about preimages: for the open set $V \subseteq Y$ (red), the set $f^{-1}(V)$ of everything that lands in $V$ (blue, here in two pieces) must be open in $X$. Nothing is required of forward images; $f$ may send open sets to non-open ones.*
+
 > [!remark]- Connections
 > - MATH 451 version: [[Single Variable Analysis §21 More on Metric Spaces꞉ Continuity#^def-21-1|Continuous Maps Between Metric Spaces]].
 > - Recovered for metric spaces: [[Topology §11 Metric Topology#^thm-11-7|ε-δ Characterization of Continuity]].
@@ -229,3 +232,6 @@ tags: [topology, math590]
 > $f_1: [0, \infty) \to \mathbb{R}$, $f_1(x) = x$. $f_2: (-\infty, 0] \to \mathbb{R}$, $f_2(x) = -x$. (Both continuous.) $\Rightarrow$ $f(x) = |x|$ continuous.
 
 ^ex-9-6
+
+![[m590-9-2.svg]]
+*The pasting lemma for $|x|$: $f_2(x) = -x$ (red) on the closed piece $(-\infty, 0]$ and $f_1(x) = x$ (blue) on the closed piece $[0, \infty)$, which agree on the overlap $\{0\}$. For the closed set $C = [\tfrac12, 1]$, the preimage under the glued map is $f_2^{-1}(C) \cup f_1^{-1}(C) = [-1, -\tfrac12] \cup [\tfrac12, 1]$. Each part is closed in a closed piece, hence closed in $\mathbb{R}$, exactly as in the proof.*

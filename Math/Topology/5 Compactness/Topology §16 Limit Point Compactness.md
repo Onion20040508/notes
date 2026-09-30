@@ -79,6 +79,9 @@ tags: [topology, math590]
 
 ^ex-16-1
 
+![[m590-16-1.svg]]
+*$X=\mathbb{Z}_+\times\{a,b\}$ with $Y$ indiscrete: the smallest open sets are the columns $\{n\}\times Y$ (blue), so a point can never be separated from its partner. Any set $S$ (red) containing $3\times a$ has $3\times b$ (circled) as a limit point, so $X$ is limit point compact. Still, the columns form an open cover with no finite subcover.*
+
 ## Subsequences and Sequential Compactness
 
 > [!definition] Definition §16.2: Subsequence
@@ -133,6 +136,9 @@ To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas
 > Let $(X, d)$ be a sequentially compact metric space and let $\{U_\alpha\}$ be an open cover of $X$. Then there exists $\delta > 0$ (called a **Lebesgue number** for the cover) such that for every subset $A \subseteq X$ with $\text{diam}(A) < \delta$, there exists some $U_\alpha$ containing $A$.
 
 ^lem-16-3
+
+![[m590-16-2.svg]]
+*A Lebesgue number $\delta$ for the cover $\{U_1,\dots,U_4\}$ of $X$ (blue outline): every set of diameter $<\delta$ (red disks) lies inside a single cover element, even one sitting where several $U$'s overlap, like the disk inside $U_4$ (shaded). The lemma says small sets can never straddle the cover.*
 
 > [!proof]+ Proof
 > Suppose no such $\delta$ exists. Then for each $n \in \mathbb{Z}_+$, there exists a set $C_n$ with $\text{diam}(C_n) < 1/n$ that is not contained in any single $U_\alpha$. Choose $x_n \in C_n$ for each $n$.

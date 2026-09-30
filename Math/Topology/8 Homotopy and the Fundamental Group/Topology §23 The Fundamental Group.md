@@ -84,6 +84,9 @@ tags: [topology, math590]
 
 ^ex-23-2
 
+![[m590-23-2.svg]]
+*Left: in a convex $X$, each point $f(s)$ of the loop slides straight to $x_0$ (red segments), and the intermediate loops $H(\cdot,t)$ (dashed) shrink onto $x_0$; convexity keeps every segment inside $X$. Right: the same formula fails in $\mathbb{R}^2 \setminus \{0\}$. For the point $f(s)$ opposite $x_0$ the segment runs through the missing origin, so $H(s,\tfrac12) = 0$ is not in the space (see [[Topology §22 Homotopy of Paths#^rem-22-3|the convexity remark in §22]]).*
+
 > [!remark]- Connections
 > - Closed balls specifically: [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|$B^n$ is Convex and Simply Connected]].
 
@@ -107,6 +110,9 @@ tags: [topology, math590]
 > $$\hat{\alpha}: \pi_1(X, x_0) \to \pi_1(X, x_1).$$
 
 ^thm-23-2
+
+![[m590-23-3.svg]]
+*The isomorphism $\hat\alpha$ from the proof below. A loop $f$ at $x_0$ (blue) becomes the loop $\bar\alpha * f * \alpha$ at $x_1$: travel $\bar\alpha$ from $x_1$ to $x_0$, run $f$, and return along $\alpha$ (red). So $\hat\alpha([f]) = [\bar\alpha] * [f] * [\alpha]$.*
 
 > [!proof]+ Proof
 > Define $\hat{\alpha}: \pi_1(X, x_0) \to \pi_1(X, x_1)$ by
@@ -242,7 +248,7 @@ tags: [topology, math590]
 > 3. The **diagram commutes** by functoriality: the lifting correspondence for $p'$ and the lifting correspondence for $p$ give the same group $G$, connected by $h_*$.
 >
 > ![[m590-23-1.svg]]
-> *Transporting a covering and its $\pi_1$ computation along a homeomorphism $h: Y \to X$: $p' = h^{-1} \circ p$, and $h_*$ connects the two lifting correspondences to $G$.*
+> *Transporting a covering and its $\pi_1$ computation along a homeomorphism $h: Y \to X$. Left: the transported covering $p' = h^{-1} \circ p$ (red). Right: with $y_0 = h^{-1}(x_0)$, the lifting correspondence $\phi'$ of $p'$ (blue) factors as $\phi' = \phi \circ h_*$ through the lifting correspondence $\phi$ of $p$, because a lift of $g$ through $p'$ is exactly a lift of $h \circ g$ through $p$ (both land in the same fiber $p^{-1}(x_0) = p'^{-1}(y_0)$, identified with $G$).*
 >
 > This means: **compute $\pi_1$ once for one representative of a homeomorphism class, and it transfers for free to every homeomorphic space.** This is why we can freely switch between $S^1_{\mathbb{C}}$ and $S^1_{\mathbb{R}^2}$ ([[Topology §9 Continuous Functions#^ex-9-5|§9]])—the computation via $p: \mathbb{R} \to S^1_{\mathbb{R}^2}$ automatically gives $\pi_1(S^1_{\mathbb{C}}) \cong \mathbb{Z}$ via the [[Topology §24 Covering Spaces#^ex-24-4|transported covering]] $p'(x) = e^{2\pi i x}$.
 

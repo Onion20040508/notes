@@ -40,6 +40,9 @@ tags: [topology, math590]
 
 ^ex-5-1
 
+![[m590-5-1.svg]]
+*$[0,\tfrac12)$ (red) is open in $Y = [0,1)$ (gray) because the open set $(-1,\tfrac12)$ of $\mathbb{R}$ (blue) cuts it out of $Y$. The part of $(-1,\tfrac12)$ to the left of $0$ is thrown away, which is why the closed endpoint $0$ does no harm in $Y$. In $\mathbb{R}$, every interval around $0$ sticks out to the left of $0$, so $[0,\tfrac12)$ is not open there.*
+
 > [!theorem] Lemma §5.1: Basis for Subspace Topology
 > If $\mathcal{B}$ is a basis for the topology of $X$, then $\mathcal{B}_Y = \{B \cap Y \mid B \in \mathcal{B}\}$ is a basis for the subspace topology on $Y$.
 
@@ -81,3 +84,6 @@ tags: [topology, math590]
 > $\mathcal{D}$: $\{\frac{1}{2}\} \times (\frac{1}{2}, 1]$ not open in order topology on $I \times I$. The point $\frac{1}{2} \times 1$ is not a max in $I \times I$, so any basis element containing $\frac{1}{2} \times 1$ must contain some $p \times q > \frac{1}{2} \times 1$. But for $\frac{1}{2} \times 1 \in \mathcal{B} \subseteq \{\frac{1}{2}\} \times (\frac{1}{2}, 1]$, we would need $\mathcal{B}$ to contain only points with first coordinate $\frac{1}{2}$, which contradicts containing points greater than $\frac{1}{2} \times 1$.
 
 ^ex-5-3
+
+![[m590-5-2.svg]]
+*The ordered square $I \times I$. The segment $\{\tfrac12\}\times(\tfrac12,1]$ (red) is open in the subspace topology but not in the order topology. Since $\tfrac12\times 1$ is not the largest element, any order interval $(\tfrac12\times q,\ p\times r)$ around it (blue) runs past the top of the line $x=\tfrac12$ into every vertical line with $\tfrac12 < x < p$ (hatched), and those points are not in the red segment.*

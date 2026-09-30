@@ -1,0 +1,29 @@
+% Figure from MATH 590 notes, section 20. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.25]
+  % V = intersection of the V_{a_j}  (blue fill)
+  \begin{scope}
+    \clip (1.75,-0.6) circle (1.3);
+    \clip (1.75,0.6) circle (1.3);
+    \fill[figB!18] (2.5,0) circle (1.1);
+  \end{scope}
+  % U = union of the U_{a_j}  (red fill)
+  \fill[figR!15] (0,0.62) circle (0.62) (0,-0.62) circle (0.62) (-0.35,0) circle (0.6);
+  % finitely many U_{a_j} (dashed), then the V_{a_j}
+  \draw[figR, dashed] (0,0.62) circle (0.62) (0,-0.62) circle (0.62) (-0.35,0) circle (0.6);
+  \draw[figB, dashed] (1.75,-0.6) circle (1.3) (1.75,0.6) circle (1.3) (2.5,0) circle (1.1);
+  % closed sets
+  \filldraw[figR, thick, fill=figR!35] (0,0) ellipse (0.42 and 0.95);
+  \filldraw[figB, thick, fill=figB!40] (2.25,0) ellipse (0.36 and 0.55);
+  \node[font=\small, figR] at (0.05,-0.05) {$A$};
+  \node[font=\small, figB] at (2.25,0) {$B$};
+  \foreach \p/\j/\pos in {(0.1,0.93)/1/right, (0.1,-0.93)/2/right, (-0.38,0.05)/3/left} {
+    \fill[figR] \p circle (1.2pt);
+    \node[font=\scriptsize, figR, \pos=0pt] at \p {$a_{\j}$};
+  }
+  \node[font=\scriptsize, figR] at (-0.55,1.25) {$U_{a_1}$};
+  \node[font=\scriptsize, figR] at (-0.55,-1.25) {$U_{a_2}$};
+  \node[font=\scriptsize, figR] at (-1.2,0.0) {$U_{a_3}$};
+  \node[font=\scriptsize, figB] at (2.95,-1.65) {$V_{a_1}$};
+  \node[font=\scriptsize, figB] at (2.95,1.65) {$V_{a_2}$};
+  \node[font=\scriptsize, figB] at (3.85,0) {$V_{a_3}$};
+\end{tikzpicture}

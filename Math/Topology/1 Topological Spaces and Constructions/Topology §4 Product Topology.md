@@ -19,6 +19,9 @@ tags: [topology, math590]
 
 ^def-4-1
 
+![[m590-4-1.svg]]
+*Left: a basis element $U \times V$, an open “rectangle” whose sides are open sets $U \subseteq X$ and $V \subseteq Y$. Right: a general open set $W$ of $X \times Y$ (dashed) is usually not a product, but each point $x \times y \in W$ has a basis element $U \times V \subseteq W$ around it (red), so $W$ is a union of such rectangles (faint red).*
+
 > [!remark]- Connections
 > - Generalized to arbitrary products: [[Topology §10 Product Topology on Arbitrary Products#^def-10-1|Product Topology on Arbitrary Products]].
 > - Preserves connectedness and compactness: [[Topology §13 Connected Spaces#^thm-13-6|Finite Product of Connected Spaces]], [[Topology §15 Compact Spaces#^thm-15-8|Finite Product of Compact Spaces]].
@@ -33,6 +36,9 @@ tags: [topology, math590]
 > 2. If $x \times y \in (U_1 \times V_1) \cap (U_2 \times V_2)$, then $x \times y \in (U_1 \cap U_2) \times (V_1 \cap V_2) \subseteq (U_1 \times V_1) \cap (U_2 \times V_2)$. ✓
 
 ^rem-4-2
+
+![[m590-4-2.svg]]
+*Why $\mathcal{B}$ satisfies axiom (2): the intersection of two basis rectangles $U_1 \times V_1$ and $U_2 \times V_2$ (blue) is the rectangle $(U_1\cap U_2)\times(V_1\cap V_2)$ (red), whose sides are again open. So the intersection is itself a basis element, and it can serve as the $B_3$ of Definition §2.1.*
 
 > [!theorem] Theorem §4.1: Basis for Product Topology
 > If $\mathcal{B}$ is a basis for the topology on $X$, and $\mathcal{C}$ is a basis for the topology on $Y$, then
