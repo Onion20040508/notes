@@ -3940,7 +3940,7 @@ $F_n \cong \mathbb{Z} * \cdots * \mathbb{Z}$ & Free on $n$ generators (free prod
 \[\underbrace{\mathbb{Z}/n\mathbb{Z}}_{\text{one gen, one rel}} \;\longleftarrow\; \underbrace{\mathbb{Z} \cong F_1}_{\text{one gen, no rel}} \;\longleftarrow\; \underbrace{F_n = \mathbb{Z} * \cdots * \mathbb{Z}}_{\text{$n$ gen, no rel}} \;\overset{\text{add rels $ab = ba$}}{\longrightarrow}\; \underbrace{\mathbb{Z}^n}_{\text{$n$ gen, all commute}}\]
 Each arrow represents adding a relation, which makes the group smaller. The free group $F_n$ is the largest group on $n$ generators --- every other group with $\leq n$ generators is a quotient of it. In particular:
 \[G \times H = (G * H) / \langle ghg^{-1}h^{-1} \mid g \in G, h \in H \rangle.\]
-You start with the free product (no relations between factors) and impose commutativity. This always shrinks the group: $F_2$ is non-abelian, while $\mathbb{Z}^2$ is abelian, so the quotient map $F_2 \to \mathbb{Z}^2$ sends the nontrivial element $aba^{-1}b^{-1}$ to the identity. Adding relations kills elements.
+You start with the free product (no relations between factors) and impose commutativity. This shrinks the group whenever both factors are nontrivial: $F_2$ is non-abelian, while $\mathbb{Z}^2$ is abelian, so the quotient map $F_2 \to \mathbb{Z}^2$ sends the nontrivial element $aba^{-1}b^{-1}$ to the identity. Adding relations kills elements.
 \end{rembox}
 
 \subsection{Group Presentations}
@@ -6530,7 +6530,7 @@ The recipe is mechanical --- three steps:
 \end{itemize}
 \textbf{This is the only hard part} --- it is a geometric question. You must draw the picture, look at the loop $t$ sitting inside $A$, and figure out which word in $\pi_1(A)$'s generators it represents.
 
-\textbf{Step 3: The relation is $i_1(t) = i_2(t)$.} For each generator $t_j$ of $K$, you get one relation. Collect them all --- that is the complete set of generators for $N$.
+\textbf{Step 3: The relation is $i_1(t) = i_2(t)$.} For each generator $t_j$ of $K$, you get one relation. Collect them all --- their normal closure is $N$ (they generate $N$ as a normal subgroup).
 
 In $\langle \mid \rangle$ notation: the result is (recall \S 21):
 \[\pi_1(X) = \langle \underbrace{a_1, \ldots, b_1, \ldots}_{\text{generators of } G \text{ and } H} \mid \underbrace{R_1, \ldots, S_1, \ldots}_{\text{existing relations}}, \underbrace{i_1(t_1) = i_2(t_1), \ldots}_{\text{new from } A \cap B} \rangle.\]
@@ -6829,7 +6829,7 @@ Double torus $\Sigma_2$ & $a_1 b_1 a_1^{-1} b_1^{-1} a_2 b_2 a_2^{-1} b_2^{-1}$ 
 \end{center}
 For $P^2$ we use the one-vertex scheme $aa$ (a $2$-gon whose two edges are glued, i.e. the disk with antipodal boundary points identified). The square scheme $abab$ of the previous example has two vertex classes, so the theorem above does not apply to it directly.
 
-The double torus has $\pi_1$ non-abelian, confirming the result from \S 28 (where we proved non-abelianness via covering spaces, without computing the exact group).
+The double torus has $\pi_1$ non-abelian, confirming the result from \S 28 (where we proved non-abelianness via a retraction onto the figure eight, whose $\pi_1$ is non-abelian by a covering-space argument, without computing the exact group).
 \end{exbox}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

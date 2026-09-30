@@ -29,6 +29,8 @@ tags: [linear-algebra]
 > For $z=3+2i$: $\operatorname{Re}z=3$, $\operatorname{Im}z=2$, $\bar z=3-2i$, $|z|=\sqrt{3^2+2^2}=\sqrt{13}$.
 >
 > Identifying $z$ with $(\operatorname{Re}z,\operatorname{Im}z)\in\R^2$, $|z|$ is the distance from $0$, and $\bar z$ is the reflection across the real axis. So $\bar z=z$ iff $z$ is real. As a complex vector space $\C$ is $1$-dimensional; as a real vector space it is $\R^2$, $2$-dimensional ([[Linear Algebra 2C Dimension#^ladr-2-36|2.36]]).
+>
+> ![[ladr-4.3-complex-plane.svg|300]]
 
 ^ladr-4-3
 
@@ -151,6 +153,12 @@ tags: [linear-algebra]
 > $$
 > With $t=1/(2c)$ this is $<1$, a contradiction. So $p(\zeta)=0$.
 
+%% ex:4.12-fig %%
+> [!example] The key step of the proof, pictured
+> The plane of values of $q$: $q(0)=1$ lies on the unit circle. Going from $0$ to $t\beta$, the term $a_kt^k\beta^k=-t^k$ pulls the value straight toward $0$, to $1-t^k$ (blue), and the higher terms move it by at most $t^{k+1}c$ (red disk). Once $tc<1$ the disk lies inside the unit circle, so $|q(t\beta)|<1$, contradicting the minimum $1$.
+>
+> ![[ladr-4.12-fta-step.svg|320]]
+
 > [!theorem] 4.13 Fundamental theorem of algebra, second version
 > A nonconstant $p\in\Poly(\C)$ has a factorization, unique up to the order of the factors,
 > $$
@@ -203,6 +211,12 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The irreducible quadratics ($b^2<4c$) appear in [[Linear Algebra 4 Polynomials#^ladr-4-16|Factorization of a polynomial over R]], [[Linear Algebra 5B The Minimal Polynomial#^ladr-5-33|Even-dimensional null space]], [[Linear Algebra 5B The Minimal Polynomial#^ladr-5-34|Operators on odd-dimensional vector spaces have eigenvalues]].
+
+%% ex:4.15-fig %%
+> [!example] Completing the square, pictured
+> $x^2+bx+c$ is lowest at $x=-\tfrac b2$, where it equals $c-\tfrac{b^2}4$. Red: $x^2+2x+2$ ($b^2=4<8=4c$) has lowest value $1>0$ and no real zero. Blue: $x^2+2x-1$ ($b^2=4\ge-4=4c$) has lowest value $-2<0$ and zeros $-1\pm d$ with $d^2=\tfrac{b^2}4-c=2$.
+>
+> ![[ladr-4.15-quadratic.svg|340]]
 
 > [!theorem] 4.16 Factorization of a polynomial over R
 > A nonconstant $p\in\Poly(\R)$ has a factorization, unique up to order,

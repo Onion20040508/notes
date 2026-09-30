@@ -197,6 +197,9 @@ The three examples above are one-sided instances of a two-sided principle:
 
 For instance: if $f$ is differentiable on $\mathbb{R}$ with $1 \leq f' \leq 2$ everywhere and $f(0) = 0$, then applying the proposition on $[0, x]$ gives $x \leq f(x) \leq 2x$ for every $x \geq 0$ — the graph is trapped between two lines through the origin.
 
+![[m451-29-4.svg]]
+*The mean value inequality as a wedge: with $f(0) = 0$ and $1 \leq f' \leq 2$, the graph of $f$ (blue) can never leave the region between the lines $x$ and $2x$ (dashed) for $x \geq 0$ — a bound on the slope becomes a bound on every increment.*
+
 > [!example] Example §29.4: An integrating factor for Rolle (HW)
 > Let $f, g$ be differentiable on an open interval $I$, and let $a < b$ in $I$ with $f(a) = f(b) = 0$. Show that
 >
@@ -252,6 +255,9 @@ Recall the [[Intermediate Value Theorem|Intermediate Value Theorem]] for continu
 
 ^pf-29-9
 
+![[m451-29-2.svg]]
+*The proof of Darboux's theorem: tilting by $cx$ makes $g = f - cx$ start downhill at $x_1$ ($g'(x_1) < 0$) and end uphill at $x_2$ ($g'(x_2) > 0$), so points just inside the interval lie below the endpoint values (dotted). The minimum given by the EVT is therefore interior, at $x_0$, where $g'(x_0) = 0$, i.e. $f'(x_0) = c$ — no continuity of $f'$ needed.*
+
 > [!example] Example §29.5: Prescribed derivative values
 > Let $f: \mathbb{R} \to \mathbb{R}$ be differentiable with $f(0) = 0$, $f(1) = 1$, $f(2) = 1$.
 >
@@ -305,6 +311,9 @@ This computation finds the *formula* but presupposes the differentiability of $f
 > The assumption $f'(x_0) \neq 0$ is important: think of $f(x) = x^3$ at $x_0 = 0$ — the inverse $y \mapsto y^{1/3}$ exists but is not differentiable at $0$ (vertical tangent). Behind the theorem: $f'(x_0) \neq 0$ makes $f$ strictly monotone near $x_0$, so an inverse exists locally — a principle that generalizes far beyond calculus (the *inverse function theorem* of advanced analysis).
 
 ^rem-29-4
+
+![[m451-29-3.svg]]
+*Left: the graph of $f^{-1}$ (red) is the mirror image of the graph of $f$ (blue) in the line $y = x$; the mirror swaps rise and run, so the tangent at $(y_0, x_0)$ has slope $\tfrac{1}{f'(x_0)}$. Right: for $f(x) = x^3$ at $x_0 = 0$, the horizontal tangent ($f'(0) = 0$) mirrors into a vertical one — $y^{1/3}$ is not differentiable at $0$.*
 
 > [!example] Example §29.6: Arcsine
 > $f(x) = \sin x$ restricted to $\left[-\tfrac\pi2, \tfrac\pi2\right]$ (needed for $\arcsin$ to be well defined — draw the graph of $\sin$), with inverse $f^{-1}(y) = \arcsin y$:

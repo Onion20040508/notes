@@ -30,6 +30,9 @@ It is often not easy to check integrability from the definitions — we need pro
 
 ^pf-33-1
 
+![[m451-33-1.svg]]
+*Why monotone functions are integrable: on each subinterval of the equal partition, the gap between upper and lower rectangles is a box of width $\tfrac{b-a}{n}$ and height $f(t_k) - f(t_{k-1})$ (red). Slid sideways, the boxes stack into one column of height $f(b) - f(a)$ — the telescoping sum — so $U - L = \bigl(f(b) - f(a)\bigr)\tfrac{b-a}{n}$. A jump of $f$ (hollow and filled dots) changes nothing.*
+
 > [!theorem] Theorem §33.2: Linearity
 > If $f, g: [a,b] \to \mathbb{R}$ are integrable, then:
 >
@@ -203,6 +206,9 @@ The converse direction — that integrability passes *down* to subintervals — 
 
 ^pf-33-7
 
+![[m451-33-2.svg]]
+*Positivity of the integral: if $f(x_0) > 0$, continuity keeps $f > \tfrac12 f(x_0)$ on $[x_0 - \varepsilon, x_0 + \varepsilon]$, so the region under $f$ (blue) contains the red rectangle of area $\tfrac12 f(x_0) \cdot 2\varepsilon = f(x_0)\,\varepsilon > 0$ — hence $\int_a^b f \geq f(x_0)\,\varepsilon > 0$.*
+
 > [!theorem] Corollary §33.8: Vanishing Integral of a Square
 > If $f: [a,b] \to \mathbb{R}$ is continuous and $\int_a^b f^2\,dx = 0$, then $f \equiv 0$.
 
@@ -273,6 +279,9 @@ What does it mean? The right side is the **mean value** of $f$ over $[a,b]$: the
 > $$
 
 ^pf-33-9
+
+![[m451-33-3.svg]]
+*Left: the rectangle over $[a,b]$ at the mean height $\tfrac{1}{b-a}\int_a^b f$ (red) has the same area as the region under $f$ (blue); a continuous $f$ must cross that height, at some $x_0$. Right: the step function of the remark jumps over its mean value $0$ — without continuity the mean need not be attained.*
 
 > [!theorem] Theorem §33.10: Weighted Mean Value Theorem
 > Let $f, g: [a,b] \to \mathbb{R}$ be continuous with $g(x) \geq 0$ for all $x$. Then there exists $x_0 \in [a,b]$ such that

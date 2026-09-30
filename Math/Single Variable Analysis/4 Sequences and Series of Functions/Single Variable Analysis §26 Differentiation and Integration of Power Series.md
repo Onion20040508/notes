@@ -159,6 +159,9 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 ^ex-26-3
 
+![[m451-26-1.svg]]
+*Partial sums $S_N(x) = \sum_{n=0}^{N} \frac{(-1)^n}{2n+1} x^{2n+1}$ for $N = 2, 6, 15$ (blue, darker as $N$ grows) against $\arctan x$ (black). On $(-1,1)$ they close in on $\arctan x$; for $|x| > 1$ (shaded) the terms do not tend to $0$ and the partial sums break away, in directions alternating with the sign of the last term — although $\arctan$ itself is perfectly smooth there. The radius $R = 1$ is a property of the series, not visible in the graph of the function.*
+
 > [!example] Example §26.4: The Taylor series of the logarithm
 > Find the Taylor series of $f(x) = \ln(1+x)$ at $0$. It is easier to start with the derivative:
 >

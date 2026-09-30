@@ -88,6 +88,9 @@ The precise version of the trichotomy:
 
 ^pf-23-2
 
+![[m451-23-1.svg]]
+*Top: the radius theorem — absolute convergence on $(-R, R)$, divergence for $|x| > R$, and no verdict at $\pm R$ (red). Below: the three series of Example §23.1, all with $R = 1$, whose sets of convergence differ only at the endpoints (filled: included, hollow: excluded).*
+
 > [!remark] Remark
 > The nice thing: a simple pattern. The domain of convergence of a power series is always an interval, determined by the single number $R$ — only the endpoint behavior needs individual attention.
 
@@ -213,6 +216,9 @@ A power series defines a function $f(x) = \sum a_n x^n$ on its interval of conve
 > — *not* continuous, though every $f_n$ is.
 
 ^ex-23-8
+
+![[m451-23-2.svg]]
+*$f_n(x) = x^n$ for $n = 1, 2, 4, 8, 16, 32$ (blue, darker as $n$ grows): each is continuous and passes through $(1,1)$, but for every fixed $x < 1$ the values sink to $0$. The pointwise limit (red) is $0$ on $[0,1)$ with an isolated value $f(1) = 1$ — a jump that none of the $f_n$ has.*
 
 > [!example] Example §23.9: Powers of sine
 > $f_n(x) = (\sin x)^n$, $x \in \mathbb{R}$: find all $x$ where $\lim_n f_n(x)$ exists. If $x \neq k\pi + \tfrac\pi2$ ($k \in \mathbb{Z}$), then $|\sin x| < 1$ and $f_n(x) \to 0$. If $\sin x = 1$ (i.e. $x = 2k\pi + \tfrac\pi2$), $f_n(x) \to 1$. If $\sin x = -1$ (i.e. $x = (2k+1)\pi + \tfrac\pi2$), $f_n(x) = (-1)^n$ diverges. So the limit function has domain $\mathbb{R} \setminus \{(2k+1)\pi + \tfrac\pi2\}$, equals $0$ except at the points $2k\pi + \tfrac\pi2$ where it equals $1$ — and is not continuous.

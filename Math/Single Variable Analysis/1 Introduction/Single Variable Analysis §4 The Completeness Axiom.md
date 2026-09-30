@@ -91,6 +91,9 @@ What is special about the upper bound $1$ of $(0,1)$? Any number $t \geq 1$ is a
 
 ^prop-4-3
 
+![[m451-4-1.svg]]
+*Proposition 4.3 on the line: $M = \sup S$ is an upper bound (1), and the upper bounds of $S$ are exactly the numbers $\geq M$ (gray); any $M_1 < M$ is beaten by some $x_1 \in S$ (red) (2). Here $M \notin S$ (hollow), so $S$ has a supremum but no maximum.*
+
 > [!proof]+ Proof
 > Condition (2) says precisely that no $M_1 < M$ is an upper bound of $S$. So (1) and (2) together say: $M$ is an upper bound, and every upper bound $t$ satisfies $t \geq M$ (for if $t < M$, then by (2) $t$ is not an upper bound). This is exactly the definition of least upper bound.
 
@@ -190,6 +193,9 @@ As an application of completeness, we prove an “obvious” property: $\mathbb{
 
 ^pf-4-5
 
+![[m451-4-2.svg]]
+*The contradiction in the proof: the multiples $a, 2a, 3a, \ldots$ are spaced exactly $a$ apart, so the window $(s_0 - a,\, s_0]$ of length $a$ must catch some $n_0 a$ (as $s_0 - a$ is not an upper bound) — and then the next multiple $(n_0+1)a$ (red), which also belongs to $S$, lands beyond $s_0$.*
+
 > [!theorem] Proposition §4.6: Two-Sided Archimedean Bounds (HW)
 > If $a > 0$, then there exists $n \in \mathbb{N}$ such that
 >
@@ -245,6 +251,9 @@ As an application of completeness, we prove an “obvious” property: $\mathbb{
 > and $r = m/n \in \mathbb{Q}$ is the required rational number.
 
 ^pf-4-7
+
+![[m451-4-3.svg]]
+*The proof of density, scaled up by $n$: the interval $(na, nb)$ has length $n(b-a) > 1$, so the first integer $m > na$ (red) satisfies $m \leq na + 1 < nb$. Dividing by $n$ carries the picture back and puts the rational $\tfrac{m}{n}$ inside $(a,b)$.*
 
 > [!remark] Remark
 > The lecture emphasized: try to prove density yourself before reading the book, and after reading, try to come up with new proofs. The proof above is the standard one; the dyadic-midpoint picture in the earlier remark, once the Archimedean property justifies its covering step, gives an alternative proof.

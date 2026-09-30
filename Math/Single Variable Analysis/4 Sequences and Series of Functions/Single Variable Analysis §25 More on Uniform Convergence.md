@@ -30,7 +30,7 @@ Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a fla
 ^ex-25-1
 
 ![[m451-25-1.svg]]
-*The escaping triangle for $n = 2, 4, 8$: base $[0, \tfrac2n]$ shrinks, peak $n$ grows, area stays exactly $1$. Pointwise the limit is $0$ everywhere, yet the integrals refuse to follow.*
+*The escaping triangle for $n = 2, 4, 8$: base $[0, \tfrac2n]$ shrinks, peak $n$ grows, area (shaded for $n = 8$) stays exactly $1$. Pointwise the limit is $0$ everywhere, yet the integrals refuse to follow.*
 
 > [!theorem] Theorem §25.1: Uniform Convergence Allows Exchanging Limit and Integral
 > If $f_n \to f$ uniformly on $[a,b]$ (with each $f_n$ continuous, so that $f$ is continuous and all integrals are defined), then

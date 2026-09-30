@@ -23,6 +23,9 @@ A smart person came up with a way around this: **Dedekind**.
 
 ^def-6-1
 
+![[m451-6-1.svg]]
+*The Dedekind cut $S_r$ (blue): all rationals to the left of $r$, with $r$ itself excluded (hollow). Its elements creep up to $r$ without a largest one — property (3) of Proposition 6.1 below — while $\sup S_r = r$.*
+
 The important point: $S_r$ is completely determined by subsets and properties of $\mathbb{Q}$ alone. The idea is to *define* all operations and properties of real numbers in terms of these cuts. For this, we need to characterize which subsets of $\mathbb{Q}$ arise as cuts.
 
 > [!theorem] Proposition §6.1: Characterization of Cuts
@@ -143,6 +146,9 @@ Recall the logical gap flagged above: the compatibility statements for $S_{r_1},
 > This is the one genuinely trap-laden point of the whole construction; the rest is careful bookkeeping.
 
 ^rem-6-2
+
+![[m451-6-2.svg]]
+*The negation trap for a rational $r$. Top: $A = S_r$ excludes $r$, so its complement has the minimum $r$ (filled). Middle: negating the complement gives $\{q \leq -r\}$, whose maximum $-r$ (red) violates property (3). Bottom: the correct $-A$ drops that boundary point, leaving $\{q < -r\}$ (hollow endpoint).*
 
 > [!theorem] Proposition §6.5: Completion of the Construction — Exercises
 > Let $\mathcal{R}$ denote the set of all cuts, i.e. all $A \subseteq \mathbb{Q}$ satisfying (1)–(3), ordered by $A \leq B \iff A \subseteq B$, with addition as above. Then:

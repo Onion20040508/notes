@@ -176,6 +176,12 @@ tags: [linear-algebra]
 
 *Uses:* [[Linear Algebra 6A Inner Products and Norms#^ladr-6-13|6.13]], [[Linear Algebra 6A Inner Products and Norms#^ladr-6-12|6.12]]
 
+%% ex:6.14-fig %%
+> [!example] Cauchy–Schwarz as leg $\le$ hypotenuse
+> In the decomposition $u=cv+w$ of [[Linear Algebra 6A Inner Products and Norms#^ladr-6-13|6.13]] the right triangle has hypotenuse $\|u\|$ and legs $\|cv\|=\frac{|\langle u,v\rangle|}{\|v\|}$ and $\|w\|$. A leg is at most the hypotenuse: that is the inequality. Equality means $w=0$, i.e. $u\in\Span(v)$.
+>
+> ![[ladr-6.14-cauchy-schwarz.svg|360]]
+
 > [!example] 6.16 Cauchy–Schwarz inequality (p. 189)
 > - (a) For real $x_k,y_k$: $(x_1y_1+\dots+x_ny_n)^2\le(x_1^2+\dots+x_n^2)(y_1^2+\dots+y_n^2)$.
 > - (b) For continuous real $f,g$ on $[-1,1]$: $\Big|\int_{-1}^1fg\Big|^2\le\Big(\int_{-1}^1f^2\Big)\Big(\int_{-1}^1g^2\Big)$.

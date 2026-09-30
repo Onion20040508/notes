@@ -267,3 +267,9 @@ tags: [linear-algebra]
 > In words: $q$ is the orthogonal projection of $\cos(\pi t)$ onto the polynomial subspace ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i)). The polynomial that represents $\varphi$ is the best polynomial approximation of the function inside the integral.
 
 ^ladr-6-44
+
+%% ex:6.44-fig %%
+> [!example] The representing polynomials, pictured
+> $\cos(\pi x)$ (black) with its orthogonal projections onto $\Poly_2(\R)$ (blue dashed, $\frac{15}{2\pi^2}(1-3x^2)$) and onto $\Poly_5(\R)$ (red, the degree-$4$ formula above). The larger subspace gives the better approximation in the sense of [[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-61|6.61]].
+>
+> ![[ladr-6.44-riesz-cos.svg|400]]

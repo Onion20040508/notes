@@ -64,6 +64,12 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Defines $P_U$ ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-55|6.55]]); dimensions [[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-51|6.51]]; double complement [[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-52|6.52]].
 
+%% ex:6.49-fig %%
+> [!example] $V=U\oplus U^\perp$ in $\R^3$
+> Take $U=\{(2,3,5)\}^\perp$, the plane $2x+3y+5z=0$ of [[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-47|6.47]]. Then $U^\perp$ is the line $\Span\big((2,3,5)\big)$, and every $v$ splits uniquely as $v=u+w$ with $u\in U$ (blue) and $w\in U^\perp$ (red); $u=P_Uv$ ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-55|6.55]]).
+>
+> ![[ladr-6.49-complement.svg|380]]
+
 > [!theorem] 6.51 Dimension of orthogonal complement
 > If $V$ is finite-dimensional and $U$ a subspace, then $\dim U^\perp=\dim V-\dim U$.
 
@@ -271,6 +277,12 @@ tags: [linear-algebra]
 > (b) $x=(x-T^\dagger b)+T^\dagger b$ with $x-T^\dagger b\in\nullsp T$ and $T^\dagger b\in(\nullsp T)^\perp$; apply [[Linear Algebra 6A Inner Products and Norms#^ladr-6-12|6.12]].
 
 *Uses:* [[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-69|6.69]], [[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]], [[Linear Algebra 6A Inner Products and Norms#^ladr-6-12|6.12]]
+
+%% ex:6.70-fig %%
+> [!example] The pseudoinverse, pictured
+> $T$ maps $(\nullsp T)^\perp$ (blue, left) bijectively onto $\range T$ (blue, right) ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-67|6.67]]). $T^\dagger$ first projects $b$ to $TT^\dagger b=P_{\range T}b$, the point of $\range T$ closest to $b$, then inverts. The least-squares solutions form the line $T^\dagger b+\nullsp T$ (red dashed), parallel to $\nullsp T$; $T^\dagger b$ is its point in $(\nullsp T)^\perp$, the one closest to $0$ ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-70|6.70]](b)).
+>
+> ![[ladr-6.70-pseudoinverse.svg|480]]
 
 > [!example] 6.71 Pseudoinverse of a linear map from F⁴ to F³ (p. 223)
 > $T(a,b,c,d)=(a+b+c,\ 2c+d,\ 0)$ from $\F^4$ to $\F^3$ is neither injective nor surjective.

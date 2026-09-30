@@ -17,6 +17,9 @@ tags: [real-analysis, math451]
 
 ^def-28-1
 
+![[m451-28-2.svg]]
+*The derivative as a limit of secant slopes: as $x \to a$, the secants (blue, lighter to darker) through $(a, f(a))$ and $(x, f(x))$ pivot into the tangent line (red), whose slope is $f'(a)$. Only $x \neq a$ is ever used — at $x = a$ there is no secant.*
+
 > [!example] Example §28.1: Square root of the absolute value
 > Show $f(x) = \sqrt{|x|}: \mathbb{R} \to \mathbb{R}$ is differentiable at every $a \neq 0$ but not at $a = 0$.
 >
@@ -82,6 +85,9 @@ tags: [real-analysis, math451]
 > fails differentiability exactly at $-1, 0, 1$ (near each of these points, two of the three summands are differentiable and one is not; a sum of a differentiable and a non-differentiable function is non-differentiable). Can one construct a *continuous function differentiable at no point*? Yes — Weierstrass did — but it is a long story.
 
 ^rem-28-1
+
+![[m451-28-3.svg]]
+*Continuous but not differentiable. Left: the secant slopes of $\sqrt{|x|}$ at $0$ (red, through $x = \pm 0.4$ and $x = \pm 0.1$) are $\pm\tfrac{1}{\sqrt{|x|}}$ and blow up to $\pm\infty$ — a cusp. Right: $|x+1| + |x| + |x-1|$ is piecewise linear with slopes $-3, -1, 1, 3$; at each corner $-1, 0, 1$ (red) the two one-sided slopes disagree.*
 
 > [!theorem] Theorem §28.2: Arithmetic of Derivatives
 > If $f, g$ are differentiable at $a$, then $f \pm g$ and $fg$ are differentiable at $a$, with

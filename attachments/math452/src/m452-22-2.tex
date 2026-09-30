@@ -1,0 +1,26 @@
+% Figure from MATH 452 notes, section 22. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.15]
+% vector field (-y,x)/(x^2+y^2) at grid points, skipping origin
+\foreach \x in {-1.8,-1.2,-0.6,0,0.6,1.2,1.8}
+  \foreach \y in {-1.8,-1.2,-0.6,0,0.6,1.2,1.8}
+    {\pgfmathsetmacro{\rsq}{\x*\x+\y*\y}
+     \pgfmathparse{\rsq > 0.1 ? 1 : 0}
+     \ifnum\pgfmathresult>0
+       \pgfmathsetmacro{\vx}{-0.42*\y/\rsq}
+       \pgfmathsetmacro{\vy}{0.42*\x/\rsq}
+       \draw[->, figB!75, thin] (\x,\y) -- ({\x+\vx},{\y+\vy});
+     \fi}
+% the hole at origin
+\draw[figR, thick] (0,0) circle (0.13);
+\draw[figR, thick] (-0.093,-0.093) -- (0.093,0.093);
+\draw[figR, thick] (-0.093,0.093) -- (0.093,-0.093);
+% unit circle path with orientation
+\draw[thick, figG,
+  postaction={decorate},
+  decoration={markings,
+    mark=at position 0.125 with {\arrow[figG, scale=1.5]{Stealth}},
+    mark=at position 0.625 with {\arrow[figG, scale=1.5]{Stealth}}}]
+  (0,0) circle (0.95);
+\node[figG!70!black, font=\small] at (1.42,0.92) {$\boldsymbol{\gamma}$};
+\node[figR!85!black, font=\scriptsize] at (0.62,-0.28) {hole};
+\end{tikzpicture}

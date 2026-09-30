@@ -66,6 +66,12 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Physics: a complete set of commuting observables labels a basis by their joint eigenvalues. Orthonormal version for normal operators: the spectral theorems [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]].
 
+%% ex:5.76-fig %%
+> [!example] The proof of 5.76, pictured
+> Let $S$ have the diagonal matrix $\operatorname{diag}(8,5,5)$ of [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-49|5.49]] in a basis $v_1,v_2,v_3$, so $E(8,S)=\Span(v_1)$ and $E(5,S)=\Span(v_2,v_3)$ ([[Linear Algebra 5D Diagonalizable Operators#^ladr-5-53|5.53]]). Let $T$ have matrix $\begin{pmatrix}4&0&0\\0&2&1\\0&1&2\end{pmatrix}$ in the same basis; then $ST=TS$. $T$ maps each eigenspace of $S$ into itself ([[Linear Algebra 5E Commuting Operators#^ladr-5-75|5.75]]), and inside the plane $E(5,S)$ it has the eigenvectors $v_2+v_3$ (eigenvalue $3$) and $v_2-v_3$ (eigenvalue $1$). With $v_1$ they form a common eigenbasis (red).
+>
+> ![[ladr-5.76-common-eigenbasis.svg|380]]
+
 > [!theorem] 5.78 Common eigenvector for commuting operators
 > Two commuting operators on a finite-dimensional nonzero complex vector space have a common eigenvector.
 

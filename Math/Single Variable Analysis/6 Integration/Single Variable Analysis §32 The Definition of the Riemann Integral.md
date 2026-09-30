@@ -47,7 +47,7 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 ^def-32-2
 
 ![[m451-32-1.svg]]
-*Left: an uneven partition $P$; the upper sum (red outline) and lower sum (blue fill) trap the curve. Right: a refinement of $P$ — four more points inserted — and the gap $U - L$ (shaded) shrinks subinterval by subinterval: the Refinement Lemma in one picture.*
+*Left: an uneven partition $P$; the upper sum (red outline) and lower sum (blue fill) trap the curve. Right: a refinement of $P$ — four more points inserted (unlabeled ticks): the gap boxes of the refinement (blue) sit inside the gap boxes of $P$ (red outline), so $U - L$ shrinks subinterval by subinterval — the Refinement Lemma in one picture.*
 
 > [!example] Example §32.1: The identity function
 > Show $f(x) = x$ is Darboux integrable on $[0,1]$ and $\int_0^1 x\,dx = \tfrac12$. (We know the value from the Fundamental Theorem — but here we must prove it *from the definition*.)
@@ -70,6 +70,9 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ^ex-32-1
 
+![[m451-32-3.svg]]
+*The equal partition $P_n$ for $f(x) = x$ on $[0,1]$ (here $n = 5$): the lower sum is the blue staircase, and the upper sum adds the $n$ red squares along the diagonal, each of side $\tfrac1n$. So $U(f,P_n) - L(f,P_n) = n \cdot \tfrac{1}{n^2} = \tfrac1n \to 0$, squeezing both sums onto $\tfrac12$.*
+
 > [!example] Example §32.2: A step function
 > Show $g: [0,2] \to \mathbb{R}$, $g(x) = 1$ for $x \in [0,1)$ and $g(x) = 0$ for $x \in [1,2]$, is Darboux integrable. Given $\varepsilon > 0$, isolate the jump in a short subinterval: take
 >
@@ -86,6 +89,9 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 > and $U(g,P) - L(g,P) = \tfrac\varepsilon2 < \varepsilon$. By the Cauchy criterion below, $g$ is integrable; and since $L(g) \geq 1 - \tfrac\varepsilon2$ for every $\varepsilon$ while $U(g) \leq 1$, the integral is $\int_0^2 g = 1$. A jump discontinuity does not destroy integrability.
 
 ^ex-32-2
+
+![[m451-32-4.svg]]
+*The jump isolated: $g$ (blue; filled dot $g(1) = 0$, hollow dot at the value $1$ not taken at $x = 1$) with $P: 0 < 1 - \tfrac\varepsilon2 < 1 < 2$. Upper and lower sums agree except on the short subinterval $[1 - \tfrac\varepsilon2, 1]$, where $M = 1$ and $m = 0$: the red strip is the whole gap, $U(g,P) - L(g,P) = \tfrac\varepsilon2$.*
 
 > [!example] Example §32.3: The Dirichlet function is not integrable
 > Let $f(x) = 1$ for $x \in \mathbb{Q}$, $f(x) = 0$ for $x \notin \mathbb{Q}$. Then $f$ is *not* integrable on $[0,1]$: every subinterval $[t_{k-1}, t_k]$ of every partition contains both rationals and irrationals (density of both, §4 and §17), so
@@ -264,7 +270,7 @@ so $x^3$ is integrable on $[0,b]$ with $\int_0^b x^3\,dx = \lim U_n = \tfrac{b^4
 ^def-32-3
 
 ![[m451-32-2.svg]]
-*A Riemann sum: both choices are arbitrary — the partition points $t_k$ (unequal lengths; $\operatorname{mesh}(P)$ is the widest) and the tags $x_k^*$ inside each piece, with rectangle heights $f(x_k^*)$, neither sup nor inf. Dashed red and blue mark the Darboux envelopes on each subinterval: every Riemann sum is squeezed, $L(f,P) \leq S \leq U(f,P)$ — the mechanism behind the equivalence theorem below.*
+*A Riemann sum: both choices are arbitrary — the partition points $t_k$ (unequal lengths; $\operatorname{mesh}(P)$ is the widest) and the tags $x_k$ inside each piece, with rectangle heights $f(x_k)$, neither sup nor inf. Dashed red and blue mark the sup $M$ and inf $m$ of $f$ on each subinterval: every Riemann sum is squeezed, $L(f,P) \leq S \leq U(f,P)$ — the mechanism behind the equivalence theorem below.*
 
 One difficulty in *using* this definition: we need a candidate value $r$ before we can check anything — whereas the Darboux definition asks only for the sup and inf to meet. Fortunately:
 

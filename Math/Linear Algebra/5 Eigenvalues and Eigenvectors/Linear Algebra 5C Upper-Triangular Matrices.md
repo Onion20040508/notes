@@ -73,7 +73,7 @@ tags: [linear-algebra]
 
 %% ex:5.39-flag %%
 > [!example] Upper triangular = preserving a flag
-> In $\R^3$ with $v_1,v_2,v_3$: $T$ is upper triangular iff it maps the line $\Span(v_1)$ into itself and the plane $\Span(v_1,v_2)$ into itself ([[Linear Algebra 5C Upper-Triangular Matrices#^ladr-5-39|5.39]]).
+> In $\R^3$ with $v_1,v_2,v_3$: $T$ is upper triangular iff it maps the line $\Span(v_1)$ into itself and the plane $\Span(v_1,v_2)$ into itself ([[Linear Algebra 5C Upper-Triangular Matrices#^ladr-5-39|5.39]]). In red, condition (c): $Tv_1\in\Span(v_1)$, $Tv_2\in\Span(v_1,v_2)$, and $Tv_3$ anywhere in $V$.
 >
 > ![[ladr-5.39-flag.svg|340]]
 
@@ -118,6 +118,12 @@ tags: [linear-algebra]
 > For $T$ of [[Linear Algebra 5C Upper-Triangular Matrices#^ladr-5-36|5.36]], the standard matrix is upper triangular with diagonal $2,5,8$, so by [[Linear Algebra 5C Upper-Triangular Matrices#^ladr-5-41|5.41]] the eigenvalues are exactly $2$, $5$, $8$, with no computation.
 
 ^ladr-5-42
+
+%% ex:5.41-fig %%
+> [!example] Why a diagonal entry is an eigenvalue, pictured
+> For $T$ of [[Linear Algebra 5C Upper-Triangular Matrices#^ladr-5-36|5.36]] on $\Span(e_1,e_2)$: $Te_1=2e_1$ and $Te_2=e_1+5e_2$, so $T-5I$ sends $e_1\mapsto-3e_1$ and $e_2\mapsto e_1$. It squeezes the plane $\Span(e_1,e_2)$ into the line $\Span(e_1)$, as in the proof of [[Linear Algebra 5C Upper-Triangular Matrices#^ladr-5-41|5.41]], so some nonzero vector goes to $0$: $(T-5I)(e_1+3e_2)=-3e_1+3e_1=0$. Thus $(1,3,0)$ is an eigenvector for $5$ (red; compare [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-59|5.59]]).
+>
+> ![[ladr-5.41-collapse.svg|440]]
 
 > [!example] 5.43 Whether T has an upper-triangular matrix can depend on F (p. 158)
 > $T(z_1,z_2,z_3,z_4)=(-z_2,\ z_1,\ 2z_1+3z_3,\ z_3+3z_4)$, i.e.

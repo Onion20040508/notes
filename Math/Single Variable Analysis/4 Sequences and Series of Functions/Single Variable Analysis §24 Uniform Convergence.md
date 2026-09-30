@@ -162,6 +162,9 @@ Now we reap the applications.
 
 ^pf-24-2
 
+![[m451-24-3.svg]]
+*The $\tfrac\varepsilon3$ argument. Uniform convergence puts the graph of one $f_N$ (blue) inside the band $f \pm \tfrac\varepsilon3$ (gray) at every point at once — in particular at $x_0$ and at $x$ (red gaps). Continuity of $f_N$ bounds the middle step from $f_N(x_0)$ to $f_N(x)$ (orange). Chaining the three steps gets from $f(x_0)$ to $f(x)$ with total change $< \varepsilon$.*
+
 > [!remark] Remark
 > This retroactively explains several examples: $x^n$ on $[0,1]$ and $\tfrac{x^n}{n+x^n}$ on $[0,\infty)$ could not converge uniformly, because their limit functions are discontinuous while every $f_n$ is continuous. The contrapositive of the theorem is a quick non-uniformity test.
 

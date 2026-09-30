@@ -57,7 +57,7 @@ tags: [topology, math590]
 >
 > **This is the only hard part** — it is a geometric question. You must draw the picture, look at the loop $t$ sitting inside $A$, and figure out which word in $\pi_1(A)$'s generators it represents.
 >
-> **Step 3: The relation is $i_1(t) = i_2(t)$.** For each generator $t_j$ of $K$, you get one relation. Collect them all — that is the complete set of generators for $N$.
+> **Step 3: The relation is $i_1(t) = i_2(t)$.** For each generator $t_j$ of $K$, you get one relation. Collect them all — their normal closure is $N$ (they generate $N$ as a normal subgroup).
 >
 > In $\langle \mid \rangle$ notation: the result is (recall [[Topology §21 Algebra Prerequisites꞉ Groups#^rem-21-15|§21]]):
 >
@@ -389,7 +389,7 @@ tags: [topology, math590]
 >
 > For $P^2$ we use the one-vertex scheme $aa$ (a $2$-gon whose two edges are glued, i.e. the disk with antipodal boundary points identified). The square scheme $abab$ of [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-7|Example §29.7]] has two vertex classes, so [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-3|Theorem §29.3]] does not apply to it directly.
 >
-> The double torus has $\pi_1$ non-abelian, confirming the [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-5|result from §28]] (where we proved non-abelianness via covering spaces, without computing the exact group).
+> The double torus has $\pi_1$ non-abelian, confirming the [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-5|result from §28]] (where we proved non-abelianness via a retraction onto the figure eight, whose $\pi_1$ is non-abelian by a covering-space argument, without computing the exact group).
 
 ^ex-29-8
 

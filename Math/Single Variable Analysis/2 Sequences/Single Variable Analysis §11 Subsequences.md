@@ -26,6 +26,9 @@ Consider $s_n = (-1)^n$, bounded but not convergent. All *even* terms $s_{2n} = 
 
 ^ex-11-1
 
+![[m451-11-1.svg]]
+*$s_n = 1 + (-1)^n \tfrac1n$ (gray zigzag) is not monotone, but its even-indexed subsequence (red) is decreasing and its odd-indexed subsequence (blue) is increasing — both toward $1$.*
+
 > [!theorem] Theorem §11.1: Subsequences of a Convergent Sequence
 > If $(s_n)$ converges, then every subsequence $(s_{n_k})$ also converges, to the same limit.
 
@@ -128,6 +131,9 @@ This is what the example $s_n = (-1)^n$ leads us to expect.
 > We could equally start with $\underline{s} = \liminf s_n$ and get another subsequence converging to it.
 
 ^pf-11-5
+
+![[m451-11-2.svg]]
+*The Bolzano–Weierstrass construction for a bounded, non-monotone sequence (gray dots) with $\limsup s_n = \overline{s}$. At step $k$ a term $s_{n_k}$ (red) is chosen inside the window $[\overline{s} - \tfrac1k,\, \overline{s} + \tfrac1k]$ (red bars), with index beyond $n_{k-1}$; the windows shrink, so $s_{n_k} \to \overline{s}$.*
 
 ## Subsequence Limits
 

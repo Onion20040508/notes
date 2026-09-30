@@ -62,6 +62,9 @@ We all know this — but how to *prove* it? The integral $\int_a^b g'$ is define
 
 ^pf-34-1
 
+![[m451-34-2.svg]]
+*The proof of FTC I: on each $[t_{k-1}, t_k]$ the Mean Value Theorem gives a point $x_k$ where the tangent (red) is parallel to the chord (dashed), so $g(t_k) - g(t_{k-1}) = g'(x_k)(t_k - t_{k-1})$. Summed, the increments telescope to $g(b) - g(a)$ — while the right side becomes a Riemann sum for $g'$, trapped between $L(g', P)$ and $U(g', P)$.*
+
 ## Integration by Parts
 
 Integration by parts needs a preliminary: products of integrable functions are integrable.

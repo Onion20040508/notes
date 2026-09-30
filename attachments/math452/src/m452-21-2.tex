@@ -1,0 +1,17 @@
+% Figure from MATH 452 notes, section 21. Compile with the notes preamble.
+\begin{tikzpicture}[scale=0.9]
+% Left: region with +z normal and ccw arrow
+\begin{scope}[shift={(0,0)}]
+\draw[thick, figB, fill=figB!10] (0,0) -- (2.6,0.3) -- (3.3,1.5) -- (0.7,1.25) -- cycle;
+\draw[->, very thick, figR] (1.65,0.75) -- (1.65,2.2) node[above, font=\small] {$+\hat{z}$};
+\draw[->, thick, figG] (1.1,0.45) arc[start angle=210, end angle=-90, x radius=0.5, y radius=0.24];
+\node[font=\scriptsize, align=center] at (1.65,-0.7) {$dx \wedge dy > 0$\\ counterclockwise};
+\end{scope}
+% Right: same region with -z normal and cw arrow
+\begin{scope}[shift={(6.3,0)}]
+\draw[thick, figB, fill=figB!10] (0,0) -- (2.6,0.3) -- (3.3,1.5) -- (0.7,1.25) -- cycle;
+\draw[->, very thick, figR] (1.65,0.75) -- (1.65,-0.75) node[right, font=\small, yshift=3pt] {$-\hat{z}$};
+\draw[->, thick, figG] (2.2,1.05) arc[start angle=30, end angle=330, x radius=0.5, y radius=0.24];
+\node[font=\scriptsize, align=center] at (1.65,-1.6) {$dy \wedge dx < 0$\\ clockwise};
+\end{scope}
+\end{tikzpicture}

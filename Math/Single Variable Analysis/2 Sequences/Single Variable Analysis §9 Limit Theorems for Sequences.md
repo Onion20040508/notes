@@ -32,6 +32,9 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 
 ^pf-9-1
 
+![[m451-9-1.svg]]
+*Convergent implies bounded: from $N$ on (with $\varepsilon = 1$) the terms stay in the band $s \pm 1$ (blue), so $|s_n| < |s| + 1$; the finitely many early terms (gray) are handled by the maximum. Here the early term $|s_2|$ (red) is the largest, so it sets $M$, and every term lies between $-M$ and $M$.*
+
 > [!example] Example §9.1: $\sqrt{n}$ diverges
 > The sequence $s_n = \sqrt{n}$ is not convergent. Why? It is unbounded: given any $M$, the [[Archimedean Property|Archimedean property]] provides $n > M^2$, and then $\sqrt{n} > M$. By the contrapositive of the theorem, an unbounded sequence cannot converge.
 

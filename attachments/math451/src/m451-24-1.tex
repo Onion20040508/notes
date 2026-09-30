@@ -1,11 +1,11 @@
 % Figure from MATH 451 notes, section 24. Compile with the notes preamble.
 \begin{tikzpicture}
-\begin{axis}[nfig, width=0.75\textwidth, height=0.38\textwidth,
+\begin{axis}[nfig, width=0.75\textwidth, height=0.38\textwidth, clip=false,
   xmin=0, xmax=1.02, ymin=-0.24, ymax=0.45,
   xtick={0,0.5,1}, ytick={-0.15,0.15},
   yticklabels={$-\varepsilon$,$\varepsilon$}, xlabel={$x$}]
   \addplot[draw=none, fill=black!10] coordinates {(0,-0.15) (1.02,-0.15) (1.02,0.15) (0,0.15)};
-  \addplot[black, thick, domain=0:1.02] {0} node[pos=0.965, below, font=\scriptsize] {$f\equiv 0$};
+  \addplot[black, thick, domain=0:1.02] {0} node[pos=1, anchor=west, font=\scriptsize] {$f\equiv 0$};
   \addplot[figB, very thick, domain=0:1.02, samples=200] {0.11*sin(deg(9*x))};
   \addplot[figR, very thick, domain=0:1, samples=300] {6*x^6*(1-x)};
   \node[figB, font=\scriptsize] at (axis cs:0.30,-0.19) {inside the tube: uniform};

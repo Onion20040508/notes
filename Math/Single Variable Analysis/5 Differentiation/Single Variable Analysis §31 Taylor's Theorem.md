@@ -198,4 +198,4 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 ^ex-31-3
 
 ![[m451-31-1.svg]]
-*The two extremes of §31. Left: $T_2, T_4, T_8$ hug $\cos x$ order by order — the remainder dies everywhere. Right: $e^{-1/x^2}$ and its Taylor series (dashed, identically $0$) are visually indistinguishable near the origin — infinitely flat — yet equal only at the single point $x = 0$.*
+*The two extremes of §31. Left: the partial sums $s_2, s_4, s_8$ (light blue, blue, red) hug $\cos x$ (black) order by order — the remainder dies everywhere. Right: $e^{-1/x^2}$ and its Taylor series (dashed, identically $0$) are visually indistinguishable near the origin — infinitely flat — yet equal only at the single point $x = 0$.*

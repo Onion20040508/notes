@@ -540,7 +540,7 @@ tags: [topology, math590]
 > G \times H = (G * H) / \langle ghg^{-1}h^{-1} \mid g \in G, h \in H \rangle.
 > $$
 >
-> You start with the free product (no relations between factors) and impose commutativity. This always shrinks the group: $F_2$ is non-abelian, while $\mathbb{Z}^2$ is abelian, so the quotient map $F_2 \to \mathbb{Z}^2$ sends the nontrivial element $aba^{-1}b^{-1}$ to the identity. Adding relations kills elements.
+> You start with the free product (no relations between factors) and impose commutativity. This shrinks the group whenever both factors are nontrivial: $F_2$ is non-abelian, while $\mathbb{Z}^2$ is abelian, so the quotient map $F_2 \to \mathbb{Z}^2$ sends the nontrivial element $aba^{-1}b^{-1}$ to the identity. Adding relations kills elements.
 
 ^rem-21-12
 

@@ -142,6 +142,9 @@ People often expect to order everything — in competitions, in admission to sch
 
 ^ex-3-2
 
+![[m451-3-1.svg]]
+*Left: in the product order the points comparable with $(1,2)$ fill exactly the two shaded quadrants ($\geq$ above right, $\leq$ below left); $(2,1)$ (red) lies in neither, so O1 fails. Right: in the lexicographic order every point with larger first coordinate, together with the ray above $(1,2)$ on its own vertical line, is $> (1,2)$ — so $(2,1) > (1,2)$, and any two points can be compared.*
+
 Since $\mathbb{C}$ can be identified with $\mathbb{R}^2$, the lexicographic order makes $\mathbb{C}$ a linearly ordered *set*. Nevertheless:
 
 > [!theorem] Proposition §3.2: $\mathbb{C}$ is not an ordered field

@@ -59,6 +59,9 @@ tags: [real-analysis, math451]
 
 ^pf-15-1
 
+![[m451-15-2.svg]]
+*The claim in the proof, drawn for $a_k = \tfrac1k$ from $n = 2$: the alternating tail starts with a step $+a_n$ to the right, and each later step reverses direction and is no longer than the one before. So the partial sums zigzag inside $[0, a_n]$ (shaded) and never leave it.*
+
 > [!example] Example §15.1: The alternating harmonic series
 > $a_n = \tfrac1n$ satisfies the conditions (decreasing, $\to 0$), so
 >
@@ -159,7 +162,7 @@ tags: [real-analysis, math451]
 ^pf-15-3
 
 ![[m451-15-1.svg]]
-*The integral test for a decreasing $f$ (drawn: $f(x) = \tfrac1x$): the upper staircase (red, height $f(n)$ on $[n, n+1]$) and the lower staircase (blue, height $f(n+1)$) squeeze the curve, so partial sums and partial integrals are bounded together. The figure is the proof.*
+*The integral test for a decreasing $f$ (drawn: $f(x) = \tfrac1x$, up to $n = 6$): on each $[k, k+1]$ the red box of height $f(k)$ lies above the curve and the blue box of height $f(k+1)$ below it. Summing gives $\sum_{k=1}^{n-1} f(k) \geq \int_1^n f \geq \sum_{k=2}^{n} f(k)$, so partial sums and partial integrals are bounded together. The figure is the proof.*
 
 > [!example] Example §15.3: The p-series settled
 > Let $f(x) = \tfrac{1}{x^p}$, $p > 0$ — decreasing and nonnegative on $[1,\infty)$. From calculus,

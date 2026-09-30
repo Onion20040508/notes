@@ -1,27 +1,25 @@
 % Figure from MATH 451 notes, section 24. Compile with the notes preamble.
 \begin{tikzpicture}
-\begin{axis}[nfig, width=0.66\textwidth, height=0.44\textwidth, clip=false,
-  xmin=0.2, xmax=2.3, ymin=0.45, ymax=1.6,
+\begin{axis}[nfig, width=0.62\textwidth, height=0.52\textwidth, clip=false,
+  xmin=0.4, xmax=2.25, ymin=0.45, ymax=1.62,
   xtick={1,1.5}, xticklabels={$x_0$,$x$}, ytick=\empty, xlabel={}]
-  \addplot[draw=none, fill=black!9, domain=0.25:2.2, samples=60]
-    {1+0.36*(x-1)-0.1*(x-1)^2+0.2} \closedcycle;
-  \addplot[draw=none, fill=white, domain=0.25:2.2, samples=60]
-    {1+0.36*(x-1)-0.1*(x-1)^2-0.2} \closedcycle;
-  \addplot[black, very thick, domain=0.25:2.2, samples=80] {1+0.36*(x-1)-0.1*(x-1)^2};
-  \addplot[figB, very thick, domain=0.25:2.2, samples=150] {1+0.36*(x-1)-0.1*(x-1)^2-0.15+0.045*sin(deg(4*pi*(x-1)))};
-  \draw[black!50, dotted] (axis cs:1,0.45) -- (axis cs:1,0.85);
-  \draw[black!50, dotted] (axis cs:1.5,0.45) -- (axis cs:1.5,0.85);
-  \draw[black!50, dotted] (axis cs:1,0.85) -- (axis cs:1.5,0.85);
-  \draw[figR, very thick] (axis cs:1,1) -- (axis cs:1,0.85);
-  \draw[figO, very thick] (axis cs:1.5,0.85) -- (axis cs:1.5,1.005);
-  \draw[figR, very thick] (axis cs:1.5,1.005) -- (axis cs:1.5,1.155);
+  \fill[black!9] plot coordinates {(0.400,1.0080) (0.430,1.0223) (0.460,1.0364) (0.490,1.0504) (0.520,1.0642) (0.550,1.0777) (0.580,1.0912) (0.610,1.1044) (0.640,1.1174) (0.670,1.1303) (0.700,1.1430) (0.730,1.1555) (0.760,1.1678) (0.790,1.1800) (0.820,1.1920) (0.850,1.2038) (0.880,1.2154) (0.910,1.2268) (0.940,1.2380) (0.970,1.2491) (1.000,1.2600) (1.030,1.2707) (1.060,1.2812) (1.090,1.2916) (1.120,1.3018) (1.150,1.3117) (1.180,1.3216) (1.210,1.3312) (1.240,1.3406) (1.270,1.3499) (1.300,1.3590) (1.330,1.3679) (1.360,1.3766) (1.390,1.3852) (1.420,1.3936) (1.450,1.4018) (1.480,1.4098) (1.510,1.4176) (1.540,1.4252) (1.570,1.4327) (1.600,1.4400) (1.630,1.4471) (1.660,1.4540) (1.690,1.4608) (1.720,1.4674) (1.750,1.4738) (1.780,1.4800) (1.810,1.4860) (1.840,1.4918) (1.870,1.4975) (1.900,1.5030) (1.930,1.5083) (1.960,1.5134) (1.990,1.5184) (2.020,1.5232) (2.050,1.5277) (2.080,1.5322) (2.110,1.5364) (2.140,1.5404) (2.170,1.5443) (2.200,1.5480) (2.200,1.0280) (2.170,1.0243) (2.140,1.0204) (2.110,1.0164) (2.080,1.0122) (2.050,1.0077) (2.020,1.0032) (1.990,0.9984) (1.960,0.9934) (1.930,0.9883) (1.900,0.9830) (1.870,0.9775) (1.840,0.9718) (1.810,0.9660) (1.780,0.9600) (1.750,0.9538) (1.720,0.9474) (1.690,0.9408) (1.660,0.9340) (1.630,0.9271) (1.600,0.9200) (1.570,0.9127) (1.540,0.9052) (1.510,0.8976) (1.480,0.8898) (1.450,0.8818) (1.420,0.8736) (1.390,0.8652) (1.360,0.8566) (1.330,0.8479) (1.300,0.8390) (1.270,0.8299) (1.240,0.8206) (1.210,0.8112) (1.180,0.8016) (1.150,0.7917) (1.120,0.7818) (1.090,0.7716) (1.060,0.7612) (1.030,0.7507) (1.000,0.7400) (0.970,0.7291) (0.940,0.7180) (0.910,0.7068) (0.880,0.6954) (0.850,0.6838) (0.820,0.6720) (0.790,0.6600) (0.760,0.6478) (0.730,0.6355) (0.700,0.6230) (0.670,0.6103) (0.640,0.5974) (0.610,0.5844) (0.580,0.5712) (0.550,0.5578) (0.520,0.5442) (0.490,0.5304) (0.460,0.5164) (0.430,0.5023) (0.400,0.4880)} -- cycle;
+  \addplot[black, very thick, domain=0.4:2.2, samples=80] {1+0.36*(x-1)-0.1*(x-1)^2};
+  \addplot[figB, very thick, domain=0.4:2.2, samples=150] {1+0.36*(x-1)-0.1*(x-1)^2-0.2+0.045*sin(deg(4*pi*(x-1)))};
+  \draw[black!50, dotted] (axis cs:1,0.45) -- (axis cs:1,0.8);
+  \draw[black!50, dotted] (axis cs:1.5,0.45) -- (axis cs:1.5,0.8);
+  \draw[black!50, dotted] (axis cs:1,0.8) -- (axis cs:1.5,0.8);
+  \draw[figR, very thick] (axis cs:1,1) -- (axis cs:1,0.8);
+  \draw[figO, very thick] (axis cs:1.5,0.8) -- (axis cs:1.5,0.955);
+  \draw[figR, very thick] (axis cs:1.5,0.955) -- (axis cs:1.5,1.155);
   \addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1,1) (1.5,1.155)};
-  \addplot[only marks, mark=*, mark size=1.3pt, figB] coordinates {(1,0.85) (1.5,1.005)};
-  \node[font=\scriptsize, figR, anchor=east] at (axis cs:0.98,0.925) {$<\frac\varepsilon3$};
-  \node[font=\scriptsize, figO, anchor=west] at (axis cs:1.52,0.925) {$<\frac\varepsilon3$};
-  \node[font=\scriptsize, figR, anchor=west] at (axis cs:1.52,1.08) {$<\frac\varepsilon3$};
-  \node[font=\small, anchor=west] at (axis cs:2.2,1.27) {$f$};
-  \node[font=\small, figB, anchor=west] at (axis cs:2.2,1.08) {$f_N$};
-  \node[font=\scriptsize, black!60, anchor=south] at (axis cs:0.45,1.0) {$f \pm \frac\varepsilon3$};
+  \addplot[only marks, mark=*, mark size=1.3pt, figB] coordinates {(1,0.8) (1.5,0.955)};
+  \node[font=\scriptsize, figR, anchor=east] at (axis cs:0.98,0.875) {$<\frac\varepsilon3$};
+  \node[font=\scriptsize, figO, anchor=west] at (axis cs:1.52,0.86) {$<\frac\varepsilon3$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:1.52,1.085) {$<\frac\varepsilon3$};
+  \node[font=\small, anchor=west] at (axis cs:2.2,1.296) {$f$};
+  \node[font=\small, figB, anchor=west] at (axis cs:2.2,1.13) {$f_N$};
+  \node[font=\scriptsize, black!60, anchor=west] at (axis cs:2.2,1.53) {$f + \frac\varepsilon3$};
+  \node[font=\scriptsize, black!60, anchor=west] at (axis cs:2.2,0.98) {$f - \frac\varepsilon3$};
 \end{axis}
 \end{tikzpicture}

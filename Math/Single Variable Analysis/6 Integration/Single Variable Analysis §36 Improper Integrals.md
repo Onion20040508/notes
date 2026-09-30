@@ -70,6 +70,9 @@ The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replac
 
 ^ex-36-2
 
+![[m451-36-2.svg]]
+*The p-integrals on $[1, \infty)$: the three graphs look alike, but only for $p = 2$ (blue) is the area under the whole tail finite, $\int_1^\infty x^{-2}\,dx = \tfrac{1}{p-1} = 1$; for $p = 1$ (dashed) and $p = \tfrac12$ (red), $\int_1^d$ grows without bound as $d \to \infty$.*
+
 > [!example] Example §36.3: A symbol with no meaning
 > $\int_0^d \sin x\,dx = 1 - \cos d$ [FTC I] oscillates between $0$ and $2$ forever: as $d \to \infty$ the limit does not exist, *not even in* $[-\infty, +\infty]$. So $\int_0^\infty \sin x\,dx$ is not a convergent integral, not a divergent one — the symbol simply has **no meaning**. (Divergence to $\pm\infty$ is a defined outcome; this is worse.) The same holds for $\int_{-\infty}^0 \sin x\,dx$ and $\int_{-\infty}^\infty \sin x\,dx$.
 >
@@ -82,6 +85,9 @@ The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replac
 > the odd integrand cancelling itself exactly. Such a value — the symmetric limit existing where the improper integral does not — is called the **Cauchy principal value**. The doubly-improper definition deliberately sends the two endpoints to infinity *independently*, precisely to forbid this kind of miraculous cancellation: a principal value is not an improper integral.
 
 ^ex-36-3
+
+![[m451-36-3.svg]]
+*The running integral $\int_0^d \sin x\,dx = 1 - \cos d$ (blue) swings between $0$ and $2$ forever, driven by the alternating lobes of $\sin x$ (gray): no limit as $d \to \infty$, not even $\pm\infty$ — the symbol $\int_0^\infty \sin x\,dx$ has no meaning.*
 
 ## Improper Stieltjes Integrals and Distribution Functions
 

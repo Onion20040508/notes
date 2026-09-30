@@ -54,7 +54,7 @@ So far, mainly three ways to determine whether a sequence converges: (1) guess t
 ^pf-10-1
 
 ![[m451-10-1.svg]]
-*The proof in one picture: an increasing sequence bounded above climbs toward the supremum of its own terms — and converges exactly there. Any upper bound $M$ sits at or above the dashed line; the supremum is the least one.*
+*The proof in one picture: $s = \sup\{s_n\}$ (blue line) is the least upper bound, at or below any other upper bound $M$. Since $s - \varepsilon$ is not an upper bound, some $s_N$ (red) exceeds it — and because the sequence increases, every later term is trapped in the band between $s - \varepsilon$ and $s$.*
 
 The supremum also admits a *sequential* characterization — the limit-language form of the approximation property of §4, and the engine inside several later proofs (e.g. the [[Extreme Value Theorem|Extreme Value Theorem]], §18):
 
@@ -125,6 +125,9 @@ The supremum also admits a *sequential* characterization — the limit-language 
 
 ^ex-10-2
 
+![[m451-10-3.svg]]
+*The recursion $s_{n+1} = \sqrt{1+s_n}$ as a staircase (red) between the graph $y = \sqrt{1+x}$ (blue) and the diagonal $y = x$: from $s_1 = 1$ the steps climb (the sequence increases) toward the crossing point $\tfrac{1+\sqrt5}{2}$. The bound $M = 2$ propagates because the graph lies below the diagonal at $x = 2$: $\sqrt{1+2} = \sqrt3 < 2$.*
+
 > [!theorem] Theorem §10.3: Unbounded Monotone Sequences
 > If $(s_n)$ is increasing but not bounded above, then $\lim s_n = +\infty$. If $(s_n)$ is decreasing but not bounded below, then $\lim s_n = -\infty$.
 
@@ -179,7 +182,7 @@ In general a sequence is neither increasing nor decreasing, so the theorem above
 ^rem-10-2
 
 ![[m451-10-2.svg]]
-*The envelopes at work for $s_n = (-1)^n\left(1 + \tfrac2n\right)$: the sequence (dots) has no limit, but the tail-suprema $\overline{s}_N$ (red, decreasing) and tail-infima $s_N$ (blue, increasing) are monotone and bounded, so each converges — to $\limsup = 1$ and $\liminf = -1$.*
+*The envelopes at work for $s_n = (-1)^n\left(1 + \tfrac2n\right)$: the sequence (dots) has no limit, but the tail-suprema $\overline{s}_N$ (red, decreasing) and tail-infima $\underline{s}_N$ (blue, increasing) are monotone and bounded, so each converges — to $\limsup = 1$ and $\liminf = -1$.*
 
 > [!theorem] Proposition §10.5: Lim Inf Is at Most Lim Sup
 > $\displaystyle \liminf_{n\to+\infty} s_n \leq \limsup_{n\to+\infty} s_n$.
@@ -345,6 +348,9 @@ How to prove it? Not clear at first — we must produce a limit out of nothing. 
 > and by the theorem of the previous subsection, $(s_n)$ is convergent.
 
 ^pf-10-9
+
+![[m451-10-4.svg]]
+*Cauchy implies convergent, with no limit in sight: the band is anchored at a *term* $s_N$ (red), not at a limit. Every later term lies within $\varepsilon$ of $s_N$, so the whole tail — and with it $\underline{s}_N \leq \overline{s}_N$, hence $\liminf s_n$ and $\limsup s_n$ — is caught in an interval of length $2\varepsilon$.*
 
 > [!example] Example §10.3: A contraction-type estimate
 > Assume $(s_n)$ satisfies $|s_{n+1} - s_n| < 2^{-n}$ for all $n \geq 1$. Prove $(s_n)$ is a Cauchy sequence, and hence convergent.

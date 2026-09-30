@@ -47,4 +47,7 @@ As before, $L_F(f) \leq U_F(f)$.
 
 ^def-35-1
 
+![[m451-35-1.svg]]
+*Weights read off the vertical axis: in a Darboux–Stieltjes sum the open subinterval $(t_{k-1}, t_k)$ carries the weight $F(t_k^-) - F(t_{k-1}^+)$ (blue bars, alternating shades), while a jump of $F$ at a partition point is a separate weight $F(t_k^+) - F(t_k^-)$ (red), charged to the single value $f(t_k)$ in $J_F(f,P)$. Together the bars fill $F(b) - F(a)$; for $F(x) = x$ they are just the lengths $t_k - t_{k-1}$.*
+
 The theory parallels §32: $f$ is Darboux–Stieltjes integrable if and only if for every $\varepsilon > 0$ some partition has $U_F(f,P) - L_F(f,P) < \varepsilon$; every continuous $f$ is Darboux–Stieltjes integrable; and one can define Riemann–Stieltjes sums and integrability — all very similar to the special case $F(x) = x$, which recovers the ordinary Riemann integral. (Details: Ross §35.)

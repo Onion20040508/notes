@@ -78,6 +78,9 @@ Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; i
 
 ^ex-14-1
 
+![[m451-14-2.svg]]
+*Example (2) as Zeno's walk: each term covers half of the remaining distance to $2$, so the partial sums $s_n = 2(1 - 2^{-n})$ march toward $2$ while the gap $2 - s_n = 2^{1-n}$ halves at every step (shown: $2 - s_3 = \tfrac14$).*
+
 ## The Cauchy Criterion for Series
 
 For the harmonic series we cannot find a closed formula for $s_n$, so we need to study general properties of series. Since a series *is* the sequence of its partial sums, every convergence criterion for sequences transfers.
@@ -189,7 +192,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 ^pf-14-5
 
 ![[m451-14-1.svg]]
-*The dyadic estimate as areas: term $n$ is a bar of area $\tfrac1n$; under each block of terms $(2^k, 2^{k+1}]$ sits a red dashed box of height $\tfrac{1}{2^{k+1}}$ (the block's smallest term) and width $2^k$ — area exactly $\tfrac12$. Every bar clears its box's roof, so each block sums to at least $\tfrac12$, and the partial sums swallow one half-unit per block, forever.*
+*The dyadic estimate as areas: term $n$ is a bar of area $\tfrac1n$ on $[n-1, n]$ (term $1$ gray). Under each block of terms $(2^k, 2^{k+1}]$ sits a red dashed box of height $\tfrac{1}{2^{k+1}}$ (the block's smallest term) and width $2^k$ — area exactly $\tfrac12$. Every bar reaches at least its box's roof, so each block sums to at least $\tfrac12$, and the partial sums gain half a unit per block, forever.*
 
 ## Absolute Convergence
 

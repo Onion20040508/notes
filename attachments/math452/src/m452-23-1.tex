@@ -1,0 +1,20 @@
+% Figure from MATH 452 notes, section 23. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0, every node/.style={font=\small}]
+% ladder boxes
+\node[draw, thick, figB!70, fill=figB!8, minimum width=2.2cm, minimum height=0.85cm] (f0) at (0,0) {0-forms};
+\node[draw, thick, figB!70, fill=figB!8, minimum width=2.2cm, minimum height=0.85cm] (f1) at (3.5,0) {1-forms};
+\node[draw, thick, figB!70, fill=figB!8, minimum width=2.2cm, minimum height=0.85cm] (f2) at (7,0) {2-forms};
+\node[draw, thick, figB!70, fill=figB!8, minimum width=2.2cm, minimum height=0.85cm] (f3) at (10.5,0) {3-forms};
+% d arrows
+\draw[->, thick, figR] (f0) -- (f1) node[midway, above] {$d$} node[midway, below, font=\scriptsize, black] {grad};
+\draw[->, thick, figR] (f1) -- (f2) node[midway, above] {$d$} node[midway, below, font=\scriptsize, black] {curl};
+\draw[->, thick, figR] (f2) -- (f3) node[midway, above] {$d$} node[midway, below, font=\scriptsize, black] {div};
+% theorem labels under the arrows
+\node[figG!70!black, font=\scriptsize, align=center] at (1.75,-0.85) {FTC / grad.\ thm};
+\node[figG!70!black, font=\scriptsize, align=center] at (5.25,-0.85) {Green's / Stokes'};
+\node[figG!70!black, font=\scriptsize, align=center] at (8.75,-0.85) {Divergence};
+% d^2 = 0 arcs
+\draw[->, thick, dashed, figR!70] (f0.north) to[bend left=32] node[midway, above, font=\scriptsize] {$d^2 = 0$: curl(grad) $= \mathbf{0}$} (f2.north);
+\draw[->, thick, dashed, figR!70] ($(f1.south)+(0,-0.55)$) to[bend right=40] node[pos=0.5, below=2pt, font=\scriptsize] {$d^2 = 0$: div(curl) $= 0$} ($(f3.south)+(0,-0.05)$);
+\draw[dashed, figR!70, thin] (f1.south) -- ($(f1.south)+(0,-0.55)$);
+\end{tikzpicture}

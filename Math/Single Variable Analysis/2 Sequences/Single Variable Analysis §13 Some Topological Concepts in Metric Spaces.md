@@ -83,7 +83,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 > and taking the maximum over $i$ on the left gives the triangle inequality for $d_\infty$.
 >
 > ![[m451-13-1.svg]]
-> *The unit ball $\{ d(x, 0) \leq 1 \}$ in $\mathbb{R}^2$ for the three metrics: the taxicab diamond ($d_1$) inside the Euclidean disc ($d_2$) inside the max-distance square ($d_\infty$). Different geometry — but each ball contains a scaled copy of the others, so all three metrics define the same convergent sequences.*
+> *The unit ball $\{ d(x, 0) \leq 1 \}$ in $\mathbb{R}^2$ for the three metrics: the taxicab diamond ($d_1$) inside the Euclidean disc ($d_2$) inside the max-distance square ($d_\infty$), which in turn sits inside the Euclidean disc of radius $\sqrt2$ (dashed). This nesting is Proposition 13.1 for $n = 2$, $d_\infty \leq d \leq \sqrt2\, d_\infty$: each ball contains a scaled copy of the others, so all three metrics define the same convergent sequences.*
 
 ^ex-13-4
 
@@ -195,6 +195,9 @@ The name “open” comes from open intervals in $\mathbb{R}$. These notions are
 
 ^ex-13-6
 
+![[m451-13-2.svg]]
+*Top: around any $x \in (a,b)$ a ball $B(x,\varepsilon)$ (red) fits inside once $\varepsilon < \min\{x-a,\, b-x\}$ — the endpoints are missing (hollow), so there is always room. Bottom: $[a,b]$ contains its endpoint $a$, and every ball around $a$ pokes out to the left, so $[a,b]$ is not open.*
+
 > [!theorem] Proposition §13.4: Unions of Open Sets
 > Any union of open subsets is open. Dually (by complementation), any intersection of closed subsets is closed.
 
@@ -216,6 +219,9 @@ So, e.g., $(0,1) \cup (2,4)$ is open.
 
 ^rem-13-5
 
+![[m451-13-3.svg]]
+*The first stages of the Cantor set: each stage removes the open middle third of every remaining interval, so stage $k$ consists of $2^k$ closed intervals of length $3^{-k}$. The Cantor set is what survives all stages.*
+
 > [!theorem] Proposition §13.5: Sequential Characterization of Closedness
 > $C \subseteq X$ is closed if and only if for every convergent sequence $s_n \to s$ in $X$ with all $s_n \in C$, the limit $s$ lies in $C$ too. So a closed set *contains all limits of sequences of its points* — that is why it is called closed.
 
@@ -227,6 +233,9 @@ So, e.g., $(0,1) \cup (2,4)$ is open.
 > ($\Leftarrow$) Suppose $C$ is not closed, i.e. $X \setminus C$ is not open: there is a point $x \in X \setminus C$ such that no ball around $x$ is contained in $X \setminus C$. In particular, for each $n$ the ball $B(x, \tfrac1n)$ meets $C$: choose $s_n \in C \cap B(x, \tfrac1n)$. Then $d(s_n, x) < \tfrac1n \to 0$, so $s_n \to x$, with all $s_n \in C$ but $x \notin C$ — the sequential condition fails. Contrapositively, the sequential condition implies closedness.
 
 ^pf-13-5
+
+![[m451-13-4.svg]]
+*The ($\Leftarrow$) direction: if $C$ is not closed, some $x \notin C$ (hollow red) has no ball inside the complement, so every ball $B(x, \tfrac1n)$ (dashed) meets $C$; choosing $s_n \in C \cap B(x, \tfrac1n)$ gives a sequence in $C$ converging to a point outside $C$.*
 
 ## Closure
 

@@ -108,6 +108,12 @@ tags: [linear-algebra]
 
 ^ladr-5-28
 
+%% ex:5.28-fig %%
+> [!example] The zeros of $z^5-6z+3$
+> Three real zeros (blue) and one nonreal pair (red), mirror images of each other in the real axis ([[Linear Algebra 4 Polynomials#^ladr-4-14|4.14]]).
+>
+> ![[ladr-5.28-roots.svg|320]]
+
 > [!theorem] 5.29 Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial
 > Let $V$ be finite-dimensional, $T\in\Lin(V)$, $q\in\Poly(\F)$. Then $q(T)=0$ iff $q$ is a polynomial multiple of the minimal polynomial $p$ of $T$.
 

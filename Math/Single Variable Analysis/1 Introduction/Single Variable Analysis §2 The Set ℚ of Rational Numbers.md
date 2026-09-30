@@ -268,6 +268,9 @@ This matching criterion makes sense even when counting does not, so we turn it i
 
 ^pf-2-5
 
+![[m451-2-1.svg]]
+*The listing strategy of the proof: the pair $(p,q)$ sits at a grid point, and the dashed diagonals collect the pairs with $p+q = 2, 3, \ldots, 6$. Walking the diagonals in turn, each with increasing $p$ (red arrows), lists the coprime pairs (blue) and skips $(2,2), (2,4), (3,3), (4,2)$ (hollow), whose values $1, \tfrac12, 1, 2$ already appeared in lowest terms.*
+
 > [!theorem] Theorem §2.6: $\overline{\mathbb{Q}}$ is countable
 > The set $\overline{\mathbb{Q}}$ of algebraic numbers is countable.
 
