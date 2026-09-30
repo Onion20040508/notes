@@ -1,0 +1,6 @@
+/* Math figures (black-on-transparent SVGs) are unreadable on a dark background.
+   In dark mode, invert them and rotate the hue back so blue stays blue and red stays red. */
+.theme-dark img[src*="/attachments/"][src$=".svg"],
+.theme-dark img[src*="/attachments/"][src*=".svg?"] {
+  filter: invert(0.88) hue-rotate(180deg);
+}

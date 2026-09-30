@@ -1,19 +1,25 @@
 \documentclass[border=4pt]{standalone}
 \usepackage{amsmath,amssymb,tikz}
 \usetikzlibrary{arrows.meta}
-\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}\definecolor{figG}{RGB}{60,130,60}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}\definecolor{figG}{RGB}{46,125,50}\definecolor{figO}{RGB}{214,120,20}
 \begin{document}
 \begin{tikzpicture}[scale=0.95,>={Stealth[length=2mm]}]
-\draw[gray!60] (-3.3,0)--(3.3,0); \draw[gray!60] (0,-3.1)--(0,3.1);
-\draw[dashed,figB] (-2.9,-2.9)--(2.9,2.9) node[above right,font=\small]{$E(3,T)$};
-\draw[dashed,figG] (-2.4,2.4)--(2.4,-2.4) node[below right,font=\small]{$E(1,T)$};
-\draw[gray] (0,0) circle (1);
+\draw[thin,black!40,-stealth] (-3.3,0)--(3.4,0); \draw[thin,black!40,-stealth] (0,-3.1)--(0,3.2);
+% eigenvector lines
+\draw[dashed,figB] (-2.9,-2.9)--(2.9,2.9) node[above right,font=\small,inner sep=1pt]{$E(3,T)=\operatorname{span}(1,1)$};
+\draw[dashed,figG] (-2.5,2.5)--(2.5,-2.5) node[below right,font=\small,inner sep=1pt]{$E(1,T)=\operatorname{span}(1,-1)$};
+% unit circle and its image
+\draw[black!55] (0,0) circle (1);
 \draw[black,thick,rotate=45] (0,0) ellipse (3 and 1);
-\draw[->,thick,figB!60] (0,0)--(0.707,0.707);
-\draw[->,very thick,figB] (0.707,0.707)--(2.121,2.121) node[right,font=\small]{$Tu=3u$};
-\draw[->,very thick,figG] (0,0)--(-0.707,0.707) node[above left,font=\small]{$Tw=w$};
-\draw[->,thick,figR!60] (0,0)--(1,0) node[below right,font=\small,xshift=-2pt]{$x$};
-\draw[->,very thick,figR] (0,0)--(2,1) node[right,font=\small]{$Tx$};
-\node[font=\small] at (2.75,-1.25) {$T=\begin{pmatrix}2&1\\1&2\end{pmatrix}$};
+% eigenvectors (unit) and images
+\draw[->,thick,figB!55] (0,0)--(0.707,0.707);
+\draw[->,very thick,figB] (0.707,0.707)--(2.121,2.121);
+\node[figB,font=\small,left] at (1.6,1.85) {$\times3$};
+\draw[->,very thick,figG] (0,0)--(-0.707,0.707);
+\node[figG,font=\small] at (-1.45,0.95) {$\times1$};
+% a generic vector
+\draw[->,thick,figR!55] (0,0)--(1,0) node[pos=0.45,below,font=\small,inner sep=2pt,figR]{$x$};
+\draw[->,very thick,figR] (0,0)--(2,1) node[right,font=\small]{$Tx=(2,1)$};
+\node[font=\small] at (2.7,-1.1) {$T=\begin{pmatrix}2&1\\1&2\end{pmatrix}$};
 \end{tikzpicture}
 \end{document}

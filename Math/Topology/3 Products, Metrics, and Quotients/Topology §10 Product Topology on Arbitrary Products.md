@@ -51,7 +51,7 @@ tags: [topology, math590]
 >
 > **Claim:** $\pi_\beta$ is a continuous map.
 >
-> *Proof of claim:* Let $U_\beta \subseteq X_\beta$ be an open set. Then $\pi_\beta^{-1}(U_\beta) = \prod_{\alpha \in J} X_\alpha \times U_\beta$, which is open in the product topology (it's a basis element with $U_\alpha = X_\alpha$ for $\alpha \neq \beta$).
+> *Proof of claim:* Let $U_\beta \subseteq X_\beta$ be an open set. Then $\pi_\beta^{-1}(U_\beta) = \prod_{\alpha \in J} U_\alpha$ (with $U_\beta$ in the $\beta$-th factor), which is open in the product topology (it's a basis element with $U_\alpha = X_\alpha$ for $\alpha \neq \beta$).
 >
 > Note $f_\beta = \pi_\beta \circ f$, a [[Topology §9 Continuous Functions#^thm-9-4|composition of continuous maps]], hence continuous.
 >
@@ -94,7 +94,7 @@ tags: [topology, math590]
 ^rem-10-2
 
 > [!remark] Remark: Why the Product Topology is “Right”
-> The box topology might seem more natural (open in each factor $\Rightarrow$ open in the product), but it is the *product topology* that satisfies the [[Topology §10 Product Topology on Arbitrary Products#^thm-10-1|universal property]]: $f: Z \to \prod X_\alpha$ is continuous iff each $\pi_\alpha \circ f$ is continuous. [[Topology §10 Product Topology on Arbitrary Products#^ex-10-2|The example above]] shows this fails for the box topology—the diagonal map $t \mapsto (t, t, \ldots)$ into $\mathbb{R}^\omega$ is continuous componentwise but not in the box topology.
+> The box topology might seem more natural (open in each factor $\Rightarrow$ open in the product), but it is the *product topology* that satisfies the [[Topology §10 Product Topology on Arbitrary Products#^thm-10-1|universal property]]: $f: Z \to \prod X_\alpha$ is continuous iff each $\pi_\alpha \circ f$ is continuous. [[Topology §10 Product Topology on Arbitrary Products#^ex-10-2|The example below]] shows this fails for the box topology—the diagonal map $t \mapsto (t, t, \ldots)$ into $\mathbb{R}^\omega$ is continuous componentwise but not in the box topology.
 >
 > The product topology also gives us Tychonoff's theorem (arbitrary products of compact spaces are compact), one of the most powerful results in topology. This fails for the box topology. The lesson: imposing only finitely many constraints at a time is what makes infinite products manageable.
 

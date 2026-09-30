@@ -444,7 +444,7 @@ A relation $<$ on a set $A$ is called an \textbf{order relation} (or \textbf{sim
 \end{defbox}
 
 \begin{exbox}
-$\mathbb{R}$ with the usual order relation. Another example: $\mathbb{R}$ with $<_{sq}$ defined by $x <_{sq} y$ if $x^2 < y^2$ and $x < y$.
+$\mathbb{R}$ with the usual order relation. Another example: $\mathbb{R}$ with $<_{sq}$ defined by $x <_{sq} y$ if $x^2 < y^2$, or $x^2 = y^2$ and $x < y$.
 \end{exbox}
 
 \begin{defbox}[Interval Notation]
@@ -630,9 +630,9 @@ What is the order topology on $\mathbb{Z}_+ = \{1, 2, 3, \ldots\}$?
 The basis $\mathcal{B} = \{(n, m), [1, n)\}$. The basis includes all one-point sets $\{n\}$:
 \begin{itemize}
     \item $\{1\} = [1, 2)$
-    \item $\{n\} = \{n-1, n+1\} \cap \mathbb{Z}_+ = (n-1, n+1)$ for $n \geq 2$
+    \item $\{n\} = (n-1, n+1)$ for $n \geq 2$
 \end{itemize}
-Can form all subsets of $\mathbb{Z}_+$ by finite unions of $\{n\}$'s. $\Rightarrow$ Same as discrete topology.
+Can form all subsets of $\mathbb{Z}_+$ by arbitrary unions of $\{n\}$'s. $\Rightarrow$ Same as discrete topology.
 \end{exbox}
 
 \begin{exbox}[Order Topology on a Product Set]
@@ -776,9 +776,9 @@ Consider $[0,1] \times [0,1] \subseteq \mathbb{R} \times \mathbb{R}$ with dictio
 
 Consider $\{\frac{1}{2}\} \times (\frac{1}{2}, 1]$. 
 
-$\mathcal{D}$: $\{\frac{1}{2}\} \times (\frac{1}{2}, 1]$ is open in subspace topology: $= U \cap (I \times I)$, where $U = (\frac{1}{2} - \frac{1}{2}, \frac{1}{2} + \frac{1}{2}) \times (\frac{1}{2}, 2) \subseteq \mathbb{R} \times \mathbb{R}$.
+Subspace: $\{\frac{1}{2}\} \times (\frac{1}{2}, 1]$ is open in subspace topology: $= U \cap (I \times I)$, where $U = (\frac{1}{2} \times \frac{1}{2}, \frac{1}{2} \times 2) = \{\frac{1}{2}\} \times (\frac{1}{2}, 2)$ is an open interval in the dictionary order on $\mathbb{R} \times \mathbb{R}$.
 
-$\mathcal{D}$: $\{\frac{1}{2}\} \times (\frac{1}{2}, 1]$ not open in order topology on $I \times I$. The point $\frac{1}{2} \times 1$ is not a max in $I \times I$, so any basis element containing $\frac{1}{2} \times 1$ must contain some $p \times q > \frac{1}{2} \times 1$. But for $\frac{1}{2} \times 1 \in \mathcal{B} \subseteq \{\frac{1}{2}\} \times (\frac{1}{2}, 1]$, we would need $\mathcal{B}$ to contain only points with first coordinate $\frac{1}{2}$, which contradicts containing points greater than $\frac{1}{2} \times 1$.
+Order: $\{\frac{1}{2}\} \times (\frac{1}{2}, 1]$ not open in order topology on $I \times I$. The point $\frac{1}{2} \times 1$ is not a max in $I \times I$, so any basis element containing $\frac{1}{2} \times 1$ must contain some $p \times q > \frac{1}{2} \times 1$. But for $\frac{1}{2} \times 1 \in \mathcal{B} \subseteq \{\frac{1}{2}\} \times (\frac{1}{2}, 1]$, we would need $\mathcal{B}$ to contain only points with first coordinate $\frac{1}{2}$, which contradicts containing points greater than $\frac{1}{2} \times 1$.
 \end{exbox}
 
 % ============================================================================
@@ -953,9 +953,9 @@ Let $A \subseteq X$ be a subset of a topological space. Then $x \in \overline{A}
 \end{thmbox}
 
 \begin{proof}
-$(\Rightarrow)$ If $x \notin \overline{A}$, then $x \in X \setminus \overline{A}$, which is open in $X$ (since $\overline{A}$ is closed). So $X \setminus \overline{A}$ is a neighborhood of $x$ that doesn't intersect $A$. Equivalently, if every neighborhood of $x$ intersects $A$, then $x \in \overline{A}$.
+$(\Leftarrow)$ If $x \notin \overline{A}$, then $x \in X \setminus \overline{A}$, which is open in $X$ (since $\overline{A}$ is closed). So $X \setminus \overline{A}$ is a neighborhood of $x$ that doesn't intersect $A$. Equivalently, if every neighborhood of $x$ intersects $A$, then $x \in \overline{A}$.
 
-$(\Leftarrow)$ Conversely, suppose there exists a neighborhood $U$ of $x$ such that $U \cap A = \emptyset$. Then $X \setminus U$ is a closed set containing $A$. By definition of $\overline{A}$, $X \setminus U$ must contain $\overline{A}$. But we know $x \in U$, so $x \notin \overline{A}$.
+$(\Rightarrow)$ Conversely, suppose there exists a neighborhood $U$ of $x$ such that $U \cap A = \emptyset$. Then $X \setminus U$ is a closed set containing $A$. By definition of $\overline{A}$, $X \setminus U$ must contain $\overline{A}$. But we know $x \in U$, so $x \notin \overline{A}$.
 \end{proof}
 
 \subsection{Limit Points}
@@ -971,7 +971,7 @@ $1 \in \mathbb{R}$ is a limit point.
 \end{exbox}
 
 \begin{exbox}
-$(0,1)$: What are the limit points? Every point in $[0,1]$ is a limit point of $A$.
+$A = (0,1)$: What are the limit points? Every point in $[0,1]$ is a limit point of $A$.
 \end{exbox}
 
 \begin{exbox}
@@ -1057,7 +1057,7 @@ If $X$ is a Hausdorff space, then a sequence of points of $X$ must converge to a
 \end{thmbox}
 
 \begin{proof}
-Let $x_n \to x$. If $y \neq x$, take $U_x, U_y$ neighborhoods of $x, y$ disjoint. Since $U_x$ contains all $x_n$ with $n \geq N_1$ for some $N_1$, but if $U_y$ also contains $x_n$ with $n \geq N_2$ for some $N_2$, then $U_x, U_y$ contains all points where $n \geq \max\{N_1, N_2\}$, contradiction.
+Let $x_n \to x$. If $y \neq x$, take $U_x, U_y$ neighborhoods of $x, y$ disjoint. Since $U_x$ contains all $x_n$ with $n \geq N_1$ for some $N_1$, but if $U_y$ also contains $x_n$ with $n \geq N_2$ for some $N_2$, then $U_x \cap U_y$ contains all $x_n$ with $n \geq \max\{N_1, N_2\}$, contradicting $U_x \cap U_y = \emptyset$.
 \end{proof}
 
 % ============================================================================
@@ -1271,7 +1271,7 @@ $(\Rightarrow)$ Let $\pi_\beta: \prod X_\alpha \to X_\beta$ be the projection to
 
 \textbf{Claim:} $\pi_\beta$ is a continuous map.
 
-\textit{Proof of claim:} Let $U_\beta \subseteq X_\beta$ be an open set. Then $\pi_\beta^{-1}(U_\beta) = \prod_{\alpha \in J} X_\alpha \times U_\beta$, which is open in the product topology (it's a basis element with $U_\alpha = X_\alpha$ for $\alpha \neq \beta$).
+\textit{Proof of claim:} Let $U_\beta \subseteq X_\beta$ be an open set. Then $\pi_\beta^{-1}(U_\beta) = \prod_{\alpha \in J} U_\alpha$ (with $U_\beta$ in the $\beta$-th factor), which is open in the product topology (it's a basis element with $U_\alpha = X_\alpha$ for $\alpha \neq \beta$).
 
 Note $f_\beta = \pi_\beta \circ f$, a composition of continuous maps, hence continuous.
 
@@ -1303,7 +1303,7 @@ The box topology is in general strictly finer than the product topology (i.e., h
 \end{rembox}
 
 \begin{rembox}[Why the Product Topology is ``Right'']
-The box topology might seem more natural (open in each factor $\Rightarrow$ open in the product), but it is the \emph{product topology} that satisfies the universal property: $f: Z \to \prod X_\alpha$ is continuous iff each $\pi_\alpha \circ f$ is continuous. The example above shows this fails for the box topology---the diagonal map $t \mapsto (t, t, \ldots)$ into $\mathbb{R}^\omega$ is continuous componentwise but not in the box topology.
+The box topology might seem more natural (open in each factor $\Rightarrow$ open in the product), but it is the \emph{product topology} that satisfies the universal property: $f: Z \to \prod X_\alpha$ is continuous iff each $\pi_\alpha \circ f$ is continuous. The example below shows this fails for the box topology---the diagonal map $t \mapsto (t, t, \ldots)$ into $\mathbb{R}^\omega$ is continuous componentwise but not in the box topology.
 
 The product topology also gives us Tychonoff's theorem (arbitrary products of compact spaces are compact), one of the most powerful results in topology. This fails for the box topology. The lesson: imposing only finitely many constraints at a time is what makes infinite products manageable.
 \end{rembox}
@@ -1798,7 +1798,7 @@ Moreover:
 \begin{proof}
 By the preceding theorem, $g$ induces a continuous $f: X^* \to Z$. Since $g$ is surjective $\Rightarrow$ $f$ is surjective (since $f \circ p = g$).
 
-If $f(y_1) = f(y_2)$, $y_i = g^{-1}\{z\} = y_2$. So $f$ is injective $\Rightarrow$ $f$ is bijective.
+If $f(y_1) = f(y_2) = z$ with $y_1, y_2 \in X^*$, then $y_1 = g^{-1}(\{z\}) = y_2$, since the only element of $X^*$ that $f$ sends to $z$ is the fiber $g^{-1}(\{z\})$. So $f$ is injective $\Rightarrow$ $f$ is bijective.
 
 \textbf{Proof of (1):} If $f$ is a homeomorphism, then in particular $f$ is a quotient map. Then $g$ is a composition of quotient maps $\Rightarrow$ $g$ is a quotient map.
 
@@ -1878,13 +1878,13 @@ The Hausdorff property and connectedness are logically independent — neither i
     \item Hausdorff and connected: $\mathbb{R}$ with standard topology
     \item Hausdorff and not connected: $\{0, 1\}$ with discrete topology
     \item Not Hausdorff and connected: $\{0, 1\}$ with indiscrete topology
-    \item Not Hausdorff and not connected: $\{a, b, c\}$ with topology $\{\emptyset, \{a\}, \{b\}, \{a,b\}, \{a,b,c\}\}$ (from the quotient example earlier)
+    \item Not Hausdorff and not connected: $\{a, b, c\}$ with topology $\{\emptyset, \{a\}, \{b,c\}, \{a,b,c\}\}$
 \end{itemize}
 Hausdorff is about separating \emph{points} (every two distinct points have disjoint neighborhoods). Connected is about \emph{not} being able to separate the \emph{space itself} into two disjoint open pieces.
 \end{rembox}
 
 \begin{exbox}
-$X = \{0, 1, 2\}$ with indiscrete topology. $\Leftarrow$ $X$ is connected (no separation possible).
+$X = \{0, 1, 2\}$ with indiscrete topology. $\Rightarrow$ $X$ is connected (no separation possible).
 \end{exbox}
 
 \begin{exbox}
@@ -1902,7 +1902,7 @@ A space $X$ is connected if and only if the only subsets of $X$ which are both o
 \begin{proof}
 $(\Rightarrow)$ $A \subseteq X$ both open and closed and $A \neq \emptyset \neq X$. Take $U = A$, $V = X \setminus A$. Then $V$ is also open and closed. $\Rightarrow$ separation of $X$, hence not connected.
 
-$(\Leftarrow)$ Suppose $X$ not connected. There exists $U, V$ separation of $X$. $U = X \setminus V$. $V$ open $\Rightarrow$ $U$ closed. $U \neq \emptyset$, but $U \neq V$. Similarly for $V$.
+$(\Leftarrow)$ Suppose $X$ not connected. There exists $U, V$ separation of $X$. $U = X \setminus V$. $V$ open $\Rightarrow$ $U$ closed. $U \neq \emptyset$, but $U \neq X$. Similarly for $V$.
 \end{proof}
 
 \begin{rembox}
@@ -2152,9 +2152,9 @@ Path-connected $\Rightarrow$ connected.
 \begin{proof}
 Let $X$ be path-connected.
 
-If $X$ were not connected, then there exists $X = A \cup B$ separation of $X$. Let $f(a) \in A$, $f(b) \in B$.
+If $X$ were not connected, then there exists $X = A \cup B$ separation of $X$. Let $x \in A$, $y \in B$, and let $f: [a, b] \to X$ be a path from $x$ to $y$.
 
-$f: [a, b] \to X$ path, $f([a, b])$ is connected (since $[a, b]$ connected and $f$ continuous). $f([a, b]) \subseteq A$ or $f([a, b]) \subseteq B$. Contradiction.
+$f([a, b])$ is connected (since $[a, b]$ connected and $f$ continuous). $f([a, b]) \subseteq A$ or $f([a, b]) \subseteq B$. Contradiction, since $f(a) = x \in A$ and $f(b) = y \in B$.
 \end{proof}
 
 \begin{rembox}
@@ -2802,7 +2802,7 @@ Then $\{U_{\alpha_1}, \ldots, U_{\alpha_n}\}$ is a finite subcover.
 \begin{rembox}[Summary of the Equivalence]
 For a metrizable space $X$, the proof cycle is:
 \[
-\text{Compact} \xRightarrow{\text{Thm 16.2}} \text{Limit point compact} \xRightarrow{\text{shrinking balls}} \text{Sequentially compact} \xRightarrow{\text{Lebesgue + total bounded}} \text{Compact}
+\text{Compact} \xRightarrow{\text{Thm 16.1}} \text{Limit point compact} \xRightarrow{\text{shrinking balls}} \text{Sequentially compact} \xRightarrow{\text{Lebesgue + total bounded}} \text{Compact}
 \]
 The metric is essential at every step: $(2) \Rightarrow (3)$ uses shrinking balls $B(x, 1/i)$ to extract subsequences, and $(3) \Rightarrow (1)$ uses the Lebesgue number lemma (diameter estimates) and total boundedness (finite $\varepsilon$-ball covers). None of these arguments work in a general topological space without a metric.
 \end{rembox}
@@ -2870,7 +2870,7 @@ Suppose $B \subseteq C$ for some compact $C$. Then $\overline{B} \subseteq \over
 
 But $\overline{B} = [a_1, b_1] \times \cdots \times [a_n, b_n] \times \mathbb{R} \times \mathbb{R} \times \cdots$
 
-This is not compact: the open cover $\{[a_1, b_1] \times \cdots \times [a_n, b_n] \times \mathbb{R}^{n} \times (-m, m) \times \mathbb{R} \times \cdots \mid m \in \mathbb{Z}_+\}$ (where the $(-m, m)$ is in the $(n+1)$-th coordinate) has no finite subcover.
+This is not compact: the cover $\{[a_1, b_1] \times \cdots \times [a_n, b_n] \times (-m, m) \times \mathbb{R} \times \cdots \mid m \in \mathbb{Z}_+\}$ by sets open in $\overline{B}$ (where the $(-m, m)$ is in the $(n+1)$-th coordinate) has no finite subcover.
 
 Contradiction. So $\mathbb{R}^\omega$ is not locally compact.
 \end{exbox}
@@ -3326,13 +3326,13 @@ $\mathbb{R}_{std}$ is Hausdorff. $\mathbb{R}_K$ is finer than $\mathbb{R}_{std}$
 
 \textbf{Claim:} $\mathbb{R}_K$ is not regular.
 
-\textit{Proof:} $K$ is closed in $\mathbb{R}_K$: the complement $\mathbb{R} \setminus K$ is open (it equals $\bigcup_{n} ((-\infty, 0) \cup (0, 1/n) \setminus K \cup (1/n, \infty))$, a union of basis elements).
+\textit{Proof:} $K$ is closed in $\mathbb{R}_K$: the complement $\mathbb{R} \setminus K$ is open (it equals $\bigcup_{m \in \mathbb{Z}_+} ((-m, m) \setminus K)$, a union of basis elements).
 
 Consider the point $0 \notin K$. We show there do not exist disjoint open sets $U \ni 0$ and $V \supseteq K$.
 
 Suppose such $U, V$ exist. A basis element containing $0$ and lying in $U$ must be of the form $(a, b) \setminus K$ where $a < 0 < b$ (since any basis element $(a,b)$ containing $0$ would contain points of $K$).
 
-So there exists $n$ such that $1/n \in (a, b) \supseteq 0$. Since $1/n \in K \subseteq V$, there exists a basis element $(c, d)$ or $(c,d) \setminus K$ containing $1/n$ and lying in $V$.
+Since $a < 0 < b$, there exists $n$ such that $1/n \in (a, b)$. Since $1/n \in K \subseteq V$, there exists a basis element $(c, d)$ or $(c,d) \setminus K$ containing $1/n$ and lying in $V$.
 
 Now find $z \in U \cap V$: choose $z$ with $\max(c, 1/(n+1)) < z < 1/n$. 
 
@@ -3937,10 +3937,10 @@ $F_n \cong \mathbb{Z} * \cdots * \mathbb{Z}$ & Free on $n$ generators (free prod
 \end{rembox}
 
 \begin{rembox}[The Hierarchy of Relations]
-\[\underbrace{\mathbb{Z}/n\mathbb{Z}}_{\text{one gen, one rel}} \;\longleftarrow\; \underbrace{\mathbb{Z} \cong F_1}_{\text{one gen, no rel}} \;\longleftarrow\; \underbrace{F_n = \mathbb{Z} * \cdots * \mathbb{Z}}_{\text{$n$ gen, no rel}} \;\longleftarrow\; \underbrace{F_n}_{\text{add rel $ab = ba$}} \;\longrightarrow\; \underbrace{\mathbb{Z}^n}_{\text{$n$ gen, all commute}}\]
+\[\underbrace{\mathbb{Z}/n\mathbb{Z}}_{\text{one gen, one rel}} \;\longleftarrow\; \underbrace{\mathbb{Z} \cong F_1}_{\text{one gen, no rel}} \;\longleftarrow\; \underbrace{F_n = \mathbb{Z} * \cdots * \mathbb{Z}}_{\text{$n$ gen, no rel}} \;\overset{\text{add rels $ab = ba$}}{\longrightarrow}\; \underbrace{\mathbb{Z}^n}_{\text{$n$ gen, all commute}}\]
 Each arrow represents adding a relation, which makes the group smaller. The free group $F_n$ is the largest group on $n$ generators --- every other group with $\leq n$ generators is a quotient of it. In particular:
 \[G \times H = (G * H) / \langle ghg^{-1}h^{-1} \mid g \in G, h \in H \rangle.\]
-You start with the free product (no relations between factors) and impose commutativity. This always shrinks the group: $F_2$ has uncountably many elements, while $\mathbb{Z}^2$ is countable. Adding relations kills elements.
+You start with the free product (no relations between factors) and impose commutativity. This always shrinks the group: $F_2$ is non-abelian, while $\mathbb{Z}^2$ is abelian, so the quotient map $F_2 \to \mathbb{Z}^2$ sends the nontrivial element $aba^{-1}b^{-1}$ to the identity. Adding relations kills elements.
 \end{rembox}
 
 \subsection{Group Presentations}

@@ -1,16 +1,23 @@
 \documentclass[border=4pt]{standalone}
 \usepackage{amsmath,amssymb,tikz}
 \usetikzlibrary{arrows.meta}
-\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}\definecolor{figG}{RGB}{60,130,60}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}\definecolor{figG}{RGB}{46,125,50}\definecolor{figO}{RGB}{214,120,20}
 \begin{document}
-\begin{tikzpicture}[scale=1.4,>={Stealth[length=2mm]},x={(1cm,0cm)},y={(0.45cm,0.35cm)},z={(0cm,1cm)}]
-\fill[figG!12] (-1.4,-1.2,0)--(1.8,-1.2,0)--(1.8,1.4,0)--(-1.4,1.4,0)--cycle;
-\draw[figG] (-1.4,-1.2,0)--(1.8,-1.2,0)--(1.8,1.4,0)--(-1.4,1.4,0)--cycle;
-\node[figG,font=\small] at (1.95,1.5,0) {$\operatorname{span}(v_1,v_2)$};
-\draw[very thick,figB] (-1.6,0,0)--(2.0,0,0) node[right,font=\small]{$\operatorname{span}(v_1)$};
-\draw[->,thick] (0,0,0)--(1,0,0) node[below,font=\small]{$v_1$};
-\draw[->,thick] (0,0,0)--(0,1,0) node[above left,font=\small]{$v_2$};
-\draw[->,thick] (0,0,0)--(0,0,1.1) node[above,font=\small]{$v_3$};
-\node[font=\small,align=left] at (0.3,-1.9,0) {$\{0\}\subset\operatorname{span}(v_1)\subset\operatorname{span}(v_1,v_2)\subset V$, each invariant under $T$};
+\begin{tikzpicture}[scale=1.5,>={Stealth[length=2mm]},x={(1cm,0cm)},y={(0.5cm,0.38cm)},z={(0cm,1cm)}]
+% the plane span(v1,v2)
+\fill[figB!10] (-1.5,-1.3,0)--(1.9,-1.3,0)--(1.9,1.5,0)--(-1.5,1.5,0)--cycle;
+\draw[figB!60] (-1.5,-1.3,0)--(1.9,-1.3,0)--(1.9,1.5,0)--(-1.5,1.5,0)--cycle;
+\node[figB,font=\small,anchor=west] at (1.9,1.2,0) {$\operatorname{span}(v_1,v_2)$};
+% the line span(v1)
+\draw[very thick,figB] (-1.7,0,0)--(2.2,0,0) node[right,font=\small]{$\operatorname{span}(v_1)$};
+% basis
+\draw[->,thick] (0,0,0)--(0.9,0,0) node[below,font=\small,yshift=-1pt]{$v_1$};
+\draw[->,thick] (0,0,0)--(0,1,0) node[left,font=\small]{$v_2$};
+\draw[->,thick] (0,0,0)--(0,0,1.1) node[left,font=\small]{$v_3$};
+% images
+\draw[->,thick,figR] (0,0,0)--(1.6,0,0) node[above,font=\small,xshift=2pt]{$Tv_1$};
+\draw[->,thick,figR] (0,0,0)--(-0.9,1.1,0) node[above left,font=\small,inner sep=1pt]{$Tv_2$};
+\draw[->,thick,figR] (0,0,0)--(0.8,0.4,1.2) node[right,font=\small]{$Tv_3$};
+\draw[dashed,black!40] (0.8,0.4,1.2)--(0.8,0.4,0);
 \end{tikzpicture}
 \end{document}

@@ -79,9 +79,9 @@ tags: [topology, math590]
 >
 > Consider $\{\frac{1}{2}\} \times (\frac{1}{2}, 1]$.
 >
-> $\mathcal{D}$: $\{\frac{1}{2}\} \times (\frac{1}{2}, 1]$ is open in subspace topology: $= U \cap (I \times I)$, where $U = (\frac{1}{2} - \frac{1}{2}, \frac{1}{2} + \frac{1}{2}) \times (\frac{1}{2}, 2) \subseteq \mathbb{R} \times \mathbb{R}$.
+> Subspace: $\{\frac{1}{2}\} \times (\frac{1}{2}, 1]$ is open in subspace topology: $= U \cap (I \times I)$, where $U = (\frac{1}{2} \times \frac{1}{2}, \frac{1}{2} \times 2) = \{\frac{1}{2}\} \times (\frac{1}{2}, 2)$ is an open interval in the dictionary order on $\mathbb{R} \times \mathbb{R}$.
 >
-> $\mathcal{D}$: $\{\frac{1}{2}\} \times (\frac{1}{2}, 1]$ not open in order topology on $I \times I$. The point $\frac{1}{2} \times 1$ is not a max in $I \times I$, so any basis element containing $\frac{1}{2} \times 1$ must contain some $p \times q > \frac{1}{2} \times 1$. But for $\frac{1}{2} \times 1 \in \mathcal{B} \subseteq \{\frac{1}{2}\} \times (\frac{1}{2}, 1]$, we would need $\mathcal{B}$ to contain only points with first coordinate $\frac{1}{2}$, which contradicts containing points greater than $\frac{1}{2} \times 1$.
+> Order: $\{\frac{1}{2}\} \times (\frac{1}{2}, 1]$ not open in order topology on $I \times I$. The point $\frac{1}{2} \times 1$ is not a max in $I \times I$, so any basis element containing $\frac{1}{2} \times 1$ must contain some $p \times q > \frac{1}{2} \times 1$. But for $\frac{1}{2} \times 1 \in \mathcal{B} \subseteq \{\frac{1}{2}\} \times (\frac{1}{2}, 1]$, we would need $\mathcal{B}$ to contain only points with first coordinate $\frac{1}{2}$, which contradicts containing points greater than $\frac{1}{2} \times 1$.
 
 ^ex-5-3
 

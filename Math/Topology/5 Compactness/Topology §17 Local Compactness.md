@@ -74,7 +74,7 @@ tags: [topology, math590]
 >
 > But $\overline{B} = [a_1, b_1] \times \cdots \times [a_n, b_n] \times \mathbb{R} \times \mathbb{R} \times \cdots$
 >
-> This is not compact: the open cover $\{[a_1, b_1] \times \cdots \times [a_n, b_n] \times \mathbb{R}^{n} \times (-m, m) \times \mathbb{R} \times \cdots \mid m \in \mathbb{Z}_+\}$ (where the $(-m, m)$ is in the $(n+1)$-th coordinate) has no finite subcover.
+> This is not compact: the cover $\{[a_1, b_1] \times \cdots \times [a_n, b_n] \times (-m, m) \times \mathbb{R} \times \cdots \mid m \in \mathbb{Z}_+\}$ by sets open in $\overline{B}$ (where the $(-m, m)$ is in the $(n+1)$-th coordinate) has no finite subcover.
 >
 > Contradiction. So $\mathbb{R}^\omega$ is not locally compact.
 

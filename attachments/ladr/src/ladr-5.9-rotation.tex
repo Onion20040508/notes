@@ -1,17 +1,19 @@
 \documentclass[border=4pt]{standalone}
 \usepackage{amsmath,amssymb,tikz}
 \usetikzlibrary{arrows.meta}
-\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}\definecolor{figG}{RGB}{46,125,50}\definecolor{figO}{RGB}{214,120,20}
 \begin{document}
-\begin{tikzpicture}[scale=1.2,>={Stealth[length=2mm]}]
-\draw[gray!60] (-1.8,0)--(1.8,0); \draw[gray!60] (0,-1.6)--(0,1.8);
-\foreach \a in {10,55,130} {
-  \draw[dashed,gray!50] ({-1.6*cos(\a)},{-1.6*sin(\a)})--({1.6*cos(\a)},{1.6*sin(\a)});
-  \draw[->,thick,figB] (0,0)--({1.3*cos(\a)},{1.3*sin(\a)});
-  \draw[->,thick,figR] (0,0)--({1.3*cos(\a+90)},{1.3*sin(\a+90)});
-  \draw[->,gray,thin] ({0.55*cos(\a+12)},{0.55*sin(\a+12)}) arc ({\a+12}:{\a+78}:0.55);
-}
-\node[figB,font=\small] at (1.55,0.45) {$v$};
-\node[figR,font=\small] at (-0.5,1.55) {$Tv$};
+\begin{tikzpicture}[scale=1.25,>={Stealth[length=2mm]}]
+\draw[thin,black!40,-stealth] (-1.9,0)--(1.95,0); \draw[thin,black!40,-stealth] (0,-1.7)--(0,1.8);
+% first pair, labelled
+\draw[dashed,black!40] ({-1.75*cos(25)},{-1.75*sin(25)})--({1.75*cos(25)},{1.75*sin(25)}) node[right,font=\scriptsize,black!55]{$\operatorname{span}(v)$};
+\draw[->,thick,figB] (0,0)--({1.3*cos(25)},{1.3*sin(25)}) node[below right,font=\small,inner sep=1pt]{$v$};
+\draw[->,thick,figR] (0,0)--({1.3*cos(115)},{1.3*sin(115)}) node[above,font=\small]{$Tv$};
+\draw[->,thin,black!55] ({0.6*cos(33)},{0.6*sin(33)}) arc (33:107:0.6);
+\draw[figR,thin] ({0.18*cos(25)},{0.18*sin(25)})--++({0.18*cos(115)},{0.18*sin(115)})--({0.18*cos(115)},{0.18*sin(115)});
+% second pair, unlabelled
+\draw[->,thick,figB!60] (0,0)--({1.1*cos(170)},{1.1*sin(170)});
+\draw[->,thick,figR!60] (0,0)--({1.1*cos(260)},{1.1*sin(260)});
+\draw[->,thin,black!40] ({0.45*cos(178)},{0.45*sin(178)}) arc (178:252:0.45);
 \end{tikzpicture}
 \end{document}

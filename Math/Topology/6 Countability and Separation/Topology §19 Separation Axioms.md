@@ -86,13 +86,13 @@ tags: [topology, math590]
 >
 > **Claim:** $\mathbb{R}_K$ is not regular.
 >
-> *Proof:* $K$ is closed in $\mathbb{R}_K$: the complement $\mathbb{R} \setminus K$ is open (it equals $\bigcup_{n} ((-\infty, 0) \cup (0, 1/n) \setminus K \cup (1/n, \infty))$, a union of basis elements).
+> *Proof:* $K$ is closed in $\mathbb{R}_K$: the complement $\mathbb{R} \setminus K$ is open (it equals $\bigcup_{m \in \mathbb{Z}_+} ((-m, m) \setminus K)$, a union of basis elements).
 >
 > Consider the point $0 \notin K$. We show there do not exist disjoint open sets $U \ni 0$ and $V \supseteq K$.
 >
 > Suppose such $U, V$ exist. A basis element containing $0$ and lying in $U$ must be of the form $(a, b) \setminus K$ where $a < 0 < b$ (since any basis element $(a,b)$ containing $0$ would contain points of $K$).
 >
-> So there exists $n$ such that $1/n \in (a, b) \supseteq 0$. Since $1/n \in K \subseteq V$, there exists a basis element $(c, d)$ or $(c,d) \setminus K$ containing $1/n$ and lying in $V$.
+> Since $a < 0 < b$, there exists $n$ such that $1/n \in (a, b)$. Since $1/n \in K \subseteq V$, there exists a basis element $(c, d)$ or $(c,d) \setminus K$ containing $1/n$ and lying in $V$.
 >
 > Now find $z \in U \cap V$: choose $z$ with $\max(c, 1/(n+1)) < z < 1/n$.
 >

@@ -114,9 +114,9 @@ tags: [topology, math590]
 ^thm-7-3
 
 > [!proof]+ Proof
-> $(\Rightarrow)$ If $x \notin \overline{A}$, then $x \in X \setminus \overline{A}$, which is open in $X$ (since $\overline{A}$ is closed). So $X \setminus \overline{A}$ is a neighborhood of $x$ that doesn't intersect $A$. Equivalently, if every neighborhood of $x$ intersects $A$, then $x \in \overline{A}$.
+> $(\Leftarrow)$ If $x \notin \overline{A}$, then $x \in X \setminus \overline{A}$, which is open in $X$ (since $\overline{A}$ is closed). So $X \setminus \overline{A}$ is a neighborhood of $x$ that doesn't intersect $A$. Equivalently, if every neighborhood of $x$ intersects $A$, then $x \in \overline{A}$.
 >
-> $(\Leftarrow)$ Conversely, suppose there exists a neighborhood $U$ of $x$ such that $U \cap A = \emptyset$. Then $X \setminus U$ is a closed set containing $A$. By definition of $\overline{A}$, $X \setminus U$ must contain $\overline{A}$. But we know $x \in U$, so $x \notin \overline{A}$.
+> $(\Rightarrow)$ Conversely, suppose there exists a neighborhood $U$ of $x$ such that $U \cap A = \emptyset$. Then $X \setminus U$ is a closed set containing $A$. By definition of $\overline{A}$, $X \setminus U$ must contain $\overline{A}$. But we know $x \in U$, so $x \notin \overline{A}$.
 
 ^pf-7-3
 
@@ -144,7 +144,7 @@ tags: [topology, math590]
 *$B = \{\tfrac{n+1}{n}\} = \{2, \tfrac32, \tfrac43, \ldots\}$ (blue) piles up at $1$. Every neighborhood $(1-\varepsilon,1+\varepsilon)$ of $1$ (red) contains infinitely many points of $B$, so $1$ is a limit point even though $1\notin B$. A point like $\tfrac32$ is isolated: a small interval around it (blue) meets $B$ only in $\tfrac32$. So $B' = \{1\}$ and $\overline{B} = B \cup \{1\}$.*
 
 > [!example] Example §7.5
-> $(0,1)$: What are the limit points? Every point in $[0,1]$ is a limit point of $A$.
+> $A = (0,1)$: What are the limit points? Every point in $[0,1]$ is a limit point of $A$.
 
 ^ex-7-5
 

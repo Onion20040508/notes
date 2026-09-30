@@ -67,7 +67,7 @@ tags: [topology, math590]
 ^thm-8-3
 
 > [!proof]+ Proof
-> Let $x_n \to x$. If $y \neq x$, take $U_x, U_y$ neighborhoods of $x, y$ disjoint. Since $U_x$ contains all $x_n$ with $n \geq N_1$ for some $N_1$, but if $U_y$ also contains $x_n$ with $n \geq N_2$ for some $N_2$, then $U_x, U_y$ contains all points where $n \geq \max\{N_1, N_2\}$, contradiction.
+> Let $x_n \to x$. If $y \neq x$, take $U_x, U_y$ neighborhoods of $x, y$ disjoint. Since $U_x$ contains all $x_n$ with $n \geq N_1$ for some $N_1$, but if $U_y$ also contains $x_n$ with $n \geq N_2$ for some $N_2$, then $U_x \cap U_y$ contains all $x_n$ with $n \geq \max\{N_1, N_2\}$, contradicting $U_x \cap U_y = \emptyset$.
 
 ^pf-8-3
 

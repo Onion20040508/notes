@@ -265,7 +265,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 > [!proof]+ Proof
 > By [[Universal Property of Quotient Maps|the preceding theorem]], $g$ induces a continuous $f: X^* \to Z$. Since $g$ is surjective $\Rightarrow$ $f$ is surjective (since $f \circ p = g$).
 >
-> If $f(y_1) = f(y_2)$, $y_i = g^{-1}\{z\} = y_2$. So $f$ is injective $\Rightarrow$ $f$ is bijective.
+> If $f(y_1) = f(y_2) = z$ with $y_1, y_2 \in X^*$, then $y_1 = g^{-1}(\{z\}) = y_2$, since the only element of $X^*$ that $f$ sends to $z$ is the fiber $g^{-1}(\{z\})$. So $f$ is injective $\Rightarrow$ $f$ is bijective.
 >
 > **Proof of (1):** If $f$ is a homeomorphism, then in particular $f$ is a quotient map. Then $g$ is a [[Topology §12 Quotient Topology#^ex-12-4|composition of quotient maps]] $\Rightarrow$ $g$ is a quotient map.
 >

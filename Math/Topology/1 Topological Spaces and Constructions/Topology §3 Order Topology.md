@@ -19,7 +19,7 @@ tags: [topology, math590]
 ^def-3-1
 
 > [!example] Example §3.1
-> $\mathbb{R}$ with the usual order relation. Another example: $\mathbb{R}$ with $<_{sq}$ defined by $x <_{sq} y$ if $x^2 < y^2$ and $x < y$.
+> $\mathbb{R}$ with the usual order relation. Another example: $\mathbb{R}$ with $<_{sq}$ defined by $x <_{sq} y$ if $x^2 < y^2$, or $x^2 = y^2$ and $x < y$.
 
 ^ex-3-1
 
@@ -124,9 +124,9 @@ tags: [topology, math590]
 >
 > The basis $\mathcal{B} = \{(n, m), [1, n)\}$. The basis includes all one-point sets $\{n\}$:
 > - $\{1\} = [1, 2)$
-> - $\{n\} = \{n-1, n+1\} \cap \mathbb{Z}_+ = (n-1, n+1)$ for $n \geq 2$
+> - $\{n\} = (n-1, n+1)$ for $n \geq 2$
 >
-> Can form all subsets of $\mathbb{Z}_+$ by finite unions of $\{n\}$'s. $\Rightarrow$ Same as [[Topology §1 Topological Spaces#^ex-1-3|discrete topology]].
+> Can form all subsets of $\mathbb{Z}_+$ by arbitrary unions of $\{n\}$'s. $\Rightarrow$ Same as [[Topology §1 Topological Spaces#^ex-1-3|discrete topology]].
 
 ^ex-3-6
 

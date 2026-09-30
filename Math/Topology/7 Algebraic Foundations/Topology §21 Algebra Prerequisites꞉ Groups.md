@@ -531,7 +531,7 @@ tags: [topology, math590]
 
 > [!remark] Remark: The Hierarchy of Relations
 > $$
-> \underbrace{\mathbb{Z}/n\mathbb{Z}}_{\text{one gen, one rel}} \;\longleftarrow\; \underbrace{\mathbb{Z} \cong F_1}_{\text{one gen, no rel}} \;\longleftarrow\; \underbrace{F_n = \mathbb{Z} * \cdots * \mathbb{Z}}_{\text{$n$ gen, no rel}} \;\longleftarrow\; \underbrace{F_n}_{\text{add rel $ab = ba$}} \;\longrightarrow\; \underbrace{\mathbb{Z}^n}_{\text{$n$ gen, all commute}}
+> \underbrace{\mathbb{Z}/n\mathbb{Z}}_{\text{one gen, one rel}} \;\longleftarrow\; \underbrace{\mathbb{Z} \cong F_1}_{\text{one gen, no rel}} \;\longleftarrow\; \underbrace{F_n = \mathbb{Z} * \cdots * \mathbb{Z}}_{\text{$n$ gen, no rel}} \;\overset{\text{add rels $ab = ba$}}{\longrightarrow}\; \underbrace{\mathbb{Z}^n}_{\text{$n$ gen, all commute}}
 > $$
 >
 > Each arrow represents adding a relation, which makes the group smaller. The free group $F_n$ is the largest group on $n$ generators — every other group with $\leq n$ generators is a quotient of it. In particular:
@@ -540,7 +540,7 @@ tags: [topology, math590]
 > G \times H = (G * H) / \langle ghg^{-1}h^{-1} \mid g \in G, h \in H \rangle.
 > $$
 >
-> You start with the free product (no relations between factors) and impose commutativity. This always shrinks the group: $F_2$ has uncountably many elements, while $\mathbb{Z}^2$ is countable. Adding relations kills elements.
+> You start with the free product (no relations between factors) and impose commutativity. This always shrinks the group: $F_2$ is non-abelian, while $\mathbb{Z}^2$ is abelian, so the quotient map $F_2 \to \mathbb{Z}^2$ sends the nontrivial element $aba^{-1}b^{-1}$ to the identity. Adding relations kills elements.
 
 ^rem-21-12
 

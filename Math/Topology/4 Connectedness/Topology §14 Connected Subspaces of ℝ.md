@@ -180,9 +180,9 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > Let $X$ be path-connected.
 >
-> If $X$ were not connected, then there exists $X = A \cup B$ separation of $X$. Let $f(a) \in A$, $f(b) \in B$.
+> If $X$ were not connected, then there exists $X = A \cup B$ separation of $X$. Let $x \in A$, $y \in B$, and let $f: [a, b] \to X$ be a path from $x$ to $y$.
 >
-> $f: [a, b] \to X$ path, $f([a, b])$ is connected (since [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|$[a, b]$ connected]] and [[Continuous Image of a Connected Space is Connected|$f$ continuous]]). [[Topology §13 Connected Spaces#^lem-13-4|$f([a, b]) \subseteq A$ or $f([a, b]) \subseteq B$]]. Contradiction.
+> $f([a, b])$ is connected (since [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|$[a, b]$ connected]] and [[Continuous Image of a Connected Space is Connected|$f$ continuous]]). [[Topology §13 Connected Spaces#^lem-13-4|$f([a, b]) \subseteq A$ or $f([a, b]) \subseteq B$]]. Contradiction, since $f(a) = x \in A$ and $f(b) = y \in B$.
 
 ^pf-14-4
 

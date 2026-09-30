@@ -40,14 +40,14 @@ tags: [topology, math590]
 > - Hausdorff and connected: $\mathbb{R}$ with standard topology
 > - Hausdorff and not connected: $\{0, 1\}$ with discrete topology
 > - Not Hausdorff and connected: $\{0, 1\}$ with indiscrete topology
-> - Not Hausdorff and not connected: $\{a, b, c\}$ with topology $\{\emptyset, \{a\}, \{b\}, \{a,b\}, \{a,b,c\}\}$ (from [[Topology §12 Quotient Topology#^ex-12-5|the quotient example earlier]])
+> - Not Hausdorff and not connected: $\{a, b, c\}$ with topology $\{\emptyset, \{a\}, \{b,c\}, \{a,b,c\}\}$
 >
 > Hausdorff is about separating *points* (every two distinct points have disjoint neighborhoods). Connected is about *not* being able to separate the *space itself* into two disjoint open pieces.
 
 ^rem-13-2
 
 > [!example] Example §13.1
-> $X = \{0, 1, 2\}$ with indiscrete topology. $\Leftarrow$ $X$ is connected (no separation possible).
+> $X = \{0, 1, 2\}$ with indiscrete topology. $\Rightarrow$ $X$ is connected (no separation possible).
 
 ^ex-13-1
 
@@ -72,7 +72,7 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > $(\Rightarrow)$ $A \subseteq X$ both open and closed and $A \neq \emptyset \neq X$. Take $U = A$, $V = X \setminus A$. Then $V$ is also open and closed. $\Rightarrow$ separation of $X$, hence not connected.
 >
-> $(\Leftarrow)$ Suppose $X$ not connected. There exists $U, V$ separation of $X$. $U = X \setminus V$. $V$ open $\Rightarrow$ $U$ closed. $U \neq \emptyset$, but $U \neq V$. Similarly for $V$.
+> $(\Leftarrow)$ Suppose $X$ not connected. There exists $U, V$ separation of $X$. $U = X \setminus V$. $V$ open $\Rightarrow$ $U$ closed. $U \neq \emptyset$, but $U \neq X$. Similarly for $V$.
 
 ^pf-13-1
 

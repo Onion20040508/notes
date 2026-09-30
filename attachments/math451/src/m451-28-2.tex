@@ -1,0 +1,22 @@
+% Figure from MATH 451 notes, section 28. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.42\textwidth,
+  xmin=0, xmax=3.25, ymin=0, ymax=2.0,
+  xtick={1,2.8}, xticklabels={$a$,$x$}, ytick=\empty, xlabel={}]
+  % secants through (a, f(a)), slopes 0.18(x+a)
+  \addplot[figB!40, thick, domain=0.25:3.2] {0.43+0.684*(x-1)};
+  \addplot[figB!65, thick, domain=0.25:3.2] {0.43+0.540*(x-1)};
+  \addplot[figB, thick, domain=0.25:3.2] {0.43+0.432*(x-1)};
+  \addplot[figR, very thick, domain=0.25:3.2] {0.43+0.36*(x-1)};
+  \addplot[black, very thick, domain=0:3.1, samples=100] {0.25+0.18*x^2};
+  \addplot[only marks, mark=*, mark size=1.4pt, figB] coordinates {(2.8,1.6612) (2.0,0.97) (1.4,0.6028)};
+  \addplot[only marks, mark=*, mark size=1.7pt, black] coordinates {(1,0.43)};
+  \draw[black!45, thin, dotted] (axis cs:2.8,0) -- (axis cs:2.8,1.6612);
+  \draw[black!45, thin, dotted] (axis cs:1,0) -- (axis cs:1,0.43);
+  \draw[-stealth, figB, thin] (axis cs:2.7,0.13) -- (axis cs:1.5,0.13);
+  \node[font=\scriptsize, figB, fill=white, inner sep=1pt] at (axis cs:2.1,0.13) {$x \to a$};
+  \node[font=\scriptsize, figB, anchor=west] at (axis cs:0.12,1.72) {secants: slope $\frac{f(x)-f(a)}{x-a}$};
+  \node[font=\scriptsize, figR, anchor=north east] at (axis cs:3.22,0.80) {tangent: slope $f'(a)$};
+  \node[font=\scriptsize, anchor=east] at (axis cs:0.95,0.52) {$(a, f(a))$};
+\end{axis}
+\end{tikzpicture}
