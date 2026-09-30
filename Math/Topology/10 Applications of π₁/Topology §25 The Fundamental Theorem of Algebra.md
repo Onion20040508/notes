@@ -67,7 +67,7 @@ tags: [topology, math590]
 
 ^pf-25-1
 
-*Uses:* [[Topology §24 Covering Spaces#^thm-24-10|§24.10]], [[Topology §23 The Fundamental Group#^thm-23-5|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def §26.1]], [[Topology §24 Covering Spaces#^lem-24-12|§24.12]]
+*Uses:* [[Topology §24 Covering Spaces#^thm-24-10|§24.10]], [[Topology §23 The Fundamental Group#^thm-23-5|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[Topology §24 Covering Spaces#^lem-24-12|§24.12]]
 
 > [!remark] Remark
 > This proof is remarkable: a theorem about *algebra* (roots of polynomials) is proved using *topology* ($\pi_1(S^1) \cong \mathbb{Z}$ and the nullhomotopy characterization). The key ingredients are:

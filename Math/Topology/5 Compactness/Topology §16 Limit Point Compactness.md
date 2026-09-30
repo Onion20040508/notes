@@ -64,7 +64,7 @@ tags: [topology, math590]
 
 ^pf-16-1
 
-*Uses:* [[Topology §7 Interior and Closure#^def-7-3|§7.3]], [[Topology §7 Interior and Closure#^cor-7-5|§7.5]]
+*Uses:* [[Topology §7 Interior and Closure#^def-7-3|Def. §7.3]], [[Topology §7 Interior and Closure#^cor-7-5|§7.5]]
 
 > [!example] Example §16.1: Limit Point Compact but Not Compact
 > $Y = \{a, b\}$ with $\mathcal{T}_Y = \{\emptyset, Y\}$ ([[Topology §1 Topological Spaces#^ex-1-2|indiscrete topology]]). $X = \mathbb{Z}_+ \times Y$.
@@ -125,7 +125,7 @@ tags: [topology, math590]
 
 ^pf-16-2
 
-*Uses:* [[Topology §7 Interior and Closure#^def-7-3|§7.3]]
+*Uses:* [[Topology §7 Interior and Closure#^def-7-3|Def. §7.3]]
 
 To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas.
 
@@ -183,7 +183,7 @@ To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas
 > For a metrizable space $X$, the proof cycle is:
 >
 > $$
-> \text{Compact} \xRightarrow{\text{Thm 16.1}} \text{Limit point compact} \xRightarrow{\text{shrinking balls}} \text{Sequentially compact} \xRightarrow{\text{Lebesgue + total bounded}} \text{Compact}
+> \text{Compact} \overset{\text{Thm 16.1}}{\Longrightarrow} \text{Limit point compact} \overset{\text{shrinking balls}}{\Longrightarrow} \text{Sequentially compact} \overset{\text{Lebesgue + total bounded}}{\Longrightarrow} \text{Compact}
 > $$
 >
 > ([[Topology §16 Limit Point Compactness#^thm-16-1|Theorem §16.1]], [[Topology §16 Limit Point Compactness#^pf-16-2|proof of $(2) \Rightarrow (3)$]], [[Topology §16 Limit Point Compactness#^pf-16-2-2|proof of $(3) \Rightarrow (1)$]].)

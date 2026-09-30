@@ -187,7 +187,7 @@ tags: [topology, math590]
 
 ^pf-23-4
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-4|§9.4]], [[Topology §22 Homotopy of Paths#^def-22-4|§22.4]], [[Topology §22 Homotopy of Paths#^def-22-6|§22.6]]
+*Uses:* [[Topology §9 Continuous Functions#^thm-9-4|§9.4]], [[Topology §22 Homotopy of Paths#^def-22-4|Def. §22.4]], [[Topology §22 Homotopy of Paths#^def-22-6|Def. §22.6]]
 
 ## Functorial Properties
 
@@ -208,7 +208,7 @@ tags: [topology, math590]
 
 ^pf-23-5
 
-*Uses:* [[Topology §23 The Fundamental Group#^def-23-4|§23.4]]
+*Uses:* [[Topology §23 The Fundamental Group#^def-23-4|Def. §23.4]]
 
 > [!theorem] Corollary §23.6: $\pi_1$ is a Topological Invariant
 > If $h: X \to Y$ is a [[Topology §9 Continuous Functions#^def-9-2|homeomorphism]], then $h_*: \pi_1(X, x_0) \to \pi_1(Y, h(x_0))$ is an isomorphism.
@@ -333,7 +333,7 @@ tags: [topology, math590]
 
 ^pf-23-7
 
-*Uses:* [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-5|§21.5]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-8|§21.8]], [[Topology §10 Product Topology on Arbitrary Products#^thm-10-1|§10.1]]
+*Uses:* [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-5|Def. §21.5]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-8|§21.8]], [[Topology §10 Product Topology on Arbitrary Products#^thm-10-1|§10.1]]
 
 > [!theorem] Corollary §23.8: Fundamental Group of the Torus
 > $\pi_1(S^1 \times S^1) \cong \pi_1(S^1) \times \pi_1(S^1) \cong \mathbb{Z} \times \mathbb{Z}$.

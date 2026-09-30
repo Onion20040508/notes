@@ -37,7 +37,7 @@ tags: [topology, math590]
 
 ^pf-26-1
 
-*Uses:* [[Topology §22 Homotopy of Paths#^def-22-4|Def §22.4]], [[Topology §23 The Fundamental Group#^def-23-4|Def §23.4]]
+*Uses:* [[Topology §22 Homotopy of Paths#^def-22-4|Def. §22.4]], [[Topology §23 The Fundamental Group#^def-23-4|Def. §23.4]]
 
 ## Application: $S^n \hookrightarrow \mathbb{R}^{n+1} \setminus \{0\}$ Induces an Isomorphism
 
@@ -202,7 +202,7 @@ tags: [topology, math590]
 
 ^pf-26-6
 
-*Uses:* [[Topology §23 The Fundamental Group#^def-23-4|Def §23.4]], [[Topology §23 The Fundamental Group#^thm-23-5|§23.5]], [[Topology §24 Covering Spaces#^thm-24-10|§24.10]], [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|§26.5]]
+*Uses:* [[Topology §23 The Fundamental Group#^def-23-4|Def. §23.4]], [[Topology §23 The Fundamental Group#^thm-23-5|§23.5]], [[Topology §24 Covering Spaces#^thm-24-10|§24.10]], [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|§26.5]]
 
 > [!remark] Remark: Why This Matters
 > This is the first real application of $\pi_1$: a purely topological fact (no retraction exists) proved using algebra ($\mathbb{Z} \not\cong 0$). The proof pattern — assume a map exists, apply $\pi_1$, get a contradiction from group theory — is the template for all obstruction arguments. The [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-7|Brouwer fixed point theorem below]] is a direct consequence.
@@ -275,7 +275,7 @@ tags: [topology, math590]
 
 ^pf-26-7
 
-*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def §26.1]], [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-6|§26.6]]
+*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-6|§26.6]]
 
 > [!remark] Remark
 > The Brouwer fixed point theorem is a purely existential result—it tells you a fixed point exists but gives no method for finding it. The proof illustrates the power of algebraic topology: the computation [[Topology §24 Covering Spaces#^thm-24-10|π₁(S¹) ≅ ℤ ≠ 0]] (which took real work via [[Topology §24 Covering Spaces|covering spaces]]) has a concrete geometric consequence about maps of the disk to itself.
@@ -302,7 +302,7 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 >
 > Check: $\|(1-t)x\| = 1-t \leq 1$ so $(1-t)x \in B^{n+1}$; $H(x,0) = k(x) = h(x)$; $H(x,1) = k(0)$ is constant.
 >
-> **($\Rightarrow$): Nullhomotopic $\Rightarrow$ extension.** We apply the Universal Property of Quotient Maps ([[Topology §12 Quotient Topology#^thm-12-3|§12.5]]). The maps involved are:
+> **($\Rightarrow$): Nullhomotopic $\Rightarrow$ extension.** We apply the Universal Property of Quotient Maps ([[Topology §12 Quotient Topology#^thm-12-3|§12.3]]). The maps involved are:
 >
 > ![[m590-26-2.svg]]
 > *The cone map $\pi: S^n \times I \to B^{n+1}$, the nullhomotopy $H: S^n \times I \to X$, and the induced extension $k: B^{n+1} \to X$ (dashed).*
@@ -558,7 +558,7 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 > ![[m590-26-6.svg]]
 > *The deformation retraction $\tilde{F}$ of the punctured square, the quotient maps $\pi \times \operatorname{id}$ and $\pi$, and the induced map $F$ on the punctured torus (dashed).*
 >
-> We want the dashed arrow $F$ to exist and be continuous. By the universal property ([[Topology §12 Quotient Topology#^thm-12-3|§12.5]]), the composite $\pi \circ \tilde{F}$ descends to a continuous map $F$ on $(T^2 \setminus \{pt\}) \times I$ if and only if $\pi \circ \tilde{F}$ is **constant on fibers** of $\pi \times \operatorname{id}$.
+> We want the dashed arrow $F$ to exist and be continuous. By the universal property ([[Topology §12 Quotient Topology#^thm-12-3|§12.3]]), the composite $\pi \circ \tilde{F}$ descends to a continuous map $F$ on $(T^2 \setminus \{pt\}) \times I$ if and only if $\pi \circ \tilde{F}$ is **constant on fibers** of $\pi \times \operatorname{id}$.
 >
 > **What does “constant on fibers” mean here?** Two points $(x_1, t)$ and $(x_2, t)$ are in the same fiber of $\pi \times \operatorname{id}$ when $\pi(x_1) = \pi(x_2)$ (and same $t$). This happens exactly when $x_1 \sim x_2$ under the edge identifications. We need:
 >
@@ -687,7 +687,7 @@ Deformation retracts give isomorphisms on $\pi_1$, but they require $A \subseteq
 
 ^pf-26-13
 
-*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-4|Def §26.4]]
+*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-4|Def. §26.4]]
 
 > [!definition] Definition §26.5: Homotopy Type
 > Two topological spaces that are homotopy equivalent are said to have the same **homotopy type**.
@@ -828,7 +828,7 @@ The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §
 
 ^pf-26-16
 
-*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-4|Def §26.4]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-6|Def §26.6]]
+*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-4|Def. §26.4]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-6|Def. §26.6]]
 
 > [!remark] Remark
 > Since a one-point space has trivial fundamental group, any contractible space satisfies $\pi_1(X, x_0) = 0$. Examples: $\mathbb{R}^n$, $B^n$, and any convex subset of $\mathbb{R}^n$ are contractible (via [[Topology §22 Homotopy of Paths#^thm-22-1|straight-line homotopies]]).
@@ -852,4 +852,4 @@ The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §
 
 ^pf-26-17
 
-*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def §26.1]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-6|Def §26.6]]
+*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-6|Def. §26.6]]

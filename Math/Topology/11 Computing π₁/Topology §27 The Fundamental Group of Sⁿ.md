@@ -174,7 +174,7 @@ The main result of this section is [[Topology §27 The Fundamental Group of Sⁿ
 
 ^pf-27-3
 
-*Uses:* [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|§27.2]], [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Topology §23 The Fundamental Group#^ex-23-1|Example §23.1]], [[Topology §9 Continuous Functions#^prop-9-3|§9.3]], [[Topology §23 The Fundamental Group#^cor-23-6|§23.6]]
+*Uses:* [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|§27.2]], [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Topology §23 The Fundamental Group#^ex-23-1|Ex. §23.1]], [[Topology §9 Continuous Functions#^prop-9-3|§9.3]], [[Topology §23 The Fundamental Group#^cor-23-6|§23.6]]
 
 > [!remark]- Connections
 > - Stereographic projection first appeared for $S^1$ and $S^2$ in [[Topology §17 Local Compactness#^ex-17-7|One-Point Compactification of ℝ and ℝ²]].

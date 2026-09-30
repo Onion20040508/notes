@@ -244,7 +244,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ^pf-12-3
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-4|§9.4]], [[Topology §12 Quotient Topology#^ex-12-4|Example §12.4]]
+*Uses:* [[Topology §9 Continuous Functions#^thm-9-4|§9.4]], [[Topology §12 Quotient Topology#^ex-12-4|Ex. §12.4]]
 
 > [!theorem] Corollary §12.4: Induced Bijection from Quotient
 > Let $p: X \to X^*$ be a quotient map, where $X^* = \{g^{-1}(\{z\}) \mid z \in Z\}$, where $g: X \to Z$ is surjective continuous. Then the map $g$ induces a bijection continuous map $f: X^* \to Z$.
@@ -269,7 +269,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ^pf-12-4
 
-*Uses:* [[Topology §12 Quotient Topology#^thm-12-3|§12.3]], [[Topology §12 Quotient Topology#^ex-12-4|Example §12.4]]
+*Uses:* [[Topology §12 Quotient Topology#^thm-12-3|§12.3]], [[Topology §12 Quotient Topology#^ex-12-4|Ex. §12.4]]
 
 > [!theorem] Theorem §12.5: Product of Quotient Maps (Compact-Hausdorff Case)
 > Let $\pi_1: X_1 \to Y_1$ and $\pi_2: X_2 \to Y_2$ be quotient maps. If $X_1 \times X_2$ is compact and $Y_1 \times Y_2$ is Hausdorff, then
@@ -315,4 +315,4 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 ^rem-12-8
 
 > [!remark]- Connections
-> - Revisited in Part II: [[Topology §20 Normal Spaces#^rem-20-6|Remark: The Role of the Quotient Space Toolkit in Part II]].
+> - Revisited in Part II: [[Topology §21 Algebra Prerequisites꞉ Groups#^rem-II-2|Remark: The Role of the Quotient Space Toolkit in Part II]].

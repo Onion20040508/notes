@@ -135,7 +135,7 @@ tags: [topology, math590]
 
 ^pf-17-2
 
-*Uses:* [[Topology §5 Subspace Topology#^def-5-1|§5.1]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]]
+*Uses:* [[Topology §5 Subspace Topology#^def-5-1|Def. §5.1]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]]
 
 > [!theorem] Proposition §17.3: $Y$ is Compact
 > If $X$ is any topological space, then $Y = X \cup \{\infty\}$ with the above topology is compact.
@@ -163,7 +163,7 @@ tags: [topology, math590]
 
 ^pf-17-4
 
-*Uses:* [[Topology §8 Hausdorff Spaces#^def-8-1|§8.1]], [[Topology §17 Local Compactness#^def-17-1|§17.1]]
+*Uses:* [[Topology §8 Hausdorff Spaces#^def-8-1|Def. §8.1]], [[Topology §17 Local Compactness#^def-17-1|Def. §17.1]]
 
 > [!remark] Remark
 > Note where each hypothesis is used: Hausdorff is needed to make $\mathcal{T}_Y$ a topology (compact sets must be closed) and to separate two points in $X$. Local compactness is needed only for the Hausdorff property of $Y$—specifically, to separate $x \in X$ from $\infty$.
@@ -268,7 +268,7 @@ tags: [topology, math590]
 
 ^pf-17-6
 
-*Uses:* [[Topology §17 Local Compactness#^def-17-1|§17.1]], [[Topology §17 Local Compactness#^thm-17-5|§17.5]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]]
+*Uses:* [[Topology §17 Local Compactness#^def-17-1|Def. §17.1]], [[Topology §17 Local Compactness#^thm-17-5|§17.5]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]]
 
 > [!remark] Remark
 > This stronger formulation says: in a locally compact Hausdorff space, not only can you find *some* compact set containing a neighborhood, you can find one *inside any given neighborhood*. The one-point compactification is the key tool—it provides a compact Hausdorff ambient space where standard separation arguments apply.
@@ -301,4 +301,4 @@ tags: [topology, math590]
 
 ^pf-17-8
 
-*Uses:* [[Topology §17 Local Compactness#^thm-17-5|§17.5]], [[Topology §17 Local Compactness#^ex-17-2|§17.2]], [[Topology §17 Local Compactness#^cor-17-7|§17.7]]
+*Uses:* [[Topology §17 Local Compactness#^thm-17-5|§17.5]], [[Topology §17 Local Compactness#^ex-17-2|Ex. §17.2]], [[Topology §17 Local Compactness#^cor-17-7|§17.7]]

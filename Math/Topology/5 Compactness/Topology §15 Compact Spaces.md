@@ -74,7 +74,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^pf-ex-15-4
 
-*Uses:* [[Topology §5 Subspace Topology#^def-5-1|§5.1]]
+*Uses:* [[Topology §5 Subspace Topology#^def-5-1|Def. §5.1]]
 
 > [!remark]- Connections
 > - This $X$ reappears as the one-point compactification of $\{1/n\} \cong \mathbb{Z}_+$: [[Topology §17 Local Compactness#^ex-17-6|Example §17.6]].
@@ -121,7 +121,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^pf-15-1
 
-*Uses:* [[Topology §5 Subspace Topology#^def-5-1|§5.1]]
+*Uses:* [[Topology §5 Subspace Topology#^def-5-1|Def. §5.1]]
 
 > [!remark] Remark: The Subspace-Covering Correspondence
 > This lemma reflects a deeper structural correspondence. Let $Y \subseteq X$ be a subspace.
@@ -183,7 +183,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^pf-15-2
 
-*Uses:* [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §6 Closed Sets and Limit Points#^def-6-1|§6.1]]
+*Uses:* [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §6 Closed Sets and Limit Points#^def-6-1|Def. §6.1]]
 
 > [!theorem] Theorem §15.3: Continuous Image of Compact is Compact
 > The image of a compact space under a continuous map is compact.
@@ -203,7 +203,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^pf-15-3
 
-*Uses:* [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §9 Continuous Functions#^def-9-1|§9.1]]
+*Uses:* [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §9 Continuous Functions#^def-9-1|Def. §9.1]]
 
 > [!remark]- Connections
 > - With $Y = \mathbb{R}$ this is the source of the MATH 451 [[Extreme Value Theorem]]: $f([a,b])$ is compact, hence closed and bounded ([[Topology §15 Compact Spaces#^thm-15-12|Heine-Borel]]).
@@ -234,7 +234,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^pf-15-4
 
-*Uses:* [[Topology §8 Hausdorff Spaces#^def-8-1|§8.1]], [[Topology §15 Compact Spaces#^lem-15-1|§15.1]]
+*Uses:* [[Topology §8 Hausdorff Spaces#^def-8-1|Def. §8.1]], [[Topology §15 Compact Spaces#^lem-15-1|§15.1]]
 
 > [!remark]- Connections
 > - The same point-by-point separation argument, applied twice, proves [[Topology §20 Normal Spaces#^thm-20-2|Every Compact Hausdorff Space is Normal]].
@@ -290,7 +290,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^pf-15-6
 
-*Uses:* [[Topology §15 Compact Spaces#^def-15-4|§15.4]], [[Topology §15 Compact Spaces#^thm-15-5|§15.5]]
+*Uses:* [[Topology §15 Compact Spaces#^def-15-4|Def. §15.4]], [[Topology §15 Compact Spaces#^thm-15-5|§15.5]]
 
 > [!theorem] Theorem §15.7: Bijection from Compact to Hausdorff
 > Let $f: X \to Y$ be a bijective continuous function. If $X$ is compact and $Y$ is Hausdorff, then $f$ is a homeomorphism.
@@ -303,7 +303,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > **The key insight:** Compactness of $X$ and Hausdorffness of $Y$ force $f$ to be a closed map:
 >
 > $$
-> A \text{ closed in } X \xRightarrow{\text{compact}} A \text{ compact} \xRightarrow{f \text{ cts}} f(A) \text{ compact} \xRightarrow{\text{Hausdorff}} f(A) \text{ closed in } Y
+> A \text{ closed in } X \overset{\text{compact}}{\Longrightarrow} A \text{ compact} \overset{f \text{ cts}}{\Longrightarrow} f(A) \text{ compact} \overset{\text{Hausdorff}}{\Longrightarrow} f(A) \text{ closed in } Y
 > $$
 >
 > **Applications:**
@@ -325,7 +325,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^pf-15-7
 
-*Uses:* [[Topology §12 Quotient Topology#^def-12-4|§12.4]], [[Topology §9 Continuous Functions#^prop-9-2|§9.2]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §15 Compact Spaces#^thm-15-3|§15.3]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]]
+*Uses:* [[Topology §12 Quotient Topology#^def-12-4|Def. §12.4]], [[Topology §9 Continuous Functions#^prop-9-2|§9.2]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §15 Compact Spaces#^thm-15-3|§15.3]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]]
 
 > [!remark]- Connections
 > - The compact-to-Hausdorff shortcut for quotient maps: [[Topology §12 Quotient Topology#^thm-12-5|Product of Quotient Maps (Compact-Hausdorff Case)]].
@@ -365,7 +365,7 @@ To prove this, we first establish a key lemma:
 
 ^pf-15-9
 
-*Uses:* [[Topology §4 Product Topology#^def-4-1|§4.1]]
+*Uses:* [[Topology §4 Product Topology#^def-4-1|Def. §4.1]]
 
 > [!proof]+ Proof of Finite Product Theorem
 > Suffices to prove for two spaces (then use induction). Let $X, Y$ be compact. Let $\mathcal{A}$ be an open covering of $X \times Y$. We show $\mathcal{A}$ has a finite subcover.
@@ -438,7 +438,7 @@ To prove this, we first establish a key lemma:
 
 ^pf-15-10
 
-*Uses:* [[Topology §14 Connected Subspaces of ℝ#^def-14-1|§14.1]], [[Topology §3 Order Topology#^def-3-4|§3.4]]
+*Uses:* [[Topology §14 Connected Subspaces of ℝ#^def-14-1|Def. §14.1]], [[Topology §3 Order Topology#^def-3-4|Def. §3.4]]
 
 > [!theorem] Corollary §15.11
 > $[a, b] \subseteq \mathbb{R}$ is compact. Also, $\prod_{i=1}^{n} [a_i, b_i] \subseteq \mathbb{R}^n$ is compact.

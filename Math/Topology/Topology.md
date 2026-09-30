@@ -1,0 +1,73 @@
+---
+type: subject
+discipline: math
+course: MATH 590
+term: Winter 2026
+instructor: Linh Truong
+textbook: "Munkres, Topology, 2nd ed."
+status: completed
+aliases: ["MATH 590", "Point-Set Topology", "Introduction to Topology"]
+tags: [subject, topology]
+---
+# Topology
+
+MATH 590 (Winter 2026, Linh Truong), following Munkres, *Topology* (2nd ed.). Section numbers §1–§29 are the notes' own. Each section note's `munkres` property gives the matching Munkres section. LaTeX source: `tex/math590_topology_notes.tex`.
+
+## How the chapters build on each other
+Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows: results used *on credit* before they are proved in the course.
+
+```mermaid
+graph TD
+  subgraph P1["Part I: General Topology"]
+    C1["1 Topological Spaces and Constructions"]
+    C2["2 Closedness, Continuity, and Hausdorff"]
+    C3["3 Products, Metrics, and Quotients"]
+    C4["4 Connectedness"]
+    C5["5 Compactness"]
+    C6["6 Countability and Separation"]
+  end
+  subgraph P2["Part II: Algebraic Topology"]
+    C7["7 Algebraic Foundations"]
+    C8["8 Homotopy and the Fundamental Group"]
+    C9["9 Covering Spaces and Lifting"]
+    C10["10 Applications of π₁"]
+    C11["11 Computing π₁"]
+  end
+  C1 --> C2
+  C2 --> C3
+  C3 --> C4
+  C4 --> C5
+  C4 --> C8
+  C5 --> C6
+  C5 --> C9
+  C7 --> C8
+  C8 --> C9
+  C9 --> C10
+  C10 --> C11
+  C3 -.->|on credit| C5
+  C2 -.->|on credit| C8
+  C2 -.->|on credit| C9
+  C8 -.->|on credit| C9
+  C10 -.->|on credit| C11
+```
+
+## Chapters
+**Part I: General Topology**
+- [[Topology — 1 Topological Spaces and Constructions]]
+- [[Topology — 2 Closedness, Continuity, and Hausdorff]]
+- [[Topology — 3 Products, Metrics, and Quotients]]
+- [[Topology — 4 Connectedness]]
+- [[Topology — 5 Compactness]]
+- [[Topology — 6 Countability and Separation]]
+
+**Part II: Algebraic Topology**
+- [[Topology — 7 Algebraic Foundations]]
+- [[Topology — 8 Homotopy and the Fundamental Group]]
+- [[Topology — 9 Covering Spaces and Lifting]]
+- [[Topology — 10 Applications of π₁]]
+- [[Topology — 11 Computing π₁]]
+
+## Summary
+- [[Topology — Algebraic Topology Toolkit]]: the four tools for computing π₁, a decision tree, and a table of computed fundamental groups.
+
+## Workhorse examples

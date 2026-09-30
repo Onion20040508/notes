@@ -87,7 +87,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 ^pf-22-2
 
-*Uses:* [[Topology §14 Connected Subspaces of ℝ#^def-14-3|§14.3]], [[Topology §9 Continuous Functions#^thm-9-4|§9.4]]
+*Uses:* [[Topology §14 Connected Subspaces of ℝ#^def-14-3|Def. §14.3]], [[Topology §9 Continuous Functions#^thm-9-4|§9.4]]
 
 > [!remark] Remark
 > The key idea: a path $p: I \to Y$ is defined on $I$, but we need a homotopy defined on $X \times I$. The projection $\pi_2: X \times I \to I$, $(x, t) \mapsto t$, bridges this gap—composing $p \circ \pi_2$ promotes a path in $Y$ to a homotopy between constant maps on any domain $X$. This technique appears whenever path-connectedness needs to be converted into a homotopy statement.

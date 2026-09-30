@@ -6,7 +6,8 @@
 - [[Single Variable Analysis]]
 - [[Functional Analysis]]
 - [[Differentiable Manifolds]]
-- Topology, Measure Theory (to be added)
+- [[Topology]]
+- Measure Theory (to be added)
 
 **Physics**
 - [[Quantum Field Theory I]]
