@@ -1,0 +1,14 @@
+% Figure from MATH 591 notes, section 8. Compile with the notes preamble.
+\begin{tikzpicture}
+\draw[thick, gray!70] (0,0) circle (1.25); \draw[gray!45] (-1.25,0) arc (180:360:1.25 and 0.38); \draw[gray!35, dashed] (1.25,0) arc (0:180:1.25 and 0.38);
+\draw[violet!75!black, dashed] (0.620,0.780) -- (-0.620,-0.780); \fill (0,0) circle (1pt);
+\fill[violet!80!black] (0.620,0.780) circle (1.8pt) node[anchor=south west, font=\scriptsize] {$p$}; \fill[violet!80!black] (-0.620,-0.780) circle (1.8pt) node[anchor=north east, font=\scriptsize] {$-p$};
+\node[font=\scriptsize] at (0,-1.62) {$S^2$, with $p \sim -p$};
+\draw[->, thick, gray!70] (1.75,0) -- node[above, font=\scriptsize] {$\pi$} (2.85,0);
+\fill[violet!6] (4.40,0) circle (1.15);
+\draw[very thick, orange!85!black, postaction={decorate}, decoration={markings, mark=at position 0.55 with {\arrow{>}}}] (4.40,0) ++(20:1.15) arc (20:200:1.15);
+\draw[very thick, orange!85!black, postaction={decorate}, decoration={markings, mark=at position 0.55 with {\arrow{>}}}] (4.40,0) ++(200:1.15) arc (200:380:1.15);
+\fill (5.481,0.393) circle (1.6pt) node[anchor=west, font=\scriptsize] {$q$}; \fill (3.319,-0.393) circle (1.6pt) node[anchor=east, font=\scriptsize] {$-q$};
+\draw[gray!55, dashed] (5.481,0.393) -- (3.319,-0.393);
+\node[font=\scriptsize, align=center] at (4.40,-1.62) {upper hemisphere, seen from above:\\ glue $q \sim -q$ on the boundary};
+\end{tikzpicture}
