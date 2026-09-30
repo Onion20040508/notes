@@ -1,3 +1,5 @@
 {
-  "enabledCssSnippets": ["boxes"]
+  "enabledCssSnippets": [
+    "boxes"
+  ]
 }
