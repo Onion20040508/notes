@@ -1,0 +1,21 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{amsmath,amssymb,tikz}\usetikzlibrary{arrows.meta}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}\definecolor{figG}{RGB}{60,130,60}
+\begin{document}\begin{tikzpicture}[scale=0.62,>={Stealth[length=1.8mm]}]
+\begin{scope}
+\draw[gray!50] (-3.4,0)--(3.4,0) (0,-3.4)--(0,3.4);
+\draw[dashed,figB] (-3,-3)--(3,3); \draw[dashed,figG] (-2.6,2.6)--(2.6,-2.6);
+\draw[gray] (0,0) circle (1); \draw[thick,rotate=45] (0,0) ellipse (3 and 1);
+\draw (0.25,0.25)--(0,0.5)--(-0.25,0.25);
+\node[font=\small] at (0,-3.9) {symmetric: axes $\perp$};
+\end{scope}
+\begin{scope}[xshift=8.5cm]
+\draw[gray!50] (-3.4,0)--(3.4,0) (0,-3.4)--(0,3.4);
+\draw[dashed,figB] (-3.3,0)--(3.3,0) node[above left,font=\scriptsize]{$\lambda=2$};
+\draw[dashed,figR] (-3,-3)--(3,3) node[above left,font=\scriptsize]{$\lambda=3$};
+\draw[gray] (0,0) circle (1);
+\draw[thick,domain=0:360,samples=100] plot ({2*cos(\x)+sin(\x)},{3*sin(\x)});
+\draw (0.6,0) arc (0:45:0.6); \node[font=\scriptsize] at (1.0,0.3) {$45^\circ$};
+\node[font=\small] at (0,-3.9) {not self-adjoint: eigenlines not $\perp$};
+\end{scope}
+\end{tikzpicture}\end{document}

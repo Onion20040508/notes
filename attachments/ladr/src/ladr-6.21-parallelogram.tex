@@ -1,0 +1,12 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{amsmath,amssymb,tikz}\usetikzlibrary{arrows.meta}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}
+\begin{document}\begin{tikzpicture}[scale=1.4,>={Stealth[length=2mm]}]
+\coordinate (O) at (0,0); \coordinate (U) at (2.4,0.3); \coordinate (V) at (0.8,1.4); \coordinate (S) at (3.2,1.7);
+\fill[gray!8] (O)--(U)--(S)--(V)--cycle;
+\draw[->,thick] (O)--(U) node[midway,below,font=\small]{$u$};
+\draw[->,thick] (O)--(V) node[midway,left,font=\small]{$v$};
+\draw[thick,gray] (U)--(S) (V)--(S);
+\draw[->,very thick,figB] (O)--(S) node[pos=0.82,above left,font=\small]{$u+v$};
+\draw[->,very thick,figR] (V)--(U) node[pos=0.18,right,font=\small]{$u-v$};
+\end{tikzpicture}\end{document}

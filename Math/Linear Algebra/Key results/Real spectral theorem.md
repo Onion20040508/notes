@@ -19,3 +19,6 @@ tags: [linear-algebra, hub]
 - [[Linear Algebra 7F Consequences of Singular Value Decomposition#^ladr-7-92|7.92 Best approximation by linear map whose range has dimension ≤ k]]
 - [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-13|9.13 Diagonalization of a symmetric bilinear form by an orthonormal basis]]
 - [[Linear Algebra 9C Determinants#^ladr-9-59|9.59 Every positive operator has nonnegative determinant]]
+
+## Connections
+- Complex version [[Complex spectral theorem|7.31]]. Applications: principal axes of quadratic forms ([[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-23|Diagonalization of quadratic form]]), normal modes of coupled oscillators (the stiffness matrix is symmetric), the inertia tensor.

@@ -1,0 +1,14 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{amsmath,amssymb,tikz}\usetikzlibrary{arrows.meta}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}\definecolor{figG}{RGB}{60,130,60}
+\begin{document}\begin{tikzpicture}[scale=1.4,>={Stealth[length=2mm]},x={(1cm,0cm)},y={(0.5cm,0.32cm)},z={(0cm,1cm)}]
+\fill[figG!10] (-1,-1,0)--(3,-1,0)--(3,2,0)--(-1,2,0)--cycle; \draw[figG] (-1,-1,0)--(3,-1,0)--(3,2,0)--(-1,2,0)--cycle;
+\node[figG,font=\small] at (2.7,1.7,0) {$U$};
+\coordinate (O) at (0,0,0); \coordinate (P) at (1.6,0.6,0); \coordinate (Vv) at (1.6,0.6,1.6); \coordinate (Q) at (0.3,1.4,0);
+\fill (O) circle (1pt) node[below left,font=\small]{$0$};
+\draw[->,thick] (O)--(Vv) node[above,font=\small]{$v$};
+\draw[->,thick,figB] (O)--(P) node[below right,font=\small]{$P_Uv$};
+\draw[very thick,figR] (P)--(Vv) node[midway,right,font=\small]{$v-P_Uv\perp U$};
+\fill (Q) circle (1.2pt) node[left,font=\small]{$u$};
+\draw[dashed] (Q)--(Vv); \draw[dashed,gray] (Q)--(P);
+\end{tikzpicture}\end{document}

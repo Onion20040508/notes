@@ -19,3 +19,6 @@ tags: [linear-algebra, hub]
 - [[Linear Algebra 7E Singular Value Decomposition#^ladr-7-69|7.69 Isometries characterized by having all singular values equal 1]]
 - [[Linear Algebra 7F Consequences of Singular Value Decomposition#^ladr-7-92|7.92 Best approximation by linear map whose range has dimension ≤ k]]
 - [[Linear Algebra 9C Determinants#^ladr-9-59|9.59 Every positive operator has nonnegative determinant]]
+
+## Connections
+- Physics: an observable (or any normal operator, e.g. a unitary time evolution) has an orthonormal eigenbasis; commuting normal operators share one ([[Linear Algebra 5E Commuting Operators#^ladr-5-76|5.76]]).

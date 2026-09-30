@@ -18,3 +18,7 @@ tags: [linear-algebra, hub]
 - [[Linear Algebra 6B Orthonormal Bases#^ladr-6-36|6.36 Every orthonormal list extends to an orthonormal basis]]
 - [[Linear Algebra 6B Orthonormal Bases#^ladr-6-37|6.37 Upper-triangular matrix with respect to some orthonormal basis]]
 - [[Linear Algebra 7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|7.58 QR factorization]]
+
+## Connections
+- Existence of orthonormal bases [[Linear Algebra 6B Orthonormal Bases#^ladr-6-35|6.35]]; triangular form [[Linear Algebra 6B Orthonormal Bases#^ladr-6-37|6.37]]; QR factorization is Gram–Schmidt in matrix form ([[Linear Algebra 7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|QR factorization]]).
+- Applied to $1,x,x^2,\dots$ with $\int_{-1}^1pq$ it produces the Legendre polynomials ([[Linear Algebra 6B Orthonormal Bases#^ladr-6-34|6.34]]), the angular part of multipole expansions.

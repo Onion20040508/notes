@@ -1,0 +1,11 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{amsmath,amssymb,tikz}\usetikzlibrary{arrows.meta}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}\definecolor{figG}{RGB}{60,130,60}
+\begin{document}\begin{tikzpicture}[scale=1.5,>={Stealth[length=2mm]}]
+\draw[gray!60] (-0.4,-0.13)--(3.4,1.13) node[right,font=\small]{$\operatorname{span}(v)$};
+\draw[->,thick] (0,0)--(1.2,0.4) node[below right,font=\small]{$v$};
+\draw[->,very thick,figB] (0,0)--(1.8,1.8) node[above,font=\small]{$u$};
+\draw[->,very thick,figG] (0,0)--(2.16,0.72) node[below,font=\small,xshift=6pt]{$cv$};
+\draw[->,very thick,figR] (2.16,0.72)--(1.8,1.8) node[midway,right,font=\small]{$w=u-cv$};
+\draw[figR] (2.16,0.72) ++(-0.095,0.285) -- ++(0.285,0.095) -- ++(0.095,-0.285);
+\end{tikzpicture}\end{document}
