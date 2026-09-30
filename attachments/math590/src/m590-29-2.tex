@@ -1,0 +1,18 @@
+% Figure from MATH 590 notes, section 29. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.6, >=stealth, thick]
+    % Square - Projective plane
+    \draw[->, blue] (0,0) -- (1.1,0); \draw[blue] (1.1,0) -- (2,0);
+    \node[blue, below] at (1,0) {$a$};
+    \draw[->, red!70!black] (2,0) -- (2,1.1); \draw[red!70!black] (2,1.1) -- (2,2);
+    \node[red!70!black, right] at (2,1) {$b$};
+    \draw[->, blue] (0,2) -- (1.1,2); \draw[blue] (1.1,2) -- (2,2);
+    \node[blue, above] at (1,2) {$a$};
+    \draw[->, red!70!black] (0,0) -- (0,1.1); \draw[red!70!black] (0,1.1) -- (0,2);
+    \node[red!70!black, left] at (0,1) {$b$};
+    % Corners
+    \foreach \p in {(0,0),(2,0),(0,2),(2,2)} \fill[green!50!black] \p circle (2.5pt);
+    \node[below left, font=\scriptsize, green!50!black] at (0,0) {$x_0$};
+    \node[below right, font=\scriptsize, green!50!black] at (2,0) {$x_0$};
+    \node[above left, font=\scriptsize, green!50!black] at (0,2) {$x_0$};
+    \node[above right, font=\scriptsize, green!50!black] at (2,2) {$x_0$};
+\end{tikzpicture}

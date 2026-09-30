@@ -8,112 +8,143 @@ tags: [linear-algebra]
 ← [[Linear Algebra 9A Bilinear Forms and Quadratic Forms]] · ↑ [[Linear Algebra — 9 Multilinear Algebra and Determinants]] · [[Linear Algebra 9C Determinants]] →
 
 > [!definition] 9.24 Vᵐ
-> *Write the statement in your own words.* (LADR p. 346)
+> $V^m=V\times\dots\times V$ ($m$ copies).
 
 ^ladr-9-24
 
 > [!definition] 9.25 M-linear form, V
-> *Write the statement in your own words.* (LADR p. 346)
+> An *$m$-linear form* on $V$ is a function $\beta:V^m\to\F$ that is linear in each slot when the others are fixed. $V^{(m)}$ is the vector space of $m$-linear forms; a *multilinear form* is an $m$-linear form for some $m$.
 
 ^ladr-9-25
 
+> [!remark] Special cases
+> $1$-linear forms are functionals ($V^{(1)}=V'$), $2$-linear forms are bilinear forms.
+
+> [!remark]- Connections
+> - In the language of [[Differentiable Manifolds]]: covariant $m$-tensors on $V$.
+
 > [!example] 9.26 M-linear forms (p. 346)
+> - For $\alpha,\rho\in V^{(2)}$: $\beta(v_1,v_2,v_3,v_4)=\alpha(v_1,v_2)\rho(v_3,v_4)$ is $4$-linear (a tensor product of forms).
+> - $\beta(T_1,\dots,T_m)=\operatorname{tr}(T_1\cdots T_m)$ is $m$-linear on $\Lin(V)$.
 
 ^ladr-9-26
 
 > [!definition] 9.27 Alternating forms, V⁽ᵐ⁾ alt
-> *Write the statement in your own words.* (LADR p. 347)
+> An $m$-linear form $\alpha$ is *alternating* if $\alpha(v_1,\dots,v_m)=0$ whenever $v_j=v_k$ for some $j\ne k$. $V^{(m)}_{\mathrm{alt}}$ is the subspace of alternating $m$-linear forms.
 
 ^ladr-9-27
 
+> [!remark]- Connections
+> - These are exactly the $m$-covectors / values of differential $m$-forms at a point (Lee, Ch. 14).
+
 > [!theorem] 9.28 Alternating multilinear forms and linear dependence
-> *Write the statement in your own words.* (LADR p. 347)
+> If $\alpha$ is alternating $m$-linear and $v_1,\dots,v_m$ is linearly dependent, then $\alpha(v_1,\dots,v_m)=0$.
 
 ^ladr-9-28
 
 > [!proof]+
-> Proof idea.
+> By [[Linear dependence lemma|2.19]] some $v_k=\sum_{j<k}b_jv_j$. Expanding in slot $k$, $\alpha(v_1,\dots,v_m)=\sum_{j<k}b_j\alpha(v_1,\dots,v_{k-1},v_j,v_{k+1},\dots,v_m)$, and each term has a repeated vector.
 
 *Uses:* [[Linear dependence lemma|2.19]]
 
 > [!theorem] 9.29 No nonzero alternating m-linear forms for m > dim V
-> *Write the statement in your own words.* (LADR p. 347)
+> If $m>\dim V$, the only alternating $m$-linear form on $V$ is $0$.
 
 ^ladr-9-29
 
 > [!proof]+
-> Proof idea.
+> Every list of length $m>\dim V$ is dependent ([[Length of linearly independent list ≤ length of spanning list|2.22]]); apply [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-28|9.28]].
 
 *Uses:* [[Length of linearly independent list ≤ length of spanning list|2.22]], [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-28|9.28]]
 
 > [!theorem] 9.30 Swapping input vectors in an alternating multilinear form
-> *Write the statement in your own words.* (LADR p. 348)
+> Swapping the vectors in two slots of an alternating form multiplies its value by $-1$.
 
 ^ladr-9-30
 
 > [!proof]+
-> Proof idea.
-
-*Uses:* [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-16|9.16]]
+> For the first two slots: $0=\alpha(v_1+v_2,v_1+v_2,v_3,\dots)=\alpha(v_1,v_2,\dots)+\alpha(v_2,v_1,\dots)$, since the terms with a repeated vector vanish. Any other pair of slots works the same way.
 
 > [!definition] 9.31 Permutation, perm m
-> *Write the statement in your own words.* (LADR p. 348)
+> A *permutation* of $(1,\dots,m)$ is a list $(j_1,\dots,j_m)$ containing each of $1,\dots,m$ exactly once. $\operatorname{perm}m$ is the set of them ($m!$ elements).
 
 ^ladr-9-31
 
 > [!definition] 9.32 Sign of a permutation
-> *Write the statement in your own words.* (LADR p. 349)
+> $\operatorname{sign}(j_1,\dots,j_m)=(-1)^N$, where $N$ is the number of pairs $k<l$ such that $k$ appears after $l$ in the list (the number of *inversions*).
 
 ^ladr-9-32
 
 > [!example] 9.33 Signs (p. 349)
+> - $\operatorname{sign}(1,\dots,m)=1$.
+> - $\operatorname{sign}(2,1,3,4)=-1$ (one inversion).
+> - $\operatorname{sign}(2,3,\dots,m,1)=(-1)^{m-1}$ (the inversions are the $m-1$ pairs involving $1$): a cyclic shift is even iff $m$ is odd.
 
 ^ladr-9-33
 
 > [!theorem] 9.34 Swapping two entries in a permutation
-> *Write the statement in your own words.* (LADR p. 349)
+> Swapping two entries of a permutation multiplies its sign by $-1$.
 
 ^ladr-9-34
 
 > [!proof]+
-> Proof idea.
+> Swap entries $a$ and $b$. The pair $\{a,b\}$ itself changes status (inverted/not): a change of $\pm1$. For each entry $c$ strictly between them in position, the pairs $\{a,c\}$ and $\{b,c\}$ either both change status or neither does: a change of $-2$, $0$ or $2$. Pairs involving entries outside that stretch, or not involving $a$ or $b$, are unaffected. So $N$ changes by an odd number.
 
 > [!theorem] 9.35 Permutations and alternating multilinear forms
-> *Write the statement in your own words.* (LADR p. 350)
+> If $\alpha\in V^{(m)}_{\mathrm{alt}}$, then $\alpha(v_{j_1},\dots,v_{j_m})=\operatorname{sign}(j_1,\dots,j_m)\,\alpha(v_1,\dots,v_m)$ for all $(j_1,\dots,j_m)\in\operatorname{perm}m$.
 
 ^ladr-9-35
 
 > [!proof]+
-> Proof idea.
+> Reach $(1,\dots,m)$ from $(j_1,\dots,j_m)$ by swaps. Each swap flips the value of $\alpha$ ([[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-30|9.30]]) and the sign of the permutation ([[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-34|9.34]]); the identity has sign $1$.
 
 *Uses:* [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-30|9.30]], [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-34|9.34]]
 
 > [!theorem] 9.36 Formula for (dim V)-linear alternating forms on V
-> *Write the statement in your own words.* (LADR p. 350)
+> Let $n=\dim V$, $e_1,\dots,e_n$ a basis, and $v_k=\sum_jb_{j,k}e_j$. For every alternating $n$-linear form $\alpha$,
+> $$
+> \alpha(v_1,\dots,v_n)=\alpha(e_1,\dots,e_n)\sum_{(j_1,\dots,j_n)\in\operatorname{perm}n}\operatorname{sign}(j_1,\dots,j_n)\,b_{j_1,1}\cdots b_{j_n,n}.
+> $$
 
 ^ladr-9-36
 
+> [!remark] Leibniz formula
+> The sum is the determinant of the matrix $(b_{j,k})$ ([[Linear Algebra 9C Determinants#^ladr-9-46|Formula for determinant of a matrix]]).
+
 > [!proof]+
-> Proof idea.
+> Expand multilinearly: $\alpha(v_1,\dots,v_n)=\sum_{j_1,\dots,j_n}b_{j_1,1}\cdots b_{j_n,n}\,\alpha(e_{j_1},\dots,e_{j_n})$. Terms with a repeated index vanish, leaving permutations, and $\alpha(e_{j_1},\dots,e_{j_n})=\operatorname{sign}(j_1,\dots,j_n)\alpha(e_1,\dots,e_n)$ ([[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-35|9.35]]).
 
 *Uses:* [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-35|9.35]]
 
 > [!theorem] 9.37 Dim V^(dim V) alt = 1
-> *Write the statement in your own words.* (LADR p. 351)
+> $\dim V^{(\dim V)}_{\mathrm{alt}}=1$.
 
 ^ladr-9-37
 
 > [!proof]+
-> Proof idea.
+> **At most one.** Let $\alpha\ne0$ and $\alpha'$ be alternating $n$-linear, with $\alpha(e_1,\dots,e_n)\ne0$; then $e_1,\dots,e_n$ is independent ([[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-28|9.28]]), a basis. With $c$ such that $\alpha'(e)=c\,\alpha(e)$, [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-36|9.36]] gives $\alpha'(v_1,\dots,v_n)=c\,\alpha(v_1,\dots,v_n)$ for all $v$'s.
+>
+> **At least one.** With a basis $e$ and its dual basis $\varphi_1,\dots,\varphi_n$ ([[Linear Algebra 3F Duality#^ladr-3-114|3.114]]), define
+> $$
+> \alpha(v_1,\dots,v_n)=\sum_{(j_1,\dots,j_n)\in\operatorname{perm}n}\operatorname{sign}(j_1,\dots,j_n)\,\varphi_{j_1}(v_1)\cdots\varphi_{j_n}(v_n).
+> $$
+> It is $n$-linear (each term is). Alternating: if $v_a=v_b$ ($a<b$), pair each permutation with the one obtained by swapping its entries in positions $a$ and $b$; the products agree and the signs are opposite ([[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-34|9.34]]), so everything cancels. Nonzero: $\alpha(e_1,\dots,e_n)=1$ (only the identity permutation contributes).
 
-*Uses:* [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-28|9.28]], [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-36|9.36]], [[Linear Algebra 3F Duality#^ladr-3-114|3.114]]
+*Uses:* [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-28|9.28]], [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-36|9.36]], [[Linear Algebra 3F Duality#^ladr-3-114|3.114]], [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-34|9.34]]
+
+> [!remark]- Connections
+> - This one-dimensionality is what makes the determinant well defined ([[Linear Algebra 9C Determinants#^ladr-9-41|Determinant of an operator, det T]]).
 
 > [!theorem] 9.39 Alternating (dim V)-linear forms and linear independence
-> *Write the statement in your own words.* (LADR p. 352)
+> Let $n=\dim V$ and $\alpha\ne0$ alternating $n$-linear. Then $\alpha(e_1,\dots,e_n)\ne0$ iff $e_1,\dots,e_n$ is linearly independent.
 
 ^ladr-9-39
 
+> [!remark] Meaning
+> A nonzero top-degree alternating form is a 'volume form': it detects whether $n$ vectors span a nondegenerate parallelepiped.
+
 > [!proof]+
-> Proof idea.
+> ($\Rightarrow$) [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-28|9.28]]. ($\Leftarrow$) an independent list of length $n$ is a basis ([[Linear Algebra 2C Dimension#^ladr-2-38|2.38]]); if $\alpha(e)=0$, [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-36|9.36]] would make $\alpha=0$.
 
 *Uses:* [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-28|9.28]], [[Linear Algebra 2C Dimension#^ladr-2-38|2.38]], [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-36|9.36]]
+

@@ -1,0 +1,26 @@
+% Figure from MATH 590 notes, section 3. Compile with the notes preamble.
+\begin{tikzpicture}[scale=0.8]
+    % Axes
+    \draw[->] (-0.5,0) -- (5,0) node[right] {$x$};
+    \draw[->] (0,-0.5) -- (0,4) node[above] {$y$};
+    
+    % Shaded region - full vertical lines for x < c
+    \draw[very thick, blue, dashed] (0.5,-0.3) -- (0.5,3.8);
+    \draw[very thick, blue] (1.5,-0.3) -- (1.5,3.8);
+    \draw[very thick, blue] (2.5,-0.3) -- (2.5,3.8);
+    
+    % Shaded region - vertical line at x=c (lower part)
+    \draw[very thick, blue] (3.5,-0.3) -- (3.5,2.5);
+    \draw[blue, fill=white] (3.5,2.5) circle (2pt);
+    
+    % Point
+    \node[below] at (3.5,0) {$c$};
+    \node[left] at (0,2.5) {$d$};
+    
+    % Label
+    \fill[red] (3.5,2.5) circle (2pt);
+    \node[right] at (3.6,2.5) {\small $c \times d$};
+    
+    % Arrow from infinity
+    \draw[<-, thick, gray] (-0.7,2) -- (-0.2,2);
+\end{tikzpicture}
