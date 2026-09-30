@@ -231,7 +231,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 
 ^pf-17-3
 
-*Uses:* [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^lem-17-5|§17.5]], [[Measure Theory §7 Structure of Open Sets#^prop-7-3|§7.3]], [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-8|Def. §11.8]], [[Outer Regularity of Lebesgue Measure|§11.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[Simple Function Approximation Theorem|§12.14]]
+*Uses:* [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^def-17-2|Def. §17.2]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^lem-17-5|§17.5]], [[Measure Theory §7 Structure of Open Sets#^prop-7-3|§7.3]], [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-8|Def. §11.8]], [[Outer Regularity of Lebesgue Measure|§11.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[Simple Function Approximation Theorem|§12.14]]
 
 ## Fubini's Theorem
 
@@ -366,7 +366,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 
 ^pf-17-9
 
-*Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-3|Def. §9.3]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]]
+*Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-3|Def. §9.3]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-2|Def. §9.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]]
 
 > [!proof]+ Proof of Theorem §17.8 (continued)
 > **Step 3: Conclusion.** By the [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^lem-17-9|lemma]], $F_m^{(1)} \times Z_2$, $Z_1 \times F_k^{(2)}$, and $Z_1 \times Z_2$ all have measure zero (for the last, take $E = Z_2$ or use $Z_1 \times Z_2 \subseteq Z_1 \times [-k,k]^q$ and take $k \to \infty$). Their countable unions also have measure zero. Hence $E_1 \times E_2$ is measurable.
@@ -469,7 +469,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 
 ^pf-17-11
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^prop-12-13|§12.13]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-8|§17.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]], [[Simple Function Approximation Theorem|§12.14]], [[Continuity of Measure|§11.12]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[Tonelli's Theorem|§17.3]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^prop-12-13|§12.13]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-8|§17.8]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]], [[Simple Function Approximation Theorem|§12.14]], [[Continuity of Measure|§11.12]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[Tonelli's Theorem|§17.3]]
 
 > [!remark]- Connections
 > - “Integral = area under the graph” is the MATH 451 picture of the Riemann integral via [[Single Variable Analysis §32 The Definition of the Riemann Integral#^def-32-1|upper and lower sums]]; here it becomes a theorem about Lebesgue measure in $\mathbb{R}^{n+1}$.
@@ -519,7 +519,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 > \text{RHS} = \int_0^{\infty} p\,\lambda^{p-1} \int_E \chi_{\{|f(x)| > \lambda\}}(x)\,dx\,d\lambda.
 > $$
 >
-> Define $F(x, \lambda) = p\,\lambda^{p-1}\,\chi_{\{(x, \lambda)\,:\, x \in E,\; 0 \leq \lambda < |f(x)|\}}$. Then $F$ is non-negative and measurable on $\mathbb{R}^n \times \mathbb{R}$.
+> Define $F(x, \lambda) = p\,\lambda^{p-1}\,\chi_{\{(x, \lambda)\,:\, x \in E,\; 0 \leq \lambda < |f(x)|\}}$. Then $F$ is non-negative and measurable on $\mathbb{R}^n \times \mathbb{R}$ ([[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-11|§17.11]]).
 >
 > By [[Tonelli's Theorem|Tonelli's theorem]] (swapping order of integration):
 >
@@ -534,7 +534,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 
 ^pf-17-13
 
-*Uses:* [[Tonelli's Theorem|§17.3]], [[Riemann Integrable Implies Lebesgue Integrable|§15.10]], [[Fundamental Theorem of Calculus|451 §34.1]]
+*Uses:* [[Tonelli's Theorem|§17.3]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-11|§17.11]], [[Riemann Integrable Implies Lebesgue Integrable|§15.10]], [[Fundamental Theorem of Calculus|451 §34.1]]
 
 > [!remark] Remark: Interpretation
 > When $p = 1$, the formula reduces to:

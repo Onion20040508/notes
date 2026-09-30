@@ -86,13 +86,15 @@ tags: [measure-theory, math551]
 
 ^pf-ex-4-2
 
+*Uses:* [[Measure Theory §4 Uncountability#^ex-4-1|Ex. §4.1]], [[Countable Union of Countable Sets is Countable|§3.1]], [[Measure Theory §1 Countability and Set Theory#^def-1-7|Def. §1.7]]
+
 > [!remark] Remark
 > The representation is not unique. For example, $\frac{1}{2} = 0.1000\ldots = 0.0111\ldots$.
 
 ^rem-4-2
 
 > [!proof]+ Proof (continued)
-> The set $\{\frac{k}{2^n} \mid n \in \mathbb{N}\}$ of dyadic rationals is countable (it's a countable union of finite sets).
+> The set $\{\frac{k}{2^n} \mid n \in \mathbb{N}\}$ of dyadic rationals is countable (it's a [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|countable union of finite sets]]).
 >
 > Let $Y = \{(a_n)_{n=1}^\infty \mid a_n \in \{0,1\}, \text{ and } \exists k \in \mathbb{N} \text{ s.t. } a_n = 0 \text{ for all } n > k\}$. These are sequences that are eventually constantly $0$, corresponding to finite binary representations.
 >
@@ -100,18 +102,16 @@ tags: [measure-theory, math551]
 >
 > There is a bijection from $[0,1] \setminus Y$ to $X \setminus Y$ (where $X$ is the set of all binary sequences). Since:
 > - $Y$ is countable
-> - $X \setminus Y$ is not countable (as $X$ is uncountable)
+> - $X \setminus Y$ is not countable (as $X$ is uncountable, [[Measure Theory §4 Uncountability#^ex-4-1|Ex. §4.1]])
 > - $X$ not countable, $Y$ countable $\Rightarrow$ $X \setminus Y$ not countable
 >
 > Thus $[0,1]$ is uncountable.
 
 ^pf-ex-4-2-c
 
-*Uses:* [[Measure Theory §4 Uncountability#^ex-4-1|Ex. §4.1]], [[Countable Union of Countable Sets is Countable|§3.1]], [[Measure Theory §1 Countability and Set Theory#^def-1-7|Def. §1.7]]
-
 > [!remark]- Connections
 > - MATH 451 states “$\mathbb{R}$ is uncountable” when proving [[Single Variable Analysis §2 The Set ℚ of Rational Numbers#^thm-2-7|Existence of Transcendental Numbers (451 §2.7)]].
-> - The same binary-expansion surjection shows the Cantor set is uncountable: [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-21|Proposition §11.21]].
+> - Expansions in a base (ternary digits mapped to binary ones) show that the Cantor set is uncountable: [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-21|Proposition §11.21]].
 
 ## Power Sets
 

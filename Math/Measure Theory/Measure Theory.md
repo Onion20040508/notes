@@ -85,3 +85,9 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Linear Algebra 1B Definition of Vector Space#^ladr-1-20|1.20 Vector space]] (1)
 
 ## Workhorse examples
+- [[Cantor set and Cantor function]]
+- [[Escaping mass sequences]]
+- [[Power sequence xᵏ]]
+- [[Power singularities 1∕xᵃ]]
+- [[Rationals ℚ]]
+- [[Vitali set]]

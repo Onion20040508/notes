@@ -93,7 +93,7 @@ tags: [measure-theory, math551]
 *Uses:* [[Dominated Convergence Theorem|§15.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-6|§14.6]]
 
 > [!remark]- Connections
-> - Together with [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-1|Theorem §16.1]], these are the two ways an integrable function can be “cut down” (small sets, far-away sets); both are used in [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-2|Theorem §17.2]] (average continuity).
+> - Together with [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-1|Theorem §16.1]], these are the two ways an integrable function can be “cut down” (small sets, far-away sets).
 > - Compare the MATH 451 improper integral on $[a, \infty)$: [[Single Variable Analysis §36 Improper Integrals#^def-36-1|451 Def. §36.1]].
 
 ## The $L^1$ Space
@@ -239,6 +239,7 @@ Recall ([[Measure Theory §12 Measurable Functions#^def-12-7|Definition §12.7]]
 
 > [!remark]- Connections
 > - Continuous functions are closed under uniform limits ([[Single Variable Analysis §24 Uniform Convergence#^thm-24-2|451 §24.2]], [[Measure Theory §12 Measurable Functions#^thm-12-16|§12.16]]), so the density holds only for the weaker $L^1$ distance (cf. [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-4|Rem. §19.4]]).
+> - The $n = 2$ step integrates a product $\varphi(x)\,\chi_{R_2}(y)$ one variable at a time, an instance of [[Tonelli's Theorem]] (§17.3), proved only later; the Riemann analogue is the MATH 452 [[Fubini's Theorem]].
 > - Used for [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-2|Theorem §17.2]] (average continuity); $L^p$ version [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|Theorem §19.19]]. Topology version of compact = closed and bounded: [[Heine–Borel Theorem]] (590 §15.12).
 
 > [!remark] Remark: The Approximation Chain for $L^1$

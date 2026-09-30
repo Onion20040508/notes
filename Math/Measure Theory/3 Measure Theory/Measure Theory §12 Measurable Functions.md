@@ -227,7 +227,17 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 > $$
 >
 > as a countable union of measurable sets.
->
+
+^pf-12-3
+
+*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §12 Measurable Functions#^prop-12-2|§12.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Single Variable Analysis §4 The Completeness Axiom#^thm-4-7|451 §4.7]]
+
+> [!remark] Remark: Logic to Set Theory
+> The proof illustrates a key technique: translate logical statements (“there exists $r$ such that...”) into set-theoretic operations (countable unions).
+
+^rem-12-3
+
+> [!proof]+ Proof of Theorem §12.3 (continued)
 > **(3)** We prove this in two steps.
 >
 > *Step 1: $f$ measurable implies $f^2$ measurable.*
@@ -253,18 +263,13 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 >
 > is measurable by (2) and (1).
 
-^pf-12-3
+^pf-12-3-cont
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §12 Measurable Functions#^prop-12-2|§12.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Single Variable Analysis §4 The Completeness Axiom#^thm-4-7|451 §4.7]]
-
-> [!remark] Remark: Logic to Set Theory
-> The proof illustrates a key technique: translate logical statements (“there exists $r$ such that...”) into set-theoretic operations (countable unions).
-
-^rem-12-3
+*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §12 Measurable Functions#^prop-12-2|§12.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
 
 > [!remark]- Connections
 > - The continuous counterpart: [[Single Variable Analysis §17 Continuous Functions#^thm-17-3|451 Theorem §17.3: Arithmetic of Continuous Functions]].
-> - The same “∃ rational” trick drives [[Measure Theory §12 Measurable Functions#^thm-12-6|Theorem §12.6]] and the set of convergence ([[Measure Theory §12 Measurable Functions#^prop-12-18|Proposition §12.18]]).
+> - The same “∃ ⇒ countable union” translation drives [[Measure Theory §12 Measurable Functions#^thm-12-6|Theorem §12.6]] and the set of convergence ([[Measure Theory §12 Measurable Functions#^prop-12-18|Proposition §12.18]]).
 
 ## Measurability on Subsets and Unions
 
@@ -818,7 +823,7 @@ The following characterization translates the $\epsilon$-$N$ definition of conve
 
 ^pf-12-18
 
-*Uses:* [[Single Variable Analysis §7 Limits of Sequences#^def-7-2|451 Def. §7.2]], [[Archimedean Property|451 Archimedean Property]], [[Measure Theory §12 Measurable Functions#^rem-12-3|Rem. §12.3]]
+*Uses:* [[Single Variable Analysis §7 Limits of Sequences#^def-7-2|451 Def. §7.2]], [[Archimedean Property|451 Archimedean Property]]
 
 > [!definition] Definition §12.10: Set of Convergence and Divergence
 > Define the **set of convergence**:

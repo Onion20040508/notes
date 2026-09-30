@@ -125,7 +125,7 @@ tags: [measure-theory, math551]
 
 ^pf-18-2
 
-*Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Properties of Lebesgue Outer Measure|§9.1]]
+*Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §18 Differentiation Theory#^def-18-1|Def. §18.1]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Properties of Lebesgue Outer Measure|§9.1]]
 
 ![[m551-18-1.svg]]
 *The Vitali covering argument. (a) The set $E$ with many overlapping Vitali intervals $\Gamma$ (blue). (b) Greedy selection produces disjoint $I_1, I_2, I_3$ (green); uncovered points like $x_0$ remain. (c) Each $5\times$ dilation $\hat{I}_j$ (pink) covers the uncovered remainder: any $x_0 \in E \setminus \bigcup I_j$ must land in some $\hat{I}_k$ because the Vitali interval $J \ni x_0$ satisfies $|J| < 2|I_k|$ and $J \cap I_k \neq \emptyset$, forcing $J \subseteq \hat{I}_k$.*
@@ -479,7 +479,7 @@ tags: [measure-theory, math551]
 
 ^pf-18-9
 
-*Uses:* [[Measure Theory §18 Differentiation Theory#^def-18-3|Def. §18.3]], [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §18 Differentiation Theory#^def-18-1|Def. §18.1]], [[Vitali Covering Theorem|§18.2]], [[Properties of Lebesgue Outer Measure|§9.1]]
+*Uses:* [[Measure Theory §18 Differentiation Theory#^def-18-3|Def. §18.3]], [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §18 Differentiation Theory#^def-18-1|Def. §18.1]], [[Vitali Covering Theorem|§18.2]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
 
 > [!proof]+ Proof of (iii): The Integral Inequality
 > Extend $f$ by setting $f(x) = f(b)$ for $x > b$. Define the difference quotients:
@@ -521,7 +521,7 @@ tags: [measure-theory, math551]
 
 ^pf-18-9-2
 
-*Uses:* [[Fatou's Lemma|§14.15]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-1|§17.1]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[Measure Theory §12 Measurable Functions#^ex-12-1|Ex. §12.1]]
+*Uses:* [[Fatou's Lemma|§14.15]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-1|§17.1]], [[Measure Theory §15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[Measure Theory §15 The General Lebesgue Integral#^thm-15-4|§15.4]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[Measure Theory §12 Measurable Functions#^ex-12-1|Ex. §12.1]]
 
 > [!proof]+ Proof of (ii): Integrability of $f'$
 > Since $f$ is increasing, $f' \geq 0$ wherever it exists. The integral inequality (iii) gives $\int_a^b f'\,dx \leq f(b) - f(a) < \infty$, so $f' \in L([a, b])$. In particular, $f'$ is finite a.e. ([[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-10|integrability implies a.e. finiteness]]).
@@ -531,7 +531,7 @@ tags: [measure-theory, math551]
 *Uses:* [[Measure Theory §15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-10|§14.10]]
 
 > [!remark]- Connections
-> - Compare the MATH 451 [[Fundamental Theorem of Calculus]] (FTC I, 451 §34.1): for $f$ differentiable on $(a,b)$ with Riemann-integrable $f'$, equality holds in (iii). The Cantor function shows why only $\leq$ survives here.
+> - Compare the MATH 451 [[Fundamental Theorem of Calculus]] (FTC I, 451 §34.1): for $f$ continuous on $[a,b]$, differentiable on $(a,b)$, with Riemann-integrable $f'$, equality holds in (iii). The Cantor function shows why only $\leq$ survives here.
 > - Monotone functions were already Riemann integrable ([[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-1|451 §33.1]]); the new information is about $f'$.
 
 > [!theorem] Corollary §18.10: BV Functions are Differentiable A.E.
@@ -564,7 +564,7 @@ tags: [measure-theory, math551]
 ^rem-18-5
 
 > [!remark]- Connections
-> - ($*$) is FTC I of MATH 451 ([[Fundamental Theorem of Calculus|451 §34.1]]), which assumes $f$ differentiable everywhere on $(a,b)$ with Riemann-integrable $f'$.
+> - ($*$) is FTC I of MATH 451 ([[Fundamental Theorem of Calculus|451 §34.1]]), which assumes $f$ continuous on $[a,b]$ and differentiable everywhere on $(a,b)$ with Riemann-integrable $f'$.
 
 > [!example] Example §18.4: The Cantor Function (Devil's Staircase)
 > The **Cantor set** $C \subseteq [0, 1]$ ([[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-13|Def. §11.13]]) is obtained by repeatedly removing middle thirds: $C = \bigcap_{n=0}^{\infty} C_n$ where $C_0 = [0,1]$, $C_1 = [0, 1/3] \cup [2/3, 1]$, etc. The set $C$ is closed, uncountable, and has $m(C) = 0$ ([[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-21|§11.21]]).
@@ -668,10 +668,10 @@ tags: [measure-theory, math551]
 
 ^pf-18-12
 
-*Uses:* [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-1|§16.1]], [[Measure Theory §18 Differentiation Theory#^def-18-4|Def. §18.4]], [[Measure Theory §15 The General Lebesgue Integral#^thm-15-4|§15.4]]
+*Uses:* [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-1|§16.1]], [[Measure Theory §18 Differentiation Theory#^def-18-4|Def. §18.4]], [[Measure Theory §15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[Measure Theory §15 The General Lebesgue Integral#^thm-15-4|§15.4]]
 
 > [!remark]- Connections
-> - MATH 451 counterpart: in FTC II ([[Fundamental Theorem of Calculus|451 §34.4]]) the integral function of a bounded integrable $f$ is uniformly continuous (in fact Lipschitz).
+> - MATH 451 counterpart: in FTC II ([[Single Variable Analysis §34 Fundamental Theorem of Calculus#^thm-34-4|451 §34.4]]) the integral function of a bounded integrable $f$ is uniformly continuous (in fact Lipschitz).
 
 ## The Fundamental Theorem of Calculus for Lebesgue Integrals
 
@@ -689,7 +689,7 @@ tags: [measure-theory, math551]
 >
 > Define $F(x) = f(x) - f(a) - \int_a^x f'(t)\,dt$. Since $f \in AC([a, b])$ and $\int_a^x f'(t)\,dt \in AC([a, b])$ (by the theorem above: integral functions are AC), and $AC$ is closed under linear combinations (property (ii)), we have $F \in AC([a, b])$.
 >
-> Moreover, $F'(x) = f'(x) - f'(x) = 0$ a.e. on $(a, b)$ (using the fact that $(\int_a^x f'\,dt)' = f'(x)$ a.e., proved in a later subsection, [[Measure Theory §18 Differentiation Theory#^thm-18-26|§18.26]]).
+> Moreover, $F'(x) = f'(x) - f'(x) = 0$ a.e. on $(a, b)$ (using the fact that $(\int_a^x f'\,dt)' = f'(x)$ a.e., proved in the next subsection; [[Measure Theory §18 Differentiation Theory#^thm-18-26|§18.26]]).
 >
 > By the lemma on non-constant functions with zero derivative ([[Measure Theory §18 Differentiation Theory#^thm-18-27|Theorem §18.27]]), if $F$ were not constant, then $F$ would not be absolutely continuous. But $F \in AC([a, b])$, so $F$ must be constant. Since $F(a) = f(a) - f(a) - 0 = 0$, we conclude $F(x) = 0$ for all $x \in [a, b]$, i.e.:
 >
@@ -702,7 +702,7 @@ tags: [measure-theory, math551]
 *Uses:* [[Measure Theory §18 Differentiation Theory#^thm-18-12|§18.12]], [[Measure Theory §18 Differentiation Theory#^prop-18-11|§18.11]], [[Measure Theory §18 Differentiation Theory#^thm-18-16|§18.16]], [[Measure Theory §18 Differentiation Theory#^cor-18-10|§18.10]], [[Measure Theory §18 Differentiation Theory#^thm-18-26|§18.26]], [[Measure Theory §18 Differentiation Theory#^thm-18-27|§18.27]]
 
 > [!remark]- Connections
-> - MATH 451 versions: [[Fundamental Theorem of Calculus]] (FTC I, 451 §34.1: $f$ differentiable with Riemann-integrable $f'$; FTC II, 451 §34.4: the integral function).
+> - MATH 451 versions: [[Fundamental Theorem of Calculus]] (FTC I, 451 §34.1: $f$ continuous, differentiable on $(a,b)$, with Riemann-integrable $f'$; FTC II, 451 §34.4: the integral function).
 > - The step “$F' = 0$ a.e. and AC ⟹ constant” replaces the 451 [[Single Variable Analysis §29 The Mean Value Theorem#^cor-29-4|Vanishing Derivative Means Constant]] (451 §29.4), which needs $F' = 0$ everywhere.
 
 > [!theorem] Corollary §18.14: Term-by-Term Differentiation of AC Series
@@ -848,7 +848,7 @@ tags: [measure-theory, math551]
 ^thm-18-19
 
 > [!proof]+ Proof
-> Since $f \in AC([a, b])$, by the [[Fundamental Theorem of Calculus for Lebesgue Integrals|FTC]], $f' \in L([a, b])$ and $f(x) = f(a) + \int_a^x f'(t)\,dt$. By [[Measure Theory §18 Differentiation Theory#^lem-18-17|the first lemma]], $f$ is AC on any $[c, d] \subseteq [a, b]$, so $f(x) = f(c) + \int_c^x f'(t)\,dt$ on $[c, d]$. Applying the total variation formula for integral functions ([[Measure Theory §18 Differentiation Theory#^thm-18-8|subsection 18.4]]) to $f' \in L([c, d])$:
+> Since $f \in AC([a, b])$, by the [[Fundamental Theorem of Calculus for Lebesgue Integrals|FTC]], $f' \in L([a, b])$ and $f(x) = f(a) + \int_a^x f'(t)\,dt$. By [[Measure Theory §18 Differentiation Theory#^lem-18-17|the first lemma]], $f$ is AC on any $[c, d] \subseteq [a, b]$, so $f(x) = f(c) + \int_c^x f'(t)\,dt$ on $[c, d]$. Applying the total variation formula for integral functions ([[Measure Theory §18 Differentiation Theory#^thm-18-8|§18.8]]) to $f' \in L([c, d])$:
 >
 > $$
 > \bigvee_c^d(f) = \bigvee_c^d\!\left(f(c) + \int_c^x f'(t)\,dt\right) = \bigvee_c^d\!\left(\int_c^x f'(t)\,dt\right) = \int_c^d |f'(t)|\,dt,
@@ -899,7 +899,7 @@ tags: [measure-theory, math551]
 
 ^pf-18-20
 
-*Uses:* [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Heine–Borel Theorem|590 §15.12]], [[Compact Subspace of a Hausdorff Space is Closed|590 §15.4]]
+*Uses:* [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Heine–Borel Theorem|590 §15.12]]
 
 > [!theorem] Theorem §18.21: Continuous Maps Preserving Null Sets Preserve Measurability
 > Let $T: \mathbb{R}^n \to \mathbb{R}^n$ be a continuous map. Assume $T$ maps measure-zero sets to measure-zero sets: $m^*(Z) = 0 \implies m^*(T(Z)) = 0$. Then for every $E \in \mathcal{M}(\mathbb{R}^n)$, we have $T(E) \in \mathcal{M}(\mathbb{R}^n)$.
@@ -1031,7 +1031,7 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 
 ^pf-18-25
 
-*Uses:* [[Tonelli's Theorem|§17.3]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-1|§17.1]], [[Measure Theory §16 The L¹ Space and Density Theorems#^def-16-1|Def. §16.1]], [[Measure Theory §18 Differentiation Theory#^prop-18-24|§18.24]], [[Measure Theory §12 Measurable Functions#^thm-12-3|§12.3]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-2|§17.2]]
+*Uses:* [[Tonelli's Theorem|§17.3]], [[Measure Theory §15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-1|§17.1]], [[Measure Theory §16 The L¹ Space and Density Theorems#^def-16-1|Def. §16.1]], [[Measure Theory §18 Differentiation Theory#^prop-18-24|§18.24]], [[Measure Theory §12 Measurable Functions#^thm-12-3|§12.3]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-2|§17.2]]
 
 > [!theorem] Theorem §18.26: Differentiation of the Integral
 > Let $f \in L(\mathbb{R})$. Define $F(x) = \int_a^x f(t)\,dt$. Then $F$ is differentiable a.e. and $F'(x) = f(x)$ a.e.
@@ -1056,7 +1056,7 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 *Uses:* [[Measure Theory §18 Differentiation Theory#^lem-18-25|§18.25]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-17|§19.17]], [[Measure Theory §18 Differentiation Theory#^thm-18-8|§18.8]], [[Lebesgue's Differentiation Theorem for Monotone Functions|§18.9]], [[Measure Theory §18 Differentiation Theory#^cor-18-10|§18.10]]
 
 > [!remark]- Connections
-> - MATH 451 counterpart: FTC II ([[Fundamental Theorem of Calculus|451 §34.4]]) gives $F'(x_0) = f(x_0)$ at every point where $f$ is continuous; here continuity is dropped at the cost of “a.e.”.
+> - MATH 451 counterpart: FTC II ([[Single Variable Analysis §34 Fundamental Theorem of Calculus#^thm-34-4|451 §34.4]]) gives $F'(x_0) = f(x_0)$ at every point where $f$ is continuous; here continuity is dropped at the cost of “a.e.”.
 > - Completes the proof of [[Fundamental Theorem of Calculus for Lebesgue Integrals|the FTC for Lebesgue integrals]] (§18.13).
 
 > [!definition] Definition §18.5: Lebesgue Point
@@ -1133,7 +1133,7 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 
 ^pf-18-27
 
-*Uses:* [[Measure Theory §18 Differentiation Theory#^def-18-1|Def. §18.1]], [[Vitali Covering Theorem|§18.2]], [[Measure Theory §18 Differentiation Theory#^def-18-4|Def. §18.4]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|§9.2]]
+*Uses:* [[Measure Theory §18 Differentiation Theory#^def-18-1|Def. §18.1]], [[Vitali Covering Theorem|§18.2]], [[Measure Theory §18 Differentiation Theory#^def-18-4|Def. §18.4]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Properties of Lebesgue Outer Measure|§9.1]]
 
 > [!remark]- Connections
 > - MATH 451 counterpart: [[Single Variable Analysis §29 The Mean Value Theorem#^cor-29-4|Vanishing Derivative Means Constant]] (451 §29.4), proved with the [[Mean Value Theorem]] when $f' = 0$ *everywhere*; the [[Measure Theory §18 Differentiation Theory#^ex-18-4|Cantor function]] shows “a.e.” needs the extra AC hypothesis.

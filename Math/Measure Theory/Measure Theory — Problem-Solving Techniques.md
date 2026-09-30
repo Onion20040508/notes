@@ -22,10 +22,13 @@ Many problems about the “size” of a set reduce to showing it is a subset of,
 ^rem-19-5
 
 > [!example] Example §19.8: Applications (HW1)
-> - **Finite binary sequences**: $E = \bigcup_{k=1}^\infty \{0,1\}^k \subseteq \bigcup_{k=1}^\infty \mathbb{N}^k$, which is countable by induction + countable union. (Contrast: *infinite* binary sequences are uncountable, [[Measure Theory §4 Uncountability#^ex-4-1|Example §4.1]].)
+> - **Finite binary sequences**: $E = \bigcup_{k=1}^\infty \{0,1\}^k \subseteq \bigcup_{k=1}^\infty \mathbb{N}^k$, which is countable by induction + countable union.
 > - **Rational balls**: $\mathcal{B} = \{B(r, 1/k)\}$ is in bijection with $\mathbb{Q}^n \times \mathbb{N}$, which is countable by the product rule ([[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^lem-6-2|Lemma §6.2]]; $\mathbb{Q}$ countable by [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2]]).
 
 ^ex-19-8
+
+> [!remark]- Connections
+> - Contrast: infinite binary sequences are uncountable, [[Measure Theory §4 Uncountability#^ex-4-1|Example §4.1]].
 
 ## Technique 2: The Cantor–Bernstein Squeeze
 
@@ -169,7 +172,7 @@ The [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-12|Vitali set]] 
 
 > [!remark] Remark: Strategy
 > - (i) **Extending to infinite measure**: $A_2 = (-\infty, 0) \cup V$ has $m^*(A_2) = \infty$ but is non-measurable. This exploits the fact that $\infty = \infty$ gives no information.
-> - (ii) **Indicator function trick**: $\chi_V$ is non-measurable since $\{\chi_V > 1/2\} = V$ ([[Measure Theory §12 Measurable Functions#^prop-12-1|Proposition §12.1]]). This builds non-measurable *functions* from non-measurable sets.
+> - (ii) **Indicator function trick**: $\chi_V$ is non-measurable since $\{\chi_V > 1/2\} = V$ ([[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]]). This builds non-measurable *functions* from non-measurable sets.
 > - (iii) **Uncountable supremum**: Index singletons of $V$ by $\alpha$, let $f_\alpha = \chi_{\{x_\alpha\}}$ (each measurable). Then $\sup_\alpha f_\alpha = \chi_V$ is non-measurable.
 
 ^rem-19-13
@@ -370,7 +373,7 @@ To show a composition $g \circ f$ is [[Measure Theory §18 Differentiation Theor
 ^ex-19-26
 
 > [!remark]- Connections
-> - The same $\varepsilon$–$\delta$ chaining with uniform continuity in place of AC: [[Measure Theory §18 Differentiation Theory#^rem-18-7|Remark §18]] compares the two conditions.
+> - AC compared with uniform continuity: [[Measure Theory §18 Differentiation Theory#^rem-18-7|Remark §18]].
 
 ## Technique 21: FTC + MCT for Series of Monotone AC Functions
 

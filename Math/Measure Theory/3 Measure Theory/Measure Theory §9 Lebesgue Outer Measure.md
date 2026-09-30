@@ -9,7 +9,7 @@ tags: [measure-theory, math551]
 
 ## The Lebesgue Idea
 
-In Riemann integration ([[Measure Theory §8 Motivation꞉ The Riemann Integral#^def-8-2|§8]]; [[Single Variable Analysis §32 The Definition of the Riemann Integral#^def-32-1|451 §32]]), we partition the *domain* (the $x$-axis). Lebesgue's key insight was to instead partition the *range* (the $y$-axis).
+In Riemann integration ([[Measure Theory §8 Motivation꞉ The Riemann Integral|§8]]; [[Single Variable Analysis §32 The Definition of the Riemann Integral|451 §32]]), we partition the *domain* (the $x$-axis). Lebesgue's key insight was to instead partition the *range* (the $y$-axis).
 
 Given a function $f: [a,b] \to \mathbb{R}$, partition $-\infty < y_1 < y_2 < \cdots < y_r < +\infty$ and consider the sets $S_j = \{x \mid x \in [a,b], y_j < f(x) \leq y_{j+1}\}$.
 
@@ -210,14 +210,14 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 ^pf-9-2
 
-*Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]], [[Heine–Borel Theorem|590 §15.12]]
+*Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]]
 
 > [!remark]- Connections
 > - Topology version of the compactness step: [[Heine–Borel Theorem]].
-> - MATH 452 counterpart: rectangles are Jordan measurable with the expected area, [[Multivariable Analysis §15 Multivariable Integration#^def-15-5|452 Def. §15.5]].
+> - MATH 452 counterpart: [[Multivariable Analysis §15 Multivariable Integration#^def-15-5|Jordan content (452 Def. §15.5)]], built from rectangles whose area is defined by hand ([[Multivariable Analysis §15 Multivariable Integration#^def-15-1|452 Def. §15.1]]).
 
 > [!remark] Remark
-> The lower bound argument uses [[Heine–Borel Theorem|Heine–Borel]] crucially. The claim that a finite union of open rectangles covering $\bar{I}$ has total volume $\geq |\bar{I}|$ requires additional justification (which we omit here).
+> The lower bound argument uses [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]] crucially. The claim that a finite union of open rectangles covering $\bar{I}$ has total volume $\geq |\bar{I}|$ requires additional justification (which we omit here).
 
 ^rem-9-2
 

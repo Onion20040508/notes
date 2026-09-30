@@ -1,0 +1,16 @@
+---
+subject: math
+type: example
+source: "[[Measure Theory]]"
+tags: ["math551", "workhorse"]
+---
+The sequence $f_k(x) = x^k$ on $[0,1]$, converging pointwise to the indicator of $\{1\}$. In MATH 451 it is the basic example of pointwise but not uniform convergence ([[Single Variable Analysis §24 Uniform Convergence#^ex-24-2|451 Ex. §24.2]]); here the non-uniformity is confined to a neighbourhood of the single point $x = 1$, so deleting an interval of length $\delta$ restores uniform convergence, which is exactly what Egorov's theorem promises in general. Its uses in MATH 551:
+
+- Pointwise but not uniform convergence ([[Measure Theory §12 Measurable Functions#^ex-12-4|§12]])
+- Uniform on $[0, 1-\delta]$: an illustration of Egorov's theorem ([[Measure Theory §13 Egorov's and Lusin's Theorems#^ex-13-1|§13]])
+
+## Pointwise but not uniform convergence
+![[Measure Theory §12 Measurable Functions#^ex-12-4]]
+
+## Uniform on $[0, 1-\delta]$: an illustration of Egorov's theorem
+![[Measure Theory §13 Egorov's and Lusin's Theorems#^ex-13-1]]

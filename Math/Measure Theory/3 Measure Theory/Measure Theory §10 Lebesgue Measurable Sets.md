@@ -276,7 +276,7 @@ The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^de
 
 ^pf-10-3
 
-*Uses:* [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|§10.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-1|§10.1]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-4|Def. §10.4]]
+*Uses:* [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|§10.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-1|§10.1]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-1|Def. §10.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^rem-10-1|Rem. §10.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-4|Def. §10.4]]
 
 > [!remark]- Connections
 > - The same argument, for an arbitrary outer measure: [[Carathéodory's Theorem|Carathéodory's Theorem]] (§11.2).

@@ -192,7 +192,7 @@ class Scene:
                 self.text_dir(p1, labels[k], self.P(p1) - self.P(o), dist=2.0, size=size, color=color)
 
 
-def render(scenes, fname, scale=INCH_PER_UNIT, pad=0.02, extra=None):
+def render(scenes, fname, scale=INCH_PER_UNIT, pad=0.02):
     items = [it for sc in scenes for it in sc.items]
     items.sort(key=lambda it: (it['layer'], it['d']))
     allv = np.concatenate([it['v'] for it in items])
@@ -228,7 +228,6 @@ def render(scenes, fname, scale=INCH_PER_UNIT, pad=0.02, extra=None):
             ax.annotate(t['s'], xy=t['xy'], xytext=t['off'], textcoords='offset points',
                         ha=t['ha'], va=t['va'], color=t['color'], fontsize=t['size'],
                         annotation_clip=False, zorder=10000, path_effects=pe)
-    if extra: extra(fig, ax)
     fig.savefig(os.path.join(OUT, fname), bbox_inches='tight', pad_inches=pad)
     plt.close(fig)
     print('wrote', fname)
@@ -277,7 +276,7 @@ def fig_4_1():
     sc.dot(P0, BLACK, r=0.038, layer=1)
     sc.dot((x0, y0, 0), BLACK, r=0.032, layer=1)
     # labels
-    sc.text_dir((x0, y0, 0), '$(x_0,y_0)$', (-1, 0.25), dist=3, size=FS_S)
+    sc.text_dir((x0, y0, 0), '$(x_0,y_0)$', (-0.3, -1), dist=7, size=FS_S)
     sc.text_dir(P0 + tx, 'slope $f_x$', (-1, -0.2), dist=2.5, color=figR, size=FS_S, halo=True)
     sc.text_dir(P0 + ty, 'slope $f_y$', (0.35, 1), dist=2.0, color=figG, size=FS_S, halo=True)
     sc.text_dir((xb, y0, fgraph(xb, y0)), '$f(x,y_0)$', (-1, -0.2), dist=3, color=figR, size=FS_S, halo=True)
@@ -330,9 +329,9 @@ def fig_14_1():
     scenes = []
     for k, (fun, t1, t2) in enumerate(specs):
         sc = Scene(32, 35)
-        r, th = np.meshgrid(np.linspace(0, 1, 25), np.linspace(0, 2*np.pi, 73), indexing='ij')
+        r, th = np.meshgrid(np.linspace(0, 1, 17), np.linspace(0, 2*np.pi, 49), indexing='ij')
         X, Y = r*np.cos(th), r*np.sin(th)
-        sc.surface(X, Y, fun(X, Y), figB, mesh=(6, 6), edge_lw=0.8, lo=0.10, hi=0.40,
+        sc.surface(X, Y, fun(X, Y), figB, mesh=(4, 4), edge_lw=0.8, lo=0.10, hi=0.40,
                    edges=(False, True, False, False))
         sc.dot((0, 0, fun(0, 0)), figR, r=0.065, bias=0.1)
         lo, hi = sc.bounds()
@@ -351,6 +350,8 @@ def darboux_f(x, y):
 def _box(sc, xa, xb, ya, yb, h, fcol, ecol, lo, hi, n=6, glass=False):
     """Axis-parallel box [xa,xb]x[ya,yb]x[0,h]. Opaque: subdivided faces (painter-safe).
     glass: only viewer-facing faces, translucent, on top."""
+    e = 0.006   # tiny inset so walls of neighbouring boxes never coincide (no z-fighting specks)
+    xa, xb, ya, yb = xa + e, xb - e, ya + e, yb - e
     faces = [  # (corner, du, dv, outward normal)
         ((xa, ya, h), (xb-xa, 0, 0), (0, yb-ya, 0), (0, 0, 1)),
         ((xa, ya, 0), (xb-xa, 0, 0), (0, yb-ya, 0), (0, 0, -1)),
@@ -370,7 +371,7 @@ def _box(sc, xa, xb, ya, yb, h, fcol, ecol, lo, hi, n=6, glass=False):
                 sc.line([a, b], ecol, lw=0.5, layer=2, split=False)
             continue
         if not front: continue
-        m = max(2, int(np.ceil(max(np.linalg.norm(du), np.linalg.norm(dv)) / 0.09)))
+        m = max(2, int(np.ceil(max(np.linalg.norm(du), np.linalg.norm(dv)) / 0.12)))
         for i in range(m):
             for j in range(m):
                 p = c + du*i/m + dv*j/m
@@ -382,7 +383,7 @@ def fig_15_1():
     xa, xb, ya, yb = 0.35, 2.75, 0.35, 2.55
     nx, ny = 3, 3
     xs, ys = np.linspace(xa, xb, nx + 1), np.linspace(ya, yb, ny + 1)
-    gx, gy = np.meshgrid(np.linspace(xa, xb, 49), np.linspace(ya, yb, 45), indexing='ij')
+    gx, gy = np.meshgrid(np.linspace(xa, xb, 37), np.linspace(ya, yb, 34), indexing='ij')
     gz = darboux_f(gx, gy)
     scenes = []
     for k, mode in enumerate(('lower', 'upper')):
@@ -401,9 +402,9 @@ def fig_15_1():
                     _box(sc, xs[i], xs[i+1], ys[j], ys[j+1], vals.max(), figR, figR, 0.10, 0.30, glass=True)
         if mode == 'lower':
             # surface above inscribed boxes: wireframe only, so the boxes stay visible
-            for i in range(0, gx.shape[0], 4):
+            for i in range(0, gx.shape[0], 3):
                 sc.line(np.c_[gx[i], gy[i], gz[i]], figB, lw=0.45, bias=0.01)
-            for j in range(0, gx.shape[1], 4):
+            for j in range(0, gx.shape[1], 3):
                 sc.line(np.c_[gx[:, j], gy[:, j], gz[:, j]], figB, lw=0.45, bias=0.01)
             for b in (0, -1):
                 sc.line(np.c_[gx[b], gy[b], gz[b]], figB, lw=0.9, bias=0.012)
@@ -411,7 +412,7 @@ def fig_15_1():
             sc.text_dir((xb, ya, darboux_f(xb, ya)), '$z=f(x,y)$', (-1, 0.4), dist=2.5, color=figB, size=FS_S)
             lab = r'$L(f,\mathcal{T})=\sum m_i\,|D_i|$'
         else:
-            sc.surface(gx, gy, gz, figB, mesh=(4, 4), edge_lw=0.8, lo=0.14, hi=0.45)
+            sc.surface(gx, gy, gz, figB, mesh=(3, 3), edge_lw=0.8, lo=0.14, hi=0.45)
             lab = r'$U(f,\mathcal{T})=\sum M_i\,|D_i|$'
         allp = np.stack([gx, gy, np.zeros_like(gx)], -1).reshape(-1, 3)
         p2 = sc.P(allp) - sc.off
@@ -519,7 +520,6 @@ def fig_18_1():
     sc.text_dir(P0 + B, r'$\mathbf{X}_v\Delta v$', (-1, 0.3), dist=2, color=figG, size=FS_S, halo=True)
     sc.text_dir(S(U1, V1), r'$S=\mathbf{X}(D)$', (1, -0.25), dist=3, color=figB, size=FS)
     # map arrow between the panels
-    lo, hi = sc.bounds()
     xl = Q(U1, 0)[0] + 0.45; y_mid = Q(0, (V0 + V1)/2)[1] + 0.25
     xr = min(sc.P(Pts.reshape(-1, 3))[:, 0]) - 0.1
     A0, A1 = np.array([xl, y_mid]), np.array([xr, y_mid])
@@ -612,72 +612,95 @@ def fig_19_1():
 
 # ================ §19 Fig. 2: spherical volume element ================
 def fig_19_2():
-    sc = Scene(20, 30)
-    r0, r1 = 1.75, 2.15
-    t0, t1 = np.radians(40), np.radians(64)      # theta (polar)
-    p0, p1 = np.radians(24), np.radians(52)      # psi (azimuth)
-    sc.axes((2.9, 2.85, 2.65))
-    # octant of the sphere r = r0 (light) with the coordinate curves bounding the cell
-    TT, PP = np.meshgrid(np.linspace(0.02, np.pi/2, 36), np.linspace(0, np.pi/2, 36), indexing='ij')
+    sc = Scene(18, 16)
+    r0, r1 = 1.6, 2.1
+    t0, t1 = np.radians(34), np.radians(58)      # theta (polar, from the z-axis)
+    p0, p1 = np.radians(50), np.radians(76)      # psi (azimuth)
+    sc.axes((2.6, 2.75, 2.55))
+    # octant of the sphere r = r0 (light) with the coordinate curves through the cell's edges
+    TT, PP = np.meshgrid(np.linspace(0.0, np.pi/2, 37), np.linspace(0, np.pi/2, 37), indexing='ij')
     Sp = sph(r0, TT, PP)
-    sc.surface(Sp[..., 0], Sp[..., 1], Sp[..., 2], figB, lo=0.05, hi=0.20, edge_color=mix(figB, 0.6), edge_lw=0.5)
+    sc.surface(Sp[..., 0], Sp[..., 1], Sp[..., 2], figB, lo=0.05, hi=0.20, edge_color=mix(figB, 0.6), edge_lw=0.5,
+               silhouette=False)
     tr = np.linspace(0.0, np.pi/2, 60); pr = np.linspace(0, np.pi/2, 60)
-    for p in (p0, p1): sc.line(sph(r0, tr, p), mix(figB, 0.75), lw=0.5, bias=0.01)
-    for t in (t0, t1): sc.line(sph(r0, t, pr), mix(figB, 0.75), lw=0.5, bias=0.01)
-    # the brick: six faces
+    for p in (p0, p1): sc.line(sph(r0, tr, p), mix(figB, 0.7), lw=0.5, bias=0.06)
+    for t in (t0, t1): sc.line(sph(r0, t, pr), mix(figB, 0.7), lw=0.5, bias=0.06)
+    # the brick: six curved faces
     n = 10
     def face(F, col):
         for i in range(F.shape[0] - 1):
             for j in range(F.shape[1] - 1):
                 q = [F[i, j], F[i+1, j], F[i+1, j+1], F[i, j+1]]
                 nr = np.cross(F[i+1, j+1] - F[i, j], F[i, j+1] - F[i+1, j])
-                sc.fill(q, sc.shade(nr, col, 0.18, 0.42))
+                sc.fill(q, sc.shade(nr, col, 0.16, 0.42))
     T, Pp = np.meshgrid(np.linspace(t0, t1, n), np.linspace(p0, p1, n), indexing='ij')
-    Rr, T2 = np.meshgrid(np.linspace(r0, r1, 5), np.linspace(t0, t1, n), indexing='ij')
-    Rr3, P3 = np.meshgrid(np.linspace(r0, r1, 5), np.linspace(p0, p1, n), indexing='ij')
+    Rr, T2 = np.meshgrid(np.linspace(r0, r1, 6), np.linspace(t0, t1, n), indexing='ij')
+    Rr3, P3 = np.meshgrid(np.linspace(r0, r1, 6), np.linspace(p0, p1, n), indexing='ij')
     for F in (sph(r1, T, Pp), sph(r0, T, Pp), sph(Rr, T2, p0), sph(Rr, T2, p1), sph(Rr3, t0, P3), sph(Rr3, t1, P3)):
         face(F, figR)
     s = np.linspace(0, 1, 20)
     for (t, p) in [(t0, p0), (t0, p1), (t1, p0), (t1, p1)]:
-        sc.line(sph(r0 + s*(r1 - r0), t, p), figR, lw=0.8, bias=0.01)
+        sc.line(sph(r0 + s*(r1 - r0), t, p), figR, lw=0.8, bias=0.05)
     for (r, p) in [(r0, p0), (r0, p1), (r1, p0), (r1, p1)]:
-        sc.line(sph(r, t0 + s*(t1 - t0), p), figR, lw=0.8, bias=0.01)
+        sc.line(sph(r, t0 + s*(t1 - t0), p), figR, lw=0.8, bias=0.05)
     for (r, t) in [(r0, t0), (r0, t1), (r1, t0), (r1, t1)]:
-        sc.line(sph(r, t, p0 + s*(p1 - p0)), figR, lw=0.8, bias=0.01)
-    # radial guide from the origin (hidden-line convention)
-    sc.line([(0, 0, 0), sph(r0, t0, p1)], grey(0.5), lw=0.5, ls=(0, (3, 1.5)), layer=1)
+        sc.line(sph(r, t, p0 + s*(p1 - p0)), figR, lw=0.8, bias=0.05)
     # edge labels, each just outside the midpoint of a visible edge
     ctr = sc.P(sph((r0 + r1)/2, (t0 + t1)/2, (p0 + p1)/2))
-    def elab(pm, pa, pb, s_, **kw):
+    def elab(pa, pb, s_):
+        pm = (pa + pb)/2
         m2 = sc.P(pm); dd = sc.P(pb) - sc.P(pa); nr = np.array([-dd[1], dd[0]])
         if nr @ (m2 - ctr) < 0: nr = -nr
-        sc.text_dir(pm, s_, nr, dist=2.5, color=figR, size=FS_S, halo=True, **kw)
-    elab(sph((r0 + r1)/2, t1, p1), sph(r0, t1, p1), sph(r1, t1, p1), '$dr$')
-    elab(sph(r1, (t0 + t1)/2, p1), sph(r1, t0, p1), sph(r1, t1, p1), r'$r\,d\theta$')
-    elab(sph(r1, t1, (p0 + p1)/2), sph(r1, t1, p0), sph(r1, t1, p1), r'$r\sin\theta\,d\psi$')
-    render([sc], 'm452-19-2.svg', extra=None)
-    return sc
+        sc.text_dir(pm, s_, nr, dist=2.0, color=figR, size=FS_S, halo=True)
+    elab(sph(r0, t1, p0), sph(r1, t1, p0), '$dr$')
+    elab(sph(r1, t0, p1), sph(r1, t1, p1), r'$r\,d\theta$')
+    elab(sph(r1, t0, p0), sph(r1, t0, p1), r'$r\,\sin\theta\,d\psi$')
+    # the volume element, set just below the picture
+    lo, hi = sc.bounds()
+    sc.text(np.array([(lo[0] + hi[0])/2, lo[1] - 0.05]) - sc.off, r'$dV=r^2\,\sin\theta\;dr\,d\theta\,d\psi$',
+            ha='center', va='top', size=FS, raw2d=True)
+    render([sc], 'm452-19-2.svg')
 
 
 # ================ §20 Fig. 1: Stokes' theorem ================
 def fig_20_1():
     sc = Scene(26, -62)
+    ax_, ay_ = 1.35, 1.10
     def cap(rho, t):
-        return np.stack(np.broadcast_arrays(1.35*rho*np.cos(t), 1.10*rho*np.sin(t),
+        return np.stack(np.broadcast_arrays(ax_*rho*np.cos(t), ay_*rho*np.sin(t),
                                             0.85*(1 - rho**2) + 0.10*rho*np.sin(2*t)), -1)
+    def above_cap(p):   # is the point p below the cap surface (inside the dome)?
+        x, y, z = p
+        rho = np.hypot(x/ax_, y/ay_)
+        if rho >= 1: return False
+        t = np.arctan2(y/ay_, x/ax_)
+        return z < 0.85*(1 - rho**2) + 0.10*rho*np.sin(2*t) - 1e-6
+    def visible(p):     # march toward the viewer; hidden if the ray passes under the cap
+        return not any(above_cap(p + s*sc.d) for s in np.linspace(0.03, 3.0, 120))
     rr, tt = np.meshgrid(np.linspace(0, 1, 21), np.linspace(0, 2*np.pi, 73), indexing='ij')
     C = cap(rr, tt)
     sc.surface(C[..., 0], C[..., 1], C[..., 2], figB, mesh=(5, 6), edge_lw=0)
-    # rim: solid where visible (painter), dashed overlay shows the hidden back half
-    t = np.linspace(0, 2*np.pi, 241)
+    # rim: solid where visible, thin dashed where hidden behind the cap
+    t = np.linspace(0, 2*np.pi, 361)
     rim = cap(1.0, t)
-    sc.line(rim, figG, lw=1.4, bias=0.02)
-    sc.line(rim, mix(figG, 0.8), lw=0.6, ls=(0, (3, 2)), layer=-1, split=False)
-    # orientation arrows on the front of the rim: counterclockwise seen from above (n up)
-    for tp in (np.radians(250), np.radians(330), np.radians(170)):
+    vis = np.array([visible(p) for p in rim])
+    for k in range(len(t) - 1):
+        if vis[k] and vis[k+1]:
+            sc.line(rim[k:k+2], figG, lw=1.4, layer=1)
+    hid = [k for k in range(len(t) - 1) if not (vis[k] and vis[k+1])]
+    if hid:   # contiguous hidden run(s) -> dashed polylines
+        runs, cur = [], [hid[0]]
+        for k in hid[1:]:
+            if k == cur[-1] + 1: cur.append(k)
+            else: runs.append(cur); cur = [k]
+        runs.append(cur)
+        for rn in runs:
+            sc.line(rim[rn[0]:rn[-1] + 2], mix(figG, 0.75), lw=0.6, ls=(0, (3, 2)), layer=1, split=False)
+    # orientation arrows on the visible rim: counterclockwise seen from above (n up)
+    for tp in (np.radians(222), np.radians(282), np.radians(340)):
         p1 = cap(1.0, tp); p2 = cap(1.0, tp + 0.03)
-        sc.head2d(sc.P(p2) - sc.off, sc.P(p2) - sc.P(p1), figG, hl=0.12, hw=0.05, depth=sc.D(p2) + 0.05)
-    # curl vectors with tiny loops in the tangent plane
+        sc.head2d(sc.P(p2) - sc.off, sc.P(p2) - sc.P(p1), figG, hl=0.12, hw=0.05, layer=1)
+    # curl vectors, each with a tiny loop in the tangent plane at its base (same orientation)
     eps = 1e-4
     def frame(rho, tq):
         P = cap(rho, tq)
@@ -687,28 +710,28 @@ def fig_20_1():
         if N[2] < 0: N = -N
         e1 = unit(Tu - (Tu @ N)*N); e2 = np.cross(N, e1)
         return P, N, e1, e2
-    for (rho, tq, tilt) in [(0.52, np.radians(215), (0.25, 0.1)), (0.55, np.radians(305), (-0.2, 0.15)),
-                            (0.5, np.radians(80), (0.1, -0.25))]:
+    for (rho, tq, tilt, lab) in [(0.58, np.radians(200), (0.25, 0.1), False),
+                                 (0.52, np.radians(285), (-0.2, 0.15), True),
+                                 (0.62, np.radians(15), (0.1, -0.25), False)]:
         P, N, e1, e2 = frame(rho, tq)
-        V = unit(N + tilt[0]*e1 + tilt[1]*e2) * 0.62
-        s = np.linspace(0.15, 2*np.pi - 0.35, 40)
-        loop = P + 0.13*(np.outer(np.cos(s), e1) + np.outer(np.sin(s), e2))
-        sc.line(loop, figR, lw=0.6, bias=0.03)
+        V = unit(N + tilt[0]*e1 + tilt[1]*e2) * 0.5
+        s = np.linspace(0.3, 2*np.pi - 0.3, 48)
+        loop = P + 0.16*(np.outer(np.cos(s), e1) + np.outer(np.sin(s), e2))
+        sc.line(loop, figR, lw=0.6, bias=0.05)
         sc.head2d(sc.P(loop[-1]) - sc.off, sc.P(loop[-1]) - sc.P(loop[-3]), figR, hl=0.07, hw=0.03,
-                  depth=sc.D(loop[-1]) + 0.03)
-        sc.arrow(P, P + V, figR, lw=1.0, bias=0.05)
-        if tq == np.radians(305):
-            sc.text_dir(P + V, r'$\nabla\times\mathbf{F}$', (1, 0.3), dist=2, color=figR, size=FS_S)
+                  depth=sc.D(loop[-1]) + 0.05)
+        sc.arrow(P, P + V, figR, lw=1.0, bias=0.08)
+        if lab:
+            sc.text_dir(P + V, r'$\nabla\times\mathbf{F}$', (1, 0.2), dist=2, color=figR, size=FS_S)
     # the unit normal at the top of the cap
-    P, N, _, _ = frame(0.0 + 1e-3, 0.0)
     P = cap(0.0, 0.0); N = np.array([0.0, 0.0, 1.0])
-    sc.arrow(P, P + 0.55*N, figB, lw=1.0, bias=0.05)
-    sc.dot(P, figB, r=0.03, bias=0.05)
-    sc.text_dir(P + 0.55*N, r'$\hat n$', (0, 1), dist=1.5, color=figB, size=FS)
+    sc.arrow(P, P + 0.5*N, figB, lw=1.0, bias=0.08)
+    sc.dot(P, figB, r=0.03, bias=0.08)
+    sc.text_dir(P + 0.5*N, r'$\hat n$', (0, 1), dist=1.5, color=figB, size=FS)
     # labels
-    sc.text_dir(cap(1.0, np.radians(290)), r'$\partial S$', (0.3, -1), dist=2, color=figG, size=FS)
-    sc.text(cap(0.72, np.radians(150)), '$S$', color=figB, size=9, halo=True)
-    render([sc], 'm452-20-1.svg')
+    sc.text_dir(cap(1.0, np.radians(245)), r'$\partial S$', (0, -1), dist=2, color=figG, size=FS)
+    sc.text(cap(0.6, np.radians(140)), '$S$', color=figB, size=9, halo=True)
+    render([sc], 'm452-20-1.svg', scale=1.05)
 
 
 # ================ §21 Fig. 1: the three shadows of the tangent parallelogram ================
@@ -719,9 +742,10 @@ def fig_21_1():
     sc.fill([(0, 0, 0), (Lw, 0, 0), (Lw, Lw, 0), (0, Lw, 0)], grey(0.04), ec=grey(0.3), lw=0.4, layer=-3)
     sc.fill([(0, 0, 0), (0, Lw, 0), (0, Lw, Hz), (0, 0, Hz)], grey(0.04), ec=grey(0.3), lw=0.4, layer=-3)
     sc.fill([(0, 0, 0), (Lw, 0, 0), (Lw, 0, Hz), (0, 0, Hz)], grey(0.04), ec=grey(0.3), lw=0.4, layer=-3)
-    P = np.array([1.05, 0.95, 1.05])
-    A = np.array([0.78, 0.20, 0.30])    # X_u (du)
-    B = np.array([-0.05, 0.72, 0.52])   # X_v (dv)
+    # tangent parallelogram with normal X_u x X_v ~ (0.8, 0.75, 1): all three shadows have positive area
+    P = np.array([0.80, 1.35, 1.40])
+    A = np.array([0.264, -0.819, 0.403])    # X_u du
+    B = np.array([0.676, -0.035, -0.514])   # X_v dv
     quad = np.array([P, P + A, P + A + B, P + B])
     shadows = [(np.array([1, 1, 0]), figR, r'$dx\wedge dy$'),
                (np.array([0, 1, 1]), figG, r'$dy\wedge dz$'),
@@ -738,7 +762,7 @@ def fig_21_1():
     sc.arrow(P, P + B, figB, lw=1.1, layer=1)
     sc.dot(P, BLACK, r=0.03, layer=1)
     sc.text_dir(P + A, r'$\mathbf{X}_u$', sc.P(A) - sc.P(0*A), dist=2, color=figB, size=FS)
-    sc.text_dir(P + B, r'$\mathbf{X}_v$', sc.P(B) - sc.P(0*B), dist=2, color=figB, size=FS)
+    sc.text_dir(P + B, r'$\mathbf{X}_v$', (-1, 0.25), dist=2.5, color=figB, size=FS)
     render([sc], 'm452-21-1.svg')
 
 

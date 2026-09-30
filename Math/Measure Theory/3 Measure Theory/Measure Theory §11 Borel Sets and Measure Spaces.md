@@ -151,7 +151,7 @@ The construction of Lebesgue measure generalizes to abstract settings.
 > m^*(T) + \epsilon \geq \sum_k |I_k|.
 > $$
 >
-> By a previous result ([[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|Prop. §9.2]]), $m^*(I_k) = |I_k|$ for open rectangles.
+> By a previous result (homework; [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|Prop. §9.2]]), $m^*(I_k) = |I_k|$ for open rectangles.
 >
 > By hypothesis, $|I_k| = m^*(I_k) \geq m^*(I_k \cap E) + m^*(I_k \cap E^c)$.
 >
@@ -232,6 +232,8 @@ The construction of Lebesgue measure generalizes to abstract settings.
 > In particular, **all Borel sets are L-measurable**.
 
 ^cor-11-7
+
+*Uses:* [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-6|§11.6]], [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-2|Def. §11.2]]
 
 > [!remark] Remark: The Borel Hierarchy and Measurability
 > The inclusion $\mathcal{B} \subseteq \mathcal{M}$ is extremely useful in practice: any set that can be constructed from open sets using countable unions, countable intersections, and complements is automatically Lebesgue measurable. This includes:
@@ -448,7 +450,7 @@ The construction of Lebesgue measure generalizes to abstract settings.
 
 ^pf-11-11
 
-*Uses:* [[Inner Regularity of Lebesgue Measure|§11.10]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-13|§11.13]], [[Measure Theory §9 Lebesgue Outer Measure#^rem-9-1|Rem. §9.1]], [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]], [[Heine–Borel Theorem|590 §15.12]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-5|§11.5]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-9|Def. §11.9]]
+*Uses:* [[Inner Regularity of Lebesgue Measure|§11.10]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-13|§11.13]], [[Measure Theory §9 Lebesgue Outer Measure#^rem-9-1|Rem. §9.1]], [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-5|§11.5]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-9|Def. §11.9]]
 
 > [!remark]- Connections
 > - Function version: [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-6|step functions are dense in L¹]] (Thm. §16.6).

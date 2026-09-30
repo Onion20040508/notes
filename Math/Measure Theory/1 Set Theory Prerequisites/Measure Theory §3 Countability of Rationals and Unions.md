@@ -38,8 +38,10 @@ tags: [measure-theory, math551]
 > - Used to count the dyadic cubes in [[Measure Theory §7 Structure of Open Sets#^prop-7-3|Proposition §7.3]].
 
 > [!theorem] Corollary §3.2: $\mathbb{Q}$ is countable
-> Since $\mathbb{Q}_+ = \bigcup_{n=1}^\infty \{\frac{m}{n} : m \in \mathbb{N}\}$ is a countable union of countable sets, $\mathbb{Q}_+$ is countable. Similarly $\mathbb{Q}_- \cup \{0\}$ is countable, so $\mathbb{Q} = \mathbb{Q}_- \cup \{0\} \cup \mathbb{Q}_+$ is countable.
+> Since $\mathbb{Q}_+ = \bigcup_{n=1}^\infty \{\frac{m}{n} : m \in \mathbb{N}\}$ is a [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|countable union of countable sets]], $\mathbb{Q}_+$ is countable. Similarly $\mathbb{Q}_- \cup \{0\}$ is countable, so $\mathbb{Q} = \mathbb{Q}_- \cup \{0\} \cup \mathbb{Q}_+$ is countable.
 >
 > Alternatively: Define $f: \mathbb{N} \times \mathbb{N} \to \mathbb{Q}_+$ by $f(n,m) = \frac{n}{m}$. This is surjective, so $\mathbb{Q}_+$ is countable.
 
 ^cor-3-2
+
+*Uses:* [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|§3.1]], [[Measure Theory §1 Countability and Set Theory#^ex-1-3|Ex. §1.3]]

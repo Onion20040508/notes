@@ -240,10 +240,6 @@ tags: [measure-theory, math551]
 
 ^thm-19-5
 
-> [!remark]- Connections
-> - $p = 2$ is the [[Cauchy–Schwarz inequality|Cauchy–Schwarz inequality (LADR 6.14)]] for the $L^2$ inner product of [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|the remark above]]; its Riemann-integral form for continuous functions is [[Linear Algebra 6A Inner Products and Norms#^ladr-6-16|LADR 6.16(b)]].
-> - Used to prove [[Minkowski's Inequality|Minkowski's inequality]], the $L^p$ inclusions ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-6|Corollary §19.6]]) and [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-7|interpolation]].
-
 > [!proof]+ Proof
 > **Case 1: $\|g\|_{p'} = 0$.** Then $g = 0$ a.e. ([[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|Proposition §14.11]]), so $fg = 0$ a.e., and both sides are $0$.
 >
@@ -276,6 +272,10 @@ tags: [measure-theory, math551]
 ^pf-19-5
 
 *Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|§19.4]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]]
+
+> [!remark]- Connections
+> - $p = 2$ is the [[Cauchy–Schwarz inequality|Cauchy–Schwarz inequality (LADR 6.14)]] for the $L^2$ inner product of [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|the remark above]]; its Riemann-integral form for continuous functions is [[Linear Algebra 6A Inner Products and Norms#^ladr-6-16|LADR 6.16(b)]].
+> - Used to prove [[Minkowski's Inequality|Minkowski's inequality]], the $L^p$ inclusions ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-6|Corollary §19.6]]) and [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-7|interpolation]].
 
 > [!theorem] Corollary §19.6: $L^p$ Inclusion for Finite Measure Spaces
 > Assume $m(E) < \infty$. Then for $1 \leq p_1 < p_2 \leq \infty$, $L^{p_2}(E) \subseteq L^{p_1}(E)$, and:
@@ -373,9 +373,6 @@ tags: [measure-theory, math551]
 
 ^thm-19-9
 
-> [!remark]- Connections
-> - For $p = 2$ the norm comes from the $L^2$ inner product, and Minkowski is the inner-product [[Triangle inequality|triangle inequality (LADR 6.17)]]; the case $p = 1$ is [[Measure Theory §15 The General Lebesgue Integral#^prop-15-3|Proposition §15.3]].
-
 > [!proof]+ Proof
 > **Case 1: $p = 1$.** $\int_E |f + g| \leq \int_E (|f| + |g|) = \int_E |f| + \int_E |g|$. $\checkmark$
 >
@@ -409,6 +406,9 @@ tags: [measure-theory, math551]
 
 *Uses:* [[Measure Theory §15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Hölder's Inequality|§19.5]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]]
 
+> [!remark]- Connections
+> - For $p = 2$ the norm comes from the $L^2$ inner product, and Minkowski is the inner-product [[Triangle inequality|triangle inequality (LADR 6.17)]]; the case $p = 1$ is [[Measure Theory §15 The General Lebesgue Integral#^prop-15-3|Proposition §15.3]].
+
 > [!theorem] Theorem §19.10: $L^p$ is a Normed Linear Space
 > Let $1 \leq p \leq \infty$. Then $(L^p(E), \|\cdot\|_p)$ is a [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|normed linear space]].
 
@@ -432,6 +432,8 @@ tags: [measure-theory, math551]
 > Let $\{f_k\}_{k=1}^m \subseteq L^p(E)$. Then $\left\|\sum_{k=1}^{m} f_k\right\|_p \leq \sum_{k=1}^{m} \|f_k\|_p$.
 
 ^cor-19-11
+
+*Uses:* [[Minkowski's Inequality|§19.9]]
 
 This follows by induction on $m$ from the two-function case ([[Minkowski's Inequality|Theorem §19.9]]).
 
@@ -727,4 +729,4 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 *Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|Def. §19.6]], [[Measure Theory §4 Uncountability#^ex-4-2|Ex. §4.2]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]]
 
 > [!remark]- Connections
-> - Same disjoint-balls counting as in [[Topology §18 Countability Axioms#^prop-18-4|590 §18.4]](2) ($\mathbb{R}_l$ not second countable); by [[Topology §18 Countability Axioms#^prop-18-4|590 §18.4]](3), $L^\infty$ is also not second countable.
+> - Same uncountable-versus-countable counting as in [[Topology §18 Countability Axioms#^prop-18-4|590 §18.4]](2) ($\mathbb{R}_l$ not second countable); by [[Topology §18 Countability Axioms#^prop-18-4|590 §18.4]](3), $L^\infty$ is also not second countable.

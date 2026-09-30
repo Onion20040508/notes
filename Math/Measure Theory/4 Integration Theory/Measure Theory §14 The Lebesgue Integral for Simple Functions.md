@@ -685,6 +685,8 @@ We now extend the integral from simple functions to general non-negative measura
 
 ^ex-14-2
 
+*Uses:* [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]]
+
 > [!remark] Remark: Why Sup and Not Inf in the Definition of the Integral?
 > For $f \geq 0$ measurable, the integral is defined as:
 >
