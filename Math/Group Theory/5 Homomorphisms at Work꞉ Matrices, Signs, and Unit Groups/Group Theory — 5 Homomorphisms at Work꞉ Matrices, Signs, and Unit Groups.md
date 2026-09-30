@@ -27,5 +27,5 @@ Three substantial applications of the homomorphism language, mostly from Problem
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|Theorem §19.2: Linear Extension]]: 18 later results
 - [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^cor-19-3|Corollary §19.3: Permutations of the Basis Give Invertible Linear Maps]]: 17 later results
-- [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|Proposition §19.5: σ mapsto M(σ) Is an Injective Homomorphism S_n → GL_n(k)]]: 12 later results
+- [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|Proposition §19.5: σ ↦ M(σ) Is an Injective Homomorphism S_n → GL_n(k)]]: 12 later results
 - [[The Sign Homomorphism|Theorem §20.3: The Sign Is a Homomorphism]]: 10 later results

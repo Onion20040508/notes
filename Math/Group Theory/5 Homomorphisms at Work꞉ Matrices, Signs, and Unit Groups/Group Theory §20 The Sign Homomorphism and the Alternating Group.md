@@ -228,6 +228,8 @@ tags: [group-theory, math493]
 
 ^def-20-4
 
+*Uses:* [[Group Theory §20 The Sign Homomorphism and the Alternating Group#^thm-20-2|§20.2]]
+
 > [!theorem] Corollary §20.10: $A_n$ Is the Stabilizer of $\Delta$
 > For $\sigma \in S_n$: $\ \sigma \cdot \Delta = \Delta$ if and only if $\sigma \in A_n$.
 

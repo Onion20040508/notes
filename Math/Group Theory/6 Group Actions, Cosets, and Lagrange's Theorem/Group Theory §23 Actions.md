@@ -107,7 +107,7 @@ tags: [group-theory, math493]
 
 ^pf-23-2
 
-*Uses:* [[Group Theory §23 Actions#^def-23-1|Def. §23.1]]
+*Uses:* [[Group Theory §23 Actions#^def-23-1|Def. §23.1]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-4|590 §21.4]]
 
 > [!remark]- Connections
 > - A two-sided inverse means bijective, in MATH 590: [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-4|Bijectivity via Two-Sided Inverse]] (590 §21.4).
@@ -247,7 +247,7 @@ tags: [group-theory, math493]
 *Uses:* [[Group Theory §23 Actions#^thm-23-5|§23.5]], [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]], [[Group Theory §15 Homomorphisms#^prop-15-4|§15.4]], [[Group Theory §3 Basic Examples of Groups#^def-3-6|Def. §3.6]]
 
 ![[m493-23-1.svg]]
-*The embedding of a group of order $n$ into $GL_n(k)$: Cayley's theorem, relabelling, and the permutation representation are each injective homomorphisms, so their composite (blue) is one too, realizing $G$ as a group of $n \times n$ permutation matrices.*
+*The embedding of a group of order $n$ into $GL_n(k)$: Cayley's theorem, relabelling, and the permutation representation, each injective. Their composite (blue) is the embedding of Corollary §23.6.*
 
 > [!remark]- Connections
 > - The small representations the next remark asks for begin with characters: [[Group Theory §40 Characters#^rem-40-4|One-Dimensional Representations]].

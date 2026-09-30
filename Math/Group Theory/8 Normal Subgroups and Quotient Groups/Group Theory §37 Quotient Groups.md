@@ -65,7 +65,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[Group T
 *Uses:* [[Group Theory §37 Quotient Groups#^def-37-1|Def. §37.1]], [[Group Theory §37 Quotient Groups#^thm-37-1|§37.1]], [[Group Theory §15 Homomorphisms#^def-15-2|Def. §15.2]], [[Group Theory §26 Left and Right Cosets#^prop-26-2|§26.2]]
 
 > [!remark]- Connections
-> - Vector-space version ($\operatorname{null}\pi = U$): [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]; in 590 stated in [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-13|Cosets and Quotient Group]].
+> - Vector-space version: [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]] ($\operatorname{null}\pi = U$, shown in the proof of [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]); in 590 stated in [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-13|Cosets and Quotient Group]].
 
 > [!remark] Remark: Kernels and Normal Subgroups Are the Same Thing
 > Together with [[Group Theory §36 Sources of Normal Subgroups#^prop-36-2|Kernels Are Normal]], the proposition says: the normal subgroups of $G$ are exactly the kernels of homomorphisms out of $G$. This is why normality, a condition that looks technical, is the natural one.

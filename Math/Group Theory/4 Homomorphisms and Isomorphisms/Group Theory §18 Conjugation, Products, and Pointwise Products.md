@@ -14,6 +14,8 @@ tags: [group-theory, math493]
 
 ^def-18-1
 
+*Uses:* [[Group Theory §16 Isomorphisms#^prop-16-1|§16.1]], [[Group Theory §16 Isomorphisms#^prop-16-2|§16.2]], [[Group Theory §3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[Group Theory §4 Subgroups#^def-4-1|Def. §4.1]]
+
 > [!definition] Definition §18.2: Conjugation; Conjugate Elements; Inner Automorphism
 > Let $G$ be a group and $a \in G$. **Conjugation by $a$** is the map $c_a: G \to G$, $c_a(g) = aga^{-1}$. Elements $g, g' \in G$ are **conjugate** if $g' = aga^{-1}$ for some $a \in G$. The maps $c_a$ are automorphisms of $G$ ([[Group Theory §18 Conjugation, Products, and Pointwise Products#^prop-18-1|Conjugation Is an Automorphism]], next); they are called the **inner automorphisms** of $G$.
 

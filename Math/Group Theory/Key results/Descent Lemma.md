@@ -11,7 +11,7 @@ tags: [group-theory, hub]
 - [[Group Theory §7 The Group ℤ∕nℤ#^lem-7-2|Lemma §7.2: Descending a Map to ℤ/nℤ]], in [[Group Theory §7 The Group ℤ∕nℤ]]
 
 ## Its proof uses
-- [[Group Theory §4 Subgroups#^prop-4-6|Proposition §4.6: langle g rangle Is the Smallest Subgroup Containing g]]
+- [[Group Theory §4 Subgroups#^prop-4-6|Proposition §4.6: ⟨g⟩ Is the Smallest Subgroup Containing g]]
 - [[Group Theory §6 Divisibility and Congruence#^def-6-4|Definition §6.4: Residue Classes]]
 - [[Group Theory §7 The Group ℤ∕nℤ#^def-7-2|Definition §7.2: Well-Defined]]
 - [[Group Theory §15 Homomorphisms#^def-15-1|Definition §15.1: Group Homomorphism]]
@@ -23,7 +23,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[Group Theory §17 Cyclic Groups#^thm-17-1|Theorem §17.1: Classification of Cyclic Groups]]
-- [[Group Theory §17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k mapsto g^k and langle g rangle ≅ ℤ/Nℤ]]
+- [[Group Theory §17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]
 
 ## Connections
 - **Used for.** Every well-definedness check for maps out of ℤ/nℤ ([[Group Theory §7 The Group ℤ∕nℤ#^rem-7-1|Where This Is Used]]): ℤ/4ℤ → U₅, k ↦ 2ᵏ ([[Group Theory §16 Isomorphisms#^prop-16-7|§16.7]]); the [[Classification of Cyclic Groups]]; ⟨g⟩ ≅ ℤ/Nℤ ([[Group Theory §17 Cyclic Groups#^prop-17-3|§17.3]]).

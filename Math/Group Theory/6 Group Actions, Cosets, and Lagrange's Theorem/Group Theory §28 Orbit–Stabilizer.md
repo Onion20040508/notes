@@ -102,7 +102,7 @@ tags: [group-theory, math493]
 ^ex-28-1
 
 ![[m493-28-2.svg]]
-*The four-petal figure from lecture. Red: the orbit $\{x_1, x_2, x_3, x_4\}$ of the tip $x_1$. Blue: the vertical axis, whose reflection $r_v$ together with $e$ forms $\operatorname{Stab}(x_1)$. Dotted: the other three reflection axes.*
+*The four-petal figure from lecture. Red: the orbit $\{x_1, x_2, x_3, x_4\}$ of the tip $x_1$. Green: the vertical axis, whose reflection $r_v$ together with $e$ forms $\operatorname{Stab}(x_1)$. Dotted: the other three reflection axes.*
 
 > [!remark] Remark: Where Orbit–Stabilizer Has Already Appeared
 > Two instances: the cosets of the point stabilizer in $S_n$ ([[Group Theory §28 Orbit–Stabilizer#^cor-28-5|next subsection]]), where the orbit of $n$ is all of $\{1, \ldots, n\}$ and $n! = (n-1)! \cdot n$; and the conjugacy classes of a group ([[Group Theory — 7 Conjugacy and the Center|Chapter 7]]), which are the orbits of the conjugation action, so that their sizes divide $|G|$ — e.g. $1, 6, 3, 8, 6$ in $S_4$.

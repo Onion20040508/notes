@@ -239,14 +239,14 @@ tags: [group-theory, math493]
 *The three ways of splitting $\{1,2,3,4\}$ into two pairs, each drawn as two blue edges. The transposition $(3\,4)$ fixes $\{\{1,2\},\{3,4\}\}$ and swaps the other two splittings (red), so it acts on $P$ as a transposition. A double transposition such as $(1\,2)(3\,4)$ carries every splitting to itself, which is why $V$ is the kernel.*
 
 > [!example] Example §39.1: In $A_4$, $(1\,2\,3)$ and $(1\,3\,2)$ Are Not Conjugate
-> The restriction $\alpha|_{A_4}: A_4 \to A_3$ is a character, since $A_3$ is abelian, and characters are constant on conjugacy classes ([[Group Theory §40 Characters#^prop-40-1|Characters Are Constant on Conjugacy Classes]], §40). Now $\alpha((1\,2\,3)) \neq e$, because $(1\,2\,3) \notin V$, and $\alpha((1\,3\,2)) = \alpha((1\,2\,3))^{-1}$. In a group of order $3$ no non-identity element equals its own inverse, so the two images differ, and $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ (although they are conjugate in $S_4$). So [[Group Theory §39 Simple Groups#^lem-39-8|the lemma on 3-cycles]] fails for $n = 4$.
+> The restriction $\alpha|_{A_4}: A_4 \to A_3$ is a character, since $A_3$ is abelian, and characters are constant on conjugacy classes ([[Group Theory §40 Characters#^prop-40-1|Characters Are Constant on Conjugacy Classes]], §40). Now $\alpha((1\,2\,3)) \neq e$, because $(1\,2\,3) \notin V$, and $\alpha((1\,3\,2)) = \alpha((1\,2\,3))^{-1}$. In a group of order $3$ no non-identity element equals its own inverse, so the two images differ, and $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ (although they are conjugate in $S_4$). So the lemma on $3$-cycles ([[Group Theory §39 Simple Groups#^lem-39-8|§39.8]]) fails for $n = 4$.
 >
 > *Source: lecture 9/30*
 
 ^ex-39-1
 
 > [!remark] Remark: Why $n \geq 5$
-> The proof for $A_n$ ([[Group Theory §39 Simple Groups#^thm-39-9|§39.9]]) used $n \geq 5$ twice: the $(a\,b)(c\,d)$ case needs a fifth point, and [[Group Theory §39 Simple Groups#^lem-39-8|the lemma on 3-cycles]] needs two points outside a $3$-cycle. For $n = 4$ both fail for a real reason: $A_4$ has the extra normal subgroup $V$. Group theory is a mix of universal principles and funny small counterexamples, and $A_4$ is one of the latter.
+> The proof for $A_n$ ([[Group Theory §39 Simple Groups#^thm-39-9|§39.9]]) used $n \geq 5$ twice: the $(a\,b)(c\,d)$ case needs a fifth point, and the lemma on $3$-cycles ([[Group Theory §39 Simple Groups#^lem-39-8|§39.8]]) needs two points outside a $3$-cycle. For $n = 4$ both fail for a real reason: $A_4$ has the extra normal subgroup $V$. Group theory is a mix of universal principles and funny small counterexamples, and $A_4$ is one of the latter.
 >
 > *Source: lecture 9/30*
 

@@ -121,7 +121,7 @@ In each example, associativity is inherited from a known associative operation (
 > - the **orthogonal group** is $O(n) = O_n(\mathbb{R}) = \{A \in GL_n(\mathbb{R}) : A^{\mathsf{T}}A = I_n\}$;
 > - the **special orthogonal group** is $SO(n) = O(n) \cap SL_n(\mathbb{R})$.
 >
-> Each is a subgroup of the corresponding general linear group (verified in [[Group Theory §5 A Zoo of Subgroups#^ex-5-4|§5.4]], where $SO(2)$ is identified with the rotations of the plane).
+> Each is a subgroup of the corresponding general linear group (verified in [[Group Theory §5 A Zoo of Subgroups#^ex-5-4|Ex. §5.4]], where $SO(2)$ is identified with the rotations of the plane).
 
 ^def-3-7
 

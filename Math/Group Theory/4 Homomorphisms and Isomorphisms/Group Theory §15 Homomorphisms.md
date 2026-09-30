@@ -74,6 +74,8 @@ tags: [group-theory, math493]
 
 ^ex-15-1
 
+*Uses:* [[Group Theory §15 Homomorphisms#^def-15-1|Def. §15.1]], [[Group Theory §15 Homomorphisms#^def-15-2|Def. §15.2]], [[Linear Algebra 9C Determinants#^ladr-9-49|LADR 9.49]], [[Group Theory §7 The Group ℤ∕nℤ#^def-7-1|Def. §7.1]]
+
 > [!theorem] Proposition §15.2: Image and Kernel Are Subgroups
 > Let $\varphi: G \to H$ be a group homomorphism. Then $\operatorname{Im}(\varphi)$ is a subgroup of $H$, and $\operatorname{Ker}(\varphi)$ is a subgroup of $G$.
 >

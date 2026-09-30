@@ -30,8 +30,6 @@ tags: [group-theory, math493]
 
 ^pf-6-1
 
-*Uses:* [[Single Variable Analysis §1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]] (well-ordering)
-
 > [!definition] Definition §6.2: Quotient and Remainder; “$a \bmod n$”
 > For $n \geq 1$ and $a \in \mathbb{Z}$, write $a = qn + r$ with $0 \leq r < n$ as in the [[Group Theory §6 Divisibility and Congruence#^lem-6-1|Division Algorithm]]. The integer $q$ is the **quotient** and $r$ the **remainder** of $a$ on division by $n$; the remainder is also called the **remainder of $a$ modulo $n$** and written $a \bmod n$. For example, $14 \bmod 12 = 2$, $\ 8 \bmod 5 = 3$, $\ 25 \bmod 8 = 1$, $\ -7 \bmod 5 = 3$ (since $-7 = (-2)\cdot 5 + 3$). Note that $n \mid a$ if and only if $a \bmod n = 0$.
 

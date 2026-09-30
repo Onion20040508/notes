@@ -12,8 +12,8 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[Group Theory §4 Subgroups#^def-4-1|Definition §4.1: Subgroup]]
-- [[Group Theory §4 Subgroups#^prop-4-5|Proposition §4.5: langle g rangle Is a Subgroup]]
-- [[Group Theory §4 Subgroups#^prop-4-6|Proposition §4.6: langle g rangle Is the Smallest Subgroup Containing g]]
+- [[Group Theory §4 Subgroups#^prop-4-5|Proposition §4.5: ⟨g⟩ Is a Subgroup]]
+- [[Group Theory §4 Subgroups#^prop-4-6|Proposition §4.6: ⟨g⟩ Is the Smallest Subgroup Containing g]]
 - [[Group Theory §6 Divisibility and Congruence#^lem-6-1|Lemma §6.1: Division Algorithm]]
 
 ## Used in (Group Theory)

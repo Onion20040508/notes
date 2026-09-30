@@ -19,8 +19,8 @@ tags: [group-theory, hub]
 - [[Group Theory §26 Left and Right Cosets#^def-26-2|Definition §26.2: Left and Right Cosets]]
 
 ## Used in (Group Theory)
-- [[Group Theory §26 Left and Right Cosets#^ex-26-2|Example §26.2: The Map gH mapsto Hg Is Not Well Defined]]
-- [[Group Theory §26 Left and Right Cosets#^prop-26-3|Proposition §26.3: A Natural Bijection G/H → Hbackslash G]]
+- [[Group Theory §26 Left and Right Cosets#^ex-26-2|Example §26.2: The Map gH ↦ Hg Is Not Well Defined]]
+- [[Group Theory §26 Left and Right Cosets#^prop-26-3|Proposition §26.3: A Natural Bijection G/H → H∖G]]
 - [[Group Theory §27 The Index and Lagrange's Theorem#^thm-27-2|Theorem §27.2: Lagrange]]
 - [[Group Theory §27 The Index and Lagrange's Theorem#^prop-27-5|Proposition §27.5: The Index Is Multiplicative]]
 - [[Group Theory §28 Orbit–Stabilizer#^prop-28-1|Proposition §28.1: When Two Group Elements Move x to the Same Place]]
@@ -39,4 +39,4 @@ tags: [group-theory, hub]
 - **Used for.** [[Lagrange's Theorem]], via [[Group Theory §27 The Index and Lagrange's Theorem#^prop-27-1|All Cosets Have the Same Size]]; orbit–stabilizer, through [[Group Theory §28 Orbit–Stabilizer#^prop-28-2|The Orbit Bijection]]; the action of G on G/H ([[Group Theory §29 G Acting on Coset Spaces#^prop-29-1|§29.1]]); and all of Chapter 8, from [[Quotient Groups]] to the [[First Isomorphism Theorem for Groups]].
 - **Left and right differ.** For H = {e, (1 2)} in S₃, (1 3)H ≠ H(1 3) ([[Group Theory §26 Left and Right Cosets#^ex-26-1|Ex. §26.1]]). So gH ↦ Hg is not well defined ([[Group Theory §26 Left and Right Cosets#^ex-26-2|Ex. §26.2]]), and the right bijection is gH ↦ Hg⁻¹ ([[Group Theory §26 Left and Right Cosets#^prop-26-3|§26.3]]). The two partitions agree exactly when H is normal ([[Characterizations of Normality]]).
 - **Cosets are orbits.** They are the orbits of H acting by multiplication ([[Group Theory §26 Left and Right Cosets#^prop-26-1|Cosets Are Orbits]]), so this is a case of [[Group Theory §25 Orbits#^prop-25-1|Orbits Partition X]].
-- **Same idea elsewhere.** Translates v + U of a subspace are equal or disjoint ([[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-101|LADR 3.101]]; [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-97|translates]], 3.97). The Vitali construction partitions [0, 1] by the relation x − y ∈ ℚ, that is, by the cosets of ℚ in ℝ ([[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-17|MATH 551 §11.17]], [[The Vitali Set is Not Measurable]]).
+- **Same idea elsewhere.** Translates v + U of a subspace are equal or disjoint ([[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-101|LADR 3.101]]; [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-97|translates]], 3.97). The Vitali construction partitions [0, 1] by the relation x − y ∈ ℚ, that is, by the traces on [0, 1] of the cosets x + ℚ of ℚ in ℝ ([[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-17|MATH 551 §11.17]], [[The Vitali Set is Not Measurable]]).

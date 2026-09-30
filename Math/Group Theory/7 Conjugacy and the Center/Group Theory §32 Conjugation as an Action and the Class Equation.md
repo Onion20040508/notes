@@ -124,11 +124,11 @@ tags: [group-theory, math493]
 ^prop-32-6
 
 > [!proof]+ Proof
-> By [[Group Theory §27 The Index and Lagrange's Theorem#^thm-27-2|Lagrange]] every element has order $1$, $2$ or $4$. If some element has order $4$, the group is cyclic, hence abelian. Otherwise $x^2 = e$ for all $x$, i.e. $x = x^{-1}$ for all $x$, whence $ab = (ab)^{-1} = b^{-1}a^{-1} = ba$.
+> By [[Group Theory §27 The Index and Lagrange's Theorem#^cor-27-3|Lagrange]] every element has order $1$, $2$ or $4$. If some element has order $4$, the group is cyclic, hence abelian. Otherwise $x^2 = e$ for all $x$, i.e. $x = x^{-1}$ for all $x$, whence $ab = (ab)^{-1} = b^{-1}a^{-1} = ba$.
 
 ^pf-32-6
 
-*Uses:* [[Group Theory §27 The Index and Lagrange's Theorem#^thm-27-2|§27.2]], [[Group Theory §27 The Index and Lagrange's Theorem#^cor-27-3|§27.3]], [[Group Theory §17 Cyclic Groups#^cor-17-2|§17.2]], [[Group Theory §4 Subgroups#^def-4-5|Def. §4.5]], [[Group Theory §2 First Consequences of the Axioms#^prop-2-4|§2.4]]
+*Uses:* [[Group Theory §27 The Index and Lagrange's Theorem#^cor-27-3|§27.3]], [[Group Theory §17 Cyclic Groups#^cor-17-2|§17.2]], [[Group Theory §4 Subgroups#^def-4-5|Def. §4.5]], [[Group Theory §2 First Consequences of the Axioms#^prop-2-4|§2.4]]
 
 > [!theorem] Corollary §32.7: Exactly Three Conjugacy Classes: Order $3$ or $6$
 > A finite group with exactly three conjugacy classes has order $3$ or $6$, and both occur: $\mathbb{Z}/3\mathbb{Z}$ and $S_3$.
@@ -138,7 +138,7 @@ tags: [group-theory, math493]
 ^cor-32-7
 
 > [!proof]+ Proof
-> By [[Group Theory §32 Conjugation as an Action and the Class Equation#^prop-32-5|Three Conjugacy Classes Force Order at Most 6]], $|G| \in \{3, 4, 6\}$. The case $|G| = 4$ solves the equation but not the problem: a [[Group Theory §32 Conjugation as an Action and the Class Equation#^prop-32-6|group of order 4 is abelian]], so its conjugacy classes are singletons and there are $4$ of them. Finally $\mathbb{Z}/3\mathbb{Z}$ has $3$ classes, and $S_3$ has $3$ classes, of sizes $1, 3, 2$.
+> By Three Conjugacy Classes Force Order at Most $6$ ([[Group Theory §32 Conjugation as an Action and the Class Equation#^prop-32-5|§32.5]]), $|G| \in \{3, 4, 6\}$. The case $|G| = 4$ solves the equation but not the problem: a group of order $4$ is abelian ([[Group Theory §32 Conjugation as an Action and the Class Equation#^prop-32-6|§32.6]]), so its conjugacy classes are singletons and there are $4$ of them. Finally $\mathbb{Z}/3\mathbb{Z}$ has $3$ classes, and $S_3$ has $3$ classes, of sizes $1, 3, 2$.
 
 ^pf-32-7
 

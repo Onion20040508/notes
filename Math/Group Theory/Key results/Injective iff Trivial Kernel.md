@@ -17,7 +17,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[Group Theory §17 Cyclic Groups#^thm-17-1|Theorem §17.1: Classification of Cyclic Groups]]
-- [[Group Theory §17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k mapsto g^k and langle g rangle ≅ ℤ/Nℤ]]
+- [[Group Theory §17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]
 - [[Group Theory §23 Actions#^prop-23-4|Proposition §23.4: Faithful Actions Embed G in S_X]]
 - [[Group Theory §39 Simple Groups#^prop-39-3|Proposition §39.3: Homomorphisms out of a Simple Group]]
 

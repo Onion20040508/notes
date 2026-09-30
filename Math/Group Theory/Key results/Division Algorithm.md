@@ -20,7 +20,7 @@ tags: [group-theory, hub]
 - [[Group Theory §6 Divisibility and Congruence#^prop-6-2|Proposition §6.2: Congruence Is an Equivalence Relation with Remainder Classes]]
 - [[Group Theory §16 Isomorphisms#^prop-16-4|Proposition §16.4: Homomorphisms and Orders of Elements]]
 - [[Group Theory §17 Cyclic Groups#^thm-17-1|Theorem §17.1: Classification of Cyclic Groups]]
-- [[Group Theory §17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k mapsto g^k and langle g rangle ≅ ℤ/Nℤ]]
+- [[Group Theory §17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]
 - [[Group Theory §17 Cyclic Groups#^thm-17-4|Theorem §17.4: Subgroups of Cyclic Groups Are Cyclic]]
 
 ## Connections

@@ -87,7 +87,7 @@ tags: [group-theory, math493]
 *Uses:* [[Group Theory §24 Stabilizers and Fixed Points#^prop-24-2|§24.2]], [[Group Theory §18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]], [[Group Theory §16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark]- Connections
-> - Used in [[Group Theory §28 Orbit–Stabilizer#^thm-28-3|Orbit–Stabilizer]] and [[Group Theory §28 Orbit–Stabilizer#^thm-28-6|Burnside's Lemma]].
+> - Used in part (3) of [[Group Theory §29 G Acting on Coset Spaces#^prop-29-1|The Action of G on G∕H, §29.1]]; for finite $G$ the equality of stabilizer orders along an orbit also follows from [[Group Theory §28 Orbit–Stabilizer#^thm-28-3|Orbit–Stabilizer]].
 
 > [!remark] Remark: Reading the Proposition
 > Moving the point by $g$ conjugates its stabilizer by $g$. For the point stabilizer $H = \operatorname{Stab}(n) \subseteq S_n$ of [[Group Theory §28 Orbit–Stabilizer#^def-28-1|Def. §28.1]], this says $\operatorname{Stab}(\sigma(n)) = \sigma H \sigma^{-1}$.

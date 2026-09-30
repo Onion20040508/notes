@@ -24,6 +24,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Orbit size is the index of the stabilizer: [[Group Theory §28 Orbit–Stabilizer#^thm-28-3|Orbit–Stabilizer]]; cosets are orbits: [[Group Theory §26 Left and Right Cosets#^prop-26-1|Cosets Are Orbits]].
+> - The orbit-space notation is restated from lecture in [[Group Theory §25 Orbits#^def-25-2|Orbit Space Notation, Def. §25.2]].
 
 > [!theorem] Proposition §25.1: Orbits Partition $X$
 > Let $G$ act on $X$ and $x, y \in X$. Then either $Gx = Gy$ or $Gx \cap Gy = \varnothing$. Hence $X$ is the disjoint union of the distinct orbits.
@@ -76,4 +77,5 @@ The left cosets of $H \leq G$ are the special case of $H$ acting on $G$ by right
 *The orbits of $O_3(\mathbb{R})$ on $\mathbb{R}^3$ are the spheres about the origin, the origin itself being a one-point orbit; the orbit of $x$ (red) is the sphere of radius $|x|$. The ray $\mathbb{R}_{\geq 0}$ (blue) meets each orbit exactly once, which is the bijection $O_3 \backslash \mathbb{R}^3 \leftrightarrow \mathbb{R}_{\geq 0}$.*
 
 > [!remark]- Connections
+> - Same notion as the orbit space of [[Group Theory §25 Orbits#^def-25-1|Def. §25.1]] (worksheet form).
 > - “Like a quotient”: the quotient-set notation $X/{\sim}$ of MATH 590, [[Topology §12 Quotient Topology#^def-12-3|Quotient Space]] (590 §12.3); the coset spaces $G/H$ of [[Group Theory §26 Left and Right Cosets#^def-26-2|Def. §26.2]] and quotient groups [[Group Theory §37 Quotient Groups#^def-37-1|Def. §37.1]].

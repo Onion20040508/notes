@@ -12,7 +12,7 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[Group Theory §15 Homomorphisms#^def-15-1|Definition §15.1: Group Homomorphism]]
-- [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|Proposition §19.5: σ mapsto M(σ) Is an Injective Homomorphism S_n → GL_n(k)]]
+- [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|Proposition §19.5: σ ↦ M(σ) Is an Injective Homomorphism S_n → GL_n(k)]]
 - [[Group Theory §20 The Sign Homomorphism and the Alternating Group#^def-20-2|Definition §20.2: The Sign; Even and Odd Permutations]]
 
 ## Its proof uses (other subjects)

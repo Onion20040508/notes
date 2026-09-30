@@ -41,7 +41,7 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 
 > [!theorem] Proposition §22.1: Equivalence Classes Partition a Set
 > Let $\sim$ be an equivalence relation on $X$. Then
-> 1. for $x_1, x_2 \in X$: $\ R_{x_1} \cap R_{x_2} \neq \varnothing \iff R_{x_1} = R_{x_2} \iff x_1 \sim x_2$;
+> 1. for $x_1, x_2 \in X$: $R_{x_1} \cap R_{x_2} \neq \varnothing \iff R_{x_1} = R_{x_2} \iff x_1 \sim x_2$;
 > 2. $\bigcup_{x \in X} R_x = X$.
 >
 > Hence the distinct equivalence classes form a partition of $X$.
