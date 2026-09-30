@@ -8,7 +8,7 @@ aliases: ["LADR 3.59"]
 tags: [linear-algebra, ladr/3D]
 ---
 > [!definition] 3.59 Invertible, inverse
-> *Write the statement in your own words.* (LADR p. 82)
+> $T\in\Lin(V,W)$ is *invertible* if there is $S\in\Lin(W,V)$ with $ST=I_V$ and $TS=I_W$. Such an $S$ is called an *inverse* of $T$.
 
 ## Connections
-- 
+- The inverse is unique: [[Inverse is unique]] (so we write $T^{-1}$). Criterion: [[Invertibility ⟺ injectivity and surjectivity]]. Synonym: isomorphism [[Isomorphism, isomorphic]].

@@ -8,13 +8,14 @@ aliases: ["LADR 1.32"]
 tags: [linear-algebra, ladr/1B]
 ---
 > [!theorem] 1.32 The number −1 times a vector
-> *Write the statement in your own words.* (LADR p. 16)
+> $(-1)v=-v$ for every $v\in V$.
 
 > [!proof]-
-> Proof idea.
+> $v+(-1)v=1v+(-1)v=(1+(-1))v=0v=0$ by [[The number 0 times a vector]]. So $(-1)v$ is an additive inverse of $v$, hence equals $-v$ by uniqueness ([[Unique additive inverse]]).
 
-## Uses (cited in Axler's proof)
-- [[Vector space]] (1.20)
+## Uses (in the proof)
+- [[The number 0 times a vector]] (1.30)
+- [[Unique additive inverse]] (1.27)
 
 ## Connections
-- 
+- Used in [[Conditions for a subspace]] to see that subspaces contain additive inverses.

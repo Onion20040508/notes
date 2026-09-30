@@ -8,7 +8,7 @@ aliases: ["LADR 3.34"]
 tags: [linear-algebra, ladr/3C]
 ---
 > [!definition] 3.34 Matrix addition
-> *Write the statement in your own words.* (LADR p. 71)
+> The sum of two matrices of the same size is computed entrywise: $(A+C)_{j,k}=A_{j,k}+C_{j,k}$.
 
 ## Connections
-- 
+- Matches addition of maps: [[Matrix of the sum of linear maps]].

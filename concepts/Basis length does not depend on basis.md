@@ -8,13 +8,13 @@ aliases: ["LADR 2.34"]
 tags: [linear-algebra, ladr/2C]
 ---
 > [!theorem] 2.34 Basis length does not depend on basis
-> *Write the statement in your own words.* (LADR p. 44)
+> Any two bases of a finite-dimensional vector space have the same length.
 
 > [!proof]-
-> Proof idea.
+> Let $B_1,B_2$ be bases. $B_1$ is linearly independent and $B_2$ spans, so $\operatorname{len}B_1\le\operatorname{len}B_2$ by [[Length of linearly independent list ≤ length of spanning list]]. Swap roles for the reverse inequality.
 
-## Uses (cited in Axler's proof)
+## Uses (in the proof)
 - [[Length of linearly independent list ≤ length of spanning list]] (2.22)
 
 ## Connections
-- 
+- Allows the definition [[Dimension, dim V]].

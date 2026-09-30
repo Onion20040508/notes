@@ -8,13 +8,14 @@ aliases: ["LADR 2.31"]
 tags: [linear-algebra, ladr/2B]
 ---
 > [!theorem] 2.31 Basis of finite-dimensional vector space
-> *Write the statement in your own words.* (LADR p. 41)
+> Every finite-dimensional vector space has a basis.
 
 > [!proof]-
-> Proof idea.
+> By definition ([[Finite-dimensional vector space]]) it has a spanning list, which can be reduced to a basis by [[Every spanning list contains a basis]].
 
-## Uses (cited in Axler's proof)
+## Uses (in the proof)
+- [[Finite-dimensional vector space]] (2.9)
 - [[Every spanning list contains a basis]] (2.30)
 
 ## Connections
-- 
+- Makes [[Dimension, dim V]] meaningful. Orthonormal refinement: [[Existence of orthonormal basis]].

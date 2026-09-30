@@ -8,15 +8,17 @@ aliases: ["LADR 3.50"]
 tags: [linear-algebra, ladr/3C]
 ---
 > [!theorem] 3.50 Linear combination of columns
-> *Write the statement in your own words.* (LADR p. 76)
+> If $A$ is $m$-by-$n$ and $b=(b_1,\dots,b_n)^t$ is $n$-by-$1$, then
+> $$
+> Ab=b_1A_{\cdot,1}+\dots+b_nA_{\cdot,n},
+> $$
+> a linear combination of the columns of $A$ with coefficients from $b$.
 
 > [!proof]-
-> Proof idea.
+> Row $k$ of $Ab$ is $A_{k,1}b_1+\dots+A_{k,n}b_n$, which is also row $k$ of $b_1A_{\cdot,1}+\dots+b_nA_{\cdot,n}$.
 
-## Uses (cited in Axler's proof)
-- [[Column of matrix product equals matrix times column]] (3.48)
-- [[Column–row factorization]] (3.56)
-- [[Column rank equals row rank (LADR 3.57)]] (3.57)
+## Uses (in the proof)
+- (definitions only)
 
 ## Connections
-- 
+- Why $\range$ of a matrix map is the column space; used in [[Linear maps act like matrix multiplication]] and [[Dimension of range T equals column rank of M(T)]].

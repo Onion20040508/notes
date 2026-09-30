@@ -8,7 +8,7 @@ aliases: ["LADR 1.33"]
 tags: [linear-algebra, ladr/1C]
 ---
 > [!definition] 1.33 Subspace
-> *Write the statement in your own words.* (LADR p. 18)
+> A subset $U\subseteq V$ is a *subspace* of $V$ if $U$ is itself a vector space with the same additive identity, addition and scalar multiplication as $V$.
 
 ## Connections
-- 
+- The practical test: [[Conditions for a subspace]]. Standard subspaces later: [[Null space, null T]], [[Range]], eigenspaces, orthogonal complements [[Orthogonal complement, U⟂]].

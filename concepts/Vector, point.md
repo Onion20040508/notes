@@ -8,7 +8,7 @@ aliases: ["LADR 1.21"]
 tags: [linear-algebra, ladr/1B]
 ---
 > [!definition] 1.21 Vector, point
-> *Write the statement in your own words.* (LADR p. 12)
+> Elements of a vector space are called *vectors* or *points*. When the field matters we say $V$ is a vector space *over* $\F$.
 
 ## Connections
-- 
+- See [[Vector space]], [[Real vector space, complex vector space]].

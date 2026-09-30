@@ -8,7 +8,7 @@ aliases: ["LADR 3.58"]
 tags: [linear-algebra, ladr/3C]
 ---
 > [!definition] 3.58 Rank
-> *Write the statement in your own words.* (LADR p. 79)
+> The *rank* of $A\in\F^{m,n}$ is its column rank (equivalently, by [[Column rank equals row rank (LADR 3.57)]], its row rank).
 
 ## Connections
-- 
+- Rank–nullity for matrices: [[Fundamental theorem of linear maps]] with [[Dimension of range T equals column rank of M(T)]] gives $n=\dim\nullsp A+\operatorname{rank}A$.

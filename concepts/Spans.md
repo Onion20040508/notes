@@ -8,7 +8,7 @@ aliases: ["LADR 2.7"]
 tags: [linear-algebra, ladr/2A]
 ---
 > [!definition] 2.7 Spans
-> *Write the statement in your own words.* (LADR p. 29)
+> If $\Span(v_1,\dots,v_m)=V$, we say $v_1,\dots,v_m$ *spans* $V$.
 
 ## Connections
-- 
+- Defines [[Finite-dimensional vector space]]; half of [[Basis]].

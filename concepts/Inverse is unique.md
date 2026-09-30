@@ -8,13 +8,13 @@ aliases: ["LADR 3.60"]
 tags: [linear-algebra, ladr/3D]
 ---
 > [!theorem] 3.60 Inverse is unique
-> *Write the statement in your own words.* (LADR p. 82)
+> An invertible linear map has a unique inverse.
 
 > [!proof]-
-> Proof idea.
+> If $S_1,S_2$ are inverses of $T$, then $S_1=S_1I=S_1(TS_2)=(S_1T)S_2=IS_2=S_2$.
 
-## Uses (cited in Axler's proof)
-- (no numbered results cited)
+## Uses (in the proof)
+- (definitions only)
 
 ## Connections
-- 
+- Same argument as [[Unique additive inverse]]; same argument for matrices in [[Invertible, inverse, A⁻¹]].

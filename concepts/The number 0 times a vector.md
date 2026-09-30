@@ -8,13 +8,16 @@ aliases: ["LADR 1.30"]
 tags: [linear-algebra, ladr/1B]
 ---
 > [!theorem] 1.30 The number 0 times a vector
-> *Write the statement in your own words.* (LADR p. 15)
+> $0v=0$ for every $v\in V$ (scalar $0$ on the left, vector $0$ on the right).
+
+> [!remark] Why distributivity
+> The statement mixes scalar multiplication with the additive identity, and distributivity is the only axiom of [[Vector space]] relating the two operations.
 
 > [!proof]-
-> Proof idea.
+> $0v=(0+0)v=0v+0v$. Add the additive inverse of $0v$ to both sides to get $0=0v$.
 
-## Uses (cited in Axler's proof)
-- [[A number times the vector 0]] (1.31)
+## Uses (in the proof)
+- (definitions only)
 
 ## Connections
-- 
+- Companion: [[A number times the vector 0]] ($a0=0$). Used in [[The number −1 times a vector]].

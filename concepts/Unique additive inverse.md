@@ -8,13 +8,17 @@ aliases: ["LADR 1.27"]
 tags: [linear-algebra, ladr/1B]
 ---
 > [!theorem] 1.27 Unique additive inverse
-> *Write the statement in your own words.* (LADR p. 15)
+> Every element of a vector space has a unique additive inverse.
 
 > [!proof]-
-> Proof idea.
+> Let $v\in V$ and let $w,w'$ both be additive inverses of $v$. Then
+> $$
+> w=w+0=w+(v+w')=(w+v)+w'=0+w'=w'.
+> $$
 
-## Uses (cited in Axler's proof)
-- (no numbered results cited)
+## Uses (in the proof)
+- (definitions only)
 
 ## Connections
-- 
+- Makes the notation $-v$ and $w-v:=w+(-v)$ legitimate (notation 1.28).
+- Computed concretely in [[The number −1 times a vector]]: $-v=(-1)v$.

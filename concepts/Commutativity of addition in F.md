@@ -8,13 +8,16 @@ aliases: ["LADR 1.14"]
 tags: [linear-algebra, ladr/1A]
 ---
 > [!theorem] 1.14 Commutativity of addition in F
-> *Write the statement in your own words.* (LADR p. 6)
+> If $x,y\in\F^n$, then $x+y=y+x$.
 
 > [!proof]-
-> Proof idea.
+> Write $x=(x_1,\dots,x_n)$, $y=(y_1,\dots,y_n)$. By [[Addition in Fⁿ]] and commutativity in $\F$,
+> $$
+> x+y=(x_1+y_1,\dots,x_n+y_n)=(y_1+x_1,\dots,y_n+x_n)=y+x.
+> $$
 
-## Uses (cited in Axler's proof)
-- (no numbered results cited)
+## Uses (in the proof)
+- [[Addition in Fⁿ]] (1.13)
 
 ## Connections
-- 
+- Model for checking every axiom of [[Vector space]] for $\F^n$: reduce to the coordinates.

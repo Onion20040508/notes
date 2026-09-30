@@ -8,7 +8,10 @@ aliases: ["LADR 3.52"]
 tags: [linear-algebra, ladr/3C]
 ---
 > [!definition] 3.52 Column rank, row rank
-> *Write the statement in your own words.* (LADR p. 77)
+> For $A\in\F^{m,n}$: the *column rank* of $A$ is the dimension of the span of its columns in $\F^{m,1}$; the *row rank* is the dimension of the span of its rows in $\F^{1,n}$.
+
+> [!remark] Bounds
+> Both are at most $\min\{m,n\}$.
 
 ## Connections
-- 
+- They are equal: [[Column rank equals row rank (LADR 3.57)]], hence [[Rank]]. Column rank $=\dim\range T$: [[Dimension of range T equals column rank of M(T)]].

@@ -8,7 +8,7 @@ aliases: ["LADR 2.26"]
 tags: [linear-algebra, ladr/2B]
 ---
 > [!definition] 2.26 Basis
-> *Write the statement in your own words.* (LADR p. 39)
+> A *basis* of $V$ is a list of vectors in $V$ that is linearly independent and spans $V$.
 
 ## Connections
-- 
+- Characterization by unique coordinates: [[Criterion for basis]]. Existence: [[Basis of finite-dimensional vector space]]. All bases have the same length: [[Basis length does not depend on basis]].

@@ -8,13 +8,19 @@ aliases: ["LADR 3.81"]
 tags: [linear-algebra, ladr/3D]
 ---
 > [!theorem] 3.81 Matrix of product of linear maps
-> *Write the statement in your own words.* (LADR p. 91)
+> Let $T\in\Lin(U,V)$, $S\in\Lin(V,W)$ with bases $u_1,\dots,u_m$ of $U$, $v_1,\dots,v_n$ of $V$, $w_1,\dots,w_p$ of $W$. Then
+> $$
+> \mathcal{M}\big(ST,(u),(w)\big)=\mathcal{M}\big(S,(v),(w)\big)\,\mathcal{M}\big(T,(u),(v)\big).
+> $$
+
+> [!remark] Reading $\mathcal{M}(I,(u),(v))$
+> Its column $k$ holds the coordinates of $u_k$ in the basis $v_1,\dots,v_n$: it converts $u$-coordinates into $v$-coordinates.
 
 > [!proof]-
-> Proof idea.
+> This is [[Matrix of product of linear maps (LADR 3.43)]] with the bases written out.
 
-## Uses (cited in Axler's proof)
-- (no numbered results cited)
+## Uses (in the proof)
+- [[Matrix of product of linear maps (LADR 3.43)]] (3.43)
 
 ## Connections
-- 
+- Used in [[Matrix of identity operator with respect to two bases]] and [[Change-of-basis formula (LADR 3.84)]].

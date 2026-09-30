@@ -8,13 +8,13 @@ aliases: ["LADR 2.37"]
 tags: [linear-algebra, ladr/2C]
 ---
 > [!theorem] 2.37 Dimension of a subspace
-> *Write the statement in your own words.* (LADR p. 45)
+> If $V$ is finite-dimensional and $U$ is a subspace of $V$, then $\dim U\le\dim V$.
 
 > [!proof]-
-> Proof idea.
+> A basis of $U$ is a linearly independent list in $V$, and a basis of $V$ spans $V$; apply [[Length of linearly independent list ≤ length of spanning list]].
 
-## Uses (cited in Axler's proof)
+## Uses (in the proof)
 - [[Length of linearly independent list ≤ length of spanning list]] (2.22)
 
 ## Connections
-- 
+- Equality case: [[Subspace of full dimension equals the whole space]]. Used in [[Linear map to a lower-dimensional space is not injective]] and throughout Chapter 3.

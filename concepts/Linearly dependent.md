@@ -8,7 +8,7 @@ aliases: ["LADR 2.17"]
 tags: [linear-algebra, ladr/2A]
 ---
 > [!definition] 2.17 Linearly dependent
-> *Write the statement in your own words.* (LADR p. 33)
+> A list is *linearly dependent* if it is not linearly independent; i.e. there are $a_1,\dots,a_m\in\F$, not all $0$, with $a_1v_1+\dots+a_mv_m=0$.
 
 ## Connections
-- 
+- What you can do with a dependent list: [[Linear dependence lemma]].

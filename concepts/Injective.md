@@ -8,7 +8,7 @@ aliases: ["LADR 3.14"]
 tags: [linear-algebra, ladr/3B]
 ---
 > [!definition] 3.14 Injective
-> *Write the statement in your own words.* (LADR p. 60)
+> A function $T:V\to W$ is *injective* if $Tu=Tv$ implies $u=v$; equivalently, distinct inputs give distinct outputs.
 
 ## Connections
-- 
+- For linear maps it suffices to test $0$: [[Injectivity ⟺ null space equals {0}]].
