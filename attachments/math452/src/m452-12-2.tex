@@ -6,7 +6,7 @@
 % neighboring contours (dashed)
 \draw[dashed, figB!45] (0,0) ellipse (1.30 and 0.65);
 \draw[dashed, figB!45] (0,0) ellipse (2.55 and 1.28);
-\node[figB!55, font=\scriptsize] at (0,-0.81) {$F=c'$};
+\node[figB!55, font=\scriptsize] at (-0.45,0.3) {$F=c'$};
 \node[figB!55, font=\scriptsize] at (-2.15,-1.52) {$F=c''$};
 % the contour of interest (solid)
 \draw[very thick, figB] (0,0) ellipse (2.0 and 1.0);
@@ -49,8 +49,8 @@
 \filldraw[figB] (0.10,{sqrt(0.32/0.75)}) circle (1.0pt);
 \filldraw[figB] (0.10,{-sqrt(0.32/0.75)}) circle (1.0pt);
 % horizontal line: hits once
-\draw[dashed, figG!80] (-0.85,0.55) -- (0.85,0.55);
-\filldraw[figB] ({-0.75*0.3025+0.42},0.55) circle (1.0pt);
+\draw[dashed, figG!80] (-0.85,0.95) -- (0.85,0.95);
+\filldraw[figB] ({-0.75*0.9025+0.42},0.95) circle (1.0pt);
 \node[font=\scriptsize, align=center] at (0,-1.85) {vertical line hits twice ($y=f(x)$ fails);\\ horizontal lines hit once\\ $\Rightarrow$ $x=g(y)$};
 \end{scope}
 \end{tikzpicture}

@@ -28,4 +28,7 @@ tags: [multivariable-analysis, hub]
 - [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-9|Proposition §22.9: d² = 0 Is Clairaut's Theorem in Forms Language]]
 
 ## Connections
-- TODO
+- **Proof idea.** The mixed second difference I(h, k) is symmetric in the two directions. Applying the one-variable [[Mean Value Theorem]] twice, in either order, writes it as f_xy at one nearby point and as f_yx at another. Continuity at the point finishes the proof.
+- **Where hypotheses matter.** Continuity of the mixed partials is needed. For f = xy(x² − y²)/(x² + y²) with f(0, 0) = 0, both mixed partials exist at the origin, but they are 1 and −1.
+- **Linear algebra.** It makes the [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-2|Hessian]] a symmetric matrix, i.e. the second derivative is a symmetric bilinear form ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-7|§22.7]]). So the [[Real spectral theorem]] (LADR 7.29) applies, which is the basis of the [[Second Derivative Test in Several Variables]].
+- **In forms language.** It is equivalent to d² = 0 ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-9|§22.9]], [[Exterior Derivative Squares to Zero]]). It is also why the second-derivative terms cancel in the proof of [[Stokes' Theorem in ℝ³]], which therefore needs a C² parametrization.

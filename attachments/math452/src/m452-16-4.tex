@@ -1,0 +1,47 @@
+% Figure from MATH 452 notes, section 16. Compile with the notes preamble.
+\begin{tikzpicture}[scale=0.95,
+  E/.style={domain=#1, samples=60, variable=\t},
+  mk/.style={postaction={decorate}, decoration={markings, mark=at position 0.75 with {\arrow[scale=1.2]{Stealth}}}}]
+\def\ex{2.1+1.6*cos(25)*cos(\t)-0.95*sin(25)*sin(\t)}
+\def\ey{1.6+1.6*sin(25)*cos(\t)+0.95*cos(25)*sin(\t)}
+% ===== left panel: Type I split, for the  oint f dx  term =====
+\fill[figB!8] plot[domain=0:360, samples=90, variable=\t] ({\ex},{\ey}) -- cycle;
+\draw[-stealth, thin] (-0.2,0) -- (4.2,0) node[right, font=\scriptsize] {$x$};
+\draw[-stealth, thin] (0,-0.2) -- (0,3.2) node[above, font=\scriptsize] {$y$};
+\draw[thick, figB, mk] plot[E=164.52:344.52] ({\ex},{\ey});
+\draw[thick, figR, mk] plot[E=344.52:524.52] ({\ex},{\ey});
+\draw[black!40, dotted] (0.595,0) -- (0.595,1.178);
+\draw[black!40, dotted] (3.605,0) -- (3.605,2.022);
+\node[below, font=\scriptsize] at (0.595,0) {$a$};
+\node[below, font=\scriptsize] at (3.605,0) {$b$};
+\node[figB, font=\scriptsize, anchor=north west, inner sep=1pt] at (2.55,0.85) {$\gamma_1\colon y=\phi(x)$};
+\node[figR, font=\scriptsize, anchor=south east, inner sep=1pt] at (1.85,2.72) {$\gamma_2\colon y=\psi(x)$};
+% vertical fiber: FTC in y
+\draw[black!55, thick] (2.2,0.62) -- (2.2,2.636);
+\filldraw[figB] (2.2,0.62) circle (1.3pt);
+\filldraw[figR] (2.2,2.636) circle (1.3pt);
+\draw[black!40, dotted] (2.2,0) -- (2.2,0.62);
+\node[below, font=\scriptsize] at (2.2,0) {$x$};
+\node[font=\scriptsize, black!70, anchor=east] at (2.15,1.55) {$\int_{\phi}^{\psi} f_y\,dy$};
+% ===== right panel: Type II split, for the  oint g dy  term =====
+\begin{scope}[shift={(5.3,0)}]
+\fill[figB!8] plot[domain=0:360, samples=90, variable=\t] ({\ex},{\ey}) -- cycle;
+\draw[-stealth, thin] (-0.2,0) -- (4.2,0) node[right, font=\scriptsize] {$x$};
+\draw[-stealth, thin] (0,-0.2) -- (0,3.2) node[above, font=\scriptsize] {$y$};
+\draw[thick, figR, mk] plot[E=51.86:231.86] ({\ex},{\ey});
+\draw[thick, figB, mk] plot[E=231.86:411.86] ({\ex},{\ey});
+\draw[black!40, dotted] (0,0.505) -- (1.52,0.505);
+\draw[black!40, dotted] (0,2.695) -- (2.68,2.695);
+\node[left, font=\scriptsize] at (0,0.505) {$c$};
+\node[left, font=\scriptsize] at (0,2.695) {$d$};
+\node[figR, font=\scriptsize, anchor=north west, inner sep=1pt] at (1.15,2.3) {$\gamma_3\colon x=\alpha(y)$};
+\node[figB, font=\scriptsize, anchor=west, inner sep=1pt] at (3.55,1.2) {$\gamma_4\colon x=\beta(y)$};
+% horizontal fiber: FTC in x
+\draw[black!55, thick] (0.711,1.6) -- (3.488,1.6);
+\filldraw[figR] (0.711,1.6) circle (1.3pt);
+\filldraw[figB] (3.488,1.6) circle (1.3pt);
+\draw[black!40, dotted] (0,1.6) -- (0.711,1.6);
+\node[left, font=\scriptsize] at (0,1.6) {$y$};
+\node[font=\scriptsize, black!70, anchor=north] at (2.1,1.56) {$\int_{\alpha}^{\beta} g_x\,dx$};
+\end{scope}
+\end{tikzpicture}%

@@ -24,4 +24,7 @@ tags: [multivariable-analysis, hub]
 - (not cited later in the course)
 
 ## Connections
-- TODO
+- **Proof idea.** At a critical point, second-order [[Multivariable Taylor's Theorem]] (from the 451 [[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|Taylor's theorem]]) gives f(x₀ + h) − f(x₀) = ½ hᵀHh, with H evaluated at an intermediate point. Continuity of the second partials keeps H definite nearby. In one variable, H is just f″(x₀).
+- **Linear algebra.** H is symmetric by [[Schwarz–Clairaut Theorem]], so the [[Real spectral theorem]] (LADR 7.29) diagonalizes it. H is positive definite iff all eigenvalues are positive, negative definite iff all are negative, and indefinite iff there are signs of both kinds. For other tests, see [[Linear Algebra 7C Positive Operators#^ladr-7-38|LADR 7.38]] and [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-9|Sylvester's criterion]].
+- **Where hypotheses matter.** A semidefinite H is inconclusive. For example, x⁴ + y⁴ (a minimum) and x⁴ − y⁴ (a saddle) both have H = 0 at the origin. Candidates come from [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-1|Fermat's theorem]] (∇f = 0).
+- **Local vs. global.** The test is local. Global extrema on a compact set exist ([[Heine–Borel Theorem]], [[Continuous Image of a Compact Space is Compact]]) and are found by comparing values at the candidates and on the boundary ([[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-10|The Logical Flow]]).

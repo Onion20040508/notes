@@ -34,7 +34,7 @@ F(t) = f(x + th, y + tk), \quad 0 \leq t \leq 1.
 $$
 
 ![[m452-9-1.svg]]
-*The segment from $(x, y)$ to $(x+h, y+k)$, traced by $(x + th, y + tk)$ as $t$ runs over $[0,1]$.*
+*Reducing to one variable. Left: the segment from $(x, y)$ to $(x+h, y+k)$, traced by $(x + th, y + tk)$ (blue point) as $t$ runs over $[0,1]$. Right: $f$ read along the segment is the one-variable function $F(t)$, with $F(0) = f(x,y)$ and $F(1) = f(x+h,y+k)$. The single-variable Lagrange remainder is evaluated at some $\theta \in (0,1)$ (red), which on the left is the point $(x+\theta h,\, y+\theta k)$ of the segment — where all the $(N+1)$-st partials in $R_{N+1}$ are evaluated.*
 
 Key observations:
 - $F(0) = f(x, y)$ — the starting point

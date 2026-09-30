@@ -17,4 +17,7 @@ tags: [multivariable-analysis, hub]
 - (not cited later in the course)
 
 ## Connections
-- TODO
+- **Proof idea.** On a region of both [[Multivariable Analysis §15 Multivariable Integration#^def-15-12|Type I and Type II]], the [[Fundamental Theorem of Calculus]] in y gives ∮ f dx = −∬ f_y, and in x it gives ∮ g dy = ∬ g_x. Iterated integrals equal double integrals by Fubini ([[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|§15.9]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-10|§15.10]]). General regions are subdivided, and the internal edges cancel.
+- **Two faces.** In circulation form it is [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-3|2D Stokes]], and in flux form it is the [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-2|Divergence Theorem in ℝ²]] ([[Multivariable Analysis §16 Line Integrals and Green's Theorem#^rem-16-4|Two Faces of Green's Theorem]]).
+- **Chain.** Pulled back to a parameter domain it proves [[Stokes' Theorem in ℝ³]]. The flux form grows into the [[Divergence Theorem in ℝⁿ]]. In forms language it is the [[Generalized Stokes' Theorem]] for the 1-form f dx + g dy, with d(f dx + g dy) = (g_x − f_y) dx∧dy.
+- **Topology.** “Curl-free ⇒ conservative” needs a region without holes. The [[Angle form on the punctured plane]] is closed but not exact ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-11|§22.11]]). The relevant notion is [[Topology §23 The Fundamental Group#^def-23-3|simply connected]] (590 §23.3), and the hole is seen by π₁(S¹) ≅ ℤ ([[Fundamental Group of the Circle]]).

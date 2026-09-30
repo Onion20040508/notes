@@ -1,0 +1,24 @@
+% Figure from MATH 452 notes, section 4. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0]
+  % part of the ball B((x0,y0), r) inside the open rectangle R
+  \begin{scope}
+    \clip (-1.7,-0.75) rectangle (3.9,2.35);
+    \draw[black!55, thin, dashed] (0,0) circle (3.3);
+  \end{scope}
+  \node[black!70, font=\scriptsize, anchor=north west, inner sep=1pt] at (-1.5,2.2) {$B((x_0,y_0),r) \subseteq R$};
+  % the direct increment (h,k)
+  \draw[black!45, thin, dashed] (0,0) -- (1.9,1.2);
+  % the L-shaped path: first in x, then in y
+  \draw[figB, thick] (0,0) -- (1.9,0);
+  \draw[figB, thick] (1.9,0) -- (1.9,1.2);
+  % the MVT points
+  \filldraw[figR] (0.75,0) circle (1.4pt) node[above, font=\scriptsize, inner sep=2.5pt] {$f_x$};
+  \filldraw[figR] (1.9,0.55) circle (1.4pt) node[left, font=\scriptsize, inner sep=2.5pt] {$f_y$};
+  % leg labels: the MVT bounds
+  \node[figB, font=\scriptsize, anchor=north] at (0.62,-0.08) {$\le M|h|$};
+  \node[figB, font=\scriptsize, anchor=west] at (1.97,0.55) {$\le M|k|$};
+  % corners
+  \filldraw (0,0) circle (1.3pt) node[left, font=\scriptsize, inner sep=2.5pt] {$(x_0,y_0)$};
+  \filldraw (1.9,0) circle (1.3pt) node[below, font=\scriptsize, inner sep=2.5pt, xshift=6pt] {$(x_0+h,\,y_0)$};
+  \filldraw (1.9,1.2) circle (1.3pt) node[above, font=\scriptsize, inner sep=2.5pt] {$(x_0+h,\,y_0+k)$};
+\end{tikzpicture}

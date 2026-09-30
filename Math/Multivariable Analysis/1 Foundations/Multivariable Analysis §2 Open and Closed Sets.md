@@ -32,6 +32,9 @@ tags: [multivariable-analysis, math452]
 
 ^rem-2-1
 
+![[m452-2-2.svg]]
+*Why balls and squares are interchangeable: the square neighborhood of side $2\delta$ (red) contains the ball $B((x_0,y_0),\delta)$ and is contained in the ball $B((x_0,y_0),\sqrt2\,\delta)$ (blue, dashed). So every ball contains a square and every square contains a ball around the same center, and "interior point", "open", "boundary point" come out the same with either kind of neighborhood.*
+
 > [!remark]- Connections
 > - Square neighborhoods are the balls of the [[Topology §11 Metric Topology#^ex-11-2|square metric]]; the precise form of this remark is [[Topology §11 Metric Topology#^thm-11-2|Euclidean and Square Metrics Induce Same Topology]] (MATH 590), resting on the inequality of [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^prop-13-1|Equivalence of the Two Distances]] (MATH 451).
 
@@ -44,7 +47,7 @@ tags: [multivariable-analysis, math452]
 ^def-2-3
 
 ![[m452-2-1.svg]]
-*An interior point has a ball entirely inside $E$; an exterior point has a ball entirely outside; a boundary point's every ball meets both $E$ and $E^c$.*
+*The three cases of Definition §2.3, with the open balls $B(x,\varepsilon)$ dashed. An interior point has a ball entirely inside $E$ (green, filled); an exterior point has a ball entirely inside $E^c$ (green, empty); at a boundary point every ball, however small, meets both $E$ and $E^c$ (red).*
 
 > [!example] Example §2.1
 > For $E = [0, 1)$, the points $0$ and $1$ are both boundary points.

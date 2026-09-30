@@ -1,24 +1,47 @@
 % Figure from MATH 452 notes, section 10. Compile with the notes preamble.
-\begin{tikzpicture}[scale=1.2]
-% Left plane (x,y)
-\draw[->] (0,0) -- (2,0) node[right] {$x$};
-\draw[->] (0,0) -- (0,2) node[above] {$y$};
-\node at (1,1) {$\bullet$};
-\node at (1.3,1.3) {$(x,y)$};
-
-% Arrow to middle
-\draw[->, thick] (2.3,1) -- (3.7,1) node[midway, above] {$(\varphi, \psi)$};
-
-% Middle plane (xi, eta)
-\draw[->] (4,0) -- (6,0) node[right] {$\xi$};
-\draw[->] (4,0) -- (4,2) node[above] {$\eta$};
-\node at (5,1) {$\bullet$};
-\node at (5.3,1.3) {$(\xi,\eta)$};
-
-% Arrow to right
-\draw[->, thick] (6.3,1) -- (7.7,1) node[midway, above] {$f$};
-
-% Right (output)
-\draw[->] (8,0) -- (8,2) node[above] {$f$};
-\node at (8,1) {$\bullet$};
+\begin{tikzpicture}[scale=1.0,
+  % a nonlinear map (phi, psi) near (x0,y0), in local coordinates (u,v)
+  declare function={Mx(\u,\v) = 0.9*\u - 0.35*\v + 0.25*\v*\v; My(\u,\v) = 0.4*\u + 0.8*\v + 0.2*\u*\u;}]
+% ---------- left: the (x,y)-plane ----------
+\draw[-stealth, thin] (-0.1,0) -- (2.1,0) node[right, font=\scriptsize] {$x$};
+\draw[-stealth, thin] (0,-0.1) -- (0,2.0) node[above, font=\scriptsize] {$y$};
+\begin{scope}[shift={(1.05,1.0)}]
+  \foreach \s in {-0.5,-0.25,0,0.25,0.5} {
+    \draw[figB!45, thin] (\s,-0.5) -- (\s,0.5);
+    \draw[figB!45, thin] (-0.5,\s) -- (0.5,\s);
+  }
+  \draw[-stealth, figR, thick] (0,0) -- (0.45,0.3);
+  \node[figR, font=\scriptsize, anchor=south, inner sep=1pt] at (0.3,0.5) {$(h,k)$};
+  \filldraw (0,0) circle (1.2pt);
+  \node[font=\scriptsize, anchor=north, inner sep=2pt] at (0,-0.5) {$(x_0,y_0)$};
+\end{scope}
+% ---------- arrow (phi, psi) ----------
+\draw[-stealth, thick] (2.3,1.0) -- (3.3,1.0) node[midway, above, font=\scriptsize] {$(\varphi,\psi)$}
+  node[midway, below, font=\scriptsize, figR] {$D(\varphi,\psi)$};
+% ---------- middle: the (xi,eta)-plane ----------
+\begin{scope}[shift={(3.5,0)}]
+\draw[-stealth, thin] (-0.1,0) -- (2.1,0) node[right, font=\scriptsize] {$\xi$};
+\draw[-stealth, thin] (0,-0.1) -- (0,2.0) node[above, font=\scriptsize] {$\eta$};
+\begin{scope}[shift={(1.05,1.0)}]
+  \foreach \s in {-0.5,-0.25,0,0.25,0.5} {
+    \draw[figB!45, thin, domain=-0.5:0.5, samples=12, smooth, variable=\t] plot ({Mx(\s,\t)},{My(\s,\t)});
+    \draw[figB!45, thin, domain=-0.5:0.5, samples=12, smooth, variable=\t] plot ({Mx(\t,\s)},{My(\t,\s)});
+  }
+  % tangent vector D(phi,psi)(h,k) = (0.30, 0.42); true image point M(0.45,0.3)
+  \draw[-stealth, figR, thick] (0,0) -- (0.30,0.42);
+  \filldraw[black!60] ({Mx(0.45,0.3)},{My(0.45,0.3)}) circle (0.9pt);
+  \filldraw (0,0) circle (1.2pt);
+  \node[font=\scriptsize, anchor=north, inner sep=2pt] at (0,-0.62) {$(\xi_0,\eta_0)$};
+\end{scope}
+\end{scope}
+% ---------- arrow f ----------
+\draw[-stealth, thick] (5.8,1.0) -- (6.8,1.0) node[midway, above, font=\scriptsize] {$f$}
+  node[midway, below, font=\scriptsize, figR] {$Df$};
+% ---------- right: the real line ----------
+\draw[-stealth, thin] (7.1,-0.1) -- (7.1,2.0) node[above, font=\scriptsize] {$\mathbb{R}$};
+\draw[figR, very thick] (7.1,1.0) -- (7.1,1.55);
+\filldraw (7.1,1.0) circle (1.2pt) node[right, font=\scriptsize, inner sep=2.5pt] {$g(x_0,y_0)$};
+% ---------- the composite ----------
+\draw[-stealth, figB, thick] (1.05,-0.45) .. controls (2.5,-1.05) and (5.6,-1.05) .. (7.0,-0.2);
+\node[figB, font=\scriptsize, fill=white, inner sep=1pt] at (4.05,-0.9) {$g = f\circ(\varphi,\psi), \quad Dg = Df\cdot D(\varphi,\psi)$};
 \end{tikzpicture}

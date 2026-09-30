@@ -1,50 +1,33 @@
 % Figure from MATH 452 notes, section 15. Compile with the notes preamble.
+% D = ellipse centered (2,1.5), semi-axes 1.75 and 1.3, on the grid [0,4]x[0,3].
+% A square is inner if all four corners lie in D (D convex); it meets D iff the point of the
+% square nearest the center (clamped coordinates) lies in D.
 \begin{tikzpicture}[scale=0.88]
-% ---- Panel 1: coarse mesh ----
-\begin{scope}[shift={(0,0)}]
-% outer squares (intersecting D): shade light red; inner squares: shade light blue
-% region D: ellipse-ish blob centered (2,1.7), radii 1.75/1.3
-% grid of side 1 over [0,4]x[0,3.5]... determine by formula: square [i,i+1]x[j,j+1]
-% Precomputed classification for ellipse ((x-2)/1.75)^2+((y-1.7)/1.3)^2 <= 1
-% inner: none at mesh 1 except center column squares [1,2]x[1,2],[2,3]x[1,2]? check corners:
-% square [1,2]x[1,2]: corners (1,1):((-1)/1.75)^2+((-.7)/1.3)^2=0.327+0.29=0.62<1 ok;(2,1):0+0.29<1;(1,2):0.327+0.053=0.38;(2,2):0.053 -> all inside => inner
-% square [2,3]x[1,2]: mirror => inner
-% fill outer-only squares light red: those intersecting but not inside
-\foreach \i/\j in {0/0,1/0,2/0,3/0,0/1,3/1,0/2,1/2,2/2,3/2}{
-  \fill[figR!14] (\i,\j) rectangle ++(1,1);}
-\foreach \i/\j in {1/1,2/1}{
-  \fill[figB!22] (\i,\j) rectangle ++(1,1);}
-% grid
-\draw[gray!60, thin] (0,0) grid[step=1] (4,3);
-% region boundary
-\draw[very thick, figG] (2,1.7) ellipse (1.75 and 1.3);
-\node[font=\scriptsize, align=center] at (2,-0.62) {mesh $1$: \; $A_0^-(D) = 2$, \; $A_0^+(D) = 12$};
-\end{scope}
-% ---- Panel 2: fine mesh (side 1/2) ----
-\begin{scope}[shift={(6.3,0)}]
-% classify half-squares: side 0.5 over [0,4]x[0,3]
-\foreach \i in {0,...,7}{ \foreach \j in {0,...,5}{
-  % corners of square [i/2,(i+1)/2] x [j/2,(j+1)/2]
-  \pgfmathsetmacro{\xa}{\i/2} \pgfmathsetmacro{\xb}{(\i+1)/2}
-  \pgfmathsetmacro{\ya}{\j/2} \pgfmathsetmacro{\yb}{(\j+1)/2}
-  \pgfmathsetmacro{\caa}{((\xa-2)/1.75)^2+((\ya-1.7)/1.3)^2}
-  \pgfmathsetmacro{\cab}{((\xa-2)/1.75)^2+((\yb-1.7)/1.3)^2}
-  \pgfmathsetmacro{\cba}{((\xb-2)/1.75)^2+((\ya-1.7)/1.3)^2}
-  \pgfmathsetmacro{\cbb}{((\xb-2)/1.75)^2+((\yb-1.7)/1.3)^2}
-  \pgfmathtruncatemacro{\allin}{((\caa<1)&&(\cab<1)&&(\cba<1)&&(\cbb<1)) ? 1 : 0}
-  % crude intersect test: any corner inside OR center inside
-  \pgfmathsetmacro{\cc}{(((\xa+\xb)/2-2)/1.75)^2+(((\ya+\yb)/2-1.7)/1.3)^2}
-  \pgfmathtruncatemacro{\anyin}{((\caa<1)||(\cab<1)||(\cba<1)||(\cbb<1)||(\cc<1)) ? 1 : 0}
+\foreach \s/\n/\m/\sh in {1/3/2/0, 0.5/7/5/6.3}{
+\begin{scope}[shift={(\sh,0)}]
+\foreach \i in {0,...,\n}{ \foreach \j in {0,...,\m}{
+  \pgfmathsetmacro{\xa}{\i*\s} \pgfmathsetmacro{\xb}{(\i+1)*\s}
+  \pgfmathsetmacro{\ya}{\j*\s} \pgfmathsetmacro{\yb}{(\j+1)*\s}
+  \pgfmathsetmacro{\caa}{((\xa-2)/1.75)^2+((\ya-1.5)/1.3)^2}
+  \pgfmathsetmacro{\cab}{((\xa-2)/1.75)^2+((\yb-1.5)/1.3)^2}
+  \pgfmathsetmacro{\cba}{((\xb-2)/1.75)^2+((\ya-1.5)/1.3)^2}
+  \pgfmathsetmacro{\cbb}{((\xb-2)/1.75)^2+((\yb-1.5)/1.3)^2}
+  \pgfmathtruncatemacro{\allin}{((\caa<=1)&&(\cab<=1)&&(\cba<=1)&&(\cbb<=1)) ? 1 : 0}
+  \pgfmathsetmacro{\px}{max(\xa,min(2,\xb))} \pgfmathsetmacro{\py}{max(\ya,min(1.5,\yb))}
+  \pgfmathsetmacro{\cc}{((\px-2)/1.75)^2+((\py-1.5)/1.3)^2}
+  \pgfmathtruncatemacro{\meets}{(\cc<=1) ? 1 : 0}
   \ifnum\allin>0
-    \fill[figB!22] (\xa,\ya) rectangle (\xb,\yb);
+    \fill[figB!25] (\xa,\ya) rectangle (\xb,\yb);
   \else
-    \ifnum\anyin>0
-      \fill[figR!14] (\xa,\ya) rectangle (\xb,\yb);
+    \ifnum\meets>0
+      \fill[figR!18] (\xa,\ya) rectangle (\xb,\yb);
     \fi
   \fi
 }}
-\draw[gray!60, ultra thin] (0,0) grid[step=0.5] (4,3);
-\draw[very thick, figG] (2,1.7) ellipse (1.75 and 1.3);
-\node[font=\scriptsize, align=center] at (2,-0.62) {mesh $\tfrac12$: the gap $A_i^+ - A_i^-$ shrinks};
-\end{scope}
+\draw[black!35, thin] (0,0) grid[step=\s] (4,3);
+\draw[black, thick] (2,1.5) ellipse (1.75 and 1.3);
+\node[font=\small, anchor=south west, inner sep=1pt] at ({2+1.75*cos(40)},{1.5+1.3*sin(40)}) {$D$};
+\end{scope}}
+\node[font=\scriptsize, align=center, anchor=north] at (2,-0.12) {$i = 0$ (side $1$)\\ $A_0^-(D) = 2 \cdot 1 = 2,\ \ A_0^+(D) = 12 \cdot 1 = 12$};
+\node[font=\scriptsize, align=center, anchor=north] at (8.3,-0.12) {$i = 1$ (side $\tfrac12$)\\ $A_1^-(D) = 20 \cdot \tfrac14 = 5,\ \ A_1^+(D) = 44 \cdot \tfrac14 = 11$};
 \end{tikzpicture}

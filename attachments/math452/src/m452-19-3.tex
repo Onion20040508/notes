@@ -1,0 +1,21 @@
+% Figure from MATH 452 notes, section 19. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.15]
+\draw[-stealth, thin] (0,-0.2) -- (0,3.6) node[above, font=\scriptsize] {$z$};
+\draw[-stealth, thin] (-0.2,0) -- (3.6,0) node[right, font=\scriptsize] {distance from the $z$-axis};
+\draw[black!35, thin] (0,0) -- (1.352,1.861);
+\draw[black!35, thin] (0,0) -- (1.992,1.150);
+\draw[-stealth, black!70] (0.000,0.700) arc[start angle=90, end angle=54, radius=0.7];
+\node[font=\scriptsize] at (0.294,0.904) {$\theta$};
+\draw[black!70] (0.588,0.809) arc[start angle=54, end angle=30, radius=1.0];
+\node[font=\scriptsize, anchor=west] at (0.780,0.703) {$d\theta$};
+\filldraw[fill=figB!12, draw=figB, thick] (1.352,1.861) arc[start angle=54, end angle=30, radius=2.3] -- (2.771,1.600) arc[start angle=30, end angle=54, radius=3.1999999999999997] -- cycle;
+\draw[black!55, dashed] (0,1.861) -- (1.352,1.861);
+\node[font=\scriptsize, black!70, anchor=south] at (0.676,1.861) {$r\sin\theta$};
+\node[font=\scriptsize, anchor=south east, inner sep=1pt] at (1.468,2.021) {$dr$};
+\node[font=\scriptsize, anchor=west, inner sep=2pt] at (2.628,1.826) {$r\,d\theta$};
+\draw[-stealth, thick, figR] (2.239,2.286) -- (2.659,2.715) node[anchor=south west, inner sep=1.5pt, font=\scriptsize] {$+\hat{r}$};
+\draw[-stealth, thick, figR] (1.609,1.643) -- (1.294,1.322) node[anchor=east, inner sep=1.5pt, font=\scriptsize] {$-\hat{r}$};
+\draw[-stealth, thick, figG] (2.537,1.465) -- (2.837,0.945) node[anchor=north, inner sep=1.5pt, font=\scriptsize] {$+\hat{\theta}$};
+\draw[-stealth, thick, figG] (1.722,2.370) -- (1.237,2.723) node[anchor=south, inner sep=1.5pt, font=\scriptsize] {$-\hat{\theta}$};
+\filldraw[black] (0,0) circle (1pt) node[anchor=north east, font=\scriptsize] {$0$};
+\end{tikzpicture}%

@@ -45,3 +45,6 @@ tags: [multivariable-analysis, math452]
 ^pf-ex-1-1
 
 *Uses:* [[Multivariable Analysis §1 Sequences and Limits in ℝⁿ#^def-1-1|Def. §1.1]]
+
+![[m452-1-1.svg]]
+*The sequence $a_n = (e^{-n}\cos n,\, e^{-n}\sin n)$ spirals into $(0,0)$ along the dotted curve, with $|a_n - (0,0)| = e^{-n}$. For $\varepsilon = 0.2$ the proof's choice is $N = \lfloor \ln 5 \rfloor + 1 = 2$: $a_1$ (blue, at distance $e^{-1} \approx 0.37$) lies outside the dashed $\varepsilon$-ball, and every $a_n$ with $n \geq 2$ (red) lies inside it. Convergence means this happens for every $\varepsilon$, however small the ball.*

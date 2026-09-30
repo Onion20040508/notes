@@ -72,6 +72,9 @@ $$
 
 In other words: **the Jacobian is the linear approximation to the mapping near a point**.
 
+![[m452-13-2.svg]]
+*The Jacobian as the linear approximation, for $u = x^2 - y^2$, $v = 2xy$ (Example §13.2) at $(x_0, y_0) = (1, \tfrac12)$. The small cell with sides $dx, dy$ (left) is carried to a slightly curved image cell (blue). The columns of $J$, scaled by $dx$ and $dy$ (red arrows), span the parallelogram $J$ makes of the cell (dashed), which hugs the true image better and better as the cell shrinks. Its area is $|\det J|\,dx\,dy$, here $\det J = 4(x_0^2 + y_0^2) = 5$. When $\det J \neq 0$ the parallelogram is not flattened, and $(du, dv)$ determines $(dx, dy)$.*
+
 **When is the mapping invertible?** For the inverse to exist locally, we need to recover $(dx, dy)$ from $(du, dv)$:
 
 $$
@@ -374,7 +377,7 @@ $$
 ^ex-13-2
 
 ![[m452-13-1.svg]]
-*The Inverse Function Theorem as a mapping statement: if $J = \det D\Phi \neq 0$ at a point, the map takes the flat grid to a curvilinear grid that is locally one-to-one — grid lines cross transversally, so each image point has a unique preimage nearby, and a local $C^1$ inverse exists. Where $J = 0$ the grid degenerates (cells collapse) and invertibility can fail.*
+*Local but not global inversion for $u = x^2 - y^2$, $v = 2xy$. Near $(x_0, y_0) = (1, \tfrac12)$, where $\det J = 4(x^2 + y^2) = 5 \neq 0$, the small square $Q$ (blue) is carried one-to-one onto a curvilinear patch around $(u_0, v_0) = (\tfrac34, 1)$: the grid lines stay transversal, and on the patch the local inverse $(f, g)$ (green) exists. The map cannot be inverted globally, though. The antipodal square $-Q$ (red, dashed) lands on exactly the same patch, because $(-x, -y)$ and $(x, y)$ have the same image. The theorem only promises an inverse near one preimage at a time. At the origin (hollow dot), $\det J = 0$ and even the local statement fails.*
 
 ## Example: Polar Coordinates
 

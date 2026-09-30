@@ -1,37 +1,52 @@
 % Figure from MATH 452 notes, section 13. Compile with the notes preamble.
-\begin{tikzpicture}[scale=0.94]
-% left: (u,v) grid
+\begin{tikzpicture}[scale=1.2]
+% ================= left: the (x,y)-plane =================
 \begin{scope}
-\draw[->] (-0.3,0) -- (3.0,0) node[right, font=\small] {$u$};
-\draw[->] (0,-0.3) -- (0,2.7) node[above, font=\small] {$v$};
-\draw[thick, figB!70, fill=figB!7] (0.4,0.35) rectangle (2.5,2.15);
-\foreach \u in {0.925,1.45,1.975} \draw[figB!45, thin] (\u,0.35) -- (\u,2.15);
-\foreach \v in {0.8,1.25,1.7} \draw[figB!45, thin] (0.4,\v) -- (2.5,\v);
-\filldraw (1.45,1.25) circle (1.3pt);
-\node[font=\scriptsize, below right] at (1.45,1.25) {$(u_0,v_0)$};
+\draw[-stealth, thin] (-1.55,0) -- (1.65,0) node[right, font=\scriptsize] {$x$};
+\draw[-stealth, thin] (0,-1.0) -- (0,1.05) node[above, font=\scriptsize] {$y$};
+% square Q around (x0,y0) = (1, 0.5)
+\fill[figB!12] (0.7,0.25) rectangle (1.3,0.75);
+\foreach \a in {0.85,1.0,1.15} \draw[figB!45, thin] (\a,0.25) -- (\a,0.75);
+\foreach \b in {0.375,0.5,0.625} \draw[figB!45, thin] (0.7,\b) -- (1.3,\b);
+\draw[figB, thick] (0.7,0.25) rectangle (1.3,0.75);
+\filldraw (1,0.5) circle (1.1pt);
+\node[font=\scriptsize, anchor=south, inner sep=2pt] at (1,0.75) {$(x_0,y_0)=(1,\tfrac12)$};
+% antipodal square -Q
+\fill[figR!10] (-1.3,-0.75) rectangle (-0.7,-0.25);
+\draw[figR, thick, dashed] (-1.3,-0.75) rectangle (-0.7,-0.25);
+\filldraw[figR] (-1,-0.5) circle (1.1pt);
+\node[font=\scriptsize, figR, anchor=north, inner sep=2pt] at (-1,-0.75) {$(-x_0,-y_0)$};
+% the origin, where det J = 0
+\filldraw[fill=white, draw=black] (0,0) circle (1.1pt);
 \end{scope}
-% forward and inverse arrows
-\draw[->, thick] (3.3,1.55) .. controls (4.0,1.9) .. (4.7,1.55);
-\node[font=\small] at (4.0,2.05) {$\Phi$};
-\draw[<-, thick, figG] (3.3,0.95) .. controls (4.0,0.6) .. (4.7,0.95);
-\node[figG!75!black, font=\small] at (4.0,0.42) {$\Phi^{-1}$ (local)};
-% right: curvilinear image grid
-\begin{scope}[shift={(5.2,0)}]
-\draw[->] (-0.3,0) -- (3.3,0) node[right, font=\small] {$x$};
-\draw[->] (0,-0.3) -- (0,2.7) node[above, font=\small] {$y$};
-\draw[thick, figB!70, fill=figB!7]
-  (0.5,0.5) .. controls (1.3,0.25) and (2.1,0.35) .. (2.9,0.75)
-  .. controls (3.15,1.25) and (3.05,1.8) .. (2.7,2.2)
-  .. controls (1.9,2.45) and (1.1,2.3) .. (0.6,1.95)
-  .. controls (0.35,1.45) and (0.38,0.95) .. (0.5,0.5) -- cycle;
-\draw[figB!45, thin] (1.05,0.36) .. controls (1.1,1.0) .. (1.02,2.32);
-\draw[figB!45, thin] (1.7,0.28) .. controls (1.76,1.0) .. (1.68,2.42);
-\draw[figB!45, thin] (2.35,0.42) .. controls (2.42,1.1) .. (2.28,2.35);
-\draw[figB!45, thin] (0.42,0.95) .. controls (1.5,0.75) .. (3.05,1.05);
-\draw[figB!45, thin] (0.40,1.42) .. controls (1.5,1.25) .. (3.02,1.55);
-\draw[figB!45, thin] (0.48,1.88) .. controls (1.5,1.75) .. (2.9,2.0);
-\filldraw (1.72,1.28) circle (1.3pt);
-\node[font=\scriptsize, below right] at (1.72,1.28) {$\Phi(u_0,v_0)$};
-\node[font=\scriptsize, figB!80!black, align=center] at (1.7,-0.62) {curvilinear grid; \; $J \neq 0$ at $(u_0,v_0)$};
+% ================= arrows =================
+\draw[-stealth, thick] (1.95,0.75) .. controls (2.35,0.95) .. (2.75,0.75);
+\node[font=\scriptsize, anchor=south] at (2.35,0.93) {$(\varphi,\psi)$};
+\draw[-stealth, thick, figG] (2.75,0.3) .. controls (2.35,0.1) .. (1.95,0.3);
+\node[font=\scriptsize, figG!80!black, anchor=north, align=center] at (2.35,0.12) {$(f,g)$\\ local};
+% ================= right: the (u,v)-plane =================
+\begin{scope}[shift={(3.45,-0.25)}]
+\draw[-stealth, thin] (-0.4,0) -- (1.95,0) node[right, font=\scriptsize] {$u$};
+\draw[-stealth, thin] (0,-0.2) -- (0,2.2) node[above, font=\scriptsize] {$v$};
+% image region, boundary traced counterclockwise
+\fill[figB!12]
+  plot[domain=0.7:1.3, samples=20] (\x*\x-0.0625, 0.5*\x)
+  -- plot[domain=0.25:0.75, samples=20] (1.69-\x*\x, 2.6*\x)
+  -- plot[domain=1.3:0.7, samples=20] (\x*\x-0.5625, 1.5*\x)
+  -- plot[domain=0.75:0.25, samples=20] (0.49-\x*\x, 1.4*\x) -- cycle;
+\foreach \a in {0.85,1.0,1.15}
+  \draw[figB!45, thin, domain=0.25:0.75, samples=20] plot ({\a*\a-\x*\x}, {2*\a*\x});
+\foreach \b in {0.375,0.5,0.625}
+  \draw[figB!45, thin, domain=0.7:1.3, samples=20] plot ({\x*\x-\b*\b}, {2*\x*\b});
+\draw[figB, thick]
+  plot[domain=0.7:1.3, samples=20] (\x*\x-0.0625, 0.5*\x)
+  -- plot[domain=0.25:0.75, samples=20] (1.69-\x*\x, 2.6*\x)
+  -- plot[domain=1.3:0.7, samples=20] (\x*\x-0.5625, 1.5*\x)
+  -- plot[domain=0.75:0.25, samples=20] (0.49-\x*\x, 1.4*\x) -- cycle;
+\filldraw (0.75,1) circle (1.1pt);
+\node[font=\scriptsize, anchor=north west, inner sep=1pt, fill=figB!12] at (0.78,0.97) {$(u_0,v_0)$};
+\node[font=\scriptsize, figB, align=left, anchor=west] at (1.2,1.95) {image of $Q$\\ \textcolor{figR}{and of $-Q$}};
 \end{scope}
+\node[font=\scriptsize, figB, anchor=west] at (1.32,0.5) {$Q$};
+\node[font=\scriptsize, figR, anchor=east] at (-1.32,-0.5) {$-Q$};
 \end{tikzpicture}

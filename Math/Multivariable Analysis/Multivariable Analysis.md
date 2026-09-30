@@ -101,3 +101,8 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Topology §13 Connected Spaces#^def-13-1|Definition §13.1: Separation and Connected Space]] (2)
 
 ## Workhorse examples
+- [[2xy∕(x²+y²) family]]
+- [[Angle form on the punctured plane]]
+- [[Polar and spherical coordinates]]
+- [[Radial functions]]
+- [[Unit circle and unit sphere]]

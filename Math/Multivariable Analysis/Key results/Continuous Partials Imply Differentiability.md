@@ -26,4 +26,7 @@ tags: [multivariable-analysis, hub]
 - [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-1|Theorem §12.1: Implicit Function Theorem]]
 
 ## Connections
-- TODO
+- **Proof idea.** Go from (x₀, y₀) to (x₀ + h, y₀ + k) in an x-step and a y-step, and apply the one-variable [[Mean Value Theorem]] to each slice. Continuity of f_x and f_y at the point makes the error o(ρ).
+- **Where hypotheses matter.** Partials that merely exist are not enough: the [[2xy∕(x²+y²) family|function 2xy/(x² + y²)]] has both partials at the origin but is not differentiable there ([[Multivariable Analysis §6 Differentiability#^ex-6-1|Example §6.1]]).
+- **What it produces.** A total derivative, i.e. the linear map (h, k) ↦ f_x h + f_y k ([[Multivariable Analysis §6 Differentiability#^def-6-2|Def. §6.2]]), a linear functional on ℝ² ([[Linear Algebra 3F Duality#^ladr-3-108|LADR 3.108]]). Differentiability then gives every directional derivative ([[Directional Derivative Formula]]).
+- **Used for.** It is how the course's C¹ hypotheses turn into differentiability: in the [[Implicit Function Theorem]] and in the derivatives of F(t) behind [[Multivariable Taylor's Theorem]] ([[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-1|§9.1]]). The [[Multivariable Chain Rule]] (§10.2) assumes the same continuous-partials hypothesis.

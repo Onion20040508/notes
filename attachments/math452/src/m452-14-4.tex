@@ -1,0 +1,17 @@
+% Figure from MATH 452 notes, section 14. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.5]
+% level curves of f(x,y) = x: vertical lines
+\foreach \c in {0.5,1.0,1.5} \draw[figB!50, thin] (\c,-1.35) -- (\c,1.35);
+\node[figB!80, font=\scriptsize, anchor=north] at (1.0,-1.37) {level lines $x = c$ of $f$};
+\draw[-stealth, thin] (-1.2,0) -- (2.0,0) node[right, font=\scriptsize] {$x$};
+\draw[-stealth, thin] (0,-1.45) -- (0,1.5) node[above, font=\scriptsize] {$y$};
+% the cusp y^2 = x^3
+\draw[figG, thick, domain=0:1.2, samples=60] plot (\x, {\x^1.5});
+\draw[figG, thick, domain=0:1.2, samples=60] plot (\x, {-\x^1.5});
+\node[figG!80!black, font=\scriptsize, anchor=west] at (1.2,1.25) {$g = y^2 - x^3 = 0$};
+% the minimum of f on the constraint: the cusp point
+\draw[-stealth, line width=1.4pt, figB] (0,0) -- (0.45,0);
+\node[figB, font=\scriptsize, anchor=west, inner sep=1pt, fill=white] at (0.47,0) {$\nabla f = (1,0)$};
+\filldraw[figR] (0,0) circle (1.5pt);
+\node[figR, font=\scriptsize, anchor=north east, align=right, inner sep=2pt] at (-0.04,-0.04) {minimum of $f$\\ on $g = 0$;\\ $\nabla g = \mathbf 0$ here};
+\end{tikzpicture}

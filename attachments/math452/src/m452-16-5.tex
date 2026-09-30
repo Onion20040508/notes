@@ -1,0 +1,27 @@
+% Figure from MATH 452 notes, section 16. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0]
+\draw[thick, figB!70, fill=figB!8, name path=bd,
+  postaction={decorate},
+  decoration={markings,
+    mark=at position 0.10 with {\arrow[figB, scale=1.2]{Stealth}},
+    mark=at position 0.74 with {\arrow[figB, scale=1.2]{Stealth}}}]
+  plot[smooth cycle, tension=0.85] coordinates {(0,0) (2.4,-0.4) (3.6,0.7) (3.1,2.1) (1.4,2.5) (-0.5,1.3)};
+\node at (1.2,1.5) {$D$};
+% boundary point P on the right side, tangent direction from a nearby point Q further along
+\path[name path=h1] (2.6,1.25) -- (4.5,1.25);
+\path[name path=h2] (2.6,1.33) -- (4.5,1.33);
+\path[name intersections={of=bd and h1, by=P}];
+\path[name intersections={of=bd and h2, by=Q}];
+\coordinate (T) at ($(P)!1.0cm!(Q)$);
+\coordinate (No) at ($(P)!0.9cm!-90:(Q)$);
+\coordinate (Ni) at ($(P)!0.9cm!90:(Q)$);
+\draw[-stealth, thick, figB] (P) -- (T) node[anchor=south, inner sep=2pt, font=\scriptsize] {$\mathbf{T} = (x', y')$};
+\draw[-stealth, thick, figR] (P) -- (No) node[anchor=west, inner sep=2pt, font=\scriptsize] {$\mathbf{n}_{\text{out}} = (y', -x')$};
+\draw[-stealth, thick, black!55, dashed] (P) -- (Ni) node[anchor=north, xshift=-10pt, inner sep=3pt, font=\scriptsize, black!70] {$\mathbf{n}_{\text{in}} = (-y', x')$};
+\filldraw[black] (P) circle (1.3pt);
+% right-angle mark between T and n_out
+\coordinate (A) at ($(P)!0.16cm!(T)$);
+\coordinate (B) at ($(P)!0.16cm!(No)$);
+\draw[black!45, thin] (A) -- ($(A)+(B)-(P)$) -- (B);
+\node[figB!80!black, font=\scriptsize, anchor=north] at (1.2,-0.45) {$\gamma = \partial D$, counterclockwise};
+\end{tikzpicture}%

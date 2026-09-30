@@ -100,7 +100,7 @@ $$
 $$
 
 ![[m452-14-2.svg]]
-*At a constrained extremum, the constraint curve $g = 0$ is tangent to a level curve of $f$: crossing a level curve would mean $f$ still changes along the constraint. Tangency forces the two normals $\nabla f$ and $\nabla g$ to be parallel — the Lagrange condition.*
+*At a constrained extremum $(x_0, y_0)$ (red), the constraint curve $g = 0$ (green) touches a level curve of $f$ (blue) without crossing it. At a crossing point such as $Q$, $\nabla f$ is not normal to $g = 0$: moving along the constraint changes $f$, so $Q$ cannot be an extremum. Tangency makes the normals $\nabla f$ and $\nabla g$ lie on the same line, which is the Lagrange condition $\nabla f = \lambda \nabla g$.*
 
 > [!theorem] Theorem §14.2: Method of Lagrange Multipliers
 > Let $f, g: \mathbb{R}^2 \to \mathbb{R}$ be $C^1$ functions. Suppose $f$ has a local max/min at $(x_0, y_0)$ subject to the constraint $g(x_0, y_0) = 0$.
@@ -170,6 +170,9 @@ $$
 > Geometrically, $\nabla g = \mathbf{0}$ means the constraint curve may have a cusp, self-intersection, or isolated point — it's not a smooth curve locally.
 
 ^rem-14-2
+
+![[m452-14-4.svg]]
+*Why the constraint qualification is needed. Minimize $f(x, y) = x$ on the cusp $g = y^2 - x^3 = 0$ (green). The minimum is at the origin (red), where $\nabla g = (-3x^2, 2y) = \mathbf{0}$. There $\nabla f = (1, 0)$ (blue) is not $\lambda \cdot \mathbf{0}$ for any $\lambda$. The Lagrange system has no solution at all ($\lambda \neq 0$ forces $y = 0$, hence $x = 0$, hence $1 = 0$), so the method misses the true minimum. The level lines $x = c$ are not tangent to the curve at the cusp, because the cusp has no tangent line.*
 
 > [!remark] Remark: What if $f_y = 0$?
 > In the proof, we assumed $g_y \neq 0$. What if $g_y \neq 0$ but $f_y = 0$?
@@ -284,6 +287,9 @@ f\left(\frac{1}{\sqrt{2}}, -\frac{1}{\sqrt{2}}\right) &= -\frac{1}{2} \quad \tex
 f\left(-\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right) &= -\frac{1}{2} \quad \text{(minimum)}
 \end{aligned}
 $$
+
+![[m452-14-3.svg]]
+*Example §14.2 in the plane. The level curves $xy = c$ of $f$ are hyperbolas (blue; dashed for $c < 0$). The constraint $\phi = 0$ is the unit circle (green). The circle meets the hyperbolas $xy = \pm\tfrac14$ transversally, misses $xy = \pm 1$, and is tangent to exactly $xy = \tfrac12$ (at the two maxima, red) and $xy = -\tfrac12$ (at the two minima, orange). At a maximum, $\nabla f = (y, x)$ and $\nabla \phi = (2x, 2y)$ point the same way ($\lambda = \tfrac12$). At a minimum they point in opposite directions ($\lambda = -\tfrac12$).*
 
 ## General Case: Two Constraints in $\mathbb{R}^4$
 

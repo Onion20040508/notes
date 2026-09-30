@@ -17,7 +17,7 @@ tags: [multivariable-analysis, math452]
 ^def-3-1
 
 ![[m452-3-1.svg]]
-*Continuity at $\mathbf{x}_0$ as a mapping statement: for every target tolerance $\varepsilon$ (red ball), there is an input tolerance $\delta$ (green ball) whose entire image lands inside the red ball. The green image blob need not be a ball — it only needs to be trapped.*
+*Continuity at $(x_0, y_0)$ as a mapping statement: for every output tolerance $\varepsilon$ — the open interval from $f(x_0,y_0)-\varepsilon$ to $f(x_0,y_0)+\varepsilon$ on the real line (red, hollow endpoints) — there is an input tolerance $\delta$ whose disc $B((x_0,y_0),\delta)$ (green, dashed) is mapped entirely into that interval. The image (green bar) need not be centered or symmetric; it only needs to be trapped.*
 
 > [!remark]- Connections
 > - MATH 451: [[Single Variable Analysis §17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]] on $\mathbb{R}$, and [[Single Variable Analysis §21 More on Metric Spaces꞉ Continuity#^def-21-1|Continuous Maps Between Metric Spaces]].
@@ -256,6 +256,9 @@ The following theorems show that continuous functions are closed under the stand
 > Along $y = kx$: $f(x, kx) = \dfrac{2kx^2}{x^2 + k^2 x^2} = \dfrac{2k}{1 + k^2}$, which depends on $k$.
 
 ^ex-3-2
+
+![[m452-3-2.svg]]
+*Level structure of $f(x,y) = \frac{2xy}{x^2+y^2}$: on each line $y = kx$ through the origin (hollow: $f$ is not defined there) $f$ is constant, equal to $\frac{2k}{1+k^2}$ — $1$ on $y = x$ (dark red), $-1$ on $y = -x$ (dark blue), $\pm\frac45$ on $y = 2x,\ \tfrac12 x$ and $y = -2x,\ -\tfrac12 x$, and $0$ on both axes. Every disc around the origin (dashed) meets all of these lines, so $f$ takes every value in $[-1,1]$ arbitrarily close to $(0,0)$ and no single limit $A$ can work.*
 
 > [!definition] Definition §3.3: Big-O and Little-o Notation
 > Let $\rho = \sqrt{x^2 + y^2}$.

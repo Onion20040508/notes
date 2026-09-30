@@ -21,4 +21,7 @@ tags: [multivariable-analysis, hub]
 - (not cited later in the course)
 
 ## Connections
-- TODO
+- **Proof idea.** Since g_y ≠ 0, the [[Implicit Function Theorem]] writes the constraint as y = α(x). Then F(x) = f(x, α(x)) has an extremum at x₀, so F′(x₀) = 0 by the 451 [[Single Variable Analysis §29 The Mean Value Theorem#^thm-29-1|Interior Extremum Theorem]]. The [[Multivariable Chain Rule]] turns this into f_x g_y = f_y g_x.
+- **Where hypotheses matter.** The constraint qualification ∇g ≠ 0 is exactly the IFT hypothesis ([[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-2|The Constraint Qualification]]). Without a constraint, the method reduces to [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-1|Fermat's theorem in ℝⁿ]].
+- **Linear algebra.** With k constraints ([[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-3|Theorem §14.3]]), ∇f lies in the orthogonal complement of the constraint set's tangent space ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]]). That complement has dimension k ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]]), so it is spanned by the independent ∇gᵢ.
+- **Existence.** The method only finds candidates. If the constraint set is compact, a continuous f attains its max and min there ([[Heine–Borel Theorem]], [[Continuous Image of a Compact Space is Compact]]), so comparing values at the candidates finds them ([[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-10|The Logical Flow]]).

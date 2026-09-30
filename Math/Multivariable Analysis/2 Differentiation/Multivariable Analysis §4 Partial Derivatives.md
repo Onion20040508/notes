@@ -83,6 +83,9 @@ tags: [multivariable-analysis, math452]
 
 *Uses:* [[Multivariable Analysis §2 Open and Closed Sets#^def-2-4|Def. §2.4]], [[Multivariable Analysis §4 Partial Derivatives#^def-4-1|Def. §4.1]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[Single Variable Analysis §3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]], [[Mean Value Theorem|451 §29.3]]
 
+![[m452-4-2.svg]]
+*The proof walks from $(x_0,y_0)$ to $(x_0+h,\,y_0+k)$ along an L-shaped path (blue) instead of the direct segment (dashed): first in $x$, then in $y$. On each leg only one variable moves, so the one-variable MVT applies, evaluating $f_x$ at $(x_0+\theta(h)h,\,y_0)$ and $f_y$ at $(x_0+h,\,y_0+\eta(h,k)k)$ (red). The bound $|f_x|, |f_y| \le M$ caps each leg's change at $M|h|$ and $M|k|$; the whole path stays in $B((x_0,y_0),r) \subseteq R$, which is why $R$ must be open.*
+
 > [!example] Example §4.2: Second Partials of $r = \sqrt{x^2 + y^2}$
 >
 > $$

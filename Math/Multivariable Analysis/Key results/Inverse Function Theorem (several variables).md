@@ -19,4 +19,7 @@ tags: [multivariable-analysis, hub]
 - (not cited later in the course)
 
 ## Connections
-- TODO
+- **Proof idea.** Apply the [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|Implicit Function Theorem]] twice: first solve φ(x, y) = ũ for x, then solve ψ(X(y, ũ), y) = ṽ for y. The second step needs det J / φ_x ≠ 0 ([[Multivariable Analysis §13 The Inverse Function Theorem#^rem-13-4|Tracking IFT Hypotheses]]). The [[Multivariable Chain Rule]] gives the Jacobian of the inverse.
+- **One-variable version.** The 451 [[Single Variable Analysis §29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (§29.10) has the condition f′(x₀) ≠ 0 and the derivative 1/f′ ([[Multivariable Analysis §13 The Inverse Function Theorem#^rem-13-5|Comparison: 1D vs 2D]]).
+- **Linear algebra.** The hypothesis says that the derivative is an invertible linear map ([[Invertible ⟺ nonzero determinant]], LADR 9.50). The inverse's Jacobian is J⁻¹ ([[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-86|LADR 3.86]]), and the two Jacobian determinants are reciprocal ([[Multivariable Analysis §13 The Inverse Function Theorem#^rem-13-6|Reciprocal Jacobians]], [[Linear Algebra 9C Determinants#^ladr-9-49|LADR 9.49]]).
+- **Where it goes.** A nonvanishing Jacobian is the hypothesis of the [[Change of Variables Formula (multiple integrals)]], where |J| is the area factor. For polar coordinates |J| = r ([[Multivariable Analysis §13 The Inverse Function Theorem#^ex-13-4|Polar to Cartesian]]).

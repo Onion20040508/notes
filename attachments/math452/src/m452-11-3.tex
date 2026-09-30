@@ -7,21 +7,23 @@
 \foreach \ang in {0,45,90,135,180,225,270,315}{
   \pgfmathsetmacro{\cx}{0.85*cos(\ang)}
   \pgfmathsetmacro{\cy}{0.85*sin(\ang)}
-  \draw[->, thick, figR!80] (\cx,\cy) -- ({\cx-0.55*sin(\ang)},{\cy+0.55*cos(\ang)});
+  \draw[-stealth, thick, figR!80] (\cx,\cy) -- ({\cx-0.55*sin(\ang)},{\cy+0.55*cos(\ang)});
 }
 % paddle wheel hint: small ccw arc arrow at center
-\draw[->, thick, figR] (0.3,0.12) arc[start angle=20, end angle=310, radius=0.32];
+\draw[-stealth, thick, figR] (0.3,0.12) arc[start angle=20, end angle=310, radius=0.32];
 \node[font=\scriptsize, align=center] at (0,-1.85) {field aligned with traversal everywhere:\\ circulation $> 0$, \; $(\nabla\times\mathbf{F})_z > 0$};
-\node[figB!80!black, font=\scriptsize] at (-0.05,1.12) {$\partial B_\varepsilon$};
+\node[figB, font=\scriptsize, anchor=east, inner sep=1pt] at (-1.05,0.0) {$\partial B_\varepsilon$};
+\filldraw (0,0) circle (1.1pt) node[right, font=\scriptsize, inner sep=2pt] {$P$};
 \end{scope}
 % ===== right panel: zero curl (radial field F=(x,y)) =====
-\begin{scope}[shift={(6.4,0)}]
+\begin{scope}[shift={(5.6,0)}]
 \draw[dashed, thick, figB] (0,0) circle (0.85);
 \foreach \ang in {0,45,90,135,180,225,270,315}{
   \pgfmathsetmacro{\cx}{0.85*cos(\ang)}
   \pgfmathsetmacro{\cy}{0.85*sin(\ang)}
-  \draw[->, thick, figG!80] (\cx,\cy) -- ({1.55*\cx},{1.55*\cy});
+  \draw[-stealth, thick, figG!80] (\cx,\cy) -- ({1.55*\cx},{1.55*\cy});
 }
+\filldraw (0,0) circle (1.1pt) node[below, font=\scriptsize, inner sep=2pt] {$P$};
 \node[font=\scriptsize, align=center] at (0,-1.85) {field $\perp$ traversal everywhere:\\ circulation $= 0$, \; $(\nabla\times\mathbf{F})_z = 0$};
 \end{scope}
 \end{tikzpicture}

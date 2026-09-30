@@ -21,4 +21,7 @@ tags: [multivariable-analysis, hub]
 - (not cited later in the course)
 
 ## Connections
-- TODO
+- **Proof.** In ℝ³, det G = |X_u × X_v|² by direct expansion (Lagrange's identity). The entries of G are [[Linear Algebra 6A Inner Products and Norms#^ladr-6-1|dot products]] (LADR 6.1) of the tangent vectors.
+- **Linear algebra.** G = (DX)ᵀDX is T*T for T = DX. So rank G = rank DX ([[Linear Algebra 7E Singular Value Decomposition#^ladr-7-64|LADR 7.64]]), and det G > 0 exactly at [[Multivariable Analysis §18 Surface Integrals#^def-18-3|regular points]]. When DX is square, √det(T*T) = |det T| ([[Linear Algebra 9C Determinants#^ladr-9-60|LADR 9.60]], [[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]]), which is the |J| of the [[Change of Variables Formula (multiple integrals)]].
+- **Why the Gram matrix.** Unlike the cross product, it works in any ambient dimension, and it is the metric tensor (first fundamental form) of the surface ([[Multivariable Analysis §18 Surface Integrals#^rem-18-4|Why the Gram Matrix?]]). For the sphere of radius R it gives area 4πR² ([[Multivariable Analysis §18 Surface Integrals#^ex-18-2|Example §18.2]]).
+- **In forms language.** The same area element appears when a 2-form is pulled back to the parameter domain ([[Multivariable Analysis §22 The Algebra of Differential Forms#^ex-22-3|Pullback Along a Surface]]).

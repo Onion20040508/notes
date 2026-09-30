@@ -4,26 +4,26 @@
 \foreach \c/\sty in {0.5/{figB!45}, 1.5/{figB!45}, 2/{figB!45}}
   \draw[\sty, thin] (0,0) ellipse ({2*sqrt(\c)} and {sqrt(\c)});
 \draw[figB, thick] (0,0) ellipse ({2*sqrt(1)} and {sqrt(1)});
-\node[figB!60, font=\scriptsize] at (-0.56,-0.80) {$c=\tfrac12$};
-\node[figB!80!black, font=\scriptsize] at (-0.74,-1.05) {$c=1$};
-\node[figB!60, font=\scriptsize] at (-0.87,-1.28) {$c=\tfrac32$};
-\node[figB!60, font=\scriptsize] at (-1.00,-1.50) {$c=2$};
+% contour values, written on the contours where they cross the negative x-axis
+\foreach \c/\lab in {0.5/{\tfrac12}, 1/{1}, 1.5/{\tfrac32}, 2/{2}}
+  \node[figB, font=\scriptsize, fill=white, inner sep=0.6pt] at ({-2*sqrt(\c)},0) {$\lab$};
+\node[figB, font=\scriptsize, anchor=north] at (-2.2,-0.62) {$F = c$};
 % gradient nabla F = (x/2, 2y); draw at several points, scaled by 0.55
 % point A: (2,0) on c=1  -> grad (1,0), len 1
-\draw[->, very thick, figR] (2,0) -- ++(0.55,0);
+\draw[-stealth, thick, figR] (2,0) -- ++(0.55,0);
 % point B: (0,1) on c=1 -> grad (0,2), len 2 (twice as long: contours twice as dense vertically)
-\draw[->, very thick, figR] (0,1) -- ++(0,1.1);
+\draw[-stealth, thick, figR] (0,1) -- ++(0,1.1);
 % point C: on c=1 at t=125deg: (2cos125, sin125)=(-1.147,0.819); grad=(-0.574,1.638)
-\draw[->, very thick, figR] (-1.147,0.819) -- ++(-0.315,0.900);
+\draw[-stealth, thick, figR] (-1.147,0.819) -- ++(-0.315,0.900);
 % point D: on c=0.5 at t=-40deg: (2*0.707*cos(-40), 0.707*sin(-40))=(1.083,-0.4545); grad=(0.542,-0.909)
-\draw[->, very thick, figR] (1.083,-0.4545) -- ++(0.298,-0.500);
+\draw[-stealth, thick, figR] (1.083,-0.4545) -- ++(0.298,-0.500);
 % point E: on c=2 at t=160: (2*1.414*cos160, 1.414*sin160)=(-2.658,0.4836); grad=(-1.329,0.967)
-\draw[->, very thick, figR] (-2.658,0.4836) -- ++(-0.731,0.532);
-\node[figR!85!black, font=\small] at (0.42,1.85) {$\nabla F$};
+\draw[-stealth, thick, figR] (-2.658,0.4836) -- ++(-0.731,0.532);
+\node[figR, font=\scriptsize, anchor=west] at (0.05,1.95) {$\nabla F$};
 % one tangent segment at point B' on c=1 to show D_u f = 0 along contour
 \coordinate (Pc) at (-1.147,0.819);
 \draw[figG, thick] ($(Pc)+(0.566,0.199)$) -- ($(Pc)-(0.566,0.199)$);
-\node[figG!75!black, font=\scriptsize, anchor=north east] at ($(Pc)-(0.50,0.48)$) {tangent: $D_{\mathbf{u}}f = 0$};
+\node[figG, font=\scriptsize, anchor=north west, inner sep=1pt] at ($(Pc)+(0.42,0.02)$) {$D_{\mathbf{u}}F = 0$};
 \filldraw (2,0) circle (1.1pt); \filldraw (0,1) circle (1.1pt);
 \filldraw (-1.147,0.819) circle (1.1pt); \filldraw (1.083,-0.4545) circle (1.1pt);
 \filldraw (-2.658,0.4836) circle (1.1pt);

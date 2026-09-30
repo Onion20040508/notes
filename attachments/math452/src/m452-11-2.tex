@@ -6,23 +6,23 @@
   \foreach \y in {-1.5,-0.75,0,0.75,1.5}
     {\pgfmathsetmacro{\vx}{0.28*\x}
      \pgfmathsetmacro{\vy}{0.28*\y}
-     \draw[->, figB, thin] (\x,\y) -- ({\x+\vx},{\y+\vy});}
+     \ifdim \x pt=0pt \ifdim \y pt=0pt \else \draw[-stealth, figB] (\x,\y) -- ({\x+\vx},{\y+\vy}); \fi \else \draw[-stealth, figB] (\x,\y) -- ({\x+\vx},{\y+\vy}); \fi}
 \node[font=\scriptsize, align=center] at (0,-2.95) {$\mathbf{F} = (x, y)$\\ $\nabla \cdot \mathbf{F} = 2$, \; $\nabla \times \mathbf{F} = \mathbf{0}$\\ source (divergence)};
 \end{scope}
 % Panel 2: rotation field F = (-y,x): curl = 2, div = 0
-\begin{scope}[shift={(6,0)}]
+\begin{scope}[shift={(5.2,0)}]
 \foreach \x in {-1.5,-0.75,0,0.75,1.5}
   \foreach \y in {-1.5,-0.75,0,0.75,1.5}
     {\pgfmathsetmacro{\vx}{-0.28*\y}
      \pgfmathsetmacro{\vy}{0.28*\x}
-     \draw[->, figR, thin] (\x,\y) -- ({\x+\vx},{\y+\vy});}
+     \ifdim \x pt=0pt \ifdim \y pt=0pt \else \draw[-stealth, figR] (\x,\y) -- ({\x+\vx},{\y+\vy}); \fi \else \draw[-stealth, figR] (\x,\y) -- ({\x+\vx},{\y+\vy}); \fi}
 \node[font=\scriptsize, align=center] at (0,-2.95) {$\mathbf{F} = (-y, x)$\\ $\nabla \cdot \mathbf{F} = 0$, \; $(\nabla \times \mathbf{F})_z = 2$\\ rotation (curl)};
 \end{scope}
 % Panel 3: constant field F = (1, 0.4): div = 0, curl = 0
-\begin{scope}[shift={(12,0)}]
+\begin{scope}[shift={(10.4,0)}]
 \foreach \x in {-1.5,-0.75,0,0.75,1.5}
   \foreach \y in {-1.5,-0.75,0,0.75,1.5}
-    \draw[->, figG, thin] (\x,\y) -- ({\x+0.42},{\y+0.17});
+    \draw[-stealth, figG] (\x,\y) -- ({\x+0.42},{\y+0.17});
 \node[font=\scriptsize, align=center] at (0,-2.95) {$\mathbf{F} = (1, 0.4)$ (constant)\\ $\nabla \cdot \mathbf{F} = 0$, \; $\nabla \times \mathbf{F} = \mathbf{0}$\\ uniform flow (both zero)};
 \end{scope}
 \end{tikzpicture}

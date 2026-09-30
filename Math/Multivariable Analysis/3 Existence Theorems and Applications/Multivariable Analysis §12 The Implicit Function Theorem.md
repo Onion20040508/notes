@@ -12,7 +12,7 @@ tags: [multivariable-analysis, math452]
 Consider the equation $x^2 + y^2 = 1$ (a circle). This defines $y$ as a function of $x$ *implicitly* — we can solve to get $y = \pm\sqrt{1 - x^2}$, but only locally (we must choose a branch).
 
 ![[m452-12-1.svg]]
-*The unit circle $x^2 + y^2 = 1$ (blue); near the point $(x_0, y_0)$ on the upper half, the arc through it (red) is the graph of a single function $y = f(x)$.*
+*The unit circle $x^2 + y^2 = 1$ (blue) is not the graph of any function of $x$, but it is locally: over the interval $|x - x_0| < \delta$ (red, open endpoints), the part of the circle near $(x_0, y_0)$ is the graph of a single function $y = f(x)$ (red arc) — here the upper branch $\sqrt{1 - x^2}$. The theorem produces exactly this local picture.*
 
 More generally, given $F(x, y) = 0$, when can we solve for $y = f(x)$ near a point $(x_0, y_0)$ on the curve?
 
@@ -184,6 +184,9 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 
 *Uses:* [[Single Variable Analysis §29 The Mean Value Theorem#^cor-29-7|451 §29.7]], [[Continuous Partials Imply Differentiability|§6.2]], [[Intermediate Value Theorem|451 §18.3]], [[Single Variable Analysis §29 The Mean Value Theorem#^prop-29-8|451 §29.8]], [[Mean Value Theorem|451 §29.3]]
 
+![[m452-12-3.svg]]
+*Steps 1–4 of the proof in one picture. In the box around $(x_0, y_0)$ we have $F_y > a/2$, so $F$ increases along every vertical segment. Continuity of $F$ keeps the top edge positive (red) and the bottom edge negative (green) over the narrower strip $|x - x_0| \leq \delta$ (shaded). On each vertical segment in the strip, $F$ therefore crosses $0$ exactly once: the IVT gives a crossing and monotonicity rules out a second. That crossing is $f(x)$ (red dot), and together the crossings trace the graph $y = f(x)$ (blue).*
+
 ## Geometric Interpretation
 
 > [!remark] Remark: Why $F_y \neq 0$?
@@ -194,6 +197,9 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 > If both $F_x = F_y = 0$, the point $(x_0, y_0)$ is a **singular point** of the curve, where the implicit function theorem does not apply.
 
 ^rem-12-1
+
+![[m452-12-2.svg]]
+*The Implicit Function Theorem on a contour map of the paraboloid $F = x^2/4 + y^2$ (dashed: neighboring levels; solid: the contour $F = c$). Zooming in at a generic point (green), the arc passes the vertical line test: locally $y = f(x)$, possible because $F_y \neq 0$ there. Zooming in at the rightmost point (red), the tangent is vertical ($F_y = 2y = 0$): the arc fails the vertical line test, and no $y = f(x)$ exists — but $F_x \neq 0$, the arc passes the* horizontal *line test, and $x = g(y)$ works. A regular contour is always locally a graph; the gradient tells you over which axis.*
 
 > [!remark] Remark: The Derivative Formula
 > The formula $f'(x) = -\dfrac{F_x}{F_y}$ can be derived heuristically by implicit differentiation:
@@ -278,6 +284,3 @@ The Implicit Function Theorem generalizes to functions of more variables.
 
 > [!remark]- Connections
 > - Systems of equations: solving several equations for several unknowns needs a nonzero Jacobian determinant instead of $F_y \neq 0$ — see the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] (§13.2) and the two-constraint Lagrange derivation in [[Multivariable Analysis §14 Optimization and Lagrange Multipliers|§14]]; the linear-algebra fact behind it is [[Invertible ⟺ nonzero determinant|LADR 9.50]].
-
-![[m452-12-2.svg]]
-*The Implicit Function Theorem on a contour map of the paraboloid $F = x^2/4 + y^2$ (dashed: neighboring levels; solid: the contour $F = c$). Zooming in at a generic point (green), the arc passes the vertical line test: locally $y = f(x)$, possible because $F_y \neq 0$ there. Zooming in at the rightmost point (red), the tangent is vertical ($F_y = 2y = 0$): the arc fails the vertical line test, and no $y = f(x)$ exists — but $F_x \neq 0$, the arc passes the* horizontal *line test, and $x = g(y)$ works. A regular contour is always locally a graph; the gradient tells you over which axis.*

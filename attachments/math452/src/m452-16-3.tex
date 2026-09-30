@@ -1,5 +1,5 @@
 % Figure from MATH 452 notes, section 16. Compile with the notes preamble.
-\begin{tikzpicture}[scale=1.15]
+\begin{tikzpicture}[scale=0.95]
 % two adjacent cells
 \draw[thick, figB, fill=figB!7] (0,0) rectangle (2.0,1.8);
 \draw[thick, figB, fill=figB!7] (2.0,0) rectangle (4.0,1.8);
@@ -14,11 +14,9 @@
 \draw[-stealth, figR, thick] (4.0,0.5) -- (4.0,1.35);
 \draw[-stealth, figR, thick] (3.35,1.8) -- (2.35,1.8);
 \draw[-stealth, figR, thick] (2.07,1.30) -- (2.07,0.45);  % D2 left edge: downward (shifted for visibility)
-% the shared edge (dashed highlight)
-\draw[figR, dashed, very thin] (2.0,-0.12) -- (2.0,1.92);
 \node[font=\scriptsize, align=center] at (2.0,-0.55) {shared edge: traversed upward by $\partial D_1$,\\ downward by $\partial D_2$ --- contributions cancel};
 % right: the merged region with only outer boundary
-\begin{scope}[shift={(5.6,0)}]
+\begin{scope}[shift={(5.1,0)}]
 \draw[thick, figB, fill=figB!7] (0,0) rectangle (4.0,1.8);
 \draw[-stealth, figG, thick] (0.7,0.0) -- (2.0,0.0);
 \draw[-stealth, figG, thick] (2.6,0.0) -- (3.6,0.0);

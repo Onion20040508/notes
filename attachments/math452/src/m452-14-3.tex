@@ -1,0 +1,34 @@
+% Figure from MATH 452 notes, section 14. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.6]
+\begin{scope}
+\clip (-1.6,-1.6) rectangle (1.6,1.6);
+% level curves xy = c: c = 1/2 (tangent), c = 1/4 (crossing), c = 1 (missed), and their negatives
+\foreach \c/\s in {0.25/figB!45, 0.5/figB, 1.0/figB!45}{
+  \draw[\s, thin, domain={\c/1.6}:1.6, samples=60] plot (\x, {\c/\x});
+  \draw[\s, thin, domain={-1.6}:{-\c/1.6}, samples=60] plot (\x, {\c/\x});
+  \draw[\s, thin, dashed, domain={\c/1.6}:1.6, samples=60] plot (\x, {-\c/\x});
+  \draw[\s, thin, dashed, domain={-1.6}:{-\c/1.6}, samples=60] plot (\x, {-\c/\x});
+}
+\end{scope}
+\draw[-stealth, thin] (-1.65,0) -- (1.75,0) node[right, font=\scriptsize] {$x$};
+\draw[-stealth, thin] (0,-1.65) -- (0,1.75) node[above, font=\scriptsize] {$y$};
+% the constraint circle
+\draw[figG, thick] (0,0) circle (1);
+\node[figG!80!black, font=\scriptsize, anchor=west, inner sep=1pt] at (-0.96,0.11) {$\phi = 0$};
+% labels of level curves
+\node[figB, font=\scriptsize, anchor=west] at (1.6,0.3125) {$xy = \tfrac12$};
+\node[figB, font=\scriptsize, anchor=west] at (1.6,-0.3125) {$xy = -\tfrac12$};
+% candidates
+\pgfmathsetmacro{\r}{0.70711}
+% gradients at the maximum (r, r): grad phi = (2x,2y), grad f = (y,x) = grad phi / 2
+\draw[-stealth, thick, figG] (\r,\r) -- ++(0.6,0.6) node[anchor=south west, inner sep=1pt, font=\scriptsize] {$\nabla\phi$};
+\draw[-stealth, very thick, figB] (\r,\r) -- ++(0.3,0.3);
+\node[figB, font=\scriptsize, anchor=north west, inner sep=1pt] at ({\r+0.3},{\r+0.24}) {$\nabla f$};
+% gradients at the minimum (r, -r): grad phi = (2r,-2r), grad f = (-r, r) = -grad phi / 2
+\draw[-stealth, thick, figG] (\r,-\r) -- ++(0.6,-0.6) node[anchor=north west, inner sep=1pt, font=\scriptsize] {$\nabla\phi$};
+\draw[-stealth, very thick, figB] (\r,-\r) -- ++(-0.3,0.3) node[anchor=south east, inner sep=0.5pt, font=\scriptsize] {$\nabla f$};
+\foreach \p in {(\r,\r),(-\r,-\r)} \filldraw[figR] \p circle (1.5pt);
+\foreach \p in {(\r,-\r),(-\r,\r)} \filldraw[figO] \p circle (1.5pt);
+\node[figR, font=\scriptsize, anchor=north east, inner sep=1pt, fill=white] at (-\r,-\r) {max $\tfrac12$};
+\node[figO!90!black, font=\scriptsize, anchor=south east, inner sep=1pt, fill=white] at (-\r,\r) {min $-\tfrac12$};
+\end{tikzpicture}

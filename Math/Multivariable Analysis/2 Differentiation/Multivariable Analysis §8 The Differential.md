@@ -36,6 +36,9 @@ The notation $df = f'(x) \, dx$ is familiar from single-variable calculus, but w
 
 ^rem-8-1
 
+![[m452-8-1.svg]]
+*The differential is a rise along the tangent line, not along the graph. For the increment $h = dx$, the value $df = f'(x)\,h$ (red) is how much the tangent line climbs, while $f(x+h) - f(x)$ (brace) is how much $f$ itself climbs. The gap between the two (dotted) is the error of the linear approximation; it shrinks faster than $h$, which is exactly what makes $df$ the best linear approximation to the change in $f$ (in two variables: the [[Multivariable Analysis §8 The Differential#^rem-8-2|connection to differentiability]] below).*
+
 > [!definition] Definition §8.1: Differential in Multivariable Calculus
 > For $f : \mathbb{R}^2 \to \mathbb{R}$, the **differential** $df$ is a function of **four variables** $(x, y, h, k)$:
 >

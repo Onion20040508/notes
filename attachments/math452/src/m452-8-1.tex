@@ -1,0 +1,32 @@
+% Figure from MATH 452 notes, section 8. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.35,
+  declare function={f(\t) = 0.5 + 0.18*\t*\t;}]
+  \def\xa{1.2} \def\xb{3.0}
+  % axes
+  \draw[-stealth, thin] (-0.1,0) -- (3.9,0);
+  \draw[-stealth, thin] (0,-0.1) -- (0,2.75);
+  % tangent line at x (slope f'(x) = 0.36 * 1.2 = 0.432)
+  \draw[black!55, thin, dashed] (0.2,{f(\xa)-0.432}) -- (3.55,{f(\xa)+0.432*2.35});
+  % graph of f
+  \draw[figB, thick, domain=0.15:3.45, samples=60, smooth] plot (\x,{f(\x)});
+  \node[figB, font=\small] at (3.6,2.55) {$f$};
+  % increment h = dx
+  \draw[black!55, thin] (\xa,{f(\xa)}) -- (\xb,{f(\xa)}) node[midway, below, font=\scriptsize, black] {$h = dx$};
+  % df = f'(x) h : rise along the tangent
+  \draw[figR, very thick] (\xb,{f(\xa)}) -- (\xb,{f(\xa)+0.432*1.8});
+  \node[figR, font=\scriptsize, anchor=east] at (\xb-0.06,{f(\xa)+0.15}) {$df = f'(x)\,h$};
+  % the remainder between tangent and graph
+  \draw[black!40, thin, dotted] (\xb,{f(\xa)+0.432*1.8}) -- (\xb,{f(\xb)});
+  % f(x+h) - f(x): brace on the right
+  \draw[decorate, decoration={brace, amplitude=3pt}, black!70] (\xb+0.1,{f(\xb)}) -- (\xb+0.1,{f(\xa)})
+    node[midway, right, font=\scriptsize, xshift=2pt] {$f(x+h)-f(x)$};
+  % points
+  \filldraw (\xa,{f(\xa)}) circle (1.2pt);
+  \filldraw (\xb,{f(\xb)}) circle (1.2pt);
+  \filldraw[figR] (\xb,{f(\xa)+0.432*1.8}) circle (1.1pt);
+  % ticks
+  \draw[black!40, thin, dotted] (\xa,0) -- (\xa,{f(\xa)});
+  \draw[black!40, thin, dotted] (\xb,0) -- (\xb,{f(\xa)});
+  \node[font=\scriptsize, below] at (\xa,0) {$x$};
+  \node[font=\scriptsize, below] at (\xb,0) {$x+h$};
+\end{tikzpicture}

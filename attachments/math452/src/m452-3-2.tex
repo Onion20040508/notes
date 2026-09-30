@@ -1,0 +1,17 @@
+% Figure from MATH 452 notes, section 3. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.25]
+  % a small ball around the origin
+  \draw[black!55, thin, dashed, fill=black!4] (0,0) circle (0.55);
+  % lines y = kx through the origin; f = 2k/(1+k^2) is constant on each
+  % (angle, color, label)
+  \foreach \a/\c/\lab in {0/black!50/{0}, 90/black!50/{0},
+                          26.565/figR!60/{\tfrac45}, 63.435/figR!60/{\tfrac45},
+                          45/figR/{1},
+                          116.565/figB!60/{-\tfrac45}, 153.435/figB!60/{-\tfrac45},
+                          135/figB/{-1}} {
+    \draw[\c, thick] (\a:-1.8) -- (\a:1.8);
+    \node[\c, font=\scriptsize, fill=white, inner sep=1pt] at (\a:2.08) {$\lab$};
+  }
+  % the origin is not in the domain
+  \draw[black, fill=white, thick] (0,0) circle (1.6pt);
+\end{tikzpicture}

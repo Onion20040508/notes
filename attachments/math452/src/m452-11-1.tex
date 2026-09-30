@@ -12,20 +12,22 @@
   \pgfmathsetmacro{\cy}{0.85*sin(\ang)}
   \pgfmathsetmacro{\fx}{(2.2+\cx)*0.30}
   \pgfmathsetmacro{\fy}{\cy*0.30}
-  \draw[->, thick, figR!80] ({\cx-0.5*\fx},{\cy-0.5*\fy}) -- ({\cx+0.5*\fx},{\cy+0.5*\fy});
+  \draw[-stealth, thick, figR!80] ({\cx-0.5*\fx},{\cy-0.5*\fy}) -- ({\cx+0.5*\fx},{\cy+0.5*\fy});
 }
 \node[font=\scriptsize, align=center] at (0,-1.85) {more flux leaves (right) than enters (left):\\ net outflux $> 0$, \; $\nabla\cdot\mathbf{F} > 0$};
-\node[figB!80!black, font=\scriptsize] at (-0.55,1.12) {$\partial B_\varepsilon$};
+\node[figB, font=\scriptsize, anchor=east, inner sep=1pt] at (-0.9,-0.3) {$\partial B_\varepsilon$};
+\filldraw (0,0) circle (1.1pt) node[below, font=\scriptsize, inner sep=2pt] {$P$};
 \end{scope}
 % ===== right panel: zero divergence (uniform field) =====
-\begin{scope}[shift={(6.4,0)}]
+\begin{scope}[shift={(5.6,0)}]
 \coordinate (P) at (0,0);
 \draw[dashed, thick, figB] (P) circle (0.85);
 \foreach \ang in {0,45,90,135,180,225,270,315}{
   \pgfmathsetmacro{\cx}{0.85*cos(\ang)}
   \pgfmathsetmacro{\cy}{0.85*sin(\ang)}
-  \draw[->, thick, figG!80] ({\cx-0.31},\cy) -- ({\cx+0.31},\cy);
+  \draw[-stealth, thick, figG!80] ({\cx-0.31},\cy) -- ({\cx+0.31},\cy);
 }
+\filldraw (0,0) circle (1.1pt) node[below, font=\scriptsize, inner sep=2pt] {$P$};
 \node[font=\scriptsize, align=center] at (0,-1.85) {uniform field: inflow $=$ outflow,\\ net flux $= 0$, \; $\nabla\cdot\mathbf{F} = 0$};
 \end{scope}
 \end{tikzpicture}

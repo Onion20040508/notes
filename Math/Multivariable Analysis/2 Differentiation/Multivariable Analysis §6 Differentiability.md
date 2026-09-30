@@ -288,6 +288,9 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 *Uses:* [[Multivariable Analysis §2 Open and Closed Sets#^def-2-4|Def. §2.4]], [[Multivariable Analysis §4 Partial Derivatives#^def-4-1|Def. §4.1]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]], [[Multivariable Analysis §6 Differentiability#^def-6-1|Def. §6.1]], [[Single Variable Analysis §3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]], [[Mean Value Theorem|451 §29.3]]
 
+![[m452-6-2.svg]]
+*The same L-shaped path as in [[Multivariable Analysis §4 Partial Derivatives#^thm-4-1|§4.1]]: the two MVTs trade the increments of $f$ along the legs $h$ and $k$ (blue) for $h \cdot f_x(x_0+\alpha(h)h,\,y_0)$ and $k \cdot f_y(x_0+h,\,y_0+\theta(h,k)k)$, evaluated at the red points. Now the point is where those red points go: as $(h,k) \to (0,0)$ the path shrinks (faded copy) and drags them to $(x_0,y_0)$, so continuity of $f_x$ and $f_y$ makes both brackets in $E(h,k)/\rho$ tend to $0$.*
+
 ## Algebra of Partial Derivatives
 
 > [!theorem] Theorem §6.3: Partial Derivatives of Sum and Difference

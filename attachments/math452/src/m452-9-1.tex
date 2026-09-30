@@ -1,9 +1,33 @@
 % Figure from MATH 452 notes, section 9. Compile with the notes preamble.
-\begin{tikzpicture}[scale=1.5]
-\draw[->] (0,0) -- (3,0) node[right] {$x$};
-\draw[->] (0,0) -- (0,2.5) node[above] {$y$};
-\node[circle, fill, inner sep=1.5pt, label=below left:{$(x,y)$}] at (0.5,0.5) {};
-\node[circle, fill, inner sep=1.5pt, label=above right:{$(x+h,y+k)$}] at (2.5,2) {};
-\draw[thick, ->, blue] (0.5,0.5) -- (2.5,2);
-\node[blue] at (1.8,0.9) {$t \in [0,1]$};
+\begin{tikzpicture}[scale=1.05,
+  declare function={F(\t) = 0.55 + 1.5*\t - 1.35*\t*\t + 0.75*\t*\t*\t;}]
+% ---- left: the segment in the (x,y)-plane ----
+\draw[-stealth, thin] (-0.1,0) -- (3.6,0) node[right, font=\scriptsize] {$x$};
+\draw[-stealth, thin] (0,-0.1) -- (0,2.3) node[above, font=\scriptsize] {$y$};
+\coordinate (S) at (0.9,0.4);
+\coordinate (E) at (2.9,1.7);
+\draw[figB, thick] (S) -- (E);
+\filldraw (S) circle (1.3pt) node[below right, font=\scriptsize, inner sep=1.5pt] {$(x,y)$};
+\filldraw (E) circle (1.3pt) node[above, font=\scriptsize, inner sep=2.5pt] {$(x+h,\,y+k)$};
+\filldraw[figB] ($(S)!0.62!(E)$) circle (1.2pt) node[above left, font=\scriptsize, inner sep=1pt] {$(x+th,\,y+tk)$};
+\filldraw[figR] ($(S)!0.3!(E)$) circle (1.3pt) node[below right, font=\scriptsize, inner sep=1.5pt] {$(x+\theta h,\,y+\theta k)$};
+% ---- the restriction ----
+\draw[-stealth, thick] (3.85,1.1) -- (4.55,1.1) node[midway, above, font=\scriptsize] {$f$};
+% ---- right: the one-variable function F(t) on [0,1] ----
+\begin{scope}[shift={(4.95,0)}, xscale=2.4]
+  \draw[-stealth, thin] (-0.04,0) -- (1.2,0) node[right, font=\scriptsize] {$t$};
+  \draw[-stealth, thin] (0,-0.04) -- (0,2.3);
+  \draw[figB, thick, domain=0:1, samples=50, smooth] plot (\x,{F(\x)});
+  \node[figB, font=\small, anchor=west] at (1.02,1.72) {$F$};
+  \filldraw (0,{F(0)}) circle[x radius=1.3pt/2.4, y radius=1.3pt];
+  \filldraw (1,{F(1)}) circle[x radius=1.3pt/2.4, y radius=1.3pt];
+  \filldraw[figR] (0.3,{F(0.3)}) circle[x radius=1.3pt/2.4, y radius=1.3pt];
+  \draw[black!40, thin, dotted] (1,0) -- (1,{F(1)});
+  \draw[black!40, thin, dotted] (0.3,0) -- (0.3,{F(0.3)});
+  \node[font=\scriptsize, anchor=east, inner sep=2pt] at (0,{F(0)}) {$f(x,y)$};
+  \node[font=\scriptsize, anchor=south east, inner sep=2pt] at (1,{F(1)}) {$f(x+h,y+k)$};
+  \node[font=\scriptsize, below] at (0,0) {$0$};
+  \node[font=\scriptsize, below, figR] at (0.3,0) {$\theta$};
+  \node[font=\scriptsize, below] at (1,0) {$1$};
+\end{scope}
 \end{tikzpicture}

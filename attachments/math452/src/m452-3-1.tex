@@ -1,26 +1,27 @@
 % Figure from MATH 452 notes, section 3. Compile with the notes preamble.
 \begin{tikzpicture}[scale=1.0]
-% domain side
-\draw[thick, figB!70, fill=figB!6] plot[smooth cycle, tension=0.8] coordinates {(0,0) (2.2,-0.25) (3.0,0.9) (2.2,2.0) (0.6,2.1) (-0.4,1.0)};
-\node[figB!80!black, font=\small] at (-0.3,2.05) {$\mathbb{R}^n$};
-\coordinate (P) at (1.35,0.95);
-\filldraw (P) circle (1.3pt) node[below left, font=\scriptsize] {$\mathbf{x}_0$};
-\draw[figG, thick] (P) circle (0.52);
-\node[figG!75!black, font=\scriptsize] at (1.35,1.75) {$B(\mathbf{x}_0,\delta)$};
-% map arrow
-\draw[->, thick] (3.5,1.0) -- (4.9,1.0) node[midway, above, font=\small] {$f$};
-% codomain side
-\begin{scope}[shift={(5.4,0)}]
-\draw[thick, figB!70, fill=figB!6] plot[smooth cycle, tension=0.8] coordinates {(0,0.1) (2.0,-0.3) (3.0,0.8) (2.4,2.0) (0.7,2.15) (-0.3,1.1)};
-\node[figB!80!black, font=\small] at (3.0,2.0) {$\mathbb{R}^m$};
-\coordinate (Q) at (1.5,0.95);
-\filldraw (Q) circle (1.3pt) node[font=\scriptsize, yshift=-9pt, xshift=10pt] {$f(\mathbf{x}_0)$};
-\draw[figR, thick] (Q) circle (0.75);
-\node[figR!85!black, font=\scriptsize] at (1.5,2.0) {$B(f(\mathbf{x}_0),\varepsilon)$};
-% image blob of the delta ball, inside epsilon ball
-\draw[figG, thick, fill=figG!12] plot[smooth cycle, tension=0.9] coordinates {(1.22,0.75) (1.78,0.68) (1.95,1.05) (1.55,1.32) (1.15,1.12)};
-\end{scope}
-% dashed image arrow
-\draw[->, dashed, figG] (1.85,0.75) .. controls (3.6,-0.3) and (5.4,-0.1) .. (6.75,0.72);
-\node[figG!75!black, font=\scriptsize] at (4.2,-0.42) {$f(B(\mathbf{x}_0,\delta))$};
+% ---- domain: the (x,y)-plane ----
+\draw[-stealth, thin] (-0.2,0) -- (2.9,0) node[right, font=\scriptsize] {$x$};
+\draw[-stealth, thin] (0,-0.2) -- (0,2.3) node[above, font=\scriptsize] {$y$};
+\coordinate (P) at (1.4,1.05);
+\draw[figG, thick, dashed, fill=figG!10] (P) circle (0.62);
+\draw[figG, thin] (P) -- ++(35:0.62) node[pos=0.6, above left, font=\scriptsize, inner sep=1pt] {$\delta$};
+\filldraw (P) circle (1.2pt) node[below, font=\scriptsize, inner sep=2pt] {$(x_0,y_0)$};
+\node[figG, font=\scriptsize] at (1.4,1.95) {$B((x_0,y_0),\delta)$};
+% ---- the map ----
+\draw[-stealth, thick] (3.1,1.55) -- (4.5,1.55) node[midway, above, font=\small] {$f$};
+\draw[-stealth, figG, dashed] (2.05,0.8) .. controls (3.0,0.35) and (4.0,0.45) .. (4.83,0.72);
+% ---- codomain: the real line R, drawn vertically ----
+\draw[-stealth, thin] (5.0,-0.2) -- (5.0,2.4) node[above, font=\scriptsize] {$\mathbb{R}$};
+% epsilon-interval around f(x0,y0) (open: hollow endpoints)
+\draw[figR, line width=2.2pt] (5.0,0.3) -- (5.0,1.8);
+\draw[figR, fill=white, thick] (5.0,0.3) circle (1.8pt);
+\draw[figR, fill=white, thick] (5.0,1.8) circle (1.8pt);
+% image of the delta-ball: trapped inside
+\draw[figG, line width=2.2pt] (5.22,0.58) -- (5.22,1.42);
+\filldraw (5.0,1.05) circle (1.3pt);
+\node[font=\scriptsize, anchor=east] at (4.9,1.05) {$f(x_0,y_0)$};
+\node[figR, font=\scriptsize, anchor=west] at (5.1,1.95) {$f(x_0,y_0)+\varepsilon$};
+\node[figR, font=\scriptsize, anchor=west] at (5.1,0.15) {$f(x_0,y_0)-\varepsilon$};
+\node[figG, font=\scriptsize, anchor=west] at (5.32,1.0) {$f(B((x_0,y_0),\delta))$};
 \end{tikzpicture}
