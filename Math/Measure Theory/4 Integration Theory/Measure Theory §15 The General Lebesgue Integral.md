@@ -374,7 +374,7 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[Measure Theory §14 The Lebesgue
 
 > [!remark]- Connections
 > - MATH 451 exchanges limit and integral only under uniform convergence: [[Single Variable Analysis §25 More on Uniform Convergence#^thm-25-1|451 §25.1]], [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]]. On $[a,b]$, a uniformly convergent sequence of bounded functions is dominated by a constant, so the DCT contains these.
-> - The $L^p$ theory ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces|§19]]) and [[Fubini's Theorem (Lebesgue)|Fubini's Theorem]] (§17.6) lean on the DCT throughout.
+> - The $L^p$ theory ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces|§19]]) leans on the DCT throughout. [[Fubini's Theorem (Lebesgue)|Fubini's Theorem]] (§17.6) does not: it applies [[Tonelli's Theorem]] to $f^+$ and $f^-$ and subtracts.
 
 > [!remark] Remark: Comparison of Convergence Theorems
 > The three main convergence theorems each trade hypotheses for generality:

@@ -186,7 +186,7 @@ $$
 \eta = f_{23}\,dy \wedge dz + f_{31}\,dz \wedge dx + f_{12}\,dx \wedge dy.
 $$
 
-(In §16–§20, we wrote $A, B, C$ for $f_{23}, f_{31}, f_{12}$. The subscript notation makes the structure explicit: the subscripts name which basis element the coefficient multiplies.)
+(In §18, the flux of a vector field $\mathbf{u} = (a, b, c)$ is the integral of this 2-form with $(f_{23}, f_{31}, f_{12}) = (a, b, c)$. The subscript notation makes the structure explicit: the subscripts name which basis element the coefficient multiplies.)
 
 To integrate $\eta$ over a surface $S$ parametrized by $\mathbf{X}(u,v)$: at each point of $S$, the parametrization provides two tangent vectors $\mathbf{X}_u$ and $\mathbf{X}_v$ (from [[Multivariable Analysis §18 Surface Integrals#^def-18-2|§18]]). These span a small parallelogram — the infinitesimal surface element. The 2-form eats this pair of vectors and outputs a number (the signed area, weighted by the coefficients at that point). Summing over all such parallelograms:
 

@@ -68,7 +68,8 @@ tags: [topology, math590]
 > - $(a,b)$ if $a, b \in Y$
 > - $[0, b)$ if $b \in Y$, $a \notin Y$
 > - $(a, 1]$ if $a \in Y$, $b \notin Y$
-> - $\emptyset$ if $a, b \notin Y$
+> - $Y = [0,1]$ if $a < 0$ and $b > 1$
+> - $\emptyset$ if $a, b \notin Y$ lie on the same side of $Y$ (both $< 0$ or both $> 1$)
 >
 > For $[0,1] \subseteq \mathbb{R}$, the subspace topology is the same as the [[Topology §3 Order Topology#^def-3-4|order topology]] on $[0,1]$.
 

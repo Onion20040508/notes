@@ -218,7 +218,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 >
 > **Step 1: Rectangles.** $\chi_I \in \mathcal{F}$ for any rectangle $I = I_1 \times I_2$. Direct: $\chi_I(x,y) = \chi_{I_1}(x)\,\chi_{I_2}(y)$, so $F(x) = m(I_2)\,\chi_{I_1}(x)$ and $\int F\,dx = m(I_1)\,m(I_2) = m(I)$.
 >
-> **Step 2: Open sets.** $\chi_O \in \mathcal{F}$ for any open $O \subseteq \mathbb{R}^n$. Write $O = \bigsqcup_{j=1}^{\infty} I_j$ (countable disjoint half-open rectangles by [[Measure Theory §7 Structure of Open Sets#^prop-7-3|§7]]). Then $\chi_O = \lim_{k \to \infty} \sum_{j=1}^{k} \chi_{I_j}$. Each partial sum is in $\mathcal{F}$ by Step 1 and property (1). The sequence is increasing, so $\chi_O \in \mathcal{F}$ by property (3).
+> **Step 2: Open sets.** $\chi_O \in \mathcal{F}$ for any open $O \subseteq \mathbb{R}^n$. Write $O = \bigsqcup_{j=1}^{\infty} I_j$ (countable disjoint half-open rectangles by [[Measure Theory §7 Structure of Open Sets#^prop-7-3|§7]]). Then $\chi_O = \lim_{k \to \infty} \sum_{j=1}^{k} \chi_{I_j}$. Each partial sum is in $\mathcal{F}$ by Step 1, since $\mathcal{F}$ is closed under finite sums: if $f, g \in \mathcal{F}$, then off the union of their two null sets $(f+g)(x, \cdot)$ is measurable and $F_{f+g} = F_f + F_g$, and $\int F_{f+g}\,dx = \int F_f\,dx + \int F_g\,dx = \iint f + \iint g = \iint (f+g)$ by linearity of the integral of non-negative functions ([[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|Theorem §14.8]]). The sequence is increasing, so $\chi_O \in \mathcal{F}$ by property (3).
 >
 > **Step 3: $G_\delta$ sets.** $\chi_G \in \mathcal{F}$ for any $G_\delta$ set ([[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-8|Def. §11.8]]) $G$ with $m(G) < \infty$. Write $G = \bigcap_{k=1}^{\infty} U_k$ with $U_k$ open. Define $O_k = \bigcap_{j=1}^{k} U_j$ (open, decreasing, $\bigcap O_k = G$). WLOG $m(O_1) < \infty$. Then $\chi_{O_k} \searrow \chi_G$, each $\chi_{O_k} \in \mathcal{F}$ by Step 2, and $\chi_{O_1} \in L$. By property (4), $\chi_G \in \mathcal{F}$.
 >
@@ -228,13 +228,13 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 >
 > **Step 6: General measurable sets.** For $E \in \mathcal{M}$, let $E_k = E \cap B(0, k)$. Then $\chi_{E_k} \in \mathcal{F}$ (Step 5) and $\chi_{E_k} \nearrow \chi_E$. By property (3), $\chi_E \in \mathcal{F}$.
 >
-> **Step 7: Simple functions.** $\varphi = \sum a_j\,\chi_{A_j} \in \mathcal{F}$ by Step 6 and property (1).
+> **Step 7: Simple functions.** $\varphi = \sum a_j\,\chi_{A_j} \in \mathcal{F}$ by Step 6, property (1), and closure under finite sums (Step 2).
 >
 > **Step 8: General non-negative measurable functions.** Choose simple $\varphi_k \nearrow f$ ([[Simple Function Approximation Theorem|§12.14]]). Each $\varphi_k \in \mathcal{F}$ (Step 7). By property (3), $f \in \mathcal{F}$.
 
 ^pf-17-3
 
-*Uses:* [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^def-17-2|Def. §17.2]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^lem-17-5|§17.5]], [[Measure Theory §7 Structure of Open Sets#^prop-7-3|§7.3]], [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-8|Def. §11.8]], [[Outer Regularity of Lebesgue Measure|§11.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[Simple Function Approximation Theorem|§12.14]]
+*Uses:* [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^def-17-2|Def. §17.2]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^lem-17-5|§17.5]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[Measure Theory §7 Structure of Open Sets#^prop-7-3|§7.3]], [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-8|Def. §11.8]], [[Outer Regularity of Lebesgue Measure|§11.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[Simple Function Approximation Theorem|§12.14]]
 
 ## Fubini's Theorem
 
@@ -307,7 +307,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 > - Used for the volume of sheared rectangles in [[Measure Theory §18 Differentiation Theory#^thm-18-22|Linear Maps Preserve Null Sets]] (§18.22).
 
 > [!remark] Remark: Why Integrability is Essential
-> The hypothesis $f \in L(\mathbb{R}^n)$ (equivalently $\iint |f| < \infty$) cannot be dropped. Without it, the subtraction $\int f^+\,dy - \int f^-\,dy$ can be $\infty - \infty$, and the iterated integrals can depend on the order of integration. A classical counterexample ([[Multivariable Analysis §15 Multivariable Integration#^ex-15-2|452 Ex. §15.2]]): on $[0,1]^2$, define $f(x,y) = \frac{x^2 - y^2}{(x^2 + y^2)^2}$. Then $\int_0^1\!\left(\int_0^1 f\,dy\right)dx = -\pi/4$ but $\int_0^1\!\left(\int_0^1 f\,dx\right)dy = \pi/4$.
+> The hypothesis $f \in L(\mathbb{R}^n)$ (equivalently $\iint |f| < \infty$) cannot be dropped. Without it, the subtraction $\int f^+\,dy - \int f^-\,dy$ can be $\infty - \infty$, and the iterated integrals can depend on the order of integration. A classical counterexample ([[Multivariable Analysis §15 Multivariable Integration#^ex-15-2|452 Ex. §15.2]]): on $[0,1]^2$, define $f(x,y) = \frac{x^2 - y^2}{(x^2 + y^2)^2}$. Then $\int_0^1\!\left(\int_0^1 f\,dy\right)dx = \pi/4$ but $\int_0^1\!\left(\int_0^1 f\,dx\right)dy = -\pi/4$.
 
 ^rem-17-3
 
@@ -400,7 +400,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 ^cor-17-10
 
 > [!proof]+ Proof
-> First assume $m(E) < \infty$. For $\delta > 0$ and $k \in \mathbb{Z}$, define $E_k = \{x \in E : k\delta \leq f(x) \leq (k+1)\delta\}$. Each $E_k$ is [[Measure Theory §12 Measurable Functions#^prop-12-2|measurable]], and $E = \bigcup_{k=-\infty}^{\infty} E_k$. Then:
+> First assume $m(E) < \infty$. For $\delta > 0$ and $k \in \mathbb{Z}$, define $E_k = \{x \in E : k\delta \leq f(x) < (k+1)\delta\}$. Each $E_k$ is [[Measure Theory §12 Measurable Functions#^prop-12-2|measurable]], and $E = \bigsqcup_{k=-\infty}^{\infty} E_k$ is a disjoint union. Then:
 >
 > $$
 > G_E(f) \subseteq \bigcup_{k=-\infty}^{\infty} \bigl(E_k \times [k\delta, (k+1)\delta]\bigr).
@@ -421,7 +421,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 *Uses:* [[Measure Theory §12 Measurable Functions#^prop-12-2|§12.2]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-8|§17.8]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]]
 
 ![[m551-17-2.svg]]
-*Why a graph is null (here $n = 1$, $E = [0,1]$). Cut the range into bands $[k\delta, (k+1)\delta]$ (dotted). The part of the graph $G_E(f)$ (red) over $E_k = \{k\delta \leq f \leq (k+1)\delta\}$ lies in the box $E_k \times [k\delta, (k+1)\delta]$ of measure $\delta\, m(E_k)$. One band is highlighted: its $E_k$ (blue on the axis) has three pieces, since it is a level set rather than an interval. The boxes cover the graph, their total measure is $\delta \sum_k m(E_k)$, and $\delta$ can be taken arbitrarily small.*
+*Why a graph is null (here $n = 1$, $E = [0,1]$). Cut the range into bands $[k\delta, (k+1)\delta]$ (dotted). The part of the graph $G_E(f)$ (red) over $E_k = \{k\delta \leq f < (k+1)\delta\}$ lies in the box $E_k \times [k\delta, (k+1)\delta]$ of measure $\delta\, m(E_k)$. One band is highlighted: its $E_k$ (blue on the axis) has three pieces, since it is a level set rather than an interval. The boxes cover the graph, their total measure is $\delta \sum_k m(E_k)$, and $\delta$ can be taken arbitrarily small.*
 
 > [!remark]- Connections
 > - Jordan-content analogue in MATH 452: [[Multivariable Analysis §15 Multivariable Integration#^def-15-13|Jordan Measure Zero]] (452 Def. §15.13).
@@ -486,7 +486,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 ^thm-17-12
 
 > [!remark] Remark
-> This is left as an exercise. *Hint*: For any $c \geq 0$, $\{x \in E : f(x) > c\} = \{x \in \mathbb{R}^n : (x, c) \in \underline{G}(f)\}$ is a cross-section of $\underline{G}(f)$ at height $y = c$, which is measurable by the [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-4|Cross-Section Theorem]].
+> This is left as an exercise. *Hint*: For any $c \geq 0$, $\{x \in E : f(x) > c\} = \{x \in \mathbb{R}^n : (x, c) \in \underline{G}(f)\}$ is a cross-section of $\underline{G}(f)$ at height $y = c$, which by the [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-4|Cross-Section Theorem]] (with the roles of the factors exchanged) is measurable for a.e. $c$. For the remaining $c$, choose such good $c_k \downarrow c$ (the good values are dense) and use $\{f > c\} = \bigcup_k \{f > c_k\}$.
 
 ^rem-17-4
 

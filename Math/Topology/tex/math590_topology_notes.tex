@@ -291,7 +291,7 @@ What are some other examples of elements in $\mathcal{T}_{\text{std}}$, i.e., ot
     \item $(a,b) \cap (c,d)$ \quad (intersection, possibly empty)
     \item $(-\infty, a) = \{x \mid x < a\}$
     \item $(a, \infty) = \{x \mid x > a\}$
-    \item $\mathbb{R} \setminus \mathbb{N} = \bigcup_{n \in \mathbb{Z}} (n, n+1)$
+    \item $\mathbb{R} \setminus \mathbb{Z} = \bigcup_{n \in \mathbb{Z}} (n, n+1)$
     \item $\bigcup_{n \in \mathbb{N}} \left(\frac{1}{n}, a\right)$ for fixed $a$
     \item $(b, \infty) = \bigcup_{n \in \mathbb{N}} (b, b + n)$
 \end{itemize}
@@ -406,7 +406,7 @@ Let $\mathcal{B}$ and $\mathcal{B}'$ be bases for $\mathcal{T}$ and $\mathcal{T}
 \end{lembox}
 
 \begin{proof}
-$(2) \Rightarrow (1)$: Let $U \in \mathcal{T}$. We show $U \in \mathcal{T}'$. For each $x \in U$, find $B_x \in \mathcal{B}$ such that $x \in B_x$. Then $U = \bigcup_{x \in U} B_x$. By (2), for each such $x$, there exists $B'_x \in \mathcal{B}'$ with $x \in B'_x \subseteq B_x \subseteq U$. Thus $U = \bigcup_{x \in U} B'_x \in \mathcal{T}'$, so $\mathcal{T}' \supseteq \mathcal{T}$.
+$(2) \Rightarrow (1)$: Let $U \in \mathcal{T}$. We show $U \in \mathcal{T}'$. For each $x \in U$, find $B_x \in \mathcal{B}$ such that $x \in B_x \subseteq U$. Then $U = \bigcup_{x \in U} B_x$. By (2), for each such $x$, there exists $B'_x \in \mathcal{B}'$ with $x \in B'_x \subseteq B_x \subseteq U$. Thus $U = \bigcup_{x \in U} B'_x \in \mathcal{T}'$, so $\mathcal{T}' \supseteq \mathcal{T}$.
 
 $(1) \Rightarrow (2)$: $\mathcal{T}' \supseteq \mathcal{T}$. Let $x \in X$, let $x \in B \in \mathcal{B}$. Then $B \in \mathcal{T} \subseteq \mathcal{T}'$. Since $B$ is open in $\mathcal{T}'$, there exists $B' \in \mathcal{B}'$ such that $x \in B' \subseteq B$.
 \end{proof}
@@ -766,7 +766,8 @@ $Y = [0,1] \subseteq X = \mathbb{R}$. The subspace topology on $Y$ has basis $\{
     \item $(a,b)$ if $a, b \in Y$
     \item $[0, b)$ if $b \in Y$, $a \notin Y$
     \item $(a, 1]$ if $a \in Y$, $b \notin Y$
-    \item $\emptyset$ if $a, b \notin Y$
+    \item $Y = [0,1]$ if $a < 0$ and $b > 1$
+    \item $\emptyset$ if $a, b \notin Y$ lie on the same side of $Y$ (both $< 0$ or both $> 1$)
 \end{itemize}
 For $[0,1] \subseteq \mathbb{R}$, the subspace topology is the same as the order topology on $[0,1]$.
 \end{exbox}

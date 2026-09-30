@@ -12,8 +12,10 @@ tags: [measure-theory, hub]
 
 ## Its proof uses
 - [[Measure Theory §5 Topology of ℝⁿ#^def-5-1|Definition §5.1: Open Ball]]
+- [[Measure Theory §7 Structure of Open Sets#^prop-7-1|Proposition §7.1: Open Sets in ℝ are Countable Unions of Disjoint Intervals]]
 - [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|Proposition §9.1: Basic Properties of Outer Measure]]
 - [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-10|Theorem §11.10: Approximation by Closed and F_σ Sets]]
+- [[Measure Theory §12 Measurable Functions#^prop-12-2|Proposition §12.2: Equivalent Conditions for Measurability]]
 - [[Measure Theory §12 Measurable Functions#^def-12-2|Definition §12.2: Measurable Function]]
 - [[Measure Theory §12 Measurable Functions#^thm-12-3|Theorem §12.3: Arithmetic Operations Preserve Measurability]]
 - [[Measure Theory §12 Measurable Functions#^prop-12-13|Proposition §12.13: Canonical Representation of Simple Functions]]

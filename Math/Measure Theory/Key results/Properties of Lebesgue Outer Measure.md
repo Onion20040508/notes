@@ -17,6 +17,7 @@ tags: [measure-theory, hub]
 - [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Definition §9.4: Outer Measure]]
 
 ## Used in (Measure Theory)
+- [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|Proposition §9.2: Outer Measure of Closed Rectangles]]
 - [[Measure Theory §10 Lebesgue Measurable Sets#^ex-10-1|Example §10.1: Sets of Measure Zero are Measurable]]
 - [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|Theorem §10.3: ℳ is a σ-Algebra with Countable Additivity]]
 - [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-4|Proposition §11.4: Rectangle Test for Measurability]]

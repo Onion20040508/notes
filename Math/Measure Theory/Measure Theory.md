@@ -33,7 +33,7 @@ graph TD
   C4 --> C5
   C5 --> C6
   C6 -.->|on credit| C5
-  X3 -.->|2| C5
+  X3 -.->|3| C5
   X1 -.->|13| C2
   X1 -.->|19| C3
   X1 -.->|15| C4
@@ -82,6 +82,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Triangle inequality]] (1)
 - [[Invertible ⟺ nonzero determinant]] (1)
 - [[Linear Algebra 9C Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (1)
+- [[Linear Algebra 9C Determinants#^ladr-9-61|9.61 T changes volume by factor of |det T|]] (1)
 - [[Linear Algebra 1B Definition of Vector Space#^ladr-1-20|1.20 Vector space]] (1)
 
 ## Workhorse examples

@@ -47,6 +47,8 @@ $$
 \sum_{i=1}^N f(x(t_i), y(t_i)) \sqrt{x'(\xi_i)^2 + y'(\eta_i)^2} \, (t_i - t_{i-1}).
 $$
 
+The Mean Value Theorem gives different points $\xi_i, \eta_i$ for $x'$ and $y'$, so this is not yet a Riemann sum for $f \sqrt{x'^2 + y'^2}$. But $\big|\sqrt{x'(\xi_i)^2 + y'(\eta_i)^2} - \sqrt{x'(t_i)^2 + y'(t_i)^2}\big| \leq |x'(\xi_i) - x'(t_i)| + |y'(\eta_i) - y'(t_i)|$, which is uniformly small once the mesh is small, by uniform continuity of $x'$ and $y'$ on $[a, b]$; since $f$ is bounded on $\gamma$, the difference between the two sums vanishes in the limit.
+
 Taking $N \to \infty$:
 
 $$
@@ -96,7 +98,7 @@ $$
 \int_\gamma f \, dx + g \, dy = \int_a^b f \, dx(t) + g \, dy(t).
 $$
 
-> [!remark] Remark: Parametrization Independence
+> [!remark] Remark: Orientation Dependence
 > The Type I integral $\int_\gamma f \, ds$ is *independent of orientation*: reversing the direction of traversal does not change the value (since $ds > 0$ always).
 >
 > The Type II integral $\int_\gamma f \, dx + g \, dy$ *depends on orientation*: reversing the direction of traversal changes the sign (since $dx$ and $dy$ change sign).

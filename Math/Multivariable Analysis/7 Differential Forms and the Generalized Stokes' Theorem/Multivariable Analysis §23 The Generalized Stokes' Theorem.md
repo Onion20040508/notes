@@ -184,7 +184,7 @@ All four classical theorems have the same form: $\int_{\partial \Omega} \omega =
 >
 > The apparent differences — gradient vs curl vs divergence, line integrals vs surface integrals vs volume integrals — arise from the same operation $d$ applied to forms of different degrees, integrated over regions of different dimensions.
 >
-> The three identities $d^2 = 0$ ($\text{curl}(\text{grad}) = 0$, $\text{div}(\text{curl}) = 0$) are also a single identity ([[Exterior Derivative Squares to Zero|Theorem §22.5]]). And the orientation signs that caused so much bookkeeping (the [[Multivariable Analysis §18 Surface Integrals#^rem-18-7|bottom surface normal]], the boundary curve direction, the $f(b) - f(a)$ sign) are all automatically handled by the wedge product's anti-commutativity.
+> The two identities $\text{curl}(\text{grad}) = 0$ and $\text{div}(\text{curl}) = 0$ are also a single identity, $d^2 = 0$ ([[Exterior Derivative Squares to Zero|Theorem §22.5]]). And the orientation signs that caused so much bookkeeping (the [[Multivariable Analysis §18 Surface Integrals#^rem-18-7|bottom surface normal]], the boundary curve direction, the $f(b) - f(a)$ sign) are all automatically handled by the wedge product's anti-commutativity.
 >
 > This is why differential forms are the natural language for integration on manifolds: a single theorem, a single derivative, a single product rule for signs.
 

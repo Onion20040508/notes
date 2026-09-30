@@ -78,7 +78,7 @@ All of these are manifestations of the same algebraic fact: $dx \wedge dy = -dy 
 > dx_i \wedge dx_j = \varepsilon_{ij}\,dx \wedge dy \quad (\text{in } \mathbb{R}^2), \qquad dx_i \wedge dx_j \wedge dx_k = \varepsilon_{ijk}\,dx \wedge dy \wedge dz \quad (\text{in } \mathbb{R}^3).
 > $$
 >
-> More generally, $dx_{i_1} \wedge \cdots \wedge dx_{i_k} = \varepsilon_{i_1 \cdots i_k}\,dx_1 \wedge \cdots \wedge dx_k$.
+> More generally, if $(i_1, \ldots, i_k)$ is a rearrangement of $(1, 2, \ldots, k)$ or has a repeated index, then $dx_{i_1} \wedge \cdots \wedge dx_{i_k} = \varepsilon_{i_1 \cdots i_k}\,dx_1 \wedge \cdots \wedge dx_k$. (For other index sets, sorting the indices gives $dx_{i_1} \wedge \cdots \wedge dx_{i_k} = \pm\, dx_{j_1} \wedge \cdots \wedge dx_{j_k}$ with $j_1 < \cdots < j_k$, the sign being that of the sorting permutation.)
 
 ^prop-22-1
 
@@ -158,7 +158,7 @@ $$
 \Phi^*(dx_{i_1} \wedge \cdots \wedge dx_{i_k}) = \det \begin{pmatrix} (x_{i_1})_{u_1} & \cdots & (x_{i_1})_{u_k} \\ \vdots & \ddots & \vdots \\ (x_{i_k})_{u_1} & \cdots & (x_{i_k})_{u_k} \end{pmatrix} du_1 \wedge \cdots \wedge du_k.
 $$
 
-That is, the pullback of a coordinate $k$-form extracts the $k \times k$ minor of $J$ corresponding to rows $i_1, \ldots, i_k$. This is not a new result — it is what happens when you carry out steps 1 and 2 of the definition. Each $dx_{i_\ell}$ becomes $\sum_j (x_{i_\ell})_{u_j}\,du_j$; wedging $k$ of these and using anti-commutativity kills all terms with repeated $du_j$; the surviving terms are the Leibniz formula for the determinant ([[Linear Algebra 9C Determinants#^ladr-9-46|LADR 9.46]]) (as shown in the proof in [[Multivariable Analysis §21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21.6]]).
+That is, the pullback of a coordinate $k$-form extracts the $k \times k$ minor of $J$ corresponding to rows $i_1, \ldots, i_k$. This is not a new result — it is what happens when you carry out steps 1 and 2 of the definition. Each $dx_{i_\ell}$ becomes $\sum_j (x_{i_\ell})_{u_j}\,du_j$; wedging $k$ of these and using anti-commutativity kills all terms with repeated $du_j$; the surviving terms are the Leibniz formula for the determinant ([[Linear Algebra 9C Determinants#^ladr-9-46|LADR 9.46]]) (compare the informal $2 \times 2$ computation in [[Multivariable Analysis §21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21.6]]).
 
 > [!example] Example §22.2: Pullback Along a Curve (Line Integral, §16)
 > Let $\omega = f_1\,dx + f_2\,dy + f_3\,dz$ be a 1-form on $\mathbb{R}^3$, and $\boldsymbol{\gamma}: [a,b] \to \mathbb{R}^3$ a curve with $\boldsymbol{\gamma}(t) = (x(t), y(t), z(t))$.
@@ -325,7 +325,7 @@ The recipe is always the same: differentiate each coefficient, wedge the result 
 > d\eta = \big((f_{23})_x + (f_{31})_y + (f_{12})_z\big) \, dx \wedge dy \wedge dz.
 > $$
 >
-> That is, the coefficient of the 3-form $d\eta$ is $\nabla \cdot \mathbf{F}$ where $\mathbf{F} = (f_{23}, f_{31}, f_{12})$ (written $A, B, C$ in §16–§20). The divergence, first introduced in [[Multivariable Analysis §11 The Three Differential Operators꞉ Gradient, Curl, Divergence|§11]] and [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-4|§16]], is $d$ applied to a 2-form.
+> That is, the coefficient of the 3-form $d\eta$ is $\nabla \cdot \mathbf{F}$ where $\mathbf{F} = (f_{23}, f_{31}, f_{12})$ (written $\mathbf{u} = (a, b, c)$ in §18). The divergence, first introduced in [[Multivariable Analysis §11 The Three Differential Operators꞉ Gradient, Curl, Divergence|§11]] and [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-4|§16]], is $d$ applied to a 2-form.
 
 ^prop-22-4
 
@@ -453,7 +453,7 @@ Curl and divergence are **not** at the same level: curl goes from degree 1 to de
 > - Rung $0 \to 1 \to 2$: $d(df) = 0$, i.e., $\nabla \times (\nabla f) = \mathbf{0}$. The curl of a gradient is zero.
 > - Rung $1 \to 2 \to 3$: $d(d\omega) = 0$ for a 1-form, i.e., $\nabla \cdot (\nabla \times \mathbf{F}) = 0$. The divergence of a curl is zero.
 >
-> These are not two separate computational accidents — they are the *same* identity $d \circ d = 0$ applied at different points on the ladder. This also explains why the closed surface integral in [[Stokes' Theorem in ℝ³|Stokes']] vanishes: $\iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = \int_S d\omega$, and if $\omega = df$ then $d\omega = d^2f = 0$.
+> These are not two separate computational accidents — they are the *same* identity $d \circ d = 0$ applied at different points on the ladder. This also explains why the flux of a curl through a closed surface $S$ vanishes: by [[Stokes' Theorem in ℝ³|Stokes']], $\iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = \int_S d\omega = \int_{\partial S} \omega = 0$ since $\partial S = \emptyset$ (equivalently, by the Divergence Theorem, since $\nabla \cdot (\nabla \times \mathbf{F}) = 0$).
 
 ^rem-22-5
 
@@ -538,7 +538,7 @@ With the wedge product, exterior derivative, and $d^2 = 0$ in hand, we can defin
 > \end{aligned}
 > $$
 >
-> **Verification.** The 2-form $\eta = z\,dx \wedge dy$ corresponds to the flux of $\mathbf{F} = (0, 0, z)$ through $S$. By the [[Divergence Theorem in ℝ³|Divergence Theorem]]: $\iint_S \mathbf{F} \cdot d\mathbf{S} = \iiint_V \nabla \cdot \mathbf{F}\,dV = \iiint_V 1\,dV = \frac{4\pi}{3}$. The sign discrepancy is because our parametrization gives the *inward* normal (check: at $\theta = 0$, $\phi = 0$, the cross product $\mathbf{X}_\phi \times \mathbf{X}_\theta$ points inward). Reversing the parameter order gives $+\frac{4\pi}{3}$. $\checkmark$
+> **Verification.** The 2-form $\eta = z\,dx \wedge dy$ corresponds to the flux of $\mathbf{F} = (0, 0, z)$ through $S$. By the [[Divergence Theorem in ℝ³|Divergence Theorem]]: $\iint_S \mathbf{F} \cdot d\mathbf{S} = \iiint_V \nabla \cdot \mathbf{F}\,dV = \iiint_V 1\,dV = \frac{4\pi}{3}$. The sign discrepancy is because our parametrization gives the *inward* normal (check: at $\theta = \pi/2$, $\phi = 0$, i.e., at $(1, 0, 0)$, the cross product $\mathbf{X}_\phi \times \mathbf{X}_\theta = (0, 1, 0) \times (0, 0, -1) = (-1, 0, 0)$ points inward). Reversing the parameter order gives $+\frac{4\pi}{3}$. $\checkmark$
 
 ^ex-22-5
 
@@ -658,7 +658,7 @@ The second derivative test in [[Second Derivative Test in Several Variables|§14
 > - This is $V^{(2)} = V^{(2)}_{\mathrm{sym}} \oplus V^{(2)}_{\mathrm{alt}}$ in LADR ([[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]), with antisymmetric = alternating by [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-16|LADR 9.16]].
 
 > [!theorem] Proposition §22.9: $d^2 = 0$ Is Clairaut's Theorem in Forms Language
-> The following three statements are equivalent for $C^2$ functions:
+> For $C^2$ functions, the following three statements are the same fact in three languages (all three hold, by Clairaut's theorem):
 > 1. Equality of mixed partials: $f_{x_i x_j} = f_{x_j x_i}$ (Clairaut's theorem, [[Schwarz–Clairaut Theorem|§5]]).
 > 2. The Hessian is symmetric: $D^2f(\mathbf{u}, \mathbf{v}) = D^2f(\mathbf{v}, \mathbf{u})$.
 > 3. $d^2 = 0$: the exterior derivative applied twice gives zero.
@@ -797,7 +797,7 @@ H^k = \frac{\{\text{closed } k\text{-forms}\}}{\{\text{exact } k\text{-forms}\}}
 $$
 
 is called the **$k$-th de Rham cohomology group**. It measures the “$k$-dimensional holes” in the domain:
-- $H^0$ counts the connected components (a closed 0-form is a locally constant function; it is exact — i.e., globally constant — if and only if the domain is [[Topology §13 Connected Spaces#^def-13-1|connected]]).
+- $H^0$ counts the connected components: no 0-form is exact (there are no $(-1)$-forms), so $H^0$ is the space of closed 0-forms, i.e., locally constant functions, with one dimension per [[Topology §13 Connected Spaces#^def-13-1|connected]] component.
 - $H^1$ detects 1-dimensional holes: loops that cannot be contracted to a point. The example above ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-11|Proposition §22.11]]) shows $H^1(\mathbb{R}^2 \setminus \{0\}) \neq 0$.
 - $H^2$ detects 2-dimensional holes: closed surfaces that do not bound a volume.
 

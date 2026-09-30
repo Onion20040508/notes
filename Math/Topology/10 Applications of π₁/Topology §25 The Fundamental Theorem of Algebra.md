@@ -14,7 +14,7 @@ tags: [topology, math590]
 ^thm-25-1
 
 > [!remark]- Connections
-> - The same theorem in linear algebra (used there without proof): [[Fundamental theorem of algebra, first version]].
+> - The same theorem in linear algebra, proved there with the extreme value theorem: [[Fundamental theorem of algebra, first version]].
 
 > [!proof]+ Proof
 > The proof proceeds in four steps.

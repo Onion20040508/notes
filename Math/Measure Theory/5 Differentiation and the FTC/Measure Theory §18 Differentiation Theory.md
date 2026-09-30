@@ -48,7 +48,7 @@ tags: [measure-theory, math551]
 > \sum_{i=1}^{k} J(x_i) \leq f(b) - f(a).
 > $$
 >
-> Since each $J(x_i) > 1/n$, we get $k < n(f(b) - f(a))$. So $D_n$ is finite. The set of all discontinuities is $D = \bigcup_{n=1}^{\infty} D_n$, a [[Countable Union of Countable Sets is Countable|countable union of finite sets, hence countable]].
+> Since each $J(x_i) > 1/n$, we get $k < n(f(b) - f(a))$. So $D_n$ is finite. The set of all discontinuities in $(a, b)$ is $D = \bigcup_{n=1}^{\infty} D_n$, a [[Countable Union of Countable Sets is Countable|countable union of finite sets, hence countable]]. Adding the endpoints $a$ and $b$ (where $f$ may also be discontinuous) changes this by at most two points.
 
 ^pf-18-1
 
@@ -64,7 +64,7 @@ tags: [measure-theory, math551]
 ## Vitali Covering
 
 > [!definition] Definition §18.1: Vitali Covering
-> Let $E \subseteq \mathbb{R}$ and let $\Gamma = \{I_\alpha\}_{\alpha \in \mathcal{J}}$ be a collection of closed intervals. We say $\Gamma$ is a **Vitali covering** of $E$ if for every $x \in E$ and every $\varepsilon > 0$, there exists $I \in \Gamma$ such that $|I| < \varepsilon$ and $x \in I$.
+> Let $E \subseteq \mathbb{R}$ and let $\Gamma = \{I_\alpha\}_{\alpha \in \mathcal{J}}$ be a collection of closed intervals of positive length ($|I_\alpha| > 0$). We say $\Gamma$ is a **Vitali covering** of $E$ if for every $x \in E$ and every $\varepsilon > 0$, there exists $I \in \Gamma$ such that $|I| < \varepsilon$ and $x \in I$.
 
 ^def-18-1
 
@@ -378,7 +378,7 @@ tags: [measure-theory, math551]
 > D_+ \leq D^+ \leq D_- \leq D^- \leq D_+,
 > $$
 >
-> which forces $D^+ = D_+ = D^- = D_-$, i.e., $f$ is differentiable at $x_0$.
+> which forces $D^+ = D_+ = D^- = D_-$, i.e., $f$ is differentiable at $x_0$ in the extended sense (the common value may be $\pm\infty$; $f'(x_0)$ is a real number when it is finite).
 >
 > Equivalently: $f$ is *not* differentiable at $x_0$ iff $D^+ > D_-$ or $D^- > D_+$ at $x_0$. In other words, some upper Dini derivative strictly exceeds the corresponding lower one.
 
@@ -415,7 +415,7 @@ tags: [measure-theory, math551]
 > \end{aligned}
 > $$
 >
-> We show $m(E_1) = m(E_2) = 0$. If $x_0 \in (a, b) \setminus (E_1 \cup E_2)$, then $D^+ f(x_0) \leq D_- f(x_0)$ and $D^- f(x_0) \leq D_+ f(x_0)$, which forces all four Dini derivatives to be equal (as argued in [[Measure Theory §18 Differentiation Theory#^rem-18-3|the remark above]]), so $f$ is differentiable at $x_0$.
+> We show $m(E_1) = m(E_2) = 0$. If $x_0 \in (a, b) \setminus (E_1 \cup E_2)$, then $D^+ f(x_0) \leq D_- f(x_0)$ and $D^- f(x_0) \leq D_+ f(x_0)$, which forces all four Dini derivatives to be equal (as argued in [[Measure Theory §18 Differentiation Theory#^rem-18-3|the remark above]]), so $f$ is differentiable at $x_0$ in the extended sense; that the common value is finite a.e. follows from (ii).
 >
 > **Showing $m(E_1) = 0$.** Write $E_1$ as a countable union:
 >
@@ -451,24 +451,24 @@ tags: [measure-theory, math551]
 >
 > **Step 2: Apply Vitali to the $D^+$ condition.**
 >
-> For each $x \in B$, $x$ lies in some $J_j$, and $D^+ f(x) > r$. So there exist arbitrarily small $h > 0$ with $[x, x+h] \subseteq \bigcup_{j=1}^{p} J_j$ and:
+> Remove from $B$ the right endpoints of $J_1, \ldots, J_p$ (finitely many points, a null set, so $m^*(B)$ is unchanged). For each remaining $x \in B$, $x$ lies in some $J_j$ but is not its right endpoint, and $D^+ f(x) > r$. So there exist arbitrarily small $h > 0$ with $[x, x+h] \subseteq \bigcup_{j=1}^{p} J_j$ and:
 >
 > $$
 > \frac{f(x + h) - f(x)}{h} > r.
 > $$
 >
-> The collection $\Gamma_1 = \{[x, x+h] : x \in B,\; [x,x+h] \subseteq \bigcup_{j=1}^p J_j,\; h > 0,\; f(x+h)-f(x) > rh\}$ is a Vitali covering of $B$. By Vitali, there exist disjoint $I_1 = [x_1 - k_1, x_1], \ldots, I_q = [x_q - k_q, x_q]$ in $\Gamma_1$ with $m^*(B \setminus \bigcup I_i) < \varepsilon$. Each satisfies $f(x_i) - f(x_i - k_i) > r\,k_i$, so:
+> The collection $\Gamma_1 = \{[x, x+h] : x \in B,\; [x,x+h] \subseteq \bigcup_{j=1}^p J_j,\; h > 0,\; f(x+h)-f(x) > rh\}$ is a Vitali covering of $B$. By Vitali, there exist disjoint $I_1 = [x_1, x_1 + k_1], \ldots, I_q = [x_q, x_q + k_q]$ in $\Gamma_1$ with $m^*(B \setminus \bigcup I_i) < \varepsilon$. Each satisfies $f(x_i + k_i) - f(x_i) > r\,k_i$, so:
 >
 > $$
-> \sum_{i=1}^{q} r\,k_i < \sum_{i=1}^{q} \bigl(f(x_i) - f(x_i - k_i)\bigr).  \tag{**}
+> \sum_{i=1}^{q} r\,k_i < \sum_{i=1}^{q} \bigl(f(x_i + k_i) - f(x_i)\bigr).  \tag{**}
 > $$
 >
 > **Step 3: Compare the two bounds.**
 >
-> Since each $I_i \subseteq \bigcup_j J_j$ and the $\{J_j\}$ are disjoint, the intervals $\{I_i\}$ that fall inside a given $J_j$ are disjoint subintervals of $J_j$. By monotonicity of $f$, the sum of $f(x_i) - f(x_i - k_i)$ over those $I_i \subseteq J_j$ is at most $f(y_j + h_j') - f(y_j)$ (telescoping within $J_j$). Therefore:
+> Since each $I_i \subseteq \bigcup_j J_j$ and the $\{J_j\}$ are disjoint, the intervals $\{I_i\}$ that fall inside a given $J_j$ are disjoint subintervals of $J_j$. By monotonicity of $f$, the sum of $f(x_i + k_i) - f(x_i)$ over those $I_i \subseteq J_j$ is at most $f(y_j + h_j') - f(y_j)$ (telescoping within $J_j$). Therefore:
 >
 > $$
-> \sum_{i=1}^{q} \bigl(f(x_i) - f(x_i - k_i)\bigr) \leq \sum_{j=1}^{p} \bigl(f(y_j + h_j') - f(y_j)\bigr).
+> \sum_{i=1}^{q} \bigl(f(x_i + k_i) - f(x_i)\bigr) \leq \sum_{j=1}^{p} \bigl(f(y_j + h_j') - f(y_j)\bigr).
 > $$
 >
 > Combining ($*$) and ($**$):
@@ -704,7 +704,7 @@ tags: [measure-theory, math551]
 >
 > Define $F(x) = f(x) - f(a) - \int_a^x f'(t)\,dt$. Since $f \in AC([a, b])$ and $\int_a^x f'(t)\,dt \in AC([a, b])$ (by the theorem above: integral functions are AC), and $AC$ is closed under linear combinations (property (ii)), we have $F \in AC([a, b])$.
 >
-> Moreover, $F'(x) = f'(x) - f'(x) = 0$ a.e. on $(a, b)$ (using the fact that $(\int_a^x f'\,dt)' = f'(x)$ a.e., proved in the next subsection; [[Measure Theory §18 Differentiation Theory#^thm-18-26|§18.26]]).
+> Moreover, $F'(x) = f'(x) - f'(x) = 0$ a.e. on $(a, b)$ (using the fact that $(\int_a^x f'\,dt)' = f'(x)$ a.e., proved in a later subsection; [[Measure Theory §18 Differentiation Theory#^thm-18-26|§18.26]]).
 >
 > By the lemma on non-constant functions with zero derivative ([[Measure Theory §18 Differentiation Theory#^thm-18-27|Theorem §18.27]]), if $F$ were not constant, then $F$ would not be absolutely continuous. But $F \in AC([a, b])$, so $F$ must be constant. Since $F(a) = f(a) - f(a) - 0 = 0$, we conclude $F(x) = 0$ for all $x \in [a, b]$, i.e.:
 >
@@ -942,7 +942,7 @@ tags: [measure-theory, math551]
 >
 > **Case 2: $T$ is invertible.** We show $m(T(R)) = |\!\det T|\,m(R)$ for any rectangle $R$, then use L-coverings.
 >
-> *Measure of parallelotopes.* Factor $T$ into elementary row operations (which generate all invertible linear maps): scaling one coordinate by $c$ multiplies volume by $|c|$ and determinant by $c$; adding a multiple of one coordinate to another is a shear with determinant $1$ that preserves volume (by [[Fubini's Theorem (Lebesgue)|Fubini]]: the cross-sectional area at each height is unchanged); swapping two coordinates has determinant $-1$ and preserves volume. Since both $m(T(\cdot))$ and $|\!\det T|\,m(\cdot)$ are multiplicative under composition ([[Linear Algebra 9C Determinants#^ladr-9-49|LADR 9.49]]), $m(T(R)) = |\!\det T|\,m(R)$.
+> *Measure of parallelotopes.* Factor $T$ into elementary row operations (which generate all invertible linear maps): scaling one coordinate by $c$ multiplies volume by $|c|$ and determinant by $c$; adding a multiple of one coordinate to another is a shear with determinant $1$ that preserves volume (by [[Fubini's Theorem (Lebesgue)|Fubini]]: the cross-sectional area at each height is unchanged); swapping two coordinates has determinant $-1$ and preserves volume. Since both $m(T(\cdot))$ and $|\!\det T|\,m(\cdot)$ are multiplicative under composition ([[Linear Algebra 9C Determinants#^ladr-9-49|LADR 9.49]]), $m(T(R)) = |\!\det T|\,m(R)$. (Here the composition step needs the volume formula for images of general sets, not only of rectangles, since after the first factor the image of $R$ is no longer a rectangle. What the null-set argument below actually uses is $m^*(E(A)) \leq |\!\det E|\,m^*(A)$ for each elementary map $E$ and every $A \subseteq \mathbb{R}^n$: for scalings and swaps this holds because $E$ maps L-coverings to L-coverings, scaling each volume by $|\!\det E|$, and for a shear one applies the cross-section argument to an open $G \supseteq A$ with $m(G) \leq m^*(A) + \varepsilon$, whose image $E(G)$ is open with the same cross-sectional measures. Composing gives $m^*(T(A)) \leq |\!\det T|\,m^*(A)$; the equality for all measurable sets is [[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]].)
 >
 > *Null sets.* For any $\varepsilon > 0$, choose an [[Measure Theory §9 Lebesgue Outer Measure#^def-9-3|L-covering]] $\{R_j\}_{j=1}^{\infty}$ of $Z$ with $\sum m(R_j) < \varepsilon$. Then $\{T(R_j)\}$ covers $T(Z)$, so by [[Properties of Lebesgue Outer Measure|subadditivity]]:
 >
@@ -1081,7 +1081,7 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 > \lim_{h \to 0} \frac{1}{h}\int_0^h f(x_0 + t)\,dt = f(x_0).
 > $$
 >
-> [[Measure Theory §18 Differentiation Theory#^thm-18-26|The theorem above]] shows that a.e. point is a Lebesgue point of $f$.
+> [[Measure Theory §18 Differentiation Theory#^thm-18-26|The theorem above]] shows that a.e. point is a Lebesgue point of $f$. (This is weaker than the standard notion of a Lebesgue point, which asks that $\lim_{h \to 0} \frac{1}{2h}\int_{-h}^{h} |f(x_0 + t) - f(x_0)|\,dt = 0$; that stronger property also holds at a.e. point, but it is not needed here.)
 
 ^def-18-5
 
@@ -1105,7 +1105,7 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 ^thm-18-27
 
 > [!proof]+ Proof
-> Since $f$ is not constant, there exists $c \in (a, b)$ with $f(c) \neq f(a)$. Let $A = \{x \in (a, c) : f'(x) = 0\}$. Since $f' = 0$ a.e., we have $m([a, c] \setminus A) = 0$, so $m(A) = c - a$.
+> Since $f$ is not constant, there exists $c \in (a, b]$ with $f(c) \neq f(a)$; if $f(c) = f(a)$ for every $c \in (a, b)$, take $c = b$ (the argument below works verbatim with $c = b$). Let $A = \{x \in (a, c) : f'(x) = 0\}$. Since $f' = 0$ a.e., we have $m([a, c] \setminus A) = 0$, so $m(A) = c - a$.
 >
 > For every $x_0 \in A$: $f'(x_0) = 0$ means for every $r > 0$, there exists $\delta_0 > 0$ such that for all $0 < h < \delta_0$:
 >

@@ -7,7 +7,7 @@ tags: [chapter, measure-theory]
 # 6 Lᵖ Spaces
 ↑ [[Measure Theory]]
 
-**Builds on:** [[Measure Theory — 1 Set Theory Prerequisites|1 Set Theory Prerequisites]] (4), [[Measure Theory — 3 Measure Theory|3 Measure Theory]] (8), [[Measure Theory — 4 Integration Theory|4 Integration Theory]] (26), [[Measure Theory — 5 Differentiation and the FTC|5 Differentiation and the FTC]] (3)
+**Builds on:** [[Measure Theory — 1 Set Theory Prerequisites|1 Set Theory Prerequisites]] (4), [[Measure Theory — 3 Measure Theory|3 Measure Theory]] (9), [[Measure Theory — 4 Integration Theory|4 Integration Theory]] (26), [[Measure Theory — 5 Differentiation and the FTC|5 Differentiation and the FTC]] (3)
 **Used by:** [[Measure Theory — 5 Differentiation and the FTC|5 Differentiation and the FTC]] (1)
 **Builds on (other subjects):** [[Single Variable Analysis]] (4), [[Linear Algebra]] (1), [[Topology]] (1)
 

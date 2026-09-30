@@ -20,6 +20,7 @@ tags: [measure-theory, hub]
 
 ## Used in (Measure Theory)
 - [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-6|Theorem §11.6: Open Sets are Measurable]]
+- [[Measure Theory §13 Egorov's and Lusin's Theorems#^thm-13-3|Theorem §13.3: Lusin's Theorem]]
 - [[Measure Theory §15 The General Lebesgue Integral#^ex-15-2|Example §15.2: Application: Vanishing Integrals over Intervals]]
 - [[Measure Theory §18 Differentiation Theory#^thm-18-19|Theorem §18.19: AC Functions Map Null Sets to Null Sets]]
 

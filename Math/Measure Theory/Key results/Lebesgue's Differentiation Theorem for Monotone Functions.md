@@ -25,8 +25,8 @@ tags: [measure-theory, hub]
 - [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-1|Theorem §17.1: Translation Invariance]]
 - [[Measure Theory §18 Differentiation Theory#^def-18-1|Definition §18.1: Vitali Covering]]
 - [[Measure Theory §18 Differentiation Theory#^thm-18-2|Theorem §18.2: Vitali Covering Theorem]]
-- [[Measure Theory §18 Differentiation Theory#^rem-18-3|Remark: Relationship to Differentiability]]
 - [[Measure Theory §18 Differentiation Theory#^def-18-3|Definition §18.3: Dini Derivatives]]
+- [[Measure Theory §18 Differentiation Theory#^rem-18-3|Remark: Relationship to Differentiability]]
 
 ## Used in (Measure Theory)
 - [[Measure Theory §18 Differentiation Theory#^cor-18-10|Corollary §18.10: BV Functions are Differentiable A.E.]]

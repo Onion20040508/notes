@@ -139,13 +139,15 @@ $$
 
 The strategy: parametrize $S$ by $\mathbf{X}: D \to \mathbb{R}^3$, pull both sides back to the flat parameter domain $D$, and show they are equal by Green's theorem on $D$.
 
+[[Stokes' Theorem in ℝ³|Theorem §20.1]] is stated for piecewise smooth $S$ and $C^1$ $\mathbf{F}$, but both proofs assume that $S$ has a single $C^2$ parametrization (in the first proof, the graph of a $C^2$ function). A general piecewise smooth $S$ is handled by cutting it into such pieces and adding: the interior cut curves are traversed twice in opposite directions and cancel (compare [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^rem-20-2|Remark §20.2]]).
+
 **Step 1: Set up the parametrization.**
 
 Let $\mathbf{X}: \overline{D} \to \mathbb{R}^3$ be a $C^2$ parametrization of $S$ ([[Multivariable Analysis §18 Surface Integrals#^def-18-1|Def. §18.1]]), where $D \subseteq \mathbb{R}^2$ is a bounded domain with piecewise smooth boundary $\partial D$.
 
 The parametrization maps:
-- the interior of $D$ onto $S$,
-- the boundary $\partial D$ onto $\partial S$.
+- the closure $\overline{D}$ onto $S$,
+- the boundary $\partial D$ onto $\partial S$, with the positive (counterclockwise) orientation of $\partial D$ going to the right-hand-rule orientation of $\partial S$ (we choose $\mathbf{X}$ so that $\mathbf{X}_u \times \mathbf{X}_v$ points along the chosen normal $\hat{n}$).
 
 Write $\mathbf{X}(u,v) = (x(u,v), \, y(u,v), \, z(u,v))$.
 

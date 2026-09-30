@@ -123,7 +123,7 @@ Topology is the study of **topological spaces**, **continuous maps** between the
 > - $(a,b) \cap (c,d)$ (intersection, possibly empty)
 > - $(-\infty, a) = \{x \mid x < a\}$
 > - $(a, \infty) = \{x \mid x > a\}$
-> - $\mathbb{R} \setminus \mathbb{N} = \bigcup_{n \in \mathbb{Z}} (n, n+1)$
+> - $\mathbb{R} \setminus \mathbb{Z} = \bigcup_{n \in \mathbb{Z}} (n, n+1)$
 > - $\bigcup_{n \in \mathbb{N}} \left(\frac{1}{n}, a\right)$ for fixed $a$
 > - $(b, \infty) = \bigcup_{n \in \mathbb{N}} (b, b + n)$
 

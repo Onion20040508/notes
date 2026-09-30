@@ -100,7 +100,7 @@ In the [[Multivariable Analysis §16 Line Integrals and Green's Theorem|previous
 > \hat{n}_{\text{top}} = \frac{\nabla F}{|\nabla F|} = \frac{(-\partial_1 \beta, \ldots, -\partial_{n-1} \beta, 1)}{\sqrt{1 + |\nabla' \beta|^2}},
 > $$
 >
-> where $\nabla' \beta = (\partial_1 \beta, \ldots, \partial_{n-1} \beta)$. The surface element is $dS = \sqrt{1 + |\nabla' \beta|^2} \, d\mathbf{x}'$.
+> where $\nabla' \beta = (\partial_1 \beta, \ldots, \partial_{n-1} \beta)$. The surface element is $dS = \sqrt{1 + |\nabla' \beta|^2} \, d\mathbf{x}'$. (We use this graph area element ahead of §18, where area elements are derived: for $n = 3$, [[Surface Area via the Gram Matrix|Theorem §18.1]] gives $dS = \sqrt{\det G}\, d\mathbf{x}'$ with $\det G = 1 + |\nabla' \beta|^2$ for the parametrization $\mathbf{x}' \mapsto (\mathbf{x}', \beta(\mathbf{x}'))$; for $n > 3$ we take the same formula as the area element of a graph.)
 >
 > Therefore the $n$-th component of $\hat{n}$ times $dS$ is:
 >
@@ -234,6 +234,8 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > \int_D |\nabla v|^2 \, dV = 0 \quad \Longrightarrow \quad \nabla v \equiv 0 \quad \Longrightarrow \quad v \equiv 0 \text{ on } D.
 > $$
 >
+> (The last step uses that $D$ is connected, so $v$ is constant, and that $v$ is continuous up to the boundary, so this constant equals the boundary value $0$.)
+>
 > This proves **[[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|uniqueness for the Dirichlet problem]]**: if $\Delta v = 0$ on $D$ and $v = 0$ on $\partial D$, then $v = 0$. Equivalently, a harmonic function is uniquely determined by its boundary values.
 
 ^rem-17-1
@@ -295,7 +297,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > \int_D |\nabla w|^2 \, dV + \underbrace{\int_D w \, \Delta w \, dV}_{= 0} = \underbrace{\int_{\partial D} w \, \frac{\partial w}{\partial n} \, dS}_{= 0}.
 > $$
 >
-> Therefore $\int_D |\nabla w|^2 \, dV = 0$. Since $|\nabla w|^2 \geq 0$ and is continuous, this implies $\nabla w = 0$ on $D$, so $w$ is constant. Since $w = 0$ on $\partial D$, we conclude $w \equiv 0$.
+> Therefore $\int_D |\nabla w|^2 \, dV = 0$. Since $|\nabla w|^2 \geq 0$ and is continuous, this implies $\nabla w = 0$ on $D$, so $w$ is constant (as $D$ is connected). Since $w$ is continuous on $\overline{D}$ and $w = 0$ on $\partial D$, we conclude $w \equiv 0$.
 
 ^ex-17-1
 
@@ -313,7 +315,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > \int_D |\nabla w|^2 \, dV = \int_{\partial D} w \, \underbrace{\frac{\partial w}{\partial n}}_{= 0} \, dS = 0.
 > $$
 >
-> So $\nabla w = 0$, hence $w$ is constant. (Note: unlike Dirichlet, we cannot determine the constant — this is why Neumann solutions are unique only up to a constant.)
+> So $\nabla w = 0$, hence $w$ is constant (as $D$ is connected). (Note: unlike Dirichlet, we cannot determine the constant — this is why Neumann solutions are unique only up to a constant.)
 
 ^ex-17-2
 
@@ -355,13 +357,13 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 Consider a fluid with density $\rho(x, y, t)$ and velocity field $\mathbf{u}(x, y, t)$. Let $D$ be a fixed region in the plane with boundary $\gamma$.
 
-**Rate of change of outflow of volume** across $\gamma$: if the flow speed is $u$ in a pipe of cross-section $S$, the volume displaced in time $T$ is $uTS$, so the volume flux per unit time is $uS$. For a general boundary:
+**Rate of outflow of volume** across $\gamma$: if the flow speed is $u$ in a pipe of cross-section $S$, the volume displaced in time $T$ is $uTS$, so the volume flux per unit time is $uS$. For a general boundary:
 
 $$
 \text{rate of outflow of volume} = \oint_\gamma \mathbf{u} \cdot \hat{n} \, ds.
 $$
 
-**Rate of change of outflow of mass** across $\gamma$: weight by density:
+**Rate of outflow of mass** across $\gamma$: weight by density:
 
 $$
 \text{rate of outflow of mass} = \oint_\gamma \rho \, \mathbf{u} \cdot \hat{n} \, ds.
@@ -379,7 +381,9 @@ $$
 \frac{d}{dt} \iint_D \rho \, dx \, dy = \iint_D \rho_t \, dx \, dy.
 $$
 
-If there are no sources or sinks ($\rho > 0$, mass is neither created nor destroyed), then conservation of mass says:
+This differentiates under the integral sign, which is justified when $\rho_t$ is continuous: on the compact set $\overline{D} \times [t_0 - 1, t_0 + 1]$ it is uniformly continuous, so the difference quotients $(\rho(\cdot, t) - \rho(\cdot, t_0))/(t - t_0)$ converge to $\rho_t(\cdot, t_0)$ uniformly on $\overline{D}$ (by the Mean Value Theorem).
+
+If there are no sources or sinks (mass is neither created nor destroyed), then conservation of mass says:
 
 $$
 \underbrace{\frac{d}{dt} \iint_D \rho \, dx \, dy}_{\text{rate of change of mass in } D} + \underbrace{\oint_\gamma \rho \, \mathbf{u} \cdot \hat{n} \, ds}_{\text{rate of outflow of mass}} = 0. \tag{①+②=0}
@@ -397,7 +401,7 @@ $$
 \iint_D \big( \rho_t + \nabla \cdot (\rho \mathbf{u}) \big) \, dx \, dy = 0 \qquad \text{for }\textbf{any}\text{ domain } D.
 $$
 
-**Key argument:** If $\iint_D f \, dx \, dy = 0$ for every domain $D$ and $f$ is continuous, then $f \equiv 0$. (If $f(a,b) > 0$, then by [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|continuity]] $f \geq f(a,b)/2 > 0$ on some [[Multivariable Analysis §2 Open and Closed Sets#^def-2-1|ball]] $B_\delta(a,b) \subseteq D$, giving a [[Multivariable Analysis §15 Multivariable Integration#^thm-15-5|positive integral]] — contradiction.)
+**Key argument:** If $\iint_D f \, dx \, dy = 0$ for every domain $D$ and $f$ is continuous, then $f \equiv 0$. (If $f(\mathbf{p}) > 0$ at a point $\mathbf{p}$, then by [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|continuity]] $f \geq f(\mathbf{p})/2 > 0$ on some [[Multivariable Analysis §2 Open and Closed Sets#^def-2-1|ball]] $B_\delta(\mathbf{p})$; taking $D = B_\delta(\mathbf{p})$ gives a [[Multivariable Analysis §15 Multivariable Integration#^thm-15-5|positive integral]] — contradiction. Similarly if $f(\mathbf{p}) < 0$.)
 
 Therefore, the integrand vanishes pointwise:
 
@@ -546,7 +550,7 @@ $$
 \ln|g| = -\ln|r| + C_1 \qquad \Longrightarrow \qquad |g| = e^{C_1} \cdot \frac{1}{r} = \frac{C_2}{r}.
 $$
 
-So $g(r) = C/r$ for some constant $C$.
+So $g(r) = C/r$ for some constant $C$. (Step 2 divides by $g$, assuming $g \neq 0$; the solution $g \equiv 0$ is included as $C = 0$. More directly, $g' + g/r = 0$ says $(rg)' = 0$, so $rg$ is constant for $r > 0$.)
 
 **Verification:** $g'(r) = -C/r^2$, so $g'(r) + g(r)/r = -C/r^2 + C/r^2 = 0$. ✓
 

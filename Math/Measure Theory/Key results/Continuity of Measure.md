@@ -20,6 +20,7 @@ tags: [measure-theory, hub]
 - [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-14|Theorem §11.14: Continuity of Outer Measure from Below via Measurable Exhaustion]]
 - [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^lem-14-5|Lemma §14.5: Integral over Increasing Sets]]
 - [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-11|Theorem §17.11: The Subgraph Theorem]]
+- [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|Theorem §19.21: L^∞ is Not Separable]]
 
 ## Connections
 - **Proof idea.** Write ⋃Eₙ as the disjoint union of the increments E₁, E₂ ∖ E₁, E₃ ∖ E₂, … . Countable additivity ([[Lebesgue Measurable Sets Form a σ-Algebra]]) turns m(⋃Eₙ) into a limit of partial sums, and [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|finite additivity]] identifies the N-th partial sum with m(E_N).

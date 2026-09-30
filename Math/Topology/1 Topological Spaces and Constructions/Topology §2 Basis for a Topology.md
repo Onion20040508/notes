@@ -122,7 +122,7 @@ tags: [topology, math590]
 ^lem-2-2
 
 > [!proof]+ Proof
-> $(2) \Rightarrow (1)$: Let $U \in \mathcal{T}$. We show $U \in \mathcal{T}'$. For each $x \in U$, find $B_x \in \mathcal{B}$ such that $x \in B_x$. Then $U = \bigcup_{x \in U} B_x$. By (2), for each such $x$, there exists $B'_x \in \mathcal{B}'$ with $x \in B'_x \subseteq B_x \subseteq U$. Thus $U = \bigcup_{x \in U} B'_x \in \mathcal{T}'$, so $\mathcal{T}' \supseteq \mathcal{T}$.
+> $(2) \Rightarrow (1)$: Let $U \in \mathcal{T}$. We show $U \in \mathcal{T}'$. For each $x \in U$, find $B_x \in \mathcal{B}$ such that $x \in B_x \subseteq U$. Then $U = \bigcup_{x \in U} B_x$. By (2), for each such $x$, there exists $B'_x \in \mathcal{B}'$ with $x \in B'_x \subseteq B_x \subseteq U$. Thus $U = \bigcup_{x \in U} B'_x \in \mathcal{T}'$, so $\mathcal{T}' \supseteq \mathcal{T}$.
 >
 > $(1) \Rightarrow (2)$: $\mathcal{T}' \supseteq \mathcal{T}$. Let $x \in X$, let $x \in B \in \mathcal{B}$. Then $B \in \mathcal{T} \subseteq \mathcal{T}'$. Since $B$ is open in $\mathcal{T}'$, there exists $B' \in \mathcal{B}'$ such that $x \in B' \subseteq B$.
 

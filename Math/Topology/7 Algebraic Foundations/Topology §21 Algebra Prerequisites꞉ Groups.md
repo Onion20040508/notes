@@ -379,6 +379,8 @@ tags: [topology, math590]
 
 ^pf-21-10
 
+*Uses:* [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-3|Def. §21.3]]
+
 > [!remark] Remark: Why This Matters for $\pi_1$: Two Directions from a Retraction
 > If $A$ is a [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|retract]] of $X$ (with retraction $r$ and inclusion $j$), then $r_* \circ j_* = \operatorname{id}$ on $\pi_1(A)$, giving two [[Topology §23 The Fundamental Group#^def-23-4|induced maps]]:
 >

@@ -836,6 +836,8 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 > - The inner integral $F(x) = \int_c^d f(x, y) \, dy$ exists for each $x$ ([[Single Variable Analysis §32 The Definition of the Riemann Integral#^thm-32-7|451 §32.7]]) and is continuous in $x$.
 > - The Riemann sums converge uniformly.
 >
+> Indeed, given $\varepsilon > 0$, choose $\delta > 0$ with $|f(p) - f(q)| < \varepsilon$ whenever $\|p - q\| < \delta$. If $h, k < \delta$, then for every $x \in [a, b]$, $\big|\sum_{j} f(x, \eta_j)\, k - F(x)\big| \leq \sum_j \int_{y_{j-1}}^{y_j} |f(x, \eta_j) - f(x, y)| \, dy \leq \varepsilon (d - c)$, uniformly in $x$; hence $\big|S_{N,M} - \sum_i F(\xi_i)\, h\big| \leq \varepsilon (d - c)(b - a)$. Likewise $|F(x) - F(x')| \leq \varepsilon (d - c)$ for $|x - x'| < \delta$, so $F$ is continuous and $\sum_i F(\xi_i)\, h \to \int_a^b F(x)\, dx$.
+>
 > Taking $N, M \to \infty$:
 >
 > $$
@@ -856,7 +858,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 > [!remark] Remark: Why Continuity Matters
 > The key point is that $F(x) = \int_c^d f(x, y) \, dy$ must be well-defined and integrable. Continuity of $f$ guarantees this.
 >
-> More generally, Fubini's theorem holds if $f$ is **integrable** and the iterated integrals exist. The condition can be weakened to: $\iint_D |f| \, dA < \infty$ (absolute integrability).
+> More generally, Fubini's theorem holds if $f$ is **integrable** and the iterated integrals exist. For a bounded integrable $f$ on a bounded domain, $\iint_D |f| \, dA < \infty$ holds automatically; the condition $\iint_D |f| \, dA < \infty$ (absolute integrability) matters when $f$ or $D$ is unbounded, so that the double integral is improper (or, in Lebesgue theory, MATH 551).
 
 ^rem-15-10
 
@@ -1185,7 +1187,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 > \int_0^1 \left( \int_0^1 \frac{x^2 - y^2}{(x^2 + y^2)^2} \, dx \right) dy = \int_0^1 \frac{-1}{y^2 + 1} \, dy = -\frac{\pi}{4}.
 > $$
 >
-> The two iterated integrals give different values! This happens because:
+> The two iterated integrals give different values! This happens because $f$ is unbounded near the origin (so it is not Riemann integrable on the square), and even as an improper integral (over $[\delta, 1]^2$, $\delta \to 0$) it is not absolutely integrable:
 >
 > $$
 > \iint_{(0,1] \times (0,1]} |f(x, y)| \, dA = +\infty.
@@ -2155,7 +2157,7 @@ The proof follows the same structure as the 2D case ([[Multivariable Analysis §
 >
 > Therefore: $dx \, dy = r \, dr \, d\theta$.
 >
-> Note: $J = r = 0$ at the origin, but by [[Multivariable Analysis §15 Multivariable Integration#^prop-15-18|Proposition §15.18]], the formula still applies.
+> Note: $J = r$ vanishes on the whole segment $\{0\} \times [0, 2\pi)$ (all of which maps to the origin), not at isolated points, and the domain is unbounded, so [[Multivariable Analysis §15 Multivariable Integration#^prop-15-18|Proposition §15.18]] does not apply as stated. Its exhaustion argument still works: apply the formula on the region $\varepsilon \leq r \leq R$, where $J \neq 0$, and let $\varepsilon \to 0$ (the removed disk has area $\pi\varepsilon^2$) and, for unbounded domains, $R \to \infty$.
 
 ^ex-15-4
 
@@ -2229,6 +2231,14 @@ We now demonstrate the change of variables formula with two complete computation
 > $$
 > I^2 = \int_0^{2\pi} \frac{1}{2} \, d\theta = \pi.
 > $$
+>
+> Here $\iint_{\mathbb{R}^2}$ is an improper integral, and Steps 1–2 are justified by exhaustion. On the square $[-R, R]^2$, Fubini gives $\big(\int_{-R}^{R} e^{-x^2}\, dx\big)^2$; on the disk of radius $R$, polar coordinates (as in [[Multivariable Analysis §15 Multivariable Integration#^ex-15-4|Example §15.4]]) give $\int_0^{2\pi}\int_0^R e^{-r^2} r\, dr\, d\theta = \pi(1 - e^{-R^2})$. Since the integrand is positive and the disk of radius $R$ lies in $[-R, R]^2$, which lies in the disk of radius $\sqrt{2}R$,
+>
+> $$
+> \pi(1 - e^{-R^2}) \leq \left( \int_{-R}^{R} e^{-x^2} \, dx \right)^2 \leq \pi(1 - e^{-2R^2}),
+> $$
+>
+> and letting $R \to \infty$ gives $I^2 = \pi$.
 >
 > **Conclusion:** Since $I > 0$ (the integrand is positive), we obtain:
 >

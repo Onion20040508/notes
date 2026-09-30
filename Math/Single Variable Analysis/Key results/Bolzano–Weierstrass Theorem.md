@@ -23,8 +23,8 @@ tags: [real-analysis, hub]
 - [[Single Variable Analysis §19 Uniform Continuity#^prop-19-4|Proposition §19.4: Uniformly Continuous on a Bounded Set Implies Bounded]]
 
 ## Used in (Measure Theory)
-- [[Measure Theory §5 Topology of ℝⁿ#^thm-5-1|Theorem §5.1: Bolzano–Weierstrass]]
 - [[Measure Theory §5 Topology of ℝⁿ#^rem-5-1|Remark]]
+- [[Measure Theory §5 Topology of ℝⁿ#^thm-5-1|Theorem §5.1: Bolzano–Weierstrass]]
 
 ## Connections
 - Sequential compactness of bounded sets; the $\mathbb{R}^n$ version is in §13.

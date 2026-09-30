@@ -117,7 +117,7 @@ tags: [measure-theory, math551]
 ^def-19-5
 
 > [!remark] Remark
-> When $p = 1$, this recovers $L^1(E)$ with $\|f\|_1 = \int_E |f|\,dx$ ([[Measure Theory §16 The L¹ Space and Density Theorems#^def-16-1|Def. §16.1]]). The $L^p$ spaces for $p > 1$ are important in functional analysis and PDE theory. The key results (not proved in this course) are:
+> When $p = 1$, this recovers $L^1(E)$ with $\|f\|_1 = \int_E |f|\,dx$ ([[Measure Theory §16 The L¹ Space and Density Theorems#^def-16-1|Def. §16.1]]). The $L^p$ spaces for $p > 1$ are important in functional analysis and PDE theory. The key results (proved later in this section) are:
 >
 > Hölder's inequality ([[Hölder's Inequality|Theorem §19.5]]): $\|fg\|_1 \leq \|f\|_p \|g\|_q$ where $1/p + 1/q = 1$.
 >
@@ -252,13 +252,15 @@ tags: [measure-theory, math551]
 > [!proof]+ Proof
 > **Case 1: $\|g\|_{p'} = 0$.** Then $g = 0$ a.e. ([[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|Proposition §14.11]]), so $fg = 0$ a.e., and both sides are $0$.
 >
-> **Case 2: $\|g\|_{p'} \neq 0$ and $\|f\|_p = \infty$.** The right side is $\infty$, so the inequality holds trivially.
+> **Case 2: $\|g\|_{p'} \neq 0$ and $\|f\|_p = \infty$.** The right side is $\infty$, so the inequality holds trivially. (We use the convention $0 \cdot \infty = 0$. By symmetry, if $\|f\|_p = 0$ then $f = 0$ a.e. and both sides are $0$, and if $\|f\|_p \neq 0$ and $\|g\|_{p'} = \infty$ the right side is $\infty$. So from now on both norms lie in $(0, \infty)$.)
 >
 > **Case 3: $p = 1$, $p' = \infty$.** Since $g \in L^\infty(E)$, $|g(x)| \leq \|g\|_\infty$ a.e. ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|Proposition §19.2]]). So:
 >
 > $$
 > \int_E |f\,g|\,dx \leq \int_E |f|\,\|g\|_\infty\,dx = \|f\|_1\,\|g\|_\infty.
 > $$
+>
+> The case $p = \infty$, $p' = 1$ is the same with the roles of $f$ and $g$ exchanged.
 >
 > **Case 4: $1 < p < \infty$, $1 < p' < \infty$.** Assume $\|f\|_p, \|g\|_{p'} \in (0, \infty)$. Apply [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|Young's inequality]] with $\theta = 1/p$, $1 - \theta = 1/p'$, $a = |f(x)|^p / (\|f\|_p)^p$, $b = |g(x)|^{p'} / (\|g\|_{p'})^{p'}$:
 >
@@ -327,7 +329,7 @@ tags: [measure-theory, math551]
 *Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Hölder's Inequality|§19.5]]
 
 > [!remark] Remark
-> The finite measure hypothesis is essential: on $\mathbb{R}$, $f(x) = 1/\sqrt{|x|}$ for $|x| \leq 1$ and $0$ otherwise is in $L^1$ but not $L^2$. On infinite measure spaces the inclusion can reverse: $f(x) = 1/(1 + x^2) \in L^2(\mathbb{R})$ but $\notin L^1(\mathbb{R})$.
+> The finite measure hypothesis is essential: on $\mathbb{R}$, $f(x) = 1/\sqrt{|x|}$ for $|x| \leq 1$ and $0$ otherwise is in $L^1$ but not $L^2$. On infinite measure spaces the inclusion can reverse: $f(x) = 1/(1 + |x|) \in L^2(\mathbb{R})$ but $\notin L^1(\mathbb{R})$.
 
 ^rem-19-2
 
@@ -348,6 +350,8 @@ tags: [measure-theory, math551]
 > $$
 >
 > Taking $t$-th roots: $\|f\|_t \leq \|f\|_r^{\theta}\,\|f\|_s^{1-\theta}$.
+>
+> This uses $\int_E |f|^s\,dx$, so it assumes $s < \infty$. If $s = \infty$, then $\theta = r/t$ and $|f|^t = |f|^r\,|f|^{t-r} \leq |f|^r\,\|f\|_\infty^{t-r}$ a.e. ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|Proposition §19.2]]), so $\|f\|_t^t \leq \|f\|_r^r\,\|f\|_\infty^{t-r}$; taking $t$-th roots gives $\|f\|_t \leq \|f\|_r^{\theta}\,\|f\|_\infty^{1-\theta}$.
 
 ^pf-19-7
 
@@ -596,7 +600,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > [!proof]+ Proof
 > **Case 1: $p = \infty$.** Let $\{f_k\}$ be Cauchy in $L^\infty(E)$: for every $\varepsilon > 0$, there exists $N$ such that $\|f_k - f_m\|_\infty < \varepsilon$ for all $k, m \geq N$.
 >
-> For each pair $k, m$, let $Z_{k,m} = \{x \in E : |f_k(x) - f_m(x)| > \|f_k - f_m\|_\infty\}$, so $m(Z_{k,m}) = 0$ ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|Proposition §19.2]]). Let $Z = \bigcup_{k,m=1}^{\infty} Z_{k,m}$. Then $m(Z) = 0$, and on $E \setminus Z$:
+> For each pair $k, m$, let $Z_{k,m} = \{x \in E : |f_k(x) - f_m(x)| > \|f_k - f_m\|_\infty\}$, so $m(Z_{k,m}) = 0$ ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|Proposition §19.2]]). Also let $Z_k = \{x \in E : |f_k(x)| > \|f_k\|_\infty\}$, again a null set, and let $Z = \bigcup_{k,m=1}^{\infty} Z_{k,m} \cup \bigcup_{k=1}^{\infty} Z_k$, so that each $f_k$ is bounded on $E \setminus Z$. Then $m(Z) = 0$, and on $E \setminus Z$:
 >
 > $$
 > |f_k(x) - f_m(x)| \leq \|f_k - f_m\|_\infty < \varepsilon \quad \text{for all } k, m \geq N.
@@ -731,7 +735,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > \|f_s - f_t\|_\infty = \|\chi_{(\min(s,t),\, \max(s,t))}\|_\infty = 1.
 > $$
 >
-> So $\{f_t\}_{t \in (0,1)}$ is an [[Measure Theory §4 Uncountability#^ex-4-2|uncountable]] family with pairwise distance $1$. Any dense subset must contain a point within distance $1/2$ of each $f_t$, and since the $1/2$-balls around distinct $f_t$'s are disjoint, the dense subset must be uncountable.
+> So $\{f_t\}_{t \in (0,1)}$ is an [[Measure Theory §4 Uncountability#^ex-4-2|uncountable]] family with pairwise distance $1$. Any dense subset must contain a point within distance $1/2$ of each $f_t$, and since the $1/2$-balls around distinct $f_t$'s are disjoint, the dense subset must be uncountable. For a general $E$ with $m(E) > 0$, the same argument works with $f_t = \chi_{E_0 \cap \{x_1 < t\}}$, where $E_0 \subseteq E$ has $0 < m(E_0) < \infty$: by [[Continuity of Measure|continuity of measure]], $t \mapsto m(E_0 \cap \{x_1 < t\})$ is continuous and increasing, so it takes uncountably many values, and two $f_t$ with different values are at distance $1$.
 
 ^pf-19-21
 

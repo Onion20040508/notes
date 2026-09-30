@@ -12,9 +12,9 @@ tags: [measure-theory, hub]
 
 ## Its proof uses
 - [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|Proposition §9.1: Basic Properties of Outer Measure]]
-- [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-1|Theorem §10.1: Closure Properties of ℳ]]
 - [[Measure Theory §10 Lebesgue Measurable Sets#^rem-10-1|Remark]]
 - [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-1|Definition §10.1: Lebesgue Measurable Set]]
+- [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-1|Theorem §10.1: Closure Properties of ℳ]]
 - [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|Lemma §10.2: Finite Additivity for Disjoint Measurable Sets]]
 - [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-4|Definition §10.4: σ-Algebra]]
 

@@ -57,7 +57,7 @@ The parametrization $\mathbf{X}: D \to \mathbb{R}^3$ is a “change of variables
 ^def-18-1
 
 > [!example] Example §18.1: Sphere
-> The unit sphere $S^2 = \{(x,y,z) : x^2 + y^2 + z^2 = R^2\}$ is a set of points in $\mathbb{R}^3$. To parametrize it, we use spherical angles $(\theta, \varphi)$:
+> The sphere of radius $R$, $\{(x,y,z) : x^2 + y^2 + z^2 = R^2\}$, is a set of points in $\mathbb{R}^3$. To parametrize it, we use spherical angles $(\theta, \varphi)$:
 >
 > $$
 > \mathbf{X}(\theta, \varphi) = (R\cos\varphi\cos\theta, \; R\cos\varphi\sin\theta, \; R\sin\varphi),
@@ -173,10 +173,10 @@ But we want a formula for area that works in *any* ambient dimension (not just $
 > The **Gram matrix** (or **first fundamental form**) of the parametrized surface is the $2 \times 2$ matrix:
 >
 > $$
-> G = \begin{pmatrix} \mathbf{X}_u \cdot \mathbf{X}_u & \mathbf{X}_u \cdot \mathbf{X}_v \\ \mathbf{X}_v \cdot \mathbf{X}_u & \mathbf{X}_v \cdot \mathbf{X}_v \end{pmatrix} = \begin{pmatrix} E & F \\ F & G \end{pmatrix}
+> G = \begin{pmatrix} \mathbf{X}_u \cdot \mathbf{X}_u & \mathbf{X}_u \cdot \mathbf{X}_v \\ \mathbf{X}_v \cdot \mathbf{X}_u & \mathbf{X}_v \cdot \mathbf{X}_v \end{pmatrix} = \begin{pmatrix} E & F \\ F & \tilde{G} \end{pmatrix}
 > $$
 >
-> where the classical notation is $E = |\mathbf{X}_u|^2$, $F = \mathbf{X}_u \cdot \mathbf{X}_v$, $G = |\mathbf{X}_v|^2$.
+> where the classical notation is $E = |\mathbf{X}_u|^2$, $F = \mathbf{X}_u \cdot \mathbf{X}_v$, $\tilde{G} = |\mathbf{X}_v|^2$ (classically also called $G$; we write $\tilde{G}$ to avoid a clash with the matrix $G$).
 
 ^def-18-4
 
@@ -184,7 +184,7 @@ But we want a formula for area that works in *any* ambient dimension (not just $
 > The surface area element is:
 >
 > $$
-> \boxed{dS = \sqrt{\det(G)} \, du \, dv = \sqrt{EG - F^2} \, du \, dv}
+> \boxed{dS = \sqrt{\det(G)} \, du \, dv = \sqrt{E\tilde{G} - F^2} \, du \, dv}
 > $$
 >
 > In $\mathbb{R}^3$, this equals $|\mathbf{X}_u \times \mathbf{X}_v| \, du \, dv$.
@@ -211,7 +211,7 @@ But we want a formula for area that works in *any* ambient dimension (not just $
 > x_u^2 x_v^2 + x_u^2 y_v^2 + x_u^2 z_v^2 + y_u^2 x_v^2 + y_u^2 y_v^2 + y_u^2 z_v^2 + z_u^2 x_v^2 + z_u^2 y_v^2 + z_u^2 z_v^2.
 > $$
 >
-> **Expand the square** $(x_u x_v + y_u y_v + z_u z_v)^2$: this has 9 terms:
+> **Expand the square** $(x_u x_v + y_u y_v + z_u z_v)^2$: its 9 terms combine into 6:
 >
 > $$
 > x_u^2 x_v^2 + y_u^2 y_v^2 + z_u^2 z_v^2 + 2x_u x_v y_u y_v + 2x_u x_v z_u z_v + 2y_u y_v z_u z_v.
@@ -455,7 +455,7 @@ Note the cancellation: $\hat{n} \, dS = \frac{(-\phi_x, -\phi_y, 1)}{\sqrt{1+\ph
 > For a general vector field $\mathbf{u} = (a(x,y,z), \, b(x,y,z), \, c(x,y,z))$, the flux through the graph $z = \phi(x,y)$ involves three terms, one per component:
 >
 > $$
-> \iint_S \mathbf{u} \cdot \hat{n} \, dS = \iint_D \big[ a \cdot n_1 + b \cdot n_2 + c \cdot n_3 \big] \, dS.
+> \iint_S \mathbf{u} \cdot \hat{n} \, dS = \iint_S \big[ a \cdot n_1 + b \cdot n_2 + c \cdot n_3 \big] \, dS.
 > $$
 >
 > For each component, we parametrize the surface by the “best choice” of two coordinates: the top/bottom surfaces use $(x,y)$, the left/right surfaces use $(y,z)$, and the front/back surfaces use $(x,z)$. This is exactly how the proof of the Divergence Theorem ([[Divergence Theorem in ℝ³|Theorem §18.2]]) proceeds.
@@ -468,7 +468,7 @@ Note the cancellation: $\hat{n} \, dS = \frac{(-\phi_x, -\phi_y, 1)}{\sqrt{1+\ph
 
 For a closed surface $\partial V$ bounding a volume $V$:
 - The **positive orientation** is defined by the **outward normal**: $\hat{n}$ points out of $V$.
-- Equivalently (right-hand rule): if you walk along a closed curve on $\partial V$ with $V$ on your left and look against $\hat{n}$, you are walking counterclockwise.
+- Equivalently: at each point $\mathbf{p} \in \partial V$, $\hat{n}$ is the unit normal with $\mathbf{p} + t\hat{n} \notin V$ and $\mathbf{p} - t\hat{n} \in V$ for small $t > 0$. For a parametrization $\mathbf{X}(u, v)$ of a piece of $\partial V$, this means $\mathbf{X}_u \times \mathbf{X}_v$ points out of $V$.
 - A proper parametrization of $\partial V$ should yield a continuous outward-pointing normal field.
 
 > [!theorem] Theorem §18.2: Divergence Theorem in $\mathbb{R}^3$

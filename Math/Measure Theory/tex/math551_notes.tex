@@ -790,13 +790,13 @@ Let $\mathcal{C} = \{\mathcal{O}_\alpha\}_{\alpha \in A}$ be an open cover, i.e.
 
 Let $x \in E$. Then $x \in \mathcal{O}_{\alpha_0}$ for some $\alpha_0 \in A$. Since $\mathcal{O}_{\alpha_0}$ is open, there exists $\rho > 0$ such that $B(x, \rho) \subseteq \mathcal{O}_{\alpha_0}$.
 
-By Lemma 6.2, there exist $r_x \in \mathbb{Q}^n$ and $k_x \in \mathbb{N}$ such that $x \in B(r_x, \frac{1}{k_x}) \subseteq B(x, \rho) \subseteq \mathcal{O}_{\alpha_0}$.
+By Lemma 6.3, there exist $r_x \in \mathbb{Q}^n$ and $k_x \in \mathbb{N}$ such that $x \in B(r_x, \frac{1}{k_x}) \subseteq B(x, \rho) \subseteq \mathcal{O}_{\alpha_0}$.
 
 Now we have a collection of rational balls:
 \[
 \mathcal{C}_1 = \left\{ B\left(r_x, \frac{1}{k_x}\right) \,\bigg|\, x \in E \right\}.
 \]
-Since each ball has center in $\mathbb{Q}^n$ and radius $\frac{1}{k}$ for some $k \in \mathbb{N}$, by Lemma 6.1, $\mathcal{C}_1$ is a subset of a countable set, hence countable.
+Since each ball has center in $\mathbb{Q}^n$ and radius $\frac{1}{k}$ for some $k \in \mathbb{N}$, by Lemma 6.2, $\mathcal{C}_1$ is a subset of a countable set, hence countable.
 
 Write $\mathcal{C}_1 = \{B_1, B_2, B_3, \ldots\}$ (finite or countably infinite).
 
@@ -3295,7 +3295,7 @@ E_k = \{x \in E \mid f_k(x) \geq c\,h(x)\}.
 \item If $h(x_0) > 0$: then $f(x_0) \geq h(x_0) > 0$ (since $h \leq f$). Since $\lim_{k \to \infty} f_k(x_0) = f(x_0)$ and $c\,h(x_0) < h(x_0) \leq f(x_0)$, there exists $l$ large enough such that $f_k(x_0) \geq c\,h(x_0)$ for all $k \geq l$. Hence $x_0 \in \bigcup_{k=1}^{\infty} E_k$.
 \end{itemize}
 
-Now, on $E_k$ we have $f_k(x) \geq c\,h(x)$ by definition. Since $E_k \subseteq E$, monotonicity of the domain gives $\int_E f_k\,dx \geq \int_{E_k} f_k\,dx$. Since $f_k \geq c\,h$ on $E_k$, monotonicity of the integrand (Proposition~14.5(i)) gives $\int_{E_k} f_k\,dx \geq \int_{E_k} c\,h\,dx = c\int_{E_k} h\,dx$. Combining:
+Now, on $E_k$ we have $f_k(x) \geq c\,h(x)$ by definition. Since $E_k \subseteq E$, monotonicity of the domain gives $\int_E f_k\,dx \geq \int_{E_k} f_k\,dx$. Since $f_k \geq c\,h$ on $E_k$, monotonicity of the integrand (Proposition~14.3(i)) gives $\int_{E_k} f_k\,dx \geq \int_{E_k} c\,h\,dx = c\int_{E_k} h\,dx$. Combining:
 \[
 \int_E f_k\,dx \geq \int_{E_k} f_k\,dx \geq c \int_{E_k} h\,dx.
 \]
@@ -3669,7 +3669,7 @@ Let $f$ be measurable on $E \in \mathcal{M}$.
 \begin{proof}
 \textbf{(i)} and \textbf{(ii)} follow from the corresponding properties for non-negative functions applied to $f^+$ and $f^-$ separately.
 
-\textbf{(iii)} $f \in L(E) \Rightarrow |f| \in L(E)$ (since $\int_E |f|\,dx < \infty$). Since $|f| \geq 0$ is integrable, $|f|$ is a.e.\ finite (by Proposition~14.7), hence $f$ is a.e.\ finite.
+\textbf{(iii)} $f \in L(E) \Rightarrow |f| \in L(E)$ (since $\int_E |f|\,dx < \infty$). Since $|f| \geq 0$ is integrable, $|f|$ is a.e.\ finite (by Proposition~14.10), hence $f$ is a.e.\ finite.
 
 \textbf{(iv)} $\int_E |f|\,dx \leq \int_E g\,dx < \infty$, so $f \in L(E)$.
 \end{proof}
@@ -3755,12 +3755,12 @@ Both series on the right converge (since $\sum \int_{E_k} f^+ = \int_E f^+ < \in
 \begin{rembox}[Domain Restriction and Signed Induced Measure]
 If $f \in L(E)$ and $A \subseteq E$, $A \in \mathcal{M}$, then $f \in L(A)$ (since $\int_A |f|\,dx \leq \int_E |f|\,dx < \infty$).
 
-If $f \in L(E)$, the map $\nu(A) = \int_A f\,dx$ defines a \textbf{signed measure} on measurable subsets of $E$: it satisfies $\nu(\emptyset) = 0$ and countable additivity, but can take negative values (unlike a measure). This generalizes the induced measure from Section~14.7.
+If $f \in L(E)$, the map $\nu(A) = \int_A f\,dx$ defines a \textbf{signed measure} on measurable subsets of $E$: it satisfies $\nu(\emptyset) = 0$ and countable additivity, but can take negative values (unlike a measure). This generalizes the induced measure from Definition~14.3.
 \end{rembox}
 
 \subsection{Vanishing Integral Implies A.E.\ Zero}
 
-The non-negative case was proved in Section~14 (Proposition~14.8): if $f \geq 0$ and $\int_E f\,dx = 0$, then $f = 0$ a.e. We now extend to general measurable functions.
+The non-negative case was proved in Section~14 (Proposition~14.11): if $f \geq 0$ and $\int_E f\,dx = 0$, then $f = 0$ a.e. We now extend to general measurable functions.
 
 \begin{propbox}[General Measurable Functions]
 Let $f$ be measurable on $E$. If $\int_A f\,dx = 0$ for all $A \subseteq E$, $A \in \mathcal{M}$, then $f(x) = 0$ a.e.\ on $E$.
@@ -4172,7 +4172,7 @@ By the approximation theorem (Section~11), for any $\varepsilon > 0$ there exist
 
 \subsection{Density of Compactly Supported Continuous Functions}
 
-Recall (Definition~12.4): a function $g: \mathbb{R}^n \to \mathbb{R}$ is \textbf{compactly supported} if $\operatorname{supp} g = \overline{\{x : g(x) \neq 0\}}$ is compact (i.e., bounded and closed in $\mathbb{R}^n$). Equivalently, $g(x) = 0$ outside some large ball. We write $C_c(\mathbb{R}^n)$ for the space of compactly supported continuous functions.
+Recall (Definition~12.7): a function $g: \mathbb{R}^n \to \mathbb{R}$ is \textbf{compactly supported} if $\operatorname{supp} g = \overline{\{x : g(x) \neq 0\}}$ is compact (i.e., bounded and closed in $\mathbb{R}^n$). Equivalently, $g(x) = 0$ outside some large ball. We write $C_c(\mathbb{R}^n)$ for the space of compactly supported continuous functions.
 
 \begin{thmbox}[Compactly Supported Continuous Functions are Dense in $L^1$]
 Let $f \in L^1(E)$. Then for every $\varepsilon > 0$, there exists a compactly supported continuous function $g$ on $\mathbb{R}^n$ such that $\|f - g\|_1 < \varepsilon$.
@@ -4381,7 +4381,7 @@ We show every non-negative measurable function belongs to $\mathcal{F}$.
 
 \textbf{Step 1: Rectangles.} $\chi_I \in \mathcal{F}$ for any rectangle $I = I_1 \times I_2$. Direct: $\chi_I(x,y) = \chi_{I_1}(x)\,\chi_{I_2}(y)$, so $F(x) = m(I_2)\,\chi_{I_1}(x)$ and $\int F\,dx = m(I_1)\,m(I_2) = m(I)$.
 
-\textbf{Step 2: Open sets.} $\chi_O \in \mathcal{F}$ for any open $O \subseteq \mathbb{R}^n$. Write $O = \bigsqcup_{j=1}^{\infty} I_j$ (countable disjoint half-open rectangles by Section~7). Then $\chi_O = \lim_{k \to \infty} \sum_{j=1}^{k} \chi_{I_j}$. Each partial sum is in $\mathcal{F}$ by Step~1 and property~(1). The sequence is increasing, so $\chi_O \in \mathcal{F}$ by property~(3).
+\textbf{Step 2: Open sets.} $\chi_O \in \mathcal{F}$ for any open $O \subseteq \mathbb{R}^n$. Write $O = \bigsqcup_{j=1}^{\infty} I_j$ (countable disjoint half-open rectangles by Section~7). Then $\chi_O = \lim_{k \to \infty} \sum_{j=1}^{k} \chi_{I_j}$. Each partial sum is in $\mathcal{F}$ by Step~1, since $\mathcal{F}$ is closed under finite sums: if $f, g \in \mathcal{F}$, then off the union of their two null sets $(f+g)(x, \cdot)$ is measurable and $F_{f+g} = F_f + F_g$, and $\int F_{f+g}\,dx = \int F_f\,dx + \int F_g\,dx = \iint f + \iint g = \iint (f+g)$ by linearity of the integral of non-negative functions (Theorem~14.8). The sequence is increasing, so $\chi_O \in \mathcal{F}$ by property~(3).
 
 \textbf{Step 3: $G_\delta$ sets.} $\chi_G \in \mathcal{F}$ for any $G_\delta$ set $G$ with $m(G) < \infty$. Write $G = \bigcap_{k=1}^{\infty} U_k$ with $U_k$ open. Define $O_k = \bigcap_{j=1}^{k} U_j$ (open, decreasing, $\bigcap O_k = G$). WLOG $m(O_1) < \infty$. Then $\chi_{O_k} \searrow \chi_G$, each $\chi_{O_k} \in \mathcal{F}$ by Step~2, and $\chi_{O_1} \in L$. By property~(4), $\chi_G \in \mathcal{F}$.
 
@@ -4391,7 +4391,7 @@ We show every non-negative measurable function belongs to $\mathcal{F}$.
 
 \textbf{Step 6: General measurable sets.} For $E \in \mathcal{M}$, let $E_k = E \cap B(0, k)$. Then $\chi_{E_k} \in \mathcal{F}$ (Step~5) and $\chi_{E_k} \nearrow \chi_E$. By property~(3), $\chi_E \in \mathcal{F}$.
 
-\textbf{Step 7: Simple functions.} $\varphi = \sum a_j\,\chi_{A_j} \in \mathcal{F}$ by Step~6 and property~(1).
+\textbf{Step 7: Simple functions.} $\varphi = \sum a_j\,\chi_{A_j} \in \mathcal{F}$ by Step~6, property~(1), and closure under finite sums (Step~2).
 
 \textbf{Step 8: General non-negative measurable functions.} Choose simple $\varphi_k \nearrow f$. Each $\varphi_k \in \mathcal{F}$ (Step~7). By property~(3), $f \in \mathcal{F}$.
 \end{proof}
@@ -4451,7 +4451,7 @@ The second equality in (iii) follows by applying the same argument with the role
 \end{proof}
 
 \begin{rembox}[Why Integrability is Essential]
-The hypothesis $f \in L(\mathbb{R}^n)$ (equivalently $\iint |f| < \infty$) cannot be dropped. Without it, the subtraction $\int f^+\,dy - \int f^-\,dy$ can be $\infty - \infty$, and the iterated integrals can depend on the order of integration. A classical counterexample: on $[0,1]^2$, define $f(x,y) = \frac{x^2 - y^2}{(x^2 + y^2)^2}$. Then $\int_0^1\!\left(\int_0^1 f\,dy\right)dx = -\pi/4$ but $\int_0^1\!\left(\int_0^1 f\,dx\right)dy = \pi/4$.
+The hypothesis $f \in L(\mathbb{R}^n)$ (equivalently $\iint |f| < \infty$) cannot be dropped. Without it, the subtraction $\int f^+\,dy - \int f^-\,dy$ can be $\infty - \infty$, and the iterated integrals can depend on the order of integration. A classical counterexample: on $[0,1]^2$, define $f(x,y) = \frac{x^2 - y^2}{(x^2 + y^2)^2}$. Then $\int_0^1\!\left(\int_0^1 f\,dy\right)dx = \pi/4$ but $\int_0^1\!\left(\int_0^1 f\,dx\right)dy = -\pi/4$.
 \end{rembox}
 
 \subsection{Applications of Tonelli's Theorem}
@@ -4518,7 +4518,7 @@ Then $G_E(f)$ is a measurable subset of $\mathbb{R}^{n+1}$ with $m(G_E(f)) = 0$.
 \end{corbox}
 
 \begin{proof}
-First assume $m(E) < \infty$. For $\delta > 0$ and $k \in \mathbb{Z}$, define $E_k = \{x \in E : k\delta \leq f(x) \leq (k+1)\delta\}$. Each $E_k$ is measurable, and $E = \bigcup_{k=-\infty}^{\infty} E_k$. Then:
+First assume $m(E) < \infty$. For $\delta > 0$ and $k \in \mathbb{Z}$, define $E_k = \{x \in E : k\delta \leq f(x) < (k+1)\delta\}$. Each $E_k$ is measurable, and $E = \bigsqcup_{k=-\infty}^{\infty} E_k$ is a disjoint union. Then:
 \[
 G_E(f) \subseteq \bigcup_{k=-\infty}^{\infty} \bigl(E_k \times [k\delta, (k+1)\delta]\bigr).
 \]
@@ -4575,7 +4575,7 @@ Let $f$ be a non-negative real-valued function on $E$, $E \in \mathcal{M}(\mathb
 \end{thmbox}
 
 \begin{rembox}
-This is left as an exercise. \textit{Hint}: For any $c \geq 0$, $\{x \in E : f(x) > c\} = \{x \in \mathbb{R}^n : (x, c) \in \underline{G}(f)\}$ is a cross-section of $\underline{G}(f)$ at height $y = c$, which is measurable by the Cross-Section Theorem.
+This is left as an exercise. \textit{Hint}: For any $c \geq 0$, $\{x \in E : f(x) > c\} = \{x \in \mathbb{R}^n : (x, c) \in \underline{G}(f)\}$ is a cross-section of $\underline{G}(f)$ at height $y = c$, which by the Cross-Section Theorem (with the roles of the factors exchanged) is measurable for a.e.\ $c$. For the remaining $c$, choose such good $c_k \downarrow c$ (the good values are dense) and use $\{f > c\} = \bigcup_k \{f > c_k\}$.
 \end{rembox}
 
 \begin{defbox}[Distribution Function]
@@ -4665,13 +4665,13 @@ For each $n \in \mathbb{N}$, define $D_n = \{x \in (a, b) : J(x) > 1/n\}$. If $x
 \[
 \sum_{i=1}^{k} J(x_i) \leq f(b) - f(a).
 \]
-Since each $J(x_i) > 1/n$, we get $k < n(f(b) - f(a))$. So $D_n$ is finite. The set of all discontinuities is $D = \bigcup_{n=1}^{\infty} D_n$, a countable union of finite sets, hence countable.
+Since each $J(x_i) > 1/n$, we get $k < n(f(b) - f(a))$. So $D_n$ is finite. The set of all discontinuities in $(a, b)$ is $D = \bigcup_{n=1}^{\infty} D_n$, a countable union of finite sets, hence countable. Adding the endpoints $a$ and $b$ (where $f$ may also be discontinuous) changes this by at most two points.
 \end{proof}
 
 \subsection{Vitali Covering}
 
 \begin{defbox}[Vitali Covering]
-Let $E \subseteq \mathbb{R}$ and let $\Gamma = \{I_\alpha\}_{\alpha \in \mathcal{J}}$ be a collection of closed intervals. We say $\Gamma$ is a \textbf{Vitali covering} of $E$ if for every $x \in E$ and every $\varepsilon > 0$, there exists $I \in \Gamma$ such that $|I| < \varepsilon$ and $x \in I$.
+Let $E \subseteq \mathbb{R}$ and let $\Gamma = \{I_\alpha\}_{\alpha \in \mathcal{J}}$ be a collection of closed intervals of positive length ($|I_\alpha| > 0$). We say $\Gamma$ is a \textbf{Vitali covering} of $E$ if for every $x \in E$ and every $\varepsilon > 0$, there exists $I \in \Gamma$ such that $|I| < \varepsilon$ and $x \in I$.
 \end{defbox}
 
 \begin{exbox}[A Vitali Covering]
@@ -4955,7 +4955,7 @@ By definition, $D^+ \geq D_+$ and $D^- \geq D_-$ always hold. If $D^+ f(x_0) \le
 \[
 D_+ \leq D^+ \leq D_- \leq D^- \leq D_+,
 \]
-which forces $D^+ = D_+ = D^- = D_-$, i.e., $f$ is differentiable at $x_0$.
+which forces $D^+ = D_+ = D^- = D_-$, i.e., $f$ is differentiable at $x_0$ in the extended sense (the common value may be $\pm\infty$; $f'(x_0)$ is a real number when it is finite).
 
 Equivalently: $f$ is \textit{not} differentiable at $x_0$ iff $D^+ > D_-$ or $D^- > D_+$ at $x_0$. In other words, some upper Dini derivative strictly exceeds the corresponding lower one.
 \end{rembox}
@@ -4982,7 +4982,7 @@ E_1 &= \{x \in (a, b) : D^+ f(x) > D_- f(x)\}, \\
 E_2 &= \{x \in (a, b) : D^- f(x) > D_+ f(x)\}.
 \end{align*}
 
-We show $m(E_1) = m(E_2) = 0$. If $x_0 \in (a, b) \setminus (E_1 \cup E_2)$, then $D^+ f(x_0) \leq D_- f(x_0)$ and $D^- f(x_0) \leq D_+ f(x_0)$, which forces all four Dini derivatives to be equal (as argued in the remark above), so $f$ is differentiable at $x_0$.
+We show $m(E_1) = m(E_2) = 0$. If $x_0 \in (a, b) \setminus (E_1 \cup E_2)$, then $D^+ f(x_0) \leq D_- f(x_0)$ and $D^- f(x_0) \leq D_+ f(x_0)$, which forces all four Dini derivatives to be equal (as argued in the remark above), so $f$ is differentiable at $x_0$ in the extended sense; that the common value is finite a.e. follows from (ii).
 
 \textbf{Showing $m(E_1) = 0$.} Write $E_1$ as a countable union:
 \[
@@ -5012,20 +5012,20 @@ Each $J_j$ has endpoint $y_j + h_j' \in A$ and satisfies $f(y_j + h_j') - f(y_j)
 
 \textbf{Step 2: Apply Vitali to the $D^+$ condition.}
 
-For each $x \in B$, $x$ lies in some $J_j$, and $D^+ f(x) > r$. So there exist arbitrarily small $h > 0$ with $[x, x+h] \subseteq \bigcup_{j=1}^{p} J_j$ and:
+Remove from $B$ the right endpoints of $J_1, \ldots, J_p$ (finitely many points, a null set, so $m^*(B)$ is unchanged). For each remaining $x \in B$, $x$ lies in some $J_j$ but is not its right endpoint, and $D^+ f(x) > r$. So there exist arbitrarily small $h > 0$ with $[x, x+h] \subseteq \bigcup_{j=1}^{p} J_j$ and:
 \[
 \frac{f(x + h) - f(x)}{h} > r.
 \]
-The collection $\Gamma_1 = \{[x, x+h] : x \in B,\; [x,x+h] \subseteq \bigcup_{j=1}^p J_j,\; h > 0,\; f(x+h)-f(x) > rh\}$ is a Vitali covering of $B$. By Vitali, there exist disjoint $I_1 = [x_1 - k_1, x_1], \ldots, I_q = [x_q - k_q, x_q]$ in $\Gamma_1$ with $m^*(B \setminus \bigcup I_i) < \varepsilon$. Each satisfies $f(x_i) - f(x_i - k_i) > r\,k_i$, so:
+The collection $\Gamma_1 = \{[x, x+h] : x \in B,\; [x,x+h] \subseteq \bigcup_{j=1}^p J_j,\; h > 0,\; f(x+h)-f(x) > rh\}$ is a Vitali covering of $B$. By Vitali, there exist disjoint $I_1 = [x_1, x_1 + k_1], \ldots, I_q = [x_q, x_q + k_q]$ in $\Gamma_1$ with $m^*(B \setminus \bigcup I_i) < \varepsilon$. Each satisfies $f(x_i + k_i) - f(x_i) > r\,k_i$, so:
 \[
-\sum_{i=1}^{q} r\,k_i < \sum_{i=1}^{q} \bigl(f(x_i) - f(x_i - k_i)\bigr).  \tag{$**$}
+\sum_{i=1}^{q} r\,k_i < \sum_{i=1}^{q} \bigl(f(x_i + k_i) - f(x_i)\bigr).  \tag{$**$}
 \]
 
 \textbf{Step 3: Compare the two bounds.}
 
-Since each $I_i \subseteq \bigcup_j J_j$ and the $\{J_j\}$ are disjoint, the intervals $\{I_i\}$ that fall inside a given $J_j$ are disjoint subintervals of $J_j$. By monotonicity of $f$, the sum of $f(x_i) - f(x_i - k_i)$ over those $I_i \subseteq J_j$ is at most $f(y_j + h_j') - f(y_j)$ (telescoping within $J_j$). Therefore:
+Since each $I_i \subseteq \bigcup_j J_j$ and the $\{J_j\}$ are disjoint, the intervals $\{I_i\}$ that fall inside a given $J_j$ are disjoint subintervals of $J_j$. By monotonicity of $f$, the sum of $f(x_i + k_i) - f(x_i)$ over those $I_i \subseteq J_j$ is at most $f(y_j + h_j') - f(y_j)$ (telescoping within $J_j$). Therefore:
 \[
-\sum_{i=1}^{q} \bigl(f(x_i) - f(x_i - k_i)\bigr) \leq \sum_{j=1}^{p} \bigl(f(y_j + h_j') - f(y_j)\bigr).
+\sum_{i=1}^{q} \bigl(f(x_i + k_i) - f(x_i)\bigr) \leq \sum_{j=1}^{p} \bigl(f(y_j + h_j') - f(y_j)\bigr).
 \]
 
 Combining ($*$) and ($**$):
@@ -5199,9 +5199,9 @@ Let $f: [a, b] \to \mathbb{R}$. Then the following are equivalent:
 
 Define $F(x) = f(x) - f(a) - \int_a^x f'(t)\,dt$. Since $f \in AC([a, b])$ and $\int_a^x f'(t)\,dt \in AC([a, b])$ (by the theorem above: integral functions are AC), and $AC$ is closed under linear combinations (property~(ii)), we have $F \in AC([a, b])$.
 
-Moreover, $F'(x) = f'(x) - f'(x) = 0$ a.e.\ on $(a, b)$ (using the fact that $(\int_a^x f'\,dt)' = f'(x)$ a.e., proved in the next subsection).
+Moreover, $F'(x) = f'(x) - f'(x) = 0$ a.e.\ on $(a, b)$ (using the fact that $(\int_a^x f'\,dt)' = f'(x)$ a.e., proved in a later subsection, Theorem~18.26).
 
-By the lemma on non-constant functions with zero derivative (Section~18.12), if $F$ were not constant, then $F$ would not be absolutely continuous. But $F \in AC([a, b])$, so $F$ must be constant. Since $F(a) = f(a) - f(a) - 0 = 0$, we conclude $F(x) = 0$ for all $x \in [a, b]$, i.e.:
+By the lemma on non-constant functions with zero derivative (Theorem~18.27), if $F$ were not constant, then $F$ would not be absolutely continuous. But $F \in AC([a, b])$, so $F$ must be constant. Since $F(a) = f(a) - f(a) - 0 = 0$, we conclude $F(x) = 0$ for all $x \in [a, b]$, i.e.:
 \[
 f(x) - f(a) = \int_a^x f'(t)\,dt \qquad \forall\, x \in [a, b]. \qedhere
 \]
@@ -5367,7 +5367,7 @@ Let $T: \mathbb{R}^n \to \mathbb{R}^n$ be a linear map. Then $m^*(Z) = 0 \implie
 
 \textbf{Case 2: $T$ is invertible.} We show $m(T(R)) = |\!\det T|\,m(R)$ for any rectangle $R$, then use L-coverings.
 
-\textit{Measure of parallelotopes.} Factor $T$ into elementary row operations (which generate all invertible linear maps): scaling one coordinate by $c$ multiplies volume by $|c|$ and determinant by $c$; adding a multiple of one coordinate to another is a shear with determinant $1$ that preserves volume (by Fubini: the cross-sectional area at each height is unchanged); swapping two coordinates has determinant $-1$ and preserves volume. Since both $m(T(\cdot))$ and $|\!\det T|\,m(\cdot)$ are multiplicative under composition, $m(T(R)) = |\!\det T|\,m(R)$.
+\textit{Measure of parallelotopes.} Factor $T$ into elementary row operations (which generate all invertible linear maps): scaling one coordinate by $c$ multiplies volume by $|c|$ and determinant by $c$; adding a multiple of one coordinate to another is a shear with determinant $1$ that preserves volume (by Fubini: the cross-sectional area at each height is unchanged); swapping two coordinates has determinant $-1$ and preserves volume. Since both $m(T(\cdot))$ and $|\!\det T|\,m(\cdot)$ are multiplicative under composition, $m(T(R)) = |\!\det T|\,m(R)$. (Here the composition step needs the volume formula for images of general sets, not only of rectangles, since after the first factor the image of $R$ is no longer a rectangle. What the null-set argument below actually uses is $m^*(E(A)) \leq |\!\det E|\,m^*(A)$ for each elementary map $E$ and every $A \subseteq \mathbb{R}^n$: for scalings and swaps this holds because $E$ maps L-coverings to L-coverings, scaling each volume by $|\!\det E|$, and for a shear one applies the cross-section argument to an open $G \supseteq A$ with $m(G) \leq m^*(A) + \varepsilon$, whose image $E(G)$ is open with the same cross-sectional measures. Composing gives $m^*(T(A)) \leq |\!\det T|\,m^*(A)$; the equality for all measurable sets is LADR~9.61.)
 
 \textit{Null sets.} For any $\varepsilon > 0$, choose an L-covering $\{R_j\}_{j=1}^{\infty}$ of $Z$ with $\sum m(R_j) < \varepsilon$. Then $\{T(R_j)\}$ covers $T(Z)$, so by subadditivity:
 \[
@@ -5462,7 +5462,7 @@ Let $f \in L(\mathbb{R})$ and define $F(x) = \int_a^x f(t)\,dt$. A point $x_0$ i
 \[
 \lim_{h \to 0} \frac{1}{h}\int_0^h f(x_0 + t)\,dt = f(x_0).
 \]
-The theorem above shows that a.e.\ point is a Lebesgue point of $f$.
+The theorem above shows that a.e.\ point is a Lebesgue point of $f$. (This is weaker than the standard notion of a Lebesgue point, which asks that $\lim_{h \to 0} \frac{1}{2h}\int_{-h}^{h} |f(x_0 + t) - f(x_0)|\,dt = 0$; that stronger property also holds at a.e.\ point, but it is not needed here.)
 \end{defbox}
 
 \begin{rembox}
@@ -5479,7 +5479,7 @@ Assume $f$ is differentiable a.e.\ on $(a, b)$ with $f'(x) = 0$ for a.e.\ $x \in
 \end{thmbox}
 
 \begin{proof}
-Since $f$ is not constant, there exists $c \in (a, b)$ with $f(c) \neq f(a)$. Let $A = \{x \in (a, c) : f'(x) = 0\}$. Since $f' = 0$ a.e., we have $m([a, c] \setminus A) = 0$, so $m(A) = c - a$.
+Since $f$ is not constant, there exists $c \in (a, b]$ with $f(c) \neq f(a)$; if $f(c) = f(a)$ for every $c \in (a, b)$, take $c = b$ (the argument below works verbatim with $c = b$). Let $A = \{x \in (a, c) : f'(x) = 0\}$. Since $f' = 0$ a.e., we have $m([a, c] \setminus A) = 0$, so $m(A) = c - a$.
 
 For every $x_0 \in A$: $f'(x_0) = 0$ means for every $r > 0$, there exists $\delta_0 > 0$ such that for all $0 < h < \delta_0$:
 \[
@@ -5590,7 +5590,7 @@ Let $E \in \mathcal{M}(\mathbb{R}^n)$ and $1 \leq p < \infty$. A measurable func
 \end{defbox}
 
 \begin{rembox}
-When $p = 1$, this recovers $L^1(E)$ with $\|f\|_1 = \int_E |f|\,dx$. The $L^p$ spaces for $p > 1$ are important in functional analysis and PDE theory. The key results (not proved in this course) are:
+When $p = 1$, this recovers $L^1(E)$ with $\|f\|_1 = \int_E |f|\,dx$. The $L^p$ spaces for $p > 1$ are important in functional analysis and PDE theory. The key results (proved later in this section) are:
 
 H\"older's inequality: $\|fg\|_1 \leq \|f\|_p \|g\|_q$ where $1/p + 1/q = 1$.
 
@@ -5690,12 +5690,13 @@ The case $p = p' = 2$ is the \textbf{Cauchy--Schwarz inequality}: $\int_E |fg|\,
 
 \textbf{Case 1: $\|g\|_{p'} = 0$.} Then $g = 0$ a.e., so $fg = 0$ a.e., and both sides are $0$.
 
-\textbf{Case 2: $\|g\|_{p'} \neq 0$ and $\|f\|_p = \infty$.} The right side is $\infty$, so the inequality holds trivially.
+\textbf{Case 2: $\|g\|_{p'} \neq 0$ and $\|f\|_p = \infty$.} The right side is $\infty$, so the inequality holds trivially. (We use the convention $0 \cdot \infty = 0$. By symmetry, if $\|f\|_p = 0$ then $f = 0$ a.e. and both sides are $0$, and if $\|f\|_p \neq 0$ and $\|g\|_{p'} = \infty$ the right side is $\infty$. So from now on both norms lie in $(0, \infty)$.)
 
 \textbf{Case 3: $p = 1$, $p' = \infty$.} Since $g \in L^\infty(E)$, $|g(x)| \leq \|g\|_\infty$ a.e. So:
 \[
 \int_E |f\,g|\,dx \leq \int_E |f|\,\|g\|_\infty\,dx = \|f\|_1\,\|g\|_\infty.
 \]
+The case $p = \infty$, $p' = 1$ is the same with the roles of $f$ and $g$ exchanged.
 
 \textbf{Case 4: $1 < p < \infty$, $1 < p' < \infty$.} Assume $\|f\|_p, \|g\|_{p'} \in (0, \infty)$. Apply Young's inequality with $\theta = 1/p$, $1 - \theta = 1/p'$, $a = |f(x)|^p / (\|f\|_p)^p$, $b = |g(x)|^{p'} / (\|g\|_{p'})^{p'}$:
 \[
@@ -5743,7 +5744,7 @@ Taking $p_1$-th roots: $\|f\|_{p_1} \leq \|f\|_{p_2} \cdot m(E)^{1/p_1 - 1/p_2}$
 \end{proof}
 
 \begin{rembox}
-The finite measure hypothesis is essential: on $\mathbb{R}$, $f(x) = 1/\sqrt{|x|}$ for $|x| \leq 1$ and $0$ otherwise is in $L^1$ but not $L^2$. On infinite measure spaces the inclusion can reverse: $f(x) = 1/(1 + x^2) \in L^2(\mathbb{R})$ but $\notin L^1(\mathbb{R})$.
+The finite measure hypothesis is essential: on $\mathbb{R}$, $f(x) = 1/\sqrt{|x|}$ for $|x| \leq 1$ and $0$ otherwise is in $L^1$ but not $L^2$. On infinite measure spaces the inclusion can reverse: $f(x) = 1/(1 + |x|) \in L^2(\mathbb{R})$ but $\notin L^1(\mathbb{R})$.
 \end{rembox}
 
 \begin{propbox}[Interpolation of $L^p$ Norms]
@@ -5759,6 +5760,8 @@ Write $|f(x)|^t = |f(x)|^{\theta t} \cdot |f(x)|^{(1-\theta)t}$. Apply H\"older 
 \int_E |f|^t\,dx \leq \left(\int_E |f|^r\,dx\right)^{\theta t/r} \left(\int_E |f|^s\,dx\right)^{(1-\theta)t/s} = (\|f\|_r)^{\theta t}\,(\|f\|_s)^{(1-\theta)t}.
 \]
 Taking $t$-th roots: $\|f\|_t \leq \|f\|_r^{\theta}\,\|f\|_s^{1-\theta}$.
+
+This uses $\int_E |f|^s\,dx$, so it assumes $s < \infty$. If $s = \infty$, then $\theta = r/t$ and $|f|^t = |f|^r\,|f|^{t-r} \leq |f|^r\,\|f\|_\infty^{t-r}$ a.e., so $\|f\|_t^t \leq \|f\|_r^r\,\|f\|_\infty^{t-r}$; taking $t$-th roots gives $\|f\|_t \leq \|f\|_r^{\theta}\,\|f\|_\infty^{1-\theta}$.
 \end{proof}
 
 \subsection{$L^p$ is a Normed Linear Space}
@@ -5936,7 +5939,7 @@ Let $1 \leq p \leq \infty$. Then $L^p(E)$ is a complete metric space (Banach spa
 
 \textbf{Case 1: $p = \infty$.} Let $\{f_k\}$ be Cauchy in $L^\infty(E)$: for every $\varepsilon > 0$, there exists $N$ such that $\|f_k - f_m\|_\infty < \varepsilon$ for all $k, m \geq N$.
 
-For each pair $k, m$, let $Z_{k,m} = \{x \in E : |f_k(x) - f_m(x)| > \|f_k - f_m\|_\infty\}$, so $m(Z_{k,m}) = 0$. Let $Z = \bigcup_{k,m=1}^{\infty} Z_{k,m}$. Then $m(Z) = 0$, and on $E \setminus Z$:
+For each pair $k, m$, let $Z_{k,m} = \{x \in E : |f_k(x) - f_m(x)| > \|f_k - f_m\|_\infty\}$, so $m(Z_{k,m}) = 0$. Also let $Z_k = \{x \in E : |f_k(x)| > \|f_k\|_\infty\}$, again a null set, and let $Z = \bigcup_{k,m=1}^{\infty} Z_{k,m} \cup \bigcup_{k=1}^{\infty} Z_k$, so that each $f_k$ is bounded on $E \setminus Z$. Then $m(Z) = 0$, and on $E \setminus Z$:
 \[
 |f_k(x) - f_m(x)| \leq \|f_k - f_m\|_\infty < \varepsilon \quad \text{for all } k, m \geq N.
 \]
@@ -6027,7 +6030,7 @@ Consider $E = (0, 1)$ and for each $t \in (0, 1)$, define $f_t = \chi_{(0, t)}$.
 \[
 \|f_s - f_t\|_\infty = \|\chi_{(\min(s,t),\, \max(s,t))}\|_\infty = 1.
 \]
-So $\{f_t\}_{t \in (0,1)}$ is an uncountable family with pairwise distance $1$. Any dense subset must contain a point within distance $1/2$ of each $f_t$, and since the $1/2$-balls around distinct $f_t$'s are disjoint, the dense subset must be uncountable.
+So $\{f_t\}_{t \in (0,1)}$ is an uncountable family with pairwise distance $1$. Any dense subset must contain a point within distance $1/2$ of each $f_t$, and since the $1/2$-balls around distinct $f_t$'s are disjoint, the dense subset must be uncountable. For a general $E$ with $m(E) > 0$, the same argument works with $f_t = \chi_{E_0 \cap \{x_1 < t\}}$, where $E_0 \subseteq E$ has $0 < m(E_0) < \infty$: by continuity of measure, $t \mapsto m(E_0 \cap \{x_1 < t\})$ is continuous and increasing, so it takes uncountably many values, and two $f_t$ with different values are at distance $1$.
 \end{proof}
 
 \newpage

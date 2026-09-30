@@ -53,6 +53,8 @@ Let $I = [0, 1]$.
 
 ^pf-22-1
 
+*Uses:* [[Topology §22 Homotopy of Paths#^def-22-1|Def. §22.1]], [[Topology §22 Homotopy of Paths#^def-22-2|Def. §22.2]]
+
 > [!remark] Remark: Why “Straight Line”?
 > Fix any $x \in X$. The trajectory $t \mapsto H(x, t) = (1 - t)f(x) + tg(x)$ is a **line segment** in $\mathbb{R}^n$ from $f(x)$ to $g(x)$. The formula $(1-t)a + tb$ is the standard parameterization of the segment from $a$ to $b$: at $t = 0$ you are at $a$, at $t = 1$ you are at $b$, and at $t = 1/2$ you are at the midpoint.
 

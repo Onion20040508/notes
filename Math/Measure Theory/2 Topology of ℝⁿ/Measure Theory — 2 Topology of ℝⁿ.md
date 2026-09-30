@@ -8,7 +8,7 @@ tags: [chapter, measure-theory]
 ↑ [[Measure Theory]]
 
 **Builds on:** [[Measure Theory — 1 Set Theory Prerequisites|1 Set Theory Prerequisites]] (6)
-**Used by:** [[Measure Theory — 3 Measure Theory|3 Measure Theory]] (15), [[Measure Theory — 4 Integration Theory|4 Integration Theory]] (3), [[Measure Theory — 5 Differentiation and the FTC|5 Differentiation and the FTC]] (2)
+**Used by:** [[Measure Theory — 3 Measure Theory|3 Measure Theory]] (16), [[Measure Theory — 4 Integration Theory|4 Integration Theory]] (3), [[Measure Theory — 5 Differentiation and the FTC|5 Differentiation and the FTC]] (2)
 **Builds on (other subjects):** [[Single Variable Analysis]] (13), [[Linear Algebra]] (1)
 
 ## Sections
