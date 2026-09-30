@@ -7,8 +7,9 @@ tags: [chapter, topology]
 # 3 Products, Metrics, and Quotients
 ↑ [[Topology]]
 
-**Builds on:** [[Topology — 1 Topological Spaces and Constructions|1 Topological Spaces and Constructions]] (7), [[Topology — 2 Closedness, Continuity, and Hausdorff|2 Closedness, Continuity, and Hausdorff]] (7), [[Topology — 5 Compactness|5 Compactness]] (4)
+**Builds on:** [[Topology — 1 Topological Spaces and Constructions|1 Topological Spaces and Constructions]] (8), [[Topology — 2 Closedness, Continuity, and Hausdorff|2 Closedness, Continuity, and Hausdorff]] (8), [[Topology — 5 Compactness|5 Compactness]] (4)
 **Used by:** [[Topology — 4 Connectedness|4 Connectedness]] (1), [[Topology — 5 Compactness|5 Compactness]] (4), [[Topology — 6 Countability and Separation|6 Countability and Separation]] (6), [[Topology — 8 Homotopy and the Fundamental Group|8 Homotopy and the Fundamental Group]] (1), [[Topology — 9 Covering Spaces and Lifting|9 Covering Spaces and Lifting]] (3), [[Topology — 10 Applications of π₁|10 Applications of π₁]] (5), [[Topology — 11 Computing π₁|11 Computing π₁]] (6)
+**Builds on (other subjects):** —
 
 ## Sections
 - [[Topology §10 Product Topology on Arbitrary Products]]

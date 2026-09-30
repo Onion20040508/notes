@@ -8,7 +8,7 @@ tags: [chapter, multivariable-analysis]
 ↑ [[Multivariable Analysis]]
 
 **Builds on:** [[Multivariable Analysis — 2 Differentiation|2 Differentiation]] (3), [[Multivariable Analysis — 4 Integration on Flat Domains|4 Integration on Flat Domains]] (3), [[Multivariable Analysis — 5 Line Integrals and the Divergence Theorem|5 Line Integrals and the Divergence Theorem]] (4)
-**Used by:** [[Multivariable Analysis — 7 Differential Forms and the Generalized Stokes' Theorem|7 Differential Forms and the Generalized Stokes' Theorem]] (2)
+**Used by:** [[Multivariable Analysis — 5 Line Integrals and the Divergence Theorem|5 Line Integrals and the Divergence Theorem]] (1), [[Multivariable Analysis — 7 Differential Forms and the Generalized Stokes' Theorem|7 Differential Forms and the Generalized Stokes' Theorem]] (2)
 **Builds on (other subjects):** [[Single Variable Analysis]] (2), [[Linear Algebra]] (2)
 
 ## Sections
@@ -23,4 +23,5 @@ tags: [chapter, multivariable-analysis]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
+- [[Surface Area via the Gram Matrix|Theorem §18.1: Surface Area via the Gram Matrix]]: 3 later results
 - [[Divergence Theorem in ℝ³|Theorem §18.2: Divergence Theorem in ℝ³]]: 1 later result

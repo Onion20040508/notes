@@ -228,7 +228,7 @@ tags: [topology, math590]
 >
 > $$k_* \circ h_* = (k \circ h)_* = (\operatorname{id}_X)_* = \operatorname{id}_{\pi_1(X, x_0)}$$
 >
-> and similarly $h_* \circ k_* = \operatorname{id}_{\pi_1(Y, y_0)}$. So $h_*$ and $k_*$ are inverses, hence $h_*$ is an isomorphism.
+> and similarly $h_* \circ k_* = \operatorname{id}_{\pi_1(Y, h(x_0))}$. So $h_*$ and $k_*$ are inverses, hence $h_*$ is an isomorphism.
 
 ^pf-23-6
 

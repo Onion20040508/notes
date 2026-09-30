@@ -37,13 +37,13 @@ tags: [topology, math590]
 ^rem-19-1
 
 > [!remark] Remark: Why the Separation Hierarchy Matters
-> The separation axioms answer a fundamental question: *how well can we separate things with open sets?* The hierarchy $T_1 \Rightarrow$ Hausdorff $\Rightarrow$ Regular $\Rightarrow$ Normal represents increasing levels of “niceness”:
+> The separation axioms answer a fundamental question: *how well can we separate things with open sets?* The hierarchy $T_1 \Leftarrow$ Hausdorff $\Leftarrow$ Regular $\Leftarrow$ Normal represents increasing levels of “niceness”:
 > - $T_1$: points are closed (minimal decency).
 > - Hausdorff: distinct points have disjoint neighborhoods ([[Topology §8 Hausdorff Spaces#^thm-8-3|unique limits]]).
 > - Regular: a point and a closed set can be separated (stronger local behavior).
 > - Normal: two disjoint closed sets can be separated (the threshold for powerful theorems).
 >
-> Normality is the gateway to the deepest results in point-set topology: **[[Topology §20 Normal Spaces#^rem-20-3|Urysohn's Lemma]]** (disjoint closed sets can be separated by a continuous function $f: X \to [0,1]$) and the **[[Topology §20 Normal Spaces#^rem-20-3|Tietze Extension Theorem]]** (continuous functions on closed subsets extend to the whole space). These, in turn, lead to the [[Topology §18 Countability Axioms#^thm-18-1|Urysohn metrization theorem]]. The examples below show these implications are strict — each level genuinely adds power.
+> Normality is the gateway to the deepest results in point-set topology: **[[Topology §20 Normal Spaces#^rem-20-3|Urysohn's Lemma]]** (disjoint closed sets can be separated by a continuous function $f: X \to [0,1]$) and the **[[Topology §20 Normal Spaces#^rem-20-3|Tietze Extension Theorem]]** (continuous functions on closed subsets extend to the whole space). These, in turn, lead to the [[Topology §18 Countability Axioms#^thm-18-1|Urysohn metrization theorem]]. These implications are strict — each level genuinely adds power: the cofinite topology on $\mathbb{R}$ is $T_1$ but not Hausdorff ([[Topology §8 Hausdorff Spaces#^prop-8-2|§8.2]]), $\mathbb{R}_K$ is Hausdorff but not regular ([[Topology §19 Separation Axioms#^ex-19-1|Example §19.1]] below), and $\mathbb{R}_\ell \times \mathbb{R}_\ell$ is regular but not normal (a standard example, Munkres §31; not proved here).
 
 ^rem-19-2
 
@@ -68,7 +68,7 @@ tags: [topology, math590]
 *Uses:* [[Topology §19 Separation Axioms#^def-19-1|Def. §19.1]], [[Topology §19 Separation Axioms#^def-19-2|Def. §19.2]], [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]], [[Topology §8 Hausdorff Spaces#^def-8-1|Def. §8.1]]
 
 > [!remark]- Connections
-> - The last step reproves [[Topology §8 Hausdorff Spaces#^thm-8-1|Finite Point Sets are Closed in Hausdorff Spaces]]. Strictness: [[Topology §19 Separation Axioms#^ex-19-1|Example §19.1]].
+> - The last step reproves [[Topology §8 Hausdorff Spaces#^thm-8-1|Finite Point Sets are Closed in Hausdorff Spaces]]. Strictness: [[Topology §19 Separation Axioms#^ex-19-1|Example §19.1]] (Hausdorff ⇏ regular); the other two are cited in [[Topology §19 Separation Axioms#^rem-19-2|the remark above]].
 
 > [!remark] Remark
 > [[Topology §19 Separation Axioms#^pf-19-1|The proofs]] are not circular: each implication uses the $T_1$ axiom that is *part of the definition* of the stronger property. Normal $\Rightarrow$ Regular uses “$\{x\}$ is closed” (from $T_1$ in the definition of normal) to turn a point-vs-set problem into a set-vs-set problem. Regular $\Rightarrow$ Hausdorff uses “$\{y\}$ is closed” (from $T_1$ in the definition of regular) to turn a point-vs-point problem into a point-vs-set problem.

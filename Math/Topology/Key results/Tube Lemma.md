@@ -14,7 +14,7 @@ tags: [topology, hub]
 - [[Topology §4 Product Topology#^def-4-1|Definition §4.1: Product Topology on X × Y]]
 
 ## Used in (Topology)
-- [[Topology §15 Compact Spaces#^thm-15-8|Theorem §15.8: Finite Product of Compact Spaces]]
+- (not cited later in the course)
 
 ## Connections
 - **Used for.** It proves [[Topology §15 Compact Spaces#^thm-15-8|Finite Product of Compact Spaces]] (§15.8), hence compactness of boxes ∏[aᵢ, bᵢ] ([[Topology §15 Compact Spaces#^cor-15-11|Corollary §15.11]]) and the [[Heine–Borel Theorem]].

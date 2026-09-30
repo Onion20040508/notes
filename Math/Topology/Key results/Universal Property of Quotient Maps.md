@@ -18,7 +18,7 @@ tags: [topology, hub]
 - [[Topology §12 Quotient Topology#^cor-12-4|Corollary §12.4: Induced Bijection from Quotient]]
 - [[Topology §24 Covering Spaces#^lem-24-12|Lemma §24.12: Equivalent Conditions for Nullhomotopy]]
 - [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
-- [[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-9|Example §26.9: T² ∖ {pt} Deformation Retracts onto the Figure Eight]]
+- [[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-9|Example §26.9: T² ∖ pt Deformation Retracts onto the Figure Eight]]
 
 ## Connections
 - **Immediate consequence.** [[Topology §12 Quotient Topology#^cor-12-4|Induced Bijection from Quotient]] (§12.4): a continuous surjection g induces a homeomorphism X* ≅ Z exactly when g is a quotient map. The hypothesis that g is constant on fibers is exactly what well-definedness needs ([[Topology §12 Quotient Topology#^rem-12-7|Constant on Fibers]]).

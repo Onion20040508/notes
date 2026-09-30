@@ -494,8 +494,8 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 
 ^ex-26-5
 
-> [!example] Example §26.6: Doubly punctured plane
-> The plane with two points removed deformation retracts onto both a figure-eight space and a “theta” space ($\Theta$). Similarly, neither the figure-eight nor the theta space is a deformation retract of the other, but they have isomorphic fundamental groups (both $\cong F_2$).
+> [!example] Example §26.6: Doubly punctured plane: two deformation retracts
+> The plane with two points removed deformation retracts onto both a figure-eight space and a “theta” space ($\Theta$). However, neither the figure-eight nor the theta space is a deformation retract of the other, but they have isomorphic fundamental groups (both $\cong F_2$).
 >
 > This illustrates that **isomorphic $\pi_1$ does not imply deformation retract**—the relationship is one-directional.
 
@@ -505,7 +505,7 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 *The doubly punctured plane deformation retracts onto the figure eight (left) and onto the theta space (right): points flow away from the punctures $p, q$ and in from far away onto the blue graph. So both graphs have $\pi_1 \cong F_2$ and the same homotopy type as $\mathbb{R}^2 \setminus \{p, q\}$, although neither graph is a deformation retract of the other.*
 
 > [!example] Example §26.7: $S^n$ is a deformation retract of $\mathbb{R}^{n+1} \setminus \{0\}$
-> Via $H(x,t) = (1-t)x + tx/\|x\|$ (proved in the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|previous theorem]]). So $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) \cong \pi_1(S^n)$.
+> Via $H(x,t) = (1-t)x + tx/\|x\|$ (proved in [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|Theorem §26.2]]). So $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) \cong \pi_1(S^n)$.
 >
 > For $n \geq 2$: $\pi_1(S^n) = 0$ ([[Sⁿ is Simply Connected for n ≥ 2|simply connected]]), so $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) = 0$.
 >
@@ -633,7 +633,7 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 >
 > **Why other loops can't be treated this way:** The loop $a$ (going around the “hole” of the torus) *crosses* an identified edge — it enters through the left side and exits through the right side. When you unglue, it breaks into a path from the left edge to the right edge, not a loop. You cannot make $a$ small enough to avoid the edges, because crossing the edge *is* what the loop does. So $a$ and $b$ are generators of the figure eight, not expressible as boundary words.
 >
-> **Connection to van Kampen:** Removing $q$ “frees” $aba^{-1}b^{-1}$ from being trivial: in $T^2$ it contracts to $q$, but in $T^2 \setminus \{q\}$ the contraction is blocked. Gluing the disk back (the van Kampen computation, [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-4|§29]]) forces $aba^{-1}b^{-1} = e$, which is exactly $ab = ba$, recovering $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$ ([[Topology §23 The Fundamental Group#^cor-23-8|§23.8]]).
+> **Connection to van Kampen:** Removing $q$ “frees” $aba^{-1}b^{-1}$ from being trivial: in $T^2$ it contracts to $pt$, but in $T^2 \setminus \{pt\}$ the contraction is blocked. Gluing the disk back (the van Kampen computation, [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-4|§29]]) forces $aba^{-1}b^{-1} = e$, which is exactly $ab = ba$, recovering $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$ ([[Topology §23 The Fundamental Group#^cor-23-8|§23.8]]).
 
 ^rem-26-8
 
@@ -805,13 +805,13 @@ The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §
 >
 > Consider the chain $X \xrightarrow{f} Y \xrightarrow{g} X \xrightarrow{f} Y$.
 >
-> **$f_*$ is surjective:** Since $f \circ g \simeq \operatorname{id}_Y$, the [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-14|general lemma]] gives
+> **$f_*$ is surjective (at another basepoint):** Let $y_0 = f(x_0)$ and $x_1 = g(y_0)$. Since $f \circ g \simeq \operatorname{id}_Y$, the [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-14|general lemma]] (at the basepoint $y_0$) gives
 >
 > $$
 > (\operatorname{id}_Y)_* = \hat{\alpha} \circ (f \circ g)_* = \hat{\alpha} \circ f_* \circ g_*
 > $$
 >
-> for some path $\alpha$. Since $(\operatorname{id}_Y)_* = \operatorname{id}$ and $\hat{\alpha}$ is an [[Basepoint Independence of π₁|isomorphism]], $f_* \circ g_*$ is an isomorphism. In particular, $f_*$ is surjective (it has a right inverse up to isomorphism).
+> for some path $\alpha$. Since $(\operatorname{id}_Y)_* = \operatorname{id}$ and $\hat{\alpha}$ is an [[Basepoint Independence of π₁|isomorphism]], $f_* \circ g_*$ is an isomorphism. In particular, $f_*$ is surjective (it has a right inverse up to isomorphism), but as a map $\pi_1(X, x_1) \to \pi_1(Y, f(x_1))$, not at $x_0$. What we keep from this step: $g_*: \pi_1(Y, y_0) \to \pi_1(X, x_1)$ is injective.
 >
 > **$f_*$ is injective:** Since $g \circ f \simeq \operatorname{id}_X$, the [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-14|general lemma]] gives
 >
@@ -819,7 +819,9 @@ The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §
 > (\operatorname{id}_X)_* = \hat{\beta} \circ (g \circ f)_* = \hat{\beta} \circ g_* \circ f_*
 > $$
 >
-> for some path $\beta$. So $g_* \circ f_*$ is an isomorphism, hence $f_*$ is injective (it has a left inverse up to isomorphism).
+> for some path $\beta$. So $g_* \circ f_*$ is an isomorphism, hence $f_*: \pi_1(X, x_0) \to \pi_1(Y, y_0)$ is injective (it has a left inverse up to isomorphism), and $g_*: \pi_1(Y, y_0) \to \pi_1(X, x_1)$ is surjective.
+>
+> **Basepoint change:** Thus $g_*: \pi_1(Y, y_0) \to \pi_1(X, x_1)$ is bijective, and $f_* = g_*^{-1} \circ \hat{\beta}^{-1}$ is an isomorphism $\pi_1(X, x_0) \to \pi_1(Y, y_0)$ (Munkres 58.7).
 
 ^pf-26-15
 

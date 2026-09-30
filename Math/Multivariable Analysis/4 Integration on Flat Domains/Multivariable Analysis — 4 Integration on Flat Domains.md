@@ -7,9 +7,9 @@ tags: [chapter, multivariable-analysis]
 # 4 Integration on Flat Domains
 ↑ [[Multivariable Analysis]]
 
-**Builds on:** [[Multivariable Analysis — 1 Foundations|1 Foundations]] (6), [[Multivariable Analysis — 2 Differentiation|2 Differentiation]] (5), [[Multivariable Analysis — 3 Existence Theorems and Applications|3 Existence Theorems and Applications]] (3)
+**Builds on:** [[Multivariable Analysis — 1 Foundations|1 Foundations]] (6), [[Multivariable Analysis — 2 Differentiation|2 Differentiation]] (4), [[Multivariable Analysis — 3 Existence Theorems and Applications|3 Existence Theorems and Applications]] (3)
 **Used by:** [[Multivariable Analysis — 5 Line Integrals and the Divergence Theorem|5 Line Integrals and the Divergence Theorem]] (8), [[Multivariable Analysis — 6 Surface Integrals and the Classical Theorems|6 Surface Integrals and the Classical Theorems]] (3), [[Multivariable Analysis — 7 Differential Forms and the Generalized Stokes' Theorem|7 Differential Forms and the Generalized Stokes' Theorem]] (1)
-**Builds on (other subjects):** [[Single Variable Analysis]] (12), [[Linear Algebra]] (2), [[Topology]] (8)
+**Builds on (other subjects):** [[Single Variable Analysis]] (13), [[Linear Algebra]] (2), [[Topology]] (8)
 
 ## Sections
 - [[Multivariable Analysis §15 Multivariable Integration]]

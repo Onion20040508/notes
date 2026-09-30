@@ -18,7 +18,6 @@ tags: [multivariable-analysis, hub]
 
 ## Used in (Multivariable Analysis)
 - [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-4|Theorem §14.4: Second-Order Sufficient Conditions — Unconstrained]]
-- [[Multivariable Analysis §15 Multivariable Integration#^thm-15-14|Theorem §15.14: Change of Variables Formula — Rectangular Case]]
 
 ## Connections
 - **Proof.** Restrict f to the segment, F(t) = f(x + th, y + tk), and apply the 451 [[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|Taylor's Theorem with Lagrange Remainder]] at t = 1. The derivatives F⁽ᵐ⁾ come from [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-1|Theorem §9.1]], where [[Schwarz–Clairaut Theorem|equality of mixed partials]] collects the terms into binomial coefficients. The straight segment gives F⁽ᵐ⁾(0) = dᵐf with no correction terms ([[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^rem-9-3|Why the Linear Path?]]).

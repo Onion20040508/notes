@@ -16,6 +16,7 @@ tags: [topology, hub]
 - [[Topology §22 Homotopy of Paths#^thm-22-6|Theorem §22.6: Properties of Path Concatenation]]
 
 ## Used in (Topology)
+- [[Topology §23 The Fundamental Group#^cor-23-3|Corollary §23.3: π₁ is Independent of Basepoint for Path-Connected Spaces]]
 - [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-14|Lemma §26.14: Homotopic Maps and π₁: General Case]]
 - [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-15|Theorem §26.15: Homotopy Equivalence Induces Isomorphism on π₁]]
 

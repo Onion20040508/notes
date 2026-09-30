@@ -21,6 +21,7 @@ tags: [linear-algebra, hub]
 - [[Linear Algebra 9C Determinants#^ladr-9-59|9.59 Every positive operator has nonnegative determinant]]
 
 ## Used in (Multivariable Analysis)
+- [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-4|Theorem §14.4: Second-Order Sufficient Conditions — Unconstrained]]
 - [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^rem-17-2|Remark: Green's Second Identity as Symmetry]]
 
 ## Connections

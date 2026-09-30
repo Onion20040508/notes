@@ -8,7 +8,8 @@ tags: [chapter, topology]
 ↑ [[Topology]]
 
 **Builds on:** —
-**Used by:** [[Topology — 2 Closedness, Continuity, and Hausdorff|2 Closedness, Continuity, and Hausdorff]] (3), [[Topology — 3 Products, Metrics, and Quotients|3 Products, Metrics, and Quotients]] (7), [[Topology — 4 Connectedness|4 Connectedness]] (3), [[Topology — 5 Compactness|5 Compactness]] (9), [[Topology — 6 Countability and Separation|6 Countability and Separation]] (10), [[Topology — 9 Covering Spaces and Lifting|9 Covering Spaces and Lifting]] (3)
+**Used by:** [[Topology — 2 Closedness, Continuity, and Hausdorff|2 Closedness, Continuity, and Hausdorff]] (4), [[Topology — 3 Products, Metrics, and Quotients|3 Products, Metrics, and Quotients]] (8), [[Topology — 4 Connectedness|4 Connectedness]] (3), [[Topology — 5 Compactness|5 Compactness]] (9), [[Topology — 6 Countability and Separation|6 Countability and Separation]] (10), [[Topology — 9 Covering Spaces and Lifting|9 Covering Spaces and Lifting]] (3)
+**Builds on (other subjects):** —
 
 ## Sections
 - [[Topology §1 Topological Spaces]]
@@ -19,7 +20,7 @@ tags: [chapter, topology]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Topology §2 Basis for a Topology#^lem-2-1|Lemma §2.1: Topology Equals Union of Basis Elements]]: 22 later results
+- [[Topology §2 Basis for a Topology#^lem-2-1|Lemma §2.1: Topology Equals Union of Basis Elements]]: 28 later results
 - [[Topology §5 Subspace Topology#^lem-5-2|Lemma §5.2]]: 5 later results
+- [[Topology §2 Basis for a Topology#^cor-2-3|Corollary §2.3: Comparing Topologies via Basis Openness]]: 2 later results
 - [[Topology §5 Subspace Topology#^lem-5-1|Lemma §5.1: Basis for Subspace Topology]]: 2 later results
-- [[Topology §2 Basis for a Topology#^lem-2-2|Lemma §2.2: Comparing Topologies via Bases]]: 1 later result

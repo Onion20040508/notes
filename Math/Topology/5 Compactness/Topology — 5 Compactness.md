@@ -8,7 +8,8 @@ tags: [chapter, topology]
 ↑ [[Topology]]
 
 **Builds on:** [[Topology — 1 Topological Spaces and Constructions|1 Topological Spaces and Constructions]] (9), [[Topology — 2 Closedness, Continuity, and Hausdorff|2 Closedness, Continuity, and Hausdorff]] (14), [[Topology — 3 Products, Metrics, and Quotients|3 Products, Metrics, and Quotients]] (4), [[Topology — 4 Connectedness|4 Connectedness]] (2)
-**Used by:** [[Topology — 3 Products, Metrics, and Quotients|3 Products, Metrics, and Quotients]] (4), [[Topology — 6 Countability and Separation|6 Countability and Separation]] (2), [[Topology — 9 Covering Spaces and Lifting|9 Covering Spaces and Lifting]] (8), [[Topology — 10 Applications of π₁|10 Applications of π₁]] (3), [[Topology — 11 Computing π₁|11 Computing π₁]] (4)
+**Used by:** [[Topology — 3 Products, Metrics, and Quotients|3 Products, Metrics, and Quotients]] (4), [[Topology — 6 Countability and Separation|6 Countability and Separation]] (3), [[Topology — 9 Covering Spaces and Lifting|9 Covering Spaces and Lifting]] (8), [[Topology — 10 Applications of π₁|10 Applications of π₁]] (3), [[Topology — 11 Computing π₁|11 Computing π₁]] (4)
+**Builds on (other subjects):** [[Single Variable Analysis]] (1)
 
 ## Sections
 - [[Topology §15 Compact Spaces]]
@@ -26,7 +27,7 @@ tags: [chapter, topology]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Topology §15 Compact Spaces#^lem-15-1|Lemma §15.1: Compactness in Subspaces]]: 29 later results
+- [[Topology §15 Compact Spaces#^lem-15-1|Lemma §15.1: Compactness in Subspaces]]: 30 later results
+- [[Topology §15 Compact Spaces#^thm-15-10|Theorem §15.10: Closed Intervals are Compact]]: 26 later results
 - [[Compact Subspace of a Hausdorff Space is Closed|Theorem §15.4: Compact Subspace of Hausdorff is Closed]]: 24 later results
-- [[Topology §15 Compact Spaces#^thm-15-10|Theorem §15.10: Closed Intervals are Compact]]: 24 later results
 - [[Lebesgue Number Lemma|Lemma §16.3: Lebesgue Number Lemma]]: 24 later results

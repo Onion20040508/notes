@@ -114,11 +114,11 @@ tags: [topology, math590]
 >
 > $(\Leftarrow)$ Conversely, suppose the “$\varepsilon$-$\delta$” condition holds. Want to show $\mathcal{T}_{d'}$ finer than $\mathcal{T}_d$.
 >
-> Given a basis element $B = B_d(x, \varepsilon)$ for $\mathcal{T}_d$ containing $x$, want to find $B_{d'}(x, \delta_x) \subseteq B$. By hypothesis, such $\delta_x$ exists. Then $B = \bigcup_{x \in B} B_{d'}(x, \delta_x)$ is open in $\mathcal{T}_{d'}$.
+> Given a basis element $B = B_d(x, \varepsilon)$ for $\mathcal{T}_d$, let $y \in B$. By the triangle inequality, $B_d(y, \varepsilon_y) \subseteq B$ with $\varepsilon_y = \varepsilon - d(x, y) > 0$. By hypothesis (applied at $y$), there exists $\delta_y > 0$ with $B_{d'}(y, \delta_y) \subseteq B_d(y, \varepsilon_y) \subseteq B$. Then $B = \bigcup_{y \in B} B_{d'}(y, \delta_y)$ is open in $\mathcal{T}_{d'}$.
 
 ^pf-11-1
 
-*Uses:* [[Topology §2 Basis for a Topology#^lem-2-1|§2.1]]
+*Uses:* [[Topology §2 Basis for a Topology#^lem-2-1|§2.1]], [[Topology §11 Metric Topology#^def-11-3|Def. §11.3]]
 
 > [!remark]- Connections
 > - The metric form of [[Topology §2 Basis for a Topology#^lem-2-2|Lemma §2.2: Comparing Topologies via Bases]], with $\varepsilon$-balls as the bases.
@@ -262,7 +262,7 @@ tags: [topology, math590]
 >
 > The metric case is stronger: no convexity condition is required. This is because $\varepsilon$-balls “restrict nicely” ($B_d(x,\varepsilon) \cap A = B_{d|_A}(x,\varepsilon)$), whereas order intervals may not.
 >
-> **Counterexample for order topology:** $A = \{0\} \cup (1,2) \subseteq \mathbb{R}$. In subspace topology, $\{0\}$ is open. In order topology on $A$, the smallest open set containing $0$ is $A$ itself.
+> **Counterexample for order topology:** $A = \{0\} \cup (1,2) \subseteq \mathbb{R}$. In subspace topology, $\{0\}$ is open. In order topology on $A$, every open set containing $0$ contains a basis element $[0, b) = \{0\} \cup (1, b)$ with $b \in (1,2)$, so it meets $(1,2)$; hence $\{0\}$ is not open.
 
 ^rem-11-3
 

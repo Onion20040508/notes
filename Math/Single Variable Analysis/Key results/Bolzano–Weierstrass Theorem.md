@@ -16,7 +16,7 @@ tags: [real-analysis, hub]
 
 ## Used in (Single Variable Analysis)
 - [[Single Variable Analysis §11 Subsequences#^thm-11-6|Theorem §11.6: Structure of the Set of Subsequence Limits]]
-- [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^thm-13-3|Theorem §13.3: Bolzano–Weierstrass in \mathbb{R}^n]]
+- [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^thm-13-3|Theorem §13.3: Bolzano–Weierstrass in ℝⁿ]]
 - [[Single Variable Analysis §18 Properties of Continuous Functions#^thm-18-1|Theorem §18.1: Extreme Value Theorem]]
 - [[Single Variable Analysis §18 Properties of Continuous Functions#^thm-18-9|Theorem §18.9: Continuous Inverse Theorem]]
 - [[Single Variable Analysis §19 Uniform Continuity#^thm-19-1|Theorem §19.1: Uniform Continuity on Closed Bounded Intervals]]

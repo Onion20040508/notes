@@ -28,10 +28,13 @@ tags: [real-analysis, hub]
 ## Used in (Multivariable Analysis)
 - [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-3|Theorem §9.3: Rolle's Theorem]]
 - [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-5|Remark]]
-- [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-10|Remark: The Logical Flow: Necessary to Sufficient]]
+- [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-10|Remark: The Logical Flow: Necessary → Sufficient]]
 
 ## Used in (Measure Theory)
 - [[Measure Theory §18 Differentiation Theory#^lem-18-18|Lemma §18.18: Image Measure Bounded by Total Variation]]
+
+## Used in (Topology)
+- [[Topology §15 Compact Spaces#^rem-15-1|Remark: Why Compactness Matters]]
 
 ## Connections
 - Abstract form: the continuous image of a compact set is compact. The same fact gives extrema of continuous functions on compact manifolds.

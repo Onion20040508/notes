@@ -17,7 +17,7 @@ tags: [topology, hub]
 
 ## Used in (Topology)
 - [[Topology §22 Homotopy of Paths#^lem-22-3|Lemma §22.3]]
-- [[Topology §22 Homotopy of Paths#^prop-22-4|Proposition §22.4: Well-Definedness of the product of path classes]]
+- [[Topology §22 Homotopy of Paths#^prop-22-4|Proposition §22.4: Well-Definedness of [f] * [g]]]
 - [[Topology §22 Homotopy of Paths#^thm-22-6|Theorem §22.6: Properties of Path Concatenation]]
 - [[Topology §24 Covering Spaces#^ex-24-5|Example §24.5: Lifting Loops on S¹ to Paths in ℝ]]
 - [[Topology §24 Covering Spaces#^lem-24-6|Lemma §24.6: Path Lifting Lemma]]

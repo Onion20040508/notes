@@ -117,7 +117,7 @@ tags: [topology, math590]
 >
 > **Case 2:** Assume $A$ is infinite. By (2), $A$ has a limit point $x \in X$.
 >
-> Construct a subsequence converging to $x$: Since $x$ is a [[Topology §7 Interior and Closure#^def-7-3|limit point]] of $A$, every neighborhood of $x$ contains infinitely many points of $A$. (If some $B(x, \varepsilon)$ contained only finitely many points of $A$, then $B(x, \varepsilon/2)$ would contain at most those same points, but a limit point requires every neighborhood to intersect $A \setminus \{x\}$.)
+> Construct a subsequence converging to $x$: Since $x$ is a [[Topology §7 Interior and Closure#^def-7-3|limit point]] of $A$, every neighborhood of $x$ contains infinitely many points of $A$. (If some $B(x, \varepsilon)$ contained only finitely many points $a_1, \ldots, a_m$ of $A \setminus \{x\}$, then for $0 < r \le \varepsilon$ with $r < d(x, a_j)$ for all $j$, the ball $B(x, r)$ would miss $A \setminus \{x\}$, but a limit point requires every neighborhood to intersect $A \setminus \{x\}$.)
 >
 > In particular, $B(x, 1/i) \cap (A \setminus \{x\})$ is infinite for each $i$. So we can inductively choose:
 > - $x_{n_1} \in B(x, 1) \cap A$ with $x_{n_1} \neq x$

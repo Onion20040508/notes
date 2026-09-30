@@ -13,11 +13,11 @@ tags: [topology, hub]
 ## Its proof uses
 - [[Topology §23 The Fundamental Group#^thm-23-5|Theorem §23.5: Functoriality of π₁]]
 - [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|Lemma §26.1: Homotopic Maps and Induced Homomorphisms]]
-- [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|Theorem §26.2: π₁(Sⁿ) ≅ π₁(ℝⁿ⁺¹ ∖ {0})]]
+- [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|Theorem §26.2: π₁(Sⁿ) ≅ π₁(ℝⁿ⁺¹ ∖ 0)]]
 - [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|Proposition §26.3: Algebraic Properties of Retractions]]
 
 ## Used in (Topology)
-- (not cited later in the course)
+- [[Topology §26 Deformation Retracts and Homotopy Type#^cor-26-12|Corollary §26.12: Deformation Retracts Have the Same π₁]]
 
 ## Connections
 - **Retract vs. deformation retract.** A retraction alone gives only j∗ injective and r∗ surjective ([[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|Algebraic Properties of Retractions]]), and π₁(X) can be strictly larger, e.g. a circle inside S¹ ∨ S¹ ([[Topology §26 Deformation Retracts and Homotopy Type#^rem-26-1|remark after §26.3]]). The homotopy id_X ≃ j ∘ r fixing A supplies surjectivity through [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|Homotopic Maps and Induced Homomorphisms]] ([[Topology §26 Deformation Retracts and Homotopy Type#^rem-26-7|Retraction vs. Deformation Retraction]]).

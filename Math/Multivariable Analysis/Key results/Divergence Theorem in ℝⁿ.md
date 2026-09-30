@@ -15,6 +15,7 @@ tags: [multivariable-analysis, hub]
 - [[Multivariable Analysis §15 Multivariable Integration#^thm-15-4|Theorem §15.4: Additivity over Domains]]
 - [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|Theorem §15.9: Fubini for Type I Regions]]
 - [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-1|Definition §17.1: Divergence in ℝⁿ]]
+- [[Multivariable Analysis §18 Surface Integrals#^thm-18-1|Theorem §18.1: Surface Area via the Gram Matrix]]
 
 ## Its proof uses (other subjects)
 - [[Fundamental Theorem of Calculus]] (Single Variable Analysis)

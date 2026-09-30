@@ -16,6 +16,9 @@ tags: [topology, hub]
 - [[Topology §23 The Fundamental Group#^def-23-4|Definition §23.4: Induced Homomorphism]]
 - [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|Theorem §27.1: Generation by Open Cover (Munkres 59.1)]]
 
+## Its proof uses (other subjects)
+- [[First isomorphism theorem]] (Linear Algebra)
+
 ## Used in (Topology)
 - [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-1|Example §29.1: Simply Connected Spheres via van Kampen]]
 - [[Topology §29 The Seifert–van Kampen Theorem#^cor-29-2|Corollary §29.2: Free Product Formula]]

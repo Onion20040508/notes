@@ -12,7 +12,11 @@ tags: [multivariable-analysis, hub]
 
 ## Its proof uses
 - [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|Definition §3.1: Continuity]]
+- [[Multivariable Analysis §3 Continuity and Limits of Functions#^thm-3-1|Theorem §3.1: Sum and Difference of Continuous Functions]]
+- [[Multivariable Analysis §3 Continuity and Limits of Functions#^thm-3-2|Theorem §3.2: Product of Continuous Functions]]
 - [[Multivariable Analysis §4 Partial Derivatives#^def-4-1|Definition §4.1: Partial Derivatives]]
+- [[Multivariable Analysis §6 Differentiability#^thm-6-2|Theorem §6.2: Continuous Partials Imply Differentiability]]
+- [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-1|Theorem §10.1: Continuity of Composition]]
 
 ## Its proof uses (other subjects)
 - [[Mean Value Theorem]] (Single Variable Analysis)

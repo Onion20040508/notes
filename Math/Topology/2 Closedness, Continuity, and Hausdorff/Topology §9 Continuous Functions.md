@@ -89,7 +89,7 @@ tags: [topology, math590]
 ## Homeomorphisms
 
 > [!definition] Definition §9.2: Homeomorphism
-> Let $f: X \to Y$ be a bijection with inverse $f^{-1}: Y \to X$. If both $f$ and $f^{-1}$ are continuous, then $f$ is called a **homeomorphism**. $\Leftrightarrow$
+> Let $f: X \to Y$ be a bijection with inverse $f^{-1}: Y \to X$. If both $f$ and $f^{-1}$ are continuous, then $f$ is called a **homeomorphism**.
 
 ^def-9-2
 
@@ -195,7 +195,7 @@ tags: [topology, math590]
 > 2. (Inclusion) If $A \subseteq X$, the inclusion $f: A \to X$ is continuous.
 > 3. (Composition) Compositions of continuous functions are continuous: $f \circ g$ is continuous if $f, g$ are continuous.
 > 4. (Restriction) Restricting the domain: $f$ continuous $\Rightarrow$ $f|_A$ continuous.
-> 5. (Restriction/Expansion on range) $f: X \to Y$ continuous, $Z$ a subspace of $Y$, or $Y$ subspace of $Z$. $h: X \to Z$ continuous if $f|_{\text{restricted}}$ continuous.
+> 5. (Restriction/Expansion on range) Let $f: X \to Y$ be continuous. If $Z$ is a subspace of $Y$ with $f(X) \subseteq Z$, then $f$, viewed as a map $X \to Z$, is continuous. If $Z$ is a space having $Y$ as a subspace, then $h: X \to Z$, $h(x) = f(x)$, is continuous.
 > 6. (Local formulation of continuity) If $X = \bigcup U_\alpha$ (open in $X$), if $f|_{U_\alpha}$ continuous, then $f$ is continuous.
 
 ^thm-9-4

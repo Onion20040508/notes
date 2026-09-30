@@ -70,6 +70,18 @@ graph TD
 ## Summary
 - [[Topology — Algebraic Topology Toolkit]]: the four tools for computing π₁, a decision tree, and a table of computed fundamental groups.
 
+## Prerequisites from other subjects
+The results from other subjects that this course's proofs and definitions cite (with the number of citing items). Most connections to MATH 451 and Linear Algebra are conceptual and live in the Connections callouts rather than in proofs; each chapter note gives per-chapter counts.
+
+**[[Single Variable Analysis]]**
+- [[Extreme Value Theorem]] (1)
+- [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^def-13-2|Definition §13.2: Convergence and Cauchy in a Metric Space]] (1)
+- [[Single Variable Analysis §4 The Completeness Axiom#^thm-4-7|Theorem §4.7: Density of ℚ in ℝ]] (1)
+
+**[[Linear Algebra]]**
+- [[First isomorphism theorem]] (2)
+- [[Linear Algebra 2B Bases#^ladr-2-26|2.26 Basis]] (1)
+
 ## Workhorse examples
 - [[Lower limit topology]]
 - [[K-topology]]

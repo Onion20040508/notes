@@ -29,7 +29,7 @@ tags: [measure-theory, hub]
 - [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-15|Theorem §14.15: Fatou's Lemma]]
 - [[Measure Theory §15 The General Lebesgue Integral#^thm-15-7|Theorem §15.7: Reverse Fatou's Lemma]]
 - [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-1|Theorem §17.1: Translation Invariance]]
-- [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^lem-17-5|Lemma §17.5: Closure Properties of mathcal{F}]]
+- [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^lem-17-5|Lemma §17.5: Closure Properties of 𝓕]]
 - [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-11|Theorem §17.11: The Subgraph Theorem]]
 - [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-12|Corollary §19.12: Minkowski for Nonnegative Series]]
 

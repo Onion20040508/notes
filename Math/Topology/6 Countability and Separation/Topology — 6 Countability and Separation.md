@@ -7,8 +7,9 @@ tags: [chapter, topology]
 # 6 Countability and Separation
 ↑ [[Topology]]
 
-**Builds on:** [[Topology — 1 Topological Spaces and Constructions|1 Topological Spaces and Constructions]] (10), [[Topology — 2 Closedness, Continuity, and Hausdorff|2 Closedness, Continuity, and Hausdorff]] (4), [[Topology — 3 Products, Metrics, and Quotients|3 Products, Metrics, and Quotients]] (6), [[Topology — 5 Compactness|5 Compactness]] (2)
+**Builds on:** [[Topology — 1 Topological Spaces and Constructions|1 Topological Spaces and Constructions]] (10), [[Topology — 2 Closedness, Continuity, and Hausdorff|2 Closedness, Continuity, and Hausdorff]] (4), [[Topology — 3 Products, Metrics, and Quotients|3 Products, Metrics, and Quotients]] (6), [[Topology — 5 Compactness|5 Compactness]] (3)
 **Used by:** —
+**Builds on (other subjects):** [[Single Variable Analysis]] (1)
 
 ## Sections
 - [[Topology §18 Countability Axioms]]

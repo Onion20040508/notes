@@ -202,9 +202,9 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 > [!example] Example §27.1: Wedge of Two Spheres is Simply Connected
 > The space $X = S^2 \vee S^2$ (two copies of $S^2$ glued at a single point) has $\pi_1(X) = 0$.
 >
-> **Topology of $X$.** The space $X$ inherits the [[Topology §12 Quotient Topology#^def-12-2|quotient topology]] from $S_1 \sqcup S_2$ under the identification $p_1 \sim p_2$: a set $W \subseteq X$ is open if and only if $W \cap S_1$ is open in $S_1$ and $W \cap S_2$ is open in $S_2$. The natural inclusions $S_1 \hookrightarrow X$ and $S_2 \hookrightarrow X$ are embeddings, and $X$ is [[Topology §8 Hausdorff Spaces#^def-8-1|Hausdorff]] (since $S_1$ and $S_2$ are compact Hausdorff and meet at a single point).
+> **Topology of $X$.** The space $X$ inherits the [[Topology §12 Quotient Topology#^def-12-2|quotient topology]] from $S_1 \sqcup S_2$ (the two copies of $S^2$) under the identification $p_1 \sim p_2$ of a point $p_1 \in S_1$ with a point $p_2 \in S_2$; write $p \in X$ for the resulting junction point. Thus a set $W \subseteq X$ is open if and only if $W \cap S_1$ is open in $S_1$ and $W \cap S_2$ is open in $S_2$. The natural inclusions $S_1 \hookrightarrow X$ and $S_2 \hookrightarrow X$ are embeddings, and $X$ is [[Topology §8 Hausdorff Spaces#^def-8-1|Hausdorff]] (since $S_1$ and $S_2$ are compact Hausdorff and meet at a single point).
 >
-> **Setup: remove one point from each side.** Choose points $q_1 \in S_1 \setminus \{p\}$ and $q_2 \in S_2 \setminus \{p\}$. Define:
+> **Setup: remove one point from each side.** Let $q_1 = -p_1 \in S_1$ and $q_2 = -p_2 \in S_2$ be the antipodes of the junction point (so $q_1, q_2 \neq p$). Define:
 >
 > $$
 > U = X \setminus \{q_2\} = S_1 \cup (S_2 \setminus \{q_2\}), \qquad V = X \setminus \{q_1\} = (S_1 \setminus \{q_1\}) \cup S_2.
@@ -216,7 +216,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 >
 > **2. $U$ and $V$ are simply connected.** We show $U$ [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-3|deformation retracts]] onto $S_1 \cong S^2$.
 >
-> By [[Topology §27 The Fundamental Group of Sⁿ#^pf-27-3|stereographic projection]] from $q_2$, the punctured sphere $S_2 \setminus \{q_2\} \cong \mathbb{R}^2$, which is contractible. Let $r_t: S_2 \setminus \{q_2\} \to S_2 \setminus \{q_2\}$ be a deformation retraction onto $\{p\}$: explicitly, in the $\mathbb{R}^2$ coordinates, this is the [[Topology §22 Homotopy of Paths#^thm-22-1|straight-line homotopy]] $r_t(x) = (1-t)x + t \cdot 0$ toward the origin (which corresponds to $p$ under stereographic projection from $q_2$). Note $r_0 = \operatorname{id}$, $r_1(x) = p$ for all $x$, and $r_t(p) = p$ for all $t$.
+> By [[Topology §27 The Fundamental Group of Sⁿ#^pf-27-3|stereographic projection]] from $q_2$, the punctured sphere $S_2 \setminus \{q_2\} \cong \mathbb{R}^2$, which is contractible. Let $r_t: S_2 \setminus \{q_2\} \to S_2 \setminus \{q_2\}$ be a deformation retraction onto $\{p\}$: explicitly, in the $\mathbb{R}^2$ coordinates, this is the [[Topology §22 Homotopy of Paths#^thm-22-1|straight-line homotopy]] $r_t(x) = (1-t)x + t \cdot 0$ toward the origin (which corresponds to $p$ under stereographic projection from $q_2$, since $p = -q_2$ in $S_2$). Note $r_0 = \operatorname{id}$, $r_1(x) = p$ for all $x$, and $r_t(p) = p$ for all $t$.
 >
 > Define $F: U \times I \to U$ by:
 >
@@ -243,7 +243,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 ^ex-27-1
 
 ![[m590-27-4.svg]]
-*The deformation retraction of $U = X \setminus \{q_2\}$ onto $S_1$: with $q_2$ removed, $S_2 \setminus \{q_2\} \cong \mathbb{R}^2$, and the straight-line contraction to the origin becomes a flow along great circles from $q_2$ toward the wedge point $p$ (red). $S_1$ (blue) never moves, so $\pi_1(U) \cong \pi_1(S^2) = 0$. $V = X \setminus \{q_1\}$ is the mirror image.*
+*The deformation retraction of $U = X \setminus \{q_2\}$ onto $S_1$: with $q_2$ removed, $S_2 \setminus \{q_2\} \cong \mathbb{R}^2$, and the straight-line contraction to the origin becomes a flow along great circles from $q_2$ toward the wedge point $p$, its antipode in $S_2$ (red). $S_1$ (blue) never moves, so $\pi_1(U) \cong \pi_1(S^2) = 0$. $V = X \setminus \{q_1\}$ is the mirror image.*
 
 > [!remark]- Connections
 > - $S^2 \vee S^2$ is a [[Topology §28 Fundamental Group of Some Surfaces#^def-28-3|wedge sum]]; see also [[Topology §28 Fundamental Group of Some Surfaces#^ex-28-1|Wedge Sums]].

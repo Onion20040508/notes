@@ -23,6 +23,7 @@ tags: [multivariable-analysis, hub]
 
 ## Used in (Multivariable Analysis)
 - [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-1|Theorem §9.1: Derivatives of F(t)]]
+- [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|Theorem §10.2: Multivariable Chain Rule]]
 - [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-1|Theorem §12.1: Implicit Function Theorem]]
 
 ## Connections

@@ -18,6 +18,7 @@ tags: [multivariable-analysis, hub]
 - [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-3|Definition §14.3: Positive/Negative Definite]]
 
 ## Its proof uses (other subjects)
+- [[Real spectral theorem]] (Linear Algebra)
 - [[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|451 §31.2: Taylor's Theorem with Lagrange Remainder]]
 
 ## Used in (Multivariable Analysis)

@@ -17,8 +17,8 @@ tags: [measure-theory, hub]
 - [[Measure Theory §12 Measurable Functions#^thm-12-14|Theorem §12.14: Approximation by Simple Functions: Non-negative Case]]
 - [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|Theorem §14.8: Linearity of the Integral]]
 - [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|Proposition §14.11: Vanishing Integral for Non-Negative Functions]]
-- [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^def-17-2|Definition §17.2: The Tonelli Class mathcal{F}]]
-- [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^lem-17-5|Lemma §17.5: Closure Properties of mathcal{F}]]
+- [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^def-17-2|Definition §17.2: The Tonelli Class 𝓕]]
+- [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^lem-17-5|Lemma §17.5: Closure Properties of 𝓕]]
 
 ## Used in (Measure Theory)
 - [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-6|Theorem §17.6: Fubini's Theorem]]

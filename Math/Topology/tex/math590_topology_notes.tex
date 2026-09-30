@@ -1125,7 +1125,7 @@ $(2) \Rightarrow (3)$: Let $B \subseteq Y$ be closed. Let $A = f^{-1}(B)$. By (2
 \subsection{Homeomorphisms}
 
 \begin{defbox}[Homeomorphism]
-Let $f: X \to Y$ be a bijection with inverse $f^{-1}: Y \to X$. If both $f$ and $f^{-1}$ are continuous, then $f$ is called a \textbf{homeomorphism}. $\Leftrightarrow$
+Let $f: X \to Y$ be a bijection with inverse $f^{-1}: Y \to X$. If both $f$ and $f^{-1}$ are continuous, then $f$ is called a \textbf{homeomorphism}.
 \end{defbox}
 
 \begin{propbox}[Equivalent Definition of Homeomorphism]
@@ -1198,7 +1198,7 @@ This is why we freely write $S^1$ without specifying the ambient space. In parti
     \item (Inclusion) If $A \subseteq X$, the inclusion $f: A \to X$ is continuous.
     \item (Composition) Compositions of continuous functions are continuous: $f \circ g$ is continuous if $f, g$ are continuous.
     \item (Restriction) Restricting the domain: $f$ continuous $\Rightarrow$ $f|_A$ continuous.
-    \item (Restriction/Expansion on range) $f: X \to Y$ continuous, $Z$ a subspace of $Y$, or $Y$ subspace of $Z$. $h: X \to Z$ continuous if $f|_{\text{restricted}}$ continuous.
+    \item (Restriction/Expansion on range) Let $f: X \to Y$ be continuous. If $Z$ is a subspace of $Y$ with $f(X) \subseteq Z$, then $f$, viewed as a map $X \to Z$, is continuous. If $Z$ is a space having $Y$ as a subspace, then $h: X \to Z$, $h(x) = f(x)$, is continuous.
     \item (Local formulation of continuity) If $X = \bigcup U_\alpha$ (open in $X$), if $f|_{U_\alpha}$ continuous, then $f$ is continuous.
 \end{enumerate}
 \end{thmbox}
@@ -1399,7 +1399,7 @@ $(\Rightarrow)$ Suppose $\mathcal{T}_{d'}$ finer than $\mathcal{T}_d$. Let $B_d(
 
 $(\Leftarrow)$ Conversely, suppose the ``$\varepsilon$-$\delta$'' condition holds. Want to show $\mathcal{T}_{d'}$ finer than $\mathcal{T}_d$.
 
-Given a basis element $B = B_d(x, \varepsilon)$ for $\mathcal{T}_d$ containing $x$, want to find $B_{d'}(x, \delta_x) \subseteq B$. By hypothesis, such $\delta_x$ exists. Then $B = \bigcup_{x \in B} B_{d'}(x, \delta_x)$ is open in $\mathcal{T}_{d'}$.
+Given a basis element $B = B_d(x, \varepsilon)$ for $\mathcal{T}_d$, let $y \in B$. By the triangle inequality, $B_d(y, \varepsilon_y) \subseteq B$ with $\varepsilon_y = \varepsilon - d(x, y) > 0$. By hypothesis (applied at $y$), there exists $\delta_y > 0$ with $B_{d'}(y, \delta_y) \subseteq B_d(y, \varepsilon_y) \subseteq B$. Then $B = \bigcup_{y \in B} B_{d'}(y, \delta_y)$ is open in $\mathcal{T}_{d'}$.
 \end{proof}
 
 \begin{thmbox}[Euclidean and Square Metrics Induce Same Topology]
@@ -1510,7 +1510,7 @@ Metric space $(X, d)$ & None needed & Subspace top = Metric top \\
 
 The metric case is stronger: no convexity condition is required. This is because $\varepsilon$-balls ``restrict nicely'' ($B_d(x,\varepsilon) \cap A = B_{d|_A}(x,\varepsilon)$), whereas order intervals may not.
 
-\textbf{Counterexample for order topology:} $A = \{0\} \cup (1,2) \subseteq \mathbb{R}$. In subspace topology, $\{0\}$ is open. In order topology on $A$, the smallest open set containing $0$ is $A$ itself.
+\textbf{Counterexample for order topology:} $A = \{0\} \cup (1,2) \subseteq \mathbb{R}$. In subspace topology, $\{0\}$ is open. In order topology on $A$, every open set containing $0$ contains a basis element $[0, b) = \{0\} \cup (1, b)$ with $b \in (1,2)$, so it meets $(1,2)$; hence $\{0\}$ is not open.
 \end{rembox}
 
 \subsection{Continuity in Metric Spaces}
@@ -2750,7 +2750,7 @@ Let $(x_n)$ be a sequence in $X$.
 
 \textbf{Case 2:} Assume $A$ is infinite. By (2), $A$ has a limit point $x \in X$.
 
-Construct a subsequence converging to $x$: Since $x$ is a limit point of $A$, every neighborhood of $x$ contains infinitely many points of $A$. (If some $B(x, \varepsilon)$ contained only finitely many points of $A$, then $B(x, \varepsilon/2)$ would contain at most those same points, but a limit point requires every neighborhood to intersect $A \setminus \{x\}$.)
+Construct a subsequence converging to $x$: Since $x$ is a limit point of $A$, every neighborhood of $x$ contains infinitely many points of $A$. (If some $B(x, \varepsilon)$ contained only finitely many points $a_1, \ldots, a_m$ of $A \setminus \{x\}$, then for $0 < r \le \varepsilon$ with $r < d(x, a_j)$ for all $j$, the ball $B(x, r)$ would miss $A \setminus \{x\}$, but a limit point requires every neighborhood to intersect $A \setminus \{x\}$.)
 
 In particular, $B(x, 1/i) \cap (A \setminus \{x\})$ is infinite for each $i$. So we can inductively choose:
 \begin{itemize}
@@ -3285,14 +3285,14 @@ The $T_1$ axiom (singletons are closed) is \emph{built into} the definitions of 
 \end{rembox}
 
 \begin{rembox}[Why the Separation Hierarchy Matters]
-The separation axioms answer a fundamental question: \emph{how well can we separate things with open sets?} The hierarchy $T_1 \Rightarrow$ Hausdorff $\Rightarrow$ Regular $\Rightarrow$ Normal represents increasing levels of ``niceness'':
+The separation axioms answer a fundamental question: \emph{how well can we separate things with open sets?} The hierarchy $T_1 \Leftarrow$ Hausdorff $\Leftarrow$ Regular $\Leftarrow$ Normal represents increasing levels of ``niceness'':
 \begin{itemize}
     \item $T_1$: points are closed (minimal decency).
     \item Hausdorff: distinct points have disjoint neighborhoods (unique limits).
     \item Regular: a point and a closed set can be separated (stronger local behavior).
     \item Normal: two disjoint closed sets can be separated (the threshold for powerful theorems).
 \end{itemize}
-Normality is the gateway to the deepest results in point-set topology: \textbf{Urysohn's Lemma} (disjoint closed sets can be separated by a continuous function $f: X \to [0,1]$) and the \textbf{Tietze Extension Theorem} (continuous functions on closed subsets extend to the whole space). These, in turn, lead to the Urysohn metrization theorem. The examples below show these implications are strict---each level genuinely adds power.
+Normality is the gateway to the deepest results in point-set topology: \textbf{Urysohn's Lemma} (disjoint closed sets can be separated by a continuous function $f: X \to [0,1]$) and the \textbf{Tietze Extension Theorem} (continuous functions on closed subsets extend to the whole space). These, in turn, lead to the Urysohn metrization theorem. These implications are strict---each level genuinely adds power: the cofinite topology on $\mathbb{R}$ is $T_1$ but not Hausdorff (Section~8), $\mathbb{R}_K$ is Hausdorff but not regular (example below), and $\mathbb{R}_\ell \times \mathbb{R}_\ell$ is regular but not normal (a standard example, Munkres \S31; not proved here).
 \end{rembox}
 
 \begin{thmbox}[Separation Hierarchy]
@@ -4575,7 +4575,7 @@ If $h: X \to Y$ is a homeomorphism, then $h_*: \pi_1(X, x_0) \to \pi_1(Y, h(x_0)
 \begin{proof}
 Let $k = h^{-1}$. Then $k \circ h = \operatorname{id}_X$ and $h \circ k = \operatorname{id}_Y$. By functoriality:
 \[k_* \circ h_* = (k \circ h)_* = (\operatorname{id}_X)_* = \operatorname{id}_{\pi_1(X, x_0)}\]
-and similarly $h_* \circ k_* = \operatorname{id}_{\pi_1(Y, y_0)}$. So $h_*$ and $k_*$ are inverses, hence $h_*$ is an isomorphism.
+and similarly $h_* \circ k_* = \operatorname{id}_{\pi_1(Y, h(x_0))}$. So $h_*$ and $k_*$ are inverses, hence $h_*$ is an isomorphism.
 \end{proof}
 
 \begin{rembox}
@@ -5691,14 +5691,14 @@ This is the same formula as for $\mathbb{R}^2 \setminus \{0\}$ restricted to $\|
 $\mathbb{R}^2 \setminus \{p, q\}$ (two points removed) deformation retracts onto a figure-eight space (wedge of two circles). So $\pi_1(\mathbb{R}^2 \setminus \{p, q\}) \cong F_2$ (the free group on two generators).
 \end{exbox}
 
-\begin{exbox}[Doubly punctured plane]
-The plane with two points removed deformation retracts onto both a figure-eight space and a ``theta'' space ($\Theta$). Similarly, neither the figure-eight nor the theta space is a deformation retract of the other, but they have isomorphic fundamental groups (both $\cong F_2$).
+\begin{exbox}[Doubly punctured plane: two deformation retracts]
+The plane with two points removed deformation retracts onto both a figure-eight space and a ``theta'' space ($\Theta$). However, neither the figure-eight nor the theta space is a deformation retract of the other, but they have isomorphic fundamental groups (both $\cong F_2$).
 
 This illustrates that \textbf{isomorphic $\pi_1$ does not imply deformation retract}---the relationship is one-directional.
 \end{exbox}
 
 \begin{exbox}[{$S^n$ is a deformation retract of $\mathbb{R}^{n+1} \setminus \{0\}$}]
-Via $H(x,t) = (1-t)x + tx/\|x\|$ (proved in the previous theorem). So $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) \cong \pi_1(S^n)$.
+Via $H(x,t) = (1-t)x + tx/\|x\|$ (proved in Theorem 26.2). So $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) \cong \pi_1(S^n)$.
 
 For $n \geq 2$: $\pi_1(S^n) = 0$ (simply connected), so $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) = 0$.
 
@@ -5809,7 +5809,7 @@ The punctured torus result is used in the van Kampen computation of $\pi_1(T^2)$
 
 \textbf{Why other loops can't be treated this way:} The loop $a$ (going around the ``hole'' of the torus) \emph{crosses} an identified edge --- it enters through the left side and exits through the right side. When you unglue, it breaks into a path from the left edge to the right edge, not a loop. You cannot make $a$ small enough to avoid the edges, because crossing the edge \emph{is} what the loop does. So $a$ and $b$ are generators of the figure eight, not expressible as boundary words.
 
-\textbf{Connection to van Kampen:} Removing $q$ ``frees'' $aba^{-1}b^{-1}$ from being trivial: in $T^2$ it contracts to $q$, but in $T^2 \setminus \{q\}$ the contraction is blocked. Gluing the disk back (the van Kampen computation, \S 29) forces $aba^{-1}b^{-1} = e$, which is exactly $ab = ba$, recovering $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$.
+\textbf{Connection to van Kampen:} Removing $q$ ``frees'' $aba^{-1}b^{-1}$ from being trivial: in $T^2$ it contracts to $pt$, but in $T^2 \setminus \{pt\}$ the contraction is blocked. Gluing the disk back (the van Kampen computation, \S 29) forces $aba^{-1}b^{-1} = e$, which is exactly $ab = ba$, recovering $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$.
 \end{rembox}
 
 \subsection{Homotopy Equivalence}
@@ -5944,13 +5944,15 @@ Let $g: Y \to X$ be a homotopy inverse of $f$, so $f \circ g \simeq \operatornam
 
 Consider the chain $X \xrightarrow{f} Y \xrightarrow{g} X \xrightarrow{f} Y$.
 
-\textbf{$f_*$ is surjective:} Since $f \circ g \simeq \operatorname{id}_Y$, the general lemma gives
+\textbf{$f_*$ is surjective (at another basepoint):} Let $y_0 = f(x_0)$ and $x_1 = g(y_0)$. Since $f \circ g \simeq \operatorname{id}_Y$, the general lemma (at the basepoint $y_0$) gives
 \[(\operatorname{id}_Y)_* = \hat{\alpha} \circ (f \circ g)_* = \hat{\alpha} \circ f_* \circ g_*\]
-for some path $\alpha$. Since $(\operatorname{id}_Y)_* = \operatorname{id}$ and $\hat{\alpha}$ is an isomorphism, $f_* \circ g_*$ is an isomorphism. In particular, $f_*$ is surjective (it has a right inverse up to isomorphism).
+for some path $\alpha$. Since $(\operatorname{id}_Y)_* = \operatorname{id}$ and $\hat{\alpha}$ is an isomorphism, $f_* \circ g_*$ is an isomorphism. In particular, $f_*$ is surjective (it has a right inverse up to isomorphism), but as a map $\pi_1(X, x_1) \to \pi_1(Y, f(x_1))$, not at $x_0$. What we keep from this step: $g_*: \pi_1(Y, y_0) \to \pi_1(X, x_1)$ is injective.
 
 \textbf{$f_*$ is injective:} Since $g \circ f \simeq \operatorname{id}_X$, the general lemma gives
 \[(\operatorname{id}_X)_* = \hat{\beta} \circ (g \circ f)_* = \hat{\beta} \circ g_* \circ f_*\]
-for some path $\beta$. So $g_* \circ f_*$ is an isomorphism, hence $f_*$ is injective (it has a left inverse up to isomorphism).
+for some path $\beta$. So $g_* \circ f_*$ is an isomorphism, hence $f_*: \pi_1(X, x_0) \to \pi_1(Y, y_0)$ is injective (it has a left inverse up to isomorphism), and $g_*: \pi_1(Y, y_0) \to \pi_1(X, x_1)$ is surjective.
+
+\textbf{Basepoint change:} Thus $g_*: \pi_1(Y, y_0) \to \pi_1(X, x_1)$ is bijective, and $f_* = g_*^{-1} \circ \hat{\beta}^{-1}$ is an isomorphism $\pi_1(X, x_0) \to \pi_1(Y, y_0)$ (Munkres 58.7).
 \end{proof}
 
 \begin{rembox}[Deformation Retract as a Special Case]
@@ -6124,9 +6126,9 @@ This also explains why the no-retraction theorem for $B^{n+1} \to S^n$ cannot be
 \begin{exbox}[{Wedge of Two Spheres is Simply Connected}]
 The space $X = S^2 \vee S^2$ (two copies of $S^2$ glued at a single point) has $\pi_1(X) = 0$.
 
-\textbf{Topology of $X$.} The space $X$ inherits the quotient topology from $S_1 \sqcup S_2$ under the identification $p_1 \sim p_2$: a set $W \subseteq X$ is open if and only if $W \cap S_1$ is open in $S_1$ and $W \cap S_2$ is open in $S_2$. The natural inclusions $S_1 \hookrightarrow X$ and $S_2 \hookrightarrow X$ are embeddings, and $X$ is Hausdorff (since $S_1$ and $S_2$ are compact Hausdorff and meet at a single point).
+\textbf{Topology of $X$.} The space $X$ inherits the quotient topology from $S_1 \sqcup S_2$ (the two copies of $S^2$) under the identification $p_1 \sim p_2$ of a point $p_1 \in S_1$ with a point $p_2 \in S_2$; write $p \in X$ for the resulting junction point. Thus a set $W \subseteq X$ is open if and only if $W \cap S_1$ is open in $S_1$ and $W \cap S_2$ is open in $S_2$. The natural inclusions $S_1 \hookrightarrow X$ and $S_2 \hookrightarrow X$ are embeddings, and $X$ is Hausdorff (since $S_1$ and $S_2$ are compact Hausdorff and meet at a single point).
 
-\textbf{Setup: remove one point from each side.} Choose points $q_1 \in S_1 \setminus \{p\}$ and $q_2 \in S_2 \setminus \{p\}$. Define:
+\textbf{Setup: remove one point from each side.} Let $q_1 = -p_1 \in S_1$ and $q_2 = -p_2 \in S_2$ be the antipodes of the junction point (so $q_1, q_2 \neq p$). Define:
 \[U = X \setminus \{q_2\} = S_1 \cup (S_2 \setminus \{q_2\}), \qquad V = X \setminus \{q_1\} = (S_1 \setminus \{q_1\}) \cup S_2.\]
 Then $X = U \cup V$. We verify the three hypotheses of the corollary.
 
@@ -6134,7 +6136,7 @@ Then $X = U \cup V$. We verify the three hypotheses of the corollary.
 
 \textbf{2. $U$ and $V$ are simply connected.} We show $U$ deformation retracts onto $S_1 \cong S^2$.
 
-By stereographic projection from $q_2$, the punctured sphere $S_2 \setminus \{q_2\} \cong \mathbb{R}^2$, which is contractible. Let $r_t: S_2 \setminus \{q_2\} \to S_2 \setminus \{q_2\}$ be a deformation retraction onto $\{p\}$: explicitly, in the $\mathbb{R}^2$ coordinates, this is the straight-line homotopy $r_t(x) = (1-t)x + t \cdot 0$ toward the origin (which corresponds to $p$ under stereographic projection from $q_2$). Note $r_0 = \operatorname{id}$, $r_1(x) = p$ for all $x$, and $r_t(p) = p$ for all $t$.
+By stereographic projection from $q_2$, the punctured sphere $S_2 \setminus \{q_2\} \cong \mathbb{R}^2$, which is contractible. Let $r_t: S_2 \setminus \{q_2\} \to S_2 \setminus \{q_2\}$ be a deformation retraction onto $\{p\}$: explicitly, in the $\mathbb{R}^2$ coordinates, this is the straight-line homotopy $r_t(x) = (1-t)x + t \cdot 0$ toward the origin (which corresponds to $p$ under stereographic projection from $q_2$, since $p = -q_2$ in $S_2$). Note $r_0 = \operatorname{id}$, $r_1(x) = p$ for all $x$, and $r_t(p) = p$ for all $t$.
 
 Define $F: U \times I \to U$ by:
 \[F(x, t) = \begin{cases} x & \text{if } x \in S_1, \\ r_t(x) & \text{if } x \in S_2 \setminus \{q_2\}. \end{cases}\]
@@ -6183,8 +6185,6 @@ $S^1 \vee S^1$ & def.\ retract onto $S^1$ & def.\ retract onto $S^1$ & $F_2$ \\
 \end{center}
 The last row requires van Kampen to determine that $\pi_1 \cong \mathbb{Z} * \mathbb{Z} = F_2$ (not just generated by two copies of $\mathbb{Z}$).
 \end{rembox}
-
-\textit{Reference: Munkres Ch 9 \S 60}
 
 % ============================================================================
 \section{Fundamental Group of Some Surfaces}
@@ -6602,7 +6602,7 @@ This is the most commonly used case: decompose $X$ into two open pieces with sim
 
 \begin{exbox}[{Simply Connected Spheres via van Kampen}]
 \textbf{Claim:} $\pi_1(S^n) = 0$ for $n \geq 2$.
-Let $U = S^n \setminus \{N\}$ and $V = S^n \setminus \{S\}$ (remove north and south poles). Then $S^n = U \cup V$, both open. By stereographic projection, $U \cong \mathbb{R}^n \cong V$, so $\pi_1(U) = \pi_1(V) = 0$. The intersection $U \cap V = S^n \setminus \{N, S\}$ deformation retracts onto the equator $S^{n-1}$, which is path-connected for $n \geq 2$.
+Let $U = S^n \setminus \{P\}$ and $V = S^n \setminus \{S\}$ (remove the north pole $P$ and the south pole $S$). Then $S^n = U \cup V$, both open. By stereographic projection, $U \cong \mathbb{R}^n \cong V$, so $\pi_1(U) = \pi_1(V) = 0$. The intersection $U \cap V = S^n \setminus \{P, S\}$ deformation retracts onto the equator $S^{n-1}$, which is path-connected for $n \geq 2$.
 
 By van Kampen: $\pi_1(S^n) \cong 0 * 0 / N \cong 0$.
 
@@ -6807,7 +6807,7 @@ The inclusion maps:
     \item $i_2: \pi_1(U \cap V) \to \pi_1(V) \cong \langle a_1, \ldots, a_k \rangle$ sends $[c] \mapsto [\pi \circ c] = [w]$ (the boundary loop maps to the word $w$).
 \end{itemize}
 By van Kampen: the relation is $i_1(c) \cdot i_2(c)^{-1} = e \cdot w^{-1} = w^{-1}$, i.e., $w = e$. Therefore:
-\[\pi_1(X) \cong \frac{\pi_1(U) * \pi_1(V)}{N} \cong \frac{0 * F_k}{\langle w \rangle} \cong \frac{F_k}{\langle w \rangle} = \langle\, a_1, \ldots, a_k \mid w \,\rangle.\]
+\[\pi_1(X) \cong \frac{\pi_1(U) * \pi_1(V)}{N} \cong \frac{0 * F_k}{\langle\!\langle w \rangle\!\rangle} \cong \frac{F_k}{\langle\!\langle w \rangle\!\rangle} = \langle\, a_1, \ldots, a_k \mid w \,\rangle.\]
 \end{proof}
 
 \begin{exbox}[Surface Fundamental Groups]

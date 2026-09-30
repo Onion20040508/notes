@@ -158,7 +158,7 @@ tags: [topology, math590]
 
 > [!example] Example §29.1: Simply Connected Spheres via van Kampen
 > **Claim:** $\pi_1(S^n) = 0$ for $n \geq 2$.
-> Let $U = S^n \setminus \{N\}$ and $V = S^n \setminus \{S\}$ (remove north and south poles). Then $S^n = U \cup V$, both open. By [[Topology §27 The Fundamental Group of Sⁿ#^pf-27-3|stereographic projection]], $U \cong \mathbb{R}^n \cong V$, so $\pi_1(U) = \pi_1(V) = 0$. The intersection $U \cap V = S^n \setminus \{N, S\}$ deformation retracts onto the equator $S^{n-1}$, which is path-connected for $n \geq 2$.
+> Let $U = S^n \setminus \{P\}$ and $V = S^n \setminus \{S\}$ (remove the north pole $P$ and the south pole $S$). Then $S^n = U \cup V$, both open. By [[Topology §27 The Fundamental Group of Sⁿ#^pf-27-3|stereographic projection]], $U \cong \mathbb{R}^n \cong V$, so $\pi_1(U) = \pi_1(V) = 0$. The intersection $U \cap V = S^n \setminus \{P, S\}$ deformation retracts onto the equator $S^{n-1}$, which is path-connected for $n \geq 2$.
 >
 > By [[Seifert–van Kampen Theorem|van Kampen]]: $\pi_1(S^n) \cong 0 * 0 / N \cong 0$.
 >
@@ -370,7 +370,7 @@ tags: [topology, math590]
 > By van Kampen: the relation is $i_1(c) \cdot i_2(c)^{-1} = e \cdot w^{-1} = w^{-1}$, i.e., $w = e$. Therefore:
 >
 > $$
-> \pi_1(X) \cong \frac{\pi_1(U) * \pi_1(V)}{N} \cong \frac{0 * F_k}{\langle w \rangle} \cong \frac{F_k}{\langle w \rangle} = \langle\, a_1, \ldots, a_k \mid w \,\rangle.
+> \pi_1(X) \cong \frac{\pi_1(U) * \pi_1(V)}{N} \cong \frac{0 * F_k}{\langle\!\langle w \rangle\!\rangle} \cong \frac{F_k}{\langle\!\langle w \rangle\!\rangle} = \langle\, a_1, \ldots, a_k \mid w \,\rangle.
 > $$
 
 ^pf-29-3
