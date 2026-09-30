@@ -6,24 +6,9 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "[type:definition]",
-      "color": {
-        "a": 1,
-        "rgb": 14074460
-      }
-    },
-    {
-      "query": "[type:theorem]",
-      "color": {
-        "a": 1,
-        "rgb": 6058198
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": false,
-  "showArrow": true,
+  "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
@@ -32,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.40321867093399927,
-  "close": true
+  "scale": 0.12998304651121897,
+  "close": false
 }
