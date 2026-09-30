@@ -7,7 +7,7 @@ tags: [multivariable-analysis, math452]
 ---
 ← [[Multivariable Analysis §18 Surface Integrals]] · ↑ [[Multivariable Analysis — 6 Surface Integrals and the Classical Theorems]] · [[Multivariable Analysis §20 Stokes' Theorem in ℝ³]] →
 
-In Cartesian coordinates, the Laplacian ([[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]]) is $\Delta u = u_{xx} + u_{yy} + u_{zz}$. What is the corresponding expression in spherical coordinates? Computing this by brute-force [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]] is extremely tedious (it requires second derivatives of the coordinate transformation). The [[Multivariable Analysis §18 Surface Integrals#^thm-18-2|Divergence Theorem]] provides a much cleaner derivation.
+In Cartesian coordinates, the Laplacian ([[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]]) is $\Delta u = u_{xx} + u_{yy} + u_{zz}$. What is the corresponding expression in spherical coordinates? Computing this by brute-force [[Multivariable Chain Rule|chain rule]] is extremely tedious (it requires second derivatives of the coordinate transformation). The [[Divergence Theorem in ℝ³|Divergence Theorem]] provides a much cleaner derivation.
 
 ![[m452-19-1.svg]]
 *The spherical coordinate system used in §19: $r$ is the distance from the origin, $\theta$ the polar angle from the $z$-axis, $\psi$ the azimuthal angle in the $xy$-plane. The Laplacian's spherical form — and the $\sin\theta$ in the volume element — both come from how these coordinates distort lengths, exactly the Gram matrix computation of [[Multivariable Analysis §18 Surface Integrals#^def-18-4|§18]].*
@@ -34,7 +34,7 @@ Here $u(x,y,z)$ is the function in Cartesian coordinates and $v(\psi, \theta, r)
 
 ## The Spherical Brick
 
-Since $\Delta u = \nabla \cdot (\nabla u)$, the Divergence Theorem ([[Multivariable Analysis §18 Surface Integrals#^thm-18-2|Theorem §18.2]]) says: for any region $V$,
+Since $\Delta u = \nabla \cdot (\nabla u)$, the Divergence Theorem ([[Divergence Theorem in ℝ³|Theorem §18.2]]) says: for any region $V$,
 
 $$
 \iiint_V \Delta u \, dV = \iint_{\partial V} \nabla u \cdot \hat{n} \, dS.
@@ -146,7 +146,7 @@ Dividing both sides by $r^2\sin\theta \, dr \, d\theta \, d\psi$:
 
 ^thm-19-1
 
-*Uses:* [[Multivariable Analysis §18 Surface Integrals#^thm-18-2|§18.2]], [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]], [[Multivariable Analysis §15 Multivariable Integration#^ex-15-6|Ex. §15.6]], [[Single Variable Analysis §28 Basic Properties of the Derivative#^def-28-1|451 §28.1]]
+*Uses:* [[Divergence Theorem in ℝ³|§18.2]], [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]], [[Multivariable Analysis §15 Multivariable Integration#^ex-15-6|Ex. §15.6]], [[Single Variable Analysis §28 Basic Properties of the Derivative#^def-28-1|451 §28.1]]
 
 > [!remark]- Connections
 > - The volume factor $r^2\sin\theta$ is the Jacobian of [[Multivariable Analysis §15 Multivariable Integration#^ex-15-6|Spherical Coordinates in ℝ³]]; the scale factors are the square roots of the diagonal of the Gram matrix ([[Multivariable Analysis §18 Surface Integrals#^def-18-4|Def. §18.4]]) of the coordinate map.

@@ -104,8 +104,8 @@ Recall the single-variable [[Single Variable Analysis §28 Basic Properties of t
 
 > [!remark]- Connections
 > - MATH 451 version: [[Single Variable Analysis §28 Basic Properties of the Derivative#^thm-28-3|Chain Rule (451 §28.3)]].
-> - Under differentiability hypotheses only: [[Multivariable Analysis §6 Differentiability#^thm-6-9|Theorem §6.9]]; continuous partials give differentiability by [[Multivariable Analysis §6 Differentiability#^thm-6-2|Theorem §6.2]].
-> - The chain rule is the engine of the [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-1|Implicit]] and [[Multivariable Analysis §13 The Inverse Function Theorem#^thm-13-2|Inverse Function Theorems]].
+> - Under differentiability hypotheses only: [[Multivariable Analysis §6 Differentiability#^thm-6-9|Theorem §6.9]]; continuous partials give differentiability by [[Continuous Partials Imply Differentiability|Theorem §6.2]].
+> - The chain rule is the engine of the [[Implicit Function Theorem|Implicit]] and [[Inverse Function Theorem (several variables)|Inverse Function Theorems]].
 
 > [!remark] Remark: Matrix Form
 > In matrix notation, the chain rule becomes:
@@ -123,7 +123,7 @@ Recall the single-variable [[Single Variable Analysis §28 Basic Properties of t
 
 ## The Chain Rule in Matrix and Operator Form
 
-The chain rule has an elegant formulation using matrices and differential operators. This perspective is essential for understanding the [[Multivariable Analysis §13 The Inverse Function Theorem#^thm-13-2|Inverse Function Theorem]].
+The chain rule has an elegant formulation using matrices and differential operators. This perspective is essential for understanding the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]].
 
 ### Setup
 
@@ -191,7 +191,7 @@ $$
 \end{aligned}
 $$
 
-This is exactly the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]]!
+This is exactly the [[Multivariable Chain Rule|chain rule]]!
 
 ### For Multiple Output Functions
 
@@ -294,7 +294,7 @@ $$
 > [!remark] Remark: Warning: Differentiability of Composition
 > **Question:** If $f$ is differentiable and $\varphi, \psi$ are differentiable, is the composition $g = f \circ (\varphi, \psi)$ necessarily differentiable?
 >
-> **Answer:** Not automatically! [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|The theorem]] requires **continuity of the partial derivatives**, not just their existence. Without this, the composition may fail to be differentiable even if all component functions are.
+> **Answer:** Not automatically! [[Multivariable Chain Rule|The theorem]] requires **continuity of the partial derivatives**, not just their existence. Without this, the composition may fail to be differentiable even if all component functions are.
 
 ^rem-10-5
 

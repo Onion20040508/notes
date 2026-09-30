@@ -67,7 +67,7 @@ $$
 g(x(t), y(t)) = 0 \quad \text{for all } t.
 $$
 
-Differentiating with respect to $t$ (by the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]]):
+Differentiating with respect to $t$ (by the [[Multivariable Chain Rule|chain rule]]):
 
 $$
 \frac{d}{dt}[g(x(t), y(t))] = g_x \cdot x'(t) + g_y \cdot y'(t) = \nabla g \cdot (x'(t), y'(t)) = 0.
@@ -83,7 +83,7 @@ Now consider $F(t) = f(x(t), y(t))$, the value of $f$ along the constraint curve
 
 If $f$ has a max/min at $t = t_0$ along the curve, then $F'(t_0) = 0$ (by Fermat's theorem, [[Single Variable Analysis §29 The Mean Value Theorem#^thm-29-1|451 §29.1]]).
 
-By the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]]:
+By the [[Multivariable Chain Rule|chain rule]]:
 
 $$
 F'(t_0) = f_x \cdot x'(t_0) + f_y \cdot y'(t_0) = \nabla f \cdot (x'(t_0), y'(t_0)) = 0.
@@ -120,7 +120,7 @@ $$
 ^thm-14-2
 
 > [!proof]+ Proof
-> We give a proof using the [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-1|Implicit Function Theorem]].
+> We give a proof using the [[Implicit Function Theorem|Implicit Function Theorem]].
 >
 > Since $\nabla g(x_0, y_0) \neq \mathbf{0}$, at least one of $g_x$ or $g_y$ is nonzero. WLOG, assume $g_y(x_0, y_0) \neq 0$.
 >
@@ -142,7 +142,7 @@ $$
 >
 > By Fermat's theorem ([[Single Variable Analysis §29 The Mean Value Theorem#^thm-29-1|451 §29.1]]): $F'(x_0) = 0$.
 >
-> Computing $F'$ by the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]]:
+> Computing $F'$ by the [[Multivariable Chain Rule|chain rule]]:
 >
 > $$
 > F'(x) = f_x(x, \alpha(x)) + f_y(x, \alpha(x)) \cdot \alpha'(x) = f_x - f_y \cdot \frac{g_x}{g_y}.
@@ -158,7 +158,7 @@ $$
 
 ^pf-14-2
 
-*Uses:* [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-1|§12.1]], [[Single Variable Analysis §29 The Mean Value Theorem#^thm-29-1|451 §29.1]], [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|§10.2]]
+*Uses:* [[Implicit Function Theorem|§12.1]], [[Single Variable Analysis §29 The Mean Value Theorem#^thm-29-1|451 §29.1]], [[Multivariable Chain Rule|§10.2]]
 
 > [!remark]- Connections
 > - Generalized to several constraints in $\mathbb{R}^n$: [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-3|Theorem §14.3]].
@@ -197,7 +197,7 @@ $$
 
 > [!remark]- Connections
 > - The linear algebra behind it: $\nabla f$ is orthogonal to the tangent space of the constraint set, and that orthogonal complement ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]]) has dimension $k$ ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]]), so it is spanned by the $k$ independent constraint gradients.
-> - The case $k = 1$, $n = 2$ is [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-2|Theorem §14.2]]; the case $k = 2$, $n = 4$ is derived below.
+> - The case $k = 1$, $n = 2$ is [[Method of Lagrange Multipliers|Theorem §14.2]]; the case $k = 2$, $n = 4$ is derived below.
 
 > [!remark] Remark: Why Multiple Constraints?
 > In $\mathbb{R}^3$, a single constraint $g(x, y, z) = 0$ defines a surface (2D object). To get a curve (1D object), we need two constraints.
@@ -244,7 +244,7 @@ $$
 
 **Step 1: Set up the Lagrange equations.**
 
-The key condition is $\nabla f \parallel \nabla \phi$, i.e., $\nabla f = \lambda \nabla \phi$ ([[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-2|Theorem §14.2]]).
+The key condition is $\nabla f \parallel \nabla \phi$, i.e., $\nabla f = \lambda \nabla \phi$ ([[Method of Lagrange Multipliers|Theorem §14.2]]).
 
 $$
 \begin{aligned}
@@ -303,7 +303,7 @@ $$
 \det \begin{pmatrix} \phi_z & \phi_t \\ \psi_z & \psi_t \end{pmatrix} \neq 0.
 $$
 
-By IFT ([[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|§12.2]]; compare the two-step argument of [[Multivariable Analysis §13 The Inverse Function Theorem#^thm-13-2|§13.2]]), we can locally solve for $z = g(x, y)$ and $t = h(x, y)$ such that:
+By IFT ([[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|§12.2]]; compare the two-step argument of [[Inverse Function Theorem (several variables)|§13.2]]), we can locally solve for $z = g(x, y)$ and $t = h(x, y)$ such that:
 
 $$
 \phi(x, y, g(x,y), h(x,y)) = 0, \qquad \psi(x, y, g(x,y), h(x,y)) = 0.
@@ -332,7 +332,7 @@ $$
 \frac{\partial F}{\partial x} = 0, \qquad \frac{\partial F}{\partial y} = 0.
 $$
 
-**Computing the derivatives:** By [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]],
+**Computing the derivatives:** By [[Multivariable Chain Rule|chain rule]],
 
 $$
 \begin{aligned}
@@ -449,7 +449,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 > H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{pmatrix}
 > $$
 >
-> evaluated at $(x_0, y_0)$. By [[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|Schwarz–Clairaut]], $H$ is [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-11|symmetric]]: $f_{xy} = f_{yx}$.
+> evaluated at $(x_0, y_0)$. By [[Schwarz–Clairaut Theorem|Schwarz–Clairaut]], $H$ is [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-11|symmetric]]: $f_{xy} = f_{yx}$.
 
 ^def-14-2
 
@@ -457,7 +457,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 > - $H$ is the matrix of a symmetric bilinear form ([[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]], [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR 9.9]]); made precise in [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-7|The Second Total Derivative Is the Hessian]] (§22.7).
 
 > [!remark] Remark: The Hessian as the Second Total Derivative
-> Just as the gradient $\nabla f$ is the first total derivative — a linear map $Df_{\mathbf{p}}: \mathbf{v} \mapsto \nabla f \cdot \mathbf{v}$ that captures the first-order behavior of $f$ ([[Multivariable Analysis §6 Differentiability|§6]]–[[Multivariable Analysis §8 The Differential|§8]]) — the Hessian is the *second* total derivative: a [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-1|bilinear form]] $D^2f_{\mathbf{p}}: (\mathbf{u}, \mathbf{v}) \mapsto \mathbf{u}^T H_f \mathbf{v}$ that captures the second-order behavior. The Taylor expansion from [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-2|§9]] says exactly this (where $\mathbf{p} \in \mathbb{R}^n$ is the base point and $\mathbf{h} \in \mathbb{R}^n$ is the increment):
+> Just as the gradient $\nabla f$ is the first total derivative — a linear map $Df_{\mathbf{p}}: \mathbf{v} \mapsto \nabla f \cdot \mathbf{v}$ that captures the first-order behavior of $f$ ([[Multivariable Analysis §6 Differentiability|§6]]–[[Multivariable Analysis §8 The Differential|§8]]) — the Hessian is the *second* total derivative: a [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-1|bilinear form]] $D^2f_{\mathbf{p}}: (\mathbf{u}, \mathbf{v}) \mapsto \mathbf{u}^T H_f \mathbf{v}$ that captures the second-order behavior. The Taylor expansion from [[Multivariable Taylor's Theorem|§9]] says exactly this (where $\mathbf{p} \in \mathbb{R}^n$ is the base point and $\mathbf{h} \in \mathbb{R}^n$ is the increment):
 >
 > $$
 > f(\mathbf{p} + \mathbf{h}) = f(\mathbf{p}) + \underbrace{Df_{\mathbf{p}}(\mathbf{h})}_{\text{linear: gradient}} + \frac{1}{2}\underbrace{D^2f_{\mathbf{p}}(\mathbf{h}, \mathbf{h})}_{\text{bilinear: Hessian}} + o(|\mathbf{h}|^2).
@@ -499,7 +499,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 *The three nondegenerate critical point types, classified by the Hessian: both eigenvalues positive (bowl, local min), both negative (dome, local max), mixed signs (saddle). The second derivative test of §14 reads these signs from $f_{xx}$ and $\det H = f_{xx}f_{yy} - f_{xy}^2$.*
 
 > [!proof]+ Proof sketch
-> By Taylor's theorem (single-variable version applied to $F(t) = f(x_0 + th, y_0 + tk)$; [[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|451 §31.2]], as in [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-2|Theorem §9.2]]):
+> By Taylor's theorem (single-variable version applied to $F(t) = f(x_0 + th, y_0 + tk)$; [[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|451 §31.2]], as in [[Multivariable Taylor's Theorem|Theorem §9.2]]):
 >
 > $$
 > f(x_0 + h, y_0 + k) = f(x_0, y_0) + \underbrace{f_x h + f_y k}_{= 0} + \frac{1}{2}\left( f_{xx} h^2 + 2f_{xy} hk + f_{yy} k^2 \right)\Big|_{(x_0 + \theta h, y_0 + \theta k)}
@@ -525,7 +525,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 
 ^pf-14-4
 
-*Uses:* [[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|451 §31.2]], [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-1|§9.1]], [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-2|§9.2]], [[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|§5.1]], [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-3|Def. §14.3]], [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-1|Def. §14.1]]
+*Uses:* [[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|451 §31.2]], [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-1|§9.1]], [[Multivariable Taylor's Theorem|§9.2]], [[Schwarz–Clairaut Theorem|§5.1]], [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-3|Def. §14.3]], [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-1|Def. §14.1]]
 
 > [!remark]- Connections
 > - MATH 451 relative: the one-variable Taylor expansion with Lagrange remainder ([[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|451 §31.2]]) is the whole engine; in 1D the Hessian is just $f''(x_0)$.
@@ -568,7 +568,7 @@ For the Hessian $H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{xy} & f_{yy} \end{pma
 >
 > **Stage 1: Find candidates (Necessary Conditions).**
 >
-> The Lagrange condition $\nabla f = \lambda \nabla g$ (constrained, [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-2|§14.2]]) or $\nabla f = \mathbf{0}$ (unconstrained, [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-1|§14.1]]) is a **necessary** condition for extrema:
+> The Lagrange condition $\nabla f = \lambda \nabla g$ (constrained, [[Method of Lagrange Multipliers|§14.2]]) or $\nabla f = \mathbf{0}$ (unconstrained, [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-1|§14.1]]) is a **necessary** condition for extrema:
 >
 > $$
 > \text{If } (x_0, y_0) \text{ is an extremum} \quad \Longrightarrow \quad (x_0, y_0) \text{ satisfies the necessary condition.}
@@ -580,7 +580,7 @@ For the Hessian $H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{xy} & f_{yy} \end{pma
 >
 > Among the candidates, we determine which are actually maxima, minima, or neither using **sufficient** conditions:
 > - **Comparison method:** If the domain is compact and $f$ is continuous, EVT guarantees a max and min exist ([[Extreme Value Theorem]]; [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Heine–Borel Theorem|Heine–Borel]]). Evaluate $f$ at all candidates; the largest value is the max, smallest is the min.
-> - **Second-order test (Hessian):** Check definiteness of the Hessian (unconstrained, [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-4|§14.4]]) or bordered Hessian (constrained) to classify each candidate.
+> - **Second-order test (Hessian):** Check definiteness of the Hessian (unconstrained, [[Second Derivative Test in Several Variables|§14.4]]) or bordered Hessian (constrained) to classify each candidate.
 >
 > **Summary:**
 >

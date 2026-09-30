@@ -7,7 +7,7 @@ tags: [multivariable-analysis, math452]
 ---
 ← [[Multivariable Analysis §19 The Laplacian in Spherical Coordinates]] · ↑ [[Multivariable Analysis — 6 Surface Integrals and the Classical Theorems]] · [[Multivariable Analysis §21 Introduction to Differential Forms]] →
 
-Green's theorem ([[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Section 16]]) relates a line integral around a closed curve $\gamma$ to a double integral over the enclosed *flat* region $D \subseteq \mathbb{R}^2$. Stokes' theorem generalizes this: it relates a line integral around the boundary $\partial S$ of a *curved* surface $S \subseteq \mathbb{R}^3$ to a surface integral over $S$.
+Green's theorem ([[Green's Theorem|Section 16]]) relates a line integral around a closed curve $\gamma$ to a double integral over the enclosed *flat* region $D \subseteq \mathbb{R}^2$. Stokes' theorem generalizes this: it relates a line integral around the boundary $\partial S$ of a *curved* surface $S \subseteq \mathbb{R}^3$ to a surface integral over $S$.
 
 ## Statement
 
@@ -25,8 +25,8 @@ Green's theorem ([[Multivariable Analysis §16 Line Integrals and Green's Theore
 ^thm-20-1
 
 > [!remark]- Connections
-> - The flat case is [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-3|Green's Theorem as 2D Stokes' Theorem]]; the proof below reduces to [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Green's Theorem]] on the parameter domain.
-> - In forms language: $d$ on 1-forms gives the curl ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-3|Prop. §22.3]]), and the theorem is a case of the [[Multivariable Analysis §23 The Generalized Stokes' Theorem#^thm-23-1|Generalized Stokes' Theorem]].
+> - The flat case is [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-3|Green's Theorem as 2D Stokes' Theorem]]; the proof below reduces to [[Green's Theorem|Green's Theorem]] on the parameter domain.
+> - In forms language: $d$ on 1-forms gives the curl ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-3|Prop. §22.3]]), and the theorem is a case of the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]].
 
 > [!remark] Remark: Orientation Convention
 > The boundary orientation is determined by the surface orientation:
@@ -58,7 +58,7 @@ $$
 \frac{d\Gamma^*}{dt} = (x', \, y', \, h_x x' + h_y y')
 $$
 
-by the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]] (the third component uses $\frac{d}{dt}h(x(t), y(t)) = h_x x' + h_y y'$).
+by the [[Multivariable Chain Rule|chain rule]] (the third component uses $\frac{d}{dt}h(x(t), y(t)) = h_x x' + h_y y'$).
 
 Now recall from [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-2|Section 16]] the definition of the line integral: if a curve is parametrized by $\mathbf{r}(t)$, then $d\mathbf{r} = \mathbf{r}\,'(t) \, dt$, so
 
@@ -80,7 +80,7 @@ The 3D line integral on $\Gamma$ has been reduced to a 2D line integral on $\gam
 
 **Step 2: Apply Green's theorem on $D$.**
 
-By [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Green's theorem]]:
+By [[Green's Theorem|Green's theorem]]:
 
 $$
 \oint_\gamma \tilde{P} \, dx + \tilde{Q} \, dy = \iint_D \left(\frac{\partial \tilde{Q}}{\partial x} - \frac{\partial \tilde{P}}{\partial y}\right) dx \, dy.
@@ -88,7 +88,7 @@ $$
 
 **Step 3: Compute $\tilde{Q}_x - \tilde{P}_y$.**
 
-Using the [[Multivariable Analysis §6 Differentiability#^thm-6-4|product]] and [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain]] rules (noting that $P, Q, R$ are evaluated at $(x, y, h(x,y))$, so e.g. $\frac{\partial P}{\partial x} = P_x + P_z h_x$):
+Using the [[Multivariable Analysis §6 Differentiability#^thm-6-4|product]] and [[Multivariable Chain Rule|chain]] rules (noting that $P, Q, R$ are evaluated at $(x, y, h(x,y))$, so e.g. $\frac{\partial P}{\partial x} = P_x + P_z h_x$):
 
 $$
 \begin{aligned}
@@ -97,7 +97,7 @@ $$
 \end{aligned}
 $$
 
-Subtracting: the $Rh_{xy}$ and $Rh_{yx}$ terms cancel (equality of mixed partials: $h_{xy} = h_{yx}$, hence $C^2$; [[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|Theorem §5.1]]). The $R_z h_x h_y$ terms also cancel. What remains:
+Subtracting: the $Rh_{xy}$ and $Rh_{yx}$ terms cancel (equality of mixed partials: $h_{xy} = h_{yx}$, hence $C^2$; [[Schwarz–Clairaut Theorem|Theorem §5.1]]). The $R_z h_x h_y$ terms also cancel. What remains:
 
 $$
 \begin{aligned}
@@ -123,7 +123,7 @@ $$
 \oint_\Gamma \mathbf{F} \cdot d\mathbf{r} = \iint_D (\tilde{Q}_x - \tilde{P}_y) \, dx \, dy = \iint_D (\nabla \times \mathbf{F}) \cdot (\mathbf{X}_x \times \mathbf{X}_y) \, dx \, dy = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}. \qquad \square
 $$
 
-*Uses:* [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|§10.2]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-2|Def. §16.2]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|§16.1]], [[Multivariable Analysis §6 Differentiability#^thm-6-4|§6.4]], [[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|§5.1]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]], [[Multivariable Analysis §18 Surface Integrals#^def-18-6|Def. §18.6]]
+*Uses:* [[Multivariable Chain Rule|§10.2]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-2|Def. §16.2]], [[Green's Theorem|§16.1]], [[Multivariable Analysis §6 Differentiability#^thm-6-4|§6.4]], [[Schwarz–Clairaut Theorem|§5.1]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]], [[Multivariable Analysis §18 Surface Integrals#^def-18-6|Def. §18.6]]
 
 > [!remark] Remark: Limitations and the General Case
 > This proof works only for surfaces that are graphs over a domain in the $xy$-plane. For a general surface (e.g., a hemisphere, where the normal is not everywhere “upward”), we would need to decompose into graph patches and sum — just as the Divergence Theorem proof required decomposition into simple solid regions ([[Multivariable Analysis §18 Surface Integrals#^rem-18-8|Remark in §18]]).
@@ -179,7 +179,7 @@ $$
 \oint_{\partial S} \mathbf{F} \cdot d\mathbf{r} = \oint_{\partial S} P \, dx + Q \, dy + R \, dz.
 $$
 
-On the boundary $\partial S$, the curve is parametrized by $\mathbf{X}(u(t), v(t))$ where $(u(t), v(t))$ traces $\partial D$. By the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]]:
+On the boundary $\partial S$, the curve is parametrized by $\mathbf{X}(u(t), v(t))$ where $(u(t), v(t))$ traces $\partial D$. By the [[Multivariable Chain Rule|chain rule]]:
 
 $$
 dx = x_u \, du + x_v \, dv, \qquad dy = y_u \, du + y_v \, dv, \qquad dz = z_u \, du + z_v \, dv.
@@ -202,7 +202,7 @@ $$
 
 **Step 4: Apply Green's theorem on $D$.**
 
-By Green's theorem ([[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Theorem §16.1]]) applied to the flat domain $D$:
+By Green's theorem ([[Green's Theorem|Theorem §16.1]]) applied to the flat domain $D$:
 
 $$
 \oint_{\partial D} \mathcal{A} \, du + \mathcal{B} \, dv = \iint_D \left(\frac{\partial \mathcal{B}}{\partial u} - \frac{\partial \mathcal{A}}{\partial v}\right) du \, dv. \tag{LHS$'$}
@@ -220,7 +220,7 @@ $$
 \end{aligned}
 $$
 
-Now $\frac{\partial P}{\partial u}$ is computed by the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]] (since $P = P(x(u,v), y(u,v), z(u,v))$):
+Now $\frac{\partial P}{\partial u}$ is computed by the [[Multivariable Chain Rule|chain rule]] (since $P = P(x(u,v), y(u,v), z(u,v))$):
 
 $$
 \frac{\partial P}{\partial u} = P_x x_u + P_y y_u + P_z z_u.
@@ -246,7 +246,7 @@ $$
 \end{aligned}
 $$
 
-*Subtracting:* The second-derivative terms $Px_{uv}$, $Qy_{uv}$, $Rz_{uv}$ appear in both and **cancel** (this uses $x_{uv} = x_{vu}$, i.e., equality of mixed partials ([[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|Theorem §5.1]]) — this is why we need $\mathbf{X} \in C^2$).
+*Subtracting:* The second-derivative terms $Px_{uv}$, $Qy_{uv}$, $Rz_{uv}$ appear in both and **cancel** (this uses $x_{uv} = x_{vu}$, i.e., equality of mixed partials ([[Schwarz–Clairaut Theorem|Theorem §5.1]]) — this is why we need $\mathbf{X} \in C^2$).
 
 Collecting the remaining terms by which partial derivatives of $P$, $Q$, $R$ they involve:
 
@@ -312,7 +312,7 @@ $$
 
 This completes the proof. $\blacksquare$
 
-*Uses:* [[Multivariable Analysis §18 Surface Integrals#^def-18-1|Def. §18.1]], [[Multivariable Analysis §18 Surface Integrals#^def-18-6|Def. §18.6]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]], [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|§10.2]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|§16.1]], [[Multivariable Analysis §6 Differentiability#^thm-6-4|§6.4]], [[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|§5.1]]
+*Uses:* [[Multivariable Analysis §18 Surface Integrals#^def-18-1|Def. §18.1]], [[Multivariable Analysis §18 Surface Integrals#^def-18-6|Def. §18.6]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]], [[Multivariable Chain Rule|§10.2]], [[Green's Theorem|§16.1]], [[Multivariable Analysis §6 Differentiability#^thm-6-4|§6.4]], [[Schwarz–Clairaut Theorem|§5.1]]
 
 > [!remark] Remark: Structure of the Proof
 > The proof has a clean logical flow:
@@ -320,9 +320,9 @@ This completes the proof. $\blacksquare$
 > 2. **Apply Green's theorem** on the flat domain $D$.
 > 3. **Verify** that the integrand on the RHS of Green's theorem equals $(\nabla \times \mathbf{F}) \cdot (\mathbf{X}_u \times \mathbf{X}_v)$ by expanding and comparing 12 terms.
 >
-> The key cancellation in Step 5 — the second-derivative terms $Px_{uv}$, $Qy_{uv}$, $Rz_{uv}$ dropping out — relies on equality of mixed partials ($x_{uv} = x_{vu}$, [[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|Theorem §5.1]]). This is why Stokes' theorem requires $\mathbf{X} \in C^2$ (not just $C^1$).
+> The key cancellation in Step 5 — the second-derivative terms $Px_{uv}$, $Qy_{uv}$, $Rz_{uv}$ dropping out — relies on equality of mixed partials ($x_{uv} = x_{vu}$, [[Schwarz–Clairaut Theorem|Theorem §5.1]]). This is why Stokes' theorem requires $\mathbf{X} \in C^2$ (not just $C^1$).
 >
-> Compare with the Divergence Theorem proof ([[Multivariable Analysis §18 Surface Integrals#^pf-18-2|Section 18]]), which reduced to the [[Fundamental Theorem of Calculus]]. Stokes' theorem instead reduces to [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Green's theorem]] — one dimension lower, but on the parameter domain rather than in physical space.
+> Compare with the Divergence Theorem proof ([[Multivariable Analysis §18 Surface Integrals#^pf-18-2|Section 18]]), which reduced to the [[Fundamental Theorem of Calculus]]. Stokes' theorem instead reduces to [[Green's Theorem|Green's theorem]] — one dimension lower, but on the parameter domain rather than in physical space.
 
 ^rem-20-3
 
@@ -339,7 +339,7 @@ This completes the proof. $\blacksquare$
 > \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = 0.
 > $$
 >
-> The curl of any vector field has zero total flux through a closed surface. This is a special case of $d^2 = 0$ ([[Multivariable Analysis §22 The Algebra of Differential Forms#^thm-22-5|Theorem §22.5]]) in the language of differential forms.
+> The curl of any vector field has zero total flux through a closed surface. This is a special case of $d^2 = 0$ ([[Exterior Derivative Squares to Zero|Theorem §22.5]]) in the language of differential forms.
 >
 > **3. Same boundary, different surfaces:** If $S_1$ and $S_2$ are two surfaces with the same boundary $\partial S_1 = \partial S_2 = C$ (and compatible orientations), then:
 >
@@ -356,10 +356,10 @@ This completes the proof. $\blacksquare$
 >
 > | **Theorem** | **Domain** | **Boundary** | **Reduces to** |
 > |---|:---:|:---:|:---:|
-> | Green's (2D) ([[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1\|§16.1]]) | flat region $D \subseteq \mathbb{R}^2$ | curve $\partial D$ | FTC in each variable |
-> | Divergence (3D) ([[Multivariable Analysis §18 Surface Integrals#^thm-18-2\|§18.2]]) | volume $V \subseteq \mathbb{R}^3$ | closed surface $\partial V$ | FTC in each variable |
-> | Stokes' (3D) ([[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1\|§20.1]]) | surface $S \subseteq \mathbb{R}^3$ | curve $\partial S$ | Green's on parameter domain |
+> | Green's (2D) ([[Green's Theorem\|§16.1]]) | flat region $D \subseteq \mathbb{R}^2$ | curve $\partial D$ | FTC in each variable |
+> | Divergence (3D) ([[Divergence Theorem in ℝ³\|§18.2]]) | volume $V \subseteq \mathbb{R}^3$ | closed surface $\partial V$ | FTC in each variable |
+> | Stokes' (3D) ([[Stokes' Theorem in ℝ³\|§20.1]]) | surface $S \subseteq \mathbb{R}^3$ | curve $\partial S$ | Green's on parameter domain |
 >
-> All three are special cases of the [[Multivariable Analysis §23 The Generalized Stokes' Theorem#^thm-23-1|generalized Stokes' theorem]] $\int_{\partial \Omega} \omega = \int_\Omega d\omega$, where $\omega$ is a differential form ([[Multivariable Analysis §21 Introduction to Differential Forms#^def-21-1|Def. §21.1]]) and $d$ is the exterior derivative ([[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]]).
+> All three are special cases of the [[Generalized Stokes' Theorem|generalized Stokes' theorem]] $\int_{\partial \Omega} \omega = \int_\Omega d\omega$, where $\omega$ is a differential form ([[Multivariable Analysis §21 Introduction to Differential Forms#^def-21-1|Def. §21.1]]) and $d$ is the exterior derivative ([[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]]).
 
 ^rem-20-5

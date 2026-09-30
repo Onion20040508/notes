@@ -169,7 +169,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 *Uses:* [[Multivariable Analysis §6 Differentiability#^def-6-1|Def. §6.1]], [[Multivariable Analysis §6 Differentiability#^def-6-2|Def. §6.2]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]], [[Multivariable Analysis §7 Directional Derivatives#^def-7-1|Def. §7.1]], [[Linear Algebra 3A Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]
 
 > [!remark]- Connections
-> - Restated with the gradient in §7: [[Multivariable Analysis §7 Directional Derivatives#^thm-7-1|Directional Derivative Formula]].
+> - Restated with the gradient in §7: [[Directional Derivative Formula|Directional Derivative Formula]].
 
 > [!remark] Remark: Warning: The Converse Is False
 > All directional derivatives can exist without $f$ being differentiable — they might not “fit together” into a single linear map. The function $f(x,y) = \frac{2xy}{x^2+y^2}$ from [[Multivariable Analysis §6 Differentiability#^rem-6-1|the motivation]] is one witness: both partials exist at the origin, yet no linear approximation works along $y = x$.
@@ -558,7 +558,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 > [!remark]- Connections
 > - MATH 451 version: [[Single Variable Analysis §28 Basic Properties of the Derivative#^thm-28-3|Chain Rule]]; the continuity analogue is [[Multivariable Analysis §3 Continuity and Limits of Functions#^thm-3-4|§3.4]].
-> - General form in §10: [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|Multivariable Chain Rule]] and its [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^rem-10-2|matrix form]] (Jacobians multiply, [[Linear Algebra 3C Matrices#^ladr-3-43|LADR 3.43]]).
+> - General form in §10: [[Multivariable Chain Rule|Multivariable Chain Rule]] and its [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^rem-10-2|matrix form]] (Jacobians multiply, [[Linear Algebra 3C Matrices#^ladr-3-43|LADR 3.43]]).
 
 > [!remark] Remark: Summary: Algebra of Differentiable Functions
 > If $f$ and $g$ are differentiable at $(x_0, y_0)$:

@@ -100,7 +100,7 @@ The notation $df = f'(x) \, dx$ is familiar from single-variable calculus, but w
 > \end{aligned}
 > $$
 >
-> If $f_{xy} = f_{yx}$ (by [[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|Schwarz–Clairaut]]), then:
+> If $f_{xy} = f_{yx}$ (by [[Schwarz–Clairaut Theorem|Schwarz–Clairaut]]), then:
 >
 > $$
 > d^2f = f_{xx} h^2 + 2f_{xy} hk + f_{yy} k^2.
@@ -115,7 +115,7 @@ The notation $df = f'(x) \, dx$ is familiar from single-variable calculus, but w
 > [!remark] Remark: Interpretation of $d^2f$
 > The second differential $d^2f$ is a **[[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-18|quadratic form]]** in $(h, k)$. It captures the **curvature** or second-order behavior of $f$:
 > - It appears in the [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^ex-9-2|second-order Taylor expansion]] of $f$.
-> - It [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-4|determines]] whether a critical point is a local max, local min, or saddle point.
+> - It [[Second Derivative Test in Several Variables|determines]] whether a critical point is a local max, local min, or saddle point.
 
 ^rem-8-4
 
@@ -126,7 +126,7 @@ The notation $df = f'(x) \, dx$ is familiar from single-variable calculus, but w
 > d^n f = \sum_{i=0}^{n} \binom{n}{i} \frac{\partial^n f}{\partial x^i \, \partial y^{n-i}} h^i k^{n-i}.
 > $$
 >
-> This is a homogeneous polynomial of degree $n$ in $(h, k)$, and it appears in the $n$-th order [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-2|Taylor expansion]].
+> This is a homogeneous polynomial of degree $n$ in $(h, k)$, and it appears in the $n$-th order [[Multivariable Taylor's Theorem|Taylor expansion]].
 
 ^def-8-3
 

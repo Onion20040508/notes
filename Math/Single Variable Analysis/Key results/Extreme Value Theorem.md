@@ -25,6 +25,11 @@ tags: [real-analysis, hub]
 - [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-9|Theorem §33.9: Intermediate Value Theorem for Integrals]]
 - [[Single Variable Analysis §33 Properties of the Riemann Integral#^prop-33-11|Proposition §33.11: The Witness Can Be Taken Interior]]
 
+## Used in (Multivariable Analysis)
+- [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-3|Theorem §9.3: Rolle's Theorem]]
+- [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-5|Remark]]
+- [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-10|Remark: The Logical Flow: Necessary to Sufficient]]
+
 ## Connections
 - Abstract form: the continuous image of a compact set is compact. The same fact gives extrema of continuous functions on compact manifolds.
 - Both hypotheses matter: see the workhorse [[Reciprocal function 1∕x]] on $(0,1]$.

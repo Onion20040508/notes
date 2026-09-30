@@ -1,0 +1,27 @@
+% Figure from MATH 452 notes, section 1. Compile with the notes preamble.
+\begin{tikzpicture}[scale=6]
+  % the epsilon-ball around the limit (0,0), epsilon = 0.2
+  \fill[figR!8] (0,0) circle (0.2);
+  % axes
+  \draw[-stealth, thin, black!55] (-0.42,0) -- (0.5,0);
+  \draw[-stealth, thin, black!55] (0,-0.3) -- (0,0.42);
+  \draw[figR, thick, dashed] (0,0) circle (0.2);
+  \draw[figR, thin] (0,0) -- (-110:0.2);
+  \node[figR, font=\scriptsize, anchor=north east, inner sep=1pt] at (-118:0.12) {$\varepsilon$};
+  % guiding spiral r = e^{-t}, t in [1,6]
+  \draw[black!40, thin, dotted, domain=1:6.5, samples=120, smooth, variable=\t]
+    plot ({exp(-\t)*cos(\t r)}, {exp(-\t)*sin(\t r)});
+  % distance of a_1 from the limit
+  \draw[figB, thin] (0,0) -- ({exp(-1)*cos(1 r)}, {exp(-1)*sin(1 r)})
+    node[pos=0.7, anchor=north west, font=\scriptsize, inner sep=1.5pt] {$e^{-1}$};
+  % a_1 outside, a_n (n >= 2) inside
+  \filldraw[figB] ({exp(-1)*cos(1 r)}, {exp(-1)*sin(1 r)}) circle (0.22pt)
+    node[right, font=\scriptsize] {$a_1$};
+  \foreach \n in {2,...,6}
+    \filldraw[figR] ({exp(-\n)*cos(\n r)}, {exp(-\n)*sin(\n r)}) circle (0.17pt);
+  \node[figR, font=\scriptsize, anchor=south east, inner sep=1pt] at ({exp(-2)*cos(2 r)}, {exp(-2)*sin(2 r)}) {$a_2$};
+  \node[figR, font=\scriptsize, anchor=south, inner sep=2pt] at ({exp(-3)*cos(3 r)}, {exp(-3)*sin(3 r)}) {$a_3$};
+  \filldraw (0,0) circle (0.17pt);
+  \node[font=\scriptsize, anchor=north west, inner sep=1.5pt] at (0,0) {$(0,0)$};
+  \node[figR, font=\scriptsize, anchor=west] at (0.2,-0.2) {$\varepsilon = 0.2,\ N = 2$};
+\end{tikzpicture}

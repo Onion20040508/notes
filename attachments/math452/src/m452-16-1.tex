@@ -1,37 +1,39 @@
 % Figure from MATH 452 notes, section 16. Compile with the notes preamble.
 \begin{tikzpicture}[scale=1.1]
 % ===== bottom: parameter interval [a,b] with partition =====
-\begin{scope}[shift={(0,-2.6)}]
-\draw[->] (-0.3,0) -- (6.6,0) node[right, font=\small] {$t$};
+\begin{scope}[shift={(0,-2.3)}]
+\draw[-stealth, thin] (-0.3,0) -- (6.5,0) node[right, font=\scriptsize] {$t$};
 \draw[thick] (0.3,0) -- (6.0,0);
 \foreach \i in {0,...,6}
   \draw ({0.3+\i*0.95},-0.07) -- ({0.3+\i*0.95},0.07);
 \node[below, font=\scriptsize] at (0.3,-0.1) {$a=t_0$};
 \node[below, font=\scriptsize] at (2.2,-0.1) {$t_2$};
 \node[below, font=\scriptsize] at (3.15,-0.1) {$t_3$};
-\node[below, font=\scriptsize] at (6.0,-0.1) {$b=t_n$};
+\node[below, font=\scriptsize] at (6.0,-0.1) {$b=t_N$};
 \draw[very thick, figR] (2.2,0) -- (3.15,0);
-\node[figR!85!black, font=\scriptsize] at (2.675,0.28) {$\Delta t$};
+\node[figR, font=\scriptsize, above] at (2.675,0.02) {$\Delta t$};
+\filldraw[black] (2.2,0) circle (1.2pt);
 \end{scope}
-% ===== mapping arrow from highlighted subinterval up to the curve =====
-\draw[->, thick] (2.675,-2.1) .. controls (2.35,-1.3) and (2.15,-0.7) .. (2.02,0.72);
-\node[font=\small, anchor=west] at (2.62,-1.15) {$\mathbf{r}(t)$};
+% ===== the map r: from t_2 up to r(t_2) =====
+\draw[-stealth, thin, black!55] (2.2,-2.2) .. controls (1.75,-1.4) and (1.8,-0.2) .. (2.12,0.86);
+\node[font=\scriptsize, anchor=east, black!70] at (1.72,-1.05) {$\mathbf{r}(t)=(x(t),y(t))$};
 % ===== top: the curve y = 0.75+0.55 sin(1.05x-1.9) =====
-\draw[very thick, figB, domain=0.45:5.75, samples=80] plot (\x, {0.75+0.55*sin(deg(1.05*\x-1.9))});
-\node[figB!80!black, font=\small] at (5.95,0.28) {$\boldsymbol{\gamma}$};
-% image points r(t_j), computed exactly on the curve (uneven spacing = varying speed)
-\foreach \px/\py in {0.6/0.225, 1.162/0.404, 2.182/0.96, 3.402/1.297, 4.252/1.05, 4.74/0.786, 5.439/0.409}
+\draw[thick, figB, domain=0.45:5.75, samples=80] plot (\x, {0.75+0.55*sin(deg(1.05*\x-1.9))});
+\node[figB, font=\small] at (6.0,0.5) {$\gamma$};
+% image points r(t_j), exactly on the curve (uneven spacing = varying speed)
+\foreach \px/\py in {0.6/0.225, 1.162/0.404, 3.402/1.297, 4.252/1.05, 4.74/0.786, 5.439/0.409}
   \filldraw[figB] (\px,\py) circle (1.2pt);
-\node[font=\scriptsize, figB!80!black, anchor=east] at (0.5,0.08) {$\mathbf{r}(t_0)$};
+\node[font=\scriptsize, figB, anchor=north] at (0.6,0.16) {$\mathbf{r}(t_0)$};
+\node[font=\scriptsize, figB, anchor=north east, inner sep=1pt] at (5.42,0.36) {$\mathbf{r}(t_N)$};
 % chord Delta r from r(t2) to r(t3)
 \coordinate (P2) at (2.182,0.96);
 \coordinate (P3) at (3.402,1.297);
-\draw[->, very thick, figG] (P2) -- (P3);
-\node[figG!75!black, font=\scriptsize] at (2.95,0.82) {$\Delta\mathbf{r} \approx \mathbf{r}'(t_2)\,\Delta t$};
+\draw[-stealth, thick, figG] (P2) -- (P3);
+\node[figG, font=\scriptsize, anchor=north west, inner sep=1pt] at (2.62,1.02) {$\Delta\mathbf{r} \approx \mathbf{r}'(t_2)\,\Delta t$};
 % field vector at P2
-\draw[->, thick, figR] (P2) -- ++(-0.18,0.80);
-\node[figR!85!black, font=\small] at (1.72,1.95) {$\mathbf{F}(\mathbf{r}(t_2))$};
-\filldraw (P2) circle (1.4pt);
+\draw[-stealth, thick, figR] (P2) -- ++(-0.18,0.80);
+\node[figR, font=\scriptsize, anchor=east] at (1.98,1.72) {$\mathbf{F}(\mathbf{r}(t_2))$};
+\filldraw[black] (P2) circle (1.4pt);
 % term label
-\node[font=\small, align=left, anchor=west] at (4.35,1.95) {one term:\\ $\mathbf{F}(\mathbf{r}(t_2)) \cdot \mathbf{r}'(t_2)\,\Delta t$};
+\node[font=\scriptsize, align=left, anchor=west] at (3.9,1.95) {one term of the sum:\\ $\mathbf{F}(\mathbf{r}(t_2)) \cdot \mathbf{r}'(t_2)\,\Delta t$};
 \end{tikzpicture}%

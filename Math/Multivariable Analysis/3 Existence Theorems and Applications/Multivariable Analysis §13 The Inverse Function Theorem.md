@@ -191,7 +191,7 @@ $$
 > H(y, \tilde{u}, \tilde{v}) \equiv G(X(y, \tilde{u}), y, \tilde{v}) = \psi(X(y, \tilde{u}), y) - \tilde{v} = 0.
 > $$
 >
-> We need $H_y \neq 0$ to apply IFT. Compute using the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]]:
+> We need $H_y \neq 0$ to apply IFT. Compute using the [[Multivariable Chain Rule|chain rule]]:
 >
 > $$
 > \begin{aligned}
@@ -242,7 +242,7 @@ $$
 
 ^pf-13-2
 
-*Uses:* [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|§12.2]], [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|§10.2]], [[Multivariable Analysis §13 The Inverse Function Theorem#^def-13-1|Def. §13.1]]
+*Uses:* [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|§12.2]], [[Multivariable Chain Rule|§10.2]], [[Multivariable Analysis §13 The Inverse Function Theorem#^def-13-1|Def. §13.1]]
 
 > [!remark] Remark: Tracking Variable Dependencies
 > The proof works by progressively “solving away” the original variables:
@@ -280,7 +280,7 @@ $$
 
 ## Derivation via Chain Rule
 
-We now derive the formula $D(f, g) = J^{-1}$ using the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]].
+We now derive the formula $D(f, g) = J^{-1}$ using the [[Multivariable Chain Rule|chain rule]].
 
 Suppose the inverse exists: $x = f(u, v)$, $y = g(u, v)$.
 

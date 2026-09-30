@@ -26,6 +26,9 @@ tags: [real-analysis, hub]
 - [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-10|Theorem §33.10: Weighted Mean Value Theorem]]
 - [[Single Variable Analysis §33 Properties of the Riemann Integral#^prop-33-11|Proposition §33.11: The Witness Can Be Taken Interior]]
 
+## Used in (Multivariable Analysis)
+- [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-1|Theorem §12.1: Implicit Function Theorem]]
+
 ## Connections
 - Abstract form: the continuous image of a connected set is connected; see [[Single Variable Analysis §22 More on Metric Spaces꞉ Connectedness]].
 - Its proof takes $\sup$ of a set, so it rests on the [[Completeness Axiom]]; over $\mathbb{Q}$ it fails ($x^2-2$ changes sign with no rational zero).

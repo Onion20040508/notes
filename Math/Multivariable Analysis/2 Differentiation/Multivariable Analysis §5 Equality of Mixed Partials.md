@@ -111,4 +111,4 @@ tags: [multivariable-analysis, math452]
 
 > [!remark]- Connections
 > - Symmetry of mixed partials is what makes the [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-2|Hessian matrix]] symmetric, so the [[Real spectral theorem]] (LADR 7.29) applies to it; see also [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-7|The Second Total Derivative Is the Hessian]].
-> - In the language of forms, Clairaut becomes [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-9|d² = 0]] ([[Multivariable Analysis §22 The Algebra of Differential Forms#^thm-22-5|§22.5]]).
+> - In the language of forms, Clairaut becomes [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-9|d² = 0]] ([[Exterior Derivative Squares to Zero|§22.5]]).

@@ -193,7 +193,7 @@ Adding the results:
 ^thm-16-1
 
 > [!remark]- Connections
-> - 1D ancestor: the [[Fundamental Theorem of Calculus]] (boundary of $[a,b]$ is $\{a,b\}$); curved-surface version: [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1|Stokes' Theorem (§20.1)]]; everything at once: [[Multivariable Analysis §23 The Generalized Stokes' Theorem#^thm-23-1|Generalized Stokes' Theorem (§23.1)]].
+> - 1D ancestor: the [[Fundamental Theorem of Calculus]] (boundary of $[a,b]$ is $\{a,b\}$); curved-surface version: [[Stokes' Theorem in ℝ³|Stokes' Theorem (§20.1)]]; everything at once: [[Generalized Stokes' Theorem|Generalized Stokes' Theorem (§23.1)]].
 > - Why the region must have no holes for "curl-free ⇒ conservative": [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-11|A Closed Form That Is Not Exact (§22.11)]]; the topological notion is [[Topology §23 The Fundamental Group#^def-23-3|simply connected]] (590 §23.3).
 
 > [!remark] Remark: Why the Signs Work Out
@@ -204,7 +204,7 @@ Adding the results:
 ^rem-16-2
 
 > [!remark] Remark: Higher Dimensions
-> For the multi-dimensional case, the idea is the same. If a domain in $\mathbb{R}^n$ is bounded by surfaces $x_n = \beta(x_1, \ldots, x_{n-1})$ (upper) and $x_n = \alpha(x_1, \ldots, x_{n-1})$ (lower), we can relate a boundary integral to a volume integral using the [[Fundamental Theorem of Calculus]] in the $x_n$ direction. This leads to the **[[Multivariable Analysis §23 The Generalized Stokes' Theorem#^thm-23-1|generalized Stokes' theorem]]**.
+> For the multi-dimensional case, the idea is the same. If a domain in $\mathbb{R}^n$ is bounded by surfaces $x_n = \beta(x_1, \ldots, x_{n-1})$ (upper) and $x_n = \alpha(x_1, \ldots, x_{n-1})$ (lower), we can relate a boundary integral to a volume integral using the [[Fundamental Theorem of Calculus]] in the $x_n$ direction. This leads to the **[[Generalized Stokes' Theorem|generalized Stokes' theorem]]**.
 
 ^rem-16-3
 
@@ -237,7 +237,7 @@ which indeed points radially outward. Equivalently, the rotation $(x, y) \mapsto
 
 ## The Divergence Theorem (2D)
 
-We now derive the 2D Divergence Theorem by rewriting [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Green's theorem]] in terms of the outward normal.
+We now derive the 2D Divergence Theorem by rewriting [[Green's Theorem|Green's theorem]] in terms of the outward normal.
 
 ## Rewriting the Line Integral as a Flux Integral
 
@@ -263,7 +263,7 @@ This rewrites a work integral as a **flux integral** of the rotated field $(g, -
 
 ## Deriving the Divergence Theorem
 
-By [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Green's theorem]]:
+By [[Green's Theorem|Green's theorem]]:
 
 $$
 \oint_\gamma (g, -f) \cdot \hat{n} \, ds = \oint_\gamma f \, dx + g \, dy = \iint_D (g_x - f_y) \, dx \, dy.
@@ -289,7 +289,7 @@ Now rename: let $\mathbf{u} = (u_1, u_2)$ be any $C^1$ vector field. Set $g = u_
 ^thm-16-2
 
 > [!remark]- Connections
-> - Generalizes to [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|Divergence Theorem in ℝⁿ (§17.1)]] and, with surface integrals, [[Multivariable Analysis §18 Surface Integrals#^thm-18-2|Divergence Theorem in ℝ³ (§18.2)]].
+> - Generalizes to [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ (§17.1)]] and, with surface integrals, [[Divergence Theorem in ℝ³|Divergence Theorem in ℝ³ (§18.2)]].
 
 > [!definition] Definition §16.4: Divergence
 > The **divergence** of a vector field $\mathbf{u} = (u_1, u_2)$ is the scalar field:
@@ -352,7 +352,7 @@ $$
 
 The only nonzero component is the $\hat{k}$-component: $(\nabla \times \mathbf{u})_3 = \frac{\partial u_2}{\partial x} - \frac{\partial u_1}{\partial y}$.
 
-This is exactly the integrand in [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Green's theorem]]! With $\mathbf{u} = (f, g)$:
+This is exactly the integrand in [[Green's Theorem|Green's theorem]]! With $\mathbf{u} = (f, g)$:
 
 > [!theorem] Theorem §16.3: Green's Theorem as 2D Stokes' Theorem
 > $$
@@ -364,7 +364,7 @@ This is exactly the integrand in [[Multivariable Analysis §16 Line Integrals an
 ^thm-16-3
 
 > [!remark]- Connections
-> - The flat case of [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1|Stokes' Theorem (§20.1)]], with $S = D$ and $\hat{n} = \hat{k}$.
+> - The flat case of [[Stokes' Theorem in ℝ³|Stokes' Theorem (§20.1)]], with $S = D$ and $\hat{n} = \hat{k}$.
 
 > [!remark] Remark: Two Faces of Green's Theorem
 > Green's theorem has two equivalent vector formulations:
@@ -378,6 +378,6 @@ This is exactly the integrand in [[Multivariable Analysis §16 Line Integrals an
 >
 > The **[[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-2|Divergence form]]** relates the *flux* of $\mathbf{u}$ through $\gamma$ (normal component) to the total divergence (“expansion”) inside $D$.
 >
-> Both generalize to higher dimensions: [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1|Stokes' theorem]] on surfaces in $\mathbb{R}^3$, and the [[Multivariable Analysis §18 Surface Integrals#^thm-18-2|Divergence Theorem]] on volumes in $\mathbb{R}^3$.
+> Both generalize to higher dimensions: [[Stokes' Theorem in ℝ³|Stokes' theorem]] on surfaces in $\mathbb{R}^3$, and the [[Divergence Theorem in ℝ³|Divergence Theorem]] on volumes in $\mathbb{R}^3$.
 
 ^rem-16-4

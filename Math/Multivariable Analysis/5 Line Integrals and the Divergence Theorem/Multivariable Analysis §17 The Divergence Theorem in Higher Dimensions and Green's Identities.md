@@ -7,7 +7,7 @@ tags: [multivariable-analysis, math452]
 ---
 ← [[Multivariable Analysis §16 Line Integrals and Green's Theorem]] · ↑ [[Multivariable Analysis — 5 Line Integrals and the Divergence Theorem]] · [[Multivariable Analysis §18 Surface Integrals]] →
 
-In the [[Multivariable Analysis §16 Line Integrals and Green's Theorem|previous section]] we derived [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Green's theorem]] (2D) and its two vector reformulations: the [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-3|2D Stokes form]] (circulation = integral of curl) and the [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-2|2D Divergence form]] (flux = integral of divergence). We now extend the Divergence Theorem to $\mathbb{R}^n$ and derive the classical **Green's identities**, which are the key tools for studying the Laplacian.
+In the [[Multivariable Analysis §16 Line Integrals and Green's Theorem|previous section]] we derived [[Green's Theorem|Green's theorem]] (2D) and its two vector reformulations: the [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-3|2D Stokes form]] (circulation = integral of curl) and the [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-2|2D Divergence form]] (flux = integral of divergence). We now extend the Divergence Theorem to $\mathbb{R}^n$ and derive the classical **Green's identities**, which are the key tools for studying the Laplacian.
 
 ## The Divergence Theorem in $\mathbb{R}^n$
 
@@ -144,8 +144,8 @@ In the [[Multivariable Analysis §16 Line Integrals and Green's Theorem|previous
 *Uses:* [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-1|Def. §17.1]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-3|§15.3]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|§15.9]], [[Fundamental Theorem of Calculus|451 §34.1]]
 
 > [!remark]- Connections
-> - $n = 1$ is the [[Fundamental Theorem of Calculus]]; $n = 2$ is [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-2|Theorem §16.2]]; the $\mathbb{R}^3$ version with parametrized surfaces is [[Multivariable Analysis §18 Surface Integrals#^thm-18-2|Theorem §18.2]].
-> - The same "FTC in one direction" proof, done for forms: [[Multivariable Analysis §23 The Generalized Stokes' Theorem#^thm-23-1|Generalized Stokes' Theorem (§23.1)]].
+> - $n = 1$ is the [[Fundamental Theorem of Calculus]]; $n = 2$ is [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-2|Theorem §16.2]]; the $\mathbb{R}^3$ version with parametrized surfaces is [[Divergence Theorem in ℝ³|Theorem §18.2]].
+> - The same "FTC in one direction" proof, done for forms: [[Generalized Stokes' Theorem|Generalized Stokes' Theorem (§23.1)]].
 
 ## Green's Identities
 
@@ -160,7 +160,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 ^def-17-2
 
 > [!remark]- Connections
-> - The gradient was introduced in [[Multivariable Analysis §7 Directional Derivatives|§7]]; the normal derivative is the directional derivative ([[Multivariable Analysis §7 Directional Derivatives#^thm-7-1|Theorem §7.1]]) in the direction $\hat{n}$.
+> - The gradient was introduced in [[Multivariable Analysis §7 Directional Derivatives|§7]]; the normal derivative is the directional derivative ([[Directional Derivative Formula|Theorem §7.1]]) in the direction $\hat{n}$.
 
 ## Green's First Identity
 
@@ -182,7 +182,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 ^thm-17-2
 
 > [!proof]+ Proof
-> Apply the Divergence Theorem ([[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|Theorem §17.1]]) with the vector field $\mathbf{w} = u \, \nabla v$.
+> Apply the Divergence Theorem ([[Divergence Theorem in ℝⁿ|Theorem §17.1]]) with the vector field $\mathbf{w} = u \, \nabla v$.
 >
 > **Step 1: Compute the divergence of $\mathbf{w}$.**
 >
@@ -212,7 +212,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 ^pf-17-2
 
-*Uses:* [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|§17.1]], [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]], [[Multivariable Analysis §6 Differentiability#^thm-6-4|§6.4]]
+*Uses:* [[Divergence Theorem in ℝⁿ|§17.1]], [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]], [[Multivariable Analysis §6 Differentiability#^thm-6-4|§6.4]]
 
 > [!remark]- Connections
 > - For $n = 1$ this is ordinary [[Single Variable Analysis §34 Fundamental Theorem of Calculus#^thm-34-3|Integration by Parts (451 §34.3)]].
@@ -247,7 +247,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 ^thm-17-3
 
 > [!proof]+ Proof
-> Apply Green's first identity ([[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|Theorem §17.2]]) twice, then subtract.
+> Apply Green's first identity ([[Green's First Identity|Theorem §17.2]]) twice, then subtract.
 >
 > **Step 1:** Apply with $(u, v)$:
 >
@@ -269,7 +269,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 ^pf-17-3
 
-*Uses:* [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|§17.2]]
+*Uses:* [[Green's First Identity|§17.2]]
 
 > [!remark] Remark: Green's Second Identity as Symmetry
 > Green's second identity expresses a kind of **symmetry of the Laplacian**: the “interaction” of $u$ with $\Delta v$ differs from the interaction of $v$ with $\Delta u$ only by a boundary term. This is the $L^2$ analog of integration by parts, and it shows that the Laplacian is a **[[Linear Algebra 7A Self-Adjoint and Normal Operators#^ladr-7-10|self-adjoint operator]]** (up to boundary terms).
@@ -286,7 +286,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > [!example] Example §17.1: Uniqueness for the Dirichlet Problem
 > **Claim:** If $\Delta u_1 = \Delta u_2$ on $D$ and $u_1 = u_2$ on $\partial D$, then $u_1 = u_2$ on $D$.
 >
-> *Proof.* Let $w = u_1 - u_2$. Then $\Delta w = 0$ on $D$ and $w = 0$ on $\partial D$. Apply [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|Green's first identity]] with $u = v = w$:
+> *Proof.* Let $w = u_1 - u_2$. Then $\Delta w = 0$ on $D$ and $w = 0$ on $\partial D$. Apply [[Green's First Identity|Green's first identity]] with $u = v = w$:
 >
 > $$
 > \int_D |\nabla w|^2 \, dV + \underbrace{\int_D w \, \Delta w \, dV}_{= 0} = \underbrace{\int_{\partial D} w \, \frac{\partial w}{\partial n} \, dS}_{= 0}.
@@ -296,7 +296,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 ^ex-17-1
 
-*Uses:* [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|§17.2]], [[Topology §13 Connected Spaces#^def-13-1|590 §13.1]]
+*Uses:* [[Green's First Identity|§17.2]], [[Topology §13 Connected Spaces#^def-13-1|590 §13.1]]
 
 > [!remark]- Connections
 > - 1D version of “nonnegative continuous integrand with zero integral vanishes”: [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-7|Vanishing Integral of a Nonnegative Function (451 §33.7)]].
@@ -304,7 +304,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > [!example] Example §17.2: Uniqueness for the Neumann Problem
 > **Claim:** If $\Delta u_1 = \Delta u_2$ on $D$ and $\dfrac{\partial u_1}{\partial n} = \dfrac{\partial u_2}{\partial n}$ on $\partial D$, then $u_1 - u_2$ is constant on $D$.
 >
-> *Proof.* Let $w = u_1 - u_2$. Then $\Delta w = 0$ and $\dfrac{\partial w}{\partial n} = 0$ on $\partial D$. [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|Green's first identity]] with $u = v = w$:
+> *Proof.* Let $w = u_1 - u_2$. Then $\Delta w = 0$ and $\dfrac{\partial w}{\partial n} = 0$ on $\partial D$. [[Green's First Identity|Green's first identity]] with $u = v = w$:
 >
 > $$
 > \int_D |\nabla w|^2 \, dV = \int_{\partial D} w \, \underbrace{\frac{\partial w}{\partial n}}_{= 0} \, dS = 0.
@@ -314,7 +314,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 ^ex-17-2
 
-*Uses:* [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|§17.2]], [[Topology §13 Connected Spaces#^def-13-1|590 §13.1]]
+*Uses:* [[Green's First Identity|§17.2]], [[Topology §13 Connected Spaces#^def-13-1|590 §13.1]]
 
 > [!example] Example §17.3: Mean Value Property of Harmonic Functions (Sketch)
 > Green's identities can be used to prove the **mean value property**: if $\Delta u = 0$ on a ball $B_r(x_0) \subseteq \mathbb{R}^n$, then:
@@ -333,13 +333,13 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > | **Theorem** | **Pattern** |
 > |---|---|
 > | [[Fundamental Theorem of Calculus]] | $\int_a^b F'(x) \, dx = F(b) - F(a)$ |
-> | [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1\|Green's Theorem]] (2D) | $\iint_D (g_x - f_y) \, dA = \oint_{\partial D} f \, dx + g \, dy$ |
-> | [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1\|Divergence Theorem]] ($\mathbb{R}^n$) | $\int_D \nabla \cdot \mathbf{u} \, dV = \int_{\partial D} \mathbf{u} \cdot \hat{n} \, dS$ |
-> | [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1\|Stokes' Theorem]] ($\mathbb{R}^3$) | $\iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = \oint_{\partial S} \mathbf{F} \cdot d\mathbf{r}$ |
+> | [[Green's Theorem\|Green's Theorem]] (2D) | $\iint_D (g_x - f_y) \, dA = \oint_{\partial D} f \, dx + g \, dy$ |
+> | [[Divergence Theorem in ℝⁿ\|Divergence Theorem]] ($\mathbb{R}^n$) | $\int_D \nabla \cdot \mathbf{u} \, dV = \int_{\partial D} \mathbf{u} \cdot \hat{n} \, dS$ |
+> | [[Stokes' Theorem in ℝ³\|Stokes' Theorem]] ($\mathbb{R}^3$) | $\iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = \oint_{\partial S} \mathbf{F} \cdot d\mathbf{r}$ |
 >
 > In each case: *integral of a derivative over a region = integral of the function over the boundary*.
 >
-> In the language of differential forms (to be covered if time permits), all of these are special cases of the **[[Multivariable Analysis §23 The Generalized Stokes' Theorem#^thm-23-1|generalized Stokes' theorem]]**: $\displaystyle\int_{\partial \Omega} \omega = \int_\Omega d\omega$.
+> In the language of differential forms (to be covered if time permits), all of these are special cases of the **[[Generalized Stokes' Theorem|generalized Stokes' theorem]]**: $\displaystyle\int_{\partial \Omega} \omega = \int_\Omega d\omega$.
 
 ^rem-17-3
 
@@ -443,7 +443,7 @@ $$
 v_x - u_y = -\phi_{yx} - (-\phi_{xy}) = -\phi_{yx} + \phi_{xy} = 0
 $$
 
-by [[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|equality of mixed partials]]. So the curl-free condition is *automatically satisfied* for any potential function. This is a [[Multivariable Analysis §11 The Three Differential Operators꞉ Gradient, Curl, Divergence|general fact]]: $\nabla \times (\nabla \phi) = 0$ always.
+by [[Schwarz–Clairaut Theorem|equality of mixed partials]]. So the curl-free condition is *automatically satisfied* for any potential function. This is a [[Multivariable Analysis §11 The Three Differential Operators꞉ Gradient, Curl, Divergence|general fact]]: $\nabla \times (\nabla \phi) = 0$ always.
 
 **Apply the divergence-free condition:**
 
@@ -458,7 +458,7 @@ This is **Laplace's equation**. A function satisfying $\Delta \phi = 0$ is calle
 > \text{Conservation of mass} + \text{incompressible} + \text{irrotational} \quad \Longrightarrow \quad \text{Laplace's equation } \Delta \phi = 0.
 > $$
 >
-> The problem of finding incompressible irrotational flow reduces to: find a potential function $\phi(x,y)$ satisfying $\Delta \phi = 0$ with appropriate boundary conditions. This is the **Dirichlet problem**, whose [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|uniqueness]] we proved using [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|Green's first identity]].
+> The problem of finding incompressible irrotational flow reduces to: find a potential function $\phi(x,y)$ satisfying $\Delta \phi = 0$ with appropriate boundary conditions. This is the **Dirichlet problem**, whose [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|uniqueness]] we proved using [[Green's First Identity|Green's first identity]].
 
 ^rem-17-4
 
@@ -469,7 +469,7 @@ This is **Laplace's equation**. A function satisfying $\Delta \phi = 0$ is calle
 
 ## Computing $\Delta \phi$ for a Radial Function
 
-Let $\phi(x,y) = f(r)$ where $r = \sqrt{x^2 + y^2}$. We compute $\phi_{xx}$ and $\phi_{yy}$ via the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]].
+Let $\phi(x,y) = f(r)$ where $r = \sqrt{x^2 + y^2}$. We compute $\phi_{xx}$ and $\phi_{yy}$ via the [[Multivariable Chain Rule|chain rule]].
 
 **First derivatives of $r$:**
 

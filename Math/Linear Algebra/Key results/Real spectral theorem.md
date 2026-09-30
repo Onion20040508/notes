@@ -20,5 +20,8 @@ tags: [linear-algebra, hub]
 - [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-13|9.13 Diagonalization of a symmetric bilinear form by an orthonormal basis]]
 - [[Linear Algebra 9C Determinants#^ladr-9-59|9.59 Every positive operator has nonnegative determinant]]
 
+## Used in (Multivariable Analysis)
+- [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^rem-17-2|Remark: Green's Second Identity as Symmetry]]
+
 ## Connections
 - Complex version [[Complex spectral theorem|7.31]]. Applications: principal axes of quadratic forms ([[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-23|Diagonalization of quadratic form]]), normal modes of coupled oscillators (the stiffness matrix is symmetric), the inertia tensor.

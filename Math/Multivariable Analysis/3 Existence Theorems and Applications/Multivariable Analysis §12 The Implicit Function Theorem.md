@@ -40,7 +40,7 @@ More generally, given $F(x, y) = 0$, when can we solve for $y = f(x)$ near a poi
 
 > [!remark]- Connections
 > - MATH 451 relative: the one-variable [[Single Variable Analysis §29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10) — also “$f' \neq 0$ gives a local inverse, with derivative $1/f'$.”
-> - Used twice to prove the [[Multivariable Analysis §13 The Inverse Function Theorem#^thm-13-2|Inverse Function Theorem]] (§13.2), and to derive [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-2|Lagrange multipliers]] (§14.2).
+> - Used twice to prove the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] (§13.2), and to derive [[Method of Lagrange Multipliers|Lagrange multipliers]] (§14.2).
 > - Reappears in the second proof of the [[Multivariable Analysis §15 Multivariable Integration#^thm-15-14|change of variables formula]] (§15.14).
 
 ## Proof of the Implicit Function Theorem
@@ -68,7 +68,7 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 > F(x_0, y_0 + \delta_1) > F(x_0, y_0) = 0, \qquad F(x_0, y_0 - \delta_1) < F(x_0, y_0) = 0.
 > $$
 >
-> Since $F$ is continuous (because $F_x, F_y$ exist and are continuous; [[Multivariable Analysis §6 Differentiability#^thm-6-2|Theorem §6.2]]), there exists $\delta_2 > 0$ such that for all $x \in [x_0 - \delta_2, x_0 + \delta_2]$:
+> Since $F$ is continuous (because $F_x, F_y$ exist and are continuous; [[Continuous Partials Imply Differentiability|Theorem §6.2]]), there exists $\delta_2 > 0$ such that for all $x \in [x_0 - \delta_2, x_0 + \delta_2]$:
 >
 > $$
 > F(x, y_0 + \delta_1) > 0, \qquad F(x, y_0 - \delta_1) < 0.
@@ -182,7 +182,7 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 
 ^pf-12-1
 
-*Uses:* [[Single Variable Analysis §29 The Mean Value Theorem#^cor-29-7|451 §29.7]], [[Multivariable Analysis §6 Differentiability#^thm-6-2|§6.2]], [[Intermediate Value Theorem|451 §18.3]], [[Single Variable Analysis §29 The Mean Value Theorem#^prop-29-8|451 §29.8]], [[Mean Value Theorem|451 §29.3]]
+*Uses:* [[Single Variable Analysis §29 The Mean Value Theorem#^cor-29-7|451 §29.7]], [[Continuous Partials Imply Differentiability|§6.2]], [[Intermediate Value Theorem|451 §18.3]], [[Single Variable Analysis §29 The Mean Value Theorem#^prop-29-8|451 §29.8]], [[Mean Value Theorem|451 §29.3]]
 
 ## Geometric Interpretation
 
@@ -198,7 +198,7 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 > [!remark] Remark: The Derivative Formula
 > The formula $f'(x) = -\dfrac{F_x}{F_y}$ can be derived heuristically by implicit differentiation:
 >
-> Starting from $F(x, f(x)) = 0$, differentiate both sides with respect to $x$ (by the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]]):
+> Starting from $F(x, f(x)) = 0$, differentiate both sides with respect to $x$ (by the [[Multivariable Chain Rule|chain rule]]):
 >
 > $$
 > F_x(x, f(x)) \cdot 1 + F_y(x, f(x)) \cdot f'(x) = 0.
@@ -219,7 +219,7 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 >
 > At $(x_0, y_0) = (0, 1)$: $F(0, 1) = 0$, $F_y(0, 1) = 2 \neq 0$.
 >
-> By the [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-1|Implicit Function Theorem]], near $(0, 1)$ we can solve for $y = f(x)$, and:
+> By the [[Implicit Function Theorem|Implicit Function Theorem]], near $(0, 1)$ we can solve for $y = f(x)$, and:
 >
 > $$
 > f'(x) = -\frac{F_x}{F_y} = -\frac{2x}{2y} = -\frac{x}{y}.
@@ -232,7 +232,7 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 > [!example] Example §12.2: Where IFT Fails
 > Consider $F(x, y) = x^2 + y^2 - 1$ at the point $(1, 0)$.
 >
-> Here $F_y(1, 0) = 0$, so the [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-1|Implicit Function Theorem]] does not apply.
+> Here $F_y(1, 0) = 0$, so the [[Implicit Function Theorem|Implicit Function Theorem]] does not apply.
 >
 > Indeed, near $(1, 0)$, the circle is vertical — we cannot express $y$ as a single-valued function of $x$.
 >
@@ -272,12 +272,12 @@ The Implicit Function Theorem generalizes to functions of more variables.
 ^thm-12-2
 
 > [!remark] Remark
-> The proof follows the same structure as the [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-1|two-variable case]]. The condition $F_y \neq 0$ ensures we can solve for $y$ in terms of the other variables.
+> The proof follows the same structure as the [[Implicit Function Theorem|two-variable case]]. The condition $F_y \neq 0$ ensures we can solve for $y$ in terms of the other variables.
 
 ^rem-12-3
 
 > [!remark]- Connections
-> - Systems of equations: solving several equations for several unknowns needs a nonzero Jacobian determinant instead of $F_y \neq 0$ — see the [[Multivariable Analysis §13 The Inverse Function Theorem#^thm-13-2|Inverse Function Theorem]] (§13.2) and the two-constraint Lagrange derivation in [[Multivariable Analysis §14 Optimization and Lagrange Multipliers|§14]]; the linear-algebra fact behind it is [[Invertible ⟺ nonzero determinant|LADR 9.50]].
+> - Systems of equations: solving several equations for several unknowns needs a nonzero Jacobian determinant instead of $F_y \neq 0$ — see the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] (§13.2) and the two-constraint Lagrange derivation in [[Multivariable Analysis §14 Optimization and Lagrange Multipliers|§14]]; the linear-algebra fact behind it is [[Invertible ⟺ nonzero determinant|LADR 9.50]].
 
 ![[m452-12-2.svg]]
 *The Implicit Function Theorem on a contour map of the paraboloid $F = x^2/4 + y^2$ (dashed: neighboring levels; solid: the contour $F = c$). Zooming in at a generic point (green), the arc passes the vertical line test: locally $y = f(x)$, possible because $F_y \neq 0$ there. Zooming in at the rightmost point (red), the tangent is vertical ($F_y = 2y = 0$): the arc fails the vertical line test, and no $y = f(x)$ exists — but $F_x \neq 0$, the arc passes the* horizontal *line test, and $x = g(y)$ works. A regular contour is always locally a graph; the gradient tells you over which axis.*

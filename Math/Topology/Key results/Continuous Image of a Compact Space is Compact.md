@@ -19,6 +19,13 @@ tags: [topology, hub]
 - [[Topology §24 Covering Spaces#^lem-24-12|Lemma §24.12: Equivalent Conditions for Nullhomotopy]]
 - [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
 
+## Used in (Multivariable Analysis)
+- [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-5|Remark]]
+- [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-10|Remark: The Logical Flow: Necessary to Sufficient]]
+- [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|Theorem §15.9: Fubini for Type I Regions]]
+- [[Multivariable Analysis §15 Multivariable Integration#^thm-15-14|Theorem §15.14: Change of Variables Formula — Rectangular Case]]
+- [[Multivariable Analysis §15 Multivariable Integration#^thm-15-17|Theorem §15.17: Change of Variables — General Jordan Measurable Domains]]
+
 ## Connections
 - **Generalizes.** With Y = ℝ it is the source of the MATH 451 [[Extreme Value Theorem]]: f([a, b]) is compact, hence closed and bounded by [[Heine–Borel Theorem]].
 - **Invariance.** Compactness is therefore a topological property ([[Topology §15 Compact Spaces#^rem-15-1|Why Compactness Matters]]). The connectedness analogue is [[Continuous Image of a Connected Space is Connected]].

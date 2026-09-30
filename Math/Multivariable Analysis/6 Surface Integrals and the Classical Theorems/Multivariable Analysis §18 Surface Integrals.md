@@ -126,11 +126,11 @@ These are exactly the tangent vectors to the two families of curves that sweep o
 > So the surface is differentiable in all three cases (the linear approximation exists), but **regularity ensures the approximation is full-dimensional** — that it is actually approximating a *surface* and not a lower-dimensional object.
 >
 > **Parallel to earlier results.** This is the same idea as the change of variables theorem and the IFT:
-> - In the **change of variables** ([[Multivariable Analysis §15 Multivariable Integration#^thm-15-17|Section 15]]), $J \neq 0$ means the $2 \times 2$ Jacobian has rank 2, ensuring the map is locally invertible.
-> - In the **IFT/Inverse FT** (Sections [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|12]]–[[Multivariable Analysis §13 The Inverse Function Theorem#^thm-13-2|13]]), the nonvanishing determinant ensures the derivative has full rank.
+> - In the **change of variables** ([[Change of Variables Formula (multiple integrals)|Section 15]]), $J \neq 0$ means the $2 \times 2$ Jacobian has rank 2, ensuring the map is locally invertible.
+> - In the **IFT/Inverse FT** (Sections [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|12]]–[[Inverse Function Theorem (several variables)|13]]), the nonvanishing determinant ensures the derivative has full rank.
 > - Here, $\mathbf{X}_u \times \mathbf{X}_v \neq \mathbf{0}$ means the $3 \times 2$ Jacobian has rank 2, ensuring the parametrization is locally injective (an **immersion**) — it does not collapse any direction.
 >
-> This also explains why $\det(G) = |\mathbf{X}_u \times \mathbf{X}_v|^2$ appears in the area formula ([[Multivariable Analysis §18 Surface Integrals#^thm-18-1|Theorem §18.1]]): it measures how much 2D area the derivative preserves. When $\det(G) = 0$, the derivative crushes some 2D area to zero — exactly the degenerate case.
+> This also explains why $\det(G) = |\mathbf{X}_u \times \mathbf{X}_v|^2$ appears in the area formula ([[Surface Area via the Gram Matrix|Theorem §18.1]]): it measures how much 2D area the derivative preserves. When $\det(G) = 0$, the derivative crushes some 2D area to zero — exactly the degenerate case.
 >
 > **Irregular point $\neq$ singular surface.** An irregular point can mean two different things:
 > - **Bad parametrization, smooth surface.** The sphere parametrized by $(\theta, \varphi)$ ([[Multivariable Analysis §18 Surface Integrals#^ex-18-1|Example §18.1]]) has $\mathbf{X}_\theta = \mathbf{0}$ at the poles ($\varphi = \pm \pi/2$), because all values of $\theta$ map to the same point. The sphere is perfectly smooth there; the coordinate system degenerates. A different parametrization (e.g., centered at the pole) would be regular.
@@ -377,7 +377,7 @@ The $|\mathbf{X}_u \times \mathbf{X}_v|$ cancels, giving a cleaner formula:
 Note the geometric duality: the line integral uses the *tangent* vector (measuring the component of $\mathbf{F}$ *along* the curve), while the surface integral uses the *normal* vector (measuring the component of $\mathbf{F}$ *through* the surface).
 
 > [!remark] Remark: Connection to the Divergence Theorem and Stokes' Theorem
-> The flux integral is exactly the left-hand side of the **Divergence Theorem** ([[Multivariable Analysis §18 Surface Integrals#^thm-18-2|Theorem §18.2]]):
+> The flux integral is exactly the left-hand side of the **Divergence Theorem** ([[Divergence Theorem in ℝ³|Theorem §18.2]]):
 >
 > $$
 > \iint_{\partial V} \mathbf{F} \cdot d\mathbf{S} = \iiint_V \nabla \cdot \mathbf{F} \, dV,
@@ -385,7 +385,7 @@ Note the geometric duality: the line integral uses the *tangent* vector (measuri
 >
 > which relates the flux through a closed surface $\partial V$ to the total divergence inside the enclosed volume $V$.
 >
-> Similarly, **Stokes' theorem** ([[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1|Theorem §20.1]]) relates a line integral around $\partial S$ to a flux integral of the curl through $S$:
+> Similarly, **Stokes' theorem** ([[Stokes' Theorem in ℝ³|Theorem §20.1]]) relates a line integral around $\partial S$ to a flux integral of the curl through $S$:
 >
 > $$
 > \oint_{\partial S} \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}.
@@ -455,7 +455,7 @@ Note the cancellation: $\hat{n} \, dS = \frac{(-\phi_x, -\phi_y, 1)}{\sqrt{1+\ph
 > \iint_S \mathbf{u} \cdot \hat{n} \, dS = \iint_D \big[ a \cdot n_1 + b \cdot n_2 + c \cdot n_3 \big] \, dS.
 > $$
 >
-> For each component, we parametrize the surface by the “best choice” of two coordinates: the top/bottom surfaces use $(x,y)$, the left/right surfaces use $(y,z)$, and the front/back surfaces use $(x,z)$. This is exactly how the proof of the Divergence Theorem ([[Multivariable Analysis §18 Surface Integrals#^thm-18-2|Theorem §18.2]]) proceeds.
+> For each component, we parametrize the surface by the “best choice” of two coordinates: the top/bottom surfaces use $(x,y)$, the left/right surfaces use $(y,z)$, and the front/back surfaces use $(x,z)$. This is exactly how the proof of the Divergence Theorem ([[Divergence Theorem in ℝ³|Theorem §18.2]]) proceeds.
 
 ^rem-18-6
 
@@ -558,15 +558,15 @@ For a closed surface $\partial V$ bounding a volume $V$:
 *The divergence theorem: $\iint_{\partial V}\mathbf{F}\cdot\hat{n}\,dS = \iiint_V \nabla\cdot\mathbf{F}\,dV$. Everything the sources inside $V$ produce (red: pointwise divergence, the microscopic outflux of [[Multivariable Analysis §11 The Three Differential Operators꞉ Gradient, Curl, Divergence|§11]]) must exit through the boundary (green arrows crossing $\partial V$ along the outward normal $\hat n$). The proof is again the cancellation of [[Multivariable Analysis §16 Line Integrals and Green's Theorem|§16]], one dimension up: tile $V$ into small cells; flux through every interior face cancels between neighbors, and only the outer boundary flux survives.*
 
 > [!remark]- Connections
-> - The 2D version: [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-2|Divergence Theorem in ℝ²]]; the $n$-dimensional version: [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|Divergence Theorem in ℝⁿ]].
-> - The 1D case is the [[Fundamental Theorem of Calculus]]; all are instances of the [[Multivariable Analysis §23 The Generalized Stokes' Theorem#^thm-23-1|Generalized Stokes' Theorem]] with $d$ on 2-forms giving the divergence ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-4|Prop. §22.4]]).
+> - The 2D version: [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-2|Divergence Theorem in ℝ²]]; the $n$-dimensional version: [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]].
+> - The 1D case is the [[Fundamental Theorem of Calculus]]; all are instances of the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]] with $d$ on 2-forms giving the divergence ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-4|Prop. §22.4]]).
 
 > [!remark] Remark: Why the Bottom Surface Has Reversed Orientation
 > The parameter reversal for the bottom surface is not a trick — it is the higher-dimensional manifestation of the sign pattern in the [[Fundamental Theorem of Calculus]].
 >
 > **1D:** $\int_a^b f'(x)\,dx = f(b) - f(a)$. The “boundary” of $[a,b]$ is two points. The outward normal at $b$ is $+1$ (pointing right, away from the interval), at $a$ is $-1$ (pointing left). Upper endpoint gets $+$, lower gets $-$.
 >
-> **2D ([[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Green's theorem]]):** The boundary $\gamma$ of $D$ is traversed counterclockwise. The bottom edge $y = \phi(x)$ is traversed left-to-right ($x: a \to b$), but the top edge $y = \psi(x)$ is traversed right-to-left ($x: b \to a$) — because we go *around* the boundary, not across it. This reversed traversal produces the sign.
+> **2D ([[Green's Theorem|Green's theorem]]):** The boundary $\gamma$ of $D$ is traversed counterclockwise. The bottom edge $y = \phi(x)$ is traversed left-to-right ($x: a \to b$), but the top edge $y = \psi(x)$ is traversed right-to-left ($x: b \to a$) — because we go *around* the boundary, not across it. This reversed traversal produces the sign.
 >
 > **3D:** The boundary $\partial V$ is a closed surface. Standing outside and looking at the top, you see the outward normal pointing up. Walking around to look at the bottom from outside, you see the outward normal pointing down — and the surface appears **mirror-reflected** (left and right swap). The “natural” parametrization of the bottom, as seen from outside, has one coordinate reversed relative to the top.
 >
@@ -595,13 +595,13 @@ For a closed surface $\partial V$ bounding a volume $V$:
 >
 > **General domains:** If $V$ is not simple, we **decompose** $V$ into finitely many simple solid regions $V_1, \ldots, V_N$ with disjoint interiors. Apply the theorem on each $V_k$ and sum. The boundary integrals on the *internal cuts* (where $V_k$ meets $V_{k+1}$) cancel in pairs: the two sides of a cut have opposite outward normals, so their contributions are equal and opposite.
 >
-> This is the same cancellation mechanism as in the 2D case ([[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Section 16, Green's theorem]]), and parallel to how we handled general regions for Fubini's theorem in [[Multivariable Analysis §15 Multivariable Integration|Section 15]]: there we needed Type I / Type II regions ([[Multivariable Analysis §15 Multivariable Integration#^def-15-12|Def. §15.12]]) for iterated integrals and subdivided general [[Multivariable Analysis §15 Multivariable Integration#^def-15-14|Jordan measurable]] domains. Same idea, one dimension up.
+> This is the same cancellation mechanism as in the 2D case ([[Green's Theorem|Section 16, Green's theorem]]), and parallel to how we handled general regions for Fubini's theorem in [[Multivariable Analysis §15 Multivariable Integration|Section 15]]: there we needed Type I / Type II regions ([[Multivariable Analysis §15 Multivariable Integration#^def-15-12|Def. §15.12]]) for iterated integrals and subdivided general [[Multivariable Analysis §15 Multivariable Integration#^def-15-14|Jordan measurable]] domains. Same idea, one dimension up.
 
 ^rem-18-8
 
 > [!remark] Remark: Green's Identities Revisited
 > With the 3D Divergence Theorem now proved, the Green's identities from [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities|Section 17]] follow immediately for domains in $\mathbb{R}^3$ (not just $\mathbb{R}^n$ abstractly):
-> - **Green's first identity:** choose $\mathbf{u} = u \, \nabla v$ in the 3D Divergence Theorem. The proof is exactly the same computation as in [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|Theorem §17.2]] — divergence of $u \nabla v$ gives $\nabla u \cdot \nabla v + u \, \Delta v$, and the boundary term gives $u \, \partial v / \partial n$.
+> - **Green's first identity:** choose $\mathbf{u} = u \, \nabla v$ in the 3D Divergence Theorem. The proof is exactly the same computation as in [[Green's First Identity|Theorem §17.2]] — divergence of $u \nabla v$ gives $\nabla u \cdot \nabla v + u \, \Delta v$, and the boundary term gives $u \, \partial v / \partial n$.
 > - **Green's second identity:** apply the first identity twice and subtract, as in [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|Theorem §17.3]].
 >
 > The point is that once you have the Divergence Theorem, Green's identities are *not separate theorems* — they are corollaries obtained by choosing $\mathbf{u}$ strategically.

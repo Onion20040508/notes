@@ -120,7 +120,7 @@ We can now formalize the computation from [[Multivariable Analysis §21 Introduc
 > $$
 >
 > The **pullback** $\Phi^*\omega$ is the form on $D$ obtained by:
-> 1. Replacing each ambient differential $dx_i$ with $\displaystyle\sum_{j=1}^k \frac{\partial x_i}{\partial u_j}\,du_j$ (the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]]),
+> 1. Replacing each ambient differential $dx_i$ with $\displaystyle\sum_{j=1}^k \frac{\partial x_i}{\partial u_j}\,du_j$ (the [[Multivariable Chain Rule|chain rule]]),
 > 2. Expanding using the wedge product rules.
 >
 > The integral of $\omega$ over $\Phi(D)$ is then defined as:
@@ -136,7 +136,7 @@ We can now formalize the computation from [[Multivariable Analysis §21 Introduc
 
 > [!remark]- Connections
 > - The coefficients of $\Phi^*\omega$ are $k \times k$ minors of the Jacobian, i.e. determinants ([[Linear Algebra 9C Determinants#^ladr-9-46|LADR 9.46]]); in the top-degree case $k = n$ this is the signed volume factor $\det J$, whose absolute value is the volume distortion ([[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]], [[Multivariable Analysis §15 Multivariable Integration#^prop-15-19|Proposition §15.19]]).
-> - Pulling back and then applying $d$ is how the classical theorems become one statement: [[Multivariable Analysis §23 The Generalized Stokes' Theorem#^thm-23-1|Theorem §23.1]].
+> - Pulling back and then applying $d$ is how the classical theorems become one statement: [[Generalized Stokes' Theorem|Theorem §23.1]].
 
 > [!remark] Remark: Clarification of Terms
 > The ambient coordinates $(x_1, \ldots, x_n)$ are the standard coordinates on $\mathbb{R}^n$ — the space the form lives in. The parameter coordinates $(u_1, \ldots, u_k)$ are the coordinates on $D$ — the space we integrate over. The parametrization $\Phi$ is the bridge: it tells us, for each point in $D$, where it sits in $\mathbb{R}^n$. You have been using parametrizations all semester:
@@ -217,7 +217,7 @@ That is, the pullback of a coordinate $k$-form extracts the $k \times k$ minor o
 > \iint_D f\,dx\,dy = \iint_{D^*} f(\Phi(u,v)) \cdot (\det J)\,du\,dv.
 > $$
 >
-> This is the *signed* change of variables formula. The $|J|$ version from [[Multivariable Analysis §15 Multivariable Integration#^thm-15-17|§15]] takes the absolute value, discarding the orientation ([[Multivariable Analysis §21 Introduction to Differential Forms#Signed, Unsigned, and Signed in Disguise|Category 3]]).
+> This is the *signed* change of variables formula. The $|J|$ version from [[Change of Variables Formula (multiple integrals)|§15]] takes the absolute value, discarding the orientation ([[Multivariable Analysis §21 Introduction to Differential Forms#Signed, Unsigned, and Signed in Disguise|Category 3]]).
 
 ^ex-22-4
 
@@ -270,7 +270,7 @@ The recipe is always the same: differentiate each coefficient, wedge the result 
 > df = f_x \, dx + f_y \, dy + f_z \, dz.
 > $$
 >
-> That is, the coefficients of the 1-form $df$ are the components of $\nabla f = (f_x, f_y, f_z)$. The differential from [[Multivariable Analysis §8 The Differential#^def-8-1|§8]] and the gradient from [[Multivariable Analysis §7 Directional Derivatives#^thm-7-1|§7]] are the same object: one is a 1-form, the other is the corresponding vector field.
+> That is, the coefficients of the 1-form $df$ are the components of $\nabla f = (f_x, f_y, f_z)$. The differential from [[Multivariable Analysis §8 The Differential#^def-8-1|§8]] and the gradient from [[Directional Derivative Formula|§7]] are the same object: one is a 1-form, the other is the corresponding vector field.
 
 ^prop-22-2
 
@@ -439,11 +439,11 @@ Curl and divergence are **not** at the same level: curl goes from degree 1 to de
 > d(df) = (f_{yx} - f_{xy}) \, dx \wedge dy + (f_{xz} - f_{zx}) \, dz \wedge dx + (f_{zy} - f_{yz}) \, dy \wedge dz = 0
 > $$
 >
-> by equality of mixed partials ([[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|Schwarz–Clairaut]]) ($f_{xy} = f_{yx}$, etc.).
+> by equality of mixed partials ([[Schwarz–Clairaut Theorem|Schwarz–Clairaut]]) ($f_{xy} = f_{yx}$, etc.).
 
 ^pf-22-5
 
-*Uses:* [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]], [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-1|Def. §22.1]], [[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|§5.1]]
+*Uses:* [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]], [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-1|Def. §22.1]], [[Schwarz–Clairaut Theorem|§5.1]]
 
 > [!remark]- Connections
 > - Why it works: the second derivative is a symmetric bilinear form and $d$ keeps only the alternating part ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-9|Proposition §22.9]]; linear algebra: [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]).
@@ -453,7 +453,7 @@ Curl and divergence are **not** at the same level: curl goes from degree 1 to de
 > - Rung $0 \to 1 \to 2$: $d(df) = 0$, i.e., $\nabla \times (\nabla f) = \mathbf{0}$. The curl of a gradient is zero.
 > - Rung $1 \to 2 \to 3$: $d(d\omega) = 0$ for a 1-form, i.e., $\nabla \cdot (\nabla \times \mathbf{F}) = 0$. The divergence of a curl is zero.
 >
-> These are not two separate computational accidents — they are the *same* identity $d \circ d = 0$ applied at different points on the ladder. This also explains why the closed surface integral in [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1|Stokes']] vanishes: $\iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = \int_S d\omega$, and if $\omega = df$ then $d\omega = d^2f = 0$.
+> These are not two separate computational accidents — they are the *same* identity $d \circ d = 0$ applied at different points on the ladder. This also explains why the closed surface integral in [[Stokes' Theorem in ℝ³|Stokes']] vanishes: $\iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = \int_S d\omega$, and if $\omega = df$ then $d\omega = d^2f = 0$.
 
 ^rem-22-5
 
@@ -538,7 +538,7 @@ With the wedge product, exterior derivative, and $d^2 = 0$ in hand, we can defin
 > \end{aligned}
 > $$
 >
-> **Verification.** The 2-form $\eta = z\,dx \wedge dy$ corresponds to the flux of $\mathbf{F} = (0, 0, z)$ through $S$. By the [[Multivariable Analysis §18 Surface Integrals#^thm-18-2|Divergence Theorem]]: $\iint_S \mathbf{F} \cdot d\mathbf{S} = \iiint_V \nabla \cdot \mathbf{F}\,dV = \iiint_V 1\,dV = \frac{4\pi}{3}$. The sign discrepancy is because our parametrization gives the *inward* normal (check: at $\theta = 0$, $\phi = 0$, the cross product $\mathbf{X}_\phi \times \mathbf{X}_\theta$ points inward). Reversing the parameter order gives $+\frac{4\pi}{3}$. $\checkmark$
+> **Verification.** The 2-form $\eta = z\,dx \wedge dy$ corresponds to the flux of $\mathbf{F} = (0, 0, z)$ through $S$. By the [[Divergence Theorem in ℝ³|Divergence Theorem]]: $\iint_S \mathbf{F} \cdot d\mathbf{S} = \iiint_V \nabla \cdot \mathbf{F}\,dV = \iiint_V 1\,dV = \frac{4\pi}{3}$. The sign discrepancy is because our parametrization gives the *inward* normal (check: at $\theta = 0$, $\phi = 0$, the cross product $\mathbf{X}_\phi \times \mathbf{X}_\theta$ points inward). Reversing the parameter order gives $+\frac{4\pi}{3}$. $\checkmark$
 
 ^ex-22-5
 
@@ -565,9 +565,9 @@ The scalar line integral $\int_\gamma f\,ds$ has no form expression because $ds 
 | $\iint_{D^*} f(\Phi)\,\vert J\vert\,du\,dv$ | no form expression (uses $\vert J\vert$) | no (Cat. 3) |
 | $\iint_S f\,dS$ | no form expression (uses $\vert\mathbf{X}_u \times \mathbf{X}_v\vert$) | no (Cat. 2) |
 
-[[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Green's theorem]] is now visibly a special case of $\int_{\partial \Omega} \omega = \int_\Omega d\omega$ with $\omega$ a 1-form on $\mathbb{R}^2$ and $d\omega = \big((f_2)_x - (f_1)_y\big)\,dx \wedge dy$.
+[[Green's Theorem|Green's theorem]] is now visibly a special case of $\int_{\partial \Omega} \omega = \int_\Omega d\omega$ with $\omega$ a 1-form on $\mathbb{R}^2$ and $d\omega = \big((f_2)_x - (f_1)_y\big)\,dx \wedge dy$.
 
-The change-of-variables integral from [[Multivariable Analysis §15 Multivariable Integration#^thm-15-17|§15]] and the scalar surface integral both lack form expressions: the first suppresses orientation via $|J|$ (Category 3), the second is intrinsically unsigned (Category 2).
+The change-of-variables integral from [[Change of Variables Formula (multiple integrals)|§15]] and the scalar surface integral both lack form expressions: the first suppresses orientation via $|J|$ (Category 3), the second is intrinsically unsigned (Category 2).
 
 **Dimension 3.** The integral over volumes:
 
@@ -587,7 +587,7 @@ The Divergence Theorem is $\int_{\partial V} \eta = \int_V d\eta$ with $\eta$ a 
 | 2 | $\iint_S \eta$ | $\int_\Omega d\eta$ (dim 3) | Divergence |
 | 3 | $\iiint_V \mu$ | — | (top dimension) |
 
-Each row is related to the next by the exterior derivative $d$. The integral theorems are the statement that moving down one row (applying $d$ and integrating over the region) equals staying in the current row and integrating over the boundary. This is the content of the generalized Stokes' theorem in [[Multivariable Analysis §23 The Generalized Stokes' Theorem#^thm-23-1|§23]].
+Each row is related to the next by the exterior derivative $d$. The integral theorems are the statement that moving down one row (applying $d$ and integrating over the region) equals staying in the current row and integrating over the boundary. This is the content of the generalized Stokes' theorem in [[Generalized Stokes' Theorem|§23]].
 
 ## What the Exterior Derivative Really Measures
 
@@ -598,7 +598,7 @@ To understand what $d$ can and cannot do, we need to revisit what “derivative�
 Recall from [[Multivariable Analysis §6 Differentiability#^def-6-1|§6]]: $f$ is differentiable at $\mathbf{p} \in \mathbb{R}^n$ if there exists a linear map $Df_{\mathbf{p}}: \mathbb{R}^n \to \mathbb{R}$ satisfying $f(\mathbf{p} + \mathbf{h}) = f(\mathbf{p}) + Df_{\mathbf{p}}(\mathbf{h}) + o(|\mathbf{h}|)$, where $\mathbf{p} = (x_0, y_0, \ldots)$ and $\mathbf{h} = (h, k, \ldots)$ are vectors in $\mathbb{R}^n$.
 
 > [!theorem] Proposition §22.6: Gradient = Differential = 1-Form
-> The total derivative $Df_{\mathbf{p}}$ from [[Multivariable Analysis §6 Differentiability#^def-6-2|§6]], the differential $df$ from [[Multivariable Analysis §8 The Differential#^def-8-1|§8]], and the gradient $\nabla f$ from [[Multivariable Analysis §7 Directional Derivatives#^thm-7-1|§7]] are three notations for the same linear map on tangent vectors:
+> The total derivative $Df_{\mathbf{p}}$ from [[Multivariable Analysis §6 Differentiability#^def-6-2|§6]], the differential $df$ from [[Multivariable Analysis §8 The Differential#^def-8-1|§8]], and the gradient $\nabla f$ from [[Directional Derivative Formula|§7]] are three notations for the same linear map on tangent vectors:
 >
 > $$
 > Df_{\mathbf{p}}(\mathbf{v}) = df(\mathbf{v}) = \nabla f \cdot \mathbf{v} = f_x v_1 + f_y v_2 + f_z v_3.
@@ -633,13 +633,13 @@ Recall from [[Multivariable Analysis §6 Differentiability#^def-6-1|§6]]: $f$ i
 
 ^prop-22-7
 
-Two directions appear because we are asking two separate questions: $\mathbf{v}$ asks “which directional derivative are we looking at?” and $\mathbf{u}$ asks “in which direction are we watching it change?” The Taylor expansion from [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-2|§9]] says exactly:
+Two directions appear because we are asking two separate questions: $\mathbf{v}$ asks “which directional derivative are we looking at?” and $\mathbf{u}$ asks “in which direction are we watching it change?” The Taylor expansion from [[Multivariable Taylor's Theorem|§9]] says exactly:
 
 $$
 f(\mathbf{p}+\mathbf{h}) = f(\mathbf{p}) + \underbrace{Df_{\mathbf{p}}(\mathbf{h})}_{\text{linear: gradient}} + \frac{1}{2}\underbrace{D^2f_{\mathbf{p}}(\mathbf{h}, \mathbf{h})}_{\text{bilinear: Hessian}} + o(|\mathbf{h}|^2).
 $$
 
-The second derivative test in [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-4|§14]] (checking whether $\mathbf{h}^T H_f \mathbf{h} > 0$ for all $\mathbf{h}$) was asking: is this bilinear form positive definite?
+The second derivative test in [[Second Derivative Test in Several Variables|§14]] (checking whether $\mathbf{h}^T H_f \mathbf{h} > 0$ for all $\mathbf{h}$) was asking: is this bilinear form positive definite?
 
 ### Why $d^2 = 0$: Symmetry Kills Antisymmetry
 
@@ -659,7 +659,7 @@ The second derivative test in [[Multivariable Analysis §14 Optimization and Lag
 
 > [!theorem] Proposition §22.9: $d^2 = 0$ Is Clairaut's Theorem in Forms Language
 > The following three statements are equivalent for $C^2$ functions:
-> 1. Equality of mixed partials: $f_{x_i x_j} = f_{x_j x_i}$ (Clairaut's theorem, [[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|§5]]).
+> 1. Equality of mixed partials: $f_{x_i x_j} = f_{x_j x_i}$ (Clairaut's theorem, [[Schwarz–Clairaut Theorem|§5]]).
 > 2. The Hessian is symmetric: $D^2f(\mathbf{u}, \mathbf{v}) = D^2f(\mathbf{v}, \mathbf{u})$.
 > 3. $d^2 = 0$: the exterior derivative applied twice gives zero.
 
@@ -715,11 +715,11 @@ At each level, $d$ measures the **obstruction to solving an equation**:
 ^prop-22-10
 
 > [!proof]+ Proof
-> If $\omega = d\eta$, then $d\omega = d(d\eta) = d^2\eta = 0$ by [[Multivariable Analysis §22 The Algebra of Differential Forms#^thm-22-5|Theorem §22.5]].
+> If $\omega = d\eta$, then $d\omega = d(d\eta) = d^2\eta = 0$ by [[Exterior Derivative Squares to Zero|Theorem §22.5]].
 
 ^pf-22-10
 
-*Uses:* [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-8|Def. §22.8]], [[Multivariable Analysis §22 The Algebra of Differential Forms#^thm-22-5|§22.5]]
+*Uses:* [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-8|Def. §22.8]], [[Exterior Derivative Squares to Zero|§22.5]]
 
 The forms terminology and the vector calculus terminology from [[Multivariable Analysis §11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1|§11]] describe the same concepts:
 
@@ -763,7 +763,7 @@ The converse — is every closed form exact? — is the central question. Equiva
 
 ^pf-22-11
 
-*Uses:* [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-8|Def. §22.8]], [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]], [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-5|Def. §22.5]], [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|§10.2]], [[Fundamental Theorem of Calculus|451 §34.1]]
+*Uses:* [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-8|Def. §22.8]], [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]], [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-5|Def. §22.5]], [[Multivariable Chain Rule|§10.2]], [[Fundamental Theorem of Calculus|451 §34.1]]
 
 What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the removed origin. The closed curve $\boldsymbol{\gamma}$ wraps around this hole, and the form $\omega$ detects it. On domains without holes, this failure does not occur:
 

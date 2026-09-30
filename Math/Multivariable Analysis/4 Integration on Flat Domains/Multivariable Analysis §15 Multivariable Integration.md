@@ -720,7 +720,7 @@ $$
 > \iint_D f(x, y) \, dx\, dy = \lim_{M, N \to \infty} \sum_{i=1}^{M} \sum_{j=1}^{N} g(\bar{r}_i, \bar{\theta}_j) \cdot hk = \iint_{D^*} g(r, \theta) \, dr\, d\theta.
 > $$
 >
-> By [[Multivariable Analysis §15 Multivariable Integration#^thm-15-8|Fubini's theorem]] on the rectangle $[a, b] \times [\alpha, \beta]$:
+> By [[Fubini's Theorem|Fubini's theorem]] on the rectangle $[a, b] \times [\alpha, \beta]$:
 >
 > $$
 > \iint_D f(x, y) \, dx\, dy = \int_\alpha^\beta \int_a^b f(r\cos\theta, r\sin\theta) \cdot r \, dr \, d\theta.
@@ -728,7 +728,7 @@ $$
 
 ^pf-15-7
 
-*Uses:* [[Multivariable Analysis §15 Multivariable Integration#^def-15-11|Def. §15.11]], [[Multivariable Analysis §15 Multivariable Integration#^rem-15-6|§15 Rem. (Evaluating the Integral)]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-8|§15.8]]
+*Uses:* [[Multivariable Analysis §15 Multivariable Integration#^def-15-11|Def. §15.11]], [[Multivariable Analysis §15 Multivariable Integration#^rem-15-6|§15 Rem. (Evaluating the Integral)]], [[Fubini's Theorem|§15.8]]
 
 > [!remark]- Connections
 > - Special case of the general [[Multivariable Analysis §15 Multivariable Integration#^thm-15-14|Change of Variables Formula]] (§15.14, §15.17), revisited in [[Multivariable Analysis §15 Multivariable Integration#^ex-15-4|Ex. §15.4]].
@@ -750,7 +750,7 @@ $$
 ^rem-15-9
 
 ![[m452-15-4.svg]]
-*The Jacobian of the polar map $\Phi(r,\theta) = (r\cos\theta, r\sin\theta)$, seen three ways. Top: equal cells in the $(r,\theta)$ plane map to annular cells whose width grows with $r$ — the distortion is position-dependent. Bottom: zooming into one cell, the map straightens into its derivative $D\Phi$, sending the square to a rectangle with orthogonal sides $|\boldsymbol{\Phi}_r|\,dr = dr$ and $|\boldsymbol{\Phi}_\theta|\,d\theta = r_0\,d\theta$; hence $dx\,dy = r\,dr\,d\theta$ — the factor in every polar integral of §15 is literally the width of the cell. At $r = 0$ the tangential side collapses, $J = 0$, and $\Phi$ degenerates (all $\theta$ give the same point): the [[Multivariable Analysis §13 The Inverse Function Theorem#^thm-13-2|Inverse Function Theorem]]'s hypothesis fails exactly where polar coordinates fail.*
+*The Jacobian of the polar map $\Phi(r,\theta) = (r\cos\theta, r\sin\theta)$, seen three ways. Top: equal cells in the $(r,\theta)$ plane map to annular cells whose width grows with $r$ — the distortion is position-dependent. Bottom: zooming into one cell, the map straightens into its derivative $D\Phi$, sending the square to a rectangle with orthogonal sides $|\boldsymbol{\Phi}_r|\,dr = dr$ and $|\boldsymbol{\Phi}_\theta|\,d\theta = r_0\,d\theta$; hence $dx\,dy = r\,dr\,d\theta$ — the factor in every polar integral of §15 is literally the width of the cell. At $r = 0$ the tangential side collapses, $J = 0$, and $\Phi$ degenerates (all $\theta$ give the same point): the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]]'s hypothesis fails exactly where polar coordinates fail.*
 
 ## Fubini's Theorem: Rigorous Treatment
 
@@ -848,8 +848,8 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 *Fubini's theorem geometrically: freeze $x$ and integrate over $y$ to get the cross-sectional area $A(x)$ (red slab); then integrate $A(x)$ over $x$ to stack the slabs into the volume. The iterated integral $\int\!\!\int f\,dy\,dx$ is this two-stage process; Fubini says it equals the double integral whenever $f$ is integrable.*
 
 > [!remark]- Connections
-> - Makes rigorous the [[Multivariable Analysis §15 Multivariable Integration#Iterated Integrals: The Simple Case|simple-case computation]] above; extended to curved regions in [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|Theorem §15.9]].
-> - Used to reduce Green's theorem to two 1D applications of the [[Fundamental Theorem of Calculus]]: [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Theorem §16.1]].
+> - Makes rigorous the simple-case computation (“Iterated Integrals: The Simple Case”) above; extended to curved regions in [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|Theorem §15.9]].
+> - Its Type I/II form plus the [[Fundamental Theorem of Calculus]] in the inner variable proves [[Green's Theorem|Green's Theorem]] (§16.1), and one dimension up the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] (§17.1).
 
 > [!remark] Remark: Why Continuity Matters
 > The key point is that $F(x) = \int_c^d f(x, y) \, dy$ must be well-defined and integrable. Continuity of $f$ guarantees this.
@@ -1024,7 +1024,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 >
 > The key observation: $D_k$ is a union of grid squares, and within each column $[t_i, t_{i+1}]$, the region is a rectangle $[t_i, t_{i+1}] \times [\psi_k(x), \varphi_k(x)]$ (where $\psi_k, \varphi_k$ are constant on this column).
 >
-> By [[Multivariable Analysis §15 Multivariable Integration#^thm-15-8|Fubini's theorem for rectangles]] (applied column by column):
+> By [[Fubini's Theorem|Fubini's theorem for rectangles]] (applied column by column):
 >
 > $$
 > \iint_{D_k} f \, dA = \int_{a_k}^{b_k} \left( \int_{\psi_k(x)}^{\varphi_k(x)} f(x, y) \, dy \right) dx.
@@ -1093,7 +1093,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 
 ^pf-15-9
 
-*Uses:* [[Multivariable Analysis §2 Open and Closed Sets#^def-2-4|Def. §2.4]], [[Multivariable Analysis §1 Sequences and Limits in ℝⁿ#^def-1-1|Def. §1.1]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-4|§15.4]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-5|§15.5]], [[Multivariable Analysis §15 Multivariable Integration#^cor-15-6|§15.6]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-8|§15.8]], [[Heine–Borel Theorem|590 §15.12]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Single Variable Analysis §19 Uniform Continuity#^thm-19-1|451 §19.1]], [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-5|451 §33.5]]
+*Uses:* [[Multivariable Analysis §2 Open and Closed Sets#^def-2-4|Def. §2.4]], [[Multivariable Analysis §1 Sequences and Limits in ℝⁿ#^def-1-1|Def. §1.1]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-4|§15.4]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-5|§15.5]], [[Multivariable Analysis §15 Multivariable Integration#^cor-15-6|§15.6]], [[Fubini's Theorem|§15.8]], [[Heine–Borel Theorem|590 §15.12]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Single Variable Analysis §19 Uniform Continuity#^thm-19-1|451 §19.1]], [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-5|451 §33.5]]
 
 > [!theorem] Theorem §15.10: Fubini for Type II Regions
 > If $D = \{(x, y) : c \leq y \leq d, \; h_1(y) \leq x \leq h_2(y)\}$ and $f$ is continuous on $D$, then:
@@ -1380,7 +1380,7 @@ We present three different proofs, each offering a distinct perspective:
 >
 > **Step 1: Taylor expansion with explicit remainder.**
 >
-> Fix a point $(u_0, v_0) \in D^*$. For $(u, v)$ near $(u_0, v_0)$, [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-2|Taylor's theorem]] gives:
+> Fix a point $(u_0, v_0) \in D^*$. For $(u, v)$ near $(u_0, v_0)$, [[Multivariable Taylor's Theorem|Taylor's theorem]] gives:
 >
 > $$
 > \begin{aligned}
@@ -1623,7 +1623,7 @@ We present three different proofs, each offering a distinct perspective:
 
 ^pf-15-14
 
-*Uses:* [[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]], [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-2|§9.2]], [[Multivariable Analysis §6 Differentiability#^def-6-2|Def. §6.2]], [[Multivariable Analysis §13 The Inverse Function Theorem#^def-13-1|Def. §13.1]], [[Mean Value Theorem|451 §29.3]], [[Topology §15 Compact Spaces#^rem-15-1|590 §15 Rem. (uniform continuity on compact sets)]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-1|§15.1]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-9|Def. §15.9]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-11|Def. §15.11]]
+*Uses:* [[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]], [[Multivariable Taylor's Theorem|§9.2]], [[Multivariable Analysis §6 Differentiability#^def-6-2|Def. §6.2]], [[Multivariable Analysis §13 The Inverse Function Theorem#^def-13-1|Def. §13.1]], [[Mean Value Theorem|451 §29.3]], [[Topology §15 Compact Spaces#^rem-15-1|590 §15 Rem. (uniform continuity on compact sets)]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-1|§15.1]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-9|Def. §15.9]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-11|Def. §15.11]]
 
 > [!remark] Remark: Extension to Arbitrary Domains: Jordan Measurability
 > The proof above assumes $D^*$ is a square (or rectangle). For arbitrary domains, we need additional assumptions and a more careful treatment using **Jordan measure**.
@@ -1737,7 +1737,7 @@ We present three different proofs, each offering a distinct perspective:
 >
 > This gives $y$ as a function of $(x, v)$: when we hold $x$ fixed and vary $v$, the point $(x, y) = (x, \gamma(x, v))$ traces a curve in the $(x, y)$-plane.
 >
-> Compute $\gamma_v$ using the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|chain rule]]:
+> Compute $\gamma_v$ using the [[Multivariable Chain Rule|chain rule]]:
 >
 > $$
 > \begin{aligned}
@@ -1794,7 +1794,7 @@ We present three different proofs, each offering a distinct perspective:
 
 ^pf-15-14-2
 
-*Uses:* [[Multivariable Analysis §15 Multivariable Integration#^lem-15-13|§15.13]], [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|§12.2]], [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|§10.2]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|§15.9]]
+*Uses:* [[Multivariable Analysis §15 Multivariable Integration#^lem-15-13|§15.13]], [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|§12.2]], [[Multivariable Chain Rule|§10.2]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|§15.9]]
 
 ---
 
@@ -1906,7 +1906,7 @@ We present three different proofs, each offering a distinct perspective:
 
 > [!remark]- Connections
 > - The linear case (Part I of the first proof) is [[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]]: $T$ changes volume by the factor $|\det T|$; the $C^1$ case is this applied to the derivative cell by cell.
-> - Generalizes the 1D substitution rule ([[Multivariable Analysis §15 Multivariable Integration#^lem-15-13|Lemma §15.13]]) and the [[Multivariable Analysis §15 Multivariable Integration#^thm-15-7|polar formula]]; extended to Jordan measurable domains in [[Multivariable Analysis §15 Multivariable Integration#^thm-15-17|Theorem §15.17]] and to $\mathbb{R}^n$ in [[Multivariable Analysis §15 Multivariable Integration#^thm-15-20|Theorem §15.20]].
+> - Generalizes the 1D substitution rule ([[Multivariable Analysis §15 Multivariable Integration#^lem-15-13|Lemma §15.13]]) and the [[Multivariable Analysis §15 Multivariable Integration#^thm-15-7|polar formula]]; extended to Jordan measurable domains in [[Change of Variables Formula (multiple integrals)|Theorem §15.17]] and to $\mathbb{R}^n$ in [[Multivariable Analysis §15 Multivariable Integration#^thm-15-20|Theorem §15.20]].
 > - In forms language the integrand $f\,|J|\,du\,dv$ is the pullback $\Phi^*(f\,dx \wedge dy)$ (up to orientation): [[Multivariable Analysis §22 The Algebra of Differential Forms#^ex-22-4|Ex. §22.4]].
 
 > [!remark] Remark: $|J|$ vs. $J$: Orientation and Area
@@ -1975,7 +1975,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 ^prop-15-16
 
 > [!proof]+ Proof
-> Since $\Phi$ is $C^1$ on the compact set $\overline{D^*}$ ([[Heine–Borel Theorem|Heine–Borel]]), it is Lipschitz ([[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-4|mean value theorem]]): there exists $L > 0$ such that
+> Since $\Phi$ is $C^1$ on the compact set $\overline{D^*}$ ([[Heine–Borel Theorem|Heine–Borel]]), it is Lipschitz ([[Mean Value Theorem in Several Variables|mean value theorem]]): there exists $L > 0$ such that
 >
 > $$
 > \|\Phi(p) - \Phi(q)\| \leq L \|p - q\| \quad \text{for all } p, q \in \overline{D^*}.
@@ -2007,7 +2007,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 
 ^pf-15-16
 
-*Uses:* [[Heine–Borel Theorem|590 §15.12]], [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-4|§9.4]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-13|Def. §15.13]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-14|Def. §15.14]]
+*Uses:* [[Heine–Borel Theorem|590 §15.12]], [[Mean Value Theorem in Several Variables|§9.4]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-13|Def. §15.13]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-14|Def. §15.14]]
 
 > [!theorem] Theorem §15.17: Change of Variables — General Jordan Measurable Domains
 > Let $D^* \subseteq \mathbb{R}^2$ be bounded and Jordan measurable. Let $\Phi: \overline{D^*} \to \overline{D}$ be a $C^1$ bijection with $C^1$ inverse, where $D = \Phi(D^*)$.
@@ -2071,7 +2071,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 
 > [!remark]- Connections
 > - The $n$-dimensional version is [[Multivariable Analysis §15 Multivariable Integration#^thm-15-20|Theorem §15.20]]; in forms language it becomes $\int_{\Phi(D^*)} \omega = \int_{D^*} \Phi^*\omega$ for orientation-preserving $\Phi$ ([[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-3|pullback, Def. §22.3]]).
-> - Used to parametrize surfaces and compute surface area: [[Multivariable Analysis §18 Surface Integrals#^thm-18-1|Theorem §18.1]].
+> - Used to parametrize surfaces and compute surface area: [[Surface Area via the Gram Matrix|Theorem §18.1]].
 
 > [!theorem] Proposition §15.18: Isolated Zeros of the Jacobian
 > The change of variables formula remains valid if $J = 0$ at finitely many isolated points $p_1, \ldots, p_n \in D^*$, provided $J$ does not change sign on $D^*$.
@@ -2081,7 +2081,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 > [!proof]+ Proof
 > For $\varepsilon > 0$, define $D^*_\varepsilon = D^* \setminus \bigcup_{k=1}^n B_\varepsilon(p_k)$ ([[Multivariable Analysis §2 Open and Closed Sets#^def-2-1|Def. §2.1]]).
 >
-> On $D^*_\varepsilon$, we have $J \neq 0$, so [[Multivariable Analysis §15 Multivariable Integration#^thm-15-17|Theorem §15.17]] applies:
+> On $D^*_\varepsilon$, we have $J \neq 0$, so [[Change of Variables Formula (multiple integrals)|Theorem §15.17]] applies:
 >
 > $$
 > \iint_{\Phi(D^*_\varepsilon)} f \, dx \, dy = \iint_{D^*_\varepsilon} f(\varphi, \psi) \cdot |J| \, du \, dv.
@@ -2095,7 +2095,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 
 ^pf-15-18
 
-*Uses:* [[Multivariable Analysis §2 Open and Closed Sets#^def-2-1|Def. §2.1]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-17|§15.17]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-4|§15.4]]
+*Uses:* [[Multivariable Analysis §2 Open and Closed Sets#^def-2-1|Def. §2.1]], [[Change of Variables Formula (multiple integrals)|§15.17]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-4|§15.4]]
 
 ### Geometric Interpretation and Higher Dimensions
 
@@ -2135,7 +2135,7 @@ The proof follows the same structure as the 2D case ([[Multivariable Analysis §
 
 > [!remark]- Connections
 > - Linear-algebra core: [[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]] for the local volume factor and [[Linear Algebra 9C Determinants#^ladr-9-49|LADR 9.49]] (det is multiplicative) for composing primitive transformations.
-> - In $\mathbb{R}^3$: the spherical volume element used in [[Multivariable Analysis §19 The Laplacian in Spherical Coordinates|§19]]; for general dimension it underlies the [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|Divergence Theorem in ℝⁿ]] and, as pullback of $n$-forms, the [[Multivariable Analysis §23 The Generalized Stokes' Theorem#^thm-23-1|Generalized Stokes' Theorem]].
+> - In $\mathbb{R}^3$: the spherical volume element used in [[Multivariable Analysis §19 The Laplacian in Spherical Coordinates|§19]]; for general dimension it underlies the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] and, as pullback of $n$-forms, the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]].
 
 ### Common Coordinate Systems and Worked Examples
 
@@ -2249,7 +2249,7 @@ We now demonstrate the change of variables formula with two complete computation
 >
 > **Verification:** Under this map, $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = r^2\cos^2\theta + r^2\sin^2\theta = r^2 \leq 1$. ✓
 >
-> **Step 2: Apply the [[Multivariable Analysis §15 Multivariable Integration#^thm-15-17|change of variables formula]].**
+> **Step 2: Apply the [[Change of Variables Formula (multiple integrals)|change of variables formula]].**
 >
 > $$
 > \text{Area}(D) = \iint_D 1 \, dx \, dy = \iint_{D^*} 1 \cdot |J| \, dr \, d\theta = \int_0^{2\pi} \int_0^1 abr \, dr \, d\theta.
@@ -2270,6 +2270,3 @@ We now demonstrate the change of variables formula with two complete computation
 > **Sanity check:** When $a = b = R$, this gives $\pi R^2$, the area of a circle of radius $R$. ✓
 
 ^ex-15-8
-
-> [!remark]- Connections
-> - Recomputed as a line integral $\frac12\oint (x\,dy - y\,dx)$ via [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Green's Theorem]].

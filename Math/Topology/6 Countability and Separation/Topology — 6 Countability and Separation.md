@@ -18,5 +18,5 @@ tags: [chapter, topology]
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[Topology §18 Countability Axioms#^thm-18-6|Theorem §18.6: Second-Countable Implies Dense Subset and Lindelöf]]: 2 later results
-- [[Topology §18 Countability Axioms#^thm-18-3|Theorem §18.3: Subspaces and Products]]: 1 later results
-- [[Topology §18 Countability Axioms#^prop-18-4|Proposition §18.4: Relationships Between Countability and Separability]]: 1 later results
+- [[Topology §18 Countability Axioms#^thm-18-3|Theorem §18.3: Subspaces and Products]]: 1 later result
+- [[Topology §18 Countability Axioms#^prop-18-4|Proposition §18.4: Relationships Between Countability and Separability]]: 1 later result

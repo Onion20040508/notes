@@ -35,7 +35,7 @@ $$
 
 ### Green's Theorem
 
-Classical statement ([[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Theorem §16.1]]): $\oint_{\partial D} P\,dx + Q\,dy = \iint_D (Q_x - P_y)\,dx\,dy$.
+Classical statement ([[Green's Theorem|Theorem §16.1]]): $\oint_{\partial D} P\,dx + Q\,dy = \iint_D (Q_x - P_y)\,dx\,dy$.
 
 **Right-hand side.** Let $\omega = f_1\,dx + f_2\,dy$ be a 1-form on $\mathbb{R}^2$ (with $f_1 = P$, $f_2 = Q$). Its exterior derivative is:
 
@@ -65,7 +65,7 @@ $$
 
 ### Stokes' Theorem in $\mathbb{R}^3$
 
-Classical statement ([[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1|Theorem §20.1]]): $\iint_S (\nabla \times \mathbf{F}) \cdot \hat{n}\,dS = \oint_{\partial S} \mathbf{F} \cdot d\mathbf{r}$.
+Classical statement ([[Stokes' Theorem in ℝ³|Theorem §20.1]]): $\iint_S (\nabla \times \mathbf{F}) \cdot \hat{n}\,dS = \oint_{\partial S} \mathbf{F} \cdot d\mathbf{r}$.
 
 **Right-hand side.** Let $\omega = f_1\,dx + f_2\,dy + f_3\,dz$ be a 1-form (with $\mathbf{F} = (f_1, f_2, f_3)$). By the curl proposition ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-3|Proposition §22.3]]):
 
@@ -107,7 +107,7 @@ $$
 
 ### The Divergence Theorem
 
-Classical statement ([[Multivariable Analysis §18 Surface Integrals#^thm-18-2|Theorem §18.2]]): $\iint_{\partial V} \mathbf{F} \cdot \hat{n}\,dS = \iiint_V \nabla \cdot \mathbf{F}\,dV$.
+Classical statement ([[Divergence Theorem in ℝ³|Theorem §18.2]]): $\iint_{\partial V} \mathbf{F} \cdot \hat{n}\,dS = \iiint_V \nabla \cdot \mathbf{F}\,dV$.
 
 **Right-hand side.** Let $\eta = f_{23}\,dy \wedge dz + f_{31}\,dz \wedge dx + f_{12}\,dx \wedge dy$ be a 2-form (with $\mathbf{F} = (f_{23}, f_{31}, f_{12})$). By the divergence proposition ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-4|Proposition §22.4]]):
 
@@ -156,8 +156,8 @@ All four classical theorems have the same form: $\int_{\partial \Omega} \omega =
 ^thm-23-1
 
 > [!remark]- Connections
-> - $k = 1$: [[Fundamental Theorem of Calculus]]; $k = 2$: [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Green's theorem (Theorem §16.1)]] and [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1|Stokes' theorem in ℝ³ (Theorem §20.1)]]; $k = 3$: [[Multivariable Analysis §18 Surface Integrals#^thm-18-2|Divergence theorem in ℝ³ (Theorem §18.2)]].
-> - Top degree in any dimension ($k = n$, $\Omega \subseteq \mathbb{R}^n$) is the [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|Divergence Theorem in ℝⁿ (Theorem §17.1)]].
+> - $k = 1$: [[Fundamental Theorem of Calculus]]; $k = 2$: [[Green's Theorem|Green's theorem (Theorem §16.1)]] and [[Stokes' Theorem in ℝ³|Stokes' theorem in ℝ³ (Theorem §20.1)]]; $k = 3$: [[Divergence Theorem in ℝ³|Divergence theorem in ℝ³ (Theorem §18.2)]].
+> - Top degree in any dimension ($k = n$, $\Omega \subseteq \mathbb{R}^n$) is the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ (Theorem §17.1)]].
 > - The orientation bookkeeping is carried by the sign of the pullback determinant ([[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-3|Def. §22.3]]; [[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]]).
 
 **Reading the formula:** $\omega$ is one degree lower than the dimension of $\Omega$, so $\omega$ can be integrated over $\partial \Omega$ (which has dimension $k-1$), and $d\omega$ can be integrated over $\Omega$ (which has dimension $k$). The four classical theorems are this single identity applied at $k = 1, 2, 2, 3$:
@@ -181,7 +181,7 @@ All four classical theorems have the same form: $\int_{\partial \Omega} \omega =
 >
 > The apparent differences — gradient vs curl vs divergence, line integrals vs surface integrals vs volume integrals — arise from the same operation $d$ applied to forms of different degrees, integrated over regions of different dimensions.
 >
-> The three identities $d^2 = 0$ ($\text{curl}(\text{grad}) = 0$, $\text{div}(\text{curl}) = 0$) are also a single identity ([[Multivariable Analysis §22 The Algebra of Differential Forms#^thm-22-5|Theorem §22.5]]). And the orientation signs that caused so much bookkeeping (the [[Multivariable Analysis §18 Surface Integrals#^rem-18-7|bottom surface normal]], the boundary curve direction, the $f(b) - f(a)$ sign) are all automatically handled by the wedge product's anti-commutativity.
+> The three identities $d^2 = 0$ ($\text{curl}(\text{grad}) = 0$, $\text{div}(\text{curl}) = 0$) are also a single identity ([[Exterior Derivative Squares to Zero|Theorem §22.5]]). And the orientation signs that caused so much bookkeeping (the [[Multivariable Analysis §18 Surface Integrals#^rem-18-7|bottom surface normal]], the boundary curve direction, the $f(b) - f(a)$ sign) are all automatically handled by the wedge product's anti-commutativity.
 >
 > This is why differential forms are the natural language for integration on manifolds: a single theorem, a single derivative, a single product rule for signs.
 

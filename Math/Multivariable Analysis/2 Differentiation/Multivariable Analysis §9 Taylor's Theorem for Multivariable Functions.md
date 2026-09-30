@@ -82,7 +82,7 @@ Now we apply single-variable Taylor to $F(t)$ around $t = 0$!
 
 ^pf-9-1
 
-*Uses:* [[Multivariable Analysis §6 Differentiability#^thm-6-9|§6.9]], [[Multivariable Analysis §6 Differentiability#^thm-6-2|§6.2]], [[Multivariable Analysis §5 Equality of Mixed Partials#^thm-5-1|§5.1]]
+*Uses:* [[Multivariable Analysis §6 Differentiability#^thm-6-9|§6.9]], [[Continuous Partials Imply Differentiability|§6.2]], [[Schwarz–Clairaut Theorem|§5.1]]
 
 > [!remark] Remark: First Few Derivatives
 > Explicitly:
@@ -141,7 +141,7 @@ Now we apply single-variable Taylor to $F(t)$ around $t = 0$!
 
 > [!remark]- Connections
 > - The 1D theorem it reduces to: [[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|Taylor's Theorem with Lagrange Remainder]].
-> - The second-order case drives the [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-4|second-order sufficient conditions (§14.4)]] via the [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-2|Hessian]].
+> - The second-order case drives the [[Second Derivative Test in Several Variables|second-order sufficient conditions (§14.4)]] via the [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-2|Hessian]].
 
 > [!remark] Remark: Compact Notation Using Differentials
 > The Taylor expansion can be written elegantly as:
