@@ -53,34 +53,36 @@ graph TD
 
 ## Chapters
 **Part I: General Topology**
-- [[Topology — 1 Topological Spaces and Constructions]]
-- [[Topology — 2 Closedness, Continuity, and Hausdorff]]
-- [[Topology — 3 Products, Metrics, and Quotients]]
-- [[Topology — 4 Connectedness]]
-- [[Topology — 5 Compactness]]
-- [[Topology — 6 Countability and Separation]]
+- [[1 Topological Spaces and Constructions]]
+- [[2 Closedness, Continuity, and Hausdorff]]
+- [[3 Products, Metrics, and Quotients]]
+- [[4 Connectedness]]
+- [[5 Compactness]]
+- [[6 Countability and Separation]]
 
 **Part II: Algebraic Topology**
-- [[Topology — 7 Algebraic Foundations]]
-- [[Topology — 8 Homotopy and the Fundamental Group]]
-- [[Topology — 9 Covering Spaces and Lifting]]
-- [[Topology — 10 Applications of π₁]]
-- [[Topology — 11 Computing π₁]]
+- [[7 Algebraic Foundations]]
+- [[8 Homotopy and the Fundamental Group]]
+- [[9 Covering Spaces and Lifting]]
+- [[10 Applications of π₁]]
+- [[11 Computing π₁]]
 
 ## Summary
-- [[Topology — Algebraic Topology Toolkit]]: the four tools for computing π₁, a decision tree, and a table of computed fundamental groups.
+- [[Algebraic Topology Toolkit]]: the four tools for computing π₁, a decision tree, and a table of computed fundamental groups.
 
 ## Prerequisites from other subjects
 The results from other subjects that this course's proofs and definitions cite (with the number of citing items). Most connections to MATH 451 and Linear Algebra are conceptual and live in the Connections callouts rather than in proofs; each chapter note gives per-chapter counts.
 
 **[[Single Variable Analysis]]**
 - [[Extreme Value Theorem]] (1)
-- [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^def-13-2|Definition §13.2: Convergence and Cauchy in a Metric Space]] (1)
-- [[Single Variable Analysis §4 The Completeness Axiom#^thm-4-7|Theorem §4.7: Density of ℚ in ℝ]] (1)
+- [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Definition §13.2: Convergence and Cauchy in a Metric Space]] (1)
+- [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7: Density of ℚ in ℝ]] (1)
 
 **[[Linear Algebra]]**
-- [[First isomorphism theorem]] (2)
-- [[Linear Algebra 2B Bases#^ladr-2-26|2.26 Basis]] (1)
+- [[2B Bases#^ladr-2-26|2.26 Basis]] (1)
+
+**[[Group Theory]]**
+- [[First Isomorphism Theorem for Groups]] (2)
 
 ## Workhorse examples
 - [[Lower limit topology]]

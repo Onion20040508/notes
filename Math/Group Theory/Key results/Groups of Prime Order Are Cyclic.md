@@ -5,25 +5,25 @@ source: "[[Group Theory]]"
 aliases: ["MATH 493 27.7"]
 tags: [group-theory, hub]
 ---
-![[Group Theory §27 The Index and Lagrange's Theorem#^thm-27-7]]
+![[§27 The Index and Lagrange's Theorem#^thm-27-7]]
 
 ## Treated in
-- [[Group Theory §27 The Index and Lagrange's Theorem#^thm-27-7|Theorem §27.7: Groups of Prime Order]], in [[Group Theory §27 The Index and Lagrange's Theorem]]
+- [[§27 The Index and Lagrange's Theorem#^thm-27-7|Theorem §27.7: Groups of Prime Order]], in [[§27 The Index and Lagrange's Theorem]]
 
 ## Its proof uses
-- [[Group Theory §4 Subgroups#^lem-4-4|Lemma §4.4: Exponent Laws]]
-- [[Group Theory §4 Subgroups#^prop-4-5|Proposition §4.5: ⟨g⟩ Is a Subgroup]]
-- [[Group Theory §4 Subgroups#^def-4-5|Definition §4.5: Order of a Group; Order of an Element; Cyclic Groups]]
-- [[Group Theory §4 Subgroups#^prop-4-8|Proposition §4.8: Every Element of a Finite Group Has Finite Order]]
-- [[Group Theory §17 Cyclic Groups#^thm-17-1|Theorem §17.1: Classification of Cyclic Groups]]
-- [[Group Theory §17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]
-- [[Group Theory §27 The Index and Lagrange's Theorem#^thm-27-2|Theorem §27.2: Lagrange]]
+- [[§4 Subgroups#^lem-4-4|Lemma §4.4: Exponent Laws]]
+- [[§4 Subgroups#^prop-4-5|Proposition §4.5: ⟨g⟩ Is a Subgroup]]
+- [[§4 Subgroups#^def-4-5|Definition §4.5: Order of a Group; Order of an Element; Cyclic Groups]]
+- [[§4 Subgroups#^prop-4-8|Proposition §4.8: Every Element of a Finite Group Has Finite Order]]
+- [[§17 Cyclic Groups#^thm-17-1|Theorem §17.1: Classification of Cyclic Groups]]
+- [[§17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]
+- [[§27 The Index and Lagrange's Theorem#^thm-27-2|Theorem §27.2: Lagrange]]
 
 ## Used in (Group Theory)
-- [[Group Theory §27 The Index and Lagrange's Theorem#^cor-27-8|Corollary §27.8: Groups of Prime Order Have No Proper Nontrivial Subgroups]]
+- [[§27 The Index and Lagrange's Theorem#^cor-27-8|Corollary §27.8: Groups of Prime Order Have No Proper Nontrivial Subgroups]]
 
 ## Connections
-- **Used for.** [[Group Theory §27 The Index and Lagrange's Theorem#^cor-27-8|No Proper Nontrivial Subgroups]] (§27.8). The abelian simple groups are exactly the ℤ/pℤ ([[Group Theory §39 Simple Groups#^thm-39-1|§39.1]]). Every non-identity element is a generator ([[Group Theory §27 The Index and Lagrange's Theorem#^rem-27-3|A Classification, for Once]]).
-- **Prime is needed.** Order 4 has two groups, ℤ/4ℤ and ℤ/2ℤ × ℤ/2ℤ ≅ U₈ ([[Group Theory §16 Isomorphisms#^prop-16-8|§16.8]]), though both are abelian ([[Group Theory §32 Conjugation as an Action and the Class Equation#^prop-32-6|§32.6]]). Order 6 has two, ℤ/6ℤ and S₃.
-- **Same idea elsewhere.** The 590 computation of π₁(P²) ends with the case p = 2 ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2|590 §28.2]]): the lifting correspondence shows |π₁(P²)| = 2 ([[Properties of the Lifting Correspondence]]), and a group of order 2 is ℤ/2ℤ.
+- **Used for.** [[§27 The Index and Lagrange's Theorem#^cor-27-8|No Proper Nontrivial Subgroups]] (§27.8). The abelian simple groups are exactly the ℤ/pℤ ([[§39 Simple Groups#^thm-39-1|§39.1]]). Every non-identity element is a generator ([[§27 The Index and Lagrange's Theorem#^rem-27-3|A Classification, for Once]]).
+- **Prime is needed.** Order 4 has two groups, ℤ/4ℤ and ℤ/2ℤ × ℤ/2ℤ ≅ U₈ ([[§16 Isomorphisms#^prop-16-8|§16.8]]), though both are abelian ([[§32 Conjugation as an Action and the Class Equation#^prop-32-6|§32.6]]). Order 6 has two, ℤ/6ℤ and S₃.
+- **Same idea elsewhere.** The 590 computation of π₁(P²) ends with the case p = 2 ([[§28 Fundamental Group of Some Surfaces#^thm-28-2|590 §28.2]]): the lifting correspondence shows |π₁(P²)| = 2 ([[Properties of the Lifting Correspondence]]), and a group of order 2 is ℤ/2ℤ.
 - **Coming later in the course.** The Sylow theorems extend such classifications to other small orders, for example in classifying small simple groups.

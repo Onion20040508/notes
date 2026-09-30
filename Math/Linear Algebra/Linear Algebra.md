@@ -35,12 +35,12 @@ graph TD
 ```
 
 ## Chapters
-- [[Linear Algebra — 1 Vector Spaces]]
-- [[Linear Algebra — 2 Finite-Dimensional Vector Spaces]]
-- [[Linear Algebra — 3 Linear Maps]]
-- [[Linear Algebra — 4 Polynomials]]
-- [[Linear Algebra — 5 Eigenvalues and Eigenvectors]]
-- [[Linear Algebra — 6 Inner Product Spaces]]
-- [[Linear Algebra — 7 Operators on Inner Product Spaces]]
-- [[Linear Algebra — 8 Operators on Complex Vector Spaces]]
-- [[Linear Algebra — 9 Multilinear Algebra and Determinants]]
+- [[1 Vector Spaces]]
+- [[2 Finite-Dimensional Vector Spaces]]
+- [[3 Linear Maps]]
+- [[4 Polynomials]]
+- [[5 Eigenvalues and Eigenvectors]]
+- [[6 Inner Product Spaces]]
+- [[7 Operators on Inner Product Spaces]]
+- [[8 Operators on Complex Vector Spaces]]
+- [[9 Multilinear Algebra and Determinants]]

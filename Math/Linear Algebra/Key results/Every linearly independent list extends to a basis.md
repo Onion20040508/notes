@@ -5,24 +5,24 @@ ladr-hub: "2.32"
 aliases: ["LADR 2.32"]
 tags: [linear-algebra, hub]
 ---
-![[Linear Algebra 2B Bases#^ladr-2-32]]
+![[2B Bases#^ladr-2-32]]
 
 ## Treated in
-- [[Linear Algebra 2B Bases#^ladr-2-32|Axler 2.32]], in [[Linear Algebra 2B Bases]]
+- [[2B Bases#^ladr-2-32|Axler 2.32]], in [[2B Bases]]
 
 ## Proof uses
 - [[Every spanning list contains a basis|2.30]]
 
 ## Used in (Linear Algebra)
-- [[Linear Algebra 2B Bases#^ladr-2-33|2.33 Every subspace of V is part of a direct sum equal to V]]
-- [[Linear Algebra 2C Dimension#^ladr-2-38|2.38 Linearly independent list of the right length is a basis]]
-- [[Linear Algebra 2C Dimension#^ladr-2-43|2.43 Dimension of a sum]]
+- [[2B Bases#^ladr-2-33|2.33 Every subspace of V is part of a direct sum equal to V]]
+- [[2C Dimension#^ladr-2-38|2.38 Linearly independent list of the right length is a basis]]
+- [[2C Dimension#^ladr-2-43|2.43 Dimension of a sum]]
 - [[Fundamental theorem of linear maps|3.21 Fundamental theorem of linear maps]]
-- [[Linear Algebra 6B Orthonormal Bases#^ladr-6-36|6.36 Every orthonormal list extends to an orthonormal basis]]
+- [[6B Orthonormal Bases#^ladr-6-36|6.36 Every orthonormal list extends to an orthonormal basis]]
 
 ## Used in (Group Theory)
-- [[Group Theory §30 Examples꞉ Linear Groups and the Cube#^prop-30-1|Proposition §30.1: GL_3(ℝ) Acting on ℝ³]]
+- [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-1|Proposition §30.1: GL_3(ℝ) Acting on ℝ³]]
 
 ## Connections
-- The key step of [[Fundamental theorem of linear maps]], [[Linear Algebra 2B Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]], [[Linear Algebra 2C Dimension#^ladr-2-43|Dimension of a sum]], [[Linear Algebra 2C Dimension#^ladr-2-38|Linearly independent list of the right length is a basis]].
-- Inner-product version: [[Linear Algebra 6B Orthonormal Bases#^ladr-6-36|Every orthonormal list extends to an orthonormal basis]] (via [[Gram–Schmidt procedure]]).
+- The key step of [[Fundamental theorem of linear maps]], [[2B Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]], [[2C Dimension#^ladr-2-43|Dimension of a sum]], [[2C Dimension#^ladr-2-38|Linearly independent list of the right length is a basis]].
+- Inner-product version: [[6B Orthonormal Bases#^ladr-6-36|Every orthonormal list extends to an orthonormal basis]] (via [[Gram–Schmidt procedure]]).

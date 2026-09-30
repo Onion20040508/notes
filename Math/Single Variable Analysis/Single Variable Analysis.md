@@ -35,12 +35,12 @@ graph TD
 ```
 
 ## Chapters
-- [[Single Variable Analysis — 1 Introduction]]
-- [[Single Variable Analysis — 2 Sequences]]
-- [[Single Variable Analysis — 3 Continuity]]
-- [[Single Variable Analysis — 4 Sequences and Series of Functions]]
-- [[Single Variable Analysis — 5 Differentiation]]
-- [[Single Variable Analysis — 6 Integration]]
+- [[1 Introduction]]
+- [[2 Sequences]]
+- [[3 Continuity]]
+- [[4 Sequences and Series of Functions]]
+- [[5 Differentiation]]
+- [[6 Integration]]
 
 ## Workhorse examples
 - [[Reciprocal function 1∕x]]

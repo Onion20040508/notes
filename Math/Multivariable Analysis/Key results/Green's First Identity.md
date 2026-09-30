@@ -5,23 +5,23 @@ source: "[[Multivariable Analysis]]"
 aliases: ["MATH 452 17.2", "Green's identities"]
 tags: [multivariable-analysis, hub]
 ---
-![[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2]]
+![[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2]]
 
 ## Treated in
-- [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|Theorem §17.2: Green's First Identity]], in [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities]]
+- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|Theorem §17.2: Green's First Identity]], in [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities]]
 
 ## Its proof uses
-- [[Multivariable Analysis §6 Differentiability#^thm-6-4|Theorem §6.4: Product Rule for Partial Derivatives]]
-- [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|Theorem §17.1: Divergence Theorem in ℝⁿ]]
-- [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Definition §17.2: Gradient and Laplacian]]
+- [[§6 Differentiability#^thm-6-4|Theorem §6.4: Product Rule for Partial Derivatives]]
+- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|Theorem §17.1: Divergence Theorem in ℝⁿ]]
+- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Definition §17.2: Gradient and Laplacian]]
 
 ## Used in (Multivariable Analysis)
-- [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|Example §17.1: Uniqueness for the Dirichlet Problem]]
-- [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-2|Example §17.2: Uniqueness for the Neumann Problem]]
-- [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|Theorem §17.3: Green's Second Identity]]
+- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|Example §17.1: Uniqueness for the Dirichlet Problem]]
+- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-2|Example §17.2: Uniqueness for the Neumann Problem]]
+- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|Theorem §17.3: Green's Second Identity]]
 
 ## Connections
-- **Proof.** Apply the [[Divergence Theorem in ℝⁿ]] to w = u∇v, using the [[Multivariable Analysis §6 Differentiability#^thm-6-4|product rule]] to get div w = ∇u·∇v + uΔv. The boundary term uses ∂v/∂n = ∇v·n̂, a [[Directional Derivative Formula|directional derivative]].
-- **Generalizes.** For n = 1 it is [[Single Variable Analysis §34 Fundamental Theorem of Calculus#^thm-34-3|Integration by Parts]] (451 §34.3). In ℝ³ it follows the same way from the [[Divergence Theorem in ℝ³]] ([[Multivariable Analysis §18 Surface Integrals#^rem-18-9|Green's Identities Revisited]]).
-- **Uniqueness.** With u = v = w harmonic, ∫|∇w|² = 0 forces ∇w = 0 (the analogue of [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-7|451 §33.7]]). So w is constant on a [[Topology §13 Connected Spaces#^def-13-1|connected]] domain: zero for the [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|Dirichlet problem]], and a constant for the [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-2|Neumann problem]].
-- **Symmetry.** Swapping u and v and subtracting gives [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|Green's second identity]]: with vanishing boundary terms, Δ is symmetric for the L² inner product. This is the analogue of a self-adjoint operator ([[Linear Algebra 7A Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]), which has an orthonormal eigenbasis by the [[Real spectral theorem]].
+- **Proof.** Apply the [[Divergence Theorem in ℝⁿ]] to w = u∇v, using the [[§6 Differentiability#^thm-6-4|product rule]] to get div w = ∇u·∇v + uΔv. The boundary term uses ∂v/∂n = ∇v·n̂, a [[Directional Derivative Formula|directional derivative]].
+- **Generalizes.** For n = 1 it is [[§34 Fundamental Theorem of Calculus#^thm-34-3|Integration by Parts]] (451 §34.3). In ℝ³ it follows the same way from the [[Divergence Theorem in ℝ³]] ([[§18 Surface Integrals#^rem-18-9|Green's Identities Revisited]]).
+- **Uniqueness.** With u = v = w harmonic, ∫|∇w|² = 0 forces ∇w = 0 (the analogue of [[§33 Properties of the Riemann Integral#^thm-33-7|451 §33.7]]). So w is constant on a [[§13 Connected Spaces#^def-13-1|connected]] domain: zero for the [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|Dirichlet problem]], and a constant for the [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-2|Neumann problem]].
+- **Symmetry.** Swapping u and v and subtracting gives [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|Green's second identity]]: with vanishing boundary terms, Δ is symmetric for the L² inner product. This is the analogue of a self-adjoint operator ([[7A Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]), which has an orthonormal eigenbasis by the [[Real spectral theorem]].
