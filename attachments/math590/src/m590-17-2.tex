@@ -1,0 +1,30 @@
+% Figure from MATH 590 notes, section 17. Compile with the notes preamble.
+% Orthographic view, elevation 20 deg: (x,y,z) -> (x, 0.940 z + 0.342 y). Unit sphere centred at (0,0,1).
+\begin{tikzpicture}[scale=1.15]
+  % tangent plane R^2 at the south pole, with the compact disk C = {|w| <= 2}
+  \fill[figR!10] (-2.9,-0.82) -- (2.9,-0.82) -- (2.9,0.82) -- (-2.9,0.82) -- cycle;
+  \draw[black!40, thin] (-2.9,-0.82) -- (2.9,-0.82) -- (2.9,0.82) -- (-2.9,0.82) -- cycle;
+  \filldraw[figB, fill=figB!14, thick] (0,0) ellipse (2 and 0.684);
+  \node[font=\small] at (2.55,0.55) {$\mathbb{R}^2$};
+  \node[font=\scriptsize, figB] at (-1.25,-0.3) {$C$};
+  \node[font=\scriptsize, figR] at (-2.45,0.55) {$Y\setminus C$};
+  % the sphere: upper cap (red) and lower half (blue), split by the front half of the equator
+  \fill[figR!14] (1,0.94) arc (0:-180:1 and 0.342) arc (180:0:1);
+  \fill[figB!14] (1,0.94) arc (0:-180:1 and 0.342) arc (180:360:1);
+  \draw[black!45, dashed] (1,0.94) arc (0:180:1 and 0.342);
+  \draw[figB, thick] (1,0.94) arc (0:-180:1 and 0.342);
+  \draw[figB, thick] (0,0.94) circle (1);
+  \node[font=\small, figB] at (-1.15,1.75) {$S^2$};
+  % projection ray from N through p to w
+  \draw[black!55, thin, dashed] (0,1.879) -- (0.857,1.062);
+  \draw[black!55, thin] (0.857,1.062) -- (2.4,-0.41);
+  \fill (0.857,1.062) circle (1.2pt);
+  \node[font=\scriptsize, right] at (0.9,1.12) {$p$};
+  \fill (2.4,-0.41) circle (1.2pt);
+  \node[font=\scriptsize, below=1pt] at (2.4,-0.41) {$w$};
+  % poles
+  \fill[figR] (0,1.879) circle (1.7pt);
+  \node[font=\scriptsize, figR, above=2pt] at (0,1.879) {$N \leftrightarrow \infty$};
+  \fill (0,0) circle (1.2pt);
+  \node[font=\scriptsize, below=1pt] at (0,0) {$S$};
+\end{tikzpicture}

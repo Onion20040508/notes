@@ -1,0 +1,47 @@
+% Figure from MATH 590 notes, section 10. Compile with the notes preamble.
+\begin{tikzpicture}[yscale=1.5,
+  hol/.style={circle, draw=figB, fill=white, inner sep=0pt, minimum size=3.4pt},
+  pt/.style={circle, fill=figR, inner sep=0pt, minimum size=3.6pt}]
+  \def\t{0.42}
+  % ---------- left: a product basis element ----------
+  \begin{scope}
+    \node[font=\scriptsize, black!70] at (2.1,1.45) {product: $(-1,1)\times(-\tfrac12,\tfrac12)\times\mathbb{R}\times\mathbb{R}\times\cdots$};
+    \foreach \n in {1,...,7} {
+      \pgfmathsetmacro{\x}{0.55*\n-0.1}
+      \draw[black!40, thin] (\x,-1.25) -- (\x,1.25);
+      \node[font=\scriptsize, black!70] at (\x,-1.4) {$\n$};
+      \ifnum\n<3
+        \pgfmathsetmacro{\h}{1/\n}
+        \draw[figB, very thick] (\x,-\h) -- (\x,\h);
+        \node[hol] at (\x,\h) {}; \node[hol] at (\x,-\h) {};
+      \else
+        \draw[figB, very thick] (\x,-1.25) -- (\x,1.25);
+      \fi
+    }
+    \node[font=\scriptsize, black!60] at (4.25,0) {$\cdots$};
+    \draw[figR, dashed, thin] (0.3,\t) -- (4.05,\t);
+    \foreach \n in {1,...,7} { \node[pt] at (0.55*\n-0.1,\t) {}; }
+    \node[font=\scriptsize, figR, anchor=east] at (0.3,\t) {$t$};
+    \draw[black!40, thin] (0.3,0) -- (4.05,0);
+    \node[font=\scriptsize, black!60, anchor=east] at (0.3,0) {$0$};
+  \end{scope}
+  % ---------- right: the box open set U ----------
+  \begin{scope}[xshift=5.2cm]
+    \node[font=\scriptsize, black!70] at (2.1,1.45) {box: $U = \prod_n (-\tfrac1n,\tfrac1n)$};
+    \foreach \n in {1,...,7} {
+      \pgfmathsetmacro{\x}{0.55*\n-0.1}
+      \pgfmathsetmacro{\h}{1/\n}
+      \draw[black!40, thin] (\x,-1.25) -- (\x,1.25);
+      \node[font=\scriptsize, black!70] at (\x,-1.4) {$\n$};
+      \draw[figB, very thick] (\x,-\h) -- (\x,\h);
+      \node[hol] at (\x,\h) {}; \node[hol] at (\x,-\h) {};
+    }
+    \node[font=\scriptsize, black!60] at (4.25,0) {$\cdots$};
+    \draw[figR, dashed, thin] (0.3,\t) -- (4.05,\t);
+    \foreach \n in {1,...,7} { \node[pt] at (0.55*\n-0.1,\t) {}; }
+    \node[font=\scriptsize, figR, anchor=east] at (0.3,\t) {$t$};
+    \draw[black!40, thin] (0.3,0) -- (4.05,0);
+    \node[font=\scriptsize, black!60, anchor=east] at (0.3,0) {$0$};
+  \end{scope}
+  \node[font=\scriptsize, black!70] at (-0.2,-1.4) {$n$};
+\end{tikzpicture}

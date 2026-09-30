@@ -1,0 +1,31 @@
+% Figure from MATH 590 notes, section 17. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.05]
+  % the tangent line R at the south pole
+  \draw[figR, very thick] (-4.1,0) -- (-2,0);
+  \draw[figR, very thick] (2,0) -- (4.1,0);
+  \draw[figB, very thick] (-2,0) -- (2,0);
+  \node[font=\scriptsize, figR] at (4.35,0) {$\cdots$};
+  \node[font=\scriptsize, figR] at (-4.35,0) {$\cdots$};
+  \node[font=\small] at (4.2,-0.35) {$\mathbb{R}$};
+  % the circle
+  \draw[figB, very thick] (1,1) arc (0:-180:1);
+  \draw[figR, very thick] (1,1) arc (0:180:1);
+  % hollow/filled endpoints
+  \fill[figB] (-2,0) circle (1.5pt) (2,0) circle (1.5pt) (1,1) circle (1.5pt) (-1,1) circle (1.5pt);
+  \node[font=\scriptsize, figB, below=2pt] at (-2,0) {$-M$};
+  \node[font=\scriptsize, figB, below=2pt] at (2,0) {$M$};
+  \node[font=\scriptsize, figB] at (0,-0.75) {$C=[-M,M]$};
+  \node[font=\scriptsize, figR] at (-3.1,0.32) {$Y\setminus C$};
+  % projection ray through a sample point
+  \draw[black!55, thin] (0,2) -- (3.2,0);
+  \fill (0.899,1.438) circle (1.3pt);
+  \node[font=\scriptsize, above right=-1pt] at (0.899,1.438) {$p$};
+  \fill (3.2,0) circle (1.3pt);
+  \node[font=\scriptsize, below=2pt] at (3.2,0) {$x$};
+  % poles
+  \fill[figR] (0,2) circle (1.8pt);
+  \node[font=\scriptsize, figR, above=2pt] at (0,2) {$N \leftrightarrow \infty$};
+  \fill (0,0) circle (1.3pt);
+  \node[font=\scriptsize, below=2pt] at (0,0) {$S$};
+  \node[font=\small, figB] at (-1.25,1.55) {$S^1$};
+\end{tikzpicture}

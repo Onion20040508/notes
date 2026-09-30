@@ -1,0 +1,23 @@
+% Figure from MATH 590 notes, section 22. Compile with the notes preamble.
+\begin{tikzpicture}[scale=0.85]
+  % regions (s in [0,1] -> [0,4], t in [0,1] -> [0,4])
+  \fill[figB!10] (0,0) -- (1,0) -- (2,4) -- (0,4) -- cycle;
+  \fill[figR!15] (1,0) -- (2,0) -- (3,4) -- (2,4) -- cycle;
+  \fill[figB!22] (2,0) -- (4,0) -- (4,4) -- (3,4) -- cycle;
+  \draw[black!55, thick] (1,0) -- node[pos=0.72, sloped, above, font=\scriptsize, black!70] {$s = (t+1)/4$} (2,4);
+  \draw[black!55, thick] (2,0) -- node[pos=0.28, sloped, below, font=\scriptsize, black!70] {$s = (t+2)/4$} (3,4);
+  \draw[black!70, thin] (0,0) rectangle (4,4);
+  % region labels
+  \node[font=\small, figB] at (0.75,2) {$f$};
+  \node[font=\small, figR] at (2,2) {$g$};
+  \node[font=\small, figB] at (3.3,2) {$h$};
+  % break points at t = 0 and t = 1
+  \foreach \x/\l in {0/0, 1/\tfrac14, 2/\tfrac12, 4/1} \node[font=\scriptsize, below] at (\x,0) {$\l$};
+  \foreach \x/\l in {0/0, 2/\tfrac12, 3/\tfrac34, 4/1} \node[font=\scriptsize, above] at (\x,4) {$\l$};
+  \node[font=\scriptsize, anchor=north] at (2,-0.45) {$t = 0$: \ $(f * g) * h$};
+  \node[font=\scriptsize, anchor=south] at (2,4.45) {$t = 1$: \ $f * (g * h)$};
+  \node[font=\scriptsize, left] at (0,2) {$x_0$};
+  \node[font=\scriptsize, right] at (4,2) {$x_3$};
+  \draw[-stealth, thin] (4.8,0) -- (4.8,1.2) node[above, font=\scriptsize] {$t$};
+  \draw[-stealth, thin] (4.8,0) -- (5.8,0) node[right, font=\scriptsize] {$s$};
+\end{tikzpicture}

@@ -1,0 +1,25 @@
+% Figure from MATH 590 notes, section 2. Compile with the notes preamble.
+\begin{tikzpicture}
+  % left: B = open disk (given, blue); B' = open square around x inside B (found, red)
+  \begin{scope}
+    \draw[figB, thick, fill=figB!8] (0,0) circle (1.2);
+    \coordinate (x) at (0.45,0.3);
+    \draw[figR, thick, fill=figR!15] ($(x)+(-0.38,-0.38)$) rectangle ($(x)+(0.38,0.38)$);
+    \fill (x) circle (1.4pt);
+    \node[font=\scriptsize, below right=-1pt] at (x) {$x$};
+    \node[font=\small, figB] at (-0.55,-0.45) {$B$};
+    \node[font=\scriptsize, figR] at ($(x)+(0,0.55)$) {$B'$};
+    \node[font=\scriptsize, align=center] at (0,-1.55) {$x \in B' \subseteq B$: \ $\mathcal{T}' \supseteq \mathcal{T}$};
+  \end{scope}
+  % right: the roles exchanged -- a square contains a disk around x
+  \begin{scope}[shift={(3.4,0)}]
+    \draw[figB, thick, fill=figB!8] (-1.1,-1.1) rectangle (1.1,1.1);
+    \coordinate (y) at (0.35,0.3);
+    \draw[figR, thick, fill=figR!15] (y) circle (0.45);
+    \fill (y) circle (1.4pt);
+    \node[font=\scriptsize, below right=-1pt] at (y) {$x$};
+    \node[font=\small, figB] at (-0.6,-0.6) {$B'$};
+    \node[font=\scriptsize, figR] at ($(y)+(0,0.62)$) {$B$};
+    \node[font=\scriptsize, align=center] at (0,-1.55) {$x \in B \subseteq B'$: \ $\mathcal{T} \supseteq \mathcal{T}'$};
+  \end{scope}
+\end{tikzpicture}

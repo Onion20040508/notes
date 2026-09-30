@@ -1,0 +1,26 @@
+% Figure from MATH 590 notes, section 27. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.6]
+  \draw[stealth-stealth, thick, black!70] (-2.3,0) -- (2.3,0) node[right, font=\scriptsize] {$\mathbb{R}^n$};
+  \draw[figB, thick] (0,0) circle (1);
+  \node[font=\small, figB] at (-0.95,0.85) {$S^n$};
+  \coordinate (p) at (0,1);
+  % lower-hemisphere point
+  \coordinate (x) at (-40:1);
+  \coordinate (fx) at ({cos(-40)/(1-sin(-40))},0);
+  % upper-hemisphere point
+  \coordinate (y) at (30:1);
+  \coordinate (fy) at ({cos(30)/(1-sin(30))},0);
+  \draw[black!55, thin] (p) -- (x);
+  \draw[black!55, thin] (p) -- (fy);
+  \draw[figR, thick, -{Stealth[length=4pt]}] (x) -- (fx);
+  \draw[figR, thick, -{Stealth[length=4pt]}] ($(p)!0.975!(y)$) -- ($(y)!0.05!(fy)$) -- (fy);
+  \fill (x) circle (1.1pt) node[below right, font=\scriptsize, inner sep=1.5pt] {$x$};
+  \fill[figR] (fx) circle (1.2pt) node[above right, font=\scriptsize, inner sep=1.5pt] {$f(x)$};
+  \fill (y) circle (1.1pt) node[above right, font=\scriptsize, inner sep=1.5pt] {$x'$};
+  \fill[figR] (fy) circle (1.2pt) node[below, font=\scriptsize, inner sep=2.5pt] {$f(x')$};
+  % poles
+  \filldraw[fill=white, draw=figR, thick] (p) circle (1.6pt) node[above, font=\scriptsize, inner sep=3pt] {$p$ (removed)};
+  \fill (0,-1) circle (1.2pt) node[below, font=\scriptsize, inner sep=2.5pt] {$q$};
+  \draw[black!55, thin, dotted] (0,-1) -- (0,0);
+  \fill[figR] (0,0) circle (1.2pt) node[below left, font=\scriptsize, inner sep=1.5pt] {$f(q) = \vec 0$};
+\end{tikzpicture}

@@ -1,0 +1,25 @@
+% Figure from MATH 590 notes, section 29. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.05,
+  mid/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=2.2mm]}}}}]
+  \def\Ablob{(-2.6,0.1) .. (-2.0,1.25) .. (-0.6,1.35) .. (0.75,1.0) .. (1.0,0) .. (0.7,-1.05) .. (-0.7,-1.3) .. (-2.1,-1.1)}
+  \def\Bblob{(-0.95,0) .. (-0.65,1.1) .. (0.7,1.4) .. (2.1,1.2) .. (2.7,0.1) .. (2.2,-1.15) .. (0.7,-1.35) .. (-0.7,-1.0)}
+  \fill[figB!14, use Hobby shortcut, closed=true] \Ablob;
+  \fill[figR!14, use Hobby shortcut, closed=true] \Bblob;
+  \begin{scope}
+    \clip[use Hobby shortcut, closed=true] \Ablob;
+    \fill[figB!18!figR!22, use Hobby shortcut, closed=true] \Bblob;
+  \end{scope}
+  \draw[figB, thick, dashed, use Hobby shortcut, closed=true] \Ablob;
+  \draw[figR, thick, dashed, use Hobby shortcut, closed=true] \Bblob;
+  % holes of X
+  \foreach \c in {(-1.7,0.05),(0.02,0.05),(1.75,0.05)}
+    \filldraw[fill=white, draw=black!45, thin] \c circle (0.22);
+  % a loop k in A cap B around the middle hole, through p
+  \draw[figG, very thick, mid=0.3] (0.02,-0.5) arc (-90:270:0.55);
+  \fill[black] (0.02,-0.5) circle (1.6pt);
+  \node[font=\scriptsize, below=1pt] at (0.02,-0.52) {$p$};
+  \node[font=\scriptsize, figG] at (0.8,0.3) {$k$};
+  \node[font=\small, figB] at (-2.0,0.95) {$A$};
+  \node[font=\small, figR] at (2.05,0.95) {$B$};
+  \node[font=\scriptsize] at (0.02,1.02) {$A\cap B$};
+\end{tikzpicture}

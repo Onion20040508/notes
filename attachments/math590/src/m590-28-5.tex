@@ -1,0 +1,20 @@
+% Figure from MATH 590 notes, section 28. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.1]
+  % double torus outline
+  \draw[thick, black!75, fill=black!4, use Hobby shortcut, closed=true]
+    (-2.55,0) .. (-2.1,0.95) .. (-1.1,1.15) .. (0,0.82) .. (1.1,1.15) .. (2.1,0.95) .. (2.55,0) .. (2.1,-0.95) .. (1.1,-1.15) .. (0,-0.82) .. (-1.1,-1.15) .. (-2.1,-0.95);
+  % the two holes
+  \foreach \c in {-1.2,1.2} {
+    \draw[thick, black!75] (\c-0.55,0.08) .. controls (\c-0.2,-0.22) and (\c+0.2,-0.22) .. (\c+0.55,0.08);
+    \draw[thick, black!75] (\c-0.42,-0.04) .. controls (\c-0.15,0.16) and (\c+0.15,0.16) .. (\c+0.42,-0.04);
+  }
+  % neck (collapsed to x0 in stage (a))
+  \draw[black!45, dashed, thin] (0,0.82) .. controls (0.14,0.4) and (0.14,-0.4) .. (0,-0.82);
+  % the figure eight X on the surface
+  \draw[figR, very thick] (0,0) .. controls (-0.25,0.62) and (-2.05,0.72) .. (-2.1,0) .. controls (-2.05,-0.72) and (-0.25,-0.62) .. (0,0);
+  \draw[figR, very thick] (0,0) .. controls (0.25,0.62) and (2.05,0.72) .. (2.1,0) .. controls (2.05,-0.72) and (0.25,-0.62) .. (0,0);
+  \fill[black] (0,0) circle (1.6pt);
+  \node[font=\scriptsize, right=1pt] at (0.02,-0.12) {$x_0$};
+  \node[font=\small, figR] at (-1.2,-0.72) {$X$};
+  \node[font=\small] at (-2.45,1.05) {$\Sigma_2$};
+\end{tikzpicture}

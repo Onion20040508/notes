@@ -1,0 +1,16 @@
+% Figure from MATH 590 notes, section 6. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.1]
+  \def\W{1.7}
+  % complement: R x (0,inf) and (0,inf) x R, both open
+  \fill[pattern=north east lines, pattern color=figR!45] (-\W,0) rectangle (\W,\W);
+  \fill[pattern=north west lines, pattern color=figR!45] (0,-\W) rectangle (\W,\W);
+  % the closed quadrant
+  \fill[figB!15] (-\W,-\W) rectangle (0,0);
+  \draw[-stealth, thin, black!55] (-\W-0.1,0) -- (\W+0.25,0) node[right, font=\scriptsize, black] {$x$};
+  \draw[-stealth, thin, black!55] (0,-\W-0.1) -- (0,\W+0.25) node[above, font=\scriptsize, black] {$y$};
+  \draw[figB, thick] (-\W,0) -- (0,0) -- (0,-\W);
+  \fill[figB] (0,0) circle (1.5pt);
+  \node[font=\scriptsize, figB, align=center] at (-0.85,-0.85) {$x \le 0$,\\ $y \le 0$};
+  \node[font=\scriptsize, figR, fill=white, inner sep=1.5pt] at (-0.85,0.85) {$\mathbb{R}\times(0,\infty)$};
+  \node[font=\scriptsize, figR, fill=white, inner sep=1.5pt] at (0.85,-0.85) {$(0,\infty)\times\mathbb{R}$};
+\end{tikzpicture}

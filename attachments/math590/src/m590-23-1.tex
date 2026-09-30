@@ -1,5 +1,7 @@
 % Figure from MATH 590 notes, section 23. Compile with the notes preamble.
-\begin{tikzcd}
-E \arrow[r, "p"] \arrow[dr, "p' = h^{-1} \circ p"'] & X & \pi_1(X, x_0) \arrow[r, "\text{lift.\ corr.}"] & G \\
-& Y \arrow[u, "h"] & \pi_1(Y, h^{-1}(x_0)) \arrow[u, "h_*"', "\cong"] \arrow[ur, "\text{lift.\ corr.\ for } p'"'] &
+\begin{tikzcd}[column sep=large, row sep=large]
+E \arrow[r, "p"] \arrow[dr, "p' = h^{-1} \circ p"', color=figR] & X
+  & & \pi_1(X, x_0) \arrow[r, "\phi"] & G \\
+& Y \arrow[u, "h"', "\cong"]
+  & & \pi_1(Y, y_0) \arrow[u, "h_*", "\cong"'] \arrow[ur, "\phi'"', color=figB] &
 \end{tikzcd}

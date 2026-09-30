@@ -1,0 +1,20 @@
+% Figure from MATH 590 notes, section 19. Compile with the notes preamble.
+\begin{tikzpicture}[x=1.35cm, y=1cm]
+  \draw[black!45, thin, -stealth] (-0.2,0) -- (5.7,0) node[right, font=\scriptsize] {$\mathbb{R}_\ell$};
+  % U = union of [a, x_a)   (red)   and   V = union of [b, x_b)   (blue)
+  \foreach \s/\e/\c/\lab in {0.3/0.85/figR/a, 2.8/3.3/figR/a, 4.6/5.3/figR/a, 1.3/1.65/figB/b, 2.0/2.5/figB/b, 3.6/4.2/figB/b} {
+    \draw[\c, line width=2.4pt] (\s,0) -- (\e,0);
+    \fill[\c] (\s,0) circle (2.2pt);
+    \draw[\c, fill=white, thick] (\e,0) circle (2.0pt);
+    \node[font=\scriptsize, \c, below=3pt] at (\s,0) {$\lab$};
+    \node[font=\scriptsize, \c, below=3pt] at (\e,0) {$x_{\lab}$};
+  }
+  % what cannot happen: an A-interval running past a point of B
+  \draw[figR, thick, dashed] (0.3,0.45) -- (1.5,0.45);
+  \draw[figR, fill=white, thick] (1.5,0.45) circle (1.6pt);
+  \fill[figR] (0.3,0.45) circle (1.6pt);
+  \draw[black!50, dotted] (1.3,0) -- (1.3,0.7);
+  \node[font=\scriptsize, figR, anchor=west] at (1.6,0.62) {not allowed: would contain $b\in B$};
+  \node[font=\scriptsize, figR] at (5.35,-0.75) {$U\supseteq A$};
+  \node[font=\scriptsize, figB] at (4.2,-0.75) {$V\supseteq B$};
+\end{tikzpicture}

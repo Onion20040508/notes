@@ -1,0 +1,35 @@
+% Figure from MATH 590 notes, section 7. Compile with the notes preamble.
+\begin{tikzpicture}
+  % x-coordinate t stands for the real number 1 + t/6
+  \draw[-stealth, thin] (-0.8,0) -- (6.6,0);
+  \fill[figB] (6.000,0) circle (1.50pt);
+  \fill[figB] (3.000,0) circle (1.50pt);
+  \fill[figB] (2.000,0) circle (1.50pt);
+  \fill[figB] (1.500,0) circle (1.50pt);
+  \fill[figB] (1.200,0) circle (1.50pt);
+  \fill[figB] (1.000,0) circle (1.50pt);
+  \fill[figB] (0.857,0) circle (1.22pt);
+  \fill[figB] (0.750,0) circle (0.95pt);
+  \fill[figB] (0.667,0) circle (0.76pt);
+  \fill[figB] (0.600,0) circle (0.62pt);
+  \fill[figB] (0.545,0) circle (0.52pt);
+  \fill[figB] (0.500,0) circle (0.44pt);
+  \fill[figB] (0.462,0) circle (0.38pt);
+  \fill[figB] (0.429,0) circle (0.33pt);
+  % the limit point 1 (not in B) and a neighborhood of it
+  \draw[figR, thick, fill=white] (0,0) circle (1.6pt);
+  \draw[figR, thick] (-0.6,0.35) -- (0.6,0.35);
+  \draw[figR, thick, fill=white] (-0.6,0.35) circle (1.4pt);
+  \draw[figR, thick, fill=white] (0.6,0.35) circle (1.4pt);
+  \node[font=\scriptsize, figR, above] at (0,0.4) {$(1-\varepsilon,\,1+\varepsilon)$};
+  % an isolated point 3/2 of B
+  \draw[figB, thick] (2.520,0.35) -- (3.600,0.35);
+  \draw[figB, thick, fill=white] (2.520,0.35) circle (1.4pt);
+  \draw[figB, thick, fill=white] (3.600,0.35) circle (1.4pt);
+  \node[font=\scriptsize] at (0,-0.28) {$1$};
+  \node[font=\scriptsize] at (1.500,-0.3) {$\tfrac54$};
+  \node[font=\scriptsize] at (2.000,-0.3) {$\tfrac43$};
+  \node[font=\scriptsize] at (3.000,-0.3) {$\tfrac32$};
+  \node[font=\scriptsize] at (6.000,-0.28) {$2$};
+  \node[font=\small, figB] at (4.5,0.32) {$B$};
+\end{tikzpicture}

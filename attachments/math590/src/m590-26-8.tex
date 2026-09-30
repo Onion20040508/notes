@@ -1,0 +1,21 @@
+% Figure from MATH 590 notes, section 26. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.35]
+  \fill[figB!6] (-2,-1.8) rectangle (3.15,1.95);
+  \foreach \a in {0,45,90,135,180,225,270,315} {
+    \ifnum\a=45\else
+      \draw[figR!80, thick, -{Stealth[length=4pt]}] (\a:1.75) -- (\a:1.06);
+    \fi
+    \draw[figR!80, thick, -{Stealth[length=4pt]}] (\a:0.22) -- (\a:0.94);
+  }
+  \draw[figB, very thick] (0,0) circle (1);
+  \filldraw[fill=white, draw=black, thin] (0,0) circle (1.4pt);
+  \node[font=\scriptsize] at (-0.12,-0.16) {$0$};
+  % one tracked point outside, with the segment it slides along
+  \draw[black!55, dashed, thin] (45:1) -- (45:2.05);
+  \fill (45:2.05) circle (1.2pt) node[right, font=\scriptsize] {$x = H(x,0)$};
+  \fill[black!70] (45:1.5) circle (1.1pt) node[right, font=\scriptsize] {$H(x,t)$};
+  \fill[figB] (45:1) circle (1.4pt);
+  \node[font=\scriptsize, figB, anchor=west] at ($(45:1)+(0.1,-0.05)$) {$\tfrac{x}{\|x\|} = H(x,1)$};
+  \node[font=\small, figB] at (-0.42,1.22) {$S^1$};
+  \node[font=\scriptsize, black!70] at (-1.5,-1.55) {$\mathbb{R}^2 \setminus \{0\}$};
+\end{tikzpicture}

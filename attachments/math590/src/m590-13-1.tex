@@ -1,0 +1,13 @@
+% Figure from MATH 590 notes, section 13. Compile with the notes preamble.
+\begin{tikzpicture}[scale=2]
+  \draw[-stealth, thin, black!55] (-1.45,0) -- (1.5,0);
+  \draw[figB, very thick] (-1,0) -- (-0.03,0);
+  \draw[figR, very thick] (0.03,0) -- (1,0);
+  \fill[figB] (-1,0) circle (1.1pt);
+  \fill[figR] (1,0) circle (1.1pt);
+  \draw[black!70, fill=white] (0,0) circle (1.1pt);
+  \foreach \x/\l in {-1/-1, 0/0, 1/1} \node[font=\scriptsize, below=3pt] at (\x,0) {$\l$};
+  \node[font=\scriptsize, figB] at (-0.5,0.17) {$[-1,0)$};
+  \node[font=\scriptsize, figR] at (0.5,0.17) {$(0,1]$};
+  \node[font=\small] at (-1.3,0.2) {$Y$};
+\end{tikzpicture}

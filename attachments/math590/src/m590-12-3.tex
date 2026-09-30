@@ -1,0 +1,32 @@
+% Figure from MATH 590 notes, section 12. Compile with the notes preamble.
+\begin{tikzpicture}[scale=0.9,
+  one/.style={decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=5pt]}}}, postaction={decorate}},
+  two/.style={decoration={markings, mark=at position 0.5 with {\arrow{Stealth[length=5pt]}}, mark=at position 0.62 with {\arrow{Stealth[length=5pt]}}}, postaction={decorate}}]
+  % the square X = [0,1] x [0,1]
+  \fill[black!4] (0,0) rectangle (2.4,2.4);
+  \draw[figB, thick, one] (0,0) -- (2.4,0);
+  \draw[figB, thick, one] (0,2.4) -- (2.4,2.4);
+  \draw[figR, thick, two] (0,0) -- (0,2.4);
+  \draw[figR, thick, two] (2.4,0) -- (2.4,2.4);
+  \foreach \p in {(0,0),(2.4,0),(0,2.4),(2.4,2.4)} \fill[black] \p circle (1.3pt);
+  \node[font=\scriptsize, figB, below=2pt] at (1.2,0) {$x \times 0$};
+  \node[font=\scriptsize, figB, above=2pt] at (1.2,2.4) {$x \times 1$};
+  \node[font=\scriptsize, figR, left=2pt] at (0,1.2) {$0 \times y$};
+  \node[font=\scriptsize, figR, right=2pt] at (2.4,1.2) {$1 \times y$};
+  % arrow
+  \draw[-stealth, thick] (3.5,1.2) -- (4.25,1.2) node[midway, above, font=\scriptsize] {$p$};
+  % the torus
+  \begin{scope}[shift={(6.4,1.2)}]
+    \draw[black!70, thick] (0,0) ellipse (2 and 1.1);
+    \draw[black!70, thick] (-0.95,0.08) .. controls (-0.45,-0.28) and (0.45,-0.28) .. (0.95,0.08);
+    \draw[black!70, thick] (-0.75,-0.07) .. controls (-0.35,0.18) and (0.35,0.18) .. (0.75,-0.07);
+    % longitude: image of the blue edges
+    \draw[figB, thick] (0,-0.02) ellipse (1.45 and 0.7);
+    % meridian: image of the red edges (back half dashed)
+    \draw[figR, thick] (0,-1.1) arc (-90:90:0.17 and 0.39);
+    \draw[figR, thick, dashed] (0,-0.32) arc (90:270:0.17 and 0.39);
+    \fill[black] (0.165,-0.63) circle (1.3pt);
+    \node[font=\scriptsize, figB] at (0,0.89) {$[x \times 0]$};
+    \node[font=\scriptsize, figR] at (0.45,-1.32) {$[0 \times y]$};
+  \end{scope}
+\end{tikzpicture}

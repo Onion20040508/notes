@@ -1,0 +1,35 @@
+% Figure from MATH 590 notes, section 24. Compile with the notes preamble.
+\begin{tikzpicture}
+  % ---- R x R ----
+  \begin{scope}[scale=0.95]
+    \fill[figB!12] (0,0) rectangle (1,1);
+    \foreach \x in {-1,0,1,2} \draw[black!30, thin] (\x,-1.4) -- (\x,2.4);
+    \foreach \y in {-1,0,1,2} \draw[black!30, thin] (-1.4,\y) -- (2.4,\y);
+    \draw[figR, thick, -{Stealth[length=4pt]}] (0,0) -- (1,0);
+    \draw[figB, thick, -{Stealth[length=4pt]}] (0,0) -- (0,1);
+    \foreach \x in {-1,0,1,2} \foreach \y in {-1,0,1,2} \fill (\x,\y) circle (1.3pt);
+    \node[font=\scriptsize, anchor=north east, inner sep=1.5pt] at (0,0) {$(0,0)$};
+    \node[font=\scriptsize, anchor=north west, inner sep=1.5pt, fill=white] at (1,0) {$(1,0)$};
+    \node[font=\scriptsize, anchor=east, inner sep=1.5pt, fill=white] at (-0.06,1.22) {$(0,1)$};
+    \node[font=\small] at (0.5,2.7) {$\mathbb{R} \times \mathbb{R}$};
+  \end{scope}
+  % ---- map ----
+  \draw[-stealth, thick, black!70] (2.55,0.5) -- node[above, font=\scriptsize] {$p \times p$} (3.55,0.5);
+  % ---- torus ----
+  \begin{scope}[shift={(5.6,0.5)}]
+    \draw[black!70, thick] (0,0) ellipse (1.9 and 1.05);
+    \draw[black!70, thick] (-0.95,0.08) arc[start angle=200, end angle=340, x radius=1.01, y radius=0.45];
+    \draw[black!70, thick] (-0.8,-0.03) arc[start angle=160, end angle=20, x radius=0.85, y radius=0.33];
+    % longitude  S^1 x {b0}
+    \draw[figR, thick, name path=lon] (0,-0.05) ellipse (1.42 and 0.7);
+    \draw[figR, thick, -{Stealth[length=4pt]}] (0.3,-0.745) -- (0.36,-0.742);
+    % meridian  {b0} x S^1
+    \draw[figB, thick, dashed] (0.75,-0.36) arc[start angle=90, end angle=270, x radius=0.13, y radius=0.33];
+    \draw[figB, thick, name path=mer, decoration={markings, mark=at position 0.3 with {\arrow{Stealth[length=4pt]}}}, postaction={decorate}] (0.75,-1.02) arc[start angle=-90, end angle=90, x radius=0.13, y radius=0.33];
+    \path[name intersections={of=lon and mer, by={bp}}];
+    \fill (bp) circle (1.4pt);
+    \node[font=\scriptsize, anchor=north west, inner sep=1pt] at (0.95,-1.0) {$(b_0, b_0)$};
+    \draw[black!40, thin] ($(bp)+(0.03,-0.05)$) -- (1.0,-1.02);
+    \node[font=\small] at (0,2.05) {$T^2 = S^1 \times S^1$};
+  \end{scope}
+\end{tikzpicture}

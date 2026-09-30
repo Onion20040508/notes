@@ -1,0 +1,19 @@
+% Figure from MATH 590 notes, section 13. Compile with the notes preamble.
+\begin{tikzpicture}
+  \fill[black!4] (0,0) rectangle (3.4,2.4);
+  \draw[black!40, thin] (0,0) rectangle (3.4,2.4);
+  \foreach \u in {0.3,0.55,1.3,1.55,1.8,2.7,2.95,3.2} \draw[black!22, thin] (\u,0) -- (\u,2.4);
+  \draw[figB, very thick] (0,0.75) -- (3.4,0.75);
+  \draw[figR, very thick] (2.3,0) -- (2.3,2.4);
+  \fill[black] (0.95,0.75) circle (1.6pt) node[above left=1pt, font=\scriptsize, fill=black!4, inner sep=1pt] {$a \times b$};
+  \fill[black] (2.3,0.75) circle (1.6pt) node[below right=1pt, font=\scriptsize, fill=black!4, inner sep=1pt] {$x \times b$};
+  \node[font=\scriptsize, figB, anchor=west] at (3.45,0.75) {$X \times b$};
+  \node[font=\scriptsize, figR, anchor=south] at (2.3,2.42) {$x \times Y$};
+  \node[font=\scriptsize, black!60, anchor=south] at (0.95,2.42) {$X \times Y$};
+  % the factors
+  \draw[black!55, thin] (0,-0.35) -- (3.4,-0.35) node[right, font=\scriptsize] {$X$};
+  \draw[black!55, thin] (-0.35,0) -- (-0.35,2.4) node[above, font=\scriptsize] {$Y$};
+  \fill[black!70] (0.95,-0.35) circle (1.2pt) node[below=1pt, font=\scriptsize] {$a$};
+  \fill[black!70] (2.3,-0.35) circle (1.2pt) node[below=1pt, font=\scriptsize] {$x$};
+  \fill[black!70] (-0.35,0.75) circle (1.2pt) node[left=1pt, font=\scriptsize] {$b$};
+\end{tikzpicture}

@@ -1,0 +1,33 @@
+% Figure from MATH 590 notes, section 15. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.25]
+  % the compact set Y
+  \fill[figB!12] (0,0) ellipse (1.1 and 0.7);
+  \draw[figB, thick] (0,0) ellipse (1.1 and 0.7);
+  \node[font=\small, figB] at (-1.05,-0.78) {$Y$};
+  % finite subcover V_{y_i}
+  \draw[figB, dashed] (-0.6,0.2) circle (0.75);
+  \draw[figB, dashed] (0.55,0.3) circle (0.8);
+  \draw[figB, dashed] (0.2,-0.4) circle (0.75);
+  \foreach \p/\i/\pos in {(-0.6,0.2)/1/above, (0.55,0.3)/2/above, (0.2,-0.4)/3/below} {
+    \fill[figB] \p circle (1.2pt);
+    \node[font=\scriptsize, figB, \pos=0pt] at \p {$y_{\i}$};
+  }
+  \node[font=\scriptsize, figB] at (-1.3,0.85) {$V_{y_1}$};
+  \node[font=\scriptsize, figB] at (1.25,1.12) {$V_{y_2}$};
+  \node[font=\scriptsize, figB] at (0.95,-1.1) {$V_{y_3}$};
+  % the neighborhoods U_{y_i} of x and their intersection U
+  \begin{scope}
+    \clip (3.0,0.35) ellipse (1.5 and 0.95);
+    \clip (3.6,0) circle (0.95);
+    \fill[figR!15] (3.3,-0.3) ellipse (1.3 and 0.8);
+  \end{scope}
+  \draw[black!50, dashed] (3.0,0.35) ellipse (1.5 and 0.95);
+  \draw[black!50, dashed] (3.6,0) circle (0.95);
+  \draw[black!50, dashed] (3.3,-0.3) ellipse (1.3 and 0.8);
+  \node[font=\scriptsize, black!65] at (1.9,1.22) {$U_{y_1}$};
+  \node[font=\scriptsize, black!65] at (4.75,0.35) {$U_{y_2}$};
+  \node[font=\scriptsize, black!65] at (2.25,-1.12) {$U_{y_3}$};
+  \fill[figR] (3.4,0.05) circle (1.4pt);
+  \node[font=\scriptsize, figR, above right=-1pt] at (3.4,0.05) {$x$};
+  \node[font=\scriptsize, figR] at (3.05,-0.35) {$U$};
+\end{tikzpicture}

@@ -1,24 +1,27 @@
 % Figure from MATH 590 notes, section 15. Compile with the notes preamble.
-\begin{tikzpicture}[x=7cm, y=1cm]
-  \draw[black!40, thin] (-0.3,0) -- (1.12,0);
-  % U contains (-eps, eps)
-  \fill[figR!15] (-0.22,-0.18) rectangle (0.22,0.18);
-  \draw[figR, thick, dashed] (-0.22,-0.18) rectangle (0.22,0.18);
-  \node[font=\scriptsize, figR] at (0,0.42) {$(-\varepsilon,\varepsilon)\subseteq V$};
-  \node[font=\scriptsize, black!60] at (-0.22,-0.42) {$-\varepsilon$};
-  \node[font=\scriptsize, black!60] at (0.22,-0.42) {$\varepsilon$};
-  % the tail 1/n, n >= 5
-  \foreach \n in {5,...,40} \fill[figB] ({1/\n},0) circle (0.9pt);
-  \fill[figR] (0,0) circle (1.6pt);
-  \node[font=\scriptsize, figR, below=3pt] at (0,0) {$0$};
+\begin{tikzpicture}[x=6.2cm, y=1cm]
+  \draw[black!40, thin] (-0.36,0) -- (1.12,0);
+  % U contains (-eps, eps) cap X
+  \fill[figR!15] (-0.28,-0.18) rectangle (0.28,0.18);
+  \draw[figR, thick, dashed] (-0.28,-0.18) rectangle (0.28,0.18);
+  \node[font=\scriptsize, figR] at (0,0.5) {$U \supseteq (-\varepsilon,\varepsilon)\cap X$};
+  \node[font=\scriptsize, figR] at (-0.28,-0.45) {$-\varepsilon$};
+  \node[font=\scriptsize, figR] at (0.28,-0.45) {$\varepsilon$};
+  % the tail 1/n, n >= 4, all inside U
+  \foreach \n in {4,...,40} \fill[figB] ({1/\n},0) circle (0.9pt);
+  \fill[figB] (0,0) circle (1.4pt);
+  \node[font=\scriptsize, below=3pt] at (0,0) {$0$};
   % finitely many points left over, each in its own cover element
-  \foreach \n/\lab in {4/{y_4=\frac14}, 3/{y_3=\frac13}, 2/{y_2=\frac12}, 1/{y_1=1}} {
+  \foreach \n/\val in {3/{\tfrac13}, 2/{\tfrac12}, 1/{1}} {
     \pgfmathsetmacro{\p}{1/\n}
-    \draw[figB, thick] (\p,0.28) ++(-0.035,0) -- ++(0.07,0);
-    \draw[figB, fill=white, thick] (\p-0.035,0.28) circle (1.2pt);
-    \draw[figB, fill=white, thick] (\p+0.035,0.28) circle (1.2pt);
+    \draw[black!55, thick] (\p-0.028,0.3) -- (\p+0.028,0.3);
+    \draw[black!55, fill=white, thick] (\p-0.028,0.3) circle (1.2pt);
+    \draw[black!55, fill=white, thick] (\p+0.028,0.3) circle (1.2pt);
     \fill[figB] (\p,0) circle (1.4pt);
-    \node[font=\scriptsize, figB, below=3pt] at (\p,0) {$\lab$};
+    \node[font=\scriptsize, below=3pt] at (\p,0) {$\val$};
   }
-  \node[font=\scriptsize, figB] at (0.62,0.6) {one $U_{y_i}\in\mathcal A$ for each leftover point};
+  \node[font=\scriptsize, black!70] at (1/3,0.62) {$U_{y_3}$};
+  \node[font=\scriptsize, black!70] at (1/2,0.62) {$U_{y_2}$};
+  \node[font=\scriptsize, black!70] at (1,0.62) {$U_{y_1}$};
+  \node[font=\scriptsize, figB] at (0.72,-0.95) {leftover points $y_1,y_2,y_3$};
 \end{tikzpicture}

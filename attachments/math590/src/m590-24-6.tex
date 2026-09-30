@@ -1,0 +1,33 @@
+% Figure from MATH 590 notes, section 24. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.15]
+  % completed rectangles: whole first row, first two of second row
+  \fill[figB!12] (0,0) rectangle (4,1);
+  \fill[figB!12] (0,1) rectangle (2,2);
+  % current rectangle I_i x J_j
+  \fill[figR!15] (2,1) rectangle (3,2);
+  % grid
+  \foreach \x in {1,2,3} \draw[black!35, thin] (\x,0) -- (\x,4);
+  \foreach \y in {1,2,3} \draw[black!35, thin] (0,\y) -- (4,\y);
+  \draw[black!70, thin] (0,0) rectangle (4,4);
+  % step 1: lifts of the left and bottom edges
+  \draw[figB, very thick] (0,4) -- (0,0) -- (4,0);
+  % C = left and bottom edges of the current rectangle
+  \draw[figR, very thick] (2,2) -- (2,1) -- (3,1);
+  \draw[figR, thin, dashed] (2,2) -- (3,2) -- (3,1);
+  \node[font=\scriptsize, figR] at (2.5,1.5) {$I_i \times J_j$};
+  \node[font=\scriptsize, figR, anchor=north west, inner sep=1.5pt] at (2.55,1) {$C$};
+  % order of filling
+  \foreach \k/\x/\y in {1/0.5/0.5, 2/1.5/0.5, 3/2.5/0.5, 4/3.5/0.5, 5/0.5/1.5, 6/1.5/1.5} {
+    \node[font=\scriptsize, black!55] at (\x,\y) {$\k$};
+  }
+  % tick labels
+  \node[font=\scriptsize, below] at (2,0) {$s_{i-1}$};
+  \node[font=\scriptsize, below] at (3,0) {$s_i$};
+  \node[font=\scriptsize, left] at (0,1) {$t_{j-1}$};
+  \node[font=\scriptsize, left] at (0,2) {$t_j$};
+  \node[font=\scriptsize, below left] at (0,0) {$(0,0)$};
+  \node[font=\scriptsize, figB, rotate=90, above] at (0,3) {$0 \times I$};
+  \node[font=\scriptsize, figB, below] at (1,-0.05) {$I \times 0$};
+  \draw[-stealth, thin] (4,0) -- (4.5,0) node[right, font=\scriptsize] {$s$};
+  \draw[-stealth, thin] (0,4) -- (0,4.5) node[above, font=\scriptsize] {$t$};
+\end{tikzpicture}

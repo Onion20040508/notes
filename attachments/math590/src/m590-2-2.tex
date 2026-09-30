@@ -1,0 +1,48 @@
+% Figure from MATH 590 notes, section 2. Compile with the notes preamble.
+\begin{tikzpicture}
+  % ---- top row: R_ell, the set [0,1) and a standard (a,b) around 0 ----
+  \begin{scope}[shift={(0,1.35)}]
+    \draw[-stealth, thin] (-3.5,0) -- (4.1,0);
+    \node[font=\small, anchor=east] at (-3.6,0) {$\mathbb{R}_\ell$};
+    \draw[figR, thick] (0,0) -- (3.2,0);
+    \fill[figR] (0,0) circle (1.6pt);
+    \draw[figR, thick, fill=white] (3.2,0) circle (1.6pt);
+    \node[font=\scriptsize, figR] at (1.6,-0.22) {$[0,1)$};
+    \node[font=\scriptsize] at (0,-0.24) {$0$};
+    \node[font=\scriptsize] at (3.2,-0.24) {$1$};
+    % a standard interval around 0 must stick out to the left
+    \draw[figB, thick] (-0.75,0.32) -- (0.9,0.32);
+    \draw[figB, thick, fill=white] (-0.75,0.32) circle (1.5pt);
+    \draw[figB, thick, fill=white] (0.9,0.32) circle (1.5pt);
+    \node[font=\scriptsize, figB] at (-1.25,0.32) {$(a,b)$};
+    \draw[black!40, dotted] (-0.75,0.32) -- (-0.75,0);
+    \node[font=\scriptsize, black!55] at (-0.75,-0.24) {$a<0$};
+  \end{scope}
+  % ---- bottom row: R_K, the set (-1,1) \ K ----
+  \draw[-stealth, thin] (-3.5,0) -- (4.1,0);
+  \node[font=\small, anchor=east] at (-3.6,0) {$\mathbb{R}_K$};
+  \draw[figR, thick] (-3.2,0) -- (3.2,0);
+  \draw[figR, thick, fill=white] (-3.2,0) circle (1.6pt);
+  \draw[figR, thick, fill=white] (3.2,0) circle (1.6pt);
+  \draw[figR, thin, fill=white] (1.600,0) circle (1.50pt);
+  \draw[figR, thin, fill=white] (1.067,0) circle (1.50pt);
+  \draw[figR, thin, fill=white] (0.800,0) circle (1.50pt);
+  \draw[figR, thin, fill=white] (0.640,0) circle (1.27pt);
+  \draw[figR, thin, fill=white] (0.533,0) circle (0.91pt);
+  \draw[figR, thin, fill=white] (0.457,0) circle (0.68pt);
+  \draw[figR, thin, fill=white] (0.400,0) circle (0.53pt);
+  \draw[figR, thin, fill=white] (0.356,0) circle (0.42pt);
+  \node[font=\scriptsize] at (-3.2,-0.24) {$-1$};
+  \node[font=\scriptsize] at (0,-0.24) {$0$};
+  \node[font=\scriptsize] at (3.2,-0.24) {$1$};
+  \node[font=\scriptsize] at (1.6,-0.26) {$\tfrac12$};
+  \node[font=\scriptsize] at (1.067,-0.26) {$\tfrac13$};
+  \node[font=\scriptsize] at (0.8,-0.26) {$\tfrac14$};
+  \node[font=\scriptsize, figR] at (-1.6,-0.22) {$(-1,1)\setminus K$};
+  % any standard interval around 0 swallows 1/n for large n
+  \draw[figB, thick] (-0.55,0.32) -- (0.55,0.32);
+  \draw[figB, thick, fill=white] (-0.55,0.32) circle (1.5pt);
+  \draw[figB, thick, fill=white] (0.55,0.32) circle (1.5pt);
+  \node[font=\scriptsize, figB] at (-1.05,0.32) {$(a,b)$};
+  \fill (0,0) circle (1.3pt);
+\end{tikzpicture}

@@ -1,0 +1,40 @@
+% Figure from MATH 590 notes, section 28. Compile with the notes preamble.
+\begin{tikzpicture}[scale=0.88,
+  mid/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=2.4mm]}}}}]
+  \def\r{0.27}
+  % the covering space E (light): x-axis over A (blue), y-axis over B (red)
+  \draw[figB!45, thick] (-2.5,0) -- (2.5,0);
+  \draw[figB!45, thick, dotted] (-2.9,0) -- (-2.5,0) (2.5,0) -- (2.9,0);
+  \draw[figR!45, thick] (0,-2.5) -- (0,2.5);
+  \draw[figR!45, thick, dotted] (0,-2.9) -- (0,-2.5) (0,2.5) -- (0,2.9);
+  \foreach \n in {-2,-1,1,2} {
+    \draw[figR!45, thick] (\n,\r) circle (\r);   % over B
+    \draw[figB!45, thick] (\r,\n) circle (\r);   % over A
+    \fill[black!50] (\n,0) circle (1pt) (0,\n) circle (1pt);
+  }
+  % lift of f*g : x-axis from (0,0) to (1,0), then the circle at (1,0)
+  \draw[figB, very thick, mid=0.6] (0,0) -- (1,0);
+  \draw[figR, very thick, mid=0.5] (1,0) arc (-90:270:\r);
+  % lift of g*f : y-axis from (0,0) to (0,1), then the circle at (0,1)
+  \draw[figR, very thick, mid=0.6] (0,0) -- (0,1);
+  \draw[figB, very thick, mid=0.5] (0,1) arc (180:540:\r);
+  \fill[black] (0,0) circle (1.7pt);
+  \fill[black] (1,0) circle (1.7pt) (0,1) circle (1.7pt);
+  \node[font=\scriptsize, below left] at (0,0) {$e_0$};
+  \node[font=\scriptsize, below] at (1,-0.02) {$(1,0)$};
+  \node[font=\scriptsize, left] at (-0.02,1) {$(0,1)$};
+  \node[font=\scriptsize, align=left, anchor=north west] at (1.5,-0.12) {lift of $f*g$\\ ends at $(1,0)$};
+  \node[font=\scriptsize, align=left, anchor=west] at (0.72,1.22) {lift of $g*f$\\ ends at $(0,1)$};
+  \node[font=\small] at (-2.2,2.2) {$E$};
+  % the base X
+  \begin{scope}[shift={(5.0,0)}]
+    \draw[figB, thick] (0,0) arc (0:360:0.55);
+    \draw[figR, thick] (0,0) arc (180:-180:0.55);
+    \fill[black] (0,0) circle (1.5pt);
+    \node[font=\scriptsize, figB] at (-0.55,0) {$A$};
+    \node[font=\scriptsize, figR] at (0.55,0) {$B$};
+    \node[font=\scriptsize, below] at (0,-0.62) {$x_0$};
+    \node[font=\small] at (0,1.0) {$X$};
+  \end{scope}
+  \draw[-stealth, thin] (3.1,0) -- node[above, font=\scriptsize] {$p$} (3.8,0);
+\end{tikzpicture}

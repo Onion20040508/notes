@@ -1,0 +1,40 @@
+% Figure from MATH 590 notes, section 29. Compile with the notes preamble.
+\begin{tikzpicture}[scale=0.95]
+  \def\R{0.62}
+  % arc of the left circle near p: angles (-35,35) about (-R,0); right circle: (145,215) about (R,0)
+  \newcommand{\eight}{%
+    \draw[black!25, thick] (-\R,0) circle (\R);
+    \draw[black!25, thick] (\R,0) circle (\R);}
+  \newcommand{\leftnear}[1]{%
+    \draw[#1, line width=1.8pt] ($(-\R,0)+(-35:\R)$) arc (-35:35:\R);
+    \draw[#1, fill=white, thin] ($(-\R,0)+(-35:\R)$) circle (1.3pt) ($(-\R,0)+(35:\R)$) circle (1.3pt);}
+  \newcommand{\rightnear}[1]{%
+    \draw[#1, line width=1.8pt] ($(\R,0)+(145:\R)$) arc (145:215:\R);
+    \draw[#1, fill=white, thin] ($(\R,0)+(145:\R)$) circle (1.3pt) ($(\R,0)+(215:\R)$) circle (1.3pt);}
+  % panel A
+  \begin{scope}[shift={(-3.0,0)}]
+    \eight
+    \draw[figB, line width=1.8pt] (-\R,0) circle (\R);
+    \rightnear{figB}
+    \fill[black] (0,0) circle (1.4pt);
+    \node[font=\small, figB] at (0,-1.0) {$A$};
+  \end{scope}
+  % panel B
+  \begin{scope}
+    \eight
+    \draw[figR, line width=1.8pt] (\R,0) circle (\R);
+    \leftnear{figR}
+    \fill[black] (0,0) circle (1.4pt);
+    \node[font=\small, figR] at (0,-1.0) {$B$};
+  \end{scope}
+  % panel A cap B
+  \begin{scope}[shift={(3.0,0)}]
+    \eight
+    \leftnear{figG}
+    \rightnear{figG}
+    \fill[black] (0,0) circle (1.4pt);
+    \node[font=\small, figG] at (0,-1.0) {$A\cap B$};
+  \end{scope}
+  \node[font=\scriptsize] at (3.0,0.9) {$p$};
+  \draw[black!45, thin] (3.0,0.78) -- (3.0,0.1);
+\end{tikzpicture}

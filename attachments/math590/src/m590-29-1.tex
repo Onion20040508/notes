@@ -1,18 +1,20 @@
 % Figure from MATH 590 notes, section 29. Compile with the notes preamble.
-\begin{tikzpicture}[scale=1.6, >=stealth, thick]
-    % Square - Torus
-    \draw[->, blue] (0,0) -- (1.1,0); \draw[blue] (1.1,0) -- (2,0) node[midway, below] {};
-    \node[blue, below] at (1,0) {$a$};
-    \draw[->, red!70!black] (2,0) -- (2,1.1); \draw[red!70!black] (2,1.1) -- (2,2);
-    \node[red!70!black, right] at (2,1) {$b$};
-    \draw[->, blue] (2,2) -- (0.9,2); \draw[blue] (0.9,2) -- (0,2);
-    \node[blue, above] at (1,2) {$a$};
-    \draw[->, red!70!black] (0,2) -- (0,0.9); \draw[red!70!black] (0,0.9) -- (0,0);
-    \node[red!70!black, left] at (0,1) {$b$};
-    % Corners
-    \foreach \p in {(0,0),(2,0),(0,2),(2,2)} \fill[green!50!black] \p circle (2.5pt);
-    \node[below left, font=\scriptsize, green!50!black] at (0,0) {$x_0$};
-    \node[below right, font=\scriptsize, green!50!black] at (2,0) {$x_0$};
-    \node[above left, font=\scriptsize, green!50!black] at (0,2) {$x_0$};
-    \node[above right, font=\scriptsize, green!50!black] at (2,2) {$x_0$};
+\begin{tikzpicture}[scale=1.25, >=stealth,
+  mid/.style={postaction={decorate}, decoration={markings, mark=at position 0.56 with {\arrow{Stealth[length=2.6mm]}}}}]
+  \fill[black!4] (0,0) rectangle (2,2);
+  \draw[figB, thick, mid] (0,0) -- (2,0);
+  \draw[figR, thick, mid] (2,0) -- (2,2);
+  \draw[figB, thick, mid] (0,2) -- (2,2);
+  \draw[figR, thick, mid] (0,0) -- (0,2);
+  \node[figB, below, font=\small] at (1,0) {$a$};
+  \node[figR, right, font=\small] at (2,1) {$b$};
+  \node[figB, above, font=\small] at (1,2) {$a$};
+  \node[figR, left, font=\small] at (0,1) {$b$};
+  \fill[black] (0,0) circle (1.8pt); \fill[black] (2,0) circle (1.8pt);
+  \fill[black] (2,2) circle (1.8pt); \fill[black] (0,2) circle (1.8pt);
+  \node[black, below left, font=\scriptsize] at (0,0) {$x_0$};
+  \node[black, below right, font=\scriptsize] at (2,0) {$x_0$};
+  \node[black, above right, font=\scriptsize] at (2,2) {$x_0$};
+  \node[black, above left, font=\scriptsize] at (0,2) {$x_0$};
+  \node[font=\scriptsize, black!60] at (1,1) {$aba^{-1}b^{-1}$};
 \end{tikzpicture}

@@ -1,5 +1,5 @@
 % Figure from MATH 590 notes, section 24. Compile with the notes preamble.
-\begin{tikzcd}
-E \arrow[r, "p"] \arrow[dr, "p'"'] & B \\
-& B' \arrow[u, "h"]
+\begin{tikzcd}[column sep=large, row sep=large]
+E \arrow[r, "p"] \arrow[dr, "p' = h^{-1} \circ p"', color=figR] & B \\
+& B' \arrow[u, "h"', "\cong"]
 \end{tikzcd}

@@ -1,0 +1,19 @@
+% Figure from MATH 590 notes, section 8. Compile with the notes preamble.
+\begin{tikzpicture}
+  \fill[figB!12] (-1.2,0) circle (1.05);
+  \draw[figB, thick, dashed] (-1.2,0) circle (1.05);
+  \fill[figR!15] (1.4,0) circle (1.05);
+  \draw[figR, thick, dashed] (1.4,0) circle (1.05);
+  \fill[black] (-1.2,0) circle (1.6pt) node[below right=0pt, font=\scriptsize] {$x$};
+  \fill[black] (1.4,0) circle (1.6pt) node[below=2pt, font=\scriptsize] {$y$};
+  \node[font=\scriptsize, figB] at (-1.2,0.72) {$U_x$};
+  \node[font=\scriptsize, figR] at (1.4,0.72) {$U_y$};
+  % sequence x_n approaching x from the left; the early terms lie outside U_x
+  \foreach \r/\a in {2.3/165, 1.85/197, 1.45/160, 1.18/200, 0.9/163, 0.68/196, 0.5/166, 0.36/192, 0.25/170, 0.16/188} {
+    \fill[black!70] ($(-1.2,0)+(\a:\r)$) circle (1.1pt);
+  }
+  \node[font=\scriptsize, black!70] at (-3.5,0.88) {$x_1$};
+  \node[font=\scriptsize, black!70] at (-3.05,-0.95) {$x_2$};
+  \node[font=\scriptsize, black!60, align=center] at (-1.2,-1.45) {$x_n \in U_x$ for $n \ge N_1$};
+  \node[font=\scriptsize, black!60] at (1.4,-1.45) {no tail fits here};
+\end{tikzpicture}

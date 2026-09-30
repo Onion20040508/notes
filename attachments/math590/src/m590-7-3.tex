@@ -1,0 +1,17 @@
+% Figure from MATH 590 notes, section 7. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.6]
+  % X = {a,b,c} with open sets {b}, {a,b}, {b,c}, X, and the empty set
+  \draw[black!55, thin, rounded corners=6pt] (-0.5,-0.78) rectangle (1.5,0.9);
+  \node[font=\scriptsize, black!60] at (1.36,0.76) {$X$};
+  \draw[figB, thick, rounded corners=9pt] (-0.28,-0.3) rectangle (0.7,0.45);
+  \draw[figB, thick, rounded corners=9pt] (0.3,-0.45) rectangle (1.28,0.3);
+  \draw[figR, thick] (0.52,0.0) circle (0.22);
+  \foreach \p/\q in {0/a,0.5/b,1/c} {
+    \fill (\p,0) circle (1.1pt);
+    \node[font=\scriptsize, left=0.5pt] at (\p,0) {$\q$};
+  }
+  \node[font=\scriptsize, figB] at (-0.02,0.6) {$\{a,b\}$};
+  \node[font=\scriptsize, figB] at (1.02,-0.6) {$\{b,c\}$};
+  \draw[figR, thin] (0.6,0.2) -- (0.72,0.64);
+  \node[font=\scriptsize, figR, above] at (0.74,0.6) {$\{b\}$};
+\end{tikzpicture}

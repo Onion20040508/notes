@@ -1,0 +1,49 @@
+% Figure from MATH 590 notes, section 24. Compile with the notes preamble.
+\begin{tikzpicture}[
+  hx/.style={variable=\t, samples=30, smooth},
+  op/.style={circle, inner sep=1.3pt, fill=white, draw=#1, thick}, op/.default=figR]
+  \def\R{1.5}\def\r{0.2}\def\h{1.25}\def\yo{0.2}
+  % the missing piece (-1/4, 0), not in R_+
+  \draw[black!40, thick, dashed, hx, domain=-0.25:0]
+    plot ({\R*sin(360*\t)}, {-\r*cos(360*\t)+\h*\t+\yo});
+  % back halves
+  \foreach \n in {0,1,2} {
+    \draw[figB!60, thick, hx, domain={\n+0.25}:{min(\n+0.75,2.4)}]
+      plot ({\R*sin(360*\t)}, {-\r*cos(360*\t)+\h*\t+\yo});
+  }
+  % full slices V_1, V_2
+  \foreach \n in {1,2} {
+    \draw[figR, very thick, hx, domain=\n-0.25:\n+0.25]
+      plot ({\R*sin(360*\t)}, {-\r*cos(360*\t)+\h*\t+\yo});
+    \node[op] at ({-\R}, {\h*(\n-0.25)+\yo}) {};
+    \node[op] at ({\R}, {\h*(\n+0.25)+\yo}) {};
+    \node[font=\scriptsize, figR, anchor=west] at ({\R+0.1}, {\h*(\n+0.25)+\yo}) {$V_{\n}$};
+  }
+  % the defective half-slice V_0 = [0, 1/4)
+  \draw[figO, very thick, hx, domain=0:0.25]
+    plot ({\R*sin(360*\t)}, {-\r*cos(360*\t)+\h*\t+\yo});
+  \node[op=figO] at ({\R}, {\h*0.25+\yo}) {};
+  \node[font=\scriptsize, figO, anchor=west] at ({\R+0.1}, {\h*0.25+\yo}) {$V_0 = [0, \tfrac14)$};
+  % fiber
+  \draw[black!40, dotted, thin] (0,-1.55) -- (0,{\h*2-\r+\yo});
+  \foreach \n in {0,1,2} {
+    \fill (0,{\h*\n-\r+\yo}) circle (1.5pt);
+    \node[font=\scriptsize, anchor=south west, inner sep=1.5pt] at (0.02,{\h*\n-\r+\yo+0.02}) {$\n$};
+  }
+  \node[font=\scriptsize, black!55, anchor=north] at (-0.8,-0.2) {not in $\mathbb{R}_+$};
+  \node[font=\small, figB] at (-2.1,{\h*2+\yo}) {$\mathbb{R}_+$};
+  \draw[-stealth, thick, black!70] (-2.1,-0.45) -- node[left, font=\scriptsize] {$p$} (-2.1,-1.15);
+  % base circle
+  \begin{scope}[yshift=-1.55cm]
+    \draw[figB!60, thick] (\R,0) arc[start angle=0, end angle=180, x radius=\R, y radius=\r];
+    \draw[figR, very thick] (-\R,0) arc[start angle=180, end angle=360, x radius=\R, y radius=\r];
+    \node[op] at (-\R,0) {};
+    \node[op] at (\R,0) {};
+    \draw[figO, thick] (0,{-\r-0.16}) arc[start angle=270, end angle=358, x radius=\R+0.16, y radius=\r+0.16];
+    \fill (0,-\r) circle (1.5pt);
+    \node[font=\scriptsize, below, inner sep=2pt] at (-0.3,{-\r-0.02}) {$b_0$};
+    \node[font=\scriptsize, figO, anchor=north west] at (0.75,-0.38) {$p(V_0)$};
+    \node[font=\scriptsize, figR, anchor=west] at (\R+0.3,0.05) {$U$};
+    \node[font=\small, figB] at (-2.1,0) {$S^1$};
+  \end{scope}
+\end{tikzpicture}

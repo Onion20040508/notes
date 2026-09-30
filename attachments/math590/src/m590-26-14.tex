@@ -1,0 +1,22 @@
+% Figure from MATH 590 notes, section 26. Compile with the notes preamble.
+\begin{tikzpicture}[scale=2.4, >={Stealth[length=5pt]}]
+  \fill[black!4] (0,0) rectangle (1,1);
+  % the square is convex: the two boundary paths are homotopic through it
+  \foreach \u in {0.25,0.5,0.75}
+    \draw[black!30, thin] (0,0) .. controls ({\u},{1-\u}) .. (1,1);
+  \draw[figB, thick, ->] (0,0) -- (0.55,0); \draw[figB, thick] (0.5,0) -- (1,0);
+  \draw[figB, thick, ->] (1,0) -- (1,0.55); \draw[figB, thick] (1,0.5) -- (1,1);
+  \draw[figR, thick, ->] (0,0) -- (0,0.55); \draw[figR, thick] (0,0.5) -- (0,1);
+  \draw[figR, thick, ->] (0,1) -- (0.55,1); \draw[figR, thick] (0.5,1) -- (1,1);
+  \node[font=\scriptsize, figB, below] at (0.5,0) {$h \circ f$};
+  \node[font=\scriptsize, figB, right] at (1,0.5) {$\alpha$};
+  \node[font=\scriptsize, figR, left]  at (0,0.5) {$\alpha$};
+  \node[font=\scriptsize, figR, above] at (0.5,1) {$k \circ f$};
+  \fill (0,0) circle (0.7pt) node[below left, font=\scriptsize] {$h(x_0)$};
+  \fill (1,1) circle (0.7pt) node[above right, font=\scriptsize] {$k(x_0)$};
+  \fill (1,0) circle (0.7pt) node[below right, font=\scriptsize] {$h(x_0)$};
+  \fill (0,1) circle (0.7pt) node[above left, font=\scriptsize] {$k(x_0)$};
+  % axes
+  \draw[black!55, thin, -stealth] (-0.02,-0.3) -- (0.35,-0.3) node[right, font=\scriptsize] {$s$};
+  \draw[black!55, thin, -stealth] (-0.3,-0.02) -- (-0.3,0.35) node[above, font=\scriptsize] {$t$};
+\end{tikzpicture}

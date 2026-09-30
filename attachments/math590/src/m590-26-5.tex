@@ -1,5 +1,5 @@
 % Figure from MATH 590 notes, section 26. Compile with the notes preamble.
-\begin{tikzcd}[column sep=small, row sep=large]
-\pi_1(S^1) \cong \mathbb{Z} \arrow[d, Rightarrow, "\text{(}n=1\text{ only)}"] & & H_n(S^n) \cong \mathbb{Z} \arrow[d, Rightarrow, "\text{(general }n\text{)}"] \\
-\text{No retraction } B^{n+1} \to S^n \arrow[r, Rightarrow, "\text{ray}"] & \text{Brouwer FPT for } B^{n+1} \arrow[r, Rightarrow, "\text{compose}"] & \text{Retract of } B^{n+1} \text{ has FPP}
+\begin{tikzcd}[column sep=large, row sep=large]
+\pi_1(S^1) \cong \mathbb{Z} \arrow[d, Rightarrow, "n=1"', color=figB] & H_n(S^n) \cong \mathbb{Z} \arrow[dl, Rightarrow, dashed, "\text{all } n", black!55] & \\
+\text{no retraction } B^{n+1} \to S^n \arrow[r, Rightarrow, "\text{ray}", color=figB] & \text{Brouwer for } B^{n+1} \arrow[r, Rightarrow, "\text{compose}", color=figB] & \text{retracts of } B^{n+1} \text{ have the FPP}
 \end{tikzcd}

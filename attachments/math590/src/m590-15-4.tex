@@ -1,0 +1,39 @@
+% Figure from MATH 590 notes, section 15. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.35]
+  % X x Y as a strip, Y = compact vertical factor
+  \draw[black!40, thin] (0,0) rectangle (4,2.4);
+  \node[font=\small] at (3.55,2.65) {$X\times Y$};
+  % open set N (clipped to the strip)
+  \begin{scope}
+    \clip (0,0) rectangle (4,2.4);
+    \path[fill=figB!12, draw=figB, thick, dashed] plot[smooth cycle, tension=0.7] coordinates
+      {(1.05,-0.3) (1.3,0.5) (0.9,1.2) (1.45,2.0) (1.1,2.8) (2.8,2.8) (2.75,2.0) (3.1,1.2) (2.65,0.5) (3.0,-0.3)};
+    % the tube W x Y
+    \fill[figR!18] (1.75,0) rectangle (2.45,2.4);
+    \draw[figR, thick] (1.75,0) -- (1.75,2.4) (2.45,0) -- (2.45,2.4);
+    % basis boxes B_{y_i} x C_{y_i}
+    \draw[black!75, dashed, line width=0.6pt] (1.4,-0.1) rectangle (2.6,0.95);
+    \draw[black!75, dashed, line width=0.6pt] (1.6,0.8) rectangle (2.45,1.75);
+    \draw[black!75, dashed, line width=0.6pt] (1.75,1.6) rectangle (2.55,2.5);
+  \end{scope}
+  % the slice x0 x Y
+  \draw[figB, very thick] (2.1,0) -- (2.1,2.4);
+  \foreach \y in {0.45,1.25,2.05} \fill[figB] (2.1,\y) circle (1.2pt);
+  \node[font=\scriptsize, figB] at (3.1,1.95) {$N$};
+  \node[font=\scriptsize, figR] at (2.1,2.62) {$W\times Y$};
+  % axes: X below, Y at left
+  \draw[black!55, thin] (0,-0.35) -- (4,-0.35);
+  \node[font=\scriptsize] at (4.2,-0.35) {$X$};
+  \fill (2.1,-0.35) circle (1.1pt);
+  \node[font=\scriptsize, below=1pt] at (2.1,-0.35) {$x_0$};
+  \draw[figR, thick] (1.75,-0.35) -- (2.45,-0.35);
+  \draw[figR, fill=white, thick] (1.75,-0.35) circle (1.3pt) (2.45,-0.35) circle (1.3pt);
+  \node[font=\scriptsize, figR, below=1pt] at (2.62,-0.35) {$W$};
+  \draw[black!55, thin] (-0.25,0) -- (-0.25,2.4);
+  \fill (-0.25,0) circle (1.1pt) (-0.25,2.4) circle (1.1pt);
+  \node[font=\scriptsize] at (-0.25,2.6) {$Y$};
+  \foreach \a/\b/\off/\i in {0/0.95/-0.45/1, 0.8/1.75/-0.62/2, 1.6/2.4/-0.45/3} {
+    \draw[black!60] (\off,\a) -- (\off,\b);
+    \node[font=\scriptsize, black!70, left=1pt] at (\off,{(\a+\b)/2}) {$C_{y_{\i}}$};
+  }
+\end{tikzpicture}

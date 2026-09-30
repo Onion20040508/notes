@@ -1,0 +1,23 @@
+% Figure from MATH 590 notes, section 20. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.1]
+  % closed sets A and Z
+  \filldraw[figR, thick, fill=figR!12] plot[smooth cycle, tension=0.8] coordinates
+    {(-2.2,0.9) (-0.8,1.15) (0,0.2) (-0.35,-0.9) (-1.8,-1.0)};
+  \filldraw[figB, thick, fill=figB!12] plot[smooth cycle, tension=0.8] coordinates
+    {(1.6,0.2) (2.2,1.2) (3.4,0.9) (3.5,-0.6) (2.3,-1.0)};
+  \node[font=\small, figR] at (-1.7,0.25) {$A$};
+  \node[font=\small, figB] at (3.0,0.1) {$Z$};
+  % full balls (dashed): miss the other set
+  \draw[figR, dashed] (0,0.2) circle (1.45);
+  \draw[figB, dashed] (1.6,0.2) circle (1.2);
+  % half balls (solid): these build U and V
+  \filldraw[figR, thick, fill=figR!30, fill opacity=0.8] (0,0.2) circle (0.725);
+  \filldraw[figB, thick, fill=figB!30, fill opacity=0.8] (1.6,0.2) circle (0.6);
+  \fill (0,0.2) circle (1.4pt) (1.6,0.2) circle (1.4pt);
+  \node[font=\scriptsize, left=1pt] at (0,0.2) {$a$};
+  \node[font=\scriptsize, right=1pt] at (1.6,0.2) {$z$};
+  \node[font=\scriptsize, figR] at (-0.15,1.85) {$B(a,\varepsilon_a)$};
+  \node[font=\scriptsize, figB] at (2.25,1.55) {$B(z,\varepsilon_z)$};
+  \node[font=\scriptsize, figR] at (0.05,-0.75) {$B(a,\tfrac{\varepsilon_a}2)$};
+  \node[font=\scriptsize, figB] at (1.75,-0.62) {$B(z,\tfrac{\varepsilon_z}2)$};
+\end{tikzpicture}

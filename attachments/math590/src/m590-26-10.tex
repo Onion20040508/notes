@@ -1,0 +1,25 @@
+% Figure from MATH 590 notes, section 26. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.9]
+  \fill[figB!10] (0,0) circle (1);
+  \draw[figB, thick] (0,0) circle (1);
+  \node[font=\small, figB] at (-0.9,0.9) {$S^1$};
+  \node[font=\scriptsize, figB] at (-0.6,0.45) {$B^2$};
+  % interior point x
+  \coordinate (fx) at (-0.3,-0.25);
+  \coordinate (x)  at (0.1,0.2);
+  % intersection of ray fx + t (x - fx) with the unit circle
+  \path[name path=ray] (fx) -- ($(fx)!3!(x)$);
+  \path[name path=circ] (0,0) circle (1);
+  \path[name intersections={of=ray and circ, by=rx}];
+  \draw[black!55, thin, dashed] (fx) -- (x);
+  \draw[figR, thick, -{Stealth[length=5pt]}] (x) -- (rx);
+  \fill[black] (fx) circle (1.1pt) node[below, font=\scriptsize, inner sep=2.5pt] {$f(x) = \gamma(0)$};
+  \fill[black] (x) circle (1.1pt) node[above left, font=\scriptsize, inner sep=1.5pt] {$x = \gamma(1)$};
+  \fill[figR] (rx) circle (1.3pt) node[above right, font=\scriptsize, inner sep=1.5pt] {$r(x) = \gamma(t_0)$};
+  % boundary point y: the ray exits at y itself
+  \coordinate (y) at (-12:1);
+  \coordinate (fy) at (0.2,-0.62);
+  \draw[black!55, thin, dashed] (fy) -- (y);
+  \fill[black] (fy) circle (1.1pt) node[below, font=\scriptsize, inner sep=2.5pt] {$f(y)$};
+  \fill[figR] (y) circle (1.3pt) node[right, font=\scriptsize, inner sep=2.5pt] {$y = r(y)$};
+\end{tikzpicture}

@@ -1,0 +1,30 @@
+% Figure from MATH 590 notes, section 26. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.15, >={Stealth[length=4pt]}]
+  \def\L{3}
+  \coordinate (q) at (1.5,1.5);
+  \fill[figB!8] (0,0) rectangle (\L,\L);
+  % radial push from q to the boundary
+  \foreach \a in {0,30,...,330} {
+    \pgfmathsetmacro{\c}{cos(\a)}\pgfmathsetmacro{\s}{sin(\a)}
+    \pgfmathsetmacro{\m}{max(abs(\c),abs(\s))}
+    \draw[figR!75, thick, ->] ($(q)+(\a:0.55)$) -- ($(q)+({1.4*\c/\m},{1.4*\s/\m})$);
+  }
+  % small loop t around q
+  \draw[figO, thick] (q) circle (0.3);
+  \draw[figO, thick, ->] ($(q)+(88:0.3)$) arc (88:92:0.3);
+  \node[font=\scriptsize, figO] at ($(q)+(0.42,0.2)$) {$t$};
+  \filldraw[fill=white, draw=black, thin] (q) circle (1.5pt);
+  \node[font=\scriptsize] at ($(q)+(0,-0.16)$) {$q$};
+  % boundary edges with the identifications
+  \draw[figB, very thick] (0,0) -- (\L,0) -- (\L,\L) -- (0,\L) -- cycle;
+  \foreach \y in {0,\L} \draw[figB, very thick, ->] (1.4,\y) -- (1.6,\y);
+  \foreach \x in {0,\L} \draw[figB, very thick, -{Stealth[length=4pt] Stealth[length=4pt]}] (\x,1.35) -- (\x,1.65);
+  \node[font=\small, figB, below] at (1.5,0) {$a$};
+  \node[font=\small, figB, above] at (1.5,\L) {$a$};
+  \node[font=\small, figB, left] at (0,1.5) {$b$};
+  \node[font=\small, figB, right] at (\L,1.5) {$b$};
+  \foreach \p in {(0,0),(\L,0),(0,\L),(\L,\L)} \fill[black] \p circle (1.4pt);
+  \node[font=\scriptsize, below left] at (0,0) {$0$};
+  \node[font=\scriptsize, below right] at (\L,0) {$2\pi$};
+  \node[font=\scriptsize, above left] at (0,\L) {$2\pi$};
+\end{tikzpicture}

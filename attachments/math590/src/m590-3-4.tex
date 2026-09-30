@@ -1,26 +1,16 @@
 % Figure from MATH 590 notes, section 3. Compile with the notes preamble.
-\begin{tikzpicture}[scale=0.8]
-    % Axes
-    \draw[->] (-0.5,0) -- (5,0) node[right] {$x$};
-    \draw[->] (0,-0.5) -- (0,4) node[above] {$y$};
-    
-    % Shaded region - full vertical lines for x < c
-    \draw[very thick, blue, dashed] (0.5,-0.3) -- (0.5,3.8);
-    \draw[very thick, blue] (1.5,-0.3) -- (1.5,3.8);
-    \draw[very thick, blue] (2.5,-0.3) -- (2.5,3.8);
-    
-    % Shaded region - vertical line at x=c (lower part)
-    \draw[very thick, blue] (3.5,-0.3) -- (3.5,2.5);
-    \draw[blue, fill=white] (3.5,2.5) circle (2pt);
-    
-    % Point
-    \node[below] at (3.5,0) {$c$};
-    \node[left] at (0,2.5) {$d$};
-    
-    % Label
-    \fill[red] (3.5,2.5) circle (2pt);
-    \node[right] at (3.6,2.5) {\small $c \times d$};
-    
-    % Arrow from infinity
-    \draw[<-, thick, gray] (-0.7,2) -- (-0.2,2);
+\begin{tikzpicture}[scale=1.0]
+  \def\c{2.9}\def\d{0.8}
+  \def\lo{-1.1}\def\hi{2.4}\def\L{-0.6}
+  % every full vertical line x < c
+  \fill[figB!10] (\L,\lo) rectangle (\c,\hi);
+  \fill[pattern=vertical lines, pattern color=figB!45] (\L,\lo) rectangle (\c,\hi);
+  \draw[-stealth, thin] (-1.1,0) -- (4.1,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,\lo-0.15) -- (0,\hi+0.25) node[above, font=\scriptsize] {$y$};
+  \draw[figB, thick] (\c,\lo) -- (\c,\d);
+  \draw[black!40, dashed] (\c,\d) -- (\c,\hi);
+  \draw[figB, thick, fill=white] (\c,\d) circle (2.2pt);
+  \node[font=\scriptsize, right] at (\c+0.06,\d) {$c\times d$};
+  \node[font=\scriptsize, below] at (\c,\lo) {$c$};
+  \draw[figB, thick, -stealth] (\L-0.05,1.9) -- (\L-0.5,1.9);
 \end{tikzpicture}

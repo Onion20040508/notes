@@ -1,0 +1,23 @@
+% Figure from MATH 590 notes, section 28. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.25]
+  \shade[ball color=white, opacity=0.35] (0,0) circle (1.5);
+  \draw[thick, black!70] (0,0) circle (1.5);
+  \draw[thin, black!40] (-1.5,0) arc (180:360:1.5 and 0.42);
+  \draw[thin, black!40, dashed] (1.5,0) arc (0:180:1.5 and 0.42);
+  % U around x (front, upper left)
+  \filldraw[figR, fill=figR!18, thick, dashed, rotate around={-30:(-0.62,0.72)}] (-0.62,0.72) ellipse (0.42 and 0.3);
+  % a(U) around -x (back, lower right): hidden, drawn fainter
+  \filldraw[figR!70, fill=figR!8, thick, dashed, rotate around={-30:(0.62,-0.72)}] (0.62,-0.72) ellipse (0.42 and 0.3);
+  % diameter through the center
+  \draw[black!45, dotted, thick] (-0.62,0.72) -- (0.62,-0.72);
+  \fill[black] (0,0) circle (0.9pt);
+  \fill[figR] (-0.62,0.72) circle (1.5pt);
+  \fill[figR!70] (0.62,-0.72) circle (1.5pt);
+  \node[font=\scriptsize, figR, left=1pt] at (-0.62,0.72) {$x$};
+  \node[font=\scriptsize, figR!80!black, right=1pt] at (0.62,-0.72) {$-x$};
+  \node[font=\scriptsize, figR, left] at (-1.45,1.45) {$U = B(x,\varepsilon)\cap S^2$};
+  \draw[black!45, thin] (-1.45,1.42) -- (-0.88,0.95);
+  \node[font=\scriptsize, figR!80!black, right] at (1.45,-1.45) {$a(U) = B(-x,\varepsilon)\cap S^2$};
+  \draw[black!45, thin] (1.45,-1.42) -- (0.88,-0.95);
+  \node[font=\small] at (-1.45,-1.35) {$S^2$};
+\end{tikzpicture}

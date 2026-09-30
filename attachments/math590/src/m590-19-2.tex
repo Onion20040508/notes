@@ -1,0 +1,27 @@
+% Figure from MATH 590 notes, section 19. Compile with the notes preamble.
+\begin{tikzpicture}[x=7.6cm, y=1cm]
+  \draw[black!45, thin] (-0.12,0) -- (0.62,0);
+  % U = (a,b) \ K  (red row)
+  \draw[figR, very thick] (-0.08,0.55) -- (0.56,0.55);
+  \draw[figR, fill=white, thick] (-0.08,0.55) circle (1.4pt) (0.56,0.55) circle (1.4pt);
+  \foreach \n in {2,...,7} \draw[figR, fill=white, thick] ({1/\n},0.55) circle (1.2pt);
+  \node[font=\scriptsize, figR, left=3pt] at (-0.08,0.55) {$U\supseteq(a,b)\setminus K$};
+  % V around each point of K (blue row)
+  \foreach \n in {2,...,6} {
+    \pgfmathsetmacro{\h}{0.45*(1/\n-1/(\n+1))}
+    \draw[figB, very thick] ({1/\n-\h},1.1) -- ({1/\n+\h},1.1);
+    \draw[figB, fill=white, thick] ({1/\n-\h},1.1) circle (1.2pt) ({1/\n+\h},1.1) circle (1.2pt);
+  }
+  \node[font=\scriptsize, figB] at (0.1,1.1) {$\cdots$};
+  \node[font=\scriptsize, figB, left=3pt] at (-0.08,1.1) {$V\supseteq K$};
+  % K and 0 on the line
+  \foreach \n in {2,...,40} \fill[figB] ({1/\n},0) circle (0.9pt);
+  \fill[figR] (0,0) circle (1.6pt);
+  \node[font=\scriptsize, figR, below=2pt] at (0,0) {$0$};
+  \foreach \n in {2,3,4} \node[font=\scriptsize, below=2pt] at ({1/\n},0) {$\frac1{\n}$};
+  % the point z in U cap V
+  \pgfmathsetmacro{\z}{1/3-0.02}
+  \draw[black!55, dotted, thick] (\z,-0.05) -- (\z,1.35);
+  \fill (\z,0.55) circle (1.3pt) (\z,1.1) circle (1.3pt);
+  \node[font=\scriptsize, above=1pt] at (\z,1.35) {$z$};
+\end{tikzpicture}

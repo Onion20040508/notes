@@ -1,0 +1,23 @@
+% Figure from MATH 590 notes, section 5. Compile with the notes preamble.
+\begin{tikzpicture}[x=2.8cm]
+  \draw[-stealth, thin] (-1.25,0) -- (1.35,0);
+  % the subspace Y = [0,1)
+  \draw[black!55, line width=2.2pt] (0,0) -- (1,0);
+  % U = (-1, 1/2), open in R
+  \draw[figB, thick] (-1,0.38) -- (0.5,0.38);
+  \draw[figB, thick, fill=white] (-1,0.38) circle (1.6pt);
+  \draw[figB, thick, fill=white] (0.5,0.38) circle (1.6pt);
+  \node[font=\scriptsize, figB, above] at (-0.5,0.4) {$(-1,\tfrac12)$};
+  \draw[black!40, dotted] (-1,0.38) -- (-1,0) (0.5,0.38) -- (0.5,0);
+  % U \cap Y = [0, 1/2)
+  \draw[figR, line width=2.2pt] (0,0) -- (0.5,0);
+  \fill[figR] (0,0) circle (1.7pt);
+  \draw[figR, thick, fill=white] (0.5,0) circle (1.7pt);
+  \draw[black!55, thick, fill=white] (1,0) circle (1.7pt);
+  \node[font=\scriptsize] at (-1,-0.26) {$-1$};
+  \node[font=\scriptsize] at (0,-0.26) {$0$};
+  \node[font=\scriptsize] at (0.5,-0.28) {$\tfrac12$};
+  \node[font=\scriptsize] at (1,-0.26) {$1$};
+  \node[font=\scriptsize, figR] at (0.25,-0.28) {$[0,\tfrac12)$};
+  \node[font=\scriptsize, black!70] at (0.78,0.2) {$Y=[0,1)$};
+\end{tikzpicture}

@@ -1,0 +1,27 @@
+% Figure from MATH 590 notes, section 4. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.3]
+  \draw[-stealth, thin] (-0.1,0) -- (3.8,0) node[right, font=\scriptsize] {$X$};
+  \draw[-stealth, thin] (0,-0.1) -- (0,2.9) node[above, font=\scriptsize] {$Y$};
+  % U_1 x V_1 and U_2 x V_2, with intersection (U_1 \cap U_2) x (V_1 \cap V_2)
+  \fill[figB!10] (0.4,0.5) rectangle (2.4,1.8);
+  \fill[figB!10] (1.4,1.1) rectangle (3.4,2.5);
+  \fill[figR!15] (1.4,1.1) rectangle (2.4,1.8);
+  \draw[black!40, dotted] (1.4,0) -- (1.4,1.1) (2.4,0) -- (2.4,0.5);
+  \draw[black!40, dotted] (0,1.1) -- (0.4,1.1) (0,1.8) -- (0.4,1.8);
+  \draw[figB, thick, dashed] (0.4,0.5) rectangle (2.4,1.8);
+  \draw[figB, thick, dashed] (1.4,1.1) rectangle (3.4,2.5);
+  \draw[figR, thick] (1.4,1.1) rectangle (2.4,1.8);
+  \fill (1.55,1.45) circle (1.4pt);
+  \node[font=\scriptsize, right=0pt] at (1.55,1.45) {$x\times y$};
+  \node[font=\scriptsize, figB] at (0.88,0.72) {$U_1\times V_1$};
+  \node[font=\scriptsize, figB] at (2.95,2.28) {$U_2\times V_2$};
+  % factors on the axes
+  \draw[figB, thick] (0.4,-0.2) -- (2.4,-0.2);  \node[font=\scriptsize, figB, left] at (0.4,-0.2) {$U_1$};
+  \draw[figB, thick] (1.4,-0.42) -- (3.4,-0.42); \node[font=\scriptsize, figB, right] at (3.4,-0.42) {$U_2$};
+  \draw[figR, thick] (1.4,0) -- (2.4,0);
+  \node[font=\scriptsize, figR, below] at (1.9,-0.5) {$U_1\cap U_2$};
+  \draw[figB, thick] (-0.2,0.5) -- (-0.2,1.8);  \node[font=\scriptsize, figB, below] at (-0.2,0.5) {$V_1$};
+  \draw[figB, thick] (-0.42,1.1) -- (-0.42,2.5); \node[font=\scriptsize, figB, above] at (-0.42,2.5) {$V_2$};
+  \draw[figR, thick] (0,1.1) -- (0,1.8);
+  \node[font=\scriptsize, figR, anchor=east] at (-0.5,1.45) {$V_1\cap V_2$};
+\end{tikzpicture}

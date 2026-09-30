@@ -1,0 +1,24 @@
+% Figure from MATH 590 notes, section 3. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0]
+  % columns {1} x Z_+ and {2} x Z_+, ordered upward, column 1 entirely before column 2
+  \draw[black!40, thin, -stealth] (0,0.2) -- (0,3.75);
+  \draw[black!40, thin, -stealth] (2.2,0.2) -- (2.2,3.75);
+  \node[font=\scriptsize] at (0,-0.15) {$\{1\}\times\mathbb{Z}_+$};
+  \node[font=\scriptsize] at (2.2,-0.15) {$\{2\}\times\mathbb{Z}_+$};
+  % the basis element (1 x a, 2 x b) with a = 2, b = 3
+  \fill[figR!12, rounded corners=4pt] (-0.18,1.28) rectangle (0.18,3.6);
+  \fill[figR!12, rounded corners=4pt] (2.02,0.32) rectangle (2.38,1.18);
+  \foreach \n in {1} \fill[figB] (0,0.5*\n) circle (1.8pt);
+  \foreach \n in {3,4,5,6} \fill[figR] (0,0.5*\n) circle (1.8pt);
+  \node[figR, font=\scriptsize] at (0,3.38) {$\vdots$};
+  \draw[figR, thick, fill=white] (0,1.0) circle (1.8pt);
+  \fill[figR] (2.2,0.5) circle (2.3pt);
+  \fill[figR] (2.2,1.0) circle (1.8pt);
+  \draw[figR, thick, fill=white] (2.2,1.5) circle (1.8pt);
+  \foreach \n in {4,5,6} \fill[figB] (2.2,0.5*\n) circle (1.8pt);
+  \node[figB, font=\scriptsize] at (2.2,3.38) {$\vdots$};
+  \node[font=\scriptsize, left] at (-0.12,0.5) {$1\times 1$};
+  \node[font=\scriptsize, left] at (-0.12,1.0) {$1\times a$};
+  \node[font=\scriptsize, right, figR] at (2.32,0.5) {$2\times 1$};
+  \node[font=\scriptsize, right] at (2.32,1.5) {$2\times b$};
+\end{tikzpicture}
