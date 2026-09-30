@@ -1,0 +1,10 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{amsmath,amssymb,pgfplots}\pgfplotsset{compat=1.18}
+\definecolor{figB}{RGB}{31,90,166}
+\begin{document}\begin{tikzpicture}
+\begin{axis}[width=8.5cm,height=5cm,ybar,bar width=14pt,ymin=0,ymax=8.6,xtick={0,...,8},ytick={0,3,5,6,8},xlabel={$k$},ylabel={$\dim\operatorname{null}T^k$},
+ extra y ticks={8},extra y tick style={grid=major,grid style={dashed,gray}},nodes near coords,every node near coord/.append style={font=\scriptsize},enlarge x limits=0.08]
+\addplot[fill=figB!35,draw=figB] coordinates {(0,0)(1,3)(2,5)(3,6)(4,6)(5,6)(6,6)(7,6)(8,6)};
+\node[font=\scriptsize,gray] at (axis cs:7,7.5) {$\dim V=8$};
+\node[font=\scriptsize] at (axis cs:2,7.4) {stops growing from $k=3$};
+\end{axis}\end{tikzpicture}\end{document}

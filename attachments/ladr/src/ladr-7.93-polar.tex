@@ -1,0 +1,27 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{amsmath,amssymb,tikz}\usetikzlibrary{arrows.meta}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}
+\begin{document}\begin{tikzpicture}[scale=0.95,>={Stealth[length=2mm]}]
+\begin{scope}
+\draw[gray!50] (-1.5,0)--(1.5,0) (0,-1.5)--(0,1.5);
+\fill[gray!10] (0,0) circle (1); \draw (0,0) circle (1);
+\draw[->,very thick,figB] (0,0)--(30:1) node[above right,font=\scriptsize]{$e_1$};
+\draw[->,very thick,figR] (0,0)--(120:1) node[above left,font=\scriptsize]{$e_2$};
+\end{scope}
+\draw[->,thick] (1.8,0)--(3.0,0) node[midway,above,font=\small]{$\sqrt{T^*T}$};
+\begin{scope}[xshift=5.2cm]
+\draw[gray!50] (-2.2,0)--(2.2,0) (0,-2.0)--(0,2.0);
+\fill[gray!10,rotate=30] (0,0) ellipse (2 and 0.8); \draw[rotate=30] (0,0) ellipse (2 and 0.8);
+\draw[->,very thick,figB] (0,0)--(30:2) node[above,font=\scriptsize]{$s_1e_1$};
+\draw[->,very thick,figR] (0,0)--(120:0.8) node[above left,font=\scriptsize]{$s_2e_2$};
+\node[font=\scriptsize] at (0,-2.1) {stretch along $e_k$};
+\end{scope}
+\draw[->,thick] (7.6,0)--(8.8,0) node[midway,above,font=\small]{$S$};
+\begin{scope}[xshift=11cm]
+\draw[gray!50] (-2.2,0)--(2.2,0) (0,-2.0)--(0,2.0);
+\fill[gray!10,rotate=70] (0,0) ellipse (2 and 0.8); \draw[rotate=70] (0,0) ellipse (2 and 0.8);
+\draw[->,very thick,figB] (0,0)--(70:2) node[above right,font=\scriptsize]{$s_1f_1$};
+\draw[->,very thick,figR] (0,0)--(160:0.8) node[above left,font=\scriptsize]{$s_2f_2$};
+\node[font=\scriptsize] at (0,-2.1) {rotate $e_k\mapsto f_k$};
+\end{scope}
+\end{tikzpicture}\end{document}

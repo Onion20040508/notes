@@ -1,0 +1,14 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{amsmath,amssymb,tikz}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}\definecolor{figG}{RGB}{60,130,60}
+\begin{document}\begin{tikzpicture}[scale=0.55]
+\fill[figB!15] (0,6) rectangle (3,3); \fill[figB!15] (3,3) rectangle (4,2);
+\fill[figR!15] (4,2) rectangle (6,0);
+\draw[gray] (0,0) rectangle (6,6);
+\foreach \i in {0,...,5} {\pgfmathsetmacro{\y}{5.5-\i}\pgfmathsetmacro{\x}{0.5+\i}
+  \ifnum\i<4 \node[font=\small,figB] at (\x,\y) {$\lambda_1$};\else \node[font=\small,figR] at (\x,\y) {$\lambda_2$};\fi}
+\node[font=\small] at (1.5,5.5) {$1$}; \node[font=\small] at (2.5,4.5) {$1$}; \node[font=\small] at (5.5,1.5) {$1$};
+\node[font=\scriptsize,align=left,anchor=west] at (6.5,4.5) {$G(\lambda_1,T)$: blocks of size $3,1$};
+\node[font=\scriptsize,align=left,anchor=west] at (6.5,1) {$G(\lambda_2,T)$: block of size $2$};
+\node[font=\scriptsize,gray] at (3,-0.7) {all other entries $0$};
+\end{tikzpicture}\end{document}

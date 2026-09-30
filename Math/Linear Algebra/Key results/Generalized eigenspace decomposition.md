@@ -19,3 +19,6 @@ tags: [linear-algebra, hub]
 - [[Linear Algebra 8B Generalized Eigenspace Decomposition#^ladr-8-37|8.37 Block diagonal matrix with upper-triangular blocks]]
 - [[Linear Algebra 8C Consequences of Generalized Eigenspace Decomposition#^ladr-8-41|8.41 Over C, invertible operators have square roots]]
 - [[Jordan form|8.46 Jordan form]]
+
+## Connections
+- Replaces the eigenspace decomposition [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-55|5.55]](c), which can fail. Figure: Jordan form after [[Jordan form|8.46]].
