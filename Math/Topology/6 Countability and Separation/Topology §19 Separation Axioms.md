@@ -182,7 +182,7 @@ tags: [topology, math590]
 
 ^pf-19-2
 
-*Uses:* [[Topology §19 Separation Axioms#^def-19-2|Def. §19.2]], [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]], [[Closure Characterization|§7.3]]
+*Uses:* [[Topology §19 Separation Axioms#^def-19-2|Def. §19.2]], [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]], [[Topology §7 Interior and Closure#^thm-7-3|§7.3]]
 
 ![[m590-19-4.svg]]
 *The closure characterization, (a) for regular and (b) for normal. The open set $W$ (hatched) contains $X\setminus U$ and is disjoint from $V$, so $\overline V$ (red) cannot reach $W$. The result is the nesting $x\in V\subseteq\overline V\subseteq U$ in (a) and $A\subseteq V\subseteq\overline V\subseteq U$ in (b), with $U$ dashed blue.*

@@ -387,7 +387,7 @@ A function $f : \R^2 \to \R$ is \textbf{continuous} at $(x_0, y_0)$ if
 \begin{example}[Discontinuity via Path Dependence]
 Consider
 \[
-f(x, y) = \begin{cases} \dfrac{2xy}{x^2 + y} & (x, y) \neq (0,0) \\[6pt] 0 & (x, y) = (0, 0). \end{cases}
+f(x, y) = \begin{cases} \dfrac{2xy}{x^2 + y^2} & (x, y) \neq (0,0) \\[6pt] 0 & (x, y) = (0, 0). \end{cases}
 \]
 
 \textbf{Claim:} $f$ is not continuous at $(0, 0)$.
@@ -872,7 +872,11 @@ by the $o(\rho)$ condition. Hence the limit exists and equals $L(a, b)$.
 \end{proof}
 
 \begin{remark}[Warning: The Converse Is False]
-All directional derivatives can exist without $f$ being differentiable --- they might not ``fit together'' into a single linear map. The function $f(x,y) = \frac{2xy}{x^2+y^2}$ from the motivation is one witness: both partials exist at the origin, yet no linear approximation works along $y = x$.
+All directional derivatives can exist without $f$ being differentiable --- they might not ``fit together'' into a single linear map. A witness is $f(x,y) = \frac{x^2y}{x^4+y^2}$ for $(x,y) \neq (0,0)$, $f(0,0) = 0$. For a unit vector $\mathbf{u} = (a,b)$ with $b \neq 0$,
+\[
+\frac{f(ta,tb) - f(0,0)}{t} = \frac{a^2 b}{t^2a^4 + b^2} \to \frac{a^2}{b} \quad \text{as } t \to 0,
+\]
+and for $b = 0$ we have $f(ta, 0) = 0$; so every directional derivative exists at the origin. But along the parabola $y = x^2$, $f(x, x^2) = \tfrac12$ for $x \neq 0$, so $f$ is not continuous at $(0,0)$ --- hence not differentiable there, since differentiability gives $f(x_0+h, y_0+k) - f(x_0,y_0) = Ah + Bk + o(\rho) \to 0$. (The function $\frac{2xy}{x^2+y^2}$ from the motivation is not a witness: its directional derivatives off the axes do not exist at the origin.)
 \end{remark}
 
 \subsection*{Summary}
@@ -1201,9 +1205,9 @@ f(x + \rho \cos \alpha, \, y + \rho \sin \alpha).
 
 The \textbf{directional derivative} of $f$ at $(x, y)$ in the direction $\alpha$ is defined as:
 \[
-D_{(\alpha)} f(x, y) = \left( \frac{d}{d\rho} f(x + \rho \cos \alpha, \, y + \rho \sin \alpha) \right)\bigg|_{\rho = 0} = \lim_{\rho \to 0} \frac{f(x + \rho \cos \alpha, \, y + \rho \sin \alpha) - f(x, y)}{\rho},
+D_{(\alpha)} f(x, y) = \left( \frac{d}{d\rho} f(x + \rho \cos \alpha, \, y + \rho \sin \alpha) \right)\bigg|_{\rho = 0^+} = \lim_{\rho \to 0^+} \frac{f(x + \rho \cos \alpha, \, y + \rho \sin \alpha) - f(x, y)}{\rho},
 \]
-provided the limit exists.
+provided the limit exists. Since $\rho \ge 0$ is a distance, this is a one-sided limit: the right-hand derivative at $\rho = 0$.
 \end{definition}
 
 \begin{center}
@@ -1234,10 +1238,10 @@ provided the limit exists.
 
 
 \begin{remark}[Partial Derivatives as Special Cases]
-The partial derivatives are directional derivatives in the coordinate directions:
+The partial derivatives, when they exist, are directional derivatives in the coordinate directions:
 \begin{align*}
-D_{(0)} f(x, y) &= \lim_{\rho \to 0} \frac{f(x + \rho, y) - f(x, y)}{\rho} = f_x(x, y), \\[6pt]
-D_{(\pi/2)} f(x, y) &= \lim_{\rho \to 0} \frac{f(x, y + \rho) - f(x, y)}{\rho} = f_y(x, y).
+D_{(0)} f(x, y) &= \lim_{\rho \to 0^+} \frac{f(x + \rho, y) - f(x, y)}{\rho} = f_x(x, y), \\[6pt]
+D_{(\pi/2)} f(x, y) &= \lim_{\rho \to 0^+} \frac{f(x, y + \rho) - f(x, y)}{\rho} = f_y(x, y).
 \end{align*}
 \end{remark}
 
@@ -1260,9 +1264,9 @@ Substituting $h = \rho \cos \alpha$ and $k = \rho \sin \alpha$:
 f(x + \rho \cos \alpha, y + \rho \sin \alpha) - f(x, y) = \rho \cos \alpha \cdot f_x + \rho \sin \alpha \cdot f_y + \varepsilon \rho = \rho (f_x \cos \alpha + f_y \sin \alpha + \varepsilon).
 \]
 
-Dividing by $\rho$ and taking $\rho \to 0$:
+Dividing by $\rho$ and taking $\rho \to 0^+$:
 \[
-D_{(\alpha)} f(x, y) = \lim_{\rho \to 0} \frac{f(x + \rho \cos \alpha, y + \rho \sin \alpha) - f(x, y)}{\rho} = f_x \cos \alpha + f_y \sin \alpha + \lim_{\rho \to 0} \varepsilon = f_x \cos \alpha + f_y \sin \alpha.
+D_{(\alpha)} f(x, y) = \lim_{\rho \to 0^+} \frac{f(x + \rho \cos \alpha, y + \rho \sin \alpha) - f(x, y)}{\rho} = f_x \cos \alpha + f_y \sin \alpha + \lim_{\rho \to 0^+} \varepsilon = f_x \cos \alpha + f_y \sin \alpha.
 \]
 \end{proof}
 
@@ -1881,13 +1885,13 @@ Therefore:
 \frac{\partial g}{\partial x}(x_0, y_0) = \lim_{h \to 0} \frac{\partial_1}{h} = f_\xi(\varphi(x_0,y_0), \psi(x_0,y_0)) \cdot \varphi_x(x_0, y_0) + f_\eta(\varphi(x_0,y_0), \psi(x_0,y_0)) \cdot \psi_x(x_0, y_0).
 \]
 
-The proof for $\partial g / \partial y$ is parallel.
+Similarly (fixing $x = x_0$ and varying $y$) we obtain the formula for $\partial g / \partial y$. Finally, $g$ is differentiable at $(x_0, y_0)$: the hypotheses hold at every point near $(x_0, y_0)$ (since $\varphi, \psi$ are continuous), so both formulas hold near $(x_0, y_0)$, and they express $g_x, g_y$ as sums of products of compositions of continuous functions (Theorems~3.1, 3.2 and 10.1). Hence $g_x, g_y$ are continuous near $(x_0, y_0)$, and $g$ is differentiable there by Theorem~6.2.
 \end{proof}
 
 \begin{remark}[Warning: Differentiability of Composition]
 \textbf{Question:} If $f$ is differentiable and $\varphi, \psi$ are differentiable, is the composition $g = f \circ (\varphi, \psi)$ necessarily differentiable?
 
-\textbf{Answer:} Not automatically! The theorem requires \textbf{continuity of the partial derivatives}, not just their existence. Without this, the composition may fail to be differentiable even if all component functions are.
+\textbf{Answer:} Yes --- this is Theorem~6.9. The \textbf{continuity of the partial derivatives} assumed in the theorem above is only a sufficient condition used by its mean-value proof; it is not needed for the conclusion. (Mere existence of the partials, however, is not enough: then $f, \varphi, \psi$ need not be differentiable at all.)
 \end{remark}
 
 \section{The Three Differential Operators: Gradient, Curl, Divergence}
@@ -2072,7 +2076,7 @@ Consider the equation $x^2 + y^2 = 1$ (a circle). This defines $y$ as a function
 
 More generally, given $F(x, y) = 0$, when can we solve for $y = f(x)$ near a point $(x_0, y_0)$ on the curve?
 
-\textbf{Key insight:} If $F(a, b) = 0$ and the curve is not ``horizontal'' at $(a, b)$ (i.e., $F_y(a, b) \neq 0$), then we can locally solve for $y$ as a function of $x$.
+\textbf{Key insight:} If $F(a, b) = 0$ and the curve is not ``vertical'' at $(a, b)$ (i.e., $F_y(a, b) \neq 0$), then we can locally solve for $y$ as a function of $x$.
 
 \subsection{Statement of the Theorem}
 
@@ -2084,7 +2088,7 @@ Let $F : \R^2 \to \R$ satisfy the following conditions:
     \item $F_x$ and $F_y$ are continuous in a neighborhood $B((x_0, y_0); \varepsilon)$
 \end{enumerate}
 
-Then there exist $\delta > 0$ and a unique function $f : (x_0 - \delta, x_0 + \delta) \to \R$ such that:
+Then there exist $\delta, \eta > 0$ and a function $f : (x_0 - \delta, x_0 + \delta) \to (y_0 - \eta, y_0 + \eta)$, unique among functions with values in $(y_0 - \eta, y_0 + \eta)$, such that:
 \begin{enumerate}[label=(\alph*)]
     \item $f(x_0) = y_0$
     \item $F(x, f(x)) = 0$ for all $x \in (x_0 - \delta, x_0 + \delta)$
@@ -2144,7 +2148,7 @@ Suppose there exist $y_1, y_2 \in (y_0 - \delta_1, y_0 + \delta_1)$ with $y_1 < 
 
 Since $F_y(x, y) > \frac{a}{2} > 0$ throughout the box, $F(x, \cdot)$ is strictly increasing. But then $F(x, y_1) < F(x, y_2)$, contradicting $F(x, y_1) = F(x, y_2) = 0$.
 
-Hence $f(x)$ is uniquely defined.
+Hence $f(x)$ is uniquely defined. This is the (local) uniqueness in the theorem, with $\eta = \delta_1$.
 
 \textbf{Step 5: Continuity of $f$.}
 
@@ -2161,6 +2165,8 @@ Since $F_y > \frac{a}{2}$ in the box, we have:
 \[
 F(x_0, y_0 + \varepsilon) \geq F(x_0, y_0) + \frac{a}{2} \cdot \varepsilon = \frac{a\varepsilon}{2} > 0.
 \]
+
+Similarly, $F(x_0, y_0 - \varepsilon) \leq F(x_0, y_0) - \frac{a}{2} \cdot \varepsilon = -\frac{a\varepsilon}{2} < 0$.
 
 By continuity of $F$, there exists $\delta' > 0$ such that for $|x - x_0| < \delta'$:
 \[
@@ -2225,7 +2231,7 @@ f'(x) = -\frac{F_x(x, f(x))}{F_y(x, f(x))}.
 \subsection{Geometric Interpretation}
 
 \begin{remark}[Why $F_y \neq 0$?]
-The condition $F_y(x_0, y_0) \neq 0$ means the level curve $F(x, y) = 0$ is not horizontal at $(x_0, y_0)$.
+The condition $F_y(x_0, y_0) \neq 0$ means the level curve $F(x, y) = 0$ is not vertical at $(x_0, y_0)$.
 
 If $F_y = 0$ but $F_x \neq 0$, the curve is vertical, and we should solve for $x$ as a function of $y$ instead.
 
@@ -2460,6 +2466,10 @@ A^{-1} = \frac{1}{ad - bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}.
 Direct verification:
 \[
 \begin{pmatrix} a & b \\ c & d \end{pmatrix} \cdot \frac{1}{ad-bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} = \frac{1}{ad-bc} \begin{pmatrix} ad - bc & 0 \\ 0 & ad - bc \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}.
+\]
+and in the other order
+\[
+\frac{1}{ad-bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} \cdot \begin{pmatrix} a & b \\ c & d \end{pmatrix} = \frac{1}{ad-bc} \begin{pmatrix} da - bc & db - bd \\ -ca + ac & -cb + ad \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}.
 \]
 \end{proof}
 
@@ -2806,11 +2816,11 @@ Similarly for \textbf{local minimum} with $f(x, y) \geq f(x_0, y_0)$.
 \end{definition}
 
 \begin{theorem}[Necessary Condition for Extremum --- Fermat's Theorem in $\R^n$]
-If $f$ has a local max/min at $(x_0, y_0)$ and $f$ is differentiable there, then
+If $f$ has a local max/min at $(x_0, y_0)$ and the partials $f_x, f_y$ exist there (e.g., $f$ is differentiable there), then
 \[
 f_x(x_0, y_0) = 0 \quad \text{and} \quad f_y(x_0, y_0) = 0.
 \]
-Equivalently, $\nabla f(x_0, y_0) = \mathbf{0}$.
+Equivalently, $\nabla f(x_0, y_0) = \mathbf{0}$. The same holds in $\R^n$: if $f$ has a local max/min at $\mathbf{a}$ and all partials $\partial f / \partial x_i(\mathbf{a})$ exist, then $\nabla f(\mathbf{a}) = \mathbf{0}$.
 \end{theorem}
 
 \begin{proof}
@@ -2820,7 +2830,7 @@ By Fermat's theorem from single-variable calculus (451), $g'(x_0) = 0$.
 
 But $g'(x) = f_x(x, y_0)$, so $f_x(x_0, y_0) = 0$.
 
-By the same argument with $h(y) = f(x_0, y)$, we get $f_y(x_0, y_0) = 0$.
+By the same argument with $h(y) = f(x_0, y)$, we get $f_y(x_0, y_0) = 0$. In $\R^n$, the same argument applied to each $g_i(t) = f(\mathbf{a} + t\mathbf{e}_i)$ gives $\partial f / \partial x_i(\mathbf{a}) = 0$.
 \end{proof}
 
 \begin{remark}
@@ -2939,8 +2949,10 @@ F'(x) = f_x(x, \alpha(x)) + f_y(x, \alpha(x)) \cdot \alpha'(x) = f_x - f_y \cdot
 
 Setting $F'(x_0) = 0$:
 \[
-f_x - f_y \cdot \frac{g_x}{g_y} = 0 \quad \Longrightarrow \quad f_x g_y = f_y g_x \quad \Longrightarrow \quad \frac{f_x}{g_x} = \frac{f_y}{g_y} = \lambda.
+f_x - f_y \cdot \frac{g_x}{g_y} = 0 \quad \Longrightarrow \quad f_x g_y = f_y g_x.
 \]
+
+Set $\lambda = f_y / g_y$ (at $(x_0, y_0)$, where $g_y \neq 0$). Then $f_y = \lambda g_y$, and $f_x g_y = f_y g_x = \lambda g_x g_y$; dividing by $g_y \neq 0$ gives $f_x = \lambda g_x$.
 
 Therefore $f_x = \lambda g_x$ and $f_y = \lambda g_y$, i.e., $\nabla f = \lambda \nabla g$.
 \end{proof}
@@ -2971,6 +2983,8 @@ If the gradients $\nabla g_1, \ldots, \nabla g_k$ are linearly independent at a 
 \nabla f = \lambda_1 \nabla g_1 + \lambda_2 \nabla g_2 + \cdots + \lambda_k \nabla g_k.
 \]
 \end{theorem}
+
+The proof (carried out below for two constraints in $\R^4$) uses the implicit function theorem for systems of equations --- the general form of Theorem~12.2 for several equations, which is not proved in these notes.
 
 \begin{remark}[Why Multiple Constraints?]
 In $\R^3$, a single constraint $g(x, y, z) = 0$ defines a surface (2D object). To get a curve (1D object), we need two constraints.
@@ -3062,7 +3076,7 @@ Suppose
 \det \begin{pmatrix} \phi_z & \phi_t \\ \psi_z & \psi_t \end{pmatrix} \neq 0.
 \]
 
-By IFT, we can locally solve for $z = g(x, y)$ and $t = h(x, y)$ such that:
+By the implicit function theorem for systems (the general form of Theorem~12.2 for several equations, not proved in these notes), we can locally solve for $z = g(x, y)$ and $t = h(x, y)$ such that:
 \[
 \phi(x, y, g(x,y), h(x,y)) = 0, \qquad \psi(x, y, g(x,y), h(x,y)) = 0.
 \]
@@ -3118,12 +3132,7 @@ In matrix form:
 \begin{pmatrix} \phi_g & \phi_h \\ \psi_g & \psi_h \end{pmatrix} \begin{pmatrix} g_x & g_y \\ h_x & h_y \end{pmatrix} = -\begin{pmatrix} \phi_x & \phi_y \\ \psi_x & \psi_y \end{pmatrix} \tag{$**$}
 \]
 
-\textbf{Combining the equations:} Substituting $(**)$ into $(*)$:
-\[
-(f_g, f_h) \begin{pmatrix} g_x & g_y \\ h_x & h_y \end{pmatrix} = -(f_x, f_y)
-\]
-
-Let $A = \begin{pmatrix} \phi_g & \phi_h \\ \psi_g & \psi_h \end{pmatrix}$. From $(**)$: 
+\textbf{Combining the equations:} We substitute $(**)$ into $(*)$. Let $A = \begin{pmatrix} \phi_g & \phi_h \\ \psi_g & \psi_h \end{pmatrix}$, which is invertible by the constraint qualification. From $(**)$:
 \[
 \begin{pmatrix} g_x & g_y \\ h_x & h_y \end{pmatrix} = -A^{-1} \begin{pmatrix} \phi_x & \phi_y \\ \psi_x & \psi_y \end{pmatrix}
 \]
@@ -3246,6 +3255,8 @@ If $H$ is positive definite at $(x_0, y_0)$, then by continuity of second partia
 This means $f(x_0 + h, y_0 + k) > f(x_0, y_0)$ for all small $(h, k) \neq (0, 0)$, so $(x_0, y_0)$ is a local minimum.
 
 Similarly, negative definite $\Rightarrow$ local maximum.
+
+If $H$ is indefinite, it has eigenvalues $\lambda_+ > 0 > \lambda_-$ with unit eigenvectors $\mathbf{v}_+, \mathbf{v}_-$ (spectral theorem). Restrict $f$ to the line through $(x_0, y_0)$ in direction $\mathbf{v}_\pm$, i.e., take $(h, k) = t\mathbf{v}_\pm$ above: the difference $f(x_0 + h, y_0 + k) - f(x_0, y_0)$ equals $\frac{t^2}{2}\,\mathbf{v}_\pm^{T} H_{(x_0 + \theta h, y_0 + \theta k)} \mathbf{v}_\pm$, and by continuity of the second partials $\mathbf{v}_\pm^{T} H_{(x_0 + \theta h, y_0 + \theta k)} \mathbf{v}_\pm \to \mathbf{v}_\pm^{T} H \mathbf{v}_\pm = \lambda_\pm$ as $t \to 0$. So for small $t \neq 0$ the difference is $> 0$ along $\mathbf{v}_+$ and $< 0$ along $\mathbf{v}_-$: $f$ takes values above and below $f(x_0, y_0)$ arbitrarily close to $(x_0, y_0)$, which is a saddle point.
 \end{proof}
 
 \subsection*{Testing Definiteness: Principal Minors}
@@ -3835,6 +3846,8 @@ If $f$ is integrable on $D$, then $|f|$ is integrable and:
 \end{corollary}
 
 \begin{proof}
+First, $|f|$ is integrable: since $\big||f(p)| - |f(q)|\big| \leq |f(p) - f(q)|$, on each piece $D_i$ of a partition the oscillation of $|f|$ is at most that of $f$, so $\sum_i (\sup_{D_i}|f| - \inf_{D_i}|f|)|D_i| \leq \sum_i (M_i - m_i)|D_i| \to 0$ (as in the one-dimensional case, 451 Theorem~33.4).
+
 Since $-|f| \leq f \leq |f|$, by the comparison theorem:
 \[
 -\iint_D |f| \, dA \leq \iint_D f \, dA \leq \iint_D |f| \, dA.
@@ -4173,7 +4186,7 @@ Thus $(x_0, y_0) \in D$, so $D$ is closed.
 
 \textit{Boundedness.} Since $D$ is closed and bounded (contained in $[a, b] \times [\min \psi, \max \varphi]$), $D$ is compact. Since $f$ is continuous on the compact set $D$, $f$ is bounded: there exists $B > 0$ such that $|f(x, y)| \leq B$ for all $(x, y) \in D$.
 
-Without loss of generality, embed $D$ in a square $[0, M] \times [0, M]$ for some $M > 0$.
+Without loss of generality, embed $D$ in a square $[0, M] \times [0, M]$ for some $M > 0$. Since the proof integrates $f$ over regions $D_k \supseteq D$, we extend $f$ outside $D$: set $f(x, y) := f(\bar{x}, \bar{y})$ with $\bar{x} = \min(\max(x, a), b)$ and $\bar{y} = \min(\max(y, \psi(\bar{x})), \varphi(\bar{x}))$. This extension is continuous on $[0, M]^2$ (a composition of continuous functions), agrees with $f$ on $D$, and still satisfies $|f| \leq B$. (Extending by $0$ would also keep $|f| \leq B$, but would break the continuity needed in Step 7.)
 
 \textbf{Step 1: Partition the square into a grid.}
 
@@ -4606,18 +4619,18 @@ Now consider the general transformation $\Phi(u, v) = (\varphi(u, v), \psi(u, v)
 
 Assume $J \neq 0$ on $D^*$ (WLOG, say $J > 0$; the case $J < 0$ is similar with $|J| = -J$).
 
-\textbf{Step 1: Taylor expansion with explicit remainder.}
+\textbf{Step 1: Linearization with uniform remainder.}
 
-Fix a point $(u_0, v_0) \in D^*$. For $(u, v)$ near $(u_0, v_0)$, Taylor's theorem gives:
+Fix a point $(u_0, v_0) \in D^*$. For $(u, v)$ near $(u_0, v_0)$, the Mean Value Theorem (applied as in Step 3) gives:
 \begin{align*}
 \varphi(u, v) &= \varphi(u_0, v_0) + \varphi_u(u_0, v_0)(u - u_0) + \varphi_v(u_0, v_0)(v - v_0) + R_\varphi(u, v) \\
 \psi(u, v) &= \psi(u_0, v_0) + \psi_u(u_0, v_0)(u - u_0) + \psi_v(u_0, v_0)(v - v_0) + R_\psi(u, v)
 \end{align*}
 where the remainders satisfy:
 \[
-|R_\varphi(u, v)|, |R_\psi(u, v)| \leq M \cdot \|(u - u_0, v - v_0)\|^2
+|R_\varphi(u, v)|, |R_\psi(u, v)| \leq 2\,\omega\big(\|(u - u_0, v - v_0)\|\big) \cdot \|(u - u_0, v - v_0)\|
 \]
-for some constant $M$ depending on bounds for the second derivatives of $\varphi, \psi$.
+where $\omega(\delta) = \sup\{|g(p) - g(q)| : g \in \{\varphi_u, \varphi_v, \psi_u, \psi_v\},\ \|p - q\| \leq \delta\}$. Since $\Phi$ is only $C^1$, we use no second derivatives: $\omega(\delta) \to 0$ as $\delta \to 0$ by uniform continuity of the partials on the compact set $\overline{D^*}$.
 
 \textbf{Step 2: Image of a small rectangle.}
 
@@ -4636,7 +4649,7 @@ By Part I, the linearized map $L$ takes $R$ to a parallelogram $P$ with:
 
 The actual image $\Phi(R)$ is a curvilinear quadrilateral. We need to show the area differs from the parallelogram area by a controllable amount.
 
-\textit{Setup:} Divide $D^*$ into small squares of side $1/2^m$. The number of squares is $2^k \cdot 2^k = 2^{2k}$ for some $k$.
+\textit{Setup:} Divide $D^*$ into small squares of side $1/2^m$. (For the unit square $D^*$ there are $2^m \cdot 2^m = 2^{2m}$ of them; for a general rectangle, see the end of the proof.)
 
 Since $\varphi, \psi \in C^1(\overline{D^*})$, the functions $\varphi, \psi, \varphi_u, \varphi_v, \psi_u, \psi_v$ are all uniformly continuous on the compact domain. Also, assume these are bounded by some constant $B$:
 \[
@@ -4677,7 +4690,7 @@ The \textbf{linearized approximation} at $(u_0, v_0)$ would give:
 \[
 \sup_{D_{ij}} \varphi_u - \inf_{D_{ij}} \varphi_u \leq \varepsilon
 \]
-where $D_{ij}$ is any square of side $1/2^m$. The same holds for $\varphi_v, \psi_u, \psi_v$ (six versions of $M$: $M_1, M_2, \ldots$; take $M = \max$).
+where $D_{ij}$ is any square of side $1/2^m$. The same holds for $\varphi_v, \psi_u, \psi_v$ (four versions of $M$, one for each of $\varphi_u, \varphi_v, \psi_u, \psi_v$; take $M = \max$).
 
 Therefore, for $m \geq M$:
 \[
@@ -4695,7 +4708,7 @@ Similarly, $|\text{error}_2| \leq \frac{2\varepsilon}{2^m}$.
 
 Take the union: $\bigcup_{p \in \text{parallelogram}} B(p; 2\sqrt{2}\varepsilon/2^m)$.
 
-\textit{Area error estimate:} Assume the error region remains on the same side (no self-intersection, guaranteed when $\varepsilon$ is small relative to $|J|$). The error region is like a ``fattened boundary'' of the parallelogram.
+\textit{Area error estimate:} Assume the error region remains on the same side (no self-intersection, guaranteed when $\varepsilon$ is small relative to $|J|$). The error region is like a ``fattened boundary'' of the parallelogram. Here we use two inclusions: $\Phi(R)$ lies in $P$ fattened by $r$, which is immediate from the position estimate, and $\Phi(R)$ contains the points of $P$ at distance more than $r$ from $\partial P$, which needs a topological argument (the closed curve $\Phi(\partial R)$ stays within $r$ of $\partial P$ and so winds once around each such point) that we do not carry out here. Then $\Phi(R)$ and $P$ differ only inside the band of width $r$ on either side of $\partial P$.
 
 \begin{itemize}
     \item The parallelogram has perimeter $\leq 4B \cdot (h + k) = 8B/2^m$ (since edge vectors have length $\leq B \cdot h$ and $B \cdot k$).
@@ -4784,11 +4797,10 @@ Since $\big| \sum_{i,j} |\Sigma_{ij}^{(m)}| - \sum_{i,j} |S_{ij}^{(m)}| \big| \l
 
 Now consider $\iint_D f(x, y) \, dx \, dy$.
 
-The ``diameter'' of the curvilinear region $\Sigma_{ij}^{(m)}$ is:
+The diameter of the curvilinear region $\Sigma_{ij}^{(m)}$ is small: for $p, q$ in the square $D_{ij}^{(m)}$, the Mean Value Theorem in each coordinate direction gives $|\varphi(p) - \varphi(q)|, |\psi(p) - \psi(q)| \leq B(|p_1 - q_1| + |p_2 - q_2|) \leq \sqrt{2}B\|p - q\|$, so
 \[
-\text{diam}(\Sigma_{ij}^{(m)}) = \sqrt{(\varphi(u_i, v_j) - \varphi(u_{i-1}, v_{j-1}))^2 + (\psi(u_i, v_j) - \psi(u_{i-1}, v_{j-1}))^2} \leq CB \cdot \sqrt{(u_i - u_{i-1})^2 + (v_j - v_{j-1})^2}
+\text{diam}(\Sigma_{ij}^{(m)}) \leq 2B \cdot \text{diam}(D_{ij}^{(m)}) = 2B \cdot \frac{\sqrt{2}}{2^m}.
 \]
-for some constant $C$ depending on the bounds of the partial derivatives.
 
 As $m \to \infty$, the diameter $\to 0$, so by the definition of the Riemann integral:
 \[
@@ -4805,7 +4817,7 @@ Choose $(x_{ij}^*, y_{ij}^*) = (\varphi(u_{i-1}, v_{j-1}), \psi(u_{i-1}, v_{j-1}
 
 The second equality uses that $|\Sigma_{ij}^{(m)}| = |J| \cdot (1/2^m)^2 + O(\varepsilon/2^{2m})$ and the error vanishes in the limit (since $f$ is bounded and the total error is $O(\varepsilon)$).
 
-This completes the proof for the case where $D^*$ is a square. \qedhere
+This completes the proof for the case where $D^*$ is the unit square. For a rectangle $D^* = [a, b] \times [c, d]$, replace the squares of side $1/2^m$ by the $2^{2m}$ congruent rectangles of sides $(b - a)/2^m$ and $(d - c)/2^m$; every estimate above holds with the same proof, up to constants depending on $b - a$ and $d - c$. \qedhere
 \end{proof}
 
 \begin{remark}[Extension to Arbitrary Domains: Jordan Measurability]
@@ -4979,7 +4991,7 @@ This approach, from Courant \& John's \textit{Introduction to Calculus and Analy
 \[
 \iint_R f(x, y) \, dx \, dy = \iint_{R'} f(\phi(u, v), \psi(u, v)) \left| \frac{\partial(x, y)}{\partial(u, v)} \right| du \, dv
 \]
-where $x = \phi(u, v)$, $y = \psi(u, v)$ gives a 1-1 $C^1$ mapping of region $R$ onto region $R'$ with $J \neq 0$.
+where $x = \phi(u, v)$, $y = \psi(u, v)$ gives a 1-1 $C^1$ mapping of region $R'$ (in the $uv$-plane) onto region $R$ with $J \neq 0$.
 
 \textbf{Key Idea: Factor the transformation into two primitive steps.}
 
@@ -5120,27 +5132,18 @@ In particular, if $\Phi$ is a $C^1$ diffeomorphism onto $D = \Phi(D^*)$, then $D
 \end{proposition}
 
 \begin{proof}
-Since $\Phi$ is $C^1$ on the compact set $\overline{D^*}$, it is Lipschitz: there exists $L > 0$ such that
+Here we use that $\Phi$ extends to a $C^1$ map on an open set $U \supseteq \overline{D^*}$ (this is what ``$C^1$ on $\overline{D^*}$'' means). Choose $r > 0$ such that the compact set $K = \{p : \operatorname{dist}(p, \overline{D^*}) \leq r\}$ lies in $U$, and let $L > 0$ bound the operator norm of $D\Phi$ on $K$. If $p, q \in \overline{D^*}$ with $\|p - q\| \leq r$, the segment from $p$ to $q$ lies in $K$, so the Mean Value Theorem applied to $t \mapsto \mathbf{c} \cdot \Phi(p + t(q - p))$, where $\mathbf{c}$ is the unit vector in the direction of $\Phi(q) - \Phi(p)$, gives
 \[
-\|\Phi(p) - \Phi(q)\| \leq L \|p - q\| \quad \text{for all } p, q \in \overline{D^*}.
+\|\Phi(p) - \Phi(q)\| \leq L \|p - q\| \quad \text{for } p, q \in \overline{D^*} \text{ with } \|p - q\| \leq r.
 \]
 
-Let $\varepsilon > 0$. Since $\partial D^*$ has Jordan measure zero, there exist rectangles $R_1, \ldots, R_K$ with:
-\[
-\partial D^* \subseteq \bigcup_{k=1}^K R_k \quad \text{and} \quad \sum_{k=1}^K \text{Area}(R_k) < \frac{\varepsilon}{L^2}.
-\]
+Let $\varepsilon > 0$. Enclose $D^*$ in a rectangle, partition it into squares of side $1/N$, and let $B_N$ be the set of boundary squares; they cover $\partial D^*$. By Proposition~\ref{prop:boundary-squares} we may choose $N$ with $\sqrt{2}/N \leq r$ and $\#(B_N)/N^2 < \varepsilon / (8L^2)$.
 
-For each rectangle $R_k$ with side lengths $a_k \times b_k$, the image $\Phi(R_k \cap \overline{D^*})$ is contained in a rectangle of side lengths at most $L \cdot a_k \times L \cdot b_k$ (since $\Phi$ stretches distances by at most $L$).
+For each $S \in B_N$, the set $S \cap \overline{D^*}$ has diameter at most $\sqrt{2}/N \leq r$, so its image $\Phi(S \cap \overline{D^*})$ has diameter at most $\sqrt{2}L/N$. Hence it lies in a square $\tilde{S}$ of side $2\sqrt{2}L/N$ (centered at any point of the image), with $\text{Area}(\tilde{S}) = 8L^2/N^2$.
 
 Therefore:
 \[
-\Phi(\partial D^*) \subseteq \bigcup_{k=1}^K \Phi(R_k \cap \overline{D^*}) \subseteq \bigcup_{k=1}^K \tilde{R}_k
-\]
-where $\text{Area}(\tilde{R}_k) \leq L^2 \cdot \text{Area}(R_k)$.
-
-Hence:
-\[
-\sum_{k=1}^K \text{Area}(\tilde{R}_k) \leq L^2 \sum_{k=1}^K \text{Area}(R_k) < L^2 \cdot \frac{\varepsilon}{L^2} = \varepsilon.
+\Phi(\partial D^*) \subseteq \bigcup_{S \in B_N} \Phi(S \cap \overline{D^*}) \subseteq \bigcup_{S \in B_N} \tilde{S}, \qquad \sum_{S \in B_N} \text{Area}(\tilde{S}) = \frac{8L^2 \, \#(B_N)}{N^2} < \varepsilon.
 \]
 
 Since $\partial D = \Phi(\partial D^*)$ (for a bijection), this shows $\partial D$ has Jordan measure zero, so $D$ is Jordan measurable.

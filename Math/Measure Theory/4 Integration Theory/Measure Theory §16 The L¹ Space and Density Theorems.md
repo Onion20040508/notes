@@ -55,18 +55,18 @@ tags: [measure-theory, math551]
 *Truncation at height $k$: $f_k$ (blue) agrees with $f$ (gray) where $|f| \leq k$ and is clipped to $\pm k$ elsewhere, so $f_k$ is bounded and $|f_k| \leq |f|$. The red area is $\int_E |f - f_k|$; it sits over $\{|f| > k\}$ and tends to $0$ by the DCT with dominator $2|f|$. In [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-1|Theorem §16.1]] the bounded part is small on small sets because $\int_e |f_k| \leq k\, m(e)$, and the red remainder is small everywhere.*
 
 > [!proof]+ Proof of Theorem §16.1 (continued)
-> Now let $\varepsilon > 0$. By the [[Measure Theory §16 The L¹ Space and Density Theorems#^lem-16-2|lemma]], choose $m$ such that $\int_E |f_m - f|\,dx < \varepsilon/2$. Since $|f_m|$ is bounded (by $m$), by Step 1 there exists $\delta > 0$ such that $m(e) < \delta$ implies $\int_e |f_m|\,dx < \varepsilon/2$.
+> Now let $\varepsilon > 0$. By the [[Measure Theory §16 The L¹ Space and Density Theorems#^lem-16-2|lemma]], choose $k$ such that $\int_E |f_k - f|\,dx < \varepsilon/2$. Since $|f_k|$ is bounded (by $k$), by Step 1 there exists $\delta > 0$ such that $m(e) < \delta$ implies $\int_e |f_k|\,dx < \varepsilon/2$.
 >
 > For any measurable $e \subseteq E$ with $m(e) < \delta$:
 >
 > $$
-> \int_e |f|\,dx = \int_e |f| - |f_m| + |f_m|\,dx \leq \int_e \bigl||f| - |f_m|\bigr|\,dx + \int_e |f_m|\,dx.
+> \int_e |f|\,dx = \int_e |f| - |f_k| + |f_k|\,dx \leq \int_e \bigl||f| - |f_k|\bigr|\,dx + \int_e |f_k|\,dx.
 > $$
 >
-> Since $\bigl||f(x)| - |f_m(x)|\bigr| \leq |f(x) - f_m(x)|$ (reverse [[Single Variable Analysis §3 The Set ℝ of Real Numbers#^thm-3-3|triangle inequality]]):
+> Since $\bigl||f(x)| - |f_k(x)|\bigr| \leq |f(x) - f_k(x)|$ (reverse [[Single Variable Analysis §3 The Set ℝ of Real Numbers#^thm-3-3|triangle inequality]]):
 >
 > $$
-> \int_e |f|\,dx \leq \int_e |f - f_m|\,dx + \int_e |f_m|\,dx \leq \int_E |f - f_m|\,dx + \int_e |f_m|\,dx < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.
+> \int_e |f|\,dx \leq \int_e |f - f_k|\,dx + \int_e |f_k|\,dx \leq \int_E |f - f_k|\,dx + \int_e |f_k|\,dx < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.
 > $$
 
 ^pf-16-1-cont
@@ -89,11 +89,11 @@ tags: [measure-theory, math551]
 ^thm-16-3
 
 > [!proof]+ Proof
-> Define $f_m(x) = f(x)$ if $|x| \leq m$ and $f_m(x) = 0$ if $|x| > m$, for $x \in E$. Then $f_m \to f$ pointwise and $|f_m| \leq |f| \in L(E)$. By [[Dominated Convergence Theorem|DCT]], $\int_E |f_m - f|\,dx \to 0$. Since $f - f_m = f\,\chi_{\{|x|>m\}}$, we have $\int_{E \cap B(0,m)^c} |f|\,dx \to 0$.
+> Define $f_m(x) = f(x)$ if $|x| < m$ and $f_m(x) = 0$ if $|x| \geq m$, for $x \in E$. Then $f_m \to f$ pointwise and $|f_m| \leq |f| \in L(E)$. By [[Dominated Convergence Theorem|DCT]], $\int_E |f_m - f|\,dx \to 0$. Since $f - f_m = f\,\chi_{B(0,m)^c}$, we have $\int_{E \cap B(0,m)^c} |f|\,dx \to 0$ as $m \to \infty$ through the integers. Choose an integer $R$ with $\int_{E \cap B(0,R)^c} |f|\,dx < \varepsilon$. For real $r > R$ we have $B(0,r)^c \subseteq B(0,R)^c$, so by [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^cor-14-7|domain monotonicity]] $\int_{E \cap B(0,r)^c} |f|\,dx \leq \int_{E \cap B(0,R)^c} |f|\,dx < \varepsilon$.
 
 ^pf-16-3
 
-*Uses:* [[Dominated Convergence Theorem|§15.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-6|§14.6]]
+*Uses:* [[Dominated Convergence Theorem|§15.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-6|§14.6]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^cor-14-7|§14.7]]
 
 > [!remark]- Connections
 > - Together with [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-1|Theorem §16.1]], these are the two ways an integrable function can be “cut down” (small sets, far-away sets).
@@ -218,7 +218,7 @@ Recall ([[Measure Theory §12 Measurable Functions#^def-12-7|Definition §12.7]]
 > g(x) = \begin{cases} 1 & x \in (a+\varepsilon', b-\varepsilon'), \\ \text{linear} & x \in (a-\varepsilon', a+\varepsilon') \cup (b-\varepsilon', b+\varepsilon'), \\ 0 & x \leq a - \varepsilon' \text{ or } x \geq b + \varepsilon', \end{cases}
 > $$
 >
-> where $\varepsilon' > 0$ is chosen small enough. Then $g$ is continuous, compactly supported, $0 \leq g \leq 1$, and $|g(x) - \chi_{(a,b)}(x)| \leq 1$ with equality only on the two transition intervals of total length $4\varepsilon'$. Thus $\|\chi_R - g\|_1 \leq 4\varepsilon'$, so choose $\varepsilon' = \varepsilon/4$.
+> where $0 < \varepsilon' < (b - a)/2$, so that $a + \varepsilon' < b - \varepsilon'$. Then $g$ is continuous, compactly supported, $0 \leq g \leq 1$, and $|g(x) - \chi_{(a,b)}(x)| \leq 1$ with equality only on the two transition intervals of total length $4\varepsilon'$. Thus $\|\chi_R - g\|_1 \leq 4\varepsilon'$, so choose $\varepsilon' < \min\{\varepsilon/4, (b-a)/2\}$.
 >
 > **Case $n = 2$**: If $R = R_1 \times R_2$, let $g_i$ be the compactly supported continuous approximation to $\chi_{R_i}$ from the $n = 1$ case with $\|\chi_{R_i} - g_i\|_1 < \varepsilon'$ and $\sup|g_i| \leq 1$. Define $g(x, y) = g_1(x)\,g_2(y)$. Then:
 >
@@ -229,10 +229,10 @@ Recall ([[Measure Theory §12 Measurable Functions#^def-12-7|Definition §12.7]]
 > \end{aligned}
 > $$
 >
-> Integrating and using $|g_1| \leq 1$, $m(R_2) < \infty$:
+> Integrating (one variable at a time, which uses [[Tonelli's Theorem]] (§17.3), proved later) and using $m(R_2) < \infty$ and $\|g_1\|_1 \leq \|\chi_{R_1}\|_1 + \|\chi_{R_1} - g_1\|_1 < m(R_1) + \varepsilon'$:
 >
 > $$
-> \|\chi_R - g\|_1 \leq m(R_2)\,\|\chi_{R_1} - g_1\|_1 + \|\chi_{R_2} - g_2\|_1 < \varepsilon'(m(R_2) + 1).
+> \|\chi_R - g\|_1 \leq m(R_2)\,\|\chi_{R_1} - g_1\|_1 + \|g_1\|_1\,\|\chi_{R_2} - g_2\|_1 < \varepsilon'(m(R_2) + m(R_1) + \varepsilon').
 > $$
 >
 > Choose $\varepsilon'$ small enough to make this $< \varepsilon$.
@@ -241,7 +241,7 @@ Recall ([[Measure Theory §12 Measurable Functions#^def-12-7|Definition §12.7]]
 
 ^pf-16-7
 
-*Uses:* [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-4|§16.4]], [[Measure Theory §15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[Measure Theory §12 Measurable Functions#^def-12-7|Def. §12.7]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-1|Def. §9.1]], [[Single Variable Analysis §3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
+*Uses:* [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-4|§16.4]], [[Measure Theory §15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[Measure Theory §12 Measurable Functions#^def-12-7|Def. §12.7]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-1|Def. §9.1]], [[Tonelli's Theorem|§17.3]], [[Single Variable Analysis §3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
 
 ![[m551-16-3.svg]]
 *The case $n = 1$: the trapezoid $g$ (blue) is $0$ outside $(a - \varepsilon', b + \varepsilon')$, equal to $1$ on $(a + \varepsilon', b - \varepsilon')$, and linear in between, so it is continuous with compact support. It differs from $\chi_{(a,b)}$ (black; hollow dots mark the values not taken at $a$, $b$) only on the two transition intervals, of total length $4\varepsilon'$, and there by at most $1$ (red), so $\|\chi_{(a,b)} - g\|_1 \leq 4\varepsilon'$.*
@@ -255,10 +255,10 @@ Recall ([[Measure Theory §12 Measurable Functions#^def-12-7|Definition §12.7]]
 > We have now established:
 >
 > $$
-> C_c(\mathbb{R}^n) \;\subseteq\; \text{step functions} \;\subseteq\; \text{simple functions} \;\subseteq\; L^1(E),
+> C_c(\mathbb{R}^n) \;\longrightarrow\; \text{step functions} \;\longrightarrow\; \text{simple functions} \;\longrightarrow\; L^1(E),
 > $$
 >
-> with each class dense in the next. Here $C_c(\mathbb{R}^n)$ denotes the compactly supported continuous functions on $\mathbb{R}^n$. This chain is fundamental for proving results about $L^1$ functions by first establishing them for nicer classes of functions.
+> with each class dense in the next (in the $L^1$ norm): every function of a class is an $L^1$-limit of functions of the previous class. The classes are not nested (a continuous function is not a step function). Here $C_c(\mathbb{R}^n)$ denotes the compactly supported continuous functions on $\mathbb{R}^n$. This chain is fundamental for proving results about $L^1$ functions by first establishing them for nicer classes of functions.
 
 ^rem-16-1
 

@@ -172,7 +172,13 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > - Restated with the gradient in §7: [[Directional Derivative Formula|Directional Derivative Formula]].
 
 > [!remark] Remark: Warning: The Converse Is False
-> All directional derivatives can exist without $f$ being differentiable — they might not “fit together” into a single linear map. The function $f(x,y) = \frac{2xy}{x^2+y^2}$ from [[Multivariable Analysis §6 Differentiability#^rem-6-1|the motivation]] is one witness: both partials exist at the origin, yet no linear approximation works along $y = x$.
+> All directional derivatives can exist without $f$ being differentiable — they might not “fit together” into a single linear map. A witness is $f(x,y) = \frac{x^2y}{x^4+y^2}$ for $(x,y) \neq (0,0)$, $f(0,0) = 0$. For a unit vector $\mathbf{u} = (a,b)$ with $b \neq 0$,
+>
+> $$
+> \frac{f(ta,tb) - f(0,0)}{t} = \frac{a^2 b}{t^2a^4 + b^2} \to \frac{a^2}{b} \quad \text{as } t \to 0,
+> $$
+>
+> and for $b = 0$ we have $f(ta, 0) = 0$; so every directional derivative exists at the origin. But along the parabola $y = x^2$, $f(x, x^2) = \tfrac12$ for $x \neq 0$, so $f$ is not continuous at $(0,0)$ — hence not differentiable there, since [[Multivariable Analysis §6 Differentiability#^def-6-1|differentiability]] gives $f(x_0+h, y_0+k) - f(x_0,y_0) = Ah + Bk + o(\rho) \to 0$. (The function $\frac{2xy}{x^2+y^2}$ from [[Multivariable Analysis §6 Differentiability#^rem-6-1|the motivation]] is not a witness: its directional derivatives off the axes do not exist at the origin.)
 
 ^rem-6-4
 

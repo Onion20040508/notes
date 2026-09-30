@@ -25,7 +25,7 @@ tags: [measure-theory, math551]
 >
 > Since each $A_n$ is countable, we can write $A_n = \{a_{n,1}, a_{n,2}, a_{n,3}, \ldots\}$.
 >
-> Then $\bigcup_n A_n$ is equivalent to a subset of $\mathbb{N} \times \mathbb{N}$ via the mapping that sends $a_{n,m}$ to $(n, m)$.
+> Then $\bigcup_n A_n$ is equivalent to a subset of $\mathbb{N} \times \mathbb{N}$ via the mapping that sends $a \in \bigcup_n A_n$ to $(n, m)$, where $n$ is the least index with $a \in A_n$ and $m$ is the least index with $a = a_{n,m}$. This is well defined even if the $A_n$ overlap or the lists repeat, and it is injective, since $a = a_{n,m}$ is recovered from $(n,m)$.
 >
 > Since $\mathbb{N} \times \mathbb{N} \sim \mathbb{N}$ ([[Measure Theory §1 Countability and Set Theory#^ex-1-3|Example §1.3]]), we have $\bigcup_n A_n$ equivalent to a subset of $\mathbb{N}$, hence countable.
 
@@ -40,7 +40,7 @@ tags: [measure-theory, math551]
 > [!theorem] Corollary §3.2: $\mathbb{Q}$ is countable
 > Since $\mathbb{Q}_+ = \bigcup_{n=1}^\infty \{\frac{m}{n} : m \in \mathbb{N}\}$ is a [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|countable union of countable sets]], $\mathbb{Q}_+$ is countable. Similarly $\mathbb{Q}_- \cup \{0\}$ is countable, so $\mathbb{Q} = \mathbb{Q}_- \cup \{0\} \cup \mathbb{Q}_+$ is countable.
 >
-> Alternatively: Define $f: \mathbb{N} \times \mathbb{N} \to \mathbb{Q}_+$ by $f(n,m) = \frac{n}{m}$. This is surjective, so $\mathbb{Q}_+$ is countable.
+> Alternatively: Define $f: \mathbb{N} \times \mathbb{N} \to \mathbb{Q}_+$ by $f(n,m) = \frac{n}{m}$. This is surjective, so $\mathbb{Q}_+$ is countable: choosing one preimage under $f$ for each $q \in \mathbb{Q}_+$ gives an injection $\mathbb{Q}_+ \to \mathbb{N} \times \mathbb{N} \sim \mathbb{N}$.
 
 ^cor-3-2
 

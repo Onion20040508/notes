@@ -34,10 +34,10 @@ tags: [measure-theory, math551]
 > Suppose $h(x) = a\,\chi_{A_1} + a\,\chi_{A_2}$ with $A_1 \cap A_2 = \emptyset$. Then $h = a\,\chi_{A_1 \cup A_2}$, and:
 >
 > $$
-> \int_E h\,dx = a\,m(A_1 \cap E) + a\,m(A_2 \cap E) = a\,m((A_1 \cup A_2) \cap E) = \int_E h\,dx,
+> \underbrace{a\,m(A_1 \cap E) + a\,m(A_2 \cap E)}_{\text{from } a\,\chi_{A_1} + a\,\chi_{A_2}} = \underbrace{a\,m((A_1 \cup A_2) \cap E)}_{\text{from } a\,\chi_{A_1 \cup A_2}},
 > $$
 >
-> where the second equality uses [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|finite additivity of measure]] (since $A_1 \cap E$ and $A_2 \cap E$ are disjoint measurable sets). More generally, any two representations of $h$ can be refined to a common partition, and additivity of measure ensures the integral is the same.
+> so both representations give the same value of $\int_E h\,dx$, where the equality uses [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|finite additivity of measure]] (since $A_1 \cap E$ and $A_2 \cap E$ are disjoint measurable sets). More generally, any two representations of $h$ can be refined to a common partition, and additivity of measure ensures the integral is the same.
 
 ^rem-14-1
 
@@ -416,7 +416,7 @@ We now extend the integral from simple functions to general non-negative measura
 > [!proof]+ Proof
 > Let $E_0 = \{x \in E : f(x) = +\infty\}$. We want to show $m(E_0) = 0$.
 >
-> Since $f(x) \geq f(x)\,\chi_{E \setminus E_0}(x) \geq f(x)\,\chi_{E_0}(x) \geq k\,\chi_{E_0}(x)$ for all $k \in \mathbb{N}$ (because $f = +\infty$ on $E_0$):
+> Since $f(x) \geq f(x)\,\chi_{E_0}(x) \geq k\,\chi_{E_0}(x)$ for all $k \in \mathbb{N}$ (because $f = +\infty$ on $E_0$):
 >
 > $$
 > \infty > \int_E f\,dx \geq \int_{E_0} f\,dx \geq \int_E k\,\chi_{E_0}\,dx = k\,m(E_0).
@@ -703,7 +703,7 @@ We now extend the integral from simple functions to general non-negative measura
 > \int_E f\,dx = \sup\left\{\int_E h\,dx \;\middle|\; 0 \leq h \leq f,\; h \text{ simple}\right\}.
 > $$
 >
-> One might ask: why not instead take $\inf\!\left\{\int_E h\,dx \mid h \geq f,\; h \text{ simple}\right\}$? The answer is that this infimum does not work in general. For instance, if $f = \chi_V$ where $V$ is a [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-12|Vitali set]], any simple function $h \geq f$ satisfies $h \geq \chi_V$, but the integral of $h$ does not “see” $V$ in a controlled way. More fundamentally, the sup definition builds the integral from below using functions we understand completely (simple functions), and the [[Monotone Convergence Theorem (Lebesgue)|MCT]] guarantees this sup equals the “true” integral. The inf approach would require an analogous convergence theorem from above, which does not hold without additional integrability hypotheses.
+> One might ask: why not instead take $\inf\!\left\{\int_E h\,dx \mid h \geq f,\; h \text{ simple}\right\}$? The answer is that this infimum does not work in general. For instance, if one tried to define it for $f = \chi_V$ where $V$ is a [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-12|Vitali set]] (not measurable, so $\chi_V$ lies outside the scope of the definition), any simple function $h \geq f$ satisfies $h \geq \chi_V$, but the integral of $h$ does not “see” $V$ in a controlled way. More fundamentally, the sup definition builds the integral from below using functions we understand completely (simple functions), and the [[Monotone Convergence Theorem (Lebesgue)|MCT]] guarantees this sup equals the “true” integral. The inf approach would require an analogous convergence theorem from above, which does not hold without additional integrability hypotheses.
 
 ^rem-14-7
 

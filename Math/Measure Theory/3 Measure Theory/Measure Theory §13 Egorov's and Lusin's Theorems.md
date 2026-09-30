@@ -29,7 +29,7 @@ Egorov's theorem states that on sets of finite measure, [[Measure Theory §12 Me
 > \sup_{x \in [0, 1-\delta]} x^k = (1 - \delta)^k < \epsilon \quad \text{when } k > \frac{\ln \epsilon}{\ln(1 - \delta)}.
 > $$
 >
-> This bound is independent of $x$, so convergence is uniform on $[0, 1 - \delta]$.
+> This bound is independent of $x$, so convergence is uniform on $[0, 1 - \delta]$. Applying this with $\delta/2$ in place of $\delta$, the set $E_\delta = (1 - \delta/2, 1]$ in Egorov's Theorem has measure $\delta/2 < \delta$.
 
 ^ex-13-1
 
@@ -129,7 +129,7 @@ Egorov's theorem states that on sets of finite measure, [[Measure Theory §12 Me
 Lusin's theorem states that measurable functions are “almost continuous”: outside a set of arbitrarily small measure, a measurable function agrees with a continuous function.
 
 > [!theorem] Lemma §13.2: Distance Between Disjoint Compact Sets
-> Let $F_1, F_2 \subseteq \mathbb{R}^n$ be bounded, closed (hence compact, by [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]]), and disjoint sets. Then $d(F_1, F_2) > 0$, where
+> Let $F_1, F_2 \subseteq \mathbb{R}^n$ be nonempty, bounded, closed (hence compact, by [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]]), and disjoint sets. Then $d(F_1, F_2) > 0$, where
 >
 > $$
 > d(F_1, F_2) = \inf\{d(x, y) : x \in F_1, y \in F_2\}.
@@ -226,7 +226,7 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 > g(x) = \frac{f(x)}{1 + |f(x)|}.
 > $$
 >
-> Then $|g(x)| < 1$ for all $x$, so $g$ is bounded. Also, $g$ is measurable (as a composition of measurable functions with continuous functions).
+> Then $|g(x)| < 1$ for all $x$, so $g$ is bounded. Also, $g$ is measurable: $g = h \circ f$ with $h(t) = \frac{t}{1+|t|}$ continuous, so for $c \in \mathbb{R}$ the set $h^{-1}((c, \infty))$ is open, hence a countable union of open intervals $(a_j, b_j)$ ([[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|Prop. §7.1]]), and $\{g > c\} = \bigcup_j \bigl(\{f > a_j\} \cap \{f < b_j\}\bigr)$ is measurable ([[Measure Theory §12 Measurable Functions#^prop-12-2|Prop. §12.2]]).
 >
 > By Step 2, there exists a closed set $F \subseteq E$ with $m(E \setminus F) < \delta$ such that $g$ is continuous on $F$.
 >
@@ -242,7 +242,7 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 
 ^pf-13-3
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^prop-12-13|§12.13]], [[Inner Regularity of Lebesgue Measure|§11.10]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Measure Theory §13 Egorov's and Lusin's Theorems#^lem-13-2|§13.2]], [[Measure Theory §5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[Measure Theory §12 Measurable Functions#^thm-12-17|§12.17]], [[Measure Theory §12 Measurable Functions#^thm-12-16|§12.16]], [[Measure Theory §12 Measurable Functions#^thm-12-3|§12.3]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[Topology §9 Continuous Functions#^thm-9-4|590 §9.4]], [[Single Variable Analysis §24 Uniform Convergence#^thm-24-2|451 §24.2]], [[Single Variable Analysis §17 Continuous Functions#^thm-17-2|451 §17.2]], [[Single Variable Analysis §17 Continuous Functions#^thm-17-3|451 §17.3]], [[Single Variable Analysis §14 Series#^ex-14-4|451 Ex. §14.4]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^prop-12-13|§12.13]], [[Inner Regularity of Lebesgue Measure|§11.10]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Measure Theory §13 Egorov's and Lusin's Theorems#^lem-13-2|§13.2]], [[Measure Theory §5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[Measure Theory §12 Measurable Functions#^thm-12-17|§12.17]], [[Measure Theory §12 Measurable Functions#^thm-12-16|§12.16]], [[Measure Theory §12 Measurable Functions#^thm-12-3|§12.3]], [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[Measure Theory §12 Measurable Functions#^prop-12-2|§12.2]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[Topology §9 Continuous Functions#^thm-9-4|590 §9.4]], [[Single Variable Analysis §24 Uniform Convergence#^thm-24-2|451 §24.2]], [[Single Variable Analysis §17 Continuous Functions#^thm-17-2|451 §17.2]], [[Single Variable Analysis §17 Continuous Functions#^thm-17-3|451 §17.3]], [[Single Variable Analysis §14 Series#^ex-14-4|451 Ex. §14.4]]
 
 ![[m551-13-4.svg]]
 *Step 1 of Lusin's theorem, with the $A_i$ drawn as intervals for simplicity. Inside each $A_i$ we choose a closed $F_i$ (thick) with $m(A_i \setminus F_i)$ small; what is removed, $E \setminus F$ (red), is a small set around the jumps of $f$ (dotted). On $F = F_0 \cup F_1 \cup F_2$ the function equals the constant $a_i$ on each $F_i$, and different $F_i$ are a positive distance apart (Lemma §13.2), so $f|_F$ is locally constant, hence continuous.*

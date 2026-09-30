@@ -122,6 +122,8 @@ tags: [topology, math590]
 
 ^cor-26-4
 
+*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-9|§21.9]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-10|§21.10]]
+
 > [!example] Example §26.1: $\pi_1(\Sigma_2)$ is Non-Abelian
 > The [[Topology §28 Fundamental Group of Some Surfaces#^def-28-4|figure eight]] $S^1 \vee S^1$ retracts from $\Sigma_2$, so $F_2 = \pi_1(S^1 \vee S^1)$ embeds in $\pi_1(\Sigma_2)$. Since $F_2$ is non-abelian, $\pi_1(\Sigma_2)$ is non-abelian. The retraction does not tell us *what* $\pi_1(\Sigma_2)$ is — only that it contains $F_2$ as a subgroup.
 
@@ -287,7 +289,7 @@ tags: [topology, math590]
 *The ray construction. Starting at $f(x)$ and passing through $x$, the ray leaves $B^2$ at $r(x) = \gamma(t_0)$ (red). For a boundary point $y$ the exit point is $y$ itself ($t_0 = 1$), so $r$ fixes $S^1$. The construction needs only one thing: a direction $x - f(x) \neq 0$, i.e. no fixed point.*
 
 > [!remark] Remark
-> The Brouwer fixed point theorem is a purely existential result—it tells you a fixed point exists but gives no method for finding it. The proof illustrates the power of algebraic topology: the computation [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ ≠ 0]] (which took real work via [[Topology §24 Covering Spaces|covering spaces]]) has a concrete geometric consequence about maps of the disk to itself.
+> The Brouwer fixed point theorem is a purely existential result—it tells you a fixed point exists but gives no method for finding it. The proof illustrates the power of algebraic topology: the computation $\pi_1(S^1) \cong \mathbb{Z} \neq 0$ ([[Fundamental Group of the Circle|§24.10]]) (which took real work via [[Topology §24 Covering Spaces|covering spaces]]) has a concrete geometric consequence about maps of the disk to itself.
 
 ^rem-26-3
 
@@ -341,12 +343,12 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 ^thm-26-9
 
 > [!remark] Remark: Why Our Proof Does Not Generalize
-> For $n = 1$, we [[No-Retraction Theorem|proved this using π₁]]: a retraction $r: B^2 \to S^1$ would force an injection $j_*: \pi_1(S^1) \hookrightarrow \pi_1(B^2)$, i.e., $\mathbb{Z} \hookrightarrow 0$, which is impossible.
+> For $n = 1$, we proved this using $\pi_1$ ([[No-Retraction Theorem|§26.6]]): a retraction $r: B^2 \to S^1$ would force an injection $j_*: \pi_1(S^1) \hookrightarrow \pi_1(B^2)$, i.e., $\mathbb{Z} \hookrightarrow 0$, which is impossible.
 >
 > ![[m590-26-3.svg]]
 > *Apply $\pi_1$ to $r \circ j = \operatorname{id}_{S^1}$ (blue): the identity of $\mathbb{Z}$ (red) would have to factor through $\pi_1(B^2) = 0$, which is impossible. For $n \ge 2$ the bottom row becomes $0 \to 0 \to 0$ and this contradiction disappears.*
 >
-> For $n \geq 2$, this argument fails: $\pi_1(S^n) = 0$ ([[Sⁿ is Simply Connected for n ≥ 2|spheres of dimension ≥ 2 are simply connected]]), so the injection $0 \hookrightarrow 0$ is no contradiction. The proof for general $n$ requires **homology theory** (specifically, $H_n(S^n) \cong \mathbb{Z}$ replaces $\pi_1(S^1) \cong \mathbb{Z}$), which is beyond this course.
+> For $n \geq 2$, this argument fails: $\pi_1(S^n) = 0$ (spheres of dimension $\geq 2$ are simply connected, [[Sⁿ is Simply Connected for n ≥ 2|§27.3]]), so the injection $0 \hookrightarrow 0$ is no contradiction. The proof for general $n$ requires **homology theory** (specifically, $H_n(S^n) \cong \mathbb{Z}$ replaces $\pi_1(S^1) \cong \mathbb{Z}$), which is beyond this course.
 >
 > We therefore take the general no-retraction theorem as a given fact when working in dimension $n \geq 2$.
 
@@ -358,7 +360,7 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 ^thm-26-10
 
 > [!proof]+ Proof
-> The proof is identical to the [[Topology §26 Deformation Retracts and Homotopy Type#^pf-26-7|B² case]]—the ray construction works in any dimension. The logical structure is:
+> The proof is identical to the $B^2$ case ([[Topology §26 Deformation Retracts and Homotopy Type#^pf-26-7|§26.7]])—the ray construction works in any dimension. The logical structure is:
 >
 > ![[m590-26-4.svg]]
 > *The proof builds one thing, the red arrow: from a fixed-point-free $f$, the ray from $f(x)$ through $x$ produces a retraction $r: B^{n+1} \to S^n$, which the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-9|no-retraction theorem]] forbids.*
@@ -437,6 +439,8 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 
 ^cor-26-12
 
+*Uses:* [[Deformation Retract Induces Isomorphism on π₁|§26.11]]
+
 > [!remark] Remark: Retraction vs. Deformation Retraction: Summary
 > |  | **Retraction** | **Deformation retraction** |
 > |---|---|---|
@@ -505,7 +509,7 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 >
 > For $n \geq 2$: $\pi_1(S^n) = 0$ ([[Sⁿ is Simply Connected for n ≥ 2|simply connected]]), so $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) = 0$.
 >
-> For $n = 1$: [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ]], so $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$.
+> For $n = 1$: $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]), so $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$.
 
 ^ex-26-7
 
@@ -516,7 +520,7 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 > \pi_1(\mathbb{R}^2) \cong \pi_1(\mathbb{R}^2 \setminus \{0\}).
 > $$
 >
-> But $\pi_1(\mathbb{R}^2) = 0$ ([[Topology §23 The Fundamental Group#^ex-23-2|convex]]) and $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$ ([[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-7|deformation retracts onto S¹]]). Since $0 \not\cong \mathbb{Z}$, no such deformation retract exists.
+> But $\pi_1(\mathbb{R}^2) = 0$ ([[Topology §23 The Fundamental Group#^ex-23-2|convex]]) and $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$ ([[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-7|deformation retracts]] onto $S^1$). Since $0 \not\cong \mathbb{Z}$, no such deformation retract exists.
 >
 > **General principle:** To show $A$ is *not* a deformation retract of $X$, show $\pi_1(X) \not\cong \pi_1(A)$. This is $\pi_1$ as an **obstruction**: it doesn't tell you when a deformation retract exists, but it tells you when one *cannot* exist.
 
@@ -629,7 +633,7 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 >
 > **Why other loops can't be treated this way:** The loop $a$ (going around the “hole” of the torus) *crosses* an identified edge — it enters through the left side and exits through the right side. When you unglue, it breaks into a path from the left edge to the right edge, not a loop. You cannot make $a$ small enough to avoid the edges, because crossing the edge *is* what the loop does. So $a$ and $b$ are generators of the figure eight, not expressible as boundary words.
 >
-> **Connection to van Kampen:** Removing $q$ “frees” $aba^{-1}b^{-1}$ from being trivial: in $T^2$ it contracts to $q$, but in $T^2 \setminus \{q\}$ the contraction is blocked. Gluing the disk back (the van Kampen computation, [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-4|§29]]) forces $aba^{-1}b^{-1} = e$, which is exactly $ab = ba$, recovering [[Topology §23 The Fundamental Group#^cor-23-8|π₁(T²) ≅ ℤ × ℤ]].
+> **Connection to van Kampen:** Removing $q$ “frees” $aba^{-1}b^{-1}$ from being trivial: in $T^2$ it contracts to $q$, but in $T^2 \setminus \{q\}$ the contraction is blocked. Gluing the disk back (the van Kampen computation, [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-4|§29]]) forces $aba^{-1}b^{-1} = e$, which is exactly $ab = ba$, recovering $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$ ([[Topology §23 The Fundamental Group#^cor-23-8|§23.8]]).
 
 ^rem-26-8
 
@@ -773,7 +777,7 @@ The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §
 
 ^pf-26-14
 
-*Uses:* [[Basepoint Independence of π₁|§23.2]]
+*Uses:* [[Basepoint Independence of π₁|§23.2]], [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|§26.1]]
 
 ![[m590-26-14.svg]]
 *The square $I \times I$, each corner labeled by its image under $H \circ (f \times \operatorname{id})$: bottom $h \circ f$, top $k \circ f$, both sides $\alpha$. The blue path (bottom, then right side) and the red path (left side, then top) have the same endpoints in the convex square, so they are path homotopic there (gray). Composing with $H \circ (f \times \operatorname{id})$ gives $(h \circ f) * \alpha \simeq_p \alpha * (k \circ f)$.*

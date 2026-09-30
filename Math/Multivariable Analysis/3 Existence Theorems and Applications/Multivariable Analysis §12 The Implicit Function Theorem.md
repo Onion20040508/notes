@@ -16,7 +16,7 @@ Consider the equation $x^2 + y^2 = 1$ (a circle). This defines $y$ as a function
 
 More generally, given $F(x, y) = 0$, when can we solve for $y = f(x)$ near a point $(x_0, y_0)$ on the curve?
 
-**Key insight:** If $F(a, b) = 0$ and the curve is not “horizontal” at $(a, b)$ (i.e., $F_y(a, b) \neq 0$), then we can locally solve for $y$ as a function of $x$.
+**Key insight:** If $F(a, b) = 0$ and the curve is not “vertical” at $(a, b)$ (i.e., $F_y(a, b) \neq 0$), then we can locally solve for $y$ as a function of $x$.
 
 ## Statement of the Theorem
 
@@ -26,7 +26,7 @@ More generally, given $F(x, y) = 0$, when can we solve for $y = f(x)$ near a poi
 > - (ii) $F_y(x_0, y_0) \neq 0$
 > - (iii) $F_x$ and $F_y$ are continuous in a neighborhood $B((x_0, y_0); \varepsilon)$
 >
-> Then there exist $\delta > 0$ and a unique function $f : (x_0 - \delta, x_0 + \delta) \to \mathbb{R}$ such that:
+> Then there exist $\delta, \eta > 0$ and a function $f : (x_0 - \delta, x_0 + \delta) \to (y_0 - \eta, y_0 + \eta)$, unique among functions with values in $(y_0 - \eta, y_0 + \eta)$, such that:
 > - (a) $f(x_0) = y_0$
 > - (b) $F(x, f(x)) = 0$ for all $x \in (x_0 - \delta, x_0 + \delta)$
 > - (c) $f$ is continuous on $(x_0 - \delta, x_0 + \delta)$
@@ -92,7 +92,7 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 >
 > Since $F_y(x, y) > \frac{a}{2} > 0$ throughout the box, $F(x, \cdot)$ is strictly increasing. But then $F(x, y_1) < F(x, y_2)$, contradicting $F(x, y_1) = F(x, y_2) = 0$.
 >
-> Hence $f(x)$ is uniquely defined.
+> Hence $f(x)$ is uniquely defined. This is the (local) uniqueness in the theorem, with $\eta = \delta_1$.
 >
 > **Step 5: Continuity of $f$.**
 >
@@ -111,6 +111,8 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 > $$
 > F(x_0, y_0 + \varepsilon) \geq F(x_0, y_0) + \frac{a}{2} \cdot \varepsilon = \frac{a\varepsilon}{2} > 0.
 > $$
+>
+> Similarly, $F(x_0, y_0 - \varepsilon) \leq F(x_0, y_0) - \frac{a}{2} \cdot \varepsilon = -\frac{a\varepsilon}{2} < 0$.
 >
 > By continuity of $F$, there exists $\delta' > 0$ such that for $|x - x_0| < \delta'$:
 >
@@ -190,7 +192,7 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 ## Geometric Interpretation
 
 > [!remark] Remark: Why $F_y \neq 0$?
-> The condition $F_y(x_0, y_0) \neq 0$ means the level curve $F(x, y) = 0$ is not horizontal at $(x_0, y_0)$.
+> The condition $F_y(x_0, y_0) \neq 0$ means the level curve $F(x, y) = 0$ is not vertical at $(x_0, y_0)$.
 >
 > If $F_y = 0$ but $F_x \neq 0$, the curve is vertical, and we should solve for $x$ as a function of $y$ instead.
 >

@@ -67,15 +67,15 @@ tags: [topology, math590]
 
 ^pf-25-1
 
-*Uses:* [[Fundamental Group of the Circle|§24.10]], [[Functoriality of π₁|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[Topology §24 Covering Spaces#^lem-24-12|§24.12]]
+*Uses:* [[Fundamental Group of the Circle|§24.10]], [[Functoriality of π₁|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[Topology §24 Covering Spaces#^lem-24-12|§24.12]], [[Topology §22 Homotopy of Paths#^def-22-2|Def. §22.2]]
 
 ![[m590-25-1.svg]]
 *Step 3 for $p(z) = z^3 + 0.6z$ ($n = 3$, $\sum|a_i| = 0.6$). If $p$ had no root in the blue disk $B^2$, the red loop $h = p|_{S^1}$ would extend over $B^2$ inside $\mathbb{R}^2 \setminus \{0\}$ and so be nullhomotopic. But $F(z,t) = z^3 + t \cdot 0.6z$ (gray: $t = \tfrac12$) slides the blue loop $g(z) = z^3$, which winds three times around $0$, onto $h$ without entering the gray disk $|w| < 1 - \sum|a_i| = 0.4$. So $h \simeq g$ also winds three times around $0$ and is not nullhomotopic, so $p$ must vanish somewhere in $B^2$ (here at $z = 0$).*
 
 > [!remark] Remark
 > This proof is remarkable: a theorem about *algebra* (roots of polynomials) is proved using *topology* ($\pi_1(S^1) \cong \mathbb{Z}$ and the nullhomotopy characterization). The key ingredients are:
-> - [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ]] (the power map $z^n$ induces multiplication by $n$, which is injective).
-> - $S^1$ is a [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|retract]] of $\mathbb{R}^2 \setminus \{0\}$ (so the inclusion is [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|injective on π₁]]).
+> - $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]) (the power map $z^n$ induces multiplication by $n$, which is injective).
+> - $S^1$ is a [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|retract]] of $\mathbb{R}^2 \setminus \{0\}$ (so the inclusion is injective on $\pi_1$, [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]]).
 > - The [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy lemma]] (extending to $B^2$ implies nullhomotopic implies trivial $h_*$).
 > - The triangle inequality estimate $|z^n| - |a_{n-1}z^{n-1} + \cdots| > 0$ on $S^1$ (the analytic input).
 

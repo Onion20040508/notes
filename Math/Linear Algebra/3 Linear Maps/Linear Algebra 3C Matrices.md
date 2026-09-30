@@ -19,7 +19,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Matrices of linear maps: [[Linear Algebra 3C Matrices#^ladr-3-31|Matrix of a linear map, M(T)]]. Vector space structure: [[Linear Algebra 3C Matrices#^ladr-3-34|Matrix addition]], [[Linear Algebra 3C Matrices#^ladr-3-36|Scalar multiplication of a matrix]], [[Linear Algebra 3C Matrices#^ladr-3-40|Dim Fᵐ’ⁿ = mn]].
 
-> [!example] 3.30 Aj,kequals entry in row j, column k of A (p. 69)
+> [!example] 3.30 $A_{j,k}$ equals entry in row $j$, column $k$ of $A$ (p. 69)
 > First index = row, second = column. For
 > $$
 > A=\begin{pmatrix}8&4&5-3i\\1&9&7\end{pmatrix},
@@ -181,7 +181,7 @@ tags: [linear-algebra]
 
 ^ladr-3-44
 
-> [!example] 3.45 Aj,⋅equals j (p. 74)
+> [!example] 3.45 $A_{j,\cdot}$ equals $j$th row of $A$ and $A_{\cdot,k}$ equals $k$th column of $A$ (p. 74)
 > For $A=\begin{pmatrix}8&4&5\\1&9&7\end{pmatrix}$: row $A_{2,\cdot}=\begin{pmatrix}1&9&7\end{pmatrix}$ and column $A_{\cdot,2}=\begin{pmatrix}4\\9\end{pmatrix}$.
 >
 > A $1$-by-$n$ times an $n$-by-$1$ matrix is $1$-by-$1$ and is identified with its entry: $\begin{pmatrix}3&4\end{pmatrix}\begin{pmatrix}6\\2\end{pmatrix}=26$. This is the $(2,1)$ entry of the product in [[Linear Algebra 3C Matrices#^ladr-3-42|3.42]] ([[Linear Algebra 3C Matrices#^ladr-3-46|3.46]]):

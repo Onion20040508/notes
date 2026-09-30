@@ -49,8 +49,7 @@ tags: [linear-algebra]
 
 ^ladr-5-5
 
-> [!remark] Why $v
-e0$
+> [!remark] Why $v\ne0$
 > $T0=\lambda0$ for every $\lambda$. With $v\ne0$, $\Span(v)$ is a one-dimensional invariant subspace, and conversely every such subspace comes from an eigenvector.
 
 > [!remark]- Connections

@@ -17,13 +17,13 @@ tags: [multivariable-analysis, math452]
 ^def-14-1
 
 > [!theorem] Theorem §14.1: Necessary Condition for Extremum — Fermat's Theorem in $\mathbb{R}^n$
-> If $f$ has a local max/min at $(x_0, y_0)$ and $f$ is differentiable there, then
+> If $f$ has a local max/min at $(x_0, y_0)$ and the partials $f_x, f_y$ exist there (e.g., $f$ is differentiable there), then
 >
 > $$
 > f_x(x_0, y_0) = 0 \quad \text{and} \quad f_y(x_0, y_0) = 0.
 > $$
 >
-> Equivalently, $\nabla f(x_0, y_0) = \mathbf{0}$.
+> Equivalently, $\nabla f(x_0, y_0) = \mathbf{0}$. The same holds in $\mathbb{R}^n$: if $f$ has a local max/min at $\mathbf{a}$ and all partials $\partial f / \partial x_i(\mathbf{a})$ exist, then $\nabla f(\mathbf{a}) = \mathbf{0}$.
 
 ^thm-14-1
 
@@ -34,7 +34,7 @@ tags: [multivariable-analysis, math452]
 >
 > But $g'(x) = f_x(x, y_0)$ ([[Multivariable Analysis §4 Partial Derivatives#^def-4-1|Def. §4.1]]), so $f_x(x_0, y_0) = 0$.
 >
-> By the same argument with $h(y) = f(x_0, y)$, we get $f_y(x_0, y_0) = 0$.
+> By the same argument with $h(y) = f(x_0, y)$, we get $f_y(x_0, y_0) = 0$. In $\mathbb{R}^n$, the same argument applied to each $g_i(t) = f(\mathbf{a} + t\mathbf{e}_i)$ gives $\partial f / \partial x_i(\mathbf{a}) = 0$.
 
 ^pf-14-1
 
@@ -151,8 +151,10 @@ $$
 > Setting $F'(x_0) = 0$:
 >
 > $$
-> f_x - f_y \cdot \frac{g_x}{g_y} = 0 \quad \Longrightarrow \quad f_x g_y = f_y g_x \quad \Longrightarrow \quad \frac{f_x}{g_x} = \frac{f_y}{g_y} = \lambda.
+> f_x - f_y \cdot \frac{g_x}{g_y} = 0 \quad \Longrightarrow \quad f_x g_y = f_y g_x.
 > $$
+>
+> Set $\lambda = f_y / g_y$ (at $(x_0, y_0)$, where $g_y \neq 0$). Then $f_y = \lambda g_y$, and $f_x g_y = f_y g_x = \lambda g_x g_y$; dividing by $g_y \neq 0$ gives $f_x = \lambda g_x$.
 >
 > Therefore $f_x = \lambda g_x$ and $f_y = \lambda g_y$, i.e., $\nabla f = \lambda \nabla g$.
 
@@ -199,6 +201,8 @@ $$
 ^thm-14-3
 
 *Uses:* [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|§12.2]], [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-1|§14.1]], [[Multivariable Chain Rule|§10.2]], [[Multivariable Analysis §13 The Inverse Function Theorem#^prop-13-1|§13.1]]
+
+The proof (carried out below for two constraints in $\mathbb{R}^4$) uses the implicit function theorem for systems of equations — the general form of [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|Theorem §12.2]] for several equations, which is not proved in these notes.
 
 > [!remark]- Connections
 > - The linear algebra behind it: $\nabla f$ is orthogonal to the tangent space of the constraint set, and that orthogonal complement ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]]) has dimension $k$ ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]]), so it is spanned by the $k$ independent constraint gradients.
@@ -311,7 +315,7 @@ $$
 \det \begin{pmatrix} \phi_z & \phi_t \\ \psi_z & \psi_t \end{pmatrix} \neq 0.
 $$
 
-By IFT ([[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|§12.2]]; compare the two-step argument of [[Inverse Function Theorem (several variables)|§13.2]]), we can locally solve for $z = g(x, y)$ and $t = h(x, y)$ such that:
+By the implicit function theorem for systems (the general form of [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|§12.2]] for several equations, not proved in these notes; compare the two-step argument of [[Inverse Function Theorem (several variables)|§13.2]]), we can locally solve for $z = g(x, y)$ and $t = h(x, y)$ such that:
 
 $$
 \phi(x, y, g(x,y), h(x,y)) = 0, \qquad \psi(x, y, g(x,y), h(x,y)) = 0.
@@ -381,13 +385,7 @@ $$
 \begin{pmatrix} \phi_g & \phi_h \\ \psi_g & \psi_h \end{pmatrix} \begin{pmatrix} g_x & g_y \\ h_x & h_y \end{pmatrix} = -\begin{pmatrix} \phi_x & \phi_y \\ \psi_x & \psi_y \end{pmatrix} \tag{**}
 $$
 
-**Combining the equations:** Substituting $(**)$ into $(*)$:
-
-$$
-(f_g, f_h) \begin{pmatrix} g_x & g_y \\ h_x & h_y \end{pmatrix} = -(f_x, f_y)
-$$
-
-Let $A = \begin{pmatrix} \phi_g & \phi_h \\ \psi_g & \psi_h \end{pmatrix}$. From $(**)$:
+**Combining the equations:** We substitute $(**)$ into $(*)$. Let $A = \begin{pmatrix} \phi_g & \phi_h \\ \psi_g & \psi_h \end{pmatrix}$, which is invertible by the constraint qualification. From $(**)$:
 
 $$
 \begin{pmatrix} g_x & g_y \\ h_x & h_y \end{pmatrix} = -A^{-1} \begin{pmatrix} \phi_x & \phi_y \\ \psi_x & \psi_y \end{pmatrix}
@@ -530,10 +528,12 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 > This means $f(x_0 + h, y_0 + k) > f(x_0, y_0)$ for all small $(h, k) \neq (0, 0)$, so $(x_0, y_0)$ is a local minimum.
 >
 > Similarly, negative definite $\Rightarrow$ local maximum.
+>
+> If $H$ is indefinite, it has eigenvalues $\lambda_+ > 0 > \lambda_-$ with unit eigenvectors $\mathbf{v}_+, \mathbf{v}_-$ ([[Real spectral theorem|LADR 7.29]]). Restrict $f$ to the line through $(x_0, y_0)$ in direction $\mathbf{v}_\pm$, i.e., take $(h, k) = t\mathbf{v}_\pm$ above: the difference $f(x_0 + h, y_0 + k) - f(x_0, y_0)$ equals $\frac{t^2}{2}\,\mathbf{v}_\pm^{T} H_{(x_0 + \theta h, y_0 + \theta k)} \mathbf{v}_\pm$, and by continuity of the second partials $\mathbf{v}_\pm^{T} H_{(x_0 + \theta h, y_0 + \theta k)} \mathbf{v}_\pm \to \mathbf{v}_\pm^{T} H \mathbf{v}_\pm = \lambda_\pm$ as $t \to 0$. So for small $t \neq 0$ the difference is $> 0$ along $\mathbf{v}_+$ and $< 0$ along $\mathbf{v}_-$: $f$ takes values above and below $f(x_0, y_0)$ arbitrarily close to $(x_0, y_0)$, which is a saddle point.
 
 ^pf-14-4
 
-*Uses:* [[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|451 §31.2]], [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-1|§9.1]], [[Multivariable Taylor's Theorem|§9.2]], [[Schwarz–Clairaut Theorem|§5.1]], [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-3|Def. §14.3]], [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-1|Def. §14.1]]
+*Uses:* [[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|451 §31.2]], [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-1|§9.1]], [[Multivariable Taylor's Theorem|§9.2]], [[Schwarz–Clairaut Theorem|§5.1]], [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-3|Def. §14.3]], [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-1|Def. §14.1]], [[Real spectral theorem|LADR 7.29]]
 
 > [!remark]- Connections
 > - MATH 451 relative: the one-variable Taylor expansion with Lagrange remainder ([[Single Variable Analysis §31 Taylor's Theorem#^thm-31-2|451 §31.2]]) is the whole engine; in 1D the Hessian is just $f''(x_0)$.

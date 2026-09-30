@@ -287,6 +287,8 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^pf-15-5
 
+*Uses:* [[Topology §15 Compact Spaces#^def-15-4|Def. §15.4]]
+
 > [!theorem] Corollary §15.6: Nested Sequence of Closed Sets
 > Let $X$ be a compact space. If $C_1 \supseteq C_2 \supseteq C_3 \supseteq \cdots$ is a nested sequence of nonempty closed sets in $X$, then $\bigcap_{n=1}^{\infty} C_n \neq \emptyset$.
 
@@ -334,7 +336,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^pf-15-7
 
-*Uses:* [[Topology §12 Quotient Topology#^def-12-4|Def. §12.4]], [[Topology §9 Continuous Functions#^prop-9-2|§9.2]], [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Continuous Image of a Compact Space is Compact|§15.3]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]]
+*Uses:* [[Topology §12 Quotient Topology#^def-12-4|Def. §12.4]], [[Topology §9 Continuous Functions#^prop-9-2|§9.2]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §15 Compact Spaces#^thm-15-3|§15.3]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]]
 
 > [!remark]- Connections
 > - The compact-to-Hausdorff shortcut for quotient maps: [[Topology §12 Quotient Topology#^thm-12-5|Product of Quotient Maps (Compact-Hausdorff Case)]].
@@ -385,7 +387,7 @@ To prove this, we first establish a key lemma:
 > [!proof]+ Proof of Finite Product Theorem
 > Suffices to prove for two spaces (then use induction). Let $X, Y$ be compact. Let $\mathcal{A}$ be an open covering of $X \times Y$. We show $\mathcal{A}$ has a finite subcover.
 >
-> **Step 1:** Fix $x \in X$. The slice $x \times Y$ is homeomorphic to $Y$, hence compact. Since $\mathcal{A}$ covers $x \times Y$, there exists a finite subcollection $A_1, \ldots, A_m \in \mathcal{A}$ covering $x \times Y$ ([[Topology §15 Compact Spaces#^lem-15-1|Lemma §15.1]]).
+> **Step 1:** Fix $x \in X$. The slice $x \times Y$ is homeomorphic to $Y$, hence [[Topology §15 Compact Spaces#^thm-15-3|compact]]. Since $\mathcal{A}$ covers $x \times Y$, there exists a finite subcollection $A_1, \ldots, A_m \in \mathcal{A}$ covering $x \times Y$ ([[Topology §15 Compact Spaces#^lem-15-1|Lemma §15.1]]).
 >
 > Let $N_x = A_1 \cup \cdots \cup A_m$. Then $N_x$ is open and $x \times Y \subseteq N_x$.
 >
@@ -397,7 +399,7 @@ To prove this, we first establish a key lemma:
 
 ^pf-15-8
 
-*Uses:* [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Tube Lemma|§15.9]]
+*Uses:* [[Topology §15 Compact Spaces#^thm-15-3|§15.3]], [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §15 Compact Spaces#^lem-15-9|§15.9]]
 
 ## Compact Subspaces of $\mathbb{R}$
 
@@ -460,6 +462,8 @@ To prove this, we first establish a key lemma:
 
 ^cor-15-11
 
+*Uses:* [[Topology §15 Compact Spaces#^thm-15-10|§15.10]], [[Topology §15 Compact Spaces#^thm-15-8|§15.8]]
+
 > [!theorem] Theorem §15.12: Heine-Borel Theorem for $\mathbb{R}^n$
 > $A \subseteq \mathbb{R}^n$ is compact if and only if $A$ is closed and bounded (with respect to the Euclidean metric $d$ or the square metric $\rho$).
 
@@ -514,7 +518,7 @@ To prove this, we first establish a key lemma:
 
 ^pf-15-12
 
-*Uses:* [[Topology §11 Metric Topology#^thm-11-4|§11.4]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]], [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §15 Compact Spaces#^cor-15-11|§15.11]], [[Topology §6 Closed Sets and Limit Points#^thm-6-2|§6.2]], [[Closed Subspace of a Compact Space is Compact|§15.2]]
+*Uses:* [[Topology §11 Metric Topology#^thm-11-4|§11.4]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]], [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §15 Compact Spaces#^cor-15-11|§15.11]], [[Topology §6 Closed Sets and Limit Points#^thm-6-2|§6.2]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]]
 
 > [!remark] Remark: Filling the Gap: Balls vs. Boxes
 > **Q:** The ball $B_\rho(0, N)$ is not a closed interval. How do we use compactness of $[a,b]$?

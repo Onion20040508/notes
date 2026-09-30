@@ -69,7 +69,7 @@ tags: [topology, math590]
 
 ^pf-10-1
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-4|§9.4]]
+*Uses:* [[Topology §9 Continuous Functions#^thm-9-4|§9.4]], [[Topology §9 Continuous Functions#^def-9-1|Def. §9.1]]
 
 > [!remark]- Connections
 > - Used for products of paths: [[Topology §14 Connected Subspaces of ℝ#^thm-14-5|Product of Path-Connected Spaces]], and for products of quotient maps: [[Topology §12 Quotient Topology#^thm-12-5|Theorem §12.5]].

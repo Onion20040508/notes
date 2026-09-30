@@ -172,7 +172,7 @@ Is this obvious? Maybe not: $L(f)$ and $U(f)$ are a sup and an inf over *differe
 > L(f) \leq \inf_Q U(f,Q) = U(f).
 > $$
 
-^pf-32-3
+^pf-32-1
 
 ## The Cauchy Criterion for Integrability
 

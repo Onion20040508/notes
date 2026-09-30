@@ -169,7 +169,7 @@ tags: [topology, math590]
 > - Linear-algebra version: [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-63|Invertibility ⟺ injectivity and surjectivity]].
 
 > [!remark] Remark
-> This is the standard technique for proving bijectivity in algebraic topology: construct two maps, show they compose to the identity in both orders. It appears repeatedly: the [[Basepoint Independence of π₁|basepoint independence isomorphism]] ([[Topology §23 The Fundamental Group|§23]]), the [[Topology §23 The Fundamental Group#^cor-23-6|functorial corollary that π₁ is a topological invariant]] ([[Topology §23 The Fundamental Group|§23]]), and the [[Deformation Retract Induces Isomorphism on π₁|deformation retract theorem]] ([[Topology §26 Deformation Retracts and Homotopy Type|§26]]) all use exactly this pattern.
+> This is the standard technique for proving bijectivity in algebraic topology: construct two maps, show they compose to the identity in both orders. It appears repeatedly: the [[Basepoint Independence of π₁|basepoint independence isomorphism]] ([[Topology §23 The Fundamental Group|§23]]), the [[Topology §23 The Fundamental Group#^cor-23-6|functorial corollary]] that $\pi_1$ is a topological invariant ([[Topology §23 The Fundamental Group|§23]]), and the [[Deformation Retract Induces Isomorphism on π₁|deformation retract theorem]] ([[Topology §26 Deformation Retracts and Homotopy Type|§26]]) all use exactly this pattern.
 
 ^rem-21-4
 
@@ -229,7 +229,7 @@ tags: [topology, math590]
 > [!remark] Remark: Why Isomorphisms Matter
 > An isomorphism is a **perfect dictionary** between two groups: you can do all your work in whichever group is more convenient, then translate the answer back. For algebraic topology, this has two consequences:
 >
-> **Computation:** [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ]] means that everything about loops on $S^1$ can be answered by doing arithmetic in $\mathbb{Z}$. How many essentially different loops? Countably many, indexed by winding number. What happens when you concatenate a loop of winding number $3$ with one of winding number $-2$? Winding number $1$. The isomorphism converts hard topology into easy algebra.
+> **Computation:** $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]) means that everything about loops on $S^1$ can be answered by doing arithmetic in $\mathbb{Z}$. How many essentially different loops? Countably many, indexed by winding number. What happens when you concatenate a loop of winding number $3$ with one of winding number $-2$? Winding number $1$. The isomorphism converts hard topology into easy algebra.
 >
 > **Distinguishing spaces:** If $\pi_1(X) \not\cong \pi_1(Y)$ — meaning no isomorphism exists — then the groups have genuinely different structure that no relabeling can reconcile. Since homeomorphisms induce isomorphisms ([[Topology §23 The Fundamental Group#^cor-23-6|Corollary §23.6]]), this forces $X \not\cong Y$. For instance, $\mathbb{Z} \not\cong \{e\}$ (different cardinalities), so $S^1 \not\cong \mathbb{R}^2$. And $\mathbb{Z} \not\cong \mathbb{Z}^2$ (one is cyclic, the other is not), so $S^1 \not\cong T^2$.
 

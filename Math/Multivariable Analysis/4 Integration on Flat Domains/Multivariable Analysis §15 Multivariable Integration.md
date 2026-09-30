@@ -588,6 +588,8 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 ^cor-15-6
 
 > [!proof]+ Proof
+> First, $|f|$ is integrable: since $\big||f(p)| - |f(q)|\big| \leq |f(p) - f(q)|$, on each piece $D_i$ of a partition the oscillation of $|f|$ is at most that of $f$, so, by [[Multivariable Analysis §15 Multivariable Integration#^def-15-10|Def. §15.10]], $\sum_i (\sup_{D_i}|f| - \inf_{D_i}|f|)|D_i| \leq \sum_i (M_i - m_i)|D_i| \to 0$ (as in the one-dimensional case, [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]]).
+>
 > Since $-|f| \leq f \leq |f|$, by the [[Multivariable Analysis §15 Multivariable Integration#^thm-15-5|comparison theorem]]:
 >
 > $$
@@ -596,7 +598,7 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 
 ^pf-15-6
 
-*Uses:* [[Multivariable Analysis §15 Multivariable Integration#^thm-15-5|§15.5]]
+*Uses:* [[Multivariable Analysis §15 Multivariable Integration#^thm-15-5|§15.5]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-10|Def. §15.10]], [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]]
 
 > [!remark]- Connections
 > - 1D version: [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-4|Absolute Values]] (451 §33.4), which also proves the integrability of $|f|$ that the proof here takes for granted.
@@ -917,7 +919,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 >
 > *Boundedness.* Since $D$ is closed and bounded (contained in $[a, b] \times [\min \psi, \max \varphi]$), $D$ is compact ([[Heine–Borel Theorem|Heine–Borel]]). Since $f$ is continuous on the compact set $D$, $f$ is bounded ([[Continuous Image of a Compact Space is Compact|continuous image of compact is compact]]): there exists $B > 0$ such that $|f(x, y)| \leq B$ for all $(x, y) \in D$.
 >
-> Without loss of generality, embed $D$ in a square $[0, M] \times [0, M]$ for some $M > 0$.
+> Without loss of generality, embed $D$ in a square $[0, M] \times [0, M]$ for some $M > 0$. Since the proof integrates $f$ over regions $D_k \supseteq D$, we extend $f$ outside $D$: set $f(x, y) := f(\bar{x}, \bar{y})$ with $\bar{x} = \min(\max(x, a), b)$ and $\bar{y} = \min(\max(y, \psi(\bar{x})), \varphi(\bar{x}))$. This extension is continuous on $[0, M]^2$ (a composition of continuous functions), agrees with $f$ on $D$, and still satisfies $|f| \leq B$. (Extending by $0$ would also keep $|f| \leq B$, but would break the continuity needed in Step 7.)
 >
 > **Step 1: Partition the square into a grid.**
 >
@@ -1389,9 +1391,9 @@ We present three different proofs, each offering a distinct perspective:
 >
 > Assume $J \neq 0$ on $D^*$ (WLOG, say $J > 0$; the case $J < 0$ is similar with $|J| = -J$).
 >
-> **Step 1: Taylor expansion with explicit remainder.**
+> **Step 1: Linearization with uniform remainder.**
 >
-> Fix a point $(u_0, v_0) \in D^*$. For $(u, v)$ near $(u_0, v_0)$, [[Multivariable Taylor's Theorem|Taylor's theorem]] gives:
+> Fix a point $(u_0, v_0) \in D^*$. For $(u, v)$ near $(u_0, v_0)$, the [[Mean Value Theorem]] (applied as in Step 3) gives:
 >
 > $$
 > \begin{aligned}
@@ -1403,10 +1405,10 @@ We present three different proofs, each offering a distinct perspective:
 > where the remainders satisfy:
 >
 > $$
-> |R_\varphi(u, v)|, |R_\psi(u, v)| \leq M \cdot \|(u - u_0, v - v_0)\|^2
+> |R_\varphi(u, v)|, |R_\psi(u, v)| \leq 2\,\omega\big(\|(u - u_0, v - v_0)\|\big) \cdot \|(u - u_0, v - v_0)\|
 > $$
 >
-> for some constant $M$ depending on bounds for the second derivatives of $\varphi, \psi$.
+> where $\omega(\delta) = \sup\{|g(p) - g(q)| : g \in \{\varphi_u, \varphi_v, \psi_u, \psi_v\},\ \|p - q\| \leq \delta\}$. Since $\Phi$ is only $C^1$, we use no second derivatives: $\omega(\delta) \to 0$ as $\delta \to 0$ by uniform continuity of the partials on the compact set $\overline{D^*}$.
 >
 > **Step 2: Image of a small rectangle.**
 >
@@ -1428,7 +1430,7 @@ We present three different proofs, each offering a distinct perspective:
 >
 > The actual image $\Phi(R)$ is a curvilinear quadrilateral. We need to show the area differs from the parallelogram area by a controllable amount.
 >
-> *Setup:* Divide $D^*$ into small squares of side $1/2^m$. The number of squares is $2^k \cdot 2^k = 2^{2k}$ for some $k$.
+> *Setup:* Divide $D^*$ into small squares of side $1/2^m$. (For the unit square $D^*$ there are $2^m \cdot 2^m = 2^{2m}$ of them; for a general rectangle, see the end of the proof.)
 >
 > Since $\varphi, \psi \in C^1(\overline{D^*})$, the functions $\varphi, \psi, \varphi_u, \varphi_v, \psi_u, \psi_v$ are all [[Topology §15 Compact Spaces#^rem-15-1|uniformly continuous]] on the compact domain. Also, assume these are bounded by some constant $B$:
 >
@@ -1484,7 +1486,7 @@ We present three different proofs, each offering a distinct perspective:
 > \sup_{D_{ij}} \varphi_u - \inf_{D_{ij}} \varphi_u \leq \varepsilon
 > $$
 >
-> where $D_{ij}$ is any square of side $1/2^m$. The same holds for $\varphi_v, \psi_u, \psi_v$ (six versions of $M$: $M_1, M_2, \ldots$; take $M = \max$).
+> where $D_{ij}$ is any square of side $1/2^m$. The same holds for $\varphi_v, \psi_u, \psi_v$ (four versions of $M$, one for each of $\varphi_u, \varphi_v, \psi_u, \psi_v$; take $M = \max$).
 >
 > Therefore, for $m \geq M$:
 >
@@ -1504,7 +1506,7 @@ We present three different proofs, each offering a distinct perspective:
 >
 > Take the union: $\bigcup_{p \in \text{parallelogram}} B(p; 2\sqrt{2}\varepsilon/2^m)$.
 >
-> *Area error estimate:* Assume the error region remains on the same side (no self-intersection, guaranteed when $\varepsilon$ is small relative to $|J|$). The error region is like a “fattened boundary” of the parallelogram.
+> *Area error estimate:* Assume the error region remains on the same side (no self-intersection, guaranteed when $\varepsilon$ is small relative to $|J|$). The error region is like a “fattened boundary” of the parallelogram. Here we use two inclusions: $\Phi(R)$ lies in $P$ fattened by $r$, which is immediate from the position estimate, and $\Phi(R)$ contains the points of $P$ at distance more than $r$ from $\partial P$, which needs a topological argument (the closed curve $\Phi(\partial R)$ stays within $r$ of $\partial P$ and so winds once around each such point) that we do not carry out here. Then $\Phi(R)$ and $P$ differ only inside the band of width $r$ on either side of $\partial P$.
 > - The parallelogram has perimeter $\leq 4B \cdot (h + k) = 8B/2^m$ (since edge vectors have length $\leq B \cdot h$ and $B \cdot k$).
 > - Fattening by radius $r = 2\sqrt{2}\varepsilon/2^m$ adds area $\leq \text{perimeter} \times r + \pi r^2$.
 >
@@ -1602,13 +1604,11 @@ We present three different proofs, each offering a distinct perspective:
 >
 > Now consider $\iint_D f(x, y) \, dx \, dy$.
 >
-> The “diameter” ([[Multivariable Analysis §15 Multivariable Integration#^def-15-9|Def. §15.9]]) of the curvilinear region $\Sigma_{ij}^{(m)}$ is:
+> The diameter ([[Multivariable Analysis §15 Multivariable Integration#^def-15-9|Def. §15.9]]) of the curvilinear region $\Sigma_{ij}^{(m)}$ is small: for $p, q$ in the square $D_{ij}^{(m)}$, the [[Mean Value Theorem]] in each coordinate direction gives $|\varphi(p) - \varphi(q)|, |\psi(p) - \psi(q)| \leq B(|p_1 - q_1| + |p_2 - q_2|) \leq \sqrt{2}B\|p - q\|$, so
 >
 > $$
-> \text{diam}(\Sigma_{ij}^{(m)}) = \sqrt{(\varphi(u_i, v_j) - \varphi(u_{i-1}, v_{j-1}))^2 + (\psi(u_i, v_j) - \psi(u_{i-1}, v_{j-1}))^2} \leq CB \cdot \sqrt{(u_i - u_{i-1})^2 + (v_j - v_{j-1})^2}
+> \text{diam}(\Sigma_{ij}^{(m)}) \leq 2B \cdot \text{diam}(D_{ij}^{(m)}) = 2B \cdot \frac{\sqrt{2}}{2^m}.
 > $$
->
-> for some constant $C$ depending on the bounds of the partial derivatives.
 >
 > As $m \to \infty$, the diameter $\to 0$, so by the definition of the Riemann integral ([[Multivariable Analysis §15 Multivariable Integration#^def-15-11|Def. §15.11]]):
 >
@@ -1630,11 +1630,11 @@ We present three different proofs, each offering a distinct perspective:
 >
 > The second equality uses that $|\Sigma_{ij}^{(m)}| = |J| \cdot (1/2^m)^2 + O(\varepsilon/2^{2m})$ and the error vanishes in the limit (since $f$ is bounded and the total error is $O(\varepsilon)$).
 >
-> This completes the proof for the case where $D^*$ is a square.
+> This completes the proof for the case where $D^*$ is the unit square. For a rectangle $D^* = [a, b] \times [c, d]$, replace the squares of side $1/2^m$ by the $2^{2m}$ congruent rectangles of sides $(b - a)/2^m$ and $(d - c)/2^m$; every estimate above holds with the same proof, up to constants depending on $b - a$ and $d - c$.
 
 ^pf-15-14
 
-*Uses:* [[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]], [[Multivariable Taylor's Theorem|§9.2]], [[Multivariable Analysis §6 Differentiability#^def-6-2|Def. §6.2]], [[Multivariable Analysis §13 The Inverse Function Theorem#^def-13-1|Def. §13.1]], [[Mean Value Theorem|451 §29.3]], [[Topology §15 Compact Spaces#^rem-15-1|590 §15 Rem. (uniform continuity on compact sets)]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-1|§15.1]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-9|Def. §15.9]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-11|Def. §15.11]], [[Multivariable Analysis §15 Multivariable Integration#^rem-15-6|§15 Rem. (Evaluating the Integral)]]
+*Uses:* [[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]], [[Multivariable Analysis §6 Differentiability#^def-6-2|Def. §6.2]], [[Multivariable Analysis §13 The Inverse Function Theorem#^def-13-1|Def. §13.1]], [[Mean Value Theorem|451 §29.3]], [[Topology §15 Compact Spaces#^rem-15-1|590 §15 Rem. (uniform continuity on compact sets)]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-1|§15.1]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-9|Def. §15.9]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-11|Def. §15.11]], [[Multivariable Analysis §15 Multivariable Integration#^rem-15-6|§15 Rem. (Evaluating the Integral)]]
 
 ![[m452-15-9.svg]]
 *Step 3 of the first proof. The linearized map $L$ sends the small square $R$ to the parallelogram $P$ (red, dashed) of area $|J|\,hk$. Each point of $\Phi(R)$ lies within $r = 2\sqrt2\,\varepsilon/2^m$ of the corresponding point of $P$, as at the top corner (dashed circle of radius $r$). So the boundary of $\Phi(R)$ (blue) stays inside the band of width $r$ around $\partial P$ (gray). The two areas can differ only by the area of that band, at most $\text{perimeter}(P) \cdot r + \pi r^2 = O(\varepsilon/2^{2m})$. That is small even compared with $\text{Area}(P) \sim 1/2^{2m}$.*
@@ -1821,7 +1821,7 @@ We present three different proofs, each offering a distinct perspective:
 > \iint_R f(x, y) \, dx \, dy = \iint_{R'} f(\phi(u, v), \psi(u, v)) \left| \frac{\partial(x, y)}{\partial(u, v)} \right| du \, dv
 > $$
 >
-> where $x = \phi(u, v)$, $y = \psi(u, v)$ gives a 1-1 $C^1$ mapping of region $R$ onto region $R'$ with $J \neq 0$.
+> where $x = \phi(u, v)$, $y = \psi(u, v)$ gives a 1-1 $C^1$ mapping of region $R'$ (in the $uv$-plane) onto region $R$ with $J \neq 0$.
 >
 > **Key Idea: Factor the transformation into two primitive steps.**
 >
@@ -1992,39 +1992,27 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 ^prop-15-16
 
 > [!proof]+ Proof
-> Since $\Phi$ is $C^1$ on the compact set $\overline{D^*}$ ([[Heine–Borel Theorem|Heine–Borel]]), it is Lipschitz ([[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-4|mean value theorem]]): there exists $L > 0$ such that
+> Here we use that $\Phi$ extends to a $C^1$ map on an open set $U \supseteq \overline{D^*}$ (this is what “$C^1$ on $\overline{D^*}$” means). Choose $r > 0$ such that the compact set $K = \{p : \operatorname{dist}(p, \overline{D^*}) \leq r\}$ lies in $U$ ([[Heine–Borel Theorem|Heine–Borel]]), and let $L > 0$ bound the operator norm of $D\Phi$ on $K$. If $p, q \in \overline{D^*}$ with $\|p - q\| \leq r$, the segment from $p$ to $q$ lies in $K$, so the [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-4|mean value theorem]] applied to $t \mapsto \mathbf{c} \cdot \Phi(p + t(q - p))$, where $\mathbf{c}$ is the unit vector in the direction of $\Phi(q) - \Phi(p)$, gives
 >
 > $$
-> \|\Phi(p) - \Phi(q)\| \leq L \|p - q\| \quad \text{for all } p, q \in \overline{D^*}.
+> \|\Phi(p) - \Phi(q)\| \leq L \|p - q\| \quad \text{for } p, q \in \overline{D^*} \text{ with } \|p - q\| \leq r.
 > $$
 >
-> Let $\varepsilon > 0$. Since $\partial D^*$ has Jordan measure zero, there exist rectangles $R_1, \ldots, R_K$ with:
+> Let $\varepsilon > 0$. Enclose $D^*$ in a rectangle, partition it into squares of side $1/N$, and let $B_N$ be the set of boundary squares; they cover $\partial D^*$. By [[Multivariable Analysis §15 Multivariable Integration#^prop-15-15|Proposition §15.15]] we may choose $N$ with $\sqrt{2}/N \leq r$ and $\#(B_N)/N^2 < \varepsilon / (8L^2)$.
 >
-> $$
-> \partial D^* \subseteq \bigcup_{k=1}^K R_k \quad \text{and} \quad \sum_{k=1}^K \text{Area}(R_k) < \frac{\varepsilon}{L^2}.
-> $$
->
-> For each rectangle $R_k$ with side lengths $a_k \times b_k$, the image $\Phi(R_k \cap \overline{D^*})$ is contained in a rectangle of side lengths at most $L \cdot a_k \times L \cdot b_k$ (since $\Phi$ stretches distances by at most $L$).
+> For each $S \in B_N$, the set $S \cap \overline{D^*}$ has diameter at most $\sqrt{2}/N \leq r$, so its image $\Phi(S \cap \overline{D^*})$ has diameter at most $\sqrt{2}L/N$. Hence it lies in a square $\tilde{S}$ of side $2\sqrt{2}L/N$ (centered at any point of the image), with $\text{Area}(\tilde{S}) = 8L^2/N^2$.
 >
 > Therefore:
 >
 > $$
-> \Phi(\partial D^*) \subseteq \bigcup_{k=1}^K \Phi(R_k \cap \overline{D^*}) \subseteq \bigcup_{k=1}^K \tilde{R}_k
-> $$
->
-> where $\text{Area}(\tilde{R}_k) \leq L^2 \cdot \text{Area}(R_k)$.
->
-> Hence:
->
-> $$
-> \sum_{k=1}^K \text{Area}(\tilde{R}_k) \leq L^2 \sum_{k=1}^K \text{Area}(R_k) < L^2 \cdot \frac{\varepsilon}{L^2} = \varepsilon.
+> \Phi(\partial D^*) \subseteq \bigcup_{S \in B_N} \Phi(S \cap \overline{D^*}) \subseteq \bigcup_{S \in B_N} \tilde{S}, \qquad \sum_{S \in B_N} \text{Area}(\tilde{S}) = \frac{8L^2 \, \#(B_N)}{N^2} < \varepsilon.
 > $$
 >
 > Since $\partial D = \Phi(\partial D^*)$ (for a bijection), this shows $\partial D$ has Jordan measure zero, so $D$ is Jordan measurable.
 
 ^pf-15-16
 
-*Uses:* [[Heine–Borel Theorem|590 §15.12]], [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-4|§9.4]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-13|Def. §15.13]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-14|Def. §15.14]]
+*Uses:* [[Heine–Borel Theorem|590 §15.12]], [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-4|§9.4]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-13|Def. §15.13]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-14|Def. §15.14]], [[Multivariable Analysis §15 Multivariable Integration#^prop-15-15|Prop. §15.15]]
 
 > [!theorem] Theorem §15.17: Change of Variables — General Jordan Measurable Domains
 > Let $D^* \subseteq \mathbb{R}^2$ be bounded and Jordan measurable. Let $\Phi: \overline{D^*} \to \overline{D}$ be a $C^1$ bijection with $C^1$ inverse, where $D = \Phi(D^*)$.

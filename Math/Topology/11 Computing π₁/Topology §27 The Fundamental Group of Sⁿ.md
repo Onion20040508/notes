@@ -177,7 +177,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 
 ^pf-27-3
 
-*Uses:* [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|§27.2]], [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Topology §23 The Fundamental Group#^ex-23-1|Ex. §23.1]], [[Topology §9 Continuous Functions#^prop-9-3|§9.3]], [[Topology §23 The Fundamental Group#^cor-23-6|§23.6]]
+*Uses:* [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|§27.2]], [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Topology §23 The Fundamental Group#^ex-23-1|Ex. §23.1]], [[Topology §9 Continuous Functions#^prop-9-3|§9.3]], [[Topology §23 The Fundamental Group#^cor-23-6|§23.6]], [[Topology §9 Continuous Functions#^def-9-2|Def. §9.2]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-6|Def. §26.6]], [[Topology §14 Connected Subspaces of ℝ#^def-14-3|Def. §14.3]]
 
 ![[m590-27-2.svg]]
 *Stereographic projection from the north pole $p$ (a cross-section through the $x_{n+1}$-axis): $f(x)$ is where the line from $p$ through $x$ meets the equatorial plane $\mathbb{R}^n = \{x_{n+1} = 0\}$. The lower hemisphere lands inside the unit ball, the upper hemisphere outside it, and points near $p$ run off to infinity, which is why $p$ must be removed. The south pole $q$ goes to $\vec 0$, so removing $q$ as well leaves $\mathbb{R}^n \setminus \{\vec 0\}$.*

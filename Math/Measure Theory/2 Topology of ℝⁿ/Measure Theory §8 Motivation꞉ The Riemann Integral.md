@@ -111,11 +111,11 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 > U(f, P) - L(f, P) = \sum_{j=0}^{n-1} (M_j - m_j)(x_{j+1} - x_j) < \epsilon \sum_{j=0}^{n-1} (x_{j+1} - x_j) = \epsilon(b - a).
 > $$
 >
-> Since $\epsilon > 0$ is arbitrary, $\lim_{|P| \to 0} (U(f, P) - L(f, P)) = 0$, so $f$ is Riemann integrable.
+> Since $\epsilon > 0$ is arbitrary, $\lim_{|P| \to 0} (U(f, P) - L(f, P)) = 0$. Since $L(f, P) \leq L(f) \leq U(f) \leq U(f, P)$ for every partition $P$ ([[Measure Theory §8 Motivation꞉ The Riemann Integral#^rem-8-1|Remark §8.1]], [[Single Variable Analysis §32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]]), this gives $U(f) = L(f)$ and $U(f, P) \to U(f)$, $L(f, P) \to L(f)$ as $|P| \to 0$. So both limits in Definition §8.3 exist and are equal, and $f$ is Riemann integrable.
 
 ^pf-8-1
 
-*Uses:* [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]], [[Single Variable Analysis §19 Uniform Continuity#^thm-19-1|451 §19.1]], [[Measure Theory §8 Motivation꞉ The Riemann Integral#^def-8-2|Def. §8.2]], [[Measure Theory §8 Motivation꞉ The Riemann Integral#^def-8-3|Def. §8.3]], [[Single Variable Analysis §32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]]
+*Uses:* [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]], [[Single Variable Analysis §19 Uniform Continuity#^thm-19-1|451 §19.1]], [[Measure Theory §8 Motivation꞉ The Riemann Integral#^def-8-2|Def. §8.2]], [[Measure Theory §8 Motivation꞉ The Riemann Integral#^def-8-3|Def. §8.3]], [[Measure Theory §8 Motivation꞉ The Riemann Integral#^rem-8-1|Rem. §8.1]], [[Single Variable Analysis §32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]]
 
 > [!remark]- Connections
 > - MATH 451 version: [[Single Variable Analysis §32 The Definition of the Riemann Integral#^thm-32-7|Continuous Functions Are Integrable (451 §32.7)]].

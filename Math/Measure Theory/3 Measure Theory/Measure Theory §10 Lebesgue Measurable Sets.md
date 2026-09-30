@@ -238,7 +238,7 @@ The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^de
 >
 > Assume $E_j \in \mathcal{M}$ for $j = 1, 2, \ldots$ are pairwise disjoint. Let $S_k = \bigcup_{j=1}^{k} E_j$ and $S = \bigcup_{j=1}^{\infty} E_j$.
 >
-> By [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|the lemma]], $E_j \in \mathcal{M} \Rightarrow S_k \in \mathcal{M}$. Thus for any $T \subseteq \mathbb{R}^n$:
+> By [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-1|Theorem §10.1 (2)]] (and induction), $E_j \in \mathcal{M} \Rightarrow S_k \in \mathcal{M}$. Thus for any $T \subseteq \mathbb{R}^n$, using [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|the lemma]] for the second equality:
 >
 > $$
 > m^*(T) = m^*(T \cap S_k) + m^*(T \cap S_k^c) = \sum_{j=1}^{k} m^*(T \cap E_j) + m^*(T \cap S_k^c).

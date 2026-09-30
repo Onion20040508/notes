@@ -551,7 +551,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 >
 > **Step 2: $\phi$ is a bijection.** This follows from properties of $\mathbb{R}$ (the covering space), not $S^1$:
 > - **Surjective** (every integer is hit): $\mathbb{R}$ is path-connected, so for any $n \in \mathbb{Z}$, there is a path in $\mathbb{R}$ from $0$ to $n$. Projecting via $p$ gives a loop in $S^1$ with $\phi([f]) = n$.
-> - **Injective** (different classes hit different integers): $\mathbb{R}$ is simply connected (convex $\Rightarrow$ every loop contracts via [[Topology §23 The Fundamental Group#^ex-23-1|straight-line homotopy]]). If $\phi([f]) = \phi([g])$, then $\tilde{f}(1) = \tilde{g}(1)$, so $\tilde{f} * \bar{\tilde{g}}$ is a loop in $\mathbb{R}$ which must contract, and projecting the homotopy gives $f \simeq_p g$.
+> - **Injective** (different classes hit different integers): $\mathbb{R}$ is simply connected (convex $\Rightarrow$ every loop contracts via [[Topology §22 Homotopy of Paths#^thm-22-1|straight-line homotopy]]). If $\phi([f]) = \phi([g])$, then $\tilde{f}(1) = \tilde{g}(1)$, so $\tilde{f} * \bar{\tilde{g}}$ is a loop in $\mathbb{R}$ which must contract, and projecting the homotopy gives $f \simeq_p g$.
 >
 > Alternatively, this entire step is a direct application of the [[Properties of the Lifting Correspondence|Lifting Correspondence Properties theorem]]: $\mathbb{R}$ is path-connected and simply connected, so $\phi$ is bijective. The argument above is just that theorem applied to $p: \mathbb{R} \to S^1$.
 >
@@ -583,7 +583,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 
 ^pf-24-10
 
-*Uses:* [[Topology §24 Covering Spaces#^thm-24-2|§24.2]], [[Topology §24 Covering Spaces#^def-24-7|Def. §24.7]], [[Topology §23 The Fundamental Group#^ex-23-1|Ex. §23.1]], [[Properties of the Lifting Correspondence|§24.9]], [[Pasting Lemma|§9.5]], [[Path Lifting Lemma|§24.6]]
+*Uses:* [[Topology §24 Covering Spaces#^thm-24-2|§24.2]], [[Topology §24 Covering Spaces#^def-24-7|Def. §24.7]], [[Topology §23 The Fundamental Group#^ex-23-1|Ex. §23.1]], [[Properties of the Lifting Correspondence|§24.9]], [[Pasting Lemma|§9.5]], [[Path Lifting Lemma|§24.6]], [[Topology §22 Homotopy of Paths#^thm-22-1|§22.1]]
 
 ![[m590-24-7.svg]]
 *Step 3 in one picture. The lift of $f * g$ starting at $0$ follows $\tilde f(2s)$ up to $m$ (blue). The lift $\tilde g$ starts at $0$ (dashed), so it cannot be used as it is. Translated up by $m$ it starts where $\tilde f$ stopped (red), and it still lies over $g$ because $p(x + m) = p(x)$. The endpoint is $m + n$, which is why $\phi([f] * [g]) = \phi([f]) + \phi([g])$.*
@@ -667,7 +667,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 
 ^pf-24-12
 
-*Uses:* [[Continuous Image of a Compact Space is Compact|§15.3]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]], [[Topology §12 Quotient Topology#^prop-12-2|§12.2]], [[Universal Property of Quotient Maps|§12.3]], [[Functoriality of π₁|§23.5]], [[Topology §23 The Fundamental Group#^ex-23-2|Ex. §23.2]], [[Fundamental Group of the Circle|§24.10]], [[Topology §24 Covering Spaces#^thm-24-11|§24.11]]
+*Uses:* [[Continuous Image of a Compact Space is Compact|§15.3]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]], [[Topology §12 Quotient Topology#^prop-12-2|§12.2]], [[Universal Property of Quotient Maps|§12.3]], [[Functoriality of π₁|§23.5]], [[Topology §23 The Fundamental Group#^ex-23-2|Ex. §23.2]], [[Fundamental Group of the Circle|§24.10]], [[Topology §24 Covering Spaces#^thm-24-11|§24.11]], [[Topology §24 Covering Spaces#^thm-24-2|§24.2]]
 
 > [!remark] Remark
 > This lemma bridges the algebraic and geometric perspectives:

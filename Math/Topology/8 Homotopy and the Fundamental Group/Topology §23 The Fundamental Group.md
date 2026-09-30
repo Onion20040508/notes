@@ -144,12 +144,14 @@ tags: [topology, math590]
 
 ^pf-23-2
 
-*Uses:* [[Properties of Path Concatenation|§22.6]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-4|§21.4]]
+*Uses:* [[Properties of Path Concatenation|§22.6]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-4|§21.4]], [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-4|Def. §21.4]]
 
 > [!theorem] Corollary §23.3: $\pi_1$ is Independent of Basepoint for Path-Connected Spaces
 > If $X$ is [[Topology §14 Connected Subspaces of ℝ#^def-14-3|path-connected]], then $\pi_1(X, x_0) \cong \pi_1(X, x_1)$ for any $x_0, x_1 \in X$. In particular, the isomorphism *type* of $\pi_1(X, x_0)$ is a well-defined invariant of $X$.
 
 ^cor-23-3
+
+*Uses:* [[Basepoint Independence of π₁|§23.2]]
 
 > [!remark] Remark
 > For path-connected spaces, we often write $\pi_1(X)$ (suppressing the basepoint) when we only care about the isomorphism type. However, the isomorphism $\hat{\alpha}$ *depends on the choice of path $\alpha$*: a different path $\alpha'$ from $x_0$ to $x_1$ gives a potentially different isomorphism $\hat{\alpha}'$. The isomorphism is “canonical up to conjugation” in a precise sense: $\hat{\alpha}'([f]) = [\bar{\alpha}' * \alpha] \cdot \hat{\alpha}([f]) \cdot [\bar{\alpha} * \alpha']$. When $\pi_1$ is abelian, all such isomorphisms agree, and the basepoint truly doesn't matter.

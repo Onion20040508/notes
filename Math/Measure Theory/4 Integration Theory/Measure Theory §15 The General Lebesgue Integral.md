@@ -522,7 +522,7 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[Measure Theory §14 The Lebesgue
 >
 > where $M_j = \sup_{[x_j^{(k)}, x_{j+1}^{(k)}]} f$ and $m_j = \inf_{[x_j^{(k)}, x_{j+1}^{(k)}]} f$.
 >
-> These satisfy $\varphi_k(x) \leq f(x) \leq \psi_k(x)$ for all $x \in [0,1]$ and all $k$. As $k$ increases (finer partitions), $\psi_k$ decreases and $\varphi_k$ increases:
+> These satisfy $\varphi_k(x) \leq f(x) \leq \psi_k(x)$ for all $x \in [0,1]$ and all $k$, except possibly at $x = 1$ (which lies in none of the half-open intervals, so $\varphi_k(1) = \psi_k(1) = 0$; a single point is a null set, so this is harmless). As $k$ increases (finer partitions), $\psi_k$ decreases and $\varphi_k$ increases:
 >
 > $$
 > \varphi_k \leq \varphi_{k+1} \leq f \leq \psi_{k+1} \leq \psi_k.
@@ -534,7 +534,7 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[Measure Theory §14 The Lebesgue
 > \varphi(x) = \lim_{k \to \infty} \varphi_k(x), \qquad \psi(x) = \lim_{k \to \infty} \psi_k(x),
 > $$
 >
-> with $\varphi(x) \leq f(x) \leq \psi(x)$ for all $x \in [0,1]$.
+> with $\varphi(x) \leq f(x) \leq \psi(x)$ for all $x \in [0,1)$.
 >
 > Since $f$ is Riemann integrable:
 >
@@ -542,15 +542,15 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[Measure Theory §14 The Lebesgue
 > \lim_{k \to \infty} \int_0^1 \psi_k\,dx = \lim_{k \to \infty} \int_0^1 \varphi_k\,dx = \int_{[0,1]}^R f\,dx.
 > $$
 >
-> Now $\psi_k - \varphi_k \geq 0$ and $\psi_k - \varphi_k \searrow \psi - \varphi \geq 0$. Since $\int_0^1 (\psi_1 - \varphi_1)\,dx < \infty$ (both are bounded), by the [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|vanishing integral result]] applied to the difference:
+> Now $\psi_k - \varphi_k \geq 0$ and $\psi_k - \varphi_k \searrow \psi - \varphi \geq 0$. Since $\int_0^1 (\psi_1 - \varphi_1)\,dx < \infty$ (both are bounded), by the [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-14|decreasing version of the MCT]] applied to the difference:
 >
 > $$
-> \lim_{k \to \infty} \int_0^1 (\psi_k - \varphi_k)\,dx = 0 \implies \int_0^1 (\psi - \varphi)\,dx = 0.
+> \int_0^1 (\psi - \varphi)\,dx = \lim_{k \to \infty} \int_0^1 (\psi_k - \varphi_k)\,dx = 0.
 > $$
 >
-> Since $\psi - \varphi \geq 0$ and $\int_0^1 (\psi - \varphi)\,dx = 0$, we conclude $\psi(x) = \varphi(x)$ a.e. on $[0,1]$.
+> Since $\psi - \varphi \geq 0$ and $\int_0^1 (\psi - \varphi)\,dx = 0$, the [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|vanishing integral result]] gives $\psi(x) = \varphi(x)$ a.e. on $[0,1]$.
 >
-> Since $\varphi(x) \leq f(x) \leq \psi(x)$ and $\varphi = \psi$ a.e., we have $f(x) = \varphi(x) = \psi(x)$ a.e. In particular, $f(x) = \lim_{k \to \infty} \varphi_k(x)$ a.e.
+> Since $\varphi(x) \leq f(x) \leq \psi(x)$ and $\varphi = \psi$ a.e., we have $f(x) = \varphi(x) = \psi(x)$ a.e. In particular, $f(x) = \lim_{k \to \infty} \varphi_k(x)$ a.e., and $f$ is measurable, since it equals the measurable function $\varphi$ (a pointwise limit of simple functions) a.e. ([[Measure Theory §12 Measurable Functions#^prop-12-12|Prop. §12.12]]).
 >
 > Since $|\varphi_k(x)| \leq M$ for all $k$ (where $M = \sup_{[0,1]} |f|$) and $m([0,1]) < \infty$, the constant function $M$ dominates. By [[Dominated Convergence Theorem|DCT]]:
 >

@@ -154,6 +154,7 @@ tags: [topology, math590]
 ^ex-7-6
 
 > [!remark]- Connections
+> - MATH 451: [[Single Variable Analysis §4 The Completeness Axiom#^thm-4-7|Density of ℚ in ℝ]].
 > - Density in general spaces: [[Topology §18 Countability Axioms#^def-18-4|Dense]].
 
 > [!theorem] Theorem §7.4: Closure and Limit Points
@@ -168,7 +169,7 @@ tags: [topology, math590]
 
 ^pf-7-4
 
-*Uses:* [[Closure Characterization|§7.3]], [[Topology §7 Interior and Closure#^lem-7-1|§7.1]]
+*Uses:* [[Topology §7 Interior and Closure#^thm-7-3|§7.3]], [[Topology §7 Interior and Closure#^lem-7-1|§7.1]]
 
 > [!theorem] Corollary §7.5
 > $A \subseteq X$ (topological space) is closed if and only if $A$ contains all of its limit points.

@@ -168,7 +168,7 @@ The most useful theorem:
 >
 > As $x \to a$: $f(x) \to f(a)$ ($f$ continuous at $a$), and $h$ is continuous at $f(a)$, so $h(f(x)) \to h(f(a)) = g'(f(a))$; and the second factor tends to $f'(a)$. Hence the limit exists and equals $g'(f(a))\, f'(a)$. Done!
 
-^pf-28-3
+^pf-28-3-2
 
 > [!remark] Remark: The classical notation
 > If $y = y(x)$ and $z = z(y)$, then $z = z(y(x))$ is a function of $x$, and the chain rule reads

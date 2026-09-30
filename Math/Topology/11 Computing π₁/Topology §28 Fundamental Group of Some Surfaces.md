@@ -45,7 +45,7 @@ tags: [topology, math590]
 
 ^pf-28-1
 
-*Uses:* [[Topology §12 Quotient Topology#^def-12-2|Def. §12.2]], [[Topology §24 Covering Spaces#^def-24-1|Def. §24.1]]
+*Uses:* [[Topology §12 Quotient Topology#^def-12-2|Def. §12.2]], [[Topology §24 Covering Spaces#^def-24-1|Def. §24.1]], [[Topology §12 Quotient Topology#^def-12-1|Def. §12.1]], [[Topology §12 Quotient Topology#^def-12-4|Def. §12.4]], [[Topology §9 Continuous Functions#^def-9-2|Def. §9.2]]
 
 ![[m590-28-1.svg]]
 *The evenly covered neighborhood from the proof: $U = B(x,\varepsilon)\cap S^2$ (dark red) and its antipodal copy $a(U)$ (light red, on the far side of the sphere) are disjoint because $\varepsilon < 1$ while $d(x,-x) = 2$ (dotted diameter). $p$ maps each of them homeomorphically onto the same set $p(U) \subseteq P^2$: two sheets over $p(U)$.*
@@ -70,7 +70,7 @@ tags: [topology, math590]
 
 ^pf-28-2
 
-*Uses:* [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-1|§28.1]], [[Sⁿ is Simply Connected for n ≥ 2|§27.3]], [[Properties of the Lifting Correspondence|§24.9]]
+*Uses:* [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-1|§28.1]], [[Sⁿ is Simply Connected for n ≥ 2|§27.3]], [[Properties of the Lifting Correspondence|§24.9]], [[Topology §24 Covering Spaces#^def-24-7|Def. §24.7]]
 
 > [!remark]- Connections
 > - Recomputed with van Kampen: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$ via van Kampen ([[Topology §29 The Seifert–van Kampen Theorem#^ex-29-5|Ex. §29.5]]).
@@ -248,7 +248,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 
 ^pf-28-4
 
-*Uses:* [[Path Lifting Lemma|§24.6]], [[Topology §24 Covering Spaces#^thm-24-8|§24.8]], [[Topology §24 Covering Spaces#^thm-24-2|§24.2]]
+*Uses:* [[Path Lifting Lemma|§24.6]], [[Topology §24 Covering Spaces#^thm-24-8|§24.8]], [[Topology §24 Covering Spaces#^thm-24-2|§24.2]], [[Topology §24 Covering Spaces#^def-24-1|Def. §24.1]]
 
 ![[m590-28-4.svg]]
 *The covering $p: E \to X$ from the proof. The $x$-axis and the circles on the $y$-axis lie over $A$ (blue); the $y$-axis and the circles on the $x$-axis lie over $B$ (red). The lift of $f*g$ from $e_0$ runs along the $x$-axis to $(1,0)$ and then around the red circle there, so it ends at $(1,0)$. The lift of $g*f$ runs up to $(0,1)$ and around the blue circle, so it ends at $(0,1)$. Different endpoints, so $f*g \not\simeq_p g*f$.*
@@ -289,7 +289,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 
 ^pf-28-5
 
-*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-9|§21.9]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-2|§21.2]], [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]]
+*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-9|§21.9]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-2|§21.2]], [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]]
 
 ![[m590-28-5.svg]]
 *The figure eight $X$ (red) inside $\Sigma_2$: one circle around each hole, meeting at $x_0$ on the neck (dashed). The retraction $r$ collapses the neck to $x_0$ and then each torus onto its red circle, keeping $X$ fixed. This is why $j_*$ is injective and $r_*$ is surjective.*

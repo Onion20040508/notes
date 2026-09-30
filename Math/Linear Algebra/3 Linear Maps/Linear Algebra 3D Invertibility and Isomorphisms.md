@@ -83,7 +83,7 @@ tags: [linear-algebra]
 >
 > ![[ladr-3.65-shifts.svg|480]]
 
-> [!example] 3.67 There exists a polynomial p such that ((x2 + 5x + 7)p) (p. 85)
+> [!example] 3.67 There exists a polynomial $p$ such that $\big((x^2+5x+7)p\big)''=q$ (p. 85)
 > **Claim.** For every $q\in\Poly(\R)$ there is $p\in\Poly(\R)$ with $\big((x^2+5x+7)p\big)''=q$.
 >
 > The map $p\mapsto\big((x^2+5x+7)p\big)''$ is injective on $\Poly(\R)$, but [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]] cannot be used there (see [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-64|3.64]]). So restrict: choose $m$ with $q\in\Poly_m(\R)$ and let $T:\Poly_m(\R)\to\Poly_m(\R)$, $Tp=\big((x^2+5x+7)p\big)''$. Multiplying by the quadratic raises degree by $2$ and differentiating twice lowers it by $2$, so $T$ maps into $\Poly_m(\R)$.

@@ -106,7 +106,7 @@ tags: [topology, math590]
 
 ^pf-29-1
 
-*Uses:* [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|§27.1]], [[Lebesgue Number Lemma|§16.3]]
+*Uses:* [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|§27.1]], [[Lebesgue Number Lemma|§16.3]], [[First isomorphism theorem]]
 
 > [!remark] Remark: How to Find $N$: The Recipe
 > Given $X = A \cup B$ with [[Seifert–van Kampen Theorem|van Kampen]] hypotheses, finding $N$ is a three-step process:
@@ -208,7 +208,7 @@ tags: [topology, math590]
 >
 > **Finding the relation: why $i_1(\gamma) = aba^{-1}b^{-1}$.** The inclusion $i_2: \pi_1(A \cap B) \to \pi_1(B) = 0$ is trivial ($i_2(\gamma) = e$), so the entire content of $N$ comes from $i_1(\gamma)$ — what the loop $\gamma$ looks like inside the punctured torus $A$.
 >
-> Think of the torus as the [[Topology §12 Quotient Topology#^ex-12-3|square $[0,1]^2$ with opposite edges identified]]. The puncture $q$ is an interior point, and $\gamma$ is a small circle around $q$. The key observation: since $\gamma$ lives entirely in the interior of the square, it is unaffected by ungluing — go back from the torus to the square, and $\gamma$ is still a small loop in the interior.
+> Think of the torus as the square $[0,1]^2$ with opposite edges identified ([[Topology §12 Quotient Topology#^ex-12-3|Ex. §12.3]]). The puncture $q$ is an interior point, and $\gamma$ is a small circle around $q$. The key observation: since $\gamma$ lives entirely in the interior of the square, it is unaffected by ungluing — go back from the torus to the square, and $\gamma$ is still a small loop in the interior.
 >
 > **Why $\gamma$ survives ungluing but $a, b$ do not.** The loop $a$ (going around the hole of the torus) *crosses* an identified edge — it enters through the left side and exits through the right. When you unglue, $a$ breaks: it becomes a path from the left edge to the right edge, not a loop. You cannot make $a$ smaller to avoid the edge, because crossing the edge is what $a$ does. Same for $b$. But $\gamma$ can be made small enough to stay in the interior, so ungluing does not break it.
 >
@@ -387,7 +387,7 @@ tags: [topology, math590]
 > | Klein bottle $K$ | $aba^{-1}b$ | $\langle a, b \mid aba^{-1}b \rangle$ (non-abelian) |
 > | Double torus $\Sigma_2$ | $a_1 b_1 a_1^{-1} b_1^{-1} a_2 b_2 a_2^{-1} b_2^{-1}$ | $\langle a_1, a_2, b_1, b_2 \mid a_1 b_1 a_1^{-1} b_1^{-1} a_2 b_2 a_2^{-1} b_2^{-1} \rangle$ (non-abelian) |
 >
-> For $P^2$ we use the one-vertex scheme $aa$ (a $2$-gon whose two edges are glued, i.e. the disk with antipodal boundary points identified). The square scheme $abab$ of [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-7|Example §29.7]] has two vertex classes, so [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-3|Theorem §29.3]] does not apply to it directly.
+> For $P^2$ we use the one-vertex scheme $aa$ (a $2$-gon whose two edges are glued, i.e. the disk with antipodal boundary points identified). The square scheme $abab$ of [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-7|the previous example]] has two vertex classes, so [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-3|the theorem above]] does not apply to it directly.
 >
 > The double torus has $\pi_1$ non-abelian, confirming the [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-5|result from §28]] (where we proved non-abelianness via a retraction onto the figure eight, whose $\pi_1$ is non-abelian by a covering-space argument, without computing the exact group).
 

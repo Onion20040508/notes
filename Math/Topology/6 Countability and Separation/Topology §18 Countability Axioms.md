@@ -252,4 +252,4 @@ tags: [topology, math590]
 
 ^pf-18-6
 
-*Uses:* [[Closure Characterization|§7.3]], [[Topology §18 Countability Axioms#^def-18-4|Def. §18.4]]
+*Uses:* [[Topology §7 Interior and Closure#^thm-7-3|§7.3]], [[Topology §18 Countability Axioms#^def-18-4|Def. §18.4]]

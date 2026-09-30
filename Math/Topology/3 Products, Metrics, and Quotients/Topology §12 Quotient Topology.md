@@ -275,7 +275,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ^pf-12-4
 
-*Uses:* [[Universal Property of Quotient Maps|§12.3]], [[Topology §12 Quotient Topology#^ex-12-4|Ex. §12.4]]
+*Uses:* [[Topology §12 Quotient Topology#^thm-12-3|§12.3]], [[Topology §12 Quotient Topology#^ex-12-4|Ex. §12.4]]
 
 > [!theorem] Theorem §12.5: Product of Quotient Maps (Compact-Hausdorff Case)
 > Let $\pi_1: X_1 \to Y_1$ and $\pi_2: X_2 \to Y_2$ be quotient maps. If $X_1 \times X_2$ is compact and $Y_1 \times Y_2$ is Hausdorff, then
@@ -300,7 +300,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ^pf-12-5
 
-*Uses:* [[Topology §10 Product Topology on Arbitrary Products#^thm-10-1|§10.1]], [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Continuous Image of a Compact Space is Compact|§15.3]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]], [[Topology §12 Quotient Topology#^prop-12-2|§12.2]]
+*Uses:* [[Topology §10 Product Topology on Arbitrary Products#^thm-10-1|§10.1]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §15 Compact Spaces#^thm-15-3|§15.3]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]], [[Topology §12 Quotient Topology#^prop-12-2|§12.2]]
 
 > [!example] Example §12.6: The Square-to-Torus Quotient Map
 > Each $\pi_i: [0, 2\pi] \to S^1$ by $\pi_i(s) = e^{is}$ is a quotient map (compact $\to$ Hausdorff). The product $\pi_1 \times \pi_2: [0, 2\pi]^2 \to S^1 \times S^1 = T^2$ is automatically a quotient map by [[Topology §12 Quotient Topology#^thm-12-5|the theorem]]: $[0, 2\pi]^2$ is compact and $T^2$ is Hausdorff.

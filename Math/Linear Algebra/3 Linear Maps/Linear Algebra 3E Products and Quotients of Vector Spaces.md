@@ -35,7 +35,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Same pattern as $\F^n=\F\times\dots\times\F$ ([[Linear Algebra 1A Rⁿ and Cⁿ#^ladr-1-11|Fⁿ, coordinate]]).
 
-> [!example] 3.90 R (p. 97)
+> [!example] 3.90 $\R^2\times\R^3$ and $\R^5$ (p. 97)
 > $\R^2\times\R^3\ne\R^5$: elements of the first are pairs $\big((x_1,x_2),(x_3,x_4,x_5)\big)$, elements of the second are lists of length $5$. But
 > $$
 > \big((x_1,x_2),(x_3,x_4,x_5)\big)\longmapsto(x_1,x_2,x_3,x_4,x_5)

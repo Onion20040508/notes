@@ -119,7 +119,7 @@ tags: [topology, math590]
 
 ^pf-17-1
 
-*Uses:* [[Compact Subspace of a Hausdorff Space is Closed|§15.4]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|§6.1]], [[Closed Subspace of a Compact Space is Compact|§15.2]]
+*Uses:* [[Topology §15 Compact Spaces#^thm-15-4|§15.4]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|§6.1]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]]
 
 ### Step 2: Verifying the Properties
 
@@ -135,7 +135,7 @@ tags: [topology, math590]
 
 ^pf-17-2
 
-*Uses:* [[Topology §5 Subspace Topology#^def-5-1|Def. §5.1]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]]
+*Uses:* [[Topology §5 Subspace Topology#^def-5-1|Def. §5.1]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]]
 
 > [!theorem] Proposition §17.3: $Y$ is Compact
 > If $X$ is any topological space, then $Y = X \cup \{\infty\}$ with the above topology is compact.
@@ -198,7 +198,7 @@ tags: [topology, math590]
 
 ^pf-17-5-2
 
-*Uses:* [[Closed Subspace of a Compact Space is Compact|§15.2]]
+*Uses:* [[Topology §15 Compact Spaces#^thm-15-2|§15.2]]
 
 > [!proof]+ Proof of Uniqueness
 > Let $Y, Y'$ both satisfy (1)–(3), with $Y \setminus X = \{p\}$ and $Y' \setminus X = \{q\}$. Define $h: Y \to Y'$ by $h(x) = x$ for $x \in X$ and $h(p) = q$.
@@ -213,7 +213,7 @@ tags: [topology, math590]
 
 ^pf-17-5-3
 
-*Uses:* [[Topology §9 Continuous Functions#^prop-9-2|§9.2]], [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Topology §5 Subspace Topology#^lem-5-2|§5.2]], [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]]
+*Uses:* [[Topology §9 Continuous Functions#^prop-9-2|§9.2]], [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Topology §5 Subspace Topology#^lem-5-2|§5.2]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]]
 
 > [!definition] Definition §17.3: One-Point Compactification
 > The space $Y$ constructed above is called the **one-point compactification** of $X$, often denoted $X^* = X \cup \{\infty\}$.
@@ -274,7 +274,7 @@ tags: [topology, math590]
 
 ^pf-17-6
 
-*Uses:* [[Topology §17 Local Compactness#^def-17-1|Def. §17.1]], [[Topology §17 Local Compactness#^thm-17-5|§17.5]], [[Closed Subspace of a Compact Space is Compact|§15.2]]
+*Uses:* [[Topology §17 Local Compactness#^def-17-1|Def. §17.1]], [[Topology §17 Local Compactness#^thm-17-5|§17.5]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]]
 
 > [!remark] Remark
 > This stronger formulation says: in a locally compact Hausdorff space, not only can you find *some* compact set containing a neighborhood, you can find one *inside any given neighborhood*. The one-point compactification is the key tool—it provides a compact Hausdorff ambient space where standard separation arguments apply.
@@ -293,7 +293,7 @@ tags: [topology, math590]
 
 ^pf-17-7
 
-*Uses:* [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Topology §17 Local Compactness#^thm-17-6|§17.6]]
+*Uses:* [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §17 Local Compactness#^thm-17-6|§17.6]]
 
 > [!theorem] Corollary §17.8: Locally Compact Hausdorff Spaces (Munkres 29.4)
 > A space $X$ is locally compact Hausdorff if and only if $X$ is homeomorphic to an open subspace of a compact Hausdorff space.

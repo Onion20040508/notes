@@ -97,21 +97,21 @@ tags: [measure-theory, math551]
 ^rem-4-2
 
 ![[m551-4-2.svg]]
-*Binary digits as successive halvings: $a_k$ records whether $x$ lies in the left ($0$) or right ($1$) half of the current dyadic interval, and the blue intervals shrink to $x = 0.7 = 0.1011\ldots$. A dyadic rational such as $\tfrac12$ (red) is an endpoint shared by two halves, so it has two expansions, $0.1000\ldots$ and $0.0111\ldots$ — the reason the countable set $Y$ is set aside in the proof.*
+*Binary digits as successive halvings: $a_k$ records whether $x$ lies in the left ($0$) or right ($1$) half of the current dyadic interval, and the blue intervals shrink to $x = 0.7 = 0.1011\ldots$. A dyadic rational such as $\tfrac12$ (red) is an endpoint shared by two halves, so it has two expansions, $0.1000\ldots$ and $0.0111\ldots$ — the reason the countable set $D$ of dyadic rationals (and the eventually constant sequences $Y$, $Y'$) is set aside in the proof.*
 
 > [!proof]+ Proof (continued)
-> The set $\{\frac{k}{2^n} \mid n \in \mathbb{N}\}$ of dyadic rationals is countable (it's a [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|countable union of finite sets]]).
+> The set $D = \{\frac{k}{2^n} \mid n \in \mathbb{N},\ k = 0, 1, \ldots, 2^n\}$ of dyadic rationals in $[0,1]$ is countable (it's a [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|countable union of finite sets]]).
 >
-> Let $Y = \{(a_n)_{n=1}^\infty \mid a_n \in \{0,1\}, \text{ and } \exists k \in \mathbb{N} \text{ s.t. } a_n = 0 \text{ for all } n > k\}$. These are sequences that are eventually constantly $0$, corresponding to finite binary representations.
+> Let $Y = \{(a_n)_{n=1}^\infty \mid a_n \in \{0,1\}, \text{ and } \exists k \in \mathbb{N} \text{ s.t. } a_n = 0 \text{ for all } n > k\}$. These are sequences that are eventually constantly $0$, corresponding to finite binary representations. Let $Y'$ be the set of sequences that are eventually constantly $1$.
 >
-> Then $Y \sim \{\frac{k}{2^n}\}$, so $Y$ is countable.
+> Then $Y \sim D \setminus \{1\}$ (send a sequence to the number it represents), so $Y$ is countable; likewise $Y' \sim D \setminus \{0\}$ is countable.
 >
-> There is a bijection from $[0,1] \setminus Y$ to $X \setminus Y$ (where $X$ is the set of all binary sequences). Since:
-> - $Y$ is countable
-> - $X \setminus Y$ is not countable (as $X$ is uncountable, [[Measure Theory §4 Uncountability#^ex-4-1|Ex. §4.1]])
-> - $X$ not countable, $Y$ countable $\Rightarrow$ $X \setminus Y$ not countable
+> A number $x \in [0,1] \setminus D$ has exactly one binary expansion, and it is neither eventually $0$ nor eventually $1$; conversely such a sequence represents a number in $[0,1] \setminus D$. So $x \mapsto (a_n)$ is a bijection from $[0,1] \setminus D$ to $X \setminus (Y \cup Y')$ (where $X$ is the set of all binary sequences). Since:
+> - $Y \cup Y'$ is countable
+> - $X \setminus (Y \cup Y')$ is not countable (as $X$ is uncountable, [[Measure Theory §4 Uncountability#^ex-4-1|Ex. §4.1]])
+> - $X$ not countable, $Y \cup Y'$ countable $\Rightarrow$ $X \setminus (Y \cup Y')$ not countable
 >
-> Thus $[0,1]$ is uncountable.
+> Thus $[0,1] \setminus D$, and hence $[0,1]$, is uncountable.
 
 ^pf-ex-4-2-c
 

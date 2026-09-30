@@ -86,6 +86,8 @@ tags: [topology, math590]
 
 ^pf-6-2
 
+*Uses:* [[Topology §5 Subspace Topology#^def-5-1|Def. §5.1]]
+
 > [!remark]- Connections
 > - The open version is the definition: [[Topology §5 Subspace Topology#^def-5-1|Subspace Topology]]. Closures: [[Topology §7 Interior and Closure#^thm-7-2|Closure in Subspace]].
 

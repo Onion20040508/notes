@@ -82,7 +82,7 @@ tags: [linear-algebra]
 
 ^ladr-1-6
 
-> [!example] 1.7 R (p. 4)
+> [!example] 1.7 ℝ² and ℝ³ (p. 4)
 > $\R^2=\{(x,y):x,y\in\R\}$ (the plane) and $\R^3=\{(x,y,z):x,y,z\in\R\}$ (ordinary space). The goal of the next definitions is to replace $2$ or $3$ by any $n$, and $\R$ by $\F$.
 
 ^ladr-1-7
@@ -134,7 +134,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Commutative: [[Linear Algebra 1A Rⁿ and Cⁿ#^ladr-1-14|Commutativity of addition in F]]. Inverses: [[Linear Algebra 1A Rⁿ and Cⁿ#^ladr-1-17|Additive inverse in Fⁿ, −x]].
 
-> [!theorem] 1.14 Commutativity of addition in F
+> [!theorem] 1.14 Commutativity of addition in Fⁿ
 > If $x,y\in\F^n$, then $x+y=y+x$.
 
 ^ladr-1-14

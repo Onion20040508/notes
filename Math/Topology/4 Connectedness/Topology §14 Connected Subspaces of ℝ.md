@@ -71,6 +71,8 @@ tags: [topology, math590]
 
 ^cor-14-2
 
+*Uses:* [[Topology §14 Connected Subspaces of ℝ#^thm-14-1|§14.1]], [[Topology §14 Connected Subspaces of ℝ#^ex-14-4|Ex. §14.4]]
+
 > [!proof]+ Proof of Theorem
 > We'll prove: if $Y$ is a convex subspace of $L$, then $Y$ is connected.
 >
@@ -135,7 +137,7 @@ tags: [topology, math590]
 
 ^pf-14-3
 
-*Uses:* [[Continuous Image of a Connected Space is Connected|§13.3]]
+*Uses:* [[Topology §13 Connected Spaces#^thm-13-3|§13.3]]
 
 ![[m590-14-2.svg]]
 *IVT via connectedness, drawn for $X = [a,b]$: $f(a) < r < f(b)$. If $r$ were not a value of $f$, the image $f(X)$ (right) would split at $r$ into $A = f(X) \cap (-\infty, r)$ (blue) and $B = f(X) \cap (r, \infty)$ (red), a separation of the connected set $f(X)$. So $r$ is hit, possibly several times (red dots), and $c$ is any one of them.*
@@ -182,11 +184,11 @@ tags: [topology, math590]
 >
 > If $X$ were not connected, then there exists $X = A \cup B$ separation of $X$. Let $x \in A$, $y \in B$, and let $f: [a, b] \to X$ be a path from $x$ to $y$.
 >
-> $f([a, b])$ is connected (since [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|$[a, b]$ connected]] and $f$ continuous ([[Continuous Image of a Connected Space is Connected|§13.3]])). [[Topology §13 Connected Spaces#^lem-13-4|$f([a, b]) \subseteq A$ or $f([a, b]) \subseteq B$]]. Contradiction, since $f(a) = x \in A$ and $f(b) = y \in B$.
+> $f([a, b])$ is connected (since $[a, b]$ [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|connected]] and $f$ continuous ([[Continuous Image of a Connected Space is Connected|§13.3]])). $f([a, b]) \subseteq A$ or $f([a, b]) \subseteq B$ ([[Topology §13 Connected Spaces#^lem-13-4|§13.4]]). Contradiction, since $f(a) = x \in A$ and $f(b) = y \in B$.
 
 ^pf-14-4
 
-*Uses:* [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|§14.2]], [[Continuous Image of a Connected Space is Connected|§13.3]], [[Topology §13 Connected Spaces#^lem-13-4|§13.4]]
+*Uses:* [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|§14.2]], [[Topology §13 Connected Spaces#^thm-13-3|§13.3]], [[Topology §13 Connected Spaces#^lem-13-4|§13.4]]
 
 > [!remark] Remark
 > The converse is not true in general: there exist connected spaces that are not path-connected (e.g., the [[Topology §14 Connected Subspaces of ℝ#^ex-14-7|topologist's sine curve]]).

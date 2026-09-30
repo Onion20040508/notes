@@ -97,7 +97,7 @@ tags: [topology, math590]
 
 ^pf-20-2
 
-*Uses:* [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]], [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]]
+*Uses:* [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]], [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]]
 
 ![[m590-20-2.svg]]
 *Stage 2 of the proof. Stage 1 gave, for each $a\in A$, disjoint open sets $U_a\ni a$ and $V_a\supseteq B$. Finitely many $U_{a_j}$ (red dashed) cover $A$. Their union is $U$ (red), and the intersection of the matching $V_{a_j}$ (blue dashed) is $V$ (blue). Each $V_{a_j}$ may meet the other $U$'s, like $V_{a_1}$ meeting $U_{a_2}$, but $V$ lies inside every $V_{a_j}$ and so misses all of $U$.*

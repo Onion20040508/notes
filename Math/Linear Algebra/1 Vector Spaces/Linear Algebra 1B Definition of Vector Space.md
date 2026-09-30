@@ -69,7 +69,7 @@ tags: [linear-algebra]
 
 ^ladr-1-24
 
-> [!example] 1.25 FS is a vector space (p. 14)
+> [!example] 1.25 $\F^S$ is a vector space (p. 14)
 > For a nonempty set $S$, $\F^S$ (functions $S\to\F$) with pointwise operations $(f+g)(x)=f(x)+g(x)$, $(\lambda f)(x)=\lambda f(x)$ is a vector space. Its zero is the function $0(x)=0$ and $(-f)(x)=-f(x)$.
 >
 > **Everything is a function space.** $\F^n=\F^{\{1,\dots,n\}}$ (write $x(k)$ for $x_k$) and $\F^\infty=\F^{\{1,2,\dots\}}$. Elements of a vector space may be lists, functions, or stranger objects; the axioms are all that matter.

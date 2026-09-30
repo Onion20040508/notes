@@ -29,10 +29,10 @@ A basic property of [[Multivariable Analysis §6 Differentiability#^def-6-1|diff
 > The **directional derivative** of $f$ at $(x, y)$ in the direction $\alpha$ is defined as:
 >
 > $$
-> D_{(\alpha)} f(x, y) = \left( \frac{d}{d\rho} f(x + \rho \cos \alpha, \, y + \rho \sin \alpha) \right)\bigg|_{\rho = 0} = \lim_{\rho \to 0} \frac{f(x + \rho \cos \alpha, \, y + \rho \sin \alpha) - f(x, y)}{\rho},
+> D_{(\alpha)} f(x, y) = \left( \frac{d}{d\rho} f(x + \rho \cos \alpha, \, y + \rho \sin \alpha) \right)\bigg|_{\rho = 0^+} = \lim_{\rho \to 0^+} \frac{f(x + \rho \cos \alpha, \, y + \rho \sin \alpha) - f(x, y)}{\rho},
 > $$
 >
-> provided the limit exists.
+> provided the limit exists. Since $\rho \ge 0$ is a distance, this is a one-sided limit: the right-hand derivative at $\rho = 0$.
 
 ^def-7-1
 
@@ -40,12 +40,12 @@ A basic property of [[Multivariable Analysis §6 Differentiability#^def-6-1|diff
 *The directional derivative restricts $f$ to a ray: points along the direction $\alpha$ have the form $(x + \rho\cos\alpha,\, y + \rho\sin\alpha)$, turning $f$ into a single-variable function of the distance $\rho$. Its derivative at $\rho = 0$ is $D_{(\alpha)}f$. The partials are the special cases $\alpha = 0$ and $\alpha = \pi/2$.*
 
 > [!remark] Remark: Partial Derivatives as Special Cases
-> The [[Multivariable Analysis §4 Partial Derivatives#^def-4-1|partial derivatives]] are directional derivatives in the coordinate directions:
+> The [[Multivariable Analysis §4 Partial Derivatives#^def-4-1|partial derivatives]], when they exist, are directional derivatives in the coordinate directions:
 >
 > $$
 > \begin{aligned}
-> D_{(0)} f(x, y) &= \lim_{\rho \to 0} \frac{f(x + \rho, y) - f(x, y)}{\rho} = f_x(x, y), \\[6pt]
-> D_{(\pi/2)} f(x, y) &= \lim_{\rho \to 0} \frac{f(x, y + \rho) - f(x, y)}{\rho} = f_y(x, y).
+> D_{(0)} f(x, y) &= \lim_{\rho \to 0^+} \frac{f(x + \rho, y) - f(x, y)}{\rho} = f_x(x, y), \\[6pt]
+> D_{(\pi/2)} f(x, y) &= \lim_{\rho \to 0^+} \frac{f(x, y + \rho) - f(x, y)}{\rho} = f_y(x, y).
 > \end{aligned}
 > $$
 
@@ -75,10 +75,10 @@ A basic property of [[Multivariable Analysis §6 Differentiability#^def-6-1|diff
 > f(x + \rho \cos \alpha, y + \rho \sin \alpha) - f(x, y) = \rho \cos \alpha \cdot f_x + \rho \sin \alpha \cdot f_y + \varepsilon \rho = \rho (f_x \cos \alpha + f_y \sin \alpha + \varepsilon).
 > $$
 >
-> Dividing by $\rho$ and taking $\rho \to 0$:
+> Dividing by $\rho$ and taking $\rho \to 0^+$:
 >
 > $$
-> D_{(\alpha)} f(x, y) = \lim_{\rho \to 0} \frac{f(x + \rho \cos \alpha, y + \rho \sin \alpha) - f(x, y)}{\rho} = f_x \cos \alpha + f_y \sin \alpha + \lim_{\rho \to 0} \varepsilon = f_x \cos \alpha + f_y \sin \alpha.
+> D_{(\alpha)} f(x, y) = \lim_{\rho \to 0^+} \frac{f(x + \rho \cos \alpha, y + \rho \sin \alpha) - f(x, y)}{\rho} = f_x \cos \alpha + f_y \sin \alpha + \lim_{\rho \to 0^+} \varepsilon = f_x \cos \alpha + f_y \sin \alpha.
 > $$
 
 ^pf-7-1
@@ -86,7 +86,7 @@ A basic property of [[Multivariable Analysis §6 Differentiability#^def-6-1|diff
 *Uses:* [[Multivariable Analysis §6 Differentiability#^def-6-1|Def. §6.1]], [[Multivariable Analysis §7 Directional Derivatives#^def-7-1|Def. §7.1]]
 
 > [!remark]- Connections
-> - The same result in unit-vector form, with $L = Df$ the total derivative: [[Multivariable Analysis §6 Differentiability#^thm-6-1|Theorem §6.1]]; the converse is false ([[Multivariable Analysis §6 Differentiability#^rem-6-4|warning]], [[Multivariable Analysis §6 Differentiability#^ex-6-1|Example §6.1]]).
+> - The same result in unit-vector form, with $L = Df$ the total derivative: [[Multivariable Analysis §6 Differentiability#^thm-6-1|Theorem §6.1]]; the converse is false ([[Multivariable Analysis §6 Differentiability#^rem-6-4|warning]]).
 > - In forms language the differential eats a direction and returns this derivative: [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-6|Gradient = Differential = 1-Form]].
 
 > [!remark] Remark: Unit Vector Notation

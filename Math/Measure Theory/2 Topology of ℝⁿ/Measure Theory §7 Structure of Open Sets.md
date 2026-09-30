@@ -36,6 +36,8 @@ tags: [measure-theory, math551]
 > a_x = \inf\{a \mid (a, x] \subseteq O\}, \quad b_x = \sup\{b \mid [x, b) \subseteq O\}.
 > $$
 >
+> Here the infimum and supremum are taken in the extended reals, so $a_x = -\infty$ or $b_x = +\infty$ is allowed (e.g. $O = \mathbb{R}$); in every case $(a_x, b_x)$ is an open interval, possibly unbounded.
+>
 > **Step 1: The sets are non-empty and $a_x < x < b_x$.**
 >
 > Since $x \in O$ and $O$ is [[Measure Theory §5 Topology of ℝⁿ#^def-5-2|open]], there exists $\epsilon > 0$ with $(x - \epsilon, x + \epsilon) \subseteq O$.
@@ -54,7 +56,7 @@ tags: [measure-theory, math551]
 >
 > **Step 3: $a_x \notin O$ and $b_x \notin O$ (hence $(a_x, b_x)$ is maximal).**
 >
-> Suppose for contradiction that $a_x \in O$. Since $O$ is open, there exists $\delta > 0$ such that $(a_x - \delta, a_x + \delta) \subseteq O$.
+> If $a_x = -\infty$ there is nothing to prove, so let $a_x$ be real and suppose for contradiction that $a_x \in O$. Since $O$ is open, there exists $\delta > 0$ such that $(a_x - \delta, a_x + \delta) \subseteq O$.
 >
 > By Step 2, $(a_x, x] \subseteq O$. We claim $(a_x - \delta, x] \subseteq O$.
 >
@@ -62,15 +64,15 @@ tags: [measure-theory, math551]
 >
 > Thus $(a_x - \delta, x] \subseteq O$, so $a_x - \delta \in \{a \mid (a, x] \subseteq O\}$. But $a_x - \delta < a_x$, contradicting $a_x = \inf\{a \mid (a, x] \subseteq O\}$.
 >
-> Therefore $a_x \notin O$. By a symmetric argument, $b_x \notin O$.
+> Therefore $a_x \notin O$. By a symmetric argument, $b_x \notin O$ (when $b_x < \infty$).
 >
 > **Step 4: $(a_x, b_x)$ is the maximal open interval containing $x$ in $O$.**
 >
-> Suppose $I = (\alpha, \beta)$ is an open interval with $x \in I \subseteq O$. We show $I \subseteq (a_x, b_x)$.
+> Suppose $I = (\alpha, \beta)$ (with $-\infty \leq \alpha < \beta \leq \infty$) is an open interval with $x \in I \subseteq O$. We show $I \subseteq (a_x, b_x)$.
 >
-> Since $(\alpha, x] \subseteq I \subseteq O$, we have $\alpha \in \{a \mid (a, x] \subseteq O\}$, hence $a_x \leq \alpha$.
+> Since $(\alpha, x] \subseteq I \subseteq O$, every real $a$ with $\alpha \leq a < x$ lies in $\{a \mid (a, x] \subseteq O\}$, hence $a_x \leq \alpha$.
 >
-> Since $[x, \beta) \subseteq I \subseteq O$, we have $\beta \in \{b \mid [x, b) \subseteq O\}$, hence $b_x \geq \beta$.
+> Since $[x, \beta) \subseteq I \subseteq O$, every real $b$ with $x < b \leq \beta$ lies in $\{b \mid [x, b) \subseteq O\}$, hence $b_x \geq \beta$.
 >
 > Therefore $I = (\alpha, \beta) \subseteq (a_x, b_x)$.
 >
@@ -202,7 +204,7 @@ tags: [measure-theory, math551]
 > - Gives the case $n > 1$ of [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-6|Open Sets are Measurable]].
 
 > [!remark] Remark: Why Dyadic Subdivision?
-> Using powers of $2$ (dyadic subdivision) is essential for the refinement property. If we instead subdivided using intervals of length $\frac{1}{k}$, the partition lines would shift at each scale: the partition at $k=2$ has lines at $0, 0.5, 1, \ldots$ while $k=3$ has lines at $0, 0.33, 0.67, 1, \ldots$. These do not align, breaking the nesting structure and making it impossible to select a disjoint subcollection. With dyadic subdivision, partition lines at scale $k$ are always a subset of partition lines at scale $k+1$, ensuring the refinement property holds.
+> Using powers of $2$ (dyadic subdivision) is essential for the refinement property. If we instead subdivided using intervals of length $\frac{1}{k}$, the partition lines would shift at each scale: the partition at $k=2$ has lines at $0, 0.5, 1, \ldots$ while $k=3$ has lines at $0, 0.33, 0.67, 1, \ldots$. These do not align, breaking the nesting structure, so selecting a disjoint subcollection is no longer automatic. With dyadic subdivision, partition lines at scale $k$ are always a subset of partition lines at scale $k+1$, ensuring the refinement property holds.
 
 ^rem-7-1
 

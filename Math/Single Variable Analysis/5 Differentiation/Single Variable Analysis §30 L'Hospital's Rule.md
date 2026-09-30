@@ -137,7 +137,7 @@ since $f(x_1), g(x_1)$ are very small — and the right side, by the following t
 >
 > Since $\varepsilon$ was arbitrary, $\lim_{x\to a^-} \tfrac{f(x)}{g(x)} = L$. (This $\varepsilon$-argument is the rigorous form of the approximation idea sketched above.)
 
-^pf-30-2
+^pf-30-1
 
 ## More Indeterminate Forms
 

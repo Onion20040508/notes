@@ -697,10 +697,10 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > We have:
 >
 > $$
-> C_c(\mathbb{R}^n) \;\subseteq\; \text{step functions} \;\subseteq\; \text{simple functions} \;\subseteq\; L^p(E),
+> C_c(\mathbb{R}^n) \;\longrightarrow\; \text{step functions} \;\longrightarrow\; \text{simple functions} \;\longrightarrow\; L^p(E),
 > $$
 >
-> with each class dense in the next ($1 \leq p < \infty$). This chain fails for $p = \infty$: the DCT argument in (i) requires $|f|^p \in L^1$, which is $\int |f|^p < \infty$ — exactly the $L^p$ condition. For $L^\infty$, continuous functions are *not* dense (e.g., $\chi_{[0,1]}$ cannot be uniformly approximated by continuous functions on $\mathbb{R}$).
+> with each class dense in the next in the $L^p$ norm ($1 \leq p < \infty$). This chain fails for $p = \infty$, but not at the last step: simple functions are dense in $L^\infty$ (uniform approximation of bounded functions, [[Measure Theory §12 Measurable Functions#^thm-12-17|Theorem §12.17]], applied off a null set). It breaks at step functions and $C_c$: for $L^\infty$, continuous functions are *not* dense (e.g., $\chi_{[0,1]}$ cannot be uniformly approximated by continuous functions on $\mathbb{R}$).
 
 ^rem-19-4
 

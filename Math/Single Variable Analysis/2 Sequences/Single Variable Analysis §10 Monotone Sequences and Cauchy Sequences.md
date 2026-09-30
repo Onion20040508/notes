@@ -347,7 +347,7 @@ How to prove it? Not clear at first — we must produce a limit out of nothing. 
 >
 > and by the theorem of the previous subsection, $(s_n)$ is convergent.
 
-^pf-10-9
+^pf-10-8
 
 ![[m451-10-4.svg]]
 *Cauchy implies convergent, with no limit in sight: the band is anchored at a *term* $s_N$ (red), not at a limit. Every later term lies within $\varepsilon$ of $s_N$, so the whole tail — and with it $\underline{s}_N \leq \overline{s}_N$, hence $\liminf s_n$ and $\limsup s_n$ — is caught in an interval of length $2\varepsilon$.*

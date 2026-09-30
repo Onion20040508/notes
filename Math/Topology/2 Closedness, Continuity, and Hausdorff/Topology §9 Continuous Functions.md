@@ -81,7 +81,7 @@ tags: [topology, math590]
 
 ^pf-9-1
 
-*Uses:* [[Closure Characterization|§7.3]], [[Topology §7 Interior and Closure#^lem-7-1|§7.1]]
+*Uses:* [[Topology §7 Interior and Closure#^thm-7-3|§7.3]], [[Topology §7 Interior and Closure#^lem-7-1|§7.1]]
 
 > [!remark]- Connections
 > - Metric spaces: [[Topology §11 Metric Topology#^thm-11-7|ε-δ Characterization of Continuity]], [[Topology §11 Metric Topology#^thm-11-9|Continuity and Sequences]].
@@ -226,7 +226,7 @@ tags: [topology, math590]
 
 ^pf-9-5
 
-*Uses:* [[Equivalent Conditions for Continuity|§9.1]], [[Topology §6 Closed Sets and Limit Points#^thm-6-3|§6.3]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|§6.1]]
+*Uses:* [[Topology §9 Continuous Functions#^thm-9-1|§9.1]], [[Topology §6 Closed Sets and Limit Points#^thm-6-3|§6.3]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|§6.1]]
 
 > [!example] Example §9.6
 > $f_1: [0, \infty) \to \mathbb{R}$, $f_1(x) = x$. $f_2: (-\infty, 0] \to \mathbb{R}$, $f_2(x) = -x$. (Both continuous.) $\Rightarrow$ $f(x) = |x|$ continuous.

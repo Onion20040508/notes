@@ -193,7 +193,7 @@ The construction of Lebesgue measure generalizes to abstract settings.
 >
 > Now $I \cap R$ is a rectangle (possibly empty), so $m^*(I \cap R) = |I \cap R|$.
 >
-> The set $I \cap R^c$ is a union of finitely many disjoint rectangles $\{I_1, \ldots, I_k\}$ (this can be verified geometrically).
+> The set $I \cap R^c$ is a union of finitely many disjoint rectangles $\{I_1, \ldots, I_k\}$ together with finitely many pieces of their faces (this can be verified geometrically). Each face lies in open rectangles of arbitrarily small volume, so it has outer measure zero, and subadditivity gives $m^*(I \cap R^c) \leq \sum_{j=1}^{k} |I_j|$.
 >
 > Thus:
 >
@@ -201,7 +201,7 @@ The construction of Lebesgue measure generalizes to abstract settings.
 > m^*(I \cap R) + m^*(I \cap R^c) \leq |I \cap R| + \sum_{j=1}^{k} |I_j| = |I| = m^*(I),
 > $$
 >
-> where the equality $|I \cap R| + \sum_j |I_j| = |I|$ follows from the fact that $I$ is partitioned into $I \cap R$ and the $I_j$.
+> where the equality $|I \cap R| + \sum_j |I_j| = |I|$ follows from the fact that $I$ is partitioned into $I \cap R$ and the $I_j$ (up to the shared faces, which have volume zero).
 
 ^pf-11-5
 
@@ -220,11 +220,11 @@ The construction of Lebesgue measure generalizes to abstract settings.
 > [!proof]+ Proof
 > If $n = 1$: By a previous result ([[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|Prop. §7.1]]), $O$ is a countable union of mutually disjoint open intervals. Each open interval is a rectangle, hence measurable. Since $\mathcal{M}$ is a [[Lebesgue Measurable Sets Form a σ-Algebra|σ-algebra]], $O \in \mathcal{M}$.
 >
-> If $n > 1$: By a previous result ([[Measure Theory §7 Structure of Open Sets#^prop-7-3|Prop. §7.3]]), $O$ is a countable union of half-open half-closed rectangles. Each such rectangle is measurable, so $O \in \mathcal{M}$.
+> If $n > 1$: By a previous result ([[Measure Theory §7 Structure of Open Sets#^prop-7-3|Prop. §7.3]]), $O$ is a countable union of half-open half-closed rectangles. Each such rectangle is measurable: it is the open rectangle with the same edges (measurable by [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-5|Prop. §11.5]]) together with part of its boundary, and the boundary is a finite union of faces of outer measure zero, hence measurable ([[Measure Theory §10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]]). So $O \in \mathcal{M}$.
 
 ^pf-11-6
 
-*Uses:* [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[Measure Theory §7 Structure of Open Sets#^prop-7-3|§7.3]], [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-5|§11.5]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
+*Uses:* [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[Measure Theory §7 Structure of Open Sets#^prop-7-3|§7.3]], [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-5|§11.5]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]]
 
 > [!remark]- Connections
 > - The 1D structure theorem is also stated in MATH 451: [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^rem-13-5|451 Rem. §13.5]].
@@ -281,16 +281,16 @@ The construction of Lebesgue measure generalizes to abstract settings.
 > For any $\epsilon > 0$, there exists an L-covering $\{I_k\}$ of $E$ by open rectangles such that
 >
 > $$
-> m^*(E) + \epsilon \geq \sum_k |I_k|.
+> m^*(E) + \frac{\epsilon}{2} \geq \sum_k |I_k|.
 > $$
 >
 > Let $G = \bigcup_k I_k$. Then $G$ is open (union of open sets), $G \supseteq E$, and
 >
 > $$
-> m^*(G) = m(G) \leq \sum_k m^*(I_k) = \sum_k |I_k| \leq m(E) + \epsilon.
+> m^*(G) = m(G) \leq \sum_k m^*(I_k) = \sum_k |I_k| \leq m(E) + \frac{\epsilon}{2}.
 > $$
 >
-> Thus $m(G \setminus E) = m(G) - m(E) \leq \epsilon$.
+> Thus $m(G \setminus E) = m(G) - m(E) \leq \frac{\epsilon}{2} < \epsilon$.
 >
 > *Case: $m(E) = \infty$.*
 >
@@ -328,7 +328,7 @@ The construction of Lebesgue measure generalizes to abstract settings.
 ^prop-11-9
 
 > [!proof]+ Proof
-> The same proof as part (2) of [[Outer Regularity of Lebesgue Measure|the previous theorem]] works: for each $k$, choose an L-cover $\{I_j^{(k)}\}$ of $A$ with $\sum_j |I_j^{(k)}| < m^*(A) + \frac{1}{k}$. Let $G_k = \bigcup_j I_j^{(k)}$, which is open and satisfies $G_k \supseteq A$ and $m(G_k) \leq m^*(A) + \frac{1}{k}$.
+> If $m^*(A) = \infty$, take $H = \mathbb{R}^n$ (open, hence $G_\delta$). Otherwise $m^*(A) < \infty$, and the same proof as part (2) of [[Outer Regularity of Lebesgue Measure|the previous theorem]] works: for each $k$, choose an L-cover $\{I_j^{(k)}\}$ of $A$ with $\sum_j |I_j^{(k)}| < m^*(A) + \frac{1}{k}$. Let $G_k = \bigcup_j I_j^{(k)}$, which is open and satisfies $G_k \supseteq A$ and $m(G_k) \leq m^*(A) + \frac{1}{k}$.
 >
 > Let $H = \bigcap_k G_k$. Then $H$ is a $G_\delta$ set, $H \supseteq A$, and $m(H) \leq m(G_k) < m^*(A) + \frac{1}{k}$ for all $k$. Thus $m(H) \leq m^*(A)$. By monotonicity, $m^*(A) \leq m^*(H) = m(H)$. Therefore $m^*(A) = m(H)$.
 
@@ -419,7 +419,7 @@ The construction of Lebesgue measure generalizes to abstract settings.
 > m(E \setminus K_k) \leq m(E \setminus K) + m(E \setminus [-k/2, k/2]^n).
 > $$
 >
-> Define $E_k = E \cap ([-k/2, k/2]^n)^c = E \setminus [-k/2, k/2]^n$. Since $([-k+1/2, k+1/2]^n)^c \subseteq ([-k/2, k/2]^n)^c$, the sequence $E_k$ is decreasing. Since $m(E_1) \leq m(E) < \infty$, by [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-13|continuity of measure from above]]:
+> Define $E_k = E \cap ([-k/2, k/2]^n)^c = E \setminus [-k/2, k/2]^n$. Since $([-(k+1)/2, (k+1)/2]^n)^c \subseteq ([-k/2, k/2]^n)^c$, the sequence $E_k$ is decreasing. Since $m(E_1) \leq m(E) < \infty$, by [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-13|continuity of measure from above]]:
 >
 > $$
 > \lim_{k \to \infty} m(E_k) = m\left(\bigcap_{k=1}^{\infty} E_k\right) = m(E \setminus \mathbb{R}^n) = m(\emptyset) = 0.
@@ -447,7 +447,7 @@ The construction of Lebesgue measure generalizes to abstract settings.
 >
 > Since $K \subseteq G$, we have $m(G \setminus K) = m(G) - m(K) < \epsilon/2$.
 >
-> Since $K \subseteq E$, we have $m(E \setminus G) \leq m(E \setminus K) < \epsilon/2$.
+> Since $K \subseteq G$, we have $m(E \setminus G) \leq m(E \setminus K) < \epsilon/2$.
 >
 > Since $K \subseteq G$, we have $m(G \setminus E) \leq m(G \setminus K) < \epsilon/2$.
 >
@@ -874,7 +874,7 @@ If $E$ is countable, then $m^*(E) = 0$ ([[Measure Theory §9 Lebesgue Outer Meas
 >
 > *Base case ($n=1$):* The set $C_1 = [0, \frac{1}{3}] \cup [\frac{2}{3}, 1]$. If $x \in [0, \frac{1}{3}]$, then $x = \frac{0}{3} + \frac{x'}{3}$ for some $x' \in [0,1]$, so the first ternary digit is $0$. If $x \in [\frac{2}{3}, 1]$, then $x = \frac{2}{3} + \frac{x'}{3}$ for some $x' \in [0,1]$, so the first digit is $2$. Conversely, if the first digit is $0$, then $x \leq \frac{1}{3}$; if it's $2$, then $x \geq \frac{2}{3}$.
 >
-> *Inductive step:* Assume the claim holds for $C_n$. Each component interval $I$ of $C_n$ has length $\frac{1}{3^n}$, and $C_{n+1} \cap I$ consists of the left and right thirds of $I$. Points in the left third have $(n+1)$-st digit $0$; points in the right third have $(n+1)$-st digit $2$. Combined with the inductive hypothesis, $x \in C_{n+1}$ iff the first $n+1$ digits are all $0$ or $2$.
+> *Inductive step:* Assume the claim holds for $C_n$. Each component interval $I$ of $C_n$ has length $\frac{1}{3^n}$, and $C_{n+1} \cap I$ consists of the left and right thirds of $I$. Points in the left third have $(n+1)$-st digit $0$; points in the right third have $(n+1)$-st digit $2$; points of the removed open middle third have $(n+1)$-st digit $1$ in every expansion. (Only the endpoints of the thirds, such as $\frac{1}{9} = 0.01_3 = 0.00\overline{2}_3$, have two expansions; for these we choose the expansion without the digit $1$, which ends in $\overline{2}$ for a right endpoint of a left third and in $\overline{0}$ for a left endpoint of a right third.) Combined with the inductive hypothesis, $x \in C_{n+1}$ iff the first $n+1$ digits are all $0$ or $2$.
 >
 > Thus $x \in C = \bigcap_n C_n$ iff all ternary digits are $0$ or $2$.
 >

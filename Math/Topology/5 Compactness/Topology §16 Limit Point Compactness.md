@@ -128,7 +128,7 @@ tags: [topology, math590]
 
 ^pf-16-2
 
-*Uses:* [[Topology §7 Interior and Closure#^def-7-3|Def. §7.3]]
+*Uses:* [[Topology §16 Limit Point Compactness#^thm-16-1|§16.1]], [[Topology §7 Interior and Closure#^def-7-3|Def. §7.3]]
 
 To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas.
 
@@ -166,9 +166,11 @@ To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas
 > [!proof]+ Proof
 > Suppose not: there exists $\varepsilon > 0$ such that no finite collection of $\varepsilon$-balls covers $X$. Build a sequence inductively: pick $x_1 \in X$. Given $x_1, \ldots, x_n$, since $\{B(x_i, \varepsilon)\}_{i=1}^n$ does not cover $X$, choose $x_{n+1} \notin \bigcup_{i=1}^n B(x_i, \varepsilon)$.
 >
-> By construction, $d(x_i, x_j) \geq \varepsilon$ for all $i \neq j$. So no subsequence can be Cauchy, hence no subsequence converges. This contradicts sequential compactness.
+> By construction, $d(x_i, x_j) \geq \varepsilon$ for all $i \neq j$. So no subsequence can be [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^def-13-2|Cauchy]], hence no subsequence converges. This contradicts sequential compactness.
 
 ^pf-16-4
+
+*Uses:* [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]]
 
 > [!proof]+ Proof of $(3) \Rightarrow (1)$: Sequentially Compact $\Rightarrow$ Compact
 > Let $\{U_\alpha\}$ be an open cover of $X$.
@@ -183,7 +185,7 @@ To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas
 
 ^pf-16-2-2
 
-*Uses:* [[Lebesgue Number Lemma|§16.3]], [[Topology §16 Limit Point Compactness#^lem-16-4|§16.4]]
+*Uses:* [[Topology §16 Limit Point Compactness#^lem-16-3|§16.3]], [[Topology §16 Limit Point Compactness#^lem-16-4|§16.4]]
 
 > [!remark] Remark: Summary of the Equivalence
 > For a metrizable space $X$, the proof cycle is:

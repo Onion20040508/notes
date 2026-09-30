@@ -209,7 +209,7 @@ tags: [topology, math590]
 
 ^pf-13-6
 
-*Uses:* [[Continuous Image of a Connected Space is Connected|§13.3]], [[Topology §13 Connected Spaces#^thm-13-5|§13.5]]
+*Uses:* [[Topology §13 Connected Spaces#^thm-13-3|§13.3]], [[Topology §13 Connected Spaces#^thm-13-5|§13.5]]
 
 ![[m590-13-3.svg]]
 *The proof for $X \times Y$: $T_x$ is the cross formed by the horizontal $X \times b$ (blue) and the vertical $x \times Y$ (red), which meet at $x \times b$, so each $T_x$ is connected. Every cross contains the same horizontal line, hence the point $a \times b$. As $x$ varies (grey lines), the crosses cover $X \times Y$, and Theorem §13.5 finishes the proof.*

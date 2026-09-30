@@ -30,7 +30,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 > $$
 >
 > where $a_j < b_j$ for all $j$. We write:
-> - $\mathring{I} = (a_1, b_1) \times \cdots \times (a_n, b_n)$ for the **interior** (open rectangle)
+> - $\mathring{I} = (a_1, b_1) \times \cdots \times (a_n, b_n)$ for the **interior** (open rectangle); for $I$ as above $\mathring{I} = I$, and the notation is useful for the closed or half-open rectangle with the same edges, whose interior is again this open rectangle
 > - $\bar{I} = [a_1, b_1] \times \cdots \times [a_n, b_n]$ for the **closure** (closed rectangle)
 
 ^def-9-1
@@ -69,7 +69,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 > - Axiomatized in [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-3|Def. §11.3]] (outer measure on an arbitrary set).
 
 > [!remark] Remark
-> For outer measure, we have either $m^*(A) = \infty$ for all L-coverings of $A$, or $m^*(A) < \infty$. In the latter case, for every $\epsilon > 0$, there exists an L-covering $\{I_k\}$ of $A$ such that
+> For outer measure, we have either $\sum_k |I_k| = \infty$ for every L-covering $\{I_k\}$ of $A$ (so $m^*(A) = \infty$), or $m^*(A) < \infty$. In the latter case, for every $\epsilon > 0$, there exists an L-covering $\{I_k\}$ of $A$ such that
 >
 > $$
 > m^*(A) + \epsilon > \sum_k |I_k|.
@@ -213,10 +213,12 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 > Therefore $m^*(\bar{I}) = \inf \sum_k |I_k| \geq |I|$.
 >
 > Combining: $m^*(\bar{I}) = |I|$.
+>
+> If $J$ is an open or half-open rectangle with the same edges, then $J \subseteq \bar{I}$ gives $m^*(J) \leq |I|$ by [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|monotonicity]]; conversely, for small $\delta > 0$, $J$ contains the closed rectangle $\prod_{j} [a_j + \delta, b_j - \delta]$, so $m^*(J) \geq \prod_{j} (b_j - a_j - 2\delta) \to |I|$ as $\delta \to 0^+$. Hence $m^*(J) = |I|$.
 
 ^pf-9-2
 
-*Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]]
+*Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|§9.1]]
 
 ![[m551-9-3.svg]]
 *The two halves of Proposition §9.2. Left (upper bound): a single open rectangle $I_\epsilon$ (dashed red), enlarged by $\epsilon$ on every side, already covers $\bar I$, and $|I_\epsilon| \to |I|$. Right (lower bound): by Heine–Borel any L-covering of $\bar I$ has a finite subcover $I_{k_1}, \dots, I_{k_m}$ (dashed red); overlaps (darker) are counted more than once, so the total volume can only exceed $|I|$ — the claim whose proof Remark §9.2 omits.*

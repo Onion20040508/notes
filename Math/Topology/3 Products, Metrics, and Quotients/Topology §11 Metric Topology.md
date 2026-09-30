@@ -151,7 +151,7 @@ tags: [topology, math590]
 
 ^pf-11-2
 
-*Uses:* [[Topology §11 Metric Topology#^lem-11-1|§11.1]], [[Topology §2 Basis for a Topology#^lem-2-2|§2.2]]
+*Uses:* [[Topology §11 Metric Topology#^lem-11-1|§11.1]], [[Topology §2 Basis for a Topology#^lem-2-2|§2.2]], [[Topology §4 Product Topology#^thm-4-1|§4.1]]
 
 ![[m590-11-1.svg]]
 *The two inequalities as nested balls in $\mathbb{R}^2$ ($n = 2$): $B_\rho(x, \varepsilon/\sqrt2) \subseteq B_d(x, \varepsilon) \subseteq B_\rho(x, \varepsilon)$, a square (red) inside the disc (blue) inside a square (red). Every ball of one metric contains a ball of the other around the same center, which is exactly what [[Topology §11 Metric Topology#^lem-11-1|Lemma §11.1]] needs in both directions.*
@@ -230,6 +230,8 @@ tags: [topology, math590]
 
 ^cor-11-5
 
+*Uses:* [[Topology §11 Metric Topology#^thm-11-4|§11.4]]
+
 > [!theorem] Theorem §11.6: Subspace of Metric Space
 > If $A$ is a subset of a metric space $(X, d)$, then the [[Topology §5 Subspace Topology#^def-5-1|subspace topology]] on $A$ equals the metric topology induced by $d|_{A \times A}$.
 
@@ -247,6 +249,8 @@ tags: [topology, math590]
 > $(\supseteq)$ Let $U \cap A$ be a subspace-open set, where $U$ is open in $X$. For any $x \in U \cap A$, there exists $\varepsilon > 0$ such that $B_d(x, \varepsilon) \subseteq U$. Then $B_{d|_A}(x, \varepsilon) = B_d(x, \varepsilon) \cap A \subseteq U \cap A$. So $U \cap A$ is open in the metric topology.
 
 ^pf-11-6
+
+*Uses:* [[Topology §5 Subspace Topology#^def-5-1|Def. §5.1]]
 
 > [!remark] Remark: Comparison: Subspace Topology Equals...
 > Two important cases where the subspace topology coincides with another natural topology:
@@ -324,7 +328,7 @@ tags: [topology, math590]
 
 ^pf-11-8
 
-*Uses:* [[Closure Characterization|§7.3]], [[Topology §7 Interior and Closure#^thm-7-4|§7.4]]
+*Uses:* [[Topology §7 Interior and Closure#^thm-7-3|§7.3]], [[Topology §7 Interior and Closure#^thm-7-4|§7.4]]
 
 > [!remark]- Connections
 > - MATH 451 version: [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^prop-13-6|Proposition §13.6: Sequential Characterization of the Closure]].
@@ -351,7 +355,7 @@ tags: [topology, math590]
 
 ^pf-11-9
 
-*Uses:* [[Equivalent Conditions for Continuity|§9.1]], [[Topology §11 Metric Topology#^lem-11-8|§11.8]]
+*Uses:* [[Topology §9 Continuous Functions#^thm-9-1|§9.1]], [[Topology §11 Metric Topology#^lem-11-8|§11.8]]
 
 > [!remark]- Connections
 > - MATH 451 takes the sequential condition as the definition: [[Single Variable Analysis §17 Continuous Functions#^def-17-1|Definition §17.1: Continuity at a Point — Sequential Definition]].

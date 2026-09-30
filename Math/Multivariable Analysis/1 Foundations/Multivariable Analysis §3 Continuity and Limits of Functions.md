@@ -27,7 +27,7 @@ tags: [multivariable-analysis, math452]
 > Consider
 >
 > $$
-> f(x, y) = \begin{cases} \dfrac{2xy}{x^2 + y} & (x, y) \neq (0,0) \\[6pt] 0 & (x, y) = (0, 0). \end{cases}
+> f(x, y) = \begin{cases} \dfrac{2xy}{x^2 + y^2} & (x, y) \neq (0,0) \\[6pt] 0 & (x, y) = (0, 0). \end{cases}
 > $$
 >
 > **Claim:** $f$ is not continuous at $(0, 0)$.

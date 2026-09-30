@@ -189,6 +189,8 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 > $$
 >
 > Similarly for $\{f = -\infty\}$.
+>
+> **Conversely, each of (2)–(4) implies (1):** (3) gives (1) since $\{f > c\} = E \setminus \{f \leq c\}$; (2) gives (4) since $\{f \geq c\} = E \setminus \{f < c\}$; and (4) gives (1) since $\{f > c\} = \bigcup_{k=1}^{\infty} \{f \geq c + \frac{1}{k}\}$. So (1)–(4) are equivalent, and any one of them can serve as the definition.
 
 ^pf-12-2
 
@@ -413,14 +415,14 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 > \begin{aligned}
 > \{x \in E_0 : 1/f(x) > c\} &= \bigl(\{f > 0\} \cap \{1/f > c\}\bigr) \cup \bigl(\{f < 0\} \cap \{1/f > c\}\bigr) \\
 > &= \begin{cases}
-> \{f > 0\} \cap \{f < 1/c\} \cup \{f < 0\} & \text{if } c > 0, \\
-> \{f > 0\} \cup \bigl(\{f < 0\} \cap \{f < 1/c\}\bigr) & \text{if } c < 0, \\
-> \{f > 0\} \cup \{f < 0\} = E_0 & \text{if } c = 0.
+> \{f > 0\} \cap \{f < 1/c\} & \text{if } c > 0, \\
+> \{f > 0\} \cup \bigl(\{f < 0\} \cap \{f < 1/c\}\bigr) = \{f > 0\} \cup \{f < 1/c\} & \text{if } c < 0, \\
+> \{f > 0\} & \text{if } c = 0.
 > \end{cases}
 > \end{aligned}
 > $$
 >
-> (When $f > 0$: $1/f > c > 0$ iff $f < 1/c$. When $f < 0$: $1/f < 0$, so $1/f > c$ is automatic if $c \leq 0$, and $1/f > c > 0$ is impossible. The case $c < 0$ is similar with reversed inequalities.)
+> (When $f > 0$: $1/f > c > 0$ iff $f < 1/c$, and $1/f > c$ is automatic if $c \leq 0$. When $f < 0$: $1/f < 0$, so $1/f > c$ is impossible if $c \geq 0$, while for $c < 0$ it holds iff $f < 1/c$, by multiplying by $f < 0$ and then dividing by $c < 0$.)
 >
 > In every case, the resulting set is a union/intersection of measurable sets $\{f > \alpha\}$, $\{f < \beta\}$, hence measurable. Since $\{g > c\}$ is measurable for all $c$, $g$ is measurable on $E$.
 
@@ -485,11 +487,20 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 >
 > Both cases give measurable sets. Similarly for $f^- = (-f)^+$.
 >
-> $(\Leftarrow)$ If $f^+$ and $f^-$ are measurable, then $f = f^+ - f^-$ is measurable by the [[Measure Theory §12 Measurable Functions#^thm-12-3|arithmetic theorem]].
+> $(\Leftarrow)$ If $f^+$ and $f^-$ are measurable, then $f = f^+ - f^-$ is measurable. Here $f^+$ and $f^-$ are never both nonzero, so no $\infty - \infty$ occurs, but they may take the value $+\infty$, so instead of the [[Measure Theory §12 Measurable Functions#^thm-12-3|arithmetic theorem]] (stated for real-valued functions) we argue directly: for $c \in \mathbb{R}$,
+>
+> $$
+> \{x \in E \mid f(x) > c\} = \begin{cases}
+> \{x \in E \mid f^+(x) > c\} & \text{if } c \geq 0 \\
+> \{x \in E \mid f^-(x) < -c\} & \text{if } c < 0
+> \end{cases}
+> $$
+>
+> and both sets are measurable ([[Measure Theory §12 Measurable Functions#^prop-12-2|Prop. §12.2]]).
 
 ^pf-12-11
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §12 Measurable Functions#^prop-12-10|§12.10]], [[Measure Theory §12 Measurable Functions#^thm-12-3|§12.3]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §12 Measurable Functions#^prop-12-10|§12.10]], [[Measure Theory §12 Measurable Functions#^prop-12-2|§12.2]]
 
 > [!remark]- Connections
 > - The splitting $f = f^+ - f^-$ is how the general integral is defined: [[Measure Theory §15 The General Lebesgue Integral#^def-15-1|Def. §15.1]].

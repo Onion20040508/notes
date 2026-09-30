@@ -285,16 +285,16 @@ $$
 > \frac{\partial g}{\partial x}(x_0, y_0) = \lim_{h \to 0} \frac{\partial_1}{h} = f_\xi(\varphi(x_0,y_0), \psi(x_0,y_0)) \cdot \varphi_x(x_0, y_0) + f_\eta(\varphi(x_0,y_0), \psi(x_0,y_0)) \cdot \psi_x(x_0, y_0).
 > $$
 >
-> The proof for $\partial g / \partial y$ is parallel.
+> Similarly (fixing $x = x_0$ and varying $y$) we obtain the formula for $\partial g / \partial y$. Finally, $g$ is differentiable at $(x_0, y_0)$: the hypotheses hold at every point near $(x_0, y_0)$ (since $\varphi, \psi$ are continuous), so both formulas hold near $(x_0, y_0)$, and they express $g_x, g_y$ as sums of products of compositions of continuous functions ([[Multivariable Analysis §3 Continuity and Limits of Functions#^thm-3-1|Theorem §3.1]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^thm-3-2|Theorem §3.2]], [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-1|Theorem §10.1]]). Hence $g_x, g_y$ are continuous near $(x_0, y_0)$, and $g$ is differentiable there by [[Multivariable Analysis §6 Differentiability#^thm-6-2|Theorem §6.2]].
 
 ^pf-10-2
 
-*Uses:* [[Mean Value Theorem|451 §29.3]], [[Multivariable Analysis §4 Partial Derivatives#^def-4-1|Def. §4.1]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]]
+*Uses:* [[Mean Value Theorem|451 §29.3]], [[Multivariable Analysis §4 Partial Derivatives#^def-4-1|Def. §4.1]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^thm-3-1|Thm. §3.1]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^thm-3-2|Thm. §3.2]], [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-1|Thm. §10.1]], [[Multivariable Analysis §6 Differentiability#^thm-6-2|Thm. §6.2]]
 
 > [!remark] Remark: Warning: Differentiability of Composition
 > **Question:** If $f$ is differentiable and $\varphi, \psi$ are differentiable, is the composition $g = f \circ (\varphi, \psi)$ necessarily differentiable?
 >
-> **Answer:** Not automatically! [[Multivariable Chain Rule|The theorem]] requires **continuity of the partial derivatives**, not just their existence. Without this, the composition may fail to be differentiable even if all component functions are.
+> **Answer:** Yes — this is [[Multivariable Analysis §6 Differentiability#^thm-6-9|Theorem §6.9]]. The **continuity of the partial derivatives** assumed in [[Multivariable Chain Rule|the theorem above]] is only a sufficient condition used by its mean-value proof; it is not needed for the conclusion. (Mere existence of the partials, however, is not enough: then $f, \varphi, \psi$ need not be differentiable at all.)
 
 ^rem-10-5
 
