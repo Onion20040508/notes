@@ -1,0 +1,28 @@
+% Figure from MATH 493 notes, section 5.
+\begin{tikzpicture}[x=0.8cm, y=0.8cm]
+  % axes
+  \draw[black!35, -{Stealth[length=4pt]}] (-3.6,0) -- (3.8,0) node[right, font=\scriptsize, black!70] {$x$};
+  \draw[black!35, -{Stealth[length=4pt]}] (0,-3.6) -- (0,3.8) node[above, font=\scriptsize, black!70] {$y$};
+  % lattice points of Z^2: filled if x = y (mod 2), hollow otherwise
+  \foreach \x in {-3,...,3} {
+    \foreach \y in {-3,...,3} {
+      \pgfmathtruncatemacro{\s}{mod(abs(\x+\y),2)}
+      \ifnum\s=0
+        \fill[figB] (\x,\y) circle (2.6pt);
+      \else
+        \draw[black!45, fill=white, thin] (\x,\y) circle (2.2pt);
+      \fi
+    }
+  }
+  % generators (1,1) and (1,-1)
+  \draw[figR, very thick, -{Stealth[length=5pt]}, shorten >=2.6pt] (0,0) -- (1,1);
+  \draw[figR, very thick, -{Stealth[length=5pt]}, shorten >=2.6pt] (0,0) -- (1,-1);
+  \node[font=\scriptsize, figR, inner sep=1pt] at (1.5,1.5) {$(1,1)$};
+  \node[font=\scriptsize, figR, inner sep=1pt] at (1.5,-1.5) {$(1,-1)$};
+  \node[font=\scriptsize, anchor=north east, inner sep=1.5pt] at (-0.05,-0.08) {$0$};
+  % legend
+  \fill[figB] (-2.2,-4.3) circle (2.6pt);
+  \node[font=\scriptsize, anchor=west] at (-1.95,-4.3) {$x \equiv y \pmod 2$: the subgroup, index $2$};
+  \draw[black!45, fill=white, thin] (-2.2,-4.9) circle (2.2pt);
+  \node[font=\scriptsize, anchor=west] at (-1.95,-4.9) {$x \not\equiv y \pmod 2$: not in the subgroup};
+\end{tikzpicture}

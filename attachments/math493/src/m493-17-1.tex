@@ -1,0 +1,24 @@
+% Figure from MATH 493 notes, section 17.
+\begin{tikzpicture}[
+    sg/.style={draw=figB, fill=figB!12, rounded corners=2pt, inner sep=3pt, font=\small},
+    inc/.style={thick, gray!75}]
+  % levels by order: 12, 6, 4, 3, 2, 1
+  \foreach \y/\o in {5/12, 4/6, 3/4, 2/3, 1/2, 0/1} {
+    \draw[gray!35, dashed] (3.0,\y*0.95) -- (3.7,\y*0.95);
+    \node[font=\small, anchor=west] at (3.75,\y*0.95) {$\o$};
+  }
+  \node[font=\scriptsize, anchor=west, gray!40!black] at (3.55,5*0.95+0.5) {order};
+  \node[sg] (G)  at (1.0, 5*0.95) {$\langle [1] \rangle = \mathbb{Z}/12\mathbb{Z}$};
+  \node[sg] (S6) at (0,   4*0.95) {$\langle [2] \rangle$};
+  \node[sg] (S4) at (2.0, 3*0.95) {$\langle [3] \rangle$};
+  \node[sg] (S3) at (0,   2*0.95) {$\langle [4] \rangle$};
+  \node[sg] (S2) at (2.0, 1*0.95) {$\langle [6] \rangle$};
+  \node[sg] (E)  at (1.0, 0)      {$\{[0]\}$};
+  \draw[inc] (G) -- (S6);
+  \draw[inc] (G) -- (S4);
+  \draw[inc] (S6) -- (S3);
+  \draw[inc] (S6) -- (S2);
+  \draw[inc] (S4) -- (S2);
+  \draw[inc] (S3) -- (E);
+  \draw[inc] (S2) -- (E);
+\end{tikzpicture}

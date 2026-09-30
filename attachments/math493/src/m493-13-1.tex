@@ -1,0 +1,24 @@
+% Figure from MATH 493 notes, section 13.
+\begin{tikzpicture}[
+    sg/.style={draw, thick, rounded corners=3pt, inner sep=4pt, minimum height=18pt, fill=white},
+    nsg/.style={sg, draw=figB, fill=figB!15},
+    inc/.style={thick, black!60}]
+  % order guide
+  \foreach \y/\o in {0/1, 1.7/2, 2.8/3, 4.6/6} {
+    \draw[black!15, dashed] (-4.3,\y) -- (4.1,\y);
+    \node[font=\scriptsize, black!55, anchor=east] at (-4.35,\y) {$\o$};
+  }
+  \node[font=\scriptsize, black!55, anchor=east] at (-4.35,5.35) {order};
+  % subgroups
+  \node[nsg] (S)  at (0,4.6)    {$S_3$};
+  \node[nsg] (A)  at (2.7,2.8)  {$\langle (1\,2\,3) \rangle$};
+  \node[sg]  (t1) at (-3.0,1.7) {$\langle (1\,2) \rangle$};
+  \node[sg]  (t2) at (-1.25,1.7){$\langle (1\,3) \rangle$};
+  \node[sg]  (t3) at (0.5,1.7)  {$\langle (2\,3) \rangle$};
+  \node[nsg] (E)  at (0,0)      {$\{e\}$};
+  % inclusions
+  \foreach \h in {A,t1,t2,t3} {
+    \draw[inc] (S) -- (\h);
+    \draw[inc] (\h) -- (E);
+  }
+\end{tikzpicture}

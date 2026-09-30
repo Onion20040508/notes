@@ -1,0 +1,31 @@
+% Figure from MATH 493 notes, section 11.
+\begin{tikzpicture}[
+    pt/.style={circle, draw, thick, minimum size=17pt, inner sep=0pt, fill=white},
+    arr/.style={-{Stealth[length=5.5pt]}, thick}]
+  % the 3-cycle (1 5 4), clockwise-reading loop 1 -> 5 -> 4 -> 1
+  \begin{scope}[figB]
+    \node[pt] (a1) at (90:1.15)  {$1$};
+    \node[pt] (a5) at (-30:1.15) {$5$};
+    \node[pt] (a4) at (210:1.15) {$4$};
+    \draw[arr] (a1) to[bend left=28] (a5);
+    \draw[arr] (a5) to[bend left=28] (a4);
+    \draw[arr] (a4) to[bend left=28] (a1);
+    \node[font=\small] at (0,-1.35) {$(1\,5\,4)$};
+  \end{scope}
+  % the fixed point 2 (a 1-cycle)
+  \begin{scope}[xshift=3.1cm, black!70]
+    \node[pt] (b2) at (0,0) {$2$};
+    \draw[arr] (b2.55) to[out=55, in=125, looseness=5.5] (b2.125);
+    \node[font=\small] at (0,-1.35) {$(2)$};
+  \end{scope}
+  % the 3-cycle (3 7 6)
+  \begin{scope}[xshift=6.2cm, figR]
+    \node[pt] (c3) at (90:1.15)  {$3$};
+    \node[pt] (c7) at (-30:1.15) {$7$};
+    \node[pt] (c6) at (210:1.15) {$6$};
+    \draw[arr] (c3) to[bend left=28] (c7);
+    \draw[arr] (c7) to[bend left=28] (c6);
+    \draw[arr] (c6) to[bend left=28] (c3);
+    \node[font=\small] at (0,-1.35) {$(3\,7\,6)$};
+  \end{scope}
+\end{tikzpicture}
