@@ -8,14 +8,14 @@ aliases: ["LADR 3.116"]
 tags: [linear-algebra, ladr/3F]
 ---
 > [!theorem] 3.116 Dual basis is a basis of the dual space
-> *Write the statement in your own words.* (LADR p. 107)
+> If $V$ is finite-dimensional, the dual basis of a basis of $V$ is a basis of $V'$.
 
 > [!proof]-
-> Proof idea.
+> If $a_1\varphi_1+\dots+a_n\varphi_n=0$, evaluating at $v_k$ gives $a_k=0$; so the list is linearly independent. Its length is $n=\dim V'$ ([[Dim V′ = dim V]]), so it is a basis by [[Linearly independent list of the right length is a basis]].
 
-## Uses (cited in Axler's proof)
+## Uses (in the proof)
 - [[Dim V′ = dim V]] (3.111)
 - [[Linearly independent list of the right length is a basis]] (2.38)
 
 ## Connections
-- 
+- Matrix of a dual map in dual bases: [[Matrix of T (LADR 3.132)]].

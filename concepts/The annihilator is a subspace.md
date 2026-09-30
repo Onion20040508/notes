@@ -8,14 +8,13 @@ aliases: ["LADR 3.124"]
 tags: [linear-algebra, ladr/3F]
 ---
 > [!theorem] 3.124 The annihilator is a subspace
-> *Write the statement in your own words.* (LADR p. 110)
+> For any $U\subseteq V$, $U^0$ is a subspace of $V'$.
 
 > [!proof]-
-> Proof idea.
+> The zero functional kills everything, so $0\in U^0$. If $\varphi,\psi\in U^0$ and $u\in U$, then $(\varphi+\psi)(u)=0+0=0$ and $(\lambda\varphi)(u)=\lambda\cdot0=0$. Conclude by [[Conditions for a subspace]].
 
-## Uses (cited in Axler's proof)
+## Uses (in the proof)
 - [[Conditions for a subspace]] (1.34)
-- 3.123 the annihilator of a two-dimensional subspace of R⁵ (example, p. 109)
 
 ## Connections
-- 
+- Dimension: [[Dimension of the annihilator]].

@@ -8,7 +8,13 @@ aliases: ["LADR 3.121"]
 tags: [linear-algebra, ladr/3F]
 ---
 > [!definition] 3.121 Annihilator, U0
-> *Write the statement in your own words.* (LADR p. 109)
+> For a subset $U\subseteq V$, the *annihilator* of $U$ is
+> $$
+> U^0=\{\varphi\in V' : \varphi(u)=0\text{ for all }u\in U\}.
+> $$
+
+> [!remark] Lives in the dual
+> $U^0\subseteq V'$, not in $V$. It is the dual-space stand-in for an orthogonal complement ([[Orthogonal complement, U⟂]]).
 
 ## Connections
-- 
+- A subspace: [[The annihilator is a subspace]]. Dimension: [[Dimension of the annihilator]].

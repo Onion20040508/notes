@@ -8,13 +8,13 @@ aliases: ["LADR 5.31"]
 tags: [linear-algebra, ladr/5B]
 ---
 > [!theorem] 5.31 Minimal polynomial of a restriction operator
-> *Write the statement in your own words.* (LADR p. 148)
+> If $V$ is finite-dimensional, $T\in\Lin(V)$, and $U$ is invariant under $T$, then the minimal polynomial of $T$ is a polynomial multiple of the minimal polynomial of $T|_U$.
 
 > [!proof]-
-> Proof idea.
+> Let $p$ be the minimal polynomial of $T$. Then $p(T)u=0$ for all $u\in U$, i.e. $p(T|_U)=0$. Apply [[Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]] to $T|_U$.
 
-## Uses (cited in Axler's proof)
+## Uses (in the proof)
 - [[Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]] (5.29)
 
 ## Connections
-- 
+- Used in the diagonalizability of restrictions: [[Restriction of diagonalizable operator to invariant subspace]].

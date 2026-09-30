@@ -8,7 +8,7 @@ aliases: ["LADR 4.5"]
 tags: [linear-algebra, ladr/4]
 ---
 > [!definition] 4.5 Zero of a polynomial
-> *Write the statement in your own words.* (LADR p. 122)
+> $\lambda\in\F$ is a *zero* (or *root*) of $p\in\Poly(\F)$ if $p(\lambda)=0$.
 
 ## Connections
-- 
+- Zeros correspond to linear factors: [[Each zero of a polynomial corresponds to a degree-one factor]]. How many: [[Degree m implies at most m zeros]]. Zeros of the minimal polynomial are eigenvalues: [[Eigenvalues are the zeros of the minimal polynomial]].

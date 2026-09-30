@@ -8,7 +8,7 @@ aliases: ["LADR 3.110"]
 tags: [linear-algebra, ladr/3F]
 ---
 > [!definition] 3.110 Dual space, V′
-> *Write the statement in your own words.* (LADR p. 105)
+> The *dual space* of $V$ is $V'=\Lin(V,\F)$, the vector space of linear functionals on $V$.
 
 ## Connections
-- 
+- Dimension: [[Dim V′ = dim V]]. Basis: [[Dual basis]], [[Dual basis is a basis of the dual space]]. Maps induce dual maps: [[Dual map, T′]].

@@ -8,13 +8,13 @@ aliases: ["LADR 5.18"]
 tags: [linear-algebra, ladr/5A]
 ---
 > [!theorem] 5.18 Null space and range of p(T) are invariant under T
-> *Write the statement in your own words.* (LADR p. 139)
+> For $T\in\Lin(V)$ and $p\in\Poly(\F)$, the subspaces $\nullsp p(T)$ and $\range p(T)$ are invariant under $T$.
 
 > [!proof]-
-> Proof idea.
+> If $p(T)u=0$ then $p(T)(Tu)=T(p(T)u)=T0=0$ (since $T$ commutes with $p(T)$, [[Multiplicative properties]]). If $u=p(T)v$ then $Tu=p(T)(Tv)\in\range p(T)$.
 
-## Uses (cited in Axler's proof)
-- (no numbered results cited)
+## Uses (in the proof)
+- [[Multiplicative properties]] (5.17)
 
 ## Connections
-- 
+- Produces the invariant subspaces used in [[Existence, uniqueness, and degree of minimal polynomial]], [[Even-dimensional null space]], [[Operators on odd-dimensional vector spaces have eigenvalues]]; eigenspaces and generalized eigenspaces are special cases.

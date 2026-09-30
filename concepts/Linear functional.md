@@ -8,7 +8,11 @@ aliases: ["LADR 3.108"]
 tags: [linear-algebra, ladr/3F]
 ---
 > [!definition] 3.108 Linear functional
-> *Write the statement in your own words.* (LADR p. 105)
+> A *linear functional* on $V$ is a linear map $V\to\F$, i.e. an element of $\Lin(V,\F)$.
+
+> [!remark] Examples
+> $\varphi(x_1,x_2,x_3)=4x_1-5x_2+2x_3$ on $\R^3$; $p\mapsto\int_0^1p$ on $\Poly(\R)$; evaluation $p\mapsto p(3)$.
 
 ## Connections
-- 
+- They form [[Dual space, V′]]. On inner product spaces every functional is $v\mapsto\ip{v}{w}$: [[Riesz representation theorem]].
+- Physics: bras $\langle\psi|$ are linear functionals on kets.
