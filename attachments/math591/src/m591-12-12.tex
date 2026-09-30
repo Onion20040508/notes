@@ -1,0 +1,15 @@
+% Figure from MATH 591 notes, section 12. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.15]
+\draw[gray!40,->] (-0.4,0) -- (3.4,0) node[anchor=north west,font=\footnotesize]{$x$};
+\draw[gray!40,->] (0,-0.4) -- (0,3.0) node[anchor=south east,font=\footnotesize]{$y$};
+\draw[gray!40,dashed] (0,0) -- (35:3.3);
+\draw[gray!40,dashed] (5:2.2) arc (5:85:2.2);
+\draw[gray!55] (0.55,0) arc (0:35:0.55); \node[gray!60!black,font=\scriptsize] at (17:0.8) {$\theta$};
+\fill (35:2.2) circle (1.6pt);
+\node[font=\footnotesize,anchor=north west] at ($(35:2.2)+(0.05,-0.08)$) {$p$};
+\draw[gray!65,->,thick] (35:2.2) -- ++(0.7,0) node[anchor=west,font=\scriptsize]{$\partial_x$};
+\draw[gray!65,->,thick] (35:2.2) -- ++(0,0.7) node[anchor=south,font=\scriptsize]{$\partial_y$};
+\draw[violet!75!black,->,very thick] (35:2.2) -- ++(35:0.7) node[anchor=south west,font=\footnotesize]{$\partial_r$};
+\draw[orange!85!black,->,very thick] (35:2.2) -- ++(125:1.54) node[anchor=south east,font=\footnotesize]{$\partial_\theta$};
+\node[font=\footnotesize,align=left,anchor=west] at (3.6,1.6) {same abstract $T_pM$, two bases:\\[2pt] $\partial_r$ has length $1$,\\ $\partial_\theta$ has length $r$};
+\end{tikzpicture}
