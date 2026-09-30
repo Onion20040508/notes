@@ -1,0 +1,22 @@
+% Figure from MATH 551 notes, section 19. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.66\textwidth, height=0.46\textwidth, clip=false,
+  axis x line=middle, xmin=0, xmax=4.2, ymin=-1.0, ymax=1.65,
+  xtick={0.6,3.4}, xticklabels={$a$,$b$}, ytick=\empty, xlabel={}]
+  \addplot[figB, very thick, domain=0.37:4.0, samples=120] {ln(x)};
+  \addplot[figR, thick] coordinates {(0.6,-0.5108) (3.4,1.2238)};
+  \draw[black!35, densely dotted] (axis cs:0.6,0) -- (axis cs:0.6,-0.5108);
+  \draw[black!35, densely dotted] (axis cs:3.4,0) -- (axis cs:3.4,1.2238);
+  \draw[black!35, densely dotted] (axis cs:2.4200,-0.36) -- (axis cs:2.4200,0.8838);
+  \draw[black!35, densely dotted] (axis cs:1.8527,-0.06) -- (axis cs:1.8527,0.6167);
+  \draw[figR!70, densely dashed] (axis cs:1.8527,0.6167) -- (axis cs:2.4200,0.6167);
+  \addplot[only marks, mark=*, mark size=1.4pt, figR] coordinates {(2.4200,0.6167)};
+  \addplot[only marks, mark=*, mark size=1.4pt, figB] coordinates {(2.4200,0.8838) (1.8527,0.6167)};
+  \addplot[only marks, mark=*, mark size=1.2pt, black] coordinates {(0.6,-0.5108) (3.4,1.2238)};
+  \node[font=\scriptsize, anchor=north] at (axis cs:1.8527,-0.06) {$a^\theta b^{1-\theta}$};
+  \node[font=\scriptsize, anchor=north] at (axis cs:2.42,-0.36) {$\theta a + (1{-}\theta) b$};
+  \node[font=\small, figB, anchor=west] at (axis cs:4.0,1.386) {$\ln$};
+  \node[font=\scriptsize, figR, anchor=north west] at (axis cs:2.4200,0.5967) {$\theta \ln a + (1{-}\theta)\ln b$};
+  \node[font=\scriptsize, figB, anchor=south east] at (axis cs:2.4200,0.9038) {$\ln(\theta a + (1{-}\theta) b)$};
+\end{axis}
+\end{tikzpicture}

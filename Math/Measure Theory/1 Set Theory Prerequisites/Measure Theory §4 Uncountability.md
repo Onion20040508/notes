@@ -66,6 +66,9 @@ tags: [measure-theory, math551]
 
 *Uses:* [[Measure Theory §1 Countability and Set Theory#^def-1-1|Def. §1.1]], [[Measure Theory §1 Countability and Set Theory#^def-1-4|Def. §1.4]]
 
+![[m551-4-1.svg]]
+*Cantor's diagonal argument on the first five sequences of a proposed list. The diagonal digits $a_n^{(n)}$ (red boxes) are flipped to build $x = (b_n)$ (blue): $x$ differs from $(x)_1$ in position $1$, from $(x)_2$ in position $2$, and so on, so $x$ is missing from the list no matter how the list was chosen.*
+
 > [!remark]- Connections
 > - Topology: the same set $\{0,1\}^\omega$ is an uncountable discrete subspace of $\mathbb{R}^\omega$ with the uniform metric, which is therefore not second-countable ([[Topology §18 Countability Axioms#^ex-18-6|590 Ex. §18.6]]).
 
@@ -92,6 +95,9 @@ tags: [measure-theory, math551]
 > The representation is not unique. For example, $\frac{1}{2} = 0.1000\ldots = 0.0111\ldots$.
 
 ^rem-4-2
+
+![[m551-4-2.svg]]
+*Binary digits as successive halvings: $a_k$ records whether $x$ lies in the left ($0$) or right ($1$) half of the current dyadic interval, and the blue intervals shrink to $x = 0.7 = 0.1011\ldots$. A dyadic rational such as $\tfrac12$ (red) is an endpoint shared by two halves, so it has two expansions, $0.1000\ldots$ and $0.0111\ldots$ — the reason the countable set $Y$ is set aside in the proof.*
 
 > [!proof]+ Proof (continued)
 > The set $\{\frac{k}{2^n} \mid n \in \mathbb{N}\}$ of dyadic rationals is countable (it's a [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|countable union of finite sets]]).

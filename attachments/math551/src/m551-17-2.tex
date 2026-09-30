@@ -1,0 +1,45 @@
+% Figure from MATH 551 notes, section 17. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.66\textwidth, height=0.52\textwidth, clip=false,
+  xmin=0, xmax=1.12, ymin=0, ymax=1.8,
+  xtick=\empty, ytick={0.75,1.0}, yticklabels={$k\delta$,$(k{+}1)\delta$}, xlabel={}]
+  \draw[black!30, densely dotted] (axis cs:0,0.25) -- (axis cs:1.02,0.25);
+  \draw[black!30, densely dotted] (axis cs:0,0.5) -- (axis cs:1.02,0.5);
+  \draw[black!30, densely dotted] (axis cs:0,0.75) -- (axis cs:1.02,0.75);
+  \draw[black!30, densely dotted] (axis cs:0,1.0) -- (axis cs:1.02,1.0);
+  \draw[black!30, densely dotted] (axis cs:0,1.25) -- (axis cs:1.02,1.25);
+  \draw[black!30, densely dotted] (axis cs:0,1.5) -- (axis cs:1.02,1.5);
+  \fill[figB!8] (axis cs:0.4470,0.25) rectangle (axis cs:0.5569,0.5);
+  \fill[figB!8] (axis cs:0.0000,0.5) rectangle (axis cs:0.0015,0.75);
+  \fill[figB!8] (axis cs:0.3464,0.5) rectangle (axis cs:0.4470,0.75);
+  \fill[figB!8] (axis cs:0.5569,0.5) rectangle (axis cs:0.6475,0.75);
+  \fill[figB!25] (axis cs:0.0015,0.75) rectangle (axis cs:0.0766,1.0);
+  \fill[figB!25] (axis cs:0.2591,0.75) rectangle (axis cs:0.3464,1.0);
+  \fill[figB!25] (axis cs:0.6475,0.75) rectangle (axis cs:0.7108,1.0);
+  \fill[figB!8] (axis cs:0.0766,1.0) rectangle (axis cs:0.2591,1.25);
+  \fill[figB!8] (axis cs:0.7108,1.0) rectangle (axis cs:0.7762,1.25);
+  \fill[figB!8] (axis cs:0.7762,1.25) rectangle (axis cs:1.0000,1.5);
+  \draw[figB!55, thin] (axis cs:0.4470,0.25) rectangle (axis cs:0.5569,0.5);
+  \draw[figB!55, thin] (axis cs:0.0000,0.5) rectangle (axis cs:0.0015,0.75);
+  \draw[figB!55, thin] (axis cs:0.3464,0.5) rectangle (axis cs:0.4470,0.75);
+  \draw[figB!55, thin] (axis cs:0.5569,0.5) rectangle (axis cs:0.6475,0.75);
+  \draw[figB, thick] (axis cs:0.0015,0.75) rectangle (axis cs:0.0766,1.0);
+  \draw[figB, thick] (axis cs:0.2591,0.75) rectangle (axis cs:0.3464,1.0);
+  \draw[figB, thick] (axis cs:0.6475,0.75) rectangle (axis cs:0.7108,1.0);
+  \draw[figB!55, thin] (axis cs:0.0766,1.0) rectangle (axis cs:0.2591,1.25);
+  \draw[figB!55, thin] (axis cs:0.7108,1.0) rectangle (axis cs:0.7762,1.25);
+  \draw[figB!55, thin] (axis cs:0.7762,1.25) rectangle (axis cs:1.0000,1.5);
+  \draw[figB, line width=2.2pt] (axis cs:0.0015,0) -- (axis cs:0.0766,0);
+  \draw[figB!50, densely dotted] (axis cs:0.0015,0) -- (axis cs:0.0015,0.75);
+  \draw[figB!50, densely dotted] (axis cs:0.0766,0) -- (axis cs:0.0766,0.75);
+  \draw[figB, line width=2.2pt] (axis cs:0.2591,0) -- (axis cs:0.3464,0);
+  \draw[figB!50, densely dotted] (axis cs:0.2591,0) -- (axis cs:0.2591,0.75);
+  \draw[figB!50, densely dotted] (axis cs:0.3464,0) -- (axis cs:0.3464,0.75);
+  \draw[figB, line width=2.2pt] (axis cs:0.6475,0) -- (axis cs:0.7108,0);
+  \draw[figB!50, densely dotted] (axis cs:0.6475,0) -- (axis cs:0.6475,0.75);
+  \draw[figB!50, densely dotted] (axis cs:0.7108,0) -- (axis cs:0.7108,0.75);
+  \addplot[figR, very thick, domain=0:1, samples=250] {0.62+0.5*x+0.42*sin(deg(8.5*x+0.3))};
+  \node[font=\small, figR, anchor=west] at (axis cs:1.01,1.366) {$G_E(f)$};
+  \node[font=\scriptsize, figB!80!black, anchor=north] at (axis cs:0.5,-0.03) {$E_k = \{k\delta \leq f \leq (k{+}1)\delta\}$};
+\end{axis}
+\end{tikzpicture}

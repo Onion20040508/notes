@@ -26,6 +26,9 @@ The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^de
 
 ^def-10-1
 
+![[m551-10-1.svg]]
+*The Carathéodory criterion: a test set $T$ (black outline) is cut by $E$ (blue) into $T \cap E$ (dark blue) and $T \cap E^c$ (red). $E$ is measurable when, for every such $T$, the outer measures of the two pieces add up exactly to $m^*(T)$; the inequality $\leq$ is automatic by subadditivity (Remark §10.1).*
+
 > [!remark] Remark
 > By [[Properties of Lebesgue Outer Measure|subadditivity]], $m^*(T) \leq m^*(T \cap E) + m^*(T \cap E^c)$ always holds.
 >
@@ -143,6 +146,9 @@ The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^de
 ^pf-10-1
 
 *Uses:* [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-1|Def. §10.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^rem-10-1|Rem. §10.1]]
+
+![[m551-10-2.svg]]
+*The proof of Theorem §10.1 (2): first split $T$ by $E_1$ (blue versus the rest), then split the rest $T \cap E_1^c$ by $E_2$ (green versus red). Blue and green together form $T \cap (E_1 \cup E_2)$, red is $T \cap (E_1 \cup E_2)^c$, and both splits are additive because $E_1$ and $E_2$ are measurable.*
 
 ## Algebras and $\sigma$-Algebras
 
@@ -277,6 +283,9 @@ The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^de
 ^pf-10-3
 
 *Uses:* [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|§10.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-1|§10.1]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-1|Def. §10.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^rem-10-1|Rem. §10.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-4|Def. §10.4]]
+
+![[m551-10-3.svg]]
+*Disjointification (Case 2 of Theorem §10.3): $F_1 = E_1$ (blue), $F_2 = E_2 \setminus E_1$ (green), $F_3 = E_3 \setminus (E_1 \cup E_2)$ (orange). Each point of $\bigcup_j E_j$ lands in exactly one $F_k$ — the one for the first $E_k$ containing it — so the $F_k$ are disjoint with the same union, and Case 1 applies.*
 
 > [!remark]- Connections
 > - The same argument, for an arbitrary outer measure: [[Carathéodory's Theorem|Carathéodory's Theorem]] (§11.2).

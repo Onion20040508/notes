@@ -1,0 +1,40 @@
+% Figure from MATH 551 notes, section 18. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.48\textwidth, clip=false,
+  xmin=0, xmax=1.08, ymin=0, ymax=1.15,
+  xtick={0.02,0.25,0.55,0.8,1}, xticklabels={$a$,$x_1$,$x_2$,$x_3$,$b$},
+  ytick=\empty, xlabel={}]
+  % guides from the one-sided limits to the y-axis
+  \draw[black!35, densely dotted] (axis cs:0,0.25) -- (axis cs:0.25,0.25);
+  \draw[black!35, densely dotted] (axis cs:0,0.45) -- (axis cs:0.25,0.45);
+  \draw[black!35, densely dotted] (axis cs:0,0.60) -- (axis cs:0.55,0.60);
+  \draw[black!35, densely dotted] (axis cs:0,0.80) -- (axis cs:0.55,0.80);
+  \draw[black!35, densely dotted] (axis cs:0,0.875) -- (axis cs:0.8,0.875);
+  \draw[black!35, densely dotted] (axis cs:0,0.95) -- (axis cs:0.8,0.95);
+  \draw[black!35, densely dotted] (axis cs:0,0.112) -- (axis cs:0.02,0.112);
+  \draw[black!35, densely dotted] (axis cs:0,1.03) -- (axis cs:1,1.03);
+  \draw[black!35, densely dotted] (axis cs:0.25,0) -- (axis cs:0.25,0.25);
+  \draw[black!35, densely dotted] (axis cs:0.55,0) -- (axis cs:0.55,0.60);
+  \draw[black!35, densely dotted] (axis cs:0.8,0) -- (axis cs:0.8,0.875);
+  % the jumps on the y-axis
+  \draw[figR, line width=2.4pt] (axis cs:0,0.25) -- (axis cs:0,0.45);
+  \draw[figR, line width=2.4pt] (axis cs:0,0.60) -- (axis cs:0,0.80);
+  \draw[figR, line width=2.4pt] (axis cs:0,0.875) -- (axis cs:0,0.95);
+  \draw[figR!70, thin] (axis cs:0.25,0.25) -- (axis cs:0.25,0.45);
+  \draw[figR!70, thin] (axis cs:0.55,0.60) -- (axis cs:0.55,0.80);
+  \draw[figR!70, thin] (axis cs:0.8,0.875) -- (axis cs:0.8,0.95);
+  % f
+  \draw[figB, very thick] (axis cs:0.02,0.112) -- (axis cs:0.25,0.25);
+  \draw[figB, very thick] (axis cs:0.25,0.45) -- (axis cs:0.55,0.60);
+  \draw[figB, very thick] (axis cs:0.55,0.80) -- (axis cs:0.8,0.875);
+  \draw[figB, very thick] (axis cs:0.8,0.95) -- (axis cs:1,1.03);
+  \addplot[only marks, mark=*, mark size=1.4pt, mark options={fill=white, draw=figB}] coordinates {(0.25,0.25) (0.25,0.45) (0.55,0.80) (0.8,0.875)};
+  \addplot[only marks, mark=*, mark size=1.4pt, figB] coordinates {(0.02,0.112) (0.25,0.35) (0.55,0.60) (0.8,0.95) (1,1.03)};
+  % total rise
+  \draw[decorate, decoration={brace, amplitude=4pt, mirror}, black!60] (axis cs:-0.06,1.03) -- (axis cs:-0.06,0.112) node[midway, left=5pt, font=\scriptsize, black!70] {$f(b) - f(a)$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.28,0.33) {$J(x_1)$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.57,0.70) {$J(x_2)$};
+  \node[font=\scriptsize, figR, anchor=north west] at (axis cs:0.81,0.92) {$J(x_3)$};
+  \node[font=\small, figB, anchor=west] at (axis cs:1.01,1.03) {$f$};
+\end{axis}
+\end{tikzpicture}

@@ -15,6 +15,9 @@ Given a function $f: [a,b] \to \mathbb{R}$, partition $-\infty < y_1 < y_2 < \cd
 
 Then the area under the graph of $f$ is approximately $\sum_j y_j \cdot m(S_j)$, where $m(S_j)$ is the “measure” of $S_j$.
 
+![[m551-9-1.svg]]
+*Riemann versus Lebesgue for the same $f$ on $[a,b]$. Left: Riemann (Darboux) sums cut the $x$-axis into subintervals (blue rectangles). Right: Lebesgue cuts the $y$-axis instead; the band $y_j < y \leq y_{j+1}$ (red) pulls back to $S_j = \{x \in [a,b] \mid y_j < f(x) \leq y_{j+1}\}$, here a union of three intervals (filled endpoint: included, hollow: excluded). Measuring sets like $S_j$ is what the rest of the chapter is for.*
+
 This approach requires us to develop a theory of **measure** for subsets of $\mathbb{R}^n$.
 
 ## Rectangles and Their Volume
@@ -118,6 +121,9 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 *Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-3|Def. §9.3]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Single Variable Analysis §14 Series#^ex-14-4|451 Ex. §14.4]]
 
+![[m551-9-2.svg]]
+*The covering of Example §9.2 for $n = 2$: the $k$-th point $x_k$ (red) gets an open square $I_k$ (dashed) of half-side $\epsilon/2^k$, so the squares shrink geometrically. Their total area is $(2\epsilon)^2 \cdot \tfrac{1}{2^2 - 1}$, which tends to $0$ with $\epsilon$ — however the points are arranged, even densely as with $\mathbb{Q}^2$.*
+
 > [!remark]- Connections
 > - $\mathbb{Q}$ is countable ([[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|Cor. §3.2]]), so it is a null set; the [[Dirichlet and Thomae functions|Dirichlet function]] of [[Measure Theory §8 Motivation꞉ The Riemann Integral#^ex-8-2|Ex. §8.2]] is its indicator on $[0,1]$.
 > - The converse fails: the [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-21|Cantor set]] is uncountable and null.
@@ -211,6 +217,9 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 ^pf-9-2
 
 *Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]]
+
+![[m551-9-3.svg]]
+*The two halves of Proposition §9.2. Left (upper bound): a single open rectangle $I_\epsilon$ (dashed red), enlarged by $\epsilon$ on every side, already covers $\bar I$, and $|I_\epsilon| \to |I|$. Right (lower bound): by Heine–Borel any L-covering of $\bar I$ has a finite subcover $I_{k_1}, \dots, I_{k_m}$ (dashed red); overlaps (darker) are counted more than once, so the total volume can only exceed $|I|$ — the claim whose proof Remark §9.2 omits.*
 
 > [!remark]- Connections
 > - Topology version of the compactness step: [[Heine–Borel Theorem]].

@@ -27,6 +27,9 @@ The proof relies on the following lemma.
 
 ^lem-2-2
 
+![[m551-2-1.svg]]
+*What the lemma produces: cuts $X = A \sqcup A^c$ and $Y = B \sqcup B^c$ such that $f$ carries $A$ onto $B$ (blue) and $g$ carries $B^c$ onto $A^c$ (red). For injective $f$ and $g$ both restrictions are bijections, and the proof below glues them into $F = f$ on $A$, $F = g^{-1}$ on $A^c$ — a bijection $X \to Y$.*
+
 > [!remark] Note: Notation
 > For a subset $A \subseteq X$, we write $A^c = X \setminus A$ for the complement of $A$ in $X$.
 

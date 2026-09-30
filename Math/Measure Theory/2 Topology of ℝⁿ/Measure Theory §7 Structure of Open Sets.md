@@ -96,6 +96,9 @@ tags: [measure-theory, math551]
 
 *Uses:* [[Measure Theory §5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[Measure Theory §7 Structure of Open Sets#^lem-7-2|§7.2]], [[Completeness Axiom|451 Def. §4.4]], [[Characterization of the Supremum|451 §4.3]]
 
+![[m551-7-1.svg]]
+*An open set $O \subseteq \mathbb{R}$ (blue) and its components. For $x \in O$, stretching left and right as far as $O$ allows gives $(a_x, b_x)$; its endpoints are not in $O$ (red, hollow), since otherwise the interval could be stretched further (Step 3). Distinct components are disjoint and each contains a rational $q_j$ — the injection into $\mathbb{Q}$ of Lemma §7.2 that makes the family countable.*
+
 ## Open Sets in $\mathbb{R}^n$
 
 > [!definition] Definition §7.1: Open and Half-Open Rectangles
@@ -112,6 +115,9 @@ tags: [measure-theory, math551]
 > $$
 
 ^def-7-1
+
+![[m551-7-2.svg]]
+*Left: a half-open rectangle in $\mathbb{R}^2$ contains its top and right edges (solid) but not its bottom and left edges (dashed); of the four corners only $(b_1, b_2)$ belongs to it. Right: this is what lets a dyadic square $R^{(k)}_{\mathbf{j}}$ split into $2^n = 4$ children $R^{(k+1)}_{2\mathbf{j}+\boldsymbol{\epsilon}}$ with no overlaps and no gaps (property (b) in the proof of Proposition §7.3) — each shared edge belongs to exactly one child.*
 
 > [!remark]- Connections
 > - Rectangles and their volumes are the building blocks of outer measure: [[Measure Theory §9 Lebesgue Outer Measure#^def-9-1|Definition §9.1]].
@@ -187,6 +193,9 @@ tags: [measure-theory, math551]
 
 *Uses:* [[Measure Theory §5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[Measure Theory §5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[Measure Theory §7 Structure of Open Sets#^def-7-1|Def. §7.1]], [[Countable Union of Countable Sets is Countable|§3.1]]
 
+![[m551-7-3.svg]]
+*The proof of Proposition §7.3 run on an open disc $O$ (dashed boundary), stopped at scale $2^{-4}$: the maximal dyadic squares contained in $O$ (blue, darker = coarser). Large squares fill the interior and ever smaller ones pile up towards the boundary; continuing through all scales, these disjoint squares exhaust $O$ exactly.*
+
 > [!remark]- Connections
 > - MATH 452: the same dyadic grid gives the inner Jordan approximations, $\mathcal{S}_i^-$ = dyadic squares inside $D$ ([[Multivariable Analysis §15 Multivariable Integration#^def-15-3|452 Def. §15.3]]); for an open set they exhaust it.
 > - Topology: open sets are unions of basis elements ([[Topology §2 Basis for a Topology#^lem-2-1|590 Lemma §2.1]]); here the union is countable and disjoint.
@@ -196,6 +205,9 @@ tags: [measure-theory, math551]
 > Using powers of $2$ (dyadic subdivision) is essential for the refinement property. If we instead subdivided using intervals of length $\frac{1}{k}$, the partition lines would shift at each scale: the partition at $k=2$ has lines at $0, 0.5, 1, \ldots$ while $k=3$ has lines at $0, 0.33, 0.67, 1, \ldots$. These do not align, breaking the nesting structure and making it impossible to select a disjoint subcollection. With dyadic subdivision, partition lines at scale $k$ are always a subset of partition lines at scale $k+1$, ensuring the refinement property holds.
 
 ^rem-7-1
+
+![[m551-7-4.svg]]
+*Top: dyadic grids of mesh $1, \tfrac12, \tfrac14, \tfrac18$ — every line of one scale is still a line at the next (dotted), so two dyadic intervals are either nested or disjoint. Bottom: meshes $\tfrac12$ and $\tfrac13$ as in the remark: $(0,\tfrac12]$ (blue) and $(\tfrac13,\tfrac23]$ (red) overlap (shaded) without either containing the other, and the selection of maximal pieces breaks down.*
 
 > [!remark]- Connections
 > - Dyadic partitions reappear in the proof that [[Riemann Integrable Implies Lebesgue Integrable|Riemann Integrability Implies Lebesgue Integrability]].

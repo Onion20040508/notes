@@ -1,0 +1,19 @@
+% Figure from MATH 551 notes, section 18. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.66\textwidth, height=0.44\textwidth, clip=false,
+  xmin=0, xmax=1.75, ymin=0, ymax=1.35,
+  xtick={0.5,0.8,1.4}, xticklabels={$x_0$,$x_0{+}h'$,$x_0{+}h$}, ytick={1.0259}, yticklabels={$f(x_0)$}, xlabel={}]
+  \addplot[draw=none, fill=figB!10, domain=0.5:1.4, samples=80] {0.55+0.45*sin(deg(4.2*x))+0.35*x*x} \closedcycle;
+  \addplot[draw=none, fill=figB!22, domain=0.5:0.8, samples=40] {0.55+0.45*sin(deg(4.2*x))+0.35*x*x} \closedcycle;
+  \draw[black!35, densely dotted] (axis cs:0,1.0259) -- (axis cs:0.5,1.0259);
+  \draw[black!55, dashed, thick] (axis cs:0.5,0.7199) -- (axis cs:1.4,0.7199);
+  \draw[figR, very thick] (axis cs:0.5,0.8689) -- (axis cs:0.8,0.8689);
+  \draw[black!35, densely dotted] (axis cs:1.4,0) -- (axis cs:1.4,1.0594);
+  \draw[black!35, densely dotted] (axis cs:0.8,0) -- (axis cs:0.8,0.6765);
+  \addplot[figB, very thick, domain=0:1.45, samples=150] {0.55+0.45*sin(deg(4.2*x))+0.35*x*x};
+  \addplot[only marks, mark=*, mark size=1.4pt, black] coordinates {(0.5,1.0259)};
+  \node[font=\small, figB, anchor=west] at (axis cs:1.45,1.2) {$f$};
+  \node[font=\scriptsize, black!65, anchor=west] at (axis cs:1.42,0.7199) {$F_h(x_0)$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.82,0.8689) {$F_{h'}(x_0)$};
+\end{axis}
+\end{tikzpicture}

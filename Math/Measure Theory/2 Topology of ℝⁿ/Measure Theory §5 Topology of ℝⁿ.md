@@ -39,6 +39,9 @@ tags: [measure-theory, math551]
 
 ^def-5-3
 
+![[m551-5-1.svg]]
+*Left: $\mathcal{O}$ is open when every point has a ball $B(x,r)$ inside it (red); near the boundary (dashed, not part of $\mathcal{O}$) the radius must shrink, but it stays positive. Right: $F$ is closed when limits of sequences in $F$ stay in $F$ — here $x_k \to x$ with $x$ on the boundary, which $F$ contains (solid).*
+
 > [!remark]- Connections
 > - The equivalence is [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^prop-13-5|Sequential Characterization of Closedness (451 §13.5)]].
 > - Topology takes the complement form as the definition ([[Topology §6 Closed Sets and Limit Points#^def-6-1|590 Def. §6.1]]); the sequential form holds in metric spaces by the [[Topology §11 Metric Topology#^lem-11-8|Sequence Lemma]].
@@ -86,6 +89,9 @@ tags: [measure-theory, math551]
 
 *Uses:* [[Bolzano–Weierstrass Theorem|451 §11.5]], [[Single Variable Analysis §11 Subsequences#^thm-11-1|451 §11.1]], [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]]
 
+![[m551-5-2.svg]]
+*The iterated extraction for $n = 2$: from all indices keep $S_1$, along which the first coordinates converge; from $S_1$ keep $S_2 \subseteq S_1$, along which the second coordinates converge as well (red). Thinning a sequence never spoils a limit it already has, so after $n$ rounds every coordinate converges along $S_n$.*
+
 > [!remark]- Connections
 > - MATH 451 states and proves it the same way: [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^thm-13-3|Bolzano–Weierstrass in ℝⁿ (451 §13.3)]].
 > - Topology: in metric spaces compact ⟺ sequentially compact ([[Topology §16 Limit Point Compactness#^thm-16-2|590 §16.2]]); with [[Heine–Borel Theorem|Heine–Borel]] this is the statement that closed bounded subsets of $\mathbb{R}^n$ are sequentially compact.
@@ -124,6 +130,9 @@ tags: [measure-theory, math551]
 ^pf-5-2
 
 *Uses:* [[Measure Theory §5 Topology of ℝⁿ#^thm-5-1|§5.1]], [[Measure Theory §5 Topology of ℝⁿ#^def-5-3|Def. §5.3]]
+
+![[m551-5-3.svg]]
+*Nested closed bounded sets $F_1 \supseteq F_2 \supseteq F_3 \supseteq \cdots$ with a chosen point $x_k \in F_k$ (black). All $x_k$ lie in the bounded set $F_1$, so a subsequence converges to some $x_0$ (red); for each $m$ the tail of that subsequence lies in $F_m$, and $F_m$ is closed, so $x_0 \in F_m$ for every $m$.*
 
 > [!remark]- Connections
 > - Topology version for any compact space: [[Topology §15 Compact Spaces#^cor-15-6|Nested Sequence of Closed Sets (590 §15.6)]], a case of the [[Topology §15 Compact Spaces#^thm-15-5|finite intersection property criterion]].

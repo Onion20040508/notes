@@ -30,6 +30,9 @@ tags: [measure-theory, math551]
 
 ^ex-6-1
 
+![[m551-6-1.svg]]
+*The cover of Example §6.1: the three open intervals (blue, hollow endpoints) stacked above $[0,1]$. Every point of $[0,1]$ lies in at least one of them; the endpoints are the delicate points — $0$ is caught only by $(-1,\tfrac12)$ and $1$ only by $(\tfrac12,2)$.*
+
 > [!example] Example §6.2: Countable open cover from rationals
 > Let $\mathbb{Q} = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of the rationals. For $\epsilon > 0$, let
 >
@@ -40,6 +43,9 @@ tags: [measure-theory, math551]
 > Then $\mathcal{C} = \{I_k\}_{k=1}^\infty$ is an open cover of $\mathbb{Q}$.
 
 ^ex-6-2
+
+![[m551-6-2.svg]]
+*The cover of Example §6.2 for the first few rationals of an enumeration (for instance $r_1 = \tfrac12$, $r_2 = \tfrac13$, $r_3 = \tfrac23$, $r_4 = \tfrac14$, $r_5 = \tfrac34$, with $\epsilon = 0.4$). Each $r_k$ (red) gets an interval $I_k$ of length $2\epsilon/2^k$, so the total length is at most $2\epsilon$ although every rational is covered — the idea behind countable sets having measure zero.*
 
 > [!remark]- Connections
 > - The enumeration exists by [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2]]; the same $\epsilon/2^k$ cover shows [[Measure Theory §9 Lebesgue Outer Measure#^ex-9-2|Countable Sets Have Measure Zero]].
@@ -155,6 +161,9 @@ tags: [measure-theory, math551]
 
 *Uses:* [[Measure Theory §5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[Archimedean Property|451 §4.5]], [[Single Variable Analysis §4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[Triangle inequality|LADR 6.17]]
 
+![[m551-6-3.svg]]
+*Lemma §6.3: with $\tfrac2k < \rho$ and a rational point $r$ within $\tfrac1k$ of $x$, the rational ball $B(r,\tfrac1k)$ (red) contains $x$ and fits inside $B(x,\rho)$ (blue). For any $y$ in it, the detour $y \to r \to x$ is shorter than $\tfrac1k + \tfrac1k < \rho$ — the triangle inequality of the proof.*
+
 > [!remark]- Connections
 > - Topology: this is the argument that a separable metric space is second-countable ([[Topology §18 Countability Axioms#^prop-18-4|590 §18.4]] (3)), with $D = \mathbb{Q}^n$ ([[Topology §18 Countability Axioms#^ex-18-8|590 Ex. §18.8]]); so the rational balls form a countable [[Topology §2 Basis for a Topology#^def-2-1|basis]] for $\mathbb{R}^n$.
 
@@ -230,6 +239,9 @@ tags: [measure-theory, math551]
 ^pf-6-4
 
 *Uses:* [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^thm-6-1|§6.1]], [[Measure Theory §5 Topology of ℝⁿ#^thm-5-2|§5.2]], [[Measure Theory §5 Topology of ℝⁿ#^def-5-3|Def. §5.3]], [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^prop-13-4|451 §13.4]]
+
+![[m551-6-4.svg]]
+*The Heine–Borel proof in one dimension, for a closed interval $F$ covered by open intervals $\mathcal{O}_1, \mathcal{O}_2, \ldots$ (blue). Removing the open sets one at a time leaves closed sets $F_k = F \setminus (\mathcal{O}_1 \cup \cdots \cup \mathcal{O}_k)$ (red) that shrink; if none were empty, Cantor's nested set theorem would produce a point of $F$ in no $\mathcal{O}_j$. Here $F_4 = \emptyset$, so $\mathcal{O}_1, \ldots, \mathcal{O}_4$ is a finite subcover.*
 
 > [!remark]- Connections
 > - Topology: [[Heine–Borel Theorem]] (590 §15.12) proves compact ⟺ closed and bounded via products of [[Topology §15 Compact Spaces#^thm-15-10|compact closed intervals]] and the [[Tube Lemma]]; here only “closed and bounded ⟹ compact” is proved, through countable subcovers and nested sets (the [[Topology §15 Compact Spaces#^thm-15-5|finite intersection property]] in disguise).

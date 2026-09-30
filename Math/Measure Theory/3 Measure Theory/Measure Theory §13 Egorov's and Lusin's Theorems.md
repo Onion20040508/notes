@@ -33,6 +33,9 @@ Egorov's theorem states that on sets of finite measure, [[Measure Theory §12 Me
 
 ^ex-13-1
 
+![[m551-13-1.svg]]
+*Egorov for $f_k(x) = x^k$ on $[0,1]$: the convergence to $0$ on $[0,1)$ is not uniform, since every $x^k$ climbs back to $1$ near $x = 1$. Cutting away a set of length $\delta$ (red) cures this: on $[0, 1-\delta]$ we have $x^k \leq (1-\delta)^k$, which is below $\epsilon$ for all large $k$ (here $k = 16, 32$), at every $x$ at once.*
+
 > [!remark]- Connections
 > - MATH 451 version of the non-uniformity: [[Single Variable Analysis §24 Uniform Convergence#^ex-24-2|451 Example §24.2]]; the sup test used here is [[Single Variable Analysis §24 Uniform Convergence#^thm-24-1|451 Theorem §24.1]].
 
@@ -115,6 +118,9 @@ Egorov's theorem states that on sets of finite measure, [[Measure Theory §12 Me
 
 ^rem-13-1
 
+![[m551-13-2.svg]]
+*Why Egorov needs $m(E) < \infty$: $f_k = \chi_{[k,k+1]}$ is a bump sliding off to infinity. At each fixed $x$ (red) the values are eventually $0$, so $f_k \to 0$ pointwise, but $\sup f_k = 1$ for every $k$. Removing a set of finite measure cannot stop the bump, which eventually meets whatever remains.*
+
 > [!remark]- Connections
 > - Finiteness is exactly the hypothesis of [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-13|continuity from above]] used in Step 4; compare [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^rem-14-6|Why the Finiteness Hypothesis is Necessary]] for decreasing MCT.
 
@@ -149,6 +155,9 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 ^pf-13-2
 
 *Uses:* [[Characterization of the Supremum|451 Characterization of the Supremum]], [[Measure Theory §5 Topology of ℝⁿ#^thm-5-1|§5.1]], [[Measure Theory §5 Topology of ℝⁿ#^def-5-3|Def. §5.3]], [[Topology §11 Metric Topology#^thm-11-9|590 §11.9]]
+
+![[m551-13-3.svg]]
+*Lemma §13.2. Left: for disjoint compact $F_1$, $F_2$ the infimum of distances is attained at some $x_0 \in F_1$, $y_0 \in F_2$ (by Bolzano–Weierstrass), so $d(F_1, F_2) = d(x_0, y_0) > 0$. Right: without boundedness this fails. The closed sets $F_1$ (a ray of the $x$-axis) and $F_2$ (a branch of a hyperbola) are disjoint, but the gap between them (red) shrinks to $0$.*
 
 > [!remark]- Connections
 > - Same compactness-via-sequences mechanism in general metric spaces: [[Topology §16 Limit Point Compactness#^thm-16-2|590 Theorem §16.2]], and the uniform-radius statement [[Lebesgue Number Lemma]].
@@ -234,6 +243,9 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 ^pf-13-3
 
 *Uses:* [[Measure Theory §12 Measurable Functions#^prop-12-13|§12.13]], [[Inner Regularity of Lebesgue Measure|§11.10]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Measure Theory §13 Egorov's and Lusin's Theorems#^lem-13-2|§13.2]], [[Measure Theory §5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[Measure Theory §12 Measurable Functions#^thm-12-17|§12.17]], [[Measure Theory §12 Measurable Functions#^thm-12-16|§12.16]], [[Measure Theory §12 Measurable Functions#^thm-12-3|§12.3]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[Topology §9 Continuous Functions#^thm-9-4|590 §9.4]], [[Single Variable Analysis §24 Uniform Convergence#^thm-24-2|451 §24.2]], [[Single Variable Analysis §17 Continuous Functions#^thm-17-2|451 §17.2]], [[Single Variable Analysis §17 Continuous Functions#^thm-17-3|451 §17.3]], [[Single Variable Analysis §14 Series#^ex-14-4|451 Ex. §14.4]]
+
+![[m551-13-4.svg]]
+*Step 1 of Lusin's theorem, with the $A_i$ drawn as intervals for simplicity. Inside each $A_i$ we choose a closed $F_i$ (thick) with $m(A_i \setminus F_i)$ small; what is removed, $E \setminus F$ (red), is a small set around the jumps of $f$ (dotted). On $F = F_0 \cup F_1 \cup F_2$ the function equals the constant $a_i$ on each $F_i$, and different $F_i$ are a positive distance apart (Lemma §13.2), so $f|_F$ is locally constant, hence continuous.*
 
 > [!remark]- Connections
 > - “Continuous on $F$” means $f|_F$ is continuous in the [[Topology §5 Subspace Topology#^def-5-1|subspace topology]]; by the (not covered) [[Topology §20 Normal Spaces#^rem-20-3|Tietze Extension Theorem]] on the normal space $\mathbb{R}^n$, $f|_F$ then extends to a continuous function on all of $\mathbb{R}^n$.

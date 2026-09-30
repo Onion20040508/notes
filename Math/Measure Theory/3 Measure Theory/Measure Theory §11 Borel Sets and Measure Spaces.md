@@ -207,6 +207,9 @@ The construction of Lebesgue measure generalizes to abstract settings.
 
 *Uses:* [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-4|§11.4]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Properties of Lebesgue Outer Measure|§9.1]]
 
+![[m551-11-1.svg]]
+*Why a rectangle $R$ (blue) passes the rectangle test: extending the edges of $R$ (dashed) cuts the test rectangle $I$ into $I \cap R$ and finitely many rectangles $I_1, \dots, I_5$ (red) that fill $I \cap R^c$, and the volumes of all the pieces add up to $|I|$. (The shared edges have volume zero and do not affect the count.)*
+
 ## Open Sets and Borel Sets are Measurable
 
 > [!theorem] Theorem §11.6: Open Sets are Measurable
@@ -342,6 +345,9 @@ The construction of Lebesgue measure generalizes to abstract settings.
 
 ^thm-11-10
 
+![[m551-11-2.svg]]
+*Regularity of Lebesgue measure: a measurable $E$ (black outline) is squeezed between a closed $F \subseteq E$ (blue) and an open $G \supseteq E$ (dashed red), with both shells $E \setminus F$ (orange) and $G \setminus E$ (red) of measure $< \epsilon$ (Theorems §11.8 and §11.10, part 1). The inner half comes from the outer one by complements: the proof takes an open set containing $E^c$ and lets $F$ be its complement.*
+
 > [!proof]+ Proof
 > **(1)** Since $E \in \mathcal{M}$, we have $E^c \in \mathcal{M}$. By the outer approximation theorem ([[Outer Regularity of Lebesgue Measure|Thm. §11.8]] (1)), there exists an open set $G \supseteq E^c$ with $m(G \setminus E^c) < \epsilon$.
 >
@@ -394,6 +400,9 @@ The construction of Lebesgue measure generalizes to abstract settings.
 > 2. For all $\epsilon > 0$, there exists a set $G$ which is a **finite union of rectangles** such that $m(E \triangle G) < \epsilon$.
 
 ^thm-11-11
+
+![[m551-11-3.svg]]
+*Theorem §11.11 (2): a set $E$ of finite measure (blue) and a finite union $G$ of rectangles (black outline). The symmetric difference $E \triangle G$ (red) — the part of $E$ that $G$ misses plus the part of $G$ outside $E$ — can be made to have measure $< \epsilon$. In the proof, $G$ comes from a finite subcover of a compact $K \subseteq E$.*
 
 > [!proof]+ Proof
 > **(1)** Since $E$ is measurable, $E^c$ is also measurable. By the approximation theorem (closed sets from below, [[Inner Regularity of Lebesgue Measure|Thm. §11.10]]), there exists a closed set $K \subseteq E$ such that $m(E \setminus K) < \epsilon/2$.
@@ -775,6 +784,9 @@ Let $\mathbb{Q} \cap [-1, 1] = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of t
 
 *Uses:* [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-12|Def. §11.12]], [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-17|§11.17]], [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-18|§11.18]], [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|§3.2]]
 
+![[m551-11-4.svg]]
+*The Vitali argument: $V$ (red) contains one point from each class of $\sim$, and its rational translates $r_j + V$ (blue; a few of the countably many, with $V = 0 + V$ itself among them) are pairwise disjoint. Together they cover $[0,1]$ (shaded) but stay inside $[-1,2]$. If they all had measure $m(V)$ we would need $1 \leq \sum_j m(V) \leq 3$, which is impossible whether $m(V) = 0$ or $m(V) > 0$. (The tick marks only stand in for $V$, which cannot actually be drawn.)*
+
 > [!theorem] Theorem §11.20: The Vitali Set is Not Measurable
 > The Vitali set $V$ is not Lebesgue measurable.
 
@@ -826,6 +838,9 @@ If $E$ is countable, then $m^*(E) = 0$ ([[Measure Theory §9 Lebesgue Outer Meas
 > $$
 
 ^def-11-13
+
+![[m551-11-5.svg]]
+*The first steps of the Cantor construction: $C_{n+1}$ removes the open middle third (dashed red) of every interval of $C_n$, leaving $2^n$ intervals of length $3^{-n}$ with total length $(2/3)^n \to 0$. The labels under $C_1$ and $C_2$ are the first ternary digits of the points in each interval. Only $0$s and $2$s survive, which is how Proposition §11.21 (4) matches $C$ with binary sequences.*
 
 > [!remark]- Connections
 > - First met in MATH 451: [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^rem-13-5|451 Rem. §13.5]].

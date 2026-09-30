@@ -46,6 +46,9 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 
 ^def-8-2
 
+![[m551-8-1.svg]]
+*Lower and upper sums for a partition $P = \{x_0, \ldots, x_4\}$: on each $[x_j, x_{j+1}]$ the blue rectangle has height $m_j$ and the full rectangle height $M_j$ (marked for $j = 2$). $L(f,P)$ is the blue area and $U(f,P)$ the blue plus red area; for continuous $f$ the red strips thin out as $|P| \to 0$ (Proposition §8.1).*
+
 > [!remark]- Connections
 > - MATH 451: [[Single Variable Analysis §32 The Definition of the Riemann Integral#^def-32-1|Upper and Lower Sums (451 Def. §32.1)]]; MATH 452 multiple-integral version: [[Multivariable Analysis §15 Multivariable Integration#^def-15-8|452 Def. §15.8]].
 
@@ -172,6 +175,9 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 > This shows that the space of Riemann integrable functions is not closed under pointwise limits. This is a fundamental limitation that motivates the development of the Lebesgue integral.
 
 ^rem-8-2
+
+![[m551-8-2.svg]]
+*Left: $f_5$ from Example §8.1, for an enumeration beginning $\tfrac12, \tfrac13, \tfrac23, \tfrac14, \tfrac34$ — it is $0$ except at five points, so its integral is $0$. Right: the pointwise limit $f$ (Example §8.2) — rationals (red, height $1$) and irrationals (blue, height $0$) are dense in every subinterval, so $M_j = 1$ and $m_j = 0$ for every partition: the upper sum is the whole red area $1$, the lower sum is $0$.*
 
 > [!remark]- Connections
 > - MATH 451 only passes to the limit under uniform convergence: [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-12|Integration of Uniform Limits (451 §33.12)]].
