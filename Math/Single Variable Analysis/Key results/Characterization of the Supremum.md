@@ -22,6 +22,9 @@ tags: [real-analysis, hub]
 - [[Measure Theory §12 Measurable Functions#^thm-12-6|Theorem §12.6: Measurability of Suprema and Infima]]
 - [[Measure Theory §13 Egorov's and Lusin's Theorems#^lem-13-2|Lemma §13.2: Distance Between Disjoint Compact Sets]]
 
+## Used in (Group Theory)
+- [[Group Theory §5 A Zoo of Subgroups#^prop-5-3|Proposition §5.3: Dichotomy for Subgroups of ℝ]]
+
 ## Connections
 - The working form of the [[Completeness Axiom]]: to use $\sup S$ in a proof, you almost always use this proposition.
 - In the dependency graph extracted from these notes it has the largest downstream reach: about 38 later results rest on it, directly or indirectly.

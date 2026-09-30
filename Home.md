@@ -9,6 +9,7 @@
 - [[Differentiable Manifolds]]
 - [[Topology]]
 - [[Measure Theory]]
+- [[Group Theory]]
 
 **Physics**
 - [[Quantum Field Theory I]]

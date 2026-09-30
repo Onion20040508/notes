@@ -1,0 +1,25 @@
+% Figure from MATH 493 notes, section 3. Compile with the notes preamble.
+\begin{tikzpicture}[scale=0.85]
+  \begin{scope}
+    \draw[-stealth, thin] (-0.3,0) -- (3.5,0);
+    \draw[-stealth, thin] (0,-0.3) -- (0,3.4);
+    \fill[figB!12] (0,0) -- (2,1) -- (3,2) -- (1,1) -- cycle;
+    \draw[black!40, dashed] (0,0) rectangle (1,1);
+    \draw[figB, thick] (0,0) -- (2,1) -- (3,2) -- (1,1) -- cycle;
+    \fill[figB] (2,1) circle (1.6pt) (1,1) circle (1.6pt);
+    \node[font=\scriptsize, figB, anchor=west] at (2,1) {$(2,1)$};
+    \node[font=\scriptsize, figB, anchor=south east] at (1,1) {$(1,1)$};
+    \node[font=\small, figB] at (1.6,2.9) {$AB$};
+  \end{scope}
+  \begin{scope}[xshift=4.8cm]
+    \draw[-stealth, thin] (-0.3,0) -- (3.5,0);
+    \draw[-stealth, thin] (0,-0.3) -- (0,3.4);
+    \fill[figR!15] (0,0) -- (1,1) -- (2,3) -- (1,2) -- cycle;
+    \draw[black!40, dashed] (0,0) rectangle (1,1);
+    \draw[figR, thick] (0,0) -- (1,1) -- (2,3) -- (1,2) -- cycle;
+    \fill[figR] (1,1) circle (1.6pt) (1,2) circle (1.6pt);
+    \node[font=\scriptsize, figR, anchor=north west] at (1,1) {$(1,1)$};
+    \node[font=\scriptsize, figR, anchor=east] at (1,2) {$(1,2)$};
+    \node[font=\small, figR] at (2.6,1.4) {$BA$};
+  \end{scope}
+\end{tikzpicture}

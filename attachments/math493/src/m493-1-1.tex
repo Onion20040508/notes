@@ -1,0 +1,18 @@
+% Figure from MATH 493 notes, section 1. Compile with the notes preamble.
+\begin{tikzpicture}[
+    br/.style={font=\small, inner sep=3pt, fill=white},
+    ln/.style={br, draw=figB, thick, fill=figB!12, rounded corners=2pt},
+    mv/.style={thick, black!55},
+    ax/.style={font=\scriptsize, black!55, fill=white, inner sep=1pt, midway}]
+  \node[ln] (A) at (0,2.0)        {$((g_1 g_2) g_3) g_4$};
+  \node[br] (B) at (2.6,0.62)     {$(g_1 g_2)(g_3 g_4)$};
+  \node[br] (C) at (1.6,-1.62)    {$g_1 (g_2 (g_3 g_4))$};
+  \node[br] (D) at (-1.6,-1.62)   {$g_1 ((g_2 g_3) g_4)$};
+  \node[br] (E) at (-2.6,0.62)    {$(g_1 (g_2 g_3)) g_4$};
+  \draw[mv] (A) -- (B) node[ax] {(3)};
+  \draw[mv] (B) -- (C) node[ax] {(3)};
+  \draw[mv] (C) -- (D) node[ax] {(3)};
+  \draw[mv] (D) -- (E) node[ax] {(3)};
+  \draw[mv] (E) -- (A) node[ax] {(3)};
+  \node[font=\scriptsize, figB, anchor=south] at (A.north) {$L_4$};
+\end{tikzpicture}

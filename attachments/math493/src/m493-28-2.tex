@@ -1,6 +1,6 @@
-% Figure from MATH 493 notes, section 28.
+% Figure from MATH 493 notes, section 28. Compile with the notes preamble.
 \begin{tikzpicture}[scale=1.1]
-  \def\petal{(0,0) .. controls (0.95,0.75) and (0.55,2.0) .. (0,2.0) .. controls (-0.55,2.0) and (-0.95,0.75) .. (0,0)}
+  \def\petal{(0,0) .. controls (0.5,0.8) and (0.78,2.0) .. (0,2.0) .. controls (-0.78,2.0) and (-0.5,0.8) .. (0,0)}
   % petal interiors
   \foreach \a in {0,90,180,270} { \fill[black!6, rotate=\a] \petal; }
   % the three other reflection axes (dotted)
@@ -10,8 +10,8 @@
   % petal outlines
   \foreach \a in {0,90,180,270} { \draw[black!80, thick, rotate=\a] \petal; }
   % the vertical axis: reflection r_v
-  \draw[figG, very thick] (0,-2.5) -- (0,2.5);
-  \node[figG, font=\small, right] at (0.08,2.4) {$r_v$};
+  \draw[figB, very thick] (0,-2.5) -- (0,2.5);
+  \node[figB, font=\small, right] at (0.08,2.4) {$r_v$};
   % the orbit of x_1
   \foreach \p/\n/\pos in {(0,2.0)/1/above left, (-2.0,0)/2/above left, (0,-2.0)/3/below left, (2.0,0)/4/above right} {
     \fill[figR] \p circle (2.2pt);

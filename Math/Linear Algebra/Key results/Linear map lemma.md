@@ -22,6 +22,11 @@ tags: [linear-algebra, hub]
 - [[Linear Algebra 9D Tensor Products#^ladr-9-74|9.74 Basis of V⊗ W]]
 - [[Linear Algebra 9D Tensor Products#^ladr-9-79|9.79 Converting bilinear maps to linear maps]]
 
+## Used in (Group Theory)
+- [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^cor-19-3|Corollary §19.3: Permutations of the Basis Give Invertible Linear Maps]]
+- [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-4|Proposition §19.4: Permutation Representation of S_X]]
+- [[Group Theory §30 Examples꞉ Linear Groups and the Cube#^prop-30-4|Proposition §30.4: The Cube Group Embeds in S_6]]
+
 ## Connections
 - The reason a linear map is the same data as its matrix: [[Linear Algebra 3C Matrices#^ladr-3-31|Matrix of a linear map, M(T)]], and why $\mathcal{M}$ is bijective in [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]].
 - Builds the isomorphism in [[Dimension shows whether vector spaces are isomorphic]].

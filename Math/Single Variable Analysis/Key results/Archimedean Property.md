@@ -25,5 +25,8 @@ tags: [real-analysis, hub]
 - [[Measure Theory §12 Measurable Functions#^prop-12-18|Proposition §12.18: Convergence as Set Membership]]
 - [[Measure Theory §13 Egorov's and Lusin's Theorems#^thm-13-1|Theorem §13.1: Egorov's Theorem]]
 
+## Used in (Group Theory)
+- [[Group Theory §5 A Zoo of Subgroups#^prop-5-3|Proposition §5.3: Dichotomy for Subgroups of ℝ]]
+
 ## Connections
 - Gives $1/n\to0$ and the density of $\mathbb{Q}$ in $\mathbb{R}$ (§4). It is a consequence of the [[Completeness Axiom]]; ordered fields without it exist (non-Archimedean fields).

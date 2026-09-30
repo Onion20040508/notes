@@ -1,0 +1,46 @@
+% Figure from MATH 493 notes, Roadmap (front matter): the two threads and the organizing idea.
+\begin{tikzpicture}[
+    x=1cm, y=1cm, font=\small,
+    box/.style={draw, rounded corners=3pt, align=center, inner sep=3pt, minimum height=0.95cm},
+    shared/.style={box, draw=black!45, fill=black!4, text width=4.6cm},
+    num/.style={box, draw=teal!70!black, fill=teal!7, text width=4.0cm},
+    sym/.style={box, draw=violet!70!black, fill=violet!6, text width=4.0cm},
+    act/.style={box, draw=orange!80!black, fill=orange!8, text width=6.4cm},
+    small/.style={text width=2.7cm},
+    link/.style={-{Stealth[length=2mm]}, draw=black!40, thick},
+    bridge/.style={font=\scriptsize, text=black!55, fill=white, inner sep=1pt},
+  ]
+  \foreach \y/\t in {0/{Ch.\,1}, -1.5/{Ch.\,2,\,3}, -3.0/{Ch.\,4}, -4.5/{Ch.\,5}, -6.0/{Ch.\,6}, -7.5/{Ch.\,7,\,8}, -9.0/{Ch.\,8,\,9}}
+    \node[rotate=90, font=\scriptsize\bfseries, text=black!55] at (-7.3,\y) {\t};
+  \foreach \y in {-0.75,-2.25,-3.75,-5.25,-6.75,-8.25}
+    \draw[black!18, dashed] (-7.0,\y) -- (7.25,\y);
+
+  \node[shared] (found) at (0,0) {\textbf{Foundations} \S1--\S5\\ groups, subgroups, order};
+  \node[num] (num) at (-4.3,-1.5) {\textbf{Numbers} \S6--\S9\\ $\mathbb{Z}/n\mathbb{Z}$, $U_n$, CRT};
+  \node[sym] (sym) at (4.3,-1.5) {\textbf{Symmetries} \S10--\S13\\ cycles, $S_3$};
+  \node[shared, text width=6.3cm] (hom) at (0,-3.0) {\textbf{Homomorphisms} \S14--\S18\\ kernels, isomorphisms, cyclic groups};
+  \node[num, small] (un) at (-4.6,-4.5) {\S21\\ $U_n \cong \prod U_{p^a}$};
+  \node[sym, small] (mat) at (1.55,-4.5) {\S19\\ permutation matrices};
+  \node[sym, small] (sgn) at (5.15,-4.5) {\S20\\ the sign, $A_n$};
+  \node[act] (act) at (0,-6.0) {\textbf{Actions} \S22--\S30\\ orbits, stabilizers, cosets, Lagrange};
+  \node[box, draw=orange!80!black, fill=orange!4, text width=4.6cm] (conj) at (-4.3,-7.5) {\textbf{Conjugacy} \S31--\S33\\ classes, class equation, center};
+  \node[shared] (norm) at (4.3,-7.5) {\textbf{Normal} \S34--\S36\\ index two, kernels,\\ unions of classes};
+  \node[shared] (quot) at (4.3,-9.0) {\textbf{Quotients} \S37--\S39\\ $G/\operatorname{Ker} \cong \operatorname{Im}$, simple groups};
+  \node[shared] (char) at (-2.2,-9.0) {\textbf{Characters} \S40--\S41\\ homomorphisms to abelian groups};
+
+  \draw[link] (found) -- node[bridge]{subgroups of $\mathbb{Z}$ are $n\mathbb{Z}$} (num);
+  \draw[link] (found) -- node[bridge]{$S_X$} (sym);
+  \draw[link] (num) -- node[bridge]{classify cyclic groups} (hom);
+  \draw[link] (sym) -- node[bridge]{tables of $S_3$} (hom);
+  \draw[link] ($(num.south)+(-0.3,0)$) -- node[bridge]{CRT} (un.north);
+  \draw[link] (hom) -- node[bridge]{$\sigma \mapsto M(\sigma)$} (mat);
+  \draw[link] (mat) -- node[bridge, above=1pt, fill=none]{$\det$} (sgn);
+  \draw[link, draw=orange!80!black] ($(hom.south)+(-1.4,0)$) -- node[bridge, text=orange!70!black]{$G \curvearrowright X \;=\; G \to S_X$} ($(act.north)+(-1.4,0)$);
+  \draw[link] (act) -- node[bridge]{$G$ acts on itself} (conj);
+  \draw[link] (act) -- node[bridge]{$gN = Ng$} (norm);
+  \draw[link] (conj) -- node[bridge]{unions of classes} (norm);
+  \draw[link] (norm) -- node[bridge]{$G/N$ is a group} (quot);
+  \draw[link] (quot) -- node[bridge]{$G/[G,G]$} (char);
+  \draw[link] (conj) -- node[bridge]{constant on classes} (char);
+  \draw[link, draw=violet!70!black] (sgn.east) -- (7.1,-4.5) -- (7.1,-10.0) -- node[bridge, text=violet!70!black]{$\operatorname{sgn}$ is a character} (-2.2,-10.0) -- (char.south);
+\end{tikzpicture}

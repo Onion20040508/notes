@@ -30,6 +30,9 @@ tags: [linear-algebra, hub]
 - [[Linear Algebra 8A Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3 Null spaces stop growing]]
 - [[Linear Algebra 8C Consequences of Generalized Eigenspace Decomposition#^ladr-8-45|8.45 Every nilpotent operator has a Jordan basis]]
 
+## Used in (Group Theory)
+- [[Group Theory §38 The First Isomorphism Theorem#^rem-38-2|Remark: Rank–Nullity]]
+
 ## Connections
 - **Immediate consequences.** Comparing dimensions: [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]] (3.22), [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]] (3.24), [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (3.65).
 - **Isomorphism classes.** [[Dimension shows whether vector spaces are isomorphic]] (3.70) uses it to show isomorphic ⟺ equal dimension.
