@@ -16,17 +16,16 @@ tags: [topology, hub]
 - [[Topology §9 Continuous Functions#^thm-9-1|Theorem §9.1: Equivalent Conditions for Continuity]]
 
 ## Used in (Topology)
-- [[Topology §22 Homotopy of Paths#^rem-22-1|Remark: Motivation: Continuously Deforming Paths]]
 - [[Topology §22 Homotopy of Paths#^lem-22-3|Lemma §22.3]]
-- [[Topology §22 Homotopy of Paths#^prop-22-4|Proposition §22.4: Well-Definedness of [f] * [g]]]
-- [[Topology §22 Homotopy of Paths#^rem-22-6|Remark: Well-Definedness]]
+- [[Topology §22 Homotopy of Paths#^prop-22-4|Proposition §22.4: Well-Definedness of the product of path classes]]
 - [[Topology §22 Homotopy of Paths#^thm-22-6|Theorem §22.6: Properties of Path Concatenation]]
 - [[Topology §24 Covering Spaces#^ex-24-5|Example §24.5: Lifting Loops on S¹ to Paths in ℝ]]
-- [[Topology §24 Covering Spaces#^rem-24-5|Remark: Role of Each Map]]
 - [[Topology §24 Covering Spaces#^lem-24-6|Lemma §24.6: Path Lifting Lemma]]
 - [[Topology §24 Covering Spaces#^lem-24-7|Lemma §24.7: Homotopy Lifting Lemma]]
 - [[Topology §24 Covering Spaces#^thm-24-10|Theorem §24.10: π₁(S¹) ≅ ℤ]]
 - [[Topology §27 The Fundamental Group of Sⁿ#^ex-27-1|Example §27.1: Wedge of Two Spheres is Simply Connected]]
 
 ## Connections
-- TODO
+- **Proof.** It uses the closed-set criterion (3) of [[Equivalent Conditions for Continuity]], together with the fact that a set closed in a closed subspace is closed in X ([[Topology §6 Closed Sets and Limit Points#^thm-6-3|Theorem §6.3]]).
+- **Typical use.** It gives continuity of piecewise-defined maps, first |x| ([[Topology §9 Continuous Functions#^ex-9-6|Example §9.6]]). In homotopy theory it covers path products f ∗ g ([[Topology §22 Homotopy of Paths#^rem-22-6|Well-Definedness]]), transitivity of ≃ ([[Topology §22 Homotopy of Paths#^lem-22-3|Lemma §22.3]]) and every homotopy in [[Properties of Path Concatenation]].
+- **Covering spaces.** It glues finitely many local lifts in [[Path Lifting Lemma]] and [[Homotopy Lifting Lemma]], and builds the lift of f ∗ g in [[Fundamental Group of the Circle]].

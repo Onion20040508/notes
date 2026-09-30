@@ -21,7 +21,7 @@ tags: [topology, math590]
 >
 > **Step 1: The power map $f: S^1 \to S^1$, $z \mapsto z^n$, induces an injective homomorphism on $\pi_1$.**
 >
-> Under the [[Topology §24 Covering Spaces#^thm-24-10|identification]] $\pi_1(S^1, b_0) \cong \mathbb{Z}$, the induced map $f_*: \mathbb{Z} \to \mathbb{Z}$ is multiplication by $n$: $f_*([k]) = nk$. This is injective (since $n > 0$).
+> Under the [[Fundamental Group of the Circle|identification]] $\pi_1(S^1, b_0) \cong \mathbb{Z}$, the induced map $f_*: \mathbb{Z} \to \mathbb{Z}$ is multiplication by $n$: $f_*([k]) = nk$. This is injective (since $n > 0$).
 >
 > **Step 2: If $g: S^1 \to \mathbb{R}^2 \setminus \{0\}$ is $g(z) = z^n$, then $g$ is not nullhomotopic.**
 >
@@ -67,11 +67,11 @@ tags: [topology, math590]
 
 ^pf-25-1
 
-*Uses:* [[Topology §24 Covering Spaces#^thm-24-10|§24.10]], [[Topology §23 The Fundamental Group#^thm-23-5|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[Topology §24 Covering Spaces#^lem-24-12|§24.12]]
+*Uses:* [[Fundamental Group of the Circle|§24.10]], [[Functoriality of π₁|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[Topology §24 Covering Spaces#^lem-24-12|§24.12]]
 
 > [!remark] Remark
 > This proof is remarkable: a theorem about *algebra* (roots of polynomials) is proved using *topology* ($\pi_1(S^1) \cong \mathbb{Z}$ and the nullhomotopy characterization). The key ingredients are:
-> - [[Topology §24 Covering Spaces#^thm-24-10|π₁(S¹) ≅ ℤ]] (the power map $z^n$ induces multiplication by $n$, which is injective).
+> - [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ]] (the power map $z^n$ induces multiplication by $n$, which is injective).
 > - $S^1$ is a [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|retract]] of $\mathbb{R}^2 \setminus \{0\}$ (so the inclusion is [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|injective on π₁]]).
 > - The [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy lemma]] (extending to $B^2$ implies nullhomotopic implies trivial $h_*$).
 > - The triangle inequality estimate $|z^n| - |a_{n-1}z^{n-1} + \cdots| > 0$ on $S^1$ (the analytic input).

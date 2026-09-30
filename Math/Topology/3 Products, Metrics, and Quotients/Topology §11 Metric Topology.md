@@ -301,7 +301,7 @@ tags: [topology, math590]
 ^lem-11-8
 
 > [!proof]+ Proof
-> $(\Rightarrow)$ $a_n \to x$. Every neighborhood of $x$ contains a point of $A$. Thus $x \in \overline{A}$ ([[Topology §7 Interior and Closure#^thm-7-3|Closure Characterization]]).
+> $(\Rightarrow)$ $a_n \to x$. Every neighborhood of $x$ contains a point of $A$. Thus $x \in \overline{A}$ ([[Closure Characterization|Closure Characterization]]).
 >
 > $(\Leftarrow)$ Suppose $X$ is metrizable. Let $x \in \overline{A} = A \cup A'$ (limit points; [[Topology §7 Interior and Closure#^thm-7-4|Theorem §7.4]]).
 >
@@ -315,7 +315,7 @@ tags: [topology, math590]
 
 ^pf-11-8
 
-*Uses:* [[Topology §7 Interior and Closure#^thm-7-3|§7.3]], [[Topology §7 Interior and Closure#^thm-7-4|§7.4]]
+*Uses:* [[Closure Characterization|§7.3]], [[Topology §7 Interior and Closure#^thm-7-4|§7.4]]
 
 > [!remark]- Connections
 > - MATH 451 version: [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^prop-13-6|Proposition §13.6: Sequential Characterization of the Closure]].
@@ -334,7 +334,7 @@ tags: [topology, math590]
 >
 > $(\Leftarrow)$ $X$ metrizable and $x_n \to x$ implies $f(x_n) \to f(x)$. Want to show $f$ is continuous.
 >
-> [[Topology §9 Continuous Functions#^thm-9-1|Suffice to show]] for all $A \subseteq X$, $f(\overline{A}) \subseteq \overline{f(A)}$. By [[Topology §11 Metric Topology#^lem-11-8|Sequence Lemma]], if $x \in \overline{A}$ then there exists a sequence $a_n \to x$, $a_n \in A$, then $f(a_n) \to f(x)$. By [[Topology §11 Metric Topology#^lem-11-8|Sequence Lemma]], $f(x) \in \overline{f(A)}$ since $f(a_n) \in f(A)$.
+> [[Equivalent Conditions for Continuity|Suffice to show]] for all $A \subseteq X$, $f(\overline{A}) \subseteq \overline{f(A)}$. By [[Topology §11 Metric Topology#^lem-11-8|Sequence Lemma]], if $x \in \overline{A}$ then there exists a sequence $a_n \to x$, $a_n \in A$, then $f(a_n) \to f(x)$. By [[Topology §11 Metric Topology#^lem-11-8|Sequence Lemma]], $f(x) \in \overline{f(A)}$ since $f(a_n) \in f(A)$.
 >
 > So $f(\overline{A}) \subseteq \overline{f(A)}$.
 >
@@ -342,7 +342,7 @@ tags: [topology, math590]
 
 ^pf-11-9
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-1|§9.1]], [[Topology §11 Metric Topology#^lem-11-8|§11.8]]
+*Uses:* [[Equivalent Conditions for Continuity|§9.1]], [[Topology §11 Metric Topology#^lem-11-8|§11.8]]
 
 > [!remark]- Connections
 > - MATH 451 takes the sequential condition as the definition: [[Single Variable Analysis §17 Continuous Functions#^def-17-1|Definition §17.1: Continuity at a Point — Sequential Definition]].

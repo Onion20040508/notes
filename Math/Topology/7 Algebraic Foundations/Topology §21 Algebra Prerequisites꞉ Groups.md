@@ -28,10 +28,10 @@ tags: [topology, math590]
 > 1. **Build homotopies on a simple space** (a square, an interval, a ball) where geometry is easy — straight lines, rays, linear interpolations all work.
 > 2. **Descend them to the quotient space** (a torus, a circle, a sphere) where the topology lives.
 >
-> Step 2 is where the **[[Topology §12 Quotient Topology#^thm-12-3|Universal Property of Quotient Maps]]** ([[Topology §12 Quotient Topology#^thm-12-3|§12.3]]) enters: it guarantees that if a map on the simple space respects the gluing (sends identified points to the same place), then it descends to a well-defined continuous map on the quotient. The [[Topology §12 Quotient Topology#^rem-12-8|Quotient Space Toolkit]] (Theorems A, B, C from [[Topology §12 Quotient Topology|§12]]) will appear in:
-> - The **[[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-8|nullhomotopy lemma]]**: $\pi: S^n \times I \to B^{n+1}$ by $\pi(x,t) = (1-t)x$ is a quotient map ([[Topology §12 Quotient Topology#^rem-12-8|Thm A]]); a nullhomotopy $H$ descends to an extension $k: B^{n+1} \to X$ ([[Topology §12 Quotient Topology#^thm-12-3|Thm C]]).
+> Step 2 is where the **[[Universal Property of Quotient Maps|Universal Property of Quotient Maps]]** ([[Universal Property of Quotient Maps|§12.3]]) enters: it guarantees that if a map on the simple space respects the gluing (sends identified points to the same place), then it descends to a well-defined continuous map on the quotient. The [[Topology §12 Quotient Topology#^rem-12-8|Quotient Space Toolkit]] (Theorems A, B, C from [[Topology §12 Quotient Topology|§12]]) will appear in:
+> - The **[[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-8|nullhomotopy lemma]]**: $\pi: S^n \times I \to B^{n+1}$ by $\pi(x,t) = (1-t)x$ is a quotient map ([[Topology §12 Quotient Topology#^rem-12-8|Thm A]]); a nullhomotopy $H$ descends to an extension $k: B^{n+1} \to X$ ([[Universal Property of Quotient Maps|Thm C]]).
 > - The **[[Topology §24 Covering Spaces#^thm-24-2|covering map]]** $p: \mathbb{R} \to S^1$: the interval $[0, 2\pi]$ quotients to $S^1$ ([[Topology §12 Quotient Topology#^rem-12-8|Thm A]]); the winding number computation uses the fact that $p$ is a quotient map.
-> - **$\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$** ([[Topology §23 The Fundamental Group#^cor-23-8|Corollary §23.8]]): $[0, 2\pi]^2$ quotients to $T^2$ ([[Topology §12 Quotient Topology#^thm-12-5|Thm B]]); deformation retracts on the square descend to the torus ([[Topology §12 Quotient Topology#^thm-12-3|Thm C]]).
+> - **$\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$** ([[Topology §23 The Fundamental Group#^cor-23-8|Corollary §23.8]]): $[0, 2\pi]^2$ quotients to $T^2$ ([[Topology §12 Quotient Topology#^thm-12-5|Thm B]]); deformation retracts on the square descend to the torus ([[Universal Property of Quotient Maps|Thm C]]).
 >
 > The pattern is always the same: **work upstairs, check the gluing, descend**.
 
@@ -169,7 +169,7 @@ tags: [topology, math590]
 > - Linear-algebra version: [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-63|Invertibility ⟺ injectivity and surjectivity]].
 
 > [!remark] Remark
-> This is the standard technique for proving bijectivity in algebraic topology: construct two maps, show they compose to the identity in both orders. It appears repeatedly: the [[Topology §23 The Fundamental Group#^thm-23-2|basepoint independence isomorphism]] ([[Topology §23 The Fundamental Group|§23]]), the [[Topology §23 The Fundamental Group#^cor-23-6|functorial corollary that π₁ is a topological invariant]] ([[Topology §23 The Fundamental Group|§23]]), and the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-11|deformation retract theorem]] ([[Topology §26 Deformation Retracts and Homotopy Type|§26]]) all use exactly this pattern.
+> This is the standard technique for proving bijectivity in algebraic topology: construct two maps, show they compose to the identity in both orders. It appears repeatedly: the [[Basepoint Independence of π₁|basepoint independence isomorphism]] ([[Topology §23 The Fundamental Group|§23]]), the [[Topology §23 The Fundamental Group#^cor-23-6|functorial corollary that π₁ is a topological invariant]] ([[Topology §23 The Fundamental Group|§23]]), and the [[Deformation Retract Induces Isomorphism on π₁|deformation retract theorem]] ([[Topology §26 Deformation Retracts and Homotopy Type|§26]]) all use exactly this pattern.
 
 ^rem-21-4
 
@@ -200,7 +200,7 @@ tags: [topology, math590]
 *Uses:* [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-3|Def. §21.3]], [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-4|Def. §21.4]]
 
 > [!remark] Remark: Contrast with Topology
-> In topology, a continuous bijection does *not* automatically have a continuous inverse — this is why [[Topology §9 Continuous Functions#^def-9-2|homeomorphism]] requires both directions, and why the [[Topology §15 Compact Spaces#^thm-15-7|compact-to-Hausdorff theorem]] is needed to get the inverse for free. For groups, bijectivity + forward homomorphism gives the inverse homomorphism for free. So “isomorphism = bijective homomorphism” is a *theorem*, not merely a convention: you only need to check one direction.
+> In topology, a continuous bijection does *not* automatically have a continuous inverse — this is why [[Topology §9 Continuous Functions#^def-9-2|homeomorphism]] requires both directions, and why the [[Bijection from Compact to Hausdorff is a Homeomorphism|compact-to-Hausdorff theorem]] is needed to get the inverse for free. For groups, bijectivity + forward homomorphism gives the inverse homomorphism for free. So “isomorphism = bijective homomorphism” is a *theorem*, not merely a convention: you only need to check one direction.
 
 ^rem-21-5
 
@@ -229,7 +229,7 @@ tags: [topology, math590]
 > [!remark] Remark: Why Isomorphisms Matter
 > An isomorphism is a **perfect dictionary** between two groups: you can do all your work in whichever group is more convenient, then translate the answer back. For algebraic topology, this has two consequences:
 >
-> **Computation:** [[Topology §24 Covering Spaces#^thm-24-10|π₁(S¹) ≅ ℤ]] means that everything about loops on $S^1$ can be answered by doing arithmetic in $\mathbb{Z}$. How many essentially different loops? Countably many, indexed by winding number. What happens when you concatenate a loop of winding number $3$ with one of winding number $-2$? Winding number $1$. The isomorphism converts hard topology into easy algebra.
+> **Computation:** [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ]] means that everything about loops on $S^1$ can be answered by doing arithmetic in $\mathbb{Z}$. How many essentially different loops? Countably many, indexed by winding number. What happens when you concatenate a loop of winding number $3$ with one of winding number $-2$? Winding number $1$. The isomorphism converts hard topology into easy algebra.
 >
 > **Distinguishing spaces:** If $\pi_1(X) \not\cong \pi_1(Y)$ — meaning no isomorphism exists — then the groups have genuinely different structure that no relabeling can reconcile. Since homeomorphisms induce isomorphisms ([[Topology §23 The Fundamental Group#^cor-23-6|Corollary §23.6]]), this forces $X \not\cong Y$. For instance, $\mathbb{Z} \not\cong \{e\}$ (different cardinalities), so $S^1 \not\cong \mathbb{R}^2$. And $\mathbb{Z} \not\cong \mathbb{Z}^2$ (one is cyclic, the other is not), so $S^1 \not\cong T^2$.
 
@@ -250,7 +250,7 @@ tags: [topology, math590]
 ^rem-21-7
 
 > [!remark]- Connections
-> - The assignment on maps: [[Topology §23 The Fundamental Group#^def-23-4|Induced Homomorphism]], with [[Topology §23 The Fundamental Group#^thm-23-5|Functoriality of π₁]].
+> - The assignment on maps: [[Topology §23 The Fundamental Group#^def-23-4|Induced Homomorphism]], with [[Functoriality of π₁|Functoriality of π₁]].
 
 > [!definition] Definition §21.5: Direct Product of Groups
 > Let $G$ and $H$ be groups. The **direct product** $G \times H$ is the set of ordered pairs $\{(g, h) : g \in G, h \in H\}$ with the componentwise operation:
@@ -523,7 +523,7 @@ tags: [topology, math590]
 ^rem-21-11
 
 > [!remark]- Connections
-> - Trivial: [[Topology §23 The Fundamental Group#^ex-23-1|ℝⁿ is Simply Connected]], [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|Sⁿ is Simply Connected for n ≥ 2]]. Infinite cyclic: [[Topology §24 Covering Spaces#^thm-24-10|π₁(S¹) ≅ ℤ]].
+> - Trivial: [[Topology §23 The Fundamental Group#^ex-23-1|ℝⁿ is Simply Connected]], [[Sⁿ is Simply Connected for n ≥ 2|Sⁿ is Simply Connected for n ≥ 2]]. Infinite cyclic: [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ]].
 > - Finite cyclic: [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-3|π₁(Pⁿ) for all n]]. Free abelian: [[Topology §23 The Fundamental Group#^cor-23-8|Fundamental Group of the Torus]]. Free: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-3|Example §29.3]].
 
 > [!remark] Remark: The Hierarchy of Relations
@@ -607,7 +607,7 @@ tags: [topology, math590]
 ^rem-21-14
 
 > [!remark] Remark: Connection to Van Kampen
-> The [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-1|Seifert-van Kampen theorem]] ([[Topology §29 The Seifert–van Kampen Theorem|§29]]) outputs a group as $(G * H)/N$. The $\langle \mid \rangle$ notation makes this concrete. If $G = \langle a_1, \ldots \mid R_1, \ldots \rangle$ and $H = \langle b_1, \ldots \mid S_1, \ldots \rangle$, then:
+> The [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]] ([[Topology §29 The Seifert–van Kampen Theorem|§29]]) outputs a group as $(G * H)/N$. The $\langle \mid \rangle$ notation makes this concrete. If $G = \langle a_1, \ldots \mid R_1, \ldots \rangle$ and $H = \langle b_1, \ldots \mid S_1, \ldots \rangle$, then:
 > - **Free product** (pool generators, keep existing relations, no new ones):
 >
 >   $$

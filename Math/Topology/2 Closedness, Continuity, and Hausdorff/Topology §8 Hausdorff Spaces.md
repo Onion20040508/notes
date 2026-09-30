@@ -20,8 +20,8 @@ tags: [topology, math590]
 > The Hausdorff property is the minimal assumption that makes a topological space behave like what we expect from analysis:
 > - **[[Topology §8 Hausdorff Spaces#^thm-8-3|Unique limits]]:** sequences (and nets) converge to at most one point.
 > - **[[Topology §8 Hausdorff Spaces#^thm-8-1|Points are closed]]:** single-point sets $\{x\}$ are closed ($T_1$).
-> - **Compact subsets are closed:** compact $\subseteq$ Hausdorff $\Rightarrow$ closed ([[Topology §15 Compact Spaces#^thm-15-4|Theorem §15.4]]).
-> - **[[Topology §15 Compact Spaces#^thm-15-7|Bijections behave]]:** continuous bijections from compact to Hausdorff are homeomorphisms.
+> - **Compact subsets are closed:** compact $\subseteq$ Hausdorff $\Rightarrow$ closed ([[Compact Subspace of a Hausdorff Space is Closed|Theorem §15.4]]).
+> - **[[Bijection from Compact to Hausdorff is a Homeomorphism|Bijections behave]]:** continuous bijections from compact to Hausdorff are homeomorphisms.
 >
 > Without Hausdorff, pathologies arise: in the cofinite topology on $\mathbb{R}$, every sequence with distinct terms converges to *every* point. Most spaces in practice are Hausdorff ([[Topology §11 Metric Topology#^thm-11-4|metric spaces]], manifolds, CW complexes), and the separation axiom hierarchy ([[Topology §19 Separation Axioms|Section 19]]) refines this further.
 

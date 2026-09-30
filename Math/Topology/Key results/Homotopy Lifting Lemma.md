@@ -18,10 +18,9 @@ tags: [topology, hub]
 - [[Topology §24 Covering Spaces#^lem-24-6|Lemma §24.6: Path Lifting Lemma]]
 
 ## Used in (Topology)
-- [[Topology §24 Covering Spaces#^rem-24-1|Remark: Why Copies Compute π₁]]
-- [[Topology §24 Covering Spaces#^rem-24-4|Remark: Reading the Diagram]]
-- [[Topology §24 Covering Spaces#^rem-24-8|Remark: What the Lift Is]]
 - [[Topology §24 Covering Spaces#^thm-24-8|Theorem §24.8: Lifts of Path-Homotopic Paths]]
 
 ## Connections
-- TODO
+- **Proof.** It runs the [[Path Lifting Lemma]] argument on I × I. The [[Lebesgue Number Lemma]] cuts the square into small rectangles, each lifted through one slice. Connectedness pins down the slice, and a path homotopy lifts to a path homotopy.
+- **Main consequence.** [[Topology §24 Covering Spaces#^thm-24-8|Lifts of Path-Homotopic Paths]] (§24.8): path-homotopic paths have lifts with the same endpoint. This makes the [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]] well defined ([[Topology §24 Covering Spaces#^rem-24-9|Well-Definedness]]). The contrapositive, that different endpoints mean not homotopic, is the working tool ([[Topology §24 Covering Spaces#^rem-24-10|The Contrapositive is the Real Tool]]).
+- **Used for.** Through §24.8, lifted endpoints become homotopy invariants. This underlies [[Fundamental Group of the Circle]] and the proof that the figure eight has non-abelian π₁ ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|Theorem §28.4]]).

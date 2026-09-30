@@ -31,7 +31,7 @@ Topology is the study of **topological spaces**, **continuous maps** between the
 
 > [!remark]- Connections
 > - “The same” is made precise by [[Topology §9 Continuous Functions#^def-9-2|homeomorphism]] (see [[Topology §9 Continuous Functions#^rem-9-2|What Homeomorphism Really Means]]).
-> - Telling $S^1$ from the figure-eight: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|π₁ of the figure eight]] vs. [[Topology §24 Covering Spaces#^thm-24-10|π₁(S¹) ≅ ℤ]].
+> - Telling $S^1$ from the figure-eight: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|π₁ of the figure eight]] vs. [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ]].
 
 **Goal:** Define topological invariants. Understand what properties are preserved under continuous maps.
 

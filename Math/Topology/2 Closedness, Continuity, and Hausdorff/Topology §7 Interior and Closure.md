@@ -46,7 +46,7 @@ tags: [topology, math590]
 ^rem-7-1
 
 > [!remark] Remark: Intuition: Room to Wiggle and Reachable by Limits
-> Think of $\text{Int}(A)$ as the points where you have “room to wiggle”—you can perturb slightly in any direction and stay in $A$. The closure $\overline{A}$ consists of points “reachable by limits” from $A$: if every neighborhood of $x$ meets $A$, then $x \in \overline{A}$ (this is made precise by [[Topology §7 Interior and Closure#^thm-7-3|Theorem §7.3]] below). The boundary $\overline{A} \setminus \text{Int}(A)$ is the “edge”—points that are reachable from $A$ but have no wiggle room.
+> Think of $\text{Int}(A)$ as the points where you have “room to wiggle”—you can perturb slightly in any direction and stay in $A$. The closure $\overline{A}$ consists of points “reachable by limits” from $A$: if every neighborhood of $x$ meets $A$, then $x \in \overline{A}$ (this is made precise by [[Closure Characterization|Theorem §7.3]] below). The boundary $\overline{A} \setminus \text{Int}(A)$ is the “edge”—points that are reachable from $A$ but have no wiggle room.
 >
 > This duality ($\text{Int}$ expands from inside, $\overline{\phantom{A}}$ approaches from outside) is formalized by the identity $X \setminus \text{Int}(A) = \overline{X \setminus A}$: the complement of the interior is the closure of the complement.
 
@@ -118,7 +118,7 @@ tags: [topology, math590]
 ^pf-7-3
 
 > [!remark]- Connections
-> - Used in [[Topology §9 Continuous Functions#^thm-9-1|Equivalent Conditions for Continuity]] and [[Topology §7 Interior and Closure#^thm-7-4|Closure and Limit Points]].
+> - Used in [[Equivalent Conditions for Continuity|Equivalent Conditions for Continuity]] and [[Topology §7 Interior and Closure#^thm-7-4|Closure and Limit Points]].
 
 ## Limit Points
 
@@ -162,7 +162,7 @@ tags: [topology, math590]
 
 ^pf-7-4
 
-*Uses:* [[Topology §7 Interior and Closure#^thm-7-3|§7.3]], [[Topology §7 Interior and Closure#^lem-7-1|§7.1]]
+*Uses:* [[Closure Characterization|§7.3]], [[Topology §7 Interior and Closure#^lem-7-1|§7.1]]
 
 > [!theorem] Corollary §7.5
 > $A \subseteq X$ (topological space) is closed if and only if $A$ contains all of its limit points.

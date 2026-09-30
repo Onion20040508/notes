@@ -173,4 +173,4 @@ tags: [topology, math590]
 
 ^pf-19-2
 
-*Uses:* [[Topology §19 Separation Axioms#^def-19-2|Def. §19.2]], [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]], [[Topology §7 Interior and Closure#^thm-7-3|§7.3]]
+*Uses:* [[Topology §19 Separation Axioms#^def-19-2|Def. §19.2]], [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]], [[Closure Characterization|§7.3]]

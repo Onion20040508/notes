@@ -32,7 +32,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - MATH 451 version: [[Intermediate Value Theorem]].
-> - Invariance follows from [[Topology §13 Connected Spaces#^thm-13-3|Continuous Image of Connected Space]]; the strictness in point 4 is [[Topology §14 Connected Subspaces of ℝ#^thm-14-4|Path-Connected Implies Connected]] and [[Topology §14 Connected Subspaces of ℝ#^ex-14-7|Topologist's Sine Curve]].
+> - Invariance follows from [[Continuous Image of a Connected Space is Connected|Continuous Image of Connected Space]]; the strictness in point 4 is [[Topology §14 Connected Subspaces of ℝ#^thm-14-4|Path-Connected Implies Connected]] and [[Topology §14 Connected Subspaces of ℝ#^ex-14-7|Topologist's Sine Curve]].
 
 > [!remark] Remark: Hausdorff and Connected are Independent
 > The [[Topology §8 Hausdorff Spaces#^def-8-1|Hausdorff]] property and connectedness are logically independent — neither implies nor contradicts the other:
@@ -146,7 +146,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - The engine of the [[Topology §14 Connected Subspaces of ℝ#^thm-14-3|Intermediate Value Theorem]].
-> - Compactness analogue: [[Topology §15 Compact Spaces#^thm-15-3|Continuous Image of Compact is Compact]].
+> - Compactness analogue: [[Continuous Image of a Compact Space is Compact|Continuous Image of Compact is Compact]].
 
 > [!remark] Remark: Properties of Preimages
 > Useful facts: $f^{-1}(A) \cup f^{-1}(B) = f^{-1}(A \cup B)$ and $f^{-1}(A) \cap f^{-1}(B) = f^{-1}(A \cap B)$.
@@ -203,7 +203,7 @@ tags: [topology, math590]
 
 ^pf-13-6
 
-*Uses:* [[Topology §13 Connected Spaces#^thm-13-3|§13.3]], [[Topology §13 Connected Spaces#^thm-13-5|§13.5]]
+*Uses:* [[Continuous Image of a Connected Space is Connected|§13.3]], [[Topology §13 Connected Spaces#^thm-13-5|§13.5]]
 
 > [!remark]- Connections
 > - Path-connected analogue: [[Topology §14 Connected Subspaces of ℝ#^thm-14-5|Product of Path-Connected Spaces]]; compact analogue: [[Topology §15 Compact Spaces#^thm-15-8|Finite Product of Compact Spaces]].

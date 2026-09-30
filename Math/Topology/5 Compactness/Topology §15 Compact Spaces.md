@@ -32,7 +32,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > **2. Key theorems that require compactness:**
 > - *[[Extreme Value Theorem]]:* $f: X \to \mathbb{R}$ continuous, $X$ compact $\Rightarrow$ $f$ achieves max and min.
 > - *Uniform continuity:* $f: X \to Y$ continuous, $X$ compact metric $\Rightarrow$ $f$ uniformly continuous.
-> - *Closed and bounded:* In $\mathbb{R}^n$, compact $\Leftrightarrow$ closed and bounded ([[Topology §15 Compact Spaces#^thm-15-12|Heine-Borel]]).
+> - *Closed and bounded:* In $\mathbb{R}^n$, compact $\Leftrightarrow$ closed and bounded ([[Heine–Borel Theorem|Heine-Borel]]).
 >
 > **3. Why open covers?** The definition may seem odd, but open covers capture “local-to-global” behavior. If a property holds “locally” (on each open set of a cover), compactness lets you patch finitely many local pieces into a global result.
 >
@@ -160,8 +160,8 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > **Why This Matters:**
 > - *Compactness is intrinsic* — it doesn't depend on the ambient space.
 > - *But the extrinsic view is often more useful:*
->     - “[[Topology §15 Compact Spaces#^thm-15-2|Closed $\subseteq$ Compact $\Rightarrow$ Compact]]”: Add $X \setminus Y$ to get a cover of $X$.
->     - “[[Topology §15 Compact Spaces#^thm-15-4|Compact $\subseteq$ Hausdorff $\Rightarrow$ Closed]]”: Use Hausdorff property of $X$ to separate points.
+>     - “[[Closed Subspace of a Compact Space is Compact|Closed $\subseteq$ Compact $\Rightarrow$ Compact]]”: Add $X \setminus Y$ to get a cover of $X$.
+>     - “[[Compact Subspace of a Hausdorff Space is Closed|Compact $\subseteq$ Hausdorff $\Rightarrow$ Closed]]”: Use Hausdorff property of $X$ to separate points.
 
 ^rem-15-3
 
@@ -206,7 +206,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 *Uses:* [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §9 Continuous Functions#^def-9-1|Def. §9.1]]
 
 > [!remark]- Connections
-> - With $Y = \mathbb{R}$ this is the source of the MATH 451 [[Extreme Value Theorem]]: $f([a,b])$ is compact, hence closed and bounded ([[Topology §15 Compact Spaces#^thm-15-12|Heine-Borel]]).
+> - With $Y = \mathbb{R}$ this is the source of the MATH 451 [[Extreme Value Theorem]]: $f([a,b])$ is compact, hence closed and bounded ([[Heine–Borel Theorem|Heine-Borel]]).
 
 > [!theorem] Theorem §15.4: Compact Subspace of Hausdorff is Closed
 > Every compact subspace of a Hausdorff space is closed.
@@ -240,8 +240,8 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > - The same point-by-point separation argument, applied twice, proves [[Topology §20 Normal Spaces#^thm-20-2|Every Compact Hausdorff Space is Normal]].
 
 > [!remark] Remark: Summary: Compact and Closed
-> - $A$ closed $\subseteq X$ compact $\Rightarrow$ $A$ compact ([[Topology §15 Compact Spaces#^thm-15-2|Theorem §15.2]]).
-> - $B$ compact $\subseteq Y$ Hausdorff $\Rightarrow$ $B$ closed ([[Topology §15 Compact Spaces#^thm-15-4|Theorem §15.4]]).
+> - $A$ closed $\subseteq X$ compact $\Rightarrow$ $A$ compact ([[Closed Subspace of a Compact Space is Compact|Theorem §15.2]]).
+> - $B$ compact $\subseteq Y$ Hausdorff $\Rightarrow$ $B$ closed ([[Compact Subspace of a Hausdorff Space is Closed|Theorem §15.4]]).
 
 ^rem-15-4
 
@@ -317,15 +317,15 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > Since $f$ is a continuous bijection, we only need to show $f^{-1}$ is continuous, i.e., $f$ is an [[Topology §12 Quotient Topology#^def-12-4|open map]] ([[Topology §9 Continuous Functions#^prop-9-2|Proposition §9.2]]), or equivalently, $f$ is a closed map.
 >
 > We show $f$ is a closed map. Let $A$ be closed in $X$.
-> 1. $A$ is compact ([[Topology §15 Compact Spaces#^thm-15-2|closed subset of compact space is compact]]).
-> 2. $f(A)$ is compact ([[Topology §15 Compact Spaces#^thm-15-3|continuous image of compact is compact]]).
-> 3. $f(A)$ is closed ([[Topology §15 Compact Spaces#^thm-15-4|compact subset of Hausdorff space is closed]]).
+> 1. $A$ is compact ([[Closed Subspace of a Compact Space is Compact|closed subset of compact space is compact]]).
+> 2. $f(A)$ is compact ([[Continuous Image of a Compact Space is Compact|continuous image of compact is compact]]).
+> 3. $f(A)$ is closed ([[Compact Subspace of a Hausdorff Space is Closed|compact subset of Hausdorff space is closed]]).
 >
 > Thus $f$ maps closed sets to closed sets, so $f$ is a closed map, hence a homeomorphism.
 
 ^pf-15-7
 
-*Uses:* [[Topology §12 Quotient Topology#^def-12-4|Def. §12.4]], [[Topology §9 Continuous Functions#^prop-9-2|§9.2]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §15 Compact Spaces#^thm-15-3|§15.3]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]]
+*Uses:* [[Topology §12 Quotient Topology#^def-12-4|Def. §12.4]], [[Topology §9 Continuous Functions#^prop-9-2|§9.2]], [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Continuous Image of a Compact Space is Compact|§15.3]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]]
 
 > [!remark]- Connections
 > - The compact-to-Hausdorff shortcut for quotient maps: [[Topology §12 Quotient Topology#^thm-12-5|Product of Quotient Maps (Compact-Hausdorff Case)]].
@@ -374,7 +374,7 @@ To prove this, we first establish a key lemma:
 >
 > Let $N_x = A_1 \cup \cdots \cup A_m$. Then $N_x$ is open and $x \times Y \subseteq N_x$.
 >
-> **Step 2:** By the [[Topology §15 Compact Spaces#^lem-15-9|Tube Lemma]], there exists an open neighborhood $W_x$ of $x$ such that $W_x \times Y \subseteq N_x$. Thus $W_x \times Y$ is covered by finitely many elements of $\mathcal{A}$.
+> **Step 2:** By the [[Tube Lemma|Tube Lemma]], there exists an open neighborhood $W_x$ of $x$ such that $W_x \times Y \subseteq N_x$. Thus $W_x \times Y$ is covered by finitely many elements of $\mathcal{A}$.
 >
 > **Step 3:** The collection $\{W_x\}_{x \in X}$ is an open cover of $X$. Since $X$ is compact, there exists a finite subcover $W_{x_1}, \ldots, W_{x_k}$.
 >
@@ -382,7 +382,7 @@ To prove this, we first establish a key lemma:
 
 ^pf-15-8
 
-*Uses:* [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §15 Compact Spaces#^lem-15-9|§15.9]]
+*Uses:* [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Tube Lemma|§15.9]]
 
 ## Compact Subspaces of $\mathbb{R}$
 
@@ -479,7 +479,7 @@ To prove this, we first establish a key lemma:
 > [!proof]+ Proof
 > $(\Rightarrow)$ Suppose $A$ is compact.
 >
-> *$A$ is closed:* $\mathbb{R}^n$ is Hausdorff ([[Topology §11 Metric Topology#^thm-11-4|it's a metric space]]), and [[Topology §15 Compact Spaces#^thm-15-4|compact $\subseteq$ Hausdorff $\Rightarrow$ closed]].
+> *$A$ is closed:* $\mathbb{R}^n$ is Hausdorff ([[Topology §11 Metric Topology#^thm-11-4|it's a metric space]]), and [[Compact Subspace of a Hausdorff Space is Closed|compact $\subseteq$ Hausdorff $\Rightarrow$ closed]].
 >
 > *$A$ is bounded:* The collection $\{B_\rho(0, m) \mid m \in \mathbb{Z}_+\}$ is an open cover of $\mathbb{R}^n$, hence covers $A$. Since $A$ is compact, there exists a finite subcover $B_\rho(0, m_1), \ldots, B_\rho(0, m_k)$ ([[Topology §15 Compact Spaces#^lem-15-1|Lemma §15.1]]).
 >
@@ -495,11 +495,11 @@ To prove this, we first establish a key lemma:
 >
 > *Proof:* $A$ is closed in $\mathbb{R}^n$, so $A = C \cap \mathbb{R}^n = C$ for some closed $C$ in $\mathbb{R}^n$ (namely $C = A$). Then $A \cap [-N,N]^n = A$ (since $A \subseteq [-N,N]^n$) is [[Topology §6 Closed Sets and Limit Points#^thm-6-2|closed in the subspace]] $[-N,N]^n$.
 >
-> Therefore $A$ is a [[Topology §15 Compact Spaces#^thm-15-2|closed subset of a compact space, hence compact]].
+> Therefore $A$ is a [[Closed Subspace of a Compact Space is Compact|closed subset of a compact space, hence compact]].
 
 ^pf-15-12
 
-*Uses:* [[Topology §11 Metric Topology#^thm-11-4|§11.4]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]], [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §15 Compact Spaces#^cor-15-11|§15.11]], [[Topology §6 Closed Sets and Limit Points#^thm-6-2|§6.2]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]]
+*Uses:* [[Topology §11 Metric Topology#^thm-11-4|§11.4]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]], [[Topology §15 Compact Spaces#^lem-15-1|§15.1]], [[Topology §15 Compact Spaces#^cor-15-11|§15.11]], [[Topology §6 Closed Sets and Limit Points#^thm-6-2|§6.2]], [[Closed Subspace of a Compact Space is Compact|§15.2]]
 
 > [!remark] Remark: Filling the Gap: Balls vs. Boxes
 > **Q:** The ball $B_\rho(0, N)$ is not a closed interval. How do we use compactness of $[a,b]$?
@@ -507,7 +507,7 @@ To prove this, we first establish a key lemma:
 > **A:** We don't need balls to be boxes! The key insight is:
 > 1. Bounded $\Rightarrow$ contained in some closed box $[-N, N]^n$
 > 2. Closed boxes are compact ([[Topology §15 Compact Spaces#^cor-15-11|product of compact intervals]])
-> 3. [[Topology §15 Compact Spaces#^thm-15-2|Closed subset of compact is compact]]
+> 3. [[Closed Subspace of a Compact Space is Compact|Closed subset of compact is compact]]
 >
 > The shape of $A$ doesn't matter—only that it fits inside a compact box.
 

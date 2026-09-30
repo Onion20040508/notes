@@ -71,3 +71,12 @@ graph TD
 - [[Topology — Algebraic Topology Toolkit]]: the four tools for computing π₁, a decision tree, and a table of computed fundamental groups.
 
 ## Workhorse examples
+- [[Lower limit topology]]
+- [[K-topology]]
+- [[Box and product topologies on ℝ^ω]]
+- [[Discrete and indiscrete topologies]]
+- [[Punctured plane]]
+- [[Figure eight]]
+- [[Torus]]
+- [[Double torus]]
+- [[Projective plane]]

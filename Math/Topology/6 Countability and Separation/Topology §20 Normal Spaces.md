@@ -72,9 +72,9 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > Let $X$ be compact Hausdorff. Since $X$ is Hausdorff, [[Topology §8 Hausdorff Spaces#^thm-8-1|one-point sets are closed]], so $X$ is $T_1$.
 >
-> Now let $A, B \subseteq X$ be disjoint closed sets. We must find disjoint open sets separating them. The proof proceeds in two stages, each using the same “compact Hausdorff separation” argument from [[Topology §15 Compact Spaces#^thm-15-4|Theorem §15.4]] (compact $\subseteq$ Hausdorff $\Rightarrow$ closed).
+> Now let $A, B \subseteq X$ be disjoint closed sets. We must find disjoint open sets separating them. The proof proceeds in two stages, each using the same “compact Hausdorff separation” argument from [[Compact Subspace of a Hausdorff Space is Closed|Theorem §15.4]] (compact $\subseteq$ Hausdorff $\Rightarrow$ closed).
 >
-> **Stage 1: Separate a point from a closed set.** Fix $a \in A$. For each $b \in B$, since $X$ is Hausdorff and $a \neq b$, choose disjoint open sets $U_b \ni a$ and $V_b \ni b$. The collection $\{V_b\}_{b \in B}$ covers $B$. Since $B$ is closed in the compact space $X$, $B$ is [[Topology §15 Compact Spaces#^thm-15-2|compact]]. Extract a finite subcover $V_{b_1}, \ldots, V_{b_n}$.
+> **Stage 1: Separate a point from a closed set.** Fix $a \in A$. For each $b \in B$, since $X$ is Hausdorff and $a \neq b$, choose disjoint open sets $U_b \ni a$ and $V_b \ni b$. The collection $\{V_b\}_{b \in B}$ covers $B$. Since $B$ is closed in the compact space $X$, $B$ is [[Closed Subspace of a Compact Space is Compact|compact]]. Extract a finite subcover $V_{b_1}, \ldots, V_{b_n}$.
 >
 > Let $U_a = \bigcap_{i=1}^{n} U_{b_i}$ and $V_a = \bigcup_{i=1}^{n} V_{b_i}$. Then:
 > - $U_a$ is open (finite intersection), $V_a$ is open (union).
@@ -83,7 +83,7 @@ tags: [topology, math590]
 >
 > So for each $a \in A$, we have an open $U_a \ni a$ and an open $V_a \supseteq B$ with $U_a \cap V_a = \emptyset$.
 >
-> **Stage 2: Separate $A$ from $B$.** The collection $\{U_a\}_{a \in A}$ covers $A$. Since $A$ is closed in a compact space, $A$ is [[Topology §15 Compact Spaces#^thm-15-2|compact]]. Extract a finite subcover $U_{a_1}, \ldots, U_{a_m}$.
+> **Stage 2: Separate $A$ from $B$.** The collection $\{U_a\}_{a \in A}$ covers $A$. Since $A$ is closed in a compact space, $A$ is [[Closed Subspace of a Compact Space is Compact|compact]]. Extract a finite subcover $U_{a_1}, \ldots, U_{a_m}$.
 >
 > Let $U = \bigcup_{j=1}^{m} U_{a_j}$ and $V = \bigcap_{j=1}^{m} V_{a_j}$. Then:
 > - $U$ is open (union), $V$ is open (finite intersection).
@@ -94,7 +94,7 @@ tags: [topology, math590]
 
 ^pf-20-2
 
-*Uses:* [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]], [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]]
+*Uses:* [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]], [[Topology §19 Separation Axioms#^def-19-3|Def. §19.3]]
 
 > [!remark] Remark: Not Covered: Urysohn's Lemma and Tietze Extension
 > Normality is the hypothesis for two deep results in Munkres §33–35 that were **not covered in this course**:
@@ -110,6 +110,6 @@ tags: [topology, math590]
 > - **Metrizable:** half-radii + triangle inequality ensure disjointness.
 > - **Compact Hausdorff:** compactness provides finite subcovers, and the $\bigcap$/$\bigcup$ trick preserves disjointness.
 >
-> The compact Hausdorff proof uses the same technique as [[Topology §15 Compact Spaces#^thm-15-4|Theorem §15.4]] (compact $\subseteq$ Hausdorff $\Rightarrow$ closed) *twice* — once to separate a point from $B$, once to separate $A$ from $B$. Each stage replaces a single point with a compact set by extracting a finite subcover and taking intersections.
+> The compact Hausdorff proof uses the same technique as [[Compact Subspace of a Hausdorff Space is Closed|Theorem §15.4]] (compact $\subseteq$ Hausdorff $\Rightarrow$ closed) *twice* — once to separate a point from $B$, once to separate $A$ from $B$. Each stage replaces a single point with a compact set by extracting a finite subcover and taking intersections.
 
 ^rem-20-4

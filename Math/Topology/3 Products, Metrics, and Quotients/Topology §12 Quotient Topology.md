@@ -257,19 +257,19 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 ^cor-12-4
 
 > [!proof]+ Proof
-> By [[Topology §12 Quotient Topology#^thm-12-3|the preceding theorem]], $g$ induces a continuous $f: X^* \to Z$. Since $g$ is surjective $\Rightarrow$ $f$ is surjective (since $f \circ p = g$).
+> By [[Universal Property of Quotient Maps|the preceding theorem]], $g$ induces a continuous $f: X^* \to Z$. Since $g$ is surjective $\Rightarrow$ $f$ is surjective (since $f \circ p = g$).
 >
 > If $f(y_1) = f(y_2)$, $y_i = g^{-1}\{z\} = y_2$. So $f$ is injective $\Rightarrow$ $f$ is bijective.
 >
 > **Proof of (1):** If $f$ is a homeomorphism, then in particular $f$ is a quotient map. Then $g$ is a [[Topology §12 Quotient Topology#^ex-12-4|composition of quotient maps]] $\Rightarrow$ $g$ is a quotient map.
 >
-> Conversely, suppose $g$ is a quotient map. By [[Topology §12 Quotient Topology#^thm-12-3|the theorem]], $f$ is also a quotient map. Since $f$ is bijective, $f^{-1}$ is well defined and continuous. So $f$ is a homeomorphism.
+> Conversely, suppose $g$ is a quotient map. By [[Universal Property of Quotient Maps|the theorem]], $f$ is also a quotient map. Since $f$ is bijective, $f^{-1}$ is well defined and continuous. So $f$ is a homeomorphism.
 >
 > **Proof of (2):** Suppose $Z$ is Hausdorff. Let $x, y \in X^*$, $x \neq y$. Since $f$ is injective $\Rightarrow$ $f(x) \neq f(y)$, and there exist disjoint neighborhoods $U$ and $V$ such that $f(x) \in U$ and $f(y) \in V$. Then $f^{-1}(U)$ and $f^{-1}(V)$ are disjoint neighborhoods of $x$ and $y$ in $X^*$.
 
 ^pf-12-4
 
-*Uses:* [[Topology §12 Quotient Topology#^thm-12-3|§12.3]], [[Topology §12 Quotient Topology#^ex-12-4|Ex. §12.4]]
+*Uses:* [[Universal Property of Quotient Maps|§12.3]], [[Topology §12 Quotient Topology#^ex-12-4|Ex. §12.4]]
 
 > [!theorem] Theorem §12.5: Product of Quotient Maps (Compact-Hausdorff Case)
 > Let $\pi_1: X_1 \to Y_1$ and $\pi_2: X_2 \to Y_2$ be quotient maps. If $X_1 \times X_2$ is compact and $Y_1 \times Y_2$ is Hausdorff, then
@@ -294,7 +294,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ^pf-12-5
 
-*Uses:* [[Topology §10 Product Topology on Arbitrary Products#^thm-10-1|§10.1]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §15 Compact Spaces#^thm-15-3|§15.3]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]], [[Topology §12 Quotient Topology#^prop-12-2|§12.2]]
+*Uses:* [[Topology §10 Product Topology on Arbitrary Products#^thm-10-1|§10.1]], [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Continuous Image of a Compact Space is Compact|§15.3]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]], [[Topology §12 Quotient Topology#^prop-12-2|§12.2]]
 
 > [!example] Example §12.6: The Square-to-Torus Quotient Map
 > Each $\pi_i: [0, 2\pi] \to S^1$ by $\pi_i(s) = e^{is}$ is a quotient map (compact $\to$ Hausdorff). The product $\pi_1 \times \pi_2: [0, 2\pi]^2 \to S^1 \times S^1 = T^2$ is automatically a quotient map by [[Topology §12 Quotient Topology#^thm-12-5|the theorem]]: $[0, 2\pi]^2$ is compact and $T^2$ is Hausdorff.
@@ -308,7 +308,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 >
 > **Theorem B (Product of Quotients, [[Topology §12 Quotient Topology#^thm-12-5|above]]):** Products of quotient maps are quotient maps (in the compact-Hausdorff setting). This is how you *build quotient maps of product spaces* from quotient maps of the factors.
 >
-> **Theorem C (Universal Property, [[Topology §12 Quotient Topology#^thm-12-3|Thm. §12.3]]):** If $\pi$ is a quotient map and $g$ is constant on fibers of $\pi$, then $g$ descends to a continuous map on the quotient. This is how you *construct continuous maps on quotient spaces*.
+> **Theorem C (Universal Property, [[Universal Property of Quotient Maps|Thm. §12.3]]):** If $\pi$ is a quotient map and $g$ is constant on fibers of $\pi$, then $g$ descends to a continuous map on the quotient. This is how you *construct continuous maps on quotient spaces*.
 >
 > The standard workflow: use A and B to establish that your map is a quotient map, then use C to descend maps from the “simple” space to the “glued” space. This toolkit will be used extensively in Part II for computing fundamental groups of spaces built by gluing.
 

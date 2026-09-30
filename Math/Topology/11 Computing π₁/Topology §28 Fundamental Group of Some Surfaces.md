@@ -53,13 +53,13 @@ tags: [topology, math590]
 ^thm-28-2
 
 > [!proof]+ Proof
-> The quotient map $p: S^2 \to P^2$ is a covering map ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-1|proved above]]). Since $S^2$ is simply connected ([[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|$\pi_1(S^2) = 0$, proved in §27]]), the [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]]
+> The quotient map $p: S^2 \to P^2$ is a covering map ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-1|proved above]]). Since $S^2$ is simply connected ([[Sⁿ is Simply Connected for n ≥ 2|$\pi_1(S^2) = 0$, proved in §27]]), the [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]]
 >
 > $$
 > \phi: \pi_1(P^2, y_0) \to p^{-1}(y_0)
 > $$
 >
-> is a bijection (by [[Topology §24 Covering Spaces#^thm-24-9|Theorem §24.9]]: when the covering space is simply connected, the lifting correspondence is bijective).
+> is a bijection (by [[Properties of the Lifting Correspondence|Theorem §24.9]]: when the covering space is simply connected, the lifting correspondence is bijective).
 >
 > The fiber $p^{-1}(y_0) = \{x_0, -x_0\}$ has exactly $2$ elements (the point and its antipode). Therefore $|\pi_1(P^2, y_0)| = 2$.
 >
@@ -67,7 +67,7 @@ tags: [topology, math590]
 
 ^pf-28-2
 
-*Uses:* [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-1|§28.1]], [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|§27.3]], [[Topology §24 Covering Spaces#^thm-24-9|§24.9]]
+*Uses:* [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-1|§28.1]], [[Sⁿ is Simply Connected for n ≥ 2|§27.3]], [[Properties of the Lifting Correspondence|§24.9]]
 
 > [!remark]- Connections
 > - Recomputed with van Kampen: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-5|$\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$ via van Kampen]].
@@ -75,7 +75,7 @@ tags: [topology, math590]
 > [!remark] Remark: The Non-Trivial Loop in $P^2$
 > The generator of $\pi_1(P^2)$ is any path in $S^2$ from $x_0$ to $-x_0$ (e.g., half a great circle), projected to $P^2$. This projects to a *loop* in $P^2$ (since $p(x_0) = p(-x_0) = y_0$). It cannot be contracted because its lift in $S^2$ is a path from $x_0$ to $-x_0$, which is not a loop.
 >
-> Traversing this loop twice gives a full great circle in $S^2$, which IS contractible (since [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|$S^2$ is simply connected]]). So the generator has order $2$: $[g]^2 = [e]$.
+> Traversing this loop twice gives a full great circle in $S^2$, which IS contractible (since [[Sⁿ is Simply Connected for n ≥ 2|$S^2$ is simply connected]]). So the generator has order $2$: $[g]^2 = [e]$.
 
 ^rem-28-1
 
@@ -96,13 +96,13 @@ tags: [topology, math590]
 ^thm-28-3
 
 > [!proof]+ Proof
-> For $n \geq 2$: $S^n$ is simply connected ([[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|§27]]), so the [[Topology §24 Covering Spaces#^thm-24-9|lifting correspondence]] $\pi_1(P^n) \to p^{-1}(y_0)$ is a bijection. The fiber has $2$ elements, so $|\pi_1(P^n)| = 2$, giving $\pi_1(P^n) \cong \mathbb{Z}/2\mathbb{Z}$.
+> For $n \geq 2$: $S^n$ is simply connected ([[Sⁿ is Simply Connected for n ≥ 2|§27]]), so the [[Properties of the Lifting Correspondence|lifting correspondence]] $\pi_1(P^n) \to p^{-1}(y_0)$ is a bijection. The fiber has $2$ elements, so $|\pi_1(P^n)| = 2$, giving $\pi_1(P^n) \cong \mathbb{Z}/2\mathbb{Z}$.
 >
-> For $n = 1$: $P^1 = S^1 / (x \sim -x)$. The map $z \mapsto z^2$ is a homeomorphism $P^1 \to S^1$ (it identifies antipodal points on $S^1$ and maps onto $S^1$ bijectively). So [[Topology §23 The Fundamental Group#^cor-23-6|$\pi_1(P^1) \cong \pi_1(S^1)$]] [[Topology §24 Covering Spaces#^thm-24-10|$\cong \mathbb{Z}$]].
+> For $n = 1$: $P^1 = S^1 / (x \sim -x)$. The map $z \mapsto z^2$ is a homeomorphism $P^1 \to S^1$ (it identifies antipodal points on $S^1$ and maps onto $S^1$ bijectively). So [[Topology §23 The Fundamental Group#^cor-23-6|$\pi_1(P^1) \cong \pi_1(S^1)$]] [[Fundamental Group of the Circle|$\cong \mathbb{Z}$]].
 
 ^pf-28-3
 
-*Uses:* [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|§27.3]], [[Topology §24 Covering Spaces#^thm-24-9|§24.9]], [[Topology §23 The Fundamental Group#^cor-23-6|§23.6]], [[Topology §24 Covering Spaces#^thm-24-10|§24.10]]
+*Uses:* [[Sⁿ is Simply Connected for n ≥ 2|§27.3]], [[Properties of the Lifting Correspondence|§24.9]], [[Topology §23 The Fundamental Group#^cor-23-6|§23.6]], [[Fundamental Group of the Circle|§24.10]]
 
 ## The Wedge Sum
 
@@ -164,7 +164,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 ^thm-28-4
 
 > [!proof]+ Proof
-> We construct a covering space of $X$ and use the [[Topology §24 Covering Spaces#^lem-24-6|uniqueness of path lifting]].
+> We construct a covering space of $X$ and use the [[Path Lifting Lemma|uniqueness of path lifting]].
 >
 > **Step 1: The covering space.** Let $E \subseteq \mathbb{R}^2$ be the space consisting of:
 > - The $x$-axis and the $y$-axis (two perpendicular lines).
@@ -186,7 +186,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 >
 > *Recall the framework ([[Topology §24 Covering Spaces|§24]]).* We have a covering map $p: E \to B$ (here $B = X$ is the figure eight, $E$ is the grid-with-circles space from Step 1). Two results from §24 do all the work:
 >
-> - **[[Topology §24 Covering Spaces#^lem-24-6|Path lifting theorem]]:** Given a path $\alpha$ in $B$ starting at $b_0$, and a point $e_0 \in E$ with $p(e_0) = b_0$, there exists a *unique* path $\tilde{\alpha}$ in $E$ satisfying two conditions:
+> - **[[Path Lifting Lemma|Path lifting theorem]]:** Given a path $\alpha$ in $B$ starting at $b_0$, and a point $e_0 \in E$ with $p(e_0) = b_0$, there exists a *unique* path $\tilde{\alpha}$ in $E$ satisfying two conditions:
 >     1. $\tilde{\alpha}(0) = e_0$ (starts at the chosen lift of the basepoint),
 >     2. $p \circ \tilde{\alpha} = \alpha$ (projects back to the original path).
 >
@@ -239,10 +239,10 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 
 ^pf-28-4
 
-*Uses:* [[Topology §24 Covering Spaces#^lem-24-6|§24.6]], [[Topology §24 Covering Spaces#^thm-24-8|§24.8]], [[Topology §24 Covering Spaces#^thm-24-2|§24.2]]
+*Uses:* [[Path Lifting Lemma|§24.6]], [[Topology §24 Covering Spaces#^thm-24-8|§24.8]], [[Topology §24 Covering Spaces#^thm-24-2|§24.2]]
 
 > [!remark] Remark
-> This proves $\pi_1(X)$ is non-abelian, which already distinguishes the figure eight from any space with abelian $\pi_1$ (such as the [[Topology §23 The Fundamental Group#^cor-23-8|torus]], [[Topology §24 Covering Spaces#^thm-24-10|$S^1$]], or any [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|$S^n$]]). The full result $\pi_1(X) \cong F_2$ (the [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-8|free group]] on two generators — meaning not only non-abelian, but with *no relations at all* between $[f]$ and $[g]$) requires the [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|Seifert-van Kampen theorem (§29)]].
+> This proves $\pi_1(X)$ is non-abelian, which already distinguishes the figure eight from any space with abelian $\pi_1$ (such as the [[Topology §23 The Fundamental Group#^cor-23-8|torus]], [[Fundamental Group of the Circle|$S^1$]], or any [[Sⁿ is Simply Connected for n ≥ 2|$S^n$]]). The full result $\pi_1(X) \cong F_2$ (the [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-8|free group]] on two generators — meaning not only non-abelian, but with *no relations at all* between $[f]$ and $[g]$) requires the [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|Seifert-van Kampen theorem (§29)]].
 
 ^rem-28-4
 
@@ -319,7 +319,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 >
 > | **Surface** | $\pi_1$ | **Property** |
 > |---|---|---|
-> | $S^2$ | [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3\|$0$]] | Trivial |
+> | $S^2$ | [[Sⁿ is Simply Connected for n ≥ 2\|$0$]] | Trivial |
 > | $P^2$ | [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2\|$\mathbb{Z}/2\mathbb{Z}$]] | Finite, order $2$ |
 > | $S^1 \times S^1$ | [[Topology §23 The Fundamental Group#^cor-23-8\|$\mathbb{Z} \times \mathbb{Z}$]] | Infinite, abelian |
 > | $\Sigma_2$ | [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-5\|non-abelian]] | Infinite, non-abelian |
@@ -328,13 +328,13 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 
 ^pf-28-6
 
-*Uses:* [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|§27.3]], [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2|§28.2]], [[Topology §23 The Fundamental Group#^cor-23-8|§23.8]], [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-5|§28.5]], [[Topology §23 The Fundamental Group#^cor-23-6|§23.6]]
+*Uses:* [[Sⁿ is Simply Connected for n ≥ 2|§27.3]], [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2|§28.2]], [[Topology §23 The Fundamental Group#^cor-23-8|§23.8]], [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-5|§28.5]], [[Topology §23 The Fundamental Group#^cor-23-6|§23.6]]
 
 > [!remark] Remark
 > This is the payoff of the entire course: purely algebraic invariants ($\pi_1$) distinguish geometric objects (surfaces). Each computation used different tools:
-> - $\pi_1(S^2) = 0$: [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|generation theorem]] + stereographic projection ([[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|§27]]).
+> - $\pi_1(S^2) = 0$: [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|generation theorem]] + stereographic projection ([[Sⁿ is Simply Connected for n ≥ 2|§27]]).
 > - $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$: covering space with simply connected cover ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2|§28]]).
-> - $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$: [[Topology §23 The Fundamental Group#^thm-23-7|product formula]] (§23) + [[Topology §24 Covering Spaces#^thm-24-10|$\pi_1(S^1) \cong \mathbb{Z}$]] via [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]] ([[Topology §24 Covering Spaces|§24]]).
+> - $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$: [[Topology §23 The Fundamental Group#^thm-23-7|product formula]] (§23) + [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]] via [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]] ([[Topology §24 Covering Spaces|§24]]).
 > - $\pi_1(\Sigma_2)$ non-abelian: retract of figure eight + covering space lifting argument ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-5|§28]]).
 
 ^rem-28-6

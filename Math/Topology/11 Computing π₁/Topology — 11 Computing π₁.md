@@ -24,4 +24,4 @@ Ranked by how many later results depend on them (through the proofs' citations).
 - [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|Theorem §27.1: Generation by Open Cover (Munkres 59.1)]]: 8 later results
 - [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|Corollary §27.2: Simply Connected from Open Cover]]: 4 later results
 - [[Sⁿ is Simply Connected for n ≥ 2|Theorem §27.3: Sⁿ is Simply Connected for n ≥ 2]]: 3 later results
-- [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-1|Theorem §28.1: p: S^2 → P^2 is a Covering Map]]: 2 later results
+- [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-1|Theorem §28.1: p: S² → P² is a Covering Map]]: 2 later results

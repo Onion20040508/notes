@@ -24,5 +24,5 @@ tags: [chapter, topology]
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|Lemma §26.1: Homotopic Maps and Induced Homomorphisms]]: 4 later results
 - [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|Proposition §26.3: Algebraic Properties of Retractions]]: 3 later results
-- [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|Proposition §26.5: B^n is Convex and Simply Connected]]: 3 later results
+- [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|Proposition §26.5: Bⁿ is Convex and Simply Connected]]: 3 later results
 - [[No-Retraction Theorem|Theorem §26.6: No-Retraction Theorem (Munkres 55.2)]]: 2 later results

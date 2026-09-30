@@ -18,7 +18,9 @@ tags: [topology, hub]
 - [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Definition §26.1: Retraction]]
 
 ## Used in (Topology)
-- [[Topology §23 The Fundamental Group#^rem-23-6|Remark: Upcoming: Computing Fundamental Groups]]
+- (not cited later in the course)
 
 ## Connections
-- TODO
+- **Ingredients.** The proof uses [[Fundamental Group of the Circle]] (z ↦ zⁿ induces multiplication by n on ℤ) and the retraction of ℝ² ∖ {0} onto S¹, which makes the inclusion injective on π₁ ([[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|Algebraic Properties of Retractions]]). It also uses [[Topology §24 Covering Spaces#^lem-24-12|Equivalent Conditions for Nullhomotopy]] (§24.12). The only analytic input is a triangle-inequality estimate on S¹ ([[Topology §25 The Fundamental Theorem of Algebra#^rem-25-1|remark after the proof]]).
+- **Pattern.** Like the [[No-Retraction Theorem]], it is a proof by contradiction: an assumed map (here a root-free polynomial on B²) is incompatible with π₁(S¹) ≅ ℤ.
+- **Linear algebra.** The same theorem is used without proof in Axler as [[Fundamental theorem of algebra, first version]].

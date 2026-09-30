@@ -1,0 +1,14 @@
+% Figure from MATH 590 notes, section 8. Compile with the notes preamble.
+\begin{tikzpicture}
+  \draw[black!55, thick] plot[smooth cycle, tension=0.8] coordinates {(-3.2,0.1) (-2.4,1.45) (0,1.75) (2.5,1.4) (3.3,0) (2.4,-1.4) (0,-1.6) (-2.6,-1.3)};
+  \node[font=\small, black!70] at (-2.75,1.35) {$X$};
+  \fill[figB!12] plot[smooth cycle, tension=0.9] coordinates {(-2.2,0) (-1.7,0.95) (-0.6,0.85) (-0.25,0) (-0.7,-0.9) (-1.8,-0.85)};
+  \draw[figB, thick, dashed] plot[smooth cycle, tension=0.9] coordinates {(-2.2,0) (-1.7,0.95) (-0.6,0.85) (-0.25,0) (-0.7,-0.9) (-1.8,-0.85)};
+  \fill[figR!15] plot[smooth cycle, tension=0.9] coordinates {(0.35,0.1) (0.8,0.95) (1.9,0.9) (2.3,0) (1.8,-0.95) (0.75,-0.8)};
+  \draw[figR, thick, dashed] plot[smooth cycle, tension=0.9] coordinates {(0.35,0.1) (0.8,0.95) (1.9,0.9) (2.3,0) (1.8,-0.95) (0.75,-0.8)};
+  \fill[black] (-1.25,0.05) circle (1.6pt) node[below=2pt, font=\scriptsize] {$x_1$};
+  \fill[black] (1.3,0.05) circle (1.6pt) node[below=2pt, font=\scriptsize] {$x_2$};
+  \node[font=\scriptsize, figB] at (-1.35,0.6) {$U_1$};
+  \node[font=\scriptsize, figR] at (1.4,0.6) {$U_2$};
+  \node[font=\scriptsize, black!60] at (0.05,-1.25) {$U_1 \cap U_2 = \varnothing$};
+\end{tikzpicture}

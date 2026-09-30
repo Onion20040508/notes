@@ -18,9 +18,10 @@ tags: [topology, hub]
 - [[Topology §15 Compact Spaces#^thm-15-4|Theorem §15.4: Compact Subspace of Hausdorff is Closed]]
 
 ## Used in (Topology)
-- [[Topology §8 Hausdorff Spaces#^rem-8-1|Remark: Why Hausdorff is the “Reasonable” Separation Axiom]]
-- [[Topology §21 Algebra Prerequisites꞉ Groups#^rem-21-5|Remark: Contrast with Topology]]
 - [[Topology §24 Covering Spaces#^thm-24-2|Theorem §24.2: p: ℝ → S¹ is a Covering Map]]
 
 ## Connections
-- TODO
+- **Mechanism.** It chains [[Closed Subspace of a Compact Space is Compact]], [[Continuous Image of a Compact Space is Compact]] and [[Compact Subspace of a Hausdorff Space is Closed]] to show f is a closed map, so f⁻¹ is continuous for free ([[Topology §15 Compact Spaces#^rem-15-6|Why This Theorem is Powerful]]).
+- **Quotient maps.** The same closed-map argument makes any continuous surjection from a compact space to a Hausdorff space a quotient map ([[Topology §12 Quotient Topology#^rem-12-6|remark after Proposition §12.2]]). This is Theorem A of [[Topology §12 Quotient Topology#^rem-12-8|The Quotient Space Toolkit]] and gives [[Topology §12 Quotient Topology#^thm-12-5|Product of Quotient Maps (Compact-Hausdorff Case)]] (§12.5).
+- **Covering spaces.** It supplies the local homeomorphisms in [[Topology §24 Covering Spaces#^thm-24-2|p: ℝ → S¹ is a Covering Map]] (§24.2).
+- **Why it is needed.** A continuous bijection need not be a homeomorphism: the identity ℝ_ℓ → ℝ is continuous but its inverse is not ([[Topology §9 Continuous Functions#^ex-9-2|Example §9.2]]). For groups, by contrast, a bijective homomorphism is automatically an isomorphism ([[Topology §21 Algebra Prerequisites꞉ Groups#^rem-21-5|Contrast with Topology]]).

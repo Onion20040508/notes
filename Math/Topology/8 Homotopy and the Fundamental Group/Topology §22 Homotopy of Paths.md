@@ -16,7 +16,7 @@ tags: [topology, math590]
 > - Fixing $t$ gives a single path $F(\cdot, t): I \to X$ (one frame of the movie).
 > - Fixing $s$ gives a trajectory $F(s, \cdot): I \to X$ (how one point moves over time).
 >
-> Requiring $F$ to be continuous on $I \times I$ (in the product topology) ensures the deformation is smooth in *both* directions simultaneously—nearby $(s, t)$ values give nearby points in $X$, so there are no “jumps” in space or time. The compactness of $I = [0,1]$ is also essential: paths have definite start and end points, deformations have a definite “before” and “after,” and key arguments ([[Topology §16 Limit Point Compactness#^lem-16-3|Lebesgue number lemma]], [[Topology §9 Continuous Functions#^thm-9-5|pasting lemma]]) rely on working with compact domains.
+> Requiring $F$ to be continuous on $I \times I$ (in the product topology) ensures the deformation is smooth in *both* directions simultaneously—nearby $(s, t)$ values give nearby points in $X$, so there are no “jumps” in space or time. The compactness of $I = [0,1]$ is also essential: paths have definite start and end points, deformations have a definite “before” and “after,” and key arguments ([[Lebesgue Number Lemma|Lebesgue number lemma]], [[Pasting Lemma|pasting lemma]]) rely on working with compact domains.
 
 ^rem-22-1
 
@@ -134,11 +134,11 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 >
 > $$G(x, t) = \begin{cases} F(x, 2t) & t \in [0, 1/2] \\ F'(x, 2t-1) & t \in [1/2, 1]. \end{cases}$$
 >
-> At $t = 1/2$: $F(x,1) = f'(x) = F'(x,0)$, so $G$ is well-defined and continuous by the [[Topology §9 Continuous Functions#^thm-9-5|pasting lemma]].
+> At $t = 1/2$: $F(x,1) = f'(x) = F'(x,0)$, so $G$ is well-defined and continuous by the [[Pasting Lemma|pasting lemma]].
 
 ^pf-22-3
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-5|§9.5]]
+*Uses:* [[Pasting Lemma|§9.5]]
 
 > [!definition] Definition §22.5: Path Homotopy Class
 > The equivalence class of a path $f$ under $\simeq_p$ is denoted $[f]$.
@@ -155,7 +155,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 ^def-22-6
 
 > [!remark] Remark: Well-Definedness
-> At $s = 1/2$: $f(1) = x_1 = g(0)$, so both pieces agree. Continuous by the [[Topology §9 Continuous Functions#^thm-9-5|pasting lemma]]. The product traverses $f$ then $g$, each at double speed.
+> At $s = 1/2$: $f(1) = x_1 = g(0)$, so both pieces agree. Continuous by the [[Pasting Lemma|pasting lemma]]. The product traverses $f$ then $g$, each at double speed.
 
 ^rem-22-6
 
@@ -180,7 +180,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 >
 > **Well-defined at $s = 1/2$:** $F(1, t) = x_1 = G(0, t)$ for all $t$. ✓
 >
-> **Continuous:** By the [[Topology §9 Continuous Functions#^thm-9-5|pasting lemma]] ($[0, 1/2] \times I$ and $[1/2, 1] \times I$ are closed). ✓
+> **Continuous:** By the [[Pasting Lemma|pasting lemma]] ($[0, 1/2] \times I$ and $[1/2, 1] \times I$ are closed). ✓
 >
 > **Boundary conditions:**
 > - $H(s, 0) = F(2s, 0) = f(2s)$ on $[0, 1/2]$ and $G(2s-1, 0) = g(2s-1)$ on $[1/2, 1]$. This is $(f * g)(s)$. ✓
@@ -192,7 +192,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 ^pf-22-4
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-5|§9.5]]
+*Uses:* [[Pasting Lemma|§9.5]]
 
 ## Reparameterization Lemma
 
@@ -257,7 +257,7 @@ The following theorem shows that the product of path homotopy classes satisfies 
 >
 > $$H(s, t) = \begin{cases} f\!\left(\dfrac{4s}{t + 1}\right) & s \in \left[0, \dfrac{t+1}{4}\right] \\[6pt] g(4s - t - 1) & s \in \left[\dfrac{t+1}{4}, \dfrac{t+2}{4}\right] \\[6pt] h\!\left(\dfrac{4s - t - 2}{2 - t}\right) & s \in \left[\dfrac{t+2}{4}, 1\right] \end{cases}$$
 >
-> **Continuity:** Each piece is a composition of continuous functions. At the junctions $s = (t+1)/4$ and $s = (t+2)/4$, the pieces agree (check by substitution), so $H$ is continuous by the [[Topology §9 Continuous Functions#^thm-9-5|pasting lemma]] (the three regions are closed subsets of $I \times I$).
+> **Continuity:** Each piece is a composition of continuous functions. At the junctions $s = (t+1)/4$ and $s = (t+2)/4$, the pieces agree (check by substitution), so $H$ is continuous by the [[Pasting Lemma|pasting lemma]] (the three regions are closed subsets of $I \times I$).
 >
 > **Boundary conditions:**
 > - $t = 0$: the breakpoints are $s = 1/4$ and $s = 1/2$. Then $H(s, 0) = f(4s)$ on $[0, 1/4]$, $g(4s-1)$ on $[1/4, 1/2]$, $h(2s-1)$ on $[1/2, 1]$. This is $(f*g)*h$. ✓
@@ -269,7 +269,7 @@ The following theorem shows that the product of path homotopy classes satisfies 
 
 ^pf-22-6
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-5|§9.5]]
+*Uses:* [[Pasting Lemma|§9.5]]
 
 > [!remark] Remark: Idea of the Associativity Homotopy
 > The homotopy continuously slides the breakpoints: at $t = 0$ the three pieces occupy $[0, 1/4], [1/4, 1/2], [1/2, 1]$ (the left-associated schedule), and at $t = 1$ they occupy $[0, 1/2], [1/2, 3/4], [3/4, 1]$ (the right-associated schedule). Throughout, $g$ always occupies an interval of length $1/4$—only $f$ and $h$ trade time with each other. The arguments inside $f$, $g$, $h$ are chosen so that each function is called on $[0, 1]$ within its piece.
@@ -281,7 +281,7 @@ The following theorem shows that the product of path homotopy classes satisfies 
 >
 > $$H(s, t) = \begin{cases} f\!\left(\dfrac{2s}{1 + t}\right) & s \in \left[0, \dfrac{1+t}{2}\right] \\[6pt] x_1 & s \in \left[\dfrac{1+t}{2}, 1\right] \end{cases}$$
 >
-> **Continuity:** On the first piece, $H$ is $f$ composed with a continuous function. At the junction $s = (1+t)/2$: the first piece gives $f\!\left(\frac{2 \cdot (1+t)/2}{1+t}\right) = f(1) = x_1$, matching the second piece. Continuous by the [[Topology §9 Continuous Functions#^thm-9-5|pasting lemma]].
+> **Continuity:** On the first piece, $H$ is $f$ composed with a continuous function. At the junction $s = (1+t)/2$: the first piece gives $f\!\left(\frac{2 \cdot (1+t)/2}{1+t}\right) = f(1) = x_1$, matching the second piece. Continuous by the [[Pasting Lemma|pasting lemma]].
 >
 > **Boundary conditions:**
 > - $t = 0$: breakpoint at $s = 1/2$. $H(s, 0) = f(2s)$ on $[0, 1/2]$ and $x_1$ on $[1/2, 1]$. This is $f * e_{x_1}$. ✓
@@ -293,14 +293,14 @@ The following theorem shows that the product of path homotopy classes satisfies 
 
 ^pf-22-6-2
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-5|§9.5]]
+*Uses:* [[Pasting Lemma|§9.5]]
 
 > [!proof]+ Proof of (2b): Left Identity $[e_{x_0}] * [f] = [f]$
 > Define $H: I \times I \to X$ by:
 >
 > $$H(s, t) = \begin{cases} x_0 & s \in \left[0, \dfrac{1-t}{2}\right] \\[6pt] f\!\left(\dfrac{2s - 1 + t}{1 + t}\right) & s \in \left[\dfrac{1-t}{2}, 1\right] \end{cases}$$
 >
-> **Continuity:** At $s = (1-t)/2$: the second piece gives $f\!\left(\frac{2 \cdot (1-t)/2 - 1 + t}{1+t}\right) = f(0) = x_0$. [[Topology §9 Continuous Functions#^thm-9-5|Pasting lemma]] applies.
+> **Continuity:** At $s = (1-t)/2$: the second piece gives $f\!\left(\frac{2 \cdot (1-t)/2 - 1 + t}{1+t}\right) = f(0) = x_0$. [[Pasting Lemma|Pasting lemma]] applies.
 >
 > **Boundary conditions:**
 > - $t = 0$: breakpoint at $s = 1/2$. $H(s, 0) = x_0$ on $[0, 1/2]$ and $f(2s - 1)$ on $[1/2, 1]$. This is $e_{x_0} * f$. ✓
@@ -312,7 +312,7 @@ The following theorem shows that the product of path homotopy classes satisfies 
 
 ^pf-22-6-3
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-5|§9.5]]
+*Uses:* [[Pasting Lemma|§9.5]]
 
 > [!proof]+ Proof of (3): Inverse — $f * \bar{f} \simeq_p e_{x_0}$
 > Define $H: I \times I \to X$ by:
@@ -321,7 +321,7 @@ The following theorem shows that the product of path homotopy classes satisfies 
 >
 > **Interpretation:** At time $t$, walk along $f$ up to $f(1-t)$, pause there, then walk back. As $t$ increases, we walk less far before turning around.
 >
-> **Continuity:** At $s = (1-t)/2$: first piece gives $f(2 \cdot (1-t)/2) = f(1-t)$, matching the second piece. At $s = (1+t)/2$: third piece gives $f(2 - 2 \cdot (1+t)/2) = f(1-t)$, matching the second piece. [[Topology §9 Continuous Functions#^thm-9-5|Pasting lemma]] applies (three closed regions).
+> **Continuity:** At $s = (1-t)/2$: first piece gives $f(2 \cdot (1-t)/2) = f(1-t)$, matching the second piece. At $s = (1+t)/2$: third piece gives $f(2 - 2 \cdot (1+t)/2) = f(1-t)$, matching the second piece. [[Pasting Lemma|Pasting lemma]] applies (three closed regions).
 >
 > **Boundary conditions:**
 > - $t = 0$: breakpoints at $s = 1/2$ and $s = 1/2$ (middle piece collapses). $H(s, 0) = f(2s)$ on $[0, 1/2]$ and $f(2 - 2s) = \bar{f}(2s - 1)$ on $[1/2, 1]$. This is $f * \bar{f}$. ✓
@@ -333,7 +333,7 @@ The following theorem shows that the product of path homotopy classes satisfies 
 
 ^pf-22-6-4
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-5|§9.5]]
+*Uses:* [[Pasting Lemma|§9.5]]
 
 > [!proof]+ Proof of (3): Inverse — $\bar{f} * f \simeq_p e_{x_1}$
 > Define $H: I \times I \to X$ by:
@@ -346,7 +346,7 @@ The following theorem shows that the product of path homotopy classes satisfies 
 > - At $s = (1-t)/2$: first piece gives $f(1 - 2 \cdot (1-t)/2) = f(t)$, matching the second piece. ✓
 > - At $s = (1+t)/2$: third piece gives $f(2 \cdot (1+t)/2 - 1) = f(t)$, matching the second piece. ✓
 >
-> **Continuous:** By the [[Topology §9 Continuous Functions#^thm-9-5|pasting lemma]] (three closed regions of $I \times I$). ✓
+> **Continuous:** By the [[Pasting Lemma|pasting lemma]] (three closed regions of $I \times I$). ✓
 >
 > **Boundary conditions:**
 > - $t = 0$: breakpoints at $s = 1/2$ and $s = 1/2$ (middle piece collapses). $H(s, 0) = f(1-2s)$ on $[0, 1/2]$ and $f(2s-1)$ on $[1/2, 1]$. This is $\bar{f}(2s)$ on $[0,1/2]$ and $f(2s-1)$ on $[1/2,1]$, i.e., $\bar{f} * f$. ✓
@@ -358,7 +358,7 @@ The following theorem shows that the product of path homotopy classes satisfies 
 
 ^pf-22-6-5
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-5|§9.5]]
+*Uses:* [[Pasting Lemma|§9.5]]
 
 > [!remark] Remark: What These Properties Mean
 > These three properties are exactly the group axioms for the operation $*$ on homotopy classes. For general paths (not loops), we don't quite have a group (the product $[f] * [g]$ is only defined when the terminal point of $f$ equals the initial point of $g$—this is a *groupoid*). But if we restrict to **loops at a fixed basepoint $x_0$** (paths with $f(0) = f(1) = x_0$), then all products are defined, and we get a genuine group: the **fundamental group** $\pi_1(X, x_0)$ ([[Topology §23 The Fundamental Group#^def-23-2|Definition §23.2]]).

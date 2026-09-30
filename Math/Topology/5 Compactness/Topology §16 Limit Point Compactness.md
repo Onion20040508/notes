@@ -150,7 +150,7 @@ To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas
 ^pf-16-3
 
 > [!remark]- Connections
-> - The subdivision step in the [[Topology §24 Covering Spaces#^lem-24-6|Path Lifting Lemma]], the [[Topology §24 Covering Spaces#^lem-24-7|Homotopy Lifting Lemma]], and [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|Generation by Open Cover]].
+> - The subdivision step in the [[Path Lifting Lemma|Path Lifting Lemma]], the [[Homotopy Lifting Lemma|Homotopy Lifting Lemma]], and [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|Generation by Open Cover]].
 
 > [!theorem] Lemma §16.4: Sequentially Compact $\Rightarrow$ Totally Bounded
 > If $(X, d)$ is sequentially compact, then for every $\varepsilon > 0$, there exist finitely many points $x_1, \ldots, x_n$ such that $X = B(x_1, \varepsilon) \cup \cdots \cup B(x_n, \varepsilon)$.
@@ -167,7 +167,7 @@ To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas
 > [!proof]+ Proof of $(3) \Rightarrow (1)$: Sequentially Compact $\Rightarrow$ Compact
 > Let $\{U_\alpha\}$ be an open cover of $X$.
 >
-> **Step 1:** By the [[Topology §16 Limit Point Compactness#^lem-16-3|Lebesgue number lemma]], there exists $\delta > 0$ such that every set of diameter $< \delta$ lies inside some $U_\alpha$.
+> **Step 1:** By the [[Lebesgue Number Lemma|Lebesgue number lemma]], there exists $\delta > 0$ such that every set of diameter $< \delta$ lies inside some $U_\alpha$.
 >
 > **Step 2:** By [[Topology §16 Limit Point Compactness#^lem-16-4|total boundedness]], there exist $x_1, \ldots, x_n$ such that $X = B(x_1, \delta/3) \cup \cdots \cup B(x_n, \delta/3)$.
 >
@@ -177,7 +177,7 @@ To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas
 
 ^pf-16-2-2
 
-*Uses:* [[Topology §16 Limit Point Compactness#^lem-16-3|§16.3]], [[Topology §16 Limit Point Compactness#^lem-16-4|§16.4]]
+*Uses:* [[Lebesgue Number Lemma|§16.3]], [[Topology §16 Limit Point Compactness#^lem-16-4|§16.4]]
 
 > [!remark] Remark: Summary of the Equivalence
 > For a metrizable space $X$, the proof cycle is:
@@ -188,6 +188,6 @@ To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas
 >
 > ([[Topology §16 Limit Point Compactness#^thm-16-1|Theorem §16.1]], [[Topology §16 Limit Point Compactness#^pf-16-2|proof of $(2) \Rightarrow (3)$]], [[Topology §16 Limit Point Compactness#^pf-16-2-2|proof of $(3) \Rightarrow (1)$]].)
 >
-> The metric is essential at every step: $(2) \Rightarrow (3)$ uses shrinking balls $B(x, 1/i)$ to extract subsequences, and $(3) \Rightarrow (1)$ uses the [[Topology §16 Limit Point Compactness#^lem-16-3|Lebesgue number lemma]] (diameter estimates) and [[Topology §16 Limit Point Compactness#^lem-16-4|total boundedness]] (finite $\varepsilon$-ball covers). None of these arguments work in a general topological space without a metric.
+> The metric is essential at every step: $(2) \Rightarrow (3)$ uses shrinking balls $B(x, 1/i)$ to extract subsequences, and $(3) \Rightarrow (1)$ uses the [[Lebesgue Number Lemma|Lebesgue number lemma]] (diameter estimates) and [[Topology §16 Limit Point Compactness#^lem-16-4|total boundedness]] (finite $\varepsilon$-ball covers). None of these arguments work in a general topological space without a metric.
 
 ^rem-16-2

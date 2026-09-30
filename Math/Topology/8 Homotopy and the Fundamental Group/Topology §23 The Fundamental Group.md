@@ -27,9 +27,9 @@ tags: [topology, math590]
 > [!remark] Remark
 > By the results of [[Topology §22 Homotopy of Paths|§22]], $\pi_1(X, x_0)$ is indeed a [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-1|group]]:
 > - The operation $*$ is well-defined on homotopy classes ([[Topology §22 Homotopy of Paths#^prop-22-4|Proposition §22.4]]).
-> - Associativity: $[f] * ([g] * [h]) = ([f] * [g]) * [h]$ ([[Topology §22 Homotopy of Paths#^thm-22-6|Theorem §22.6(1)]]).
-> - Identity: $[e_{x_0}]$, where $e_{x_0}(s) = x_0$ for all $s$ ([[Topology §22 Homotopy of Paths#^thm-22-6|Theorem §22.6(2)]]).
-> - Inverses: $[f]^{-1} = [\bar{f}]$, where $\bar{f}(s) = f(1-s)$ ([[Topology §22 Homotopy of Paths#^thm-22-6|Theorem §22.6(3)]]).
+> - Associativity: $[f] * ([g] * [h]) = ([f] * [g]) * [h]$ ([[Properties of Path Concatenation|Theorem §22.6(1)]]).
+> - Identity: $[e_{x_0}]$, where $e_{x_0}(s) = x_0$ for all $s$ ([[Properties of Path Concatenation|Theorem §22.6(2)]]).
+> - Inverses: $[f]^{-1} = [\bar{f}]$, where $\bar{f}(s) = f(1-s)$ ([[Properties of Path Concatenation|Theorem §22.6(3)]]).
 >
 > All products are defined because every loop starts and ends at $x_0$.
 
@@ -64,7 +64,7 @@ tags: [topology, math590]
 
 ^pf-23-1
 
-*Uses:* [[Topology §22 Homotopy of Paths#^thm-22-6|§22.6]]
+*Uses:* [[Properties of Path Concatenation|§22.6]]
 
 ## First Computations
 
@@ -92,12 +92,12 @@ tags: [topology, math590]
 > - $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$: loops around the puncture cannot contract.
 > - $\pi_1(\mathbb{R}^3 \setminus \{0\}) = \{e\}$: every loop can “go around” the missing point in 3D.
 >
-> If $\mathbb{R}^2 \cong \mathbb{R}^3$, then $\mathbb{R}^2 \setminus \{0\} \cong \mathbb{R}^3 \setminus \{0\}$, which would force $\mathbb{Z} \cong \{e\}$—a contradiction. The proof of [[Topology §24 Covering Spaces#^thm-24-10|$\pi_1(S^1) \cong \mathbb{Z}$]] (which gives $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$ since $\mathbb{R}^2 \setminus \{0\}$ [[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-7|deformation retracts onto $S^1$]]) is the main goal of the next several sections.
+> If $\mathbb{R}^2 \cong \mathbb{R}^3$, then $\mathbb{R}^2 \setminus \{0\} \cong \mathbb{R}^3 \setminus \{0\}$, which would force $\mathbb{Z} \cong \{e\}$—a contradiction. The proof of [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]] (which gives $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$ since $\mathbb{R}^2 \setminus \{0\}$ [[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-7|deformation retracts onto $S^1$]]) is the main goal of the next several sections.
 
 ^rem-23-2
 
 > [!remark]- Connections
-> - $\pi_1(\mathbb{R}^3 \setminus \{0\})$: [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|$\pi_1(S^n) \cong \pi_1(\mathbb{R}^{n+1} \setminus \{0\})$]] together with [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|$S^n$ is Simply Connected for $n \geq 2$]].
+> - $\pi_1(\mathbb{R}^3 \setminus \{0\})$: [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|$\pi_1(S^n) \cong \pi_1(\mathbb{R}^{n+1} \setminus \{0\})$]] together with [[Sⁿ is Simply Connected for n ≥ 2|$S^n$ is Simply Connected for $n \geq 2$]].
 
 ## Dependence on Basepoint
 
@@ -138,7 +138,7 @@ tags: [topology, math590]
 
 ^pf-23-2
 
-*Uses:* [[Topology §22 Homotopy of Paths#^thm-22-6|§22.6]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-4|§21.4]]
+*Uses:* [[Properties of Path Concatenation|§22.6]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-4|§21.4]]
 
 > [!theorem] Corollary §23.3: $\pi_1$ is Independent of Basepoint for Path-Connected Spaces
 > If $X$ is [[Topology §14 Connected Subspaces of ℝ#^def-14-3|path-connected]], then $\pi_1(X, x_0) \cong \pi_1(X, x_1)$ for any $x_0, x_1 \in X$. In particular, the isomorphism *type* of $\pi_1(X, x_0)$ is a well-defined invariant of $X$.
@@ -216,7 +216,7 @@ tags: [topology, math590]
 ^cor-23-6
 
 > [!proof]+ Proof
-> Let $k = h^{-1}$. Then $k \circ h = \operatorname{id}_X$ and $h \circ k = \operatorname{id}_Y$. By [[Topology §23 The Fundamental Group#^thm-23-5|functoriality]]:
+> Let $k = h^{-1}$. Then $k \circ h = \operatorname{id}_X$ and $h \circ k = \operatorname{id}_Y$. By [[Functoriality of π₁|functoriality]]:
 >
 > $$k_* \circ h_* = (k \circ h)_* = (\operatorname{id}_X)_* = \operatorname{id}_{\pi_1(X, x_0)}$$
 >
@@ -224,7 +224,7 @@ tags: [topology, math590]
 
 ^pf-23-6
 
-*Uses:* [[Topology §23 The Fundamental Group#^thm-23-5|§23.5]], [[Topology §23 The Fundamental Group#^prop-23-4|§23.4]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-4|§21.4]]
+*Uses:* [[Functoriality of π₁|§23.5]], [[Topology §23 The Fundamental Group#^prop-23-4|§23.4]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-4|§21.4]]
 
 > [!remark]- Connections
 > - Weakened to homotopy equivalences: [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-15|Homotopy Equivalence Induces Isomorphism on $\pi_1$]].
@@ -250,15 +250,15 @@ tags: [topology, math590]
 
 > [!remark] Remark: Upcoming: Computing Fundamental Groups
 > We will develop techniques to compute the fundamental groups of spaces including:
-> - $S^1$ (the circle) — [[Topology §24 Covering Spaces#^thm-24-10|$\pi_1(S^1) \cong \mathbb{Z}$]], the central computation.
-> - $S^n$ ($n$-sphere, $n \geq 2$) — [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|$\pi_1(S^n) = 0$]], simply connected.
+> - $S^1$ (the circle) — [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]], the central computation.
+> - $S^n$ ($n$-sphere, $n \geq 2$) — [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1(S^n) = 0$]], simply connected.
 > - $S^1 \times S^1$ (torus) — [[Topology §23 The Fundamental Group#^cor-23-8|$\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$]].
 > - $S^1 \times \mathbb{R}$ (infinite cylinder) — $\pi_1 \cong \mathbb{Z}$.
 > - $B^2 \times S^1$ (solid torus) — $\pi_1 \cong \mathbb{Z}$.
 > - $\mathbb{R}^2 \setminus \{0\}$ (punctured plane) — $\pi_1 \cong \mathbb{Z}$.
 > - $\mathbb{R}^3 \setminus \{x, y, z \text{ axes}\}$ — more complex.
 >
-> And applications: [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-7|Brouwer fixed point theorem]], [[Topology §25 The Fundamental Theorem of Algebra#^thm-25-1|fundamental theorem of algebra]], and more.
+> And applications: [[Brouwer Fixed Point Theorem|Brouwer fixed point theorem]], [[Fundamental Theorem of Algebra (topological proof)|fundamental theorem of algebra]], and more.
 
 ^rem-23-6
 
@@ -347,7 +347,7 @@ tags: [topology, math590]
 
 ^pf-23-8
 
-*Uses:* [[Topology §23 The Fundamental Group#^thm-23-7|§23.7]], [[Topology §21 Algebra Prerequisites꞉ Groups#^thm-21-7|§21.7]], [[Topology §24 Covering Spaces#^thm-24-10|§24.10]]
+*Uses:* [[Topology §23 The Fundamental Group#^thm-23-7|§23.7]], [[Topology §21 Algebra Prerequisites꞉ Groups#^thm-21-7|§21.7]], [[Fundamental Group of the Circle|§24.10]]
 
 > [!remark]- Connections
 > - Second computation via van Kampen: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-4|$\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$ via van Kampen]].

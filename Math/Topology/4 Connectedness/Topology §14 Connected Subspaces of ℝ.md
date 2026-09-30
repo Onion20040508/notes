@@ -50,7 +50,7 @@ tags: [topology, math590]
 >
 > **Together:** Any attempt to separate $L$ into two open pieces fails. If you try to cut at a point $c$, the l.u.b. property forces $c$ to belong to one side, and density forces that side to “leak” past $c$ into the other.
 >
-> **Key consequence:** Connected subsets of a linear continuum are exactly the convex subsets (intervals and rays). This is why [[Topology §14 Connected Subspaces of ℝ#^thm-14-3|IVT]] works: [[Topology §13 Connected Spaces#^thm-13-3|continuous images of connected sets are connected]], hence intervals.
+> **Key consequence:** Connected subsets of a linear continuum are exactly the convex subsets (intervals and rays). This is why [[Topology §14 Connected Subspaces of ℝ#^thm-14-3|IVT]] works: [[Continuous Image of a Connected Space is Connected|continuous images of connected sets are connected]], hence intervals.
 
 ^rem-14-1
 
@@ -107,7 +107,7 @@ tags: [topology, math590]
 > [!remark] Remark: IVT: The Power of Connectedness
 > The Intermediate Value Theorem is connectedness in action:
 >
-> **The key insight:** A continuous function “preserves connectedness.” Since $X$ is connected, $f(X)$ must be connected ([[Topology §13 Connected Spaces#^thm-13-3|Theorem §13.3]]). In an ordered space, connected subsets are intervals—so $f(X)$ contains all values between $f(a)$ and $f(b)$.
+> **The key insight:** A continuous function “preserves connectedness.” Since $X$ is connected, $f(X)$ must be connected ([[Continuous Image of a Connected Space is Connected|Theorem §13.3]]). In an ordered space, connected subsets are intervals—so $f(X)$ contains all values between $f(a)$ and $f(b)$.
 >
 > **Why IVT fails without connectedness:** If $X = [0,1] \cup [2,3]$, define $f(x) = 0$ on $[0,1]$ and $f(x) = 2$ on $[2,3]$. Then $f$ is continuous, $0, 2 \in f(X)$, but $1 \notin f(X)$.
 >
@@ -119,7 +119,7 @@ tags: [topology, math590]
 ^rem-14-2
 
 > [!remark]- Connections
-> - The fixed-point application is MATH 451's [[Single Variable Analysis §18 Properties of Continuous Functions#^thm-18-6|Theorem §18.6: Fixed Point Theorem on an Interval]]; its two-dimensional version is [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-7|Brouwer Fixed Point Theorem for $B^2$]].
+> - The fixed-point application is MATH 451's [[Single Variable Analysis §18 Properties of Continuous Functions#^thm-18-6|Theorem §18.6: Fixed Point Theorem on an Interval]]; its two-dimensional version is [[Brouwer Fixed Point Theorem|Brouwer Fixed Point Theorem for $B^2$]].
 
 > [!example] Example §14.5
 > $f: [a, b] \to \mathbb{R}$, continuous, satisfies [[Topology §14 Connected Subspaces of ℝ#^thm-14-3|IVT]].
@@ -131,11 +131,11 @@ tags: [topology, math590]
 >
 > $A, B$ disjoint, nonempty ($(f(a) \in A$, $f(b) \in B$). $A, B$ open in $f(X)$ $\Rightarrow$ $f(X)$ has separation $A, B$.
 >
-> But [[Topology §13 Connected Spaces#^thm-13-3|image of connected $X$ under a continuous $f$ is connected]]. Contradiction.
+> But [[Continuous Image of a Connected Space is Connected|image of connected $X$ under a continuous $f$ is connected]]. Contradiction.
 
 ^pf-14-3
 
-*Uses:* [[Topology §13 Connected Spaces#^thm-13-3|§13.3]]
+*Uses:* [[Continuous Image of a Connected Space is Connected|§13.3]]
 
 ## Path-Connectedness
 
@@ -179,11 +179,11 @@ tags: [topology, math590]
 >
 > If $X$ were not connected, then there exists $X = A \cup B$ separation of $X$. Let $f(a) \in A$, $f(b) \in B$.
 >
-> $f: [a, b] \to X$ path, $f([a, b])$ is connected (since [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|$[a, b]$ connected]] and [[Topology §13 Connected Spaces#^thm-13-3|$f$ continuous]]). [[Topology §13 Connected Spaces#^lem-13-4|$f([a, b]) \subseteq A$ or $f([a, b]) \subseteq B$]]. Contradiction.
+> $f: [a, b] \to X$ path, $f([a, b])$ is connected (since [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|$[a, b]$ connected]] and [[Continuous Image of a Connected Space is Connected|$f$ continuous]]). [[Topology §13 Connected Spaces#^lem-13-4|$f([a, b]) \subseteq A$ or $f([a, b]) \subseteq B$]]. Contradiction.
 
 ^pf-14-4
 
-*Uses:* [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|§14.2]], [[Topology §13 Connected Spaces#^thm-13-3|§13.3]], [[Topology §13 Connected Spaces#^lem-13-4|§13.4]]
+*Uses:* [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|§14.2]], [[Continuous Image of a Connected Space is Connected|§13.3]], [[Topology §13 Connected Spaces#^lem-13-4|§13.4]]
 
 > [!remark] Remark
 > The converse is not true in general: there exist connected spaces that are not path-connected (e.g., the [[Topology §14 Connected Subspaces of ℝ#^ex-14-7|topologist's sine curve]]).

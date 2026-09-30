@@ -1,0 +1,25 @@
+% Figure from MATH 590 notes, section 15. Compile with the notes preamble.
+\begin{tikzpicture}[x=6.4cm, y=0.36cm]
+  % the space (0,1]
+  \draw[figB, thick] (0,0) -- (1,0);
+  \draw[figB, fill=white, thick] (0,0) circle (1.8pt);
+  \fill[figB] (1,0) circle (1.8pt);
+  \node[font=\scriptsize, below=2pt] at (0,0) {$0$};
+  \node[font=\scriptsize, below=2pt] at (1,0) {$1$};
+  \node[font=\small, figB, right=4pt] at (1,0) {$(0,1]$};
+  % the cover (1/n, 1], n = 2..7
+  \foreach \n [count=\k] in {2,...,7} {
+    \pgfmathsetmacro{\a}{1/\n}
+    \draw[black!55, thick] (\a,\k) -- (1,\k);
+    \draw[black!55, fill=white, thick] (\a,\k) circle (1.5pt);
+    \fill[black!55] (1,\k) circle (1.5pt);
+    \draw[black!30, dotted] (\a,0) -- (\a,\k);
+    \node[font=\scriptsize, black!70, right=3pt] at (1,\k) {$(\tfrac1{\n},1]$};
+  }
+  \node[font=\scriptsize, black!55] at (0.07,6.2) {$\cdots$};
+  % the uncovered gap for N = 7
+  \draw[figR, very thick] (0,-1.9) -- (1/7,-1.9);
+  \draw[figR, fill=white, thick] (0,-1.9) circle (1.5pt);
+  \fill[figR] (1/7,-1.9) circle (1.5pt);
+  \node[font=\scriptsize, figR, right=3pt, align=left] at (1/7,-1.9) {$(0,\tfrac17]$ is left uncovered by these six};
+\end{tikzpicture}

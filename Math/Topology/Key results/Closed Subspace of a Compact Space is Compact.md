@@ -15,12 +15,8 @@ tags: [topology, hub]
 - [[Topology §15 Compact Spaces#^lem-15-1|Lemma §15.1: Compactness in Subspaces]]
 
 ## Used in (Topology)
-- [[Topology §12 Quotient Topology#^thm-12-5|Theorem §12.5: Product of Quotient Maps (Compact-Hausdorff Case)]]
-- [[Topology §15 Compact Spaces#^rem-15-3|Remark: The Subspace-Covering Correspondence]]
-- [[Topology §15 Compact Spaces#^rem-15-4|Remark: Summary: Compact and Closed]]
 - [[Topology §15 Compact Spaces#^thm-15-7|Theorem §15.7: Bijection from Compact to Hausdorff]]
-- [[Topology §15 Compact Spaces#^rem-15-10|Remark: Filling the Gap: Balls vs. Boxes]]
-- [[Topology §15 Compact Spaces#^thm-15-12|Theorem §15.12: Heine-Borel Theorem for ℝ^n]]
+- [[Topology §15 Compact Spaces#^thm-15-12|Theorem §15.12: Heine-Borel Theorem for ℝⁿ]]
 - [[Topology §17 Local Compactness#^prop-17-1|Proposition §17.1: The Collection 𝒯_Y is a Topology]]
 - [[Topology §17 Local Compactness#^thm-17-5|Theorem §17.5: One-Point Compactification (Munkres 29.1)]]
 - [[Topology §17 Local Compactness#^thm-17-6|Theorem §17.6: Characterization of Local Compactness (Munkres 29.2)]]
@@ -29,4 +25,7 @@ tags: [topology, hub]
 - [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
 
 ## Connections
-- TODO
+- **Partner result.** It pairs with [[Compact Subspace of a Hausdorff Space is Closed]] ([[Topology §15 Compact Spaces#^rem-15-4|Summary: Compact and Closed]]). In a compact Hausdorff space the two together say that a subset is closed exactly when it is compact.
+- **Closedness is needed.** (0, 1] is a non-closed subspace of the compact interval [0, 1] and is not compact ([[Topology §15 Compact Spaces#^ex-15-3|Example §15.3]]).
+- **Immediate uses.** It is step 1 of [[Bijection from Compact to Hausdorff is a Homeomorphism]] and the last step of [[Heine–Borel Theorem]]: a closed bounded set is a closed subset of a compact box ([[Topology §15 Compact Spaces#^rem-15-10|Filling the Gap: Balls vs. Boxes]]).
+- **Later.** It is used in [[Topology §20 Normal Spaces#^thm-20-2|Every Compact Hausdorff Space is Normal]] (§20.2) and throughout local compactness, e.g. [[Topology §17 Local Compactness#^thm-17-5|One-Point Compactification]] (§17.5).

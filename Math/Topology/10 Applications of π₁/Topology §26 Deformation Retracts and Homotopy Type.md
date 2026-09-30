@@ -65,7 +65,7 @@ tags: [topology, math590]
 
 ^pf-26-2
 
-*Uses:* [[Topology §23 The Fundamental Group#^thm-23-5|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|§26.1]]
+*Uses:* [[Functoriality of π₁|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|§26.1]]
 
 ## Retractions
 
@@ -87,7 +87,7 @@ tags: [topology, math590]
 ^prop-26-3
 
 > [!proof]+ Proof
-> The equation $r \circ j = \operatorname{id}_A$ gives, by [[Topology §23 The Fundamental Group#^thm-23-5|functoriality]]:
+> The equation $r \circ j = \operatorname{id}_A$ gives, by [[Functoriality of π₁|functoriality]]:
 >
 > $$
 > r_* \circ j_* = \operatorname{id}_{\pi_1(A)}.
@@ -99,7 +99,7 @@ tags: [topology, math590]
 
 ^pf-26-3
 
-*Uses:* [[Topology §23 The Fundamental Group#^thm-23-5|§23.5]]
+*Uses:* [[Functoriality of π₁|§23.5]]
 
 > [!remark] Remark
 > But that is *all* you get. $\pi_1(A)$ injects into $\pi_1(X)$, and $r_*$ surjects onto $\pi_1(A)$, but $\pi_1(X)$ can be strictly larger than $\pi_1(A)$.
@@ -180,7 +180,7 @@ tags: [topology, math590]
 > j_*: \pi_1(S^1, b_0) \to \pi_1(B^2, b_0), \qquad r_*: \pi_1(B^2, b_0) \to \pi_1(S^1, b_0).
 > $$
 >
-> (Here $j_*([f]) = [j \circ f]$ and $r_*([g]) = [r \circ g]$—compose loops with the maps.) By the functorial properties ([[Topology §23 The Fundamental Group#^thm-23-5|§23]]):
+> (Here $j_*([f]) = [j \circ f]$ and $r_*([g]) = [r \circ g]$—compose loops with the maps.) By the functorial properties ([[Functoriality of π₁|§23]]):
 > - **Composition rule:** $(r \circ j)_* = r_* \circ j_*$.
 > - **Identity rule:** $(\operatorname{id}_{S^1})_* = \operatorname{id}$ on $\pi_1(S^1, b_0)$.
 >
@@ -198,14 +198,14 @@ tags: [topology, math590]
 >
 > So $j_*$ is injective.
 >
-> **Step 4: Contradiction.** We have computed $\pi_1(S^1) \cong \mathbb{Z}$ ([[Topology §24 Covering Spaces#^thm-24-10|Theorem §24.10]]) and $\pi_1(B^2) = 0$ ([[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|the proposition above]]: $B^2$ is convex, so every loop contracts via the straight-line homotopy). The homomorphism $j_*: \mathbb{Z} \to 0$ must send every element to $0$ (the only element of the trivial group). In particular, $j_*(1) = j_*(2) = 0$, so $j_*$ is not injective. This contradicts Step 3.
+> **Step 4: Contradiction.** We have computed $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|Theorem §24.10]]) and $\pi_1(B^2) = 0$ ([[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|the proposition above]]: $B^2$ is convex, so every loop contracts via the straight-line homotopy). The homomorphism $j_*: \mathbb{Z} \to 0$ must send every element to $0$ (the only element of the trivial group). In particular, $j_*(1) = j_*(2) = 0$, so $j_*$ is not injective. This contradicts Step 3.
 
 ^pf-26-6
 
-*Uses:* [[Topology §23 The Fundamental Group#^def-23-4|Def. §23.4]], [[Topology §23 The Fundamental Group#^thm-23-5|§23.5]], [[Topology §24 Covering Spaces#^thm-24-10|§24.10]], [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|§26.5]]
+*Uses:* [[Topology §23 The Fundamental Group#^def-23-4|Def. §23.4]], [[Functoriality of π₁|§23.5]], [[Fundamental Group of the Circle|§24.10]], [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|§26.5]]
 
 > [!remark] Remark: Why This Matters
-> This is the first real application of $\pi_1$: a purely topological fact (no retraction exists) proved using algebra ($\mathbb{Z} \not\cong 0$). The proof pattern — assume a map exists, apply $\pi_1$, get a contradiction from group theory — is the template for all obstruction arguments. The [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-7|Brouwer fixed point theorem below]] is a direct consequence.
+> This is the first real application of $\pi_1$: a purely topological fact (no retraction exists) proved using algebra ($\mathbb{Z} \not\cong 0$). The proof pattern — assume a map exists, apply $\pi_1$, get a contradiction from group theory — is the template for all obstruction arguments. The [[Brouwer Fixed Point Theorem|Brouwer fixed point theorem below]] is a direct consequence.
 
 ^rem-26-2
 
@@ -219,7 +219,7 @@ tags: [topology, math590]
 > - All dimensions: [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-10|Generalized Brouwer Fixed Point Theorem]].
 
 > [!proof]+ Proof
-> Suppose $f(x) \neq x$ for all $x \in B^2$. We construct a retraction $r: B^2 \to S^1$, contradicting the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-6|no-retraction theorem]].
+> Suppose $f(x) \neq x$ for all $x \in B^2$. We construct a retraction $r: B^2 \to S^1$, contradicting the [[No-Retraction Theorem|no-retraction theorem]].
 >
 > **Step 1: Define the ray.** Since $f(x) \neq x$, the points $f(x)$ and $x$ are distinct. Two distinct points in $\mathbb{R}^2$ determine a unique line: starting at $f(x)$, walking in the direction $x - f(x)$ (the vector from $f(x)$ to $x$), we parametrize it as
 >
@@ -275,16 +275,16 @@ tags: [topology, math590]
 
 ^pf-26-7
 
-*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-6|§26.6]]
+*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[No-Retraction Theorem|§26.6]]
 
 > [!remark] Remark
-> The Brouwer fixed point theorem is a purely existential result—it tells you a fixed point exists but gives no method for finding it. The proof illustrates the power of algebraic topology: the computation [[Topology §24 Covering Spaces#^thm-24-10|π₁(S¹) ≅ ℤ ≠ 0]] (which took real work via [[Topology §24 Covering Spaces|covering spaces]]) has a concrete geometric consequence about maps of the disk to itself.
+> The Brouwer fixed point theorem is a purely existential result—it tells you a fixed point exists but gives no method for finding it. The proof illustrates the power of algebraic topology: the computation [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ ≠ 0]] (which took real work via [[Topology §24 Covering Spaces|covering spaces]]) has a concrete geometric consequence about maps of the disk to itself.
 
 ^rem-26-3
 
 ## Generalization to Higher Dimensions
 
-All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy extension lemma]], the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-6|no-retraction theorem]], and the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-7|Brouwer fixed point theorem]]—generalize to arbitrary dimension. The proofs of the first and third are identical to the $B^2$ case; the second requires tools beyond $\pi_1$.
+All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy extension lemma]], the [[No-Retraction Theorem|no-retraction theorem]], and the [[Brouwer Fixed Point Theorem|Brouwer fixed point theorem]]—generalize to arbitrary dimension. The proofs of the first and third are identical to the $B^2$ case; the second requires tools beyond $\pi_1$.
 
 > [!theorem] Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for $S^n$)
 > Let $h: S^n \to X$ be continuous. Then $h$ is nullhomotopic if and only if $h$ extends to a continuous map $k: B^{n+1} \to X$ (i.e., $k|_{S^n} = h$).
@@ -302,7 +302,7 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 >
 > Check: $\|(1-t)x\| = 1-t \leq 1$ so $(1-t)x \in B^{n+1}$; $H(x,0) = k(x) = h(x)$; $H(x,1) = k(0)$ is constant.
 >
-> **($\Rightarrow$): Nullhomotopic $\Rightarrow$ extension.** We apply the Universal Property of Quotient Maps ([[Topology §12 Quotient Topology#^thm-12-3|§12.3]]). The maps involved are:
+> **($\Rightarrow$): Nullhomotopic $\Rightarrow$ extension.** We apply the Universal Property of Quotient Maps ([[Universal Property of Quotient Maps|§12.3]]). The maps involved are:
 >
 > ![[m590-26-2.svg]]
 > *The cone map $\pi: S^n \times I \to B^{n+1}$, the nullhomotopy $H: S^n \times I \to X$, and the induced extension $k: B^{n+1} \to X$ (dashed).*
@@ -318,13 +318,13 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 >
 > *Step 2: $H$ is constant on fibers of $\pi$.* For $t < 1$, $\pi$ is injective ($\pi(x,t) = (1-t)x$ determines both $t$ and $x$ uniquely), so there is nothing to check. The only non-trivial fiber is $\pi^{-1}(0) = S^n \times \{1\}$, where $H(x, 1) = c$ for all $x$—same value. ✓
 >
-> *Step 3: Universal Property.* Since $\pi$ is a quotient map and $H$ is constant on fibers, the [[Topology §12 Quotient Topology#^thm-12-3|Universal Property]] gives a unique continuous $k: B^{n+1} \to X$ with $k \circ \pi = H$.
+> *Step 3: Universal Property.* Since $\pi$ is a quotient map and $H$ is constant on fibers, the [[Universal Property of Quotient Maps|Universal Property]] gives a unique continuous $k: B^{n+1} \to X$ with $k \circ \pi = H$.
 >
 > *Step 4: $k|_{S^n} = h$.* For $x \in S^n$: $k(x) = k(\pi(x, 0)) = H(x, 0) = h(x)$. ✓
 
 ^pf-26-8
 
-*Uses:* [[Topology §12 Quotient Topology#^thm-12-3|§12.3]], [[Topology §12 Quotient Topology#^prop-12-2|§12.2]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §15 Compact Spaces#^thm-15-3|§15.3]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]]
+*Uses:* [[Universal Property of Quotient Maps|§12.3]], [[Topology §12 Quotient Topology#^prop-12-2|§12.2]], [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Continuous Image of a Compact Space is Compact|§15.3]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]]
 
 > [!theorem] Theorem §26.9: Generalized No-Retraction Theorem
 > For each $n \geq 0$, there is no retraction $r: B^{n+1} \to S^n$.
@@ -332,12 +332,12 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 ^thm-26-9
 
 > [!remark] Remark: Why Our Proof Does Not Generalize
-> For $n = 1$, we [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-6|proved this using π₁]]: a retraction $r: B^2 \to S^1$ would force an injection $j_*: \pi_1(S^1) \hookrightarrow \pi_1(B^2)$, i.e., $\mathbb{Z} \hookrightarrow 0$, which is impossible.
+> For $n = 1$, we [[No-Retraction Theorem|proved this using π₁]]: a retraction $r: B^2 \to S^1$ would force an injection $j_*: \pi_1(S^1) \hookrightarrow \pi_1(B^2)$, i.e., $\mathbb{Z} \hookrightarrow 0$, which is impossible.
 >
 > ![[m590-26-3.svg]]
 > *The maps $S^1 \xrightarrow{j} B^2 \xrightarrow{r} S^1$ and the induced homomorphisms $\pi_1(S^1) \cong \mathbb{Z} \to \pi_1(B^2) = 0 \to \pi_1(S^1) \cong \mathbb{Z}$.*
 >
-> For $n \geq 2$, this argument fails: $\pi_1(S^n) = 0$ ([[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|spheres of dimension ≥ 2 are simply connected]]), so the injection $0 \hookrightarrow 0$ is no contradiction. The proof for general $n$ requires **homology theory** (specifically, $H_n(S^n) \cong \mathbb{Z}$ replaces $\pi_1(S^1) \cong \mathbb{Z}$), which is beyond this course.
+> For $n \geq 2$, this argument fails: $\pi_1(S^n) = 0$ ([[Sⁿ is Simply Connected for n ≥ 2|spheres of dimension ≥ 2 are simply connected]]), so the injection $0 \hookrightarrow 0$ is no contradiction. The proof for general $n$ requires **homology theory** (specifically, $H_n(S^n) \cong \mathbb{Z}$ replaces $\pi_1(S^1) \cong \mathbb{Z}$), which is beyond this course.
 >
 > We therefore take the general no-retraction theorem as a given fact when working in dimension $n \geq 2$.
 
@@ -369,7 +369,7 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 
 ^pf-26-10
 
-*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-7|§26.7]], [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-9|§26.9]]
+*Uses:* [[Brouwer Fixed Point Theorem|§26.7]], [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-9|§26.9]]
 
 > [!remark] Remark: Summary: The Logical Dependencies
 > The full chain for dimension $n$:
@@ -419,7 +419,7 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 
 ^pf-26-11
 
-*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|§26.2]], [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]], [[Topology §23 The Fundamental Group#^thm-23-5|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|§26.1]]
+*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|§26.2]], [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]], [[Functoriality of π₁|§23.5]], [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|§26.1]]
 
 > [!theorem] Corollary §26.12: Deformation Retracts Have the Same $\pi_1$
 > If $A$ is a deformation retract of $X$, then $\pi_1(X, x_0) \cong \pi_1(A, x_0)$ for any $x_0 \in A$.
@@ -488,9 +488,9 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 > [!example] Example §26.7: $S^n$ is a deformation retract of $\mathbb{R}^{n+1} \setminus \{0\}$
 > Via $H(x,t) = (1-t)x + tx/\|x\|$ (proved in the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|previous theorem]]). So $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) \cong \pi_1(S^n)$.
 >
-> For $n \geq 2$: $\pi_1(S^n) = 0$ ([[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|simply connected]]), so $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) = 0$.
+> For $n \geq 2$: $\pi_1(S^n) = 0$ ([[Sⁿ is Simply Connected for n ≥ 2|simply connected]]), so $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) = 0$.
 >
-> For $n = 1$: [[Topology §24 Covering Spaces#^thm-24-10|π₁(S¹) ≅ ℤ]], so $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$.
+> For $n = 1$: [[Fundamental Group of the Circle|π₁(S¹) ≅ ℤ]], so $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$.
 
 ^ex-26-7
 
@@ -508,7 +508,7 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 ^ex-26-8
 
 > [!example] Example §26.9: $T^2 \setminus \{pt\}$ Deformation Retracts onto the Figure Eight
-> The punctured torus has $\pi_1(T^2 \setminus \{pt\}) \cong F_2$ (the free group on two generators). The proof combines the quotient map construction ([[Topology §12 Quotient Topology|§12]]) with a deformation retract argument, using the [[Topology §12 Quotient Topology#^thm-12-3|universal property]] to pass from the square to the torus. We go through this step by step.
+> The punctured torus has $\pi_1(T^2 \setminus \{pt\}) \cong F_2$ (the free group on two generators). The proof combines the quotient map construction ([[Topology §12 Quotient Topology|§12]]) with a deformation retract argument, using the [[Universal Property of Quotient Maps|universal property]] to pass from the square to the torus. We go through this step by step.
 >
 > **Step 1: Represent the torus as a quotient of the square.**
 >
@@ -558,7 +558,7 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 > ![[m590-26-6.svg]]
 > *The deformation retraction $\tilde{F}$ of the punctured square, the quotient maps $\pi \times \operatorname{id}$ and $\pi$, and the induced map $F$ on the punctured torus (dashed).*
 >
-> We want the dashed arrow $F$ to exist and be continuous. By the universal property ([[Topology §12 Quotient Topology#^thm-12-3|§12.3]]), the composite $\pi \circ \tilde{F}$ descends to a continuous map $F$ on $(T^2 \setminus \{pt\}) \times I$ if and only if $\pi \circ \tilde{F}$ is **constant on fibers** of $\pi \times \operatorname{id}$.
+> We want the dashed arrow $F$ to exist and be continuous. By the universal property ([[Universal Property of Quotient Maps|§12.3]]), the composite $\pi \circ \tilde{F}$ descends to a continuous map $F$ on $(T^2 \setminus \{pt\}) \times I$ if and only if $\pi \circ \tilde{F}$ is **constant on fibers** of $\pi \times \operatorname{id}$.
 >
 > **What does “constant on fibers” mean here?** Two points $(x_1, t)$ and $(x_2, t)$ are in the same fiber of $\pi \times \operatorname{id}$ when $\pi(x_1) = \pi(x_2)$ (and same $t$). This happens exactly when $x_1 \sim x_2$ under the edge identifications. We need:
 >
@@ -706,7 +706,7 @@ Deformation retracts give isomorphisms on $\pi_1$, but they require $A \subseteq
 
 ## The General Basepoint-Change Lemma
 
-The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §26.1]] assumed the basepoint stays fixed during the homotopy ($H(x_0, t) = y_0$ for all $t$). In practice, homotopy equivalences move the basepoint. The following generalization handles this by introducing a [[Topology §23 The Fundamental Group#^thm-23-2|basepoint-change]] path.
+The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §26.1]] assumed the basepoint stays fixed during the homotopy ($H(x_0, t) = y_0$ for all $t$). In practice, homotopy equivalences move the basepoint. The following generalization handles this by introducing a [[Basepoint Independence of π₁|basepoint-change]] path.
 
 > [!theorem] Lemma §26.14: Homotopic Maps and $\pi_1$: General Case
 > Let $h, k: X \to Y$ be continuous, and let $H: X \times I \to Y$ be a homotopy from $h$ to $k$. Let $x_0 \in X$, and define the path $\alpha: I \to Y$ by
@@ -721,7 +721,7 @@ The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §
 > k_* = \hat{\alpha} \circ h_*,
 > $$
 >
-> where $\hat{\alpha}: \pi_1(Y, h(x_0)) \to \pi_1(Y, k(x_0))$ is the [[Topology §23 The Fundamental Group#^thm-23-2|basepoint-change isomorphism]] $\hat{\alpha}([f]) = [\bar{\alpha}] * [f] * [\alpha]$.
+> where $\hat{\alpha}: \pi_1(Y, h(x_0)) \to \pi_1(Y, k(x_0))$ is the [[Basepoint Independence of π₁|basepoint-change isomorphism]] $\hat{\alpha}([f]) = [\bar{\alpha}] * [f] * [\alpha]$.
 >
 > In diagram form:
 >
@@ -755,7 +755,7 @@ The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §
 
 ^pf-26-14
 
-*Uses:* [[Topology §23 The Fundamental Group#^thm-23-2|§23.2]]
+*Uses:* [[Basepoint Independence of π₁|§23.2]]
 
 > [!remark] Remark
 > When $H(x_0, t) = y_0$ for all $t$ (the basepoint stays fixed), the path $\alpha$ is constant, so $\hat{\alpha} = \operatorname{id}$ and we recover [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|the earlier lemma]]: $k_* = h_*$.
@@ -786,7 +786,7 @@ The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §
 > (\operatorname{id}_Y)_* = \hat{\alpha} \circ (f \circ g)_* = \hat{\alpha} \circ f_* \circ g_*
 > $$
 >
-> for some path $\alpha$. Since $(\operatorname{id}_Y)_* = \operatorname{id}$ and $\hat{\alpha}$ is an [[Topology §23 The Fundamental Group#^thm-23-2|isomorphism]], $f_* \circ g_*$ is an isomorphism. In particular, $f_*$ is surjective (it has a right inverse up to isomorphism).
+> for some path $\alpha$. Since $(\operatorname{id}_Y)_* = \operatorname{id}$ and $\hat{\alpha}$ is an [[Basepoint Independence of π₁|isomorphism]], $f_* \circ g_*$ is an isomorphism. In particular, $f_*$ is surjective (it has a right inverse up to isomorphism).
 >
 > **$f_*$ is injective:** Since $g \circ f \simeq \operatorname{id}_X$, the [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-14|general lemma]] gives
 >
@@ -798,10 +798,10 @@ The [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §
 
 ^pf-26-15
 
-*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-14|§26.14]], [[Topology §23 The Fundamental Group#^thm-23-2|§23.2]], [[Topology §23 The Fundamental Group#^thm-23-5|§23.5]]
+*Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-14|§26.14]], [[Basepoint Independence of π₁|§23.2]], [[Functoriality of π₁|§23.5]]
 
 > [!remark] Remark: Deformation Retract as a Special Case
-> For a deformation retract $A \subseteq X$, the inclusion $j: A \hookrightarrow X$ is a [[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-10|homotopy equivalence]] (with homotopy inverse $r$). The theorem recovers [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-11|our earlier result]] that $j_*$ is an isomorphism—but now we see it as a special case of a much more general principle.
+> For a deformation retract $A \subseteq X$, the inclusion $j: A \hookrightarrow X$ is a [[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-10|homotopy equivalence]] (with homotopy inverse $r$). The theorem recovers [[Deformation Retract Induces Isomorphism on π₁|our earlier result]] that $j_*$ is an isomorphism—but now we see it as a special case of a much more general principle.
 
 ^rem-26-12
 

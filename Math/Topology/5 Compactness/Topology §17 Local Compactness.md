@@ -70,7 +70,7 @@ tags: [topology, math590]
 >
 > where $a_i < 0 < b_i$ for $i = 1, \ldots, n$.
 >
-> Suppose $B \subseteq C$ for some compact $C$. Then $\overline{B} \subseteq \overline{C} = C$ (since [[Topology §15 Compact Spaces#^thm-15-4|compact $\subseteq$ Hausdorff $\Rightarrow$ closed]]).
+> Suppose $B \subseteq C$ for some compact $C$. Then $\overline{B} \subseteq \overline{C} = C$ (since [[Compact Subspace of a Hausdorff Space is Closed|compact $\subseteq$ Hausdorff $\Rightarrow$ closed]]).
 >
 > But $\overline{B} = [a_1, b_1] \times \cdots \times [a_n, b_n] \times \mathbb{R} \times \mathbb{R} \times \cdots$
 >
@@ -106,7 +106,7 @@ tags: [topology, math590]
 >
 > *Finite intersections:* Let $U_1, U_2 \in \mathcal{T}_Y$. Three cases:
 > - Both type (1): $U_1 \cap U_2$ is open in $X$, so type (1). ✓
-> - $U_1$ type (1), $U_2 = Y \setminus C_2$ type (2): $U_1 \cap (Y \setminus C_2) = U_1 \cap (X \setminus C_2) = U_1 \setminus C_2$. Since $C_2$ is [[Topology §15 Compact Spaces#^thm-15-4|compact in Hausdorff $X$, $C_2$ is closed]], so $U_1 \setminus C_2$ is open in $X$. Type (1). ✓
+> - $U_1$ type (1), $U_2 = Y \setminus C_2$ type (2): $U_1 \cap (Y \setminus C_2) = U_1 \cap (X \setminus C_2) = U_1 \setminus C_2$. Since $C_2$ is [[Compact Subspace of a Hausdorff Space is Closed|compact in Hausdorff $X$, $C_2$ is closed]], so $U_1 \setminus C_2$ is open in $X$. Type (1). ✓
 > - Both type (2): $(Y \setminus C_1) \cap (Y \setminus C_2) = Y \setminus (C_1 \cup C_2)$. Finite union of compact sets is compact. Type (2). ✓
 >
 > *Arbitrary unions:* Let $\{U_\alpha\} \subseteq \mathcal{T}_Y$. If all are type (1), their union is open in $X$ (type 1). Otherwise, split into $J = \{\alpha : U_\alpha \text{ type (1)}\}$ and $I = \{\alpha : U_\alpha = Y \setminus C_\alpha \text{ type (2)}\}$:
@@ -115,11 +115,11 @@ tags: [topology, math590]
 > \bigcup_\alpha U_\alpha = \underbrace{\bigcup_{\alpha \in J} U_\alpha}_{=: V,\text{ open in }X} \cup \underbrace{\bigcup_{\alpha \in I} (Y \setminus C_\alpha)}_{= Y \setminus \bigcap_{\alpha \in I} C_\alpha} = V \cup (Y \setminus C) = Y \setminus (C \setminus V)
 > $$
 >
-> where $C = \bigcap_{\alpha \in I} C_\alpha$. Now $C$ is closed in each $C_\alpha$ ([[Topology §6 Closed Sets and Limit Points#^thm-6-1|intersection of closed sets]] in Hausdorff), hence [[Topology §15 Compact Spaces#^thm-15-2|compact]]. And $C \setminus V$ is a closed subset of $C$ (since $V$ is open), hence compact. So the union is type (2). ✓
+> where $C = \bigcap_{\alpha \in I} C_\alpha$. Now $C$ is closed in each $C_\alpha$ ([[Topology §6 Closed Sets and Limit Points#^thm-6-1|intersection of closed sets]] in Hausdorff), hence [[Closed Subspace of a Compact Space is Compact|compact]]. And $C \setminus V$ is a closed subset of $C$ (since $V$ is open), hence compact. So the union is type (2). ✓
 
 ^pf-17-1
 
-*Uses:* [[Topology §15 Compact Spaces#^thm-15-4|§15.4]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|§6.1]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]]
+*Uses:* [[Compact Subspace of a Hausdorff Space is Closed|§15.4]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|§6.1]], [[Closed Subspace of a Compact Space is Compact|§15.2]]
 
 ### Step 2: Verifying the Properties
 
@@ -131,11 +131,11 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > $(\subseteq)$: If $V$ is open in $X$, then $V \in \mathcal{T}_Y$ (type 1), so $V = V \cap X$ is in the subspace topology.
 >
-> $(\supseteq)$: Let $U \in \mathcal{T}_Y$. If $U$ is type (1), then $U \cap X = U$ is open in $X$. If $U = Y \setminus C$ is type (2), then $U \cap X = X \setminus C$, which is open since $C$ is closed in $X$ ([[Topology §15 Compact Spaces#^thm-15-4|compact in Hausdorff]]).
+> $(\supseteq)$: Let $U \in \mathcal{T}_Y$. If $U$ is type (1), then $U \cap X = U$ is open in $X$. If $U = Y \setminus C$ is type (2), then $U \cap X = X \setminus C$, which is open since $C$ is closed in $X$ ([[Compact Subspace of a Hausdorff Space is Closed|compact in Hausdorff]]).
 
 ^pf-17-2
 
-*Uses:* [[Topology §5 Subspace Topology#^def-5-1|Def. §5.1]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]]
+*Uses:* [[Topology §5 Subspace Topology#^def-5-1|Def. §5.1]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]]
 
 > [!theorem] Proposition §17.3: $Y$ is Compact
 > If $X$ is any topological space, then $Y = X \cup \{\infty\}$ with the above topology is compact.
@@ -194,11 +194,11 @@ tags: [topology, math590]
 >
 > **$X$ is Hausdorff:** $X$ is a subspace of the Hausdorff space $Y$, hence Hausdorff.
 >
-> **$X$ is locally compact:** Given $x \in X$, choose disjoint open sets $U \ni x$ and $V \ni \infty$ in $Y$ (using that $Y$ is Hausdorff). Let $C = Y \setminus V$. Then $C$ is closed in $Y$, hence compact ([[Topology §15 Compact Spaces#^thm-15-2|closed subset of compact]]). Since $\infty \in V$, we have $C \subseteq X$. And $U \cap V = \emptyset$ gives $U \subseteq C$, so $C$ is a compact subset of $X$ containing the neighborhood $U \cap X$ of $x$.
+> **$X$ is locally compact:** Given $x \in X$, choose disjoint open sets $U \ni x$ and $V \ni \infty$ in $Y$ (using that $Y$ is Hausdorff). Let $C = Y \setminus V$. Then $C$ is closed in $Y$, hence compact ([[Closed Subspace of a Compact Space is Compact|closed subset of compact]]). Since $\infty \in V$, we have $C \subseteq X$. And $U \cap V = \emptyset$ gives $U \subseteq C$, so $C$ is a compact subset of $X$ containing the neighborhood $U \cap X$ of $x$.
 
 ^pf-17-5-2
 
-*Uses:* [[Topology §15 Compact Spaces#^thm-15-2|§15.2]]
+*Uses:* [[Closed Subspace of a Compact Space is Compact|§15.2]]
 
 > [!proof]+ Proof of Uniqueness
 > Let $Y, Y'$ both satisfy (1)–(3), with $Y \setminus X = \{p\}$ and $Y' \setminus X = \{q\}$. Define $h: Y \to Y'$ by $h(x) = x$ for $x \in X$ and $h(p) = q$.
@@ -207,13 +207,13 @@ tags: [topology, math590]
 >
 > Let $U$ be open in $Y$. If $p \notin U$, then $U \subseteq X$ and $U$ is open in $X$. Since $X$ is open in $Y'$ (because $\{q\}$ is [[Topology §8 Hausdorff Spaces#^thm-8-1|closed in the Hausdorff space]] $Y'$), and $U$ is open in $X$, [[Topology §5 Subspace Topology#^lem-5-2|$U$ is open in $Y'$]]. So $h(U) = U$ is open. ✓
 >
-> If $p \in U$, then $C = Y \setminus U$ is closed in $Y$, hence [[Topology §15 Compact Spaces#^thm-15-2|compact]]. Since $p \notin C$, we have $C \subseteq X$. So $C$ is a compact subspace of $X$, hence also a compact subspace of $Y'$ (since $X$ is a subspace of $Y'$). Since $Y'$ is Hausdorff, [[Topology §15 Compact Spaces#^thm-15-4|$C$ is closed in $Y'$]]. Thus $h(U) = Y' \setminus C$ is open in $Y'$. ✓
+> If $p \in U$, then $C = Y \setminus U$ is closed in $Y$, hence [[Closed Subspace of a Compact Space is Compact|compact]]. Since $p \notin C$, we have $C \subseteq X$. So $C$ is a compact subspace of $X$, hence also a compact subspace of $Y'$ (since $X$ is a subspace of $Y'$). Since $Y'$ is Hausdorff, [[Compact Subspace of a Hausdorff Space is Closed|$C$ is closed in $Y'$]]. Thus $h(U) = Y' \setminus C$ is open in $Y'$. ✓
 >
 > By symmetry (the same argument applies to $h^{-1}$), $h$ is a homeomorphism.
 
 ^pf-17-5-3
 
-*Uses:* [[Topology §9 Continuous Functions#^prop-9-2|§9.2]], [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Topology §5 Subspace Topology#^lem-5-2|§5.2]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §15 Compact Spaces#^thm-15-4|§15.4]]
+*Uses:* [[Topology §9 Continuous Functions#^prop-9-2|§9.2]], [[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]], [[Topology §5 Subspace Topology#^lem-5-2|§5.2]], [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Compact Subspace of a Hausdorff Space is Closed|§15.4]]
 
 > [!definition] Definition §17.3: One-Point Compactification
 > The space $Y$ constructed above is called the **one-point compactification** of $X$, often denoted $X^* = X \cup \{\infty\}$.
@@ -262,13 +262,13 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > $(\Leftarrow)$: Clear. The set $C = \overline{V}$ is a compact subspace containing the neighborhood $V$ of $x$, so $X$ is locally compact at $x$.
 >
-> $(\Rightarrow)$: Suppose $X$ is locally compact. Let $x \in X$ and let $U$ be a neighborhood of $x$. Take the [[Topology §17 Local Compactness#^thm-17-5|one-point compactification]] $Y = X \cup \{\infty\}$, and let $C = Y \setminus U$. Then $C$ is closed in $Y$ (since $U$ is open in $X$ and the topology on $Y$ makes $X$ open in $Y$), so $C$ is a compact subspace of $Y$ ([[Topology §15 Compact Spaces#^thm-15-2|closed subset of compact]]).
+> $(\Rightarrow)$: Suppose $X$ is locally compact. Let $x \in X$ and let $U$ be a neighborhood of $x$. Take the [[Topology §17 Local Compactness#^thm-17-5|one-point compactification]] $Y = X \cup \{\infty\}$, and let $C = Y \setminus U$. Then $C$ is closed in $Y$ (since $U$ is open in $X$ and the topology on $Y$ makes $X$ open in $Y$), so $C$ is a compact subspace of $Y$ ([[Closed Subspace of a Compact Space is Compact|closed subset of compact]]).
 >
 > Since $Y$ is compact Hausdorff, we can apply Munkres Lemma 26.4 (a point and a disjoint compact set in a Hausdorff space can be separated by open sets) to choose disjoint open sets $V \ni x$ and $W \supseteq C$ in $Y$. Then $\overline{V}$ (closure in $Y$) is compact: it is a closed subset of the compact space $Y$. Furthermore, $\overline{V}$ is disjoint from $C$ since $\overline{V} \subseteq Y \setminus W$ and $W \supseteq C$, so $\overline{V} \subseteq Y \setminus C = U$, as desired.
 
 ^pf-17-6
 
-*Uses:* [[Topology §17 Local Compactness#^def-17-1|Def. §17.1]], [[Topology §17 Local Compactness#^thm-17-5|§17.5]], [[Topology §15 Compact Spaces#^thm-15-2|§15.2]]
+*Uses:* [[Topology §17 Local Compactness#^def-17-1|Def. §17.1]], [[Topology §17 Local Compactness#^thm-17-5|§17.5]], [[Closed Subspace of a Compact Space is Compact|§15.2]]
 
 > [!remark] Remark
 > This stronger formulation says: in a locally compact Hausdorff space, not only can you find *some* compact set containing a neighborhood, you can find one *inside any given neighborhood*. The one-point compactification is the key tool—it provides a compact Hausdorff ambient space where standard separation arguments apply.
@@ -281,13 +281,13 @@ tags: [topology, math590]
 ^cor-17-7
 
 > [!proof]+ Proof
-> **Case 1: $A$ closed.** Given $x \in A$, let $C$ be a compact subspace of $X$ containing a neighborhood $U$ of $x$ in $X$. Then $C \cap A$ is closed in $C$ (since $A$ is closed in $X$) and thus [[Topology §15 Compact Spaces#^thm-15-2|compact]]. It contains the neighborhood $U \cap A$ of $x$ in $A$. (Note: the Hausdorff condition was not needed here.)
+> **Case 1: $A$ closed.** Given $x \in A$, let $C$ be a compact subspace of $X$ containing a neighborhood $U$ of $x$ in $X$. Then $C \cap A$ is closed in $C$ (since $A$ is closed in $X$) and thus [[Closed Subspace of a Compact Space is Compact|compact]]. It contains the neighborhood $U \cap A$ of $x$ in $A$. (Note: the Hausdorff condition was not needed here.)
 >
 > **Case 2: $A$ open.** Given $x \in A$, apply [[Topology §17 Local Compactness#^thm-17-6|Theorem §17.6 (Munkres 29.2)]] to the space $X$: since $A$ is a neighborhood of $x$, there exists a neighborhood $V$ of $x$ in $X$ with $\overline{V}$ compact and $\overline{V} \subseteq A$. Then $C = \overline{V}$ is a compact subspace of $A$ containing the neighborhood $V$ of $x$ in $A$.
 
 ^pf-17-7
 
-*Uses:* [[Topology §15 Compact Spaces#^thm-15-2|§15.2]], [[Topology §17 Local Compactness#^thm-17-6|§17.6]]
+*Uses:* [[Closed Subspace of a Compact Space is Compact|§15.2]], [[Topology §17 Local Compactness#^thm-17-6|§17.6]]
 
 > [!theorem] Corollary §17.8: Locally Compact Hausdorff Spaces (Munkres 29.4)
 > A space $X$ is locally compact Hausdorff if and only if $X$ is homeomorphic to an open subspace of a compact Hausdorff space.

@@ -15,10 +15,11 @@ tags: [topology, hub]
 
 ## Used in (Topology)
 - [[Topology §23 The Fundamental Group#^lem-23-1|Lemma §23.1: Paths in Simply Connected Spaces]]
-- [[Topology §23 The Fundamental Group#^rem-23-1|Remark]]
 - [[Topology §23 The Fundamental Group#^thm-23-2|Theorem §23.2: Basepoint Independence]]
 - [[Topology §24 Covering Spaces#^thm-24-9|Theorem §24.9: Properties of the Lifting Correspondence]]
 - [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|Theorem §27.1: Generation by Open Cover (Munkres 59.1)]]
 
 ## Connections
-- TODO
+- **Group axioms.** Restricted to loops at x₀, these are the group axioms of π₁ ([[Topology §23 The Fundamental Group#^rem-23-1|remark after Definition §23.2]]). On arbitrary paths they only give a groupoid ([[Topology §22 Homotopy of Paths#^rem-22-10|What These Properties Mean]]). They are stated on classes, which first requires [[Topology §22 Homotopy of Paths#^prop-22-4|Proposition §22.4]].
+- **Proof.** Each identity is witnessed by an explicit reparametrizing homotopy of the square, continuous by the [[Pasting Lemma]].
+- **Used for.** It is used in [[Basepoint Independence of π₁]] and [[Topology §23 The Fundamental Group#^lem-23-1|Paths in Simply Connected Spaces]] (§23.1), in the injectivity step of [[Properties of the Lifting Correspondence]], and in the telescoping product in [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|Generation by Open Cover]] (§27.1).

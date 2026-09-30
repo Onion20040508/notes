@@ -99,4 +99,4 @@ tags: [topology, math590]
 *Uses:* [[Topology §6 Closed Sets and Limit Points#^thm-6-2|§6.2]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|§6.1]]
 
 > [!remark]- Connections
-> - Open analogue: [[Topology §5 Subspace Topology#^lem-5-2|Lemma §5.2]]. Used in the [[Topology §9 Continuous Functions#^thm-9-5|Pasting Lemma]].
+> - Open analogue: [[Topology §5 Subspace Topology#^lem-5-2|Lemma §5.2]]. Used in the [[Pasting Lemma|Pasting Lemma]].

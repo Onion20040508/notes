@@ -78,7 +78,7 @@ tags: [topology, math590]
 
 ^pf-9-1
 
-*Uses:* [[Topology §7 Interior and Closure#^thm-7-3|§7.3]], [[Topology §7 Interior and Closure#^lem-7-1|§7.1]]
+*Uses:* [[Closure Characterization|§7.3]], [[Topology §7 Interior and Closure#^lem-7-1|§7.1]]
 
 > [!remark]- Connections
 > - Metric spaces: [[Topology §11 Metric Topology#^thm-11-7|ε-δ Characterization of Continuity]], [[Topology §11 Metric Topology#^thm-11-9|Continuity and Sequences]].
@@ -91,7 +91,7 @@ tags: [topology, math590]
 ^def-9-2
 
 > [!remark]- Connections
-> - A shortcut: [[Topology §15 Compact Spaces#^thm-15-7|Bijection from Compact to Hausdorff]].
+> - A shortcut: [[Bijection from Compact to Hausdorff is a Homeomorphism|Bijection from Compact to Hausdorff]].
 > - Algebraic analogues: [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-4|group isomorphism]], [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-69|vector space isomorphism]]; see [[Topology §21 Algebra Prerequisites꞉ Groups#^rem-21-7|Analogy: Topology ↔ Algebra]].
 
 > [!theorem] Proposition §9.2: Equivalent Definition of Homeomorphism
@@ -129,7 +129,7 @@ tags: [topology, math590]
 ^rem-9-2
 
 > [!remark]- Connections
-> - Invariance: [[Topology §13 Connected Spaces#^thm-13-3|Continuous Image of Connected Space]], [[Topology §15 Compact Spaces#^thm-15-3|Continuous Image of Compact is Compact]], [[Topology §23 The Fundamental Group#^cor-23-6|π₁ is a Topological Invariant]].
+> - Invariance: [[Continuous Image of a Connected Space is Connected|Continuous Image of Connected Space]], [[Continuous Image of a Compact Space is Compact|Continuous Image of Compact is Compact]], [[Topology §23 The Fundamental Group#^cor-23-6|π₁ is a Topological Invariant]].
 > - The question it answers: [[Topology §1 Topological Spaces#^rem-1-1|Question: Basic Question]].
 
 > [!example] Example §9.3
@@ -178,7 +178,7 @@ tags: [topology, math590]
 >
 > This is why we freely write $S^1$ without specifying the ambient space. In particular, the [[Topology §24 Covering Spaces#^thm-24-2|covering map]] $p(x) = e^{2\pi i x} \in \mathbb{C}$ and $p(x) = (\cos 2\pi x, \sin 2\pi x) \in \mathbb{R}^2$ are the same map under this identification.
 >
-> **Consequence for $\pi_1$:** Once we compute $\pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$ (via the covering map $p: \mathbb{R} \to S^1_{\mathbb{R}^2}$ in [[Topology §24 Covering Spaces#^thm-24-10|§24]]), we get $\pi_1(S^1_{\mathbb{C}}) \cong \mathbb{Z}$ for free: the homeomorphism $\phi$ induces an isomorphism $\phi_*: \pi_1(S^1_{\mathbb{C}}) \to \pi_1(S^1_{\mathbb{R}^2})$ ([[Topology §23 The Fundamental Group#^cor-23-6|§23]], “$\pi_1$ is a topological invariant”), so $\pi_1(S^1_{\mathbb{C}}) \cong \pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$. No separate computation needed.
+> **Consequence for $\pi_1$:** Once we compute $\pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$ (via the covering map $p: \mathbb{R} \to S^1_{\mathbb{R}^2}$ in [[Fundamental Group of the Circle|§24]]), we get $\pi_1(S^1_{\mathbb{C}}) \cong \mathbb{Z}$ for free: the homeomorphism $\phi$ induces an isomorphism $\phi_*: \pi_1(S^1_{\mathbb{C}}) \to \pi_1(S^1_{\mathbb{R}^2})$ ([[Topology §23 The Fundamental Group#^cor-23-6|§23]], “$\pi_1$ is a topological invariant”), so $\pi_1(S^1_{\mathbb{C}}) \cong \pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$. No separate computation needed.
 
 ^ex-9-5
 
@@ -209,7 +209,7 @@ tags: [topology, math590]
 ^thm-9-5
 
 > [!proof]+ Proof
-> We use [[Topology §9 Continuous Functions#^thm-9-1|criterion (3)]]: $h$ is continuous iff the preimage of every closed set is closed.
+> We use [[Equivalent Conditions for Continuity|criterion (3)]]: $h$ is continuous iff the preimage of every closed set is closed.
 >
 > Let $C \subseteq Y$ be closed. We show $h^{-1}(C)$ is closed in $X$.
 >
@@ -223,7 +223,7 @@ tags: [topology, math590]
 
 ^pf-9-5
 
-*Uses:* [[Topology §9 Continuous Functions#^thm-9-1|§9.1]], [[Topology §6 Closed Sets and Limit Points#^thm-6-3|§6.3]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|§6.1]]
+*Uses:* [[Equivalent Conditions for Continuity|§9.1]], [[Topology §6 Closed Sets and Limit Points#^thm-6-3|§6.3]], [[Topology §6 Closed Sets and Limit Points#^thm-6-1|§6.1]]
 
 > [!example] Example §9.6
 > $f_1: [0, \infty) \to \mathbb{R}$, $f_1(x) = x$. $f_2: (-\infty, 0] \to \mathbb{R}$, $f_2(x) = -x$. (Both continuous.) $\Rightarrow$ $f(x) = |x|$ continuous.

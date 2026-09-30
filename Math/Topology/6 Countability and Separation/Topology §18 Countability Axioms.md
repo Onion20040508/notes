@@ -162,7 +162,7 @@ tags: [topology, math590]
 ^def-18-4
 
 > [!remark]- Connections
-> - The equivalence is the [[Topology §7 Interior and Closure#^thm-7-3|Closure Characterization]] applied at every point.
+> - The equivalence is the [[Closure Characterization|Closure Characterization]] applied at every point.
 
 > [!example] Example §18.7
 > $\mathbb{Q}$ is dense in $\mathbb{R}$: every open interval $(a, b)$ contains a rational number ([[Single Variable Analysis §4 The Completeness Axiom#^thm-4-7|Density of ℚ in ℝ]]), so $\overline{\mathbb{Q}} = \mathbb{R}$.
@@ -249,4 +249,4 @@ tags: [topology, math590]
 
 ^pf-18-6
 
-*Uses:* [[Topology §7 Interior and Closure#^thm-7-3|§7.3]], [[Topology §18 Countability Axioms#^def-18-4|Def. §18.4]]
+*Uses:* [[Closure Characterization|§7.3]], [[Topology §18 Countability Axioms#^def-18-4|Def. §18.4]]

@@ -19,7 +19,6 @@ tags: [topology, hub]
 - [[Topology §16 Limit Point Compactness#^lem-16-3|Lemma §16.3: Lebesgue Number Lemma]]
 
 ## Used in (Topology)
-- [[Topology §24 Covering Spaces#^rem-24-4|Remark: Reading the Diagram]]
 - [[Topology §24 Covering Spaces#^lem-24-7|Lemma §24.7: Homotopy Lifting Lemma]]
 - [[Topology §24 Covering Spaces#^thm-24-8|Theorem §24.8: Lifts of Path-Homotopic Paths]]
 - [[Topology §24 Covering Spaces#^thm-24-9|Theorem §24.9: Properties of the Lifting Correspondence]]
@@ -27,4 +26,6 @@ tags: [topology, hub]
 - [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|Theorem §28.4: π₁ of the Figure Eight is Non-Abelian]]
 
 ## Connections
-- TODO
+- **Proof.** The [[Lebesgue Number Lemma]] subdivides I into pieces mapping into evenly covered sets. Each piece is lifted by a local inverse of p and the pieces are glued with the [[Pasting Lemma]]. Uniqueness holds because a connected image cannot jump between disjoint slices ([[Topology §24 Covering Spaces#^rem-24-5|Role of Each Map]]).
+- **Covering hypothesis is needed.** p : ℝ₊ → S¹ is a surjective local homeomorphism but not a covering map, and a clockwise loop from (1, 0) has no lift starting at 0 ([[Topology §24 Covering Spaces#^ex-24-2|Example §24.2]]).
+- **Builds.** It leads to the [[Homotopy Lifting Lemma]], the [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]] and [[Properties of the Lifting Correspondence]], hence [[Fundamental Group of the Circle]]. Explicit lifts also show that the figure eight has non-abelian π₁ ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|Theorem §28.4]]).

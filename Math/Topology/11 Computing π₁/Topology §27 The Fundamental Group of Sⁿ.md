@@ -8,7 +8,7 @@ tags: [topology, math590]
 ---
 ← [[Topology §26 Deformation Retracts and Homotopy Type]] · ↑ [[Topology — 11 Computing π₁]] · [[Topology §28 Fundamental Group of Some Surfaces]] →
 
-The main result of this section is [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|$\pi_1(S^n) = 0$ for $n \geq 2$]]. The proof requires a [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|general theorem]] about how $\pi_1$ interacts with open covers.
+The main result of this section is [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1(S^n) = 0$ for $n \geq 2$]]. The proof requires a [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|general theorem]] about how $\pi_1$ interacts with open covers.
 
 ## The Generation Theorem
 
@@ -30,7 +30,7 @@ The main result of this section is [[Topology §27 The Fundamental Group of Sⁿ
 ^thm-27-1
 
 > [!remark] Remark: Why This Matters
-> This is the stepping stone to both the [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|simply connected corollary]] and the [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-1|Seifert-van Kampen theorem]]. It says: if you can cover $X$ by two open sets, then every loop in $X$ can be decomposed into pieces from $U$ and $V$. The simply connected corollary uses this when both pieces contribute nothing ($\pi_1(U) = \pi_1(V) = 0$). Van Kampen uses it in general: the pieces generate $\pi_1(X)$, and the overlap $U \cap V$ determines the relations between them.
+> This is the stepping stone to both the [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|simply connected corollary]] and the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]]. It says: if you can cover $X$ by two open sets, then every loop in $X$ can be decomposed into pieces from $U$ and $V$. The simply connected corollary uses this when both pieces contribute nothing ($\pi_1(U) = \pi_1(V) = 0$). Van Kampen uses it in general: the pieces generate $\pi_1(X)$, and the overlap $U \cap V$ determines the relations between them.
 
 ^rem-27-1
 
@@ -39,7 +39,7 @@ The main result of this section is [[Topology §27 The Fundamental Group of Sⁿ
 >
 > **Step 1: Subdivide the loop into pieces that each lie in $U$ or $V$.**
 >
-> The sets $\{f^{-1}(U), f^{-1}(V)\}$ form an open cover of $I = [0, 1]$ (since $X = U \cup V$ and $f$ is continuous). By the **[[Topology §16 Limit Point Compactness#^lem-16-3|Lebesgue number lemma]]** (applied to the [[Topology §15 Compact Spaces#^thm-15-10|compact]] metric space $I$), there exists $\delta > 0$ such that every subset of $I$ with diameter less than $\delta$ is contained in either $f^{-1}(U)$ or $f^{-1}(V)$.
+> The sets $\{f^{-1}(U), f^{-1}(V)\}$ form an open cover of $I = [0, 1]$ (since $X = U \cup V$ and $f$ is continuous). By the **[[Lebesgue Number Lemma|Lebesgue number lemma]]** (applied to the [[Topology §15 Compact Spaces#^thm-15-10|compact]] metric space $I$), there exists $\delta > 0$ such that every subset of $I$ with diameter less than $\delta$ is contained in either $f^{-1}(U)$ or $f^{-1}(V)$.
 >
 > Choose a subdivision $0 = b_0 < b_1 < \cdots < b_m = 1$ with $b_{i+1} - b_i < \delta$ for each $i$. Then $f([b_i, b_{i+1}]) \subseteq U$ or $f([b_i, b_{i+1}]) \subseteq V$ for each $i$.
 >
@@ -92,10 +92,10 @@ The main result of this section is [[Topology §27 The Fundamental Group of Sⁿ
 
 ^pf-27-1
 
-*Uses:* [[Topology §16 Limit Point Compactness#^lem-16-3|§16.3]], [[Topology §15 Compact Spaces#^thm-15-10|§15.10]], [[Topology §22 Homotopy of Paths#^thm-22-6|§22.6]]
+*Uses:* [[Lebesgue Number Lemma|§16.3]], [[Topology §15 Compact Spaces#^thm-15-10|§15.10]], [[Properties of Path Concatenation|§22.6]]
 
 > [!remark]- Connections
-> - Upgraded from “generate” to the exact group by the [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-1|Seifert-van Kampen theorem]], whose surjectivity step is this theorem.
+> - Upgraded from “generate” to the exact group by the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]], whose surjectivity step is this theorem.
 
 ## Consequence: Simply Connected Spaces
 
@@ -181,7 +181,7 @@ The main result of this section is [[Topology §27 The Fundamental Group of Sⁿ
 > - Recomputed with van Kampen in [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-1|Simply Connected Spheres via van Kampen]].
 
 > [!remark] Remark: Why $n \geq 2$ is Essential
-> For $n = 1$: $U \cap V = S^1 \setminus \{p, q\} \cong \mathbb{R}^1 \setminus \{0\} = (-\infty, 0) \cup (0, \infty)$ — two disjoint intervals, **not** path-connected. So [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]] does not apply, and indeed [[Topology §24 Covering Spaces#^thm-24-10|$\pi_1(S^1) \cong \mathbb{Z} \neq 0$]].
+> For $n = 1$: $U \cap V = S^1 \setminus \{p, q\} \cong \mathbb{R}^1 \setminus \{0\} = (-\infty, 0) \cup (0, \infty)$ — two disjoint intervals, **not** path-connected. So [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]] does not apply, and indeed [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z} \neq 0$]].
 >
 > This also explains why the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-9|no-retraction theorem for $B^{n+1} \to S^n$]] cannot be proved using $\pi_1$ when $n \geq 2$: $\pi_1(S^n) = 0$ gives no contradiction, and one needs homology instead.
 
@@ -215,9 +215,9 @@ The main result of this section is [[Topology §27 The Fundamental Group of Sⁿ
 > F(x, t) = \begin{cases} x & \text{if } x \in S_1, \\ r_t(x) & \text{if } x \in S_2 \setminus \{q_2\}. \end{cases}
 > $$
 >
-> These agree at the overlap point $p$ (since $r_t(p) = p$). The sets $S_1$ and $S_2 \setminus \{q_2\}$ are both closed in $U$ (since [[Topology §15 Compact Spaces#^thm-15-4|$S_1$ is compact in Hausdorff $U$]], and $S_2 \setminus \{q_2\}$ is $U \setminus \operatorname{int}(S_1)$), so $F$ is continuous by the **[[Topology §9 Continuous Functions#^thm-9-5|pasting lemma]]** (for closed sets).
+> These agree at the overlap point $p$ (since $r_t(p) = p$). The sets $S_1$ and $S_2 \setminus \{q_2\}$ are both closed in $U$ (since [[Compact Subspace of a Hausdorff Space is Closed|$S_1$ is compact in Hausdorff $U$]], and $S_2 \setminus \{q_2\}$ is $U \setminus \operatorname{int}(S_1)$), so $F$ is continuous by the **[[Pasting Lemma|pasting lemma]]** (for closed sets).
 >
-> Check: $F(x, 0) = x$ (identity), $F(x, 1) \in S_1$ for all $x$ (collapses $S_2 \setminus \{q_2\}$ to $p \in S_1$), and $F(x, t) = x$ for all $x \in S_1$ (fixed). So $F$ is a deformation retraction of $U$ onto $S_1 \cong S^2$. Since [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|$\pi_1(S^2) = 0$]], $U$ is simply connected.
+> Check: $F(x, 0) = x$ (identity), $F(x, 1) \in S_1$ for all $x$ (collapses $S_2 \setminus \{q_2\}$ to $p \in S_1$), and $F(x, t) = x$ for all $x \in S_1$ (fixed). So $F$ is a deformation retraction of $U$ onto $S_1 \cong S^2$. Since [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1(S^2) = 0$]], $U$ is simply connected.
 >
 > By the same argument (swapping $S_1 \leftrightarrow S_2$ and $q_1 \leftrightarrow q_2$), $V$ deformation retracts onto $S_2 \cong S^2$, hence $V$ is simply connected.
 >
@@ -237,7 +237,7 @@ The main result of this section is [[Topology §27 The Fundamental Group of Sⁿ
 > - $S^2 \vee S^2$ is a [[Topology §28 Fundamental Group of Some Surfaces#^def-28-3|wedge sum]]; see also [[Topology §28 Fundamental Group of Some Surfaces#^ex-28-1|Wedge Sums]].
 
 > [!remark] Remark: The “Remove One Point From Each Side” Strategy
-> The proofs of [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|$\pi_1(S^n) = 0$]] and [[Topology §27 The Fundamental Group of Sⁿ#^ex-27-1|$\pi_1(S^2 \vee S^2) = 0$]] follow the same template. The key technique is: **to apply [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]], choose $U$ and $V$ by removing one “bad” point from each piece of $X$**. Here is the general recipe.
+> The proofs of [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1(S^n) = 0$]] and [[Topology §27 The Fundamental Group of Sⁿ#^ex-27-1|$\pi_1(S^2 \vee S^2) = 0$]] follow the same template. The key technique is: **to apply [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]], choose $U$ and $V$ by removing one “bad” point from each piece of $X$**. Here is the general recipe.
 >
 > **Step 1: Identify the pieces.** The space $X$ is built from components (two hemispheres, two spheres glued at a point, etc.). Each component $C_i$ has the property that removing a point makes it simpler ($C_i \setminus \{q\} \cong \mathbb{R}^n$, or contractible, or deformation retracts onto something known).
 >
@@ -248,11 +248,11 @@ The main result of this section is [[Topology §27 The Fundamental Group of Sⁿ
 > - **$\pi_1(U)$ and $\pi_1(V)$:** The removed point makes the “other side” contractible, so it collapses via [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-3|deformation retract]]. What remains determines $\pi_1$.
 > - **$U \cap V$ path-connected:** Both bad points are removed, but each piece minus its bad point is path-connected, and the pieces share a common point.
 >
-> **The result need not be trivial.** The corollary (both $U, V$ simply connected $\Rightarrow$ $\pi_1(X) = 0$) is a special case. The [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|generation theorem]] itself gives $\pi_1(X)$ generated by $\pi_1(U)$ and $\pi_1(V)$, which may be nontrivial. The “remove one point” strategy works whenever it produces $U$ and $V$ whose $\pi_1$ you can compute — the generation theorem (or [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-1|van Kampen]]) then assembles the answer.
+> **The result need not be trivial.** The corollary (both $U, V$ simply connected $\Rightarrow$ $\pi_1(X) = 0$) is a special case. The [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|generation theorem]] itself gives $\pi_1(X)$ generated by $\pi_1(U)$ and $\pi_1(V)$, which may be nontrivial. The “remove one point” strategy works whenever it produces $U$ and $V$ whose $\pi_1$ you can compute — the generation theorem (or [[Seifert–van Kampen Theorem|van Kampen]]) then assembles the answer.
 >
 > | **Space $X$** | **$U$** (remove pt from right) | **$V$** (remove pt from left) | $\pi_1(X)$ |
 > |---|---|---|---|
-> | [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3\|$S^n$ ($n \geq 2$)]] | $S^n \setminus \{q\} \cong \mathbb{R}^n$ | $S^n \setminus \{p\} \cong \mathbb{R}^n$ | $0$ |
+> | [[Sⁿ is Simply Connected for n ≥ 2\|$S^n$ ($n \geq 2$)]] | $S^n \setminus \{q\} \cong \mathbb{R}^n$ | $S^n \setminus \{p\} \cong \mathbb{R}^n$ | $0$ |
 > | [[Topology §27 The Fundamental Group of Sⁿ#^ex-27-1\|$S^2 \vee S^2$]] | def. retract onto $S^2$ | def. retract onto $S^2$ | $0$ |
 > | [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2\|$S^1 \vee S^1$]] | def. retract onto $S^1$ | def. retract onto $S^1$ | $F_2$ |
 >

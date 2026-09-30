@@ -9,7 +9,7 @@ tags: [topology, math590]
 ← [[Topology §28 Fundamental Group of Some Surfaces]] · ↑ [[Topology — 11 Computing π₁]]
 
 > [!remark] Remark: Motivation
-> We can now compute $\pi_1$ of spaces using [[Topology §24 Covering Spaces#^thm-24-9|covering spaces]], [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-11|deformation retracts]], and the [[Topology §23 The Fundamental Group#^thm-23-7|product formula]]. But a major gap remains: given $X = A \cup B$, the [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|generation theorem (§27)]] tells us $\pi_1(X)$ is *generated* by loops in $A$ and $B$, but says nothing about *relations* between them. The Seifert-van Kampen theorem fills this gap: it computes $\pi_1(X)$ exactly as a quotient of the [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]] $\pi_1(A) * \pi_1(B)$.
+> We can now compute $\pi_1$ of spaces using [[Properties of the Lifting Correspondence|covering spaces]], [[Deformation Retract Induces Isomorphism on π₁|deformation retracts]], and the [[Topology §23 The Fundamental Group#^thm-23-7|product formula]]. But a major gap remains: given $X = A \cup B$, the [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|generation theorem (§27)]] tells us $\pi_1(X)$ is *generated* by loops in $A$ and $B$, but says nothing about *relations* between them. The Seifert-van Kampen theorem fills this gap: it computes $\pi_1(X)$ exactly as a quotient of the [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]] $\pi_1(A) * \pi_1(B)$.
 
 ^rem-29-1
 
@@ -93,7 +93,7 @@ tags: [topology, math590]
 >
 > where $i_*$ is induced by the inclusion $A \cap B \hookrightarrow A \cup B$. Therefore $\hat{j}(i_1(k) \cdot i_2(k)^{-1}) = i_*(k) \cdot i_*(k)^{-1} = e$, so $i_1(k) \cdot i_2(k)^{-1} \in \ker(\hat{j})$.
 >
-> **$\ker(\hat{j}) \subseteq N$.** This is the hard direction. The full proof (Munkres §70, pp. 426–431) uses the [[Topology §16 Limit Point Compactness#^lem-16-3|Lebesgue number lemma]] on a nullhomotopy $F: I \times I \to X$ to subdivide the homotopy into small rectangles mapping into $A$ or $B$, then tracks how the word simplifies using only the relations $i_1(k) = i_2(k)$.
+> **$\ker(\hat{j}) \subseteq N$.** This is the hard direction. The full proof (Munkres §70, pp. 426–431) uses the [[Lebesgue Number Lemma|Lebesgue number lemma]] on a nullhomotopy $F: I \times I \to X$ to subdivide the homotopy into small rectangles mapping into $A$ or $B$, then tracks how the word simplifies using only the relations $i_1(k) = i_2(k)$.
 >
 > Since $\hat{j}$ is surjective and $\ker(\hat{j}) = N$, the [[First isomorphism theorem|first isomorphism theorem]] gives:
 >
@@ -103,10 +103,10 @@ tags: [topology, math590]
 
 ^pf-29-1
 
-*Uses:* [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|§27.1]], [[Topology §16 Limit Point Compactness#^lem-16-3|§16.3]]
+*Uses:* [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|§27.1]], [[Lebesgue Number Lemma|§16.3]]
 
 > [!remark] Remark: How to Find $N$: The Recipe
-> Given $X = A \cup B$ with [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-1|van Kampen]] hypotheses, finding $N$ is a three-step process:
+> Given $X = A \cup B$ with [[Seifert–van Kampen Theorem|van Kampen]] hypotheses, finding $N$ is a three-step process:
 >
 > **Step 1: Compute $\pi_1(A \cap B)$ and find its generators $t_1, t_2, \ldots$**
 >
@@ -144,7 +144,7 @@ tags: [topology, math590]
 
 ^pf-29-2
 
-*Uses:* [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-1|§29.1]]
+*Uses:* [[Seifert–van Kampen Theorem|§29.1]]
 
 > [!remark] Remark
 > This is the most commonly used case: decompose $X$ into two open pieces with simply connected overlap, and $\pi_1(X)$ is the free product of the pieces. The [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|generation theorem (§27)]] is the “surjective” part of this result (loops in $A$ and $B$ generate); van Kampen adds that there are no extra relations beyond those forced by $A \cap B$.
@@ -157,21 +157,21 @@ tags: [topology, math590]
 > **Claim:** $\pi_1(S^n) = 0$ for $n \geq 2$.
 > Let $U = S^n \setminus \{N\}$ and $V = S^n \setminus \{S\}$ (remove north and south poles). Then $S^n = U \cup V$, both open. By [[Topology §27 The Fundamental Group of Sⁿ#^pf-27-3|stereographic projection]], $U \cong \mathbb{R}^n \cong V$, so $\pi_1(U) = \pi_1(V) = 0$. The intersection $U \cap V = S^n \setminus \{N, S\}$ deformation retracts onto the equator $S^{n-1}$, which is path-connected for $n \geq 2$.
 >
-> By [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-1|van Kampen]]: $\pi_1(S^n) \cong 0 * 0 / N \cong 0$.
+> By [[Seifert–van Kampen Theorem|van Kampen]]: $\pi_1(S^n) \cong 0 * 0 / N \cong 0$.
 >
 > (Since both factors are trivial, the free product is trivial regardless of $N$.)
 
 ^ex-29-1
 
 > [!remark]- Connections
-> - The same result via the generation theorem: [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-3|$S^n$ is Simply Connected for $n \geq 2$]].
+> - The same result via the generation theorem: [[Sⁿ is Simply Connected for n ≥ 2|$S^n$ is Simply Connected for $n \geq 2$]].
 
 > [!example] Example §29.2: $\pi_1(S^1 \vee S^1) \cong \mathbb{Z} * \mathbb{Z}$ (The Figure Eight)
 > Let $X = S^1 \vee S^1$ be the [[Topology §28 Fundamental Group of Some Surfaces#^def-28-4|figure eight]] with junction point $p$. Choose open neighborhoods:
 > - $A$ = the left circle plus a small open arc extending past $p$ into the right circle.
 > - $B$ = the right circle plus a small open arc extending past $p$ into the left circle.
 >
-> Then $A$ and $B$ are open and path-connected. Each [[Topology §26 Deformation Retracts and Homotopy Type#^cor-26-12|deformation retracts onto its respective circle]], so [[Topology §24 Covering Spaces#^thm-24-10|$\pi_1(A) \cong \pi_1(B) \cong \mathbb{Z}$]].
+> Then $A$ and $B$ are open and path-connected. Each [[Topology §26 Deformation Retracts and Homotopy Type#^cor-26-12|deformation retracts onto its respective circle]], so [[Fundamental Group of the Circle|$\pi_1(A) \cong \pi_1(B) \cong \mathbb{Z}$]].
 >
 > The intersection $A \cap B$ is a small open cross at $p$, which is contractible (star-shaped). So $A \cap B$ is simply connected.
 >
@@ -261,7 +261,7 @@ tags: [topology, math590]
 > - $i_1: \pi_1(U \cap V) \to \pi_1(U) = 0$ is trivial.
 > - $i_2: \pi_1(U \cap V) \to \pi_1(V) \cong \langle c \rangle$ sends $t \mapsto c^2$. Why? The generator $t$ is a small loop around the center. In $V$, this loop is homotopic to the boundary loop of $B^2$ — but the boundary loop traverses the identified circle *twice* (going halfway around $\partial B^2$ maps to the full generator $c$ once, and the other half maps to $c$ again, since antipodal points are identified).
 >
-> By [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-1|van Kampen]]: $\pi_1(P^2) \cong (0 * \langle c \rangle) / N$. The relation is $i_1(t) \cdot i_2(t)^{-1} = e \cdot (c^2)^{-1}$, giving $c^2 = e$. Therefore:
+> By [[Seifert–van Kampen Theorem|van Kampen]]: $\pi_1(P^2) \cong (0 * \langle c \rangle) / N$. The relation is $i_1(t) \cdot i_2(t)^{-1} = e \cdot (c^2)^{-1}$, giving $c^2 = e$. Therefore:
 >
 > $$
 > \pi_1(P^2) \cong \langle\, c \mid c^2 \,\rangle \cong \mathbb{Z}/2\mathbb{Z}.
@@ -342,7 +342,7 @@ tags: [topology, math590]
 > [!proof]+ Proof sketch
 > Since $\pi$ sends all vertices to $x_0$, the image $\pi(\partial P)$ is a wedge of $k$ circles (one for each distinct label), joined at $x_0$. The loop running once around $\partial P$ counterclockwise maps to the word $w$ in these circles.
 >
-> Apply [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-1|van Kampen]] to $X = U \cup V$ where:
+> Apply [[Seifert–van Kampen Theorem|van Kampen]] to $X = U \cup V$ where:
 > - $U$ = image of the interior of $P$ (open, contractible, so $\pi_1(U) = 0$).
 > - $V$ = open neighborhood of $\pi(\partial P)$, which deformation retracts onto $\partial P / {\sim}$ = wedge of $k$ circles. So [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-3|$\pi_1(V) \cong \langle a_1, \ldots, a_k \rangle = F_k$]] (free group).
 >
@@ -360,7 +360,7 @@ tags: [topology, math590]
 
 ^pf-29-3
 
-*Uses:* [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-1|§29.1]], [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-3|Ex. §29.3]]
+*Uses:* [[Seifert–van Kampen Theorem|§29.1]], [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-3|Ex. §29.3]]
 
 > [!example] Example §29.8: Surface Fundamental Groups
 > Reading off the boundary word for each surface:
