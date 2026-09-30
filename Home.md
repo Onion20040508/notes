@@ -15,7 +15,7 @@
 ## Layout
 - `Math/` and `Physics/` hold one folder per **subject**, named by content. Course code, term, instructor, textbook and status are properties of the subject's home note.
 - Inside a subject: the home note (with a diagram of how chapters build on each other), then one folder per **chapter**. Each chapter folder has a chapter note (builds on / used by, sections, central results) and that chapter's notes.
-- Every concept has one home, in the subject where it is developed; other subjects link to it by name. `Examples/` inside a subject holds workhorse examples that recur across chapters.
+- Every concept has one home, in the subject where it is developed; other subjects link to it by name. `Key results/` inside a subject holds its hub notes (load-bearing results, each embedding its statement from the section where it is proved); `Examples/` holds workhorse examples that recur across chapters.
 - `attachments/` figures, `refs/` PDFs, `templates/` note templates.
 
 ## Callouts
