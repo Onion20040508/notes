@@ -1,0 +1,16 @@
+% Figure from MATH 451 notes, section 14. Compile with the notes preamble.
+\begin{tikzpicture}[x=3.4cm]
+  \draw[-stealth, thin] (-0.1,0) -- (2.2,0);
+  \foreach \a/\b/\c in {0/1/figB, 1/1.5/figB!65, 1.5/1.75/figB, 1.75/1.875/figB!65, 1.875/1.9375/figB, 1.9375/1.96875/figB!65, 1.96875/1.984375/figB} {
+    \fill[\c] (\a,-0.09) rectangle (\b,0.09);
+  }
+  \draw[thin] (0,0.14) -- (0,-0.14) node[below, font=\scriptsize] {$0$};
+  \draw[figR, thick] (2,0.2) -- (2,-0.2); \node[above, font=\scriptsize, figR] at (2,0.2) {$2$};
+  \foreach \x/\l in {1/s_1, 1.5/s_2, 1.75/s_3} { \draw[black!70, thin] (\x,0.14) -- (\x,-0.14) node[below, font=\scriptsize] {$\l$}; }
+  \node[font=\scriptsize, figB] at (0.5,0.3) {$1$};
+  \node[font=\scriptsize, figB] at (1.25,0.3) {$\tfrac12$};
+  \node[font=\scriptsize, figB] at (1.625,0.3) {$\tfrac14$};
+  \node[font=\scriptsize, figB] at (1.84,0.3) {$\cdots$};
+  \draw[decorate, decoration={brace, amplitude=3pt, mirror}, black!55] (1.75,-0.5) -- (2,-0.5)
+    node[midway, below=3pt, font=\scriptsize, black] {gap $2-s_3 = \tfrac14$};
+\end{tikzpicture}

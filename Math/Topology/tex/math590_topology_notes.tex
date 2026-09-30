@@ -857,7 +857,7 @@ Let $Y \subseteq X$ be a subspace. If $A$ is closed in $Y$, and $Y$ is closed in
 \end{thmbox}
 
 \begin{proof}
-By Theorem 6.3, $A = C \cap Y$ for some $C$ closed in $X$. Since $C$ and $Y$ are both closed in $X$, their intersection $A = C \cap Y$ is closed in $X$.
+By Theorem 6.2, $A = C \cap Y$ for some $C$ closed in $X$. Since $C$ and $Y$ are both closed in $X$, their intersection $A = C \cap Y$ is closed in $X$.
 \end{proof}
 
 % ============================================================================
@@ -1186,7 +1186,7 @@ So $d_{\mathbb{R}^2}(\phi(z_1), \phi(z_2)) = d_{\mathbb{C}}(z_1, z_2)$ for all $
 
 This is why we freely write $S^1$ without specifying the ambient space. In particular, the covering map $p(x) = e^{2\pi i x} \in \mathbb{C}$ and $p(x) = (\cos 2\pi x, \sin 2\pi x) \in \mathbb{R}^2$ are the same map under this identification.
 
-\textbf{Consequence for $\pi_1$:} Once we compute $\pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$ (via the covering map $p: \mathbb{R} \to S^1_{\mathbb{R}^2}$ in \S 25), we get $\pi_1(S^1_{\mathbb{C}}) \cong \mathbb{Z}$ for free: the homeomorphism $\phi$ induces an isomorphism $\phi_*: \pi_1(S^1_{\mathbb{C}}) \to \pi_1(S^1_{\mathbb{R}^2})$ (\S 23, ``$\pi_1$ is a topological invariant''), so $\pi_1(S^1_{\mathbb{C}}) \cong \pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$. No separate computation needed.
+\textbf{Consequence for $\pi_1$:} Once we compute $\pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$ (via the covering map $p: \mathbb{R} \to S^1_{\mathbb{R}^2}$ in \S 24), we get $\pi_1(S^1_{\mathbb{C}}) \cong \mathbb{Z}$ for free: the homeomorphism $\phi$ induces an isomorphism $\phi_*: \pi_1(S^1_{\mathbb{C}}) \to \pi_1(S^1_{\mathbb{R}^2})$ (\S 23, ``$\pi_1$ is a topological invariant''), so $\pi_1(S^1_{\mathbb{C}}) \cong \pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$. No separate computation needed.
 \end{exbox}
 
 \subsection{Rules for Constructing Continuous Functions}
@@ -1215,7 +1215,7 @@ Let $C \subseteq Y$ be closed. We show $h^{-1}(C)$ is closed in $X$.
 
 Note that $h^{-1}(C) = \{x \in X : h(x) \in C\} = \{x \in A : f(x) \in C\} \cup \{x \in B : g(x) \in C\} = f^{-1}(C) \cup g^{-1}(C)$.
 
-Since $f: A \to Y$ is continuous and $C$ is closed in $Y$, $f^{-1}(C)$ is closed in $A$. Since $A$ is closed in $X$, by Theorem 6.4, $f^{-1}(C)$ is closed in $X$.
+Since $f: A \to Y$ is continuous and $C$ is closed in $Y$, $f^{-1}(C)$ is closed in $A$. Since $A$ is closed in $X$, by Theorem 6.3, $f^{-1}(C)$ is closed in $X$.
 
 Similarly, $g^{-1}(C)$ is closed in $B$, and since $B$ is closed in $X$, $g^{-1}(C)$ is closed in $X$.
 
@@ -1645,7 +1645,7 @@ Thus $\mathcal{T}' = \mathcal{T}$.
 \end{proof}
 
 \begin{defbox}[Quotient Topology]
-The unique topology $\mathcal{T}$ from Proposition 12.2 is called the \textbf{quotient topology} on $A$ induced by $p$.
+The unique topology $\mathcal{T}$ from Proposition 12.1 is called the \textbf{quotient topology} on $A$ induced by $p$.
 \end{defbox}
 
 \begin{rembox}[Which Comes First: the Topology or the Map]
@@ -1740,7 +1740,7 @@ Since $p$ is continuous, $U$ open in $Y$ $\Rightarrow$ $p^{-1}(U)$ open in $X$. 
 \end{proof}
 
 \begin{rembox}[This is a Strong Condition]
-Being open or closed is \emph{sufficient} but not \emph{necessary} for a continuous surjection to be a quotient map. There exist quotient maps that are neither open nor closed (HW5: $\pi_1|_A$ where $A$ is chosen so that the restriction maps some open sets to non-open sets and some closed sets to non-closed sets). In practice, the compact-to-Hausdorff shortcut (Proposition 12.1) is often more useful: a continuous surjection from a compact space to a Hausdorff space is automatically a closed map, hence a quotient map.
+Being open or closed is \emph{sufficient} but not \emph{necessary} for a continuous surjection to be a quotient map. There exist quotient maps that are neither open nor closed (HW5: $\pi_1|_A$ where $A$ is chosen so that the restriction maps some open sets to non-open sets and some closed sets to non-closed sets). In practice, the compact-to-Hausdorff shortcut (\S 15, closed-map argument) is often more useful: a continuous surjection from a compact space to a Hausdorff space is automatically a closed map, hence a quotient map.
 \end{rembox}
 
 \subsection{Universal Property of Quotient Maps}
@@ -1814,7 +1814,7 @@ is a quotient map.
 \end{thmbox}
 
 \begin{proof}
-We verify the hypotheses of the compact-to-Hausdorff shortcut (Proposition 12.1):
+We verify the hypotheses of the compact-to-Hausdorff shortcut (\S 15, closed-map argument):
 \begin{itemize}[nosep]
     \item \textit{Continuous:} $\pi_1$ and $\pi_2$ are continuous, so $\pi_1 \times \pi_2$ is continuous (a map into a product is continuous iff each coordinate function is).
     \item \textit{Surjective:} Given $(y_1, y_2) \in Y_1 \times Y_2$, surjectivity of $\pi_1$ and $\pi_2$ gives $x_1, x_2$ with $\pi_i(x_i) = y_i$, so $(\pi_1 \times \pi_2)(x_1, x_2) = (y_1, y_2)$.
@@ -1831,11 +1831,11 @@ Each $\pi_i: [0, 2\pi] \to S^1$ by $\pi_i(s) = e^{is}$ is a quotient map (compac
 \begin{rembox}[The Quotient Space Toolkit]
 Three theorems form the complete toolkit for working with quotient spaces:
 
-\textbf{Theorem A (Compact-to-Hausdorff, Prop.\ 12.1):} A continuous surjection from a compact space to a Hausdorff space is automatically a quotient map. This is how you \emph{verify} that a map is a quotient map without checking the open-set condition directly.
+\textbf{Theorem A (Compact-to-Hausdorff, \S 15, closed-map argument):} A continuous surjection from a compact space to a Hausdorff space is automatically a quotient map. This is how you \emph{verify} that a map is a quotient map without checking the open-set condition directly.
 
 \textbf{Theorem B (Product of Quotients, above):} Products of quotient maps are quotient maps (in the compact-Hausdorff setting). This is how you \emph{build quotient maps of product spaces} from quotient maps of the factors.
 
-\textbf{Theorem C (Universal Property, Thm.\ 12.5):} If $\pi$ is a quotient map and $g$ is constant on fibers of $\pi$, then $g$ descends to a continuous map on the quotient. This is how you \emph{construct continuous maps on quotient spaces}.
+\textbf{Theorem C (Universal Property, Thm.\ 12.3):} If $\pi$ is a quotient map and $g$ is constant on fibers of $\pi$, then $g$ descends to a continuous map on the quotient. This is how you \emph{construct continuous maps on quotient spaces}.
 
 The standard workflow: use A and B to establish that your map is a quotient map, then use C to descend maps from the ``simple'' space to the ``glued'' space. This toolkit will be used extensively in Part II for computing fundamental groups of spaces built by gluing.
 \end{rembox}
@@ -2186,7 +2186,7 @@ So $F$ is a path from $(x_1, y_1)$ to $(x_2, y_2)$.
 \end{proof}
 
 \begin{rembox}
-Combined with the earlier result that finite products of connected spaces are connected (\S 13.5), we now have: finite products preserve both connectedness and path-connectedness. In particular, $S^1 \times S^1$ (the torus) is path-connected since $S^1$ is path-connected.
+Combined with the earlier result that finite products of connected spaces are connected (\S 13.6), we now have: finite products preserve both connectedness and path-connectedness. In particular, $S^1 \times S^1$ (the torus) is path-connected since $S^1$ is path-connected.
 \end{rembox}
 
 % ============================================================================
@@ -3023,7 +3023,7 @@ $(\Leftarrow)$: Clear. The set $C = \overline{V}$ is a compact subspace containi
 
 $(\Rightarrow)$: Suppose $X$ is locally compact. Let $x \in X$ and let $U$ be a neighborhood of $x$. Take the one-point compactification $Y = X \cup \{\infty\}$, and let $C = Y \setminus U$. Then $C$ is closed in $Y$ (since $U$ is open in $X$ and the topology on $Y$ makes $X$ open in $Y$), so $C$ is a compact subspace of $Y$ (closed subset of compact).
 
-Since $Y$ is compact Hausdorff, we can apply Lemma 26.4 (a point and a disjoint compact set in a Hausdorff space can be separated by open sets) to choose disjoint open sets $V \ni x$ and $W \supseteq C$ in $Y$. Then $\overline{V}$ (closure in $Y$) is compact: it is a closed subset of the compact space $Y$. Furthermore, $\overline{V}$ is disjoint from $C$ since $\overline{V} \subseteq Y \setminus W$ and $W \supseteq C$, so $\overline{V} \subseteq Y \setminus C = U$, as desired.
+Since $Y$ is compact Hausdorff, we can apply Munkres Lemma 26.4 (a point and a disjoint compact set in a Hausdorff space can be separated by open sets) to choose disjoint open sets $V \ni x$ and $W \supseteq C$ in $Y$. Then $\overline{V}$ (closure in $Y$) is compact: it is a closed subset of the compact space $Y$. Furthermore, $\overline{V}$ is disjoint from $C$ since $\overline{V} \subseteq Y \setminus W$ and $W \supseteq C$, so $\overline{V} \subseteq Y \setminus C = U$, as desired.
 \end{proof}
 
 \begin{rembox}
@@ -3037,7 +3037,7 @@ Let $X$ be locally compact Hausdorff and let $A$ be a subspace of $X$. If $A$ is
 \begin{proof}
 \textbf{Case 1: $A$ closed.} Given $x \in A$, let $C$ be a compact subspace of $X$ containing a neighborhood $U$ of $x$ in $X$. Then $C \cap A$ is closed in $C$ (since $A$ is closed in $X$) and thus compact. It contains the neighborhood $U \cap A$ of $x$ in $A$. (Note: the Hausdorff condition was not needed here.)
 
-\textbf{Case 2: $A$ open.} Given $x \in A$, apply Theorem 29.2 to the space $X$: since $A$ is a neighborhood of $x$, there exists a neighborhood $V$ of $x$ in $X$ with $\overline{V}$ compact and $\overline{V} \subseteq A$. Then $C = \overline{V}$ is a compact subspace of $A$ containing the neighborhood $V$ of $x$ in $A$.
+\textbf{Case 2: $A$ open.} Given $x \in A$, apply Theorem 17.6 (Munkres 29.2) to the space $X$: since $A$ is a neighborhood of $x$, there exists a neighborhood $V$ of $x$ in $X$ with $\overline{V}$ compact and $\overline{V} \subseteq A$. Then $C = \overline{V}$ is a compact subspace of $A$ containing the neighborhood $V$ of $x$ in $A$.
 \end{proof}
 
 \begin{corbox}[{Locally Compact Hausdorff Spaces (Munkres 29.4)}]
@@ -3047,7 +3047,7 @@ A space $X$ is locally compact Hausdorff if and only if $X$ is homeomorphic to a
 \begin{proof}
 $(\Rightarrow)$: $X$ is an open subspace of its one-point compactification $Y = X \cup \{\infty\}$, which is compact Hausdorff by the one-point compactification theorem.
 
-$(\Leftarrow)$: Suppose $X \cong U \subseteq Y$ where $U$ is open in $Y$ compact Hausdorff. Since $Y$ is compact Hausdorff, $Y$ is locally compact. By Corollary 29.3 (open subspace of locally compact Hausdorff is locally compact), $U$ is locally compact. Since $Y$ is Hausdorff, $U$ inherits the Hausdorff property. So $X$ is locally compact Hausdorff.
+$(\Leftarrow)$: Suppose $X \cong U \subseteq Y$ where $U$ is open in $Y$ compact Hausdorff. Since $Y$ is compact Hausdorff, $Y$ is locally compact. By Corollary 17.7 (Munkres 29.3) (open subspace of locally compact Hausdorff is locally compact), $U$ is locally compact. Since $Y$ is Hausdorff, $U$ inherits the Hausdorff property. So $X$ is locally compact Hausdorff.
 \end{proof}
 
 % ============================================================================
@@ -3536,7 +3536,7 @@ Many spaces whose $\pi_1$ we want to compute are built by \textbf{gluing}: $S^1 
     \item \textbf{Build homotopies on a simple space} (a square, an interval, a ball) where geometry is easy---straight lines, rays, linear interpolations all work.
     \item \textbf{Descend them to the quotient space} (a torus, a circle, a sphere) where the topology lives.
 \end{enumerate}
-Step 2 is where the \textbf{Universal Property of Quotient Maps} (\S 12.5) enters: it guarantees that if a map on the simple space respects the gluing (sends identified points to the same place), then it descends to a well-defined continuous map on the quotient. The Quotient Space Toolkit (Theorems A, B, C from \S 12) will appear in:
+Step 2 is where the \textbf{Universal Property of Quotient Maps} (\S 12.3) enters: it guarantees that if a map on the simple space respects the gluing (sends identified points to the same place), then it descends to a well-defined continuous map on the quotient. The Quotient Space Toolkit (Theorems A, B, C from \S 12) will appear in:
 \begin{itemize}[nosep]
     \item The \textbf{nullhomotopy lemma}: $\pi: S^n \times I \to B^{n+1}$ by $\pi(x,t) = (1-t)x$ is a quotient map (Thm A); a nullhomotopy $H$ descends to an extension $k: B^{n+1} \to X$ (Thm C).
     \item The \textbf{covering map} $p: \mathbb{R} \to S^1$: the interval $[0, 2\pi]$ quotients to $S^1$ (Thm A); the winding number computation uses the fact that $p$ is a quotient map.
@@ -3704,7 +3704,7 @@ An isomorphism is a \textbf{perfect dictionary} between two groups: you can do a
 
 \textbf{Computation:} $\pi_1(S^1) \cong \mathbb{Z}$ means that everything about loops on $S^1$ can be answered by doing arithmetic in $\mathbb{Z}$. How many essentially different loops? Countably many, indexed by winding number. What happens when you concatenate a loop of winding number $3$ with one of winding number $-2$? Winding number $1$. The isomorphism converts hard topology into easy algebra.
 
-\textbf{Distinguishing spaces:} If $\pi_1(X) \not\cong \pi_1(Y)$---meaning no isomorphism exists---then the groups have genuinely different structure that no relabeling can reconcile. Since homeomorphisms induce isomorphisms (Corollary 23.1), this forces $X \not\cong Y$. For instance, $\mathbb{Z} \not\cong \{e\}$ (different cardinalities), so $S^1 \not\cong \mathbb{R}^2$. And $\mathbb{Z} \not\cong \mathbb{Z}^2$ (one is cyclic, the other is not), so $S^1 \not\cong T^2$.
+\textbf{Distinguishing spaces:} If $\pi_1(X) \not\cong \pi_1(Y)$---meaning no isomorphism exists---then the groups have genuinely different structure that no relabeling can reconcile. Since homeomorphisms induce isomorphisms (Corollary 23.6), this forces $X \not\cong Y$. For instance, $\mathbb{Z} \not\cong \{e\}$ (different cardinalities), so $S^1 \not\cong \mathbb{R}^2$. And $\mathbb{Z} \not\cong \mathbb{Z}^2$ (one is cyclic, the other is not), so $S^1 \not\cong T^2$.
 \end{rembox}
 
 \begin{rembox}[Analogy: Topology $\leftrightarrow$ Algebra]
@@ -4140,9 +4140,9 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 \begin{enumerate}
     \item \textbf{Any two maps to $\mathbb{R}^n$ are homotopic} (above): $H(x, t) = (1-t)f(x) + tg(x)$. Works because $\mathbb{R}^n$ is convex.
     
-    \item \textbf{Every loop in a convex set contracts} (\S 23.3): Take $g = e_{x_0}$, giving $H(s, t) = (1-t)f(s) + tx_0$. This is a \emph{path} homotopy (not just a homotopy): $H(0, t) = (1-t)x_0 + tx_0 = x_0$ and $H(1, t) = (1-t)x_0 + tx_0 = x_0$, so the endpoints stay fixed.
+    \item \textbf{Every loop in a convex set contracts} (Example 23.2): Take $g = e_{x_0}$, giving $H(s, t) = (1-t)f(s) + tx_0$. This is a \emph{path} homotopy (not just a homotopy): $H(0, t) = (1-t)x_0 + tx_0 = x_0$ and $H(1, t) = (1-t)x_0 + tx_0 = x_0$, so the endpoints stay fixed.
     
-    \item \textbf{Reparameterization lemma} (\S 22.6): $H(s, t) = f((1-t)\,p(s) + t\,s)$. Here the straight-line homotopy happens \emph{inside the parameter space} $I = [0,1]$: the convex combination $(1-t)\,p(s) + ts$ continuously blends the reparameterization $p$ into the identity, and $I$ being convex guarantees the blend stays in $[0, 1]$. Then $f$ is applied to the result.
+    \item \textbf{Reparameterization lemma} (Lemma 22.5): $H(s, t) = f((1-t)\,p(s) + t\,s)$. Here the straight-line homotopy happens \emph{inside the parameter space} $I = [0,1]$: the convex combination $(1-t)\,p(s) + ts$ continuously blends the reparameterization $p$ into the identity, and $I$ being convex guarantees the blend stays in $[0, 1]$. Then $f$ is applied to the result.
 \end{enumerate}
 
 \begin{rembox}[The Essential Requirement is Convexity]
@@ -4406,7 +4406,7 @@ However, \textbf{proofs always happen at the path level}. To show $[f] = [g]$ in
 \end{enumerate}
 This is analogous to modular arithmetic: you state ``$3 \equiv 7 \pmod{4}$'' at the class level but verify it by computing $7 - 3 = 4$ at the representative level.
 
-\textbf{Well-definedness is the recurring concern.} Any time you define something on classes using representatives---like $[f] * [g] = [f * g]$ or the induced homomorphism $f_*([g]) = [f \circ g]$---you must check that the result is independent of which representative you chose. This is why Proposition 22.3 (if $f \simeq_p f'$ and $g \simeq_p g'$, then $f * g \simeq_p f' * g'$) was needed before the group properties could even be stated.
+\textbf{Well-definedness is the recurring concern.} Any time you define something on classes using representatives---like $[f] * [g] = [f * g]$ or the induced homomorphism $f_*([g]) = [f \circ g]$---you must check that the result is independent of which representative you chose. This is why Proposition 22.4 (if $f \simeq_p f'$ and $g \simeq_p g'$, then $f * g \simeq_p f' * g'$) was needed before the group properties could even be stated.
 \end{rembox}
 
 % ============================================================================
@@ -4429,10 +4429,10 @@ with group operation $[f] * [g] = [f * g]$.
 \begin{rembox}
 By the results of \S 22, $\pi_1(X, x_0)$ is indeed a group:
 \begin{itemize}[nosep]
-    \item The operation $*$ is well-defined on homotopy classes (Proposition 22.3).
-    \item Associativity: $[f] * ([g] * [h]) = ([f] * [g]) * [h]$ (Theorem 22.4(1)).
-    \item Identity: $[e_{x_0}]$, where $e_{x_0}(s) = x_0$ for all $s$ (Theorem 22.4(2)).
-    \item Inverses: $[f]^{-1} = [\bar{f}]$, where $\bar{f}(s) = f(1-s)$ (Theorem 22.4(3)).
+    \item The operation $*$ is well-defined on homotopy classes (Proposition 22.4).
+    \item Associativity: $[f] * ([g] * [h]) = ([f] * [g]) * [h]$ (Theorem 22.6(1)).
+    \item Identity: $[e_{x_0}]$, where $e_{x_0}(s) = x_0$ for all $s$ (Theorem 22.6(2)).
+    \item Inverses: $[f]^{-1} = [\bar{f}]$, where $\bar{f}(s) = f(1-s)$ (Theorem 22.6(3)).
 \end{itemize}
 All products are defined because every loop starts and ends at $x_0$.
 \end{rembox}
@@ -4730,7 +4730,7 @@ If $n = \infty$ (every fiber is countably infinite), we say $p$ is an \textbf{in
 \begin{rembox}[Why Copies Compute $\pi_1$]
 \textbf{Why multiple copies compute $\pi_1$.} In $B$, every loop based at $b_0$ starts and ends at the same point --- you cannot ``see'' the difference between winding once, winding twice, or sitting still just by looking at the endpoints. The copies of $b_0$ in the covering space $E$ are what separate these loops.
 
-A loop in $B$ lifts to a path in $E$ that starts at $e_0$ but may end at a \emph{different} copy of $b_0$ in the fiber $p^{-1}(b_0)$. Which copy it lands on depends on the homotopy class of the loop. Different homotopy classes land on different copies (by the homotopy lifting lemma). So the copies serve as a \textbf{scoreboard}: each point in the fiber $p^{-1}(b_0)$ records a distinct way of looping around $B$.
+A loop in $B$ lifts to a path in $E$ that starts at $e_0$ but may end at a \emph{different} copy of $b_0$ in the fiber $p^{-1}(b_0)$. Which copy it lands on depends only on the homotopy class of the loop (by the homotopy lifting lemma). When $E$ is simply connected, different homotopy classes land on different copies. So the copies serve as a \textbf{scoreboard}: each point in the fiber $p^{-1}(b_0)$ records a distinct way of looping around $B$.
 
 \textbf{Why this works:}
 \begin{itemize}[nosep]
@@ -4821,11 +4821,11 @@ The conclusion $\pi_1(S^1) \cong \mathbb{Z}$ says: the group of loops on the cir
 \subsection{Non-Example: Local Homeomorphism $\neq$ Covering Map}
 
 \begin{exbox}[{$p: \mathbb{R}_+ \to S^1$ is Not a Covering Map}]
-The restriction $p: \mathbb{R}_+ \to S^1$, $p(x) = (\cos 2\pi x, \sin 2\pi x)$, is still surjective and a local homeomorphism, but \textbf{not} a covering map.
+The restriction $p: \mathbb{R}_+ \to S^1$ to $\mathbb{R}_+ = (0, \infty)$, $p(x) = (\cos 2\pi x, \sin 2\pi x)$, is still surjective and a local homeomorphism, but \textbf{not} a covering map.
 
-The neighborhood $U$ of $(1, 0) \in S^1$ (e.g., the right half-circle) has preimage $p^{-1}(U) = V_0 \cup \bigcup_{n \geq 1} V_n$ where $V_0 = [0, 1/4) \cap \mathbb{R}_+$. But $p|_{V_0}: V_0 \to U$ is \textbf{not surjective} (it only covers the top-right quarter), so $V_0$ is not a valid slice. The preimage $p^{-1}(U)$ does not decompose into disjoint copies of $U$.
+The neighborhood $U$ of $(1, 0) \in S^1$ (e.g., the right half-circle) has preimage $p^{-1}(U) = V_0 \cup \bigcup_{n \geq 1} V_n$ where $V_0 = (-1/4, 1/4) \cap \mathbb{R}_+ = (0, 1/4)$. But $p|_{V_0}: V_0 \to U$ is \textbf{not surjective} (it only covers the top-right quarter), so $V_0$ is not a valid slice. The preimage $p^{-1}(U)$ does not decompose into disjoint copies of $U$.
 
-\textbf{Consequence: lifting fails.} Consider a loop $f$ in $S^1$ that winds once clockwise from $(1,0)$. If we try to lift starting at $e_0 = 0$, we would need $\tilde{f}(s) = -s$ --- but $-s \notin \mathbb{R}_+$ for $s > 0$. The lift ``wants to go left'' past $0$, but $\mathbb{R}_+$ has a boundary there. The disjoint-copies condition fails precisely at $V_0$, and this is where the lift breaks down.
+\textbf{Consequence: lifting fails.} Consider a loop $f$ in $S^1$ that winds once clockwise from $(1,0)$. If we try to lift starting at $e_0 = 1$, we would need $\tilde{f}(s) = 1 - s$ --- but $\tilde{f}(1) = 0 \notin \mathbb{R}_+$. The lift ``wants to go left'' to $0$, but $\mathbb{R}_+$ stops just short of it. The disjoint-copies condition fails precisely at $V_0$, and this is where the lift breaks down.
 \end{exbox}
 
 \subsection{Restriction to Subspaces}
@@ -5017,7 +5017,7 @@ Concretely, the lift $\tilde{f}: I \to E$ is a \textbf{path in the covering spac
 Two key features distinguish $\tilde{f}$ from $f$:
 \begin{itemize}[nosep]
     \item \textbf{A loop may lift to a non-loop.} If $f$ is a loop ($f(0) = f(1) = b_0$), the lift $\tilde{f}$ starts at $e_0$ but may end at a \emph{different} point in the fiber $p^{-1}(b_0)$. For example, the loop winding once around $S^1$ lifts to the path from $0$ to $1$ in $\mathbb{R}$ --- which is not a loop.
-    \item \textbf{The endpoint records information.} The endpoint $\tilde{f}(1) \in p^{-1}(b_0)$ depends on the homotopy class of $f$ (by the homotopy lifting lemma below). Different homotopy classes land at different points in the fiber.
+    \item \textbf{The endpoint records information.} The endpoint $\tilde{f}(1) \in p^{-1}(b_0)$ depends only on the homotopy class of $f$ (by the homotopy lifting lemma below). If $E$ is simply connected, different homotopy classes land at different points in the fiber.
 \end{itemize}
 \end{rembox}
 
@@ -5458,7 +5458,7 @@ Since $r \circ j = \operatorname{id}_{S^1}$, we combine:
 \[[f] = (r_* \circ j_*)([f]) = (r_* \circ j_*)([g]) = [g].\]
 So $j_*$ is injective.
 
-\textbf{Step 4: Contradiction.} We have computed $\pi_1(S^1) \cong \mathbb{Z}$ (Theorem 25.10) and $\pi_1(B^2) = 0$ (the proposition above: $B^2$ is convex, so every loop contracts via the straight-line homotopy). The homomorphism $j_*: \mathbb{Z} \to 0$ must send every element to $0$ (the only element of the trivial group). In particular, $j_*(1) = j_*(2) = 0$, so $j_*$ is not injective. This contradicts Step 3.
+\textbf{Step 4: Contradiction.} We have computed $\pi_1(S^1) \cong \mathbb{Z}$ (Theorem 24.10) and $\pi_1(B^2) = 0$ (the proposition above: $B^2$ is convex, so every loop contracts via the straight-line homotopy). The homomorphism $j_*: \mathbb{Z} \to 0$ must send every element to $0$ (the only element of the trivial group). In particular, $j_*(1) = j_*(2) = 0$, so $j_*$ is not injective. This contradicts Step 3.
 \end{proof}
 
 \begin{rembox}[Why This Matters]
@@ -5493,15 +5493,15 @@ This is a quadratic in $t$ with:
     \item $a = \|x - f(x)\|^2 > 0$ (since $f(x) \neq x$ by assumption).
     \item $c = \|f(x)\|^2 - 1 \leq 0$ (since $f(x) \in B^2$, so $\|f(x)\| \leq 1$).
 \end{itemize}
-By Vieta's formulas, the product of the two roots is $c/a \leq 0$, so one root is $\leq 0$ and the other is $\geq 0$. Define $r(x) = \gamma(t_0)$, where $t_0$ is the unique non-negative root.
+By Vieta's formulas, the product of the two roots is $c/a \leq 0$, so one root is $\leq 0$ and the other is $\geq 0$. Define $r(x) = \gamma(t_0)$, where $t_0$ is the larger (hence non-negative) root.
 
 \textbf{Step 3: $r(x) \in S^1$.} By construction, $\|\gamma(t_0)\| = 1$.
 
-\textbf{Step 4: $r$ is continuous.} The non-negative root $t_0$ is given by the quadratic formula:
+\textbf{Step 4: $r$ is continuous.} The larger root $t_0$ is given by the quadratic formula:
 \[t_0 = \frac{-b + \sqrt{b^2 - 4ac}}{2a}\]
-(the ``$+$'' root, since the other root is $\leq 0$). Since $a, b, c$ depend continuously on $x$ and the discriminant $b^2 - 4ac \geq b^2 - 4a \cdot c \geq 0$ (as $c \leq 0$), $t_0$ depends continuously on $x$, and hence $r(x) = \gamma(t_0)$ is continuous.
+(the ``$+$'' root, since the other root is $\leq 0$). Since $a, b, c$ depend continuously on $x$ and the discriminant $b^2 - 4ac \geq b^2 \geq 0$ (as $a > 0$, $c \leq 0$), $t_0$ depends continuously on $x$, and hence $r(x) = \gamma(t_0)$ is continuous.
 
-\textbf{Step 5: $r$ is a retraction.} For $x \in S^1$, we have $\|x\|^2 = 1$, so $t = 1$ satisfies the quadratic (since $\gamma(1) = x$ and $\|x\| = 1$). Since $1 \geq 0$ and the non-negative root is unique, $t_0 = 1$, giving $r(x) = \gamma(1) = x$.
+\textbf{Step 5: $r$ is a retraction.} For $x \in S^1$, we have $\|x\|^2 = 1$, so $t = 1$ satisfies the quadratic (since $\gamma(1) = x$ and $\|x\| = 1$). Since the other root is $c/a \leq 0 < 1$, the larger root is $t_0 = 1$, giving $r(x) = \gamma(1) = x$.
 
 Thus $r: B^2 \to S^1$ is a retraction, contradicting the no-retraction theorem.
 \end{proof}
@@ -5528,7 +5528,7 @@ S^n \times I \arrow[r, "H"] & X \\[-8pt]
 \]
 Check: $\|(1-t)x\| = 1-t \leq 1$ so $(1-t)x \in B^{n+1}$; $H(x,0) = k(x) = h(x)$; $H(x,1) = k(0)$ is constant.
 
-\textbf{($\Rightarrow$): Nullhomotopic $\Rightarrow$ extension.} We apply the Universal Property of Quotient Maps (\S 12.5). The maps involved are:
+\textbf{($\Rightarrow$): Nullhomotopic $\Rightarrow$ extension.} We apply the Universal Property of Quotient Maps (\S 12.3). The maps involved are:
 \[
 \begin{tikzcd}
 S^n \times I \arrow[r, "H"] \arrow[d, "\pi"'] & X \\
@@ -5586,7 +5586,7 @@ Suppose $f(x) \neq x$ for all $x \in B^{n+1}$. Since $f(x)$ and $x$ are distinct
     \item $a = \|x - f(x)\|^2 = \sum_{i=1}^{n+1} (x_i - f(x)_i)^2 > 0$ (since $f(x) \neq x$).
     \item $c = \|f(x)\|^2 - 1 \leq 0$ (since $f(x) \in B^{n+1}$).
 \end{itemize}
-The expansion involves $(n+1)$ squared terms instead of $2$, but collects identically into $at^2 + bt + c = 0$. By Vieta's formulas, the product of the roots is $c/a \leq 0$, so there is a unique non-negative root $t_0 = (-b + \sqrt{b^2 - 4ac})/2a$.
+The expansion involves $(n+1)$ squared terms instead of $2$, but collects identically into $at^2 + bt + c = 0$. By Vieta's formulas, the product of the roots is $c/a \leq 0$, so the larger root $t_0 = (-b + \sqrt{b^2 - 4ac})/2a$ is non-negative.
 
 Define $r(x) = \gamma(t_0)$. Then:
 \begin{itemize}[nosep]
@@ -5690,8 +5690,8 @@ This is the same formula as for $\mathbb{R}^2 \setminus \{0\}$ restricted to $\|
 $\mathbb{R}^2 \setminus \{p, q\}$ (two points removed) deformation retracts onto a figure-eight space (wedge of two circles). So $\pi_1(\mathbb{R}^2 \setminus \{p, q\}) \cong F_2$ (the free group on two generators).
 \end{exbox}
 
-\begin{exbox}[Doubly punctured ball]
-A ball with two points removed deformation retracts onto both a figure-eight space and a ``theta'' space ($\Theta$). Similarly, neither the figure-eight nor the theta space is a deformation retract of the other, but they have isomorphic fundamental groups (both $\cong F_2$).
+\begin{exbox}[Doubly punctured plane]
+The plane with two points removed deformation retracts onto both a figure-eight space and a ``theta'' space ($\Theta$). Similarly, neither the figure-eight nor the theta space is a deformation retract of the other, but they have isomorphic fundamental groups (both $\cong F_2$).
 
 This illustrates that \textbf{isomorphic $\pi_1$ does not imply deformation retract}---the relationship is one-directional.
 \end{exbox}
@@ -5756,7 +5756,7 @@ This is a straight-line homotopy from $x$ toward $r(x)$. Check the deformation r
     \item $\tilde{F}(x, 0) = x$ for all $x$ (starts as identity). \checkmark
     \item $\tilde{F}(x, 1) = r(x) \in \partial[0, 2\pi]^2$ for all $x$ (ends on boundary). \checkmark
     \item If $x \in \partial[0, 2\pi]^2$: the ray from $q$ through $x$ hits the boundary at $x$ itself, so $r(x) = x$, and $\tilde{F}(x, t) = (1-t)x + tx = x$ for all $t$ (boundary stays fixed). \checkmark
-    \item $\tilde{F}(x, t) \neq q$ for all $t$: each $(1-t)x + tr(x)$ lies on the segment from $x$ to $r(x)$, which is on the opposite side of $q$ from the origin (or passes through $q$ only at $x = q$, which we excluded). \checkmark
+    \item $\tilde{F}(x, t) \neq q$ for all $t$: each $(1-t)x + tr(x)$ lies on the segment from $x$ to $r(x)$, which lies on the ray from $q$ through $x$, beyond $x$ (as seen from $q$), so it never contains $q$. \checkmark
 \end{itemize}
 So $\tilde{F}$ is a deformation retraction of the punctured square onto its boundary.
 
@@ -5769,7 +5769,7 @@ We want a deformation retraction $F: (T^2 \setminus \{pt\}) \times I \to T^2 \se
 (T^2 \setminus \{pt\}) \times I \arrow[r, "F"', dashed] & T^2 \setminus \{pt\}
 \end{tikzcd}
 \]
-We want the dashed arrow $F$ to exist and be continuous. By the universal property (\S 12.5), the composite $\pi \circ \tilde{F}$ descends to a continuous map $F$ on $(T^2 \setminus \{pt\}) \times I$ if and only if $\pi \circ \tilde{F}$ is \textbf{constant on fibers} of $\pi \times \operatorname{id}$.
+We want the dashed arrow $F$ to exist and be continuous. By the universal property (\S 12.3), the composite $\pi \circ \tilde{F}$ descends to a continuous map $F$ on $(T^2 \setminus \{pt\}) \times I$ if and only if $\pi \circ \tilde{F}$ is \textbf{constant on fibers} of $\pi \times \operatorname{id}$.
 
 \textbf{What does ``constant on fibers'' mean here?} Two points $(x_1, t)$ and $(x_2, t)$ are in the same fiber of $\pi \times \operatorname{id}$ when $\pi(x_1) = \pi(x_2)$ (and same $t$). This happens exactly when $x_1 \sim x_2$ under the edge identifications. We need:
 \[\text{if } x_1 \sim x_2, \quad \text{then } \pi(\tilde{F}(x_1, t)) = \pi(\tilde{F}(x_2, t)) \text{ for all } t.\]
@@ -6137,7 +6137,7 @@ By stereographic projection from $q_2$, the punctured sphere $S_2 \setminus \{q_
 
 Define $F: U \times I \to U$ by:
 \[F(x, t) = \begin{cases} x & \text{if } x \in S_1, \\ r_t(x) & \text{if } x \in S_2 \setminus \{q_2\}. \end{cases}\]
-These agree at the overlap point $p$ (since $r_t(p) = p$). The sets $S_1$ and $S_2 \setminus \{q_2\}$ are both closed in $U$ (since $S_1$ is compact in Hausdorff $U$, and $S_2 \setminus \{q_2\}$ is $U \setminus \operatorname{int}(S_1)$), so $F$ is continuous by the \textbf{pasting lemma} (for closed sets).
+These agree at the overlap point $p$ (since $r_t(p) = p$). The sets $S_1$ and $S_2 \setminus \{q_2\}$ are both closed in $U$ (since $S_1$ is compact in Hausdorff $U$, and $S_2 \setminus \{q_2\} = S_2 \cap U$ is closed in $U$ because $S_2$ is closed in $X$, being compact in Hausdorff $X$), so $F$ is continuous by the \textbf{pasting lemma} (for closed sets).
 
 Check: $F(x, 0) = x$ (identity), $F(x, 1) \in S_1$ for all $x$ (collapses $S_2 \setminus \{q_2\}$ to $p \in S_1$), and $F(x, t) = x$ for all $x \in S_1$ (fixed). So $F$ is a deformation retraction of $U$ onto $S_1 \cong S^2$. Since $\pi_1(S^2) = 0$, $U$ is simply connected.
 
@@ -6227,7 +6227,7 @@ The fundamental group of the projective plane is the cyclic group of order $2$.
 \begin{proof}
 The quotient map $p: S^2 \to P^2$ is a covering map (proved above). Since $S^2$ is simply connected ($\pi_1(S^2) = 0$, proved in \S 27), the lifting correspondence
 \[\phi: \pi_1(P^2, y_0) \to p^{-1}(y_0)\]
-is a bijection (by Theorem 25.9: when the covering space is simply connected, the lifting correspondence is bijective).
+is a bijection (by Theorem 24.9: when the covering space is simply connected, the lifting correspondence is bijective).
 
 The fiber $p^{-1}(y_0) = \{x_0, -x_0\}$ has exactly $2$ elements (the point and its antipode). Therefore $|\pi_1(P^2, y_0)| = 2$.
 
@@ -6415,7 +6415,7 @@ The proof chains three results:
 
 \textit{Stage (a): Collapse the connecting neck to a point.} The double torus $\Sigma_2$ consists of two torus-shaped handles joined by a connecting tube. Collapse this tube to a single point $x_0$. The result is two tori sharing the single point $x_0$ (a wedge $T^2 \vee T^2$).
 
-\textit{Stage (b): Collapse each torus to a circle.} Each torus deformation retracts onto a meridian circle (one of its generating loops). Applying this to each torus independently (fixing $x_0$ throughout), we collapse $T^2 \vee T^2$ to $S^1 \vee S^1$ --- the figure eight.
+\textit{Stage (b): Collapse each torus to a circle.} Each torus retracts onto a meridian circle (one of its generating loops). Applying this to each torus independently (fixing $x_0$ throughout), we collapse $T^2 \vee T^2$ to $S^1 \vee S^1$ --- the figure eight.
 
 The composition of these two collapses gives a retraction $r: \Sigma_2 \to S^1 \vee S^1 = X$ with $r|_X = \operatorname{id}_X$ (the two circles are fixed throughout).
 
@@ -6486,7 +6486,7 @@ This is the payoff of the entire course: purely algebraic invariants ($\pi_1$) d
 \begin{itemize}[nosep]
     \item $\pi_1(S^2) = 0$: generation theorem + stereographic projection (\S 27).
     \item $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$: covering space with simply connected cover (\S 28).
-    \item $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$: product formula (\S 23) + $\pi_1(S^1) \cong \mathbb{Z}$ via lifting correspondence (\S 25).
+    \item $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$: product formula (\S 23) + $\pi_1(S^1) \cong \mathbb{Z}$ via lifting correspondence (\S 24).
     \item $\pi_1(\Sigma_2)$ non-abelian: retract of figure eight + covering space lifting argument (\S 28).
 \end{itemize}
 \end{rembox}
@@ -6719,28 +6719,6 @@ Let $P$ be a polygonal region in the plane. A \textbf{labeling scheme} for $P$ a
     \node[blue, below] at (1,0) {$a$};
     \draw[->, red!70!black] (2,0) -- (2,1.1); \draw[red!70!black] (2,1.1) -- (2,2);
     \node[red!70!black, right] at (2,1) {$b$};
-    \draw[->, blue] (2,2) -- (0.9,2); \draw[blue] (0.9,2) -- (0,2);
-    \node[blue, above] at (1,2) {$a$};
-    \draw[->, red!70!black] (0,2) -- (0,0.9); \draw[red!70!black] (0,0.9) -- (0,0);
-    \node[red!70!black, left] at (0,1) {$b$};
-    % Corners
-    \foreach \p in {(0,0),(2,0),(0,2),(2,2)} \fill[green!50!black] \p circle (2.5pt);
-    \node[below left, font=\scriptsize, green!50!black] at (0,0) {$x_0$};
-    \node[below right, font=\scriptsize, green!50!black] at (2,0) {$x_0$};
-    \node[above left, font=\scriptsize, green!50!black] at (0,2) {$x_0$};
-    \node[above right, font=\scriptsize, green!50!black] at (2,2) {$x_0$};
-\end{tikzpicture}
-\end{center}
-
-\textbf{Projective plane} ($abab$): opposite edges identified with \emph{reversed} orientation. All four corners become one point.
-
-\begin{center}
-\begin{tikzpicture}[scale=1.6, >=stealth, thick]
-    % Square - Projective plane
-    \draw[->, blue] (0,0) -- (1.1,0); \draw[blue] (1.1,0) -- (2,0);
-    \node[blue, below] at (1,0) {$a$};
-    \draw[->, red!70!black] (2,0) -- (2,1.1); \draw[red!70!black] (2,1.1) -- (2,2);
-    \node[red!70!black, right] at (2,1) {$b$};
     \draw[->, blue] (0,2) -- (1.1,2); \draw[blue] (1.1,2) -- (2,2);
     \node[blue, above] at (1,2) {$a$};
     \draw[->, red!70!black] (0,0) -- (0,1.1); \draw[red!70!black] (0,1.1) -- (0,2);
@@ -6754,7 +6732,30 @@ Let $P$ be a polygonal region in the plane. A \textbf{labeling scheme} for $P$ a
 \end{tikzpicture}
 \end{center}
 
-Note: the $a$-arrows on top and bottom point in the \emph{same} direction (both left-to-right), but the top edge is traversed right-to-left when reading the boundary counterclockwise. The $b$-arrows on left and right both point \emph{upward}. This means opposite edges are identified with reversed orientation.
+\textbf{Projective plane} ($abab$): opposite edges identified with \emph{reversed} orientation. The corners become two points: $(0,0) \sim (1,1)$ and $(1,0) \sim (0,1)$.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.6, >=stealth, thick]
+    % Square - Projective plane
+    \draw[->, blue] (0,0) -- (1.1,0); \draw[blue] (1.1,0) -- (2,0);
+    \node[blue, below] at (1,0) {$a$};
+    \draw[->, red!70!black] (2,0) -- (2,1.1); \draw[red!70!black] (2,1.1) -- (2,2);
+    \node[red!70!black, right] at (2,1) {$b$};
+    \draw[->, blue] (2,2) -- (0.9,2); \draw[blue] (0.9,2) -- (0,2);
+    \node[blue, above] at (1,2) {$a$};
+    \draw[->, red!70!black] (0,2) -- (0,0.9); \draw[red!70!black] (0,0.9) -- (0,0);
+    \node[red!70!black, left] at (0,1) {$b$};
+    % Corners
+    \foreach \p in {(0,0),(2,2)} \fill[green!50!black] \p circle (2.5pt);
+    \foreach \p in {(2,0),(0,2)} \fill[orange!85!black] \p circle (2.5pt);
+    \node[below left, font=\scriptsize, green!50!black] at (0,0) {$x_0$};
+    \node[below right, font=\scriptsize, orange!85!black] at (2,0) {$x_1$};
+    \node[above left, font=\scriptsize, orange!85!black] at (0,2) {$x_1$};
+    \node[above right, font=\scriptsize, green!50!black] at (2,2) {$x_0$};
+\end{tikzpicture}
+\end{center}
+
+Note: the arrows run \emph{around} the square: the bottom $a$-arrow points right and the top one points left; the right $b$-arrow points up and the left one points down. So reading the boundary counterclockwise traverses every edge along its arrow, and each pair of opposite edges is identified with reversed orientation.
 
 \textbf{Klein bottle} ($aba^{-1}b$): $a$-edges same orientation, $b$-edges reversed orientation.
 
@@ -6765,9 +6766,9 @@ Note: the $a$-arrows on top and bottom point in the \emph{same} direction (both 
     \node[blue, below] at (1,0) {$a$};
     \draw[->, red!70!black] (2,0) -- (2,1.1); \draw[red!70!black] (2,1.1) -- (2,2);
     \node[red!70!black, right] at (2,1) {$b$};
-    \draw[->, blue] (2,2) -- (0.9,2); \draw[blue] (0.9,2) -- (0,2);
+    \draw[->, blue] (0,2) -- (1.1,2); \draw[blue] (1.1,2) -- (2,2);
     \node[blue, above] at (1,2) {$a$};
-    \draw[->, red!70!black] (0,0) -- (0,1.1); \draw[red!70!black] (0,1.1) -- (0,2);
+    \draw[->, red!70!black] (0,2) -- (0,0.9); \draw[red!70!black] (0,0.9) -- (0,0);
     \node[red!70!black, left] at (0,1) {$b$};
     % Corners
     \foreach \p in {(0,0),(2,0),(0,2),(2,2)} \fill[green!50!black] \p circle (2.5pt);
@@ -6778,9 +6779,9 @@ Note: the $a$-arrows on top and bottom point in the \emph{same} direction (both 
 \end{tikzpicture}
 \end{center}
 
-Note: the $a$-edges (top and bottom) have \emph{opposite} arrows (same-direction identification, like the torus). The $b$-edges (left and right) have arrows pointing the \emph{same} way (upward) --- reversed identification. This is what distinguishes the Klein bottle from the torus.
+Note: the $a$-edges (top and bottom) have arrows pointing the \emph{same} way (both left-to-right) --- same-direction identification, like the torus. The $b$-edges (left and right) have \emph{opposite} arrows (right edge up, left edge down) --- reversed identification. This is what distinguishes the Klein bottle from the torus.
 
-\textbf{Vertex identification:} In each case above, the edge identifications chain all four corners together: $(0,0) \sim (1,0)$ via $a$, then $(1,0) \sim (1,1)$ via $b$, then $(1,1) \sim (0,1)$ via $a$, then $(0,1) \sim (0,0)$ via $b$. So all four corners become a single point $x_0$, and the boundary $\partial P$ becomes a wedge of circles at $x_0$.
+\textbf{Vertex identification:} For the torus, the edge identifications chain all four corners together: $(0,0) \sim (1,0)$ via $b$, then $(1,0) \sim (1,1)$ via $a$, then $(1,1) \sim (0,1)$ via $b$, then $(0,1) \sim (0,0)$ via $a$. For the Klein bottle: $(0,0) \sim (0,1)$ via $a$, then $(0,1) \sim (1,0)$ via $b$, then $(1,0) \sim (1,1)$ via $a$, then $(1,1) \sim (0,0)$ via $b$. So in these two cases all four corners become a single point $x_0$, and the boundary $\partial P$ becomes a wedge of circles at $x_0$. For the projective plane $abab$, both the $a$-edges and the $b$-edges give only $(0,0) \sim (1,1)$ and $(1,0) \sim (0,1)$, so the corners form two classes $\{(0,0), (1,1)\}$ and $\{(1,0), (0,1)\}$, i.e. two points $x_0 \neq x_1$, and $\partial P$ becomes a single circle made of the edges $a$ and $b$.
 \end{exbox}
 
 \begin{thmbox}[{Fundamental Group of a Polygonal Surface (Munkres 74.1)}]
@@ -6818,7 +6819,7 @@ Reading off the boundary word for each surface:
 \hline
 Torus $T^2$ & $aba^{-1}b^{-1}$ & $\langle a, b \mid aba^{-1}b^{-1}\rangle \cong \mathbb{Z} \times \mathbb{Z}$ \\
 \hline
-Projective plane $P^2$ & $abab$ & $\langle a, b \mid abab \rangle \cong \mathbb{Z}/2\mathbb{Z}$ \\
+Projective plane $P^2$ & $aa$ & $\langle a \mid a^2 \rangle \cong \mathbb{Z}/2\mathbb{Z}$ \\
 \hline
 Klein bottle $K$ & $aba^{-1}b$ & $\langle a, b \mid aba^{-1}b \rangle$ (non-abelian) \\
 \hline
@@ -6826,6 +6827,8 @@ Double torus $\Sigma_2$ & $a_1 b_1 a_1^{-1} b_1^{-1} a_2 b_2 a_2^{-1} b_2^{-1}$ 
 \hline
 \end{tabular}
 \end{center}
+For $P^2$ we use the one-vertex scheme $aa$ (a $2$-gon whose two edges are glued, i.e. the disk with antipodal boundary points identified). The square scheme $abab$ of the previous example has two vertex classes, so the theorem above does not apply to it directly.
+
 The double torus has $\pi_1$ non-abelian, confirming the result from \S 28 (where we proved non-abelianness via covering spaces, without computing the exact group).
 \end{exbox}
 
@@ -6852,7 +6855,7 @@ If $A$ is a deformation retract of $X$, then $\pi_1(X) \cong \pi_1(A)$. Replace 
 
 \medskip
 
-\textbf{Tool 2: Covering Spaces + Lifting Correspondence (\S 24--25).} \textit{Count the fiber.}
+\textbf{Tool 2: Covering Spaces + Lifting Correspondence (\S 24).} \textit{Count the fiber.}
 
 If $p: E \to B$ is a covering map with $E$ simply connected, then $\pi_1(B) \leftrightarrow p^{-1}(b_0)$ (bijection via lifting correspondence).
 

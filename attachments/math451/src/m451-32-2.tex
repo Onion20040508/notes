@@ -25,12 +25,12 @@
   \addplot[black, domain=0:3.2, samples=140, very thick] {0.6+0.4*sin(deg(1.8*x))+0.15*x};
   \addplot[only marks, mark=*, mark size=1.5pt, black] coordinates
     {(0.15,0.7292) (0.85,1.1272) (1.18,1.1173) (1.6,0.9434) (2.35,0.5981) (2.9,0.6854)};
-  \node[font=\scriptsize] at (axis cs:0.15,0.09) {$x_1^*$};
-  \node[font=\scriptsize] at (axis cs:0.75,0.09) {$x_2^*$};
-  \node[font=\scriptsize] at (axis cs:1.20,0.09) {$x_3^*$};
-  \node[font=\scriptsize] at (axis cs:1.6,0.09) {$x_4^*$};
-  \node[font=\scriptsize] at (axis cs:2.33,0.09) {$x_5^*$};
-  \node[font=\scriptsize] at (axis cs:2.86,0.09) {$x_6^*$};
+  \node[font=\scriptsize] at (axis cs:0.15,0.09) {$x_1$};
+  \node[font=\scriptsize] at (axis cs:0.75,0.09) {$x_2$};
+  \node[font=\scriptsize] at (axis cs:1.20,0.09) {$x_3$};
+  \node[font=\scriptsize] at (axis cs:1.6,0.09) {$x_4$};
+  \node[font=\scriptsize] at (axis cs:2.33,0.09) {$x_5$};
+  \node[font=\scriptsize] at (axis cs:2.86,0.09) {$x_6$};
   \draw[black!45, thin, dotted] (axis cs:0.15,0.15) -- (axis cs:0.15,0.7292);
   \draw[black!45, thin, dotted] (axis cs:0.85,0.15) -- (axis cs:0.85,1.1272);
   \draw[black!45, thin, dotted] (axis cs:1.18,0.15) -- (axis cs:1.18,1.1173);
@@ -39,7 +39,7 @@
   \draw[black!45, thin, dotted] (axis cs:2.9,0.15) -- (axis cs:2.9,0.6854);
   \draw[stealth-stealth, thin] (axis cs:1.35,0.30) -- (axis cs:2.1,0.30);
   \node[font=\scriptsize] at (axis cs:1.725,0.40) {$\operatorname{mesh}(P)$};
-  \node[font=\scriptsize, figR] at (axis cs:2.95,1.30) {$U$ env.};
-  \node[font=\scriptsize, figB!80!black] at (axis cs:0.42,0.47) {$L$ env.};
+  \node[font=\scriptsize, figR, anchor=south] at (axis cs:0.21,0.97) {sup $M$};
+  \node[font=\scriptsize, figB!80!black, anchor=north] at (axis cs:2.78,0.575) {inf $m$};
 \end{axis}
 \end{tikzpicture}

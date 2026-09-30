@@ -77,6 +77,12 @@ tags: [linear-algebra]
 
 *Uses:* [[Fundamental theorem of linear maps|3.21]], [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-15|3.15]], [[Linear Algebra 2C Dimension#^ladr-2-39|2.39]], [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-63|3.63]]
 
+%% ex:3.65-fig %%
+> [!example] The shifts on $\F^\infty$, pictured
+> The backward shift $(x_1,x_2,x_3,\dots)\mapsto(x_2,x_3,\dots)$ discards $x_1$ (red): it is surjective, but $(1,0,0,\dots)$ is sent to $0$. The forward shift $(x_1,x_2,\dots)\mapsto(0,x_1,x_2,\dots)$ loses nothing but always puts $0$ in the first slot (red): it is injective, but $(1,0,0,\dots)$ is not in its range.
+>
+> ![[ladr-3.65-shifts.svg|480]]
+
 > [!example] 3.67 There exists a polynomial p such that ((x2 + 5x + 7)p) (p. 85)
 > **Claim.** For every $q\in\Poly(\R)$ there is $p\in\Poly(\R)$ with $\big((x^2+5x+7)p\big)''=q$.
 >

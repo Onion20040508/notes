@@ -6,10 +6,10 @@
   \addplot[figB!45, domain=-4.7:4.7, samples=100] {1-x^2/2};
   \addplot[figB!75, domain=-4.7:4.7, samples=100] {1-x^2/2+x^4/24};
   \addplot[figR, domain=-4.7:4.7, samples=140] {1-x^2/2+x^4/24-x^6/720+x^8/40320};
-  \node[font=\scriptsize, figB!60!black] at (axis cs:-2.1,-1.30) {$T_2$};
-  \node[font=\scriptsize, figB!90!black] at (axis cs:3.05,1.30) {$T_4$};
-  \node[font=\scriptsize, figR] at (axis cs:4.15,-0.75) {$T_8$};
-  \node[font=\scriptsize] at (axis cs:1.1,1.35) {$\cos x$};
+  \node[font=\scriptsize, figB!60!black] at (axis cs:2.62,-1.38) {$s_2$};
+  \node[font=\scriptsize, figB!90!black] at (axis cs:3.05,1.30) {$s_4$};
+  \node[font=\scriptsize, figR] at (axis cs:3.95,0.9) {$s_8$};
+  \node[font=\scriptsize] at (axis cs:-3.95,-1.3) {$\cos x$};
 \end{axis}
 \end{tikzpicture}
 \hfill
@@ -20,7 +20,7 @@
   \addplot[black, very thick, domain=-1.25:-0.06, samples=250] {exp(-1/(x*x))};
   \addplot[black, very thick] coordinates {(-0.06,0.0000000001) (0.06,0.0000000001)};
   \addplot[figR, dashed, thick, domain=-1.25:1.25] {0};
-  \node[font=\scriptsize] at (axis cs:0.62,0.52) {$e^{-1/x^2}$};
+  \node[font=\scriptsize, anchor=south east] at (axis cs:1.02,0.46) {$e^{-1/x^2}$};
   \node[font=\scriptsize, figR] at (axis cs:-0.62,0.09) {Taylor series $\equiv 0$};
 \end{axis}
 \end{tikzpicture}

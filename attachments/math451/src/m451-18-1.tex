@@ -1,13 +1,15 @@
 % Figure from MATH 451 notes, section 18. Compile with the notes preamble.
 \begin{tikzpicture}
-\begin{axis}[nfig, width=0.55\textwidth, height=0.45\textwidth,
-  xmin=0, xmax=1.06, ymin=0, ymax=1.06,
-  xtick={0,1}, ytick={0,1}, xlabel={$x$}]
-  \addplot[black!45, thin, domain=0:1.03] {x} node[pos=0.85, below right, font=\scriptsize] {$y=x$};
+\begin{axis}[nfig, width=0.55\textwidth, height=0.45\textwidth, clip=false,
+  xmin=0, xmax=1.08, ymin=0, ymax=1.08,
+  xtick={0,0.5809,1}, xticklabels={$0$,$x_0$,$1$}, ytick={1}, xlabel={$x$}]
+  \draw[black!40, thin] (axis cs:0,1) -- (axis cs:1,1) -- (axis cs:1,0);
+  \addplot[black!45, thin, domain=0:1] {x};
+  \node[font=\scriptsize, black!55, anchor=west] at (axis cs:1.0,0.93) {$y=x$};
   \addplot[figB, very thick, domain=0:1, samples=200] {0.8-0.45*x+0.18*sin(deg(5*x))};
-  \addplot[only marks, mark=*, mark size=1.8pt, figR] coordinates {(0.5809,0.5809)};
   \draw[figR, dashed, thin] (axis cs:0.5809,0) -- (axis cs:0.5809,0.5809);
-  \node[font=\scriptsize, figR] at (axis cs:0.60,0.075) {$x_0 = f(x_0)$};
-  \node[font=\scriptsize, figB] at (axis cs:0.16,0.94) {$y=f(x)$};
+  \addplot[only marks, mark=*, mark size=1.8pt, figR] coordinates {(0.5809,0.5809)};
+  \node[font=\scriptsize, figR, anchor=east] at (axis cs:0.56,0.22) {$f(x_0) = x_0$};
+  \node[font=\small, figB, anchor=west] at (axis cs:0.03,0.95) {$y=f(x)$};
 \end{axis}
 \end{tikzpicture}

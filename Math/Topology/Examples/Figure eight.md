@@ -9,7 +9,7 @@ The wedge $S^1 \vee S^1$ of two circles joined at one point. Its fundamental gro
 - Retracting onto one circle: $\pi_1$ of a retract injects but can be strictly smaller ([[Topology §26 Deformation Retracts and Homotopy Type#^rem-26-1|§26]])
 - The figure eight is a retract of $\Sigma_2$, so $\pi_1(\Sigma_2)$ is non-abelian ([[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-1|§26]])
 - The doubly punctured plane deformation retracts onto the figure eight ([[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-5|§26]])
-- The doubly punctured ball retracts onto both the figure eight and the theta space ([[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-6|§26]])
+- The doubly punctured plane retracts onto both the figure eight and the theta space ([[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-6|§26]])
 - The punctured torus deformation retracts onto the figure eight ([[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-9|§26]])
 - The figure eight and the theta space have the same homotopy type ([[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-11|§26]])
 - Definition: the wedge of two circles ([[Topology §28 Fundamental Group of Some Surfaces#^def-28-4|§28]])
@@ -26,7 +26,7 @@ The wedge $S^1 \vee S^1$ of two circles joined at one point. Its fundamental gro
 ## The doubly punctured plane deformation retracts onto the figure eight
 ![[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-5]]
 
-## The doubly punctured ball retracts onto both the figure eight and the theta space
+## The doubly punctured plane retracts onto both the figure eight and the theta space
 ![[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-6]]
 
 ## The punctured torus deformation retracts onto the figure eight

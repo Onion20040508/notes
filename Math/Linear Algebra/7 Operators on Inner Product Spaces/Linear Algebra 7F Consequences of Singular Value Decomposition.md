@@ -218,6 +218,12 @@ tags: [linear-algebra]
 > [!proof]+
 > $T(u+\sum a_kr_ke_k)=Tu+\sum a_kr_ks_kf_k$, since $Te_k=s_kf_k$.
 
+%% ex:7.107-fig %%
+> [!example] Boxes aligned with the singular vectors, pictured
+> Same $T$ as in the SVD figure after [[Singular value decomposition|7.70]] ($s_1=2$, $s_2=0.8$). The blue box $P(e_1,e_2)$ goes to the box $P(s_1f_1,s_2f_2)$, again with a right angle. The orange unit square, not aligned with $e_1,e_2$, goes to a slanted parallelogram. Both areas are multiplied by $s_1s_2=1.6$ ([[Linear Algebra 7F Consequences of Singular Value Decomposition#^ladr-7-111|7.111]]).
+>
+> ![[ladr-7.107-boxes.svg|440]]
+
 > [!definition] 7.108 Volume of a box
 > ($\F=\R$) $\operatorname{volume}\big(u+P(r_1e_1,\dots,r_ne_n)\big)=r_1\cdots r_n$.
 

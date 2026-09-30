@@ -1,37 +1,33 @@
 % Figure from MATH 451 notes, section 14. Compile with the notes preamble.
 \begin{tikzpicture}
-\begin{axis}[nfig, width=0.82\textwidth, height=0.36\textwidth,
-  xmin=0, xmax=16.6, ymin=0, ymax=1.12,
-  xtick={1,2,4,8,16}, ytick={0.5,1}, yticklabels={$\tfrac12$,$1$},
-  xlabel={term $n$ occupies $[n-1,\,n]$: bar area $= \tfrac1n$}]
-  \addplot[draw=black!50, fill=black!12] coordinates {(0,0) (0,1.0000) (1,1.0000) (1,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(1,0) (1,0.5000) (2,0.5000) (2,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(2,0) (2,0.3333) (3,0.3333) (3,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(3,0) (3,0.2500) (4,0.2500) (4,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(4,0) (4,0.2000) (5,0.2000) (5,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(5,0) (5,0.1667) (6,0.1667) (6,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(6,0) (6,0.1429) (7,0.1429) (7,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(7,0) (7,0.1250) (8,0.1250) (8,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(8,0) (8,0.1111) (9,0.1111) (9,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(9,0) (9,0.1000) (10,0.1000) (10,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(10,0) (10,0.0909) (11,0.0909) (11,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(11,0) (11,0.0833) (12,0.0833) (12,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(12,0) (12,0.0769) (13,0.0769) (13,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(13,0) (13,0.0714) (14,0.0714) (14,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(14,0) (14,0.0667) (15,0.0667) (15,0)};
-  \addplot[draw=figB!60, fill=figB!18] coordinates {(15,0) (15,0.0625) (16,0.0625) (16,0)};
-  \addplot[figR, dashed, very thick] coordinates {(1,0) (1,0.5) (2,0.5) (2,0)};
-  \addplot[figR, dashed, very thick] coordinates {(2,0) (2,0.25) (4,0.25) (4,0)};
-  \addplot[figR, dashed, very thick] coordinates {(4,0) (4,0.125) (8,0.125) (8,0)};
-  \addplot[figR, dashed, very thick] coordinates {(8,0) (8,0.0625) (16,0.0625) (16,0)};
-  \node[font=\scriptsize, figR] at (axis cs:1.5,0.62) {area $=\tfrac12$};
-  \node[font=\scriptsize, figR] at (axis cs:3.0,0.46) {area $=\tfrac12$};
-  \node[font=\scriptsize, figR] at (axis cs:6.0,0.32) {area $=\tfrac12$};
-  \node[font=\scriptsize, figR] at (axis cs:12.0,0.22) {area $=\tfrac12$};
-  \draw[figR!70, -stealth, very thin] (axis cs:1.5,0.585) -- (axis cs:1.5,0.47);
-  \draw[figR!70, -stealth, very thin] (axis cs:3.0,0.425) -- (axis cs:3.0,0.22);
-  \draw[figR!70, -stealth, very thin] (axis cs:6.0,0.285) -- (axis cs:6.0,0.105);
-  \draw[figR!70, -stealth, very thin] (axis cs:12.0,0.185) -- (axis cs:12.0,0.05);
-  \node[font=\scriptsize, figB!70!black, align=center] at (axis cs:13.2,0.60) {every blue bar clears\\ its red dashed roof};
+\begin{axis}[nfig, width=0.82\textwidth, height=0.38\textwidth,
+  xmin=0, xmax=16.8, ymin=0, ymax=1.12,
+  xtick={0,1,2,4,8,16}, ytick={0.5,1}, yticklabels={$\tfrac12$,$1$},
+  xlabel={}]
+  \addplot[draw=black!50, fill=black!12, thin] coordinates {(0,0) (0,1) (1,1) (1,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(1,0) (1,0.5000) (2,0.5000) (2,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(2,0) (2,0.3333) (3,0.3333) (3,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(3,0) (3,0.2500) (4,0.2500) (4,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(4,0) (4,0.2000) (5,0.2000) (5,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(5,0) (5,0.1667) (6,0.1667) (6,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(6,0) (6,0.1429) (7,0.1429) (7,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(7,0) (7,0.1250) (8,0.1250) (8,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(8,0) (8,0.1111) (9,0.1111) (9,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(9,0) (9,0.1000) (10,0.1000) (10,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(10,0) (10,0.0909) (11,0.0909) (11,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(11,0) (11,0.0833) (12,0.0833) (12,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(12,0) (12,0.0769) (13,0.0769) (13,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(13,0) (13,0.0714) (14,0.0714) (14,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(14,0) (14,0.0667) (15,0.0667) (15,0)};
+  \addplot[draw=figB!70, fill=figB!15, thin] coordinates {(15,0) (15,0.0625) (16,0.0625) (16,0)};
+  \addplot[figR, dashed, thick] coordinates {(1,0) (1,0.5) (2,0.5) (2,0)};
+  \addplot[figR, dashed, thick] coordinates {(2,0) (2,0.25) (4,0.25) (4,0)};
+  \addplot[figR, dashed, thick] coordinates {(4,0) (4,0.125) (8,0.125) (8,0)};
+  \addplot[figR, dashed, thick] coordinates {(8,0) (8,0.0625) (16,0.0625) (16,0)};
+  \node[font=\scriptsize, figR] at (axis cs:1.5,0.58) {$\tfrac12$};
+  \node[font=\scriptsize, figR] at (axis cs:3.0,0.42) {$\tfrac12$};
+  \node[font=\scriptsize, figR] at (axis cs:6.0,0.26) {$\tfrac12$};
+  \node[font=\scriptsize, figR] at (axis cs:12.0,0.17) {$\tfrac12$};
+  \node[font=\scriptsize, align=left, anchor=north east] at (axis cs:16.6,1.08) {\textcolor{figB}{bar on $[n-1,n]$: area $\tfrac1n$}\\ \textcolor{figR}{dashed box: area exactly $\tfrac12$}};
 \end{axis}
 \end{tikzpicture}

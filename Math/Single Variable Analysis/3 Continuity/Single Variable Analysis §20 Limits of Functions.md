@@ -150,6 +150,9 @@ These notions can be used to *produce* continuous functions: extend a function t
 
 ^ex-20-5
 
+![[m451-20-1.svg]]
+*Removable versus non-removable. Left: $f$ is undefined at $0$, but both sides approach the same height, so the hole (hollow) is filled by $f(0) = \lim_{x\to0} f(x) = 1$. Right: $g$ approaches $1$ from the right and $-1$ from the left (both hollow); a single value $g(0)$ cannot sit at both ends of the jump.*
+
 > [!remark] Remark: Worse than a jump
 > For $f(x) = \sin\tfrac1x$, $x \neq 0$: not only does $\lim_{x\to0} f(x)$ not exist — the left and right limits do not exist either (the oscillation argument of §17 works from each side). This is much worse than the previous example: the existence of one-sided limits is already a good property of a function.
 

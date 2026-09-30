@@ -205,7 +205,7 @@ tags: [topology, math590]
 >
 > $X \times b$ is homeomorphic to $X$. $x \times Y$ is homeomorphic to $Y$. $\Rightarrow$ union of two connected spaces, with $x \times b$ in common.
 >
-> $\Rightarrow$ $T_x$ connected. $\Rightarrow$ $\bigcup_{x \in X} T_x$ is connected since [[Topology §13 Connected Spaces#^thm-13-5|union of subspaces $T_x$ with $a \times b$ in common]] $\Rightarrow$ $X \times Y$ connected.
+> $\Rightarrow$ $T_x$ connected. $\Rightarrow$ $\bigcup_{x \in X} T_x$ is connected since union of subspaces $T_x$ with $a \times b$ in common ([[Topology §13 Connected Spaces#^thm-13-5|§13.5]]) $\Rightarrow$ $X \times Y$ connected.
 
 ^pf-13-6
 

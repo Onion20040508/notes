@@ -62,7 +62,7 @@ In the $(\varepsilon, \delta)$ definition of continuity, one important point: $\
 ^ex-19-1
 
 ![[m451-19-1.svg]]
-*The three ways uniform continuity fails. Left: $\tfrac1x$ is steep near $0$ — boxes of the *same* height $2\varepsilon$, fitted so the curve exits through their sides, must get thinner and thinner: no single $\delta$ serves all points. Middle: $x^2$ has the same disease at infinity. Right: $\sin\tfrac1x$ is bounded, but adjacent peak and trough get arbitrarily close horizontally while staying $2$ apart vertically.*
+*Why $\tfrac1x$ fails on $(0,+\infty)$: boxes of the same height $2\varepsilon$ (red), each as wide as the graph allows while leaving through the sides. Far out the curve is flat and the box is wide; near $0$ it is steep and the admissible width $2\delta$ shrinks to nothing — no single $\delta$ serves all points. On $[a, +\infty)$ the steepness is capped, and $\delta = a^2\varepsilon$ works everywhere.*
 
 ## Continuity on Closed Intervals Implies Uniform Continuity
 
@@ -143,6 +143,9 @@ This is another important property of continuous functions on closed bounded int
 > so $|g(x_n) - g(y_n)| = 1$, while $|x_n - y_n| \leq x_n \to 0$. No continuous extension to $[0,1]$ can exist for this $g$ — and in fact the converse of the proposition is also true (Ross 19.5): a uniformly continuous function on $(a,b]$ *always* extends continuously to $[a,b]$, essentially by the Cauchy-preservation theorem below. Extension and uniform continuity are two descriptions of the same phenomenon.
 
 ^ex-19-3
+
+![[m451-19-2.svg]]
+*The other two failure modes. Left: steepness at infinity — the pairs $x_n = n$, $y_n = n + \tfrac1n$ (red, $n = 2, 3$) get closer horizontally while $f(y_n) - f(x_n) \geq 3$ (red rises). Right: oscillation on a bounded set — $g = \sin\tfrac{1}{x^2}$ is bounded, yet $x_n = \tfrac{1}{\sqrt{2\pi n}}$ (red dots on the axis) and $y_n = \tfrac{1}{\sqrt{2\pi n + \pi/2}}$ (red dots at height $1$) crowd together as $n$ grows while $|g(x_n) - g(y_n)| = 1$; shaded: the infinitely many oscillations near $0$.*
 
 > [!theorem] Theorem §19.3: Uniformly Continuous Functions Preserve Cauchy Sequences
 > If $f: \Omega \to \mathbb{R}$ is uniformly continuous and $(s_n)$ is a Cauchy sequence in $\Omega$, then $(f(s_n))$ is also a Cauchy sequence.

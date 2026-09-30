@@ -97,3 +97,9 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Dimension count: $\dim W=\dim V-\dim U$, cf. [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]] for $V/U$.
+
+%% ex:2.33-fig %%
+> [!example] Many complements, pictured
+> In $\R^2$ with $U$ the $x$-axis (blue), both $W$ (red) and $W'$ (green) are complements: $\R^2=U\oplus W=U\oplus W'$. The same $v$ splits as $u+w$ with $w\in W$ and as $u'+w'$ with $w'\in W'$; the $U$-component depends on which complement was chosen.
+>
+> ![[ladr-2.33-complements.svg|400]]

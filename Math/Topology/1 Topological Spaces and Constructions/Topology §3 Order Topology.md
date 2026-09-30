@@ -115,7 +115,7 @@ tags: [topology, math590]
 > - Order topology vs. subspace topology: [[Topology §5 Subspace Topology#^ex-5-3|Subspace ≠ Order Topology: I × I]].
 
 > [!example] Example §3.5
-> The [[Topology §1 Topological Spaces#^ex-1-5|standard topology on $\mathbb{R}$]] is the same as the order topology on $\mathbb{R}$.
+> The standard topology on $\mathbb{R}$ ([[Topology §1 Topological Spaces#^ex-1-5|Ex. §1.5]]) is the same as the order topology on $\mathbb{R}$.
 
 ^ex-3-5
 

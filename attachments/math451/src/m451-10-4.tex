@@ -1,0 +1,23 @@
+% Figure from MATH 451 notes, section 10. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.78\textwidth, height=0.42\textwidth,
+  xmin=0, xmax=23, ymin=-0.35, ymax=2.0, clip=false,
+  xtick={6}, xticklabels={$N$}, ytick={0.8,1.2,1.6},
+  yticklabels={$s_N-\varepsilon$,$s_N$,$s_N+\varepsilon$}, xlabel={$n$}]
+  \addplot[draw=none, fill=figB!12] coordinates {(6,0.8) (23,0.8) (23,1.6) (6,1.6)};
+  \addplot[black!40, thin, dashed] coordinates {(6,0.8) (23,0.8)};
+  \addplot[black!40, thin, dashed] coordinates {(6,1.6) (23,1.6)};
+  \addplot[black!40, thin, dotted] coordinates {(0,0.8) (6,0.8)};
+  \addplot[black!40, thin, dotted] coordinates {(0,1.6) (6,1.6)};
+  \addplot[figR!70, thin, dotted] coordinates {(0,1.2) (6,1.2)};
+  \draw[black!55, dashed] (axis cs:6,-0.35) -- (axis cs:6,2.0);
+  \addplot[only marks, mark=*, mark size=1.4pt, black!45] coordinates {(1,-0.2000) (2,1.6000) (3,0.6000) (4,1.3000) (5,0.7600)};
+  \addplot[only marks, mark=*, mark size=1.4pt, figB] coordinates {(7,0.8286) (8,1.1500) (9,0.8667) (10,1.1200) (11,0.8909) (12,1.1000) (13,0.9077) (14,1.0857) (15,0.9200) (16,1.0750) (17,0.9294) (18,1.0667) (19,0.9368) (20,1.0600) (21,0.9429) (22,1.0545)};
+  \addplot[only marks, mark=*, mark size=1.8pt, figR] coordinates {(6,1.2)};
+  \node[font=\scriptsize, figB, anchor=west] at (axis cs:9,1.82) {whole tail inside: $s_N-\varepsilon \leq \underline{s}_N \leq \overline{s}_N \leq s_N+\varepsilon$};
+  \draw[black!70, thick] (axis cs:23.4,0.8) -- (axis cs:23.4,1.6);
+  \draw[black!70, thin] (axis cs:23.2,0.8) -- (axis cs:23.6,0.8);
+  \draw[black!70, thin] (axis cs:23.2,1.6) -- (axis cs:23.6,1.6);
+  \node[font=\scriptsize, anchor=west, align=left] at (axis cs:23.8,1.2) {$\liminf$, $\limsup$\\ both in here};
+\end{axis}
+\end{tikzpicture}

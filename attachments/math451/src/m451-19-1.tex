@@ -1,38 +1,21 @@
 % Figure from MATH 451 notes, section 19. Compile with the notes preamble.
 \begin{tikzpicture}
-\begin{axis}[nfig, width=0.35\textwidth, height=0.34\textwidth,
-  xmin=0, xmax=1.08, ymin=0, ymax=6.5, xtick={1}, ytick=\empty, xlabel={$\tfrac1x$ near $0$}]
-  \addplot[figB, very thick, domain=0.155:1.02, samples=200] {1/x};
-  \draw[figR, thin] (axis cs:0.5469,1.0286) rectangle (axis cs:0.9722,1.8286);
-  \draw[figR, thin] (axis cs:0.1852,4.6) rectangle (axis cs:0.2174,5.4);
-  \draw[figR, stealth-stealth, very thin] (axis cs:1.00,1.0286) -- (axis cs:1.00,1.8286);
-  \node[font=\scriptsize, figR] at (axis cs:1.04,1.43) {$2\varepsilon$};
-  \draw[figR, stealth-stealth, very thin] (axis cs:0.245,4.6) -- (axis cs:0.245,5.4);
-  \node[font=\scriptsize, figR] at (axis cs:0.30,5.0) {$2\varepsilon$};
-  \draw[figR, stealth-stealth, very thin] (axis cs:0.5469,0.62) -- (axis cs:0.9722,0.62);
-  \node[font=\scriptsize, figR] at (axis cs:0.76,0.27) {wide $2\delta$};
-  \draw[figR, stealth-stealth, very thin] (axis cs:0.1852,3.95) -- (axis cs:0.2174,3.95);
-  \node[font=\scriptsize, figR] at (axis cs:0.34,3.6) {thin $2\delta$};
-\end{axis}
-\end{tikzpicture}\hfill
-\begin{tikzpicture}
-\begin{axis}[nfig, width=0.31\textwidth, height=0.34\textwidth,
-  xmin=0, xmax=3.3, ymin=0, ymax=9.5, xtick=\empty, ytick=\empty, xlabel={$x^2$ at infinity}]
-  \addplot[figB, very thick, domain=0:3.05, samples=100] {x^2};
-  \draw[figR, thin] (axis cs:0.4472,0.2) rectangle (axis cs:1.3416,1.8);
-  \draw[figR, thin] (axis cs:2.6005,6.7625) rectangle (axis cs:2.8918,8.3625);
-  \draw[figR, stealth-stealth, very thin] (axis cs:0.4472,2.15) -- (axis cs:1.3416,2.15);
-  \draw[figR, stealth-stealth, very thin] (axis cs:2.6005,6.35) -- (axis cs:2.8918,6.35);
-\end{axis}
-\end{tikzpicture}\hfill
-\begin{tikzpicture}
-\begin{axis}[nfig, width=0.35\textwidth, height=0.34\textwidth,
-  xmin=0.02, xmax=0.44, ymin=-1.35, ymax=1.35, xtick=\empty, ytick={-1,1},
-  yticklabels={$-1$,$1$}, xlabel={$\sin\tfrac1x$ near $0$}]
-  \addplot[figB, domain=0.0295:0.43, samples=1600, line width=0.6pt] {sin(deg(1/x))};
-  \draw[figR, dashed, thin] (axis cs:0.1273,1) -- (axis cs:0.0909,-1);
-  \addplot[only marks, mark=*, mark size=1.5pt, figR] coordinates {(0.1273,1) (0.0909,-1)};
-  \node[font=\scriptsize, figR, align=center, anchor=west] at (axis cs:0.155,0.80)
-    {$|x - y| \to 0$\\ $|f(x) - f(y)| = 2$};
+\begin{axis}[nfig, width=0.58\textwidth, height=0.44\textwidth, clip=false,
+  xmin=0, xmax=2.5, ymin=0, ymax=5.6, xtick=\empty,
+  ytick=\empty, xlabel={$x$}]
+  \addplot[figB, very thick, domain=0.18:2.4, samples=200] {1/x};
+  \node[font=\small, figB, anchor=west] at (axis cs:0.62,2.3) {$y = \tfrac1x$};
+  % near 0: tall thin box
+  \draw[figR, thick] (axis cs:0.225,3.5) rectangle (axis cs:0.275,4.5);
+  \draw[figR, stealth-stealth, thin] (axis cs:0.33,3.5) -- (axis cs:0.33,4.5);
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.34,4.0) {$2\varepsilon$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.55,4.95) {width $2\delta$: tiny};
+  \draw[figR!70, -stealth, thin] (axis cs:0.55,4.95) -- (axis cs:0.285,4.55);
+  % far out: same height, wide box
+  \draw[figR, thick] (axis cs:0.9,0.1667) rectangle (axis cs:2.1,1.1667);
+  \draw[figR, stealth-stealth, thin] (axis cs:2.18,0.1667) -- (axis cs:2.18,1.1667);
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:2.19,0.6667) {$2\varepsilon$};
+  \draw[figR, stealth-stealth, thin] (axis cs:0.9,1.4) -- (axis cs:2.1,1.4);
+  \node[font=\scriptsize, figR, anchor=south] at (axis cs:1.5,1.45) {width $2\delta$: wide};
 \end{axis}
 \end{tikzpicture}

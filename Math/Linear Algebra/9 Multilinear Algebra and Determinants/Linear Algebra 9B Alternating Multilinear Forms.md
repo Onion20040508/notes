@@ -148,3 +148,8 @@ tags: [linear-algebra]
 
 *Uses:* [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-28|9.28]], [[Linear Algebra 2C Dimension#^ladr-2-38|2.38]], [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-36|9.36]]
 
+%% ex:9.39-fig %%
+> [!example] Independent versus dependent, pictured
+> Think of a nonzero $\alpha\in V^{(3)}_{\mathrm{alt}}$ on $\R^3$ as a signed volume of the parallelepiped with edges $v_1,v_2,v_3$. Left: an independent list spans a solid parallelepiped and $\alpha\ne0$. Right: $v_3\in\Span(v_1,v_2)$, the parallelepiped is flattened into a plane, and $\alpha=0$ ([[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-28|9.28]]).
+>
+> ![[ladr-9.39-volume-form.svg|440]]

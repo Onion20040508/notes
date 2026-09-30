@@ -45,6 +45,12 @@ tags: [linear-algebra]
 > - Compatible with the algebra: [[Linear Algebra 3C Matrices#^ladr-3-35|Matrix of the sum of linear maps]], [[Linear Algebra 3C Matrices#^ladr-3-38|The matrix of a scalar times a linear map]], [[Linear Algebra 3C Matrices#^ladr-3-43|Matrix of product of linear maps (LADR 3.43)]]. Acts on coordinates: [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-76|Linear maps act like matrix multiplication]].
 > - Depends on the bases: [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]]. Much of Chapters 5–8 is about choosing bases that make $\mathcal{M}(T)$ simple.
 
+%% ex:3.31-fig %%
+> [!example] Reading $\mathcal{M}(T)$
+> The $v$'s label the columns and the $w$'s label the rows. Column $k$ (red) lists the coefficients of $Tv_k$ in the basis $w_1,\dots,w_m$.
+>
+> ![[ladr-3.31-matrix-columns.svg|400]]
+
 > [!example] 3.32 The matrix of a linear map from F² to F³ (p. 70)
 > $T(x,y)=(x+3y,\ 2x+5y,\ 7x+9y)$ from $\F^2$ to $\F^3$. Since $T(1,0)=(1,2,7)$ and $T(0,1)=(3,5,9)$, the standard-basis matrix has these as its columns:
 > $$
@@ -178,7 +184,9 @@ tags: [linear-algebra]
 > [!example] 3.45 Aj,⋅equals j (p. 74)
 > For $A=\begin{pmatrix}8&4&5\\1&9&7\end{pmatrix}$: row $A_{2,\cdot}=\begin{pmatrix}1&9&7\end{pmatrix}$ and column $A_{\cdot,2}=\begin{pmatrix}4\\9\end{pmatrix}$.
 >
-> A $1$-by-$n$ times an $n$-by-$1$ matrix is $1$-by-$1$ and is identified with its entry: $\begin{pmatrix}3&4\end{pmatrix}\begin{pmatrix}6\\2\end{pmatrix}=26$. This is the $(2,1)$ entry of the product in [[Linear Algebra 3C Matrices#^ladr-3-42|3.42]] ([[Linear Algebra 3C Matrices#^ladr-3-46|3.46]]).
+> A $1$-by-$n$ times an $n$-by-$1$ matrix is $1$-by-$1$ and is identified with its entry: $\begin{pmatrix}3&4\end{pmatrix}\begin{pmatrix}6\\2\end{pmatrix}=26$. This is the $(2,1)$ entry of the product in [[Linear Algebra 3C Matrices#^ladr-3-42|3.42]] ([[Linear Algebra 3C Matrices#^ladr-3-46|3.46]]):
+>
+> ![[ladr-3.45-row-times-column.svg|480]]
 
 ^ladr-3-45
 

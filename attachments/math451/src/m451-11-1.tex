@@ -1,0 +1,13 @@
+% Figure from MATH 451 notes, section 11. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.78\textwidth, height=0.40\textwidth,
+  xmin=0, xmax=23, ymin=-0.1, ymax=1.75, clip=false,
+  xtick={1,5,10,15,20}, ytick={0,1}, xlabel={$n$}]
+  \addplot[black!40, thin, dashed] coordinates {(0,1) (23,1)};
+  \addplot[black!30, thin] coordinates {(1,0.0000) (2,1.5000) (3,0.6667) (4,1.2500) (5,0.8000) (6,1.1667) (7,0.8571) (8,1.1250) (9,0.8889) (10,1.1000) (11,0.9091) (12,1.0833) (13,0.9231) (14,1.0714) (15,0.9333) (16,1.0625) (17,0.9412) (18,1.0556) (19,0.9474) (20,1.0500) (21,0.9524) (22,1.0455)};
+  \addplot[figR, thin, mark=*, mark size=1.5pt] coordinates {(2,1.5000) (4,1.2500) (6,1.1667) (8,1.1250) (10,1.1000) (12,1.0833) (14,1.0714) (16,1.0625) (18,1.0556) (20,1.0500) (22,1.0455)};
+  \addplot[figB, thin, mark=*, mark size=1.5pt] coordinates {(1,0.0000) (3,0.6667) (5,0.8000) (7,0.8571) (9,0.8889) (11,0.9091) (13,0.9231) (15,0.9333) (17,0.9412) (19,0.9474) (21,0.9524)};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:4.5,1.45) {even terms $1+\tfrac{1}{2k}$: decreasing};
+  \node[font=\scriptsize, figB, anchor=west] at (axis cs:4.5,0.5) {odd terms $1-\tfrac{1}{2k+1}$: increasing};
+\end{axis}
+\end{tikzpicture}

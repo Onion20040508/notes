@@ -46,7 +46,7 @@ tags: [topology, math590]
 > [!remark] Remark: Why Copies Compute $\pi_1$
 > **Why multiple copies compute $\pi_1$.** In $B$, every loop based at $b_0$ starts and ends at the same point — you cannot “see” the difference between winding once, winding twice, or sitting still just by looking at the endpoints. The copies of $b_0$ in the covering space $E$ are what separate these loops.
 >
-> A loop in $B$ lifts to a path in $E$ that starts at $e_0$ but may end at a *different* copy of $b_0$ in the fiber $p^{-1}(b_0)$. Which copy it lands on depends on the homotopy class of the loop. Different homotopy classes land on different copies (by the [[Homotopy Lifting Lemma|homotopy lifting lemma]]). So the copies serve as a **scoreboard**: each point in the fiber $p^{-1}(b_0)$ records a distinct way of looping around $B$.
+> A loop in $B$ lifts to a path in $E$ that starts at $e_0$ but may end at a *different* copy of $b_0$ in the fiber $p^{-1}(b_0)$. Which copy it lands on depends only on the homotopy class of the loop (by the [[Homotopy Lifting Lemma|homotopy lifting lemma]]). When $E$ is simply connected, different homotopy classes land on different copies. So the copies serve as a **scoreboard**: each point in the fiber $p^{-1}(b_0)$ records a distinct way of looping around $B$.
 >
 > **Why this works:**
 > - If $p$ were a homeomorphism (one copy), every lift of a loop would be a loop — you would learn nothing. $E$ and $B$ would have the same topology.
@@ -58,9 +58,9 @@ tags: [topology, math590]
 > $$\text{number of sheets} = |p^{-1}(b_0)| = |\pi_1(B, b_0)|.$$
 >
 > Count the fiber, get the size of $\pi_1$. Examples:
-> - $p: \mathbb{R} \to S^1$: $\infty$ sheets ($p^{-1}(b_0) = \mathbb{Z}$), so $|\pi_1(S^1)| = \infty$ (and [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]]).
-> - $p: S^2 \to P^2$: $2$ sheets ($p^{-1}(y) = \{x, -x\}$), so $|\pi_1(P^2)| = 2$ (and [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2|$\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$]]).
-> - $p: S^n \to P^n$ ($n \geq 2$): $2$ sheets, so [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-3|$\pi_1(P^n) \cong \mathbb{Z}/2\mathbb{Z}$]].
+> - $p: \mathbb{R} \to S^1$: $\infty$ sheets ($p^{-1}(b_0) = \mathbb{Z}$), so $|\pi_1(S^1)| = \infty$ (and $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]])).
+> - $p: S^2 \to P^2$: $2$ sheets ($p^{-1}(y) = \{x, -x\}$), so $|\pi_1(P^2)| = 2$ (and $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$ ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2|§28.2]])).
+> - $p: S^n \to P^n$ ($n \geq 2$): $2$ sheets, so $\pi_1(P^n) \cong \mathbb{Z}/2\mathbb{Z}$ ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-3|§28.3]]).
 >
 > This only works when $E$ is simply connected. If $E$ is not simply connected, the lifting correspondence is not a bijection, and counting sheets does not directly give $|\pi_1(B)|$.
 
@@ -121,7 +121,7 @@ tags: [topology, math590]
 *The covering $p: \mathbb{R} \to S^1$ drawn as a helix over the circle: each $x \in \mathbb{R}$ sits directly above $p(x)$, one full turn per unit length. The right half-circle $U$ (red, open, hollow endpoints) is evenly covered. Its preimage is the stack of disjoint red slices $V_n = (n - \tfrac14, n + \tfrac14)$, each carried homeomorphically onto $U$ by $p$. The fiber over $b_0 = (1,0)$ is $\mathbb{Z}$ (black dots), one point in each slice.*
 
 > [!remark] Remark
-> This covering map is the key to computing [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]]. The idea: $\mathbb{R}$ is simply connected, and the covering map $p: \mathbb{R} \to S^1$ “unwinds” loops on $S^1$ into paths in $\mathbb{R}$. A loop that winds $n$ times around $S^1$ lifts to a path in $\mathbb{R}$ from $0$ to $n$. The integer $n$ is the winding number, and this gives the isomorphism $\pi_1(S^1) \cong \mathbb{Z}$.
+> This covering map is the key to computing $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]). The idea: $\mathbb{R}$ is simply connected, and the covering map $p: \mathbb{R} \to S^1$ “unwinds” loops on $S^1$ into paths in $\mathbb{R}$. A loop that winds $n$ times around $S^1$ lifts to a path in $\mathbb{R}$ from $0$ to $n$. The integer $n$ is the winding number, and this gives the isomorphism $\pi_1(S^1) \cong \mathbb{Z}$.
 >
 > A simply connected covering space is called a **universal cover**. So $\mathbb{R}$ is the universal cover of $S^1$. The [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]] is a bijection precisely when the covering space is universal—this is why the universal cover is the most useful one for computing $\pi_1$.
 
@@ -149,16 +149,16 @@ tags: [topology, math590]
 ## Non-Example: Local Homeomorphism $\neq$ Covering Map
 
 > [!example] Example §24.2: $p: \mathbb{R}_+ \to S^1$ is Not a Covering Map
-> The restriction $p: \mathbb{R}_+ \to S^1$, $p(x) = (\cos 2\pi x, \sin 2\pi x)$, is still surjective and a local homeomorphism, but **not** a covering map.
+> The restriction $p: \mathbb{R}_+ \to S^1$ to $\mathbb{R}_+ = (0, \infty)$, $p(x) = (\cos 2\pi x, \sin 2\pi x)$, is still surjective and a local homeomorphism, but **not** a covering map.
 >
-> The neighborhood $U$ of $(1, 0) \in S^1$ (e.g., the right half-circle) has preimage $p^{-1}(U) = V_0 \cup \bigcup_{n \geq 1} V_n$ where $V_0 = [0, 1/4) \cap \mathbb{R}_+$. But $p|_{V_0}: V_0 \to U$ is **not surjective** (it only covers the top-right quarter), so $V_0$ is not a valid slice. The preimage $p^{-1}(U)$ does not decompose into disjoint copies of $U$.
+> The neighborhood $U$ of $(1, 0) \in S^1$ (e.g., the right half-circle) has preimage $p^{-1}(U) = V_0 \cup \bigcup_{n \geq 1} V_n$ where $V_0 = (-1/4, 1/4) \cap \mathbb{R}_+ = (0, 1/4)$. But $p|_{V_0}: V_0 \to U$ is **not surjective** (it only covers the top-right quarter), so $V_0$ is not a valid slice. The preimage $p^{-1}(U)$ does not decompose into disjoint copies of $U$.
 >
-> **Consequence: lifting fails.** Consider a loop $f$ in $S^1$ that winds once clockwise from $(1,0)$. If we try to lift starting at $e_0 = 0$, we would need $\tilde{f}(s) = -s$ — but $-s \notin \mathbb{R}_+$ for $s > 0$. The lift “wants to go left” past $0$, but $\mathbb{R}_+$ has a boundary there. The disjoint-copies condition fails precisely at $V_0$, and this is where the lift breaks down.
+> **Consequence: lifting fails.** Consider a loop $f$ in $S^1$ that winds once clockwise from $(1,0)$. If we try to lift starting at $e_0 = 1$, we would need $\tilde{f}(s) = 1 - s$ — but $\tilde{f}(1) = 0 \notin \mathbb{R}_+$. The lift “wants to go left” to $0$, but $\mathbb{R}_+$ stops just short of it. The disjoint-copies condition fails precisely at $V_0$, and this is where the lift breaks down.
 
 ^ex-24-2
 
 ![[m590-24-3.svg]]
-*Why $p: \mathbb{R}_+ \to S^1$ is not a covering map. Over the same $U$ (red), the slices $V_1, V_2, \ldots$ are still full copies of $U$. But the bottom piece $V_0 = [0, \tfrac14)$ (orange) is cut off at $0$, because the dashed part $(-\tfrac14, 0)$ is missing from $\mathbb{R}_+$. So $p(V_0)$ is only the orange quarter of $U$ beginning at $b_0$. A clockwise loop from $b_0$ would have to lift into that missing dashed part.*
+*Why $p: \mathbb{R}_+ \to S^1$ is not a covering map. Over the same $U$ (red), the slices $V_1, V_2, \ldots$ are still full copies of $U$. But the bottom piece $V_0 = (0, \tfrac14)$ (orange) is cut off at $0$, because the dashed part $(-\tfrac14, 0]$ (with the hollow point $0$) is missing from $\mathbb{R}_+$. So $p(V_0)$ is only the orange quarter of $U$ just after $b_0$. A clockwise loop from $b_0$, lifted from $1$, would have to end at the missing point $0$.*
 
 ## Restriction to Subspaces
 
@@ -205,7 +205,7 @@ tags: [topology, math590]
 *Uses:* [[Topology §24 Covering Spaces#^def-24-1|Def. §24.1]], [[Topology §4 Product Topology#^def-4-1|Def. §4.1]]
 
 > [!example] Example §24.3
-> $p \times p: \mathbb{R} \times \mathbb{R} \to S^1 \times S^1$ is a covering map. Since $S^1 \times S^1$ is the torus $T^2$, this gives a covering $\mathbb{R}^2 \to T^2$. This will be used to compute [[Topology §23 The Fundamental Group#^cor-23-8|$\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$]].
+> $p \times p: \mathbb{R} \times \mathbb{R} \to S^1 \times S^1$ is a covering map. Since $S^1 \times S^1$ is the torus $T^2$, this gives a covering $\mathbb{R}^2 \to T^2$. This will be used to compute $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$ ([[Topology §23 The Fundamental Group#^cor-23-8|§23.8]]).
 
 ^ex-24-3
 
@@ -383,7 +383,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 >
 > Two key features distinguish $\tilde{f}$ from $f$:
 > - **A loop may lift to a non-loop.** If $f$ is a loop ($f(0) = f(1) = b_0$), the lift $\tilde{f}$ starts at $e_0$ but may end at a *different* point in the fiber $p^{-1}(b_0)$. For example, the loop winding once around $S^1$ lifts to the path from $0$ to $1$ in $\mathbb{R}$ — which is not a loop.
-> - **The endpoint records information.** The endpoint $\tilde{f}(1) \in p^{-1}(b_0)$ depends on the homotopy class of $f$ (by the [[Homotopy Lifting Lemma|homotopy lifting lemma]] below). Different homotopy classes land at different points in the fiber.
+> - **The endpoint records information.** The endpoint $\tilde{f}(1) \in p^{-1}(b_0)$ depends only on the homotopy class of $f$ (by the [[Homotopy Lifting Lemma|homotopy lifting lemma]] below). If $E$ is simply connected, different homotopy classes land at different points in the fiber.
 
 ^rem-24-8
 
@@ -527,7 +527,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 *Uses:* [[Path Lifting Lemma|§24.6]], [[Topology §23 The Fundamental Group#^def-23-3|Def. §23.3]], [[Topology §23 The Fundamental Group#^lem-23-1|§23.1]], [[Properties of Path Concatenation|§22.6]]
 
 > [!remark] Remark: Why This Matters
-> This [[Properties of the Lifting Correspondence|theorem]] is the engine of the entire computation $\pi_1(S^1) \cong \mathbb{Z}$. It says: **to compute $\pi_1(B)$, find a covering space $E$ that is simply connected.** Then the lifting correspondence is a bijection $\pi_1(B) \leftrightarrow p^{-1}(b_0)$, and you read off $\pi_1(B)$ by identifying the fiber. For $p: \mathbb{R} \to S^1$: $\mathbb{R}$ is simply connected, the fiber is $\mathbb{Z}$, so [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]]. For $p: S^n \to P^n$: $S^n$ is [[Sⁿ is Simply Connected for n ≥ 2|simply connected]] ($n \geq 2$), the fiber has $2$ points, so $|\pi_1(P^n)| = 2$ ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-3|Theorem §28.3]]).
+> This [[Properties of the Lifting Correspondence|theorem]] is the engine of the entire computation $\pi_1(S^1) \cong \mathbb{Z}$. It says: **to compute $\pi_1(B)$, find a covering space $E$ that is simply connected.** Then the lifting correspondence is a bijection $\pi_1(B) \leftrightarrow p^{-1}(b_0)$, and you read off $\pi_1(B)$ by identifying the fiber. For $p: \mathbb{R} \to S^1$: $\mathbb{R}$ is simply connected, the fiber is $\mathbb{Z}$, so $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]). For $p: S^n \to P^n$: $S^n$ is [[Sⁿ is Simply Connected for n ≥ 2|simply connected]] ($n \geq 2$), the fiber has $2$ points, so $|\pi_1(P^n)| = 2$ ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-3|Theorem §28.3]]).
 
 ^rem-24-12
 
@@ -589,8 +589,8 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 *Step 3 in one picture. The lift of $f * g$ starting at $0$ follows $\tilde f(2s)$ up to $m$ (blue). The lift $\tilde g$ starts at $0$ (dashed), so it cannot be used as it is. Translated up by $m$ it starts where $\tilde f$ stopped (red), and it still lies over $g$ because $p(x + m) = p(x)$. The endpoint is $m + n$, which is why $\phi([f] * [g]) = \phi([f]) + \phi([g])$.*
 
 > [!remark]- Connections
-> - Consequences: [[Fundamental Theorem of Algebra (topological proof)|Fundamental Theorem of Algebra]], [[No-Retraction Theorem|No-Retraction Theorem]], [[Brouwer Fixed Point Theorem|Brouwer Fixed Point Theorem for $B^2$]].
-> - Same method for $P^2$: [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2|$\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$]].
+> - Consequences: [[Fundamental Theorem of Algebra (topological proof)|Fundamental Theorem of Algebra]], [[No-Retraction Theorem|No-Retraction Theorem]], Brouwer Fixed Point Theorem for $B^2$ ([[Brouwer Fixed Point Theorem|§26.7]]).
+> - Same method for $P^2$: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$ ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2|§28.2]]).
 
 > [!theorem] Theorem §24.11: The Generator of $\pi_1(S^1)$
 > Every element of $\pi_1(S^1, b_0)$ can be written uniquely as $[\omega]^k$ for some $k \in \mathbb{Z}$, where $\omega(s) = (\cos 2\pi s, \sin 2\pi s)$ is the standard counterclockwise loop. Here:
@@ -624,7 +624,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 > - Verify $f$ is a homomorphism: $f(xy) = f(x)f(y)$.
 > - Verify $f$ is bijective (either directly, or by constructing a [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-4|two-sided inverse]]).
 >
-> For example, in the proof of [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]]: the candidate was $\phi([f]) = \tilde{f}(1)$, bijectivity came from properties of $\mathbb{R}$, and the homomorphism property came from the translation trick $p(x + m) = p(x)$.
+> For example, in the proof of $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]): the candidate was $\phi([f]) = \tilde{f}(1)$, bijectivity came from properties of $\mathbb{R}$, and the homomorphism property came from the translation trick $p(x + m) = p(x)$.
 >
 > **To show $G \not\cong G'$** (not isomorphic): find an algebraic property [[Topology §21 Algebra Prerequisites꞉ Groups#^thm-21-6|preserved by isomorphisms]] that $G$ and $G'$ disagree on. Any of the following suffices:
 > - Different cardinalities: $|G| \neq |G'|$ (e.g., $\mathbb{Z} \not\cong \{e\}$).
@@ -634,7 +634,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 >
 > You do *not* need to check all possible maps—a single invariant that differs is enough.
 >
-> **For distinguishing spaces:** Since [[Topology §23 The Fundamental Group#^cor-23-6|homeomorphisms induce isomorphisms on $\pi_1$]] ([[Topology §23 The Fundamental Group|§23]]):
+> **For distinguishing spaces:** Since homeomorphisms induce isomorphisms on $\pi_1$ ([[Topology §23 The Fundamental Group#^cor-23-6|§23.6]]) ([[Topology §23 The Fundamental Group|§23]]):
 > - $\pi_1(X) \cong \pi_1(Y)$: use covering spaces (lifting correspondence), [[Topology §26 Deformation Retracts and Homotopy Type#^cor-26-12|deformation retracts]], or [[Functoriality of π₁|functoriality]] to build an isomorphism.
 > - $X \not\cong Y$: show $\pi_1(X) \not\cong \pi_1(Y)$ using an algebraic invariant. For instance, $\pi_1(S^1) \cong \mathbb{Z} \not\cong \{e\} \cong \pi_1(\mathbb{R}^2)$ (different cardinalities) gives $S^1 \not\cong \mathbb{R}^2$, and $\pi_1(S^1) \cong \mathbb{Z} \not\cong \mathbb{Z}^2 \cong \pi_1(T^2)$ (cyclic vs. not) gives $S^1 \not\cong T^2$.
 
@@ -674,7 +674,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 > - **(1) $\Leftrightarrow$ (2):** A loop contracts $\Leftrightarrow$ it bounds a disk. This is the topological intuition.
 > - **(1) $\Leftrightarrow$ (3):** A loop contracts $\Leftrightarrow$ its homotopy class is trivial. This is the algebraic formulation.
 >
-> The direction (3) $\Rightarrow$ (1) is the most subtle: it uses [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]] to reduce checking nullhomotopy of $h$ to checking that $h_*$ kills the generator. This lemma will be used to prove the [[Brouwer Fixed Point Theorem|Brouwer fixed point theorem]].
+> The direction (3) $\Rightarrow$ (1) is the most subtle: it uses $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]) to reduce checking nullhomotopy of $h$ to checking that $h_*$ kills the generator. This lemma will be used to prove the [[Brouwer Fixed Point Theorem|Brouwer fixed point theorem]].
 
 ^rem-24-15
 

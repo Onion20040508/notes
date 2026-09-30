@@ -1,0 +1,21 @@
+% Figure from MATH 451 notes, section 8. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.78\textwidth, height=0.42\textwidth,
+  xmin=0, xmax=21, ymin=-0.35, ymax=2.65, clip=false,
+  xtick={8}, xticklabels={$N$}, ytick={0.8,1,1.2},
+  yticklabels={$s-\varepsilon$,$s$,$s+\varepsilon$}, xlabel={$n$}]
+  \addplot[draw=none, fill=figB!12] coordinates {(0,0.8) (21,0.8) (21,1.2) (0,1.2)};
+  \addplot[black!40, thin, dashed] coordinates {(0,0.8) (21,0.8)};
+  \addplot[black!40, thin, dashed] coordinates {(0,1.2) (21,1.2)};
+  \addplot[black!55, thin] coordinates {(0,1) (21,1)};
+  \draw[black!55, dashed] (axis cs:8,-0.35) -- (axis cs:8,2.65);
+  \addplot[black!50, thin, mark=*, mark size=1.1pt, samples at={1,...,20}] {1+1.5/x};
+  \addplot[black!50, thin, mark=*, mark size=1.1pt, samples at={1,...,20}] {1-1.2/x};
+  \addplot[only marks, figB, mark=*, mark size=1.5pt, samples at={1,...,20}] {1+1.1*cos(deg(x))/x};
+  \node[font=\scriptsize, black!70, anchor=west] at (axis cs:21.2,1.09) {$c_n$};
+  \node[font=\scriptsize, black!70, anchor=west] at (axis cs:21.2,0.91) {$a_n$};
+  \node[font=\scriptsize, black!70, anchor=west] at (axis cs:2.2,1.95) {$c_n$};
+  \node[font=\scriptsize, black!70, anchor=west] at (axis cs:2.2,0.2) {$a_n$};
+  \node[font=\scriptsize, figB, anchor=west] at (axis cs:10,1.75) {$a_n \leq b_n \leq c_n$: $b_n$ trapped};
+\end{axis}
+\end{tikzpicture}

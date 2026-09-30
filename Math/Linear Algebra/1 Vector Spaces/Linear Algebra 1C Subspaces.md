@@ -111,6 +111,10 @@ tags: [linear-algebra]
 
 > [!example] 1.42 A direct sum of two subspaces (p. 21)
 > In $\F^3$ let $U=\{(x,y,0)\}$ and $W=\{(0,0,z)\}$. Then $\F^3=U\oplus W$: every $(x,y,z)=(x,y,0)+(0,0,z)$, and the decomposition is unique since $U\cap W=\{0\}$ ([[Linear Algebra 1C Subspaces#^ladr-1-46|1.46]]).
+>
+> Geometrically $U$ is the $xy$-plane (blue) and $W$ the $z$-axis (red), and every vector is the sum of exactly one piece from each:
+>
+> ![[ladr-1.42-direct-sum.svg|360]]
 
 ^ladr-1-42
 

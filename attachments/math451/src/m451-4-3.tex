@@ -1,0 +1,28 @@
+% Figure from MATH 451 notes, section 4. Compile with the notes preamble.
+\begin{tikzpicture}[x=1.3cm]
+  % scaled line: multiply by n
+  \fill[figB!12] (1.35,-0.1) rectangle (2.8,0.1);
+  \draw[-stealth, thin] (-0.4,0) -- (4.1,0);
+  \foreach \j/\l in {1/m-1,2/m,3/m+1} {
+    \draw[black!70, thin] (\j,0.12) -- (\j,-0.12);
+  }
+  \node[below=2pt, font=\scriptsize] at (1,0) {$m-1$};
+  \node[below=2pt, font=\scriptsize, figR] at (2,0) {$m$};
+  \node[below=2pt, font=\scriptsize] at (3,0) {$m+1$};
+  \fill[figB] (1.35,0) circle (1.6pt) node[above=2pt, font=\scriptsize, figB] {$na$};
+  \fill[figB] (2.8,0) circle (1.6pt) node[above=2pt, font=\scriptsize, figB] {$nb$};
+  \fill[figR] (2,0) circle (1.9pt);
+  \draw[black!55, thin, densely dotted] (2.35,0.1) -- (2.35,0.42) node[above, font=\scriptsize, black!70] {$na{+}1$};
+  \node[font=\scriptsize, anchor=west, black!70] at (4.15,0) {$\times n$: gap $n(b-a) > 1$};
+  % original line
+  \begin{scope}[yshift=-1.4cm]
+    \fill[figB!12] (1.35,-0.1) rectangle (2.8,0.1);
+    \draw[-stealth, thin] (-0.4,0) -- (4.1,0);
+    \fill[figB] (1.35,0) circle (1.6pt) node[below=2pt, font=\scriptsize, figB] {$a$};
+    \fill[figB] (2.8,0) circle (1.6pt) node[below=2pt, font=\scriptsize, figB] {$b$};
+    \fill[figR] (2,0) circle (1.9pt) node[below=2pt, font=\scriptsize, figR] {$\tfrac{m}{n}$};
+    \node[font=\scriptsize, anchor=west, black!70] at (4.15,0) {original scale};
+  \end{scope}
+  \foreach \x in {1.35,2,2.8} { \draw[black!30, thin, -stealth] (\x,-0.45) -- (\x,-1.25); }
+  \node[font=\scriptsize, black!55, anchor=west] at (3.05,-0.75) {$\div n$};
+\end{tikzpicture}

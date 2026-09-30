@@ -1,12 +1,18 @@
 % Figure from MATH 451 notes, section 10. Compile with the notes preamble.
 \begin{tikzpicture}
-\begin{axis}[nfig, width=0.70\textwidth, height=0.36\textwidth,
-  xmin=0, xmax=19, ymin=0.6, ymax=2.75,
-  xtick={1,5,10,15}, ytick=\empty, xlabel={$n$}]
-  \addplot[black!60, dashed] coordinates {(0,2) (19,2)};
-  \addplot[black!85, thin] coordinates {(0,2.42) (19,2.42)};
-  \addplot[only marks, mark=*, mark size=1.4pt, figB] coordinates {(1,0.8000) (2,1.2000) (3,1.4000) (4,1.5200) (5,1.6000) (6,1.6571) (7,1.7000) (8,1.7333) (9,1.7600) (10,1.7818) (11,1.8000) (12,1.8154) (13,1.8286) (14,1.8400) (15,1.8500) (16,1.8588) (17,1.8667) (18,1.8737)};
-  \node[font=\scriptsize] at (axis cs:15.0,2.13) {$\sup s_n = \lim s_n$};
-  \node[font=\scriptsize] at (axis cs:15.0,2.55) {an upper bound $M$};
+\begin{axis}[nfig, width=0.72\textwidth, height=0.40\textwidth,
+  xmin=0, xmax=19, ymin=0.3, ymax=2.7, clip=false,
+  xtick={1,6,10,15}, xticklabels={$1$,$N$,$10$,$15$}, ytick={1.58,2,2.4},
+  yticklabels={$s-\varepsilon$,$s=\sup s_n$,$M$}, xlabel={$n$}]
+  \addplot[draw=none, fill=figB!12] coordinates {(0,1.58) (19,1.58) (19,2) (0,2)};
+  \addplot[black!40, thin, dashed] coordinates {(0,1.58) (19,1.58)};
+  \addplot[figB, thin] coordinates {(0,2) (19,2)};
+  \addplot[black!55, thin] coordinates {(0,2.4) (19,2.4)};
+  \draw[black!40, dashed, thin] (axis cs:6,0.3) -- (axis cs:6,1.6440);
+  \addplot[only marks, mark=*, mark size=1.4pt, figB] coordinates {(1,0.5000) (2,0.8750) (3,1.1562) (4,1.3672) (5,1.5254) (7,1.7330) (8,1.7998) (9,1.8498) (10,1.8874) (11,1.9155) (12,1.9366) (13,1.9525) (14,1.9644) (15,1.9733) (16,1.9800) (17,1.9850) (18,1.9887)};
+  \addplot[only marks, mark=*, mark size=1.8pt, figR] coordinates {(6,1.6440)};
+  \node[font=\scriptsize, figR, anchor=north west] at (axis cs:6.2,1.6440) {$s_N > s-\varepsilon$};
+  \node[font=\scriptsize, black!70, anchor=south east] at (axis cs:19,2.42) {any upper bound $M \geq s$};
+  \node[font=\scriptsize, figB, anchor=south east] at (axis cs:19,2.02) {$s_n \leq s$ for all $n$};
 \end{axis}
 \end{tikzpicture}

@@ -1,15 +1,15 @@
 \documentclass[border=4pt]{standalone}
 \usepackage{amsmath,amssymb,tikz}\usetikzlibrary{arrows.meta}
-\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}\definecolor{figG}{RGB}{60,130,60}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}\definecolor{figG}{RGB}{46,125,50}\definecolor{figO}{RGB}{214,120,20}
 \begin{document}\begin{tikzpicture}[scale=1.6,>={Stealth[length=2mm]}]
-\draw[gray!50] (-0.3,0)--(2.6,0);
-\draw[->,very thick] (0,0)--(1,0) node[below,font=\small]{$e_1$};
-\draw[->,very thick,figB] (0,0)--(1.7,1.3) node[above right,font=\small]{$v_2$};
-\draw[dashed,gray] (1.7,1.3)--(1.7,0);
-\draw[->,thick,figG] (0,0)--(1.7,0) node[below,font=\small,xshift=8pt]{$\langle v_2,e_1\rangle e_1$};
-\draw[->,very thick,figR] (0,0)--(0,1.3) node[left,font=\small]{$f_2$};
-\draw[->,thick,figR!70] (0,0)--(0,1) ;
-\node[figR,font=\small] at (0.28,0.9) {$e_2$};
-\draw[dotted,figR] (0,1.3)--(1.7,1.3);
-\draw (0,0.12)--(0.12,0.12)--(0.12,0);
+\draw[black!40] (-0.3,0)--(2.4,0) node[right,font=\scriptsize,black!55]{$\operatorname{span}(e_1)$};
+\draw[dashed,black!55] (1.7,1.3)--(1.7,0);
+\draw[dotted,thick,figR] (0,1.3)--(1.7,1.3);
+\draw[->,very thick,figG] (0,0)--(1.7,0) node[below,font=\small,xshift=6pt]{$\langle v_2,e_1\rangle e_1$};
+\draw[->,very thick] (0,0)--(1,0) node[pos=0.55,below,font=\small]{$e_1$};
+\draw[->,very thick,figB] (0,0)--(1.7,1.3) node[above right,font=\small,inner sep=1pt]{$v_2$};
+\draw[->,very thick,figR] (0,0)--(0,1.3) node[above,font=\small]{$f_2$};
+\draw[->,thick,figR!55] (0,0)--(0,1);
+\node[figR,font=\small,left] at (0,0.9) {$e_2$};
+\draw[black!70] (0,0.12)--(0.12,0.12)--(0.12,0);
 \end{tikzpicture}\end{document}

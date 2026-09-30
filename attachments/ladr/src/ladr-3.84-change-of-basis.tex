@@ -2,7 +2,7 @@
 \usepackage{amsmath,amssymb,tikz-cd}
 \definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}
 \begin{document}
-\begin{tikzcd}[column sep=huge,row sep=large]
+\begin{tikzcd}[column sep=huge,row sep=large,every label/.append style={inner sep=3pt}]
 \mathbb{F}^{n,1}\ (u\text{-coordinates}) \arrow[r,"{A=\mathcal{M}(T,(u))}"] \arrow[d,"C"',color=figR] & \mathbb{F}^{n,1}\ (u\text{-coordinates}) \\
 \mathbb{F}^{n,1}\ (v\text{-coordinates}) \arrow[r,"{B=\mathcal{M}(T,(v))}"',color=figB] & \mathbb{F}^{n,1}\ (v\text{-coordinates}) \arrow[u,"C^{-1}"',color=figR]
 \end{tikzcd}

@@ -119,7 +119,7 @@ tags: [topology, math590]
 ^rem-14-2
 
 > [!remark]- Connections
-> - The fixed-point application is MATH 451's [[Single Variable Analysis §18 Properties of Continuous Functions#^thm-18-6|Theorem §18.6: Fixed Point Theorem on an Interval]]; its two-dimensional version is [[Brouwer Fixed Point Theorem|Brouwer Fixed Point Theorem for $B^2$]].
+> - The fixed-point application is MATH 451's [[Single Variable Analysis §18 Properties of Continuous Functions#^thm-18-6|Theorem §18.6: Fixed Point Theorem on an Interval]]; its two-dimensional version is Brouwer Fixed Point Theorem for $B^2$ ([[Brouwer Fixed Point Theorem|§26.7]]).
 
 > [!example] Example §14.5
 > $f: [a, b] \to \mathbb{R}$, continuous, satisfies [[Topology §14 Connected Subspaces of ℝ#^thm-14-3|IVT]].
@@ -131,7 +131,7 @@ tags: [topology, math590]
 >
 > $A, B$ disjoint, nonempty ($(f(a) \in A$, $f(b) \in B$). $A, B$ open in $f(X)$ $\Rightarrow$ $f(X)$ has separation $A, B$.
 >
-> But [[Continuous Image of a Connected Space is Connected|image of connected $X$ under a continuous $f$ is connected]]. Contradiction.
+> But image of connected $X$ under a continuous $f$ is connected ([[Continuous Image of a Connected Space is Connected|§13.3]]). Contradiction.
 
 ^pf-14-3
 
@@ -182,7 +182,7 @@ tags: [topology, math590]
 >
 > If $X$ were not connected, then there exists $X = A \cup B$ separation of $X$. Let $x \in A$, $y \in B$, and let $f: [a, b] \to X$ be a path from $x$ to $y$.
 >
-> $f([a, b])$ is connected (since [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|$[a, b]$ connected]] and [[Continuous Image of a Connected Space is Connected|$f$ continuous]]). [[Topology §13 Connected Spaces#^lem-13-4|$f([a, b]) \subseteq A$ or $f([a, b]) \subseteq B$]]. Contradiction, since $f(a) = x \in A$ and $f(b) = y \in B$.
+> $f([a, b])$ is connected (since [[Topology §14 Connected Subspaces of ℝ#^cor-14-2|$[a, b]$ connected]] and $f$ continuous ([[Continuous Image of a Connected Space is Connected|§13.3]])). [[Topology §13 Connected Spaces#^lem-13-4|$f([a, b]) \subseteq A$ or $f([a, b]) \subseteq B$]]. Contradiction, since $f(a) = x \in A$ and $f(b) = y \in B$.
 
 ^pf-14-4
 
@@ -215,7 +215,7 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > Let $(x_1, y_1), (x_2, y_2) \in X \times Y$. Since $X$ is path-connected, there exists a path $f: I \to X$ from $x_1$ to $x_2$. Since $Y$ is path-connected, there exists a path $g: I \to Y$ from $y_1$ to $y_2$. Define $F: I \to X \times Y$ by $F(t) = (f(t), g(t))$. Then:
 >
-> - $F$ is continuous ([[Topology §10 Product Topology on Arbitrary Products#^thm-10-1|its coordinate functions $f$ and $g$ are both continuous]]).
+> - $F$ is continuous (its coordinate functions $f$ and $g$ are both continuous ([[Topology §10 Product Topology on Arbitrary Products#^thm-10-1|§10.1]])).
 > - $F(0) = (f(0), g(0)) = (x_1, y_1)$.
 > - $F(1) = (f(1), g(1)) = (x_2, y_2)$.
 >

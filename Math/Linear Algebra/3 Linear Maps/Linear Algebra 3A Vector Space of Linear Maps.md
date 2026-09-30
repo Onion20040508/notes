@@ -58,6 +58,12 @@ tags: [linear-algebra]
 
 *Uses:* [[Linear Algebra 2B Bases#^ladr-2-28|2.28]]
 
+%% ex:3.4-fig %%
+> [!example] The linear map lemma, pictured
+> The basis $v_1,v_2$ of $V$ gives the grid of points $c_1v_1+c_2v_2$. Choosing $w_1,w_2$ determines $T$ on all of it: the grid is carried to the grid of $w_1,w_2$, and each point goes to the point with the same coefficients, e.g. $T(2v_1+v_2)=2w_1+w_2$.
+>
+> ![[ladr-3.4-linear-map-lemma.svg|520]]
+
 > [!definition] 3.5 Addition and scalar multiplication on L(V, W)
 > For $S,T\in\Lin(V,W)$ and $\lambda\in\F$, define $S+T$ and $\lambda T$ in $\Lin(V,W)$ by
 > $$

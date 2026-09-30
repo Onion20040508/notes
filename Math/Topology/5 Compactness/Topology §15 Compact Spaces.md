@@ -166,8 +166,8 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > **Why This Matters:**
 > - *Compactness is intrinsic* — it doesn't depend on the ambient space.
 > - *But the extrinsic view is often more useful:*
->     - “[[Closed Subspace of a Compact Space is Compact|Closed $\subseteq$ Compact $\Rightarrow$ Compact]]”: Add $X \setminus Y$ to get a cover of $X$.
->     - “[[Compact Subspace of a Hausdorff Space is Closed|Compact $\subseteq$ Hausdorff $\Rightarrow$ Closed]]”: Use Hausdorff property of $X$ to separate points.
+>     - “Closed $\subseteq$ Compact $\Rightarrow$ Compact ([[Closed Subspace of a Compact Space is Compact|§15.2]])”: Add $X \setminus Y$ to get a cover of $X$.
+>     - “Compact $\subseteq$ Hausdorff $\Rightarrow$ Closed ([[Compact Subspace of a Hausdorff Space is Closed|§15.4]])”: Use Hausdorff property of $X$ to separate points.
 
 ^rem-15-3
 
@@ -338,7 +338,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 > [!remark]- Connections
 > - The compact-to-Hausdorff shortcut for quotient maps: [[Topology §12 Quotient Topology#^thm-12-5|Product of Quotient Maps (Compact-Hausdorff Case)]].
-> - Used to get local homeomorphisms in [[Topology §24 Covering Spaces#^thm-24-2|$p: \mathbb{R} \to S^1$ is a Covering Map]].
+> - Used to get local homeomorphisms in $p: \mathbb{R} \to S^1$ is a Covering Map ([[Topology §24 Covering Spaces#^thm-24-2|§24.2]]).
 
 > [!theorem] Theorem §15.8: Finite Product of Compact Spaces
 > The product of finitely many compact spaces is compact.
@@ -494,7 +494,7 @@ To prove this, we first establish a key lemma:
 > [!proof]+ Proof
 > $(\Rightarrow)$ Suppose $A$ is compact.
 >
-> *$A$ is closed:* $\mathbb{R}^n$ is Hausdorff ([[Topology §11 Metric Topology#^thm-11-4|it's a metric space]]), and [[Compact Subspace of a Hausdorff Space is Closed|compact $\subseteq$ Hausdorff $\Rightarrow$ closed]].
+> *$A$ is closed:* $\mathbb{R}^n$ is Hausdorff ([[Topology §11 Metric Topology#^thm-11-4|it's a metric space]]), and compact $\subseteq$ Hausdorff $\Rightarrow$ closed ([[Compact Subspace of a Hausdorff Space is Closed|§15.4]]).
 >
 > *$A$ is bounded:* The collection $\{B_\rho(0, m) \mid m \in \mathbb{Z}_+\}$ is an open cover of $\mathbb{R}^n$, hence covers $A$. Since $A$ is compact, there exists a finite subcover $B_\rho(0, m_1), \ldots, B_\rho(0, m_k)$ ([[Topology §15 Compact Spaces#^lem-15-1|Lemma §15.1]]).
 >

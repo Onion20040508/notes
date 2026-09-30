@@ -1,0 +1,31 @@
+% Figure from MATH 451 notes, section 11. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.86\textwidth, height=0.42\textwidth,
+  xmin=0, xmax=42, ymin=-1.15, ymax=1.95, clip=false,
+  xtick={1,7,14,20,27,33,39}, xticklabels={$n_1$,$n_2$,$n_3$,$n_4$,$n_5$,$n_6$,$n_7$}, ytick={-1,0,1}, yticklabels={$-1$,$0$,$\overline{s}$}, xlabel={$n$}]
+  \addplot[figR, thin, dashed] coordinates {(0,1) (42,1)};
+  \draw[figR!70, thin] (axis cs:1,0.0000) -- (axis cs:1,1.9000);
+  \draw[figR!70, thin] (axis cs:0.65,0.0000) -- (axis cs:1.35,0.0000);
+  \draw[figR!70, thin] (axis cs:7,0.5000) -- (axis cs:7,1.5000);
+  \draw[figR!70, thin] (axis cs:6.65,0.5000) -- (axis cs:7.35,0.5000);
+  \draw[figR!70, thin] (axis cs:6.65,1.5000) -- (axis cs:7.35,1.5000);
+  \draw[figR!70, thin] (axis cs:14,0.6667) -- (axis cs:14,1.3333);
+  \draw[figR!70, thin] (axis cs:13.65,0.6667) -- (axis cs:14.35,0.6667);
+  \draw[figR!70, thin] (axis cs:13.65,1.3333) -- (axis cs:14.35,1.3333);
+  \draw[figR!70, thin] (axis cs:20,0.7500) -- (axis cs:20,1.2500);
+  \draw[figR!70, thin] (axis cs:19.65,0.7500) -- (axis cs:20.35,0.7500);
+  \draw[figR!70, thin] (axis cs:19.65,1.2500) -- (axis cs:20.35,1.2500);
+  \draw[figR!70, thin] (axis cs:27,0.8000) -- (axis cs:27,1.2000);
+  \draw[figR!70, thin] (axis cs:26.65,0.8000) -- (axis cs:27.35,0.8000);
+  \draw[figR!70, thin] (axis cs:26.65,1.2000) -- (axis cs:27.35,1.2000);
+  \draw[figR!70, thin] (axis cs:33,0.8333) -- (axis cs:33,1.1667);
+  \draw[figR!70, thin] (axis cs:32.65,0.8333) -- (axis cs:33.35,0.8333);
+  \draw[figR!70, thin] (axis cs:32.65,1.1667) -- (axis cs:33.35,1.1667);
+  \draw[figR!70, thin] (axis cs:39,0.8571) -- (axis cs:39,1.1429);
+  \draw[figR!70, thin] (axis cs:38.65,0.8571) -- (axis cs:39.35,0.8571);
+  \draw[figR!70, thin] (axis cs:38.65,1.1429) -- (axis cs:39.35,1.1429);
+  \addplot[only marks, mark=*, mark size=1.2pt, black!40] coordinates {(2,0.9093) (3,0.1411) (4,-0.7568) (5,-0.9589) (6,-0.2794) (8,0.9894) (9,0.4121) (10,-0.5440) (11,-1.0000) (12,-0.5366) (13,0.4202) (15,0.6503) (16,-0.2879) (17,-0.9614) (18,-0.7510) (19,0.1499) (21,0.8367) (22,-0.0089) (23,-0.8462) (24,-0.9056) (25,-0.1324) (26,0.7626) (28,0.2709) (29,-0.6636) (30,-0.9880) (31,-0.4040) (32,0.5514) (34,0.5291) (35,-0.4282) (36,-0.9918) (37,-0.6435) (38,0.2964) (40,0.7451) (41,-0.1586)};
+  \addplot[only marks, mark=*, mark size=1.7pt, figR] coordinates {(1,0.8415) (7,0.6570) (14,0.9906) (20,0.9129) (27,0.9564) (33,0.9999) (39,0.9638)};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:9,1.75) {$\overline{s}-\tfrac1k \leq s_{n_k} \leq \overline{s}+\tfrac1k$, \ $n_1 < n_2 < \cdots$};
+\end{axis}
+\end{tikzpicture}

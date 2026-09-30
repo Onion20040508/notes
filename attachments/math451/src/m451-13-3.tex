@@ -1,0 +1,46 @@
+% Figure from MATH 451 notes, section 13. Compile with the notes preamble.
+\begin{tikzpicture}[x=7cm, y=0.55cm]
+  \draw[black!25, thin] (0,0) -- (1,0);
+  \draw[figB, line width=2.2pt] (0.00000,0) -- (1.00000,0);
+  \node[font=\scriptsize, black!60, anchor=east] at (-0.02,0) {stage 0};
+  \draw[black!25, thin] (0,-1) -- (1,-1);
+  \draw[figB, line width=2.2pt] (0.00000,-1) -- (0.33333,-1);
+  \draw[figB, line width=2.2pt] (0.66667,-1) -- (1.00000,-1);
+  \node[font=\scriptsize, black!60, anchor=east] at (-0.02,-1) {stage 1};
+  \draw[black!25, thin] (0,-2) -- (1,-2);
+  \draw[figB, line width=2.2pt] (0.00000,-2) -- (0.11111,-2);
+  \draw[figB, line width=2.2pt] (0.22222,-2) -- (0.33333,-2);
+  \draw[figB, line width=2.2pt] (0.66667,-2) -- (0.77778,-2);
+  \draw[figB, line width=2.2pt] (0.88889,-2) -- (1.00000,-2);
+  \node[font=\scriptsize, black!60, anchor=east] at (-0.02,-2) {stage 2};
+  \draw[black!25, thin] (0,-3) -- (1,-3);
+  \draw[figB, line width=2.2pt] (0.00000,-3) -- (0.03704,-3);
+  \draw[figB, line width=2.2pt] (0.07407,-3) -- (0.11111,-3);
+  \draw[figB, line width=2.2pt] (0.22222,-3) -- (0.25926,-3);
+  \draw[figB, line width=2.2pt] (0.29630,-3) -- (0.33333,-3);
+  \draw[figB, line width=2.2pt] (0.66667,-3) -- (0.70370,-3);
+  \draw[figB, line width=2.2pt] (0.74074,-3) -- (0.77778,-3);
+  \draw[figB, line width=2.2pt] (0.88889,-3) -- (0.92593,-3);
+  \draw[figB, line width=2.2pt] (0.96296,-3) -- (1.00000,-3);
+  \node[font=\scriptsize, black!60, anchor=east] at (-0.02,-3) {stage 3};
+  \draw[black!25, thin] (0,-4) -- (1,-4);
+  \draw[figB, line width=2.2pt] (0.00000,-4) -- (0.01235,-4);
+  \draw[figB, line width=2.2pt] (0.02469,-4) -- (0.03704,-4);
+  \draw[figB, line width=2.2pt] (0.07407,-4) -- (0.08642,-4);
+  \draw[figB, line width=2.2pt] (0.09877,-4) -- (0.11111,-4);
+  \draw[figB, line width=2.2pt] (0.22222,-4) -- (0.23457,-4);
+  \draw[figB, line width=2.2pt] (0.24691,-4) -- (0.25926,-4);
+  \draw[figB, line width=2.2pt] (0.29630,-4) -- (0.30864,-4);
+  \draw[figB, line width=2.2pt] (0.32099,-4) -- (0.33333,-4);
+  \draw[figB, line width=2.2pt] (0.66667,-4) -- (0.67901,-4);
+  \draw[figB, line width=2.2pt] (0.69136,-4) -- (0.70370,-4);
+  \draw[figB, line width=2.2pt] (0.74074,-4) -- (0.75309,-4);
+  \draw[figB, line width=2.2pt] (0.76543,-4) -- (0.77778,-4);
+  \draw[figB, line width=2.2pt] (0.88889,-4) -- (0.90123,-4);
+  \draw[figB, line width=2.2pt] (0.91358,-4) -- (0.92593,-4);
+  \draw[figB, line width=2.2pt] (0.96296,-4) -- (0.97531,-4);
+  \draw[figB, line width=2.2pt] (0.98765,-4) -- (1.00000,-4);
+  \node[font=\scriptsize, black!60, anchor=east] at (-0.02,-4) {stage 4};
+  \foreach \x/\l in {0/0, 0.33333/\tfrac13, 0.66667/\tfrac23, 1/1} { \node[font=\scriptsize, above=1pt] at (\x,0) {$\l$}; }
+  \node[font=\scriptsize, figR!80!black] at (0.5,-0.55) {removed $(\tfrac13,\tfrac23)$};
+\end{tikzpicture}

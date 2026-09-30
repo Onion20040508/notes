@@ -1,0 +1,25 @@
+% Figure from MATH 451 notes, section 35. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.42\textwidth, clip=false,
+  xmin=0, xmax=3.0, ymin=0, ymax=2.41,
+  xtick={0.2,0.9,1.6,2.6}, xticklabels={$a = t_0$,$t_1$,$t_2$,$b = t_3$}, ytick=\empty, xlabel={}]
+  \addplot[figB, very thick, domain=0.2:1.6, samples=60] {0.25+0.3*x+0.1*x^2};
+  \addplot[figB, very thick, domain=1.6:2.6, samples=60] {0.45+0.25+0.3*x+0.1*x^2};
+  \draw[black!40, thin, dotted] (axis cs:1.6,0) -- (axis cs:1.6,0.9860);
+  \draw[black!40, thin, dotted] (axis cs:0.9,0) -- (axis cs:0.9,0.6010);
+  \draw[black!35, thin, dotted] (axis cs:0.200,0.3140) -- (axis cs:2.95,0.3140);
+  \draw[black!35, thin, dotted] (axis cs:0.900,0.6010) -- (axis cs:2.95,0.6010);
+  \draw[black!35, thin, dotted] (axis cs:1.600,0.9860) -- (axis cs:2.95,0.9860);
+  \draw[black!35, thin, dotted] (axis cs:1.600,1.4360) -- (axis cs:2.95,1.4360);
+  \draw[black!35, thin, dotted] (axis cs:2.600,2.1560) -- (axis cs:2.95,2.1560);
+  \draw[figB!45, line width=3pt] (axis cs:2.95,0.3140) -- (axis cs:2.95,0.6010);
+  \draw[figB, line width=3pt] (axis cs:2.95,0.6010) -- (axis cs:2.95,0.9860);
+  \draw[figR, line width=3pt] (axis cs:2.95,0.9860) -- (axis cs:2.95,1.4360);
+  \draw[figB!45, line width=3pt] (axis cs:2.95,1.4360) -- (axis cs:2.95,2.1560);
+  \node[font=\scriptsize, figB, anchor=west] at (axis cs:3.01,0.7935) {$F(t_2^-) - F(t_1^+)$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:3.01,1.2110) {jump $F(t_2^+) - F(t_2^-)$};
+  \addplot[only marks, mark=*, mark size=1.6pt, mark options={fill=white, draw=figB, thick}] coordinates {(1.6,0.9860)};
+  \addplot[only marks, mark=*, mark size=1.6pt, figB] coordinates {(1.6,1.4360)};
+  \node[font=\small, figB] at (axis cs:2.2,2.09) {$F$};
+\end{axis}
+\end{tikzpicture}

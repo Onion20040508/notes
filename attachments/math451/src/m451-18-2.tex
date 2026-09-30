@@ -1,0 +1,19 @@
+% Figure from MATH 451 notes, section 18. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.66\textwidth, height=0.42\textwidth, clip=false,
+  xmin=0, xmax=3.2, ymin=0, ymax=2.0,
+  xtick={0,2.296,3}, xticklabels={$a$,$x_0 = \sup S$,$b$},
+  ytick={0.45,1,1.7993}, yticklabels={$f(a)$,$y$,$f(b)$}, xlabel={}]
+  \addplot[black!50, dashed, thin] coordinates {(0,1) (3.2,1)};
+  \addplot[figB, very thick, domain=0:3, samples=200] {0.45+0.3*x+0.45*sin(deg(2.6*x))};
+  \draw[figR, line width=2pt] (axis cs:0,0) -- (axis cs:0.4509,0);
+  \draw[figR, line width=2pt] (axis cs:0.9735,0) -- (axis cs:2.296,0);
+  \addplot[only marks, mark=*, mark size=1.6pt, figR] coordinates {(0,0)};
+  \addplot[only marks, mark=*, mark size=1.6pt, mark options={fill=white, draw=figR, thick}] coordinates {(0.4509,0) (0.9735,0) (2.296,0)};
+  \draw[figR, dotted, thin] (axis cs:2.296,0.05) -- (axis cs:2.296,1);
+  \addplot[only marks, mark=*, mark size=1.7pt, figR] coordinates {(2.296,1)};
+  \node[font=\scriptsize, figR, anchor=south] at (axis cs:1.63,0.05) {$S = \{f < y\}$};
+  \node[font=\scriptsize, figR, anchor=north west] at (axis cs:2.33,0.98) {$f(x_0) = y$};
+  \node[font=\small, figB, anchor=south] at (axis cs:2.75,1.72) {$f$};
+\end{axis}
+\end{tikzpicture}

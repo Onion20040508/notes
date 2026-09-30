@@ -39,6 +39,10 @@ tags: [linear-algebra]
 
 > [!example] 2.5 Span (p. 29)
 > By [[Linear Algebra 2A Span and Linear Independence#^ladr-2-3|2.3]]: $(17,-4,2)\in\Span\big((2,1,-3),(1,-2,4)\big)$ but $(17,-4,5)\notin\Span\big((2,1,-3),(1,-2,4)\big)$. The span is a plane through $0$ in $\F^3$, and the second vector lies off it.
+>
+> Picture for $\F=\R$ (not to scale): the plane is gridded by multiples of $v_1=(2,1,-3)$ and $v_2=(1,-2,4)$. Going $6v_1$ and then $5v_2$ reaches $(17,-4,2)$; the point $(17,-4,5)$ sits $(0,0,3)$ above it, and $(0,0,3)$ is not in the span:
+>
+> ![[ladr-2.5-span-plane.svg|480]]
 
 ^ladr-2-5
 
@@ -209,6 +213,12 @@ tags: [linear-algebra]
 > After step $m$, $B$ contains all of $u_1,\dots,u_m$ and has length $n$, so $m\le n$. (At each step there was a $w$ left to remove, since otherwise the $u$'s would be dependent.)
 
 *Uses:* [[Linear dependence lemma|2.19]]
+
+%% ex:2.22-fig %%
+> [!example] The exchange process, pictured
+> With $m=3$ independent $u$'s and a spanning list of $n=4$ $w$'s. At each step the new $u_k$ (thick border) is inserted after the earlier $u$'s; the list is now dependent, and [[Linear dependence lemma|2.19]] removes a vector lying in the span of its predecessors (red, crossed). It is always a $w$, never a $u$, so the list keeps length $n$ and keeps spanning. When the $u$'s are used up, $m\le n$.
+>
+> ![[ladr-2.22-exchange.svg|460]]
 
 > [!example] 2.23 No list of length 4 is linearly independent in R³ (p. 36)
 > $(1,0,0),(0,1,0),(0,0,1)$ spans $\R^3$ and has length $3$, so by [[Length of linearly independent list ≤ length of spanning list|2.22]] no list of length $4$ in $\R^3$ is independent. For instance $(1,2,3),(4,5,8),(9,6,7),(-3,2,8)$ is dependent, with no computation needed.

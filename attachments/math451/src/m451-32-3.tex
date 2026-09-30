@@ -1,0 +1,27 @@
+% Figure from MATH 451 notes, section 32. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.46\textwidth, height=0.46\textwidth, axis equal image, clip=false,
+  xmin=0, xmax=1.12, ymin=0, ymax=1.12,
+  xtick={0,0.2,0.4,0.6,0.8,1}, xticklabels={$0$,$\frac15$,$\frac25$,$\frac35$,$\frac45$,$1$},
+  ytick={0.2,1}, yticklabels={$\frac1n$,$1$}, xlabel={}]
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(0.0,0.0) (0.2,0.0) (0.2,0.2) (0.0,0.2)} -- cycle;
+  \draw[figR, thin] (axis cs:0.2,0) -- (axis cs:0.2,0.2);
+  \addplot[draw=none, fill=figB!12] coordinates {(0.2,0) (0.4,0) (0.4,0.2) (0.2,0.2)} -- cycle;
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(0.2,0.2) (0.4,0.2) (0.4,0.4) (0.2,0.4)} -- cycle;
+  \draw[figR, thin] (axis cs:0.4,0) -- (axis cs:0.4,0.4);
+  \addplot[draw=none, fill=figB!12] coordinates {(0.4,0) (0.6,0) (0.6,0.4) (0.4,0.4)} -- cycle;
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(0.4,0.4) (0.6,0.4) (0.6,0.6) (0.4,0.6)} -- cycle;
+  \draw[figR, thin] (axis cs:0.6,0) -- (axis cs:0.6,0.6);
+  \addplot[draw=none, fill=figB!12] coordinates {(0.6,0) (0.8,0) (0.8,0.6) (0.6,0.6)} -- cycle;
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(0.6,0.6) (0.8,0.6) (0.8,0.8) (0.6,0.8)} -- cycle;
+  \draw[figR, thin] (axis cs:0.8,0) -- (axis cs:0.8,0.8);
+  \addplot[draw=none, fill=figB!12] coordinates {(0.8,0) (1.0,0) (1.0,0.8) (0.8,0.8)} -- cycle;
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(0.8,0.8) (1.0,0.8) (1.0,1.0) (0.8,1.0)} -- cycle;
+  \draw[figR, thin] (axis cs:1.0,0) -- (axis cs:1.0,1.0);
+  \addplot[black, very thick, domain=0:1.08] {x};
+  \node[font=\scriptsize, figB!80!black] at (axis cs:0.72,0.2) {$L(f,P_n)$};
+  \node[font=\scriptsize, figR, anchor=north west, align=left] at (axis cs:0.03,1.1) {$n$ squares, each\\ of area $\frac{1}{n^2}$:\\ $U - L = \frac1n$};
+  \draw[figR!70, -stealth, thin] (axis cs:0.2,0.66) -- (axis cs:0.27,0.36);
+  \node[font=\small] at (axis cs:1.1,1.02) {$x$};
+\end{axis}
+\end{tikzpicture}

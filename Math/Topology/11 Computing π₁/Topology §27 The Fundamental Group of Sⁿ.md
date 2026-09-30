@@ -8,7 +8,7 @@ tags: [topology, math590]
 ---
 ← [[Topology §26 Deformation Retracts and Homotopy Type]] · ↑ [[Topology — 11 Computing π₁]] · [[Topology §28 Fundamental Group of Some Surfaces]] →
 
-The main result of this section is [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1(S^n) = 0$ for $n \geq 2$]]. The proof requires a [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|general theorem]] about how $\pi_1$ interacts with open covers.
+The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]]). The proof requires a [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|general theorem]] about how $\pi_1$ interacts with open covers.
 
 ## The Generation Theorem
 
@@ -187,9 +187,9 @@ The main result of this section is [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1
 > - Recomputed with van Kampen in [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-1|Simply Connected Spheres via van Kampen]].
 
 > [!remark] Remark: Why $n \geq 2$ is Essential
-> For $n = 1$: $U \cap V = S^1 \setminus \{p, q\} \cong \mathbb{R}^1 \setminus \{0\} = (-\infty, 0) \cup (0, \infty)$ — two disjoint intervals, **not** path-connected. So [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]] does not apply, and indeed [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z} \neq 0$]].
+> For $n = 1$: $U \cap V = S^1 \setminus \{p, q\} \cong \mathbb{R}^1 \setminus \{0\} = (-\infty, 0) \cup (0, \infty)$ — two disjoint intervals, **not** path-connected. So [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]] does not apply, and indeed $\pi_1(S^1) \cong \mathbb{Z} \neq 0$ ([[Fundamental Group of the Circle|§24.10]]).
 >
-> This also explains why the [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-9|no-retraction theorem for $B^{n+1} \to S^n$]] cannot be proved using $\pi_1$ when $n \geq 2$: $\pi_1(S^n) = 0$ gives no contradiction, and one needs homology instead.
+> This also explains why the no-retraction theorem for $B^{n+1} \to S^n$ ([[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-9|§26.9]]) cannot be proved using $\pi_1$ when $n \geq 2$: $\pi_1(S^n) = 0$ gives no contradiction, and one needs homology instead.
 
 ^rem-27-3
 
@@ -212,7 +212,7 @@ The main result of this section is [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1
 >
 > Then $X = U \cup V$. We verify the three hypotheses of [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]].
 >
-> **1. $U$ and $V$ are open.** Since $X$ is Hausdorff, [[Topology §8 Hausdorff Spaces#^thm-8-1|$\{q_2\}$ is closed]], so $U = X \setminus \{q_2\}$ is open. Similarly $V$ is open.
+> **1. $U$ and $V$ are open.** Since $X$ is Hausdorff, $\{q_2\}$ is closed ([[Topology §8 Hausdorff Spaces#^thm-8-1|§8.1]]), so $U = X \setminus \{q_2\}$ is open. Similarly $V$ is open.
 >
 > **2. $U$ and $V$ are simply connected.** We show $U$ [[Topology §26 Deformation Retracts and Homotopy Type#^def-26-3|deformation retracts]] onto $S_1 \cong S^2$.
 >
@@ -224,9 +224,9 @@ The main result of this section is [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1
 > F(x, t) = \begin{cases} x & \text{if } x \in S_1, \\ r_t(x) & \text{if } x \in S_2 \setminus \{q_2\}. \end{cases}
 > $$
 >
-> These agree at the overlap point $p$ (since $r_t(p) = p$). The sets $S_1$ and $S_2 \setminus \{q_2\}$ are both closed in $U$ (since [[Compact Subspace of a Hausdorff Space is Closed|$S_1$ is compact in Hausdorff $U$]], and $S_2 \setminus \{q_2\}$ is $U \setminus \operatorname{int}(S_1)$), so $F$ is continuous by the **[[Pasting Lemma|pasting lemma]]** (for closed sets).
+> These agree at the overlap point $p$ (since $r_t(p) = p$). The sets $S_1$ and $S_2 \setminus \{q_2\}$ are both closed in $U$ (since $S_1$ is compact in Hausdorff $U$ ([[Compact Subspace of a Hausdorff Space is Closed|§15.4]]), and $S_2 \setminus \{q_2\} = S_2 \cap U$ is closed in $U$ ([[Topology §6 Closed Sets and Limit Points#^thm-6-2|§6.2]]) because $S_2$ is closed in $X$, being compact in Hausdorff $X$), so $F$ is continuous by the **[[Pasting Lemma|pasting lemma]]** (for closed sets).
 >
-> Check: $F(x, 0) = x$ (identity), $F(x, 1) \in S_1$ for all $x$ (collapses $S_2 \setminus \{q_2\}$ to $p \in S_1$), and $F(x, t) = x$ for all $x \in S_1$ (fixed). So $F$ is a deformation retraction of $U$ onto $S_1 \cong S^2$. Since [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1(S^2) = 0$]], $U$ is simply connected.
+> Check: $F(x, 0) = x$ (identity), $F(x, 1) \in S_1$ for all $x$ (collapses $S_2 \setminus \{q_2\}$ to $p \in S_1$), and $F(x, t) = x$ for all $x \in S_1$ (fixed). So $F$ is a deformation retraction of $U$ onto $S_1 \cong S^2$. Since $\pi_1(S^2) = 0$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]]), $U$ is simply connected.
 >
 > By the same argument (swapping $S_1 \leftrightarrow S_2$ and $q_1 \leftrightarrow q_2$), $V$ deformation retracts onto $S_2 \cong S^2$, hence $V$ is simply connected.
 >
@@ -249,7 +249,7 @@ The main result of this section is [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1
 > - $S^2 \vee S^2$ is a [[Topology §28 Fundamental Group of Some Surfaces#^def-28-3|wedge sum]]; see also [[Topology §28 Fundamental Group of Some Surfaces#^ex-28-1|Wedge Sums]].
 
 > [!remark] Remark: The “Remove One Point From Each Side” Strategy
-> The proofs of [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1(S^n) = 0$]] and [[Topology §27 The Fundamental Group of Sⁿ#^ex-27-1|$\pi_1(S^2 \vee S^2) = 0$]] follow the same template. The key technique is: **to apply [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]], choose $U$ and $V$ by removing one “bad” point from each piece of $X$**. Here is the general recipe.
+> The proofs of $\pi_1(S^n) = 0$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]]) and $\pi_1(S^2 \vee S^2) = 0$ ([[Topology §27 The Fundamental Group of Sⁿ#^ex-27-1|Ex. §27.1]]) follow the same template. The key technique is: **to apply [[Topology §27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]], choose $U$ and $V$ by removing one “bad” point from each piece of $X$**. Here is the general recipe.
 >
 > **Step 1: Identify the pieces.** The space $X$ is built from components (two hemispheres, two spheres glued at a point, etc.). Each component $C_i$ has the property that removing a point makes it simpler ($C_i \setminus \{q\} \cong \mathbb{R}^n$, or contractible, or deformation retracts onto something known).
 >
@@ -264,9 +264,9 @@ The main result of this section is [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1
 >
 > | **Space $X$** | **$U$** (remove pt from right) | **$V$** (remove pt from left) | $\pi_1(X)$ |
 > |---|---|---|---|
-> | [[Sⁿ is Simply Connected for n ≥ 2\|$S^n$ ($n \geq 2$)]] | $S^n \setminus \{q\} \cong \mathbb{R}^n$ | $S^n \setminus \{p\} \cong \mathbb{R}^n$ | $0$ |
-> | [[Topology §27 The Fundamental Group of Sⁿ#^ex-27-1\|$S^2 \vee S^2$]] | def. retract onto $S^2$ | def. retract onto $S^2$ | $0$ |
-> | [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2\|$S^1 \vee S^1$]] | def. retract onto $S^1$ | def. retract onto $S^1$ | $F_2$ |
+> | $S^n$ ($n \geq 2$) ([[Sⁿ is Simply Connected for n ≥ 2\|§27.3]]) | $S^n \setminus \{q\} \cong \mathbb{R}^n$ | $S^n \setminus \{p\} \cong \mathbb{R}^n$ | $0$ |
+> | $S^2 \vee S^2$ ([[Topology §27 The Fundamental Group of Sⁿ#^ex-27-1\|Ex. §27.1]]) | def. retract onto $S^2$ | def. retract onto $S^2$ | $0$ |
+> | $S^1 \vee S^1$ ([[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2\|Ex. §29.2]]) | def. retract onto $S^1$ | def. retract onto $S^1$ | $F_2$ |
 >
 > The last row requires [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|van Kampen]] to determine that $\pi_1 \cong \mathbb{Z} * \mathbb{Z} = F_2$ (not just generated by two copies of $\mathbb{Z}$).
 

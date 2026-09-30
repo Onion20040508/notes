@@ -1,0 +1,16 @@
+% Figure from MATH 451 notes, section 29. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.50\textwidth, height=0.42\textwidth,
+  xmin=0, xmax=3.3, ymin=0, ymax=6.6,
+  xtick={0}, ytick=\empty, xlabel={}]
+  \addplot[draw=none, fill=figB!12] coordinates {(0,0) (3.2,6.4) (3.2,3.2)} -- cycle;
+  \addplot[black!55, dashed, thick, domain=0:3.2] {2*x};
+  \addplot[black!55, dashed, thick, domain=0:3.2] {x};
+  \addplot[figB, very thick, domain=0:3.1, samples=120] {1.5*x+0.25*sin(deg(2*x))};
+  \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(0,0)};
+  \node[font=\scriptsize, black!65, anchor=south east] at (axis cs:2.9,5.9) {$2x$};
+  \node[font=\scriptsize, black!65, anchor=north west] at (axis cs:2.9,2.8) {$x$};
+  \node[font=\small, figB] at (axis cs:2.55,4.35) {$f$};
+  \node[font=\scriptsize, figB!80!black, align=left, anchor=west] at (axis cs:0.1,5.4) {$1 \leq f' \leq 2$,\\ $f(0) = 0$};
+\end{axis}
+\end{tikzpicture}

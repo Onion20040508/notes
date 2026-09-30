@@ -114,6 +114,12 @@ tags: [linear-algebra]
 
 *Uses:* [[Linear map lemma|3.4]], [[Linear Algebra 9D Tensor Products#^ladr-9-74|9.74]], [[Linear Algebra 9D Tensor Products#^ladr-9-73|9.73]]
 
+%% ex:9.79-fig %%
+> [!example] The universal property as a diagram
+> Every bilinear $\Gamma$ factors uniquely through $(v,w)\mapsto v\otimes w$: the blue map $\hat\Gamma$ is linear, and the triangle commutes, $\hat\Gamma(v\otimes w)=\Gamma(v,w)$.
+>
+> ![[ladr-9.79-universal.svg|260]]
+
 > [!theorem] 9.80 Inner product on tensor product of two inner product spaces
 > If $V,W$ are inner product spaces, there is a unique inner product on $V\otimes W$ with
 > $$

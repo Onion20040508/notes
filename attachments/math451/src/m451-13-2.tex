@@ -1,0 +1,25 @@
+% Figure from MATH 451 notes, section 13. Compile with the notes preamble.
+\begin{tikzpicture}[x=1.1cm]
+  % open interval: a ball fits around every point
+  \draw[-stealth, thin] (-0.6,0) -- (6.3,0);
+  \draw[figB, very thick] (0,0) -- (5,0);
+  \draw[black, fill=white, thick] (0,0) circle (2pt) node[below=3pt, font=\scriptsize] {$a$};
+  \draw[black, fill=white, thick] (5,0) circle (2pt) node[below=3pt, font=\scriptsize] {$b$};
+  \fill[figR!20] (3.8,-0.1) rectangle (4.6,0.1);
+  \node[figR, font=\small] at (3.8,0) {$($}; \node[figR, font=\small] at (4.6,0) {$)$};
+  \fill[figR] (4.2,0) circle (1.6pt) node[below=3pt, font=\scriptsize, figR] {$x$};
+  \draw[decorate, decoration={brace, amplitude=3pt}, black!55] (4.2,0.2) -- (5,0.2)
+    node[midway, above=3pt, font=\scriptsize, black] {$b-x$};
+  \node[font=\scriptsize, figB, anchor=west] at (-0.6,0.8) {$(a,b)$: $B(x,\varepsilon) \subseteq (a,b)$ for $\varepsilon < \min\{x-a,\,b-x\}$};
+  % closed interval: fails at the endpoint
+  \begin{scope}[yshift=-1.4cm]
+  \draw[-stealth, thin] (-0.6,0) -- (6.3,0);
+  \draw[figB, very thick] (0,0) -- (5,0);
+  \fill[figR!20] (-0.45,-0.1) rectangle (0.45,0.1);
+  \node[figR, font=\small] at (-0.45,0) {$($}; \node[figR, font=\small] at (0.45,0) {$)$};
+  \draw[figR, very thick] (-0.45,0) -- (0,0);
+  \fill[black] (0,0) circle (2pt) node[below=3pt, font=\scriptsize] {$a$};
+  \fill[black] (5,0) circle (2pt) node[below=3pt, font=\scriptsize] {$b$};
+  \node[font=\scriptsize, figB, anchor=west] at (0.8,0.35) {$[a,b]$: every ball around $a$ pokes out};
+  \end{scope}
+\end{tikzpicture}

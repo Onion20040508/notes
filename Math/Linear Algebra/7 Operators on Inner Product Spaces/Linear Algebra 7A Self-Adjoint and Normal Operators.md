@@ -90,6 +90,12 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Annihilator versions: [[Linear Algebra 3F Duality#^ladr-3-128|3.128]], [[Linear Algebra 3F Duality#^ladr-3-130|3.130]]. Dimension consequence: column rank = row rank again.
 
+%% ex:7.6-fig %%
+> [!example] The four subspaces, pictured
+> Take the rank-one map $Tv=\langle v,u\rangle x$ of [[Linear Algebra 7A Self-Adjoint and Normal Operators#^ladr-7-3|7.3]] on $\R^2$, with $T^*w=\langle w,x\rangle u$. In $V$, $\range T^*=\Span(u)$ and $\nullsp T=u^\perp$ are orthogonal complements (b); in $W$, $\range T=\Span(x)$ and $\nullsp T^*=x^\perp$ are (a). $T$ kills the red component of $v$ and sends the blue one onto $Tv\in\range T$.
+>
+> ![[ladr-7.6-four-subspaces.svg|460]]
+
 > [!definition] 7.7 Conjugate transpose, A∗
 > The *conjugate transpose* $A^*$ of an $m$-by-$n$ matrix $A$ is the $n$-by-$m$ matrix with $(A^*)_{j,k}=\overline{A_{k,j}}$. For real $A$, $A^*=A^t$.
 

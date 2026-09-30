@@ -143,6 +143,9 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 
 ^pf-18-3
 
+![[m451-18-2.svg]]
+*The set $S = \{x \in [a,b] \mid f(x) < y\}$ (red, on the axis) can be a union of several pieces; its endpoints where $f = y$ are excluded (hollow), while $a \in S$ (filled). The proof does not look for the first crossing but for $x_0 = \sup S$: points of $S$ approach it from the left, giving $f(x_0) \leq y$, and every point to its right lies outside $S$, giving $f(x_0) \geq y$.*
+
 > [!theorem] Corollary §18.4: Sign Change Gives a Root
 > If $f: [a,b] \to \mathbb{R}$ is continuous and $f(a)$, $f(b)$ have opposite signs, then there exists $x_0 \in [a,b]$ with $f(x_0) = 0$.
 
@@ -216,7 +219,7 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 ^pf-18-6
 
 ![[m451-18-1.svg]]
-*The graph of $f: [0,1] \to [0,1]$ starts on or above the diagonal and ends on or below it — so it must cross $y = x$. The same picture underlies the chord example below: two continuous curves that swap order must meet.*
+*The graph of $f: [0,1] \to [0,1]$ stays in the unit square: it starts on or above the diagonal and ends on or below it — so it must cross $y = x$. The same picture underlies the chord example below: two continuous curves that swap order must meet.*
 
 > [!example] Example §18.1: A chord of prescribed length
 > Let $f: [0,2] \to \mathbb{R}$ be continuous with $f(0) = f(2)$. Prove there exist $x, y \in [0,2]$ with
@@ -243,6 +246,9 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 > using $f(2) = f(0)$. So $g(0)$ and $g(1)$ are negatives of each other: either both are $0$ (done), or they have opposite signs, and the corollary gives the zero.
 
 ^ex-18-1
+
+![[m451-18-3.svg]]
+*A curve with $f(0) = f(2)$ and a horizontal chord of length $1$ (red) with both ends on the graph: $f(x_0) = f(x_0 + 1)$. The point $x_0$ is the zero of $g(x) = f(x+1) - f(x)$ on $[0,1]$ provided by the sign-change corollary.*
 
 > [!remark] Remark: Why fixed point theorems matter
 > A fixed point theorem asserts the existence of a solution of an equation $f(x) = x$ — and $f$ can be a continuous map from *any* topological space to itself, not just $[0,1]$. For the unit square, the famous **Brouwer fixed point theorem** says every continuous $f: [0,1]^2 \to [0,1]^2$ has a fixed point; the same holds for the cube $[0,1]^3$ and in every dimension. (A cousin of this circle of ideas is the reason there is a spot on everyone's head where the hair cannot be combed flat.) Only in dimension one is there a simple proof, as above; higher dimensions require advanced tools of topology. In this general form, fixed point theorems are important far beyond mathematics — in economics, game theory, and elsewhere.

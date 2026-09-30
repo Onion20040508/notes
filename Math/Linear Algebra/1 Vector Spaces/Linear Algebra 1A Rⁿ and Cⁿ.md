@@ -158,6 +158,10 @@ tags: [linear-algebra]
 > In "$x+0=x$ for all $x\in\F^n$", the $0$ must be the list $(0,\dots,0)\in\F^n$: adding the *number* $0$ to a list is not defined. Context decides which $0$ is meant.
 >
 > A vector $v=(a,b)\in\R^2$ can be viewed as a point or as an arrow from the origin; as an arrow it may be moved parallel to itself without change, which is how vector addition is pictured (tip to tail).
+>
+> Move $y$ so that it starts at the tip of $x$; then $x+y$ (red) runs from $0$ to the new tip. Moving $x$ instead (dashed) gives the same point, so $x+y$ is the diagonal of the parallelogram spanned by $x$ and $y$:
+>
+> ![[ladr-1.16-tip-to-tail.svg|320]]
 
 ^ladr-1-16
 
@@ -185,3 +189,9 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Together with [[Linear Algebra 1A Rⁿ and Cⁿ#^ladr-1-13|Addition in Fⁿ]] this makes $\F^n$ a vector space ([[Linear Algebra 1B Definition of Vector Space#^ladr-1-20|Vector space]]).
+
+%% ex:1.18-fig %%
+> [!example] Scalar multiples, pictured
+> In $\R^2$ every $\lambda x$ lies on the line through $0$ and $x$ (dashed): $2x$ is twice as long as $x$, $\tfrac12x$ half as long, and $-x=(-1)x$ (red, [[Linear Algebra 1A Rⁿ and Cⁿ#^ladr-1-17|1.17]]) has the same length as $x$ and points the opposite way.
+>
+> ![[ladr-1.18-scalar-multiples.svg|380]]

@@ -1,0 +1,19 @@
+% Figure from MATH 451 notes, section 15. Compile with the notes preamble.
+\begin{tikzpicture}[x=12cm, y=0.42cm]
+  \fill[figB!12] (0,0.5) rectangle (0.5,-6.4);
+  \draw[black!40, dashed, thin] (0,0.5) -- (0,-6.4);
+  \draw[black!40, dashed, thin] (0.5,0.5) -- (0.5,-6.4);
+  \draw[-stealth, thin] (-0.05,0.5) -- (0.58,0.5);
+  \node[above, font=\scriptsize] at (0,0.5) {$0$};
+  \node[above, font=\scriptsize] at (0.5,0.5) {$a_n$};
+  \draw[figR, thick, -stealth] (0,-0.5) -- (0.5,-0.5) node[midway, above=-1pt, font=\scriptsize] {$+a_n$};
+  \draw[figB, thick, -stealth] (0.5,-1.5) -- (0.16667,-1.5) node[midway, above=-1pt, font=\scriptsize] {$-a_{n+1}$};
+  \draw[figR, thick, -stealth] (0.16667,-2.5) -- (0.41667,-2.5) node[midway, above=-1pt, font=\scriptsize] {$+a_{n+2}$};
+  \draw[figB, thick, -stealth] (0.41667,-3.5) -- (0.21667,-3.5) node[midway, above=-1pt, font=\scriptsize] {$-a_{n+3}$};
+  \draw[figR, thick, -stealth] (0.21667,-4.5) -- (0.38333,-4.5) node[midway, above=-1pt, font=\scriptsize] {$+a_{n+4}$};
+  \draw[figB, thick, -stealth] (0.38333,-5.5) -- (0.24048,-5.5) node[midway, above=-1pt, font=\scriptsize] {$-a_{n+5}$};
+  \foreach \y/\x in {-0.5/0.5,-1.5/0.16667,-2.5/0.41667,-3.5/0.21667,-4.5/0.38333} {
+    \draw[black!30, thin, densely dotted] (\x,\y) -- (\x,{\y-1});
+  }
+  \node[font=\scriptsize, black!70, anchor=west, align=left] at (0.53,-3.0) {every partial sum\\stays in $[0, a_n]$};
+\end{tikzpicture}

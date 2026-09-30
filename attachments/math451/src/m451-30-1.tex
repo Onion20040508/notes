@@ -1,0 +1,18 @@
+% Figure from MATH 451 notes, section 30. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.64\textwidth, height=0.40\textwidth, clip=false,
+  xmin=0, xmax=3.9, ymin=0, ymax=2.35,
+  xtick=\empty, ytick=\empty, xlabel={$g(t)$}, ylabel={$f(t)$},
+  xlabel style={at={(axis description cs:1,0)}, anchor=north east},
+  ylabel style={at={(axis description cs:0,1)}, anchor=south west, rotate=-90}]
+  \addplot[black!55, dashed, thick] coordinates {(0.159,0.6129) (3.6,1.3552)};
+  \addplot[figB, very thick, domain=0.15:2.0, samples=120] ({x+0.4*x^2},{1.1*sin(deg(1.5*x))+0.45*x+0.3});
+  \addplot[figR, very thick, domain=0.85:2.2] {1.8798+0.2158*(x-1.5231)};
+  \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(0.159,0.6129) (3.6,1.3552)};
+  \addplot[only marks, mark=*, mark size=1.7pt, figR] coordinates {(1.5231,1.8798)};
+  \node[font=\scriptsize, anchor=north west] at (axis cs:0.16,0.56) {$t = a$};
+  \node[font=\scriptsize, anchor=west] at (axis cs:3.67,1.36) {$t = b$};
+  \node[font=\scriptsize, figR, anchor=south] at (axis cs:1.52,1.97) {$t = x_0$: slope $\dfrac{f'(x_0)}{g'(x_0)}$};
+  \node[font=\scriptsize, black!60, anchor=north west] at (axis cs:1.95,0.95) {slope $\dfrac{f(b) - f(a)}{g(b) - g(a)}$};
+\end{axis}
+\end{tikzpicture}

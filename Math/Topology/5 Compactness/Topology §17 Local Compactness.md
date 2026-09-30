@@ -70,7 +70,7 @@ tags: [topology, math590]
 >
 > where $a_i < 0 < b_i$ for $i = 1, \ldots, n$.
 >
-> Suppose $B \subseteq C$ for some compact $C$. Then $\overline{B} \subseteq \overline{C} = C$ (since [[Compact Subspace of a Hausdorff Space is Closed|compact $\subseteq$ Hausdorff $\Rightarrow$ closed]]).
+> Suppose $B \subseteq C$ for some compact $C$. Then $\overline{B} \subseteq \overline{C} = C$ (since compact $\subseteq$ Hausdorff $\Rightarrow$ closed ([[Compact Subspace of a Hausdorff Space is Closed|§15.4]])).
 >
 > But $\overline{B} = [a_1, b_1] \times \cdots \times [a_n, b_n] \times \mathbb{R} \times \mathbb{R} \times \cdots$
 >
@@ -106,7 +106,7 @@ tags: [topology, math590]
 >
 > *Finite intersections:* Let $U_1, U_2 \in \mathcal{T}_Y$. Three cases:
 > - Both type (1): $U_1 \cap U_2$ is open in $X$, so type (1). ✓
-> - $U_1$ type (1), $U_2 = Y \setminus C_2$ type (2): $U_1 \cap (Y \setminus C_2) = U_1 \cap (X \setminus C_2) = U_1 \setminus C_2$. Since $C_2$ is [[Compact Subspace of a Hausdorff Space is Closed|compact in Hausdorff $X$, $C_2$ is closed]], so $U_1 \setminus C_2$ is open in $X$. Type (1). ✓
+> - $U_1$ type (1), $U_2 = Y \setminus C_2$ type (2): $U_1 \cap (Y \setminus C_2) = U_1 \cap (X \setminus C_2) = U_1 \setminus C_2$. Since $C_2$ is compact in Hausdorff $X$, $C_2$ is closed ([[Compact Subspace of a Hausdorff Space is Closed|§15.4]]), so $U_1 \setminus C_2$ is open in $X$. Type (1). ✓
 > - Both type (2): $(Y \setminus C_1) \cap (Y \setminus C_2) = Y \setminus (C_1 \cup C_2)$. Finite union of compact sets is compact. Type (2). ✓
 >
 > *Arbitrary unions:* Let $\{U_\alpha\} \subseteq \mathcal{T}_Y$. If all are type (1), their union is open in $X$ (type 1). Otherwise, split into $J = \{\alpha : U_\alpha \text{ type (1)}\}$ and $I = \{\alpha : U_\alpha = Y \setminus C_\alpha \text{ type (2)}\}$:
@@ -205,9 +205,9 @@ tags: [topology, math590]
 >
 > We show $h$ is a homeomorphism by showing $h$ maps open sets to open sets (then symmetry gives $h^{-1}$ continuous; [[Topology §9 Continuous Functions#^prop-9-2|Proposition §9.2]]).
 >
-> Let $U$ be open in $Y$. If $p \notin U$, then $U \subseteq X$ and $U$ is open in $X$. Since $X$ is open in $Y'$ (because $\{q\}$ is [[Topology §8 Hausdorff Spaces#^thm-8-1|closed in the Hausdorff space]] $Y'$), and $U$ is open in $X$, [[Topology §5 Subspace Topology#^lem-5-2|$U$ is open in $Y'$]]. So $h(U) = U$ is open. ✓
+> Let $U$ be open in $Y$. If $p \notin U$, then $U \subseteq X$ and $U$ is open in $X$. Since $X$ is open in $Y'$ (because $\{q\}$ is [[Topology §8 Hausdorff Spaces#^thm-8-1|closed in the Hausdorff space]] $Y'$), and $U$ is open in $X$, $U$ is open in $Y'$ ([[Topology §5 Subspace Topology#^lem-5-2|§5.2]]). So $h(U) = U$ is open. ✓
 >
-> If $p \in U$, then $C = Y \setminus U$ is closed in $Y$, hence [[Closed Subspace of a Compact Space is Compact|compact]]. Since $p \notin C$, we have $C \subseteq X$. So $C$ is a compact subspace of $X$, hence also a compact subspace of $Y'$ (since $X$ is a subspace of $Y'$). Since $Y'$ is Hausdorff, [[Compact Subspace of a Hausdorff Space is Closed|$C$ is closed in $Y'$]]. Thus $h(U) = Y' \setminus C$ is open in $Y'$. ✓
+> If $p \in U$, then $C = Y \setminus U$ is closed in $Y$, hence [[Closed Subspace of a Compact Space is Compact|compact]]. Since $p \notin C$, we have $C \subseteq X$. So $C$ is a compact subspace of $X$, hence also a compact subspace of $Y'$ (since $X$ is a subspace of $Y'$). Since $Y'$ is Hausdorff, $C$ is closed in $Y'$ ([[Compact Subspace of a Hausdorff Space is Closed|§15.4]]). Thus $h(U) = Y' \setminus C$ is open in $Y'$. ✓
 >
 > By symmetry (the same argument applies to $h^{-1}$), $h$ is a homeomorphism.
 

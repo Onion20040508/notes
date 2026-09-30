@@ -1,0 +1,36 @@
+% Figure from MATH 451 notes, section 29. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.46\textwidth, height=0.46\textwidth, clip=false,
+  xmin=0, xmax=3.3, ymin=0, ymax=3.3, axis equal image,
+  xtick={0.25,1}, xticklabels={$y_0$,$x_0$}, ytick={0.25,1}, yticklabels={$y_0$,$x_0$}, xlabel={}]
+  \addplot[black!40, dashed, thin, domain=0:3.2] {x};
+  \addplot[figB, very thick, domain=0:3.2, samples=80] {x^2/4};
+  \addplot[figR, very thick, domain=0:3.2, samples=80] ({x^2/4},{x});
+  \addplot[figB, thin, domain=0.55:2.2] {0.25+0.5*(x-1)};
+  \addplot[figR, thin, domain=0.05:0.75] {1+2*(x-0.25)};
+  \draw[black!45, thin, dotted] (axis cs:1,0.25) -- (axis cs:0.25,1);
+  \draw[black!45, thin, dotted] (axis cs:1,0) -- (axis cs:1,0.25);
+  \draw[black!45, thin, dotted] (axis cs:0,1) -- (axis cs:0.25,1);
+  \addplot[only marks, mark=*, mark size=1.5pt, figB] coordinates {(1,0.25)};
+  \addplot[only marks, mark=*, mark size=1.5pt, figR] coordinates {(0.25,1)};
+  \node[font=\small, figB] at (axis cs:3.0,1.8) {$f$};
+  \node[font=\small, figR] at (axis cs:1.7,2.95) {$f^{-1}$};
+  \node[font=\scriptsize, figB, anchor=west] at (axis cs:2.22,0.83) {slope $f'(x_0)$};
+  \node[font=\scriptsize, figR, anchor=south] at (axis cs:0.5,2.05) {slope $\frac{1}{f'(x_0)}$};
+  \node[font=\scriptsize, black!55, rotate=45] at (axis cs:2.75,2.95) {$y = x$};
+\end{axis}
+\end{tikzpicture}\hfill
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.46\textwidth, height=0.46\textwidth, axis lines=middle, clip=false,
+  xmin=-1.35, xmax=1.35, ymin=-1.35, ymax=1.35, axis equal image,
+  xtick=\empty, ytick=\empty, xlabel={}]
+  \addplot[black!40, dashed, thin, domain=-1.3:1.3] {x};
+  \addplot[figB, very thick, domain=-1.1:1.1, samples=80] {x^3};
+  \addplot[figR, very thick, domain=-1.1:1.1, samples=80] ({x^3},{x});
+  \draw[figB, line width=1.6pt] (axis cs:-0.45,0) -- (axis cs:0.45,0);
+  \draw[figR, line width=1.6pt] (axis cs:0,-0.45) -- (axis cs:0,0.45);
+  \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(0,0)};
+  \node[font=\scriptsize, figB, anchor=north west, align=left] at (axis cs:0.12,-0.3) {$x^3$: horizontal\\tangent, $f'(0) = 0$};
+  \node[font=\scriptsize, figR, anchor=south east, align=right] at (axis cs:-0.12,0.3) {$y^{1/3}$: vertical\\tangent};
+\end{axis}
+\end{tikzpicture}

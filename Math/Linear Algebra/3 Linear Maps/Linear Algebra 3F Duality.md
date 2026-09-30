@@ -86,6 +86,12 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Orthonormal analogue: [[Linear Algebra 6B Orthonormal Bases#^ladr-6-30|Writing a vector as a linear combination of an orthonormal basis]] with $\varphi_j=\ip{\cdot}{e_j}$.
 
+%% ex:3.114-fig %%
+> [!example] The dual basis, pictured
+> In $\R^2$ with basis $v_1,v_2$, the level lines of $\varphi_1$ (blue, dashed) are parallel to $v_2$, since $\varphi_1(v_2)=0$; those of $\varphi_2$ (red, dashed) are parallel to $v_1$. Reading off which level lines pass through $v$ gives its coordinates: here $\varphi_1(v)=2$, $\varphi_2(v)=1$, so $v=2v_1+v_2$.
+>
+> ![[ladr-3.114-dual-basis.svg|400]]
+
 > [!theorem] 3.116 Dual basis is a basis of the dual space
 > If $V$ is finite-dimensional, the dual basis of a basis of $V$ is a basis of $V'$.
 
@@ -276,6 +282,12 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - (a) is the abstract form of row rank $=$ column rank: [[Linear Algebra 3F Duality#^ladr-3-133|Column rank equals row rank (LADR 3.133)]].
+
+%% ex:3.130-fig %%
+> [!example] Null spaces and ranges under duality
+> Passing to the dual map swaps the roles of null space and range: the annihilator of $\nullsp T$ is $\range T'$ ([[Linear Algebra 3F Duality#^ladr-3-130|3.130]](b)), and the annihilator of $\range T$ is $\nullsp T'$ ([[Linear Algebra 3F Duality#^ladr-3-128|3.128]](a)). That is why injectivity of $T$ matches surjectivity of $T'$, and surjectivity of $T$ matches injectivity of $T'$.
+>
+> ![[ladr-3.130-four-subspaces.svg|440]]
 
 > [!theorem] 3.132 Matrix of $T'$ is the transpose of the matrix of $T$
 > Let $V,W$ be finite-dimensional, $T\in\Lin(V,W)$, with bases $v_1,\dots,v_n$ of $V$, $w_1,\dots,w_m$ of $W$ and the dual bases $\varphi_1,\dots,\varphi_n$, $\psi_1,\dots,\psi_m$. Then

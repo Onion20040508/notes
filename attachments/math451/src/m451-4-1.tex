@@ -1,0 +1,16 @@
+% Figure from MATH 451 notes, section 4. Compile with the notes preamble.
+\begin{tikzpicture}[x=1.25cm]
+  \fill[black!10] (5,-0.12) rectangle (6.6,0.12);
+  \draw[-stealth, thin] (-0.4,0) -- (6.7,0);
+  \draw[figB, very thick] (0.3,0) -- (2.2,0);
+  \fill[figB] (0.3,0) circle (1.6pt);  \fill[figB] (2.2,0) circle (1.6pt);
+  \foreach \x in {3.0,3.8,4.3,4.75,4.9} { \fill[figB] (\x,0) circle (1.6pt); }
+  \fill[figR] (4.6,0) circle (1.9pt);
+  \draw[black, fill=white, thick] (5,0) circle (1.9pt);
+  \node[font=\small, figB] at (1.25,0.3) {$S$};
+  \node[anchor=south west, font=\scriptsize, inner sep=1pt] at (5.02,0.12) {$M = \sup S$};
+  \node[font=\scriptsize, black!60] at (5.95,-0.35) {upper bounds};
+  \draw[thin] (4.35,0.1) -- (4.35,-0.1) node[below, font=\scriptsize] {$M_1$};
+  \draw[figR, thin, -stealth] (4.6,0.55) -- (4.6,0.12);
+  \node[font=\scriptsize, figR, anchor=south east, inner sep=1pt] at (4.65,0.55) {$x_1 \in S,\ x_1 > M_1$};
+\end{tikzpicture}

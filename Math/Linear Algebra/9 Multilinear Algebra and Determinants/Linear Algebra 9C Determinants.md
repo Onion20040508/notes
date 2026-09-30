@@ -210,6 +210,12 @@ tags: [linear-algebra]
 
 *Uses:* [[Linear Algebra 9C Determinants#^ladr-9-45|9.45]], [[Linear Algebra 9C Determinants#^ladr-9-56|9.56]], [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-30|9.30]]
 
+%% ex:9.57-fig %%
+> [!example] Adding a multiple of a column, pictured
+> In $\R^2$, replacing $v_1$ by $v_1+cv_2$ slides the top edge of the parallelogram along $v_2$. The base $v_2$ and the height stay the same, so the area $|\det\begin{pmatrix}v_1&v_2\end{pmatrix}|$ does not change: this is (d).
+>
+> ![[ladr-9.57-shear.svg|400]]
+
 > [!theorem] 9.58 Every unitary operator has determinant with absolute value 1
 > If $S$ is unitary, then $|\det S|=1$.
 
@@ -264,7 +270,7 @@ tags: [linear-algebra]
 
 %% ex:9.61-fig %%
 > [!example] Determinant as signed volume
-> The unit square spanned by $e_1,e_2$ goes to the parallelogram spanned by $Te_1,Te_2$, whose area is $|\det T|$. Left: $\det T=2>0$, orientation kept ($Te_1$ to $Te_2$ still counterclockwise). Right: $\det T=-2<0$, same area, orientation reversed.
+> The unit square (dashed) spanned by $e_1,e_2$ goes to the parallelogram spanned by $Te_1,Te_2$, whose area is $|\det T|$. Left: $\det T=2>0$, orientation kept ($Te_1$ to $Te_2$ still counterclockwise). Right: $\det T=-2<0$, same area, orientation reversed.
 >
 > ![[ladr-9.61-signed-area.svg|520]]
 
@@ -334,6 +340,12 @@ tags: [linear-algebra]
 > using [[Linear Algebra 9C Determinants#^ladr-9-49|9.49]], [[Linear Algebra 9C Determinants#^ladr-9-58|9.58]], [[Linear Algebra 9C Determinants#^ladr-9-48|9.48]], $R_{k,k}\le$ the norm of column $k$ of $R$, and that $Q$ is an isometry.
 
 *Uses:* [[Linear Algebra 7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|7.58]], [[Linear Algebra 9C Determinants#^ladr-9-49|9.49]], [[Linear Algebra 9C Determinants#^ladr-9-58|9.58]], [[Linear Algebra 9C Determinants#^ladr-9-48|9.48]]
+
+%% ex:9.66-fig %%
+> [!example] Hadamard's inequality, pictured
+> For two columns: $R_{1,1}=\|v_1\|$ is the base and $R_{2,2}$, the distance from $v_2$ to $\Span(v_1)$, is the height, so $|\det A|=R_{1,1}R_{2,2}$. Since $R_{2,2}\le\|v_2\|$, the parallelogram has area at most that of the dashed box with sides $\|v_1\|,\|v_2\|$.
+>
+> ![[ladr-9.66-hadamard.svg|320]]
 
 > [!theorem] 9.67 Determinant of Vandermonde matrix
 > For $n>1$ and $\beta_1,\dots,\beta_n\in\F$,

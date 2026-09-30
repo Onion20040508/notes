@@ -1,0 +1,15 @@
+% Figure from MATH 451 notes, section 6. Compile with the notes preamble.
+\begin{tikzpicture}[x=1.0cm]
+  \draw[-stealth, thin] (-0.4,0) -- (6.4,0);
+  \draw[figB, very thick] (-0.4,0) -- (3.5,0);
+  \draw[black!40, thick] (3.5,0) -- (6.1,0);
+  \foreach \x in {2.3,2.9,3.2,3.35,3.43} { \fill[figR] (\x,0) circle (1.3pt); }
+  \draw[black, fill=white, thick] (3.5,0) circle (2pt);
+  \node[above=3pt, font=\small] at (3.5,0) {$r$};
+  \node[font=\small, figB] at (1.2,0.38) {$S_r = \{a \in \mathbb{Q} \mid a < r\}$};
+  \node[font=\scriptsize, black!55] at (5.0,0.3) {rationals $\geq r$};
+  \draw[figR, thin, -stealth] (2.3,-0.25) -- (2.88,-0.25);
+  \draw[figR, thin, -stealth] (2.9,-0.25) -- (3.18,-0.25);
+  \draw[figR, thin, -stealth] (3.2,-0.25) -- (3.34,-0.25);
+  \node[font=\scriptsize, figR, anchor=north east, align=right] at (3.5,-0.33) {no maximum: a larger rational\\always fits below $r$};
+\end{tikzpicture}

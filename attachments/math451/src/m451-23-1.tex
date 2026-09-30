@@ -1,0 +1,34 @@
+% Figure from MATH 451 notes, section 23. Compile with the notes preamble.
+\begin{tikzpicture}[x=1.5cm, y=1cm]
+  \tikzset{hol/.style={circle, draw=figB, thick, fill=white, inner sep=1.5pt},
+           fil/.style={circle, draw=figB, thick, fill=figB, inner sep=1.5pt},
+           rowlab/.style={font=\scriptsize, anchor=east},
+           setlab/.style={font=\scriptsize, figB, anchor=west}}
+  % general picture
+  \draw[black!40, thin, -stealth] (-2.2,0) -- (2.3,0);
+  \draw[figB, line width=2pt] (-1,0) -- (1,0);
+  \node[circle, draw=figR, thick, fill=white, inner sep=1.5pt] at (-1,0) {};
+  \node[circle, draw=figR, thick, fill=white, inner sep=1.5pt] at (1,0) {};
+  \node[font=\scriptsize, figR, anchor=south east] at (-1.02,0.05) {?};
+  \node[font=\scriptsize, figR, anchor=south west] at (1.02,0.05) {?};
+  \node[font=\scriptsize, below] at (-1,-0.1) {$-R$};
+  \node[font=\scriptsize, below] at (1,-0.1) {$R$};
+  \node[font=\scriptsize, below] at (0,-0.1) {$0$};
+  \node[font=\scriptsize, figB, above] at (0,0.1) {converges absolutely};
+  \node[font=\scriptsize, black!55, above] at (-1.75,0.1) {diverges};
+  \node[font=\scriptsize, black!55, above] at (1.75,0.1) {diverges};
+  \node[rowlab] at (-2.3,0) {$\sum a_n x^n$};
+  % three examples
+  \foreach \y/\lab/\l/\r/\set in {-1.2/{$\sum x^n$}/hol/hol/{$(-1,1)$}, -1.9/{$\sum \frac{x^n}{n^2}$}/fil/fil/{$[-1,1]$}, -2.6/{$\sum \frac{x^n}{n}$}/fil/hol/{$[-1,1)$}} {
+    \draw[black!40, thin, -stealth] (-2.2,\y) -- (2.3,\y);
+    \draw[black!40, thin] (0,\y-0.07) -- (0,\y+0.07);
+    \draw[figB, line width=2pt] (-1,\y) -- (1,\y);
+    \node[\l] at (-1,\y) {};
+    \node[\r] at (1,\y) {};
+    \node[rowlab] at (-2.3,\y) {\lab};
+    \node[setlab] at (2.35,\y) {\set};
+  }
+  \node[font=\scriptsize, below] at (-1,-2.7) {$-1$};
+  \node[font=\scriptsize, below] at (0,-2.7) {$0$};
+  \node[font=\scriptsize, below] at (1,-2.7) {$1$};
+\end{tikzpicture}

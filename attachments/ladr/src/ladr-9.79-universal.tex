@@ -1,0 +1,9 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{amsmath,amssymb,tikz-cd}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}
+\begin{document}
+\begin{tikzcd}[column sep=large,row sep=large]
+V\times W \arrow[r,"\otimes"] \arrow[dr,"\Gamma"'] & V\otimes W \arrow[d,"\hat\Gamma",color=figB,dashed] \\
+ & U
+\end{tikzcd}
+\end{document}

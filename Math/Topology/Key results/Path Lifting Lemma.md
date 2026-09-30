@@ -27,5 +27,5 @@ tags: [topology, hub]
 
 ## Connections
 - **Proof.** The [[Lebesgue Number Lemma]] subdivides I into pieces mapping into evenly covered sets. Each piece is lifted by a local inverse of p and the pieces are glued with the [[Pasting Lemma]]. Uniqueness holds because a connected image cannot jump between disjoint slices ([[Topology §24 Covering Spaces#^rem-24-5|Role of Each Map]]).
-- **Covering hypothesis is needed.** p : ℝ₊ → S¹ is a surjective local homeomorphism but not a covering map, and a clockwise loop from (1, 0) has no lift starting at 0 ([[Topology §24 Covering Spaces#^ex-24-2|Example §24.2]]).
+- **Covering hypothesis is needed.** p : ℝ₊ → S¹ is a surjective local homeomorphism but not a covering map, and a clockwise loop from (1, 0) has no lift starting at 1 ([[Topology §24 Covering Spaces#^ex-24-2|Example §24.2]]).
 - **Builds.** It leads to the [[Homotopy Lifting Lemma]], the [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]] and [[Properties of the Lifting Correspondence]], hence [[Fundamental Group of the Circle]]. Explicit lifts also show that the figure eight has non-abelian π₁ ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|Theorem §28.4]]).

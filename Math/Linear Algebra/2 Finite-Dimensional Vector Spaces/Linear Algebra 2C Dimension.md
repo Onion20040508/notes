@@ -133,3 +133,9 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Direct-sum case: [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-94|A sum is a direct sum if and only if dimensions add up]] ($\dim(V_1+V_2)=\dim V_1+\dim V_2 \iff V_1\cap V_2=\{0\}$).
 > - Alternative proof via [[Fundamental theorem of linear maps]]: apply it to $T:V_1\times V_2\to V$, $T(x,y)=x+y$. Then $\range T=V_1+V_2$, $\nullsp T=\{(x,-x):x\in V_1\cap V_2\}\cong V_1\cap V_2$, and $\dim(V_1\times V_2)=\dim V_1+\dim V_2$ by [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-92|Dimension of a product is the sum of dimensions]].
+
+%% ex:2.43-fig %%
+> [!example] Two planes in $\R^3$, pictured
+> Two distinct planes $V_1$ (blue) and $V_2$ (red) through $0$ meet in a line. As in the proof: $v_1$ is a basis of $V_1\cap V_2$, extended by $u_1$ to a basis of $V_1$ and by $w_1$ to a basis of $V_2$. Then $v_1,u_1,w_1$ is a basis of $V_1+V_2=\R^3$, and $\dim(V_1+V_2)=2+2-1=3$.
+>
+> ![[ladr-2.43-dim-sum.svg|340]]

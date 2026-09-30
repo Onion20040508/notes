@@ -3,11 +3,11 @@
 \begin{axis}[nfig, xmin=0, xmax=3.3, ymin=0, ymax=1.7,
   xtick={0,0.6,1.5,1.8,2.4,3},
   xticklabels={$t_0$,$t_1$,$t_2$,$t_3$,$t_4$,$t_5$}, ytick=\empty, xlabel={}]
-  \addplot[draw=none, fill=figB!14] coordinates {(0,0) (0,0.600) (0.6,0.600) (0.6,0)};
-  \addplot[draw=none, fill=figB!14] coordinates {(0.6,0) (0.6,0.996) (1.5,0.996) (1.5,0)};
-  \addplot[draw=none, fill=figB!14] coordinates {(1.5,0) (1.5,0.831) (1.8,0.831) (1.8,0)};
-  \addplot[draw=none, fill=figB!14] coordinates {(1.8,0) (1.8,0.590) (2.4,0.590) (2.4,0)};
-  \addplot[draw=none, fill=figB!14] coordinates {(2.4,0) (2.4,0.584) (3,0.584) (3,0)};
+  \addplot[draw=none, fill=figB!12] coordinates {(0,0) (0,0.600) (0.6,0.600) (0.6,0)};
+  \addplot[draw=none, fill=figB!12] coordinates {(0.6,0) (0.6,0.996) (1.5,0.996) (1.5,0)};
+  \addplot[draw=none, fill=figB!12] coordinates {(1.5,0) (1.5,0.831) (1.8,0.831) (1.8,0)};
+  \addplot[draw=none, fill=figB!12] coordinates {(1.8,0) (1.8,0.590) (2.4,0.590) (2.4,0)};
+  \addplot[draw=none, fill=figB!12] coordinates {(2.4,0) (2.4,0.584) (3,0.584) (3,0)};
   \addplot[figR, thick] coordinates {(0,1.043) (0.6,1.043)};
   \addplot[figR, thick] coordinates {(0.6,1.140) (1.5,1.140)};
   \addplot[figR, thick] coordinates {(1.5,0.996) (1.8,0.996)};
@@ -28,7 +28,7 @@
 \begin{tikzpicture}
 \begin{axis}[nfig, xmin=0, xmax=3.3, ymin=0, ymax=1.7,
   xtick={0,0.3,0.6,1.05,1.5,1.8,2.1,2.4,2.7,3},
-  xticklabels={,,,,,,,,,}, ytick=\empty, xlabel={}]
+  xticklabels={$t_0$,,$t_1$,,$t_2$,$t_3$,,$t_4$,,$t_5$}, ytick=\empty, xlabel={}]
   \addplot[draw=none, fill=figB!25] coordinates {(0,0.600) (0.3,0.600) (0.3,0.851) (0,0.851)};
   \addplot[draw=none, fill=figB!25] coordinates {(0.3,0.851) (0.6,0.851) (0.6,1.043) (0.3,1.043)};
   \addplot[draw=none, fill=figB!25] coordinates {(0.6,1.043) (1.05,1.043) (1.05,1.140) (0.6,1.140)};
@@ -39,6 +39,12 @@
   \addplot[draw=none, fill=figB!25] coordinates {(2.4,0.584) (2.7,0.584) (2.7,0.609) (2.4,0.609)};
   \addplot[draw=none, fill=figB!25] coordinates {(2.7,0.609) (3,0.609) (3,0.741) (2.7,0.741)};
   \addplot[black, domain=0:3.2, samples=140, very thick] {0.6+0.4*sin(deg(1.8*x))+0.15*x};
-  \node[font=\scriptsize, figB!80!black] at (axis cs:2.15,1.35) {$U - L$ shrinks};
+  \draw[figR, thin] (axis cs:0,0.600) rectangle (axis cs:0.6,1.043);
+  \draw[figR, thin] (axis cs:0.6,0.996) rectangle (axis cs:1.5,1.140);
+  \draw[figR, thin] (axis cs:1.5,0.831) rectangle (axis cs:1.8,0.996);
+  \draw[figR, thin] (axis cs:1.8,0.590) rectangle (axis cs:2.4,0.831);
+  \draw[figR, thin] (axis cs:2.4,0.584) rectangle (axis cs:3,0.741);
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.75,1.56) {gap $U - L$ of $P$};
+  \node[font=\scriptsize, figB!80!black, anchor=west] at (axis cs:0.75,1.39) {gap of the refinement};
 \end{axis}
 \end{tikzpicture}

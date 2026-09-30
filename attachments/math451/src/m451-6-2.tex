@@ -1,0 +1,30 @@
+% Figure from MATH 451 notes, section 6. Compile with the notes preamble.
+\begin{tikzpicture}[x=1.0cm, y=0.8cm]
+  % row 1: A = S_r and its complement
+  \draw[-stealth, thin] (-3,0) -- (3.2,0);
+  \draw[black!70, thin] (0,0.12) -- (0,-0.12) node[below, font=\scriptsize, black!70] {$0$};
+  \draw[figB, very thick] (-3,0) -- (1.5,0);
+  \draw[black!55, very thick] (1.5,0) -- (3,0);
+  \fill[black!55] (1.5,0) circle (2pt);
+  \node[above=2pt, font=\scriptsize] at (1.5,0) {$r$};
+  \node[font=\scriptsize, figB, anchor=west] at (-3,0.35) {$A = S_r$};
+  \node[font=\scriptsize, black!60, anchor=west] at (1.9,0.35) {$\mathbb{Q}\setminus A$: min $= r$};
+  % row 2: naive negation
+  \begin{scope}[yshift=-1.3cm]
+  \draw[-stealth, thin] (-3,0) -- (3.2,0);
+  \draw[black!70, thin] (0,0.12) -- (0,-0.12) node[below, font=\scriptsize, black!70] {$0$};
+  \draw[figR, very thick] (-3,0) -- (-1.5,0);
+  \fill[figR] (-1.5,0) circle (2pt);
+  \node[below=2pt, font=\scriptsize] at (-1.5,0) {$-r$};
+  \node[font=\scriptsize, figR, anchor=west] at (-1.2,0.3) {naive $\{-a \mid a \notin A\}$: has max $-r$};
+  \end{scope}
+  % row 3: correct negation
+  \begin{scope}[yshift=-2.6cm]
+  \draw[-stealth, thin] (-3,0) -- (3.2,0);
+  \draw[black!70, thin] (0,0.12) -- (0,-0.12) node[below, font=\scriptsize, black!70] {$0$};
+  \draw[figB, very thick] (-3,0) -- (-1.5,0);
+  \draw[black, fill=white, thick] (-1.5,0) circle (2pt);
+  \node[below=2pt, font=\scriptsize] at (-1.5,0) {$-r$};
+  \node[font=\scriptsize, figB, anchor=west] at (-1.2,0.3) {correct $-A$: boundary excluded, no max};
+  \end{scope}
+\end{tikzpicture}

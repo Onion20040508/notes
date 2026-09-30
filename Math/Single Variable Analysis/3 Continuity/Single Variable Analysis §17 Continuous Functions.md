@@ -124,6 +124,9 @@ For some functions the sequential definition is not so easy to check directly �
 
 ^ex-17-5
 
+![[m451-17-3.svg]]
+*Damped versus undamped oscillation at $0$. Left: $f(x) = x\sin\tfrac1x$ is trapped between $\pm|x|$ (dashed), so the square with $\delta = \varepsilon$ (red) contains the graph over $|x| < \delta$ — continuity at $0$. Right: $g(x) = \sin\tfrac1x$ oscillates between $\pm1$ ever faster (shaded: infinitely many oscillations); the points $x_n = \tfrac{1}{2n\pi + \pi/2} \to 0$ (red) keep $g(x_n) = 1$, far from $g(0) = 0$.*
+
 > [!definition] Definition §17.2: Continuous Function
 > A function $f: \Omega \to \mathbb{R}$ is called **continuous** if it is continuous at *every* point $x_0 \in \Omega$.
 
@@ -261,7 +264,7 @@ We have seen many continuous functions — polynomials, rational functions, and 
 ^ex-17-9
 
 ![[m451-17-2.svg]]
-*The Thomae function on $(0,1)$, drawn for $q \leq 14$. The proof is visible: at any fixed height $\varepsilon$, only finitely many dots lie above it, so near an irrational point all nearby values of $f$ eventually drop below $\varepsilon$ — continuity at every irrational, discontinuity at every rational.*
+*The Thomae function on $(0,1)$, drawn for $q \leq 14$. The proof is visible: above any fixed height $\varepsilon$ (dashed) lie only finitely many dots (red — those with $\tfrac1q > \varepsilon$), so an irrational $x_0$ has a window (blue strip) containing none of them, and there every value of $f$ is below $\varepsilon$ — continuity at every irrational. At a rational $\tfrac pq$, by contrast, the dot sits at height $\tfrac1q > 0$ while the irrationals arbitrarily close by give $0$ — discontinuity.*
 
 A counterweight to all these constructions — continuity is *rigid* on dense sets:
 

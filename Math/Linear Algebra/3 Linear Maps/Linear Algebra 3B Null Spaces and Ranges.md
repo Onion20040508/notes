@@ -149,6 +149,12 @@ tags: [linear-algebra]
 
 *Uses:* [[Every linearly independent list extends to a basis|2.32]]
 
+%% ex:3.21-fig %%
+> [!example] The proof, pictured
+> A map $T:\R^3\to\R^2$ with $\dim\nullsp T=1$. The basis $u_1$ of $\nullsp T$ (red) is extended by $v_1,v_2$ to a basis of $V$. All of $\nullsp T$ collapses to $0$, while $Tv_1,Tv_2$ (blue) form a basis of $\range T$. So $3=1+2$.
+>
+> ![[ladr-3.21-ftlm.svg|520]]
+
 > [!theorem] 3.22 Linear map to a lower-dimensional space is not injective
 > If $V,W$ are finite-dimensional and $\dim V>\dim W$, then no linear map $V\to W$ is injective.
 

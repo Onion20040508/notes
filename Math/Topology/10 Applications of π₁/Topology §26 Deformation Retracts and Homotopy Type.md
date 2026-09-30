@@ -263,19 +263,19 @@ tags: [topology, math590]
 > - $a = \|x - f(x)\|^2 > 0$ (since $f(x) \neq x$ by assumption).
 > - $c = \|f(x)\|^2 - 1 \leq 0$ (since $f(x) \in B^2$, so $\|f(x)\| \leq 1$).
 >
-> By Vieta's formulas, the product of the two roots is $c/a \leq 0$, so one root is $\leq 0$ and the other is $\geq 0$. Define $r(x) = \gamma(t_0)$, where $t_0$ is the unique non-negative root.
+> By Vieta's formulas, the product of the two roots is $c/a \leq 0$, so one root is $\leq 0$ and the other is $\geq 0$. Define $r(x) = \gamma(t_0)$, where $t_0$ is the larger (hence non-negative) root.
 >
 > **Step 3: $r(x) \in S^1$.** By construction, $\|\gamma(t_0)\| = 1$.
 >
-> **Step 4: $r$ is continuous.** The non-negative root $t_0$ is given by the quadratic formula:
+> **Step 4: $r$ is continuous.** The larger root $t_0$ is given by the quadratic formula:
 >
 > $$
 > t_0 = \frac{-b + \sqrt{b^2 - 4ac}}{2a}
 > $$
 >
-> (the “$+$” root, since the other root is $\leq 0$). Since $a, b, c$ depend continuously on $x$ and the discriminant $b^2 - 4ac \geq b^2 - 4a \cdot c \geq 0$ (as $c \leq 0$), $t_0$ depends continuously on $x$, and hence $r(x) = \gamma(t_0)$ is continuous.
+> (the “$+$” root, since the other root is $\leq 0$). Since $a, b, c$ depend continuously on $x$ and the discriminant $b^2 - 4ac \geq b^2 \geq 0$ (as $a > 0$, $c \leq 0$), $t_0$ depends continuously on $x$, and hence $r(x) = \gamma(t_0)$ is continuous.
 >
-> **Step 5: $r$ is a retraction.** For $x \in S^1$, we have $\|x\|^2 = 1$, so $t = 1$ satisfies the quadratic (since $\gamma(1) = x$ and $\|x\| = 1$). Since $1 \geq 0$ and the non-negative root is unique, $t_0 = 1$, giving $r(x) = \gamma(1) = x$.
+> **Step 5: $r$ is a retraction.** For $x \in S^1$, we have $\|x\|^2 = 1$, so $t = 1$ satisfies the quadratic (since $\gamma(1) = x$ and $\|x\| = 1$). Since the other root is $c/a \leq 0 < 1$, the larger root is $t_0 = 1$, giving $r(x) = \gamma(1) = x$.
 >
 > Thus $r: B^2 \to S^1$ is a retraction, contradicting the no-retraction theorem.
 
@@ -367,7 +367,7 @@ All three results—the [[Topology §24 Covering Spaces#^lem-24-12|nullhomotopy 
 > - $a = \|x - f(x)\|^2 = \sum_{i=1}^{n+1} (x_i - f(x)_i)^2 > 0$ (since $f(x) \neq x$).
 > - $c = \|f(x)\|^2 - 1 \leq 0$ (since $f(x) \in B^{n+1}$).
 >
-> The expansion involves $(n+1)$ squared terms instead of $2$, but collects identically into $at^2 + bt + c = 0$. By Vieta's formulas, the product of the roots is $c/a \leq 0$, so there is a unique non-negative root $t_0 = (-b + \sqrt{b^2 - 4ac})/2a$.
+> The expansion involves $(n+1)$ squared terms instead of $2$, but collects identically into $at^2 + bt + c = 0$. By Vieta's formulas, the product of the roots is $c/a \leq 0$, so the larger root $t_0 = (-b + \sqrt{b^2 - 4ac})/2a$ is non-negative.
 >
 > Define $r(x) = \gamma(t_0)$. Then:
 > - $r(x) \in S^n$: $\|\gamma(t_0)\| = 1$ by construction.
@@ -490,8 +490,8 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 
 ^ex-26-5
 
-> [!example] Example §26.6: Doubly punctured ball
-> A ball with two points removed deformation retracts onto both a figure-eight space and a “theta” space ($\Theta$). Similarly, neither the figure-eight nor the theta space is a deformation retract of the other, but they have isomorphic fundamental groups (both $\cong F_2$).
+> [!example] Example §26.6: Doubly punctured plane
+> The plane with two points removed deformation retracts onto both a figure-eight space and a “theta” space ($\Theta$). Similarly, neither the figure-eight nor the theta space is a deformation retract of the other, but they have isomorphic fundamental groups (both $\cong F_2$).
 >
 > This illustrates that **isomorphic $\pi_1$ does not imply deformation retract**—the relationship is one-directional.
 
@@ -562,7 +562,7 @@ A [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]]
 > - $\tilde{F}(x, 0) = x$ for all $x$ (starts as identity). ✓
 > - $\tilde{F}(x, 1) = r(x) \in \partial[0, 2\pi]^2$ for all $x$ (ends on boundary). ✓
 > - If $x \in \partial[0, 2\pi]^2$: the ray from $q$ through $x$ hits the boundary at $x$ itself, so $r(x) = x$, and $\tilde{F}(x, t) = (1-t)x + tx = x$ for all $t$ (boundary stays fixed). ✓
-> - $\tilde{F}(x, t) \neq q$ for all $t$: each $(1-t)x + tr(x)$ lies on the segment from $x$ to $r(x)$, which is on the opposite side of $q$ from the origin (or passes through $q$ only at $x = q$, which we excluded). ✓
+> - $\tilde{F}(x, t) \neq q$ for all $t$: each $(1-t)x + tr(x)$ lies on the segment from $x$ to $r(x)$, which lies on the ray from $q$ through $x$, beyond $x$ (as seen from $q$), so it never contains $q$. ✓
 >
 > So $\tilde{F}$ is a deformation retraction of the punctured square onto its boundary.
 >

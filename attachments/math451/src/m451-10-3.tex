@@ -1,0 +1,20 @@
+% Figure from MATH 451 notes, section 10. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.50\textwidth,
+  xmin=0, xmax=2.35, ymin=0, ymax=2.2, clip=false,
+  xtick={1,1.4142,1.618,2}, xticklabels={$s_1$,$s_2$,,$2$},
+  ytick={1.732}, yticklabels={$\sqrt3$}, xlabel={$x$}]
+  \addplot[black!55, thin, domain=0:2.3] {x} node[pos=0.97, anchor=south east, font=\scriptsize, black!70] {$y=x$};
+  \addplot[figB, thick, domain=0:2.3, samples=80] {sqrt(1+x)} ;
+  \node[font=\scriptsize, figB, anchor=north west] at (axis cs:0.04,0.93) {$y=\sqrt{1+x}$};
+  \addplot[figR, thin, -stealth] coordinates {(1,0) (1,1.4142) (1.4142,1.4142) (1.4142,1.5538) (1.5538,1.5538) (1.5538,1.5981) (1.5981,1.5981) (1.5981,1.6118)};
+  \addplot[only marks, mark=*, mark size=1.5pt, figR] coordinates {(1,1.4142) (1.4142,1.5538) (1.5538,1.5981)};
+  \addplot[only marks, mark=*, mark size=1.7pt, black] coordinates {(1.618,1.618)};
+  \node[font=\scriptsize, anchor=east] (fp) at (axis cs:1.2,1.98) {fixed point $\tfrac{1+\sqrt5}{2}$};
+  \draw[black!60, thin, -stealth] (fp.east) -- (axis cs:1.6,1.65);
+  \addplot[black!40, dashed, thin] coordinates {(2,0) (2,2)};
+  \addplot[black!40, dashed, thin] coordinates {(0,1.732) (2,1.732)};
+  \addplot[only marks, mark=*, mark size=1.5pt, figB] coordinates {(2,1.732)};
+  \node[font=\scriptsize, figB, anchor=west, align=left] at (axis cs:2.04,1.2) {$\sqrt{1+2} < 2$:\\ bound $M=2$\\ propagates};
+\end{axis}
+\end{tikzpicture}

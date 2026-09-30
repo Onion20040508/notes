@@ -1,0 +1,27 @@
+% Figure from MATH 451 notes, section 24. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.66\textwidth, height=0.44\textwidth, clip=false,
+  xmin=0.2, xmax=2.3, ymin=0.45, ymax=1.6,
+  xtick={1,1.5}, xticklabels={$x_0$,$x$}, ytick=\empty, xlabel={}]
+  \addplot[draw=none, fill=black!9, domain=0.25:2.2, samples=60]
+    {1+0.36*(x-1)-0.1*(x-1)^2+0.2} \closedcycle;
+  \addplot[draw=none, fill=white, domain=0.25:2.2, samples=60]
+    {1+0.36*(x-1)-0.1*(x-1)^2-0.2} \closedcycle;
+  \addplot[black, very thick, domain=0.25:2.2, samples=80] {1+0.36*(x-1)-0.1*(x-1)^2};
+  \addplot[figB, very thick, domain=0.25:2.2, samples=150] {1+0.36*(x-1)-0.1*(x-1)^2-0.15+0.045*sin(deg(4*pi*(x-1)))};
+  \draw[black!50, dotted] (axis cs:1,0.45) -- (axis cs:1,0.85);
+  \draw[black!50, dotted] (axis cs:1.5,0.45) -- (axis cs:1.5,0.85);
+  \draw[black!50, dotted] (axis cs:1,0.85) -- (axis cs:1.5,0.85);
+  \draw[figR, very thick] (axis cs:1,1) -- (axis cs:1,0.85);
+  \draw[figO, very thick] (axis cs:1.5,0.85) -- (axis cs:1.5,1.005);
+  \draw[figR, very thick] (axis cs:1.5,1.005) -- (axis cs:1.5,1.155);
+  \addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1,1) (1.5,1.155)};
+  \addplot[only marks, mark=*, mark size=1.3pt, figB] coordinates {(1,0.85) (1.5,1.005)};
+  \node[font=\scriptsize, figR, anchor=east] at (axis cs:0.98,0.925) {$<\frac\varepsilon3$};
+  \node[font=\scriptsize, figO, anchor=west] at (axis cs:1.52,0.925) {$<\frac\varepsilon3$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:1.52,1.08) {$<\frac\varepsilon3$};
+  \node[font=\small, anchor=west] at (axis cs:2.2,1.27) {$f$};
+  \node[font=\small, figB, anchor=west] at (axis cs:2.2,1.08) {$f_N$};
+  \node[font=\scriptsize, black!60, anchor=south] at (axis cs:0.45,1.0) {$f \pm \frac\varepsilon3$};
+\end{axis}
+\end{tikzpicture}

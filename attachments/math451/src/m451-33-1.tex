@@ -1,0 +1,30 @@
+% Figure from MATH 451 notes, section 33. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.68\textwidth, height=0.42\textwidth, clip=false,
+  xmin=0, xmax=4.6, ymin=0, ymax=2.75,
+  xtick={0.2,0.8,1.4,2.0,2.6,3.2}, xticklabels={$a = t_0$,$t_1$,$t_2$,$t_3$,$t_4$,$b = t_5$}, ytick=\empty, xlabel={}]
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(0.20,0.3624) (0.80,0.3624) (0.80,0.5784) (0.20,0.5784)} -- cycle;
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(3.7,0.3624) (4.3,0.3624) (4.3,0.5784) (3.7,0.5784)} -- cycle;
+  \draw[black!35, thin, densely dotted] (axis cs:0.80,0.5784) -- (axis cs:3.7,0.5784);
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(0.80,0.5784) (1.40,0.5784) (1.40,0.8376) (0.80,0.8376)} -- cycle;
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(3.7,0.5784) (4.3,0.5784) (4.3,0.8376) (3.7,0.8376)} -- cycle;
+  \draw[black!35, thin, densely dotted] (axis cs:1.40,0.8376) -- (axis cs:3.7,0.8376);
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(1.40,0.8376) (2.00,0.8376) (2.00,1.4900) (1.40,1.4900)} -- cycle;
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(3.7,0.8376) (4.3,0.8376) (4.3,1.4900) (3.7,1.4900)} -- cycle;
+  \draw[black!35, thin, densely dotted] (axis cs:2.00,1.4900) -- (axis cs:3.7,1.4900);
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(2.00,1.4900) (2.60,1.4900) (2.60,1.8356) (2.00,1.8356)} -- cycle;
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(3.7,1.4900) (4.3,1.4900) (4.3,1.8356) (3.7,1.8356)} -- cycle;
+  \draw[black!35, thin, densely dotted] (axis cs:2.60,1.8356) -- (axis cs:3.7,1.8356);
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(2.60,1.8356) (3.20,1.8356) (3.20,2.2244) (2.60,2.2244)} -- cycle;
+  \addplot[draw=figR, thin, fill=figR!15] coordinates {(3.7,1.8356) (4.3,1.8356) (4.3,2.2244) (3.7,2.2244)} -- cycle;
+  \draw[black!35, thin, densely dotted] (axis cs:0.20,0.3624) -- (axis cs:3.7,0.3624);
+  \draw[black!35, thin, densely dotted] (axis cs:3.20,2.2244) -- (axis cs:3.7,2.2244);
+  \addplot[figB, very thick, domain=0.2:1.7, samples=40] {0.3+0.3*x+0.06*x^2};
+  \addplot[figB, very thick, domain=1.7:3.2, samples=40] {0.65+0.3*x+0.06*x^2};
+  \addplot[only marks, mark=*, mark size=1.5pt, mark options={fill=white, draw=figB, thick}] coordinates {(1.7,0.9834)};
+  \addplot[only marks, mark=*, mark size=1.5pt, figB] coordinates {(1.7,1.3334)};
+  \draw[decorate, decoration={brace, amplitude=4pt}, thin] (axis cs:4.38,2.2244) -- (axis cs:4.38,0.3624) node[midway, right=4pt, font=\scriptsize, align=left] {$f(b) - f(a)$};
+  \draw[decorate, decoration={brace, amplitude=3pt}, thin] (axis cs:3.7,2.2744) -- (axis cs:4.3,2.2744) node[midway, above=4pt, font=\scriptsize] {$\frac{b-a}{n}$};
+  \node[font=\small, figB] at (axis cs:2.85,2.35) {$f$};
+\end{axis}
+\end{tikzpicture}

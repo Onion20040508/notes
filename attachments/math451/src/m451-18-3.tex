@@ -1,0 +1,16 @@
+% Figure from MATH 451 notes, section 18. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.40\textwidth, clip=false,
+  xmin=0, xmax=2.15, ymin=0, ymax=1.45,
+  xtick={0,0.6235,1.6235,2}, xticklabels={$0$,$x_0$,$x_0+1$,$2$},
+  ytick={0.3}, yticklabels={$f(0) = f(2)$}, xlabel={}]
+  \addplot[black!40, dashed, thin] coordinates {(0,0.3) (2,0.3)};
+  \addplot[figB, very thick, domain=0:2, samples=200] {0.3+0.8*x*(2-x)+0.25*sin(deg(3*pi*x))};
+  \draw[black!50, dotted] (axis cs:0.6235,0) -- (axis cs:0.6235,0.8878);
+  \draw[black!50, dotted] (axis cs:1.6235,0) -- (axis cs:1.6235,0.8878);
+  \draw[figR, thick] (axis cs:0.6235,0.8878) -- (axis cs:1.6235,0.8878);
+  \addplot[only marks, mark=*, mark size=1.6pt, figR] coordinates {(0.6235,0.8878) (1.6235,0.8878)};
+  \node[font=\scriptsize, figR, anchor=north] at (axis cs:0.86,0.865) {length $1$};
+  \node[font=\small, figB, anchor=west] at (axis cs:1.72,1.0) {$f$};
+\end{axis}
+\end{tikzpicture}

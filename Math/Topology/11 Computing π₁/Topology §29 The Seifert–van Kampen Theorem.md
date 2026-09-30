@@ -167,14 +167,14 @@ tags: [topology, math590]
 ^ex-29-1
 
 > [!remark]- Connections
-> - The same result via the generation theorem: [[Sⁿ is Simply Connected for n ≥ 2|$S^n$ is Simply Connected for $n \geq 2$]].
+> - The same result via the generation theorem: $S^n$ is Simply Connected for $n \geq 2$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]]).
 
 > [!example] Example §29.2: $\pi_1(S^1 \vee S^1) \cong \mathbb{Z} * \mathbb{Z}$ (The Figure Eight)
 > Let $X = S^1 \vee S^1$ be the [[Topology §28 Fundamental Group of Some Surfaces#^def-28-4|figure eight]] with junction point $p$. Choose open neighborhoods:
 > - $A$ = the left circle plus a small open arc extending past $p$ into the right circle.
 > - $B$ = the right circle plus a small open arc extending past $p$ into the left circle.
 >
-> Then $A$ and $B$ are open and path-connected. Each [[Topology §26 Deformation Retracts and Homotopy Type#^cor-26-12|deformation retracts onto its respective circle]], so [[Fundamental Group of the Circle|$\pi_1(A) \cong \pi_1(B) \cong \mathbb{Z}$]].
+> Then $A$ and $B$ are open and path-connected. Each [[Topology §26 Deformation Retracts and Homotopy Type#^cor-26-12|deformation retracts onto its respective circle]], so $\pi_1(A) \cong \pi_1(B) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]).
 >
 > The intersection $A \cap B$ is a small open cross at $p$, which is contractible (star-shaped). So $A \cap B$ is simply connected.
 >
@@ -192,10 +192,10 @@ tags: [topology, math590]
 *The open sets of Example §29.2. $A$ (blue) is the left circle plus short open arcs into the right circle; $B$ (red) is its mirror image. Their intersection (green) is the open cross at $p$, which is contractible, so van Kampen gives the free product $\mathbb{Z} * \mathbb{Z}$.*
 
 > [!remark]- Connections
-> - $\mathbb{Z} * \mathbb{Z} \cong F_2$ algebraically: [[Topology §21 Algebra Prerequisites꞉ Groups#^ex-21-4|$\mathbb{Z} * \mathbb{Z} \cong F_2$]].
+> - $\mathbb{Z} * \mathbb{Z} \cong F_2$ algebraically: $\mathbb{Z} * \mathbb{Z} \cong F_2$ ([[Topology §21 Algebra Prerequisites꞉ Groups#^ex-21-4|Ex. §21.4]]).
 
 > [!example] Example §29.3: $\pi_1(S^1 \vee S^1 \vee \cdots \vee S^1) \cong F_n$
-> By induction, the wedge of $n$ circles has $\pi_1 \cong \mathbb{Z} * \cdots * \mathbb{Z} = F_n$, the [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-10|free group on $n$ generators]].
+> By induction, the wedge of $n$ circles has $\pi_1 \cong \mathbb{Z} * \cdots * \mathbb{Z} = F_n$, the free group on $n$ generators ([[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-10|Def. §21.10]]).
 
 ^ex-29-3
 
@@ -252,7 +252,7 @@ tags: [topology, math590]
 >
 > **The 2-cell principle.** In the torus $S^1 \times S^1$, the interior of the fundamental square is a 2-cell. This 2-cell provides the room to continuously sweep one loop past the other — the homotopy $a * b \simeq b * a$ needs a 2-dimensional region to pass through. That room *is* the commutativity relation $aba^{-1}b^{-1} = e$.
 >
-> In the [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|figure eight $S^1 \vee S^1$]], there is no 2-cell. The space is 1-dimensional — two circles meeting at a point. There is no room to slide one loop past the other, so $ab \neq ba$. The absence of a 2-cell is the absence of a relation. This is why the [[Topology §23 The Fundamental Group#^thm-23-7|product gives $\times$]] (with its commutativity relation) and the wedge gives $*$ (with no relations).
+> In the figure eight $S^1 \vee S^1$ ([[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|Ex. §29.2]]), there is no 2-cell. The space is 1-dimensional — two circles meeting at a point. There is no room to slide one loop past the other, so $ab \neq ba$. The absence of a 2-cell is the absence of a relation. This is why the product gives $\times$ ([[Topology §23 The Fundamental Group#^thm-23-7|§23.7]]) (with its commutativity relation) and the wedge gives $*$ (with no relations).
 
 ^rem-29-6
 
@@ -282,7 +282,7 @@ tags: [topology, math590]
 *Example §29.5 with $P^2$ drawn as the disk whose antipodal boundary points are glued: both boundary arcs are $c$, and their endpoints (black) become one point. $U$ (red) is the small disk around the center; $V$ (blue) is everything except the center (hollow). Pushed out to the boundary (gray arrows), the loop $t$ (green) runs around the whole boundary circle and reads $cc = c^2$, so the relation is $c^2 = e$.*
 
 > [!remark]- Connections
-> - The covering-space computation of the same group: [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2|$\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$]].
+> - The covering-space computation of the same group: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$ ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2|§28.2]]).
 
 > [!example] Example §29.6: $n$-Fold Dunce Cap
 > Let $X = B^2 / {\sim}$ where $x \sim e^{2\pi i / n} x$ for all $x \in \partial B^2$ — we identify each boundary point with its rotations by $2\pi/n$. This collapses $\partial B^2$ from $n$ equal arcs down to a single arc, i.e., a circle.
@@ -299,7 +299,7 @@ tags: [topology, math590]
 > \pi_1(X) \cong \langle\, a \mid a^n \,\rangle \cong \mathbb{Z}/n\mathbb{Z}.
 > $$
 >
-> Note: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-5|$P^2$]] is the special case $n = 2$.
+> Note: $P^2$ ([[Topology §29 The Seifert–van Kampen Theorem#^ex-29-5|Ex. §29.5]]) is the special case $n = 2$.
 
 ^ex-29-6
 
@@ -307,7 +307,7 @@ tags: [topology, math590]
 *The $n$-fold dunce cap for $n = 3$: the boundary is cut into three arcs, all labeled $a$ with the same orientation, and the three black points become one. $U$, $V$ and $t$ are as for $P^2$. Pushed out to the boundary, $t$ reads $aaa = a^3$, which gives $\pi_1 \cong \mathbb{Z}/3\mathbb{Z}$.*
 
 > [!remark]- Connections
-> - $\langle a \mid a^n \rangle \cong \mathbb{Z}/n\mathbb{Z}$: [[Topology §21 Algebra Prerequisites꞉ Groups#^ex-21-7|$\mathbb{Z}/n\mathbb{Z}$]].
+> - $\langle a \mid a^n \rangle \cong \mathbb{Z}/n\mathbb{Z}$: $\mathbb{Z}/n\mathbb{Z}$ ([[Topology §21 Algebra Prerequisites꞉ Groups#^ex-21-7|Ex. §21.7]]).
 
 ## Fundamental Group of Surfaces
 
@@ -322,21 +322,21 @@ tags: [topology, math590]
 > ![[m590-29-1.svg]]
 > *Torus: the square with boundary word $aba^{-1}b^{-1}$, read counterclockwise from the bottom-left corner. Both $a$-edges (blue) point right and both $b$-edges (red) point up, so opposite edges are glued without a twist; the gluings chain all four corners into the single point $x_0$.*
 >
-> **Projective plane** ($abab$): opposite edges identified with *reversed* orientation. All four corners become one point.
+> **Projective plane** ($abab$): opposite edges identified with *reversed* orientation. The corners become two points: $(0,0) \sim (1,1)$ and $(1,0) \sim (0,1)$.
 >
 > ![[m590-29-2.svg]]
 > *Projective plane: the square with boundary word $abab$. Every arrow points counterclockwise, so each pair of opposite edges is glued with a half-twist. The corners fall into two classes: the green corners (bottom-left, top-right) become one point $x_0$ and the orange corners (bottom-right, top-left) another point $x_1$, and the boundary becomes a single circle made of the edges $a$ and $b$.*
 >
-> Note: the $a$-arrows on top and bottom point in the *same* direction (both left-to-right), but the top edge is traversed right-to-left when reading the boundary counterclockwise. The $b$-arrows on left and right both point *upward*. This means opposite edges are identified with reversed orientation.
+> Note: the arrows run *around* the square: the bottom $a$-arrow points right and the top one points left; the right $b$-arrow points up and the left one points down. So reading the boundary counterclockwise traverses every edge along its arrow, and each pair of opposite edges is identified with reversed orientation.
 >
 > **Klein bottle** ($aba^{-1}b$): $a$-edges same orientation, $b$-edges reversed orientation.
 >
 > ![[m590-29-3.svg]]
 > *Klein bottle: the square with boundary word $aba^{-1}b$. Both $a$-edges (blue) point right, so they are glued without a twist as in the torus; the $b$-edges (red) point in opposite directions (right edge up, left edge down), so they are glued with a half-twist. All four corners become the single point $x_0$.*
 >
-> Note: the $a$-edges (top and bottom) have *opposite* arrows (same-direction identification, like the torus). The $b$-edges (left and right) have arrows pointing the *same* way (upward) — reversed identification. This is what distinguishes the Klein bottle from the torus.
+> Note: the $a$-edges (top and bottom) have arrows pointing the *same* way (both left-to-right) — same-direction identification, like the torus. The $b$-edges (left and right) have *opposite* arrows (right edge up, left edge down) — reversed identification. This is what distinguishes the Klein bottle from the torus.
 >
-> **Vertex identification:** In each case above, the edge identifications chain all four corners together: $(0,0) \sim (1,0)$ via $a$, then $(1,0) \sim (1,1)$ via $b$, then $(1,1) \sim (0,1)$ via $a$, then $(0,1) \sim (0,0)$ via $b$. So all four corners become a single point $x_0$, and the boundary $\partial P$ becomes a wedge of circles at $x_0$.
+> **Vertex identification:** For the torus, the edge identifications chain all four corners together: $(0,0) \sim (1,0)$ via $b$, then $(1,0) \sim (1,1)$ via $a$, then $(1,1) \sim (0,1)$ via $b$, then $(0,1) \sim (0,0)$ via $a$. For the Klein bottle: $(0,0) \sim (0,1)$ via $a$, then $(0,1) \sim (1,0)$ via $b$, then $(1,0) \sim (1,1)$ via $a$, then $(1,1) \sim (0,0)$ via $b$. So in these two cases all four corners become a single point $x_0$, and the boundary $\partial P$ becomes a wedge of circles at $x_0$. For the projective plane $abab$, both the $a$-edges and the $b$-edges give only $(0,0) \sim (1,1)$ and $(1,0) \sim (0,1)$, so the corners form two classes $\{(0,0), (1,1)\}$ and $\{(1,0), (0,1)\}$, i.e. two points $x_0 \neq x_1$, and $\partial P$ becomes a single circle made of the edges $a$ and $b$.
 
 ^ex-29-7
 
@@ -359,7 +359,7 @@ tags: [topology, math590]
 >
 > Apply [[Seifert–van Kampen Theorem|van Kampen]] to $X = U \cup V$ where:
 > - $U$ = image of the interior of $P$ (open, contractible, so $\pi_1(U) = 0$).
-> - $V$ = open neighborhood of $\pi(\partial P)$, which deformation retracts onto $\partial P / {\sim}$ = wedge of $k$ circles. So [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-3|$\pi_1(V) \cong \langle a_1, \ldots, a_k \rangle = F_k$]] (free group).
+> - $V$ = open neighborhood of $\pi(\partial P)$, which deformation retracts onto $\partial P / {\sim}$ = wedge of $k$ circles. So $\pi_1(V) \cong \langle a_1, \ldots, a_k \rangle = F_k$ ([[Topology §29 The Seifert–van Kampen Theorem#^ex-29-3|Ex. §29.3]]) (free group).
 >
 > The intersection $U \cap V$ is an open annular strip around $\pi(\partial P)$, which has $\pi_1(U \cap V) \cong \mathbb{Z}$, generated by the circle $c$ running around $\partial P$ once.
 >
@@ -382,10 +382,12 @@ tags: [topology, math590]
 >
 > | **Surface** | **Boundary word** | $\pi_1$ |
 > |---|---|---|
-> | Torus $T^2$ | $aba^{-1}b^{-1}$ | [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-4\|$\langle a, b \mid aba^{-1}b^{-1}\rangle \cong \mathbb{Z} \times \mathbb{Z}$]] |
-> | Projective plane $P^2$ | $abab$ | $\langle a, b \mid abab \rangle \cong \mathbb{Z}/2\mathbb{Z}$ |
+> | Torus $T^2$ | $aba^{-1}b^{-1}$ | $\langle a, b \mid aba^{-1}b^{-1}\rangle \cong \mathbb{Z} \times \mathbb{Z}$ ([[Topology §29 The Seifert–van Kampen Theorem#^ex-29-4\|Ex. §29.4]]) |
+> | Projective plane $P^2$ | $aa$ | $\langle a \mid a^2 \rangle \cong \mathbb{Z}/2\mathbb{Z}$ |
 > | Klein bottle $K$ | $aba^{-1}b$ | $\langle a, b \mid aba^{-1}b \rangle$ (non-abelian) |
 > | Double torus $\Sigma_2$ | $a_1 b_1 a_1^{-1} b_1^{-1} a_2 b_2 a_2^{-1} b_2^{-1}$ | $\langle a_1, a_2, b_1, b_2 \mid a_1 b_1 a_1^{-1} b_1^{-1} a_2 b_2 a_2^{-1} b_2^{-1} \rangle$ (non-abelian) |
+>
+> For $P^2$ we use the one-vertex scheme $aa$ (a $2$-gon whose two edges are glued, i.e. the disk with antipodal boundary points identified). The square scheme $abab$ of [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-7|Example §29.7]] has two vertex classes, so [[Topology §29 The Seifert–van Kampen Theorem#^thm-29-3|Theorem §29.3]] does not apply to it directly.
 >
 > The double torus has $\pi_1$ non-abelian, confirming the [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-5|result from §28]] (where we proved non-abelianness via covering spaces, without computing the exact group).
 

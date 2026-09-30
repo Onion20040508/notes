@@ -49,7 +49,7 @@ tags: [linear-algebra]
 
 %% ex:8.3-fig %%
 > [!example] The chain of null spaces, pictured
-> For an operator on an $8$-dimensional space whose nilpotent part at $0$ has Jordan blocks of sizes $3,2,1$ (and which is invertible on a complementary $2$-dimensional piece), $\dim\nullsp T^k$ grows $0,3,5,6$ and then stops. The jumps $3,2,1$ count the blocks of size $\ge1,\ge2,\ge3$.
+> For an operator on an $8$-dimensional space whose nilpotent part at $0$ has Jordan blocks of sizes $3,2,1$ (and which is invertible on a complementary $2$-dimensional piece), $\dim\nullsp T^k$ grows $0,3,5,6$ and then stops. The jumps $3,2,1$ (red) count the blocks of size $\ge1,\ge2,\ge3$.
 >
 > ![[ladr-8.3-null-chain.svg|420]]
 
@@ -68,6 +68,12 @@ tags: [linear-algebra]
 > $T(z_1,z_2,z_3)=(4z_2,0,5z_3)$ on $\F^3$: $\nullsp T=\{(z_1,0,0)\}$ and $\range T=\{(z_1,0,z_3)\}$ intersect, so $\nullsp T+\range T$ is not direct (and not $\F^3$). But $T^3(z_1,z_2,z_3)=(0,0,125z_3)$, so $\nullsp T^3=\{(z_1,z_2,0)\}$, $\range T^3=\{(0,0,z_3)\}$, and $\F^3=\nullsp T^3\oplus\range T^3$, as 8.4 promises.
 
 ^ladr-8-6
+
+%% ex:8.6-fig %%
+> [!example] Null spaces and ranges of $T$ and $T^3$, pictured
+> Drawn over $\R$. Left: $\nullsp T$ (the $z_1$-axis) lies inside $\range T$ (the $z_1z_3$-plane), so the sum is not direct. Right: $\nullsp T^3$ (the $z_1z_2$-plane) and $\range T^3$ (the $z_3$-axis) are complementary, as [[Linear Algebra 8A Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]] promises. They are $G(0,T)$ and $G(5,T)$ of [[Linear Algebra 8B Generalized Eigenspace Decomposition#^ladr-8-21|8.21]].
+>
+> ![[ladr-8.6-null-range.svg|460]]
 
 > [!definition] 8.8 Generalized eigenvector
 > For an eigenvalue $\lambda$ of $T\in\Lin(V)$, a *generalized eigenvector* for $\lambda$ is a $v\ne0$ with $(T-\lambda I)^kv=0$ for some $k\ge1$. Equivalently $(T-\lambda I)^{\dim V}v=0$ ([[Linear Algebra 8A Generalized Eigenvectors and Nilpotent Operators#^ladr-8-1|8.1]], [[Linear Algebra 8A Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]]).

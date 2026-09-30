@@ -88,19 +88,19 @@ tags: [topology, math590]
 *Left: in a convex $X$, each point $f(s)$ of the loop slides straight to $x_0$ (red segments), and the intermediate loops $H(\cdot,t)$ (dashed) shrink onto $x_0$; convexity keeps every segment inside $X$. Right: the same formula fails in $\mathbb{R}^2 \setminus \{0\}$. For the point $f(s)$ opposite $x_0$ the segment runs through the missing origin, so $H(s,\tfrac12) = 0$ is not in the space (see [[Topology §22 Homotopy of Paths#^rem-22-3|the convexity remark in §22]]).*
 
 > [!remark]- Connections
-> - Closed balls specifically: [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|$B^n$ is Convex and Simply Connected]].
+> - Closed balls specifically: $B^n$ is Convex and Simply Connected ([[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-5|§26.5]]).
 
 > [!remark] Remark: What $\pi_1$ Cannot See
 > $\pi_1(\mathbb{R}^n) = \{e\}$ for all $n$, so the fundamental group alone cannot distinguish $\mathbb{R}^2$ from $\mathbb{R}^3$. But we don't apply $\pi_1$ to $\mathbb{R}^n$ directly—we apply it to $\mathbb{R}^n$ *minus a point*. The punctured spaces have different loop structures:
 > - $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$: loops around the puncture cannot contract.
 > - $\pi_1(\mathbb{R}^3 \setminus \{0\}) = \{e\}$: every loop can “go around” the missing point in 3D.
 >
-> If $\mathbb{R}^2 \cong \mathbb{R}^3$, then $\mathbb{R}^2 \setminus \{0\} \cong \mathbb{R}^3 \setminus \{0\}$, which would force $\mathbb{Z} \cong \{e\}$—a contradiction. The proof of [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]] (which gives $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$ since $\mathbb{R}^2 \setminus \{0\}$ [[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-7|deformation retracts onto $S^1$]]) is the main goal of the next several sections.
+> If $\mathbb{R}^2 \cong \mathbb{R}^3$, then $\mathbb{R}^2 \setminus \{0\} \cong \mathbb{R}^3 \setminus \{0\}$, which would force $\mathbb{Z} \cong \{e\}$—a contradiction. The proof of $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]) (which gives $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \mathbb{Z}$ since $\mathbb{R}^2 \setminus \{0\}$ deformation retracts onto $S^1$ ([[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-7|Ex. §26.7]])) is the main goal of the next several sections.
 
 ^rem-23-2
 
 > [!remark]- Connections
-> - $\pi_1(\mathbb{R}^3 \setminus \{0\})$: [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|$\pi_1(S^n) \cong \pi_1(\mathbb{R}^{n+1} \setminus \{0\})$]] together with [[Sⁿ is Simply Connected for n ≥ 2|$S^n$ is Simply Connected for $n \geq 2$]].
+> - $\pi_1(\mathbb{R}^3 \setminus \{0\})$: $\pi_1(S^n) \cong \pi_1(\mathbb{R}^{n+1} \setminus \{0\})$ ([[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|§26.2]]) together with $S^n$ is Simply Connected for $n \geq 2$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]]).
 
 ## Dependence on Basepoint
 
@@ -233,7 +233,7 @@ tags: [topology, math590]
 *Uses:* [[Functoriality of π₁|§23.5]], [[Topology §23 The Fundamental Group#^prop-23-4|§23.4]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-4|§21.4]]
 
 > [!remark]- Connections
-> - Weakened to homotopy equivalences: [[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-15|Homotopy Equivalence Induces Isomorphism on $\pi_1$]].
+> - Weakened to homotopy equivalences: Homotopy Equivalence Induces Isomorphism on $\pi_1$ ([[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-15|§26.15]]).
 > - Used to distinguish surfaces: [[Topology §28 Fundamental Group of Some Surfaces#^cor-28-6|Four Topologically Distinct Surfaces]].
 
 > [!remark] Remark
@@ -256,9 +256,9 @@ tags: [topology, math590]
 
 > [!remark] Remark: Upcoming: Computing Fundamental Groups
 > We will develop techniques to compute the fundamental groups of spaces including:
-> - $S^1$ (the circle) — [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]], the central computation.
-> - $S^n$ ($n$-sphere, $n \geq 2$) — [[Sⁿ is Simply Connected for n ≥ 2|$\pi_1(S^n) = 0$]], simply connected.
-> - $S^1 \times S^1$ (torus) — [[Topology §23 The Fundamental Group#^cor-23-8|$\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$]].
+> - $S^1$ (the circle) — $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]), the central computation.
+> - $S^n$ ($n$-sphere, $n \geq 2$) — $\pi_1(S^n) = 0$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]]), simply connected.
+> - $S^1 \times S^1$ (torus) — $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$ ([[Topology §23 The Fundamental Group#^cor-23-8|§23.8]]).
 > - $S^1 \times \mathbb{R}$ (infinite cylinder) — $\pi_1 \cong \mathbb{Z}$.
 > - $B^2 \times S^1$ (solid torus) — $\pi_1 \cong \mathbb{Z}$.
 > - $\mathbb{R}^2 \setminus \{0\}$ (punctured plane) — $\pi_1 \cong \mathbb{Z}$.
@@ -356,7 +356,7 @@ tags: [topology, math590]
 *Uses:* [[Topology §23 The Fundamental Group#^thm-23-7|§23.7]], [[Topology §21 Algebra Prerequisites꞉ Groups#^thm-21-7|§21.7]], [[Fundamental Group of the Circle|§24.10]]
 
 > [!remark]- Connections
-> - Second computation via van Kampen: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-4|$\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$ via van Kampen]].
+> - Second computation via van Kampen: $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$ via van Kampen ([[Topology §29 The Seifert–van Kampen Theorem#^ex-29-4|Ex. §29.4]]).
 > - Covering $\mathbb{R}^2 \to T^2$: [[Topology §24 Covering Spaces#^ex-24-3|Example §24.3]].
 
 > [!remark] Remark

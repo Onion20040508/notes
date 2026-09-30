@@ -95,7 +95,7 @@ tags: [topology, math590]
 ^def-16-3
 
 > [!remark]- Connections
-> - MATH 451: [[Bolzano–Weierstrass Theorem]] (every bounded sequence in $\mathbb{R}$ has a convergent subsequence) and [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^thm-13-3|Bolzano–Weierstrass in $\mathbb{R}^n$]].
+> - MATH 451: [[Bolzano–Weierstrass Theorem]] (every bounded sequence in $\mathbb{R}$ has a convergent subsequence) and Bolzano–Weierstrass in $\mathbb{R}^n$ ([[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^thm-13-3|§13.3]]).
 
 > [!example] Example §16.2
 > In $\mathbb{R}$: $x_n = (1, 0, 1, 0, 1, 0, \ldots)$ has a convergent subsequence $y_n = (0, 0, 0, \ldots)$.
@@ -192,7 +192,7 @@ To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas
 > \text{Compact} \overset{\text{Thm 16.1}}{\Longrightarrow} \text{Limit point compact} \overset{\text{shrinking balls}}{\Longrightarrow} \text{Sequentially compact} \overset{\text{Lebesgue + total bounded}}{\Longrightarrow} \text{Compact}
 > $$
 >
-> ([[Topology §16 Limit Point Compactness#^thm-16-1|Theorem §16.1]], [[Topology §16 Limit Point Compactness#^pf-16-2|proof of $(2) \Rightarrow (3)$]], [[Topology §16 Limit Point Compactness#^pf-16-2-2|proof of $(3) \Rightarrow (1)$]].)
+> ([[Topology §16 Limit Point Compactness#^thm-16-1|Theorem §16.1]], proof of $(2) \Rightarrow (3)$ ([[Topology §16 Limit Point Compactness#^pf-16-2|proof]]), proof of $(3) \Rightarrow (1)$ ([[Topology §16 Limit Point Compactness#^pf-16-2-2|proof]]).)
 >
 > The metric is essential at every step: $(2) \Rightarrow (3)$ uses shrinking balls $B(x, 1/i)$ to extract subsequences, and $(3) \Rightarrow (1)$ uses the [[Lebesgue Number Lemma|Lebesgue number lemma]] (diameter estimates) and [[Topology §16 Limit Point Compactness#^lem-16-4|total boundedness]] (finite $\varepsilon$-ball covers). None of these arguments work in a general topological space without a metric.
 

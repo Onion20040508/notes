@@ -1,0 +1,30 @@
+% Figure from MATH 451 notes, section 19. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.44\textwidth, height=0.40\textwidth, clip=false,
+  xmin=0, xmax=3.7, ymin=0, ymax=42, xtick={1,2,3}, ytick=\empty,
+  title={$f(x) = x^3$}, title style={font=\small, figB, yshift=-2pt}, xlabel={}]
+  \addplot[figB, very thick, domain=0:3.45, samples=100] {x^3};
+  \draw[black!50, dashed, thin] (axis cs:2,8) -- (axis cs:2.5,8);
+  \draw[figR, thick] (axis cs:2.5,8) -- (axis cs:2.5,15.625);
+  \draw[black!50, dashed, thin] (axis cs:3,27) -- (axis cs:3.3333,27);
+  \draw[figR, thick] (axis cs:3.3333,27) -- (axis cs:3.3333,37.037);
+  \addplot[only marks, mark=*, mark size=1.4pt, figR] coordinates {(2,8) (2.5,15.625) (3,27) (3.3333,37.037)};
+  \node[font=\scriptsize, black!60, anchor=north] at (axis cs:3.17,26.5) {$\tfrac1n$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:3.37,32) {$\geq 3$};
+  \node[font=\scriptsize, black!60, anchor=north] at (axis cs:2.25,7.5) {$\tfrac1n$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:2.54,11.8) {$\geq 3$};
+\end{axis}
+\end{tikzpicture}\quad
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.50\textwidth, height=0.40\textwidth, clip=false,
+  axis x line=middle, axis y line=left, xmin=0, xmax=1.08, ymin=-1.3, ymax=1.45,
+  xtick={1}, ytick={-1,1}, yticklabel style={font=\scriptsize},
+  title={$g(x) = \sin\frac{1}{x^2}$}, title style={font=\small, figB, yshift=-2pt}]
+  \fill[figB!40] (axis cs:0,-1) rectangle (axis cs:0.16,1);
+  \addplot[figB, line width=0.5pt, domain=0.16:1, samples=2500] {sin(deg(1/x^2))};
+  \addplot[only marks, mark=*, mark size=1.4pt, figR] coordinates {(0.3989,0) (0.2821,0) (0.2303,0)};
+  \addplot[only marks, mark=*, mark size=1.4pt, figR] coordinates {(0.3568,1) (0.2659,1) (0.2215,1)};
+  \node[font=\scriptsize, figR, anchor=south west] at (axis cs:0.36,1.03) {$g(y_n) = 1$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.66,-0.55) {on the axis: $g(x_n) = 0$};
+\end{axis}
+\end{tikzpicture}

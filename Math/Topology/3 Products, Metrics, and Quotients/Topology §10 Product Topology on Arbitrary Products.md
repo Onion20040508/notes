@@ -19,7 +19,7 @@ tags: [topology, math590]
 ^def-10-1
 
 > [!remark]- Connections
-> - The two-factor case: [[Topology §4 Product Topology#^def-4-1|Product Topology on $X \times Y$]], with basis from [[Topology §4 Product Topology#^thm-4-1|Theorem §4.1]].
+> - The two-factor case: Product Topology on $X \times Y$ ([[Topology §4 Product Topology#^def-4-1|Def. §4.1]]), with basis from [[Topology §4 Product Topology#^thm-4-1|Theorem §4.1]].
 > - Contrast: [[Topology §10 Product Topology on Arbitrary Products#^def-10-2|Box Topology]].
 
 > [!remark] Remark: Checking the Basis Axioms

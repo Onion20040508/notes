@@ -3,7 +3,7 @@
   hx/.style={variable=\t, samples=30, smooth},
   op/.style={circle, inner sep=1.3pt, fill=white, draw=#1, thick}, op/.default=figR]
   \def\R{1.5}\def\r{0.2}\def\h{1.25}\def\yo{0.2}
-  % the missing piece (-1/4, 0), not in R_+
+  % the missing piece (-1/4, 0], not in R_+ = (0, oo)
   \draw[black!40, thick, dashed, hx, domain=-0.25:0]
     plot ({\R*sin(360*\t)}, {-\r*cos(360*\t)+\h*\t+\yo});
   % back halves
@@ -19,15 +19,18 @@
     \node[op] at ({\R}, {\h*(\n+0.25)+\yo}) {};
     \node[font=\scriptsize, figR, anchor=west] at ({\R+0.1}, {\h*(\n+0.25)+\yo}) {$V_{\n}$};
   }
-  % the defective half-slice V_0 = [0, 1/4)
+  % the defective half-slice V_0 = (0, 1/4)
   \draw[figO, very thick, hx, domain=0:0.25]
     plot ({\R*sin(360*\t)}, {-\r*cos(360*\t)+\h*\t+\yo});
   \node[op=figO] at ({\R}, {\h*0.25+\yo}) {};
-  \node[font=\scriptsize, figO, anchor=west] at ({\R+0.1}, {\h*0.25+\yo}) {$V_0 = [0, \tfrac14)$};
+  \node[font=\scriptsize, figO, anchor=west] at ({\R+0.1}, {\h*0.25+\yo}) {$V_0 = (0, \tfrac14)$};
   % fiber
   \draw[black!40, dotted, thin] (0,-1.55) -- (0,{\h*2-\r+\yo});
-  \foreach \n in {0,1,2} {
+  \foreach \n in {1,2} {
     \fill (0,{\h*\n-\r+\yo}) circle (1.5pt);
+  }
+  \node[op=black] at (0,{-\r+\yo}) {};
+  \foreach \n in {0,1,2} {
     \node[font=\scriptsize, anchor=south west, inner sep=1.5pt] at (0.02,{\h*\n-\r+\yo+0.02}) {$\n$};
   }
   \node[font=\scriptsize, black!55, anchor=north] at (-0.8,-0.2) {not in $\mathbb{R}_+$};

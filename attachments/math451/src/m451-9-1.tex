@@ -1,0 +1,19 @@
+% Figure from MATH 451 notes, section 9. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.78\textwidth, height=0.46\textwidth,
+  axis x line=middle, xmin=0, xmax=21, ymin=-4.0, ymax=4.4, clip=false,
+  xtick={6}, xticklabels={$N$}, x tick label style={anchor=north west, xshift=-1pt},
+  ytick={-3.4,0.5,1.5,2.5,3.4},
+  yticklabels={$-M$,$s-1$,$s$,$s+1$,$M$}, xlabel={$n$}, xlabel style={anchor=west}]
+  \addplot[draw=none, fill=figB!12] coordinates {(0,0.5) (21,0.5) (21,2.5) (0,2.5)};
+  \addplot[black!55, thin] coordinates {(0,1.5) (21,1.5)};
+  \addplot[figR, thin, dashed] coordinates {(0,3.4) (21,3.4)};
+  \addplot[figR, thin, dashed] coordinates {(0,-3.4) (21,-3.4)};
+  \draw[black!55, dashed] (axis cs:6,-4.0) -- (axis cs:6,4.4);
+  \addplot[only marks, mark=*, mark size=1.5pt, black!45] coordinates {(1,-2.8) (3,0.1) (4,2.9) (5,-1.2)};
+  \addplot[only marks, mark=*, mark size=1.8pt, figR] coordinates {(2,3.4)};
+  \addplot[only marks, mark=*, mark size=1.5pt, figB] coordinates {(6,2.2) (7,0.8) (8,2.0) (9,1.0) (10,1.9) (11,1.1) (12,1.8) (13,1.2) (14,1.75) (15,1.28) (16,1.7) (17,1.32) (18,1.66) (19,1.36) (20,1.62)};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:6.4,4.0) {$M = \max\{|s_1|,\ldots,|s_N|,\ |s|+1\}$};
+  \node[font=\scriptsize, figB, anchor=west] at (axis cs:10,3.0) {$n \geq N$: $|s_n| < |s|+1$};
+\end{axis}
+\end{tikzpicture}

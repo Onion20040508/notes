@@ -1,0 +1,16 @@
+% Figure from MATH 451 notes, section 36. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.66\textwidth, height=0.38\textwidth, clip=false,
+  xmin=0, xmax=8.4, ymin=0, ymax=1.2,
+  xtick={1,4,8}, ytick={1}, xlabel={}]
+  \addplot[draw=none, fill=figB!12, domain=1:8.2, samples=80] {x^(-2)} \closedcycle;
+  \addplot[figR, very thick, domain=1:8.2, samples=80] {x^(-0.5)};
+  \addplot[black!55, very thick, dashed, domain=1:8.2, samples=80] {1/x};
+  \addplot[figB, very thick, domain=1:8.2, samples=80] {x^(-2)};
+  \draw[black!40, thin, dotted] (axis cs:1,0) -- (axis cs:1,1);
+  \node[font=\scriptsize, figR, anchor=south] at (axis cs:6.6,0.45) {$p = \frac12$: $\int_1^\infty = +\infty$};
+  \node[font=\scriptsize, black!65, anchor=south] at (axis cs:5.9,0.2) {$p = 1$: $+\infty$};
+  \node[font=\scriptsize, figB!85!black, anchor=west] at (axis cs:3.3,0.95) {$p = 2$: shaded area $= \frac{1}{p-1} = 1$};
+  \draw[figB!70, -stealth, thin] (axis cs:3.4,0.88) -- (axis cs:1.6,0.12);
+\end{axis}
+\end{tikzpicture}

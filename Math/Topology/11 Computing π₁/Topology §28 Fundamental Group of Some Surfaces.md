@@ -56,7 +56,7 @@ tags: [topology, math590]
 ^thm-28-2
 
 > [!proof]+ Proof
-> The quotient map $p: S^2 \to P^2$ is a covering map ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-1|proved above]]). Since $S^2$ is simply connected ([[Sⁿ is Simply Connected for n ≥ 2|$\pi_1(S^2) = 0$, proved in §27]]), the [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]]
+> The quotient map $p: S^2 \to P^2$ is a covering map ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-1|proved above]]). Since $S^2$ is simply connected ($\pi_1(S^2) = 0$, proved in §27 ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]])), the [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]]
 >
 > $$
 > \phi: \pi_1(P^2, y_0) \to p^{-1}(y_0)
@@ -73,12 +73,12 @@ tags: [topology, math590]
 *Uses:* [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-1|§28.1]], [[Sⁿ is Simply Connected for n ≥ 2|§27.3]], [[Properties of the Lifting Correspondence|§24.9]]
 
 > [!remark]- Connections
-> - Recomputed with van Kampen: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-5|$\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$ via van Kampen]].
+> - Recomputed with van Kampen: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$ via van Kampen ([[Topology §29 The Seifert–van Kampen Theorem#^ex-29-5|Ex. §29.5]]).
 
 > [!remark] Remark: The Non-Trivial Loop in $P^2$
 > The generator of $\pi_1(P^2)$ is any path in $S^2$ from $x_0$ to $-x_0$ (e.g., half a great circle), projected to $P^2$. This projects to a *loop* in $P^2$ (since $p(x_0) = p(-x_0) = y_0$). It cannot be contracted because its lift in $S^2$ is a path from $x_0$ to $-x_0$, which is not a loop.
 >
-> Traversing this loop twice gives a full great circle in $S^2$, which IS contractible (since [[Sⁿ is Simply Connected for n ≥ 2|$S^2$ is simply connected]]). So the generator has order $2$: $[g]^2 = [e]$.
+> Traversing this loop twice gives a full great circle in $S^2$, which IS contractible (since $S^2$ is simply connected ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]])). So the generator has order $2$: $[g]^2 = [e]$.
 
 ^rem-28-1
 
@@ -104,7 +104,7 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > For $n \geq 2$: $S^n$ is simply connected ([[Sⁿ is Simply Connected for n ≥ 2|§27]]), so the [[Properties of the Lifting Correspondence|lifting correspondence]] $\pi_1(P^n) \to p^{-1}(y_0)$ is a bijection. The fiber has $2$ elements, so $|\pi_1(P^n)| = 2$, giving $\pi_1(P^n) \cong \mathbb{Z}/2\mathbb{Z}$.
 >
-> For $n = 1$: $P^1 = S^1 / (x \sim -x)$. The map $z \mapsto z^2$ is a homeomorphism $P^1 \to S^1$ (it identifies antipodal points on $S^1$ and maps onto $S^1$ bijectively). So [[Topology §23 The Fundamental Group#^cor-23-6|$\pi_1(P^1) \cong \pi_1(S^1)$]] [[Fundamental Group of the Circle|$\cong \mathbb{Z}$]].
+> For $n = 1$: $P^1 = S^1 / (x \sim -x)$. The map $z \mapsto z^2$ is a homeomorphism $P^1 \to S^1$ (it identifies antipodal points on $S^1$ and maps onto $S^1$ bijectively). So $\pi_1(P^1) \cong \pi_1(S^1)$ ([[Topology §23 The Fundamental Group#^cor-23-6|§23.6]]) $\cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]).
 
 ^pf-28-3
 
@@ -143,12 +143,12 @@ tags: [topology, math590]
 ^ex-28-1
 
 > [!remark]- Connections
-> - $\pi_1(S^2 \vee S^2) = 0$: [[Topology §27 The Fundamental Group of Sⁿ#^ex-27-1|Wedge of Two Spheres is Simply Connected]]. $\pi_1$ of a wedge of circles: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-3|$F_n$]].
+> - $\pi_1(S^2 \vee S^2) = 0$: [[Topology §27 The Fundamental Group of Sⁿ#^ex-27-1|Wedge of Two Spheres is Simply Connected]]. $\pi_1$ of a wedge of circles: $F_n$ ([[Topology §29 The Seifert–van Kampen Theorem#^ex-29-3|Ex. §29.3]]).
 
 > [!remark] Remark: Wedge Sum vs. Product
 > The wedge sum $X \vee Y$ and the product $X \times Y$ are very different constructions:
 > - **Topologically:** $X \vee Y$ glues $X$ and $Y$ at a single point; $X \times Y$ takes all pairs $(x, y)$. The wedge sum has $\dim(X \vee Y) = \max(\dim X, \dim Y)$, while $\dim(X \times Y) = \dim X + \dim Y$.
-> - **For $\pi_1$:** The product gives $\pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y)$ ([[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-5|direct product]], always abelian if the factors are; [[Topology §23 The Fundamental Group#^thm-23-7|proved in §23]]). The wedge sum gives $\pi_1(X \vee Y) \cong \pi_1(X) * \pi_1(Y)$ ([[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]], typically non-abelian) when $X$ and $Y$ are “nice” — but proving this requires the [[Topology §29 The Seifert–van Kampen Theorem#^cor-29-2|Seifert-van Kampen theorem (§29)]]. For now, we prove a weaker result: [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|$\pi_1(S^1 \vee S^1)$ is non-abelian]].
+> - **For $\pi_1$:** The product gives $\pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y)$ ([[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-5|direct product]], always abelian if the factors are; [[Topology §23 The Fundamental Group#^thm-23-7|proved in §23]]). The wedge sum gives $\pi_1(X \vee Y) \cong \pi_1(X) * \pi_1(Y)$ ([[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]], typically non-abelian) when $X$ and $Y$ are “nice” — but proving this requires the [[Topology §29 The Seifert–van Kampen Theorem#^cor-29-2|Seifert-van Kampen theorem (§29)]]. For now, we prove a weaker result: $\pi_1(S^1 \vee S^1)$ is non-abelian ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]]).
 
 ^rem-28-3
 
@@ -200,13 +200,13 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 >     2. $p \circ \tilde{\alpha} = \alpha$ (projects back to the original path).
 >
 >     To find a lift, it suffices to exhibit *any* path in $E$ satisfying (1) and (2) — uniqueness guarantees it is the only one.
-> - **[[Topology §24 Covering Spaces#^thm-24-8|Homotopy lifting lemma]]:** If two loops $\alpha \simeq_p \beta$ are path-homotopic in $B$, then their lifts starting at the same point $e_0$ must end at the same point. Equivalently: *[[Topology §24 Covering Spaces#^rem-24-10|different endpoints $\Rightarrow$ the loops are not path-homotopic]].*
+> - **[[Topology §24 Covering Spaces#^thm-24-8|Homotopy lifting lemma]]:** If two loops $\alpha \simeq_p \beta$ are path-homotopic in $B$, then their lifts starting at the same point $e_0$ must end at the same point. Equivalently: *different endpoints $\Rightarrow$ the loops are not path-homotopic ([[Topology §24 Covering Spaces#^rem-24-10|§24]]).*
 >
 > *Our setup:* $B = X$ (figure eight), $E$ = grid-with-circles, $b_0 = x_0$ (junction point), $e_0 = (0,0)$, and $p(0,0) = x_0$. ✓
 >
 > **Lifting $f$ from $(0,0)$.** The loop $f: I \to X$ traverses circle $A$ once, starting and ending at $x_0$. We need to find a path $\tilde{f}$ in $E$ satisfying (1) $\tilde{f}(0) = (0,0)$ and (2) $p \circ \tilde{f} = f$.
 >
-> By construction, $p$ maps the $x$-axis to circle $A$ by wrapping — exactly like the [[Topology §24 Covering Spaces#^thm-24-2|standard covering $\mathbb{R} \to S^1$]]: the segment from $(0,0)$ to $(1,0)$ maps onto $A$, with both endpoints mapping to $x_0$. So define $\tilde{f}(s) = (s, 0)$ for $s \in [0,1]$. Check:
+> By construction, $p$ maps the $x$-axis to circle $A$ by wrapping — exactly like the standard covering $\mathbb{R} \to S^1$ ([[Topology §24 Covering Spaces#^thm-24-2|§24.2]]): the segment from $(0,0)$ to $(1,0)$ maps onto $A$, with both endpoints mapping to $x_0$. So define $\tilde{f}(s) = (s, 0)$ for $s \in [0,1]$. Check:
 > 1. $\tilde{f}(0) = (0, 0) = e_0$. ✓
 > 2. $p(\tilde{f}(s)) = p(s, 0) = f(s)$ for all $s$, since $p$ restricted to this segment of the $x$-axis traces out $A$ exactly as $f$ does. ✓
 >
@@ -254,7 +254,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 *The covering $p: E \to X$ from the proof. The $x$-axis and the circles on the $y$-axis lie over $A$ (blue); the $y$-axis and the circles on the $x$-axis lie over $B$ (red). The lift of $f*g$ from $e_0$ runs along the $x$-axis to $(1,0)$ and then around the red circle there, so it ends at $(1,0)$. The lift of $g*f$ runs up to $(0,1)$ and around the blue circle, so it ends at $(0,1)$. Different endpoints, so $f*g \not\simeq_p g*f$.*
 
 > [!remark] Remark
-> This proves $\pi_1(X)$ is non-abelian, which already distinguishes the figure eight from any space with abelian $\pi_1$ (such as the [[Topology §23 The Fundamental Group#^cor-23-8|torus]], [[Fundamental Group of the Circle|$S^1$]], or any [[Sⁿ is Simply Connected for n ≥ 2|$S^n$]]). The full result $\pi_1(X) \cong F_2$ (the [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-8|free group]] on two generators — meaning not only non-abelian, but with *no relations at all* between $[f]$ and $[g]$) requires the [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|Seifert-van Kampen theorem (§29)]].
+> This proves $\pi_1(X)$ is non-abelian, which already distinguishes the figure eight from any space with abelian $\pi_1$ (such as the [[Topology §23 The Fundamental Group#^cor-23-8|torus]], $S^1$ ([[Fundamental Group of the Circle|§24.10]]), or any $S^n$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]])). The full result $\pi_1(X) \cong F_2$ (the [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-8|free group]] on two generators — meaning not only non-abelian, but with *no relations at all* between $[f]$ and $[g]$) requires the [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-2|Seifert-van Kampen theorem (§29)]].
 
 ^rem-28-4
 
@@ -277,11 +277,11 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 >
 > *Stage (a): Collapse the connecting neck to a point.* The double torus $\Sigma_2$ consists of two torus-shaped handles joined by a connecting tube. Collapse this tube to a single point $x_0$. The result is two tori sharing the single point $x_0$ (a wedge $T^2 \vee T^2$).
 >
-> *Stage (b): Collapse each torus to a circle.* Each torus deformation retracts onto a meridian circle (one of its generating loops). Applying this to each torus independently (fixing $x_0$ throughout), we collapse $T^2 \vee T^2$ to $S^1 \vee S^1$ — the figure eight.
+> *Stage (b): Collapse each torus to a circle.* Each torus retracts onto a meridian circle (one of its generating loops). Applying this to each torus independently (fixing $x_0$ throughout), we collapse $T^2 \vee T^2$ to $S^1 \vee S^1$ — the figure eight.
 >
 > The composition of these two collapses gives a retraction $r: \Sigma_2 \to S^1 \vee S^1 = X$ with $r|_X = \operatorname{id}_X$ (the two circles are fixed throughout).
 >
-> **Step 2: Retraction gives an injective homomorphism.** Since $X$ is a retract of $\Sigma_2$, the inclusion $j: X \hookrightarrow \Sigma_2$ satisfies $r \circ j = \operatorname{id}_X$, so $r_* \circ j_* = \operatorname{id}$ on $\pi_1(X)$. In particular, $j_*: \pi_1(X, x_0) \to \pi_1(\Sigma_2, x_0)$ is injective ([[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|§26, retraction $\Rightarrow$ $j_*$ injective]]).
+> **Step 2: Retraction gives an injective homomorphism.** Since $X$ is a retract of $\Sigma_2$, the inclusion $j: X \hookrightarrow \Sigma_2$ satisfies $r \circ j = \operatorname{id}_X$, so $r_* \circ j_* = \operatorname{id}$ on $\pi_1(X)$. In particular, $j_*: \pi_1(X, x_0) \to \pi_1(\Sigma_2, x_0)$ is injective (§26, retraction $\Rightarrow$ $j_*$ injective ([[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]])).
 >
 > **Step 3: Apply the subgroup machinery.** By the proposition “[[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-9|Injective Homomorphisms Preserve Subgroup Structure]]” (§21): since $j_*$ is injective, $j_*(\pi_1(X))$ is a subgroup of $\pi_1(\Sigma_2)$ isomorphic to $\pi_1(X)$. Since $\pi_1(X)$ is non-abelian ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|proved above]]), $j_*(\pi_1(X))$ is a non-abelian subgroup of $\pi_1(\Sigma_2)$. By the [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-2|contrapositive proposition]] (§21): a group containing a non-abelian subgroup is itself non-abelian. Therefore $\pi_1(\Sigma_2)$ is non-abelian.
 >
@@ -301,14 +301,14 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 >
 > **Step 2: Retraction gives a surjective homomorphism.** Since $r \circ j = \operatorname{id}_X$, we have $r_* \circ j_* = \operatorname{id}$ on $\pi_1(X)$. In particular, $r_*: \pi_1(\Sigma_2) \to \pi_1(X)$ is [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|surjective]] (it has a right inverse $j_*$: every element of $\pi_1(X)$ is hit, since $r_*(j_*([f])) = [f]$).
 >
-> **Step 3: Contradiction.** Suppose $\pi_1(\Sigma_2)$ is abelian. By the proposition “[[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-10|Surjective Homomorphisms Preserve Abelianness]]” (§21): since $r_*$ is surjective and $\pi_1(\Sigma_2)$ is abelian, $\operatorname{im}(r_*) = \pi_1(X)$ is abelian. But [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|$\pi_1(X)$ is non-abelian]]. Contradiction.
+> **Step 3: Contradiction.** Suppose $\pi_1(\Sigma_2)$ is abelian. By the proposition “[[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-10|Surjective Homomorphisms Preserve Abelianness]]” (§21): since $r_*$ is surjective and $\pi_1(\Sigma_2)$ is abelian, $\operatorname{im}(r_*) = \pi_1(X)$ is abelian. But $\pi_1(X)$ is non-abelian ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]]). Contradiction.
 
 ^pf-28-5-2
 
 *Uses:* [[Topology §26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]], [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-10|§21.10]], [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]]
 
 > [!remark]- Connections
-> - First stated in [[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-1|$\pi_1(\Sigma_2)$ is Non-Abelian]] (§26); the “up/down” transfer principle behind both proofs is [[Topology §26 Deformation Retracts and Homotopy Type#^cor-26-4|What Properties Transfer via Retraction]].
+> - First stated in $\pi_1(\Sigma_2)$ is Non-Abelian ([[Topology §26 Deformation Retracts and Homotopy Type#^ex-26-1|Ex. §26.1]]) (§26); the “up/down” transfer principle behind both proofs is [[Topology §26 Deformation Retracts and Homotopy Type#^cor-26-4|What Properties Transfer via Retraction]].
 > - Exact group: [[Topology §29 The Seifert–van Kampen Theorem#^ex-29-8|Surface Fundamental Groups]].
 
 > [!remark] Remark: Comparing the Two Proofs
@@ -334,9 +334,9 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 >
 > | **Surface** | $\pi_1$ | **Property** |
 > |---|---|---|
-> | $S^2$ | [[Sⁿ is Simply Connected for n ≥ 2\|$0$]] | Trivial |
-> | $P^2$ | [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2\|$\mathbb{Z}/2\mathbb{Z}$]] | Finite, order $2$ |
-> | $S^1 \times S^1$ | [[Topology §23 The Fundamental Group#^cor-23-8\|$\mathbb{Z} \times \mathbb{Z}$]] | Infinite, abelian |
+> | $S^2$ | $0$ ([[Sⁿ is Simply Connected for n ≥ 2\|§27.3]]) | Trivial |
+> | $P^2$ | $\mathbb{Z}/2\mathbb{Z}$ ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2\|§28.2]]) | Finite, order $2$ |
+> | $S^1 \times S^1$ | $\mathbb{Z} \times \mathbb{Z}$ ([[Topology §23 The Fundamental Group#^cor-23-8\|§23.8]]) | Infinite, abelian |
 > | $\Sigma_2$ | [[Topology §28 Fundamental Group of Some Surfaces#^thm-28-5\|non-abelian]] | Infinite, non-abelian |
 >
 > Since [[Topology §23 The Fundamental Group#^cor-23-6|homeomorphic spaces have isomorphic fundamental groups]] (§23), and no two of these groups are isomorphic (they differ in the properties listed: trivial vs. finite vs. infinite abelian vs. non-abelian), the four surfaces are pairwise non-homeomorphic.
@@ -349,7 +349,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Topology §29 The 
 > This is the payoff of the entire course: purely algebraic invariants ($\pi_1$) distinguish geometric objects (surfaces). Each computation used different tools:
 > - $\pi_1(S^2) = 0$: [[Topology §27 The Fundamental Group of Sⁿ#^thm-27-1|generation theorem]] + stereographic projection ([[Sⁿ is Simply Connected for n ≥ 2|§27]]).
 > - $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$: covering space with simply connected cover ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-2|§28]]).
-> - $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$: [[Topology §23 The Fundamental Group#^thm-23-7|product formula]] (§23) + [[Fundamental Group of the Circle|$\pi_1(S^1) \cong \mathbb{Z}$]] via [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]] ([[Topology §24 Covering Spaces|§24]]).
+> - $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$: [[Topology §23 The Fundamental Group#^thm-23-7|product formula]] (§23) + $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]) via [[Topology §24 Covering Spaces#^def-24-7|lifting correspondence]] ([[Topology §24 Covering Spaces|§24]]).
 > - $\pi_1(\Sigma_2)$ non-abelian: retract of figure eight + covering space lifting argument ([[Topology §28 Fundamental Group of Some Surfaces#^thm-28-5|§28]]).
 
 ^rem-28-6
