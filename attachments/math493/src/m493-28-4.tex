@@ -1,0 +1,21 @@
+% Figure from MATH 493 notes, section 28. Compile with the notes preamble.
+\begin{tikzpicture}[x=0.8cm, y=0.52cm]
+  % grid: rows g in S_3, columns x in {1,2,3}
+  \foreach \r in {0,...,6} \draw[black!25, thin] (0.5,\r+0.5) -- (3.5,\r+0.5);
+  \foreach \c in {0,...,3} \draw[black!25, thin] (\c+0.5,0.5) -- (\c+0.5,6.5);
+  \foreach \c in {1,2,3} \node[font=\small] at (\c,7) {$\c$};
+  \node[font=\scriptsize, black!70, anchor=east] at (0.3,7) {$g \backslash x$};
+  \foreach \g/\r/\f in {e/6/3, (1\,2)/5/1, (1\,3)/4/1, (2\,3)/3/1, (1\,2\,3)/2/0, (1\,3\,2)/1/0} {
+    \node[font=\small, anchor=east] at (0.3,\r) {$\g$};
+    \node[font=\small, figB] at (4.2,\r) {$\f$};
+  }
+  % the pairs (x,g) with g * x = x
+  \foreach \c/\r in {1/6, 2/6, 3/6, 3/5, 2/4, 1/3} \fill (\c,\r) circle (3.2pt);
+  % column sums
+  \foreach \c in {1,2,3} \node[font=\small, figR] at (\c,-0.2) {$2$};
+  \node[font=\scriptsize, figB] at (4.2,7) {$|\mathrm{Fix}(g)|$};
+  \node[font=\scriptsize, figR, anchor=east] at (0.3,-0.2) {$|\mathrm{Stab}(x)|$};
+  \node[font=\small] at (4.2,-0.2) {$6$};
+  \draw[black!40, thin] (3.75,0.5) -- (3.75,6.5);
+  \draw[black!40, thin] (0.5,0.35) -- (3.5,0.35);
+\end{tikzpicture}

@@ -68,7 +68,7 @@ tags: [group-theory, math493]
 ^ex-11-1
 
 ![[m493-11-1.svg]]
-*$\sigma = (1\,5\,4)(3\,7\,6)$ in $S_7$, drawn by following arrows: two disjoint $3$-cycles and the fixed point $2$ (a $1$-cycle).*
+*$\sigma = (1\,5\,4)(3\,7\,6)$ in $S_7$, drawn by following arrows: two disjoint $3$-cycles (blue, red) and the fixed point $2$ (a $1$-cycle). Every element has exactly one arrow out and one in, which is why the loops cannot overlap; reversing all arrows gives $\sigma^{-1} = (1\,4\,5)(3\,6\,7)$.*
 
 > [!theorem] Proposition §11.4: Computing with Disjoint Cycles
 > Let $\sigma = c_1 c_2 \cdots c_k$ be a product of disjoint cycles of lengths $r_1, \ldots, r_k$.

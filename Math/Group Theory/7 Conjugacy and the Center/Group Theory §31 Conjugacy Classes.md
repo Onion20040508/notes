@@ -130,6 +130,9 @@ tags: [group-theory, math493]
 
 ^ex-31-2
 
+![[m493-31-2.svg]]
+*The $24$ elements of $S_4$ sorted into conjugacy classes, one box per cycle type (§31.2); the class sizes $1, 3, 8, 6, 6$ (red) sum to $24$. Any two elements in one box are conjugate, and no element of one box is conjugate to an element of another.*
+
 > [!definition] Definition §31.3: Similar Matrices
 > Two matrices $X, Y \in \operatorname{Mat}_{n \times n}(\mathbb{C})$ are called **similar** if $X = SYS^{-1}$ for some $S \in GL_n(\mathbb{C})$. Thus for $Y \in GL_n(\mathbb{C})$, the conjugacy class of $Y$ in $GL_n(\mathbb{C})$ is exactly the set of invertible matrices similar to $Y$. Similar matrices have the same characteristic polynomial: $\det(xI - SYS^{-1}) = \det(S(xI - Y)S^{-1}) = \det(xI - Y)$.
 >

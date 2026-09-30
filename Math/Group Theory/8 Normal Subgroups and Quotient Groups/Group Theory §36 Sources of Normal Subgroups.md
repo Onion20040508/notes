@@ -163,6 +163,9 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 
 ^ex-36-3
 
+![[m493-36-2.svg]]
+*The normal subgroups of $S_4$ as unions of conjugacy classes (class sizes in parentheses): $V$ (red) is $\{e\}$ together with the class of type $2^2$, and $A_4$ (blue) adds the eight $3$-cycles. Apart from $\{e\}$ and $S_4$, no other union of classes containing $e$ has a size dividing $24$.*
+
 > [!theorem] Proposition §36.8: Normal Subgroups of $GL_2(\mathbb{R})$
 > In $GL_2(\mathbb{R})$:
 > 1. the subgroup of invertible diagonal matrices is *not* normal;

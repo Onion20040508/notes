@@ -1,8 +1,8 @@
-% Figure from MATH 493 notes, section 5.
+% Figure from MATH 493 notes, section 5. Compile with the notes preamble.
 \begin{tikzpicture}[x=0.8cm, y=0.8cm]
   % axes
-  \draw[black!35, -{Stealth[length=4pt]}] (-3.6,0) -- (3.8,0) node[right, font=\scriptsize, black!70] {$x$};
-  \draw[black!35, -{Stealth[length=4pt]}] (0,-3.6) -- (0,3.8) node[above, font=\scriptsize, black!70] {$y$};
+  \draw[-stealth, thin, black!55] (-3.6,0) -- (3.8,0) node[right, font=\scriptsize, black] {$x$};
+  \draw[-stealth, thin, black!55] (0,-3.6) -- (0,3.8) node[above, font=\scriptsize, black] {$y$};
   % lattice points of Z^2: filled if x = y (mod 2), hollow otherwise
   \foreach \x in {-3,...,3} {
     \foreach \y in {-3,...,3} {

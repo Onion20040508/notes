@@ -75,5 +75,8 @@ tags: [group-theory, math493]
 
 ^ex-21-1
 
+![[m493-21-1.svg]]
+*[[Group Theory §21 The Structure of Uₙ#^thm-21-2|Theorem §21.2]] for $n = 15 = 3 \cdot 5$: the class of $m$ sits in row $m \bmod 3$ and column $m \bmod 5$, and by the Chinese Remainder Theorem each cell holds exactly one class. The units (blue) are exactly the cells avoiding row $0$ and column $0$, a $2 \times 4$ block $U_3 \times U_5$; hence $U_{15} \cong U_3 \times U_5$ and $\varphi(15) = 2 \cdot 4 = 8$.*
+
 > [!remark]- Connections
 > - Replacing factors by isomorphic ones: [[Topology §21 Algebra Prerequisites꞉ Groups#^thm-21-7|Products of Isomorphic Groups]] (590 §21.7).

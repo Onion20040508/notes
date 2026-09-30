@@ -1,0 +1,45 @@
+% Figure from MATH 493 notes, section 19. Compile with the notes preamble.
+\begin{tikzpicture}[c/.style={font=\small, inner sep=0pt}, s/.style={font=\scriptsize, inner sep=1pt}]
+  \def\h{0.5}
+  % ---- M(sigma) for sigma = (1 2 3): column i has its 1 in row sigma(i) ----
+  \foreach \i/\r in {1/2, 2/3, 3/1}
+    \fill[figR!15] ({(\i-1)*\h},{-(\r-1)*\h}) rectangle ({\i*\h},{-\r*\h});
+  \draw[black!30, very thin] (0,0) grid[step=\h] (3*\h,-3*\h);
+  \foreach \i/\r in {1/2, 2/3, 3/1} {
+    \foreach \rr in {1,2,3} {
+      \ifnum\rr=\r
+        \node[c, figR] at ({(\i-0.5)*\h},{-(\rr-0.5)*\h}) {$1$};
+      \else
+        \node[c, black!40] at ({(\i-0.5)*\h},{-(\rr-0.5)*\h}) {$0$};
+      \fi
+    }
+  }
+  \foreach \i/\e in {1/e_2, 2/e_3, 3/e_1}
+    \node[s, figR] at ({(\i-0.5)*\h},0.25) {$\e$};
+  \node[font=\small] at (1.5*\h,-3*\h-0.3) {$M(\sigma)$};
+  % ---- times (a,b,c) ----
+  \begin{scope}[xshift=1.95cm]
+    \draw[black!30, very thin] (0,0) grid[step=\h] (\h,-3*\h);
+    \foreach \v [count=\r] in {a,b,c}
+      \node[c, figB] at (0.5*\h,{-(\r-0.5)*\h}) {$\v$};
+  \end{scope}
+  \node[font=\small] at (2.9,-1.5*\h) {$=$};
+  \begin{scope}[xshift=3.25cm]
+    \draw[black!30, very thin] (0,0) grid[step=\h] (\h,-3*\h);
+    \foreach \v [count=\r] in {c,a,b}
+      \node[c, figB] at (0.5*\h,{-(\r-0.5)*\h}) {$\v$};
+  \end{scope}
+  % ---- entries moving: position i -> position sigma(i) ----
+  \begin{scope}[xshift=4.8cm]
+    \foreach \r in {1,2,3} {
+      \node[s, black!55] at (-0.3,{-(\r-0.5)*\h}) {$\r$};
+      \node[s, black!55] at (1.9,{-(\r-0.5)*\h}) {$\r$};
+    }
+    \foreach \v/\from/\to in {a/1/2, b/2/3, c/3/1} {
+      \node[c, figB] (L\v) at (0,{-(\from-0.5)*\h}) {$\v$};
+      \node[c, figB] (R\v) at (1.6,{-(\to-0.5)*\h}) {$\v$};
+      \draw[figB, -stealth, semithick, shorten <=4pt, shorten >=4pt] (L\v) -- (R\v);
+    }
+    \node[s, black!55] at (0.8,-3*\h-0.3) {position $i \to \sigma(i)$};
+  \end{scope}
+\end{tikzpicture}

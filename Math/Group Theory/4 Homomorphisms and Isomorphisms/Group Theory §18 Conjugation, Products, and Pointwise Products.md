@@ -118,6 +118,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[Group Theory §1 The Definition of a Group#^def-1-1|Def. §1.1]], [[Group Theory §1 The Definition of a Group#^def-1-2|Def. §1.2]], [[Group Theory §18 Conjugation, Products, and Pointwise Products#^def-18-4|Def. §18.4]], [[Group Theory §15 Homomorphisms#^def-15-1|Def. §15.1]], [[Group Theory §15 Homomorphisms#^prop-15-2|§15.2]], [[Group Theory §16 Isomorphisms#^def-16-1|Def. §16.1]]
 
+![[m493-18-1.svg]]
+*Part (3) of the proposition: a map $\varphi: K \to G \times H$ (red) is a homomorphism exactly when its components $\pi_1 \circ \varphi$ and $\pi_2 \circ \varphi$ are. A homomorphism into a product is therefore the same thing as a pair of homomorphisms, one into each factor; the diagonal $\Delta = (\operatorname{id}_G, \operatorname{id}_G)$ of part (4) is the case $K = G = H$.*
+
 > [!remark]- Connections
 > - MATH 590 version: [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-5|Direct Product of Groups]] (590 §21.5).
 > - Linear-algebra version: [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-87|Product of vector spaces]] (LADR 3.87).

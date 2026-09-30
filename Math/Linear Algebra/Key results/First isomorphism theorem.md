@@ -20,3 +20,4 @@ tags: [linear-algebra, hub]
 ## Connections
 - Same statement for groups and rings in MATH 591.
 - Universal property: any linear map that kills $\nullsp T$ factors uniquely through $\pi$.
+- Group version: [[First Isomorphism Theorem for Groups]] (MATH 493 §38.1), where the kernel is always a normal subgroup but the image need not be.

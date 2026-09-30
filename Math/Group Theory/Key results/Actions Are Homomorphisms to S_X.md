@@ -24,4 +24,7 @@ tags: [group-theory, hub]
 - [[Group Theory §39 Simple Groups#^prop-39-10|Proposition §39.10: The Pair-Partition Homomorphism S_4 → S_3]]
 
 ## Connections
-- TODO
+- **Used for.** Every action now yields a homomorphism whose kernel and image can be studied. Faithful actions embed G in S_X ([[Group Theory §23 Actions#^prop-23-4|§23.4]]), which gives [[Cayley's Theorem]]. The action on G/H gives a normal subgroup inside H ([[Group Theory §36 Sources of Normal Subgroups#^thm-36-5|§36.5]]), and the action of S₄ on pair partitions gives S₄/V ≅ S₃ ([[Group Theory §39 Simple Groups#^prop-39-10|§39.10]]).
+- **The identity axiom matters.** Without e ⋆ x = x the assignment g ↦ ĝ still respects products but need not land in S_X: the trivial group acting on {0, 1} by e ⋆ 0 = e ⋆ 1 = 0 ([[Group Theory §23 Actions#^ex-23-1|Ex. §23.1]], [[Group Theory §23 Actions#^rem-23-5|Why the Identity Axiom Matters]]).
+- **Same idea elsewhere.** Replacing S_X by GL(V) gives a [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-6|representation]] (§19.6). S_n acting on kⁿ by permutation matrices is both at once ([[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-4|§19.4]]), and the conjugation action gives the [[Class Equation]].
+- **Coming later in the course.** Representation theory studies homomorphisms G → GL_n(k), the linear version of this theorem.

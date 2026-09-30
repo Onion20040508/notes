@@ -21,4 +21,6 @@ tags: [group-theory, hub]
 - (not cited later in the course)
 
 ## Connections
-- TODO
+- **Proof idea.** In the [[Class Equation]], every class has size dividing pᵏ ([[Group Theory §32 Conjugation as an Action and the Class Equation#^cor-32-2|§32.2]]), so the non-central ones have size divisible by p. Hence p divides |Z(G)| ([[Group Theory §33 The Center#^cor-33-4|§33.4]]).
+- **Prime power is needed.** S₃ (order 6) and S₄ (order 24) have trivial center ([[Group Theory §32 Conjugation as an Action and the Class Equation#^ex-32-1|Ex. §32.1]]).
+- **Coming later in the course.** It starts the theory of p-groups: every group of order p² is abelian (for p = 2 see [[Group Theory §32 Conjugation as an Action and the Class Equation#^prop-32-6|Groups of Order 4 Are Abelian]]), every p-group is nilpotent, and Sylow theory studies the maximal p-subgroups of an arbitrary finite group.

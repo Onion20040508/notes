@@ -83,3 +83,6 @@ tags: [group-theory, math493]
 > On a $12$-hour clock, $9$ o'clock plus $5$ hours is $2$ o'clock: compute $9 + 5 = 14$, then reduce, $14 \bmod 12 = 2$. Arithmetic modulo $n$ is exactly this “wrap-around” arithmetic: the infinite line $\mathbb{Z}$ is rolled up into a circle with $n$ points, and integers that land on the same point are identified. The residue classes are the points of the circle.
 
 ^rem-6-1
+
+![[m493-6-1.svg]]
+*The line $\mathbb{Z}$ rolled up, $12$ integers per turn (shown for $0, \ldots, 35$). Integers congruent modulo $12$ line up on one ray, so each ray is a residue class, e.g. $[2] = \{2, 14, 26, \ldots\}$ (red), and the $12$ rays are the points of the clock. Walking $5$ steps from $9$ (blue) lands on $14$, on the ray of $2$: $9 + 5 \equiv 2 \pmod{12}$.*

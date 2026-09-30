@@ -50,6 +50,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[Group Theory §25 Orbits#^def-25-1|Def. §25.1]], [[Group Theory §24 Stabilizers and Fixed Points#^def-24-1|Def. §24.1]], [[Linear Algebra 6B Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[Linear Algebra 6B Orthonormal Bases#^ladr-6-32|LADR 6.32]], [[Linear Algebra 7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]], [[Group Theory §15 Homomorphisms#^def-15-1|Def. §15.1]]
 
+![[m493-30-2.svg]]
+*Left: $GL_3(\mathbb{R})$ has two orbits on $\mathbb{R}^3$, the origin (red) and everything else (blue); any $v \neq 0$ is reached from $e_1$ by an invertible $P$ with first column $v$. Right: $O_3(\mathbb{R})$ preserves length, so its orbits are the origin and the spheres $S_r$ (blue), and $e_1$ reaches only the vectors $w$ with $|w| = 1$. The stabilizer of $e_1$ acts as $O_2(\mathbb{R})$ on the plane $e_1^\perp$, moving the great circle $e_1^\perp \cap S_1$ (red) within itself.*
+
 > [!theorem] Proposition §30.3: Rotational Symmetries of the Cube
 > Let $C = [-1,1]^3 \subseteq \mathbb{R}^3$ be the cube and let $G$ be its group of rotational symmetries (the symmetries realizable by physically turning the cube; as matrices, $G = \operatorname{Sym}(C) \cap SO_3(\mathbb{R})$).
 > 1. $|G| = 24$.
@@ -123,6 +126,9 @@ tags: [group-theory, math493]
 > *[To be proved.]*
 
 ^pf-30-5
+
+![[m493-30-3.svg]]
+*The four body diagonals of $C = [-1,1]^3$, numbered $1$–$4$ at their upper ends; each joins a vertex to the opposite vertex through the centre. Every rotation of the cube permutes these four lines, which is the homomorphism $G \to S_4$ of §30.5.*
 
 > [!remark] Remark: The Cleanest Description
 > Since $|G| = 24 = |S_4|$, it is enough to show that the homomorphism $G \to S_4$ is injective, i.e. that the action on the diagonals is faithful. This identification is the cleanest description of the rotation group.

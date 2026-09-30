@@ -51,6 +51,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §26 Left and Right Cosets#^prop-26-2|§26.2]], [[Group Theory §27 The Index and Lagrange's Theorem#^prop-27-1|§27.1]], [[Group Theory §27 The Index and Lagrange's Theorem#^def-27-1|Def. §27.1]]
 
+![[m493-27-1.svg]]
+*Lagrange in one picture: the left cosets (columns) are disjoint and cover $G$, and $h \mapsto g_2h$ (red) is a bijection $H \to g_2H$, so every column has exactly $|H|$ elements. Counting the dots gives $|G| = |H| \cdot [G:H]$.*
+
 > [!remark]- Connections
 > - MATH 590 states this without proof: [[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-1|590 §21.1 (3)]].
 > - Generalized to orbits: [[Group Theory §28 Orbit–Stabilizer#^thm-28-3|Orbit–Stabilizer, §28.3]]; the homomorphism version: [[Group Theory §38 The First Isomorphism Theorem#^cor-38-2|§38.2]].
@@ -105,6 +108,9 @@ tags: [group-theory, math493]
 ^pf-27-5
 
 *Uses:* [[Group Theory §27 The Index and Lagrange's Theorem#^def-27-1|Def. §27.1]], [[Group Theory §26 Left and Right Cosets#^prop-26-2|§26.2]], [[Group Theory §2 First Consequences of the Axioms#^prop-2-1|§2.1]]
+
+![[m493-27-2.svg]]
+*The proof of §27.5: each left coset $g_iH$ (blue column) is the translate by $g_i$ of $H = h_1K \sqcup \cdots \sqcup h_nK$, so it splits into the $n$ cosets $g_ih_jK$ (red cells). The $m$ columns tile $G$, so there are $mn$ cosets of $K$ in all: $[G:K] = [G:H]\,[H:K]$.*
 
 > [!theorem] Theorem §27.6: Cauchy's Theorem
 > Let $G$ be finite and $p$ a prime dividing $|G|$. Then $G$ has an element of order $p$.

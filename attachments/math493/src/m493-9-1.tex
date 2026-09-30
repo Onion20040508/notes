@@ -1,0 +1,25 @@
+% Figure from MATH 493 notes, section 9. Compile with the notes preamble.
+\begin{tikzpicture}[x=0.85cm, y=-0.75cm]
+  % row r = x mod 3 (r = 2 shaded blue), column s = x mod 5 (s = 3 shaded red)
+  \fill[figB!12] (0,2) rectangle (5,3);
+  \fill[figR!15] (3,0) rectangle (4,3);
+  \fill[figR!35] (3,2) rectangle (4,3);
+  \foreach \s in {1,...,4} \draw[black!40, thin] (\s,0) -- (\s,3);
+  \foreach \r in {1,2} \draw[black!40, thin] (0,\r) -- (5,\r);
+  \draw[thick] (0,0) rectangle (5,3);
+  \foreach \x in {0,...,14} {
+    \pgfmathtruncatemacro{\r}{mod(\x,3)}
+    \pgfmathtruncatemacro{\s}{mod(\x,5)}
+    \ifnum\x=8
+      \node[font=\small, figR] at (\s+0.5,\r+0.5) {$\mathbf{8}$};
+    \else
+      \node[font=\small] at (\s+0.5,\r+0.5) {$\x$};
+    \fi
+  }
+  \foreach \s in {0,...,4} \node[font=\scriptsize, black!60] at (\s+0.5,-0.4) {$\s$};
+  \foreach \r in {0,1,2} \node[font=\scriptsize, black!60] at (-0.35,\r+0.5) {$\r$};
+  \node[font=\scriptsize, black!60, anchor=south] at (2.5,-0.7) {$x \bmod 5$};
+  \node[font=\scriptsize, black!60, anchor=east] at (-0.6,1.5) {$x \bmod 3$};
+  \node[font=\scriptsize, figB, anchor=west] at (5.15,2.5) {$x \equiv 2 \pmod 3$};
+  \node[font=\scriptsize, figR, anchor=north] at (3.5,3.1) {$x \equiv 3 \pmod 5$};
+\end{tikzpicture}

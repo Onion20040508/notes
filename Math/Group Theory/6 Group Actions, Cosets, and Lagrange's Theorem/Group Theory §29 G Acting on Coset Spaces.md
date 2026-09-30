@@ -54,5 +54,8 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §26 Left and Right Cosets#^prop-26-2|§26.2]], [[Group Theory §23 Actions#^def-23-1|Def. §23.1]], [[Group Theory §25 Orbits#^def-25-1|Def. §25.1]], [[Group Theory §24 Stabilizers and Fixed Points#^def-24-1|Def. §24.1]], [[Group Theory §24 Stabilizers and Fixed Points#^cor-24-3|§24.3]]
 
+![[m493-29-1.svg]]
+*$S_3$ acting on $S_3/H$ for $H = \{e, (1\,2)\}$: the three points are the three left cosets. Single elements carry $eH$ to each other coset, and $(1\,2\,3) = (2\,3)(1\,3)^{-1}$ carries $(1\,3)H$ to $(2\,3)H$, as in the proof of transitivity. The stabilizers (red) are the conjugates $g'H(g')^{-1}$, one for each point.*
+
 > [!remark]- Connections
 > - The homomorphism $G \to S_{G/H}$ of this action produces a normal subgroup inside $H$: [[Group Theory §36 Sources of Normal Subgroups#^thm-36-5|A Normal Subgroup Inside a Subgroup of Finite Index, §36.5]], whose kernel is [[Group Theory §36 Sources of Normal Subgroups#^prop-36-6|The Normal Core, §36.6]].

@@ -23,4 +23,7 @@ tags: [group-theory, hub]
 - [[Group Theory §31 Conjugacy Classes#^thm-31-2|Theorem §31.2: Conjugacy Classes in S_n Are Cycle Types]]
 
 ## Connections
-- TODO
+- **Used for.** Computing with permutations: inverses, powers, and order = lcm of the cycle lengths ([[Group Theory §11 Disjoint Cycle Decomposition#^prop-11-4|§11.4]]). Also every permutation is a product of transpositions ([[Group Theory §12 Multiplying and Conjugating Cycles#^prop-12-2|§12.2]]), the input to [[The Sign Homomorphism]].
+- **Uniqueness matters.** Because the decomposition is unique up to order, the cycle type is well defined. It classifies conjugacy ([[Conjugacy Classes of Sₙ Are Cycle Types]]).
+- **Finite sets only.** For infinite X the shift n ↦ n + 1 on ℤ is a single "infinite cycle" ([[Group Theory §12 Multiplying and Conjugating Cycles#^rem-12-2|Finite Sets Only]]). Finiteness enters through the pigeonhole principle of [[Group Theory §4 Subgroups#^rem-4-4|Where Finiteness Enters]].
+- **Cycles are orbits.** The cycles of σ are the orbits of ⟨σ⟩ on {1, …, n} ([[Group Theory §25 Orbits#^def-25-1|Def. §25.1]]), so the theorem is a case of [[Group Theory §25 Orbits#^prop-25-1|Orbits Partition X]].

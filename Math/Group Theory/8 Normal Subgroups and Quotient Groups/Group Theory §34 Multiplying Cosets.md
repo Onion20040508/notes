@@ -50,6 +50,9 @@ Since the right side is computed from the chosen representatives $g_1, g_2$, thi
 
 *Uses:* [[Group Theory §26 Left and Right Cosets#^prop-26-2|§26.2]], [[Group Theory §35 Normal Subgroups#^prop-35-2|§35.2]], [[Group Theory §35 Normal Subgroups#^rem-35-2|Multiplying Sets (§35)]]
 
+![[m493-34-1.svg]]
+*Left: for $H = \{e, (1\,2)\}$, both $e$ and $(1\,2)$ represent the coset $H$, but multiplying them by $(1\,3)$ (red) lands in two different cosets, $(1\,3)H$ and $(2\,3)H$, so $H \cdot (1\,3)H$ has no well-defined value. This is the ($\Rightarrow$) step of the proof with $h = (1\,2)$ and $g = (1\,3)$: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin H$. Right: for the normal subgroup $A_3$, every representative of $A_3$ times $(1\,3)$ lands in the same coset $(1\,2)A_3$.*
+
 > [!remark]- Connections
 > - 590 version of this computation: [[Topology §21 Algebra Prerequisites꞉ Groups#^rem-21-19|Why Normality is Required]].
 > - Vector-space version (automatic, since addition commutes): [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]].

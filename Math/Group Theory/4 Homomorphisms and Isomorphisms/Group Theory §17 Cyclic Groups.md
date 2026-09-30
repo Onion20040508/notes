@@ -84,6 +84,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §4 Subgroups#^lem-4-4|§4.4]], [[Group Theory §4 Subgroups#^def-4-3|Def. §4.3]], [[Group Theory §4 Subgroups#^def-4-5|Def. §4.5]], [[Group Theory §6 Divisibility and Congruence#^lem-6-1|§6.1]], [[Group Theory §7 The Group ℤ∕nℤ#^lem-7-2|§7.2]], [[Group Theory §15 Homomorphisms#^prop-15-3|§15.3]]
 
+![[m493-17-2.svg]]
+*The homomorphism $\varphi_g: \mathbb{Z} \to \langle g \rangle$, $k \mapsto g^k$, for $g$ of order $N = 6$ (nonnegative $k$ shown). The integers (blue spiral) wind around $\langle g \rangle$ once every $6$ steps, and all integers on one ray have the same image. The ray to $e$ (red) carries the kernel $6\mathbb{Z}$; identifying the points on each ray is passing to $\mathbb{Z}/6\mathbb{Z} \cong \langle g \rangle$.*
+
 > [!remark]- Connections
 > - Lecture form: [[Group Theory §17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]] (§17.1).
 
@@ -126,6 +129,9 @@ tags: [group-theory, math493]
 ^pf-17-5
 
 *Uses:* [[Group Theory §8 Invertibility and Unit Groups#^def-8-1|Def. §8.1]], [[Group Theory §4 Subgroups#^lem-4-4|§4.4]], [[Group Theory §17 Cyclic Groups#^prop-17-3|§17.3]], [[Group Theory §9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]]
+
+![[m493-17-3.svg]]
+*The order of a power in a cyclic group of order $12$ (dot $j$ stands for $g^j$). Stepping around by $k$ returns to $e = g^0$ after $12/\gcd(12, k)$ steps: $g^5$ (blue) visits all twelve elements, so it is a generator ([[Group Theory §17 Cyclic Groups#^cor-17-6|§17.6]]); $g^8$ and $g^9$ (red) close up after $3$ and $4$ steps, tracing the subgroups $\langle g^4 \rangle$ and $\langle g^3 \rangle$ of orders $3$ and $4$.*
 
 > [!theorem] Corollary §17.6: Generators and Subgroups of a Finite Cyclic Group
 > Let $G = \langle g \rangle$ be cyclic of order $n$.

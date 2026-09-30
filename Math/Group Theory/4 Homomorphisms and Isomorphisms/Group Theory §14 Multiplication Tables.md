@@ -106,3 +106,6 @@ tags: [group-theory, math493]
 > *Source: WS 2.4*
 
 ^ex-14-5
+
+![[m493-14-1.svg]]
+*The $S_3$ table of Ex. §14.5 with the identity cells in blue. They lie on the diagonal (shaded) for $e$ and the three transpositions, each its own inverse, but off it for the $3$-cycles $(1\,2\,3)$ and $(1\,3\,2)$, which are inverse to each other. The two red cells are mirror images across the diagonal yet hold different elements, $(1\,2)(2\,3) = (1\,2\,3)$ and $(2\,3)(1\,2) = (1\,3\,2)$: the table is not symmetric, so $S_3$ is not abelian.*

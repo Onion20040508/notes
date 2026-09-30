@@ -67,7 +67,7 @@ tags: [group-theory, math493]
 *Uses:* [[Group Theory §6 Divisibility and Congruence#^def-6-4|Def. §6.4]], [[Group Theory §7 The Group ℤ∕nℤ#^def-7-2|Def. §7.2]], [[Group Theory §15 Homomorphisms#^def-15-1|Def. §15.1]], [[Group Theory §15 Homomorphisms#^def-15-2|Def. §15.2]], [[Group Theory §15 Homomorphisms#^prop-15-2|§15.2]], [[Group Theory §4 Subgroups#^prop-4-6|§4.6]], [[Single Variable Analysis §1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
 
 ![[m493-7-1.svg]]
-*The Descent Lemma: $f$ factors as $f = \bar f \circ \pi$ through the projection $\pi(k) = [k]$ exactly when $f(k) = f(k+n)$ for all $k$.*
+*The Descent Lemma: $f$ factors as $f = \bar f \circ \pi$ through the projection $\pi(k) = [k]$ exactly when $f(k) = f(k+n)$ for all $k$. The dashed red arrow is the one whose existence (and uniqueness) the lemma asserts.*
 
 > [!remark]- Connections
 > - Topological analogue: [[Universal Property of Quotient Maps]] (590 §12.3), same factorization triangle.

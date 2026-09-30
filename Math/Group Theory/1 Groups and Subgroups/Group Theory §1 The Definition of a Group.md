@@ -42,6 +42,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §1 The Definition of a Group#^def-1-1|Def. §1.1]], [[Single Variable Analysis §1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
 
+![[m493-1-1.svg]]
+*The five ways to parenthesize $g_1 g_2 g_3 g_4$, joined by an edge when a single use of axiom (3), $(xy)z = x(yz)$, turns one into the other. The graph is connected, so all five products are equal; the proof above routes every bracketing to the left-normed product $L_4$ (blue).*
+
 > [!remark] Remark: Comparison with MATH 590
 > This is the same definition as in the algebra-prerequisites section of the topology notes ([[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-1|590 notes, §17]]), with the axioms listed in a different order. [[Group Theory §2 First Consequences of the Axioms|WS 1.1–1.4]] below establish the basic uniqueness and cancellation facts, which appeared as [[Topology §21 Algebra Prerequisites꞉ Groups#^rem-21-2|remarks in the 590 notes]].
 

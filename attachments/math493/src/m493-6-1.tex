@@ -1,0 +1,25 @@
+% Figure from MATH 493 notes, section 6. Compile with the notes preamble.
+\begin{tikzpicture}[
+    num/.style={circle, fill=white, inner sep=0.6pt, font=\scriptsize}]
+  % the integers 0..35 wound onto a spiral, 12 per turn, clockwise from the top
+  \draw[black!30, thin, domain=0:35, samples=180, smooth, variable=\t]
+    plot ({(1.25+0.62*\t/12)*cos(90-30*\t)}, {(1.25+0.62*\t/12)*sin(90-30*\t)});
+  % the residue class [2] = {2, 14, 26, ...}: one ray
+  \draw[figR, thick] (30:0.45) -- (30:3.1);
+  \node[font=\small, figR, anchor=south west, inner sep=1pt] at (30:3.1) {$[2]$};
+  % the walk 9 -> 14 (add 5)
+  \draw[figB, very thick, -{Stealth[length=5pt]}, domain=9:13.72, samples=60, smooth, variable=\t]
+    plot ({(1.25+0.62*\t/12)*cos(90-30*\t)}, {(1.25+0.62*\t/12)*sin(90-30*\t)});
+  \foreach \k in {0,...,35} {
+    \pgfmathsetmacro{\r}{1.25+0.62*\k/12}
+    \pgfmathtruncatemacro{\c}{mod(\k,12)==2 ? 1 : (\k==9 ? 2 : 0)}
+    \ifcase\c
+      \node[num] at ({90-30*\k}:\r) {$\k$};
+    \or
+      \node[num, text=figR, draw=figR, thin] at ({90-30*\k}:\r) {$\k$};
+    \or
+      \node[num, text=figB, draw=figB, thin] at ({90-30*\k}:\r) {$\k$};
+    \fi
+  }
+  \node[font=\scriptsize, figB] at (104:1.55) {$+5$};
+\end{tikzpicture}

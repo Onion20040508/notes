@@ -79,5 +79,8 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[Group T
 
 ^ex-37-1
 
+![[m493-37-1.svg]]
+*Part 1 of the example with $n = 3$: the canonical projection $\pi: \mathbb{Z} \to \mathbb{Z}/3\mathbb{Z}$ collapses each coset $a + 3\mathbb{Z}$ (one colour each) to a single element $[a]$ of the quotient group. The grey arrows show adding $[1]$: $[0] \to [1] \to [2] \to [0]$.*
+
 > [!remark]- Connections
 > - 590 version of (1): [[Topology §21 Algebra Prerequisites꞉ Groups#^ex-21-7|Example §21.7]].

@@ -1,0 +1,13 @@
+% Figure from MATH 493 notes, section 25. Compile with the notes preamble.
+\begin{tikzpicture}
+  \coordinate (x) at (0,1.4);
+  \coordinate (y) at (3.2,1.4);
+  \coordinate (z) at (1.6,0);
+  \draw[figB, thick, -stealth, shorten <=3pt, shorten >=3pt] (x) -- node[below left, font=\scriptsize, inner sep=1pt] {$g$} (z);
+  \draw[figB, thick, -stealth, shorten <=3pt, shorten >=3pt] (y) -- node[below right, font=\scriptsize, inner sep=1pt] {$h$} (z);
+  \draw[figR, thick, dashed, -stealth, shorten <=3pt, shorten >=3pt] (y) -- node[above, font=\scriptsize] {$g^{-1}h$} (x);
+  \fill (x) circle (1.6pt) node[left=2pt, font=\small] {$x$};
+  \fill (y) circle (1.6pt) node[right=2pt, font=\small] {$y$};
+  \fill (z) circle (1.6pt) node[below=2pt, font=\small] {$z$};
+  \node[font=\scriptsize, black!60, align=center] at (1.6,-0.75) {$z = g \star x = h \star y \in Gx \cap Gy$};
+\end{tikzpicture}

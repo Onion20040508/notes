@@ -1,0 +1,32 @@
+% Figure from MATH 493 notes, section 30. Compile with the notes preamble.
+\begin{tikzpicture}[vec/.style={-{Stealth[length=2mm]}, thick, black!75}]
+  % ---------- GL_3: two orbits ----------
+  \begin{scope}
+    \node[font=\small] at (0,2.05) {$GL_3(\mathbb{R})$};
+    \fill[figB!12] (-1.65,-1.65) rectangle (1.65,1.65);
+    \draw[figB, dashed, thin] (-1.65,-1.65) rectangle (1.65,1.65);
+    \fill[white] (0,0) circle (0.16);
+    \draw[vec] (0.16,0) -- (1.1,0) node[below, font=\scriptsize, black] {$e_1$};
+    \draw[vec] (-0.09,0.13) -- (-0.65,1.0) node[left, font=\scriptsize, black] {$v$};
+    \draw[figR, -{Stealth[length=2mm]}, thick] (1.15,0.18) to[bend right=40] node[midway, above right, font=\scriptsize] {$P$} (-0.5,1.12);
+    \fill[figR] (0,0) circle (2.2pt);
+    \node[figR, font=\scriptsize, below left] at (0,-0.05) {$\{0\}$};
+    \node[figB, font=\scriptsize] at (0.75,-1.3) {$\mathbb{R}^3 \setminus \{0\}$};
+  \end{scope}
+  % ---------- O_3: spheres ----------
+  \begin{scope}[shift={(4.6,0)}]
+    \node[font=\small] at (0,2.05) {$O_3(\mathbb{R})$};
+    \foreach \r in {0.55,1.05,1.55} {
+      \draw[figB, thick] (0,0) circle (\r);
+      \draw[figB!55, thin] (-\r,0) arc[start angle=180, end angle=360, x radius=\r, y radius=0.28*\r];
+      \draw[figB!55, thin, dashed] (\r,0) arc[start angle=0, end angle=180, x radius=\r, y radius=0.28*\r];
+    }
+    % the circle e_1^perp on S_{1.05}, moved by Stab(e_1)
+    \draw[figR, thin] (0,-1.05) arc[start angle=270, end angle=450, x radius=0.3, y radius=1.05];
+    \draw[figR, thin, dashed] (0,1.05) arc[start angle=90, end angle=270, x radius=0.3, y radius=1.05];
+    \draw[vec] (0,0) -- (1.05,0) node[right, font=\scriptsize, black] {$e_1$};
+    \draw[vec] (0,0) -- (-0.6,0.86) node[above left=-1pt, font=\scriptsize, black] {$w$};
+    \fill[figR] (0,0) circle (2.2pt);
+    \node[figB, font=\scriptsize, anchor=west] at (1.1,-1.3) {$S_r$};
+  \end{scope}
+\end{tikzpicture}

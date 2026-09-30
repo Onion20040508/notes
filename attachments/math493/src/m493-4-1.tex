@@ -1,18 +1,18 @@
 % Figure from MATH 493 notes, section 4. Compile with the notes preamble.
 \begin{tikzpicture}[
     el/.style={circle, draw, thick, minimum size=30pt, inner sep=0pt, font=\scriptsize},
-    in/.style={el, draw=figB, fill=figB!12},
-    out/.style={el, draw=figR, fill=figR!15},
+    inS/.style={el, draw=figB, fill=figB!12},
+    outS/.style={el, draw=figR, fill=figR!15},
     ga/.style={thick, black!70},
     gb/.style={thick, black!70, dashed},
     wd/.style={font=\scriptsize}]
   \def\R{2.1}
-  \node[in]  (e)   at (180:\R) {$e$};
-  \node[in]  (g1)  at (120:\R) {$(1\,2)$};
-  \node[in]  (g12) at (60:\R)  {$(1\,2\,3)$};
-  \node[out] (x)   at (0:\R)   {$(1\,3)$};
-  \node[out] (g21) at (-60:\R) {$(1\,3\,2)$};
-  \node[in]  (g2)  at (-120:\R){$(2\,3)$};
+  \node[inS] (e)   at (180:\R) {$e$};
+  \node[inS] (g1)  at (120:\R) {$(1\,2)$};
+  \node[inS] (g12) at (60:\R)  {$(1\,2\,3)$};
+  \node[outS] (x)   at (0:\R)   {$(1\,3)$};
+  \node[outS] (g21) at (-60:\R) {$(1\,3\,2)$};
+  \node[inS] (g2)  at (-120:\R){$(2\,3)$};
   % g_1-edges solid, g_2-edges dashed
   \draw[ga] (e) -- (g1);
   \draw[gb] (g1) -- (g12);

@@ -25,4 +25,6 @@ tags: [group-theory, hub]
 - [[Group Theory §21 The Structure of Uₙ#^thm-21-2|Theorem §21.2: U_n as a Product of Prime-Power Unit Groups]]
 
 ## Connections
-- TODO
+- **Used for.** [[Group Theory §21 The Structure of Uₙ#^thm-21-2|Uₙ as a Product of Prime-Power Unit Groups]] (§21.2), by restricting ρ to units, and hence [[Group Theory §21 The Structure of Uₙ#^cor-21-3|Euler's Totient Formula]]. For solving simultaneous congruences, see [[Group Theory §9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^ex-9-1|Ex. §9.1]].
+- **Coprimality is needed.** ℤ/4ℤ ≇ ℤ/2ℤ × ℤ/2ℤ, since the first is cyclic and in the second every element has order at most 2. This is the pair ℤ/4ℤ, U₈ of [[Group Theory §16 Isomorphisms#^prop-16-8|§16.8]].
+- **Coming later in the course.** It is the first case of the structure theorem for finite abelian groups, which splits such a group into pieces of prime-power order.

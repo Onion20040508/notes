@@ -1,0 +1,47 @@
+% Figure from MATH 493 notes, section 21. Compile with the notes preamble.
+\begin{tikzpicture}[s/.style={font=\scriptsize, inner sep=1pt}]
+  \fill[black!6] (0.000,0.000) rectangle (0.720,-0.550);
+  \fill[black!6] (0.720,0.000) rectangle (1.440,-0.550);
+  \fill[black!6] (1.440,0.000) rectangle (2.160,-0.550);
+  \fill[black!6] (2.160,0.000) rectangle (2.880,-0.550);
+  \fill[black!6] (2.880,0.000) rectangle (3.600,-0.550);
+  \fill[black!6] (0.000,-0.550) rectangle (0.720,-1.100);
+  \fill[figB!15] (0.720,-0.550) rectangle (1.440,-1.100);
+  \fill[figB!15] (1.440,-0.550) rectangle (2.160,-1.100);
+  \fill[figB!15] (2.160,-0.550) rectangle (2.880,-1.100);
+  \fill[figB!15] (2.880,-0.550) rectangle (3.600,-1.100);
+  \fill[black!6] (0.000,-1.100) rectangle (0.720,-1.650);
+  \fill[figB!15] (0.720,-1.100) rectangle (1.440,-1.650);
+  \fill[figB!15] (1.440,-1.100) rectangle (2.160,-1.650);
+  \fill[figB!15] (2.160,-1.100) rectangle (2.880,-1.650);
+  \fill[figB!15] (2.880,-1.100) rectangle (3.600,-1.650);
+  \draw[black!30, very thin] (0,0) grid[xstep=0.72, ystep=0.55] (3.600,-1.650);
+  \draw[figB, thick] (0.720,-0.550) rectangle (3.600,-1.650);
+  \node[font=\small, black!40] at (0.360,-0.275) {$0$};
+  \node[font=\small, figB] at (1.080,-0.825) {$1$};
+  \node[font=\small, figB] at (1.800,-1.375) {$2$};
+  \node[font=\small, black!40] at (2.520,-0.275) {$3$};
+  \node[font=\small, figB] at (3.240,-0.825) {$4$};
+  \node[font=\small, black!40] at (0.360,-1.375) {$5$};
+  \node[font=\small, black!40] at (1.080,-0.275) {$6$};
+  \node[font=\small, figB] at (1.800,-0.825) {$7$};
+  \node[font=\small, figB] at (2.520,-1.375) {$8$};
+  \node[font=\small, black!40] at (3.240,-0.275) {$9$};
+  \node[font=\small, black!40] at (0.360,-0.825) {$10$};
+  \node[font=\small, figB] at (1.080,-1.375) {$11$};
+  \node[font=\small, black!40] at (1.800,-0.275) {$12$};
+  \node[font=\small, figB] at (2.520,-0.825) {$13$};
+  \node[font=\small, figB] at (3.240,-1.375) {$14$};
+  \node[s, black!60] at (0.360,0.25) {$0$};
+  \node[s, black!60] at (1.080,0.25) {$1$};
+  \node[s, black!60] at (1.800,0.25) {$2$};
+  \node[s, black!60] at (2.520,0.25) {$3$};
+  \node[s, black!60] at (3.240,0.25) {$4$};
+  \node[s, black!60] at (-0.25,-0.275) {$0$};
+  \node[s, black!60] at (-0.25,-0.825) {$1$};
+  \node[s, black!60] at (-0.25,-1.375) {$2$};
+  \node[s, black!60, anchor=south] at (1.800,0.42) {$m \bmod 5$};
+  \node[s, black!60, anchor=east] at (-0.55,-0.825) {$m \bmod 3$};
+  \draw[decorate, decoration={brace, amplitude=4pt, mirror}, figB] (0.720,-1.730) -- (3.600,-1.730) node[midway, below=5pt, s] {$U_5 = \{1,2,3,4\}$};
+  \draw[decorate, decoration={brace, amplitude=4pt}, figB] (3.680,-0.550) -- (3.680,-1.650) node[midway, right=5pt, s] {$U_3 = \{1,2\}$};
+\end{tikzpicture}

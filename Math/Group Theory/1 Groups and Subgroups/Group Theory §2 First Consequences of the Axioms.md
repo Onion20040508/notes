@@ -52,6 +52,9 @@ tags: [group-theory, math493]
 
 ^ex-2-1
 
+![[m493-2-1.svg]]
+*Conjugation relabels. The top row is $h_1 = (2\,3)$ (blue); the gray arrows are the relabeling $g = (1\,2)$. Carried along $g$, the swap $2 \leftrightarrow 3$ becomes the swap of $g(2) = 1$ and $g(3) = 3$, i.e. $h_2 = g h_1 g^{-1} = (1\,3)$ (red). Across-then-down equals down-then-across, which is $g h_1 = h_2 g$ — and still $h_1 \neq h_2$.*
+
 > [!remark]- Connections
 > - Revisited with cycle notation: [[Group Theory §12 Multiplying and Conjugating Cycles#^ex-12-2|The Mixed Hypothesis of WS 1.1, Revisited]]; the general rule: [[Group Theory §12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle]].
 

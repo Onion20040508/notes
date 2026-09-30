@@ -1,0 +1,22 @@
+% Figure from MATH 493 notes, section 27. Compile with the notes preamble.
+\begin{tikzpicture}[x=1.45cm, y=0.62cm]
+  % m = 3 cosets of H in G, each split into n = 4 cosets of K
+  \foreach \i in {1,2,3} {
+    \foreach \j in {1,2,3,4} {
+      \draw[figR!70, thin] (\i-0.45,\j-0.5) rectangle (\i+0.45,\j+0.5);
+    }
+    \draw[figB, thick] (\i-0.45,0.5) rectangle (\i+0.45,4.5);
+    \node[figB, font=\small, anchor=south] at (\i,4.55) {$g_{\i}H$};
+  }
+  % labels of the K-cosets in the first column
+  \foreach \j in {1,2,3,4} \node[font=\scriptsize] at (1,5-\j) {$g_1h_{\j}K$};
+  % one highlighted cell
+  \fill[figR!15] (2-0.45,2-0.5) rectangle (2+0.45,2+0.5);
+  \draw[figR, thick] (2-0.45,2-0.5) rectangle (2+0.45,2+0.5);
+  \node[font=\scriptsize, figR] at (2,2) {$g_2h_3K$};
+  % braces
+  \draw[decorate, decoration={brace, amplitude=4pt}, black!55] (3.52,4.5) -- (3.52,0.5)
+    node[midway, right=5pt, font=\scriptsize, black, align=left] {$n = [H:K]$\\ in each};
+  \draw[decorate, decoration={brace, amplitude=5pt, mirror}, black!55] (0.55,0.3) -- (3.45,0.3)
+    node[midway, below=6pt, font=\scriptsize, black] {$m = [G:H]$ columns};
+\end{tikzpicture}

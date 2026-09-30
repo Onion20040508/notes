@@ -21,4 +21,7 @@ tags: [group-theory, hub]
 - [[Group Theory §36 Sources of Normal Subgroups#^prop-36-6|Proposition §36.6: The Normal Core]]
 
 ## Connections
-- TODO
+- **Where it fails.** For H = {e, (1 2)} in S₃, (1 3)H ≠ H(1 3) ([[Group Theory §26 Left and Right Cosets#^ex-26-1|Ex. §26.1]]), so H is not normal ([[Group Theory §35 Normal Subgroups#^ex-35-1|Ex. §35.1]]). Non-normal subgroups exist only in non-abelian groups ([[Group Theory §35 Normal Subgroups#^rem-35-1|Where to Look for Non-Normal Subgroups]]).
+- **Used for.** [[Group Theory §36 Sources of Normal Subgroups#^prop-36-1|Subgroups of Index 2 Are Normal]]: there is one left coset besides H, so it must equal the one right coset. This covers Aₙ in Sₙ. It also gives [[Group Theory §36 Sources of Normal Subgroups#^prop-36-6|The Normal Core]]. The condition is what makes coset multiplication well defined ([[Group Theory §34 Multiplying Cosets#^prop-34-1|§34.1]]), and so what makes [[Quotient Groups]] exist.
+- **More characterizations.** The worksheet has five equivalent conditions ([[Group Theory §35 Normal Subgroups#^thm-35-3|§35.3]]), including being a union of conjugacy classes ([[Group Theory §36 Sources of Normal Subgroups#^prop-36-7|§36.7]]). That one is the practical test in Sₙ ([[Group Theory §36 Sources of Normal Subgroups#^ex-36-3|Ex. §36.3]]).
+- **Same idea elsewhere.** For a subspace U, v + U = U + v always, since addition commutes. That is why [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]] (LADR 3.103) needs no normality hypothesis.

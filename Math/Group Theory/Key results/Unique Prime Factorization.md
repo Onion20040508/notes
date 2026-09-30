@@ -24,4 +24,6 @@ tags: [group-theory, hub]
 - [[Group Theory §33 The Center#^cor-33-4|Corollary §33.4: p Divides ∣Z(G)∣]]
 
 ## Connections
-- TODO
+- **Used for.** ℚ^× ≅ ℤ^⊕∞ × ℤ/2ℤ, one coordinate per prime ([[Group Theory §16 Isomorphisms#^prop-16-9|§16.9]]); Uₙ as a product over prime powers ([[Group Theory §21 The Structure of Uₙ#^thm-21-2|§21.2]]) and [[Group Theory §21 The Structure of Uₙ#^cor-21-3|Euler's Totient Formula]]. In a group of order pᵏ, every class size divides pᵏ and is therefore a power of p, which drives [[p-Groups Have Nontrivial Center]].
+- **Proof.** Existence is by induction. Uniqueness follows from [[Euclid's Lemma]], the last link of [[Group Theory §9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^rem-9-1|The Dependency Chain in ℤ]].
+- **Same idea elsewhere.** Polynomials factor uniquely into linear factors over ℂ ([[Linear Algebra 4 Polynomials#^ladr-4-13|LADR 4.13]]), and into linear and irreducible quadratic factors over ℝ ([[Linear Algebra 4 Polynomials#^ladr-4-16|LADR 4.16]]).

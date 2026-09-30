@@ -1,0 +1,19 @@
+% Figure from MATH 493 notes, section 27. Compile with the notes preamble.
+\begin{tikzpicture}[dot/.style={circle, fill, inner sep=0pt, minimum size=4pt}]
+  % the cosets as columns
+  \foreach \x/\c/\f/\lab in {0/figB/figB!12/H, 1.5/black!55/black!6/g_2H, 3.0/black!55/black!6/g_3H, 5.1/black!55/black!6/g_mH} {
+    \filldraw[rounded corners=5pt, thick, draw=\c, fill=\f] (\x-0.4,-0.3) rectangle (\x+0.4,2.3);
+    \foreach \y in {0,0.5,1,1.5,2} \node[dot, \c] at (\x,\y) {};
+    \node[font=\small, \c, anchor=north] at (\x,-0.35) {$\lab$};
+  }
+  \node at (4.05,1) {$\cdots$};
+  % the bijection H -> g_2 H
+  \foreach \y in {0,0.5,1,1.5,2}
+    \draw[figR, -{Stealth[length=1.6mm]}, thin, shorten <=3pt, shorten >=3pt] (0,\y) -- (1.5,\y);
+  \node[figR, font=\scriptsize, fill=white, inner sep=1pt] at (0.75,2.55) {$h \mapsto g_2h$};
+  % braces
+  \draw[decorate, decoration={brace, amplitude=4pt}, black!55] (5.62,2.3) -- (5.62,-0.3)
+    node[midway, right=5pt, font=\scriptsize, black] {$|H|$ each};
+  \draw[decorate, decoration={brace, amplitude=5pt, mirror}, black!55] (-0.4,-0.85) -- (5.5,-0.85)
+    node[midway, below=6pt, font=\scriptsize, black] {$[G:H]$ cosets, disjoint, covering $G$};
+\end{tikzpicture}

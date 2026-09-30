@@ -1,0 +1,17 @@
+% Figure from MATH 493 notes, section 23. Compile with the notes preamble.
+\begin{tikzpicture}
+  % vertices 1, 2, 3 counterclockwise; [k] rotates k steps further around (by 120k degrees)
+  \foreach \k/\s/\col/\lab [count=\p from 0] in {1/1/figB/{$\varphi([1]) = (1\,2\,3)$}, 2/-1/figR/{$\varphi([2]) = (1\,3\,2)$}} {
+    \begin{scope}[xshift=\p*3.6cm]
+      \filldraw[fill=black!5, draw=black!70, thick] (90:1) -- (210:1) -- (330:1) -- cycle;
+      \foreach \v/\a in {1/90, 2/210, 3/330} {
+        \fill[black] (\a:1) circle (1.4pt);
+        \node[font=\small] at (\a:0.62) {$\v$};
+        % arrow from vertex v to vertex v+k (two steps counterclockwise = one step clockwise)
+        \draw[\col, semithick, -stealth] (\a+12*\s:1.3) arc[start angle=\a+12*\s, end angle=\a+108*\s, radius=1.3];
+      }
+      \node[font=\small, \col] at (0,0.02) {$[\k]$};
+      \node[font=\scriptsize] at (0,-1.75) {\lab};
+    \end{scope}
+  }
+\end{tikzpicture}

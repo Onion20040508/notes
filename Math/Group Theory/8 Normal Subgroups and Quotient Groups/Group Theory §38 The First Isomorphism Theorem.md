@@ -77,6 +77,9 @@ tags: [group-theory, math493]
 
 ^ex-38-1
 
+![[m493-38-2.svg]]
+*Part 3 of the example, $\alpha: \mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$. The kernel $N = \{[0], [3]\}$ (red) and its cosets are exactly the fibres of $\alpha$: each coset goes to a single element of the image $I = \{1, 2, 4\}$ (blue). So $\beta(gN) = \alpha(g)$ is well defined and bijective, $(\mathbb{Z}/6\mathbb{Z})/N \cong I$, and $6 = 2 \cdot 3$.*
+
 > [!remark]- Connections
 > - The homomorphism in (2): [[Linear Algebra 9C Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
 

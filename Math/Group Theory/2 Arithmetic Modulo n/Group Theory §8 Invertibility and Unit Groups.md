@@ -170,6 +170,9 @@ tags: [group-theory, math493]
 
 ^rem-8-2
 
+![[m493-8-1.svg]]
+*Finiteness plus cancellation. Left: multiplication by $3$ on the six nonzero classes modulo $7$ is injective, hence onto, so some arrow must land on $1$: here $3 \cdot 5 \equiv 1$ (red), i.e. $[3]^{-1} = [5]$. Right: multiplication by $4$ on $\mathbb{Z}/6\mathbb{Z}$, where $\gcd(4, 6) = 2$, sends two classes to each even class and misses $1, 3, 5$ (dashed red), so $4x \equiv 1$ has no solution and $4x \equiv 2$ has two, as in Example §8.4.*
+
 > [!definition] Definition §8.4: The Unit Group $(\mathbb{Z}/n\mathbb{Z})^\times = U_n$
 > Fix an integer $n \geq 1$. Define
 >

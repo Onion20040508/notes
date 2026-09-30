@@ -59,6 +59,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §41 Commutators#^def-41-1|Def. §41.1]], [[Group Theory §12 Multiplying and Conjugating Cycles#^ex-12-1|Ex. §12.1]], [[Group Theory §11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]]
 
+![[m493-41-1.svg]]
+*The commutator of §41.2 as a wiring diagram, read left to right in the order the factors act (right to left in the product $g_1g_2g_1^{-1}g_2^{-1}$). Following each strand through the four swaps: $i$ ends at $j$ (blue), $j$ at $k$ (red), $k$ at $i$ (green). The result is the $3$-cycle $(i\,j\,k)$.*
+
 > [!theorem] Proposition §41.3: Transpositions Are Not Commutators
 > Let $n \geq 2$ and let $s = (i\,j) \in S_n$ with $i \neq j$. Then $s$ is not a commutator.
 >

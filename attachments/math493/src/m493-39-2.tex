@@ -1,0 +1,19 @@
+% Figure from MATH 493 notes, section 39. Compile with the notes preamble.
+\begin{tikzpicture}[v/.style={circle, fill=white, draw=black!70, thick, inner sep=0pt, minimum size=0.42cm, font=\scriptsize},
+  pr/.style={figB, very thick}]
+  \foreach \s/\a/\b/\c/\d/\lab in {0/1/2/3/4/{\{\{1,2\},\{3,4\}\}}, 3.3/1/3/2/4/{\{\{1,3\},\{2,4\}\}}, 6.6/1/4/2/3/{\{\{1,4\},\{2,3\}\}}} {
+    \begin{scope}[shift={(\s,0)}]
+      \coordinate (p1) at (0,1.3); \coordinate (p2) at (1.3,1.3);
+      \coordinate (p3) at (0,0);   \coordinate (p4) at (1.3,0);
+      \draw[pr] (p\a) -- (p\b);
+      \draw[pr] (p\c) -- (p\d);
+      \foreach \k in {1,2,3,4} \node[v] at (p\k) {$\k$};
+      \node[font=\scriptsize, anchor=north] at (0.65,-0.3) {$\lab$};
+      \coordinate (m\s) at (0.65,-0.95);
+    \end{scope}
+  }
+  % the transposition (3 4)
+  \draw[figR, -{Stealth[length=2mm]}, thick] (0.45,-0.95) arc[start angle=160, end angle=-160, radius=0.22];
+  \draw[figR, {Stealth[length=2mm]}-{Stealth[length=2mm]}, thick] (3.95,-1.05) to[bend right=22] node[midway, below, font=\scriptsize] {$(3\,4)$} (7.25,-1.05);
+  \node[figR, font=\scriptsize, anchor=west] at (0.95,-1.05) {$(3\,4)$};
+\end{tikzpicture}

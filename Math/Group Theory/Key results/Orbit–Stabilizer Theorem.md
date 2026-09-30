@@ -23,4 +23,7 @@ tags: [group-theory, hub]
 - [[Group Theory §32 Conjugation as an Action and the Class Equation#^cor-32-2|Corollary §32.2: Class Sizes Divide the Group Order]]
 
 ## Connections
-- TODO
+- **Used for.** Class sizes divide |G| ([[Group Theory §32 Conjugation as an Action and the Class Equation#^cor-32-2|§32.2]]), hence the [[Class Equation]]. Also [[Burnside's Lemma]], the 24 rotations of the cube (6 faces, each with a stabilizer of order 4; [[Group Theory §30 Examples꞉ Linear Groups and the Cube#^prop-30-3|§30.3]]), and n! = (n − 1)! · n from the point stabilizer in Sₙ ([[Group Theory §28 Orbit–Stabilizer#^cor-28-5|§28.5]]).
+- **Structural form.** Each orbit Gx is in natural bijection with G/Stab(x), and every G/H arises this way ([[Group Theory §28 Orbit–Stabilizer#^rem-28-1|The Structural Picture]], [[Group Theory §29 G Acting on Coset Spaces#^prop-29-1|§29.1]]). Stabilizers along an orbit are conjugate ([[Group Theory §24 Stabilizers and Fixed Points#^prop-24-2|§24.2]]).
+- **Same idea elsewhere.** O₃(ℝ) acting on ℝ³ has the spheres as orbits, with Stab(e₁) ≅ O₂(ℝ) ([[Group Theory §30 Examples꞉ Linear Groups and the Cube#^prop-30-2|§30.2]]). In 590, the map π₁(B, b₀) → p⁻¹(b₀) of [[Properties of the Lifting Correspondence]] is the orbit map of an action of π₁ on the fiber. It is onto when E is path-connected (one orbit) and injective when E is simply connected (trivial stabilizer).
+- **Coming later in the course.** The Sylow theorems are proved by counting orbits of actions on subgroups and cosets.

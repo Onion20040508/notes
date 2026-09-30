@@ -130,6 +130,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §36 Sources of Normal Subgroups#^prop-36-7|§36.7]], [[Group Theory §27 The Index and Lagrange's Theorem#^thm-27-2|§27.2]], [[Group Theory §39 Simple Groups#^def-39-1|Def. §39.1]]
 
+![[m493-39-1.svg]]
+*The proof that $A_5$ is simple: a normal subgroup $N$ is a union of classes containing $\{e\}$, so $|N| = 1 + s$ with $s$ a sum of some of $20, 15, 12, 12$ (red), and $|N|$ must divide $60$ (blue). The two rows meet only at $1$ and $60$ (boxed).*
+
 > [!theorem] Theorem §39.7: $A_5$ Is the Smallest Non-Abelian Simple Group
 > Every non-abelian simple group has order at least $60 = |A_5|$.
 >
@@ -231,6 +234,9 @@ tags: [group-theory, math493]
 ^pf-39-10
 
 *Uses:* [[Group Theory §23 Actions#^def-23-1|Def. §23.1]], [[Group Theory §23 Actions#^thm-23-3|§23.3]], [[Group Theory §20 The Sign Homomorphism and the Alternating Group#^thm-20-7|§20.7]], [[Group Theory §38 The First Isomorphism Theorem#^cor-38-2|§38.2]], [[Group Theory §36 Sources of Normal Subgroups#^prop-36-2|§36.2]], [[Group Theory §38 The First Isomorphism Theorem#^thm-38-1|§38.1]], [[Group Theory §13 Subgroups of S₃#^prop-13-1|§13.1]]
+
+![[m493-39-2.svg]]
+*The three ways of splitting $\{1,2,3,4\}$ into two pairs, each drawn as two blue edges. The transposition $(3\,4)$ fixes $\{\{1,2\},\{3,4\}\}$ and swaps the other two splittings (red), so it acts on $P$ as a transposition. A double transposition such as $(1\,2)(3\,4)$ carries every splitting to itself, which is why $V$ is the kernel.*
 
 > [!example] Example §39.1: In $A_4$, $(1\,2\,3)$ and $(1\,3\,2)$ Are Not Conjugate
 > The restriction $\alpha|_{A_4}: A_4 \to A_3$ is a character, since $A_3$ is abelian, and characters are constant on conjugacy classes ([[Group Theory §40 Characters#^prop-40-1|Characters Are Constant on Conjugacy Classes]], §40). Now $\alpha((1\,2\,3)) \neq e$, because $(1\,2\,3) \notin V$, and $\alpha((1\,3\,2)) = \alpha((1\,2\,3))^{-1}$. In a group of order $3$ no non-identity element equals its own inverse, so the two images differ, and $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ (although they are conjugate in $S_4$). So [[Group Theory §39 Simple Groups#^lem-39-8|the lemma on 3-cycles]] fails for $n = 4$.

@@ -1,0 +1,20 @@
+% Figure from MATH 493 notes, section 17. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0]
+  % rays: all k on ray j have g^k = g^j
+  \foreach \j/\lab in {1/g, 2/g^2, 3/g^3, 4/g^4, 5/g^5} {
+    \draw[black!30, -stealth] (0,0) -- ({60*\j}:2.75);
+    \node[font=\small] at ({60*\j}:3.05) {$\lab$};
+  }
+  \draw[figR, -stealth, semithick] (0,0) -- (0:2.75);
+  \node[font=\small, figR] at (0:3.05) {$e$};
+  % the spiral carrying Z
+  \draw[figB, thick, -stealth, domain=-0.25:17.7, samples=200, variable=\t] plot ({60*\t}:{0.75+0.095*\t});
+  \foreach \k in {1,2,3,4,5,7,8,9,10,11,13,14,15,16,17} {
+    \fill[figB] ({60*\k}:{0.75+0.095*\k}) circle (1.3pt);
+    \node[font=\scriptsize, inner sep=0.6pt] at ({60*\k+11}:{0.98+0.095*\k}) {$\k$};
+  }
+  \foreach \k in {0,6,12} {
+    \fill[figR] ({60*\k}:{0.75+0.095*\k}) circle (1.6pt);
+    \node[font=\scriptsize, figR, inner sep=0.6pt] at ({60*\k+11}:{0.98+0.095*\k}) {$\k$};
+  }
+\end{tikzpicture}

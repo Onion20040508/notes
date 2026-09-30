@@ -102,7 +102,7 @@ tags: [group-theory, math493]
 ^ex-28-1
 
 ![[m493-28-2.svg]]
-*The four-petal figure from lecture. Red: the orbit $\{x_1, x_2, x_3, x_4\}$ of the tip $x_1$. Green: the vertical axis, whose reflection $r_v$ together with $e$ forms $\operatorname{Stab}(x_1)$. Dotted: the other three reflection axes.*
+*The four-petal figure from lecture. Red: the orbit $\{x_1, x_2, x_3, x_4\}$ of the tip $x_1$. Blue: the vertical axis, whose reflection $r_v$ together with $e$ forms $\operatorname{Stab}(x_1)$. Dotted: the other three reflection axes.*
 
 > [!remark] Remark: Where Orbit–Stabilizer Has Already Appeared
 > Two instances: the cosets of the point stabilizer in $S_n$ ([[Group Theory §28 Orbit–Stabilizer#^cor-28-5|next subsection]]), where the orbit of $n$ is all of $\{1, \ldots, n\}$ and $n! = (n-1)! \cdot n$; and the conjugacy classes of a group ([[Group Theory — 7 Conjugacy and the Center|Chapter 7]]), which are the orbits of the conjugation action, so that their sizes divide $|G|$ — e.g. $1, 6, 3, 8, 6$ in $S_4$.
@@ -175,6 +175,9 @@ tags: [group-theory, math493]
 
 ^ex-28-2
 
+![[m493-28-3.svg]]
+*The cosets of $H = \{e, (1\,2)\}$ in $S_3$, sorted as in §28.4: each left coset $\alpha H$ (row) collects the permutations with one value of $\alpha(3)$, each right coset $H\alpha$ (column) those with one value of $\alpha^{-1}(3)$. The pair $\alpha = (1\,2\,3)$, $\beta = (1\,3)$ (red) share a row, since $\alpha(3) = \beta(3) = 1$, but not a column, since $\alpha^{-1}(3) = 2 \neq 1 = \beta^{-1}(3)$. The left half is the orbit bijection $S_3/H \to \{1,2,3\}$ of §28.5.*
+
 > [!remark] Remark: Why the Bijection $G/H \to H\backslash G$ Uses $g^{-1}$
 > This example explains the shape of the map in [[Group Theory §26 Left and Right Cosets#^prop-26-3|§26.3]]. Left cosets of the stabilizer record $\alpha(n)$; right cosets record $\alpha^{-1}(n)$. The two decompositions of $S_n$ are therefore genuinely different — they sort permutations by different data — but they are matched by the operation $\alpha \mapsto \alpha^{-1}$, which converts one datum into the other. This is exactly why the natural bijection is $gH \mapsto Hg^{-1}$ and not $gH \mapsto Hg$.
 
@@ -217,3 +220,6 @@ tags: [group-theory, math493]
 > 3. *Conjugation.* For $G$ acting on itself by conjugation, $\operatorname{Fix}(g) = C_G(g) = \{h : hg = gh\}$, the centralizer of $g$ ([[Group Theory §32 Conjugation as an Action and the Class Equation#^def-32-1|Def. §32.1]]), and the orbits are the conjugacy classes, so the number of conjugacy classes is the average size of a centralizer, $\frac{1}{|G|}\sum_g |C_G(g)|$. For $S_3$: $\frac{1}{6}(6 + 2 + 2 + 2 + 3 + 3) = 3$.
 
 ^ex-28-3
+
+![[m493-28-4.svg]]
+*The double count in the proof of Burnside's lemma, for $S_3$ acting on $\{1,2,3\}$ (part 1 of the example): a dot marks each pair with $g \star x = x$. The row sums are $|\operatorname{Fix}(g)|$ (blue) and the column sums are $|\operatorname{Stab}(x)| = 6/|Gx| = 2$ (red); both add up to $|P| = 6$, so the average number of fixed points is $6/6 = 1$ orbit.*

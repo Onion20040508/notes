@@ -44,6 +44,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §20 The Sign Homomorphism and the Alternating Group#^def-20-1|Def. §20.1]]
 
+![[m493-20-1.svg]]
+*Bubble sort on the sequence $(4, 3, 1, 2)$ of $\sigma = (1\,4\,2\,3)$ from [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^ex-19-2|Ex. §19.2]]. Each red crossing swaps an adjacent inversion and lowers $\operatorname{inv}$ by exactly one, so sorting takes $\operatorname{inv}(\sigma) = 5$ swaps and $\operatorname{sgn}(\sigma) = (-1)^5 = -1$. Two wires cross exactly when their values form an inversion ($1$ and $2$ never cross). Reading the swaps backwards gives [[Group Theory §20 The Sign Homomorphism and the Alternating Group#^thm-20-7|§20.7]] (1): $\sigma = t_5 t_4 t_3 t_2 t_1 = (2\,3)(1\,2)(3\,4)(2\,3)(1\,2)$.*
+
 > [!remark]- Connections
 > - Linear-algebra counterpart: [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-34|LADR 9.34]] (swapping two entries of a permutation changes the parity of the number of inversions).
 
@@ -151,6 +154,9 @@ tags: [group-theory, math493]
 ^pf-20-5
 
 *Uses:* [[Group Theory §20 The Sign Homomorphism and the Alternating Group#^cor-20-4|§20.4]], [[Group Theory §20 The Sign Homomorphism and the Alternating Group#^thm-20-3|§20.3]], [[Group Theory §20 The Sign Homomorphism and the Alternating Group#^def-20-3|Def. §20.3]]
+
+![[m493-20-2.svg]]
+*The proof for $n = 3$: left multiplication by $(1\,2)$ flips the sign, so it exchanges the three even permutations, $A_3$ (blue), with the three odd ones (red). Being its own inverse it is a bijection, and $|A_3| = 3!/2 = 3$.*
 
 > [!remark]- Connections
 > - Later readings: $A_n$ has index $2$, hence is normal by [[Group Theory §36 Sources of Normal Subgroups#^prop-36-1|Subgroups of Index 2 Are Normal]]; the count is an instance of [[Group Theory §38 The First Isomorphism Theorem#^cor-38-2|§38.2]].

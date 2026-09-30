@@ -56,6 +56,9 @@ tags: [topology, math590]
 
 ^def-21-1
 
+> [!remark]- Connections
+> - Developed in full in Group Theory: [[Group Theory §1 The Definition of a Group#^def-1-1|493 §1.1]], with the uniqueness and cancellation facts in [[Group Theory §2 First Consequences of the Axioms|493 §2]] and [[Cancellation Laws in Groups]].
+
 > [!remark] Remark: Uniqueness of Identity and Inverses
 > The identity is unique: if $e$ and $e'$ are both identities, then $e = e \cdot e' = e'$. Inverses are unique: if $g \cdot h = e$ and $g \cdot h' = e$, left-multiplying by $g^{-1}$ gives $h = h'$.
 
@@ -78,6 +81,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Linear-algebra analogue: [[Linear Algebra 1C Subspaces#^ladr-1-34|Conditions for a subspace]].
+> - Developed in full in Group Theory: [[Group Theory §4 Subgroups#^def-4-1|493 §4.1]], with the one-step test in [[Subgroup Criteria]].
 
 > [!theorem] Proposition §21.1: Properties Inherited by Subgroups
 > Let $H \leq G$ be a subgroup. Then:
@@ -119,6 +123,9 @@ tags: [topology, math590]
 
 ^def-21-3
 
+> [!remark]- Connections
+> - Developed in full in Group Theory: [[Group Theory §15 Homomorphisms#^def-15-1|493 §15.1]].
+
 > [!theorem] Theorem §21.3: Homomorphisms Preserve Identity and Inverses
 > Let $f: G \to G'$ be a homomorphism. Then:
 > 1. $f(e_G) = e_{G'}$.
@@ -141,6 +148,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Linear-algebra version of (1): [[Linear Algebra 3A Vector Space of Linear Maps#^ladr-3-10|Linear maps take 0 to 0]].
+> - 493 counterpart: [[Group Theory §15 Homomorphisms#^prop-15-1|493 Prop. §15.1]].
 
 > [!remark] Remark
 > Note that only the homomorphism property $f(xy) = f(x)f(y)$ is assumed — preservation of identity and inverses follows automatically. This is why the definition of homomorphism only requires preserving the operation.
@@ -180,6 +188,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Linear-algebra version: [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-69|Isomorphism, isomorphic]].
+> - 493 counterpart: [[Group Theory §16 Isomorphisms#^def-16-1|493 §16.1]], with isomorphism invariants in [[Group Theory §16 Isomorphisms#^prop-16-5|493 §16.5]].
 
 > [!theorem] Theorem §21.5: Inverse of an Isomorphism is a Homomorphism
 > If $f: G \to G'$ is an isomorphism, then $f^{-1}: G' \to G$ is also a homomorphism (and hence an isomorphism).
@@ -198,6 +207,9 @@ tags: [topology, math590]
 ^pf-21-5
 
 *Uses:* [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-3|Def. §21.3]], [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-4|Def. §21.4]]
+
+> [!remark]- Connections
+> - 493 counterpart: [[Group Theory §16 Isomorphisms#^prop-16-1|493 Prop. §16.1]].
 
 > [!remark] Remark: Contrast with Topology
 > In topology, a continuous bijection does *not* automatically have a continuous inverse — this is why [[Topology §9 Continuous Functions#^def-9-2|homeomorphism]] requires both directions, and why the [[Bijection from Compact to Hausdorff is a Homeomorphism|compact-to-Hausdorff theorem]] is needed to get the inverse for free. For groups, bijectivity + forward homomorphism gives the inverse homomorphism for free. So “isomorphism = bijective homomorphism” is a *theorem*, not merely a convention: you only need to check one direction.
@@ -266,6 +278,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Linear-algebra version: [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-87|Product of vector spaces]].
 > - Appears as $\pi_1$ of a product: [[Topology §23 The Fundamental Group#^thm-23-7|π₁ of a Product Space]].
+> - 493 counterpart: [[Group Theory §3 Basic Examples of Groups#^def-3-2|493 §3.2]], with its universal property in [[Group Theory §18 Conjugation, Products, and Pointwise Products#^prop-18-3|493 §18.3]].
 
 > [!example] Example §21.2
 > $\mathbb{Z} \times \mathbb{Z}$ is the group of integer pairs $(m, n)$ with addition $(m_1, n_1) + (m_2, n_2) = (m_1 + m_2, n_1 + n_2)$. Identity is $(0, 0)$, inverse of $(m, n)$ is $(-m, -n)$. This is abelian: $(m_1, n_1) + (m_2, n_2) = (m_2, n_2) + (m_1, n_1)$.
@@ -322,6 +335,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Linear-algebra versions: [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-11|Null space, null T]] (the kernel) and [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-16|Range]] (the image).
+> - 493 counterpart: [[Group Theory §15 Homomorphisms#^def-15-2|493 §15.2]]; injectivity via the kernel in [[Injective iff Trivial Kernel]].
 
 > [!theorem] Proposition §21.8
 > $\ker(f) \leq G$ and $\operatorname{im}(f) \leq G'$. Moreover, $f$ is injective if and only if $\ker(f) = \{e\}$.
@@ -643,6 +657,9 @@ The notation $\langle a, b \mid r \rangle$ means “force $r = e$.” But what d
 
 ^def-21-12
 
+> [!remark]- Connections
+> - Developed in full in Group Theory: [[Group Theory §35 Normal Subgroups#^def-35-1|493 §35.1]], with equivalent forms in [[Characterizations of Normality]]; the kernel fact of the next remark is [[Kernels Are Normal]].
+
 > [!remark] Remark
 > Every subgroup of an abelian group is normal ($gng^{-1} = n \in N$, since conjugation does nothing). The [[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-6|kernel]] of any homomorphism is always normal: if $f(n) = e$, then $f(gng^{-1}) = f(g) \cdot e \cdot f(g)^{-1} = e$, so $gng^{-1} \in \ker(f)$.
 
@@ -656,6 +673,7 @@ The notation $\langle a, b \mid r \rangle$ means “force $r = e$.” But what d
 > [!remark]- Connections
 > - Linear-algebra versions: cosets ↔ [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-97|Translate]], $G/N$ ↔ [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]], $p$ ↔ [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]].
 > - Topological version: [[Topology §12 Quotient Topology#^def-12-3|Quotient Space]].
+> - Developed in full in Group Theory: cosets in [[Group Theory §26 Left and Right Cosets#^def-26-2|493 §26.2]] ([[Cosets Partition a Group]]) and quotient groups in [[Group Theory §37 Quotient Groups#^def-37-1|493 §37.1]] ([[Quotient Groups]]).
 
 > [!remark] Remark: What the Slash Means
 > $G/N$ means: take $G$, declare everything in $N$ to be the identity, see what's left. Two elements $g, h \in G$ become “the same” in $G/N$ if they differ by something in $N$ — i.e., $g^{-1}h \in N$. The slash is literally division: you divide $G$ into groups of equivalent elements (cosets). Each coset $gN$ is one element of $G/N$. The elements of $N$ itself all collapse to the identity coset $eN = N$.
@@ -693,6 +711,9 @@ The notation $\langle a, b \mid r \rangle$ means “force $r = e$.” But what d
 > *Concrete case $n = 3$:* Start with $\mathbb{Z} = \{\ldots, -3, -2, -1, 0, 1, 2, 3, 4, 5, \ldots\}$. Force $3\mathbb{Z} = \{\ldots, -6, -3, 0, 3, 6, 9, \ldots\}$ to equal $0$. Since $3 = 0$: $4 = 3+1 = 1$, $5 = 3+2 = 2$, $7 = 6+1 = 1$, $-1 = -3+2 = 2$. Every integer collapses to its remainder mod $3$. Result: $\mathbb{Z}/3\mathbb{Z} = \{[0], [1], [2]\}$ with $[2] + [1] = [0]$.
 
 ^ex-21-7
+
+> [!remark]- Connections
+> - 493 counterpart: [[Group Theory §7 The Group ℤ∕nℤ#^def-7-1|493 §7.1]], and ℤ/nℤ as a quotient group in [[Group Theory §37 Quotient Groups#^ex-37-1|493 Ex. §37.1]].
 
 > [!example] Example §21.8: Forcing Commutativity
 > Start with $F_2 = \langle a, b \rangle$ (all words in $a, b$, no simplification). Force $aba^{-1}b^{-1} = e$, i.e., $ab = ba$. Now every word reduces to $a^m b^n$: for instance, $bab^{-1} = a$, $a^2ba^{-1} = ab$, $baba = a^2b^2$. Result: $\mathbb{Z} \times \mathbb{Z}$.

@@ -37,4 +37,6 @@ tags: [group-theory, hub]
 - [[Group Theory §27 The Index and Lagrange's Theorem#^thm-27-7|Theorem §27.7: Groups of Prime Order]]
 
 ## Connections
-- TODO
+- **Used for.** ⟨g⟩ is a subgroup ([[Group Theory §4 Subgroups#^prop-4-5|§4.5]]). The laws say exactly that k ↦ gᵏ is a homomorphism ℤ → G ([[Group Theory §17 Cyclic Groups#^prop-17-3|§17.3]]). That drives the [[Classification of Cyclic Groups]], [[Subgroups of Cyclic Groups Are Cyclic]], the order of a power ([[Group Theory §17 Cyclic Groups#^prop-17-5|§17.5]]), and ord(g) dividing |G| ([[Group Theory §27 The Index and Lagrange's Theorem#^cor-27-3|§27.3]]).
+- **One element only.** For two elements the laws fail: in S₃ with g = (1 2), h = (2 3), (gh)² ≠ g²h² and (gh)⁻¹ ≠ g⁻¹h⁻¹ ([[Group Theory §4 Subgroups#^rem-4-1|Two Non-Laws]]). Either identity holds for all g, h exactly when G is abelian ([[Group Theory §18 Conjugation, Products, and Pointwise Products#^prop-18-4|§18.4]]).
+- **Same idea elsewhere.** The 590 notes define the same powers ([[Topology §21 Algebra Prerequisites꞉ Groups#^def-21-7|Powers and Generators]]). There "map the generator anywhere" ([[Topology §21 Algebra Prerequisites꞉ Groups#^rem-21-9|Remark after §21.7]]) says that ℤ is free on one generator, which is the homomorphism k ↦ gᵏ again.

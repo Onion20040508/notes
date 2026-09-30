@@ -185,6 +185,9 @@ tags: [group-theory, math493]
 
 ^ex-19-2
 
+![[m493-19-1.svg]]
+*$M(\sigma)$ for $\sigma = (1\,2\,3)$, as in Ex. §19.2. Column $i$ is $e_{\sigma(i)}$, so its single $1$ (red) sits in row $\sigma(i)$. Multiplying a vector by $M(\sigma)$ therefore carries the entry in position $i$ to position $\sigma(i)$ (right): $a$ moves from $1$ to $2$, $b$ from $2$ to $3$, $c$ from $3$ to $1$.*
+
 > [!theorem] Proposition §19.5: $\sigma \mapsto M(\sigma)$ Is an Injective Homomorphism $S_n \to GL_n(k)$
 > For all $\sigma, \tau \in S_n$: $M(\sigma\tau) = M(\sigma) M(\tau)$, $M(e) = I_n$, and $M(\sigma)$ is invertible with $M(\sigma)^{-1} = M(\sigma^{-1}) = M(\sigma)^{\mathsf{T}}$. The map $\sigma \mapsto M(\sigma)$ is injective.
 

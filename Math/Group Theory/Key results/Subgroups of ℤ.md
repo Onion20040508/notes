@@ -21,4 +21,7 @@ tags: [group-theory, hub]
 - [[Group Theory §17 Cyclic Groups#^thm-17-4|Theorem §17.4: Subgroups of Cyclic Groups Are Cyclic]]
 
 ## Connections
-- TODO
+- **Used for.** [[Bézout's Identity]] (aℤ + bℤ = gcd(a, b)ℤ), and through it [[Group Theory §9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^rem-9-1|The Dependency Chain in ℤ]]. Also [[Subgroups of Cyclic Groups Are Cyclic]], and the fact that the exponents killing g form ord(g)ℤ ([[Group Theory §4 Subgroups#^rem-4-4|Where Finiteness Enters]], [[Group Theory §17 Cyclic Groups#^prop-17-3|§17.3]]).
+- **Beyond ℤ.** A nonzero subgroup of ℝ is either aℤ or dense ([[Group Theory §5 A Zoo of Subgroups#^prop-5-3|§5.3]]), e.g. ℤ + √2ℤ is dense ([[Group Theory §5 A Zoo of Subgroups#^ex-5-3|Ex. §5.3]]). Subgroups of ℤ² can need two generators ([[Group Theory §5 A Zoo of Subgroups#^ex-5-1|Ex. §5.1]]).
+- **Same idea elsewhere.** The polynomials q with q(T) = 0 are exactly the multiples of the minimal polynomial ([[Linear Algebra 5B The Minimal Polynomial#^ladr-5-29|LADR 5.29]]). The proof is the same least-element-plus-division argument, using [[Linear Algebra 4 Polynomials#^ladr-4-9|LADR 4.9]].
+- **Coming later in the course.** Every subgroup of ℤⁿ is free abelian of rank at most n, part of the structure theory of finitely generated abelian groups ([[Group Theory §5 A Zoo of Subgroups#^rem-5-2|Forward Pointer: Rank]]).

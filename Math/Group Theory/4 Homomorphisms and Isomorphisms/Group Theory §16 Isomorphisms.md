@@ -241,7 +241,7 @@ tags: [group-theory, math493]
 ^rem-16-6
 
 ![[m493-16-1.svg]]
-*Colour-coded tables. Listing $U_5$ in the order $2^0, 2^1, 2^2, 2^3$ reproduces the colour pattern of $\mathbb{Z}/4\mathbb{Z}$ ([[Group Theory §16 Isomorphisms#^prop-16-7|WS 2.5]]: $\mathbb{Z}/4\mathbb{Z} \cong U_5$). No ordering of $U_8$ can: its diagonal is constantly the identity, so every element squares to $1$ ([[Group Theory §16 Isomorphisms#^prop-16-8|WS 2.7]]).*
+*Colour-coded tables. Listing $U_5$ in the order $2^0, 2^1, 2^2, 2^3$ reproduces the colour pattern of $\mathbb{Z}/4\mathbb{Z}$ ([[Group Theory §16 Isomorphisms#^prop-16-7|WS 2.5]]: $\mathbb{Z}/4\mathbb{Z} \cong U_5$). No ordering of $U_8$ can: its diagonal (outlined in red) is constantly the identity, so every element squares to $1$ ([[Group Theory §16 Isomorphisms#^prop-16-8|WS 2.7]]).*
 
 > [!theorem] Proposition §16.9: Structure of $\mathbb{R}^\times$ and $\mathbb{Q}^\times$
 > 1. $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \mathbb{Z}/2\mathbb{Z}$, where $\mathbb{R}_{>0}$ is the positive reals under multiplication.

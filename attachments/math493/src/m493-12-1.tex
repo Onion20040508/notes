@@ -1,0 +1,21 @@
+% Figure from MATH 493 notes, section 12. Compile with the notes preamble.
+\begin{tikzpicture}[
+    el/.style={font=\small, inner sep=2pt},
+    arr/.style={-{Stealth[length=4.5pt]}, thick},
+    sg/.style={-{Stealth[length=4pt]}, thin, black!55, dashed}]
+  \foreach \i in {1,...,4} {
+    \node[el, figB] (a\i) at ({1.7*(\i-1)}, 2.0) {$a_{\i}$};
+    \node[el, figR] (b\i) at ({1.7*(\i-1)}, 0) {$\sigma(a_{\i})$};
+    \draw[sg] (a\i) -- (b\i);
+  }
+  % tau on the top row
+  \foreach \i/\j in {1/2, 2/3, 3/4} {
+    \draw[arr, figB] (a\i) to[bend left=35] (a\j);
+    \draw[arr, figR] (b\i) to[bend right=35] (b\j);
+  }
+  \draw[arr, figB] (a4.north) to[out=125, in=55, looseness=0.55] (a1.north);
+  \draw[arr, figR] (b4.south) to[out=-125, in=-55, looseness=0.55] (b1.south);
+  \node[font=\scriptsize, black!60, anchor=east] at (-0.2,1.0) {$\sigma$};
+  \node[font=\scriptsize, figB, anchor=west] at (5.55,2.0) {$\tau = (a_1\,a_2\,a_3\,a_4)$};
+  \node[font=\scriptsize, figR, anchor=west] at (5.55,0) {$\sigma\tau\sigma^{-1}$};
+\end{tikzpicture}

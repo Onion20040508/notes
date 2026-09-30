@@ -1,0 +1,21 @@
+% Figure from MATH 493 notes, section 41. Compile with the notes preamble.
+\begin{tikzpicture}[x=1.25cm, y=0.8cm]
+  % levels: i = 2, j = 1, k = 0; stages at x = 1..4, applied left to right
+  \foreach \x/\t/\g in {1/(i\,j)/g_2^{-1}, 2/(j\,k)/g_1^{-1}, 3/(i\,j)/g_2, 4/(j\,k)/g_1} {
+    \node[font=\scriptsize] at (\x,2.75) {$\t$};
+    \node[font=\scriptsize, black!60] at (\x,3.25) {$\g$};
+    \fill[black!5] (\x-0.33,-0.3) rectangle (\x+0.33,2.3);
+  }
+  \node[font=\scriptsize, black!60, anchor=east] at (0.45,3.25) {factor};
+  \node[font=\scriptsize, anchor=east] at (0.45,2.75) {applied};
+  \draw[-stealth, black!40, thin] (0.7,-0.65) -- (4.3,-0.65) node[midway, below, font=\scriptsize, black!60] {first $\longrightarrow$ last};
+  % the three points, tracked through the four transpositions
+  \foreach \c/\a/\b/\cc/\d/\e in {figB/2/1/0/0/1, figR/1/2/2/1/0, figG/0/0/1/2/2} {
+    \draw[\c, very thick, rounded corners=3pt]
+      (0,\a) -- (0.67,\a) -- (1.33,\b) -- (1.67,\b) -- (2.33,\cc) -- (2.67,\cc) -- (3.33,\d) -- (3.67,\d) -- (4.33,\e) -- (5,\e);
+  }
+  \foreach \y/\n in {2/i, 1/j, 0/k} {
+    \node[font=\small, anchor=east] at (-0.05,\y) {$\n$};
+    \node[font=\small, anchor=west] at (5.05,\y) {$\n$};
+  }
+\end{tikzpicture}

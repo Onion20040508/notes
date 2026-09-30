@@ -30,4 +30,7 @@ tags: [group-theory, hub]
 - [[Group Theory §39 Simple Groups#^prop-39-6|Proposition §39.6: A_5 Is Simple]]
 
 ## Connections
-- TODO
+- **Used for.** ord(g) divides |G| and g^|G| = e ([[Group Theory §27 The Index and Lagrange's Theorem#^cor-27-3|§27.3]]), hence [[Group Theory §27 The Index and Lagrange's Theorem#^cor-27-4|Fermat's Little Theorem]]. Also [[Groups of Prime Order Are Cyclic]] and the [[Orbit–Stabilizer Theorem]]. It rules out subgroups, e.g. S₃ has none of order 4 or 5 ([[Group Theory §27 The Index and Lagrange's Theorem#^rem-27-1|Uses of Lagrange]]), and together with class sizes it proves [[Group Theory §39 Simple Groups#^prop-39-6|A₅ Is Simple]].
+- **The converse fails.** |A₄| = 12 but A₄ has no subgroup of order 6 ([[Group Theory §27 The Index and Lagrange's Theorem#^ex-27-1|Ex. §27.1]]). Only prime divisors are guaranteed, by [[Group Theory §27 The Index and Lagrange's Theorem#^thm-27-6|Cauchy's Theorem]] ([[Group Theory §27 The Index and Lagrange's Theorem#^rem-27-2|A Partial Converse to Lagrange]]).
+- **Same idea elsewhere.** The 590 notes state it without proof ([[Topology §21 Algebra Prerequisites꞉ Groups#^prop-21-1|590 §21.1]], part 3). For a subspace U of a finite vector space over 𝔽_p, |V| = |U| · |V/U| is Lagrange. Taking log_p gives dim V/U = dim V − dim U ([[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105]]), as in [[Group Theory §38 The First Isomorphism Theorem#^rem-38-2|Rank–Nullity]].
+- **Coming later in the course.** The Sylow theorems give a converse for prime powers: G has a subgroup of order pᵏ whenever pᵏ divides |G|.

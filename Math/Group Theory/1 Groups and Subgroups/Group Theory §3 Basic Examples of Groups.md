@@ -108,6 +108,9 @@ In each example, associativity is inherited from a known associative operation (
 
 *Uses:* [[Group Theory §2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[Group Theory §3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[Linear Algebra 9C Determinants#^ladr-9-50|LADR 9.50]], [[Linear Algebra 9C Determinants#^ladr-9-49|LADR 9.49]], [[Linear Algebra 3C Matrices#^ladr-3-43|LADR 3.43]]
 
+![[m493-3-1.svg]]
+*The two shears of the verification above, $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}$, applied to the unit square (dashed): $AB$ carries it to the parallelogram spanned by its columns $(2,1)$ and $(1,1)$ (blue), $BA$ to the one spanned by $(1,1)$ and $(1,2)$ (red). Different images, so $AB \neq BA$ and $GL_2$ is non-abelian.*
+
 > [!remark]- Connections
 > - Invertible matrices in LADR: [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-80|Invertible, inverse, A⁻¹]]; associativity of composing linear maps: [[Linear Algebra 3A Vector Space of Linear Maps#^ladr-3-8|Algebraic properties of products of linear maps]].
 > - $S_n$ sits inside $GL_n(k)$ via permutation matrices: [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]].

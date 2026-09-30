@@ -22,4 +22,6 @@ tags: [group-theory, hub]
 - [[Group Theory §21 The Structure of Uₙ#^thm-21-2|Theorem §21.2: U_n as a Product of Prime-Power Unit Groups]]
 
 ## Connections
-- TODO
+- **Used for.** The uniqueness half of [[Unique Prime Factorization]], the [[Chinese Remainder Theorem]], [[Group Theory §17 Cyclic Groups#^prop-17-5|The Order of a Power]] (§17.5), and [[Group Theory §21 The Structure of Uₙ#^thm-21-2|the structure of Uₙ]] (§21.2).
+- **Primality is needed.** 6 divides 2 · 3 but neither factor. In ℤ/nℤ, Euclid's lemma says [a][b] = [0] mod p forces [a] = [0] or [b] = [0]. This fails mod 6, where [2][3] = [0], which is why ℤ/nℤ is a field exactly for n prime ([[Group Theory §8 Invertibility and Unit Groups#^prop-8-4|§8.4]], [[Group Theory §3 Basic Examples of Groups#^prop-3-1|No Zero Divisors in a Field]]).
+- **Proof idea.** If p ∤ a then gcd(a, p) = 1, and [[Bézout's Identity]] 1 = ax + py gives b = abx + pby, which p divides.

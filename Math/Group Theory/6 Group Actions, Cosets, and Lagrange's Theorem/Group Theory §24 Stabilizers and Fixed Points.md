@@ -71,6 +71,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §24 Stabilizers and Fixed Points#^def-24-1|Def. §24.1]], [[Group Theory §23 Actions#^def-23-1|Def. §23.1]]
 
+![[m493-24-1.svg]]
+*The proposition in one picture: if $s$ fixes $x$ (red loop), then $gsg^{-1}$ fixes $y = g \star x$ — go back to $x$ by $g^{-1}$ (dashed), loop by $s$, and return by $g$ (read right to left, $g^{-1}$ acts first). Conversely every loop at $y$ arises this way, so $\operatorname{Stab}(y) = g\operatorname{Stab}(x)g^{-1}$.*
+
 > [!theorem] Corollary §24.3: Stabilizers Along an Orbit Are Conjugate
 > If $y = g \star x$ for some $g \in G$ (i.e. $y$ lies in the orbit of $x$, [[Group Theory §25 Orbits#^def-25-1|Def. §25.1]]), then $\operatorname{Stab}(y) = g \operatorname{Stab}(x) g^{-1}$, and conjugation $c_g$ restricts to an isomorphism $\operatorname{Stab}(x) \to \operatorname{Stab}(y)$. In particular all stabilizers of points in one orbit are isomorphic and have the same order.
 

@@ -27,4 +27,6 @@ tags: [group-theory, hub]
 - [[Group Theory §41 Commutators#^thm-41-5|Theorem §41.5: The Commutator Subgroup of S_n]]
 
 ## Connections
-- TODO
+- **Used for.** Aₙ = Ker sgn is normal of order n!/2 ([[Group Theory §20 The Sign Homomorphism and the Alternating Group#^prop-20-5|§20.5]], [[Group Theory §38 The First Isomorphism Theorem#^ex-38-1|Ex. §38.1]]), and the parity of a permutation is well defined ([[Group Theory §20 The Sign Homomorphism and the Alternating Group#^cor-20-4|§20.4]]). Transpositions are not commutators ([[Group Theory §41 Commutators#^prop-41-3|§41.3]]), and [Sₙ, Sₙ] = Aₙ ([[Group Theory §41 Commutators#^thm-41-5|§41.5]]), so every character of Sₙ factors through sgn.
+- **Three definitions.** The sign can be defined by Δ, by inversions, or as det ∘ M ([[Group Theory §20 The Sign Homomorphism and the Alternating Group#^thm-20-2|Three Formulas for the Sign]], [[Group Theory §20 The Sign Homomorphism and the Alternating Group#^rem-20-2|Speyer's Presentation]]). Δ spans a line on which Sₙ acts by sgn ([[Group Theory §40 Characters#^ex-40-2|Ex. §40.2]]).
+- **Same idea elsewhere.** LADR defines the sign by inversions ([[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]]) and uses it in the formula for the determinant ([[Linear Algebra 9C Determinants#^ladr-9-46|LADR 9.46]]). Multiplicativity of det ([[Linear Algebra 9C Determinants#^ladr-9-49|LADR 9.49]]) is what makes sgn a homomorphism here.

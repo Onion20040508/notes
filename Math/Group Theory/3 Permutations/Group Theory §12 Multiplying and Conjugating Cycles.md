@@ -40,6 +40,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §10 Cycle Notation and the Group S₃#^def-10-1|Def. §10.1]], [[Group Theory §11 Disjoint Cycle Decomposition#^def-11-1|Def. §11.1]], [[Group Theory §11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]], [[Group Theory §3 Basic Examples of Groups#^def-3-5|Def. §3.5]]
 
+![[m493-12-1.svg]]
+*Conjugation relabels a cycle. To evaluate $\sigma\tau\sigma^{-1}$ at $\sigma(a_i)$, go up the dashed arrow ($\sigma^{-1}$) to $a_i$, across by $\tau$ to $a_{i+1}$, and down by $\sigma$ to $\sigma(a_{i+1})$. So the red loop is the blue loop $\tau$ with every label replaced by its image under $\sigma$: same shape, same length.*
+
 > [!remark]- Connections
 > - Conjugation in general: [[Group Theory §18 Conjugation, Products, and Pointwise Products#^def-18-2|Conjugation; Conjugate Elements; Inner Automorphism]], [[Group Theory §18 Conjugation, Products, and Pointwise Products#^prop-18-1|Conjugation Is an Automorphism]].
 > - The converse (same cycle type ⇒ conjugate): [[Group Theory §31 Conjugacy Classes#^thm-31-2|Conjugacy Classes in Sₙ Are Cycle Types]].

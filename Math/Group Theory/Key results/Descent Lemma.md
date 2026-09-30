@@ -26,4 +26,7 @@ tags: [group-theory, hub]
 - [[Group Theory §17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k mapsto g^k and langle g rangle ≅ ℤ/Nℤ]]
 
 ## Connections
-- TODO
+- **Used for.** Every well-definedness check for maps out of ℤ/nℤ ([[Group Theory §7 The Group ℤ∕nℤ#^rem-7-1|Where This Is Used]]): ℤ/4ℤ → U₅, k ↦ 2ᵏ ([[Group Theory §16 Isomorphisms#^prop-16-7|§16.7]]); the [[Classification of Cyclic Groups]]; ⟨g⟩ ≅ ℤ/Nℤ ([[Group Theory §17 Cyclic Groups#^prop-17-3|§17.3]]).
+- **The hypothesis is the content.** φ descends exactly when φ(n) = e, i.e. nℤ ⊆ Ker φ. So k ↦ gᵏ descends to ℤ/Nℤ for N = ord(g), because its kernel is Nℤ ([[Group Theory §17 Cyclic Groups#^prop-17-3|§17.3]]). But k ↦ 2ᵏ in U₅ does not descend to ℤ/3ℤ, since 2³ ≠ 1 mod 5.
+- **Generalized.** ℤ/nℤ is the quotient of ℤ by nℤ ([[Group Theory §37 Quotient Groups#^ex-37-1|Ex. §37.1]]). For any normal subgroup N, a homomorphism that kills N factors through G/N. With N = Ker α this is the [[First Isomorphism Theorem for Groups]].
+- **Same idea elsewhere.** A continuous map that is constant on fibers descends through a quotient map ([[Universal Property of Quotient Maps]], 590 §12.3). A linear map descends to V/null T ([[First isomorphism theorem]], LADR 3.107).

@@ -39,6 +39,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[Group Theory §25 Orbits#^def-25-1|Def. §25.1]], [[Group Theory §23 Actions#^def-23-1|Def. §23.1]], [[Group Theory §22 Equivalence Relations and Partitions#^def-22-3|Def. §22.3]]
 
+![[m493-25-1.svg]]
+*The proof: if the orbits of $x$ and $y$ share a point $z$, then $x$ is reached from $y$ by going to $z$ with $h$ and back with $g^{-1}$ (red), so $x = (g^{-1}h) \star y \in Gy$, and then all of $Gx$ lies in $Gy$.*
+
 > [!theorem] Proposition §25.2: The Orbit Relation
 > The relation “$x \sim y$ iff $y = g \star x$ for some $g \in G$” is an [[Group Theory §22 Equivalence Relations and Partitions#^def-22-1|equivalence relation]] on $X$, and its equivalence classes are the orbits.
 
@@ -68,6 +71,9 @@ The left cosets of $H \leq G$ are the special case of $H$ acting on $G$ by right
 > *Source: lecture*
 
 ^def-25-2
+
+![[m493-25-2.svg]]
+*The orbits of $O_3(\mathbb{R})$ on $\mathbb{R}^3$ are the spheres about the origin, the origin itself being a one-point orbit; the orbit of $x$ (red) is the sphere of radius $|x|$. The ray $\mathbb{R}_{\geq 0}$ (blue) meets each orbit exactly once, which is the bijection $O_3 \backslash \mathbb{R}^3 \leftrightarrow \mathbb{R}_{\geq 0}$.*
 
 > [!remark]- Connections
 > - “Like a quotient”: the quotient-set notation $X/{\sim}$ of MATH 590, [[Topology §12 Quotient Topology#^def-12-3|Quotient Space]] (590 §12.3); the coset spaces $G/H$ of [[Group Theory §26 Left and Right Cosets#^def-26-2|Def. §26.2]] and quotient groups [[Group Theory §37 Quotient Groups#^def-37-1|Def. §37.1]].

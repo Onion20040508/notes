@@ -56,6 +56,9 @@ tags: [group-theory, math493]
 
 ^ex-10-1
 
+![[m493-10-1.svg]]
+*$S_3$ as the symmetries of a triangle with corners labeled $1, 2, 3$: a symmetry moves the corner at $i$ to the position of $\sigma(i)$. The rotation by $120^\circ$ in the direction of the blue arrow is $(1\,2\,3)$, the opposite rotation is $(1\,3\,2)$, and the reflection in each dashed red axis fixes the corner on the axis and swaps the other two, giving $(2\,3)$, $(1\,3)$, $(1\,2)$. With the identity, these are all six elements.*
+
 > [!remark]- Connections
 > - The same table as a worksheet problem: [[Group Theory §14 Multiplication Tables#^ex-14-5|Table of S₃]] (WS 2.4); 590 counterpart: [[Topology §21 Algebra Prerequisites꞉ Groups#^ex-21-1|590 Ex. §21.1]].
 
@@ -63,3 +66,6 @@ tags: [group-theory, math493]
 > “Right factor first” is the function-composition convention, confirmed in class on Sept 2: Speyer defines the operation on $S_n$ by $(f \circ g)(j) = f(g(j))$ and computes $(1\,2)(2\,3) = (1\,2\,3)$ by applying $(2\,3)$ first. Some authors — particularly in combinatorics — compose left to right, writing $x^{\sigma\tau} = (x^\sigma)^\tau$; under that convention every product above is reversed, e.g. $(1\,2)(2\,3)$ would equal $(1\,3\,2)$. When reading any source on permutations, locate its convention before trusting a single computation.
 
 ^rem-10-1
+
+![[m493-10-2.svg]]
+*Right factor first, as wiring: each strand passes through the factor applied first, then the second. Left: $(1\,2)(2\,3)$ sends $1 \to 1 \to 2$ (red), $2 \to 3 \to 3$ (blue), $3 \to 2 \to 1$ (green), so it is $(1\,2\,3)$. Right: the other order gives $(1\,3\,2)$. Different diagrams, so $S_3$ is non-abelian; reading a product left to right would swap the two pictures.*

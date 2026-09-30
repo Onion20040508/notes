@@ -1,0 +1,22 @@
+% Figure from MATH 493 notes, section 17. Compile with the notes preamble.
+\begin{tikzpicture}
+  % dot j stands for g^j in <g> of order 12, placed like a clock
+  \foreach \k/\m/\col/\fil/\cap [count=\p from 0] in {
+      5/12/figB/white/{$g^5$, \ $\gcd(12,5) = 1$\\ order $12/1 = 12$},
+      8/3/figR/figR!10/{$g^8$, \ $\gcd(12,8) = 4$\\ order $12/4 = 3$},
+      9/4/figR/figR!10/{$g^9$, \ $\gcd(12,9) = 3$\\ order $12/3 = 4$}} {
+    \begin{scope}[xshift=\p*3.1cm]
+      \draw[black!25] (0,0) circle (1.0);
+      \draw[\col, thick, fill=\fil, line join=round]
+        (90:1.0) \foreach \i in {1,...,\m} { -- ({90-30*\k*\i}:1.0) } -- cycle;
+      \foreach \j in {0,...,11} {
+        \filldraw[fill=white, draw=black!45] ({90-30*\j}:1.0) circle (1.4pt);
+        \node[font=\scriptsize, black!60] at ({90-30*\j}:1.27) {$\j$};
+      }
+      \foreach \i in {1,...,\m} {
+        \fill[\col] ({90-30*\k*\i}:1.0) circle (1.6pt);
+      }
+      \node[font=\scriptsize, align=center] at (0,-1.85) {\cap};
+    \end{scope}
+  }
+\end{tikzpicture}

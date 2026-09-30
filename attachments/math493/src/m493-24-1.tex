@@ -1,0 +1,15 @@
+% Figure from MATH 493 notes, section 24. Compile with the notes preamble.
+\begin{tikzpicture}
+  \filldraw[fill=figB!6, draw=black!40] (1.7,0) ellipse (3.35 and 1.2);
+  \node[font=\small, black!60] at (4.95,1.0) {$Gx$};
+  \coordinate (x) at (0,0);
+  \coordinate (y) at (3.4,0);
+  \draw[figB, thick, -stealth, shorten <=3pt, shorten >=3pt] (x) to[bend left=40] node[above, font=\scriptsize] {$g$} (y);
+  \draw[figB, thick, dashed, -stealth, shorten <=3pt, shorten >=3pt] (y) to[bend left=40] node[below, font=\scriptsize] {$g^{-1}$} (x);
+  \draw[figR, semithick, -stealth] (x) .. controls +(125:1.2) and +(235:1.2) .. node[left, font=\scriptsize] {$s$} (x);
+  \draw[figR, semithick, -stealth] (y) .. controls +(55:1.2) and +(-55:1.2) .. node[right, font=\scriptsize] {$g s g^{-1}$} (y);
+  \fill (x) circle (1.6pt) node[right=3pt, font=\small] {$x$};
+  \fill (y) circle (1.6pt) node[left=3pt, font=\small] {$y$};
+  \node[font=\scriptsize, figR] at (0,-1.5) {$s \in \operatorname{Stab}(x)$};
+  \node[font=\scriptsize, figR] at (3.4,-1.5) {$\operatorname{Stab}(y) = g\operatorname{Stab}(x)g^{-1}$};
+\end{tikzpicture}

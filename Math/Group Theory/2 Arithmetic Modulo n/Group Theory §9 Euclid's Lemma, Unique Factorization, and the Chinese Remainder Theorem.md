@@ -65,6 +65,9 @@ tags: [group-theory, math493]
 
 ^ex-9-1
 
+![[m493-9-1.svg]]
+*$\mathbb{Z}/15\mathbb{Z} \to \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z}$ as a grid: each $x \in \{0, \ldots, 14\}$ sits in row $x \bmod 3$ and column $x \bmod 5$, and every cell is filled exactly once, which is the bijectivity of $\rho$. (Counting $0, 1, 2, \ldots$ steps diagonally, wrapping around in both directions.) The system of the example asks for row $2$ (blue) and column $3$ (red); they meet in the single cell $8$.*
+
 > [!remark] Remark: The Dependency Chain in $\mathbb{Z}$
 > Everything above descends from one idea: [[Group Theory §6 Divisibility and Congruence#^lem-6-1|division algorithm]] $\Rightarrow$ subgroups of $\mathbb{Z}$ are $n\mathbb{Z}$ ([[Group Theory §5 A Zoo of Subgroups#^prop-5-1|§5.1]]) $\Rightarrow$ [[Group Theory §5 A Zoo of Subgroups#^cor-5-2|Bézout]] $\Rightarrow$ [[Group Theory §9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|Euclid's lemma]] $\Rightarrow$ [[Group Theory §9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|unique factorization]]; and Bézout $\Rightarrow$ [[Group Theory §8 Invertibility and Unit Groups#^prop-8-1|invertibility criterion]], $U_n$ is a group ([[Group Theory §8 Invertibility and Unit Groups#^prop-8-3|§8.3]]), and the [[Group Theory §9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|Chinese Remainder Theorem]]. These are the “basic number-theoretic facts” that [[Group Theory — Problem Set 1|Problem Set 1]] permits as assumptions.
 

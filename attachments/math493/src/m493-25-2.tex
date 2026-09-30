@@ -1,0 +1,20 @@
+% Figure from MATH 493 notes, section 25. Compile with the notes preamble.
+\begin{tikzpicture}
+  % spheres about the origin (orbits of O_3), with dashed back halves of their equators
+  \foreach \r/\col/\w in {0.7/black!45/thin, 2.0/black!45/thin, 1.35/figR/thick} {
+    \draw[\col, \w] (0,0) circle (\r);
+    \draw[\col, thin] (-\r,0) arc[start angle=180, end angle=360, x radius=\r, y radius=0.3*\r];
+    \draw[\col, thin, dashed] (\r,0) arc[start angle=0, end angle=180, x radius=\r, y radius=0.3*\r];
+  }
+  % the ray R_{>=0}: meets each orbit exactly once
+  \draw[figB, thick, -stealth] (0,0) -- (-28:2.75) node[right, font=\small] {$\mathbb{R}_{\geq 0}$};
+  \foreach \r in {0.7, 2.0} \fill[figB] (-28:\r) circle (1.5pt);
+  \fill[figR] (-28:1.35) circle (1.7pt);
+  \node[font=\scriptsize, figR, anchor=north east, inner sep=1pt] at ($(-28:1.35)+(-0.05,-0.08)$) {$|x|$};
+  \fill[black] (0,0) circle (1.5pt);
+  \node[font=\scriptsize, anchor=east, inner sep=1.5pt] at (-0.03,0) {$0$};
+  % a point and its orbit
+  \fill[figR] (118:1.35) circle (1.7pt) node[above left, font=\small, inner sep=1.5pt] {$x$};
+  \draw[figR, thin] (40:1.4) -- (1.75,1.65);
+  \node[font=\scriptsize, figR, anchor=west, inner sep=1.5pt] at (1.75,1.65) {$O_3\,x = \{ v : |v| = |x| \}$};
+\end{tikzpicture}

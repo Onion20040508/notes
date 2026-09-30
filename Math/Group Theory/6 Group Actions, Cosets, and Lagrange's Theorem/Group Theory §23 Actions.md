@@ -180,6 +180,9 @@ tags: [group-theory, math493]
 
 ^ex-23-3
 
+![[m493-23-2.svg]]
+*$\mathbb{Z}/3\mathbb{Z}$ rotating the vertices of a triangle. Freezing $[1]$ (blue) sends $1 \to 2 \to 3 \to 1$, the $3$-cycle $(1\,2\,3)$; freezing $[2]$ (red; two steps around is one step backwards) sends $1 \to 3 \to 2 \to 1$, i.e. $(1\,3\,2)$. Reading off where each vertex goes is the homomorphism $\varphi: \mathbb{Z}/3\mathbb{Z} \to S_3$ of [[Group Theory §23 Actions#^thm-23-3|Theorem §23.3]].*
+
 > [!remark] Remark: Why the Identity Axiom Is What Lands $\varphi$ in $S_X$
 > [[Group Theory §23 Actions#^thm-23-3|Part (2)]] never used that $\varphi(g)$ is a *bijection*, only that it is a map $X \to X$ and that composition matches multiplication. One could therefore consider assignments $g \mapsto \hat g$ into all maps $X \to X$ respecting products. The [[Group Theory §23 Actions#^ex-23-1|lecture's example]] of the trivial group acting on $\{0, 1\}$ by $e \star 0 = e \star 1 = 0$ is exactly such an assignment: it sends $e$ to the map $0 \mapsto 0,\ 1 \mapsto 0$, which satisfies $\hat e \circ \hat e = \hat e$ but is not a bijection, so it is *not* an element of $S_X$. The axiom $e \star x = x$ is precisely what forces $\hat e = \operatorname{id}_X$, and then $\widehat{g^{-1}} \circ \hat g = \hat e = \operatorname{id}_X$ forces every $\hat g$ to be a bijection.
 
@@ -244,7 +247,7 @@ tags: [group-theory, math493]
 *Uses:* [[Group Theory §23 Actions#^thm-23-5|§23.5]], [[Group Theory §19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]], [[Group Theory §15 Homomorphisms#^prop-15-4|§15.4]], [[Group Theory §3 Basic Examples of Groups#^def-3-6|Def. §3.6]]
 
 ![[m493-23-1.svg]]
-*The embedding of a group of order $n$ into $GL_n(k)$: Cayley's theorem, relabelling, and the permutation representation, each injective.*
+*The embedding of a group of order $n$ into $GL_n(k)$: Cayley's theorem, relabelling, and the permutation representation are each injective homomorphisms, so their composite (blue) is one too, realizing $G$ as a group of $n \times n$ permutation matrices.*
 
 > [!remark]- Connections
 > - The small representations the next remark asks for begin with characters: [[Group Theory §40 Characters#^rem-40-4|One-Dimensional Representations]].

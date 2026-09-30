@@ -23,4 +23,7 @@ tags: [group-theory, hub]
 - [[Group Theory §39 Simple Groups#^cor-39-11|Corollary §39.11: Which A_n Are Simple]]
 
 ## Connections
-- TODO
+- **Why n ≥ 5.** For n = 4 it fails: V = {e, (1 2)(3 4), (1 3)(2 4), (1 4)(2 3)} is normal in A₄, as the kernel of the pair-partition map ([[Group Theory §39 Simple Groups#^prop-39-10|§39.10]]), and (1 2 3), (1 3 2) are not conjugate in A₄ ([[Group Theory §39 Simple Groups#^ex-39-1|Ex. §39.1]], [[Group Theory §39 Simple Groups#^rem-39-6|Why n ≥ 5]]).
+- **Used for.** [[Group Theory §39 Simple Groups#^cor-39-11|Which Aₙ Are Simple]] (§39.11). It gives the first infinite family of non-abelian simple groups, starting with A₅, the smallest one ([[Group Theory §39 Simple Groups#^thm-39-7|§39.7]]). The other family is PSL_n(F) ([[Group Theory §39 Simple Groups#^thm-39-13|§39.13]]). For n = 5 the class sizes 1, 20, 15, 12, 12 give a second proof ([[Group Theory §39 Simple Groups#^prop-39-6|A₅ Is Simple]]).
+- **Proof idea.** A nontrivial normal subgroup N contains a 3-cycle, obtained as a commutator g(i j k)g⁻¹(i j k)⁻¹ with g ∈ N. [[Conjugation Relabels a Cycle]] and [[Group Theory §39 Simple Groups#^lem-39-8|3-Cycles Are Conjugate in Aₙ]] then bring in every 3-cycle, and the 3-cycles generate Aₙ ([[Group Theory §20 The Sign Homomorphism and the Alternating Group#^thm-20-9|§20.9]]).
+- **Coming later in the course.** Composition series and the Jordan–Hölder theorem: for n ≥ 5, Sₙ ⊳ Aₙ ⊳ {e} is a composition series with factors ℤ/2ℤ and Aₙ, so Sₙ is not solvable.

@@ -26,4 +26,7 @@ tags: [group-theory, hub]
 - [[Group Theory §21 The Structure of Uₙ#^lem-21-1|Lemma §21.1: Coprime to Each Factor, Coprime to the Product]]
 
 ## Connections
-- TODO
+- **Used for.** The [[Group Theory §8 Invertibility and Unit Groups#^prop-8-1|Invertibility Criterion]] (§8.1), hence that Uₙ is a group ([[Group Theory §8 Invertibility and Unit Groups#^prop-8-3|§8.3]]); [[Euclid's Lemma]]; the [[Chinese Remainder Theorem]]. The whole chain is in [[Group Theory §9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^rem-9-1|The Dependency Chain in ℤ]].
+- **Proof idea.** aℤ + bℤ is a subgroup of ℤ, so it equals dℤ by [[Subgroups of ℤ]], and d = gcd(a, b). This proof only shows that x, y exist; the extended Euclidean algorithm computes them ([[Group Theory §8 Invertibility and Unit Groups#^ex-8-3|Ex. §8.3]]).
+- **In cyclic groups.** The condition gcd(k, n) = 1 is exactly when gᵏ generates a cyclic group of order n ([[Group Theory §17 Cyclic Groups#^cor-17-6|§17.6]]).
+- **Same idea elsewhere.** aℤ + bℤ is the smallest subgroup containing a and b, just as a sum of subspaces is the smallest subspace containing them ([[Linear Algebra 1C Subspaces#^ladr-1-40|LADR 1.40]]).

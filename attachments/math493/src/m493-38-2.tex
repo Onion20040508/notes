@@ -1,0 +1,26 @@
+% Figure from MATH 493 notes, section 38. Compile with the notes preamble.
+\begin{tikzpicture}[el/.style={font=\small, inner sep=1pt},
+  pt/.style={circle, draw, thick, inner sep=0pt, minimum size=0.55cm, font=\small},
+  ar/.style={-{Stealth[length=2mm]}, thick, black!60}]
+  % G = Z/6Z, cut into the cosets of N = Ker(alpha)
+  \node[font=\small] at (0.75,1.75) {$\mathbb{Z}/6\mathbb{Z}$};
+  \foreach \y/\a/\b/\c/\f in {1/0/3/figR/figR!12, 0/1/4/figB/figB!10, -1/2/5/figB/figB!10} {
+    \filldraw[rounded corners=5pt, thick, draw=\c, fill=\f] (0,\y-0.32) rectangle (1.5,\y+0.32);
+    \node[el] at (0.4,\y) {$[\a]$};
+    \node[el] at (1.1,\y) {$[\b]$};
+  }
+  \node[font=\scriptsize, figR, anchor=east] at (-0.08,1) {$N = \operatorname{Ker}\alpha$};
+  \node[font=\scriptsize, figB, anchor=east] at (-0.08,0) {$[1] + N$};
+  \node[font=\scriptsize, figB, anchor=east] at (-0.08,-1) {$[2] + N$};
+  % U_7, with the image I = {1,2,4}
+  \begin{scope}[shift={(4.2,0)}]
+    \node[font=\small] at (0.55,1.75) {$U_7$};
+    \draw[black!40, rounded corners=6pt] (-0.45,-1.5) rectangle (1.55,1.45);
+    \foreach \v/\y in {1/1, 2/0, 4/-1} \node[pt, draw=figB, fill=figB!10] (u\v) at (0,\y) {$\v$};
+    \foreach \v/\y in {3/0.75, 5/0, 6/-0.75} \node[pt, draw=black!35, text=black!45] at (1.05,\y) {$\v$};
+    \draw[figB, dashed, rounded corners=5pt] (-0.36,-1.38) rectangle (0.36,1.38);
+    \node[font=\scriptsize, figB, anchor=north] at (0,-1.55) {$I = \operatorname{Im}\alpha$};
+  \end{scope}
+  \foreach \y/\v in {1/1, 0/2, -1/4} \draw[ar] (1.62,\y) -- (u\v.west);
+  \node[font=\scriptsize, black!70] at (2.7,1.25) {$k \mapsto 2^k$};
+\end{tikzpicture}
