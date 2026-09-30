@@ -1,0 +1,23 @@
+% Figure from MATH 452 notes, section 5. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.35]
+\draw[->] (-0.4,0) -- (3.6,0) node[right, font=\small] {$x$};
+\draw[->] (0,-0.4) -- (0,2.9) node[above, font=\small] {$y$};
+% rectangle corners
+\coordinate (A) at (1.0,0.7);
+\coordinate (B) at (2.6,0.7);
+\coordinate (C) at (2.6,2.1);
+\coordinate (D) at (1.0,2.1);
+\draw[thick, figB, fill=figB!7] (A) rectangle (C);
+\filldraw (A) circle (1.3pt) node[below left, font=\scriptsize] {$(x_0,y_0)$};
+\filldraw (B) circle (1.3pt) node[below right, font=\scriptsize] {$(x_0+h,\,y_0)$};
+\filldraw (C) circle (1.3pt) node[above right, font=\scriptsize] {$(x_0+h,\,y_0+k)$};
+\filldraw (D) circle (1.3pt) node[above, font=\scriptsize, xshift=-6pt] {$(x_0,\,y_0+k)$};
+% signs of the mixed second difference
+\node[figR!85!black, font=\small] at ($(A)+(0.22,0.2)$) {$+$};
+\node[figR!85!black, font=\small] at ($(B)+(-0.22,0.2)$) {$-$};
+\node[figR!85!black, font=\small] at ($(C)+(-0.22,-0.2)$) {$+$};
+\node[figR!85!black, font=\small] at ($(D)+(0.22,-0.2)$) {$-$};
+% braces indicating the two difference orders
+\draw[->, figG, thick] (1.0,-0.25) -- (2.6,-0.25) node[midway, below, font=\scriptsize] {first difference in $x$};
+\draw[->, figG, thick] (3.15,0.7) -- (3.15,2.1) node[midway, right, font=\scriptsize] {then in $y$};
+\end{tikzpicture}

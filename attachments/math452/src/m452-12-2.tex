@@ -1,0 +1,56 @@
+% Figure from MATH 452 notes, section 12. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.05]
+% ====== main panel: contour map of F = x^2/4 + y^2 ======
+\draw[->] (-3.2,0) -- (3.6,0) node[right, font=\small] {$x$};
+\draw[->] (0,-1.9) -- (0,2.2) node[above, font=\small] {$y$};
+% neighboring contours (dashed)
+\draw[dashed, figB!45] (0,0) ellipse (1.30 and 0.65);
+\draw[dashed, figB!45] (0,0) ellipse (2.55 and 1.28);
+\node[figB!55, font=\scriptsize] at (0,-0.81) {$F=c'$};
+\node[figB!55, font=\scriptsize] at (-2.15,-1.52) {$F=c''$};
+% the contour of interest (solid)
+\draw[very thick, figB] (0,0) ellipse (2.0 and 1.0);
+\node[figB!80!black, font=\small, anchor=east] (clab) at (-2.5,0.95) {$F(x,y)=c$};
+\draw[figB!60, thin] (clab.east) -- (-1.73,0.52);
+% --- point (a): generic point at t=50deg ---
+\coordinate (Pa) at ({2*cos(50)},{sin(50)});
+\filldraw[figG] (Pa) circle (1.5pt);
+\draw[figG, thick] ($(Pa)+(-0.33,-0.25)$) rectangle ($(Pa)+(0.33,0.25)$);
+% --- point (b): rightmost point (2,0), vertical tangent ---
+\coordinate (Pb) at (2,0);
+\filldraw[figR] (Pb) circle (1.5pt);
+\draw[figR, thick] ($(Pb)+(-0.25,-0.33)$) rectangle ($(Pb)+(0.25,0.33)$);
+% ====== zoom leader lines ======
+\draw[dashed, gray] ($(Pa)+(-0.33,-0.25)$) -- (-2.85,-2.55);
+\draw[dashed, gray] ($(Pa)+(0.33,-0.25)$) -- (-0.95,-2.55);
+\draw[dashed, gray] ($(Pb)+(-0.25,-0.33)$) -- (2.05,-2.55);
+\draw[dashed, gray] ($(Pb)+(0.25,-0.33)$) -- (3.95,-2.55);
+% ====== zoom A: generic point, graph over x ======
+\begin{scope}[shift={(-1.9,-3.9)}]
+\draw[figG, thick] (-0.95,-1.35) rectangle (0.95,1.35);
+% magnified arc near t=50: y = sqrt(1-x^2/4) recentered; locally like a line with slope dy/dx=-x/(4y)=-0.42
+\draw[very thick, figB, domain=-0.8:0.8, samples=40] plot (\x, {-0.42*\x - 0.20*\x*\x});
+\filldraw[figG] (0,0) circle (1.4pt);
+% vertical line test: two dashed verticals, each one intersection
+\draw[dashed, figR!70] (-0.45,-1.1) -- (-0.45,1.1);
+\draw[dashed, figR!70] (0.45,-1.1) -- (0.45,1.1);
+\filldraw[figB] (-0.45,{0.42*0.45 - 0.20*0.2025}) circle (1.0pt);
+\filldraw[figB] (0.45,{-0.42*0.45 - 0.20*0.2025}) circle (1.0pt);
+\node[font=\scriptsize, align=center] at (0,-1.85) {each vertical line meets\\ the arc once\\ $\Rightarrow$ $y=f(x)$};
+\end{scope}
+% ====== zoom B: vertical tangent, graph over y only ======
+\begin{scope}[shift={(3.0,-3.9)}]
+\draw[figR, thick] (-0.95,-1.35) rectangle (0.95,1.35);
+% magnified arc near (2,0): x = 2 sqrt(1-y^2) ~ 2 - y^2 recentered: left-opening parabola x = -y^2 (scaled)
+\draw[very thick, figB, domain=-1.05:1.05, samples=40, variable=\y] plot ({-0.75*\y*\y+0.42}, \y);
+\filldraw[figR] (0.42,0) circle (1.4pt);
+% vertical line: hits twice
+\draw[dashed, figR!70] (0.10,-1.1) -- (0.10,1.1);
+\filldraw[figB] (0.10,{sqrt(0.32/0.75)}) circle (1.0pt);
+\filldraw[figB] (0.10,{-sqrt(0.32/0.75)}) circle (1.0pt);
+% horizontal line: hits once
+\draw[dashed, figG!80] (-0.85,0.55) -- (0.85,0.55);
+\filldraw[figB] ({-0.75*0.3025+0.42},0.55) circle (1.0pt);
+\node[font=\scriptsize, align=center] at (0,-1.85) {vertical line hits twice ($y=f(x)$ fails);\\ horizontal lines hit once\\ $\Rightarrow$ $x=g(y)$};
+\end{scope}
+\end{tikzpicture}

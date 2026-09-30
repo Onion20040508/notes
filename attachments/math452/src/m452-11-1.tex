@@ -1,0 +1,31 @@
+% Figure from MATH 452 notes, section 11. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.05]
+% ===== left panel: positive divergence (field F=(x,y) around P away from origin) =====
+\begin{scope}
+% test circle
+\coordinate (P) at (0,0);
+\draw[dashed, thick, figB] (P) circle (0.85);
+% field F = (x,y) shifted: at points on circle centered at (2.2,0) global -> arrows grow rightward
+% simulate: arrows at 8 circle points, vector = (2.2+cx, cy)*0.32
+\foreach \ang in {0,45,90,135,180,225,270,315}{
+  \pgfmathsetmacro{\cx}{0.85*cos(\ang)}
+  \pgfmathsetmacro{\cy}{0.85*sin(\ang)}
+  \pgfmathsetmacro{\fx}{(2.2+\cx)*0.30}
+  \pgfmathsetmacro{\fy}{\cy*0.30}
+  \draw[->, thick, figR!80] ({\cx-0.5*\fx},{\cy-0.5*\fy}) -- ({\cx+0.5*\fx},{\cy+0.5*\fy});
+}
+\node[font=\scriptsize, align=center] at (0,-1.85) {more flux leaves (right) than enters (left):\\ net outflux $> 0$, \; $\nabla\cdot\mathbf{F} > 0$};
+\node[figB!80!black, font=\scriptsize] at (-0.55,1.12) {$\partial B_\varepsilon$};
+\end{scope}
+% ===== right panel: zero divergence (uniform field) =====
+\begin{scope}[shift={(6.4,0)}]
+\coordinate (P) at (0,0);
+\draw[dashed, thick, figB] (P) circle (0.85);
+\foreach \ang in {0,45,90,135,180,225,270,315}{
+  \pgfmathsetmacro{\cx}{0.85*cos(\ang)}
+  \pgfmathsetmacro{\cy}{0.85*sin(\ang)}
+  \draw[->, thick, figG!80] ({\cx-0.31},\cy) -- ({\cx+0.31},\cy);
+}
+\node[font=\scriptsize, align=center] at (0,-1.85) {uniform field: inflow $=$ outflow,\\ net flux $= 0$, \; $\nabla\cdot\mathbf{F} = 0$};
+\end{scope}
+\end{tikzpicture}

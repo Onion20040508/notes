@@ -1,0 +1,32 @@
+% Figure from MATH 452 notes, section 16. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.15]
+% two adjacent cells
+\draw[thick, figB, fill=figB!7] (0,0) rectangle (2.0,1.8);
+\draw[thick, figB, fill=figB!7] (2.0,0) rectangle (4.0,1.8);
+\node at (1.0,0.92) {$D_1$};
+\node at (3.0,0.92) {$D_2$};
+% ccw orientation arrows on each cell
+\draw[->, figG, thick] (0.35,0.0) -- (1.35,0.0);
+\draw[->, figG, thick] (1.93,0.5) -- (1.93,1.35);   % D1 right edge: upward
+\draw[->, figG, thick] (1.35,1.8) -- (0.35,1.8);
+\draw[->, figG, thick] (0,1.35) -- (0,0.5);
+\draw[->, figR, thick] (2.35,0.0) -- (3.35,0.0);
+\draw[->, figR, thick] (4.0,0.5) -- (4.0,1.35);
+\draw[->, figR, thick] (3.35,1.8) -- (2.35,1.8);
+\draw[->, figR, thick] (2.07,1.30) -- (2.07,0.45);  % D2 left edge: downward (shifted for visibility)
+% highlight shared edge
+\node[font=\scriptsize, align=center] at (2.0,-0.55) {shared edge: traversed upward by $\partial D_1$,\\ downward by $\partial D_2$ --- contributions cancel};
+\draw[figB!60, thin] (2.0,-0.18) -- (2.0,-0.02);
+% right: the merged region with only outer boundary
+\begin{scope}[shift={(5.6,0)}]
+\draw[thick, figB, fill=figB!7] (0,0) rectangle (4.0,1.8);
+\draw[->, figG, thick] (0.7,0.0) -- (2.0,0.0);
+\draw[->, figG, thick] (2.6,0.0) -- (3.6,0.0);
+\draw[->, figG, thick] (4.0,0.45) -- (4.0,1.4);
+\draw[->, figG, thick] (3.3,1.8) -- (2.0,1.8);
+\draw[->, figG, thick] (1.4,1.8) -- (0.5,1.8);
+\draw[->, figG, thick] (0,1.4) -- (0,0.45);
+\node at (2.0,0.92) {$D_1 \cup D_2$};
+\node[font=\scriptsize, align=center] at (2.0,-0.55) {sum of the two cell identities\\ $=$ identity for the union};
+\end{scope}
+\end{tikzpicture}%

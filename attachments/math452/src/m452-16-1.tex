@@ -1,0 +1,37 @@
+% Figure from MATH 452 notes, section 16. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.1]
+% ===== bottom: parameter interval [a,b] with partition =====
+\begin{scope}[shift={(0,-2.6)}]
+\draw[->] (-0.3,0) -- (6.6,0) node[right, font=\small] {$t$};
+\draw[thick] (0.3,0) -- (6.0,0);
+\foreach \i in {0,...,6}
+  \draw ({0.3+\i*0.95},-0.07) -- ({0.3+\i*0.95},0.07);
+\node[below, font=\scriptsize] at (0.3,-0.1) {$a=t_0$};
+\node[below, font=\scriptsize] at (2.2,-0.1) {$t_2$};
+\node[below, font=\scriptsize] at (3.15,-0.1) {$t_3$};
+\node[below, font=\scriptsize] at (6.0,-0.1) {$b=t_n$};
+\draw[very thick, figR] (2.2,0) -- (3.15,0);
+\node[figR!85!black, font=\scriptsize] at (2.675,0.28) {$\Delta t$};
+\end{scope}
+% ===== mapping arrow from highlighted subinterval up to the curve =====
+\draw[->, thick] (2.675,-2.1) .. controls (2.35,-1.3) and (2.15,-0.7) .. (2.02,0.72);
+\node[font=\small, anchor=west] at (2.62,-1.15) {$\mathbf{r}(t)$};
+% ===== top: the curve y = 0.75+0.55 sin(1.05x-1.9) =====
+\draw[very thick, figB, domain=0.45:5.75, samples=80] plot (\x, {0.75+0.55*sin(deg(1.05*\x-1.9))});
+\node[figB!80!black, font=\small] at (5.95,0.28) {$\boldsymbol{\gamma}$};
+% image points r(t_j), computed exactly on the curve (uneven spacing = varying speed)
+\foreach \px/\py in {0.6/0.225, 1.162/0.404, 2.182/0.96, 3.402/1.297, 4.252/1.05, 4.74/0.786, 5.439/0.409}
+  \filldraw[figB] (\px,\py) circle (1.2pt);
+\node[font=\scriptsize, figB!80!black, anchor=east] at (0.5,0.08) {$\mathbf{r}(t_0)$};
+% chord Delta r from r(t2) to r(t3)
+\coordinate (P2) at (2.182,0.96);
+\coordinate (P3) at (3.402,1.297);
+\draw[->, very thick, figG] (P2) -- (P3);
+\node[figG!75!black, font=\scriptsize] at (2.95,0.82) {$\Delta\mathbf{r} \approx \mathbf{r}'(t_2)\,\Delta t$};
+% field vector at P2
+\draw[->, thick, figR] (P2) -- ++(-0.18,0.80);
+\node[figR!85!black, font=\small] at (1.72,1.95) {$\mathbf{F}(\mathbf{r}(t_2))$};
+\filldraw (P2) circle (1.4pt);
+% term label
+\node[font=\small, align=left, anchor=west] at (4.35,1.95) {one term:\\ $\mathbf{F}(\mathbf{r}(t_2)) \cdot \mathbf{r}'(t_2)\,\Delta t$};
+\end{tikzpicture}%

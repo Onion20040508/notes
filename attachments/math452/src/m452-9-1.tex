@@ -1,0 +1,9 @@
+% Figure from MATH 452 notes, section 9. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.5]
+\draw[->] (0,0) -- (3,0) node[right] {$x$};
+\draw[->] (0,0) -- (0,2.5) node[above] {$y$};
+\node[circle, fill, inner sep=1.5pt, label=below left:{$(x,y)$}] at (0.5,0.5) {};
+\node[circle, fill, inner sep=1.5pt, label=above right:{$(x+h,y+k)$}] at (2.5,2) {};
+\draw[thick, ->, blue] (0.5,0.5) -- (2.5,2);
+\node[blue] at (1.8,0.9) {$t \in [0,1]$};
+\end{tikzpicture}

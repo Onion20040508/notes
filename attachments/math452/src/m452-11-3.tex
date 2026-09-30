@@ -1,0 +1,27 @@
+% Figure from MATH 452 notes, section 11. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.05]
+% ===== left panel: positive curl (rotational field F=(-y,x)) =====
+\begin{scope}
+\draw[dashed, thick, figB] (0,0) circle (0.85);
+% field F = (-y,x) at circle points: tangential, ccw
+\foreach \ang in {0,45,90,135,180,225,270,315}{
+  \pgfmathsetmacro{\cx}{0.85*cos(\ang)}
+  \pgfmathsetmacro{\cy}{0.85*sin(\ang)}
+  \draw[->, thick, figR!80] (\cx,\cy) -- ({\cx-0.55*sin(\ang)},{\cy+0.55*cos(\ang)});
+}
+% paddle wheel hint: small ccw arc arrow at center
+\draw[->, thick, figR] (0.3,0.12) arc[start angle=20, end angle=310, radius=0.32];
+\node[font=\scriptsize, align=center] at (0,-1.85) {field aligned with traversal everywhere:\\ circulation $> 0$, \; $(\nabla\times\mathbf{F})_z > 0$};
+\node[figB!80!black, font=\scriptsize] at (-0.05,1.12) {$\partial B_\varepsilon$};
+\end{scope}
+% ===== right panel: zero curl (radial field F=(x,y)) =====
+\begin{scope}[shift={(6.4,0)}]
+\draw[dashed, thick, figB] (0,0) circle (0.85);
+\foreach \ang in {0,45,90,135,180,225,270,315}{
+  \pgfmathsetmacro{\cx}{0.85*cos(\ang)}
+  \pgfmathsetmacro{\cy}{0.85*sin(\ang)}
+  \draw[->, thick, figG!80] (\cx,\cy) -- ({1.55*\cx},{1.55*\cy});
+}
+\node[font=\scriptsize, align=center] at (0,-1.85) {field $\perp$ traversal everywhere:\\ circulation $= 0$, \; $(\nabla\times\mathbf{F})_z = 0$};
+\end{scope}
+\end{tikzpicture}

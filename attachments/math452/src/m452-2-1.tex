@@ -1,0 +1,15 @@
+% Figure from MATH 452 notes, section 2. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.1]
+% the set E: a blob
+\draw[thick, figB, fill=figB!12] plot[smooth cycle, tension=0.8] coordinates {(0,0) (2.2,-0.3) (3.2,0.8) (2.6,2.0) (1.0,2.3) (-0.4,1.2)};
+\node[figB!80!black] at (2.7,2.0) {$E$};
+% interior point
+\filldraw (1.4,1.0) circle (1.2pt) node[below, font=\scriptsize] {interior};
+\draw[figG, thick] (1.4,1.0) circle (0.42);
+% boundary point (exactly on the curve: a control point of the cycle)
+\filldraw (3.2,0.8) circle (1.2pt) node[below right, font=\scriptsize, xshift=2pt] {boundary};
+\draw[figR, thick] (3.2,0.8) circle (0.42);
+% exterior point
+\filldraw (4.6,0.2) circle (1.2pt) node[below, font=\scriptsize] {exterior};
+\draw[figG, thick] (4.6,0.2) circle (0.42);
+\end{tikzpicture}

@@ -1,0 +1,23 @@
+% Figure from MATH 452 notes, section 7. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.15]
+% domain plane
+\draw[->] (-0.4,0) -- (4.6,0) node[right, font=\small] {$x$};
+\draw[->] (0,-0.4) -- (0,3.2) node[above, font=\small] {$y$};
+% base point
+\coordinate (P) at (1.4,1.0);
+\filldraw (P) circle (1.4pt) node[below left, font=\scriptsize] {$(x,y)$};
+% ray at angle alpha = 35 deg
+\draw[->, thick, figB] (P) -- ++(35:2.9) node[above right, font=\small] {ray at angle $\alpha$};
+% moving point at distance rho
+\coordinate (Q) at ($(P)+(35:1.9)$);
+\filldraw[figR] (Q) circle (1.3pt) node[above left=-1pt, font=\scriptsize] {$(x+h,\,y+k)$};
+% rho label along ray
+\node[figB!80!black, font=\scriptsize, rotate=35] at ($(P)+(35:0.95)+(-0.12,0.16)$) {$\rho$};
+% decompose h and k
+\coordinate (H) at ($(P)+({1.9*cos(35)},0)$);
+\draw[dashed, figG] (P) -- (H) node[midway, below, font=\scriptsize] {$h = \rho\cos\alpha$};
+\draw[dashed, figG] (H) -- (Q) node[midway, right, font=\scriptsize] {$k = \rho\sin\alpha$};
+% angle mark
+\draw[thin] ($(P)+(0.55,0)$) arc[start angle=0, end angle=35, radius=0.55];
+\node[font=\scriptsize] at ($(P)+(17:0.78)$) {$\alpha$};
+\end{tikzpicture}
