@@ -1,0 +1,24 @@
+# Obsidian: per-device UI state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# compiled note PDFs: rebuild locally on each machine
+**/tex/**/*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
