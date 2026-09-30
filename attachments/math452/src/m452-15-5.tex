@@ -1,21 +1,45 @@
 % Figure from MATH 452 notes, section 15. Compile with the notes preamble.
-\begin{tikzpicture}[scale=1.2]
-% Left: (u,v) plane
-\draw[->] (0,0) -- (2.5,0) node[right] {$u$};
-\draw[->] (0,0) -- (0,2.5) node[above] {$v$};
-\draw[fill=blue!20] (0.5,0.5) rectangle (1.5,1.5);
-\node at (1,1) {$du \cdot dv$};
-\node at (1,-0.5) {$(u,v)$-plane};
-
-% Arrow
-\draw[->, thick] (3,1) -- (4.5,1) node[midway, above] {$\Phi$};
-
-% Right: (x,y) plane
-\begin{scope}[xshift=5.5cm]
-\draw[->] (0,0) -- (2.5,0) node[right] {$x$};
-\draw[->] (0,0) -- (0,2.5) node[above] {$y$};
-\draw[fill=red!20] (0.5,0.5) -- (1.6,0.7) -- (1.8,1.6) -- (0.7,1.4) -- cycle;
-\node at (1.1,1) {$\approx |J| \, du \, dv$};
-\node at (1,-0.5) {$(x,y)$-plane};
+% Sample map Phi(u,v) = (0.3 + u + 0.35v - 0.15v^2, 0.2 + 0.3u + 0.8v + 0.18u^2), cell [0.5,1.5] x [0.5,1.3].
+\begin{tikzpicture}[scale=1.3,
+  declare function={X(\u,\v)=0.3+\u+0.35*\v-0.15*\v*\v; Y(\u,\v)=0.2+0.3*\u+0.8*\v+0.18*\u*\u;}]
+% ---------- left: (u,v)-plane ----------
+\begin{scope}
+\draw[-stealth, thin] (-0.1,0) -- (2.0,0) node[right, font=\scriptsize] {$u$};
+\draw[-stealth, thin] (0,-0.1) -- (0,1.8) node[above, font=\scriptsize] {$v$};
+\fill[figB!15] (0.5,0.5) rectangle (1.5,1.3);
+\draw[figB, thick] (0.5,0.5) rectangle (1.5,1.3);
+\draw[-stealth, thick, figR] (0.5,0.5) -- (1.5,0.5);
+\draw[-stealth, thick, figR] (0.5,0.5) -- (0.5,1.3);
+\node[font=\scriptsize, figR, anchor=north] at (1.0,0.5) {$du$};
+\node[font=\scriptsize, figR, anchor=east] at (0.5,0.9) {$dv$};
+\filldraw (0.5,0.5) circle (0.9pt);
+\node[font=\scriptsize, anchor=north, inner sep=2pt] at (0.4,0.48) {$(u_0,v_0)$};
+\node[font=\small, figB] at (1.0,0.9) {$R$};
 \end{scope}
+\draw[-stealth, thick] (2.15,1.0) -- (2.85,1.0) node[midway, above, font=\scriptsize] {$\Phi$};
+% ---------- right: (x,y)-plane ----------
+\begin{scope}[shift={(3.1,0)}]
+\draw[-stealth, thin] (-0.1,0) -- (2.6,0) node[right, font=\scriptsize] {$x$};
+\draw[-stealth, thin] (0,-0.1) -- (0,2.4) node[above, font=\scriptsize] {$y$};
+\fill[figB!15]
+  plot[domain=0.5:1.5, samples=25] ({X(\x,0.5)}, {Y(\x,0.5)})
+  -- plot[domain=0.5:1.3, samples=25] ({X(1.5,\x)}, {Y(1.5,\x)})
+  -- plot[domain=1.5:0.5, samples=25] ({X(\x,1.3)}, {Y(\x,1.3)})
+  -- plot[domain=1.3:0.5, samples=25] ({X(0.5,\x)}, {Y(0.5,\x)}) -- cycle;
+\draw[figB, thick]
+  plot[domain=0.5:1.5, samples=25] ({X(\x,0.5)}, {Y(\x,0.5)})
+  -- plot[domain=0.5:1.3, samples=25] ({X(1.5,\x)}, {Y(1.5,\x)})
+  -- plot[domain=1.5:0.5, samples=25] ({X(\x,1.3)}, {Y(\x,1.3)})
+  -- plot[domain=1.3:0.5, samples=25] ({X(0.5,\x)}, {Y(0.5,\x)}) -- cycle;
+% tangent parallelogram at Phi(u0,v0) = (0.9375, 0.795): Phi_u du = (1, 0.48), Phi_v dv = (0.16, 0.64)
+\coordinate (P0) at (0.9375,0.795);
+\draw[figR, thick, dashed] (P0) -- ++(1,0.48) -- ++(0.16,0.64) -- ++(-1,-0.48) -- cycle;
+\draw[-stealth, thick, figR] (P0) -- ++(1,0.48);
+\draw[-stealth, thick, figR] (P0) -- ++(0.16,0.64);
+\node[font=\scriptsize, figR, anchor=north west, inner sep=1pt] at ($(P0)+(0.55,0.22)$) {$\boldsymbol{\Phi}_u\,du$};
+\node[font=\scriptsize, figR, anchor=east, inner sep=2pt] at ($(P0)+(0.08,0.36)$) {$\boldsymbol{\Phi}_v\,dv$};
+\filldraw (P0) circle (0.9pt);
+\node[font=\scriptsize, figB, anchor=south east, inner sep=1pt] at (1.3,1.72) {$\Phi(R)$};
+\end{scope}
+\node[font=\scriptsize, figR, anchor=north, align=center] at (4.65,-0.12) {dashed parallelogram:\\ area $|J|\,du\,dv$};
 \end{tikzpicture}

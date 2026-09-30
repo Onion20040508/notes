@@ -73,6 +73,9 @@ The brick has:
     - Two $\theta$-faces (constant $\theta$): area $= r\sin\theta \, dr \, d\psi$, normal $\pm\hat{\theta}$.
     - Two $\psi$-faces (constant $\psi$): area $= r \, dr \, d\theta$, normal $\pm\hat{\psi}$.
 
+![[m452-19-3.svg]]
+*The brick cut by the half-plane $\psi = \psi_0$ (the $z$-axis vertical, $\theta$ measured from it). Its edges in this plane are $dr$ and $r\,d\theta$; the third edge, $r\sin\theta\,d\psi$, points out of the page, and its length is (distance to the $z$-axis) $\times\, d\psi$. The outward normals are $\pm\hat{r}$ on the two $r$-faces (red) and $\pm\hat{\theta}$ on the two $\theta$-faces (green). The outer $r$-face is larger than the inner one — area $(r_0+dr)^2\sin\theta\,d\theta\,d\psi$ versus $r_0^2\sin\theta\,d\theta\,d\psi$ — which is why the net flux is $\partial_r(r^2 v_r)$ and not $r^2\,\partial_r v_r$.*
+
 ### The Gradient in Spherical Coordinates
 
 The gradient ([[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]]) expressed in the orthonormal basis $\{\hat{r}, \hat{\theta}, \hat{\psi}\}$ is:

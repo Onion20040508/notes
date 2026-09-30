@@ -115,7 +115,7 @@ Consider a grid with mesh points at $\mathbb{Z} \times \mathbb{Z}$ (integer latt
 ^def-15-5
 
 ![[m452-15-3.svg]]
-*Inner approximation (blue): squares entirely inside $D$; outer approximation (red $\cup$ blue): squares meeting $D$. Refining the mesh raises $A_i^-$ and lowers $A_i^+$; the region is Jordan measurable when the two limits agree. The mismatch lives entirely along the boundary — which is why measurability $\iff$ $\partial D$ has content zero.*
+*Inner and outer approximations of an ellipse $D$ with semi-axes $1.75$ and $1.3$. Blue squares lie inside $D$. Red and blue squares together are the squares that meet $D$. With side $1$ ($i = 0$) this gives $A_0^-(D) = 2$ and $A_0^+(D) = 12$. Halving the side ($i = 1$) gives $A_1^-(D) = 5$ and $A_1^+(D) = 11$, a tighter bracket around the true area $\pi \cdot 1.75 \cdot 1.3 \approx 7.15$. The gap $A_i^+ - A_i^-$ is exactly the red squares, and every red square straddles $\partial D$. So the two limits agree precisely when the boundary squares have total area $\to 0$ (the Remark below).*
 
 > [!remark] Remark
 > The difference $A_i^+(D) - A_i^-(D)$ counts squares that straddle the boundary $\partial D$ ([[Multivariable Analysis §2 Open and Closed Sets#^def-2-3|Def. §2.3]]). As $i \to \infty$, these boundary squares have total area $\to 0$ if and only if $\partial D$ has “measure zero.”
@@ -750,7 +750,7 @@ $$
 ^rem-15-9
 
 ![[m452-15-4.svg]]
-*The Jacobian of the polar map $\Phi(r,\theta) = (r\cos\theta, r\sin\theta)$, seen three ways. Top: equal cells in the $(r,\theta)$ plane map to annular cells whose width grows with $r$ — the distortion is position-dependent. Bottom: zooming into one cell, the map straightens into its derivative $D\Phi$, sending the square to a rectangle with orthogonal sides $|\boldsymbol{\Phi}_r|\,dr = dr$ and $|\boldsymbol{\Phi}_\theta|\,d\theta = r_0\,d\theta$; hence $dx\,dy = r\,dr\,d\theta$ — the factor in every polar integral of §15 is literally the width of the cell. At $r = 0$ the tangential side collapses, $J = 0$, and $\Phi$ degenerates (all $\theta$ give the same point): the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]]'s hypothesis fails exactly where polar coordinates fail.*
+*The Jacobian of the polar map $\Phi(r,\theta) = (r\cos\theta, r\sin\theta)$. Top: two equal cells $dr \times d\theta$ in the $(r,\theta)$ plane, one at small $r$ (green) and one at large $r$ (red). Their images are annular cells, and the outer image is wider, because arc length is $r\,d\theta$. Bottom: zoomed in, the red image cell is nearly the rectangle spanned by $\boldsymbol{\Phi}_r\,dr$ and $\boldsymbol{\Phi}_\theta\,d\theta$ (drawn to scale). Its sides are orthogonal, with lengths $dr$ and $r_0\,d\theta$, so its area is $r_0\,dr\,d\theta$ and $|J| = r_0$. The factor $r$ in every polar integral is literally the width of the cell. At $r = 0$ the tangential side collapses, $J = 0$, and $\Phi$ is not invertible there (all $\theta$ give the same point): the hypothesis of the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] fails exactly where polar coordinates fail.*
 
 ## Fubini's Theorem: Rigorous Treatment
 
@@ -878,6 +878,10 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 > where $h_1, h_2: [c, d] \to \mathbb{R}$ are continuous with $h_1(y) \leq h_2(y)$.
 
 ^def-15-12
+
+
+![[m452-15-6.svg]]
+*Type I: $D$ lies between two graphs over $[a, b]$, so every vertical line meets it in one segment $g_1(x) \leq y \leq g_2(x)$ (red). Type II is the same with the axes swapped: every horizontal line meets it in one segment $h_1(y) \leq x \leq h_2(y)$. These segments are the domains of the inner integrals in Fubini's theorem.*
 
 > [!theorem] Theorem §15.9: Fubini for Type I Regions
 > If $D = \{(x, y) : a \leq x \leq b, \; g_1(x) \leq y \leq g_2(x)\}$ and $f$ is continuous on $D$, then:
@@ -1095,6 +1099,9 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 
 *Uses:* [[Multivariable Analysis §2 Open and Closed Sets#^def-2-4|Def. §2.4]], [[Multivariable Analysis §1 Sequences and Limits in ℝⁿ#^def-1-1|Def. §1.1]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-4|§15.4]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-5|§15.5]], [[Multivariable Analysis §15 Multivariable Integration#^cor-15-6|§15.6]], [[Fubini's Theorem|§15.8]], [[Heine–Borel Theorem|590 §15.12]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Single Variable Analysis §19 Uniform Continuity#^thm-19-1|451 §19.1]], [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-5|451 §33.5]]
 
+![[m452-15-8.svg]]
+*Steps 3–5 of the proof. On a grid of side $1/2^k$, each column is stretched to whole squares: from $\psi_k$ (the grid line just below $\inf \psi$ on the column) up to $\varphi_k$ (the grid line just above $\sup \varphi$), and from $a_k$ to $b_k$ horizontally. The resulting staircase $D_k$ (red outline) contains $D$ (blue). Fubini holds exactly on $D_k$, since each column is a rectangle. The error region $D_k \setminus D$ (red) is a thin skin along $\partial D$. By uniform continuity of $\varphi$ and $\psi$, its height in each column is $< 2\varepsilon$, so its total area is $O(\varepsilon)$.*
+
 > [!theorem] Theorem §15.10: Fubini for Type II Regions
 > If $D = \{(x, y) : c \leq y \leq d, \; h_1(y) \leq x \leq h_2(y)\}$ and $f$ is continuous on $D$, then:
 >
@@ -1157,6 +1164,10 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 
 ^ex-15-1
 
+
+![[m452-15-7.svg]]
+*The triangle of Example §15.1 sliced both ways. Left, as a Type I region: the vertical slice at $x$ runs over $x \leq y \leq 1$, and the inner integral $\int_x^1 e^{y^2}\,dy$ cannot be done in closed form. Right, as a Type II region: the horizontal slice at $y$ runs over $0 \leq x \leq y$, and $e^{y^2}$ is constant along it, so the inner integral is just $y\,e^{y^2}$. Same region, same double integral ([[Multivariable Analysis §15 Multivariable Integration#^cor-15-11|§15.11]]), but only one order is computable.*
+
 ### A Counterexample: When Fubini Fails
 
 > [!example] Example §15.2: Failure without Absolute Integrability
@@ -1209,7 +1220,7 @@ Under a coordinate transformation $(x, y) = \Phi(u, v)$, the domain $D$ becomes 
 A small rectangle $du \times dv$ in the $(u,v)$-plane does **not** map to a rectangle of the same area in the $(x,y)$-plane. Instead, it maps to a (curvilinear) region with area approximately $|J| \, du \, dv$, where $J$ is the Jacobian determinant ([[Multivariable Analysis §13 The Inverse Function Theorem#^def-13-1|Def. §13.1]]).
 
 ![[m452-15-5.svg]]
-*A small rectangle $du \cdot dv$ in the $(u,v)$-plane is carried by $\Phi$ to a curvilinear region in the $(x,y)$-plane of area $\approx |J|\,du\,dv$.*
+*A small rectangle $R$ with sides $du, dv$ at $(u_0, v_0)$ (left) is carried by $\Phi$ to a curvilinear region $\Phi(R)$ (blue). The derivative sends the sides to $\boldsymbol{\Phi}_u\,du$ and $\boldsymbol{\Phi}_v\,dv$ (red). These span a parallelogram (dashed) of area $|\det(\boldsymbol{\Phi}_u, \boldsymbol{\Phi}_v)|\,du\,dv = |J|\,du\,dv$, and it approximates $\Phi(R)$ ever better as the rectangle shrinks.*
 
 To make the integral come out correctly, we must **compensate for this area distortion** by multiplying by $|J|$:
 
@@ -1625,6 +1636,9 @@ We present three different proofs, each offering a distinct perspective:
 
 *Uses:* [[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]], [[Multivariable Taylor's Theorem|§9.2]], [[Multivariable Analysis §6 Differentiability#^def-6-2|Def. §6.2]], [[Multivariable Analysis §13 The Inverse Function Theorem#^def-13-1|Def. §13.1]], [[Mean Value Theorem|451 §29.3]], [[Topology §15 Compact Spaces#^rem-15-1|590 §15 Rem. (uniform continuity on compact sets)]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-1|§15.1]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-9|Def. §15.9]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-11|Def. §15.11]]
 
+![[m452-15-9.svg]]
+*Step 3 of the first proof. The linearized map $L$ sends the small square $R$ to the parallelogram $P$ (red, dashed) of area $|J|\,hk$. Each point of $\Phi(R)$ lies within $r = 2\sqrt2\,\varepsilon/2^m$ of the corresponding point of $P$, as at the top corner (dashed circle of radius $r$). So the boundary of $\Phi(R)$ (blue) stays inside the band of width $r$ around $\partial P$ (gray). The two areas can differ only by the area of that band, at most $\text{perimeter}(P) \cdot r + \pi r^2 = O(\varepsilon/2^{2m})$. That is small even compared with $\text{Area}(P) \sim 1/2^{2m}$.*
+
 > [!remark] Remark: Extension to Arbitrary Domains: Jordan Measurability
 > The proof above assumes $D^*$ is a square (or rectangle). For arbitrary domains, we need additional assumptions and a more careful treatment using **Jordan measure**.
 >
@@ -1903,6 +1917,9 @@ We present three different proofs, each offering a distinct perspective:
 ^pf-15-14-3
 
 *Uses:* [[Multivariable Analysis §15 Multivariable Integration#^lem-15-13|§15.13]], [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|§12.2]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-4|§15.4]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|§15.9]], [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^rem-10-4|§10 Rem. (Chain Rule for Jacobians)]], [[Linear Algebra 9C Determinants#^ladr-9-49|LADR 9.49]]
+
+![[m452-15-10.svg]]
+*The decomposition behind the second and third proofs. A $C^1$ map with $J \neq 0$ factors into two primitive maps, each of which changes one coordinate only. First, Type II: $(u, v) \mapsto (x, v)$ with $x = \Psi(u, v)$, so points slide horizontally and the lines $v = \text{const}$ (green) stay horizontal. Then Type I: $(x, v) \mapsto (x, y)$ with $y = \Phi(v, x)$, so points slide vertically (red dot: hollow before, filled after each step). Each step is a family of 1D substitutions ([[Multivariable Analysis §15 Multivariable Integration#^lem-15-13|Lemma §15.13]]) in one variable. Integrating over the other variable with Fubini gives factors $\Psi_u$ and $\Phi_v$, and their product is the full Jacobian.*
 
 > [!remark]- Connections
 > - The linear case (Part I of the first proof) is [[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]]: $T$ changes volume by the factor $|\det T|$; the $C^1$ case is this applied to the derivative cell by cell.

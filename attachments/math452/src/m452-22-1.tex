@@ -1,16 +1,16 @@
 % Figure from MATH 452 notes, section 22. Compile with the notes preamble.
 \begin{tikzpicture}[scale=1.0]
 % left box: parameter domain
-\node[draw, thick, figB!70, fill=figB!6, minimum height=1.5cm, align=center, font=\small, inner xsep=8pt] (Dbox) at (0,0) {parameter domain\\ $D \subseteq \mathbb{R}^k$, coords $(u_j)$};
+\node[draw, thick, figB!70, fill=figB!6, text=black, minimum height=1.5cm, align=center, font=\small, inner xsep=8pt] (Dbox) at (0,0) {parameter domain\\ $D \subseteq \mathbb{R}^k$, coords $(u_j)$};
 % right box: ambient space
-\node[draw, thick, figB!70, fill=figB!6, minimum height=1.5cm, align=center, font=\small, inner xsep=8pt] (Rbox) at (9.2,0) {ambient space\\ $\mathbb{R}^n$, coords $(x_i)$};
+\node[draw, thick, figB!70, fill=figB!6, text=black, minimum height=1.5cm, align=center, font=\small, inner xsep=8pt] (Rbox) at (7.4,0) {ambient space\\ $\mathbb{R}^n$, coords $(x_i)$};
 % forward arrow: points
-\draw[->, very thick, figG] ($(Dbox.east)+(0.1,0.34)$) -- ($(Rbox.west)+(-0.1,0.34)$)
-  node[midway, above, font=\scriptsize, figG!75!black] {$\Phi$: points travel forward};
+\draw[-stealth, very thick, figG] ($(Dbox.east)+(0.1,0.34)$) -- ($(Rbox.west)+(-0.1,0.34)$)
+  node[midway, above, font=\scriptsize, figG] {$\Phi$: points travel forward};
 % backward arrow: forms
-\draw[<-, very thick, figR] ($(Dbox.east)+(0.1,-0.34)$) -- ($(Rbox.west)+(-0.1,-0.34)$)
-  node[midway, below, font=\scriptsize, figR!85!black] {$\Phi^*$: forms travel backward};
+\draw[stealth-, very thick, figR] ($(Dbox.east)+(0.1,-0.34)$) -- ($(Rbox.west)+(-0.1,-0.34)$)
+  node[midway, below, font=\scriptsize, figR] {$\Phi^*$: forms travel backward};
 % annotations under each box
 \node[font=\scriptsize, align=center] at (0,-1.6) {$\Phi^*\omega$ lives here\\ (ready to integrate: $\int_D \Phi^*\omega$)};
-\node[font=\scriptsize, align=center] at (9.2,-1.6) {$\omega$ lives here\\ (written in $dx_i$)};
+\node[font=\scriptsize, align=center] at (7.4,-1.6) {$\omega$ lives here\\ (written in $dx_i$)};
 \end{tikzpicture}

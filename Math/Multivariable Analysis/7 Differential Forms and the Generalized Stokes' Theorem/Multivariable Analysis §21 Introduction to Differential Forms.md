@@ -63,6 +63,9 @@ because the inner integral picks up a sign from the 1D rule. More generally:
 
 Each bound carries a direction of traversal, and reversing one is an orientation-reversing transformation (signed Jacobian $= -1$). Reversing both gives $(-1)(-1) = +1$ — orientation-preserving. This is *not* Fubini: Fubini swaps which variable is integrated first while keeping all bounds in the same direction. Bound reversal changes the *direction* of traversal within one variable.
 
+![[m452-21-3.svg]]
+*The four rows of the table as oriented frames on the unit square. Each bound pair sets the direction of traversal of one variable (black arrows start at the lower limit); the arc turns from the first direction ($x$, inner integral) to the second ($y$). Counterclockwise turn: sign $+$ (blue); clockwise: sign $-$ (red). Reversing one direction is a reflection and flips the turn; reversing both is a rotation by $180^\circ$ and restores it.*
+
 The reason we do not see this in 452 is that we write $\iint_D f\,dA$, where $D$ is a *set* with no ordered bounds. The orientation information that iterated integrals with explicit bounds carry is erased. The $|J|$ formula works with unoriented sets, so it never encounters orientation reversal. In the forms language, $\int_0^1\!\int_0^1 f\,dx \wedge dy$ is the integral over the unit square *with the standard orientation*. Writing $\iint_D f\,dA$ strips this.
 
 This creates an inconsistency across dimensions. In 1D, the change of variables uses the **signed** derivative $g'(t)$:
@@ -90,7 +93,7 @@ In fact, coordinate ordering describes orientation *at every dimension* — it j
 **In 2D:** A flat region $D \subseteq \mathbb{R}^2$ with coordinates $(x,y)$ has $dx \wedge dy > 0$ (standard orientation). Switching to the ordering $(y,x)$ gives $dy \wedge dx = -dx \wedge dy < 0$ (reversed). The map $(x,y) \mapsto (y,x)$ has Jacobian $\det\left(\begin{smallmatrix} 0 & 1 \\ 1 & 0 \end{smallmatrix}\right) = -1$: a reflection, which reverses orientation ([[Linear Algebra 9C Determinants#^ladr-9-61|LADR 9.61]]). Now embed $D$ as a surface in $\mathbb{R}^3$ (lying flat in the $xy$-plane). The two orderings correspond to the normal pointing in $+\hat{z}$ or $-\hat{z}$ — flipping the normal. So switching coordinate ordering (the algebraic description) produces the same effect as flipping the surface (the geometric description).
 
 ![[m452-21-2.svg]]
-*Two descriptions of the same choice. Geometric: pick a normal direction. Algebraic: pick a coordinate ordering. Flipping the normal $\leftrightarrow$ swapping the order $\leftrightarrow$ negating $dx \wedge dy$.*
+*Two descriptions of the same choice. Algebraic: an ordered pair of basis vectors — $(\hat{e}_x, \hat{e}_y)$ on the left, $(\hat{e}_y, \hat{e}_x)$ on the right; the green arc turns from the 1st vector to the 2nd, counterclockwise or clockwise as seen from above. Geometric: the normal $\pm\hat{z}$ (red) given by the right-hand rule from that turn. Swapping the order $\leftrightarrow$ flipping the normal $\leftrightarrow$ negating $dx \wedge dy$.*
 
 **In 1D:** There is only one coordinate $x$ — nothing to swap it with. Instead, orientation is the **choice of direction**: does $x$ increase or decrease as you traverse? Writing $\int_a^b$ means “traverse in the direction of increasing $x$” (standard). Writing $\int_b^a$ means “traverse in the direction of decreasing $x$” (reversed). The sign flip $\int_a^b = -\int_b^a$ is the 1D version of switching the coordinate ordering. There is no second coordinate to swap, so the only freedom is the sign of the single basis vector: $+\hat{e}_x$ or $-\hat{e}_x$.
 

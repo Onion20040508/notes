@@ -155,6 +155,9 @@ All four classical theorems have the same form: $\int_{\partial \Omega} \omega =
 
 ^thm-23-1
 
+![[m452-23-2.svg]]
+*The induced orientation of $\partial\Omega$ (red) in each case of the theorem. $k=1$: the boundary of $[a,b]$ is $b$ with sign $+$ and $a$ with sign $-$ (outward directions), giving $f(b)-f(a)$. $k=2$, flat: $\partial D$ runs counterclockwise, $D$ on the left. $k=2$, curved: $\partial S$ follows the right-hand rule around $\hat{n}$. $k=3$: $\partial V$ carries the outward normal. One rule covers all four — outward direction first, then the orientation of the boundary — and it is the rule that makes $\int_{\partial\Omega}\omega = \int_\Omega d\omega$ come out with no stray signs.*
+
 > [!remark]- Connections
 > - $k = 1$: [[Fundamental Theorem of Calculus]]; $k = 2$: [[Green's Theorem|Green's theorem (Theorem §16.1)]] and [[Stokes' Theorem in ℝ³|Stokes' theorem in ℝ³ (Theorem §20.1)]]; $k = 3$: [[Divergence Theorem in ℝ³|Divergence theorem in ℝ³ (Theorem §18.2)]].
 > - Top degree in any dimension ($k = n$, $\Omega \subseteq \mathbb{R}^n$) is the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ (Theorem §17.1)]].
@@ -170,7 +173,7 @@ All four classical theorems have the same form: $\int_{\partial \Omega} \omega =
 | 3 | volume $V \subseteq \mathbb{R}^3$ | 2-form | div $\cdot\,dx \wedge dy \wedge dz$ | Divergence |
 
 ![[m452-23-1.svg]]
-*The ladder of forms in $\mathbb{R}^3$. Each rung of $d$ is one classical differential operator; each integral theorem trades one application of $d$ for one boundary operation $\partial$. The dashed arcs are the two vanishing identities — both instances of $d^2 = 0$.*
+*The ladder of forms in $\mathbb{R}^3$. Each rung of $d$ (red) is one classical differential operator, and under it (green) the integral theorem that trades that $d$ for a boundary $\partial$. The dashed arcs skip two rungs: the two vanishing identities, both instances of $d^2 = 0$.*
 
 > [!remark] Remark: The Punchline
 > All four theorems are the same theorem:

@@ -10,7 +10,7 @@ tags: [multivariable-analysis, math452]
 ## Line Integrals: Two Types
 
 ![[m452-16-1.svg]]
-*The line integral is computed through its parametrization: partition time $[a,b]$ into equal steps $\Delta t$; the map $\mathbf{r}$ pushes the ticks forward to points $\mathbf{r}(t_j)$ on the curve, spaced unevenly — wide where the speed $|\mathbf{r}'|$ is large, tight where it is small. Each time step contributes the displacement $\Delta\mathbf{r} \approx \mathbf{r}'(t_j)\Delta t$ and the work term $\mathbf{F}\cdot\Delta\mathbf{r}$. Summing and refining: $\int_{\boldsymbol{\gamma}}\mathbf{F}\cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mathbf{r}(t))\cdot\mathbf{r}'(t)\,dt$ — an ordinary one-variable [[Single Variable Analysis §32 The Definition of the Riemann Integral#^def-32-3|integral]]. The speed factor is automatic: $d\mathbf{r} = \mathbf{r}'(t)\,dt$ is the 1D case of the Jacobian story ([[Multivariable Analysis §15 Multivariable Integration|§15]]).*
+*The line integral is computed through its parametrization $\mathbf{r}(t) = (x(t), y(t))$: partition $[a,b]$ into steps $\Delta t$; $\mathbf{r}$ carries the ticks $t_j$ to points $\mathbf{r}(t_j)$ on $\gamma$ (blue), spaced unevenly — wide where the speed $|\mathbf{r}'|$ is large, tight where it is small. Each step contributes the displacement $\Delta\mathbf{r} \approx \mathbf{r}'(t_j)\,\Delta t$ (green): its length $\approx \sqrt{x'^2+y'^2}\,\Delta t$ is the $ds$ of the scalar integral (Def. §16.1), and its dot product with the field (red) is one term of the work integral (Def. §16.2). Summing and refining: $\int_{\gamma}\mathbf{F}\cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mathbf{r}(t))\cdot\mathbf{r}'(t)\,dt$ — an ordinary one-variable [[Single Variable Analysis §32 The Definition of the Riemann Integral#^def-32-3|integral]]. The speed factor is automatic: $d\mathbf{r} = \mathbf{r}'(t)\,dt$ is the 1D case of the Jacobian story ([[Multivariable Analysis §15 Multivariable Integration|§15]]).*
 
 Let $\gamma$ be a smooth curve in $\mathbb{R}^2$ parametrized by $x = x(t)$, $y = y(t)$ for $t \in [a, b]$.
 
@@ -112,7 +112,7 @@ For this and the [[Multivariable Analysis §17 The Divergence Theorem in Higher 
 Let $\gamma$ be a closed curve in $\mathbb{R}^2$ enclosing a bounded domain $D$. The **positive orientation** of $\gamma$ is defined so that $D$ lies on the left side of $\gamma$ as you traverse it. Equivalently, $\gamma$ is traversed **counterclockwise**.
 
 ![[m452-16-2.svg]]
-*The positive orientation of $\partial D$: traverse counterclockwise, so the region lies on your left. This convention is what makes the signs in Green's theorem come out correctly — and in [[Multivariable Analysis §23 The Generalized Stokes' Theorem|§23]] it will reappear as the induced orientation of a boundary.*
+*The positive orientation of $\partial D$: traverse counterclockwise, so the region lies on your left — at the marked point, the direction of travel (red) turned $90^\circ$ counterclockwise (gray) points into $D$. This convention is what makes the signs in Green's theorem come out correctly — and in [[Multivariable Analysis §23 The Generalized Stokes' Theorem|§23]] it will reappear as the induced orientation of a boundary.*
 
 Suppose $(f(x,y), g(x,y))$ is a vector field (force field) in the plane. We want to relate $\oint_\gamma f \, dx + g \, dy$ to a double integral over $D$.
 
@@ -125,7 +125,7 @@ For convenience, assume $D$ can be represented simultaneously as:
 If $D$ cannot be represented this way (e.g., if $D$ is not convex), we subdivide $D$ into pieces that can, and sum the results. The boundary contributions from internal cuts cancel.
 
 ![[m452-16-3.svg]]
-*Why the integral theorems glue: apply the theorem to each cell with its own counterclockwise boundary. The shared internal edge is traversed in opposite directions by the two cells, so its two line-integral contributions cancel exactly, leaving only the outer boundary. This is how the proof extends from rectangles to arbitrary decomposable regions — and, in [[Multivariable Analysis §23 The Generalized Stokes' Theorem|§23]], how Stokes' theorem passes from one parameter patch to a whole manifold.*
+*Why the integral theorems glue: apply the theorem to each cell with its own counterclockwise boundary. The shared internal edge is traversed in opposite directions by the two cells, so its two line-integral contributions cancel exactly, leaving only the outer boundary. This is how the proof extends from simple (Type I and II) pieces to arbitrary decomposable regions — and, in [[Multivariable Analysis §23 The Generalized Stokes' Theorem|§23]], how Stokes' theorem passes from one parameter patch to a whole manifold.*
 
 ## Derivation: The $\oint f \, dx$ Term
 
@@ -134,6 +134,9 @@ Consider $\oint_\gamma f \, dx$ using the Type I representation. The boundary $\
 - $\gamma_2$: the upper curve $y = \psi(x)$, traversed from $x = b$ to $x = a$ (right to left).
 
 (The vertical segments at $x = a$ and $x = b$, if present, contribute zero to $\oint f \, dx$ since $dx = 0$ on them.)
+
+![[m452-16-4.svg]]
+*The two halves of the proof on one region. Left (Type I): the lower curve $\gamma_1$ (blue) runs left to right, the upper curve $\gamma_2$ (red) right to left; on each vertical fiber at $x$ the FTC in $y$ turns $f(x,\phi(x)) - f(x,\psi(x))$ into $-\int_\phi^\psi f_y\,dy$, and the minus sign is exactly the reversed traversal of $\gamma_2$. Right (Type II): the left curve $\gamma_3$ (red) runs top to bottom, the right curve $\gamma_4$ (blue) bottom to top; on each horizontal fiber the FTC in $x$ gives $+\int_\alpha^\beta g_x\,dx$. Same counterclockwise boundary, cut two different ways.*
 
 Computing each piece:
 
@@ -224,6 +227,9 @@ Let $\gamma: (x(t), y(t))$, $t \in [a, b]$ be a smooth curve bounding a domain $
 > - **Outer normal** (pointing out of $D$): rotate $\mathbf{T}$ by $-\frac{\pi}{2}$ clockwise: $\mathbf{n}_{\text{out}} = (y'(t), \, -x'(t))$.
 
 ^def-16-3
+
+![[m452-16-5.svg]]
+*Def. §16.3 at one boundary point: the tangent $\mathbf{T} = (x', y')$ (blue) of the counterclockwise boundary, the outer normal $\mathbf{n}_{\text{out}} = (y', -x')$ (red, $\mathbf{T}$ turned clockwise, pointing to the right of travel and out of $D$), and the inner normal $\mathbf{n}_{\text{in}} = (-y', x')$ (gray dashed, pointing into $D$). Work integrals use $\mathbf{T}$, flux integrals use $\mathbf{n}_{\text{out}}$ — the two faces of Green's theorem in Remark §16.4.*
 
 **Convention:** With $\gamma$ oriented counterclockwise (so $D$ is on our left), the outer normal points to the right of the direction of travel.
 

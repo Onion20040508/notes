@@ -1,38 +1,32 @@
 % Figure from MATH 452 notes, section 15. Compile with the notes preamble.
 \begin{tikzpicture}[scale=1.0]
-% ======== TOP LEFT: (r,theta) rectangle grid ========
+% ======== TOP LEFT: (r,theta) rectangle grid; r in [0.5,2.45], theta in [0.25,1.72] rad ========
 \begin{scope}
-\draw[->] (-0.2,0) -- (2.9,0) node[right, font=\small] {$r$};
-\draw[->] (0,-0.2) -- (0,2.1) node[above, font=\small] {$\theta$};
-\draw[thick, figB!70, fill=figB!6] (0.5,0.25) rectangle (2.45,1.72);
-% grid: r lines at 0.5,0.89,1.28,1.67,2.06,2.45 ; theta at 0.25,0.615,0.98,1.355,1.72
+\draw[-stealth, thin] (-0.2,0) -- (2.9,0) node[right, font=\scriptsize] {$r$};
+\draw[-stealth, thin] (0,-0.2) -- (0,2.1) node[above, font=\scriptsize] {$\theta$};
+\fill[figB!6] (0.5,0.25) rectangle (2.45,1.72);
 \foreach \r in {0.89,1.28,1.67,2.06} \draw[figB!40, thin] (\r,0.25) -- (\r,1.72);
 \foreach \t in {0.615,0.98,1.355} \draw[figB!40, thin] (0.5,\t) -- (2.45,\t);
-% two same-size cells: inner-r and outer-r
+\draw[thick, figB!70] (0.5,0.25) rectangle (2.45,1.72);
 \draw[thick, figG, fill=figG!22] (0.89,0.615) rectangle (1.28,0.98);
 \draw[thick, figR, fill=figR!22] (2.06,0.615) rectangle (2.45,0.98);
-\node[font=\scriptsize, align=center] at (1.45,-0.55) {equal cells in the $(r,\theta)$ plane};
+\node[font=\scriptsize, anchor=north] at (1.45,-0.12) {equal cells, $dr \times d\theta$};
 \end{scope}
 % map arrow
-\draw[->, thick] (3.2,1.0) -- (4.6,1.0);
-\node[font=\small, align=center] at (3.72,1.55) {$\Phi(r,\theta)=$\\ $(r\cos\theta,\, r\sin\theta)$};
+\draw[-stealth, thick] (3.05,1.0) -- (4.35,1.0);
+\node[font=\scriptsize, align=center, anchor=south] at (3.7,1.05) {$\Phi(r,\theta)=$\\ $(r\cos\theta,\, r\sin\theta)$};
 % ======== TOP RIGHT: polar image ========
 \begin{scope}[shift={(5.0,-0.1)}]
-\draw[->] (-0.2,0) -- (3.3,0) node[right, font=\small] {$x$};
-\draw[->] (0,-0.2) -- (0,2.7) node[above, font=\small] {$y$};
-% sector between theta=0.25 and 1.72 rad, r from 0.5 to 2.45
-% arcs at r values
+\draw[-stealth, thin] (-0.55,0) -- (2.9,0) node[right, font=\scriptsize] {$x$};
+\draw[-stealth, thin] (0,-0.2) -- (0,2.7) node[above, font=\scriptsize] {$y$};
 \foreach \r in {0.5,0.89,1.28,1.67,2.06,2.45}
   \draw[figB!40, thin] ({\r*cos(14.3)},{\r*sin(14.3)}) arc[start angle=14.3, end angle=98.5, radius=\r];
-% rays at theta values (deg): 14.3, 35.2, 56.2, 77.6, 98.5
 \foreach \t in {14.3,35.2,56.2,77.6,98.5}
   \draw[figB!40, thin] ({0.5*cos(\t)},{0.5*sin(\t)}) -- ({2.45*cos(\t)},{2.45*sin(\t)});
-% boundary of the sector (thick)
 \draw[thick, figB!70]
   ({0.5*cos(14.3)},{0.5*sin(14.3)}) arc[start angle=14.3, end angle=98.5, radius=0.5]
   -- ({2.45*cos(98.5)},{2.45*sin(98.5)})
   arc[start angle=98.5, end angle=14.3, radius=2.45] -- cycle;
-% image cells: inner (green) r in [0.89,1.28], theta in [35.2,56.2]; outer (red) r in [2.06,2.45]
 \draw[thick, figG, fill=figG!22]
   ({0.89*cos(35.2)},{0.89*sin(35.2)}) arc[start angle=35.2, end angle=56.2, radius=0.89]
   -- ({1.28*cos(56.2)},{1.28*sin(56.2)})
@@ -41,24 +35,22 @@
   ({2.06*cos(35.2)},{2.06*sin(35.2)}) arc[start angle=35.2, end angle=56.2, radius=2.06]
   -- ({2.45*cos(56.2)},{2.45*sin(56.2)})
   arc[start angle=56.2, end angle=35.2, radius=2.45] -- cycle;
-\node[font=\scriptsize, align=right, anchor=east] at (0.42,-1.42) {images: the outer cell is wider ---\\ arc length $= r\,d\theta$ grows with $r$};
+\node[font=\scriptsize, anchor=north] at (1.2,-0.12) {image cells widen with $r$};
 \end{scope}
-% ======== BOTTOM: zoom of the outer cell ========
-\draw[dashed, gray] (6.146,1.612) -- (5.09,-3.365);
-\draw[dashed, gray] (7.002,1.312) -- (7.30,-3.22);
-\begin{scope}[shift={(5.55,-4.4)}]
-% magnified cell: nearly a rectangle, radial side dr, tangential side r0 dtheta
-% at theta0=45.7deg: radial dir (0.698,0.716); tangential (-0.716,0.698)
-\coordinate (O) at (0.6,0);
-\coordinate (Ar) at (1.15,1.18);    % Phi_r dr direction scaled
-\coordinate (At) at (-1.18,1.15);   % Phi_theta dtheta (longer: r0 dtheta)
-\draw[thick, figR, fill=figR!14] (O) -- ($(O)+(Ar)$) -- ($(O)+(Ar)+0.9*(At)$) -- ($(O)+0.9*(At)$) -- cycle;
-\draw[->, thick, figG] (O) -- ($(O)+(Ar)$) node[right, font=\small, yshift=-2pt] {$\boldsymbol{\Phi}_r\,dr$};
-\draw[->, thick, figG] (O) -- ($(O)+0.9*(At)$) node[above left=-2pt, font=\small] {$\boldsymbol{\Phi}_\theta\,d\theta$};
-% right angle mark
-\draw[thin] ($(O)+0.16*(Ar)$) -- ($(O)+0.16*(Ar)+0.144*(At)$) -- ($(O)+0.144*(At)$);
-\node[font=\small, figG!75!black] at (0.6,-0.62) {$\boldsymbol{\Phi}_r\,dr = (\cos\theta_0,\sin\theta_0)\,dr \;\perp\; \boldsymbol{\Phi}_\theta\,d\theta$};
-\node[font=\small, figR!85!black] at (0.6,-1.08) {orthogonal sides $dr$ and $r_0\,d\theta$: \; area $= r_0\,dr\,d\theta$, \; so \; $|J| = r_0$};
-\node[font=\scriptsize, gray] at (0.6,-1.50) {zoom: the cell straightens into a rectangle};
+% ======== BOTTOM: zoom of the red cell (factor 2.5), true proportions ========
+% theta0 = 45.7 deg, r0 = 2.255, dr = 0.39, d theta = 0.3665 rad:
+% radial side dr -> 0.975, tangential side r0 d theta = 0.826 -> 2.066
+\begin{scope}[shift={(6.3,-3.55)}]
+\coordinate (O) at (0,0);
+\coordinate (Ar) at ({0.975*0.698},{0.975*0.716});
+\coordinate (At) at ({-2.066*0.716},{2.066*0.698});
+\draw[thick, figR, fill=figR!14] (O) -- (Ar) -- ($(Ar)+(At)$) -- (At) -- cycle;
+\draw[-stealth, thick, figG!80!black] (O) -- (Ar);
+\draw[-stealth, thick, figG!80!black] (O) -- (At);
+\node[font=\scriptsize, figG!80!black, anchor=west, inner sep=2pt] at ($0.5*(Ar)$) {$\boldsymbol{\Phi}_r\,dr$};
+\node[font=\scriptsize, figG!80!black, anchor=north east, inner sep=1pt] at ($0.55*(At)$) {$\boldsymbol{\Phi}_\theta\,d\theta$};
+\draw[thin] ($0.14*(Ar)$) -- ($0.14*(Ar)+0.066*(At)$) -- ($0.066*(At)$);
+\node[font=\scriptsize, figR, anchor=south] at ($(Ar)+(At)+(0,0.05)$) {zoom on the red cell};
 \end{scope}
+\node[font=\scriptsize, align=left, anchor=west] at (-0.1,-2.2) {sides: $|\boldsymbol{\Phi}_r|\,dr = dr$ (radial)\\[2pt] \phantom{sides: }$|\boldsymbol{\Phi}_\theta|\,d\theta = r_0\,d\theta$ (along the arc)\\[2pt] orthogonal, so the area is $r_0\,dr\,d\theta$\\[2pt] and $|J| = r_0$};
 \end{tikzpicture}

@@ -1,0 +1,33 @@
+% Figure from MATH 452 notes, section 22. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0]
+% left: a star-shaped domain
+\filldraw[fill=figB!10, draw=figB, thick] plot[smooth cycle, tension=0.55] coordinates {(0.000,1.350) (-0.411,0.566) (-1.284,0.417) (-0.666,-0.216) (-0.794,-1.092) (-0.000,-0.700) (0.794,-1.092) (0.666,-0.216) (1.284,0.417) (0.411,0.566)};
+\coordinate (p0) at (0.05,-0.05);
+\draw[figB!70, thin] (p0) -- (0.000,1.256);
+\draw[figB!70, thin] (p0) -- (-0.370,0.510);
+\draw[figB!70, thin] (p0) -- (-1.194,0.388);
+\draw[figB!70, thin] (p0) -- (-0.599,-0.195);
+\draw[figB!70, thin] (p0) -- (-0.738,-1.016);
+\draw[figB!70, thin] (p0) -- (-0.000,-0.630);
+\draw[figB!70, thin] (p0) -- (0.738,-1.016);
+\draw[figB!70, thin] (p0) -- (0.599,-0.195);
+\draw[figB!70, thin] (p0) -- (1.194,0.388);
+\draw[figB!70, thin] (p0) -- (0.370,0.510);
+\filldraw[black] (p0) circle (1.4pt) node[anchor=north west, inner sep=1.5pt, font=\scriptsize] {$\mathbf{p}_0$};
+\node[font=\scriptsize, align=center] at (0,-1.95) {star-shaped: all segments\\ from $\mathbf{p}_0$ stay inside\\ closed $\Rightarrow$ exact};
+% right: the punctured plane (a disk of it shown)
+\begin{scope}[shift={(4.3,0)}]
+\fill[figB!10] (0,0) circle (1.35);
+\draw[black!35, thin, dashed] (0,0) circle (1.35);
+\coordinate (p0) at (-0.75,0.3);
+\coordinate (q) at (0.9,-0.36);
+\draw[figB!70, thin] (p0) -- (0.3,1.05);
+\draw[figB!70, thin] (p0) -- (-1.15,-0.55);
+\draw[figR, thick] (p0) -- (q);
+\filldraw[fill=white, draw=figR, thick] (0,0) circle (2.2pt);
+\node[figR, font=\scriptsize, anchor=north, inner sep=1pt] at (-0.3,-0.12) {$\mathbf{0}$ removed};
+\filldraw[black] (p0) circle (1.4pt) node[anchor=south east, inner sep=1.5pt, font=\scriptsize] {$\mathbf{p}_0$};
+\filldraw[black] (q) circle (1.2pt) node[anchor=west, inner sep=1.5pt, font=\scriptsize] {$\mathbf{p}$};
+\node[font=\scriptsize, align=center] at (0,-1.95) {$\mathbb{R}^2\setminus\{\mathbf{0}\}$: the segment\\ from $\mathbf{p}_0$ to $\mathbf{p}$ hits the hole\\ closed $\not\Rightarrow$ exact};
+\end{scope}
+\end{tikzpicture}%

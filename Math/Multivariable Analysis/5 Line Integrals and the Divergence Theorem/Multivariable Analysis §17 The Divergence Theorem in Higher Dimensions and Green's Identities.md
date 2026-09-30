@@ -31,6 +31,9 @@ In the [[Multivariable Analysis §16 Line Integrals and Green's Theorem|previous
 
 ^thm-17-1
 
+![[m452-17-1.svg]]
+*The proof of the component identity for $k = n$, drawn for $n = 2$. The region $D$ sits over its projection $D'$ between the lower graph $S_{\text{bot}}\colon x_n = \alpha(\mathbf{x}')$ (blue) and the upper graph $S_{\text{top}}\colon x_n = \beta(\mathbf{x}')$ (red). Inside: along each vertical fiber the FTC turns $\int_\alpha^\beta \partial_n u_n\,dx_n$ into $u_n(\mathbf{x}',\beta) - u_n(\mathbf{x}',\alpha)$ (Step 2). On the boundary: a patch $dS$ of $S_{\text{top}}$ projects onto $d\mathbf{x}'$, and $n_n\,dS = d\mathbf{x}'$ exactly (the tilt that enlarges $dS$ shrinks $n_n$ by the same factor); on $S_{\text{bot}}$ the outward normal points down, giving $-d\mathbf{x}'$; on the vertical sides $n_n = 0$ (Step 3). Top minus bottom on both sides — that is the whole theorem.*
+
 > [!proof]+ Proof
 > By linearity, it suffices to prove the **component identity**:
 >

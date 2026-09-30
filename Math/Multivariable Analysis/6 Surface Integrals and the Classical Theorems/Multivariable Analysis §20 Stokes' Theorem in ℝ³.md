@@ -50,6 +50,9 @@ $$
 \Gamma^*(t) = \big(x(t), \, y(t), \, h(x(t), y(t))\big).
 $$
 
+![[m452-20-2.svg]]
+*The graph case: $S$ (red) is the graph of $h$ over $D$ (gray), and its rim $\Gamma = \partial S$ sits directly above $\gamma = \partial D$ — each point $(x(t),y(t))$ of $\gamma$ is lifted to $\Gamma^*(t) = (x(t),y(t),h(x(t),y(t)))$. Both curves run counterclockwise seen from above, matching the upward normal $\mathbf{X}_x\times\mathbf{X}_y = (-h_x,-h_y,1)$. Step 1 pushes the line integral down from $\Gamma$ to $\gamma$; Step 2 is Green's theorem on the flat region $D$.*
+
 **Step 1: Pull back the line integral to $\gamma$.**
 
 The velocity of $\Gamma^*$ is:
@@ -350,6 +353,9 @@ This completes the proof. $\blacksquare$
 > The surface integral of a curl depends only on the boundary, not on which surface spans it.
 
 ^rem-20-4
+
+![[m452-20-3.svg]]
+*Special case 3: one boundary circle $C$ (red), two spanning surfaces — the flat disk $S_1$ with $\hat{n} = \hat{k}$ and the hemisphere $S_2$ with outward $\hat{n}$. Both normals are compatible with the same counterclockwise-from-above orientation of $C$, so both flux integrals of $\nabla\times\mathbf{F}$ equal $\oint_C \mathbf{F}\cdot d\mathbf{r}$. Gluing $S_1$ (normal flipped) to $S_2$ gives a closed surface, on which the curl flux is $0$ — special case 2.*
 
 > [!remark] Remark: The Complete Picture
 > With Stokes' theorem, we have proved all three integral theorems on the syllabus:

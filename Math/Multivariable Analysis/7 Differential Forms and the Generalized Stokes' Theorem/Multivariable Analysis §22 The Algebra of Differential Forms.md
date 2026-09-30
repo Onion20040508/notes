@@ -768,7 +768,7 @@ The converse — is every closed form exact? — is the central question. Equiva
 What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the removed origin. The closed curve $\boldsymbol{\gamma}$ wraps around this hole, and the form $\omega$ detects it. On domains without holes, this failure does not occur:
 
 ![[m452-22-2.svg]]
-*The vector field of $\omega = \frac{-y\,dx + x\,dy}{x^2+y^2}$ circulates around the removed origin. Locally the field is a gradient (the curl vanishes), but no global potential exists: the circle $\boldsymbol{\gamma}$ picks up $\int_{\boldsymbol{\gamma}}\omega = 2\pi$ per loop around the hole. The form measures the winding — an analytic object detecting a topological feature.*
+*The vector field $\frac{(-y,\,x)}{x^2+y^2}$ of $\omega = \frac{-y\,dx + x\,dy}{x^2+y^2}$ (blue; arrow lengths shrink like $1/r$) circulates around the removed origin (hollow dot). Locally the field is a gradient (the curl vanishes), but no global potential exists: the counterclockwise unit circle $\boldsymbol{\gamma}$ (red) picks up $\int_{\boldsymbol{\gamma}}\omega = 2\pi$ per loop around the hole. The form measures the winding — an analytic object detecting a topological feature.*
 
 > [!remark]- Connections
 > - The topological side of the same hole: $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \pi_1(S^1)$ ([[Topology §26 Deformation Retracts and Homotopy Type#^thm-26-2|590 §26.2]]) $\cong \mathbb{Z}$ ([[Fundamental Group of the Circle]]); $\frac{1}{2\pi}\int_{\boldsymbol{\gamma}}\omega$ counts the winding.
@@ -779,6 +779,9 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 > In particular, since $\mathbb{R}^n$ itself is star-shaped, every closed form on $\mathbb{R}^n$ is exact.
 
 ^prop-22-12
+
+![[m452-22-3.svg]]
+*Why star-shaped is the right hypothesis. Left: from $\mathbf{p}_0$ every segment stays in the domain, so a potential can be built by integrating along these segments (the homotopy operator) — closed forms are exact. Right: in $\mathbb{R}^2\setminus\{\mathbf{0}\}$ no point works as $\mathbf{p}_0$: the segment to the point $\mathbf{p}$ opposite the hole runs through the removed origin, and indeed the closed form of Proposition §22.11 is not exact there.*
 
 > [!remark]- Connections
 > - A star-shaped domain contracts to $\mathbf{p}_0$ along the segments — a [[Topology §22 Homotopy of Paths#^thm-22-1|straight-line homotopy (590 §22.1)]] — so it is [[Topology §23 The Fundamental Group#^def-23-3|simply connected (590 Def. §23.3)]]; the homotopy operator in the proof integrates along exactly these segments.

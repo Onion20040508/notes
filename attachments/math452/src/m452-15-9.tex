@@ -1,0 +1,37 @@
+% Figure from MATH 452 notes, section 15. Compile with the notes preamble.
+% Same sample map as m452-15-5, smaller cell [0.5,1.1] x [0.5,1.0] (h = 0.6, k = 0.5);
+% the band has half-width r = 0.08 > max deviation 0.075 between Phi and its linearization L on the boundary.
+\begin{tikzpicture}[scale=4.0,
+  declare function={X(\u,\v)=0.3+\u+0.35*\v-0.15*\v*\v; Y(\u,\v)=0.2+0.3*\u+0.8*\v+0.18*\u*\u;}]
+\coordinate (P0) at (0.9375,0.795);
+% the fattened boundary: all points within r of the boundary of P (stroke width 2r)
+\draw[black!12, line width=0.64cm, line join=round] (P0) -- ++(0.6,0.288) -- ++(0.1,0.4) -- ++(-0.6,-0.288) -- cycle;
+% actual image Phi(R)
+\fill[figB!20, opacity=0.6]
+  plot[domain=0.5:1.1, samples=25] ({X(\x,0.5)}, {Y(\x,0.5)})
+  -- plot[domain=0.5:1.0, samples=25] ({X(1.1,\x)}, {Y(1.1,\x)})
+  -- plot[domain=1.1:0.5, samples=25] ({X(\x,1.0)}, {Y(\x,1.0)})
+  -- plot[domain=1.0:0.5, samples=25] ({X(0.5,\x)}, {Y(0.5,\x)}) -- cycle;
+\draw[figB, thick]
+  plot[domain=0.5:1.1, samples=25] ({X(\x,0.5)}, {Y(\x,0.5)})
+  -- plot[domain=0.5:1.0, samples=25] ({X(1.1,\x)}, {Y(1.1,\x)})
+  -- plot[domain=1.1:0.5, samples=25] ({X(\x,1.0)}, {Y(\x,1.0)})
+  -- plot[domain=1.0:0.5, samples=25] ({X(0.5,\x)}, {Y(0.5,\x)}) -- cycle;
+% the parallelogram P = L(R) of the linearized map
+\draw[figR, thick, dashed] (P0) -- ++(0.6,0.288) -- ++(0.1,0.4) -- ++(-0.6,-0.288) -- cycle;
+% one corner: L(u0+h, v0+k) and Phi(u0+h, v0+k) are within distance r
+\coordinate (Lc) at (1.6375,1.483);
+\coordinate (Pc) at (1.6,1.5478);
+\draw[black!55, thin, dashed] (Lc) circle (0.08);
+\draw[black!55, thin] (Lc) -- ++(-20:0.08) node[pos=0.6, anchor=north, inner sep=1.5pt, font=\scriptsize, black!70] {$r$};
+\filldraw[figR] (Lc) circle (0.35pt);
+\filldraw[figB] (Pc) circle (0.35pt);
+\node[font=\scriptsize, figR, anchor=west, inner sep=1pt] at ($(Lc)+(0.09,0.0)$) {$L(u_0+h,\, v_0+k)$};
+\node[font=\scriptsize, figB, anchor=south, inner sep=2pt] at (Pc) {$\Phi(u_0+h,\, v_0+k)$};
+\filldraw (P0) circle (0.35pt);
+\node[font=\scriptsize, anchor=north east, inner sep=1.5pt] at ($(P0)+(-0.03,-0.03)$) {$\Phi(u_0,v_0)$};
+% labels
+\node[font=\small, figB] at (1.3,1.13) {$\Phi(R)$};
+\node[font=\scriptsize, figR, anchor=north west, inner sep=1pt] at (1.45,0.98) {$P$: area $|J|\,hk$};
+\node[font=\scriptsize, black!60, anchor=east, align=right] at (0.9,1.2) {points within $r$\\ of $\partial P$};
+\end{tikzpicture}

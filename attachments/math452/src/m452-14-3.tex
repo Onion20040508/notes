@@ -27,8 +27,8 @@
 % gradients at the minimum (r, -r): grad phi = (2r,-2r), grad f = (-r, r) = -grad phi / 2
 \draw[-stealth, thick, figG] (\r,-\r) -- ++(0.6,-0.6) node[anchor=north west, inner sep=1pt, font=\scriptsize] {$\nabla\phi$};
 \draw[-stealth, very thick, figB] (\r,-\r) -- ++(-0.3,0.3) node[anchor=south east, inner sep=0.5pt, font=\scriptsize] {$\nabla f$};
-\foreach \p in {(\r,\r),(-\r,-\r)} \filldraw[figR] \p circle (1.5pt);
-\foreach \p in {(\r,-\r),(-\r,\r)} \filldraw[figO] \p circle (1.5pt);
 \node[figR, font=\scriptsize, anchor=north east, inner sep=1pt, fill=white] at (-\r,-\r) {max $\tfrac12$};
 \node[figO!90!black, font=\scriptsize, anchor=south east, inner sep=1pt, fill=white] at (-\r,\r) {min $-\tfrac12$};
+\foreach \p in {(\r,\r),(-\r,-\r)} \filldraw[figR] \p circle (1.5pt);
+\foreach \p in {(\r,-\r),(-\r,\r)} \filldraw[figO] \p circle (1.5pt);
 \end{tikzpicture}

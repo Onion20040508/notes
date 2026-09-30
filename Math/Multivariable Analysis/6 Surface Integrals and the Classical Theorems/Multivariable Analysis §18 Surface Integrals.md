@@ -69,6 +69,9 @@ The parametrization $\mathbf{X}: D \to \mathbb{R}^3$ is a “change of variables
 
 ^ex-18-1
 
+![[m452-18-3.svg]]
+*Example §18.1 on the sphere of radius $R$: the point $\mathbf{X}(\theta,\varphi)$ has longitude $\theta$ (measured in the $xy$-plane from the $x$-axis) and latitude $\varphi$ (measured up from the equator). Through it pass the latitude circle $\varphi = \text{const}$ (a $\theta$-curve) and the meridian $\theta = \text{const}$ (a $\varphi$-curve), whose tangents are $\mathbf{X}_\theta$ and $\mathbf{X}_\varphi$ (red), with lengths $R\cos\varphi$ and $R$. Their cross product has length $R^2\cos\varphi$ — the area factor of Example §18.2. At the poles the latitude circles shrink to a point, so $\mathbf{X}_\theta = \mathbf{0}$: the irregular points of Remark §18.3, a defect of the coordinates, not of the sphere.*
+
 > [!remark] Remark: Dimension Count
 > A 1D object (curve) in 1D space cannot curve — it fills the whole space. A 1D object in 2D space *can* curve. Similarly, a surface is a 2D object that can curve only when it lives in 3D (or higher) space. The parametrization $\mathbf{X}: \mathbb{R}^2 \to \mathbb{R}^3$ maps a flat 2D domain into 3D, and the image can be curved.
 
@@ -476,6 +479,9 @@ For a closed surface $\partial V$ bounding a volume $V$:
 > $$
 
 ^thm-18-2
+
+![[m452-18-4.svg]]
+*The setup of the proof for the $z$-component: $V$ lies between $S_{\text{bot}}\colon z = \phi(x,y)$ (blue) and $S_{\text{top}}\colon z = \psi(x,y)$ (red) over $D$, with vertical walls $S_{\text{side}}$. Along the dashed vertical segment above $(x,y)$, the FTC in $z$ gives $\int_\phi^\psi c_z\,dz = c(x,y,\psi) - c(x,y,\phi)$ (Step 2). On the boundary, $\mathbf{X}_x \times \mathbf{X}_y = (-\psi_x,-\psi_y,1)$ points up and out on the top, the outward normal on the bottom points down (hence $\mathbf{X}_y \times \mathbf{X}_x$ and $n_3\,dS = -dx\,dy$), and the walls have horizontal normals, $n_3 = 0$ (Step 3).*
 
 > [!proof]+ Proof
 > By linearity ([[Multivariable Analysis §15 Multivariable Integration#^thm-15-3|Theorem §15.3]]), it suffices to prove the identity for each component separately:

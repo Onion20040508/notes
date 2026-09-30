@@ -1,0 +1,31 @@
+% Figure from MATH 452 notes, section 15. Compile with the notes preamble.
+% Example 15.1: D = {0 <= x <= 1, x <= y <= 1} = {0 <= y <= 1, 0 <= x <= y}.
+\begin{tikzpicture}[scale=2.6]
+\foreach \sh/\mode in {0/1, 1.7/2}{
+\begin{scope}[shift={(\sh,0)}]
+\draw[-stealth, thin] (-0.08,0) -- (1.3,0) node[right, font=\scriptsize] {$x$};
+\draw[-stealth, thin] (0,-0.08) -- (0,1.3) node[above, font=\scriptsize] {$y$};
+\fill[figB!15] (0,0) -- (1,1) -- (0,1) -- cycle;
+\draw[figB, thick] (0,0) -- (1,1) -- (0,1) -- cycle;
+\draw[black!40, dashed, thin] (1,0) -- (1,1);
+\node[font=\scriptsize, anchor=north] at (1,0) {$1$};
+\node[font=\scriptsize, anchor=east] at (0,1) {$1$};
+\node[font=\scriptsize, figB, anchor=west, inner sep=1pt] at (0.52,0.3) {$y = x$};
+\ifnum\mode=1
+  \draw[figR, very thick] (0.3,0.3) -- (0.3,1);
+  \filldraw[figR] (0.3,0.3) circle (0.6pt);
+  \filldraw[figR] (0.3,1) circle (0.6pt);
+  \draw[black!45, dotted] (0.3,0) -- (0.3,0.3);
+  \node[font=\scriptsize, anchor=north] at (0.3,0) {$x$};
+  \node[font=\scriptsize, figR, anchor=west, inner sep=2pt] at (0.3,0.89) {$x \le y \le 1$};
+  \node[font=\scriptsize, anchor=north, align=center] at (0.6,-0.14) {$\displaystyle\int_0^1\!\!\int_x^1 e^{y^2}\,dy\,dx$\\ inner integral has no\\ elementary antiderivative};
+\else
+  \draw[figR, very thick] (0,0.62) -- (0.62,0.62);
+  \filldraw[figR] (0,0.62) circle (0.6pt);
+  \filldraw[figR] (0.62,0.62) circle (0.6pt);
+  \node[font=\scriptsize, anchor=east] at (0,0.62) {$y$};
+  \node[font=\scriptsize, figR, anchor=south, inner sep=2pt] at (0.3,0.62) {$0 \le x \le y$};
+  \node[font=\scriptsize, anchor=north, align=center] at (0.6,-0.14) {$\displaystyle\int_0^1\!\!\int_0^y e^{y^2}\,dx\,dy$\\ inner integral: $y\,e^{y^2}$};
+\fi
+\end{scope}}
+\end{tikzpicture}
