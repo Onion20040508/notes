@@ -1992,7 +1992,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 ^prop-15-16
 
 > [!proof]+ Proof
-> Since $\Phi$ is $C^1$ on the compact set $\overline{D^*}$ ([[Heine–Borel Theorem|Heine–Borel]]), it is Lipschitz ([[Mean Value Theorem in Several Variables|mean value theorem]]): there exists $L > 0$ such that
+> Since $\Phi$ is $C^1$ on the compact set $\overline{D^*}$ ([[Heine–Borel Theorem|Heine–Borel]]), it is Lipschitz ([[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-4|mean value theorem]]): there exists $L > 0$ such that
 >
 > $$
 > \|\Phi(p) - \Phi(q)\| \leq L \|p - q\| \quad \text{for all } p, q \in \overline{D^*}.
@@ -2024,7 +2024,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 
 ^pf-15-16
 
-*Uses:* [[Heine–Borel Theorem|590 §15.12]], [[Mean Value Theorem in Several Variables|§9.4]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-13|Def. §15.13]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-14|Def. §15.14]]
+*Uses:* [[Heine–Borel Theorem|590 §15.12]], [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-4|§9.4]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-13|Def. §15.13]], [[Multivariable Analysis §15 Multivariable Integration#^def-15-14|Def. §15.14]]
 
 > [!theorem] Theorem §15.17: Change of Variables — General Jordan Measurable Domains
 > Let $D^* \subseteq \mathbb{R}^2$ be bounded and Jordan measurable. Let $\Phi: \overline{D^*} \to \overline{D}$ be a $C^1$ bijection with $C^1$ inverse, where $D = \Phi(D^*)$.

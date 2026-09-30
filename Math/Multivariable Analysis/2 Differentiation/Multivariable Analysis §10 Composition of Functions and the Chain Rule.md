@@ -73,7 +73,7 @@ Recall the single-variable [[Single Variable Analysis §28 Basic Properties of t
 
 ^pf-10-1
 
-*Uses:* [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]]
+*Uses:* [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[Multivariable Analysis §2 Open and Closed Sets#^def-2-2|Def. §2.2]]
 
 > [!remark]- Connections
 > - The same statement was proved in [[Multivariable Analysis §3 Continuity and Limits of Functions#^thm-3-4|Theorem §3.4]].
@@ -289,7 +289,7 @@ $$
 
 ^pf-10-2
 
-*Uses:* [[Mean Value Theorem|451 §29.3]], [[Multivariable Analysis §4 Partial Derivatives#^def-4-1|Def. §4.1]]
+*Uses:* [[Mean Value Theorem|451 §29.3]], [[Multivariable Analysis §4 Partial Derivatives#^def-4-1|Def. §4.1]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]]
 
 > [!remark] Remark: Warning: Differentiability of Composition
 > **Question:** If $f$ is differentiable and $\varphi, \psi$ are differentiable, is the composition $g = f \circ (\varphi, \psi)$ necessarily differentiable?

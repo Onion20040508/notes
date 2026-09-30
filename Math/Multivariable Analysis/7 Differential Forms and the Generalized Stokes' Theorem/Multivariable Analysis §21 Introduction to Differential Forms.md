@@ -174,7 +174,7 @@ $$
 \int_\gamma \omega = \int_a^b (f_1\, x' + f_2\, y' + f_3\, z')\,dt.
 $$
 
-(In [[Multivariable Analysis §15 Multivariable Integration|§15]]–[[Multivariable Analysis §19 The Laplacian in Spherical Coordinates|§19]], we wrote $P, Q, R$ for $f_1, f_2, f_3$.)
+(In [[Multivariable Analysis §16 Line Integrals and Green's Theorem|§16]]–[[Multivariable Analysis §20 Stokes' Theorem in ℝ³|§20]], we wrote $P, Q, R$ for $f_1, f_2, f_3$.)
 
 The simplest 1-form is $df = f_x\,dx + f_y\,dy + f_z\,dz$, where the coefficients come from a single function $f$. But not every 1-form arises this way: $\omega = y\,dx + x^2\,dy$ has no single antiderivative $f$ with $f_x = y$ and $f_y = x^2$ (since $f_{xy} = 1 \neq 2x = f_{yx}$). Such a form is called *not exact* ([[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-8|Def. §22.8]]).
 
@@ -186,7 +186,7 @@ $$
 \eta = f_{23}\,dy \wedge dz + f_{31}\,dz \wedge dx + f_{12}\,dx \wedge dy.
 $$
 
-(In §15–§19, we wrote $A, B, C$ for $f_{23}, f_{31}, f_{12}$. The subscript notation makes the structure explicit: the subscripts name which basis element the coefficient multiplies.)
+(In §16–§20, we wrote $A, B, C$ for $f_{23}, f_{31}, f_{12}$. The subscript notation makes the structure explicit: the subscripts name which basis element the coefficient multiplies.)
 
 To integrate $\eta$ over a surface $S$ parametrized by $\mathbf{X}(u,v)$: at each point of $S$, the parametrization provides two tangent vectors $\mathbf{X}_u$ and $\mathbf{X}_v$ (from [[Multivariable Analysis §18 Surface Integrals#^def-18-2|§18]]). These span a small parallelogram — the infinitesimal surface element. The 2-form eats this pair of vectors and outputs a number (the signed area, weighted by the coefficients at that point). Summing over all such parallelograms:
 

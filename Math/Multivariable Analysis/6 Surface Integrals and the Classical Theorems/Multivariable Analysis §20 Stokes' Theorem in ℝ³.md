@@ -24,6 +24,8 @@ Green's theorem ([[Green's Theorem|Section 16]]) relates a line integral around 
 
 ^thm-20-1
 
+*Uses:* [[Multivariable Analysis §18 Surface Integrals#^def-18-1|Def. §18.1]], [[Multivariable Analysis §18 Surface Integrals#^def-18-6|Def. §18.6]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-2|Def. §16.2]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]], [[Multivariable Chain Rule|§10.2]], [[Green's Theorem|§16.1]], [[Multivariable Analysis §6 Differentiability#^thm-6-4|§6.4]], [[Schwarz–Clairaut Theorem|§5.1]]
+
 > [!remark]- Connections
 > - The flat case is [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-3|Green's Theorem as 2D Stokes' Theorem]]; the proof below reduces to [[Green's Theorem|Green's Theorem]] on the parameter domain.
 > - In forms language: $d$ on 1-forms gives the curl ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-3|Prop. §22.3]]), and the theorem is a case of the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]].
@@ -125,8 +127,6 @@ Therefore:
 $$
 \oint_\Gamma \mathbf{F} \cdot d\mathbf{r} = \iint_D (\tilde{Q}_x - \tilde{P}_y) \, dx \, dy = \iint_D (\nabla \times \mathbf{F}) \cdot (\mathbf{X}_x \times \mathbf{X}_y) \, dx \, dy = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}. \qquad \square
 $$
-
-*Uses:* [[Multivariable Chain Rule|§10.2]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-2|Def. §16.2]], [[Green's Theorem|§16.1]], [[Multivariable Analysis §6 Differentiability#^thm-6-4|§6.4]], [[Schwarz–Clairaut Theorem|§5.1]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]], [[Multivariable Analysis §18 Surface Integrals#^def-18-6|Def. §18.6]]
 
 > [!remark] Remark: Limitations and the General Case
 > This proof works only for surfaces that are graphs over a domain in the $xy$-plane. For a general surface (e.g., a hemisphere, where the normal is not everywhere “upward”), we would need to decompose into graph patches and sum — just as the Divergence Theorem proof required decomposition into simple solid regions ([[Multivariable Analysis §18 Surface Integrals#^rem-18-8|Remark in §18]]).
@@ -314,8 +314,6 @@ $$
 $$
 
 This completes the proof. $\blacksquare$
-
-*Uses:* [[Multivariable Analysis §18 Surface Integrals#^def-18-1|Def. §18.1]], [[Multivariable Analysis §18 Surface Integrals#^def-18-6|Def. §18.6]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]], [[Multivariable Chain Rule|§10.2]], [[Green's Theorem|§16.1]], [[Multivariable Analysis §6 Differentiability#^thm-6-4|§6.4]], [[Schwarz–Clairaut Theorem|§5.1]]
 
 > [!remark] Remark: Structure of the Proof
 > The proof has a clean logical flow:

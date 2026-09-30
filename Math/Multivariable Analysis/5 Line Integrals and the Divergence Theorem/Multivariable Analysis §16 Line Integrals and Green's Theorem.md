@@ -195,6 +195,8 @@ Adding the results:
 
 ^thm-16-1
 
+*Uses:* [[Multivariable Analysis §15 Multivariable Integration#^def-15-12|Def. §15.12]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|§15.9]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-10|§15.10]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-4|§15.4]], [[Fundamental Theorem of Calculus|451 §34.1]]
+
 > [!remark]- Connections
 > - 1D ancestor: the [[Fundamental Theorem of Calculus]] (boundary of $[a,b]$ is $\{a,b\}$); curved-surface version: [[Stokes' Theorem in ℝ³|Stokes' Theorem (§20.1)]]; everything at once: [[Generalized Stokes' Theorem|Generalized Stokes' Theorem (§23.1)]].
 > - Why the region must have no holes for "curl-free ⇒ conservative": [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-11|A Closed Form That Is Not Exact (§22.11)]]; the topological notion is [[Topology §23 The Fundamental Group#^def-23-3|simply connected]] (590 §23.3).
@@ -294,6 +296,8 @@ Now rename: let $\mathbf{u} = (u_1, u_2)$ be any $C^1$ vector field. Set $g = u_
 
 ^thm-16-2
 
+*Uses:* [[Green's Theorem|§16.1]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-1|Def. §16.1]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-2|Def. §16.2]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-3|Def. §16.3]]
+
 > [!remark]- Connections
 > - Generalizes to [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ (§17.1)]] and, with surface integrals, [[Divergence Theorem in ℝ³|Divergence Theorem in ℝ³ (§18.2)]].
 
@@ -368,6 +372,8 @@ This is exactly the integrand in [[Green's Theorem|Green's theorem]]! With $\mat
 > where $\mathbf{u} = (f, g)$, $d\mathbf{x} = (dx, dy)$, and $(\nabla \times \mathbf{u}) \cdot \hat{k} = g_x - f_y$.
 
 ^thm-16-3
+
+*Uses:* [[Green's Theorem|§16.1]], [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]]
 
 > [!remark]- Connections
 > - The flat case of [[Stokes' Theorem in ℝ³|Stokes' Theorem (§20.1)]], with $S = D$ and $\hat{n} = \hat{k}$.

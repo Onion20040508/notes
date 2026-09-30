@@ -144,7 +144,7 @@ In the [[Multivariable Analysis §16 Line Integrals and Green's Theorem|previous
 
 ^pf-17-1
 
-*Uses:* [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-1|Def. §17.1]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-3|§15.3]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|§15.9]], [[Fundamental Theorem of Calculus|451 §34.1]]
+*Uses:* [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-1|Def. §17.1]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-3|§15.3]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|§15.9]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-4|§15.4]], [[Fundamental Theorem of Calculus|451 §34.1]]
 
 > [!remark]- Connections
 > - $n = 1$ is the [[Fundamental Theorem of Calculus]]; $n = 2$ is [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-2|Theorem §16.2]]; the $\mathbb{R}^3$ version with parametrized surfaces is [[Divergence Theorem in ℝ³|Theorem §18.2]].
@@ -408,6 +408,8 @@ Therefore, the integrand vanishes pointwise:
 
 ^thm-17-4
 
+*Uses:* [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-2|§16.2]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[Multivariable Analysis §2 Open and Closed Sets#^def-2-1|Def. §2.1]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-5|§15.5]]
+
 This is the **continuity equation**: the local form of conservation of mass.
 
 ## Incompressible Flow
@@ -566,6 +568,8 @@ Choosing $C' = 0$:
 > satisfies Laplace's equation $\Delta \phi = 0$ for all $(x,y) \neq (0,0)$.
 
 ^thm-17-5
+
+*Uses:* [[Multivariable Chain Rule|§10.2]], [[Multivariable Analysis §6 Differentiability#^thm-6-4|§6.4]], [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]]
 
 > [!remark]- Connections
 > - The 3D radial computation (giving $f'' + \frac{2}{r} f'$ and the solution $1/r$): [[Multivariable Analysis §19 The Laplacian in Spherical Coordinates#^rem-19-2|Verification: Radial Functions]], from the [[Multivariable Analysis §19 The Laplacian in Spherical Coordinates#^thm-19-1|Laplacian in Spherical Coordinates (§19.1)]].

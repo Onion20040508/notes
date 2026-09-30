@@ -1,0 +1,63 @@
+% Figure from MATH 551 notes, section 18. Compile with the notes preamble.
+\begin{tikzpicture}[x=8cm, y=1cm, >=stealth]
+% --- Row 1: The set E and Vitali intervals ---
+\node[anchor=east, font=\small\bfseries] at (-0.05, 0) {(a)};
+% E
+\fill[orange!15] (0.08,-0.15) rectangle (0.92,0.15);
+\draw[orange!70!black, line width=1.5pt] (0.08,0) -- (0.92,0);
+\node[above, font=\footnotesize, orange!70!black] at (0.5, 0.15) {$E$};
+% Vitali intervals (many overlapping, blue)
+\foreach \a/\b in {0.05/0.18, 0.10/0.22, 0.15/0.35, 0.20/0.28, 0.30/0.50, 0.33/0.42, 0.45/0.55, 0.48/0.70, 0.52/0.62, 0.60/0.78, 0.65/0.72, 0.72/0.95, 0.75/0.85, 0.80/0.88, 0.85/0.93} {
+  \fill[blue!15, rounded corners=1pt] (\a,-0.45) rectangle (\b,-0.25);
+  \draw[blue!50, line width=0.4pt, rounded corners=1pt] (\a,-0.45) rectangle (\b,-0.25);
+}
+\node[right, font=\footnotesize, blue!50!black] at (0.97, -0.35) {$\Gamma$};
+
+% --- Row 2: Greedy selection ---
+\node[anchor=east, font=\small\bfseries] at (-0.05, -1.4) {(b)};
+% E again
+\draw[orange!70!black, line width=1pt] (0.08,-1.4) -- (0.92,-1.4);
+% Selected disjoint intervals (green)
+\fill[green!25, rounded corners=1.5pt] (0.15,-1.65) rectangle (0.35,-1.45);
+\draw[green!60!black, line width=1pt, rounded corners=1.5pt] (0.15,-1.65) rectangle (0.35,-1.45);
+\node[font=\scriptsize, green!40!black] at (0.25,-1.55) {$I_1$};
+
+\fill[green!25, rounded corners=1.5pt] (0.48,-1.65) rectangle (0.70,-1.45);
+\draw[green!60!black, line width=1pt, rounded corners=1.5pt] (0.48,-1.65) rectangle (0.70,-1.45);
+\node[font=\scriptsize, green!40!black] at (0.59,-1.55) {$I_2$};
+
+\fill[green!25, rounded corners=1.5pt] (0.75,-1.65) rectangle (0.90,-1.45);
+\draw[green!60!black, line width=1pt, rounded corners=1.5pt] (0.75,-1.65) rectangle (0.90,-1.45);
+\node[font=\scriptsize, green!40!black] at (0.825,-1.55) {$I_3$};
+% Uncovered points
+\fill[red!70!black] (0.10,-1.4) circle (0.006);
+\fill[red!70!black] (0.40,-1.4) circle (0.006);
+\node[above, font=\scriptsize, red!60!black] at (0.40,-1.38) {$x_0$};
+
+% --- Row 3: 5x dilations ---
+\node[anchor=east, font=\small\bfseries] at (-0.05, -2.8) {(c)};
+% E again
+\draw[orange!70!black, line width=1pt] (0.08,-2.8) -- (0.92,-2.8);
+% Selected intervals (dimmed)
+\fill[green!15, rounded corners=1.5pt] (0.15,-3.05) rectangle (0.35,-2.85);
+\draw[green!40!black, line width=0.5pt, rounded corners=1.5pt] (0.15,-3.05) rectangle (0.35,-2.85);
+\fill[green!15, rounded corners=1.5pt] (0.48,-3.05) rectangle (0.70,-2.85);
+\draw[green!40!black, line width=0.5pt, rounded corners=1.5pt] (0.48,-3.05) rectangle (0.70,-2.85);
+\fill[green!15, rounded corners=1.5pt] (0.75,-3.05) rectangle (0.90,-2.85);
+\draw[green!40!black, line width=0.5pt, rounded corners=1.5pt] (0.75,-3.05) rectangle (0.90,-2.85);
+% 5x dilations (pink)
+\fill[pink!30, rounded corners=2pt] (0.00,-3.35) rectangle (0.60,-3.15);
+\draw[pink!60!red, line width=0.5pt, rounded corners=2pt] (0.00,-3.35) rectangle (0.60,-3.15);
+\node[font=\scriptsize, pink!50!red] at (0.30,-3.25) {$\hat{I}_1$ ($5\times$)};
+
+\fill[pink!30, rounded corners=2pt] (0.04,-3.6) rectangle (1.00,-3.4);
+\draw[pink!60!red, line width=0.5pt, rounded corners=2pt] (0.04,-3.6) rectangle (1.00,-3.4);
+\node[font=\scriptsize, pink!50!red] at (0.52,-3.5) {$\hat{I}_2$ ($5\times$)};
+
+\fill[pink!30, rounded corners=2pt] (0.45,-3.85) rectangle (1.00,-3.65);
+\draw[pink!60!red, line width=0.5pt, rounded corners=2pt] (0.45,-3.85) rectangle (1.00,-3.65);
+\node[font=\scriptsize, pink!50!red] at (0.725,-3.75) {$\hat{I}_3$ ($5\times$)};
+% x_0 covered
+\fill[red!70!black] (0.40,-2.8) circle (0.006);
+\draw[->, red!60!black, line width=0.4pt, dashed] (0.40,-2.82) -- (0.40,-3.15);
+\end{tikzpicture}

@@ -26,7 +26,7 @@ tags: [chapter, multivariable-analysis]
 - [[Continuous Partials Imply Differentiability]] (§6.2)
 - [[Directional Derivative Formula]] (§7.1)
 - [[Multivariable Taylor's Theorem]] (§9.2)
-- [[Mean Value Theorem in Several Variables]] (§9.4)
+- [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-4|Theorem §9.4]] (§9.4)
 - [[Multivariable Chain Rule]] (§10.2)
 
 ## Load-bearing results

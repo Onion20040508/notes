@@ -16,7 +16,7 @@
 }
 \node[font=\scriptsize, align=center] at (0,-1.85) {more flux leaves (right) than enters (left):\\ net outflux $> 0$, \; $\nabla\cdot\mathbf{F} > 0$};
 \node[figB, font=\scriptsize, anchor=east, inner sep=1pt] at (-0.9,-0.3) {$\partial B_\varepsilon$};
-\filldraw (0,0) circle (1.1pt) node[below, font=\scriptsize, inner sep=2pt] {$P$};
+\filldraw (0,0) circle (1.1pt) node[below right, font=\scriptsize, inner sep=1.5pt] {$P$};
 \end{scope}
 % ===== right panel: zero divergence (uniform field) =====
 \begin{scope}[shift={(5.6,0)}]
@@ -27,7 +27,7 @@
   \pgfmathsetmacro{\cy}{0.85*sin(\ang)}
   \draw[-stealth, thick, figG!80] ({\cx-0.31},\cy) -- ({\cx+0.31},\cy);
 }
-\filldraw (0,0) circle (1.1pt) node[below, font=\scriptsize, inner sep=2pt] {$P$};
+\filldraw (0,0) circle (1.1pt) node[below right, font=\scriptsize, inner sep=1.5pt] {$P$};
 \node[font=\scriptsize, align=center] at (0,-1.85) {uniform field: inflow $=$ outflow,\\ net flux $= 0$, \; $\nabla\cdot\mathbf{F} = 0$};
 \end{scope}
 \end{tikzpicture}
