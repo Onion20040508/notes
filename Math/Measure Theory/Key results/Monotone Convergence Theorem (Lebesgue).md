@@ -34,4 +34,7 @@ tags: [measure-theory, hub]
 - [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-12|Corollary §19.12: Minkowski for Nonnegative Series]]
 
 ## Connections
-- TODO
+- **Not the 451 theorem.** The MATH 451 [[Monotone Convergence Theorem]] says bounded monotone sequences of reals converge. This theorem exchanges limit and integral for 0 ≤ f_k ↑ f. It uses the 451 result in Step 1, to know that lim ∫f_k exists.
+- **Proof idea.** ∫f_k ≤ ∫f by monotonicity. For the reverse, fix a simple h ≤ f and c ∈ (0, 1). The sets {f_k ≥ c·h} increase to E, so [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^lem-14-5|Lemma §14.5]] (from [[Continuity of Measure]]) gives lim ∫f_k ≥ c∫h.
+- **Riemann vs Lebesgue.** Riemann integrable functions are not closed under monotone limits: indicators of finite sets of rationals increase to the Dirichlet function ([[Measure Theory §8 Motivation꞉ The Riemann Integral#^rem-8-2|Rem. §8.2]], [[Dirichlet and Thomae functions]]). MATH 451 exchanges limit and integral only under uniform convergence ([[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]]).
+- **Chain.** MCT → [[Fatou's Lemma]] → [[Dominated Convergence Theorem]]. With the [[Simple Function Approximation Theorem]] it gives [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|linearity]] (§14.8) and the [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-12|series version]] (§14.12), and it gives [[Tonelli's Theorem]] its closure under increasing limits. It is used in [[Measure Theory — Problem-Solving Techniques#^rem-19-17|Technique 13]] and [[Measure Theory — Problem-Solving Techniques#^rem-19-25|Technique 21]].

@@ -1,0 +1,17 @@
+% Figure from MATH 551 notes, section 5. Compile with the notes preamble.
+\begin{tikzpicture}
+  \coordinate (c) at (0.75,0.15);
+  \filldraw[figB, thick, fill=figB!12] plot[smooth cycle, tension=0.8] coordinates {(-1.900,-0.600) (-0.300,-1.350) (1.800,-1.000) (2.300,0.500) (1.000,1.450) (-0.900,1.250) (-2.100,0.500)};
+  \filldraw[figB, thick, fill=figB!18] plot[smooth cycle, tension=0.8] coordinates {(-1.052,-0.360) (0.036,-0.870) (1.464,-0.632) (1.804,0.388) (0.920,1.034) (-0.372,0.898) (-1.188,0.388)};
+  \filldraw[figB, thick, fill=figB!26] plot[smooth cycle, tension=0.8] coordinates {(-0.363,-0.165) (0.309,-0.480) (1.191,-0.333) (1.401,0.297) (0.855,0.696) (0.057,0.612) (-0.447,0.297)};
+  \filldraw[figB, thick, fill=figB!36] plot[smooth cycle, tension=0.8] coordinates {(0.167,-0.015) (0.519,-0.180) (0.981,-0.103) (1.091,0.227) (0.805,0.436) (0.387,0.392) (0.123,0.227)};
+  \node[font=\scriptsize, figB] at (-1.5,0.6) {$F_1$};
+  \node[font=\scriptsize, figB] at (-0.75,-0.35) {$F_2$};
+  \node[font=\scriptsize, figB] at (0.0,-0.25) {$F_3$};
+  % chosen points x_k in F_k
+  \foreach \p/\l/\a in {(-1.2,-0.3)/x_1/below, (1.45,-0.3)/x_2/below, (0.2,0.5)/x_3/left, (0.45,0.05)/{}/left} {
+    \fill[black!75] \p circle (1.3pt) node[\a, font=\scriptsize, black!75, inner sep=1.5pt] {$\l$};
+  }
+  \fill[figR] (c) circle (1.8pt);
+  \draw[figR, thin] (c) -- (2.6,0.15) node[right, font=\scriptsize] {$x_0 \in \bigcap_j F_j$};
+\end{tikzpicture}

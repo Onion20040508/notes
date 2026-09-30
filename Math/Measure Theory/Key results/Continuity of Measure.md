@@ -22,4 +22,7 @@ tags: [measure-theory, hub]
 - [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-11|Theorem §17.11: The Subgraph Theorem]]
 
 ## Connections
-- TODO
+- **Proof idea.** Write ⋃Eₙ as the disjoint union of the increments E₁, E₂ ∖ E₁, E₃ ∖ E₂, … . Countable additivity ([[Lebesgue Measurable Sets Form a σ-Algebra]]) turns m(⋃Eₙ) into a limit of partial sums, and [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|finite additivity]] identifies the N-th partial sum with m(E_N).
+- **From above.** [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-13|Continuity from above]] (§11.13) follows by taking complements inside E₁, so it needs m(E₁) < ∞. Eₙ = [n, ∞) decreases to ∅ with every m(Eₙ) = ∞ ([[Measure Theory §11 Borel Sets and Measure Spaces#^rem-11-5|Rem. §11.5]]). This form drives [[Egorov's Theorem]].
+- **Integral analogues.** It gives [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^lem-14-5|Lemma §14.5]], which is the key step of the [[Monotone Convergence Theorem (Lebesgue)]]. The decreasing [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-14|MCT]] (§14.14) needs ∫f_{k₀} < ∞, just as continuity from above needs m(E₁) < ∞ ([[Measure Theory §14 The Lebesgue Integral for Simple Functions#^rem-14-5|Rem. §14.5]]).
+- **Techniques.** [[Measure Theory — Problem-Solving Techniques#^rem-19-10|Technique 6: Continuity of Measure and Exhaustion]]. It is also used in [[Measure Theory — Problem-Solving Techniques#^rem-19-15|Technique 11]], where the level sets {|f| < n} increase to {f finite}.

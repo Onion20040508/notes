@@ -19,4 +19,7 @@ tags: [measure-theory, hub]
 - (not cited later in the course)
 
 ## Connections
-- TODO
+- **Proof idea.** The diagonal set A = {x : x ∉ f(x)} differs from every f(y), so no map X → 𝒫(X) is onto. It is the same diagonal trick that shows the [[Measure Theory §4 Uncountability#^ex-4-1|binary sequences are uncountable]] (Ex. §4.1).
+- **Size of ℝ.** For X = ℕ, subsets of ℕ correspond to binary sequences via indicator functions, so 𝒫(ℕ) is uncountable. Binary expansion then gives [[Measure Theory §4 Uncountability#^ex-4-2|Ex. §4.2]]: [0, 1] is uncountable. MATH 451 uses this for the [[Single Variable Analysis §2 The Set ℚ of Rational Numbers#^thm-2-7|existence of transcendental numbers]] (451 §2.7).
+- **Strict growth.** x ↦ {x} injects X into 𝒫(X), so |X| < |𝒫(X)|. It is the strict counterpart of the [[Cantor–Bernstein Theorem]], which turns injections both ways into a bijection.
+- **In the course.** It is not cited later. The uncountability results that are used later come from Ex. §4.2: the [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-21|Cantor set]] is uncountable but null (§11.21), and [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|L∞ is not separable]] (§19.21).

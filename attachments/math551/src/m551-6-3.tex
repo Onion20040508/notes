@@ -1,0 +1,20 @@
+% Figure from MATH 551 notes, section 6. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.25]
+  \coordinate (x) at (0,0);
+  \coordinate (r) at (0.45,0.3);
+  \coordinate (y) at ($(r)+(10:0.55)$);
+  \fill[figB!10] (x) circle (2);
+  \draw[figB, thick] (x) circle (2);
+  \fill[figR!15] (r) circle (0.8);
+  \draw[figR, thick] (r) circle (0.8);
+  \draw[figB, thin] (x) -- node[below, font=\scriptsize, sloped, inner sep=1.5pt] {$\rho$} ++(205:2);
+  \draw[figR, thin] (r) -- node[right, font=\scriptsize, inner sep=1.5pt] {$\tfrac1k$} ++(75:0.8);
+  \draw[black!70, thin] (x) -- (r) -- (y);
+  \draw[black!50, thin, dashed] (x) -- (y);
+  \fill[black] (x) circle (1.4pt) node[left=1pt, font=\scriptsize] {$x$};
+  \fill[figR] (r) circle (1.4pt) node[above left=0pt, font=\scriptsize] {$r$};
+  \fill[black] (y) circle (1.4pt) node[below=1pt, font=\scriptsize] {$y$};
+  \node[font=\small, figB, anchor=south west] at (45:2) {$B(x,\rho)$};
+  \node[font=\small, figR, anchor=east] at (-0.4,1.05) {$B(r,\tfrac1k)$};
+  \node[font=\scriptsize, black!70, anchor=north west, align=left] at (-1.1,-0.75) {$|y-x| \le |y-r| + |r-x|$\\ $\phantom{|y-x|} < \tfrac1k + \tfrac1k < \rho$};
+\end{tikzpicture}

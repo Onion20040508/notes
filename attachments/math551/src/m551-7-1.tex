@@ -1,0 +1,26 @@
+% Figure from MATH 551 notes, section 7. Compile with the notes preamble.
+\begin{tikzpicture}[x=1.25cm, y=1cm]
+  \draw[-stealth, thin] (-0.3,0) -- (6.3,0);
+  % components of O
+  \foreach \a/\b in {0/1.2, 1.8/3.5, 4.0/4.7, 5.05/5.45, 5.7/5.85} {
+    \draw[figB, line width=2.2pt] (\a,0) -- (\b,0);
+  }
+  \foreach \a/\b in {0/1.2, 4.0/4.7, 5.05/5.45} {
+    \draw[figB, thick, fill=white] (\a,0) circle (2.2pt);
+    \draw[figB, thick, fill=white] (\b,0) circle (2.2pt);
+  }
+  \draw[figB, thin, fill=white] (5.7,0) circle (1.6pt);
+  \draw[figB, thin, fill=white] (5.85,0) circle (1.6pt);
+  \node[font=\scriptsize, figB] at (6.08,0.18) {$\cdots$};
+  % the component through x
+  \draw[figR, thick, fill=white] (1.8,0) circle (2.4pt) node[below=3pt, font=\scriptsize, figR] {$a_x \notin O$};
+  \draw[figR, thick, fill=white] (3.5,0) circle (2.4pt) node[below=3pt, font=\scriptsize, figR] {$b_x \notin O$};
+  \fill[black] (2.4,0) circle (1.8pt) node[below=3pt, font=\scriptsize] {$x$};
+  \draw[decorate, decoration={brace, amplitude=4pt}, figR] (1.8,0.2) -- (3.5,0.2) node[midway, above=4pt, font=\scriptsize] {$(a_x, b_x)$};
+  % a rational in each component
+  \foreach \q/\j in {0.5/1, 2.95/2, 4.5/3, 5.25/4} {
+    \draw[black!70, thin] (\q,-0.13) -- (\q,0.13);
+    \node[font=\scriptsize, black!70, below=2pt] at (\q,-0.05) {$q_\j$};
+  }
+  \node[font=\small, figB] at (0.6,0.45) {$O$};
+\end{tikzpicture}

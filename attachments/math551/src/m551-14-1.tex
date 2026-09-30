@@ -1,0 +1,36 @@
+% Figure from MATH 551 notes, section 14. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.72\textwidth, height=0.42\textwidth, clip=false,
+  xmin=0, xmax=2.02, ymin=0, ymax=1.95,
+  xtick=\empty, ytick={1.0}, yticklabels={$a_j$}, xlabel={}]
+  % region under h
+  \fill[figB!14] (axis cs:0.13,0) -- (axis cs:0.13,1.0) -- (axis cs:0.25,1.0) -- (axis cs:0.25,1.25) -- (axis cs:0.395,1.25) -- (axis cs:0.395,1.5) -- (axis cs:0.915,1.5) -- (axis cs:0.915,1.25) -- (axis cs:1.088,1.25) -- (axis cs:1.088,1.0) -- (axis cs:1.269,1.0) -- (axis cs:1.269,0.75) -- (axis cs:1.72,0.75) -- (axis cs:1.72,1.0) -- (axis cs:1.87,1.0) -- (axis cs:1.87,0) -- cycle;
+  % the simple function h (horizontal pieces)
+  \draw[figB, thick] (axis cs:0.13,1.0) -- (axis cs:0.25,1.0);
+  \draw[figB, thick] (axis cs:0.25,1.25) -- (axis cs:0.395,1.25);
+  \draw[figB, thick] (axis cs:0.395,1.5) -- (axis cs:0.915,1.5);
+  \draw[figB, thick] (axis cs:0.915,1.25) -- (axis cs:1.088,1.25);
+  \draw[figB, thick] (axis cs:1.088,1.0) -- (axis cs:1.269,1.0);
+  \draw[figB, thick] (axis cs:1.269,0.75) -- (axis cs:1.72,0.75);
+  \draw[figB, thick] (axis cs:1.72,1.0) -- (axis cs:1.87,1.0);
+  % level a_j = 1.0: dotted guide and the set A_j on the x-axis
+  \draw[black!40, dotted] (axis cs:0,1.0) -- (axis cs:1.87,1.0);
+  \draw[figR!60, densely dotted] (axis cs:0.13,0) -- (axis cs:0.13,1.0);
+  \draw[figR!60, densely dotted] (axis cs:0.25,0) -- (axis cs:0.25,1.0);
+  \draw[figR, line width=2.2pt] (axis cs:0.13,0) -- (axis cs:0.25,0);
+  \draw[figR!60, densely dotted] (axis cs:1.088,0) -- (axis cs:1.088,1.0);
+  \draw[figR!60, densely dotted] (axis cs:1.269,0) -- (axis cs:1.269,1.0);
+  \draw[figR, line width=2.2pt] (axis cs:1.088,0) -- (axis cs:1.269,0);
+  \draw[figR!60, densely dotted] (axis cs:1.72,0) -- (axis cs:1.72,1.0);
+  \draw[figR!60, densely dotted] (axis cs:1.87,0) -- (axis cs:1.87,1.0);
+  \draw[figR, line width=2.2pt] (axis cs:1.72,0) -- (axis cs:1.87,0);
+  % f
+  \addplot[black, very thick, domain=0.13:1.87, samples=150] {0.95+0.55*sin(deg(3.3*x-0.4))+0.3*x};
+  \node[font=\small, anchor=south] at (axis cs:0.66,1.72) {$f$};
+  \node[font=\small, figB] at (axis cs:0.66,1.38) {$h$};
+  \node[font=\scriptsize, figR, anchor=north] at (axis cs:1.18,-0.03) {$A_j \cap E$};
+  \node[font=\scriptsize, figB!70!black] at (axis cs:0.70,0.42) {$\displaystyle\int_E h = \sum_j a_j\, m(A_j \cap E)$};
+  \node[font=\scriptsize, anchor=north] at (axis cs:0.13,-0.03) {$a$};
+  \node[font=\scriptsize, anchor=north] at (axis cs:1.87,-0.03) {$b$};
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,42 @@
+% Figure from MATH 551 notes, section 6. Compile with the notes preamble.
+\begin{tikzpicture}[x=7cm, y=0.5cm]
+  \draw[-stealth, thin] (-0.08,0) -- (1.1,0);
+  \foreach \t/\l in {0/0, 0.25/\tfrac14, 0.3333/\tfrac13, 0.5/\tfrac12, 0.6667/\tfrac23, 0.75/\tfrac34, 1/1} \draw[thin] (\t,-0.15) -- (\t,0.15) node[pos=0, below=1pt, font=\scriptsize] {$\l$};
+  % epsilon = 0.4: I_k = (r_k - 0.4/2^k, r_k + 0.4/2^k)
+  \draw[black!35, thin, densely dotted] (0.5000,0.15) -- (0.5000,1.20);
+  \draw[figB, very thick] (0.3000,1.20) -- (0.7000,1.20);
+  \draw[figB, thin, fill=white] (0.3000,1.20) circle (1.5pt);
+  \draw[figB, thin, fill=white] (0.7000,1.20) circle (1.5pt);
+  \fill[figR] (0.5000,0) circle (1.4pt);
+  \node[font=\scriptsize, figB, anchor=west] at (0.7200,1.20) {$I_1$};
+  \node[font=\scriptsize, black!70, anchor=west] at (1.05,1.20) {$|I_1| = 2\epsilon/2^1$};
+  \draw[black!35, thin, densely dotted] (0.3333,0.15) -- (0.3333,2.10);
+  \draw[figB, very thick] (0.2333,2.10) -- (0.4333,2.10);
+  \draw[figB, thin, fill=white] (0.2333,2.10) circle (1.5pt);
+  \draw[figB, thin, fill=white] (0.4333,2.10) circle (1.5pt);
+  \fill[figR] (0.3333,0) circle (1.4pt);
+  \node[font=\scriptsize, figB, anchor=west] at (0.4533,2.10) {$I_2$};
+  \node[font=\scriptsize, black!70, anchor=west] at (1.05,2.10) {$|I_2| = 2\epsilon/2^2$};
+  \draw[black!35, thin, densely dotted] (0.6667,0.15) -- (0.6667,3.00);
+  \draw[figB, very thick] (0.6167,3.00) -- (0.7167,3.00);
+  \draw[figB, thin, fill=white] (0.6167,3.00) circle (1.5pt);
+  \draw[figB, thin, fill=white] (0.7167,3.00) circle (1.5pt);
+  \fill[figR] (0.6667,0) circle (1.4pt);
+  \node[font=\scriptsize, figB, anchor=west] at (0.7367,3.00) {$I_3$};
+  \node[font=\scriptsize, black!70, anchor=west] at (1.05,3.00) {$|I_3| = 2\epsilon/2^3$};
+  \draw[black!35, thin, densely dotted] (0.2500,0.15) -- (0.2500,3.90);
+  \draw[figB, very thick] (0.2250,3.90) -- (0.2750,3.90);
+  \draw[figB, thin, fill=white] (0.2250,3.90) circle (1.5pt);
+  \draw[figB, thin, fill=white] (0.2750,3.90) circle (1.5pt);
+  \fill[figR] (0.2500,0) circle (1.4pt);
+  \node[font=\scriptsize, figB, anchor=west] at (0.2950,3.90) {$I_4$};
+  \node[font=\scriptsize, black!70, anchor=west] at (1.05,3.90) {$|I_4| = 2\epsilon/2^4$};
+  \draw[black!35, thin, densely dotted] (0.7500,0.15) -- (0.7500,4.80);
+  \draw[figB, very thick] (0.7375,4.80) -- (0.7625,4.80);
+  \draw[figB, thin, fill=white] (0.7375,4.80) circle (1.5pt);
+  \draw[figB, thin, fill=white] (0.7625,4.80) circle (1.5pt);
+  \fill[figR] (0.7500,0) circle (1.4pt);
+  \node[font=\scriptsize, figB, anchor=west] at (0.7825,4.80) {$I_5$};
+  \node[font=\scriptsize, black!70, anchor=west] at (1.05,4.80) {$|I_5| = 2\epsilon/2^5$};
+  \node[font=\scriptsize, black!60] at (0.5,5.25) {$\vdots$};
+\end{tikzpicture}

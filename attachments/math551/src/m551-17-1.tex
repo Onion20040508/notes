@@ -1,0 +1,16 @@
+% Figure from MATH 551 notes, section 17. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0]
+  \draw[-stealth, thin] (-0.1,0) -- (5.3,0) node[right, font=\scriptsize] {$\mathbb{R}^p$};
+  \draw[-stealth, thin] (0,-0.1) -- (0,4.1) node[above, font=\scriptsize] {$\mathbb{R}^q$};
+  \path[name path=E, fill=figB!12, draw=figB, thick] plot[smooth cycle, tension=0.7] coordinates {(0.6,1.2) (1.5,0.6) (3.0,0.7) (4.3,1.0) (4.7,1.7) (4.0,2.0) (3.0,1.85) (2.6,2.25) (3.3,2.65) (4.3,2.9) (3.9,3.55) (2.2,3.6) (0.9,3.0) (0.5,2.1)};
+  \path[name path=L] (3.4,-0.2) -- (3.4,4.2);
+  \draw[black!55, dashed] (3.4,0) -- (3.4,3.95);
+  \path[name intersections={of=E and L, sort by=L, name=i}];
+  \draw[figR, line width=2.2pt] (i-1) -- (i-2);
+  \draw[figR, line width=2.2pt] (i-3) -- (i-4);
+  \fill[black] (3.4,0) circle (1.3pt);
+  \node[font=\scriptsize, anchor=north] at (3.4,-0.05) {$x$};
+  \node[font=\small, figB] at (1.4,2.3) {$E$};
+  \node[font=\scriptsize, figR, anchor=west] at (3.5,1.35) {$E_x$};
+  \node[font=\scriptsize, figR, anchor=west] at (3.5,3.1) {$E_x$};
+\end{tikzpicture}

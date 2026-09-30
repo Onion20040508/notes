@@ -25,4 +25,7 @@ tags: [measure-theory, hub]
 - [[Measure Theory §18 Differentiation Theory#^thm-18-21|Theorem §18.21: Continuous Maps Preserving Null Sets Preserve Measurability]]
 
 ## Connections
-- TODO
+- **Proof idea.** Apply [[Outer Regularity of Lebesgue Measure]] to Eᶜ. An open G ⊇ Eᶜ with m(G ∖ Eᶜ) < ε gives the closed set F = Gᶜ ⊆ E with m(E ∖ F) < ε. Taking ε = 1/n and a union gives the F_σ set of (2) ([[Measure Theory — Problem-Solving Techniques#^rem-19-16|Technique 12]]).
+- **Compactness.** When m(E) < ∞, cutting off by large cubes makes F bounded ([[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-11|Theorem §11.11]]), hence compact by [[Heine–Borel Theorem|Heine–Borel]]. Finite subcovers then apply ([[Measure Theory — Problem-Solving Techniques#^rem-19-9|Technique 5]]).
+- **Used for.** [[Lusin's Theorem]], which needs closed pieces of each level set, and [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-8|Measurability of Product Sets]] (§17.8). It is also used in [[Measure Theory §18 Differentiation Theory#^thm-18-21|Continuous Maps Preserving Null Sets Preserve Measurability]] (§18.21), which needs compact pieces because their continuous images are compact ([[Continuous Image of a Compact Space is Compact]]) and so closed ([[Compact Subspace of a Hausdorff Space is Closed]]).
+- **Borel vs Lebesgue.** Every measurable set is an F_σ set plus a null set, so ℳ differs from the Borel sets only by null sets ([[Measure Theory §11 Borel Sets and Measure Spaces#^rem-11-2|Rem. §11.2]]).

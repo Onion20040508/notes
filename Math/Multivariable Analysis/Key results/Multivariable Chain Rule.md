@@ -24,7 +24,6 @@ tags: [multivariable-analysis, hub]
 - [[Multivariable Analysis §15 Multivariable Integration#^thm-15-14|Theorem §15.14: Change of Variables Formula — Rectangular Case]]
 - [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|Theorem §17.5: Fundamental Solution of the 2D Laplacian]]
 - [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1|Theorem §20.1: Stokes' Theorem]]
-- [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-3|Definition §22.3: Pullback]]
 - [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-11|Proposition §22.11: A Closed Form That Is Not Exact]]
 
 ## Connections

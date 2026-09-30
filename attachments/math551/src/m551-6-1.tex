@@ -1,0 +1,17 @@
+% Figure from MATH 551 notes, section 6. Compile with the notes preamble.
+\begin{tikzpicture}[x=2.3cm, y=0.5cm]
+  \draw[-stealth, thin] (-1.25,0) -- (2.3,0);
+  \foreach \t/\l in {-1/-1, 0/0, 0.5/\tfrac12, 1/1, 2/2} \draw[thin] (\t,-0.15) -- (\t,0.15) node[pos=0, below=1pt, font=\scriptsize] {$\l$};
+  \draw[black, line width=2.4pt] (0,0) -- (1,0);
+  \fill[black] (0,0) circle (2.4pt); \fill[black] (1,0) circle (2.4pt);
+  \node[font=\scriptsize, anchor=south] at (0.25,0.1) {$[0,1]$};
+  % the three open intervals
+  \foreach \a/\b/\y/\l in {-1/0.5/1.5/{(-1,\tfrac12)}, 0/1/2.6/{(0,1)}, 0.5/2/3.7/{(\tfrac12,2)}} {
+    \draw[figB, thick] (\a,\y) -- (\b,\y);
+    \draw[figB, thick, fill=white] (\a,\y) circle (2.2pt);
+    \draw[figB, thick, fill=white] (\b,\y) circle (2.2pt);
+    \draw[black!35, thin, densely dotted] (\a,\y) -- (\a,0.2);
+    \draw[black!35, thin, densely dotted] (\b,\y) -- (\b,0.2);
+    \node[font=\scriptsize, figB, anchor=south] at ({(\a+\b)/2},\y) {$\l$};
+  }
+\end{tikzpicture}

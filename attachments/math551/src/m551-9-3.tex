@@ -1,0 +1,25 @@
+% Figure from MATH 551 notes, section 9. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0]
+  % left: upper bound, one slightly larger open rectangle
+  \begin{scope}
+    \filldraw[fill=figR!8, draw=figR, thin, dashed] (-0.3,-0.3) rectangle (3.3,2.3);
+    \filldraw[fill=figB!15, draw=figB, thick] (0,0) rectangle (3,2);
+    \node[font=\small, figB] at (1.5,1) {$\bar I$};
+    \node[font=\scriptsize, figR, anchor=south east, inner sep=2pt] at (3.3,2.3) {$I_\epsilon$};
+    \draw[black!60, thin, {Stealth[length=3pt]}-{Stealth[length=3pt]}] (3,1) -- (3.3,1);
+    \node[font=\scriptsize, black!70, anchor=west, inner sep=1.5pt] at (3.3,1) {$\epsilon$};
+    \node[font=\scriptsize, black!70] at (1.5,-0.7) {$|I_\epsilon| \to |I|$ as $\epsilon \to 0^+$};
+  \end{scope}
+  % right: lower bound, finite subcover by open rectangles
+  \begin{scope}[xshift=4.9cm]
+    \foreach \a/\b/\c/\d in {-0.25/-0.2/1.3/1.15, 0.9/-0.35/2.4/0.9, 2.0/-0.15/3.25/1.3, -0.2/0.8/1.6/2.25, 1.2/0.6/3.3/2.3} {
+      \fill[figR, opacity=0.13] (\a,\b) rectangle (\c,\d);
+    }
+    \foreach \a/\b/\c/\d in {-0.25/-0.2/1.3/1.15, 0.9/-0.35/2.4/0.9, 2.0/-0.15/3.25/1.3, -0.2/0.8/1.6/2.25, 1.2/0.6/3.3/2.3} {
+      \draw[figR, thin, dashed] (\a,\b) rectangle (\c,\d);
+    }
+    \draw[figB, thick] (0,0) rectangle (3,2);
+    \node[font=\small, figB, fill=white, inner sep=1pt, rounded corners=1pt] at (1.5,1.0) {$\bar I$};
+    \node[font=\scriptsize, black!70] at (1.5,-0.7) {finitely many $I_{k_1},\dots,I_{k_m}$};
+  \end{scope}
+\end{tikzpicture}

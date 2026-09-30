@@ -1,0 +1,18 @@
+% Figure from MATH 551 notes, section 16. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.72\textwidth, height=0.46\textwidth, clip=false,
+  axis x line=middle, xmin=0, xmax=1.08, ymin=-3.0, ymax=3.3,
+  xtick=\empty, ytick={-1.2,1.2}, yticklabels={$-k$,$k$}, xlabel={}]
+  % the part cut off by truncation: |f - f_k|
+  \addplot[draw=none, fill=figR!25, domain=0.2766:0.3217, samples=300] {0.4*sin(deg(6*x))+0.16/sqrt(abs(x-0.3)+0.003)-0.13/sqrt(abs(x-0.78)+0.003)} -- (axis cs:0.3217,1.2) -- (axis cs:0.2766,1.2) -- cycle;
+  \addplot[draw=none, fill=figR!25, domain=0.7672:0.7930, samples=300] {0.4*sin(deg(6*x))+0.16/sqrt(abs(x-0.3)+0.003)-0.13/sqrt(abs(x-0.78)+0.003)} -- (axis cs:0.7930,-1.2) -- (axis cs:0.7672,-1.2) -- cycle;
+  \draw[black!55, dashed] (axis cs:0,1.2) -- (axis cs:1.02,1.2);
+  \draw[black!55, dashed] (axis cs:0,-1.2) -- (axis cs:1.02,-1.2);
+  % f (gray where it is cut off) and f_k (blue)
+  \addplot[black!45, thick, domain=0:1, samples=800] {0.4*sin(deg(6*x))+0.16/sqrt(abs(x-0.3)+0.003)-0.13/sqrt(abs(x-0.78)+0.003)};
+  \addplot[figB, very thick, domain=0:1, samples=800] {max(min(0.4*sin(deg(6*x))+0.16/sqrt(abs(x-0.3)+0.003)-0.13/sqrt(abs(x-0.78)+0.003),1.2),-1.2)};
+  \node[font=\small, black!60, anchor=west] at (axis cs:0.32,2.7) {$f$};
+  \node[font=\small, figB, anchor=north west] at (axis cs:1.0,-0.2) {$f_k$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.40,1.95) {$|f - f_k|$: small in $L^1$ for $k$ large};
+\end{axis}
+\end{tikzpicture}

@@ -23,4 +23,7 @@ tags: [measure-theory, hub]
 - [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|Corollary §19.20: Lᵖ is Separable for 1 leq p < infty]]
 
 ## Connections
-- TODO
+- **Proof idea.** List the n-th set as aₙ,₁, aₙ,₂, … and send aₙ,ₘ to (n, m). This puts the union in bijection with a subset of ℕ × ℕ, which is countable by the diagonal listing of [[Measure Theory §1 Countability and Set Theory#^ex-1-3|Ex. §1.3]].
+- **Used for.** [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|ℚ is countable]] (§3.2), the countably many dyadic cubes in [[Measure Theory §7 Structure of Open Sets#^prop-7-3|§7.3]], and the combined L-covering in countable subadditivity ([[Properties of Lebesgue Outer Measure]]). Later uses are [[Measure Theory §18 Differentiation Theory#^thm-18-1|Monotone Functions Have Countably Many Discontinuities]] (§18.1) and the [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|separability of Lᵖ]] (§19.20).
+- **Measure analogue.** Countable subadditivity makes a countable union of null sets null, so every countable set is null ([[Measure Theory §9 Lebesgue Outer Measure#^ex-9-2|Ex. §9.2]]). The converse fails: the [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-21|Cantor set]] is uncountable and null.
+- **Technique.** The “product + union closure” step of [[Measure Theory — Problem-Solving Techniques#^rem-19-5|Technique 1: Reduction to Known Countability Results]]. MATH 451 proves ℚ countable by a diagonal listing instead ([[Single Variable Analysis §2 The Set ℚ of Rational Numbers#^thm-2-5|451 §2.5]]).

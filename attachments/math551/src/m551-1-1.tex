@@ -6,12 +6,12 @@
   \node[font=\scriptsize, black!60] at (3,1.05) {$j$};
   \node[font=\scriptsize, black!60] at (-0.1,-1.5) {$i$};
   \foreach \i in {1,...,5} \foreach \j in {1,...,5} \fill[black!30] (\j,-\i+1) circle (1.3pt);
-  \draw[figR, thick, -stealth, line join=round]
-    (1,0) -- (2,0) -- (1,-1) -- (3,0) -- (2,-1) -- (1,-2) -- (4,0) -- (3,-1) -- (2,-2) -- (1,-3);
-  \draw[figR, thick, dashed, -stealth] (1,-3) -- (4.6,-0.3);
+  % within a diagonal (red), jumps to the next diagonal (grey)
+  \foreach \a/\b/\c/\d in {1/2/2/1, 1/3/3/1, 1/4/4/1} \draw[figR, thick, -stealth, shorten >=2.5pt, shorten <=2.5pt] (\b,-\a+1) -- (\d,-\c+1);
+  \foreach \a/\b/\c/\d in {1/1/1/2, 2/1/1/3, 3/1/1/4, 4/1/1/5} \draw[black!45, thin, dashed, -stealth, shorten >=2.5pt, shorten <=2.5pt] (\b,-\a+1) -- (\d,-\c+1);
   \foreach \i/\j/\n in {1/1/1, 1/2/2, 2/1/3, 1/3/4, 2/2/5, 3/1/6, 1/4/7, 2/3/8, 3/2/9, 4/1/10} {
     \fill[figB] (\j,-\i+1) circle (1.7pt);
-    \node[font=\tiny, figB, anchor=south west, inner sep=1pt] at (\j,-\i+1) {$\n$};
+    \node[font=\tiny, figB, anchor=south east, inner sep=1pt] at (\j,-\i+1) {$\n$};
   }
   \node[font=\scriptsize, figR, anchor=north] at (3,-4.45) {listing by diagonals};
   % ---- right: n = 2^{i-1}(2j-1) ----
@@ -26,8 +26,6 @@
     }
     \node[font=\scriptsize, black!60] at (4.75,0) {$\cdots$};
     \node[font=\scriptsize, black!60] at (2.5,-3.7) {$\vdots$};
-    \draw[black!40, thin, rounded corners=2pt] (0.65,0.25) rectangle (4.4,-0.25);
-    \node[font=\scriptsize, black!60, anchor=west] at (4.4,-0.6) {odd};
     \node[font=\scriptsize, figR, anchor=north] at (2.5,-4.45) {$f(i,j) = 2^{i-1}(2j-1)$};
   \end{scope}
 \end{tikzpicture}

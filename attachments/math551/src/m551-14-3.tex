@@ -1,0 +1,30 @@
+% Figure from MATH 551 notes, section 14. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.46\textwidth, clip=false,
+  xmin=0, xmax=1.08, ymin=0, ymax=8.9,
+  xtick={0.125,0.25,0.5,1}, xticklabels={$\frac18$,$\frac14$,$\frac12$,$1$},
+  ytick={1,2,4,8}, xlabel={$x$}]
+  \fill[figB!10] (axis cs:0,0) rectangle (axis cs:1,1);
+  \fill[figB!18] (axis cs:0,0) rectangle (axis cs:0.5,2);
+  \fill[figB!28] (axis cs:0,0) rectangle (axis cs:0.25,4);
+  \fill[figR!22] (axis cs:0,0) rectangle (axis cs:0.125,8);
+  \draw[figB!45, thick] (axis cs:0,1) -- (axis cs:1,1);
+  \draw[figB!70, thick] (axis cs:0,2) -- (axis cs:0.5,2);
+  \draw[figB, thick] (axis cs:0,4) -- (axis cs:0.25,4);
+  \draw[figR, thick] (axis cs:0,8) -- (axis cs:0.125,8);
+  \draw[black!40, densely dotted] (axis cs:1,0) -- (axis cs:1,1);
+  \draw[black!40, densely dotted] (axis cs:0.5,0) -- (axis cs:0.5,2);
+  \draw[black!40, densely dotted] (axis cs:0.25,0) -- (axis cs:0.25,4);
+  \draw[black!40, densely dotted] (axis cs:0.125,0) -- (axis cs:0.125,8);
+  \addplot[only marks, mark=*, mark size=1.2pt, mark options={fill=white, draw=figB!45}] coordinates {(0,1) (1,1)};
+  \addplot[only marks, mark=*, mark size=1.2pt, mark options={fill=white, draw=figB!70}] coordinates {(0,2) (0.5,2)};
+  \addplot[only marks, mark=*, mark size=1.2pt, mark options={fill=white, draw=figB}] coordinates {(0,4) (0.25,4)};
+  \addplot[only marks, mark=*, mark size=1.2pt, mark options={fill=white, draw=figR}] coordinates {(0,8) (0.125,8)};
+  \node[font=\scriptsize, figB!60!black, anchor=south] at (axis cs:0.75,1) {$f_1$};
+  \node[font=\scriptsize, figB!80!black, anchor=south] at (axis cs:0.38,2) {$f_2$};
+  \node[font=\scriptsize, figB, anchor=south west] at (axis cs:0.25,4) {$f_4$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.14,8) {$f_8$: height $8$, width $\frac18$};
+  \node[font=\scriptsize, anchor=west] at (axis cs:0.55,5.4) {every rectangle has area $1$};
+  \node[font=\scriptsize, anchor=west] at (axis cs:0.55,4.5) {but $f_k(x) \to 0$ for every $x$};
+\end{axis}
+\end{tikzpicture}

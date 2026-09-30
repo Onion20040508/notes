@@ -25,4 +25,6 @@ tags: [measure-theory, hub]
 - [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-3|Theorem §17.3: Tonelli's Theorem]]
 
 ## Connections
-- TODO
+- **Proof idea.** If m(E) < ∞, an L-covering with total volume < m(E) + ε has an open union G ⊇ E with m(G ∖ E) ≤ ε. If m(E) = ∞, apply this to E ∩ B(0, k) with ε/2ᵏ and take the union. Intersecting open sets with m(Gₙ ∖ E) < 1/n gives the G_δ hull of (2) ([[Measure Theory — Problem-Solving Techniques#^rem-19-16|Technique 12]]).
+- **Mirror images.** Complements turn it into [[Inner Regularity of Lebesgue Measure]]. For arbitrary sets it gives a G_δ hull H ⊇ A with m*(A) = m(H) ([[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-9|§11.9]]). Every measurable set is a G_δ set minus a null set ([[Measure Theory §11 Borel Sets and Measure Spaces#^rem-11-2|Rem. §11.2]]).
+- **Used for.** [[Tonelli's Theorem]] climbs from open sets to G_δ sets to null sets and then to all measurable sets through E = H ∖ Z. The ε-enlargement behind it is [[Measure Theory — Problem-Solving Techniques#^rem-19-9|Technique 5: ε-Covering and Approximation]].

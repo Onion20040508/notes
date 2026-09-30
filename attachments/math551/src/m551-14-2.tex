@@ -1,0 +1,31 @@
+% Figure from MATH 551 notes, section 14. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.72\textwidth, height=0.44\textwidth, clip=false,
+  xmin=0, xmax=1.08, ymin=0, ymax=1.42,
+  xtick=\empty, ytick=\empty, xlabel={}]
+  % the limit f (gray) and one f_k (blue)
+  \addplot[black!40, thick, domain=0:1, samples=120] {1.25-0.25*(x-0.45)^2+0.05*sin(deg(8*x))};
+  \addplot[figB, very thick, domain=0:1, samples=300] {1.25-0.25*(x-0.45)^2+0.05*sin(deg(8*x))-0.9*exp(-((x-0.18)/0.07)^2)-0.75*exp(-((x-0.55)/0.06)^2)-0.95*exp(-((x-0.88)/0.05)^2)};
+  % the simple function h
+  \draw[black, thick] (axis cs:0,0.6) -- (axis cs:0.35,0.6);
+  \draw[black, thick] (axis cs:0.35,1.0) -- (axis cs:0.7,1.0);
+  \draw[black, thick] (axis cs:0.7,0.45) -- (axis cs:1,0.45);
+  % c h, c = 0.8
+  \draw[black!55, dashed, thick] (axis cs:0,0.48) -- (axis cs:0.35,0.48);
+  \draw[black!55, dashed, thick] (axis cs:0.35,0.8) -- (axis cs:0.7,0.8);
+  \draw[black!55, dashed, thick] (axis cs:0.7,0.36) -- (axis cs:1,0.36);
+  \addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(0,0.6) (0.35,1.0) (0.7,0.45)};
+  \addplot[only marks, mark=*, mark size=1.3pt, mark options={fill=white, draw=black}] coordinates {(0.35,0.6) (0.7,1.0)};
+  % E_k on the x-axis
+  \draw[figR, line width=2.2pt] (axis cs:0,0) -- (axis cs:0.155,0);
+  \draw[figR, line width=2.2pt] (axis cs:0.203,0) -- (axis cs:0.503,0);
+  \draw[figR, line width=2.2pt] (axis cs:0.598,0) -- (axis cs:0.866,0);
+  \draw[figR, line width=2.2pt] (axis cs:0.894,0) -- (axis cs:1,0);
+  % labels
+  \node[font=\small, black!55, anchor=west] at (axis cs:1.01,1.13) {$f$};
+  \node[font=\small, figB, anchor=west] at (axis cs:1.01,1.00) {$f_k$};
+  \node[font=\small, anchor=west] at (axis cs:1.01,0.47) {$h$};
+  \node[font=\scriptsize, black!60, anchor=west] at (axis cs:1.01,0.33) {$c\,h$};
+  \node[font=\scriptsize, figR, anchor=north] at (axis cs:0.5,-0.03) {$E_k = \{f_k \geq c\,h\}$};
+\end{axis}
+\end{tikzpicture}

@@ -20,9 +20,7 @@ tags: [multivariable-analysis, hub]
 - [[Mean Value Theorem]] (Single Variable Analysis)
 
 ## Used in (Multivariable Analysis)
-- [[Multivariable Analysis §8 The Differential#^def-8-2|Definition §8.2: Second Differential]]
 - [[Multivariable Analysis §9 Taylor's Theorem for Multivariable Functions#^thm-9-1|Theorem §9.1: Derivatives of F(t)]]
-- [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^def-14-2|Definition §14.2: Hessian Matrix]]
 - [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-4|Theorem §14.4: Second-Order Sufficient Conditions — Unconstrained]]
 - [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1|Theorem §20.1: Stokes' Theorem]]
 - [[Multivariable Analysis §22 The Algebra of Differential Forms#^thm-22-5|Theorem §22.5: d² = 0]]

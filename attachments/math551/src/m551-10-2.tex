@@ -1,0 +1,22 @@
+% Figure from MATH 551 notes, section 10. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0]
+  \def\Eone{(0.9,1.3) ellipse (1.25 and 1.0)}
+  \def\Etwo{(2.55,1.05) ellipse (1.2 and 0.95)}
+  \def\Tpath{plot[smooth cycle, tension=0.8] coordinates {(0.5,0.75) (1.6,0.45) (3.2,0.5) (4.6,0.45) (5.3,1.1) (4.7,1.85) (3.2,1.7) (1.6,1.8) (0.45,1.5)}}
+  \fill[figB!6] \Eone; \fill[figG!6] \Etwo;
+  \begin{scope}
+    \clip \Tpath;
+    \fill[figR!18] (-1,-1) rectangle (6,4);  % T \cap E_1^c \cap E_2^c
+    \fill[figG!30] \Etwo;                    % T \cap E_1^c \cap E_2 (E_1 painted over next)
+    \fill[figB!35] \Eone;                    % T \cap E_1
+  \end{scope}
+  \draw[figB, thick] \Eone;
+  \draw[figG!80!black, thick] \Etwo;
+  \draw[black!75, thick] \Tpath;
+  \node[font=\small, figB] at (-0.2,2.2) {$E_1$};
+  \node[font=\small, figG!80!black] at (3.55,0.0) {$E_2$};
+  \node[font=\small, black!80] at (5.25,1.85) {$T$};
+  \node[font=\scriptsize, figB!60!black] at (1.05,1.12) {$T \cap E_1$};
+  \node[font=\scriptsize, figG!50!black, align=center] at (2.85,1.12) {$T \cap E_1^c$\\[-1pt]$\cap\, E_2$};
+  \node[font=\scriptsize, figR!80!black, align=center] at (4.45,1.15) {$T \cap E_1^c$\\[-1pt]$\cap\, E_2^c$};
+\end{tikzpicture}

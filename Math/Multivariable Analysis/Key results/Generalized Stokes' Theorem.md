@@ -11,7 +11,7 @@ tags: [multivariable-analysis, hub]
 - [[Multivariable Analysis §23 The Generalized Stokes' Theorem#^thm-23-1|Theorem §23.1: Generalized Stokes' Theorem]], in [[Multivariable Analysis §23 The Generalized Stokes' Theorem]]
 
 ## Its proof uses
-- (only definitions)
+- (no proof in the notes)
 
 ## Used in (Multivariable Analysis)
 - (not cited later in the course)

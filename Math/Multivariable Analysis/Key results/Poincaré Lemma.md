@@ -11,7 +11,7 @@ tags: [multivariable-analysis, hub]
 - [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-12|Proposition §22.12: Poincaré Lemma]], in [[Multivariable Analysis §22 The Algebra of Differential Forms]]
 
 ## Its proof uses
-- (only definitions)
+- (no proof in the notes)
 
 ## Used in (Multivariable Analysis)
 - (not cited later in the course)

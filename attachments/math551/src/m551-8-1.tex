@@ -1,0 +1,31 @@
+% Figure from MATH 551 notes, section 8. Compile with the notes preamble.
+\begin{tikzpicture}[x=2.2cm, y=2.2cm]
+  \fill[figB!14] (0.2,0) rectangle (0.8,0.7209);
+  \fill[figR!14] (0.2,0.7209) rectangle (0.8,1.0666);
+  \draw[figR, thin] (0.2,0.7209) rectangle (0.8,1.0666);
+  \draw[figB, thin] (0.2,0) rectangle (0.8,0.7209);
+  \fill[figB!14] (0.8,0) rectangle (1.35,1.0137);
+  \fill[figR!14] (0.8,1.0137) rectangle (1.35,1.0896);
+  \draw[figR, thin] (0.8,1.0137) rectangle (1.35,1.0896);
+  \draw[figB, thin] (0.8,0) rectangle (1.35,1.0137);
+  \fill[figB!14] (1.35,0) rectangle (2.2,0.5880);
+  \fill[figR!14] (1.35,0.5880) rectangle (2.2,1.0137);
+  \draw[figR, thin] (1.35,0.5880) rectangle (2.2,1.0137);
+  \draw[figB, thin] (1.35,0) rectangle (2.2,0.5880);
+  \fill[figB!14] (2.2,0) rectangle (2.9,0.5340);
+  \fill[figR!14] (2.2,0.5340) rectangle (2.9,0.6354);
+  \draw[figR, thin] (2.2,0.5340) rectangle (2.9,0.6354);
+  \draw[figB, thin] (2.2,0) rectangle (2.9,0.5340);
+  \draw[-stealth, thin] (0,0) -- (3.15,0);
+  \draw[-stealth, thin] (0,0) -- (0,1.4);
+  \draw[black, very thick] plot[smooth] coordinates {(0.100,0.6366) (0.150,0.6792) (0.200,0.7209) (0.250,0.7615) (0.300,0.8007) (0.350,0.8382) (0.400,0.8738) (0.450,0.9072) (0.500,0.9383) (0.550,0.9669) (0.600,0.9928) (0.650,1.0158) (0.700,1.0358) (0.750,1.0528) (0.800,1.0666) (0.850,1.0772) (0.900,1.0845) (0.950,1.0886) (1.000,1.0895) (1.050,1.0873) (1.100,1.0820) (1.150,1.0737) (1.200,1.0626) (1.250,1.0487) (1.300,1.0324) (1.350,1.0137) (1.400,0.9929) (1.450,0.9703) (1.500,0.9460) (1.550,0.9203) (1.600,0.8934) (1.650,0.8658) (1.700,0.8376) (1.750,0.8091) (1.800,0.7807) (1.850,0.7526) (1.900,0.7251) (1.950,0.6984) (2.000,0.6730) (2.050,0.6490) (2.100,0.6266) (2.150,0.6062) (2.200,0.5880) (2.250,0.5721) (2.300,0.5588) (2.350,0.5481) (2.400,0.5404) (2.450,0.5356) (2.500,0.5340) (2.550,0.5355) (2.600,0.5402) (2.650,0.5482) (2.700,0.5593) (2.750,0.5737) (2.800,0.5913) (2.850,0.6119) (2.900,0.6354) (2.950,0.6618) (3.000,0.6909)};
+  \node[font=\scriptsize, below] at (0.2,0) {$x_0 = a$};
+  \node[font=\scriptsize, below] at (0.8,0) {$x_1$};
+  \node[font=\scriptsize, below] at (1.35,0) {$x_2$};
+  \node[font=\scriptsize, below] at (2.2,0) {$x_3$};
+  \node[font=\scriptsize, below] at (2.9,0) {$x_4 = b$};
+  \draw[black!55, thin, densely dotted] (0,0.5880) -- (1.35,0.5880) (0,1.0137) -- (1.35,1.0137);
+  \node[font=\scriptsize, figB, left] at (0,0.5880) {$m_2$};
+  \node[font=\scriptsize, figR, left] at (0,1.0137) {$M_2$};
+  \node[font=\small, anchor=west] at (3.0,0.691) {$f$};
+\end{tikzpicture}

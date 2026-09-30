@@ -1,0 +1,31 @@
+% Figure from MATH 551 notes, section 2. Compile with the notes preamble.
+\begin{tikzpicture}[>=stealth]
+  % X
+  \begin{scope}
+    \clip[rounded corners=8pt] (0,0) rectangle (1.8,3);
+    \fill[figB!12] (0,1.3) rectangle (1.8,3);
+    \fill[figR!12] (0,0) rectangle (1.8,1.3);
+  \end{scope}
+  \draw[black!70, thick, rounded corners=8pt] (0,0) rectangle (1.8,3);
+  \draw[black!55, thin, dashed] (0,1.3) -- (1.8,1.3);
+  \node[font=\small, figB] at (0.6,2.15) {$A$};
+  \node[font=\small, figR] at (0.6,0.65) {$A^c$};
+  \node[font=\small] at (0.9,3.3) {$X$};
+  % Y
+  \begin{scope}[xshift=4.6cm]
+    \begin{scope}
+      \clip[rounded corners=8pt] (0,0) rectangle (1.8,3);
+      \fill[figB!12] (0,1.8) rectangle (1.8,3);
+      \fill[figR!12] (0,0) rectangle (1.8,1.8);
+    \end{scope}
+    \draw[black!70, thick, rounded corners=8pt] (0,0) rectangle (1.8,3);
+    \draw[black!55, thin, dashed] (0,1.8) -- (1.8,1.8);
+    \node[font=\small, figB] at (1.2,2.4) {$B$};
+    \node[font=\small, figR] at (1.2,0.9) {$B^c$};
+    \node[font=\small] at (0.9,3.3) {$Y$};
+  \end{scope}
+  % arrows
+  \draw[figB, thick, ->] (1.05,2.3) to[bend left=20] node[above, font=\scriptsize] {$f$} (5.35,2.4);
+  \draw[figR, thick, ->] (5.35,0.8) to[bend left=20] node[below, font=\scriptsize] {$g$} (1.05,0.7);
+  \node[font=\scriptsize, black!60, align=center] at (3.2,1.55) {$F = f$ on $A$\\[1pt]$F = g^{-1}$ on $A^c$};
+\end{tikzpicture}
