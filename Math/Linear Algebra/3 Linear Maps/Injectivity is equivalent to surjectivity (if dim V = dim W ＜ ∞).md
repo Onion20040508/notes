@@ -1,29 +1,22 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 3.65"
-ladr: "3.65"
-page: 84
+ladr-hub: "3.65"
 aliases: ["LADR 3.65"]
-tags: [linear-algebra, ladr/3D]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 3.65 Injectivity is equivalent to surjectivity (if dim V = dim W < ∞)
-> Suppose $V,W$ are finite-dimensional, $\dim V=\dim W$, and $T\in\Lin(V,W)$. Then
-> $$
-> T\text{ invertible}\iff T\text{ injective}\iff T\text{ surjective}.
-> $$
+![[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-65]]
 
-> [!remark] Finite dimension is essential
-> On $\F^\infty$, the backward shift is surjective but not injective and the forward shift is injective but not surjective.
+## Treated in
+- [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-65|Axler 3.65]], in [[Linear Algebra 3D Invertibility and Isomorphisms]]
 
-> [!proof]-
-> By [[Fundamental theorem of linear maps]], $\dim V=\dim\nullsp T+\dim\range T$. If $T$ is injective, then $\dim\nullsp T=0$ ([[Injectivity ⟺ null space equals {0}]]), so $\dim\range T=\dim V=\dim W$ and $\range T=W$ by [[Subspace of full dimension equals the whole space]]. If $T$ is surjective, then $\dim\nullsp T=\dim V-\dim W=0$, so $T$ is injective. Either condition therefore gives both, hence invertibility by [[Invertibility ⟺ injectivity and surjectivity]].
+## Proof uses
+- [[Fundamental theorem of linear maps|3.21]], [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-15|3.15]], [[Linear Algebra 2C Dimension#^ladr-2-39|2.39]], [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-63|3.63]]
 
-## Uses (in the proof)
-- [[Fundamental theorem of linear maps]] (3.21)
-- [[Injectivity ⟺ null space equals {0}]] (3.15)
-- [[Subspace of full dimension equals the whole space]] (2.39)
-- [[Invertibility ⟺ injectivity and surjectivity]] (3.63)
+## Used in (Linear Algebra)
+- [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-68|3.68 ST = I ⟺ TS = I (on vector spaces of the same dimension)]]
+- [[Linear Algebra 5A Invariant Subspaces#^ladr-5-7|5.7 Equivalent conditions to be an eigenvalue]]
+- [[Linear Algebra 7B Spectral Theorem#^ladr-7-26|7.26 Invertible quadratic expressions]]
 
 ## Connections
-- Matrix and operator consequences: [[ST = I ⟺ TS = I (on vector spaces of the same dimension)]]. Eigenvalue criterion: [[Equivalent conditions to be an eigenvalue]].
+- Matrix and operator consequences: [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I (on vector spaces of the same dimension)]]. Eigenvalue criterion: [[Linear Algebra 5A Invariant Subspaces#^ladr-5-7|Equivalent conditions to be an eigenvalue]].

@@ -1,24 +1,21 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 8.22"
-ladr: "8.22"
-page: 309
+ladr-hub: "8.22"
 aliases: ["LADR 8.22"]
-tags: [linear-algebra, ladr/8B]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 8.22 Generalized eigenspace decomposition
-> *Write the statement in your own words.* (LADR p. 309)
+![[Linear Algebra 8B Generalized Eigenspace Decomposition#^ladr-8-22]]
 
-> [!proof]-
-> Proof idea.
+## Treated in
+- [[Linear Algebra 8B Generalized Eigenspace Decomposition#^ladr-8-22|Axler 8.22]], in [[Linear Algebra 8B Generalized Eigenspace Decomposition]]
 
-## Uses (cited in Axler's proof)
-- [[Description of generalized eigenspaces]] (8.20)
-- [[Null space and range of p(T) are invariant under T]] (5.18)
-- [[Linearly independent generalized eigenvectors]] (8.12)
-- [[Condition for a direct sum]] (1.45)
-- [[A basis of generalized eigenvectors]] (8.9)
+## Proof uses
+- [[Linear Algebra 8B Generalized Eigenspace Decomposition#^ladr-8-20|8.20]], [[Linear Algebra 5A Invariant Subspaces#^ladr-5-18|5.18]], [[Linear Algebra 8A Generalized Eigenvectors and Nilpotent Operators#^ladr-8-12|8.12]], [[Condition for a direct sum|1.45]], [[Linear Algebra 8A Generalized Eigenvectors and Nilpotent Operators#^ladr-8-9|8.9]]
 
-## Connections
-- 
+## Used in (Linear Algebra)
+- [[Linear Algebra 8B Generalized Eigenspace Decomposition#^ladr-8-25|8.25 Sum of the multiplicities equals dim V]]
+- [[Cayley–Hamilton theorem|8.29 Cayley–Hamilton theorem]]
+- [[Linear Algebra 8B Generalized Eigenspace Decomposition#^ladr-8-37|8.37 Block diagonal matrix with upper-triangular blocks]]
+- [[Linear Algebra 8C Consequences of Generalized Eigenspace Decomposition#^ladr-8-41|8.41 Over C, invertible operators have square roots]]
+- [[Jordan form|8.46 Jordan form]]

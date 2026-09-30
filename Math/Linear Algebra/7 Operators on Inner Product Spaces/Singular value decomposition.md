@@ -1,20 +1,14 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 7.70"
-ladr: "7.70"
-page: 273
+ladr-hub: "7.70"
 aliases: ["LADR 7.70"]
-tags: [linear-algebra, ladr/7E]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 7.70 Singular value decomposition
-> *Write the statement in your own words.* (LADR p. 273)
+![[Linear Algebra 7E Singular Value Decomposition#^ladr-7-70]]
 
-> [!proof]-
-> Proof idea.
+## Treated in
+- [[Linear Algebra 7E Singular Value Decomposition#^ladr-7-70|Axler 7.70]], in [[Linear Algebra 7E Singular Value Decomposition]]
 
-## Uses (cited in Axler's proof)
-- [[Properties of T∗T]] (7.64)
-
-## Connections
-- 
+## Proof uses
+- [[Linear Algebra 7E Singular Value Decomposition#^ladr-7-64|7.64]]

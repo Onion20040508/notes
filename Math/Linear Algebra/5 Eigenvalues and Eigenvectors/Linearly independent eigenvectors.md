@@ -1,25 +1,22 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 5.11"
-ladr: "5.11"
-page: 136
+ladr-hub: "5.11"
 aliases: ["LADR 5.11"]
-tags: [linear-algebra, ladr/5A]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 5.11 Linearly independent eigenvectors
-> Every list of eigenvectors of $T\in\Lin(V)$ corresponding to distinct eigenvalues is linearly independent.
+![[Linear Algebra 5A Invariant Subspaces#^ladr-5-11]]
 
-> [!proof]-
-> Suppose not, and let $m$ be the smallest length of a linearly dependent list $v_1,\dots,v_m$ of eigenvectors with distinct eigenvalues $\lambda_1,\dots,\lambda_m$ ($m\ge2$, since eigenvectors are nonzero). Then $a_1v_1+\dots+a_mv_m=0$ with all $a_k\ne0$ (by minimality). Apply $T-\lambda_mI$:
-> $$
-> a_1(\lambda_1-\lambda_m)v_1+\dots+a_{m-1}(\lambda_{m-1}-\lambda_m)v_{m-1}=0 ,
-> $$
-> with all coefficients nonzero. This is a shorter dependent list, a contradiction.
+## Treated in
+- [[Linear Algebra 5A Invariant Subspaces#^ladr-5-11|Axler 5.11]], in [[Linear Algebra 5A Invariant Subspaces]]
 
-## Uses (in the proof)
-- (definitions only)
+## Used in (Linear Algebra)
+- [[Linear Algebra 5A Invariant Subspaces#^ladr-5-12|5.12 Operator cannot have more eigenvalues than dimension of vector space]]
+- [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-54|5.54 Sum of eigenspaces is a direct sum]]
+- [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-55|5.55 Conditions equivalent to diagonalizability]]
+- [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-58|5.58 Enough eigenvalues implies diagonalizability]]
+- [[Linear Algebra 8A Generalized Eigenvectors and Nilpotent Operators#^ladr-8-11|8.11 Generalized eigenvector corresponds to a unique eigenvalue]]
 
 ## Connections
-- Gives [[Operator cannot have more eigenvalues than dimension of vector space]], and that eigenspaces form a direct sum ([[Sum of eigenspaces is a direct sum]]).
-- Physics: states with different energies are independent (and orthogonal for self-adjoint $H$, [[Eigenvalues of self-adjoint operators]]).
+- Gives [[Linear Algebra 5A Invariant Subspaces#^ladr-5-12|Operator cannot have more eigenvalues than dimension of vector space]], and that eigenspaces form a direct sum ([[Linear Algebra 5D Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]]).
+- Physics: states with different energies are independent (and orthogonal for self-adjoint $H$, [[Linear Algebra 7A Self-Adjoint and Normal Operators#^ladr-7-12|Eigenvalues of self-adjoint operators]]).

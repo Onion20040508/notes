@@ -1,24 +1,14 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 5.47"
-ladr: "5.47"
-page: 160
+ladr-hub: "5.47"
 aliases: ["LADR 5.47"]
-tags: [linear-algebra, ladr/5C]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 5.47 If F = C, then every operator on V has an upper-triangular matrix
-> *Write the statement in your own words.* (LADR p. 160)
+![[Linear Algebra 5C Upper-Triangular Matrices#^ladr-5-47]]
 
-> [!proof]-
-> Proof idea.
+## Treated in
+- [[Linear Algebra 5C Upper-Triangular Matrices#^ladr-5-47|Axler 5.47]], in [[Linear Algebra 5C Upper-Triangular Matrices]]
 
-## Uses (cited in Axler's proof)
-- [[Necessary and sufficient condition to have an upper-triangular matrix]] (5.44)
-- [[Fundamental theorem of algebra, second version]] (4.13)
-- [[Commuting operators are simultaneously upper triangularizable]] (5.80)
-- [[Determination of eigenvalues from upper-triangular matrix]] (5.41)
-- [[Eigenvalues of sum and product of commuting operators]] (5.81)
-
-## Connections
-- 
+## Proof uses
+- [[Linear Algebra 5C Upper-Triangular Matrices#^ladr-5-44|5.44]], [[Linear Algebra 4 Polynomials#^ladr-4-13|4.13]], [[Linear Algebra 5E Commuting Operators#^ladr-5-80|5.80]], [[Linear Algebra 5C Upper-Triangular Matrices#^ladr-5-41|5.41]], [[Linear Algebra 5E Commuting Operators#^ladr-5-81|5.81]]

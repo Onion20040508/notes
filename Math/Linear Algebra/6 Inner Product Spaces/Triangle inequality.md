@@ -1,20 +1,14 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 6.17"
-ladr: "6.17"
-page: 190
+ladr-hub: "6.17"
 aliases: ["LADR 6.17"]
-tags: [linear-algebra, ladr/6A]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 6.17 Triangle inequality
-> *Write the statement in your own words.* (LADR p. 190)
+![[Linear Algebra 6A Inner Products and Norms#^ladr-6-17]]
 
-> [!proof]-
-> Proof idea.
+## Treated in
+- [[Linear Algebra 6A Inner Products and Norms#^ladr-6-17|Axler 6.17]], in [[Linear Algebra 6A Inner Products and Norms]]
 
-## Uses (cited in Axler's proof)
-- [[Cauchy–Schwarz inequality]] (6.14)
-
-## Connections
-- 
+## Proof uses
+- [[Cauchy–Schwarz inequality|6.14]]

@@ -1,27 +1,21 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 1.45"
-ladr: "1.45"
-page: 23
+ladr-hub: "1.45"
 aliases: ["LADR 1.45"]
-tags: [linear-algebra, ladr/1C]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 1.45 Condition for a direct sum
-> Let $V_1,\dots,V_m$ be subspaces of $V$. Then $V_1+\dots+V_m$ is a direct sum if and only if the only way to write $0=v_1+\dots+v_m$ with $v_k\in V_k$ is $v_1=\dots=v_m=0$.
+![[Linear Algebra 1C Subspaces#^ladr-1-45]]
 
-> [!proof]-
-> ($\Rightarrow$) Uniqueness of representation applied to $0=0+\dots+0$.
->
-> ($\Leftarrow$) Suppose $v=v_1+\dots+v_m=u_1+\dots+u_m$ with $v_k,u_k\in V_k$. Subtracting,
-> $$
-> 0=(v_1-u_1)+\dots+(v_m-u_m),\qquad v_k-u_k\in V_k,
-> $$
-> so every $v_k-u_k=0$ by hypothesis, i.e. the representation is unique.
+## Treated in
+- [[Linear Algebra 1C Subspaces#^ladr-1-45|Axler 1.45]], in [[Linear Algebra 1C Subspaces]]
 
-## Uses (in the proof)
-- (definitions only)
+## Used in (Linear Algebra)
+- [[Linear Algebra 1C Subspaces#^ladr-1-46|1.46 Direct sum of two subspaces]]
+- [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-93|3.93 Products and direct sums]]
+- [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-54|5.54 Sum of eigenspaces is a direct sum]]
+- [[Generalized eigenspace decomposition|8.22 Generalized eigenspace decomposition]]
 
 ## Connections
-- Same idea as linear independence ([[Linearly independent]]): uniqueness everywhere follows from uniqueness at $0$.
-- Used in [[Direct sum of two subspaces]], [[Sum of eigenspaces is a direct sum]], [[A sum is a direct sum if and only if dimensions add up]].
+- Same idea as linear independence ([[Linear Algebra 2A Span and Linear Independence#^ladr-2-15|Linearly independent]]): uniqueness everywhere follows from uniqueness at $0$.
+- Used in [[Linear Algebra 1C Subspaces#^ladr-1-46|Direct sum of two subspaces]], [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]], [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-94|A sum is a direct sum if and only if dimensions add up]].

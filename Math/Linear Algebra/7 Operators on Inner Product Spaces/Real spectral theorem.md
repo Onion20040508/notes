@@ -1,22 +1,21 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 7.29"
-ladr: "7.29"
-page: 245
+ladr-hub: "7.29"
 aliases: ["LADR 7.29"]
-tags: [linear-algebra, ladr/7B]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 7.29 Real spectral theorem
-> *Write the statement in your own words.* (LADR p. 245)
+![[Linear Algebra 7B Spectral Theorem#^ladr-7-29]]
 
-> [!proof]-
-> Proof idea.
+## Treated in
+- [[Linear Algebra 7B Spectral Theorem#^ladr-7-29|Axler 7.29]], in [[Linear Algebra 7B Spectral Theorem]]
 
-## Uses (cited in Axler's proof)
-- [[Upper-triangular matrix with respect to some orthonormal basis]] (6.37)
-- [[Minimal polynomial of self-adjoint operator]] (7.27)
-- [[Conditions equivalent to diagonalizability]] (5.55)
+## Proof uses
+- [[Linear Algebra 6B Orthonormal Bases#^ladr-6-37|6.37]], [[Linear Algebra 7B Spectral Theorem#^ladr-7-27|7.27]], [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-55|5.55]]
 
-## Connections
-- 
+## Used in (Linear Algebra)
+- [[Linear Algebra 7C Positive Operators#^ladr-7-38|7.38 Characterization of positive operators]]
+- [[Linear Algebra 7E Singular Value Decomposition#^ladr-7-69|7.69 Isometries characterized by having all singular values equal 1]]
+- [[Linear Algebra 7F Consequences of Singular Value Decomposition#^ladr-7-92|7.92 Best approximation by linear map whose range has dimension ≤ k]]
+- [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-13|9.13 Diagonalization of a symmetric bilinear form by an orthonormal basis]]
+- [[Linear Algebra 9C Determinants#^ladr-9-59|9.59 Every positive operator has nonnegative determinant]]

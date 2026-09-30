@@ -1,21 +1,18 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 6.14"
-ladr: "6.14"
-page: 189
+ladr-hub: "6.14"
 aliases: ["LADR 6.14"]
-tags: [linear-algebra, ladr/6A]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 6.14 Cauchy–Schwarz inequality
-> *Write the statement in your own words.* (LADR p. 189)
+![[Linear Algebra 6A Inner Products and Norms#^ladr-6-14]]
 
-> [!proof]-
-> Proof idea.
+## Treated in
+- [[Linear Algebra 6A Inner Products and Norms#^ladr-6-14|Axler 6.14]], in [[Linear Algebra 6A Inner Products and Norms]]
 
-## Uses (cited in Axler's proof)
-- [[An orthogonal decomposition]] (6.13)
-- 6.16 Cauchy–Schwarz inequality (example, p. 189)
+## Proof uses
+- [[Linear Algebra 6A Inner Products and Norms#^ladr-6-13|6.13]]
 
-## Connections
-- 
+## Used in (Linear Algebra)
+- [[Triangle inequality|6.17 Triangle inequality]]
+- [[Linear Algebra 7B Spectral Theorem#^ladr-7-26|7.26 Invertible quadratic expressions]]

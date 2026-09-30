@@ -1,22 +1,17 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 9.50"
-ladr: "9.50"
-page: 357
+ladr-hub: "9.50"
 aliases: ["LADR 9.50"]
-tags: [linear-algebra, ladr/9C]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 9.50 Invertible ⟺ nonzero determinant
-> *Write the statement in your own words.* (LADR p. 357)
+![[Linear Algebra 9C Determinants#^ladr-9-50]]
 
-> [!proof]-
-> Proof idea.
+## Treated in
+- [[Linear Algebra 9C Determinants#^ladr-9-50|Axler 9.50]], in [[Linear Algebra 9C Determinants]]
 
-## Uses (cited in Axler's proof)
-- [[Determinant is multiplicative]] (9.49)
-- [[Alternating (dim V)-linear forms and linear independence]] (9.39)
-- [[Invertible, inverse, A⁻¹]] (3.80)
+## Proof uses
+- [[Linear Algebra 9C Determinants#^ladr-9-49|9.49]], [[Linear Algebra 9B Alternating Multilinear Forms#^ladr-9-39|9.39]], [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-80|3.80]]
 
-## Connections
-- 
+## Used in (Linear Algebra)
+- [[Linear Algebra 9C Determinants#^ladr-9-51|9.51 Eigenvalues and determinants]]

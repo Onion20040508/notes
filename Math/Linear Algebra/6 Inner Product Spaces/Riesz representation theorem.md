@@ -1,20 +1,17 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 6.42"
-ladr: "6.42"
-page: 205
+ladr-hub: "6.42"
 aliases: ["LADR 6.42"]
-tags: [linear-algebra, ladr/6B]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 6.42 Riesz representation theorem
-> *Write the statement in your own words.* (LADR p. 205)
+![[Linear Algebra 6B Orthonormal Bases#^ladr-6-42]]
 
-> [!proof]-
-> Proof idea.
+## Treated in
+- [[Linear Algebra 6B Orthonormal Bases#^ladr-6-42|Axler 6.42]], in [[Linear Algebra 6B Orthonormal Bases]]
 
-## Uses (cited in Axler's proof)
-- [[Writing a vector as a linear combination of an orthonormal basis]] (6.30)
+## Proof uses
+- [[Linear Algebra 6B Orthonormal Bases#^ladr-6-30|6.30]]
 
-## Connections
-- 
+## Used in (Linear Algebra)
+- [[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57 Properties of orthogonal projection PU]]

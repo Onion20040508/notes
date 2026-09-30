@@ -1,21 +1,21 @@
 ---
 subject: math
 type: theorem
-source: "[[Linear Algebra]] 7.31"
-ladr: "7.31"
-page: 246
+ladr-hub: "7.31"
 aliases: ["LADR 7.31"]
-tags: [linear-algebra, ladr/7B]
+tags: [linear-algebra, hub]
 ---
-> [!theorem] 7.31 Complex spectral theorem
-> *Write the statement in your own words.* (LADR p. 246)
+![[Linear Algebra 7B Spectral Theorem#^ladr-7-31]]
 
-> [!proof]-
-> Proof idea.
+## Treated in
+- [[Linear Algebra 7B Spectral Theorem#^ladr-7-31|Axler 7.31]], in [[Linear Algebra 7B Spectral Theorem]]
 
-## Uses (cited in Axler's proof)
-- [[Schur’s theorem]] (6.38)
-- [[Conditions equivalent to diagonalizability]] (5.55)
+## Proof uses
+- [[Linear Algebra 6B Orthonormal Bases#^ladr-6-38|6.38]], [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-55|5.55]]
 
-## Connections
-- 
+## Used in (Linear Algebra)
+- [[Linear Algebra 7C Positive Operators#^ladr-7-38|7.38 Characterization of positive operators]]
+- [[Linear Algebra 7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-55|7.55 Description of unitary operators on complex inner product spaces]]
+- [[Linear Algebra 7E Singular Value Decomposition#^ladr-7-69|7.69 Isometries characterized by having all singular values equal 1]]
+- [[Linear Algebra 7F Consequences of Singular Value Decomposition#^ladr-7-92|7.92 Best approximation by linear map whose range has dimension ≤ k]]
+- [[Linear Algebra 9C Determinants#^ladr-9-59|9.59 Every positive operator has nonnegative determinant]]
