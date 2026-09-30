@@ -11,7 +11,7 @@ tags: [measure-theory, hub]
 - [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-2|Theorem §11.2: Carathéodory's Theorem]], in [[Measure Theory §11 Borel Sets and Measure Spaces]]
 
 ## Its proof uses
-- (only definitions)
+- (no proof in the notes)
 
 ## Used in (Measure Theory)
 - (not cited later in the course)

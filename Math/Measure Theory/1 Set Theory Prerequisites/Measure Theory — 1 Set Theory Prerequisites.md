@@ -24,7 +24,7 @@ tags: [chapter, measure-theory]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Measure Theory §1 Countability and Set Theory#^thm-1-1|Theorem §1.1: Properties of Equivalence]]: 111 later results
-- [[Countable Union of Countable Sets is Countable|Proposition §3.1: Countable Union of Countable Sets]]: 110 later results
-- [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2: ℚ is countable]]: 95 later results
+- [[Measure Theory §1 Countability and Set Theory#^thm-1-1|Theorem §1.1: Properties of Equivalence]]: 125 later results
+- [[Countable Union of Countable Sets is Countable|Proposition §3.1: Countable Union of Countable Sets]]: 124 later results
+- [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2: ℚ is countable]]: 96 later results
 - [[Measure Theory §2 The Cantor–Bernstein Theorem#^lem-2-2|Lemma §2.2: Key Lemma for Cantor–Bernstein]]: 1 later result

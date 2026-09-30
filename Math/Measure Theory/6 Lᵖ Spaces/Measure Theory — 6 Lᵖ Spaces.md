@@ -21,7 +21,7 @@ tags: [chapter, measure-theory]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|Proposition §19.2: The Essential Supremum is Achieved A.E.]]: 19 later results
-- [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-11|Corollary §19.11: Minkowski for Finite Sums]]: 13 later results
-- [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|Lemma §19.4: Young's Inequality]]: 12 later results
-- [[Hölder's Inequality|Theorem §19.5: Hölder's Inequality]]: 11 later results
+- [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|Proposition §19.2: The Essential Supremum is Achieved A.E.]]: 22 later results
+- [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|Lemma §19.4: Young's Inequality]]: 20 later results
+- [[Hölder's Inequality|Theorem §19.5: Hölder's Inequality]]: 19 later results
+- [[Minkowski's Inequality|Theorem §19.9: Minkowski's Inequality]]: 16 later results

@@ -12,8 +12,8 @@ tags: [measure-theory, hub]
 
 ## Its proof uses
 - [[Measure Theory §5 Topology of ℝⁿ#^def-5-1|Definition §5.1: Open Ball]]
-- [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|Proposition §9.1: Basic Properties of Outer Measure]]
 - [[Measure Theory §9 Lebesgue Outer Measure#^rem-9-1|Remark]]
+- [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|Proposition §9.1: Basic Properties of Outer Measure]]
 - [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|Proposition §9.2: Outer Measure of Closed Rectangles]]
 - [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|Theorem §10.3: ℳ is a σ-Algebra with Countable Additivity]]
 - [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-6|Theorem §11.6: Open Sets are Measurable]]

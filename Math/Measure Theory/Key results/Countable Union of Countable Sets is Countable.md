@@ -17,6 +17,8 @@ tags: [measure-theory, hub]
 - [[Measure Theory §1 Countability and Set Theory#^def-1-8|Definition §1.8: Countable (Formal)]]
 
 ## Used in (Measure Theory)
+- [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2: ℚ is countable]]
+- [[Measure Theory §4 Uncountability#^ex-4-2|Example §4.2: Interval 0-1 is uncountable]]
 - [[Measure Theory §7 Structure of Open Sets#^prop-7-3|Proposition §7.3: Open Sets in ℝⁿ as Unions of Rectangles]]
 - [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|Proposition §9.1: Basic Properties of Outer Measure]]
 - [[Measure Theory §18 Differentiation Theory#^thm-18-1|Theorem §18.1: Monotone Functions Have Countably Many Discontinuities]]

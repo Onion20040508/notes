@@ -28,6 +28,9 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 
 ^def-15-1
 
+![[m551-15-1.svg]]
+*The positive and negative parts. Left: $\int_E f$ is the blue area above the axis, $\int_E f^+$, minus the red area below it, $\int_E f^-$. Right: $f^+ = \max\{f, 0\}$ (blue) and $f^- = \max\{-f, 0\}$ (red) are both non-negative, so their integrals are already defined by [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^def-14-2|Def. §14.2]]; the only case left undefined is when both areas are infinite.*
+
 > [!remark] Remark: Characterization of Integrability
 > Since $|f(x)| = f^+(x) + f^-(x)$, we have:
 >
@@ -386,6 +389,9 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[Measure Theory §14 The Lebesgue
 
 ^rem-15-3
 
+![[m551-15-2.svg]]
+*Why the DCT needs an integrable dominator. Both sequences tend to $0$ at every point while $\int f_k = 1$ for every $k$, so $\lim \int f_k \neq \int \lim f_k$. (a) The sliding block $f_k = \chi_{[k,k+1]}$ of [[Measure Theory §13 Egorov's and Lusin's Theorems#^rem-13-1|Rem. §13.1]]: the smallest possible dominator $\sup_k f_k = \chi_{[1,\infty)}$ (red) has infinite integral. (b) The bumps $f_k = k\,\chi_{(0,1/k)}$ of [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^ex-14-1|Ex. §14.1]]: $\sup_k f_k$ is the red staircase, equal to $k$ on $[\frac{1}{k+1}, \frac1k)$, which is at least $\frac1x - 1$ and not integrable near $0$. Any $F$ with $|f_k| \leq F$ lies above the red graph, so no $F \in L$ exists; only Fatou's inequality survives, and it is strict.*
+
 > [!remark]- Connections
 > - The MATH 451 row this table replaces: $f_n \to f$ uniformly on $[a,b]$ gives $\lim \int f_n = \int f$ ([[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]]; [[Single Variable Analysis §24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[Measure Theory §12 Measurable Functions#^def-12-9|Def. §12.9]]).
 > - Why a new integral was needed for such theorems: [[Measure Theory §8 Motivation꞉ The Riemann Integral#^rem-8-2|Rem. §8.2]] (Riemann integrable functions are not closed under pointwise limits).
@@ -555,6 +561,9 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[Measure Theory §14 The Lebesgue
 ^pf-15-10
 
 *Uses:* [[Measure Theory §8 Motivation꞉ The Riemann Integral#^def-8-3|Def. §8.3]], [[Measure Theory §15 The General Lebesgue Integral#^rem-15-6|Rem. §15.6]], [[Measure Theory §15 The General Lebesgue Integral#^def-15-2|Def. §15.2]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-14|§14.14]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[Measure Theory §12 Measurable Functions#^prop-12-12|§12.12]], [[Measure Theory §15 The General Lebesgue Integral#^ex-15-1|Ex. §15.1]], [[Dominated Convergence Theorem|§15.8]], [[Single Variable Analysis §32 The Definition of the Riemann Integral#^lem-32-2|451 §32.2]]
+
+![[m551-15-3.svg]]
+*The proof with $k = 3$ (dyadic intervals of length $\frac18$): the lower step function $\varphi_k$ (blue, the infimum on each interval) and the upper step function $\psi_k$ (red, the supremum) trap $f$. The gray area is $\int_0^1 (\psi_k - \varphi_k)$, the gap between the upper and lower sums; Riemann integrability makes it tend to $0$, which forces $\varphi = \psi = f$ a.e., and the DCT with the constant dominator $M$ then gives $\int^L f = \lim \int \varphi_k = \int^R f$.*
 
 > [!remark]- Connections
 > - The converse fails: the Dirichlet function ([[Measure Theory §8 Motivation꞉ The Riemann Integral#^ex-8-2|Ex. §8.2]], [[Single Variable Analysis §32 The Definition of the Riemann Integral#^ex-32-3|451 Ex. §32.3]]) is not Riemann integrable but equals $0$ a.e., so its Lebesgue integral is $0$ ([[Measure Theory §15 The General Lebesgue Integral#^prop-15-1|§15.1]](ii)).

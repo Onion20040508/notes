@@ -7,8 +7,8 @@ tags: [chapter, measure-theory]
 # 4 Integration Theory
 ↑ [[Measure Theory]]
 
-**Builds on:** [[Measure Theory — 2 Topology of ℝⁿ|2 Topology of ℝⁿ]] (3), [[Measure Theory — 3 Measure Theory|3 Measure Theory]] (57)
-**Used by:** [[Measure Theory — 5 Differentiation and the FTC|5 Differentiation and the FTC]] (23), [[Measure Theory — 6 Lᵖ Spaces|6 Lᵖ Spaces]] (26)
+**Builds on:** [[Measure Theory — 2 Topology of ℝⁿ|2 Topology of ℝⁿ]] (3), [[Measure Theory — 3 Measure Theory|3 Measure Theory]] (59)
+**Used by:** [[Measure Theory — 5 Differentiation and the FTC|5 Differentiation and the FTC]] (27), [[Measure Theory — 6 Lᵖ Spaces|6 Lᵖ Spaces]] (26)
 **Builds on (other subjects):** [[Single Variable Analysis]] (15), [[Topology]] (2)
 
 ## Sections
@@ -28,7 +28,7 @@ tags: [chapter, measure-theory]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-2|Proposition §14.2: Restriction and Null Sets]]: 68 later results
-- [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|Proposition §14.3: Basic Properties]]: 67 later results
-- [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-6|Proposition §14.6: Domain Restriction for General Non-Negative Functions]]: 66 later results
-- [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^cor-14-7|Corollary §14.7: Domain Monotonicity]]: 65 later results
+- [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-2|Proposition §14.2: Restriction and Null Sets]]: 69 later results
+- [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|Proposition §14.3: Basic Properties]]: 68 later results
+- [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-6|Proposition §14.6: Domain Restriction for General Non-Negative Functions]]: 67 later results
+- [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^cor-14-7|Corollary §14.7: Domain Monotonicity]]: 66 later results

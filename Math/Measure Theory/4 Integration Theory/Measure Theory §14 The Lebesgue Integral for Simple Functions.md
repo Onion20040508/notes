@@ -140,6 +140,9 @@ We now extend the integral from simple functions to general non-negative measura
 
 ^def-14-2
 
+![[m551-14-1.svg]]
+*One admissible $h$ in the supremum. The simple function $h \leq f$ (blue) takes finitely many values $a_j$ on disjoint sets $A_j$, and a level set need not be an interval: here $A_j \cap E$ (red) has three pieces. Its integral is the shaded area $\sum_j a_j\, m(A_j \cap E)$; the integral of $f$ (black) is the supremum of such areas over all simple $h$ that stay below $f$ on $E$.*
+
 > [!remark]- Connections
 > - The same “sup from below” shape as the lower Darboux integral: [[Measure Theory §8 Motivation꞉ The Riemann Integral#^rem-8-1|Rem. §8.1]], [[Single Variable Analysis §32 The Definition of the Riemann Integral#^def-32-2|451 Def. §32.2]].
 
@@ -284,6 +287,9 @@ We now extend the integral from simple functions to general non-negative measura
 ^pf-14-4-cont
 
 *Uses:* [[Measure Theory §12 Measurable Functions#^thm-12-3|§12.3]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^cor-14-7|§14.7]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-1|§14.1]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^lem-14-5|§14.5]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^def-14-2|Def. §14.2]]
+
+![[m551-14-2.svg]]
+*The sets $E_k = \{f_k \geq c\,h\}$ in the proof of the MCT. Fix a simple $h \leq f$ (black) and lower it to $c\,h$ (dashed, $c < 1$). Where $f_k$ (blue) dips below $c\,h$ the point is not yet in $E_k$; the red part of the axis is $E_k$, and on it $\int_E f_k \geq c \int_{E_k} h$. As $f_k \nearrow f$ (gray) the dips fill in, so $E_k \nearrow E$. The factor $c < 1$ is essential: where $h = f$, the $f_k$ may approach $f$ from below without ever reaching $h$, but they do eventually pass $c\,h$.*
 
 > [!remark]- Connections
 > - Not to be confused with the MATH 451 [[Monotone Convergence Theorem]] for sequences of numbers, which it uses in Step 1.
@@ -667,6 +673,9 @@ We now extend the integral from simple functions to general non-negative measura
 > Therefore $0 = \int_0^1 \liminf f_k\,dx < \liminf \int_0^1 f_k\,dx = 1$. The inequality is strict because the “mass” of $f_k$ escapes to the left, concentrating on ever-smaller intervals.
 
 ^ex-14-1
+
+![[m551-14-3.svg]]
+*Fatou's inequality is strict for $f_k = k\,\chi_{(0,1/k)}$, shown for $k = 1, 2, 4, 8$. Every rectangle has area $\int_0^1 f_k = 1$ (hollow dots: the intervals are open), but they get thinner and each fixed $x$ is eventually outside all of them, so $\lim f_k = 0$ everywhere. The mass piles up at $0$ and vanishes in the limit.*
 
 > [!remark]- Connections
 > - The same escaping-mass phenomenon in MATH 451: [[Single Variable Analysis §25 More on Uniform Convergence#^ex-25-1|451 Ex. §25.1]] (the escaping triangle), where the convergence is pointwise but not uniform.

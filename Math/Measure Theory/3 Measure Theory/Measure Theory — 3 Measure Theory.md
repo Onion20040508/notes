@@ -8,8 +8,8 @@ tags: [chapter, measure-theory]
 ↑ [[Measure Theory]]
 
 **Builds on:** [[Measure Theory — 1 Set Theory Prerequisites|1 Set Theory Prerequisites]] (7), [[Measure Theory — 2 Topology of ℝⁿ|2 Topology of ℝⁿ]] (15)
-**Used by:** [[Measure Theory — 4 Integration Theory|4 Integration Theory]] (57), [[Measure Theory — 5 Differentiation and the FTC|5 Differentiation and the FTC]] (24), [[Measure Theory — 6 Lᵖ Spaces|6 Lᵖ Spaces]] (8)
-**Builds on (other subjects):** [[Single Variable Analysis]] (19), [[Topology]] (8)
+**Used by:** [[Measure Theory — 4 Integration Theory|4 Integration Theory]] (59), [[Measure Theory — 5 Differentiation and the FTC|5 Differentiation and the FTC]] (26), [[Measure Theory — 6 Lᵖ Spaces|6 Lᵖ Spaces]] (8)
+**Builds on (other subjects):** [[Single Variable Analysis]] (19), [[Topology]] (6)
 
 ## Sections
 - [[Measure Theory §9 Lebesgue Outer Measure]]
@@ -32,7 +32,7 @@ tags: [chapter, measure-theory]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Properties of Lebesgue Outer Measure|Proposition §9.1: Basic Properties of Outer Measure]]: 107 later results
-- [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-1|Theorem §10.1: Closure Properties of ℳ]]: 95 later results
-- [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|Lemma §10.2: Finite Additivity for Disjoint Measurable Sets]]: 94 later results
-- [[Lebesgue Measurable Sets Form a σ-Algebra|Theorem §10.3: ℳ is a σ-Algebra with Countable Additivity]]: 92 later results
+- [[Properties of Lebesgue Outer Measure|Proposition §9.1: Basic Properties of Outer Measure]]: 108 later results
+- [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-1|Theorem §10.1: Closure Properties of ℳ]]: 96 later results
+- [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|Lemma §10.2: Finite Additivity for Disjoint Measurable Sets]]: 95 later results
+- [[Lebesgue Measurable Sets Form a σ-Algebra|Theorem §10.3: ℳ is a σ-Algebra with Countable Additivity]]: 93 later results

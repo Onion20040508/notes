@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Measure Theory]]"
-aliases: ["MATH 551 4.1", "uncountability of ℝ"]
+aliases: ["MATH 551 4.1", "X is not equivalent to its power set"]
 tags: [measure-theory, hub]
 ---
 ![[Measure Theory §4 Uncountability#^thm-4-1]]

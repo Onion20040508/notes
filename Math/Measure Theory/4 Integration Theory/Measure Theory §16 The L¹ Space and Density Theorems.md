@@ -51,6 +51,9 @@ tags: [measure-theory, math551]
 
 *Uses:* [[Measure Theory §15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[Dominated Convergence Theorem|§15.8]]
 
+![[m551-16-1.svg]]
+*Truncation at height $k$: $f_k$ (blue) agrees with $f$ (gray) where $|f| \leq k$ and is clipped to $\pm k$ elsewhere, so $f_k$ is bounded and $|f_k| \leq |f|$. The red area is $\int_E |f - f_k|$; it sits over $\{|f| > k\}$ and tends to $0$ by the DCT with dominator $2|f|$. In [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-1|Theorem §16.1]] the bounded part is small on small sets because $\int_e |f_k| \leq k\, m(e)$, and the red remainder is small everywhere.*
+
 > [!proof]+ Proof of Theorem §16.1 (continued)
 > Now let $\varepsilon > 0$. By the [[Measure Theory §16 The L¹ Space and Density Theorems#^lem-16-2|lemma]], choose $m$ such that $\int_E |f_m - f|\,dx < \varepsilon/2$. Since $|f_m|$ is bounded (by $m$), by Step 1 there exists $\delta > 0$ such that $m(e) < \delta$ implies $\int_e |f_m|\,dx < \varepsilon/2$.
 >
@@ -188,6 +191,9 @@ tags: [measure-theory, math551]
 
 *Uses:* [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-9|Def. §11.9]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]], [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-11|§11.11]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-1|Def. §9.1]], [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-4|§16.4]], [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-5|§16.5]]
 
+![[m551-16-2.svg]]
+*Step 1 in the plane: a measurable $S$ with $m(S) < \infty$ (blue boundary) is approximated by finitely many disjoint rectangles $I_1, \dots, I_m$ (gray grid). The step function $\psi = \chi_{\bigcup_j I_j}$ differs from $\chi_S$ exactly on the symmetric difference $S \triangle \bigcup_j I_j$ (red), so $\|\chi_S - \psi\|_1 = m(S \triangle \bigcup_j I_j) < \varepsilon$.*
+
 > [!remark]- Connections
 > - Step 1 is the Lebesgue relaxation of Jordan measurability ([[Multivariable Analysis §15 Multivariable Integration#^def-15-5|452 Def. §15.5]]), which demands finite unions of squares approximating from inside *and* outside.
 > - The MATH 451 Riemann integral is itself built from step functions: [[Single Variable Analysis §32 The Definition of the Riemann Integral#^ex-32-2|451 Ex. §32.2]], [[Measure Theory §15 The General Lebesgue Integral#^rem-15-6|Rem. §15.6]].
@@ -236,6 +242,9 @@ Recall ([[Measure Theory §12 Measurable Functions#^def-12-7|Definition §12.7]]
 ^pf-16-7
 
 *Uses:* [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-4|§16.4]], [[Measure Theory §15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[Measure Theory §12 Measurable Functions#^def-12-7|Def. §12.7]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-1|Def. §9.1]], [[Single Variable Analysis §3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
+
+![[m551-16-3.svg]]
+*The case $n = 1$: the trapezoid $g$ (blue) is $0$ outside $(a - \varepsilon', b + \varepsilon')$, equal to $1$ on $(a + \varepsilon', b - \varepsilon')$, and linear in between, so it is continuous with compact support. It differs from $\chi_{(a,b)}$ (black; hollow dots mark the values not taken at $a$, $b$) only on the two transition intervals, of total length $4\varepsilon'$, and there by at most $1$ (red), so $\|\chi_{(a,b)} - g\|_1 \leq 4\varepsilon'$.*
 
 > [!remark]- Connections
 > - Continuous functions are closed under uniform limits ([[Single Variable Analysis §24 Uniform Convergence#^thm-24-2|451 §24.2]], [[Measure Theory §12 Measurable Functions#^thm-12-16|§12.16]]), so the density holds only for the weaker $L^1$ distance (cf. [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-4|Rem. §19.4]]).

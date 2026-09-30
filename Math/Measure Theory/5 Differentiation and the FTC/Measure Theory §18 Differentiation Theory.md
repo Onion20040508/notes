@@ -54,6 +54,9 @@ tags: [measure-theory, math551]
 
 *Uses:* [[Single Variable Analysis §20 Limits of Functions#^def-20-2|451 Def. §20.2]], [[Single Variable Analysis §20 Limits of Functions#^thm-20-2|451 §20.2]], [[Countable Union of Countable Sets is Countable|§3.1]]
 
+![[m551-18-2.svg]]
+*An increasing $f$ with jumps at $x_1, x_2, x_3$ (hollow dots: one-sided limits; filled dots: the values of $f$). Each jump $J(x_i) = f(x_i^+) - f(x_i^-)$ occupies its own interval on the vertical axis (red). Because $f$ is increasing these intervals are disjoint and lie inside $[f(a), f(b)]$, so the jumps add up to at most $f(b) - f(a)$ and only finitely many can exceed $\frac1n$.*
+
 > [!remark]- Connections
 > - MATH 451 states this fact without proof alongside [[Single Variable Analysis §33 Properties of the Riemann Integral#^thm-33-1|Monotonic Functions Are Integrable]] (451 §33.1).
 > - Monotone functions are also [[Measure Theory §12 Measurable Functions#^ex-12-1|measurable]] (Ex. §12.1).
@@ -128,7 +131,7 @@ tags: [measure-theory, math551]
 *Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §18 Differentiation Theory#^def-18-1|Def. §18.1]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Properties of Lebesgue Outer Measure|§9.1]]
 
 ![[m551-18-1.svg]]
-*The Vitali covering argument. (a) The set $E$ with many overlapping Vitali intervals $\Gamma$ (blue). (b) Greedy selection produces disjoint $I_1, I_2, I_3$ (green); uncovered points like $x_0$ remain. (c) Each $5\times$ dilation $\hat{I}_j$ (pink) covers the uncovered remainder: any $x_0 \in E \setminus \bigcup I_j$ must land in some $\hat{I}_k$ because the Vitali interval $J \ni x_0$ satisfies $|J| < 2|I_k|$ and $J \cap I_k \neq \emptyset$, forcing $J \subseteq \hat{I}_k$.*
+*The Vitali covering argument. (a) The set $E$ (black) and a Vitali covering $\Gamma$ (blue; a genuine one has arbitrarily short intervals around every point of $E$). (b) Greedy selection: each new interval is disjoint from the earlier ones and longer than half of any remaining candidate, giving $I_1, I_2, I_3$. A point $x_0 \in E$ not covered by $I_1$ (take $n_0 = 1$) lies in some $J \in \Gamma$ (red, dashed) disjoint from $I_1$; here $J$ first meets $I_2$. (c) The selection rule gives $|J| \leq \delta_1 < 2|I_2|$, and an interval that meets $I_2$ and is shorter than $2|I_2|$ lies inside the $5\times$ dilation $\hat I_2$ (shaded). So the dilations $\hat I_j$, $j > n_0$, cover everything that $I_1, \dots, I_{n_0}$ miss, at total cost $5\sum_{j > n_0} |I_j|$.*
 
 > [!remark]- Connections
 > - Used twice in [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's Differentiation Theorem]] (§18.9) and once in [[Measure Theory §18 Differentiation Theory#^thm-18-27|Theorem §18.27]] (non-constant functions with zero derivative).
@@ -192,6 +195,9 @@ tags: [measure-theory, math551]
 > Define $f(x) = \sqrt{x}\sin(\pi/x)$ for $0 < x \leq 1$ and $f(0) = 0$. Then $f$ is continuous on $[0, 1]$ but $f \notin BV([0, 1])$: the oscillations near $0$ accumulate enough variation to make $\bigvee_0^1(f) = \infty$.
 
 ^ex-18-3
+
+![[m551-18-3.svg]]
+*$f(x) = \sqrt{x}\,\sin(\pi/x)$ (blue) oscillates between $\pm\sqrt{x}$ (dashed). At $x_k = \frac{2}{2k+1}$ it touches the envelope, alternately from above and below, so a partition through these points (red polygon) has $v_\Delta \geq \sum_k \sqrt{x_k}$, a series comparable to $\sum_k k^{-1/2}$, which diverges. The amplitude $\sqrt{x} \to 0$ makes $f$ continuous at $0$, but not fast enough to keep the variation finite.*
 
 > [!remark]- Connections
 > - Another rung of the MATH 451 ladder of damped oscillations: [[sin(1∕x) family]].
@@ -300,6 +306,9 @@ tags: [measure-theory, math551]
 
 *Uses:* [[Measure Theory §18 Differentiation Theory#^cor-18-6|§18.6]], [[Measure Theory §18 Differentiation Theory#^prop-18-5|§18.5]], [[Measure Theory §18 Differentiation Theory#^prop-18-4|§18.4]], [[Measure Theory §18 Differentiation Theory#^ex-18-2|Ex. §18.2]]
 
+![[m551-18-4.svg]]
+*The Jordan decomposition of $f(x) = \sin 2\pi x$ on $[0,1]$ (black). The variation function $g(x) = \bigvee_0^x(f)$ (blue) increases by $|f'|$: it rises with $f$ on $[0, \frac14]$, keeps rising while $f$ falls on $[\frac14, \frac34]$, and ends at $\bigvee_0^1(f) = 4$. The difference $h = g - f$ (red) is flat where $f$ increases and climbs at twice the rate at which $f$ falls; both $g$ and $h$ are increasing, and $f = g - h$.*
+
 > [!theorem] Theorem §18.8: Total Variation of the Integral Function
 > Let $f \in L([a, b])$ and define $F(x) = \int_a^x f(t)\,dt$ for $x \in [a, b]$. Then $F \in BV([a, b])$ and:
 >
@@ -374,6 +383,9 @@ tags: [measure-theory, math551]
 > Equivalently: $f$ is *not* differentiable at $x_0$ iff $D^+ > D_-$ or $D^- > D_+$ at $x_0$. In other words, some upper Dini derivative strictly exceeds the corresponding lower one.
 
 ^rem-18-3
+
+![[m551-18-5.svg]]
+*An example of different Dini derivatives: $f(x) = x\sin(1/x)$ for $x > 0$ and $f(x) = 0$ for $x \leq 0$, at $x_0 = 0$. The right difference quotient $\frac{f(h) - f(0)}{h} = \sin(1/h)$ is the slope of the red secant, and as $h \to 0^+$ it sweeps through all of $[-1, 1]$, so $D^+f(0) = 1$ and $D_+f(0) = -1$ (dashed lines). From the left the quotient is $0$, so $D^-f(0) = D_-f(0) = 0$. Since $D^+f(0) = 1 > 0 = D_-f(0)$, $f$ is not differentiable at $0$.*
 
 > [!remark]- Connections
 > - One-sided derivatives in MATH 451: the one-sided limits of [[Single Variable Analysis §20 Limits of Functions#^def-20-2|451 Def. §20.2]] applied to the difference quotient; limsup/liminf as in [[Measure Theory §12 Measurable Functions#^rem-12-4|Remark: Recalling Limsup and Liminf]].
@@ -584,6 +596,9 @@ tags: [measure-theory, math551]
 > The FTC ($*$) fails for $\varphi$, even though $\varphi \in BV$. The function “gains value” entirely on the Cantor set, which has measure zero — invisible to the Lebesgue integral.
 
 ^ex-18-4
+
+![[m551-18-6.svg]]
+*The Cantor function $\varphi$ (blue). It is constant on every removed middle third (for example $\varphi = \frac12$ on $(\frac13, \frac23)$), so $\varphi' = 0$ off $C$. All of its growth happens over $C$: the second stage $C_2$ (red on the axis) consists of four intervals of total length $\frac49$, and over each of them $\varphi$ rises by $\frac14$ (red boxes), a total rise of $1$. At stage $n$ there are $2^n$ boxes of total width $(\frac23)^n \to 0$ and total height still $1$. This is the failure of absolute continuity in [[Measure Theory §18 Differentiation Theory#^rem-18-7|Rem. §18.7]].*
 
 > [!remark]- Connections
 > - The Cantor set in MATH 451: [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^rem-13-5|451 Remark §13.5]]; in this course: [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-21|Properties of the Cantor Set]] (§11.21).
@@ -1069,6 +1084,9 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 > [[Measure Theory §18 Differentiation Theory#^thm-18-26|The theorem above]] shows that a.e. point is a Lebesgue point of $f$.
 
 ^def-18-5
+
+![[m551-18-7.svg]]
+*Averages over shrinking windows. With $F_h(x_0) = \frac1h\int_0^h f(x_0 + t)\,dt$ as in the [[Measure Theory §18 Differentiation Theory#^lem-18-25|Averaging Lemma]], the average height of $f$ (blue) over $[x_0, x_0 + h]$ is the dashed level, and over the shorter window $[x_0, x_0 + h']$ it is the red one. Each average is a difference quotient of the integral function, so $x_0$ is a Lebesgue point exactly when these averages tend to $f(x_0)$ as the window shrinks; by [[Measure Theory §18 Differentiation Theory#^thm-18-26|Theorem §18.26]] this happens at a.e. $x_0$.*
 
 > [!remark] Remark
 > If $\tilde{F}(x) = f(x) - f(a) - \int_a^x f'(t)\,dt$, then $\tilde{F}$ is differentiable a.e. with $\tilde{F}' = f' - f' = 0$ a.e. on $(a,b)$. The [[Measure Theory §18 Differentiation Theory#^ex-18-4|Cantor function]] shows $\tilde{F}$ can be non-constant: $\tilde{F} \equiv \varphi$ satisfies $\varphi' = 0$ a.e. but $\varphi(1) - \varphi(0) = 1$. So the FTC fails precisely when $\tilde{F}$ is a “Cantor-like” component.

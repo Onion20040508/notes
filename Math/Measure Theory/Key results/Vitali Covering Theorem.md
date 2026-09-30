@@ -15,6 +15,7 @@ tags: [measure-theory, hub]
 - [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|Proposition §9.2: Outer Measure of Closed Rectangles]]
 - [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Definition §9.4: Outer Measure]]
 - [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|Theorem §10.3: ℳ is a σ-Algebra with Countable Additivity]]
+- [[Measure Theory §18 Differentiation Theory#^def-18-1|Definition §18.1: Vitali Covering]]
 
 ## Used in (Measure Theory)
 - [[Measure Theory §18 Differentiation Theory#^thm-18-9|Theorem §18.9: Lebesgue's Differentiation Theorem for Monotone Functions]]

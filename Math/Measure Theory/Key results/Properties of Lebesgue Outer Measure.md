@@ -40,6 +40,7 @@ tags: [measure-theory, hub]
 - [[Measure Theory §18 Differentiation Theory#^thm-18-9|Theorem §18.9: Lebesgue's Differentiation Theorem for Monotone Functions]]
 - [[Measure Theory §18 Differentiation Theory#^thm-18-19|Theorem §18.19: AC Functions Map Null Sets to Null Sets]]
 - [[Measure Theory §18 Differentiation Theory#^thm-18-22|Theorem §18.22: Linear Maps Preserve Null Sets]]
+- [[Measure Theory §18 Differentiation Theory#^thm-18-27|Theorem §18.27]]
 - [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|Proposition §19.2: The Essential Supremum is Achieved A.E.]]
 - [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-18|Theorem §19.18: Riesz–Fischer Theorem]]
 

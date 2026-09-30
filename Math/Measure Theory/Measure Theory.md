@@ -39,9 +39,9 @@ graph TD
   X1 -.->|15| C4
   X1 -.->|6| C5
   X1 -.->|4| C6
-  X2 -.->|8| C3
+  X2 -.->|6| C3
   X2 -.->|2| C4
-  X2 -.->|3| C5
+  X2 -.->|2| C5
 ```
 
 ## Chapters
@@ -69,14 +69,14 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Monotone Convergence Theorem]] (2)
 
 **[[Topology]]**
-- [[Heine–Borel Theorem]] (3)
 - [[Topology §6 Closed Sets and Limit Points#^thm-6-1|Theorem §6.1: Properties of Closed Sets]] (3)
 - [[Topology §11 Metric Topology#^def-11-1|Definition §11.1: Metric]] (2)
 - [[Topology §9 Continuous Functions#^def-9-1|Definition §9.1: Continuous Function]] (1)
 - [[Topology §11 Metric Topology#^thm-11-9|Theorem §11.9: Continuity and Sequences]] (1)
 - [[Topology §9 Continuous Functions#^thm-9-4|Theorem §9.4: Rules for Continuous Functions]] (1)
 - [[Topology §15 Compact Spaces#^rem-15-1|Remark: Why Compactness Matters]] (1)
-- [[Compact Subspace of a Hausdorff Space is Closed]] (1)
+- [[Continuous Image of a Compact Space is Compact]] (1)
+- [[Heine–Borel Theorem]] (1)
 
 **[[Linear Algebra]]**
 - [[Triangle inequality]] (1)

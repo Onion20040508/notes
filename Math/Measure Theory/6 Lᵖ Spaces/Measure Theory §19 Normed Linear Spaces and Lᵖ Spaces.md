@@ -41,6 +41,9 @@ tags: [measure-theory, math551]
 
 ^ex-19-2
 
+![[m551-19-1.svg]]
+*Unit balls $\{\|x\| \leq 1\}$ in $\mathbb{R}^2$: the $\ell^1$ ball is the red diamond and the Euclidean ball the blue disk. The $\ell^4$ ball (dashed) and the square of $\max_i |x_i|$ (gray, the limit $p \to \infty$) show the balls of $\|x\|_p = (\sum_i |x_i|^p)^{1/p}$ growing toward the square as $p$ increases. The shapes differ, but each is convex and symmetric about $0$, as the triangle inequality and homogeneity require.*
+
 > [!remark]- Connections
 > - $\|\cdot\|_2$ is the inner-product norm of [[Linear Algebra 6A Inner Products and Norms#^ladr-6-8|LADR 6.8(a)]]; its metric is the Euclidean metric of [[Topology §11 Metric Topology#^ex-11-1|590 Ex. §11.1]].
 > - Comparing norms on $\mathbb{R}^n$: [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]] ($d$ vs. $d_\infty$).
@@ -136,6 +139,9 @@ tags: [measure-theory, math551]
 
 ^ex-19-5
 
+![[m551-19-2.svg]]
+*$L^p$ membership depends on $p$. On $(0,1)$ the function $g = 1/\sqrt{x}$ (blue) has finite area $\int_0^1 g = 2$, but squaring makes the singularity worse, and $g^2 = 1/x$ (red) has infinite area. On a set of finite measure, large $p$ punishes tall spikes, which is why $L^{p_2} \subseteq L^{p_1}$ for $p_1 < p_2$ there ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-6|Corollary §19.6]]).*
+
 ## $L^\infty$ and the Essential Supremum
 
 > [!definition] Definition §19.6: $L^\infty$ Space and Essential Supremum
@@ -228,6 +234,9 @@ tags: [measure-theory, math551]
 > It suffices to show $\ln(a^\theta\,b^{1-\theta}) \leq \ln(\theta\,a + (1 - \theta)\,b)$. The left side is $\theta\ln a + (1-\theta)\ln b$. Since $\ln$ is concave ($\ln(\theta\,a + (1 - \theta)\,b) \geq \theta\,\ln a + (1 - \theta)\,\ln b$ by Jensen's inequality), the result follows.
 
 ^pf-19-4
+
+![[m551-19-3.svg]]
+*Young's inequality is the concavity of $\ln$ (shown with $\theta = 0.35$). The chord from $(a, \ln a)$ to $(b, \ln b)$ (red) lies below the graph, so at $\theta a + (1-\theta)b$ the chord height $\theta\ln a + (1-\theta)\ln b = \ln(a^\theta b^{1-\theta})$ is below $\ln(\theta a + (1-\theta)b)$. Carrying the chord height across to the graph (dashed) locates $a^\theta b^{1-\theta}$ on the axis, to the left of $\theta a + (1-\theta)b$ because $\ln$ is increasing.*
 
 > [!theorem] Theorem §19.5: Hölder's Inequality
 > Let $f, g$ be measurable functions on $E$. Let $1 \leq p \leq \infty$ and $p'$ its [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|conjugate]]. Then:

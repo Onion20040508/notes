@@ -162,6 +162,9 @@ tags: [measure-theory, math551]
 
 ^thm-17-4
 
+![[m551-17-1.svg]]
+*A cross-section: the vertical line over $x \in \mathbb{R}^p$ meets $E$ in $E_x$ (red; here two segments). The theorem says that integrating the sizes $m(E_x)$ over $x$ recovers $m(E)$ (Cavalieri's principle); it is Tonelli's theorem for $f = \chi_E$.*
+
 > [!remark]- Connections
 > - This is Tonelli applied to $\chi_E$: see [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-7|Cross-Section Theorem (Restated)]] (§17.7) and its proof.
 > - Its geometric content is Cavalieri's principle; compare the [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-13|Layer Cake Formula]] (§17.13).
@@ -417,6 +420,9 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 
 *Uses:* [[Measure Theory §12 Measurable Functions#^prop-12-2|§12.2]], [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-8|§17.8]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]]
 
+![[m551-17-2.svg]]
+*Why a graph is null (here $n = 1$, $E = [0,1]$). Cut the range into bands $[k\delta, (k+1)\delta]$ (dotted). The part of the graph $G_E(f)$ (red) over $E_k = \{k\delta \leq f \leq (k+1)\delta\}$ lies in the box $E_k \times [k\delta, (k+1)\delta]$ of measure $\delta\, m(E_k)$. One band is highlighted: its $E_k$ (blue on the axis) has three pieces, since it is a level set rather than an interval. The boxes cover the graph, their total measure is $\delta \sum_k m(E_k)$, and $\delta$ can be taken arbitrarily small.*
+
 > [!remark]- Connections
 > - Jordan-content analogue in MATH 452: [[Multivariable Analysis §15 Multivariable Integration#^def-15-13|Jordan Measure Zero]] (452 Def. §15.13).
 
@@ -548,6 +554,9 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 > The layer cake formula is the foundation for defining $L^p$ norms ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5|Def. §19.5]]) in terms of distribution functions, and is crucial in interpolation theory and harmonic analysis.
 
 ^rem-17-5
+
+![[m551-17-3.svg]]
+*The layer cake formula for $p = 1$, with $E = [0,1]$. Slicing the region under $|f|$ (blue) horizontally at height $\lambda$ cuts out the superlevel set $\{|f| > \lambda\}$ (red, left); its measure is the value $f^*(\lambda)$ of the distribution function (red segment, right). Integrating the slice lengths over $\lambda$ gives the area under $f^*$, which is the area under $|f|$: Tonelli on the subgraph, sliced the other way.*
 
 > [!remark]- Connections
 > - The $p = 1$ case is the [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-11|Subgraph Theorem]] read with horizontal slices, i.e. the [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-7|Cross-Section Theorem]] applied to $\underline{G}(\vert f\vert)$ in the other variable.

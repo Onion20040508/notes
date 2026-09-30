@@ -7,9 +7,9 @@ tags: [chapter, measure-theory]
 # 5 Differentiation and the FTC
 ↑ [[Measure Theory]]
 
-**Builds on:** [[Measure Theory — 1 Set Theory Prerequisites|1 Set Theory Prerequisites]] (2), [[Measure Theory — 2 Topology of ℝⁿ|2 Topology of ℝⁿ]] (2), [[Measure Theory — 3 Measure Theory|3 Measure Theory]] (24), [[Measure Theory — 4 Integration Theory|4 Integration Theory]] (23), [[Measure Theory — 6 Lᵖ Spaces|6 Lᵖ Spaces]] (1)
+**Builds on:** [[Measure Theory — 1 Set Theory Prerequisites|1 Set Theory Prerequisites]] (2), [[Measure Theory — 2 Topology of ℝⁿ|2 Topology of ℝⁿ]] (2), [[Measure Theory — 3 Measure Theory|3 Measure Theory]] (26), [[Measure Theory — 4 Integration Theory|4 Integration Theory]] (27), [[Measure Theory — 6 Lᵖ Spaces|6 Lᵖ Spaces]] (1)
 **Used by:** [[Measure Theory — 6 Lᵖ Spaces|6 Lᵖ Spaces]] (3)
-**Builds on (other subjects):** [[Single Variable Analysis]] (6), [[Linear Algebra]] (2), [[Topology]] (3)
+**Builds on (other subjects):** [[Single Variable Analysis]] (6), [[Linear Algebra]] (2), [[Topology]] (2)
 
 ## Sections
 - [[Measure Theory §18 Differentiation Theory]]

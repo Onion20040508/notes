@@ -28,9 +28,6 @@ tags: [topology, hub]
 - [[Multivariable Analysis §15 Multivariable Integration#^prop-15-16|Proposition §15.16: C¹ Diffeomorphisms Preserve Jordan Measurability]]
 
 ## Used in (Measure Theory)
-- [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-2|Proposition §9.2: Outer Measure of Closed Rectangles]]
-- [[Measure Theory §9 Lebesgue Outer Measure#^rem-9-2|Remark]]
-- [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-11|Theorem §11.11: Approximation by Bounded Closed Sets and Finite Unions of Rectangles]]
 - [[Measure Theory §18 Differentiation Theory#^thm-18-20|Theorem §18.20: Continuous Maps Preserve Bounded Closed Sets]]
 
 ## Connections

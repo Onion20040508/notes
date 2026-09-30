@@ -13,8 +13,8 @@ tags: [measure-theory, hub]
 ## Its proof uses
 - [[Measure Theory §12 Measurable Functions#^prop-12-1|Proposition §12.1: Characteristic Functions of Measurable Sets]]
 - [[Measure Theory §12 Measurable Functions#^prop-12-2|Proposition §12.2: Equivalent Conditions for Measurability]]
-- [[Measure Theory §12 Measurable Functions#^thm-12-3|Theorem §12.3: Arithmetic Operations Preserve Measurability]]
 - [[Measure Theory §12 Measurable Functions#^def-12-3|Definition §12.3: Characteristic Function]]
+- [[Measure Theory §12 Measurable Functions#^thm-12-3|Theorem §12.3: Arithmetic Operations Preserve Measurability]]
 - [[Measure Theory §12 Measurable Functions#^def-12-6|Definition §12.6: Simple Function]]
 
 ## Used in (Measure Theory)

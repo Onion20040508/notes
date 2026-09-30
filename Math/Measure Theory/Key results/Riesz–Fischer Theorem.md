@@ -23,7 +23,7 @@ tags: [measure-theory, hub]
 - [[Single Variable Analysis §24 Uniform Convergence#^def-24-2|451 §24.2: Uniform Convergence]]
 
 ## Used in (Measure Theory)
-- [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-4|Example §19.4: Banach Spaces]]
+- (not cited later in the course)
 
 ## Connections
 - **Proof idea.** A Cauchy sequence has a subsequence whose consecutive differences have summable Lᵖ norms. By the absolute series test ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|§19.14]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-16|Lemma §19.16]]), the subsequence converges a.e. to some f. [[Fatou's Lemma]] then bounds the Lᵖ distance from f_k to f by the liminf over j of the distance from f_k to the j-th subsequence term, which is small. For p = ∞, the convergence is uniform off a null set ([[Single Variable Analysis §24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[Single Variable Analysis §10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Cauchy implies convergent]]).
