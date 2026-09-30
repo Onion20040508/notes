@@ -1,0 +1,15 @@
+% Figure from MATH 451 notes, section 29. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.42\textwidth,
+  xmin=0, xmax=2.05, ymin=0, ymax=1.35,
+  xtick={0.1,1.0,1.9}, xticklabels={$a$,$c$,$b$}, ytick=\empty, xlabel={}]
+  \addplot[black!55, dashed, thick] coordinates {(0.1,0.4338) (1.9,0.7218)};
+  \addplot[figB, very thick, domain=0.02:1.98, samples=120] {0.3+1.4*x-0.62*x^2};
+  \addplot[figR, very thick, domain=0.55:1.45] {1.08+0.16*(x-1)};
+  \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(0.1,0.4338) (1.9,0.7218)};
+  \addplot[only marks, mark=*, mark size=1.6pt, figR] coordinates {(1.0,1.08)};
+  \draw[black!50, dotted] (axis cs:1.0,0) -- (axis cs:1.0,1.08);
+  \node[font=\scriptsize, figR] at (axis cs:1.52,1.20) {slope $f'(c)$};
+  \node[font=\scriptsize, black!60] at (axis cs:1.45,0.48) {slope $\dfrac{f(b)-f(a)}{b-a}$};
+\end{axis}
+\end{tikzpicture}

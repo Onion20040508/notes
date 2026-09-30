@@ -1,0 +1,15 @@
+% Figure from MATH 451 notes, section 34. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.66\textwidth, height=0.40\textwidth,
+  xmin=0, xmax=3.3, ymin=0, ymax=1.6,
+  xtick={0.2,1.7,2.05}, xticklabels={$a$,$x$,$x+h$}, ytick=\empty, xlabel={}]
+  \addplot[draw=none, fill=figB!14, domain=0.2:1.7, samples=80] {0.6+0.4*sin(deg(1.8*x))+0.15*x} \closedcycle;
+  \addplot[draw=none, fill=figR!30, domain=1.7:2.05, samples=20] {0.6+0.4*sin(deg(1.8*x))+0.15*x} \closedcycle;
+  \addplot[black, very thick, domain=0:3.2, samples=140] {0.6+0.4*sin(deg(1.8*x))+0.15*x};
+  \draw[black!50, thin] (axis cs:1.7,0) -- (axis cs:1.7,0.988);
+  \draw[black!50, thin] (axis cs:2.05,0) -- (axis cs:2.05,0.917);
+  \node[font=\scriptsize, figB!80!black] at (axis cs:0.95,0.35) {$F(x)$};
+  \node[font=\scriptsize, figR] at (axis cs:1.88,1.22) {$\approx f(x)\,h$};
+  \draw[figR!70, -stealth, thin] (axis cs:1.88,1.14) -- (axis cs:1.88,0.85);
+\end{axis}
+\end{tikzpicture}

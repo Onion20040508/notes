@@ -1,0 +1,13 @@
+% Figure from MATH 451 notes, section 7. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.78\textwidth, height=0.36\textwidth,
+  xmin=0, xmax=23, ymin=0, ymax=2.0,
+  xtick={7}, xticklabels={$N$}, ytick={0.87,1,1.13},
+  yticklabels={$s-\varepsilon$,$s$,$s+\varepsilon$}, xlabel={$n$}]
+  \addplot[draw=none, fill=black!10] coordinates {(0,0.87) (23,0.87) (23,1.13) (0,1.13)};
+  \addplot[black!60, thin] coordinates {(0,1) (23,1)};
+  \draw[black!60, dashed] (axis cs:7,0) -- (axis cs:7,2.0);
+  \addplot[only marks, mark=*, mark size=1.4pt, figB] coordinates {(1,0.1000) (2,1.4500) (3,0.7000) (4,1.2250) (5,0.8200) (6,1.1500) (7,0.8714) (8,1.1125) (9,0.9000) (10,1.0900) (11,0.9182) (12,1.0750) (13,0.9308) (14,1.0643) (15,0.9400) (16,1.0562) (17,0.9471) (18,1.0500) (19,0.9526) (20,1.0450) (21,0.9571) (22,1.0409)};
+  \node[font=\scriptsize] at (axis cs:15,1.35) {all $n \geq N$: $|s_n - s| < \varepsilon$};
+\end{axis}
+\end{tikzpicture}

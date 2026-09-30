@@ -1,0 +1,25 @@
+% Figure from MATH 451 notes, section 15. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.75\textwidth, height=0.38\textwidth,
+  xmin=0.85, xmax=6.4, ymin=0, ymax=1.12,
+  xtick={1,2,3,4,5,6}, ytick={1}, yticklabels={$1$}, xlabel={$x$}]
+  \foreach \n in {1,...,5} {
+    \edef\temp{\noexpand\addplot[draw=figB, fill=figB!14, thin]
+      coordinates {(\n,0) (\n,{1/(\n+1)}) ({\n+1},{1/(\n+1)}) ({\n+1},0)};}
+    \temp
+  }
+  \foreach \n in {1,...,5} {
+    \edef\temp{\noexpand\addplot[figR, thick]
+      coordinates {(\n,{1/\n}) ({\n+1},{1/\n})};}
+    \temp
+    \edef\tempb{\noexpand\addplot[figR, thin]
+      coordinates {(\n,0) (\n,{1/\n})};}
+    \tempb
+  }
+  \addplot[figR, thin] coordinates {(6,0) (6,0.2)};
+  \addplot[black, very thick, domain=0.9:6.3, samples=150] {1/x}
+    node[pos=0.13, right, font=\small] {$y=f(x)$};
+  \node[figR, font=\scriptsize] at (axis cs:2.7,0.62) {$\sum f(n)$};
+  \node[figB!80!black, font=\scriptsize] at (axis cs:1.55,0.22) {$\sum f(n+1)$};
+\end{axis}
+\end{tikzpicture}

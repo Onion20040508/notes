@@ -1,0 +1,15 @@
+% Figure from MATH 451 notes, section 25. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.60\textwidth, height=0.40\textwidth,
+  xmin=0, xmax=1.1, ymin=0, ymax=8.8,
+  xtick={0,0.25,0.5,1}, xticklabels={$0$,$\tfrac14$,$\tfrac12$,$1$}, ytick={2,4,8}, xlabel={$x$}]
+  \addplot[figB!45, very thick] coordinates {(0,0) (0.5,2) (1,0)}
+     node[pos=0.5, above right, font=\scriptsize] {$n=2$};
+  \addplot[figB!75, very thick] coordinates {(0,0) (0.25,4) (0.5,0)}
+     node[pos=0.5, above right, font=\scriptsize] {$n=4$};
+  \addplot[figR, very thick] coordinates {(0,0) (0.125,8) (0.25,0)}
+     node[pos=0.5, right, font=\scriptsize] {$n=8$};
+  \node[font=\scriptsize] at (axis cs:0.72,6.2) {area $=1$ each:};
+  \node[font=\scriptsize] at (axis cs:0.72,5.2) {$\displaystyle\int_0^1 f_n = 1 \not\to 0$};
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,20 @@
+% Figure from MATH 451 notes, section 28. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, xmin=-0.33, xmax=0.33, ymin=-0.3, ymax=0.3,
+  xtick={-0.3,0.3}, ytick=\empty, xlabel={$x\sin\frac1x$}]
+  \addplot[black!35, dashed, domain=-0.33:0.33] {x};
+  \addplot[black!35, dashed, domain=-0.33:0.33] {-x};
+  \addplot[figB, domain=0.008:0.33, samples=900, line width=0.7pt] {x*sin(deg(1/x))};
+  \addplot[figB, domain=-0.33:-0.008, samples=900, line width=0.7pt] {x*sin(deg(1/x))};
+\end{axis}
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}
+\begin{axis}[nfig, xmin=-0.33, xmax=0.33, ymin=-0.1, ymax=0.1,
+  xtick={-0.3,0.3}, ytick=\empty, xlabel={$x^2\sin\frac1x$}]
+  \addplot[black!35, dashed, domain=-0.33:0.33, samples=60] {x^2};
+  \addplot[black!35, dashed, domain=-0.33:0.33, samples=60] {-x^2};
+  \addplot[figR, domain=0.008:0.33, samples=900, line width=0.7pt] {x^2*sin(deg(1/x))};
+  \addplot[figR, domain=-0.33:-0.008, samples=900, line width=0.7pt] {x^2*sin(deg(1/x))};
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,26 @@
+% Figure from MATH 451 notes, section 31. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, xmin=-4.7, xmax=4.7, ymin=-1.6, ymax=1.6,
+  xtick={-3.1416,0,3.1416}, xticklabels={$-\pi$,$0$,$\pi$}, ytick={-1,1}, xlabel={}]
+  \addplot[black, very thick, domain=-4.7:4.7, samples=200] {cos(deg(x))};
+  \addplot[figB!45, domain=-4.7:4.7, samples=100] {1-x^2/2};
+  \addplot[figB!75, domain=-4.7:4.7, samples=100] {1-x^2/2+x^4/24};
+  \addplot[figR, domain=-4.7:4.7, samples=140] {1-x^2/2+x^4/24-x^6/720+x^8/40320};
+  \node[font=\scriptsize, figB!60!black] at (axis cs:-2.1,-1.30) {$T_2$};
+  \node[font=\scriptsize, figB!90!black] at (axis cs:3.05,1.30) {$T_4$};
+  \node[font=\scriptsize, figR] at (axis cs:4.15,-0.75) {$T_8$};
+  \node[font=\scriptsize] at (axis cs:1.1,1.35) {$\cos x$};
+\end{axis}
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}
+\begin{axis}[nfig, xmin=-1.25, xmax=1.25, ymin=-0.12, ymax=0.75,
+  xtick={-1,0,1}, ytick={0.5}, xlabel={}]
+  \addplot[black, very thick, domain=0.06:1.25, samples=250] {exp(-1/(x*x))};
+  \addplot[black, very thick, domain=-1.25:-0.06, samples=250] {exp(-1/(x*x))};
+  \addplot[black, very thick] coordinates {(-0.06,0.0000000001) (0.06,0.0000000001)};
+  \addplot[figR, dashed, thick, domain=-1.25:1.25] {0};
+  \node[font=\scriptsize] at (axis cs:0.62,0.52) {$e^{-1/x^2}$};
+  \node[font=\scriptsize, figR] at (axis cs:-0.62,0.09) {Taylor series $\equiv 0$};
+\end{axis}
+\end{tikzpicture}
