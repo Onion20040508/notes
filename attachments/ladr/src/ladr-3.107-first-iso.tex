@@ -1,0 +1,9 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{amsmath,amssymb,tikz-cd}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}
+\begin{document}
+\begin{tikzcd}[column sep=large,row sep=large]
+V \arrow[r,"T"] \arrow[d,"\pi"',two heads] & W \\
+V/\operatorname{null}T \arrow[r,"\tilde T","\cong"',color=figB] & \operatorname{range}T \arrow[u,hook,"\iota"',color=figR]
+\end{tikzcd}
+\end{document}

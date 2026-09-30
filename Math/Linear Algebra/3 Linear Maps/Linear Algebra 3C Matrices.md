@@ -20,6 +20,11 @@ tags: [linear-algebra]
 > - Matrices of linear maps: [[Linear Algebra 3C Matrices#^ladr-3-31|Matrix of a linear map, M(T)]]. Vector space structure: [[Linear Algebra 3C Matrices#^ladr-3-34|Matrix addition]], [[Linear Algebra 3C Matrices#^ladr-3-36|Scalar multiplication of a matrix]], [[Linear Algebra 3C Matrices#^ladr-3-40|Dim Fᵐ’ⁿ = mn]].
 
 > [!example] 3.30 Aj,kequals entry in row j, column k of A (p. 69)
+> First index = row, second = column. For
+> $$
+> A=\begin{pmatrix}8&4&5-3i\\1&9&7\end{pmatrix},
+> $$
+> $A_{2,3}=7$ (row $2$, column $3$).
 
 ^ladr-3-30
 
@@ -41,10 +46,19 @@ tags: [linear-algebra]
 > - Depends on the bases: [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]]. Much of Chapters 5–8 is about choosing bases that make $\mathcal{M}(T)$ simple.
 
 > [!example] 3.32 The matrix of a linear map from F² to F³ (p. 70)
+> $T(x,y)=(x+3y,\ 2x+5y,\ 7x+9y)$ from $\F^2$ to $\F^3$. Since $T(1,0)=(1,2,7)$ and $T(0,1)=(3,5,9)$, the standard-basis matrix has these as its columns:
+> $$
+> \mathcal{M}(T)=\begin{pmatrix}1&3\\2&5\\7&9\end{pmatrix}.
+> $$
 
 ^ladr-3-32
 
 > [!example] 3.33 Matrix of the differentiation map from P3(R) to P2(R) (p. 70)
+> $D\in\Lin(\Poly_3(\R),\Poly_2(\R))$, $Dp=p'$. With the standard bases $1,x,x^2,x^3$ and $1,x,x^2$, since $(x^n)'=nx^{n-1}$:
+> $$
+> \mathcal{M}(D)=\begin{pmatrix}0&1&0&0\\0&0&2&0\\0&0&0&3\end{pmatrix}.
+> $$
+> Column $k$ holds the coordinates of $D(x^{k-1})$.
 
 ^ladr-3-33
 
@@ -80,6 +94,11 @@ tags: [linear-algebra]
 > - Matches scalar multiples of maps: [[Linear Algebra 3C Matrices#^ladr-3-38|The matrix of a scalar times a linear map]].
 
 > [!example] 3.37 Addition and scalar multiplication of matrices (p. 72)
+> $$
+> 2\begin{pmatrix}3&1\\-1&5\end{pmatrix}+\begin{pmatrix}4&2\\1&6\end{pmatrix}
+> =\begin{pmatrix}6&2\\-2&10\end{pmatrix}+\begin{pmatrix}4&2\\1&6\end{pmatrix}
+> =\begin{pmatrix}10&4\\-1&16\end{pmatrix}.
+> $$
 
 ^ladr-3-37
 
@@ -126,6 +145,12 @@ tags: [linear-algebra]
 > - Other ways to read the product: [[Linear Algebra 3C Matrices#^ladr-3-46|Entry of matrix product equals row times column]], [[Linear Algebra 3C Matrices#^ladr-3-48|Column of matrix product equals matrix times column]], [[Linear Algebra 3C Matrices#^ladr-3-50|Linear combination of columns]], [[Linear Algebra 3C Matrices#^ladr-3-51|Matrix multiplication as linear combinations of columns]].
 
 > [!example] 3.42 Matrix multiplication (p. 73)
+> A $3$-by-$2$ times a $2$-by-$4$ matrix is $3$-by-$4$:
+> $$
+> \begin{pmatrix}1&2\\3&4\\5&6\end{pmatrix}\begin{pmatrix}6&5&4&3\\2&1&0&-1\end{pmatrix}
+> =\begin{pmatrix}10&7&4&1\\26&19&12&5\\42&31&20&9\end{pmatrix}.
+> $$
+> Matrix multiplication is associative and distributive but not commutative.
 
 ^ladr-3-42
 
@@ -151,6 +176,9 @@ tags: [linear-algebra]
 ^ladr-3-44
 
 > [!example] 3.45 Aj,⋅equals j (p. 74)
+> For $A=\begin{pmatrix}8&4&5\\1&9&7\end{pmatrix}$: row $A_{2,\cdot}=\begin{pmatrix}1&9&7\end{pmatrix}$ and column $A_{\cdot,2}=\begin{pmatrix}4\\9\end{pmatrix}$.
+>
+> A $1$-by-$n$ times an $n$-by-$1$ matrix is $1$-by-$1$ and is identified with its entry: $\begin{pmatrix}3&4\end{pmatrix}\begin{pmatrix}6\\2\end{pmatrix}=26$. This is the $(2,1)$ entry of the product in [[Linear Algebra 3C Matrices#^ladr-3-42|3.42]] ([[Linear Algebra 3C Matrices#^ladr-3-46|3.46]]).
 
 ^ladr-3-45
 
@@ -179,6 +207,12 @@ tags: [linear-algebra]
 > - Combined with [[Linear Algebra 3C Matrices#^ladr-3-50|Linear combination of columns]] gives [[Linear Algebra 3C Matrices#^ladr-3-51|Matrix multiplication as linear combinations of columns]].
 
 > [!example] 3.49 Product of a 3-by-2 matrix and a 2-by-1 matrix (p. 75)
+> $$
+> \begin{pmatrix}1&2\\3&4\\5&6\end{pmatrix}\begin{pmatrix}5\\1\end{pmatrix}
+> =\begin{pmatrix}7\\19\\31\end{pmatrix}
+> =5\begin{pmatrix}1\\3\\5\end{pmatrix}+1\begin{pmatrix}2\\4\\6\end{pmatrix}:
+> $$
+> matrix times column is a combination of the columns, with coefficients from the column ([[Linear Algebra 3C Matrices#^ladr-3-50|3.50]]).
 
 ^ladr-3-49
 
@@ -226,6 +260,11 @@ tags: [linear-algebra]
 > - They are equal: [[Linear Algebra 3C Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]], hence [[Linear Algebra 3C Matrices#^ladr-3-58|Rank]]. Column rank $=\dim\range T$: [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]].
 
 > [!example] 3.53 Column rank and row rank of a 2-by-4 matrix (p. 77)
+> $A=\begin{pmatrix}4&7&1&8\\3&5&2&9\end{pmatrix}$.
+> - Column rank: the columns lie in $\F^{2,1}$, so the rank is $\le2$; $\binom43,\binom75$ are not multiples, so it is $2$.
+> - Row rank: the two rows are not multiples of each other, so it is $2$.
+>
+> Equal, as [[Linear Algebra 3C Matrices#^ladr-3-57|3.57]] guarantees in general.
 
 ^ladr-3-53
 
@@ -238,6 +277,10 @@ tags: [linear-algebra]
 > - Swaps row rank and column rank (used in [[Linear Algebra 3C Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]]). Complex analogue with conjugation: [[Linear Algebra 7A Self-Adjoint and Normal Operators#^ladr-7-7|Conjugate transpose, A∗]]; its map-level meaning is the dual map ([[Linear Algebra 3F Duality#^ladr-3-118|Dual map, T′]]) or adjoint ([[Linear Algebra 7A Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]).
 
 > [!example] 3.55 Transpose of a matrix (p. 78)
+> $$
+> A=\begin{pmatrix}5&-7\\3&8\\-4&2\end{pmatrix}\ (3\text{-by-}2),\qquad A^t=\begin{pmatrix}5&3&-4\\-7&8&2\end{pmatrix}\ (2\text{-by-}3).
+> $$
+> Rules: $(A+B)^t=A^t+B^t$, $(\lambda A)^t=\lambda A^t$, $(AC)^t=C^tA^t$ (order reverses, as for dual maps in [[Linear Algebra 3F Duality#^ladr-3-120|3.120]]).
 
 ^ladr-3-55
 

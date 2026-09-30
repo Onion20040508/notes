@@ -37,6 +37,13 @@ tags: [linear-algebra]
 > - The workhorse for every 'is a subspace' claim: [[Linear Algebra 1C Subspaces#^ladr-1-40|Sum of subspaces is the smallest containing subspace]], [[Linear Algebra 2A Span and Linear Independence#^ladr-2-6|Span is the smallest containing subspace]], [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-11|Null space, null T]], [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-16|Range]].
 
 > [!example] 1.35 Subspaces (p. 19)
+> - (a) $\{x\in\F^4 : x_3=5x_4+b\}$ is a subspace iff $b=0$ (for $b\ne0$ it misses $0$).
+> - (b) Continuous real functions on $[0,1]$ form a subspace of $\R^{[0,1]}$: sums and scalar multiples of continuous functions are continuous.
+> - (c) Differentiable functions on $\R$ form a subspace of $\R^\R$.
+> - (d) Differentiable $f$ on $(0,3)$ with $f'(2)=b$ form a subspace iff $b=0$ (closure under addition would give $f'(2)+g'(2)=2b$).
+> - (e) Complex sequences with limit $0$ form a subspace of $\C^\infty$.
+>
+> Always: $\{0\}$ is the smallest subspace and $V$ the largest; $\varnothing$ is not a subspace. Checking (b)–(e) is exactly the linearity of limits and derivatives from analysis (see [[Single Variable Analysis]]).
 
 ^ladr-1-35
 
@@ -52,10 +59,24 @@ tags: [linear-algebra]
 > - It is the smallest subspace containing all $V_k$: [[Linear Algebra 1C Subspaces#^ladr-1-40|Sum of subspaces is the smallest containing subspace]]. When representations are unique: [[Linear Algebra 1C Subspaces#^ladr-1-41|Direct sum, ⊕]].
 
 > [!example] 1.37 A sum of subspaces of F³ (p. 20)
+> In $\F^3$ let $U=\{(x,0,0)\}$ and $W=\{(0,y,0)\}$. Then
+> $$
+> U+W=\{(x,y,0):x,y\in\F\}.
+> $$
+> Two lines through $0$ sum to the plane containing them.
 
 ^ladr-1-37
 
 > [!example] 1.38 A sum of subspaces of F⁴ (p. 20)
+> In $\F^4$ let $U=\{(x,x,y,y)\}$ and $W=\{(x,x,x,y)\}$. Then
+> $$
+> U+W=\{(x,x,y,z):x,y,z\in\F\}.
+> $$
+> **$\subseteq$:** $(a,a,b,b)+(c,c,c,d)=(a+c,a+c,b+c,b+d)$ has equal first two coordinates.
+>
+> **$\supseteq$:** $(x,x,y,z)=(x,x,y,y)+(0,0,0,z-y)$, with the first vector in $U$ and the second in $W$.
+>
+> The typical way to compute a sum: guess the answer, then prove both inclusions.
 
 ^ladr-1-38
 
@@ -89,14 +110,33 @@ tags: [linear-algebra]
 > - Physics: decomposing a state space into sectors (eigenspaces of a conserved quantity) is a direct-sum decomposition.
 
 > [!example] 1.42 A direct sum of two subspaces (p. 21)
+> In $\F^3$ let $U=\{(x,y,0)\}$ and $W=\{(0,0,z)\}$. Then $\F^3=U\oplus W$: every $(x,y,z)=(x,y,0)+(0,0,z)$, and the decomposition is unique since $U\cap W=\{0\}$ ([[Linear Algebra 1C Subspaces#^ladr-1-46|1.46]]).
 
 ^ladr-1-42
 
 > [!example] 1.43 A direct sum of multiple subspaces (p. 21)
+> Let $V_k\subseteq\F^n$ consist of the vectors that are $0$ except possibly in slot $k$. Then
+> $$
+> \F^n=V_1\oplus\dots\oplus V_n ,
+> $$
+> since $(x_1,\dots,x_n)=(x_1,0,\dots,0)+\dots+(0,\dots,0,x_n)$ and the pieces are forced by the coordinates. Coordinates *are* a direct-sum decomposition.
 
 ^ladr-1-43
 
 > [!example] 1.44 A sum that is not a direct sum (p. 21)
+> In $\F^3$ let
+> $$
+> V_1=\{(x,y,0)\},\quad V_2=\{(0,0,z)\},\quad V_3=\{(0,y,y)\}.
+> $$
+> Then $\F^3=V_1+V_2+V_3$, since $(x,y,z)=(x,y,0)+(0,0,z)+(0,0,0)$. But the sum is **not** direct:
+> $$
+> (0,0,0)=(0,1,0)+(0,0,1)+(0,-1,-1)
+> $$
+> is a second way to write $0$ (compare [[Condition for a direct sum|1.45]]).
+>
+> Note that every pairwise intersection $V_j\cap V_k$ is $\{0\}$. So for three or more subspaces, pairwise trivial intersections do **not** give a direct sum; [[Linear Algebra 1C Subspaces#^ladr-1-46|1.46]] is special to two subspaces. The same thing happens with three lines in $\R^2$:
+>
+> ![[ladr-1.44-three-lines.svg|360]]
 
 ^ladr-1-44
 

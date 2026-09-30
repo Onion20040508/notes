@@ -57,6 +57,11 @@ tags: [linear-algebra]
 > - Complex scalars are what guarantee eigenvalues: [[Existence of eigenvalues]], versus [[Linear Algebra 5B The Minimal Polynomial#^ladr-5-34|Operators on odd-dimensional vector spaces have eigenvalues]] over $\R$.
 
 > [!example] 1.23 F^∞ (p. 13)
+> $\F^\infty$ is the set of all sequences $(x_1,x_2,\dots)$ with entries in $\F$, with termwise operations
+> $$
+> (x_1,x_2,\dots)+(y_1,y_2,\dots)=(x_1+y_1,x_2+y_2,\dots),\qquad \lambda(x_1,x_2,\dots)=(\lambda x_1,\lambda x_2,\dots).
+> $$
+> It is a vector space ([[Linear Algebra 1B Definition of Vector Space#^ladr-1-20|1.20]]) with zero the all-$0$ sequence. It is the standard home of infinite-dimensional phenomena, e.g. the shift operators (see [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]]).
 
 ^ladr-1-23
 
@@ -65,6 +70,11 @@ tags: [linear-algebra]
 ^ladr-1-24
 
 > [!example] 1.25 FS is a vector space (p. 14)
+> For a nonempty set $S$, $\F^S$ (functions $S\to\F$) with pointwise operations $(f+g)(x)=f(x)+g(x)$, $(\lambda f)(x)=\lambda f(x)$ is a vector space. Its zero is the function $0(x)=0$ and $(-f)(x)=-f(x)$.
+>
+> **Everything is a function space.** $\F^n=\F^{\{1,\dots,n\}}$ (write $x(k)$ for $x_k$) and $\F^\infty=\F^{\{1,2,\dots\}}$. Elements of a vector space may be lists, functions, or stranger objects; the axioms are all that matter.
+>
+> Physics: a wave function $\psi:\R^3\to\C$ is an element of such a function space (before any square-integrability condition is imposed).
 
 ^ladr-1-25
 

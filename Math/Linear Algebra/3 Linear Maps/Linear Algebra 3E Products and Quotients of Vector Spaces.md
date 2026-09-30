@@ -36,10 +36,16 @@ tags: [linear-algebra]
 > - Same pattern as $\F^n=\F\times\dots\times\F$ ([[Linear Algebra 1A Rⁿ and Cⁿ#^ladr-1-11|Fⁿ, coordinate]]).
 
 > [!example] 3.90 R (p. 97)
+> $\R^2\times\R^3\ne\R^5$: elements of the first are pairs $\big((x_1,x_2),(x_3,x_4,x_5)\big)$, elements of the second are lists of length $5$. But
+> $$
+> \big((x_1,x_2),(x_3,x_4,x_5)\big)\longmapsto(x_1,x_2,x_3,x_4,x_5)
+> $$
+> is an isomorphism so natural that one usually treats it as a relabeling.
 
 ^ladr-3-90
 
 > [!example] 3.91 A basis of P2(R) × R2 (p. 97)
+> $(1,(0,0)),\ (x,(0,0)),\ (x^2,(0,0)),\ (0,(1,0)),\ (0,(0,1))$ is a basis of $\Poly_2(\R)\times\R^2$, as in the proof of [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-92|3.92]]: $\dim=3+2=5$.
 
 ^ladr-3-91
 
@@ -104,6 +110,7 @@ tags: [linear-algebra]
 ^ladr-3-95
 
 > [!example] 3.96 Sum of a vector and a one-dimensional subspace of R² (p. 99)
+> $U=\{(x,2x):x\in\R\}$ is the line through $0$ of slope $2$. The translate $(17,20)+U$ is the parallel line through $(17,20)$. Since $(10,20)\in U$, it is $U$ moved $7$ units to the right.
 
 ^ladr-3-96
 
@@ -119,6 +126,8 @@ tags: [linear-algebra]
 > - Translates of a subspace partition $V$: [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]]. They are the points of [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]]. Solution sets of solvable inhomogeneous systems are translates of the null space.
 
 > [!example] 3.98 Translates (p. 99)
+> - For the line $U$ of [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-96|3.96]], the translates of $U$ are all lines of slope $2$; for any line $U$ through $0$ in $\R^2$, they are all lines parallel to $U$.
+> - For the plane $U=\{(x,y,0)\}$ in $\R^3$, the translates are the planes parallel to the $xy$-plane; likewise for any plane through $0$ in $\R^3$.
 
 ^ladr-3-98
 
@@ -135,6 +144,13 @@ tags: [linear-algebra]
 > - Same construction as quotient groups and rings in abstract algebra (MATH 591 algebra part): $U$ plays the role of the normal subgroup/ideal.
 
 > [!example] 3.100 Quotient spaces (p. 100)
+> - $U=\{(x,2x)\}$: $\R^2/U$ is the set of all lines of slope $2$. Each line is **one point** of the quotient.
+> - $U$ a line through $0$ in $\R^3$: $\R^3/U$ is the set of lines parallel to $U$ (a $2$-dimensional space, [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-105|3.105]]).
+> - $U$ a plane through $0$ in $\R^3$: $\R^3/U$ is the set of planes parallel to $U$ ($1$-dimensional).
+>
+> Two vectors give the same point of $V/U$ exactly when their difference lies in $U$ ([[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-101|3.101]]):
+>
+> ![[ladr-3.100-translates.svg|380]]
 
 ^ladr-3-100
 
@@ -240,3 +256,12 @@ tags: [linear-algebra]
 > (d) By (b) and (c), $\tilde T$ viewed as a map onto $\range T$ is an isomorphism.
 
 *Uses:* [[Linear Algebra 3E Products and Quotients of Vector Spaces#^ladr-3-101|3.101]]
+
+%% ex:3.107-diff %%
+> [!example] Differentiation, and "up to a constant"
+> Let $D\in\Lin(\Poly_3(\R))$, $Dp=p'$. Then $\nullsp D$ is the constants and $\range D=\Poly_2(\R)$. The quotient $\Poly_3(\R)/\nullsp D$ is "polynomials up to an additive constant", and $\tilde D(p+\nullsp D)=p'$ is an isomorphism onto $\Poly_2(\R)$. Its inverse sends $q$ to the coset $\int q+\nullsp D$, i.e. "$\int q+C$": an indefinite integral is precisely an element of this quotient. Dimensions: $4-1=3$, as [[Fundamental theorem of linear maps|3.21]] predicts.
+>
+> The general picture: $T$ factors as surjection, isomorphism, inclusion.
+>
+> ![[ladr-3.107-first-iso.svg|320]]
+

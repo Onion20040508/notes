@@ -20,6 +20,13 @@ tags: [linear-algebra]
 > - Called the kernel elsewhere; quotient by it: [[First isomorphism theorem]].
 
 > [!example] 3.12 Null space (p. 59)
+> - The zero map $V\to W$ has $\nullsp 0=V$.
+> - $\varphi\in\Lin(\C^3,\C)$, $\varphi(z_1,z_2,z_3)=z_1+2z_2+3z_3$: $\nullsp\varphi$ is the plane $\{z_1+2z_2+3z_3=0\}$.
+> - Differentiation $D$ on $\Poly(\R)$: $\nullsp D$ is the constant polynomials.
+> - Multiplication by $x^2$: $\nullsp T=\{0\}$, since $x^2p(x)=0$ for all $x$ forces $p=0$.
+> - Backward shift on $\F^\infty$: $\nullsp T=\{(a,0,0,\dots):a\in\F\}$.
+>
+> "Null" means zero; elsewhere this is called the *kernel*.
 
 ^ladr-3-12
 
@@ -75,6 +82,9 @@ tags: [linear-algebra]
 > - A subspace: [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-18|The range is a subspace]]. Surjectivity: [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-19|Surjective]]. Dimension = column rank of the matrix: [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]].
 
 > [!example] 3.17 Range (p. 61)
+> - The zero map has $\range 0=\{0\}$.
+> - $T(x,y)=(2x,5y,x+y)$ from $\R^2$ to $\R^3$: $\range T=\{(2x,5y,x+y):x,y\in\R\}$, a plane in $\R^3$.
+> - Differentiation $D$ on $\Poly(\R)$: $\range D=\Poly(\R)$, since every polynomial has a polynomial antiderivative.
 
 ^ladr-3-17
 
@@ -103,6 +113,7 @@ tags: [linear-algebra]
 > - Dimension obstruction: [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]]. Equivalent to injectivity when dimensions agree: [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]].
 
 > [!example] 3.20 Surjectivity depends on the target space (p. 62)
+> $D\in\Lin(\Poly_5(\R))$, $Dp=p'$, is not surjective: $x^5$ is not in the range, since derivatives of polynomials of degree $\le5$ have degree $\le4$. But $S\in\Lin(\Poly_5(\R),\Poly_4(\R))$, $Sp=p'$, is surjective. Surjectivity is a property of the map *together with its target* ([[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-19|3.19]]).
 
 ^ladr-3-20
 
@@ -156,6 +167,7 @@ tags: [linear-algebra]
 > - Linear equations: [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-26|Homogeneous system of linear equations]].
 
 > [!example] 3.23 Linear map from F⁴ to F³ is not injective (p. 63)
+> $T(z_1,z_2,z_3,z_4)=(\sqrt7z_1+\pi z_2+z_4,\ 97z_1+3z_2+2z_3,\ z_2+6z_3+7z_4)$ maps $\F^4\to\F^3$, so it is not injective by [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-22|3.22]], with no computation at all. This is the typical use of [[Fundamental theorem of linear maps|3.21]]: dimension counts decide injectivity and surjectivity before any calculation.
 
 ^ladr-3-23
 

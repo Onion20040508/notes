@@ -29,6 +29,16 @@ tags: [linear-algebra]
 ^ladr-3-2
 
 > [!example] 3.3 Linear maps (p. 52)
+> The standard list, used throughout the book:
+> - **zero** $0\in\Lin(V,W)$, $0v=0$ (the $0$ on the left is a map, on the right a vector of $W$);
+> - **identity** $I\in\Lin(V)$, $Iv=v$;
+> - **differentiation** $D\in\Lin(\Poly(\R))$, $Dp=p'$: linearity *is* the rules $(f+g)'=f'+g'$, $(\lambda f)'=\lambda f'$;
+> - **integration** $T\in\Lin(\Poly(\R),\R)$, $Tp=\int_0^1p$;
+> - **multiplication by $x^2$** $T\in\Lin(\Poly(\R))$, $(Tp)(x)=x^2p(x)$;
+> - **backward shift** $T\in\Lin(\F^\infty)$, $T(x_1,x_2,x_3,\dots)=(x_2,x_3,\dots)$;
+> - **from $\R^3$ to $\R^2$** $T(x,y,z)=(2x-y+3z,\ 7x+5y-6z)$;
+> - **from $\F^n$ to $\F^m$** $T(x_1,\dots,x_n)=\big(\sum_kA_{1,k}x_k,\dots,\sum_kA_{m,k}x_k\big)$ for fixed scalars $A_{j,k}$; every linear map $\F^n\to\F^m$ has this form (this is where matrices come from, [[Linear Algebra 3C Matrices#^ladr-3-31|3.31]]);
+> - **composition** for fixed $q\in\Poly(\R)$, $(Tp)(x)=p(q(x))$.
 
 ^ladr-3-3
 
@@ -92,6 +102,11 @@ tags: [linear-algebra]
 > - Commuting operators: [[Linear Algebra 5E Commuting Operators#^ladr-5-71|Commute]].
 
 > [!example] 3.9 Two noncommuting linear maps from P(R) to P(R) (p. 56)
+> With $D$ = differentiation and $T$ = multiplication by $x^2$ on $\Poly(\R)$:
+> $$
+> \big((TD)p\big)(x)=x^2p'(x),\qquad \big((DT)p\big)(x)=x^2p'(x)+2xp(x).
+> $$
+> So $TD\ne DT$: the order of operations matters ([[Linear Algebra 3A Vector Space of Linear Maps#^ladr-3-8|3.8]]). The same computation with multiplication by $x$ gives $DT-TD=I$, the finite-dimensionally impossible commutation relation ([[Linear Algebra 3A Vector Space of Linear Maps#^ladr-3-8|3.8]]).
 
 ^ladr-3-9
 

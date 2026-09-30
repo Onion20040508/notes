@@ -1,0 +1,13 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{amsmath,amssymb,tikz-cd}
+\definecolor{figB}{RGB}{31,90,166}\definecolor{figR}{RGB}{176,48,48}
+\begin{document}
+\begin{tikzcd}[column sep=large,row sep=large]
+V \arrow[r,"T"] \arrow[rd,"T'(\varphi)\,=\,\varphi\circ T"',color=figR] & W \arrow[d,"\varphi",color=figB]\\
+ & \mathbb{F}
+\end{tikzcd}
+\qquad\qquad
+\begin{tikzcd}[column sep=large]
+V' & W' \arrow[l,"T'"']
+\end{tikzcd}
+\end{document}

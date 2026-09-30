@@ -16,6 +16,15 @@ tags: [linear-algebra]
 > - Characterization by unique coordinates: [[Linear Algebra 2B Bases#^ladr-2-28|Criterion for basis]]. Existence: [[Linear Algebra 2B Bases#^ladr-2-31|Basis of finite-dimensional vector space]]. All bases have the same length: [[Linear Algebra 2C Dimension#^ladr-2-34|Basis length does not depend on basis]].
 
 > [!example] 2.27 Bases (p. 39)
+> - (a) $e_1,\dots,e_n$ is a basis of $\F^n$: the **standard basis**.
+> - (b) $(1,2),(3,5)$ is a basis of $\F^2$ (independent since neither is a multiple of the other; see [[Linear Algebra 2C Dimension#^ladr-2-38|2.38]]).
+> - (c) $(1,2,-4),(7,-5,6)$ is independent in $\F^3$ but not a basis: two vectors cannot span $\F^3$ ([[Length of linearly independent list ≤ length of spanning list|2.22]]).
+> - (d) $(1,2),(3,5),(4,13)$ spans $\F^2$ but is not a basis: three vectors in $\F^2$ are dependent.
+> - (e) $(1,1,0),(0,0,1)$ is a basis of $\{(x,x,y)\}$.
+> - (f) $(1,-1,0),(1,0,-1)$ is a basis of $\{(x,y,z):x+y+z=0\}$: indeed $(x,y,-x-y)=-y(1,-1,0)+(x+y)(1,0,-1)$, and the two vectors are independent.
+> - (g) $1,z,\dots,z^m$ is a basis of $\Poly_m(\F)$: the **standard basis**.
+>
+> Bases are far from unique: $(7,5),(-4,9)$ is another basis of $\F^2$.
 
 ^ladr-2-27
 

@@ -32,6 +32,9 @@ tags: [linear-algebra]
 > - Well defined by [[Linear Algebra 2C Dimension#^ladr-2-34|Basis length does not depend on basis]]. Classifies spaces up to isomorphism: [[Dimension shows whether vector spaces are isomorphic]].
 
 > [!example] 2.36 Dimensions (p. 44)
+> - $\dim\F^n=n$ (standard basis).
+> - $\dim\Poly_m(\F)=m+1$ (basis $1,z,\dots,z^m$).
+> - $\dim\{(x,x,y)\}=2$ and $\dim\{(x,y,z):x+y+z=0\}=2$, by (e) and (f) of [[Linear Algebra 2B Bases#^ladr-2-27|2.27]].
 
 ^ladr-2-36
 
@@ -75,10 +78,18 @@ tags: [linear-algebra]
 > - Typical use: to prove $U=V$, show $U\subseteq V$ and compare dimensions.
 
 > [!example] 2.40 A basis of F² (p. 46)
+> $(5,7),(4,3)$ is independent in $\F^2$ (neither is a multiple of the other), and $\dim\F^2=2$. By [[Linear Algebra 2C Dimension#^ladr-2-38|2.38]] it is a basis; spanning comes for free.
 
 ^ladr-2-40
 
 > [!example] 2.41 A basis of a subspace of P3(R) (p. 46)
+> Find a basis of $U=\{p\in\Poly_3(\R):p'(5)=0\}$.
+>
+> $1$, $(x-5)^2$, $(x-5)^3$ lie in $U$. They are independent: in $a+b(x-5)^2+c(x-5)^3=0$, the $x^3$ coefficient gives $c=0$, then the $x^2$ coefficient gives $b=0$, then $a=0$. So $3\le\dim U\le\dim\Poly_3(\R)=4$ ([[Linear Algebra 2C Dimension#^ladr-2-37|2.37]]).
+>
+> $x\notin U$ (its derivative is $1$), so $U\ne\Poly_3(\R)$ and $\dim U\ne4$ ([[Linear Algebra 2C Dimension#^ladr-2-39|2.39]]). Hence $\dim U=3$, and the independent list $1,(x-5)^2,(x-5)^3$ of length $3$ is a basis ([[Linear Algebra 2C Dimension#^ladr-2-38|2.38]]).
+>
+> The strategy (squeeze $\dim U$ between an independent list and the ambient space, then use the right-length results) is the standard way to find bases of subspaces cut out by conditions.
 
 ^ladr-2-41
 

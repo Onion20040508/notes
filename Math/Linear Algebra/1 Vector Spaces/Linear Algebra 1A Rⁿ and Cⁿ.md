@@ -24,6 +24,11 @@ tags: [linear-algebra]
 > - Physics: quantum state spaces are complex vector spaces, which is one reason the whole theory is developed over $\F=\R$ or $\C$.
 
 > [!example] 1.2 Complex arithmetic (p. 2)
+> Using the distributive and commutative properties of [[Linear Algebra 1A Rⁿ and Cⁿ#^ladr-1-3|1.3]]:
+> $$
+> (2+3i)(4+5i)=8+10i+12i+15i^2=8+22i-15=-7+22i .
+> $$
+> This is the "pretend $i^2=-1$ and expand" recipe from [[Linear Algebra 1A Rⁿ and Cⁿ#^ladr-1-1|1.1]].
 
 ^ladr-1-2
 
@@ -52,6 +57,11 @@ tags: [linear-algebra]
 > - Uniqueness of inverses is what makes [[Linear Algebra 1A Rⁿ and Cⁿ#^ladr-1-5|−α, subtraction, 1∕α, division]] well defined.
 
 > [!example] 1.4 Commutativity of complex multiplication (p. 2)
+> For $\alpha=a+bi$, $\beta=c+di$:
+> $$
+> \alpha\beta=(ac-bd)+(ad+bc)i,\qquad \beta\alpha=(ca-db)+(cb+da)i .
+> $$
+> The two agree because real multiplication and addition are commutative. Every property in [[Linear Algebra 1A Rⁿ and Cⁿ#^ladr-1-3|1.3]] is proved this way: reduce to $\R$.
 
 ^ladr-1-4
 
@@ -73,6 +83,7 @@ tags: [linear-algebra]
 ^ladr-1-6
 
 > [!example] 1.7 R (p. 4)
+> $\R^2=\{(x,y):x,y\in\R\}$ (the plane) and $\R^3=\{(x,y,z):x,y,z\in\R\}$ (ordinary space). The goal of the next definitions is to replace $2$ or $3$ by any $n$, and $\R$ by $\F$.
 
 ^ladr-1-7
 
@@ -89,6 +100,8 @@ tags: [linear-algebra]
 > - Finite length is built into [[Linear Algebra 2A Span and Linear Independence#^ladr-2-9|Finite-dimensional vector space]]: finite-dimensional means some *list* spans.
 
 > [!example] 1.9 Lists versus sets (p. 4)
+> - $(3,5)\ne(5,3)$ as lists, but $\{3,5\}=\{5,3\}$ as sets: **order** matters for lists.
+> - $(4,4)\ne(4,4,4)$ (different lengths), but $\{4,4\}=\{4,4,4\}=\{4\}$: **repetition** matters for lists.
 
 ^ladr-1-9
 
@@ -106,6 +119,7 @@ tags: [linear-algebra]
 > - Every $n$-dimensional space over $\F$ is isomorphic to $\F^n$: [[Dimension shows whether vector spaces are isomorphic]].
 
 > [!example] 1.12 C⁴ (p. 6)
+> $\C^4=\{(z_1,z_2,z_3,z_4):z_k\in\C\}$. It cannot be pictured ($\C^4$ is "8 real dimensions"), but its algebra is exactly as easy as that of $\R^2$. That is the point of working with $\F^n$ abstractly.
 
 ^ladr-1-12
 
@@ -141,6 +155,9 @@ tags: [linear-algebra]
 ^ladr-1-15
 
 > [!example] 1.16 Context determines which 0 is intended (p. 6)
+> In "$x+0=x$ for all $x\in\F^n$", the $0$ must be the list $(0,\dots,0)\in\F^n$: adding the *number* $0$ to a list is not defined. Context decides which $0$ is meant.
+>
+> A vector $v=(a,b)\in\R^2$ can be viewed as a point or as an arrow from the origin; as an arrow it may be moved parallel to itself without change, which is how vector addition is pictured (tip to tail).
 
 ^ladr-1-16
 

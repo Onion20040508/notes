@@ -25,6 +25,7 @@ tags: [linear-algebra]
 *Uses:* [[Fundamental theorem of algebra, first version|4.12]], [[Linear Algebra 4 Polynomials#^ladr-4-6|4.6]], [[Linear Algebra 5A Invariant Subspaces#^ladr-5-17|5.17]]
 
 > [!example] 5.20 An operator on a complex vector space with no eigenvalues (p. 143)
+> $T\in\Lin(\Poly(\C))$, $(Tp)(z)=zp(z)$. For $p\ne0$, $\deg Tp=\deg p+1$, so $Tp$ is never a multiple of $p$: $T$ has **no eigenvalues**, even over $\C$. This does not contradict [[Existence of eigenvalues|5.19]] because $\Poly(\C)$ is infinite-dimensional. (Compare the position operator $\hat x$ in quantum mechanics, which has no eigenvectors in $L^2$.)
 
 ^ladr-5-20
 
@@ -67,6 +68,15 @@ tags: [linear-algebra]
 > - Well defined by [[Existence, uniqueness, and degree of minimal polynomial]]. Eigenvalues are its zeros ([[Linear Algebra 5B The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]]); it divides every annihilating polynomial ([[Linear Algebra 5B The Minimal Polynomial#^ladr-5-29|Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]); diagonalizability criterion: [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-62|Necessary and sufficient condition for diagonalizability]].
 
 > [!example] 5.26 Minimal polynomial of an operator on F⁵ (p. 146)
+> Let $T\in\Lin(\F^5)$ have matrix (standard basis)
+> $$
+> \mathcal{M}(T)=\begin{pmatrix}0&0&0&0&-3\\1&0&0&0&6\\0&1&0&0&0\\0&0&1&0&0\\0&0&0&1&0\end{pmatrix}.
+> $$
+> Use the fast method of [[Linear Algebra 5B The Minimal Polynomial#^ladr-5-24|5.24]] with $v=e_1$: $Te_1=e_2$, $T^2e_1=e_3$, $T^3e_1=e_4$, $T^4e_1=e_5$, and $T^5e_1=Te_5=-3e_1+6e_2$. So
+> $$
+> 3e_1-6Te_1+T^5e_1=0 .
+> $$
+> Since $e_1,Te_1,\dots,T^4e_1$ is the standard basis (independent), this is the only relation of degree $\le5$, and the minimal polynomial is $z^5-6z+3$. (A matrix of this shape is a *companion matrix*: its last column lists the coefficients.)
 
 ^ladr-5-26
 
@@ -90,6 +100,11 @@ tags: [linear-algebra]
 > - Alternative proof of [[Linear Algebra 5A Invariant Subspaces#^ladr-5-12|Operator cannot have more eigenvalues than dimension of vector space]] via [[Linear Algebra 4 Polynomials#^ladr-4-8|Degree m implies at most m zeros]]. Invertibility test: [[Linear Algebra 5B The Minimal Polynomial#^ladr-5-32|T not invertible ⟺ constant term of minimal polynomial of T is 0]].
 
 > [!example] 5.28 An operator whose eigenvalues cannot be found exactly (p. 147)
+> $T(z_1,\dots,z_5)=(-3z_5,\ z_1+6z_5,\ z_2,\ z_3,\ z_4)$ on $\C^5$ is the operator of [[Linear Algebra 5B The Minimal Polynomial#^ladr-5-26|5.26]], with minimal polynomial $z^5-6z+3$. Its eigenvalues are the zeros of that polynomial ([[Linear Algebra 5B The Minimal Polynomial#^ladr-5-27|5.27]]), and none of them can be written with radicals. Numerically they are approximately
+> $$
+> -1.67,\quad 0.51,\quad 1.40,\quad -0.12\pm1.59\,i .
+> $$
+> The nonreal pair is conjugate, as [[Linear Algebra 4 Polynomials#^ladr-4-14|4.14]] predicts for real coefficients. Eigenvalues exist ([[Existence of eigenvalues|5.19]]) but in general can only be computed numerically.
 
 ^ladr-5-28
 

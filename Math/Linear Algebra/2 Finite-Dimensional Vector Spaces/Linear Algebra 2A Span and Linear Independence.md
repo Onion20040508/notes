@@ -20,6 +20,8 @@ tags: [linear-algebra]
 > - The set of all of them: [[Linear Algebra 2A Span and Linear Independence#^ladr-2-4|Span]].
 
 > [!example] 2.3 Linear combinations in R³ (p. 28)
+> - $(17,-4,2)=6(2,1,-3)+5(1,-2,4)$, so it is a linear combination of $(2,1,-3),(1,-2,4)$.
+> - $(17,-4,5)$ is not. Solving $2a_1+a_2=17$, $a_1-2a_2=-4$ forces $a_1=6$, $a_2=5$, but then the third coordinate is $-3\cdot6+4\cdot5=2\ne5$.
 
 ^ladr-2-3
 
@@ -36,6 +38,7 @@ tags: [linear-algebra]
 > - It is the smallest subspace containing the list: [[Linear Algebra 2A Span and Linear Independence#^ladr-2-6|Span is the smallest containing subspace]]. Spanning: [[Linear Algebra 2A Span and Linear Independence#^ladr-2-7|Spans]].
 
 > [!example] 2.5 Span (p. 29)
+> By [[Linear Algebra 2A Span and Linear Independence#^ladr-2-3|2.3]]: $(17,-4,2)\in\Span\big((2,1,-3),(1,-2,4)\big)$ but $(17,-4,5)\notin\Span\big((2,1,-3),(1,-2,4)\big)$. The span is a plane through $0$ in $\F^3$, and the second vector lies off it.
 
 ^ladr-2-5
 
@@ -65,6 +68,11 @@ tags: [linear-algebra]
 > - Defines [[Linear Algebra 2A Span and Linear Independence#^ladr-2-9|Finite-dimensional vector space]]; half of [[Linear Algebra 2B Bases#^ladr-2-26|Basis]].
 
 > [!example] 2.8 A list that spans Fⁿ (p. 30)
+> The list $e_1=(1,0,\dots,0),\ \dots,\ e_n=(0,\dots,0,1)$ spans $\F^n$, since
+> $$
+> (x_1,\dots,x_n)=x_1e_1+\dots+x_ne_n .
+> $$
+> So $\F^n$ is finite-dimensional ([[Linear Algebra 2A Span and Linear Independence#^ladr-2-9|2.9]]).
 
 ^ladr-2-8
 
@@ -118,6 +126,7 @@ tags: [linear-algebra]
 > - Physics: wave-function spaces are infinite-dimensional, so finite-dimensional results such as [[Existence of eigenvalues]] or [[Fundamental theorem of linear maps]] cannot be assumed there without extra structure.
 
 > [!example] 2.14 P(F) is infinite-dimensional. (p. 31)
+> $\Poly(\F)$ is infinite-dimensional ([[Linear Algebra 2A Span and Linear Independence#^ladr-2-13|2.13]]): given any finite list of polynomials, let $m$ be the largest degree occurring. Every polynomial in the span has degree $\le m$, so $z^{m+1}$ is not in the span. No finite list spans.
 
 ^ladr-2-14
 
@@ -133,6 +142,10 @@ tags: [linear-algebra]
 > - Negation: [[Linear Algebra 2A Span and Linear Independence#^ladr-2-17|Linearly dependent]]. Same 'uniqueness at $0$' pattern as [[Condition for a direct sum]]. Half of [[Linear Algebra 2B Bases#^ladr-2-26|Basis]].
 
 > [!example] 2.16 Linearly independent lists (p. 32)
+> - (a) $(1,0,0,0),(0,1,0,0),(0,0,1,0)$ is linearly independent in $\F^4$: $a_1(1,0,0,0)+a_2(0,1,0,0)+a_3(0,0,1,0)=(a_1,a_2,a_3,0)$, which is $0$ only if all $a_k=0$.
+> - (b) $1,z,\dots,z^m$ is linearly independent in $\Poly(\F)$: a polynomial that vanishes for every $z\in\F$ has all coefficients $0$ ([[Linear Algebra 4 Polynomials#^ladr-4-8|4.8]]).
+> - (c) A list $v$ of length one is independent iff $v\ne0$.
+> - (d) A list $v,w$ of length two is independent iff neither vector is a scalar multiple of the other.
 
 ^ladr-2-16
 
@@ -145,6 +158,10 @@ tags: [linear-algebra]
 > - What you can do with a dependent list: [[Linear dependence lemma]].
 
 > [!example] 2.18 Linearly dependent lists (p. 33)
+> - $(2,3,1),(1,-1,2),(7,3,8)$ is dependent: $2(2,3,1)+3(1,-1,2)-(7,3,8)=0$.
+> - $(2,3,1),(1,-1,2),(7,3,c)$ is dependent iff $c=8$. The first two vectors are independent, and the only combination $a(2,3,1)+b(1,-1,2)$ with first two coordinates $(7,3)$ has $a=2$, $b=3$, giving third coordinate $8$.
+> - If some vector of a list is a combination of the others, the list is dependent (move it to the other side with coefficient $-1$).
+> - In particular, any list containing $0$ is dependent.
 
 ^ladr-2-18
 
@@ -168,6 +185,12 @@ tags: [linear-algebra]
 > For the second part, let $k$ be any index with $v_k=b_1v_1+\dots+b_{k-1}v_{k-1}$. In any $u=c_1v_1+\dots+c_mv_m$, substitute this expression for $v_k$; the result is a linear combination of the list without $v_k$. So removing $v_k$ keeps the span.
 
 > [!example] 2.21 Smallest k in linear dependence lemma (p. 34)
+> Take $(1,2,3),(6,5,4),(15,16,17),(8,9,7)$ in $\R^3$. A list of length $4$ in $\R^3$ is dependent ([[Length of linearly independent list ≤ length of spanning list|2.22]]), so [[Linear dependence lemma|2.19]] applies. Which is the smallest $k$?
+> - $k=1$ would need $(1,2,3)=0$: no.
+> - $k=2$ would need $(6,5,4)=c(1,2,3)$: no.
+> - $k=3$: solve $(15,16,17)=a(1,2,3)+b(6,5,4)$. The first two coordinates give $a=3$, $b=2$, and the third checks: $9+8=17$. So $k=3$.
+>
+> Removing the third vector keeps the span. The remaining list $(1,2,3),(6,5,4),(8,9,7)$ is independent (its determinant is $21\ne0$), so it is a basis of $\R^3$.
 
 ^ladr-2-21
 
@@ -188,10 +211,12 @@ tags: [linear-algebra]
 *Uses:* [[Linear dependence lemma|2.19]]
 
 > [!example] 2.23 No list of length 4 is linearly independent in R³ (p. 36)
+> $(1,0,0),(0,1,0),(0,0,1)$ spans $\R^3$ and has length $3$, so by [[Length of linearly independent list ≤ length of spanning list|2.22]] no list of length $4$ in $\R^3$ is independent. For instance $(1,2,3),(4,5,8),(9,6,7),(-3,2,8)$ is dependent, with no computation needed.
 
 ^ladr-2-23
 
 > [!example] 2.24 No list of length 3 spans R⁴ (p. 36)
+> $(1,0,0,0),\dots,(0,0,0,1)$ is independent in $\R^4$ and has length $4$, so by [[Length of linearly independent list ≤ length of spanning list|2.22]] no list of length $3$ spans $\R^4$. For instance $(1,2,3,-5),(4,5,8,3),(9,6,7,-1)$ does not span $\R^4$.
 
 ^ladr-2-24
 

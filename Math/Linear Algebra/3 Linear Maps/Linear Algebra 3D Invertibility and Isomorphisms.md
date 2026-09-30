@@ -31,6 +31,11 @@ tags: [linear-algebra]
 ^ladr-3-61
 
 > [!example] 3.62 Inverse of a linear map from R³ to R³ (p. 82)
+> $T(x,y,z)=(-y,x,4z)$ on $\R^3$ rotates the $xy$-plane by $90^\circ$ counterclockwise and stretches the $z$-axis by $4$. Its inverse undoes both:
+> $$
+> T^{-1}(x,y,z)=\big(y,\,-x,\,\tfrac14z\big),
+> $$
+> as $T\big(y,-x,\tfrac z4\big)=(x,y,z)$ confirms.
 
 ^ladr-3-62
 
@@ -48,6 +53,11 @@ tags: [linear-algebra]
 > - Linear bijections automatically have linear inverses. In finite equal dimensions, one condition suffices: [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]].
 
 > [!example] 3.64 Neither injectivity nor surjectivity implies invertibility (p. 84)
+> In infinite dimensions neither half of [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-63|3.63]] suffices:
+> - multiplication by $x^2$ on $\Poly(\R)$ is injective but not surjective ($1$ is not in the range);
+> - the backward shift on $\F^\infty$ is surjective but not injective ($(1,0,0,\dots)$ is in the null space).
+>
+> Contrast [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]]: in equal finite dimensions either condition alone gives invertibility.
 
 ^ladr-3-64
 
@@ -68,6 +78,13 @@ tags: [linear-algebra]
 *Uses:* [[Fundamental theorem of linear maps|3.21]], [[Linear Algebra 3B Null Spaces and Ranges#^ladr-3-15|3.15]], [[Linear Algebra 2C Dimension#^ladr-2-39|2.39]], [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-63|3.63]]
 
 > [!example] 3.67 There exists a polynomial p such that ((x2 + 5x + 7)p) (p. 85)
+> **Claim.** For every $q\in\Poly(\R)$ there is $p\in\Poly(\R)$ with $\big((x^2+5x+7)p\big)''=q$.
+>
+> The map $p\mapsto\big((x^2+5x+7)p\big)''$ is injective on $\Poly(\R)$, but [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]] cannot be used there (see [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-64|3.64]]). So restrict: choose $m$ with $q\in\Poly_m(\R)$ and let $T:\Poly_m(\R)\to\Poly_m(\R)$, $Tp=\big((x^2+5x+7)p\big)''$. Multiplying by the quadratic raises degree by $2$ and differentiating twice lowers it by $2$, so $T$ maps into $\Poly_m(\R)$.
+>
+> $T$ is injective: if $Tp=0$ then $(x^2+5x+7)p=ax+b$, which forces $p=0$ by degree count. By [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]], $T$ is surjective, so $q=Tp$ for some $p$.
+>
+> The trick (reduce an infinite-dimensional problem to a finite-dimensional invariant piece) recurs throughout the book.
 
 ^ladr-3-67
 
@@ -135,6 +152,10 @@ tags: [linear-algebra]
 > - How $T$ acts in coordinates: [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-76|Linear maps act like matrix multiplication]].
 
 > [!example] 3.74 Matrix of a vector (p. 88)
+> - The matrix of $2-7x+5x^3+x^4$ in the standard basis of $\Poly_4(\R)$ is $(2,-7,0,5,1)^t$.
+> - For $x=(x_1,\dots,x_n)\in\F^n$ and the standard basis, $\mathcal{M}(x)=(x_1,\dots,x_n)^t$.
+>
+> Once a basis is fixed, $v\mapsto\mathcal{M}(v)$ is an isomorphism $V\to\F^{n,1}$: coordinates are a relabeling ([[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-73|3.73]]).
 
 ^ladr-3-74
 
@@ -233,6 +254,12 @@ tags: [linear-algebra]
 > - The change-of-basis matrix $C$ in [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]].
 
 > [!example] 3.83 Matrix of identity on F (p. 92)
+> Bases $u=((4,2),(5,3))$ and $e=((1,0),(0,1))$ of $\F^2$. Since $(4,2)=4e_1+2e_2$ and $(5,3)=5e_1+3e_2$,
+> $$
+> \mathcal{M}\big(I,(u),(e)\big)=\begin{pmatrix}4&5\\2&3\end{pmatrix},\qquad
+> \mathcal{M}\big(I,(e),(u)\big)=\begin{pmatrix}4&5\\2&3\end{pmatrix}^{-1}=\begin{pmatrix}\tfrac32&-\tfrac52\\-1&2\end{pmatrix}
+> $$
+> by [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-82|3.82]] (check: the product is $I$). The second matrix converts standard coordinates into $u$-coordinates.
 
 ^ladr-3-83
 
@@ -257,6 +284,14 @@ tags: [linear-algebra]
 > - Similar matrices describe the same operator; similarity invariants: [[Linear Algebra 8D Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|Trace of matrix of operator does not depend on basis]], [[Linear Algebra 9C Determinants#^ladr-9-52|Determinant is a similarity invariant]].
 > - Physics: with orthonormal bases $C$ is unitary and this is the familiar $A=U^\dagger BU$ change of representation.
 > - Bilinear-form version (different rule, $C^tBC$): [[Linear Algebra 9A Bilinear Forms and Quadratic Forms#^ladr-9-7|Change-of-basis formula (LADR 9.7)]].
+
+%% ex:3.84-diagram %%
+> [!example] Reading the change-of-basis formula as a diagram
+> Both paths from the top-left corner to the top-right give $A$: apply $T$ in $u$-coordinates directly, or convert to $v$-coordinates ($C$), apply $T$ there ($B$), and convert back ($C^{-1}$). That is $A=C^{-1}BC$.
+>
+> ![[ladr-3.84-change-of-basis.svg|520]]
+>
+> With the bases of [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-83|3.83]]: $C=\mathcal{M}(I,(u),(e))$ turns $u$-coordinates into standard ones, so for $T$ with standard matrix $B$, the matrix in the basis $(4,2),(5,3)$ is $C^{-1}BC$.
 
 > [!theorem] 3.86 Matrix of inverse equals inverse of matrix
 > If $v_1,\dots,v_n$ is a basis of $V$ and $T\in\Lin(V)$ is invertible, then $\mathcal{M}(T^{-1})=\mathcal{M}(T)^{-1}$ (all with respect to $v_1,\dots,v_n$).

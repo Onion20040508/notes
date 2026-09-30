@@ -20,6 +20,11 @@ tags: [linear-algebra]
 > - Physics: bras $\langle\psi|$ are linear functionals on kets.
 
 > [!example] 3.109 Linear functionals (p. 105)
+> Linear functionals:
+> - $\varphi(x,y,z)=4x-5y+2z$ on $\R^3$;
+> - $\varphi(x_1,\dots,x_n)=c_1x_1+\dots+c_nx_n$ on $\F^n$, for fixed $c_k$ (and every functional on $\F^n$ has this form);
+> - $\varphi(p)=3p''(5)+7p(4)$ on $\Poly(\R)$;
+> - $\varphi(p)=\int_0^1p$ on $\Poly(\R)$.
 
 ^ladr-3-109
 
@@ -63,6 +68,7 @@ tags: [linear-algebra]
 > - Physics: $\langle e_j|$ against an orthonormal $|e_k\rangle$; index notation $e^j(e_k)=\delta^j_k$ for upper/lower indices.
 
 > [!example] 3.113 The dual basis of the standard basis of Fⁿ (p. 106)
+> On $\F^n$ let $\varphi_j(x_1,\dots,x_n)=x_j$ (select the $j$-th coordinate). Then $\varphi_j(e_k)=1$ if $k=j$ and $0$ otherwise, so $\varphi_1,\dots,\varphi_n$ is the dual basis of the standard basis ([[Linear Algebra 3F Duality#^ladr-3-112|3.112]]). In index notation: $e^j(e_k)=\delta^j_k$.
 
 ^ladr-3-113
 
@@ -109,6 +115,13 @@ tags: [linear-algebra]
 > - Not the adjoint $T^*$ of Chapter 7 ([[Linear Algebra 7A Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]), although both are represented by (conjugate) transposes.
 
 > [!example] 3.119 Dual map of the differentiation linear map (p. 108)
+> $D:\Poly(\R)\to\Poly(\R)$, $Dp=p'$. The dual map $D'$ pulls a functional back by precomposing with $D$:
+> - if $\varphi(p)=p(3)$, then $\big(D'(\varphi)\big)(p)=\varphi(p')=p'(3)$;
+> - if $\varphi(p)=\int_0^1p$, then $\big(D'(\varphi)\big)(p)=\int_0^1p'=p(1)-p(0)$.
+>
+> The second item is the fundamental theorem of calculus in the language of duality. Directions: $T$ goes $V\to W$ but $T'$ goes $W'\to V'$:
+>
+> ![[ladr-3.119-dual-map.svg|420]]
 
 ^ladr-3-119
 
@@ -146,10 +159,20 @@ tags: [linear-algebra]
 > - A subspace: [[Linear Algebra 3F Duality#^ladr-3-124|The annihilator is a subspace]]. Dimension: [[Linear Algebra 3F Duality#^ladr-3-125|Dimension of the annihilator]].
 
 > [!example] 3.122 Element of an annihilator (p. 109)
+> Let $U\subseteq\Poly(\R)$ be the polynomial multiples of $x^2$ and $\varphi(p)=p'(0)$. For $p=x^2q$, $p'(0)=\big(2xq+x^2q'\big)(0)=0$, so $\varphi\in U^0$.
+>
+> $U^0$ depends on the ambient space ($U^0\subseteq V'$), even though the notation hides it.
 
 ^ladr-3-122
 
 > [!example] 3.123 The annihilator of a two-dimensional subspace of R⁵ (p. 109)
+> In $\R^5$ with standard basis $e_1,\dots,e_5$ and dual basis $\varphi_1,\dots,\varphi_5$, let $U=\Span(e_1,e_2)$. Then
+> $$
+> U^0=\Span(\varphi_3,\varphi_4,\varphi_5).
+> $$
+> **$\supseteq$:** $\varphi_3,\varphi_4,\varphi_5$ kill $e_1,e_2$. **$\subseteq$:** write $\varphi=\sum_kc_k\varphi_k$ ([[Linear Algebra 3F Duality#^ladr-3-116|3.116]]); then $0=\varphi(e_1)=c_1$ and $0=\varphi(e_2)=c_2$.
+>
+> So $\dim U^0=3=5-2$, the pattern of [[Linear Algebra 3F Duality#^ladr-3-125|3.125]]; this example is the hands-on proof of that result.
 
 ^ladr-3-123
 

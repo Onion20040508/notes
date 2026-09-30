@@ -26,6 +26,9 @@ tags: [linear-algebra]
 > - Properties: [[Linear Algebra 4 Polynomials#^ladr-4-4|Properties of complex numbers]]. The conjugate is why complex inner products are conjugate-symmetric ([[Linear Algebra 6A Inner Products and Norms#^ladr-6-2|Inner product]]) and why adjoints involve conjugate transposes ([[Linear Algebra 7A Self-Adjoint and Normal Operators#^ladr-7-7|Conjugate transpose, A∗]]).
 
 > [!example] 4.3 Real and imaginary part, complex conjugate, absolute value (p. 120)
+> For $z=3+2i$: $\operatorname{Re}z=3$, $\operatorname{Im}z=2$, $\bar z=3-2i$, $|z|=\sqrt{3^2+2^2}=\sqrt{13}$.
+>
+> Identifying $z$ with $(\operatorname{Re}z,\operatorname{Im}z)\in\R^2$, $|z|$ is the distance from $0$, and $\bar z$ is the reflection across the real axis. So $\bar z=z$ iff $z$ is real. As a complex vector space $\C$ is $1$-dimensional; as a real vector space it is $\R^2$, $2$-dimensional ([[Linear Algebra 2C Dimension#^ladr-2-36|2.36]]).
 
 ^ladr-4-3
 

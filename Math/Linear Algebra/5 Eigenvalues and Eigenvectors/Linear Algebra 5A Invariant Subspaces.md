@@ -31,10 +31,16 @@ tags: [linear-algebra]
 > - Restriction and minimal polynomials: [[Linear Algebra 5B The Minimal Polynomial#^ladr-5-31|Minimal polynomial of a restriction operator]]. Physics: symmetry sectors are invariant subspaces of the Hamiltonian.
 
 > [!example] 5.3 Subspace invariant under differentiation operator (p. 133)
+> For $D\in\Lin(\Poly(\R))$, $Dp=p'$, the subspace $\Poly_4(\R)$ is invariant: differentiating does not raise degree. More generally every $\Poly_m(\R)$ is invariant, which is exactly what let [[Linear Algebra 3D Invertibility and Isomorphisms#^ladr-3-67|3.67]] restrict to a finite-dimensional piece.
 
 ^ladr-5-3
 
 > [!example] 5.4 Four invariant subspaces, not necessarily all different (p. 133)
+> For every $T\in\Lin(V)$ the subspaces $\{0\}$, $V$, $\nullsp T$ and $\range T$ are invariant:
+> - $u\in\nullsp T\Rightarrow Tu=0\in\nullsp T$;
+> - $u\in\range T\Rightarrow Tu\in\range T$ trivially.
+>
+> They need not be interesting: for invertible $T$, $\nullsp T=\{0\}$ and $\range T=V$. Whether *other* invariant subspaces exist is a real question. In finite dimensions the answer is yes once $\dim V>1$ over $\C$ ([[Existence of eigenvalues|5.19]]) or $\dim V>2$ over $\R$.
 
 ^ladr-5-4
 
@@ -51,6 +57,11 @@ e0$
 > - Equivalent conditions: [[Linear Algebra 5A Invariant Subspaces#^ladr-5-7|Equivalent conditions to be an eigenvalue]]. Existence over $\C$: [[Existence of eigenvalues]]. Zeros of the minimal polynomial: [[Linear Algebra 5B The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]].
 
 > [!example] 5.6 Eigenvalue (p. 134)
+> $T(x,y,z)=(7x+3z,\ 3x+6y+9z,\ -6y)$ on $\F^3$. Then
+> $$
+> T(3,1,-1)=(18,6,-6)=6\,(3,1,-1),
+> $$
+> so $6$ is an eigenvalue with eigenvector $(3,1,-1)$. Checking a guessed eigenvector is easy; finding eigenvalues is the hard direction (see [[Linear Algebra 5B The Minimal Polynomial#^ladr-5-27|5.27]]).
 
 ^ladr-5-6
 
@@ -82,7 +93,28 @@ e0$
 > [!remark]- Connections
 > - Eigenvectors for distinct eigenvalues are independent: [[Linearly independent eigenvectors]]. The eigenspace $E(\lambda,T)=\nullsp(T-\lambda I)$: [[Linear Algebra 5D Diagonalizable Operators#^ladr-5-52|Eigenspace, E(λ, T)]].
 
+%% ex:5.8-plane %%
+> [!example] Eigenvectors in the plane
+> Let $T(x,y)=(2x+y,\ x+2y)$ on $\R^2$. Then $T(1,1)=3(1,1)$ and $T(1,-1)=(1,-1)$: the lines $E(3,T)=\Span(1,1)$ and $E(1,T)=\Span(1,-1)$ are invariant, and on them $T$ just stretches (by $3$) or does nothing. A vector off these lines, like $x=(1,0)\mapsto(2,1)$, changes direction.
+>
+> $T$ maps the unit circle to an ellipse whose axes lie along the eigenvector lines, with semi-axes $3$ and $1$:
+>
+> ![[ladr-5.8-eigenlines.svg|360]]
+>
+> This matrix is symmetric, and the eigenvector lines are perpendicular. That is not a coincidence: see [[Real spectral theorem|7.29]], the real spectral theorem.
+
 > [!example] 5.9 Eigenvalues and eigenvectors (p. 135)
+> $T(w,z)=(-z,w)$ on $\F^2$.
+>
+> **(a) $\F=\R$.** $T$ is rotation by $90^\circ$ counterclockwise. No nonzero vector is sent to a multiple of itself, so $T$ has no eigenvalues:
+>
+> ![[ladr-5.9-rotation.svg|300]]
+>
+> **(b) $\F=\C$.** $T(w,z)=\lambda(w,z)$ means $-z=\lambda w$ and $w=\lambda z$. Then $-z=\lambda^2z$, and $z\ne0$ (otherwise $w=0$ too), so $\lambda^2=-1$: $\lambda=\pm i$. The eigenvectors are
+> $$
+> (w,-iw)\ \text{for }\lambda=i,\qquad (w,iw)\ \text{for }\lambda=-i,\qquad w\ne0 .
+> $$
+> The same operator has no eigenvalues over $\R$ and two over $\C$: eigenvalues depend on the field, which is why [[Existence of eigenvalues|5.19]] needs $\F=\C$. Physics: these complex eigenvectors are the circular polarization states of a rotation, $e^{\pm i\theta}$.
 
 ^ladr-5-9
 
@@ -120,6 +152,11 @@ e0$
 ^ladr-5-14
 
 > [!example] 5.15 A polynomial applied to the differentiation operator (p. 138)
+> With $D$ = differentiation on $\Poly(\R)$ and $p(x)=7-3x+5x^2$:
+> $$
+> p(D)=7I-3D+5D^2,\qquad \big(p(D)\big)q=7q-3q'+5q'' .
+> $$
+> For fixed $T$, the map $p\mapsto p(T)$ from $\Poly(\F)$ to $\Lin(V)$ is linear (and multiplicative, [[Linear Algebra 5A Invariant Subspaces#^ladr-5-17|5.17]]). Physics: constant-coefficient linear ODEs are exactly equations $p(D)y=f$.
 
 ^ladr-5-15
 
