@@ -1,0 +1,148 @@
+---
+type: chapter
+subject: "[[Linear Algebra]]"
+chapter: 3
+tags: [chapter, linear-algebra]
+---
+# 3 Linear Maps
+↑ [[Linear Algebra]]
+
+**Builds on:** [[Linear Algebra — 1 Vector Spaces|1 Vector Spaces]] (5 citations), [[Linear Algebra — 2 Finite-Dimensional Vector Spaces|2 Finite-Dimensional Vector Spaces]] (7 citations)
+**Used by:** [[Linear Algebra — 5 Eigenvalues and Eigenvectors|5 Eigenvalues and Eigenvectors]] (11), [[Linear Algebra — 6 Inner Product Spaces|6 Inner Product Spaces]] (2), [[Linear Algebra — 7 Operators on Inner Product Spaces|7 Operators on Inner Product Spaces]] (14), [[Linear Algebra — 8 Operators on Complex Vector Spaces|8 Operators on Complex Vector Spaces]] (9), [[Linear Algebra — 9 Multilinear Algebra and Determinants|9 Multilinear Algebra and Determinants]] (14)
+
+## Load-bearing results
+The results in this chapter with the most later results depending on them.
+- [[Algebraic properties of products of linear maps]] (3.8): 84 later results depend on it
+- [[Linear maps take 0 to 0]] (3.10): 83 later results depend on it
+- [[Fundamental theorem of linear maps]] (3.21): 82 later results depend on it
+- [[Injectivity ⟺ null space equals {0}]] (3.15): 80 later results depend on it
+
+## 3A Vector Space of Linear Maps
+- 3.1 [[Linear map]] (p. 52)
+- 3.2 notation: L(V, W), L(V) (p. 52)
+- 3.3 example: linear maps (p. 52)
+- 3.4 [[Linear map lemma]] (p. 54)
+- 3.5 [[Addition and scalar multiplication on L(V, W)]] (p. 55)
+- 3.7 [[Product of linear maps]] (p. 55)
+- 3.8 [[Algebraic properties of products of linear maps]] (p. 56)
+- 3.9 example: two noncommuting linear maps from P(R) to P(R) (p. 56)
+- 3.10 [[Linear maps take 0 to 0]] (p. 56)
+
+## 3B Null Spaces and Ranges
+- 3.11 [[Null space, null T]] (p. 59)
+- 3.12 example: null space (p. 59)
+- 3.13 [[The null space is a subspace]] (p. 59)
+- 3.14 [[Injective]] (p. 60)
+- 3.15 [[Injectivity ⟺ null space equals {0}]] (p. 60)
+- 3.16 [[Range]] (p. 61)
+- 3.17 example: range (p. 61)
+- 3.18 [[The range is a subspace]] (p. 61)
+- 3.19 [[Surjective]] (p. 62)
+- 3.20 example: surjectivity depends on the target space (p. 62)
+- 3.21 [[Fundamental theorem of linear maps]] (p. 62)
+- 3.22 [[Linear map to a lower-dimensional space is not injective]] (p. 63)
+- 3.23 example: linear map from F4 to F3 is not injective (p. 63)
+- 3.24 [[Linear map to a higher-dimensional space is not surjective]] (p. 64)
+- 3.26 [[Homogeneous system of linear equations]] (p. 65)
+- 3.28 [[Inhomogeneous system of linear equations]] (p. 65)
+
+## 3C Matrices
+- 3.29 [[Matrix, Aj,k]] (p. 69)
+- 3.30 example: Aj,kequals entry in row j, column k of A (p. 69)
+- 3.31 [[Matrix of a linear map, M(T)]] (p. 69)
+- 3.32 example: the matrix of a linear map from F2 to F3 (p. 70)
+- 3.33 example: matrix of the differentiation map from P3(R) to P2(R) (p. 70)
+- 3.34 [[Matrix addition]] (p. 71)
+- 3.35 [[Matrix of the sum of linear maps]] (p. 71)
+- 3.36 [[Scalar multiplication of a matrix]] (p. 71)
+- 3.37 example: addition and scalar multiplication of matrices2(3 1 −1 5 ) + (4 2 (p. 72)
+- 3.38 [[The matrix of a scalar times a linear map]] (p. 72)
+- 3.39 notation: Fm,n (p. 72)
+- 3.40 [[Dim Fᵐ’ⁿ = mn]] (p. 72)
+- 3.41 [[Matrix multiplication]] (p. 73)
+- 3.42 example: matrix multiplication (p. 73)
+- 3.43 [[Matrix of product of linear maps (LADR 3.43)]] (p. 74)
+- 3.44 notation: Aj,⋅, A⋅,k (p. 74)
+- 3.45 example: Aj,⋅equals j (p. 74)
+- 3.46 [[Entry of matrix product equals row times column]] (p. 75)
+- 3.48 [[Column of matrix product equals matrix times column]] (p. 75)
+- 3.49 example: product of a 3-by-2 matrix and a 2-by-1 matrix (p. 75)
+- 3.50 [[Linear combination of columns]] (p. 76)
+- 3.51 [[Matrix multiplication as linear combinations of columns]] (p. 76)
+- 3.52 [[Column rank, row rank]] (p. 77)
+- 3.53 example: column rank and row rank of a 2-by-4 matrix (p. 77)
+- 3.54 [[Transpose, Aᵗ]] (p. 77)
+- 3.55 example: transpose of a matrix (p. 78)
+- 3.56 [[Column–row factorization]] (p. 78)
+- 3.57 [[Column rank equals row rank (LADR 3.57)]] (p. 78)
+- 3.58 [[Rank]] (p. 79)
+
+## 3D Invertibility and Isomorphisms
+- 3.59 [[Invertible, inverse]] (p. 82)
+- 3.60 [[Inverse is unique]] (p. 82)
+- 3.61 notation: T−1 (p. 82)
+- 3.62 example: inverse of a linear map from R3 to R3 (p. 82)
+- 3.63 [[Invertibility ⟺ injectivity and surjectivity]] (p. 83)
+- 3.64 example: neither injectivity nor surjectivity implies invertibility (p. 84)
+- 3.65 [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (p. 84)
+- 3.67 example: there exists a polynomial p such that ((x2 + 5x + 7)p) (p. 85)
+- 3.68 [[ST = I ⟺ TS = I (on vector spaces of the same dimension)]] (p. 85)
+- 3.69 [[Isomorphism, isomorphic]] (p. 86)
+- 3.70 [[Dimension shows whether vector spaces are isomorphic]] (p. 86)
+- 3.72 [[Dim L(V, W) = (dim V)(dim W)]] (p. 87)
+- 3.73 [[Matrix of a vector, M(v)]] (p. 88)
+- 3.74 example: matrix of a vector (p. 88)
+- 3.76 [[Linear maps act like matrix multiplication]] (p. 89)
+- 3.78 [[Dimension of range T equals column rank of M(T)]] (p. 90)
+- 3.79 [[Identity matrix, I]] (p. 90)
+- 3.80 [[Invertible, inverse, A⁻¹]] (p. 91)
+- 3.81 [[Matrix of product of linear maps (LADR 3.81)]] (p. 91)
+- 3.82 [[Matrix of identity operator with respect to two bases]] (p. 92)
+- 3.83 example: matrix of identity on F (p. 92)
+- 3.84 [[Change-of-basis formula (LADR 3.84)]] (p. 93)
+- 3.86 [[Matrix of inverse equals inverse of matrix]] (p. 93)
+
+## 3E Products and Quotients of Vector Spaces
+- 3.87 [[Product of vector spaces]] (p. 96)
+- 3.89 [[Product of vector spaces is a vector space]] (p. 96)
+- 3.90 example: R (p. 97)
+- 3.91 example: a basis of P2(R) × R2 (p. 97)
+- 3.92 [[Dimension of a product is the sum of dimensions]] (p. 97)
+- 3.93 [[Products and direct sums]] (p. 98)
+- 3.94 [[A sum is a direct sum if and only if dimensions add up]] (p. 98)
+- 3.95 notation: v + U (p. 98)
+- 3.96 example: sum of a vector and a one-dimensional subspace of R2 (17, 20) + U is parallel (p. 99)
+- 3.97 [[Translate]] (p. 99)
+- 3.98 example: translates (p. 99)
+- 3.99 [[Quotient space, V∕U]] (p. 99)
+- 3.100 example: quotient spaces (p. 100)
+- 3.101 [[Two translates of a subspace are equal or disjoint]] (p. 100)
+- 3.102 [[Addition and scalar multiplication on V∕U]] (p. 100)
+- 3.103 [[Quotient space is a vector space]] (p. 101)
+- 3.104 [[Quotient map, π]] (p. 101)
+- 3.105 [[Dimension of quotient space]] (p. 102)
+- 3.106 notation: ̃T (p. 102)
+- 3.107 [[Null space and range of ̃T]] (p. 102)
+
+## 3F Duality
+- 3.108 [[Linear functional]] (p. 105)
+- 3.109 example: linear functionals (p. 105)
+- 3.110 [[Dual space, V′]] (p. 105)
+- 3.111 [[Dim V′ = dim V]] (p. 105)
+- 3.112 [[Dual basis]] (p. 106)
+- 3.113 example: the dual basis of the standard basis of Fn (p. 106)
+- 3.114 [[Dual basis gives coefficients for linear combination]] (p. 106)
+- 3.116 [[Dual basis is a basis of the dual space]] (p. 107)
+- 3.118 [[Dual map, T′]] (p. 107)
+- 3.119 example: dual map of the differentiation linear map (p. 108)
+- 3.120 [[Algebraic properties of dual maps]] (p. 108)
+- 3.121 [[Annihilator, U0]] (p. 109)
+- 3.122 example: element of an annihilator (p. 109)
+- 3.123 example: the annihilator of a two-dimensional subspace of R5 (p. 109)
+- 3.124 [[The annihilator is a subspace]] (p. 110)
+- 3.125 [[Dimension of the annihilator]] (p. 110)
+- 3.127 [[Condition for the annihilator to equal {0} or the whole space]] (p. 111)
+- 3.128 [[The null space of T]] (p. 111)
+- 3.130 [[The range of T]] (p. 112)
+- 3.132 [[Matrix of T (LADR 3.132)]] (p. 113)
+- 3.133 [[Column rank equals row rank (LADR 3.133)]] (p. 114)

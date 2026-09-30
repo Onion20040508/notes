@@ -1,19 +1,28 @@
 # Home
 
+## Subjects
+**Math**
+- [[Linear Algebra]]
+- [[Single Variable Analysis]]
+- [[Functional Analysis]]
+- [[Differentiable Manifolds]]
+- Topology, Measure Theory (to be added)
+
+**Physics**
+- [[Quantum Field Theory I]]
+- Conventions: [[Larsen PHY 513]]
+
 ## Layout
-- `courses/`: one folder per course (`lectures/` for Markdown notes, `tex/` for LaTeX sources). Finished courses go to `courses/archive/`.
-- `books/`: one folder per book. [[Axler LADR]] is the index for linear algebra.
-- `concepts/`: one note per definition, theorem, or physical principle, shared across all subjects.
-- `conventions/`: one note per physics source (signature, units, normalizations).
-- `refs/`: textbook PDFs. `templates/`: note templates.
+- `Math/` and `Physics/` hold one folder per **subject**, named by content. Course code, term, instructor, textbook and status are properties of the subject's home note.
+- Inside a subject: the home note (with a diagram of how chapters build on each other), then one folder per **chapter**. Each chapter folder has a chapter note (builds on / used by, sections, central results) and that chapter's notes.
+- Every concept has one home, in the subject where it is developed; other subjects link to it by name. `Examples/` inside a subject holds workhorse examples that recur across chapters.
+- `attachments/` figures, `refs/` PDFs, `templates/` note templates.
 
 ## Callouts
-Math: `definition`, `theorem`, `example`, `remark`, `proof` (add `-` after the type to fold: `> [!proof]-`).
+Math: `definition`, `theorem`, `example`, `remark`, `proof` (add `-` or `+` after the type to make it foldable).
 Physics: `principle`, `derivation`, `caution`.
 
 ## Rules of thumb
 - A concept gets its own note once it is used in a second place.
 - Link to where something is proved or defined; backlinks show where it is used.
 - Physics notes name their conventions in the `conventions` property.
-
-Wubba Lubba Dub Dub!!!
