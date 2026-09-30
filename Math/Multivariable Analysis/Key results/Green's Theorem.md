@@ -11,10 +11,18 @@ tags: [multivariable-analysis, hub]
 - [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Theorem §16.1: Green's Theorem]], in [[Multivariable Analysis §16 Line Integrals and Green's Theorem]]
 
 ## Its proof uses
-- (only definitions)
+- [[Multivariable Analysis §15 Multivariable Integration#^thm-15-4|Theorem §15.4: Additivity over Domains]]
+- [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|Theorem §15.9: Fubini for Type I Regions]]
+- [[Multivariable Analysis §15 Multivariable Integration#^thm-15-10|Theorem §15.10: Fubini for Type II Regions]]
+- [[Multivariable Analysis §15 Multivariable Integration#^def-15-12|Definition §15.12: Type I and Type II Regions]]
+
+## Its proof uses (other subjects)
+- [[Fundamental Theorem of Calculus]] (Single Variable Analysis)
 
 ## Used in (Multivariable Analysis)
-- (not cited later in the course)
+- [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-2|Theorem §16.2: Divergence Theorem in ℝ²]]
+- [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-3|Theorem §16.3: Green's Theorem as 2D Stokes' Theorem]]
+- [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1|Theorem §20.1: Stokes' Theorem]]
 
 ## Connections
 - **Proof idea.** On a region of both [[Multivariable Analysis §15 Multivariable Integration#^def-15-12|Type I and Type II]], the [[Fundamental Theorem of Calculus]] in y gives ∮ f dx = −∬ f_y, and in x it gives ∮ g dy = ∬ g_x. Iterated integrals equal double integrals by Fubini ([[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|§15.9]], [[Multivariable Analysis §15 Multivariable Integration#^thm-15-10|§15.10]]). General regions are subdivided, and the internal edges cancel.

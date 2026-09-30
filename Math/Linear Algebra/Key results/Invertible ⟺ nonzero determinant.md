@@ -16,5 +16,8 @@ tags: [linear-algebra, hub]
 ## Used in (Linear Algebra)
 - [[Linear Algebra 9C Determinants#^ladr-9-51|9.51 Eigenvalues and determinants]]
 
+## Used in (Measure Theory)
+- [[Measure Theory §18 Differentiation Theory#^thm-18-22|Theorem §18.22: Linear Maps Preserve Null Sets]]
+
 ## Connections
 - Characteristic polynomial: $\lambda$ is an eigenvalue iff $\det(\lambda I-T)=0$ ([[Linear Algebra 9C Determinants#^ladr-9-51|9.51]]).

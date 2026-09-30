@@ -140,4 +140,4 @@ The notion of countability captures when we can “list” all elements of a set
 
 > [!remark]- Connections
 > - MATH 451: the same diagonal listing proves [[Single Variable Analysis §2 The Set ℚ of Rational Numbers#^thm-2-5|ℚ is countable (451 §2.5)]].
-> - Used for [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|Countable Union of Countable Sets]] and for the countability of the rational balls in [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^lem-6-2|Lemma §6.2]].
+> - Used for [[Countable Union of Countable Sets is Countable|Countable Union of Countable Sets]] and for the countability of the rational balls in [[Measure Theory §6 Open Covers and the Heine–Borel Theorem#^lem-6-2|Lemma §6.2]].

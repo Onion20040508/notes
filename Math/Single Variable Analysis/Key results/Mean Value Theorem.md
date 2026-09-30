@@ -29,6 +29,9 @@ tags: [real-analysis, hub]
 - [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-1|Theorem §12.1: Implicit Function Theorem]]
 - [[Multivariable Analysis §15 Multivariable Integration#^thm-15-14|Theorem §15.14: Change of Variables Formula — Rectangular Case]]
 
+## Used in (Measure Theory)
+- [[Measure Theory §18 Differentiation Theory#^prop-18-3|Proposition §18.3: Differentiable Functions with Bounded Derivative are BV]]
+
 ## Connections
 - Leads to Taylor's theorem (§31) and, in its generalized (Cauchy) form, to L'Hospital's rule (§30).
 - For vector-valued functions the equality version fails (e.g. $t\mapsto(\cos t,\sin t)$ on $[0,2\pi]$); only the mean value inequality survives.

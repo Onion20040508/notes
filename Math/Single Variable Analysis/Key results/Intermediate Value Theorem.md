@@ -29,6 +29,9 @@ tags: [real-analysis, hub]
 ## Used in (Multivariable Analysis)
 - [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-1|Theorem §12.1: Implicit Function Theorem]]
 
+## Used in (Measure Theory)
+- [[Measure Theory §18 Differentiation Theory#^lem-18-18|Lemma §18.18: Image Measure Bounded by Total Variation]]
+
 ## Connections
 - Abstract form: the continuous image of a connected set is connected; see [[Single Variable Analysis §22 More on Metric Spaces꞉ Connectedness]].
 - Its proof takes $\sup$ of a set, so it rests on the [[Completeness Axiom]]; over $\mathbb{Q}$ it fails ($x^2-2$ changes sign with no rational zero).

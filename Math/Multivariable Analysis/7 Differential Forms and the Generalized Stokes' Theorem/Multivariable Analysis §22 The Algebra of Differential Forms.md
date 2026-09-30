@@ -807,7 +807,7 @@ This is the bridge from calculus to topology: the exterior derivative $d$, defin
 
 In physics, the exterior derivative on higher forms is not abstract at all — it describes the fundamental forces.
 
-The electromagnetic potential $A$ is a 1-form. Its exterior derivative $F = dA$ is a 2-form — the electromagnetic field tensor (with 6 independent components: 3 for $\mathbf{E}$, 3 for $\mathbf{B}$, as discussed in [[Multivariable Analysis §22 The Algebra of Differential Forms#^rem-22-4|§22.2]]). Two of Maxwell's equations become:
+The electromagnetic potential $A$ is a 1-form. Its exterior derivative $F = dA$ is a 2-form — the electromagnetic field tensor (with 6 independent components: 3 for $\mathbf{E}$, 3 for $\mathbf{B}$, as discussed in [[Multivariable Analysis §22 The Algebra of Differential Forms#^rem-22-4|Remark: The ℝ³ Accident]]). Two of Maxwell's equations become:
 
 $$
 dF = 0 \qquad \text{(no magnetic monopoles; Faraday's law)}.

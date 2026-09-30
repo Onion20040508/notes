@@ -107,7 +107,7 @@ tags: [measure-theory, math551]
 
 ^pf-ex-4-2-c
 
-*Uses:* [[Measure Theory §4 Uncountability#^ex-4-1|Ex. §4.1]], [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|§3.1]], [[Measure Theory §1 Countability and Set Theory#^def-1-7|Def. §1.7]]
+*Uses:* [[Measure Theory §4 Uncountability#^ex-4-1|Ex. §4.1]], [[Countable Union of Countable Sets is Countable|§3.1]], [[Measure Theory §1 Countability and Set Theory#^def-1-7|Def. §1.7]]
 
 > [!remark]- Connections
 > - MATH 451 states “$\mathbb{R}$ is uncountable” when proving [[Single Variable Analysis §2 The Set ℚ of Rational Numbers#^thm-2-7|Existence of Transcendental Numbers (451 §2.7)]].

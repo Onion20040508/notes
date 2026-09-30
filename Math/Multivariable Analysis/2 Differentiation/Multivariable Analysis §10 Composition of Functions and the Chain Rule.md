@@ -201,7 +201,7 @@ $$
 \begin{pmatrix} \partial_x f & \partial_x g \\ \partial_y f & \partial_y g \end{pmatrix} = \begin{pmatrix} \varphi_x & \psi_x \\ \varphi_y & \psi_y \end{pmatrix} \begin{pmatrix} f_\xi & g_\xi \\ f_\eta & g_\eta \end{pmatrix}.
 $$
 
-Taking transposes:
+Taking [[Linear Algebra 3C Matrices#^ladr-3-55|transposes]]:
 
 $$
 \begin{pmatrix} f_x & f_y \\ g_x & g_y \end{pmatrix} = \begin{pmatrix} f_\xi & f_\eta \\ g_\xi & g_\eta \end{pmatrix} \begin{pmatrix} \varphi_x & \varphi_y \\ \psi_x & \psi_y \end{pmatrix}.

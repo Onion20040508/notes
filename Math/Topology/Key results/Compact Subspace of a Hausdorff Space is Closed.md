@@ -26,6 +26,9 @@ tags: [topology, hub]
 - [[Topology §26 Deformation Retracts and Homotopy Type#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
 - [[Topology §27 The Fundamental Group of Sⁿ#^ex-27-1|Example §27.1: Wedge of Two Spheres is Simply Connected]]
 
+## Used in (Measure Theory)
+- [[Measure Theory §18 Differentiation Theory#^thm-18-20|Theorem §18.20: Continuous Maps Preserve Bounded Closed Sets]]
+
 ## Connections
 - **Technique.** First separate x from each point of Y, then pass to a finite subcover. The same local-then-global argument, applied twice, proves [[Topology §20 Normal Spaces#^thm-20-2|Every Compact Hausdorff Space is Normal]] ([[Topology §20 Normal Spaces#^rem-20-4|The Two-Stage Pattern]]).
 - **Partner result.** With [[Closed Subspace of a Compact Space is Compact]] it yields [[Bijection from Compact to Hausdorff is a Homeomorphism]]. Since metric spaces are Hausdorff, it also gives the “compact ⇒ closed” half of [[Heine–Borel Theorem]].

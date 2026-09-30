@@ -44,11 +44,11 @@ graph TD
   C8 --> C9
   C9 --> C10
   C10 --> C11
-  C3 -.->|on credit| C5
-  C2 -.->|on credit| C8
-  C2 -.->|on credit| C9
-  C8 -.->|on credit| C9
-  C10 -.->|on credit| C11
+  C5 -.->|on credit| C3
+  C8 -.->|on credit| C2
+  C9 -.->|on credit| C2
+  C9 -.->|on credit| C8
+  C11 -.->|on credit| C10
 ```
 
 ## Chapters

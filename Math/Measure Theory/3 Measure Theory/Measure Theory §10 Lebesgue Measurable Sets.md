@@ -11,7 +11,7 @@ tags: [measure-theory, math551]
 
 A natural question arises: if $A_1, A_2 \subseteq \mathbb{R}^n$ with $A_1 \cap A_2 = \emptyset$, is $m^*(A_1 \cup A_2) = m^*(A_1) + m^*(A_2)$?
 
-The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Outer measure]] is only [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|subadditive]], not additive. To obtain additivity, we must restrict to a special class of sets called **measurable sets**.
+The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Outer measure]] is only [[Properties of Lebesgue Outer Measure|subadditive]], not additive. To obtain additivity, we must restrict to a special class of sets called **measurable sets**.
 
 ## The Carathéodory Criterion
 
@@ -27,7 +27,7 @@ The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^de
 ^def-10-1
 
 > [!remark] Remark
-> By [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|subadditivity]], $m^*(T) \leq m^*(T \cap E) + m^*(T \cap E^c)$ always holds.
+> By [[Properties of Lebesgue Outer Measure|subadditivity]], $m^*(T) \leq m^*(T \cap E) + m^*(T \cap E^c)$ always holds.
 >
 > Thus to show $E$ is measurable, it suffices to show that for all $T \subseteq \mathbb{R}^n$:
 >
@@ -44,7 +44,7 @@ The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^de
 >
 > **2. Analogy with topological separation.** In topology, a *[[Topology §13 Connected Spaces#^def-13-1|separation]]* of $X$ is a decomposition $X = U \cup V$ with $U, V$ open and disjoint—the two pieces do not interfere. The Carathéodory criterion is the measure-theoretic analogue: $E$ “separates” any test set into two pieces whose outer measures do not interfere (they add exactly). Topological separation says the boundary between $U$ and $V$ is empty; measure-theoretic separation says the boundary of $E$ is negligible from the perspective of outer measure.
 >
-> **3. Why quantify over all $T$?** One might hope it suffices to check $m^*(\mathbb{R}^n) = m^*(E) + m^*(E^c)$, but this is trivially satisfied whenever either side is infinite. The universal quantifier over $T$ demands the splitting work *locally*—for arbitrarily small test sets zooming into the boundary of $E$. This is analogous to how closedness in topology is not a global property but a local one ([[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^prop-13-5|every convergent sequence]] near the boundary must land inside). It is also precisely this universal quantifier that forces $\mathcal{M}$ to be a [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|σ-algebra automatically]].
+> **3. Why quantify over all $T$?** One might hope it suffices to check $m^*(\mathbb{R}^n) = m^*(E) + m^*(E^c)$, but this is trivially satisfied whenever either side is infinite. The universal quantifier over $T$ demands the splitting work *locally*—for arbitrarily small test sets zooming into the boundary of $E$. This is analogous to how closedness in topology is not a global property but a local one ([[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^prop-13-5|every convergent sequence]] near the boundary must land inside). It is also precisely this universal quantifier that forces $\mathcal{M}$ to be a [[Lebesgue Measurable Sets Form a σ-Algebra|σ-algebra automatically]].
 >
 > **4. Equivalent “partition wall” formulation.** The Carathéodory criterion is equivalent to: for all $A \subseteq E$ and $B \subseteq E^c$,
 >
@@ -62,7 +62,7 @@ The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^de
 ^ex-10-1
 
 > [!proof]+ Proof
-> Let $T \subseteq \mathbb{R}^n$. Since $T \cap E \subseteq E$, by [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|monotonicity]] $m^*(T \cap E) \leq m^*(E) = 0$, so $m^*(T \cap E) = 0$.
+> Let $T \subseteq \mathbb{R}^n$. Since $T \cap E \subseteq E$, by [[Properties of Lebesgue Outer Measure|monotonicity]] $m^*(T \cap E) \leq m^*(E) = 0$, so $m^*(T \cap E) = 0$.
 >
 > Since $T \cap E^c \subseteq T$, by monotonicity $m^*(T \cap E^c) \leq m^*(T)$.
 >
@@ -72,7 +72,7 @@ The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^de
 
 ^pf-ex-10-1
 
-*Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|§9.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-1|Def. §10.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^rem-10-1|Rem. §10.1]]
+*Uses:* [[Properties of Lebesgue Outer Measure|§9.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-1|Def. §10.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^rem-10-1|Rem. §10.1]]
 
 > [!remark]- Connections
 > - Examples: finite and countable sets ([[Measure Theory §9 Lebesgue Outer Measure#^ex-9-2|Ex. §9.2]]) and the [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-21|Cantor set]].
@@ -276,11 +276,11 @@ The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^de
 
 ^pf-10-3
 
-*Uses:* [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|§10.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-1|§10.1]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|§9.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-4|Def. §10.4]]
+*Uses:* [[Measure Theory §10 Lebesgue Measurable Sets#^lem-10-2|§10.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-1|§10.1]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^def-10-4|Def. §10.4]]
 
 > [!remark]- Connections
-> - The same argument, for an arbitrary outer measure: [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-2|Carathéodory's Theorem]] (§11.2).
-> - Consequences: [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-12|continuity from below]] and [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-13|from above]].
+> - The same argument, for an arbitrary outer measure: [[Carathéodory's Theorem|Carathéodory's Theorem]] (§11.2).
+> - Consequences: [[Continuity of Measure|continuity from below]] and [[Measure Theory §11 Borel Sets and Measure Spaces#^prop-11-13|from above]].
 
 ## Lebesgue Measure
 
@@ -294,7 +294,7 @@ The answer is **no** in general. [[Measure Theory §9 Lebesgue Outer Measure#^de
 ^def-10-5
 
 > [!remark] Remark
-> Lebesgue measure $m$ restricted to $\mathcal{M}$ has the crucial property of **countable additivity** ([[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|Thm. §10.3]]):
+> Lebesgue measure $m$ restricted to $\mathcal{M}$ has the crucial property of **countable additivity** ([[Lebesgue Measurable Sets Form a σ-Algebra|Thm. §10.3]]):
 >
 > $$
 > m\left( \bigcup_{j=1}^{\infty} E_j \right) = \sum_{j=1}^{\infty} m(E_j)

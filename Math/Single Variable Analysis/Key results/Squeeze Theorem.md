@@ -19,5 +19,8 @@ tags: [real-analysis, hub]
 ## Used in (Multivariable Analysis)
 - [[Multivariable Analysis §15 Multivariable Integration#^thm-15-3|Theorem §15.3: Additivity in the Integrand]]
 
+## Used in (Measure Theory)
+- [[Measure Theory §15 The General Lebesgue Integral#^thm-15-8|Theorem §15.8: Dominated Convergence Theorem (DCT)]]
+
 ## Connections
 - The standard way to get a limit without computing it, e.g. in the [[Extreme Value Theorem]] proof and the workhorse [[sin(1∕x) family]] (null times bounded).

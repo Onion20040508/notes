@@ -12,6 +12,7 @@ tags: [multivariable-analysis, hub]
 
 ## Its proof uses
 - [[Multivariable Analysis §15 Multivariable Integration#^thm-15-3|Theorem §15.3: Additivity in the Integrand]]
+- [[Multivariable Analysis §15 Multivariable Integration#^thm-15-4|Theorem §15.4: Additivity over Domains]]
 - [[Multivariable Analysis §15 Multivariable Integration#^thm-15-9|Theorem §15.9: Fubini for Type I Regions]]
 - [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-1|Definition §17.1: Divergence in ℝⁿ]]
 

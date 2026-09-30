@@ -7,7 +7,7 @@ tags: [chapter, multivariable-analysis]
 # 6 Surface Integrals and the Classical Theorems
 ↑ [[Multivariable Analysis]]
 
-**Builds on:** [[Multivariable Analysis — 4 Integration on Flat Domains|4 Integration on Flat Domains]] (3), [[Multivariable Analysis — 5 Line Integrals and the Divergence Theorem|5 Line Integrals and the Divergence Theorem]] (2)
+**Builds on:** [[Multivariable Analysis — 2 Differentiation|2 Differentiation]] (3), [[Multivariable Analysis — 4 Integration on Flat Domains|4 Integration on Flat Domains]] (3), [[Multivariable Analysis — 5 Line Integrals and the Divergence Theorem|5 Line Integrals and the Divergence Theorem]] (4)
 **Used by:** [[Multivariable Analysis — 7 Differential Forms and the Generalized Stokes' Theorem|7 Differential Forms and the Generalized Stokes' Theorem]] (2)
 **Builds on (other subjects):** [[Single Variable Analysis]] (2), [[Linear Algebra]] (2)
 

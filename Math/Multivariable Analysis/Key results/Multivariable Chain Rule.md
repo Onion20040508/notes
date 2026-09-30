@@ -11,6 +11,7 @@ tags: [multivariable-analysis, hub]
 - [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-2|Theorem §10.2: Multivariable Chain Rule]], in [[Multivariable Analysis §10 Composition of Functions and the Chain Rule]]
 
 ## Its proof uses
+- [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-1|Definition §3.1: Continuity]]
 - [[Multivariable Analysis §4 Partial Derivatives#^def-4-1|Definition §4.1: Partial Derivatives]]
 
 ## Its proof uses (other subjects)
@@ -19,7 +20,10 @@ tags: [multivariable-analysis, hub]
 ## Used in (Multivariable Analysis)
 - [[Multivariable Analysis §13 The Inverse Function Theorem#^thm-13-2|Theorem §13.2: Inverse Function Theorem]]
 - [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-2|Theorem §14.2: Method of Lagrange Multipliers]]
+- [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-3|Theorem §14.3: Lagrange Multipliers with Multiple Constraints]]
 - [[Multivariable Analysis §15 Multivariable Integration#^thm-15-14|Theorem §15.14: Change of Variables Formula — Rectangular Case]]
+- [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|Theorem §17.5: Fundamental Solution of the 2D Laplacian]]
+- [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^thm-20-1|Theorem §20.1: Stokes' Theorem]]
 - [[Multivariable Analysis §22 The Algebra of Differential Forms#^def-22-3|Definition §22.3: Pullback]]
 - [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-11|Proposition §22.11: A Closed Form That Is Not Exact]]
 

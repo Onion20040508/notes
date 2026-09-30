@@ -30,6 +30,9 @@ tags: [real-analysis, hub]
 - [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-5|Remark]]
 - [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^rem-14-10|Remark: The Logical Flow: Necessary to Sufficient]]
 
+## Used in (Measure Theory)
+- [[Measure Theory §18 Differentiation Theory#^lem-18-18|Lemma §18.18: Image Measure Bounded by Total Variation]]
+
 ## Connections
 - Abstract form: the continuous image of a compact set is compact. The same fact gives extrema of continuous functions on compact manifolds.
 - Both hypotheses matter: see the workhorse [[Reciprocal function 1∕x]] on $(0,1]$.

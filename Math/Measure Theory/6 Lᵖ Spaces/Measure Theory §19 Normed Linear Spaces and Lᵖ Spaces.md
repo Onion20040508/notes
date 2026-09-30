@@ -92,7 +92,7 @@ tags: [measure-theory, math551]
 > - A Banach space is a normed space that is a [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^def-13-3|complete metric space (451 Def. §13.3)]] under $d(x,y) = \|x - y\|$ ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-1|Proposition §19.1]]).
 
 > [!example] Example §19.4: Banach Spaces
-> $(\mathbb{R}^n, \|\cdot\|_1)$ and $(\mathbb{R}^n, \|\cdot\|_2)$ are Banach spaces (completeness of $\mathbb{R}^n$ in any norm; [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]). The [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-18|Riesz–Fischer theorem]] states that $(L^1(E), \|\cdot\|_1)$ is a Banach space.
+> $(\mathbb{R}^n, \|\cdot\|_1)$ and $(\mathbb{R}^n, \|\cdot\|_2)$ are Banach spaces (completeness of $\mathbb{R}^n$ in any norm; [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]). The [[Riesz–Fischer Theorem|Riesz–Fischer theorem]] states that $(L^1(E), \|\cdot\|_1)$ is a Banach space.
 
 ^ex-19-4
 
@@ -116,11 +116,11 @@ tags: [measure-theory, math551]
 > [!remark] Remark
 > When $p = 1$, this recovers $L^1(E)$ with $\|f\|_1 = \int_E |f|\,dx$ ([[Measure Theory §16 The L¹ Space and Density Theorems#^def-16-1|Def. §16.1]]). The $L^p$ spaces for $p > 1$ are important in functional analysis and PDE theory. The key results (not proved in this course) are:
 >
-> Hölder's inequality ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|Theorem §19.5]]): $\|fg\|_1 \leq \|f\|_p \|g\|_q$ where $1/p + 1/q = 1$.
+> Hölder's inequality ([[Hölder's Inequality|Theorem §19.5]]): $\|fg\|_1 \leq \|f\|_p \|g\|_q$ where $1/p + 1/q = 1$.
 >
-> Minkowski's inequality ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9|Theorem §19.9]]): $\|f + g\|_p \leq \|f\|_p + \|g\|_p$ (the triangle inequality for $\|\cdot\|_p$).
+> Minkowski's inequality ([[Minkowski's Inequality|Theorem §19.9]]): $\|f + g\|_p \leq \|f\|_p + \|g\|_p$ (the triangle inequality for $\|\cdot\|_p$).
 >
-> Riesz–Fischer theorem ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-18|Theorem §19.18]]): $(L^p(E), \|\cdot\|_p)$ is a Banach space for all $1 \leq p < \infty$.
+> Riesz–Fischer theorem ([[Riesz–Fischer Theorem|Theorem §19.18]]): $(L^p(E), \|\cdot\|_p)$ is a Banach space for all $1 \leq p < \infty$.
 >
 > The case $p = 2$ is especially important: $L^2(E)$ is a Hilbert space with [[Linear Algebra 6A Inner Products and Norms#^ladr-6-2|inner product]] $\langle f, g \rangle = \int_E f(x)\,g(x)\,dx$, and $\|f\|_2 = \langle f, f \rangle^{1/2}$ ([[Linear Algebra 6A Inner Products and Norms#^ladr-6-7|LADR 6.7]]).
 
@@ -166,11 +166,11 @@ tags: [measure-theory, math551]
 > \{x \in E : |f(x)| > M_0\} = \bigcup_{k=1}^{\infty} \{x \in E : |f(x)| > M_k\},
 > $$
 >
-> so $m(\{|f| > M_0\}) \leq \sum_{k=1}^{\infty} m(\{|f| > M_k\}) = 0$ ([[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|countable subadditivity]]).
+> so $m(\{|f| > M_0\}) \leq \sum_{k=1}^{\infty} m(\{|f| > M_k\}) = 0$ ([[Properties of Lebesgue Outer Measure|countable subadditivity]]).
 
 ^pf-19-2
 
-*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|Def. §19.6]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|§9.1]]
+*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|Def. §19.6]], [[Properties of Lebesgue Outer Measure|§9.1]]
 
 ## The Limit Theorem: $\lim_{p \to \infty} \|f\|_p = \|f\|_\infty$
 
@@ -242,7 +242,7 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - $p = 2$ is the [[Cauchy–Schwarz inequality|Cauchy–Schwarz inequality (LADR 6.14)]] for the $L^2$ inner product of [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|the remark above]]; its Riemann-integral form for continuous functions is [[Linear Algebra 6A Inner Products and Norms#^ladr-6-16|LADR 6.16(b)]].
-> - Used to prove [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9|Minkowski's inequality]], the $L^p$ inclusions ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-6|Corollary §19.6]]) and [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-7|interpolation]].
+> - Used to prove [[Minkowski's Inequality|Minkowski's inequality]], the $L^p$ inclusions ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-6|Corollary §19.6]]) and [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-7|interpolation]].
 
 > [!proof]+ Proof
 > **Case 1: $\|g\|_{p'} = 0$.** Then $g = 0$ a.e. ([[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|Proposition §14.11]]), so $fg = 0$ a.e., and both sides are $0$.
@@ -297,7 +297,7 @@ tags: [measure-theory, math551]
 >
 > so $\|f\|_{p_1} \leq \|f\|_\infty \cdot m(E)^{1/p_1}$.
 >
-> **Case 2: $p_1 = 1$, $p_2 = p < \infty$.** Apply [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|Hölder]] with exponents $p$ and $p'$:
+> **Case 2: $p_1 = 1$, $p_2 = p < \infty$.** Apply [[Hölder's Inequality|Hölder]] with exponents $p$ and $p'$:
 >
 > $$
 > \int_E |f|\,dx = \int_E |f| \cdot 1\,dx \leq \|f\|_p\,\|1\|_{p'} = \|f\|_p \cdot m(E)^{1/p'}.
@@ -305,7 +305,7 @@ tags: [measure-theory, math551]
 >
 > Since $1/p' = 1 - 1/p = 1/1 - 1/p$, this gives $\|f\|_1 \leq \|f\|_p \cdot m(E)^{1 - 1/p}$.
 >
-> **Case 3: $1 \leq p_1 < p_2 < \infty$.** Take $g(x) = |f(x)|^{p_1}$ and apply [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|Hölder]] with conjugate pair $p_2/p_1 > 1$ and $(p_2/p_1)' = p_2/(p_2 - p_1)$:
+> **Case 3: $1 \leq p_1 < p_2 < \infty$.** Take $g(x) = |f(x)|^{p_1}$ and apply [[Hölder's Inequality|Hölder]] with conjugate pair $p_2/p_1 > 1$ and $(p_2/p_1)' = p_2/(p_2 - p_1)$:
 >
 > $$
 > \int_E |f|^{p_1}\,dx = \int_E |f|^{p_1} \cdot 1\,dx \leq \left(\int_E |f|^{p_2}\,dx\right)^{p_1/p_2} \cdot m(E)^{1 - p_1/p_2} = (\|f\|_{p_2})^{p_1} \cdot m(E)^{1 - p_1/p_2}.
@@ -315,7 +315,7 @@ tags: [measure-theory, math551]
 
 ^pf-19-6
 
-*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|§19.5]]
+*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Hölder's Inequality|§19.5]]
 
 > [!remark] Remark
 > The finite measure hypothesis is essential: on $\mathbb{R}$, $f(x) = 1/\sqrt{|x|}$ for $|x| \leq 1$ and $0$ otherwise is in $L^1$ but not $L^2$. On infinite measure spaces the inclusion can reverse: $f(x) = 1/(1 + x^2) \in L^2(\mathbb{R})$ but $\notin L^1(\mathbb{R})$.
@@ -332,7 +332,7 @@ tags: [measure-theory, math551]
 ^prop-19-7
 
 > [!proof]+ Proof
-> Write $|f(x)|^t = |f(x)|^{\theta t} \cdot |f(x)|^{(1-\theta)t}$. Apply [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|Hölder]] with exponents $p = r/(\theta t)$ and $p' = s/((1-\theta)t)$. Note $1/p + 1/p' = \theta t/r + (1-\theta)t/s = t(1/t) = 1$, confirming these are conjugate. Then:
+> Write $|f(x)|^t = |f(x)|^{\theta t} \cdot |f(x)|^{(1-\theta)t}$. Apply [[Hölder's Inequality|Hölder]] with exponents $p = r/(\theta t)$ and $p' = s/((1-\theta)t)$. Note $1/p + 1/p' = \theta t/r + (1-\theta)t/s = t(1/t) = 1$, confirming these are conjugate. Then:
 >
 > $$
 > \int_E |f|^t\,dx \leq \left(\int_E |f|^r\,dx\right)^{\theta t/r} \left(\int_E |f|^s\,dx\right)^{(1-\theta)t/s} = (\|f\|_r)^{\theta t}\,(\|f\|_s)^{(1-\theta)t}.
@@ -342,7 +342,7 @@ tags: [measure-theory, math551]
 
 ^pf-19-7
 
-*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|§19.5]]
+*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Hölder's Inequality|§19.5]]
 
 ## $L^p$ is a Normed Linear Space
 
@@ -387,7 +387,7 @@ tags: [measure-theory, math551]
 > \int_E |f + g|^p = \int_E |f + g|^{p-1} \cdot |f + g| \leq \int_E |f + g|^{p-1}|f|\,dx + \int_E |f + g|^{p-1}|g|\,dx.
 > $$
 >
-> Apply [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|Hölder]] to each term with exponents $p$ and $p'$. For the first:
+> Apply [[Hölder's Inequality|Hölder]] to each term with exponents $p$ and $p'$. For the first:
 >
 > $$
 > \int_E |f + g|^{p-1}|f|\,dx \leq \left(\int_E |f + g|^{(p-1)p'}\,dx\right)^{1/p'} \|f\|_p = \left(\int_E |f + g|^p\,dx\right)^{1/p'} \|f\|_p,
@@ -407,7 +407,7 @@ tags: [measure-theory, math551]
 
 ^pf-19-9
 
-*Uses:* [[Measure Theory §15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|§19.5]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]]
+*Uses:* [[Measure Theory §15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Hölder's Inequality|§19.5]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]]
 
 > [!theorem] Theorem §19.10: $L^p$ is a Normed Linear Space
 > Let $1 \leq p \leq \infty$. Then $(L^p(E), \|\cdot\|_p)$ is a [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|normed linear space]].
@@ -418,11 +418,11 @@ tags: [measure-theory, math551]
 > We verify the three norm axioms:
 > - (i) *Positive definiteness:* $\|f\|_p \geq 0$ is clear. $\|f\|_p = 0 \implies f = 0$ a.e. on $E$ (for $p < \infty$: $\int |f|^p = 0$ with $|f|^p \geq 0$ implies $|f|^p = 0$ a.e. ([[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|Proposition §14.11]]); for $p = \infty$: $\operatorname{ess\,sup}|f| = 0$ means $|f| \leq 0$ a.e.). This is why we work with $L^p$ (equivalence classes mod a.e. equality) rather than $\mathcal{L}^p$.
 > - (ii) *Homogeneity:* $\|cf\|_p = |c|\,\|f\|_p$ (from the [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-8|scalar multiplication calculation above]]).
-> - (iii) *Triangle inequality:* $\|f + g\|_p \leq \|f\|_p + \|g\|_p$ ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9|Minkowski's inequality]]).
+> - (iii) *Triangle inequality:* $\|f + g\|_p \leq \|f\|_p + \|g\|_p$ ([[Minkowski's Inequality|Minkowski's inequality]]).
 
 ^pf-19-10
 
-*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|Def. §19.2]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-8|§19.8]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9|§19.9]]
+*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|Def. §19.2]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-8|§19.8]], [[Minkowski's Inequality|§19.9]]
 
 > [!remark]- Connections
 > - The case $p = 1$: [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]].
@@ -433,7 +433,7 @@ tags: [measure-theory, math551]
 
 ^cor-19-11
 
-This follows by induction on $m$ from the two-function case ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9|Theorem §19.9]]).
+This follows by induction on $m$ from the two-function case ([[Minkowski's Inequality|Theorem §19.9]]).
 
 > [!theorem] Corollary §19.12: Minkowski for Nonnegative Series
 > Let $\{f_k\}_{k=1}^{\infty}$ be a sequence of nonnegative measurable functions on $E$. Then:
@@ -445,7 +445,7 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 ^cor-19-12
 
 > [!proof]+ Proof
-> For $1 \leq p < \infty$: let $S_m(x) = \sum_{k=1}^m f_k(x)$. Since $f_k \geq 0$, $\{|S_m|^p\}$ is an increasing sequence of nonneg measurable functions with $|S_m|^p \nearrow |\sum f_k|^p$. By [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-4|MCT]]:
+> For $1 \leq p < \infty$: let $S_m(x) = \sum_{k=1}^m f_k(x)$. Since $f_k \geq 0$, $\{|S_m|^p\}$ is an increasing sequence of nonneg measurable functions with $|S_m|^p \nearrow |\sum f_k|^p$. By [[Monotone Convergence Theorem (Lebesgue)|MCT]]:
 >
 > $$
 > \int_E \left|\sum_{k=1}^{\infty} f_k\right|^p dx = \lim_{m \to \infty} \int_E |S_m|^p\,dx \leq \lim_{m \to \infty} \left(\sum_{k=1}^{m} \|f_k\|_p\right)^p = \left(\sum_{k=1}^{\infty} \|f_k\|_p\right)^p,
@@ -457,7 +457,7 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 
 ^pf-19-12
 
-*Uses:* [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-4|§14.4]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-11|§19.11]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]]
+*Uses:* [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-11|§19.11]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]]
 
 > [!theorem] Corollary §19.13: Minkowski for General Measurable Series
 > Let $\{f_k\}_{k=1}^{\infty}$ be a sequence of measurable functions on $E$, and assume $\sum_{k=1}^{\infty} f_k(x)$ converges for a.e. $x \in E$. Then:
@@ -495,7 +495,7 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 
 > [!remark]- Connections
 > - The case $p = 1$: [[Measure Theory §15 The General Lebesgue Integral#^cor-15-9|Corollary §15.9]].
-> - The $L^p$ analogue of [[Single Variable Analysis §14 Series#^prop-14-6|absolute convergence implies convergence (451 §14.6)]]; in a normed space this property is equivalent to completeness, which is how it drives [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-18|Riesz–Fischer]].
+> - The $L^p$ analogue of [[Single Variable Analysis §14 Series#^prop-14-6|absolute convergence implies convergence (451 §14.6)]]; in a normed space this property is equivalent to completeness, which is how it drives [[Riesz–Fischer Theorem|Riesz–Fischer]].
 
 ## $L^p$ Convergence and Completeness
 
@@ -511,7 +511,7 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 > - The special case of [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3|Def. §19.3]]–[[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-4|Def. §19.4]] for $\|\cdot\|_p$; for $p = 1$ it is [[Measure Theory §16 The L¹ Space and Density Theorems#^def-16-2|Def. §16.2]].
 
 > [!remark] Remark
-> The metric $d(f, g) = \|f - g\|_p$ makes $(L^p(E), d)$ a metric space ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-1|Proposition §19.1]]; this follows from the norm axioms verified [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|above]]). Completeness of $L^p$ in this metric is the content of the [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-18|Riesz–Fischer theorem]] below.
+> The metric $d(f, g) = \|f - g\|_p$ makes $(L^p(E), d)$ a metric space ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-1|Proposition §19.1]]; this follows from the norm axioms verified [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|above]]). Completeness of $L^p$ in this metric is the content of the [[Riesz–Fischer Theorem|Riesz–Fischer theorem]] below.
 
 ^rem-19-3
 
@@ -524,11 +524,11 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 > [!proof]+ Proof
 > **(i)** $\|f - g\|_p = \|f - f_k + f_k - g\|_p \leq \|f - f_k\|_p + \|f_k - g\|_p \to 0$, so $\|f - g\|_p = 0$, i.e., $f = g$ a.e.
 >
-> **(ii)** By [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9|Minkowski]]: $|\,\|f_k\|_p - \|f\|_p\,| \leq \|f_k - f\|_p \to 0$.
+> **(ii)** By [[Minkowski's Inequality|Minkowski]]: $|\,\|f_k\|_p - \|f\|_p\,| \leq \|f_k - f\|_p \to 0$.
 
 ^pf-19-15
 
-*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9|§19.9]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|§19.10]]
+*Uses:* [[Minkowski's Inequality|§19.9]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|§19.10]]
 
 > [!remark]- Connections
 > - (i) is uniqueness of limits in a metric space ([[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^rem-13-4|451 §13 remark]]; [[Topology §8 Hausdorff Spaces#^thm-8-3|590 §8.3]]), with “equal” meaning equal a.e.
@@ -571,11 +571,11 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 
 ^pf-19-17
 
-*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9|§19.9]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-16|§19.16]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-15|§19.15]]
+*Uses:* [[Minkowski's Inequality|§19.9]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-16|§19.16]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-15|§19.15]]
 
 > [!remark]- Connections
 > - The case $p = 1$ is the step “every $L^1$-convergent sequence has a pointwise a.e. convergent subsequence” in [[Measure Theory §18 Differentiation Theory#^thm-18-26|Differentiation of the Integral (§18.26)]].
-> - Only a subsequence: $L^p$ convergence does not imply a.e. convergence, and a.e. convergence upgrades to $L^1$ convergence under domination ([[Measure Theory §15 The General Lebesgue Integral#^thm-15-8|DCT]]).
+> - Only a subsequence: $L^p$ convergence does not imply a.e. convergence, and a.e. convergence upgrades to $L^1$ convergence under domination ([[Dominated Convergence Theorem|DCT]]).
 
 > [!theorem] Theorem §19.18: Riesz–Fischer Theorem
 > Let $1 \leq p \leq \infty$. Then $L^p(E)$ is a complete metric space (Banach space).
@@ -601,7 +601,7 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 > \int_E |f_k - f_{k_j}|^p\,dx \leq \varepsilon^p.
 > $$
 >
-> Since $f_{k_j} \to f$ a.e., by [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-15|Fatou's lemma]]:
+> Since $f_{k_j} \to f$ a.e., by [[Fatou's Lemma|Fatou's lemma]]:
 >
 > $$
 > \int_E |f_k - f|^p\,dx = \int_E \liminf_{j \to \infty} |f_k - f_{k_j}|^p\,dx \leq \liminf_{j \to \infty} \int_E |f_k - f_{k_j}|^p\,dx \leq \varepsilon^p.
@@ -611,11 +611,11 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 
 ^pf-19-18
 
-*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-8|Def. §19.8]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|§9.1]], [[Single Variable Analysis §10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]], [[Single Variable Analysis §24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-16|§19.16]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-15|§14.15]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]]
+*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-8|Def. §19.8]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Single Variable Analysis §10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]], [[Single Variable Analysis §24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-16|§19.16]], [[Fatou's Lemma|§14.15]], [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]]
 
 > [!remark]- Connections
 > - $L^p(E)$ is thus a [[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^def-13-3|complete metric space (451 Def. §13.3)]], like $\mathbb{R}^n$ ([[Single Variable Analysis §13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]); for $p = 2$, a complete inner product space (Hilbert space) extending [[Linear Algebra 6A Inner Products and Norms#^ladr-6-4|LADR 6.4]].
-> - The engine is the absolute series test ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|§19.14]]), itself built on [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-4|MCT]]; the upgrade from subsequence to full sequence is [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-15|Fatou]].
+> - The engine is the absolute series test ([[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|§19.14]]), itself built on [[Monotone Convergence Theorem (Lebesgue)|MCT]]; the upgrade from subsequence to full sequence is [[Fatou's Lemma|Fatou]].
 
 ## Density and Separability
 
@@ -647,7 +647,7 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 > [!proof]+ Proof
 > **(i) Simple functions are dense in $L^p$.** Let $f \in L^p(E)$. By the [[Measure Theory §12 Measurable Functions#^thm-12-15|Simple Function Approximation Theorem]], there exists a sequence of simple functions $\varphi_k$ with $|\varphi_k(x)| \leq |f(x)|$ for all $x$ and $\varphi_k(x) \to f(x)$ pointwise.
 >
-> Then $|\varphi_k - f|^p \leq (|\varphi_k| + |f|)^p \leq (2|f|)^p = 2^p|f|^p$. Since $f \in L^p$, $2^p|f|^p \in L^1(E)$. By [[Measure Theory §15 The General Lebesgue Integral#^thm-15-8|DCT]]:
+> Then $|\varphi_k - f|^p \leq (|\varphi_k| + |f|)^p \leq (2|f|)^p = 2^p|f|^p$. Since $f \in L^p$, $2^p|f|^p \in L^1(E)$. By [[Dominated Convergence Theorem|DCT]]:
 >
 > $$
 > \int_E |\varphi_k - f|^p\,dx \to 0, \qquad \text{i.e.,} \quad \|\varphi_k - f\|_p \to 0.
@@ -667,7 +667,7 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 >
 > **(iii) $C_c(\mathbb{R}^n)$ is dense in $L^p$.** By (ii), it suffices to approximate step functions. By linearity, it suffices to approximate $\chi_R$ for a rectangle $R$ with $m(R) < \infty$.
 >
-> Construct the same “trapezoidal” continuous approximation $g$ as in the $L^1$ proof ([[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-7|§16.7]]): $g$ is continuous, compactly supported, $0 \leq g \leq 1$, and $|\chi_R(x) - g(x)| \leq 1$ with equality only on transition regions of total measure $\leq C\varepsilon'$. Since $|\chi_R - g|^p \leq |\chi_R - g| \leq 1$ (as $0 \leq g \leq 1$):
+> Construct the same “trapezoidal” continuous approximation $g$ as in the $L^1$ proof ([[Continuous Functions of Compact Support are Dense in L¹|§16.7]]): $g$ is continuous, compactly supported, $0 \leq g \leq 1$, and $|\chi_R(x) - g(x)| \leq 1$ with equality only on transition regions of total measure $\leq C\varepsilon'$. Since $|\chi_R - g|^p \leq |\chi_R - g| \leq 1$ (as $0 \leq g \leq 1$):
 >
 > $$
 > \|\chi_R - g\|_p^p = \int |\chi_R - g|^p\,dx \leq \int |\chi_R - g|\,dx = \|\chi_R - g\|_1 < C\varepsilon'.
@@ -677,10 +677,10 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 
 ^pf-19-19
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^thm-12-15|§12.15]], [[Measure Theory §15 The General Lebesgue Integral#^thm-15-8|§15.8]], [[Measure Theory §15 The General Lebesgue Integral#^def-15-2|Def. §15.2]], [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-11|§11.11]], [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-9|Def. §11.9]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-11|§19.11]], [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-7|§16.7]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^thm-12-15|§12.15]], [[Dominated Convergence Theorem|§15.8]], [[Measure Theory §15 The General Lebesgue Integral#^def-15-2|Def. §15.2]], [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-11|§11.11]], [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-9|Def. §11.9]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-11|§19.11]], [[Continuous Functions of Compact Support are Dense in L¹|§16.7]]
 
 > [!remark]- Connections
-> - The $L^1$ versions: [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-5|§16.5]], [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-7|§16.7]].
+> - The $L^1$ versions: [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-5|§16.5]], [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[Continuous Functions of Compact Support are Dense in L¹|§16.7]].
 
 > [!remark] Remark: The Approximation Chain for $L^p$
 > We have:
@@ -706,7 +706,7 @@ This follows by induction on $m$ from the two-function case ([[Measure Theory §
 
 ^pf-19-20
 
-*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]], [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|§3.1]], [[Measure Theory §1 Countability and Set Theory#^ex-1-3|Ex. §1.3]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|§19.19]]
+*Uses:* [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]], [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Countable Union of Countable Sets is Countable|§3.1]], [[Measure Theory §1 Countability and Set Theory#^ex-1-3|Ex. §1.3]], [[Measure Theory §19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|§19.19]]
 
 > [!theorem] Theorem §19.21: $L^\infty$ is Not Separable
 > $L^\infty(E)$ is not separable (when $E$ has positive measure).

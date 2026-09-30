@@ -172,7 +172,7 @@ $$
 ^rem-14-2
 
 ![[m452-14-4.svg]]
-*Why the constraint qualification is needed. Minimize $f(x, y) = x$ on the cusp $g = y^2 - x^3 = 0$ (green). The minimum is at the origin (red), where $\nabla g = (-3x^2, 2y) = \mathbf{0}$. There $\nabla f = (1, 0)$ (blue) is not $\lambda \cdot \mathbf{0}$ for any $\lambda$. The Lagrange system has no solution at all ($\lambda \neq 0$ forces $y = 0$, hence $x = 0$, hence $1 = 0$), so the method misses the true minimum. The level lines $x = c$ are not tangent to the curve at the cusp, because the cusp has no tangent line.*
+*Why the constraint qualification is needed. Minimize $f(x, y) = x$ on the cusp $g = y^2 - x^3 = 0$ (green). The minimum is at the origin (red), where $\nabla g = (-3x^2, 2y) = \mathbf{0}$. There $\nabla f = (1, 0)$ (blue) is not $\lambda \cdot \mathbf{0}$ for any $\lambda$. The Lagrange system has no solution at all ($\lambda \neq 0$ forces $y = 0$, hence $x = 0$, hence $1 = 0$), so the method misses the true minimum. Nor is the level line $x = 0$ through the minimum tangent to the curve there: both branches leave the cusp along the positive $x$-axis, perpendicular to that level line.*
 
 > [!remark] Remark: What if $f_y = 0$?
 > In the proof, we assumed $g_y \neq 0$. What if $g_y \neq 0$ but $f_y = 0$?
@@ -197,6 +197,8 @@ $$
 > $$
 
 ^thm-14-3
+
+*Uses:* [[Multivariable Analysis §12 The Implicit Function Theorem#^thm-12-2|§12.2]], [[Multivariable Analysis §14 Optimization and Lagrange Multipliers#^thm-14-1|§14.1]], [[Multivariable Chain Rule|§10.2]], [[Multivariable Analysis §13 The Inverse Function Theorem#^prop-13-1|§13.1]]
 
 > [!remark]- Connections
 > - The linear algebra behind it: $\nabla f$ is orthogonal to the tangent space of the constraint set, and that orthogonal complement ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]]) has dimension $k$ ([[Linear Algebra 6C Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]]), so it is spanned by the $k$ independent constraint gradients.

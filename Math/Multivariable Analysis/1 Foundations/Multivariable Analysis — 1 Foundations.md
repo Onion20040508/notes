@@ -8,7 +8,7 @@ tags: [chapter, multivariable-analysis]
 ↑ [[Multivariable Analysis]]
 
 **Builds on:** —
-**Used by:** [[Multivariable Analysis — 2 Differentiation|2 Differentiation]] (16), [[Multivariable Analysis — 4 Integration on Flat Domains|4 Integration on Flat Domains]] (6)
+**Used by:** [[Multivariable Analysis — 2 Differentiation|2 Differentiation]] (18), [[Multivariable Analysis — 4 Integration on Flat Domains|4 Integration on Flat Domains]] (6), [[Multivariable Analysis — 5 Line Integrals and the Divergence Theorem|5 Line Integrals and the Divergence Theorem]] (2)
 **Builds on (other subjects):** [[Single Variable Analysis]] (3)
 
 ## Sections

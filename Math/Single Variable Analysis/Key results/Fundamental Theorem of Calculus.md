@@ -22,6 +22,7 @@ tags: [real-analysis, hub]
 
 ## Used in (Multivariable Analysis)
 - [[Multivariable Analysis §15 Multivariable Integration#^lem-15-13|Lemma §15.13: One-Dimensional Change of Variables]]
+- [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^thm-16-1|Theorem §16.1: Green's Theorem]]
 - [[Multivariable Analysis §16 Line Integrals and Green's Theorem#^rem-16-3|Remark: Higher Dimensions]]
 - [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|Theorem §17.1: Divergence Theorem in ℝⁿ]]
 - [[Multivariable Analysis §17 The Divergence Theorem in Higher Dimensions and Green's Identities#^rem-17-3|Remark: Summary: The Hierarchy of Integral Theorems]]
@@ -29,6 +30,9 @@ tags: [real-analysis, hub]
 - [[Multivariable Analysis §18 Surface Integrals#^rem-18-7|Remark: Why the Bottom Surface Has Reversed Orientation]]
 - [[Multivariable Analysis §20 Stokes' Theorem in ℝ³#^rem-20-3|Remark: Structure of the Proof]]
 - [[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-11|Proposition §22.11: A Closed Form That Is Not Exact]]
+
+## Used in (Measure Theory)
+- [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-13|Theorem §17.13: Layer Cake Formula (Cavalieri's Principle)]]
 
 ## Connections
 - Generalized by Stokes's theorem $\int_M d\omega=\int_{\partial M}\omega$ (Lee, *Smooth Manifolds*, Ch. 16; his Example 16.12 recovers FTC as the case $M=[a,b]$).

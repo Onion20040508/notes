@@ -151,7 +151,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 > \sum_k |I_k^{(i)}| \leq m^*(A_i) + \frac{\epsilon}{2^i}.
 > $$
 >
-> The collection $\bigcup_{i=1}^{\infty} \{I_k^{(i)}\}_k$ is countable (a [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|countable union of countable sets]]) and is an L-covering of $\bigcup_{i=1}^{\infty} A_i$.
+> The collection $\bigcup_{i=1}^{\infty} \{I_k^{(i)}\}_k$ is countable (a [[Countable Union of Countable Sets is Countable|countable union of countable sets]]) and is an L-covering of $\bigcup_{i=1}^{\infty} A_i$.
 >
 > Thus
 >
@@ -163,7 +163,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 ^pf-9-1
 
-*Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-3|Def. §9.3]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §9 Lebesgue Outer Measure#^rem-9-1|Rem. §9.1]], [[Measure Theory §3 Countability of Rationals and Unions#^prop-3-1|§3.1]]
+*Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-3|Def. §9.3]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Measure Theory §9 Lebesgue Outer Measure#^rem-9-1|Rem. §9.1]], [[Countable Union of Countable Sets is Countable|§3.1]]
 
 > [!remark]- Connections
 > - These three properties become the axioms of a general outer measure: [[Measure Theory §11 Borel Sets and Measure Spaces#^def-11-3|Def. §11.3]].
@@ -248,5 +248,5 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 *Uses:* [[Measure Theory §9 Lebesgue Outer Measure#^def-9-2|Def. §9.2]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-3|Def. §9.3]], [[Measure Theory §9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]]
 
 > [!remark]- Connections
-> - Measurable sets are carried to measurable sets: [[Measure Theory §11 Borel Sets and Measure Spaces#^lem-11-15|Lemma §11.15]]; key input to the [[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-20|Vitali set]].
+> - Measurable sets are carried to measurable sets: [[Measure Theory §11 Borel Sets and Measure Spaces#^lem-11-15|Lemma §11.15]]; key input to the [[The Vitali Set is Not Measurable|Vitali set]].
 > - Translation invariance of the integral: [[Measure Theory §17 Invariance Properties and Fubini's Theorem#^thm-17-1|Thm. §17.1]].

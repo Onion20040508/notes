@@ -19,6 +19,9 @@ tags: [real-analysis, hub]
 - [[Single Variable Analysis §18 Properties of Continuous Functions#^thm-18-1|Theorem §18.1: Extreme Value Theorem]]
 - [[Single Variable Analysis §18 Properties of Continuous Functions#^thm-18-3|Theorem §18.3: Intermediate Value Theorem]]
 
+## Used in (Measure Theory)
+- [[Measure Theory §7 Structure of Open Sets#^prop-7-1|Proposition §7.1: Open Sets in ℝ are Countable Unions of Disjoint Intervals]]
+
 ## Connections
 - This is the axiom that separates $\mathbb{R}$ from $\mathbb{Q}$ (§4 shows $\mathbb{Q}$ fails it). §6 constructs a model of it with Dedekind cuts.
 - Equivalent forms met later in the course: [[Monotone Convergence Theorem]], [[Bolzano–Weierstrass Theorem]], and Cauchy sequences converging (§10).

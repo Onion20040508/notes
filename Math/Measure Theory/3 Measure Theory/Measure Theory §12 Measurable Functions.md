@@ -67,18 +67,18 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 ^ex-12-1
 
 > [!remark]- Connections
-> - Monotone functions reappear in differentiation theory: [[Measure Theory §18 Differentiation Theory#^thm-18-1|Monotone Functions Have Countably Many Discontinuities]], [[Measure Theory §18 Differentiation Theory#^thm-18-9|Lebesgue's Differentiation Theorem]].
+> - Monotone functions reappear in differentiation theory: [[Measure Theory §18 Differentiation Theory#^thm-18-1|Monotone Functions Have Countably Many Discontinuities]], [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's Differentiation Theorem]].
 
 > [!example] Example §12.2: Continuous Functions are Measurable
 > If $f: E \to \mathbb{R}$ is continuous (where $E \subseteq \mathbb{R}^n$ is measurable), then $f$ is measurable.
 >
-> For any $c \in \mathbb{R}$, the set $\{x \in E \mid f(x) > c\} = f^{-1}((c, \infty)) \cap E$ is the intersection of an open set (by [[Topology §9 Continuous Functions#^def-9-1|continuity]]) with the measurable set $E$, hence measurable ([[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-6|Thm. §11.6]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|Thm. §10.3]]).
+> For any $c \in \mathbb{R}$, the set $\{x \in E \mid f(x) > c\} = f^{-1}((c, \infty)) \cap E$ is the intersection of an open set (by [[Topology §9 Continuous Functions#^def-9-1|continuity]]) with the measurable set $E$, hence measurable ([[Measure Theory §11 Borel Sets and Measure Spaces#^thm-11-6|Thm. §11.6]], [[Lebesgue Measurable Sets Form a σ-Algebra|Thm. §10.3]]).
 
 ^ex-12-2
 
 > [!remark]- Connections
 > - “Open preimage” is relative to $E$: an open set of the [[Topology §5 Subspace Topology#^def-5-1|subspace topology]] on $E$ is $U \cap E$ with $U$ open in $\mathbb{R}^n$.
-> - A partial converse: every measurable function is continuous off a set of small measure, [[Measure Theory §13 Egorov's and Lusin's Theorems#^thm-13-3|Lusin's Theorem]].
+> - A partial converse: every measurable function is continuous off a set of small measure, [[Lusin's Theorem|Lusin's Theorem]].
 
 > [!definition] Definition §12.3: Characteristic Function
 > Let $E \subseteq \mathbb{R}^n$. The **characteristic function** (or **indicator function**) of $E$ is:
@@ -109,7 +109,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ^pf-12-1
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|§10.3]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
 
 > [!remark]- Connections
 > - The Dirichlet function $\chi_{\mathbb{Q}}$ is measurable (as $\mathbb{Q}$ is countable, hence null) though not Riemann integrable: [[Measure Theory §8 Motivation꞉ The Riemann Integral#^ex-8-2|Ex. §8.2]], [[Dirichlet and Thomae functions]].
@@ -189,7 +189,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ^pf-12-2
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|§10.3]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
 
 ## Algebra of Measurable Functions
 
@@ -255,7 +255,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ^pf-12-3
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §12 Measurable Functions#^prop-12-2|§12.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|§10.3]], [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Single Variable Analysis §4 The Completeness Axiom#^thm-4-7|451 §4.7]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §12 Measurable Functions#^prop-12-2|§12.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Single Variable Analysis §4 The Completeness Axiom#^thm-4-7|451 §4.7]]
 
 > [!remark] Remark: Logic to Set Theory
 > The proof illustrates a key technique: translate logical statements (“there exists $r$ such that...”) into set-theoretic operations (countable unions).
@@ -282,7 +282,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ^pf-12-4
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|§10.3]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
 
 > [!theorem] Proposition §12.5: Restriction to Measurable Subsets
 > Assume $f: E \to \overline{\mathbb{R}}$ is measurable, and $A \subseteq E$ with $A \in \mathcal{M}$. Then the restriction $f|_A: A \to \overline{\mathbb{R}}$ is measurable.
@@ -298,7 +298,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ^pf-12-5
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|§10.3]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
 
 ## Suprema, Infima, and Limits of Measurable Functions
 
@@ -328,7 +328,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ^pf-12-6
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|§10.3]], [[Measure Theory §12 Measurable Functions#^thm-12-3|§12.3]], [[Characterization of the Supremum|451 Characterization of the Supremum]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §12 Measurable Functions#^thm-12-3|§12.3]], [[Characterization of the Supremum|451 Characterization of the Supremum]]
 
 > [!theorem] Theorem §12.7: Measurability of Limsup and Liminf
 > Let $E \in \mathcal{M}$ and let $\{f_k\}_{k \geq 1}$ be a sequence of measurable functions on $E$. Then:
@@ -418,7 +418,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ^pf-12-9
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^prop-12-2|§12.2]], [[Measure Theory §12 Measurable Functions#^def-12-5|Def. §12.5]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|§10.3]], [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^prop-12-2|§12.2]], [[Measure Theory §12 Measurable Functions#^def-12-5|Def. §12.5]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]]
 
 > [!remark] Remark
 > Since the product and sum of measurable functions are measurable ([[Measure Theory §12 Measurable Functions#^thm-12-3|Theorem §12.3]]), this immediately gives: if $f$ and $g$ are measurable and $g \neq 0$ a.e., then $f/g = f \cdot (1/g)$ is measurable.
@@ -529,7 +529,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ^pf-12-12
 
-*Uses:* [[Measure Theory §10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]], [[Measure Theory §9 Lebesgue Outer Measure#^prop-9-1|§9.1]], [[Measure Theory §10 Lebesgue Measurable Sets#^thm-10-3|§10.3]], [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]]
+*Uses:* [[Measure Theory §10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Measure Theory §12 Measurable Functions#^def-12-2|Def. §12.2]]
 
 > [!remark]- Connections
 > - This is where completeness of Lebesgue measure (every subset of a null set is measurable) enters; the integral ignores such changes too: [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^prop-14-9|Proposition §14.9]].
@@ -575,7 +575,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 > [!remark]- Connections
 > - General-topology form of “compact = bounded and closed”: [[Heine–Borel Theorem]].
-> - Compactly supported continuous functions are dense in $L^1$: [[Measure Theory §16 The L¹ Space and Density Theorems#^thm-16-7|Theorem §16.7]].
+> - Compactly supported continuous functions are dense in $L^1$: [[Continuous Functions of Compact Support are Dense in L¹|Theorem §16.7]].
 
 ## Approximation by Simple Functions
 
@@ -650,7 +650,7 @@ The following theorem shows that every non-negative measurable function can be a
 
 > [!remark]- Connections
 > - Partitions the *range* of $f$, where Darboux sums partition the *domain*: [[Measure Theory §8 Motivation꞉ The Riemann Integral#^def-8-2|Def. §8.2]], [[Single Variable Analysis §32 The Definition of the Riemann Integral|451 §32]].
-> - With the [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-4|Monotone Convergence Theorem]] this gives $\int \varphi_k \to \int f$, used for [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|linearity of the integral]].
+> - With the [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] this gives $\int \varphi_k \to \int f$, used for [[Measure Theory §14 The Lebesgue Integral for Simple Functions#^thm-14-8|linearity of the integral]].
 
 > [!theorem] Theorem §12.15: Approximation by Simple Functions: General Case
 > Let $f: E \to \overline{\mathbb{R}}$ be a measurable function. Then there exists a sequence of measurable simple functions $\{\psi_k\}_{k \geq 1}$ such that:
@@ -662,7 +662,7 @@ The following theorem shows that every non-negative measurable function can be a
 > [!proof]+ Proof
 > Write $f = f^+ - f^-$, where $f^+, f^- \geq 0$ are [[Measure Theory §12 Measurable Functions#^prop-12-11|measurable]].
 >
-> By [[Measure Theory §12 Measurable Functions#^thm-12-14|the previous theorem]], there exist increasing sequences of non-negative simple functions $\{\varphi_k^{(1)}\}$ and $\{\varphi_k^{(2)}\}$ with
+> By [[Simple Function Approximation Theorem|the previous theorem]], there exist increasing sequences of non-negative simple functions $\{\varphi_k^{(1)}\}$ and $\{\varphi_k^{(2)}\}$ with
 >
 > $$
 > \varphi_k^{(1)}(x) \to f^+(x), \qquad \varphi_k^{(2)}(x) \to f^-(x) \quad \text{for all } x \in E.
@@ -675,7 +675,7 @@ The following theorem shows that every non-negative measurable function can be a
 
 ^pf-12-15
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^prop-12-11|§12.11]], [[Measure Theory §12 Measurable Functions#^thm-12-14|§12.14]], [[Measure Theory §12 Measurable Functions#^prop-12-10|§12.10]], [[Measure Theory §12 Measurable Functions#^rem-12-6|Rem. §12.6]]
+*Uses:* [[Measure Theory §12 Measurable Functions#^prop-12-11|§12.11]], [[Simple Function Approximation Theorem|§12.14]], [[Measure Theory §12 Measurable Functions#^prop-12-10|§12.10]], [[Measure Theory §12 Measurable Functions#^rem-12-6|Rem. §12.6]]
 
 > [!remark] Remark
 > The difference of two simple functions is simple: if $\varphi = \sum a_i \chi_{A_i}$ and $\psi = \sum b_j \chi_{B_j}$, then $\varphi - \psi$ takes only finitely many values (at most $|\{a_i\}| \cdot |\{b_j\}|$ distinct values).
@@ -726,7 +726,7 @@ The following theorem shows that every non-negative measurable function can be a
 
 > [!remark]- Connections
 > - The same example in MATH 451: [[Single Variable Analysis §24 Uniform Convergence#^ex-24-2|451 Example §24.2]].
-> - Uniform after removing a small set near $1$: [[Measure Theory §13 Egorov's and Lusin's Theorems#^ex-13-1|Example §13.1]] ([[Measure Theory §13 Egorov's and Lusin's Theorems#^thm-13-1|Egorov]]).
+> - Uniform after removing a small set near $1$: [[Measure Theory §13 Egorov's and Lusin's Theorems#^ex-13-1|Example §13.1]] ([[Egorov's Theorem|Egorov]]).
 
 > [!theorem] Theorem §12.16: Uniform Limit of Continuous Functions
 > Let $\{f_k\}_{k \in \mathbb{N}}$ be a sequence of continuous functions on $E$. If $f_k \to f$ uniformly on $E$, then $f$ is continuous on $E$.
@@ -745,7 +745,7 @@ The following theorem shows that every non-negative measurable function can be a
 *Uses:* [[Single Variable Analysis §24 Uniform Convergence#^thm-24-2|451 §24.2]]
 
 > [!remark]- Connections
-> - Used in Step 2 of [[Measure Theory §13 Egorov's and Lusin's Theorems#^thm-13-3|Lusin's Theorem]].
+> - Used in Step 2 of [[Lusin's Theorem|Lusin's Theorem]].
 
 > [!remark] Remark: A.e. Convergence Preserves Measurability
 > If $\{f_k\}$ is a sequence of measurable functions on $E$ and $f_k \to f$ a.e. on $E$, then $f$ is measurable. (This follows from the fact that [[Measure Theory §12 Measurable Functions#^cor-12-8|pointwise limits of measurable functions are measurable]], combined with the proposition that [[Measure Theory §12 Measurable Functions#^prop-12-12|functions equal a.e. to measurable functions are measurable]].)
@@ -764,7 +764,7 @@ The following theorem shows that every non-negative measurable function can be a
 > [!proof]+ Proof
 > Suppose $|f(x)| \leq M$ for all $x \in E$. Then $0 \leq f^+(x) \leq M$ and $0 \leq f^-(x) \leq M$.
 >
-> Let $\{\varphi_k^{(1)}\}$ and $\{\varphi_k^{(2)}\}$ be the approximating sequences for $f^+$ and $f^-$ from the [[Measure Theory §12 Measurable Functions#^thm-12-14|approximation theorem]]. For $k > M$, every $x \in E$ satisfies $f^+(x) < k$, so $x \notin E_k$ (the set where $f^+ \geq k$). Thus:
+> Let $\{\varphi_k^{(1)}\}$ and $\{\varphi_k^{(2)}\}$ be the approximating sequences for $f^+$ and $f^-$ from the [[Simple Function Approximation Theorem|approximation theorem]]. For $k > M$, every $x \in E$ satisfies $f^+(x) < k$, so $x \notin E_k$ (the set where $f^+ \geq k$). Thus:
 >
 > $$
 > 0 \leq f^+(x) - \varphi_k^{(1)}(x) \leq \frac{1}{2^{k-1}} \quad \text{for all } x \in E.
@@ -786,14 +786,14 @@ The following theorem shows that every non-negative measurable function can be a
 
 ^pf-12-17
 
-*Uses:* [[Measure Theory §12 Measurable Functions#^thm-12-14|§12.14]], [[Measure Theory §12 Measurable Functions#^thm-12-15|§12.15]], [[Measure Theory §12 Measurable Functions#^prop-12-10|§12.10]], [[Measure Theory §12 Measurable Functions#^prop-12-11|§12.11]], [[Measure Theory §12 Measurable Functions#^def-12-9|Def. §12.9]], [[Single Variable Analysis §24 Uniform Convergence#^thm-24-1|451 §24.1]]
+*Uses:* [[Simple Function Approximation Theorem|§12.14]], [[Measure Theory §12 Measurable Functions#^thm-12-15|§12.15]], [[Measure Theory §12 Measurable Functions#^prop-12-10|§12.10]], [[Measure Theory §12 Measurable Functions#^prop-12-11|§12.11]], [[Measure Theory §12 Measurable Functions#^def-12-9|Def. §12.9]], [[Single Variable Analysis §24 Uniform Convergence#^thm-24-1|451 §24.1]]
 
 > [!remark]- Connections
-> - Used in Step 2 of [[Measure Theory §13 Egorov's and Lusin's Theorems#^thm-13-3|Lusin's Theorem]].
+> - Used in Step 2 of [[Lusin's Theorem|Lusin's Theorem]].
 
 ## Set-Theoretic Characterization of Convergence
 
-The following characterization translates the $\epsilon$-$N$ definition of convergence into set-theoretic language, which is essential for proving measurability of limits and for [[Measure Theory §13 Egorov's and Lusin's Theorems#^thm-13-1|Egorov's theorem]].
+The following characterization translates the $\epsilon$-$N$ definition of convergence into set-theoretic language, which is essential for proving measurability of limits and for [[Egorov's Theorem|Egorov's theorem]].
 
 > [!theorem] Proposition §12.18: Convergence as Set Membership
 > Let $f, f_1, f_2, \ldots$ be functions on $E$ with $f$ finite-valued. Then $f_k(x_0) \to f(x_0)$ as $k \to \infty$ if and only if
@@ -838,4 +838,4 @@ The following characterization translates the $\epsilon$-$N$ definition of conve
 ^def-12-10
 
 > [!remark]- Connections
-> - The inner unions $\bigcup_{k \geq \ell}\{|f_k - f| \geq 1/j\}$ are exactly the sets $E_\ell^{(j)}$ in the proof of [[Measure Theory §13 Egorov's and Lusin's Theorems#^thm-13-1|Egorov's Theorem]].
+> - The inner unions $\bigcup_{k \geq \ell}\{|f_k - f| \geq 1/j\}$ are exactly the sets $E_\ell^{(j)}$ in the proof of [[Egorov's Theorem|Egorov's Theorem]].

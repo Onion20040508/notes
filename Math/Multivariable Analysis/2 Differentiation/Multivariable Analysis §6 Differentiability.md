@@ -97,7 +97,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 *Uses:* [[Multivariable Analysis §4 Partial Derivatives#^def-4-1|Def. §4.1]], [[Multivariable Analysis §3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]]
 
 > [!remark]- Connections
-> - MATH 451 version: [[Single Variable Analysis §28 Basic Properties of the Derivative#^def-28-1|The Derivative]]; for maps $\mathbb{R}^n \to \mathbb{R}^m$ the derivative becomes the [[Multivariable Analysis §13 The Inverse Function Theorem#^def-13-1|Jacobian matrix]] of §13, and in §22 it is the 1-form $df$ ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-6|§22.6]]).
+> - MATH 451 version: [[Single Variable Analysis §28 Basic Properties of the Derivative#^def-28-1|The Derivative]]; for a mapping $(x, y) \mapsto (\varphi, \psi)$ the derivative becomes the [[Multivariable Analysis §13 The Inverse Function Theorem#^def-13-1|Jacobian matrix]] of §13, and in §22 it is the 1-form $df$ ([[Multivariable Analysis §22 The Algebra of Differential Forms#^prop-22-6|§22.6]]).
 
 > [!definition] Definition §6.2: The Total Derivative and the Jacobian Matrix
 > Let $f: \mathbb{R}^2 \to \mathbb{R}$ be differentiable at $(x_0, y_0)$. The **(total) derivative** of $f$ at $(x_0, y_0)$ is not a number — it is the [[Linear Algebra 3A Vector Space of Linear Maps#^ladr-3-1|linear map]]

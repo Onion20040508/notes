@@ -223,7 +223,7 @@ The following theorems show that continuous functions are closed under the stand
 > [!remark]- Connections
 > - MATH 451 versions: [[Single Variable Analysis §17 Continuous Functions#^thm-17-3|Arithmetic of Continuous Functions]] and [[Single Variable Analysis §17 Continuous Functions#^thm-17-4|Composition of Continuous Functions]].
 > - MATH 590 version for arbitrary spaces: [[Topology §9 Continuous Functions#^thm-9-4|Rules for Continuous Functions]].
-> - The differentiable analogues: [[Multivariable Analysis §6 Differentiability#^thm-6-6|§6.6]]–[[Multivariable Analysis §6 Differentiability#^thm-6-9|§6.9]] and the [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-1|Continuity of Composition]] in §10.
+> - The differentiable analogues: [[Multivariable Analysis §6 Differentiability#^thm-6-6|§6.6]]–[[Multivariable Analysis §6 Differentiability#^thm-6-9|§6.9]]; §3.4 is proved again as [[Multivariable Analysis §10 Composition of Functions and the Chain Rule#^thm-10-1|Continuity of Composition]] in §10.
 
 > [!remark] Remark: Summary: Algebra of Continuous Functions
 > If $f$ and $g$ are continuous at $(x_0, y_0)$, then so are:

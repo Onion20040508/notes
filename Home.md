@@ -8,7 +8,7 @@
 - [[Functional Analysis]]
 - [[Differentiable Manifolds]]
 - [[Topology]]
-- Measure Theory (to be added)
+- [[Measure Theory]]
 
 **Physics**
 - [[Quantum Field Theory I]]
