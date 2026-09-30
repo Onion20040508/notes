@@ -16,4 +16,4 @@ Physics: `principle`, `derivation`, `caution`.
 - Link to where something is proved or defined; backlinks show where it is used.
 - Physics notes name their conventions in the `conventions` property.
 
-wubba lubba dub dub!!!
+Wubba Lubba Dub Dub!!!
