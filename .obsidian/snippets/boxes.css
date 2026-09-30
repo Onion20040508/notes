@@ -1,14 +1,28 @@
-/* Math: Axler palette */
+/* Colors per box type (RGB of the frame color) */
 .callout[data-callout="definition"] { --callout-color: 200, 170, 60;  --callout-icon: lucide-book-open; }
 .callout[data-callout="theorem"]    { --callout-color: 100, 140, 180; --callout-icon: lucide-sigma; }
 .callout[data-callout="example"]    { --callout-color: 100, 160, 100; --callout-icon: lucide-flask-conical; }
 .callout[data-callout="remark"]     { --callout-color: 140, 100, 180; --callout-icon: lucide-message-square; }
 .callout[data-callout="proof"]      { --callout-color: 120, 120, 120; --callout-icon: lucide-square; }
-
-/* Physics: PHY 513 palette (adjust the RGB values to match your LaTeX notes) */
 .callout[data-callout="principle"]  { --callout-color: 90, 90, 190;   --callout-icon: lucide-atom; }
 .callout[data-callout="derivation"] { --callout-color: 90, 130, 150;  --callout-icon: lucide-git-commit-vertical; }
 .callout[data-callout="caution"]    { --callout-color: 200, 90, 60;   --callout-icon: lucide-triangle-alert; }
 
-/* Keep box bodies readable for math */
+/* tcolorbox look: colored frame, light fill, bold colored title */
+.callout[data-callout] {
+  border: 1.5px solid rgb(var(--callout-color));
+  background-color: rgba(var(--callout-color), 0.12);
+  border-radius: 4px;
+  padding: 10px 14px;
+}
+.callout[data-callout] .callout-title { color: rgb(var(--callout-color)); }
+.callout[data-callout] .callout-title-inner { font-weight: 600; }
 .callout-content { line-height: 1.6; }
+
+/* Proofs stay quiet: no fill, just a gray rule on the left */
+.callout[data-callout="proof"] {
+  border: none;
+  border-left: 3px solid rgba(var(--callout-color), 0.5);
+  background-color: transparent;
+  border-radius: 0;
+}
