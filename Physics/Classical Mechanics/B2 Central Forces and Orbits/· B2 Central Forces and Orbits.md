@@ -9,7 +9,7 @@ tags: [chapter, classical-mechanics]
 ← [[· B1 Newtonian Mechanics and Conservation Laws]] · ↑ [[Classical Mechanics]] · [[· B3 Systems of Particles and Rotation about an Axis]] →
 
 **Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (1), [[· A2 Kinematics|A2 Kinematics]] (2), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (7), [[· A4 Work and Energy|A4 Work and Energy]] (8), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (2), [[· A6 Rotation|A6 Rotation]] (3), [[· A8 Gravitation|A8 Gravitation]] (4), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (15)
-**Used by:** [[· B4 Collisions and Scattering|B4 Collisions and Scattering]] (8), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (2)
+**Used by:** [[· A8 Gravitation|A8 Gravitation]] (1), [[· B4 Collisions and Scattering|B4 Collisions and Scattering]] (8), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (2)
 
 ## Sections
 - [[§B2.1 The Two-Body Problem and the Effective Potential]] — Morin 7.1–7.2; Landau §13–14; H&S 7

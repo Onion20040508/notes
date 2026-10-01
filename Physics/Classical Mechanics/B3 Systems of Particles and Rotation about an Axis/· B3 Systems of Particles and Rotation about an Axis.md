@@ -9,7 +9,7 @@ tags: [chapter, classical-mechanics]
 ← [[· B2 Central Forces and Orbits]] · ↑ [[Classical Mechanics]] · [[· B4 Collisions and Scattering]] →
 
 **Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (5), [[· A2 Kinematics|A2 Kinematics]] (2), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (3), [[· A4 Work and Energy|A4 Work and Energy]] (4), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (16), [[· A6 Rotation|A6 Rotation]] (8), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (1)
-**Used by:** [[· B4 Collisions and Scattering|B4 Collisions and Scattering]] (1), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (6)
+**Used by:** [[· A6 Rotation|A6 Rotation]] (2), [[· B4 Collisions and Scattering|B4 Collisions and Scattering]] (1), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (6)
 
 ## Sections
 - [[§B3.1 Systems of Particles]] — Morin 5.5–5.7, 8.1; Landau §8–10
