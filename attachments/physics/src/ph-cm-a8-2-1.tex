@@ -6,7 +6,7 @@
       xlabel style={anchor=north west}, ylabel style={anchor=south},
       xtick=\empty, ytick=\empty, clip=false]
     % potential energy
-    \addplot[figB, domain=0.87:7.2, samples=120] {-1/x};
+    \addplot[figB, domain=1:7.2, samples=120] {-1/x};
     \node[figB, font=\scriptsize, anchor=north west] at (axis cs:4.6,-0.25) {$U(r) = -\dfrac{GMm}{r}$};
     % bound energy level
     \addplot[figR, domain=1:3.333, samples=2] {-0.3};

@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # A4 Work and Energy
 ← [[· A3 Newton's Laws of Motion]] · ↑ [[Classical Mechanics]] · [[· A5 Linear Momentum and Collisions]] →
 
-**Builds on:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (5)
-**Used by:** [[· A6 Rotation|A6 Rotation]] (7), [[· A8 Gravitation|A8 Gravitation]] (6), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (5)
+**Builds on:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (5), [[· A8 Gravitation|A8 Gravitation]] (2)
+**Used by:** [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (1), [[· A6 Rotation|A6 Rotation]] (11), [[· A8 Gravitation|A8 Gravitation]] (9), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (5)
 
 ## Sections
 - [[§A4.1 Work]] — UP Vol. 1 §7.1

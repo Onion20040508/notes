@@ -8,7 +8,7 @@ tags: [chapter, classical-mechanics]
 # A5 Linear Momentum and Collisions
 ← [[· A4 Work and Energy]] · ↑ [[Classical Mechanics]] · [[· A6 Rotation]] →
 
-**Builds on:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (8)
+**Builds on:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (9), [[· A4 Work and Energy|A4 Work and Energy]] (1)
 **Used by:** [[· A6 Rotation|A6 Rotation]] (5), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (4)
 
 ## Sections

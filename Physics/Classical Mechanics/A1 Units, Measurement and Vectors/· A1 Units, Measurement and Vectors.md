@@ -9,7 +9,7 @@ tags: [chapter, classical-mechanics]
 ↑ [[Classical Mechanics]] · [[· A2 Kinematics]] →
 
 **Builds on:** —
-**Used by:** [[· A2 Kinematics|A2 Kinematics]] (10), [[· A6 Rotation|A6 Rotation]] (4), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (1), [[· A8 Gravitation|A8 Gravitation]] (1)
+**Used by:** [[· A2 Kinematics|A2 Kinematics]] (10), [[· A6 Rotation|A6 Rotation]] (6), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (1), [[· A8 Gravitation|A8 Gravitation]] (1)
 
 ## Sections
 - [[§A1.1 Units, Standards and Conversion]] — UP Vol. 1 §1.1–1.3

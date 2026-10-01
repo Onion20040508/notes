@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # A2 Kinematics
 ← [[· A1 Units, Measurement and Vectors]] · ↑ [[Classical Mechanics]] · [[· A3 Newton's Laws of Motion]] →
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (10), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (1), [[· A8 Gravitation|A8 Gravitation]] (2)
-**Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (6), [[· A6 Rotation|A6 Rotation]] (4), [[· A8 Gravitation|A8 Gravitation]] (3), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (10), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (2), [[· A8 Gravitation|A8 Gravitation]] (3)
+**Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (6), [[· A6 Rotation|A6 Rotation]] (5), [[· A8 Gravitation|A8 Gravitation]] (7), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1)
 
 ## Sections
 - [[§A2.1 Position, Displacement, Velocity]] — UP Vol. 1 §3.1–3.2
@@ -39,5 +39,5 @@ tags: [chapter, classical-mechanics]
 - [[§A2.8 Relative Motion#^thm-a2-8-2|§A2.8.2]] Accelerations in Two Frames
 
 ## Models
-- [[§A2.3 Constant Acceleration and Free Fall#^mod-a2-3-3|§A2.3.3]] Free Fall
+- [[§A2.3 Constant Acceleration and Free Fall#^mod-a2-3-3|§A2.3.3]] Free Fall near Earth's Surface
 - [[§A2.6 Projectile Motion#^mod-a2-6-1|§A2.6.1]] Projectile

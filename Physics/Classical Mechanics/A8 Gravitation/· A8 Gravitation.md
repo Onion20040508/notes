@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # A8 Gravitation
 ← [[· A7 Static Equilibrium and Elasticity]] · ↑ [[Classical Mechanics]] · [[· A9 Fluid Mechanics]] →
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (1), [[· A2 Kinematics|A2 Kinematics]] (3), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (7), [[· A4 Work and Energy|A4 Work and Energy]] (6), [[· A6 Rotation|A6 Rotation]] (2), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1)
-**Used by:** [[· A2 Kinematics|A2 Kinematics]] (2), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (1), [[· A2 Kinematics|A2 Kinematics]] (7), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (8), [[· A4 Work and Energy|A4 Work and Energy]] (9), [[· A6 Rotation|A6 Rotation]] (3), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1)
+**Used by:** [[· A2 Kinematics|A2 Kinematics]] (3), [[· A4 Work and Energy|A4 Work and Energy]] (2), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (2)
 
 ## Sections
 - [[§A8.1 Universal Gravitation]] — UP Vol. 1 §13.1–13.2

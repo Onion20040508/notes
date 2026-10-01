@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # A6 Rotation
 ← [[· A5 Linear Momentum and Collisions]] · ↑ [[Classical Mechanics]] · [[· A7 Static Equilibrium and Elasticity]] →
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (4), [[· A2 Kinematics|A2 Kinematics]] (4), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (7), [[· A4 Work and Energy|A4 Work and Energy]] (7), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (5), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (2)
-**Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (1), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (6), [[· A8 Gravitation|A8 Gravitation]] (2)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (6), [[· A2 Kinematics|A2 Kinematics]] (5), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (7), [[· A4 Work and Energy|A4 Work and Energy]] (11), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (5), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (2)
+**Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (1), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (6), [[· A8 Gravitation|A8 Gravitation]] (3)
 
 ## Sections
 - [[§A6.1 Rotational Kinematics]] — UP Vol. 1 §10.1–10.3
