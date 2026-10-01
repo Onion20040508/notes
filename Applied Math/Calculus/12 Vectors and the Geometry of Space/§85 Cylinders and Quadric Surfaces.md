@@ -87,6 +87,9 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 
 *Stewart states the reduction to standard form without proof. Removing the cross terms $Dxy$, $Eyz$, $Fxz$ is a rotation of axes: diagonalizing the symmetric quadratic form by an orthonormal basis, [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|LADR 9.13]] (the spectral theorem). The linear terms are then removed by completing squares, as in Example §85.5.*
 
+> [!remark]- Connections
+> - Matrix version: [[§49★ Quadratic Forms#^thm-49-2|235 Thm. §49.2]] (the Principal Axes Theorem: an orthogonal change of variable $\mathbf{x} = P\mathbf{y}$ turns the quadratic part $\mathbf{x}^TA\mathbf{x}$ into $\lambda_1y_1^2 + \cdots + \lambda_ny_n^2$, with $P$ from the eigenvectors of the symmetric matrix $A$), worked in [[§49★ Quadratic Forms#^ex-49-2|235 Ex. §49.2]].
+
 > [!example] Example §85.2: An Ellipsoid by Traces
 > Use traces to sketch $x^2 + \dfrac{y^2}{9} + \dfrac{z^2}{4} = 1$.
 >

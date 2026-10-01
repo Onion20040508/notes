@@ -156,6 +156,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Series#^ex-14-4|451 Ex. §14.4]] (the same computation); every use in 451 is collected in [[Geometric series]].
+> - Matrix version: [[§16 The Leontief Input–Output Model#^prop-16-2|235 Prop. §16.2]] ($(I - C)^{-1} = I + C + C^2 + \cdots$ for a nonnegative matrix with column sums less than 1, the same telescoping identity), applied to the Leontief model.
 
 > [!example] Example §70.2: Identifying a and r
 > **(a)** Find the sum of $5 - \frac{10}{3} + \frac{20}{9} - \frac{40}{27} + \cdots$.

@@ -29,6 +29,7 @@ Computational courses, each linked to the rigorous treatment of the same results
 | Subject | Source | Status |
 |---|---|---|
 | [Calculus](Applied%20Math/Calculus) | MATH 233 (UMass) · Stewart, *Calculus: Early Transcendentals*, 9th ed. | complete |
+| [Applied Linear Algebra](Applied%20Math/Applied%20Linear%20Algebra) | MATH 235 (UMass) · Lay, Lay & McDonald, *Linear Algebra and Its Applications*, 5th ed. | complete (Ch. 1–7; Ch. 7 beyond the course) |
 
 ### Physics
 

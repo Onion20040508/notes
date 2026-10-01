@@ -30,6 +30,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 > [!remark]- Connections
 > - The same definition on $\mathbb{R}^n$, and the model for an abstract inner product: [[§19 Inner Products and Norms#^ladr-6-1|LADR 6.1]], [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]].
+> - Matrix version: [[§40 Inner Product, Length, and Orthogonality#^def-40-1|235 Def. §40.1]] (the inner product $\mathbf{u}^T\mathbf{v}$ in $\mathbb{R}^n$, a $1 \times n$ times an $n \times 1$ matrix), with the properties of Theorem §82.1 as [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|235 Thm. §40.1]].
 
 > [!theorem] Theorem §82.1: Properties of the Dot Product
 > If $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$ are vectors in $V_3$ and $c$ is a scalar, then
@@ -112,6 +113,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 > [!remark]- Connections
 > - Since $|\cos\theta| \le 1$, the theorem gives $|\mathbf{a} \cdot \mathbf{b}| \le |\mathbf{a}|\,|\mathbf{b}|$, the Cauchy–Schwarz inequality, [[§19 Inner Products and Norms#^ladr-6-14|LADR 6.14]]. In $\mathbb{R}^n$ there is no picture to measure angles, and the logic runs the other way: Cauchy–Schwarz is proved first, and then $\cos\theta = \mathbf{a} \cdot \mathbf{b}/(|\mathbf{a}||\mathbf{b}|)$ is the *definition* of the angle.
+> - Matrix version: [[§40 Inner Product, Length, and Orthogonality#^thm-40-9|235 Thm. §40.9]] (the same law-of-cosines proof, and the formula as the definition of the angle for $n > 3$).
 
 > [!theorem] Corollary §82.3: The Angle from the Dot Product
 > If $\theta$ is the angle between the nonzero vectors $\mathbf{a}$ and $\mathbf{b}$, then
@@ -176,6 +178,9 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 ^pf-82-4
 
 *Uses:* [[§82 The Dot Product#^def-82-3|Def. §82.3]], [[§82 The Dot Product#^thm-82-1|§82.1]], [[§82 The Dot Product#^thm-82-2|§82.2]], [[§82 The Dot Product#^cor-82-3|§82.3]]
+
+> [!remark]- Connections
+> - Matrix version: the orthogonality test becomes the definition in $\mathbb{R}^n$, [[§40 Inner Product, Length, and Orthogonality#^def-40-5|235 Def. §40.5]], with the Pythagorean theorem [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|235 Thm. §40.4]].
 
 > [!remark] Remark: The Sign of the Dot Product
 > Since $\cos\theta > 0$ for $0 \le \theta < \pi/2$ and $\cos\theta < 0$ for $\pi/2 < \theta \le \pi$, the dot product $\mathbf{a} \cdot \mathbf{b}$ (of nonzero vectors) is positive when $\theta$ is acute, $0$ when the vectors are perpendicular, and negative when $\theta$ is obtuse. It measures how far $\mathbf{a}$ and $\mathbf{b}$ point in the same direction. In the extreme cases, $\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|$ when they point in exactly the same direction ($\theta = 0$) and $\mathbf{a} \cdot \mathbf{b} = -|\mathbf{a}||\mathbf{b}|$ when they point in opposite directions ($\theta = \pi$).
@@ -307,6 +312,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 > [!remark]- Connections
 > - $\operatorname{proj}_{\mathbf{a}}\mathbf{b}$ is the orthogonal projection onto the line $\operatorname{span}(\mathbf{a})$, [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-56|LADR 6.56]], and $\mathbf{b} = \operatorname{proj}_{\mathbf{a}}\mathbf{b} + (\mathbf{b} - \operatorname{proj}_{\mathbf{a}}\mathbf{b})$ is the orthogonal decomposition of [[§19 Inner Products and Norms#^ladr-6-13|LADR 6.13]]. The foot $S$ is the point of the line closest to $R$: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
+> - Matrix version: [[§41 Orthogonal Sets#^def-41-3|235 Def. §41.3]] (projection onto a line in $\mathbb{R}^n$, $\hat{\mathbf{y}} = \frac{\mathbf{y} \cdot \mathbf{u}}{\mathbf{u} \cdot \mathbf{u}}\mathbf{u}$) and [[§41 Orthogonal Sets#^prop-41-3|235 Prop. §41.3]] (the decomposition $\mathbf{y} = \hat{\mathbf{y}} + \mathbf{z}$), worked in [[§41 Orthogonal Sets#^ex-41-2|235 Ex. §41.2]].
 
 > [!example] Example §82.4: Projections
 > **(a)** Find the scalar and vector projections of $\mathbf{b} = \langle 1, 1, 2 \rangle$ onto $\mathbf{a} = \langle -2, 3, 1 \rangle$.

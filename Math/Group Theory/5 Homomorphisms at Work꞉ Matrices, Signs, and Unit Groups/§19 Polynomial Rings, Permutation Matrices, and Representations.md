@@ -165,6 +165,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Linear-algebra home: the matrix of a linear map, [[§9 Matrices#^ladr-3-31|LADR 3.31]].
+> - Computational version: [[§12 The Inverse of a Matrix#^def-12-4|235 Def. §12.4]] (permutation matrices, all six for n = 3).
 
 > [!example] Example §19.2: $M(\sigma)$ for $\sigma = (1\,2\,3)$
 > Since $\sigma(1) = 2$, $\sigma(2) = 3$, $\sigma(3) = 1$, the columns are $e_2, e_3, e_1$:
@@ -203,6 +204,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - Linear-algebra home: matrix of a product is the product of the matrices, [[§9 Matrices#^ladr-3-43|LADR 3.43]]; orthogonal (real unitary) matrices, [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
 > - Composed with $\det$ it gives the sign: [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|The Sign Is a Homomorphism]].
+> - Computational version: the inverse of a permutation matrix is its transpose, worked in [[§12 The Inverse of a Matrix#^ex-12-4|235 Ex. §12.4]](c).
 
 > [!remark] Remark: Row vs. Column Convention
 > Some sources define the permutation matrix by rows, “row $i$ is $e_{\sigma(i)}$,” which produces the [[§9 Matrices#^ladr-3-54|transpose]] of ours, i.e. $M(\sigma^{-1})$; under that convention $M(\sigma)M(\tau) = M(\tau\sigma)$, reversed. The column convention above is the one compatible with right-to-left composition, $(f \circ g)(j) = f(g(j))$, as used in this course ([[§10 Cycle Notation and the Group S₃#^rem-10-1|Convention Warning]]). Since $\det M(\sigma^{-1}) = (\det M(\sigma))^{-1}$ ([[§34 Determinants#^ladr-9-49|LADR 9.49]]) and the determinant of a permutation matrix is $\pm 1$, the choice does not affect the determinant.

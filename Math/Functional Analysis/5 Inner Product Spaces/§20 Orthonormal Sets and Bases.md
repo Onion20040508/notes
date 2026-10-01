@@ -20,6 +20,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - The finite-dimensional version (orthonormal lists): [[§20 Orthonormal Bases#^ladr-6-22|LADR 6.22]].
+> - Computational version: [[§41 Orthogonal Sets#^def-41-1|235 Def. §41.1]] (orthogonal sets in ℝⁿ), [[§41 Orthogonal Sets#^def-41-4|235 Def. §41.4]] (orthonormal sets and bases).
 
 > [!definition] Definition §20.2: Complete Orthogonal Set
 > An orthogonal set $\{e_\alpha\}_{\alpha \in \Lambda}$ in $X$ is **complete** if the only vector orthogonal to all of its members is $0$:
@@ -60,6 +61,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - Finite-dimensional home: (a) is [[§19 Inner Products and Norms#^ladr-6-12|LADR 6.12]], (b) is [[§20 Orthonormal Bases#^ladr-6-24|LADR 6.24]].
+> - Computational version: (a) in ℝⁿ is [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|235 Thm. §40.4]].
 
 > [!theorem] Lemma §20.2: Finite Bessel Inequality
 > Let $\{e_\alpha\}_{\alpha \in \Lambda}$ be orthonormal in an inner product space $X$, let $e_1, \ldots, e_k$ be finitely many distinct members of it, and $x \in X$. Put $y = x - \sum_{j=1}^k (x, e_j)\, e_j$. Then $y \perp e_i$ for $i = 1, \ldots, k$, and
@@ -85,6 +87,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - Finite-dimensional home: [[§20 Orthonormal Bases#^ladr-6-26|LADR 6.26]] (Bessel's inequality for an orthonormal list).
+> - Computational version: [[§46 Inner Product Spaces#^prop-46-3|235 Prop. §46.3]] (the projection onto a finite-dimensional subspace is shorter, the step to Cauchy–Schwarz there) with [[§42 Orthogonal Projections#^thm-42-4|235 Thm. §42.4]] (projection from an orthonormal basis).
 
 ![[m556-20-1.svg]]
 *$x$ split into its component $\sum_j (x, e_j) e_j$ (red) in $\operatorname{span}\{e_1, \ldots, e_k\}$ and the remainder $y$ (blue) perpendicular to it. Pythagoras across the right angle is the identity $\|x\|^2 = \|y\|^2 + \sum_j |(x, e_j)|^2$; dropping the blue leg is Bessel.*
@@ -259,6 +262,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 
 > [!remark]- Connections
 > - Finite-dimensional home: [[§20 Orthonormal Bases#^ladr-6-27|LADR 6.27]], where an orthonormal basis is an orthonormal list that is also a basis; here the expansion is a series, not a finite linear combination.
+> - Computational version: [[§41 Orthogonal Sets#^def-41-4|235 Def. §41.4]] (orthonormal basis of a subspace of ℝⁿ, a finite basis).
 
 > [!theorem] Theorem §20.8: Characterizations of an Orthonormal Basis
 > Let $H$ be a Hilbert space and $\{e_\alpha\}_{\alpha \in \Lambda}$ an orthonormal set. The following are equivalent:
@@ -287,6 +291,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 > - Finite-dimensional home (expansion and Parseval in an orthonormal basis): [[§20 Orthonormal Bases#^ladr-6-30|LADR 6.30]].
 > - Restated in Dirac notation as the completeness relation: [[§25 The Completeness Relation#^thm-25-2|§25.2]], [[§25 The Completeness Relation#^cor-25-4|§25.4]].
 > - Used in Electromagnetism: the completeness of the Legendre polynomials in $L^2[-1, 1]$, which justifies expanding boundary potentials in Legendre series — [[§B3.4 Separation of Variables in Spherical Coordinates#^thm-b3-4-2|EM Theorem §B3.4.2]].
+> - Computational version: the finite expansion with the same coefficients, [[§41 Orthogonal Sets#^thm-41-2|235 Thm. §41.2]]; why the 235 lectures’ “basis” of harmonics is one only in this series sense, [[§25 Linearly Independent Sets; Bases#^rem-25-4|235 Remark §25.4]].
 
 > [!remark] Remark
 > In finite dimensions these are the familiar facts: a complete orthonormal set is a basis, every vector is the sum of its components, and its squared length is the sum of the squared components. The theorem says that all three survive in any Hilbert space once the sums are interpreted correctly — countable support, then convergence — and that [[§20 Orthonormal Sets and Bases#^thm-20-5|Bessel's inequality]] becomes an equality exactly for complete sets.
@@ -380,6 +385,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 > - Used for the particle on a ring: [[§25 The Completeness Relation#^ex-25-2|Ex. §25.2]].
 > - Used in Quantum Mechanics: the completeness of the infinite-well states, proved from this basis — [[§B1.3 Stationary States and Expansion in Energy Eigenstates#^thm-b1-3-3|QM Theorem §B1.3.3]].
 > - The density step it needs (continuous functions vanishing at the endpoints are dense in $L^2[0,2\pi]$) follows from [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 Thm. §19.19]](iii) by cutting the approximant off near the endpoints.
+> - Computational version, real form on C[0, 2π]: orthogonality of the trigonometric system [[§47 Applications of Inner Product Spaces#^prop-47-2|235 Prop. §47.2]], the coefficient formulas [[§47 Applications of Inner Product Spaces#^thm-47-3|235 Thm. §47.3]], and convergence in the mean [[§47 Applications of Inner Product Spaces#^thm-47-4|235 Thm. §47.4]], with worked Fourier approximations.
 
 > [!remark] Remark: Fourier Series
 > Read through Theorem [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]], this is the theory of Fourier series in $L^2$: every $f \in L^2[0,2\pi]$ is $f = \sum_{n \in \mathbb{Z}} c_n e_n$ with $c_n = (f, e_n) = \frac{1}{\sqrt{2\pi}} \int_0^{2\pi} f(x)\, e^{-inx}\, dx$, the series converging in the $L^2$ norm (not necessarily pointwise), and Parseval's equality reads $\int_0^{2\pi} |f|^2 = \sum_n |c_n|^2$.
@@ -430,6 +436,7 @@ Both examples have *countable* orthonormal bases. Wu announced for next lecture 
 
 > [!remark]- Connections
 > - Finite-dimensional home, where Gram–Schmidt suffices: [[§20 Orthonormal Bases#^ladr-6-35|LADR 6.35]].
+> - Computational version: [[§43 The Gram–Schmidt Process#^cor-43-2|235 Cor. §43.2]] (every nonzero subspace of ℝⁿ has an orthonormal basis, by Gram–Schmidt).
 
 > [!definition] Definition §20.5: Separable Space
 > A normed linear space $X$ is **separable** if it has a countable dense subset: a countable $D \subset X$ such that every $x \in X$ is a limit of a sequence in $D$. Completeness is not required.
@@ -619,6 +626,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > [!remark]- Connections
 > - Finite-dimensional home: [[Gram–Schmidt procedure|LADR 6.32]].
 > - Used in Electromagnetism: Gram–Schmidt applied to $1, x, x^2, \dots$ in $L^2[-1, 1]$ gives the Legendre polynomials up to normalization — [[§B3.4 Separation of Variables in Spherical Coordinates#^rem-b3-4-1|EM Remark: Legendre polynomials are orthogonalized powers]], with their properties in [[§B3.4 Separation of Variables in Spherical Coordinates#^thm-b3-4-2|EM Theorem §B3.4.2]].
+> - Computational version: [[§43 The Gram–Schmidt Process#^thm-43-1|235 Thm. §43.1]] (with worked examples and the QR factorization), and in inner product spaces [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]].
 
 > [!proof]+ Proof of (⇐) in Theorem §20.17
 > Assume $D = \{y_1, y_2, \ldots\}$ is a countable dense subset of $H$. If $H = \{0\}$, the empty set is a countable orthonormal basis; assume $H \neq \{0\}$, so $D$ contains a nonzero element.

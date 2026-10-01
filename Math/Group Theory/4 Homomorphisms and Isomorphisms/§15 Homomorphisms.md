@@ -60,6 +60,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^def-21-6|Kernel and Image]] (590 §21.6).
 > - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space]] (LADR 3.11) and [[§8 Null Spaces and Ranges#^ladr-3-16|Range]] (LADR 3.16).
+> - Computational version for linear maps: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5|235 Def. §24.5]] (kernel and range), computed as Nul A and Col A.
 
 > [!example] Example §15.1: Homomorphisms and Their Kernels
 > 1. $\det: GL_n(\mathbb{R}) \to \mathbb{R}^\times$ is a homomorphism, since $\det(AB) = \det A \det B$ ([[§34 Determinants#^ladr-9-49|LADR 9.49]]). Kernel: $SL_n(\mathbb{R}) = \{A : \det A = 1\}$. Image: all of $\mathbb{R}^\times$ (use $\operatorname{diag}(\lambda, 1, \ldots, 1)$).
@@ -96,6 +97,7 @@ tags: [group-theory, math493]
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-8|Proposition §21.8]] (590 §21.8).
 > - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]] (LADR 3.13), [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]] (LADR 3.18).
 > - Kernels are even normal: [[§36 Sources of Normal Subgroups#^prop-36-2|Kernels Are Normal]] (§36.2).
+> - Computational version for linear maps: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|235 Thm. §24.5]].
 
 > [!theorem] Proposition §15.3: Surjectivity and Injectivity via Image and Kernel
 > Let $\varphi: G \to H$ be a homomorphism.
@@ -115,6 +117,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-8|Proposition §21.8]] (590 §21.8).
 > - Linear-algebra version: [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]] (LADR 3.15).
+> - Computational version for linear maps ℝⁿ → ℝᵐ: [[§9 The Matrix of a Linear Transformation#^thm-9-2|235 Thm. §9.2]] (one-to-one iff T(x) = 0 has only the trivial solution, with worked examples).
 
 > [!example] Example §15.2: $\mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$
 > Since $2^6 = 64 = 9 \cdot 7 + 1 \equiv 1 \pmod 7$, the map $\varphi: \mathbb{Z}/6\mathbb{Z} \to (\mathbb{Z}/7\mathbb{Z})^\times$, $k \mapsto 2^k$, is well-defined, and it is a homomorphism ($2^{k+l} = 2^k 2^l$). Its values are $2^0 = 1$, $2^1 = 2$, $2^2 = 4$, $2^3 = 8 \equiv 1$, $2^4 \equiv 2$, $2^5 \equiv 4$. So

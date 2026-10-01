@@ -93,6 +93,9 @@ A mathematical model describes a real-world phenomenon by a function. This secti
 
 ^def-2-3
 
+> [!remark]- Connections
+> - Matrix version: [[§45 Applications to Linear Models#^def-45-2|235 Def. §45.2]] and [[§45 Applications to Linear Models#^prop-45-1|235 Prop. §45.1]] (the regression line is the least-squares solution of $X\boldsymbol\beta = \mathbf{y}$, found from the normal equations [[§44 Least-Squares Problems#^thm-44-1|235 Thm. §44.1]]), worked in [[§45 Applications to Linear Models#^ex-45-1|235 Ex. §45.1]]; the quadratic fit of Example §2.3 is the design matrix of [[§45 Applications to Linear Models#^ex-45-2|235 Ex. §45.2]](a).
+
 > [!example] Example §2.2: An Empirical Linear Model for CO₂
 > The average carbon dioxide level in the atmosphere, measured at Mauna Loa Observatory (in parts per million), was:
 >

@@ -99,6 +99,9 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 
 *Uses:* [[§83 The Cross Product#^def-83-1|Def. §83.1]], [[§83 The Cross Product#^def-83-2|Def. §83.2]], [[§81 Vectors#^prop-81-6|§81.6]]
 
+> [!remark]- Connections
+> - Matrix version of Definition §83.2 and Proposition §83.1: [[§20 Introduction to Determinants#^def-20-2|235 Def. §20.2]] (the same expansion along the first row, for $n \times n$ matrices) and [[§20 Introduction to Determinants#^prop-20-3|235 Prop. §20.3]] (the diagonal rule for $3 \times 3$), with worked examples.
+
 > [!example] Example §83.1: Computing Cross Products
 > **(a)** If $\mathbf{a} = \langle 1, 3, 4 \rangle$ and $\mathbf{b} = \langle 2, 7, -5 \rangle$, then
 >
@@ -396,6 +399,7 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 
 > [!remark]- Connections
 > - Together with Theorem §83.9: $|\det|$ of the matrix with rows $\mathbf{a}, \mathbf{b}, \mathbf{c}$ is the volume of the image of the unit cube, the case $n = 3$ of [[§34 Determinants#^ladr-9-61|LADR 9.61]] ($T$ changes volume by the factor $|\det T|$); the general determinant formula is [[§34 Determinants#^ladr-9-46|LADR 9.46]].
+> - Matrix version, also of Corollary §83.6: [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-4|235 Thm. §22.4]] (area and volume as $|\det A|$ for the matrix with columns the edge vectors, proved by column operations), worked in [[§22 Cramer’s Rule, Volume, and Linear Transformations#^ex-22-4|235 Ex. §22.4]].
 
 > [!example] Example §83.3: Triple Products by the Rules
 > Let $\mathbf{a} = \mathbf{i} + \mathbf{j} + \mathbf{k}$, $\mathbf{b} = 3\mathbf{i} - 2\mathbf{j} + \mathbf{k}$, $\mathbf{c} = \mathbf{j} - 5\mathbf{k}$. Find $|\mathbf{b} \times \mathbf{c}|$, $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$, $\mathbf{c} \times \mathbf{c}$ and $\mathbf{a} \times (\mathbf{b} \times \mathbf{c})$.

@@ -122,6 +122,7 @@ In each example, associativity is inherited from a known associative operation (
 > - Invertible matrices in LADR: [[§10 Invertibility and Isomorphisms#^ladr-3-80|Invertible, inverse, A⁻¹]]; associativity of composing linear maps: [[§7 Vector Space of Linear Maps#^ladr-3-8|Algebraic properties of products of linear maps]].
 > - $S_n$ sits inside $GL_n(k)$ via permutation matrices: [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]].
 > - As a topological group: [[§5 Topological Groups and Classical Matrix Groups#^def-5-4|591 Def. §5.4]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-4|591 Prop. §5.4]]; over ℝ it has exactly two components, separated by the sign of det, [[§5 Topological Groups and Classical Matrix Groups#^thm-5-6|591 Thm. §5.6]].
+> - Computational version: invertible matrices and their inverses by row reduction, [[§12 The Inverse of a Matrix#^def-12-1|235 Def. §12.1]]; the determinant facts used, [[§21 Properties of Determinants#^thm-21-3|235 Thm. §21.3]] (invertible iff det ≠ 0) and [[§21 Properties of Determinants#^thm-21-9|235 Thm. §21.9]] (det is multiplicative).
 
 > [!definition] Definition §3.7: Special Linear, Orthogonal, and Special Orthogonal Groups
 > For a field $k$ and $n \geq 1$:
@@ -137,6 +138,7 @@ In each example, associativity is inherited from a known associative operation (
 > - Real orthogonal matrices are the real unitary matrices: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|Characterizations of unitary matrices]] (condition $Q^*Q = QQ^* = I$); rotations: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-52|Rotation of R²]].
 > - The same groups as topological groups and manifolds in 591: [[§5 Topological Groups and Classical Matrix Groups#^def-5-5|591 Def. §5.5]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-6|591 Def. §5.6]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-7|591 Def. §5.7]], and [[Classical Groups Are Manifolds]] (591 Thm. §5.8; workhorse example [[Classical groups O(n), U(n), SL(n,ℝ)]]).
 > - Used in Relativity: the Lorentz group is defined as $O(n)$ is, with the metric $\eta$ in place of the identity — [[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-1|REL Def. §B1.2.1]]; the rotations sit inside it, with $R^{\mathsf T}R = 1$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]].
+> - Computational version: [[§41 Orthogonal Sets#^def-41-5|235 Def. §41.5]] and [[§41 Orthogonal Sets#^prop-41-6|235 Prop. §41.6]] (orthogonal matrices have orthonormal columns and rows and det ±1, with worked examples).
 
 > [!example] Example §3.1: Groups and Non-Groups
 > Deciding whether $(G, \cdot)$ is a group usually comes down to identity and inverses; associativity is inherited from arithmetic or composition.

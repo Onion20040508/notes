@@ -9,7 +9,7 @@ tags: [applied-linear-algebra, math235]
 ---
 ← [[§34 Diagonalization]] · ↑ [[· 5 Matrix Eigenvalues and Eigenvectors]] · [[§36 Complex Eigenvalues]] →
 
-*Lay, Section 5.4 · MATH 235 lecture L20.*
+*Lay, Section 5.4 · MATH 235 lectures L15, L20.*
 
 This section reads the factorization $A = PDP^{-1}$ as a statement about linear transformations: $\mathbf{x} \mapsto A\mathbf{x}$ and $\mathbf{u} \mapsto D\mathbf{u}$ are the same transformation, described in two coordinate systems. To say this, any linear transformation $T$ between finite-dimensional spaces gets a matrix relative to chosen bases, by recording the coordinate vectors of the images of the basis vectors. For $T(\mathbf{x}) = A\mathbf{x}$ on $\mathbb{R}^n$ and the basis formed by the columns of $P$, that matrix is $P^{-1}AP$. So the matrices similar to $A$ are exactly the matrix representations of $\mathbf{x} \mapsto A\mathbf{x}$, and diagonalizing $A$ means finding a basis in which the representation is diagonal. When no such basis exists, a good basis can still make the matrix triangular (the Jordan form).
 
@@ -229,6 +229,29 @@ Every square matrix is similar to a matrix in Jordan form, using a basis of eige
 *Uses:* [[§34 Diagonalization#^thm-34-2|§34.2]], [[§28 Rank#^thm-28-3|§28.3]] (the Rank Theorem), [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem)
 
 In Example §35.3, $N = A + 2I$ and $N\mathbf{b}_2 = (12 - 9, 8 - 6) = (3, 2) = \mathbf{b}_1$: Lay's basis is exactly the one built in the proof.
+
+A diagonal $\mathcal{B}$-matrix makes the powers of a transformation easy to compute, also when $V$ is not $\mathbb{R}^n$: by (5), applied $N$ times, $[T^N(\mathbf{x})]_{\mathcal{B}} = [T]_{\mathcal{B}}^N[\mathbf{x}]_{\mathcal{B}}$.
+
+> [!example] Example §35.4: Powers of an Operator on Polynomials
+> Let $V$ be the subspace of $\mathbb{P}_3$ consisting of the polynomials $\mathbf{p}$ with $\mathbf{p}(0) = 0$, with basis $\mathcal{B} = \{t, t^2, t^3\}$, and let $T : V \to V$ be $T(\mathbf{p}) = \frac12 t\,\mathbf{p}'(t)$ (linear, because differentiation is). Does $T^N$ have a limit as $N \to \infty$?
+>
+> **Translate to $\mathbb{R}^3$.** $T(t) = \frac12 t \cdot 1 = \frac12 t$, $T(t^2) = \frac12 t \cdot 2t = t^2$ and $T(t^3) = \frac12 t \cdot 3t^2 = \frac32 t^3$, so the basis polynomials are mapped to multiples of themselves and
+>
+> $$
+> [T]_{\mathcal{B}} = \begin{bmatrix} 1/2 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 3/2 \end{bmatrix}, \qquad [T^N]_{\mathcal{B}} = [T]_{\mathcal{B}}^N = \begin{bmatrix} (1/2)^N & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & (3/2)^N \end{bmatrix} .
+> $$
+>
+> **The limit.** For $\mathbf{p} = at + bt^2 + ct^3$ in $V$,
+>
+> $$
+> T^N(\mathbf{p}) = \big(\tfrac12\big)^N a\,t + b\,t^2 + \big(\tfrac32\big)^N c\,t^3 .
+> $$
+>
+> As $N \to \infty$, $(\frac12)^N \to 0$ and $(\frac32)^N \to \infty$. So $T^N$ has no limit: the $(3, 3)$-entry of $[T^N]_{\mathcal{B}}$ grows without bound. For a single $\mathbf{p}$, the coefficients of $T^N(\mathbf{p})$ converge exactly when $c = 0$, that is, when $\mathbf{p}$ has no $t^3$ term, and then $T^N(\mathbf{p}) \to bt^2$.
+>
+> *Source: 235 lecture L15*
+
+^ex-35-4
 
 > [!remark] Remark: Computing a B-Matrix Efficiently
 > To compute $P^{-1}AP$, compute $AP$ and then row reduce the augmented matrix $[\,P \;\; AP\,]$ to $[\,I \;\; P^{-1}AP\,]$. A separate computation of $P^{-1}$ is unnecessary. (Row reduction of $[\,P \;\; B\,]$ to $[\,I \;\; X\,]$ solves $PX = B$, column by column; here $B = AP$.)

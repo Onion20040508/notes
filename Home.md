@@ -14,6 +14,7 @@
 
 **Applied Math**
 - [[Calculus]]
+- [[Applied Linear Algebra]]
 
 **Physics**
 - [[Classical Mechanics]]

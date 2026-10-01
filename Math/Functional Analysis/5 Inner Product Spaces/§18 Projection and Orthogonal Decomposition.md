@@ -110,6 +110,7 @@ Everything from here on uses completeness, and the results are the ones for whic
 > [!remark]- Connections
 > - The finite-dimensional case, minimizing distance to a subspace: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
 > - The minimize-then-perturb pattern: [[Functional Analysis Problem-Solving Techniques#^rem-t11|Technique 11]].
+> - Computational version: [[§42 Orthogonal Projections#^thm-42-3|235 Thm. §42.3]] (the case of a subspace of ℝⁿ, where the closest point is the orthogonal projection, with worked distances).
 
 > [!remark] Remark: Where Each Hypothesis Enters
 > Convexity puts the midpoint $\tfrac{y_m + y_n}{2}$ in $K$, which is what makes the cross term in the parallelogram law large and forces $\|y_n - y_m\|$ small; this is the whole mechanism, and it is why the parallelogram law — hence an inner product, not merely a norm — is needed. Completeness of $H$ turns the Cauchy sequence into a limit; closedness of $K$ keeps that limit in $K$. The theorem fails without each: in $\ell^1$ (no inner product) closest points need not be unique; in an incomplete inner product space a minimizing sequence need not converge; for $K$ open the infimum need not be attained. The same midpoint argument gives uniqueness.
@@ -139,6 +140,7 @@ Everything from here on uses completeness, and the results are the ones for whic
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[§19 Inner Products and Norms#^ladr-6-10|LADR 6.10]] (orthogonal), [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]] (orthogonal complement).
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^def-40-5|235 Def. §40.5]] (orthogonal vectors), [[§40 Inner Product, Length, and Orthogonality#^def-40-6|235 Def. §40.6]] (orthogonal complement of a subspace of ℝⁿ).
 
 Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ iff $y \perp x$ by skew-symmetry.
 
@@ -160,6 +162,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|LADR 6.48]].
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|235 Thm. §40.5]] (in ℝⁿ the complement is a subspace, tested on a spanning set).
 
 > [!definition] Definition §18.2: Internal Direct Sum
 > Let $Y_1, Y_2$ be linear subspaces of a linear space $X$. We write $X = Y_1 \oplus Y_2$, and call $X$ the **internal direct sum** of $Y_1$ and $Y_2$, if for every $x \in X$ there are unique $y_1 \in Y_1$ and $y_2 \in Y_2$ with $x = y_1 + y_2$.
@@ -233,6 +236,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > - Announced in Chapter 1 as the missing hypothesis of [[§1 Linear Spaces#^cor-1-13|§1.13]] (orthogonal complement as a model of the quotient).
 > - The finite-dimensional home: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]] ($V = U \oplus U^\perp$), [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] ($(U^\perp)^\perp = U$), [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]] (orthogonal projection).
 > - Used for the Riesz representation theorem: [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-4|§19.4]].
+> - Computational version: [[§42 Orthogonal Projections#^thm-42-1|235 Thm. §42.1]] (the ℝⁿ case, with the projection computed from an orthogonal basis) and, for (2), [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|235 Cor. §40.8]].
 
 > [!remark] Remark: The Promise of Lecture 1 is Kept
 > Corollary [[§1 Linear Spaces#^cor-1-13|§1.13]] (Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§1 Linear Spaces#Quotient Spaces|§1]] suggested; the [[§1 Linear Spaces#^rem-1-10|remark following Corollary §1.13]] identified exactly this theorem as the missing piece. The hypotheses are sharp: $c_{00} \subset \ell^2$ (not closed) has $c_{00}^\perp = \{0\}$, so $c_{00} + c_{00}^\perp \neq \ell^2$, while $(c_{00}^\perp)^\perp = \ell^2 \neq c_{00}$ — both (1) and (2) fail. For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-6|§18.6]]).
@@ -262,6 +266,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 > [!remark]- Connections
 > - Re-proved for orthonormal sets: [[§20 Orthonormal Sets and Bases#^prop-20-9|§20.9]].
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|235 Thm. §40.5]](1) (orthogonality to a subspace of ℝⁿ is tested on a spanning set).
 
 > [!theorem] Theorem §18.6: The Double Complement
 > For any subset $M$ of a Hilbert space $H$,
@@ -294,6 +299,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > [!remark]- Connections
 > - The finite-dimensional home: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-54|LADR 6.54]].
 > - The special case of an orthonormal set, re-proved: [[§20 Orthonormal Sets and Bases#^prop-20-9|§20.9]]; as an application of [[Functional Analysis Problem-Solving Techniques#^ex-t14|Technique 14]].
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|235 Cor. §40.8]] (the double complement in ℝⁿ) and [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|235 Thm. §40.6]] (the complement of the rows of a matrix is its null space).
 
 > [!remark] Remark
 > Without completeness only one inclusion survives: $\overline{\operatorname{span}}\, M \subset (M^\perp)^\perp$ holds in any inner product space, because $(M^\perp)^\perp$ is a closed subspace (Proposition [[§18 Projection and Orthogonal Decomposition#^prop-18-3|§18.3]]) containing $M$. The reverse inclusion is where Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-4|§18.4]](2), and hence completeness, is used. The last statement of the theorem is the general form of Proposition [[§20 Orthonormal Sets and Bases#^prop-20-9|§20.9]]: an orthonormal set is complete exactly when its span is dense.

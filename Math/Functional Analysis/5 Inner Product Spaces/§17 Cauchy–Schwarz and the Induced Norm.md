@@ -99,6 +99,7 @@ tags: [functional-analysis, math556]
 > - The finite-dimensional home: [[Cauchy–Schwarz inequality|LADR 6.14]].
 > - The rotation $e^{i\theta}$ that makes a complex number real: [[Functional Analysis Problem-Solving Techniques#^rem-t8|Technique 8]].
 > - In $L^2$ it is the case $p = q = 2$ of Hölder's inequality, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|551 Thm. §19.5]].
+> - Computational version: [[§46 Inner Product Spaces#^thm-46-4|235 Thm. §46.4]] (real inner product spaces).
 
 ## The Induced Norm and Hilbert Spaces
 
@@ -135,6 +136,7 @@ tags: [functional-analysis, math556]
 > [!remark]- Connections
 > - The finite-dimensional home: [[§19 Inner Products and Norms#^ladr-6-7|LADR 6.7]], [[§19 Inner Products and Norms#^ladr-6-9|LADR 6.9]], [[Triangle inequality|LADR 6.17]].
 > - The norm axioms in 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|551 Def. §19.2]].
+> - Computational version: length from an inner product, [[§46 Inner Product Spaces#^def-46-2|235 Def. §46.2]], and the triangle inequality, [[§46 Inner Product Spaces#^thm-46-5|235 Thm. §46.5]].
 
 > [!remark] Remark
 > So every inner product space is a normed linear space, and all of Chapters [[· 3 Normed Linear Spaces|3]] and [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4]] applies to it. The converse question — which norms come from an inner product — is answered in [[§17 Cauchy–Schwarz and the Induced Norm#Which Norms Come from an Inner Product|§17]].

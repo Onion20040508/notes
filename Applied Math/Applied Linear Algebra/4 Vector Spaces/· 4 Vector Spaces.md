@@ -1,0 +1,38 @@
+---
+type: chapter
+subject: "[[Applied Linear Algebra]]"
+chapter: 4
+tags: [chapter, applied-linear-algebra]
+---
+# 4 Vector Spaces
+↑ [[Applied Linear Algebra]]
+
+*Lay, Chapter 4.*
+
+**Builds on:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (16), [[· 2 Matrix Algebra|2 Matrix Algebra]] (11), [[· 3 Determinants|3 Determinants]] (3), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (3), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (1)
+**Used by:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (4), [[· 2 Matrix Algebra|2 Matrix Algebra]] (2), [[· 3 Determinants|3 Determinants]] (1), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (16), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (7), [[· 7★ Symmetric Matrices and Quadratic Forms|7★ Symmetric Matrices and Quadratic Forms]] (6)
+**Developed further in (other subjects):** [[Linear Algebra]] (41), [[Logic and Proofs]] (5), [[Functional Analysis]] (4), [[Calculus]] (4), [[Linear Algebra]] (41), [[Functional Analysis]] (4)
+
+## Sections
+- [[§23 Vector Spaces and Subspaces]] — Lay 4.1
+- [[§24 Null Spaces, Column Spaces, and Linear Transformations]] — Lay 4.2
+- [[§25 Linearly Independent Sets; Bases]] — Lay 4.3
+- [[§26 Coordinate Systems]] — Lay 4.4
+- [[§27 The Dimension of a Vector Space]] — Lay 4.5
+- [[§28 Rank]] — Lay 4.6
+- [[§29 Change of Basis]] — Lay 4.7
+- [[§30 Applications to Difference Equations]] — Lay 4.8
+- [[§31 Applications to Markov Chains]] — Lay 4.9
+
+## Central results
+- [[The Coordinate Mapping Is an Isomorphism]] (§26.3)
+- [[The Basis Theorem]] (§27.5)
+- [[The Change-of-Coordinates Matrix]] (§29.1)
+- [[Convergence of Regular Markov Chains]] (§31.3)
+
+## Load-bearing results
+Ranked by how many later results depend on them (through the proofs' citations).
+- [[§23 Vector Spaces and Subspaces#^prop-23-1|Proposition §23.1: The Zero Vector and Negatives Are Unique]]: 115 later results
+- [[§23 Vector Spaces and Subspaces#^prop-23-2|Proposition §23.2: Arithmetic with Zero and Negatives]]: 114 later results
+- [[§25 Linearly Independent Sets; Bases#^thm-25-1|Theorem §25.1: Characterization of Linearly Dependent Sets]]: 105 later results
+- [[§26 Coordinate Systems#^thm-26-1|Theorem §26.1: The Unique Representation Theorem]]: 105 later results

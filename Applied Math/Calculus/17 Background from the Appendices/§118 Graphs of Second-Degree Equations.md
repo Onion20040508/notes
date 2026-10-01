@@ -145,6 +145,9 @@ This is the basic principle of analytic geometry (Descartes and Fermat): a geome
 
 ^def-118-4
 
+> [!remark]- Connections
+> - See also: [[§49★ Quadratic Forms#^prop-49-3|235 Prop. §49.3]] (a level curve $\mathbf{x}^TA\mathbf{x} = c$ of a quadratic form in two variables is an ellipse or hyperbola, in standard position exactly when $A$ is diagonal; otherwise the eigenvectors of $A$ rotate it into standard position), worked in [[§49★ Quadratic Forms#^ex-49-3|235 Ex. §49.3]].
+
 > [!theorem] Proposition §118.4: Sketching Ellipses and Hyperbolas
 > (a) The ellipse (2) is symmetric about both axes, with $x$-intercepts $\pm a$ and $y$-intercepts $\pm b$. If $a = b$ it is the circle of radius $a$.
 >

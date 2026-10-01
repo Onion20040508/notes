@@ -271,6 +271,9 @@ For instance, an equilateral triangle with side $a$ has all angles $\pi/3$, so i
 ![[m233-119-1.svg]]
 *The proof of the addition formulas. The points $A$ and $B$ at angles $\alpha$ and $\beta$ on the unit circle are at distance $c$, computed in two ways: by the Law of Cosines in the triangle $AOB$ with angle $\alpha - \beta$ at $O$, $c^2 = 2 - 2\cos(\alpha - \beta)$, and by the Distance Formula, $c^2 = 2 - 2(\cos\alpha\cos\beta + \sin\alpha\sin\beta)$.*
 
+> [!remark]- Connections
+> - Matrix version: [[§11 Matrix Operations#^ex-11-3|235 Ex. §11.3]](b) (the product of the rotation matrices $R_\theta R_\varphi$ is $R_{\theta + \varphi}$; its entries are the two addition formulas). See also: [[§53 Complex Numbers#^thm-53-5|235 Thm. §53.5]] (multiplying complex numbers in polar form multiplies absolute values and adds arguments, proved from these formulas).
+
 > [!theorem] Corollary §119.7: Subtraction Formulas and Tangent Formulas
 > $$
 > \sin(x - y) = \sin x\cos y - \cos x\sin y \quad (14a), \qquad \cos(x - y) = \cos x\cos y + \sin x\sin y \quad (14b),

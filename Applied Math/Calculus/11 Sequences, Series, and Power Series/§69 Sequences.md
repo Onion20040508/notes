@@ -72,6 +72,8 @@ For example, $1 - \dfrac{n}{n+1} = \dfrac{1}{n+1}$ can be made as small as we li
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§7 Limits of Sequences#^def-7-2|451 Def. §7.2]] (the same definition, with $n > N$), where the limit is shown to be unique, [[§7 Limits of Sequences#^thm-7-1|451 Thm. §7.1]].
+> - See also: [[§30 Applications to Difference Equations#^ex-30-4|235 Ex. §30.4]] (the Fibonacci sequence of Remark: Ways to Describe a Sequence solved by linear algebra: $F_k = (\varphi^k - \psi^k)/\sqrt5$, and $F_{k+1}/F_k \to \varphi$).
+> - See also: [[§31 Applications to Markov Chains#^def-31-4|235 Def. §31.4]] (Definition §69.2 for sequences of vectors: convergence entry by entry, used for Markov chains).
 
 A sequence diverges if its terms do not approach a single number. It can oscillate between two values, like $(-1)^n$, or grow without bound.
 

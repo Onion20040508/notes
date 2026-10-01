@@ -27,6 +27,7 @@ tags: [functional-analysis, math556]
 > [!remark]- Connections
 > - Linear maps in linear algebra: [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]].
 > - With norms, the bounded ones: [[§21 Boundedness and Continuity#^def-21-2|Def. §21.2]].
+> - Computational version: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4|235 Def. §24.4]] (linear transformations between vector spaces, with kernel and range computed), and the matrix case [[§8 Introduction to Linear Transformations#^def-8-3|235 Def. §8.3]].
 
 > [!definition] Definition §2.2: Isomorphism
 > A map $M : X \to Y$ is an **isomorphism** (or **linear isomorphism**) if $M$ is linear, one-to-one, and onto.
@@ -37,6 +38,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - Isomorphisms in linear algebra: [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]].
+> - Computational version: [[§26 Coordinate Systems#^def-26-3|235 Def. §26.3]] (isomorphism; the coordinate map onto ℝⁿ is the standard example).
 
 > [!remark] Remark
 > If there is an isomorphism $X \to Y$, the two linear spaces can be regarded as identical as far as the linear structure is concerned: every statement about linear combinations in $X$ transfers to $Y$ and back.

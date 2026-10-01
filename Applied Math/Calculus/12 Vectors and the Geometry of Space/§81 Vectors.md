@@ -220,6 +220,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 > [!remark]- Connections
 > - Properties 1–8 are exactly the axioms of a vector space ([[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]); $V_n$ is $\mathbb{R}^n$ with the componentwise operations of [[§1 Rⁿ and Cⁿ#^ladr-1-13|LADR 1.13]] and [[§1 Rⁿ and Cⁿ#^ladr-1-18|LADR 1.18]].
+> - Matrix version: [[§3 Vector Equations#^thm-3-2|235 Thm. §3.2]] (the same eight properties for column vectors in $\mathbb{R}^n$), with linear combinations and spans of such vectors as the next step. The length of Theorem §81.3 in $\mathbb{R}^n$: [[§40 Inner Product, Length, and Orthogonality#^def-40-2|235 Def. §40.2]].
 
 > [!definition] Definition §81.8: Standard Basis Vectors
 > The **standard basis vectors** in $V_3$ are

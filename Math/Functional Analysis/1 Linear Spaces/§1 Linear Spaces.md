@@ -42,6 +42,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 
 > [!remark]- Connections
 > - The same definition in linear algebra: [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]; in measure theory: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-1|551 Def. §19.1]].
+> - Computational version: [[§23 Vector Spaces and Subspaces#^def-23-1|235 Def. §23.1]] (the same axioms over ℝ, with worked examples of function and polynomial spaces).
 
 > [!remark] Remark
 > The two operations are *closed*: adding two elements of $X$, or multiplying an element of $X$ by a scalar, produces an element of $X$. This is the content of writing $+ : X \times X \to X$ and $kx \in X$ for all $k \in \mathbb{F}$, and is the property that must be checked first when verifying that a given set is a linear space.
@@ -68,6 +69,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 
 > [!remark]- Connections
 > - Subspaces in linear algebra: [[§3 Subspaces#^ladr-1-33|LADR 1.33]], with the conditions [[§3 Subspaces#^ladr-1-34|LADR 1.34]].
+> - Computational version: [[§23 Vector Spaces and Subspaces#^def-23-2|235 Def. §23.2]] (the three subspace conditions, with examples and non-examples).
 
 > [!theorem] Proposition §1.1: Subspaces Contain the Origin
 > Every linear subspace $Y$ of $X$ contains $0$.
@@ -248,6 +250,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 
 > [!remark]- Connections
 > - In linear algebra the span is defined by linear combinations and shown to be the smallest containing subspace: [[§4 Span and Linear Independence#^ladr-2-6|LADR 2.6]].
+> - Computational version: [[§23 Vector Spaces and Subspaces#^thm-23-4|235 Thm. §23.4]] (the span of finitely many vectors is the smallest subspace containing them, with worked spanning-set examples).
 
 > [!remark] Remark: Why Only Finite Sums
 > The sums in the span are finite. We do not, at this point, know how to form an infinite sum of vectors: an infinite sum requires taking a limit, and a linear space carries no notion of limit. Adding two vectors is part of the structure; passing to infinitely many is not, and must be separately justified once a topology is available. Finite sums are also already enough to produce a subspace, as the proof shows.

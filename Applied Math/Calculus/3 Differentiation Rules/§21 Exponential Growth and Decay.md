@@ -62,6 +62,7 @@ Many quantities change at a rate proportional to their size: a population under 
 
 > [!remark]- Connections
 > - The step "zero derivative implies constant" is [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]].
+> - Matrix version: [[§38 Applications to Differential Equations#^thm-38-2|235 Thm. §38.2]] ($\mathbf{x}' = A\mathbf{x}$ has the solutions $\mathbf{v}e^{\lambda t}$ for eigenpairs of $A$) and [[§38 Applications to Differential Equations#^thm-38-3|235 Thm. §38.3]] (diagonalizing $A$ decouples the system into equations $y_k' = \lambda_k y_k$, each solved by this theorem), with circuit examples.
 > - In Chapter 9 the same equation is the first example of a separable equation and of a population model: [[§59 Separable Equations#^thm-59-1|Theorem §59.1]], [[§60 Models for Population Growth#^thm-60-1|Theorem §60.1]]; [[§60 Models for Population Growth|§60]] then refines the model to the logistic equation ([[§60 Models for Population Growth#^thm-60-2|Theorem §60.2]]).
 
 ## Population Growth

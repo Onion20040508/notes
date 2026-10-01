@@ -35,6 +35,9 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 *Uses:* [[§81 Vectors#^def-81-2|Def. §81.2]], [[§81 Vectors#^def-81-3|Def. §81.3]]
 
+> [!remark]- Connections
+> - Matrix version: [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]] (the solution set of a consistent $A\mathbf{x} = \mathbf{b}$ is $\mathbf{p} + \operatorname{Nul} A$; with one free variable it is the line $\mathbf{x} = \mathbf{p} + t\mathbf{v}$), worked in [[§5 Solution Sets of Linear Systems#^ex-5-3|235 Ex. §5.3]].
+
 > [!definition] Definition §84.1: Vector Equation, Parameter, Direction Numbers
 > Equation (1) is a **vector equation** of $L$, and $t$ is the **parameter**: each value of $t$ gives the position vector of one point of $L$, and as $t$ varies the line is traced out by the tip of $\mathbf{r}$. Positive values of $t$ give points on one side of $P_0$, negative values points on the other side.
 >
@@ -235,6 +238,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 > [!remark]- Connections
 > - A plane through the origin is the orthogonal complement $\{\mathbf{n}\}^\perp$ of a normal vector ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]]), and any plane or line is a translate $\mathbf{r}_0 + U$ of a 2- or 1-dimensional subspace $U$ ([[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97]]); so is the solution set of any consistent linear system.
+> - Matrix version: [[§5 Solution Sets of Linear Systems#^ex-5-4|235 Ex. §5.4]] (two planes intersected by row reduction, and a plane not through the origin in parametric vector form) and [[§40 Inner Product, Length, and Orthogonality#^ex-40-4|235 Ex. §40.4]] (a plane through $\mathbf{0}$ and its normal line as orthogonal complements).
 
 > [!example] Example §84.3: Equations of Planes and Where a Line Meets a Plane
 > **(a)** The plane through $(2, 4, -1)$ with normal vector $\mathbf{n} = \langle 2, 3, 4 \rangle$ is $2(x - 2) + 3(y - 4) + 4(z + 1) = 0$, or $2x + 3y + 4z = 12$. Setting $y = z = 0$ gives the $x$-intercept $6$; similarly the $y$-intercept is $4$ and the $z$-intercept is $3$, which is enough to sketch the triangular piece of the plane in the first octant.

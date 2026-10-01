@@ -79,6 +79,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - Linear-algebra home of the determinant facts: column swaps change the sign, [[§34 Determinants#^ladr-9-57|LADR 9.57]] (b); $\det I = 1$, [[§34 Determinants#^ladr-9-44|LADR 9.44]].
 > - The sign $(-1)^{\operatorname{inv}}$ is the one in the Leibniz formula for $\det$: [[§34 Determinants#^ladr-9-46|LADR 9.46]].
+> - Computational version of the determinant facts: an interchange changes the sign, [[§21 Properties of Determinants#^thm-21-1|235 Thm. §21.1]](b); det I = 1, [[§20 Introduction to Determinants#^thm-20-2|235 Thm. §20.2]].
 
 > [!definition] Definition §20.2: The Sign; Even and Odd Permutations
 > The **sign** of $\sigma \in S_n$ is $\operatorname{sgn}(\sigma) := \det M(\sigma) = (-1)^{\operatorname{inv}(\sigma)} = \sigma\cdot\Delta/\Delta \in \{\pm 1\}$. A permutation is **even** if $\operatorname{sgn}(\sigma) = 1$ and **odd** if $\operatorname{sgn}(\sigma) = -1$. (The problem sets write $\varepsilon(\sigma)$; the lectures, and these notes, write $\operatorname{sgn}(\sigma)$.)
@@ -105,6 +106,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Linear-algebra home: [[§34 Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
+> - Computational version: [[§21 Properties of Determinants#^thm-21-9|235 Thm. §21.9]] (with a worked check).
 
 > [!theorem] Corollary §20.4: Parity of a Permutation
 > 1. Every transposition is odd: $\operatorname{sgn}((a\ b)) = -1$.

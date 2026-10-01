@@ -50,6 +50,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Optimization and Lagrange Multipliers#^thm-14-2|452 Thm. §14.2]], with the hypothesis $\nabla g \ne \mathbf{0}$ as the "constraint qualification" and the proof through the Implicit Function Theorem; hub [[Method of Lagrange Multipliers]].
+> - See also: [[§50★ Constrained Optimization#^thm-50-1|235 Thm. §50.1]] (the extremes of $\mathbf{x}^TA\mathbf{x}$ on the unit sphere are the largest and smallest eigenvalues of $A$; the Lagrange condition $\nabla f = \lambda\nabla g$ reads $A\mathbf{x} = \lambda\mathbf{x}$, though 235 proves it without calculus), worked in [[§50★ Constrained Optimization#^ex-50-2|235 Ex. §50.2]].
 
 > [!definition] Definition §97.1: Lagrange Multiplier
 > The number $\lambda$ in Equation (1) is called a **Lagrange multiplier**.

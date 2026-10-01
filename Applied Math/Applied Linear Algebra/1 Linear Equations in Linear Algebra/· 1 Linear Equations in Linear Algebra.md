@@ -1,0 +1,37 @@
+---
+type: chapter
+subject: "[[Applied Linear Algebra]]"
+chapter: 1
+tags: [chapter, applied-linear-algebra]
+---
+# 1 Linear Equations in Linear Algebra
+↑ [[Applied Linear Algebra]]
+
+*Lay, Chapter 1.*
+
+**Builds on:** [[· 4 Vector Spaces|4 Vector Spaces]] (4), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (1)
+**Used by:** [[· 2 Matrix Algebra|2 Matrix Algebra]] (29), [[· 3 Determinants|3 Determinants]] (1), [[· 4 Vector Spaces|4 Vector Spaces]] (16), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (5), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (5)
+**Developed further in (other subjects):** [[Linear Algebra]] (28), [[Group Theory]] (1), [[Logic and Proofs]] (3), [[Calculus]] (2), [[Linear Algebra]] (28), [[Group Theory]] (1), [[Multivariable Analysis]] (1)
+
+## Sections
+- [[§1 Systems of Linear Equations]] — Lay 1.1
+- [[§2 Row Reduction and Echelon Forms]] — Lay 1.2
+- [[§3 Vector Equations]] — Lay 1.3
+- [[§4 The Matrix Equation Ax = b]] — Lay 1.4
+- [[§5 Solution Sets of Linear Systems]] — Lay 1.5
+- [[§6 Applications of Linear Systems]] — Lay 1.6
+- [[§7 Linear Independence]] — Lay 1.7
+- [[§8 Introduction to Linear Transformations]] — Lay 1.8
+- [[§9 The Matrix of a Linear Transformation]] — Lay 1.9
+- [[§10 Linear Models in Business, Science, and Engineering]] — Lay 1.10
+
+## Central results
+- [[Uniqueness of the Reduced Echelon Form]] (§2.1)
+- [[Existence and Uniqueness Theorem for Linear Systems]] (§2.3)
+
+## Load-bearing results
+Ranked by how many later results depend on them (through the proofs' citations).
+- [[§3 Vector Equations#^thm-3-2|Theorem §3.2: Algebraic Properties of ℝⁿ]]: 149 later results
+- [[§4 The Matrix Equation Ax = b#^prop-4-4|Proposition §4.4: Row–Vector Rule for Computing Ax]]: 123 later results
+- [[§1 Systems of Linear Equations#^prop-1-1|Proposition §1.1: Row Operations Are Reversible]]: 122 later results
+- [[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5: Linearity of the Matrix–Vector Product]]: 121 later results
