@@ -8,8 +8,8 @@ tags: [chapter, relativity]
 # A1 Postulates and the Lorentz Transformation
 ↑ [[Relativity]] · [[· A2 Relativistic Kinematics]] →
 
-**Builds on:** [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (4)
-**Used by:** [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (13), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (1)
+**Builds on:** [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (5)
+**Used by:** [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (17), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (1)
 
 ## Sections
 - [[§A1.1 Classical Relativity]] — UP Vol. 3 §5.1, 5.5

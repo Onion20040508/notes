@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # A4 The Schrödinger Equation in One Dimension
 ← [[· A3 Matter Waves and Uncertainty]] · ↑ [[Quantum Mechanics]] · [[· A5 Atoms and Spin]] →
 
-**Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (19), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (1)
-**Used by:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (1), [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (9), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (4)
+**Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (20), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (1)
+**Used by:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (1), [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (1), [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (9), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (4)
 
 ## Sections
 - [[§A4.1 The Schrödinger Equation and Stationary States]] — UP Vol. 3 §7.3

@@ -1,4 +1,4 @@
-% Figure for Quantum Mechanics §A7.1 (binding energy per nucleon vs A, computed from atomic masses quoted in UP Vol. 3 ch. 10 and Tipler ch. 11-12; M(1H)=1.007825 u, m_n=1.008665 u, 1 u = 931.494 MeV).
+% Figure for Quantum Mechanics §A7.1 (binding energy per nucleon vs A, computed from atomic masses quoted in UP Vol. 3 ch. 10 and Tipler ch. 11-12; M(1H)=1.007825 u, m_n=1.008665 u, 1 u = 931.494 MeV; the A = 32 mass in Tipler Prob. 12-5 is left out because its nuclide is ambiguous).
 \begin{tikzpicture}[font=\small]
   \begin{axis}[nfig, width=11cm, height=6.4cm, xmin=0, xmax=250, ymin=0, ymax=9.6,
       xlabel={mass number $A$}, ylabel={$E_b/A$ (MeV)},
@@ -7,7 +7,7 @@
       xtick={0,50,100,150,200,250}, ytick={0,2,4,6,8}, clip=false]
     \addplot[only marks, mark=*, mark size=1.7pt, figB] coordinates {
       (2,1.112) (3,2.843) (7,5.607) (12,7.680) (13,7.470) (14,7.474) (15,7.700) (16,7.977) (17,7.752) (18,7.765)
-      (32,8.444) (40,8.595) (40,8.538) (63,8.752) (65,8.757) (92,8.512) (95,8.549) (96,8.521) (107,8.554) (109,8.548)
+      (40,8.595) (40,8.538) (63,8.752) (65,8.757) (92,8.512) (95,8.549) (96,8.521) (107,8.554) (109,8.548)
       (140,8.291) (142,8.311) (222,7.697) (229,7.630) (233,7.604) (235,7.591) (238,7.570) (239,7.560)};
     \addplot[only marks, mark=*, mark size=2.0pt, figR] coordinates {(4,7.074)};
     \node[figB, font=\scriptsize, anchor=west] at (axis cs:4,1.05) {$^2$H};

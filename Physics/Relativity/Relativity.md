@@ -24,10 +24,10 @@ graph TD
   A1["A1 Postulates and the Lorentz Transformation"]
   A2["A2 Relativistic Kinematics"]
   A3["A3 Relativistic Momentum and Energy"]
-  A1 -->|13| A2
+  A1 -->|17| A2
   A1 -->|1| A3
   A2 -->|12| A3
-  A2 -.->|4| A1
+  A2 -.->|5| A1
 ```
 
 ## Planned

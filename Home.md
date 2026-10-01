@@ -16,6 +16,8 @@
 - [[Electromagnetism]]
 - [[Oscillations, Waves and Optics]]
 - [[Thermal and Statistical Physics]]
+- [[Relativity]]
+- [[Quantum Mechanics]]
 - [[Quantum Field Theory I]]
 - Conventions: [[University Physics]] (introductory level), [[Larsen PHY 513]]
 

@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· A4 The Schrödinger Equation in One Dimension]] · ↑ [[Quantum Mechanics]] · [[· A6 Molecules and Solids]] →
 
 **Builds on:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (6), [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (2), [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (5), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (9)
-**Used by:** [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (2), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (15), [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (2)
+**Used by:** [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (4), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (15), [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (2)
 
 ## Sections
 - [[§A5.1 The Hydrogen Atom]] — UP Vol. 3 §8.1

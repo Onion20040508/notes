@@ -9,7 +9,7 @@ tags: [subject, classical-mechanics]
 ---
 # Classical Mechanics
 
-The mechanics of particles, rigid bodies and fluids, in three levels: **A** introductory (University Physics Vol. 1; PHY 181), **B** upper-level (Newtonian, Lagrangian and Hamiltonian mechanics; PHY 421, the series Part II), **C** graduate (classical field theory and beyond). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). Oscillations, waves and sound are in [[Oscillations, Waves and Optics]]; relativistic mechanics in Relativity.
+The mechanics of particles, rigid bodies and fluids, in three levels: **A** introductory (University Physics Vol. 1; PHY 181), **B** upper-level (Newtonian, Lagrangian and Hamiltonian mechanics; PHY 421, the series Part II), **C** graduate (classical field theory and beyond). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). Oscillations, waves and sound are in [[Oscillations, Waves and Optics]]; relativistic mechanics in [[Relativity]].
 
 ## Level A — introductory
 - [[· A1 Units, Measurement and Vectors]]

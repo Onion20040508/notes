@@ -8,8 +8,8 @@ tags: [chapter, relativity]
 # A2 Relativistic Kinematics
 ← [[· A1 Postulates and the Lorentz Transformation]] · ↑ [[Relativity]] · [[· A3 Relativistic Momentum and Energy]] →
 
-**Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (13)
-**Used by:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (4), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (12)
+**Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (17)
+**Used by:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (5), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (12)
 
 ## Sections
 - [[§A2.1 Time Dilation]] — UP Vol. 3 §5.3
