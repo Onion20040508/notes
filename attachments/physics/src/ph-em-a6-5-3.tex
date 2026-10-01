@@ -1,0 +1,12 @@
+% Figure for Electromagnetism §A6.5 (after PHY 182 TBL 15-16): discharge with RC = 1.7 s, exact exponential versus step-by-step (Euler) estimates with steps of 1 s and 0.25 s.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=8.5cm, height=5.5cm, xmin=0, xmax=4.2, ymin=0, ymax=1.08,
+      xlabel={$t$ (s)}, ylabel={$q/Q$}, xtick={0,1,2,3,4}, ytick={0,0.25,0.5,0.75,1}]
+    \addplot[figB, domain=0:4, samples=120] {exp(-x/1.7)};
+    \addplot[figG, mark=*, mark size=1.1pt, line width=0.7pt] coordinates {(0.00,1.0000) (0.25,0.8529) (0.50,0.7275) (0.75,0.6205) (1.00,0.5293) (1.25,0.4514) (1.50,0.3850) (1.75,0.3284) (2.00,0.2801) (2.25,0.2389) (2.50,0.2038) (2.75,0.1738) (3.00,0.1483) (3.25,0.1265) (3.50,0.1079) (3.75,0.0920) (4.00,0.0785)};
+    \addplot[figR, mark=*, mark size=1.5pt, line width=0.7pt] coordinates {(0,1.0000) (1,0.4118) (2,0.1696) (3,0.0698) (4,0.0287)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:2.1,0.42) {exact, $e^{-t/RC}$};
+    \node[figG, font=\scriptsize, anchor=west] at (axis cs:2.55,0.27) {steps of $0.25$ s};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.15,0.07) {steps of $1$ s};
+  \end{axis}
+\end{tikzpicture}

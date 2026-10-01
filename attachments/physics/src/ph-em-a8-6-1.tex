@@ -1,0 +1,13 @@
+% Figure for Electromagnetism §A8.6: schematic hysteresis loop of a ferromagnet, field B in the material versus applied field B0, with the initial magnetization curve from 0 to a.
+\begin{tikzpicture}[font=\small, >={Stealth[length=2mm]}]
+  \begin{axis}[nfig, width=8cm, height=6cm, axis lines=middle, xmin=-3.2, xmax=3.4, ymin=-1.35, ymax=1.45,
+      xlabel={$B_0$}, ylabel={$B$}, xtick=\empty, ytick=\empty, xlabel style={anchor=west}, ylabel style={anchor=south}]
+    \addplot[figB, domain=3:-3, samples=120, postaction={decorate}, decoration={markings, mark=at position 0.5 with {\arrow{Stealth[length=2.2mm]}}}] {tanh((x+0.8)/0.6)};
+    \addplot[figB, domain=3:-3, samples=120, postaction={decorate}, decoration={markings, mark=at position 0.5 with {\arrow{Stealth[length=2.2mm]}}}] ({-x},{tanh((-x-0.8)/0.6)});
+    \addplot[figR, dashed, domain=0:3, samples=80, postaction={decorate}, decoration={markings, mark=at position 0.4 with {\arrow{Stealth[length=2.2mm]}}}] {tanh(x/0.9)^1.6*tanh(x/0.6)^0 * 0.995};
+    \fill (axis cs:3,{tanh(3.8/0.6)}) circle (1.6pt) node[above left, font=\scriptsize] {$a$};
+    \fill (axis cs:-3,{-tanh(3.8/0.6)}) circle (1.6pt) node[below right, font=\scriptsize] {$b$};
+    \fill[figB] (axis cs:0,{tanh(0.8/0.6)}) circle (1.6pt);
+    \node[font=\scriptsize, figB, anchor=east, align=right] at (axis cs:-0.15,1.12) {$B\neq0$ at $B_0=0$};
+  \end{axis}
+\end{tikzpicture}

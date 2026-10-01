@@ -1,0 +1,22 @@
+% Figure for Electromagnetism §A6.4: the three-wire system (live with circuit breaker, grounded neutral, grounded appliance case).
+\begin{circuitikz}[>={Stealth[length=2.0mm]}, font=\small]
+  % source
+  \draw (0,0) to[sV, l=source] (0,2.6);
+  % live wire with breaker
+  \draw[figR, thick] (0,2.6) to[fuse, l={\scriptsize circuit breaker}, color=figR] (3.0,2.6) -- (6.0,2.6) -- (6.0,2.2);
+  % appliance inside a metal case
+  \draw[black!60, dashed, thick] (5.0,0.55) rectangle (7.0,2.25);
+  \node[font=\scriptsize, black!70, anchor=north east] at (7.0,2.25) {case};
+  \draw (6.0,2.2) to[R, l=$R$] (6.0,0.6);
+  \draw[figB, thick] (6.0,0.6) -- (6.0,0) -- (0,0);
+  % neutral grounded at source and at building
+  \draw[figB, thick] (0,0) -- (0,-0.3) node[ground]{};
+  \draw[figB, thick] (3.0,0) -- (3.0,-0.3) node[ground]{};
+  \node[font=\scriptsize, figB, anchor=south] at (1.6,0.05) {neutral};
+  \node[font=\scriptsize, figR, anchor=south] at (4.5,2.65) {live (hot)};
+  % ground wire from case
+  \draw[figG, thick] (7.0,1.4) -- (7.6,1.4) -- (7.6,-0.3) node[ground]{};
+  \node[font=\scriptsize, figG, anchor=west] at (7.65,0.6) {ground wire};
+  \node[font=\scriptsize, black!70, anchor=north] at (0,-0.8) {at the source};
+  \node[font=\scriptsize, black!70, anchor=north] at (3.0,-0.8) {at the building};
+\end{circuitikz}

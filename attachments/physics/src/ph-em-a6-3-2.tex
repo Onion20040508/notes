@@ -1,0 +1,10 @@
+% Figure for Electromagnetism §A6.3 (Example: a battery being charged): two sources of opposite polarity in one loop.
+\begin{circuitikz}[>={Stealth[length=2.0mm]}, font=\small]
+  \draw[figB] (0,2.6) to[battery1, l_={$V_2 = 24\ \mathrm V$}, color=figB] (0,0);
+  \draw (0,2.6) to[R, l={$R_1 = 10\ \Omega$}] (2.6,2.6) to[R, l={$R_2 = 30\ \Omega$}] (5.2,2.6)
+        to[battery1, l={$V_1 = 12\ \mathrm V$}] (5.2,0) to[R, l={$R_3 = 20\ \Omega$}] (0,0);
+  \node[font=\scriptsize, figB] at (-0.3,1.95) {$+$};
+  \node[font=\scriptsize] at (5.5,1.95) {$+$};
+  \draw[->, thick, figR] (2.0,2.2) -- (3.2,2.2) node[midway, below, font=\scriptsize] {$I$};
+  \draw[->, thick, figR] (4.55,1.8) -- (4.55,0.8) node[midway, left, font=\scriptsize] {$I$};
+\end{circuitikz}

@@ -1,0 +1,16 @@
+% Figure for Electromagnetism §A6.2 (Example: reducing a network): R1 in series with R2 parallel to (R3 + R4), 24 V source.
+\begin{circuitikz}[>={Stealth[length=2.0mm]}, font=\small]
+  \draw (0,2.6) to[battery1, l_={$24\ \mathrm V$}] (0,0) -- (2.6,0);
+  \draw (0,2.6) to[R, l={$R_1 = 7\ \Omega$}] (2.6,2.6);
+  \draw[figB] (2.6,2.6) to[R, l_={$R_2 = 10\ \Omega$}, color=figB] (2.6,0);
+  \draw[figR] (2.6,2.6) to[R, l={$R_3 = 6\ \Omega$}, color=figR] (5.2,2.6) to[R, l={$R_4 = 4\ \Omega$}, color=figR] (5.2,0) -- (2.6,0);
+  \fill (2.6,2.6) circle (1.6pt) (2.6,0) circle (1.6pt);
+  \draw[->, thick, black!70] (0.3,2.25) -- (1.0,2.25) node[midway, below, font=\scriptsize] {$I$};
+  % reduction steps
+  \begin{scope}[shift={(0.2,-0.7)}, font=\scriptsize]
+    \node[anchor=west, figR] at (0,0) {$R_{34} = R_3 + R_4 = 10\ \Omega$ (series)};
+    \node[anchor=west, figB] at (0,-0.5) {$R_{234} = (1/R_2 + 1/R_{34})^{-1} = 5\ \Omega$ (parallel)};
+    \node[anchor=west] at (0,-1.0) {$R_{\text{eq}} = R_1 + R_{234} = 12\ \Omega$ (series)};
+    \node[anchor=west, black!70] at (0,-1.5) {$I = 24\ \mathrm V/12\ \Omega = 2\ \mathrm A$};
+  \end{scope}
+\end{circuitikz}

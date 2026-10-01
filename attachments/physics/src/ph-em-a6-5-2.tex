@@ -1,0 +1,18 @@
+% Figure for Electromagnetism §A6.5: charge and current while an RC circuit charges, in units of Q = C emf, I0 = emf/R and tau = RC.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=8.5cm, height=5.5cm, xmin=0, xmax=5.3, ymin=0, ymax=1.12,
+      xlabel={$t/\tau$}, ylabel={fraction of final or initial value},
+      ylabel style={font=\scriptsize}, xtick={0,1,2,3,4,5}, ytick={0,0.368,0.632,1},
+      yticklabels={$0$,$0.368$,$0.632$,$1$}, clip=false]
+    \addplot[black!35, thin, dashed, domain=0:5.2, samples=2] {1};
+    \addplot[black!55, thin, dashed, domain=0:1, samples=2] {x};
+    \addplot[figB, domain=0:5.2, samples=150] {1-exp(-x)};
+    \addplot[figR, domain=0:5.2, samples=150] {exp(-x)};
+    \draw[black!45, thin, densely dotted] (axis cs:1,0) -- (axis cs:1,0.632) -- (axis cs:0,0.632);
+    \draw[black!45, thin, densely dotted] (axis cs:1,0.368) -- (axis cs:0,0.368);
+    \fill[figB] (axis cs:1,0.632) circle (1.8pt);
+    \fill[figR] (axis cs:1,0.368) circle (1.8pt);
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:2.3,0.8) {$q/Q = 1 - e^{-t/\tau}$};
+    \node[figR, font=\scriptsize, anchor=south west] at (axis cs:2.0,0.15) {$I/I_0 = e^{-t/\tau}$};
+  \end{axis}
+\end{tikzpicture}

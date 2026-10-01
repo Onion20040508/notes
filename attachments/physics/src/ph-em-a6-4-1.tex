@@ -1,0 +1,13 @@
+% Figure for Electromagnetism §A6.4: an ammeter in series with R1 and a voltmeter in parallel with R2.
+\begin{circuitikz}[>={Stealth[length=2.0mm]}, font=\small]
+  \draw (0,2.6) to[battery1, l_=$\mathcal E$] (0,0) -- (4.4,0);
+  \draw (0,2.6) -- (0.7,2.6);
+  \draw[figR, thick] (1.05,2.6) circle (0.35) node[font=\small] {A};
+  \draw (1.4,2.6) to[R, l=$R_1$] (3.4,2.6) -- (4.4,2.6) to[R, l_=$R_2$] (4.4,0);
+  \draw (4.4,2.6) -- (5.8,2.6) -- (5.8,1.65);
+  \draw (5.8,0.95) -- (5.8,0) -- (4.4,0);
+  \draw[figB, thick] (5.8,1.3) circle (0.35) node[font=\small] {V};
+  \fill (4.4,2.6) circle (1.6pt) (4.4,0) circle (1.6pt);
+  \node[font=\scriptsize, figR, anchor=north] at (1.25,2.15) {ammeter: in series};
+  \node[font=\scriptsize, figB, anchor=west] at (6.2,1.3) {voltmeter: in parallel};
+\end{circuitikz}

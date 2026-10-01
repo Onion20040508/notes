@@ -1,0 +1,29 @@
+% Figure for Electromagnetism §A12.5: the electromagnetic spectrum on logarithmic wavelength and frequency scales, with the approximate (overlapping) ranges of the bands quoted in University Physics Vol. 2, §16.5.
+\begin{tikzpicture}[font=\scriptsize, x=0.6cm]
+  % coordinate: X = -log10(lambda / m), so long wavelengths on the left
+  \def\lf#1{(#1)}
+  % wavelength axis
+  \draw[black!55] (-5,0) -- (14,0);
+  \foreach \e in {4,2,0,-2,-4,-6,-8,-10,-12,-14} {
+    \draw[black!55] ({-\e},0) -- ({-\e},-0.12);
+    \node[anchor=north] at ({-\e},-0.12) {$10^{\e}$};
+  }
+  \node[anchor=west] at (14.9,-0.35) {$\lambda$ (m)};
+  % frequency axis on top: log10 f = 8.477 - log10 lambda  ->  X = log10 f - 8.477
+  \draw[black!55] (-5,2.6) -- (14,2.6);
+  \foreach \e in {4,6,8,10,12,14,16,18,20,22} {
+    \draw[black!55] ({\e-8.477},2.6) -- ({\e-8.477},2.72);
+    \node[anchor=south] at ({\e-8.477},2.72) {$10^{\e}$};
+  }
+  \node[anchor=west] at (14.9,2.95) {$f$ (Hz)};
+  % bands (row 1 at y=1.55, row 2 at y=0.55)
+  \filldraw[fill=figB!20, draw=figB] (-5,1.35) rectangle (3,1.95);   \node at (-1,1.65) {radio};
+  \filldraw[fill=figO!25, draw=figO] (3.52,1.35) rectangle (6.13,1.95); \node at (4.83,1.65) {infrared};
+  \filldraw[fill=figB!35, draw=figB] (6.4,1.35) rectangle (8,1.95); \node at (7.2,1.65) {UV};
+  \filldraw[fill=figR!20, draw=figR] (11,1.35) rectangle (14,1.95);  \node at (12.5,1.65) {gamma rays};
+  \filldraw[fill=figG!20, draw=figG] (0,0.35) rectangle (3,0.95);   \node at (1.5,0.65) {microwaves};
+  \shade[left color=red!80, right color=violet!80] (6.125,0.35) rectangle (6.4,0.95);
+  \draw[black!60] (6.125,0.35) rectangle (6.4,0.95); \node[anchor=north] at (6.26,0.32) {};
+  \node at (6.26,1.12) {visible};
+  \filldraw[fill=figR!10, draw=figR!70] (8,0.35) rectangle (12,0.95);  \node at (10,0.65) {X-rays};
+\end{tikzpicture}

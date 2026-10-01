@@ -9,12 +9,12 @@
   \foreach \y in {-0.75,-0.25,0.25,0.75} \draw[->, figB, thick] (0.1,\y) -- (4.4,\y);
   \node[figB] at (4.75,0.5) {$\vec B$};
   \draw[figG, very thick, postaction={decorate}, decoration={markings, mark=at position 0.12 with {\arrow{Stealth[length=2.4mm]}}, mark=at position 0.62 with {\arrow{Stealth[length=2.4mm]}}}]
-    (1.0,0.5) -- (3.2,0.5) -- (3.2,2.1) -- (1.0,2.1) -- cycle;
+    (0.875,0.5) -- (3.325,0.5) -- (3.325,2.1) -- (0.875,2.1) -- cycle;
   \node[figG, font=\scriptsize, fill=white, inner sep=1pt] at (2.1,0.3) {1};
-  \node[figG, font=\scriptsize] at (3.4,1.7) {2};
+  \node[figG, font=\scriptsize] at (3.53,1.7) {2};
   \node[figG, font=\scriptsize] at (2.1,2.3) {3};
-  \node[figG, font=\scriptsize] at (0.8,1.7) {4};
-  \draw[|<->|, black!55, thin] (1.0,-1.65) -- (3.2,-1.65) node[midway, below, font=\scriptsize] {$l$};
+  \node[figG, font=\scriptsize] at (0.67,1.7) {4};
+  \draw[|<->|, black!55, thin] (0.875,-1.65) -- (3.325,-1.65) node[midway, below, font=\scriptsize] {$l$};
   % right: toroid from above
   \begin{scope}[xshift=7.6cm]
     \fill[black!5, even odd rule] (0,0) circle (1.9) (0,0) circle (0.9);
@@ -24,8 +24,9 @@
       \draw[thick] (\a:1.9) ++(-0.075,-0.075) -- ++(0.15,0.15) ++(-0.15,0) -- ++(0.15,-0.15);
     }
     \draw[figG, very thick, postaction={decorate}, decoration={markings, mark=at position 0.3 with {\arrow{Stealth[length=2.4mm]}}, mark=at position 0.8 with {\arrow{Stealth[length=2.4mm]}}}] (1.4,0) arc (0:360:1.4);
-    \draw[black!55, thin] (0,0) -- (-115:1.4) node[midway, left, font=\scriptsize, black!70] {$r$};
+    \draw[black!55, thin] (0,0) -- (-75:1.4) node[pos=0.45, right, font=\scriptsize, black!70] {$r$};
     \fill[black!55] (0,0) circle (1pt);
-    \draw[->, figB, very thick] (60:1.4) -- ++(150:0.6) node[above, font=\small] {$\vec B$};
+    \foreach \a in {-20,100,220} \draw[->, figB, very thick] (\a:1.64) -- ++(\a+90:0.42);
+    \node[figB, font=\small] at (8:1.15) {$\vec B$};
   \end{scope}
 \end{tikzpicture}

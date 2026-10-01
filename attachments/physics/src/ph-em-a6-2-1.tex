@@ -1,0 +1,26 @@
+% Figure for Electromagnetism §A6.2: three resistors in series and three in parallel across a source.
+\begin{circuitikz}[>={Stealth[length=2.0mm]}, font=\small]
+  % series
+  \draw (0,2.4) to[battery1, l_=$V$] (0,0) -- (4.2,0) to[R, l_=$R_3$] (4.2,2.4)
+        to[R, l_=$R_2$, v^<=$V_2$] (2.1,2.4);
+  \draw (2.1,2.4) to[R, l_=$R_1$] (0,2.4);
+  \draw[->, thick, figR] (0.35,2.05) -- (1.0,2.05) node[midway, below, font=\scriptsize] {$I$};
+  \draw[->, thick, figR] (3.85,1.6) -- (3.85,0.8) node[midway, left, font=\scriptsize] {$I$};
+  \node[font=\scriptsize, black!70] at (2.1,-0.55) {series: same $I$, voltages add};
+  % parallel
+  \begin{scope}[shift={(6.2,0)}]
+    \draw (0,2.4) to[battery1, l_=$V$] (0,0) -- (1.6,0);
+    \draw[figB, thick] (1.6,0) -- (4.6,0);
+    \draw[figB, thick] (1.6,2.4) -- (4.6,2.4);
+    \draw (0,2.4) -- (1.6,2.4);
+    \draw (1.6,2.4) to[R, l_=$R_1$] (1.6,0);
+    \draw (3.1,2.4) to[R, l_=$R_2$] (3.1,0);
+    \draw (4.6,2.4) to[R, l_=$R_3$] (4.6,0);
+    \fill[figB] (1.6,2.4) circle (1.6pt) (3.1,2.4) circle (1.6pt) (1.6,0) circle (1.6pt) (3.1,0) circle (1.6pt);
+    \draw[->, thick, figR] (0.35,2.75) -- (1.1,2.75) node[midway, above, font=\scriptsize] {$I$};
+    \draw[->, thick, figR] (1.95,1.6) -- (1.95,0.8) node[midway, right, font=\scriptsize] {$I_1$};
+    \draw[->, thick, figR] (3.45,1.6) -- (3.45,0.8) node[midway, right, font=\scriptsize] {$I_2$};
+    \draw[->, thick, figR] (4.95,1.6) -- (4.95,0.8) node[midway, right, font=\scriptsize] {$I_3$};
+    \node[font=\scriptsize, black!70] at (2.3,-0.55) {parallel: same $V$, currents add};
+  \end{scope}
+\end{circuitikz}

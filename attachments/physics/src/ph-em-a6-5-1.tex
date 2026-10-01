@@ -1,0 +1,15 @@
+% Figure for Electromagnetism §A6.5: RC circuit with a two-position switch (A: charging through the source; B: discharging).
+\begin{circuitikz}[>={Stealth[length=2.0mm]}, font=\small]
+  \draw (0,2.6) to[battery1, l_=$\mathcal E$] (0,0) -- (5.0,0);
+  \draw (0,2.6) -- (1.6,2.6);
+  \draw (1.6,1.6) -- (1.6,0);
+  \draw (2.6,2.6) to[R, l=$R$] (5.0,2.6) to[C, l=$C$] (5.0,0);
+  % switch contacts and blade
+  \draw[fill=white] (1.6,2.6) circle (2pt) (1.6,1.6) circle (2pt);
+  \fill (2.6,2.6) circle (2pt);
+  \draw[very thick, figR] (2.6,2.6) -- (1.68,2.6);
+  \draw[very thick, figB, dashed] (2.6,2.6) -- (1.67,1.65);
+  \node[font=\scriptsize, figR, anchor=south] at (1.6,2.7) {A};
+  \node[font=\scriptsize, figB, anchor=east] at (1.5,1.6) {B};
+  \node[font=\scriptsize, black!70, anchor=north] at (2.4,1.45) {switch};
+\end{circuitikz}
