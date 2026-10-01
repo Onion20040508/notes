@@ -1,0 +1,24 @@
+% Figure for Applied Linear Algebra §50.
+\begin{tikzpicture}[x=1.7cm, y=1.7cm, font=\scriptsize]
+  \fill[figB!12] (0,0) -- plot[domain=0:90, samples=60] ({3*cos(\x)},{2*sin(\x)}) -- cycle;
+  \draw[-stealth, thin, black!60] (0,0) -- (3.9,0) node[right] {$x$ (road and bridge repair)};
+  \draw[-stealth, thin, black!60] (0,0) -- (0,2.75) node[above] {$y$ (parks and recreation)};
+  \foreach \t in {1,2,3} \draw[black!50] (\t,-0.04) -- (\t,0.04) node[below=2pt, black!60] {$\t$};
+  \foreach \t in {1,2} \draw[black!50] (-0.04,\t) -- (0.04,\t) node[left=2pt, black!60] {$\t$};
+  \draw[figB, thick] plot[domain=0:90, samples=60] ({3*cos(\x)},{2*sin(\x)});
+  \node[figB] at (0.75,0.55) {feasible set};
+  \node[figB, right] at (2.55,1.25) {$4x^2 + 9y^2 = 36$};
+  % indifference curves xy = c
+  \foreach \c/\col in {2/figO!70, 3/figR, 4/figO!70} {
+    \draw[\col, thick] plot[domain={\c/2.6}:3.7, samples=60] (\x,{\c/\x});
+  }
+  \node[figO!80!black, right] at (3.7,{2/3.7}) {$xy = 2$};
+  \node[figR, right] at (3.7,{3/3.7}) {$xy = 3$};
+  \node[figO!80!black, right] at (3.7,{4/3.7}) {$xy = 4$};
+  % optimum
+  \draw[black!40, dashed] ({3/sqrt(2)},0) -- ({3/sqrt(2)},{sqrt(2)}) -- (0,{sqrt(2)});
+  \fill[figR] ({3/sqrt(2)},{sqrt(2)}) circle (1.6pt);
+  \node[below, black!70] at ({3/sqrt(2)},-0.14) {$2.1$};
+  \node[left, black!70] at (-0.12,{sqrt(2)}) {$1.4$};
+  \node[figR, above right] at ({3/sqrt(2)},{sqrt(2)}) {$(3/\sqrt2,\ \sqrt2)$};
+\end{tikzpicture}

@@ -1,0 +1,38 @@
+% Figure for Quantum Mechanics §C5.2 (Theorem §C5.2.4: neutron interferometer, schematic; intensity 1 + cos(phi/2) for spin 1/2 versus 1 + cos(phi), computed).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  % (a) schematic interferometer
+  \begin{scope}[yshift=0.2cm]
+    \node[font=\small] at (2.4,2.2) {(a)};
+    \draw[->, thick, black!70] (-0.6,0) -- (0,0);
+    \node[font=\scriptsize, black!70, anchor=east] at (-0.6,0) {beam};
+    \fill[black!25] (-0.07,-0.45) rectangle (0.07,0.45);
+    \draw[thick, figB] (0,0) -- (2.4,1.5) node[midway, above left, font=\scriptsize] {path $A$};
+    \draw[thick, figB] (2.4,1.5) -- (4.8,0);
+    \draw[thick, figR] (0,0) -- (2.4,-1.5);
+    \draw[thick, figR] (2.4,-1.5) -- (4.8,0) node[midway, below right, font=\scriptsize] {path $B$};
+    \fill[black!25] (2.33,1.05) rectangle (2.47,1.95);
+    \fill[black!25] (2.33,-1.95) rectangle (2.47,-1.05);
+    \draw[figR, fill=figR!12, fill opacity=0.85] (0.8,-1.15) rectangle (1.6,-0.35);
+    \node[font=\scriptsize, figR, align=center] at (1.2,-0.75) {$\mathbf B \ne 0$};
+    \node[font=\scriptsize, figR, anchor=north] at (1.2,-1.25) {spin turns by $\phi$};
+    \fill[black!25] (4.73,-0.45) rectangle (4.87,0.45);
+    \draw[->, thick, black!70] (4.8,0) -- (5.6,0);
+    \node[font=\scriptsize, black!70, anchor=west] at (5.6,0) {$I(\phi)$};
+  \end{scope}
+  % (b) intensity versus rotation angle
+  \begin{axis}[nfig, at={(7.6cm,-2.0cm)}, anchor=south west, width=8.0cm, height=4.8cm,
+      xmin=0, xmax=1440, ymin=0, ymax=2.35,
+      xlabel={$\phi$ (degrees)}, ylabel={$I/I_0$},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={0,360,720,1080,1440}, ytick={0,1,2}, samples=400, clip=false, title={\small (b) intensity of the recombined beam},
+      legend style={font=\scriptsize, draw=none, fill=none, at={(0.5,-0.33)}, anchor=north, legend columns=2, /tikz/every even column/.append style={column sep=8pt}}]
+    \addplot[black!35, thin, dashed, domain=0:1440, forget plot] {1};
+    \addplot[figB, domain=0:1440] {1+cos(x/2)};
+    \addplot[figR, dashed, domain=0:1440] {1+cos(x)};
+    \legend{{spin $\tfrac12$: $1+\cos(\phi/2)$}, {$1+\cos\phi$}}
+    \draw[black!45, thin] (axis cs:360,0) -- (axis cs:360,2.12);
+    \draw[black!45, thin] (axis cs:720,0) -- (axis cs:720,2.12);
+    \node[font=\scriptsize, black!60, anchor=south] at (axis cs:360,2.12) {$2\pi$};
+    \node[font=\scriptsize, black!60, anchor=south] at (axis cs:720,2.12) {$4\pi$};
+  \end{axis}
+\end{tikzpicture}

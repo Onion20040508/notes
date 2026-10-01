@@ -1,0 +1,25 @@
+% Figure for Applied Linear Algebra §52.
+\begin{tikzpicture}[x=0.2cm, y=0.2cm, font=\scriptsize]
+  % shift origin: draw in coordinates (w-112, h-54)
+  \begin{scope}[shift={(-112,-54)}]
+    \draw[-stealth, thin, black!60] (112,54) -- (152,54) node[right] {$w$ (pounds)};
+    \draw[-stealth, thin, black!60] (112,54) -- (112,77) node[above] {$h$ (inches)};
+    \foreach \t in {120,130,140,150} {\draw[black!50] (\t,53.6) -- (\t,54.4); \node[below, black!60] at (\t,53.6) {$\t$};}
+    \foreach \t in {60,65,70,75} {\draw[black!50] (111.6,\t) -- (112.4,\t); \node[left, black!60] at (111.6,\t) {$\t$};}
+    % first principal component line x = M + t u
+    \draw[figB, thick] (114.70,57.59) -- (147.10,73.29);
+    \node[figB, right] at (147.1,73.3) {$\mathbf{x} = \mathbf{M} + t\mathbf{u}$};
+    % orthogonal distances
+    \draw[figR, thick] (120,61) -- (120.332,60.315);
+    \draw[figR, thick] (125,60) -- (123.989,62.087);
+    \draw[figR, thick] (125,64) -- (125.558,62.848);
+    \draw[figR, thick] (135,68) -- (135.226,67.533);
+    \draw[figR, thick] (145,72) -- (144.894,72.218);
+    \foreach \p in {(120,61),(125,60),(125,64),(135,68),(145,72)} \fill[black] \p circle (1.5pt);
+    % mean and direction
+    \fill[figG] (130,65) circle (2pt);
+    \node[figG, above left] at (130,65.2) {$\mathbf{M} = (130, 65)$};
+    \draw[-stealth, figG, very thick] (130,65) -- ({130+6*0.9},{65+6*0.436});
+    \node[figG, below right] at ({130+5*0.9},{65+5*0.436}) {$\mathbf{u} = (.900, .436)$};
+  \end{scope}
+\end{tikzpicture}

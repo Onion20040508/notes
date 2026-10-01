@@ -1,0 +1,29 @@
+% Figure for Quantum Mechanics §C7.1 (the m1 m2-plane for j1 = 3, j2 = 2 and fixed j = 3: allowed sites |m1| <= 3, |m2| <= 2, |m1 + m2| <= 3; one J+ and one J- recursion triangle; the top diagonal m = 3 labelled with its Clebsch-Gordan coefficients <3 2; m1 m2|3 2; 3 3>, computed).
+\begin{tikzpicture}[font=\small, x=0.95cm, y=0.95cm]
+  % axes
+  \draw[->, thin, black!55] (-3.7,0) -- (4.3,0) node[below left, font=\scriptsize] {$m_1$};
+  \draw[->, thin, black!55] (0,-2.7) -- (0,2.9) node[above, font=\scriptsize] {$m_2$};
+  \foreach \x in {-3,...,3} \node[font=\scriptsize, black!60, below] at (\x,-2.45) {$\x$};
+  \foreach \y in {-2,...,2} \node[font=\scriptsize, black!60, left] at (-3.45,\y) {$\y$};
+  % boundary of the allowed region
+  \draw[thick, black!70] (1,2) -- (3,0) -- (3,-2) -- (-1,-2) -- (-3,0) -- (-3,2) -- cycle;
+  \node[font=\scriptsize, black!70, anchor=south west] at (2.0,2.2) {$m_1 + m_2 = j$};
+  % grid points
+  \foreach \x in {-3,...,3} \foreach \y in {-2,...,2} {
+    \pgfmathtruncatemacro{\s}{\x+\y}
+    \ifnum\s>3 \draw[black!40] (\x,\y) circle (2.2pt);
+    \else \ifnum\s<-3 \draw[black!40] (\x,\y) circle (2.2pt);
+    \else \fill[black] (\x,\y) circle (2.2pt); \fi\fi }
+  % J+ triangle: LHS (1,0), RHS (0,0) and (1,-1)
+  \draw[figR, thick] (1,0) -- (0,0) -- (1,-1) -- cycle;
+  \node[figR, font=\scriptsize] at (0.68,-0.32) {$J_+$};
+  % J- triangle: LHS (-2,0), RHS (-1,0) and (-2,1)
+  \draw[figG, thick] (-2,0) -- (-1,0) -- (-2,1) -- cycle;
+  \node[figG, font=\scriptsize] at (-1.68,0.32) {$J_-$};
+  % top diagonal values
+  \fill[figB] (3,0) circle (2.8pt); \fill[figB] (2,1) circle (2.8pt); \fill[figB] (1,2) circle (2.8pt);
+  \node[figB, font=\scriptsize, anchor=south west] at (3.08,0.08) {$+\sqrt{15}/6$};
+  \node[figB, font=\scriptsize, anchor=west] at (2.12,1.22) {$-\sqrt{15}/6$};
+  \node[figB, font=\scriptsize, anchor=west] at (1.12,2.22) {$+\sqrt{6}/6$};
+  \node[figB, font=\scriptsize, anchor=north west] at (3.05,-0.12) {$A$};
+\end{tikzpicture}
