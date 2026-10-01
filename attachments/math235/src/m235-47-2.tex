@@ -1,0 +1,17 @@
+% Figure for Applied Linear Algebra §47.
+\begin{tikzpicture}
+  \begin{axis}[nfig, name=a, width=7cm, height=6cm, xmin=-0.3, xmax=7, ymin=-0.8, ymax=7.2,
+      axis lines=middle, xlabel={$t$}, ylabel={$y$}, xtick={3.14159,6.28319}, xticklabels={$\pi$,$2\pi$},
+      ytick={3.14159,6.28319}, yticklabels={$\pi$,$2\pi$}, xlabel style={anchor=west}, ylabel style={anchor=south},
+      title={\small third order}, title style={yshift=-4pt}]
+    \addplot[black, domain=0:6.28319, samples=2] {x};
+    \addplot[figB, domain=0:6.28319, samples=200] {pi - 2*sin(deg(x)) - sin(deg(2*x)) - 2/3*sin(deg(3*x))};
+  \end{axis}
+  \begin{axis}[nfig, at={(a.east)}, anchor=west, xshift=0.8cm, width=7cm, height=6cm, xmin=-0.3, xmax=7, ymin=-0.8, ymax=7.2,
+      axis lines=middle, xlabel={$t$}, ylabel={$y$}, xtick={3.14159,6.28319}, xticklabels={$\pi$,$2\pi$},
+      ytick={3.14159,6.28319}, yticklabels={$\pi$,$2\pi$}, xlabel style={anchor=west}, ylabel style={anchor=south},
+      title={\small fourth order}, title style={yshift=-4pt}]
+    \addplot[black, domain=0:6.28319, samples=2] {x};
+    \addplot[figB, domain=0:6.28319, samples=200] {pi - 2*sin(deg(x)) - sin(deg(2*x)) - 2/3*sin(deg(3*x)) - 1/2*sin(deg(4*x))};
+  \end{axis}
+\end{tikzpicture}

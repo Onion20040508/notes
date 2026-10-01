@@ -1,0 +1,34 @@
+% Figure for Applied Linear Algebra §44.
+\begin{tikzpicture}[scale=1.2, >=Stealth]
+  % R^n
+  \fill[black!6] (-3.9,-0.6) -- (-2.2,-0.8) -- (-1.7,0.2) -- (-3.4,0.4) -- cycle;
+  \draw[black!50] (-3.9,-0.6) -- (-2.2,-0.8) -- (-1.7,0.2) -- (-3.4,0.4) -- cycle;
+  \node[font=\small, black!70] at (-3.45,-0.3) {$\mathbb{R}^n$};
+  \fill[figB!80!black] (-2.3,-0.15) circle (1.5pt) node[above, font=\small] {$\hat{\mathbf{x}}$};
+  % Col A in R^m
+  \fill[figB!12] (-1.0,-0.8) -- (2.6,-1.2) -- (3.5,0.6) -- (-0.1,1.0) -- cycle;
+  \draw[figB, thick] (-1.0,-0.8) -- (2.6,-1.2) -- (3.5,0.6) -- (-0.1,1.0) -- cycle;
+  \node[font=\small, figB] at (2.95,0.35) {$\operatorname{Col} A$};
+  \coordinate (O) at (0,0);
+  \coordinate (B) at (1.5,2.2);
+  \coordinate (H) at (1.5,0.1);
+  \coordinate (X1) at (0.9,-0.78);
+  \coordinate (X2) at (2.9,-0.65);
+  \draw[->, thick] (O) -- (B);
+  \draw[->, thick, figB!80!black] (O) -- (H);
+  \draw[->, thick, figR] (H) -- (B);
+  \draw[black!70] (H) ++(0,0.2) -- ++(-0.2,0.02) -- ++(0,-0.2);
+  \draw[black!55, dashed] (X1) -- (B);
+  \draw[black!55, dashed] (X2) -- (B);
+  \fill (O) circle (1.3pt); \fill (B) circle (1.5pt); \fill[figB!80!black] (H) circle (1.5pt);
+  \fill[black!60] (X1) circle (1.3pt); \fill[black!60] (X2) circle (1.3pt);
+  \node[font=\scriptsize, left] at (O) {$\mathbf{0}$};
+  \node[font=\small, above] at (B) {$\mathbf{b}$};
+  \node[font=\small, below right=-1pt, figB!80!black] at (H) {$\hat{\mathbf{b}} = A\hat{\mathbf{x}}$};
+  \node[font=\scriptsize, below, black!70] at (X1) {$A\mathbf{x}_1$};
+  \node[font=\scriptsize, right, black!70] at (X2) {$A\mathbf{x}_2$};
+  \node[font=\scriptsize, figR, right] at (1.52,0.5) {$\mathbf{b} - A\hat{\mathbf{x}}$};
+  % the map A
+  \draw[->, thick, black!70] (-2.25,-0.25) to[bend right=30] node[pos=0.25, below, font=\small] {$A$} (1.4,0.03);
+  \node[font=\scriptsize, black!60] at (3.3,-1.2) {subspace of $\mathbb{R}^m$};
+\end{tikzpicture}

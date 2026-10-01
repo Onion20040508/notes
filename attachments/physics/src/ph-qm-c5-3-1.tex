@@ -1,0 +1,31 @@
+% Figure for Quantum Mechanics §C5.3 (Theorem §C5.3.3: elements of d^(1)(beta), and the probabilities |d^(1)_{m'0}(beta)|^2; beta_0 = arccos(3/sqrt 11) = 25.24 deg for Example §C5.4.2), computed.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=left, width=7.4cm, height=5.2cm, xmin=0, xmax=180, ymin=-1.08, ymax=1.12,
+      axis x line=bottom, axis y line=left, xlabel={$\beta$ (degrees)},
+      xtick={0,45,90,135,180}, ytick={-0.5,0,0.5,1}, samples=200, clip=false, title={\small (a) elements of $d^{(1)}(\beta)$}]
+    \addplot[black!35, thin, domain=0:180, forget plot] {0};
+    \addplot[figB, domain=0:180] {(1+cos(x))/2};
+    \addplot[figR, domain=0:180] {(1-cos(x))/2};
+    \addplot[figG, domain=0:180] {cos(x)};
+    \addplot[figO, domain=0:180] {-sin(x)/sqrt(2)};
+    \node[font=\scriptsize, figB, anchor=south west] at (axis cs:28,0.95) {$d_{11} = d_{-1,-1}$};
+    \node[font=\scriptsize, figR, anchor=south east] at (axis cs:150,0.95) {$d_{1,-1} = d_{-1,1}$};
+    \node[font=\scriptsize, figG, anchor=east] at (axis cs:150,-0.97) {$d_{00}$};
+    \node[font=\scriptsize, figO, anchor=north] at (axis cs:80,-0.74) {$d_{10} = -d_{01}$};
+  \end{axis}
+  \begin{axis}[nfig, at={(left.south east)}, xshift=1.3cm, anchor=south west, width=7.4cm, height=5.2cm,
+      xmin=0, xmax=180, ymin=0, ymax=1.12, xlabel={$\beta$ (degrees)}, ylabel={$P(m')$},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={0,45,90,135,180}, ytick={0.25,0.5,0.75,1}, samples=200, clip=false, title={\small (b) rotating $|1, 0\rangle$ about $y$}]
+    \addplot[figG, domain=0:180] {cos(x)^2};
+    \addplot[figO, domain=0:180] {sin(x)^2/2};
+    \draw[black!50, thin, dashed] (axis cs:25.24,0) -- (axis cs:25.24,1.0);
+    \fill[figG] (axis cs:25.24,0.8182) circle (1.6pt);
+    \fill[figO] (axis cs:25.24,0.0909) circle (1.6pt);
+    \node[font=\scriptsize, black!70, anchor=south] at (axis cs:25.24,1.0) {$\beta_0$};
+    \node[font=\scriptsize, figG, anchor=west] at (axis cs:28,0.83) {$9/11$};
+    \node[font=\scriptsize, figO, anchor=west] at (axis cs:28,0.12) {$1/11$};
+    \node[font=\scriptsize, figG, anchor=south] at (axis cs:150,0.78) {$m' = 0$};
+    \node[font=\scriptsize, figO, anchor=south] at (axis cs:90,0.52) {$m' = \pm1$ (each)};
+  \end{axis}
+\end{tikzpicture}

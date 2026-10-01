@@ -1,0 +1,19 @@
+% Figure for Applied Linear Algebra §45.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=9cm, height=7.5cm, xmin=0, xmax=9.5, ymin=0.4, ymax=3.6,
+      xlabel={$x$}, ylabel={$y$}, xtick={1,...,9}, ytick={1,2,3},
+      xlabel style={at={(axis description cs:1,0)}, anchor=north west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south east, rotate=-90}]
+    \addplot[figB, domain=0:9.5, samples=2] {2/7 + 5/14*x};
+    % residuals
+    \draw[figR, very thick] (axis cs:5,2) -- (axis cs:5,29/14);
+    \draw[figR, very thick] (axis cs:7,3) -- (axis cs:7,39/14);
+    \draw[figR, very thick] (axis cs:8,3) -- (axis cs:8,44/14);
+    % data
+    \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(2,1) (5,2) (7,3) (8,3)};
+    % mean point
+    \addplot[only marks, mark=x, mark size=3.5pt, thick, figG] coordinates {(5.5,2.25)};
+    \node[font=\scriptsize, figG, anchor=north west] at (axis cs:5.55,2.15) {$(\bar x, \bar y)$};
+    \node[font=\small, figB, anchor=south east] at (axis cs:3.6,1.95) {$y = \frac27 + \frac{5}{14}x$};
+  \end{axis}
+\end{tikzpicture}

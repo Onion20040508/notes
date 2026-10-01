@@ -1,0 +1,13 @@
+% Figure for Applied Linear Algebra §47.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.5cm, height=6.5cm, xmin=-3, xmax=3, ymin=0, ymax=6.2,
+      axis lines=middle, xlabel={$x$}, ylabel={$y$}, xtick={-2,-1,1,2}, ytick={1,...,6},
+      xlabel style={anchor=west}, ylabel style={anchor=south}]
+    \addplot[figB, domain=-3:3, samples=2] {4 - 0.1*x};
+    \addplot[figR, domain=-3:3, samples=2] {1169/269 + 55/269*x};
+    \addplot[only marks, mark=*, mark size=2pt, black] coordinates {(-2,3) (-1,5) (0,5)};
+    \addplot[only marks, mark=o, mark size=2.2pt, thick, black] coordinates {(1,4) (2,3)};
+    \node[font=\small, figB, anchor=north east] at (axis cs:2.95,3.6) {$y = 4 - 0.1x$};
+    \node[font=\small, figR, anchor=south east] at (axis cs:2.95,5.1) {$y = 4.3 + 0.2x$};
+  \end{axis}
+\end{tikzpicture}

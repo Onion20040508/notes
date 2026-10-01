@@ -1,0 +1,21 @@
+% Figure for Applied Linear Algebra §41.
+\begin{tikzpicture}[x=0.62cm, y=0.62cm, >=Stealth]
+  \draw[->, black!60] (-2,0) -- (9.6,0) node[right, font=\scriptsize, black] {$x_1$};
+  \draw[->, black!60] (0,-1) -- (0,7.2) node[above, font=\scriptsize, black] {$x_2$};
+  \foreach \x in {1,...,9} \draw[black!40] (\x,0.08) -- (\x,-0.08);
+  \foreach \y in {1,...,7} \draw[black!40] (0.08,\y) -- (-0.08,\y);
+  \node[font=\scriptsize, below] at (8,-0.05) {$8$};
+  \node[font=\scriptsize, left] at (-0.05,6) {$6$};
+  % the line L
+  \draw[figB!70, thick] (-2,-1) -- (9.6,4.8) node[right, font=\small, figB] {$L = \operatorname{Span}\{\mathbf{u}\}$};
+  % perpendicular from y to yhat
+  \draw[figR, thick, dashed] (8,4) -- (7,6);
+  \draw[black!70] (8,4) ++(-0.268,-0.134) -- ++(-0.179,0.358) -- ++(0.268,0.134);
+  % vectors
+  \draw[->, thick] (0,0) -- (7,6) node[above left, font=\small] {$\mathbf{y}$};
+  \draw[->, very thick, figB] (0,0) -- (4,2) node[below right=-1pt, font=\small] {$\mathbf{u}$};
+  \draw[->, thick, figB!80!black] (0,0) -- (8,4) node[below right, font=\small] {$\hat{\mathbf{y}}$};
+  \draw[->, thick, figR] (0,0) -- (-1,2) node[left, font=\small] {$\mathbf{y} - \hat{\mathbf{y}}$};
+  \fill (7,6) circle (1.6pt); \fill[figB!80!black] (8,4) circle (1.6pt);
+  \node[font=\scriptsize, figR, left] at (7.45,5.0) {$\sqrt5$};
+\end{tikzpicture}

@@ -1,0 +1,40 @@
+% Figure for Applied Linear Algebra §53.
+\begin{tikzpicture}[x=0.85cm, y=0.85cm, font=\scriptsize]
+  % ---- (a) z, conjugate, modulus, argument
+  \begin{scope}
+    \draw[-stealth, thin, black!60] (-0.8,0) -- (4.3,0) node[right] {$\operatorname{Re} z$};
+    \draw[-stealth, thin, black!60] (0,-2.6) -- (0,2.9) node[above] {$\operatorname{Im} z$};
+    \draw[figB, thick] (0,0) -- (3,2);
+    \fill[figB] (3,2) circle (1.6pt) node[above right] {$z = a + bi$};
+    \draw[black!45, dashed] (3,2) -- (3,-2);
+    \draw[figR, thick, dashed] (0,0) -- (3,-2);
+    \fill[figR] (3,-2) circle (1.6pt) node[below right] {$\bar z = a - bi$};
+    \node[figB, above left] at (1.5,1.0) {$|z|$};
+    \draw[figG, thick, -stealth] (0.9,0) arc (0:{atan(2/3)}:0.9);
+    \node[figG] at (1.15,0.33) {$\varphi$};
+    \node[below, black!70] at (3,-0.02) {};
+    \node[black!70, left] at (3,0.18) {$a$};
+    \draw[black!45] (-0.08,2) -- (0.08,2) node[left=3pt, black!70] {$b$};
+    \node[black!70, right] at (3.05,1.0) {$|z|\sin\varphi$};
+    \node[black!70, below] at (1.5,-0.02) {$|z|\cos\varphi$};
+    \node[font=\small] at (1.6,-3.2) {(a) conjugate, modulus, argument};
+  \end{scope}
+  % ---- (b) multiplication by i
+  \begin{scope}[xshift=7.2cm]
+    \draw[-stealth, thin, black!60] (-2.0,0) -- (3.8,0) node[right] {$\operatorname{Re} z$};
+    \draw[-stealth, thin, black!60] (0,-0.8) -- (0,3.6) node[above] {$\operatorname{Im} z$};
+    \foreach \t in {-1,1,2,3} \draw[black!45] (\t,-0.07) -- (\t,0.07);
+    \foreach \t in {1,2,3} \draw[black!45] (-0.07,\t) -- (0.07,\t);
+    \node[below, black!60] at (1,-0.07) {$1$};
+    \draw[figB, thick] (0,0) -- (3,1);
+    \fill[figB] (3,1) circle (1.6pt) node[right] {$z = 3 + i$};
+    \draw[figR, thick] (0,0) -- (-1,3);
+    \fill[figR] (-1,3) circle (1.6pt) node[left] {$iz = -1 + 3i$};
+    \fill[black] (0,1) circle (1.4pt) node[right=1pt] {$i$};
+    \draw[figG, thick, -stealth] (1.3,0) arc (0:{atan(1/3)}:1.3);
+    \node[figG] at (1.55,0.22) {$\varphi$};
+    \draw[figR!70, thick, -stealth] ({1.6*cos(atan(1/3))},{1.6*sin(atan(1/3))}) arc ({atan(1/3)}:{atan(1/3)+90}:1.6);
+    \node[figR] at (1.25,1.55) {$+\tfrac{\pi}{2}$};
+    \node[font=\small] at (0.9,-3.2) {(b) multiplication by $i$};
+  \end{scope}
+\end{tikzpicture}

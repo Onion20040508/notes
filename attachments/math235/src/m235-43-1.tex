@@ -1,0 +1,18 @@
+% Figure for Applied Linear Algebra §43.
+\begin{tikzpicture}[x=0.85cm, y=0.85cm, >=Stealth]
+  % the plane W, drawn flat (coordinates along x1/|x1| and v2/|v2|)
+  \fill[figB!8] (-3.3,-0.9) rectangle (7.6,2.9);
+  \node[font=\small, figB] at (7.2,2.55) {$W$};
+  \draw[black!35] (-3.3,0) -- (7.6,0);
+  % x2, p, v2
+  \draw[figR, thick, dashed] (2.236,0) -- (2.236,2);
+  \draw[black!70] (2.236,0) ++(0.2,0) -- ++(0,0.2) -- ++(-0.2,0);
+  \draw[->, very thick, figB] (0,0) -- (6.708,0) node[below, font=\small] {$\mathbf{v}_1 = \mathbf{x}_1$};
+  \draw[->, thick] (0,0) -- (2.236,2) node[above right=-1pt, font=\small] {$\mathbf{x}_2$};
+  \draw[->, thick, figB!60!black] (0,0) -- (2.236,0);
+  \node[font=\small, below, figB!60!black] at (2.236,0) {$\mathbf{p}$};
+  \draw[->, very thick, figR] (0,0) -- (0,2) node[left, font=\small] {$\mathbf{v}_2 = \mathbf{x}_2 - \mathbf{p}$};
+  \draw[black!70] (0,0) ++(0.2,0) -- ++(0,0.2) -- ++(-0.2,0);
+  \fill (0,0) circle (1.3pt);
+  \node[font=\scriptsize, below left=-1pt] at (0,0) {$\mathbf{0}$};
+\end{tikzpicture}

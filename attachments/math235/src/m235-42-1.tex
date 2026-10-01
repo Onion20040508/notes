@@ -1,0 +1,28 @@
+% Figure for Applied Linear Algebra §42.
+\begin{tikzpicture}[scale=1.25, >=Stealth]
+  % plane W
+  \fill[figB!12] (-1.8,-0.6) -- (2.2,-1.1) -- (3.2,0.7) -- (-0.8,1.2) -- cycle;
+  \draw[figB, thick] (-1.8,-0.6) -- (2.2,-1.1) -- (3.2,0.7) -- (-0.8,1.2) -- cycle;
+  \node[font=\small, figB] at (-1.25,-0.25) {$W$};
+  \coordinate (O) at (0,0);
+  \coordinate (Y) at (1.6,2.3);
+  \coordinate (H) at (1.6,0.25);
+  \coordinate (V) at (-0.55,0.85);
+  % vectors y, yhat
+  \draw[->, thick] (O) -- (Y);
+  \draw[->, thick, figB!80!black] (O) -- (H);
+  % z = y - yhat, the triangle
+  \draw[->, thick, figR] (H) -- (Y);
+  \draw[black!65, thick] (V) -- (H);
+  \draw[black!65, thick, dashed] (V) -- (Y);
+  \draw[black!70] (H) ++(0,0.2) -- ++(-0.193,0.054) -- ++(0,-0.2);
+  % dots and labels
+  \fill (O) circle (1.3pt); \fill (Y) circle (1.5pt); \fill[figB!80!black] (H) circle (1.5pt); \fill[black!70] (V) circle (1.5pt);
+  \node[font=\scriptsize, below left=-1pt] at (O) {$\mathbf{0}$};
+  \node[font=\small, above right=-1pt] at (Y) {$\mathbf{y}$};
+  \node[font=\small, below right=-1pt, figB!80!black] at (H) {$\hat{\mathbf{y}} = \operatorname{proj}_W \mathbf{y}$};
+  \node[font=\small, left, black!80] at (V) {$\mathbf{v}$};
+  \node[font=\small, figR, right, align=left] at (1.65,1.3) {$\mathbf{z} = \mathbf{y} - \hat{\mathbf{y}}$\\[-1pt] {\scriptsize $\in W^\perp$}};
+  \node[font=\scriptsize, black!75, rotate=35] at (0.35,1.78) {$\|\mathbf{y} - \mathbf{v}\|$};
+  \node[font=\scriptsize, black!75, rotate=-15] at (-0.1,0.55) {$\|\hat{\mathbf{y}} - \mathbf{v}\|$};
+\end{tikzpicture}
