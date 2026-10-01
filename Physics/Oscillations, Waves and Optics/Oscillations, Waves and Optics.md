@@ -20,6 +20,15 @@ Oscillators, mechanical and sound waves, and light as a wave and as rays, in thr
 - [[· A6 Interference]]
 - [[· A7 Diffraction]]
 
+## Level B — upper
+- [[· B1 Damped and Driven Oscillators]]
+- [[· B2 Coupled Oscillators and Normal Modes]]
+- [[· B3 From the Bead Chain to the Wave Equation]]
+- [[· B4 Fourier Analysis and Strings]]
+- [[· B5 Travelling Waves, Energy and Impedance]]
+- [[· B6 Wave Packets and Dispersion]]
+- [[· B7 Waves in Two and Three Dimensions]]
+
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
 
@@ -32,6 +41,13 @@ graph TD
   A5["A5 Geometric Optics and Image Formation"]
   A6["A6 Interference"]
   A7["A7 Diffraction"]
+  B1["B1 Damped and Driven Oscillators"]
+  B2["B2 Coupled Oscillators and Normal Modes"]
+  B3["B3 From the Bead Chain to the Wave Equation"]
+  B4["B4 Fourier Analysis and Strings"]
+  B5["B5 Travelling Waves, Energy and Impedance"]
+  B6["B6 Wave Packets and Dispersion"]
+  B7["B7 Waves in Two and Three Dimensions"]
   A1 -->|2| A2
   A2 -->|18| A3
   A2 -->|2| A4
@@ -44,7 +60,40 @@ graph TD
   A4 -->|5| A7
   A5 -->|1| A7
   A6 -->|20| A7
+  A1 -->|26| B1
+  A1 -->|11| B2
+  A3 -->|2| B2
+  B1 -->|6| B2
+  A2 -->|15| B3
+  B1 -->|2| B3
+  B2 -->|11| B3
+  A1 -->|7| B4
+  A2 -->|7| B4
+  A3 -->|8| B4
+  B1 -->|2| B4
+  B2 -->|1| B4
+  B3 -->|7| B4
+  A1 -->|3| B5
+  A2 -->|6| B5
+  A3 -->|4| B5
+  B1 -->|7| B5
+  B3 -->|8| B5
+  B4 -->|1| B5
+  A1 -->|1| B6
+  A4 -->|1| B6
+  B1 -->|3| B6
+  B3 -->|8| B6
+  B4 -->|10| B6
+  B5 -->|2| B6
+  A2 -->|5| B7
+  A3 -->|3| B7
+  B1 -->|1| B7
+  B3 -->|4| B7
+  B4 -->|9| B7
   A7 -.->|1| A6
+  B4 -.->|1| B3
+  B5 -.->|2| B4
+  B6 -.->|1| B4
 ```
 
 ## Planned

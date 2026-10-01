@@ -9,7 +9,7 @@ tags: [chapter, oscillations-waves-and-optics]
 ← [[· A3 Sound]] · ↑ [[Oscillations, Waves and Optics]] · [[· A5 Geometric Optics and Image Formation]] →
 
 **Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (2)
-**Used by:** [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (9), [[· A6 Interference|A6 Interference]] (5), [[· A7 Diffraction|A7 Diffraction]] (5)
+**Used by:** [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (9), [[· A6 Interference|A6 Interference]] (5), [[· A7 Diffraction|A7 Diffraction]] (5), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1)
 
 ## Sections
 - [[§A4.1 The Propagation of Light]] — UP Vol. 3 §1.1

@@ -9,7 +9,7 @@ tags: [chapter, oscillations-waves-and-optics]
 ← [[· A2 Mechanical Waves]] · ↑ [[Oscillations, Waves and Optics]] · [[· A4 The Nature of Light]] →
 
 **Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (18)
-**Used by:** —
+**Used by:** [[· B2 Coupled Oscillators and Normal Modes|B2 Coupled Oscillators and Normal Modes]] (2), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (8), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (4), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (3)
 
 ## Sections
 - [[§A3.1 Sound Waves and the Speed of Sound]] — UP Vol. 1 §17.1–17.2
