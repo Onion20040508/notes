@@ -21,6 +21,7 @@ tags: [functional-analysis, hub]
 ## Used in (Functional Analysis)
 - [[§10 New Normed Spaces from Old#^cor-10-4|Corollary §10.4: Finite-Dimensional Normed Spaces are Complete]]
 - [[§15 Compactness and the Unit Ball#^ex-15-1|Example §15.1: The Closed Unit Ball in 𝔽ⁿ]]
+- [[§21 Boundedness and Continuity#^prop-21-4|Proposition §21.4: Linear Maps on Finite-Dimensional Spaces are Bounded]]
 
 ## Connections
 - **How.** Compare an arbitrary norm with the coordinate norm ‖x‖₁ = Σ|aᵢ|. The bound ‖x‖′ ≤ C‖x‖₁ is pure algebra (the triangle inequality on a basis). The reverse bound comes from minimizing ‖·‖′ on the ‖·‖₁-unit sphere: the sphere is sequentially compact by the [[Bolzano–Weierstrass Theorem]] applied coordinate by coordinate, ‖·‖′ is continuous there by the reverse triangle inequality, and the minimum is positive. This is [[Functional Analysis Problem-Solving Techniques#^rem-t7|Technique 7]].

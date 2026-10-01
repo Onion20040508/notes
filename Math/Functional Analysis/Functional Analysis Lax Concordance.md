@@ -146,7 +146,12 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §6.2, Thm 3 | Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-4\|§18.4]] | Orthogonal Decomposition |
 | §6.3, (14) | Definition [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^def-19-1\|§19.1]] | Bounded Linear Functional |
 | §6.3, Thm 4 | Theorem [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2\|§19.2]] | Riesz Representation Theorem |
+| §6.3, Thm 4 (Lax does not state $\|\ell\| = \|a\|$) | Theorem [[§22 Dual Spaces#^thm-22-2\|§22.2]] | Riesz Representation Theorem, with Norms |
+| §6.3, Thm 4; cf. §8.3, Thm 9 | Corollary [[§22 Dual Spaces#^cor-22-3\|§22.3]] | The Riesz Map: $H' \cong H$ |
+| §6.3, Thm 4 with §6.1, Examples 2–3 | Example [[§22 Dual Spaces#^ex-22-1\|§22.1]] | $(L^2)' = L^2$ and $(\ell^2)' = \ell^2$ |
 | §6.3, Lemma 5(i) | Lemma [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-4\|§19.4]] | The Kernel Has Codimension One |
+| §6.3, conditions (i)–(ii) of Thm 6 | Definition [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^def-23-1\|§23.1]] | Sesquilinear Form; Bounded Form |
+| §6.3, Thm 6 | Theorem [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-23-2\|§23.2]] | Lax–Milgram |
 | §6.4, closed linear span | Definition [[§8 Normed Linear Spaces#^def-8-8\|§8.8]] | Closed Linear Span |
 | §6.4, definition of orthonormal set | Definition [[§20 Orthonormal Sets and Bases#^def-20-1\|§20.1]] | Orthogonal and Orthonormal Sets |
 | §6.4, definition of orthonormal base (via closed linear span; see Proposition [[§20 Orthonormal Sets and Bases#^prop-20-9\|§20.9]]) | Definition [[§20 Orthonormal Sets and Bases#^def-20-4\|§20.4]] | Orthonormal Basis |
@@ -157,9 +162,15 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §6.4, Lemma 8 | Theorem [[§20 Orthonormal Sets and Bases#^thm-20-8\|§20.8]] | Characterizations of an Orthonormal Basis |
 | §6.4, Thm 9 | Theorem [[§20 Orthonormal Sets and Bases#^thm-20-12\|§20.12]] | Existence of Orthonormal Bases |
 | §6.4, Exercise 10 | Theorem [[§20 Orthonormal Sets and Bases#^thm-20-19\|§20.19]] | Classification of Separable Hilbert Spaces |
+| §8.1, dual space | Definition [[§22 Dual Spaces#^def-22-1\|§22.1]] | Dual Space |
+| §8.1, Thm 3 | Corollary [[§22 Dual Spaces#^cor-22-1\|§22.1]] | The Dual is Always a Banach Space |
+| §8.3, Thm 11 | Theorem [[§22 Dual Spaces#^thm-22-4\|§22.4]] | The Dual of $L^p$ |
 | §15.1, definition of continuous map | Definition [[§21 Boundedness and Continuity#^def-21-1\|§21.1]] | Continuous Linear Map |
 | §15.1, (2) and ($2'$) | Definition [[§21 Boundedness and Continuity#^def-21-2\|§21.2]] | Bounded Linear Map; Operator Norm |
 | §15.1, (3) and ($3'$) | Proposition [[§21 Boundedness and Continuity#^prop-21-1\|§21.1]] | The Operator Norm |
 | §15.1, definition of $\mathcal{L}(X, U)$ | Definition [[§21 Boundedness and Continuity#^def-21-3\|§21.3]] | The Space $\mathcal{L}(X, Y)$ |
 | §15.1, Thm 1 | Proposition [[§21 Boundedness and Continuity#^prop-21-2\|§21.2]] | Continuous if and only if Bounded |
 | §15.1, Thms 2–3 | Theorem [[§21 Boundedness and Continuity#^thm-21-5\|§21.5]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |
+| §16.1, Thm 1(i); §16.3.1 | Example [[§21 Boundedness and Continuity#^ex-21-2\|§21.2]] | The Fourier Transform from $L^1$ to $L^\infty$ |
+| cf. §7.2, before (22) | Proposition [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-23-4\|§23.4]] | Symmetric Lax–Milgram is Riesz |
+| cf. Ch. 31, Thm 1 (symmetric forms); §6.3, (20) | Theorem [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-23-1\|§23.1]] | Bounded Sesquilinear Forms are Bounded Operators |

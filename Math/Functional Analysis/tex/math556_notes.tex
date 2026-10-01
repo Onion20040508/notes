@@ -4903,6 +4903,7 @@ Then $\mathcal{F} : L^1(\mathbb{R}^n) \to L^\infty(\mathbb{R}^n)$ is a bounded l
 \[
 \|\mathcal{F}(f)\|_{L^\infty(\mathbb{R}^n)} \le \|f\|_{L^1(\mathbb{R}^n)} .
 \]
+\laxref{\S16.1, Thm~1(i); \S16.3.1}
 \end{exbox}
 
 \begin{proof}
@@ -5013,7 +5014,7 @@ with the norm $\|\ell\| = \sup_{x \neq 0} |\ell(x)|/\|x\|$, is the \textbf{dual 
 
 \begin{corbox}[The Dual is Always a Banach Space]\boxlabel{cor:dual-banach}
 For any normed linear space $X$ over $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$, $X'$ is a Banach space, whether or not $X$ is complete.
-\laxref{\S8.1}
+\laxref{\S8.1, Thm~3}
 \end{corbox}
 
 \begin{proof}
@@ -5030,7 +5031,7 @@ Let $H$ be a Hilbert space.
     \item For $a \in H$, $\ell_a(x) = (x, a)$ defines a bounded linear functional $\ell_a \in H'$ with $\|\ell_a\| = \|a\|$.
     \item For every $\ell \in H'$ there is a unique $a \in H$ with $\ell(x) = (x, a)$ for all $x \in H$; moreover $\|\ell\| = \|a\|$.
 \end{enumerate}
-\laxref{\S6.3, Thm~4}
+\laxref{\S6.3, Thm~4 (Lax does not state $\|\ell\| = \|a\|$)}
 \end{thmbox}
 
 \begin{proof}
@@ -5046,7 +5047,7 @@ For equality, take $x = a$ (if $a = 0$ both sides are $0$): $\ell_a(a) = (a, a) 
 
 \begin{corbox}[{{The Riesz Map: $H' \cong H$}}]\boxlabel{cor:riesz-map}
 The map $R : H \to H'$, $R(a) = \ell_a$, is one-to-one, onto, and norm-preserving: $\|R(a)\| = \|a\|$. It is additive, and $R(ca) = \bar{c}\, R(a)$ for scalars $c$; so $R$ is linear if $\mathbb{F} = \mathbb{R}$ and conjugate-linear if $\mathbb{F} = \mathbb{C}$.
-\laxref{\S6.3, Thm~4}
+\laxref{\S6.3, Thm~4; cf.\ \S8.3, Thm~9}
 \end{corbox}
 
 \begin{proof}
@@ -5066,6 +5067,7 @@ $L^2(\Omega)$ is a Hilbert space with $(f, g) = \int_\Omega f(x)\, \overline{g(x
 \ell(f) = \int_\Omega f(x)\, \overline{g(x)}\, dx \qquad \text{for a unique } g \in L^2(\Omega),
 \]
 with $\|\ell\| = \|g\|_{L^2}$. Likewise every $\ell \in (\ell^2)'$ is $\ell(a) = \sum_{j=1}^\infty a_j \overline{b_j}$ for a unique $b = (b_1, b_2, \ldots) \in \ell^2$, with $\|\ell\| = \|b\|_2$. A student asked which function carries the bar: the second one, since $\ell$ is linear in the function it acts on.
+\laxref{\S6.3, Thm~4 with \S6.1, Examples~2--3}
 \end{exbox}
 
 \begin{rembox}[Not Every Space is its Own Dual]\label{rem:not-every-space-own-dual}
@@ -5074,6 +5076,7 @@ A student asked whether the dual of every space is itself. No: the identificatio
 
 \begin{thmbox}[{{The Dual of $L^p$}}]\boxlabel{thm:Lp-dual}
 Let $1 \le p < \infty$ and $\frac1p + \frac{1}{p'} = 1$. Then $(L^p)' = L^{p'}$: every $\ell \in (L^p)'$ is $\ell(f) = \int f g$ for a unique $g \in L^{p'}$, with $\|\ell\| = \|g\|_{L^{p'}}$.
+\laxref{\S8.3, Thm~11}
 \end{thmbox}
 
 \begin{proof}
@@ -5124,6 +5127,7 @@ and
 \[
 \|A\| = \sup_{\substack{x, y \in H \\ x \neq 0,\ y \neq 0}} \frac{|B(x, y)|}{\|x\|\, \|y\|} .
 \]
+\laxref{cf.\ Ch.~31, Thm~1 (symmetric forms); \S6.3, (20)}
 \end{thmbox}
 
 \begin{proof}
@@ -5191,6 +5195,7 @@ is a real polynomial in $t$, never $0$ on $[0,1]$. By the intermediate value the
 
 \begin{propbox}[Symmetric Lax--Milgram is Riesz]\boxlabel{prop:sym-lax-milgram}
 If $B$ satisfies (1)--(4) of Theorem~\ref{thm:lax-milgram} and $B(x, y) = \overline{B(y, x)}$ for all $x, y$, then the conclusion of Theorem~\ref{thm:lax-milgram} holds, and it follows from the Riesz representation theorem applied to the inner product $((x, y)) = \pm B(x, y)$.
+\laxref{cf.\ \S7.2, before (22)}
 \end{propbox}
 
 \begin{proof}

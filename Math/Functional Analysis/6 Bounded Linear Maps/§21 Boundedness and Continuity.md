@@ -192,6 +192,8 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 > $$
 > \|\mathcal{F}(f)\|_{L^\infty(\mathbb{R}^n)} \le \|f\|_{L^1(\mathbb{R}^n)} .
 > $$
+>
+> *Lax: §16.1, Thm 1(i); §16.3.1*
 
 ^ex-21-2
 

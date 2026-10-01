@@ -27,6 +27,24 @@ Green's Theorem turns a line integral around a simple closed curve $C$ into a do
 > [!remark]- Connections
 > - The same convention ("$D$ on the left") in 452, where it reappears as the induced boundary orientation of Stokes' theorem: [[§16 Line Integrals and Green's Theorem|452 §16]].
 
+> [!definition] Definition §110.2: Simple Region
+> A plane region is **simple** if it is both of type I and of type II ([[§99 Double Integrals Over General Regions|§99]]). That is, it can be written both as
+>
+> $$
+> D = \{(x, y) \mid a \le x \le b,\ g_1(x) \le y \le g_2(x)\}
+> \quad\text{and as}\quad
+> D = \{(x, y) \mid c \le y \le d,\ h_1(y) \le x \le h_2(y)\}
+> $$
+>
+> with continuous functions $g_1 \le g_2$ and $h_1 \le h_2$.
+>
+> *Stewart: 16.4 (text)*
+
+^def-110-2
+
+> [!remark]- Connections
+> - Type I and type II regions in 452: [[§15 Multivariable Integration#^def-15-12|452 Def. §15.12]].
+
 > [!theorem] Theorem §110.1: Green's Theorem
 > Let $C$ be a positively oriented, piecewise-smooth, simple closed curve in the plane and let $D$ be the region bounded by $C$. If $P$ and $Q$ have continuous partial derivatives on an open region that contains $D$, then
 >
@@ -57,25 +75,7 @@ Green's Theorem turns a line integral around a simple closed curve $C$ into a do
 
 ^rem-110-1
 
-Green's Theorem is not easy to prove in general. Stewart proves it for regions that are both type I and type II, and then extends it by cutting.
-
-> [!definition] Definition §110.2: Simple Region
-> A plane region is **simple** if it is both of type I and of type II ([[§99 Double Integrals Over General Regions|§99]]). That is, it can be written both as
->
-> $$
-> D = \{(x, y) \mid a \le x \le b,\ g_1(x) \le y \le g_2(x)\}
-> \quad\text{and as}\quad
-> D = \{(x, y) \mid c \le y \le d,\ h_1(y) \le x \le h_2(y)\}
-> $$
->
-> with continuous functions $g_1 \le g_2$ and $h_1 \le h_2$.
->
-> *Stewart: 16.4 (text)*
-
-^def-110-2
-
-> [!remark]- Connections
-> - Type I and type II regions in 452: [[§15 Multivariable Integration#^def-15-12|452 Def. §15.12]].
+Green's Theorem is not easy to prove in general. Stewart proves it for simple regions ([[§110 Green's Theorem#^def-110-2|Def. §110.2]]: both type I and type II), and then extends it by cutting.
 
 > [!proof]+ Proof
 > We prove the theorem when $D$ is a simple region. It suffices to prove the two equations

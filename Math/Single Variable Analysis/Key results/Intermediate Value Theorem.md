@@ -32,6 +32,9 @@ tags: [real-analysis, hub]
 ## Used in (Measure Theory)
 - [[§18 Differentiation Theory#^lem-18-18|Lemma §18.18: Image Measure Bounded by Total Variation]]
 
+## Used in (Functional Analysis)
+- [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-23-3|Lemma §23.3: A Symmetric Coercive Form Has a Sign]]
+
 ## Connections
 - Abstract form: the continuous image of a connected set is connected; see [[§22 More on Metric Spaces꞉ Connectedness]].
 - Its proof takes $\sup$ of a set, so it rests on the [[Completeness Axiom]]; over $\mathbb{Q}$ it fails ($x^2-2$ changes sign with no rational zero).

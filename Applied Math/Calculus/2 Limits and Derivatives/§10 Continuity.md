@@ -57,9 +57,12 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 > Where are the following functions discontinuous?
 >
 > $$
-> \text{(a)}\ f(x) = \frac{x^2 - x - 2}{x - 2} \qquad
-> \text{(b)}\ f(x) = \begin{cases} \dfrac{x^2 - x - 2}{x - 2} & x \ne 2 \\[4pt] 1 & x = 2 \end{cases} \qquad
-> \text{(c)}\ f(x) = \begin{cases} \dfrac{1}{x^2} & x \ne 0 \\[4pt] 1 & x = 0 \end{cases} \qquad
+> \text{(a)}\ f(x) = \frac{x^2 - x - 2}{x - 2} \qquad\qquad
+> \text{(b)}\ f(x) = \begin{cases} \dfrac{x^2 - x - 2}{x - 2} & \text{if } x \ne 2 \\[4pt] 1 & \text{if } x = 2 \end{cases}
+> $$
+>
+> $$
+> \text{(c)}\ f(x) = \begin{cases} \dfrac{1}{x^2} & \text{if } x \ne 0 \\[4pt] 1 & \text{if } x = 0 \end{cases} \qquad\qquad
 > \text{(d)}\ f(x) = \lfloor x \rfloor
 > $$
 >
