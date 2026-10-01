@@ -1,0 +1,25 @@
+% Figure for Calculus §64.
+\begin{tikzpicture}[x=0.9cm, y=0.9cm, font=\scriptsize]
+  \draw[-stealth, thin, black!70] (-0.5,0) -- (5.6,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-3.4) -- (0,3.6) node[above] {$y$};
+  % tangent lines at (3,0)
+  \draw[figR, thin] (2.0,{-1.0*sqrt(3)}) -- (4.6,{1.6*sqrt(3)});
+  \draw[figR, thin] (2.0,{1.0*sqrt(3)}) -- (4.6,{-1.6*sqrt(3)});
+  % the curve
+  \draw[figB, thick] plot[domain=-2.2:2.2, samples=160, variable=\t] ({\t*\t},{\t*\t*\t-3*\t});
+  % direction arrows
+  \foreach \t in {-1.5, -0.5, 0.5, 1.5, 2.05} {
+    \draw[figB, -{Stealth[length=4pt]}] ({\t*\t},{\t*\t*\t-3*\t}) -- ({(\t+0.02)*(\t+0.02)},{(\t+0.02)*(\t+0.02)*(\t+0.02)-3*(\t+0.02)});
+  }
+  % horizontal and vertical tangents
+  \draw[figG, thick] (0.4,2) -- (1.6,2);
+  \draw[figG, thick] (0.4,-2) -- (1.6,-2);
+  \draw[figG, thick] (0,-0.6) -- (0,0.6);
+  \fill[figB] (1,2) circle (1.5pt) node[above=2pt] {$(1,2)$, $t=-1$};
+  \fill[figB] (1,-2) circle (1.5pt) node[below=2pt] {$(1,-2)$, $t=1$};
+  \fill[figB] (0,0) circle (1.5pt) node[right=3pt, fill=white, inner sep=1pt] {$t=0$};
+  \fill[figR] (3,0) circle (1.6pt);
+  \node[right=3pt, fill=white, inner sep=1pt] at (3.05,0.05) {$(3,0)$};
+  \node[figB] at (3.0,3.1) {$t>\sqrt3$};
+  \node[figB] at (3.0,-3.1) {$t<-\sqrt3$};
+\end{tikzpicture}

@@ -1,0 +1,26 @@
+% Figure for Calculus §14.
+\begin{tikzpicture}[x=1.5cm, y=1.1cm, font=\scriptsize]
+  \draw[-stealth, thin, black!70] (-2.2,0) -- (1.6,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.3) -- (0,3.4) node[above] {$y$};
+  \foreach \t in {-2,-1,1} \draw[thin, black!70] (\t,0.06) -- (\t,-0.06) node[below] {$\t$};
+  \draw[thin, black!70] (0.05,1) -- (-0.05,1) node[above left] {$1$};
+  \begin{scope}
+    \clip (-2.2,-0.3) rectangle (1.6,3.3);
+    % tangent lines at (0,1)
+    \draw[figG, thin, dashed] (-2.2,{1-0.6931*2.2}) -- (1.6,{1+0.6931*1.6});
+    \draw[figR, thin, dashed] (-2.2,{1-2.2}) -- (1.6,{1+1.6});
+    \draw[figO, thin, dashed] (-2.2,{1-1.0986*2.2}) -- (1.6,{1+1.0986*1.6});
+    % curves
+    \draw[figG, thick] plot[domain=-2.2:1.6, samples=80] (\x,{2^\x});
+    \draw[figR, thick] plot[domain=-2.2:1.25, samples=80] (\x,{exp(\x)});
+    \draw[figO, thick] plot[domain=-2.2:1.1, samples=80] (\x,{3^\x});
+  \end{scope}
+  \fill[black] (0,1) circle (1.6pt);
+  \node[figO, left] at (1.02,3.05) {$y=3^x$};
+  \node[figR, right] at (1.2,3.2) {$y=e^x$};
+  \node[figG, right] at (1.45,2.75) {$y=2^x$};
+  \node[right, align=left] at (-2.15,2.75) {tangent slopes at $(0,1)$:};
+  \node[figO, right] at (-2.1,2.45) {$3^x$: $\approx 1.099$};
+  \node[figR, right] at (-2.1,2.2) {$e^x$: $=1$};
+  \node[figG, right] at (-2.1,1.95) {$2^x$: $\approx 0.693$};
+\end{tikzpicture}

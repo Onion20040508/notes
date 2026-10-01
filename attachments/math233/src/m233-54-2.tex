@@ -1,0 +1,26 @@
+% Figure for Calculus §54.
+\begin{tikzpicture}[x=5cm, y=5cm, font=\scriptsize]
+  % region between y = x (top) and y = x^2 (bottom), 0 <= x <= 1
+  \fill[figB!12] plot[domain=0:1, samples=60] (\x,{\x*\x}) -- plot[domain=1:0, samples=2] (\x,\x) -- cycle;
+  % axes
+  \draw[-stealth, thin, black!70] (-0.05,0) -- (1.18,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.05) -- (0,1.12) node[above] {$y$};
+  \node[below left] at (0,0) {$0$};
+  % curves
+  \draw[figB, thick] (-0.03,-0.03) -- (1.08,1.08); \node[figB, above left] at (0.78,0.78) {$y = f(x) = x$};
+  \draw[figB, thick] plot[domain=-0.05:1.04, samples=80] (\x,{\x*\x});
+  \node[figB, right] at (0.97,0.8) {$y = g(x) = x^2$};
+  % a thin approximating rectangle at the midpoint xbar_i = 0.75
+  \def\xm{0.75} \def\h{0.025}
+  \fill[figG!30] ({\xm-\h},{\xm*\xm}) rectangle ({\xm+\h},\xm);
+  \draw[figG!80!black, thin] ({\xm-\h},{\xm*\xm}) rectangle ({\xm+\h},\xm);
+  \fill[figG!60!black] (\xm,{(\xm+\xm*\xm)/2}) circle (1.5pt);
+  \draw[figG!60!black, thin] (\xm,{(\xm+\xm*\xm)/2}) -- (0.95,0.42) node[right, align=left] {$C_i\big(\bar x_i,\ \tfrac12[f(\bar x_i)+g(\bar x_i)]\big)$};
+  \draw[black!35, dotted] (\xm,0) -- (\xm,{\xm*\xm});
+  \draw[thin, black!70] (\xm,0.012) -- (\xm,-0.012) node[below] {$\bar x_i$};
+  % centroid (1/2, 2/5)
+  \fill[figR] (0.5,0.4) circle (1.8pt);
+  \draw[figR, thin] (0.5,0.4) -- (0.32,0.62) node[above left, inner sep=1pt] {centroid $\big(\tfrac12, \tfrac25\big)$};
+  \fill[black] (1,1) circle (1.3pt) node[left=2pt] {$(1,1)$};
+  \draw[thin, black!70] (1,0.012) -- (1,-0.012) node[below] {$1$};
+\end{tikzpicture}

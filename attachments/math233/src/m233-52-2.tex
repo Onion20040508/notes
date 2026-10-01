@@ -1,0 +1,27 @@
+% Figure for Calculus §52.
+\begin{tikzpicture}[x=1.6cm, y=1.1cm, font=\scriptsize,
+    declare function={f(\x)=0.35*\x*\x;}]
+  \def\xa{0.5} \def\xb{3.0} \def\xs{1.75}
+  % the right triangle under the chord
+  \fill[figR!8] (\xa,{f(\xa)}) -- (\xb,{f(\xa)}) -- (\xb,{f(\xb)}) -- cycle;
+  \draw[black!60, thin] (\xa,{f(\xa)}) -- (\xb,{f(\xa)}) -- (\xb,{f(\xb)});
+  \draw[black!60, thin] (\xb-0.12,{f(\xa)}) -- (\xb-0.12,{f(\xa)+0.12}) -- (\xb,{f(\xa)+0.12});
+  \draw[decorate, decoration={brace, amplitude=3pt, mirror}, thin] (\xa,{f(\xa)-0.42}) -- (\xb,{f(\xa)-0.42}) node[midway, below=2pt] {$\Delta x = x_i - x_{i-1}$};
+  \node[right] at (\xb,{(f(\xa)+f(\xb))/2}) {\begin{tabular}{@{}l@{}}$\Delta y_i = f(x_i)-f(x_{i-1})$\\[2pt]$\phantom{\Delta y_i} = f'(x_i^*)\,\Delta x$\end{tabular}};
+  % the curve
+  \draw[figB, thick] plot[domain=0.25:3.25, samples=80] (\x,{f(\x)});
+  \node[figB, right] at (3.25,{f(3.25)}) {$y=f(x)$};
+  % the chord
+  \draw[figR, thick] (\xa,{f(\xa)}) -- (\xb,{f(\xb)});
+  \node[figR, rotate=40.6, above] at ({(\xa+\xb)/2-0.08},{(f(\xa)+f(\xb))/2+0.06}) {$|P_{i-1}P_i|$};
+  % tangent at x_i^* parallel to the chord
+  \draw[figG, thick, dashed] (0.95,{f(\xs)+1.225*(0.95-\xs)}) -- (2.65,{f(\xs)+1.225*(2.65-\xs)});
+  \fill[figG] (\xs,{f(\xs)}) circle (1.6pt);
+  \node[figG, right=2pt] at (\xs,{f(\xs)-0.08}) {slope $f'(x_i^*)$};
+  \draw[black!30, dotted] (\xs,{f(\xa)}) -- (\xs,{f(\xs)});
+  \node[below] at (\xs,{f(\xa)-0.03}) {$x_i^*$};
+  \draw[black!40, thin] (\xs,{f(\xa)-0.05}) -- (\xs,{f(\xa)+0.05});
+  % endpoints
+  \fill[figR] (\xa,{f(\xa)}) circle (1.6pt) node[left=2pt, black] {$P_{i-1}$};
+  \fill[figR] (\xb,{f(\xb)}) circle (1.6pt) node[above left, black] {$P_i$};
+\end{tikzpicture}

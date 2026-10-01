@@ -1,0 +1,29 @@
+% Figure for Calculus §25.
+\begin{tikzpicture}[x=1.2cm, y=0.24cm, font=\scriptsize,
+    declare function={f(\x)=\x*\x*\x-3*\x*\x+1;}]
+  \draw[-stealth, thin, black!70] (-1,0) -- (4.7,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-5) -- (0,19.5) node[above] {$y$};
+  \foreach \t in {1,2,3,4} \draw[thin, black!70] (\t,0.25) -- (\t,-0.25);
+  \node[above] at (1,0.25) {$1$}; \node[below] at (3.08,-0.25) {$3$};
+  \node[above] at (2,0.25) {$2$};
+  \node[below] at (4.08,-0.25) {$4$};
+  \draw[thin, black!70] (-0.5,0.25) -- (-0.5,-0.25) node[below] {$-\frac12$};
+  \foreach \t in {5,10,15} \draw[thin, black!70] (0.06,\t) -- (-0.06,\t) node[left] {$\t$};
+  % horizontal tangents at critical numbers
+  \draw[black!45, thin] (-0.55,1) -- (0.55,1);
+  \draw[black!45, thin] (1.4,-3) -- (2.6,-3);
+  % graph
+  \draw[figB, thick] plot[domain=-0.5:4, samples=120] (\x,{f(\x)});
+  \draw[black!30, dotted] (4,0) -- (4,17);
+  \draw[black!30, dotted] (2,0) -- (2,-3);
+  % points
+  \fill[figB] (-0.5,0.125) circle (2pt);
+  \node[figB, left] at (-0.5,2.3) {$(-\frac12,\frac18)$};
+  \fill[black!70] (0,1) circle (2pt);
+  \node[black!70, above right] at (0.05,1.2) {$(0,1)$ local max};
+  \fill[figB] (2,-3) circle (2.3pt);
+  \node[figB, below] at (2,-3.3) {$(2,-3)$ absolute min};
+  \fill[figR] (4,17) circle (2.3pt);
+  \node[figR, left] at (3.95,17) {absolute max $(4,17)$};
+  \node[figB, left] at (3.4,10) {$y = x^3-3x^2+1$};
+\end{tikzpicture}

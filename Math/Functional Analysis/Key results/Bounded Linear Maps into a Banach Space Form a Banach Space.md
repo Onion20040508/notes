@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 21.5", "L(X,Y) is a Banach space", "dual space is complete", "Lax §15.1, Thms 2--3"]
+aliases: ["MATH 556 21.5", "L(X,Y) is a Banach space", "dual space is complete", "Lax §15.1, Thms 2–3"]
 tags: [functional-analysis, hub]
 ---
 ![[§21 Boundedness and Continuity#^thm-21-5]]
@@ -14,12 +14,13 @@ tags: [functional-analysis, hub]
 - [[§1 Linear Spaces#^def-1-1|Definition §1.1: Linear Space]]
 - [[§1 Linear Spaces#^def-1-2|Definition §1.2: Linear Subspace]]
 - [[§8 Normed Linear Spaces#^def-8-1|Definition §8.1: Norm; Normed Linear Space]]
+- [[§8 Normed Linear Spaces#^def-8-4|Definition §8.4: Convergence]]
 - [[§8 Normed Linear Spaces#^def-8-5|Definition §8.5: Cauchy Sequence]]
 - [[§8 Normed Linear Spaces#^prop-8-5|Proposition §8.5: Limits are Unique; Convergent Sequences are Cauchy]]
 - [[§9 Completeness#^def-9-1|Definition §9.1: Complete Metric Space]]
 - [[§9 Completeness#^def-9-2|Definition §9.2: Banach Space]]
-- [[§21 Boundedness and Continuity#^def-21-1|Definition §21.1: Continuous Linear Map]]
 - [[§21 Boundedness and Continuity#^prop-21-1|Proposition §21.1: The Operator Norm]]
+- [[§21 Boundedness and Continuity#^def-21-1|Definition §21.1: Continuous Linear Map]]
 - [[§21 Boundedness and Continuity#^def-21-2|Definition §21.2: Bounded Linear Map; Operator Norm]]
 - [[§21 Boundedness and Continuity#^def-21-3|Definition §21.3: The Space ℒ(X, Y)]]
 

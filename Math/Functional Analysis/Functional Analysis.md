@@ -61,6 +61,7 @@ graph TD
   X4 -.->|10| C3
   X4 -.->|11| C4
   X4 -.->|3| C5
+  X4 -.->|2| C6
 ```
 
 ## Chapters
@@ -129,7 +130,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§16 Limit Point Compactness#^thm-16-2|Theorem §16.2: Equivalence for Metrizable Spaces]] (1)
 
 **[[Single Variable Analysis]]**
-- [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8: Cauchy Implies Convergent]] (5)
+- [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8: Cauchy Implies Convergent]] (6)
 - [[§33 Properties of the Riemann Integral#^thm-33-3|Theorem §33.3: Monotonicity of the Integral]] (3)
 - [[Bolzano–Weierstrass Theorem]] (2)
 - [[Fundamental Theorem of Calculus]] (2)

@@ -10,7 +10,7 @@ tags: [chapter, functional-analysis]
 So far $X$ has had only linear structure, and the [[§3 Statement and Motivation#^thm-3-2|Hahn–Banach theorem]] is the most one can say. The next layer of structure is a notion of length. With it come distance, convergence, Cauchy sequences, and completeness, and the objects of the course ([[§9 Completeness#^def-9-2|Banach spaces]]) can finally be defined. This lecture follows Lax's book.
 
 **Builds on:** [[· 1 Linear Spaces|1 Linear Spaces]] (11), [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (10), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (1)
-**Used by:** [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (1), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (27), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (22), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (12), [[· 7 Functional Analysis and Quantum Mechanics|7 Functional Analysis and Quantum Mechanics]] (3)
+**Used by:** [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (1), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (27), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (22), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (13), [[· 7 Functional Analysis and Quantum Mechanics|7 Functional Analysis and Quantum Mechanics]] (3)
 **Builds on (other subjects):** [[Single Variable Analysis]] (10)
 
 ## Sections

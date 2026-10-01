@@ -1,0 +1,18 @@
+% Figure for Calculus §61.
+\begin{tikzpicture}[font=\scriptsize]
+  \begin{axis}[nfig, width=8.4cm, height=6.4cm,
+      xmin=-1.5, xmax=2.0, ymin=-3.2, ymax=6.4, xtick={-1,0,1}, ytick={-2,0,2,4,6},
+      xlabel={$x$}, ylabel={$y$}, samples=160, domain=-1.5:2.0, clip=true,
+      ylabel style={rotate=-90}]
+    \addplot[black!25, thin] {0};
+    \addplot[figB, thick] {2};
+    \foreach \C/\col in {2/figR, 1/figR, 0.4/figR, -0.4/figG, -1/figG, -2/figG} {
+      \edef\temp{\noexpand\addplot[\col, line width=0.8pt] {2+\C*exp(-x^3)};}\temp
+    }
+    \node[figB, above] at (axis cs:1.72,2.0) {$C=0$};
+    \node[figR, above] at (axis cs:0.25,3.95) {$C=2$};
+    \node[figR, above] at (axis cs:0.25,2.97) {$C=1$};
+    \node[figG, below] at (axis cs:0.25,1.03) {$C=-1$};
+    \node[figG, below] at (axis cs:0.25,0.03) {$C=-2$};
+  \end{axis}
+\end{tikzpicture}

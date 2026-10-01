@@ -1,0 +1,16 @@
+% Figure for Calculus §51.
+\begin{tikzpicture}[x=1.6cm, y=3.0cm, font=\scriptsize]
+  \fill[figB!14] (1,0) -- plot[domain=1:3.2, samples=60] (\x,{exp(-\x)}) -- (3.2,0) -- cycle;
+  \fill[figR!30] (1,0) -- plot[domain=1:3.2, samples=60] (\x,{exp(-\x*\x)}) -- (3.2,0) -- cycle;
+  \draw[figB, thick] plot[domain=0:3.2, samples=100] (\x,{exp(-\x)});
+  \draw[figR, thick] plot[domain=0:3.2, samples=100] (\x,{exp(-\x*\x)});
+  \node[figB, above right] at (1.9,{exp(-1.9)}) {$y=e^{-x}$};
+  \node[figR, right] at (0.62,{exp(-0.62*0.62)}) {$y=e^{-x^2}$};
+  \draw[thin, black!60, dashed] (1,0) -- (1,{exp(-1)});
+  \fill (1,{exp(-1)}) circle (1.4pt);
+  \node[figB!70!black, align=left] (L) at (2.55,0.52) {blue $+$ red: $\int_1^\infty e^{-x}\,dx = e^{-1}$\\red: $\int_1^\infty e^{-x^2}\,dx < e^{-1}$};
+  \draw[-stealth, thin, black!60] (2.2,0.43) -- (1.55,0.1);
+  \draw[-stealth, thin, black!70] (0,0) -- (3.5,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,0) -- (0,1.15) node[above] {$y$};
+  \node[below] at (1,0) {$1$}; \draw[thin] (0.04,1) -- (-0.04,1) node[left] {$1$};
+\end{tikzpicture}

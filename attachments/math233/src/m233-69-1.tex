@@ -1,0 +1,21 @@
+% Figure for Calculus §69.
+\begin{tikzpicture}[x=0.36cm, y=1.1cm, font=\scriptsize]
+  \def\L{2} \def\e{0.4} \def\N{8}
+  \fill[figG!12] (0,{\L-\e}) rectangle (31,{\L+\e});
+  \draw[-stealth, thin, black!70] (-0.5,0) -- (31.8,0) node[right] {$n$};
+  \draw[-stealth, thin, black!70] (0,-0.2) -- (0,4.3) node[above] {$a_n$};
+  \draw[figB, thick] (0,\L) -- (31,\L) node[right] {$y=L$};
+  \draw[figG, thin] (0,{\L+\e}) -- (31,{\L+\e}) node[right] {$y=L+\varepsilon$};
+  \draw[figG, thin] (0,{\L-\e}) -- (31,{\L-\e}) node[right] {$y=L-\varepsilon$};
+  \node[left] at (0,\L) {$L$};
+  \draw[figR!70, dashed, thin] (\N,0) -- (\N,3.9);
+  \draw[thin] (\N,0.07) -- (\N,-0.07) node[below] {$N$};
+  \foreach \n in {1,...,30} {
+    \pgfmathsetmacro{\y}{2+2.2*sin(deg(0.9*\n+0.5))*exp(-0.17*\n)}
+    \ifnum\n>\N \fill[figR] (\n,\y) circle (1.5pt); \else \fill[black!65] (\n,\y) circle (1.5pt); \fi
+  }
+  \foreach \n in {1,5,10,15,20,25,30} \draw[thin] (\n,0.05) -- (\n,-0.05);
+  \node[below] at (1,-0.05) {$1$};
+  \node[below] at (15,-0.05) {$15$};
+  \node[below] at (30,-0.05) {$30$};
+\end{tikzpicture}

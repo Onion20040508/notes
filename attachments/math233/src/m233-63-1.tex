@@ -1,0 +1,32 @@
+% Figure for Calculus §63.
+\begin{tikzpicture}[x=1.15cm, y=1.15cm, font=\scriptsize]
+  \pgfmathsetmacro{\th}{1.1}
+  \pgfmathsetmacro{\px}{\th - sin(deg(\th))}
+  \pgfmathsetmacro{\py}{1 - cos(deg(\th))}
+  \draw[-stealth, thin, black!70] (-0.3,0) -- (6.9,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.3) -- (0,2.45) node[above] {$y$};
+  % the arch of the cycloid
+  \draw[figR, thick] plot[domain=0:6.2832, samples=150, variable=\t] ({\t - sin(deg(\t))},{1 - cos(deg(\t))});
+  \node[figR, above] at (3.1416,2) {$x = r(\theta - \sin\theta),\ y = r(1 - \cos\theta)$};
+  % the rolling circle
+  \draw[figB, thick] (\th,1) circle (1);
+  % arc PT in contact with the line
+  \draw[figG, very thick] ({\th + cos(270 - deg(\th))},{1 + sin(270 - deg(\th))}) arc[start angle={270 - deg(\th)}, end angle=270, radius=1];
+  \draw[figG, very thick] (0,0) -- (\th,0);
+  % points and segments
+  \draw[black!70] (\th,1) -- (\px,\py);
+  \draw[black!70] (\th,1) -- (\th,0);
+  \draw[black!60, dashed] (\px,\py) -- (\th,\py);
+  \draw[black!60] (\th-0.09,\py) -- (\th-0.09,\py+0.09) -- (\th,\py+0.09);
+  \draw[black!70] (\th,0.8) arc[start angle=270, end angle={270 - deg(\th)}, radius=0.2];
+  \node at ({\th + 0.34*cos(240)},{1 + 0.34*sin(240)}) {$\theta$};
+  \node[black!80] at ({(\th+\px)/2 - 0.08},{(1+\py)/2 + 0.12}) {$r$};
+  \fill (\th,1) circle (1.4pt) node[right=2pt] {$C(r\theta, r)$};
+  \fill[figR] (\px,\py) circle (1.6pt) node[above left=0pt] {$P$};
+  \fill (\th,\py) circle (1pt) node[right=1pt] {$Q$};
+  \fill (\th,0) circle (1.2pt) node[below=2pt] {$T$};
+  \node[below left] at (0,0) {$O$};
+  \draw[|<->|, thin] (0,-0.42) -- (\th,-0.42) node[midway, below] {$r\theta$};
+  \draw[thin, black!70] (6.2832,0.07) -- (6.2832,-0.07) node[below] {$2\pi r$};
+  \draw[thin, black!70] (3.1416,0.07) -- (3.1416,-0.07) node[below] {$\pi r$};
+\end{tikzpicture}

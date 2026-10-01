@@ -1,0 +1,38 @@
+% Figure for Calculus §60.
+\begin{tikzpicture}[x=0.085cm, y=0.0036cm, font=\scriptsize,
+    declare function={P(\t,\A)=1000/(1+\A*exp(-0.08*\t));}]
+  \def\L{0.12}
+  % direction field of P' = 0.08 P (1 - P/1000)
+  \foreach \tt in {5,13,...,85} {
+    \foreach \pp in {100,200,...,1400} {
+      \pgfmathsetmacro{\m}{0.08*\pp*(1-\pp/1000)}
+      \pgfmathsetmacro{\nn}{sqrt(0.085^2+(\m*0.0036)^2)}
+      \pgfmathsetmacro{\ux}{\L*0.085/\nn}
+      \pgfmathsetmacro{\uy}{\L*\m*0.0036/\nn}
+      \pgfmathsetmacro{\vx}{-\ux}
+      \pgfmathsetmacro{\vy}{-\uy}
+      \draw[black!40, thin] (\tt,\pp) ++(\vx cm,\vy cm) -- ++(2*\ux cm,2*\uy cm);
+    }
+  }
+  % equilibria and the level M/2
+  \draw[figG, thick, dashed] (0,1000) -- (84,1000);
+  \draw[black!50, thin, dashed] (0,500) -- (84,500);
+  % solution curves
+  \foreach \A in {9,1.5,-0.230769} {
+    \draw[figB, thick] plot[domain=0:84, samples=120] (\x,{P(\x,\A)});
+  }
+  % inflection points where P = 500
+  \foreach \ti in {27.465,5.068} \fill[figR] (\ti,500) circle (1.8pt);
+  \node[figR, below right] at (27.465,500) {inflection, $P=500$};
+  % axes
+  \draw[-stealth, thin, black!70] (0,0) -- (90,0) node[right] {$t$};
+  \draw[-stealth, thin, black!70] (0,0) -- (0,1520) node[above] {$P$};
+  \foreach \t in {20,40,60,80} \draw[thin, black!70] (\t,12) -- (\t,-12) node[below] {$\t$};
+  \node[below left] at (0,0) {$0$};
+  \foreach \p in {500,1000} \draw[thin, black!70] (0.8,\p) -- (-0.8,\p) node[left] {$\p$};
+  \foreach \p in {100,400,1300} \fill[figB] (0,\p) circle (1.5pt);
+  \node[figB, left] at (0,1300) {$1300$};
+  \node[figB, left] at (0,400) {$400$};
+  \node[figB, left] at (0,100) {$100$};
+  \node[figG, above left] at (84,1000) {$P=M$};
+\end{tikzpicture}

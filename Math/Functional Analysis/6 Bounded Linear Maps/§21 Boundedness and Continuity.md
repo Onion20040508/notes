@@ -310,7 +310,7 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 
 ^pf-21-5-2
 
-*Uses:* [[§21 Boundedness and Continuity#^prop-21-1|§21.1]], [[§21 Boundedness and Continuity#^thm-21-5|§21.5 (1)]], [[§21 Boundedness and Continuity#^def-21-2|Def. §21.2]], [[§21 Boundedness and Continuity#^def-21-3|Def. §21.3]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[§9 Completeness#^def-9-2|Def. §9.2]]
+*Uses:* [[§21 Boundedness and Continuity#^prop-21-1|§21.1]], [[§21 Boundedness and Continuity#^thm-21-5|§21.5 (1)]], [[§21 Boundedness and Continuity#^def-21-2|Def. §21.2]], [[§21 Boundedness and Continuity#^def-21-3|Def. §21.3]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^def-8-4|Def. §8.4]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[§9 Completeness#^def-9-2|Def. §9.2]]
 
 > [!remark]- Connections
 > - Finite-dimensional home of the norm properties: [[§27 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].

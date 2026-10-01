@@ -1,0 +1,25 @@
+% Figure for Calculus §61.
+\begin{tikzpicture}[font=\scriptsize]
+  \begin{axis}[nfig, name=A, width=6.6cm, height=5cm,
+      xmin=0, xmax=2.6, ymin=0, ymax=6.2, xtick={0,1,2}, ytick={0,1,2,3,4,5},
+      xlabel={$t$ (s)}, ylabel={$I$ (A)}, samples=150, domain=0:2.5,
+      title={(a) battery, $E = 60$}, title style={font=\small}]
+    \addplot[figB, dashed, thin, domain=0:2.5] {5} node[pos=0.85, above] {$I = 5$};
+    \addplot[figR, line width=0.9pt] {5*(1-exp(-3*x))};
+    \addplot[figR, only marks, mark=*, mark size=1.4pt] coordinates {(1,4.751)};
+    \node[figR, below right] at (axis cs:1,4.75) {$I(1) \approx 4.75$};
+  \end{axis}
+  \begin{axis}[nfig, at={(A.east)}, anchor=west, xshift=1.2cm, width=6.6cm, height=5cm,
+      xmin=0, xmax=2.6, ymin=-0.7, ymax=1.15, xtick={0,1,2}, ytick={-0.5,0,0.5,1},
+      yticklabel style={/pgf/number format/fixed},
+      xlabel={$t$ (s)}, ylabel={$I$ (A)}, samples=900, domain=0:2.5,
+      title={(b) generator, $E = 60\sin 30t$}, title style={font=\small}]
+    \addplot[black!25, thin, domain=0:2.5, samples=2] {0};
+    \addplot[figO, dashed, thin, samples=100] {50/101*exp(-3*x)};
+    \addplot[figB, dashed, thin, samples=2] {5/sqrt(101)};
+    \addplot[figB, dashed, thin, samples=2] {-5/sqrt(101)};
+    \addplot[figR, line width=0.7pt] {5/101*(sin(deg(30*x))-10*cos(deg(30*x)))+50/101*exp(-3*x)};
+    \node[figO, anchor=west] at (axis cs:0.9,0.98) {transient $\tfrac{50}{101}e^{-3t}$};
+    \node[figB, anchor=west] at (axis cs:0.9,0.72) {amplitude $5/\sqrt{101}$};
+  \end{axis}
+\end{tikzpicture}

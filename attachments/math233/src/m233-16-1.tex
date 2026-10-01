@@ -1,0 +1,25 @@
+% Figure for Calculus §16.
+\begin{tikzpicture}[scale=4.2, font=\scriptsize]
+  \def\t{50}
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (1,0);
+  \coordinate (B) at ({cos(\t)},{sin(\t)});
+  \coordinate (C) at ({cos(\t)},0);
+  \coordinate (D) at (1,{tan(\t)});
+  \draw[black!25] (A) arc (0:90:1);
+  \draw[thin] (O) -- (A);
+  \draw[thin] (O) -- (D);
+  \draw[black!40, thin] (A) -- (B);
+  \draw[figB, very thick] (C) -- (B);
+  \draw[figR, very thick] (A) arc (0:\t:1);
+  \draw[figG, very thick] (A) -- (D);
+  \draw[thin] (C) ++(-0.04,0) -- ++(0,0.04) -- ++(0.04,0);
+  \draw[thin] (A) ++(-0.04,0) -- ++(0,0.04) -- ++(0.04,0);
+  \draw[thin] (0.16,0) arc (0:\t:0.16);
+  \node at ({0.23*cos(\t/2)},{0.23*sin(\t/2)}) {$\theta$};
+  \foreach \p/\pos in {O/below left, A/below, C/below, B/above left, D/right} \fill (\p) circle (0.25pt) node[\pos] {$\p$};
+  \node[figB, left] at ({cos(\t)},{0.5*sin(\t)}) {$\sin\theta$};
+  \node[figR, right] at ({1.0*cos(\t/2)+0.01},{1.0*sin(\t/2)+0.03}) {$\theta$};
+  \node[figG, right] at (1,{0.7*tan(\t)}) {$\tan\theta$};
+  \node[below] at (0.32,0) {$1$};
+\end{tikzpicture}

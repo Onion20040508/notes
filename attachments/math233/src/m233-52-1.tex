@@ -1,0 +1,37 @@
+% Figure for Calculus §52.
+\begin{tikzpicture}[x=1.25cm, y=1.25cm, font=\scriptsize,
+    declare function={f(\x)=1.55+0.75*sin(deg(1.25*\x-0.9))+0.18*\x;}]
+  \def\a{0.6} \def\b{5.4}
+  % axes
+  \draw[-stealth, thin, black!70] (-0.2,0) -- (6.0,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.2) -- (0,3.3) node[above] {$y$};
+  \node[below left] at (0,0) {$0$};
+  % vertical grid lines at x_i
+  \foreach \k in {0,...,6} {
+    \pgfmathsetmacro{\xk}{\a+\k*(\b-\a)/6}
+    \draw[black!25, thin] (\xk,0) -- (\xk,{f(\xk)});
+  }
+  % the curve
+  \draw[figB, thick] plot[domain=\a-0.15:\b+0.15, samples=120] (\x,{f(\x)});
+  \node[figB, above] at (\b+0.15,{f(\b+0.15)+0.05}) {$y=f(x)$};
+  % the polygon
+  \draw[figR, thick] plot[domain=\a:\b, samples=7] (\x,{f(\x)});
+  \foreach \k in {0,...,6} {
+    \pgfmathsetmacro{\xk}{\a+\k*(\b-\a)/6}
+    \fill[figR] (\xk,{f(\xk)}) circle (1.5pt);
+  }
+  % labels of the vertices
+  \pgfmathsetmacro{\xo}{\a}            \node[left]  at (\xo,{f(\xo)}) {$P_0$};
+  \pgfmathsetmacro{\xone}{\a+0.8}      \node[above left] at (\xone,{f(\xone)}) {$P_1$};
+  \pgfmathsetmacro{\xthr}{\a+3*0.8}    \node[below=1pt] at (\xthr,{f(\xthr)}) {$P_{i-1}$};
+  \pgfmathsetmacro{\xfou}{\a+4*0.8}    \node[below right] at (\xfou,{f(\xfou)}) {$P_i$};
+  \pgfmathsetmacro{\xn}{\b}            \node[right] at (\xn,{f(\xn)}) {$P_n$};
+  % x labels
+  \node[below] at (\a,0) {$a=x_0$};
+  \node[below] at (\a+0.8,0) {$x_1$};
+  \node[below] at (\a+2.4,0) {$x_{i-1}$};
+  \node[below] at (\a+3.2,0) {$x_i$};
+  \node[below] at (\b,0) {$b=x_n$};
+  % Delta x brace
+  \draw[decorate, decoration={brace, amplitude=3pt, mirror}, thin] (\a+2.4,-0.33) -- (\a+3.2,-0.33) node[midway, below=2pt] {$\Delta x$};
+\end{tikzpicture}

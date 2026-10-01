@@ -1,0 +1,17 @@
+% Figure for Calculus §51.
+\begin{tikzpicture}[x=0.95cm, y=2.2cm, font=\scriptsize]
+  \def\t{6}
+  \fill[figB!25] (1,0) -- plot[domain=1:\t, samples=60] (\x,{1/(\x*\x)}) -- (\t,0) -- cycle;
+  \fill[figR!14] plot[domain=1:\t, samples=60] (\x,{1/\x}) -- plot[domain=\t:1, samples=60] (\x,{1/(\x*\x)}) -- cycle;
+  \draw[figR, thick] plot[domain=0.84:9.3, samples=100] (\x,{1/\x});
+  \draw[figB, thick] plot[domain=0.92:9.3, samples=100] (\x,{1/(\x*\x)});
+  \node[figR, right] at (1.45,0.72) {$y=\frac1x$};
+  \node[figB, left] at (0.9,1.12) {$y=\frac1{x^2}$};
+  \draw[thin, black!60] (1,0) -- (1,1); \draw[thin, black!60, dashed] (\t,0) -- (\t,{1/\t});
+  \node[figB!70!black] at (2.0,0.12) {$1-\frac1t$};
+  \node[figR!80!black] at (4.2,0.32) {$\ln t - \bigl(1-\frac1t\bigr)$};
+  \draw[-stealth, thin, black!70] (0,0) -- (9.8,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,0) -- (0,1.3) node[above] {$y$};
+  \node[below] at (1,0) {$1$}; \node[below] at (\t,0) {$t$};
+  \draw[thin] (0.07,1) -- (-0.07,1) node[left] {$1$};
+\end{tikzpicture}

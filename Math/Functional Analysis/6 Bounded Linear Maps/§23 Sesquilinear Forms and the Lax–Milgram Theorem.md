@@ -136,7 +136,7 @@ The theorem below is the infinite-dimensional version. Wu warned against the nai
 
 ^pf-23-3
 
-*Uses:* [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-23-2|§23.2]], [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^def-23-1|Def. §23.1]], [[§18 Properties of Continuous Functions#^thm-18-3|451 §18.3]]
+*Uses:* [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^def-23-1|Def. §23.1]], [[§18 Properties of Continuous Functions#^thm-18-3|451 §18.3]]
 
 > [!theorem] Proposition §23.4: Symmetric Lax–Milgram is Riesz
 > If $B$ satisfies (1)–(4) of Theorem [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-23-2|§23.2]] and $B(x, y) = \overline{B(y, x)}$ for all $x, y$, then the conclusion of Theorem [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-23-2|§23.2]] holds, and it follows from the [[§22 Dual Spaces#^thm-22-2|Riesz representation theorem]] applied to the inner product $((x, y)) = \pm B(x, y)$.
@@ -156,4 +156,4 @@ The theorem below is the infinite-dimensional version. Wu warned against the nai
 
 ^pf-23-4
 
-*Uses:* [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-23-3|§23.3]], [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-23-2|§23.2]], [[§16 Definition and Examples#^def-16-1|Def. §16.1]], [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-2|§17.2]], [[§10 New Normed Spaces from Old#^def-10-1|Def. §10.1]], [[§10 New Normed Spaces from Old#^prop-10-1|§10.1]], [[§17 Cauchy–Schwarz and the Induced Norm#^def-17-1|Def. §17.1]], [[§22 Dual Spaces#^def-22-1|Def. §22.1]], [[§22 Dual Spaces#^thm-22-2|§22.2]]
+*Uses:* [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-23-3|§23.3]], [[§16 Definition and Examples#^def-16-1|Def. §16.1]], [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-2|§17.2]], [[§10 New Normed Spaces from Old#^def-10-1|Def. §10.1]], [[§10 New Normed Spaces from Old#^prop-10-1|§10.1]], [[§17 Cauchy–Schwarz and the Induced Norm#^def-17-1|Def. §17.1]], [[§22 Dual Spaces#^def-22-1|Def. §22.1]], [[§22 Dual Spaces#^thm-22-2|§22.2]]

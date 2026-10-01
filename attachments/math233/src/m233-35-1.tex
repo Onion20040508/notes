@@ -1,0 +1,24 @@
+% Figure for Calculus §35.
+\begin{tikzpicture}[x=1.9cm, y=0.36cm, font=\scriptsize,
+    declare function={f(\x)=\x*\x*\x-6*\x;}]
+  % net area: A1 above (blue), A2 below (orange)
+  \fill[figO!25] plot[domain=0:2.4495, samples=80] (\x,{f(\x)}) -- cycle;
+  \fill[figB!20] (2.4495,0) -- plot[domain=2.4495:3, samples=40] (\x,{f(\x)}) -- (3,0) -- cycle;
+  % right-endpoint rectangles, n = 6
+  \foreach \i in {1,...,6} {
+    \pgfmathsetmacro{\xr}{\i/2}
+    \pgfmathsetmacro{\h}{f(\xr)}
+    \draw[black!55, thin, dashed] ({\xr-0.5},0) rectangle (\xr,\h);
+  }
+  \draw[figB, thick] plot[domain=0:3.08, samples=100] (\x,{f(\x)});
+  \node[figB, left] at (2.3,8.4) {$y=x^3-6x$};
+  \node[figB] at (2.82,1.5) {$A_1$};
+  \node[figO!80!black] at (1.25,-3) {$A_2$};
+  % axes
+  \draw[-stealth, thin, black!70] (-0.1,0) -- (3.35,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-6.6) -- (0,10.2) node[above] {$y$};
+  \foreach \t in {1,2,3} \draw[thin, black!70] (\t,0.2) -- (\t,-0.2) node[below right=-1pt] {$\t$};
+  \foreach \t in {-5,5} \draw[thin, black!70] (0.04,\t) -- (-0.04,\t) node[left] {$\t$};
+  \node[below left] at (0,0) {$0$};
+  \node[figB, below right=-1pt] at (2.4495,0) {$\sqrt6$};
+\end{tikzpicture}

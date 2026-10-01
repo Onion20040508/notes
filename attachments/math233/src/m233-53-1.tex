@@ -1,0 +1,27 @@
+% Figure for Calculus §53.
+\begin{tikzpicture}[x=1.15cm, y=1.15cm, font=\scriptsize]
+  \def\Ra{1.142857} \def\Rb{2.4} \def\H{2.2} \def\A{4.2}
+  \def\ea{0.24} \def\eb{0.5}
+  % the band (frustum)
+  \fill[figB!14] (-\Rb,0) arc[start angle=180, end angle=360, x radius=\Rb, y radius=\eb] -- (\Ra,\H) -- (-\Ra,\H) -- cycle;
+  \fill[figB!26] (0,\H) ellipse[x radius=\Ra, y radius=\ea];
+  \draw[figB, thick] (0,\H) ellipse[x radius=\Ra, y radius=\ea];
+  \draw[figB, thick] (-\Rb,0) arc[start angle=180, end angle=360, x radius=\Rb, y radius=\eb];
+  \draw[figB, thin, dashed] (\Rb,0) arc[start angle=0, end angle=180, x radius=\Rb, y radius=\eb];
+  \draw[figB, thick] (-\Rb,0) -- (-\Ra,\H) (\Rb,0) -- (\Ra,\H);
+  % the removed top cone
+  \draw[black!45, dashed] (-\Ra,\H) -- (0,\A) -- (\Ra,\H);
+  \fill (0,\A) circle (1.2pt);
+  % axis and radii
+  \draw[black!45, dashed] (0,-0.2) -- (0,\A);
+  \draw[figR, thick] (0,\H) -- (\Ra,\H) node[midway, above=-1pt] {$r_1$};
+  \draw[figR, thick] (0,0) -- (\Rb,0) node[midway, below] {$r_2$};
+  \draw[black!60, thin] (0.14,\H) -- (0.14,\H+0.14) -- (0,\H+0.14);
+  \draw[black!60, thin] (0.16,0) -- (0.16,0.16) -- (0,0.16);
+  % slant heights, offset outward along the normal (0.868, 0.496)
+  \draw[decorate, decoration={brace, amplitude=4pt}, thin] ({0+0.868*0.22},{\A+0.496*0.22}) -- ({\Ra+0.868*0.22},{\H+0.496*0.22}) node[midway, above right=1pt] {$l_1$};
+  \draw[decorate, decoration={brace, amplitude=4pt}, thin] ({\Ra+0.868*0.22},{\H+0.496*0.22}) -- ({\Rb+0.868*0.22},{0+0.496*0.22}) node[midway, above right=1pt] {$l$};
+  % the similar triangles
+  \node[align=left, anchor=west] at (-4.6,3.5) {similar right triangles\\(apex, axis, rim):\\[3pt] $\dfrac{l_1}{r_1} = \dfrac{l_1 + l}{r_2}$};
+  \node[figB, anchor=west, align=left] at (-4.6,1.2) {band area\\$= \pi r_2(l_1+l) - \pi r_1 l_1$\\$= 2\pi\,\tfrac{r_1+r_2}{2}\,l$};
+\end{tikzpicture}

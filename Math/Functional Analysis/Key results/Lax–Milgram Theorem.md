@@ -14,8 +14,7 @@ tags: [functional-analysis, hub]
 - (proof in the next lecture)
 
 ## Used in (Functional Analysis)
-- [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-23-3|Lemma §23.3: A Symmetric Coercive Form Has a Sign]]
-- [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-23-4|Proposition §23.4: Symmetric Lax–Milgram is Riesz]]
+- (not cited later in the course)
 
 ## Connections
 - **What is new.** The conclusion looks like the [[Riesz Representation Theorem (Hilbert spaces)|Riesz representation theorem]], with B in place of the inner product. The difference is that B need not be symmetric. When B is symmetric, it is ± an inner product with an equivalent norm, and the theorem reduces to Riesz ([[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-23-3|§23.3]], [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-23-4|§23.4]]).

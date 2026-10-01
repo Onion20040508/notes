@@ -1,0 +1,21 @@
+% Figure for Calculus §50.
+\begin{tikzpicture}[x=1.15cm, y=1.0cm, font=\scriptsize, declare function={f(\x)=1.6+1.1*sin(deg(1.7*\x-0.4))+0.3*\x;}]
+  \fill[figB!14] (0.500,0) -- plot[domain=-1.1:1.1, samples=40] ({1.600+\x},{-0.86188*\x*\x+-0.35080*\x+2.88545}) -- (2.700,0) -- cycle;
+  \fill[figB!14] (2.700,0) -- plot[domain=-1.1:1.1, samples=40] ({3.800+\x},{0.26053*\x*\x+1.23187*\x+2.49653}) -- (4.900,0) -- cycle;
+  \draw[figR, thick] plot[domain=-1.1:1.1, samples=40] ({1.600+\x},{-0.86188*\x*\x+-0.35080*\x+2.88545});
+  \draw[figR, thick] plot[domain=-1.1:1.1, samples=40] ({3.800+\x},{0.26053*\x*\x+1.23187*\x+2.49653});
+  \draw[thin, black!60] (0.500,0) -- (0.500,2.2285);
+  \draw[thin, black!40, dashed] (1.600,0) -- (1.600,2.8855);
+  \draw[thin, black!60] (2.700,0) -- (2.700,1.4567);
+  \draw[thin, black!40, dashed] (3.800,0) -- (3.800,2.4965);
+  \draw[thin, black!60] (4.900,0) -- (4.900,4.1668);
+  \draw[figB, thick] plot[domain=0.25:5.15, samples=120] (\x,{f(\x)}) node[right] {$y=f(x)$};
+  \fill (0.500,2.2285) circle (1.4pt); \node[above] at (0.500,2.3485) {$P_0$}; \node[below] at (0.500,0) {$x_0$};
+  \fill (1.600,2.8855) circle (1.4pt); \node[above] at (1.600,3.0055) {$P_1$}; \node[below] at (1.600,0) {$x_1$};
+  \fill (2.700,1.4567) circle (1.4pt); \node[above] at (2.700,1.5767) {$P_2$}; \node[below] at (2.700,0) {$x_2$};
+  \fill (3.800,2.4965) circle (1.4pt); \node[above] at (3.800,2.6165) {$P_3$}; \node[below] at (3.800,0) {$x_3$};
+  \fill (4.900,4.1668) circle (1.4pt); \node[above] at (4.900,4.2868) {$P_4$}; \node[below] at (4.900,0) {$x_4$};
+  \node[figR] at (3.85,0.45) {parabolas};
+  \draw[-stealth, thin, black!70] (0,0) -- (5.7,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,0) -- (0,4.4) node[above] {$y$};
+\end{tikzpicture}

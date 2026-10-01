@@ -1,0 +1,19 @@
+% Figure for Calculus §15.
+\begin{tikzpicture}[x=1cm, y=1cm, font=\scriptsize]
+  \def\u{4} \def\v{2.4} \def\du{1.1} \def\dv{0.8}
+  \fill[black!6] (0,0) rectangle (\u,\v);
+  \fill[figG!20] (\u,0) rectangle (\u+\du,\v);
+  \fill[figB!20] (0,\v) rectangle (\u,\v+\dv);
+  \fill[figR!25] (\u,\v) rectangle (\u+\du,\v+\dv);
+  \draw[thick] (0,0) rectangle (\u,\v);
+  \draw[thin] (\u,0) rectangle (\u+\du,\v+\dv);
+  \draw[thin] (0,\v) -- (0,\v+\dv) -- (\u,\v+\dv);
+  \node at (\u/2,\v/2) {$uv$};
+  \node[figB!80!black] at (\u/2,\v+\dv/2) {$u\,\Delta v$};
+  \node[figG!70!black] at (\u+\du/2,\v/2) {$v\,\Delta u$};
+  \node[figR] at (\u+\du/2,\v+\dv/2) {$\Delta u\,\Delta v$};
+  \draw[decorate, decoration={brace, mirror, amplitude=4pt}] (0,-0.1) -- (\u,-0.1) node[midway, below=4pt] {$u$};
+  \draw[decorate, decoration={brace, mirror, amplitude=4pt}] (\u,-0.1) -- (\u+\du,-0.1) node[midway, below=4pt] {$\Delta u$};
+  \draw[decorate, decoration={brace, amplitude=4pt}] (-0.1,0) -- (-0.1,\v) node[midway, left=4pt] {$v$};
+  \draw[decorate, decoration={brace, amplitude=4pt}] (-0.1,\v) -- (-0.1,\v+\dv) node[midway, left=4pt] {$\Delta v$};
+\end{tikzpicture}

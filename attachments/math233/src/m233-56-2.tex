@@ -1,0 +1,22 @@
+% Figure for Calculus §56.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=9cm, height=5.0cm, xmin=-1, xmax=16.5, ymin=0, ymax=0.23,
+      xtick={0,1,5,10,15}, ytick={0.1,0.2},
+      yticklabel style={/pgf/number format/fixed},
+      xlabel={$t$}, ylabel={$y$}, clip=false, xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south, rotate=-90}]
+    \addplot[draw=none, fill=figB!22, domain=0:1, samples=20] {0.2*exp(-x/5)} \closedcycle;
+    \addplot[draw=none, fill=figR!18, domain=5:16.3, samples=60] {0.2*exp(-x/5)} \closedcycle;
+    \addplot[figB, domain=0:16.3, samples=100] {0.2*exp(-x/5)};
+    \addplot[figB, domain=-1:0] {0};
+    \fill[figB] (axis cs:0,0.2) circle (1.6pt);
+    \draw[figG, thick, dashed] (axis cs:3.466,0) -- (axis cs:3.466,0.2);
+    \node[figG, font=\scriptsize, anchor=south] at (axis cs:3.466,0.2) {median $m = 5\ln 2 \approx 3.47$};
+    \draw[figR, thick, dashed] (axis cs:5,0) -- (axis cs:5,0.14);
+    \node[figR, font=\scriptsize, anchor=south west] at (axis cs:5,0.135) {mean $\mu = 5$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.15,0.05) {$0.181$};
+    \draw[figB, thin] (axis cs:0.5,0.09) -- (axis cs:1.3,0.06);
+    \draw[figR, thin] (axis cs:7.5,0.025) -- (axis cs:10,0.06); \node[figR, font=\scriptsize, anchor=south west] at (axis cs:9.8,0.058) {$P(T>5) = e^{-1} \approx 0.368$};
+    \node[figB, font=\small, anchor=west] at (axis cs:7.5,0.125) {$f(t) = 0.2\,e^{-t/5}$};
+  \end{axis}
+\end{tikzpicture}

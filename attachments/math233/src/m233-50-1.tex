@@ -1,0 +1,29 @@
+% Figure for Calculus §50.
+\begin{tikzpicture}[x=1.6cm, y=1.25cm, font=\scriptsize,
+    declare function={f(\x)=0.6+2.4*\x-0.75*\x*\x;}]
+  \def\a{0.35} \def\b{2.35} \def\m{1.35}
+  % slope at midpoint: f'(m) = 2.4 - 1.5 m
+  \pgfmathsetmacro{\fm}{f(\m)} \pgfmathsetmacro{\s}{2.4-1.5*\m}
+  \pgfmathsetmacro{\fa}{f(\a)} \pgfmathsetmacro{\fb}{f(\b)}
+  \pgfmathsetmacro{\ta}{\fm+\s*(\a-\m)} \pgfmathsetmacro{\tb}{\fm+\s*(\b-\m)}
+  % midpoint error (between tangent and curve): red; trapezoid error (between curve and chord): blue
+  \fill[figR!25] plot[domain=\a:\b, samples=60] (\x,{f(\x)}) -- (\b,\tb) -- (\a,\ta) -- cycle;
+  \fill[figB!22] plot[domain=\a:\b, samples=60] (\x,{f(\x)}) -- (\b,\fb) -- (\a,\fa) -- cycle;
+  % tangent trapezoid ABCD and chord trapezoid AQRD
+  \draw[figR, thick] (\a,\ta) -- (\b,\tb);
+  \draw[figB!80!black, thick] (\a,\fa) -- (\b,\fb);
+  \draw[thin] (\a,0) -- (\a,\ta); \draw[thin] (\b,0) -- (\b,\tb);
+  \draw[black!50, dashed] (\m,0) -- (\m,\fm);
+  % curve
+  \draw[figB, thick] plot[domain=0.15:2.6, samples=80] (\x,{f(\x)}) node[right] {$y=f(x)$};
+  % labels
+  \fill (\m,\fm) circle (1.4pt) node[above left] {$P$};
+  \fill[figR] (\a,\ta) circle (1.3pt) node[left] {$B$};
+  \fill[figR] (\b,\tb) circle (1.3pt) node[right] {$C$};
+  \fill[figB] (\a,\fa) circle (1.3pt) node[left] {$Q$};
+  \fill[figB] (\b,\fb) circle (1.3pt) node[right] {$R$};
+  \node[above left] at (\a,0) {$A$}; \node[above right] at (\b,0) {$D$};
+  \draw[-stealth, thin, black!70] (0,0) -- (2.9,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,0) -- (0,2.8) node[above] {$y$};
+  \node[below] at (\a,0) {$x_{i-1}$}; \node[below] at (\m,0) {$\bar x_i$}; \node[below] at (\b,0) {$x_i$};
+\end{tikzpicture}

@@ -1,0 +1,20 @@
+% Figure for Calculus §5.
+\begin{tikzpicture}[x=0.85cm, y=0.85cm, font=\scriptsize]
+  \draw[-stealth, thin, black!70] (-2.6,0) -- (4.4,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-2.6) -- (0,4.4) node[above] {$y$};
+  \foreach \t in {1,2,3} {\draw[thin, black!70] (\t,0.07) -- (\t,-0.07) node[below] {$\t$};
+    \draw[thin, black!70] (0.07,\t) -- (-0.07,\t) node[left] {$\t$};}
+  \draw[figG, thick] (-2.4,-2.4) -- (4.2,4.2) node[above right] {$y=x$};
+  \draw[figB, thick] plot[domain=-2.5:1.43, samples=80] (\x,{exp(\x)});
+  \draw[figR, thick] plot[domain=0.075:4.2, samples=120] (\x,{ln(\x)});
+  \node[figB, left] at (1.2,3.6) {$y=e^x$};
+  \node[figR, below right] at (3.4,1.1) {$y=\ln x$};
+  % a point and its mirror image
+  \def\a{0.8}
+  \pgfmathsetmacro{\b}{exp(\a)}
+  \draw[black!60, dashed] (\a,\b) -- (\b,\a);
+  \fill[figB] (\a,\b) circle (1.9pt) node[left] {$(a,b)$};
+  \fill[figR] (\b,\a) circle (1.9pt) node[below right] {$(b,a)$};
+  \pgfmathsetmacro{\c}{(\a+\b)/2}
+  \draw[black!60] ({\c-0.16},{\c+0.16}) -- ({\c},{\c+0.32}) -- ({\c+0.16},{\c+0.16});
+\end{tikzpicture}

@@ -1,0 +1,33 @@
+% Figure for Calculus §54.
+\begin{tikzpicture}[x=0.15cm, y=0.15cm, font=\scriptsize]
+  % water (depth 0 to 16 below the surface; y = -depth)
+  \fill[figB!12] (-23,0) -- (23,0) -- (15,-16) -- (-15,-16) -- cycle;
+  \draw[figB!60, thin] (-23,0) -- (23,0);
+  % the dam
+  \draw[thick, black!75] (-25,4) -- (25,4) -- (15,-16) -- (-15,-16) -- cycle;
+  % a horizontal strip at depth x
+  \def\d{9}
+  \fill[figR!35] ({-(23-\d/2)},{-\d+0.6}) rectangle ({23-\d/2},{-\d-0.6});
+  \draw[figR, thin] ({-(23-\d/2)},{-\d+0.6}) rectangle ({23-\d/2},{-\d-0.6});
+  % width arrow above the strip
+  \draw[stealth-stealth, figR] ({-(23-\d/2)},{-\d+2.4}) -- ({23-\d/2},{-\d+2.4});
+  \node[figR, fill=figB!12, inner sep=1pt] at (-9,{-\d+2.4}) {$w(x) = 46 - x$};
+  % similar triangle on the right: a = 8 - x/2
+  \draw[black!45, dashed, thin] (15,-16) -- (15,4);
+  \draw[figG, very thick] (15,{-\d}) -- ({23-\d/2},{-\d});
+  \node[figG] at (16.4,{-\d-1.7}) {$a$};
+  \draw[decorate, decoration={brace, amplitude=3pt}, figG] (14.4,-16) -- (14.4,{-\d-0.8}) node[midway, left=3pt] {$16-x$};
+  % depth axis, pointing down
+  \draw[-stealth, thin, black!75] (0,6) -- (0,-19) node[below] {$x$ (depth)};
+  \node[right] at (0,0.9) {$0$};
+  \node[right] at (0,-15.1) {$16$};
+  \draw[thin, black!75] (-0.5,{-\d}) -- (0.5,{-\d});
+  \node[fill=figR!35, inner sep=0.8pt] at (3.2,{-\d}) {$x$};
+  \draw[decorate, decoration={brace, amplitude=2pt}, thin] ({-(23-\d/2)-0.6},{-\d-0.6}) -- ({-(23-\d/2)-0.6},{-\d+0.6}) node[midway, left=2pt] {$\Delta x$};
+  % dimensions
+  \node[above] at (-12,4) {$50$ m};
+  \node[below] at (-7.5,-16) {$30$ m};
+  \draw[stealth-stealth, thin, black!60] (-29,4) -- (-29,-16) node[midway, left] {$20$ m};
+  \draw[stealth-stealth, thin, black!60] (27,4) -- (27,0) node[midway, right] {$4$ m};
+  \draw[figB!60, thin, dotted] (23,0) -- (27,0); \node[figB, right] at (27,-1.6) {water level};
+\end{tikzpicture}

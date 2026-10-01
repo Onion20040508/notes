@@ -1,0 +1,16 @@
+% Figure for Calculus §4.
+\begin{tikzpicture}[x=1.05cm, y=0.62cm, font=\scriptsize]
+  \foreach \b/\m/\lab/\mlab/\sh in {2/0.693147/{y=2^x}/{m\approx 0.69}/0, 2.718282/1/{y=e^x}/{m=1}/4.4, 3/1.098612/{y=3^x}/{m\approx 1.10}/8.8} {
+    \begin{scope}[xshift=\sh cm]
+      \draw[-stealth, thin, black!70] (-1.7,0) -- (1.8,0) node[right] {$x$};
+      \draw[-stealth, thin, black!70] (0,-1.1) -- (0,4.4) node[above] {$y$};
+      \draw[thin, black!70] (1,0.08) -- (1,-0.08) node[below] {$1$};
+      \draw[thin, black!70] (0.06,1) -- (-0.06,1) node[left] {$1$};
+      \draw[figR, thick] plot[domain={-1.6}:{min(1.6,3.3/\m)}, samples=2] (\x,{1+\m*\x});
+      \draw[figB, thick] plot[domain=-1.6:{ln(4.2)/ln(\b)}, samples=80] (\x,{\b^\x});
+      \fill[black] (0,1) circle (1.6pt);
+      \node[figB, left] at ({ln(3.6)/ln(\b)},3.6) {$\lab$};
+      \node[figR, right] at (0.55,{1+0.55*\m-0.35}) {$\mlab$};
+    \end{scope}
+  }
+\end{tikzpicture}

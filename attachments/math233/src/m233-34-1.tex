@@ -1,0 +1,38 @@
+% Figure for Calculus §34.
+\begin{tikzpicture}[x=6.4cm, y=4.2cm, font=\scriptsize]
+  \def\n{8}
+  % upper (right-endpoint) rectangles: the excess over the lower ones
+  \foreach \i in {1,...,8} {
+    \pgfmathsetmacro{\xl}{(\i-1)/\n}
+    \pgfmathsetmacro{\xr}{\i/\n}
+    \pgfmathsetmacro{\hl}{\xl*\xl}
+    \pgfmathsetmacro{\hr}{\xr*\xr}
+    \fill[figR!22] (\xl,\hl) rectangle (\xr,\hr);
+    \draw[figR!80, thin] (\xl,\hl) rectangle (\xr,\hr);
+    \fill[figB!18] (\xl,0) rectangle (\xr,\hl);
+    \draw[figB!70, thin] (\xl,0) rectangle (\xr,\hl);
+  }
+  % the curve
+  \draw[figB, thick] plot[domain=0:1.04, samples=80] (\x,{\x*\x});
+  \node[figB, above] at (1.04,1.08) {$y=x^2$};
+  % the excess pieces slid right into one column of width 1/n, height 1
+  \foreach \i in {1,...,8} {
+    \pgfmathsetmacro{\hl}{((\i-1)/\n)^2}
+    \pgfmathsetmacro{\hr}{(\i/\n)^2}
+    \fill[figR!22] (1.12,\hl) rectangle ({1.12+1/\n},\hr);
+    \draw[figR!80, thin] (1.12,\hl) rectangle ({1.12+1/\n},\hr);
+  }
+  \draw[-stealth, figR!70, thin] (1.0,0.55) -- (1.11,0.55);
+  \draw[decorate, decoration={brace, amplitude=3pt}, thin] ({1.12+1/\n+0.015},1) -- ({1.12+1/\n+0.015},0) node[midway, right=3pt, align=left] {$R_8 - L_8$\\$= \frac18 \cdot 1$};
+  % axes
+  \draw[-stealth, thin, black!70] (-0.03,0) -- (1.42,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.03) -- (0,1.12) node[above] {$y$};
+  \foreach \t/\l in {0.125/\frac18, 0.5/\frac12, 1/1} \draw[thin, black!70] (\t,0.015) -- (\t,-0.015) node[below] {$\l$};
+  \node[below left] at (0,0) {$0$};
+  \draw[thin, black!70] (0.015,1) -- (-0.015,1) node[left] {$1$};
+  % legend
+  \fill[figB!18] (0.06,0.95) rectangle (0.11,0.99); \draw[figB!70, thin] (0.06,0.95) rectangle (0.11,0.99);
+  \node[right] at (0.11,0.97) {$L_8$ (left endpoints)};
+  \fill[figR!22] (0.06,0.85) rectangle (0.11,0.89); \draw[figR!80, thin] (0.06,0.85) rectangle (0.11,0.89);
+  \node[right] at (0.11,0.87) {$R_8 - L_8$};
+\end{tikzpicture}

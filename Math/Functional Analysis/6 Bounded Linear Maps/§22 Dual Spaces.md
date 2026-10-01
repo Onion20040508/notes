@@ -38,7 +38,7 @@ tags: [functional-analysis, math556]
 
 ^pf-22-1
 
-*Uses:* [[§21 Boundedness and Continuity#^thm-21-5|§21.5]], [[§9 Completeness#^def-9-2|Def. §9.2]], [[§22 Dual Spaces#^def-22-1|Def. §22.1]]
+*Uses:* [[§21 Boundedness and Continuity#^thm-21-5|§21.5]], [[§9 Completeness#^def-9-2|Def. §9.2]], [[§22 Dual Spaces#^def-22-1|Def. §22.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]]
 
 > [!remark] Note: The Pairing $\langle x, \ell \rangle$
 > For $\ell \in X'$ and $x \in X$ one often writes $\ell(x) = \langle x, \ell \rangle$. This is only notation, borrowed from inner product spaces: $\langle x, \ell \rangle$ pairs an element of $X$ with an element of $X'$, and is linear in $x$. In general $X'$ is a different space from $X$; on a Hilbert space the two can be identified, by the next theorem.
