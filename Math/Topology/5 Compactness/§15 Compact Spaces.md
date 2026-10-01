@@ -217,6 +217,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 > [!remark]- Connections
 > - With $Y = \mathbb{R}$ this is the source of the MATH 451 [[Extreme Value Theorem]]: $f([a,b])$ is compact, hence closed and bounded ([[Heine–Borel Theorem|Heine-Borel]]).
+> - With Y = ℝ it gives the Extreme Value Theorem: [[§25 Maximum and Minimum Values#^thm-25-1|Calc Thm. §25.1]] and, on closed bounded sets in ℝ², [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (with worked examples).
 
 > [!theorem] Theorem §15.4: Compact Subspace of Hausdorff is Closed
 > Every compact subspace of a Hausdorff space is closed.
@@ -349,6 +350,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > - The compact-to-Hausdorff shortcut for quotient maps: [[§12 Quotient Topology#^thm-12-5|Product of Quotient Maps (Compact-Hausdorff Case)]].
 > - Used to get local homeomorphisms in $p: \mathbb{R} \to S^1$ is a Covering Map ([[§24 Covering Spaces#^thm-24-2|§24.2]]).
 > - 451's case on an interval: a strictly increasing continuous f on [a, b] has a continuous inverse, [[§18 Properties of Continuous Functions#^thm-18-9|451 Thm. §18.9]], proved there with Bolzano–Weierstrass.
+> - One-variable analogue: the inverse of a continuous one-to-one function on an interval is continuous, [[§10 Continuity#^thm-10-5|Calc Thm. §10.5]].
 
 > [!theorem] Theorem §15.8: Finite Product of Compact Spaces
 > The product of finitely many compact spaces is compact.
@@ -527,6 +529,9 @@ To prove this, we first establish a key lemma:
 ^pf-15-12
 
 *Uses:* [[§11 Metric Topology#^thm-11-4|§11.4]], [[§15 Compact Spaces#^thm-15-4|§15.4]], [[§15 Compact Spaces#^lem-15-1|§15.1]], [[§15 Compact Spaces#^cor-15-11|§15.11]], [[§6 Closed Sets and Limit Points#^thm-6-2|§6.2]], [[§15 Compact Spaces#^thm-15-2|§15.2]]
+
+> [!remark]- Connections
+> - Closed bounded sets are where Stewart's two-variable Extreme Value Theorem applies: [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (with worked examples).
 
 > [!remark] Remark: Filling the Gap: Balls vs. Boxes
 > **Q:** The ball $B_\rho(0, N)$ is not a closed interval. How do we use compactness of $[a,b]$?

@@ -63,6 +63,7 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 
 > [!remark]- Connections
 > - Elementary version: [[§5 The Induction Principle#^def-5-1|250 Def. §5.1]], where induction itself is the axiom and is shown equivalent to the set form N5 in [[§7 Quantifiers#^def-7-4|250 Def. §7.4]].
+> - Computational version: [[§120 Sigma Notation#^def-120-2|Calc Def. §120.2]] (with worked examples).
 
 > [!remark] Remark
 > When applying induction, it is important to state precisely what $P_n$ is. Many failed induction proofs fail at exactly this point: the statement being carried through the induction is not strong enough (see Example 1.2 below) or the starting point is wrong (see Example 1.3).

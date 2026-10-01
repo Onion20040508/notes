@@ -24,3 +24,4 @@ tags: [real-analysis, hub]
 
 ## Connections
 - Equivalent to the [[Completeness Axiom]] over an ordered field. The tool for recursively defined sequences (§10) and for series with nonnegative terms (§14).
+- **Also in [[Calculus]]:** [[§69 Sequences#^thm-69-9|Calc Thm. §69.9]] (computational treatment with worked examples).

@@ -28,6 +28,7 @@ Let $\gamma$ be a smooth curve in $\mathbb{R}^2$ parametrized by $x = x(t)$, $y 
 > [!remark]- Connections
 > - The 2D analog, weighting by the area element: [[§18 Surface Integrals#^def-18-5|Scalar Surface Integral (Def. §18.5)]].
 > - Unlike the work integral, this is not the integral of a differential form: [[§22 The Algebra of Differential Forms#^rem-22-8|Scalar Integrals Are Not Form Integrals]].
+> - Computational version: [[§108 Line Integrals#^thm-108-1|Calc Thm. §108.1]] (with worked examples); with f ≡ 1 it is arc length, [[§64 Calculus with Parametric Curves#^thm-64-4|Calc Thm. §64.4]] and, for a graph y = f(x), [[§52 Arc Length#^thm-52-1|Calc Thm. §52.1]].
 
 **Derivation.** Partition $[a, b]$ into $a = t_0 < t_1 < \cdots < t_N = b$. The $i$-th piece of $\gamma$ has arc length approximately:
 
@@ -70,6 +71,7 @@ $$
 
 > [!remark]- Connections
 > - In forms language this is the integral of the 1-form $f\,dx + g\,dy$, computed by pullback: [[§22 The Algebra of Differential Forms#^ex-22-2|Pullback Along a Curve (Ex. §22.2)]], [[§22 The Algebra of Differential Forms#^rem-22-6|1-Form Integration Recovers the Line Integral]].
+> - Computational version: [[§108 Line Integrals#^def-108-8|Calc Def. §108.8]] (with worked examples); along a segment of the x-axis it is the work of a variable force, [[§42 Work#^def-42-3|Calc Def. §42.3]].
 
 **Derivation.** Along the $i$-th piece, the displacement vector is approximately:
 
@@ -202,6 +204,7 @@ Adding the results:
 > [!remark]- Connections
 > - 1D ancestor: the [[Fundamental Theorem of Calculus]] (boundary of $[a,b]$ is $\{a,b\}$); curved-surface version: [[Stokes' Theorem in ℝ³|Stokes' Theorem (§20.1)]]; everything at once: [[Generalized Stokes' Theorem|Generalized Stokes' Theorem (§23.1)]].
 > - Why the region must have no holes for "curl-free ⇒ conservative": [[§22 The Algebra of Differential Forms#^prop-22-11|A Closed Form That Is Not Exact (§22.11)]]; the topological notion is [[§23 The Fundamental Group#^def-23-3|simply connected]] (590 §23.3).
+> - Computational version: [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]] (with worked examples).
 
 > [!remark] Remark: Why the Signs Work Out
 > The sign pattern $g_x - f_y$ is not arbitrary. It comes from:
@@ -234,6 +237,9 @@ Let $\gamma: (x(t), y(t))$, $t \in [a, b]$ be a smooth curve bounding a domain $
 
 ![[m452-16-5.svg]]
 *Def. §16.3 at one boundary point: the tangent $\mathbf{T} = (x', y')$ (blue) of the counterclockwise boundary, the outer normal $\mathbf{n}_{\text{out}} = (y', -x')$ (red, $\mathbf{T}$ turned clockwise, pointing to the right of travel and out of $D$), and the inner normal $\mathbf{n}_{\text{in}} = (-y', x')$ (gray dashed, pointing into $D$). Work integrals use $\mathbf{T}$, flux integrals use $\mathbf{n}_{\text{out}}$ — the two faces of Green's theorem in Remark §16.4.*
+
+> [!remark]- Connections
+> - Computational version: the tangent vector $\mathbf r'(t)$, [[§87 Derivatives and Integrals of Vector Functions#^def-87-2|Calc Def. §87.2]] (with worked examples).
 
 **Convention:** With $\gamma$ oriented counterclockwise (so $D$ is on our left), the outer normal points to the right of the direction of travel.
 
@@ -302,6 +308,7 @@ Now rename: let $\mathbf{u} = (u_1, u_2)$ be any $C^1$ vector field. Set $g = u_
 
 > [!remark]- Connections
 > - Generalizes to [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ (§17.1)]] and, with surface integrals, [[Divergence Theorem in ℝ³|Divergence Theorem in ℝ³ (§18.2)]].
+> - Computational version: [[§111 Curl and Divergence#^thm-111-5|Calc Thm. §111.5]] (normal form of Green's Theorem).
 
 > [!definition] Definition §16.4: Divergence
 > The **divergence** of a vector field $\mathbf{u} = (u_1, u_2)$ is the scalar field:
@@ -355,6 +362,7 @@ We can also reinterpret Green's theorem using the **curl**.
 
 > [!remark]- Connections
 > - First introduced in [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence|§11]]; in forms language: [[§22 The Algebra of Differential Forms#^prop-22-3|d on 1-Forms Gives the Curl (§22.3)]].
+> - Computational version: [[§111 Curl and Divergence#^def-111-1|Calc Def. §111.1]] (with worked examples).
 
 **Reduction to 2D.** For a planar vector field $\mathbf{u} = (u_1(x,y), \, u_2(x,y), \, 0)$ (with $u_3 = 0$ and no $z$-dependence):
 
@@ -379,6 +387,7 @@ This is exactly the integrand in [[Green's Theorem|Green's theorem]]! With $\mat
 
 > [!remark]- Connections
 > - The flat case of [[Stokes' Theorem in ℝ³|Stokes' Theorem (§20.1)]], with $S = D$ and $\hat{n} = \hat{k}$.
+> - Computational version: [[§111 Curl and Divergence#^thm-111-4|Calc Thm. §111.4]] (tangential form of Green's Theorem).
 
 > [!remark] Remark: Two Faces of Green's Theorem
 > Green's theorem has two equivalent vector formulations:

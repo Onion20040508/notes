@@ -35,6 +35,9 @@ So a convergent power series is forced to be $\sum \tfrac{f^{(n)}(0)}{n!} x^n$. 
 
 ^def-31-1
 
+> [!remark]- Connections
+> - Computational version: [[§78 Taylor and Maclaurin Series#^def-78-1|Calc Def. §78.1]] (with worked examples).
+
 **Question: is $f(x) = \sum_n \tfrac{f^{(n)}(0)}{n!}x^n$ for every $f$ with all derivatives?** No — two distinct problems:
 
 1. the Taylor series may not converge for any $x \neq 0$ (radius $R = 0$);
@@ -58,6 +61,9 @@ $$
 > $s_{n-1}(x) = f(x) - R_n(x)$, so $s_{n-1}(x) \to f(x) \iff R_n(x) \to 0$.
 
 ^pf-31-1
+
+> [!remark]- Connections
+> - Computational version: [[§78 Taylor and Maclaurin Series#^thm-78-3|Calc Thm. §78.3]] (with worked examples).
 
 The problem is now to *estimate* $R_n(x)$. Taylor proved the basic theorem — which is why the series bears his name:
 
@@ -118,6 +124,7 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 
 > [!remark]- Connections
 > - Two-variable version, proved by applying this theorem along a segment: [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-2|452 Thm. §9.2]].
+> - Computational version: Taylor's Inequality, [[§78 Taylor and Maclaurin Series#^thm-78-4|Calc Thm. §78.4]] (with worked examples).
 
 ## Two Instructive Examples
 
@@ -137,6 +144,9 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 > since $\tfrac{|x|^n}{n!}$ is the general term of a series convergent by the ratio test (ratio $\tfrac{|x|}{n+1} \to 0$), and terms of a convergent series tend to zero (§14). So $\cos x$ equals its Taylor series for *all* $x \in \mathbb{R}$ — and, since the derivative bound was all we used, the identical estimate with the bound $e^{|x|}$ in place of $1$ gives $e^x = \sum_{n\geq0} \tfrac{x^n}{n!}$ on all of $\mathbb{R}$ as well; adding and subtracting the series for $e^{\pm x}$ then yields $\cosh x = \sum \tfrac{x^{2n}}{(2n)!}$ and $\sinh x = \sum \tfrac{x^{2n+1}}{(2n+1)!}$ (HW).
 
 ^ex-31-1
+
+> [!remark]- Connections
+> - Computational version: [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]]; the same estimate for $e^x$, [[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]].
 
 > [!example] Example §31.2: The logarithm
 > Show that for $x \in [0,1]$, the Taylor series of $f(x) = \log(1+x)$ converges to $\log(1+x)$.
@@ -202,3 +212,6 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 
 ![[m451-31-1.svg]]
 *The two extremes of §31. Left: the partial sums $s_2, s_4, s_8$ (light blue, blue, red) hug $\cos x$ (black) order by order — the remainder dies everywhere. Right: $e^{-1/x^2}$ and its Taylor series (dashed, identically $0$) are visually indistinguishable near the origin — infinitely flat — yet equal only at the single point $x = 0$.*
+
+> [!remark]- Connections
+> - Computational version: Stewart's remark on $e^{-1/x^2}$, [[§78 Taylor and Maclaurin Series#^rem-78-1|Calc Remark §78.1]].

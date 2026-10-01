@@ -58,6 +58,9 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 
 ^pf-9-2
 
+> [!remark]- Connections
+> - Computational version: limit laws for sequences, [[§69 Sequences#^thm-69-3|Calc Thm. §69.3]] (with worked examples).
+
 > [!theorem] Theorem §9.3: Sums and Products
 > If $s_n \to s$ and $t_n \to t$, then
 >
@@ -108,6 +111,9 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 
 ^pf-9-3
 
+> [!remark]- Connections
+> - Computational version: limit laws for sequences, [[§69 Sequences#^thm-69-3|Calc Thm. §69.3]] (with worked examples).
+
 **What is next? Division!**
 
 > [!theorem] Theorem §9.4: Quotients
@@ -147,6 +153,9 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 
 ^pf-9-4
 
+> [!remark]- Connections
+> - Computational version: limit laws for sequences, [[§69 Sequences#^thm-69-3|Calc Thm. §69.3]] (with worked examples).
+
 An order-theoretic companion to the arithmetic rules — invoked constantly in these notes as “limits preserve $\leq$”:
 
 > [!theorem] Proposition §9.5: Limits Preserve Weak Inequalities (HW)
@@ -168,6 +177,9 @@ An order-theoretic companion to the arithmetic rules — invoked constantly in t
 > But for $n > \max\{N_0, N_1\}$ the hypothesis gives $t_n - s_n \geq 0$ — contradiction. Hence $s \leq t$.
 
 ^pf-9-5
+
+> [!remark]- Connections
+> - Computational version for limits of functions: [[§8 Calculating Limits Using the Limit Laws#^thm-8-6|Calc Thm. §8.6]].
 
 > [!remark] Remark
 > *Strict* inequalities are **not** preserved: $0 < \tfrac1n$ for every $n$, yet both limits equal $0$. Passing to the limit can only be trusted with $\leq$.
@@ -283,6 +295,9 @@ To apply the theorems, we need a stock of basic limits.
 
 ^ex-9-6
 
+> [!remark]- Connections
+> - Worked examples: this recursion is Newton's method, [[§32 Newton's Method#^def-32-1|Calc Def. §32.1]].
+
 > [!example] Example §9.7: Limit theorems prove non-existence too
 > Let $x_1 = 1$ and $x_{n+1} = 3 x_n^2$ for $n \geq 1$.
 >
@@ -310,6 +325,9 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ (§5). We n
 > Similarly, $s_n \to -\infty$ if for any $M$ there exists $N$ such that $s_n < -M$ for all $n > N$.
 
 ^def-9-1
+
+> [!remark]- Connections
+> - Computational version: [[§69 Sequences#^def-69-4|Calc Def. §69.4]] (with worked examples).
 
 > [!example] Example §9.8: Basic examples
 > $s_n = n^2 \to +\infty$ and $s_n = 3^{n-1} \to +\infty$ (given $M$, take $N > \sqrt{M}$, resp. use $3^{n-1} \geq n$ for $n \geq 1$, provable by induction). Meanwhile $t_n = (-1)^n n$ diverges but tends to neither $+\infty$ nor $-\infty$.
@@ -373,6 +391,9 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ (§5). We n
 > *Proofs.* (2) is clear. (1) By the Squeeze Theorem: $-|a|^n \leq a^n \leq |a|^n$, and $|a|^n \to 0$ (proved in the previous subsection), hence $-|a|^n \to 0$ too. (3) Check by definition: write $a = 1 + b$, $b > 0$; then $a^n \geq 1 + nb > nb \to +\infty$, and apply the squeezing lemma. (4) For $a = -1$ this is the example of §8. For $a < -1$: the terms satisfy $|a^n| = |a|^n \geq 1$ and alternate in sign, so by the same even/odd-subsequence argument as for $(-1)^n$, no finite limit exists; and neither $a^n \to +\infty$ nor $a^n \to -\infty$, since arbitrarily late terms are negative (resp. positive).
 
 ^ex-9-10
+
+> [!remark]- Connections
+> - Computational version: [[§69 Sequences#^thm-69-8|Calc Thm. §69.8]] (with worked examples).
 
 ## The Ratio Test
 

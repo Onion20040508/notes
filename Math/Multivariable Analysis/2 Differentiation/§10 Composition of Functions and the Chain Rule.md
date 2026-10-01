@@ -106,6 +106,8 @@ Recall the single-variable [[§28 Basic Properties of the Derivative#^thm-28-3|c
 > - MATH 451 version: [[§28 Basic Properties of the Derivative#^thm-28-3|Chain Rule (451 §28.3)]].
 > - Under differentiability hypotheses only: [[§6 Differentiability#^thm-6-9|Theorem §6.9]]; continuous partials give differentiability by [[Continuous Partials Imply Differentiability|Theorem §6.2]].
 > - The chain rule is the engine of the [[Implicit Function Theorem|Implicit]] and [[Inverse Function Theorem (several variables)|Inverse Function Theorems]].
+> - Used in Relativity: the gradient of a scalar field transforms as a covector under Lorentz transformations — [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]].
+> - Computational version: [[§94 The Chain Rule#^thm-94-2|Calc Thm. §94.2]] (same case) and [[§94 The Chain Rule#^thm-94-3|Calc Thm. §94.3]] (with worked examples).
 
 > [!remark] Remark: Matrix Form
 > In matrix notation, the chain rule becomes:

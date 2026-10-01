@@ -157,6 +157,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - MATH 451 version (metric spaces): [[§22 More on Metric Spaces꞉ Connectedness#^def-22-1|Definition §22.1: Path-Connected]].
 > - Paths on $[0,1]$ become the objects of homotopy theory: [[§22 Homotopy of Paths#^def-22-3|Definition §22.3: Path]].
+> - In ℝ² and ℝ³ a path is a parametric curve: [[§63 Curves Defined by Parametric Equations#^def-63-3|Calc Def. §63.3]] (with worked examples).
 
 > [!remark] Remark: Path-Connectedness vs Connectedness
 > Path-connectedness is a more intuitive notion: you can “walk” between any two points. But it's strictly stronger than connectedness.

@@ -122,6 +122,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 > [!remark]- Connections
 > - Its logic in 250: [[§2 Implications#^ex-2-10|250 Ex. §2.10]] (a necessary condition; the contrapositive is the divergence test; the converse fails).
+> - Computational version: [[§70 Series#^thm-70-4|Calc Thm. §70.4]] and the Test for Divergence, [[§70 Series#^cor-70-5|Calc Cor. §70.5]] (with worked examples).
 
 > [!theorem] Proposition §14.3: Linearity of Series
 > If $\sum a_n$ and $\sum b_n$ converge and $c \in \mathbb{R}$, then
@@ -199,6 +200,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 > [!remark]- Connections
 > - Used in [[§2 Implications#^ex-2-10|250 Ex. §2.10]](c) as the counterexample to the converse of Corollary 14.2.
+> - Computational version: [[§70 Series#^thm-70-3|Calc Thm. §70.3]].
 
 ## Absolute Convergence
 
@@ -206,6 +208,9 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 > Given a series $\sum a_n$: if the series $\sum_{n=1}^\infty |a_n|$ converges, we say $\sum a_n$ **converges absolutely**.
 
 ^def-14-4
+
+> [!remark]- Connections
+> - Computational version: [[§73 Alternating Series and Absolute Convergence#^def-73-2|Calc Def. §73.2]] (with worked examples).
 
 > [!theorem] Proposition §14.6: Absolute Convergence Implies Convergence
 > If $\sum a_n$ converges absolutely, then it converges.
@@ -236,6 +241,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 > [!remark]- Connections
 > - The same principle for series of functions: a series with $\sum \|f_k\|_p < \infty$ converges a.e. to a function in $L^p$, [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|551 Cor. §19.14]] (for $p = 1$: [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]]).
+> - Computational version: [[§73 Alternating Series and Absolute Convergence#^thm-73-3|Calc Thm. §73.3]] (with worked examples).
 
 ## The Comparison Test
 
@@ -258,6 +264,9 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 > (2) Let $s_n = \sum_{k=1}^n a_k$ and $t_n = \sum_{k=1}^n b_k$. Then $t_n \geq s_n$ for all $n$. Since $a_n \geq 0$, the sequence $(s_n)$ is increasing, and divergence means $s_n \to +\infty$ (§10: an increasing sequence either converges or tends to $+\infty$). By the squeezing-to-infinity lemma (§9), $t_n \to +\infty$, so $\sum b_n$ diverges.
 
 ^pf-14-7
+
+> [!remark]- Connections
+> - Computational version: [[§72 The Comparison Tests#^thm-72-1|Calc Thm. §72.1]] (with worked examples).
 
 > [!theorem] Proposition §14.8: Bounded Multipliers Preserve Absolute Convergence (HW)
 > If $\sum |a_n|$ converges and $(b_n)$ is a bounded sequence, then $\sum a_n b_n$ converges — absolutely, in fact.
@@ -306,6 +315,9 @@ To use the comparison test, we need a stock of basic series.
 
 ^ex-14-3
 
+> [!remark]- Connections
+> - Computational version: the p-series by the Integral Test, [[§71 The Integral Test and Estimates of Sums#^thm-71-2|Calc Thm. §71.2]] (with worked examples).
+
 > [!example] Example §14.4: The geometric series
 > For $a \in \mathbb{R}$, the geometric series $\sum_{n=0}^\infty a^n$ converges if and only if $|a| < 1$, with
 >
@@ -316,6 +328,9 @@ To use the comparison test, we need a stock of basic series.
 > Indeed $s_n = \tfrac{1 - a^{n+1}}{1 - a} \to \tfrac{1}{1-a}$ since $a^{n+1} \to 0$; while for $|a| \geq 1$ the terms do not tend to $0$, so the series diverges by the corollary above. This is the basic series against which the next two tests compare.
 
 ^ex-14-4
+
+> [!remark]- Connections
+> - Computational version: [[§70 Series#^thm-70-1|Calc Thm. §70.1]] (with worked examples).
 
 ## The Ratio and Root Tests
 
@@ -349,6 +364,9 @@ To use the comparison test, we need a stock of basic series.
 
 ^pf-14-9
 
+> [!remark]- Connections
+> - Computational version: [[§74 The Ratio and Root Tests#^thm-74-1|Calc Thm. §74.1]] (with worked examples).
+
 > [!theorem] Theorem §14.10: Root Test
 > Let $r = \limsup_{n\to\infty} |a_n|^{1/n}$.
 >
@@ -368,6 +386,9 @@ To use the comparison test, we need a stock of basic series.
 > (3) The same pair $\sum \tfrac1n$, $\sum \tfrac1{n^2}$: in both cases $|a_n|^{1/n} \to 1$ (using $n^{1/n} \to 1$ from §9).
 
 ^pf-14-10
+
+> [!remark]- Connections
+> - Computational version: [[§74 The Ratio and Root Tests#^thm-74-2|Calc Thm. §74.2]] (with worked examples).
 
 > [!example] Example §14.5: Three quick applications
 > Decide convergence or divergence, by any means:

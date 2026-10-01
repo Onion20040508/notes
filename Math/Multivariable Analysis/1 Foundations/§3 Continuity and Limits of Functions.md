@@ -40,6 +40,9 @@ tags: [multivariable-analysis, math452]
 
 ^ex-3-1
 
+> [!remark]- Connections
+> - Worked examples: the two-path test, [[§91 Limits and Continuity#^thm-91-1|Calc Thm. §91.1]], applied to xy/(x² + y²) in [[§91 Limits and Continuity#^ex-91-1|Calc Ex. §91.1]].
+
 ## Algebra of Continuous Functions
 
 The following theorems show that continuous functions are closed under the standard algebraic operations.
@@ -85,6 +88,9 @@ The following theorems show that continuous functions are closed under the stand
 ^pf-3-1
 
 *Uses:* [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
+
+> [!remark]- Connections
+> - Computational version: [[§91 Limits and Continuity#^thm-91-5|Calc Thm. §91.5]] (with worked examples).
 
 > [!theorem] Theorem §3.2: Product of Continuous Functions
 > If $f, g : \mathbb{R}^2 \to \mathbb{R}$ are continuous at $(x_0, y_0)$, then $f \cdot g$ is continuous at $(x_0, y_0)$.
@@ -134,6 +140,9 @@ The following theorems show that continuous functions are closed under the stand
 
 *Uses:* [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
 
+> [!remark]- Connections
+> - Computational version: [[§91 Limits and Continuity#^thm-91-5|Calc Thm. §91.5]] (with worked examples).
+
 > [!theorem] Theorem §3.3: Quotient of Continuous Functions
 > If $f, g : \mathbb{R}^2 \to \mathbb{R}$ are continuous at $(x_0, y_0)$ and $g(x_0, y_0) \neq 0$, then $f/g$ is continuous at $(x_0, y_0)$.
 
@@ -175,6 +184,9 @@ The following theorems show that continuous functions are closed under the stand
 ^pf-3-3
 
 *Uses:* [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|§3.2]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
+
+> [!remark]- Connections
+> - Computational version: [[§91 Limits and Continuity#^thm-91-5|Calc Thm. §91.5]] (with worked examples).
 
 > [!theorem] Theorem §3.4: Composition of Continuous Functions
 > If $\varphi, \psi : \mathbb{R}^2 \to \mathbb{R}$ are continuous at $(a, b)$, and $f : \mathbb{R}^2 \to \mathbb{R}$ is continuous at $(\varphi(a,b), \psi(a,b))$, then
@@ -224,6 +236,7 @@ The following theorems show that continuous functions are closed under the stand
 > - MATH 451 versions: [[§17 Continuous Functions#^thm-17-3|Arithmetic of Continuous Functions]] and [[§17 Continuous Functions#^thm-17-4|Composition of Continuous Functions]].
 > - MATH 590 version for arbitrary spaces: [[§9 Continuous Functions#^thm-9-4|Rules for Continuous Functions]].
 > - The differentiable analogues: [[§6 Differentiability#^thm-6-6|§6.6]]–[[§6 Differentiability#^thm-6-9|§6.9]]; §3.4 is proved again as [[§10 Composition of Functions and the Chain Rule#^thm-10-1|Continuity of Composition]] in §10.
+> - Computational version: [[§91 Limits and Continuity#^thm-91-5|Calc Thm. §91.5]] (b), composition with a function of one variable.
 
 > [!remark] Remark: Summary: Algebra of Continuous Functions
 > If $f$ and $g$ are continuous at $(x_0, y_0)$, then so are:
@@ -249,6 +262,7 @@ The following theorems show that continuous functions are closed under the stand
 
 > [!remark]- Connections
 > - MATH 451 version: [[§20 Limits of Functions#^def-20-1|Limit of a Function Along a Set]] and its [[§20 Limits of Functions#^rem-20-1|epsilon-delta version]].
+> - Computational version: [[§91 Limits and Continuity#^def-91-1|Calc Def. §91.1]] (with worked examples).
 
 > [!example] Example §3.2: Nonexistence of Limit
 > Let $f(x, y) = \dfrac{2xy}{x^2 + y^2}$ for $(x, y) \neq (0, 0)$. Then $f$ has no limit at $(0, 0)$.
@@ -259,6 +273,9 @@ The following theorems show that continuous functions are closed under the stand
 
 ![[m452-3-2.svg]]
 *Level structure of $f(x,y) = \frac{2xy}{x^2+y^2}$: on each line $y = kx$ through the origin (hollow: $f$ is not defined there) $f$ is constant, equal to $\frac{2k}{1+k^2}$ — $1$ on $y = x$ (dark red), $-1$ on $y = -x$ (dark blue), $\pm\frac45$ on $y = 2x,\ \tfrac12 x$ and $y = -2x,\ -\tfrac12 x$, and $0$ on both axes. Every disc around the origin (dashed) meets all of these lines, so $f$ takes every value in $[-1,1]$ arbitrarily close to $(0,0)$ and no single limit $A$ can work.*
+
+> [!remark]- Connections
+> - Worked examples: the two-path test, [[§91 Limits and Continuity#^thm-91-1|Calc Thm. §91.1]], applied to xy/(x² + y²) in [[§91 Limits and Continuity#^ex-91-1|Calc Ex. §91.1]].
 
 > [!definition] Definition §3.3: Big-O and Little-o Notation
 > Let $\rho = \sqrt{x^2 + y^2}$.

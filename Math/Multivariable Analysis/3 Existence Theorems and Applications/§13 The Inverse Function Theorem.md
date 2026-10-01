@@ -405,6 +405,9 @@ $$
 
 ^ex-13-3
 
+> [!remark]- Connections
+> - The conversion formulas with worked examples: [[§65 Polar Coordinates#^thm-65-2|Calc Thm. §65.2]].
+
 > [!example] Example §13.4: Polar to Cartesian
 > Define $x = r\cos\theta$ and $y = r\sin\theta$.
 >
@@ -418,6 +421,7 @@ $$
 
 > [!remark]- Connections
 > - This $|J| = r$ is the factor in $dx\,dy = r\,dr\,d\theta$: [[§15 Multivariable Integration#^thm-15-7|Change of Variables to Polar Coordinates]] (§15.7), [[§15 Multivariable Integration#^ex-15-4|Example §15.4]].
+> - The conversion formulas with worked examples: [[§65 Polar Coordinates#^thm-65-2|Calc Thm. §65.2]].
 
 > [!remark] Remark: Reciprocal Jacobians
 > The Jacobian determinants are reciprocals: $\dfrac{1}{r} \cdot r = 1$.

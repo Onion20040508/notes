@@ -286,6 +286,7 @@ One difficulty in *using* this definition: we need a candidate value $r$ before 
 > [!remark]- Connections
 > - In the plane the mesh is the largest diameter of a piece: [[§15 Multivariable Integration#^def-15-9|452 Def. §15.9]].
 > - Recapped in 551 as [[§8 Motivation꞉ The Riemann Integral#^def-8-3|551 Def. §8.3]]; every Riemann integrable function is Lebesgue integrable with the same integral, [[§15 The General Lebesgue Integral#^thm-15-10|551 Thm. §15.10]].
+> - Computational version: Stewart's definite integral, [[§35 The Definite Integral#^def-35-1|Calc Def. §35.1]]; endpoint approximations, [[§50 Approximate Integration#^def-50-1|Calc Def. §50.1]] (with worked examples).
 
 > [!theorem] Theorem §32.6: Equivalence of the Two Integrals
 > 1. $f: [a,b] \to \mathbb{R}$ is Riemann integrable if and only if it is Darboux integrable (and the values agree).
@@ -293,6 +294,9 @@ One difficulty in *using* this definition: we need a candidate value $r$ before 
 > 2. (Mesh form of the Cauchy criterion) $f$ is Darboux integrable if and only if for every $\varepsilon > 0$ there is $\delta > 0$ such that *every* partition with $\operatorname{mesh}(P) < \delta$ satisfies $U(f,P) - L(f,P) < \varepsilon$.
 
 ^thm-32-6
+
+> [!remark]- Connections
+> - Computational version: any sample points give the same limit, [[§34 The Area and Distance Problems#^thm-34-1|Calc Thm. §34.1]] (with worked examples).
 
 These were stated without proof in lecture (the proofs take too much time; see the book for details). The essential difference between the two notions is that Riemann's requires a limit in the $\varepsilon$-$\delta$ sense over the mesh, which (2) supplies on the Darboux side. From now on, “integrable” means either.
 
@@ -321,3 +325,6 @@ These were stated without proof in lecture (the proofs take too much time; see t
 > $$
 
 ^pf-32-7
+
+> [!remark]- Connections
+> - Computational version: [[§35 The Definite Integral#^thm-35-1|Calc Thm. §35.1]].

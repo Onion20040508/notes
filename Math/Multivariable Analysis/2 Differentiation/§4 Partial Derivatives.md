@@ -21,6 +21,7 @@ tags: [multivariable-analysis, math452]
 
 > [!remark]- Connections
 > - Each partial is the MATH 451 [[§28 Basic Properties of the Derivative#^def-28-1|derivative]] of a one-variable slice; the partial in an arbitrary direction is the [[§7 Directional Derivatives#^def-7-1|directional derivative]] of §7.
+> - Computational version: [[§92 Partial Derivatives#^def-92-1|Calc Def. §92.1]] and [[§92 Partial Derivatives#^def-92-2|Calc Def. §92.2]] (with worked examples).
 
 > [!example] Example §4.1: Partials Exist but Function Discontinuous
 > Let $f(x, y) = \dfrac{2xy}{x^2 + y^2}$ for $(x,y) \neq (0,0)$ and $f(0,0) = 0$. Then

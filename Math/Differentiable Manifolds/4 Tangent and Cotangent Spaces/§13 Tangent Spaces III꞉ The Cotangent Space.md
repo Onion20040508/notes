@@ -35,6 +35,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 > - The linear algebra: the dual space is [[§12 Duality#^ladr-3-110|LADR 3.110]].
 > - In multivariable calculus: [[§8 The Differential#^def-8-1|452 Def. §8.1]] and [[§22 The Algebra of Differential Forms#^prop-22-6|452 §22.6 (gradient = differential = 1-form)]].
 > - Assembled over all of $M$: the cotangent bundle, [[§17 The Tangent Bundle#^def-17-5|Def. §17.5]].
+> - Used in Relativity: the differential of a scalar field is why its gradient $\partial_\mu\phi$ carries a lower index — [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-5|REL Remark: Why the gradient carries a lower index]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]].
 
 > [!theorem] Proposition §13.1: The Differential Evaluates Derivations
 > For every $D \in T_pM$, $\ df_p(D) = D[f]$. In particular $df_p\big(\partial/\partial x^j|_p\big) = \partial f/\partial x^j(p)$ in any chart.

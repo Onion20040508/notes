@@ -53,6 +53,7 @@ A basic property of [[§6 Differentiability#^def-6-1|differentiable]] functions 
 
 > [!remark]- Connections
 > - On a manifold, tangent vectors are built from this operation: the directional derivative $D_v$ attached to a tangent vector, [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-1|591 Def. §12.1]], abstracted to derivations at a point, [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-6|591 Def. §12.6]].
+> - Computational version: [[§95 Directional Derivatives and the Gradient Vector#^def-95-1|Calc Def. §95.1]] (with worked examples).
 
 > [!theorem] Theorem §7.1: Directional Derivative Formula
 > If $f(x, y)$ is [[§6 Differentiability#^def-6-1|differentiable]] at $(x, y)$, then the directional derivative in direction $\alpha$ exists and is given by:
@@ -91,6 +92,7 @@ A basic property of [[§6 Differentiability#^def-6-1|differentiable]] functions 
 > [!remark]- Connections
 > - The same result in unit-vector form, with $L = Df$ the total derivative: [[§6 Differentiability#^thm-6-1|Theorem §6.1]]; the converse is false ([[§6 Differentiability#^rem-6-4|warning]]).
 > - In forms language the differential eats a direction and returns this derivative: [[§22 The Algebra of Differential Forms#^prop-22-6|Gradient = Differential = 1-Form]].
+> - Computational version: [[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|Calc Thm. §95.1]] (with worked examples).
 
 > [!remark] Remark: Unit Vector Notation
 > If $\mathbf{u} = (a, b)$ is a **unit vector** (so $a^2 + b^2 = 1$), we can write $a = \cos \alpha$ and $b = \sin \alpha$ for some angle $\alpha$. Then:
@@ -116,3 +118,4 @@ A basic property of [[§6 Differentiability#^def-6-1|differentiable]] functions 
 > [!remark]- Connections
 > - The same maximization is the equality case of the [[Cauchy–Schwarz inequality]]: $\nabla f \cdot \mathbf{u} \le |\nabla f|\,|\mathbf{u}|$, with equality iff $\mathbf{u}$ is a positive multiple of $\nabla f$.
 > - Gradient perpendicular to level curves is the geometry behind [[Method of Lagrange Multipliers|Lagrange multipliers (§14.2)]]; the gradient in $\mathbb{R}^n$ returns in [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence|§11]] and [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]].
+> - Computational version: [[§95 Directional Derivatives and the Gradient Vector#^thm-95-4|Calc Thm. §95.4]] (with worked examples).

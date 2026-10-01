@@ -193,6 +193,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Tensors of type $(r,s)$ in physics and in [[Differentiable Manifolds]]: $V^{\otimes r}\otimes(V')^{\otimes s}$.
+> - Used in Relativity: Lorentz tensors of type (m, n) — [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]; tensors as multilinear functions of covectors and vectors, without coordinates — [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-2|REL Remark: Tensors without coordinates]].
 
 > [!theorem] Theorem 9.89: Dimension of the tensor product
 > $\dim(V_1\otimes\dots\otimes V_m)=(\dim V_1)\cdots(\dim V_m)$.

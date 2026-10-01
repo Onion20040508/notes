@@ -107,6 +107,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 > [!remark]- Connections
 > - The differentiation half has a 551 analogue for series of absolutely continuous functions: [[§18 Differentiation Theory#^cor-18-14|551 Cor. §18.14]].
+> - Computational version: [[§77 Representations of Functions as Power Series#^thm-77-1|Calc Thm. §77.1]] (with worked examples).
 
 ## Harvesting Closed Formulas
 
@@ -168,6 +169,9 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 ![[m451-26-1.svg]]
 *Partial sums $S_N(x) = \sum_{n=0}^{N} \frac{(-1)^n}{2n+1} x^{2n+1}$ for $N = 2, 6, 15$ (blue, darker as $N$ grows) against $\arctan x$ (black). On $(-1,1)$ they close in on $\arctan x$; for $|x| > 1$ (shaded) the terms do not tend to $0$ and the partial sums break away, in directions alternating with the sign of the last term — although $\arctan$ itself is perfectly smooth there. The radius $R = 1$ is a property of the series, not visible in the graph of the function.*
 
+> [!remark]- Connections
+> - Worked examples: the derivative of arctan, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|Calc Thm. §19.8]]; the arctangent series by term-by-term integration, [[§77 Representations of Functions as Power Series#^ex-77-3|Calc Ex. §77.3]].
+
 > [!example] Example §26.4: The Taylor series of the logarithm
 > Find the Taylor series of $f(x) = \ln(1+x)$ at $0$. It is easier to start with the derivative:
 >
@@ -182,6 +186,9 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > $$
 
 ^ex-26-4
+
+> [!remark]- Connections
+> - Worked examples: the logarithm series by term-by-term integration, [[§77 Representations of Functions as Power Series#^ex-77-3|Calc Ex. §77.3]].
 
 > [!example] Example §26.5: Summing numerical series
 > The closed formula $\sum_{n\geq1} n x^n = \tfrac{x}{(1-x)^2}$ evaluates series that are not easy to sum directly. At $x = \tfrac12$:
@@ -271,7 +278,13 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 ^ex-26-8
 
+> [!remark]- Connections
+> - Computational version: the derivative of sine, [[§16 Derivatives of Trigonometric Functions#^thm-16-1|Calc Thm. §16.1]]; the Maclaurin series of sine and cosine, [[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]].
+
 > [!remark] Remark: Repaying the trigonometric debt
 > Of course $s = \sin$ and $c = \cos$ — but the point is that the computation above never used that. Ross §37 carries this program to completion: starting from the two series one derives the addition formulas, the existence of $\pi$ (as twice the first positive zero of $c$), and periodicity, so that *every* property of $\sin$ and $\cos$ used on credit in these notes is ultimately redeemable. The same holds for $e^x$ and $\log$ via their series and inverses. The ledger of §34 records what remains outstanding.
 
 ^rem-26-1
+
+> [!remark]- Connections
+> - Stewart builds the same functions differently: trigonometric functions from angles, [[§119 Trigonometry#^def-119-4|Calc Def. §119.4]]; ln as an integral, [[§121 The Logarithm Defined as an Integral#^def-121-1|Calc Def. §121.1]].

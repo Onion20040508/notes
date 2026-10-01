@@ -70,6 +70,7 @@ Geometrically, $\nabla \times \mathbf{F}$ measures the *local rotation* of the f
 > - Divergence and curl return for the integral theorems: [[§16 Line Integrals and Green's Theorem#^def-16-4|Def. §16.4]], [[§16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]], [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-1|Def. §17.1]], [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]].
 > - All three operators are the exterior derivative $d$ in degrees 0, 1, 2: [[§22 The Algebra of Differential Forms#^prop-22-2|Prop. §22.2]], [[§22 The Algebra of Differential Forms#^prop-22-3|Prop. §22.3]], [[§22 The Algebra of Differential Forms#^prop-22-4|Prop. §22.4]]; see also [[§22 The Algebra of Differential Forms#^rem-22-4|the ℝ³ accident]].
 > - Conservative/irrotational become exact/closed: [[§22 The Algebra of Differential Forms#^def-22-8|Def. §22.8]], [[Poincaré Lemma|Poincaré Lemma]].
+> - Same notions in Stewart: [[§107 Vector Fields#^def-107-4|Calc Def. §107.4]], [[§111 Curl and Divergence#^def-111-2|Calc Def. §111.2]] and [[§111 Curl and Divergence#^def-111-4|Calc Def. §111.4]].
 
 ## Two Fundamental Identities
 

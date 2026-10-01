@@ -77,6 +77,7 @@ Where *exactly* does the proof need closedness? Reread Step 1 with $(a,b)$ in pl
 
 > [!remark]- Connections
 > - Abstract form: a continuous image of a compact space is compact, [[§15 Compact Spaces#^thm-15-3|590 Thm. §15.3]], and [a, b] is compact by [[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]] (Heine–Borel).
+> - Computational version: [[§25 Maximum and Minimum Values#^thm-25-1|Calc Thm. §25.1]] (with worked examples).
 
 > [!theorem] Proposition §18.2: Non-Closed Sets Always Carry Unbounded Continuous Functions (HW)
 > Let $S \subseteq \mathbb{R}$, and suppose some sequence $(x_n)$ in $S$ converges to a point $x_0 \notin S$. Then there exists a continuous unbounded function on $S$.
@@ -151,6 +152,7 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 
 > [!remark]- Connections
 > - Abstract form: a continuous image of a connected space is connected, [[§13 Connected Spaces#^thm-13-3|590 Thm. §13.3]], giving the IVT for any connected domain, [[§14 Connected Subspaces of ℝ#^thm-14-3|590 Thm. §14.3]].
+> - Computational version: [[§10 Continuity#^thm-10-10|Calc Thm. §10.10]] (with worked examples).
 
 > [!theorem] Corollary §18.4: Sign Change Gives a Root
 > If $f: [a,b] \to \mathbb{R}$ is continuous and $f(a)$, $f(b)$ have opposite signs, then there exists $x_0 \in [a,b]$ with $f(x_0) = 0$.
@@ -161,6 +163,9 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 > $0$ lies between $f(a)$ and $f(b)$; apply the [[Intermediate Value Theorem|Intermediate Value Theorem]].
 
 ^pf-18-4
+
+> [!remark]- Connections
+> - Worked examples: locating a root by a sign change, [[§10 Continuity#^ex-10-5|Calc Ex. §10.5]].
 
 > [!theorem] Corollary §18.5: The Image Is a Closed Interval
 > For continuous $f: [a,b] \to \mathbb{R}$,
@@ -336,6 +341,9 @@ In one special case, equality does hold.
 
 ^def-18-2
 
+> [!remark]- Connections
+> - Computational version: increasing and decreasing functions, [[§1 Four Ways to Represent a Function#^def-1-8|Calc Def. §1.8]].
+
 > [!theorem] Theorem §18.9: Continuous Inverse Theorem
 > If $f: [a,b] \to \mathbb{R}$ is a strictly increasing continuous function, then $\operatorname{Im}(f) = [f(a), f(b)]$, and the inverse function
 >
@@ -383,3 +391,5 @@ In one special case, equality does hold.
 
 > [!remark]- Connections
 > - Topological form: a continuous bijection from a compact space to a Hausdorff space is a homeomorphism, [[§15 Compact Spaces#^thm-15-7|590 Thm. §15.7]].
+> - Computational version: [[§10 Continuity#^thm-10-5|Calc Thm. §10.5]].
+> - Computational version: the logarithm as inverse of the exponential, [[§5 Inverse Functions and Logarithms#^thm-5-4|Calc Thm. §5.4]]; its continuity, [[§10 Continuity#^thm-10-6|Calc Thm. §10.6]].

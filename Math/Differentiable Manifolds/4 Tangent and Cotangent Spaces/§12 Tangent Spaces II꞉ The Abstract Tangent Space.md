@@ -1114,6 +1114,7 @@ This is the topological half of the regular value theorem for manifolds, and it 
 
 > [!remark]- Connections
 > - The geometric velocity $\gamma'(0)$ of a curve in $\mathbb{R}^N$: [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-1|Def. §11.1]]; differentials computed by curves between vector spaces: [[§10 Vector Spaces and Matrix Groups#^thm-10-10|§10.10]].
+> - In ℝ³ the velocity is $\mathbf r'(t)$: [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Calc Def. §89.1]], [[§87 Derivatives and Integrals of Vector Functions#^def-87-2|Calc Def. §87.2]] (with worked examples).
 
 The explicit formula is the definition of the pushforward: $\gamma_{*0}(d/dt|_0)[f] = d/dt|_0\,[f \circ \gamma]$, the ordinary derivative at $0$ of the function $f \circ \gamma$, which is defined near $0$. Lee writes $\gamma'(0)$ for $D_\gamma$. These notes keep $\gamma'(0)$ for the ordinary derivative of a curve in $\mathbb{R}^N$, which is a *geometric* tangent vector, and write $D_\gamma$ for the abstract one, as Assignment 3 does.
 

@@ -42,6 +42,7 @@ More generally, given $F(x, y) = 0$, when can we solve for $y = f(x)$ near a poi
 > - MATH 451 relative: the one-variable [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10) — also “$f' \neq 0$ gives a local inverse, with derivative $1/f'$.”
 > - Used twice to prove the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] (§13.2), and to derive [[Method of Lagrange Multipliers|Lagrange multipliers]] (§14.2).
 > - Reappears in the second proof of the [[§15 Multivariable Integration#^thm-15-14|change of variables formula]] (§15.14).
+> - Computational version: [[§94 The Chain Rule#^thm-94-6|Calc Thm. §94.6]] (a), with the implicit-differentiation formula $dy/dx = -F_x/F_y$ in [[§94 The Chain Rule#^thm-94-4|Calc Thm. §94.4]]; one-variable implicit functions: [[§18 Implicit Differentiation#^def-18-1|Calc Def. §18.1]].
 
 ## Proof of the Implicit Function Theorem
 
@@ -287,3 +288,4 @@ The Implicit Function Theorem generalizes to functions of more variables.
 > [!remark]- Connections
 > - Systems of equations: solving several equations for several unknowns needs a nonzero Jacobian determinant instead of $F_y \neq 0$ — see the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] (§13.2) and the two-constraint Lagrange derivation in [[§14 Optimization and Lagrange Multipliers|§14]]; the linear-algebra fact behind it is [[Invertible ⟺ nonzero determinant|LADR 9.50]].
 > - The version for k equations in n + k unknowns, with an invertible k × k block of partials in place of $F_y \neq 0$, is [[§4 The Regular Value Theorem#^thm-4-1|591 Thm. §4.1]] (for smooth maps), and the smooth case of this theorem is its case k = 1, [[§4 The Regular Value Theorem#^cor-4-2|591 Cor. §4.2]].
+> - Computational version: [[§94 The Chain Rule#^thm-94-6|Calc Thm. §94.6]] (b), with $\partial z/\partial x = -F_x/F_z$ in [[§94 The Chain Rule#^thm-94-5|Calc Thm. §94.5]].

@@ -117,6 +117,7 @@ Primes, used informally in (iii), (iv) and (vi), are defined formally and studie
 
 > [!remark]- Connections
 > - The same definition in analysis, with the triangle inequality and $|ab| = |a||b|$: [[§3 The Set ℝ of Real Numbers#^def-3-4|451 Def. §3.4]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 Thm. §3.3]].
+> - Same definition: [[§116 Numbers, Inequalities, and Absolute Values#^def-116-6|Calc Def. §116.6]] (with worked examples).
 
 > [!example] Example §1.3: The Square of the Absolute Value
 > For every real number $a$, $|a|^2 = a^2$.

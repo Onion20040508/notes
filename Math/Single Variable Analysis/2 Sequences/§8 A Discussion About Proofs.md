@@ -149,6 +149,9 @@ This section is a workshop on the two-step method: guess the limit, then prove i
 ![[m451-8-1.svg]]
 *The Squeeze Theorem: the outer sequences $a_n$ and $c_n$ (gray) are both inside the band $s \pm \varepsilon$ from $N = \max\{N_1, N_2\}$ on, and $b_n$ (blue), trapped between them, has no choice but to follow.*
 
+> [!remark]- Connections
+> - Computational version: [[§69 Sequences#^thm-69-4|Calc Thm. §69.4]] (with worked examples); for limits of functions, [[§8 Calculating Limits Using the Limit Laws#^thm-8-7|Calc Thm. §8.7]].
+
 > [!example] Example §8.7: Null sequence times bounded sequence
 > First: if $s_n \to 0$, then for any number $M$, also $M s_n \to 0$. (By definition: given $\varepsilon > 0$, if $M = 0$ there is nothing to prove; otherwise choose $N$ with $|s_n| < \varepsilon / |M|$ for $n \geq N$; then $|M s_n| < \varepsilon$.)
 >

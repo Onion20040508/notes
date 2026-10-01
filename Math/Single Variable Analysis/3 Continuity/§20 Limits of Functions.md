@@ -32,6 +32,8 @@ Recall: $f$ is continuous at $x_0$ if $x_n \to x_0$ implies $f(x_n) \to f(x_0)$.
 
 > [!remark]- Connections
 > - Limits of functions of two variables (punctured δ-ball): [[§3 Continuity and Limits of Functions#^def-3-2|452 Def. §3.2]].
+> - Computational version: [[§7 The Limit of a Function#^def-7-1|Calc Def. §7.1]], made precise in [[§9 The Precise Definition of a Limit#^def-9-1|Calc Def. §9.1]] (with worked examples).
+> - Computational version: [[§9 The Precise Definition of a Limit#^def-9-1|Calc Def. §9.1]]; at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Calc Def. §11.4]]; infinite limits [[§9 The Precise Definition of a Limit#^def-9-3|Calc Def. §9.3]] (with worked examples).
 
 > [!example] Example §20.1: First computations
 > $S = (0,1)$, $f(x) = \tfrac1x$: then $\lim_{x\to 0^S} f(x) = +\infty$ and $\lim_{x \to 1^S} f(x) = 1$.
@@ -52,6 +54,9 @@ Recall: $f$ is continuous at $x_0$ if $x_n \to x_0$ implies $f(x_n) \to f(x_0)$.
 
 ^pf-20-1
 
+> [!remark]- Connections
+> - Computational version: [[§10 Continuity#^def-10-1|Calc Def. §10.1]] (with worked examples).
+
 ## Notation: Two-Sided and One-Sided Limits
 
 The notation $\lim_{x\to a^S}$ is a bit inconvenient; in common situations we simplify it:
@@ -66,6 +71,9 @@ The notation $\lim_{x\to a^S}$ is a bit inconvenient; in common situations we si
 > - If $S = (c, +\infty)$, write $\displaystyle\lim_{x\to+\infty} f(x) = L$; similarly $\displaystyle\lim_{x\to-\infty} f(x) = L$ for $S = (-\infty, c)$.
 
 ^def-20-2
+
+> [!remark]- Connections
+> - Computational version: one-sided limits [[§7 The Limit of a Function#^def-7-2|Calc Def. §7.2]], limits at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-1|Calc Def. §11.1]] (with worked examples).
 
 Why do we need one-sided limits?
 
@@ -91,6 +99,9 @@ Why do we need one-sided limits?
 
 ^ex-20-3
 
+> [!remark]- Connections
+> - Worked examples: one-sided infinite limits [[§7 The Limit of a Function#^def-7-4|Calc Def. §7.4]]; reciprocal powers at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-3|Calc Thm. §11.3]].
+
 > [!theorem] Theorem §20.2: Two-Sided Equals Both One-Sided
 > $\displaystyle\lim_{x\to a} f(x) = L$ if and only if
 >
@@ -113,10 +124,16 @@ Why do we need one-sided limits?
 
 ^pf-20-2
 
+> [!remark]- Connections
+> - Computational version: [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Calc Thm. §8.5]] (with worked examples).
+
 > [!remark] Remark
 > The usual limit theorems (sums, products, quotients) hold for these limits — including the one-sided versions — by the corresponding theorems for sequences; likewise a composition theorem, where one should be careful about matching sides and domains.
 
 ^rem-20-2
+
+> [!remark]- Connections
+> - Computational version: the limit laws [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|Calc Thm. §8.1]]; at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-2|Calc Thm. §11.2]] (with worked examples).
 
 ## Filling Removable Holes
 

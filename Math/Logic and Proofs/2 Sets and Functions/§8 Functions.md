@@ -24,6 +24,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 > [!remark]- Connections
 > - Same notion: [[§1 Countability and Set Theory#^def-1-2|551 Def. §1.2]] (mapping).
+> - Stewart's definition: [[§1 Four Ways to Represent a Function#^def-1-1|Calc Def. §1.1]].
 
 > [!example] Example §8.1: Three Pictures of One Function
 > Let $X = \{x_1, x_2, x_3, x_4\}$ and $Y = \{y_1, y_2, y_3, y_4, y_5\}$. The table
@@ -166,6 +167,9 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 ^def-8-5
 
+> [!remark]- Connections
+> - Computational version: [[§3 New Functions from Old Functions#^def-3-2|Calc Def. §3.2]] (with worked examples in [[§3 New Functions from Old Functions#^ex-3-5|Calc Ex. §3.5]]).
+
 > [!remark] Remark: The Order in g∘f
 > Since values are written $f(x)$, with the function on the left, "apply $f$, then $g$" is written $g \circ f$, in the opposite order to the order of application: $X \xrightarrow{\ f\ } Y \xrightarrow{\ g\ } Z$. Avoid the phrase "the composite of $f$ and $g$" when both orders make sense; write $g \circ f$ or $f \circ g$.
 >
@@ -189,6 +193,9 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 ^ex-8-6
 
+> [!remark]- Connections
+> - More worked examples: [[§3 New Functions from Old Functions#^ex-3-5|Calc Ex. §3.5]] (a), where f ∘ g ≠ g ∘ f.
+
 > [!theorem] Proposition §8.1: Associativity and Identities
 > Let $f : X \to Y$, $g : Y \to Z$ and $h : Z \to W$. Then
 > 1. $(h \circ g) \circ f = h \circ (g \circ f) : X \to W$;
@@ -210,6 +217,9 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 ^pf-8-1
 
 *Uses:* [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-5|Def. §8.5]], [[§8 Functions#^def-8-2|Def. §8.2]]
+
+> [!remark]- Connections
+> - Composites of three functions computed from the inside out: [[§3 New Functions from Old Functions#^def-3-2|Calc Def. §3.2]], [[§3 New Functions from Old Functions#^ex-3-5|Calc Ex. §3.5]] (c), (d).
 
 > [!example] Example §8.7: Computing Composites
 > Let $f, g : \R \to \R$ be $f(x) = x^3$ and $g(x) = 1 - x$. Then
@@ -296,6 +306,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 
 > [!remark]- Connections
 > - Same notion, called the range: [[§1 Countability and Set Theory#^def-1-5|551 Def. §1.5]].
+> - The range in Stewart: [[§1 Four Ways to Represent a Function#^def-1-1|Calc Def. §1.1]].
 
 > [!example] Example §8.9: Functions With Prescribed Images
 > Functions $f_i : \R \to \R$ with:
@@ -325,6 +336,9 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 
 ^def-8-10
 
+> [!remark]- Connections
+> - Stewart's definition: [[§1 Four Ways to Represent a Function#^def-1-2|Calc Def. §1.2]].
+
 > [!theorem] Proposition §8.2: Graphs Determine Functions
 > 1. If $f : X \to Y$, then for each $x_0 \in X$ the "column" $\{x_0\} \times Y$ meets $G_f$ in exactly one point, namely $(x_0, f(x_0))$.
 > 2. If $f, g : X \to Y$ and $G_f = G_g$, then $f = g$.
@@ -346,6 +360,9 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 ^pf-8-2
 
 *Uses:* [[§8 Functions#^def-8-10|Def. §8.10]], [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-1|Def. §8.1]], [[§7 Quantifiers#^def-7-5|Def. §7.5]]
+
+> [!remark]- Connections
+> - Computational version: the vertical line test, [[§1 Four Ways to Represent a Function#^thm-1-1|Calc Thm. §1.1]].
 
 > [!remark] Remark: A Function Is Its Graph
 > Definition §8.1 rests on the undefined word "assignment". In more advanced mathematics a function $X \to Y$ is *defined* to be a subset of $X \times Y$ in which each element of $X$ occurs as the first coordinate of exactly one element; by Proposition §8.2 this captures exactly the same objects, and it reduces functions to sets.

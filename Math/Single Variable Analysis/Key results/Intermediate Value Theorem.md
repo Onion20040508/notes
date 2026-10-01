@@ -39,3 +39,4 @@ tags: [real-analysis, hub]
 - Abstract form: the continuous image of a connected set is connected; see [[§22 More on Metric Spaces꞉ Connectedness]].
 - Its proof takes $\sup$ of a set, so it rests on the [[Completeness Axiom]]; over $\mathbb{Q}$ it fails ($x^2-2$ changes sign with no rational zero).
 - The abstract form is proved in 590: [[Continuous Image of a Connected Space is Connected|590 Thm. §13.3]], giving the general [[§14 Connected Subspaces of ℝ#^thm-14-3|590 Thm. §14.3]].
+- **Also in [[Calculus]]:** [[§10 Continuity#^thm-10-10|Calc Thm. §10.10]] (computational treatment with worked examples).

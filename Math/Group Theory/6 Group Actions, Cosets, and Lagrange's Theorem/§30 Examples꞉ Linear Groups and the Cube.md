@@ -58,6 +58,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - In 591 the rotation version makes the unit sphere a homogeneous space, SO(3)/SO(2) ≅ S², [[§7 Homogeneous Spaces#^ex-7-3|591 Ex. §7.3]] (orbits as in [[§6 Group Actions and Orbit Spaces#^ex-6-5|591 Ex. §6.5]]); O(n) also acts transitively on the Grassmannians, [[§7 Homogeneous Spaces#^prop-7-11|591 Prop. §7.11]].
+> - Used in Relativity: the orbits of the Lorentz group are hyperboloids and light cones, where those of the rotations are spheres — [[§B1.3 Causal Structure and Proper Time#^rem-b1-3-1|REL Remark: Normal forms, and the orbits of the Lorentz group]].
 
 > [!theorem] Proposition §30.3: Rotational Symmetries of the Cube
 > Let $C = [-1,1]^3 \subseteq \mathbb{R}^3$ be the cube and let $G$ be its group of rotational symmetries (the symmetries realizable by physically turning the cube; as matrices, $G = \operatorname{Sym}(C) \cap SO_3(\mathbb{R})$).

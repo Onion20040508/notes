@@ -186,6 +186,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The general principle: a continuous map onto a disconnected space forces disconnectedness, contrapositive of [[Continuous Image of a Connected Space is Connected|590 §13.3]].
+> - Used in Relativity: the determinant splits the Lorentz group as it splits $O(n)$, and the sign of $\Lambda^0{}_0$ splits it once more, into four components — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]].
 
 > [!theorem] Theorem §5.6: Exactly Two Components
 > Each of $\det^{-1}(0,\infty)$ and $\det^{-1}(-\infty,0)$ is connected, so $\mathrm{GL}(n,\mathbb{R})$ has exactly two connected components.
@@ -221,6 +222,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - In linear algebra, the isometries of $\mathbb{R}^n$: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]]; in 493, [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
 > - $\mathrm{O}(n)$ is a manifold of dimension $\tfrac{n(n-1)}{2}$: [[§10 Vector Spaces and Matrix Groups#^ex-10-1|Ex. §10.1]].
+> - Used in Relativity: the Lorentz group $O(1, 3)$, the matrices preserving the form $\eta$, and its four pieces — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]].
 
 > [!theorem] Proposition §5.7: Equivalent Description of $\mathrm{O}(n,\mathbb{R})$
 > For $g \in \mathrm{GL}(n,\mathbb{R})$ the following are equivalent: (i) $g \in \mathrm{O}(n,\mathbb{R})$; (ii) $g^T g = I$; (iii) $g^{-1} = g^T$. Consequently $\det(g)^2 = 1$, i.e. $\det g = \pm 1$, for every $g \in \mathrm{O}(n,\mathbb{R})$.

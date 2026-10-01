@@ -33,6 +33,7 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 
 > [!remark]- Connections
 > - The Lebesgue integral is absolute ([[§15 The General Lebesgue Integral#^rem-15-1|551 Rem. §15.1]]), so a conditionally convergent improper integral such as that of $\sin x / x$ on $[1, \infty)$ is not a Lebesgue integral; for integrable $f$ the tails vanish by [[§16 The L¹ Space and Density Theorems#^thm-16-3|551 Thm. §16.3]].
+> - Computational version: [[§51 Improper Integrals#^def-51-1|Calc Def. §51.1]], [[§51 Improper Integrals#^def-51-2|Calc Def. §51.2]] (with worked examples).
 
 > [!definition] Definition §36.2: Doubly Improper Integrals
 > If $f$ is defined on $(a, b)$ (each end finite or infinite) and integrable on every closed $[c, d] \subseteq (a,b)$, fix any $\alpha \in (a,b)$ and define
@@ -44,6 +45,9 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 > provided both one-sided improper integrals exist and the sum is not of the form $+\infty + (-\infty)$. (Extended arithmetic: $\infty + L = \infty$ for $L \neq -\infty$, and $-\infty + L = -\infty$ for $L \neq \infty$.)
 
 ^def-36-2
+
+> [!remark]- Connections
+> - Computational version: [[§51 Improper Integrals#^def-51-1|Calc Def. §51.1]] (with worked examples).
 
 The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replacing $\alpha$ by $\alpha' \in (a,b)$ changes the two summands by $\mp \int_\alpha^{\alpha'} f\,dx$ — a *finite* proper integral, since additivity over subintervals passes through the defining limits — and the two changes cancel in the sum, also in the extended arithmetic above.
 
@@ -75,6 +79,9 @@ The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replac
 
 ![[m451-36-2.svg]]
 *The p-integrals on $[1, \infty)$: the three graphs look alike, but only for $p = 2$ (blue) is the area under the whole tail finite, $\int_1^\infty x^{-2}\,dx = \tfrac{1}{p-1} = 1$; for $p = 1$ (dashed) and $p = \tfrac12$ (red), $\int_1^d$ grows without bound as $d \to \infty$.*
+
+> [!remark]- Connections
+> - Computational version: [[§51 Improper Integrals#^thm-51-1|Calc Thm. §51.1]]; the p-series, [[§71 The Integral Test and Estimates of Sums#^thm-71-2|Calc Thm. §71.2]].
 
 > [!example] Example §36.3: A symbol with no meaning
 > $\int_0^d \sin x\,dx = 1 - \cos d$ [FTC I] oscillates between $0$ and $2$ forever: as $d \to \infty$ the limit does not exist, *not even in* $[-\infty, +\infty]$. So $\int_0^\infty \sin x\,dx$ is not a convergent integral, not a divergent one — the symbol simply has **no meaning**. (Divergence to $\pm\infty$ is a defined outcome; this is worse.) The same holds for $\int_{-\infty}^0 \sin x\,dx$ and $\int_{-\infty}^\infty \sin x\,dx$.
@@ -137,6 +144,9 @@ $$
 
 ^pf-36-1
 
+> [!remark]- Connections
+> - Computational version: the Comparison Theorem resting on this dichotomy, [[§51 Improper Integrals#^thm-51-2|Calc Thm. §51.2]] (with worked examples).
+
 > [!theorem] Theorem §36.2: Bounded Integrand against a Finite Total Weight
 > Suppose $-\infty < F(-\infty) \leq F(\infty) < \infty$ (finite total weight), and let $f$ be bounded on $\mathbb{R}$ and $F$-integrable on every $[a,b]$. Then $f$ is $F$-integrable on $\mathbb{R}$.
 
@@ -166,6 +176,9 @@ $$
 
 ^rem-36-3
 
+> [!remark]- Connections
+> - Computational version: probability density functions, [[§56 Probability#^def-56-2|Calc Def. §56.2]] (with worked examples).
+
 > [!example] Example §36.4: The normal distribution
 > It turns out that
 >
@@ -194,3 +207,4 @@ $$
 
 > [!remark]- Connections
 > - The value √π taken on credit here is computed in 452 via polar coordinates: [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]].
+> - Computational version: [[§56 Probability#^prop-56-3|Calc Prop. §56.3]].

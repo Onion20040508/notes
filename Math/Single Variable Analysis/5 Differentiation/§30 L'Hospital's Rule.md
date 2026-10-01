@@ -31,6 +31,9 @@ $$
 
 ^thm-30-1
 
+> [!remark]- Connections
+> - Computational version: [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Calc Thm. §28.2]] (with worked examples).
+
 The idea: differentiating can *simplify* $f$ and $g$, letting us escape the indeterminate forms. We use the rule first, then prove it.
 
 ## Using the Rule
@@ -113,6 +116,9 @@ since $f(x_1), g(x_1)$ are very small — and the right side, by the following t
 > By Rolle's theorem, there is $x_0 \in (a,b)$ with $F'(x_0) = 0$, which is exactly the claimed identity.
 
 ^pf-30-2
+
+> [!remark]- Connections
+> - Computational version: [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-1|Calc Thm. §28.1]].
 
 > [!proof]+ Proof
 > Assume $f, g \to 0$ as $x \to a^-$, $g' \neq 0$ on some $(a - \delta_0, a)$, and $\tfrac{f'}{g'} \to L$ finite. First, two housekeeping points on $(a-\delta_0, a)$: for $x < x_1$ there, $g(x_1) \neq g(x)$ (otherwise Rolle would give a zero of $g'$ in between); and $g(x) \neq 0$ for $x$ close to $a$ (if $g$ vanished at points arbitrarily close to $a$, Rolle between two such zeros would again contradict $g' \neq 0$).

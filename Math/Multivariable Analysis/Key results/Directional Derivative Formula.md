@@ -27,3 +27,4 @@ tags: [multivariable-analysis, hub]
 - **In forms language.** The differential eats a direction and returns this derivative, df(v) = ∇f · v: [[§22 The Algebra of Differential Forms#^prop-22-2|d on 0-Forms Gives the Gradient]] and [[§22 The Algebra of Differential Forms#^prop-22-6|Gradient = Differential = 1-Form]].
 - **Later uses.** The normal derivative ∂v/∂n = ∇v · n̂ in [[Green's First Identity]] is this formula with u = n̂. The fact that the gradient is perpendicular to level curves is the geometry behind the [[Method of Lagrange Multipliers]].
 - **On manifolds.** D_u f = df(u) survives as df_p(D) = D[f] for every tangent vector D, [[§13 Tangent Spaces III꞉ The Cotangent Space#^prop-13-1|591 Prop. §13.1]].
+- **Also in [[Calculus]]:** [[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|Calc Thm. §95.1]] (computational treatment with worked examples).

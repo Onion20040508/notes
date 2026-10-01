@@ -43,6 +43,7 @@ tags: [multivariable-analysis, math452]
 > [!remark]- Connections
 > - The 1D version in MATH 451: [[§29 The Mean Value Theorem#^thm-29-1|Interior Extremum Theorem]] (451 §29.1), applied here along each coordinate slice.
 > - On a manifold the critical points of $f : M \to \mathbb{R}$ are the points where $df_p = 0$, [[§14 Local Diffeomorphisms and Submersions#^prop-14-6|591 Prop. §14.6]].
+> - Computational version: [[§96 Maximum and Minimum Values#^thm-96-1|Calc Thm. §96.1]] (with worked examples); one-variable case [[§25 Maximum and Minimum Values#^thm-25-2|Calc Thm. §25.2]].
 
 > [!remark] Remark
 > A point where $\nabla f = \mathbf{0}$ is called a **critical point** or **stationary point**. Not every critical point is a max or min — it could be a saddle point.
@@ -166,6 +167,7 @@ $$
 > [!remark]- Connections
 > - Generalized to several constraints in $\mathbb{R}^n$: [[§14 Optimization and Lagrange Multipliers#^thm-14-3|Theorem §14.3]].
 > - Without a constraint it reduces to [[§14 Optimization and Lagrange Multipliers#^thm-14-1|Fermat's theorem]] (§14.1); the proof is the 1D [[§29 The Mean Value Theorem#^thm-29-1|Interior Extremum Theorem]] (451 §29.1) along the constraint curve.
+> - Computational version: [[§97 Lagrange Multipliers#^thm-97-1|Calc Thm. §97.1]] (with worked examples).
 
 > [!remark] Remark: The Constraint Qualification
 > The condition $\nabla g \neq \mathbf{0}$ is essential. If $\nabla g = \mathbf{0}$ at a point on the constraint curve, that point is called a **singular point** of the constraint ([[§12 The Implicit Function Theorem#^rem-12-1|Remark §12.1]]). The IFT does not apply there, and the Lagrange multiplier method may fail.
@@ -209,6 +211,7 @@ The proof (carried out below for two constraints in $\mathbb{R}^4$) uses the imp
 > - The linear algebra behind it: $\nabla f$ is orthogonal to the tangent space of the constraint set, and that orthogonal complement ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]]) has dimension $k$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]]), so it is spanned by the $k$ independent constraint gradients.
 > - The case $k = 1$, $n = 2$ is [[Method of Lagrange Multipliers|Theorem §14.2]]; the case $k = 2$, $n = 4$ is derived below.
 > - The implicit function theorem for systems that the proof needs, not proved in 452, is [[§4 The Regular Value Theorem#^thm-4-1|591 Thm. §4.1]]; the tangent space of the constraint set is the kernel of the constraint Jacobian, [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|591 Thm. §11.3]], and the coordinate-free counterpart of the normal space spanned by the $\nabla g_i$ is the conormal space, [[§15 Submanifolds#^def-15-2|591 Def. §15.2]].
+> - Computational version: [[§97 Lagrange Multipliers#^thm-97-2|Calc Thm. §97.2]] (two constraints, with worked examples).
 
 > [!remark] Remark: Why Multiple Constraints?
 > In $\mathbb{R}^3$, a single constraint $g(x, y, z) = 0$ defines a surface (2D object). To get a curve (1D object), we need two constraints.
@@ -540,6 +543,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 > [!remark]- Connections
 > - MATH 451 relative: the one-variable Taylor expansion with Lagrange remainder ([[§31 Taylor's Theorem#^thm-31-2|451 §31.2]]) is the whole engine; in 1D the Hessian is just $f''(x_0)$.
 > - The eigenvalue picture in the figure is the [[Real spectral theorem|real spectral theorem]] (LADR 7.29) applied to the symmetric matrix $H$.
+> - Computational version: the test with $D = f_{xx}f_{yy} - f_{xy}^2$, [[§96 Maximum and Minimum Values#^thm-96-2|Calc Thm. §96.2]] (with worked examples).
 
 ## Testing Definiteness: Principal Minors
 

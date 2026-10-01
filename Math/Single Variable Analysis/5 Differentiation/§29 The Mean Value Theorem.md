@@ -40,6 +40,7 @@ Note the interval is *open*: it has no boundary points, so $x_0$ is automaticall
 
 > [!remark]- Connections
 > - Fermat's condition in several variables (all partials vanish at an interior extremum): [[§14 Optimization and Lagrange Multipliers#^thm-14-1|452 Thm. §14.1]].
+> - Computational version: [[§25 Maximum and Minimum Values#^thm-25-2|Calc Thm. §25.2]] (with worked examples).
 
 > [!theorem] Theorem §29.2: Rolle's Theorem
 > Let $f: [a,b] \to \mathbb{R}$ be continuous, and differentiable at every point of $(a,b)$ (briefly: differentiable on $(a,b)$). If $f(a) = f(b)$, then there exists $x_0 \in (a,b)$ with
@@ -58,6 +59,9 @@ Note the interval is *open*: it has no boundary points, so $x_0$ is automaticall
 > *Case $f(x_1) > f(x_2)$:* since $f(a) = f(b)$, the two extreme values cannot both equal the common endpoint value; say $f(x_1) \neq f(a) = f(b)$ (otherwise argue with $x_2$). Then $x_1 \neq a, b$, so $x_1 \in (a,b)$: an interior maximum. By the previous theorem, $f'(x_1) = 0$.
 
 ^pf-29-2
+
+> [!remark]- Connections
+> - Computational version: [[§26 The Mean Value Theorem#^thm-26-1|Calc Thm. §26.1]] (with worked examples).
 
 ## The Mean Value Theorem and Its Corollaries
 
@@ -90,6 +94,9 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 ![[m451-29-1.svg]]
 *The [[Mean Value Theorem|Mean Value Theorem]]: somewhere in $(a,b)$ the tangent (red) is parallel to the secant (dashed). Rolle is the horizontal special case; the proof above is literally this picture — subtract the secant, and the extremum of what remains is $c$.*
 
+> [!remark]- Connections
+> - Computational version: [[§26 The Mean Value Theorem#^thm-26-2|Calc Thm. §26.2]] (with worked examples).
+
 > [!theorem] Corollary §29.4: Vanishing Derivative Means Constant
 > If $f: (a,b) \to \mathbb{R}$ is differentiable and $f'(x) = 0$ for all $x \in (a,b)$, then $f$ is constant.
 
@@ -108,6 +115,7 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 
 > [!remark]- Connections
 > - If $f' = 0$ only almost everywhere, the conclusion needs absolute continuity: [[§18 Differentiation Theory#^thm-18-27|551 Thm. §18.27]], with the Cantor function as counterexample ([[§18 Differentiation Theory#^ex-18-4|551 Ex. §18.4]]).
+> - Computational version: [[§26 The Mean Value Theorem#^thm-26-3|Calc Thm. §26.3]]; used for the uniqueness of solutions of $y' = ky$ in [[§21 Exponential Growth and Decay#^thm-21-1|Calc Thm. §21.1]].
 
 > [!theorem] Corollary §29.5: Equal Derivatives Differ by a Constant
 > If $f, g: (a,b) \to \mathbb{R}$ are differentiable with $f'(x) = g'(x)$ for all $x$, then $f = g + c$ for some constant $c$.
@@ -118,6 +126,9 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 > Apply the previous corollary to $f - g$, whose derivative vanishes identically.
 
 ^pf-29-5
+
+> [!remark]- Connections
+> - Computational version: [[§26 The Mean Value Theorem#^cor-26-4|Calc Cor. §26.4]]; the most general antiderivative, [[§33 Antiderivatives#^thm-33-1|Calc Thm. §33.1]] (with worked examples).
 
 > [!theorem] Proposition §29.6: Vanishing k-th Derivative Means Polynomial (HW)
 > Let $k \geq 1$ and let $f$ be $k$ times differentiable on an open interval $I$ with $f^{(k)} \equiv 0$ on $I$. Then $f$ is a polynomial of degree less than $k$; conversely, every such polynomial has vanishing $k$-th derivative.
@@ -143,6 +154,9 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 > For $x_1 < x_2$ in $(a,b)$, the MVT gives $x_0$ with $f(x_2) - f(x_1) = f'(x_0)(x_2 - x_1)$, whose sign is the sign of $f'(x_0)$. (With strict inequalities $f' > 0$ throughout, the same display gives *strictly* increasing.)
 
 ^pf-29-7
+
+> [!remark]- Connections
+> - Computational version: [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Calc Thm. §27.1]] (with worked examples).
 
 ## Applications
 
@@ -227,6 +241,9 @@ For instance: if $f$ is differentiable on $\mathbb{R}$ with $1 \leq f' \leq 2$ e
 > The multiplier $e^{g}$ is the *integrating factor* of differential equations in embryo: the equation $y' + y\,g' = 0$ is exactly $(y e^{g})' = 0$, i.e. $y = C e^{-g}$. The general pattern is worth remembering: to prove some expression $E(x)$ vanishes somewhere, hunt for an auxiliary $h$ with equal endpoint values whose derivative is (positive function) $\times\, E$ — then Rolle does the rest. The MVT's own proof (tilting by a linear function) and the Generalized MVT of §30 are the same trick with different auxiliaries.
 
 ^rem-29-2
+
+> [!remark]- Connections
+> - Worked examples: the integrating factor for linear equations, [[§61 Linear Equations#^thm-61-1|Calc Thm. §61.1]]; $y' = x^2 y$ solved in [[§59 Separable Equations#^ex-59-3|Calc Ex. §59.3]].
 
 ## The Intermediate Value Theorem for Derivatives
 
@@ -323,6 +340,7 @@ This computation finds the *formula* but presupposes the differentiability of $f
 
 > [!remark]- Connections
 > - Several-variable version, with an invertible Jacobian in place of a nonzero derivative: [[§13 The Inverse Function Theorem#^thm-13-2|452 Thm. §13.2]].
+> - Computational version: [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Calc Thm. §19.1]] (with worked examples).
 
 > [!example] Example §29.6: Arcsine
 > $f(x) = \sin x$ restricted to $\left[-\tfrac\pi2, \tfrac\pi2\right]$ (needed for $\arcsin$ to be well defined — draw the graph of $\sin$), with inverse $f^{-1}(y) = \arcsin y$:

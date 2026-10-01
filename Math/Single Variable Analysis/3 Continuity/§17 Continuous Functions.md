@@ -25,6 +25,7 @@ Start with basics. Let $f: \Omega \to \mathbb{R}$ be a real-valued function defi
 
 > [!remark]- Connections
 > - In topological spaces, continuity implies sequential continuity, with the converse for metrizable domains: [[§11 Metric Topology#^thm-11-9|590 Thm. §11.9]].
+> - Computational version: Stewart's definition [[§10 Continuity#^def-10-1|Calc Def. §10.1]]; the sequential form, [[§69 Sequences#^thm-69-6|Calc Thm. §69.6]] (with worked examples).
 
 > [!example] Example §17.1: Linear and polynomial functions
 > $f(x) = 2x$ on $\Omega = \mathbb{R}$ is continuous at every $x_0$: if $x_n \to x_0$, then $f(x_n) = 2x_n \to 2x_0 = f(x_0)$ by the scalar-multiple limit theorem. More generally, every polynomial
@@ -187,11 +188,15 @@ For some functions the sequential definition is not so easy to check directly �
 
 > [!remark]- Connections
 > - Same rules for functions of two variables: [[§3 Continuity and Limits of Functions#^thm-3-1|452 Thm. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 Thm. §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 Thm. §3.3]] (sum, product, quotient).
+> - Computational version: [[§10 Continuity#^thm-10-1|Calc Thm. §10.1]] (with worked examples).
 
 > [!example] Example §17.6: Polynomials and rational functions
 > (1) All polynomial functions are continuous — we knew this already; it also follows from (1)–(2) starting with constants and $f(x)=x$. (2) Every rational function $\tfrac{P(x)}{Q(x)}$ is continuous at every point where the polynomial $Q$ does not vanish.
 
 ^ex-17-6
+
+> [!remark]- Connections
+> - Computational version: [[§10 Continuity#^thm-10-2|Calc Thm. §10.2]].
 
 The most important and useful theorem in this section:
 
@@ -208,6 +213,7 @@ The most important and useful theorem in this section:
 > [!remark]- Connections
 > - Several-variable versions: [[§3 Continuity and Limits of Functions#^thm-3-4|452 Thm. §3.4]] and [[§10 Composition of Functions and the Chain Rule#^thm-10-1|452 Thm. §10.1]].
 > - Composition rule for continuous maps of topological spaces: [[§9 Continuous Functions#^thm-9-4|590 Thm. §9.4]].
+> - Computational version: [[§10 Continuity#^thm-10-9|Calc Thm. §10.9]], with limits of composites in [[§10 Continuity#^thm-10-7|Calc Thm. §10.7]] (with worked examples).
 
 > [!example] Example §17.7: Compositions and domains
 > When applying the composition theorem, *check the domains*. (1) $f(x) = \tfrac1x$ is continuous at every $x \neq 0$, and $g(x) = \sin x$ is continuous (later); so $\sin\tfrac1x$ is continuous at every $x \neq 0$ — as claimed above. (2) $f(x) = \sqrt{|x|}: \mathbb{R} \to \mathbb{R}$ is continuous everywhere: it is the composition of $|x|: \mathbb{R} \to [0,\infty)$ and $\sqrt{x}: [0,\infty) \to \mathbb{R}$, and the domain condition is satisfied since $|x|$ takes values exactly in $\operatorname{dom}(\sqrt{\ })$.
@@ -303,6 +309,9 @@ A counterweight to all these constructions — continuity is *rigid* on dense se
 > $$
 
 ^pf-17-6
+
+> [!remark]- Connections
+> - Computational version: Stewart fills in $b^x$ at irrational $x$ from its rational values, [[§4 Exponential Functions#^def-4-3|Calc Def. §4.3]].
 
 > [!remark] Remark
 > Nothing about $\mathbb{Q}$ was special except its *density*: the same proof shows a continuous function is determined by its values on any dense subset (any $Y$ with $\overline{Y} \supseteq (a,b)$, in the closure language of §13). Read against the examples above, this is the price they pay: any function built to *distinguish* $\mathbb{Q}$ from $\mathbb{R}\setminus\mathbb{Q}$ — Dirichlet-type or Thomae-type — is forced to be discontinuous somewhere, for a continuous function cannot tell a dense set apart from the whole line.

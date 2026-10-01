@@ -29,6 +29,7 @@ Green's theorem ([[Green's Theorem|Section 16]]) relates a line integral around 
 > [!remark]- Connections
 > - The flat case is [[§16 Line Integrals and Green's Theorem#^thm-16-3|Green's Theorem as 2D Stokes' Theorem]]; the proof below reduces to [[Green's Theorem|Green's Theorem]] on the parameter domain.
 > - In forms language: $d$ on 1-forms gives the curl ([[§22 The Algebra of Differential Forms#^prop-22-3|Prop. §22.3]]), and the theorem is a case of the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]].
+> - Computational version: [[§114 Stokes' Theorem#^thm-114-1|Calc Thm. §114.1]] (with worked examples).
 
 > [!remark] Remark: Orientation Convention
 > The boundary orientation is determined by the surface orientation:

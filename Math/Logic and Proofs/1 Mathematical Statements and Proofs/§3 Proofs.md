@@ -49,6 +49,7 @@ Since $P \Rightarrow Q$ is automatically true when $P$ is false ([[§2 Implicati
 
 > [!remark]- Connections
 > - The axioms of an ordered field, phrased with $\leq$: [[§3 The Set ℝ of Real Numbers#^def-3-2|451 Def. §3.2]].
+> - Computational version: [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-2|Calc Thm. §116.2]] (with worked examples).
 
 > [!theorem] Proposition §3.1: Squares of Positive Numbers
 > For positive real numbers $a$ and $b$, $a < b \Rightarrow a^2 < b^2$.

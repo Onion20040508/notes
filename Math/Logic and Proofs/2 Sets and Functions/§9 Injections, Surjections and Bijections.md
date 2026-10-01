@@ -38,6 +38,7 @@ A function assigns exactly one value to each point of its domain, but says nothi
 > [!remark]- Connections
 > - Same notions: [[§1 Countability and Set Theory#^def-1-3|551 Def. §1.3]], [[§1 Countability and Set Theory#^def-1-4|551 Def. §1.4]], [[§1 Countability and Set Theory#^def-1-6|551 Def. §1.6]].
 > - For linear maps: [[§8 Null Spaces and Ranges#^ladr-3-14|LADR Def. 3.14]] (injective), [[§8 Null Spaces and Ranges#^ladr-3-19|LADR Def. 3.19]] (surjective).
+> - Computational version: one-to-one functions and the horizontal line test, [[§5 Inverse Functions and Logarithms#^def-5-1|Calc Def. §5.1]] and [[§5 Inverse Functions and Logarithms#^thm-5-1|Calc Thm. §5.1]] (with worked examples).
 
 > [!definition] Definition §9.2: Pre-image of an Element
 > Let $f : X \to Y$ and $y \in Y$. A **pre-image** of $y$ (under $f$) is an element $x \in X$ such that $y = f(x)$.
@@ -159,6 +160,9 @@ Since injectivity and surjectivity are universal and existential statements, the
 
 ^def-9-3
 
+> [!remark]- Connections
+> - Computational version: [[§5 Inverse Functions and Logarithms#^def-5-2|Calc Def. §5.2]] (with worked examples).
+
 > [!example] Example §9.5: A Pair of Inverse Functions
 > $f : \R \to \R$, $f(x) = 2x + 1$, and $g : \R \to \R$, $g(x) = (x - 1)/2$, are inverse to each other: for $x, y \in \R$,
 >
@@ -197,6 +201,7 @@ Since injectivity and surjectivity are universal and existential statements, the
 > [!remark]- Connections
 > - Same result stated with $g \circ f$ and $f \circ g$: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|590 Prop. §21.4]].
 > - For linear maps: [[§10 Invertibility and Isomorphisms#^ladr-3-63|LADR Thm. 3.63]] (invertible iff injective and surjective), with uniqueness of the inverse in [[§10 Invertibility and Isomorphisms#^ladr-3-60|LADR Thm. 3.60]].
+> - In Stewart the inverse is defined exactly for one-to-one functions onto their range: [[§5 Inverse Functions and Logarithms#^def-5-2|Calc Def. §5.2]].
 
 Because of Theorem §9.2, "bijective" and "invertible" are used interchangeably. Many standard functions are not bijections, but become bijections after restricting the domain and shrinking the codomain.
 
@@ -230,6 +235,9 @@ Because of Theorem §9.2, "bijective" and "invertible" are used interchangeably.
 ^pf-9-3
 
 *Uses:* [[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]], [[§8 Functions#^def-8-5|Def. §8.5]], [[§8 Functions#^def-8-2|Def. §8.2]], [[§8 Functions#^def-8-3|Def. §8.3]]
+
+> [!remark]- Connections
+> - Computational version: the cancellation equations, [[§5 Inverse Functions and Logarithms#^thm-5-2|Calc Thm. §5.2]].
 
 > [!example] Example §9.7: Finding Inverses
 > **(i)** $f_1 : \R \to \R$, $f_1(x) = 3x + 2$. For $x, y \in \R$: $y = 3x + 2 \iff x = (y - 2)/3$. So $f_1^{-1}(y) = (y - 2)/3$.
@@ -337,6 +345,9 @@ The notation $f^{-1}$ is also used when $f$ is not a bijection, for a function b
 > *The HW4 solution replaces $X \times \{y\}$ by $X \times Y$ in the middle step, which turns the intersection into all of $G_f$; the intersection has to be computed with the line $X \times \{y\}$ itself, as above.*
 
 ^ex-9-11
+
+> [!remark]- Connections
+> - The analogous test for injectivity: the horizontal line test, [[§5 Inverse Functions and Logarithms#^thm-5-1|Calc Thm. §5.1]].
 
 ## 9.4 Peano's Axioms for the Natural Numbers
 

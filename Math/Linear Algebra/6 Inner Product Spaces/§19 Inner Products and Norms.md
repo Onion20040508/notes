@@ -22,6 +22,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Abstracted in [[§19 Inner Products and Norms#^ladr-6-2|6.2]].
+> - Same definition in ℝ² and ℝ³: [[§82 The Dot Product#^def-82-1|Calc Def. §82.1]] (with worked examples).
 
 > [!definition] Definition 6.2: Inner product
 > An *inner product* on $V$ is a function $(u,v)\mapsto\langle u,v\rangle\in\F$ with
@@ -89,12 +90,16 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Properties: [[§19 Inner Products and Norms#^ladr-6-9|6.9]], [[Triangle inequality|6.17]]. Whether a norm comes from an inner product is decided by [[§19 Inner Products and Norms#^ladr-6-21|6.21]].
 > - The general notion of a norm, not necessarily coming from an inner product: [[§8 Normed Linear Spaces#^def-8-1|556 Def. §8.1]]; that this one satisfies those axioms is [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-2|556 Thm. §17.2]].
+> - In ℝ² and ℝ³: the length of a vector, [[§81 Vectors#^def-81-6|Calc Def. §81.6]] and [[§81 Vectors#^thm-81-3|Calc Thm. §81.3]] (with worked examples).
 
 > [!example] Example 6.8: Norms (p. 186)
 > - (a) In $\F^n$: $\|(z_1,\dots,z_n)\|=\sqrt{|z_1|^2+\dots+|z_n|^2}$.
 > - (b) With [[§19 Inner Products and Norms#^ladr-6-3|6.3]](c): $\|f\|=\sqrt{\int_{-1}^1f^2}$, the $L^2$ norm. A function can have a small $L^2$ norm while being large at some points.
 
 ^ladr-6-8
+
+> [!remark]- Connections
+> - Example (a) in ℝ² and ℝ³: [[§81 Vectors#^thm-81-3|Calc Thm. §81.3]]; the distance formula [[§80 Three-Dimensional Coordinate Systems#^thm-80-1|Calc Thm. §80.1]] is ‖P₂ − P₁‖.
 
 > [!theorem] Theorem 6.9: Basic properties of the norm
 > For $v\in V$: (a) $\|v\|=0$ iff $v=0$; (b) $\|\lambda v\|=|\lambda|\,\|v\|$ for all $\lambda\in\F$.
@@ -119,6 +124,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Pythagoras: [[§19 Inner Products and Norms#^ladr-6-12|6.12]]. Orthogonal complements: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|6.46]].
+> - In ℝ² and ℝ³: [[§82 The Dot Product#^def-82-3|Calc Def. §82.3]] and the test $\mathbf a \cdot \mathbf b = 0$, [[§82 The Dot Product#^thm-82-4|Calc Thm. §82.4]] (with worked examples).
 
 > [!theorem] Theorem 6.11: Orthogonality and 0
 > (a) $0$ is orthogonal to every vector. (b) $0$ is the only vector orthogonal to itself.
@@ -144,6 +150,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Used in [[Cauchy–Schwarz inequality|6.14]], [[§20 Orthonormal Bases#^ladr-6-24|6.24]], [[§20 Orthonormal Bases#^ladr-6-26|6.26]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|6.61]].
 > - Same statement in 556, together with LADR 6.24: [[§20 Orthonormal Sets and Bases#^lem-20-1|556 Lemma §20.1]].
+> - The Law of Cosines, [[§119 Trigonometry#^thm-119-11|Calc Thm. §119.11]], reduces to it when the angle is a right angle.
 
 > [!theorem] Theorem 6.13: An orthogonal decomposition
 > Let $u,v\in V$, $v\ne0$. Set $c=\dfrac{\langle u,v\rangle}{\|v\|^2}$ and $w=u-cv$. Then $u=cv+w$ and $\langle w,v\rangle=0$.
@@ -155,6 +162,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - $cv$ is the orthogonal projection of $u$ onto $\Span(v)$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-56|6.56]]). Iterated, this is Gram–Schmidt ([[Gram–Schmidt procedure|6.32]]). Used for [[Cauchy–Schwarz inequality|6.14]].
+> - Computational version: vector and scalar projections, [[§82 The Dot Product#^thm-82-6|Calc Thm. §82.6]] (with worked examples).
 
 %% ex:6.13-fig %%
 > [!example] Example: The orthogonal decomposition, pictured
@@ -181,6 +189,10 @@ tags: [linear-algebra]
 *Uses:* [[§19 Inner Products and Norms#^ladr-6-13|6.13]], [[§19 Inner Products and Norms#^ladr-6-12|6.12]]
 
 %% ex:6.14-fig %%
+
+> [!remark]- Connections
+> - In ℝ² and ℝ³ it follows from $\mathbf a \cdot \mathbf b = |\mathbf a|\,|\mathbf b| \cos\theta$, [[§82 The Dot Product#^thm-82-2|Calc Thm. §82.2]]; used to maximize directional derivatives in [[§95 Directional Derivatives and the Gradient Vector#^thm-95-4|Calc Thm. §95.4]].
+
 > [!example] Example: Cauchy–Schwarz as leg $\le$ hypotenuse
 > In the decomposition $u=cv+w$ of [[§19 Inner Products and Norms#^ladr-6-13|6.13]] the right triangle has hypotenuse $\|u\|$ and legs $\|cv\|=\frac{|\langle u,v\rangle|}{\|v\|}$ and $\|w\|$. A leg is at most the hypotenuse: that is the inequality. Equality means $w=0$, i.e. $u\in\Span(v)$.
 >
@@ -213,6 +225,9 @@ tags: [linear-algebra]
 > using [[Cauchy–Schwarz inequality|6.14]] in the last step. Equality forces both inequalities to be equalities, i.e. $\langle u,v\rangle=\|u\|\|v\|$. Then equality in [[Cauchy–Schwarz inequality|6.14]] makes one a multiple of the other, and the scalar must be real and $\ge0$ for $\langle u,v\rangle$ to equal $\|u\|\|v\|\ge0$. Conversely a nonnegative multiple gives equality.
 
 *Uses:* [[Cauchy–Schwarz inequality|6.14]]
+
+> [!remark]- Connections
+> - Used in Relativity: for timelike vectors in spacetime the inequality reverses, and the straight worldline is the longest — [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-2|REL Theorem §B1.3.2]].
 
 > [!theorem] Theorem 6.21: Parallelogram equality
 > For $u,v\in V$,

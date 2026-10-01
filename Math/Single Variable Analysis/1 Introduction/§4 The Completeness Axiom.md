@@ -81,6 +81,9 @@ What is special about the upper bound $1$ of $(0,1)$? Any number $t \geq 1$ is a
 
 ^def-4-3
 
+> [!remark]- Connections
+> - Computational version: least upper bound, [[§69 Sequences#^def-69-7|Calc Def. §69.7]].
+
 > [!remark] Remark
 > If $\sup S$ or $\inf S$ exists, it is unique — by the same antisymmetry argument as for $\max S$: two least upper bounds are each $\leq$ the other.
 
@@ -129,6 +132,7 @@ This is not obvious at all. It is the axiom we will assume for the rest of the s
 
 > [!remark]- Connections
 > - For a general ordered set this is the least upper bound property, [[§14 Connected Subspaces of ℝ#^def-14-1|590 Def. §14.1]], the key hypothesis that makes ℝ connected.
+> - Computational version: [[§69 Sequences#^def-69-7|Calc Def. §69.7]], where it yields the Monotonic Sequence Theorem.
 
 > [!theorem] Corollary §4.4: Completeness for Infima
 > If a nonempty $S \subseteq \mathbb{R}$ is bounded from below, then $\inf S$ exists.

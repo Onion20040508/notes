@@ -119,6 +119,7 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 
 > [!remark]- Connections
 > - MATH 451 version: [[§32 The Definition of the Riemann Integral#^thm-32-7|Continuous Functions Are Integrable (451 §32.7)]].
+> - Stewart's statement: [[§35 The Definite Integral#^thm-35-1|Calc Thm. §35.1]].
 
 ## Limitations of the Riemann Integral
 

@@ -56,6 +56,9 @@ The parametrization $\mathbf{X}: D \to \mathbb{R}^3$ is a “change of variables
 
 ^def-18-1
 
+> [!remark]- Connections
+> - Computational version: [[§112 Parametric Surfaces and Their Areas#^def-112-1|Calc Def. §112.1]] (with worked examples).
+
 > [!example] Example §18.1: Sphere
 > The sphere of radius $R$, $\{(x,y,z) : x^2 + y^2 + z^2 = R^2\}$, is a set of points in $\mathbb{R}^3$. To parametrize it, we use spherical angles $(\theta, \varphi)$:
 >
@@ -256,6 +259,7 @@ But we want a formula for area that works in *any* ambient dimension (not just $
 > - The linear algebra behind it: $G = (D\mathbf{X})^{T} D\mathbf{X}$ is $T^*T$ for $T = D\mathbf{X}$, so $\operatorname{rank} G = \operatorname{rank} D\mathbf{X}$ ([[§26 Singular Value Decomposition#^ladr-7-64|LADR 7.64]]) and $\det G > 0$ exactly at regular points ([[§18 Surface Integrals#^def-18-3|Def. §18.3]]).
 > - When $D\mathbf{X}$ is square, $\sqrt{\det(T^*T)} = |\det T|$ ([[§34 Determinants#^ladr-9-60|LADR 9.60]], [[§34 Determinants#^ladr-9-61|LADR 9.61]]): the $|J|$ of [[§15 Multivariable Integration#^thm-15-20|Change of Variables in ℝⁿ]].
 > - The same area element pulled back as a 2-form: [[§22 The Algebra of Differential Forms#^ex-22-3|Pullback Along a Surface]].
+> - Computational version: [[§112 Parametric Surfaces and Their Areas#^def-112-4|Calc Def. §112.4]] ($dS = |\mathbf r_u \times \mathbf r_v|\,du\,dv$, with worked examples); for graphs [[§102 Surface Area#^thm-102-1|Calc Thm. §102.1]], for surfaces of revolution [[§53 Area of a Surface of Revolution#^def-53-2|Calc Def. §53.2]].
 
 > [!remark] Remark: Why the Gram Matrix?
 > In $\mathbb{R}^3$, we could just use $|\mathbf{X}_u \times \mathbf{X}_v|$ directly. The Gram matrix formulation is preferred because:
@@ -286,6 +290,7 @@ With the area element $dS = |\mathbf{X}_u \times \mathbf{X}_v| \, du \, dv$ in h
 > [!remark]- Connections
 > - One dimension down: the [[§16 Line Integrals and Green's Theorem#^def-16-1|Scalar Line Integral]].
 > - Not an integral of a differential form (no orientation): [[§22 The Algebra of Differential Forms#^rem-22-8|Scalar Integrals Are Not Form Integrals]].
+> - Computational version: [[§113 Surface Integrals#^def-113-1|Calc Def. §113.1]] and [[§113 Surface Integrals#^thm-113-1|Calc Thm. §113.1]] (with worked examples).
 
 **Interpretation:** If $f$ represents mass density (mass per unit area), then $\iint_S f \, dS$ is the total mass of a thin shell shaped like $S$.
 
@@ -372,6 +377,7 @@ The $|\mathbf{X}_u \times \mathbf{X}_v|$ cancels, giving a cleaner formula:
 > [!remark]- Connections
 > - In the language of forms, the flux integral is the integral of a 2-form: [[§22 The Algebra of Differential Forms#^def-22-6|Integration of a 2-Form over a Surface]], [[§22 The Algebra of Differential Forms#^rem-22-7|2-Form Integration Recovers the Flux Integral]].
 > - The cross product $\mathbf{X}_u \times \mathbf{X}_v$ is a pullback: [[§22 The Algebra of Differential Forms#^rem-22-3|The Cross Product Is the Pullback in Disguise]].
+> - Computational version: [[§113 Surface Integrals#^def-113-7|Calc Def. §113.7]] and [[§113 Surface Integrals#^thm-113-3|Calc Thm. §113.3]] (with worked examples).
 
 **Interpretation:** $\iint_S \mathbf{F} \cdot d\mathbf{S}$ measures the net rate at which “stuff” (fluid, electric field, etc.) flows through $S$ in the direction of $\hat{n}$.
 
@@ -572,6 +578,7 @@ For a closed surface $\partial V$ bounding a volume $V$:
 > [!remark]- Connections
 > - The 2D version: [[§16 Line Integrals and Green's Theorem#^thm-16-2|Divergence Theorem in ℝ²]]; the $n$-dimensional version: [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]].
 > - The 1D case is the [[Fundamental Theorem of Calculus]]; all are instances of the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]] with $d$ on 2-forms giving the divergence ([[§22 The Algebra of Differential Forms#^prop-22-4|Prop. §22.4]]).
+> - Computational version: [[§115 The Divergence Theorem#^thm-115-1|Calc Thm. §115.1]] (with worked examples).
 
 > [!remark] Remark: Why the Bottom Surface Has Reversed Orientation
 > The parameter reversal for the bottom surface is not a trick — it is the higher-dimensional manifestation of the sign pattern in the [[Fundamental Theorem of Calculus]].

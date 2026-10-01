@@ -67,6 +67,7 @@ We all know this — but how to *prove* it? The integral $\int_a^b g'$ is define
 
 > [!remark]- Connections
 > - Lebesgue version: $f(x) - f(a) = \int_a^x f'$ holds exactly for absolutely continuous $f$, [[§18 Differentiation Theory#^thm-18-13|551 Thm. §18.13]].
+> - Computational version: [[§36 The Fundamental Theorem of Calculus#^thm-36-2|Calc Thm. §36.2]] (Stewart's Part 2 is this FTC I) and the Net Change Theorem, [[§37 Indefinite Integrals and the Net Change Theorem#^thm-37-2|Calc Thm. §37.2]] (with worked examples).
 
 ## Integration by Parts
 
@@ -126,6 +127,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 
 > [!remark]- Connections
 > - Its several-variable form is Green's first identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]], which reduces to this for n = 1.
+> - Computational version: [[§44 Integration by Parts#^thm-44-2|Calc Thm. §44.2]] (with worked examples).
 
 ## The Second Fundamental Theorem
 
@@ -182,6 +184,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 > [!remark]- Connections
 > - The substitution rule, which 451 never states, is proved in 452 from this theorem and the chain rule: [[§15 Multivariable Integration#^lem-15-13|452 Lemma §15.13]].
 > - Lebesgue version: for integrable $f$ the integral function is absolutely continuous ([[§18 Differentiation Theory#^thm-18-12|551 Thm. §18.12]]) and $F' = f$ almost everywhere without any continuity ([[§18 Differentiation Theory#^thm-18-26|551 Thm. §18.26]]).
+> - Computational version: [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (Stewart's Part 1 is this FTC II; with worked examples).
 
 > [!example] Example §34.1: FTC I from FTC II when the derivative is continuous (HW)
 > The two halves of the FTC are not independent: if $g'$ is *continuous*, FTC I follows from FTC II in three lines. Set $G(x) = \int_a^x g'(t)\,dt$. By FTC II, $G$ is continuous on $[a,b]$ and $G' = g'$ on $(a,b)$; so $G - g$ has vanishing derivative on $(a,b)$ and is constant there (§29), and the constancy extends to the closed interval by continuity of $G - g$. Evaluating the constant at both ends,
@@ -242,3 +245,6 @@ One step deserves scrutiny (HW): the claim “$F' = f$ *everywhere*” — FTC I
 > FTC II is exactly the statement borrowed in §26 to prove term-by-term differentiation of power series ($\tfrac{d}{dx}\int_0^x g = g$ for continuous $g$); FTC I underwrites every explicit evaluation of integrals used in §15 (the integral test computation), §25–§26, and §31. All of those credits are now paid off. Two loans remain open at semester's end, both from sections not covered: the rigorous construction of decimal expansions (§16), and the rigorous definitions of $e^x$, $\log$, $\sin$, $\cos$ with their derivatives (Ross §37) — everything in these notes uses of them only the properties cited at the point of borrowing. (A first installment on the trigonometric loan is paid in §26: the series-defined $s$ and $c$ satisfy $s' = c$, $c' = -s$, and $s^2 + c^2 = 1$ by pure power-series calculus. And the improper-integral symbol $\int_1^\infty$, used by §15's integral test, is formally defined and its p-integral computed in §36.)
 
 ^rem-34-4
+
+> [!remark]- Connections
+> - Stewart's Appendix G pays the loan for $\log$ and $e^x$ with FTC, defining ln as an integral: [[§121 The Logarithm Defined as an Integral#^def-121-1|Calc Def. §121.1]].

@@ -26,6 +26,7 @@ The rules of arithmetic and order do not capture the fact that every positive in
 
 > [!remark]- Connections
 > - In analysis, with $\mathbb{N} = \{1, 2, \ldots\}$: induction is Peano's axiom N5 ([[§1 The Set ℕ of Natural Numbers#^def-1-1|451 Def. §1.1]]), from which the principle is derived ([[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 Thm. §1.1]]).
+> - Stewart's statement: [[§120 Sigma Notation#^def-120-2|Calc Def. §120.2]].
 
 > [!remark] Remark: Why Induction Is an Axiom
 > The integer $k + 1$ is the **successor** of $k$, and starting from $1$ and taking successors repeatedly we eventually reach any positive integer: from $P(1)$ and $P(1) \Rightarrow P(2)$ we get $P(2)$, then $P(2) \Rightarrow P(3)$ gives $P(3)$, and so on. Think of the positive integers as a line of dominoes: the inductive step says each domino knocks over the next, the base case that the first one falls. (The analogy is imperfect: dominoes take time to fall, while implication is outside time.) This seems obvious because our idea of the integers includes more than the facts that they can be added, multiplied and compared; the induction principle is exactly that extra content, an axiom in addition to the algebraic and order axioms ([[§2 Implications#^def-2-8|Def. §2.8]], [[§3 Proofs#^def-3-1|Def. §3.1]]). Checking cases is never a proof: the Goldbach conjecture ([[§1 The Language of Mathematics#^ex-1-1|Ex. §1.1]]) has been verified in an enormous number of cases and is still unproved. The integers are characterized as an ordered integral domain whose positive elements satisfy induction, and the positive integers alone by Peano's axioms, one of which is induction ([[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]], axiom 3): "the essence of the natural number concept is … closure under the successor operation" (Dedekind, 1888). In the language of sets the principle says that a subset of $\mathbb{Z}^+$ which contains $1$ and contains $k + 1$ whenever it contains $k$ is the whole of $\mathbb{Z}^+$; this **set form** is [[§7 Quantifiers#^def-7-4|Def. §7.4]], where it is shown to be equivalent to the version above.
@@ -171,6 +172,9 @@ A line of dots meaning "and so on", as in $1 + 2 + \cdots + n$, indicates a **de
 
 ^def-5-2
 
+> [!remark]- Connections
+> - Computational version: [[§120 Sigma Notation#^def-120-1|Calc Def. §120.1]] (with worked examples).
+
 > [!theorem] Proposition §5.5: The Sum of the First n Positive Integers
 > For positive integers $n$,
 >
@@ -198,6 +202,9 @@ A line of dots meaning "and so on", as in $1 + 2 + \cdots + n$, indicates a **de
 ^pf-5-5
 
 *Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§5 The Induction Principle#^def-5-2|Def. §5.2]]
+
+> [!remark]- Connections
+> - Computational version: [[§120 Sigma Notation#^thm-120-2|Calc Thm. §120.2]] (c), with the formulas for Σi² and Σi³.
 
 Inductive definitions are implicit in many familiar functions of the non-negative integers.
 

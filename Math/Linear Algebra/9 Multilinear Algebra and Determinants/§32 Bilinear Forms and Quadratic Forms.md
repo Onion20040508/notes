@@ -18,6 +18,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: the Minkowski metric $\eta(u,v)=u^0v^0-u^1v^1-u^2v^2-u^3v^3$ (your $(+,-,-,-)$ convention) is a symmetric bilinear form that is not positive definite.
+> - Used in Relativity: the Minkowski metric, its scalar product and the interval, a symmetric bilinear form and its quadratic form — [[§B1.1 The Metric and Index Notation#^def-b1-1-3|REL Def. §B1.1.3]].
 
 > [!example] Example 9.2: Bilinear forms (p. 333)
 > - $\beta(x,y)=x_1y_2-5x_2y_3+2x_3y_1$ on $\F^3$.
@@ -85,6 +86,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics/GR: $g'_{\mu\nu}=\frac{\partial x^\alpha}{\partial x'^\mu}\frac{\partial x^\beta}{\partial x'^\nu}g_{\alpha\beta}$ is this formula.
+> - Used in Relativity: a Lorentz transformation is a change of basis that leaves the matrix of the metric unchanged, $\Lambda^{\mathsf T}\eta\Lambda = \eta$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-1|REL Def. §B1.2.1]]; the field tensor, an alternating bilinear form, transforms by the same formula — [[§B4.2 The Electromagnetic Field Tensor#^def-b4-2-2|REL Def. §B4.2.2]], [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-2|REL Theorem §B4.2.2]].
 
 > [!example] Example 9.8: The matrix of a bilinear form on P2(R) (p. 336)
 > $\beta(p,q)=p(2)\,q'(3)$ on $\Poly_2(\R)$. With the bases $(1,\ x-2,\ (x-3)^2)$ and $(1,x,x^2)$:
@@ -141,6 +143,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Orthonormal version: [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|9.13]]. Sylvester's law of inertia (not in Axler): the numbers of positive, negative and zero diagonal entries do not depend on the diagonalizing basis (for $\F=\R$); e.g. Minkowski space has signature $(1,3)$.
+> - Used in Relativity: Minkowski space has signature (1, 3) in every inertial frame — [[§B1.1 The Metric and Index Notation#^def-b1-1-3|REL Def. §B1.1.3]].
 
 > [!theorem] Theorem 9.13: Diagonalization of a symmetric bilinear form by an orthonormal basis
 > On a real inner product space, every symmetric bilinear form has a diagonal matrix with respect to some **orthonormal** basis.
@@ -155,6 +158,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-12|9.12]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]], [[Real spectral theorem|7.29]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|7.57]], [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-7|9.7]]
 
+> [!remark]- Connections
+> - Used in Stewart to bring a quadric surface to standard form: [[§85 Cylinders and Quadric Surfaces#^def-85-3|Calc Def. §85.3]].
+
 > [!definition] Definition 9.14: Alternating bilinear form, V⁽²⁾ alt
 > $\alpha\in V^{(2)}$ is *alternating* if $\alpha(v,v)=0$ for all $v$. $V^{(2)}_{\mathrm{alt}}$ is the set of alternating bilinear forms.
 
@@ -162,6 +168,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: the symplectic form $\omega\big((q,p),(q',p')\big)=q\cdot p'-p\cdot q'$ of Hamiltonian mechanics is alternating; in the language of [[Differentiable Manifolds]] it is a $2$-form.
+> - Used in Relativity: the electromagnetic field tensor $F_{\mu\nu}$ is an alternating bilinear form on spacetime — [[§B4.2 The Electromagnetic Field Tensor#^def-b4-2-2|REL Def. §B4.2.2]], [[§B4.2 The Electromagnetic Field Tensor|REL §B4.2]] (Connections).
 
 > [!example] Example 9.15: Alternating bilinear forms (p. 339)
 > - On $\F^n$ ($n\ge3$): $\alpha(x,y)=x_1y_2-x_2y_1+x_1y_3-x_3y_1$.
@@ -187,6 +194,9 @@ tags: [linear-algebra]
 > In matrices: every square matrix is uniquely symmetric plus antisymmetric, $B=\frac{B+B^t}2+\frac{B-B^t}2$.
 
 ^ladr-9-17
+
+> [!remark]- Connections
+> - Used in Relativity: every rank-2 Lorentz tensor splits uniquely, and in every frame alike, into symmetric and antisymmetric parts — [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]].
 
 > [!definition] Definition 9.18: Quadratic form associated with a bilinear form, qβ
 > For $\beta\in V^{(2)}$, $q_\beta(v)=\beta(v,v)$. A *quadratic form* is a function $q=q_\beta$ for some bilinear $\beta$. $q_\beta=0$ iff $\beta$ is alternating.
@@ -226,6 +236,9 @@ tags: [linear-algebra]
 > (c)$\Rightarrow$(d): take $\lambda=2$.
 >
 > (d)$\Rightarrow$(a): let $\rho(u,w)=\frac12\big(q(u+w)-q(u)-q(w)\big)$, symmetric bilinear by hypothesis. Then $q_\rho(v)=\frac12\big(q(2v)-2q(v)\big)=\frac12\big(4q(v)-2q(v)\big)=q(v)$.
+
+> [!remark]- Connections
+> - Used in Relativity: invariance of the interval, a quadratic form, gives invariance of the Minkowski scalar product — [[§B1.1 The Metric and Index Notation#^thm-b1-1-1|REL Theorem §B1.1.1]]; and a quadratic form fixes its symmetric matrix in the proof that the postulates force the invariance of the interval — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-1|REL Theorem §B1.2.1]].
 
 > [!example] Example 9.22: Symmetric bilinear form associated with a quadratic form (p. 343)
 > The $\beta$ of [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-19|9.19]] is not symmetric. The unique symmetric $\rho$ with $q_\rho=q_\beta$ splits each cross term evenly:

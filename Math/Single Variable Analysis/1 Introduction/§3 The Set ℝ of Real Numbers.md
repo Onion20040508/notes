@@ -120,6 +120,7 @@ So $\mathbb{Q}$ is an ordered field, and similarly $\mathbb{R}$ is an ordered fi
 
 > [!remark]- Connections
 > - Parts (d) and (e) in 250: [[§3 Proofs#^prop-3-2|250 Prop. §3.2]], [[§3 Proofs#^cor-3-3|250 Cor. §3.3]] (squares are non-negative, 1 > 0, products of positive numbers are positive).
+> - Computational version: rules for inequalities, [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-2|Calc Thm. §116.2]] (with worked examples).
 
 ## Partial Orders; $\mathbb{C}$ Is Not an Ordered Field
 
@@ -191,6 +192,7 @@ For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of ab
 
 > [!remark]- Connections
 > - Same definition: [[§1 The Language of Mathematics#^def-1-4|250 Def. §1.4]].
+> - Computational version: [[§116 Numbers, Inequalities, and Absolute Values#^def-116-6|Calc Def. §116.6]] (with worked examples).
 
 > [!theorem] Theorem §3.3: Properties of the Absolute Value
 > For all $a, b \in \mathbb{R}$:
@@ -221,6 +223,7 @@ For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of ab
 
 > [!remark]- Connections
 > - Elementary version: [[§4 Proof by Contradiction#^ex-4-5|250 Ex. §4.5]] (both parts, by comparing squares, with equality in (i) exactly when ab ≥ 0).
+> - Computational version: the triangle inequality, [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|Calc Thm. §116.6]] (with worked examples).
 
 > [!definition] Definition §3.5: Distance
 > The **distance** between two numbers $a, b \in \mathbb{R}$ (two points on the real line) is
@@ -230,6 +233,9 @@ For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of ab
 > $$
 
 ^def-3-5
+
+> [!remark]- Connections
+> - Computational version: distance as $|a - b|$ in [[§116 Numbers, Inequalities, and Absolute Values#^def-116-6|Calc Def. §116.6]].
 
 > [!theorem] Proposition §3.4: Properties of Distance
 > For all $a, b, c \in \mathbb{R}$:

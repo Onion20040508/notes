@@ -76,6 +76,7 @@ It is often not easy to check integrability from the definitions — we need pro
 
 > [!remark]- Connections
 > - Double-integral version: [[§15 Multivariable Integration#^thm-15-2|452 Thm. §15.2]] and [[§15 Multivariable Integration#^thm-15-3|452 Thm. §15.3]].
+> - Computational version: [[§35 The Definite Integral#^thm-35-4|Calc Thm. §35.4]] (with worked examples).
 
 > [!theorem] Theorem §33.3: Monotonicity of the Integral
 > If $f, g$ are integrable on $[a,b]$ and $f(x) \leq g(x)$ for all $x$, then
@@ -97,6 +98,7 @@ It is often not easy to check integrability from the definitions — we need pro
 
 > [!remark]- Connections
 > - Double-integral version: [[§15 Multivariable Integration#^thm-15-5|452 Thm. §15.5]].
+> - Computational version: [[§35 The Definite Integral#^thm-35-6|Calc Thm. §35.6]] (with worked examples).
 
 > [!theorem] Theorem §33.4: Absolute Values
 > If $f: [a,b] \to \mathbb{R}$ is integrable, then $|f|$ is integrable, and
@@ -158,6 +160,7 @@ The converse direction — that integrability passes *down* to subintervals — 
 
 > [!remark]- Connections
 > - Double-integral version, additivity over almost disjoint regions: [[§15 Multivariable Integration#^thm-15-4|452 Thm. §15.4]].
+> - Computational version: [[§35 The Definite Integral#^thm-35-5|Calc Thm. §35.5]] (with worked examples).
 
 > [!theorem] Proposition §33.6: Restriction to Subintervals (HW)
 > If $f$ is integrable on $[a,b]$, then $f$ is integrable on every interval $[c,d] \subseteq [a,b]$.
@@ -269,6 +272,9 @@ The converse direction — that integrability passes *down* to subintervals — 
 > $$
 
 ^thm-33-9
+
+> [!remark]- Connections
+> - Computational version: [[§43 Average Value of a Function#^thm-43-1|Calc Thm. §43.1]] (with worked examples).
 
 What does it mean? The right side is the **mean value** of $f$ over $[a,b]$: the mean value is attained — it equals the value of $f$ at some point.
 

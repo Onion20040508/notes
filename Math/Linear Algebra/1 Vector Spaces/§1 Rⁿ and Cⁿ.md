@@ -134,6 +134,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Commutative: [[§1 Rⁿ and Cⁿ#^ladr-1-14|Commutativity of addition in F]]. Inverses: [[§1 Rⁿ and Cⁿ#^ladr-1-17|Additive inverse in Fⁿ, −x]].
+> - In ℝ² and ℝ³: [[§81 Vectors#^thm-81-4|Calc Thm. §81.4]] (with worked examples).
 
 > [!theorem] Theorem 1.14: Commutativity of addition in Fⁿ
 > If $x,y\in\F^n$, then $x+y=y+x$.
@@ -190,6 +191,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Together with [[§1 Rⁿ and Cⁿ#^ladr-1-13|Addition in Fⁿ]] this makes $\F^n$ a vector space ([[§2 Definition of Vector Space#^ladr-1-20|Vector space]]).
+> - In ℝ² and ℝ³: [[§81 Vectors#^thm-81-4|Calc Thm. §81.4]] (with worked examples).
 
 %% ex:1.18-fig %%
 > [!example] Example: Scalar multiples, pictured

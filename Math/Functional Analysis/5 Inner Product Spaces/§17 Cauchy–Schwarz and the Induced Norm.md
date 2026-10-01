@@ -234,6 +234,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[§19 Inner Products and Norms#^ladr-6-21|LADR 6.21]] (parallelogram equality).
+> - Used in Relativity: polarization recovers the Minkowski scalar product from the interval, without positivity — [[§B1.1 The Metric and Index Notation#^thm-b1-1-1|REL Theorem §B1.1.1]].
 
 The parallelogram law is a statement of plane geometry: in the parallelogram spanned by $x$ and $y$, the diagonals are $x + y$ and $x - y$, and the squares of the two diagonals sum to the squares of the four sides.
 

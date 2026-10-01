@@ -99,6 +99,9 @@ If $P \Rightarrow Q$ is false then $P$ is true and $Q$ is false ([[§2 Implicati
 
 *Uses:* [[§3 Proofs#^def-3-1|Def. §3.1]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]]
 
+> [!remark]- Connections
+> - The multiplication rules for inequalities in Stewart: [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-2|Calc Thm. §116.2]].
+
 A direct proof is hard to find here, because the multiplication law depends on the sign of $c$, which is what we are trying to determine. (The same argument works for real $a$, $b$, $c$.)
 
 ## 4.3 Proof by Contrapositive
@@ -239,6 +242,7 @@ Eccles's hint to Problems I Q7 instead assumes that the odd integers are exactly
 > [!remark]- Connections
 > - The triangle inequality and $|ab| = |a||b|$ in analysis, proved there by adding $-|a| \leq a \leq |a|$ and $-|b| \leq b \leq |b|$: [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 Thm. §3.3]].
 > - Generalized to inner product spaces: [[Triangle inequality|LADR 6.17]].
+> - Computational version: [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|Calc Thm. §116.6]] (with worked examples).
 
 > [!example] Example §4.6: The Largest Integer
 > (a) There is no largest integer. (b) What is wrong with the following proof that $1$ is the largest integer, and what does it prove?

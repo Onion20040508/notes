@@ -494,6 +494,7 @@ The promise of [[§5 Topological Groups and Classical Matrix Groups#The Classica
 > [!remark]- Connections
 > - $\mathrm{O}(n)$ as a group in 493: [[Matrix groups GLₙ, SLₙ and O(n)]]; the analogous level-set argument for $\mathrm{SL}(n,\mathbb{R})$: [[§5 Topological Groups and Classical Matrix Groups#^cor-5-13|§5.13]].
 > - Its tangent spaces: [[§11 Tangent Spaces I꞉ The Geometric Picture#^ex-11-2|Ex. §11.2]]; all classical groups: [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|§11.5]].
+> - Used in Relativity: $\dim SO(3) = 3$ counts the rotation parameters when a proper orthochronous Lorentz transformation is written as a boost times a rotation — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]].
 
 > [!remark] Remark
 > **The codomain is not a cosmetic choice.** It is essential that $F$ be regarded as a map into $\operatorname{Sym}(n,\mathbb{R})$ and not into $\operatorname{Mat}(n,\mathbb{R})$. Since $F(g)$ is always symmetric, $\operatorname{im} F \subseteq \operatorname{Sym}(n,\mathbb{R}) \subsetneq \operatorname{Mat}(n,\mathbb{R})$, so $F'(g)$ could never be surjective onto $\operatorname{Mat}(n,\mathbb{R})$; with that codomain $I$ would fail to be a regular value at every point and the theorem would yield nothing. Choosing the codomain to be exactly the space the map lands in is what makes the rank condition attainable — and it is also what produces the right dimension count, since $\dim \mathrm{O}(n) = n^2 - \dim(\text{codomain})$.

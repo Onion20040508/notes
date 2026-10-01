@@ -129,6 +129,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Translates of a subspace partition $V$: [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]]. They are the points of [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]]. Solution sets of solvable inhomogeneous systems are translates of the null space.
 > - Group version: v + U is the coset of U in the abelian group (V, +), [[§26 Left and Right Cosets#^def-26-2|493 Def. §26.2]].
+> - In ℝ³: lines $\mathbf r = \mathbf r_0 + t\mathbf v$ and planes $\mathbf n \cdot (\mathbf r - \mathbf r_0) = 0$ are translates of subspaces, [[§84 Equations of Lines and Planes#^thm-84-1|Calc Thm. §84.1]] and [[§84 Equations of Lines and Planes#^thm-84-5|Calc Thm. §84.5]] (with worked examples).
 
 > [!example] Example 3.98: Translates (p. 99)
 > - For the line $U$ of [[§11 Products and Quotients of Vector Spaces#^ladr-3-96|3.96]], the translates of $U$ are all lines of slope $2$; for any line $U$ through $0$ in $\R^2$, they are all lines parallel to $U$.

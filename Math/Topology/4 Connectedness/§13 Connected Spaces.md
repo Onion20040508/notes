@@ -151,6 +151,8 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - The engine of the [[§14 Connected Subspaces of ℝ#^thm-14-3|Intermediate Value Theorem]].
 > - Compactness analogue: [[Continuous Image of a Compact Space is Compact|Continuous Image of Compact is Compact]].
+> - Used in Relativity: a continuous function on a connected set of velocities cannot jump between two values, in the proof that the postulates force the invariance of the interval — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-1|REL Theorem §B1.2.1]]; and in splitting the Lorentz group into its four components — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]].
+> - Its case X = [a, b], Y ⊆ ℝ is the Intermediate Value Theorem: [[§10 Continuity#^thm-10-10|Calc Thm. §10.10]] (with worked examples).
 
 > [!remark] Remark: Properties of Preimages
 > Useful facts: $f^{-1}(A) \cup f^{-1}(B) = f^{-1}(A \cup B)$ and $f^{-1}(A) \cap f^{-1}(B) = f^{-1}(A \cap B)$.

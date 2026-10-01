@@ -20,6 +20,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Basic properties [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]]; direct sum [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]]. Compare the annihilator $U^0\subseteq V'$ ([[§12 Duality#^ladr-3-121|3.121]]): Riesz ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-58|6.58]]) identifies $U^\perp$ with $U^0$.
 > - Same definition for arbitrary subsets of a Hilbert space: [[§18 Projection and Orthogonal Decomposition#^def-18-1|556 Def. §18.1]]; the complement is always closed, [[§18 Projection and Orthogonal Decomposition#^prop-18-3|556 Prop. §18.3]].
+> - In ℝ³: the plane through $\mathbf r_0$ with normal $\mathbf n$ is $\mathbf r_0 + \operatorname{span}(\mathbf n)^\perp$, [[§84 Equations of Lines and Planes#^thm-84-5|Calc Thm. §84.5]] (with worked examples).
 
 > [!example] Example 6.47: Orthogonal complements (p. 211)
 > - In $\R^3$: $\{(2,3,5)\}^\perp$ is the plane $2x+3y+5z=0$, and the complement of that plane is the line $\{t(2,3,5)\}$.
@@ -131,6 +132,9 @@ tags: [linear-algebra]
 > which is [[§19 Inner Products and Norms#^ladr-6-13|6.13]]. Checks: $P_Uu=u$ and $P_Uv=0$ for $v\perp u$. For a unit vector $u$ this is $P_U=|u\rangle\langle u|$ in Dirac notation.
 
 ^ladr-6-56
+
+> [!remark]- Connections
+> - Computational version: [[§82 The Dot Product#^thm-82-6|Calc Thm. §82.6]] (with worked examples).
 
 > [!theorem] Theorem 6.57: Properties of orthogonal projection PU
 > For a finite-dimensional subspace $U$ of $V$:

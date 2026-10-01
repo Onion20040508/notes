@@ -142,6 +142,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - Riemann counterpart for non-negative integrands in MATH 452: [[§15 Multivariable Integration#^thm-15-12|Fubini–Tonelli: Non-negative Functions]] (452 §15.12).
 > - Proved below ([[§17 Invariance Properties and Fubini's Theorem#^pf-17-3|Proof of Tonelli's Theorem]]) through the closure properties of the [[§17 Invariance Properties and Fubini's Theorem#^def-17-2|Tonelli class]].
+> - Computational version for continuous functions on boxes: [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] and [[§103 Triple Integrals#^thm-103-1|Calc Thm. §103.1]] (with worked examples).
 
 ## The Tonelli Class and Its Closure Properties
 
@@ -168,6 +169,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - This is Tonelli applied to $\chi_E$: see [[§17 Invariance Properties and Fubini's Theorem#^thm-17-7|Cross-Section Theorem (Restated)]] (§17.7) and its proof.
 > - Its geometric content is Cavalieri's principle; compare the [[§17 Invariance Properties and Fubini's Theorem#^thm-17-13|Layer Cake Formula]] (§17.13).
+> - Computational version: volume by slicing, V = ∫ A(x) dx, [[§40 Volumes#^def-40-2|Calc Def. §40.2]] (with worked examples).
 
 > [!definition] Definition §17.2: The Tonelli Class $\mathcal{F}$
 > Define $\mathcal{F}$ to be the class of all non-negative measurable functions $f$ on $\mathbb{R}^n = \mathbb{R}^p \times \mathbb{R}^q$ satisfying conclusions (i), (ii), (iii) of [[Tonelli's Theorem|Tonelli's theorem]]. Tonelli's theorem states that $\mathcal{F}$ contains all non-negative measurable functions.
@@ -305,6 +307,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 > [!remark]- Connections
 > - MATH 452 Riemann version: [[Fubini's Theorem]] (452 §15.8), for continuous $f$ on a rectangle, extended to [[§15 Multivariable Integration#^thm-15-9|Type I regions]] (452 §15.9).
 > - Used for the volume of sheared rectangles in [[§18 Differentiation Theory#^thm-18-22|Linear Maps Preserve Null Sets]] (§18.22).
+> - Computational version for continuous functions on boxes: [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] and [[§103 Triple Integrals#^thm-103-1|Calc Thm. §103.1]] (with worked examples).
 
 > [!remark] Remark: Why Integrability is Essential
 > The hypothesis $f \in L(\mathbb{R}^n)$ (equivalently $\iint |f| < \infty$) cannot be dropped. Without it, the subtraction $\int f^+\,dy - \int f^-\,dy$ can be $\infty - \infty$, and the iterated integrals can depend on the order of integration. A classical counterexample ([[§15 Multivariable Integration#^ex-15-2|452 Ex. §15.2]]): on $[0,1]^2$, define $f(x,y) = \frac{x^2 - y^2}{(x^2 + y^2)^2}$. Then $\int_0^1\!\left(\int_0^1 f\,dy\right)dx = \pi/4$ but $\int_0^1\!\left(\int_0^1 f\,dx\right)dy = -\pi/4$.
@@ -479,6 +482,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 
 > [!remark]- Connections
 > - “Integral = area under the graph” is the MATH 451 picture of the Riemann integral via [[§32 The Definition of the Riemann Integral#^def-32-1|upper and lower sums]]; here it becomes a theorem about Lebesgue measure in $\mathbb{R}^{n+1}$.
+> - Computational version: volume under a graph as a double integral, [[§98 Double Integrals Over Rectangles#^thm-98-2|Calc Thm. §98.2]] (with worked examples).
 
 > [!theorem] Theorem §17.12: Converse: Measurable Subgraph Implies Measurable Function
 > Let $f$ be a non-negative real-valued function on $E$, $E \in \mathcal{M}(\mathbb{R}^n)$. If $\underline{G}(f)$ is measurable in $\mathbb{R}^{n+1}$, then $f$ is a measurable function on $E$.

@@ -45,6 +45,7 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 > [!remark]- Connections
 > - Contrast with MATH 451, where $|f|$ Riemann integrable does not follow from the definition but must be proved ([[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]]), and where conditionally convergent improper integrals exist ([[§36 Improper Integrals|451 §36]]); the Lebesgue integral is an *absolute* integral.
 > - $L(E)$ is the space $L^1(E)$ of [[§16 The L¹ Space and Density Theorems#^def-16-1|Def. §16.1]].
+> - Riemann-side counterpart: improper integrals, [[§51 Improper Integrals#^def-51-1|Calc Def. §51.1]], which may converge without ∫|f| < ∞.
 
 ## Properties of the General Integral
 
@@ -571,3 +572,4 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 > [!remark]- Connections
 > - The converse fails: the Dirichlet function ([[§8 Motivation꞉ The Riemann Integral#^ex-8-2|Ex. §8.2]], [[§32 The Definition of the Riemann Integral#^ex-32-3|451 Ex. §32.3]]) is not Riemann integrable but equals $0$ a.e., so its Lebesgue integral is $0$ ([[§15 The General Lebesgue Integral#^prop-15-1|§15.1]](ii)).
 > - Multivariable Riemann integral on rectangles: [[§15 Multivariable Integration#^def-15-10|452 Def. §15.10]]; its Jordan-content framework ([[§15 Multivariable Integration#^def-15-5|452 Def. §15.5]]) is superseded by Lebesgue measure.
+> - Stewart's definite integral (Riemann sums): [[§35 The Definite Integral#^def-35-1|Calc Def. §35.1]] (with worked examples).

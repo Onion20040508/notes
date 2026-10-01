@@ -220,6 +220,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > [!remark]- Connections
 > - For $n = 1$ this is ordinary [[§34 Fundamental Theorem of Calculus#^thm-34-3|Integration by Parts (451 §34.3)]].
 > - Revisited with surface integrals in $\mathbb{R}^3$: [[§18 Surface Integrals#^rem-18-9|Green's Identities Revisited]].
+> - Its case n = 1 is integration by parts on [a, b]: [[§44 Integration by Parts#^thm-44-2|Calc Thm. §44.2]] (with worked examples).
 
 > [!remark] Remark: Special Case: $u = v$
 > Setting $u = v$ in Green's first identity:

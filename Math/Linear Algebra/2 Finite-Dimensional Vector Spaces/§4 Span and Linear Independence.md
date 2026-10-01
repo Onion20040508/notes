@@ -107,6 +107,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Degree: [[§4 Span and Linear Independence#^ladr-2-11|Degree of a polynomial, deg p]]. Infinite-dimensional: [[§4 Span and Linear Independence#^ladr-2-13|Infinite-dimensional vector space]]. Chapter 4 theory: [[§13 Polynomials#^ladr-4-6|Each zero of a polynomial corresponds to a degree-one factor]], [[§13 Polynomials#^ladr-4-9|Division algorithm for polynomials]].
+> - Real polynomials in Stewart: [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-4|Calc Def. §2.4]] (with examples).
 
 > [!definition] Definition 2.11: Degree of a polynomial, deg p
 > A polynomial $p$ has *degree $m$* if $p(z)=a_0+a_1z+\dots+a_mz^m$ for all $z$ with $a_m\neq 0$. The zero polynomial has degree $-\infty$. Notation: $\deg p$. With the convention $-\infty<m$, $\Poly_m(\F)$ denotes the polynomials of degree at most $m$ (so $0\in\Poly_m(\F)$).
@@ -115,6 +116,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - $\Poly_m(\F)$ is spanned by $1,z,\dots,z^m$, a list that is linearly independent by [[§13 Polynomials#^ladr-4-8|Degree m implies at most m zeros]]; so $\dim\Poly_m(\F)=m+1$ ([[§6 Dimension#^ladr-2-35|Dimension, dim V]]).
+> - Real polynomials and their degree in Stewart: [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-4|Calc Def. §2.4]] (with examples).
 
 > [!remark] Notation 2.12: Pm(F) (p. 31)
 

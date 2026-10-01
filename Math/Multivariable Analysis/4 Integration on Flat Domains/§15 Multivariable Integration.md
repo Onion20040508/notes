@@ -335,6 +335,7 @@ Now we define the integral of a function over a Jordan measurable set, analogous
 > [!remark]- Connections
 > - 1D: the [[§32 The Definition of the Riemann Integral#^thm-32-4|Cauchy criterion]] (451 §32.4) and its mesh form in [[§32 The Definition of the Riemann Integral#^thm-32-6|Equivalence of the Two Integrals]] (451 §32.6).
 > - In one variable every Riemann integrable function is Lebesgue integrable with the same integral: [[§15 The General Lebesgue Integral#^thm-15-10|551 Thm. §15.10]].
+> - Stewart's double integral over a rectangle as a limit of Riemann sums: [[§98 Double Integrals Over Rectangles#^def-98-2|Calc Def. §98.2]] (with worked examples).
 
 > [!definition] Definition §15.11: The Integral
 > If $f$ is integrable over $D$, the **integral** of $f$ over $D$ is the common limit:
@@ -391,6 +392,7 @@ Now we define the integral of a function over a Jordan measurable set, analogous
 
 > [!remark]- Connections
 > - 1D: [[§32 The Definition of the Riemann Integral#^def-32-3|Riemann sums]] (451 §32.3) and their agreement with the Darboux integral, [[§32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]].
+> - Stewart's double integral over a rectangle as a limit of Riemann sums: [[§98 Double Integrals Over Rectangles#^def-98-2|Calc Def. §98.2]] (with worked examples).
 
 ## Properties of the Integral
 
@@ -433,6 +435,9 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 ^pf-15-2
 
 *Uses:* [[§15 Multivariable Integration#^def-15-8|Def. §15.8]], [[§15 Multivariable Integration#^def-15-10|Def. §15.10]], [[§15 Multivariable Integration#^rem-15-6|§15 Rem. (Evaluating the Integral)]]
+
+> [!remark]- Connections
+> - Computational version: [[§99 Double Integrals Over General Regions#^thm-99-3|Calc Thm. §99.3]] (linearity and comparison).
 
 > [!theorem] Theorem §15.3: Additivity in the Integrand
 > If $f$ and $g$ are integrable on $D$, then $f + g$ is integrable on $D$ and:
@@ -498,6 +503,7 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 
 > [!remark]- Connections
 > - Together with [[§15 Multivariable Integration#^thm-15-2|Theorem §15.2]], the 2D version of [[§33 Properties of the Riemann Integral#^thm-33-2|Linearity]] (451 §33.2).
+> - Computational version: [[§99 Double Integrals Over General Regions#^thm-99-3|Calc Thm. §99.3]] (linearity and comparison).
 
 > [!theorem] Theorem §15.4: Additivity over Domains
 > Let $A$ and $B$ be Jordan measurable, almost disjoint sets. If $f$ is integrable on $A$, $B$, and $A \cup B$, then:
@@ -534,6 +540,7 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 > [!remark]- Connections
 > - 1D version: [[§33 Properties of the Riemann Integral#^thm-33-5|Additivity over Subintervals]] (451 §33.5), where the “almost disjoint” pieces $[a,c]$ and $[c,b]$ share only the point $c$.
 > - Lebesgue version for countably many disjoint measurable pieces: [[§15 The General Lebesgue Integral#^thm-15-4|551 Thm. §15.4]].
+> - Computational version: [[§99 Double Integrals Over General Regions#^thm-99-4|Calc Thm. §99.4]].
 
 > [!remark] Remark: On the Intersection and Integrability
 > A subtle point in the proof: when we combine $\mathcal{T}_A \cup \mathcal{T}_B$, pieces from $\mathcal{T}_A$ and $\mathcal{T}_B$ may overlap on $A \cap B$ (which lies in the boundaries since $A$ and $B$ are almost disjoint).
@@ -586,6 +593,7 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 
 > [!remark]- Connections
 > - 1D version: [[§33 Properties of the Riemann Integral#^thm-33-3|Monotonicity of the Integral]] (451 §33.3).
+> - Computational version: [[§99 Double Integrals Over General Regions#^thm-99-3|Calc Thm. §99.3]] (linearity and comparison).
 
 > [!theorem] Corollary §15.6: Absolute Value Inequality
 > If $f$ is integrable on $D$, then $|f|$ is integrable and:
@@ -744,6 +752,7 @@ $$
 > [!remark]- Connections
 > - Special case of the general [[§15 Multivariable Integration#^thm-15-14|Change of Variables Formula]] (§15.14, §15.17), revisited in [[§15 Multivariable Integration#^ex-15-4|Ex. §15.4]].
 > - In forms language the factor $r$ is the pullback $dx \wedge dy = r\,dr \wedge d\theta$: [[§22 The Algebra of Differential Forms#^ex-22-4|Ex. §22.4]].
+> - Computational version: [[§100 Double Integrals in Polar Coordinates#^thm-100-1|Calc Thm. §100.1]] (with worked examples); with f ≡ 1 it gives the area of a polar region, [[§66 Calculus in Polar Coordinates#^thm-66-2|Calc Thm. §66.2]].
 
 > [!remark] Remark: The Jacobian
 > The factor $r$ appearing in the integrand is the **Jacobian** ([[§13 The Inverse Function Theorem#^def-13-1|Def. §13.1]]) of the polar coordinate transformation:
@@ -864,6 +873,8 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 > - Makes rigorous the simple-case computation (“Iterated Integrals: The Simple Case”) above; extended to curved regions in [[§15 Multivariable Integration#^thm-15-9|Theorem §15.9]].
 > - Its Type I/II form plus the [[Fundamental Theorem of Calculus]] in the inner variable proves [[Green's Theorem|Green's Theorem]] (§16.1), and one dimension up the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] (§17.1).
 > - Lebesgue version, for every integrable $f$ on $\mathbb{R}^p \times \mathbb{R}^q$ with no continuity assumption: [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]].
+> - Used in Relativity: the total-derivative terms in the variation of a field action are integrated first over their own variable — [[§B4.1 The Klein–Gordon Equation#^thm-b4-1-2|REL Theorem §B4.1.2]].
+> - Computational version: [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] (with worked examples).
 
 > [!remark] Remark: Why Continuity Matters
 > The key point is that $F(x) = \int_c^d f(x, y) \, dy$ must be well-defined and integrable. Continuity of $f$ guarantees this.
@@ -896,6 +907,9 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 
 ![[m452-15-6.svg]]
 *Type I: $D$ lies between two graphs over $[a, b]$, so every vertical line meets it in one segment $g_1(x) \leq y \leq g_2(x)$ (red). Type II is the same with the axes swapped: every horizontal line meets it in one segment $h_1(y) \leq x \leq h_2(y)$. These segments are the domains of the inner integrals in Fubini's theorem.*
+
+> [!remark]- Connections
+> - Same regions in Stewart: [[§99 Double Integrals Over General Regions#^def-99-2|Calc Def. §99.2]] and [[§99 Double Integrals Over General Regions#^def-99-3|Calc Def. §99.3]], with iterated integrals over them in [[§99 Double Integrals Over General Regions#^thm-99-1|Calc Thm. §99.1]] and [[§99 Double Integrals Over General Regions#^thm-99-2|Calc Thm. §99.2]].
 
 > [!theorem] Theorem §15.9: Fubini for Type I Regions
 > If $D = \{(x, y) : a \leq x \leq b, \; g_1(x) \leq y \leq g_2(x)\}$ and $f$ is continuous on $D$, then:
@@ -1116,6 +1130,9 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 ![[m452-15-8.svg]]
 *Steps 3–5 of the proof. On a grid of side $1/2^k$, each column is stretched to whole squares: from $\psi_k$ (the grid line just below $\inf \psi$ on the column) up to $\varphi_k$ (the grid line just above $\sup \varphi$), and from $a_k$ to $b_k$ horizontally. The resulting staircase $D_k$ (red outline) contains $D$ (blue). Fubini holds exactly on $D_k$, since each column is a rectangle. The error region $D_k \setminus D$ (red) is a thin skin along $\partial D$. By uniform continuity of $\varphi$ and $\psi$, its height in each column is $< 2\varepsilon$, so its total area is $O(\varepsilon)$.*
 
+> [!remark]- Connections
+> - Computational version: [[§99 Double Integrals Over General Regions#^thm-99-1|Calc Thm. §99.1]] (with worked examples); with f ≡ 1 it is the area between curves, [[§39 Areas Between Curves#^thm-39-1|Calc Thm. §39.1]].
+
 > [!theorem] Theorem §15.10: Fubini for Type II Regions
 > If $D = \{(x, y) : c \leq y \leq d, \; h_1(y) \leq x \leq h_2(y)\}$ and $f$ is continuous on $D$, then:
 >
@@ -1131,6 +1148,9 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 ^pf-15-10
 
 *Uses:* [[§15 Multivariable Integration#^thm-15-9|§15.9]], [[§19 Uniform Continuity#^thm-19-1|451 §19.1]]
+
+> [!remark]- Connections
+> - Computational version: [[§99 Double Integrals Over General Regions#^thm-99-2|Calc Thm. §99.2]] (with worked examples).
 
 ### Changing the Order of Integration
 
@@ -1328,6 +1348,7 @@ The factor $|J|$ exactly cancels the area distortion, ensuring both sides comput
 
 > [!remark]- Connections
 > - Both halves of the [[Fundamental Theorem of Calculus]] (451 §34) combined with the 1D chain rule; this lemma is the base case of every proof of [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14]] below.
+> - Computational version: the substitution rule for definite integrals, [[§38 The Substitution Rule#^thm-38-3|Calc Thm. §38.3]], and the inverse substitution x = g(t), [[§46 Trigonometric Substitution#^thm-46-1|Calc Thm. §46.1]] (with worked examples).
 
 ### Main Theorem (Rectangular Domain)
 
@@ -1944,6 +1965,7 @@ We present three different proofs, each offering a distinct perspective:
 > - The linear case (Part I of the first proof) is [[§34 Determinants#^ladr-9-61|LADR 9.61]]: $T$ changes volume by the factor $|\det T|$; the $C^1$ case is this applied to the derivative cell by cell.
 > - Generalizes the 1D substitution rule ([[§15 Multivariable Integration#^lem-15-13|Lemma §15.13]]) and the [[§15 Multivariable Integration#^thm-15-7|polar formula]]; extended to Jordan measurable domains in [[Change of Variables Formula (multiple integrals)|Theorem §15.17]] and to $\mathbb{R}^n$ in [[§15 Multivariable Integration#^thm-15-20|Theorem §15.20]].
 > - In forms language the integrand $f\,|J|\,du\,dv$ is the pullback $\Phi^*(f\,dx \wedge dy)$ (up to orientation): [[§22 The Algebra of Differential Forms#^ex-22-4|Ex. §22.4]].
+> - Computational version: [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Calc Thm. §106.1]] (with worked examples).
 
 > [!remark] Remark: $|J|$ vs. $J$: Orientation and Area
 > The change of variables formula uses $|J|$, not $J$. This distinction matters:
@@ -2099,6 +2121,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 > [!remark]- Connections
 > - The $n$-dimensional version is [[§15 Multivariable Integration#^thm-15-20|Theorem §15.20]]; in forms language it becomes $\int_{\Phi(D^*)} \omega = \int_{D^*} \Phi^*\omega$ for orientation-preserving $\Phi$ ([[§22 The Algebra of Differential Forms#^def-22-3|pullback, Def. §22.3]]).
 > - Used to parametrize surfaces and compute surface area: [[Surface Area via the Gram Matrix|Theorem §18.1]].
+> - Computational version: [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Calc Thm. §106.1]] (with worked examples).
 
 > [!theorem] Proposition §15.18: Isolated Zeros of the Jacobian
 > The change of variables formula remains valid if $J = 0$ at finitely many isolated points $p_1, \ldots, p_n \in D^*$, provided $J$ does not change sign on $D^*$.
@@ -2141,6 +2164,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 > - This is [[§34 Determinants#^ladr-9-61|LADR 9.61]] ($T$ changes volume by factor of $|\det T|$), proved there via polar decomposition and singular values ([[§34 Determinants#^ladr-9-60|LADR 9.60]]); the matrix and operator determinants agree by [[§34 Determinants#^ladr-9-53|LADR 9.53]].
 > - For $n = 2$ this is Part I of the first proof of [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14]].
 > - For Lebesgue measure the identity $m(T(R)) = |\det T|\, m(R)$ on rectangles is proved by elementary row operations inside [[§18 Differentiation Theory#^thm-18-22|551 Thm. §18.22]] (linear maps preserve null sets).
+> - The case n = 3 with worked examples: [[§83 The Cross Product#^thm-83-10|Calc Thm. §83.10]] (volume of a parallelepiped as a determinant).
 
 This proposition explains why the Jacobian determinant appears in the change of variables formula: locally, the transformation $\Phi$ is approximated by its linearization $J_\Phi$ ([[§6 Differentiability#^def-6-2|Def. §6.2]]), and $|\det(J_\Phi)| = |J|$ measures the local volume distortion.
 
@@ -2165,6 +2189,7 @@ The proof follows the same structure as the 2D case ([[§15 Multivariable Integr
 > - Linear-algebra core: [[§34 Determinants#^ladr-9-61|LADR 9.61]] for the local volume factor and [[§34 Determinants#^ladr-9-49|LADR 9.49]] (det is multiplicative) for composing primitive transformations.
 > - In $\mathbb{R}^3$: the spherical volume element used in [[§19 The Laplacian in Spherical Coordinates|§19]]; for general dimension it underlies the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] and, as pullback of $n$-forms, the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]].
 > - The smooth version of the diffeomorphisms allowed here is [[§8 Differentiable Structures#^def-8-3|591 Def. §8.3]], where diffeomorphisms of open subsets of ℝⁿ are the transition maps between charts.
+> - Computational version: [[§106 Change of Variables in Multiple Integrals#^thm-106-2|Calc Thm. §106.2]] (n = 3, with worked examples), with cylindrical and spherical coordinates in [[§104 Triple Integrals in Cylindrical Coordinates#^thm-104-1|Calc Thm. §104.1]] and [[§105 Triple Integrals in Spherical Coordinates#^thm-105-2|Calc Thm. §105.2]].
 
 ### Common Coordinate Systems and Worked Examples
 
@@ -2185,6 +2210,7 @@ The proof follows the same structure as the 2D case ([[§15 Multivariable Integr
 
 > [!remark]- Connections
 > - Same Jacobian as [[§13 The Inverse Function Theorem#^ex-13-4|Ex. §13.4]]; derived from scratch by polar rectangles in [[§15 Multivariable Integration#^thm-15-7|Theorem §15.7]].
+> - Worked examples: [[§100 Double Integrals in Polar Coordinates#^thm-100-1|Calc Thm. §100.1]], and the Jacobian computation in [[§106 Change of Variables in Multiple Integrals#^ex-106-2|Calc Ex. §106.2]].
 
 > [!example] Example §15.5: Elliptical Coordinates
 > For an ellipse with semi-axes $a$ and $b$: $x = ar\cos\theta$, $y = br\sin\theta$.
@@ -2214,6 +2240,7 @@ The proof follows the same structure as the 2D case ([[§15 Multivariable Integr
 
 > [!remark]- Connections
 > - The same coordinates parametrize the sphere in [[§18 Surface Integrals#^ex-18-1|Ex. §18.1]] and give the Laplacian in [[§19 The Laplacian in Spherical Coordinates#^thm-19-1|Theorem §19.1]].
+> - Worked examples: [[§106 Change of Variables in Multiple Integrals#^ex-106-5|Calc Ex. §106.5]] (same Jacobian), used in [[§105 Triple Integrals in Spherical Coordinates#^thm-105-2|Calc Thm. §105.2]].
 
 We now demonstrate the change of variables formula with two complete computations.
 
@@ -2274,6 +2301,7 @@ We now demonstrate the change of variables formula with two complete computation
 
 > [!remark]- Connections
 > - Pays off the debt taken “on credit” in MATH 451: [[§36 Improper Integrals#^ex-36-4|The normal distribution]] (451 Ex. §36.4).
+> - Worked examples: [[§56 Probability#^prop-56-3|Calc Prop. §56.3]] uses this integral to show the normal density integrates to 1.
 
 > [!example] Example §15.8: Area of an Ellipse
 > **Goal:** Compute the area of the ellipse $D = \left\{ (x,y) : \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} \leq 1 \right\}$.

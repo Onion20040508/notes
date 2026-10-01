@@ -20,6 +20,7 @@ tags: [linear-algebra]
 > - They form [[§12 Duality#^ladr-3-110|Dual space, V′]]. On inner product spaces every functional is $v\mapsto\ip{v}{w}$: [[Riesz representation theorem]].
 > - Physics: bras $\langle\psi|$ are linear functionals on kets.
 > - 556 starts from the same definition ([[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5|556 Def. §2.5]]); in infinite dimensions functionals need not be continuous, so it singles out the bounded ones ([[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^def-19-1|556 Def. §19.1]]) and produces them with Hahn–Banach ([[§3 Statement and Motivation#^thm-3-2|556 Thm. §3.2]]).
+> - Used in Relativity: covariant components $a_\mu$ are the components of a linear functional, and the metric lowers indices — [[§B1.1 The Metric and Index Notation#^rem-b1-1-1|REL Remark: Why two index positions]]; covectors and tensors of type (m, n) — [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 
 > [!example] Example 3.109: Linear functionals (p. 105)
 > Linear functionals:
@@ -316,6 +317,7 @@ tags: [linear-algebra]
 > - Explains [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]](c) as $(AB)^t=B^tA^t$. Used in [[§12 Duality#^ladr-3-133|Column rank equals row rank (LADR 3.133)]].
 > - With respect to orthonormal bases the adjoint has the conjugate transpose: [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|Matrix of T (LADR 7.9)]].
 > - This is why covector components change by the transpose of the inverse Jacobian: [[§17 The Tangent Bundle#^prop-17-5|591 Prop. §17.5]].
+> - Used in Relativity: because the dual map has the transposed matrix, lower indices transform with the inverse transpose $\Lambda_\mu{}^\nu$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 
 > [!theorem] Theorem 3.133: Column rank equals row rank
 > For every $A\in\F^{m,n}$, the column rank of $A$ equals the row rank of $A$.

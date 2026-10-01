@@ -252,6 +252,9 @@ It is not obvious from [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-
 
 *Uses:* [[§5 Topological Groups and Classical Matrix Groups#^thm-5-8|§5.8]], [[§10 Vector Spaces and Matrix Groups#^prop-10-9|§10.9]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-1|Def. §11.1]], [[§5 Topological Groups and Classical Matrix Groups#^cor-5-13|§5.13]], [[§9 Manifolds in Euclidean Space#^prop-9-2|§9.2]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|§5.9]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|§11.3]], [[§10 Vector Spaces and Matrix Groups#^ex-10-1|Ex. §10.1]], [[§10 Vector Spaces and Matrix Groups#^cor-10-13|§10.13]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^ex-11-2|Ex. §11.2]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^lem-11-1|§11.1]], [[§10 Vector Spaces and Matrix Groups#^prop-10-15|§10.15]], [[§10 Vector Spaces and Matrix Groups#^ex-10-2|Ex. §10.2]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^ex-11-3|Ex. §11.3]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]]
 
+> [!remark]- Connections
+> - Used in Relativity: the Lorentz analogue: infinitesimal Lorentz transformations are the matrices antisymmetric with respect to $\eta$, six generators for three rotations and three boosts — [[§B1.2 Lorentz Transformations and the Lorentz Group#^rem-b1-2-6|REL Remark: Infinitesimal Lorentz transformations]].
+
 > [!definition] Definition §11.2: Adjoint Action
 > Let $G$ be one of $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{SO}(n)$, $\mathrm{U}(n)$, and $\mathfrak{g} = T^{\mathrm{geo}}_I G$. For $g \in G$, **conjugation** by $g$ is $\mathrm{Ad}_g(X) = gXg^{-1}$. The **adjoint action** of $G$ on $\mathfrak{g}$ is $g \mapsto \mathrm{Ad}_g|_{\mathfrak{g}}$; that each $\mathrm{Ad}_g$ maps $\mathfrak{g}$ onto itself is part of [[§11 Tangent Spaces I꞉ The Geometric Picture#^prop-11-6|the next proposition]].
 

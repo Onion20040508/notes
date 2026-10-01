@@ -233,6 +233,9 @@ That is, the pullback of a coordinate $k$-form extracts the $k \times k$ minor o
 
 ^rem-22-3
 
+> [!remark]- Connections
+> - The cross product in components and as a determinant: [[§83 The Cross Product#^def-83-1|Calc Def. §83.1]], [[§83 The Cross Product#^prop-83-1|Calc Prop. §83.1]].
+
 ## The Exterior Derivative
 
 The exterior derivative $d$ takes a $k$-form to a $(k+1)$-form. It is defined by a simple recipe and turns out to unify the gradient, curl, and divergence.
@@ -448,6 +451,8 @@ Curl and divergence are **not** at the same level: curl goes from degree 1 to de
 
 > [!remark]- Connections
 > - Why it works: the second derivative is a symmetric bilinear form and $d$ keeps only the alternating part ([[§22 The Algebra of Differential Forms#^prop-22-9|Proposition §22.9]]; linear algebra: [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]).
+> - Used in Relativity: $d^2 = 0$ makes a gauge transformation leave the coupling of a charge and the field tensor unchanged — [[§B3.2 The Charged Particle#^thm-b3-2-3|REL Theorem §B3.2.3]]; and makes the homogeneous Maxwell pair an identity for any field tensor built from a potential — [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]].
+> - Vector-field form: $\operatorname{curl}\nabla f = \mathbf 0$, [[§111 Curl and Divergence#^thm-111-1|Calc Thm. §111.1]], and $\operatorname{div}\operatorname{curl}\mathbf F = 0$, [[§111 Curl and Divergence#^thm-111-3|Calc Thm. §111.3]].
 
 > [!remark] Remark: Classical Consequences of $d^2 = 0$
 > The identity $d^2 = 0$ applied at consecutive rungs of the ladder gives:
@@ -723,6 +728,9 @@ At each level, $d$ measures the **obstruction to solving an equation**:
 
 *Uses:* [[§22 The Algebra of Differential Forms#^def-22-8|Def. §22.8]], [[Exterior Derivative Squares to Zero|§22.5]]
 
+> [!remark]- Connections
+> - Vector-field form: a conservative field satisfies $P_y = Q_x$, [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Calc Thm. §109.4]], and $\operatorname{curl}\nabla f = \mathbf 0$, [[§111 Curl and Divergence#^thm-111-1|Calc Thm. §111.1]] (with worked examples).
+
 The forms terminology and the vector calculus terminology from [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1|§11]] describe the same concepts:
 
 | **Forms (§22)** | **Vector calculus (§11)** | **Condition** |
@@ -789,6 +797,8 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 > [!remark]- Connections
 > - A star-shaped domain contracts to $\mathbf{p}_0$ along the segments — a [[§22 Homotopy of Paths#^thm-22-1|straight-line homotopy (590 §22.1)]] — so it is [[§23 The Fundamental Group#^def-23-3|simply connected (590 Def. §23.3)]]; the homotopy operator in the proof integrates along exactly these segments.
 > - Used in Electromagnetism: on a star-shaped region a curl-free field is a gradient and a divergence-free field is a curl, which gives the scalar and vector potentials — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-3|EM Theorem §B1.2.3]], with the hole case in [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^cau-b1-2-1|EM Caution: Curl-free is not enough on a region with a hole]].
+> - Used in Relativity: on a region without holes every field tensor obeying the homogeneous Maxwell pair comes from a four-potential — [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]], [[§B4.2 The Electromagnetic Field Tensor#^rem-b4-2-4|REL Remark: Layers, and what comes later]].
+> - Vector-field form: curl-free fields on ℝ³ are conservative, [[§114 Stokes' Theorem#^thm-114-4|Calc Thm. §114.4]], and the plane test on simply-connected regions, [[§110 Green's Theorem#^thm-110-5|Calc Thm. §110.5]] (with worked examples).
 
 The proof (constructing $\eta$ explicitly via a homotopy operator) is beyond the scope of this course; see Lee, Chapter 17. The key point is that the failure of exactness is a *topological* property of the domain — it detects holes.
 

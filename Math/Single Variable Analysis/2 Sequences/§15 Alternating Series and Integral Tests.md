@@ -17,6 +17,9 @@ tags: [real-analysis, math451]
 
 ^thm-15-1
 
+> [!remark]- Connections
+> - Computational version: [[§73 Alternating Series and Absolute Convergence#^thm-73-1|Calc Thm. §73.1]] (with worked examples).
+
 > [!remark] Remark
 > Note first that the hypotheses force $a_n \geq 0$ for all $n$: a decreasing sequence dominates its limit ($a_n \geq \lim_m a_m = 0$; if some $a_n < 0$, all later terms would be $\leq a_n < 0$, contradicting $a_n \to 0$). Note also that the condition $a_n \to 0$ is necessary — why? — because the terms $(-1)^n a_n$ of any convergent series must tend to $0$ (§14).
 
@@ -164,6 +167,9 @@ tags: [real-analysis, math451]
 ![[m451-15-1.svg]]
 *The integral test for a decreasing $f$ (drawn: $f(x) = \tfrac1x$, up to $n = 6$): on each $[k, k+1]$ the red box of height $f(k)$ lies above the curve and the blue box of height $f(k+1)$ below it. Summing gives $\sum_{k=1}^{n-1} f(k) \geq \int_1^n f \geq \sum_{k=2}^{n} f(k)$, so partial sums and partial integrals are bounded together. The figure is the proof.*
 
+> [!remark]- Connections
+> - Computational version: [[§71 The Integral Test and Estimates of Sums#^thm-71-1|Calc Thm. §71.1]] (with worked examples).
+
 > [!example] Example §15.3: The p-series settled
 > Let $f(x) = \tfrac{1}{x^p}$, $p > 0$ — decreasing and nonnegative on $[1,\infty)$. From calculus,
 >
@@ -184,6 +190,9 @@ tags: [real-analysis, math451]
 > completing the claim of §14 (and re-proving the divergence of the harmonic series systematically).
 
 ^ex-15-3
+
+> [!remark]- Connections
+> - Computational version: [[§71 The Integral Test and Estimates of Sums#^thm-71-2|Calc Thm. §71.2]].
 
 > [!remark] Remark
 > Like the logarithm in §9, the integral $\int_1^\infty f(x)\,dx$ is borrowed from the future: integration will be defined rigorously only in Part III. The comparison inequality $f(k) \geq \int_k^{k+1} f \geq f(k+1)$ and the computation of $\int \tfrac{dx}{x^p}$ are familiar from calculus and will be fully justified then; the logic of the test itself — monotone partial sums, bounded iff convergent — is already rigorous.

@@ -98,6 +98,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 > [!remark]- Connections
 > - MATH 451 version: [[§28 Basic Properties of the Derivative#^def-28-1|The Derivative]]; for a mapping $(x, y) \mapsto (\varphi, \psi)$ the derivative becomes the [[§13 The Inverse Function Theorem#^def-13-1|Jacobian matrix]] of §13, and in §22 it is the 1-form $df$ ([[§22 The Algebra of Differential Forms#^prop-22-6|§22.6]]).
+> - Computational version: [[§93 Tangent Planes and Linear Approximations#^def-93-3|Calc Def. §93.3]] (increment form, with worked examples).
 
 > [!definition] Definition §6.2: The Total Derivative and the Jacobian Matrix
 > Let $f: \mathbb{R}^2 \to \mathbb{R}$ be differentiable at $(x_0, y_0)$. The **(total) derivative** of $f$ at $(x_0, y_0)$ is not a number — it is the [[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]]
@@ -118,6 +119,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > - A linear map $\mathbb{R}^2 \to \mathbb{R}$ is a [[§12 Duality#^ladr-3-108|linear functional]] (LADR 3.108), so $Df$ lives in the dual space; this is the viewpoint of the 1-form $df$ in [[§22 The Algebra of Differential Forms#^prop-22-6|Gradient = Differential = 1-Form]].
 > - Jacobians of compositions multiply: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Chain Rule for Jacobians]], i.e. [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps]] (LADR 3.43).
 > - In 591 the total derivative becomes the coordinate-free differential of a map between vector spaces, [[§10 Vector Spaces and Matrix Groups#^def-10-9|591 Def. §10.9]], and the Jacobian is the matrix of the differential of a smooth map between manifolds in coordinate bases, [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|591 Thm. §12.22]].
+> - Computational version: the linearization $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$, [[§93 Tangent Planes and Linear Approximations#^def-93-2|Calc Def. §93.2]] (with worked examples).
 
 > [!definition] Definition §6.3: Tangent Plane
 > Let $f$ be differentiable at $(x_0, y_0)$. The **tangent plane** to the graph of $f$ at $(x_0, y_0, f(x_0, y_0))$ is the plane
@@ -175,6 +177,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > [!remark]- Connections
 > - Restated with the gradient in §7: [[Directional Derivative Formula|Directional Derivative Formula]].
 > - The coordinate-free form for smooth maps between vector spaces, $dF_p(v) = \frac{d}{dt}\big|_{t=0} F(p + tv)$: [[§10 Vector Spaces and Matrix Groups#^thm-10-10|591 Thm. §10.10]].
+> - Computational version: [[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|Calc Thm. §95.1]] and [[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|Calc Cor. §95.2]] (with worked examples).
 
 > [!remark] Remark: Warning: The Converse Is False
 > All directional derivatives can exist without $f$ being differentiable — they might not “fit together” into a single linear map. A witness is $f(x,y) = \frac{x^2y}{x^4+y^2}$ for $(x,y) \neq (0,0)$, $f(0,0) = 0$. For a unit vector $\mathbf{u} = (a,b)$ with $b \neq 0$,
@@ -210,6 +213,9 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > But with $h = k$: $f(h, h) = 1 \neq o(\sqrt{2}|h|)$. So $f$ is **not differentiable** at $(0, 0)$.
 
 ^ex-6-1
+
+> [!remark]- Connections
+> - Same example (xy/(x² + y²)) in Stewart: [[§93 Tangent Planes and Linear Approximations#^rem-93-1|Calc §93 remark]].
 
 > [!theorem] Theorem §6.2: Continuous Partials Imply Differentiability
 > Let $R$ be an open set. If $f_x$ and $f_y$ exist and are continuous on $R$, then $f$ is differentiable at every point of $R$.
@@ -301,6 +307,9 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 ![[m452-6-2.svg]]
 *The same L-shaped path as in [[§4 Partial Derivatives#^thm-4-1|§4.1]]: the two MVTs trade the increments of $f$ along the legs $h$ and $k$ (blue) for $h \cdot f_x(x_0+\alpha(h)h,\,y_0)$ and $k \cdot f_y(x_0+h,\,y_0+\theta(h,k)k)$, evaluated at the red points. Now the point is where those red points go: as $(h,k) \to (0,0)$ the path shrinks (faded copy) and drags them to $(x_0,y_0)$, so continuity of $f_x$ and $f_y$ makes both brackets in $E(h,k)/\rho$ tend to $0$.*
+
+> [!remark]- Connections
+> - Computational version: [[§93 Tangent Planes and Linear Approximations#^thm-93-2|Calc Thm. §93.2]] (with worked examples).
 
 ## Algebra of Partial Derivatives
 
@@ -573,6 +582,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > [!remark]- Connections
 > - MATH 451 version: [[§28 Basic Properties of the Derivative#^thm-28-3|Chain Rule]]; the continuity analogue is [[§3 Continuity and Limits of Functions#^thm-3-4|§3.4]].
 > - General form in §10: [[Multivariable Chain Rule|Multivariable Chain Rule]] and its [[§10 Composition of Functions and the Chain Rule#^rem-10-2|matrix form]] (Jacobians multiply, [[§9 Matrices#^ladr-3-43|LADR 3.43]]).
+> - Computational version: [[§94 The Chain Rule#^thm-94-2|Calc Thm. §94.2]] (same two-intermediate-variable case) and [[§94 The Chain Rule#^thm-94-3|Calc Thm. §94.3]] (with worked examples).
 
 > [!remark] Remark: Summary: Algebra of Differentiable Functions
 > If $f$ and $g$ are differentiable at $(x_0, y_0)$:

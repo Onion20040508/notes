@@ -355,6 +355,9 @@ The idea: if the repeating block has length $p$, multiply by $10^p$ and subtract
 
 *Uses:* [[§13 Number Systems#^lem-13-6|§13.6]], [[§13 Number Systems#^prop-13-5|§13.5]], [[§13 Number Systems#^def-13-6|Def. §13.6]]
 
+> [!remark]- Connections
+> - Stewart states both directions: [[§116 Numbers, Inequalities, and Absolute Values#^prop-116-1|Calc Prop. §116.1]].
+
 > [!example] Example §13.6: 12.79317317… as a Fraction
 > Let $x = 12.79\dot31\dot7 = 12.79317317317\ldots$ The block $317$ has length $3$, so multiply by $10^3$: $1000x = 12793.17\dot31\dot7$. Splitting off the finite parts (Lemma [[§13 Number Systems#^lem-13-6|§13.6]]),
 >

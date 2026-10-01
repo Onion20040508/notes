@@ -27,6 +27,9 @@ So far, mainly three ways to determine whether a sequence converges: (1) guess t
 
 ^thm-10-1
 
+> [!remark]- Connections
+> - Computational version: [[§69 Sequences#^thm-69-9|Calc Thm. §69.9]] (with worked examples).
+
 > [!remark] Remark
 > Both assumptions are needed. Is there a bounded sequence that is not convergent? Yes: $s_n = (-1)^n$ — the monotone condition is missing. And $s_n = n$ is monotone but unbounded.
 

@@ -24,3 +24,4 @@ tags: [real-analysis, hub]
 
 ## Connections
 - The standard way to get a limit without computing it, e.g. in the [[Extreme Value Theorem]] proof and the workhorse [[sin(1∕x) family]] (null times bounded).
+- **Also in [[Calculus]]:** [[§69 Sequences#^thm-69-4|Calc Thm. §69.4]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-7|Calc Thm. §8.7]] (computational treatment with worked examples).

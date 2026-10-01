@@ -39,6 +39,7 @@ tags: [linear-algebra]
 > - Physics: the superposition principle is the statement that states can be added and scaled, i.e. that they live in a vector space.
 > - Forgetting scalar multiplication, (V, +) is an abelian group: [[§1 The Definition of a Group#^def-1-2|493 Def. §1.2]].
 > - Same definition in 556, as a linear space: [[§1 Linear Spaces#^def-1-1|556 Def. §1.1]].
+> - The axioms checked for ℝⁿ in Stewart: [[§81 Vectors#^thm-81-5|Calc Thm. §81.5]].
 
 > [!definition] Definition 1.21: Vector, point
 > Elements of a vector space are called *vectors* or *points*. When the field matters we say $V$ is a vector space *over* $\F$.

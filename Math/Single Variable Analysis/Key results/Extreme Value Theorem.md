@@ -43,3 +43,4 @@ tags: [real-analysis, hub]
 - Abstract form: the continuous image of a compact set is compact. The same fact gives extrema of continuous functions on compact manifolds.
 - Both hypotheses matter: see the workhorse [[Reciprocal function 1∕x]] on $(0,1]$.
 - The abstract form is proved in 590: [[Continuous Image of a Compact Space is Compact|590 Thm. §15.3]], with compact subsets of ℝⁿ identified by [[Heine–Borel Theorem|590 Thm. §15.12]].
+- **Also in [[Calculus]]:** [[§25 Maximum and Minimum Values#^thm-25-1|Calc Thm. §25.1]] (computational treatment with worked examples); two-variable version [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]].
