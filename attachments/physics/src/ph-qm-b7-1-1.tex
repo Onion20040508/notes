@@ -1,0 +1,15 @@
+% Figure for Quantum Mechanics §B7.1 (Example §B7.1.2, after Griffiths Problem 5.7: distribution of the separation of two particles in oscillator states n = 0 and n = 1, computed: P_d = (1+r^2)e^{-r^2/2}/(2 sqrt(2 pi)), P_+ = e^{-r^2/2}/sqrt(2 pi), P_- = r^2 e^{-r^2/2}/sqrt(2 pi)).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9.0cm, height=5.0cm, xmin=-4.6, xmax=4.6, ymin=0, ymax=0.47,
+      axis x line=bottom, axis y line=left,
+      xlabel={$(x_1 - x_2)\big/\sqrt{\hbar/m\omega}$}, ylabel={$P$},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={-4,-2,0,2,4}, ytick={0.1,0.2,0.3,0.4}, samples=241, clip=false]
+    \addplot[black!50, dashed, domain=-4.5:4.5] {(1+x^2)*exp(-x^2/2)/(2*sqrt(2*pi))};
+    \addplot[figB, domain=-4.5:4.5] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot[figR, domain=-4.5:4.5] {x^2*exp(-x^2/2)/sqrt(2*pi)};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:0.45,0.405) {bosons};
+    \node[font=\scriptsize, figR, anchor=west] at (axis cs:1.75,0.33) {fermions};
+    \draw[black!50, dashed, thick] (axis cs:2.3,0.43) -- (axis cs:2.9,0.43) node[right, font=\scriptsize, black!60] {distinguishable};
+  \end{axis}
+\end{tikzpicture}
