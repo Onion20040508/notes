@@ -1,0 +1,29 @@
+% Figure for Logic and Proofs §14.
+\begin{tikzpicture}[x=1.05cm, y=1.05cm,
+    num/.style={circle, fill=white, draw=figB, thin, inner sep=0.8pt, minimum size=13pt, font=\scriptsize},
+    ar/.style={figR, -{Stealth[length=4pt]}, thin, shorten >=0.5pt, shorten <=0.5pt}]
+  % axes
+  \draw[-{Stealth[length=4pt]}, black!60] (0.4,0.4) -- (6.0,0.4) node[below left, font=\small, black] {$m$};
+  \draw[-{Stealth[length=4pt]}, black!60] (0.4,0.4) -- (0.4,6.0) node[below left, font=\small, black] {$n$};
+  \foreach \k in {1,...,5} {
+    \node[font=\scriptsize, black!70] at (\k,0.15) {$\k$};
+    \node[font=\scriptsize, black!70] at (0.15,\k) {$\k$};
+  }
+  % numbered points phi(m,n) = (m+n-2)(m+n-1)/2 + n on the first five diagonals; faint dots beyond
+  \foreach \m in {1,...,5} \foreach \n in {1,...,5} {
+    \pgfmathtruncatemacro{\s}{\m+\n-1}
+    \ifnum\s<6
+      \pgfmathtruncatemacro{\v}{(\m+\n-2)*(\m+\n-1)/2+\n}
+      \node[num] (v\v) at (\m,\n) {$\v$};
+    \else
+      \fill[black!25] (\m,\n) circle (1.4pt);
+    \fi
+  }
+  % within a diagonal: (m,n) -> (m-1,n+1)
+  \foreach \a/\b in {2/3, 4/5, 5/6, 7/8, 8/9, 9/10, 11/12, 12/13, 13/14, 14/15}
+    \draw[ar] (v\a) -- (v\b);
+  % from the top of one diagonal to the bottom of the next: (1,s) -> (s+1,1)
+  \foreach \a/\b in {1/2, 3/4, 6/7, 10/11}
+    \draw[ar, densely dotted] (v\a) -- (v\b);
+  \node[font=\scriptsize, black!60] at (5.5,5.5) {$\cdots$};
+\end{tikzpicture}

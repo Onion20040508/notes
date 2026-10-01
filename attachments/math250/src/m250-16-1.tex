@@ -1,0 +1,26 @@
+% Figure for Logic and Proofs §16.
+\begin{tikzpicture}[x=0.12cm, y=0.12cm]
+  % two 30-squares
+  \foreach \x in {0,30} {
+    \filldraw[fill=figB!12, draw=figB, thick] (\x,0) rectangle ++(30,30);
+    \node[font=\small, figB] at (\x+15,15) {$30$};
+  }
+  % two 12-squares
+  \foreach \y in {0,12} {
+    \filldraw[fill=figG!14, draw=figG, thick] (60,\y) rectangle ++(12,12);
+    \node[font=\small, figG] at (66,\y+6) {$12$};
+  }
+  % two 6-squares
+  \foreach \x in {60,66} {
+    \filldraw[fill=figR!16, draw=figR, thick] (\x,24) rectangle ++(6,6);
+    \node[font=\scriptsize, figR] at (\x+3,27) {$6$};
+  }
+  % outer rectangle and dimensions
+  \draw[black, thick] (0,0) rectangle (72,30);
+  \draw[|-|, black!60] (0,-3.5) -- (72,-3.5) node[midway, below, font=\small, black] {$72$};
+  \draw[|-|, black!60] (-3.5,0) -- (-3.5,30) node[midway, left, font=\small, black] {$30$};
+  % the division steps
+  \node[anchor=west, font=\small, align=left] at (78,22) {$72 = {\color{figB}30}\times 2 + {\color{figG}12}$};
+  \node[anchor=west, font=\small, align=left] at (78,15) {$30 = {\color{figG}12}\times 2 + {\color{figR}6}$};
+  \node[anchor=west, font=\small, align=left] at (78,8) {$12 = {\color{figR}6}\times 2 + 0$};
+\end{tikzpicture}

@@ -1,0 +1,21 @@
+% Figure for Logic and Proofs §12.
+\begin{tikzpicture}[x=0.62cm, y=0.62cm]
+  \foreach \n in {0,...,7} {
+    \node[font=\scriptsize, black!55, anchor=east] at (-4.3,-\n) {$n=\n$};
+    \foreach \r in {0,...,\n} {
+      \pgfmathtruncatemacro{\c}{round(factorial(\n)/(factorial(\r)*factorial(\n-\r)))}
+      \pgfmathtruncatemacro{\edge}{(\r==0 || \r==\n) ? 1 : 0}
+      \pgfmathtruncatemacro{\hot}{((\n==5 && (\r==2 || \r==3)) || (\n==6 && \r==3)) ? 1 : 0}
+      \ifnum\hot=1
+        \node[font=\small, text=figR, inner sep=1.5pt] (p\n-\r) at ({\r-\n/2},-\n) {$\c$};
+      \else\ifnum\edge=1
+        \node[font=\small, text=figB, inner sep=1.5pt] (p\n-\r) at ({\r-\n/2},-\n) {$\c$};
+      \else
+        \node[font=\small, inner sep=1.5pt] (p\n-\r) at ({\r-\n/2},-\n) {$\c$};
+      \fi\fi
+    }
+  }
+  \draw[figR, -{Stealth[length=3.5pt]}] (p5-2) -- (p6-3);
+  \draw[figR, -{Stealth[length=3.5pt]}] (p5-3) -- (p6-3);
+  \node[font=\scriptsize, figR, anchor=west] at (4.3,-5.5) {$\binom{5}{2}+\binom{5}{3}=\binom{6}{3}$};
+\end{tikzpicture}

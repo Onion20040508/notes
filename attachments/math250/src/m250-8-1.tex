@@ -1,0 +1,17 @@
+% Figure for Logic and Proofs §8.
+\begin{tikzpicture}[x=1cm, y=0.62cm, >=Stealth]
+  \draw[black!60, rounded corners=4pt] (-0.55,-0.6) rectangle (0.55,-4.4);
+  \draw[black!60, rounded corners=4pt] (2.95,-0.4) rectangle (4.05,-5.6);
+  \node[font=\small] at (0,0) {$X$};
+  \node[font=\small] at (3.5,0.2) {$Y$};
+  \foreach \i in {1,...,4} {\fill (0.2,-\i) circle (1.8pt); \node[font=\small, left] at (0.15,-\i) {$x_\i$};}
+  \foreach \j in {1,...,5} {\fill (3.3,-\j) circle (1.8pt); \node[font=\small, right] at (3.35,-\j) {$y_\j$};}
+  \draw[->, figB, thick, shorten <=3pt, shorten >=3pt] (0.2,-1) -- (3.3,-1);
+  \draw[->, figB, thick, shorten <=3pt, shorten >=3pt] (0.2,-2) -- (3.3,-1);
+  \draw[->, figB, thick, shorten <=3pt, shorten >=3pt] (0.2,-3) -- (3.3,-3);
+  \draw[->, figB, thick, shorten <=3pt, shorten >=3pt] (0.2,-4) -- (3.3,-5);
+  \node[font=\scriptsize, figR, anchor=west] at (4.15,-2) {no arrow ends here};
+  \node[font=\scriptsize, figR, anchor=west] at (4.15,-4) {no arrow ends here};
+  \node[font=\scriptsize, black!70, anchor=west] at (4.15,-1) {two arrows end here};
+  \node[font=\scriptsize, black!70, align=center] at (1.75,-5.3) {one arrow starts\\ at each $x_i$};
+\end{tikzpicture}

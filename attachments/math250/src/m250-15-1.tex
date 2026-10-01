@@ -1,0 +1,26 @@
+% Figure for Logic and Proofs §15.
+\begin{tikzpicture}[x=0.36cm, y=1cm]
+  % number line
+  \draw[-{Stealth[length=2mm]}, thin] (-115,0) -- (-80,0);
+  \foreach \x in {-114,...,-81} \draw[black!35] (\x,-0.06) -- (\x,0.06);
+  % multiples of 7
+  \foreach \q in {-16,-15,-14,-13,-12} {
+    \pgfmathtruncatemacro{\v}{7*\q}
+    \draw[figB, thick] (\v,-0.16) -- (\v,0.16);
+    \node[font=\scriptsize, figB, below=3pt] at (\v,-0.1) {$\v$};
+    \node[font=\scriptsize, black!60, above=3pt] at (\v,0.12) {$7\cdot(\q)$};
+  }
+  % the point a = -100
+  \fill[figR] (-100,0) circle (2.6pt);
+  \node[font=\small, figR] at (-100,-0.95) {$a=-100$};
+  \draw[figR, thin] (-100,-0.75) -- (-100,-0.12);
+  % the correct remainder: from 7*(-15) up to a
+  \draw[decorate, decoration={brace, amplitude=4pt, mirror}, figG, thick] (-105,-1.25) -- (-100,-1.25)
+    node[midway, below=5pt, font=\small, figG] {$r=5$};
+  % the wrong 'truncate toward zero' attempt
+  \draw[decorate, decoration={brace, amplitude=4pt}, black!45, thick] (-100,0.98) -- (-98,0.98)
+    node[midway, above=5pt, font=\scriptsize, black!55, align=center] {$-2$: not allowed};
+  % the interval [bq, b(q+1))
+  \draw[figB, line width=2.2pt, opacity=0.35] (-105,0) -- (-98,0);
+  \node[font=\scriptsize, figB, align=left, anchor=west] at (-90.5,-1.05) {$a\in[\,7q,\,7(q+1))$ with $q=-15$};
+\end{tikzpicture}

@@ -1,0 +1,17 @@
+% Figure for Logic and Proofs §9.
+\begin{tikzpicture}[x=1cm, y=0.55cm, >=Stealth]
+  \newcommand{\panel}[5]{%
+    % #1 shift, #2 number of domain points, #3 number of codomain points, #4 arrow list i/j, #5 title
+    \begin{scope}[shift={(#1,0)}]
+      \draw[black!55, rounded corners=3pt] (-0.35,-0.45) rectangle (0.35,{-#2-0.55});
+      \draw[black!55, rounded corners=3pt] (1.45,-0.45) rectangle (2.15,{-#3-0.55});
+      \foreach \i in {1,...,#2} \fill (0,-\i) circle (1.7pt);
+      \foreach \j in {1,...,#3} \fill (1.8,-\j) circle (1.7pt);
+      \foreach \i/\j in {#4} \draw[->, figB, thick, shorten <=2.5pt, shorten >=2.5pt] (0,-\i) -- (1.8,-\j);
+      \node[font=\small, align=center, anchor=north] at (0.9,-4.75) {#5};
+    \end{scope}}
+  \panel{0}{3}{3}{1/1,2/1,3/3}{neither}
+  \panel{3.4}{3}{4}{1/1,2/2,3/4}{injective,\\ not surjective}
+  \panel{6.8}{4}{3}{1/1,2/2,3/3,4/3}{surjective,\\ not injective}
+  \panel{10.2}{3}{3}{1/2,2/3,3/1}{bijective}
+\end{tikzpicture}
