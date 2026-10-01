@@ -1,0 +1,16 @@
+% Figure for Quantum Mechanics §A6.1 (vibration-rotation absorption lines of HCl, n = 0 -> 1, computed from the rigid-rotor + harmonic-oscillator model with E0r = 1.32e-3 eV (Tipler Table 9-7) and relative intensities (2l+1) exp(-l(l+1)E0r/kT) at T = 300 K; after Tipler Figs. 9-28 and 9-29).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=11cm, height=5.2cm, xmin=-36, xmax=36, ymin=0, ymax=1.25,
+      axis x line=bottom, axis y line=none,
+      xlabel={photon energy $-\ \hbar\omega$ (meV)},
+      xtick={-30,-20,-10,0,10,20,30}, clip=false]
+    \addplot[ycomb, figB, very thick, mark=none] coordinates {(-2.64,0.714) (-5.28,0.970) (-7.92,1.000) (-10.56,0.855) (-13.20,0.627) (-15.84,0.401) (-18.48,0.227) (-21.12,0.113) (-23.76,0.051) (-26.40,0.020) (-29.04,0.007) (-31.68,0.002)};
+    \addplot[ycomb, figR, very thick, mark=none] coordinates {(2.64,0.264) (5.28,0.714) (7.92,0.970) (10.56,1.000) (13.20,0.855) (15.84,0.627) (18.48,0.401) (21.12,0.227) (23.76,0.113) (26.40,0.051) (29.04,0.020) (31.68,0.007) (34.32,0.002)};
+    \draw[black!45, densely dashed, thin] (axis cs:0,0) -- (axis cs:0,1.1);
+    \node[font=\scriptsize, black!70, anchor=south] at (axis cs:0,1.1) {$\hbar\omega$: no line (gap $4E_{0r}$)};
+    \node[font=\scriptsize, figB, anchor=south] at (axis cs:-17,1.02) {$l \to l - 1$};
+    \node[font=\scriptsize, figR, anchor=south] at (axis cs:17,1.02) {$l \to l + 1$};
+    \draw[<->, black!70, thin] (axis cs:13.2,0.92) -- (axis cs:15.84,0.92);
+    \node[font=\scriptsize, black!70, anchor=south west] at (axis cs:15.9,0.82) {$2E_{0r}$};
+  \end{axis}
+\end{tikzpicture}

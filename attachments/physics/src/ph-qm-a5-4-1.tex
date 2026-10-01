@@ -1,0 +1,41 @@
+% Figure for Quantum Mechanics §A5.4 (hydrogen energy levels to scale, sorted by l, with transitions obeying Delta l = +-1; after Tipler Fig. 7-6 and UP Vol. 3 Fig. 8.19a).
+\begin{tikzpicture}[>={Stealth[length=1.8mm]}, font=\small, y=0.42cm]
+  \def\yA{-13.6} \def\yB{-3.40} \def\yC{-1.511} \def\yD{-0.85}
+  % axis
+  \draw[->, thin, black!55] (-1.2,-14.3) -- (-1.2,1.3) node[above, font=\scriptsize] {$E$ (eV)};
+  \foreach \e/\lab in {-13.6/-13.6, -3.40/-3.40, -1.511/-1.51, -0.85/-0.85, 0/0} {
+    \draw[black!55, thin] (-1.28,\e) -- (-1.12,\e);
+  }
+  \node[font=\scriptsize, anchor=east] at (-1.3,-13.6) {$-13.6$};
+  \node[font=\scriptsize, anchor=east] at (-1.3,-3.40) {$-3.40$};
+  \node[font=\scriptsize, anchor=east] at (-1.3,-1.68) {$-1.51$};
+  \node[font=\scriptsize, anchor=east] at (-1.3,-0.72) {$-0.85$};
+  \node[font=\scriptsize, anchor=east] at (-1.3,0.35) {$0$};
+  % n labels
+  \foreach \e/\n in {-13.6/1, -3.40/2} \node[font=\scriptsize, anchor=west] at (6.0,\e) {$n = \n$};
+  \node[font=\scriptsize, anchor=west] at (6.0,-1.68) {$n = 3$};
+  \node[font=\scriptsize, anchor=west] at (6.0,-0.72) {$n = 4$};
+  \node[font=\scriptsize, anchor=west] at (6.0,0.35) {$n = \infty$};
+  % columns
+  \foreach \x/\L/\l in {0/S/0, 1.5/P/1, 3.0/D/2, 4.5/F/3} \node[font=\scriptsize, anchor=south] at ({\x+0.5},1.1) {\L\ ($l = \l$)};
+  \draw[black!40, dashed, thin] (-0.2,0) -- (5.9,0);
+  % S
+  \foreach \e in {\yA,\yB,\yC,\yD} \draw[very thick] (0,\e) -- (1,\e);
+  % P
+  \foreach \e in {\yB,\yC,\yD} \draw[very thick] (1.5,\e) -- (2.5,\e);
+  % D
+  \foreach \e in {\yC,\yD} \draw[very thick] (3.0,\e) -- (4.0,\e);
+  % F
+  \draw[very thick] (4.5,\yD) -- (5.5,\yD);
+  % Lyman alpha 2P -> 1S
+  \draw[->, thick, figB] (1.75,\yB) -- (0.85,-13.55);
+  \node[font=\scriptsize, figB, anchor=west] at (1.45,-8.5) {121.6 nm (Lyman $\alpha$)};
+  % Balmer alpha: 3S->2P, 3P->2S, 3D->2P
+  \draw[->, thick, figR] (0.75,\yC) -- (1.7,-3.35);
+  \draw[->, thick, figR] (1.75,\yC) -- (0.8,-3.35);
+  \draw[->, thick, figR] (3.25,\yC) -- (2.3,-3.35);
+  \node[font=\scriptsize, figR, anchor=west] at (3.0,-2.55) {656.3 nm (Balmer $\alpha$)};
+  % forbidden 2S -> 1S
+  \draw[->, thin, black!45, densely dashed] (0.3,\yB) -- (0.3,-13.55);
+  \node[font=\scriptsize, black!55, rotate=90, anchor=south] at (0.25,-9.5) {2s $\to$ 1s forbidden};
+\end{tikzpicture}

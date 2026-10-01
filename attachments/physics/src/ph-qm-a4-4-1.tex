@@ -1,0 +1,25 @@
+% Figure for Quantum Mechanics §A4.4: graphical solution of the finite-well conditions tan z = sqrt(z0^2/z^2 - 1) (even) and -cot z = sqrt(z0^2/z^2 - 1) (odd) for z0 = 8.10 (electron, width 1.00 nm, depth 10.0 eV); intersections from a numerical root search.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=11cm, height=6cm, xmin=0, xmax=9.2, ymin=0, ymax=8.5, clip=true,
+      xtick={1.5708,3.1416,4.7124,6.2832}, xticklabels={$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$},
+      extra x ticks={8.1004}, extra x tick labels={$z_0$},
+      ytick={2,4,6,8}, xlabel={$z = ka$}, xlabel style={anchor=west}]
+    \addplot[figB, thick, domain=0:1.4466, samples=80] {tan(deg(x))};
+    \addplot[figB, thick, domain=3.1416:4.5882, samples=80] {tan(deg(x))};
+    \addplot[figB, thick, domain=6.2832:7.7298, samples=80] {tan(deg(x))};
+    \addplot[figG, thick, domain=1.5708:3.0174, samples=80] {-1/tan(deg(x))};
+    \addplot[figG, thick, domain=4.7124:6.1590, samples=80] {-1/tan(deg(x))};
+    \addplot[figG, thick, domain=7.8540:9.2, samples=80] {-1/tan(deg(x))};
+    \addplot[figR, very thick, domain=0.95:8.1004, samples=200] {sqrt((8.1004/x)^2-1)};
+    \addplot[only marks, mark=*, mark size=1.8pt, black] coordinates {(1.3974,5.7098) (2.7900,2.7258) (4.1714,1.6646) (5.5315,1.0698) (6.8469,0.6322) (8.0065,0.1537)};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:1.3974,5.7098) {$z_{1}$};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:2.7900,2.7258) {$z_{2}$};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:4.1714,1.6646) {$z_{3}$};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:5.5315,1.0698) {$z_{4}$};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:6.8469,0.6322) {$z_{5}$};
+    \node[font=\scriptsize, anchor=south east] at (axis cs:8.0065,0.1537) {$z_{6}$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.02,7.4) {$\tan z$};
+    \node[figG, font=\scriptsize, anchor=west] at (axis cs:2.75,7.4) {$-\cot z$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:3.35,3.7) {$\sqrt{z_0^2/z^2 - 1}$};
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,38 @@
+% Figure for Quantum Mechanics §A5.4 (level schemes of a three-level ruby laser and a four-level helium-neon laser; schematic; after Tipler Figs. 9-32c and 9-37).
+\begin{tikzpicture}[>={Stealth[length=1.8mm]}, font=\small]
+  % ---------- (a) ruby, three-level ----------
+  \begin{scope}
+    \node[font=\small] at (1.4,5.6) {(a) ruby (Cr$^{3+}$), three levels};
+    \fill[figB!15] (0,3.6) rectangle (2.8,4.4);
+    \draw[figB, thick] (0,3.6) -- (2.8,3.6); \draw[figB, thick] (0,4.4) -- (2.8,4.4);
+    \node[font=\scriptsize, anchor=west] at (2.9,4.0) {$E_3$: pump bands};
+    \draw[very thick] (0,2.8) -- (2.8,2.8) node[right, font=\scriptsize] {$E_2$: metastable, 1.79 eV};
+    \draw[very thick] (0,0) -- (2.8,0) node[right, font=\scriptsize] {$E_1$: ground state};
+    \draw[->, thick, figB] (0.5,0.05) -- (0.5,3.95) node[midway, left, font=\scriptsize, align=right] {pump\\(flash lamp)};
+    \draw[->, thick, black!70, decorate, decoration={snake, amplitude=0.7mm, segment length=2mm, post length=1.5mm}] (1.3,3.6) -- (1.3,2.85);
+    \node[font=\scriptsize, black!70, anchor=west] at (1.4,3.22) {fast, no light};
+    \draw[->, very thick, figR] (2.2,2.75) -- (2.2,0.05);
+    \node[font=\scriptsize, figR, anchor=west] at (2.3,1.4) {laser 694.3 nm};
+  \end{scope}
+  % ---------- (b) He-Ne, four-level ----------
+  \begin{scope}[xshift=7.6cm]
+    \node[font=\small] at (2.2,5.6) {(b) helium--neon, four levels};
+    \node[font=\scriptsize] at (0.6,-0.45) {He};
+    \node[font=\scriptsize] at (3.2,-0.45) {Ne};
+    \draw[very thick] (0,0) -- (1.2,0);
+    \draw[very thick] (2.4,0) -- (4.0,0);
+    \draw[very thick] (0,4.4) -- (1.2,4.4) node[left, xshift=-1.25cm, font=\scriptsize] {20.61 eV};
+    \draw[very thick] (2.4,4.5) -- (4.0,4.5) node[right, font=\scriptsize] {20.66 eV};
+    \draw[very thick] (2.4,2.6) -- (4.0,2.6) node[right, font=\scriptsize] {18.70 eV};
+    \draw[very thick] (2.4,1.5) -- (4.0,1.5) node[right, font=\scriptsize] {lower excited level};
+    \draw[->, thick, figB] (0.6,0.05) -- (0.6,4.35) node[midway, left, font=\scriptsize, align=right] {electric\\discharge};
+    \draw[->, thin, black!70, densely dashed] (1.25,4.42) -- (2.35,4.48);
+    \node[font=\scriptsize, black!70, align=center] at (1.8,4.75) {collision};
+    \draw[->, very thick, figR] (3.0,4.45) -- (3.0,2.65);
+    \node[font=\scriptsize, figR, anchor=east] at (2.95,3.5) {632.8 nm};
+    \draw[->, thin, black!70] (3.5,2.55) -- (3.5,1.55);
+    \node[font=\scriptsize, black!70, anchor=west] at (3.55,2.05) {$\approx$ 600 nm};
+    \draw[->, thin, black!70, decorate, decoration={snake, amplitude=0.7mm, segment length=2mm, post length=1.5mm}] (3.2,1.45) -- (3.2,0.05);
+    \node[font=\scriptsize, black!70, anchor=west] at (3.3,0.75) {wall collisions};
+  \end{scope}
+\end{tikzpicture}
