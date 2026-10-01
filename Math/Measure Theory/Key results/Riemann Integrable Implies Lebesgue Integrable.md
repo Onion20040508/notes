@@ -27,6 +27,9 @@ tags: [measure-theory, hub]
 ## Used in (Measure Theory)
 - [[§17 Invariance Properties and Fubini's Theorem#^thm-17-13|Theorem §17.13: Layer Cake Formula (Cavalieri's Principle)]]
 
+## Used in (Functional Analysis)
+- [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|Proposition §14.8: Lᵖ[a,b] as a Completion]]
+
 ## Connections
 - **Proof idea.** On dyadic partitions, the lower and upper step functions φ_k ≤ f ≤ ψ_k are monotone in k (the 451 [[§32 The Definition of the Riemann Integral#^lem-32-2|Refinement Lemma]]), and their integrals tend to the Riemann integral. The decreasing MCT ([[§14 The Lebesgue Integral for Simple Functions#^thm-14-14|§14.14]]) gives ∫(lim ψ_k − lim φ_k) = 0. Then lim φ_k = f = lim ψ_k a.e. ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]]), so f is measurable ([[§12 Measurable Functions#^prop-12-12|§12.12]]). The constant sup|f| dominates on [a, b] ([[§15 The General Lebesgue Integral#^ex-15-1|Ex. §15.1]]), so the [[Dominated Convergence Theorem|DCT]] gives ∫ f = lim ∫ φ_k.
 - **Converse fails.** The Dirichlet function on [0, 1] is not Riemann integrable ([[§8 Motivation꞉ The Riemann Integral#^ex-8-2|Ex. §8.2]], [[Dirichlet and Thomae functions]]), but it is 0 a.e., so its Lebesgue integral is 0.

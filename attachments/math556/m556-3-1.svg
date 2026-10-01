@@ -6,6 +6,13 @@
 <g stroke-miterlimit='10' transform='translate(-30.260394,-30.260394)scale(0.996264,-0.996264)'>
 <g fill='#000' stroke='#000'>
 <g stroke-width='0.4'>
+<g stroke-width='0.8'>
+<g stroke-dasharray='3.0,3.0' stroke-dashoffset='0.0'>
+<g fill='#e5ecf5'>
+<path d='M24.185 0C24.185 13.35716 13.35716 24.185 0 24.185S-24.185 13.35716-24.185 0S-13.35716-24.185 0-24.185S24.185-13.35716 24.185 0ZM0 0'/>
+</g>
+</g>
+</g>
 <path d='M-38.69614 0H36.69617' fill='none'/>
 <g transform='translate(36.69617,0.0)'>
 <path d='M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998' stroke='none'/>
@@ -13,9 +20,6 @@
 <path d='M0-38.69614V36.69617' fill='none'/>
 <g transform='matrix(0.0,1.0,-1.0,0.0,0.0,36.69617)'>
 <path d='M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998' stroke='none'/>
-</g>
-<g stroke-width='0.8'>
-<path d='M24.185 0C24.185 13.35716 13.35716 24.185 0 24.185S-24.185 13.35716-24.185 0S-13.35716-24.185 0-24.185S24.185-13.35716 24.185 0ZM0 0' fill='none'/>
 </g>
 <g transform='translate(-17.71245,-50.37001)'>
 <g stroke='none' transform='scale(-1.00375,1.00375)translate(-30.260394,-30.260394)scale(-1,-1)'>
@@ -32,6 +36,13 @@
 </g>
 </g>
 </g>
+<g stroke-width='0.8'>
+<g stroke-dasharray='3.0,3.0' stroke-dashoffset='0.0'>
+<g fill='#e5ecf5'>
+<path d='M77.39198-24.185V24.185H125.76198V-24.185ZM125.76198 24.185'/>
+</g>
+</g>
+</g>
 <path d='M62.88084 0H138.27315' fill='none'/>
 <g transform='translate(138.27315,0.0)'>
 <path d='M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998' stroke='none'/>
@@ -39,9 +50,6 @@
 <path d='M101.57698-38.69614V36.69617' fill='none'/>
 <g transform='matrix(0.0,1.0,-1.0,0.0,101.57698,36.69617)'>
 <path d='M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998' stroke='none'/>
-</g>
-<g stroke-width='0.8'>
-<path d='M77.39198-24.185V24.185H125.76198V-24.185ZM125.76198 24.185' fill='none'/>
 </g>
 <g transform='translate(83.86453,-50.37001)'>
 <g stroke='none' transform='scale(-1.00375,1.00375)translate(-30.260394,-30.260394)scale(-1,-1)'>
@@ -58,6 +66,13 @@
 </g>
 </g>
 </g>
+<g stroke-width='0.8'>
+<g stroke-dasharray='3.0,3.0' stroke-dashoffset='0.0'>
+<g fill='#e5ecf5'>
+<path d='M227.33897 0L203.15398 24.185L178.96898 0L203.15398-24.185Z'/>
+</g>
+</g>
+</g>
 <path d='M164.45784 0H239.85014' fill='none'/>
 <g transform='translate(239.85014,0.0)'>
 <path d='M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998' stroke='none'/>
@@ -65,9 +80,6 @@
 <path d='M203.15398-38.69614V36.69617' fill='none'/>
 <g transform='matrix(0.0,1.0,-1.0,0.0,203.15398,36.69617)'>
 <path d='M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998' stroke='none'/>
-</g>
-<g stroke-width='0.8'>
-<path d='M227.33897 0L203.15398 24.185L178.96898 0L203.15398-24.185Z' fill='none'/>
 </g>
 <g transform='translate(185.44153,-50.37001)'>
 <g stroke='none' transform='scale(-1.00375,1.00375)translate(-30.260394,-30.260394)scale(-1,-1)'>

@@ -1,0 +1,23 @@
+% Figure from MATH 556 notes, section 8. Compile with the notes preamble.
+\begin{tikzpicture}[scale=2.0]
+  \draw[-stealth, thin] (-1.35,0) -- (1.45,0) node[right, font=\scriptsize] {$x_1$};
+  \draw[-stealth, thin] (0,-0.85) -- (0,1.7) node[above, font=\scriptsize] {$x_2$};
+  % lines through 0
+  \foreach \m in {0.4,1.0,-0.6} {
+    \draw[black!40, thin] ({-0.85/max(1,abs(\m))},{-0.85*\m/max(1,abs(\m))}) -- ({1.35/max(1,abs(\m))},{1.35*\m/max(1,abs(\m))});
+  }
+  % the removed parabola
+  \draw[figR, thick, domain=-1.25:1.25, samples=80] plot (\x,{\x*\x});
+  % small ball around 0
+  \draw[figB, dashed, thin, fill=figB!8, fill opacity=0.6] (0,0) circle (0.3);
+  \node[figB, font=\scriptsize, anchor=north east] at (-0.2,-0.2) {$B_r(0)$};
+  % each line meets P once
+  \foreach \m in {0.4,1.0,-0.6} \fill[figR] (\m,{\m*\m}) circle (0.85pt);
+  % the points (1/n, 1/n^2) inside the ball
+  \foreach \n in {3,...,9} \fill[figR] ({1/\n},{1/(\n*\n)}) circle (0.55pt);
+  \fill[white] (0,0) circle (1.0pt);
+  \fill[black] (0,0) circle (0.8pt);
+  \node[font=\scriptsize, anchor=north west] at (0.02,-0.02) {$0$};
+  \node[figR, font=\scriptsize, anchor=west] at (1.0,1.45) {$P = \{(s,s^2) : s \neq 0\}$};
+  \node[font=\scriptsize, anchor=west] at (0.62,-0.5) {$K = \mathbb{R}^2 \setminus P$};
+\end{tikzpicture}

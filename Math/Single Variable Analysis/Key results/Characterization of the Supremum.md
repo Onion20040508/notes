@@ -25,6 +25,9 @@ tags: [real-analysis, hub]
 ## Used in (Group Theory)
 - [[§5 A Zoo of Subgroups#^prop-5-3|Proposition §5.3: Dichotomy for Subgroups of ℝ]]
 
+## Used in (Functional Analysis)
+- [[§10 New Normed Spaces from Old#^thm-10-8|Theorem §10.8: Quotient Norm]]
+
 ## Connections
 - The working form of the [[Completeness Axiom]]: to use $\sup S$ in a proof, you almost always use this proposition.
 - In the dependency graph extracted from these notes it has the largest downstream reach: about 38 later results rest on it, directly or indirectly.

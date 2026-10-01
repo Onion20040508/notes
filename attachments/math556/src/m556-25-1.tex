@@ -1,0 +1,23 @@
+% Figure from MATH 556 notes, section 25. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=8.2cm, height=6.2cm, clip=false,
+  xmin=0, xmax=14, ymin=-0.58, ymax=0.2, axis x line=middle, axis y line=left,
+  xtick=\empty, ytick={-0.5,-0.125,0}, yticklabels={$-\tfrac12$,$-\tfrac18$,$0$},
+  xlabel={$|x|$}, ylabel={$E$}, xlabel style={anchor=west, font=\scriptsize}, ylabel style={rotate=-90, font=\scriptsize}]
+  \fill[figR!15] (axis cs:0,0) rectangle (axis cs:14,0.2);
+  \addplot[black!55, thick, domain=1.72:14, samples=120] {-1/x};
+  \node[black!60, font=\scriptsize, anchor=north west] at (axis cs:2.3,-0.45) {$V(x) = -\dfrac{1}{|x|}$};
+  % bound levels E_n = -1/(2n^2), drawn out to the classical turning point |x| = 2n^2
+  \addplot[figB, thick] coordinates {(0,-0.5) (2,-0.5)};
+  \addplot[figB, thick] coordinates {(0,-0.125) (8,-0.125)};
+  \foreach \n in {3,...,14} {
+    \edef\temp{\noexpand\addplot[figB, thick] coordinates {(0,{-1/(2*\n*\n)}) (14,{-1/(2*\n*\n)})};}
+    \temp
+  }
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:2.2,-0.5) {$E_1$, dim $1$};
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:8.2,-0.125) {$E_2$, dim $4$};
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:14.1,-0.0556) {$E_3$, dim $9$};
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:14.1,-0.022) {$\vdots$};
+  \node[figR, font=\scriptsize, anchor=south, align=center] at (axis cs:7,0.06) {continuum $[0, \infty)$: no eigenvectors};
+\end{axis}
+\end{tikzpicture}

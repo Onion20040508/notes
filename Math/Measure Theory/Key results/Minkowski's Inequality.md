@@ -24,6 +24,11 @@ tags: [measure-theory, hub]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-15|Proposition §19.15: Basic Properties of Lᵖ Convergence]]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-17|Corollary §19.17: Lᵖ Convergence Implies A.E. Convergent Subsequence]]
 
+## Used in (Functional Analysis)
+- [[§14 The Function Spaces Lᵖ(Ω)#^rem-14-2|Remark: What “Integrable” Means Here]]
+- [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-2|Theorem §14.2: Minkowski's Inequality for Functions]]
+- [[§20 Orthonormal Sets and Bases#^prop-20-15|Proposition §20.15: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
+
 ## Connections
 - **Proof idea.** For 1 < p < ∞, write |f + g|ᵖ ≤ |f|·|f + g|^(p−1) + |g|·|f + g|^(p−1). Apply [[Hölder's Inequality]] with exponents p and p′ = p/(p − 1) to each term, then divide by the Lᵖ norm of f + g raised to the power p − 1. p = 1 is [[§15 The General Lebesgue Integral#^prop-15-3|Proposition §15.3]], and p = ∞ is pointwise.
 - **Linear algebra.** It is the triangle inequality that makes the Lᵖ norm a norm ([[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|Def. §19.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|§19.10]]). For p = 2 the norm comes from ⟨f, g⟩ = ∫fg, and Minkowski is the inner-product [[Triangle inequality]] (LADR 6.17), just as Hölder is [[Cauchy–Schwarz inequality|Cauchy–Schwarz]]. Among the Lᵖ norms only p = 2 satisfies the [[§19 Inner Products and Norms#^ladr-6-21|parallelogram equality]].

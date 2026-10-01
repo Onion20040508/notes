@@ -278,7 +278,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 ^def-8-8
 
 > [!remark]- Connections
-> - The (algebraic) span it closes up: [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§2 Span and Linear Independence#^ladr-2-6|LADR 2.6]].
+> - The (algebraic) span it closes up: [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§4 Span and Linear Independence#^ladr-2-6|LADR 2.6]].
 
 > [!definition] Definition §8.9: Open Ball; Metric Interior Point
 > For $x_0 \in X$ and $r > 0$, the **open ball** of radius $r$ about $x_0$ is $B_r(x_0) = \{ x \in X : \|x - x_0\| < r \}$. A point $x_0$ of a subset $K \subset X$ is a **metric interior point** of $K$ if $B_r(x_0) \subset K$ for some $r > 0$.

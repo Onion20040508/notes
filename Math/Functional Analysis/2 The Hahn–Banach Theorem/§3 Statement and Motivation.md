@@ -142,7 +142,7 @@ The proof is given in [[§4 Proof of the Hahn–Banach Theorem|§4]]. The comple
 
 > [!remark]- Connections
 > - Linear functionals: [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5|Def. §2.5]], [[§12 Duality#^ladr-3-108|LADR 3.108]]; on $\mathbb{R}^n$ they are the $x \mapsto a \cdot x$ of [[§12 Duality#^ladr-3-109|LADR 3.109]].
-> - The hyperplane $\{\ell = 0\}$ through the origin has codimension one: [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-4|§19.4]].
+> - On a Hilbert space, the kernel $\{\ell = 0\}$ of a bounded functional has codimension one: [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-4|§19.4]].
 
 > [!remark] Remark
 > Linear functionals are thus directly tied to geometry: a linear functional and a constant determine a hyperplane and its two half-spaces. Combined with the [[§3 Statement and Motivation#^thm-3-2|Hahn–Banach theorem]], this is what makes it possible to separate convex sets by hyperplanes in general linear spaces ([[§6 The Hyperplane Separation Theorem#^thm-6-1|§6.1]]), a theme that will recur.

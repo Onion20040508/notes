@@ -1,0 +1,27 @@
+% Figure from MATH 556 notes, section 14. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.44\textwidth, clip=false,
+  xmin=0, xmax=1.08, ymin=-0.62, ymax=1.62,
+  xtick={0,0.5,1}, xticklabels={$0$,$\tfrac12$,$1$},
+  ytick={-0.5,0,0.5,1,1.5}, yticklabels={$-\tfrac12$,$0$,$\tfrac12$,$1$,$\tfrac32$}, xlabel={}]
+  \fill[black!10] (axis cs:0,-0.5) rectangle (axis cs:0.5,0.5);
+  \fill[black!10] (axis cs:0.5,0.5) rectangle (axis cs:1,1.5);
+  \draw[black!45, dashed, thin] (axis cs:0,-0.5) -- (axis cs:0.5,-0.5) -- (axis cs:0.5,0.5) -- (axis cs:0,0.5);
+  \draw[black!45, dashed, thin] (axis cs:0.5,0.5) -- (axis cs:1,0.5) -- (axis cs:1,1.5) -- (axis cs:0.5,1.5);
+  \draw[black!45, thin] (axis cs:0,0) -- (axis cs:1.08,0);
+  \addplot[black, very thick] coordinates {(0,0) (0.5,0)};
+  \addplot[black, very thick] coordinates {(0.5,1) (1,1)};
+  \addplot[only marks, mark=*, mark options={fill=white, draw=black}, mark size=1.6pt] coordinates {(0.5,0)};
+  \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(0.5,1)};
+  \addplot[figB, thick, domain=0:0.47, samples=80] {0.5+0.45*tanh(25*(x-0.47))};
+  \addplot[figB, thick, domain=0.5:1, samples=60] {0.5+0.45*tanh(25*(x-0.47))};
+  \addplot[figR, very thick, domain=0.47:0.5, samples=20] {0.5+0.45*tanh(25*(x-0.47))};
+  \node[font=\scriptsize, anchor=north] at (axis cs:0.22,-0.02) {$f = 0$};
+  \node[font=\scriptsize, anchor=south] at (axis cs:0.8,1.02) {$f = 1$};
+  \node[font=\scriptsize, figB, anchor=south] at (axis cs:0.12,0.06) {$g$};
+  \node[font=\scriptsize, figB, anchor=north] at (axis cs:0.8,0.93) {$g$};
+  \node[font=\scriptsize, figR, anchor=east, align=right] at (axis cs:0.44,0.78) {$g$ leaves\\the band};
+  \draw[figR, thin, -stealth] (axis cs:0.445,0.74) -- (axis cs:0.482,0.62);
+  \node[font=\small, anchor=west] at (axis cs:1.09,-0.62) {$x$};
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,35 @@
+% Figure from MATH 556 notes, section 18. Compile with the notes preamble.
+\begin{tikzpicture}[scale=0.85]
+  % left panel: Euclidean norm
+  \begin{scope}
+    \clip (-2.3,-2.3) rectangle (2.9,2.9);
+    \fill[figB!12] (2.9,-0.9) -- (-0.9,2.9) -- (2.9,2.9) -- cycle;
+    \draw[figB, thick] (2.9,-0.9) -- (-0.9,2.9);
+  \end{scope}
+  \draw[-stealth, thin] (-2.3,0) -- (2.9,0);
+  \draw[-stealth, thin] (0,-2.3) -- (0,2.9);
+  \draw[black!55, dashed] (0,0) circle (1.4142);
+  \draw[figR, thin] (0,0) -- (1,1);
+  \fill (0,0) circle (1.6pt) node[below left, font=\scriptsize, inner sep=1.5pt] {$x_0$};
+  \fill[figR] (1,1) circle (1.8pt) node[above right, font=\scriptsize, inner sep=2pt, figR] {$y_0$};
+  \node[figB, font=\small] at (2.1,2.1) {$K$};
+  \node[font=\small] at (0.3,-2.75) {$\|\cdot\|_2$: one closest point};
+  % right panel: l^1 norm, same K and x_0
+  \begin{scope}[xshift=6.2cm]
+    \begin{scope}
+      \clip (-2.3,-2.3) rectangle (2.9,2.9);
+      \fill[figB!12] (2.9,-0.9) -- (-0.9,2.9) -- (2.9,2.9) -- cycle;
+      \draw[figB, thick] (2.9,-0.9) -- (-0.9,2.9);
+    \end{scope}
+    \draw[-stealth, thin] (-2.3,0) -- (2.9,0);
+    \draw[-stealth, thin] (0,-2.3) -- (0,2.9);
+    \draw[black!55, dashed] (2,0) -- (0,2) -- (-2,0) -- (0,-2) -- cycle;
+    \draw[figR, line width=2pt] (2,0) -- (0,2);
+    \fill (0,0) circle (1.6pt) node[below left, font=\scriptsize, inner sep=1.5pt] {$x_0$};
+    \fill[figR] (2,0) circle (1.8pt);
+    \fill[figR] (0,2) circle (1.8pt);
+    \node[figB, font=\small] at (2.1,2.1) {$K$};
+    \node[figR, font=\scriptsize, anchor=west] at (1.15,1.15) {all closest};
+    \node[font=\small] at (0.3,-2.75) {$\|\cdot\|_1$: a segment of them};
+  \end{scope}
+\end{tikzpicture}

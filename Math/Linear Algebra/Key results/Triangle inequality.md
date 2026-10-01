@@ -16,6 +16,9 @@ tags: [linear-algebra, hub]
 ## Used in (Measure Theory)
 - [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-3|Lemma §6.3]]
 
+## Used in (Functional Analysis)
+- [[§3 Statement and Motivation#^ex-3-1|Example §3.1: Three Examples on ℝⁿ]]
+
 ## Connections
 - The case $V=\R$ with $\langle x,y\rangle=xy$ is the absolute-value triangle inequality $|x+y|\le|x|+|y|$ of [[Single Variable Analysis]].
 - Makes $d(u,v)=\|u-v\|$ a metric, so every inner product space is a metric space (in the sense of Single Variable Analysis §13).

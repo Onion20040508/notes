@@ -11,9 +11,9 @@
     \end{scope}
     % star and its hull
     \begin{scope}[xshift=4.5cm]
-        \fill[axlerblue] (1.1,0) -- (0.3,0.3) -- (0,1.1) -- (-0.3,0.3) -- (-1.1,0) -- (-0.3,-0.3) -- (0,-1.1) -- (0.3,-0.3) -- cycle;
+        \fill[axlerblue] (1.1,0) -- (0,1.1) -- (-1.1,0) -- (0,-1.1) -- cycle;
         \draw[thick] (1.1,0) -- (0.3,0.3) -- (0,1.1) -- (-0.3,0.3) -- (-1.1,0) -- (-0.3,-0.3) -- (0,-1.1) -- (0.3,-0.3) -- cycle;
         \draw[dashed, thick, red!75!black] (1.1,0) -- (0,1.1) -- (-1.1,0) -- (0,-1.1) -- cycle;
-        \node[font=\footnotesize] at (0,-1.5) {$S$ (solid) and its convex hull (dashed)};
+        \node[font=\footnotesize] at (0,-1.5) {$S$ (solid) and its convex hull (shaded, dashed edge)};
     \end{scope}
 \end{tikzpicture}

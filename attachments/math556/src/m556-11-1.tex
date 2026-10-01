@@ -1,17 +1,24 @@
 % Figure from MATH 556 notes, section 11. Compile with the notes preamble.
-\begin{tikzpicture}[scale=1.2, >=stealth]
-    \draw[->] (0,-1.2) -- (0,1.4);
-    \draw[->] (0,0) -- (4.4,0);
-    \draw[thick, domain=0.3:4.2, samples=60] plot (\x, {ln(\x)});
-    \node[right, font=\footnotesize] at (4.2,1.43) {$\ln t$};
-    \coordinate (A) at (0.6,{ln(0.6)});
-    \coordinate (B) at (3.6,{ln(3.6)});
+\begin{tikzpicture}[xscale=1.05, yscale=1.25, >=stealth]
+    \draw[->] (0,-0.75) -- (0,2.15);
+    \draw[->] (0,0) -- (6.5,0) node[right, font=\footnotesize] {$t$};
+    \draw[thick, domain=0.5:6.2, samples=80] plot (\x, {ln(\x)});
+    \node[right, font=\footnotesize] at (6.2,{ln(6.2)}) {$\ln t$};
+    \pgfmathsetmacro{\a}{1.25}
+    \pgfmathsetmacro{\b}{5.5}
+    \pgfmathsetmacro{\m}{0.6*\a+0.4*\b}
+    \coordinate (A) at (\a,{ln(\a)});
+    \coordinate (B) at (\b,{ln(\b)});
     \draw[red!75!black] (A) -- (B);
-    \fill (A) circle (1.2pt) node[left, font=\footnotesize] {$a$};
-    \fill (B) circle (1.2pt) node[below right, font=\footnotesize] {$b$};
-    \coordinate (M) at (1.8,0);
-    \draw[dashed] (1.8,-0.05) -- (1.8,{ln(1.8)});
-    \fill (1.8,{ln(1.8)}) circle (1.2pt);
-    \fill[red!75!black] (1.8,{ln(0.6)+ (1.8-0.6)/(3.6-0.6)*(ln(3.6)-ln(0.6))}) circle (1.2pt);
-    \node[below, font=\footnotesize] at (1.8,-0.05) {$(1-\theta)a + \theta b$};
+    \draw[dotted] (\a,0) -- (A);
+    \draw[dotted] (\b,0) -- (B);
+    \draw[dashed] (\m,0) -- (\m,{ln(\m)});
+    \fill (A) circle (1.2pt);
+    \fill (B) circle (1.2pt);
+    \fill (\m,{ln(\m)}) circle (1.2pt);
+    \fill[red!75!black] (\m,{0.6*ln(\a)+0.4*ln(\b)}) circle (1.2pt);
+    \foreach \x in {\a,\b,\m} \draw (\x,0.04) -- (\x,-0.04);
+    \node[below, font=\footnotesize] at (\a,-0.04) {$a$};
+    \node[below, font=\footnotesize] at (\b,-0.04) {$b$};
+    \node[below, font=\footnotesize] at (\m,-0.04) {$(1-\theta)a + \theta b$};
 \end{tikzpicture}

@@ -121,7 +121,7 @@ The converse direction — starting from a convex set and producing a $p$ — is
 ^def-5-2
 
 > [!remark]- Connections
-> - Norms are exactly the gauges of their unit balls: [[§8 Normed Linear Spaces#^prop-8-1|§8.1]].
+> - A norm is the gauge of its unit ball, and when a gauge is a norm: [[§8 Normed Linear Spaces#^prop-8-1|§8.1]].
 
 > [!theorem] Proposition §5.3: The Gauge is Finite
 > Under the hypotheses of the definition, the set $\{a > 0 : x/a \in K\}$ is nonempty for every $x \in X$, so $p_K(x) < \infty$. More precisely, if $\varepsilon(x) > 0$ is as in the definition of $0$ being an interior point, then $p_K(x) \le 1/\varepsilon(x)$.

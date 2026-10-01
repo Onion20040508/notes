@@ -36,6 +36,9 @@ tags: [real-analysis, hub]
 ## Used in (Topology)
 - [[§15 Compact Spaces#^rem-15-1|Remark: Why Compactness Matters]]
 
+## Used in (Functional Analysis)
+- [[§9 Completeness#^thm-9-1|Theorem §9.1: C[a,b] with the Supremum Norm is a Banach Space]]
+
 ## Connections
 - Abstract form: the continuous image of a compact set is compact. The same fact gives extrema of continuous functions on compact manifolds.
 - Both hypotheses matter: see the workhorse [[Reciprocal function 1∕x]] on $(0,1]$.

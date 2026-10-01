@@ -22,6 +22,9 @@ tags: [real-analysis, hub]
 ## Used in (Measure Theory)
 - [[§7 Structure of Open Sets#^prop-7-1|Proposition §7.1: Open Sets in ℝ are Countable Unions of Disjoint Intervals]]
 
+## Used in (Functional Analysis)
+- [[§4 Proof of the Hahn–Banach Theorem#^lem-4-1|Lemma §4.1: One-Step Extension]]
+
 ## Connections
 - This is the axiom that separates $\mathbb{R}$ from $\mathbb{Q}$ (§4 shows $\mathbb{Q}$ fails it). §6 constructs a model of it with Dedekind cuts.
 - Equivalent forms met later in the course: [[Monotone Convergence Theorem]], [[Bolzano–Weierstrass Theorem]], and Cauchy sequences converging (§10).

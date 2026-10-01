@@ -1,0 +1,25 @@
+% Figure from MATH 556 notes, section 17. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.5]
+  \draw[-stealth, thin] (-1.3,0) -- (1.45,0);
+  \draw[-stealth, thin] (0,-1.3) -- (0,1.45);
+  \draw[black!70, thick] (-1,-1) rectangle (1,1);
+  \draw[figB, thick] (0,0) circle (1);
+  \draw[figR, thick] (1,0) -- (0,1) -- (-1,0) -- (0,-1) -- cycle;
+  % the diagonals of the square spanned by e1, e2
+  \draw[black!55, thin, dashed] (0,0) -- (1,1);
+  \draw[black!55, thin, dashed] (0,0) -- (1,-1);
+  \fill[figR] (0.5,0.5) circle (1.3pt);
+  \fill[figB] (0.7071,0.7071) circle (1.3pt);
+  \fill[black] (1,1) circle (1.3pt);
+  \fill[figR] (0.5,-0.5) circle (1.3pt);
+  \fill[figB] (0.7071,-0.7071) circle (1.3pt);
+  \fill[black] (1,-1) circle (1.3pt);
+  \fill (1,0) circle (1.1pt) node[below right, font=\scriptsize, inner sep=1.5pt] {$e_1$};
+  \fill (0,1) circle (1.1pt) node[above left, font=\scriptsize, inner sep=1.5pt] {$e_2$};
+  \node[font=\scriptsize, anchor=south west, inner sep=1.5pt] at (1,1) {$e_1 + e_2$};
+  \node[font=\scriptsize, anchor=north west, inner sep=1.5pt] at (1,-1) {$e_1 - e_2$};
+  % legend: the norm of the diagonal is 1/t, where t(e_1+e_2) is the crossing with the unit sphere
+  \node[font=\scriptsize, anchor=west, figR] at (1.65,0.45) {$\|e_1 \pm e_2\|_1 = 2$};
+  \node[font=\scriptsize, anchor=west, figB] at (1.65,0.1) {$\|e_1 \pm e_2\|_2 = \sqrt2$};
+  \node[font=\scriptsize, anchor=west, black!80] at (1.65,-0.25) {$\|e_1 \pm e_2\|_\infty = 1$};
+\end{tikzpicture}

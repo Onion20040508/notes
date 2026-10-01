@@ -1,21 +1,26 @@
 % Figure from MATH 556 notes, section 5. Compile with the notes preamble.
 \begin{tikzpicture}[scale=1.5, >=stealth]
-    \draw[thick] (0,0) ellipse (2.0 and 1.25);
-    \node[font=\footnotesize] at (-1.5,0.6) {$K$};
-    % base segment through 0 in direction y (not parallel to x)
-    \draw[very thick, red!75!black] (-0.35,-0.65) -- (0.35,0.65);
-    \node[left, font=\footnotesize, red!75!black] at (-0.2,-0.45) {$ty$, $|t| < \delta(y)$};
-    \fill (0,0) circle (1.2pt) node[below right, font=\footnotesize] {$0$};
+    \draw[thick] (0.45,0) ellipse (3.0 and 1.5);
+    \node[font=\footnotesize] at (-1.5,0.75) {$K$};
+    % base segment through 0 in direction y: endpoints +-(0.25,0.85) = +-delta(y) y
+    \coordinate (bt) at (0.25,0.85);
+    \coordinate (bb) at (-0.25,-0.85);
     % apex x/a
-    \coordinate (apex) at (1.5,0.75);
-    \fill (apex) circle (1.5pt) node[right, font=\footnotesize] {$x/a$};
-    \draw[thin] (apex) -- (-0.35,-0.65);
-    \draw[thin] (apex) -- (0.35,0.65);
+    \coordinate (apex) at (1.8,0.25);
+    \fill[black!6] (bt) -- (apex) -- (bb) -- cycle;
+    \draw[thin] (apex) -- (bt);
+    \draw[thin] (apex) -- (bb);
     \draw[dashed] (apex) -- (0,0);
-    % x on the median at fraction a (a = 0.6)
-    \coordinate (x) at (0.9,0.45);
-    \fill (x) circle (1.5pt) node[below right, font=\footnotesize, yshift=-1pt] {$x$};
-    % cross-section through x parallel to y, half-length (1-a)delta = 0.4*(0.35,0.65)
-    \draw[very thick, red!75!black] ($(x)+(-0.14,-0.26)$) -- ($(x)+(0.14,0.26)$);
-    \node[above left, font=\footnotesize, red!75!black, xshift=-1pt] at ($(x)+(0.0,0.15)$) {$(1-a)\delta(y)$};
+    \draw[very thick, figR] (bb) -- (bt);
+    \node[anchor=east, font=\footnotesize, figR] at (-0.2,-0.55) {$ty$, $|t| < \delta(y)$};
+    \fill (0,0) circle (1.2pt) node[left, font=\footnotesize] {$0$};
+    \fill (apex) circle (1.5pt) node[right, font=\footnotesize] {$x/a$};
+    % x on the median at fraction a from 0 (a = 0.6): x = 0.6 * apex
+    \coordinate (x) at (1.08,0.15);
+    % cross-section through x parallel to y, half-length (1-a)delta = 0.4*(0.25,0.85)
+    \coordinate (ct) at ($(x)+(0.1,0.34)$);
+    \coordinate (cb) at ($(x)+(-0.1,-0.34)$);
+    \draw[very thick, figR] (cb) -- (ct);
+    \fill (x) circle (1.5pt) node[anchor=north west, font=\footnotesize, inner sep=2pt] {$x$};
+    \node[anchor=south west, font=\footnotesize, figR, inner sep=1pt] at ($(ct)+(0.02,0.06)$) {$|t| < (1-a)\,\delta(y)$};
 \end{tikzpicture}

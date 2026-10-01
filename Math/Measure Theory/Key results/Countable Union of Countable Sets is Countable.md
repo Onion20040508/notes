@@ -24,6 +24,12 @@ tags: [measure-theory, hub]
 - [[§18 Differentiation Theory#^thm-18-1|Theorem §18.1: Monotone Functions Have Countably Many Discontinuities]]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|Corollary §19.20: Lᵖ is Separable for 1 ≤ p < ∞]]
 
+## Used in (Functional Analysis)
+- [[§20 Orthonormal Sets and Bases#^prop-20-4|Proposition §20.4: Only Countably Many Coefficients are Nonzero]]
+- [[§20 Orthonormal Sets and Bases#^prop-20-13|Proposition §20.13: ℓ^p is Separable for 1 ≤ p < ∞]]
+- [[§20 Orthonormal Sets and Bases#^prop-20-15|Proposition §20.15: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
+- [[§20 Orthonormal Sets and Bases#^thm-20-17|Theorem §20.17: Separable Hilbert Spaces and Countable Bases]]
+
 ## Connections
 - **Proof idea.** List the n-th set as aₙ,₁, aₙ,₂, … and send aₙ,ₘ to (n, m). This puts the union in bijection with a subset of ℕ × ℕ, which is countable by the diagonal listing of [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]].
 - **Used for.** [[§3 Countability of Rationals and Unions#^cor-3-2|ℚ is countable]] (§3.2), the countably many dyadic cubes in [[§7 Structure of Open Sets#^prop-7-3|§7.3]], and the combined L-covering in countable subadditivity ([[Properties of Lebesgue Outer Measure]]). Later uses are [[§18 Differentiation Theory#^thm-18-1|Monotone Functions Have Countably Many Discontinuities]] (§18.1) and the [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|separability of Lᵖ]] (§19.20).

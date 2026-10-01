@@ -25,6 +25,9 @@ tags: [measure-theory, hub]
 - [[§18 Differentiation Theory#^thm-18-9|Theorem §18.9: Lebesgue's Differentiation Theorem for Monotone Functions]]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-18|Theorem §19.18: Riesz–Fischer Theorem]]
 
+## Used in (Functional Analysis)
+- [[§14 The Function Spaces Lᵖ(Ω)#^rem-14-2|Remark: What “Integrable” Means Here]]
+
 ## Connections
 - **Proof idea.** g_k = inf_{j≥k} f_j is measurable ([[§12 Measurable Functions#^thm-12-6|§12.6]]), increases to liminf f_k ([[§12 Measurable Functions#^rem-12-4|Rem. §12.4]]) and satisfies g_k ≤ f_k. The [[Monotone Convergence Theorem (Lebesgue)]] then gives ∫liminf f_k = lim ∫g_k ≤ liminf ∫f_k. It is the middle link of MCT → Fatou → DCT.
 - **Where hypotheses matter.** The inequality can be strict: for f_k = k·χ_(0,1/k) the two sides are 0 and 1 ([[§14 The Lebesgue Integral for Simple Functions#^ex-14-1|Ex. §14.1]]), with mass escaping as in the 451 [[§25 More on Uniform Convergence#^ex-25-1|escaping triangle]]. Nonnegativity is needed. For signed functions a dominator replaces it ([[§15 The General Lebesgue Integral#^thm-15-6|§15.6]]).

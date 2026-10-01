@@ -435,7 +435,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 ^rem-9-8
 
 > [!remark] Remark: The Norm Decides, Not the Set
-> A second trap. As *sets*, $C[a,b] \subset L^1[a,b]$, and $L^1[a,b]$ is complete; but $L^1[a,b]$ is not the completion of $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$, which is already complete (Theorem [[§9 Completeness#^thm-9-1|§9.1]]) and is therefore its own completion. The two norms $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ are not [[§10 New Normed Spaces from Old#^def-10-1|equivalent]], so they give different topologies, different Cauchy sequences, and different completions. A normed linear space is the pair $(X, \|\cdot\|)$, never the set alone; the completion is determined by the norm. The same set $C[a,b]$ with the $L^p$ norm, $1 \le p < \infty$, does have completion $L^p[a,b]$ ([[§14 The Function Spaces Lᵖ(Ω)#The Completion of $C[a,b]$ in the $L^p$ Norm|§14]]).
+> A second trap. As *sets*, $C[a,b] \subset L^1[a,b]$, and $L^1[a,b]$ is complete; but $L^1[a,b]$ is not the completion of $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$, which is already complete (Theorem [[§9 Completeness#^thm-9-1|§9.1]]) and is therefore its own completion. The two norms $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ are not [[§10 New Normed Spaces from Old#^def-10-1|equivalent]], so they give different topologies, different Cauchy sequences, and different completions. A normed linear space is the pair $(X, \|\cdot\|)$, never the set alone; the completion is determined by the norm. The same set $C[a,b]$ with the $L^p$ norm, $1 \le p < \infty$, does have completion $L^p[a,b]$ ([[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]]).
 
 ^rem-9-9
 

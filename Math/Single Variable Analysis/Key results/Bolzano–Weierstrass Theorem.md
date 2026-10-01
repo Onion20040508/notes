@@ -26,6 +26,10 @@ tags: [real-analysis, hub]
 - [[§5 Topology of ℝⁿ#^rem-5-1|Remark]]
 - [[§5 Topology of ℝⁿ#^thm-5-1|Theorem §5.1: Bolzano–Weierstrass]]
 
+## Used in (Functional Analysis)
+- [[§10 New Normed Spaces from Old#^thm-10-3|Theorem §10.3: All Norms on a Finite-Dimensional Space are Equivalent]]
+- [[§15 Compactness and the Unit Ball#^ex-15-1|Example §15.1: The Closed Unit Ball in 𝔽ⁿ]]
+
 ## Connections
 - Sequential compactness of bounded sets; the $\mathbb{R}^n$ version is in §13.
 - The engine behind the [[Extreme Value Theorem]] and uniform continuity on closed bounded intervals (§19). In topology it becomes 'compact ⟺ sequentially compact' for metric spaces.
