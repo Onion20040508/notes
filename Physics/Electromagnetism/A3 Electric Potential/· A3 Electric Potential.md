@@ -8,8 +8,8 @@ tags: [chapter, electromagnetism]
 # A3 Electric Potential
 ← [[· A2 Gauss's Law]] · ↑ [[Electromagnetism]] · [[· A4 Capacitance]] →
 
-**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (6), [[· A2 Gauss's Law|A2 Gauss's Law]] (6)
-**Used by:** [[· A4 Capacitance|A4 Capacitance]] (17), [[· A5 Current and Resistance|A5 Current and Resistance]] (2), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (4), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (1), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (2), [[· A10 Inductance|A10 Inductance]] (2)
+**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (10), [[· A2 Gauss's Law|A2 Gauss's Law]] (14)
+**Used by:** [[· A4 Capacitance|A4 Capacitance]] (17), [[· A5 Current and Resistance|A5 Current and Resistance]] (3), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (6), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (2), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (3), [[· A10 Inductance|A10 Inductance]] (2)
 
 ## Sections
 - [[§A3.1 Electric Potential Energy]] — UP Vol. 2 §7.1
@@ -34,3 +34,4 @@ tags: [chapter, electromagnetism]
 - [[§A3.5 Equipotentials and Conductors#^thm-a3-5-2|§A3.5.2]] A Conductor in Equilibrium Is an Equipotential
 - [[§A3.5 Equipotentials and Conductors#^thm-a3-5-3|§A3.5.3]] Potential of a Charged Conducting Sphere
 - [[§A3.5 Equipotentials and Conductors#^thm-a3-5-4|§A3.5.4]] Charge Density and Curvature
+- [[§A3.5 Equipotentials and Conductors#^thm-a3-5-5|§A3.5.5]] Empty Cavity in a Conductor

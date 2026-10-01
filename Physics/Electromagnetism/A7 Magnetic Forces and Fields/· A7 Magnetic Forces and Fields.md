@@ -8,8 +8,8 @@ tags: [chapter, electromagnetism]
 # A7 Magnetic Forces and Fields
 ← [[· A6 Direct-Current Circuits]] · ↑ [[Electromagnetism]] · [[· A8 Sources of Magnetic Fields]] →
 
-**Builds on:** [[· A3 Electric Potential|A3 Electric Potential]] (1), [[· A5 Current and Resistance|A5 Current and Resistance]] (2)
-**Used by:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (1), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (4), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (8), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (1)
+**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (1), [[· A3 Electric Potential|A3 Electric Potential]] (2), [[· A5 Current and Resistance|A5 Current and Resistance]] (5)
+**Used by:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (1), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (4), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (8), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (5)
 
 ## Sections
 - [[§A7.1 Magnetic Field and the Force on a Moving Charge]] — UP Vol. 2 §11.1–11.2

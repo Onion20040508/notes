@@ -8,7 +8,7 @@ tags: [chapter, electromagnetism]
 # A12 Electromagnetic Waves
 ← [[· A11 Alternating-Current Circuits]] · ↑ [[Electromagnetism]]
 
-**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (3), [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A4 Capacitance|A4 Capacitance]] (2), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (1), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· A10 Inductance|A10 Inductance]] (2)
+**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (5), [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A4 Capacitance|A4 Capacitance]] (2), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (5), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· A10 Inductance|A10 Inductance]] (2)
 **Used by:** [[· A4 Capacitance|A4 Capacitance]] (1), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (1)
 
 ## Sections

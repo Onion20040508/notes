@@ -8,8 +8,8 @@ tags: [chapter, electromagnetism]
 # A5 Current and Resistance
 ← [[· A4 Capacitance]] · ↑ [[Electromagnetism]] · [[· A6 Direct-Current Circuits]] →
 
-**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (2), [[· A3 Electric Potential|A3 Electric Potential]] (2)
-**Used by:** [[· A2 Gauss's Law|A2 Gauss's Law]] (1), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (15), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (2), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (6), [[· A10 Inductance|A10 Inductance]] (4), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (6)
+**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (2), [[· A3 Electric Potential|A3 Electric Potential]] (3)
+**Used by:** [[· A2 Gauss's Law|A2 Gauss's Law]] (1), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (15), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (5), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (7), [[· A10 Inductance|A10 Inductance]] (4), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (6)
 
 ## Sections
 - [[§A5.1 Electric Current]] — UP Vol. 2 §9.1

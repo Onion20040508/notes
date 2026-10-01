@@ -8,7 +8,7 @@ tags: [chapter, electromagnetism]
 # A9 Electromagnetic Induction
 ← [[· A8 Sources of Magnetic Fields]] · ↑ [[Electromagnetism]] · [[· A10 Inductance]] →
 
-**Builds on:** [[· A3 Electric Potential|A3 Electric Potential]] (2), [[· A5 Current and Resistance|A5 Current and Resistance]] (6), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (8), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (8), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (2), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (1)
+**Builds on:** [[· A3 Electric Potential|A3 Electric Potential]] (3), [[· A5 Current and Resistance|A5 Current and Resistance]] (7), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (8), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (8), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (2), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (1)
 **Used by:** [[· A10 Inductance|A10 Inductance]] (8), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (3)
 
 ## Sections

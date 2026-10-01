@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ↑ [[Electromagnetism]] · [[· A2 Gauss's Law]] →
 
 **Builds on:** [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A4 Capacitance|A4 Capacitance]] (1), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (1)
-**Used by:** [[· A2 Gauss's Law|A2 Gauss's Law]] (10), [[· A3 Electric Potential|A3 Electric Potential]] (6), [[· A4 Capacitance|A4 Capacitance]] (4), [[· A5 Current and Resistance|A5 Current and Resistance]] (2), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (2), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (3)
+**Used by:** [[· A2 Gauss's Law|A2 Gauss's Law]] (11), [[· A3 Electric Potential|A3 Electric Potential]] (10), [[· A4 Capacitance|A4 Capacitance]] (4), [[· A5 Current and Resistance|A5 Current and Resistance]] (2), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (2), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (1), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (5)
 
 ## Sections
 - [[§A1.1 Electric Charge]] — UP Vol. 2 §5.1–5.2
@@ -21,8 +21,8 @@ tags: [chapter, electromagnetism]
 ## Principles
 - [[§A1.1 Electric Charge#^pr-a1-1-1|§A1.1.1]] Quantization of Charge
 - [[§A1.1 Electric Charge#^pr-a1-1-2|§A1.1.2]] Conservation of Charge
-- [[§A1.2 Coulomb's Law#^pr-a1-2-1|§A1.2.1]] Coulomb's Law
-- [[§A1.2 Coulomb's Law#^pr-a1-2-2|§A1.2.2]] Superposition of Electric Forces
+- [[§A1.2 Coulomb's Law#^pr-a1-2-2|§A1.2.2]] Coulomb's Law
+- [[§A1.2 Coulomb's Law#^pr-a1-2-3|§A1.2.3]] Superposition of Electric Forces
 
 ## Theorems
 - [[§A1.3 The Electric Field#^thm-a1-3-1|§A1.3.1]] Field of Point Charges

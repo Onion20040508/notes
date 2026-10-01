@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ← [[· A7 Magnetic Forces and Fields]] · ↑ [[Electromagnetism]] · [[· A9 Electromagnetic Induction]] →
 
 **Builds on:** [[· A5 Current and Resistance|A5 Current and Resistance]] (1), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (4)
-**Used by:** [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (2), [[· A10 Inductance|A10 Inductance]] (7), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (1), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (1)
+**Used by:** [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (2), [[· A10 Inductance|A10 Inductance]] (6), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (1), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (1)
 
 ## Sections
 - [[§A8.1 The Biot–Savart Law]] — UP Vol. 2 §12.1

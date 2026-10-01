@@ -8,8 +8,8 @@ tags: [chapter, electromagnetism]
 # A11 Alternating-Current Circuits
 ← [[· A10 Inductance]] · ↑ [[Electromagnetism]] · [[· A12 Electromagnetic Waves]] →
 
-**Builds on:** [[· A4 Capacitance|A4 Capacitance]] (3), [[· A5 Current and Resistance|A5 Current and Resistance]] (6), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (9), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (3), [[· A10 Inductance|A10 Inductance]] (7)
-**Used by:** —
+**Builds on:** [[· A4 Capacitance|A4 Capacitance]] (3), [[· A5 Current and Resistance|A5 Current and Resistance]] (6), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (9), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (3), [[· A10 Inductance|A10 Inductance]] (8)
+**Used by:** [[· A10 Inductance|A10 Inductance]] (1)
 
 ## Sections
 - [[§A11.1 AC Sources and Simple AC Circuits]] — UP Vol. 2 §15.1–15.2

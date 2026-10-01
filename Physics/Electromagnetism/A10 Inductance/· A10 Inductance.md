@@ -8,8 +8,8 @@ tags: [chapter, electromagnetism]
 # A10 Inductance
 ← [[· A9 Electromagnetic Induction]] · ↑ [[Electromagnetism]] · [[· A11 Alternating-Current Circuits]] →
 
-**Builds on:** [[· A3 Electric Potential|A3 Electric Potential]] (2), [[· A4 Capacitance|A4 Capacitance]] (4), [[· A5 Current and Resistance|A5 Current and Resistance]] (4), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (7), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (7), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (8)
-**Used by:** [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (7), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (2)
+**Builds on:** [[· A3 Electric Potential|A3 Electric Potential]] (2), [[· A4 Capacitance|A4 Capacitance]] (4), [[· A5 Current and Resistance|A5 Current and Resistance]] (4), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (7), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (6), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (8), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (1)
+**Used by:** [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (8), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (2)
 
 ## Sections
 - [[§A10.1 Mutual Inductance]] — UP Vol. 2 §14.1
