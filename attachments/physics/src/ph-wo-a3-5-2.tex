@@ -1,0 +1,22 @@
+% Figure for Oscillations, Waves and Optics §A3.5 (Mach cone of a source moving at v_s = 2v, so sin(theta) = 1/2).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % emissions at t_j = 0..4, snapshot at t = 5; v = 0.5, v_s = 1
+  \foreach \j in {0,...,4} {
+    \pgfmathsetmacro\cx{1.0*\j}
+    \pgfmathsetmacro\r{0.5*(5-\j)}
+    \draw[figB, thick] (\cx,0) circle (\r);
+    \fill[figB] (\cx,0) circle (1.1pt);
+  }
+  % cone: half-angle 30 degrees from the source at (5,0)
+  \draw[figR, very thick] (5,0) -- ++(150:5.6);
+  \draw[figR, very thick] (5,0) -- ++(210:5.6);
+  \fill[figR] (5,0) circle (2.6pt);
+  \draw[->, very thick, figR] (5,0) -- (5.9,0) node[above, pos=0.6] {$\vec v_s$};
+  % construction triangle for the oldest wave front
+  \draw[black!70, dashed] (0,0) -- node[left, font=\scriptsize, pos=0.55] {$vt$} (1.25,2.165);
+  \draw[black!70, dashed] (0,0) -- node[below, font=\scriptsize, pos=0.3] {$v_s t$} (5,0);
+  \draw[black!55, thin] (1.25,2.165) -- ++(-60:0.22) -- ++(30:0.22) -- ++(120:0.22);
+  \draw[black!70, thin] (4.1,0) arc (180:150:0.9); \node[font=\scriptsize] at (3.75,0.27) {$\theta$};
+  \node[figR, font=\scriptsize, anchor=south east] at ($(5,0)+(150:5.6)$) {shock wave};
+  \node[font=\scriptsize, black!70, anchor=west] at (6.1,-0.9) {$\sin\theta = \dfrac{vt}{v_s t} = \dfrac{1}{M}$};
+\end{tikzpicture}

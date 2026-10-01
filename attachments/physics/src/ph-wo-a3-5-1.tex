@@ -1,0 +1,22 @@
+% Figure for Oscillations, Waves and Optics §A3.5 (wave fronts of a source moving at v_s = v/2 through still air; crests emitted one period apart).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % emissions at t_j = 0..4 (period T = 1), snapshot at t = 5; v = 1, v_s = 0.5 (units of length per T)
+  \foreach \j in {0,...,4} {
+    \pgfmathsetmacro\cx{0.5*\j}
+    \pgfmathsetmacro\r{5-\j}
+    \draw[figB, thick] (\cx,0) circle (\r);
+    \fill[figB] (\cx,0) circle (1.1pt);
+  }
+  \fill[figR] (2.5,0) circle (2.6pt);
+  \draw[->, very thick, figR] (2.5,0) -- (3.4,0) node[above, pos=0.6] {$\vec v_s$};
+  % spacing annotations
+  \draw[<->, black!70] (2.8,-0.55) -- node[below, font=\scriptsize] {$(v - v_s)T$} (3.3,-0.55);
+  \draw[<->, black!70] (-3.5,-0.55) -- node[below, font=\scriptsize] {$(v + v_s)T$} (-2.0,-0.55);
+  \draw[black!35, thin] (2.8,-0.6) -- (2.8,0); \draw[black!35, thin] (3.3,-0.6) -- (3.3,0);
+  \draw[black!35, thin] (-3.5,-0.6) -- (-3.5,0); \draw[black!35, thin] (-2.0,-0.6) -- (-2.0,0);
+  % observers
+  \node[draw, circle, inner sep=1.6pt, fill=white] (A) at (5.9,0) {};
+  \node[font=\scriptsize, align=center, anchor=west] at (6.05,0) {observer ahead:\\ shorter $\lambda$, higher $f_o$};
+  \node[draw, circle, inner sep=1.6pt, fill=white] (B) at (-5.5,0) {};
+  \node[font=\scriptsize, align=center, anchor=east] at (-5.65,0) {observer behind:\\ longer $\lambda$, lower $f_o$};
+\end{tikzpicture}

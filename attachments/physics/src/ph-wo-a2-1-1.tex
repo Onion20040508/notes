@@ -1,0 +1,27 @@
+% Figure for Oscillations, Waves and Optics §A2.1 (snapshot of a sinusoidal travelling wave at t = 0 and a quarter period later, with wavelength, amplitude, wave velocity and the up-and-down motion of one element marked).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \begin{axis}[nfig, width=11cm, height=5cm, xmin=0, xmax=2.35, ymin=-1.55, ymax=1.75,
+      axis lines=middle, xlabel={$x$}, ylabel={$y$}, xtick=\empty, ytick=\empty,
+      xlabel style={anchor=west}, ylabel style={anchor=south}, clip=false]
+    \addplot[black!40, dashed, thin, domain=0:2.25, samples=120] {sin(deg(2*pi*x))};
+    \addplot[figB, very thick, domain=0:2.25, samples=120] {sin(deg(2*pi*(x-0.25)))};
+    % wavelength between two crests of the solid curve
+    \draw[<->, black!70] (axis cs:0.5,1.25) -- node[above, font=\scriptsize] {$\lambda$} (axis cs:1.5,1.25);
+    \draw[black!40, thin] (axis cs:0.5,1.0) -- (axis cs:0.5,1.32);
+    \draw[black!40, thin] (axis cs:1.5,1.0) -- (axis cs:1.5,1.32);
+    % amplitude
+    \draw[<->, black!70] (axis cs:2.32,0) -- node[right, font=\scriptsize] {$A$} (axis cs:2.32,1);
+    \draw[black!40, thin] (axis cs:2.2,1) -- (axis cs:2.35,1);
+    % wave velocity
+    \draw[->, figR, very thick] (axis cs:0.62,1.55) -- node[above, font=\scriptsize] {$\vec v$} (axis cs:0.95,1.55);
+    % crest moved by lambda/4
+    \draw[->, black!55] (axis cs:0.25,1.06) -- (axis cs:0.48,1.06);
+    \node[black!55, font=\scriptsize, anchor=south] at (axis cs:0.36,1.08) {$\lambda/4$};
+    % one element moving up and down
+    \addplot[only marks, mark=*, mark size=2pt, figR] coordinates {(1.75,0)};
+    \draw[<->, figR, thick] (axis cs:1.83,-1) -- (axis cs:1.83,1);
+    \node[figR, font=\scriptsize, anchor=south west, align=left] at (axis cs:1.86,1.04) {one element:\\ SHM, $\pm A$};
+    \node[black!55, font=\scriptsize, anchor=north west] at (axis cs:0.02,-1.08) {dashed: $t = 0$};
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:0.02,-1.3) {solid: $t = T/4$};
+  \end{axis}
+\end{tikzpicture}

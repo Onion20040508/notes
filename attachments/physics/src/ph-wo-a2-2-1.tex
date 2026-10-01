@@ -1,0 +1,23 @@
+% Figure for Oscillations, Waves and Optics §A2.2 (the wave y = 0.20 m sin(6.28 x - 1.57 t) of University Physics Example 16.3: left, snapshots at t = 0 and t = 0.80 s; right, the motion of the element at x = 0.60 m in time).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \begin{axis}[nfig, name=left, width=6.6cm, height=4.6cm, xmin=0, xmax=2.15, ymin=-0.3, ymax=0.34,
+      axis lines=middle, xlabel={$x$ (m)}, ylabel={$y$ (m)}, xtick={0.5,1,1.5,2}, ytick={-0.2,0.2},
+      xlabel style={anchor=west}, ylabel style={anchor=south}, clip=false]
+    \addplot[black!45, dashed, thin, domain=0:2, samples=120] {0.2*sin(deg(6.28*x))};
+    \addplot[figB, very thick, domain=0:2, samples=120] {0.2*sin(deg(6.28*x - 1.57*0.8))};
+    \addplot[only marks, mark=*, mark size=1.5pt, black!60] coordinates {(0.25,0.2)};
+    \addplot[only marks, mark=*, mark size=1.5pt, figB] coordinates {(0.45,0.2)};
+    \draw[->, figR, thick] (axis cs:0.25,0.27) -- node[above, font=\scriptsize] {$0.20$ m} (axis cs:0.45,0.27);
+    \node[font=\scriptsize, black!55, anchor=north west] at (axis cs:1.02,-0.21) {dashed: $t = 0$};
+    \node[font=\scriptsize, figB, anchor=north west] at (axis cs:1.02,-0.255) {solid: $t = 0.80$ s};
+  \end{axis}
+  \begin{axis}[nfig, at={(left.east)}, anchor=west, xshift=1.4cm, width=6.6cm, height=4.6cm, xmin=0, xmax=8.6, ymin=-0.3, ymax=0.34,
+      axis lines=middle, xlabel={$t$ (s)}, ylabel={$y$ (m)}, xtick={2,4,6,8}, ytick={-0.2,0.2},
+      xlabel style={anchor=west}, ylabel style={anchor=south}, clip=false]
+    \addplot[figG, very thick, domain=0:8, samples=160] {0.2*sin(deg(6.28*0.6 - 1.57*x))};
+    \draw[<->, black!60] (axis cs:3.0,-0.27) -- node[below, font=\scriptsize] {$T = 4.0$ s} (axis cs:7.0,-0.27);
+    \draw[black!35, thin] (axis cs:3.0,-0.3) -- (axis cs:3.0,{0.2*sin(deg(6.28*0.6-1.57*3))});
+    \draw[black!35, thin] (axis cs:7.0,-0.3) -- (axis cs:7.0,{0.2*sin(deg(6.28*0.6-1.57*7))});
+    \node[font=\scriptsize, figG, anchor=south west] at (axis cs:0.2,0.22) {element at $x = 0.60$ m};
+  \end{axis}
+\end{tikzpicture}
