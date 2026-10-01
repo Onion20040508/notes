@@ -1,0 +1,39 @@
+% Figure for Oscillations, Waves and Optics §B4.2: (left) a string plucked at d = L/3 (height h), computed from the mode sum / d'Alembert form at six instants over half a period tau_1 = 2L/c, with the initial shape dashed; (right) mode amplitudes |A_n|/h for plucks at L/3 and L/2.
+\begin{tikzpicture}[font=\small]
+  \draw[black!30, thin] (0,0.000) -- (5.0,0.000);
+  \draw[figB, very thick, line join=round] (0.000,0.000) -- (1.667,0.550) -- (5.000,-0.000);
+  \fill[black!70] (-0.08,-0.300) rectangle (0,0.300); \fill[black!70] (5.0,-0.300) rectangle (5.08,0.300);
+  \node[anchor=east, font=\scriptsize] at (-0.15,0.000) {$t = 0$};
+  \draw[black!30, thin] (0,-1.050) -- (5.0,-1.050);
+  \draw[black!35, thin, dashed] (0.000,-1.050) -- (1.667,-0.500) -- (5.000,-1.050);
+  \draw[figB, very thick, line join=round] (0.000,-1.050) -- (0.833,-0.775) -- (2.500,-0.638) -- (5.000,-1.050);
+  \fill[black!70] (-0.08,-1.350) rectangle (0,-0.750); \fill[black!70] (5.0,-1.350) rectangle (5.08,-0.750);
+  \node[anchor=east, font=\scriptsize] at (-0.15,-1.050) {$t = \tfrac{1}{12}\tau_1$};
+  \draw[black!30, thin] (0,-2.100) -- (5.0,-2.100);
+  \draw[black!35, thin, dashed] (0.000,-2.100) -- (1.667,-1.550) -- (5.000,-2.100);
+  \draw[figB, very thick, line join=round] (0.000,-2.100) -- (3.333,-1.825) -- (5.000,-2.100);
+  \fill[black!70] (-0.08,-2.400) rectangle (0,-1.800); \fill[black!70] (5.0,-2.400) rectangle (5.08,-1.800);
+  \node[anchor=east, font=\scriptsize] at (-0.15,-2.100) {$t = \tfrac16\tau_1$};
+  \draw[black!30, thin] (0,-3.150) -- (5.0,-3.150);
+  \draw[black!35, thin, dashed] (0.000,-3.150) -- (1.667,-2.600) -- (5.000,-3.150);
+  \draw[figB, very thick, line join=round] (0.000,-3.150) -- (0.833,-3.288) -- (4.167,-3.013) -- (5.000,-3.150);
+  \fill[black!70] (-0.08,-3.450) rectangle (0,-2.850); \fill[black!70] (5.0,-3.450) rectangle (5.08,-2.850);
+  \node[anchor=east, font=\scriptsize] at (-0.15,-3.150) {$t = \tfrac14\tau_1$};
+  \draw[black!30, thin] (0,-4.200) -- (5.0,-4.200);
+  \draw[black!35, thin, dashed] (0.000,-4.200) -- (1.667,-3.650) -- (5.000,-4.200);
+  \draw[figB, very thick, line join=round] (0.000,-4.200) -- (1.667,-4.475) -- (5.000,-4.200);
+  \fill[black!70] (-0.08,-4.500) rectangle (0,-3.900); \fill[black!70] (5.0,-4.500) rectangle (5.08,-3.900);
+  \node[anchor=east, font=\scriptsize] at (-0.15,-4.200) {$t = \tfrac13\tau_1$};
+  \draw[black!30, thin] (0,-5.250) -- (5.0,-5.250);
+  \draw[black!35, thin, dashed] (0.000,-5.250) -- (1.667,-4.700) -- (5.000,-5.250);
+  \draw[figB, very thick, line join=round] (0.000,-5.250) -- (3.333,-5.800) -- (5.000,-5.250);
+  \fill[black!70] (-0.08,-5.550) rectangle (0,-4.950); \fill[black!70] (5.0,-5.550) rectangle (5.08,-4.950);
+  \node[anchor=east, font=\scriptsize] at (-0.15,-5.250) {$t = \tfrac12\tau_1$};
+  \begin{axis}[nfig, at={(7.0cm,-5.6cm)}, anchor=south west, width=7.4cm, height=6.6cm, xmin=0.3, xmax=12.7, ymin=0, ymax=0.85,
+      xtick={1,2,3,4,5,6,7,8,9,10,11,12}, ytick={0,0.2,0.4,0.6,0.8}, xlabel={mode $n$}, ylabel={$\lvert A_n\rvert/h$}, clip=false]
+    \addplot[ybar, bar width=4.2pt, fill=figB, draw=figB, line width=0.3pt] coordinates {(0.83,0.7897) (1.83,0.1974) (2.83,0.0000) (3.83,0.0494) (4.83,0.0316) (5.83,0.0000) (6.83,0.0161) (7.83,0.0123) (8.83,0.0000) (9.83,0.0079) (10.83,0.0065) (11.83,0.0000)};
+    \addplot[ybar, bar width=4.2pt, fill=figO!70, draw=figO, line width=0.3pt] coordinates {(1.17,0.8106) (2.17,0.0000) (3.17,0.0901) (4.17,0.0000) (5.17,0.0324) (6.17,0.0000) (7.17,0.0165) (8.17,0.0000) (9.17,0.0100) (10.17,0.0000) (11.17,0.0067) (12.17,0.0000)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:5.5,0.66) {pluck at $L/3$};
+    \node[figO, font=\scriptsize, anchor=west] at (axis cs:5.5,0.57) {pluck at $L/2$};
+  \end{axis}
+\end{tikzpicture}

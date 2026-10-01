@@ -1,0 +1,25 @@
+% Figure for Oscillations, Waves and Optics §B5.2 (reflection and transmission coefficients at a junction as functions of the impedance ratio Z2/Z1 on a logarithmic axis: left, displacement amplitude coefficients r and t (Theorem §B5.2.4); right, power coefficients R = r^2 and T = 4 Z1 Z2/(Z1+Z2)^2 (Theorem §B5.2.5)).
+\begin{tikzpicture}
+  \begin{axis}[nfig, name=L, width=7.4cm, height=5.4cm, xmin=-2, xmax=2, ymin=-1.15, ymax=2.15,
+      xtick={-2,-1,0,1,2}, xticklabels={$0.01$,$0.1$,$1$,$10$,$100$}, ytick={-1,0,1,2},
+      xlabel={$Z_2/Z_1$}, ylabel={amplitude coefficient}, axis lines=left, clip=false]
+    \draw[black!30, thin] (axis cs:-2,0) -- (axis cs:2,0);
+    \draw[black!30, thin, dashed] (axis cs:0,-1.15) -- (axis cs:0,2.15);
+    \addplot[figB, domain=-2:2, samples=200] {(1-10^x)/(1+10^x)};
+    \addplot[figG, domain=-2:2, samples=200] {2/(1+10^x)};
+    \node[figG, font=\scriptsize, anchor=south west] at (axis cs:-1.95,1.98) {$t = \dfrac{2Z_1}{Z_1 + Z_2}$};
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:-1.95,0.8) {$r = \dfrac{Z_1 - Z_2}{Z_1 + Z_2}$};
+    \node[font=\scriptsize, black!60, anchor=west, align=left] at (axis cs:-1.95,-0.75) {free-end limit\\ $r \to 1$, $t \to 2$};
+    \node[font=\scriptsize, black!60, anchor=east, align=right] at (axis cs:1.95,1.0) {fixed-end limit\\ $r \to -1$, $t \to 0$};
+  \end{axis}
+  \begin{axis}[nfig, at={(L.east)}, anchor=west, xshift=1.3cm, width=7.4cm, height=5.4cm, xmin=-2, xmax=2, ymin=0, ymax=1.15,
+      xtick={-2,-1,0,1,2}, xticklabels={$0.01$,$0.1$,$1$,$10$,$100$}, ytick={0,0.5,1},
+      xlabel={$Z_2/Z_1$}, ylabel={fraction of incident power}, axis lines=left, clip=false]
+    \draw[black!30, thin, dashed] (axis cs:0,0) -- (axis cs:0,1.15);
+    \addplot[figR, domain=-2:2, samples=200] {((1-10^x)/(1+10^x))^2};
+    \addplot[figO, domain=-2:2, samples=200] {4*10^x/(1+10^x)^2};
+    \node[figO, font=\scriptsize, anchor=south] at (axis cs:0,1.0) {$\mathcal T = \dfrac{4Z_1Z_2}{(Z_1 + Z_2)^2}$};
+    \node[figR, font=\scriptsize] at (axis cs:-1.5,0.55) {$\mathcal R = r^2$};
+    \node[figR, font=\scriptsize] at (axis cs:1.5,0.55) {$\mathcal R = r^2$};
+  \end{axis}
+\end{tikzpicture}

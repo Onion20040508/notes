@@ -1,0 +1,31 @@
+% Figure for Oscillations, Waves and Optics §B5.3 (energy in a standing wave y = A sin kx cos wt on a string, over one wavelength at t = 0, T/8 and T/4: kinetic (red) and potential (green) energy per unit length in units of mu w^2 A^2, with the string shape (grey, scaled by 1/2); computed from Def. §B5.3.1. Arrows: the energy flux at t = T/8 runs from the nodes to the antinodes).
+\begin{tikzpicture}
+  \pgfplotsset{sw/.style={nfig, width=11cm, height=3.2cm, xmin=0, xmax=1, ymin=-0.55, ymax=0.62,
+      ytick={0,0.5}, axis lines=left, clip=false, xtick={0,0.25,0.5,0.75,1}}}
+  \begin{axis}[sw, name=a, xticklabels={}]
+    \addplot[black!45, domain=0:1, samples=120, line width=0.6pt] {0.5*sin(deg(2*pi*x))};
+    \addplot[figG, domain=0:1, samples=160] {0.5*cos(deg(2*pi*x))^2};
+    \addplot[figR, domain=0:1, samples=2] {0};
+    \node[font=\scriptsize, anchor=west] at (axis cs:1.02,0.3) {$t = 0$};
+    \node[font=\scriptsize, figG, anchor=south] at (axis cs:0.5,0.5) {potential};
+    \node[font=\scriptsize, black!55, anchor=north] at (axis cs:0.25,-0.05) {string};
+  \end{axis}
+  \begin{axis}[sw, name=b, at={(a.south west)}, anchor=north west, yshift=-0.25cm, xticklabels={}]
+    \addplot[black!45, domain=0:1, samples=120, line width=0.6pt] {0.5*0.7071*sin(deg(2*pi*x))};
+    \addplot[figG, domain=0:1, samples=160] {0.25*cos(deg(2*pi*x))^2};
+    \addplot[figR, domain=0:1, samples=160] {0.25*sin(deg(2*pi*x))^2};
+    \draw[->, figO, thick, >={Stealth[length=1.8mm]}] (axis cs:0.04,0.45) -- (axis cs:0.21,0.45);
+    \draw[->, figO, thick, >={Stealth[length=1.8mm]}] (axis cs:0.46,0.45) -- (axis cs:0.29,0.45);
+    \draw[->, figO, thick, >={Stealth[length=1.8mm]}] (axis cs:0.54,0.45) -- (axis cs:0.71,0.45);
+    \draw[->, figO, thick, >={Stealth[length=1.8mm]}] (axis cs:0.96,0.45) -- (axis cs:0.79,0.45);
+    \node[font=\scriptsize, figO, anchor=south] at (axis cs:0.5,0.47) {energy flux};
+    \node[font=\scriptsize, anchor=west] at (axis cs:1.02,0.3) {$t = T/8$};
+  \end{axis}
+  \begin{axis}[sw, name=c, at={(b.south west)}, anchor=north west, yshift=-0.25cm,
+      xticklabels={$0$,$\lambda/4$,$\lambda/2$,$3\lambda/4$,$\lambda$}, xlabel={$x$}]
+    \addplot[black!45, domain=0:1, samples=2, line width=0.6pt] {0};
+    \addplot[figR, domain=0:1, samples=160] {0.5*sin(deg(2*pi*x))^2};
+    \node[font=\scriptsize, figR, anchor=south] at (axis cs:0.25,0.5) {kinetic};
+    \node[font=\scriptsize, anchor=west] at (axis cs:1.02,0.3) {$t = T/4$};
+  \end{axis}
+\end{tikzpicture}

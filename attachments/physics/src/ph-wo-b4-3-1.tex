@@ -1,0 +1,15 @@
+% Figure for Oscillations, Waves and Optics §B4.3: amplitude spectra (harmonic amplitude relative to the fundamental, n = 1..12) of a pure tone, a square wave (odd n, 1/n), a sawtooth (all n, 1/n) and a string plucked at L/10 (mode amplitudes, sin(n pi/10)/n^2).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=p0, width=4.6cm, height=4.2cm, xmin=0.3, xmax=12.7, ymin=0, ymax=1.12, xtick={1,4,8,12}, ytick={0,0.5,1}, ylabel={$\lvert c_n\rvert/\lvert c_1\rvert$}, xlabel={$n$}, title={(a) pure tone}, title style={font=\scriptsize, yshift=-4pt}]
+    \addplot[ybar, bar width=3.2pt, fill=figB, draw=figB, line width=0.3pt] coordinates {(1,1.0000) (2,0.0000) (3,0.0000) (4,0.0000) (5,0.0000) (6,0.0000) (7,0.0000) (8,0.0000) (9,0.0000) (10,0.0000) (11,0.0000) (12,0.0000)};
+  \end{axis}
+  \begin{axis}[nfig, name=p1, at={(p0.east)}, anchor=west, xshift=0.55cm, width=4.6cm, height=4.2cm, xmin=0.3, xmax=12.7, ymin=0, ymax=1.12, xtick={1,4,8,12}, ytick={0,0.5,1}, yticklabels={}, xlabel={$n$}, title={(b) square wave}, title style={font=\scriptsize, yshift=-4pt}]
+    \addplot[ybar, bar width=3.2pt, fill=figR, draw=figR, line width=0.3pt] coordinates {(1,1.0000) (2,0.0000) (3,0.3333) (4,0.0000) (5,0.2000) (6,0.0000) (7,0.1429) (8,0.0000) (9,0.1111) (10,0.0000) (11,0.0909) (12,0.0000)};
+  \end{axis}
+  \begin{axis}[nfig, name=p2, at={(p1.east)}, anchor=west, xshift=0.55cm, width=4.6cm, height=4.2cm, xmin=0.3, xmax=12.7, ymin=0, ymax=1.12, xtick={1,4,8,12}, ytick={0,0.5,1}, yticklabels={}, xlabel={$n$}, title={(c) sawtooth}, title style={font=\scriptsize, yshift=-4pt}]
+    \addplot[ybar, bar width=3.2pt, fill=figG, draw=figG, line width=0.3pt] coordinates {(1,1.0000) (2,0.5000) (3,0.3333) (4,0.2500) (5,0.2000) (6,0.1667) (7,0.1429) (8,0.1250) (9,0.1111) (10,0.1000) (11,0.0909) (12,0.0833)};
+  \end{axis}
+  \begin{axis}[nfig, name=p3, at={(p2.east)}, anchor=west, xshift=0.55cm, width=4.6cm, height=4.2cm, xmin=0.3, xmax=12.7, ymin=0, ymax=1.12, xtick={1,4,8,12}, ytick={0,0.5,1}, yticklabels={}, xlabel={$n$}, title={(d) string plucked at $L/10$}, title style={font=\scriptsize, yshift=-4pt}]
+    \addplot[ybar, bar width=3.2pt, fill=figO, draw=figO, line width=0.3pt] coordinates {(1,1.0000) (2,0.4755) (3,0.2909) (4,0.1924) (5,0.1294) (6,0.0855) (7,0.0534) (8,0.0297) (9,0.0123) (10,0.0000) (11,0.0083) (12,0.0132)};
+  \end{axis}
+\end{tikzpicture}

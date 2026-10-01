@@ -17,15 +17,15 @@
   \end{axis}
   % bottom: Z2 = Z1/3, c2 = 3 ; r = +1/2, t = 3/2
   \begin{axis}[nfig, at={(top.south west)}, anchor=north west, yshift=-0.3cm, width=12cm, height=3.9cm,
-      xmin=-6, xmax=8, ymin=-0.75, ymax=1.75, ytick={0,0.5,1,1.5}, xtick={-6,-4,-2,0,2,4,6,8},
+      xmin=-6, xmax=8, ymin=-0.75, ymax=1.95, ytick={0,0.5,1,1.5}, xtick={-6,-4,-2,0,2,4,6,8},
       xlabel={$x$ (units with $c_1 = 1$; incident pulse at $t = 0$, the others at $t = 5.5$)}, ylabel={$\xi$}, axis lines=left, clip=false]
-    \fill[figB!8] (axis cs:0,-0.75) rectangle (axis cs:8,1.75);
-    \draw[black!60, thin] (axis cs:0,-0.75) -- (axis cs:0,1.75);
+    \fill[figB!8] (axis cs:0,-0.75) rectangle (axis cs:8,1.95);
+    \draw[black!60, thin] (axis cs:0,-0.75) -- (axis cs:0,1.95);
     \addplot[black!55, dashed, domain=-6:0, samples=200, line width=0.7pt] {exp(-((x+4)/\w)^2)};
     \addplot[figR, domain=-6:0, samples=200] {0.5*exp(-((x+1.5)/\w)^2)};
     \addplot[figR, domain=0:8, samples=300] {1.5*exp(-((x-4.5)/(3*\w))^2)};
     \node[font=\scriptsize, anchor=east, figB] at (axis cs:7.9,-0.45) {medium 2: $Z_2 = Z_1/3$, $c_2 = 3c_1$};
     \node[font=\scriptsize, figR, anchor=south] at (axis cs:-1.5,0.55) {reflected, $r = +\tfrac12$};
-    \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.25,1.05) {transmitted, $t = \tfrac32$};
+    \node[font=\scriptsize, figR, anchor=south] at (axis cs:4.5,1.52) {transmitted, $t = \tfrac32$};
   \end{axis}
 \end{tikzpicture}

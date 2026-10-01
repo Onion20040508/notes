@@ -1,0 +1,19 @@
+% Figure for Oscillations, Waves and Optics §B6.2 (the dispersion relation of the bead chain, omega = 2 omega_0 sin(ka/2) (blue), with the continuum line omega = omega_0 a k (dashed); at ka = 2 pi/3 the phase velocity is the slope of the chord from the origin (red) and the group velocity the slope of the tangent (green); computed from the formula).
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=9cm, height=6.4cm, xmin=0, xmax=3.45, ymin=0, ymax=2.6,
+      xtick={0,1.0472,2.0944,3.1416}, xticklabels={$0$,$\pi/3$,$2\pi/3$,$\pi$}, ytick={0,1,1.732,2}, yticklabels={$0$,$1$,$\sqrt3$,$2$},
+      xlabel={$ka$}, ylabel={$\omega/\omega_0$}, axis lines=left, clip=false]
+    \addplot[black!50, dashed, domain=0:2.3, samples=2, line width=0.7pt] {x};
+    \addplot[figB, domain=0:3.1416, samples=150] {2*sin(deg(x/2))};
+    \addplot[figR, domain=0:2.75, samples=2, line width=0.8pt] {0.8270*x};
+    \addplot[figG, domain=1.0:3.3, samples=2, line width=0.8pt] {1.7321 + 0.5*(x-2.0944)};
+    \draw[black!40, thin, dotted] (axis cs:2.0944,0) -- (axis cs:2.0944,1.7321);
+    \draw[black!40, thin, dotted] (axis cs:0,1.7321) -- (axis cs:2.0944,1.7321);
+    \draw[black!40, thin, dotted] (axis cs:3.1416,0) -- (axis cs:3.1416,2);
+    \fill (axis cs:2.0944,1.7321) circle (2pt);
+    \node[black!60, font=\scriptsize, anchor=east] at (axis cs:1.95,2.25) {continuum: $\omega = \omega_0 a k$};
+    \node[figR, font=\scriptsize, anchor=north west] at (axis cs:2.25,1.33) {chord: slope $v_p = \omega/k$};
+    \node[figG, font=\scriptsize, anchor=north west] at (axis cs:2.45,1.62) {tangent: slope $v_g = d\omega/dk$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.75,0.45) {$\omega = 2\omega_0\sin(ka/2)$};
+  \end{axis}
+\end{tikzpicture}

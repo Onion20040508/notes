@@ -1,0 +1,17 @@
+% Figure for Oscillations, Waves and Optics §B6.1 (amplitude modulation: left, the signal [1 + m cos(2 pi f_m t)] cos(2 pi f_c t) with f_c = 10 Hz, f_m = 1 Hz, m = 0.6, and its envelope; right, its spectrum, the carrier and two sidebands at f_c +- f_m with amplitudes m/2 (Theorem §B6.1.2)).
+\begin{tikzpicture}
+  \begin{axis}[nfig, name=a, width=9.2cm, height=4.2cm, xmin=0, xmax=3, ymin=-1.85, ymax=1.85, ytick={-1.6,0,1.6},
+      xlabel={$t$ (s)}, ylabel={signal}, axis lines=left, clip=false]
+    \addplot[black!50, dashed, domain=0:3, samples=150, line width=0.6pt] {1+0.6*cos(deg(2*pi*x))};
+    \addplot[black!50, dashed, domain=0:3, samples=150, line width=0.6pt] {-1-0.6*cos(deg(2*pi*x))};
+    \addplot[figB, domain=0:3, samples=900, line width=0.6pt] {(1+0.6*cos(deg(2*pi*x)))*cos(deg(20*pi*x))};
+    \node[font=\scriptsize, black!60, anchor=south] at (axis cs:1.5,1.85) {envelope $1 + m\cos 2\pi f_m t$};
+  \end{axis}
+  \begin{axis}[nfig, at={(a.east)}, anchor=west, xshift=1.4cm, width=5.6cm, height=4.2cm, xmin=6, xmax=14, ymin=0, ymax=1.25,
+      xtick={7,8,9,10,11,12,13},
+      ytick={0,0.3,1}, xlabel={$f$ (Hz)}, ylabel={amplitude}, axis lines=left, clip=false]
+    \addplot[figR, ycomb, mark=*, mark size=1.6pt, line width=1.2pt] coordinates {(9,0.3) (10,1) (11,0.3)};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:11.2,0.36) {$m/2$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:10.2,1.07) {carrier};
+  \end{axis}
+\end{tikzpicture}
