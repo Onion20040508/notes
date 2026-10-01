@@ -1,0 +1,70 @@
+% Figure for Electromagnetism §B7.1 (Example: PHY 422 HW 10 Problem 1 = Griffiths Problem 6.8): long cylinder with magnetization M = k s^2 phi-hat. Left: cross-section with M (orange, length proportional to s^2), the bound volume current J_b = 3ks z-hat out of the page (dots, density growing with s) and the bound surface current K_b = -kR^2 z-hat into the page (crosses). Right: computed B_phi(s) and the bound current enclosed by a circle of radius s.
+\begin{tikzpicture}[font=\small]
+\fill[black!7] (0,0) circle (1.50);
+\draw[black!60, thick] (0,0) circle (1.50);
+\draw[figB, line width=0.5pt] (0.470,0.095) circle (1.6pt); \fill[figB] (0.470,0.095) circle (0.55pt);
+\draw[figB, line width=0.5pt] (-0.318,0.360) circle (1.6pt); \fill[figB] (-0.318,0.360) circle (0.55pt);
+\draw[figB, line width=0.5pt] (-0.153,-0.455) circle (1.6pt); \fill[figB] (-0.153,-0.455) circle (0.55pt);
+\draw[figB, line width=0.5pt] (0.741,0.562) circle (1.6pt); \fill[figB] (0.741,0.562) circle (0.55pt);
+\draw[figB, line width=0.5pt] (0.023,0.930) circle (1.6pt); \fill[figB] (0.023,0.930) circle (0.55pt);
+\draw[figB, line width=0.5pt] (-0.713,0.597) circle (1.6pt); \fill[figB] (-0.713,0.597) circle (0.55pt);
+\draw[figB, line width=0.5pt] (-0.911,-0.185) circle (1.6pt); \fill[figB] (-0.911,-0.185) circle (0.55pt);
+\draw[figB, line width=0.5pt] (-0.424,-0.828) circle (1.6pt); \fill[figB] (-0.424,-0.828) circle (0.55pt);
+\draw[figB, line width=0.5pt] (0.383,-0.847) circle (1.6pt); \fill[figB] (0.383,-0.847) circle (0.55pt);
+\draw[figB, line width=0.5pt] (0.901,-0.229) circle (1.6pt); \fill[figB] (0.901,-0.229) circle (0.55pt);
+\draw[figB, line width=0.5pt] (1.248,0.590) circle (1.6pt); \fill[figB] (1.248,0.590) circle (0.55pt);
+\draw[figB, line width=0.5pt] (0.831,1.102) circle (1.6pt); \fill[figB] (0.831,1.102) circle (0.55pt);
+\draw[figB, line width=0.5pt] (0.223,1.362) circle (1.6pt); \fill[figB] (0.223,1.362) circle (0.55pt);
+\draw[figB, line width=0.5pt] (-0.435,1.310) circle (1.6pt); \fill[figB] (-0.435,1.310) circle (0.55pt);
+\draw[figB, line width=0.5pt] (-0.994,0.957) circle (1.6pt); \fill[figB] (-0.994,0.957) circle (0.55pt);
+\draw[figB, line width=0.5pt] (-1.325,0.386) circle (1.6pt); \fill[figB] (-1.325,0.386) circle (0.55pt);
+\draw[figB, line width=0.5pt] (-1.352,-0.274) circle (1.6pt); \fill[figB] (-1.352,-0.274) circle (0.55pt);
+\draw[figB, line width=0.5pt] (-1.070,-0.871) circle (1.6pt); \fill[figB] (-1.070,-0.871) circle (0.55pt);
+\draw[figB, line width=0.5pt] (-0.543,-1.269) circle (1.6pt); \fill[figB] (-0.543,-1.269) circle (0.55pt);
+\draw[figB, line width=0.5pt] (0.109,-1.376) circle (1.6pt); \fill[figB] (0.109,-1.376) circle (0.55pt);
+\draw[figB, line width=0.5pt] (0.736,-1.167) circle (1.6pt); \fill[figB] (0.736,-1.167) circle (0.55pt);
+\draw[figB, line width=0.5pt] (1.194,-0.692) circle (1.6pt); \fill[figB] (1.194,-0.692) circle (0.55pt);
+\draw[figB, line width=0.5pt] (1.379,-0.057) circle (1.6pt); \fill[figB] (1.379,-0.057) circle (0.55pt);
+\draw[figR, line width=0.5pt] (1.630,0.000) circle (1.6pt); \draw[figR, line width=0.45pt] (1.590,-0.040) -- (1.670,0.040) (1.590,0.040) -- (1.670,-0.040);
+\draw[figR, line width=0.5pt] (1.506,0.624) circle (1.6pt); \draw[figR, line width=0.45pt] (1.466,0.584) -- (1.546,0.664) (1.466,0.664) -- (1.546,0.584);
+\draw[figR, line width=0.5pt] (1.153,1.153) circle (1.6pt); \draw[figR, line width=0.45pt] (1.113,1.113) -- (1.193,1.193) (1.113,1.193) -- (1.193,1.113);
+\draw[figR, line width=0.5pt] (0.624,1.506) circle (1.6pt); \draw[figR, line width=0.45pt] (0.584,1.466) -- (0.664,1.546) (0.584,1.546) -- (0.664,1.466);
+\draw[figR, line width=0.5pt] (0.000,1.630) circle (1.6pt); \draw[figR, line width=0.45pt] (-0.040,1.590) -- (0.040,1.670) (-0.040,1.670) -- (0.040,1.590);
+\draw[figR, line width=0.5pt] (-0.624,1.506) circle (1.6pt); \draw[figR, line width=0.45pt] (-0.664,1.466) -- (-0.584,1.546) (-0.664,1.546) -- (-0.584,1.466);
+\draw[figR, line width=0.5pt] (-1.153,1.153) circle (1.6pt); \draw[figR, line width=0.45pt] (-1.193,1.113) -- (-1.113,1.193) (-1.193,1.193) -- (-1.113,1.113);
+\draw[figR, line width=0.5pt] (-1.506,0.624) circle (1.6pt); \draw[figR, line width=0.45pt] (-1.546,0.584) -- (-1.466,0.664) (-1.546,0.664) -- (-1.466,0.584);
+\draw[figR, line width=0.5pt] (-1.630,0.000) circle (1.6pt); \draw[figR, line width=0.45pt] (-1.670,-0.040) -- (-1.590,0.040) (-1.670,0.040) -- (-1.590,-0.040);
+\draw[figR, line width=0.5pt] (-1.506,-0.624) circle (1.6pt); \draw[figR, line width=0.45pt] (-1.546,-0.664) -- (-1.466,-0.584) (-1.546,-0.584) -- (-1.466,-0.664);
+\draw[figR, line width=0.5pt] (-1.153,-1.153) circle (1.6pt); \draw[figR, line width=0.45pt] (-1.193,-1.193) -- (-1.113,-1.113) (-1.193,-1.113) -- (-1.113,-1.193);
+\draw[figR, line width=0.5pt] (-0.624,-1.506) circle (1.6pt); \draw[figR, line width=0.45pt] (-0.664,-1.546) -- (-0.584,-1.466) (-0.664,-1.466) -- (-0.584,-1.546);
+\draw[figR, line width=0.5pt] (-0.000,-1.630) circle (1.6pt); \draw[figR, line width=0.45pt] (-0.040,-1.670) -- (0.040,-1.590) (-0.040,-1.590) -- (0.040,-1.670);
+\draw[figR, line width=0.5pt] (0.624,-1.506) circle (1.6pt); \draw[figR, line width=0.45pt] (0.584,-1.546) -- (0.664,-1.466) (0.584,-1.466) -- (0.664,-1.546);
+\draw[figR, line width=0.5pt] (1.153,-1.153) circle (1.6pt); \draw[figR, line width=0.45pt] (1.113,-1.193) -- (1.193,-1.113) (1.113,-1.113) -- (1.193,-1.193);
+\draw[figR, line width=0.5pt] (1.506,-0.624) circle (1.6pt); \draw[figR, line width=0.45pt] (1.466,-0.664) -- (1.546,-0.584) (1.466,-0.584) -- (1.546,-0.664);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (0.698,0.129) -- (0.649,0.287);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (0.237,0.669) -- (0.076,0.706);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (-0.461,0.540) -- (-0.573,0.418);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (-0.698,-0.129) -- (-0.649,-0.287);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (-0.237,-0.669) -- (-0.076,-0.706);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (0.461,-0.540) -- (0.573,-0.418);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (1.155,-0.222) -- (1.155,0.222);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (0.770,0.889) -- (0.385,1.111);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (-0.385,1.111) -- (-0.770,0.889);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (-1.155,0.222) -- (-1.155,-0.222);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (-0.770,-0.889) -- (-0.385,-1.111);
+\draw[figO, line width=0.9pt, -{Stealth[length=1.6mm]}] (0.385,-1.111) -- (0.770,-0.889);
+\node[font=\scriptsize, figO] at (0,0) {$\vec M$};
+\node[font=\scriptsize, figB, anchor=west] at (-1.7,-2.05) {$\odot$ $\vec J_b = 3ks\,\hat z$};
+\node[font=\scriptsize, figR, anchor=west] at (0.15,-2.05) {$\otimes$ $\vec K_b = -kR^2\hat z$};
+\begin{axis}[nfig, at={(2.6cm,-1.75cm)}, anchor=south west, xmin=0, xmax=1.8, ymin=0, ymax=1.2, xlabel={$s/R$}, xlabel style={font=\scriptsize}, width=6.2cm, height=4.4cm, xtick={0,0.5,1,1.5}, ytick={0,0.5,1}, legend style={font=\scriptsize, draw=none, fill=none, at={(0.02,0.99)}, anchor=north west}, legend cell align=left]
+\addplot[figB, domain=0:1, samples=60] {x^2};
+\addlegendentry{$B_\phi/\mu_0kR^2$}
+\addplot[figG, dashed, domain=0:1, samples=60] {x^3};
+\addlegendentry{$I_{\text{enc}}/2\pi kR^3$}
+\addplot[figB, forget plot] coordinates {(1,0) (1.8,0)};
+\addplot[figB, densely dotted, thin, forget plot] coordinates {(1,1) (1,0)};
+\addplot[figG, dashed, forget plot] coordinates {(1,0) (1.8,0)};
+\node[font=\scriptsize, black!70, anchor=west] at (axis cs:1.03,0.32) {$\vec H = \vec 0$};
+\node[font=\scriptsize, black!70, anchor=west] at (axis cs:1.03,0.17) {everywhere};
+\end{axis}
+\end{tikzpicture}

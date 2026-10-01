@@ -1,0 +1,29 @@
+% Figure for Electromagnetism §B6.3 (Definition §B6.3.1, Theorem §B6.3.3): how polar and axial vectors transform under reflection in a mirror plane (seen edge-on), and what this forces on the mirror itself.
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  \foreach \xs/\ttl/\col/\ax in {0/{polar vector: $\vec J$, $\vec A$, $\vec E$}/figR/0, 5.6/{axial vector: $\vec B$}/figB/1} {
+    \begin{scope}[xshift=\xs cm]
+      \fill[black!6] (-0.08,-2.0) rectangle (0.08,2.0);
+      \draw[black!55, thick, dashed] (0,-2.0) -- (0,2.0);
+      \node[font=\scriptsize, black!60, anchor=south] at (0,2.0) {mirror};
+      \node[font=\small, anchor=north] at (0,-2.15) {\ttl};
+      % vector parallel to the mirror
+      \draw[->, very thick, \col] (-1.6,0.55) -- (-1.6,1.55);
+      \ifnum\ax=0
+        \draw[->, very thick, \col] (1.6,0.55) -- (1.6,1.55);
+      \else
+        \draw[->, very thick, \col] (1.6,1.55) -- (1.6,0.55);
+      \fi
+      % vector perpendicular to the mirror
+      \draw[->, very thick, \col] (-2.1,-1.0) -- (-1.1,-1.0);
+      \ifnum\ax=0
+        \draw[->, very thick, \col] (2.1,-1.0) -- (1.1,-1.0);
+      \else
+        \draw[->, very thick, \col] (1.1,-1.0) -- (2.1,-1.0);
+      \fi
+      \node[font=\scriptsize, black!70] at (-1.6,0.25) {parallel};
+      \node[font=\scriptsize, black!70] at (-1.6,-1.35) {normal};
+      \node[font=\scriptsize, black!70] at (1.6,0.25) {image};
+      \node[font=\scriptsize, black!70] at (1.6,-1.35) {image};
+    \end{scope}
+  }
+\end{tikzpicture}
