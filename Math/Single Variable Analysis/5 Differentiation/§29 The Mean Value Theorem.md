@@ -38,6 +38,9 @@ Note the interval is *open*: it has no boundary points, so $x_0$ is automaticall
 
 ^pf-29-1
 
+> [!remark]- Connections
+> - Fermat's condition in several variables (all partials vanish at an interior extremum): [[§14 Optimization and Lagrange Multipliers#^thm-14-1|452 Thm. §14.1]].
+
 > [!theorem] Theorem §29.2: Rolle's Theorem
 > Let $f: [a,b] \to \mathbb{R}$ be continuous, and differentiable at every point of $(a,b)$ (briefly: differentiable on $(a,b)$). If $f(a) = f(b)$, then there exists $x_0 \in (a,b)$ with
 >
@@ -102,6 +105,9 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 > So $f$ takes the same value at any two points. Done.
 
 ^pf-29-4
+
+> [!remark]- Connections
+> - If $f' = 0$ only almost everywhere, the conclusion needs absolute continuity: [[§18 Differentiation Theory#^thm-18-27|551 Thm. §18.27]], with the Cantor function as counterexample ([[§18 Differentiation Theory#^ex-18-4|551 Ex. §18.4]]).
 
 > [!theorem] Corollary §29.5: Equal Derivatives Differ by a Constant
 > If $f, g: (a,b) \to \mathbb{R}$ are differentiable with $f'(x) = g'(x)$ for all $x$, then $f = g + c$ for some constant $c$.
@@ -314,6 +320,9 @@ This computation finds the *formula* but presupposes the differentiability of $f
 
 ![[m451-29-3.svg]]
 *Left: the graph of $f^{-1}$ (red) is the mirror image of the graph of $f$ (blue) in the line $y = x$; the mirror swaps rise and run, so the tangent at $(y_0, x_0)$ has slope $\tfrac{1}{f'(x_0)}$. Right: for $f(x) = x^3$ at $x_0 = 0$, the horizontal tangent ($f'(0) = 0$) mirrors into a vertical one — $y^{1/3}$ is not differentiable at $0$.*
+
+> [!remark]- Connections
+> - Several-variable version, with an invertible Jacobian in place of a nonzero derivative: [[§13 The Inverse Function Theorem#^thm-13-2|452 Thm. §13.2]].
 
 > [!example] Example §29.6: Arcsine
 > $f(x) = \sin x$ restricted to $\left[-\tfrac\pi2, \tfrac\pi2\right]$ (needed for $\arcsin$ to be well defined — draw the graph of $\sin$), with inverse $f^{-1}(y) = \arcsin y$:

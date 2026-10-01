@@ -257,6 +257,9 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 
 ^def-20-4
 
+> [!remark]- Connections
+> - Finite-dimensional home: [[§20 Orthonormal Bases#^ladr-6-27|LADR 6.27]], where an orthonormal basis is an orthonormal list that is also a basis; here the expansion is a series, not a finite linear combination.
+
 > [!theorem] Theorem §20.8: Characterizations of an Orthonormal Basis
 > Let $H$ be a Hilbert space and $\{e_\alpha\}_{\alpha \in \Lambda}$ an orthonormal set. The following are equivalent:
 > - (1) $\{e_\alpha\}_{\alpha \in \Lambda}$ is complete;
@@ -375,6 +378,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 > - The real trigonometric orthonormal list on $[-\pi, \pi]$ in finite dimensions: [[§20 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d).
 > - Used for the particle on a ring: [[§23 The Completeness Relation#^ex-23-2|Ex. §23.2]].
 > - Used in Quantum Mechanics: the completeness of the infinite-well states, proved from this basis — [[§B1.3 Stationary States and Expansion in Energy Eigenstates#^thm-b1-3-3|QM Theorem §B1.3.3]].
+> - The density step it needs (continuous functions vanishing at the endpoints are dense in $L^2[0,2\pi]$) is [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 Thm. §19.19]](iii).
 
 > [!remark] Remark: Fourier Series
 > Read through Theorem [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]], this is the theory of Fourier series in $L^2$: every $f \in L^2[0,2\pi]$ is $f = \sum_{n \in \mathbb{Z}} c_n e_n$ with $c_n = (f, e_n) = \frac{1}{\sqrt{2\pi}} \int_0^{2\pi} f(x)\, e^{-inx}\, dx$, the series converging in the $L^2$ norm (not necessarily pointwise), and Parseval's equality reads $\int_0^{2\pi} |f|^2 = \sum_n |c_n|^2$.
@@ -481,6 +485,10 @@ The two moves of the proof: cut off the tail, which is small because the series 
 
 ^pf-20-14
 
+> [!remark]- Connections
+> - The argument of [[§18 Countability Axioms#^ex-18-6|590 Ex. §18.6]] (ℝ^ω with the uniform metric): the 0–1 sequences are uncountably many points at mutual distance 1, which a separable metric space cannot contain ([[§18 Countability Axioms#^lem-18-2|590 Lemma §18.2]] with [[§18 Countability Axioms#^prop-18-4|590 Prop. §18.4]]).
+> - The function-space version, by the same uncountable-family argument: [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 Thm. §19.21]].
+
 > [!theorem] Proposition §20.15: $L^p(E)$ is Separable for $1 \le p < \infty$
 > Let $E \subset \mathbb{R}^n$ be measurable and $1 \le p < \infty$. Let $D$ be the set of functions on $E$ of the form
 >
@@ -542,6 +550,9 @@ A continuous $g$ and a step function on cubes with rational endpoints and ration
 > The hypothesis $m(E) > 0$ is added here: if $m(E) = 0$, then $L^\infty(E) = \{0\}$, which is separable. Wu stressed that measure theory supplies the examples of functional analysis (“I would suggest you really study real methods … measure theory is becoming very useful now”): without $L^p$ the course has few examples beyond sequence spaces.
 
 ^rem-20-11
+
+> [!remark]- Connections
+> - Proved in 551 with the uncountable family of indicators of $(0,t)$ at mutual $L^\infty$ distance 1: [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 Thm. §19.21]].
 
 ### Countable Orthonormal Bases
 
@@ -699,3 +710,6 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > On the board: “isomorphic either to $\mathbb{R}^n$, $n \in \mathbb{N}$, or $\ell^2$” — the real case. Over $\mathbb{C}$ the finite-dimensional models are $\mathbb{C}^n$, and $n = 0$ covers $H = \{0\}$. By Theorem [[§20 Orthonormal Sets and Bases#^thm-20-17|§20.17]] a separable $H$ has a countable orthonormal basis; the finite case gives $\mathbb{F}^n$ and the infinite case $\ell^2$.
 
 ^rem-20-14
+
+> [!remark]- Connections
+> - Finite-dimensional analogue: vector spaces are classified by dimension ([[Dimension shows whether vector spaces are isomorphic|LADR 3.70]]), and an orthonormal basis makes the isomorphism with Fⁿ preserve inner products ([[§20 Orthonormal Bases#^ladr-6-30|LADR 6.30]]).

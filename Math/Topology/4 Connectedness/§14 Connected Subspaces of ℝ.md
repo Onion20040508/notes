@@ -96,6 +96,9 @@ tags: [topology, math590]
 
 *Uses:* [[§14 Connected Subspaces of ℝ#^def-14-2|Def. §14.2]]
 
+> [!remark]- Connections
+> - The open intervals in 551's decomposition of an open subset of ℝ are its maximal connected subsets: [[§7 Structure of Open Sets#^prop-7-1|551 Prop. §7.1]].
+
 ## Intermediate Value Theorem
 
 > [!theorem] Theorem §14.3: Intermediate Value Theorem
@@ -195,6 +198,9 @@ tags: [topology, math590]
 
 ^rem-14-4
 
+> [!remark]- Connections
+> - The converse fails in general ([[§14 Connected Subspaces of ℝ#^ex-14-7|Ex. §14.7]], the topologist's sine curve) but holds for manifolds: [[§2 Topological Manifolds#^thm-2-9|591 Thm. §2.9]].
+
 > [!example] Example §14.7: Topologist's Sine Curve
 > $S \subseteq \mathbb{R}^2$, $S = \{(x, \sin(\frac{1}{x})) \mid 0 < x \leq 1\}$.
 >
@@ -208,6 +214,9 @@ tags: [topology, math590]
 
 ![[m590-14-1.svg]]
 *The topologist's sine curve. $S$ (blue) is a continuous image of $(0,1]$, so it is connected. As $x \to 0^+$ it oscillates ever faster between $\pm1$ and accumulates on the whole segment $\{0\} \times [-1,1]$ (red), so $\overline{S} = S \cup \{0\} \times [-1,1]$ is connected. No path can travel from the red segment into $S$: it would have to pass through infinitely many oscillations of height $2$ in a finite parameter interval, which is incompatible with continuity.*
+
+> [!remark]- Connections
+> - The function sin(1/x) and its failure to have a limit at 0: [[§17 Continuous Functions#^ex-17-5|451 Ex. §17.5]].
 
 > [!theorem] Theorem §14.5: Product of Path-Connected Spaces
 > If $X$ and $Y$ are path-connected, then $X \times Y$ is path-connected.

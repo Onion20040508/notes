@@ -30,6 +30,9 @@ Recall: $f$ is continuous at $x_0$ if $x_n \to x_0$ implies $f(x_n) \to f(x_0)$.
 
 ^rem-20-1
 
+> [!remark]- Connections
+> - Limits of functions of two variables (punctured δ-ball): [[§3 Continuity and Limits of Functions#^def-3-2|452 Def. §3.2]].
+
 > [!example] Example §20.1: First computations
 > $S = (0,1)$, $f(x) = \tfrac1x$: then $\lim_{x\to 0^S} f(x) = +\infty$ and $\lim_{x \to 1^S} f(x) = 1$.
 

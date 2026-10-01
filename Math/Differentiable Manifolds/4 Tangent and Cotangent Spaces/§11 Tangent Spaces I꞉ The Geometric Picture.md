@@ -106,6 +106,9 @@ It is not obvious from [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-
 
 ^rem-11-3
 
+> [!remark]- Connections
+> - For $n = 2$, $k = 1$ this is the tangent plane to a graph $z = f(x, y)$, [[§6 Differentiability#^def-6-3|452 Def. §6.3]].
+
 > [!theorem] Theorem §11.3: The Geometric Tangent Space Is the Kernel of the Jacobian
 > $T^{\mathrm{geo}}_pM = \ker F'(p)$, where $F'(p) : \mathbb{R}^{n+k} \to \mathbb{R}^k$ is the Jacobian at $p$. In particular $T^{\mathrm{geo}}_pM$ is a linear subspace of $\mathbb{R}^{n+k}$ of dimension $n = \dim M$.
 >
@@ -169,6 +172,9 @@ It is not obvious from [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-
 > The corollary is the infinitesimal form of [[§9 Manifolds in Euclidean Space|§9]]: the geometric tangent space can be read off from the *external* description as the kernel of the constraint map, or from the *internal* description as the image of the derivative of a parametrization, and the two agree. The geometric definition, via curves, is the one that makes no reference to either presentation — which is why it is the one that will generalize.
 
 ^rem-11-5
+
+> [!remark]- Connections
+> - The image description for surfaces in ℝ³, where $D\mathbf{X}$ has columns $\mathbf{X}_u, \mathbf{X}_v$: [[§18 Surface Integrals#^def-18-2|452 Def. §18.2]] and [[§18 Surface Integrals#^rem-18-3|452 §18, Regularity as a Rank Condition on the Derivative]].
 
 ## Examples
 

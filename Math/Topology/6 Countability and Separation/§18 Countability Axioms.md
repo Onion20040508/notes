@@ -74,6 +74,9 @@ tags: [topology, math590]
 
 ^rem-18-2
 
+> [!remark]- Connections
+> - One of the three axioms of a topological manifold, [[§2 Topological Manifolds#^def-2-2|591 Def. §2.2]]; for manifolds it forces countably many components, [[§2 Topological Manifolds#^prop-2-6|591 Prop. §2.6]].
+
 > [!example] Example §18.3
 > $\mathbb{R}$ is second-countable. $\mathcal{B} = \{(a, b) \mid a, b \in \mathbb{Q}\}$ is a countable basis.
 
@@ -131,6 +134,10 @@ tags: [topology, math590]
 
 *Uses:* [[§5 Subspace Topology#^def-5-1|Def. §5.1]], [[§2 Basis for a Topology#^def-2-1|Def. §2.1]]
 
+> [!remark]- Connections
+> - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable ([[§24 Position Eigenstates and Continuous Resolutions#^prop-24-1|556 Prop. §24.1]]), and the 0–1 sequences, at mutual distance 1, show that ℓ^∞ is not separable ([[§20 Orthonormal Sets and Bases#^prop-20-14|556 Prop. §20.14]]).
+> - The same argument shows L^∞ is not separable: the indicators of (0, t) form an uncountable family at mutual distance 1, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 Thm. §19.21]].
+
 ## Inheritance Properties
 
 > [!theorem] Theorem §18.3: Subspaces and Products
@@ -173,6 +180,10 @@ tags: [topology, math590]
 > $X$ is **separable** if it has a countable [[§18 Countability Axioms#^def-18-4|dense]] subset: there exists a countable $D \subseteq X$ with $\overline{D} = X$.
 
 ^def-18-5
+
+> [!remark]- Connections
+> - Separability of sequence and function spaces: [[§20 Orthonormal Sets and Bases#^def-20-5|556 Def. §20.5]], with ℓᵖ and Lᵖ separable for p < ∞ and ℓ^∞, L^∞ not ([[§20 Orthonormal Sets and Bases#^prop-20-13|556 Prop. §20.13]]–[[§20 Orthonormal Sets and Bases#^prop-20-16|556 Prop. §20.16]]).
+> - The metric-space form, with density by sequences: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|551 Def. §19.9]]; Lᵖ is separable for p < ∞ ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 Cor. §19.20]]) and L^∞ is not ([[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 Thm. §19.21]]).
 
 > [!example] Example §18.8: Standard Examples
 > 1. $\mathbb{R}$ is separable: $D = \mathbb{Q}$.
@@ -253,3 +264,6 @@ tags: [topology, math590]
 ^pf-18-6
 
 *Uses:* [[§7 Interior and Closure#^thm-7-3|§7.3]], [[§18 Countability Axioms#^def-18-4|Def. §18.4]]
+
+> [!remark]- Connections
+> - For subsets of ℝⁿ, 551 proves the countable subcover of (b) directly: [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-1|551 Thm. §6.1]], using the countable basis of rational balls built in [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-3|551 Lemma §6.3]].

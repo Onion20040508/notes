@@ -117,6 +117,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > [!remark]- Connections
 > - A linear map $\mathbb{R}^2 \to \mathbb{R}$ is a [[§12 Duality#^ladr-3-108|linear functional]] (LADR 3.108), so $Df$ lives in the dual space; this is the viewpoint of the 1-form $df$ in [[§22 The Algebra of Differential Forms#^prop-22-6|Gradient = Differential = 1-Form]].
 > - Jacobians of compositions multiply: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Chain Rule for Jacobians]], i.e. [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps]] (LADR 3.43).
+> - In 591 the total derivative becomes the coordinate-free differential of a map between vector spaces, [[§10 Vector Spaces and Matrix Groups#^def-10-9|591 Def. §10.9]], and the Jacobian is the matrix of the differential of a smooth map between manifolds in coordinate bases, [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|591 Thm. §12.22]].
 
 > [!definition] Definition §6.3: Tangent Plane
 > Let $f$ be differentiable at $(x_0, y_0)$. The **tangent plane** to the graph of $f$ at $(x_0, y_0, f(x_0, y_0))$ is the plane
@@ -133,6 +134,9 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > Differentiability means: the tangent plane approximates $f$ well *in all directions* — the error is $o(\rho)$ uniformly, not merely along the axes.
 
 ^rem-6-3
+
+> [!remark]- Connections
+> - The general statement in 591: the tangent space to the graph of a smooth $G : \mathbb{R}^n \to \mathbb{R}^k$ is the graph of $G'(x_0)$, [[§11 Tangent Spaces I꞉ The Geometric Picture#^lem-11-2|591 Lemma §11.2]].
 
 > [!theorem] Theorem §6.1: Differentiability Implies All Directional Derivatives
 > If $f$ is differentiable at $(x_0, y_0)$ with derivative $L = Df_{(x_0,y_0)}$, then for every unit direction $\mathbf{u} = (a, b)$ the [[§7 Directional Derivatives#^def-7-1|directional derivative]] exists and
@@ -170,6 +174,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 > [!remark]- Connections
 > - Restated with the gradient in §7: [[Directional Derivative Formula|Directional Derivative Formula]].
+> - The coordinate-free form for smooth maps between vector spaces, $dF_p(v) = \frac{d}{dt}\big|_{t=0} F(p + tv)$: [[§10 Vector Spaces and Matrix Groups#^thm-10-10|591 Thm. §10.10]].
 
 > [!remark] Remark: Warning: The Converse Is False
 > All directional derivatives can exist without $f$ being differentiable — they might not “fit together” into a single linear map. A witness is $f(x,y) = \frac{x^2y}{x^4+y^2}$ for $(x,y) \neq (0,0)$, $f(0,0) = 0$. For a unit vector $\mathbf{u} = (a,b)$ with $b \neq 0$,

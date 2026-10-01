@@ -18,3 +18,7 @@ The next two sections generalize what we have learned to metric spaces. (They ar
 ^def-21-1
 
 Taking $X = \mathbb{R}$ (or $\Omega \subseteq \mathbb{R}$) and $Y = \mathbb{R}$ with $d(x,y) = |x-y|$ recovers the earlier notion — the metric-space version is a simple generalization, with each absolute value replaced by the appropriate distance.
+
+> [!remark]- Connections
+> - The case X = ℝ², Y = ℝ with Euclidean distance is 452's continuity, [[§3 Continuity and Limits of Functions#^def-3-1|452 Def. §3.1]].
+> - Continuity between topological spaces (preimages of open sets are open), [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]], agrees with this for metric spaces by [[§11 Metric Topology#^thm-11-7|590 Thm. §11.7]].

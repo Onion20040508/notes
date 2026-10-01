@@ -19,6 +19,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: $\langle e_j|e_k\rangle=\delta_{jk}$.
+> - Same definition for possibly infinite sets: [[§20 Orthonormal Sets and Bases#^def-20-1|556 Def. §20.1]].
 
 > [!example] Example 6.23: Orthonormal lists (p. 197)
 > - (a) The standard basis of $\F^n$.
@@ -28,6 +29,9 @@ tags: [linear-algebra]
 > - (e) In $\Poly_2(\R)$ with $\int_{-1}^1pq$: normalizing $1,x,x^2$ gives $\tfrac1{\sqrt2},\sqrt{\tfrac32}x,\sqrt{\tfrac52}x^2$, but $\langle1,x^2\rangle=\tfrac23\ne0$, so this is **not** orthonormal. Fixed in [[§20 Orthonormal Bases#^ladr-6-34|6.34]].
 
 ^ladr-6-23
+
+> [!remark]- Connections
+> - In L² the Fourier list of (d), continued indefinitely, is an orthonormal basis: [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]] (stated there with complex exponentials on [0, 2π]).
 
 > [!theorem] Theorem 6.24: Norm of an orthonormal linear combination
 > If $e_1,\dots,e_m$ is orthonormal, then for all $a_1,\dots,a_m\in\F$,
@@ -76,11 +80,15 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: the probabilities $|\langle e_k|\psi\rangle|^2$ over any orthonormal set of outcomes sum to at most $\|\psi\|^2=1$.
+> - Same inequality in 556 ([[§20 Orthonormal Sets and Bases#^lem-20-2|556 Lemma §20.2]]), extended to arbitrary orthonormal families in [[§20 Orthonormal Sets and Bases#^thm-20-5|556 Thm. §20.5]].
 
 > [!definition] Definition 6.27: Orthonormal basis
 > An *orthonormal basis* of $V$ is an orthonormal list that is also a basis of $V$. Example: the standard basis of $\F^n$.
 
 ^ladr-6-27
+
+> [!remark]- Connections
+> - In a Hilbert space an orthonormal basis is defined by the series expansion of every vector ([[§20 Orthonormal Sets and Bases#^def-20-4|556 Def. §20.4]]); in infinite dimensions it is usually not a basis in the sense of this definition.
 
 > [!theorem] Theorem 6.28: Orthonormal lists of the right length are orthonormal bases
 > If $V$ is finite-dimensional, every orthonormal list of length $\dim V$ is an orthonormal basis.
@@ -115,6 +123,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: (a) is the completeness relation $\sum_k|e_k\rangle\langle e_k|=I$; (c) in Dirac order reads $\langle u|v\rangle=\sum_k\langle u|e_k\rangle\langle e_k|v\rangle$ (conjugate on the other factor, per the convention remark in [[§19 Inner Products and Norms#^ladr-6-2|6.2]]).
+> - Hilbert-space version: [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]], where the expansion and Parseval characterize orthonormal bases; (a) as an operator identity is the completeness relation, [[§23 The Completeness Relation#^thm-23-2|556 Thm. §23.2]].
 
 > [!example] Example 6.31: Finding coefficients for a linear combination (p. 200)
 > Write $(1,2,4,7)$ in the basis of [[§20 Orthonormal Bases#^ladr-6-29|6.29]]. By [[§20 Orthonormal Bases#^ladr-6-30|6.30]](a) the coefficients are just inner products:
@@ -179,6 +188,9 @@ tags: [linear-algebra]
 > Apply [[Gram–Schmidt procedure|6.32]] to any basis; the result is an orthonormal list of length $\dim V$, hence a basis ([[§20 Orthonormal Bases#^ladr-6-28|6.28]]).
 
 *Uses:* [[Gram–Schmidt procedure|6.32]], [[§20 Orthonormal Bases#^ladr-6-28|6.28]]
+
+> [!remark]- Connections
+> - Every Hilbert space has an orthonormal basis ([[§20 Orthonormal Sets and Bases#^thm-20-12|556 Thm. §20.12]], by Zorn's lemma), and a countable one exactly when it is separable ([[§20 Orthonormal Sets and Bases#^thm-20-17|556 Thm. §20.17]]).
 
 > [!theorem] Theorem 6.36: Every orthonormal list extends to an orthonormal basis
 > If $V$ is finite-dimensional, every orthonormal list in $V$ extends to an orthonormal basis of $V$.

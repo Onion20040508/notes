@@ -24,6 +24,9 @@ tags: [topology, math590]
 
 ^def-24-2
 
+> [!remark]- Connections
+> - In 591 the smooth analogue with a discrete fibre is a fibration, [[§16 Fibrations#^def-16-1|591 Def. §16.1]], and smooth covering maps such as ℝ → S¹ are local diffeomorphisms, [[§14 Local Diffeomorphisms and Submersions#^rem-14-2|591 §14, Remark: Covering Maps]].
+
 > [!definition] Definition §24.3: Covering Space
 > If $p: E \to B$ is a covering map, the space $E$ is called a **covering space** of $B$. The space $B$ is called the **base space**. The triple $(E, p, B)$ is called a **covering**.
 >
@@ -145,6 +148,9 @@ tags: [topology, math590]
 > The conclusion $\pi_1(S^1) \cong \mathbb{Z}$ says: the group of loops on the circle, up to homotopy, *is* the integers under addition. The covering map $p$ is the tool that reveals this.
 
 ^rem-24-3
+
+> [!remark]- Connections
+> - As a smooth map, $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism, and its restriction to $(0, 4\pi)$ is a local diffeomorphism that is not a covering map: [[§14 Local Diffeomorphisms and Submersions#^ex-14-1|591 Ex. §14.1]].
 
 ## Non-Example: Local Homeomorphism $\neq$ Covering Map
 

@@ -50,6 +50,9 @@ tags: [topology, math590]
 ![[m590-28-1.svg]]
 *The evenly covered neighborhood from the proof: $U = B(x,\varepsilon)\cap S^2$ (dark red) and its antipodal copy $a(U)$ (light red, on the far side of the sphere) are disjoint because $\varepsilon < 1$ while $d(x,-x) = 2$ (dotted diameter). $p$ maps each of them homeomorphically onto the same set $p(U) \subseteq P^2$: two sheets over $p(U)$.*
 
+> [!remark]- Connections
+> - In every dimension the quotient Sⁿ → ℝPⁿ is a two-to-one local diffeomorphism: [[§14 Local Diffeomorphisms and Submersions#^ex-14-2|591 Ex. §14.2]].
+
 > [!theorem] Theorem §28.2: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$
 > The fundamental group of the projective plane is the cyclic group of order $2$.
 
@@ -74,6 +77,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Recomputed with van Kampen: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$ via van Kampen ([[§29 The Seifert–van Kampen Theorem#^ex-29-5|Ex. §29.5]]).
+> - The final step is the case p = 2 of [[§27 The Index and Lagrange's Theorem#^thm-27-7|493 Thm. §27.7]] (hub [[Groups of Prime Order Are Cyclic]]); the group itself is [[§7 The Group ℤ∕nℤ#^def-7-1|493 Def. §7.1]].
 
 > [!remark] Remark: The Non-Trivial Loop in $P^2$
 > The generator of $\pi_1(P^2)$ is any path in $S^2$ from $x_0$ to $-x_0$ (e.g., half a great circle), projected to $P^2$. This projects to a *loop* in $P^2$ (since $p(x_0) = p(-x_0) = y_0$). It cannot be contracted because its lift in $S^2$ is a path from $x_0$ to $-x_0$, which is not a loop.
@@ -93,6 +97,9 @@ tags: [topology, math590]
 ^def-28-2
 
 [[§28 Fundamental Group of Some Surfaces#^pf-28-1|The same proof]] shows: $p: S^n \to P^n$ is a $2$-sheeted covering map (the antipodal map is a homeomorphism in any dimension, and the $\varepsilon$-ball argument is dimension-independent).
+
+> [!remark]- Connections
+> - In 591 ℝPⁿ gets a smooth atlas, [[§8 Differentiable Structures#^cor-8-10|591 Cor. §8.10]], and this quotient topology is shown to agree with its Grassmannian description, [[§8 Differentiable Structures#^prop-8-11|591 Prop. §8.11]]; the complex analogue ℂPⁿ is [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-11|591 Def. §3.11]].
 
 > [!theorem] Theorem §28.3: $\pi_1(P^n)$ for all $n$
 > $$

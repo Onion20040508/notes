@@ -23,3 +23,4 @@ tags: [linear-algebra, hub]
 - The case $V=\R$ with $\langle x,y\rangle=xy$ is the absolute-value triangle inequality $|x+y|\le|x|+|y|$ of [[Single Variable Analysis]].
 - Makes $d(u,v)=\|u-v\|$ a metric, so every inner product space is a metric space (in the sense of Single Variable Analysis §13).
 - **Also proved in [[Logic and Proofs]]:** [[§4 Proof by Contradiction#^ex-4-5|250 Ex. §4.5]] (the case V = ℝ, |a + b| ≤ |a| + |b|, by comparing squares, with equality exactly when ab ≥ 0).
+- For a general norm this is an axiom ([[§8 Normed Linear Spaces#^def-8-1|556 Def. §8.1]]); for the ℓᵖ norms it is Minkowski's inequality, [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-1|556 Thm. §13.1]].

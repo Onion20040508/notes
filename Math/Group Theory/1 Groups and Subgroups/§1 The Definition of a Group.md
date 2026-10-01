@@ -19,6 +19,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 counterpart (same axioms, different order): [[§21 Algebra Prerequisites꞉ Groups#^def-21-1|590 Definition §21.1: Group]].
+> - A group with a compatible topology: [[§5 Topological Groups and Classical Matrix Groups#^def-5-1|591 Def. §5.1]] (topological group), the setting of the 591 matrix groups and actions.
 
 > [!definition] Definition §1.2: Abelian Group
 > A group $G$ is **abelian** (or **commutative**) if $a * b = b * a$ for all $a, b \in G$. Commutativity is *not* one of the group axioms; groups such as $S_n$ ($n \geq 3$) and $GL_n(k)$ ($n \geq 2$) are non-abelian.
@@ -29,6 +30,9 @@ tags: [group-theory, math493]
 > Depending on context, we may denote $*$ by $*$, $\times$, $\cdot$, or no symbol at all, and the identity has been written $1$ (Worksheet 1), $e$ (lectures), or $\operatorname{Id}$. These notes write $e$, and $e_G$, $e_H$, … whenever more than one group is in play. When the operation is written additively ($+$), the identity is written $0$ and the inverse of $g$ is written $-g$. Additive notation is used only for abelian groups (Worksheet 3: “we never use these notations for a non-abelian group”), so the symbol $+$ itself signals commutativity.
 
 ^rem-1-1
+
+> [!remark]- Connections
+> - Every vector space is an abelian group under addition: [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]] (commutativity, associativity, additive identity and inverses).
 
 > [!theorem] Proposition §1.1: Generalized Associativity
 > For any $g_1, \ldots, g_n \in G$, all ways of parenthesizing the product $g_1 * g_2 * \cdots * g_n$ give the same element. Consequently parentheses may be omitted from products, as they are from now on.

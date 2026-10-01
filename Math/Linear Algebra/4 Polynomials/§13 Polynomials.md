@@ -134,6 +134,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Key step in [[§15 The Minimal Polynomial#^ladr-5-29|Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]: every annihilating polynomial is a multiple of the minimal polynomial.
+> - Integer version: [[§6 Divisibility and Congruence#^lem-6-1|493 Lemma §6.1]] (hub [[Division Algorithm]]).
 
 > [!theorem] Theorem 4.12: Fundamental theorem of algebra, first version
 > Every nonconstant polynomial with complex coefficients has a zero in $\C$.
@@ -241,3 +242,4 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in [[§15 The Minimal Polynomial#^ladr-5-34|Operators on odd-dimensional vector spaces have eigenvalues]] to find an irreducible quadratic factor of a real minimal polynomial.
+> - Integer analogue: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|493 Thm. §9.2]] (unique prime factorization), with linear factors and irreducible quadratics in the role of primes.

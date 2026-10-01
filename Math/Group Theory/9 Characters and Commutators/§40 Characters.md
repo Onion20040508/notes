@@ -57,6 +57,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Used in [[§41 Commutators#^thm-41-5|The Commutator Subgroup of Sₙ]] to pin down all characters of $S_n$.
+> - The model case: the determinant, a character of GLₙ, is a similarity invariant, [[§34 Determinants#^ladr-9-52|LADR 9.52]]; the trace is also constant on conjugacy classes, [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|LADR 8.50]], without being a character.
 
 > [!remark] Remark: Where Commutativity of $A$ Is Needed
 > The middle step swaps $\chi(g)$ past $\chi(h^{-1})$, which requires $A$ abelian. For a homomorphism into a non-abelian target the conclusion fails: the identity map $S_3 \to S_3$ sends the conjugate elements $(1\,2)$ and $(1\,3)$ to different values. What survives in general is only that $\varphi$ carries conjugates to conjugates: $\varphi(hgh^{-1}) = \varphi(h)\varphi(g)\varphi(h)^{-1}$.
@@ -91,6 +92,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Eigenvectors in linear algebra: [[§14 Invariant Subspaces#^ladr-5-8|Eigenvector]] (LADR 5.8); here one vector is an eigenvector of every operator in $G$ simultaneously.
+> - Where a common eigenvector comes from in linear algebra: two commuting operators on a finite-dimensional complex space always have one, [[§18 Commuting Operators#^ladr-5-78|LADR 5.78]].
 
 > [!example] Example §40.2: $\Delta$ and the Sign Character
 > Let $V$ be the space of homogeneous polynomials of degree $\binom{n}{2}$ in $x_1, \ldots, x_n$ over $k$, with $S_n \subseteq GL(V)$ acting by permuting variables ([[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-3|Def. §19.3]]). Take

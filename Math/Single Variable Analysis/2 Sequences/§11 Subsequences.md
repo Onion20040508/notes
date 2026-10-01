@@ -21,6 +21,9 @@ Consider $s_n = (-1)^n$, bounded but not convergent. All *even* terms $s_{2n} = 
 
 ^def-11-1
 
+> [!remark]- Connections
+> - Same definition for sequences in a topological space: [[§16 Limit Point Compactness#^def-16-2|590 Def. §16.2]].
+
 > [!example] Example §11.1: Subsequences of simple sequences
 > For $s_n = n$: the even terms $(2k)$, the squares $(k^2)$, the primes, … are all subsequences. For $s_n = 1 + (-1)^n \tfrac1n$: the sequence is not monotone, but the even-indexed subsequence $1 + \tfrac{1}{2k}$ is decreasing and the odd-indexed one $1 - \tfrac{1}{2k+1}$ is increasing — monotone subsequences extracted from a non-monotone sequence.
 

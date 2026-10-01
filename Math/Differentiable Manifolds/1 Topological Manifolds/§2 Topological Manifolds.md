@@ -65,6 +65,9 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 **Not proved in this course.** The theorem follows from Brouwer's *invariance of domain*; Lee proves it in Chapter 17 (Theorem 17.26) using de Rham cohomology. Note that the statement is purely about point-set topology—no differentiability is assumed—which is what makes it hard: the obvious linear-algebra argument ($\mathbb{R}^n \cong \mathbb{R}^m$ as vector spaces implies $n=m$) is unavailable, because homeomorphisms need not be linear or even differentiable. Compare: $\mathbb{R}$ and $\mathbb{R}^2$ are not homeomorphic by a connectedness argument (remove a point), but already $\mathbb{R}^2$ vs. $\mathbb{R}^3$ needs more.
 
+> [!remark]- Connections
+> - The case ℝ² ≇ ℝ³ is proved in 590 by comparing π₁ of the punctured spaces: [[§23 The Fundamental Group#^rem-23-2|590 §23, Remark: What π₁ Cannot See]].
+
 > [!theorem] Corollary §2.2: Dimension is Locally Constant
 > Suppose $X$ satisfies the definition of “locally Euclidean” with $n$ allowed to depend on $p$. Then for each $p$ the integer $n(p)$ is well-defined, and $p \mapsto n(p)$ is constant on each connected component of $X$.
 >

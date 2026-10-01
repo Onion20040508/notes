@@ -250,6 +250,7 @@ Recall ([[§12 Measurable Functions#^def-12-7|Definition §12.7]]): a function $
 > - Continuous functions are closed under uniform limits ([[§24 Uniform Convergence#^thm-24-2|451 §24.2]], [[§12 Measurable Functions#^thm-12-16|§12.16]]), so the density holds only for the weaker $L^1$ distance (cf. [[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-4|Rem. §19.4]]).
 > - The $n = 2$ step integrates a product $\varphi(x)\,\chi_{R_2}(y)$ one variable at a time, an instance of [[Tonelli's Theorem]] (§17.3), proved only later; the Riemann analogue is the MATH 452 [[Fubini's Theorem]].
 > - Used for [[§17 Invariance Properties and Fubini's Theorem#^thm-17-2|Theorem §17.2]] (average continuity); $L^p$ version [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|Theorem §19.19]]. Topology version of compact = closed and bounded: [[Heine–Borel Theorem]] (590 §15.12).
+> - For all $1 \le p < \infty$, with smooth compactly supported approximants: [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-4|556 Thm. §14.4]].
 
 > [!remark] Remark: The Approximation Chain for $L^1$
 > We have now established:

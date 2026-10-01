@@ -27,6 +27,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Same argument as [[§2 Definition of Vector Space#^ladr-1-27|Unique additive inverse]]; same argument for matrices in [[§10 Invertibility and Isomorphisms#^ladr-3-80|Invertible, inverse, A⁻¹]].
 > - For arbitrary functions: [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]] (an inverse, when it exists, is unique).
+> - Same argument in any group: [[§2 First Consequences of the Axioms#^prop-2-3|493 Prop. §2.3]].
 
 > [!remark] Notation 3.61: T⁻¹ (p. 82)
 
@@ -112,6 +113,9 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - For square matrices: a one-sided inverse is automatically two-sided. Fails in infinite dimensions (shift operators).
+> - In a group a one-sided inverse is automatically two-sided, [[§2 First Consequences of the Axioms#^prop-2-6|493 Prop. §2.6]]; here the reason is dimension instead, since L(V) is not a group.
+> - The failure in infinite dimensions: the right shift on ℓ² has a left inverse but is not onto, [[§20 Orthonormal Sets and Bases#^ex-20-2|556 Ex. §20.2]].
+> - Used in 591 to define the unitary group by one equation: [[§10 Vector Spaces and Matrix Groups#^lem-10-14|591 Lemma §10.14]], proved there with determinants.
 
 > [!definition] Definition 3.69: Isomorphism, isomorphic
 > An *isomorphism* is an invertible linear map. $V$ and $W$ are *isomorphic* if there is an isomorphism from $V$ onto $W$.
@@ -123,6 +127,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Classified by dimension: [[Dimension shows whether vector spaces are isomorphic]]. First isomorphism theorem: [[First isomorphism theorem]].
+> - Group version: [[§16 Isomorphisms#^def-16-1|493 Def. §16.1]].
 
 > [!theorem] Theorem 3.70: Dimension shows whether vector spaces are isomorphic
 > Two finite-dimensional vector spaces over $\F$ are isomorphic if and only if they have the same dimension.
@@ -162,6 +167,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - How $T$ acts in coordinates: [[§10 Invertibility and Isomorphisms#^ladr-3-76|Linear maps act like matrix multiplication]].
+> - A basis read as the isomorphism v ↦ M(v) is what 591 calls a linear coordinate system: [[§10 Vector Spaces and Matrix Groups#^def-10-6|591 Def. §10.6]].
 
 > [!example] Example 3.74: Matrix of a vector (p. 88)
 > - The matrix of $2-7x+5x^3+x^4$ in the standard basis of $\Poly_4(\R)$ is $(2,-7,0,5,1)^t$.
@@ -228,6 +234,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Matrix of an inverse map: [[§10 Invertibility and Isomorphisms#^ladr-3-86|Matrix of inverse equals inverse of matrix]]. Determinant test: [[Invertible ⟺ nonzero determinant]].
+> - The invertible n-by-n matrices form a group under multiplication, the general linear group: [[§3 Basic Examples of Groups#^def-3-6|493 Def. §3.6]].
 
 > [!theorem] Theorem 3.81: Matrix of product of linear maps
 > Let $T\in\Lin(U,V)$, $S\in\Lin(V,W)$ with bases $u_1,\dots,u_m$ of $U$, $v_1,\dots,v_n$ of $V$, $w_1,\dots,w_p$ of $W$. Then
@@ -296,6 +303,8 @@ tags: [linear-algebra]
 > - Similar matrices describe the same operator; similarity invariants: [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|Trace of matrix of operator does not depend on basis]], [[§34 Determinants#^ladr-9-52|Determinant is a similarity invariant]].
 > - Physics: with orthonormal bases $C$ is unitary and this is the familiar $A=U^\dagger BU$ change of representation.
 > - Bilinear-form version (different rule, $C^tBC$): [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-7|Change-of-basis formula (LADR 9.7)]].
+> - Similar matrices are exactly the conjugate elements of the general linear group: [[§31 Conjugacy Classes#^def-31-3|493 Def. §31.3]].
+> - On a manifold the change-of-basis matrix between coordinate bases is the Jacobian of the transition map ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-24|591 Cor. §12.24]]); it gives the transition maps of the tangent bundle, [[§17 The Tangent Bundle#^prop-17-3|591 Prop. §17.3]].
 
 %% ex:3.84-diagram %%
 > [!example] Example: Reading the change-of-basis formula as a diagram

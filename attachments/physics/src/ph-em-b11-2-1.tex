@@ -1,0 +1,90 @@
+% Figure for Electromagnetism §B11.2 (electric field lines of a uniformly moving point charge, Theorem §B11.2.4 / Griffiths eq. (10.75), beta = 0, 0.6, 0.9; straight radial lines from the present position, directions spaced so that lines per unit angle are proportional to E at fixed distance: equal increments of int_0^theta (1-b^2)/(1-b^2 sin^2)^{3/2}).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, decoration={markings, mark=at position 0.72 with {\arrow{Stealth[length=1.4mm]}}}]
+  \begin{scope}[xshift=0.0cm]
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.450,0.000);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.401,0.375);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.256,0.725);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.025,1.025);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.725,1.256);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.375,1.401);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.000,1.450);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.375,1.401);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.725,1.256);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.025,1.025);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.256,0.725);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.401,0.375);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.450,0.000);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.401,-0.375);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.256,-0.725);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.025,-1.025);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.725,-1.256);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.375,-1.401);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.000,-1.450);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.375,-1.401);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.725,-1.256);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.025,-1.025);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.256,-0.725);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.401,-0.375);
+    \fill[black] (0,0) circle (1.6pt);
+    
+    \node[font=\small] at (0,-2.1) {$\beta = 0$};
+  \end{scope}
+  \begin{scope}[xshift=3.7cm]
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.450,0.000);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.357,0.512);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.127,0.912);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.845,1.178);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.556,1.339);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.275,1.424);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.000,1.450);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.275,1.424);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.556,1.339);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.845,1.178);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.127,0.912);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.357,0.512);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.450,0.000);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.357,-0.512);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.127,-0.912);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.845,-1.178);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.556,-1.339);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.275,-1.424);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.000,-1.450);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.275,-1.424);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.556,-1.339);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.845,-1.178);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.127,-0.912);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.357,-0.512);
+    \fill[black] (0,0) circle (1.6pt);
+    \draw[->, very thick, figR] (-0.35,-1.68) -- (0.35,-1.68) node[right, font=\scriptsize] {$\vec v$};
+    \node[font=\small] at (0,-2.1) {$\beta = 0.6$};
+  \end{scope}
+  \begin{scope}[xshift=7.4cm]
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.450,0.000);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.033,1.018);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.658,1.292);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.428,1.385);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.262,1.426);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.125,1.445);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.000,1.450);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.125,1.445);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.262,1.426);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.428,1.385);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.658,1.292);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.033,1.018);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.450,0.000);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (1.033,-1.018);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.658,-1.292);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.428,-1.385);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.262,-1.426);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.125,-1.445);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (0.000,-1.450);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.125,-1.445);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.262,-1.426);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.428,-1.385);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-0.658,-1.292);
+    \draw[figB, thin, postaction={decorate}] (0,0) -- (-1.033,-1.018);
+    \fill[black] (0,0) circle (1.6pt);
+    \draw[->, very thick, figR] (-0.35,-1.68) -- (0.35,-1.68) node[right, font=\scriptsize] {$\vec v$};
+    \node[font=\small] at (0,-2.1) {$\beta = 0.9$};
+  \end{scope}
+\end{tikzpicture}

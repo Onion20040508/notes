@@ -13,6 +13,9 @@ tags: [linear-algebra]
 
 ^ladr-9-68
 
+> [!remark]- Connections
+> - Same notion in 591, called a bilinear pairing: [[§10 Vector Spaces and Matrix Groups#^def-10-3|591 Def. §10.3]]; a non-degenerate one identifies each space with the dual of the other, [[§10 Vector Spaces and Matrix Groups#^thm-10-5|591 Thm. §10.5]].
+
 > [!example] Example 9.69: Bilinear functionals (p. 371)
 > - $\beta(v,w)=\varphi(v)\tau(w)$ on $V\times W$, for $\varphi\in V'$, $\tau\in W'$.
 > - $\beta(\varphi,\tau)=\varphi(v)\tau(w)$ on $V'\times W'$: this is $v\otimes w$ ([[§35 Tensor Products#^ladr-9-71|9.71]]).

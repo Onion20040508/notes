@@ -30,6 +30,7 @@ Physics also writes $\int |x\rangle\langle x|\,dx = \mathbf{1}$, with an uncount
 
 > [!remark]- Connections
 > - The countable-basis half of the separability theorem of Chapter 5: [[§20 Orthonormal Sets and Bases#^thm-20-17|§20.17]].
+> - The same count in topology: a space with a countable basis has no uncountable discrete subspace ([[§18 Countability Axioms#^lem-18-2|590 Lemma §18.2]]), and a separable metric space has a countable basis ([[§18 Countability Axioms#^prop-18-4|590 Prop. §18.4]]).
 
 Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of radius $\sqrt{2}/2$ around them are disjoint, and each must catch its own point of the dense set. The same argument shows that $L^\infty$ is not separable (MATH 551 notes, Chapter *$L^p$ Spaces*, subsection [[§19 Normed Linear Spaces and Lᵖ Spaces#Density and Separability|Density and Separability]]).
 
@@ -64,6 +65,9 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 > $(x - \lambda)\psi(x) = 0$ for almost every $x$, so $\psi(x) = 0$ for almost every $x \neq \lambda$. Since $\{\lambda\}$ has measure zero, $\psi = 0$ almost everywhere.
 
 ^pf-24-3
+
+> [!remark]- Connections
+> - Contrast with finite dimensions, where every self-adjoint operator has an eigenvalue: [[§23 Spectral Theorem#^ladr-7-27|LADR 7.27]].
 
 > [!theorem] Proposition §24.4: Point Evaluation is Not Bounded
 > Let $x_0 \in \mathbb{R}$. There is no $\psi \in L^2(\mathbb{R})$ with

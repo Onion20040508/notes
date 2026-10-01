@@ -102,6 +102,7 @@ Consider a grid with mesh points at $\mathbb{Z} \times \mathbb{Z}$ (integer latt
 > [!remark]- Connections
 > - The limits exist because the sequences are monotone and bounded: [[Monotone Convergence Theorem]] (451).
 > - The same inner/outer squeeze as the 1D [[§32 The Definition of the Riemann Integral#^def-32-2|Darboux lower and upper integrals]].
+> - Lebesgue outer measure replaces the finite grids of squares by countable coverings with rectangles: [[§9 Lebesgue Outer Measure#^def-9-4|551 Def. §9.4]]; finite unions of rectangles still approximate every measurable set of finite measure, [[§11 Borel Sets and Measure Spaces#^thm-11-11|551 Thm. §11.11]].
 
 > [!definition] Definition §15.5: Jordan Measurable
 > A set $D$ is **Jordan measurable** if $\underline{A}(D) = \overline{A}(D)$.
@@ -123,6 +124,9 @@ Consider a grid with mesh points at $\mathbb{Z} \times \mathbb{Z}$ (integer latt
 > A set $D$ is Jordan measurable $\iff$ its boundary $\partial D$ has Jordan content zero ([[§15 Multivariable Integration#^def-15-13|Def. §15.13]]).
 
 ^rem-15-2
+
+> [!remark]- Connections
+> - Lebesgue measurability ([[§10 Lebesgue Measurable Sets#^def-10-1|551 Def. §10.1]]) admits more sets: every Jordan measurable set is Lebesgue measurable with the same measure, while $\mathbb{Q} \cap [0,1]$ is not Jordan measurable but is a Lebesgue null set ([[§9 Lebesgue Outer Measure#^ex-9-2|551 Ex. §9.2]]).
 
 ### Almost Disjoint Sets
 
@@ -248,6 +252,9 @@ Consider a grid with mesh points at $\mathbb{Z} \times \mathbb{Z}$ (integer latt
 
 *Uses:* [[§15 Multivariable Integration#^def-15-3|Def. §15.3]], [[§15 Multivariable Integration#^def-15-4|Def. §15.4]], [[§15 Multivariable Integration#^def-15-5|Def. §15.5]], [[§15 Multivariable Integration#^def-15-6|Def. §15.6]], [[§2 Open and Closed Sets#^def-2-3|Def. §2.3]]
 
+> [!remark]- Connections
+> - For Lebesgue measure: additivity over disjoint measurable sets, [[§10 Lebesgue Measurable Sets#^lem-10-2|551 Lemma §10.2]], upgraded to countable additivity in [[§10 Lebesgue Measurable Sets#^thm-10-3|551 Thm. §10.3]].
+
 ## Definition of the Integral
 
 Now we define the integral of a function over a Jordan measurable set, analogous to Riemann integration in one dimension ([[§32 The Definition of the Riemann Integral|451 §32]]).
@@ -327,6 +334,7 @@ Now we define the integral of a function over a Jordan measurable set, analogous
 
 > [!remark]- Connections
 > - 1D: the [[§32 The Definition of the Riemann Integral#^thm-32-4|Cauchy criterion]] (451 §32.4) and its mesh form in [[§32 The Definition of the Riemann Integral#^thm-32-6|Equivalence of the Two Integrals]] (451 §32.6).
+> - In one variable every Riemann integrable function is Lebesgue integrable with the same integral: [[§15 The General Lebesgue Integral#^thm-15-10|551 Thm. §15.10]].
 
 > [!definition] Definition §15.11: The Integral
 > If $f$ is integrable over $D$, the **integral** of $f$ over $D$ is the common limit:
@@ -525,6 +533,7 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 
 > [!remark]- Connections
 > - 1D version: [[§33 Properties of the Riemann Integral#^thm-33-5|Additivity over Subintervals]] (451 §33.5), where the “almost disjoint” pieces $[a,c]$ and $[c,b]$ share only the point $c$.
+> - Lebesgue version for countably many disjoint measurable pieces: [[§15 The General Lebesgue Integral#^thm-15-4|551 Thm. §15.4]].
 
 > [!remark] Remark: On the Intersection and Integrability
 > A subtle point in the proof: when we combine $\mathcal{T}_A \cup \mathcal{T}_B$, pieces from $\mathcal{T}_A$ and $\mathcal{T}_B$ may overlap on $A \cap B$ (which lies in the boundaries since $A$ and $B$ are almost disjoint).
@@ -854,6 +863,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 > [!remark]- Connections
 > - Makes rigorous the simple-case computation (“Iterated Integrals: The Simple Case”) above; extended to curved regions in [[§15 Multivariable Integration#^thm-15-9|Theorem §15.9]].
 > - Its Type I/II form plus the [[Fundamental Theorem of Calculus]] in the inner variable proves [[Green's Theorem|Green's Theorem]] (§16.1), and one dimension up the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] (§17.1).
+> - Lebesgue version, for every integrable $f$ on $\mathbb{R}^p \times \mathbb{R}^q$ with no continuity assumption: [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]].
 
 > [!remark] Remark: Why Continuity Matters
 > The key point is that $F(x) = \int_c^d f(x, y) \, dy$ must be well-defined and integrable. Continuity of $f$ guarantees this.
@@ -1199,6 +1209,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 
 > [!remark]- Connections
 > - The integrals here are improper (the integrand is unbounded near the origin): [[§36 Improper Integrals|451 §36]].
+> - Same counterexample in 551, excluded there by the hypothesis $f \in L(\mathbb{R}^n)$ of Fubini's theorem: [[§17 Invariance Properties and Fubini's Theorem#^rem-17-3|551 Rem. §17.3]].
 
 > [!theorem] Theorem §15.12: Fubini-Tonelli: Non-negative Functions
 > If $f \geq 0$ is measurable on $D$, then:
@@ -1212,6 +1223,9 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 > This is useful for checking absolute integrability: compute $\iint_D |f| \, dA$ using iterated integrals. If finite, Fubini applies to $f$.
 
 ^thm-15-12
+
+> [!remark]- Connections
+> - Rigorous version, where measurability of the slices and of the inner integral is proved rather than assumed: [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]] (Tonelli).
 
 ## General Change of Variables
 
@@ -1251,6 +1265,9 @@ The factor $|J|$ exactly cancels the area distortion, ensuring both sides comput
 > $$
 
 ^def-15-13
+
+> [!remark]- Connections
+> - Lebesgue null sets allow countably many rectangles ([[§9 Lebesgue Outer Measure#^def-9-4|551 Def. §9.4]]), so every countable set is null ([[§9 Lebesgue Outer Measure#^ex-9-2|551 Ex. §9.2]]); the graph of any measurable function is null by [[§17 Invariance Properties and Fubini's Theorem#^cor-17-10|551 Cor. §17.10]].
 
 > [!definition] Definition §15.14: Jordan Measurable Set
 > A bounded set $D \subseteq \mathbb{R}^2$ is **Jordan measurable** if its boundary $\partial D$ ([[§2 Open and Closed Sets#^def-2-3|Def. §2.3]]) has Jordan measure zero.
@@ -2016,6 +2033,9 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 
 *Uses:* [[Heine–Borel Theorem|590 §15.12]], [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-4|§9.4]], [[§15 Multivariable Integration#^def-15-13|Def. §15.13]], [[§15 Multivariable Integration#^def-15-14|Def. §15.14]], [[§15 Multivariable Integration#^prop-15-15|Prop. §15.15]]
 
+> [!remark]- Connections
+> - Lebesgue analogue: a continuous map sending null sets to null sets preserves measurability, [[§18 Differentiation Theory#^thm-18-21|551 Thm. §18.21]].
+
 > [!theorem] Theorem §15.17: Change of Variables — General Jordan Measurable Domains
 > Let $D^* \subseteq \mathbb{R}^2$ be bounded and Jordan measurable. Let $\Phi: \overline{D^*} \to \overline{D}$ be a $C^1$ bijection with $C^1$ inverse, where $D = \Phi(D^*)$.
 >
@@ -2120,6 +2140,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 > [!remark]- Connections
 > - This is [[§34 Determinants#^ladr-9-61|LADR 9.61]] ($T$ changes volume by factor of $|\det T|$), proved there via polar decomposition and singular values ([[§34 Determinants#^ladr-9-60|LADR 9.60]]); the matrix and operator determinants agree by [[§34 Determinants#^ladr-9-53|LADR 9.53]].
 > - For $n = 2$ this is Part I of the first proof of [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14]].
+> - For Lebesgue measure the identity $m(T(R)) = |\det T|\, m(R)$ on rectangles is proved by elementary row operations inside [[§18 Differentiation Theory#^thm-18-22|551 Thm. §18.22]] (linear maps preserve null sets).
 
 This proposition explains why the Jacobian determinant appears in the change of variables formula: locally, the transformation $\Phi$ is approximated by its linearization $J_\Phi$ ([[§6 Differentiability#^def-6-2|Def. §6.2]]), and $|\det(J_\Phi)| = |J|$ measures the local volume distortion.
 
@@ -2143,6 +2164,7 @@ The proof follows the same structure as the 2D case ([[§15 Multivariable Integr
 > [!remark]- Connections
 > - Linear-algebra core: [[§34 Determinants#^ladr-9-61|LADR 9.61]] for the local volume factor and [[§34 Determinants#^ladr-9-49|LADR 9.49]] (det is multiplicative) for composing primitive transformations.
 > - In $\mathbb{R}^3$: the spherical volume element used in [[§19 The Laplacian in Spherical Coordinates|§19]]; for general dimension it underlies the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] and, as pullback of $n$-forms, the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]].
+> - The smooth version of the diffeomorphisms allowed here is [[§8 Differentiable Structures#^def-8-3|591 Def. §8.3]], where diffeomorphisms of open subsets of ℝⁿ are the transition maps between charts.
 
 ### Common Coordinate Systems and Worked Examples
 

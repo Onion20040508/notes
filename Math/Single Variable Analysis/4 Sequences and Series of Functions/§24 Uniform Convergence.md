@@ -13,6 +13,9 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 
 ^def-24-1
 
+> [!remark]- Connections
+> - 551 weakens it to convergence outside a null set (almost everywhere convergence): [[§12 Measurable Functions#^def-12-8|551 Def. §12.8]].
+
 > [!definition] Definition §24.2: Uniform Convergence
 > $(f_n)$ **converges uniformly to $f$ on $S$** if for every $\varepsilon > 0$ there exists $N$ such that for all $n \geq N$ *and all $x \in S$*,
 >
@@ -26,6 +29,9 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 
 ![[m451-24-1.svg]]
 *The $\varepsilon$-tube around the limit $f \equiv 0$: uniform convergence means the whole graph of $f_n$ eventually enters the tube. The blue curve is inside; the peak of $n x^n(1-x)$ (height $\to \tfrac1e$ at $x = \tfrac{n}{n+1}$) escapes for every $n$ — the picture behind “Locating the worst point” below.*
+
+> [!remark]- Connections
+> - Restated in 551 as [[§12 Measurable Functions#^def-12-9|551 Def. §12.9]]; on a set of finite measure, a.e. convergence is uniform off a set of arbitrarily small measure by [[§13 Egorov's and Lusin's Theorems#^thm-13-1|551 Thm. §13.1]] (Egorov).
 
 ## Examples and Non-Examples
 
@@ -51,6 +57,9 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 > $f_n(x) = x^n$ on $[0,1]$ converges pointwise to the discontinuous $f$ computed above, but not uniformly. If it did: take $\varepsilon = \tfrac12$; then for $n \geq N$ and all $x \in [0,1)$, $|x^n| < \tfrac12$. Fix $n$ and let $x \to 1^-$: $x^n \to 1$, giving $1 \leq \tfrac12$. Impossible.
 
 ^ex-24-2
+
+> [!remark]- Connections
+> - Same sequence in 551, where it converges uniformly on every $[0, 1-\delta]$, illustrating Egorov's theorem: [[§13 Egorov's and Lusin's Theorems#^ex-13-1|551 Ex. §13.1]].
 
 > [!example] Example §24.3: A uniform example
 > $f_n(x) = \tfrac1n \sin x$ converges uniformly to $f \equiv 0$ on $\mathbb{R}$: given $\varepsilon > 0$, take $N > \tfrac1\varepsilon$; then for all $n \geq N$ and *all* $x \in \mathbb{R}$,
@@ -171,6 +180,9 @@ Now we reap the applications.
 ^rem-24-1
 
 Continuity is not the only property that survives passage to a uniform limit:
+
+> [!remark]- Connections
+> - Restated in 551 for functions on a measurable set, where it is a step in the proof of Lusin's theorem: [[§12 Measurable Functions#^thm-12-16|551 Thm. §12.16]], [[§13 Egorov's and Lusin's Theorems#^thm-13-3|551 Thm. §13.3]].
 
 > [!theorem] Proposition §24.3: Uniform Limits Preserve Boundedness (HW)
 > If every $f_n$ is bounded on $S$ and $f_n \to f$ uniformly on $S$, then $f$ is bounded on $S$.

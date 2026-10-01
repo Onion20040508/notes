@@ -27,6 +27,7 @@ The third special type of map, dual to the submersions of [[§14 Local Diffeomor
 > [!remark]- Connections
 > - The earlier definition, stated with submersions: [[§14 Local Diffeomorphisms and Submersions#^def-14-2|Def. §14.2]]; the dimension constraint there: [[§14 Local Diffeomorphisms and Submersions#^prop-14-4|§14.4]].
 > - An injective linear map cannot lower dimension: [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]].
+> - The first examples are the regular parametrized surfaces of 452, whose $3 \times 2$ Jacobian has rank 2: [[§18 Surface Integrals#^def-18-3|452 Def. §18.3]].
 
 > [!theorem] Theorem §18.1: Local Normal Form for Immersions
 > Let $F : M \to N$ be an immersion at $p$, with $\dim M = m \le n = \dim N$. Then there are charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$ in which the coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1}$ is the standard inclusion:

@@ -332,6 +332,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The other two manifold conditions are verified in [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; the quotient description is [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^ex-3-1|Ex. §3.1]], and non-Hausdorffness via the diagonal criterion is [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^ex-3-7|Ex. §3.7]].
+> - Limits are not unique here, since $1/n$ converges to both $0_1$ and $0_2$; Hausdorff spaces rule this out, [[§8 Hausdorff Spaces#^thm-8-3|590 Thm. §8.3]].
 
 > [!remark] Remark: The Line with Two Origins as a Quotient
 > Equivalently ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-14|Proposition §3.14]]), $X$ is the quotient of $\mathbb{R} \times \{1, 2\}$ (two disjoint copies of $\mathbb{R}$) by the equivalence relation $(x, 1) \sim (x, 2)$ for all $x \neq 0$: glue the two lines everywhere except at the origins. This is the standard example showing that *a quotient of a Hausdorff space need not be Hausdorff* (cf. [[§12 Quotient Topology|590 §12]]). We will meet this space again in [[§2 Topological Manifolds|§2]] as the reason the Hausdorff condition must be imposed *separately* on manifolds—it does not follow from being locally Euclidean.

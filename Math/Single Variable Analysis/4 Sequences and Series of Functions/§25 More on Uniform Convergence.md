@@ -32,6 +32,9 @@ Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a fla
 ![[m451-25-1.svg]]
 *The escaping triangle for $n = 2, 4, 8$: base $[0, \tfrac2n]$ shrinks, peak $n$ grows, area (shaded for $n = 8$) stays exactly $1$. Pointwise the limit is $0$ everywhere, yet the integrals refuse to follow.*
 
+> [!remark]- Connections
+> - 551's version $k\,\chi_{(0,1/k)}$ shows the same escaping mass, makes Fatou's inequality strict and has no integrable dominator: [[§14 The Lebesgue Integral for Simple Functions#^ex-14-1|551 Ex. §14.1]].
+
 > [!theorem] Theorem §25.1: Uniform Convergence Allows Exchanging Limit and Integral
 > If $f_n \to f$ uniformly on $[a,b]$ (with each $f_n$ continuous, so that $f$ is continuous and all integrals are defined), then
 >
@@ -57,6 +60,9 @@ Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a fla
 > $$
 
 ^pf-25-1
+
+> [!remark]- Connections
+> - Lebesgue version, with uniform convergence replaced by a.e. convergence and an integrable bound: [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]] (dominated convergence).
 
 > [!example] Example §25.2: Computing a limit of integrals
 > Compute $\displaystyle\lim_{n\to\infty} \int_0^1 \frac{n + \cos x}{2n + \sin^2 x}\,dx$.
@@ -118,6 +124,9 @@ Now we return toward power series — via general series of functions.
 > a bound independent of $x$. Since $\sum M_k$ converges, its tails $\sum_{k > n} M_k \to 0$ as $n \to \infty$ (Cauchy criterion). By the supremum criterion, $s_n \to g$ uniformly.
 
 ^pf-25-3
+
+> [!remark]- Connections
+> - Lebesgue analogue for term-by-term integration, assuming only $\sum \int |f_k| < \infty$ instead of uniform bounds: [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]].
 
 > [!example] Example §25.3: Three applications of the M-test
 > **(1)** $\displaystyle\sum_{n=1}^\infty \frac{\cos nx}{n^2}$ converges uniformly on $\mathbb{R}$ — take $M_k = \tfrac{1}{k^2}$ — and hence defines a continuous function on $\mathbb{R}$.

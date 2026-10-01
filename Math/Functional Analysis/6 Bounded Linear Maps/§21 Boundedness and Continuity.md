@@ -24,6 +24,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 > [!remark]- Connections
 > - Linear maps between linear spaces, without topology: [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1|Def. §2.1]]; finite-dimensional home [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]].
+> - Continuity between topological spaces: [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]; for metric spaces it is equivalent to the sequential condition used here, [[§11 Metric Topology#^thm-11-9|590 Thm. §11.9]].
 
 > [!definition] Definition §21.2: Bounded Linear Map; Operator Norm
 > A linear map $T : X \to Y$ is **bounded** if there is $M \ge 0$ with

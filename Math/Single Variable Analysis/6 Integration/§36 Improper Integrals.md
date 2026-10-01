@@ -31,6 +31,9 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 
 ^rem-36-2
 
+> [!remark]- Connections
+> - The Lebesgue integral is absolute ([[§15 The General Lebesgue Integral#^rem-15-1|551 Rem. §15.1]]), so a conditionally convergent improper integral such as that of $\sin x / x$ on $[1, \infty)$ is not a Lebesgue integral; for integrable $f$ the tails vanish by [[§16 The L¹ Space and Density Theorems#^thm-16-3|551 Thm. §16.3]].
+
 > [!definition] Definition §36.2: Doubly Improper Integrals
 > If $f$ is defined on $(a, b)$ (each end finite or infinite) and integrable on every closed $[c, d] \subseteq (a,b)$, fix any $\alpha \in (a,b)$ and define
 >
@@ -188,3 +191,6 @@ $$
 
 ![[m451-36-1.svg]]
 *The normal density $g$ (left; total area $1$) and its distribution function $F$ (right): the accumulated area climbs from $0$ to $1$, with $F(0) = \tfrac12$ by symmetry. By the remark above, $F' = g$ everywhere — the sigmoid's slope at $t$ is the bell's height at $t$.*
+
+> [!remark]- Connections
+> - The value √π taken on credit here is computed in 452 via polar coordinates: [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]].

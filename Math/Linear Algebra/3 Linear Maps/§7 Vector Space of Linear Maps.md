@@ -24,6 +24,7 @@ tags: [linear-algebra]
 > - Determined by values on a basis: [[Linear map lemma]]. Vector space of linear maps: [[§7 Vector Space of Linear Maps#^ladr-3-5|Addition and scalar multiplication on L(V, W)]]. Composition: [[§7 Vector Space of Linear Maps#^ladr-3-7|Product of linear maps]].
 > - Two subspaces attached to every linear map: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]], [[§8 Null Spaces and Ranges#^ladr-3-16|Range]], tied together by [[Fundamental theorem of linear maps]].
 > - Physics: observables and time evolution in quantum mechanics are linear maps on the state space.
+> - Forgetting scalars, a linear map is a homomorphism of additive groups: [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]].
 
 > [!remark] Notation 3.2: L(V, W), L(V) (p. 52)
 
@@ -60,6 +61,10 @@ tags: [linear-algebra]
 *Uses:* [[§5 Bases#^ladr-2-28|2.28]]
 
 %% ex:3.4-fig %%
+
+> [!remark]- Connections
+> - Restated and re-proved in 493 as [[§19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|493 Thm. §19.2]] (Linear Extension), where it turns permutations of a basis into the permutation representation, [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-4|493 Prop. §19.4]].
+
 > [!example] Example: The linear map lemma, pictured
 > The basis $v_1,v_2$ of $V$ gives the grid of points $c_1v_1+c_2v_2$. Choosing $w_1,w_2$ determines $T$ on all of it: the grid is carried to the grid of $w_1,w_2$, and each point goes to the point with the same coefficients, e.g. $T(2v_1+v_2)=2w_1+w_2$.
 >
@@ -78,6 +83,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Its dimension: [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]]. Matrices respect the operations: [[§9 Matrices#^ladr-3-35|Matrix of the sum of linear maps]], [[§9 Matrices#^ladr-3-38|The matrix of a scalar times a linear map]].
+> - Group analogue: the pointwise product on homomorphisms, [[§18 Conjugation, Products, and Pointwise Products#^def-18-3|493 Def. §18.3]], which gives a homomorphism again only when the target is abelian, [[§18 Conjugation, Products, and Pointwise Products#^prop-18-2|493 Prop. §18.2]].
 
 > [!definition] Definition 3.7: Product of linear maps
 > If $T\in\Lin(U,V)$ and $S\in\Lin(V,W)$, the *product* $ST\in\Lin(U,W)$ is $(ST)(u)=S(Tu)$.
@@ -127,3 +133,4 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Gives $0\in\nullsp T$ and $0\in\range T$: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]], [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]]. Also $\{0\}\subseteq\nullsp T$ in [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]].
+> - Group version: homomorphisms preserve the identity and inverses, [[§15 Homomorphisms#^prop-15-1|493 Prop. §15.1]].

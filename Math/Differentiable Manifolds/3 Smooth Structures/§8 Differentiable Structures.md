@@ -70,6 +70,8 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - The general notion for smooth manifolds: [[§8 Differentiable Structures#^def-8-14|Def. §8.14]]; the two agree by [[§8 Differentiable Structures#^prop-8-14|§8.14]].
 > - The local version: [[§14 Local Diffeomorphisms and Submersions#^def-14-1|Def. §14.1]]; detected by the differential via the [[§14 Local Diffeomorphisms and Submersions#^thm-14-1|inverse function theorem, §14.1]].
+> - The $C^1$ version is the class of substitutions in the change of variables formula, [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]].
+> - The topological analogue: homeomorphism, [[§9 Continuous Functions#^def-9-2|590 Def. §9.2]].
 
 > [!definition] Definition §8.4: Smoothly Compatible Charts
 > Two charts $(U, \varphi)$ and $(V, \psi)$ on $M$ are **$C^\infty$-compatible** if the **transition function**
@@ -278,6 +280,7 @@ The board wrote “$x^2 + y^2 = 0$” when setting up the first transition funct
 
 > [!remark]- Connections
 > - Compatible with the other two circle atlases: [[§9 Manifolds in Euclidean Space#^prop-9-4|§9.4]]; the complex counterpart $w \mapsto 1/w$ on $\mathbb{CP}^1$: [[§8 Differentiable Structures#^rem-8-12|Remark after §8.9]].
+> - Stereographic projection in 590: it identifies S¹ with the one-point compactification of ℝ, [[§17 Local Compactness#^ex-17-7|590 Ex. §17.7]], and Sⁿ minus a point with ℝⁿ in the proof that Sⁿ is simply connected, [[§27 The Fundamental Group of Sⁿ#^pf-27-3|590 §27, proof of Thm. §27.3]].
 
 ![[m591-8-3.svg]]
 *Left, $\sigma_N$: the line from $N$ through a point $P$ of the circle meets the horizontal axis at $\sigma_N(P)$. Right, $\sigma_S$: the same construction from the south pole.*
@@ -515,6 +518,9 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 > For $n = 1$ there are two standard charts and a single transition function, $w \mapsto 1/w$ on $\mathbb{C} \setminus \{0\}$ — the complex counterpart of the stereographic transition $u \mapsto 1/u$ of [[§8 Differentiable Structures#^ex-8-3|Ex. §8.3]].
 
 ^rem-8-12
+
+> [!remark]- Connections
+> - S² as the one-point compactification of ℝ² ≅ ℂ, by the same stereographic projection: [[§17 Local Compactness#^ex-17-7|590 Ex. §17.7]].
 
 > [!theorem] Corollary §8.10: Real Projective Space
 > Let $\mathbb{RP}^n = S^n/\{\pm 1\} \cong (\mathbb{R}^{n+1}\setminus\{0\})/\mathbb{R}^\times$, the space of real lines through the origin in $\mathbb{R}^{n+1}$. With $U_i = \{[\vec x] \mid x_i \neq 0\}$ and $\varphi_i([\vec x]) = (x_k/x_i)_{k \neq i}$, the family $\{(U_i, \varphi_i)\}_{i=0}^n$ is a smooth atlas, and $\mathbb{RP}^n$ is a compact smooth manifold of dimension $n$.

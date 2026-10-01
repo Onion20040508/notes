@@ -22,6 +22,9 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - A vector space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-89|Product of vector spaces is a vector space]]. Dimension: [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|Dimension of a product is the sum of dimensions]]. Relation to sums inside one space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|Products and direct sums]].
+> - Group version: the direct product, [[§3 Basic Examples of Groups#^def-3-2|493 Def. §3.2]], with its universal property in [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|493 Prop. §18.3]].
+> - 556 calls this product the (external) direct sum: [[§1 Linear Spaces#^def-1-4|556 Def. §1.4]]; norms on it in [[§10 New Normed Spaces from Old#^prop-10-7|556 Prop. §10.7]].
+> - 591 also calls this product the direct sum: [[§10 Vector Spaces and Matrix Groups#^def-10-5|591 Def. §10.5]]; the tangent space of a product manifold is such a direct sum, [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-32|591 Thm. §12.32]].
 
 > [!theorem] Theorem 3.89: Product of vector spaces is a vector space
 > If $V_1,\dots,V_m$ are vector spaces over $\F$, then $V_1\times\dots\times V_m$ is a vector space over $\F$.
@@ -125,6 +128,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Translates of a subspace partition $V$: [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]]. They are the points of [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]]. Solution sets of solvable inhomogeneous systems are translates of the null space.
+> - Group version: v + U is the coset of U in the abelian group (V, +), [[§26 Left and Right Cosets#^def-26-2|493 Def. §26.2]].
 
 > [!example] Example 3.98: Translates (p. 99)
 > - For the line $U$ of [[§11 Products and Quotients of Vector Spaces#^ladr-3-96|3.96]], the translates of $U$ are all lines of slope $2$; for any line $U$ through $0$ in $\R^2$, they are all lines parallel to $U$.
@@ -143,6 +147,9 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Operations: [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|Addition and scalar multiplication on V∕U]]. A vector space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]]. Dimension: [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
 > - Same construction as quotient groups and rings in abstract algebra (MATH 591 algebra part): $U$ plays the role of the normal subgroup/ideal.
+> - Group version: the quotient group G/N, [[§37 Quotient Groups#^def-37-1|493 Def. §37.1]] (hub [[Quotient Groups]]), with U in the role of the normal subgroup N.
+> - Same construction in 556: [[§1 Linear Spaces#^def-1-7|556 Def. §1.7]] and [[§1 Linear Spaces#^prop-1-6|556 Prop. §1.6]]; a norm passes to the quotient only when the subspace is closed, [[§10 New Normed Spaces from Old#^thm-10-8|556 Thm. §10.8]].
+> - Same construction in 591, with its universal property: [[§10 Vector Spaces and Matrix Groups#^def-10-4|591 Def. §10.4]], [[§10 Vector Spaces and Matrix Groups#^prop-10-6|591 Prop. §10.6]]; it builds the cotangent space from germs in [[§13 Tangent Spaces III꞉ The Cotangent Space#^def-13-2|591 Def. §13.2]].
 
 > [!example] Example 3.100: Quotient spaces (p. 100)
 > - $U=\{(x,2x)\}$: $\R^2/U$ is the set of all lines of slope $2$. Each line is **one point** of the quotient.
@@ -171,6 +178,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The key to well-definedness in [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]] and to $\nullsp\pi=U$ in [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
+> - Group version: the cosets of a subgroup partition the group, [[§26 Left and Right Cosets#^prop-26-2|493 Prop. §26.2]] (hub [[Cosets Partition a Group]]).
 
 > [!definition] Definition 3.102: Addition and scalar multiplication on V∕U
 > For a subspace $U$ of $V$, define on $V/U$:
@@ -200,6 +208,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Dimension: [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
+> - Group version: [[§37 Quotient Groups#^thm-37-1|493 Thm. §37.1]]; there coset multiplication is well defined only for normal subgroups, [[§34 Multiplying Cosets#^prop-34-1|493 Prop. §34.1]], which is automatic here because (V, +) is abelian.
 
 %% ex:3.103-fig %%
 > [!example] Example: Well-definedness, pictured
@@ -217,6 +226,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - $\nullsp\pi=U$ and $\range\pi=V/U$: used in [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]. Factors every map through it: [[First isomorphism theorem]].
+> - Group version: the canonical projection onto G/N is a surjective homomorphism with kernel N, [[§37 Quotient Groups#^prop-37-2|493 Prop. §37.2]].
 
 > [!theorem] Theorem 3.105: Dimension of quotient space
 > If $V$ is finite-dimensional and $U$ is a subspace of $V$, then
@@ -234,6 +244,8 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Compare with a complement $W$ ([[§5 Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]]): $V/U\cong W$, but the quotient needs no choice.
 > - Dual counterpart: $\dim U^0=\dim V-\dim U$ ([[§12 Duality#^ladr-3-125|Dimension of the annihilator]]).
+> - Counting analogue: for V over a finite field, |V/U| = |V|/|U| is Lagrange's theorem for (V, +), [[§27 The Index and Lagrange's Theorem#^thm-27-2|493 Thm. §27.2]], and taking logarithms gives this formula.
+> - Without counting dimensions: [[§1 Linear Spaces#^thm-1-11|556 Thm. §1.11]] gives X ≅ X∕Y ⊕ Y for every linear space, via a complement.
 
 > [!remark] Notation 3.106: ̃T (p. 102)
 

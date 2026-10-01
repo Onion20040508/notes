@@ -21,6 +21,8 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-1|Definition §13.1: Metric Space]].
+> - Normed spaces as metric spaces: [[§8 Normed Linear Spaces#^def-8-3|556 Def. §8.3]] restates this definition, and [[§8 Normed Linear Spaces#^prop-8-2|556 Prop. §8.2]] shows that a norm gives the metric d(x, y) = ‖x − y‖.
+> - Every normed space, in particular each Lᵖ, is a metric space: [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-1|551 Prop. §19.1]]; the L¹ metric: [[§16 The L¹ Space and Density Theorems#^def-16-2|551 Def. §16.2]].
 
 > [!example] Example §11.1: Euclidean Metric on $\mathbb{R}^n$
 > $x = (x_1, \ldots, x_n), y = (y_1, \ldots, y_n) \in \mathbb{R}^n$.
@@ -48,6 +50,9 @@ tags: [topology, math590]
 > $$
 
 ^def-11-2
+
+> [!remark]- Connections
+> - Balls of a norm, and interior points defined through them: [[§8 Normed Linear Spaces#^def-8-9|556 Def. §8.9]].
 
 > [!definition] Definition §11.3: Metric Topology
 > If $d$ is a metric on $X$, then the collection of all $\varepsilon$-balls $B_d(x, \varepsilon)$, $x \in X$, $\varepsilon > 0$, is a basis for a topology on $X$, called the **metric topology** induced by $d$.
@@ -82,6 +87,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - MATH 451 open sets in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Definition §13.5: Open and Closed Subsets]].
+> - For the Euclidean metric these are the open sets of ℝⁿ in 551: [[§5 Topology of ℝⁿ#^def-5-2|551 Def. §5.2]] (balls: [[§5 Topology of ℝⁿ#^def-5-1|551 Def. §5.1]]).
 
 ## Examples of Metric Spaces
 
@@ -158,6 +164,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - The same inequality in MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|Proposition §13.1: Equivalence of the Two Distances]].
+> - All norms on a finite-dimensional space are equivalent and so give the same topology: [[§10 New Normed Spaces from Old#^thm-10-3|556 Thm. §10.3]] (equivalent norms: [[§10 New Normed Spaces from Old#^def-10-1|556 Def. §10.1]]).
 
 ## Metrizable Spaces
 
@@ -359,3 +366,4 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - MATH 451 takes the sequential condition as the definition: [[§17 Continuous Functions#^def-17-1|Definition §17.1: Continuity at a Point — Sequential Definition]].
+> - Functional analysis takes the sequential condition as the definition of a continuous linear map ([[§21 Boundedness and Continuity#^def-21-1|556 Def. §21.1]]); for linear maps it is equivalent to boundedness ([[§21 Boundedness and Continuity#^prop-21-2|556 Prop. §21.2]]).

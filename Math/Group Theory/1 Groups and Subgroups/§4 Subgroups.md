@@ -21,6 +21,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-2|590 Definition §21.2: Subgroup]]; linear-algebra analogue: [[§3 Subspaces#^ladr-1-34|Conditions for a subspace]].
+> - Topological version: a subgroup of a topological group, with the subspace topology, is a topological group, [[§5 Topological Groups and Classical Matrix Groups#^prop-5-1|591 Prop. §5.1]].
 
 > [!theorem] Proposition §4.1: A Subset That Is a Group Is a Subgroup
 > A subgroup of $G$ is a group under the restricted operation, with the same identity and inverse map. Conversely, let $H \subseteq G$ be closed under the operation of $G$ and suppose $H$ is a group under the restricted operation. Then the identity of $H$ is $e_G$ and inverses in $H$ are inverses in $G$; hence $H$ is a subgroup of $G$.

@@ -748,6 +748,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 > [!remark]- Connections
 > - Linear-algebra analogue: the classes are translates of $\mathbb{Q}$ (a $\mathbb{Q}$-subspace of $\mathbb{R}$), and translates of a subspace are equal or disjoint, [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|LADR 3.101]]; the set of classes is a [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|quotient space]] (LADR 3.99).
 > - General version: classes are equal or disjoint, [[§22 Partitions and Equivalence Relations#^thm-22-3|250 Thm. §22.3]]; so the classes partition [0, 1], [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]].
+> - The classes are the cosets x + ℚ of the subgroup ℚ of (ℝ, +), cut down to [0, 1], and cosets partition a group: [[Cosets Partition a Group|493 Prop. §26.2]].
 
 Let $\{E_\alpha \mid \alpha \in I\}$ be the collection of distinct equivalence classes, where $I$ is some index set. Note that $\bigcup_{\alpha \in I} E_\alpha = [0, 1]$.
 
@@ -825,6 +826,9 @@ Let $\mathbb{Q} \cap [-1, 1] = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of t
 > The existence of non-measurable sets depends on the Axiom of Choice. In fact, it is consistent with ZF (set theory without Choice) that every subset of $\mathbb{R}$ is Lebesgue measurable.
 
 ^rem-11-6
+
+> [!remark]- Connections
+> - The axiom of choice, in the form of Zorn's lemma, also drives the existence theorems of 556 (Hahn–Banach, complements, orthonormal bases): [[§4 Proof of the Hahn–Banach Theorem#^thm-4-2|556 Thm. §4.2]].
 
 ## The Cantor Set
 

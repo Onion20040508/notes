@@ -97,6 +97,9 @@ These are exactly the tangent vectors to the two families of curves that sweep o
 ![[m452-18-1.svg]]
 *The surface integral is computed cell by cell: a grid cell $\Delta u \times \Delta v$ in the parameter domain (red, left) is carried by $\mathbf{X}$ to a curved patch on the surface (red, right). Zoomed to this scale, the patch is approximated by the tangent parallelogram (green) spanned by $\mathbf{X}_u\Delta u$ and $\mathbf{X}_v\Delta v$, with area $|\mathbf{X}_u \times \mathbf{X}_v|\,\Delta u\,\Delta v$. Summing over all cells and refining gives $\iint_S dS = \iint_D |\mathbf{X}_u \times \mathbf{X}_v|\,du\,dv$: the cross product length is the area-scaling factor, playing exactly the role $|J|$ played in [[§15 Multivariable Integration|§15]] — and $|\mathbf{r}'|$ in [[§16 Line Integrals and Green's Theorem|§16]].*
 
+> [!remark]- Connections
+> - The tangent space as the image of the derivative of a parametrization is one of three equal descriptions in [[§11 Tangent Spaces I꞉ The Geometric Picture#^cor-11-4|591 Cor. §11.4]] (velocities of curves, kernel of the constraint Jacobian, image of the parametrization's derivative).
+
 > [!definition] Definition §18.3: Regular Point
 > The surface is **regular** at $(u_0, v_0)$ if $\mathbf{X}_u$ and $\mathbf{X}_v$ are [[§4 Span and Linear Independence#^ladr-2-15|linearly independent]] at that point, i.e., $\mathbf{X}_u \times \mathbf{X}_v \neq \mathbf{0}$.
 >
@@ -142,6 +145,9 @@ These are exactly the tangent vectors to the two families of curves that sweep o
 > Distinguishing these cases requires checking whether the singularity persists under all possible reparametrizations — a question taken up systematically in differential geometry (MATH 591).
 
 ^rem-18-3
+
+> [!remark]- Connections
+> - A parametrization that is regular at every point is an immersion, [[§18 Immersions#^def-18-1|591 Def. §18.1]], and one that is also a homeomorphism onto its image is the internal description of a manifold, [[§9 Manifolds in Euclidean Space#^def-9-1|591 Def. §9.1]].
 
 ## Surface Area
 

@@ -19,6 +19,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - A subspace: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]]. Detects injectivity: [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]]. Its dimension enters [[Fundamental theorem of linear maps]].
 > - Called the kernel elsewhere; quotient by it: [[First isomorphism theorem]].
+> - Group version: the kernel and image of a homomorphism, [[§15 Homomorphisms#^def-15-2|493 Def. §15.2]].
 
 > [!example] Example 3.12: Null space (p. 59)
 > - The zero map $V\to W$ has $\nullsp 0=V$.
@@ -43,6 +44,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Companion: [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]].
+> - Group version: kernel and image of a homomorphism are subgroups, [[§15 Homomorphisms#^prop-15-2|493 Prop. §15.2]].
 
 > [!definition] Definition 3.14: Injective
 > A function $T:V\to W$ is *injective* if $Tu=Tv$ implies $u=v$; equivalently, distinct inputs give distinct outputs.
@@ -68,6 +70,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Same 'uniqueness at $0$' principle as [[Condition for a direct sum]] and [[§4 Span and Linear Independence#^ladr-2-15|Linearly independent]].
 > - Used in [[§8 Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]], [[§10 Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I (on vector spaces of the same dimension)]].
+> - Group version: a homomorphism is injective iff its kernel is trivial, [[§15 Homomorphisms#^prop-15-3|493 Prop. §15.3]] (hub [[Injective iff Trivial Kernel]]).
 
 > [!definition] Definition 3.16: Range
 > For $T\in\Lin(V,W)$, the *range* of $T$ is
@@ -153,6 +156,10 @@ tags: [linear-algebra]
 *Uses:* [[Every linearly independent list extends to a basis|2.32]]
 
 %% ex:3.21-fig %%
+
+> [!remark]- Connections
+> - Group analogue for finite groups: |G| = |Ker α| · |Im α|, [[§38 The First Isomorphism Theorem#^cor-38-2|493 Cor. §38.2]].
+
 > [!example] Example: The proof, pictured
 > A map $T:\R^3\to\R^2$ with $\dim\nullsp T=1$. The basis $u_1$ of $\nullsp T$ (red) is extended by $v_1,v_2$ to a basis of $V$. All of $\nullsp T$ collapses to $0$, while $Tv_1,Tv_2$ (blue) form a basis of $\range T$. So $3=1+2$.
 >

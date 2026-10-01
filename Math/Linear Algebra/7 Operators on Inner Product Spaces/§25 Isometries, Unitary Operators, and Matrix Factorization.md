@@ -15,6 +15,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Characterizations [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]]; singular values all $1$ ([[§26 Singular Value Decomposition#^ladr-7-69|7.69]]).
+> - Infinite-dimensional counterpart: isomorphic Hilbert spaces are related by an inner-product-preserving bijection ([[§20 Orthonormal Sets and Bases#^def-20-6|556 Def. §20.6]]), and there an isometry of a space into itself need not be onto ([[§20 Orthonormal Sets and Bases#^ex-20-2|556 Ex. §20.2]]).
 
 > [!example] Example 7.45: Orthonormal basis maps to orthonormal list ⟹ isometry (p. 258)
 > If $e_1,\dots,e_n$ is an orthonormal basis of $V$ and $g_1,\dots,g_n$ an orthonormal list in $W$, the linear $S$ with $Se_k=g_k$ is an isometry: for $v=\sum\langle v,e_k\rangle e_k$,
@@ -124,6 +125,10 @@ tags: [linear-algebra]
 > (Left as an exercise in Axler.) Let $S\in\Lin(\F^n)$ have standard matrix $Q$; the standard basis is orthonormal. Then (a) says the columns are orthonormal, i.e. $S$ is an isometry ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]](e)), i.e. $S$ is unitary ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-51|7.51]]); (b) is [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]](e); (c) is the definition of isometry for $S$; (d) is [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]](b) translated by [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]. All are equivalent to $S$ being unitary.
 
 *Uses:* [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-51|7.51]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]
+
+> [!remark]- Connections
+> - The real orthogonal matrices form the orthogonal group O(n), [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
+> - The matrices described here form the groups O(n) and U(n) of 591: [[§5 Topological Groups and Classical Matrix Groups#^def-5-6|591 Def. §5.6]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-7|591 Prop. §5.7]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-8|591 Def. §5.8]]; orthonormal columns make U(n) compact, [[§10 Vector Spaces and Matrix Groups#^cor-10-16|591 Cor. §10.16]].
 
 > [!theorem] Theorem 7.58: QR factorization
 > If $A$ is a square matrix with linearly independent columns, there are unique $Q,R$ with $Q$ unitary, $R$ upper triangular with positive diagonal, and $A=QR$.

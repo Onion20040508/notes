@@ -29,6 +29,9 @@ tags: [topology, math590]
 
 ^rem-17-1
 
+> [!remark]- Connections
+> - No infinite-dimensional normed space is locally compact: a compact neighborhood of 0 would contain a closed ball, and closed balls are not compact there by [[§15 Compactness and the Unit Ball#^thm-15-5|556 Thm. §15.5]] (compare [[§17 Local Compactness#^ex-17-5|Ex. §17.5]] for the product topology on ℝ^ω).
+
 > [!example] Example §17.1
 > $\mathbb{R}$ is locally compact. For any $x \in \mathbb{R}$, we have $x \in (a, b) \subseteq [a, b]$, where $[a, b]$ is [[§15 Compact Spaces#^cor-15-11|compact]].
 
@@ -257,6 +260,9 @@ tags: [topology, math590]
 
 ![[m590-17-2.svg]]
 *The same picture one dimension up, $\mathbb{R}^2\cup\{\infty\}\cong S^2$: the ray from $N$ through $p$ hits the tangent plane at $w$. The compact disk $C$ of radius $2$ (blue) corresponds to the lower hemisphere, and its complement (red) corresponds to the upper cap around $N$. Neighborhoods of $\infty$ are complements of compact sets.*
+
+> [!remark]- Connections
+> - In 591, stereographic projection is a smooth chart on the circle, [[§8 Differentiable Structures#^ex-8-3|591 Ex. §8.3]], and identifies S² with ℂP¹, [[§8 Differentiable Structures#^prop-8-9|591 Prop. §8.9]].
 
 ## Local Compactness in Hausdorff Spaces
 

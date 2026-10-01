@@ -65,6 +65,9 @@ We all know this — but how to *prove* it? The integral $\int_a^b g'$ is define
 ![[m451-34-2.svg]]
 *The proof of FTC I: on each $[t_{k-1}, t_k]$ the Mean Value Theorem gives a point $x_k$ where the tangent (red) is parallel to the chord (dashed), so $g(t_k) - g(t_{k-1}) = g'(x_k)(t_k - t_{k-1})$. Summed, the increments telescope to $g(b) - g(a)$ — while the right side becomes a Riemann sum for $g'$, trapped between $L(g', P)$ and $U(g', P)$.*
 
+> [!remark]- Connections
+> - Lebesgue version: $f(x) - f(a) = \int_a^x f'$ holds exactly for absolutely continuous $f$, [[§18 Differentiation Theory#^thm-18-13|551 Thm. §18.13]].
+
 ## Integration by Parts
 
 Integration by parts needs a preliminary: products of integrable functions are integrable.
@@ -121,6 +124,9 @@ Integration by parts needs a preliminary: products of integrable functions are i
 
 ^pf-34-3
 
+> [!remark]- Connections
+> - Its several-variable form is Green's first identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]], which reduces to this for n = 1.
+
 ## The Second Fundamental Theorem
 
 > [!theorem] Theorem §34.4: Fundamental Theorem of Calculus II
@@ -172,6 +178,10 @@ Integration by parts needs a preliminary: products of integrable functions are i
 
 ![[m451-34-1.svg]]
 *The proof in one strip: $F(x)$ is the shaded area, and the increment $F(x+h) - F(x)$ is the thin strip — of area $f(x) h$ up to an error controlled by the continuity of $f$ at $x$. Dividing by $h$: $F'(x) = f(x)$.*
+
+> [!remark]- Connections
+> - The substitution rule, which 451 never states, is proved in 452 from this theorem and the chain rule: [[§15 Multivariable Integration#^lem-15-13|452 Lemma §15.13]].
+> - Lebesgue version: for integrable $f$ the integral function is absolutely continuous ([[§18 Differentiation Theory#^thm-18-12|551 Thm. §18.12]]) and $F' = f$ almost everywhere without any continuity ([[§18 Differentiation Theory#^thm-18-26|551 Thm. §18.26]]).
 
 > [!example] Example §34.1: FTC I from FTC II when the derivative is continuous (HW)
 > The two halves of the FTC are not independent: if $g'$ is *continuous*, FTC I follows from FTC II in three lines. Set $G(x) = \int_a^x g'(t)\,dt$. By FTC II, $G$ is continuous on $[a,b]$ and $G' = g'$ on $(a,b)$; so $G - g$ has vanishing derivative on $(a,b)$ and is constant there (§29), and the constancy extends to the closed interval by continuity of $G - g$. Evaluating the constant at both ends,

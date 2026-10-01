@@ -128,6 +128,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 > [!remark]- Connections
 > - In 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3|551 Def. §19.3]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]].
+> - Convergence in a topological space: [[§7 Interior and Closure#^def-7-4|590 Def. §7.4]], which for the norm metric is this definition.
 
 > [!theorem] Lemma §8.3: Reverse Triangle Inequality
 > For all $x, y$ in a normed linear space $X$,
@@ -210,6 +211,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 > [!remark]- Connections
 > - The real-line and metric versions: [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-7|451 §10.7]] (convergent implies Cauchy), [[§13 Some Topological Concepts in Metric Spaces#^rem-13-4|451, uniqueness of limits]].
+> - Part (a) holds in every Hausdorff space ([[§8 Hausdorff Spaces#^thm-8-3|590 Thm. §8.3]]), and metric spaces are Hausdorff ([[§11 Metric Topology#^thm-11-4|590 Thm. §11.4]]).
 
 > [!remark] Remark
 > Convergence refers to a limit *in $X$*; a Cauchy sequence has its terms approaching one another with no limit mentioned. The converse of (b) fails: a Cauchy sequence may fail to converge because the point it is heading toward is missing from $X$ — the standard example being a sequence of rationals approaching $\sqrt{2}$ inside $\mathbb{Q}$. Spaces without this defect are the subject of the [[§9 Completeness|next section]]. Both statements, and their proofs, hold verbatim in any metric space.
@@ -223,6 +225,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 > [!remark]- Connections
 > - The topological definition (complement open) and its sequential characterization in metric spaces: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|451 Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|451 §13.5]]; in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-4|452 Def. §2.4]].
+> - The topological definition (complement open): [[§6 Closed Sets and Limit Points#^def-6-1|590 Def. §6.1]]; in metric spaces it agrees with this one by [[§7 Interior and Closure#^cor-7-5|590 Cor. §7.5]] and the Sequence Lemma ([[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]]).
 
 > [!definition] Definition §8.7: Closure; Dense Subset
 > Let $S$ be a subset of a normed linear space (or metric space) $X$. The **closure** $\overline{S}$ of $S$ is the set of all limits of convergent sequences in $S$:
@@ -239,6 +242,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 > [!remark]- Connections
 > - The closure as smallest closed superset, and its sequential description: [[§13 Some Topological Concepts in Metric Spaces#^def-13-6|451 Def. §13.6]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|451 §13.6]]; in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-5|452 Def. §2.5]].
+> - Topological closure and density: [[§7 Interior and Closure#^def-7-1|590 Def. §7.1]] (smallest closed superset), described by limits of sequences in metric spaces by the Sequence Lemma ([[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]]); dense: [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]].
 
 > [!theorem] Proposition §8.6: Properties of the Closure
 > Let $S$ be a subset of a normed linear space $X$.

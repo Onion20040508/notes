@@ -33,6 +33,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - MATH 451 version: [[Intermediate Value Theorem]].
 > - Invariance follows from [[Continuous Image of a Connected Space is Connected|Continuous Image of Connected Space]]; the strictness in point 4 is [[§14 Connected Subspaces of ℝ#^thm-14-4|Path-Connected Implies Connected]] and [[§14 Connected Subspaces of ℝ#^ex-14-7|Topologist's Sine Curve]].
+> - Connected components, which 590 does not treat, are defined in [[§1 Point-Set Topology Review#^def-1-8|591 Def. §1.8]], with their basic properties in [[§1 Point-Set Topology Review#^prop-1-7|591 Prop. §1.7]].
 
 > [!remark] Remark: Hausdorff and Connected are Independent
 > The [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]] property and connectedness are logically independent — neither implies nor contradicts the other:

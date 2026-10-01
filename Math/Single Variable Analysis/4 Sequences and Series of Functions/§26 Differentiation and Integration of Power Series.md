@@ -60,6 +60,9 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 ^pf-26-3
 
+> [!remark]- Connections
+> - In 551 term-by-term integration needs no uniform convergence: for non-negative terms it is [[§14 The Lebesgue Integral for Simple Functions#^thm-14-12|551 Thm. §14.12]] (MCT II), and for absolutely integrable series [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]].
+
 > [!theorem] Theorem §26.4: Term-by-Term Calculus for Power Series
 > Let $f(x) = \sum_{n=0}^\infty a_n x^n$ have radius of convergence $R > 0$. Then:
 >
@@ -101,6 +104,9 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > By the **[[Fundamental Theorem of Calculus|Fundamental Theorem of Calculus]]** (used here on credit; proved in Part III), the left side is differentiable in $x$ with derivative $g(x)$; hence so is the right side, and $f'(x) = g(x)$. Done.
 
 ^pf-26-4
+
+> [!remark]- Connections
+> - The differentiation half has a 551 analogue for series of absolutely continuous functions: [[§18 Differentiation Theory#^cor-18-14|551 Cor. §18.14]].
 
 ## Harvesting Closed Formulas
 

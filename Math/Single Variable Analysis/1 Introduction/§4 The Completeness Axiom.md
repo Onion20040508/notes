@@ -127,6 +127,9 @@ Finally, we come to the property that distinguishes $\mathbb{R}$.
 
 This is not obvious at all. It is the axiom we will assume for the rest of the semester, and use to prove other properties. Similarly, completeness can be formulated in terms of $\inf$: every nonempty subset bounded from below has a greatest lower bound. The two formulations are equivalent — each implies the other. Following the book, we assume the $\sup$ version and obtain the $\inf$ version as a corollary.
 
+> [!remark]- Connections
+> - For a general ordered set this is the least upper bound property, [[§14 Connected Subspaces of ℝ#^def-14-1|590 Def. §14.1]], the key hypothesis that makes ℝ connected.
+
 > [!theorem] Corollary §4.4: Completeness for Infima
 > If a nonempty $S \subseteq \mathbb{R}$ is bounded from below, then $\inf S$ exists.
 
@@ -265,3 +268,6 @@ As an application of completeness, we prove an “obvious” property: $\mathbb{
 > The lecture emphasized: try to prove density yourself before reading the book, and after reading, try to come up with new proofs. The proof above is the standard one; the dyadic-midpoint picture in the earlier remark, once the Archimedean property justifies its covering step, gives an alternative proof.
 
 ^rem-4-5
+
+> [!remark]- Connections
+> - In topological language ℚ is a dense subset of ℝ: [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]].

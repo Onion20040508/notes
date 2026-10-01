@@ -75,6 +75,9 @@ Boundedness is the basic beginning; the existence of max and min is very importa
 
 Where *exactly* does the proof need closedness? Reread Step 1 with $(a,b)$ in place of $[a,b]$ (HW): Bolzano–Weierstrass still extracts a convergent subsequence $x_{n_k} \to x_0$ — but the load-bearing step is “*$x_0 \in [a,b]$, since limits preserve the endpoint inequalities*.” For an open interval, $x_0$ may be an endpoint *outside* the domain, and then $f(x_0)$ is not even defined — the continuity argument has nowhere to land. And this failure is universal, not an accident of $\tfrac1x$:
 
+> [!remark]- Connections
+> - Abstract form: a continuous image of a compact space is compact, [[§15 Compact Spaces#^thm-15-3|590 Thm. §15.3]], and [a, b] is compact by [[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]] (Heine–Borel).
+
 > [!theorem] Proposition §18.2: Non-Closed Sets Always Carry Unbounded Continuous Functions (HW)
 > Let $S \subseteq \mathbb{R}$, and suppose some sequence $(x_n)$ in $S$ converges to a point $x_0 \notin S$. Then there exists a continuous unbounded function on $S$.
 
@@ -145,6 +148,9 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 
 ![[m451-18-2.svg]]
 *The set $S = \{x \in [a,b] \mid f(x) < y\}$ (red, on the axis) can be a union of several pieces; its endpoints where $f = y$ are excluded (hollow), while $a \in S$ (filled). The proof does not look for the first crossing but for $x_0 = \sup S$: points of $S$ approach it from the left, giving $f(x_0) \leq y$, and every point to its right lies outside $S$, giving $f(x_0) \geq y$.*
+
+> [!remark]- Connections
+> - Abstract form: a continuous image of a connected space is connected, [[§13 Connected Spaces#^thm-13-3|590 Thm. §13.3]], giving the IVT for any connected domain, [[§14 Connected Subspaces of ℝ#^thm-14-3|590 Thm. §14.3]].
 
 > [!theorem] Corollary §18.4: Sign Change Gives a Root
 > If $f: [a,b] \to \mathbb{R}$ is continuous and $f(a)$, $f(b)$ have opposite signs, then there exists $x_0 \in [a,b]$ with $f(x_0) = 0$.
@@ -220,6 +226,9 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 
 ![[m451-18-1.svg]]
 *The graph of $f: [0,1] \to [0,1]$ stays in the unit square: it starts on or above the diagonal and ends on or below it — so it must cross $y = x$. The same picture underlies the chord example below: two continuous curves that swap order must meet.*
+
+> [!remark]- Connections
+> - Since [0, 1] is the ball B¹, this is the case n = 0 of the Brouwer fixed point theorem, proved in 590 for the disc and for all balls: [[§26 Deformation Retracts and Homotopy Type#^thm-26-7|590 Thm. §26.7]], [[§26 Deformation Retracts and Homotopy Type#^thm-26-10|590 Thm. §26.10]].
 
 > [!example] Example §18.1: A chord of prescribed length
 > Let $f: [0,2] \to \mathbb{R}$ be continuous with $f(0) = f(2)$. Prove there exist $x, y \in [0,2]$ with
@@ -371,3 +380,6 @@ In one special case, equality does hold.
 > exists and is continuous — finally putting the logarithm, borrowed on credit in §9, on firmer footing (its continuity, at least; its defining properties still await the rigorous $e^x$).
 
 ^rem-18-8
+
+> [!remark]- Connections
+> - Topological form: a continuous bijection from a compact space to a Hausdorff space is a homeomorphism, [[§15 Compact Spaces#^thm-15-7|590 Thm. §15.7]].

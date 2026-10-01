@@ -73,6 +73,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Used for products of paths: [[§14 Connected Subspaces of ℝ#^thm-14-5|Product of Path-Connected Spaces]], and for products of quotient maps: [[§12 Quotient Topology#^thm-12-5|Theorem §12.5]].
+> - In 591 this is the universal property of the product, shown there to characterize the product topology: [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-10|591 Thm. §3.10]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^cor-3-11|591 Cor. §3.11]].
 
 > [!example] Example §10.1: $\mathbb{R}^\omega$
 > Define $\mathbb{R}^\omega = \mathbb{R} \times \mathbb{R} \times \cdots = \prod_{n \in \mathbb{Z}_{>0}} X_n$, where $X_n = \mathbb{R}$.

@@ -129,6 +129,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Minimal polynomial of a restriction divides: [[§15 The Minimal Polynomial#^ladr-5-31|Minimal polynomial of a restriction operator]]. With Cayley–Hamilton: minimal polynomial divides the characteristic polynomial ([[§29 Generalized Eigenspace Decomposition#^ladr-8-30|Characteristic polynomial is a multiple of minimal polynomial]]).
+> - Same least-element argument as for subgroups of ℤ, which are all of the form nℤ: [[§5 A Zoo of Subgroups#^prop-5-1|493 Prop. §5.1]] (hub [[Subgroups of ℤ]]).
 
 > [!theorem] Theorem 5.31: Minimal polynomial of a restriction operator
 > If $V$ is finite-dimensional, $T\in\Lin(V)$, and $U$ is invariant under $T$, then the minimal polynomial of $T$ is a polynomial multiple of the minimal polynomial of $T|_U$.

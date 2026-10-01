@@ -98,6 +98,7 @@ tags: [functional-analysis, math556]
 > - The same inequality in $\mathbb{R}^n$, stated without proof in Chapter 4: [[§11 Means and Young's Inequality#^prop-11-1|§11.1]].
 > - The finite-dimensional home: [[Cauchy–Schwarz inequality|LADR 6.14]].
 > - The rotation $e^{i\theta}$ that makes a complex number real: [[Functional Analysis Problem-Solving Techniques#^rem-t8|Technique 8]].
+> - In $L^2$ it is the case $p = q = 2$ of Hölder's inequality, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|551 Thm. §19.5]].
 
 ## The Induced Norm and Hilbert Spaces
 

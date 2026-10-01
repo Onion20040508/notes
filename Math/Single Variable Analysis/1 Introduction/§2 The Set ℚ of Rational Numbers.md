@@ -24,6 +24,7 @@ But $\mathbb{N}$ is *not* closed under $-$: if $n > m$, then $m - n \notin \math
 
 > [!remark]- Connections
 > - ℤ constructed from pairs of natural numbers, with its group and ring laws verified: [[§22 Partitions and Equivalence Relations#^def-22-9|250 Def. §22.9]], [[§22 Partitions and Equivalence Relations#^thm-22-13|250 Thm. §22.13]].
+> - The full definition (associativity, identity, inverses; not necessarily commutative): [[§1 The Definition of a Group#^def-1-1|493 Def. §1.1]].
 
 Next, $\mathbb{Z}$ is also closed under multiplication: for $m, n \in \mathbb{Z}$, $m \times n \in \mathbb{Z}$. We now have two operations $+, \times$, plus the inverse of $+$ (negative numbers), all compatible with each other, and $\mathbb{Z}$ is closed under all of them.
 
@@ -228,6 +229,7 @@ This matching criterion makes sense even when counting does not, so we turn it i
 
 > [!remark]- Connections
 > - Same definition: equipotent sets, [[§14 Counting Infinite Sets#^def-14-1|250 Def. §14.1]].
+> - Same definition in 551 (equivalent sets): [[§1 Countability and Set Theory#^def-1-7|551 Def. §1.7]]; two sets that inject into each other are equivalent by [[§2 The Cantor–Bernstein Theorem#^thm-2-1|551 Thm. §2.1]] (Cantor–Bernstein).
 
 > [!theorem] Theorem §2.4: $\mathbb{N}$ and $\mathbb{Z}$ have the same size
 > There exists a bijection $f: \mathbb{N} \to \mathbb{Z}$.
@@ -265,6 +267,7 @@ This matching criterion makes sense even when counting does not, so we turn it i
 
 > [!remark]- Connections
 > - 451's countable is 250's denumerable, [[§14 Counting Infinite Sets#^def-14-2|250 Def. §14.2]]; there (as in 551) countable also allows finite sets.
+> - 551's countable also allows finite sets: [[§1 Countability and Set Theory#^def-1-8|551 Def. §1.8]].
 
 > [!theorem] Theorem §2.5: $\mathbb{Q}$ is countable
 > There exists a bijection $f: \mathbb{Q} \to \mathbb{N}$.
@@ -303,6 +306,7 @@ This matching criterion makes sense even when counting does not, so we turn it i
 
 > [!remark]- Connections
 > - Elementary version: [[§14 Counting Infinite Sets#^thm-14-10|250 Thm. §14.10]] (Cantor, 1874).
+> - 551 proves it by the same diagonal listing of ℕ × ℕ ([[§1 Countability and Set Theory#^ex-1-3|551 Ex. §1.3]]) and again as a corollary of countable unions ([[§3 Countability of Rationals and Unions#^cor-3-2|551 Cor. §3.2]]).
 
 > [!theorem] Theorem §2.6: $\overline{\mathbb{Q}}$ is countable
 > The set $\overline{\mathbb{Q}}$ of algebraic numbers is countable.
@@ -318,6 +322,7 @@ This is more difficult; we do not prove it here.
 
 > [!remark]- Connections
 > - Proved, for the real algebraic numbers, in [[§14 Counting Infinite Sets#^thm-14-16|250 Thm. §14.16]], by listing the polynomials with rational coefficients as here.
+> - The listing step is the general fact that a countable union of countable sets is countable, proved in [[§3 Countability of Rationals and Unions#^prop-3-1|551 Prop. §3.1]].
 
 > [!definition] Definition §2.9: Uncountable
 > An infinite set $A$ is called **uncountable** if it does *not* have the same size as $\mathbb{N}$. In this case it has more elements than $\mathbb{N}$.
@@ -367,3 +372,4 @@ Later we will see that $\mathbb{R}$ is uncountable.
 
 > [!remark]- Connections
 > - Elementary version: [[§14 Counting Infinite Sets#^thm-14-16|250 Thm. §14.16]], with the uncountability of ℝ proved by Cantor's diagonal argument in [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]].
+> - The uncountability of ℝ it relies on is proved in 551 for the interval $[0,1]$: [[§4 Uncountability#^ex-4-2|551 Ex. §4.2]].

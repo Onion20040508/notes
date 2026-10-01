@@ -25,6 +25,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Open sets are exactly unions of basis elements: [[§2 Basis for a Topology#^lem-2-1|Topology Equals Union of Basis Elements]].
 > - Bases for constructions: [[§3 Order Topology#^def-3-4|Order Topology]], [[§4 Product Topology#^thm-4-1|Basis for Product Topology]], [[§5 Subspace Topology#^lem-5-1|Basis for Subspace Topology]].
+> - 591 also uses the other notion of basis, a family of open sets of a given topology, and proves the two agree: [[§1 Point-Set Topology Review#^prop-1-2|591 Prop. §1.2]].
 
 > [!remark] Remark: Why Bases?
 > Specifying a topology means listing *all* open sets—often an unwieldy collection. A basis is an efficient generating set: you describe a small, concrete family $\mathcal{B}$, and the topology is determined as “all unions of basis elements.” This is analogous to how a [[§5 Bases#^ladr-2-26|basis in linear algebra]] generates the whole vector space: you work with the small set and get the rest for free. In practice, nearly every topology you encounter (standard, order, product, metric) is defined by specifying a basis rather than the full topology.

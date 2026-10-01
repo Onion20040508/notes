@@ -269,6 +269,9 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 
 ^def-1-6
 
+> [!remark]- Connections
+> - Congruence modulo a subgroup, here for the subgroup Y of the additive group of X: [[§26 Left and Right Cosets#^def-26-1|493 Def. §26.1]].
+
 > [!definition] Definition §1.7: Equivalence Class and Quotient Space
 > For $x_0 \in X$, the **equivalence class** of $x_0$ is
 >
@@ -288,6 +291,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 
 > [!remark]- Connections
 > - Axler's translates and quotient space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]].
+> - The classes are the cosets of Y, and X/Y is the quotient group of (X, +) by Y with scalar multiplication added: [[§26 Left and Right Cosets#^def-26-2|493 Def. §26.2]], [[§37 Quotient Groups#^def-37-1|493 Def. §37.1]].
 
 > [!example] Example §1.4: Geometry of Equivalence Classes
 > Let $X = \mathbb{R}^2$ and let $Y$ be a line through the origin. If $x_0 = 0$ then $[x_0] = Y$. For general $x_0$, the class $[x_0] = x_0 + Y$ is the line *parallel* to $Y$ passing through the tip of the vector $x_0$: any other point $x$ on this line, dragged back by $-x_0$, lands on $Y$, i.e. $x - x_0 \in Y$. The equivalence classes are therefore the parallel translates of $Y$. They are not subspaces (they do not contain the origin unless equal to $Y$); the quotient $X / Y$ is the collection of all these parallel lines.

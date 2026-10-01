@@ -71,10 +71,17 @@ tags: [linear-algebra]
 
 ^ladr-9-31
 
+> [!remark]- Connections
+> - As a group under composition this is the symmetric group, [[§3 Basic Examples of Groups#^def-3-5|493 Def. §3.5]], with two-line and cycle notation in [[§10 Cycle Notation and the Group S₃#^def-10-1|493 Def. §10.1]].
+
 > [!definition] Definition 9.32: Sign of a permutation
 > $\operatorname{sign}(j_1,\dots,j_m)=(-1)^N$, where $N$ is the number of pairs $k<l$ such that $k$ appears after $l$ in the list (the number of *inversions*).
 
 ^ladr-9-32
+
+> [!remark]- Connections
+> - Developed in 493: the sign via inversions, [[§20 The Sign Homomorphism and the Alternating Group#^def-20-2|493 Def. §20.2]], and its multiplicativity, [[The Sign Homomorphism]] (493 Thm. §20.3).
+> - Same definition, by inversions, in 591: [[§5 Topological Groups and Classical Matrix Groups#^def-5-3|591 Def. §5.3]], with its properties in [[§5 Topological Groups and Classical Matrix Groups#^prop-5-2|591 Prop. §5.2]].
 
 > [!example] Example 9.33: Signs (p. 349)
 > - $\operatorname{sign}(1,\dots,m)=1$.
@@ -90,6 +97,9 @@ tags: [linear-algebra]
 
 > [!proof]+ Proof
 > Swap entries $a$ and $b$. The pair $\{a,b\}$ itself changes status (inverted/not): a change of $\pm1$. For each entry $c$ strictly between them in position, the pairs $\{a,c\}$ and $\{b,c\}$ either both change status or neither does: a change of $-2$, $0$ or $2$. Pairs involving entries outside that stretch, or not involving $a$ or $b$, are unaffected. So $N$ changes by an odd number.
+
+> [!remark]- Connections
+> - Group form: a transposition has sign −1 and the sign is a homomorphism, [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|493 Thm. §20.3]], so parity is well defined, [[§20 The Sign Homomorphism and the Alternating Group#^cor-20-4|493 Cor. §20.4]].
 
 > [!theorem] Theorem 9.35: Permutations and alternating multilinear forms
 > If $\alpha\in V^{(m)}_{\mathrm{alt}}$, then $\alpha(v_{j_1},\dots,v_{j_m})=\operatorname{sign}(j_1,\dots,j_m)\,\alpha(v_1,\dots,v_m)$ for all $(j_1,\dots,j_m)\in\operatorname{perm}m$.

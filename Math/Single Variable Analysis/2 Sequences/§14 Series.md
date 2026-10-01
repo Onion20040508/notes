@@ -234,6 +234,9 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 ^rem-14-4
 
+> [!remark]- Connections
+> - The same principle for series of functions: a series with $\sum \|f_k\|_p < \infty$ converges a.e. to a function in $L^p$, [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|551 Cor. §19.14]] (for $p = 1$: [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]]).
+
 ## The Comparison Test
 
 > [!theorem] Theorem §14.7: Comparison Test

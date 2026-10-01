@@ -36,6 +36,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The workhorse for every 'is a subspace' claim: [[§3 Subspaces#^ladr-1-40|Sum of subspaces is the smallest containing subspace]], [[§4 Span and Linear Independence#^ladr-2-6|Span is the smallest containing subspace]], [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]], [[§8 Null Spaces and Ranges#^ladr-3-16|Range]].
+> - Group version: the subgroup tests, [[§4 Subgroups#^prop-4-2|493 Prop. §4.2]] (hub [[Subgroup Criteria]]).
 
 > [!example] Example 1.35: Subspaces (p. 19)
 > - (a) $\{x\in\F^4 : x_3=5x_4+b\}$ is a subspace iff $b=0$ (for $b\ne0$ it misses $0$).
@@ -99,6 +100,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Same shape of result: [[§4 Span and Linear Independence#^ladr-2-6|Span is the smallest containing subspace]] for spans.
+> - Group version in ℤ: aℤ + bℤ is the smallest subgroup containing a and b, and equals gcd(a, b)ℤ, [[§5 A Zoo of Subgroups#^cor-5-2|493 Cor. §5.2]] ([[Bézout's Identity]]).
 
 > [!definition] Definition 1.41: Direct sum, ⊕
 > Let $V_1,\dots,V_m$ be subspaces of $V$. The sum $V_1+\dots+V_m$ is a *direct sum* if every element of it can be written in only one way as $v_1+\dots+v_m$ with $v_k\in V_k$. In that case we write $V_1\oplus\dots\oplus V_m$.
@@ -109,6 +111,7 @@ tags: [linear-algebra]
 > - Test with one vector: [[Condition for a direct sum]]. Two subspaces: [[§3 Subspaces#^ladr-1-46|Direct sum of two subspaces]].
 > - Direct sums organize the rest of the book: [[§17 Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|Direct sum of a subspace and its orthogonal complement]], [[Generalized eigenspace decomposition]].
 > - Physics: decomposing a state space into sectors (eigenspaces of a conserved quantity) is a direct-sum decomposition.
+> - Same notion in 556: [[§18 Projection and Orthogonal Decomposition#^def-18-2|556 Def. §18.2]] (internal direct sum); [[§1 Linear Spaces#^prop-1-3|556 Prop. §1.3]] shows it is the case where the sum map from the external direct sum is an isomorphism.
 
 > [!example] Example 1.42: A direct sum of two subspaces (p. 21)
 > In $\F^3$ let $U=\{(x,y,0)\}$ and $W=\{(0,0,z)\}$. Then $\F^3=U\oplus W$: every $(x,y,z)=(x,y,0)+(0,0,z)$, and the decomposition is unique since $U\cap W=\{0\}$ ([[§3 Subspaces#^ladr-1-46|1.46]]).

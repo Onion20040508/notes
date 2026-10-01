@@ -19,6 +19,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Basic properties [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]]; direct sum [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]]. Compare the annihilator $U^0\subseteq V'$ ([[§12 Duality#^ladr-3-121|3.121]]): Riesz ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-58|6.58]]) identifies $U^\perp$ with $U^0$.
+> - Same definition for arbitrary subsets of a Hilbert space: [[§18 Projection and Orthogonal Decomposition#^def-18-1|556 Def. §18.1]]; the complement is always closed, [[§18 Projection and Orthogonal Decomposition#^prop-18-3|556 Prop. §18.3]].
 
 > [!example] Example 6.47: Orthogonal complements (p. 211)
 > - In $\R^3$: $\{(2,3,5)\}^\perp$ is the plane $2x+3y+5z=0$, and the complement of that plane is the line $\{t(2,3,5)\}$.
@@ -64,6 +65,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Defines $P_U$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-55|6.55]]); dimensions [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|6.51]]; double complement [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|6.52]].
+> - Hilbert-space version, with the subspace closed instead of finite-dimensional: [[§18 Projection and Orthogonal Decomposition#^thm-18-4|556 Thm. §18.4]].
 
 %% ex:6.49-fig %%
 > [!example] Example: $V=U\oplus U^\perp$ in $\R^3$
@@ -96,6 +98,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]]
 
+> [!remark]- Connections
+> - For any subset of a Hilbert space the double complement is the closed linear span: [[§18 Projection and Orthogonal Decomposition#^thm-18-6|556 Thm. §18.6]].
+
 > [!theorem] Theorem 6.54: U⟂ = {0} ⟺ U = V (for U a finite-dimensional subspace of V)
 > For a finite-dimensional subspace $U$ of $V$: $U^\perp=\{0\}\iff U=V$.
 
@@ -116,6 +121,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Properties [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]]; closest point [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|6.61]]. Physics: $P_U=\sum_k|e_k\rangle\langle e_k|$ over an orthonormal basis of $U$, the projector of a measurement outcome.
+> - Same definition onto a closed subspace of a Hilbert space: [[§23 The Completeness Relation#^def-23-2|556 Def. §23.2]].
 
 > [!example] Example 6.56: Orthogonal projection onto one-dimensional subspace (p. 214)
 > For $U=\Span(u)$, $u\ne0$:
@@ -171,6 +177,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - This proof uses only $V=U\oplus U^\perp$ for $U=\nullsp\varphi$, which is why it generalizes to Hilbert spaces (closed subspaces).
+> - Hilbert-space version: [[§22 Bras, Kets, and the Riesz Map#^thm-22-2|556 Thm. §22.2]], where the Riesz map is a conjugate-linear isometric bijection onto the dual.
 
 > [!theorem] Theorem 6.61: Minimizing distance to a subspace
 > Let $U$ be a finite-dimensional subspace of $V$, $v\in V$, $u\in U$. Then
@@ -195,6 +202,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Pseudoinverse version for equations $Tx=b$: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-70|6.70]].
+> - Generalization: in a Hilbert space every nonempty closed convex set has a unique closest point, [[§18 Projection and Orthogonal Decomposition#^thm-18-2|556 Thm. §18.2]].
 
 %% ex:6.61-fig %%
 > [!example] Example: The closest point, pictured

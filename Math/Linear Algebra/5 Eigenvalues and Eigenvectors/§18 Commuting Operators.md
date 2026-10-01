@@ -88,6 +88,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Starts the induction in [[§18 Commuting Operators#^ladr-5-80|5.80]].
+> - Group-theoretic use: a common eigenvector of a group of operators gives a character, [[§40 Characters#^thm-40-2|493 Thm. §40.2]].
 
 > [!example] Example 5.79: Common eigenvector for partial differentiation operators (p. 177)
 > $D_x,D_y$ of [[§18 Commuting Operators#^ladr-5-72|5.72]] have only the eigenvalue $0$, with

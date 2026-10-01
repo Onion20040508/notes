@@ -82,6 +82,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Index form: $\det A=\varepsilon_{i_1\cdots i_n}A_{i_11}\cdots A_{i_nn}$ with the Levi-Civita symbol.
+> - Since this formula is a polynomial in the entries, det is continuous ([[§5 Topological Groups and Classical Matrix Groups#^prop-5-3|591 Prop. §5.3]]) and smooth, with derivative given by Jacobi's formula ([[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|591 Prop. §5.9]]).
 
 > [!example] Example 9.47: Explicit formula for determinant (p. 356)
 > - $2\times2$: $\det A=A_{1,1}A_{2,2}-A_{2,1}A_{1,2}$.
@@ -118,6 +119,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§9 Matrices#^ladr-3-43|3.43]]
 
+> [!remark]- Connections
+> - In group language: det is a homomorphism from the general linear group onto the nonzero scalars with kernel the special linear group, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]]; composed with permutation matrices it is the sign, [[The Sign Homomorphism]].
+
 > [!theorem] Theorem 9.50: Invertible ⟺ nonzero determinant
 > $T\in\Lin(V)$ is invertible iff $\det T\ne0$; then $\det(T^{-1})=\dfrac1{\det T}$.
 
@@ -150,6 +154,9 @@ tags: [linear-algebra]
 > $$
 > \tau_{S^{-1}TS}(w_1,\dots,w_n)=\alpha(TSw_1,\dots,TSw_n)=(\det T)\,\alpha(Sw_1,\dots,Sw_n)=(\det T)\,\tau(w_1,\dots,w_n).
 > $$
+
+> [!remark]- Connections
+> - In group language: det is constant on conjugacy classes of the general linear group, [[§31 Conjugacy Classes#^def-31-3|493 Def. §31.3]], as every character is, [[§40 Characters#^prop-40-1|493 Prop. §40.1]].
 
 > [!theorem] Theorem 9.53: Determinant of operator equals determinant of its matrix
 > For any basis $e_1,\dots,e_n$ of $V$, $\det T=\det\mathcal{M}(T,(e_1,\dots,e_n))$.

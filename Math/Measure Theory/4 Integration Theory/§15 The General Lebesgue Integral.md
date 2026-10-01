@@ -185,6 +185,9 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 
 ^rem-15-2
 
+> [!remark]- Connections
+> - Finite version for the Riemann integral over almost disjoint Jordan measurable domains: [[§15 Multivariable Integration#^thm-15-4|452 Thm. §15.4]].
+
 ## Vanishing Integral Implies A.E. Zero
 
 The non-negative case was proved in [[§14 The Lebesgue Integral for Simple Functions|§14]] ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|Proposition §14.11]]): if $f \geq 0$ and $\int_E f\,dx = 0$, then $f = 0$ a.e. We now extend to general measurable functions.

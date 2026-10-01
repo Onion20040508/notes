@@ -51,6 +51,9 @@ A basic property of [[§6 Differentiability#^def-6-1|differentiable]] functions 
 
 ^rem-7-1
 
+> [!remark]- Connections
+> - On a manifold, tangent vectors are built from this operation: the directional derivative $D_v$ attached to a tangent vector, [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-1|591 Def. §12.1]], abstracted to derivations at a point, [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-6|591 Def. §12.6]].
+
 > [!theorem] Theorem §7.1: Directional Derivative Formula
 > If $f(x, y)$ is [[§6 Differentiability#^def-6-1|differentiable]] at $(x, y)$, then the directional derivative in direction $\alpha$ exists and is given by:
 >

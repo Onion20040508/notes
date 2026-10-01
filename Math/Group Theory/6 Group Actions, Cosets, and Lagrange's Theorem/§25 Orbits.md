@@ -25,6 +25,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - Orbit size is the index of the stabilizer: [[§28 Orbit–Stabilizer#^thm-28-3|Orbit–Stabilizer]]; cosets are orbits: [[§26 Left and Right Cosets#^prop-26-1|Cosets Are Orbits]].
 > - The orbit-space notation is restated from lecture in [[§25 Orbits#^def-25-2|Orbit Space Notation, Def. §25.2]].
+> - With topologies: the orbit space X/G with the quotient topology, [[§6 Group Actions and Orbit Spaces#^def-6-5|591 Def. §6.5]] (orbits as in [[§6 Group Actions and Orbit Spaces#^def-6-3|591 Def. §6.3]]; e.g. complex projective space as an orbit space, [[§6 Group Actions and Orbit Spaces#^ex-6-3|591 Ex. §6.3]]); a continuous transitive action makes X a homogeneous space, [[§7 Homogeneous Spaces#^def-7-1|591 Def. §7.1]].
 
 > [!theorem] Proposition §25.1: Orbits Partition $X$
 > Let $G$ act on $X$ and $x, y \in X$. Then either $Gx = Gy$ or $Gx \cap Gy = \varnothing$. Hence $X$ is the disjoint union of the distinct orbits.
@@ -57,6 +58,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The orbit space is the quotient set of this relation; with a topology it is a quotient space in MATH 590: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 §12.3).
+> - Same relation in 591, [[§6 Group Actions and Orbit Spaces#^def-6-4|591 Def. §6.4]] and [[§6 Group Actions and Orbit Spaces#^prop-6-1|591 Prop. §6.1]]; for a continuous action it is an open equivalence relation, [[§6 Group Actions and Orbit Spaces#^lem-6-3|591 Lemma §6.3]].
 
 The left cosets of $H \leq G$ are the special case of $H$ acting on $G$ by right multiplication, discussed [[§26 Left and Right Cosets#^prop-26-1|below]].
 

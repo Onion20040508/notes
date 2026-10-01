@@ -81,6 +81,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - Convex sets return through the gauge, [[§5 Convex Sets and the Gauge#^def-5-2|Def. §5.2]], and the separation theorem, [[§6 The Hyperplane Separation Theorem#^thm-6-1|§6.1]].
+> - Convex subsets of ℝⁿ are simply connected, by the straight-line homotopy: [[§23 The Fundamental Group#^ex-23-2|590 Ex. §23.2]].
 
 > [!remark] Remark
 > As $a$ runs over $[0, 1]$, the point $a x_1 + (1 - a) x_2$ runs over the line segment from $x_2$ (at $a = 0$) to $x_1$ (at $a = 1$). So $K$ is convex if and only if it contains the segment joining any two of its points. Values $a > 1$ or $a < 0$ would leave the segment, continuing beyond $x_1$ or beyond $x_2$ respectively; these are excluded.

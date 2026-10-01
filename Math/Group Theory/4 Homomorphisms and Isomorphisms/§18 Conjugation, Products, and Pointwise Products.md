@@ -126,6 +126,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^def-21-5|Direct Product of Groups]] (590 §21.5).
 > - Linear-algebra version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|Product of vector spaces]] (LADR 3.87).
+> - Applied in 590: the isomorphism of π₁ of a product with the product of the π₁'s is the homomorphism induced by the two projections, [[§23 The Fundamental Group#^thm-23-7|590 Thm. §23.7]].
 
 > [!theorem] Proposition §18.4: Characterizations of Abelian Groups
 > For a group $G$, the following are equivalent:

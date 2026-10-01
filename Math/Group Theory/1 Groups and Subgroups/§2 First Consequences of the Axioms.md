@@ -77,6 +77,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[§1 The Definition of a Group#^def-1-1|Def. §1.1]]
 
+> [!remark]- Connections
+> - Same argument for the zero vector: [[§2 Definition of Vector Space#^ladr-1-26|LADR 1.26]]; for additive inverses, [[§2 Definition of Vector Space#^ladr-1-27|LADR 1.27]].
+
 > [!theorem] Proposition §2.3: Uniqueness of Inverses
 > For each $g \in G$, there is exactly one element $g^{-1} \in G$ obeying condition (2) of the [[§1 The Definition of a Group#^def-1-1|definition of a group]].
 >

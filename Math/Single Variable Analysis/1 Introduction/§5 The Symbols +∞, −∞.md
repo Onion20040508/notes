@@ -61,6 +61,9 @@ The first payoff of the conventions: a basic inequality that needs no boundednes
 
 ^rem-5-1
 
+> [!remark]- Connections
+> - 551 fixes the arithmetic of the extended reals for measure and integration, including the convention $0 \cdot (\pm\infty) = 0$: [[§12 Measurable Functions#^def-12-1|551 Def. §12.1]].
+
 > [!theorem] Proposition §5.2: Supremum of a Sum of Sets
 > For nonempty subsets $A, B \subseteq \mathbb{R}$, define
 >

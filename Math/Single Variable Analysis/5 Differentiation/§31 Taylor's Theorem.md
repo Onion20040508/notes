@@ -116,6 +116,9 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 
 ^rem-31-1
 
+> [!remark]- Connections
+> - Two-variable version, proved by applying this theorem along a segment: [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-2|452 Thm. §9.2]].
+
 ## Two Instructive Examples
 
 > [!example] Example §31.1: The cosine converges to itself everywhere (HW)

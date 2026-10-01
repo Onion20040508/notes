@@ -117,6 +117,9 @@ tags: [linear-algebra]
 > [!remark] Remark: Forms vs operators
 > An operator can be symmetric in some bases and not others; a bilinear form is symmetric in all bases or in none ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-12|9.12]]).
 
+> [!remark]- Connections
+> - The symmetric matrices form a Euclidean space of dimension n(n + 1)∕2, [[§10 Vector Spaces and Matrix Groups#^def-10-10|591 Def. §10.10]], the target of A ↦ AAᵗ when O(n) is shown to be a manifold ([[§10 Vector Spaces and Matrix Groups#^ex-10-1|591 Ex. §10.1]]).
+
 > [!theorem] Theorem 9.12: Symmetric bilinear forms are diagonalizable
 > For $\rho\in V^{(2)}$, equivalent:
 > - (a) $\rho$ is symmetric;

@@ -22,3 +22,4 @@ tags: [linear-algebra, hub]
 
 ## Connections
 - Physics: an observable (or any normal operator, e.g. a unitary time evolution) has an orthonormal eigenbasis; commuting normal operators share one ([[§18 Commuting Operators#^ladr-5-76|5.76]]).
+- In infinite dimensions the eigenvectors of a self-adjoint operator need not span: the bound states of hydrogen are not complete, [[§25 Bound States Need Not Be Complete꞉ Hydrogen#^cor-25-2|556 Cor. §25.2]].

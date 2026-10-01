@@ -240,5 +240,6 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 
 > [!remark]- Connections
 > - The matrix of a dual map in dual bases is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].
+> - The rule for $dx^i$ is the substitution step of the pullback in 452, [[§22 The Algebra of Differential Forms#^def-22-3|452 Def. §22.3]], applied to the transition map.
 
 “We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.” $TM$ and $T^*M$ are isomorphic as vector bundles, “but not naturally isomorphic — we have to make choices to construct an isomorphism” (a metric, for instance, as in the [[§15 Submanifolds#^rem-15-1|remark on conormal spaces]]). This is stated, not proved, here.

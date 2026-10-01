@@ -24,6 +24,9 @@ In the $(\varepsilon, \delta)$ definition of continuity, one important point: $\
 
 ^rem-19-1
 
+> [!remark]- Connections
+> - Strengthened in 551 to absolute continuity, which controls finitely many disjoint intervals at once ($n = 1$ gives this definition): [[§18 Differentiation Theory#^def-18-4|551 Def. §18.4]]; the Cantor function is uniformly but not absolutely continuous ([[§18 Differentiation Theory#^rem-18-7|551 Rem. §18.7]]).
+
 > [!example] Example §19.1: The two faces of the reciprocal
 > Prove: $f(x) = \tfrac1x$ is uniformly continuous on $[a, +\infty)$ for every $a > 0$, but *not* on $(0, +\infty)$. (Different domains: different functions, different properties!)
 >

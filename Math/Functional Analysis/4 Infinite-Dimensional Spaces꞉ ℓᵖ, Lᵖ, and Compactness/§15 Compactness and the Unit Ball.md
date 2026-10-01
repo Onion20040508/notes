@@ -263,6 +263,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 
 > [!remark]- Connections
 > - The finite-dimensional contrast: [[§15 Compactness and the Unit Ball#^ex-15-1|Ex. §15.1]], resting on [[Heine–Borel Theorem|Heine–Borel]] / [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]].
+> - Hence no infinite-dimensional normed space is locally compact ([[§17 Local Compactness#^def-17-1|590 Def. §17.1]]), since a compact neighborhood of 0 would contain a closed ball; compare ℝ^ω, [[§17 Local Compactness#^ex-17-5|590 Ex. §17.5]].
 
 > [!remark] Remark: Where Infinite-Dimensionality Enters
 > This was asked in lecture. The hypothesis is used at exactly one point: to know that $Y_m = \operatorname{span}\{x_1, \ldots, x_m\}$ is a *proper* subspace, so that Riesz's lemma applies and the construction can continue. In a finite-dimensional space the process halts — at some stage $Y_m = X$, and there is no vector left at distance $\tfrac12$ from everything already chosen. Infinite-dimensionality is what guarantees a genuinely new direction at every step. The other hypothesis doing work is Corollary [[§10 New Normed Spaces from Old#^cor-10-5|§10.5]]: without knowing $Y_m$ closed, Riesz's lemma would not apply either.

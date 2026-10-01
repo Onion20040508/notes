@@ -32,6 +32,9 @@ tags: [group-theory, math493]
 
 ^rem-30-1
 
+> [!remark]- Connections
+> - The same action for all real matrix groups in 591: [[§6 Group Actions and Orbit Spaces#^ex-6-1|591 Ex. §6.1]].
+
 > [!theorem] Proposition §30.2: $O_3(\mathbb{R})$ Acting on $\mathbb{R}^3$
 > Let $O_3(\mathbb{R}) = \{A : A^{\mathsf{T}}A = I\}$ act on $\mathbb{R}^3$ by matrix multiplication.
 > 1. The orbits are $\{0\}$ and the spheres $S_r = \{v : |v| = r\}$, $r > 0$; so $O_3 \backslash \mathbb{R}^3 \leftrightarrow \mathbb{R}_{\geq 0}$, an orbit corresponding to its radius.
@@ -52,6 +55,9 @@ tags: [group-theory, math493]
 
 ![[m493-30-2.svg]]
 *Left: $GL_3(\mathbb{R})$ has two orbits on $\mathbb{R}^3$, the origin (red) and everything else (blue); any $v \neq 0$ is reached from $e_1$ by an invertible $P$ with first column $v$. Right: $O_3(\mathbb{R})$ preserves length, so its orbits are the origin and the spheres $S_r$ (blue), and $e_1$ reaches only the vectors $w$ with $|w| = 1$. The stabilizer of $e_1$ acts as $O_2(\mathbb{R})$ on the plane $e_1^\perp$, moving the great circle $e_1^\perp \cap S_1$ (red) within itself.*
+
+> [!remark]- Connections
+> - In 591 the rotation version makes the unit sphere a homogeneous space, SO(3)/SO(2) ≅ S², [[§7 Homogeneous Spaces#^ex-7-3|591 Ex. §7.3]] (orbits as in [[§6 Group Actions and Orbit Spaces#^ex-6-5|591 Ex. §6.5]]); O(n) also acts transitively on the Grassmannians, [[§7 Homogeneous Spaces#^prop-7-11|591 Prop. §7.11]].
 
 > [!theorem] Proposition §30.3: Rotational Symmetries of the Cube
 > Let $C = [-1,1]^3 \subseteq \mathbb{R}^3$ be the cube and let $G$ be its group of rotational symmetries (the symmetries realizable by physically turning the cube; as matrices, $G = \operatorname{Sym}(C) \cap SO_3(\mathbb{R})$).

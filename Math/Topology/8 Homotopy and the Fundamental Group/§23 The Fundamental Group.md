@@ -89,6 +89,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Closed balls specifically: $B^n$ is Convex and Simply Connected ([[§26 Deformation Retracts and Homotopy Type#^prop-26-5|§26.5]]).
+> - Convex sets in a general real linear space: [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3|556 Def. §2.3]].
 
 > [!remark] Remark: What $\pi_1$ Cannot See
 > $\pi_1(\mathbb{R}^n) = \{e\}$ for all $n$, so the fundamental group alone cannot distinguish $\mathbb{R}^2$ from $\mathbb{R}^3$. But we don't apply $\pi_1$ to $\mathbb{R}^n$ directly—we apply it to $\mathbb{R}^n$ *minus a point*. The punctured spaces have different loop structures:
@@ -101,6 +102,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - $\pi_1(\mathbb{R}^3 \setminus \{0\})$: $\pi_1(S^n) \cong \pi_1(\mathbb{R}^{n+1} \setminus \{0\})$ ([[§26 Deformation Retracts and Homotopy Type#^thm-26-2|§26.2]]) together with $S^n$ is Simply Connected for $n \geq 2$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]]).
+> - The general theorem, that nonempty open subsets of ℝⁿ and ℝᵐ are homeomorphic only when n = m, is stated without proof in 591 as [[§2 Topological Manifolds#^thm-2-1|591 Thm. §2.1]].
 
 ## Dependence on Basepoint
 
@@ -342,6 +344,9 @@ tags: [topology, math590]
 ^pf-23-7
 
 *Uses:* [[§21 Algebra Prerequisites꞉ Groups#^def-21-5|Def. §21.5]], [[§21 Algebra Prerequisites꞉ Groups#^prop-21-8|§21.8]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|§10.1]]
+
+> [!remark]- Connections
+> - The direct product in 493: [[§3 Basic Examples of Groups#^def-3-2|493 Def. §3.2]]; the map Φ is the homomorphism given by its universal property, [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|493 Prop. §18.3]].
 
 > [!theorem] Corollary §23.8: Fundamental Group of the Torus
 > $\pi_1(S^1 \times S^1) \cong \pi_1(S^1) \times \pi_1(S^1) \cong \mathbb{Z} \times \mathbb{Z}$.

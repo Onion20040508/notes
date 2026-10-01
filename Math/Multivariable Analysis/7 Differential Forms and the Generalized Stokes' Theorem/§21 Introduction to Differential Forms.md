@@ -151,6 +151,7 @@ This also explains why the [[Divergence Theorem in ℝ³|Divergence Theorem]] ne
 > [!remark]- Connections
 > - The coordinate 1-forms $dx_1, \ldots, dx_n$ are the dual basis of the standard basis: [[§12 Duality#^ladr-3-113|LADR 3.113]].
 > - At each point a $k$-form is an alternating $k$-linear form on $\mathbb{R}^n$ ([[§33 Alternating Multilinear Forms#^ladr-9-27|LADR 9.27]]); there are none for $k > n$ ([[§33 Alternating Multilinear Forms#^ladr-9-29|LADR 9.29]]) and the top-degree ones form a 1-dimensional space ([[§33 Alternating Multilinear Forms#^ladr-9-37|LADR 9.37]]).
+> - On a manifold the coordinate 1-forms at a point are the dual basis of the coordinate derivations, [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|591 Lemma §13.2]], and the covectors at all points together form the cotangent bundle, [[§17 The Tangent Bundle#^def-17-5|591 Def. §17.5]].
 
 **What this definition says, concretely:**
 

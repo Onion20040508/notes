@@ -145,6 +145,9 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 
 ^def-10-3
 
+> [!remark]- Connections
+> - Same notion in LADR: [[§35 Tensor Products#^ladr-9-68|LADR 9.68]] (bilinear functionals on V × W); the case W = V is a bilinear form, [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]].
+
 > [!theorem] Theorem §10.5: Non-Degenerate Pairings
 > Let $B : V \times W \to \mathbb{R}$ be a non-degenerate bilinear pairing, and suppose $V$ or $W$ is finite-dimensional. Then both are finite-dimensional, $\dim V = \dim W$, and
 >
@@ -275,6 +278,9 @@ $$
 
 Commutativity means: apply $F$ and then take coordinates, or take coordinates and then apply $\widetilde F$; the result is the same. “$\widetilde F$ is just $F$ expressed in coordinates.”
 
+> [!remark]- Connections
+> - In LADR this is the coordinate map v ↦ M(v) of a basis ([[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]]), and the coordinate representation of a linear map is its matrix ([[§10 Invertibility and Isomorphisms#^ladr-3-76|LADR 3.76]]).
+
 > [!definition] Definition §10.7: Smooth Map Between Vector Spaces
 > $F : X \to Y$ is **smooth** if $\widetilde F = K \circ F \circ L^{-1} : \mathbb{R}^m \to \mathbb{R}^n$ is smooth for any choice of linear coordinates $L, K$ — equivalently, by Lemma [[§10 Vector Spaces and Matrix Groups#^lem-10-8|§10.8]], for some choice.
 
@@ -381,6 +387,9 @@ Now suppose $F$ is smooth and fix $p \in X$. There is a second square, with the 
 
 ^rem-10-5
 
+> [!remark]- Connections
+> - A witness for the first point, with every directional derivative at the origin but no derivative: [[§6 Differentiability#^rem-6-4|452 §6, Warning: The Converse Is False]].
+
 > [!theorem] Corollary §10.11: Regular Values Without Coordinates
 > Suppose $\dim X \ge \dim Y$ and $F : X \to Y$ is smooth, and let $\widetilde F = K \circ F \circ L^{-1}$ and $\tilde p = L(p)$ be taken in linear coordinates $L$, $K$, as in [[§10 Vector Spaces and Matrix Groups#^def-10-9|Def. §10.9]]. Then for $p \in X$,
 >
@@ -421,6 +430,9 @@ The promise of [[§5 Topological Groups and Classical Matrix Groups#The Classica
 > Reading off those entries in a fixed order gives a linear isomorphism $\operatorname{Sym}(n,\mathbb{R}) \cong \mathbb{R}^{n(n+1)/2}$, which we use to regard maps into $\operatorname{Sym}(n,\mathbb{R})$ as maps into a Euclidean space. Being linear, it changes neither smoothness nor rank.
 
 ^def-10-10
+
+> [!remark]- Connections
+> - Symmetric matrices in LADR: [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-11|LADR 9.11]], the matrices of symmetric bilinear forms ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR 9.9]]).
 
 > [!example] Example §10.1: $\mathrm{O}(n)$ Is a Smooth Manifold of Dimension $\tfrac{n(n-1)}{2}$
 > Define

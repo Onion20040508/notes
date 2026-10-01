@@ -33,6 +33,9 @@ It is often not easy to check integrability from the definitions — we need pro
 ![[m451-33-1.svg]]
 *Why monotone functions are integrable: on each subinterval of the equal partition, the gap between upper and lower rectangles is a box of width $\tfrac{b-a}{n}$ and height $f(t_k) - f(t_{k-1})$ (red). Slid sideways, the boxes stack into one column of height $f(b) - f(a)$ — the telescoping sum — so $U - L = \bigl(f(b) - f(a)\bigr)\tfrac{b-a}{n}$. A jump of $f$ (hollow and filled dots) changes nothing.*
 
+> [!remark]- Connections
+> - The countability of the discontinuities mentioned here is proved in [[§18 Differentiation Theory#^thm-18-1|551 Thm. §18.1]], and a monotone function is even differentiable a.e. by [[§18 Differentiation Theory#^thm-18-9|551 Thm. §18.9]].
+
 > [!theorem] Theorem §33.2: Linearity
 > If $f, g: [a,b] \to \mathbb{R}$ are integrable, then:
 >
@@ -71,6 +74,9 @@ It is often not easy to check integrability from the definitions — we need pro
 
 ^pf-33-2
 
+> [!remark]- Connections
+> - Double-integral version: [[§15 Multivariable Integration#^thm-15-2|452 Thm. §15.2]] and [[§15 Multivariable Integration#^thm-15-3|452 Thm. §15.3]].
+
 > [!theorem] Theorem §33.3: Monotonicity of the Integral
 > If $f, g$ are integrable on $[a,b]$ and $f(x) \leq g(x)$ for all $x$, then
 >
@@ -88,6 +94,9 @@ It is often not easy to check integrability from the definitions — we need pro
 > $$
 
 ^pf-33-3
+
+> [!remark]- Connections
+> - Double-integral version: [[§15 Multivariable Integration#^thm-15-5|452 Thm. §15.5]].
 
 > [!theorem] Theorem §33.4: Absolute Values
 > If $f: [a,b] \to \mathbb{R}$ is integrable, then $|f|$ is integrable, and
@@ -122,6 +131,9 @@ It is often not easy to check integrability from the definitions — we need pro
 
 ^rem-33-1
 
+> [!remark]- Connections
+> - Double-integral version: [[§15 Multivariable Integration#^cor-15-6|452 Cor. §15.6]].
+
 > [!theorem] Theorem §33.5: Additivity over Subintervals
 > Let $a < c < b$. If $f$ is integrable on $[a,c]$ and on $[c,b]$, then $f$ is integrable on $[a,b]$, and
 >
@@ -143,6 +155,9 @@ It is often not easy to check integrability from the definitions — we need pro
 ^pf-33-5
 
 The converse direction — that integrability passes *down* to subintervals — is what makes splitting a given integral legal in the first place:
+
+> [!remark]- Connections
+> - Double-integral version, additivity over almost disjoint regions: [[§15 Multivariable Integration#^thm-15-4|452 Thm. §15.4]].
 
 > [!theorem] Proposition §33.6: Restriction to Subintervals (HW)
 > If $f$ is integrable on $[a,b]$, then $f$ is integrable on every interval $[c,d] \subseteq [a,b]$.
@@ -208,6 +223,9 @@ The converse direction — that integrability passes *down* to subintervals — 
 
 ![[m451-33-2.svg]]
 *Positivity of the integral: if $f(x_0) > 0$, continuity keeps $f > \tfrac12 f(x_0)$ on $[x_0 - \varepsilon, x_0 + \varepsilon]$, so the region under $f$ (blue) contains the red rectangle of area $\tfrac12 f(x_0) \cdot 2\varepsilon = f(x_0)\,\varepsilon > 0$ — hence $\int_a^b f \geq f(x_0)\,\varepsilon > 0$.*
+
+> [!remark]- Connections
+> - Lebesgue version without continuity, where the conclusion weakens to $f = 0$ a.e.: [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|551 Prop. §14.11]].
 
 > [!theorem] Corollary §33.8: Vanishing Integral of a Square
 > If $f: [a,b] \to \mathbb{R}$ is continuous and $\int_a^b f^2\,dx = 0$, then $f \equiv 0$.
@@ -388,3 +406,6 @@ The theorem places $x_0$ only in the *closed* interval. That is genuinely weaker
 > $$
 
 ^pf-33-12
+
+> [!remark]- Connections
+> - The Riemann integral is not closed under monotone limits ([[§8 Motivation꞉ The Riemann Integral#^rem-8-2|551 Rem. §8.2]]); the Lebesgue integral exchanges limit and integral under monotonicity or domination alone: [[§14 The Lebesgue Integral for Simple Functions#^thm-14-4|551 Thm. §14.4]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]].

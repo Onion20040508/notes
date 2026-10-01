@@ -23,6 +23,9 @@ Start with basics. Let $f: \Omega \to \mathbb{R}$ be a real-valued function defi
 
 ^def-17-1
 
+> [!remark]- Connections
+> - In topological spaces, continuity implies sequential continuity, with the converse for metrizable domains: [[§11 Metric Topology#^thm-11-9|590 Thm. §11.9]].
+
 > [!example] Example §17.1: Linear and polynomial functions
 > $f(x) = 2x$ on $\Omega = \mathbb{R}$ is continuous at every $x_0$: if $x_n \to x_0$, then $f(x_n) = 2x_n \to 2x_0 = f(x_0)$ by the scalar-multiple limit theorem. More generally, every polynomial
 >
@@ -67,6 +70,9 @@ For some functions the sequential definition is not so easy to check directly �
 > In the $(\varepsilon,\delta)$ definition, $\delta$ depends on $\varepsilon$: we need to *solve* $\delta$ in terms of $\varepsilon$. The idea, as with sequences: start with the target $|f(x) - f(x_0)| < \varepsilon$, *simplify first* — replace $|f(x)-f(x_0)|$ by a simpler upper bound if needed — and then solve for $|x - x_0| < \delta = \delta(\varepsilon)$.
 
 ^rem-17-1
+
+> [!remark]- Connections
+> - For maps between metric spaces, ε-δ continuity is equivalent to the open-set definition: [[§11 Metric Topology#^thm-11-7|590 Thm. §11.7]].
 
 > [!example] Example §17.2: A first epsilon-delta proof
 > $f(x) = 3x$ is continuous at every $x_0 \in \mathbb{R}$. How to get $\delta$? Start with
@@ -127,6 +133,9 @@ For some functions the sequential definition is not so easy to check directly �
 ![[m451-17-3.svg]]
 *Damped versus undamped oscillation at $0$. Left: $f(x) = x\sin\tfrac1x$ is trapped between $\pm|x|$ (dashed), so the square with $\delta = \varepsilon$ (red) contains the graph over $|x| < \delta$ — continuity at $0$. Right: $g(x) = \sin\tfrac1x$ oscillates between $\pm1$ ever faster (shaded: infinitely many oscillations); the points $x_n = \tfrac{1}{2n\pi + \pi/2} \to 0$ (red) keep $g(x_n) = 1$, far from $g(0) = 0$.*
 
+> [!remark]- Connections
+> - The graph of sin(1/x) on (0, 1] is the topologist's sine curve, [[§14 Connected Subspaces of ℝ#^ex-14-7|590 Ex. §14.7]], whose closure is connected but not path-connected because of this oscillation at 0.
+
 > [!definition] Definition §17.2: Continuous Function
 > A function $f: \Omega \to \mathbb{R}$ is called **continuous** if it is continuous at *every* point $x_0 \in \Omega$.
 
@@ -176,6 +185,9 @@ For some functions the sequential definition is not so easy to check directly �
 
 ^pf-17-3
 
+> [!remark]- Connections
+> - Same rules for functions of two variables: [[§3 Continuity and Limits of Functions#^thm-3-1|452 Thm. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 Thm. §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 Thm. §3.3]] (sum, product, quotient).
+
 > [!example] Example §17.6: Polynomials and rational functions
 > (1) All polynomial functions are continuous — we knew this already; it also follows from (1)–(2) starting with constants and $f(x)=x$. (2) Every rational function $\tfrac{P(x)}{Q(x)}$ is continuous at every point where the polynomial $Q$ does not vanish.
 
@@ -192,6 +204,10 @@ The most important and useful theorem in this section:
 > Suppose $x_n \to x_0$. Then $f(x_n) \to f(x_0)$ ($f$ continuous at $x_0$). Then $g(f(x_n)) \to g(f(x_0))$ ($g$ continuous at $f(x_0)$, applied to the sequence $f(x_n)$ in $\operatorname{dom}(g)$). Done! — The sequential definition makes this proof effortless.
 
 ^pf-17-4
+
+> [!remark]- Connections
+> - Several-variable versions: [[§3 Continuity and Limits of Functions#^thm-3-4|452 Thm. §3.4]] and [[§10 Composition of Functions and the Chain Rule#^thm-10-1|452 Thm. §10.1]].
+> - Composition rule for continuous maps of topological spaces: [[§9 Continuous Functions#^thm-9-4|590 Thm. §9.4]].
 
 > [!example] Example §17.7: Compositions and domains
 > When applying the composition theorem, *check the domains*. (1) $f(x) = \tfrac1x$ is continuous at every $x \neq 0$, and $g(x) = \sin x$ is continuous (later); so $\sin\tfrac1x$ is continuous at every $x \neq 0$ — as claimed above. (2) $f(x) = \sqrt{|x|}: \mathbb{R} \to \mathbb{R}$ is continuous everywhere: it is the composition of $|x|: \mathbb{R} \to [0,\infty)$ and $\sqrt{x}: [0,\infty) \to \mathbb{R}$, and the domain condition is satisfied since $|x|$ takes values exactly in $\operatorname{dom}(\sqrt{\ })$.

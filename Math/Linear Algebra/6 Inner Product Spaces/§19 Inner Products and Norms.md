@@ -40,6 +40,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Basic consequences: [[§19 Inner Products and Norms#^ladr-6-6|6.6]]. Norm: [[§19 Inner Products and Norms#^ladr-6-7|6.7]].
+> - Same definition in 556 ([[§16 Definition and Examples#^def-16-1|556 Def. §16.1]]); a complete inner product space is a Hilbert space ([[§17 Cauchy–Schwarz and the Induced Norm#^def-17-1|556 Def. §17.1]]), and every finite-dimensional one is complete ([[§10 New Normed Spaces from Old#^cor-10-4|556 Cor. §10.4]]).
 
 > [!example] Example 6.3: Inner products (p. 184)
 > - (a) **Euclidean** on $\F^n$: $\langle w,z\rangle=w_1\bar z_1+\dots+w_n\bar z_n$.
@@ -87,6 +88,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Properties: [[§19 Inner Products and Norms#^ladr-6-9|6.9]], [[Triangle inequality|6.17]]. Whether a norm comes from an inner product is decided by [[§19 Inner Products and Norms#^ladr-6-21|6.21]].
+> - The general notion of a norm, not necessarily coming from an inner product: [[§8 Normed Linear Spaces#^def-8-1|556 Def. §8.1]]; that this one satisfies those axioms is [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-2|556 Thm. §17.2]].
 
 > [!example] Example 6.8: Norms (p. 186)
 > - (a) In $\F^n$: $\|(z_1,\dots,z_n)\|=\sqrt{|z_1|^2+\dots+|z_n|^2}$.
@@ -141,6 +143,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in [[Cauchy–Schwarz inequality|6.14]], [[§20 Orthonormal Bases#^ladr-6-24|6.24]], [[§20 Orthonormal Bases#^ladr-6-26|6.26]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|6.61]].
+> - Same statement in 556, together with LADR 6.24: [[§20 Orthonormal Sets and Bases#^lem-20-1|556 Lemma §20.1]].
 
 > [!theorem] Theorem 6.13: An orthogonal decomposition
 > Let $u,v\in V$, $v\ne0$. Set $c=\dfrac{\langle u,v\rangle}{\|v\|^2}$ and $w=u-cv$. Then $u=cv+w$ and $\langle w,v\rangle=0$.
@@ -227,6 +230,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Geometry: diagonals of a parallelogram (figure below).
+> - The converse, that a norm satisfying this identity comes from an inner product, is the Jordan–von Neumann theorem: [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-4|556 Thm. §17.4]] (polarization in [[§17 Cauchy–Schwarz and the Induced Norm#^prop-17-3|556 Prop. §17.3]]).
 
 %% ex:6.21-fig %%
 > [!example] Example: The parallelogram

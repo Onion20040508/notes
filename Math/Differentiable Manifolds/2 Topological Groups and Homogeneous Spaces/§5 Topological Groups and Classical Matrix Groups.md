@@ -249,6 +249,9 @@ $\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}
 
 ^def-5-7
 
+> [!remark]- Connections
+> - The group in 493: [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]]; the rotation group of the cube is a finite subgroup of SO(3), [[§30 Examples꞉ Linear Groups and the Cube#^thm-30-5|493 Thm. §30.5]].
+
 > [!example] Example §5.3: Why $\mathrm{SO}(n)$ Is a Proper Subgroup of $\mathrm{O}(n)$
 > A student asked why one bothers to intersect with $\mathrm{SL}$: does $\mathrm{O}(n)$ not already sit inside $\mathrm{SL}(n)$? No: $\det = \pm 1$, and both signs occur. The reflection
 >

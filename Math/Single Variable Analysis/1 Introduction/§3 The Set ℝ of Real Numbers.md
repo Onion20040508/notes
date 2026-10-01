@@ -39,6 +39,7 @@ Recall that $\mathbb{Q}$ is a field: it carries the two operations of addition a
 
 > [!remark]- Connections
 > - In 250 the same laws are taken as the properties of ℝ, [[§2 Implications#^def-2-8|250 Def. §2.8]], and verified for the constructed ℚ in [[§22 Partitions and Equivalence Relations#^thm-22-9|250 Thm. §22.9]].
+> - The same axioms packaged as two abelian groups and a distributive law: [[§3 Basic Examples of Groups#^def-3-3|493 Def. §3.3]].
 
 ## Order Axioms: Ordered Fields
 
@@ -128,6 +129,9 @@ People often expect to order everything — in competitions, in admission to sch
 > A set with a relation $\leq$ satisfying O1, O2, O3 is called an **ordered set** (or **linearly ordered set**). If $\leq$ satisfies only O2, O3 (dropping totality O1), the set is called a **partially ordered set**. (O4, O5 are not part of these definitions: they refer to the algebraic operations of a field.)
 
 ^def-3-3
+
+> [!remark]- Connections
+> - 590 uses the strict form: an order relation, [[§3 Order Topology#^def-3-1|590 Def. §3.1]], which defines the order topology.
 
 > [!example] Example §3.1: The product order on $\mathbb{R}^2$ is partial but not linear
 > On the plane $\mathbb{R}^2$, define

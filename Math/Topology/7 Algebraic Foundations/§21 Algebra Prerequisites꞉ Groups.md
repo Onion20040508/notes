@@ -102,6 +102,9 @@ tags: [topology, math590]
 
 *Uses:* [[§21 Algebra Prerequisites꞉ Groups#^def-21-2|Def. §21.2]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|Def. §21.7]]
 
+> [!remark]- Connections
+> - Proved in 493: (2) is [[§17 Cyclic Groups#^thm-17-4|493 Thm. §17.4]] ([[Subgroups of Cyclic Groups Are Cyclic]]) and (3), stated here without proof, is [[§27 The Index and Lagrange's Theorem#^thm-27-2|493 Thm. §27.2]] ([[Lagrange's Theorem]]).
+
 > [!theorem] Proposition §21.2: Contrapositive: Detecting Non-Abelian Groups
 > If $G$ contains a non-abelian subgroup $H$, then $G$ is non-abelian.
 
@@ -176,6 +179,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Linear-algebra version: [[§10 Invertibility and Isomorphisms#^ladr-3-63|Invertibility ⟺ injectivity and surjectivity]].
 > - Elementary version: invertible means bijective, [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]], and inverses via composition, [[§9 Injections, Surjections and Bijections#^prop-9-3|250 Prop. §9.3]].
+> - In 493 this gives that each group element acts bijectively, [[§23 Actions#^prop-23-2|493 Prop. §23.2]], so that an action lands in the symmetric group [[§3 Basic Examples of Groups#^def-3-5|493 Def. §3.5]].
 
 > [!remark] Remark
 > This is the standard technique for proving bijectivity in algebraic topology: construct two maps, show they compose to the identity in both orders. It appears repeatedly: the [[Basepoint Independence of π₁|basepoint independence isomorphism]] ([[§23 The Fundamental Group|§23]]), the [[§23 The Fundamental Group#^cor-23-6|functorial corollary]] that $\pi_1$ is a topological invariant ([[§23 The Fundamental Group|§23]]), and the [[Deformation Retract Induces Isomorphism on π₁|deformation retract theorem]] ([[§26 Deformation Retracts and Homotopy Type|§26]]) all use exactly this pattern.
@@ -250,6 +254,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - The inputs: [[§23 The Fundamental Group#^ex-23-1|ℝⁿ is simply connected]], [[§23 The Fundamental Group#^cor-23-8|Fundamental Group of the Torus]]. More such arguments: [[§24 Covering Spaces#^rem-24-14|How to Establish or Refute Isomorphisms]].
+> - Proved item by item in 493: [[§16 Isomorphisms#^prop-16-5|493 Prop. §16.5]] (order, abelian, elements of each order, cyclic), with further invariants in [[§16 Isomorphisms#^prop-16-6|493 Prop. §16.6]].
 
 > [!remark] Remark: Analogy: Topology $\leftrightarrow$ Algebra
 > | | **Topology** | **Algebra** |
@@ -356,6 +361,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]], [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]], [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]].
+> - 493 counterparts: [[§15 Homomorphisms#^prop-15-2|493 Prop. §15.2]] (kernel and image are subgroups) and [[§15 Homomorphisms#^prop-15-3|493 Prop. §15.3]] (hub [[Injective iff Trivial Kernel]]).
 
 > [!theorem] Proposition §21.9: Injective Homomorphisms Preserve Subgroup Structure
 > Let $f: G \to G'$ be an injective homomorphism. Then:
@@ -437,6 +443,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Linear-algebra analogue of “map the generator anywhere”: [[Linear map lemma]].
+> - Developed in full in Group Theory: integer powers [[§4 Subgroups#^def-4-2|493 Def. §4.2]] with the [[Exponent Laws]], cyclic groups [[§4 Subgroups#^def-4-5|493 Def. §4.5]]; the classification in the remark is proved as [[Classification of Cyclic Groups]] (493 Thm. §17.1), and mapping a generator anywhere is [[§17 Cyclic Groups#^prop-17-3|493 Prop. §17.3]].
 
 > [!definition] Definition §21.8: Free Group
 > The **free group** $F_n$ on generators $\{a_1, \ldots, a_n\}$ consists of all **reduced words** in the symbols $a_i$ and $a_i^{-1}$. A **word** is a finite sequence like $a_1^2 a_3^{-1} a_2 a_1^{-1}$. A word is **reduced** if no adjacent pair cancels (no $a_i a_i^{-1}$ or $a_i^{-1} a_i$ appears). The group operation is concatenation followed by reduction, the identity is the empty word $\varepsilon$, and the inverse of $s_1 \cdots s_k$ is $s_k^{-1} \cdots s_1^{-1}$.
@@ -447,6 +454,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Formal version: [[§21 Algebra Prerequisites꞉ Groups#^def-21-10|Free Group on Elements]]. $F_n$ is $\pi_1$ of a wedge of $n$ circles: [[§29 The Seifert–van Kampen Theorem#^ex-29-3|Example §29.3]].
+> - Words in an arbitrary group, and the subgroup they generate: [[§4 Subgroups#^def-4-4|493 Def. §4.4]]; in a free group distinct reduced words are distinct elements, in a general group they need not be.
 
 > [!example] Example §21.3: Multiplication in $F_2$
 > The operation is “concatenate, then cancel adjacent inverse pairs until reduced”:
@@ -731,3 +739,6 @@ The notation $\langle a, b \mid r \rangle$ means “force $r = e$.” But what d
 > You do not need quotient groups to *use* presentations — “force $r = e$, simplify words” gives correct answers. The quotient group is the proof that this process is well-defined and gives a group.
 
 ^rem-21-20
+
+> [!remark]- Connections
+> - The general construction in 493: the abelianization, the quotient by the commutator subgroup, [[§41 Commutators#^def-41-3|493 Def. §41.3]], which is abelian by [[§41 Commutators#^prop-41-6|493 Prop. §41.6]].

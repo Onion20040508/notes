@@ -20,6 +20,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-6|Closure]] in a metric space, with its [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|Sequential Characterization of the Closure]].
+> - In a normed space: the closure as the set of limits of sequences ([[§8 Normed Linear Spaces#^def-8-7|556 Def. §8.7]]), and interior points through balls ([[§8 Normed Linear Spaces#^def-8-9|556 Def. §8.9]]), which are stronger than the algebraic interior points of [[§5 Convex Sets and the Gauge#^def-5-1|556 Def. §5.1]] ([[§8 Normed Linear Spaces#^ex-8-2|556 Ex. §8.2]]).
 
 > [!theorem] Lemma §7.1: Interior and Closure Containment
 > Let $A \subseteq X$ be a subset of a topological space. Then:

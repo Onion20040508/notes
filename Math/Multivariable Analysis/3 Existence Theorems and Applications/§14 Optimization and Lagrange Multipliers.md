@@ -42,6 +42,7 @@ tags: [multivariable-analysis, math452]
 
 > [!remark]- Connections
 > - The 1D version in MATH 451: [[§29 The Mean Value Theorem#^thm-29-1|Interior Extremum Theorem]] (451 §29.1), applied here along each coordinate slice.
+> - On a manifold the critical points of $f : M \to \mathbb{R}$ are the points where $df_p = 0$, [[§14 Local Diffeomorphisms and Submersions#^prop-14-6|591 Prop. §14.6]].
 
 > [!remark] Remark
 > A point where $\nabla f = \mathbf{0}$ is called a **critical point** or **stationary point**. Not every critical point is a max or min — it could be a saddle point.
@@ -207,6 +208,7 @@ The proof (carried out below for two constraints in $\mathbb{R}^4$) uses the imp
 > [!remark]- Connections
 > - The linear algebra behind it: $\nabla f$ is orthogonal to the tangent space of the constraint set, and that orthogonal complement ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]]) has dimension $k$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]]), so it is spanned by the $k$ independent constraint gradients.
 > - The case $k = 1$, $n = 2$ is [[Method of Lagrange Multipliers|Theorem §14.2]]; the case $k = 2$, $n = 4$ is derived below.
+> - The implicit function theorem for systems that the proof needs, not proved in 452, is [[§4 The Regular Value Theorem#^thm-4-1|591 Thm. §4.1]]; the tangent space of the constraint set is the kernel of the constraint Jacobian, [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|591 Thm. §11.3]], and the coordinate-free counterpart of the normal space spanned by the $\nabla g_i$ is the conormal space, [[§15 Submanifolds#^def-15-2|591 Def. §15.2]].
 
 > [!remark] Remark: Why Multiple Constraints?
 > In $\mathbb{R}^3$, a single constraint $g(x, y, z) = 0$ defines a surface (2D object). To get a curve (1D object), we need two constraints.

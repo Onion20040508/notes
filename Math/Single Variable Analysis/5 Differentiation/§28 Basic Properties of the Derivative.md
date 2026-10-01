@@ -20,6 +20,9 @@ tags: [real-analysis, math451]
 ![[m451-28-2.svg]]
 *The derivative as a limit of secant slopes: as $x \to a$, the secants (blue, lighter to darker) through $(a, f(a))$ and $(x, f(x))$ pivot into the tangent line (red), whose slope is $f'(a)$. Only $x \neq a$ is ever used — at $x = a$ there is no secant.*
 
+> [!remark]- Connections
+> - In several variables it splits into partial derivatives, [[§4 Partial Derivatives#^def-4-1|452 Def. §4.1]], directional derivatives, [[§7 Directional Derivatives#^def-7-1|452 Def. §7.1]], and differentiability as linear approximation, [[§6 Differentiability#^def-6-1|452 Def. §6.1]].
+
 > [!example] Example §28.1: Square root of the absolute value
 > Show $f(x) = \sqrt{|x|}: \mathbb{R} \to \mathbb{R}$ is differentiable at every $a \neq 0$ but not at $a = 0$.
 >
@@ -113,6 +116,9 @@ tags: [real-analysis, math451]
 
 ^pf-28-2
 
+> [!remark]- Connections
+> - Two-variable versions for partial derivatives and for differentiability: [[§6 Differentiability#^thm-6-3|452 Thm. §6.3]] to [[§6 Differentiability#^thm-6-5|452 Thm. §6.5]], and [[§6 Differentiability#^thm-6-6|452 Thm. §6.6]] to [[§6 Differentiability#^thm-6-8|452 Thm. §6.8]].
+
 ## The Chain Rule and a Gap
 
 The most useful theorem:
@@ -180,6 +186,9 @@ The most useful theorem:
 > where $dz, dy, dx$ are *differentials* — historically viewed as infinitely small but *nonzero* quantities, which is why $dy$ could sit in a denominator. The gap in the naive proof above is precisely the modern price of that old picture: $\Delta y = f(x) - f(a)$, unlike the ideal $dy$, can actually vanish.
 
 ^rem-28-2
+
+> [!remark]- Connections
+> - Several-variable chain rule: [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]] (for differentiable maps) and [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]] (with continuous partials).
 
 > [!example] Example §28.3: Oscillation and differentiability at zero
 > **(1)** $f(x) = x \sin\tfrac1x$ ($x \neq 0$), $f(0) = 0$: continuous at $0$ (proved in §17) but *not differentiable* at $0$ — the difference quotient

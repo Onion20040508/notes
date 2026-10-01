@@ -41,6 +41,7 @@ In each example, associativity is inherited from a known associative operation (
 
 > [!remark]- Connections
 > - The example ℚ is constructed in 250 and checked to be a field: [[§22 Partitions and Equivalence Relations#^thm-22-9|250 Thm. §22.9]].
+> - The field axioms listed one by one: [[§3 The Set ℝ of Real Numbers#^def-3-1|451 Def. §3.1]].
 
 > [!definition] Definition §3.4: Multiplicative Group of a Field: $k^\times$
 > For a field $k$, set $k^\times = (k \setminus \{0\}, \cdot)$; this is a group directly by condition (2) of the [[§3 Basic Examples of Groups#^def-3-3|field definition]], e.g. $\mathbb{Q}^\times$, $\mathbb{R}^\times$, $\mathbb{C}^\times$.
@@ -120,6 +121,7 @@ In each example, associativity is inherited from a known associative operation (
 > [!remark]- Connections
 > - Invertible matrices in LADR: [[§10 Invertibility and Isomorphisms#^ladr-3-80|Invertible, inverse, A⁻¹]]; associativity of composing linear maps: [[§7 Vector Space of Linear Maps#^ladr-3-8|Algebraic properties of products of linear maps]].
 > - $S_n$ sits inside $GL_n(k)$ via permutation matrices: [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]].
+> - As a topological group: [[§5 Topological Groups and Classical Matrix Groups#^def-5-4|591 Def. §5.4]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-4|591 Prop. §5.4]]; over ℝ it has exactly two components, separated by the sign of det, [[§5 Topological Groups and Classical Matrix Groups#^thm-5-6|591 Thm. §5.6]].
 
 > [!definition] Definition §3.7: Special Linear, Orthogonal, and Special Orthogonal Groups
 > For a field $k$ and $n \geq 1$:
@@ -133,6 +135,7 @@ In each example, associativity is inherited from a known associative operation (
 
 > [!remark]- Connections
 > - Real orthogonal matrices are the real unitary matrices: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|Characterizations of unitary matrices]] (condition $Q^*Q = QQ^* = I$); rotations: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-52|Rotation of R²]].
+> - The same groups as topological groups and manifolds in 591: [[§5 Topological Groups and Classical Matrix Groups#^def-5-5|591 Def. §5.5]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-6|591 Def. §5.6]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-7|591 Def. §5.7]], and [[Classical Groups Are Manifolds]] (591 Thm. §5.8; workhorse example [[Classical groups O(n), U(n), SL(n,ℝ)]]).
 
 > [!example] Example §3.1: Groups and Non-Groups
 > Deciding whether $(G, \cdot)$ is a group usually comes down to identity and inverses; associativity is inherited from arithmetic or composition.

@@ -27,6 +27,9 @@ tags: [differentiable-manifolds, math591]
 
 ^def-9-1
 
+> [!remark]- Connections
+> - With $n = 2$ and $k = 1$ the internal description is a regular parametrized surface, [[§18 Surface Integrals#^def-18-3|452 Def. §18.3]] (452 does not require the homeomorphism condition).
+
 > [!theorem] Theorem §9.1: The Two Descriptions Agree
 > For $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$, the external and internal descriptions near $p$ are equivalent, and each is equivalent to:
 > - (G) **graph:** after a permutation of the coordinates of $\mathbb{R}^{n+k} = \mathbb{R}^n \times \mathbb{R}^k$, there are open sets $V \subseteq \mathbb{R}^n$, $V' \subseteq \mathbb{R}^k$ with $p \in V \times V'$ and a smooth $h : V \to V'$ such that $X \cap (V \times V') = \{\, (x, h(x)) \mid x \in V \,\}$.

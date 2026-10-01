@@ -150,3 +150,6 @@ The first property of limits — and our first theorem with a real proof about t
 > 2. **prove** it by the $(\varepsilon, N)$ definition — the key point being to solve $N$ in terms of $\varepsilon$.
 
 ^rem-7-3
+
+> [!remark]- Connections
+> - In topological spaces limits are unique when the space is Hausdorff: [[§8 Hausdorff Spaces#^thm-8-3|590 Thm. §8.3]].

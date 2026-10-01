@@ -19,6 +19,9 @@ Given a subset $S \subseteq \mathbb{R}$, when should we consider it *connected*?
 
 ^def-22-1
 
+> [!remark]- Connections
+> - Path-connectedness for topological spaces, [[§14 Connected Subspaces of ℝ#^def-14-3|590 Def. §14.3]], which implies connectedness, [[§14 Connected Subspaces of ℝ#^thm-14-4|590 Thm. §14.4]].
+
 > [!theorem] Proposition §22.1: The Rationals Are Not Path-Connected
 > $\mathbb{Q}$ (with the metric from $\mathbb{R}$) is not path-connected. In fact, every continuous map $f: [0,1] \to \mathbb{Q}$ is constant.
 

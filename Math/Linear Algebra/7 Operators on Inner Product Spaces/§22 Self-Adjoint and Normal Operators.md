@@ -136,6 +136,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: Hermitian operators = observables. Structure: [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]].
+> - The self-adjoint matrices form the real vector space of Hermitian matrices, [[§10 Vector Spaces and Matrix Groups#^def-10-11|591 Def. §10.11]], used to show that U(n) is a manifold.
 
 > [!example] Example 7.11: Determining whether T is self-adjoint from its matrix (p. 233)
 > $\mathcal{M}(T)=\begin{pmatrix}2&c\\3&7\end{pmatrix}$ (standard basis of $\F^2$, orthonormal) has $\mathcal{M}(T^*)=\begin{pmatrix}2&3\\\bar c&7\end{pmatrix}$, so $T$ is self-adjoint iff $c=3$.

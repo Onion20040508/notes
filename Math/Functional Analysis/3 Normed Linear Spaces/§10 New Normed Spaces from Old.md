@@ -178,6 +178,9 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 
 *Uses:* [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
 
+> [!remark]- Connections
+> - The restricted norm gives the restricted metric, whose topology is the subspace topology: [[§11 Metric Topology#^thm-11-6|590 Thm. §11.6]].
+
 > [!theorem] Proposition §10.7: Norms on a Direct Sum
 > Let $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ be normed linear spaces. Each of the following is a norm on $X \oplus Y$:
 >

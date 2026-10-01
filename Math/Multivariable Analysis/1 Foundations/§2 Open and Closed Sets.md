@@ -18,6 +18,9 @@ tags: [multivariable-analysis, math452]
 
 ^def-2-1
 
+> [!remark]- Connections
+> - The ε-ball of a general metric: [[§11 Metric Topology#^def-11-2|590 Def. §11.2]].
+
 > [!definition] Definition §2.2: Square Neighborhood
 > A **square neighborhood** centered at $(x_0, y_0) \in \mathbb{R}^2$ with side length $2\delta$ is
 >
@@ -48,6 +51,9 @@ tags: [multivariable-analysis, math452]
 
 ![[m452-2-1.svg]]
 *The three cases of Definition §2.3, with the open balls $B(x,\varepsilon)$ dashed. An interior point has a ball entirely inside $E$ (green, filled); an exterior point has a ball entirely inside $E^c$ (green, empty); at a boundary point every ball, however small, meets both $E$ and $E^c$ (red).*
+
+> [!remark]- Connections
+> - Interior in a topological space, the largest open subset: [[§7 Interior and Closure#^def-7-1|590 Def. §7.1]].
 
 > [!example] Example §2.1
 > For $E = [0, 1)$, the points $0$ and $1$ are both boundary points.

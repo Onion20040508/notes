@@ -119,3 +119,6 @@ tags: [topology, math590]
 > The compact Hausdorff proof uses the same technique as [[Compact Subspace of a Hausdorff Space is Closed|Theorem §15.4]] (compact $\subseteq$ Hausdorff $\Rightarrow$ closed) *twice* — once to separate a point from $B$, once to separate $A$ from $B$. Each stage replaces a single point with a compact set by extracting a finite subcover and taking intersections.
 
 ^rem-20-4
+
+> [!remark]- Connections
+> - A use of Tietze in measure theory: the continuous restriction to a closed set in Lusin's theorem extends to a continuous function on all of ℝⁿ, [[§13 Egorov's and Lusin's Theorems#^thm-13-3|551 Thm. §13.3]].

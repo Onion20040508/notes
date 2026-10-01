@@ -21,6 +21,9 @@ tags: [group-theory, math493]
 
 ^rem-26-1
 
+> [!remark]- Connections
+> - In a linear space with Y a subspace, written additively: equivalence mod Y, [[§1 Linear Spaces#^def-1-6|556 Def. §1.6]].
+
 > [!definition] Definition §26.2: Left and Right Cosets
 > For $g \in G$ and $H \leq G$, the **left coset** of $H$ containing $g$ and the **right coset** are
 >
@@ -33,6 +36,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|590 Def. §21.13 (Cosets and Quotient Group)]].
 > - Linear-algebra analogue of a coset $v + U$: [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97 (Translate)]].
+> - With a topology: the coset space G/H with the quotient topology from the projection, [[§7 Homogeneous Spaces#^def-7-6|591 Def. §7.6]] (cosets restated in [[§7 Homogeneous Spaces#^def-7-4|591 Def. §7.4]]).
 
 > [!theorem] Proposition §26.1: Cosets Are Orbits
 > Let $H$ be a subgroup of $G$.
@@ -55,6 +59,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The other side of this picture, $G$ acting on the orbit space $G/H$: [[§29 G Acting on Coset Spaces#^prop-29-1|The Action of G on G∕H, §29.1]].
+> - Used in 591 to present G/H as an orbit space, of H acting on G by right translation, [[§7 Homogeneous Spaces#^prop-7-4|591 Prop. §7.4]].
 
 > [!theorem] Proposition §26.2: Cosets Are the Equivalence Classes
 > Let $H$ be a subgroup of $G$.

@@ -37,6 +37,8 @@ tags: [linear-algebra]
 > - Examples: $\F^n$ ([[§1 Rⁿ and Cⁿ#^ladr-1-11|Fⁿ, coordinate]]), and $\F^\infty$, $\F^S$ (examples 1.23–1.25 in [[Linear Algebra]]).
 > - Real or complex: [[§2 Definition of Vector Space#^ladr-1-22|Real vector space, complex vector space]]. Subspaces: [[§3 Subspaces#^ladr-1-33|Subspace]].
 > - Physics: the superposition principle is the statement that states can be added and scaled, i.e. that they live in a vector space.
+> - Forgetting scalar multiplication, (V, +) is an abelian group: [[§1 The Definition of a Group#^def-1-2|493 Def. §1.2]].
+> - Same definition in 556, as a linear space: [[§1 Linear Spaces#^def-1-1|556 Def. §1.1]].
 
 > [!definition] Definition 1.21: Vector, point
 > Elements of a vector space are called *vectors* or *points*. When the field matters we say $V$ is a vector space *over* $\F$.
@@ -93,6 +95,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Justifies speaking of *the* $0$ in [[§2 Definition of Vector Space#^ladr-1-20|Vector space]].
+> - Same argument for the identity of any group: [[§2 First Consequences of the Axioms#^prop-2-2|493 Prop. §2.2]].
 
 > [!theorem] Theorem 1.27: Unique additive inverse
 > Every element of a vector space has a unique additive inverse.
@@ -108,6 +111,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Makes the notation $-v$ and $w-v:=w+(-v)$ legitimate (notation 1.28).
 > - Computed concretely in [[§2 Definition of Vector Space#^ladr-1-32|The number −1 times a vector]]: $-v=(-1)v$.
+> - Same argument for inverses in any group: [[§2 First Consequences of the Axioms#^prop-2-3|493 Prop. §2.3]].
 
 > [!remark] Notation 1.28: −v, w − v (p. 15)
 

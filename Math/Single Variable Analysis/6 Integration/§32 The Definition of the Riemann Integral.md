@@ -34,6 +34,9 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ^def-32-1
 
+> [!remark]- Connections
+> - Two-dimensional version, partitioning a Jordan measurable region into pieces of area |Dᵢ|: [[§15 Multivariable Integration#^def-15-7|452 Def. §15.7]] and [[§15 Multivariable Integration#^def-15-8|452 Def. §15.8]].
+
 > [!definition] Definition §32.2: Darboux Integrals
 > The **Darboux upper integral** and **lower integral** are
 >
@@ -48,6 +51,9 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ![[m451-32-1.svg]]
 *Left: an uneven partition $P$; the upper sum (red outline) and lower sum (blue fill) trap the curve. Right: a refinement of $P$ — four more points inserted (unlabeled ticks): the gap boxes of the refinement (blue) sit inside the gap boxes of $P$ (red outline), so $U - L$ shrinks subinterval by subinterval — the Refinement Lemma in one picture.*
+
+> [!remark]- Connections
+> - Double integral over a region, with integrability defined by upper minus lower sum tending to 0: [[§15 Multivariable Integration#^def-15-10|452 Def. §15.10]] and [[§15 Multivariable Integration#^def-15-11|452 Def. §15.11]].
 
 > [!example] Example §32.1: The identity function
 > Show $f(x) = x$ is Darboux integrable on $[0,1]$ and $\int_0^1 x\,dx = \tfrac12$. (We know the value from the Fundamental Theorem — but here we must prove it *from the definition*.)
@@ -103,6 +109,9 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 > always. Hence $U(f,P) = 1$ and $L(f,P) = 0$ for *every* partition, giving $U(f) = 1 \neq 0 = L(f)$.
 
 ^ex-32-3
+
+> [!remark]- Connections
+> - Same example in 551 ([[§8 Motivation꞉ The Riemann Integral#^ex-8-2|551 Ex. §8.2]]): the Dirichlet function vanishes off the null set ℚ ([[§9 Lebesgue Outer Measure#^ex-9-2|551 Ex. §9.2]]), so it is Lebesgue integrable with integral 0.
 
 ## Lower Is at Most Upper
 
@@ -273,6 +282,10 @@ so $x^3$ is integrable on $[0,b]$ with $\int_0^b x^3\,dx = \lim U_n = \tfrac{b^4
 *A Riemann sum: both choices are arbitrary — the partition points $t_k$ (unequal lengths; $\operatorname{mesh}(P)$ is the widest) and the tags $x_k$ inside each piece, with rectangle heights $f(x_k)$, neither sup nor inf. Dashed red and blue mark the sup $M$ and inf $m$ of $f$ on each subinterval: every Riemann sum is squeezed, $L(f,P) \leq S \leq U(f,P)$ — the mechanism behind the equivalence theorem below.*
 
 One difficulty in *using* this definition: we need a candidate value $r$ before we can check anything — whereas the Darboux definition asks only for the sup and inf to meet. Fortunately:
+
+> [!remark]- Connections
+> - In the plane the mesh is the largest diameter of a piece: [[§15 Multivariable Integration#^def-15-9|452 Def. §15.9]].
+> - Recapped in 551 as [[§8 Motivation꞉ The Riemann Integral#^def-8-3|551 Def. §8.3]]; every Riemann integrable function is Lebesgue integrable with the same integral, [[§15 The General Lebesgue Integral#^thm-15-10|551 Thm. §15.10]].
 
 > [!theorem] Theorem §32.6: Equivalence of the Two Integrals
 > 1. $f: [a,b] \to \mathbb{R}$ is Riemann integrable if and only if it is Darboux integrable (and the values agree).

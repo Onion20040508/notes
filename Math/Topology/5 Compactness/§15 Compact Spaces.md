@@ -42,6 +42,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 > [!remark]- Connections
 > - MATH 451 versions on $[a,b]$: [[Extreme Value Theorem]], [[§19 Uniform Continuity#^thm-19-1|Uniform Continuity on Closed Bounded Intervals]].
+> - The same definition for subsets of a normed or metric space: [[§15 Compactness and the Unit Ball#^def-15-2|556 Def. §15.2]], shown there to be equivalent to sequential compactness ([[§15 Compactness and the Unit Ball#^thm-15-1|556 Thm. §15.1]]).
 
 > [!example] Example §15.1
 > $\mathbb{R}$ is not compact. $\mathcal{A} = \{(n, n+3) \mid n \in \mathbb{Z}\}$ is an open covering of $\mathbb{R}$, but no finite subcover covers $\mathbb{R}$.
@@ -104,6 +105,9 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > [[§15 Compact Spaces#^lem-15-1|The lemma below]] shows that for compactness, these two perspectives are equivalent.
 
 ^rem-15-2
+
+> [!remark]- Connections
+> - In ℝⁿ, an open cover of a set E by open subsets of the ambient space: [[§6 Open Covers and the Heine–Borel Theorem#^def-6-1|551 Def. §6.1]].
 
 > [!theorem] Lemma §15.1: Compactness in Subspaces
 > Let $Y$ be a subspace of $X$. Then $Y$ is compact if and only if every covering of $Y$ by open sets of $X$ contains a finite subcollection covering $Y$.
@@ -303,6 +307,9 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 *Uses:* [[§15 Compact Spaces#^def-15-4|Def. §15.4]], [[§15 Compact Spaces#^thm-15-5|§15.5]]
 
+> [!remark]- Connections
+> - The ℝⁿ version for closed bounded sets, proved with Bolzano–Weierstrass and used for Heine–Borel: [[§5 Topology of ℝⁿ#^thm-5-2|551 Thm. §5.2]] (Cantor's nested set theorem).
+
 > [!theorem] Theorem §15.7: Bijection from Compact to Hausdorff
 > Let $f: X \to Y$ be a bijective continuous function. If $X$ is compact and $Y$ is Hausdorff, then $f$ is a homeomorphism.
 
@@ -341,6 +348,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > [!remark]- Connections
 > - The compact-to-Hausdorff shortcut for quotient maps: [[§12 Quotient Topology#^thm-12-5|Product of Quotient Maps (Compact-Hausdorff Case)]].
 > - Used to get local homeomorphisms in $p: \mathbb{R} \to S^1$ is a Covering Map ([[§24 Covering Spaces#^thm-24-2|§24.2]]).
+> - 451's case on an interval: a strictly increasing continuous f on [a, b] has a continuous inverse, [[§18 Properties of Continuous Functions#^thm-18-9|451 Thm. §18.9]], proved there with Bolzano–Weierstrass.
 
 > [!theorem] Theorem §15.8: Finite Product of Compact Spaces
 > The product of finitely many compact spaces is compact.

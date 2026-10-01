@@ -45,6 +45,7 @@ tags: [linear-algebra]
 > - Well defined and bijective in $T$ because of [[Linear map lemma]] and [[§5 Bases#^ladr-2-28|Criterion for basis]].
 > - Compatible with the algebra: [[§9 Matrices#^ladr-3-35|Matrix of the sum of linear maps]], [[§9 Matrices#^ladr-3-38|The matrix of a scalar times a linear map]], [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps (LADR 3.43)]]. Acts on coordinates: [[§10 Invertibility and Isomorphisms#^ladr-3-76|Linear maps act like matrix multiplication]].
 > - Depends on the bases: [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]]. Much of Chapters 5–8 is about choosing bases that make $\mathcal{M}(T)$ simple.
+> - For the differential of a smooth map in coordinate bases this matrix is the Jacobian: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|591 Thm. §12.22]].
 
 %% ex:3.31-fig %%
 > [!example] Example: Reading $\mathcal{M}(T)$
@@ -136,6 +137,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Combined with $\Lin(V,W)\cong\F^{m,n}$: [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]].
+> - 591 uses this to identify square matrices with a Euclidean space and so give them a topology: [[§5 Topological Groups and Classical Matrix Groups#^def-5-2|591 Def. §5.2]].
 
 > [!definition] Definition 3.41: Matrix multiplication
 > If $A$ is $m$-by-$n$ and $B$ is $n$-by-$p$, then $AB$ is the $m$-by-$p$ matrix with
@@ -177,6 +179,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Restated with explicit bases in [[§10 Invertibility and Isomorphisms#^ladr-3-81|Matrix of product of linear maps (LADR 3.81)]]; used for change of basis [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]] and [[§10 Invertibility and Isomorphisms#^ladr-3-86|Matrix of inverse equals inverse of matrix]].
+> - Applied to differentials it is the chain rule in coordinates: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-23|591 Cor. §12.23]].
 
 > [!remark] Notation 3.44: Aj,⋅, A⋅,k (p. 74)
 
@@ -329,3 +332,4 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Rank–nullity for matrices: [[Fundamental theorem of linear maps]] with [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]] gives $n=\dim\nullsp A+\operatorname{rank}A$.
+> - The rank of a smooth map at a point is the rank of its Jacobian, equivalently of its differential: [[§4 The Regular Value Theorem#^def-4-1|591 Def. §4.1]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-13|591 Def. §12.13]].

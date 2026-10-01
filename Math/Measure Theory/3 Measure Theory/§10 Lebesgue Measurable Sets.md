@@ -59,6 +59,9 @@ The answer is **no** in general. [[§9 Lebesgue Outer Measure#^def-9-4|Outer mea
 
 ^rem-10-2
 
+> [!remark]- Connections
+> - Jordan-content counterpart, which asks inner and outer content to agree: [[§15 Multivariable Integration#^def-15-5|452 Def. §15.5]].
+
 > [!example] Example §10.1: Sets of Measure Zero are Measurable
 > If $m^*(E) = 0$, then $E$ is L-measurable.
 
