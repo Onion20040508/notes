@@ -8,7 +8,7 @@ tags: [chapter, thermal-and-statistical-physics]
 # B13 Fermi Gases
 ← [[· B12 Bose–Einstein Condensation]] · ↑ [[Thermal and Statistical Physics]]
 
-**Builds on:** [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (1), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (5), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (3), [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (2), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (2)
+**Builds on:** [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (6), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (4), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (2), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (4), [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (2), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (10)
 **Used by:** [[· B10 Quantum Statistics|B10 Quantum Statistics]] (1)
 
 ## Sections

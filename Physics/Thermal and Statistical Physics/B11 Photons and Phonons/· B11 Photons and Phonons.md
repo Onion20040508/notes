@@ -8,7 +8,7 @@ tags: [chapter, thermal-and-statistical-physics]
 # B11 Photons and Phonons
 ← [[· B10 Quantum Statistics]] · ↑ [[Thermal and Statistical Physics]] · [[· B12 Bose–Einstein Condensation]] →
 
-**Builds on:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (1), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (2), [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (7), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (9), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (4), [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (3), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (21)
+**Builds on:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (1), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (2), [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (7), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (12), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (4), [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (3), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (21)
 **Used by:** —
 
 ## Sections

@@ -9,7 +9,7 @@ tags: [chapter, thermal-and-statistical-physics]
 ← [[· B3 Thermodynamic Potentials]] · ↑ [[Thermal and Statistical Physics]] · [[· B5 Kinetic Theory and Transport]] →
 
 **Builds on:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (1), [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (2), [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (1)
-**Used by:** [[· B5 Kinetic Theory and Transport|B5 Kinetic Theory and Transport]] (22), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (7), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (6), [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (2), [[· B9 Phases and Phase Transitions|B9 Phases and Phase Transitions]] (2)
+**Used by:** [[· B5 Kinetic Theory and Transport|B5 Kinetic Theory and Transport]] (22), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (12), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (6), [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (2), [[· B9 Phases and Phase Transitions|B9 Phases and Phase Transitions]] (2), [[· B13 Fermi Gases|B13 Fermi Gases]] (4)
 
 ## Sections
 - [[§B4.1 Probability Distributions and the Gaussian]] — Schwartz L1; Blundell 3, App. C.2–C.3; user notes §12

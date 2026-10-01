@@ -8,8 +8,8 @@ tags: [chapter, thermal-and-statistical-physics]
 # B2 The Laws of Thermodynamics, Formally
 ← [[· B1 The Mathematical Toolkit of Thermodynamics]] · ↑ [[Thermal and Statistical Physics]] · [[· B3 Thermodynamic Potentials]] →
 
-**Builds on:** [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (4), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (14), [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (17), [[· B1 The Mathematical Toolkit of Thermodynamics|B1 The Mathematical Toolkit of Thermodynamics]] (16), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (1)
-**Used by:** [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (10), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (1), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (2)
+**Builds on:** [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (4), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (14), [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (17), [[· B1 The Mathematical Toolkit of Thermodynamics|B1 The Mathematical Toolkit of Thermodynamics]] (16), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (7)
+**Used by:** [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (12), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (8), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (2)
 
 ## Sections
 - [[§B2.1 The First Law and Heat Capacities]] — Blundell 11–12; Schroeder 1; Schwartz L5

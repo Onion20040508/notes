@@ -8,7 +8,7 @@ tags: [chapter, thermal-and-statistical-physics]
 # B9 Phases and Phase Transitions
 ← [[· B8 The Classical Ideal Gas and Equipartition]] · ↑ [[Thermal and Statistical Physics]] · [[· B10 Quantum Statistics]] →
 
-**Builds on:** [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (2), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (2), [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (2), [[· B1 The Mathematical Toolkit of Thermodynamics|B1 The Mathematical Toolkit of Thermodynamics]] (2), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (15), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (2), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (6), [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (3)
+**Builds on:** [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (3), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (2), [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (2), [[· B1 The Mathematical Toolkit of Thermodynamics|B1 The Mathematical Toolkit of Thermodynamics]] (2), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (15), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (2), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (6), [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (3)
 **Used by:** [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (1), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (1)
 
 ## Sections
