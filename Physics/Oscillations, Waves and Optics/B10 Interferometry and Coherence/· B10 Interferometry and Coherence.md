@@ -8,7 +8,7 @@ tags: [chapter, oscillations-waves-and-optics]
 # B10 Interferometry and Coherence
 ← [[· B9 The Fresnel Equations]] · ↑ [[Oscillations, Waves and Optics]] · [[· B11 Diffraction Theory]] →
 
-**Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (2), [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (2), [[· A6 Interference|A6 Interference]] (16), [[· A7 Diffraction|A7 Diffraction]] (2), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (2), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (13), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (2), [[· B11 Diffraction Theory|B11 Diffraction Theory]] (3)
+**Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (2), [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (2), [[· A6 Interference|A6 Interference]] (16), [[· A7 Diffraction|A7 Diffraction]] (2), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (2), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (13), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (3), [[· B11 Diffraction Theory|B11 Diffraction Theory]] (3)
 **Used by:** [[· B11 Diffraction Theory|B11 Diffraction Theory]] (1)
 
 ## Sections

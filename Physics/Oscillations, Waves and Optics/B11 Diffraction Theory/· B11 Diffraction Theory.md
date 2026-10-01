@@ -8,7 +8,7 @@ tags: [chapter, oscillations-waves-and-optics]
 # B11 Diffraction Theory
 ← [[· B10 Interferometry and Coherence]] · ↑ [[Oscillations, Waves and Optics]] · [[· B12 Matrix Ray Optics]] →
 
-**Builds on:** [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (2), [[· A7 Diffraction|A7 Diffraction]] (5), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (15), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (1), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (1)
+**Builds on:** [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (2), [[· A7 Diffraction|A7 Diffraction]] (6), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (15), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (1), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (1)
 **Used by:** [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (3)
 
 ## Sections

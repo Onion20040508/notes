@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 287 (UMass, M. Kandula, Fall 2023)", "PHY 300 (Stony Brook, L. Mihaly, Fall 2024)"]
 textbooks: ["OpenStax, University Physics Vol. 1 and 3", "French, Vibrations and Waves", "Fowles, Introduction to Modern Optics", "Schwartz, Physics 15c Waves lectures"]
 conventions: "[[University Physics]]"
-status: level A done; level B in progress (B1–B7 done)
+status: levels A and B done
 tags: [subject, oscillations-waves-and-optics]
 ---
 # Oscillations, Waves and Optics
@@ -79,9 +79,9 @@ graph TD
   A7 -->|2| B10
   B1 -->|2| B10
   B4 -->|13| B10
-  B9 -->|2| B10
+  B9 -->|3| B10
   A5 -->|2| B11
-  A7 -->|5| B11
+  A7 -->|6| B11
   B10 -->|1| B11
   B4 -->|15| B11
   B7 -->|1| B11
@@ -124,7 +124,7 @@ graph TD
   A4 -->|9| B8
   B1 -->|2| B8
   B7 -->|1| B8
-  A4 -->|1| B9
+  A4 -->|6| B9
   A6 -->|1| B9
   B7 -->|1| B9
   B8 -->|21| B9
@@ -133,6 +133,7 @@ graph TD
   B4 -.->|1| B3
   B5 -.->|2| B4
   B6 -.->|1| B4
+  B13 -.->|1| B6
   B13 -.->|2| B8
   B9 -.->|2| B8
 ```
@@ -140,9 +141,5 @@ graph TD
 ## Planned
 Chapters without notes yet; sources in brackets (∅ = no typed source).
 
-**Level B — upper, optics (PHY 300; Fowles; Schwartz Physics 15c lectures)** — B1–B7 are written (above).
-B8 Polarization and Jones calculus [Schwartz 14; Fowles 2] · B9 Fresnel equations, total internal reflection [Schwartz 15; Fowles 2] · B10 Interferometry and coherence [Fowles 3–4] · B11 Fraunhofer and Fresnel diffraction, resolution [Schwartz 19; Fowles 5] · B12 Matrix ray optics [Fowles 10] · B13 Optics of materials, colour [Schwartz 16–17; Fowles 6]
-PHY 300's lectures are handwritten scans, and French's and Fowles's books are scans without a text layer (Fowles would need OCR).
-
-**Level C — graduate**
+**Level C — graduate** (levels A and B are written, above)
 C1 Fourier optics and scalar diffraction theory [∅] · C2 Lasers and Gaussian beams [Fowles 9] · C3 Statistical optics [∅] · C4 Waveguides and fibres [∅] · C5 Nonlinear optics [∅]

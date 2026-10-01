@@ -8,7 +8,7 @@ tags: [chapter, oscillations-waves-and-optics]
 # B6 Wave Packets and Dispersion
 ← [[· B5 Travelling Waves, Energy and Impedance]] · ↑ [[Oscillations, Waves and Optics]] · [[· B7 Waves in Two and Three Dimensions]] →
 
-**Builds on:** [[· A1 Oscillations|A1 Oscillations]] (1), [[· A4 The Nature of Light|A4 The Nature of Light]] (1), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (3), [[· B3 From the Bead Chain to the Wave Equation|B3 From the Bead Chain to the Wave Equation]] (8), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (10), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (2)
+**Builds on:** [[· A1 Oscillations|A1 Oscillations]] (1), [[· A4 The Nature of Light|A4 The Nature of Light]] (1), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (3), [[· B3 From the Bead Chain to the Wave Equation|B3 From the Bead Chain to the Wave Equation]] (8), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (10), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (2), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (1)
 **Used by:** [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (1), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (1)
 
 ## Sections

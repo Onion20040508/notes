@@ -9,7 +9,7 @@ tags: [chapter, oscillations-waves-and-optics]
 ← [[· B12 Matrix Ray Optics]] · ↑ [[Oscillations, Waves and Optics]]
 
 **Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (4), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (18), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (4), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (11)
-**Used by:** [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (2)
+**Used by:** [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (2)
 
 ## Sections
 - [[§B13.1 Dispersion in Dielectrics and the Lorentz Model]] — Fowles 6.1–6.4 · Schwartz L16 §4–5

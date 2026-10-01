@@ -8,8 +8,8 @@ tags: [chapter, oscillations-waves-and-optics]
 # B9 The Fresnel Equations
 ← [[· B8 Polarization and the Jones Calculus]] · ↑ [[Oscillations, Waves and Optics]] · [[· B10 Interferometry and Coherence]] →
 
-**Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (1), [[· A6 Interference|A6 Interference]] (1), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (1), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (21)
-**Used by:** [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (2), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (2), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (11)
+**Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (6), [[· A6 Interference|A6 Interference]] (1), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (1), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (21)
+**Used by:** [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (2), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (3), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (11)
 
 ## Sections
 - [[§B9.1 Boundary Conditions and the Laws of Reflection and Refraction]] — Fowles 2.6 · Schwartz L15 §1–2
