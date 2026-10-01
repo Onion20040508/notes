@@ -1,0 +1,28 @@
+% Figure for Classical Mechanics §A2.2 (v-t with tangent lines and a-t for v = 20t - 5t^2; after University Physics Vol. 1, Example 3.6).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=top, xmin=0, xmax=5.6, ymin=-30, ymax=26,
+      axis x line=middle, axis y line=left,
+      xlabel={$t$ (s)}, ylabel={$v$ (m/s)},
+      xlabel style={at={(axis description cs:1,0.54)}, anchor=south east},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={1,2,3,4,5}, ytick={-20,-10,10,20}, clip=false]
+    \addplot[figB, domain=0:5, samples=80] {20*x - 5*x^2};
+    \addplot[figR, thick, domain=0.45:1.55] {15 + 10*(x-1)};
+    \addplot[figR, thick, domain=1.45:2.55] {20};
+    \addplot[figR, thick, domain=2.45:3.55] {15 - 10*(x-3)};
+    \addplot[only marks, mark=*, mark size=1.5pt, figR] coordinates {(1,15) (2,20) (3,15)};
+    \addplot[only marks, mark=*, mark size=1.5pt, black] coordinates {(4,0)};
+    \node[font=\scriptsize, anchor=east] (rv) at (axis cs:3.3,-17) {reversal, $v = 0$};
+    \draw[->, thin, black!70] (rv.east) -- (axis cs:3.93,-1.2);
+  \end{axis}
+  \begin{axis}[nfig, at={(top.south east)}, xshift=1.6cm, anchor=south west,
+      xmin=0, xmax=5.6, ymin=-32, ymax=24,
+      axis x line=middle, axis y line=left,
+      xlabel={$t$ (s)}, ylabel={$a$ (m/s$^2$)},
+      xlabel style={at={(axis description cs:1,0.57)}, anchor=south east},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={1,2,3,4,5}, ytick={-20,-10,10,20}, clip=false]
+    \addplot[figB, domain=0:5] {20 - 10*x};
+    \addplot[only marks, mark=*, mark size=1.5pt, figR] coordinates {(1,10) (2,0) (3,-10)};
+  \end{axis}
+\end{tikzpicture}

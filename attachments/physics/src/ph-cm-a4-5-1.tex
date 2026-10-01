@@ -7,7 +7,7 @@
   % force field F = (5y, 10x) N, arrows scaled
   \foreach \x in {0.25,0.75,1.25,1.75} {
     \foreach \y in {0.25,0.75,1.25,1.75} {
-      \draw[->, black!35, thin] (\x,\y) -- ++({0.011*5*\y},{0.011*10*\x});
+      \draw[->, black!45, thin] (\x,\y) -- ++({0.011*5*\y},{0.011*10*\x});
     }
   }
   % paths
@@ -16,7 +16,12 @@
   \draw[very thick, figO, domain=0:2, samples=40] plot (\x,{0.25*\x*\x*\x});
   \fill (0,0) circle (0.9pt) node[below left, font=\scriptsize] {$A$};
   \fill (2,2) circle (0.9pt) node[above right, font=\scriptsize] {$B$};
-  \node[font=\scriptsize, figG, anchor=east] at (0.95,1.18) {$y=x$: 30 J};
-  \node[font=\scriptsize, figB, anchor=west] at (1.42,0.78) {$y=x^2/2$: 33.3 J};
-  \node[font=\scriptsize, figO, anchor=west] at (1.62,0.42) {$y=x^3/4$: 35 J};
+  \node[font=\scriptsize, figG] at (0.72,1.0) {30 J};
+  \node[font=\scriptsize, figB] at (0.92,0.64) {33.3 J};
+  \node[font=\scriptsize, figO] at (1.72,0.62) {35 J};
+  % legend
+  \draw[very thick, figG] (2.3,1.35) -- (2.5,1.35) node[right, black, font=\scriptsize] {$y=x$};
+  \draw[very thick, figB] (2.3,1.15) -- (2.5,1.15) node[right, black, font=\scriptsize] {$y=x^2/(2\ \mathrm{m})$};
+  \draw[very thick, figO] (2.3,0.95) -- (2.5,0.95) node[right, black, font=\scriptsize] {$y=x^3/(4\ \mathrm{m^2})$};
+  \draw[->, black!45, thin] (2.3,0.72) -- (2.42,0.79) node[right, black, font=\scriptsize, xshift=2pt] {$\vec F$ (scaled)};
 \end{tikzpicture}

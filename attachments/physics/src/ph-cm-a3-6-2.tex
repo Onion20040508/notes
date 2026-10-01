@@ -1,0 +1,22 @@
+% Figure for Classical Mechanics §A3.6 (Example: tightrope walker; two nearly horizontal tensions balance the weight; sag exaggerated).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  \def\a{12}
+  % wire and supports
+  \draw[black!55, thick] (-4.6,{4.6*tan(\a)}) -- (0,0) -- (4.6,{4.6*tan(\a)});
+  \fill[black!30] (-4.75,{4.6*tan(\a)-0.6}) rectangle (-4.6,{4.6*tan(\a)+0.3});
+  \fill[black!30] (4.6,{4.6*tan(\a)-0.6}) rectangle (4.75,{4.6*tan(\a)+0.3});
+  % tensions along the wire
+  \draw[->, very thick, figB] (0,0) -- ({-3*cos(\a)},{3*sin(\a)}) node[above, pos=0.85] {$\vec T_L$};
+  \draw[->, very thick, figB] (0,0) -- ({3*cos(\a)},{3*sin(\a)}) node[above, pos=0.85] {$\vec T_R$};
+  % vertical components
+  \draw[->, thick, figB, dashed] (-0.12,0) -- (-0.12,{3*sin(\a)}) ;
+  \draw[->, thick, figB, dashed] (0.12,0) -- (0.12,{3*sin(\a)});
+  \node[font=\scriptsize, figB] at (0,{3*sin(\a)+0.3}) {$T\sin\theta$ each};
+  % weight
+  \draw[->, very thick, figR] (0,0) -- (0,-1.3) node[below] {$\vec w$};
+  % angle
+  \draw[black!55, thin] (1.5,0) arc (0:\a:1.5);
+  \draw[black!40, thin, densely dotted] (0,0) -- (2.1,0);
+  \node[font=\scriptsize, black!70] at (1.8,0.17) {$\theta$};
+  \fill (0,0) circle (2pt);
+\end{tikzpicture}

@@ -1,0 +1,13 @@
+% Figure for Classical Mechanics §A1.4 (tug-of-war: three pulls, their resultant and the balancing pull; after University Physics Vol. 1, Example 2.10). Scale 1 cm = 50 N.
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  \draw[->, thin, black!55] (-3.6,0) -- (4.2,0) node[right, font=\scriptsize] {E};
+  \draw[->, thin, black!55] (0,-3.0) -- (0,2.6) node[above, font=\scriptsize] {N};
+  \draw[->, very thick, figB] (0,0) -- (1.836,-2.622) node[right] {$\vec A$ \scriptsize(160 N)};
+  \draw[->, very thick, figB] (0,0) -- (3.464,2.0) node[above right] {$\vec B$ \scriptsize(200 N)};
+  \draw[->, very thick, figB] (0,0) -- (-2.294,1.606) node[above left] {$\vec C$ \scriptsize(140 N)};
+  \draw[->, thick, dashed, black!70] (0,0) -- (3.006,0.984) node[right, xshift=1pt] {$\vec R$};
+  \draw[->, very thick, figR] (0,0) -- (-3.006,-0.984) node[below left] {$\vec D = -\vec R$};
+  \draw[black!55, thin] (-1.2,0) arc[start angle=180, end angle=198.1, radius=1.2];
+  \node[font=\scriptsize, black!70] at (-1.75,-0.25) {$18.1^\circ$};
+  \fill (0,0) circle (2.2pt);
+\end{tikzpicture}

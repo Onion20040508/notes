@@ -1,0 +1,10 @@
+% Figure for Classical Mechanics §A5.3 (momentum vectors in a two-dimensional perfectly inelastic collision; after University Physics Vol. 1, Example 9.14).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small, scale=1.1]
+  \draw[->, thin, black!55] (-0.4,0) -- (3.0,0) node[right, font=\scriptsize] {east ($x$)};
+  \draw[->, thin, black!55] (0,-0.4) -- (0,4.0) node[above, font=\scriptsize] {north ($y$)};
+  \draw[->, very thick, figB] (0,0) -- (2.0,0) node[midway, below, font=\scriptsize] {$\vec p_{\text{car}} = 2.0\times10^4$ kg$\cdot$m/s};
+  \draw[->, very thick, figB] (2.0,0) -- (2.0,3.33) node[midway, right, font=\scriptsize, align=left] {$\vec p_{\text{truck}}$\\ $= 3.3\times10^4$ kg$\cdot$m/s};
+  \draw[->, very thick, figR] (0,0) -- (2.0,3.33) node[midway, above left, font=\scriptsize] {$\vec P$};
+  \draw[black!55, thin] (0.7,0) arc (0:59:0.7);
+  \node[font=\scriptsize, black!70] at (0.95,0.38) {$59^\circ$};
+\end{tikzpicture}

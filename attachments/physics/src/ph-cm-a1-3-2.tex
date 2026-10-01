@@ -1,0 +1,22 @@
+% Figure for Classical Mechanics §A1.3 (components and direction angle of a second-quadrant vector; after University Physics Vol. 1, Example 2.3-2.4).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small, scale=0.9]
+  % axes (screen coordinates in cm)
+  \draw[->, thin, black!55] (-0.3,0) -- (7.2,0) node[right, font=\scriptsize] {$x$ (cm)};
+  \draw[->, thin, black!55] (0,-0.3) -- (0,5.4) node[above, font=\scriptsize] {$y$ (cm)};
+  \foreach \x in {2,4,6} \draw[black!55] (\x,0.08) -- (\x,-0.08) node[below, font=\scriptsize] {\x};
+  \foreach \y in {2,4} \draw[black!55] (0.08,\y) -- (-0.08,\y) node[left, font=\scriptsize] {\y};
+  \coordinate (b) at (6.0,1.6);
+  \coordinate (e) at (2.0,4.5);
+  \coordinate (c) at (2.0,1.6);
+  % components
+  \draw[->, thick, figB] (b) -- (c) node[midway, below] {$D_x\hat\imath$};
+  \draw[->, thick, figB] (c) -- (e) node[midway, left] {$D_y\hat\jmath$};
+  % vector
+  \draw[->, very thick, figR] (b) -- (e) node[midway, above right] {$\vec D$};
+  \fill (b) circle (1.8pt) node[below right] {$b$};
+  \fill (e) circle (1.8pt) node[above left] {$e$};
+  % direction angle at the tail
+  \draw[thin, black!55] (b) -- ++(1.0,0);
+  \draw[->, thin, black] ($(b)+(0.7,0)$) arc[start angle=0, end angle=144.1, radius=0.7];
+  \node[font=\scriptsize] at ($(b)+(0.55,0.95)$) {$\theta_D = 144.1^\circ$};
+\end{tikzpicture}

@@ -1,0 +1,12 @@
+% Figure for Classical Mechanics §A2.3 (velocity-time graphs of a balloon rising at constant speed U and of a sandbag released from it; PHY 181 Exam 1, F21).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  \draw[->, thin, black!55] (0,0) -- (4.4,0) node[right, font=\scriptsize] {$t$};
+  \draw[->, thin, black!55] (0,-2.1) -- (0,1.7) node[above, font=\scriptsize] {$v$ (up positive)};
+  \draw[very thick, figB] (0,1.0) -- (4.0,1.0) node[right] {balloon};
+  \draw[very thick, figR] (0,1.0) -- (2.9,-1.9) node[right] {sandbag};
+  \node[left, font=\scriptsize] at (0,1.0) {$U$};
+  \fill[figR] (1.0,0) circle (1.6pt);
+  \node[below left, font=\scriptsize] at (1.0,0) {$U/g$};
+  \draw[dotted, black!55] (2.9,-1.9) -- (2.9,0) node[above, font=\scriptsize, black] {lands};
+  \node[font=\scriptsize, figR, anchor=west] at (1.75,-0.45) {slope $-g$};
+\end{tikzpicture}

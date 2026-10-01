@@ -1,0 +1,23 @@
+% Figure for Classical Mechanics §A6.5 (velocities in rolling without slipping: translation plus rotation about the centre).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  \def\R{1.0}
+  \foreach \x/\lab in {0/translation, 3.6/rotation about centre, 7.2/rolling} {
+    \draw[black!70, thin] (\x-1.4,-\R) -- (\x+1.4,-\R);
+    \draw[thick, black!60, fill=figB!8] (\x,0) circle (\R);
+    \fill[black!70] (\x,0) circle (1.4pt);
+    \node[font=\scriptsize, black!70] at (\x,-1.55) {\lab};
+  }
+  \node at (1.8,0) {$+$}; \node at (5.4,0) {$=$};
+  % translation: same arrow at top, centre, bottom
+  \foreach \y in {1,0,-1} { \draw[->, very thick, figB] (0,\y) -- ++(0.7,0); }
+  \node[font=\scriptsize, figB] at (0.35,0.25) {$v_{\text{cm}}$};
+  % rotation: +v at top, -v at bottom (clockwise)
+  \draw[->, very thick, figB] (3.6,1) -- ++(0.7,0) node[right, font=\scriptsize] {$R\omega$};
+  \draw[->, very thick, figB] (3.6,-1) -- ++(-0.7,0) node[left, font=\scriptsize] {$R\omega$};
+  \draw[->, thin, black!55] ({3.6+0.55*cos(150)},{0.55*sin(150)}) arc (150:30:0.55);
+  % rolling: 2v at top, v at centre, 0 at bottom
+  \draw[->, very thick, figR] (7.2,1) -- ++(1.4,0) node[right, font=\scriptsize] {$2v_{\text{cm}}$};
+  \draw[->, very thick, figR] (7.2,0) -- ++(0.7,0);
+  \node[font=\scriptsize, figR] at (7.55,0.25) {$v_{\text{cm}}$};
+  \fill[figR] (7.2,-1) circle (2pt) node[below right, font=\scriptsize] {$0$};
+\end{tikzpicture}

@@ -2,14 +2,14 @@
 \begin{tikzpicture}
   \begin{axis}[nfig, width=8.4cm, height=5.6cm, axis lines=middle, xmin=-1.5, xmax=15.5, ymin=-46, ymax=10,
       xlabel={$x$ (cm)}, ylabel={$F_x$ (N)}, xtick={6,12}, ytick={-18,-36},
-      xlabel style={anchor=west}, ylabel style={anchor=south}, clip=false]
+      xlabel style={anchor=west}, ylabel style={anchor=south}, xticklabel style={anchor=south, yshift=3pt}, clip=false]
     \fill[figB!22] (axis cs:0,0) -- (axis cs:6,0) -- (axis cs:6,-18) -- cycle;
     \fill[figR!25] (axis cs:6,0) -- (axis cs:12,0) -- (axis cs:12,-36) -- (axis cs:6,-18) -- cycle;
     \draw[black!55, densely dashed, thin] (axis cs:6,0) -- (axis cs:6,-18);
     \draw[black!55, densely dashed, thin] (axis cs:12,0) -- (axis cs:12,-36);
     \addplot[figB, very thick, domain=-1:14] {-3*x};
-    \node[font=\scriptsize, figB, anchor=east] at (axis cs:4.6,-6.5) {$-0.54$ J};
+    \node[font=\scriptsize, figB, anchor=south] at (axis cs:2.6,0.8) {$-0.54$ J};
     \node[font=\scriptsize, figR] at (axis cs:9.2,-14) {$-1.62$ J};
-    \node[font=\scriptsize, figB, anchor=west] at (axis cs:13.2,-42) {$F_x=-kx$};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:12.8,-31) {$F_x=-kx$};
   \end{axis}
 \end{tikzpicture}

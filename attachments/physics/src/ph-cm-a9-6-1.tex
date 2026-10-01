@@ -1,0 +1,22 @@
+% Figure for Classical Mechanics §A9.6: velocity profiles across a tube; ideal (non-viscous) fluid: uniform speed; viscous laminar flow: zero at the walls, maximal on the axis (parabolic profile).
+\begin{tikzpicture}[font=\small, >={Stealth[length=1.6mm]}]
+  \foreach \xs/\lab/\vis in {0/{ideal fluid ($\eta = 0$)}/0, 5.2/{viscous fluid, laminar}/1} {
+    \begin{scope}[xshift=\xs cm]
+      \fill[black!25] (-0.3,1.0) rectangle (3.7,1.12);
+      \fill[black!25] (-0.3,-1.0) rectangle (3.7,-1.12);
+      \draw[black!70] (-0.3,1.0) -- (3.7,1.0);
+      \draw[black!70] (-0.3,-1.0) -- (3.7,-1.0);
+      \draw[black!55, dashed, thin] (0.4,-1.0) -- (0.4,1.0);
+      \node[font=\scriptsize, black!70, anchor=north] at (1.7,-1.15) {\lab};
+    \end{scope}
+  }
+  % ideal: uniform arrows
+  \foreach \y in {-0.84,-0.6,...,0.85} \draw[->, figB, thick] (0.4,\y) -- (2.4,\y);
+  \draw[figB, thin] (2.4,-1.0) -- (2.4,1.0);
+  % viscous: parabolic arrows v = vmax (1 - y^2)
+  \begin{scope}[xshift=5.2cm]
+    \foreach \y in {-0.84,-0.6,...,0.85} \draw[->, figR, thick] (0.4,\y) -- ({0.4+2.8*(1-\y*\y)},\y);
+    \draw[figR, thin, domain=-1:1, samples=40, variable=\y] plot ({0.4+2.8*(1-\y*\y)},\y);
+    \node[figR, font=\scriptsize, anchor=west] at (3.25,0.25) {$v_{\max}$};
+  \end{scope}
+\end{tikzpicture}

@@ -1,0 +1,30 @@
+% Figure for Classical Mechanics §A3.7 (Example: block on a frictionless table joined over a pulley to a hanging block; arrangement and free-body diagrams).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  % --- arrangement ---
+  \fill[black!8] (-0.2,-0.25) rectangle (3.2,0);
+  \draw[black!55, thin] (-0.2,0) -- (3.2,0) -- (3.2,-0.25) -- (-0.2,-0.25);
+  \draw[thick, black!70, fill=white] (0.4,0) rectangle (1.6,0.8) node[pos=0.5] {$m_1$};
+  \draw[black!70, fill=white] (3.2,0.4) circle (0.32);
+  \fill[black!70] (3.2,0.4) circle (1pt);
+  \draw[black!70] (3.2,0.4) -- (3.05,-0.02);
+  \draw[black!70, thin] (1.6,0.72) -- (3.2,0.72);
+  \draw[black!70, thin] (3.52,0.4) -- (3.52,-1.2);
+  \draw[thick, black!70, fill=white] (3.12,-1.2) rectangle (3.92,-2.0) node[pos=0.5] {$m_2$};
+  \draw[->, thin, black!55] (0.6,1.15) -- (1.4,1.15) node[right, font=\scriptsize] {$a$};
+  \draw[->, thin, black!55] (4.2,-1.2) -- (4.2,-2.0) node[below, font=\scriptsize] {$a$};
+  % --- free-body diagram, block 1 ---
+  \begin{scope}[xshift=6.6cm, yshift=0.2cm]
+    \node[font=\scriptsize, black!70] at (0,1.75) {block 1};
+    \draw[->, very thick, figR] (0,0) -- (0,1.2) node[right] {$\vec N$};
+    \draw[->, very thick, figR] (0,0) -- (0,-1.2) node[right] {$m_1\vec g$};
+    \draw[->, very thick, figB] (0,0) -- (1.1,0) node[right] {$\vec T$};
+    \fill (0,0) circle (2pt);
+  \end{scope}
+  % --- free-body diagram, block 2 ---
+  \begin{scope}[xshift=9.2cm, yshift=-0.9cm]
+    \node[font=\scriptsize, black!70] at (0,1.6) {block 2};
+    \draw[->, very thick, figB] (0,0) -- (0,0.9) node[right] {$\vec T$};
+    \draw[->, very thick, figR] (0,0) -- (0,-1.4) node[right] {$m_2\vec g$};
+    \fill (0,0) circle (2pt);
+  \end{scope}
+\end{tikzpicture}

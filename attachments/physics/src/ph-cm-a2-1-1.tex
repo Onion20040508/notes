@@ -1,0 +1,19 @@
+% Figure for Classical Mechanics §A2.1 (x-t graph of x = 3t - 3t^2: tangent, chord and turning point; after University Physics Vol. 1, Example 3.4).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, xmin=0, xmax=1.4, ymin=-0.45, ymax=1.05,
+      xlabel={$t$ (s)}, ylabel={$x$ (m)},
+      xtick={0,0.25,0.5,0.75,1}, ytick={-0.25,0,0.25,0.5,0.75},
+      xlabel style={at={(axis description cs:1,0.31)}, anchor=south east},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      axis x line=middle, axis y line=left, clip=false]
+    \addplot[figB, domain=0:1.1, samples=80] {3*x - 3*x^2};
+    \addplot[figR, thick, domain=0.0:0.45] {0.5625 + 1.5*(x - 0.25)};
+    \addplot[black!70, dashed, thick, domain=0:0.5] {1.5*x};
+    \addplot[black!55, thick, domain=0.36:0.64] {0.75};
+    \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(0,0) (0.5,0.75)};
+    \addplot[only marks, mark=*, mark size=1.6pt, figR] coordinates {(0.25,0.5625)};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.03,0.97) {tangent, slope $1.5$ m/s};
+    \node[black!70, font=\scriptsize, anchor=west] at (axis cs:0.20,0.12) {chord, $\bar v = 1.5$ m/s};
+    \node[black!60, font=\scriptsize, anchor=west] at (axis cs:0.65,0.75) {$v = 0$};
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,16 @@
+% Figure for Classical Mechanics §A2.3 (catching the bus: x-t graphs of the student and the bus; PHY 181 TBL 3 values D = 4 m, v0 = 5 m/s, a = 2 m/s^2).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, xmin=0, xmax=6.2, ymin=0, ymax=31,
+      xlabel={$t$ (s)}, ylabel={$x$ (m)},
+      xlabel style={at={(axis description cs:1,0)}, anchor=north east},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={1,2,3,4,5}, ytick={4,10,20,30}, clip=false]
+    \addplot[figR, domain=0:5.0, samples=60] {4 + x^2};
+    \addplot[figB, domain=0:5.2] {5*x};
+    \addplot[figB, dashed, domain=0:5.2] {3*x};
+    \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(1,5) (4,20)};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:5.05,29) {bus, $4 + t^2$};
+    \node[figB, font=\scriptsize, anchor=south east] at (axis cs:2.2,12.3) {student, $5t$};
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:3.6,10.2) {$3t$: never catches it};
+  \end{axis}
+\end{tikzpicture}

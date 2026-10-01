@@ -1,0 +1,27 @@
+% Figure for Classical Mechanics §A3.5 (Example: professor pushing a cart; two choices of system; after University Physics Vol. 1, Examples 5.10-5.11).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  % floor
+  \fill[black!8] (-1.8,-0.55) rectangle (4.9,0);
+  \draw[black!55, thin] (-1.8,0) -- (4.9,0);
+  % professor and cart
+  \draw[thick, black!70] (0,0) rectangle (1,2.2);
+  \node[font=\scriptsize, black!70, rotate=90] at (0.5,0.85) {professor};
+  \draw[thick, black!70, fill=white] (1.15,0.35) rectangle (3.4,1.25);
+  \node[font=\scriptsize, black!70, align=center] at (2.28,0.8) {cart +\\[-2pt] equipment};
+  \draw[black!70, fill=white] (1.45,0.17) circle (0.17) (3.1,0.17) circle (0.17);
+  % systems
+  \draw[dashed, black!55, rounded corners=4pt] (-0.15,0.03) rectangle (3.58,2.42);
+  \node[font=\scriptsize, black!60, anchor=south east] at (3.58,2.42) {System 1};
+  \draw[dotted, thick, black!55, rounded corners=3pt] (1.08,0.06) rectangle (3.5,1.36);
+  \node[font=\scriptsize, black!60] at (2.95,1.54) {System 2};
+  % internal third-law pair
+  \draw[->, very thick, figR] (1.08,1.75) -- (2.15,1.75) node[above, pos=0.5, yshift=-1pt] {$\vec F_{\text{prof}}$};
+  \draw[->, very thick, figR] (0.92,1.75) -- (-0.05,1.75) node[above, pos=0.45, yshift=-1pt] {$-\vec F_{\text{prof}}$};
+  % external forces on system 1
+  \draw[->, very thick, figB] (-1.5,0.22) -- (-0.02,0.22) node[above, pos=0.45] {$\vec F_{\text{floor}}$};
+  \draw[->, very thick, figB] (4.55,0.8) -- (3.42,0.8) node[above, pos=0.4] {$\vec f$};
+  % force on the floor
+  \draw[->, very thick, black!45] (0.4,-0.2) -- (-0.95,-0.2) node[below, pos=0.5, font=\scriptsize] {$\vec F_{\text{foot}}$ (on floor)};
+  % direction of motion
+  \draw[->, thin, black!55] (3.9,1.9) -- (4.8,1.9) node[below, pos=0.5, font=\scriptsize] {$+$, motion};
+\end{tikzpicture}

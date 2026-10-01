@@ -1,0 +1,13 @@
+% Figure for Classical Mechanics §A1.3 (parallelogram rule: sum and difference of two vectors).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (3.6,0.9);
+  \coordinate (B) at (1.0,2.2);
+  \coordinate (S) at (4.6,3.1);
+  \draw[dashed, black!55] (A) -- (S) -- (B);
+  \draw[->, very thick, figB] (O) -- (A) node[below right, xshift=-2pt] {$\vec A$};
+  \draw[->, very thick, figB] (O) -- (B) node[left, xshift=-1pt] {$\vec B$};
+  \draw[->, very thick, figR] (O) -- (S) node[above right] {$\vec A + \vec B$};
+  \draw[->, very thick, figG] (B) -- (A) node[pos=0.25, anchor=south west, inner sep=1.5pt] {$\vec A - \vec B$};
+  \fill (O) circle (2pt);
+\end{tikzpicture}

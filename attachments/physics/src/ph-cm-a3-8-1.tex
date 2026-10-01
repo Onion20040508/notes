@@ -1,0 +1,19 @@
+% Figure for Classical Mechanics §A3.8 (Example: friction on a crate versus applied horizontal push; static then kinetic; after University Physics Vol. 1, Example 6.10).
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=9cm, height=5.6cm, xmin=0, xmax=205, ymin=0, ymax=165,
+      xlabel={push $P$ (N)}, ylabel={friction $f$ (N)},
+      xtick={0,50,100,137,180}, xticklabels={0,50,100,137,180},
+      ytick={0,50,100,118,137}, yticklabels={0,50,100,118,137},
+      ticklabel style={font=\scriptsize}, clip=false]
+    \addplot[black!40, thin, dashed, domain=0:137] {137};
+    \addplot[black!40, thin, dashed] coordinates {(137,0) (137,137)};
+    \addplot[figB, very thick, domain=0:137] {x};
+    \addplot[figR, very thick, domain=137:205] {118};
+    \addplot[only marks, mark=*, mark size=1.8pt, figB] coordinates {(20,20) (30,30) (120,120)};
+    \addplot[only marks, mark=*, mark size=1.8pt, figR] coordinates {(180,118)};
+    \node[font=\scriptsize, figB, anchor=east] at (axis cs:95,112) {static: $f_s = P$};
+    \node[font=\scriptsize, figR, anchor=south] at (axis cs:178,121) {kinetic: $\mu_k N$};
+    \node[font=\scriptsize, black!60, anchor=south west] at (axis cs:2,138) {$\mu_s N$};
+    \node[font=\scriptsize, black!60, anchor=west] at (axis cs:140,60) {crate slides};
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,15 @@
+% Figure for Classical Mechanics §A5.4 (centre of mass of a uniform semicircular wire; after PHY 181 TBL 21).
+\begin{tikzpicture}[>={Stealth[length=2mm]}, font=\small]
+  \def\R{2.2}
+  \draw[->, thin, black!55] (-2.8,0) -- (2.9,0) node[right, font=\scriptsize] {$x$};
+  \draw[->, thin, black!55] (0,-0.3) -- (0,2.9) node[above, font=\scriptsize] {$y$};
+  \draw[line width=2.2pt, figB] (\R,0) arc (0:180:\R);
+  \draw[line width=3.2pt, figR] ({\R*cos(45)},{\R*sin(45)}) arc (45:55:\R);
+  \draw[thin, black!55] (0,0) -- ({\R*cos(50)},{\R*sin(50)});
+  \draw[black!55, thin] (0.55,0) arc (0:50:0.55); \node[font=\scriptsize] at (0.78,0.33) {$\theta$};
+  \node[font=\scriptsize, figR, anchor=south west] at ({\R*cos(50)},{\R*sin(50)}) {$dm=\lambda R\,d\theta$};
+  \node[font=\scriptsize, anchor=north] at (\R,0) {$R$};
+  \fill[figR] (0,{2*\R/pi}) circle (2.4pt);
+  \node[font=\scriptsize, figR, anchor=west] at (0.08,{2*\R/pi}) {CM};
+  \draw[<->, black!55, thin] (-0.25,0) -- (-0.25,{2*\R/pi}) node[midway, left, font=\scriptsize, black] {$2R/\pi$};
+\end{tikzpicture}

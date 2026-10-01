@@ -14,11 +14,10 @@
     \fill[black!70] (0,0) circle (2pt);
     \draw[->, very thick, figR] (\R,0) -- (\R,-1.6) node[below] {$F_T$};
     \draw[black!55, thin, dashed] (0,0) -- (\R,0) node[midway, above, font=\scriptsize] {$R$};
-    \draw[->, very thick, figB] (0,0) -- (0,1.45) node[above] {$\vec F_{\text{axle}}$};
-    \draw[->, very thick, figB] (0,0) -- (-0.0,-0.0) ;
-    \draw[->, very thick, figB] (-0.05,0) -- (-0.05,-1.0) node[below left, xshift=2pt] {$M g$};
-    \draw[->, thick, black!55] (-0.55,{\R+0.35}) arc (110:55:{\R+0.4});
-    \node[font=\scriptsize, black!70] at (-1.35,{\R+0.25}) {$+$, $\alpha$};
+    \draw[->, very thick, figB] (0,0) -- (0,1.75) node[right] {$\vec F_{\text{axle}}$};
+    \draw[->, very thick, figB] (0,0) -- (0,-1.0) node[left, yshift=2pt] {$M g$};
+    \draw[->, thick, black!55] ({0.95*cos(160)},{0.95*sin(160)}) arc (160:105:0.95);
+    \node[font=\scriptsize, black!70] at (-0.5,0.35) {$+$, $\alpha$};
     \node[font=\scriptsize, black!70] at (0,-2.8) {disc, $I = \tfrac12 MR^2$};
   \end{scope}
 \end{tikzpicture}

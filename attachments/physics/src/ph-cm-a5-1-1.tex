@@ -1,0 +1,14 @@
+% Figure for Classical Mechanics §A5.1 (impulse as the area under F(t), equal to the average force times the duration; after University Physics Vol. 1, Figure 9.8).
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.4cm, height=5.4cm, xmin=0, xmax=2.35, ymin=0, ymax=1.18,
+      xlabel={$t$}, ylabel={$F$}, xtick={0.2,1.8}, xticklabels={$t_i$,$t_f$}, ytick={0.332,1}, yticklabels={$F_{\text{ave}}$,$F_{\max}$},
+      axis lines=middle, xlabel style={anchor=west}, ylabel style={anchor=south}, clip=false]
+    \fill[figR!15] (axis cs:0.2,0) rectangle (axis cs:1.8,0.332);
+    \draw[figR, thick, dashed] (axis cs:0.2,0) -- (axis cs:0.2,0.332) -- (axis cs:1.8,0.332) -- (axis cs:1.8,0);
+    \addplot[name path=F, figB, very thick, domain=0.2:1.8, samples=80] {exp(-(x-0.85)^2/0.09)};
+    \draw[black!55, densely dotted] (axis cs:0,1) -- (axis cs:0.85,1);
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:1.0,0.85) {$F(t)$: area $=J$};
+    \node[font=\scriptsize, figR, anchor=south] at (axis cs:1.45,0.34) {$F_{\text{ave}}\,\Delta t = J$};
+    \draw[<->, black!55, thin] (axis cs:0.2,-0.2) -- (axis cs:1.8,-0.2) node[midway, below, font=\scriptsize, black] {$\Delta t$};
+  \end{axis}
+\end{tikzpicture}

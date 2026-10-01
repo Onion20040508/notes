@@ -1,0 +1,35 @@
+% Figure for Classical Mechanics §A6.7 (precession of a top: side view with torque of gravity; top view of the horizontal part of L turning by dphi).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  \def\th{30}
+  % ---- left: side view ----
+  \coordinate (O) at (0,0);
+  \draw[black!55, dashed, thin] (0,-0.3) -- (0,4.4) node[above, font=\scriptsize] {vertical};
+  \draw[thick, black!70] (-1.0,0) -- (1.0,0);
+  \coordinate (C) at ({2.4*sin(\th)},{2.4*cos(\th)});
+  \draw[black!55, thin] (O) -- ({4.3*sin(\th)},{4.3*cos(\th)});
+  % disc as rotated ellipse perpendicular to the axis
+  \draw[thick, black!60, fill=figB!8, rotate around={-\th:(C)}] (C) ellipse (1.0 and 0.25);
+  \draw[->, very thick, figB] (O) -- (C) node[midway, right, xshift=1pt, yshift=-3pt] {$\vec r$};
+  \fill[black!70] (C) circle (1.6pt);
+  \draw[->, very thick, figB] (C) -- ++(0,-1.5) node[below] {$M\vec g$};
+  \draw[->, very thick, figR] ({2.65*sin(\th)},{2.65*cos(\th)}) -- ({4.1*sin(\th)},{4.1*cos(\th)}) node[above right] {$\vec L$};
+  \draw[black!55, thin] (0,1.0) arc (90:{90-\th}:1.0); \node[font=\scriptsize, black!70] at (0.2,1.3) {$\theta$};
+  % torque into page, drawn at the pivot side
+  \draw[figB, thick] (-0.75,1.6) circle (0.14);
+  \draw[figB, thick] (-0.85,1.5) -- (-0.65,1.7) (-0.85,1.7) -- (-0.65,1.5);
+  \node[figB, left, font=\scriptsize, align=right] at (-0.9,1.6) {$\vec\tau = \vec r\times M\vec g$\\ (into page)};
+  \fill (O) circle (1.6pt) node[below, font=\scriptsize] {pivot};
+  % ---- right: top view ----
+  \begin{scope}[xshift=6.6cm, yshift=1.8cm]
+    \def\Rr{1.6}
+    \draw[black!55, dashed, thin] (0,0) circle (\Rr);
+    \fill[black!70] (0,0) circle (1.4pt) node[below left, font=\scriptsize] {axis};
+    \draw[->, very thick, figR] (0,0) -- (\Rr,0) node[midway, below] {$L\sin\theta$};
+    \draw[->, thick, figR!50] (0,0) -- ({\Rr*cos(28)},{\Rr*sin(28)});
+    \draw[->, very thick, figB] (\Rr,0) -- (\Rr,{\Rr*tan(28)*0.95}) node[right] {$d\vec L = \vec\tau\,dt$};
+    \draw[black!55, thin] (0.6,0) arc (0:28:0.6); \node[font=\scriptsize, black!70] at (0.85,0.22) {$d\varphi$};
+    \draw[->, thick, black!55] ({1.95*cos(60)},{1.95*sin(60)}) arc (60:130:1.95);
+    \node[font=\scriptsize, black!70] at (-0.6,2.15) {$\omega_P$};
+    \node[font=\scriptsize, black!70] at (0,-2.2) {view from above};
+  \end{scope}
+\end{tikzpicture}

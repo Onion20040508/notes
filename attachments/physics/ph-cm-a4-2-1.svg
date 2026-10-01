@@ -155,8 +155,8 @@
 <path d='M2.2 68.2864C2.2 69.50143 1.21503 70.4864 0 70.4864S-2.2 69.50143-2.2 68.2864C-2.2 67.07138-1.21503 66.08641 0 66.08641S2.2 67.07138 2.2 68.2864ZM0 68.2864' stroke='none'/>
 <g stroke-width='1.2'>
 <g fill='#b03030' stroke='#b03030'>
-<path d='M0 68.2864V50.73729' fill='none'/>
-<g transform='matrix(0.0,-1.0,1.0,0.0,0.0,53.20642)'>
+<path d='M-2.84544 68.2864V50.73729' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,-2.84544,53.20642)'>
 <g stroke-dasharray='none' stroke-dashoffset='0.0'>
  <g stroke-linejoin='miter'>
  <g stroke-width='1.0563'>
@@ -165,7 +165,7 @@
  </g>
  </g>
 </g>
-<g transform='translate(-15.18153,46.17888)'>
+<g transform='translate(-18.02698,47.24593)'>
 <g stroke='none' transform='scale(-1.00375,1.00375)translate(147.430245,46.136345)scale(-1,-1)'>
 <g fill='#b03030'>
 <g stroke='none'>
@@ -182,8 +182,8 @@
 </g>
 <g stroke-width='1.2'>
 <g fill='#b03030' stroke='#b03030'>
-<path d='M2.27626 68.2864V59.27321' fill='none'/>
-<g transform='matrix(0.0,-1.0,1.0,0.0,2.27626,61.74234)'>
+<path d='M2.84544 68.2864V59.27321' fill='none'/>
+<g transform='matrix(0.0,-1.0,1.0,0.0,2.84544,61.74234)'>
 <g stroke-dasharray='none' stroke-dashoffset='0.0'>
  <g stroke-linejoin='miter'>
  <g stroke-width='1.0563'>
@@ -192,7 +192,7 @@
  </g>
  </g>
 </g>
-<g transform='translate(6.20923,52.08249)'>
+<g transform='translate(6.77841,53.36295)'>
 <g stroke='none' transform='scale(-1.00375,1.00375)translate(147.430245,46.136345)scale(-1,-1)'>
 <g fill='#b03030'>
 <g stroke='none'>
@@ -208,8 +208,8 @@
 </g>
 <g stroke-width='0.8'>
 <g fill='#737373' stroke='#737373'>
-<path d='M-9.95863 75.39958H8.90768' fill='none'/>
-<g transform='translate(6.54405,75.39958)'>
+<path d='M11.38092 75.39958H-7.48497' fill='none'/>
+<g transform='matrix(-1.0,0.0,0.0,-1.0,-5.12134,75.39958)'>
 <g stroke-dasharray='none' stroke-dashoffset='0.0'>
  <g stroke-linejoin='miter'>
  <path d='M5.1204 0L1.29175 1.44887L2.56363 0L1.29175-1.44887Z'/>
@@ -219,7 +219,7 @@
 <g fill='#000' stroke='#000'>
 <g fill='#000' stroke='#000'>
 </g>
-<g transform='translate(16.5366,73.38403)'>
+<g transform='translate(-23.01675,73.38403)'>
 <g stroke='none' transform='scale(-1.00375,1.00375)translate(147.430245,46.136345)scale(-1,-1)'>
 <g fill='#000'>
 <g stroke='none'>

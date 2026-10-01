@@ -1,0 +1,22 @@
+% Figure for Classical Mechanics §A6.5 (free-body diagram of a round body rolling without slipping down an incline).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  \def\ang{25}
+  % incline
+  \draw[thick, black!70] (0,0) -- (7,0) -- (7,{7*tan(\ang)}) -- cycle;
+  \draw[black!55, thin] (1.2,0) arc (0:\ang:1.2); \node[font=\scriptsize, black!70] at (1.5,0.28) {$\theta$};
+  % body: contact point at distance 4.2 along the incline from bottom-left... measured from the top
+  \def\R{0.9}
+  \coordinate (Pc) at ({4.0*cos(\ang)},{4.0*sin(\ang)});
+  \coordinate (C) at ($(Pc)+({-\R*sin(\ang)},{\R*cos(\ang)})$);
+  \draw[thick, black!60, fill=figB!8] (C) circle (\R);
+  \fill[black!70] (C) circle (1.6pt);
+  \fill (Pc) circle (1.6pt);
+  % forces
+  \draw[->, very thick, figB] (C) -- ++(0,-2.0) node[below] {$M\vec g$};
+  \draw[->, very thick, figB] (Pc) -- ++({-1.7*sin(\ang)},{1.7*cos(\ang)}) node[pos=1.0, left, xshift=1pt, yshift=6pt] {$\vec N$};
+  \draw[->, very thick, figR] (Pc) -- ++({1.4*cos(\ang)},{1.4*sin(\ang)}) node[above left, xshift=4pt, yshift=1pt] {$\vec f_s$};
+  % acceleration and rotation
+  \draw[->, thick, black!55] ($(C)+({-1.6*cos(\ang)},{-1.6*sin(\ang)})+(0,1.3)$) -- ++({-1.0*cos(\ang)},{-1.0*sin(\ang)}) node[above, font=\scriptsize] {$\vec a_{\text{cm}}$};
+  \draw[->, thick, black!55] ($(C)+({0.5*cos(120)},{0.5*sin(120)})$) arc (120:220:0.5);
+  \node[font=\scriptsize, black!70] at ($(C)+(0.32,0.2)$) {$\alpha$};
+\end{tikzpicture}

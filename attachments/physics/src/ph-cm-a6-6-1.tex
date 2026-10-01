@@ -1,0 +1,24 @@
+% Figure for Classical Mechanics §A6.6 (angular momentum of a particle moving in a straight line about a point O off its path; lever arm r_perp).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  \coordinate (O) at (0,0);
+  \def\h{1.8}
+  \draw[black!55, dashed, thin] (-4.0,\h) -- (4.2,\h) node[right, font=\scriptsize] {line of motion};
+  \coordinate (P) at (2.4,\h);
+  \coordinate (Q) at (-1.6,\h);
+  % lever arm
+  \draw[black!55, thin] (O) -- (0,\h);
+  \draw[black!55, thin] (0,\h-0.22) -- (0.22,\h-0.22) -- (0.22,\h);
+  \node[left, font=\scriptsize, black!70] at (0,0.95) {$r_\perp$};
+  % position vectors
+  \draw[->, very thick, figB] (O) -- (P) node[midway, below right] {$\vec r$};
+  \draw[->, thick, figB!60] (O) -- (Q) node[midway, below left] {$\vec r\,'$};
+  % momenta
+  \draw[->, very thick, figB] (P) -- ++(-1.3,0) node[above, xshift=10pt] {$\vec p$};
+  \fill (P) circle (2.2pt) node[above right] {$m$};
+  \draw[->, thick, figB!60] (Q) -- ++(-1.3,0) node[above, xshift=10pt] {$\vec p$};
+  \fill[black!60] (Q) circle (1.8pt);
+  % angular momentum out of page at O
+  \draw[figR, thick] (O) circle (0.16); \fill[figR] (O) circle (0.05);
+  \node[below, figR, font=\scriptsize, align=center] at (0,-0.22) {$\vec l = \vec r\times\vec p$ (out of page),\\ $l = r_\perp p$};
+  \node[left, font=\small] at (-0.2,0.05) {$O$};
+\end{tikzpicture}

@@ -1,0 +1,25 @@
+% Figure for Classical Mechanics §A5.5 (rocket and exhaust before and after a time dt, velocities in the ground frame; after University Physics Vol. 1, Figure 9.33).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % rocket shape macro
+  \def\rocket#1#2{
+    \begin{scope}[shift={(#1,0)}]
+      \draw[very thick, figB, fill=figB!12] (0,-0.3) -- (1.4,-0.3) -- (1.9,0) -- (1.4,0.3) -- (0,0.3) -- cycle;
+      \draw[thick, figB] (0,0.3) -- (-0.25,0.5) -- (0.3,0.3);
+      \draw[thick, figB] (0,-0.3) -- (-0.25,-0.5) -- (0.3,-0.3);
+      \node[font=\scriptsize] at (0.75,0) {#2};
+    \end{scope}}
+  % time t
+  \node[font=\scriptsize, black!70, anchor=west] at (-0.3,1.15) {time $t$};
+  \rocket{0}{$m$}
+  \draw[->, thick, figR] (2.0,0) -- (3.0,0) node[right, font=\scriptsize] {$v$};
+  % time t + dt
+  \begin{scope}[yshift=-2.1cm]
+    \node[font=\scriptsize, black!70, anchor=west] at (-0.3,1.15) {time $t+dt$};
+    \rocket{1.2}{$m-dm_g$}
+    \draw[->, thick, figR] (3.2,0) -- (4.4,0) node[right, font=\scriptsize] {$v+dv$};
+    \fill[figO!70] (0,0) circle (0.17);
+    \node[font=\scriptsize, figO, anchor=north] at (0,-0.2) {$dm_g$};
+    \draw[->, thick, figO] (-0.2,0) -- (-1.1,0) node[left, font=\scriptsize] {$v-u$};
+  \end{scope}
+  \draw[->, thin, black!55] (-1.6,-3.1) -- (-0.8,-3.1) node[right, font=\scriptsize] {$+x$};
+\end{tikzpicture}

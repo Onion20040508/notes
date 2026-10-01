@@ -1,0 +1,23 @@
+% Figure for Classical Mechanics §A7.2 (schematic stress-strain curve of a ductile metal: linear, nonlinear elastic, plastic, fracture; unloading line).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  \draw[->, thin, black!55] (0,0) -- (7.2,0) node[below left, font=\scriptsize] {strain};
+  \draw[->, thin, black!55] (0,0) -- (0,4.4) node[above, font=\scriptsize] {stress};
+  % linear part O-H
+  \coordinate (H) at (1.0,2.5);
+  \coordinate (E) at (1.5,3.0);
+  \coordinate (P) at (4.0,3.7);
+  \coordinate (F) at (6.4,3.1);
+  \draw[very thick, figB] (0,0) -- (H);
+  \draw[very thick, figB] (H) .. controls (1.2,2.75) and (1.3,2.9) .. (E);
+  \draw[very thick, figB] (E) .. controls (2.2,3.45) and (3.0,3.65) .. (P) .. controls (5.0,3.75) and (5.8,3.5) .. (F);
+  % unloading from P parallel to the linear part
+  \draw[very thick, figR, ->] (P) -- ($(P)+(-1.48,-3.7)$);
+  \node[figR, font=\scriptsize, below] at ($(P)+(-1.48,-3.7)$) {permanent strain};
+  % points
+  \foreach \pt/\lab/\pos in {H/H/right, E/E/above left, P/P/above} { \fill (\pt) circle (1.8pt) node[\pos, font=\scriptsize] {$\lab$}; }
+  \draw[thick] ($(F)+(-0.1,-0.1)$) -- ($(F)+(0.1,0.1)$) ($(F)+(-0.1,0.1)$) -- ($(F)+(0.1,-0.1)$);
+  \node[right, font=\scriptsize] at ($(F)+(0.1,0)$) {fracture};
+  % region labels
+  \node[font=\scriptsize, black!70, align=center] at (1.75,1.1) {linear\\ (Law §A7.2.1)};
+  \node[font=\scriptsize, black!70] at (4.4,2.7) {plastic};
+\end{tikzpicture}

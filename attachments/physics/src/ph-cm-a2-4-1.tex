@@ -1,0 +1,17 @@
+% Figure for Classical Mechanics §A2.4 (velocity of a docking motorboat, v = 5 - t^2/8; the shaded area is the displacement; after University Physics Vol. 1, Example 3.17).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, xmin=0, xmax=9.2, ymin=-3.4, ymax=6.2,
+      axis x line=middle, axis y line=left,
+      xlabel={$t$ (s)}, ylabel={$v$ (m/s)},
+      xlabel style={at={(axis description cs:1,0.354)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={2,4,6,8}, ytick={-2,2,4}, clip=false]
+    \addplot[fill=figB!18, draw=none, domain=0:6.3246, samples=60] {5 - x^2/8} \closedcycle;
+    \addplot[figB, domain=0:6.3246, samples=60] {5 - x^2/8};
+    \addplot[figB, dashed, domain=6.3246:8, samples=20] {5 - x^2/8};
+    \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(6.3246,0)};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:6.45,0.7) {stops, $t = 6.3$ s};
+    \node[font=\scriptsize, figB!70!black] at (axis cs:2.6,1.9) {$\Delta x = 21.1$ m};
+    \node[font=\scriptsize, anchor=west, black!70] at (axis cs:0.15,5.6) {$v_0 = 5.0$ m/s};
+  \end{axis}
+\end{tikzpicture}

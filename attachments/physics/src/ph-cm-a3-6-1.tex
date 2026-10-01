@@ -1,0 +1,28 @@
+% Figure for Classical Mechanics §A3.6 (Theorem: body on an incline; weight components and normal force).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  \def\th{30}
+  % incline
+  \fill[black!8] (0,0) -- (7,0) -- (0,{7*tan(\th)}) -- cycle;
+  \draw[black!55, thin] (0,0) -- (7,0) -- (0,{7*tan(\th)}) -- cycle;
+  \draw[black!55, thin] (5.9,0) arc (180:180-\th:1.1);
+  \node[font=\scriptsize, black!70] at (5.55,0.28) {$\theta$};
+  % block
+  \begin{scope}[shift={(3.2,{(7-3.2)*tan(\th)})}, rotate=-\th]
+    \draw[thick, black!70, fill=white] (-0.6,0) rectangle (0.6,0.8);
+    \coordinate (C) at (0,0.4);
+    % axes along/perpendicular to incline
+    \draw[->, thin, black!55] (0,0.4) -- (2.6,0.4) node[right, font=\scriptsize] {$x$};
+    \draw[->, thin, black!55] (0,0.4) -- (0,3.0) node[above, font=\scriptsize] {$y$};
+    % components of weight
+    \draw[->, very thick, figR, dashed] (0,0.4) -- ({2.4*sin(\th)},0.4) node[above, pos=1.0, xshift=4pt, font=\scriptsize] {$mg\sin\theta$};
+    \draw[->, very thick, figR, dashed] (0,0.4) -- (0,{0.4-2.4*cos(\th)}) node[left, pos=0.85, font=\scriptsize] {$mg\cos\theta$};
+    % normal force
+    \draw[->, very thick, figB] (0,0.4) -- (0,{0.4+2.4*cos(\th)}) node[left, pos=0.8] {$\vec N$};
+  \end{scope}
+  % weight (vertical)
+  \draw[->, very thick, figR] (C) -- ++(0,-2.4) node[below] {$\vec w$};
+  % angle between w and -y
+  \draw[black!55, thin] ($(C)+(0,-1.0)$) arc (-90:-90-\th:1.0);
+  \node[font=\scriptsize, black!70] at ($(C)+(-0.25,-1.25)$) {$\theta$};
+  \fill (C) circle (1.8pt);
+\end{tikzpicture}
