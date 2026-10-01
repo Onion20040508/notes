@@ -33,7 +33,7 @@ Propositions [[§19 Congruence of Integers#^prop-19-6|§19.6]] and [[§19 Congru
 > [!example] Example §20.1: A Congruence With No Solutions
 > *Claim.* The linear congruence $6x \equiv 14 \pmod{21}$ has no solutions.
 >
-> The goal "$6x \not\equiv 14 \pmod{21}$ for every $x \in \mathbb{Z}$" is negative, which suggests a proof by contradiction ([[§4 Proof by Contradiction|§4]]).
+> The goal "$6x \not\equiv 14 \pmod{21}$ for every $x \in \mathbb{Z}$" is negative, which suggests a proof by contradiction ([[§4 Proof by Contradiction#^thm-4-2|Theorem §4.2]]).
 >
 > *Proof.* Suppose, for contradiction, that $x \in \mathbb{Z}$ satisfies $6x \equiv 14 \pmod{21}$. Then $6x - 14 = 21q$ for some $q \in \mathbb{Z}$, so
 >
@@ -99,7 +99,7 @@ The condition is also sufficient. The key case is $a$ coprime to $m$, where it h
 
 ^thm-20-3
 
-The proof is given in 20.2 below, after the link with diophantine equations. ([[§21 Congruence Classes and the Arithmetic of Remainders|§21]] gives a second, non-constructive proof by counting.)
+The proof is given in 20.2 below, after the link with diophantine equations. ([[§21 Congruence Classes and the Arithmetic of Remainders#^thm-21-6|Theorem §21.6]] gives a second, non-constructive proof by counting.)
 
 > [!example] Example §20.3: Unique and Non-Unique Solutions
 > (a) In Example [[§19 Congruence of Integers#^ex-19-6|§19.6]](b), $2x \equiv 5 \pmod 7 \iff x \equiv 6 \pmod 7$: one solution modulo $7$, as Theorem §20.3 predicts since $\gcd(2, 7) = 1$.
@@ -164,7 +164,7 @@ Putting together Theorem §20.3, Proposition [[§19 Congruence of Integers#^prop
 
 ## 20.2 Linear Congruences and Diophantine Equations
 
-Now a systematic method, which also proves Theorem §20.3. By definition, $ax \equiv b \pmod m$ iff $b - ax$ is a multiple of $m$, i.e. iff $b - ax = my$ for some integer $y$, i.e. $ax + my = b$. So solving the linear congruence is the same as solving the **linear diophantine equation** $ax + my = b$, whose solutions are ordered pairs $(x, y) \in \mathbb{Z}^2$ ([[§18★ Linear Diophantine Equations|§18★]]). Precisely:
+Now a systematic method, which also proves Theorem §20.3. By definition, $ax \equiv b \pmod m$ iff $b - ax$ is a multiple of $m$, i.e. iff $b - ax = my$ for some integer $y$, i.e. $ax + my = b$. So solving the linear congruence is the same as solving the **linear diophantine equation** $ax + my = b$, whose solutions are ordered pairs $(x, y) \in \mathbb{Z}^2$ ([[§18★ Linear Diophantine Equations#^def-18-1|Def. §18.1]]). Precisely:
 
 > [!theorem] Proposition §20.5: Congruences and Diophantine Equations
 > For integers $a, b$ and a positive integer $m$, the map
@@ -188,7 +188,7 @@ Now a systematic method, which also proves Theorem §20.3. By definition, $ax \e
 
 ^pf-20-5
 
-*Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]], [[§9 Injections, Surjections and Bijections|§9]] (a map with a two-sided inverse is a bijection)
+*Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]] (a map with a two-sided inverse is a bijection)
 
 > [!proof]+ Proof of Theorem §20.3
 > Let $a$ and $m$ be coprime. By Bézout ([[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]) there are integers $r, s$ with $ar + ms = 1$; multiplying by $b$, $\ a(rb) + m(sb) = b$. So the diophantine equation $ax + my = b$ has the solution $(rb, sb)$ — this is [[§18★ Linear Diophantine Equations#^thm-18-1|Theorem §18.1]] (Eccles 18.2.1) in the case $\gcd(a, m) = 1$ — and by Proposition [[§20 Linear Congruences#^prop-20-5|§20.5]], $x_0 = rb$ solves $ax \equiv b \pmod m$.

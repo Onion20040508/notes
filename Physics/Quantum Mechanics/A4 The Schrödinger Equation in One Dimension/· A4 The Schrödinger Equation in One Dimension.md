@@ -8,7 +8,7 @@ tags: [chapter, quantum-mechanics]
 # A4 The Schrödinger Equation in One Dimension
 ← [[· A3 Matter Waves and Uncertainty]] · ↑ [[Quantum Mechanics]] · [[· A5 Atoms and Spin]] →
 
-**Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (20), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (1)
+**Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (20), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (1), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (1)
 **Used by:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (1), [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (1), [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (9), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (4), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (18), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (7), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (15), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (5), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (8), [[· B6 Spin|B6 Spin]] (1), [[· B7 Identical Particles|B7 Identical Particles]] (2), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (5)
 
 ## Sections

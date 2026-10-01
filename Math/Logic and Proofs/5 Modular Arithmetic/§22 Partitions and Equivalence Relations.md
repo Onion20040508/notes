@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 22 and Problems V · MAT 200 lecture (syllabus week 13: relations, equivalence relations and partitions, quotient sets, constructions of the integers and rational numbers) · the student's Rational Number Project (MAT 250, Oct 2024) · Sundstrom §7.1–7.3.*
 
-Congruence modulo $m$ can be seen in two ways: as a *relation* between integers, and as a *partition* of $\mathbb{Z}$ into congruence classes ([[§21 Congruence Classes and the Arithmetic of Remainders|§21]]). This is one instance of a concept met everywhere in pure mathematics: equivalence relations on a set correspond exactly to partitions of it, and the set of classes (the quotient set) is a new object. The last two parts use quotient sets to *construct* the number systems that [[§13 Number Systems|§13]] took for granted: $\mathbb{Q}$ from $\mathbb{Z}$ (the Rational Number Project) and $\mathbb{Z}$ from $\mathbb{N}$.
+Congruence modulo $m$ can be seen in two ways: as a *relation* between integers, and as a *partition* of $\mathbb{Z}$ into congruence classes, the set $\mathbb{Z}_m$ of [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|Def. §21.2]]. This is one instance of a concept met everywhere in pure mathematics: equivalence relations on a set correspond exactly to partitions of it, and the set of classes (the quotient set) is a new object. The last two parts use quotient sets to *construct* the number systems that [[§13 Number Systems|§13]] took for granted: $\mathbb{Q}$ from $\mathbb{Z}$ (the Rational Number Project) and $\mathbb{Z}$ from $\mathbb{N}$.
 
 ## 22.1 Partitions
 
@@ -31,7 +31,7 @@ Congruence modulo $m$ can be seen in two ways: as a *relation* between integers,
 > - [[§22 Equivalence Relations and Partitions#^def-22-3|493 Def. §22.3]] (partition).
 
 > [!example] Example §22.1: Partitions and Non-Partitions
-> (a) By Proposition [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]], the set of congruence classes $\mathbb{Z}_m = \{[a]_m \mid a \in \mathbb{Z}\} = \{[a]_m \mid a \in R_m\}$ is a partition of $\mathbb{Z}$ into $m$ subsets.
+> (a) By Proposition [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]], the set of congruence classes $\mathbb{Z}_m = \{[a]_m \mid a \in \mathbb{Z}\} = \{[a]_m \mid a \in R_m\}$ is a partition of $\mathbb{Z}$ into $m$ subsets ([[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-2|Proposition §21.2]]). It is the model for everything in this section.
 >
 > (b) A set of people is partitioned by year of birth.
 >
@@ -53,7 +53,7 @@ Partitions are usually described by a property of the elements — the remainder
 > Let $f : X \to Y$ be a surjection. Then
 >
 > $$
-> \Pi = \{ f^{-1}(\{y\}) \mid y \in Y \}, \qquad f^{-1}(\{y\}) = \{x \in X \mid f(x) = y\},
+> \Pi = \{ \overleftarrow{f}(\{y\}) \mid y \in Y \}, \qquad \overleftarrow{f}(\{y\}) = \{x \in X \mid f(x) = y\},
 > $$
 >
 > is a partition of $X$: $X$ is partitioned according to the value of $f$.
@@ -63,18 +63,18 @@ Partitions are usually described by a property of the elements — the remainder
 ^prop-22-1
 
 > [!proof]+ Proof
-> *Non-empty:* given $y \in Y$, since $f$ is surjective there is $x$ with $f(x) = y$, so $x \in f^{-1}(\{y\})$.
+> *Non-empty:* given $y \in Y$, since $f$ is surjective there is $x$ with $f(x) = y$, so $x \in \overleftarrow{f}(\{y\})$.
 >
-> *Disjoint:* if $f^{-1}(\{y_1\}) \neq f^{-1}(\{y_2\})$ then $y_1 \neq y_2$; and an $x$ in both would have $f(x) = y_1$ and $f(x) = y_2$, impossible since $f$ has a single value at $x$.
+> *Disjoint:* if $\overleftarrow{f}(\{y_1\}) \neq \overleftarrow{f}(\{y_2\})$ then $y_1 \neq y_2$; and an $x$ in both would have $f(x) = y_1$ and $f(x) = y_2$, impossible since $f$ has a single value at $x$.
 >
-> *Cover:* each $x \in X$ lies in $f^{-1}(\{f(x)\})$, because $f$ has a value at every point of $X$.
+> *Cover:* each $x \in X$ lies in $\overleftarrow{f}(\{f(x)\})$, because $f$ has a value at every point of $X$.
 
 ^pf-22-1
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]], [[§9 Injections, Surjections and Bijections|§9]] (surjection; inverse image, Eccles Def. 9.3.1)
+*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-4|Def. §9.4]]
 
 > [!example] Example §22.2: Partitions Given by Functions
-> (a) The partition of $\mathbb{Z}$ into congruence classes modulo $m$ comes from the remainder map $r_m : \mathbb{Z} \to R_m$: its parts are $r_m^{-1}(\{r\}) = [r]_m$ (the box model of [[§21 Congruence Classes and the Arithmetic of Remainders#^rem-21-1|§21]]).
+> (a) The partition of $\mathbb{Z}$ into congruence classes modulo $m$ comes from the remainder map $r_m : \mathbb{Z} \to R_m$: its parts are $\overleftarrow{r_m}(\{r\}) = [r]_m$ (the box model of the remark after [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|Proposition §21.1]]).
 >
 > (b) The partition $\{\mathbb{Z}^+, \{0\}, \mathbb{Z}^-\}$ of Example §22.1(d) comes from the sign function
 >
@@ -175,7 +175,7 @@ Each property is a universal statement, so to show that one *fails* a single cou
 
 ## 22.3 Equivalence Relations and Partitions
 
-In [[§21 Congruence Classes and the Arithmetic of Remainders|§21]] the partition $\mathbb{Z}_m$ was built from the relation of congruence. The construction works for every equivalence relation.
+In [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|Def. §21.2]] the partition $\mathbb{Z}_m$ was built from the relation of congruence. The construction works for every equivalence relation.
 
 > [!definition] Definition §22.4: Equivalence Class; Quotient Set
 > Let $\sim$ be an equivalence relation on a non-empty set $X$. For $a \in X$, the **equivalence class of $a$** is the set of elements equivalent to $a$:
@@ -190,7 +190,7 @@ In [[§21 Congruence Classes and the Arithmetic of Remainders|§21]] the partiti
 > X/{\sim} = \{ [a] \mid a \in X \} \subseteq \mathcal{P}(X) .
 > $$
 >
-> For congruence modulo $m$ on $\mathbb{Z}$ the classes are the congruence classes and $\mathbb{Z}/{\equiv} = \mathbb{Z}_m$.
+> The main example: for congruence modulo $m$ on $\mathbb{Z}$ the equivalence classes are the congruence classes $[a] = [a]_m$ ([[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-1|Def. §21.1]]) and $\mathbb{Z}/{\equiv} = \mathbb{Z}_m$ ([[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|Def. §21.2]]).
 >
 > *Eccles: Definition 22.3.1*
 
@@ -219,7 +219,7 @@ The next theorem generalizes Proposition [[§21 Congruence Classes and the Arith
 
 ^pf-22-3
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§4 Proof by Contradiction|§4]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]]
 
 > [!remark]- Connections
 > - [[§22 Equivalence Relations and Partitions#^prop-22-1|493 Prop. §22.1]] (equivalence classes partition a set), applied to cosets in [[Cosets Partition a Group]].
@@ -272,7 +272,7 @@ A surjection $f : X \to Y$ partitions $X$ (Proposition [[§22 Partitions and Equ
 
 ^pf-22-5
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§9 Injections, Surjections and Bijections|§9]] (injection, surjection, bijection)
+*Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]]
 
 > [!remark]- Connections
 > - The group version: [[§38 The First Isomorphism Theorem#^thm-38-1|493 Thm. §38.1]] (first isomorphism theorem); defining maps on $\mathbb{Z}_n$ by representatives: [[§7 The Group ℤ∕nℤ#^lem-7-2|493 Lemma §7.2]]; the topological version: [[Universal Property of Quotient Maps]].
@@ -528,7 +528,7 @@ Identifying each integer $a$ with $\iota(a) = a/1$, we get $\mathbb{Z} \subseteq
 
 ## 22.5 Construction of the Integers
 
-The same idea builds $\mathbb{Z}$ from $\mathbb{N} = \{0, 1, 2, \ldots\}$: a pair $(a, b)$ of natural numbers stands for the difference $a - b$, which need not exist in $\mathbb{N}$, and $(a, b)$, $(c, d)$ should represent the same integer when $a - b = c - d$, i.e. $a + d = b + c$ — a condition stated without subtraction. We use only the following properties of $\mathbb{N}$ (all consequences of Peano's axioms, [[§9 Injections, Surjections and Bijections|§9]]): $+$ and $\cdot$ are commutative and associative, $\cdot$ distributes over $+$, $0$ and $1$ are identities, and
+The same idea builds $\mathbb{Z}$ from $\mathbb{N} = \{0, 1, 2, \ldots\}$: a pair $(a, b)$ of natural numbers stands for the difference $a - b$, which need not exist in $\mathbb{N}$, and $(a, b)$, $(c, d)$ should represent the same integer when $a - b = c - d$, i.e. $a + d = b + c$ — a condition stated without subtraction. We use only the following properties of $\mathbb{N}$ (all consequences of Peano's axioms, [[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]]): $+$ and $\cdot$ are commutative and associative, $\cdot$ distributes over $+$, $0$ and $1$ are identities, and
 - *cancellation:* $a + c = b + c \Rightarrow a = b$;
 - *no zero divisors:* $ab = 0 \Rightarrow a = 0$ or $b = 0$;
 - *no negatives:* $a + b = 0 \Rightarrow a = b = 0$;

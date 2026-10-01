@@ -113,7 +113,7 @@ So as far as $+$, $-$, $\times$ are concerned, congruent integers are interchang
 
 ^pf-19-3
 
-*Uses:* [[§19 Congruence of Integers#^prop-19-1|§19.1]], [[§19 Congruence of Integers#^prop-19-2|§19.2]], [[§5 The Induction Principle|§5]] (induction)
+*Uses:* [[§19 Congruence of Integers#^prop-19-1|§19.1]], [[§19 Congruence of Integers#^prop-19-2|§19.2]], [[§5 The Induction Principle#^thm-5-3|§5.3]] (induction from $n = 0$)
 
 > [!example] Example §19.1: Chains of Congruences
 > (a) Modulo $5$: $97 \equiv 2$ (as $95 = 5 \times 19$) and $144 \equiv 4$ (as $140 = 5 \times 28$), so
@@ -122,7 +122,7 @@ So as far as $+$, $-$, $\times$ are concerned, congruent integers are interchang
 > 97^3 + 144^2 \equiv 2^3 + 4^2 = 8 + 16 \equiv 3 + 1 = 4 \pmod 5 .
 > $$
 >
-> (b) For all $n \geq 1$, $\ 4^n + 5 \equiv 1^n + 2 = 3 \equiv 0 \pmod 3$, so $3$ divides $4^n + 5$ — a one-line replacement for the induction proof of Problems I, Q12 ([[§5 The Induction Principle|§5]]).
+> (b) For all $n \geq 1$, $\ 4^n + 5 \equiv 1^n + 2 = 3 \equiv 0 \pmod 3$, so $3$ divides $4^n + 5$ — a one-line replacement for the induction proof of Problems I, Q12 ([[§5 The Induction Principle#^ex-5-1|Example §5.1]](b)).
 >
 > (c) *Days of the week.* Counting days modulo $7$ is counting days of the week: two days fall on the same weekday exactly when their day numbers are congruent modulo $7$. 1 January 1998 was a Thursday. The day number of 6 September 1998 in that year is
 >
@@ -183,7 +183,7 @@ The introduction described congruence as "same remainder on division by $m$". We
 ^def-19-3
 
 > [!remark] Remark: What "Well-Defined" Means
-> Definition §19.3 does not give a formula for $r_m(a)$; it gives a *condition* that the value must satisfy. Such a conditional definition defines a function only if, for each $a$ in the domain, the condition picks out **exactly one** element of the codomain: at least one (existence) and at most one (uniqueness). That is what "$r_m$ is well defined" asserts, and it is precisely the content of Proposition §19.4. The same check, in a different guise, recurs whenever a function is defined on congruence classes ([[§21 Congruence Classes and the Arithmetic of Remainders|§21]]) or on equivalence classes ([[§22 Partitions and Equivalence Relations|§22]]).
+> Definition §19.3 does not give a formula for $r_m(a)$; it gives a *condition* that the value must satisfy. Such a conditional definition defines a function only if, for each $a$ in the domain, the condition picks out **exactly one** element of the codomain: at least one (existence) and at most one (uniqueness). That is what "$r_m$ is well defined" asserts, and it is precisely the content of Proposition §19.4. The same check, in a different guise, recurs whenever a function is defined on congruence classes ([[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|Proposition §21.3]]) or on equivalence classes ([[§22 Partitions and Equivalence Relations#^prop-22-5|Proposition §22.5]]).
 
 ^rem-19-1
 

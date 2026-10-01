@@ -271,14 +271,14 @@ until "not" is absorbed into the simplest statements ($\neg(x > 2)$ becomes $x \
 
 A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid P(n)\}$ is all of $\Z^+$. So induction ([[§5 The Induction Principle|§5]]) is a method for proving that certain subsets of $\Z^+$ are the whole set.
 
-> [!theorem] Axiom §7.4: The Induction Principle, Set Form
+> [!definition] Definition §7.4: The Induction Principle, Set Form
 > Let $A$ be a subset of $\Z^+$. Then $A = \Z^+$ if
 > 1. $1 \in A$, and
 > 2. $\forall k \in \Z^+,\ (k \in A \Rightarrow k + 1 \in A)$.
 >
 > *Eccles: Axiom 7.5.1*
 
-^ax-7-4
+^def-7-4
 
 > [!proof]- Proof (equivalence with the induction principle of §5)
 > The induction principle (Eccles Axiom 5.1.1) says: if $P(n)$ is a statement about a general positive integer $n$, $P(1)$ is true, and $P(k) \Rightarrow P(k + 1)$ for all $k \in \Z^+$, then $P(n)$ is true for all $n \in \Z^+$.
@@ -287,7 +287,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 >
 > *The set form implies Axiom 5.1.1:* given $P(n)$ with $P(1)$ true and $P(k) \Rightarrow P(k + 1)$, put $A = \{n \in \Z^+ \mid P(n)\}$. Then $1 \in A$ and $k \in A \Rightarrow k + 1 \in A$, so $A = \Z^+$, which says $\forall n \in \Z^+,\ P(n)$.
 
-^pf-7-4
+^pf-def-7-4
 
 *Uses:* [[§5 The Induction Principle|§5]], [[§6 The Language of Set Theory#^prop-6-1|§6.1]], [[§7 Quantifiers#^def-7-1|Def. §7.1]]
 
@@ -313,7 +313,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 
 ^rem-7-4
 
-> [!theorem] Theorem §7.5: Interchanging Quantifiers
+> [!theorem] Theorem §7.4: Interchanging Quantifiers
 > Let $P(a, b)$ be a predicate with $a \in A$, $b \in B$.
 > 1. $\forall a \in A,\ \forall b \in B,\ P(a, b) \iff \forall b \in B,\ \forall a \in A,\ P(a, b)$.
 > 2. $\exists a \in A,\ \exists b \in B,\ P(a, b) \iff \exists b \in B,\ \exists a \in A,\ P(a, b)$.
@@ -323,7 +323,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 >
 > *Source: MAT 200 lecture (syllabus week 2: "interchanging quantifiers"); MAT 200 Practice Midterm 1, Problem 6*
 
-^thm-7-5
+^thm-7-4
 
 > [!proof]+ Proof
 > (1) Both sides say that $P(a, b)$ is true for every choice of $a \in A$ and $b \in B$.
@@ -334,7 +334,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 >
 > For the converse, take $A = B = \Z^+$ and $P(a, b)$: $b < a$. Then $\forall b\ \exists a,\ b < a$ is true ($a = b + 1$), but $\exists a\ \forall b,\ b < a$ is false (for each $a$, $b = a$ fails); this is [[§7 Quantifiers#^ex-7-8|Example §7.8]] (a), (b).
 
-^pf-7-5
+^pf-7-4
 
 *Uses:* [[§7 Quantifiers#^def-7-1|Def. §7.1]], [[§7 Quantifiers#^def-7-2|Def. §7.2]], [[§7 Quantifiers#^ex-7-8|Ex. §7.8]]
 
@@ -367,7 +367,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 > | (v) $\forall n \in \Z^+,\ \exists m \in \Z^+,\ m \le n$ | true | given $n$, take $m = n$ (or $m = 1$) |
 > | (vi) $\exists n \in \Z^+,\ \forall m \in \Z^+,\ m \le n$ | false | for each $n$, $m = n + 1$ gives $m \not\le n$ |
 >
-> In (vi) the useful denial $\forall n \in \Z^+,\ \exists m \in \Z^+,\ m > n$ is proved, as in (iii), by the choice $m = n + 1$. Note that (iv) is true and therefore so is (v), by [[§7 Quantifiers#^thm-7-5|Theorem §7.5]](3) with the roles of the variables matched; but (iii) true does not force (vi).
+> In (vi) the useful denial $\forall n \in \Z^+,\ \exists m \in \Z^+,\ m > n$ is proved, as in (iii), by the choice $m = n + 1$. Note that (iv) is true and therefore so is (v), by [[§7 Quantifiers#^thm-7-4|§7.4]](3) with the roles of the variables matched; but (iii) true does not force (vi).
 >
 > *Source: HW3*
 > *Eccles: Exercise 7.2*
@@ -405,7 +405,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 > | (e) $\exists y \in [1,3],\ \forall x \in [0,2],\ y < x$ | false | denial $\forall y\, \exists x,\ y \ge x$: take $x = 0$ |
 > | (f) $\forall x \in [0,2],\ \exists y \in [1,3],\ y < x$ | false | denial $\exists x\, \forall y,\ y \ge x$: $x = 0$ |
 >
-> Geometrically, the truth set $\{(x, y) \in [0,2] \times [1,3] \mid y < x\}$ is the small triangle below the diagonal in the corner near $(2, 1)$. Statement (a) says it is non-empty, (b) that it is the whole rectangle, (c) that it contains a whole vertical segment $\{x\} \times [1, 3]$, (d) that every horizontal segment $[0,2] \times \{y\}$ meets it, (e) that it contains a whole horizontal segment, (f) that every vertical segment meets it. As [[§7 Quantifiers#^thm-7-5|Theorem §7.5]](3) predicts, (c) $\Rightarrow$ (d) and (e) $\Rightarrow$ (f); here all four are false.
+> Geometrically, the truth set $\{(x, y) \in [0,2] \times [1,3] \mid y < x\}$ is the small triangle below the diagonal in the corner near $(2, 1)$. Statement (a) says it is non-empty, (b) that it is the whole rectangle, (c) that it contains a whole vertical segment $\{x\} \times [1, 3]$, (d) that every horizontal segment $[0,2] \times \{y\}$ meets it, (e) that it contains a whole horizontal segment, (f) that every vertical segment meets it. As [[§7 Quantifiers#^thm-7-4|§7.4]](3) predicts, (c) $\Rightarrow$ (d) and (e) $\Rightarrow$ (f); here all four are false.
 >
 > *Source: MAT 200 Practice Midterm 1, Problem 6*
 
@@ -417,7 +417,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 > | statement | value | reason |
 > |---|---|---|
 > | (1) $\exists x\, \exists y$ | true | $x = -1$, $y = 2$: $1 - 2 + 1 = 0$ |
-> | (2) $\exists y\, \exists x$ | true | equivalent to (1) ([[§7 Quantifiers#^thm-7-5\|Thm. §7.5]](2)) |
+> | (2) $\exists y\, \exists x$ | true | equivalent to (1) ([[§7 Quantifiers#^thm-7-4\|§7.4]](2)) |
 > | (3) $\forall x\, \forall y$ | false | $x = y = 0$ gives $1 \ne 0$ |
 > | (4) $\forall y\, \forall x$ | false | equivalent to (3) |
 > | (5) $\exists x\, \forall y$ | false | denial $\forall x\, \exists y,\ x^2 + xy + 1 \ne 0$: take $y = -x$, giving $1 \ne 0$ |
@@ -425,7 +425,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 > | (7) $\exists y\, \forall x$ | false | denial $\forall y\, \exists x$: take $x = 0$ |
 > | (8) $\forall y\, \exists x$ | false | counterexample $y = 0$: $x^2 + 1 \ne 0$ for every $x$ (any $|y| < 2$ works) |
 >
-> Since (8) is false, so is (5), by [[§7 Quantifiers#^thm-7-5|Theorem §7.5]](3); likewise (6) false forces (7) false.
+> Since (8) is false, so is (5), by [[§7 Quantifiers#^thm-7-4|§7.4]](3); likewise (6) false forces (7) false.
 >
 > *Source: MAT 200 Practice Midterm 1, Problem 7*
 
@@ -456,7 +456,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 
 ## 7.7 The Cartesian Product of Two Sets
 
-> [!definition] Definition §7.4: Cartesian Product; Ordered Pair
+> [!definition] Definition §7.5: Cartesian Product; Ordered Pair
 > Given sets $X$ and $Y$, the **Cartesian product** $X \times Y$ is the set of all **ordered pairs** $(x, y)$ with $x \in X$ and $y \in Y$:
 >
 > $$
@@ -467,7 +467,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 >
 > *Eccles: Definition 7.7.1*
 
-^def-7-4
+^def-7-5
 
 > [!example] Example §7.14: Products
 > - For $X = \{a, b, c\}$ and $Y = \{a, b\}$: $X \times Y = \{(a,a), (a,b), (b,a), (b,b), (c,a), (c,b)\}$ and $Y \times X = \{(a,a), (a,b), (a,c), (b,a), (b,b), (b,c)\}$. These are different: $(c, a) \in X \times Y$ but $(c, a) \notin Y \times X$.
@@ -511,7 +511,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 ![[m250-7-2.svg]]
 *The truth set of $2x + 3y > 6 \Rightarrow x \le y^2$ (shaded) is everything except the white region, which lies inside the parabola $x = y^2$ (blue) and above the line $2x + 3y = 6$ (dashed). Its lower-left edge (red, a piece of the line) belongs to the truth set, since there $2x + 3y = 6$ is not $> 6$.*
 
-> [!theorem] Proposition §7.6: Products, Unions and Intersections
+> [!theorem] Proposition §7.5: Products, Unions and Intersections
 > For all sets $A$, $B$, $C$, $D$:
 > 1. $A \times (B \cup C) = (A \times B) \cup (A \times C)$;
 > 2. $A \times (B \cap C) = (A \times B) \cap (A \times C)$;
@@ -520,7 +520,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 >
 > *Eccles: Proposition 7.7.4*
 
-^prop-7-6
+^prop-7-5
 
 > [!proof]+ Proof
 > Each part is proved from the definitions by following an element $(x, y)$; for the equalities both inclusions can be done at once with a chain of equivalences.
@@ -533,9 +533,9 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 >
 > (4) Let $(x, y) \in (A \times B) \cup (C \times D)$. If $(x, y) \in A \times B$, then $x \in A \subseteq A \cup C$ and $y \in B \subseteq B \cup D$, so $(x, y) \in (A \cup C) \times (B \cup D)$. If $(x, y) \in C \times D$, then likewise $x \in C \subseteq A \cup C$ and $y \in D \subseteq B \cup D$.
 
-^pf-7-6
+^pf-7-5
 
-*Uses:* [[§7 Quantifiers#^def-7-4|Def. §7.4]], [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^thm-6-3|§6.3]]
+*Uses:* [[§7 Quantifiers#^def-7-5|Def. §7.5]], [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^thm-6-3|§6.3]]
 
 > [!example] Example §7.17: The Inclusion in Part 4 Can Be Strict
 > **Claim:** $(A \times B) \cup (C \times D) \subseteq (A \cup C) \times (B \cup D)$, and the two sets need not be equal.
@@ -546,7 +546,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 > (x \in A \wedge y \in B) \vee (x \in C \wedge y \in D) \ \Rightarrow\ (x \in A \vee x \in C) \wedge (y \in B \vee y \in D).
 > $$
 >
-> Distributing, the left side is equivalent to $(x \in A \vee x \in C) \wedge (x \in A \vee y \in D) \wedge (y \in B \vee x \in C) \wedge (y \in B \vee y \in D)$, a conjunction of four statements whose first and last are the right side; and $P \wedge Q \Rightarrow P$. (This is a second proof of [[§7 Quantifiers#^prop-7-6|Proposition §7.6]](4).)
+> Distributing, the left side is equivalent to $(x \in A \vee x \in C) \wedge (x \in A \vee y \in D) \wedge (y \in B \vee x \in C) \wedge (y \in B \vee y \in D)$, a conjunction of four statements whose first and last are the right side; and $P \wedge Q \Rightarrow P$. (This is a second proof of [[§7 Quantifiers#^prop-7-5|§7.5]](4).)
 >
 > **Counterexample to equality:** take $A = B = \{1\}$ and $C = D = \{2\}$. Then $(A \times B) \cup (C \times D) = \{(1,1), (2,2)\}$, while $(A \cup C) \times (B \cup D) = \{1, 2\}^2$ also contains $(1, 2)$ and $(2, 1)$. In the plane: two squares on the diagonal versus the large square containing them and the two off-diagonal squares.
 >

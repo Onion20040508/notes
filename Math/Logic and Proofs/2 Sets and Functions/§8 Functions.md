@@ -345,7 +345,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 
 ^pf-8-2
 
-*Uses:* [[§8 Functions#^def-8-10|Def. §8.10]], [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-1|Def. §8.1]], [[§7 Quantifiers#^def-7-4|Def. §7.4]]
+*Uses:* [[§8 Functions#^def-8-10|Def. §8.10]], [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-1|Def. §8.1]], [[§7 Quantifiers#^def-7-5|Def. §7.5]]
 
 > [!remark] Remark: A Function Is Its Graph
 > Definition §8.1 rests on the undefined word "assignment". In more advanced mathematics a function $X \to Y$ is *defined* to be a subset of $X \times Y$ in which each element of $X$ occurs as the first coordinate of exactly one element; by Proposition §8.2 this captures exactly the same objects, and it reduces functions to sets.

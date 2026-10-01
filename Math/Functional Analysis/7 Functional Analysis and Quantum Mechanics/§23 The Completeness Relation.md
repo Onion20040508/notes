@@ -130,3 +130,6 @@ As for functionals (Lemma [[§22 Bras, Kets, and the Riesz Map#^lem-22-1|§22.1]
 > The Fourier basis $e_n(\theta) = e^{in\theta}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, of $L^2[0,2\pi]$ (Theorem [[§20 Orthonormal Sets and Bases#^thm-20-11|§20.11]]) consists of the momentum eigenstates of a particle on a circle: $-i\,\frac{d}{d\theta} e_n = n\,e_n$, and $e_n$ is an eigenfunction of the free Hamiltonian $-\frac12 \frac{d^2}{d\theta^2}$ with energy $n^2/2$. Its completeness relation $\sum_{n \in \mathbb{Z}} |e_n\rangle\langle e_n| = \mathbf{1}$ is the $L^2$ convergence of Fourier series, and Corollary [[§23 The Completeness Relation#^cor-23-4|§23.4]] is Parseval's identity $\int_0^{2\pi} f\,\bar{g} = \sum_n c_n(f)\,\overline{c_n(g)}$. The spectrum is discrete because the configuration space is compact; compare [[§24 Position Eigenstates and Continuous Resolutions|§24]].
 
 ^ex-23-2
+
+> [!remark]- Connections
+> - Used in Quantum Mechanics: the ring's momentum operator and its spectrum — [[§B2.2 Observables and Hermitian Operators#^ex-b2-2-1|QM Example §B2.2.1]]; a molecule rotating in a plane — [[§B5.2 Orbital Angular Momentum and Spherical Harmonics#^ex-b5-2-2|QM Example §B5.2.2]].

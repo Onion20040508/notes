@@ -154,6 +154,7 @@ Dividing both sides by $r^2\sin\theta \, dr \, d\theta \, d\psi$:
 > [!remark]- Connections
 > - The volume factor $r^2\sin\theta$ is the Jacobian of [[§15 Multivariable Integration#^ex-15-6|Spherical Coordinates in ℝ³]]; the scale factors are the square roots of the diagonal of the Gram matrix ([[§18 Surface Integrals#^def-18-4|Def. §18.4]]) of the coordinate map.
 > - The 2D radial analogue: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|Fundamental Solution of the 2D Laplacian]].
+> - Used in Quantum Mechanics: the angular part of the Laplacian is $-L^2/\hbar^2r^2$ — [[§B5.2 Orbital Angular Momentum and Spherical Harmonics#^thm-b5-2-6|QM Theorem §B5.2.6]]; the radial solutions of Remark: Verification: Radial Functions, with $1/r$ excluded at the origin, fix the behaviour of the radial function there — [[§B5.3 Central Potentials and the Radial Equation#^thm-b5-3-2|QM Theorem §B5.3.2]].
 
 > [!remark] Remark: Reading the Formula
 > Each term has the structure $\frac{1}{\text{volume factor}} \cdot \frac{\partial}{\partial q_i}\!\left(\frac{\text{area of face}_i}{\text{edge length}_i} \cdot v_{q_i}\right)$:

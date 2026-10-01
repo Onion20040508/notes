@@ -349,7 +349,7 @@ The successor of an integer was used in [[§5 The Induction Principle|§5]]; Ded
 
 ^def-9-5
 
-> [!theorem] Axioms §9.4: Peano's Axioms
+> [!definition] Definition §9.6: Peano's Axioms
 > The set of positive integers $\Z^+$ is a set with a function $s : \Z^+ \to \Z^+$ and an element $1 \in \Z^+$ such that
 > 1. $s$ is an injection;
 > 2. $1$ is not in the image of $s$;
@@ -358,10 +358,10 @@ The successor of an integer was used in [[§5 The Induction Principle|§5]]; Ded
 > *Eccles: Axioms 9.4.2*
 > *Source: MAT 200 lecture (syllabus week 9)*
 
-^ax-9-4
+^def-9-6
 
 > [!remark] Remark: What the Axioms Say
-> Axiom 3 is the induction principle in the set form of [[§7 Quantifiers#^ax-7-4|Axiom §7.4]]. Axiom 1 says distinct numbers have distinct successors, and axiom 2 that counting has a starting point; together with 3 they say that $1, s(1), s(s(1)), \ldots$ runs through $\Z^+$ without repetition. These are axioms *for* $\Z^+$ in the sense that any set $X$ with a function $s : X \to X$ and an element $1 \in X$ satisfying them is in bijection with $\Z^+$ by a bijection matching the two elements $1$ and the two successor functions (Dedekind; proved by induction, not proved here). Addition and multiplication can then be *defined* from $s$.
+> Axiom 3 is the induction principle in the set form of [[§7 Quantifiers#^def-7-4|Def. §7.4]]. Axiom 1 says distinct numbers have distinct successors, and axiom 2 that counting has a starting point; together with 3 they say that $1, s(1), s(s(1)), \ldots$ runs through $\Z^+$ without repetition. These are axioms *for* $\Z^+$ in the sense that any set $X$ with a function $s : X \to X$ and an element $1 \in X$ satisfying them is in bijection with $\Z^+$ by a bijection matching the two elements $1$ and the two successor functions (Dedekind; proved by induction, not proved here). Addition and multiplication can then be *defined* from $s$.
 >
 > *Eccles: §9.4*
 
@@ -370,7 +370,7 @@ The successor of an integer was used in [[§5 The Induction Principle|§5]]; Ded
 > [!remark]- Connections
 > - Developed further in: [[§1 The Set ℕ of Natural Numbers#^def-1-1|451 Def. §1.1]] (Peano axioms for $\N = \{1, 2, \ldots\}$, the same three axioms with "$s$ is a function into $\N$" split off), from which 451 derives induction in [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 Thm. §1.1]].
 
-> [!definition] Definition §9.6: Addition and Multiplication From the Successor
+> [!definition] Definition §9.7: Addition and Multiplication From the Successor
 > The **sum** $m + n$ of positive integers is defined by induction on $n$:
 > 1. $m + 1 = s(m)$;
 > 2. $m + s(k) = s(m + k)$ for $k \in \Z^+$.
@@ -381,19 +381,19 @@ The successor of an integer was used in [[§5 The Induction Principle|§5]]; Ded
 >
 > *Eccles: Definition 9.4.3 (printed "$m \times (k)$" in (2); it is $m \times s(k)$)*
 
-^def-9-6
+^def-9-7
 
 > [!example] Example §9.12: Every Positive Integer Other Than 1 Is a Successor
 > **Claim:** if $n \in \Z^+$ and $n \ne 1$, then $n = s(a)$ for some $a \in \Z^+$.
 >
-> Let $A = \operatorname{Im}(s) \cup \{1\} \subseteq \Z^+$. Then $1 \in A$; and if $n \in A$ then $s(n) \in \operatorname{Im}(s) \subseteq A$. By [[§9 Injections, Surjections and Bijections#^ax-9-4|Axioms §9.4]](3), $A = \Z^+$. So every $n \ne 1$ lies in $\operatorname{Im}(s)$. (By axiom 1 this $a$ is unique, and by axiom 2 the number $1$ itself is not a successor: every positive integer except $1$ has exactly one predecessor.)
+> Let $A = \operatorname{Im}(s) \cup \{1\} \subseteq \Z^+$. Then $1 \in A$; and if $n \in A$ then $s(n) \in \operatorname{Im}(s) \subseteq A$. By [[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]](3), $A = \Z^+$. So every $n \ne 1$ lies in $\operatorname{Im}(s)$. (By axiom 1 this $a$ is unique, and by axiom 2 the number $1$ itself is not a successor: every positive integer except $1$ has exactly one predecessor.)
 >
 > *Eccles: Problems II, Question 22*
 
 ^ex-9-12
 
 > [!example] Example §9.13: Addition Is Associative and Commutative
-> From [[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]] and [[§9 Injections, Surjections and Bijections#^ax-9-4|Axioms §9.4]](3) (in the form of induction):
+> From [[§9 Injections, Surjections and Bijections#^def-9-7|Def. §9.7]] and [[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]](3) (in the form of induction):
 >
 > **(i) Associativity:** $(a + b) + c = a + (b + c)$ for all $a, b, c \in \Z^+$. Fix $a, b$ and induct on $c$. For $c = 1$: $(a + b) + 1 = s(a + b) = a + s(b) = a + (b + 1)$. If it holds for $c = k$, then
 >

@@ -127,3 +127,6 @@ The object that does exist is the family of projections “$\int_B |x\rangle\lan
 > If $\{e_n\}$ is an orthonormal basis of $L^2(\mathbb{R}^n)$, physics writes $\sum_n e_n(x)\,\overline{e_n(x')} = \delta(x - x')$. Taken literally the left side need not converge anywhere. Integrated against $\varphi(x)$ and $\overline{\chi(x')}$ with $\varphi, \chi \in L^2$, it becomes $\sum_n (\varphi, e_n)(e_n, \chi) = (\varphi, \chi)$, which is Corollary [[§23 The Completeness Relation#^cor-23-4|§23.4]]. So the distributional identity is exactly “inserting a complete set of states”, and countably many $L^2$ functions can “sum to a delta” because the delta is not in $L^2$.
 
 ^rem-24-4
+
+> [!remark]- Connections
+> - Used in Quantum Mechanics: the eigenfunctions of momentum and of position, with Dirac orthonormality, and the continuous resolution of the identity — [[§B2.2 Observables and Hermitian Operators#^thm-b2-2-6|QM Theorem §B2.2.6]], [[§B2.2 Observables and Hermitian Operators#^thm-b2-2-7|QM Theorem §B2.2.7]].

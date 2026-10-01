@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 21 · MAT 200 lecture (syllabus weeks 11–12: congruence classes, operations on congruence classes). No homework survives for this chapter.*
 
-Instead of saying that integers are *congruent*, we can say that their *congruence classes are equal*: the set of all even integers replaces "an even integer". This is a typical step of abstraction, and it pays: there are only $m$ classes, so counting arguments such as the pigeonhole principle ([[§11 Properties of Finite Sets|§11]]) apply, and the classes can be added and multiplied, giving an *arithmetic of remainders* (Dedekind, 1857). As an application, Theorem [[§20 Linear Congruences#^thm-20-3|§20.3]] gets a second proof that makes it look almost obvious. Throughout, $m$ is a fixed positive integer.
+Instead of saying that integers are *congruent*, we can say that their *congruence classes are equal*: the set of all even integers replaces "an even integer". This is a typical step of abstraction, and it pays: there are only $m$ classes, so counting arguments such as the pigeonhole principle ([[§11 Properties of Finite Sets#^thm-11-2|Theorem §11.2]]) apply, and the classes can be added and multiplied, giving an *arithmetic of remainders* (Dedekind, 1857). As an application, Theorem [[§20 Linear Congruences#^thm-20-3|§20.3]] gets a second proof that makes it look almost obvious. Throughout, $m$ is a fixed positive integer.
 
 ## 21.1 Congruence Classes
 
@@ -82,10 +82,10 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 > - Residue classes in group theory: [[§6 Divisibility and Congruence#^def-6-4|493 Def. §6.4]]; the general statement for any equivalence relation is [[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]] here, and [[§22 Equivalence Relations and Partitions#^prop-22-1|493 Prop. §22.1]].
 
 > [!remark] Remark: The Box Model of the Remainder Map
-> Picture the remainder map $r_m : \mathbb{Z} \to R_m$ ([[§19 Congruence of Integers#^def-19-3|Def. §19.3]]) as $m$ boxes labelled $0, 1, \ldots, m - 1$, each integer dropped into the box of its remainder (the box model of a function, [[§8 Functions#^ex-8-1|Example §8.1]]). The contents of box $r$ form
+> Picture the remainder map $r_m : \mathbb{Z} \to R_m$ ([[§19 Congruence of Integers#^def-19-3|Def. §19.3]]) as $m$ boxes labelled $0, 1, \ldots, m - 1$, each integer dropped into the box of its remainder (the box model of a function, [[§8 Functions#^ex-8-1|Example §8.1]]). The contents of box $r$ form the pre-image ([[§9 Injections, Surjections and Bijections#^def-9-4|Def. §9.4]])
 >
 > $$
-> r_m^{-1}(\{r\}) = \{x \in \mathbb{Z} \mid r_m(x) = r\} = [r]_m ,
+> \overleftarrow{r_m}(\{r\}) = \{x \in \mathbb{Z} \mid r_m(x) = r\} = [r]_m ,
 > $$
 >
 > by Proposition [[§19 Congruence of Integers#^prop-19-5|§19.5]] (as $r_m(r) = r$). So the boxes are the classes, the columns of the table in Example §21.1(b) for $m = 6$, or the columns of a calendar for $m = 7$. For any integer $a$, $\ [a]_m = [r]_m$ iff $r_m(a) = r$; in particular $[a]_m = [r_m(a)]_m$.
@@ -107,6 +107,8 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 
 ^def-21-2
 
+By Proposition §21.1 the classes in $\mathbb{Z}_m$ are non-empty, pairwise disjoint and cover $\mathbb{Z}$: $\mathbb{Z}_m$ is a *partition* of $\mathbb{Z}$. This is the model example of [[§22 Partitions and Equivalence Relations|§22]], which defines partitions in general ([[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]), proves Proposition §21.1 for any equivalence relation ([[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]]), and recovers $\mathbb{Z}_m$ as the quotient set $\mathbb{Z}/{\equiv}$ ([[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]]).
+
 > [!theorem] Proposition §21.2: $\mathbb{Z}_m$ Has $m$ Elements
 > The set $\mathbb{Z}_m$ is finite of cardinality $m$; its elements are $[r]_m$ for the integers $0 \leq r < m$:
 >
@@ -119,7 +121,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 ^prop-21-2
 
 > [!proof]+ Proof
-> Count the boxes from left to right. Let $\mathbb{N}_m = \{1, 2, \ldots, m\}$ and define
+> Count the boxes from left to right. With the standard set $\mathbb{N}_m = \{1, 2, \ldots, m\}$ of [[§10 Counting#^def-10-1|Def. §10.1]], define
 >
 > $$
 > f : \mathbb{N}_m \to \mathbb{Z}_m, \quad f(i) = [i - 1]_m, \qquad g : \mathbb{Z}_m \to \mathbb{N}_m, \quad g([a]_m) = r_m(a) + 1 .
@@ -135,7 +137,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 
 ^pf-21-2
 
-*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]], [[§19 Congruence of Integers#^prop-19-5|§19.5]], [[§19 Congruence of Integers#^def-19-3|Def. §19.3]], [[§10 Counting#^def-10-1|Def. §10.1]], [[§9 Injections, Surjections and Bijections|§9]] (inverse maps)
+*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]], [[§19 Congruence of Integers#^prop-19-5|§19.5]], [[§19 Congruence of Integers#^def-19-3|Def. §19.3]], [[§10 Counting#^def-10-1|Def. §10.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]] (inverse maps)
 
 > [!remark]- Connections
 > - The same set as a group: [[§7 The Group ℤ∕nℤ#^def-7-1|493 Def. §7.1]] ($\mathbb{Z}/n\mathbb{Z}$, of order $n$).
@@ -335,7 +337,7 @@ Arithmetic in $\mathbb{Z}_m$ (or $R_m$) differs from arithmetic in $\mathbb{Z}$ 
 
 *Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-2|§21.2]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|§21.3]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§11 Properties of Finite Sets#^thm-11-2|§11.2]]
 
-This proof is **non-constructive**: it guarantees a solution without saying how to find it (short of trying all $m$ classes), which is typical of counting arguments; the Euclidean algorithm proof of [[§20 Linear Congruences|§20]] computes it. On the other hand the counting proof shows *why* the result holds: multiplication by a class coprime to $m$ just permutes $\mathbb{Z}_m$. Different proofs of one theorem can illuminate different things.
+This proof is **non-constructive**: it guarantees a solution without saying how to find it (short of trying all $m$ classes), which is typical of counting arguments; the Euclidean-algorithm proof of [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]] computes it. On the other hand the counting proof shows *why* the result holds: multiplication by a class coprime to $m$ just permutes $\mathbb{Z}_m$. Different proofs of one theorem can illuminate different things.
 
 > [!example] Example §21.4: Rows That Contain Everything
 > In the multiplication table of $R_{10}$ ([[§21 Congruence Classes and the Arithmetic of Remainders#^ex-21-3|Example §21.3]]) the row of $7$ is $0, 7, 4, 1, 8, 5, 2, 9, 6, 3$: every remainder occurs exactly once. So we can always "divide by $7$": $7 \times_{10} x = b$, equivalently $[7]_{10} \times [x]_{10} = [b]_{10}$, has a unique solution for every $b \in R_{10}$. The rows with this property are those of $1, 3, 7, 9$, exactly the elements of $R_{10}$ coprime to $10$; and these are also exactly the rows containing $1$. The row of $5$, by contrast, is $0, 5, 0, 5, \ldots$, missing $1$ and repeating $0$.

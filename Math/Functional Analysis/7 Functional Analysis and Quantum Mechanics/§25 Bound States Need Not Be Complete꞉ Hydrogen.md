@@ -51,8 +51,11 @@ tags: [functional-analysis, math556, companion]
 
 > [!remark] Remark: To Be Continued
 > Planned additions as the course proceeds: bounded operators and their adjoints (observables and the dagger, $\langle y | A x \rangle = \langle A^\dagger y | x \rangle$); self-adjoint and unitary operators (observables and time evolution); compact self-adjoint operators and the spectral theorem (the rigorous version of “diagonalize the Hamiltonian”); and the precise relation between the spectrum of an operator and the measurement outcomes of the corresponding observable.
+>
+> The physicist's versions are in Quantum Mechanics, [[§B2.2 Observables and Hermitian Operators|QM §B2.2]]: Hermitian conjugates and Hermitian operators, [[§B2.2 Observables and Hermitian Operators#^def-b2-2-1|QM Def. §B2.2.1]], and how far Hermitian is from self-adjoint, [[§B2.2 Observables and Hermitian Operators#^cau-b2-2-1|QM Caution: Hermitian is not quite self-adjoint]]; completeness of the eigenfunctions of an observable and when it is a theorem, [[§B2.2 Observables and Hermitian Operators#^pr-b2-2-5|QM Principle §B2.2.5]], [[§B2.2 Observables and Hermitian Operators#^rem-b2-2-1|QM Remark: When completeness is a theorem, and what it requires]]; unitary time evolution, [[§B2.3 The Postulates and the Generalized Statistical Interpretation#^rem-b2-3-2|QM Remark: Time evolution is unitary]]; spectrum and measurement outcomes, [[§B2.3 The Postulates and the Generalized Statistical Interpretation#^pr-b2-3-3|QM Principle §B2.3.3]].
 
 ^rem-25-2
 
 > [!remark]- Connections
 > - The finite-dimensional versions in LADR: adjoint [[§22 Self-Adjoint and Normal Operators#^ladr-7-1|LADR 7.1]], self-adjoint [[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]], unitary [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-51|LADR 7.51]]; spectral theorem: [[Real spectral theorem]], [[Complex spectral theorem]].
+> - Used in Quantum Mechanics: the bound states of hydrogen (Theorem §25.1) — [[§B5.4 The Hydrogen Atom#^thm-b5-4-2|QM Theorem §B5.4.2]]; why they are not complete (Corollary §25.2) — [[§B5.4 The Hydrogen Atom#^rem-b5-4-6|QM Remark: The bound states are not complete]].

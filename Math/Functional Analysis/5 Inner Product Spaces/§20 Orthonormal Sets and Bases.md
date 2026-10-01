@@ -374,6 +374,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 > [!remark]- Connections
 > - The real trigonometric orthonormal list on $[-\pi, \pi]$ in finite dimensions: [[§20 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d).
 > - Used for the particle on a ring: [[§23 The Completeness Relation#^ex-23-2|Ex. §23.2]].
+> - Used in Quantum Mechanics: the completeness of the infinite-well states, proved from this basis — [[§B1.3 Stationary States and Expansion in Energy Eigenstates#^thm-b1-3-3|QM Theorem §B1.3.3]].
 
 > [!remark] Remark: Fourier Series
 > Read through Theorem [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]], this is the theory of Fourier series in $L^2$: every $f \in L^2[0,2\pi]$ is $f = \sum_{n \in \mathbb{Z}} c_n e_n$ with $c_n = (f, e_n) = \frac{1}{\sqrt{2\pi}} \int_0^{2\pi} f(x)\, e^{-inx}\, dx$, the series converging in the $L^2$ norm (not necessarily pointwise), and Parseval's equality reads $\int_0^{2\pi} |f|^2 = \sum_n |c_n|^2$.

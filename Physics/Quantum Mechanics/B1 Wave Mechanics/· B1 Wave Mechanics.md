@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· A8 Particle Physics and Cosmology]] · ↑ [[Quantum Mechanics]] · [[· B2 The Formalism of Quantum Mechanics]] →
 
 **Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (3), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (18), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (3)
-**Used by:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (9), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (8), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (4), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (4), [[· B6 Spin|B6 Spin]] (3), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (1)
+**Used by:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (9), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (8), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (4), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (4), [[· B6 Spin|B6 Spin]] (3), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (1)
 
 ## Sections
 - [[§B1.1 The Statistical Interpretation and Probability Current]] — Griffiths 1.1–1.4; Zwiebach L5–6; Classical notes §6–7, §12
