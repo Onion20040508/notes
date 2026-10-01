@@ -42,7 +42,7 @@ A function may have many extreme values or none. $\cos x$ takes its (local and a
 > [!example] Example §25.1: Local Versus Absolute Extrema
 > Find the local and absolute extreme values of $f(x) = 3x^4 - 16x^3 + 18x^2$, $-1 \le x \le 4$.
 >
-> The derivative is $f'(x) = 12x^3 - 48x^2 + 36x = 12x(x - 1)(x - 3)$. Its sign shows where $f$ falls and rises (this is the Increasing/Decreasing Test of [[§27 What Derivatives Tell Us About the Shape of a Graph|§27]]):
+> The derivative is $f'(x) = 12x^3 - 48x^2 + 36x = 12x(x - 1)(x - 3)$. Its sign shows where $f$ falls and rises (the Increasing/Decreasing Test, [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]]):
 >
 > | interval | $(-1, 0)$ | $(0, 1)$ | $(1, 3)$ | $(3, 4)$ |
 > |---|---|---|---|---|
@@ -110,7 +110,7 @@ At a local maximum or minimum of a smooth graph the tangent line looks horizonta
 > \frac{f(c + h) - f(c)}{h} \le 0 .
 > $$
 >
-> Limits preserve $\le$ (Theorem 2.3.2, [[§8 Calculating Limits Using the Limit Laws|§8]]), so taking the right-hand limit gives $\displaystyle\lim_{h \to 0^+} \frac{f(c + h) - f(c)}{h} \le 0$. Since $f'(c)$ exists, the two-sided limit defining it equals this right-hand limit:
+> Limits preserve $\le$ ([[§8 Calculating Limits Using the Limit Laws#^thm-8-6|Theorem §8.6]], Stewart's Theorem 2.3.2), so taking the right-hand limit gives $\displaystyle\lim_{h \to 0^+} \frac{f(c + h) - f(c)}{h} \le 0$. Since $f'(c)$ exists, the two-sided limit defining it equals this right-hand limit ([[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]]):
 >
 > $$
 > f'(c) = \lim_{h \to 0} \frac{f(c + h) - f(c)}{h} = \lim_{h \to 0^+} \frac{f(c + h) - f(c)}{h} \le 0 .
@@ -128,18 +128,18 @@ At a local maximum or minimum of a smooth graph the tangent line looks horizonta
 
 ^pf-25-2
 
-*Uses:* [[§25 Maximum and Minimum Values#^def-25-2|Def. §25.2]], [[§8 Calculating Limits Using the Limit Laws|§8]] (Theorem 2.3.2; a limit equals the one-sided limits), [[§12 Derivatives and Rates of Change|§12]] (definition of $f'(c)$)
+*Uses:* [[§25 Maximum and Minimum Values#^def-25-2|Def. §25.2]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-6|Theorem §8.6]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]], [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^thm-29-1|451 Thm. §29.1]] (Interior Extremum Theorem), with the same sign argument.
-> - Several variables (all partial derivatives vanish at an interior extremum): [[§14 Optimization and Lagrange Multipliers#^thm-14-1|452 Thm. §14.1]]; in this subject, [[§96 Maximum and Minimum Values|§96]].
+> - Several variables (all partial derivatives vanish at an interior extremum): [[§14 Optimization and Lagrange Multipliers#^thm-14-1|452 Thm. §14.1]]; in this subject, [[§96 Maximum and Minimum Values#^thm-96-1|Theorem §96.1]].
 
 The converse of Fermat's Theorem is false, and an extreme value can occur where $f'$ does not exist:
 
 > [!example] Example §25.2: What Fermat's Theorem Does Not Say
 > **(a)** $f(x) = x^3$ has $f'(x) = 3x^2$, so $f'(0) = 0$. But $f$ has no maximum or minimum at $0$: $x^3 > 0$ for $x > 0$ and $x^3 < 0$ for $x < 0$. The curve $y = x^3$ has a horizontal tangent at $(0, 0)$ and crosses it there. So $f'(c) = 0$ does not imply an extremum at $c$.
 >
-> **(b)** $f(x) = |x|$ has its (local and absolute) minimum value $f(0) = 0$ at $0$, since $|x| \ge 0$. But $f'(0)$ does not exist: the difference quotient $\frac{|h| - 0}{h}$ is $1$ for $h > 0$ and $-1$ for $h < 0$ ([[§13 The Derivative as a Function|§13]]). So this minimum cannot be found by solving $f'(x) = 0$.
+> **(b)** $f(x) = |x|$ has its (local and absolute) minimum value $f(0) = 0$ at $0$, since $|x| \ge 0$. But $f'(0)$ does not exist: the difference quotient $\frac{|h| - 0}{h}$ is $1$ for $h > 0$ and $-1$ for $h < 0$ ([[§13 The Derivative as a Function#^ex-13-4|Ex. §13.4]]). So this minimum cannot be found by solving $f'(x) = 0$.
 >
 > *Stewart: Examples 4.1.5 and 4.1.6*
 
@@ -159,7 +159,7 @@ So we should look for extreme values where $f'(c) = 0$ *or* where $f'(c)$ does n
 >
 > **(a)** $f'(x) = 3x^2 - 6x = 3x(x - 2)$ exists for all $x$, so the only critical numbers are the solutions of $f'(x) = 0$: $x = 0$ and $x = 2$.
 >
-> **(b)** The domain of $f$ is $\mathbb{R}$. By the Product Rule ([[§15 The Product and Quotient Rules|§15]]),
+> **(b)** The domain of $f$ is $\mathbb{R}$. By the Product Rule ([[§15 The Product and Quotient Rules#^thm-15-1|Theorem §15.1]]),
 >
 > $$
 > f'(x) = x^{3/5}(-1) + (4 - x)\cdot\tfrac35 x^{-2/5} = -x^{3/5} + \frac{3(4 - x)}{5x^{2/5}} = \frac{-5x + 3(4 - x)}{5x^{2/5}} = \frac{12 - 8x}{5x^{2/5}} .
@@ -183,7 +183,7 @@ So we should look for extreme values where $f'(c) = 0$ *or* where $f'(c)$ does n
 
 ^pf-25-3
 
-*Uses:* [[§25 Maximum and Minimum Values#^thm-25-2|§25.2]], [[§25 Maximum and Minimum Values#^def-25-3|Def. §25.3]]
+*Uses:* [[§25 Maximum and Minimum Values#^thm-25-2|Theorem §25.2]], [[§25 Maximum and Minimum Values#^def-25-3|Def. §25.3]]
 
 > [!remark] Remark: Method — The Closed Interval Method
 > To find the *absolute* maximum and minimum values of a continuous function $f$ on a closed interval $[a, b]$:

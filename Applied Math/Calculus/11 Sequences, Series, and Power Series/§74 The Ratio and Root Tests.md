@@ -90,7 +90,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 > \frac{a_{n+1}}{a_n} = \frac{(n+1)^{n+1}}{(n+1)!} \cdot \frac{n!}{n^n} = \frac{(n+1)(n+1)^n}{(n+1)\,n!} \cdot \frac{n!}{n^n} = \left( \frac{n+1}{n} \right)^n = \left( 1 + \frac1n \right)^n \to e
 > $$
 >
-> as $n \to \infty$ (Equation 3.6.6, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]). Since $e > 1$, the series diverges by the Ratio Test.
+> as $n \to \infty$ (Equation 3.6.6, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|Theorem §19.7]]). Since $e > 1$, the series diverges by the Ratio Test.
 >
 > **An easier route.** The Test for Divergence suffices:
 >
@@ -136,7 +136,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 ^thm-74-2
 
 > [!proof]+ Proof
-> (Stewart leaves this as Exercise 45, with the hint below; the proof is like that of the Ratio Test.)
+> (Stewart says the proof "is similar to the proof of the Ratio Test and is left as Exercise 45"; here it is.)
 >
 > **(i)** Choose $r$ with $L < r < 1$. Since $\sqrt[n]{|a_n|} \to L < r$, there is an integer $N$ such that $\sqrt[n]{|a_n|} < r$ whenever $n \ge N$, that is,
 >
@@ -152,7 +152,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 
 ^pf-74-2
 
-*Uses:* [[§70 Series#^thm-70-1|§70.1]], [[§72 The Comparison Tests#^thm-72-1|§72.1]], [[§70 Series#^prop-70-7|§70.7]], [[§73 Alternating Series and Absolute Convergence#^thm-73-3|§73.3]], [[§70 Series#^cor-70-5|§70.5]], [[§69 Sequences#^thm-69-6|§69.6]]
+*Uses:* [[§70 Series#^thm-70-1|§70.1]], [[§72 The Comparison Tests#^thm-72-1|§72.1]], [[§70 Series#^prop-70-7|§70.7]], [[§73 Alternating Series and Absolute Convergence#^thm-73-3|§73.3]], [[§70 Series#^cor-70-5|§70.5]], [[§69 Sequences#^thm-69-6|§69.6]], [[§69 Sequences#^ex-69-2|Ex. §69.2]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Series#^thm-14-10|451 Thm. §14.10]], with $\limsup \sqrt[n]{|a_n|}$ in place of the limit; that form gives the radius of convergence of a power series, [[§23 Power Series#^thm-23-2|451 Thm. §23.2]].
@@ -177,7 +177,7 @@ If $L = 1$ in the Ratio Test, don't try the Root Test: $L$ will again be $1$. An
 > [!example] Example §74.5: Try the Test for Divergence First
 > Determine whether $\displaystyle\sum_{n=1}^{\infty} \left( \frac{n}{n+1} \right)^n$ converges or diverges.
 >
-> The Root Test seems natural, but $\sqrt[n]{|a_n|} = \dfrac{n}{n+1} \to 1$, so it is inconclusive. However, by Equation 3.6.6,
+> The Root Test seems natural, but $\sqrt[n]{|a_n|} = \dfrac{n}{n+1} \to 1$, so it is inconclusive. However, by Equation 3.6.6 ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|Theorem §19.7]]),
 >
 > $$
 > a_n = \left( \frac{n}{n+1} \right)^n = \frac{1}{\left( \dfrac{n+1}{n} \right)^n} = \frac{1}{\left( 1 + \dfrac1n \right)^n} \to \frac1e \qquad \text{as } n \to \infty .

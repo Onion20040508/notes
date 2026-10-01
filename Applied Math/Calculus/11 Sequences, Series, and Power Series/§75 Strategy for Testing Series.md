@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 11.7.*
 
-With the tests of [[§70 Series|§70]]–[[§74 The Ratio and Root Tests|§74]] in hand, the problem is to decide which test to use on which series. As with integration ([[§48 Strategy for Integration|§48]]), there are no hard and fast rules, and applying the tests in a fixed order until one works wastes effort. The strategy is to classify the series by its *form*, which usually points to the right test at once. This section collects that advice and works through one series of each kind.
+With the tests of [[§70 Series|§70]]–[[§74 The Ratio and Root Tests|§74]] in hand, the problem is to decide which test to use on which series. As with integration ([[§48 Strategy for Integration#^rem-48-1|the strategy for integration in §48]]), there are no hard and fast rules, and applying the tests in a fixed order until one works wastes effort. The strategy is to classify the series by its *form*, which usually points to the right test at once. This section collects that advice and works through one series of each kind.
 
 ## The Strategy
 
@@ -20,7 +20,7 @@ With the tests of [[§70 Series|§70]]–[[§74 The Ratio and Root Tests|§74]] 
 > 1. **Test for Divergence.** If you can see that $\lim_{n \to \infty} a_n$ may be different from $0$, apply the Test for Divergence ([[§70 Series#^cor-70-5|Corollary §70.5]]).
 > 2. **$p$-series.** If the series has the form $\sum 1/n^p$, it is a $p$-series: convergent if $p > 1$ and divergent if $p \le 1$ ([[§71 The Integral Test and Estimates of Sums#^thm-71-2|Theorem §71.2]]).
 > 3. **Geometric series.** If the series has the form $\sum a r^{n-1}$ or $\sum a r^n$, it is geometric: convergent if $|r| < 1$ and divergent if $|r| \ge 1$ ([[§70 Series#^thm-70-1|Theorem §70.1]]). Some algebraic manipulation may be required to bring the series into this form.
-> 4. **Comparison Tests.** If the series has a form similar to a $p$-series or a geometric series, consider one of the comparison tests ([[§72 The Comparison Tests|§72]]). In particular, if $a_n$ is a rational or algebraic function of $n$ (involving roots of polynomials), compare with a $p$-series, choosing $p$ by keeping only the highest powers of $n$ in numerator and denominator. The comparison tests apply only to series with positive terms; if $\sum a_n$ has some negative terms, apply a comparison test to $\sum |a_n|$ and test for absolute convergence.
+> 4. **Comparison Tests.** If the series has a form similar to a $p$-series or a geometric series, consider one of the comparison tests ([[§72 The Comparison Tests#^thm-72-1|Theorem §72.1]], [[§72 The Comparison Tests#^thm-72-2|Theorem §72.2]]). In particular, if $a_n$ is a rational or algebraic function of $n$ (involving roots of polynomials), compare with a $p$-series, choosing $p$ by keeping only the highest powers of $n$ in numerator and denominator. The comparison tests apply only to series with positive terms; if $\sum a_n$ has some negative terms, apply a comparison test to $\sum |a_n|$ and test for absolute convergence.
 > 5. **Alternating Series Test.** If the series has the form $\sum (-1)^{n-1} b_n$ or $\sum (-1)^n b_n$, the Alternating Series Test ([[§73 Alternating Series and Absolute Convergence#^thm-73-1|Theorem §73.1]]) is an obvious possibility. If $\sum b_n$ converges, the series is absolutely convergent and therefore convergent.
 > 6. **Ratio Test.** Series that involve factorials or other products (including a constant raised to the $n$th power) are often conveniently tested with the Ratio Test ([[§74 The Ratio and Root Tests#^thm-74-1|Theorem §74.1]]). Since $|a_{n+1}/a_n| \to 1$ for all $p$-series, and therefore for all rational or algebraic functions of $n$, the Ratio Test should not be used for such series.
 > 7. **Root Test.** If $a_n$ has the form $(b_n)^n$, the Root Test ([[§74 The Ratio and Root Tests#^thm-74-2|Theorem §74.2]]) may be useful.
@@ -102,7 +102,7 @@ Stewart only names the test for each of the following series; here each is carri
 > \frac{a_{k+1}}{a_k} = \frac{2^{k+1}}{(k+1)!} \cdot \frac{k!}{2^k} = \frac{2}{k+1} \to 0 < 1 .
 > $$
 >
-> The series converges. (Its sum is $e^2 - 1$, by the Maclaurin series of $e^x$ in [[§78 Taylor and Maclaurin Series|§78]].)
+> The series converges. (Its sum is $e^2 - 1$, by the Maclaurin series of $e^x$, [[§78 Taylor and Maclaurin Series#^thm-78-6|Theorem §78.6]].)
 >
 > *Stewart: Example 11.7.5*
 

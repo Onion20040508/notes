@@ -9,7 +9,7 @@ tags: [chapter, relativity]
 ← [[· A1 Postulates and the Lorentz Transformation]] · ↑ [[Relativity]] · [[· A3 Relativistic Momentum and Energy]] →
 
 **Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (17)
-**Used by:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (5), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (12)
+**Used by:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (5), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (12), [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (6), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (1), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (2), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (4)
 
 ## Sections
 - [[§A2.1 Time Dilation]] — UP Vol. 3 §5.3

@@ -21,7 +21,7 @@ $$
 r^2 = x^2 + y^2, \qquad x = r\cos\theta, \qquad y = r\sin\theta
 $$
 
-([[§65 Polar Coordinates|§65]]). Circles centered at the origin are especially simple: the disk $x^2 + y^2 \le 1$ is $\{(r, \theta) \mid 0 \le r \le 1,\ 0 \le \theta \le 2\pi\}$, and the upper half-annulus between the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 4$ is $\{(r, \theta) \mid 1 \le r \le 2,\ 0 \le \theta \le \pi\}$. Table 10.3.1 of Stewart lists other curves that are simple in polar coordinates.
+([[§65 Polar Coordinates#^thm-65-2|Theorem §65.2]]). Circles centered at the origin are especially simple: the disk $x^2 + y^2 \le 1$ is $\{(r, \theta) \mid 0 \le r \le 1,\ 0 \le \theta \le 2\pi\}$, and the upper half-annulus between the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 4$ is $\{(r, \theta) \mid 1 \le r \le 2,\ 0 \le \theta \le \pi\}$. Table 10.3.1 of Stewart lists other curves that are simple in polar coordinates.
 
 ## Double Integrals in Polar Coordinates
 
@@ -76,13 +76,13 @@ $$
 
 ^pf-100-1
 
-*Uses:* [[§100 Double Integrals in Polar Coordinates#^def-100-1|Def. §100.1]], [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§98 Double Integrals Over Rectangles#^thm-98-3|§98.3]], [[§66 Calculus in Polar Coordinates|§66]] (area of a sector)
+*Uses:* [[§100 Double Integrals in Polar Coordinates#^def-100-1|Def. §100.1]], [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§98 Double Integrals Over Rectangles#^thm-98-3|§98.3]], [[§66 Calculus in Polar Coordinates#^thm-66-1|§66.1]] (area of a sector)
 
 ![[m233-100-1.svg]]
 *Dividing a polar rectangle by circles $r = r_i$ and rays $\theta = \theta_j$. The highlighted subrectangle $R_{ij}$ is nearly an ordinary rectangle with sides $\Delta r$ (radial) and $r_i^*\Delta\theta$ (an arc of radius $r_i^*$), and its area is exactly $r_i^*\,\Delta r\,\Delta\theta$. Subrectangles far from the origin are larger: this is the factor $r$ in $dA = r\,dr\,d\theta$.*
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]], proved there by the same computation with polar rectangles; the factor $r$ is the Jacobian of the polar map ([[§15 Multivariable Integration#^ex-15-4|452 Ex. §15.4]]), the general formula being [[§106 Change of Variables in Multiple Integrals|§106]]. Hub: [[Polar and spherical coordinates]].
+> - Rigorous treatment: [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]], proved there by the same computation with polar rectangles; the factor $r$ is the Jacobian of the polar map ([[§15 Multivariable Integration#^ex-15-4|452 Ex. §15.4]]), the general formula being [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]] (polar coordinates as a special case: [[§106 Change of Variables in Multiple Integrals#^ex-106-2|Example §106.2]]). Hub: [[Polar and spherical coordinates]].
 > - The standard application to an improper integral, $\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt\pi$ (Stewart's Exercise 15.3.50): [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]].
 
 > [!remark] Remark: Don't Forget the Factor r
@@ -103,7 +103,7 @@ $$
 > \end{aligned}
 > $$
 >
-> using $\sin^2\theta = \frac12(1 - \cos 2\theta)$ ([[§45 Trigonometric Integrals|§45]]).
+> using $\sin^2\theta = \frac12(1 - \cos 2\theta)$ ([[§45 Trigonometric Integrals#^thm-45-1|Theorem §45.1]]).
 >
 > *Stewart: Example 15.3.1*
 
@@ -186,7 +186,7 @@ What has been done for polar rectangles extends to regions that play the role of
 > A(D) = \int_\alpha^\beta \tfrac12 [h(\theta)]^2\,d\theta ,
 > $$
 >
-> in agreement with Formula 10.4.3 ([[§66 Calculus in Polar Coordinates|§66]]).
+> in agreement with Formula 10.4.3 ([[§66 Calculus in Polar Coordinates#^thm-66-2|Theorem §66.2]]).
 >
 > *Stewart: 15.3 (text)*
 

@@ -167,7 +167,7 @@ A mathematical model describes a real-world phenomenon by a function. This secti
 > [!remark]- Connections
 > - Developed further in: [[§4 Span and Linear Independence#^ladr-2-10|LADR 2.10]] and [[§4 Span and Linear Independence#^ladr-2-11|LADR 2.11]] (polynomials over $\mathbb{R}$ or $\mathbb{C}$ and their degree). That the coefficients, hence the degree, are determined by the function is [[§13 Polynomials#^ladr-4-8|LADR 4.8]]: a nonzero polynomial of degree $m$ has at most $m$ zeros.
 
-Polynomials model many quantities in the natural and social sciences; for instance, economists often take a polynomial $P(x)$ for the cost of producing $x$ units of a commodity ([[§20 Rates of Change in the Natural and Social Sciences|§20]]).
+Polynomials model many quantities in the natural and social sciences; for instance, economists often take a polynomial $P(x)$ for the cost of producing $x$ units of a commodity ([[§20 Rates of Change in the Natural and Social Sciences#^def-20-7|Definition §20.7]]).
 
 > [!example] Example §2.3: A Quadratic Model for a Falling Ball
 > A ball is dropped from the upper observation deck of the CN Tower, $450$ m above the ground, and its height $h$ above the ground is recorded at 1-second intervals:
@@ -313,6 +313,8 @@ Trigonometry is reviewed on Stewart's Reference Page 2 and in Appendix D. In cal
 
 ^pf-2-3
 
+*Uses:* [[§119 Trigonometry#^def-119-4|Def. §119.4]] (trigonometric functions of a general angle)
+
 > [!theorem] Theorem §2.4: Periodicity
 > Sine and cosine are **periodic** with period $2\pi$: for all values of $x$,
 >
@@ -347,6 +349,8 @@ Trigonometry is reviewed on Stewart's Reference Page 2 and in Appendix D. In cal
 
 ^pf-2-4
 
+*Uses:* [[§119 Trigonometry#^def-119-4|Def. §119.4]]; the $2\pi$-periodicity is also [[§119 Trigonometry#^thm-119-5|Theorem §119.5]]
+
 The periodicity makes sine and cosine suitable for modeling repetitive phenomena such as tides, vibrating springs and sound waves. In [[§3 New Functions from Old Functions#^ex-3-3|Ex. §3.3]] the number of hours of daylight in Philadelphia $t$ days after January 1 is modeled by $L(t) = 12 + 2.8 \sin\big[\frac{2\pi}{365}(t - 80)\big]$.
 
 > [!example] Example §2.4: The Domain of a Trigonometric Expression
@@ -376,7 +380,7 @@ The periodicity makes sine and cosine suitable for modeling repetitive phenomena
 ## Logarithmic Functions
 
 > [!definition] Definition §2.11: Logarithmic Function
-> The **logarithmic functions** are the functions $f(x) = \log_b x$, where the base $b$ is a positive constant ($b \ne 1$). They are the inverse functions of the exponential functions ([[§5 Inverse Functions and Logarithms|§5]]). The domain is $(0, \infty)$ and the range is $(-\infty, \infty)$. For $b > 1$ the graph passes through $(1, 0)$, and the function increases slowly when $x > 1$, the more slowly the larger the base ($\log_2 x$, $\log_3 x$, $\log_5 x$, $\log_{10} x$).
+> The **logarithmic functions** are the functions $f(x) = \log_b x$, where the base $b$ is a positive constant ($b \ne 1$). They are the inverse functions of the exponential functions ([[§5 Inverse Functions and Logarithms#^def-5-3|Definition §5.3]]). The domain is $(0, \infty)$ and the range is $(-\infty, \infty)$. For $b > 1$ the graph passes through $(1, 0)$, and the function increases slowly when $x > 1$, the more slowly the larger the base ($\log_2 x$, $\log_3 x$, $\log_5 x$, $\log_{10} x$).
 >
 > *Stewart: 1.2 (text)*
 

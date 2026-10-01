@@ -31,7 +31,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 
 ^pf-66-1
 
-*Uses:* area $\pi r^2$ of a disk (computed by integration in [[§46 Trigonometric Substitution|§46]])
+*Uses:* area $\pi r^2$ of a disk ([[§46 Trigonometric Substitution#^ex-46-2|Ex. §46.2]] with $a = b = r$)
 
 > [!theorem] Theorem §66.2: Area of a Polar Region
 > Let $\mathscr{R}$ be the region bounded by the polar curve $r = f(\theta)$ and the rays $\theta = a$ and $\theta = b$, where $f$ is a positive continuous function and $0 < b - a \le 2\pi$. The area of $\mathscr{R}$ is
@@ -60,7 +60,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 > [!proof]+ Proof
 > We make the approximation (2) precise by squeezing each thin region between two sectors. (Stewart only says the formula "can in fact be proved"; this argument assumes, as Stewart does, that area is additive and that a region contained in another has smaller area.)
 >
-> On $[\theta_{i-1}, \theta_i]$ the continuous function $f$ has a minimum $m_i = f(u_i)$ and a maximum $M_i = f(v_i)$ (Extreme Value Theorem, [[§25 Maximum and Minimum Values|§25]]). The $i$th thin region consists of the points $(r, \theta)$ with $\theta_{i-1} \le \theta \le \theta_i$ and $0 \le r \le f(\theta)$. It contains the sector of radius $m_i$ and is contained in the sector of radius $M_i$, both with central angle $\Delta\theta$, so by Theorem §66.1
+> On $[\theta_{i-1}, \theta_i]$ the continuous function $f$ has a minimum $m_i = f(u_i)$ and a maximum $M_i = f(v_i)$ (Extreme Value Theorem, [[§25 Maximum and Minimum Values#^thm-25-1|Theorem §25.1]]). The $i$th thin region consists of the points $(r, \theta)$ with $\theta_{i-1} \le \theta \le \theta_i$ and $0 \le r \le f(\theta)$. It contains the sector of radius $m_i$ and is contained in the sector of radius $M_i$, both with central angle $\Delta\theta$, so by Theorem §66.1
 >
 > $$
 > \tfrac12 [f(u_i)]^2\,\Delta\theta \;\le\; \Delta A_i \;\le\; \tfrac12 [f(v_i)]^2\,\Delta\theta .
@@ -72,17 +72,17 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 > \sum_{i=1}^n \tfrac12 [f(u_i)]^2\,\Delta\theta \;\le\; A \;\le\; \sum_{i=1}^n \tfrac12 [f(v_i)]^2\,\Delta\theta .
 > $$
 >
-> Both outer sums are Riemann sums for the continuous function $\frac12 f^2$ on $[a, b]$, so both tend to $\int_a^b \frac12 [f(\theta)]^2\,d\theta$ as $n \to \infty$ ([[§35 The Definite Integral|§35]]). Since $A$ does not depend on $n$, the Squeeze Theorem gives $A = \int_a^b \frac12 [f(\theta)]^2\,d\theta$.
+> Both outer sums are Riemann sums for the continuous function $\frac12 f^2$ on $[a, b]$, so both tend to $\int_a^b \frac12 [f(\theta)]^2\,d\theta$ as $n \to \infty$ ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]] and [[§35 The Definite Integral#^def-35-1|Definition §35.1]], which allows any sample points). Since $A$ does not depend on $n$, the Squeeze Theorem for Sequences ([[§69 Sequences#^thm-69-4|Theorem §69.4]]) gives $A = \int_a^b \frac12 [f(\theta)]^2\,d\theta$.
 
 ^pf-66-2
 
-*Uses:* [[§66 Calculus in Polar Coordinates#^thm-66-1|§66.1]], [[§25 Maximum and Minimum Values|§25]] (Extreme Value Theorem), [[§35 The Definite Integral|§35]] (Riemann sums of a continuous function converge to the integral), [[§8 Calculating Limits Using the Limit Laws|§8]] (Squeeze Theorem)
+*Uses:* [[§66 Calculus in Polar Coordinates#^thm-66-1|§66.1]], [[§25 Maximum and Minimum Values#^thm-25-1|§25.1]] (Extreme Value Theorem), [[§35 The Definite Integral#^def-35-1|Def. §35.1]] and [[§35 The Definite Integral#^thm-35-1|§35.1]] (Riemann sums of a continuous function converge to the integral), [[§69 Sequences#^thm-69-4|§69.4]] (Squeeze Theorem for Sequences)
 
 ![[m233-66-1.svg]]
 *The proof of Theorem §66.2. The rays $\theta = \theta_{i-1}$ and $\theta = \theta_i$ cut a thin piece (blue) out of the region under $r = f(\theta)$. It contains the sector of radius $m_i = \min f$ (green) and lies inside the sector of radius $M_i = \max f$ (red dashed), both of area $\frac12(\text{radius})^2\Delta\theta$.*
 
 > [!remark]- Connections
-> - In double-integral form the same area is $\iint_{\mathscr{R}} dA = \int_a^b \int_0^{f(\theta)} r\,dr\,d\theta = \int_a^b \frac12 [f(\theta)]^2\,d\theta$, by the change of variables to polar coordinates: [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]] (and [[§100 Double Integrals in Polar Coordinates|§100]]).
+> - In double-integral form the same area is $\iint_{\mathscr{R}} dA = \int_a^b \int_0^{f(\theta)} r\,dr\,d\theta = \int_a^b \frac12 [f(\theta)]^2\,d\theta$, by the change of variables to polar coordinates: [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]] (and [[§100 Double Integrals in Polar Coordinates#^cor-100-3|Corollary §100.3]]).
 
 > [!example] Example §66.1: One Loop of the Four-Leaved Rose
 > Find the area enclosed by one loop of $r = \cos 2\theta$.
@@ -205,11 +205,11 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 > \Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2 = \Big(\frac{dr}{d\theta}\Big)^2(\cos^2\theta + \sin^2\theta) + r^2(\sin^2\theta + \cos^2\theta) = \Big(\frac{dr}{d\theta}\Big)^2 + r^2 .
 > $$
 >
-> Since $f'$ is continuous, so are $dx/d\theta$ and $dy/d\theta$, and Theorem §64.4 gives $L = \int_a^b \sqrt{(dx/d\theta)^2 + (dy/d\theta)^2}\,d\theta$, which is Formula 6.
+> Since $f'$ is continuous, so are $dx/d\theta$ and $dy/d\theta$, and [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]] gives $L = \int_a^b \sqrt{(dx/d\theta)^2 + (dy/d\theta)^2}\,d\theta$, which is Formula 6.
 
 ^pf-66-4
 
-*Uses:* [[§65 Polar Coordinates#^thm-65-2|§65.2]], [[§15 The Product and Quotient Rules|§15]] (Product Rule), [[§64 Calculus with Parametric Curves#^thm-64-4|§64.4]]
+*Uses:* [[§65 Polar Coordinates#^thm-65-2|§65.2]], [[§15 The Product and Quotient Rules#^thm-15-1|§15.1]] (Product Rule), [[§64 Calculus with Parametric Curves#^thm-64-4|§64.4]]
 
 > [!example] Example §66.4: The Length of the Cardioid
 > Find the length of the cardioid $r = 1 + \sin\theta$ ([[§65 Polar Coordinates#^ex-65-4|Example §65.4]]).
@@ -258,7 +258,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 
 ^pf-66-5
 
-*Uses:* [[§64 Calculus with Parametric Curves#^thm-64-1|§64.1]], [[§66 Calculus in Polar Coordinates#^thm-66-4|§66.4]], [[§15 The Product and Quotient Rules|§15]] (Product Rule)
+*Uses:* [[§64 Calculus with Parametric Curves#^thm-64-1|§64.1]], [[§66 Calculus in Polar Coordinates#^thm-66-4|§66.4]], [[§15 The Product and Quotient Rules#^thm-15-1|§15.1]] (Product Rule)
 
 For instance, $r = \cos 2\theta = 0$ at $\theta = \pi/4$ and $3\pi/4$, where $dr/d\theta = -2\sin 2\theta \ne 0$, so the lines $y = x$ and $y = -x$ are the tangent lines to the four-leaved rose at the origin.
 
@@ -289,7 +289,7 @@ For instance, $r = \cos 2\theta = 0$ at $\theta = \pi/4$ and $3\pi/4$, where $dr
 > \frac{dx}{d\theta} = (1 + \sin\theta)(1 - 2\sin\theta) = 0 \ \text{ when } \theta = \frac{3\pi}{2}, \frac{\pi}{6}, \frac{5\pi}{6} .
 > $$
 >
-> So there are horizontal tangents at $(2, \pi/2)$, $(\frac12, 7\pi/6)$, $(\frac12, 11\pi/6)$ and vertical tangents at $(\frac32, \pi/6)$, $(\frac32, 5\pi/6)$. At $\theta = 3\pi/2$ both derivatives vanish. By l'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule|§28]]),
+> So there are horizontal tangents at $(2, \pi/2)$, $(\frac12, 7\pi/6)$, $(\frac12, 11\pi/6)$ and vertical tangents at $(\frac32, \pi/6)$, $(\frac32, 5\pi/6)$. At $\theta = 3\pi/2$ both derivatives vanish. By l'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Theorem §28.2]]),
 >
 > $$
 > \lim_{\theta \to (3\pi/2)^-} \frac{dy}{dx} = \Big(\lim_{\theta \to (3\pi/2)^-} \frac{1 + 2\sin\theta}{1 - 2\sin\theta}\Big)\Big(\lim_{\theta \to (3\pi/2)^-} \frac{\cos\theta}{1 + \sin\theta}\Big) = -\frac13 \lim_{\theta \to (3\pi/2)^-} \frac{-\sin\theta}{\cos\theta} = \infty ,

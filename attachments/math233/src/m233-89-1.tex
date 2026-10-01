@@ -1,0 +1,23 @@
+% Figure for Calculus §89.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth]
+  \draw[black!70, thick] plot[domain=-0.6:4.2, samples=80, smooth] (\x,{1.6*sin(deg(0.55*\x))+0.1*\x});
+  % point P at x=1: tangent direction
+  \pgfmathsetmacro{\px}{1.0}
+  \pgfmathsetmacro{\py}{1.6*sin(deg(0.55*\px))+0.1*\px}
+  \pgfmathsetmacro{\dy}{1.6*0.55*cos(deg(0.55*\px))+0.1}
+  \pgfmathsetmacro{\n}{sqrt(1+\dy*\dy)}
+  \coordinate (P) at (\px,\py);
+  \coordinate (T) at ({\px+1.2/\n},{\py+1.2*\dy/\n});
+  \coordinate (N) at ({\px+1.0*\dy/\n},{\py-1.0/\n});
+  % a = 1.4 T + 2.0 N (in units of the unit vectors)
+  \coordinate (AT) at ({\px+1.4*1/\n},{\py+1.4*\dy/\n});
+  \coordinate (AN) at ({\px+2.0*\dy/\n},{\py-2.0/\n});
+  \coordinate (A) at ({\px+1.4/\n+2.0*\dy/\n},{\py+1.4*\dy/\n-2.0/\n});
+  \draw[black!40, dashed] (AT) -- (A) -- (AN);
+  \draw[->, figR, very thick] (P) -- (A) node[right] {$\mathbf{a}=a_T\mathbf{T}+a_N\mathbf{N}$};
+  \draw[->, figB, thick] (P) -- (T) node[pos=0.55, above left] {$\mathbf{T}$};
+  \draw[->, figB, thick] (P) -- (N) node[pos=0.6, left] {$\mathbf{N}$};
+  \draw[->, figG, thick] (P) -- (AT) node[pos=1, above left, xshift=-4pt] {$a_T\mathbf{T}$};
+  \draw[->, figG, thick] (P) -- (AN) node[pos=1, below left] {$a_N\mathbf{N}$};
+  \fill (P) circle (1.5pt) node[above left] {$P$};
+\end{tikzpicture}

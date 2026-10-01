@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Appendix A.*
 
-The background on real numbers that the rest of the course takes for granted: the number systems, the real line and its order, intervals, the rules for manipulating inequalities, and the absolute value with the Triangle Inequality. The working skill is solving inequalities, including those with absolute values, by the rules below or by sign charts. The absolute value $|a - b|$ is the distance between $a$ and $b$, which is how "close to" is made precise in the definition of a limit ([[§9 The Precise Definition of a Limit|§9]]). The rigorous construction of $\mathbb{R}$ and its order is in Single Variable Analysis (451 §3–§4).
+The background on real numbers that the rest of the course takes for granted: the number systems, the real line and its order, intervals, the rules for manipulating inequalities, and the absolute value with the Triangle Inequality. The working skill is solving inequalities, including those with absolute values, by the rules below or by sign charts. The absolute value $|a - b|$ is the distance between $a$ and $b$, which is how "close to" is made precise in the definition of a limit ([[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]). The rigorous treatment of $\mathbb{R}$ as a complete ordered field is in Single Variable Analysis ([[§3 The Set ℝ of Real Numbers|451 §3]], [[§4 The Completeness Axiom|451 §4]]); the number systems, the order axioms and absolute value from first principles are in Logic and Proofs ([[§1 The Language of Mathematics|250 §1]], [[§3 Proofs|250 §3]], [[§13 Number Systems|250 §13]]).
 
 ## Numbers and the Real Line
 
@@ -24,6 +24,8 @@ The background on real numbers that the rest of the course takes for granted: th
 > *Stewart: Appendix A (text)*
 
 ^def-116-1
+
+*Stewart does not prove the irrationality claims ("it can be shown, with varying degrees of difficulty"); for $\sqrt2$ and $\sqrt3$ see [[§13 Number Systems#^thm-13-4|250 Thm. §13.4]] and [[§13 Number Systems#^ex-13-1|250 Ex. §13.1]].*
 
 > [!theorem] Proposition §116.1: Decimal Representations
 > Every real number has a decimal representation. A number is rational exactly when its decimal is repeating, as in
@@ -210,7 +212,7 @@ To **solve** an inequality is to find its **solution set**, the set of all numbe
 
 ^pf-116-4
 
-*Uses:* [[§116 Numbers, Inequalities, and Absolute Values#^prop-116-3|§116.3]], induction ([[§120 Sigma Notation|§120]])
+*Uses:* [[§116 Numbers, Inequalities, and Absolute Values#^prop-116-3|§116.3]], induction ([[§120 Sigma Notation#^def-120-2|Def. §120.2]])
 
 > [!theorem] Theorem §116.5: Equations and Inequalities with Absolute Values
 > Suppose $a > 0$. Then
@@ -279,7 +281,7 @@ To **solve** an inequality is to find its **solution set**, the set of all numbe
 *Uses:* [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-2|§116.2]], [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-5|§116.5]]
 
 > [!remark]- Connections
-> - Rigorous treatment, with the same proof: [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 Thm. §3.3]] (hub [[Triangle inequality]]).
+> - Rigorous treatment, with the same proof: [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 Thm. §3.3]] (hub [[Triangle inequality]]); a proof by comparing squares, with the case of equality, in 250: [[§4 Proof by Contradiction#^ex-4-5|250 Ex. §4.5]].
 
 > [!example] Example §116.4: Estimating with the Triangle Inequality
 > If $|x - 4| < 0.1$ and $|y - 7| < 0.2$, estimate $|(x + y) - 11|$.
@@ -290,7 +292,7 @@ To **solve** an inequality is to find its **solution set**, the set of all numbe
 > |(x + y) - 11| = |(x - 4) + (y - 7)| \le |x - 4| + |y - 7| < 0.1 + 0.2 = 0.3 .
 > $$
 >
-> So $|(x + y) - 11| < 0.3$. The same estimate is the heart of the proof of the Sum Law for limits ([[§8 Calculating Limits Using the Limit Laws|§8]]; proof in Appendix F).
+> So $|(x + y) - 11| < 0.3$. The same estimate is the heart of the proof of the Sum Law for limits ([[§8 Calculating Limits Using the Limit Laws#^pf-8-1|proof of Theorem §8.1]], Law 1).
 >
 > *Stewart: Appendix A, Example 9*
 

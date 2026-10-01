@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 4.2.*
 
-The Mean Value Theorem says that somewhere between $a$ and $b$ the instantaneous rate of change $f'(c)$ equals the average rate of change $\frac{f(b) - f(a)}{b - a}$. It is proved from Rolle's Theorem, its special case $f(a) = f(b)$, which in turn comes from the Extreme Value Theorem and Fermat's Theorem ([[§25 Maximum and Minimum Values|§25]]). Like those, it only asserts that some number $c$ exists. Its value is that it turns information about $f'$ into information about $f$. The first instance is proved here: a function with zero derivative on an interval is constant. Most of the results of this chapter, and the theory of antiderivatives ([[§33 Antiderivatives|§33]]), depend on it.
+The Mean Value Theorem says that somewhere between $a$ and $b$ the instantaneous rate of change $f'(c)$ equals the average rate of change $\frac{f(b) - f(a)}{b - a}$. It is proved from Rolle's Theorem, its special case $f(a) = f(b)$, which in turn comes from the Extreme Value Theorem and Fermat's Theorem ([[§25 Maximum and Minimum Values#^thm-25-1|Theorem §25.1]], [[§25 Maximum and Minimum Values#^thm-25-2|Theorem §25.2]]). Like those, it only asserts that some number $c$ exists. Its value is that it turns information about $f'$ into information about $f$. The first instance is proved here: a function with zero derivative on an interval is constant. Most of the results of this chapter, and the theory of antiderivatives ([[§33 Antiderivatives|§33]]), depend on it.
 
 ## Rolle's Theorem
 
@@ -132,14 +132,14 @@ For example, if $s = f(t)$ is the position of a moving object and the object is 
 
 ^pf-26-2
 
-*Uses:* [[§26 The Mean Value Theorem#^thm-26-1|§26.1]], [[§10 Continuity#^thm-10-1|§10.1]] (sums of continuous functions), [[§14 Derivatives of Polynomials and Exponential Functions|§14]] (Sum Rule)
+*Uses:* [[§26 The Mean Value Theorem#^thm-26-1|§26.1]], [[§10 Continuity#^thm-10-1|§10.1]] (sums of continuous functions), [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|§14.4]] (Sum Rule), [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-1|§14.1]] (constants)
 
 ![[m233-26-1.svg]]
 *The Mean Value Theorem and its proof. The tangent at $P(c, f(c))$ (red) is parallel to the secant $AB$ (blue). The auxiliary function $h(x)$ of (4) is the vertical distance from the secant up to the graph (green). It vanishes at $a$ and $b$, and where it is largest its derivative is $0$: that is the point $c$.*
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (same proof: subtract the chord), with Rolle's Theorem as [[§29 The Mean Value Theorem#^thm-29-2|451 Thm. §29.2]]. Hub: [[Mean Value Theorem]].
-> - The two-function version used to prove l'Hospital's Rule: Cauchy's Mean Value Theorem, [[§28 Indeterminate Forms and L'Hospital's Rule|§28]].
+> - The two-function version used to prove l'Hospital's Rule: Cauchy's Mean Value Theorem, [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-1|Theorem §28.1]].
 
 > [!example] Example §26.2: Finding the Number c
 > Illustrate the Mean Value Theorem with $f(x) = x^3 - x$, $a = 0$, $b = 2$.
@@ -159,7 +159,7 @@ For example, if $s = f(t)$ is the position of a moving object and the object is 
 > [!example] Example §26.3: Bounding a Function by Its Derivative
 > Suppose that $f(0) = -3$ and $f'(x) \le 5$ for all values of $x$. How large can $f(2)$ possibly be?
 >
-> $f$ is differentiable everywhere, hence continuous everywhere ([[§13 The Derivative as a Function|§13]]), so the Mean Value Theorem applies on $[0, 2]$: there is a number $c$ with
+> $f$ is differentiable everywhere, hence continuous everywhere ([[§13 The Derivative as a Function#^thm-13-1|Theorem §13.1]]), so the Mean Value Theorem applies on $[0, 2]$: there is a number $c$ with
 >
 > $$
 > f(2) - f(0) = f'(c)(2 - 0), \qquad\text{so}\qquad f(2) = f(0) + 2f'(c) = -3 + 2f'(c) .
@@ -191,7 +191,7 @@ The Mean Value Theorem gives information about $f$ from information about $f'$. 
 
 ^pf-26-3
 
-*Uses:* [[§26 The Mean Value Theorem#^thm-26-2|§26.2]], [[§13 The Derivative as a Function|§13]] (differentiable implies continuous)
+*Uses:* [[§26 The Mean Value Theorem#^thm-26-2|§26.2]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous)
 
 > [!theorem] Corollary §26.4: Equal Derivatives Differ by a Constant
 > If $f'(x) = g'(x)$ for all $x$ in an interval $(a, b)$, then $f - g$ is constant on $(a, b)$; that is, $f(x) = g(x) + c$ where $c$ is a constant.
@@ -227,7 +227,7 @@ The Mean Value Theorem gives information about $f$ from information about $f'$. 
 > [!example] Example §26.4: Proving an Identity by Differentiating
 > Prove the identity $\tan^{-1} x + \cot^{-1} x = \pi/2$.
 >
-> Let $f(x) = \tan^{-1} x + \cot^{-1} x$. By the derivatives of the inverse trigonometric functions ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]),
+> Let $f(x) = \tan^{-1} x + \cot^{-1} x$. By the derivatives of the inverse trigonometric functions ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|Theorem §19.8]]),
 >
 > $$
 > f'(x) = \frac{1}{1 + x^2} - \frac{1}{1 + x^2} = 0

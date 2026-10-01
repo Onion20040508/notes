@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 8.1.*
 
-The length of a curve is defined the way the circumference of a circle is: inscribe polygonal paths with more and more sides and take the limit of their lengths. For the graph of a function with a continuous derivative, the Mean Value Theorem turns the polygon lengths into Riemann sums, and the limit becomes the integral $\int_a^b \sqrt{1 + [f'(x)]^2}\,dx$. Because of the square root these integrals can rarely be evaluated exactly, so the section also uses Simpson's Rule. The integrand is the derivative of the arc length function $s(x)$, and the differential $ds$, with $(ds)^2 = (dx)^2 + (dy)^2$, is used again for surface area in [[§53 Area of a Surface of Revolution#^def-53-2|§53]] and for parametric and space curves in [[§64 Calculus with Parametric Curves|§64]] and [[§88 Arc Length and Curvature|§88]].
+The length of a curve is defined the way the circumference of a circle is: inscribe polygonal paths with more and more sides and take the limit of their lengths. For the graph of a function with a continuous derivative, the Mean Value Theorem turns the polygon lengths into Riemann sums, and the limit becomes the integral $\int_a^b \sqrt{1 + [f'(x)]^2}\,dx$. Because of the square root these integrals can rarely be evaluated exactly, so the section also uses Simpson's Rule. The integrand is the derivative of the arc length function $s(x)$, and the differential $ds$, with $(ds)^2 = (dx)^2 + (dy)^2$, is used again for surface area in [[§53 Area of a Surface of Revolution#^def-53-2|§53]] and for parametric and space curves in [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]] and [[§88 Arc Length and Curvature#^thm-88-1|Theorem §88.1]].
 
 ## Arc Length of a Curve
 
@@ -32,7 +32,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 *A polygonal path $P_0 P_1 \cdots P_n$ (red) inscribed in the curve $y = f(x)$ (blue), with vertices above equally spaced points $x_i$. The length of a polygon is a sum of distances. As $n$ grows, the chords hug the curve more closely, and their total length tends to the length of the curve.*
 
 > [!remark] Remark: The Idea Behind the Definition
-> The length of a polygon is the sum of the lengths of its segments, each found from the distance formula. The circumference of a circle is the limit of the perimeters of inscribed regular polygons as the number of sides grows. Definition §52.1 applies the same idea to any curve. It follows the pattern of the definitions of area ([[§35 The Definite Integral|§35]]) and volume ([[§40 Volumes|§40]]): divide the object into many small parts, approximate each part by something whose size we know, add, and take the limit as $n \to \infty$.
+> The length of a polygon is the sum of the lengths of its segments, each found from the distance formula. The circumference of a circle is the limit of the perimeters of inscribed regular polygons as the number of sides grows. Definition §52.1 applies the same idea to any curve. It follows the pattern of the definitions of area ([[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]]) and volume ([[§40 Volumes#^def-40-2|Definition §40.2]]): divide the object into many small parts, approximate each part by something whose size we know, add, and take the limit as $n \to \infty$.
 
 ^rem-52-1
 
@@ -85,7 +85,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 > L = \lim_{n \to \infty} \sum_{i=1}^n |P_{i-1} P_i| = \lim_{n \to \infty} \sum_{i=1}^n \sqrt{1 + [f'(x_i^*)]^2}\,\Delta x .
 > $$
 >
-> The last sum is a Riemann sum of $g(x) = \sqrt{1 + [f'(x)]^2}$ for the equal partition of $[a, b]$ with sample points $x_i^* \in [x_{i-1}, x_i]$. Since $f'$ is continuous, so is $g$; a continuous function is integrable, and then the Riemann sums tend to $\int_a^b g(x)\,dx$ for *every* choice of sample points ([[§35 The Definite Integral|§35]]), in particular for the points $x_i^*$ supplied by the Mean Value Theorem. So the limit in Definition §52.1 exists and
+> The last sum is a Riemann sum of $g(x) = \sqrt{1 + [f'(x)]^2}$ for the equal partition of $[a, b]$ with sample points $x_i^* \in [x_{i-1}, x_i]$. Since $f'$ is continuous, so is $g$; a continuous function is integrable, and then the Riemann sums tend to $\int_a^b g(x)\,dx$ for *every* choice of sample points ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]], [[§35 The Definite Integral#^def-35-1|Definition §35.1]]), in particular for the points $x_i^*$ supplied by the Mean Value Theorem. So the limit in Definition §52.1 exists and
 >
 > $$
 > L = \int_a^b \sqrt{1 + [f'(x)]^2}\,dx .
@@ -95,7 +95,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 
 ^pf-52-1
 
-*Uses:* [[§52 Arc Length#^def-52-1|Def. §52.1]], [[§26 The Mean Value Theorem|§26]] (Mean Value Theorem), [[§35 The Definite Integral|§35]] (Riemann sums; continuous functions are integrable)
+*Uses:* [[§52 Arc Length#^def-52-1|Def. §52.1]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]] (Mean Value Theorem), [[§35 The Definite Integral#^def-35-1|Def. §35.1]] (Riemann sums), [[§35 The Definite Integral#^thm-35-1|§35.1]] (continuous functions are integrable)
 
 ![[m233-52-2.svg]]
 *One piece of the polygon. The chord $P_{i-1} P_i$ (red) is the hypotenuse of a right triangle with legs $\Delta x$ and $\Delta y_i$. By the Mean Value Theorem, some tangent line between $x_{i-1}$ and $x_i$ (green, at $x_i^*$) is parallel to the chord, so $\Delta y_i = f'(x_i^*)\,\Delta x$ and $|P_{i-1} P_i| = \sqrt{1 + [f'(x_i^*)]^2}\,\Delta x$, one term of a Riemann sum.*
@@ -160,7 +160,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 > L = \int_0^1 \sqrt{1 + \left(\frac{dx}{dy}\right)^2}\,dy = \int_0^1 \sqrt{1 + 4y^2}\,dy .
 > $$
 >
-> **Trigonometric substitution** ([[§46 Trigonometric Substitution|§46]]). Let $y = \frac12 \tan\theta$, so $dy = \frac12 \sec^2\theta\,d\theta$ and $\sqrt{1 + 4y^2} = \sqrt{1 + \tan^2\theta} = \sec\theta$ (as $\sec\theta > 0$ for $0 \le \theta < \pi/2$). When $y = 0$, $\theta = 0$; when $y = 1$, $\tan\theta = 2$, so $\theta = \tan^{-1} 2 = \alpha$, say. With $\int \sec^3\theta\,d\theta = \frac12\big(\sec\theta\tan\theta + \ln|\sec\theta + \tan\theta|\big) + C$ (Stewart's Example 7.2.8, [[§45 Trigonometric Integrals|§45]]; or entry 21 of the Table of Integrals),
+> **Trigonometric substitution** ([[§46 Trigonometric Substitution|§46]]). Let $y = \frac12 \tan\theta$, so $dy = \frac12 \sec^2\theta\,d\theta$ and $\sqrt{1 + 4y^2} = \sqrt{1 + \tan^2\theta} = \sec\theta$ (as $\sec\theta > 0$ for $0 \le \theta < \pi/2$). When $y = 0$, $\theta = 0$; when $y = 1$, $\tan\theta = 2$, so $\theta = \tan^{-1} 2 = \alpha$, say. With $\int \sec^3\theta\,d\theta = \frac12\big(\sec\theta\tan\theta + \ln|\sec\theta + \tan\theta|\big) + C$ (Stewart's Example 7.2.8, [[§45 Trigonometric Integrals#^ex-45-4|Example §45.4]]; or entry 21 of the Table of Integrals),
 >
 > $$
 > \begin{aligned}
@@ -186,7 +186,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 ^ex-52-2
 
 > [!remark] Remark: Arc Length Integrals Are Often Not Elementary
-> Because of the square root in Theorems §52.1 and §52.2, an arc length integral is often very hard or impossible to evaluate exactly, even for a curve as simple as the hyperbola $y = 1/x$ (Example §52.3 below). Then one settles for a numerical approximation, for instance by Simpson's Rule ([[§50 Approximate Integration|§50]]).
+> Because of the square root in Theorems §52.1 and §52.2, an arc length integral is often very hard or impossible to evaluate exactly, even for a curve as simple as the hyperbola $y = 1/x$ (Example §52.3 below). Then one settles for a numerical approximation, for instance by Simpson's Rule ([[§50 Approximate Integration#^def-50-5|Definition §50.5]]).
 
 ^rem-52-2
 
@@ -257,7 +257,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 
 ^pf-52-3
 
-*Uses:* [[§52 Arc Length#^def-52-3|Def. §52.3]], [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 1)
+*Uses:* [[§52 Arc Length#^def-52-3|Def. §52.3]], [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]] (FTC Part 1)
 
 > [!remark]- Connections
 > - Rigorous form of the step used: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] ($x \mapsto \int_a^x f$ is differentiable wherever $f$ is continuous, with derivative $f(x)$).
@@ -286,7 +286,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 ^def-52-4
 
 > [!remark] Remark: Reading the Formulas as L = ∫ ds
-> Equation (8) is the Pythagorean theorem for the small right triangle with legs $dx$ and $dy$ whose hypotenuse $ds$ runs along the tangent line. For small $dx$ the tangent segment $ds$ is close to the true arc length $\Delta s$ over the same interval, just as the tangent-line increment $dy$ is close to $\Delta y$. Equation (8) is a mnemonic for both length formulas: write $L = \int ds$, then solve (8) as (7) to get Theorem §52.1, or as (9) to get Theorem §52.2. The same $ds$ appears in the surface area formulas of [[§53 Area of a Surface of Revolution|§53]], and for a parametric curve $x = x(t)$, $y = y(t)$, (8) gives $ds = \sqrt{(dx/dt)^2 + (dy/dt)^2}\,dt$ ([[§64 Calculus with Parametric Curves|§64]]).
+> Equation (8) is the Pythagorean theorem for the small right triangle with legs $dx$ and $dy$ whose hypotenuse $ds$ runs along the tangent line. For small $dx$ the tangent segment $ds$ is close to the true arc length $\Delta s$ over the same interval, just as the tangent-line increment $dy$ is close to $\Delta y$. Equation (8) is a mnemonic for both length formulas: write $L = \int ds$, then solve (8) as (7) to get Theorem §52.1, or as (9) to get Theorem §52.2. The same $ds$ appears in the surface area formulas of [[§53 Area of a Surface of Revolution#^thm-53-3|Theorem §53.3]], and for a parametric curve $x = x(t)$, $y = y(t)$, (8) gives $ds = \sqrt{(dx/dt)^2 + (dy/dt)^2}\,dt$ ([[§64 Calculus with Parametric Curves#^def-64-1|Definition §64.1]]).
 
 ^rem-52-3
 
@@ -324,7 +324,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 > [!remark] Remark: Method — Computing an Arc Length
 > 1. **Choose the variable.** Write the curve as $y = f(x)$ or as $x = g(y)$ and use Theorem §52.1 or §52.2. Choose the form whose derivative is continuous on the whole closed interval: a vertical tangent at an endpoint makes $dy/dx$ unbounded there, while $dx/dy$ is fine ([[§52 Arc Length#^ex-52-2|Example §52.2]]).
 > 2. **Simplify $1 + (\text{derivative})^2$.** Many textbook curves, such as $x^2 - \frac18 \ln x$, $\frac{x^3}{3} + \frac{1}{4x}$ or $a\cosh(x/a)$, are chosen so that $1 + [f'(x)]^2$ is a perfect square and the root disappears ([[§52 Arc Length#^ex-52-4|Example §52.4]]). Expand $[f'(x)]^2$ and look for $1 + (A - B)^2 = (A + B)^2$, which happens when $4AB = 1$.
-> 3. **Integrate** with the substitution rule ([[§38 The Substitution Rule|§38]]), trigonometric substitution ([[§46 Trigonometric Substitution|§46]]) or a table ([[§49 Integration Using Tables and Technology|§49]]).
+> 3. **Integrate** with the substitution rule ([[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]]), trigonometric substitution ([[§46 Trigonometric Substitution|§46]]) or a table ([[§49 Integration Using Tables and Technology|§49]]).
 > 4. **If no antiderivative is available,** approximate the integral numerically, for example by Simpson's Rule ([[§52 Arc Length#^ex-52-3|Example §52.3]]).
 > 5. **Check:** the arc length is at least the straight-line distance between the endpoints ([[§52 Arc Length#^ex-52-1|Example §52.1]]), since every inscribed polygon is at least as long as the chord.
 

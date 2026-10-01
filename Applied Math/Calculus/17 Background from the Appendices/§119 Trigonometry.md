@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Appendix D.*
 
-The trigonometry used throughout the course: radian measure (the reason the derivative of $\sin x$ is $\cos x$, [[§16 Derivatives of Trigonometric Functions|§16]]), the six trigonometric functions of a general angle, the identities, with everything after the Pythagorean identity derived from the two addition formulas, the Laws of Sines and Cosines, and the graphs. The half-angle formulas are the workhorse of trigonometric integrals ([[§45 Trigonometric Integrals|§45]]), and the definitions by a point $(x, y)$ at distance $r$ are what make $x = r\cos\theta$, $y = r\sin\theta$ valid for all angles ([[§65 Polar Coordinates|§65]]).
+The trigonometry used throughout the course: radian measure (the reason the derivative of $\sin x$ is $\cos x$, [[§16 Derivatives of Trigonometric Functions#^thm-16-1|Theorem §16.1]]), the six trigonometric functions of a general angle, the identities, with everything after the Pythagorean identity derived from the two addition formulas, the Laws of Sines and Cosines, and the graphs. The half-angle formulas are the workhorse of trigonometric integrals ([[§45 Trigonometric Integrals#^thm-45-1|Theorem §45.1]], with the product identities in [[§45 Trigonometric Integrals#^thm-45-4|Theorem §45.4]]), and the definitions by a point $(x, y)$ at distance $r$ are what make $x = r\cos\theta$, $y = r\sin\theta$ valid for all angles ([[§65 Polar Coordinates#^thm-65-2|Theorem §65.2]]).
 
 ## Angles
 
@@ -203,7 +203,7 @@ For instance, an equilateral triangle with side $a$ has all angles $\pi/3$, so i
 > \sin(-\theta) = -\sin\theta \quad (11a), \qquad \cos(-\theta) = \cos\theta \quad (11b), \qquad \sin(\theta + 2\pi) = \sin\theta, \quad \cos(\theta + 2\pi) = \cos\theta \quad (12).
 > $$
 >
-> So sine is an odd function and cosine an even function ([[§1 Four Ways to Represent a Function|§1]]), and both are periodic with period $2\pi$.
+> So sine is an odd function and cosine an even function ([[§1 Four Ways to Represent a Function#^def-1-7|Definition §1.7]]), and both are periodic with period $2\pi$.
 >
 > *Stewart: Appendix D, (11a), (11b), (12)*
 
@@ -234,7 +234,7 @@ For instance, an equilateral triangle with side $a$ has all angles $\pi/3$, so i
 > [!proof]- Proof
 > Stewart outlines the proof in Exercises 89–91; here it is in full.
 >
-> **Step 1: $\cos(\alpha - \beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta$** (Exercise 89). Let $A = (\cos\alpha, \sin\alpha)$ and $B = (\cos\beta, \sin\beta)$, the points of the unit circle at angles $\alpha$ and $\beta$, and let $c = |AB|$. The angle $AOB$ between $OA$ and $OB$ is $\alpha - \beta$ up to sign and multiples of $2\pi$, which do not change its cosine (Theorem §119.5). If $A$, $O$, $B$ form a triangle, the Law of Cosines (Theorem §119.11 below, whose proof uses only (5) and (8)) with $|OA| = |OB| = 1$ gives
+> **Step 1: $\cos(\alpha - \beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta$** (Exercise 89). Let $A = (\cos\alpha, \sin\alpha)$ and $B = (\cos\beta, \sin\beta)$, the points of the unit circle at angles $\alpha$ and $\beta$, and let $c = |AB|$. The angle $\gamma$ of the triangle $AOB$ at $O$ is $\alpha - \beta$ up to sign and multiples of $2\pi$: $\gamma = \pm(\alpha - \beta) + 2\pi k$, so $\cos\gamma = \cos(\alpha - \beta)$ by (11b) and (12) (Theorem §119.5). If $A$, $O$, $B$ form a triangle, the Law of Cosines ([[§119 Trigonometry#^thm-119-11|Theorem §119.11]] below; its proof uses only (5), (8) and the Distance Formula, never the addition formulas, so the argument is not circular) with $|OA| = |OB| = 1$ gives
 >
 > $$
 > c^2 = 1 + 1 - 2\cos(\alpha - \beta) = 2 - 2\cos(\alpha - \beta) .
@@ -401,7 +401,7 @@ Label the vertices of a triangle $A$, $B$, $C$, use the same letters for the ang
 *Uses:* [[§119 Trigonometry#^def-119-4|Def. §119.4]], [[§119 Trigonometry#^thm-119-4|§119.4]], [[§117 Coordinate Geometry and Lines#^thm-117-1|§117.1]]
 
 > [!remark]- Connections
-> - In vector form, $|\mathbf{u} - \mathbf{v}|^2 = |\mathbf{u}|^2 + |\mathbf{v}|^2 - 2\,\mathbf{u} \cdot \mathbf{v}$: it is how Stewart proves $\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}||\mathbf{v}|\cos\theta$ ([[§82 The Dot Product|§82]]); the abstract version is the expansion of $\|u - v\|^2$ in an inner product space (Pythagorean theorem, [[§19 Inner Products and Norms#^ladr-6-12|LADR 6.12]]).
+> - In vector form, $|\mathbf{u} - \mathbf{v}|^2 = |\mathbf{u}|^2 + |\mathbf{v}|^2 - 2\,\mathbf{u} \cdot \mathbf{v}$: it is how Stewart proves $\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}||\mathbf{v}|\cos\theta$ ([[§82 The Dot Product#^thm-82-2|Theorem §82.2]]); the abstract version is the expansion of $\|u - v\|^2$ in an inner product space (Pythagorean theorem, [[§19 Inner Products and Norms#^ladr-6-12|LADR 6.12]]).
 
 > [!theorem] Theorem §119.12: Heron's Formula
 > The area of any triangle $ABC$ is
@@ -468,8 +468,8 @@ Label the vertices of a triangle $A$, $B$, $C$, use the same letters for the ang
 >
 > (b) With $r = 1$, $(\cos x, \sin x)$ is a point of the unit circle, so $|\cos x| \le 1$ and $|\sin x| \le 1$, and every value in $[-1, 1]$ is taken (every point of the unit circle is at some angle).
 >
-> (c) $\tan(x + \pi) = \dfrac{\sin(x + \pi)}{\cos(x + \pi)} = \dfrac{-\sin x}{-\cos x} = \tan x$ by (13), and likewise for $\cot$; $\csc$ and $\sec$ inherit the period $2\pi$ from $\sin$ and $\cos$, and since $|\sin x|, |\cos x| \le 1$ their reciprocals have absolute value $\ge 1$. The undefined points are the zeros of $\cos$ and $\sin$ (from (a) and $\cos x = \sin(x + \frac{\pi}{2})$). That $\tan$ takes every real value: on $(-\frac{\pi}{2}, \frac{\pi}{2})$ it is continuous and tends to $\pm\infty$ at the ends ([[§10 Continuity|§10]]), so by the Intermediate Value Theorem it takes every value; the same holds for $\cot$ on $(0, \pi)$, and $\csc$, $\sec$ take every value with absolute value $\ge 1$ as reciprocals of $\sin$, $\cos$, which take every value in $[-1, 1]$.
+> (c) $\tan(x + \pi) = \dfrac{\sin(x + \pi)}{\cos(x + \pi)} = \dfrac{-\sin x}{-\cos x} = \tan x$ by (13), and likewise for $\cot$; $\csc$ and $\sec$ inherit the period $2\pi$ from $\sin$ and $\cos$, and since $|\sin x|, |\cos x| \le 1$ their reciprocals have absolute value $\ge 1$. The undefined points are the zeros of $\cos$ and $\sin$ (from (a) and $\cos x = \sin(x + \frac{\pi}{2})$). That $\tan$ takes every real value: on $(-\frac{\pi}{2}, \frac{\pi}{2})$ it is continuous ([[§10 Continuity#^thm-10-4|Theorem §10.4]]) and tends to $\pm\infty$ at the ends, so by the Intermediate Value Theorem ([[§10 Continuity#^thm-10-10|Theorem §10.10]]), applied on closed subintervals $[c, d]$ with $\tan c$ below and $\tan d$ above the target value, it takes every value; the same holds for $\cot$ on $(0, \pi)$, and $\csc$, $\sec$ take every value with absolute value $\ge 1$ as reciprocals of $\sin$, $\cos$, which take every value in $[-1, 1]$.
 
 ^pf-119-13
 
-*Uses:* [[§119 Trigonometry#^def-119-4|Def. §119.4]], [[§119 Trigonometry#^thm-119-6|§119.6]], [[§10 Continuity|§10]] (continuity of tan, Intermediate Value Theorem)
+*Uses:* [[§119 Trigonometry#^def-119-4|Def. §119.4]], [[§119 Trigonometry#^thm-119-6|§119.6]], [[§10 Continuity#^thm-10-4|§10.4]], [[§10 Continuity#^thm-10-10|§10.10]]

@@ -9,7 +9,7 @@ tags: [chapter, relativity]
 ↑ [[Relativity]] · [[· A2 Relativistic Kinematics]] →
 
 **Builds on:** [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (5)
-**Used by:** [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (17), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (1)
+**Used by:** [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (17), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (1), [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (10), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (2), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (1), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (1)
 
 ## Sections
 - [[§A1.1 Classical Relativity]] — UP Vol. 3 §5.1, 5.5

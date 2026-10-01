@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 11.4.*
 
-A series with positive terms converges exactly when its partial sums are bounded, so it can be judged by comparing it with a series whose behavior is known, usually a $p$-series ([[§71 The Integral Test and Estimates of Sums|§71]]) or a geometric series ([[§70 Series|§70]]). The Direct Comparison Test compares the terms one by one: smaller than a convergent series means convergent, larger than a divergent series means divergent. When the inequality goes the wrong way, the Limit Comparison Test compares the *ratio* of the terms instead, which formalizes the habit of keeping only the dominant powers. A comparison also bounds the remainder, and so gives error estimates.
+A series with positive terms converges exactly when its partial sums are bounded, so it can be judged by comparing it with a series whose behavior is known, usually a $p$-series ([[§71 The Integral Test and Estimates of Sums#^thm-71-2|Theorem §71.2]]) or a geometric series ([[§70 Series#^thm-70-1|Theorem §70.1]]). The Direct Comparison Test compares the terms one by one: smaller than a convergent series means convergent, larger than a divergent series means divergent. When the inequality goes the wrong way, the Limit Comparison Test compares the *ratio* of the terms instead, which formalizes the habit of keeping only the dominant powers. A comparison also bounds the remainder, and so gives error estimates.
 
 ## The Direct Comparison Test
 

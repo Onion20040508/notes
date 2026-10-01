@@ -3,7 +3,8 @@
     mid arrow/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
   \draw[-stealth, thin, black!70] (-6,0) -- (5.6,0) node[right] {$x$};
   \draw[-stealth, thin, black!70] (0,-3.8) -- (0,3.2) node[above] {$y$};
-  \foreach \t in {-5,4} \draw[black!60] (\t,0.1) -- (\t,-0.1) node[below] {$\t$};
+  \draw[black!60] (-5,0.1) -- (-5,-0.1) node[below] {$-5$};
+  \draw[black!60] (4,0.1) -- (4,-0.1) node[below right] {$4$};
   \draw[figR, thick, mid arrow=0.35, mid arrow=0.8] plot[domain=-3:2, samples=80] ({4-\x*\x},\x);
   \draw[figB, thick, mid arrow=0.55] (-5,-3) -- (0,2);
   \fill (-5,-3) circle (1.8pt) node[below left] {$(-5,-3)$};

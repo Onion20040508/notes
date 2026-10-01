@@ -16,7 +16,7 @@ Direction fields and Euler's method ([[§58 Direction Fields and Euler's Method|
 ## Separable Differential Equations
 
 > [!definition] Definition §59.1: Separable Equation
-> A **separable equation** is a first-order differential equation ([[§57 Modeling with Differential Equations|§57]]) in which the expression for $dy/dx$ factors as a function of $x$ times a function of $y$:
+> A **separable equation** is a first-order differential equation ([[§57 Modeling with Differential Equations#^def-57-5|Definition §57.5]]) in which the expression for $dy/dx$ factors as a function of $x$ times a function of $y$:
 >
 > $$
 > \frac{dy}{dx} = g(x)\,f(y) .
@@ -41,7 +41,7 @@ $$
 Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solved for $y$ in terms of $x$. One constant of integration suffices: constants $C_1$ on the left and $C_2$ on the right combine into $C = C_2 - C_1$. The differential form is notation; the following theorem says what the procedure actually proves. (The technique goes back to James Bernoulli (1690) and Leibniz (1691); John Bernoulli published the general method in 1694.)
 
 > [!theorem] Theorem §59.1: Separation of Variables
-> Let $g$ be continuous on an interval $I$ and $h$ continuous on an interval $J$, and let $G$ and $H$ be antiderivatives of $g$ and $h$ ([[§33 Antiderivatives|§33]]). Let $y$ be a differentiable function on an interval $I_0 \subseteq I$ with values in $J$. Then
+> Let $g$ be continuous on an interval $I$ and $h$ continuous on an interval $J$, and let $G$ and $H$ be antiderivatives of $g$ and $h$ ([[§33 Antiderivatives#^def-33-1|Definition §33.1]]). Let $y$ be a differentiable function on an interval $I_0 \subseteq I$ with values in $J$. Then
 >
 > $$
 > h(y)\,\frac{dy}{dx} = g(x) \quad\text{on } I_0
@@ -62,7 +62,7 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 > \frac{d}{dx}\Big(\int h(y)\,dy\Big) = \frac{d}{dx}\Big(\int g(x)\,dx\Big) .
 > $$
 >
-> On the left, $y$ is a function of $x$, so by the Chain Rule ([[§17 The Chain Rule|§17]]) the left side is
+> On the left, $y$ is a function of $x$, so by the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]) the left side is
 >
 > $$
 > \frac{d}{dy}\Big(\int h(y)\,dy\Big)\frac{dy}{dx} = H'(y)\,\frac{dy}{dx} = h(y)\,\frac{dy}{dx} ,
@@ -76,11 +76,11 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 > F'(x) = h\big(y(x)\big)\,y'(x) - g(x) = 0 \qquad \text{for all } x \in I_0 .
 > $$
 >
-> A function with zero derivative on an interval is constant (Stewart 4.2, Theorem 5; [[§26 The Mean Value Theorem|§26]]), so $F(x) = C$, that is, $H(y(x)) = G(x) + C$.
+> A function with zero derivative on an interval is constant (Stewart 4.2, Theorem 5; [[§26 The Mean Value Theorem#^thm-26-3|Theorem §26.3]]), so $F(x) = C$, that is, $H(y(x)) = G(x) + C$.
 
 ^pf-59-1
 
-*Uses:* [[§17 The Chain Rule|§17]] (Chain Rule), [[§26 The Mean Value Theorem|§26]] (zero derivative on an interval implies constant), [[§33 Antiderivatives|§33]] (antiderivatives)
+*Uses:* [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§26 The Mean Value Theorem#^thm-26-3|§26.3]] (zero derivative on an interval implies constant), [[§33 Antiderivatives#^def-33-1|Def. §33.1]] (antiderivatives)
 
 > [!remark]- Connections
 > - The step "zero derivative on an interval implies constant" is proved from the Mean Value Theorem in [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]]. The interval matters: on a domain made of two intervals, $F$ may take a different constant on each piece, which is why a solution is always considered on one interval.
@@ -90,7 +90,7 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 > 2. Find the **constant solutions**: every number $y_0$ with $f(y_0) = 0$ gives a solution $y \equiv y_0$. Step 3 divides by $f(y)$ and loses them.
 > 3. For $f(y) \ne 0$, write $h(y)\,dy = g(x)\,dx$ with $h = 1/f$, and integrate both sides, with one constant $C$ ([[§59 Separable Equations#^thm-59-1|Theorem §59.1]]).
 > 4. Solve for $y$ if possible. With $\ln|y|$ or a similar term, exponentiate, and replace $\pm e^{C}$ by one arbitrary constant $A$; often $A = 0$ brings back the constant solution of step 2.
-> 5. For an initial-value problem $y(x_0) = y_0$ ([[§57 Modeling with Differential Equations|§57]]), substitute $x_0$ and $y_0$ to find the constant, and state the interval containing $x_0$ on which the formula solves the equation.
+> 5. For an initial-value problem $y(x_0) = y_0$ ([[§57 Modeling with Differential Equations#^def-57-7|Definition §57.7]]), substitute $x_0$ and $y_0$ to find the constant, and state the interval containing $x_0$ on which the formula solves the equation.
 
 ^rem-59-1
 
@@ -167,7 +167,7 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 > \frac{d}{dx}\Big(y\,e^{-x^3/3}\Big) = \big(y' - x^2 y\big)\,e^{-x^3/3} = 0 ,
 > $$
 >
-> so $y\,e^{-x^3/3} = A$ is constant (Stewart 4.2, Theorem 5) and $y = A\,e^{x^3/3}$. Multiplying by $e^{-x^3/3}$ is the integrating factor of [[§61 Linear Equations|§61]].
+> so $y\,e^{-x^3/3} = A$ is constant (Stewart 4.2, Theorem 5; [[§26 The Mean Value Theorem#^thm-26-3|Theorem §26.3]]) and $y = A\,e^{x^3/3}$. Multiplying by $e^{-x^3/3}$ is the integrating factor of [[§61 Linear Equations#^thm-61-1|Theorem §61.1]].
 >
 > *Stewart: Example 9.3.3*
 
@@ -184,7 +184,7 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 
 ^rem-59-2
 
-Stewart's Example 4 solves the circuit equation of [[§58 Direction Fields and Euler's Method|§58]] in the same way. With $L = 4$ H, $R = 12\ \Omega$ and a constant voltage $E = 60$ V, $L\,dI/dt + RI = E(t)$ becomes $dI/dt = 15 - 3I$, $I(0) = 0$. Separating, $-\frac13\ln|15 - 3I| = t + C$, so $15 - 3I = Ae^{-3t}$, and $I(0) = 0$ gives $A = 15$: $I(t) = 5 - 5e^{-3t}$. The limiting current is $\lim_{t \to \infty} I(t) = 5$ A.
+Stewart's Example 4 solves the circuit equation of [[§58 Direction Fields and Euler's Method#^def-58-2|Definition §58.2]] in the same way. With $L = 4$ H, $R = 12\ \Omega$ and a constant voltage $E = 60$ V, $L\,dI/dt + RI = E(t)$ becomes $dI/dt = 15 - 3I$, $I(0) = 0$. Separating, $-\frac13\ln|15 - 3I| = t + C$, so $15 - 3I = Ae^{-3t}$, and $I(0) = 0$ gives $A = 15$: $I(t) = 5 - 5e^{-3t}$. The limiting current is $\lim_{t \to \infty} I(t) = 5$ A.
 
 ## Orthogonal Trajectories
 
@@ -200,7 +200,7 @@ Stewart's Example 4 solves the circuit equation of [[§58 Direction Fields and E
 > [!remark] Remark: Method — Orthogonal Trajectories
 > 1. Differentiate the equation of the family (implicitly, [[§18 Implicit Differentiation|§18]]) with respect to $x$.
 > 2. Eliminate the parameter of the family, using its equation, to get one differential equation $\dfrac{dy}{dx} = F(x, y)$ that holds for all members at once.
-> 3. Perpendicular lines have negative reciprocal slopes ([[§117 Coordinate Geometry and Lines|§117]]), so the orthogonal trajectories satisfy $\dfrac{dy}{dx} = -\dfrac{1}{F(x, y)}$.
+> 3. Perpendicular lines have negative reciprocal slopes ([[§117 Coordinate Geometry and Lines#^thm-117-5|Theorem §117.5]]), so the orthogonal trajectories satisfy $\dfrac{dy}{dx} = -\dfrac{1}{F(x, y)}$.
 > 4. Solve this equation, often by separation of variables.
 
 ^rem-59-3

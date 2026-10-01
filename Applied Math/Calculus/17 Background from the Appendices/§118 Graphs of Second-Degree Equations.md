@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Appendix C.*
 
-A first-degree equation $Ax + By + C = 0$ represents a line ([[§117 Coordinate Geometry and Lines|§117]]). Second-degree equations such as $x^2 + y^2 = 1$, $y = x^2 + 1$, $\frac{x^2}{9} + \frac{y^2}{4} = 1$ and $x^2 - y^2 = 1$ represent a circle, a parabola, an ellipse and a hyperbola. This appendix gives their standard forms, the symmetry tests and intercepts used to sketch them, and the rule for shifting a graph, which together with completing the square identifies a shifted conic. The geometric definitions (foci, directrices) are in [[§67 Conic Sections|§67]].
+A first-degree equation $Ax + By + C = 0$ represents a line ([[§117 Coordinate Geometry and Lines#^thm-117-4|Theorem §117.4]]). Second-degree equations such as $x^2 + y^2 = 1$, $y = x^2 + 1$, $\frac{x^2}{9} + \frac{y^2}{4} = 1$ and $x^2 - y^2 = 1$ represent a circle, a parabola, an ellipse and a hyperbola. This appendix gives their standard forms, the symmetry tests and intercepts used to sketch them, and the rule for shifting a graph, which together with completing the square identifies a shifted conic. The geometric definitions (foci, directrices) are in [[§67 Conic Sections|§67]].
 
 > [!definition] Definition §118.1: Graph of an Equation
 > The **graph** of an equation in $x$ and $y$ is the set of all points $(x, y)$ that satisfy the equation. Conversely, an equation of a curve is an equation satisfied by the coordinates of the points on the curve and by no other point.
@@ -111,7 +111,7 @@ This is the basic principle of analytic geometry (Descartes and Fermat): a geome
 >
 > **Intersections.** Substituting $x = y + 2$ into $x = y^2$ gives $y + 2 = y^2$, so $0 = y^2 - y - 2 = (y - 2)(y + 1)$ and $y = 2$ or $y = -1$. The points of intersection are $(4, 2)$ and $(1, -1)$.
 >
-> **Sketch.** Draw the line $y = x - 2$ through these points, and the parabola $x = y^2$ (opening to the right, Proposition §118.2) through them. The region bounded by the two curves is the finite region between them: to the right of the parabola and to the left of the line, for $-1 \le y \le 2$. (This is the setting of area computations with respect to $y$ in [[§39 Areas Between Curves|§39]].)
+> **Sketch.** Draw the line $y = x - 2$ through these points, and the parabola $x = y^2$ (opening to the right, Proposition §118.2) through them. The region bounded by the two curves is the finite region between them: to the right of the parabola and to the left of the line, for $-1 \le y \le 2$. (This is the setting of area computations with respect to $y$ in [[§39 Areas Between Curves#^thm-39-3|Theorem §39.3]].)
 >
 > *Stewart: Appendix C, Example 4*
 

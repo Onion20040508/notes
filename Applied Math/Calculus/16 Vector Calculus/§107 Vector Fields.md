@@ -39,7 +39,7 @@ To picture $\mathbf{F}$, draw the arrow representing $\mathbf{F}(x, y)$ starting
 > \mathbf{F}(x, y, z) = P(x, y, z)\,\mathbf{i} + Q(x, y, z)\,\mathbf{j} + R(x, y, z)\,\mathbf{k} .
 > $$
 >
-> As for vector functions ([[§86 Vector Functions and Space Curves|§86]]), $\mathbf{F}$ is **continuous** if and only if its component functions $P$, $Q$, $R$ are continuous. Identifying the point $(x, y, z)$ with its position vector $\mathbf{x} = \langle x, y, z \rangle$, we also write $\mathbf{F}(\mathbf{x})$ for $\mathbf{F}(x, y, z)$.
+> As for vector functions ([[§86 Vector Functions and Space Curves#^prop-86-2|Proposition §86.2]]), $\mathbf{F}$ is **continuous** if and only if its component functions $P$, $Q$, $R$ are continuous. Identifying the point $(x, y, z)$ with its position vector $\mathbf{x} = \langle x, y, z \rangle$, we also write $\mathbf{F}(\mathbf{x})$ for $\mathbf{F}(x, y, z)$.
 >
 > *Stewart: 16.1, Definition 2*
 
@@ -116,7 +116,7 @@ To picture $\mathbf{F}$, draw the arrow representing $\mathbf{F}(x, y)$ starting
 ## Gradient Fields
 
 > [!definition] Definition §107.3: Gradient Vector Field
-> If $f$ is a scalar function of two variables, its gradient ([[§95 Directional Derivatives and the Gradient Vector|§95]])
+> If $f$ is a scalar function of two variables, its gradient ([[§95 Directional Derivatives and the Gradient Vector#^def-95-2|Definition §95.2]], [[§95 Directional Derivatives and the Gradient Vector#^def-95-3|Definition §95.3]])
 >
 > $$
 > \nabla f(x, y) = f_x(x, y)\,\mathbf{i} + f_y(x, y)\,\mathbf{j}
@@ -139,7 +139,7 @@ To picture $\mathbf{F}$, draw the arrow representing $\mathbf{F}(x, y)$ starting
 > \nabla f(x, y) = \frac{\partial f}{\partial x}\,\mathbf{i} + \frac{\partial f}{\partial y}\,\mathbf{j} = 2xy\,\mathbf{i} + (x^2 - 3y^2)\,\mathbf{j} .
 > $$
 >
-> Plotted together with a contour map of $f$, the gradient vectors are perpendicular to the level curves, as they must be ([[§95 Directional Derivatives and the Gradient Vector|§95]]). They are long where the level curves are close together and short where the curves are far apart: the length $|\nabla f|$ is the maximum directional derivative of $f$, and closely spaced level curves mean a steep graph. (For instance, at the origin $\nabla f = \mathbf{0}$, and there the level curve $f = 0$, which is the three lines $y = 0$, $y = \pm x$, crosses itself.)
+> Plotted together with a contour map of $f$, the gradient vectors are perpendicular to the level curves, as they must be ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Theorem §95.7]]). They are long where the level curves are close together and short where the curves are far apart: the length $|\nabla f|$ is the maximum directional derivative of $f$ ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-4|Theorem §95.4]]), and closely spaced level curves mean a steep graph. (For instance, at the origin $\nabla f = \mathbf{0}$, and there the level curve $f = 0$, which is the three lines $y = 0$, $y = \pm x$, crosses itself.)
 >
 > **(b)** The value at $(1, 1)$ of the gradient vector field of $z = x^2 y^3$: since $\nabla z = \langle 2xy^3,\ 3x^2y^2 \rangle$,
 >

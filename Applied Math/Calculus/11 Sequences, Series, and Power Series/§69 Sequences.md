@@ -54,7 +54,7 @@ A sequence is an infinite list $a_1, a_2, a_3, \ldots$, that is, a function on t
 
 ^def-69-2
 
-For example, $1 - \dfrac{n}{n+1} = \dfrac{1}{n+1}$ can be made as small as we like by taking $n$ large, so $\dfrac{n}{n+1} \to 1$. The precise version mirrors the definition of $\lim_{x \to \infty} f(x) = L$ in [[§11 Limits at Infinity; Horizontal Asymptotes|§11]] (Definition 2.6.7).
+For example, $1 - \dfrac{n}{n+1} = \dfrac{1}{n+1}$ can be made as small as we like by taking $n$ large, so $\dfrac{n}{n+1} \to 1$. The precise version mirrors the definition of $\lim_{x \to \infty} f(x) = L$ in [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Definition §11.4]] (Stewart's Definition 2.6.7).
 
 > [!definition] Definition §69.3: Precise Definition of a Limit of a Sequence
 > $\lim_{n \to \infty} a_n = L$ means: for every $\varepsilon > 0$ there is a corresponding integer $N$ such that
@@ -112,7 +112,7 @@ The only difference between $\lim_{n \to \infty} a_n = L$ and $\lim_{x \to \inft
 
 ^pf-69-1
 
-*Uses:* [[§69 Sequences#^def-69-3|Def. §69.3]], [[§69 Sequences#^def-69-4|Def. §69.4]], [[§11 Limits at Infinity; Horizontal Asymptotes|§11]] (Definitions 2.6.7 and 2.6.9)
+*Uses:* [[§69 Sequences#^def-69-3|Def. §69.3]], [[§69 Sequences#^def-69-4|Def. §69.4]], [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Def. §11.4]], [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-5|Def. §11.5]]
 
 The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$, so $a_n = f(n) \to 0$, but $\lim_{x \to \infty} \sin(\pi x)$ does not exist.
 
@@ -126,11 +126,11 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 ^cor-69-2
 
 > [!proof]+ Proof
-> $\lim_{x \to \infty} 1/x^r = 0$ for $r > 0$ (Theorem 2.6.5), so Theorem §69.1 with $f(x) = 1/x^r$ gives the result.
+> $\lim_{x \to \infty} 1/x^r = 0$ for $r > 0$ ([[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-3|Theorem §11.3]]), so Theorem §69.1 with $f(x) = 1/x^r$ gives the result.
 
 ^pf-69-2
 
-*Uses:* [[§69 Sequences#^thm-69-1|§69.1]], [[§11 Limits at Infinity; Horizontal Asymptotes|§11]] (Theorem 2.6.5)
+*Uses:* [[§69 Sequences#^thm-69-1|§69.1]], [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-3|§11.3]]
 
 > [!theorem] Theorem §69.3: Limit Laws for Sequences
 > Suppose that $\{a_n\}$ and $\{b_n\}$ are convergent sequences and $c$ is a constant. Then
@@ -151,7 +151,7 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 
 ^thm-69-3
 
-*Stewart does not prove these separately ("their proofs are similar" to those of the Limit Laws for functions, [[§8 Calculating Limits Using the Limit Laws|§8]] and Appendix F). Proofs for sequences: [[§9 Limit Theorems for Sequences#^thm-9-3|451 Thm. §9.3]] (sums and products), [[§9 Limit Theorems for Sequences#^thm-9-2|451 Thm. §9.2]] (scalar multiples) and [[§9 Limit Theorems for Sequences#^thm-9-4|451 Thm. §9.4]] (quotients).*
+*Stewart does not prove these separately ("their proofs are similar" to those of the Limit Laws for functions, [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|Theorem §8.1]], proved in 2.4 and Appendix F). Proofs for sequences: [[§9 Limit Theorems for Sequences#^thm-9-3|451 Thm. §9.3]] (sums and products), [[§9 Limit Theorems for Sequences#^thm-9-2|451 Thm. §9.2]] (scalar multiples) and [[§9 Limit Theorems for Sequences#^thm-9-4|451 Thm. §9.4]] (quotients).*
 
 > [!theorem] Theorem §69.4: Squeeze Theorem for Sequences
 > If $a_n \le b_n \le c_n$ for $n \ge n_0$ and $\displaystyle\lim_{n \to \infty} a_n = \lim_{n \to \infty} c_n = L$, then $\displaystyle\lim_{n \to \infty} b_n = L$.
@@ -161,7 +161,7 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 ^thm-69-4
 
 > [!proof]+ Proof
-> *Stewart states this without proof; the proof of the Squeeze Theorem for functions in Appendix F adapts as follows.* Let $\varepsilon > 0$. Since $a_n \to L$ there is $N_1$ with $|a_n - L| < \varepsilon$, in particular $L - \varepsilon < a_n$, for $n > N_1$. Since $c_n \to L$ there is $N_2$ with $c_n < L + \varepsilon$ for $n > N_2$. Let $N = \max\{n_0, N_1, N_2\}$. For $n > N$,
+> *Stewart states this without proof; the proof of the Squeeze Theorem for functions in Appendix F ([[§8 Calculating Limits Using the Limit Laws#^thm-8-7|Theorem §8.7]]) adapts as follows.* Let $\varepsilon > 0$. Since $a_n \to L$ there is $N_1$ with $|a_n - L| < \varepsilon$, in particular $L - \varepsilon < a_n$, for $n > N_1$. Since $c_n \to L$ there is $N_2$ with $c_n < L + \varepsilon$ for $n > N_2$. Let $N = \max\{n_0, N_1, N_2\}$. For $n > N$,
 >
 > $$
 > L - \varepsilon < a_n \le b_n \le c_n < L + \varepsilon ,
@@ -186,6 +186,59 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 ^pf-69-5
 
 *Uses:* [[§69 Sequences#^thm-69-3|§69.3]], [[§69 Sequences#^thm-69-4|§69.4]]
+
+> [!theorem] Theorem §69.6: Continuous Functions Preserve Limits of Sequences
+> If $\displaystyle\lim_{n \to \infty} a_n = L$ and the function $f$ is continuous at $L$, then
+>
+> $$
+> \lim_{n \to \infty} f(a_n) = f(L) .
+> $$
+>
+> *Stewart: 11.1, Theorem 7; proof in Appendix F*
+
+^thm-69-6
+
+> [!proof]+ Proof
+> Let $\varepsilon > 0$. Since $f$ is continuous at $L$, $\lim_{x \to L} f(x) = f(L)$, so there is $\delta > 0$ such that
+>
+> $$
+> |x - L| < \delta \quad\Longrightarrow\quad |f(x) - f(L)| < \varepsilon . \qquad (1)
+> $$
+>
+> (The limit definition gives this for $0 < |x - L| < \delta$, which is how Stewart writes it; for $x = L$ it holds trivially, and that case is needed because $a_n$ may equal $L$.) Since $a_n \to L$ and $\delta > 0$, there is an integer $N$ such that
+>
+> $$
+> n > N \quad\Longrightarrow\quad |a_n - L| < \delta . \qquad (2)
+> $$
+>
+> Combining (1) with $x = a_n$ and (2): if $n > N$ then $|f(a_n) - f(L)| < \varepsilon$. By Definition §69.3, $f(a_n) \to f(L)$.
+>
+> The same argument works if $f$ is only continuous from the right at $L$ and $a_n \ge L$ for all $n$ (or from the left and $a_n \le L$): (1) is then only needed for $L \le x < L + \delta$.
+
+^pf-69-6
+
+*Uses:* [[§69 Sequences#^def-69-3|Def. §69.3]], [[§10 Continuity#^def-10-1|Def. §10.1]], [[§9 The Precise Definition of a Limit#^def-9-1|Def. §9.1]]
+
+> [!remark]- Connections
+> - In 451 this is the *definition* of continuity ([[§17 Continuous Functions#^def-17-1|451 Def. §17.1]]: $f$ is continuous at $L$ if $f(a_n) \to f(L)$ for every sequence $a_n \to L$ in the domain), and its equivalence with the ε–δ form is [[§17 Continuous Functions#^thm-17-1|451 Thm. §17.1]]; the proof above is one half of that equivalence.
+
+> [!theorem] Corollary §69.7: Power Law
+> $$
+> \lim_{n \to \infty} a_n^p = \Big[ \lim_{n \to \infty} a_n \Big]^p \qquad \text{if } p > 0 \text{ and } a_n > 0 ,
+> $$
+>
+> provided $\lim_{n \to \infty} a_n$ exists.
+>
+> *Stewart: 11.1 (text), Power Law*
+
+^cor-69-7
+
+> [!proof]+ Proof
+> (Stewart leaves this as Exercise 94.) Let $L = \lim a_n$. Then $L \ge 0$: if $L < 0$, Definition §69.3 with $\varepsilon = -L$ would give $a_n < L + \varepsilon = 0$ for large $n$. The function $f(x) = x^p = e^{p \ln x}$ is continuous on $(0, \infty)$ ([[§10 Continuity#^thm-10-6|Theorem §10.6]], [[§10 Continuity#^thm-10-9|Theorem §10.9]]), so if $L > 0$, Theorem §69.6 gives $a_n^p = f(a_n) \to f(L) = L^p$. If $L = 0$, let $\varepsilon > 0$. There is $N$ with $0 < a_n < \varepsilon^{1/p}$ for $n > N$, and then $0 < a_n^p < \varepsilon$ because $x \mapsto x^p$ is increasing on $(0, \infty)$. So $a_n^p \to 0 = 0^p$.
+
+^pf-69-7
+
+*Uses:* [[§69 Sequences#^thm-69-6|§69.6]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§10 Continuity#^thm-10-6|§10.6]], [[§10 Continuity#^thm-10-9|§10.9]]
 
 > [!example] Example §69.1: Dividing by the Highest Power
 > **(a)** Find $\displaystyle\lim_{n \to \infty} \frac{n}{n+1}$.
@@ -213,7 +266,7 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 > [!example] Example §69.2: Passing to a Function of a Real Variable
 > **(a)** Calculate $\displaystyle\lim_{n \to \infty} \frac{\ln n}{n}$.
 >
-> Numerator and denominator both tend to $\infty$. L'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule|§28]]) applies to functions of a real variable, not to sequences, so apply it to $f(x) = (\ln x)/x$:
+> Numerator and denominator both tend to $\infty$. L'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Theorem §28.2]]) applies to functions of a real variable, not to sequences, so apply it to $f(x) = (\ln x)/x$:
 >
 > $$
 > \lim_{x \to \infty} \frac{\ln x}{x} = \lim_{x \to \infty} \frac{1/x}{1} = 0 .
@@ -223,7 +276,7 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 >
 > **(b)** Find $\displaystyle\lim_{n \to \infty} \sin\frac{\pi}{n}$.
 >
-> $\pi/n \to 0$ and sine is continuous at $0$, so by Theorem §69.6 below,
+> $\pi/n \to 0$ and sine is continuous at $0$, so by [[§69 Sequences#^thm-69-6|Theorem §69.6]],
 >
 > $$
 > \lim_{n \to \infty} \sin\frac{\pi}{n} = \sin\Big( \lim_{n \to \infty} \frac{\pi}{n} \Big) = \sin 0 = 0 .
@@ -264,59 +317,6 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 
 ^ex-69-3
 
-> [!theorem] Theorem §69.6: Continuous Functions Preserve Limits of Sequences
-> If $\displaystyle\lim_{n \to \infty} a_n = L$ and the function $f$ is continuous at $L$, then
->
-> $$
-> \lim_{n \to \infty} f(a_n) = f(L) .
-> $$
->
-> *Stewart: 11.1, Theorem 7; proof in Appendix F*
-
-^thm-69-6
-
-> [!proof]+ Proof
-> Let $\varepsilon > 0$. Since $f$ is continuous at $L$, $\lim_{x \to L} f(x) = f(L)$, so there is $\delta > 0$ such that
->
-> $$
-> |x - L| < \delta \quad\Longrightarrow\quad |f(x) - f(L)| < \varepsilon . \qquad (1)
-> $$
->
-> (The limit definition gives this for $0 < |x - L| < \delta$, which is how Stewart writes it; for $x = L$ it holds trivially, and that case is needed because $a_n$ may equal $L$.) Since $a_n \to L$ and $\delta > 0$, there is an integer $N$ such that
->
-> $$
-> n > N \quad\Longrightarrow\quad |a_n - L| < \delta . \qquad (2)
-> $$
->
-> Combining (1) with $x = a_n$ and (2): if $n > N$ then $|f(a_n) - f(L)| < \varepsilon$. By Definition §69.3, $f(a_n) \to f(L)$.
->
-> The same argument works if $f$ is only continuous from the right at $L$ and $a_n \ge L$ for all $n$ (or from the left and $a_n \le L$): (1) is then only needed for $L \le x < L + \delta$.
-
-^pf-69-6
-
-*Uses:* [[§69 Sequences#^def-69-3|Def. §69.3]], [[§10 Continuity#^def-10-1|Def. §10.1]], [[§9 The Precise Definition of a Limit|§9]] (precise definition of a limit)
-
-> [!remark]- Connections
-> - In 451 this is the *definition* of continuity ([[§17 Continuous Functions#^def-17-1|451 Def. §17.1]]: $f$ is continuous at $L$ if $f(a_n) \to f(L)$ for every sequence $a_n \to L$ in the domain), and its equivalence with the ε–δ form is [[§17 Continuous Functions#^thm-17-1|451 Thm. §17.1]]; the proof above is one half of that equivalence.
-
-> [!theorem] Corollary §69.7: Power Law
-> $$
-> \lim_{n \to \infty} a_n^p = \Big[ \lim_{n \to \infty} a_n \Big]^p \qquad \text{if } p > 0 \text{ and } a_n > 0 ,
-> $$
->
-> provided $\lim_{n \to \infty} a_n$ exists.
->
-> *Stewart: 11.1 (text), Power Law*
-
-^cor-69-7
-
-> [!proof]+ Proof
-> (Stewart leaves this as Exercise 94.) Let $L = \lim a_n$; since $a_n > 0$, $L \ge 0$. The function $f(x) = x^p$ is continuous on $(0, \infty)$ ([[§10 Continuity|§10]]), so if $L > 0$, Theorem §69.6 gives $a_n^p = f(a_n) \to f(L) = L^p$. If $L = 0$, let $\varepsilon > 0$. There is $N$ with $0 < a_n < \varepsilon^{1/p}$ for $n > N$, and then $0 < a_n^p < \varepsilon$ because $x \mapsto x^p$ is increasing on $(0, \infty)$. So $a_n^p \to 0 = 0^p$.
-
-^pf-69-7
-
-*Uses:* [[§69 Sequences#^thm-69-6|§69.6]], [[§10 Continuity|§10]] (continuity of power functions)
-
 Stewart's Example 11 classifies the geometric sequence $\{r^n\}$; the result is used throughout the chapter.
 
 > [!theorem] Theorem §69.8: The Sequence of Powers
@@ -333,7 +333,7 @@ Stewart's Example 11 classifies the geometric sequence $\{r^n\}$; the result is 
 ^thm-69-8
 
 > [!proof]+ Proof
-> **$r > 1$ and $0 < r < 1$.** From [[§11 Limits at Infinity; Horizontal Asymptotes|§11]] and the graphs of exponential functions ([[§4 Exponential Functions|§4]]), $\lim_{x \to \infty} b^x = \infty$ for $b > 1$ and $\lim_{x \to \infty} b^x = 0$ for $0 < b < 1$. With $b = r$ and Theorem §69.1, $r^n \to \infty$ if $r > 1$ and $r^n \to 0$ if $0 < r < 1$.
+> **$r > 1$ and $0 < r < 1$.** From [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-4|Theorem §11.4]] and the graphs of exponential functions ([[§4 Exponential Functions#^prop-4-2|Proposition §4.2]]), $\lim_{x \to \infty} b^x = \infty$ for $b > 1$ and $\lim_{x \to \infty} b^x = 0$ for $0 < b < 1$. With $b = r$ and Theorem §69.1, $r^n \to \infty$ if $r > 1$ and $r^n \to 0$ if $0 < r < 1$.
 >
 > **$r = 1$ and $r = 0$.** $1^n = 1 \to 1$ and $0^n = 0 \to 0$ (constant sequences).
 >
@@ -343,7 +343,7 @@ Stewart's Example 11 classifies the geometric sequence $\{r^n\}$; the result is 
 
 ^pf-69-8
 
-*Uses:* [[§69 Sequences#^thm-69-1|§69.1]], [[§69 Sequences#^thm-69-5|§69.5]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§11 Limits at Infinity; Horizontal Asymptotes|§11]] (limits of exponentials)
+*Uses:* [[§69 Sequences#^thm-69-1|§69.1]], [[§69 Sequences#^thm-69-5|§69.5]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-4|§11.4]], [[§4 Exponential Functions#^prop-4-2|§4.2]]
 
 ## Monotonic and Bounded Sequences
 
@@ -377,7 +377,7 @@ Stewart's Example 11 classifies the geometric sequence $\{r^n\}$; the result is 
 > f'(x) = \frac{(x^2 + 1) - x \cdot 2x}{(x^2+1)^2} = \frac{1 - x^2}{(x^2+1)^2} < 0 \qquad \text{whenever } x^2 > 1 .
 > $$
 >
-> So $f$ is decreasing on $(1, \infty)$, and, being continuous at $1$, on $[1, \infty)$ ([[§27 What Derivatives Tell Us About the Shape of a Graph|§27]]). Hence $a_n = f(n) > f(n+1) = a_{n+1}$ for all $n \ge 1$.
+> So $f$ is decreasing on $(1, \infty)$, and, being continuous at $1$, on $[1, \infty)$ ([[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]]). Hence $a_n = f(n) > f(n+1) = a_{n+1}$ for all $n \ge 1$.
 >
 > *Stewart: Example 11.1.13*
 
@@ -399,7 +399,7 @@ Neither condition alone forces convergence: $(-1)^n$ is bounded but divergent, a
 >
 > **Completeness Axiom.** If $S$ is a nonempty set of real numbers that has an upper bound $M$ ($x \le M$ for all $x$ in $S$), then $S$ has a least upper bound $b$.
 >
-> The axiom expresses the fact that there is no gap or hole in the real number line. In the same way, a nonempty set with a lower bound has a **greatest lower bound**.
+> The axiom expresses the fact that there is no gap or hole in the real number line ([[§116 Numbers, Inequalities, and Absolute Values#^def-116-2|Definition §116.2]]). In the same way, a nonempty set with a lower bound has a **greatest lower bound**.
 >
 > *Stewart: 11.1 (text)*
 

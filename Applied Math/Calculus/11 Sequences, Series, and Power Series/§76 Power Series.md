@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 11.8.*
 
-A power series $\sum c_n (x - a)^n$ is a "polynomial with infinitely many terms": for each $x$ it is a series of numbers, which may converge or diverge, and where it converges it defines a function of $x$. The set where it converges is always an interval centered at $a$: a single point, the whole line, or an interval of radius $R$ whose endpoints must be checked one at a time. The radius is found with the Ratio (or Root) Test of [[§74 The Ratio and Root Tests|§74]], and the endpoints with the tests of [[§71 The Integral Test and Estimates of Sums|§71]]–[[§73 Alternating Series and Absolute Convergence|§73]]. The next three sections use power series to represent functions.
+A power series $\sum c_n (x - a)^n$ is a "polynomial with infinitely many terms": for each $x$ it is a series of numbers, which may converge or diverge, and where it converges it defines a function of $x$. The set where it converges is always an interval centered at $a$: a single point, the whole line, or an interval of radius $R$ whose endpoints must be checked one at a time. The radius is found with the Ratio (or Root) Test ([[§74 The Ratio and Root Tests#^thm-74-1|Theorem §74.1]], [[§74 The Ratio and Root Tests#^thm-74-2|Theorem §74.2]]), and the endpoints with the tests of [[§71 The Integral Test and Estimates of Sums|§71]]–[[§73 Alternating Series and Absolute Convergence|§73]]. The next three sections use power series to represent functions.
 
 ## Power Series
 

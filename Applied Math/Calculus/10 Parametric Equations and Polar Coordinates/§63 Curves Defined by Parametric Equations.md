@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 10.1 · reviewed in MATH 233 (UMass, Spring 2023), with Chapter 13.*
 
-Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that loops back on itself, fails the Vertical Line Test ([[§1 Four Ways to Represent a Function|§1]]). Instead, both coordinates are given as functions of a third variable $t$, the parameter. A parametrization says more than the curve does: it also says where the point is at each time and in which direction it moves, so the same curve can be traced in many ways. This section sets up the language, shows how to identify a parametric curve by eliminating the parameter, and derives the parametric equations of the cycloid. Calculus with parametric curves follows in [[§64 Calculus with Parametric Curves|§64]]; in three dimensions the same idea becomes the vector function of [[§86 Vector Functions and Space Curves|§86]].
+Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that loops back on itself, fails the Vertical Line Test ([[§1 Four Ways to Represent a Function#^thm-1-1|Theorem §1.1]]). Instead, both coordinates are given as functions of a third variable $t$, the parameter. A parametrization says more than the curve does: it also says where the point is at each time and in which direction it moves, so the same curve can be traced in many ways. This section sets up the language, shows how to identify a parametric curve by eliminating the parameter, and derives the parametric equations of the cycloid. Calculus with parametric curves follows in [[§64 Calculus with Parametric Curves|§64]]; in three dimensions the same idea becomes the vector function of [[§86 Vector Functions and Space Curves#^def-86-1|Definition §86.1]].
 
 ## Parametric Equations
 
@@ -122,11 +122,11 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 > (x - h)^2 + (y - k)^2 = r^2\cos^2 t + r^2\sin^2 t = r^2 .
 > $$
 >
-> Conversely, every point of this circle is reached: if $(x - h)^2 + (y - k)^2 = r^2$, then $\big(\tfrac{x-h}{r}, \tfrac{y-k}{r}\big)$ is on the unit circle and so equals $(\cos t, \sin t)$ for some $t \in [0, 2\pi)$, the angle of that point ([[§119 Trigonometry|§119]]). The direction and starting point are those of Example §63.2(a), shifted.
+> Conversely, every point of this circle is reached: if $(x - h)^2 + (y - k)^2 = r^2$, then $\big(\tfrac{x-h}{r}, \tfrac{y-k}{r}\big)$ is on the unit circle and so equals $(\cos t, \sin t)$ for some $t \in [0, 2\pi)$, the angle of that point ([[§119 Trigonometry#^def-119-4|Definition §119.4]] with $r = 1$). The direction and starting point are those of Example §63.2(a), shifted.
 
 ^pf-63-1
 
-*Uses:* [[§63 Curves Defined by Parametric Equations#^ex-63-2|Ex. §63.2]], [[§118 Graphs of Second-Degree Equations|§118]] (equation of a circle), [[§119 Trigonometry|§119]] (angles and the unit circle)
+*Uses:* [[§63 Curves Defined by Parametric Equations#^ex-63-2|Ex. §63.2]], [[§118 Graphs of Second-Degree Equations#^thm-118-1|§118.1]] (equation of a circle), [[§119 Trigonometry#^def-119-4|Def. §119.4]] (the point at angle $t$ on the unit circle)
 
 > [!example] Example §63.3: One Curve, Four Motions
 > Each pair gives the position of a particle at time $t$:
@@ -161,12 +161,12 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 >
 > | $t$ | $x = \cos t$ | $y = \sin 2t$ | part of the curve |
 > |---|---|---|---|
-> | $0 \to \pi/2$ | $1 \to 0$ | $0 \to 1 \to 0$ | loop in quadrant I, from $(1, 0)$ to $(0, 0)$ |
-> | $\pi/2 \to \pi$ | $0 \to -1$ | $0 \to -1 \to 0$ | loop in quadrant III, to $(-1, 0)$ |
-> | $\pi \to 3\pi/2$ | $-1 \to 0$ | $0 \to 1 \to 0$ | loop in quadrant II, back to $(0, 0)$ |
-> | $3\pi/2 \to 2\pi$ | $0 \to 1$ | $0 \to -1 \to 0$ | loop in quadrant IV, back to $(1, 0)$ |
+> | $0 \to \pi/2$ | $1 \to 0$ | $0 \to 1 \to 0$ | arc in quadrant I, from $(1, 0)$ to $(0, 0)$ |
+> | $\pi/2 \to \pi$ | $0 \to -1$ | $0 \to -1 \to 0$ | arc in quadrant III, to $(-1, 0)$ |
+> | $\pi \to 3\pi/2$ | $-1 \to 0$ | $0 \to 1 \to 0$ | arc in quadrant II, back to $(0, 0)$ |
+> | $3\pi/2 \to 2\pi$ | $0 \to 1$ | $0 \to -1 \to 0$ | arc in quadrant IV, back to $(1, 0)$ |
 >
-> The curve is a figure eight lying on its side, passing through the origin twice (at $t = \pi/2$ and $t = 3\pi/2$), with $|x| \le 1$ and $|y| \le 1$; $y = \pm 1$ is reached at $x = \pm 1/\sqrt2$. Since $x$ and $y$ have period $2\pi$, it is traced once for $0 \le t \le 2\pi$.
+> The arcs in quadrants I and IV make up the right loop, those in quadrants III and II the left loop. The curve is a figure eight lying on its side, passing through the origin twice (at $t = \pi/2$ and $t = 3\pi/2$), with $|x| \le 1$ and $|y| \le 1$; $y = \pm 1$ is reached at $x = \pm 1/\sqrt2$. Since $x$ and $y$ have period $2\pi$, it is traced once for $0 \le t \le 2\pi$.
 >
 > *Stewart: Example 10.1.7*
 
@@ -221,7 +221,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ^pf-63-2
 
-*Uses:* [[§63 Curves Defined by Parametric Equations#^def-63-4|Def. §63.4]], [[§119 Trigonometry|§119]] (right-triangle trigonometry, rotation through an angle)
+*Uses:* [[§63 Curves Defined by Parametric Equations#^def-63-4|Def. §63.4]], [[§119 Trigonometry#^thm-119-1|§119.1]] (arc length $r\theta$), [[§119 Trigonometry#^def-119-3|Def. §119.3]] (right-triangle trigonometry), [[§119 Trigonometry#^def-119-4|Def. §119.4]] (the direction at a general angle)
 
 ![[m233-63-1.svg]]
 *Deriving the cycloid. After the circle (blue) has rotated through $\theta$, it has rolled the distance $|OT| = r\theta$, equal to the arc $PT$ (green) that has been in contact with the line. The coordinates of $P = (x, y)$ are $x = |OT| - |PQ| = r\theta - r\sin\theta$ and $y = |TC| - |QC| = r - r\cos\theta$. The red curve is the arch traced by $P$ for $0 \le \theta \le 2\pi$.*
@@ -238,7 +238,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 ^rem-63-3
 
 > [!remark]- Remark: Brachistochrone and Tautochrone
-> Galileo proposed that bridges be built in the shape of cycloids and tried to find the area under an arch (done in [[§64 Calculus with Parametric Curves|§64]]). The cycloid answers the **brachistochrone problem**, posed by Johann Bernoulli in 1696: find the curve along which a particle slides in the shortest time, under gravity, from a point $A$ to a lower point $B$ not directly beneath $A$. The answer is part of an inverted arch of a cycloid. Huygens showed by 1673 that the inverted cycloid also solves the **tautochrone problem**: wherever a particle is placed on it, it takes the same time to slide to the bottom. He proposed pendulum clocks swinging in cycloidal arcs, so that the period would not depend on the amplitude.
+> Galileo proposed that bridges be built in the shape of cycloids and tried to find the area under an arch (done in [[§64 Calculus with Parametric Curves#^ex-64-3|Example §64.3]]). The cycloid answers the **brachistochrone problem**, posed by Johann Bernoulli in 1696: find the curve along which a particle slides in the shortest time, under gravity, from a point $A$ to a lower point $B$ not directly beneath $A$. The answer is part of an inverted arch of a cycloid. Huygens showed by 1673 that the inverted cycloid also solves the **tautochrone problem**: wherever a particle is placed on it, it takes the same time to slide to the bottom. He proposed pendulum clocks swinging in cycloidal arcs, so that the period would not depend on the amplitude.
 
 ^rem-63-4
 

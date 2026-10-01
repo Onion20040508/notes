@@ -51,7 +51,7 @@ Read backwards, the geometric series $\sum x^n = \frac{1}{1-x}$ says that the fu
 >
 > **(c)** Find a power series representation of $x^3/(x + 2)$.
 >
-> This is $x^3$ times the function in (b). Since $x^3$ does not depend on $n$, it can be moved across the sigma sign (Theorem §70.6(i) with $c = x^3$):
+> This is $x^3$ times the function in (b). Since $x^3$ does not depend on $n$, it can be moved across the sigma sign ([[§70 Series#^thm-70-6|Theorem §70.6]](i) with $c = x^3$):
 >
 > $$
 > \frac{x^3}{x + 2} = x^3 \sum_{n=0}^{\infty} \frac{(-1)^n}{2^{n+1}} x^n = \sum_{n=0}^{\infty} \frac{(-1)^n}{2^{n+1}} x^{n+3} = \tfrac12 x^3 - \tfrac14 x^4 + \tfrac18 x^5 - \tfrac{1}{16} x^6 + \cdots

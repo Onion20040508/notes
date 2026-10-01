@@ -15,7 +15,7 @@ The volume under the graph of $f(x, y)$ over a rectangle is approximated by boxe
 
 ## Review of the Definite Integral
 
-For $f$ defined on $[a, b]$, divide $[a, b]$ into $n$ subintervals $[x_{i-1}, x_i]$ of equal width $\Delta x = (b - a)/n$, choose sample points $x_i^*$ in them and form the Riemann sum $\sum_{i=1}^n f(x_i^*)\,\Delta x$. Its limit as $n \to \infty$ is the definite integral ([[§35 The Definite Integral|§35]]):
+For $f$ defined on $[a, b]$, divide $[a, b]$ into $n$ subintervals $[x_{i-1}, x_i]$ of equal width $\Delta x = (b - a)/n$, choose sample points $x_i^*$ in them and form the Riemann sum $\sum_{i=1}^n f(x_i^*)\,\Delta x$. Its limit as $n \to \infty$ is the definite integral ([[§35 The Definite Integral#^def-35-1|Definition §35.1]]):
 
 $$
 \int_a^b f(x)\,dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*)\,\Delta x \qquad\text{(Stewart 15.1, Equations 1 and 2).}
@@ -52,7 +52,7 @@ and suppose first that $f(x, y) \ge 0$. Let $S = \{(x, y, z) \in \mathbb{R}^3 \m
 > V = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*)\,\Delta A . \qquad (4)
 > $$
 >
-> The double limit means that the double sum can be made as close as we like to $V$, for any choice of the sample points, by taking $m$ and $n$ sufficiently large. (This definition agrees with the volume by cross-sections of [[§40 Volumes|§40]].)
+> The double limit means that the double sum can be made as close as we like to $V$, for any choice of the sample points, by taking $m$ and $n$ sufficiently large. (This definition agrees with the volume by cross-sections of [[§40 Volumes#^def-40-2|Definition §40.2]].)
 >
 > *Stewart: 15.1, Equations 3 and 4*
 
@@ -260,13 +260,13 @@ Evaluating a double integral from its definition is even harder than for single 
 *Stewart omits the proof ("too difficult to include in this book"); it is proved in [[§15 Multivariable Integration#^thm-15-8|452 Thm. §15.8]]. Guido Fubini proved a very general version in 1907; the version for continuous functions was known to Cauchy almost a century earlier.*
 
 > [!remark] Remark: Why It Works
-> Stewart's intuitive argument, for $f(x, y) \ge 0$. By Theorem §98.2, $\iint_R f(x, y)\,dA$ is the volume $V$ of the solid $S$ above $R$ and under $z = f(x, y)$. By the volume formula of [[§40 Volumes|§40]], $V = \int_a^b A(x)\,dx$, where $A(x)$ is the area of the cross-section of $S$ in the plane through $x$ perpendicular to the $x$-axis. That cross-section is the region under the curve $z = f(x, y)$, $c \le y \le d$, with $x$ held constant, so $A(x) = \int_c^d f(x, y)\,dy$ and
+> Stewart's intuitive argument, for $f(x, y) \ge 0$. By Theorem §98.2, $\iint_R f(x, y)\,dA$ is the volume $V$ of the solid $S$ above $R$ and under $z = f(x, y)$. By the volume formula of [[§40 Volumes#^def-40-2|Definition §40.2]], $V = \int_a^b A(x)\,dx$, where $A(x)$ is the area of the cross-section of $S$ in the plane through $x$ perpendicular to the $x$-axis. That cross-section is the region under the curve $z = f(x, y)$, $c \le y \le d$, with $x$ held constant, so $A(x) = \int_c^d f(x, y)\,dy$ and
 >
 > $$
 > \iint_R f(x, y)\,dA = V = \int_a^b A(x)\,dx = \int_a^b \int_c^d f(x, y)\,dy\,dx .
 > $$
 >
-> Slicing perpendicular to the $y$-axis instead gives $\iint_R f(x, y)\,dA = \int_c^d \int_a^b f(x, y)\,dx\,dy$. So the order of integration does not matter, much as the order of differentiation does not matter in Clairaut's Theorem ([[§92 Partial Derivatives|§92]]).
+> Slicing perpendicular to the $y$-axis instead gives $\iint_R f(x, y)\,dA = \int_c^d \int_a^b f(x, y)\,dx\,dy$. So the order of integration does not matter, much as the order of differentiation does not matter in Clairaut's Theorem ([[§92 Partial Derivatives#^thm-92-2|Theorem §92.2]]).
 
 ^rem-98-2
 
@@ -277,7 +277,7 @@ Evaluating a double integral from its definition is even harder than for single 
 > - Rigorous treatment: [[§15 Multivariable Integration#^thm-15-8|452 Thm. §15.8]] (continuous $f$ on a rectangle). Hub: [[Fubini's Theorem]]. The Lebesgue versions, for $f \ge 0$ measurable and for integrable $f$ on $\mathbb{R}^p \times \mathbb{R}^q$: [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]] (Tonelli), [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]] (Fubini).
 > - Some hypothesis is needed: for $f = (x^2 - y^2)/(x^2 + y^2)^2$, unbounded near a corner of $[0,1]^2$, the two iterated integrals are $\pi/4$ and $-\pi/4$ ([[§15 Multivariable Integration#^ex-15-2|452 Ex. §15.2]]); Stewart's Exercise 15.1.57 is a similar example.
 
-> [!example] Example §98.5: Fubini's Theorem in Both Orders
+> [!example] Example §98.5: Fubini's Theorem in Practice
 > **(a)** Evaluate $\displaystyle\iint_R (x - 3y^2)\,dA$, where $R = \{(x, y) \mid 0 \le x \le 2,\ 1 \le y \le 2\}$ (compare [[§98 Double Integrals Over Rectangles#^ex-98-4|Example §98.4]]).
 >
 > Integrating first with respect to $y$:
@@ -294,23 +294,7 @@ Evaluating a double integral from its definition is even harder than for single 
 >
 > The answer is negative because $f$ is negative on $R$: the integral is the negative of the volume that lies above the graph of $f$ and below $R$.
 >
-> **(b)** Find the volume of the solid $S$ bounded by the elliptic paraboloid $x^2 + 2y^2 + z = 16$, the planes $x = 2$ and $y = 2$, and the three coordinate planes (the solid of [[§98 Double Integrals Over Rectangles#^ex-98-1|Example §98.1]]).
->
-> $S$ lies under the surface $z = 16 - x^2 - 2y^2$ and above $R = [0, 2] \times [0, 2]$, so by Theorem §98.2 and Fubini's Theorem
->
-> $$
-> \begin{aligned}
-> V &= \iint_R (16 - x^2 - 2y^2)\,dA = \int_0^2 \int_0^2 (16 - x^2 - 2y^2)\,dx\,dy = \int_0^2 \Big[ 16x - \tfrac13 x^3 - 2y^2 x \Big]_{x=0}^{x=2} dy \\
-> &= \int_0^2 \Big( \tfrac{88}{3} - 4y^2 \Big)\,dy = \Big[ \tfrac{88}{3} y - \tfrac43 y^3 \Big]_0^2 = \tfrac{176}{3} - \tfrac{32}{3} = 48 .
-> \end{aligned}
-> $$
->
-> *Stewart: Examples 15.1.5 and 15.1.7*
-
-^ex-98-5
-
-> [!example] Example §98.6: Choosing the Order of Integration
-> Evaluate $\displaystyle\iint_R y \sin(xy)\,dA$, where $R = [1, 2] \times [0, \pi]$.
+> **(b)** Evaluate $\displaystyle\iint_R y \sin(xy)\,dA$, where $R = [1, 2] \times [0, \pi]$.
 >
 > Integrate first with respect to $x$. For fixed $y$, an antiderivative of $y\sin(xy)$ in $x$ is $-\cos(xy)$, so
 >
@@ -322,9 +306,20 @@ Evaluating a double integral from its definition is even harder than for single 
 >
 > The value $0$ means that the volume $V_1$ above $R$ and below the graph equals the volume $V_2$ below $R$ and above the graph: for a function of both signs, $\iint_R f\,dA = V_1 - V_2$.
 >
-> *Stewart: Example 15.1.6*
+> **(c)** Find the volume of the solid $S$ bounded by the elliptic paraboloid $x^2 + 2y^2 + z = 16$, the planes $x = 2$ and $y = 2$, and the three coordinate planes (the solid of [[§98 Double Integrals Over Rectangles#^ex-98-1|Example §98.1]]).
+>
+> $S$ lies under the surface $z = 16 - x^2 - 2y^2$ and above $R = [0, 2] \times [0, 2]$, so by Theorem §98.2 and Fubini's Theorem
+>
+> $$
+> \begin{aligned}
+> V &= \iint_R (16 - x^2 - 2y^2)\,dA = \int_0^2 \int_0^2 (16 - x^2 - 2y^2)\,dx\,dy = \int_0^2 \Big[ 16x - \tfrac13 x^3 - 2y^2 x \Big]_{x=0}^{x=2} dy \\
+> &= \int_0^2 \Big( \tfrac{88}{3} - 4y^2 \Big)\,dy = \Big[ \tfrac{88}{3} y - \tfrac43 y^3 \Big]_0^2 = \tfrac{176}{3} - \tfrac{32}{3} = 48 .
+> \end{aligned}
+> $$
+>
+> *Stewart: Examples 15.1.5, 15.1.6 and 15.1.7*
 
-^ex-98-6
+^ex-98-5
 
 > [!theorem] Theorem §98.4: Integrals of Products
 > If $g$ is continuous on $[a, b]$ and $h$ is continuous on $[c, d]$, then
@@ -354,7 +349,7 @@ Evaluating a double integral from its definition is even harder than for single 
 
 ^pf-98-4
 
-*Uses:* [[§98 Double Integrals Over Rectangles#^thm-98-3|§98.3]], [[§35 The Definite Integral|§35]] (constant multiple property)
+*Uses:* [[§98 Double Integrals Over Rectangles#^thm-98-3|§98.3]], [[§35 The Definite Integral#^thm-35-4|§35.4]] (Property 3, constant multiples)
 
 For example (Stewart's Example 15.1.8), on $R = [0, \pi/2] \times [0, \pi/2]$,
 
@@ -373,7 +368,7 @@ the volume of the solid above $R$ and below the graph of $\sin x \cos y$, which 
 > f_{\text{avg}} = \frac{1}{A(R)} \iint_R f(x, y)\,dA ,
 > $$
 >
-> where $A(R)$ is the area of $R$. This is the analogue of $f_{\text{avg}} = \frac{1}{b - a}\int_a^b f(x)\,dx$ ([[§43 Average Value of a Function|§43]]).
+> where $A(R)$ is the area of $R$. This is the analogue of $f_{\text{avg}} = \frac{1}{b - a}\int_a^b f(x)\,dx$ ([[§43 Average Value of a Function#^def-43-1|Definition §43.1]]).
 >
 > *Stewart: 15.1 (text)*
 

@@ -29,7 +29,7 @@ Part 2 of the Fundamental Theorem of Calculus says $\int_a^b F'(x)\,dx = F(b) - 
 ^thm-109-1
 
 > [!proof]+ Proof
-> We give the proof for $f$ a function of three variables (two variables is the same with the $z$ terms dropped). By the definition of the line integral of a vector field ([[§108 Line Integrals#^def-108-8|Definition §108.8]]) and the Chain Rule ([[§94 The Chain Rule|§94]]),
+> We give the proof for $f$ a function of three variables (two variables is the same with the $z$ terms dropped). By the definition of the line integral of a vector field ([[§108 Line Integrals#^def-108-8|Definition §108.8]]) and the Chain Rule ([[§94 The Chain Rule#^thm-94-1|Theorem §94.1]]),
 >
 > $$
 > \begin{aligned}
@@ -38,13 +38,13 @@ Part 2 of the Fundamental Theorem of Calculus says $\int_a^b F'(x)\,dx = F(b) - 
 > \end{aligned}
 > $$
 >
-> The last step is Part 2 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]), applied to the function $t \mapsto f(\mathbf{r}(t))$, whose derivative is continuous.
+> The last step is Part 2 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-2|Theorem §36.2]]), applied to the function $t \mapsto f(\mathbf{r}(t))$, whose derivative is continuous.
 >
 > If $C$ is piecewise smooth, subdivide it into smooth curves $C_1, \ldots, C_n$, where $C_i$ runs from $\mathbf{r}(t_{i-1})$ to $\mathbf{r}(t_i)$. Adding the results for the pieces, the sum telescopes: $\sum_{i=1}^n \big[f(\mathbf{r}(t_i)) - f(\mathbf{r}(t_{i-1}))\big] = f(\mathbf{r}(b)) - f(\mathbf{r}(a))$.
 
 ^pf-109-1
 
-*Uses:* [[§108 Line Integrals#^def-108-8|Def. §108.8]], [[§108 Line Integrals#^def-108-2|Def. §108.2]], [[§94 The Chain Rule|§94]] (Chain Rule, case 1), [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 2)
+*Uses:* [[§108 Line Integrals#^def-108-8|Def. §108.8]], [[§108 Line Integrals#^def-108-2|Def. §108.2]], [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]]
 
 > [!remark]- Connections
 > - In the language of forms this is the generalized Stokes theorem for a 0-form on a curve, $\int_C df = f(B) - f(A)$: [[§23 The Generalized Stokes' Theorem#^thm-23-1|452 Thm. §23.1]] (hub [[Generalized Stokes' Theorem]]). It is the argument used in [[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]] to show that a form with a nonzero integral around a closed curve is not exact.
@@ -151,7 +151,7 @@ Since the line integral of any conservative field is independent of path, $\int_
 > \frac{\partial}{\partial x} f(x, y) = \frac{\partial}{\partial x} \int_{x_1}^{x} P(t, y)\,dt = P(x, y)
 > $$
 >
-> by Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]), since $t \mapsto P(t, y)$ is continuous.
+> by Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]), since $t \mapsto P(t, y)$ is continuous.
 >
 > **$\partial f/\partial y = Q$.** The same argument with a vertical segment from $(x, y_1)$ to $(x, y)$, $y_1 < y$, at the end of the path (now $dx = 0$) gives
 >
@@ -163,7 +163,7 @@ Since the line integral of any conservative field is independent of path, $\int_
 
 ^pf-109-3
 
-*Uses:* [[§109 The Fundamental Theorem for Line Integrals#^def-109-1|Def. §109.1]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-3|Def. §109.3]], [[§108 Line Integrals#^thm-108-7|§108.7]], [[§108 Line Integrals#^def-108-2|Def. §108.2]], [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 1), [[§107 Vector Fields#^def-107-4|Def. §107.4]]
+*Uses:* [[§109 The Fundamental Theorem for Line Integrals#^def-109-1|Def. §109.1]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-3|Def. §109.3]], [[§108 Line Integrals#^thm-108-7|§108.7]], [[§108 Line Integrals#^def-108-2|Def. §108.2]], [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§107 Vector Fields#^def-107-4|Def. §107.4]]
 
 ![[m233-109-1.svg]]
 *The potential in the proof of Theorem §109.3: $f(x,y)$ is the line integral of $\mathbf{F}$ from the base point $(a,b)$ to $(x,y)$, along any path. To differentiate in $x$, end the path with a short horizontal segment $C_2$ (red) inside a disk in $D$ (open region). Only $C_2$ depends on $x$, and along it the integral is $\int_{x_1}^{x} P(t,y)\,dt$, whose $x$-derivative is $P(x,y)$. A vertical last segment gives $\partial f/\partial y = Q$ in the same way.*
@@ -184,7 +184,7 @@ How can we tell whether a field $\mathbf{F}$ is conservative, and if it is, how 
 ^thm-109-4
 
 > [!proof]+ Proof
-> There is $f$ with $\mathbf{F} = \nabla f$, so $P = \partial f/\partial x$ and $Q = \partial f/\partial y$. The second-order partial derivatives $f_{xy} = \partial P/\partial y$ and $f_{yx} = \partial Q/\partial x$ are continuous on $D$, so by Clairaut's Theorem ([[§92 Partial Derivatives|§92]])
+> There is $f$ with $\mathbf{F} = \nabla f$, so $P = \partial f/\partial x$ and $Q = \partial f/\partial y$. The second-order partial derivatives $f_{xy} = \partial P/\partial y$ and $f_{yx} = \partial Q/\partial x$ are continuous on $D$, so by Clairaut's Theorem ([[§92 Partial Derivatives#^thm-92-2|Theorem §92.2]])
 >
 > $$
 > \frac{\partial P}{\partial y} = \frac{\partial^2 f}{\partial y\,\partial x} = \frac{\partial^2 f}{\partial x\,\partial y} = \frac{\partial Q}{\partial x} .
@@ -192,7 +192,7 @@ How can we tell whether a field $\mathbf{F}$ is conservative, and if it is, how 
 
 ^pf-109-4
 
-*Uses:* [[§107 Vector Fields#^def-107-4|Def. §107.4]], [[§92 Partial Derivatives|§92]] (Clairaut's Theorem)
+*Uses:* [[§107 Vector Fields#^def-107-4|Def. §107.4]], [[§92 Partial Derivatives#^thm-92-2|§92.2]]
 
 > [!remark]- Connections
 > - In 452 this is "exact implies closed", [[§22 The Algebra of Differential Forms#^prop-22-10|452 Prop. §22.10]]; its three-dimensional form $\operatorname{curl}(\nabla f) = \mathbf{0}$ is [[§111 Curl and Divergence#^thm-111-1|Theorem §111.1]]. The field of [[§110 Green's Theorem#^ex-110-5|Example §110.5]] satisfies the condition without being conservative, so the converse needs a hypothesis on the region: [[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]].
@@ -244,7 +244,7 @@ The test of Theorem §110.5 says that $\mathbf{F}$ is conservative but not how t
 
 > [!remark] Remark: Method — Finding a Potential Function
 > To find $f$ with $\nabla f = \mathbf{F}$:
-> 1. **Test first.** In the plane, check $\partial P/\partial y = \partial Q/\partial x$ (on a simply-connected domain); in space, check $\operatorname{curl}\mathbf{F} = \mathbf{0}$ ([[§111 Curl and Divergence|§111]]). If the test fails, there is no potential.
+> 1. **Test first.** In the plane, check $\partial P/\partial y = \partial Q/\partial x$ (on a simply-connected domain); in space, check $\operatorname{curl}\mathbf{F} = \mathbf{0}$ ([[§111 Curl and Divergence#^cor-111-2|Corollary §111.2]]; on all of $\mathbb{R}^3$ this suffices, [[§114 Stokes' Theorem#^thm-114-4|Theorem §114.4]]). If the test fails, there is no potential.
 > 2. **Integrate $f_x = P$ with respect to $x$**: $f = \int P\,dx + g(y)$ in the plane, or $f = \int P\,dx + g(y, z)$ in space. The "constant" of integration is a function of the other variables.
 > 3. **Differentiate with respect to $y$** and compare with $Q$. This gives $g'(y)$ (or $g_y(y, z)$), which must not depend on $x$; integrate it.
 > 4. **In space, repeat with $z$**: write $g(y, z) = (\text{found part}) + h(z)$, differentiate $f$ with respect to $z$, compare with $R$, and solve for $h'(z)$.
@@ -355,7 +355,7 @@ The test of Theorem §110.5 says that $\mathbf{F}$ is conservative but not how t
 
 ## Conservation of Energy
 
-Let a continuous force field $\mathbf{F}$ move an object of mass $m$ along a path $C$ given by $\mathbf{r}(t)$, $a \le t \le b$, from $A = \mathbf{r}(a)$ to $B = \mathbf{r}(b)$. By Newton's Second Law of Motion ([[§89 Motion in Space꞉ Velocity and Acceleration|§89]]), $\mathbf{F}(\mathbf{r}(t)) = m\,\mathbf{r}''(t)$.
+Let a continuous force field $\mathbf{F}$ move an object of mass $m$ along a path $C$ given by $\mathbf{r}(t)$, $a \le t \le b$, from $A = \mathbf{r}(a)$ to $B = \mathbf{r}(b)$. By Newton's Second Law of Motion ([[§89 Motion in Space꞉ Velocity and Acceleration#^rem-89-2|§89, Remark]]), $\mathbf{F}(\mathbf{r}(t)) = m\,\mathbf{r}''(t)$.
 
 > [!definition] Definition §109.6: Kinetic and Potential Energy
 > The **kinetic energy** of an object of mass $m$ moving with velocity $\mathbf{v}(t) = \mathbf{r}'(t)$ is $K = \frac12 m|\mathbf{v}(t)|^2$, half the mass times the square of the speed. If $\mathbf{F} = \nabla f$ is a conservative force field, the **potential energy** of an object at the point $(x, y, z)$ is $P(x, y, z) = -f(x, y, z)$, so that $\mathbf{F} = -\nabla P$.
@@ -387,11 +387,11 @@ Let a continuous force field $\mathbf{F}$ move an object of mass $m$ along a pat
 > \end{aligned}
 > $$
 >
-> The fourth step is the product rule for dot products ([[§87 Derivatives and Integrals of Vector Functions|§87]]), $\frac{d}{dt}(\mathbf{r}' \cdot \mathbf{r}') = 2\,\mathbf{r}' \cdot \mathbf{r}''$, and the sixth is the Fundamental Theorem of Calculus. With $\mathbf{v} = \mathbf{r}'$ this is (15), and (16) is (15) in the notation of Definition §109.6.
+> The fourth step is the product rule for dot products ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|Theorem §87.2]], Formula 4), $\frac{d}{dt}(\mathbf{r}' \cdot \mathbf{r}') = 2\,\mathbf{r}' \cdot \mathbf{r}''$, and the sixth is the Fundamental Theorem of Calculus. With $\mathbf{v} = \mathbf{r}'$ this is (15), and (16) is (15) in the notation of Definition §109.6.
 
 ^pf-109-5
 
-*Uses:* [[§108 Line Integrals#^def-108-8|Def. §108.8]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-6|Def. §109.6]], [[§87 Derivatives and Integrals of Vector Functions|§87]] (derivative of a dot product), [[§89 Motion in Space꞉ Velocity and Acceleration|§89]] (Newton's Second Law), [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 2)
+*Uses:* [[§108 Line Integrals#^def-108-8|Def. §108.8]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-6|Def. §109.6]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§89 Motion in Space꞉ Velocity and Acceleration#^rem-89-2|§89, Remark]] (Newton's Second Law), [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]]
 
 > [!theorem] Corollary §109.6: The Law of Conservation of Energy
 > If an object moves from a point $A$ to a point $B$ under the influence of a conservative force field, then the sum of its potential energy and its kinetic energy remains constant:

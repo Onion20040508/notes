@@ -11,7 +11,7 @@ tags: [calculus, math233]
 
 *Stewart, Section 16.7 · MATH 233 (UMass, Spring 2023): Chapter 16 Review (Q4), Practice Final Exam (Q5), Practice Final Set 1 (Part II, Q5).*
 
-Surface integrals are to surface area what line integrals are to arc length. The surface integral of a scalar function, $\iint_S f\,dS$, weights each patch of $S$ by its area; it is computed as a double integral over the parameter domain with the area factor $|\mathbf{r}_u \times \mathbf{r}_v|$ of [[§112 Parametric Surfaces and Their Areas|§112]]. The surface integral of a vector field, $\iint_S \mathbf{F} \cdot d\mathbf{S}$, is the flux of $\mathbf{F}$ across $S$: the integral of its normal component, which measures the rate of flow through $S$. Flux needs a choice of normal direction, an orientation, and its sign depends on that choice; the convention for closed surfaces is the outward normal. These integrals are one side of Stokes' Theorem and of the Divergence Theorem.
+Surface integrals are to surface area what line integrals are to arc length. The surface integral of a scalar function, $\iint_S f\,dS$, weights each patch of $S$ by its area; it is computed as a double integral over the parameter domain with the area factor $|\mathbf{r}_u \times \mathbf{r}_v|$ of [[§112 Parametric Surfaces and Their Areas#^def-112-4|Definition §112.4]]. The surface integral of a vector field, $\iint_S \mathbf{F} \cdot d\mathbf{S}$, is the flux of $\mathbf{F}$ across $S$: the integral of its normal component, which measures the rate of flow through $S$. Flux needs a choice of normal direction, an orientation, and its sign depends on that choice; the convention for closed surfaces is the outward normal. These integrals are one side of Stokes' Theorem and of the Divergence Theorem.
 
 ## Surface Integrals of Scalar Functions
 
@@ -24,7 +24,7 @@ Let $S$ have vector equation $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,
 > \iint_S f(x, y, z)\,dS = \lim_{m, n \to \infty} \sum_{i=1}^{m} \sum_{j=1}^{n} f(P_{ij}^*)\,\Delta S_{ij} . \qquad (1)
 > $$
 >
-> (Compare the line integral, [[§108 Line Integrals#^def-108-1|Definition §108.1]], and the double integral, [[§98 Double Integrals Over Rectangles|§98]].)
+> (Compare the line integral, [[§108 Line Integrals#^def-108-1|Definition §108.1]], and the double integral, [[§98 Double Integrals Over Rectangles#^def-98-2|Definition §98.2]].)
 >
 > *Stewart: 16.7, Equation 1*
 
@@ -210,7 +210,7 @@ which points in the same direction as the position vector: outward from the sphe
 ## Surface Integrals of Vector Fields; Flux
 
 > [!remark] Remark: Where the Flux Integral Comes From
-> Let $S$ be an oriented surface with unit normal $\mathbf{n}$, and imagine a fluid with density $\rho(x, y, z)$ and velocity field $\mathbf{v}(x, y, z)$ flowing through $S$ (think of $S$ as an imaginary surface, like a fishing net across a stream). The rate of flow (mass per unit time) per unit area is the vector field $\rho\mathbf{v}$. If $S$ is divided into small patches $S_{ij}$, each nearly planar, the mass of fluid per unit time crossing $S_{ij}$ in the direction of $\mathbf{n}$ is approximately $(\rho\mathbf{v} \cdot \mathbf{n})\,A(S_{ij})$, since $\rho\mathbf{v} \cdot \mathbf{n}$ is the component of $\rho\mathbf{v}$ in the direction of $\mathbf{n}$. Summing and taking the limit, by Definition §113.1 the rate of flow through $S$ is
+> Let $S$ be an oriented surface with unit normal $\mathbf{n}$, and imagine a fluid with density $\rho(x, y, z)$ and velocity field $\mathbf{v}(x, y, z)$ flowing through $S$ (think of $S$ as an imaginary surface, like a fishing net across a stream). The rate of flow (mass per unit time) per unit area is the vector field $\rho\mathbf{v}$. If $S$ is divided into small patches $S_{ij}$, each nearly planar, the mass of fluid per unit time crossing $S_{ij}$ in the direction of $\mathbf{n}$ is approximately $(\rho\mathbf{v} \cdot \mathbf{n})\,A(S_{ij})$, since $\rho\mathbf{v} \cdot \mathbf{n}$ is the component of $\rho\mathbf{v}$ in the direction of $\mathbf{n}$. Summing and taking the limit, by [[§113 Surface Integrals#^def-113-1|Definition §113.1]] the rate of flow through $S$ is
 >
 > $$
 > \iint_S \rho\mathbf{v} \cdot \mathbf{n}\,dS = \iint_S \rho(x, y, z)\,\mathbf{v}(x, y, z) \cdot \mathbf{n}(x, y, z)\,dS . \qquad (7)
@@ -326,7 +326,7 @@ Compare (9) with $\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mat
 > \end{aligned}
 > $$
 >
-> using $\int_0^{2\pi} \cos\theta\,d\theta = 0$ and the integrals of part (a). If $\mathbf{F}$ is the velocity field of a fluid with density $1$, the answer is the rate of flow through the sphere in units of mass per unit time. (The Divergence Theorem gets this in one line: [[§115 The Divergence Theorem#^rem-115-1|§115]].)
+> using $\int_0^{2\pi} \cos\theta\,d\theta = 0$ and the integrals of part (a). If $\mathbf{F}$ is the velocity field of a fluid with density $1$, the answer is the rate of flow through the sphere in units of mass per unit time. (The Divergence Theorem gets this in one line: [[§115 The Divergence Theorem#^rem-115-1|§115, Remark: Two Fluxes in One Line]].)
 >
 > *Stewart: Examples 16.7.1 and 16.7.4*
 

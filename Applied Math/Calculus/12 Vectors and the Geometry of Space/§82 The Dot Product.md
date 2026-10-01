@@ -11,7 +11,7 @@ tags: [calculus, math233]
 
 *Stewart, Section 12.3 · MATH 233 (UMass, Spring 2023): Midterm 1 Practice Questions (Q1, Q5).*
 
-The dot product multiplies two vectors and returns a number: multiply corresponding components and add. Its meaning is geometric. By the Law of Cosines, $\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta$, so the dot product measures angles, and in particular two vectors are perpendicular exactly when their dot product is $0$. The same formula gives the direction cosines of a vector, the projection of one vector onto another (the "shadow" of $\mathbf{b}$ on the line of $\mathbf{a}$), and the work done by a constant force. Projections reappear in the distance formulas of [[§84 Equations of Lines and Planes|§84]].
+The dot product multiplies two vectors and returns a number: multiply corresponding components and add. Its meaning is geometric. By the Law of Cosines, $\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta$, so the dot product measures angles, and in particular two vectors are perpendicular exactly when their dot product is $0$. The same formula gives the direction cosines of a vector, the projection of one vector onto another (the "shadow" of $\mathbf{b}$ on the line of $\mathbf{a}$), and the work done by a constant force. Projections reappear in the distance formulas of [[§84 Equations of Lines and Planes|§84]] (for instance [[§84 Equations of Lines and Planes#^thm-84-8|Theorem §84.8]], the distance from a point to a plane).
 
 ## The Dot Product of Two Vectors
 
@@ -86,7 +86,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 ^thm-82-2
 
 > [!proof]+ Proof
-> Let $\mathbf{a} = \overrightarrow{OA}$ and $\mathbf{b} = \overrightarrow{OB}$. Apply the Law of Cosines ([[§119 Trigonometry|§119]]) to the triangle $OAB$:
+> Let $\mathbf{a} = \overrightarrow{OA}$ and $\mathbf{b} = \overrightarrow{OB}$. Apply the Law of Cosines ([[§119 Trigonometry#^thm-119-11|Theorem §119.11]]) to the triangle $OAB$:
 >
 > $$
 > |AB|^2 = |OA|^2 + |OB|^2 - 2|OA|\,|OB| \cos\theta . \qquad (4)
@@ -108,7 +108,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 ^pf-82-2
 
-*Uses:* [[§82 The Dot Product#^thm-82-1|§82.1]], [[§82 The Dot Product#^def-82-2|Def. §82.2]], [[§81 Vectors#^def-81-4|Def. §81.4]], Law of Cosines ([[§119 Trigonometry|§119]])
+*Uses:* [[§82 The Dot Product#^thm-82-1|§82.1]], [[§82 The Dot Product#^def-82-2|Def. §82.2]], [[§81 Vectors#^def-81-4|Def. §81.4]], [[§119 Trigonometry#^thm-119-11|§119.11]] (Law of Cosines)
 
 > [!remark]- Connections
 > - Since $|\cos\theta| \le 1$, the theorem gives $|\mathbf{a} \cdot \mathbf{b}| \le |\mathbf{a}|\,|\mathbf{b}|$, the Cauchy–Schwarz inequality, [[§19 Inner Products and Norms#^ladr-6-14|LADR 6.14]]. In $\mathbb{R}^n$ there is no picture to measure angles, and the logic runs the other way: Cauchy–Schwarz is proved first, and then $\cos\theta = \mathbf{a} \cdot \mathbf{b}/(|\mathbf{a}||\mathbf{b}|)$ is the *definition* of the angle.
@@ -339,7 +339,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 > W = (|\mathbf{F}|\cos\theta)\,|\mathbf{D}| ,
 > $$
 >
-> where $\theta$ is the angle between $\mathbf{F}$ and $\mathbf{D}$. This extends $W = Fd$ of [[§42 Work|§42]], where the force was directed along the line of motion.
+> where $\theta$ is the angle between $\mathbf{F}$ and $\mathbf{D}$. This extends $W = Fd$ of [[§42 Work#^def-42-2|Definition §42.2]], where the force was directed along the line of motion.
 >
 > *Stewart: 12.3 (text)*
 

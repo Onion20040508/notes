@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Appendix B.*
 
-Points of the plane are identified with ordered pairs of real numbers, as points of a line were identified with real numbers in [[§116 Numbers, Inequalities, and Absolute Values|§116]]. The Pythagorean Theorem then gives the distance between two points, and the slope, the constant rate of change of $y$ with respect to $x$, gives the equations of lines: point-slope, slope-intercept, and the general linear equation $Ax + By + C = 0$. Slopes also decide when lines are parallel or perpendicular. All of this is used constantly, starting with tangent lines in [[§12 Derivatives and Rates of Change|§12]].
+Points of the plane are identified with ordered pairs of real numbers, as points of a line were identified with real numbers in [[§116 Numbers, Inequalities, and Absolute Values#^def-116-2|Definition §116.2]]. The Pythagorean Theorem then gives the distance between two points, and the slope, the constant rate of change of $y$ with respect to $x$, gives the equations of lines: point-slope, slope-intercept, and the general linear equation $Ax + By + C = 0$. Slopes also decide when lines are parallel or perpendicular. All of this is used constantly, starting with tangent lines in [[§12 Derivatives and Rates of Change#^def-12-1|Definition §12.1]].
 
 ## The Coordinate Plane
 
@@ -194,7 +194,7 @@ An equation of a line $L$ is one satisfied by the coordinates of the points on $
 ^rem-117-2
 
 > [!remark]- Connections
-> - In vector form: the direction vectors $\langle 1, m_1 \rangle$ and $\langle 1, m_2 \rangle$ have dot product $1 + m_1m_2$, so perpendicularity is orthogonality, $\langle 1, m_1 \rangle \cdot \langle 1, m_2 \rangle = 0$ ([[§19 Inner Products and Norms#^ladr-6-10|LADR 6.10]]; in Calculus, [[§82 The Dot Product|§82]]).
+> - In vector form: the direction vectors $\langle 1, m_1 \rangle$ and $\langle 1, m_2 \rangle$ have dot product $1 + m_1m_2$, so perpendicularity is orthogonality, $\langle 1, m_1 \rangle \cdot \langle 1, m_2 \rangle = 0$ ([[§19 Inner Products and Norms#^ladr-6-10|LADR 6.10]]; in Calculus, [[§82 The Dot Product#^thm-82-4|Theorem §82.4]]).
 
 > [!example] Example §117.4: Parallel and Perpendicular Lines
 > **(a)** Find an equation of the line through $(5, 2)$ parallel to $4x + 6y + 5 = 0$. In slope-intercept form the given line is $y = -\frac23 x - \frac56$, with slope $-\frac23$. A parallel line has the same slope, so the required line is $y - 2 = -\frac23(x - 5)$, that is, $3y - 6 = -2x + 10$, or $2x + 3y = 16$.

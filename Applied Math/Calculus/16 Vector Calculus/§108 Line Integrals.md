@@ -21,7 +21,7 @@ $$
 x = x(t), \qquad y = y(t), \qquad a \le t \le b, \qquad (1)
 $$
 
-or vector equation $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, and assume that $C$ is a **smooth curve**: $\mathbf{r}'$ is continuous and $\mathbf{r}'(t) \ne \mathbf{0}$ ([[§87 Derivatives and Integrals of Vector Functions|§87]]). Divide $[a, b]$ into $n$ subintervals $[t_{i-1}, t_i]$ of equal width. The points $P_i = (x(t_i), y(t_i))$ divide $C$ into $n$ subarcs, of lengths $\Delta s_1, \ldots, \Delta s_n$. Choose a point $P_i^*(x_i^*, y_i^*)$ in the $i$th subarc (it corresponds to some $t_i^*$ in $[t_{i-1}, t_i]$).
+or vector equation $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, and assume that $C$ is a **smooth curve**: $\mathbf{r}'$ is continuous and $\mathbf{r}'(t) \ne \mathbf{0}$ ([[§88 Arc Length and Curvature#^def-88-3|Definition §88.3]]). Divide $[a, b]$ into $n$ subintervals $[t_{i-1}, t_i]$ of equal width. The points $P_i = (x(t_i), y(t_i))$ divide $C$ into $n$ subarcs, of lengths $\Delta s_1, \ldots, \Delta s_n$. Choose a point $P_i^*(x_i^*, y_i^*)$ in the $i$th subarc (it corresponds to some $t_i^*$ in $[t_{i-1}, t_i]$).
 
 > [!definition] Definition §108.1: Line Integral with Respect to Arc Length
 > If $f$ is defined on a smooth curve $C$ given by Equations 1, the **line integral of $f$ along $C$** is
@@ -49,13 +49,13 @@ or vector equation $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, and as
 
 ^thm-108-1
 
-*Stewart only indicates the proof ("a similar type of argument" to the arc length formula of [[§64 Calculus with Parametric Curves|§64]]); the derivation with the Mean Value Theorem and uniform continuity is in [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]].*
+*Stewart only indicates the proof ("a similar type of argument" to the arc length formula, [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]]); the derivation with the Mean Value Theorem and uniform continuity is in [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]].*
 
 > [!remark]- Connections
 > - 452 takes Formula 3 as the definition of the scalar line integral and derives it from the Riemann sums: [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]]. One dimension up it becomes the scalar surface integral [[§18 Surface Integrals#^def-18-5|452 Def. §18.5]] ([[§113 Surface Integrals#^thm-113-1|Theorem §113.1]] here).
 
 > [!remark] Remark: Reading Formula 3
-> - **How to remember it.** If $s(t)$ is the length of $C$ between $\mathbf{r}(a)$ and $\mathbf{r}(t)$, then ([[§88 Arc Length and Curvature|§88]])
+> - **How to remember it.** If $s(t)$ is the length of $C$ between $\mathbf{r}(a)$ and $\mathbf{r}(t)$, then ([[§88 Arc Length and Curvature#^prop-88-2|Proposition §88.2]])
 >
 > $$
 > \frac{ds}{dt} = |\mathbf{r}'(t)| = \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2} .
@@ -201,11 +201,11 @@ When setting up a line integral, the hardest step is often finding a parametric 
 ^prop-108-3
 
 > [!proof]+ Proof
-> Rewrite (8) as $\mathbf{r}(t) = \mathbf{r}_0 + t\,(\mathbf{r}_1 - \mathbf{r}_0)$. For all real $t$ this is the vector equation of the line through $\mathbf{r}_0$ with direction vector $\mathbf{r}_1 - \mathbf{r}_0$ ([[§84 Equations of Lines and Planes|§84]]). At $t = 0$ it gives $\mathbf{r}_0$ and at $t = 1$ it gives $\mathbf{r}_1$, and as $t$ increases from $0$ to $1$ the point moves along the line from $\mathbf{r}_0$ to $\mathbf{r}_1$, once.
+> Rewrite (8) as $\mathbf{r}(t) = \mathbf{r}_0 + t\,(\mathbf{r}_1 - \mathbf{r}_0)$. For all real $t$ this is the vector equation of the line through $\mathbf{r}_0$ with direction vector $\mathbf{r}_1 - \mathbf{r}_0$ ([[§84 Equations of Lines and Planes#^thm-84-1|Theorem §84.1]]). At $t = 0$ it gives $\mathbf{r}_0$ and at $t = 1$ it gives $\mathbf{r}_1$, and as $t$ increases from $0$ to $1$ the point moves along the line from $\mathbf{r}_0$ to $\mathbf{r}_1$, once. (This is [[§84 Equations of Lines and Planes#^prop-84-4|Proposition §84.4]], recalled here as Stewart does.)
 
 ^pf-108-3
 
-*Uses:* [[§84 Equations of Lines and Planes|§84]] (vector equation of a line)
+*Uses:* [[§84 Equations of Lines and Planes#^thm-84-1|§84.1]], [[§84 Equations of Lines and Planes#^prop-84-4|§84.4]]
 
 > [!example] Example §108.3: Same Endpoints, Different Paths
 > Evaluate $\int_C y^2\,dx + x\,dy$ for (a) $C = C_1$, the line segment from $(-5, -3)$ to $(0, 2)$, and (b) $C = C_2$, the arc of the parabola $x = 4 - y^2$ from $(-5, -3)$ to $(0, 2)$.
@@ -261,7 +261,7 @@ When setting up a line integral, the hardest step is often finding a parametric 
 ^rem-108-2
 
 > [!proof]+ Proof
-> Let $\mathbf{r}(t) = \langle x(t), y(t) \rangle$, $a \le t \le b$, parametrize $C$. Then $\tilde{\mathbf{r}}(u) = \mathbf{r}(a + b - u)$, $a \le u \le b$, parametrizes $-C$: it starts at $\mathbf{r}(b)$ and ends at $\mathbf{r}(a)$. By the Chain Rule $\tilde{x}'(u) = -x'(a + b - u)$. By Formulas 7 and the substitution $t = a + b - u$, $dt = -du$ ([[§38 The Substitution Rule|§38]]),
+> Let $\mathbf{r}(t) = \langle x(t), y(t) \rangle$, $a \le t \le b$, parametrize $C$. Then $\tilde{\mathbf{r}}(u) = \mathbf{r}(a + b - u)$, $a \le u \le b$, parametrizes $-C$: it starts at $\mathbf{r}(b)$ and ends at $\mathbf{r}(a)$. By the Chain Rule $\tilde{x}'(u) = -x'(a + b - u)$. By Formulas 7 and the substitution $t = a + b - u$, $dt = -du$ ([[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]]),
 >
 > $$
 > \int_{-C} f\,dx = \int_a^b f(\mathbf{r}(a + b - u))\,\big(-x'(a + b - u)\big)\,du = \int_b^a f(\mathbf{r}(t))\,\big(-x'(t)\big)\,(-dt) = -\int_a^b f(\mathbf{r}(t))\,x'(t)\,dt = -\int_C f\,dx .
@@ -277,7 +277,7 @@ When setting up a line integral, the hardest step is often finding a parametric 
 
 ^pf-108-4
 
-*Uses:* [[§108 Line Integrals#^thm-108-1|§108.1]], [[§108 Line Integrals#^thm-108-2|§108.2]], [[§108 Line Integrals#^def-108-5|Def. §108.5]], [[§38 The Substitution Rule|§38]] (substitution in definite integrals)
+*Uses:* [[§108 Line Integrals#^thm-108-1|§108.1]], [[§108 Line Integrals#^thm-108-2|§108.2]], [[§108 Line Integrals#^def-108-5|Def. §108.5]], [[§38 The Substitution Rule#^thm-38-3|§38.3]]
 
 ## Line Integrals in Space
 
@@ -303,7 +303,7 @@ When setting up a line integral, the hardest step is often finding a parametric 
 > \int_C f(x, y, z)\,ds = \int_a^b f(x(t), y(t), z(t)) \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2 + \left(\frac{dz}{dt}\right)^2}\,dt \qquad (9)
 > $$
 >
-> In vector notation, Formulas 3 and 9 both read $\displaystyle\int_a^b f(\mathbf{r}(t))\,|\mathbf{r}'(t)|\,dt$. For $f = 1$ this gives $\displaystyle\int_C ds = \int_a^b |\mathbf{r}'(t)|\,dt = L$, the length of $C$ ([[§88 Arc Length and Curvature|§88]]). Also
+> In vector notation, Formulas 3 and 9 both read $\displaystyle\int_a^b f(\mathbf{r}(t))\,|\mathbf{r}'(t)|\,dt$. For $f = 1$ this gives $\displaystyle\int_C ds = \int_a^b |\mathbf{r}'(t)|\,dt = L$, the length of $C$ ([[§88 Arc Length and Curvature#^thm-88-1|Theorem §88.1]]). Also
 >
 > $$
 > \int_C f(x, y, z)\,dz = \int_a^b f(x(t), y(t), z(t))\,z'(t)\,dt ,
@@ -347,7 +347,7 @@ When setting up a line integral, the hardest step is often finding a parametric 
 ## Line Integrals of Vector Fields; Work
 
 > [!remark] Remark: Where the Work Integral Comes From
-> A constant force $\mathbf{F}$ moving an object along the displacement $\mathbf{D}$ does work $\mathbf{F} \cdot \mathbf{D}$ ([[§82 The Dot Product|§82]]). Now let $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j} + R\,\mathbf{k}$ be a continuous force field on $\mathbb{R}^3$ and $C$ a smooth curve, divided into subarcs $P_{i-1}P_i$ of lengths $\Delta s_i$ as before. If $\Delta s_i$ is small, the particle moving from $P_{i-1}$ to $P_i$ proceeds approximately in the direction of $\mathbf{T}(t_i^*)$, the unit tangent vector at $P_i^*$, so the work done along that subarc is approximately
+> A constant force $\mathbf{F}$ moving an object along the displacement $\mathbf{D}$ does work $\mathbf{F} \cdot \mathbf{D}$ ([[§82 The Dot Product#^prop-82-7|Proposition §82.7]]). Now let $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j} + R\,\mathbf{k}$ be a continuous force field on $\mathbb{R}^3$ and $C$ a smooth curve, divided into subarcs $P_{i-1}P_i$ of lengths $\Delta s_i$ as before. If $\Delta s_i$ is small, the particle moving from $P_{i-1}$ to $P_i$ proceeds approximately in the direction of $\mathbf{T}(t_i^*)$, the unit tangent vector at $P_i^*$, so the work done along that subarc is approximately
 >
 > $$
 > \mathbf{F}(x_i^*, y_i^*, z_i^*) \cdot \big[\Delta s_i\,\mathbf{T}(t_i^*)\big] = \big[\mathbf{F}(x_i^*, y_i^*, z_i^*) \cdot \mathbf{T}(t_i^*)\big]\,\Delta s_i ,

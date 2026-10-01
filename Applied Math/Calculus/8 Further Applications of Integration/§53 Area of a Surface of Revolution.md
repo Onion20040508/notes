@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 8.2.*
 
-A surface of revolution is formed when a curve is rotated about a line; it is the lateral boundary of a solid of revolution as in [[§40 Volumes|§40]] and [[§41 Volumes by Cylindrical Shells|§41]]. Its area should match intuition: painting it should take as much paint as a flat region of the same area. The section starts from cylinders and cones, whose areas come from unrolling them flat, and computes the area of a band (a frustum of a cone). As with arc length ([[§52 Arc Length|§52]]), the curve is replaced by an inscribed polygon. Rotating the polygon gives a stack of bands, and the limit of their total area is the integral $S = \int 2\pi y\,ds$. In words: circumference times arc length.
+A surface of revolution is formed when a curve is rotated about a line; it is the lateral boundary of a solid of revolution as in [[§40 Volumes|§40]] and [[§41 Volumes by Cylindrical Shells|§41]]. Its area should match intuition: painting it should take as much paint as a flat region of the same area. The section starts from cylinders and cones, whose areas come from unrolling them flat, and computes the area of a band (a frustum of a cone). As with arc length ([[§52 Arc Length#^def-52-1|Definition §52.1]]), the curve is replaced by an inscribed polygon. Rotating the polygon gives a stack of bands, and the limit of their total area is the integral $S = \int 2\pi y\,ds$. In words: circumference times arc length.
 
 ## Cylinders, Cones and Bands
 
@@ -128,7 +128,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 *Rotating the curve $y = f(x)$ about the $x$-axis. The segment $P_{i-1} P_i$ of the inscribed polygon sweeps out a band (red) with radii $y_{i-1}$ and $y_i$ and slant height $|P_{i-1} P_i| = \sqrt{1 + [f'(x_i^*)]^2}\,\Delta x$. By Theorem §53.1 its area is $2\pi \cdot \frac12(y_{i-1} + y_i) \cdot |P_{i-1} P_i|$, and adding the bands gives a Riemann sum for $\int_a^b 2\pi f(x) \sqrt{1 + [f'(x)]^2}\,dx$.*
 
 > [!remark]- Connections
-> - The surface is the parametrized surface $\mathbf{X}(x, \theta) = (x, f(x)\cos\theta, f(x)\sin\theta)$, $a \le x \le b$, $0 \le \theta \le 2\pi$. Here $\mathbf{X}_x = (1, f'\cos\theta, f'\sin\theta)$ and $\mathbf{X}_\theta = (0, -f\sin\theta, f\cos\theta)$, so $E = 1 + f'^2$, $F = 0$, $\tilde G = f^2$. The area element of [[§18 Surface Integrals#^thm-18-1|452 Thm. §18.1]] is $\sqrt{E\tilde G - F^2}\,dx\,d\theta = f\sqrt{1 + f'^2}\,dx\,d\theta$, and integrating over $\theta$ gives the integrand $2\pi f\sqrt{1 + f'^2}$ of Definition §53.2. In Calculus this general formula comes in [[§112 Parametric Surfaces and Their Areas|§112]].
+> - The surface is the parametrized surface $\mathbf{X}(x, \theta) = (x, f(x)\cos\theta, f(x)\sin\theta)$, $a \le x \le b$, $0 \le \theta \le 2\pi$. Here $\mathbf{X}_x = (1, f'\cos\theta, f'\sin\theta)$ and $\mathbf{X}_\theta = (0, -f\sin\theta, f\cos\theta)$, so $E = 1 + f'^2$, $F = 0$, $\tilde G = f^2$. The area element of [[§18 Surface Integrals#^thm-18-1|452 Thm. §18.1]] is $\sqrt{E\tilde G - F^2}\,dx\,d\theta = f\sqrt{1 + f'^2}\,dx\,d\theta$, and integrating over $\theta$ gives the integrand $2\pi f\sqrt{1 + f'^2}$ of Definition §53.2. In Calculus this general formula comes in [[§112 Parametric Surfaces and Their Areas#^def-112-4|Definition §112.4]], and the surface of revolution is worked out there in [[§112 Parametric Surfaces and Their Areas#^thm-112-3|Theorem §112.3]].
 
 > [!theorem] Theorem §53.2: Rotating a Curve x = g(y) About the x-Axis
 > If the curve is described as $x = g(y)$, $c \le y \le d$, with $y \ge 0$ and $g'$ continuous, then the area of the surface obtained by rotating it about the $x$-axis is
@@ -154,7 +154,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 
 ^pf-53-2
 
-*Uses:* [[§53 Area of a Surface of Revolution#^def-53-2|Def. §53.2]], [[§53 Area of a Surface of Revolution#^thm-53-1|§53.1]], [[§52 Arc Length#^thm-52-2|§52.2]], [[§38 The Substitution Rule|§38]] (substitution in definite integrals), [[§51 Improper Integrals|§51]]
+*Uses:* [[§53 Area of a Surface of Revolution#^def-53-2|Def. §53.2]], [[§53 Area of a Surface of Revolution#^thm-53-1|§53.1]], [[§52 Arc Length#^thm-52-2|§52.2]], [[§38 The Substitution Rule#^thm-38-3|§38.3]] (substitution in definite integrals), [[§51 Improper Integrals#^def-51-2|Def. §51.2]]
 
 > [!theorem] Theorem §53.3: Surface Area as ∫ 2π(radius) ds
 > For rotation about the $x$-axis, Equations 5 and 6 can both be written
@@ -209,7 +209,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 > S = \int \underbrace{2\pi \cdot \text{radius}}_{\text{circumference}} \, ds .
 > $$
 >
-> Compare the volume by cylindrical shells, $V = \int 2\pi \cdot \text{radius} \cdot \text{height}\,dx$ ([[§41 Volumes by Cylindrical Shells|§41]]). The surface formula has $ds$ along the curve in place of the height times $dx$.
+> Compare the volume by cylindrical shells, $V = \int 2\pi \cdot \text{radius} \cdot \text{height}\,dx$ ([[§41 Volumes by Cylindrical Shells#^thm-41-2|Theorem §41.2]]). The surface formula has $ds$ along the curve in place of the height times $dx$.
 
 ^rem-53-3
 

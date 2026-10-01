@@ -324,7 +324,7 @@ Not every equation, table or curve defines a function: it must give *exactly one
 ^def-1-8
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§18 Properties of Continuous Functions#^def-18-2|451 Def. §18.2]] (strictly increasing and strictly decreasing, on $[a, b]$). Stewart's "increasing" is the strict notion; it is what makes a function one-to-one ([[§5 Inverse Functions and Logarithms|§5]]).
+> - Rigorous treatment: [[§18 Properties of Continuous Functions#^def-18-2|451 Def. §18.2]] (strictly increasing and strictly decreasing, on $[a, b]$). Stewart's "increasing" is the strict notion; it is what makes a function one-to-one ([[§5 Inverse Functions and Logarithms#^def-5-1|Definition §5.1]]).
 
 > [!remark] Remark: Checking the Definition for x²
 > The graph of $f(x) = x^2$ suggests that $f$ is decreasing on $(-\infty, 0]$ and increasing on $[0, \infty)$. To verify this, factor the difference of two values:
@@ -333,6 +333,6 @@ Not every equation, table or curve defines a function: it must give *exactly one
 > f(x_2) - f(x_1) = x_2^2 - x_1^2 = (x_2 - x_1)(x_2 + x_1) .
 > $$
 >
-> Let $x_1 < x_2$, so $x_2 - x_1 > 0$. If $0 \le x_1 < x_2$, then $x_2 + x_1 > 0$, so $f(x_2) - f(x_1) > 0$: $f$ is increasing on $[0, \infty)$. If $x_1 < x_2 \le 0$, then $x_2 + x_1 < 0$, so $f(x_2) - f(x_1) < 0$: $f$ is decreasing on $(-\infty, 0]$. In Chapter 4 the sign of the derivative gives such conclusions directly ([[§27 What Derivatives Tell Us About the Shape of a Graph|§27]]).
+> Let $x_1 < x_2$, so $x_2 - x_1 > 0$. If $0 \le x_1 < x_2$, then $x_2 + x_1 > 0$, so $f(x_2) - f(x_1) > 0$: $f$ is increasing on $[0, \infty)$. If $x_1 < x_2 \le 0$, then $x_2 + x_1 < 0$, so $f(x_2) - f(x_1) < 0$: $f$ is decreasing on $(-\infty, 0]$. In Chapter 4 the sign of the derivative gives such conclusions directly ([[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]], the Increasing/Decreasing Test).
 
 ^rem-1-4

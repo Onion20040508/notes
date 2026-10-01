@@ -175,7 +175,7 @@ Let $S$ be traced out by $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,\mat
 > |(\Delta u\,\mathbf{r}_u^*) \times (\Delta v\,\mathbf{r}_v^*)| = |\mathbf{r}_u^* \times \mathbf{r}_v^*|\,\Delta u\,\Delta v
 > $$
 >
-> ([[§83 The Cross Product|§83]]). An approximation to the area of $S$ is $\sum_{i=1}^{m} \sum_{j=1}^{n} |\mathbf{r}_u^* \times \mathbf{r}_v^*|\,\Delta u\,\Delta v$, which gets better as the subrectangles shrink, and which is a Riemann sum for $\iint_D |\mathbf{r}_u \times \mathbf{r}_v|\,du\,dv$.
+> ([[§83 The Cross Product#^cor-83-6|Corollary §83.6]]). An approximation to the area of $S$ is $\sum_{i=1}^{m} \sum_{j=1}^{n} |\mathbf{r}_u^* \times \mathbf{r}_v^*|\,\Delta u\,\Delta v$, which gets better as the subrectangles shrink, and which is a Riemann sum for $\iint_D |\mathbf{r}_u \times \mathbf{r}_v|\,du\,dv$.
 
 ^rem-112-1
 
@@ -200,12 +200,12 @@ Let $S$ be traced out by $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,\mat
 ^def-112-4
 
 > [!remark]- Connections
-> - In 452 the area element is derived from the Gram matrix, $dS = \sqrt{\det G}\,du\,dv = |\mathbf{X}_u \times \mathbf{X}_v|\,du\,dv$: [[§18 Surface Integrals#^thm-18-1|452 Thm. §18.1]], and the area is the case $f = 1$ of [[§18 Surface Integrals#^def-18-5|452 Def. §18.5]]. The factor $|\mathbf{r}_u \times \mathbf{r}_v|$ plays the role that the Jacobian plays for a change of variables in the plane ([[§106 Change of Variables in Multiple Integrals|§106]]).
+> - In 452 the area element is derived from the Gram matrix, $dS = \sqrt{\det G}\,du\,dv = |\mathbf{X}_u \times \mathbf{X}_v|\,du\,dv$: [[§18 Surface Integrals#^thm-18-1|452 Thm. §18.1]], and the area is the case $f = 1$ of [[§18 Surface Integrals#^def-18-5|452 Def. §18.5]]. The factor $|\mathbf{r}_u \times \mathbf{r}_v|$ plays the role that the Jacobian plays for a change of variables in the plane ([[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]]).
 
 > [!example] Example §112.4: The Sphere
 > (a) Find a parametric representation of the sphere $x^2 + y^2 + z^2 = a^2$. (b) Find its surface area.
 >
-> **(a)** The sphere is $\rho = a$ in spherical coordinates ([[§105 Triple Integrals in Spherical Coordinates|§105]]), so take the angles $\phi$ and $\theta$ as parameters:
+> **(a)** The sphere is $\rho = a$ in spherical coordinates ([[§105 Triple Integrals in Spherical Coordinates#^def-105-1|Definition §105.1]]), so take the angles $\phi$ and $\theta$ as parameters:
 >
 > $$
 > \mathbf{r}(\phi, \theta) = a\sin\phi\cos\theta\,\mathbf{i} + a\sin\phi\sin\theta\,\mathbf{j} + a\cos\phi\,\mathbf{k}, \qquad D = [0, \pi] \times [0, 2\pi] .
@@ -231,7 +231,7 @@ Let $S$ be traced out by $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,\mat
 > A = \iint_D a^2\sin\phi\,dA = \int_0^{2\pi} \int_0^{\pi} a^2\sin\phi\,d\phi\,d\theta = a^2 \int_0^{2\pi} d\theta \int_0^{\pi} \sin\phi\,d\phi = a^2 (2\pi)(2) = 4\pi a^2 .
 > $$
 >
-> (The factor $a^2\sin\phi$ is the spherical-coordinates volume factor $\rho^2\sin\phi$ at $\rho = a$.)
+> (The factor $a^2\sin\phi$ is the spherical-coordinates volume factor $\rho^2\sin\phi$ of [[§105 Triple Integrals in Spherical Coordinates#^thm-105-2|Theorem §105.2]] at $\rho = a$.)
 >
 > *Stewart: Examples 16.6.4 and 16.6.10*
 
@@ -270,7 +270,7 @@ Let $S$ be traced out by $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,\mat
 
 *Uses:* [[§112 Parametric Surfaces and Their Areas#^prop-112-1|§112.1]], [[§112 Parametric Surfaces and Their Areas#^def-112-4|Def. §112.4]], [[§112 Parametric Surfaces and Their Areas#^def-112-3|Def. §112.3]]
 
-Formula 9 is the surface area formula of [[§102 Surface Area|§102]] (Stewart 15.5); note its similarity to the arc length formula $L = \int_a^b \sqrt{1 + (dy/dx)^2}\,dx$.
+Formula 9 is the surface area formula of [[§102 Surface Area#^thm-102-1|Theorem §102.1]] (Stewart 15.5, Formula 3); note its similarity to the arc length formula $L = \int_a^b \sqrt{1 + (dy/dx)^2}\,dx$ ([[§52 Arc Length#^thm-52-1|Theorem §52.1]]).
 
 > [!example] Example §112.5: Part of a Paraboloid
 > Find the area of the part of the paraboloid $z = x^2 + y^2$ that lies under the plane $z = 9$.
@@ -291,7 +291,7 @@ Formula 9 is the surface area formula of [[§102 Surface Area|§102]] (Stewart 1
 
 ^ex-112-5
 
-Is Definition §112.4 consistent with the surface area formula for surfaces of revolution from single-variable calculus ([[§53 Area of a Surface of Revolution|§53]], Stewart 8.2)?
+Is Definition §112.4 consistent with the surface area formula for surfaces of revolution from single-variable calculus ([[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]], Stewart 8.2.4)?
 
 > [!theorem] Theorem §112.3: Surfaces of Revolution
 > If $S$ is obtained by rotating the curve $y = f(x)$, $a \le x \le b$, about the $x$-axis, where $f(x) \ge 0$ and $f'$ is continuous, then
@@ -300,7 +300,7 @@ Is Definition §112.4 consistent with the surface area formula for surfaces of r
 > A(S) = 2\pi \int_a^b f(x)\sqrt{1 + [f'(x)]^2}\,dx .
 > $$
 >
-> This is the formula used to define the area of a surface of revolution in single-variable calculus.
+> This is the formula used to define the area of a surface of revolution in single-variable calculus, [[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]].
 >
 > *Stewart: 16.6 (text)*
 

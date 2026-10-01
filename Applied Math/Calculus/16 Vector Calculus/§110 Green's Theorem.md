@@ -25,7 +25,7 @@ Green's Theorem turns a line integral around a simple closed curve $C$ into a do
 ^def-110-1
 
 > [!definition] Definition §110.2: Simple Region
-> A plane region is **simple** if it is both of type I and of type II ([[§99 Double Integrals Over General Regions|§99]]). That is, it can be written both as
+> A plane region is **simple** if it is both of type I and of type II ([[§99 Double Integrals Over General Regions#^def-99-2|Definition §99.2]], [[§99 Double Integrals Over General Regions#^def-99-3|Definition §99.3]]). That is, it can be written both as
 >
 > $$
 > D = \{(x, y) \mid a \le x \le b,\ g_1(x) \le y \le g_2(x)\}
@@ -59,7 +59,7 @@ Green's Theorem turns a line integral around a simple closed curve $C$ into a do
 ^thm-110-1
 
 > [!remark] Remark: The Fundamental Theorem of Calculus for Double Integrals
-> Compare Equation 1 with Part 2 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]):
+> Compare Equation 1 with Part 2 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-2|Theorem §36.2]]):
 >
 > $$
 > \int_a^b F'(x)\,dx = F(b) - F(a) .
@@ -124,7 +124,7 @@ Green's Theorem is not easy to prove in general. Stewart proves it for simple re
 
 ^pf-110-1
 
-*Uses:* [[§110 Green's Theorem#^def-110-1|Def. §110.1]], [[§110 Green's Theorem#^def-110-2|Def. §110.2]], [[§99 Double Integrals Over General Regions|§99]] (iterated integrals over type I and II regions), [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 2), [[§108 Line Integrals#^thm-108-2|§108.2]] (line integrals with respect to x and y), [[§108 Line Integrals#^thm-108-4|§108.4]] (reversing orientation)
+*Uses:* [[§110 Green's Theorem#^def-110-1|Def. §110.1]], [[§110 Green's Theorem#^def-110-2|Def. §110.2]], [[§99 Double Integrals Over General Regions#^thm-99-1|§99.1]], [[§99 Double Integrals Over General Regions#^thm-99-2|§99.2]], [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]], [[§108 Line Integrals#^thm-108-2|§108.2]] (line integrals with respect to x and y), [[§108 Line Integrals#^thm-108-4|§108.4]] (reversing orientation)
 
 ![[m233-110-1.svg]]
 *Equation 2 on a type I region. The positively oriented boundary runs right along the bottom $C_1$, up $C_2$, left along the top $C_3$ and down $C_4$. Only $C_1$ and $C_3$ see $P\,dx$, with opposite signs because they are traversed in opposite directions. On each vertical segment at $x$ (blue), the Fundamental Theorem of Calculus in $y$ turns the difference $P(x, g_2(x)) - P(x, g_1(x))$ into $\int_{g_1}^{g_2} \partial P/\partial y\,dy$. Equation 3 is the same picture cut into horizontal segments.*
@@ -137,7 +137,7 @@ Green's Theorem is not easy to prove in general. Stewart proves it for simple re
 > 1. **Check the curve.** $C$ must be closed, simple and piecewise smooth. Find its orientation: counterclockwise, with $D$ on the left, is positive. If $C$ is traversed clockwise, then $\oint_C P\,dx + Q\,dy = -\iint_D (Q_x - P_y)\,dA$.
 > 2. **Check the field.** $P$ and $Q$ must have continuous partial derivatives on an open region containing *all* of $D$. A point of $D$ where $P$ or $Q$ is undefined ([[§110 Green's Theorem#^ex-110-5|Example §110.5]]) rules out a direct application.
 > 3. **Compute** $\dfrac{\partial Q}{\partial x} - \dfrac{\partial P}{\partial y}$. Terms of $P$ that depend on $x$ alone and terms of $Q$ that depend on $y$ alone drop out, however complicated they are.
-> 4. **Evaluate the double integral**, choosing coordinates that fit $D$: polar coordinates for disks, annuli and sectors ([[§100 Double Integrals in Polar Coordinates|§100]]), and area formulas when the integrand is constant.
+> 4. **Evaluate the double integral**, choosing coordinates that fit $D$: polar coordinates for disks, annuli and sectors ([[§100 Double Integrals in Polar Coordinates#^thm-100-1|Theorem §100.1]]), and area formulas when the integrand is constant.
 > 5. **Reverse direction.** Sometimes the line integral is the easier side: areas (Corollary §110.2), or the case $P = Q = 0$ on $C$, which gives $\iint_D (Q_x - P_y)\,dA = 0$ whatever $P$ and $Q$ do inside $D$.
 
 ^rem-110-2
@@ -291,7 +291,7 @@ $$
 
 ^pf-110-3
 
-*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§108 Line Integrals#^thm-108-4|§108.4]] (reversing orientation)
+*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§108 Line Integrals#^thm-108-4|§108.4]] (reversing orientation), [[§99 Double Integrals Over General Regions#^thm-99-4|§99.4]] (additivity over regions)
 
 > [!example] Example §110.4: Sectors of Annuli
 > **(a) A semiannulus.** Evaluate $\displaystyle\oint_C y^2\,dx + 3xy\,dy$, where $C$ is the boundary of the semiannular region $D$ in the upper half-plane between the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 4$.
@@ -372,7 +372,7 @@ $$
 
 ^pf-110-4
 
-*Uses:* [[§110 Green's Theorem#^thm-110-3|§110.3]], [[§108 Line Integrals#^thm-108-4|§108.4]] (reversing orientation)
+*Uses:* [[§110 Green's Theorem#^thm-110-3|§110.3]], [[§108 Line Integrals#^thm-108-4|§108.4]] (reversing orientation), [[§99 Double Integrals Over General Regions#^thm-99-4|§99.4]] (additivity over regions)
 
 ![[m233-110-2.svg]]
 *The cutting argument for a region with a hole. Each half $D'$ and $D''$ gets its own counterclockwise boundary. Along the two cuts (green) the upper half travels one way and the lower half the other, so those contributions cancel. What remains is the outer curve $C_1$ counterclockwise and the inner curve $C_2$ clockwise, both with $D$ on the left.*

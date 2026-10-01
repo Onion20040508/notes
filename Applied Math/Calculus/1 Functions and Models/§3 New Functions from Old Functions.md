@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 1.3.*
 
-Starting from the essential functions of [[§2 Mathematical Models꞉ A Catalog of Essential Functions|§2]], this section builds new ones in two ways. Transforming a graph (shifting, stretching, reflecting it, or taking an absolute value) changes the formula in a predictable way, so many graphs can be sketched by hand from one known graph, and a formula can be read off a given graph. Combining two functions (arithmetic operations and composition) produces new functions, whose domains must be worked out. Composition, and the reverse skill of decomposing a function into simpler ones, is what the Chain Rule ([[§17 The Chain Rule|§17]]) will act on.
+Starting from the essential functions of [[§2 Mathematical Models꞉ A Catalog of Essential Functions|§2]], this section builds new ones in two ways. Transforming a graph (shifting, stretching, reflecting it, or taking an absolute value) changes the formula in a predictable way, so many graphs can be sketched by hand from one known graph, and a formula can be read off a given graph. Combining two functions (arithmetic operations and composition) produces new functions, whose domains must be worked out. Composition, and the reverse skill of decomposing a function into simpler ones, is what the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]) will act on.
 
 ## Transformations of Functions
 
@@ -85,7 +85,7 @@ Throughout, the graph of $f$ is the set of points $(a, b)$ with $b = f(a)$ ([[§
 ^ex-3-1
 
 ![[m233-3-1.svg]]
-*Example §3.1. (a) Operations on the output: $\sqrt{x}$ (black) shifted down by $2$ (red), reflected about the $x$-axis (green), stretched vertically by $2$ (orange). All keep the domain $[0, \infty)$. (b) Operations on the input: $\sqrt{x - 2}$ (blue) is $\sqrt{x}$ moved $2$ to the right, starting at $(2, 0)$; $\sqrt{-x}$ (green) is its mirror image in the $y$-axis, with domain $(-\infty, 0]$.*
+*Example §3.1. (a) Operations on the output: $\sqrt{x}$ (black) shifted down by $2$ (red), reflected about the $x$-axis (green), stretched vertically by $2$ (orange). All keep the domain $[0, \infty)$. (b) Operations on the input: $\sqrt{x - 2}$ (blue) is $\sqrt{x}$ moved $2$ to the right, starting at $(2, 0)$; $\sqrt{-x}$ (green) is the mirror image of $\sqrt{x}$ in the $y$-axis, with domain $(-\infty, 0]$.*
 
 > [!example] Example §3.2: Combining Transformations
 > **(a)** Sketch $f(x) = x^2 + 6x + 10$. Completing the square,

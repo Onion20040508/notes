@@ -99,7 +99,7 @@ The tests so far apply only to series with positive terms. This section handles 
 > \text{(i)}\ \ b_{n+1} < b_n \ \text{ because } \frac{1}{n+1} < \frac1n , \qquad \text{(ii)}\ \ \lim_{n \to \infty} b_n = \lim_{n \to \infty} \frac1n = 0 ,
 > $$
 >
-> so it is convergent by the Alternating Series Test. Its partial sums zigzag across a value near $0.7$; the exact sum is $\ln 2 \approx 0.693$ ([[§77 Representations of Functions as Power Series|§77]]).
+> so it is convergent by the Alternating Series Test. Its partial sums zigzag across a value near $0.7$; the exact sum is $\ln 2 \approx 0.693$ (Stewart's Exercise 50; see [[§77 Representations of Functions as Power Series#^rem-77-2|the remark on Gregory's series in §77]]).
 >
 > **(b)** $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^n 3n}{4n - 1}$ is alternating, but
 >
@@ -197,7 +197,7 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 >
 > where $s_6$ denotes the sum of the terms up to $n = 6$ (the first seven terms). By the Alternating Series Estimation Theorem, $|s - s_6| \le b_7 < 0.0002$, so $0.367856 < s < 0.368256$, and $s \approx 0.368$ correct to three decimal places.
 >
-> In [[§78 Taylor and Maclaurin Series|§78]] it is shown that $e^x = \sum_{n=0}^{\infty} x^n/n!$ for all $x$, so this is an approximation of $e^{-1} = 0.367879\ldots$.
+> In [[§78 Taylor and Maclaurin Series#^thm-78-6|Theorem §78.6]] it is shown that $e^x = \sum_{n=0}^{\infty} x^n/n!$ for all $x$, so this is an approximation of $e^{-1} = 0.367879\ldots$.
 >
 > *Stewart: Example 11.5.4*
 
@@ -326,7 +326,7 @@ Whether a convergent series is absolutely or conditionally convergent decides wh
 > 1 - \tfrac12 + \tfrac13 - \tfrac14 + \tfrac15 - \tfrac16 + \tfrac17 - \tfrac18 + \cdots = \ln 2 . \qquad (4)
 > $$
 >
-> Multiplying by $\frac12$ (Theorem §70.6) gives $\frac12 - \frac14 + \frac16 - \frac18 + \cdots = \frac12 \ln 2$. Inserting zeros between the terms does not change the sum (each partial sum is repeated, but the limit is the same):
+> Multiplying by $\frac12$ ([[§70 Series#^thm-70-6|Theorem §70.6]]) gives $\frac12 - \frac14 + \frac16 - \frac18 + \cdots = \frac12 \ln 2$. Inserting zeros between the terms does not change the sum (each partial sum is repeated, but the limit is the same):
 >
 > $$
 > 0 + \tfrac12 + 0 - \tfrac14 + 0 + \tfrac16 + 0 - \tfrac18 + \cdots = \tfrac12 \ln 2 . \qquad (5)

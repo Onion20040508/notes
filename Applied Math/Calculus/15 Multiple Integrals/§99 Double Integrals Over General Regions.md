@@ -32,7 +32,7 @@ A double integral over a bounded region $D$ is defined by enclosing $D$ in a rec
 
 ^def-99-1
 
-This makes sense because $\iint_R F\,dA$ was defined in [[§98 Double Integrals Over Rectangles|§98]], and it does not matter which rectangle $R \supseteq D$ is used, since $F = 0$ outside $D$ contributes nothing. If $f(x, y) \ge 0$, then $\iint_D f(x, y)\,dA$ is the volume of the solid above $D$ and under the graph of $f$: it is the volume under the graph of $F$, which is the graph of $f$ over $D$ and the flat plane $z = 0$ elsewhere in $R$.
+This makes sense because $\iint_R F\,dA$ was defined in [[§98 Double Integrals Over Rectangles#^def-98-2|Definition §98.2]], and it does not matter which rectangle $R \supseteq D$ is used, since $F = 0$ outside $D$ contributes nothing. If $f(x, y) \ge 0$, then $\iint_D f(x, y)\,dA$ is the volume of the solid above $D$ and under the graph of $f$: it is the volume under the graph of $F$, which is the graph of $f$ over $D$ and the flat plane $z = 0$ elsewhere in $R$.
 
 $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if $f$ is continuous on $D$ and the boundary curve of $D$ is "well behaved" (in a sense outside the scope of Stewart's book), then $\iint_R F\,dA$ exists, and therefore $\iint_D f\,dA$ exists ([[§98 Double Integrals Over Rectangles#^thm-98-1|Theorem §98.1]]). In particular this is the case for the following two types of region.
 
@@ -224,7 +224,7 @@ By Theorems §99.1 and §99.2, a region that is both type I and type II gives tw
 > [!example] Example §99.4: An Integral That Needs Reversing
 > Evaluate $\displaystyle\int_0^1 \int_x^1 \sin(y^2)\,dy\,dx$.
 >
-> As it stands, we would first have to evaluate $\int \sin(y^2)\,dy$, and this is impossible in finite terms: $\int \sin(y^2)\,dy$ is not an elementary function ([[§48 Strategy for Integration|§48]]). So we change the order. Using Theorem §99.1 backward, the iterated integral is $\iint_D \sin(y^2)\,dA$ over
+> As it stands, we would first have to evaluate $\int \sin(y^2)\,dy$, and this is impossible in finite terms: $\int \sin(y^2)\,dy$ is not an elementary function ([[§48 Strategy for Integration#^thm-48-2|Theorem §48.2]]). So we change the order. Using Theorem §99.1 backward, the iterated integral is $\iint_D \sin(y^2)\,dA$ over
 >
 > $$
 > D = \{(x, y) \mid 0 \le x \le 1,\ x \le y \le 1\} ,
@@ -322,7 +322,7 @@ Assume that all of the following integrals exist.
 
 ^pf-99-3
 
-*Uses:* [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§99 Double Integrals Over General Regions#^def-99-1|Def. §99.1]], [[§35 The Definite Integral|§35]] (the single-integral properties, proved the same way)
+*Uses:* [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§99 Double Integrals Over General Regions#^def-99-1|Def. §99.1]], [[§35 The Definite Integral#^thm-35-4|§35.4]], [[§35 The Definite Integral#^thm-35-6|§35.6]] (the single-integral properties, proved the same way)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§15 Multivariable Integration#^thm-15-3|452 Thm. §15.3]] (additivity in the integrand), [[§15 Multivariable Integration#^thm-15-2|452 Thm. §15.2]] (scalar multiples), [[§15 Multivariable Integration#^thm-15-5|452 Thm. §15.5]] (comparison), where the existence of $\iint (f + g)$ and $\iint cf$ is also proved.
@@ -338,7 +338,7 @@ Assume that all of the following integrals exist.
 
 ^thm-99-4
 
-*Stewart omits the proof (it is the analogue of $\int_a^b = \int_a^c + \int_c^b$, [[§35 The Definite Integral|§35]]); see [[§15 Multivariable Integration#^thm-15-4|452 Thm. §15.4]].*
+*Stewart omits the proof (it is the analogue of $\int_a^b = \int_a^c + \int_c^b$, [[§35 The Definite Integral#^thm-35-5|Theorem §35.5]]); see [[§15 Multivariable Integration#^thm-15-4|452 Thm. §15.4]].*
 
 Property 8 evaluates double integrals over regions $D$ that are neither type I nor type II but can be cut into regions of type I or type II: integrate over each piece and add. This is what Examples §99.2 and §99.3 do when they describe a region as type I in two pieces.
 
@@ -365,11 +365,11 @@ Property 8 evaluates double integrals over regions $D$ that are neither type I n
 > \iint_D 1\,dA = \int_a^b \int_{g_1(x)}^{g_2(x)} 1\,dy\,dx = \int_a^b \big[ g_2(x) - g_1(x) \big]\,dx ,
 > $$
 >
-> which is the area between the curves $y = g_1(x)$ and $y = g_2(x)$ ([[§39 Areas Between Curves|§39]]). A type II region is the same with $x$ and $y$ exchanged, and a finite union of non-overlapping regions of these types follows by Property 8.
+> which is the area between the curves $y = g_1(x)$ and $y = g_2(x)$ ([[§39 Areas Between Curves#^thm-39-1|Theorem §39.1]]; for type II, [[§39 Areas Between Curves#^thm-39-3|Theorem §39.3]]). A type II region is the same with $x$ and $y$ exchanged, and a finite union of non-overlapping regions of these types follows by Property 8.
 
 ^pf-99-5
 
-*Uses:* [[§99 Double Integrals Over General Regions#^thm-99-1|§99.1]], [[§99 Double Integrals Over General Regions#^thm-99-2|§99.2]], [[§99 Double Integrals Over General Regions#^thm-99-4|§99.4]], [[§39 Areas Between Curves|§39]]
+*Uses:* [[§99 Double Integrals Over General Regions#^thm-99-1|§99.1]], [[§99 Double Integrals Over General Regions#^thm-99-2|§99.2]], [[§99 Double Integrals Over General Regions#^thm-99-4|§99.4]], [[§39 Areas Between Curves#^thm-39-1|§39.1]], [[§39 Areas Between Curves#^thm-39-3|§39.3]]
 
 > [!theorem] Theorem §99.6: Bounds for a Double Integral
 > If $m \le f(x, y) \le M$ for all $(x, y)$ in $D$, then
@@ -395,10 +395,10 @@ Property 8 evaluates double integrals over regions $D$ that are neither type I n
 
 *Uses:* [[§99 Double Integrals Over General Regions#^thm-99-3|§99.3]], [[§99 Double Integrals Over General Regions#^thm-99-5|§99.5]]
 
-For $m > 0$ the bounds compare the volume under the graph of $f$ with the volumes of the two cylinders with base $D$ and heights $m$ and $M$ (compare the single-integral version in [[§35 The Definite Integral|§35]]).
+For $m > 0$ the bounds compare the volume under the graph of $f$ with the volumes of the two cylinders with base $D$ and heights $m$ and $M$ (compare the single-integral version, Property 8 in [[§35 The Definite Integral#^thm-35-6|Theorem §35.6]]).
 
-> [!example] Example §99.6: Estimating a Double Integral
-> Use Property 10 to estimate $\displaystyle\iint_D e^{\sin x \cos y}\,dA$, where $D$ is the disk with center the origin and radius $2$.
+> [!remark] Remark: Estimating a Double Integral
+> Stewart's Example 15.2.6: use Property 10 to estimate $\displaystyle\iint_D e^{\sin x \cos y}\,dA$, where $D$ is the disk with center the origin and radius $2$.
 >
 > Since $-1 \le \sin x \le 1$ and $-1 \le \cos y \le 1$, we have $-1 \le \sin x \cos y \le 1$, and because the natural exponential function is increasing,
 >
@@ -411,7 +411,5 @@ For $m > 0$ the bounds compare the volume under the graph of $f$ with the volume
 > $$
 > \frac{4\pi}{e} \le \iint_D e^{\sin x \cos y}\,dA \le 4\pi e .
 > $$
->
-> *Stewart: Example 15.2.6*
 
-^ex-99-6
+^rem-99-4

@@ -11,7 +11,7 @@ tags: [calculus, math233]
 
 *Stewart, Section 12.4 · MATH 233 (UMass, Spring 2023): Midterm 1 Practice Questions (Q3), Practice Exam 1 (Q1(a)), Exam 1 Review (Q1(d)–(g)), SI Midterm 1 Problem Set (Q3(a), Q5(a)).*
 
-Given two vectors in space, the cross product produces a third vector perpendicular to both. It is defined by a formula in components, conveniently remembered as a $3 \times 3$ determinant, and then described geometrically: $\mathbf{a} \times \mathbf{b}$ is perpendicular to $\mathbf{a}$ and $\mathbf{b}$, its direction follows the right-hand rule, and its length $|\mathbf{a}||\mathbf{b}|\sin\theta$ is the area of the parallelogram spanned by $\mathbf{a}$ and $\mathbf{b}$. Unlike the dot product it is neither commutative nor associative. The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ is a determinant and measures the volume of a parallelepiped. The cross product is the standard tool for normal vectors of planes ([[§84 Equations of Lines and Planes|§84]]), curvature and the binormal vector ([[§88 Arc Length and Curvature|§88]]), and surface integrals in Chapter 16.
+Given two vectors in space, the cross product produces a third vector perpendicular to both. It is defined by a formula in components, conveniently remembered as a $3 \times 3$ determinant, and then described geometrically: $\mathbf{a} \times \mathbf{b}$ is perpendicular to $\mathbf{a}$ and $\mathbf{b}$, its direction follows the right-hand rule, and its length $|\mathbf{a}||\mathbf{b}|\sin\theta$ is the area of the parallelogram spanned by $\mathbf{a}$ and $\mathbf{b}$. Unlike the dot product it is neither commutative nor associative. The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ is a determinant and measures the volume of a parallelepiped. The cross product is the standard tool for normal vectors of planes ([[§84 Equations of Lines and Planes#^def-84-3|Definition §84.3]]), curvature and the binormal vector ([[§88 Arc Length and Curvature#^thm-88-4|Theorem §88.4]], [[§88 Arc Length and Curvature#^def-88-5|Definition §88.5]]), and surface integrals in Chapter 16.
 
 ## The Cross Product of Two Vectors
 
@@ -212,7 +212,7 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 
 ^pf-83-5
 
-*Uses:* [[§83 The Cross Product#^thm-83-4|§83.4]], [[§82 The Dot Product#^def-82-2|Def. §82.2]]
+*Uses:* [[§83 The Cross Product#^thm-83-4|§83.4]], [[§82 The Dot Product#^def-82-2|Def. §82.2]], [[§81 Vectors#^def-81-3|Def. §81.3]]
 
 > [!remark] Remark: The Geometric Characterization of a × b
 > A vector is determined by its magnitude and direction. So for nonparallel $\mathbf{a}$ and $\mathbf{b}$, $\mathbf{a} \times \mathbf{b}$ is *the* vector perpendicular to both $\mathbf{a}$ and $\mathbf{b}$, oriented by the right-hand rule, with length $|\mathbf{a}||\mathbf{b}|\sin\theta$. Physicists take this as the definition of $\mathbf{a} \times \mathbf{b}$.
@@ -441,7 +441,7 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 ^ex-83-4
 
 > [!remark] Remark: The Vector Triple Product and Kepler
-> Property 6 is used in [[§89 Motion in Space꞉ Velocity and Acceleration|§89]] to derive Kepler's First Law of planetary motion.
+> Property 6 is used in [[§89 Motion in Space꞉ Velocity and Acceleration#^thm-89-6|Theorem §89.6]] to derive Kepler's First Law of planetary motion.
 
 ^rem-83-4
 
