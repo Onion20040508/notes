@@ -9,7 +9,7 @@ tags: [chapter, classical-mechanics]
 ← [[· A2 Kinematics]] · ↑ [[Classical Mechanics]] · [[· A4 Work and Energy]] →
 
 **Builds on:** [[· A2 Kinematics|A2 Kinematics]] (6), [[· A6 Rotation|A6 Rotation]] (1), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (1), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1)
-**Used by:** [[· A2 Kinematics|A2 Kinematics]] (2), [[· A4 Work and Energy|A4 Work and Energy]] (5), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (9), [[· A6 Rotation|A6 Rotation]] (7), [[· A8 Gravitation|A8 Gravitation]] (8), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (3)
+**Used by:** [[· A2 Kinematics|A2 Kinematics]] (2), [[· A4 Work and Energy|A4 Work and Energy]] (5), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (9), [[· A6 Rotation|A6 Rotation]] (7), [[· A8 Gravitation|A8 Gravitation]] (8), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (3), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (8), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (7), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (2), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (4), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (2)
 
 ## Sections
 - [[§A3.1 Forces]] — UP Vol. 1 §5.1

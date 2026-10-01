@@ -22,6 +22,18 @@ The mechanics of particles, rigid bodies and fluids, in three levels: **A** intr
 - [[· A8 Gravitation]]
 - [[· A9 Fluid Mechanics]]
 
+## Level B — upper
+- [[· B1 Newtonian Mechanics and Conservation Laws]]
+- [[· B2 Central Forces and Orbits]]
+- [[· B3 Systems of Particles and Rotation about an Axis]]
+- [[· B4 Collisions and Scattering]]
+- [[· B5 The Calculus of Variations]]
+- [[· B6 Lagrangian Mechanics]]
+- [[· B7 Hamiltonian Mechanics and Phase Space]]
+- [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]]
+- [[· B9 Non-Inertial Frames]]
+- [[· B10 Rigid Bodies in Three Dimensions]]
+
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
 
@@ -36,6 +48,16 @@ graph TD
   A7["A7 Static Equilibrium and Elasticity"]
   A8["A8 Gravitation"]
   A9["A9 Fluid Mechanics"]
+  B1["B1 Newtonian Mechanics and Conservation Laws"]
+  B2["B2 Central Forces and Orbits"]
+  B3["B3 Systems of Particles and Rotation about an Axis"]
+  B4["B4 Collisions and Scattering"]
+  B5["B5 The Calculus of Variations"]
+  B6["B6 Lagrangian Mechanics"]
+  B7["B7 Hamiltonian Mechanics and Phase Space"]
+  B8["B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory"]
+  B9["B9 Non-Inertial Frames"]
+  B10["B10 Rigid Bodies in Three Dimensions"]
   A1 -->|10| A2
   A2 -->|6| A3
   A3 -->|5| A4
@@ -59,6 +81,57 @@ graph TD
   A4 -->|5| A9
   A7 -->|1| A9
   A8 -->|2| A9
+  A3 -->|8| B1
+  A4 -->|10| B1
+  A5 -->|1| B1
+  A6 -->|5| B1
+  A8 -->|1| B1
+  A1 -->|2| B10
+  A5 -->|3| B10
+  A6 -->|9| B10
+  B1 -->|2| B10
+  B2 -->|2| B10
+  B3 -->|4| B10
+  B6 -->|7| B10
+  B9 -->|14| B10
+  A1 -->|1| B2
+  A2 -->|2| B2
+  A3 -->|7| B2
+  A4 -->|8| B2
+  A5 -->|2| B2
+  A6 -->|3| B2
+  A8 -->|4| B2
+  B1 -->|11| B2
+  A1 -->|5| B3
+  A2 -->|2| B3
+  A3 -->|2| B3
+  A4 -->|4| B3
+  A5 -->|16| B3
+  A6 -->|8| B3
+  A4 -->|1| B4
+  A5 -->|9| B4
+  B1 -->|7| B4
+  B2 -->|4| B4
+  B3 -->|1| B4
+  A4 -->|8| B5
+  A3 -->|4| B6
+  A4 -->|1| B6
+  A6 -->|1| B6
+  B5 -->|6| B6
+  A4 -->|2| B7
+  B5 -->|2| B7
+  B6 -->|8| B7
+  A4 -->|2| B8
+  A6 -->|2| B8
+  B5 -->|4| B8
+  B6 -->|6| B8
+  B7 -->|6| B8
+  A1 -->|7| B9
+  A2 -->|5| B9
+  A3 -->|2| B9
+  A4 -->|2| B9
+  A6 -->|1| B9
+  A8 -->|3| B9
   A3 -.->|2| A2
   A8 -.->|3| A2
   A6 -.->|1| A3
@@ -67,6 +140,9 @@ graph TD
   A8 -.->|2| A4
   A7 -.->|2| A6
   A9 -.->|1| A8
+  B10 -.->|1| B3
+  B8 -.->|2| B7
+  B10 -.->|1| B9
 ```
 
 ## Planned

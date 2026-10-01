@@ -9,7 +9,7 @@ tags: [chapter, classical-mechanics]
 ← [[· A4 Work and Energy]] · ↑ [[Classical Mechanics]] · [[· A6 Rotation]] →
 
 **Builds on:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (9), [[· A4 Work and Energy|A4 Work and Energy]] (1)
-**Used by:** [[· A6 Rotation|A6 Rotation]] (5), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (4)
+**Used by:** [[· A6 Rotation|A6 Rotation]] (5), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (4), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (1), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (2), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (16), [[· B4 Collisions and Scattering|B4 Collisions and Scattering]] (9), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (3)
 
 ## Sections
 - [[§A5.1 Momentum and Impulse]] — UP Vol. 1 §9.1–9.2

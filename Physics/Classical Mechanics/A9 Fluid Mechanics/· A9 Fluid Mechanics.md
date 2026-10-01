@@ -6,7 +6,7 @@ chapter: A9
 tags: [chapter, classical-mechanics]
 ---
 # A9 Fluid Mechanics
-← [[· A8 Gravitation]] · ↑ [[Classical Mechanics]]
+← [[· A8 Gravitation]] · ↑ [[Classical Mechanics]] · [[· B1 Newtonian Mechanics and Conservation Laws]] →
 
 **Builds on:** [[· A2 Kinematics|A2 Kinematics]] (1), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (3), [[· A4 Work and Energy|A4 Work and Energy]] (5), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (1), [[· A8 Gravitation|A8 Gravitation]] (2)
 **Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (1), [[· A8 Gravitation|A8 Gravitation]] (1)
