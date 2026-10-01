@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 3.7.*
 
-The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§12 Derivatives and Rates of Change|§12]]). Whenever $y = f(x)$ has a specific meaning in a science, its derivative has one too, measured in units of $y$ per unit of $x$. This section collects such interpretations: velocity and acceleration, linear density and current in physics, rates of reaction and compressibility in chemistry, growth rates and velocity gradients in biology, and marginal cost in economics. With the differentiation rules of [[§14 Derivatives of Polynomials and Exponential Functions|§14]]–[[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]], each becomes a routine computation.
+The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§12 Derivatives and Rates of Change#^def-12-4|Definition §12.4]]). Whenever $y = f(x)$ has a specific meaning in a science, its derivative has one too, measured in units of $y$ per unit of $x$. This section collects such interpretations: velocity and acceleration, linear density and current in physics, rates of reaction and compressibility in chemistry, growth rates and velocity gradients in biology, and marginal cost in economics. With the differentiation rules of [[§14 Derivatives of Polynomials and Exponential Functions|§14]]–[[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]], each becomes a routine computation.
 
 ## Rates of Change
 
@@ -131,7 +131,7 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§12 
 
 ^ex-20-2
 
-Other rates of change in physics include power (the rate at which work is done), the rate of heat flow, the temperature gradient (the rate of change of temperature with respect to position), and the rate of decay of a radioactive substance ([[§21 Exponential Growth and Decay|§21]]).
+Other rates of change in physics include power (the rate at which work is done), the rate of heat flow, the temperature gradient (the rate of change of temperature with respect to position), and the rate of decay of a radioactive substance ([[§21 Exponential Growth and Decay#^def-21-3|Definition §21.3]]).
 
 ## Chemistry
 
@@ -285,7 +285,7 @@ Other rates of change in physics include power (the rate at which work is done),
 > C(501) - C(500) = [10{,}000 + 5(501) + 0.01(501)^2] - [10{,}000 + 5(500) + 0.01(500)^2] = 5 + 0.01(501^2 - 500^2) = 5 + 10.01 = \$15.01 ,
 > $$
 >
-> so indeed $C'(500) \approx C(501) - C(500)$. (Marginal demand, revenue and profit are taken up in Chapter 4, with optimization: [[§31 Optimization Problems|§31]].)
+> so indeed $C'(500) \approx C(501) - C(500)$. (Marginal demand, revenue and profit are taken up in Chapter 4, with optimization: [[§31 Optimization Problems#^def-31-1|Definition §31.1]].)
 >
 > *Stewart: Example 3.7.8*
 

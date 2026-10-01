@@ -22,6 +22,14 @@ My mathematics and physics notes, kept as an [Obsidian](https://obsidian.md) vau
 | [Differentiable Manifolds](Math/Differentiable%20Manifolds) | MATH 591 · Lee, *Introduction to Smooth Manifolds* | in progress |
 | [Group Theory](Math/Group%20Theory) | MATH 493 · Pinter, *A Book of Abstract Algebra* | in progress |
 
+### Applied Mathematics
+
+Computational courses, each linked to the rigorous treatment of the same results in the Mathematics subjects.
+
+| Subject | Source | Status |
+|---|---|---|
+| [Calculus](Applied%20Math/Calculus) | MATH 233 (UMass) · Stewart, *Calculus: Early Transcendentals*, 9th ed. | complete |
+
 ### Physics
 
 Physics subjects are built in levels: **A** introductory, **B** upper-level, **C** graduate.

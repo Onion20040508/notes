@@ -15,7 +15,7 @@ In [[§29 Summary of Curve Sketching|§29]] the graph was the end product of a c
 
 > [!remark] Remark: Method — Graphing with Calculus and Technology
 > 1. Graph $f$ in a first window; then let the formula guide the choice of further windows. Look for vertical asymptotes (zeros of denominators), horizontal or slant asymptotes (end behavior), and the behavior at $x$-intercepts (a factor $(x - r)^k$ with $k$ even touches the axis without crossing; with $k \ge 3$ odd it crosses with a horizontal tangent).
-> 2. Compute $f'$ and $f''$. Their sign changes locate the extreme values and inflection points. Where they cannot be found exactly, graph $f'$ and $f''$ (which magnifies small features of $f$) or solve numerically, for instance by Newton's method ([[§32 Newton's Method|§32]]).
+> 2. Compute $f'$ and $f''$. Their sign changes locate the extreme values and inflection points. Where they cannot be found exactly, graph $f'$ and $f''$ (which magnifies small features of $f$) or solve numerically, for instance by Newton's method ([[§32 Newton's Method#^def-32-1|Def. §32.1]]).
 > 3. Zoom in on each critical number and inflection point, and zoom out to see the end behavior. Several windows may be needed to show everything.
 > 4. For a family of functions $f_c$, find what all members have in common, then the values of $c$ at which the qualitative picture changes (number of asymptotes, critical numbers or inflection points), and how the features move as $c$ varies.
 

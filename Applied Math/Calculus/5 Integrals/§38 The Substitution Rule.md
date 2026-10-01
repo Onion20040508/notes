@@ -149,6 +149,8 @@ The answer is correct, as the Chain Rule confirms: $\frac{d}{dx}\big[\tfrac23 (1
 
 *Uses:* [[§38 The Substitution Rule#^thm-38-1|§38.1]], [[§37 Indefinite Integrals and the Net Change Theorem#^thm-37-1|§37.1]]
 
+Stewart restates this formula in Section 7.2, next to the integral of secant: [[§45 Trigonometric Integrals#^thm-45-2|Theorem §45.2]].
+
 ## Substitution: Definite Integrals
 
 A definite integral can be evaluated by substitution in two ways: find the indefinite integral first and then use FTC2, or, usually better, change the limits of integration along with the variable.

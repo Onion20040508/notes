@@ -33,16 +33,16 @@ Integrals containing $\sqrt{a^2 - x^2}$, $\sqrt{a^2 + x^2}$ or $\sqrt{x^2 - a^2}
 ^thm-46-1
 
 > [!proof]+ Proof
-> This is the Substitution Rule ([[§38 The Substitution Rule|§38]]), $\int f(g(t))\,g'(t)\,dt = \int f(u)\,du$ with $u = g(t)$, read from right to left with the letter $x$ in place of $u$. Stewart leaves it at that; here is the check. Let $F$ be an antiderivative of $f$. By the Chain Rule, $\frac{d}{dt} F(g(t)) = f(g(t))\,g'(t)$, so $G(t) = F(g(t)) + C$ for some constant $C$. Then $G(g^{-1}(x)) = F(x) + C$, an antiderivative of $f$. For the definite version, the Substitution Rule for definite integrals gives $\int_\alpha^\beta f(g(t))\,g'(t)\,dt = \int_{g(\alpha)}^{g(\beta)} f(u)\,du = \int_a^b f(x)\,dx$.
+> This is the Substitution Rule ([[§38 The Substitution Rule#^thm-38-1|Theorem §38.1]]), $\int f(g(t))\,g'(t)\,dt = \int f(u)\,du$ with $u = g(t)$, read from right to left with the letter $x$ in place of $u$. Stewart leaves it at that; here is the check. Let $F$ be an antiderivative of $f$. By the Chain Rule, $\frac{d}{dt} F(g(t)) = f(g(t))\,g'(t)$, so $G(t) = F(g(t)) + C$ for some constant $C$. Then $G(g^{-1}(x)) = F(x) + C$, an antiderivative of $f$. For the definite version, the Substitution Rule for definite integrals ([[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]]) gives $\int_\alpha^\beta f(g(t))\,g'(t)\,dt = \int_{g(\alpha)}^{g(\beta)} f(u)\,du = \int_a^b f(x)\,dx$.
 
 ^pf-46-1
 
-*Uses:* [[§38 The Substitution Rule|§38]], [[§17 The Chain Rule|§17]]
+*Uses:* [[§38 The Substitution Rule#^thm-38-1|§38.1]], [[§38 The Substitution Rule#^thm-38-3|§38.3]], [[§17 The Chain Rule#^thm-17-2|§17.2]]
 
 > [!remark]- Connections
 > - Rigorous treatment of the definite version: [[§15 Multivariable Integration#^lem-15-13|452 Lemma §15.13]] (one-dimensional change of variables, with $|g'(t)|$ and the limits in increasing order), the case $n = 1$ of the change of variables formula.
 
-The one-to-one requirement is what makes going back to $x$ possible. For $x = a\sin\theta$ it is met by restricting $\theta$ to $[-\pi/2, \pi/2]$, the interval used to define $\sin^{-1}$ ([[§5 Inverse Functions and Logarithms|§5]]).
+The one-to-one requirement is what makes going back to $x$ possible. For $x = a\sin\theta$ it is met by restricting $\theta$ to $[-\pi/2, \pi/2]$, the interval used to define $\sin^{-1}$ ([[§5 Inverse Functions and Logarithms#^def-5-5|Def. §5.5]]).
 
 > [!remark] Remark: Method — Trigonometric Substitution
 > 1. **Choose the substitution** from the table. The restriction on $\theta$ makes the substitution one-to-one; these are the intervals used to define the inverse trigonometric functions.
@@ -194,11 +194,11 @@ The one-to-one requirement is what makes going back to $x$ possible. For $x = a\
 > \int \frac{dx}{\sqrt{x^2 - a^2}} = \int \frac{a\sinh t}{a\sinh t}\,dt = \int dt = t + C = \cosh^{-1}\Big(\frac{x}{a}\Big) + C .
 > $$
 >
-> The two formulas agree because $\cosh^{-1} y = \ln\big(y + \sqrt{y^2 - 1}\big)$ for $y \ge 1$ ([[§24 Hyperbolic Functions|§24]], Stewart 3.11.4): $\cosh^{-1}(x/a) = \ln\big(x + \sqrt{x^2 - a^2}\big) - \ln a$.
+> The two formulas agree because $\cosh^{-1} y = \ln\big(y + \sqrt{y^2 - 1}\big)$ for $y \ge 1$ ([[§24 Hyperbolic Functions#^thm-24-3|Theorem §24.3]], Stewart 3.11.4): $\cosh^{-1}(x/a) = \ln\big(x + \sqrt{x^2 - a^2}\big) - \ln a$.
 
 ^pf-46-2
 
-*Uses:* [[§46 Trigonometric Substitution#^thm-46-1|§46.1]], [[§45 Trigonometric Integrals#^thm-45-3|§45.3]], [[§24 Hyperbolic Functions|§24]] (hyperbolic identities, Formula 3.11.4)
+*Uses:* [[§46 Trigonometric Substitution#^thm-46-1|§46.1]], [[§45 Trigonometric Integrals#^thm-45-3|§45.3]], [[§24 Hyperbolic Functions#^thm-24-1|§24.1]] (hyperbolic identities), [[§24 Hyperbolic Functions#^thm-24-3|§24.3]] (Formula 3.11.4)
 
 Hyperbolic substitutions can replace trigonometric ones and sometimes give simpler answers, but trigonometric identities are more familiar, so trigonometric substitutions are the usual choice.
 

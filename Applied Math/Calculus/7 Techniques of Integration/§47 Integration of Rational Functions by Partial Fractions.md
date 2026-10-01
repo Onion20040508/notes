@@ -109,7 +109,7 @@ $$
 >    \int \frac{Cu + D}{u^2 + a^2}\,du = C \int \frac{u}{u^2 + a^2}\,du + D \int \frac{du}{u^2 + a^2} = \frac{C}{2}\ln(u^2 + a^2) + \frac{D}{a}\tan^{-1}\frac{u}{a} + K ,
 >    $$
 >
->    using Theorem §47.4. Terms of Case IV need a substitution such as $x = \tan\theta$ ([[§46 Trigonometric Substitution|§46]]) or a reduction formula.
+>    using Theorem §47.4. Terms of Case IV need a substitution such as $x = \tan\theta$ ([[§46 Trigonometric Substitution#^rem-46-1|Remark: Method — Trigonometric Substitution]]) or a reduction formula.
 > 6. **Look for a shortcut first.** If the numerator is (a multiple of) the derivative of the denominator, substitute: with $u = x(x^2 + 3) = x^3 + 3x$, $du = (3x^2 + 3)\,dx$ and $\int \frac{x^2 + 1}{x(x^2 + 3)}\,dx = \frac13 \ln|x^3 + 3x| + C$, with no partial fractions at all.
 >
 > *Stewart: 7.4 (text)*
@@ -133,7 +133,7 @@ $$
 ^thm-47-4
 
 > [!proof]+ Proof
-> Differentiate the right side with the Chain Rule, using $\frac{d}{du}\tan^{-1} u = \frac{1}{1 + u^2}$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]):
+> Differentiate the right side with the Chain Rule, using $\frac{d}{du}\tan^{-1} u = \frac{1}{1 + u^2}$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|Theorem §19.8]]):
 >
 > $$
 > \frac{d}{dx}\Big[\frac1a \tan^{-1}\frac{x}{a}\Big] = \frac1a \cdot \frac{1}{1 + x^2/a^2} \cdot \frac1a = \frac{1}{a^2 + x^2} .
@@ -141,7 +141,7 @@ $$
 
 ^pf-47-4
 
-*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]], [[§17 The Chain Rule|§17]]
+*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|§19.8]], [[§17 The Chain Rule#^thm-17-2|§17.2]]
 
 > [!theorem] Proposition §47.5: The Integral of $1/(x^2 - a^2)$
 > For $a \ne 0$,

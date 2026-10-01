@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 7.1 · MATH 233 (UMass, Spring 2023): Practice Final Set 2 (Q3b).*
 
-Every differentiation rule gives an integration rule. The Chain Rule gives the Substitution Rule ([[§38 The Substitution Rule|§38]]), and the Product Rule gives **integration by parts**, the second of the two general methods of integration. It trades the integral of $u\,dv$ for the integral of $v\,du$. This helps when $u$ becomes simpler on differentiation and $dv$ can be integrated. Typical integrands are a polynomial times $e^x$, $\sin x$ or $\cos x$, and functions such as $\ln x$ and $\tan^{-1} x$ whose derivatives are algebraic. Repeating the method, or solving the resulting equation for the unknown integral, handles $e^x \sin x$ and produces reduction formulas for powers.
+Every differentiation rule gives an integration rule. The Chain Rule gives the Substitution Rule ([[§38 The Substitution Rule#^thm-38-1|Theorem §38.1]]), and the Product Rule gives **integration by parts**, the second of the two general methods of integration. It trades the integral of $u\,dv$ for the integral of $v\,du$. This helps when $u$ becomes simpler on differentiation and $dv$ can be integrated. Typical integrands are a polynomial times $e^x$, $\sin x$ or $\cos x$, and functions such as $\ln x$ and $\tan^{-1} x$ whose derivatives are algebraic. Repeating the method, or solving the resulting equation for the unknown integral, handles $e^x \sin x$ and produces reduction formulas for powers.
 
 ## Integration by Parts: Indefinite Integrals
 
@@ -33,13 +33,13 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 ^thm-44-1
 
 > [!proof]+ Proof
-> By the Product Rule ([[§15 The Product and Quotient Rules|§15]]),
+> By the Product Rule ([[§15 The Product and Quotient Rules#^thm-15-1|Theorem §15.1]]),
 >
 > $$
 > \frac{d}{dx}\big[f(x)\,g(x)\big] = f(x)\,g'(x) + g(x)\,f'(x) .
 > $$
 >
-> So $fg$ is an antiderivative of $fg' + gf'$. In the notation of indefinite integrals ([[§37 Indefinite Integrals and the Net Change Theorem|§37]]),
+> So $fg$ is an antiderivative of $fg' + gf'$. In the notation of indefinite integrals ([[§37 Indefinite Integrals and the Net Change Theorem#^def-37-1|Definition §37.1]]),
 >
 > $$
 > \int \big[f(x)\,g'(x) + g(x)\,f'(x)\big]\,dx = f(x)\,g(x), \qquad\text{that is,}\qquad \int f(x)\,g'(x)\,dx + \int g(x)\,f'(x)\,dx = f(x)\,g(x) ,
@@ -49,7 +49,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 
 ^pf-44-1
 
-*Uses:* [[§15 The Product and Quotient Rules|§15]] (Product Rule), [[§37 Indefinite Integrals and the Net Change Theorem|§37]] (indefinite integrals), [[§38 The Substitution Rule|§38]] (differential notation)
+*Uses:* [[§15 The Product and Quotient Rules#^thm-15-1|§15.1]] (Product Rule), [[§37 Indefinite Integrals and the Net Change Theorem#^def-37-1|Def. §37.1]] (indefinite integrals), [[§38 The Substitution Rule#^thm-38-1|§38.1]] (differential notation)
 
 > [!remark] Remark: Method — Choosing u and dv
 > 1. Write the integrand as a product $u \cdot dv$. Choose $u$ to be a function that becomes simpler when differentiated (or at least no more complicated), as long as $dv$ can readily be integrated to give $v$. Any antiderivative of $dv$ will do for $v$; the constant is added at the end.
@@ -184,17 +184,19 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 ^thm-44-2
 
 > [!proof]+ Proof
-> By the Product Rule, $(fg)' = fg' + gf'$ on $[a, b]$. The right side is continuous, since $f$, $g$ are continuous (being differentiable) and $f'$, $g'$ are continuous by hypothesis. So Part 2 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]) applies to $fg$:
+> By the Product Rule, $(fg)' = fg' + gf'$ on $[a, b]$. The right side is continuous, since $f$, $g$ are continuous (being differentiable) and $f'$, $g'$ are continuous by hypothesis. So Part 2 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-2|Theorem §36.2]]) applies to $fg$:
 >
 > $$
 > \int_a^b \big[f(x)\,g'(x) + g(x)\,f'(x)\big]\,dx = f(x)\,g(x)\Big]_a^b .
 > $$
 >
-> Both $fg'$ and $gf'$ are continuous, hence integrable, so the integral of the sum is the sum of the integrals ([[§35 The Definite Integral|§35]]). Subtracting $\int_a^b g(x) f'(x)\,dx$ from both sides gives (6).
+> Both $fg'$ and $gf'$ are continuous, hence integrable, so the integral of the sum is the sum of the integrals ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]], [[§35 The Definite Integral#^thm-35-4|Theorem §35.4]]). Subtracting $\int_a^b g(x) f'(x)\,dx$ from both sides gives (6).
 
 ^pf-44-2
 
-*Uses:* [[§15 The Product and Quotient Rules|§15]] (Product Rule), [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 2), [[§35 The Definite Integral|§35]] (properties of the integral)
+*Uses:* [[§15 The Product and Quotient Rules#^thm-15-1|§15.1]] (Product Rule), [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2), [[§35 The Definite Integral#^thm-35-1|§35.1]], [[§35 The Definite Integral#^thm-35-4|§35.4]] (properties of the integral)
+
+Theorem §44.2 is used, by forward reference, in the proof of the shell formula ([[§41 Volumes by Cylindrical Shells#^pf-41-2|proof of Theorem §41.2]], Stewart's Exercise 7.1.81).
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]], under weaker hypotheses ($u$, $v$ continuous on $[a, b]$, differentiable inside, with integrable derivatives), by the same proof.
@@ -242,7 +244,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 > I = \int_0^1 \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t)\,dt = \int_0^1 \langle e^t \sin \pi t,\ e^t \cos \pi t \rangle \cdot \langle \pi, 1 \rangle\,dt = \int_0^1 e^t\big(\pi \sin \pi t + \cos \pi t\big)\,dt .
 > $$
 >
-> (Line integrals: [[§108 Line Integrals|§108]].) Evaluate $I$.
+> (Line integrals: [[§108 Line Integrals#^def-108-8|Def. §108.8]].) Evaluate $I$.
 >
 > This is Example §44.3 again: integrate by parts twice, each time with $dv = e^t\,dt$, $v = e^t$, until $I$ reappears.
 >
@@ -268,7 +270,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 > (1 + \pi^2)\,I = (\pi^2 - 1)(e + 1), \qquad I = \frac{(e + 1)(\pi^2 - 1)}{\pi^2 + 1} \approx 3.034 .
 > $$
 >
-> (The field is not conservative, so this value depends on the path, not only on the endpoints; see [[§109 The Fundamental Theorem for Line Integrals|§109]].)
+> (The field is not conservative, so this value depends on the path, not only on the endpoints; see [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|Theorem §109.2]].)
 >
 > *Source: 233 Practice Final Set 2, Q3(b)*
 

@@ -33,7 +33,9 @@ Trigonometric identities turn products of powers of trigonometric functions into
 
 ^pf-45-1
 
-*Uses:* [[§119 Trigonometry|§119]] (addition formulas)
+*Uses:* [[§119 Trigonometry#^thm-119-6|§119.6]] (addition formulas)
+
+The home of these identities is [[§119 Trigonometry#^cor-119-8|Corollary §119.8]] (Stewart's Appendix D, Formulas 16–18), where they are proved the same way; they are repeated here because Stewart states them at this point.
 
 > [!remark] Remark: Method — Evaluating the Integral of a Product of Powers of Sine and Cosine
 > To find $\int \sin^m x \cos^n x\,dx$ with integers $m, n \ge 0$:
@@ -114,7 +116,7 @@ Why save exactly one factor: $u = \sin x$ needs $du = \cos x\,dx$, and one $\cos
 >
 > (The reduction formula applied twice also works, but this is shorter.)
 >
-> **(c)** The circle $r = 2\sin\theta$ is traced once for $0 \le \theta \le \pi$. As a double integral in polar coordinates ([[§100 Double Integrals in Polar Coordinates|§100]]),
+> **(c)** The circle $r = 2\sin\theta$ is traced once for $0 \le \theta \le \pi$. As a double integral in polar coordinates ([[§100 Double Integrals in Polar Coordinates#^thm-100-2|Theorem §100.2]], [[§100 Double Integrals in Polar Coordinates#^cor-100-3|Corollary §100.3]]),
 >
 > $$
 > A = \int_0^\pi \int_0^{2\sin\theta} r\,dr\,d\theta = \int_0^\pi \Big[\frac{r^2}{2}\Big]_0^{2\sin\theta} d\theta = 2 \int_0^\pi \sin^2\theta\,d\theta = 2 \cdot \frac{\pi}{2} = \pi ,
@@ -186,7 +188,7 @@ The same reasoning applies to $\int \tan^m x \sec^n x\,dx$. Since $\frac{d}{dx}\
 > \int \tan x\,dx = \ln|\sec x| + C .
 > $$
 >
-> *Stewart: 7.2 (boxed; established in Example 5.5.5)*
+> *Stewart: 7.2 (boxed; established in Example 5.5.6)*
 
 ^thm-45-2
 
@@ -199,7 +201,9 @@ The same reasoning applies to $\int \tan^m x \sec^n x\,dx$. Since $\frac{d}{dx}\
 
 ^pf-45-2
 
-*Uses:* [[§38 The Substitution Rule|§38]]
+*Uses:* [[§38 The Substitution Rule#^thm-38-1|§38.1]]
+
+This is [[§38 The Substitution Rule#^thm-38-2|Theorem §38.2]], where the formula is first proved (Stewart's Example 5.5.6); Stewart restates it here next to the integral of secant.
 
 > [!theorem] Theorem §45.3: Integral of Secant
 > $$
@@ -221,7 +225,7 @@ The same reasoning applies to $\int \tan^m x \sec^n x\,dx$. Since $\frac{d}{dx}\
 
 ^pf-45-3
 
-*Uses:* [[§38 The Substitution Rule|§38]]
+*Uses:* [[§38 The Substitution Rule#^thm-38-1|§38.1]]
 
 James Gregory found Formula 1 in 1668, while solving a problem in constructing nautical tables.
 
@@ -249,7 +253,7 @@ James Gregory found Formula 1 in 1668, while solving a problem in constructing n
 > \int \sec^3 x\,dx = \tfrac12\big(\sec x \tan x + \ln|\sec x + \tan x|\big) + C .
 > $$
 >
-> This integral looks special, but it comes up again and again in applications: the arc length of a parabola, for instance ([[§52 Arc Length|§52]]).
+> This integral looks special, but it comes up again and again in applications: the arc length of a parabola, for instance ([[§52 Arc Length#^ex-52-2|Example §52.2]]).
 >
 > *Stewart: Example 7.2.8*
 
@@ -285,7 +289,9 @@ James Gregory found Formula 1 in 1668, while solving a problem in constructing n
 
 ^pf-45-4
 
-*Uses:* [[§119 Trigonometry|§119]] (addition formulas)
+*Uses:* [[§119 Trigonometry#^thm-119-6|§119.6]] (addition formulas)
+
+The home of these identities is [[§119 Trigonometry#^cor-119-9|Corollary §119.9]] (Stewart's Appendix D, Formulas 19a–19c).
 
 > [!example] Example §45.5: A Product of Sines and Cosines of Different Frequencies
 > Evaluate $\displaystyle\int \sin 4x \cos 5x\,dx$.

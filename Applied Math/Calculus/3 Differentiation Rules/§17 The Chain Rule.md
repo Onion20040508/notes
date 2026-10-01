@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 3.4.*
 
-The rules so far do not reach a function such as $F(x) = \sqrt{x^2 + 1}$. It is a composite $F = f \circ g$ of $f(u) = \sqrt{u}$ and $u = g(x) = x^2 + 1$ ([[§3 New Functions from Old Functions|§3]]), and both pieces can be differentiated. The Chain Rule says that the derivative of a composite is the product of the derivatives, each taken at the right point: $F'(x) = f'(g(x))\,g'(x)$. It is one of the most important differentiation rules. Combined with the earlier rules it differentiates every function built from the familiar ones, and it gives the derivative of $b^x$ for every base $b$.
+The rules so far do not reach a function such as $F(x) = \sqrt{x^2 + 1}$. It is a composite $F = f \circ g$ of $f(u) = \sqrt{u}$ and $u = g(x) = x^2 + 1$ ([[§3 New Functions from Old Functions#^def-3-2|Definition §3.2]]), and both pieces can be differentiated. The Chain Rule says that the derivative of a composite is the product of the derivatives, each taken at the right point: $F'(x) = f'(g(x))\,g'(x)$. It is one of the most important differentiation rules. Combined with the earlier rules it differentiates every function built from the familiar ones, and it gives the derivative of $b^x$ for every base $b$.
 
 ## The Chain Rule
 
@@ -63,7 +63,7 @@ The proof rests on a reformulation of differentiability.
 *Uses:* [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]] (definition of $f'(a)$), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Law 2)
 
 > [!remark]- Connections
-> - Equation 6 says that $f(a + \Delta x) \approx f(a) + f'(a)\,\Delta x$ with an error that is small *relative to* $\Delta x$: the linear approximation of [[§23 Linear Approximations and Differentials|§23]]. In several variables this becomes the definition of differentiability: [[§6 Differentiability#^def-6-1|452 Def. §6.1]].
+> - Equation 6 says that $f(a + \Delta x) \approx f(a) + f'(a)\,\Delta x$ with an error that is small *relative to* $\Delta x$: the linear approximation of [[§23 Linear Approximations and Differentials#^def-23-1|Definition §23.1]]. In several variables this becomes the definition of differentiability: [[§6 Differentiability#^def-6-1|452 Def. §6.1]].
 
 > [!theorem] Theorem §17.2: The Chain Rule
 > If $g$ is differentiable at $x$ and $f$ is differentiable at $g(x)$, then the composite function $F = f \circ g$ defined by $F(x) = f(g(x))$ is differentiable at $x$, and $F'$ is given by the product
@@ -119,7 +119,7 @@ The proof rests on a reformulation of differentiability.
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]]. Its first proof is the tempting argument (3) and fails for the same reason; its second proof replaces $\Delta y / \Delta u$ by a function that is continuous at $f(a)$, which is $f'(b) + \varepsilon_2$ here.
-> - Several variables: [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]], and in Calculus [[§94 The Chain Rule|§94]] (Stewart 14.5).
+> - Several variables: [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]], and in Calculus [[§94 The Chain Rule#^thm-94-3|Theorem §94.3]] (Stewart 14.5).
 
 > [!remark] Remark: Reading the Leibniz Form
 > Formula 2 is easy to remember: think of $dy/du$ and $du/dx$ as quotients and "cancel" $du$. But $du$ has not been defined, and $du/dx$ is not an actual quotient. Also, $dy/dx$ and $dy/du$ are different derivatives of the same quantity $y$: in $dy/dx$, $y$ is a function of $x$ ($y = \sqrt{x^2 + 1}$ in Example §17.1); in $dy/du$, $y$ is a function of $u$ ($y = \sqrt{u}$). So
@@ -145,7 +145,7 @@ The proof rests on a reformulation of differentiability.
 > $$
 >
 > This "chain" of links gives the rule its name.
-> 4. **Combine with the other rules.** A product or quotient of composites needs the Product or Quotient Rule first ([[§15 The Product and Quotient Rules|§15]]), then the Chain Rule on each factor.
+> 4. **Combine with the other rules.** A product or quotient of composites needs the Product or Quotient Rule first ([[§15 The Product and Quotient Rules#^thm-15-1|Theorems §15.1]] and [[§15 The Product and Quotient Rules#^thm-15-2|§15.2]]), then the Chain Rule on each factor.
 > 5. **Simplify** by factoring out common powers.
 
 ^rem-17-3
@@ -212,7 +212,7 @@ In Example §17.2(a) the Chain Rule was combined with the rule for sine. The sam
 ^cor-17-3
 
 > [!proof]+ Proof
-> Write $y = [g(x)]^n$ as $y = f(u) = u^n$ with $u = g(x)$. By the Chain Rule and the Power Rule (for real $n$, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]),
+> Write $y = [g(x)]^n$ as $y = f(u) = u^n$ with $u = g(x)$. By the Chain Rule and the Power Rule (for real $n$, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-6|Theorem §19.6]]),
 >
 > $$
 > \frac{dy}{dx} = \frac{dy}{du}\,\frac{du}{dx} = n u^{n-1} \frac{du}{dx} = n[g(x)]^{n-1} g'(x) .
@@ -313,7 +313,7 @@ For instance, $\frac{d}{dx}(e^{\sin x}) = e^{\sin x} \cos x$.
 ^thm-17-5
 
 > [!proof]+ Proof
-> Since $e^{\ln b} = b$, we can write $b^x = (e^{\ln b})^x = e^{(\ln b)x}$ ([[§5 Inverse Functions and Logarithms|§5]], Equation 1.5.10). By Corollary §17.4 with $u = (\ln b)x$, and because $\ln b$ is a constant,
+> Since $e^{\ln b} = b$, we can write $b^x = (e^{\ln b})^x = e^{(\ln b)x}$ ([[§5 Inverse Functions and Logarithms#^prop-5-7|Proposition §5.7]], Equation 1.5.10). By Corollary §17.4 with $u = (\ln b)x$, and because $\ln b$ is a constant,
 >
 > $$
 > \frac{d}{dx}(b^x) = \frac{d}{dx}\big(e^{(\ln b)x}\big) = e^{(\ln b)x} \frac{d}{dx}\big[(\ln b)x\big] = e^{(\ln b)x} (\ln b) = b^x \ln b .
@@ -323,12 +323,14 @@ For instance, $\frac{d}{dx}(e^{\sin x}) = e^{\sin x} \cos x$.
 
 *Uses:* [[§5 Inverse Functions and Logarithms#^prop-5-7|§5.7]] (Equation 1.5.10), [[§17 The Chain Rule#^cor-17-4|§17.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|§14.3]]
 
+*From the integral definition of $\ln$ in Appendix G: [[§121 The Logarithm Defined as an Integral#^thm-121-10|Theorem §121.10]].*
+
 Comparing with [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-5|Theorem §14.5]]: the constant $f'(0) = \lim_{h \to 0} (b^h - 1)/h$ is $\ln b$.
 
 > [!example] Example §17.5: Exponentials with Other Bases
 > Find the derivative of (a) $g(x) = 2^x$ and (b) $h(x) = 5^{x^2}$.
 >
-> **(a)** By Formula 5 with $b = 2$, $g'(x) = 2^x \ln 2$. This agrees with the estimate $\frac{d}{dx}(2^x) \approx (0.693)2^x$ of [[§14 Derivatives of Polynomials and Exponential Functions#^rem-14-2|§14]], because $\ln 2 \approx 0.693147$.
+> **(a)** By Formula 5 with $b = 2$, $g'(x) = 2^x \ln 2$. This agrees with the estimate $\frac{d}{dx}(2^x) \approx (0.693)2^x$ of [[§14 Derivatives of Polynomials and Exponential Functions#^rem-14-2|Remark: The Constants for Base 2 and Base 3]], because $\ln 2 \approx 0.693147$.
 >
 > **(b)** The outer function is the exponential with base $5$ and the inner function is squaring, so by Formula 5 and the Chain Rule
 >

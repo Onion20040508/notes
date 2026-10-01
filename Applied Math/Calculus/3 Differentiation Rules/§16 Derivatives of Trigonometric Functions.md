@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 3.3 · Appendix F.*
 
-The derivative of $\sin x$ is $\cos x$ and the derivative of $\cos x$ is $-\sin x$. Both come from the addition formulas and two special limits, $\lim_{\theta \to 0} (\sin\theta)/\theta = 1$ and $\lim_{\theta \to 0} (\cos\theta - 1)/\theta = 0$, which are proved at the end of the section by comparing $\sin\theta$, $\theta$ and $\tan\theta$ on the unit circle. The Quotient Rule ([[§15 The Product and Quotient Rules|§15]]) then gives the derivatives of the other four trigonometric functions. The two limits are also useful in their own right for computing other limits.
+The derivative of $\sin x$ is $\cos x$ and the derivative of $\cos x$ is $-\sin x$. Both come from the addition formulas and two special limits, $\lim_{\theta \to 0} (\sin\theta)/\theta = 1$ and $\lim_{\theta \to 0} (\cos\theta - 1)/\theta = 0$, which are proved at the end of the section by comparing $\sin\theta$, $\theta$ and $\tan\theta$ on the unit circle. The Quotient Rule ([[§15 The Product and Quotient Rules#^thm-15-2|Theorem §15.2]]) then gives the derivatives of the other four trigonometric functions. The two limits are also useful in their own right for computing other limits.
 
 Throughout, $\sin x$ means the sine of the angle whose **radian** measure is $x$, and likewise for the other trigonometric functions. All six are continuous at every number in their domains ([[§10 Continuity#^thm-10-4|Theorem §10.4]]). The formulas below hold only for radian measure.
 
@@ -29,7 +29,7 @@ Sketching the slopes of the tangent lines to $y = \sin x$ (zero at the peaks and
 ^thm-16-1
 
 > [!proof]+ Proof
-> From the definition of the derivative and the addition formula $\sin(x + h) = \sin x \cos h + \cos x \sin h$,
+> From the definition of the derivative and the addition formula $\sin(x + h) = \sin x \cos h + \cos x \sin h$ ([[§119 Trigonometry#^thm-119-6|Theorem §119.6]]),
 >
 > $$
 > \begin{aligned}
@@ -200,7 +200,7 @@ The proof of Theorem §16.1 used two limits, proved now. The first needs a compa
 > [!proof]- Proof
 > Take a sector of the unit circle with center $O$, central angle $\theta$, from $A = (1, 0)$ to $B = (\cos\theta, \sin\theta)$. Let the tangent line to the circle at $A$ meet the line $OB$ at $D$. Then $|AD| = |OA|\tan\theta = \tan\theta$.
 >
-> Arc length is defined as the limit of the lengths of inscribed polygonal paths ([[§52 Arc Length|§52]], Equation 8.1.1). So approximate the arc $AB$ by an inscribed polygonal path of $n$ equal segments, and look at a typical segment $PQ$ ($P$ nearer to $A$). Extend $OP$ and $OQ$ to meet $AD$ at $R$ and $S$, and draw $RT$ parallel to $PQ$ with $T$ on $OS$.
+> Arc length is defined as the limit of the lengths of inscribed polygonal paths ([[§52 Arc Length#^def-52-1|Definition §52.1]], Equation 8.1.1). So approximate the arc $AB$ by an inscribed polygonal path of $n$ equal segments, and look at a typical segment $PQ$ ($P$ nearer to $A$). Extend $OP$ and $OQ$ to meet $AD$ at $R$ and $S$, and draw $RT$ parallel to $PQ$ with $T$ on $OS$.
 > - Triangle $OPQ$ is isosceles ($|OP| = |OQ| = 1$), so its base angle $\angle PQO$ is less than $90^\circ$. Since $RT \parallel PQ$, $\angle RTO = \angle PQO < 90^\circ$, and so $\angle RTS = 180^\circ - \angle RTO > 90^\circ$.
 > - Triangles $OPQ$ and $ORT$ are similar, with ratio $|OR|/|OP| = |OR| \ge 1$ (the point $R$ on the tangent line is not inside the circle). So $|PQ| \le |RT|$.
 > - In triangle $RTS$ the angle at $T$ is obtuse, so the opposite side $RS$ is the longest: $|RT| < |RS|$.
@@ -211,11 +211,11 @@ The proof of Theorem §16.1 used two limits, proved now. The first needs a compa
 > L_n < |AD| = \tan\theta ,
 > $$
 >
-> where $L_n$ is the length of the inscribed polygonal path. Since limits preserve inequalities ([[§8 Calculating Limits Using the Limit Laws|§8]], Theorem 2.3.2), $\lim_{n \to \infty} L_n \le \tan\theta$. By the definition of arc length and of radian measure, $\theta = \text{arc } AB = \lim_{n \to \infty} L_n \le \tan\theta$.
+> where $L_n$ is the length of the inscribed polygonal path. Since limits preserve inequalities ([[§8 Calculating Limits Using the Limit Laws#^thm-8-6|Theorem §8.6]], Stewart's Theorem 2.3.2), $\lim_{n \to \infty} L_n \le \tan\theta$. By the definition of arc length and of radian measure, $\theta = \text{arc } AB = \lim_{n \to \infty} L_n \le \tan\theta$.
 
 ^pf-16-5
 
-*Uses:* [[§52 Arc Length|§52]] (definition of arc length), [[§8 Calculating Limits Using the Limit Laws#^thm-8-6|§8.6]] (Theorem 2.3.2)
+*Uses:* [[§52 Arc Length#^def-52-1|Def. §52.1]] (definition of arc length), [[§8 Calculating Limits Using the Limit Laws#^thm-8-6|§8.6]] (Theorem 2.3.2)
 
 > [!theorem] Theorem §16.6: The Limit of sin θ over θ
 > $$

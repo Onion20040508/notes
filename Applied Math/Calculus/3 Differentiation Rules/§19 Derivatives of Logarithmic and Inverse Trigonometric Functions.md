@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 3.6 · Appendix F.*
 
-The logarithms and the inverse trigonometric functions are inverse functions ([[§5 Inverse Functions and Logarithms|§5]]). An inverse of a differentiable function is differentiable wherever its graph has no vertical tangent, and once that is known, implicit differentiation ([[§18 Implicit Differentiation|§18]]) finds the derivative: $\ln x$ has derivative $1/x$, $\sin^{-1} x$ has derivative $1/\sqrt{1 - x^2}$, and so on. Logarithms also give a technique, *logarithmic differentiation*, for products, quotients and powers. With it Stewart proves the Power Rule for every real exponent, promised in [[§14 Derivatives of Polynomials and Exponential Functions|§14]], and differentiates functions such as $x^{\sqrt x}$ whose base and exponent both vary. The section also expresses $e$ as the limit $\lim_{x \to 0} (1 + x)^{1/x}$.
+The logarithms and the inverse trigonometric functions are inverse functions ([[§5 Inverse Functions and Logarithms#^def-5-3|Definition §5.3]], [[§5 Inverse Functions and Logarithms#^def-5-5|Definitions §5.5]]–[[§5 Inverse Functions and Logarithms#^def-5-8|§5.8]]). An inverse of a differentiable function is differentiable wherever its graph has no vertical tangent, and once that is known, implicit differentiation ([[§18 Implicit Differentiation#^rem-18-1|Remark: Method — Implicit Differentiation]]) finds the derivative: $\ln x$ has derivative $1/x$, $\sin^{-1} x$ has derivative $1/\sqrt{1 - x^2}$, and so on. Logarithms also give a technique, *logarithmic differentiation*, for products, quotients and powers. With it Stewart proves the Power Rule for every real exponent, promised in [[§14 Derivatives of Polynomials and Exponential Functions|§14]] (after [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|Theorem §14.2]]), and differentiates functions such as $x^{\sqrt x}$ whose base and exponent both vary. The section also expresses $e$ as the limit $\lim_{x \to 0} (1 + x)^{1/x}$.
 
 ## Derivatives of Logarithmic Functions
 
@@ -32,7 +32,7 @@ The logarithms and the inverse trigonometric functions are inverse functions ([[
 ^rem-19-1
 
 > [!proof]+ Proof
-> Let $b = f^{-1}(a)$, so $f(b) = a$. Write the definition of the derivative in the form of [[§12 Derivatives and Rates of Change|§12]] (Equation 2.7.5):
+> Let $b = f^{-1}(a)$, so $f(b) = a$. Write the definition of the derivative in the second form of [[§12 Derivatives and Rates of Change#^def-12-3|Definition §12.3]] (Equation 2.7.5):
 >
 > $$
 > (f^{-1})'(a) = \lim_{x \to a} \frac{f^{-1}(x) - f^{-1}(a)}{x - a} .
@@ -49,7 +49,7 @@ The logarithms and the inverse trigonometric functions are inverse functions ([[
 
 ^pf-19-1
 
-*Uses:* [[§10 Continuity#^thm-10-5|§10.5]], [[§10 Continuity#^thm-10-7|§10.7]], [[§13 The Derivative as a Function|§13]] (differentiable implies continuous), [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Law 5)
+*Uses:* [[§10 Continuity#^thm-10-5|§10.5]], [[§10 Continuity#^thm-10-7|§10.7]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Law 5)
 
 ![[m233-19-1.svg]]
 *Theorem §19.1 for $f(x) = e^x$ and $f^{-1}(x) = \ln x$. Reflection in $y = x$ carries the point $(1, e)$ to $(e, 1)$ and the tangent line of slope $f'(1) = e$ to a tangent line of slope $1/e$: rise and run trade places. So $(\ln)'(e) = 1/f'(\ln e) = 1/e$, as Corollary §19.3 confirms.*
@@ -79,7 +79,9 @@ The logarithmic function $y = \log_b x$ is the inverse of $y = b^x$, which is di
 
 ^pf-19-2
 
-*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|§19.1]], [[§17 The Chain Rule#^thm-17-5|§17.5]], [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§18 Implicit Differentiation|§18]] (implicit differentiation)
+*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|§19.1]], [[§17 The Chain Rule#^thm-17-5|§17.5]], [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§18 Implicit Differentiation#^rem-18-1|§18]] (implicit differentiation)
+
+*From the integral definition of $\ln$ in Appendix G: [[§121 The Logarithm Defined as an Integral#^thm-121-11|Theorem §121.11]].*
 
 > [!theorem] Corollary §19.3: Derivative of the Natural Logarithm
 > $$
@@ -96,6 +98,8 @@ The logarithmic function $y = \log_b x$ is the inverse of $y = b^x$, which is di
 ^pf-19-3
 
 *Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-2|§19.2]]
+
+*Appendix G takes the integral $\int_1^x dt/t$ as the definition of $\ln x$, so that this formula holds by the Fundamental Theorem of Calculus: [[§121 The Logarithm Defined as an Integral#^thm-121-1|Theorem §121.1]].*
 
 Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that natural logarithms (base $e$) are used in calculus: the differentiation formula is simplest when $b = e$, because $\ln e = 1$.
 
@@ -333,11 +337,13 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 
 ^pf-19-7
 
-*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3|§19.3]], [[§10 Continuity#^thm-10-7|§10.7]], [[§10 Continuity#^thm-10-6|§10.6]] (continuity of $e^x$), [[§11 Limits at Infinity; Horizontal Asymptotes|§11]] (limits at infinity)
+*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3|§19.3]], [[§10 Continuity#^thm-10-7|§10.7]], [[§10 Continuity#^thm-10-6|§10.6]] (continuity of $e^x$), [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Def. §11.4]] (limits at infinity)
+
+*The same proof from the integral definition of $\ln$: [[§121 The Logarithm Defined as an Integral#^thm-121-12|Theorem §121.12]].*
 
 ## Derivatives of Inverse Trigonometric Functions
 
-The inverse trigonometric functions were defined in [[§5 Inverse Functions and Logarithms|§5]]. The trigonometric functions, restricted to the intervals used to define their inverses, are one-to-one and differentiable, so by Theorem §19.1 the inverse trigonometric functions are differentiable (except where the tangents are vertical, at $x = \pm 1$ for $\sin^{-1}$ and $\cos^{-1}$). Implicit differentiation finds the derivatives.
+The inverse trigonometric functions were defined in [[§5 Inverse Functions and Logarithms#^def-5-5|Definitions §5.5]]–[[§5 Inverse Functions and Logarithms#^def-5-8|§5.8]]. The trigonometric functions, restricted to the intervals used to define their inverses, are one-to-one and differentiable, so by Theorem §19.1 the inverse trigonometric functions are differentiable (except where the tangents are vertical, at $x = \pm 1$ for $\sin^{-1}$ and $\cos^{-1}$). Implicit differentiation finds the derivatives.
 
 > [!theorem] Theorem §19.8: Derivatives of Inverse Trigonometric Functions
 > $$
@@ -381,7 +387,7 @@ The inverse trigonometric functions were defined in [[§5 Inverse Functions and 
 
 ^pf-19-8
 
-*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|§19.1]], [[§16 Derivatives of Trigonometric Functions#^thm-16-4|§16.4]], [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§5 Inverse Functions and Logarithms|§5]] (definitions of the inverse trigonometric functions)
+*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|§19.1]], [[§16 Derivatives of Trigonometric Functions#^thm-16-4|§16.4]], [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§5 Inverse Functions and Logarithms#^def-5-5|Def. §5.5]]–[[§5 Inverse Functions and Logarithms#^def-5-8|§5.8]] (definitions of the inverse trigonometric functions)
 
 > [!remark]- Connections
 > - 451 uses $\arctan' = 1/(1 + x^2)$, obtained there from the Inverse Function Theorem, to find the power series of $\arctan$: [[§26 Differentiation and Integration of Power Series#^ex-26-3|451 Ex. §26.3]].

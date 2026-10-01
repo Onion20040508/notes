@@ -31,7 +31,7 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 ^def-24-1
 
 > [!remark]- Connections
-> - Their power series, $\cosh x = \sum \frac{x^{2n}}{(2n)!}$ and $\sinh x = \sum \frac{x^{2n+1}}{(2n+1)!}$, are the even and odd halves of the series of $e^x$: [[§31 Taylor's Theorem#^ex-31-1|451 Ex. §31.1]] (and the Taylor series of Calculus [[§78 Taylor and Maclaurin Series|§78]]). Compare $\cos$ and $\sin$, which have the same series with alternating signs.
+> - Their power series, $\cosh x = \sum \frac{x^{2n}}{(2n)!}$ and $\sinh x = \sum \frac{x^{2n+1}}{(2n+1)!}$, are the even and odd halves of the series of $e^x$: [[§31 Taylor's Theorem#^ex-31-1|451 Ex. §31.1]] (and the Maclaurin series of $e^x$ in Calculus, [[§78 Taylor and Maclaurin Series#^thm-78-6|Theorem §78.6]]). Compare $\cos$ and $\sin$, which have the same series with alternating signs.
 
 > [!remark] Remark: Graphs and Applications
 > **Graphs.** $\sinh x = \frac12 e^x - \frac12 e^{-x}$ and $\cosh x = \frac12 e^x + \frac12 e^{-x}$ can be sketched by adding the graphs of $\pm\frac12 e^{\pm x}$. $\sinh$ has domain $\mathbb{R}$ and range $\mathbb{R}$; $\cosh$ has domain $\mathbb{R}$ and range $[1, \infty)$, with minimum $\cosh 0 = 1$. $\tanh$ has horizontal asymptotes $y = \pm 1$ (Stewart, Exercise 27): $\tanh x = \dfrac{1 - e^{-2x}}{1 + e^{-2x}} \to 1$ as $x \to \infty$, and $\tanh$ is odd.
@@ -220,7 +220,7 @@ Since the hyperbolic functions are built from exponentials, their inverses can b
 
 ^pf-24-3
 
-*Uses:* [[§24 Hyperbolic Functions#^def-24-1|Def. §24.1]], [[§24 Hyperbolic Functions#^def-24-2|Def. §24.2]], [[§5 Inverse Functions and Logarithms|§5]] ($\ln$ is the inverse of $e^x$)
+*Uses:* [[§24 Hyperbolic Functions#^def-24-1|Def. §24.1]], [[§24 Hyperbolic Functions#^def-24-2|Def. §24.2]], [[§5 Inverse Functions and Logarithms#^cor-5-6|§5.6]] ($\ln$ is the inverse of $e^x$)
 
 > [!theorem] Theorem §24.4: Derivatives of Inverse Hyperbolic Functions
 > $$
@@ -260,7 +260,7 @@ Since the hyperbolic functions are built from exponentials, their inverses can b
 
 ^pf-24-4
 
-*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|§19.1]], [[§24 Hyperbolic Functions#^thm-24-1|§24.1]], [[§24 Hyperbolic Functions#^thm-24-2|§24.2]], [[§24 Hyperbolic Functions#^def-24-2|Def. §24.2]], [[§18 Implicit Differentiation|§18]] (implicit differentiation)
+*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|§19.1]], [[§24 Hyperbolic Functions#^thm-24-1|§24.1]], [[§24 Hyperbolic Functions#^thm-24-2|§24.2]], [[§24 Hyperbolic Functions#^def-24-2|Def. §24.2]], [[§18 Implicit Differentiation#^rem-18-1|§18]] (implicit differentiation)
 
 > [!example] Example §24.2: Differentiating the Logarithmic Form
 > Verify $\dfrac{d}{dx}(\sinh^{-1} x) = \dfrac{1}{\sqrt{1 + x^2}}$ from Formula 3 instead.

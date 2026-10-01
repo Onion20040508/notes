@@ -38,7 +38,7 @@ In differentiation it is always clear which rule to apply; in integration it is 
 ^thm-48-1
 
 > [!proof]- Proof
-> Each formula says that the derivative of the right side is the integrand. Formulas 1–10 and 15–16 are the differentiation formulas of Chapter 3 read backwards ([[§14 Derivatives of Polynomials and Exponential Functions|§14]], [[§16 Derivatives of Trigonometric Functions|§16]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]], [[§24 Hyperbolic Functions|§24]]); for Formula 2, $\frac{d}{dx}\ln|x| = \frac1x$ for $x \ne 0$ on either side of $0$. The others were derived in this chapter or follow the same way:
+> Each formula says that the derivative of the right side is the integrand. Formulas 1–10 and 15–16 are the differentiation formulas of Chapter 3 read backwards, as collected in [[§37 Indefinite Integrals and the Net Change Theorem#^thm-37-1|Theorem §37.1]] ([[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|Theorem §14.2]] and [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-6|Theorem §19.6]] for powers, [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-6|Theorem §14.6]] and [[§17 The Chain Rule#^thm-17-5|Theorem §17.5]] for exponentials, [[§16 Derivatives of Trigonometric Functions#^thm-16-4|Theorem §16.4]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|Theorem §19.5]], [[§24 Hyperbolic Functions#^thm-24-2|Theorem §24.2]]); for Formula 2, $\frac{d}{dx}\ln|x| = \frac1x$ for $x \ne 0$ on either side of $0$. The others were derived in this chapter or follow the same way:
 > - **11** is [[§45 Trigonometric Integrals#^thm-45-3|Theorem §45.3]] and **13** is [[§45 Trigonometric Integrals#^thm-45-2|Theorem §45.2]].
 > - **12.** $\dfrac{d}{dx}\ln|\csc x - \cot x| = \dfrac{-\csc x \cot x + \csc^2 x}{\csc x - \cot x} = \dfrac{\csc x(\csc x - \cot x)}{\csc x - \cot x} = \csc x$.
 > - **14.** With $u = \sin x$, $\int \cot x\,dx = \int \frac{\cos x}{\sin x}\,dx = \int \frac{du}{u} = \ln|\sin x|$.
@@ -48,7 +48,7 @@ In differentiation it is always clear which rule to apply; in integration it is 
 
 ^pf-48-1
 
-*Uses:* [[§45 Trigonometric Integrals#^thm-45-2|§45.2]], [[§45 Trigonometric Integrals#^thm-45-3|§45.3]], [[§46 Trigonometric Substitution#^prop-46-2|§46.2]], [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-4|§47.4]], [[§47 Integration of Rational Functions by Partial Fractions#^prop-47-5|§47.5]], [[§38 The Substitution Rule|§38]], differentiation formulas of Chapter 3 ([[§14 Derivatives of Polynomials and Exponential Functions|§14]], [[§16 Derivatives of Trigonometric Functions|§16]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]], [[§24 Hyperbolic Functions|§24]])
+*Uses:* [[§45 Trigonometric Integrals#^thm-45-2|§45.2]], [[§45 Trigonometric Integrals#^thm-45-3|§45.3]], [[§46 Trigonometric Substitution#^prop-46-2|§46.2]], [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-4|§47.4]], [[§47 Integration of Rational Functions by Partial Fractions#^prop-47-5|§47.5]], [[§38 The Substitution Rule#^thm-38-1|§38.1]], [[§37 Indefinite Integrals and the Net Change Theorem#^thm-37-1|§37.1]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|§14.2]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-6|§14.6]], [[§16 Derivatives of Trigonometric Functions#^thm-16-4|§16.4]], [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§17 The Chain Rule#^thm-17-5|§17.5]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|§19.5]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-6|§19.6]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|§19.8]], [[§24 Hyperbolic Functions#^thm-24-2|§24.2]]
 
 > [!remark] Remark: Method — Strategy for Integration
 > 1. **Simplify the integrand if possible.** Algebra or a trigonometric identity may make the method obvious:
@@ -63,8 +63,8 @@ In differentiation it is always clear which rule to apply; in integration it is 
 >
 > 2. **Look for an obvious substitution.** Find a function $u = g(x)$ whose differential $du = g'(x)\,dx$ also occurs in the integrand, apart from a constant factor. In $\int \frac{x}{x^2 - 1}\,dx$, $u = x^2 - 1$ does it, and partial fractions are not needed.
 > 3. **Classify the integrand according to its form.**
->    1. *Trigonometric functions:* products of powers of $\sin x$ and $\cos x$, of $\tan x$ and $\sec x$, or of $\cot x$ and $\csc x$: [[§45 Trigonometric Integrals|§45]].
->    2. *Rational functions:* partial fractions, [[§47 Integration of Rational Functions by Partial Fractions|§47]].
+>    1. *Trigonometric functions:* products of powers of $\sin x$ and $\cos x$, of $\tan x$ and $\sec x$, or of $\cot x$ and $\csc x$: [[§45 Trigonometric Integrals#^rem-45-1|Remark: Method (sine and cosine)]] and [[§45 Trigonometric Integrals#^rem-45-2|Remark: Method (tangent and secant)]].
+>    2. *Rational functions:* partial fractions, [[§47 Integration of Rational Functions by Partial Fractions#^rem-47-1|Remark: Method — Partial Fractions]].
 >    3. *Integration by parts:* a power of $x$ (or a polynomial) times a transcendental function (trigonometric, exponential or logarithmic), with $u$ and $dv$ chosen as in [[§44 Integration by Parts#^rem-44-1|§44]].
 >    4. *Radicals:* if $\sqrt{x^2 + a^2}$, $\sqrt{x^2 - a^2}$ or $\sqrt{a^2 - x^2}$ occurs, a trigonometric substitution ([[§46 Trigonometric Substitution#^rem-46-1|§46]]); if $\sqrt[n]{ax + b}$ occurs, the rationalizing substitution $u = \sqrt[n]{ax + b}$ ([[§47 Integration of Rational Functions by Partial Fractions#^ex-47-5|§47]]), which sometimes also works for $\sqrt[n]{g(x)}$.
 > 4. **Try again.** There are basically only two methods of integration, substitution and parts.
@@ -200,6 +200,6 @@ The derivative of an elementary function is elementary, by the differentiation r
 
 ^thm-48-2
 
-*That $F$ exists and $F'(x) = e^{x^2}$ is Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]). Stewart omits the proof that $F$ is not elementary ("it has been proved"); it is a theorem of Liouville from differential algebra, and no note in the vault proves it.*
+*That $F$ exists and $F'(x) = e^{x^2}$ is Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]). Stewart omits the proof that $F$ is not elementary ("it has been proved"); it is a theorem of Liouville from differential algebra, and no note in the vault proves it.*
 
 So no strategy, however clever, evaluates $\int e^{x^2}\,dx$ in terms of familiar functions. Such integrals are handled instead by numerical methods ([[§50 Approximate Integration|§50]]) or by infinite series ([[§78 Taylor and Maclaurin Series|§78]]).

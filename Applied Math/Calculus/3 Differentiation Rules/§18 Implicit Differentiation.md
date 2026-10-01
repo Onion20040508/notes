@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 3.5.*
 
-Many curves are given by an equation in $x$ and $y$, such as $x^2 + y^2 = 25$ or $x^3 + y^3 = 6xy$, rather than by a formula $y = f(x)$. Such an equation defines $y$ as one or several functions of $x$ *implicitly*, and solving for $y$ may be hard or impossible. Implicit differentiation finds $dy/dx$ anyway: differentiate both sides of the equation with respect to $x$, treating $y$ as a function of $x$ (so the Chain Rule of [[§17 The Chain Rule|§17]] applies to every term containing $y$), and solve for $dy/dx$. The method gives tangent lines to such curves and, applied twice, second derivatives. In [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]] it gives the derivatives of inverse functions.
+Many curves are given by an equation in $x$ and $y$, such as $x^2 + y^2 = 25$ or $x^3 + y^3 = 6xy$, rather than by a formula $y = f(x)$. Such an equation defines $y$ as one or several functions of $x$ *implicitly*, and solving for $y$ may be hard or impossible. Implicit differentiation finds $dy/dx$ anyway: differentiate both sides of the equation with respect to $x$, treating $y$ as a function of $x$ (so the Chain Rule, [[§17 The Chain Rule#^thm-17-2|Theorem §17.2]], applies to every term containing $y$), and solve for $dy/dx$. The method gives tangent lines to such curves and, applied twice, second derivatives. In [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]] it gives the derivatives of inverse functions ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|Theorem §19.8]]).
 
 ## Implicitly Defined Functions
 
@@ -35,7 +35,7 @@ Solving (1) for $y$ gives $y = \pm\sqrt{25 - x^2}$. So two of the functions dete
 ^def-18-1
 
 > [!remark]- Connections
-> - When does an equation $F(x, y) = 0$ define $y$ as a differentiable function of $x$ near a point? The Implicit Function Theorem answers this ($F_y \ne 0$ at the point) and gives the formula $dy/dx = -F_x/F_y$: [[§12 The Implicit Function Theorem#^thm-12-1|452 Thm. §12.1]]. In Calculus the same formula appears with partial derivatives in [[§94 The Chain Rule|§94]] (Stewart 14.5).
+> - When does an equation $F(x, y) = 0$ define $y$ as a differentiable function of $x$ near a point? The Implicit Function Theorem answers this ($F_y \ne 0$ at the point) and gives the formula $dy/dx = -F_x/F_y$: [[§12 The Implicit Function Theorem#^thm-12-1|452 Thm. §12.1]]. In Calculus the same formula appears with partial derivatives in [[§94 The Chain Rule#^thm-94-4|Theorem §94.4]] (Stewart 14.5).
 
 ## Implicit Differentiation
 

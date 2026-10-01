@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 3.8.*
 
-Many quantities change at a rate proportional to their size: a population under ideal conditions (unlimited environment, adequate nutrition, immunity to disease), the mass of a radioactive substance, the concentration in a unimolecular first-order reaction, a savings account with continuously compounded interest. All are modeled by the differential equation $dy/dt = ky$, and its only solutions are the exponential functions $y(0)e^{kt}$. This section solves the standard problems: fitting $k$ to data, half-life, Newton's Law of Cooling (after a shift of variable), and continuous compounding, where the limit $e = \lim (1 + 1/n)^n$ of [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]] appears.
+Many quantities change at a rate proportional to their size: a population under ideal conditions (unlimited environment, adequate nutrition, immunity to disease), the mass of a radioactive substance, the concentration in a unimolecular first-order reaction, a savings account with continuously compounded interest. All are modeled by the differential equation $dy/dt = ky$, and its only solutions are the exponential functions $y(0)e^{kt}$. This section solves the standard problems: fitting $k$ to data, half-life, Newton's Law of Cooling (after a shift of variable), and continuous compounding, where the limit $e = \lim (1 + 1/n)^n$ of [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|Theorem §19.7]] appears.
 
 ## The Law of Natural Growth
 
@@ -54,15 +54,15 @@ Many quantities change at a rate proportional to their size: a population under 
 > g'(t) = y'(t)e^{-kt} - k\,y(t)e^{-kt} = \big(ky(t) - ky(t)\big)e^{-kt} = 0 .
 > $$
 >
-> A function with derivative $0$ on an interval is constant ([[§26 The Mean Value Theorem|§26]], Stewart 4.2 Theorem 5), so $g(t) = g(0) = y(0)$ for all $t$, that is, $y(t) = y(0)e^{kt}$.
+> A function with derivative $0$ on an interval is constant ([[§26 The Mean Value Theorem#^thm-26-3|Theorem §26.3]], Stewart 4.2 Theorem 5), so $g(t) = g(0) = y(0)$ for all $t$, that is, $y(t) = y(0)e^{kt}$.
 
 ^pf-21-1
 
-*Uses:* [[§17 The Chain Rule#^cor-17-4|§17.4]], [[§15 The Product and Quotient Rules#^thm-15-1|§15.1]], [[§26 The Mean Value Theorem|§26]] (a function with zero derivative is constant)
+*Uses:* [[§17 The Chain Rule#^cor-17-4|§17.4]], [[§15 The Product and Quotient Rules#^thm-15-1|§15.1]], [[§26 The Mean Value Theorem#^thm-26-3|§26.3]] (a function with zero derivative is constant)
 
 > [!remark]- Connections
 > - The step "zero derivative implies constant" is [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]].
-> - In Chapter 9 the same equation is the first example of a separable equation and of a population model: [[§59 Separable Equations|§59]], [[§60 Models for Population Growth|§60]].
+> - In Chapter 9 the same equation is the first example of a separable equation and of a population model: [[§59 Separable Equations#^thm-59-1|Theorem §59.1]], [[§60 Models for Population Growth#^thm-60-1|Theorem §60.1]]; [[§60 Models for Population Growth|§60]] then refines the model to the logistic equation ([[§60 Models for Population Growth#^thm-60-2|Theorem §60.2]]).
 
 ## Population Growth
 

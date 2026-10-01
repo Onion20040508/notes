@@ -29,7 +29,7 @@ Throughout, $[a, b]$ is divided into $n$ subintervals of equal length $\Delta x 
 ^def-50-1
 
 > [!remark]- Connections
-> - These are Riemann sums ([[§35 The Definite Integral|§35]]); in 451 the integral is the limit of such sums as the mesh tends to $0$, [[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]], so for an integrable $f$ every rule of this section converges to $\int_a^b f$ as $n \to \infty$. The error bounds below add a *rate*.
+> - These are Riemann sums ([[§35 The Definite Integral#^def-35-2|Def. §35.2]]); in 451 the integral is the limit of such sums as the mesh tends to $0$, [[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]], so for an integrable $f$ every rule of this section converges to $\int_a^b f$ as $n \to \infty$. The error bounds below add a *rate*.
 
 > [!definition] Definition §50.2: The Midpoint Rule
 > $$
@@ -179,7 +179,7 @@ Simpson's Rule approximates the graph by parabolas instead of line segments. Now
 ^lem-50-2
 
 > [!proof]+ Proof
-> $Ax^2 + C$ is even and $Bx$ is odd, so by the symmetry rule for integrals ([[§38 The Substitution Rule|§38]], Stewart 5.5.7),
+> $Ax^2 + C$ is even and $Bx$ is odd, so by the symmetry rule for integrals ([[§38 The Substitution Rule#^thm-38-4|Theorem §38.4]], Stewart 5.5.7),
 >
 > $$
 > \int_{-h}^{h} (Ax^2 + Bx + C)\,dx = 2\int_0^h (Ax^2 + C)\,dx = 2\Big[A\frac{x^3}{3} + Cx\Big]_0^h = 2\Big(A\frac{h^3}{3} + Ch\Big) = \frac{h}{3}(2Ah^2 + 6C) .
@@ -195,7 +195,7 @@ Simpson's Rule approximates the graph by parabolas instead of line segments. Now
 
 ^pf-50-2
 
-*Uses:* [[§38 The Substitution Rule|§38]] (integrals of even and odd functions)
+*Uses:* [[§38 The Substitution Rule#^thm-38-4|§38.4]] (integrals of even and odd functions)
 
 > [!definition] Definition §50.5: Simpson's Rule
 > For $n$ even,
@@ -346,7 +346,7 @@ Since $E_T$ and $E_M$ usually have opposite signs and $|E_M| \approx \frac12 |E_
 >
 > Estimate the total amount of data transmitted from midnight to noon.
 >
-> With $t$ in seconds, the amount $A(t)$ transmitted by time $t$ satisfies $A'(t) = D(t)$, so by the Net Change Theorem ([[§37 Indefinite Integrals and the Net Change Theorem|§37]]) the total by noon ($t = 12 \times 60^2 = 43{,}200$) is $\int_0^{43{,}200} D(t)\,dt$. No formula for $D$ is available, but Simpson's Rule needs only the values. With $n = 12$ and $\Delta t = 3600$,
+> With $t$ in seconds, the amount $A(t)$ transmitted by time $t$ satisfies $A'(t) = D(t)$, so by the Net Change Theorem ([[§37 Indefinite Integrals and the Net Change Theorem#^thm-37-2|Theorem §37.2]]) the total by noon ($t = 12 \times 60^2 = 43{,}200$) is $\int_0^{43{,}200} D(t)\,dt$. No formula for $D$ is available, but Simpson's Rule needs only the values. With $n = 12$ and $\Delta t = 3600$,
 >
 > $$
 > \begin{aligned}

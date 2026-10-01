@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 7.8.*
 
-The definite integral of [[§35 The Definite Integral|§35]] requires a finite interval $[a, b]$ and a function without infinite discontinuities. An **improper integral** drops one of these requirements: the interval is infinite (Type 1), or the integrand has an infinite discontinuity (Type 2). In both cases it is defined as a limit of ordinary integrals over smaller intervals, and it *converges* if the limit exists. The region under $y = 1/x^2$ to the right of $x = 1$ has area $1$, but the region under $y = 1/x$ has infinite area: the dividing line is the $p$-integral, $\int_1^\infty x^{-p}\,dx$ converges exactly when $p > 1$. When an antiderivative cannot be found, a Comparison Theorem can still decide convergence. Improper integrals are needed for probability distributions ([[§56 Probability|§56]]) and the Integral Test for series ([[§71 The Integral Test and Estimates of Sums|§71]]).
+The definite integral of [[§35 The Definite Integral#^def-35-1|Definition §35.1]] requires a finite interval $[a, b]$ and a function without infinite discontinuities. An **improper integral** drops one of these requirements: the interval is infinite (Type 1), or the integrand has an infinite discontinuity (Type 2). In both cases it is defined as a limit of ordinary integrals over smaller intervals, and it *converges* if the limit exists. The region under $y = 1/x^2$ to the right of $x = 1$ has area $1$, but the region under $y = 1/x$ has infinite area: the dividing line is the $p$-integral, $\int_1^\infty x^{-p}\,dx$ converges exactly when $p > 1$. When an antiderivative cannot be found, a Comparison Theorem can still decide convergence. Improper integrals are needed for probability distributions ([[§56 Probability#^def-56-2|Def. §56.2]]) and the Integral Test for series ([[§71 The Integral Test and Estimates of Sums#^thm-71-1|Theorem §71.1]]).
 
 ## Type 1: Infinite Intervals
 
@@ -89,7 +89,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 > \int_t^0 xe^x\,dx = xe^x\Big]_t^0 - \int_t^0 e^x\,dx = -te^t - 1 + e^t .
 > $$
 >
-> As $t \to -\infty$, $e^t \to 0$, and by l'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule|§28]]), for the form $\infty/\infty$,
+> As $t \to -\infty$, $e^t \to 0$, and by l'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Theorem §28.2]]), for the form $\infty/\infty$,
 >
 > $$
 > \lim_{t \to -\infty} te^t = \lim_{t \to -\infty} \frac{t}{e^{-t}} = \lim_{t \to -\infty} \frac{1}{-e^{-t}} = \lim_{t \to -\infty} (-e^t) = 0 .
@@ -137,7 +137,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 *Uses:* [[§51 Improper Integrals#^def-51-1|Def. §51.1]], [[§51 Improper Integrals#^ex-51-1|Ex. §51.1]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§36 Improper Integrals#^ex-36-2|451 Ex. §36.2]], where the dichotomy feeds the Integral Test to give the $p$-series theorem ([[§71 The Integral Test and Estimates of Sums|§71]] here).
+> - Rigorous treatment: [[§36 Improper Integrals#^ex-36-2|451 Ex. §36.2]], where the dichotomy feeds the Integral Test to give the $p$-series theorem ([[§71 The Integral Test and Estimates of Sums#^thm-71-2|Theorem §71.2]] here).
 
 ## Type 2: Discontinuous Integrands
 
@@ -271,7 +271,7 @@ Sometimes the exact value of an improper integral cannot be found, yet it matter
 > \int_1^\infty e^{-x}\,dx = \lim_{t \to \infty} \int_1^t e^{-x}\,dx = \lim_{t \to \infty} (e^{-1} - e^{-t}) = e^{-1} .
 > $$
 >
-> By Theorem §51.2(a) with $f(x) = e^{-x}$ and $g(x) = e^{-x^2}$, $\int_1^\infty e^{-x^2}\,dx$ converges, and hence so does $\int_0^\infty e^{-x^2}\,dx$. Its value is about $0.8862$; with double integrals in polar coordinates one shows that it is exactly $\sqrt{\pi}/2$ ([[§100 Double Integrals in Polar Coordinates|§100]]). It matters in probability ([[§56 Probability|§56]]). Numerically, $\int_0^t e^{-x^2}\,dx = 0.7468$, $0.8821$, $0.8862$ for $t = 1, 2, 3$: the values settle quickly, because $e^{-x^2} \to 0$ very rapidly.
+> By Theorem §51.2(a) with $f(x) = e^{-x}$ and $g(x) = e^{-x^2}$, $\int_1^\infty e^{-x^2}\,dx$ converges, and hence so does $\int_0^\infty e^{-x^2}\,dx$. Its value is about $0.8862$; with double integrals in polar coordinates one shows that it is exactly $\sqrt{\pi}/2$ ([[§100 Double Integrals in Polar Coordinates#^thm-100-1|Theorem §100.1]]; worked out in [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]]). It matters in probability ([[§56 Probability#^prop-56-3|Proposition §56.3]]). Numerically, $\int_0^t e^{-x^2}\,dx = 0.7468$, $0.8821$, $0.8862$ for $t = 1, 2, 3$: the values settle quickly, because $e^{-x^2} \to 0$ very rapidly.
 >
 > **(b)** For $x \ge 1$, $\dfrac{1 + e^{-x}}{x} > \dfrac1x$, and $\int_1^\infty \frac1x\,dx$ diverges (Example §51.1, or Theorem §51.1 with $p = 1$). By Theorem §51.2(b) the integral diverges. Numerically, $\int_1^t \frac{1 + e^{-x}}{x}\,dx \approx 0.86, 1.83, 2.52, 4.82, 7.13, 9.43$ for $t = 2, 5, 10, 100, 1000, 10000$: the values keep growing, roughly like $\ln t$.
 >

@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 3.9.*
 
-When air is pumped into a balloon, its volume and its radius both increase, and their rates of increase are related; the first is much easier to measure than the second. In a related rates problem one computes the rate of change of one quantity from the rate of change of another (which may be easier to measure). The procedure: find an equation that relates the two quantities at every time $t$, differentiate both sides with respect to $t$ by the Chain Rule ([[§17 The Chain Rule|§17]]), as in implicit differentiation ([[§18 Implicit Differentiation|§18]]), and only then substitute the numbers. The section consists of a strategy and five model problems.
+When air is pumped into a balloon, its volume and its radius both increase, and their rates of increase are related; the first is much easier to measure than the second. In a related rates problem one computes the rate of change of one quantity from the rate of change of another (which may be easier to measure). The procedure: find an equation that relates the two quantities at every time $t$, differentiate both sides with respect to $t$ by the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]), as in implicit differentiation ([[§18 Implicit Differentiation#^rem-18-1|Remark: Method — Implicit Differentiation]]), and only then substitute the numbers. The section consists of a strategy and five model problems.
 
 ## The Strategy
 

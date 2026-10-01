@@ -82,7 +82,7 @@ Is there a number $c$ at which $f$ takes exactly its average value, $f(c) = f_{\
 > F(x) = \int_a^x f(t)\,dt , \qquad a \le x \le b .
 > $$
 >
-> Since $f$ is continuous on $[a, b]$, FTC1 ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]) shows that $F$ is continuous on $[a, b]$ and differentiable on $(a, b)$ with $F'(x) = f(x)$. By the Mean Value Theorem ([[§26 The Mean Value Theorem|§26]]) there is a number $c$ in $(a, b)$ with
+> Since $f$ is continuous on $[a, b]$, FTC1 ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]) shows that $F$ is continuous on $[a, b]$ and differentiable on $(a, b)$ with $F'(x) = f(x)$. By the Mean Value Theorem ([[§26 The Mean Value Theorem#^thm-26-2|Theorem §26.2]]) there is a number $c$ in $(a, b)$ with
 >
 > $$
 > F(b) - F(a) = F'(c)(b - a) .
@@ -92,7 +92,7 @@ Is there a number $c$ at which $f$ takes exactly its average value, $f(c) = f_{\
 
 ^pf-43-1
 
-*Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§26 The Mean Value Theorem|§26]] (Mean Value Theorem), [[§35 The Definite Integral#^def-35-4|Def. §35.4]], [[§43 Average Value of a Function#^def-43-1|Def. §43.1]]
+*Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]] (Mean Value Theorem), [[§35 The Definite Integral#^def-35-4|Def. §35.4]], [[§43 Average Value of a Function#^def-43-1|Def. §43.1]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§33 Properties of the Riemann Integral#^thm-33-9|451 Thm. §33.9]] proves it with the Intermediate Value Theorem instead (the average lies between the minimum and maximum of $f$), [[§33 Properties of the Riemann Integral#^prop-33-11|451 Prop. §33.11]] shows that $c$ can be taken in $(a, b)$, and [[§33 Properties of the Riemann Integral#^thm-33-10|451 Thm. §33.10]] is the weighted version.

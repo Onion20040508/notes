@@ -220,7 +220,7 @@ The Mean Value Theorem gives information about $f$ from information about $f'$. 
 > f(x) = \frac{x}{|x|} = \begin{cases} 1 & \text{if } x > 0 \\ -1 & \text{if } x < 0 . \end{cases}
 > $$
 >
-> Its domain is $D = \{x \mid x \ne 0\}$ and $f'(x) = 0$ for all $x$ in $D$, but $f$ is not constant. There is no contradiction: $D$ is not an interval. $f$ is constant on each of the intervals $(-\infty, 0)$ and $(0, \infty)$, with different constants. The same caution applies to antiderivatives ([[§33 Antiderivatives|§33]]).
+> Its domain is $D = \{x \mid x \ne 0\}$ and $f'(x) = 0$ for all $x$ in $D$, but $f$ is not constant. There is no contradiction: $D$ is not an interval. $f$ is constant on each of the intervals $(-\infty, 0)$ and $(0, \infty)$, with different constants. The same caution applies to antiderivatives ([[§33 Antiderivatives#^ex-33-1|Example §33.1]](b)).
 
 ^rem-26-2
 

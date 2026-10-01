@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 3.10.*
 
-Zooming in toward a point on the graph of a differentiable function, the graph looks more and more like its tangent line ([[§12 Derivatives and Rates of Change|§12]]). So near $a$ we may replace $f$ by the linear function whose graph is the tangent line, the *linearization* $L(x) = f(a) + f'(a)(x - a)$: it is easy to evaluate and gives approximate values of $f$ near $a$. The same idea in the notation of *differentials* says that the change $\Delta y$ of $f$ is approximately $dy = f'(x)\,dx$, the change along the tangent line, which is how errors in measured quantities propagate into computed ones.
+Zooming in toward a point on the graph of a differentiable function, the graph looks more and more like its tangent line ([[§12 Derivatives and Rates of Change#^thm-12-2|Theorem §12.2]]). So near $a$ we may replace $f$ by the linear function whose graph is the tangent line, the *linearization* $L(x) = f(a) + f'(a)(x - a)$: it is easy to evaluate and gives approximate values of $f$ near $a$. The same idea in the notation of *differentials* says that the change $\Delta y$ of $f$ is approximately $dy = f'(x)\,dx$, the change along the tangent line, which is how errors in measured quantities propagate into computed ones.
 
 ## Linearization and Approximation
 
@@ -35,8 +35,8 @@ Zooming in toward a point on the graph of a differentiable function, the graph l
 ^def-23-1
 
 > [!remark]- Connections
-> - How good is it? Taylor's Theorem with $n = 2$ bounds the error: $f(x) - L(x) = \frac12 f''(c)(x - a)^2$ for some $c$ between $a$ and $x$ ([[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]]; in Calculus, [[§78 Taylor and Maclaurin Series|§78]]). This explains Example §23.1: the error grows like $(x - a)^2$, and its sign is that of $f''$.
-> - In several variables the tangent line becomes the tangent plane: [[§93 Tangent Planes and Linear Approximations|§93]] (Stewart 14.4), and [[§6 Differentiability#^def-6-1|452 Def. §6.1]], where good linear approximation is the definition of differentiability.
+> - How good is it? Taylor's Theorem with $n = 2$ bounds the error: $f(x) - L(x) = \frac12 f''(c)(x - a)^2$ for some $c$ between $a$ and $x$ ([[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]]; in Calculus, [[§78 Taylor and Maclaurin Series#^rem-78-2|Remark: Formulas for the Remainder]]). This explains Example §23.1: the error grows like $(x - a)^2$, and its sign is that of $f''$.
+> - In several variables the tangent line becomes the tangent plane: [[§93 Tangent Planes and Linear Approximations#^def-93-2|Definition §93.2]] (Stewart 14.4), and [[§6 Differentiability#^def-6-1|452 Def. §6.1]], where good linear approximation is the definition of differentiability.
 
 > [!example] Example §23.1: Linearizing a Square Root
 > Find the linearization of $f(x) = \sqrt{x + 3}$ at $a = 1$ and use it to approximate $\sqrt{3.98}$ and $\sqrt{4.05}$. Are these overestimates or underestimates?

@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 7.6.*
 
-Tables of integrals list antiderivatives by the form of the integrand; Stewart's has 120 entries (Reference Pages 6–10), and larger tables have thousands. An integral rarely occurs exactly in a listed form, so using a table means first transforming the integral with a substitution, by completing the square, or with a reduction formula, which is the same skill as in [[§48 Strategy for Integration|§48]]. Computer algebra systems do the same pattern matching automatically. Neither can find an elementary antiderivative where none exists ([[§48 Strategy for Integration#^thm-48-2|Theorem §48.2]]).
+Tables of integrals list antiderivatives by the form of the integrand; Stewart's has 120 entries (Reference Pages 6–10), and larger tables have thousands. An integral rarely occurs exactly in a listed form, so using a table means first transforming the integral with a substitution, by completing the square, or with a reduction formula, which is the same skill as in [[§48 Strategy for Integration#^rem-48-1|Remark: Method — Strategy for Integration]]. Computer algebra systems do the same pattern matching automatically. Neither can find an elementary antiderivative where none exists ([[§48 Strategy for Integration#^thm-48-2|Theorem §48.2]]).
 
 ## Tables of Integrals
 
@@ -67,7 +67,7 @@ The entries used below are typical. Each one is proved by differentiating the ri
 > \frac{d}{du}\Big[-\frac{u r}{2} + \frac{a^2}{2}\sin^{-1}\frac{u}{a}\Big] = -\frac{r}{2} + \frac{u^2}{2r} + \frac{a^2}{2r} = \frac{-r^2 + u^2 + a^2}{2r} = \frac{2u^2}{2r} = \frac{u^2}{\sqrt{a^2 - u^2}} ,
 > $$
 >
-> using Formula 18 of [[§48 Strategy for Integration#^thm-48-1|Theorem §48.1]] for the derivative of $\sin^{-1}(u/a)$. (It can also be derived with $u = a\sin\theta$, [[§46 Trigonometric Substitution|§46]].)
+> using Formula 18 of [[§48 Strategy for Integration#^thm-48-1|Theorem §48.1]] for the derivative of $\sin^{-1}(u/a)$. (It can also be derived with $u = a\sin\theta$, [[§46 Trigonometric Substitution#^rem-46-1|Remark: Method — Trigonometric Substitution]].)
 >
 > **(92)**
 >
@@ -79,7 +79,7 @@ The entries used below are typical. Each one is proved by differentiating the ri
 
 ^pf-49-2
 
-*Uses:* [[§48 Strategy for Integration#^thm-48-1|§48.1]] (Formula 18), [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]
+*Uses:* [[§48 Strategy for Integration#^thm-48-1|§48.1]] (Formula 18), [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-4|§19.4]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|§19.8]]
 
 > [!remark] Remark: Method — Using a Table of Integrals
 > 1. Identify the family the integrand belongs to (forms involving $\sqrt{a^2 - u^2}$, trigonometric forms, inverse trigonometric forms, …) and find the closest entry.
@@ -96,7 +96,7 @@ The entries used below are typical. Each one is proved by differentiating the ri
 > [!example] Example §49.1: A Volume by Shells
 > The region bounded by $y = \tan^{-1} x$, $y = 0$ and $x = 1$ is rotated about the $y$-axis. Find the volume of the solid.
 >
-> By cylindrical shells ([[§41 Volumes by Cylindrical Shells|§41]]), $V = \int_0^1 2\pi x \tan^{-1} x\,dx$. Entry 92 (Proposition §49.2) gives
+> By cylindrical shells ([[§41 Volumes by Cylindrical Shells#^thm-41-2|Theorem §41.2]]), $V = \int_0^1 2\pi x \tan^{-1} x\,dx$. Entry 92 (Proposition §49.2) gives
 >
 > $$
 > V = 2\pi\Big[\frac{x^2 + 1}{2}\tan^{-1} x - \frac{x}{2}\Big]_0^1 = \pi\Big[(x^2 + 1)\tan^{-1} x - x\Big]_0^1 = \pi(2\tan^{-1} 1 - 1) = \pi\Big(\frac{\pi}{2} - 1\Big) = \tfrac12 \pi^2 - \pi .
@@ -165,7 +165,7 @@ The entries used below are typical. Each one is proved by differentiating the ri
 > \int x\sqrt{x^2 + 2x + 4}\,dx = \tfrac13 (x^2 + 2x + 4)^{3/2} - \frac{x + 1}{2}\sqrt{x^2 + 2x + 4} - \tfrac32 \ln\big(x + 1 + \sqrt{x^2 + 2x + 4}\big) + C .
 > $$
 >
-> A computer algebra system may return $-\frac32 \sinh^{-1}\big(\frac{\sqrt3}{3}(1 + x)\big)$ for the last term. Since $\sinh^{-1} y = \ln\big(y + \sqrt{y^2 + 1}\big)$ ([[§24 Hyperbolic Functions|§24]]), this is $\ln\big(x + 1 + \sqrt{x^2 + 2x + 4}\big) + \ln\frac{1}{\sqrt3}$, the same up to a constant.
+> A computer algebra system may return $-\frac32 \sinh^{-1}\big(\frac{\sqrt3}{3}(1 + x)\big)$ for the last term. Since $\sinh^{-1} y = \ln\big(y + \sqrt{y^2 + 1}\big)$ ([[§24 Hyperbolic Functions#^thm-24-3|Theorem §24.3]]), this is $\ln\big(x + 1 + \sqrt{x^2 + 2x + 4}\big) + \ln\frac{1}{\sqrt3}$, the same up to a constant.
 >
 > *Stewart: Examples 7.6.4 and 7.6.5*
 

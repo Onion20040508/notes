@@ -140,6 +140,8 @@ One-to-one functions are important because they are precisely the functions that
 > 3. To express $f^{-1}$ as a function of $x$, interchange $x$ and $y$. The resulting equation is $y = f^{-1}(x)$.
 >
 > Check the answer with the cancellation equations (Theorem §5.2), and record the domain of $f^{-1}$, which is the range of $f$ (it may be smaller than the natural domain of the formula, as in Example §5.2(b)).
+>
+> *Stewart: 1.5, Box 5*
 
 ^rem-5-2
 
