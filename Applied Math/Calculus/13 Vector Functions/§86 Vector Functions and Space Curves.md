@@ -61,7 +61,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 ^thm-86-1
 
 > [!proof]+ Proof
-> Stewart states that "limits of vector functions obey the same rules as limits of real-valued functions" and leaves the proof as an exercise. Write $\mathbf{u} = \langle u_1, u_2, u_3 \rangle$, $\mathbf{v} = \langle v_1, v_2, v_3 \rangle$, and $\lim_{t \to a} u_i(t) = p_i$, $\lim_{t \to a} v_i(t) = q_i$, which exist by Definition §86.2. Each component of $\mathbf{u} + \mathbf{v}$, $c\mathbf{u}$, $\mathbf{u} \cdot \mathbf{v}$ and $\mathbf{u} \times \mathbf{v}$ is a sum of constant multiples of $u_i$, $v_j$ or of products $u_iv_j$. For instance, $\mathbf{u} \cdot \mathbf{v} = u_1v_1 + u_2v_2 + u_3v_3$, and the first component of $\mathbf{u} \times \mathbf{v}$ is $u_2v_3 - u_3v_2$. By the Sum, Constant Multiple and Product Laws for real-valued limits ([[§8 Calculating Limits Using the Limit Laws|§8]]),
+> Stewart states that "limits of vector functions obey the same rules as limits of real-valued functions" and leaves the proof as an exercise. Write $\mathbf{u} = \langle u_1, u_2, u_3 \rangle$, $\mathbf{v} = \langle v_1, v_2, v_3 \rangle$, and $\lim_{t \to a} u_i(t) = p_i$, $\lim_{t \to a} v_i(t) = q_i$, which exist by Definition §86.2. Each component of $\mathbf{u} + \mathbf{v}$, $c\mathbf{u}$, $\mathbf{u} \cdot \mathbf{v}$ and $\mathbf{u} \times \mathbf{v}$ is a sum of constant multiples of $u_i$, $v_j$ or of products $u_iv_j$. For instance, $\mathbf{u} \cdot \mathbf{v} = u_1v_1 + u_2v_2 + u_3v_3$, and the first component of $\mathbf{u} \times \mathbf{v}$ is $u_2v_3 - u_3v_2$. By the Sum, Constant Multiple and Product Laws for real-valued limits ([[§8 Calculating Limits Using the Limit Laws#^thm-8-1|Theorem §8.1]]),
 >
 > $$
 > \lim_{t \to a}(u_1v_1 + u_2v_2 + u_3v_3) = p_1q_1 + p_2q_2 + p_3q_3, \qquad \lim_{t \to a}(u_2v_3 - u_3v_2) = p_2q_3 - p_3q_2 ,
@@ -71,7 +71,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 
 ^pf-86-1
 
-*Uses:* [[§86 Vector Functions and Space Curves#^def-86-2|Def. §86.2]], Limit Laws ([[§8 Calculating Limits Using the Limit Laws|§8]]), [[§82 The Dot Product#^def-82-1|Def. §82.1]], [[§83 The Cross Product#^def-83-1|Def. §83.1]]
+*Uses:* [[§86 Vector Functions and Space Curves#^def-86-2|Def. §86.2]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]], [[§82 The Dot Product#^def-82-1|Def. §82.1]], [[§83 The Cross Product#^def-83-1|Def. §83.1]]
 
 > [!definition] Definition §86.3: Continuity of a Vector Function
 > A vector function $\mathbf{r}$ is **continuous at $a$** if
@@ -107,7 +107,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 > \lim_{t \to 0}\mathbf{r}(t) = \Big[\lim_{t \to 0}(1 + t^3)\Big]\mathbf{i} + \Big[\lim_{t \to 0} te^{-t}\Big]\mathbf{j} + \Big[\lim_{t \to 0}\frac{\sin t}{t}\Big]\mathbf{k} = \mathbf{i} + 0\,\mathbf{j} + 1\,\mathbf{k} = \mathbf{i} + \mathbf{k} ,
 > $$
 >
-> using $\lim_{t \to 0}(\sin t)/t = 1$ ([[§16 Derivatives of Trigonometric Functions|§16]]).
+> using $\lim_{t \to 0}(\sin t)/t = 1$ ([[§16 Derivatives of Trigonometric Functions#^thm-16-6|Theorem §16.6]]).
 >
 > **(c)** For $\mathbf{r}(t) = \Big\langle \sqrt{2 - t},\ \dfrac{e^t - 1}{t},\ \ln(t + 1) \Big\rangle$: the components need $t \le 2$, $t \ne 0$ and $t > -1$, so the domain is $(-1, 0) \cup (0, 2]$. As $t \to 0$, $\sqrt{2 - t} \to \sqrt2$, $\ln(t + 1) \to 0$, and $\dfrac{e^t - 1}{t} = \dfrac{e^t - e^0}{t - 0} \to \dfrac{d}{dt}e^t\Big|_{t = 0} = 1$. So $\lim_{t \to 0}\mathbf{r}(t) = \langle \sqrt2, 1, 0 \rangle$, even though $\mathbf{r}(0)$ is undefined.
 >
@@ -135,7 +135,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 >
 > as $t$ varies throughout $I$, is a **space curve**. The equations (2) are **parametric equations of $C$**, and $t$ is a **parameter**. A vector function giving $C$ in this way is a **parametrization** of $C$.
 >
-> If $\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle$, then $\mathbf{r}(t)$ is the position vector of the point $P(f(t), g(t), h(t))$ on $C$. So every continuous vector function defines a space curve, traced out by the tip of the moving vector $\mathbf{r}(t)$, like the path of a particle whose position at time $t$ is $\mathbf{r}(t)$. Plane curves are the special case $\mathbf{r}(t) = \langle f(t), g(t) \rangle = f(t)\,\mathbf{i} + g(t)\,\mathbf{j}$ (compare [[§63 Curves Defined by Parametric Equations|§63]]).
+> If $\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle$, then $\mathbf{r}(t)$ is the position vector of the point $P(f(t), g(t), h(t))$ on $C$. So every continuous vector function defines a space curve, traced out by the tip of the moving vector $\mathbf{r}(t)$, like the path of a particle whose position at time $t$ is $\mathbf{r}(t)$. Plane curves are the special case $\mathbf{r}(t) = \langle f(t), g(t) \rangle = f(t)\,\mathbf{i} + g(t)\,\mathbf{j}$ (compare [[§63 Curves Defined by Parametric Equations#^def-63-1|Definition §63.1]]).
 >
 > *Stewart: 13.1 (text)*
 

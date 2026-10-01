@@ -41,7 +41,7 @@ The one-variable Chain Rule, $\frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dt}$, has s
 > \frac{\Delta z}{\Delta t} = \frac{\partial f}{\partial x}\frac{\Delta x}{\Delta t} + \frac{\partial f}{\partial y}\frac{\Delta y}{\Delta t} + \varepsilon_1 \frac{\Delta x}{\Delta t} + \varepsilon_2 \frac{\Delta y}{\Delta t} .
 > $$
 >
-> Now let $\Delta t \to 0$. Then $\Delta x = g(t + \Delta t) - g(t) \to 0$, because $g$ is differentiable and therefore continuous ([[§13 The Derivative as a Function|§13]]); similarly $\Delta y \to 0$. This in turn means that $\varepsilon_1 \to 0$ and $\varepsilon_2 \to 0$. So
+> Now let $\Delta t \to 0$. Then $\Delta x = g(t + \Delta t) - g(t) \to 0$, because $g$ is differentiable and therefore continuous ([[§13 The Derivative as a Function#^thm-13-1|Theorem §13.1]]); similarly $\Delta y \to 0$. This in turn means that $\varepsilon_1 \to 0$ and $\varepsilon_2 \to 0$: as functions of $(\Delta x, \Delta y)$ they are continuous at $(0, 0)$ with value $0$, and $(\Delta x, \Delta y) \to (0, 0)$ as $\Delta t \to 0$ (the composition argument of [[§91 Limits and Continuity#^thm-91-5|Theorem §91.5]](b)). So
 >
 > $$
 > \begin{aligned}
@@ -54,7 +54,7 @@ The one-variable Chain Rule, $\frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dt}$, has s
 
 ^pf-94-1
 
-*Uses:* [[§93 Tangent Planes and Linear Approximations#^def-93-3|Def. §93.3]], [[§13 The Derivative as a Function|§13]] (differentiable implies continuous), [[§91 Limits and Continuity#^thm-91-5|§91.5]] (composition with a continuous function)
+*Uses:* [[§93 Tangent Planes and Linear Approximations#^def-93-3|Def. §93.3]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous), [[§91 Limits and Continuity#^thm-91-5|§91.5]] (composition with a continuous function)
 
 Notice the similarity with the differential $dz = \frac{\partial z}{\partial x}\,dx + \frac{\partial z}{\partial y}\,dy$ of [[§93 Tangent Planes and Linear Approximations#^def-93-4|Definition §93.4]]. Recall that $f$ is differentiable whenever $f_x$ and $f_y$ are continuous ([[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]]).
 
@@ -116,7 +116,7 @@ For instance, for one mole of an ideal gas $P = 8.31\,T/V$ (kPa, K, L). If $T = 
 *Uses:* [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§92 Partial Derivatives#^thm-92-1|§92.1]]
 
 > [!remark] Remark: Tree Diagrams
-> Case 2 has three kinds of variables: $s$ and $t$ are **independent** variables, $x$ and $y$ are **intermediate** variables, and $z$ is the **dependent** variable. Theorem §94.2 has one term for each intermediate variable, and each term resembles the one-variable Chain Rule ([[§17 The Chain Rule|§17]]). To remember it, draw a **tree diagram**: branches from the dependent variable $z$ to the intermediate variables $x$ and $y$, then from each of these to the independent variables $s$ and $t$, and write on each branch the corresponding partial derivative. To find $\partial z / \partial s$, multiply the partial derivatives along each path from $z$ to $s$ and add the products:
+> Case 2 has three kinds of variables: $s$ and $t$ are **independent** variables, $x$ and $y$ are **intermediate** variables, and $z$ is the **dependent** variable. Theorem §94.2 has one term for each intermediate variable, and each term resembles the one-variable Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]). To remember it, draw a **tree diagram**: branches from the dependent variable $z$ to the intermediate variables $x$ and $y$, then from each of these to the independent variables $s$ and $t$, and write on each branch the corresponding partial derivative. To find $\partial z / \partial s$, multiply the partial derivatives along each path from $z$ to $s$ and add the products:
 >
 > $$
 > \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x}\frac{\partial x}{\partial s} + \frac{\partial z}{\partial y}\frac{\partial y}{\partial s} .
@@ -353,7 +353,7 @@ The same assumption is made here: that $F(x, y, z) = 0$ defines $z$ as a differe
 > \frac{dy}{dx} = -\frac{F_x}{F_y} = -\frac{3x^2 - 6y}{3y^2 - 6x} = -\frac{x^2 - 2y}{y^2 - 2x} .
 > $$
 >
-> Compare the implicit differentiation of the folium of Descartes in [[§18 Implicit Differentiation|§18]].
+> Compare the implicit differentiation of the folium of Descartes in [[§18 Implicit Differentiation#^ex-18-2|Example §18.2]].
 >
 > **(b)** Find $\partial z / \partial x$ and $\partial z / \partial y$ if $x^3 + y^3 + z^3 + 6xyz + 4 = 0$.
 >
@@ -377,7 +377,7 @@ The same assumption is made here: that $F(x, y, z) = 0$ defines $z$ as a differe
 >
 > At the points with $z = 0$ (the ellipse $x^2 + y^2/9 = 1$ in the $xy$-plane) the tangent plane is vertical, and $z$ is not a differentiable function of $(x, y)$ there.
 >
-> *The answer key's second line differentiates "with respect to $x$" but means $y$: it should read $\frac{2y}{9} + \frac{z}{2}\frac{\partial z}{\partial y} = 0$. This part appears only in the answer key, not in the posted exam.*
+> *In the answer key's second line, $\partial z / \partial x$ is written where $\partial z / \partial y$ is meant: the line should read $\frac{2y}{9} + \frac{z}{2}\frac{\partial z}{\partial y} = 0$; the answers $-4x/z$ and $-4y/(9z)$ are correct. This part appears only in the answer key, not in the posted exam.*
 >
 > *Stewart: Examples 14.5.8 and 14.5.9*
 > *Source: 233 Practice Exam 1, Q4(c) (answer key)*

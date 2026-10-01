@@ -111,7 +111,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 > [!example] Example §85.3: Elliptic and Hyperbolic Paraboloids
 > **(a)** $z = 4x^2 + y^2$. The trace in $x = 0$ is the parabola $z = y^2$; in $x = k$ it is $z = y^2 + 4k^2$, a parabola opening upward. In $y = k$ the trace is $z = 4x^2 + k^2$, again an upward parabola. The horizontal traces $4x^2 + y^2 = k$ are ellipses for $k > 0$ (the point $(0, 0, 0)$ for $k = 0$, empty for $k < 0$). Because of the elliptic and parabolic traces, the surface is an **elliptic paraboloid**.
 >
-> **(b)** $z = y^2 - x^2$. The traces in the vertical planes $x = k$ are the parabolas $z = y^2 - k^2$, which open upward; the traces in $y = k$ are the parabolas $z = -x^2 + k^2$, which open downward; the horizontal traces $y^2 - x^2 = k$ are hyperbolas (opening along the $y$-axis for $k > 0$, along the $x$-axis for $k < 0$, and the pair of lines $y = \pm x$ for $k = 0$). Fitting the traces together gives a saddle-shaped surface, the **hyperbolic paraboloid**. Along the $y$-axis the origin is a minimum of the upward parabola, along the $x$-axis a maximum of the downward one; this is the saddle point of [[§96 Maximum and Minimum Values|§96]].
+> **(b)** $z = y^2 - x^2$. The traces in the vertical planes $x = k$ are the parabolas $z = y^2 - k^2$, which open upward; the traces in $y = k$ are the parabolas $z = -x^2 + k^2$, which open downward; the horizontal traces $y^2 - x^2 = k$ are hyperbolas (opening along the $y$-axis for $k > 0$, along the $x$-axis for $k < 0$, and the pair of lines $y = \pm x$ for $k = 0$). Fitting the traces together gives a saddle-shaped surface, the **hyperbolic paraboloid**. Along the $y$-axis the origin is a minimum of the upward parabola, along the $x$-axis a maximum of the downward one; this is the saddle point of [[§96 Maximum and Minimum Values#^def-96-2|Definition §96.2]].
 >
 > *Stewart: Examples 12.6.4 and 12.6.5*
 
@@ -183,8 +183,8 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 
 > [!remark] Remark: Method — Identifying a Quadric Surface
 > 1. **Collect the squares.** If a variable appears both squared and to the first power, complete the square in it (this translates the surface).
-> 2. **Count powers.** One variable to the first power: a paraboloid (elliptic if the two squares have the same sign on the same side, hyperbolic if opposite signs); its axis is the line of that variable. All three squared: an ellipsoid, a cone or a hyperboloid.
-> 3. **Read the signs** (with constant $1$ on the right): three $+$ signs give an ellipsoid; one $-$ sign, a hyperboloid of one sheet, with axis along the negative variable; two $-$ signs, a hyperboloid of two sheets, with axis along the positive variable. If the constant is $0$, it is a cone.
+> 2. **Count powers.** A variable missing altogether: a cylinder ([[§85 Cylinders and Quadric Surfaces#^prop-85-1|Proposition §85.1]]). One variable to the first power: a paraboloid (elliptic if the two squares have the same sign on the same side, hyperbolic if opposite signs); its axis is the line of that variable. All three squared: an ellipsoid, a cone or a hyperboloid.
+> 3. **Read the signs** (with constant $1$ on the right): three $+$ signs give an ellipsoid; one $-$ sign, a hyperboloid of one sheet, with axis along the negative variable; two $-$ signs, a hyperboloid of two sheets, with axis along the positive variable. If the constant is $0$ and the signs are mixed, it is a cone, with axis along the variable whose sign differs from the other two (if all three signs agree, the only point is the origin).
 > 4. **Check with traces** in the coordinate planes and in a few parallel planes, and use them to sketch.
 
 ^rem-85-2

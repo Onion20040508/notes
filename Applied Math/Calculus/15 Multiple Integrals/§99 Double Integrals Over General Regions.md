@@ -249,7 +249,7 @@ By Theorems §99.1 and §99.2, a region that is both type I and type II gives tw
 > \int_0^1 \int_{\sqrt y}^{1} \sqrt{x^3 + 1}\,dx\,dy = \int_0^1 \int_0^{x^2} \sqrt{x^3 + 1}\,dy\,dx = \int_0^1 x^2 \sqrt{x^3 + 1}\,dx = \Big[ \frac29 (x^3 + 1)^{3/2} \Big]_0^1 = \frac29 \big( 2^{3/2} - 1 \big) ,
 > $$
 >
-> the last step by the substitution $u = x^3 + 1$, $du = 3x^2\,dx$ ([[§38 The Substitution Rule|§38]]).
+> the last step by the substitution $u = x^3 + 1$, $du = 3x^2\,dx$ ([[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]]).
 >
 > **(b)** Evaluate $\displaystyle\int_0^1 \int_{x^2}^{1} x^3 \sin(y^3)\,dy\,dx$.
 >

@@ -63,7 +63,7 @@ The approximation improves as $n$ grows, and the right side of (3) is a Riemann 
 ^def-42-3
 
 > [!remark]- Connections
-> - Along a curve instead of a line, with the force a vector field, the work is the line integral $\int_C \mathbf{F} \cdot d\mathbf{r}$ ([[§108 Line Integrals|§108]]; [[§16 Line Integrals and Green's Theorem#^def-16-2|452 Def. §16.2]]). For motion along the $x$-axis with $\mathbf{F} = f(x)\,\mathbf{i}$ it reduces to Definition §42.3.
+> - Along a curve instead of a line, with the force a vector field, the work is the line integral $\int_C \mathbf{F} \cdot d\mathbf{r}$ ([[§108 Line Integrals#^def-108-7|Def. §108.7]], [[§108 Line Integrals#^def-108-8|Def. §108.8]]; [[§16 Line Integrals and Green's Theorem#^def-16-2|452 Def. §16.2]]). For motion along the $x$-axis with $\mathbf{F} = f(x)\,\mathbf{i}$ it reduces to Definition §42.3.
 
 > [!example] Example §42.1: Constant and Variable Forces
 > **(a)** How much work is done in lifting a $1.2$-kg book off the floor onto a desk $0.7$ m high? (Use $g = 9.8\ \mathrm{m/s^2}$.)

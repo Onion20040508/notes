@@ -32,11 +32,11 @@ One of the main uses of ordinary derivatives is finding maximum and minimum valu
 ^thm-96-1
 
 > [!proof]+ Proof
-> Let $g(x) = f(x, b)$. If $f$ has a local maximum (or minimum) at $(a, b)$, then $g$ has a local maximum (or minimum) at $a$: the points $(x, b)$ with $x$ near $a$ lie in the disk of Definition §96.1. Since $g'(a) = f_x(a, b)$ exists ([[§92 Partial Derivatives#^def-92-1|Definition §92.1]]), Fermat's Theorem for one variable (Stewart, Theorem 4.1.4; [[§25 Maximum and Minimum Values|§25]]) gives $g'(a) = 0$, that is, $f_x(a, b) = 0$. Similarly, applying Fermat's Theorem to $G(y) = f(a, y)$ gives $f_y(a, b) = 0$.
+> Let $g(x) = f(x, b)$. If $f$ has a local maximum (or minimum) at $(a, b)$, then $g$ has a local maximum (or minimum) at $a$: the points $(x, b)$ with $x$ near $a$ lie in the disk of Definition §96.1. Since $g'(a) = f_x(a, b)$ exists ([[§92 Partial Derivatives#^def-92-1|Definition §92.1]]), Fermat's Theorem for one variable (Stewart, Theorem 4.1.4; [[§25 Maximum and Minimum Values#^thm-25-2|Theorem §25.2]]) gives $g'(a) = 0$, that is, $f_x(a, b) = 0$. Similarly, applying Fermat's Theorem to $G(y) = f(a, y)$ gives $f_y(a, b) = 0$.
 
 ^pf-96-1
 
-*Uses:* [[§96 Maximum and Minimum Values#^def-96-1|Def. §96.1]], [[§92 Partial Derivatives#^def-92-1|Def. §92.1]], [[§25 Maximum and Minimum Values|§25]] (Fermat's Theorem)
+*Uses:* [[§96 Maximum and Minimum Values#^def-96-1|Def. §96.1]], [[§92 Partial Derivatives#^def-92-1|Def. §92.1]], [[§25 Maximum and Minimum Values#^thm-25-2|§25.2]] (Fermat's Theorem)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Optimization and Lagrange Multipliers#^thm-14-1|452 Thm. §14.1]] (in $\mathbb{R}^n$), which rests on the one-variable [[§29 The Mean Value Theorem#^thm-29-1|451 Thm. §29.1]] (Interior Extremum Theorem).
@@ -115,7 +115,7 @@ Theorem §96.1 says that if $f$ has a local maximum or minimum at $(a, b)$, then
 > [!proof]+ Proof
 > Stewart proves part (a) and says part (b) "has a similar proof"; part (c) is filled in here.
 >
-> **Second directional derivatives.** Let $\mathbf{u} = \langle h, k \rangle$ be a unit vector. Since the second partial derivatives are continuous, so are $f_x$ and $f_y$, and $f$ is differentiable ([[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]]); so is $D_{\mathbf{u}} f = f_x h + f_y k$ ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|Theorem §95.1]]). Applying Theorem §95.1 a second time,
+> **Second directional derivatives.** Let $\mathbf{u} = \langle h, k \rangle$ be a unit vector. Since the second partial derivatives are continuous on the disk, $f_x$ and $f_y$ are differentiable there ([[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]]), hence continuous, so $f$ is differentiable as well (Theorem §93.2 again); and so is $D_{\mathbf{u}} f = f_x h + f_y k$ ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|Theorem §95.1]]). Applying Theorem §95.1 a second time,
 >
 > $$
 > D_{\mathbf{u}}^2 f = D_{\mathbf{u}}(D_{\mathbf{u}} f) = \frac{\partial}{\partial x}(D_{\mathbf{u}} f)\,h + \frac{\partial}{\partial y}(D_{\mathbf{u}} f)\,k = (f_{xx} h + f_{yx} k) h + (f_{xy} h + f_{yy} k) k = f_{xx} h^2 + 2f_{xy} hk + f_{yy} k^2 ,
@@ -137,7 +137,7 @@ Theorem §96.1 says that if $f$ has a local maximum or minimum at $(a, b)$, then
 
 ^pf-96-2
 
-*Uses:* [[§92 Partial Derivatives#^thm-92-2|§92.2]] (Clairaut), [[§93 Tangent Planes and Linear Approximations#^thm-93-2|§93.2]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|§95.1]], [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§96 Maximum and Minimum Values#^def-96-2|Def. §96.2]], [[§27 What Derivatives Tell Us About the Shape of a Graph|§27]] (increasing/decreasing test)
+*Uses:* [[§92 Partial Derivatives#^thm-92-2|§92.2]] (Clairaut), [[§93 Tangent Planes and Linear Approximations#^thm-93-2|§93.2]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|§95.1]], [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§96 Maximum and Minimum Values#^def-96-2|Def. §96.2]], [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]] (increasing/decreasing test)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Optimization and Lagrange Multipliers#^thm-14-4|452 Thm. §14.4]], in the language of the Hessian matrix [[§14 Optimization and Lagrange Multipliers#^def-14-2|452 Def. §14.2]] and its definiteness [[§14 Optimization and Lagrange Multipliers#^def-14-3|452 Def. §14.3]]: $D > 0$, $f_{xx} > 0$ says that the Hessian is positive definite, $D < 0$ that it is indefinite. The quadratic expression $Q$ is the second-order term of the Taylor expansion, [[§9 Taylor's Theorem for Multivariable Functions#^ex-9-3|452 Ex. §9.3]].
@@ -174,6 +174,8 @@ Theorem §96.1 says that if $f$ has a local maximum or minimum at $(a, b)$, then
 > *Stewart: Example 14.7.3*
 
 ^ex-96-2
+
+When the critical-point equations cannot be solved exactly, they are solved numerically. In Stewart's Example 14.7.4, $f(x, y) = 10x^2 y - 5x^2 - 4y^2 - x^4 - 2y^4$ has $f_x = 2x(10y - 5 - 2x^2)$ and $f_y = 10x^2 - 8y - 8y^3$. The case $x = 0$ gives $-4y(1 + y^2) = 0$, so the critical point $(0, 0)$. The case $x^2 = 5y - 2.5$ gives $4y^3 - 21y + 12.5 = 0$, with roots $y \approx -2.5452$ (no real $x$), $0.6468$ and $1.8984$. So there are five critical points: local maxima at $(0, 0)$ (with $f = 0$) and at $(\pm 2.64, 1.90)$ (with $f \approx 8.50$), and saddle points at $(\pm 0.86, 0.65)$. Since $f \to -\infty$ far from the origin (the dominant terms are $-x^4 - 2y^4$), the highest points of the graph are $(\pm 2.64, 1.90, 8.50)$.
 
 > [!example] Example §96.3: Critical Points from the Exams
 > **(a)** Let $f(x, y) = x^2 y - y^2 - 2y - x^2$. Find all the critical points of $f$ and classify them as local maxima, local minima or saddle points.
@@ -235,7 +237,7 @@ Theorem §96.1 says that if $f$ has a local maximum or minimum at $(a, b)$, then
 > d = \sqrt{\big(\tfrac56\big)^2 + \big(\tfrac53\big)^2 + \big(\tfrac56\big)^2} = \sqrt{\tfrac{150}{36}} = \tfrac56\sqrt6 .
 > $$
 >
-> (The distance formula of [[§84 Equations of Lines and Planes|§84]] gives the same: $\frac{|1 + 0 - 2 - 4|}{\sqrt{1 + 4 + 1}} = \frac{5}{\sqrt6}$.)
+> (The distance formula of [[§84 Equations of Lines and Planes#^thm-84-8|Theorem §84.8]] gives the same: $\frac{|1 + 0 - 2 - 4|}{\sqrt{1 + 4 + 1}} = \frac{5}{\sqrt6}$.)
 >
 > **(b)** Find the points on the cone $x^2 + y^2 = z^2$ closest to the point $P = (4, 2, 0)$.
 >
@@ -252,7 +254,11 @@ Theorem §96.1 says that if $f$ has a local maximum or minimum at $(a, b)$, then
 
 ^ex-96-4
 
-Stewart's Example 14.7.6 maximizes the volume $V = xyz$ of an open box made from $12$ m² of cardboard by eliminating $z$ through the constraint $2xz + 2yz + xy = 12$; the answer, $V = 4$ m³ at $x = y = 2$, $z = 1$, is rederived by Lagrange multipliers in [[§97 Lagrange Multipliers#^ex-97-2|Example §97.2]].
+Stewart's Example 14.7.6 maximizes the volume $V = xyz$ of an open box made from $12$ m² of cardboard by eliminating $z$ through the constraint $2xz + 2yz + xy = 12$: then $z = (12 - xy)/[2(x + y)]$ and $V = (12xy - x^2 y^2)/[2(x + y)]$, with
+$$
+\frac{\partial V}{\partial x} = \frac{y^2 (12 - 2xy - x^2)}{2(x + y)^2} , \qquad \frac{\partial V}{\partial y} = \frac{x^2 (12 - 2xy - y^2)}{2(x + y)^2} .
+$$
+Since $x = 0$ or $y = 0$ gives $V = 0$, a maximum needs $12 - 2xy - x^2 = 0 = 12 - 2xy - y^2$, so $x^2 = y^2$, $x = y$ (both are positive), $12 - 3x^2 = 0$, $x = y = 2$ and $z = 1$. There must be a largest volume, and it occurs at a critical point, so it is $V = 4$ m³. The same answer is rederived by Lagrange multipliers in [[§97 Lagrange Multipliers#^ex-97-2|Example §97.2]].
 
 ## Absolute Maximum and Minimum Values
 
@@ -281,7 +287,7 @@ For instance, the disk $\{(x, y) \mid x^2 + y^2 \le 1\}$, consisting of all poin
 > [!remark]- Connections
 > - The one-variable case on $[a, b]$, proved from completeness: [[Extreme Value Theorem]] (451). Hub for the higher-dimensional ingredient: [[Heine–Borel Theorem]].
 
-By Theorem §96.1, if $f$ has an extreme value at $(x_1, y_1)$, then $(x_1, y_1)$ is either a critical point of $f$ or a boundary point of $D$ (at an interior point the extreme value is also a local one). This extends the Closed Interval Method of [[§25 Maximum and Minimum Values|§25]].
+By Theorem §96.1, if $f$ has an extreme value at $(x_1, y_1)$, then $(x_1, y_1)$ is either a critical point of $f$ or a boundary point of $D$ (at an interior point the extreme value is also a local one). This extends the [[§25 Maximum and Minimum Values#^rem-25-2|Closed Interval Method]] of §25.
 
 > [!remark] Remark: Method — Absolute Extrema on a Closed Bounded Set
 > To find the absolute maximum and minimum values of a continuous function $f$ on a closed, bounded set $D$:
@@ -289,7 +295,7 @@ By Theorem §96.1, if $f$ has an extreme value at $(x_1, y_1)$, then $(x_1, y_1)
 > 2. Find the extreme values of $f$ on the boundary of $D$.
 > 3. The largest of the values from steps 1 and 2 is the absolute maximum value; the smallest of these values is the absolute minimum value.
 >
-> For step 2, parametrize each piece of the boundary and use one-variable calculus (Example §96.5), or use Lagrange multipliers ([[§97 Lagrange Multipliers|§97]]).
+> For step 2, parametrize each piece of the boundary and use one-variable calculus (Example §96.5), or use [[§97 Lagrange Multipliers#^rem-97-2|Lagrange multipliers]] (§97).
 >
 > *Stewart: 14.7, Box 9*
 

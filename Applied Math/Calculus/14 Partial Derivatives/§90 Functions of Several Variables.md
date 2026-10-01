@@ -86,13 +86,13 @@ The graph of $f$ is a surface $S$ with equation $z = f(x, y)$, lying directly ab
 > f(x, y) = ax + by + c
 > $$
 >
-> is a **linear function**. Its graph has the equation $z = ax + by + c$, or $ax + by - z + c = 0$, so it is a plane ([[§84 Equations of Lines and Planes|§84]]).
+> is a **linear function**. Its graph has the equation $z = ax + by + c$, or $ax + by - z + c = 0$, so it is a plane ([[§84 Equations of Lines and Planes#^prop-84-7|Proposition §84.7]]).
 >
 > *Stewart: 14.1 (text)*
 
 ^def-90-3
 
-Linear functions of two variables play the role in multivariable calculus that linear functions of one variable play in single-variable calculus: they are the functions we approximate by ([[§93 Tangent Planes and Linear Approximations|§93]]).
+Linear functions of two variables play the role in multivariable calculus that linear functions of one variable play in single-variable calculus: they are the functions we approximate by ([[§93 Tangent Planes and Linear Approximations#^def-93-2|Definition §93.2]]).
 
 > [!example] Example §90.2: A Hemisphere
 > Let $g(x, y) = \sqrt{9 - x^2 - y^2}$. Find the domain and range of $g$, sketch its graph, and describe its level curves for $k = 0, 1, 2, 3$.
@@ -160,7 +160,7 @@ Linear functions of two variables play the role in multivariable calculus that l
 > 4x^2 + y^2 + 1 = k \quad\Longleftrightarrow\quad \frac{x^2}{\frac14 (k - 1)} + \frac{y^2}{k - 1} = 1 \qquad (k > 1) ,
 > $$
 >
-> a family of ellipses with semiaxes $\frac12 \sqrt{k - 1}$ and $\sqrt{k - 1}$ (and the single point $(0, 0)$ for $k = 1$). Lifted to height $k$ they become the horizontal traces of the graph $z = 4x^2 + y^2 + 1$, an elliptic paraboloid with vertex $(0, 0, 1)$ ([[§85 Cylinders and Quadric Surfaces|§85]]). Its vertical traces are parabolas.
+> a family of ellipses with semiaxes $\frac12 \sqrt{k - 1}$ and $\sqrt{k - 1}$ (and the single point $(0, 0)$ for $k = 1$). Lifted to height $k$ they become the horizontal traces of the graph $z = 4x^2 + y^2 + 1$, an elliptic paraboloid with vertex $(0, 0, 1)$ ([[§85 Cylinders and Quadric Surfaces#^thm-85-2|Theorem §85.2]]). Its vertical traces are parabolas. (Stewart's Example 14.1.8 treats $4x^2 + y^2$ without the $+1$: domain $\mathbb{R}^2$, range $[0, \infty)$, and the same paraboloid one unit lower, with vertex at the origin.)
 >
 > *Stewart: Examples 14.1.5, 14.1.8, 14.1.10 and 14.1.12*
 
@@ -221,7 +221,7 @@ For instance, the temperature $T$ at a point on the surface of the earth depends
 > x^2 - y - z^2 = k \quad\Longleftrightarrow\quad y = x^2 - z^2 - k ,
 > $$
 >
-> a family of hyperbolic paraboloids ([[§85 Cylinders and Quadric Surfaces|§85]]), each obtained from $y = x^2 - z^2$ by a shift of $-k$ along the $y$-axis.
+> a family of hyperbolic paraboloids ([[§85 Cylinders and Quadric Surfaces#^thm-85-2|Theorem §85.2]]), each obtained from $y = x^2 - z^2$ by a shift of $-k$ along the $y$-axis.
 >
 > *Stewart: Examples 14.1.15 and 14.1.16*
 
@@ -239,7 +239,7 @@ For instance, the temperature $T$ at a point on the surface of the earth depends
 > C = f(x_1, \ldots, x_n) = c_1 x_1 + c_2 x_2 + \cdots + c_n x_n = \mathbf{c} \cdot \mathbf{x} , \qquad \mathbf{c} = \langle c_1, \ldots, c_n \rangle ,
 > $$
 >
-> a linear function of $n$ variables, written with the dot product ([[§82 The Dot Product|§82]]).
+> a linear function of $n$ variables, written with the dot product ([[§82 The Dot Product#^def-82-1|Definition §82.1]]).
 >
 > *Stewart: 14.1, Equation 3 and text*
 

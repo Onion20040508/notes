@@ -98,17 +98,17 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 > g'(x) = \lim_{h \to 0} \frac{g(x + h) - g(x)}{h} = f(x) . \qquad (4)
 > $$
 >
-> **Endpoints.** At $x = a$ (only $h > 0$) and at $x = b$ (only $h < 0$) the same argument gives (4) as a one-sided limit. A function with a derivative at a point is continuous there (Theorem 2.8.4, [[§13 The Derivative as a Function|§13]]); the one-sided version of that argument shows that $g$ is continuous from the right at $a$ and from the left at $b$. Together with differentiability on $(a, b)$, $g$ is continuous on $[a, b]$.
+> **Endpoints.** At $x = a$ (only $h > 0$) and at $x = b$ (only $h < 0$) the same argument gives (4) as a one-sided limit. A function with a derivative at a point is continuous there ([[§13 The Derivative as a Function#^thm-13-1|Theorem §13.1]], Stewart's Theorem 2.8.4); the one-sided version of that argument shows that $g$ is continuous from the right at $a$ and from the left at $b$. Together with differentiability on $(a, b)$, $g$ is continuous on $[a, b]$.
 
 ^pf-36-1
 
-*Uses:* [[§35 The Definite Integral#^thm-35-5|§35.5]], [[§35 The Definite Integral#^thm-35-6|§35.6]], [[§35 The Definite Integral#^def-35-4|Def. §35.4]], [[§25 Maximum and Minimum Values|§25]] (Extreme Value Theorem), [[§8 Calculating Limits Using the Limit Laws|§8]] (Squeeze Theorem), [[§13 The Derivative as a Function|§13]] (Theorem 2.8.4: differentiable implies continuous)
+*Uses:* [[§35 The Definite Integral#^thm-35-5|§35.5]], [[§35 The Definite Integral#^thm-35-6|§35.6]], [[§35 The Definite Integral#^def-35-4|Def. §35.4]], [[§25 Maximum and Minimum Values#^thm-25-1|§25.1]] (Extreme Value Theorem), [[§8 Calculating Limits Using the Limit Laws#^thm-8-7|§8.7]] (Squeeze Theorem), [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous)
 
 ![[m233-36-1.svg]]
 *The proof of FTC1. The blue region is $g(x)$, and the red strip is $g(x + h) - g(x) = \int_x^{x+h} f(t)\,dt$. It contains the rectangle of height $m = f(u)$ and lies inside the rectangle of height $M = f(v)$ over $[x, x + h]$, so the difference quotient lies between $f(u)$ and $f(v)$. As $h \to 0$ both $u$ and $v$ are squeezed to $x$.*
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (called *FTC II* there), with the same estimate $\big|\frac1h \int_x^{x+h} (f(t) - f(x))\,dt\big| \le \varepsilon$ in place of the Extreme Value Theorem. It needs $f$ only integrable for the continuity of $g$, and continuous at the one point $x$ for $g'(x) = f(x)$. Hub: [[Fundamental Theorem of Calculus]].
+> - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]. The numbering is swapped there: Stewart's Part 1 is 451's *FTC II* (and Stewart's Part 2 is 451's *FTC I*). The proof uses the same estimate $\big|\frac1h \int_x^{x+h} (f(t) - f(x))\,dt\big| \le \varepsilon$ in place of the Extreme Value Theorem. It needs $f$ only integrable for the continuity of $g$, and continuous at the one point $x$ for $g'(x) = f(x)$. Hub: [[Fundamental Theorem of Calculus]].
 > - Lebesgue version, with no continuity at all: $g' = f$ almost everywhere, [[§18 Differentiation Theory#^thm-18-26|551 Thm. §18.26]].
 
 > [!example] Example §36.1: Differentiating Integrals with Variable Upper Limits
@@ -122,7 +122,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 >
 > **(b)** Find $\displaystyle\frac{d}{dx} \int_1^{x^4} \sec t\,dt$.
 >
-> The upper limit is $x^4$, not $x$, so combine FTC1 with the Chain Rule ([[§17 The Chain Rule|§17]]). Let $u = x^4$. Then
+> The upper limit is $x^4$, not $x$, so combine FTC1 with the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]). Let $u = x^4$. Then
 >
 > $$
 > \frac{d}{dx} \int_1^{x^4} \sec t\,dt = \frac{d}{dx} \int_1^{u} \sec t\,dt
@@ -174,7 +174,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 ^thm-36-2
 
 > [!proof]+ Proof
-> Let $g(x) = \int_a^x f(t)\,dt$. By Part 1 ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]), $g'(x) = f(x)$, so $g$ is an antiderivative of $f$. If $F$ is any other antiderivative of $f$ on $[a, b]$, then $F' = g'$ on $(a, b)$, and two functions with the same derivative on an interval differ by a constant (Corollary 4.2.7, [[§26 The Mean Value Theorem|§26]]):
+> Let $g(x) = \int_a^x f(t)\,dt$. By Part 1 ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]), $g'(x) = f(x)$, so $g$ is an antiderivative of $f$. If $F$ is any other antiderivative of $f$ on $[a, b]$, then $F' = g'$ on $(a, b)$, and two functions with the same derivative on an interval differ by a constant ([[§26 The Mean Value Theorem#^cor-26-4|Corollary §26.4]], Stewart's Corollary 4.2.7):
 >
 > $$
 > F(x) = g(x) + C \qquad \text{for } a < x < b . \qquad (6)
@@ -190,14 +190,14 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 
 ^pf-36-2
 
-*Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§26 The Mean Value Theorem|§26]] (Corollary 4.2.7), [[§35 The Definite Integral#^def-35-4|Def. §35.4]], [[§13 The Derivative as a Function|§13]] (differentiable implies continuous)
+*Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§26 The Mean Value Theorem#^cor-26-4|§26.4]], [[§35 The Definite Integral#^def-35-4|Def. §35.4]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous)
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (called *FTC I* there) assumes only that $F$ is differentiable with integrable derivative, and proves it directly from the Mean Value Theorem on each subinterval. Stewart's route through Part 1, which needs $f$ continuous, is [[§34 Fundamental Theorem of Calculus#^ex-34-1|451 Ex. §34.1]].
+> - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]. The numbering is swapped there: Stewart's Part 2 is 451's *FTC I* (and Stewart's Part 1 is 451's *FTC II*). It assumes only that $F$ is continuous on $[a, b]$ and differentiable on $(a, b)$ with integrable derivative, and proves it directly from the Mean Value Theorem on each subinterval. Stewart's route through Part 1, which needs $f$ continuous, is [[§34 Fundamental Theorem of Calculus#^ex-34-1|451 Ex. §34.1]].
 > - Lebesgue version: $F(x) - F(a) = \int_a^x F'$ exactly for absolutely continuous $F$, [[§18 Differentiation Theory#^thm-18-13|551 Thm. §18.13]].
 
 > [!remark] Remark: Why Part 2 Is Plausible
-> It is surprising that $\int_a^b f(x)\,dx$, defined through all the values of $f$ on $[a, b]$, depends only on the values of $F$ at two points. Physically it is natural. If $s(t)$ is the position of an object and $v(t) = s'(t)$ its velocity, then $s$ is an antiderivative of $v$, and for an object that always moves forward the area under the velocity curve is the distance traveled ([[§34 The Area and Distance Problems|§34]]):
+> It is surprising that $\int_a^b f(x)\,dx$, defined through all the values of $f$ on $[a, b]$, depends only on the values of $F$ at two points. Physically it is natural. If $s(t)$ is the position of an object and $v(t) = s'(t)$ its velocity, then $s$ is an antiderivative of $v$, and for an object that always moves forward the area under the velocity curve is the distance traveled ([[§34 The Area and Distance Problems#^ex-34-4|Example §34.4]] and Equation (5) after it):
 >
 > $$
 > \int_a^b v(t)\,dt = s(b) - s(a) .
@@ -218,7 +218,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 
 ^def-36-1
 
-FTC2 allows *any* antiderivative $F$ of $f$, so one uses the simplest: the constant $C$ of the most general antiderivative ([[§33 Antiderivatives|§33]]) cancels in $F(b) - F(a)$.
+FTC2 allows *any* antiderivative $F$ of $f$, so one uses the simplest: the constant $C$ of the most general antiderivative ([[§33 Antiderivatives#^thm-33-1|Theorem §33.1]]) cancels in $F(b) - F(a)$.
 
 > [!example] Example §36.3: Integrals in One Line
 > **(a)** Evaluate $\displaystyle\int_1^3 e^x\,dx$. The function $e^x$ is continuous everywhere and $F(x) = e^x$ is an antiderivative (rather than $e^x + 7$ or $e^x + C$), so
@@ -244,7 +244,7 @@ FTC2 allows *any* antiderivative $F$ of $f$, so one uses the simplest: the const
 > [!example] Example §36.4: A Logarithm and the Area Under a Cosine
 > **(a)** Evaluate $\displaystyle\int_3^6 \frac{dx}{x}$.
 >
-> This is another way of writing $\int_3^6 \frac1x\,dx$. An antiderivative of $1/x$ is $\ln|x|$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]), and on $3 \le x \le 6$ we may write $\ln x$:
+> This is another way of writing $\int_3^6 \frac1x\,dx$. An antiderivative of $1/x$ is $\ln|x|$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|Theorem §19.5]]), and on $3 \le x \le 6$ we may write $\ln x$:
 >
 > $$
 > \int_3^6 \frac1x\,dx = \ln x \Big]_3^6 = \ln 6 - \ln 3 = \ln \frac63 = \ln 2 .

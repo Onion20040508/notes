@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 4.8.*
 
-Most equations cannot be solved by a formula. There is the quadratic formula, and there are (very complicated) formulas for degrees $3$ and $4$, but none for polynomials of degree $5$ or higher, and none for a transcendental equation such as $\cos x = x$. Even a practical question, such as the interest rate hidden in a car loan, leads to an equation like $48x(1 + x)^{60} - (1 + x)^{60} + 1 = 0$. Newton's method (the Newton–Raphson method) finds approximate solutions: replace the curve $y = f(x)$ by its tangent line at a first guess ([[§23 Linear Approximations and Differentials|§23]]), take the $x$-intercept of the tangent as the next guess, and repeat. It usually converges very fast, and it is at the heart of how calculators and computers solve equations.
+Most equations cannot be solved by a formula. There is the quadratic formula, and there are (very complicated) formulas for degrees $3$ and $4$, but none for polynomials of degree $5$ or higher, and none for a transcendental equation such as $\cos x = x$. Even a practical question, such as the interest rate hidden in a car loan, leads to an equation like $48x(1 + x)^{60} - (1 + x)^{60} + 1 = 0$. Newton's method (the Newton–Raphson method) finds approximate solutions: replace the curve $y = f(x)$ by its tangent line at a first guess (the linearization, [[§23 Linear Approximations and Differentials#^def-23-1|Def. §23.1]]), take the $x$-intercept of the tangent as the next guess, and repeat. It usually converges very fast, and it is at the heart of how calculators and computers solve equations.
 
 ## The Method
 
@@ -37,7 +37,7 @@ Most equations cannot be solved by a formula. There is the quadratic formula, an
 
 ^pf-32-1
 
-*Uses:* [[§12 Derivatives and Rates of Change|§12]] (equation of the tangent line)
+*Uses:* [[§12 Derivatives and Rates of Change#^thm-12-2|§12.2]] (equation of the tangent line)
 
 > [!definition] Definition §32.1: Newton's Method
 > To approximate a solution $r$ of $f(x) = 0$, start with a first approximation $x_1$ (from a guess, a rough sketch, or a computer graph) and define
@@ -46,7 +46,7 @@ Most equations cannot be solved by a formula. There is the quadratic formula, an
 > x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \qquad (n = 1, 2, 3, \ldots) \qquad (2)
 > $$
 >
-> as long as $f'(x_n) \ne 0$. By Proposition §32.1, $x_{n+1}$ is the $x$-intercept of the tangent line at $(x_n, f(x_n))$. If the numbers $x_n$ become closer and closer to $r$ as $n$ becomes large, the sequence **converges** to $r$, and we write $\lim_{n \to \infty} x_n = r$ (sequences: [[§69 Sequences|§69]]).
+> as long as $f'(x_n) \ne 0$. By Proposition §32.1, $x_{n+1}$ is the $x$-intercept of the tangent line at $(x_n, f(x_n))$. If the numbers $x_n$ become closer and closer to $r$ as $n$ becomes large, the sequence **converges** to $r$, and we write $\lim_{n \to \infty} x_n = r$ (sequences: [[§69 Sequences#^def-69-2|Def. §69.2]]).
 >
 > The step from $n$ to $n + 1$ is the same for every $n$: Newton's method is an **iterative** process, well suited to a programmable calculator or a computer.
 >

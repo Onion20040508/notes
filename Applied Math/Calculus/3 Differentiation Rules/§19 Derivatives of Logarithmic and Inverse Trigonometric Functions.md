@@ -263,7 +263,7 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 
 ^pf-19-6
 
-*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|§19.5]], [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§17 The Chain Rule#^cor-17-4|§17.4]], [[§13 The Derivative as a Function|§13]] (definition of $f'(x)$)
+*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|§19.5]], [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§17 The Chain Rule#^cor-17-4|§17.4]], [[§13 The Derivative as a Function#^def-13-1|Def. §13.1]] (definition of $f'(x)$)
 
 > [!remark] Remark: Bases and Exponents
 > Distinguish the Power Rule $[(x^n)' = nx^{n-1}]$, where the base is variable and the exponent is constant, from the rule for exponential functions $[(b^x)' = b^x \ln b]$, where the base is constant and the exponent is variable. In general there are four cases:

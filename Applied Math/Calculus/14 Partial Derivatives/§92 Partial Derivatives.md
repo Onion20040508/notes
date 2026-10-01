@@ -64,7 +64,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 ^def-92-2
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§4 Partial Derivatives#^def-4-1|452 Def. §4.1]]. Partial derivatives can exist at a point where $f$ is not even continuous ([[§4 Partial Derivatives#^ex-4-1|452 Ex. §4.1]]; compare Example §91.1(b)); they only see the two lines through the point parallel to the axes. This is why [[§93 Tangent Planes and Linear Approximations|§93]] needs the stronger notion of differentiability.
+> - Rigorous treatment: [[§4 Partial Derivatives#^def-4-1|452 Def. §4.1]]. Partial derivatives can exist at a point where $f$ is not even continuous ([[§4 Partial Derivatives#^ex-4-1|452 Ex. §4.1]]; compare Example §91.1(b)); they only see the two lines through the point parallel to the axes. This is why §93 needs the stronger notion of differentiability, [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]].
 
 > [!theorem] Theorem §92.1: Rule for Finding Partial Derivatives
 > If $z = f(x, y)$:
@@ -115,7 +115,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 > [!example] Example §92.2: Using the One-Variable Rules
 > **(a)** If $f(x, y) = \sin\left( \dfrac{x}{1 + y} \right)$, calculate $\dfrac{\partial f}{\partial x}$ and $\dfrac{\partial f}{\partial y}$.
 >
-> By the Chain Rule for functions of one variable ([[§17 The Chain Rule|§17]]),
+> By the Chain Rule for functions of one variable ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]),
 >
 > $$
 > \frac{\partial f}{\partial x} = \cos\left( \frac{x}{1 + y} \right) \cdot \frac{\partial}{\partial x}\left( \frac{x}{1 + y} \right) = \cos\left( \frac{x}{1 + y} \right) \cdot \frac{1}{1 + y} ,
@@ -191,7 +191,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 > \frac{\partial z}{\partial y} = -\frac{1^2 + 2(-1) \cdot 2}{2^2 + 2(-1) \cdot 1} = \frac32 .
 > $$
 >
-> A shortcut through the Chain Rule appears in [[§94 The Chain Rule|§94]].
+> A shortcut through the Chain Rule is [[§94 The Chain Rule#^thm-94-5|Theorem §94.5]].
 >
 > *Stewart: Example 14.3.5*
 
@@ -269,7 +269,7 @@ If $w = f(x, y, z)$, then $f_x = \partial w / \partial x$ is the rate of change 
 > \Delta(h) = \big[ f(a + h, b + h) - f(a + h, b) \big] - \big[ f(a, b + h) - f(a, b) \big] .
 > $$
 >
-> **Via $f_{xy}$.** Let $g(x) = f(x, b + h) - f(x, b)$. Then $\Delta(h) = g(a + h) - g(a)$. The function $g$ is differentiable between $a$ and $a + h$, with $g'(x) = f_x(x, b + h) - f_x(x, b)$, so by the Mean Value Theorem ([[§26 The Mean Value Theorem|§26]]) there is a number $c$ between $a$ and $a + h$ such that
+> **Via $f_{xy}$.** Let $g(x) = f(x, b + h) - f(x, b)$. Then $\Delta(h) = g(a + h) - g(a)$. The function $g$ is differentiable between $a$ and $a + h$, with $g'(x) = f_x(x, b + h) - f_x(x, b)$, so by the Mean Value Theorem ([[§26 The Mean Value Theorem#^thm-26-2|Theorem §26.2]]) there is a number $c$ between $a$ and $a + h$ such that
 >
 > $$
 > g(a + h) - g(a) = g'(c)\,h = h \big[ f_x(c, b + h) - f_x(c, b) \big] .
@@ -299,15 +299,26 @@ If $w = f(x, y, z)$, then $f_x = \partial w / \partial x$ is the rate of change 
 
 ^pf-92-2
 
-*Uses:* [[§92 Partial Derivatives#^def-92-4|Def. §92.4]], [[§26 The Mean Value Theorem|§26]] (Mean Value Theorem), [[§91 Limits and Continuity#^def-91-3|Def. §91.3]]
+*Uses:* [[§92 Partial Derivatives#^def-92-4|Def. §92.4]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]] (Mean Value Theorem), [[§91 Limits and Continuity#^def-91-3|Def. §91.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§5 Equality of Mixed Partials#^thm-5-1|452 Thm. §5.1]] (on an open rectangle, by the same second-difference argument); hub [[Schwarz–Clairaut Theorem]].
 
 Using Clairaut's Theorem repeatedly, one shows that $f_{xyy} = f_{yxy} = f_{yyx}$ if these functions are continuous: third and higher partial derivatives also do not depend on the order of differentiation.
 
-> [!example] Example §92.5: Higher Derivatives from the Exam
-> **(a)** If $V = \ln(u + v^2 + w^4)$, compute $\dfrac{\partial^3 V}{\partial u\,\partial v\,\partial w}$.
+> [!example] Example §92.5: Higher-Order Partial Derivatives
+> **(a)** Calculate $f_{xxyz}$ if $f(x, y, z) = \sin(3x + yz)$.
+>
+> Differentiate in the order of the subscripts, $x$, $x$, $y$, $z$, using the Chain Rule (and, in the last step, the Product Rule):
+>
+> $$
+> \begin{aligned}
+> f_x &= 3\cos(3x + yz) , & f_{xx} &= -9\sin(3x + yz) , \\
+> f_{xxy} &= -9z\cos(3x + yz) , & f_{xxyz} &= -9\cos(3x + yz) + 9yz\sin(3x + yz) .
+> \end{aligned}
+> $$
+>
+> **(b)** If $V = \ln(u + v^2 + w^4)$, compute $\dfrac{\partial^3 V}{\partial u\,\partial v\,\partial w}$.
 >
 > Write $S = u + v^2 + w^4$. By Clairaut's Theorem the order does not matter (all partial derivatives of $V$ are continuous where $S > 0$), so differentiate in the easiest order, $u$, then $v$, then $w$:
 >
@@ -315,9 +326,9 @@ Using Clairaut's Theorem repeatedly, one shows that $f_{xyy} = f_{yxy} = f_{yyx}
 > V_u = S^{-1} , \qquad V_{uv} = -S^{-2} \cdot 2v = -2v\,S^{-2} , \qquad V_{uvw} = -2v \cdot (-2) S^{-3} \cdot 4w^3 = \frac{16\,v\,w^3}{(u + v^2 + w^4)^3} .
 > $$
 >
-> **(b)** If $f(x, y) = \displaystyle\int_y^x \tan(1 + t^2)\,dt$, compute $f_x$, $f_y$, $f_{xx}$, $f_{yy}$, $f_{xy}$, $f_{yx}$.
+> **(c)** If $f(x, y) = \displaystyle\int_y^x \tan(1 + t^2)\,dt$, compute $f_x$, $f_y$, $f_{xx}$, $f_{yy}$, $f_{xy}$, $f_{yx}$.
 >
-> By the Fundamental Theorem of Calculus, Part 1 ([[§36 The Fundamental Theorem of Calculus|§36]]), with the other limit held fixed, and $\int_y^x = -\int_x^y$:
+> By the Fundamental Theorem of Calculus, Part 1 ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]), with the other limit held fixed, and $\int_y^x = -\int_x^y$:
 >
 > $$
 > f_x = \tan(1 + x^2) , \qquad f_y = -\tan(1 + y^2) .
@@ -329,6 +340,7 @@ Using Clairaut's Theorem repeatedly, one shows that $f_{xyy} = f_{yxy} = f_{yyx}
 > f_{xx} = 2x \sec^2(1 + x^2) , \qquad f_{yy} = -2y \sec^2(1 + y^2) , \qquad f_{xy} = f_{yx} = 0 .
 > $$
 >
+> *Stewart: Example 14.3.8*
 > *Source: 233 Midterm 1 Practice Questions, Q24*
 
 ^ex-92-5

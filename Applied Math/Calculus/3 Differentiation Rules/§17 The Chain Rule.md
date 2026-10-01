@@ -60,7 +60,7 @@ The proof rests on a reformulation of differentiability.
 
 ^pf-17-1
 
-*Uses:* [[§12 Derivatives and Rates of Change|§12]] (definition of $f'(a)$), [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Law 2)
+*Uses:* [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]] (definition of $f'(a)$), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Law 2)
 
 > [!remark]- Connections
 > - Equation 6 says that $f(a + \Delta x) \approx f(a) + f'(a)\,\Delta x$ with an error that is small *relative to* $\Delta x$: the linear approximation of [[§23 Linear Approximations and Differentials|§23]]. In several variables this becomes the definition of differentiability: [[§6 Differentiability#^def-6-1|452 Def. §6.1]].
@@ -115,7 +115,7 @@ The proof rests on a reformulation of differentiability.
 
 ^pf-17-2
 
-*Uses:* [[§17 The Chain Rule#^lem-17-1|§17.1]], [[§10 Continuity#^thm-10-7|§10.7]], [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Laws 1 and 4)
+*Uses:* [[§17 The Chain Rule#^lem-17-1|§17.1]], [[§10 Continuity#^thm-10-7|§10.7]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws 1 and 4)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]]. Its first proof is the tempting argument (3) and fails for the same reason; its second proof replaces $\Delta y / \Delta u$ by a function that is continuous at $f(a)$, which is $f'(b) + \varepsilon_2$ here.
@@ -222,7 +222,7 @@ In Example §17.2(a) the Chain Rule was combined with the rule for sine. The sam
 
 ^pf-17-3
 
-*Uses:* [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|§14.2]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]] (Power Rule, general version)
+*Uses:* [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|§14.2]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-6|§19.6]] (Power Rule, general version)
 
 Example §17.1 is the case $n = \frac12$. For instance, $\frac{d}{dx}(x^3 - 1)^{100} = 100(x^3 - 1)^{99} \cdot 3x^2 = 300x^2(x^3 - 1)^{99}$.
 
@@ -321,7 +321,7 @@ For instance, $\frac{d}{dx}(e^{\sin x}) = e^{\sin x} \cos x$.
 
 ^pf-17-5
 
-*Uses:* [[§5 Inverse Functions and Logarithms|§5]] (Equation 1.5.10), [[§17 The Chain Rule#^cor-17-4|§17.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|§14.3]]
+*Uses:* [[§5 Inverse Functions and Logarithms#^prop-5-7|§5.7]] (Equation 1.5.10), [[§17 The Chain Rule#^cor-17-4|§17.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|§14.3]]
 
 Comparing with [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-5|Theorem §14.5]]: the constant $f'(0) = \lim_{h \to 0} (b^h - 1)/h$ is $\ln b$.
 

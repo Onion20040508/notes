@@ -15,10 +15,10 @@ The normal form of Green's Theorem ([[§111 Curl and Divergence#^thm-111-5|Theor
 
 ## The Divergence Theorem
 
-Stewart states and proves the theorem for regions $E$ over which triple integrals were evaluated in [[§103 Triple Integrals|§103]] (Stewart 15.6) as type 1, type 2 and type 3 regions.
+Stewart states and proves the theorem for regions $E$ over which triple integrals were evaluated in Stewart 15.6: type 1 regions ([[§103 Triple Integrals#^def-103-3|Definition §103.3]]) and type 2 and type 3 regions ([[§103 Triple Integrals#^def-103-4|Definition §103.4]]).
 
 > [!definition] Definition §115.1: Simple Solid Region
-> A **simple solid region** is a solid region $E$ that is simultaneously of types 1, 2 and 3: it can be written as $\{(x, y, z) \mid (x, y) \in D,\ u_1(x, y) \le z \le u_2(x, y)\}$, and similarly with the roles of $x$ and of $y$ played by $z$. (For instance, regions bounded by ellipsoids or rectangular boxes are simple solid regions.) Its boundary is a closed surface, given the positive (outward) orientation of [[§113 Surface Integrals#^def-113-6|Definition §113.6]].
+> A **simple solid region** is a solid region $E$ that is simultaneously of types 1, 2 and 3: it can be written as $\{(x, y, z) \mid (x, y) \in D_1,\ u_1(x, y) \le z \le u_2(x, y)\}$ (type 1), as $\{(x, y, z) \mid (y, z) \in D_2,\ v_1(y, z) \le x \le v_2(y, z)\}$ (type 2) and as $\{(x, y, z) \mid (x, z) \in D_3,\ w_1(x, z) \le y \le w_2(x, z)\}$ (type 3). (For instance, regions bounded by ellipsoids or rectangular boxes are simple solid regions.) Its boundary is a closed surface, given the positive (outward) orientation of [[§113 Surface Integrals#^def-113-6|Definition §113.6]].
 >
 > *Stewart: 16.9 (text)*
 
@@ -60,7 +60,7 @@ Stewart states and proves the theorem for regions $E$ over which triple integral
 > \iint_S R\,\mathbf{k} \cdot \mathbf{n}\,dS = \iiint_E \frac{\partial R}{\partial z}\,dV . \qquad (4)
 > $$
 >
-> **Equation 4.** Since $E$ is a type 1 region, $E = \{(x, y, z) \mid (x, y) \in D,\ u_1(x, y) \le z \le u_2(x, y)\}$, where $D$ is the projection of $E$ onto the $xy$-plane. Computing the triple integral as an iterated integral ([[§103 Triple Integrals|§103]]) and the inner integral by the Fundamental Theorem of Calculus,
+> **Equation 4.** Since $E$ is a type 1 region, $E = \{(x, y, z) \mid (x, y) \in D,\ u_1(x, y) \le z \le u_2(x, y)\}$, where $D$ is the projection of $E$ onto the $xy$-plane. Computing the triple integral as an iterated integral ([[§103 Triple Integrals#^thm-103-2|Theorem §103.2]]) and the inner integral by the Fundamental Theorem of Calculus,
 >
 > $$
 > \iiint_E \frac{\partial R}{\partial z}\,dV = \iint_D \left[ \int_{u_1(x, y)}^{u_2(x, y)} \frac{\partial R}{\partial z}(x, y, z)\,dz \right] dA = \iint_D \big[ R(x, y, u_2(x, y)) - R(x, y, u_1(x, y)) \big]\,dA . \qquad (5)
@@ -80,13 +80,13 @@ Stewart states and proves the theorem for regions $E$ over which triple integral
 >
 > which equals the triple integral by (5). This proves Equation 4.
 >
-> **Equations 2 and 3** are proved in the same way, using the expressions for $E$ as a type 3 and a type 2 region. (Stewart says only "in a similar manner"; for (2): write $E = \{(x, y, z) \mid (y, z) \in D',\ v_1(y, z) \le x \le v_2(y, z)\}$. The Fundamental Theorem of Calculus in $x$ gives $\iiint_E P_x\,dV = \iint_{D'} [P(v_2, y, z) - P(v_1, y, z)]\,dA$. On the front surface $x = v_2(y, z)$, parametrized by $y$ and $z$, $\mathbf{r}_y \times \mathbf{r}_z = \langle 1, -\partial v_2/\partial y, -\partial v_2/\partial z \rangle$ points outward, and $P\,\mathbf{i} \cdot (\mathbf{r}_y \times \mathbf{r}_z) = P$; on the back surface the outward normal is the opposite one; on the remaining surface, parallel to the $x$-axis, $\mathbf{i} \cdot \mathbf{n} = 0$. The surface integral therefore gives the same expression.)
+> **Equations 2 and 3** are proved in the same way, using the expressions for $E$ as a type 2 and a type 3 region, respectively. (Stewart says only "in a similar manner"; for (2): write $E = \{(x, y, z) \mid (y, z) \in D',\ v_1(y, z) \le x \le v_2(y, z)\}$. The Fundamental Theorem of Calculus in $x$ gives $\iiint_E P_x\,dV = \iint_{D'} [P(v_2, y, z) - P(v_1, y, z)]\,dA$. On the front surface $x = v_2(y, z)$, parametrized by $y$ and $z$, $\mathbf{r}_y \times \mathbf{r}_z = \langle 1, -\partial v_2/\partial y, -\partial v_2/\partial z \rangle$ points outward, and $P\,\mathbf{i} \cdot (\mathbf{r}_y \times \mathbf{r}_z) = P$; on the back surface the outward normal is the opposite one; on the remaining surface, parallel to the $x$-axis, $\mathbf{i} \cdot \mathbf{n} = 0$. The surface integral therefore gives the same expression.)
 >
 > Adding (2), (3) and (4) gives the Divergence Theorem.
 
 ^pf-115-1
 
-*Uses:* [[§115 The Divergence Theorem#^def-115-1|Def. §115.1]], [[§113 Surface Integrals#^thm-113-4|§113.4]], [[§113 Surface Integrals#^thm-113-3|§113.3]], [[§113 Surface Integrals#^def-113-6|Def. §113.6]], [[§111 Curl and Divergence#^def-111-3|Def. §111.3]], [[§103 Triple Integrals|§103]] (triple integrals over type 1, 2, 3 regions), [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 2)
+*Uses:* [[§115 The Divergence Theorem#^def-115-1|Def. §115.1]], [[§113 Surface Integrals#^thm-113-4|§113.4]], [[§113 Surface Integrals#^thm-113-3|§113.3]], [[§113 Surface Integrals#^def-113-6|Def. §113.6]], [[§111 Curl and Divergence#^def-111-3|Def. §111.3]], [[§103 Triple Integrals#^thm-103-2|§103.2]], [[§103 Triple Integrals#^thm-103-3|§103.3]] (triple integrals over type 1, 2, 3 regions), [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§18 Surface Integrals#^thm-18-2|452 Thm. §18.2]], with the same proof (one component at a time, FTC along vertical segments, the bottom surface with reversed normal); hub [[Divergence Theorem in ℝ³]]. The version in $\mathbb{R}^n$ is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]], and the plane version is [[§16 Line Integrals and Green's Theorem#^thm-16-2|452 Thm. §16.2]] ([[§111 Curl and Divergence#^thm-111-5|Theorem §111.5]] here).
@@ -101,9 +101,9 @@ Stewart states and proves the theorem for regions $E$ over which triple integral
 
 > [!remark] Remark: Method — Using the Divergence Theorem
 > 1. **Check that $S$ is closed** (the whole boundary of a solid $E$) and oriented outward. If $S$ is not closed, either compute the flux directly or close it up with simple pieces (disks), apply the theorem, and subtract the flux through the added pieces. If $S$ is oriented inward, change the sign.
-> 2. **Check that $\mathbf{F}$ is smooth on all of $E$.** If $\mathbf{F}$ is undefined at a point inside (as for $\mathbf{x}/|\mathbf{x}|^3$ at the origin), cut out a small ball around it and use Theorem §115.2.
+> 2. **Check that $\mathbf{F}$ is smooth on all of $E$.** If $\mathbf{F}$ is undefined at a point inside (as for $\mathbf{x}/|\mathbf{x}|^3$ at the origin), cut out a small ball around it and use [[§115 The Divergence Theorem#^thm-115-2|Theorem §115.2]].
 > 3. **Compute $\operatorname{div}\mathbf{F}$.** Terms of $P$ not involving $x$, of $Q$ not involving $y$, and of $R$ not involving $z$ drop out.
-> 4. **Evaluate $\iiint_E \operatorname{div}\mathbf{F}\,dV$** in coordinates suited to $E$: cylindrical for cylinders and paraboloids ([[§104 Triple Integrals in Cylindrical Coordinates|§104]]), spherical for balls and cones ([[§105 Triple Integrals in Spherical Coordinates|§105]]). Use symmetry: an odd function of $y$ over a region symmetric in $y$ integrates to $0$.
+> 4. **Evaluate $\iiint_E \operatorname{div}\mathbf{F}\,dV$** in coordinates suited to $E$: cylindrical for cylinders and paraboloids ([[§104 Triple Integrals in Cylindrical Coordinates#^thm-104-1|Theorem §104.1]]), spherical for balls and cones ([[§105 Triple Integrals in Spherical Coordinates#^thm-105-2|Theorem §105.2]]). Use symmetry: an odd function of $y$ over a region symmetric in $y$ integrates to $0$.
 
 ^rem-115-2
 
@@ -150,6 +150,8 @@ Stewart states and proves the theorem for regions $E$ over which triple integral
 > $$
 > \iint_S \mathbf{F} \cdot d\mathbf{S} = 0 - 3(4\pi) = -12\pi .
 > $$
+>
+> *The posted solution integrates $z$ from $0$ up to $y - 2$, the reverse of the solid's limits ($y - 2 \le z \le 0$), and gets $12\pi$; with the limits in order the flux is $-12\pi$.*
 >
 > *Source: 233 Chapter 16 Review, Q8*
 

@@ -78,7 +78,7 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 >
 > **(c)** $f(0) = 1$ is defined, but $\lim_{x \to 0} 1/x^2$ does not exist (the values grow without bound; [[§7 The Limit of a Function#^def-7-3|Definition §7.3]]). Condition 2 fails: $f$ is discontinuous at $0$.
 >
-> **(d)** The greatest integer function ($\lfloor x \rfloor$ is the largest integer $\le x$; Stewart writes $[\![x]\!]$) is discontinuous at every integer $n$. For $n - 1 \le x < n$ we have $\lfloor x \rfloor = n - 1$, and for $n \le x < n + 1$ we have $\lfloor x \rfloor = n$. So
+> **(d)** The greatest integer function ($\lfloor x \rfloor$ is the largest integer $\le x$, [[§8 Calculating Limits Using the Limit Laws#^def-8-1|Definition §8.1]]; Stewart writes $[\![x]\!]$) is discontinuous at every integer $n$. For $n - 1 \le x < n$ we have $\lfloor x \rfloor = n - 1$, and for $n \le x < n + 1$ we have $\lfloor x \rfloor = n$. So
 >
 > $$
 > \lim_{x \to n^-} \lfloor x \rfloor = n - 1 \ne n = \lim_{x \to n^+} \lfloor x \rfloor ,
@@ -230,7 +230,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > 0 < \sin\theta < \theta .
 > $$
 >
-> (Stewart proves $\sin\theta < \theta$ this way in Section 3.3, [[§16 Derivatives of Trigonometric Functions|§16]].) Since $\sin(-\theta) = -\sin\theta$, it follows that $|\sin\theta| \le |\theta|$ whenever $|\theta| < \pi/2$.
+> (Stewart proves $\sin\theta < \theta$ this way in Section 3.3, in the [[§16 Derivatives of Trigonometric Functions#^pf-16-6|proof of Theorem §16.6]].) Since $\sin(-\theta) = -\sin\theta$, it follows that $|\sin\theta| \le |\theta|$ whenever $|\theta| < \pi/2$.
 >
 > **Sine.** For $|\theta| < \pi/2$ we have $-|\theta| \le \sin\theta \le |\theta|$. Both bounds tend to $0$ as $\theta \to 0$, so $\lim_{\theta \to 0} \sin\theta = 0$ by the Squeeze Theorem.
 >
@@ -256,7 +256,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > [!proof]+ Proof
 > **A reformulation.** $f$ is continuous at $a$ if and only if $\lim_{h \to 0} f(a + h) = f(a)$. This is the substitution $x = a + h$: $x \to a$ exactly when $h \to 0$, and with $\delta$ the same in both limit statements (Stewart, Exercise 65).
 >
-> **Sine.** Let $a \in \mathbb{R}$. By the addition formula,
+> **Sine.** Let $a \in \mathbb{R}$. By the addition formula ([[§119 Trigonometry#^thm-119-6|Theorem §119.6]]),
 >
 > $$
 > \sin(a + h) = \sin a \cos h + \cos a \sin h .
@@ -272,7 +272,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 ^pf-10-4
 
-*Uses:* [[§10 Continuity#^thm-10-3|§10.3]], [[§10 Continuity#^thm-10-1|§10.1]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws 1 and 3)
+*Uses:* [[§10 Continuity#^thm-10-3|§10.3]], [[§10 Continuity#^thm-10-1|§10.1]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws 1 and 3), [[§119 Trigonometry#^thm-119-6|§119.6]] (addition formulas)
 
 ### Inverse Functions
 
@@ -334,9 +334,9 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 >
 > **Inverse trigonometric functions.** Sine is continuous and one-to-one on $(-\pi/2, \pi/2)$, so $\sin^{-1}$ is continuous on $(-1, 1)$ by Theorem §10.5. At $\pm 1$, Step 2 of that proof run on one side only shows that $\sin^{-1}$ is continuous from the left at $1$ and from the right at $-1$. In the same way $\cos^{-1}$ (from cosine on $[0, \pi]$) is continuous on $[-1, 1]$. Since $\tan$ is continuous and one-to-one on $(-\pi/2, \pi/2)$ with range $\mathbb{R}$, $\tan^{-1}$ is continuous on $\mathbb{R}$.
 >
-> **Exponential functions.** In Section 1.4 ([[§4 Exponential Functions|§4]]), $b^x$ for irrational $x$ is defined so as to fill in the holes in the graph of $b^x$, $x$ rational. In other words, the very definition of $b^x$ makes it continuous on $\mathbb{R}$.
+> **Exponential functions.** In Section 1.4 ([[§4 Exponential Functions#^def-4-3|Definition §4.3]]), $b^x$ for irrational $x$ is defined so as to fill in the holes in the graph of $b^x$, $x$ rational. In other words, the very definition of $b^x$ makes it continuous on $\mathbb{R}$. (This is Stewart's argument; a rigorous proof, with $e^x$ the inverse of the integral logarithm, is [[§121 The Logarithm Defined as an Integral#^thm-121-5|Theorem §121.5]].)
 >
-> **Logarithmic functions.** For $b > 0$, $b \ne 1$, $\log_b x$ is the inverse of the one-to-one continuous function $b^x$ on $(-\infty, \infty)$ ([[§5 Inverse Functions and Logarithms|§5]]), so it is continuous on its domain $(0, \infty)$ by Theorem §10.5.
+> **Logarithmic functions.** For $b > 0$, $b \ne 1$, $\log_b x$ is the inverse of the one-to-one continuous function $b^x$ on $(-\infty, \infty)$ ([[§5 Inverse Functions and Logarithms#^def-5-3|Definition §5.3]]), so it is continuous on its domain $(0, \infty)$ by Theorem §10.5.
 
 ^pf-10-6
 
@@ -575,7 +575,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 >
 > so a root lies in $(1.22, 1.23)$.
 >
-> (It is the only real root: $f'(x) = 12x^2 - 12x + 3 = 3(2x - 1)^2 \ge 0$, so $f$ is increasing; see [[§27 What Derivatives Tell Us About the Shape of a Graph|§27]].)
+> (It is the only real root: $f'(x) = 12x^2 - 12x + 3 = 3(2x - 1)^2 \ge 0$, so $f$ is increasing; see [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]].)
 >
 > *Stewart: Example 2.5.10*
 

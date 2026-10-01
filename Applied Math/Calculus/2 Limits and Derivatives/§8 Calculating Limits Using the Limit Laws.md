@@ -39,7 +39,7 @@ Tables and graphs can suggest a limit but cannot settle it ([[§7 The Limit of a
 ^thm-8-1
 
 > [!remark] Remark: Why It Works
-> If $f(x)$ is close to $L$ and $g(x)$ is close to $M$, then $f(x) + g(x)$ should be close to $L + M$, and similarly for the other operations. The proof makes "close" quantitative: to get $f(x) + g(x)$ within $\varepsilon$ of $L + M$, it is enough to get $f(x)$ and $g(x)$ each within $\varepsilon/2$ of their limits. Each law needs only the precise definition of a limit ([[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]) and the Triangle Inequality $|p + q| \le |p| + |q|$ ([[§116 Numbers, Inequalities, and Absolute Values|§116]]).
+> If $f(x)$ is close to $L$ and $g(x)$ is close to $M$, then $f(x) + g(x)$ should be close to $L + M$, and similarly for the other operations. The proof makes "close" quantitative: to get $f(x) + g(x)$ within $\varepsilon$ of $L + M$, it is enough to get $f(x)$ and $g(x)$ each within $\varepsilon/2$ of their limits. Each law needs only the precise definition of a limit ([[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]) and the Triangle Inequality $|p + q| \le |p| + |q|$ ([[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|Theorem §116.6]]).
 
 ^rem-8-1
 
@@ -64,7 +64,7 @@ Tables and graphs can suggest a limit but cannot settle it ([[§7 The Limit of a
 > |f(x) + g(x) - (L + M)| < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon .
 > $$
 >
-> Hence $\lim_{x \to a} [f(x) + g(x)] = L + M$. (This is the proof Stewart gives in Section 2.4, [[§9 The Precise Definition of a Limit|§9]].)
+> Hence $\lim_{x \to a} [f(x) + g(x)] = L + M$. (This is the proof Stewart gives in Section 2.4, [[§9 The Precise Definition of a Limit#^def-9-1|right after Definition §9.1]].)
 >
 > **Law 4 (Product Law).** Let $\varepsilon > 0$. To bring in $|f(x) - L|$ and $|g(x) - M|$, add and subtract $L g(x)$:
 >
@@ -133,7 +133,7 @@ Tables and graphs can suggest a limit but cannot settle it ([[§7 The Limit of a
 
 ^pf-8-1
 
-*Uses:* [[§9 The Precise Definition of a Limit#^def-9-1|Def. §9.1]], [[§116 Numbers, Inequalities, and Absolute Values|§116]] (Triangle Inequality)
+*Uses:* [[§9 The Precise Definition of a Limit#^def-9-1|Def. §9.1]], [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|§116.6]] (Triangle Inequality), [[§8 Calculating Limits Using the Limit Laws#^thm-8-2|§8.2]] (Law 8)
 
 > [!remark]- Connections
 > - Rigorous treatment: 451 obtains these laws for limits of functions ([[§20 Limits of Functions#^rem-20-2|451 Remark after Thm. §20.2]]) from the same laws for sequences, [[§9 Limit Theorems for Sequences#^thm-9-3|451 Thm. §9.3]] (sums and products, with the same add-and-subtract step as Law 4) and [[§9 Limit Theorems for Sequences#^thm-9-4|451 Thm. §9.4]] (quotients, with the same lower bound for the denominator as Law 5).
@@ -152,7 +152,7 @@ Repeated use of the Product Law, and two basic limits, give six more laws. Stewa
 > | 10 | | $\displaystyle\lim_{x \to a} x^n = a^n$ |
 > | 11 | | $\displaystyle\lim_{x \to a} \sqrt[n]{x} = \sqrt[n]{a}$ (if $n$ is even, assume $a > 0$) |
 >
-> **Law 7 is proved in [[§10 Continuity|§10]]**, as [[§10 Continuity#^cor-10-8|Corollary §10.8]]; the other five are proved below.
+> **Law 7 is proved in Section 2.5**, as [[§10 Continuity#^cor-10-8|Corollary §10.8]]; the other five are proved below.
 >
 > *Stewart: 2.3, Limit Laws 6–11 (Law 7 proved in 2.5)*
 
@@ -175,7 +175,7 @@ Repeated use of the Product Law, and two basic limits, give six more laws. Stewa
 >
 > **Law 7** is [[§10 Continuity#^cor-10-8|Corollary §10.8]] (Stewart leaves it as Exercise 2.5.69).
 >
-> **Law 11.** Stewart puts $f(x) = x$ in Law 7 and uses Law 9: $\lim_{x \to a} \sqrt[n]{x} = \sqrt[n]{\lim_{x \to a} x} = \sqrt[n]{a}$ (for even $n$ the hypothesis of Law 7 is $a > 0$). This rests on Law 7 and hence on [[§10 Continuity|§10]]. There is no circle: Law 11 says that the root functions are continuous, and [[§10 Continuity#^thm-10-6|Theorem §10.6]] proves that directly (roots are inverses of powers), without Law 7 or Law 11. Corollary §10.8 then derives Law 7 from it. (For square roots Stewart also outlines an $\varepsilon$–$\delta$ proof in Exercise 2.4.37.)
+> **Law 11.** Stewart puts $f(x) = x$ in Law 7 and uses Law 9: $\lim_{x \to a} \sqrt[n]{x} = \sqrt[n]{\lim_{x \to a} x} = \sqrt[n]{a}$ (for even $n$ the hypothesis of Law 7 is $a > 0$). This rests on Law 7 and hence on [[§10 Continuity#^cor-10-8|Corollary §10.8]]. There is no circle: Law 11 says that the root functions are continuous, and [[§10 Continuity#^thm-10-6|Theorem §10.6]] proves that directly (roots are inverses of powers), without Law 7 or Law 11. Corollary §10.8 then derives Law 7 from it. (For square roots Stewart also outlines an $\varepsilon$–$\delta$ proof in Exercise 2.4.37.)
 
 ^pf-8-2
 
@@ -274,7 +274,7 @@ Functions with the Direct Substitution Property at $a$ are called **continuous a
 > \lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1} (x + 1) = 1 + 1 = 2 .
 > $$
 >
-> This is the slope of the tangent to $y = x^2$ at $(1, 1)$ from [[§6 The Tangent and Velocity Problems|§6]] (Example 2.1.1).
+> This is the slope of the tangent to $y = x^2$ at $(1, 1)$ from [[§6 The Tangent and Velocity Problems#^ex-6-1|Example §6.1]].
 >
 > **(b)** Find $\lim_{x \to 1} g(x)$ for $g(x) = x + 1$ if $x \ne 1$ and $g(1) = \pi$.
 >
@@ -288,7 +288,7 @@ Functions with the Direct Substitution Property at $a$ are called **continuous a
 > \frac{(3 + h)^2 - 9}{h} = \frac{9 + 6h + h^2 - 9}{h} = \frac{h(6 + h)}{h} = 6 + h ,
 > $$
 >
-> so the limit is $\lim_{h \to 0} (6 + h) = 6$. (This is the slope of the tangent to $y = x^2$ at $(3, 9)$; limits of this shape are derivatives, [[§12 Derivatives and Rates of Change|§12]].)
+> so the limit is $\lim_{h \to 0} (6 + h) = 6$. (This is the slope of the tangent to $y = x^2$ at $(3, 9)$; limits of this shape are derivatives, [[§12 Derivatives and Rates of Change#^def-12-3|Definition §12.3]].)
 >
 > *Stewart: Examples 2.3.3, 2.3.4 and 2.3.5*
 
@@ -348,6 +348,19 @@ Functions with the Direct Substitution Property at $a$ are called **continuous a
 
 ^rem-8-2
 
+> [!definition] Definition §8.1: Greatest Integer Function
+> The **greatest integer function** (or **floor function**) is defined by
+>
+> $$
+> \lfloor x \rfloor = \text{the largest integer that is less than or equal to } x .
+> $$
+>
+> For instance, $\lfloor 4 \rfloor = 4$, $\lfloor 4.8 \rfloor = 4$, $\lfloor \pi \rfloor = 3$, $\lfloor \sqrt2 \rfloor = 1$ and $\lfloor -\frac12 \rfloor = -1$. For each integer $n$, $\lfloor x \rfloor = n$ exactly when $n \le x < n + 1$, so the graph is a staircase of horizontal segments, each closed at its left end and open at its right end. (Stewart writes $[\![x]\!]$; other notations are $[x]$ and $\lfloor x \rfloor$.)
+>
+> *Stewart: Example 2.3.10*
+
+^def-8-1
+
 > [!example] Example §8.4: Comparing One-Sided Limits
 > **(a)** Prove that $\displaystyle\lim_{x \to 0} \frac{|x|}{x}$ does not exist.
 >
@@ -376,7 +389,17 @@ Functions with the Direct Substitution Property at $a$ are called **continuous a
 >
 > Both one-sided limits equal $0$, so by Theorem §8.5 the limit exists and $\lim_{x \to 4} f(x) = 0$, although $f(4)$ is not defined.
 >
-> *Stewart: Examples 2.3.8 and 2.3.9*
+> **(c)** Show that $\lim_{x \to 3} \lfloor x \rfloor$ does not exist.
+>
+> Since $\lfloor x \rfloor = 3$ for $3 \le x < 4$ and $\lfloor x \rfloor = 2$ for $2 \le x < 3$ (Definition §8.1),
+>
+> $$
+> \lim_{x \to 3^+} \lfloor x \rfloor = \lim_{x \to 3^+} 3 = 3, \qquad \lim_{x \to 3^-} \lfloor x \rfloor = \lim_{x \to 3^-} 2 = 2 .
+> $$
+>
+> The one-sided limits differ, so $\lim_{x \to 3} \lfloor x \rfloor$ does not exist (Theorem §8.5). The same happens at every integer ([[§10 Continuity#^ex-10-1|Example §10.1]](d)).
+>
+> *Stewart: Examples 2.3.8, 2.3.9 and 2.3.10*
 
 ^ex-8-4
 
@@ -493,7 +516,7 @@ Strict inequalities are not preserved: $0 < x^2$ for $x \ne 0$, yet both sides h
 
 > [!remark] Remark: Method — Evaluating a Limit
 > To find $\lim_{x \to a} f(x)$:
-> 1. **Substitute** if you may: for polynomials and rational functions with $a$ in the domain (Theorem §8.3), and later for every function continuous at $a$ ([[§10 Continuity|§10]]). The answer is $f(a)$.
+> 1. **Substitute** if you may: for polynomials and rational functions with $a$ in the domain (Theorem §8.3), and later for every function continuous at $a$ ([[§10 Continuity#^def-10-1|Definition §10.1]], [[§10 Continuity#^thm-10-6|Theorem §10.6]]). The answer is $f(a)$.
 > 2. **$0/0$:** simplify first, then substitute. Factor and cancel the common factor $x - a$ (Example §8.2), expand (Example §8.2(c)), rationalize with a conjugate (Example §8.3), or combine fractions. Theorem §8.4 justifies replacing $f$ by the simplified function.
 > 3. **(non-zero)$/0$:** there is no finite limit. Find the signs of numerator and denominator on each side of $a$ to decide between $\infty$, $-\infty$ and "does not exist" ([[§7 The Limit of a Function#^ex-7-5|Example §7.5]]).
 > 4. **Piecewise formulas, $|x|$, $\lfloor x \rfloor$:** compute the two one-sided limits with the formula valid on each side and compare them (Theorem §8.5, Example §8.4).

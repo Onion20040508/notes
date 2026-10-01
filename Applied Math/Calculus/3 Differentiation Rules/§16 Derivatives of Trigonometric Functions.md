@@ -47,7 +47,7 @@ Sketching the slopes of the tangent lines to $y = \sin x$ (zero at the peaks and
 
 ^pf-16-1
 
-*Uses:* [[§13 The Derivative as a Function|§13]] (definition of $f'(x)$), [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Laws), [[§16 Derivatives of Trigonometric Functions#^thm-16-6|§16.6]], [[§16 Derivatives of Trigonometric Functions#^thm-16-7|§16.7]]
+*Uses:* [[§13 The Derivative as a Function#^def-13-1|Def. §13.1]] (definition of $f'(x)$), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws), [[§16 Derivatives of Trigonometric Functions#^thm-16-6|§16.6]], [[§16 Derivatives of Trigonometric Functions#^thm-16-7|§16.7]]
 
 > [!remark]- Connections
 > - In 451, sine and cosine can be *defined* by power series; term-by-term differentiation then gives $s' = c$ and $c' = -s$ without any geometry: [[§26 Differentiation and Integration of Power Series#^ex-26-8|451 Ex. §26.8]], using [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]].
@@ -77,7 +77,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 
 ^pf-16-2
 
-*Uses:* [[§13 The Derivative as a Function|§13]] (definition of $f'(x)$), [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Laws), [[§16 Derivatives of Trigonometric Functions#^thm-16-6|§16.6]], [[§16 Derivatives of Trigonometric Functions#^thm-16-7|§16.7]]
+*Uses:* [[§13 The Derivative as a Function#^def-13-1|Def. §13.1]] (definition of $f'(x)$), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws), [[§16 Derivatives of Trigonometric Functions#^thm-16-6|§16.6]], [[§16 Derivatives of Trigonometric Functions#^thm-16-7|§16.7]]
 
 > [!theorem] Theorem §16.3: Derivative of Tangent
 > $$
@@ -215,7 +215,7 @@ The proof of Theorem §16.1 used two limits, proved now. The first needs a compa
 
 ^pf-16-5
 
-*Uses:* [[§52 Arc Length|§52]] (definition of arc length), [[§8 Calculating Limits Using the Limit Laws|§8]] (Theorem 2.3.2)
+*Uses:* [[§52 Arc Length|§52]] (definition of arc length), [[§8 Calculating Limits Using the Limit Laws#^thm-8-6|§8.6]] (Theorem 2.3.2)
 
 > [!theorem] Theorem §16.6: The Limit of sin θ over θ
 > $$
@@ -251,7 +251,7 @@ The proof of Theorem §16.1 used two limits, proved now. The first needs a compa
 
 ^pf-16-6
 
-*Uses:* [[§16 Derivatives of Trigonometric Functions#^lem-16-5|§16.5]], [[§10 Continuity#^thm-10-3|§10.3]], [[§8 Calculating Limits Using the Limit Laws|§8]] (Squeeze Theorem; one-sided limits)
+*Uses:* [[§16 Derivatives of Trigonometric Functions#^lem-16-5|§16.5]], [[§10 Continuity#^thm-10-3|§10.3]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-7|§8.7]] (Squeeze Theorem), [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|§8.5]] (one-sided limits)
 
 ![[m233-16-1.svg]]
 *The three lengths in the proof, on the unit circle: $\sin\theta = |BC|$ (blue), $\theta = \text{arc } AB$ (red) and $\tan\theta = |AD|$ (green). As $\theta \to 0$ they become indistinguishable, and dividing $\sin\theta \le \theta \le \tan\theta$ by $\sin\theta$ squeezes $\theta/\sin\theta$ between $1$ and $1/\cos\theta$.*
@@ -284,7 +284,7 @@ The proof of Theorem §16.1 used two limits, proved now. The first needs a compa
 
 ^pf-16-7
 
-*Uses:* [[§16 Derivatives of Trigonometric Functions#^thm-16-6|§16.6]], [[§10 Continuity#^thm-10-3|§10.3]], [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Laws 4 and 5)
+*Uses:* [[§16 Derivatives of Trigonometric Functions#^thm-16-6|§16.6]], [[§10 Continuity#^thm-10-3|§10.3]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws 4 and 5)
 
 > [!example] Example §16.4: Rescaling the Angle
 > Find $\displaystyle\lim_{x \to 0} \frac{\sin 7x}{4x}$.

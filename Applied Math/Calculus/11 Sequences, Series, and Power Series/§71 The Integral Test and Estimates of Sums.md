@@ -16,9 +16,9 @@ Usually there is no formula for the partial sums of a series, so we need tests t
 ## The Integral Test
 
 > [!remark] Remark: Two Pictures
-> **$\sum 1/n^2$ converges.** Put rectangles of width $1$ under the curve $y = 1/x^2$, with height equal to the value at the *right* endpoint of each interval $[n-1, n]$. Their areas are $\frac{1}{1^2}, \frac{1}{2^2}, \frac{1}{3^2}, \ldots$. Apart from the first, they lie under the curve for $x \ge 1$, whose area is $\int_1^{\infty} \frac{1}{x^2}\,dx = 1$ ([[§51 Improper Integrals|§51]]). So every partial sum is less than $\frac{1}{1^2} + 1 = 2$. The partial sums are increasing (all terms are positive) and bounded, so they converge by the Monotonic Sequence Theorem, and $\sum_{n=1}^{\infty} 1/n^2 < 2$. (Numerically $s_{5000} \approx 1.6447$; Euler found the exact sum $\pi^2/6 \approx 1.6449$.)
+> **$\sum 1/n^2$ converges.** Put rectangles of width $1$ under the curve $y = 1/x^2$, with height equal to the value at the *right* endpoint of each interval $[n-1, n]$. Their areas are $\frac{1}{1^2}, \frac{1}{2^2}, \frac{1}{3^2}, \ldots$. Apart from the first, they lie under the curve for $x \ge 1$, whose area is $\int_1^{\infty} \frac{1}{x^2}\,dx = 1$ ([[§51 Improper Integrals#^thm-51-1|Theorem §51.1]]). So every partial sum is less than $\frac{1}{1^2} + 1 = 2$. The partial sums are increasing (all terms are positive) and bounded, so they converge by the Monotonic Sequence Theorem ([[§69 Sequences#^thm-69-9|Theorem §69.9]]), and $\sum_{n=1}^{\infty} 1/n^2 < 2$. (Numerically $s_{5000} \approx 1.6447$; Euler found the exact sum $\pi^2/6 \approx 1.6449$.)
 >
-> **$\sum 1/\sqrt{n}$ diverges.** Now take the height at the *left* endpoint of each interval $[n, n+1]$, so the rectangles stick out above the curve $y = 1/\sqrt{x}$. Their total area $\frac{1}{\sqrt1} + \frac{1}{\sqrt2} + \cdots$ exceeds the area under the curve for $x \ge 1$, which is $\int_1^{\infty} \frac{1}{\sqrt x}\,dx = \infty$ (Example 7.8.4). So the series diverges. (Numerically $s_{5000} \approx 139.97$.)
+> **$\sum 1/\sqrt{n}$ diverges.** Now take the height at the *left* endpoint of each interval $[n, n+1]$, so the rectangles stick out above the curve $y = 1/\sqrt{x}$. Their total area $\frac{1}{\sqrt1} + \frac{1}{\sqrt2} + \cdots$ exceeds the area under the curve for $x \ge 1$, which is $\int_1^{\infty} \frac{1}{\sqrt x}\,dx = \infty$ ([[§51 Improper Integrals#^thm-51-1|Theorem §51.1]], Stewart's Example 7.8.4). So the series diverges. (Numerically $s_{5000} \approx 139.97$.)
 
 ^rem-71-1
 
@@ -74,7 +74,7 @@ The same reasoning proves the general test.
 
 ^pf-71-1
 
-*Uses:* [[§69 Sequences#^thm-69-9|§69.9]], [[§70 Series#^def-70-2|Def. §70.2]], [[§51 Improper Integrals|§51]] (convergent and divergent improper integrals), [[§35 The Definite Integral|§35]] (comparison properties of the integral)
+*Uses:* [[§69 Sequences#^thm-69-9|§69.9]], [[§70 Series#^def-70-2|Def. §70.2]], [[§51 Improper Integrals#^def-51-1|Def. §51.1]], [[§35 The Definite Integral#^thm-35-6|§35.6]] (comparison properties), [[§35 The Definite Integral#^thm-35-5|§35.5]] (adjacent intervals)
 
 ![[m233-71-1.svg]]
 *The two inequalities in the proof of the Integral Test, for $n = 6$. Left, inequality (4): rectangles of height $a_i = f(i)$ on $[i-1, i]$ (right endpoints) fit under the decreasing curve. Right, inequality (5): rectangles of height $a_i$ on $[i, i+1]$ (left endpoints) cover the area under the curve from $1$ to $n$.*
@@ -110,9 +110,9 @@ The same reasoning proves the general test.
 ^thm-71-2
 
 > [!proof]+ Proof
-> **$p \le 0$.** If $p < 0$, then $\lim_{n \to \infty} (1/n^p) = \lim_{n \to \infty} n^{-p} = \infty$. If $p = 0$, then $1/n^p = 1 \to 1$. Either way $\lim_{n \to \infty} (1/n^p) \ne 0$, so the series diverges by the Test for Divergence.
+> **$p \le 0$.** If $p < 0$, then $\lim_{n \to \infty} (1/n^p) = \lim_{n \to \infty} n^{-p} = \infty$. If $p = 0$, then $1/n^p = 1 \to 1$. Either way $\lim_{n \to \infty} (1/n^p) \ne 0$, so the series diverges by the Test for Divergence ([[§70 Series#^cor-70-5|Corollary §70.5]]).
 >
-> **$p > 0$.** The function $f(x) = 1/x^p$ is continuous, positive and decreasing on $[1, \infty)$. By Section 7.8 (Equation 7.8.2),
+> **$p > 0$.** The function $f(x) = 1/x^p$ is continuous, positive and decreasing on $[1, \infty)$. By [[§51 Improper Integrals#^thm-51-1|Theorem §51.1]] (Stewart's Equation 7.8.2),
 >
 > $$
 > \int_1^{\infty} \frac{1}{x^p}\,dx \quad \text{converges if } p > 1 \text{ and diverges if } p \le 1 .
@@ -122,7 +122,7 @@ The same reasoning proves the general test.
 
 ^pf-71-2
 
-*Uses:* [[§71 The Integral Test and Estimates of Sums#^thm-71-1|§71.1]], [[§70 Series#^cor-70-5|§70.5]], [[§51 Improper Integrals|§51]] (Equation 7.8.2)
+*Uses:* [[§71 The Integral Test and Estimates of Sums#^thm-71-1|§71.1]], [[§70 Series#^cor-70-5|§70.5]], [[§51 Improper Integrals#^thm-51-1|§51.1]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§15 Alternating Series and Integral Tests#^ex-15-3|451 Ex. §15.3]] (by the integral test, as here) and [[§14 Series#^ex-14-3|451 Ex. §14.3]]; the integrals themselves, [[§36 Improper Integrals#^ex-36-2|451 Ex. §36.2]].
@@ -158,7 +158,7 @@ The same reasoning proves the general test.
 > f'(x) = \frac{(1/x)x - \ln x}{x^2} = \frac{1 - \ln x}{x^2} .
 > $$
 >
-> So $f'(x) < 0$ when $\ln x > 1$, that is, when $x > e$: $f$ is ultimately decreasing, and the Integral Test applies (Remark above). With the substitution $u = \ln x$,
+> So $f'(x) < 0$ when $\ln x > 1$, that is, when $x > e$: $f$ is ultimately decreasing, and the Integral Test applies ([[§71 The Integral Test and Estimates of Sums#^rem-71-2|Remark: Where the Series Starts]]). With the substitution $u = \ln x$,
 >
 > $$
 > \int_1^{\infty} \frac{\ln x}{x}\,dx = \lim_{t \to \infty} \int_1^t \frac{\ln x}{x}\,dx = \lim_{t \to \infty} \left[ \frac{(\ln x)^2}{2} \right]_1^t = \lim_{t \to \infty} \frac{(\ln t)^2}{2} = \infty .
@@ -213,7 +213,7 @@ The same reasoning proves the general test.
 
 ^pf-71-3
 
-*Uses:* [[§71 The Integral Test and Estimates of Sums#^thm-71-1|§71.1]], [[§71 The Integral Test and Estimates of Sums#^def-71-1|Def. §71.1]], [[§51 Improper Integrals|§51]], limits preserve weak inequalities ([[§9 Limit Theorems for Sequences#^prop-9-5|451 Prop. §9.5]])
+*Uses:* [[§71 The Integral Test and Estimates of Sums#^thm-71-1|§71.1]], [[§71 The Integral Test and Estimates of Sums#^def-71-1|Def. §71.1]], [[§51 Improper Integrals#^def-51-1|Def. §51.1]], limits preserve weak inequalities ([[§9 Limit Theorems for Sequences#^prop-9-5|451 Prop. §9.5]])
 
 > [!example] Example §71.4: How Many Terms?
 > **(a)** Approximate the sum of $\sum 1/n^3$ by the sum of the first $10$ terms, and estimate the error.

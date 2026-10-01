@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 10.5.*
 
-Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**, because they are the curves in which a plane cuts a double cone: a plane tilted less steeply than the cone gives an ellipse, one parallel to a line of the cone a parabola, and one steeper than the cone a hyperbola (both halves of the cone). This section defines each conic geometrically, by distances to foci or to a focus and a directrix, and derives its standard equation when its axis is a coordinate axis. Completing the square then handles conics whose center or vertex has been shifted. [[§68 Conic Sections in Polar Coordinates|§68]] unifies the three definitions with the eccentricity.
+Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**, because they are the curves in which a plane cuts a double cone: a plane tilted less steeply than the cone gives an ellipse, one parallel to a line of the cone a parabola, and one steeper than the cone a hyperbola (both halves of the cone). This section defines each conic geometrically, by distances to foci or to a focus and a directrix, and derives its standard equation when its axis is a coordinate axis. Completing the square then handles conics whose center or vertex has been shifted. [[§68 Conic Sections in Polar Coordinates#^thm-68-1|Theorem §68.1]] unifies the three definitions with the eccentricity.
 
 ## Parabolas
 
@@ -52,7 +52,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 
 ^pf-67-1
 
-*Uses:* [[§67 Conic Sections#^def-67-1|Def. §67.1]], distance formula ([[§117 Coordinate Geometry and Lines|§117]])
+*Uses:* [[§67 Conic Sections#^def-67-1|Def. §67.1]], distance formula ([[§117 Coordinate Geometry and Lines#^thm-117-1|§117.1]])
 
 > [!theorem] Corollary §67.2: Parabola with Horizontal Axis
 > An equation of the parabola with focus $(p, 0)$ and directrix $x = -p$ is
@@ -124,7 +124,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 > a^2(x^2 + 2cx + c^2 + y^2) = a^4 + 2a^2cx + c^2x^2, \quad\text{which becomes}\quad (a^2 - c^2)x^2 + a^2y^2 = a^2(a^2 - c^2) .
 > $$
 >
-> In the triangle $F_1F_2P$, the side $F_1F_2$ is shorter than the sum of the other two, so $2c < 2a$ and $a^2 - c^2 > 0$. With $b^2 = a^2 - c^2$ the equation is $b^2x^2 + a^2y^2 = a^2b^2$; dividing by $a^2b^2$ gives (3).
+> Here $a^2 - c^2 > 0$ by the hypothesis $a > c$, which is forced: in the triangle $F_1F_2P$ the side $F_1F_2$ is shorter than the sum of the other two, so $2c < 2a$. With $b^2 = a^2 - c^2$ the equation is $b^2x^2 + a^2y^2 = a^2b^2$; dividing by $a^2b^2$ gives (3).
 >
 > **Conversely** (Stewart does not check that squaring added no points; here is why it did not), let $(x, y)$ satisfy (3), so $y^2 = b^2 - b^2x^2/a^2$ and $|x| \le a$. Then
 >
@@ -138,7 +138,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 
 ^pf-67-3
 
-*Uses:* [[§67 Conic Sections#^def-67-2|Def. §67.2]], distance formula ([[§117 Coordinate Geometry and Lines|§117]]), triangle inequality
+*Uses:* [[§67 Conic Sections#^def-67-2|Def. §67.2]], distance formula ([[§117 Coordinate Geometry and Lines#^thm-117-1|§117.1]]), triangle inequality
 
 ![[m233-67-1.svg]]
 *The ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$. For every point $P$ on it, $|PF_1| + |PF_2| = 2a$ (blue). At the end $(0, b)$ of the minor axis the two distances are equal, so each is $a$, and the right triangle with legs $b$ and $c$ and hypotenuse $a$ (red) shows $c^2 = a^2 - b^2$.*
@@ -183,7 +183,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 ^ex-67-2
 
 > [!remark]- Remark: Reflection Properties
-> Light from a source at the focus of a parabolic mirror is reflected parallel to the axis (headlights, reflecting telescopes; Stewart's Problems Plus after Chapter 3). Light or sound from one focus of an elliptical reflector is reflected to the other focus (Stewart's Exercise 67). Lithotripsy uses this to treat kidney stones: with the stone at one focus, high-intensity sound waves generated at the other focus are reflected onto the stone and destroy it without surgery. Kepler's first law says that planets move in ellipses with the sun at one focus ([[§68 Conic Sections in Polar Coordinates|§68]]).
+> Light from a source at the focus of a parabolic mirror is reflected parallel to the axis (headlights, reflecting telescopes; Stewart's Problems Plus after Chapter 3). Light or sound from one focus of an elliptical reflector is reflected to the other focus (Stewart's Exercise 67). Lithotripsy uses this to treat kidney stones: with the stone at one focus, high-intensity sound waves generated at the other focus are reflected onto the stone and destroy it without surgery. Kepler's first law says that planets move in ellipses with the sun at one focus (proved in [[§89 Motion in Space꞉ Velocity and Acceleration#^thm-89-6|Theorem §89.6]]; [[§68 Conic Sections in Polar Coordinates|§68]] computes with it).
 
 ^rem-67-1
 
@@ -224,7 +224,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 > (c^2 - a^2)x^2 - a^2y^2 = a^2(c^2 - a^2) .
 > $$
 >
-> In the triangle $F_1F_2P$, the difference of two sides is less than the third, so $2a < 2c$ and $b^2 = c^2 - a^2 > 0$. Then $b^2x^2 - a^2y^2 = a^2b^2$, and dividing by $a^2b^2$ gives (6).
+> Here $b^2 = c^2 - a^2 > 0$ by the hypothesis $a < c$, which is forced: in the triangle $F_1F_2P$ the difference of two sides is less than the third, so $2a < 2c$. Then $b^2x^2 - a^2y^2 = a^2b^2$, and dividing by $a^2b^2$ gives (6).
 >
 > **Conversely**, let $(x, y)$ satisfy (6), so $y^2 = b^2x^2/a^2 - b^2$. Then, as for the ellipse,
 >
@@ -242,11 +242,11 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 > \frac ba x - \frac ba\sqrt{x^2 - a^2} = \frac ba \cdot \frac{x^2 - (x^2 - a^2)}{x + \sqrt{x^2 - a^2}} = \frac{ab}{x + \sqrt{x^2 - a^2}} \to 0 \quad (x \to \infty) .
 > $$
 >
-> So the branch comes arbitrarily close to the line $y = (b/a)x$: a slant asymptote ([[§29 Summary of Curve Sketching|§29]]). By symmetry both branches approach both lines $y = \pm(b/a)x$.
+> So the branch comes arbitrarily close to the line $y = (b/a)x$: a slant asymptote ([[§29 Summary of Curve Sketching#^def-29-2|Definition §29.2]]). By symmetry both branches approach both lines $y = \pm(b/a)x$.
 
 ^pf-67-5
 
-*Uses:* [[§67 Conic Sections#^def-67-3|Def. §67.3]], distance formula ([[§117 Coordinate Geometry and Lines|§117]]), triangle inequality, [[§29 Summary of Curve Sketching|§29]] (slant asymptotes)
+*Uses:* [[§67 Conic Sections#^def-67-3|Def. §67.3]], distance formula ([[§117 Coordinate Geometry and Lines#^thm-117-1|§117.1]]), triangle inequality, [[§29 Summary of Curve Sketching#^def-29-2|Def. §29.2]] (slant asymptotes)
 
 > [!theorem] Corollary §67.6: Hyperbola with Foci on the y-Axis
 > The hyperbola
@@ -290,7 +290,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 ## Shifted Conics
 
 > [!remark] Remark: Method — Shifted Conics
-> Replacing $x$ and $y$ by $x - h$ and $y - k$ in a standard equation (Theorem §67.1, Corollary §67.2, Theorem §67.3, Corollary §67.4, Theorem §67.5, Corollary §67.6) shifts the conic $h$ units horizontally and $k$ units vertically, together with its foci, vertices, directrix and asymptotes ([[§118 Graphs of Second-Degree Equations|§118]]).
+> Replacing $x$ and $y$ by $x - h$ and $y - k$ in a standard equation (Theorem §67.1, Corollary §67.2, Theorem §67.3, Corollary §67.4, Theorem §67.5, Corollary §67.6) shifts the conic $h$ units horizontally and $k$ units vertically, together with its foci, vertices, directrix and asymptotes ([[§118 Graphs of Second-Degree Equations#^thm-118-5|Theorem §118.5]]).
 > 1. **From the geometry to the equation:** find the center (midpoint of the vertices or foci) $(h, k)$, read off $a$, $b$, $c$ from distances, and write the standard equation in $x - h$, $y - k$.
 > 2. **From the equation to the geometry:** collect the $x$-terms and the $y$-terms, complete the square in each, and divide to make the right side $1$. The signs of the squared terms decide the type (same sign: ellipse; opposite signs: hyperbola; only one squared variable: parabola).
 

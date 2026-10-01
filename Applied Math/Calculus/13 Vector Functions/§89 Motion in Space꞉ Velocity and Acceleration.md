@@ -242,7 +242,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 ## Tangential and Normal Components of Acceleration
 
 > [!theorem] Theorem §89.4: Tangential and Normal Components of Acceleration
-> Let $v = |\mathbf{v}|$ be the speed of a particle moving along a smooth curve, and $\mathbf{T}$, $\mathbf{N}$, $\kappa$ the unit tangent, unit normal and curvature ([[§88 Arc Length and Curvature|§88]]). Then
+> Let $v = |\mathbf{v}|$ be the speed of a particle moving along a smooth curve, and $\mathbf{T}$, $\mathbf{N}$, $\kappa$ the unit tangent, unit normal and curvature ([[§87 Derivatives and Integrals of Vector Functions#^def-87-2|Definition §87.2]], [[§88 Arc Length and Curvature#^def-88-5|Definition §88.5]], [[§88 Arc Length and Curvature#^def-88-4|Definition §88.4]]). Then
 >
 > $$
 > \mathbf{a} = v'\,\mathbf{T} + \kappa v^2\,\mathbf{N} . \qquad (7)
@@ -362,7 +362,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 > \frac{d}{dt}(\mathbf{r} \times \mathbf{v}) = \mathbf{r}' \times \mathbf{v} + \mathbf{r} \times \mathbf{v}' = \mathbf{v} \times \mathbf{v} + \mathbf{r} \times \mathbf{a} = \mathbf{0} + \mathbf{0} = \mathbf{0} .
 > $$
 >
-> Therefore $\mathbf{r} \times \mathbf{v} = \mathbf{h}$ for a constant vector $\mathbf{h}$ (each component has derivative $0$). Assume $\mathbf{h} \ne \mathbf{0}$, that is, $\mathbf{r}$ and $\mathbf{v}$ are not parallel. Then $\mathbf{r}(t) \perp \mathbf{h}$ for all $t$ ([[§83 The Cross Product#^thm-83-2|Theorem §83.2]]), so the planet always lies in the plane through the origin perpendicular to $\mathbf{h}$.
+> Therefore $\mathbf{r} \times \mathbf{v} = \mathbf{h}$ for a constant vector $\mathbf{h}$ (each component has derivative $0$, so is constant by [[§26 The Mean Value Theorem#^thm-26-3|Theorem §26.3]]). Assume $\mathbf{h} \ne \mathbf{0}$, that is, $\mathbf{r}$ and $\mathbf{v}$ are not parallel. Then $\mathbf{r}(t) \perp \mathbf{h}$ for all $t$ ([[§83 The Cross Product#^thm-83-2|Theorem §83.2]]), so the planet always lies in the plane through the origin perpendicular to $\mathbf{h}$.
 >
 > **Rewriting h.** With $\mathbf{r} = r\mathbf{u}$ and the Product Rule,
 >
@@ -382,7 +382,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 > (\mathbf{v} \times \mathbf{h})' = \mathbf{v}' \times \mathbf{h} + \mathbf{v} \times \mathbf{h}' = \mathbf{a} \times \mathbf{h} = GM\,\mathbf{u}' .
 > $$
 >
-> Integrating both sides,
+> Integrating both sides (that is, $\mathbf{v} \times \mathbf{h} - GM\,\mathbf{u}$ has derivative $\mathbf{0}$, so it is constant),
 >
 > $$
 > \mathbf{v} \times \mathbf{h} = GM\,\mathbf{u} + \mathbf{c} \qquad (11)
@@ -410,11 +410,11 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 > r = \frac{h^2/(GM)}{1 + e\cos\theta} = \frac{eh^2/c}{1 + e\cos\theta}, \qquad\text{and with } d = h^2/c, \qquad r = \frac{ed}{1 + e\cos\theta} . \qquad (12)
 > $$
 >
-> By the polar equation of conics ([[§68 Conic Sections in Polar Coordinates|§68]], Theorem 10.6.6), (12) is a conic section with focus at the origin and eccentricity $e$. The orbit of a planet is a closed curve, so the conic must be an ellipse.
+> If $\mathbf{c} \ne \mathbf{0}$, then $d > 0$ and by the polar equation of conics ([[§68 Conic Sections in Polar Coordinates#^thm-68-3|Theorem §68.3]]; Stewart's Theorem 10.6.6), (12) is a conic section with focus at the origin and eccentricity $e$. (If $\mathbf{c} = \mathbf{0}$, then $GMr = \mathbf{r} \cdot (\mathbf{v} \times \mathbf{h}) = h^2$, so $r = h^2/(GM)$ is constant: a circle centered at the sun, the case $e = 0$.) The orbit of a planet is a closed curve, and of the conics only the ellipse is closed, so $e < 1$ and the orbit is an ellipse with the sun at a focus.
 
 ^pf-89-6
 
-*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-3|§87.3]], [[§83 The Cross Product#^thm-83-2|§83.2]], [[§83 The Cross Product#^thm-83-8|§83.8]], polar equations of conics ([[§68 Conic Sections in Polar Coordinates|§68]])
+*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-3|§87.3]], [[§83 The Cross Product#^thm-83-2|§83.2]], [[§83 The Cross Product#^thm-83-8|§83.8]], [[§68 Conic Sections in Polar Coordinates#^thm-68-3|§68.3]], [[§26 The Mean Value Theorem#^thm-26-3|§26.3]]
 
 > [!remark] Remark: What the Proof Uses
 > The proof uses only the vector calculus of Chapters 12 and 13: the product rule for cross products, a constant-length vector being perpendicular to its derivative, and the two triple-product identities. The constant $\mathbf{h} = \mathbf{r} \times \mathbf{v}$ is the angular momentum per unit mass, and its constancy is exactly what the Second Law (equal areas in equal times) expresses. The same argument applies to a moon or satellite moving around a planet, or a comet around a star.

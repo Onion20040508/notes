@@ -21,7 +21,7 @@ $$
 S = \{(x, y) \mid a \le x \le b,\ 0 \le y \le f(x)\} .
 $$
 
-For regions with straight sides, area is easy: a rectangle has area length times width, a triangle half base times height, and a polygon is cut into triangles. A curved side needs a new idea, the same one used for tangent lines in [[§12 Derivatives and Rates of Change|§12]]: approximate (there by secant lines, here by rectangles) and take the limit of the approximations.
+For regions with straight sides, area is easy: a rectangle has area length times width, a triangle half base times height, and a polygon is cut into triangles. A curved side needs a new idea, the same one used for tangent lines in [[§12 Derivatives and Rates of Change#^def-12-1|Def. §12.1]]: approximate (there by secant lines, here by rectangles) and take the limit of the approximations.
 
 > [!example] Example §34.1: Estimating the Area Under a Parabola
 > Use rectangles to estimate the area $A$ under the parabola $y = x^2$ from $0$ to $1$.
@@ -67,7 +67,7 @@ $$
 1^2 + 2^2 + 3^2 + \cdots + n^2 = \frac{n(n + 1)(2n + 1)}{6} , \qquad (1)
 $$
 
-Stewart's Formula 1, proved in Appendix E ([[§120 Sigma Notation|§120]], Example 5).
+Stewart's Formula 1, proved in Appendix E (Example 5 there; here [[§120 Sigma Notation#^thm-120-2|Theorem §120.2]]).
 
 > [!example] Example §34.2: The Exact Area Under the Parabola
 > For the region $S$ of Example §34.1, show that $\lim_{n \to \infty} R_n = \frac13$.
@@ -88,7 +88,7 @@ Stewart's Formula 1, proved in Appendix E ([[§120 Sigma Notation|§120]], Examp
 > \lim_{n \to \infty} R_n = \lim_{n \to \infty} \frac16 \Big(\frac{n + 1}{n}\Big)\Big(\frac{2n + 1}{n}\Big) = \lim_{n \to \infty} \frac16 \Big(1 + \frac1n\Big)\Big(2 + \frac1n\Big) = \frac16 \cdot 1 \cdot 2 = \frac13 .
 > $$
 >
-> Here $n$ runs through the positive integers only: this is the limit of a sequence ([[§69 Sequences|§69]]), computed like a limit at infinity ([[§11 Limits at Infinity; Horizontal Asymptotes|§11]]) using $\lim_{n \to \infty} 1/n = 0$.
+> Here $n$ runs through the positive integers only: this is the limit of a sequence ([[§69 Sequences#^def-69-2|Def. §69.2]]), computed like a limit at infinity ([[§69 Sequences#^thm-69-1|Theorem §69.1]], [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-3|Theorem §11.3]]) using $\lim_{n \to \infty} 1/n = 0$.
 >
 > **Left endpoints.** Stewart states that $L_n \to \frac13$ as well. Indeed $L_n$ and $R_n$ use the same heights except for the first and the last: $L_n$ has $\frac1n f(0)$ where $R_n$ has $\frac1n f(1)$. So
 >
@@ -132,13 +132,13 @@ and the approximation improves as $n \to \infty$.
 > [!definition] Definition §34.2: Sample Points; Lower and Upper Sums
 > Instead of an endpoint, the height of the $i$th rectangle may be the value of $f$ at **any** number $x_i^*$ in the $i$th subinterval $[x_{i-1}, x_i]$. The numbers $x_1^*, x_2^*, \ldots, x_n^*$ are called **sample points**.
 >
-> Choosing each $x_i^*$ so that $f(x_i^*)$ is the minimum value of $f$ on $[x_{i-1}, x_i]$ gives a **lower sum**; choosing the maximum value gives an **upper sum**. (These extreme values exist by the Extreme Value Theorem, [[§25 Maximum and Minimum Values|§25]], since $f$ is continuous on the closed subinterval.)
+> Choosing each $x_i^*$ so that $f(x_i^*)$ is the minimum value of $f$ on $[x_{i-1}, x_i]$ gives a **lower sum**; choosing the maximum value gives an **upper sum**. (These extreme values exist by the Extreme Value Theorem, [[§25 Maximum and Minimum Values#^thm-25-1|Theorem §25.1]], since $f$ is continuous on the closed subinterval.)
 >
 > *Stewart: 5.1 (text and Note)*
 
 ^def-34-2
 
-In **sigma notation** ([[§120 Sigma Notation|§120]]) a sum with many terms is written compactly, for instance
+In **sigma notation** ([[§120 Sigma Notation#^def-120-1|Def. §120.1]]) a sum with many terms is written compactly, for instance
 
 $$
 \sum_{i=1}^{n} f(x_i)\,\Delta x = f(x_1)\,\Delta x + f(x_2)\,\Delta x + \cdots + f(x_n)\,\Delta x ,
@@ -187,7 +187,7 @@ In Examples §34.1 and §34.2 the function $x^2$ is increasing on $[0, 1]$, so t
 > A = \lim_{n \to \infty} R_n = \lim_{n \to \infty} \big[ e^{-x_1}\,\Delta x + \cdots + e^{-x_n}\,\Delta x \big] = \lim_{n \to \infty} \frac2n \big( e^{-2/n} + e^{-4/n} + \cdots + e^{-2n/n} \big) = \lim_{n \to \infty} \frac2n \sum_{i=1}^{n} e^{-2i/n} .
 > $$
 >
-> This limit is hard to evaluate by hand. (It is a geometric sum, and a computer algebra system finds it. In [[§36 The Fundamental Theorem of Calculus|§36]] the Fundamental Theorem gives $A = 1 - e^{-2} \approx 0.8647$ at once.)
+> This limit is hard to evaluate by hand. (It is a geometric sum, and a computer algebra system finds it. In [[§36 The Fundamental Theorem of Calculus#^thm-36-2|Theorem §36.2]] the Fundamental Theorem gives $A = 1 - e^{-2} \approx 0.8647$ at once.)
 >
 > **(b)** With $n = 4$, $\Delta x = 0.5$, the subintervals are $[0, 0.5], [0.5, 1], [1, 1.5], [1.5, 2]$, with midpoints $x_1^* = 0.25$, $x_2^* = 0.75$, $x_3^* = 1.25$, $x_4^* = 1.75$. The **midpoint sum** is
 >
@@ -209,7 +209,7 @@ In Examples §34.1 and §34.2 the function $x^2$ is increasing on $[0, 1]$, so t
 
 ## The Distance Problem
 
-The **distance problem** is the inverse of the velocity problem of [[§6 The Tangent and Velocity Problems|§6]]: find the distance traveled by an object during a time interval when its velocity is known at all times. If the velocity is constant, distance $=$ velocity $\times$ time. If not, we approximate as for areas.
+The **distance problem** is the inverse of the velocity problem of [[§6 The Tangent and Velocity Problems#^def-6-3|Def. §6.3]]: find the distance traveled by an object during a time interval when its velocity is known at all times. If the velocity is constant, distance $=$ velocity $\times$ time. If not, we approximate as for areas.
 
 > [!example] Example §34.4: Distance from Speedometer Readings
 > A car's odometer is broken. Speedometer readings every five seconds over a 30-second interval are:
@@ -250,9 +250,9 @@ $$
 d = \lim_{n \to \infty} \sum_{i=1}^{n} f(t_{i-1})\,\Delta t = \lim_{n \to \infty} \sum_{i=1}^{n} f(t_i)\,\Delta t . \qquad (5)
 $$
 
-This is Stewart's Equation 5, justified in [[§37 Indefinite Integrals and the Net Change Theorem|§37]] (the Net Change Theorem). It has the form of Definition §34.1 and Theorem §34.1, part 2: **distance traveled is the area under the velocity graph.**
+This is Stewart's Equation 5, justified in [[§37 Indefinite Integrals and the Net Change Theorem#^cor-37-3|Corollary §37.3]] (from the Net Change Theorem). It has the form of Definition §34.1 and Theorem §34.1, part 2: **distance traveled is the area under the velocity graph.**
 
 > [!remark] Remark: Many Quantities Are Areas
-> Equation (5) is the first of many quantities computed as a limit of sums $\sum f(x_i^*)\,\Delta x$, and hence as an area under a curve: the work done by a variable force ([[§42 Work|§42]]), volumes ([[§40 Volumes|§40]]), the cardiac output of the heart ([[§55 Applications to Economics and Biology|§55]]), and others in Chapters 6 and 8. So an area computed in this chapter can be read in many practical ways.
+> Equation (5) is the first of many quantities computed as a limit of sums $\sum f(x_i^*)\,\Delta x$, and hence as an area under a curve: the work done by a variable force ([[§42 Work#^def-42-3|Def. §42.3]]), volumes ([[§40 Volumes#^def-40-2|Def. §40.2]]), the cardiac output of the heart ([[§55 Applications to Economics and Biology#^def-55-5|Def. §55.5]]), and others in Chapters 6 and 8. So an area computed in this chapter can be read in many practical ways.
 
 ^rem-34-1

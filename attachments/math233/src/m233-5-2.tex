@@ -34,6 +34,10 @@
     \draw[figR, thick] plot[domain=-2.9:3.1, samples=80] (\x,{rad(atan(\x))});
     \draw[figR, thin, dashed] (-2.9,1.5708) -- (3.1,1.5708);
     \draw[figR, thin, dashed] (-2.9,-1.5708) -- (3.1,-1.5708);
+    \draw[black!30, thin, dashed] (1.5708,-2.0) -- (1.5708,2.1);
+    \draw[black!30, thin, dashed] (-1.5708,-2.0) -- (-1.5708,2.1);
+    \draw[figG, thin, dashed] (-2.0,-2.0) -- (2.1,2.1);
+    \foreach \t/\l in {1.5708/{\frac{\pi}{2}}, -1.5708/{-\frac{\pi}{2}}} \draw[thin, black!70] (\t,0.07) -- (\t,-0.07) node[below] {$\l$};
     \draw[thin, black!70] (0.07,1.5708) -- (-0.07,1.5708) node[above left] {$\frac{\pi}{2}$};
     \draw[thin, black!70] (0.07,-1.5708) -- (-0.07,-1.5708) node[below left] {$-\frac{\pi}{2}$};
     \node[font=\small] at (0,-2.6) {(c) $y=\tan^{-1}x$};

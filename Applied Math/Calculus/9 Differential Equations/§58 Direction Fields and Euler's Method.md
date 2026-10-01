@@ -59,7 +59,7 @@ without a formula for it. The equation says that the slope at any point $(x, y)$
 >
 > **(b)** Start at the origin and move to the right in the direction of the segment there, which has slope $-1$. Continue drawing the curve so that it moves parallel to the nearby segments: it decreases while inside the unit circle, turns where it crosses the circle (slope $0$), and then climbs ever more steeply. Returning to the origin, draw the curve to the left in the same way.
 >
-> The picture is symmetric: since $F(-x, -y) = F(x, y)$, if $y(x)$ is a solution then so is $-y(-x)$, and the solution through the origin is an odd function.
+> The picture is symmetric: since $F(-x, -y) = F(x, y)$, if $y(x)$ is a solution then so is $z(x) = -y(-x)$ (indeed $z'(x) = y'(-x) = F(-x, y(-x)) = F(-x, -z(x)) = F(x, z(x))$). Both pass through the origin, and an initial-value problem like this one has only one solution ([[§59 Separable Equations#^rem-59-2|Remark: Solution Curves Do Not Cross]]), so the solution through the origin is an odd function.
 >
 > *Stewart: Example 9.2.1*
 
@@ -77,7 +77,7 @@ Direction fields also give insight into physical situations. A simple electric c
 > L\,\frac{dI}{dt} + RI = E(t) ,
 > $$
 >
-> a first-order differential equation that models the current $I$ at time $t$.
+> a first-order differential equation that models the current $I$ at time $t$. (Section 9.5 solves it as a linear equation: [[§61 Linear Equations#^def-61-3|Definition §61.3]].)
 >
 > *Stewart: 9.2, Equation 1*
 
@@ -106,7 +106,7 @@ Direction fields also give insight into physical situations. A simple electric c
 >
 > **(c)** The constant function $I(t) = 5$ is an equilibrium solution. Indeed, if $I(t) = 5$, then the left side of $dI/dt = 15 - 3I$ is $0$ and the right side is $15 - 3(5) = 0$.
 >
-> **(d)** Starting at $(0, 0)$ with slope $15$, the solution curve rises steeply, then flattens as it approaches the line $I = 5$ from below, without crossing it.
+> **(d)** Starting at $(0, 0)$ with slope $15$, the solution curve rises steeply, then flattens as it approaches the line $I = 5$ from below, without crossing it (the line is itself a solution curve, and solution curves do not cross: [[§59 Separable Equations#^rem-59-2|Remark: Solution Curves Do Not Cross]]).
 >
 > *Stewart: Example 9.2.2*
 
@@ -140,7 +140,7 @@ In Example §58.2 the segments along any horizontal line are parallel, because t
 ^rem-58-2
 
 > [!proof]+ Proof
-> Stewart gives only the geometric argument above; here is the computation. Let $h(t) = g(t - c)$. By the Chain Rule, and because $g$ is a solution,
+> Stewart gives only the geometric argument above; here is the computation. Let $h(t) = g(t - c)$. By the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]), and because $g$ is a solution,
 >
 > $$
 > h'(t) = g'(t - c) \cdot 1 = f\big(g(t - c)\big) = f\big(h(t)\big) ,
@@ -150,12 +150,12 @@ In Example §58.2 the segments along any horizontal line are parallel, because t
 
 ^pf-58-1
 
-*Uses:* [[§58 Direction Fields and Euler's Method#^def-58-3|Def. §58.3]], [[§17 The Chain Rule|§17]]
+*Uses:* [[§58 Direction Fields and Euler's Method#^def-58-3|Def. §58.3]], [[§17 The Chain Rule#^thm-17-2|§17.2]]
 
 ## Euler's Method
 
 > [!remark] Remark: The Idea of Euler's Method
-> Return to the initial-value problem $y' = x + y$, $y(0) = 1$. The equation tells us that $y'(0) = 0 + 1 = 1$, so the solution curve has slope $1$ at $(0, 1)$. As a first approximation to the solution we could use the linear approximation $L(x) = x + 1$, the tangent line at $(0, 1)$ ([[§23 Linear Approximations and Differentials|§23]]).
+> Return to the initial-value problem $y' = x + y$, $y(0) = 1$. The equation tells us that $y'(0) = 0 + 1 = 1$, so the solution curve has slope $1$ at $(0, 1)$. As a first approximation to the solution we could use the linear approximation $L(x) = x + 1$, the tangent line at $(0, 1)$ ([[§23 Linear Approximations and Differentials#^def-23-1|Definition §23.1]]).
 >
 > Euler's idea was to improve on this by proceeding only a short distance along the tangent line and then making a midcourse correction, changing direction as indicated by the direction field. Start along the tangent line, but stop at $x = 0.5$; this horizontal distance is the **step size**. Since $L(0.5) = 1.5$, we have $y(0.5) \approx 1.5$, and we take $(0.5, 1.5)$ as the starting point of a new segment. The equation gives $y'(0.5) = 0.5 + 1.5 = 2$ there, so for $x > 0.5$ we use the linear function
 >
@@ -235,7 +235,7 @@ In Example §58.2 the segments along any horizontal line are parallel, because t
 >
 > The estimates seem to approach limits, namely the true values of $y(0.5)$ and $y(1)$: the Euler approximations approach the exact solution curve as $h \to 0$.
 >
-> Here the exact solution is known: $y = 2e^x - x - 1$ (it is found by the method of [[§61 Linear Equations|§61]]; check: $y' = 2e^x - 1 = x + (2e^x - x - 1) = x + y$ and $y(0) = 2 - 1 = 1$). So $y(0.5) = 2\sqrt e - 1.5 \approx 1.797443$ and $y(1) = 2e - 2 \approx 3.436564$. The errors at $x = 1$ are about $0.249$ for $h = 0.1$, $0.027$ for $h = 0.01$ and $0.0027$ for $h = 0.001$: dividing the step size by $10$ divides the error by about $10$. All the estimates are too small, because this solution curve is concave upward ($y'' = 2e^x > 0$), so each tangent-line step falls below it.
+> Here the exact solution is known: $y = 2e^x - x - 1$ (it is found by the method of [[§61 Linear Equations#^thm-61-1|Theorem §61.1]], since $y' - y = x$ is linear; check: $y' = 2e^x - 1 = x + (2e^x - x - 1) = x + y$ and $y(0) = 2 - 1 = 1$). So $y(0.5) = 2\sqrt e - 1.5 \approx 1.797443$ and $y(1) = 2e - 2 \approx 3.436564$. The errors at $x = 1$ are about $0.249$ for $h = 0.1$, $0.027$ for $h = 0.01$ and $0.0027$ for $h = 0.001$: dividing the step size by $10$ divides the error by about $10$. All the estimates are too small, because this solution curve is concave upward ($y'' = 2e^x > 0$), so each tangent-line step falls below it.
 >
 > Computer software that produces numerical approximations to solutions of differential equations uses refinements of Euler's method; Euler's method, simple and not very accurate, is the idea on which they are based.
 
@@ -271,7 +271,7 @@ In Example §58.2 the segments along any horizontal line are parallel, because t
 > I(0.5) \approx 4.16 \text{ A} .
 > $$
 >
-> For comparison, the exact solution is $I(t) = 5 - 5e^{-3t}$ (Stewart finds it in Section 9.5, Example 4, [[§61 Linear Equations|§61]]; check: $I' = 15e^{-3t} = 15 - 3(5 - 5e^{-3t})$ and $I(0) = 0$), so $I(0.5) = 5 - 5e^{-1.5} \approx 3.88$ A. Here the estimate is too large: this solution curve is concave downward ($I'' = -45e^{-3t} < 0$), so each tangent-line step overshoots it. The error, about $0.28$ A, shrinks as $h$ decreases.
+> For comparison, the exact solution is $I(t) = 5 - 5e^{-3t}$ (Stewart finds it by separation of variables in Section 9.3, Example 4, in the text of [[§59 Separable Equations|§59]], and again as a linear equation in [[§61 Linear Equations#^ex-61-4|Example §61.4]]; check: $I' = 15e^{-3t} = 15 - 3(5 - 5e^{-3t})$ and $I(0) = 0$), so $I(0.5) = 5 - 5e^{-1.5} \approx 3.88$ A. Here the estimate is too large: this solution curve is concave downward ($I'' = -45e^{-3t} < 0$), so each tangent-line step overshoots it. The error, about $0.28$ A, shrinks as $h$ decreases.
 >
 > *Stewart: Example 9.2.4*
 

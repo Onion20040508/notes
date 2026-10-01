@@ -86,7 +86,7 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 
 ^thm-11-2
 
-*Stewart omits the proof ("it can be proved that…"). The ε–δ proofs of the Limit Laws ([[§8 Calculating Limits Using the Limit Laws|§8]]) carry over word for word with "$x > N$" in place of "$0 < |x - a| < \delta$". In 451 the laws for every kind of limit follow from the limit theorems for sequences: [[§20 Limits of Functions#^rem-20-2|451 §20, Remark after Thm. §20.2]].*
+*Stewart omits the proof ("it can be proved that…"). The ε–δ proofs of the Limit Laws ([[§8 Calculating Limits Using the Limit Laws#^pf-8-1|proof of Theorem §8.1]]) carry over word for word with "$x > N$" in place of "$0 < |x - a| < \delta$". In 451 the laws for every kind of limit follow from the limit theorems for sequences: [[§20 Limits of Functions#^rem-20-2|451 §20, Remark after Thm. §20.2]].*
 
 > [!theorem] Theorem §11.3: Reciprocal Powers Tend to Zero
 > If $r > 0$ is a rational number, then
@@ -191,14 +191,14 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 > \lim_{x \to -\infty} e^x = 0, \qquad \lim_{x \to \infty} e^x = \infty .
 > $$
 >
-> So the $x$-axis is a horizontal asymptote of $y = e^x$ (on the left). The same holds for every exponential function $b^x$ with $b > 1$. The values of $e^x$ approach $0$ very rapidly: $e^{-5} \approx 0.00674$, $e^{-10} \approx 0.00005$. And as $x \to \infty$, $e^x$ grows much faster than $x^3$ (made precise in [[§28 Indeterminate Forms and L'Hospital's Rule|§28]]).
+> So the $x$-axis is a horizontal asymptote of $y = e^x$ (on the left). The same holds for every exponential function $b^x$ with $b > 1$. The values of $e^x$ approach $0$ very rapidly: $e^{-5} \approx 0.00674$, $e^{-10} \approx 0.00005$. And as $x \to \infty$, $e^x$ grows much faster than $x^3$ (made precise with l'Hospital's Rule in [[§28 Indeterminate Forms and L'Hospital's Rule#^ex-28-1|Example §28.1]](b)).
 >
 > *Stewart: 2.6, Equation 6, and text*
 
 ^thm-11-4
 
 > [!proof]+ Proof
-> Stewart reads both limits off the graph and a table of values. Here is a proof from two facts about $e$ ([[§4 Exponential Functions|§4]]): $e > 2$, and $e^x$ is increasing because $e > 1$. Also $2^n > n$ for every positive integer $n$ (by induction: $2^1 > 1$, and $2^{n+1} = 2 \cdot 2^n > 2n \ge n + 1$).
+> Stewart reads both limits off the graph and a table of values. Here is a proof from two facts about $e$ ([[§4 Exponential Functions#^def-4-4|Definition §4.4]], [[§4 Exponential Functions#^prop-4-2|Proposition §4.2]]): $e > 2$, and $e^x$ is increasing because $e > 1$. Also $2^n > n$ for every positive integer $n$ (by induction: $2^1 > 1$, and $2^{n+1} = 2 \cdot 2^n > 2n \ge n + 1$).
 >
 > **As $x \to -\infty$.** Let $\varepsilon > 0$ and choose an integer $n > 1/\varepsilon$. If $x < -n$, then
 >
@@ -328,7 +328,7 @@ Infinite limits at infinity, together with the intercepts, give a quick rough sk
 ^def-11-4
 
 > [!remark] Remark: What the Definition Says
-> The values of $f(x)$ can be made to lie within any distance $\varepsilon$ of $L$ by taking $x$ larger than some $N$, where $N$ depends on $\varepsilon$. On the graph: to the right of the vertical line $x = N$, the curve stays in the horizontal band between $y = L - \varepsilon$ and $y = L + \varepsilon$. This must hold however small $\varepsilon$ is, and a smaller $\varepsilon$ usually requires a larger $N$. It is the same game as the ε–δ definition of [[§9 The Precise Definition of a Limit|§9]], with "$x$ close to $a$" replaced by "$x$ beyond $N$". Stewart's Example 2.6.13 finds, from a graph, that $N = 7$ works for the limit of Example §11.1 with $\varepsilon = 0.1$; the figure below does it algebraically.
+> The values of $f(x)$ can be made to lie within any distance $\varepsilon$ of $L$ by taking $x$ larger than some $N$, where $N$ depends on $\varepsilon$. On the graph: to the right of the vertical line $x = N$, the curve stays in the horizontal band between $y = L - \varepsilon$ and $y = L + \varepsilon$. This must hold however small $\varepsilon$ is, and a smaller $\varepsilon$ usually requires a larger $N$. It is the same game as the ε–δ definition of [[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]], with "$x$ close to $a$" replaced by "$x$ beyond $N$". Stewart's Example 2.6.13 finds, from a graph, that $N = 7$ works for the limit of Example §11.1 with $\varepsilon = 0.1$; the figure below does it algebraically.
 
 ^rem-11-3
 

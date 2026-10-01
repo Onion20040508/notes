@@ -181,7 +181,7 @@ which points in the same direction as the position vector: outward from the sphe
 > [!example] Example §113.2: Choosing the Normal for a Given Orientation
 > Find a normal vector for each surface with the given orientation.
 >
-> **(a)** The hemisphere of radius $2$ on the right side of the $xz$-plane ($x^2 + y^2 + z^2 = 4$, $y \ge 0$), outward. The gradient of $x^2 + y^2 + z^2$ is $\langle 2x, 2y, 2z \rangle$, normal to the sphere and pointing away from the origin, so $\mathbf{n} = \frac12\langle x, y, z \rangle$ (unit, outward), as for the sphere above.
+> **(a)** The hemisphere of radius $2$ on the right side of the $xz$-plane ($x^2 + y^2 + z^2 = 4$, $y \ge 0$), outward. The gradient of $x^2 + y^2 + z^2$ is $\langle 2x, 2y, 2z \rangle$, normal to the sphere and pointing away from the origin, so $\mathbf{n} = \frac12\langle x, y, z \rangle$ (unit, outward), as for the sphere above. (The posted solution writes the hemisphere as the graph $y = \sqrt{4 - x^2 - z^2}$ and uses $\big\langle \frac{x}{\sqrt{4 - x^2 - z^2}},\ 1,\ \frac{z}{\sqrt{4 - x^2 - z^2}} \big\rangle$, which is this vector times $2/y$.)
 >
 > **(b)** The cylinder $\mathbf{r}(u, v) = \langle 2\cos u, 2\sin u, v \rangle$, $0 \le u \le 2\pi$, $-1 \le v \le 1$, inward. Here $\mathbf{r}_u = \langle -2\sin u, 2\cos u, 0 \rangle$, $\mathbf{r}_v = \langle 0, 0, 1 \rangle$ and
 >

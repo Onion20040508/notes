@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Appendix E.*
 
-Sigma notation writes a long sum compactly, and three rules (constants factor out, sums split) let one manipulate it like an integral. The closed forms for $\sum 1$, $\sum i$, $\sum i^2$ and $\sum i^3$, proved here by Gauss's pairing trick, a telescoping sum and mathematical induction, are exactly what is needed to evaluate limits of Riemann sums by hand in Chapter 5 ([[§34 The Area and Distance Problems|§34]], [[§35 The Definite Integral|§35]]); the last example is such a limit.
+Sigma notation writes a long sum compactly, and three rules (constants factor out, sums split) let one manipulate it like an integral. The closed forms for $\sum 1$, $\sum i$, $\sum i^2$ and $\sum i^3$, proved here by Gauss's pairing trick, a telescoping sum and mathematical induction, are exactly what is needed to evaluate limits of Riemann sums by hand in Chapter 5 ([[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]], [[§35 The Definite Integral#^thm-35-2|Theorem §35.2]]); the last example is such a limit.
 
 > [!definition] Definition §120.1: Sigma Notation
 > If $a_m, a_{m+1}, \ldots, a_n$ are real numbers and $m$ and $n$ are integers with $m \le n$, then
@@ -81,6 +81,8 @@ Sigma notation writes a long sum compactly, and three rules (constants factor ou
 ^pf-120-1
 
 *Uses:* [[§120 Sigma Notation#^def-120-1|Def. §120.1]]
+
+Stewart states the same three rules again in 5.2 (Equations 9–11), where they are [[§35 The Definite Integral#^thm-35-3|Theorem §35.3]].
 
 > [!definition] Definition §120.2: Principle of Mathematical Induction
 > Let $S_n$ be a statement involving the positive integer $n$. Suppose that
@@ -197,7 +199,7 @@ Sigma notation writes a long sum compactly, and three rules (constants factor ou
 > \end{aligned}
 > $$
 >
-> This is a right-endpoint Riemann sum for $\int_0^3 \big(\frac{x^2}{9} + 1\big)\,dx = 1 + 3 = 4$ (with $x_i = 3i/n$, $\Delta x = 3/n$), the kind of calculation that computes areas in [[§34 The Area and Distance Problems|§34]].
+> This is a right-endpoint Riemann sum for $\int_0^3 \big(\frac{x^2}{9} + 1\big)\,dx = 1 + 3 = 4$ (with $x_i = 3i/n$, $\Delta x = 3/n$), the kind of calculation that computes areas by [[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]] and integrals by [[§35 The Definite Integral#^thm-35-2|Theorem §35.2]].
 >
 > *Stewart: Appendix E, Example 7*
 

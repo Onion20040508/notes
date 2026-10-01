@@ -204,6 +204,8 @@ If $b > 0$ and $b \ne 1$, the exponential function $f(x) = b^x$ is either increa
 
 ^def-5-3
 
+*Rigorous construction: [[§121 The Logarithm Defined as an Integral#^def-121-6|Definition §121.6]] (Appendix G).*
+
 > [!theorem] Theorem §5.4: Properties of the Logarithmic Function
 > Let $b > 0$, $b \ne 1$.
 > 1. **Cancellation equations:**
@@ -260,6 +262,8 @@ The following properties of logarithms come from the Laws of Exponents of [[§4 
 
 *Uses:* [[§5 Inverse Functions and Logarithms#^def-5-3|Def. §5.3]], [[§4 Exponential Functions#^thm-4-1|§4.1]]
 
+*Appendix G proves the laws for $\ln$ from the integral ([[§121 The Logarithm Defined as an Integral#^thm-121-2|Theorem §121.2]], with Law 3 for real $r$ in [[§121 The Logarithm Defined as an Integral#^thm-121-8|Theorem §121.8]]) and for $\log_b$ by change of base ([[§121 The Logarithm Defined as an Integral#^thm-121-11|Theorem §121.11]]).*
+
 > [!example] Example §5.3: Expanding and Combining Logarithms
 > **(a)** Evaluate $\log_2 80 - \log_2 5$. By Law 2,
 >
@@ -300,6 +304,8 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 
 ^def-5-4
 
+*Appendix G develops the natural logarithm the other way round, rigorously: $\ln x = \int_1^x dt/t$ ([[§121 The Logarithm Defined as an Integral#^def-121-1|Definition §121.1]]), whose laws ([[§121 The Logarithm Defined as an Integral#^thm-121-2|Theorem §121.2]]) are proved by differentiation; $e$ is defined by $\ln e = 1$ ([[§121 The Logarithm Defined as an Integral#^def-121-2|Definition §121.2]]), $e^x$ as the inverse of $\ln$ ([[§121 The Logarithm Defined as an Integral#^def-121-3|Definition §121.3]]), and $\log_b$ as the inverse of $b^x$ ([[§121 The Logarithm Defined as an Integral#^def-121-6|Definition §121.6]]). This supplies the existence statements that Sections 1.4 and 1.5 take on trust.*
+
 > [!remark]- Remark: Notation for Logarithms
 > Most calculus and science textbooks, and calculators, write $\ln x$ for the natural logarithm and $\log x$ for the "common logarithm" $\log_{10} x$. In more advanced mathematical and scientific literature and in computer languages, $\log x$ usually denotes the natural logarithm (the analysis notes, 451, write $\log$ this way).
 
@@ -330,6 +336,8 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 ^pf-5-6
 
 *Uses:* [[§5 Inverse Functions and Logarithms#^def-5-3|Def. §5.3]], [[§5 Inverse Functions and Logarithms#^thm-5-4|§5.4]], [[§5 Inverse Functions and Logarithms#^def-5-4|Def. §5.4]]
+
+*In Appendix G, (8) and (9) define $e^x$ as the inverse of the integral logarithm: [[§121 The Logarithm Defined as an Integral#^def-121-3|Definition §121.3]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Definition §121.4]].*
 
 > [!theorem] Proposition §5.7: Powers in Exponential Form
 > For $x > 0$ and every real number $r$,
@@ -381,6 +389,8 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 
 *Uses:* [[§5 Inverse Functions and Logarithms#^def-5-3|Def. §5.3]], [[§5 Inverse Functions and Logarithms#^thm-5-4|§5.4]], [[§5 Inverse Functions and Logarithms#^thm-5-5|§5.5]]
 
+*The same formula from the integral definition of $\ln$ in Appendix G: [[§121 The Logarithm Defined as an Integral#^thm-121-11|Theorem §121.11]].*
+
 > [!example] Example §5.4: Solving Equations with ln
 > **(a)** Find $x$ if $\ln x = 5$.
 >
@@ -417,9 +427,9 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 
 ^prop-5-9
 
-*The first two statements are Theorem §5.4 with $b = e$ (since $e > 1$). The asymptote and the comparison with powers Stewart reads off graphs; they are proved as limits in [[§11 Limits at Infinity; Horizontal Asymptotes|§11]] and, with l'Hospital's Rule, in [[§28 Indeterminate Forms and L'Hospital's Rule|§28]].*
+*The first two statements are Theorem §5.4 with $b = e$ (since $e > 1$). The asymptote and the comparison with powers Stewart reads off graphs; they are proved as limits: $\lim_{x \to 0^+} \ln x = -\infty$ in [[§7 The Limit of a Function#^thm-7-1|Theorem §7.1]], and $\ln x / \sqrt{x} \to 0$ as $x \to \infty$, with l'Hospital's Rule, in [[§28 Indeterminate Forms and L'Hospital's Rule#^ex-28-1|Example §28.1]](c). Appendix G proves the shape and the limits of $\ln$ from the integral: [[§121 The Logarithm Defined as an Integral#^thm-121-3|Theorem §121.3]].*
 
-The graphs of other logarithmic functions follow by the transformations of [[§3 New Functions from Old Functions|§3]]. For instance (Stewart, Example 1.5.12), $y = \ln(x - 2) - 1$ is $y = \ln x$ shifted $2$ units right and $1$ unit down: it has the vertical asymptote $x = 2$ and passes through $(3, -1)$, the image of $(1, 0)$.
+The graphs of other logarithmic functions follow by the transformations of [[§3 New Functions from Old Functions#^thm-3-1|Theorem §3.1]]. For instance (Stewart, Example 1.5.12), $y = \ln(x - 2) - 1$ is $y = \ln x$ shifted $2$ units right and $1$ unit down: it has the vertical asymptote $x = 2$ and passes through $(3, -1)$, the image of $(1, 0)$.
 
 ## Inverse Trigonometric Functions
 
@@ -492,7 +502,7 @@ The trigonometric functions are not one-to-one (they are periodic), so they have
 *Uses:* [[§5 Inverse Functions and Logarithms#^def-5-2|Def. §5.2]], [[§5 Inverse Functions and Logarithms#^thm-5-2|§5.2]], [[§5 Inverse Functions and Logarithms#^thm-5-3|§5.3]], [[§5 Inverse Functions and Logarithms#^def-5-5|Def. §5.5]], [[§5 Inverse Functions and Logarithms#^def-5-6|Def. §5.6]], [[§5 Inverse Functions and Logarithms#^def-5-7|Def. §5.7]]
 
 ![[m233-5-2.svg]]
-*Each inverse trigonometric function (red) is the reflection about $y = x$ (green, dashed) of the restricted trigonometric function (gray). (a) $\sin^{-1}$ from sine on $[-\pi/2, \pi/2]$: domain $[-1, 1]$, range $[-\pi/2, \pi/2]$. (b) $\cos^{-1}$ from cosine on $[0, \pi]$: domain $[-1, 1]$, range $[0, \pi]$, decreasing. (c) $\tan^{-1}$ from tangent on $(-\pi/2, \pi/2)$: domain $\mathbb{R}$; the vertical asymptotes $x = \pm\pi/2$ of tangent become the horizontal asymptotes $y = \pm\pi/2$ (dashed).*
+*Each inverse trigonometric function (red) is the reflection about $y = x$ (green, dashed) of the restricted trigonometric function (gray). (a) $\sin^{-1}$ from sine on $[-\pi/2, \pi/2]$: domain $[-1, 1]$, range $[-\pi/2, \pi/2]$. (b) $\cos^{-1}$ from cosine on $[0, \pi]$: domain $[-1, 1]$, range $[0, \pi]$, decreasing. (c) $\tan^{-1}$ from tangent on $(-\pi/2, \pi/2)$: domain $\mathbb{R}$; the vertical asymptotes $x = \pm\pi/2$ of tangent (gray, dashed) become the horizontal asymptotes $y = \pm\pi/2$ (red, dashed).*
 
 The remaining inverse trigonometric functions are used less often.
 

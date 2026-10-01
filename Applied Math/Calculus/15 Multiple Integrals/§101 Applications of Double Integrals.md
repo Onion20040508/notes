@@ -15,7 +15,7 @@ Volume is one application of double integrals. This section gives the physical a
 
 ## Density and Mass
 
-In [[§54 Applications to Physics and Engineering|§54]] single integrals gave the moments and center of mass of a thin plate (lamina) of constant density. With double integrals the density may vary.
+In [[§54 Applications to Physics and Engineering#^thm-54-5|Theorem §54.5]] single integrals gave the moments and center of mass of a thin plate (lamina) of constant density. With double integrals the density may vary.
 
 > [!definition] Definition §101.1: Density and Mass of a Lamina
 > Suppose a lamina occupies a region $D$ of the $xy$-plane and its **density** (in units of mass per unit area) at a point $(x, y)$ of $D$ is $\rho(x, y)$, where $\rho$ is continuous on $D$. That is,
@@ -49,7 +49,7 @@ In [[§54 Applications to Physics and Engineering|§54]] single integrals gave t
 
 ## Moments and Centers of Mass
 
-The moment of a particle about an axis is its mass times its directed distance from the axis ([[§54 Applications to Physics and Engineering|§54]]). The mass of $R_{ij}$ is about $\rho(x_{ij}^*, y_{ij}^*)\,\Delta A$, so its moment about the $x$-axis is about $[\rho(x_{ij}^*, y_{ij}^*)\,\Delta A]\,y_{ij}^*$.
+The moment of a particle about an axis is its mass times its directed distance from the axis ([[§54 Applications to Physics and Engineering#^def-54-3|Definition §54.3]]). The mass of $R_{ij}$ is about $\rho(x_{ij}^*, y_{ij}^*)\,\Delta A$, so its moment about the $x$-axis is about $[\rho(x_{ij}^*, y_{ij}^*)\,\Delta A]\,y_{ij}^*$.
 
 > [!definition] Definition §101.3: Moments and Center of Mass
 > The **moment** of the lamina **about the $x$-axis** and **about the $y$-axis** are
@@ -123,7 +123,7 @@ Physically, the lamina behaves as if its entire mass were concentrated at its ce
 > \bar y = \frac1m \iint_D y\rho\,dA = \frac{3}{K\pi a^3} \int_0^{\pi} \int_0^a (r\sin\theta)(Kr)\,r\,dr\,d\theta = \frac{3}{\pi a^3} \int_0^{\pi} \sin\theta\,d\theta \int_0^a r^3\,dr = \frac{3}{\pi a^3} \cdot 2 \cdot \frac{a^4}{4} = \frac{3a}{2\pi} .
 > $$
 >
-> The center of mass is $\big(0, \frac{3a}{2\pi}\big)$. For the same semicircle with uniform density the center of mass is $\big(0, \frac{4a}{3\pi}\big)$ (Stewart's Example 8.3.4, [[§54 Applications to Physics and Engineering|§54]]); here the density grows toward the rim and the center of mass is higher.
+> The center of mass is $\big(0, \frac{3a}{2\pi}\big)$. For the same semicircle with uniform density the center of mass is $\big(0, \frac{4a}{3\pi}\big)$ (Stewart's Example 8.3.4, [[§54 Applications to Physics and Engineering#^ex-54-3|Example §54.3]]); here the density grows toward the rim and the center of mass is higher.
 >
 > *Stewart: Example 15.4.3*
 
@@ -221,7 +221,7 @@ The moment of inertia plays the same role in rotational motion that mass plays i
 
 ## Probability
 
-A probability density function $f$ of one continuous random variable $X$ satisfies $f \ge 0$, $\int_{-\infty}^{\infty} f(x)\,dx = 1$, and $P(a \le X \le b) = \int_a^b f(x)\,dx$ ([[§56 Probability|§56]]). For two random variables, such as the lifetimes of two components of a machine, or the height and weight of a person chosen at random, the density is a function of two variables.
+A probability density function $f$ of one continuous random variable $X$ satisfies $f \ge 0$, $\int_{-\infty}^{\infty} f(x)\,dx = 1$, and $P(a \le X \le b) = \int_a^b f(x)\,dx$ ([[§56 Probability#^def-56-2|Definition §56.2]]). For two random variables, such as the lifetimes of two components of a machine, or the height and weight of a person chosen at random, the density is a function of two variables.
 
 > [!definition] Definition §101.6: Joint Density Function
 > The **joint density function** of two continuous random variables $X$ and $Y$ is a function $f$ of two variables such that the probability that $(X, Y)$ lies in a region $D$ is
@@ -236,7 +236,7 @@ A probability density function $f$ of one continuous random variable $X$ satisfi
 > f(x, y) \ge 0 , \qquad \iint_{\mathbb{R}^2} f(x, y)\,dA = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f(x, y)\,dx\,dy = 1 ,
 > $$
 >
-> where the integral over $\mathbb{R}^2$ is an improper integral, the limit of the integrals over expanding disks or squares (as in Stewart's Exercise 15.3.50; compare [[§51 Improper Integrals|§51]]).
+> where the integral over $\mathbb{R}^2$ is an improper integral, the limit of the integrals over expanding disks or squares (as in Stewart's Exercise 15.3.50; compare [[§51 Improper Integrals#^def-51-1|Definition §51.1]]).
 >
 > *Stewart: 15.4 (text)*
 
@@ -286,7 +286,7 @@ A probability density function $f$ of one continuous random variable $X$ satisfi
 > [!example] Example §101.5: Two Independent Waiting Times
 > The manager of a movie theater determines that the average time moviegoers wait in line to buy a ticket is $10$ minutes and the average time they wait to buy popcorn is $5$ minutes. Assuming that the waiting times are independent, find the probability that a moviegoer waits a total of less than $20$ minutes before taking his or her seat.
 >
-> Model the waiting times $X$ (ticket) and $Y$ (popcorn) by exponential density functions with means $\mu = 10$ and $\mu = 5$ ([[§56 Probability|§56]]: $f(t) = \mu^{-1}e^{-t/\mu}$ for $t \ge 0$, $0$ for $t < 0$):
+> Model the waiting times $X$ (ticket) and $Y$ (popcorn) by exponential density functions with means $\mu = 10$ and $\mu = 5$ ([[§56 Probability#^def-56-3|Definition §56.3]] with $c = 1/\mu$, which has mean $\mu$ by [[§56 Probability#^ex-56-3|Example §56.3]]: $f(t) = \mu^{-1}e^{-t/\mu}$ for $t \ge 0$, $0$ for $t < 0$):
 >
 > $$
 > f_1(x) = \begin{cases} 0 & x < 0 \\ \frac{1}{10}e^{-x/10} & x \ge 0 \end{cases} \qquad
@@ -318,7 +318,7 @@ A probability density function $f$ of one continuous random variable $X$ satisfi
 > \mu_1 = \iint_{\mathbb{R}^2} x f(x, y)\,dA , \qquad \mu_2 = \iint_{\mathbb{R}^2} y f(x, y)\,dA . \qquad (11)
 > $$
 >
-> This extends the mean $\mu = \int_{-\infty}^{\infty} x f(x)\,dx$ of one random variable ([[§56 Probability|§56]]).
+> This extends the mean $\mu = \int_{-\infty}^{\infty} x f(x)\,dx$ of one random variable ([[§56 Probability#^def-56-4|Definition §56.4]]).
 >
 > *Stewart: 15.4, Equation 11*
 

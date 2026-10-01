@@ -296,7 +296,7 @@ $$
 > [!example] Example §110.4: Sectors of Annuli
 > **(a) A semiannulus.** Evaluate $\displaystyle\oint_C y^2\,dx + 3xy\,dy$, where $C$ is the boundary of the semiannular region $D$ in the upper half-plane between the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 4$.
 >
-> $D$ is not simple, but the $y$-axis divides it into two simple regions, so Theorem §110.3 applies. In polar coordinates $D = \{(r, \theta) \mid 1 \le r \le 2,\ 0 \le \theta \le \pi\}$, and
+> $D$ is not simple, but the $y$-axis divides it into two simple regions, so [[§110 Green's Theorem#^thm-110-3|Theorem §110.3]] applies. In polar coordinates $D = \{(r, \theta) \mid 1 \le r \le 2,\ 0 \le \theta \le \pi\}$, and
 >
 > $$
 > \frac{\partial}{\partial x}(3xy) - \frac{\partial}{\partial y}(y^2) = 3y - 2y = y .
@@ -438,7 +438,7 @@ Green's Theorem supplies the proof, promised in §109 after [[§109 The Fundamen
 
 ^pf-110-5
 
-*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-5|Def. §109.5]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|§109.2]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|§109.3]]
+*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§108 Line Integrals#^thm-108-6|§108.6]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-5|Def. §109.5]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|§109.2]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|§109.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment in the language of forms: on a star-shaped domain every closed form is exact, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]] ([[Poincaré Lemma]]). [[§110 Green's Theorem#^ex-110-5|Example §110.5]] shows that some hypothesis on the region is needed.

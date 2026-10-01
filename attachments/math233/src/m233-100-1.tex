@@ -16,12 +16,12 @@
   \draw[figR, thin] (47.5:2.575) -- (3.3,2.75) node[right] {$(r_i^*,\theta_j^*)$};
   % rays to origin (dashed) and angle labels
   \draw[black!35, dashed] (0,0) -- (\al:\ra) (0,0) -- (\be:\ra) (0,0) -- (\ti:\ri) (0,0) -- (\tj:\ri);
-  \draw[black!60] (\al:0.5) arc (\al:\be:0.5); \node[left] at (80:0.62) {$\beta-\alpha$};
+  \draw[black!60] (\al:0.5) arc (\al:\be:0.5); \node[fill=white, inner sep=0.6pt] at (47:0.8) {$\beta-\alpha$};
   \draw[figR!80!black] (\ti:1.6) arc (\ti:\tj:1.6); \node[figR!80!black, left] at (47.5:1.55) {$\Delta\theta$};
   % labels for sides
   \draw[figB, thick, |-|] ($(\tj:\ri)+(143:0.18)$) -- ($(\tj:\rj)+(143:0.18)$) node[midway, above left] {$\Delta r$};
-  \draw[figB, thick] (\ti:\rj) arc (\ti:\tj:\rj);
-  \draw[figB, thin] (45:2.85) -- (3.6,2.25) node[right] {$r_i^*\Delta\theta$};
+  \draw[figB, thick, densely dashed] (\ti:2.575) arc (\ti:\tj:2.575);
+  \draw[figB, thin] (44:2.575) -- (3.6,2.25) node[right] {$r_i^*\Delta\theta$};
   \node[figG!60!black, right] at (\al:\rb) {$\theta=\alpha$};
   \node[figG!60!black, above] at (\be:\rb) {$\theta=\beta$};
   \node[figG!60!black, below right] at (\al:\ra) {$r=a$};

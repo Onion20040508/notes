@@ -73,13 +73,13 @@ The calculus of vector functions is one-variable calculus done in each component
 
 ^pf-87-1
 
-*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^def-87-1|Def. §87.1]], [[§86 Vector Functions and Space Curves#^def-86-2|Def. §86.2]], [[§81 Vectors#^thm-81-4|§81.4]], derivative of a function ([[§13 The Derivative as a Function|§13]])
+*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^def-87-1|Def. §87.1]], [[§86 Vector Functions and Space Curves#^def-86-2|Def. §86.2]], [[§81 Vectors#^thm-81-4|§81.4]], [[§13 The Derivative as a Function#^def-13-1|Def. §13.1]]
 
 > [!remark]- Connections
 > - For a plane curve this is the tangent vector $(x'(t), y'(t))$ of [[§16 Line Integrals and Green's Theorem#^def-16-3|452 Def. §16.3]]. In 452's language, $\mathbf{r}'(t)$ is the Jacobian (a $3 \times 1$ matrix) of $\mathbf{r}: \mathbb{R} \to \mathbb{R}^3$, and Theorem §87.1 says it is computed entry by entry.
 
 > [!definition] Definition §87.3: Second Derivative
-> The **second derivative** of a vector function $\mathbf{r}$ is the derivative of $\mathbf{r}'$: $\mathbf{r}'' = (\mathbf{r}')'$. In [[§89 Motion in Space꞉ Velocity and Acceleration|§89]], $\mathbf{r}'(t)$ and $\mathbf{r}''(t)$ are the velocity and acceleration of a particle with position $\mathbf{r}(t)$ at time $t$.
+> The **second derivative** of a vector function $\mathbf{r}$ is the derivative of $\mathbf{r}'$: $\mathbf{r}'' = (\mathbf{r}')'$. In [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Definition §89.1]], $\mathbf{r}'(t)$ and $\mathbf{r}''(t)$ are the velocity and acceleration of a particle with position $\mathbf{r}(t)$ at time $t$.
 >
 > *Stewart: 13.2 (text)*
 
@@ -153,7 +153,7 @@ The calculus of vector functions is one-variable calculus done in each component
 ^thm-87-2
 
 > [!proof]+ Proof
-> Stewart proves Formula 4 and leaves the others as exercises. Write $\mathbf{u} = \langle f_1, f_2, f_3 \rangle$ and $\mathbf{v} = \langle g_1, g_2, g_3 \rangle$. By Theorem §87.1 every formula can be checked component by component using the rules for real-valued functions ([[§14 Derivatives of Polynomials and Exponential Functions|§14]], [[§15 The Product and Quotient Rules|§15]], [[§17 The Chain Rule|§17]]).
+> Stewart proves Formula 4 and leaves the others as exercises. Write $\mathbf{u} = \langle f_1, f_2, f_3 \rangle$ and $\mathbf{v} = \langle g_1, g_2, g_3 \rangle$. By Theorem §87.1 every formula can be checked component by component using the rules for real-valued functions: the Sum and Constant Multiple Rules ([[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|Theorem §14.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|Theorem §14.3]]), the Product Rule ([[§15 The Product and Quotient Rules#^thm-15-1|Theorem §15.1]]) and the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]).
 >
 > **1, 2.** The $i$-th component of $\mathbf{u} + \mathbf{v}$ is $f_i + g_i$, with derivative $f_i' + g_i'$; that of $c\mathbf{u}$ is $cf_i$, with derivative $cf_i'$ (Sum and Constant Multiple Rules).
 >
@@ -177,7 +177,7 @@ The calculus of vector functions is one-variable calculus done in each component
 
 ^pf-87-2
 
-*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|§87.1]], [[§82 The Dot Product#^def-82-1|Def. §82.1]], [[§83 The Cross Product#^def-83-1|Def. §83.1]], Product Rule ([[§15 The Product and Quotient Rules|§15]]), Chain Rule ([[§17 The Chain Rule|§17]])
+*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|§87.1]], [[§82 The Dot Product#^def-82-1|Def. §82.1]], [[§83 The Cross Product#^def-83-1|Def. §83.1]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|§14.3]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|§14.4]], [[§15 The Product and Quotient Rules#^thm-15-1|§15.1]], [[§17 The Chain Rule#^thm-17-2|§17.2]]
 
 > [!remark]- Connections
 > - Componentwise, these are the sum, product and chain rules of [[§28 Basic Properties of the Derivative#^thm-28-2|451 Thm. §28.2]] and [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]]; Formula 6 is the special case of the multivariable chain rule [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]] for $\mathbb{R} \to \mathbb{R} \to \mathbb{R}^3$.
@@ -203,7 +203,7 @@ The calculus of vector functions is one-variable calculus done in each component
 *Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§82 The Dot Product#^thm-82-1|§82.1]], [[§82 The Dot Product#^thm-82-4|§82.4]]
 
 > [!remark] Remark: Curves on a Sphere
-> Geometrically, Theorem §87.3 says that if a curve lies on a sphere centered at the origin, its tangent vector $\mathbf{r}'(t)$ is always perpendicular to the position vector $\mathbf{r}(t)$, the radius of the sphere. The most important application is to the unit tangent vector: $|\mathbf{T}(t)| = 1$, so $\mathbf{T}'(t) \perp \mathbf{T}(t)$, which is how the normal vector is defined in [[§88 Arc Length and Curvature|§88]].
+> Geometrically, Theorem §87.3 says that if a curve lies on a sphere centered at the origin, its tangent vector $\mathbf{r}'(t)$ is always perpendicular to the position vector $\mathbf{r}(t)$, the radius of the sphere. The most important application is to the unit tangent vector: $|\mathbf{T}(t)| = 1$, so $\mathbf{T}'(t) \perp \mathbf{T}(t)$, which is how the unit normal vector is defined in [[§88 Arc Length and Curvature#^def-88-5|Definition §88.5]].
 
 ^rem-87-2
 
@@ -225,7 +225,7 @@ The calculus of vector functions is one-variable calculus done in each component
 ## Integrals
 
 > [!definition] Definition §87.4: Integral of a Vector Function
-> The **definite integral** of a continuous vector function $\mathbf{r}(t)$ is defined as for real-valued functions ([[§35 The Definite Integral|§35]]), except that the integral is a vector:
+> The **definite integral** of a continuous vector function $\mathbf{r}(t)$ is defined as for real-valued functions ([[§35 The Definite Integral#^def-35-1|Definition §35.1]]), except that the integral is a vector:
 >
 > $$
 > \int_a^b \mathbf{r}(t)\,dt = \lim_{n \to \infty} \sum_{i=1}^n \mathbf{r}(t_i^*)\,\Delta t .
@@ -255,11 +255,11 @@ The calculus of vector functions is one-variable calculus done in each component
 > \sum_{i=1}^n \mathbf{r}(t_i^*)\,\Delta t = \left( \sum_{i=1}^n f(t_i^*)\,\Delta t \right)\mathbf{i} + \left( \sum_{i=1}^n g(t_i^*)\,\Delta t \right)\mathbf{j} + \left( \sum_{i=1}^n h(t_i^*)\,\Delta t \right)\mathbf{k} .
 > $$
 >
-> Since $f$, $g$, $h$ are continuous, the three component sums converge to $\int_a^b f$, $\int_a^b g$, $\int_a^b h$ as $n \to \infty$, and by Definition §86.2 the limit of the vector is the vector of the limits.
+> Since $f$, $g$, $h$ are continuous, they are integrable ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]]), so the three component sums converge to $\int_a^b f$, $\int_a^b g$, $\int_a^b h$ as $n \to \infty$, and by Definition §86.2 the limit of the vector is the vector of the limits.
 
 ^pf-87-4
 
-*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^def-87-4|Def. §87.4]], [[§86 Vector Functions and Space Curves#^def-86-2|Def. §86.2]], definite integral ([[§35 The Definite Integral|§35]])
+*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^def-87-4|Def. §87.4]], [[§86 Vector Functions and Space Curves#^def-86-2|Def. §86.2]], [[§35 The Definite Integral#^def-35-1|Def. §35.1]], [[§35 The Definite Integral#^thm-35-1|§35.1]]
 
 > [!theorem] Theorem §87.5: Fundamental Theorem of Calculus for Vector Functions
 > If $\mathbf{r}$ is continuous on $[a, b]$ and $\mathbf{R}$ is an antiderivative of $\mathbf{r}$, that is, $\mathbf{R}'(t) = \mathbf{r}(t)$, then
@@ -273,7 +273,7 @@ The calculus of vector functions is one-variable calculus done in each component
 ^thm-87-5
 
 > [!proof]+ Proof
-> Write $\mathbf{R} = \langle F, G, H \rangle$. By Theorem §87.1, $\mathbf{R}' = \mathbf{r}$ means $F' = f$, $G' = g$, $H' = h$. By Proposition §87.4 and Part 2 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]) in each component,
+> Write $\mathbf{R} = \langle F, G, H \rangle$. By Theorem §87.1, $\mathbf{R}' = \mathbf{r}$ means $F' = f$, $G' = g$, $H' = h$. By Proposition §87.4 and Part 2 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-2|Theorem §36.2]]) in each component,
 >
 > $$
 > \int_a^b \mathbf{r}(t)\,dt = \big\langle F(b) - F(a),\ G(b) - G(a),\ H(b) - H(a) \big\rangle = \mathbf{R}(b) - \mathbf{R}(a) .
@@ -281,7 +281,7 @@ The calculus of vector functions is one-variable calculus done in each component
 
 ^pf-87-5
 
-*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|§87.1]], [[§87 Derivatives and Integrals of Vector Functions#^prop-87-4|§87.4]], FTC Part 2 ([[§36 The Fundamental Theorem of Calculus|§36]])
+*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|§87.1]], [[§87 Derivatives and Integrals of Vector Functions#^prop-87-4|§87.4]], [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]]
 
 > [!remark]- Connections
 > - Componentwise this is [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (Stewart's Part 2 of the FTC).

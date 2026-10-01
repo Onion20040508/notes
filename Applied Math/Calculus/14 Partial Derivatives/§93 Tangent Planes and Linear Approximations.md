@@ -9,9 +9,9 @@ tags: [calculus, math233]
 ---
 ← [[§92 Partial Derivatives]] · ↑ [[· 14 Partial Derivatives]] · [[§94 The Chain Rule]] →
 
-*Stewart, Section 14.4 · MATH 233 (UMass, Spring 2023): Midterm 1 Practice Questions (Q27), Practice Exam 1 (Q1(e)).*
+*Stewart, Section 14.4 · MATH 233 (UMass, Spring 2023): Midterm 1 Practice Questions (Q27), Practice Exam 1 (Q1(e), Q4(a)).*
 
-As we zoom in toward a point on the graph of a differentiable function of one variable, the graph becomes indistinguishable from its tangent line ([[§23 Linear Approximations and Differentials|§23]]). One dimension up, a surface $z = f(x, y)$ that is the graph of a differentiable function looks more and more like a plane, its tangent plane, and $f$ is approximated near the point by a linear function of two variables. The tangent plane is built from the two partial derivatives. But partial derivatives alone do not guarantee that the approximation is good, so this section defines *differentiability* for functions of two variables and gives the practical test for it: continuous partial derivatives. Differentials then package the linear approximation for estimating changes and errors.
+As we zoom in toward a point on the graph of a differentiable function of one variable, the graph becomes indistinguishable from its tangent line ([[§23 Linear Approximations and Differentials#^def-23-1|Definition §23.1]]). One dimension up, a surface $z = f(x, y)$ that is the graph of a differentiable function looks more and more like a plane, its tangent plane, and $f$ is approximated near the point by a linear function of two variables. The tangent plane is built from the two partial derivatives. But partial derivatives alone do not guarantee that the approximation is good, so this section defines *differentiability* for functions of two variables and gives the practical test for it: continuous partial derivatives. Differentials then package the linear approximation for estimating changes and errors.
 
 ## Tangent Planes
 
@@ -22,7 +22,7 @@ As we zoom in toward a point on the graph of a differentiable function of one va
 
 ^def-93-1
 
-We will see in [[§95 Directional Derivatives and the Gradient Vector|§95]] that the tangent line at $P$ to *any* curve $C$ that lies on $S$ and passes through $P$ also lies in the tangent plane. So the tangent plane consists of all possible tangent lines at $P$ to curves on $S$ through $P$: it is the plane that most closely approximates $S$ near $P$.
+We will see in [[§95 Directional Derivatives and the Gradient Vector#^thm-95-5|Theorem §95.5]] that the tangent line at $P$ to *any* curve $C$ that lies on $S$ and passes through $P$ also lies in the tangent plane. So the tangent plane consists of all possible tangent lines at $P$ to curves on $S$ through $P$: it is the plane that most closely approximates $S$ near $P$.
 
 > [!theorem] Theorem §93.1: Equation of a Tangent Plane
 > Suppose $f$ has continuous partial derivatives. An equation of the tangent plane to the surface $z = f(x, y)$ at the point $P(x_0, y_0, z_0)$ is
@@ -36,7 +36,7 @@ We will see in [[§95 Directional Derivatives and the Gradient Vector|§95]] tha
 ^thm-93-1
 
 > [!proof]+ Proof
-> Any plane through $P(x_0, y_0, z_0)$ has an equation $A(x - x_0) + B(y - y_0) + C(z - z_0) = 0$ ([[§84 Equations of Lines and Planes|§84]], Equation 12.5.7). The tangent plane is not vertical, that is, $C \ne 0$: it contains the lines $T_1$ and $T_2$, with direction vectors $\langle 1, 0, m_1 \rangle$ and $\langle 0, 1, m_2 \rangle$ ($m_1$, $m_2$ their slopes), so it has the normal vector $\langle 1, 0, m_1 \rangle \times \langle 0, 1, m_2 \rangle = \langle -m_1, -m_2, 1 \rangle$, whose third component is not $0$. (Stewart divides by $C$ without comment; this is why it is allowed.) Dividing by $C$ and letting $a = -A/C$, $b = -B/C$, the equation becomes
+> Any plane through $P(x_0, y_0, z_0)$ has an equation $A(x - x_0) + B(y - y_0) + C(z - z_0) = 0$ ([[§84 Equations of Lines and Planes#^prop-84-6|Proposition §84.6]], Stewart's Equation 12.5.7). The tangent plane is not vertical, that is, $C \ne 0$: it contains the lines $T_1$ and $T_2$, with direction vectors $\langle 1, 0, m_1 \rangle$ and $\langle 0, 1, m_2 \rangle$ ($m_1$, $m_2$ their slopes), so it has the normal vector $\langle 1, 0, m_1 \rangle \times \langle 0, 1, m_2 \rangle = \langle -m_1, -m_2, 1 \rangle$, whose third component is not $0$. (Stewart divides by $C$ without comment; this is why it is allowed.) Dividing by $C$ and letting $a = -A/C$, $b = -B/C$, the equation becomes
 >
 > $$
 > z - z_0 = a(x - x_0) + b(y - y_0) . \qquad (1)
@@ -52,7 +52,7 @@ We will see in [[§95 Directional Derivatives and the Gradient Vector|§95]] tha
 
 ^pf-93-1
 
-*Uses:* [[§93 Tangent Planes and Linear Approximations#^def-93-1|Def. §93.1]], [[§92 Partial Derivatives#^rem-92-1|§92]] (partial derivatives as slopes), [[§84 Equations of Lines and Planes|§84]] (equation of a plane), [[§83 The Cross Product|§83]] (normal vector)
+*Uses:* [[§93 Tangent Planes and Linear Approximations#^def-93-1|Def. §93.1]], [[§92 Partial Derivatives#^rem-92-1|§92]] (partial derivatives as slopes), [[§84 Equations of Lines and Planes#^prop-84-6|§84.6]] (equation of a plane), [[§83 The Cross Product#^thm-83-2|§83.2]] (normal vector)
 
 Compare the tangent line $y - y_0 = f'(x_0)(x - x_0)$ in one variable.
 
@@ -117,7 +117,7 @@ For one variable, if $y = f(x)$ is differentiable at $a$ and $x$ changes from $a
 $$
 \Delta y = f'(a)\,\Delta x + \varepsilon\,\Delta x \quad\text{where } \varepsilon \to 0 \text{ as } \Delta x \to 0 \qquad (5)
 $$
-(Stewart, Equation 3.4.7; [[§17 The Chain Rule|§17]]). The definition for two variables copies this.
+(Stewart, Equation 3.4.7; [[§17 The Chain Rule#^lem-17-1|Lemma §17.1]]). The definition for two variables copies this.
 
 > [!definition] Definition §93.3: Increment; Differentiable Function of Two Variables
 > Let $z = f(x, y)$. If $x$ changes from $a$ to $a + \Delta x$ and $y$ changes from $b$ to $b + \Delta y$, the corresponding **increment** of $z$ is
@@ -163,7 +163,7 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 > \Delta z = \big[ f(a + \Delta x, b + \Delta y) - f(a, b + \Delta y) \big] + \big[ f(a, b + \Delta y) - f(a, b) \big] . \qquad (1)
 > $$
 >
-> **First bracket.** The function of one variable $g(x) = f(x, b + \Delta y)$ is defined on the interval between $a$ and $a + \Delta x$, with $g'(x) = f_x(x, b + \Delta y)$. By the Mean Value Theorem ([[§26 The Mean Value Theorem|§26]]; $g$ is differentiable, hence continuous) there is a number $u$ between $a$ and $a + \Delta x$ with $g(a + \Delta x) - g(a) = g'(u)\,\Delta x$, that is,
+> **First bracket.** The function of one variable $g(x) = f(x, b + \Delta y)$ is defined on the interval between $a$ and $a + \Delta x$, with $g'(x) = f_x(x, b + \Delta y)$. By the Mean Value Theorem ([[§26 The Mean Value Theorem#^thm-26-2|Theorem §26.2]]; $g$ is differentiable, hence continuous) there is a number $u$ between $a$ and $a + \Delta x$ with $g(a + \Delta x) - g(a) = g'(u)\,\Delta x$, that is,
 >
 > $$
 > f(a + \Delta x, b + \Delta y) - f(a, b + \Delta y) = f_x(u, b + \Delta y)\,\Delta x .
@@ -195,7 +195,7 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 
 ^pf-93-2
 
-*Uses:* [[§93 Tangent Planes and Linear Approximations#^def-93-3|Def. §93.3]], [[§26 The Mean Value Theorem|§26]] (Mean Value Theorem), [[§91 Limits and Continuity#^def-91-3|Def. §91.3]]
+*Uses:* [[§93 Tangent Planes and Linear Approximations#^def-93-3|Def. §93.3]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]] (Mean Value Theorem), [[§91 Limits and Continuity#^def-91-3|Def. §91.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]], with the same two-step Mean Value Theorem argument; hub [[Continuous Partials Imply Differentiability]].
@@ -215,7 +215,17 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 >
 > So $xe^{xy} \approx x + y$ near $(1, 0)$, and $f(1.1, -0.1) \approx 1.1 - 0.1 = 1$. Compare the actual value $f(1.1, -0.1) = 1.1\,e^{-0.11} \approx 0.98542$.
 >
-> **(b)** Find the linear approximation $L(x, y)$ of $f(x, y) = xye^x$ at $(1, 1)$ and use it to estimate $f(1.1, 0.9)$. (Choices: $1.1e$, $e$, $0.5$, $1.5$, $2e$, $2$.)
+> **(b)** Find a linear approximation of the heat index $I = f(T, H)$ when $T$ is near $96$°F and $H$ is near $70$%, and use it to estimate the heat index when $T = 97$°F and $H = 72$%.
+>
+> Here $f$ is known only through the National Weather Service table at the start of [[§92 Partial Derivatives|§92]]. It gives $f(96, 70) = 125$, and its difference quotients gave $f_T(96, 70) \approx 3.75$ and $f_H(96, 70) \approx 0.9$. So
+>
+> $$
+> f(T, H) \approx 125 + 3.75(T - 96) + 0.9(H - 70) , \qquad f(97, 72) \approx 125 + 3.75(1) + 0.9(2) = 130.55 ,
+> $$
+>
+> and the heat index is $I \approx 131$°F.
+>
+> **(c)** Find the linear approximation $L(x, y)$ of $f(x, y) = xye^x$ at $(1, 1)$ and use it to estimate $f(1.1, 0.9)$. (Choices: $1.1e$, $e$, $0.5$, $1.5$, $2e$, $2$.)
 >
 > $f(1, 1) = e$, $f_x = ye^x + xye^x$, so $f_x(1, 1) = 2e$, and $f_y = xe^x$, so $f_y(1, 1) = e$. Hence $L(x, y) = e + 2e(x - 1) + e(y - 1)$ and
 >
@@ -223,8 +233,26 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 > f(1.1, 0.9) \approx e + 2e(0.1) + e(-0.1) = 1.1e . \qquad \textbf{Answer: } 1.1e .
 > $$
 >
-> *Stewart: Example 14.4.2*
-> *Source: 233 Practice Exam 1, Q1(e)*
+> **(d)** Let $f(x, y) = x^2 y + y e^{xy}$. Find the linearization $L(x, y)$ of $f$ at $(0, 5)$ and use it to approximate $f(0.1, 4.9)$.
+>
+> $f(0, 5) = 0 + 5e^0 = 5$, and
+>
+> $$
+> f_x = 2xy + y^2 e^{xy} , \quad f_y = x^2 + e^{xy} + xye^{xy} , \qquad f_x(0, 5) = 0 + 25 = 25 , \quad f_y(0, 5) = 0 + 1 + 0 = 1 .
+> $$
+>
+> Both partial derivatives are continuous, so $f$ is differentiable (Theorem §93.2), and
+>
+> $$
+> L(x, y) = 5 + 25(x - 0) + 1(y - 5) = 25x + y , \qquad f(0.1, 4.9) \approx L(0.1, 4.9) = 2.5 + 4.9 = 7.4 .
+> $$
+>
+> The actual value is $f(0.1, 4.9) = 0.049 + 4.9e^{0.49} \approx 8.047$. The estimate is rougher than in (a) because the graph bends sharply in the $x$-direction at $(0, 5)$: $f_{xx} = 2y + y^3 e^{xy}$ equals $135$ there.
+>
+> *In (d), the posted exam and its answer key write the point as "(0.5)"; the key's solution shows that $(0, 5)$ is meant.*
+>
+> *Stewart: Examples 14.4.2 and 14.4.3*
+> *Source: 233 Practice Exam 1, Q1(e) and Q4(a)*
 
 ^ex-93-2
 
@@ -243,7 +271,7 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 
 ^def-93-4
 
-Compare $dy = f'(x)\,dx$ in one variable ([[§23 Linear Approximations and Differentials|§23]]). Taking $dx = \Delta x = x - a$ and $dy = \Delta y = y - b$ in (10), the differential of $z$ at $(a, b)$ is
+Compare $dy = f'(x)\,dx$ in one variable ([[§23 Linear Approximations and Differentials#^def-23-2|Definition §23.2]]). Taking $dx = \Delta x = x - a$ and $dy = \Delta y = y - b$ in (10), the differential of $z$ at $(a, b)$ is
 $$
 dz = f_x(a, b)(x - a) + f_y(a, b)(y - b) ,
 $$
@@ -346,13 +374,13 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 >
 > **Where the curves pass through $P$.** $\mathbf{c}_1(0) = (2, 1, 3)$. For $\mathbf{c}_2$: $1 + u^2 = 2$ gives $u = \pm 1$, and $2u^3 - 1 = 1$ forces $u = 1$; then $2u + 1 = 3$. So $\mathbf{c}_2(1) = (2, 1, 3)$.
 >
-> **Tangent vectors** ([[§87 Derivatives and Integrals of Vector Functions|§87]]).
+> **Tangent vectors** ([[§87 Derivatives and Integrals of Vector Functions#^def-87-2|Definition §87.2]]).
 >
 > $$
 > \mathbf{c}_1'(t) = \langle 3, -2t, -4 + 2t \rangle , \quad \mathbf{c}_1'(0) = \langle 3, 0, -4 \rangle ; \qquad \mathbf{c}_2'(u) = \langle 2u, 6u^2, 2 \rangle , \quad \mathbf{c}_2'(1) = \langle 2, 6, 2 \rangle .
 > $$
 >
-> **Normal vector.** The tangent lines at $P$ to curves on $S$ through $P$ lie in the tangent plane (the remark after Definition §93.1, proved in [[§95 Directional Derivatives and the Gradient Vector|§95]]), so both tangent vectors are parallel to the plane. They are not parallel to each other, and their cross product ([[§83 The Cross Product|§83]]) is a normal vector:
+> **Normal vector.** The tangent lines at $P$ to curves on $S$ through $P$ lie in the tangent plane (as noted after Definition §93.1; this is [[§95 Directional Derivatives and the Gradient Vector#^thm-95-5|Theorem §95.5]]), so both tangent vectors are parallel to the plane. They are not parallel to each other, and their cross product ([[§83 The Cross Product#^thm-83-2|Theorem §83.2]]) is a normal vector:
 >
 > $$
 > \langle 3, 0, -4 \rangle \times \langle 2, 6, 2 \rangle = \langle 0 \cdot 2 - (-4) \cdot 6,\ (-4) \cdot 2 - 3 \cdot 2,\ 3 \cdot 6 - 0 \cdot 2 \rangle = \langle 24, -14, 18 \rangle .

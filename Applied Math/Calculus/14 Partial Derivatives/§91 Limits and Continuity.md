@@ -41,7 +41,7 @@ near the origin, where neither is defined. A table of values suggests that $f(x,
 ^def-91-1
 
 > [!remark] Remark: What the Definition Says
-> $|f(x, y) - L|$ is the distance between the numbers $f(x, y)$ and $L$, and $\sqrt{(x - a)^2 + (y - b)^2}$ is the distance between the points $(x, y)$ and $(a, b)$. So the definition says that $f(x, y)$ can be made as close to $L$ as we like by taking $(x, y)$ close enough to $(a, b)$, but not equal to it (compare the one-variable definition, [[§9 The Precise Definition of a Limit|§9]]). In pictures: for any interval $(L - \varepsilon, L + \varepsilon)$ there is a disk $D_\delta$ with center $(a, b)$ and radius $\delta$ that $f$ maps, except possibly for the center, into that interval; equivalently, the part of the graph of $f$ over $D_\delta$ lies between the horizontal planes $z = L - \varepsilon$ and $z = L + \varepsilon$. The definition refers only to the *distance* between $(x, y)$ and $(a, b)$, never to the direction of approach.
+> $|f(x, y) - L|$ is the distance between the numbers $f(x, y)$ and $L$, and $\sqrt{(x - a)^2 + (y - b)^2}$ is the distance between the points $(x, y)$ and $(a, b)$. So the definition says that $f(x, y)$ can be made as close to $L$ as we like by taking $(x, y)$ close enough to $(a, b)$, but not equal to it (compare the one-variable definition, [[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]). In pictures: for any interval $(L - \varepsilon, L + \varepsilon)$ there is a disk $D_\delta$ with center $(a, b)$ and radius $\delta$ that $f$ maps, except possibly for the center, into that interval; equivalently, the part of the graph of $f$ over $D_\delta$ lies between the horizontal planes $z = L - \varepsilon$ and $z = L + \varepsilon$. The definition refers only to the *distance* between $(x, y)$ and $(a, b)$, never to the direction of approach.
 
 ^rem-91-1
 
@@ -121,7 +121,7 @@ In one variable, $x$ can approach $a$ only from the left or from the right, and 
 
 ## Properties of Limits
 
-The Limit Laws of [[§8 Calculating Limits Using the Limit Laws|§8]] extend to functions of two variables.
+The Limit Laws of [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|Theorem §8.1]] extend to functions of two variables.
 
 > [!theorem] Theorem §91.2: Limit Laws for Two Variables
 > Suppose that $\lim_{(x, y) \to (a, b)} f(x, y)$ and $\lim_{(x, y) \to (a, b)} g(x, y)$ exist, and let $c$ be a constant. Then
@@ -141,7 +141,7 @@ The Limit Laws of [[§8 Calculating Limits Using the Limit Laws|§8]] extend to 
 
 ^thm-91-2
 
-*Stewart states the laws verbally and leaves the special limits (2) as Exercise 54. The one-variable proofs ([[§8 Calculating Limits Using the Limit Laws|§8]], Appendix F) carry over word for word with $|x - a|$ replaced by the distance $\sqrt{(x - a)^2 + (y - b)^2}$; for (2), take $\delta = \varepsilon$, since $|x - a| \le \sqrt{(x - a)^2 + (y - b)^2}$. The 452 versions are stated for continuous functions: [[§3 Continuity and Limits of Functions#^thm-3-1|452 Thm. §3.1]]–[[§3 Continuity and Limits of Functions#^thm-3-3|§3.3]].*
+*Stewart states the laws verbally and leaves the special limits (2) as Exercise 54. The one-variable proofs ([[§8 Calculating Limits Using the Limit Laws#^pf-8-1|proof of Theorem §8.1]], from Appendix F) carry over word for word with $|x - a|$ replaced by the distance $\sqrt{(x - a)^2 + (y - b)^2}$; for (2), take $\delta = \varepsilon$, since $|x - a| \le \sqrt{(x - a)^2 + (y - b)^2}$. The 452 versions are stated for continuous functions: [[§3 Continuity and Limits of Functions#^thm-3-1|452 Thm. §3.1]]–[[§3 Continuity and Limits of Functions#^thm-3-3|§3.3]].*
 
 > [!definition] Definition §91.2: Polynomial and Rational Functions of Two Variables
 > A **polynomial function** of two variables (or **polynomial**) is a sum of terms of the form $cx^m y^n$, where $c$ is a constant and $m$ and $n$ are nonnegative integers. A **rational function** is a ratio of two polynomials. For instance,
@@ -197,7 +197,7 @@ For instance, $\lim_{(x, y) \to (1, 2)} (x^2y^3 - x^3y^2 + 3x + 2y) = 1 \cdot 8 
 
 ^thm-91-4
 
-*Stewart says only that the Squeeze Theorem "also holds" for functions of two or more variables. The one-variable proof ([[§8 Calculating Limits Using the Limit Laws|§8]], Appendix F) carries over with the distance in place of $|x - a|$: given $\varepsilon$, take the smaller of the two $\delta$'s for $g$ and $h$; then $L - \varepsilon < g \le f \le h < L + \varepsilon$.*
+*Stewart says only that the Squeeze Theorem "also holds" for functions of two or more variables. The one-variable proof ([[§8 Calculating Limits Using the Limit Laws#^pf-8-7|proof of Theorem §8.7]], from Appendix F) carries over with the distance in place of $|x - a|$: given $\varepsilon$, take the smaller of the two $\delta$'s for $g$ and $h$; then $L - \varepsilon < g \le f \le h < L + \varepsilon$.*
 
 > [!example] Example §91.3: A Limit That Exists
 > Find $\displaystyle\lim_{(x, y) \to (0, 0)} \frac{3x^2 y}{x^2 + y^2}$ if it exists.
@@ -319,7 +319,7 @@ The intuitive meaning: if the point $(x, y)$ changes by a small amount, then $f(
 > \text{if}\quad \mathbf{x} \in D \quad\text{and}\quad 0 < |\mathbf{x} - \mathbf{a}| < \delta \quad\text{then}\quad |f(\mathbf{x}) - L| < \varepsilon , \qquad (7)
 > $$
 >
-> and $f$ is continuous at $\mathbf{a}$ if $\lim_{\mathbf{x} \to \mathbf{a}} f(\mathbf{x}) = f(\mathbf{a})$. For $n = 1$ this is the one-variable definition ([[§9 The Precise Definition of a Limit|§9]]), for $n = 2$ it is Definition §91.1, and for $n = 3$ the definition just given.
+> and $f$ is continuous at $\mathbf{a}$ if $\lim_{\mathbf{x} \to \mathbf{a}} f(\mathbf{x}) = f(\mathbf{a})$. For $n = 1$ this is the one-variable definition ([[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]), for $n = 2$ it is Definition §91.1, and for $n = 3$ the definition just given.
 >
 > *Stewart: 14.2, Definition 7 and text*
 

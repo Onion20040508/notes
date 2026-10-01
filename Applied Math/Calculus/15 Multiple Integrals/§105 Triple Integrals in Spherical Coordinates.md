@@ -9,7 +9,7 @@ tags: [calculus, math233]
 ---
 ← [[§104 Triple Integrals in Cylindrical Coordinates]] · ↑ [[· 15 Multiple Integrals]] · [[§106 Change of Variables in Multiple Integrals]] →
 
-*Stewart, Section 15.8 · MATH 233 (UMass, Spring 2023): Exam 2 Practice Questions (Q19, Q20), Chapter 15 Review (Q11).*
+*Stewart, Section 15.8 · MATH 233 (UMass, Spring 2023): Exam 2 Practice Questions (Q19, Q20), Chapter 15 Review (Q11), Practice Final Exam (Q4).*
 
 Spherical coordinates describe a point by its distance $\rho$ from the origin and two angles: the polar angle $\theta$ of cylindrical coordinates and the angle $\phi$ down from the positive $z$-axis. Spheres centered at the origin become $\rho = c$ and cones around the $z$-axis become $\phi = c$, so solids bounded by spheres and cones become boxes in $(\rho, \theta, \phi)$. The volume of a small spherical wedge is about $\rho^2\sin\phi\,\Delta\rho\,\Delta\theta\,\Delta\phi$, which turns into the rule: replace $dV$ by $\rho^2\sin\phi\,d\rho\,d\theta\,d\phi$.
 
@@ -141,11 +141,11 @@ The next lemma makes this exact.
 > \Delta V = \frac{\theta_2 - \theta_1}{3}\Big[ \rho_2^3(\cos\phi_1 - \cos\phi_2) - \rho_1^3(\cos\phi_1 - \cos\phi_2) \Big] = \frac{\rho_2^3 - \rho_1^3}{3}(\cos\phi_1 - \cos\phi_2)(\theta_2 - \theta_1) .
 > $$
 >
-> **Step 3: the Mean Value Theorem** ([[§26 The Mean Value Theorem|§26]]) applied to $\rho^3/3$ on $[\rho_1, \rho_2]$ and to $-\cos\phi$ on $[\phi_1, \phi_2]$ gives $\tilde\rho$, $\tilde\phi$ with $\frac{\rho_2^3 - \rho_1^3}{3} = \tilde\rho^{\,2}\,\Delta\rho$ and $\cos\phi_1 - \cos\phi_2 = \sin\tilde\phi\,\Delta\phi$.
+> **Step 3: the Mean Value Theorem** ([[§26 The Mean Value Theorem#^thm-26-2|Theorem §26.2]]) applied to $\rho^3/3$ on $[\rho_1, \rho_2]$ and to $-\cos\phi$ on $[\phi_1, \phi_2]$ gives $\tilde\rho$, $\tilde\phi$ with $\frac{\rho_2^3 - \rho_1^3}{3} = \tilde\rho^{\,2}\,\Delta\rho$ and $\cos\phi_1 - \cos\phi_2 = \sin\tilde\phi\,\Delta\phi$.
 
 ^pf-105-1
 
-*Uses:* [[§104 Triple Integrals in Cylindrical Coordinates#^thm-104-1|§104.1]], [[§103 Triple Integrals#^thm-103-4|§103.4]], [[§26 The Mean Value Theorem|§26]]
+*Uses:* [[§104 Triple Integrals in Cylindrical Coordinates#^thm-104-1|§104.1]], [[§103 Triple Integrals#^thm-103-4|§103.4]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]]
 
 > [!theorem] Theorem §105.2: Triple Integration in Spherical Coordinates
 > If $f$ is continuous on the spherical wedge $E = \{(\rho, \theta, \phi) \mid a \le \rho \le b,\ \alpha \le \theta \le \beta,\ c \le \phi \le d\}$, then
@@ -183,7 +183,7 @@ The next lemma makes this exact.
 *Uses:* [[§105 Triple Integrals in Spherical Coordinates#^def-105-2|Def. §105.2]], [[§105 Triple Integrals in Spherical Coordinates#^lem-105-1|§105.1]], [[§103 Triple Integrals#^def-103-1|Def. §103.1]], [[§103 Triple Integrals#^thm-103-1|§103.1]], [[§100 Double Integrals in Polar Coordinates#^thm-100-2|§100.2]]
 
 > [!remark]- Connections
-> - Rigorous treatment: $\rho^2\sin\phi$ is the absolute value of the Jacobian of the spherical-coordinate map ([[§15 Multivariable Integration#^ex-15-6|452 Ex. §15.6]]; computed in [[§106 Change of Variables in Multiple Integrals|§106]]), and Formula 3 is the change of variables theorem [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]]. Hub: [[Polar and spherical coordinates]].
+> - Rigorous treatment: $\rho^2\sin\phi$ is the absolute value of the Jacobian of the spherical-coordinate map ([[§15 Multivariable Integration#^ex-15-6|452 Ex. §15.6]]; computed in [[§106 Change of Variables in Multiple Integrals#^ex-106-5|Example §106.5]]), and Formula 3 is the change of variables theorem [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]]. Hub: [[Polar and spherical coordinates]].
 
 > [!remark] Remark: Method — Using Spherical Coordinates
 > Formula 3 says: write $x = \rho\sin\phi\cos\theta$, $y = \rho\sin\phi\sin\theta$, $z = \rho\cos\phi$, use the appropriate limits, and replace $dV$ by $\rho^2\sin\phi\,d\rho\,d\theta\,d\phi$ (the volume of the small wedge with sides $d\rho$, $\rho\,d\phi$, $\rho\sin\phi\,d\theta$).
@@ -249,7 +249,7 @@ The next lemma makes this exact.
 >
 > The same computation with $0 \le \phi \le \pi/3$ and $\rho \le 4$ gives the volume of the part of the ball $\rho \le 4$ above the cone $\phi = \pi/3$: $2\pi(1 - \tfrac12)\frac{64}{3} = \frac{64\pi}{3}$.
 >
-> *Source: 233 Exam 2 Practice Questions, Q20 (and Q19 for the last line)*
+> *Source: 233 Exam 2 Practice Questions, Q20 (= Practice Final Exam, Q4), and Q19 for the last line*
 
 ^ex-105-4
 
@@ -269,6 +269,8 @@ The next lemma makes this exact.
 > $$
 > \frac12 \cdot \frac{8 - 5\sqrt2}{12} \cdot \frac{4\sqrt2}{5} = \frac{(8 - 5\sqrt2)\sqrt2}{30} = \frac{4\sqrt2 - 5}{15} \approx 0.0438 .
 > $$
+>
+> *The posted solution has the same set-up but takes $\cos\phi + \tfrac13\cos^3\phi$ as the antiderivative of $\sin^3\phi$ (the sign of $\cos\phi$ is lost), so its last line is negative; the integrand $xy$ is nonnegative on the region, and the value is $\frac{4\sqrt2 - 5}{15}$.*
 >
 > *Source: 233 Chapter 15 Review, Q11*
 

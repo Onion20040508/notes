@@ -1,12 +1,13 @@
 % Figure for Calculus §88.
 \begin{tikzpicture}[font=\scriptsize]
-  \begin{axis}[nfig, width=8cm, height=6.4cm, axis lines=middle, xmin=-2.2, xmax=2.4, ymin=-0.2, ymax=2.6, axis equal image,
+  \begin{axis}[nfig, width=8cm, height=6.4cm, axis lines=middle, xmin=-2.2, xmax=2.4, ymin=-0.2, ymax=2.6, axis equal image, clip=false,
       xtick={-2,-1,1,2}, ytick={1,2}, xlabel={$x$}, ylabel={$y$}]
     \addplot[figB, thick, domain=-1.6:1.6, samples=80] {x^2} node[pos=0.97, anchor=west] {$y=x^2$};
     \addplot[figG, thick, domain=-2.2:2.2, samples=120] {2/(1+4*x^2)^(1.5)} node[pos=0.9, anchor=south] {$y=\kappa(x)$};
     \draw[figR, thick] (axis cs:0,0.5) circle [radius=0.5];
-    \fill[figR] (axis cs:0,0.5) circle (1.3pt) node[anchor=west, xshift=14pt] {$(0,\tfrac12)$};
+    \fill[figR] (axis cs:0,0.5) circle (1.3pt);
     \draw[-stealth, figR] (axis cs:0,0) -- (axis cs:0,0.42);
-    \node[figR, anchor=east] at (axis cs:-0.5,0.62) {osculating circle};
+    \draw[figR!70, thin] (axis cs:0.36,0.85) -- (axis cs:1.3,1.05);
+    \node[figR, anchor=west, align=left] at (axis cs:1.3,1.05) {osculating circle\\center $(0,\tfrac12)$};
   \end{axis}
 \end{tikzpicture}

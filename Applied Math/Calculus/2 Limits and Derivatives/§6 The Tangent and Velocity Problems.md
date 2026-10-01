@@ -37,9 +37,9 @@ The word *tangent* comes from the Latin *tangens*, "touching": a tangent to a cu
 > m = \lim_{Q \to P} m_{PQ}, \qquad\text{for the graph of } f \text{ at } P(a, f(a)):\quad m = \lim_{x \to a} \frac{f(x) - f(a)}{x - a} .
 > $$
 >
-> The tangent line is the line through $P$ with slope $m$; by the point-slope form ([[§117 Coordinate Geometry and Lines|§117]], Appendix B) its equation is $y - f(a) = m(x - a)$. As $Q$ approaches $P$, the secant lines rotate about $P$ and approach the tangent line.
+> The tangent line is the line through $P$ with slope $m$; by the point-slope form ([[§117 Coordinate Geometry and Lines#^thm-117-2|Theorem §117.2]], Appendix B) its equation is $y - f(a) = m(x - a)$. As $Q$ approaches $P$, the secant lines rotate about $P$ and approach the tangent line.
 >
-> Here "limit" is still the intuitive notion; limits are defined in [[§7 The Limit of a Function|§7]] and the tangent line precisely in [[§12 Derivatives and Rates of Change|§12]].
+> Here "limit" is still the intuitive notion; limits are defined in [[§7 The Limit of a Function#^def-7-1|Definition §7.1]] (precisely in [[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]) and the tangent line in [[§12 Derivatives and Rates of Change#^def-12-1|Definition §12.1]].
 >
 > *Stewart: 2.1 (text)*
 
@@ -80,7 +80,7 @@ The word *tangent* comes from the Latin *tangens*, "touching": a tangent to a cu
 ^ex-6-1
 
 ![[m233-6-1.svg]]
-*Secant lines through $P(1, 1)$ on $y = x^2$. With $Q$ at $x = 2, 1.5, 1.2$ (blue, lighter to darker) the slopes $m_{PQ} = x + 1$ are $3, 2.5, 2.2$; with $Q$ at $x = 0$ (green, $Q$ to the left of $P$) the slope is $1$. As $Q$ approaches $P$ from either side, the secants rotate about $P$ toward the tangent line $y = 2x - 1$ (red) of slope $2$.*
+*Secant lines through $P(1, 1)$ on $y = x^2$. With $Q$ at $x = 2, 1.5, 1.2$ (blue, lighter to darker) the slopes $m_{PQ} = x + 1$ are $3, 2.5, 2.2$; with $Q$ at $x = 0$ (green, $Q$ to the left of $P$) the slope is $1$. As $Q$ approaches $P$ from either side, the secants rotate about $P$ toward the tangent line $y = 2x - 1$ (red) of slope $2$. (The same limit for a general curve, written with the increment $h = x - a$, is pictured after [[§12 Derivatives and Rates of Change#^thm-12-1|Theorem §12.1]].)*
 
 Many functions in the sciences are known only through experimental data. The same idea then gives an estimate of the slope of the tangent line.
 
@@ -186,6 +186,6 @@ The speedometer of a car in city traffic shows a speed that keeps changing, yet 
 > \text{slope of secant line} = \text{average velocity}, \qquad \text{slope of tangent line} = \text{instantaneous velocity}.
 > $$
 >
-> To solve either problem one must be able to compute limits. The next five sections develop the methods ([[§7 The Limit of a Function|§7]]–[[§11 Limits at Infinity; Horizontal Asymptotes|§11]]), and Section 2.7 ([[§12 Derivatives and Rates of Change|§12]]) returns to tangents and velocities.
+> To solve either problem one must be able to compute limits. The next five sections develop the methods ([[§7 The Limit of a Function|§7]]–[[§11 Limits at Infinity; Horizontal Asymptotes|§11]]), and Section 2.7 ([[§12 Derivatives and Rates of Change|§12]]) returns to tangents ([[§12 Derivatives and Rates of Change#^def-12-1|Definition §12.1]]) and velocities ([[§12 Derivatives and Rates of Change#^def-12-2|Definition §12.2]]).
 
 ^rem-6-1

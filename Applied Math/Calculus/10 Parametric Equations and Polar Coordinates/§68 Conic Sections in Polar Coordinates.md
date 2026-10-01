@@ -33,7 +33,7 @@ tags: [calculus]
 >
 > (a) an ellipse if $e < 1$; (b) a parabola if $e = 1$; (c) a hyperbola if $e > 1$.
 >
-> For the ellipse and the hyperbola, $F$ is one of the two foci of [[§67 Conic Sections|§67]], and $e = c/a$, where $c$ is the distance from the center to a focus and $a$ the distance from the center to a vertex.
+> For the ellipse and the hyperbola, $F$ is one of the two foci of [[§67 Conic Sections#^def-67-2|Definition §67.2]] or [[§67 Conic Sections#^def-67-3|Definition §67.3]], and $e = c/a$, where $c$ is the distance from the center to a focus and $a$ the distance from the center to a vertex.
 >
 > *Stewart: 10.6, Theorem 1*
 
@@ -86,7 +86,7 @@ tags: [calculus]
 
 ^pf-68-1
 
-*Uses:* [[§68 Conic Sections in Polar Coordinates#^def-68-1|Def. §68.1]], [[§67 Conic Sections#^def-67-1|Def. §67.1]], [[§67 Conic Sections#^thm-67-3|§67.3]], [[§67 Conic Sections#^thm-67-5|§67.5]], [[§65 Polar Coordinates#^thm-65-2|§65.2]], completing the square ([[§118 Graphs of Second-Degree Equations|§118]])
+*Uses:* [[§68 Conic Sections in Polar Coordinates#^def-68-1|Def. §68.1]], [[§67 Conic Sections#^def-67-1|Def. §67.1]], [[§67 Conic Sections#^thm-67-3|§67.3]], [[§67 Conic Sections#^thm-67-5|§67.5]], [[§65 Polar Coordinates#^thm-65-2|§65.2]], [[§118 Graphs of Second-Degree Equations#^thm-118-5|§118.5]] (shifted conics)
 
 ![[m233-68-1.svg]]
 *The focus–directrix description with the focus at the pole and the directrix $x = d$. For $P(r, \theta)$, $|PF| = r$ and $|Pl| = d - r\cos\theta$ (here $\theta > \pi/2$, so $r\cos\theta < 0$), and the conic is where $|PF| = e|Pl|$. Here $e = 0.6$: an ellipse, with $F$ as its right-hand focus.*
@@ -103,7 +103,7 @@ To rotate a polar curve, rotate its angle variable.
 ^lem-68-2
 
 > [!proof]+ Proof
-> Rotating counterclockwise through $\alpha$ takes the point with polar coordinates $(r, \varphi)$ to the point $(r, \varphi + \alpha)$. A point $(r, \varphi)$ satisfies $r = f(\varphi)$ exactly when $(r, \theta)$ with $\theta = \varphi + \alpha$ satisfies $r = f(\theta - \alpha)$. So the rotation maps the representations satisfying the first equation onto those satisfying the second, and hence (Definition §65.2) the first graph onto the second.
+> Rotating counterclockwise through $\alpha$ takes the point with polar coordinates $(r, \varphi)$ to the point $(r, \varphi + \alpha)$. A point $(r, \varphi)$ satisfies $r = f(\varphi)$ exactly when $(r, \theta)$ with $\theta = \varphi + \alpha$ satisfies $r = f(\theta - \alpha)$. So the rotation maps the representations satisfying the first equation onto those satisfying the second, and hence ([[§65 Polar Coordinates#^def-65-2|Definition §65.2]]) the first graph onto the second.
 
 ^pf-68-2
 
@@ -133,7 +133,7 @@ To rotate a polar curve, rotate its angle variable.
 
 ^pf-68-3
 
-*Uses:* [[§68 Conic Sections in Polar Coordinates#^thm-68-1|§68.1]], [[§68 Conic Sections in Polar Coordinates#^lem-68-2|§68.2]], [[§65 Polar Coordinates#^def-65-1|Def. §65.1]] (negative $r$), [[§119 Trigonometry|§119]] (shift identities)
+*Uses:* [[§68 Conic Sections in Polar Coordinates#^thm-68-1|§68.1]], [[§68 Conic Sections in Polar Coordinates#^lem-68-2|§68.2]], [[§65 Polar Coordinates#^def-65-1|Def. §65.1]] (negative $r$), [[§119 Trigonometry#^cor-119-7|§119.7]] (subtraction formulas)
 
 > [!remark] Remark: Method — Reading a Polar Equation of a Conic
 > 1. Divide numerator and denominator so that the constant term of the denominator is $1$: $r = \dfrac{ed}{1 \pm e\cos\theta}$ or $\dfrac{ed}{1 \pm e\sin\theta}$.
@@ -195,7 +195,7 @@ To rotate a polar curve, rotate its angle variable.
 
 ## Kepler's Laws
 
-In 1609 Kepler, from large amounts of astronomical data, published three laws of planetary motion: (1) a planet revolves around the sun in an elliptical orbit with the sun at one focus; (2) the line joining the sun to a planet sweeps out equal areas in equal times; (3) the square of the period of revolution of a planet is proportional to the cube of the length of the major axis of its orbit. They apply equally to moons, comets and satellites orbiting under a single gravitational force. Stewart deduces them from Newton's laws in Section 13.4 ([[§89 Motion in Space꞉ Velocity and Acceleration|§89]]). Here the First Law and the polar equation of an ellipse give astronomical distances.
+In 1609 Kepler, from large amounts of astronomical data, published three laws of planetary motion: (1) a planet revolves around the sun in an elliptical orbit with the sun at one focus; (2) the line joining the sun to a planet sweeps out equal areas in equal times; (3) the square of the period of revolution of a planet is proportional to the cube of the length of the major axis of its orbit. They apply equally to moons, comets and satellites orbiting under a single gravitational force. Stewart deduces them from Newton's laws in Section 13.4 ([[§89 Motion in Space꞉ Velocity and Acceleration#^thm-89-6|Theorem §89.6]], where the First Law is proved). Here the First Law and the polar equation of an ellipse give astronomical distances.
 
 > [!theorem] Theorem §68.4: Polar Equation of an Ellipse by Semimajor Axis
 > The polar equation of an ellipse with focus at the origin, semimajor axis $a$, eccentricity $e$, and directrix $x = d$ can be written as

@@ -7,7 +7,6 @@
   % projection D
   \fill[figG!20] (0,0,0) -- (1,0,0) -- (1,1,0) -- cycle;
   \draw[figG!70!black] (0,0,0) -- (1,0,0) -- (1,1,0) -- cycle;
-  \node[figG!60!black] at (0.9,0.62,0) {$D$};
   % back face y = x (under z = 12 t^2)
   \fill[figB!12] plot[domain=0:1, samples=30] (\x,\x,{12*\x*\x}) -- (1,1,0) -- cycle;
   % top surface z = 12xy: mesh
@@ -33,4 +32,5 @@
   \node[figB, right] at (1,1,12) {$z=12xy$};
   \node[figG!60!black, right] at (1,1,0) {$y=x$};
   \node[figB!70!black] at (0.85,0.7,4.5) {$E$};
+  \node[figG!50!black, font=\small] at (0.88,0.62,0) {$D$};
 \end{tikzpicture}

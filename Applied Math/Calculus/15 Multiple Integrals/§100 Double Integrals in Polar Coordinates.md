@@ -135,7 +135,7 @@ $$
 > \int_0^{\sqrt2} \int_x^{\sqrt{4 - x^2}} x \sin\big((x^2 + y^2)^{3/2}\big)\,dy\,dx = \int_{\pi/4}^{\pi/2} \int_0^2 r^2\cos\theta \sin(r^3)\,dr\,d\theta .
 > $$
 >
-> **The value.** The integrand is a product (Theorem §98.4 in the $r\theta$-plane):
+> **The value.** The integrand is a product ([[§98 Double Integrals Over Rectangles#^thm-98-4|Theorem §98.4]] in the $r\theta$-plane):
 >
 > $$
 > \int_{\pi/4}^{\pi/2} \cos\theta\,d\theta \int_0^2 r^2\sin(r^3)\,dr = \Big(1 - \frac{\sqrt2}{2}\Big) \Big[ -\frac{\cos(r^3)}{3} \Big]_0^2 = \frac{(2 - \sqrt2)(1 - \cos 8)}{6} .

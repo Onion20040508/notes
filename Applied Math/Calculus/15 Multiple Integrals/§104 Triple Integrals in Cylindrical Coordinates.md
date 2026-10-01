@@ -35,7 +35,7 @@ Cylindrical coordinates are polar coordinates in the $xy$-plane with the height 
 ![[m233-104-1.svg]]
 *The cylindrical coordinates of a point $P$: polar coordinates $(r, \theta)$ of its projection $(r, \theta, 0)$ onto the $xy$-plane (red), together with its height $z$. The point lies on the cylinder $r = \text{const}$ (blue) about the $z$-axis, on the vertical half-plane $\theta = \text{const}$, and on the horizontal plane $z = \text{const}$.*
 
-As with polar coordinates ([[§65 Polar Coordinates|§65]]), $\theta$ is determined only up to multiples of $2\pi$, and the quadrant of $(x, y)$ must be used to choose $\theta$ from $\tan\theta = y/x$.
+As with polar coordinates ([[§65 Polar Coordinates#^prop-65-1|Proposition §65.1]], [[§65 Polar Coordinates#^thm-65-2|Theorem §65.2]]), $\theta$ is determined only up to multiples of $2\pi$, and the quadrant of $(x, y)$ must be used to choose $\theta$ from $\tan\theta = y/x$.
 
 The axis of the circular cylinder $x^2 + y^2 = c^2$ is the $z$-axis, and in cylindrical coordinates the cylinder has the very simple equation $r = c$; this is the reason for the name. The graph of $\theta = c$ is a vertical plane through the origin (a half-plane if $r \ge 0$), and the graph of $z = c$ is a horizontal plane.
 
@@ -61,11 +61,11 @@ The axis of the circular cylinder $x^2 + y^2 = c^2$ is the $z$-axis, and in cyli
 > [!example] Example §104.2: The Surfaces z = r and z = 4r
 > **(a)** Describe the surface whose equation in cylindrical coordinates is $z = r$.
 >
-> The height of each point equals its distance from the $z$-axis. Since $\theta$ does not appear, it can vary, so every horizontal trace in a plane $z = k$ ($k > 0$) is a circle of radius $k$: the surface is a cone. Indeed, from Equations 2, $z^2 = r^2 = x^2 + y^2$, which is a circular cone with axis the $z$-axis ([[§85 Cylinders and Quadric Surfaces|§85]]).
+> The height of each point equals its distance from the $z$-axis. Since $\theta$ does not appear, it can vary, so every horizontal trace in a plane $z = k$ ($k > 0$) is a circle of radius $k$: the surface is a cone. Indeed, from Equations 2, $z^2 = r^2 = x^2 + y^2$, which is a circular cone with axis the $z$-axis ([[§85 Cylinders and Quadric Surfaces#^thm-85-2|Theorem §85.2]]).
 >
 > **(b)** Describe the surface whose equation in cylindrical coordinates is $z = 4r$.
 >
-> The level sets $z = c$ are the circles $r = c/4$ centered on the $z$-axis, so again a cone with vertical axis, now steeper: $z^2 = 16(x^2 + y^2)$. Since $r \ge 0$ forces $z \ge 0$, the equation $z = 4r$ gives only the upper half of this double cone, $z = 4\sqrt{x^2 + y^2}$: a **half-cone** with vertical axis. In spherical coordinates ([[§105 Triple Integrals in Spherical Coordinates|§105]]) it is $\rho\cos\phi = 4\rho\sin\phi$, i.e. $\phi = \operatorname{arccot} 4$.
+> The level sets $z = c$ are the circles $r = c/4$ centered on the $z$-axis, so again a cone with vertical axis, now steeper: $z^2 = 16(x^2 + y^2)$. Since $r \ge 0$ forces $z \ge 0$, the equation $z = 4r$ gives only the upper half of this double cone, $z = 4\sqrt{x^2 + y^2}$: a **half-cone** with vertical axis. In spherical coordinates ([[§105 Triple Integrals in Spherical Coordinates#^def-105-1|Definition §105.1]]) it is $\rho\cos\phi = 4\rho\sin\phi$, i.e. $\phi = \operatorname{arccot} 4$.
 >
 > *The same remark applies to (a): with $r \ge 0$, $z = r$ is the upper half $z = \sqrt{x^2 + y^2}$ of the cone $z^2 = x^2 + y^2$, although Stewart's Figure 15.7.7 shows both halves (the full double cone corresponds to allowing negative $r$).*
 >
@@ -122,7 +122,7 @@ The axis of the circular cylinder $x^2 + y^2 = c^2$ is the $z$-axis, and in cyli
 ^rem-104-1
 
 > [!remark]- Connections
-> - Rigorous treatment: the volume element $r\,dr\,d\theta\,dz$ is the absolute value of the Jacobian of $(r, \theta, z) \mapsto (r\cos\theta, r\sin\theta, z)$, and Formula 4 is the change of variables theorem [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]] (see [[§15 Multivariable Integration#^rem-15-5|452 Remark: Notation]] for the volume elements; the calculus version is [[§106 Change of Variables in Multiple Integrals|§106]]).
+> - Rigorous treatment: the volume element $r\,dr\,d\theta\,dz$ is the absolute value of the Jacobian of $(r, \theta, z) \mapsto (r\cos\theta, r\sin\theta, z)$, and Formula 4 is the change of variables theorem [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]] (see [[§15 Multivariable Integration#^rem-15-5|452 Remark: Notation]] for the volume elements; the calculus version is [[§106 Change of Variables in Multiple Integrals#^thm-106-2|Theorem §106.2]] with [[§106 Change of Variables in Multiple Integrals#^ex-106-5|Example §106.5]]).
 
 > [!example] Example §104.3: Under a Paraboloid
 > Evaluate $\displaystyle\iiint_E x^2\,dV$, where $E$ is the solid that lies under the paraboloid $z = 4 - x^2 - y^2$ and above the $xy$-plane.
@@ -170,26 +170,19 @@ The axis of the circular cylinder $x^2 + y^2 = c^2$ is the $z$-axis, and in cyli
 
 ^ex-104-4
 
-> [!example] Example §104.5: Converting an Iterated Integral
-> Evaluate $\displaystyle\int_{-2}^{2} \int_{-\sqrt{4 - x^2}}^{\sqrt{4 - x^2}} \int_{\sqrt{x^2 + y^2}}^{2} (x^2 + y^2)\,dz\,dy\,dx$.
->
-> The iterated integral is a triple integral over
->
-> $$
-> E = \Big\{(x, y, z) \;\Big|\; -2 \le x \le 2,\ -\sqrt{4 - x^2} \le y \le \sqrt{4 - x^2},\ \sqrt{x^2 + y^2} \le z \le 2\Big\} .
-> $$
->
-> Its projection onto the $xy$-plane is the disk $x^2 + y^2 \le 4$; its lower surface is the cone $z = \sqrt{x^2 + y^2}$ and its upper surface the plane $z = 2$. In cylindrical coordinates $E = \{0 \le \theta \le 2\pi,\ 0 \le r \le 2,\ r \le z \le 2\}$, so
->
-> $$
-> \int_{-2}^{2} \int_{-\sqrt{4 - x^2}}^{\sqrt{4 - x^2}} \int_{\sqrt{x^2 + y^2}}^{2} (x^2 + y^2)\,dz\,dy\,dx = \int_0^{2\pi} \int_0^2 \int_r^2 r^2 \cdot r\,dz\,dr\,d\theta = \int_0^{2\pi} d\theta \int_0^2 r^3(2 - r)\,dr = 2\pi\Big[ \tfrac12 r^4 - \tfrac15 r^5 \Big]_0^2 = \frac{16\pi}{5} .
-> $$
->
-> *Stewart: Example 15.7.5*
+The method also runs backwards: an iterated integral in rectangular coordinates may be easier after converting it. For example (Stewart's Example 15.7.5), the iterated integral $\int_{-2}^{2} \int_{-\sqrt{4 - x^2}}^{\sqrt{4 - x^2}} \int_{\sqrt{x^2 + y^2}}^{2} (x^2 + y^2)\,dz\,dy\,dx$ is a triple integral over
 
-^ex-104-5
+$$
+E = \Big\{(x, y, z) \;\Big|\; -2 \le x \le 2,\ -\sqrt{4 - x^2} \le y \le \sqrt{4 - x^2},\ \sqrt{x^2 + y^2} \le z \le 2\Big\} .
+$$
 
-> [!example] Example §104.6: Volume and a Moment for a Paraboloid Bowl
+Its projection onto the $xy$-plane is the disk $x^2 + y^2 \le 4$; its lower surface is the cone $z = \sqrt{x^2 + y^2}$ and its upper surface the plane $z = 2$. In cylindrical coordinates $E = \{0 \le \theta \le 2\pi,\ 0 \le r \le 2,\ r \le z \le 2\}$, so
+
+$$
+\int_{-2}^{2} \int_{-\sqrt{4 - x^2}}^{\sqrt{4 - x^2}} \int_{\sqrt{x^2 + y^2}}^{2} (x^2 + y^2)\,dz\,dy\,dx = \int_0^{2\pi} \int_0^2 \int_r^2 r^2 \cdot r\,dz\,dr\,d\theta = \int_0^{2\pi} d\theta \int_0^2 r^3(2 - r)\,dr = 2\pi\Big[ \tfrac12 r^4 - \tfrac15 r^5 \Big]_0^2 = \frac{16\pi}{5} .
+$$
+
+> [!example] Example §104.5: Volume and a Moment for a Paraboloid Bowl
 > Let $E$ be the solid bounded by the paraboloid $z = x^2 + y^2$ and the plane $z = 4$. Use cylindrical coordinates to find **(a)** its volume and **(b)** $\iiint_E z\,dV$.
 >
 > The paraboloid is $z = r^2$; it meets $z = 4$ where $r = 2$. So $E = \{0 \le \theta \le 2\pi,\ 0 \le r \le 2,\ r^2 \le z \le 4\}$.
@@ -208,6 +201,8 @@ The axis of the circular cylinder $x^2 + y^2 = c^2$ is the $z$-axis, and in cyli
 >
 > Together: the centroid of the bowl is on the $z$-axis at height $\bar z = \frac{64\pi/3}{8\pi} = \frac83$, above the midpoint $z = 2$ because the bowl is wider at the top.
 >
-> *Source: 233 Exam 2 Practice Questions, Q18 (a), and Chapter 15 Review, Q8 (b)*
+> *The posted solution of Chapter 15 Review Q8 has the same set-up as (b) but integrates $\tfrac12 (16 - r^4)\,r$ as $8r - \tfrac12 r^3$ instead of $8r - \tfrac12 r^5$, and gets $24\pi$; the value is $\frac{64\pi}{3}$.*
+>
+> *Source: 233 Exam 2 Practice Questions, Q18 (part (a)), and Chapter 15 Review, Q8 (part (b))*
 
-^ex-104-6
+^ex-104-5

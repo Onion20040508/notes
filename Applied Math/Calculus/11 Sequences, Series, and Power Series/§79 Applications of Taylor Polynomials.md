@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 11.11.*
 
-A Taylor polynomial $T_n$ is a partial sum of a Taylor series, so when $f$ is the sum of its Taylor series, $f(x) \approx T_n(x)$. Polynomials are the simplest functions to compute with, which is why calculators and computers evaluate $\sin$, $e^x$ and their relatives this way. The practical questions are how good the approximation is and how large $n$ must be for a given accuracy; they are answered by bounding the remainder $R_n(x) = f(x) - T_n(x)$, with the Alternating Series Estimation Theorem ([[§73 Alternating Series and Absolute Convergence|§73]]) or Taylor's Inequality ([[§78 Taylor and Maclaurin Series|§78]]). Physicists use the same idea to simplify formulas: keeping the first one or two terms of a Taylor series turns Einstein's kinetic energy into Newton's, and the law of refraction at a curved surface into the lens equation of Gaussian optics.
+A Taylor polynomial $T_n$ is a partial sum of a Taylor series, so when $f$ is the sum of its Taylor series, $f(x) \approx T_n(x)$. Polynomials are the simplest functions to compute with, which is why calculators and computers evaluate $\sin$, $e^x$ and their relatives this way. The practical questions are how good the approximation is and how large $n$ must be for a given accuracy; they are answered by bounding the remainder $R_n(x) = f(x) - T_n(x)$, with the Alternating Series Estimation Theorem ([[§73 Alternating Series and Absolute Convergence#^thm-73-2|Theorem §73.2]]) or Taylor's Inequality ([[§78 Taylor and Maclaurin Series#^thm-78-4|Theorem §78.4]]). Physicists use the same idea to simplify formulas: keeping the first one or two terms of a Taylor series turns Einstein's kinetic energy into Newton's, and the law of refraction at a curved surface into the lens equation of Gaussian optics.
 
 ## Approximating Functions by Polynomials
 
@@ -21,7 +21,7 @@ $$
 T_n(x) = \sum_{i=0}^{n} \frac{f^{(i)}(a)}{i!} (x - a)^i = f(a) + \frac{f'(a)}{1!} (x - a) + \frac{f''(a)}{2!} (x - a)^2 + \cdots + \frac{f^{(n)}(a)}{n!} (x - a)^n
 $$
 
-is its $n$th partial sum, so $T_n(x) \to f(x)$ as $n \to \infty$, and $T_n$ can be used as an approximation: $f(x) \approx T_n(x)$. The first-degree polynomial $T_1(x) = f(a) + f'(a)(x - a)$ is the linearization of $f$ at $a$ ([[§23 Linear Approximations and Differentials|§23]]); $T_1$ and its derivative have the same values at $a$ as $f$ and $f'$. In general:
+is its $n$th partial sum, so $T_n(x) \to f(x)$ as $n \to \infty$, and $T_n$ can be used as an approximation: $f(x) \approx T_n(x)$. The first-degree polynomial $T_1(x) = f(a) + f'(a)(x - a)$ is the linearization of $f$ at $a$ ([[§23 Linear Approximations and Differentials#^def-23-1|Definition §23.1]]); $T_1$ and its derivative have the same values at $a$ as $f$ and $f'$. In general:
 
 > [!theorem] Proposition §79.1: Taylor Polynomials Match Derivatives
 > The derivatives of $T_n$ at $a$ agree with those of $f$ up to and including the derivatives of order $n$:
@@ -45,7 +45,7 @@ is its $n$th partial sum, so $T_n(x) \to f(x)$ as $n \to \infty$, and $T_n$ can 
 
 ^pf-79-1
 
-*Uses:* [[§78 Taylor and Maclaurin Series#^def-78-2|Def. §78.2]], [[§14 Derivatives of Polynomials and Exponential Functions|§14]] (Power Rule)
+*Uses:* [[§78 Taylor and Maclaurin Series#^def-78-2|Def. §78.2]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|§14.2]] (Power Rule), [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|§14.3]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|§14.4]]
 
 > [!remark] Remark: How Fast Do the Taylor Polynomials of the Exponential Converge?
 > For $y = e^x$ at $0$, the graph of $T_1(x) = 1 + x$ is the tangent line at $(0, 1)$, the best linear approximation near $0$; $T_2(x) = 1 + x + x^2/2$ is a parabola and $T_3(x) = 1 + x + x^2/2 + x^3/6$ a cubic that fits the exponential curve more closely, and so on. Numerically:
@@ -160,7 +160,7 @@ is its $n$th partial sum, so $T_n(x) \to f(x)$ as $n \to \infty$, and $T_n$ can 
 
 ^ex-79-2
 
-The point of expanding about $a$ is to have $x$ close to $a$. To approximate $\sin 72°$, use Taylor polynomials at $a = \pi/3$ rather than $0$: $72°$ is close to $60° = \pi/3$, where the derivatives of $\sin$ are easy to compute ([[§78 Taylor and Maclaurin Series#^ex-78-2|Example §78.2]]). As $n$ increases, the Maclaurin polynomials $T_1, T_3, T_5, T_7$ approximate $\sin x$ well on larger and larger intervals ([[§78 Taylor and Maclaurin Series#^thm-78-7|§78]], figure). Calculators and computers evaluate $\sin$, $e^x$ and Bessel functions this way, typically with a Taylor polynomial modified to spread the error more evenly over an interval.
+The point of expanding about $a$ is to have $x$ close to $a$. To approximate $\sin 72°$, use Taylor polynomials at $a = \pi/3$ rather than $0$: $72°$ is close to $60° = \pi/3$, where the derivatives of $\sin$ are easy to compute ([[§78 Taylor and Maclaurin Series#^ex-78-2|Example §78.2]]). As $n$ increases, the Maclaurin polynomials $T_1, T_3, T_5, T_7$ approximate $\sin x$ well on larger and larger intervals ([[§78 Taylor and Maclaurin Series#^thm-78-7|Theorem §78.7]] and its figure). Calculators and computers evaluate $\sin$, $e^x$ and Bessel functions this way, typically with a Taylor polynomial modified to spread the error more evenly over an interval.
 
 ## Applications to Physics
 

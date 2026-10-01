@@ -16,7 +16,7 @@ This section measures the geometry of a space curve: how long it is, how sharply
 ## Arc Length
 
 > [!definition] Definition §88.1: Length of a Space Curve
-> The **length** of a space curve is the limit of the lengths of inscribed polygonal paths, as the number of vertices increases and the distances between consecutive vertices go to $0$, exactly as for plane curves ([[§64 Calculus with Parametric Curves|§64]]).
+> The **length** of a space curve is the limit of the lengths of inscribed polygonal paths, as the number of vertices increases and the distances between consecutive vertices go to $0$, exactly as for plane curves ([[§52 Arc Length#^def-52-1|Definition §52.1]], [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]]).
 >
 > *Stewart: 13.3 (text)*
 
@@ -39,7 +39,7 @@ This section measures the geometry of a space curve: how long it is, how sharply
 
 ^thm-88-1
 
-*Stewart omits the proof ("it can be shown"), as for plane curves in [[§64 Calculus with Parametric Curves|§64]]; the same derivation appears in 452 with [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]].*
+*Stewart omits the proof ("it can be shown"). The proof of the plane case, [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]], carries over word for word with a third component (the Mean Value Theorem applied to $h$ as well); the same derivation appears in 452 with [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]].*
 
 > [!remark]- Connections
 > - In 452 the arc length element $|\mathbf{r}'(t)|\,dt$ is the weight in the scalar line integral, [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]], and its two-dimensional analog is the area element $|\mathbf{X}_u \times \mathbf{X}_v|\,du\,dv$ of [[§18 Surface Integrals#^thm-18-1|452 Thm. §18.1]].
@@ -51,13 +51,13 @@ This section measures the geometry of a space curve: how long it is, how sharply
 > |\mathbf{r}(t_i) - \mathbf{r}(t_{i-1})| = \sqrt{[f(t_i) - f(t_{i-1})]^2 + [g(t_i) - g(t_{i-1})]^2 + [h(t_i) - h(t_{i-1})]^2} .
 > $$
 >
-> By the Mean Value Theorem ([[§26 The Mean Value Theorem|§26]]), $f(t_i) - f(t_{i-1}) = f'(t_i^*)\,\Delta t_i$ for some $t_i^*$ in the subinterval, and similarly for $g$ and $h$ (at possibly different points). So the polygon has length
+> By the Mean Value Theorem ([[§26 The Mean Value Theorem#^thm-26-2|Theorem §26.2]]), $f(t_i) - f(t_{i-1}) = f'(t_i^*)\,\Delta t_i$ for some $t_i^*$ in the subinterval, and similarly for $g$ and $h$ (at possibly different points). So the polygon has length
 >
 > $$
 > \sum_{i=1}^n \sqrt{f'(t_i^*)^2 + g'(t_i^{**})^2 + h'(t_i^{***})^2}\,\Delta t_i ,
 > $$
 >
-> which is almost a Riemann sum for $\int_a^b |\mathbf{r}'(t)|\,dt$. Because $f'$, $g'$, $h'$ are continuous, the three different sample points make no difference in the limit, and the polygon lengths tend to the integral. In the plane case, the formula is $L = \int_a^b \sqrt{[f'(t)]^2 + [g'(t)]^2}\,dt$, since $|\mathbf{r}'(t)| = |f'(t)\,\mathbf{i} + g'(t)\,\mathbf{j}|$. In [[§89 Motion in Space꞉ Velocity and Acceleration|§89]] $|\mathbf{r}'(t)|$ is the speed, so the formula says: to compute distance traveled, integrate speed.
+> which is almost a Riemann sum for $\int_a^b |\mathbf{r}'(t)|\,dt$. Because $f'$, $g'$, $h'$ are continuous, the three different sample points make no difference in the limit (the estimate is in the proof of [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]]), and the polygon lengths tend to the integral. In the plane case, the formula is $L = \int_a^b \sqrt{[f'(t)]^2 + [g'(t)]^2}\,dt$, since $|\mathbf{r}'(t)| = |f'(t)\,\mathbf{i} + g'(t)\,\mathbf{j}|$. In [[§89 Motion in Space꞉ Velocity and Acceleration#^prop-89-1|Proposition §89.1]] $|\mathbf{r}'(t)|$ is the speed, so the formula says: to compute distance traveled, integrate speed.
 
 ^rem-88-1
 
@@ -105,7 +105,7 @@ This section measures the geometry of a space curve: how long it is, how sharply
 ^ex-88-2
 
 > [!remark] Remark: Arc Length Does Not Depend on the Parametrization
-> A single curve $C$ can be represented by more than one vector function, each called a **parametrization** of $C$. For instance, the twisted cubic $\mathbf{r}_1(t) = \langle t, t^2, t^3 \rangle$, $1 \le t \le 2$, is also given by $\mathbf{r}_2(u) = \langle e^u, e^{2u}, e^{3u} \rangle$, $0 \le u \le \ln 2$, where $t = e^u$. Arc length is a geometric property of the curve, so Theorem §88.1 gives the same answer for either parametrization. Indeed, if $t = \phi(u)$ with $\phi$ increasing, then $\mathbf{r}_2(u) = \mathbf{r}_1(\phi(u))$ and $|\mathbf{r}_2'(u)| = |\mathbf{r}_1'(\phi(u))|\,\phi'(u)$ by the Chain Rule ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|Theorem §87.2]], Formula 6), so the substitution $t = \phi(u)$ ([[§38 The Substitution Rule|§38]]) turns $\int |\mathbf{r}_2'(u)|\,du$ into $\int |\mathbf{r}_1'(t)|\,dt$ over the corresponding interval.
+> A single curve $C$ can be represented by more than one vector function, each called a **parametrization** of $C$. For instance, the twisted cubic $\mathbf{r}_1(t) = \langle t, t^2, t^3 \rangle$, $1 \le t \le 2$, is also given by $\mathbf{r}_2(u) = \langle e^u, e^{2u}, e^{3u} \rangle$, $0 \le u \le \ln 2$, where $t = e^u$. Arc length is a geometric property of the curve, so Theorem §88.1 gives the same answer for either parametrization. Indeed, if $t = \phi(u)$ with $\phi$ increasing, then $\mathbf{r}_2(u) = \mathbf{r}_1(\phi(u))$ and $|\mathbf{r}_2'(u)| = |\mathbf{r}_1'(\phi(u))|\,\phi'(u)$ by the Chain Rule ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|Theorem §87.2]], Formula 6), so the substitution $t = \phi(u)$ ([[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]]) turns $\int |\mathbf{r}_2'(u)|\,du$ into $\int |\mathbf{r}_1'(t)|\,dt$ over the corresponding interval.
 
 ^rem-88-2
 
@@ -134,11 +134,11 @@ This section measures the geometry of a space curve: how long it is, how sharply
 ^prop-88-2
 
 > [!proof]+ Proof
-> The integrand $|\mathbf{r}'(u)|$ of Definition §88.2 is continuous, because $\mathbf{r}'$ is. So Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]) gives $s'(t) = |\mathbf{r}'(t)|$.
+> The integrand $|\mathbf{r}'(u)|$ of Definition §88.2 is continuous, because $\mathbf{r}'$ is. So Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]) gives $s'(t) = |\mathbf{r}'(t)|$.
 
 ^pf-88-2
 
-*Uses:* [[§88 Arc Length and Curvature#^def-88-2|Def. §88.2]], FTC Part 1 ([[§36 The Fundamental Theorem of Calculus|§36]])
+*Uses:* [[§88 Arc Length and Curvature#^def-88-2|Def. §88.2]], [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]]
 
 > [!remark] Remark: Method — Reparametrizing by Arc Length
 > 1. Compute $|\mathbf{r}'(t)|$ and the arc length function $s(t) = \int_a^t |\mathbf{r}'(u)|\,du$, where $t = a$ is the given starting point.

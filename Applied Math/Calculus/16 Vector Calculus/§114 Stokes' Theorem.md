@@ -37,9 +37,9 @@ For example, if $S$ is oriented upward, $C$ is traversed counterclockwise as vie
 
 ^thm-114-1
 
-Stewart says that the theorem is too difficult to prove in full generality at this level, and proves it when $S$ is a graph and $\mathbf{F}$, $S$ and $C$ are well behaved. The general proof (parametrized surfaces, reduced to Green's Theorem on the parameter domain) is in [[§20 Stokes' Theorem in ℝ³#^thm-20-1|452 Thm. §20.1]].
-
 > [!proof]+ Proof
+> *Stewart says that the theorem is too difficult to prove in full generality at this level, and proves it when $S$ is a graph and $\mathbf{F}$, $S$ and $C$ are well behaved. The general proof (parametrized surfaces, reduced to Green's Theorem on the parameter domain) is in [[§20 Stokes' Theorem in ℝ³#^thm-20-1|452 Thm. §20.1]].*
+>
 > **Special case: $S$ is a graph.** Assume $S$ has equation $z = g(x, y)$, $(x, y) \in D$, where $g$ has continuous second-order partial derivatives and $D$ is a simple plane region ([[§110 Green's Theorem#^def-110-2|Definition §110.2]]) whose boundary curve $C_1$ corresponds to $C$. Orient $S$ upward; then the positive orientation of $C$ corresponds to the positive orientation of $C_1$. Let $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j} + R\,\mathbf{k}$, with continuous partial derivatives.
 >
 > **The surface integral.** Apply Formula 10 of [[§113 Surface Integrals#^thm-113-4|Theorem §113.4]] with $\mathbf{F}$ replaced by $\operatorname{curl}\mathbf{F}$ (Definition §111.1):
@@ -60,7 +60,7 @@ Stewart says that the theorem is too difficult to prove in full generality at th
 > \end{aligned}
 > $$
 >
-> by Green's Theorem on $D$. Now differentiate with the Chain Rule, remembering that $P$, $Q$, $R$ are functions of $x$, $y$ and $z$, and $z = g(x, y)$:
+> by Green's Theorem on $D$ ([[§110 Green's Theorem#^thm-110-1|Theorem §110.1]]). Now differentiate with the Chain Rule, remembering that $P$, $Q$, $R$ are functions of $x$, $y$ and $z$, and $z = g(x, y)$:
 >
 > $$
 > \begin{aligned}
@@ -69,7 +69,7 @@ Stewart says that the theorem is too difficult to prove in full generality at th
 > \end{aligned}
 > $$
 >
-> Subtract. The terms with $\partial R/\partial z$ cancel, and so do the terms with $R$, because $\partial^2 z/\partial x\,\partial y = \partial^2 z/\partial y\,\partial x$ by Clairaut's Theorem. Six terms remain:
+> Subtract. The terms with $\partial R/\partial z$ cancel, and so do the terms with $R$, because $\partial^2 z/\partial x\,\partial y = \partial^2 z/\partial y\,\partial x$ by Clairaut's Theorem ([[§92 Partial Derivatives#^thm-92-2|Theorem §92.2]]). Six terms remain:
 >
 > $$
 > \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} + \frac{\partial Q}{\partial z}\frac{\partial z}{\partial x} - \frac{\partial R}{\partial y}\frac{\partial z}{\partial x} + \frac{\partial R}{\partial x}\frac{\partial z}{\partial y} - \frac{\partial P}{\partial z}\frac{\partial z}{\partial y} ,
@@ -79,7 +79,7 @@ Stewart says that the theorem is too difficult to prove in full generality at th
 
 ^pf-114-1
 
-*Uses:* [[§113 Surface Integrals#^thm-113-4|§113.4]], [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§110 Green's Theorem#^def-110-2|Def. §110.2]], [[§108 Line Integrals#^thm-108-7|§108.7]], [[§94 The Chain Rule|§94]] (Chain Rule), [[§92 Partial Derivatives|§92]] (Clairaut's Theorem)
+*Uses:* [[§114 Stokes' Theorem#^def-114-1|Def. §114.1]], [[§113 Surface Integrals#^thm-113-4|§113.4]], [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§110 Green's Theorem#^def-110-2|Def. §110.2]], [[§108 Line Integrals#^thm-108-7|§108.7]], [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§94 The Chain Rule#^thm-94-3|§94.3]] (Chain Rule), [[§92 Partial Derivatives#^thm-92-2|§92.2]] (Clairaut's Theorem)
 
 ![[m233-114-1.svg]]
 *The special case in the proof. $S$ (blue) is the graph of $g$ over the plane region $D$ (gray), oriented upward, and its boundary $C$ sits directly above the boundary $C_1$ of $D$. Both run counterclockwise seen from above, so the walker on $C$ with head along $\mathbf{n}$ has $S$ on the left. Substituting $z = g(x, y)$ pushes the line integral down from $C$ to $C_1$, where Green's Theorem applies.*
@@ -205,7 +205,7 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 > \iint_S \nabla \times (xyz\,\mathbf{i} + z\,\mathbf{j} - y\,\mathbf{k}) \cdot d\mathbf{S} = n\pi .
 > $$
 >
-> Let $\mathbf{G} = xyz\,\mathbf{i} + z\,\mathbf{j} - y\,\mathbf{k}$. By Corollary §114.2 the flux is the same for every such $S$, and equals $\oint_C \mathbf{G} \cdot d\mathbf{r}$.
+> Let $\mathbf{G} = xyz\,\mathbf{i} + z\,\mathbf{j} - y\,\mathbf{k}$. By [[§114 Stokes' Theorem#^cor-114-2|Corollary §114.2]] the flux is the same for every such $S$, and equals $\oint_C \mathbf{G} \cdot d\mathbf{r}$.
 >
 > **On the curve.** Seen from the positive $x$-axis, the $y$-axis points right and the $z$-axis up, so $\mathbf{r}(t) = \langle 0, \sqrt2\cos t, \sqrt2\sin t \rangle$, $0 \le t \le 2\pi$, runs counterclockwise. On $C$, $x = 0$, so $\mathbf{G}(\mathbf{r}(t)) = \langle 0,\ \sqrt2\sin t,\ -\sqrt2\cos t \rangle$, and with $\mathbf{r}'(t) = \langle 0, -\sqrt2\sin t, \sqrt2\cos t \rangle$,
 >
@@ -228,7 +228,7 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 > [!example] Example §114.5: A Cone Meets a Sphere
 > Let $\mathbf{F}(x, y, z) = \langle \sin z, x, \cos y \rangle$. Use Stokes' Theorem to calculate $\int_C \mathbf{F} \cdot d\mathbf{r}$, where $C$ is the curve of intersection of the cone $z = \sqrt{x^2 + y^2}$ and the sphere $x^2 + y^2 + z^2 = 9$.
 >
-> **The curve.** On the cone $x^2 + y^2 = z^2$, so the sphere gives $2z^2 = 9$, $z = 3/\sqrt2$ (positive on the cone). So $C$ is the horizontal circle $x^2 + y^2 = \frac92$, $z = \frac{3}{\sqrt2}$. The problem gives no orientation; take $C$ counterclockwise as viewed from above (the reverse orientation changes the sign of the answer).
+> **The curve.** On the cone $x^2 + y^2 = z^2$, so the sphere gives $2z^2 = 9$, $z = 3/\sqrt2$ (positive on the cone). So $C$ is the horizontal circle $x^2 + y^2 = \frac92$, $z = \frac{3}{\sqrt2}$. The problem gives no orientation; take $C$ counterclockwise as viewed from above, as the posted solution does (the reverse orientation changes the sign of the answer).
 >
 > **The surface.** Take the flat disk $S$: $x^2 + y^2 \le \frac92$ in the plane $z = 3/\sqrt2$, with upward normal $\mathbf{k}$. Then
 >
@@ -311,7 +311,7 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 
 ## Curl-Free Fields on ℝ³ Are Conservative
 
-Stokes' Theorem supplies the proof, announced in [[§111 Curl and Divergence#^cor-111-2|§111]], of the three-dimensional test for conservative fields.
+Stokes' Theorem supplies the proof, announced in §111 after [[§111 Curl and Divergence#^cor-111-2|Corollary §111.2]] (of which it is a partial converse), of the three-dimensional test for conservative fields.
 
 > [!theorem] Theorem §114.4: Curl-Free Fields on ℝ³ Are Conservative
 > If $\mathbf{F}$ is a vector field defined on all of $\mathbb{R}^3$ whose component functions have continuous partial derivatives and $\operatorname{curl}\mathbf{F} = \mathbf{0}$, then $\mathbf{F}$ is a conservative vector field.

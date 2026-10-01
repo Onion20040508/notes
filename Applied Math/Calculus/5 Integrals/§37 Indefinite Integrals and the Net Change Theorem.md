@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 5.4.*
 
-FTC2 ([[§36 The Fundamental Theorem of Calculus|§36]]) evaluates a definite integral as soon as an antiderivative is known, so antiderivatives get a notation of their own, the indefinite integral $\int f(x)\,dx$, and a table. This section restates the antidifferentiation formulas of [[§33 Antiderivatives|§33]] in that notation and uses them to evaluate definite integrals. It then reads FTC2 as the **Net Change Theorem**: the integral of a rate of change is the net change. In particular the integral of velocity is displacement, and the integral of speed is distance traveled, which confirms the guess made in [[§34 The Area and Distance Problems|§34]].
+FTC2 ([[§36 The Fundamental Theorem of Calculus#^thm-36-2|Theorem §36.2]]) evaluates a definite integral as soon as an antiderivative is known, so antiderivatives get a notation of their own, the indefinite integral $\int f(x)\,dx$, and a table. This section restates the antidifferentiation formulas of [[§33 Antiderivatives#^thm-33-2|Theorem §33.2]] in that notation and uses them to evaluate definite integrals. It then reads FTC2 as the **Net Change Theorem**: the integral of a rate of change is the net change. In particular the integral of velocity is displacement, and the integral of speed is distance traveled, which confirms the guess made in [[§34 The Area and Distance Problems#^ex-34-4|Example §34.4]].
 
 ## Indefinite Integrals
 
@@ -58,18 +58,18 @@ FTC2 ([[§36 The Fundamental Theorem of Calculus|§36]]) evaluates a definite in
 
 > [!proof]+ Proof
 > Every formula is checked by differentiating the right side and obtaining the integrand ([[§37 Indefinite Integrals and the Net Change Theorem#^def-37-1|Definition §37.1]]).
-> - **The two rules.** If $F' = f$ and $G' = g$, then $(cF)' = cf$ and $(F + G)' = f + g$ (Constant Multiple and Sum Rules, [[§14 Derivatives of Polynomials and Exponential Functions|§14]]).
-> - **Powers and exponentials.** $\frac{d}{dx}(kx) = k$; $\frac{d}{dx} \frac{x^{n+1}}{n + 1} = \frac{(n + 1)x^n}{n + 1} = x^n$ for $n \ne -1$ (Power Rule, [[§14 Derivatives of Polynomials and Exponential Functions|§14]]); $\frac{d}{dx} e^x = e^x$ ([[§14 Derivatives of Polynomials and Exponential Functions|§14]]); $\frac{d}{dx} \frac{b^x}{\ln b} = \frac{b^x \ln b}{\ln b} = b^x$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]).
-> - **The logarithm.** $\frac{d}{dx} \ln|x| = \frac1x$ for $x \ne 0$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]): for $x > 0$ it is $\frac{d}{dx}\ln x = \frac1x$, and for $x < 0$, $\frac{d}{dx}\ln(-x) = \frac{-1}{-x} = \frac1x$ by the Chain Rule.
-> - **Trigonometric functions** ([[§16 Derivatives of Trigonometric Functions|§16]]): $(-\cos x)' = \sin x$, $(\sin x)' = \cos x$, $(\tan x)' = \sec^2 x$, $(-\cot x)' = \csc^2 x$, $(\sec x)' = \sec x \tan x$, $(-\csc x)' = \csc x \cot x$.
-> - **Inverse trigonometric functions** ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]): $(\tan^{-1} x)' = \frac{1}{1 + x^2}$ and $(\sin^{-1} x)' = \frac{1}{\sqrt{1 - x^2}}$.
-> - **Hyperbolic functions** ([[§24 Hyperbolic Functions|§24]]): $(\cosh x)' = \sinh x$ and $(\sinh x)' = \cosh x$.
+> - **The two rules.** If $F' = f$ and $G' = g$, then $(cF)' = cf$ and $(F + G)' = f + g$ (Constant Multiple and Sum Rules, [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|Theorems §14.3]] and [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|§14.4]]).
+> - **Powers and exponentials.** $\frac{d}{dx}(kx) = k$; $\frac{d}{dx} \frac{x^{n+1}}{n + 1} = \frac{(n + 1)x^n}{n + 1} = x^n$ for $n \ne -1$ (Power Rule, [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|Theorem §14.2]], and its general version [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-6|Theorem §19.6]]); $\frac{d}{dx} e^x = e^x$ ([[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-6|Theorem §14.6]]); $\frac{d}{dx} \frac{b^x}{\ln b} = \frac{b^x \ln b}{\ln b} = b^x$ ([[§17 The Chain Rule#^thm-17-5|Theorem §17.5]]).
+> - **The logarithm.** $\frac{d}{dx} \ln|x| = \frac1x$ for $x \ne 0$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|Theorem §19.5]]): for $x > 0$ it is $\frac{d}{dx}\ln x = \frac1x$, and for $x < 0$, $\frac{d}{dx}\ln(-x) = \frac{-1}{-x} = \frac1x$ by the Chain Rule.
+> - **Trigonometric functions** ([[§16 Derivatives of Trigonometric Functions#^thm-16-4|Theorem §16.4]]): $(-\cos x)' = \sin x$, $(\sin x)' = \cos x$, $(\tan x)' = \sec^2 x$, $(-\cot x)' = \csc^2 x$, $(\sec x)' = \sec x \tan x$, $(-\csc x)' = \csc x \cot x$.
+> - **Inverse trigonometric functions** ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|Theorem §19.8]]): $(\tan^{-1} x)' = \frac{1}{1 + x^2}$ and $(\sin^{-1} x)' = \frac{1}{\sqrt{1 - x^2}}$.
+> - **Hyperbolic functions** ([[§24 Hyperbolic Functions#^thm-24-2|Theorem §24.2]]): $(\cosh x)' = \sinh x$ and $(\sinh x)' = \cosh x$.
 >
-> Adding the constant $C$ does not change the derivative. That $F(x) + C$ is the *most general* antiderivative on an interval is Theorem 4.9.1 ([[§33 Antiderivatives|§33]]).
+> Adding the constant $C$ does not change the derivative. That $F(x) + C$ is the *most general* antiderivative on an interval is Theorem 4.9.1 ([[§33 Antiderivatives#^thm-33-1|Theorem §33.1]]).
 
 ^pf-37-1
 
-*Uses:* [[§37 Indefinite Integrals and the Net Change Theorem#^def-37-1|Def. §37.1]], [[§14 Derivatives of Polynomials and Exponential Functions|§14]], [[§16 Derivatives of Trigonometric Functions|§16]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]], [[§24 Hyperbolic Functions|§24]], [[§33 Antiderivatives|§33]] (Theorem 4.9.1)
+*Uses:* [[§37 Indefinite Integrals and the Net Change Theorem#^def-37-1|Def. §37.1]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|§14.2]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|§14.3]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|§14.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-6|§14.6]], [[§16 Derivatives of Trigonometric Functions#^thm-16-4|§16.4]], [[§17 The Chain Rule#^thm-17-5|§17.5]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|§19.5]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-6|§19.6]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|§19.8]], [[§24 Hyperbolic Functions#^thm-24-2|§24.2]], [[§33 Antiderivatives#^thm-33-1|§33.1]]
 
 > [!remark] Remark: Convention — Formulas Hold on an Interval
 > The most general antiderivative *on a given interval* is a particular antiderivative plus a constant (Theorem 4.9.1). **A formula for a general indefinite integral is understood to be valid only on an interval.** Thus
@@ -182,7 +182,7 @@ In FTC2, $F$ is an antiderivative of $f$, that is $F' = f$, so the theorem can b
 
 ^rem-37-3
 
-The most important instance concerns motion along a line, and it settles the guess made in [[§34 The Area and Distance Problems|§34]] (Equation 5 there), now for objects that may also move backward.
+The most important instance concerns motion along a line, and it settles the guess made in [[§34 The Area and Distance Problems#^ex-34-4|Example §34.4]] (Equation 5 after it), now for objects that may also move backward.
 
 > [!theorem] Corollary §37.3: Displacement and Distance Traveled
 > Let an object move along a straight line with position function $s(t)$ and continuous velocity $v(t) = s'(t)$. Then:

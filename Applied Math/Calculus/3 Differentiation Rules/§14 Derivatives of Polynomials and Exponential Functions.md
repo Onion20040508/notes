@@ -35,11 +35,11 @@ Computing every derivative from the limit definition ([[§13 The Derivative as a
 
 ^pf-14-1
 
-*Uses:* [[§13 The Derivative as a Function|§13]] (definition of $f'(x)$)
+*Uses:* [[§13 The Derivative as a Function#^def-13-1|Def. §13.1]] (definition of $f'(x)$)
 
 ## Power Functions
 
-For $f(x) = x$ the graph is the line $y = x$ of slope $1$, so $\frac{d}{dx}(x) = 1$ (Equation 1). In [[§13 The Derivative as a Function|§13]] we found $\frac{d}{dx}(x^2) = 2x$ and $\frac{d}{dx}(x^3) = 3x^2$ (Equation 2). For $n = 4$, expanding $(x + h)^4$,
+For $f(x) = x$ the graph is the line $y = x$ of slope $1$, so $\frac{d}{dx}(x) = 1$ (Equation 1). In [[§13 The Derivative as a Function|§13]] ([[§13 The Derivative as a Function#^ex-13-1|Example §13.1]] and Stewart's Example 2.8.2) we found $\frac{d}{dx}(x^2) = 2x$ and $\frac{d}{dx}(x^3) = 3x^2$ (Equation 2). For $n = 4$, expanding $(x + h)^4$,
 
 $$
 \begin{aligned}
@@ -72,7 +72,7 @@ $$
 > x^n - a^n = (x - a)\big(x^{n-1} + x^{n-2} a + \cdots + x a^{n-2} + a^{n-1}\big) .
 > $$
 >
-> With $f(x) = x^n$ and the form $f'(a) = \lim_{x \to a} \dfrac{f(x) - f(a)}{x - a}$ of the derivative ([[§12 Derivatives and Rates of Change|§12]], Equation 2.7.5), cancel $x - a$ (allowed, since $x \ne a$ in the limit):
+> With $f(x) = x^n$ and the form $f'(a) = \lim_{x \to a} \dfrac{f(x) - f(a)}{x - a}$ of the derivative ([[§12 Derivatives and Rates of Change#^def-12-3|Definition §12.3]], Equation 2.7.5), cancel $x - a$ (allowed, since $x \ne a$ in the limit):
 >
 > $$
 > \begin{aligned}
@@ -102,16 +102,16 @@ $$
 
 ^pf-14-2
 
-*Uses:* [[§12 Derivatives and Rates of Change|§12]] (Equation 2.7.5), [[§13 The Derivative as a Function|§13]] (definition of $f'(x)$), [[§10 Continuity#^thm-10-2|§10.2]], [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Laws)
+*Uses:* [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]] (Equation 2.7.5), [[§13 The Derivative as a Function#^def-13-1|Def. §13.1]] (definition of $f'(x)$), [[§10 Continuity#^thm-10-2|§10.2]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§28 Basic Properties of the Derivative#^ex-28-2|451 Ex. §28.2]], with the same factorization as the first proof.
 
-The rule holds for other exponents too. From the definition, $\frac{d}{dx}\big(\frac1x\big) = -\frac{1}{x^2}$ (Stewart, Exercise 69), that is, $\frac{d}{dx}(x^{-1}) = (-1)x^{-2}$. Every negative integer follows from the Quotient Rule ([[§15 The Product and Quotient Rules|§15]]). And $\frac{d}{dx}\sqrt{x} = \frac{1}{2\sqrt{x}}$ ([[§13 The Derivative as a Function|§13]], Example 2.8.3) says $\frac{d}{dx}(x^{1/2}) = \frac12 x^{-1/2}$. In fact:
+The rule holds for other exponents too. From the definition, $\frac{d}{dx}\big(\frac1x\big) = -\frac{1}{x^2}$ (Stewart, Exercise 69), that is, $\frac{d}{dx}(x^{-1}) = (-1)x^{-2}$. Every negative integer follows from the Quotient Rule ([[§15 The Product and Quotient Rules#^cor-15-3|Corollary §15.3]]). And $\frac{d}{dx}\sqrt{x} = \frac{1}{2\sqrt{x}}$ ([[§13 The Derivative as a Function#^ex-13-2|Example §13.2]]) says $\frac{d}{dx}(x^{1/2}) = \frac12 x^{-1/2}$. In fact:
 
 **The Power Rule (General Version).** If $n$ is any real number, then $\dfrac{d}{dx}(x^n) = n x^{n-1}$.
 
-This is proved with logarithmic differentiation in [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]] (Stewart 3.6). It is used freely from here on.
+This is proved with logarithmic differentiation in [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-6|Theorem §19.6]] (Stewart 3.6). It is used freely from here on.
 
 > [!example] Example §14.1: Negative and Fractional Exponents
 > Differentiate (a) $f(x) = \dfrac{1}{x^2}$ and (b) $y = \sqrt[3]{x^2}$.
@@ -130,7 +130,7 @@ This is proved with logarithmic differentiation in [[§19 Derivatives of Logarit
 > \frac{dy}{dx} = \frac{d}{dx}\big(x^{2/3}\big) = \tfrac23 x^{(2/3) - 1} = \tfrac23 x^{-1/3} .
 > $$
 >
-> The derivative $\frac23 x^{-1/3}$ is not defined at $0$: the graph of $y = \sqrt[3]{x^2}$ has a cusp there, and $y$ is not differentiable at $0$. Note also that $y' < 0$ for $x < 0$, where $y$ decreases, and $y' > 0$ for $x > 0$, where $y$ increases. That a function increases where its derivative is positive is proved in [[§27 What Derivatives Tell Us About the Shape of a Graph|§27]].
+> The derivative $\frac23 x^{-1/3}$ is not defined at $0$: the graph of $y = \sqrt[3]{x^2}$ has a cusp there, and $y$ is not differentiable at $0$. Note also that $y' < 0$ for $x < 0$, where $y$ decreases, and $y' > 0$ for $x > 0$, where $y$ increases. That a function increases where its derivative is positive is proved in [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]].
 >
 > *Stewart: Example 3.1.2*
 
@@ -202,7 +202,7 @@ With the Power Rule, tangent lines no longer need the limit definition. A second
 
 ^pf-14-3
 
-*Uses:* [[§13 The Derivative as a Function|§13]] (definition of $f'(x)$), [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Law 3)
+*Uses:* [[§13 The Derivative as a Function#^def-13-1|Def. §13.1]] (definition of $f'(x)$), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Law 3)
 
 For instance, $\frac{d}{dx}(3x^4) = 3 \cdot 4x^3 = 12x^3$, and $\frac{d}{dx}(-x) = \frac{d}{dx}[(-1)x] = (-1) \cdot 1 = -1$.
 
@@ -238,10 +238,10 @@ For instance, $\frac{d}{dx}(3x^4) = 3 \cdot 4x^3 = 12x^3$, and $\frac{d}{dx}(-x)
 
 ^pf-14-4
 
-*Uses:* [[§13 The Derivative as a Function|§13]] (definition of $f'(x)$), [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Law 1), [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|§14.3]]
+*Uses:* [[§13 The Derivative as a Function#^def-13-1|Def. §13.1]] (definition of $f'(x)$), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Law 1), [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|§14.3]]
 
 > [!remark]- Connections
-> - Rigorous treatment of the sum rule (and of the product and quotient rules of [[§15 The Product and Quotient Rules|§15]]): [[§28 Basic Properties of the Derivative#^thm-28-2|451 Thm. §28.2]].
+> - Rigorous treatment of the sum rule (and of the product and quotient rules, [[§15 The Product and Quotient Rules#^thm-15-1|Theorems §15.1]] and [[§15 The Product and Quotient Rules#^thm-15-2|§15.2]]): [[§28 Basic Properties of the Derivative#^thm-28-2|451 Thm. §28.2]].
 
 Combining Theorems §14.1–§14.4 differentiates any polynomial term by term.
 
@@ -273,7 +273,7 @@ Combining Theorems §14.1–§14.4 differentiates any polynomial term by term.
 
 ## Exponential Functions
 
-Try the definition on $f(x) = b^x$ ($b > 0$). By the law $b^{x+h} = b^x b^h$ ([[§4 Exponential Functions|§4]]),
+Try the definition on $f(x) = b^x$ ($b > 0$). By the law $b^{x+h} = b^x b^h$ ([[§4 Exponential Functions#^thm-4-1|Theorem §4.1]]),
 
 $$
 f'(x) = \lim_{h \to 0} \frac{b^{x+h} - b^x}{h} = \lim_{h \to 0} \frac{b^x b^h - b^x}{h} = \lim_{h \to 0} \frac{b^x (b^h - 1)}{h} .
@@ -309,7 +309,7 @@ $$
 
 ^pf-14-5
 
-*Uses:* [[§4 Exponential Functions|§4]] (laws of exponents), [[§13 The Derivative as a Function|§13]] (definition of $f'(x)$), [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Law 3)
+*Uses:* [[§4 Exponential Functions#^thm-4-1|§4.1]] (laws of exponents), [[§13 The Derivative as a Function#^def-13-1|Def. §13.1]] (definition of $f'(x)$), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Law 3)
 
 > [!remark] Remark: The Constants for Base 2 and Base 3
 > A table of values of $(b^h - 1)/h$ for $h = 0.1, 0.01, \ldots, 0.00001$ suggests (correct to three decimal places)
@@ -328,7 +328,7 @@ $$
 
 ^rem-14-2
 
-The simplest formula would have $f'(0) = 1$. Since $f'(0) < 1$ for $b = 2$ and $f'(0) > 1$ for $b = 3$, it is reasonable that some base between $2$ and $3$ gives exactly $1$. This is how $e$ was introduced in [[§4 Exponential Functions|§4]].
+The simplest formula would have $f'(0) = 1$. Since $f'(0) < 1$ for $b = 2$ and $f'(0) > 1$ for $b = 3$, it is reasonable that some base between $2$ and $3$ gives exactly $1$. This is how $e$ was introduced in [[§4 Exponential Functions#^def-4-4|Definition §4.4]].
 
 > [!definition] Definition §14.2: The Number e
 > $e$ is the number such that
@@ -342,6 +342,8 @@ The simplest formula would have $f'(0) = 1$. Since $f'(0) < 1$ for $b = 2$ and $
 > *Stewart: 3.1, Definition of the Number e*
 
 ^def-14-2
+
+*Stewart asserts that such a number exists. Appendix G constructs $e$ as the number with $\ln e = 1$ ([[§121 The Logarithm Defined as an Integral#^def-121-2|Definition §121.2]]).*
 
 ![[m233-14-1.svg]]
 *The exponential functions $2^x$, $e^x$ and $3^x$ all pass through $(0, 1)$. Their tangent lines there (dashed) have slopes $f'(0) \approx 0.693$, exactly $1$, and $\approx 1.099$. The number $e$ is the base for which the slope is exactly $1$; by Theorem §14.5 the slope of $b^x$ at every other point is then $f'(0)$ times the height.*
@@ -364,6 +366,8 @@ The simplest formula would have $f'(0) = 1$. Since $f'(0) < 1$ for $b = 2$ and $
 
 *Uses:* [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-5|§14.5]], [[§14 Derivatives of Polynomials and Exponential Functions#^def-14-2|Def. §14.2]]
 
+*From the integral definition of $\ln$: [[§121 The Logarithm Defined as an Integral#^thm-121-7|Theorem §121.7]].*
+
 > [!example] Example §14.4: First and Second Derivatives
 > If $f(x) = e^x - x$, find $f'$ and $f''$, and compare the graphs of $f$ and $f'$.
 >
@@ -373,7 +377,7 @@ The simplest formula would have $f'(0) = 1$. Since $f'(0) < 1$ for $b = 2$ and $
 > f'(x) = \frac{d}{dx}(e^x) - \frac{d}{dx}(x) = e^x - 1 .
 > $$
 >
-> The second derivative is the derivative of $f'$ ([[§13 The Derivative as a Function|§13]]):
+> The second derivative is the derivative of $f'$ ([[§13 The Derivative as a Function#^def-13-5|Definition §13.5]]):
 >
 > $$
 > f''(x) = \frac{d}{dx}(e^x) - \frac{d}{dx}(1) = e^x .

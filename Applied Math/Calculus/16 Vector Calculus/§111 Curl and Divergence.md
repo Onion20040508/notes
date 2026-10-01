@@ -60,11 +60,11 @@ Two operations on vector fields in $\mathbb{R}^3$ resemble differentiation. The 
 > = \left( \frac{\partial^2 f}{\partial y\,\partial z} - \frac{\partial^2 f}{\partial z\,\partial y} \right)\mathbf{i} + \left( \frac{\partial^2 f}{\partial z\,\partial x} - \frac{\partial^2 f}{\partial x\,\partial z} \right)\mathbf{j} + \left( \frac{\partial^2 f}{\partial x\,\partial y} - \frac{\partial^2 f}{\partial y\,\partial x} \right)\mathbf{k} = \mathbf{0}
 > $$
 >
-> by Clairaut's Theorem ([[§92 Partial Derivatives|§92]]), since the second-order partial derivatives are continuous. (Compare $\mathbf{a} \times \mathbf{a} = \mathbf{0}$ for vectors, [[§83 The Cross Product|§83]].)
+> by Clairaut's Theorem ([[§92 Partial Derivatives#^thm-92-2|Theorem §92.2]]), since the second-order partial derivatives are continuous. (Compare $\mathbf{a} \times \mathbf{a} = \mathbf{0}$ for vectors, [[§83 The Cross Product#^ex-83-1|Example §83.1]].)
 
 ^pf-111-1
 
-*Uses:* [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§92 Partial Derivatives|§92]] (Clairaut's Theorem)
+*Uses:* [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§92 Partial Derivatives#^thm-92-2|§92.2]]
 
 > [!theorem] Corollary §111.2: Conservative Fields Are Curl-Free
 > If $\mathbf{F}$ is conservative (with a potential function whose second-order partial derivatives are continuous), then $\operatorname{curl}\mathbf{F} = \mathbf{0}$. Equivalently: if $\operatorname{curl}\mathbf{F} \ne \mathbf{0}$, then $\mathbf{F}$ is not conservative.
@@ -135,11 +135,11 @@ This is the three-dimensional form of [[§109 The Fundamental Theorem for Line I
 > \end{aligned}
 > $$
 >
-> because the terms cancel in pairs by Clairaut's Theorem ([[§92 Partial Derivatives|§92]]). (Compare the scalar triple product $\mathbf{a} \cdot (\mathbf{a} \times \mathbf{b}) = 0$.)
+> because the terms cancel in pairs by Clairaut's Theorem ([[§92 Partial Derivatives#^thm-92-2|Theorem §92.2]]). (Compare the scalar triple product $\mathbf{a} \cdot (\mathbf{a} \times \mathbf{b}) = 0$, [[§83 The Cross Product#^thm-83-2|Theorem §83.2]].)
 
 ^pf-111-3
 
-*Uses:* [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§111 Curl and Divergence#^def-111-3|Def. §111.3]], [[§92 Partial Derivatives|§92]] (Clairaut's Theorem)
+*Uses:* [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§111 Curl and Divergence#^def-111-3|Def. §111.3]], [[§92 Partial Derivatives#^thm-92-2|§92.2]]
 
 > [!remark]- Connections
 > - Both identities, $\operatorname{curl}(\nabla f) = \mathbf{0}$ and $\operatorname{div}(\operatorname{curl}\mathbf{F}) = 0$, are proved the same way in [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence|452 §11]], and become the single identity $d^2 = 0$ for differential forms: [[§22 The Algebra of Differential Forms#^thm-22-5|452 Thm. §22.5]] (hub [[Exterior Derivative Squares to Zero]]), which is Clairaut's theorem in disguise, [[§22 The Algebra of Differential Forms#^prop-22-9|452 Prop. §22.9]].
@@ -149,7 +149,7 @@ So if $\operatorname{div}\mathbf{F} \ne 0$, then $\mathbf{F}$ is not the curl of
 > [!definition] Definition §111.4: Incompressible
 > If $\operatorname{div}\mathbf{F} = 0$, then $\mathbf{F}$ is said to be **incompressible**.
 >
-> The name *divergence* comes from fluid flow. If $\mathbf{F}(x, y, z)$ is the velocity of a fluid (or gas), then $\operatorname{div}\mathbf{F}(x, y, z)$ represents the net rate of change (with respect to time) of the mass of fluid flowing from the point $(x, y, z)$ per unit volume: it measures the tendency of the fluid to diverge from the point (made precise in [[§115 The Divergence Theorem#^thm-115-3|Theorem §115.3]]). For example, $\mathbf{F}(x, y, z) = (1 + x^2)\,\mathbf{i} + y\,\mathbf{j}$ has $\operatorname{div}\mathbf{F} = 2x + 1$: the flow is outward (the arrows ending near a point are longer than those starting there) where $x > -\frac12$, and inward where $x < -\frac12$. The field $\mathbf{F}(x, y, z) = -x\,\mathbf{i} + y\,\mathbf{j}$ has $\operatorname{div}\mathbf{F} = -1 + 1 = 0$ everywhere.
+> The name *divergence* comes from fluid flow. If $\mathbf{F}(x, y, z)$ is the velocity of a fluid (or gas), then $\operatorname{div}\mathbf{F}(x, y, z)$ represents the net rate of change (with respect to time) of the mass of fluid flowing from the point $(x, y, z)$ per unit volume: it measures the tendency of the fluid to diverge from the point (made precise in [[§115 The Divergence Theorem#^thm-115-3|Theorem §115.3]]). For example, $\mathbf{F}(x, y, z) = (1 + x^2)\,\mathbf{i} + y\,\mathbf{j}$ has $\operatorname{div}\mathbf{F} = 2x + 1$: the flow is outward (the arrows starting near a point are longer than those ending there) where $x > -\frac12$, and inward where $x < -\frac12$. The field $\mathbf{F}(x, y, z) = -x\,\mathbf{i} + y\,\mathbf{j}$ has $\operatorname{div}\mathbf{F} = -1 + 1 = 0$ everywhere.
 >
 > *Stewart: 16.5 (text)*
 

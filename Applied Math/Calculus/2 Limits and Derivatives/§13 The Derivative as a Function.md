@@ -210,7 +210,7 @@ In [[§12 Derivatives and Rates of Change|§12]] the derivative was computed at 
 > - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-1|451 Thm. §28.1]] (same proof), with the derivative defined in [[§28 Basic Properties of the Derivative#^def-28-1|451 Def. §28.1]]; the converse fails, [[§28 Basic Properties of the Derivative#^rem-28-1|451 Remark: The converse fails]].
 
 > [!remark] Remark: The Converse Is False
-> There are functions that are continuous but not differentiable. For instance, $f(x) = |x|$ is continuous at $0$, because $\lim_{x \to 0} |x| = 0 = f(0)$ (Stewart's Example 2.3.7, [[§8 Calculating Limits Using the Limit Laws|§8]]), but it is not differentiable at $0$ by Example §13.4. Read in the contrapositive, Theorem §13.1 gives a test: if $f$ is not continuous at $a$, then $f$ is not differentiable at $a$.
+> There are functions that are continuous but not differentiable. For instance, $f(x) = |x|$ is continuous at $0$, because $\lim_{x \to 0} |x| = 0 = f(0)$ (Stewart's Example 2.3.7: both one-sided limits are $0$, so [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]] applies), but it is not differentiable at $0$ by Example §13.4. Read in the contrapositive, Theorem §13.1 gives a test: if $f$ is not continuous at $a$, then $f$ is not differentiable at $a$.
 
 ^rem-13-2
 
@@ -269,7 +269,7 @@ In [[§12 Derivatives and Rates of Change|§12]] the derivative was computed at 
 
 ^def-13-5
 
-$f''(x)$ is the slope of the curve $y = f'(x)$ at $(x, f'(x))$: the rate of change of the slope of the original curve, a rate of change of a rate of change. The second derivative's information about the shape of a graph is the subject of [[§27 What Derivatives Tell Us About the Shape of a Graph|§27]].
+$f''(x)$ is the slope of the curve $y = f'(x)$ at $(x, f'(x))$: the rate of change of the slope of the original curve, a rate of change of a rate of change. The second derivative's information about the shape of a graph is the subject of [[§27 What Derivatives Tell Us About the Shape of a Graph|§27]] ([[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-3|Theorem §27.3]], the Concavity Test).
 
 > [!example] Example §13.5: Higher Derivatives of a Cubic
 > If $f(x) = x^3 - x$, find and interpret $f''(x)$, and find $f'''(x)$ and $f^{(4)}(x)$.

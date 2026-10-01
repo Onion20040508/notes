@@ -24,7 +24,7 @@ Under ideal conditions (unlimited environment, adequate nutrition, no predators,
 > \frac{dP}{dt} = kP ,
 > $$
 >
-> where $k$ is the proportionality constant. It is a differential equation because it contains an unknown function $P$ and its derivative $dP/dt$.
+> where $k$ is the proportionality constant. It is a differential equation because it contains an unknown function $P$ and its derivative $dP/dt$. (It is the law of natural growth of [[§21 Exponential Growth and Decay#^def-21-1|Definition §21.1]]; Section 9.4 returns to it in [[§60 Models for Population Growth#^def-60-1|Definition §60.1]].)
 >
 > *Stewart: 9.1, Equation 1*
 
@@ -43,7 +43,7 @@ Under ideal conditions (unlimited environment, adequate nutrition, no predators,
 ^prop-57-1
 
 > [!proof]+ Proof
-> The equation asks for a function whose derivative is a constant multiple of itself, and exponential functions have that property ([[§17 The Chain Rule|§17]]):
+> The equation asks for a function whose derivative is a constant multiple of itself, and exponential functions have that property ([[§17 The Chain Rule#^cor-17-4|Corollary §17.4]]):
 >
 > $$
 > P'(t) = C\big(ke^{kt}\big) = k\big(Ce^{kt}\big) = kP(t) .
@@ -53,12 +53,12 @@ Under ideal conditions (unlimited environment, adequate nutrition, no predators,
 
 ^pf-57-1
 
-*Uses:* [[§57 Modeling with Differential Equations#^def-57-1|Def. §57.1]], [[§14 Derivatives of Polynomials and Exponential Functions|§14]] (derivative of the exponential), [[§17 The Chain Rule|§17]]
+*Uses:* [[§57 Modeling with Differential Equations#^def-57-1|Def. §57.1]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-6|§14.6]], [[§17 The Chain Rule#^cor-17-4|§17.4]]
 
-*There are no other solutions. This is Stewart 3.8 Theorem 2 ([[§21 Exponential Growth and Decay|§21]]); Stewart proves it in Section 9.4 ([[§60 Models for Population Growth|§60]]).*
+*There are no other solutions: this is [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]] (Stewart 3.8, Theorem 2), proved there; Stewart proves it in Section 9.4 ([[§60 Models for Population Growth#^thm-60-1|Theorem §60.1]]).*
 
 > [!remark]- Connections
-> - Uniqueness in one line: if $P' = kP$, then $\big(P(t)e^{-kt}\big)' = (P' - kP)e^{-kt} = 0$, so $P(t)e^{-kt}$ is constant by [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (vanishing derivative means constant). The multiplier $e^{-kt}$ is the integrating factor of [[§29 The Mean Value Theorem#^rem-29-2|451 Remark after Ex. §29.4]] and of [[§61 Linear Equations|§61]].
+> - Uniqueness in one line: if $P' = kP$, then $\big(P(t)e^{-kt}\big)' = (P' - kP)e^{-kt} = 0$, so $P(t)e^{-kt}$ is constant by [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (vanishing derivative means constant). This is the argument of the proof of [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]]. The multiplier $e^{-kt}$ is the integrating factor of [[§29 The Mean Value Theorem#^rem-29-2|451 Remark after Ex. §29.4]] and of [[§61 Linear Equations#^def-61-2|Definition §61.2]].
 
 > [!remark] Remark: The Family of Solutions
 > Letting $C$ vary through all the real numbers gives the *family* of solutions $P(t) = Ce^{kt}$. For $k > 0$ the graphs with $C > 0$ rise ever more steeply, those with $C < 0$ fall ever more steeply, and $C = 0$ gives the zero function. Populations have only positive values, so only the solutions with $C > 0$ are physically meaningful, and if we care only about times after the initial time $t = 0$, only their parts with $t \ge 0$.
@@ -80,7 +80,7 @@ $$
 > \frac{dP}{dt} = kP\Big(1 - \frac{P}{M}\Big) .
 > $$
 >
-> This is the **logistic differential equation**, proposed by the Dutch mathematical biologist Pierre-François Verhulst in the 1840s as a model for world population growth. It has both required properties: if $P$ is small compared with $M$, then $P/M$ is close to $0$ and $dP/dt \approx kP$; if $P > M$, then $1 - P/M < 0$ and $dP/dt < 0$.
+> This is the **logistic differential equation**, proposed by the Dutch mathematical biologist Pierre-François Verhulst in the 1840s as a model for world population growth (solved explicitly in [[§60 Models for Population Growth#^thm-60-2|Theorem §60.2]]). It has both required properties: if $P$ is small compared with $M$, then $P/M$ is close to $0$ and $dP/dt \approx kP$; if $P > M$, then $1 - P/M < 0$ and $dP/dt < 0$.
 >
 > *Stewart: 9.1, Equation 2*
 
@@ -118,11 +118,11 @@ $$
 *Uses:* [[§57 Modeling with Differential Equations#^def-57-2|Def. §57.2]], [[§57 Modeling with Differential Equations#^def-57-3|Def. §57.3]]
 
 ![[m233-57-1.svg]]
-*Solutions of the logistic equation. The equilibrium solutions $P = 0$ and $P = M$ (red) are horizontal lines. Solutions starting between them (blue) increase and level off at $M$: they look exponential at first, when $P$ is small, and flatten as $P \to M$. Solutions starting above $M$ (green) decrease toward $M$. (The curves are the explicit solutions found in Section 9.4, [[§60 Models for Population Growth|§60]].)*
+*Solutions of the logistic equation. The equilibrium solutions $P = 0$ and $P = M$ (red) are horizontal lines. Solutions starting between them (blue) increase and level off at $M$: they look exponential at first, when $P$ is small, and flatten as $P \to M$. Solutions starting above $M$ (green) decrease toward $M$. (The curves are the explicit solutions found in Section 9.4, [[§60 Models for Population Growth#^thm-60-2|Theorem §60.2]].)*
 
 ## A Model for the Motion of a Spring
 
-Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$ be its displacement from the equilibrium position at time $t$. By Hooke's Law ([[§42 Work|§42]]), if the spring is stretched (or compressed) $x$ units from its natural length, it exerts the restoring force $-kx$, where $k > 0$ is the *spring constant*.
+Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$ be its displacement from the equilibrium position at time $t$. By Hooke's Law ([[§42 Work#^def-42-4|Definition §42.4]]), if the spring is stretched (or compressed) $x$ units from its natural length, it exerts the restoring force $-kx$, where $k > 0$ is the *spring constant*.
 
 > [!definition] Definition §57.4: The Spring Equation
 > If we ignore any external resisting forces (air resistance, friction), Newton's Second Law (force equals mass times acceleration) gives
@@ -151,7 +151,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 ^prop-57-3
 
 > [!proof]+ Proof
-> Rewrite the equation as $\dfrac{d^2x}{dt^2} = -\dfrac{k}{m}\,x = -\omega^2 x$: the second derivative of $x$ is proportional to $x$ but has the opposite sign. Sine and cosine have this property ([[§16 Derivatives of Trigonometric Functions|§16]], [[§17 The Chain Rule|§17]]):
+> Rewrite the equation as $\dfrac{d^2x}{dt^2} = -\dfrac{k}{m}\,x = -\omega^2 x$: the second derivative of $x$ is proportional to $x$ but has the opposite sign. Sine and cosine have this property ([[§16 Derivatives of Trigonometric Functions#^thm-16-1|Theorems §16.1]] and [[§16 Derivatives of Trigonometric Functions#^thm-16-2|§16.2]] with the [[§17 The Chain Rule#^thm-17-2|Chain Rule]]):
 >
 > $$
 > x'(t) = A\omega\cos\omega t - B\omega\sin\omega t, \qquad x''(t) = -A\omega^2\sin\omega t - B\omega^2\cos\omega t = -\omega^2 x(t) .
@@ -161,14 +161,14 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 
 ^pf-57-3
 
-*Uses:* [[§57 Modeling with Differential Equations#^def-57-4|Def. §57.4]], [[§16 Derivatives of Trigonometric Functions|§16]], [[§17 The Chain Rule|§17]]
+*Uses:* [[§57 Modeling with Differential Equations#^def-57-4|Def. §57.4]], [[§16 Derivatives of Trigonometric Functions#^thm-16-1|§16.1]], [[§16 Derivatives of Trigonometric Functions#^thm-16-2|§16.2]], [[§17 The Chain Rule#^thm-17-2|§17.2]]
 
-*That there are no other solutions is stated by Stewart without proof ("it turns out that"); it belongs to the theory of second-order linear equations.*
+*That there are no other solutions is stated by Stewart without proof ("it turns out that"); it belongs to the theory of second-order linear equations, and no note in the vault proves it.*
 
 ## General Differential Equations
 
 > [!definition] Definition §57.5: Differential Equation and Order
-> A **differential equation** is an equation that contains an unknown function and one or more of its derivatives. The **order** of a differential equation is the order of the highest derivative that occurs in the equation.
+> A **differential equation** is an equation that contains an unknown function and one or more of its derivatives (first met in [[§33 Antiderivatives#^def-33-2|Definition §33.2]]). The **order** of a differential equation is the order of the highest derivative that occurs in the equation.
 >
 > Thus the growth and logistic equations (Definitions §57.1, §57.2) are first-order equations and the spring equation (Definition §57.4) is a second-order equation. The independent variable need not be time: in
 >
@@ -191,7 +191,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 >
 > for all values of $x$ in some interval. To **solve** a differential equation means to find *all* possible solutions. The family of all solutions, usually written with an arbitrary constant, is the **general solution**.
 >
-> The simplest case is $y' = f(x)$, whose solutions are the antiderivatives of $f$ ([[§33 Antiderivatives|§33]]). For instance, the general solution of $y' = x^3$ is
+> The simplest case is $y' = f(x)$, whose solutions are the antiderivatives of $f$ ([[§33 Antiderivatives#^thm-33-1|Theorem §33.1]]). For instance, the general solution of $y' = x^3$ is
 >
 > $$
 > y = \frac{x^4}{4} + C ,
@@ -204,7 +204,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 ^def-57-6
 
 > [!remark]- Connections
-> - That $x^4/4 + C$ gives *all* solutions of $y' = x^3$ (on an interval) is the fact that two functions with the same derivative differ by a constant: [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]], proved from the Mean Value Theorem ([[§26 The Mean Value Theorem|§26]]).
+> - That $x^4/4 + C$ gives *all* solutions of $y' = x^3$ (on an interval) is the fact that two functions with the same derivative differ by a constant: [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]], proved from the Mean Value Theorem; in this course, [[§26 The Mean Value Theorem#^cor-26-4|Corollary §26.4]].
 
 > [!remark] Remark: Method — Checking a Proposed Solution
 > 1. Compute the derivatives of the proposed function that occur in the equation.
@@ -253,7 +253,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 >
 > is a solution of the differential equation $y' = \frac12(y^2 - 1)$.
 >
-> **Left side.** By the Quotient Rule ([[§15 The Product and Quotient Rules|§15]]),
+> **Left side.** By the Quotient Rule ([[§15 The Product and Quotient Rules#^thm-15-2|Theorem §15.2]]),
 >
 > $$
 > y' = \frac{(1 - ce^t)(ce^t) - (1 + ce^t)(-ce^t)}{(1 - ce^t)^2} = \frac{ce^t - c^2e^{2t} + ce^t + c^2e^{2t}}{(1 - ce^t)^2} = \frac{2ce^t}{(1 - ce^t)^2} .

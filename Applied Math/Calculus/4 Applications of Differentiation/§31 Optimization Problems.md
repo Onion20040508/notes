@@ -109,7 +109,7 @@ When the domain is not a closed interval there are no endpoints to compare, and 
 >
 > So the radius should be $\sqrt[3]{500/\pi}$ cm and the height equal to twice the radius, that is, the diameter.
 >
-> **Alternative: implicit differentiation.** Keep both equations $A = 2\pi r^2 + 2\pi rh$ and $\pi r^2 h = 1000$, and differentiate both with respect to $r$, treating $A$ and $h$ as functions of $r$ ([[§18 Implicit Differentiation|§18]]):
+> **Alternative: implicit differentiation.** Keep both equations $A = 2\pi r^2 + 2\pi rh$ and $\pi r^2 h = 1000$, and differentiate both with respect to $r$, treating $A$ and $h$ as functions of $r$ ([[§18 Implicit Differentiation#^rem-18-1|Remark: Method — Implicit Differentiation]]):
 >
 > $$
 > A' = 4\pi r + 2\pi r h' + 2\pi h, \qquad \pi r^2 h' + 2\pi r h = 0 .
@@ -195,7 +195,7 @@ The choice of variable can make the calculus unnecessary. Stewart's Example 4.7.
 ## Applications to Business and Economics
 
 > [!definition] Definition §31.1: Demand, Revenue and Profit Functions
-> Let $C(x)$ be the **cost function**, the cost of producing $x$ units of a product; its derivative $C'(x)$ is the **marginal cost** ([[§20 Rates of Change in the Natural and Social Sciences|§20]]).
+> Let $C(x)$ be the **cost function**, the cost of producing $x$ units of a product; its derivative $C'(x)$ is the **marginal cost** ([[§20 Rates of Change in the Natural and Social Sciences#^def-20-7|Def. §20.7]]).
 > - If $p(x)$ is the price per unit that the company can charge if it sells $x$ units, then $p$ is the **demand function** (or **price function**). One expects it to be decreasing.
 > - The **revenue function** is $R(x) = x\,p(x)$ (quantity $\times$ price), and its derivative $R'$ is the **marginal revenue function**.
 > - The **profit function** is $P(x) = R(x) - C(x)$, and its derivative $P'$ is the **marginal profit function**.

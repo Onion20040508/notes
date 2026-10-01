@@ -11,12 +11,12 @@ tags: [calculus]
 
 *Stewart, Section 10.2.*
 
-The methods of calculus apply to parametric curves directly, without eliminating the parameter. The Chain Rule gives the slope $dy/dx$ as a ratio of two $t$-derivatives, and the Substitution Rule turns the area, arc length and surface area formulas of Chapters 5 and 8 into integrals in $t$. The arc length formula is also proved for curves that are not graphs, by approximating with polygons, and its integrand is the speed of a moving particle. The cycloid of [[§63 Curves Defined by Parametric Equations|§63]] serves as the running example.
+The methods of calculus apply to parametric curves directly, without eliminating the parameter. The Chain Rule gives the slope $dy/dx$ as a ratio of two $t$-derivatives, and the Substitution Rule turns the area, arc length and surface area formulas of Chapters 5 and 8 into integrals in $t$. The arc length formula is also proved for curves that are not graphs, by approximating with polygons, and its integrand is the speed of a moving particle. The cycloid of [[§63 Curves Defined by Parametric Equations#^prop-63-2|Proposition §63.2]] serves as the running example.
 
 ## Tangents
 
 > [!theorem] Theorem §64.1: Slope of a Parametric Curve
-> Let $f$ and $g$ be differentiable and consider the curve $x = f(t)$, $y = g(t)$. At a point where $dx/dt \ne 0$,
+> Let $f$ and $g$ be differentiable and consider the curve $x = f(t)$, $y = g(t)$, where near the point $y$ is also a differentiable function of $x$ (this is automatic when $f'$ is continuous and $dx/dt \ne 0$; see the proof). At a point where $dx/dt \ne 0$,
 >
 > $$
 > \frac{dy}{dx} = \frac{dy/dt}{dx/dt} .
@@ -34,7 +34,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 ^rem-64-1
 
 > [!proof]+ Proof
-> Stewart assumes that $y$ is also a differentiable function of $x$ near the point. (Stewart asserts this; here is why it holds when $f'$ is continuous: since $f'(t_0) \ne 0$, $f'$ has constant sign on an interval around $t_0$, so $f$ is one-to-one there with a differentiable inverse, $t = f^{-1}(x)$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]), and $y = g(f^{-1}(x))$ is differentiable by the Chain Rule.) Then $y = g(t)$ is the composite of $y$ as a function of $x$ with $x = f(t)$, and the Chain Rule ([[§17 The Chain Rule|§17]]) gives
+> Stewart assumes that $y$ is also a differentiable function of $x$ near the point. (Stewart asserts this; here is why it holds when $f'$ is continuous: since $f'(t_0) \ne 0$, $f'$ has constant sign on an interval around $t_0$, so $f$ is one-to-one there with a differentiable inverse, $t = f^{-1}(x)$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Theorem §19.1]]), and $y = g(f^{-1}(x))$ is differentiable by the Chain Rule.) Then $y = g(t)$ is the composite of $y$ as a function of $x$ with $x = f(t)$, and the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]) gives
 >
 > $$
 > \frac{dy}{dt} = \frac{dy}{dx} \cdot \frac{dx}{dt} .
@@ -44,7 +44,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 
 ^pf-64-1
 
-*Uses:* [[§17 The Chain Rule|§17]] (Chain Rule), [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]] (derivative of an inverse function)
+*Uses:* [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|§19.1]] (derivative of an inverse function)
 
 > [!remark]- Connections
 > - The inverse function step, rigorously: [[§29 The Mean Value Theorem#^thm-29-10|451 Thm. §29.10]]. The tangent line is the image of the derivative of the map $t \mapsto (f(t), g(t))$; on manifolds this is the velocity of a curve, [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-14|591 Def. §12.14]].
@@ -128,7 +128,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 >
 > **(b) Horizontal tangents.** $dy/dx = 0$ when $\sin\theta = 0$ and $1 - \cos\theta \ne 0$, that is, $\theta = (2n - 1)\pi$ with $n$ an integer. These are the tops of the arches, $\big((2n - 1)\pi r,\ 2r\big)$.
 >
-> **(c) Vertical tangents.** At $\theta = 2n\pi$ both $dx/d\theta = r(1 - \cos\theta)$ and $dy/d\theta = r\sin\theta$ are $0$, so Theorem §64.1 says nothing. Compute the limit of the slope instead, by l'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule|§28]]; the quotient has the form $0/0$):
+> **(c) Vertical tangents.** At $\theta = 2n\pi$ both $dx/d\theta = r(1 - \cos\theta)$ and $dy/d\theta = r\sin\theta$ are $0$, so Theorem §64.1 says nothing. Compute the limit of the slope instead, by l'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Theorem §28.2]]; the quotient has the form $0/0$):
 >
 > $$
 > \lim_{\theta \to 2n\pi^+} \frac{dy}{dx} = \lim_{\theta \to 2n\pi^+} \frac{\sin\theta}{1 - \cos\theta} = \lim_{\theta \to 2n\pi^+} \frac{\cos\theta}{\sin\theta} = \infty ,
@@ -156,9 +156,9 @@ The methods of calculus apply to parametric curves directly, without eliminating
 ^thm-64-3
 
 > [!proof]+ Proof
-> The area is $A = \int_a^b F(x)\,dx$ ([[§35 The Definite Integral|§35]]). Since the curve is traced once, $x = f(t)$ runs through $[a, b]$ once, and the points of the curve are $(f(t), g(t)) = (f(t), F(f(t)))$, so $g(t) = F(f(t))$.
+> The area is $A = \int_a^b F(x)\,dx$ ([[§35 The Definite Integral#^rem-35-1|§35, Remark: The Integral as a Net Area]]). Since the curve is traced once, $x = f(t)$ runs through $[a, b]$ once, and the points of the curve are $(f(t), g(t)) = (f(t), F(f(t)))$, so $g(t) = F(f(t))$.
 >
-> If $f(\alpha) = a$ and $f(\beta) = b$, the Substitution Rule for Definite Integrals ([[§38 The Substitution Rule|§38]]) with $x = f(t)$, $dx = f'(t)\,dt$ gives
+> If $f(\alpha) = a$ and $f(\beta) = b$, the Substitution Rule for Definite Integrals ([[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]]) with $x = f(t)$, $dx = f'(t)\,dt$ gives
 >
 > $$
 > \int_a^b F(x)\,dx = \int_\alpha^\beta F(f(t))\,f'(t)\,dt = \int_\alpha^\beta g(t) f'(t)\,dt .
@@ -168,7 +168,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 
 ^pf-64-3
 
-*Uses:* [[§35 The Definite Integral|§35]] (area as an integral), [[§38 The Substitution Rule|§38]] (Substitution Rule for definite integrals)
+*Uses:* [[§35 The Definite Integral#^rem-35-1|§35, Remark: The Integral as a Net Area]] (area as an integral), [[§38 The Substitution Rule#^thm-38-3|§38.3]] (Substitution Rule for definite integrals)
 
 ## Arc Length
 
@@ -184,7 +184,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 ^thm-64-4
 
 > [!proof]+ Proof
-> **A special case (Formula 3).** Suppose $C$ is also a graph $y = F(x)$, $a \le x \le b$, with $F'$ continuous, and that $dx/dt = f'(t) > 0$, so $C$ is traversed once from left to right with $f(\alpha) = a$, $f(\beta) = b$. By Formula 8.1.3 ([[§52 Arc Length|§52]]), $L = \int_a^b \sqrt{1 + (dy/dx)^2}\,dx$. Substitute $x = f(t)$ and use Theorem §64.1:
+> **A special case (Formula 3).** Suppose $C$ is also a graph $y = F(x)$, $a \le x \le b$, with $F'$ continuous, and that $dx/dt = f'(t) > 0$, so $C$ is traversed once from left to right with $f(\alpha) = a$, $f(\beta) = b$. By Formula 8.1.3 ([[§52 Arc Length#^thm-52-1|Theorem §52.1]]), $L = \int_a^b \sqrt{1 + (dy/dx)^2}\,dx$. Substitute $x = f(t)$ and use Theorem §64.1:
 >
 > $$
 > L = \int_\alpha^\beta \sqrt{1 + \Big(\frac{dy/dt}{dx/dt}\Big)^2}\,\frac{dx}{dt}\,dt = \int_\alpha^\beta \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\,dt ,
@@ -192,13 +192,13 @@ The methods of calculus apply to parametric curves directly, without eliminating
 >
 > where $dx/dt > 0$ was moved inside the square root as $\sqrt{(dx/dt)^2}$.
 >
-> **The general case.** Even if $C$ is not a graph, the formula holds; we prove it from the definition of length by polygonal approximation ([[§52 Arc Length|§52]]). Divide $[\alpha, \beta]$ into $n$ subintervals of equal width $\Delta t$ with endpoints $t_0, t_1, \ldots, t_n$. The points $P_i = (f(t_i), g(t_i))$ lie on $C$, and the polygonal path $P_0 P_1 \cdots P_n$ approximates $C$. The length of $C$ is
+> **The general case.** Even if $C$ is not a graph, the formula holds; we prove it from the definition of length by polygonal approximation ([[§52 Arc Length#^def-52-1|Definition §52.1]]). Divide $[\alpha, \beta]$ into $n$ subintervals of equal width $\Delta t$ with endpoints $t_0, t_1, \ldots, t_n$. The points $P_i = (f(t_i), g(t_i))$ lie on $C$, and the polygonal path $P_0 P_1 \cdots P_n$ approximates $C$. The length of $C$ is
 >
 > $$
 > L = \lim_{n \to \infty} \sum_{i=1}^n |P_{i-1} P_i| .
 > $$
 >
-> The Mean Value Theorem ([[§26 The Mean Value Theorem|§26]]) applied to $f$ and to $g$ on $[t_{i-1}, t_i]$ gives numbers $t_i^*$ and $t_i^{**}$ in $(t_{i-1}, t_i)$ with
+> The Mean Value Theorem ([[§26 The Mean Value Theorem#^thm-26-2|Theorem §26.2]]) applied to $f$ and to $g$ on $[t_{i-1}, t_i]$ gives numbers $t_i^*$ and $t_i^{**}$ in $(t_{i-1}, t_i)$ with
 >
 > $$
 > \Delta x_i = f(t_i) - f(t_{i-1}) = f'(t_i^*)\,\Delta t, \qquad \Delta y_i = g(t_i) - g(t_{i-1}) = g'(t_i^{**})\,\Delta t .
@@ -224,13 +224,13 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > \sum_{i=1}^n |g'(t_i^{**}) - g'(t_i^*)|\,\Delta t .
 > $$
 >
-> Since $g'$ is continuous on the closed interval $[\alpha, \beta]$, it is uniformly continuous: for every $\varepsilon > 0$ there is $\delta > 0$ with $|g'(s) - g'(u)| < \varepsilon$ whenever $|s - u| < \delta$. Once $\Delta t < \delta$, the points $t_i^*$ and $t_i^{**}$ lie in the same subinterval, so the difference is less than $\sum \varepsilon\,\Delta t = \varepsilon(\beta - \alpha)$. Thus the sum in (4) and $R_n$ have the same limit. Since $h$ is continuous, $R_n \to \int_\alpha^\beta h(t)\,dt$ ([[§35 The Definite Integral|§35]]), which is the formula.
+> Since $g'$ is continuous on the closed interval $[\alpha, \beta]$, it is uniformly continuous: for every $\varepsilon > 0$ there is $\delta > 0$ with $|g'(s) - g'(u)| < \varepsilon$ whenever $|s - u| < \delta$. Once $\Delta t < \delta$, the points $t_i^*$ and $t_i^{**}$ lie in the same subinterval, so the difference is less than $\sum \varepsilon\,\Delta t = \varepsilon(\beta - \alpha)$. Thus the sum in (4) and $R_n$ have the same limit. Since $h$ is continuous, it is integrable ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]]), so $R_n \to \int_\alpha^\beta h(t)\,dt$ ([[§35 The Definite Integral#^def-35-1|Definition §35.1]]), which is the formula.
 >
 > Where was "traversed exactly once" used? The polygonal paths approximate $C$ only if the points $P_i$ run along $C$ once, in order; if part of $C$ is traced twice, the polygons and the integral both count it twice (Remark below).
 
 ^pf-64-4
 
-*Uses:* [[§52 Arc Length|§52]] (Formula 8.1.3; length as a limit of polygonal paths), [[§64 Calculus with Parametric Curves#^thm-64-1|§64.1]], [[§38 The Substitution Rule|§38]], [[§26 The Mean Value Theorem|§26]], [[§35 The Definite Integral|§35]] (Riemann sums of a continuous function); uniform continuity [[§19 Uniform Continuity#^thm-19-1|451 §19.1]]
+*Uses:* [[§52 Arc Length#^thm-52-1|§52.1]] (Formula 8.1.3), [[§52 Arc Length#^def-52-1|Def. §52.1]] (length as a limit of polygonal paths), [[§64 Calculus with Parametric Curves#^thm-64-1|§64.1]], [[§38 The Substitution Rule#^thm-38-3|§38.3]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]], [[§35 The Definite Integral#^thm-35-1|§35.1]], [[§35 The Definite Integral#^def-35-1|Def. §35.1]] (Riemann sums of a continuous function); uniform continuity [[§19 Uniform Continuity#^thm-19-1|451 Thm. §19.1]]
 
 > [!remark]- Connections
 > - The same polygonal derivation, with the same Mean Value Theorem step and uniform-continuity estimate, gives the scalar line integral in 452: [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]] (the arc length is the case $f = 1$).
@@ -306,7 +306,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > ds = \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\,dt ,
 > $$
 >
-> so that Theorem §64.4 reads $L = \int ds$, as in [[§52 Arc Length|§52]].
+> so that Theorem §64.4 reads $L = \int ds$, as in [[§52 Arc Length#^def-52-4|Definition §52.4]]; $s(t)$ is the parametric form of the arc length function [[§52 Arc Length#^def-52-3|Definition §52.3]] (Formula 8.1.5).
 >
 > *Stewart: 10.2, Equations 6 and 7*
 
@@ -331,11 +331,11 @@ The methods of calculus apply to parametric curves directly, without eliminating
 ^thm-64-5
 
 > [!proof]+ Proof
-> The integrand $u \mapsto \sqrt{f'(u)^2 + g'(u)^2}$ in Definition §64.1 is continuous, so by Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]) $s$ is differentiable with $s'(t) = \sqrt{f'(t)^2 + g'(t)^2}$.
+> The integrand $u \mapsto \sqrt{f'(u)^2 + g'(u)^2}$ in Definition §64.1 is continuous, so by Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]) $s$ is differentiable with $s'(t) = \sqrt{f'(t)^2 + g'(t)^2}$.
 
 ^pf-64-5
 
-*Uses:* [[§64 Calculus with Parametric Curves#^def-64-1|Def. §64.1]], [[§64 Calculus with Parametric Curves#^def-64-2|Def. §64.2]], [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 1)
+*Uses:* [[§64 Calculus with Parametric Curves#^def-64-1|Def. §64.1]], [[§64 Calculus with Parametric Curves#^def-64-2|Def. §64.2]], [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]] (FTC Part 1)
 
 > [!example] Example §64.4: The Speed of a Particle
 > A particle has position $x = 2t + 3$, $y = 4t^2$, $t \ge 0$. Find its speed when it is at $(5, 4)$.
@@ -355,24 +355,24 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > S = \int_\alpha^\beta 2\pi y \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\,dt .
 > $$
 >
-> The symbolic formulas $S = \int 2\pi y\,ds$ (rotation about the $x$-axis) and $S = \int 2\pi x\,ds$ (rotation about the $y$-axis, for $x \ge 0$) of [[§53 Area of a Surface of Revolution|§53]] (Formulas 8.2.7 and 8.2.8) remain valid, with $ds$ as in Definition §64.1.
+> The symbolic formulas $S = \int 2\pi y\,ds$ (rotation about the $x$-axis) and $S = \int 2\pi x\,ds$ (rotation about the $y$-axis, for $x \ge 0$) of [[§53 Area of a Surface of Revolution#^thm-53-3|Theorem §53.3]] (Formulas 8.2.7 and 8.2.8) remain valid, with $ds$ as in Definition §64.1.
 >
 > *Stewart: 10.2, Formula 9*
 
 ^thm-64-6
 
 > [!proof]+ Proof
-> *Stewart gives this as a sketch* ("in the same way as for arc length"). In the case where $dx/dt > 0$, so that $C$ is a graph $y = F(x)$, $a \le x \le b$, traversed from left to right, start from Formula 8.2.5 ([[§53 Area of a Surface of Revolution|§53]]),
+> *Stewart gives this as a sketch* ("in the same way as for arc length"). In the case where $dx/dt > 0$, so that $C$ is a graph $y = F(x)$, $a \le x \le b$, traversed from left to right, start from Formula 8.2.5 ([[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]]),
 >
 > $$
 > S = \int_a^b 2\pi y \sqrt{1 + \Big(\frac{dy}{dx}\Big)^2}\,dx ,
 > $$
 >
-> and substitute $x = f(t)$ exactly as in the special case of the proof of Theorem §64.4: $\sqrt{1 + (dy/dx)^2}\,\dfrac{dx}{dt} = \sqrt{(dx/dt)^2 + (dy/dt)^2}$ because $dx/dt > 0$. This gives Formula 9. For a general curve the formula comes from approximating $C$ by polygonal paths and the surface by the bands (frustums of cones) that the segments sweep out, as in [[§53 Area of a Surface of Revolution|§53]], with the Mean Value Theorem step of the proof of Theorem §64.4; Stewart does not carry this out.
+> and substitute $x = f(t)$ exactly as in the special case of the proof of Theorem §64.4: $\sqrt{1 + (dy/dx)^2}\,\dfrac{dx}{dt} = \sqrt{(dx/dt)^2 + (dy/dt)^2}$ because $dx/dt > 0$. This gives Formula 9. For a general curve the formula comes from approximating $C$ by polygonal paths and the surface by the bands (frustums of cones) that the segments sweep out, as in [[§53 Area of a Surface of Revolution#^thm-53-1|Theorem §53.1]] and Definition §53.2, with the Mean Value Theorem step of the proof of Theorem §64.4; Stewart does not carry this out.
 
 ^pf-64-6
 
-*Uses:* [[§53 Area of a Surface of Revolution|§53]] (Formula 8.2.5), [[§64 Calculus with Parametric Curves#^thm-64-1|§64.1]], [[§64 Calculus with Parametric Curves#^thm-64-4|§64.4]], [[§38 The Substitution Rule|§38]]
+*Uses:* [[§53 Area of a Surface of Revolution#^def-53-2|Def. §53.2]] (Formula 8.2.5), [[§64 Calculus with Parametric Curves#^thm-64-1|§64.1]], [[§64 Calculus with Parametric Curves#^thm-64-4|§64.4]], [[§38 The Substitution Rule#^thm-38-3|§38.3]]
 
 > [!example] Example §64.5: The Surface Area of a Sphere
 > Show that the surface area of a sphere of radius $r$ is $4\pi r^2$.

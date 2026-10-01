@@ -59,7 +59,7 @@ For $f(x) = (x - 1)/(x^2 - 1)$, the values at $x = 0.9, 0.99, 0.999$ are $0.5263
 > |---|---|---|---|---|---|
 > | $\frac{\sin x}{x}$ | $0.84147098$ | $0.95885108$ | $0.99833417$ | $0.99998333$ | $0.99999983$ |
 >
-> We guess $\lim_{x \to 0} \frac{\sin x}{x} = 1$. The guess is correct; it is proved geometrically in Section 3.3 ([[§16 Derivatives of Trigonometric Functions|§16]]).
+> We guess $\lim_{x \to 0} \frac{\sin x}{x} = 1$. The guess is correct; it is proved geometrically in Section 3.3 ([[§16 Derivatives of Trigonometric Functions#^thm-16-6|Theorem §16.6]]).
 >
 > *Stewart: Examples 2.2.1 and 2.2.2*
 
@@ -72,7 +72,7 @@ For $f(x) = (x - 1)/(x^2 - 1)$, the values at $x = 0.9, 0.99, 0.999$ are $0.5263
 > |---|---|---|---|---|---|---|---|
 > | value | $1.000028$ | $0.124920$ | $0.001088$ | $0.000222$ | $0.000101$ | $0.00010009$ | $0.00010000$ |
 >
-> The first five values suggest the limit $0$. Smaller $x$ show that it is $0.0001$. Indeed, $x^3 \to 0$ and $\cos 5x \to 1$ as $x \to 0$ (cosine is continuous, [[§10 Continuity|§10]]), so the limit is $\frac{1}{10{,}000} = 0.0001$. The lesson: one cannot know when to stop computing values.
+> The first five values suggest the limit $0$. Smaller $x$ show that it is $0.0001$. Indeed, $x^3 \to 0$ and $\cos 5x \to 1$ as $x \to 0$ (cosine is continuous, [[§10 Continuity#^thm-10-6|Theorem §10.6]]), so the limit is $\frac{1}{10{,}000} = 0.0001$. The lesson: one cannot know when to stop computing values.
 >
 > **(b)** Investigate $\displaystyle\lim_{x \to 0} \sin\frac{\pi}{x}$.
 >
@@ -265,10 +265,10 @@ To describe the behavior in Example §7.4 we write $\lim_{x \to 0} \frac{1}{x^2}
 > [!proof]+ Proof
 > *Stewart reads this off the graph of $\ln x$ and leaves the $\varepsilon$–$\delta$ proof as Exercise 2.4.43; here it is, using the one-sided form of [[§9 The Precise Definition of a Limit#^def-9-4|Definition §9.4]].*
 >
-> Let $N$ be any negative number and put $\delta = e^N > 0$. Since $\ln$ is increasing ([[§5 Inverse Functions and Logarithms|§5]]), $0 < x < \delta$ implies $\ln x < \ln e^N = N$. So $\ln x$ is below any given $N$ once $x > 0$ is close enough to $0$, which is $\lim_{x \to 0^+} \ln x = -\infty$.
+> Let $N$ be any negative number and put $\delta = e^N > 0$. Since $\ln$ is increasing ([[§5 Inverse Functions and Logarithms#^thm-5-4|Theorem §5.4]], part 4, with $b = e > 1$), $0 < x < \delta$ implies $\ln x < \ln e^N = N$ ([[§5 Inverse Functions and Logarithms#^cor-5-6|Corollary §5.6]]). So $\ln x$ is below any given $N$ once $x > 0$ is close enough to $0$, which is $\lim_{x \to 0^+} \ln x = -\infty$.
 >
-> For $b > 1$, $\log_b x = \dfrac{\ln x}{\ln b}$ with $\ln b > 0$. Given $N < 0$, the first part (applied to $N \ln b < 0$) gives $\delta > 0$ such that $\ln x < N \ln b$, that is, $\log_b x < N$, for $0 < x < \delta$.
+> For $b > 1$, $\log_b x = \dfrac{\ln x}{\ln b}$ ([[§5 Inverse Functions and Logarithms#^thm-5-8|Theorem §5.8]]) with $\ln b > \ln 1 = 0$. Given $N < 0$, the first part (applied to $N \ln b < 0$) gives $\delta > 0$ such that $\ln x < N \ln b$, that is, $\log_b x < N$, for $0 < x < \delta$.
 
 ^pf-7-1
 
-*Uses:* [[§9 The Precise Definition of a Limit#^def-9-4|Def. §9.4]], [[§5 Inverse Functions and Logarithms|§5]] (logarithms)
+*Uses:* [[§9 The Precise Definition of a Limit#^def-9-4|Def. §9.4]], [[§5 Inverse Functions and Logarithms#^thm-5-4|§5.4]], [[§5 Inverse Functions and Logarithms#^cor-5-6|§5.6]], [[§5 Inverse Functions and Logarithms#^thm-5-8|§5.8]]

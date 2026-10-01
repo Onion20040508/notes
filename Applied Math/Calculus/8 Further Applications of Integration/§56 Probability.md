@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 8.5.*
 
-A continuous random variable (a height, a lifetime, a waiting time) is described by a probability density function $f$: the probability that the variable lies in an interval is the area under the graph of $f$ over that interval. So probabilities are definite integrals, and the requirement that the total probability is $1$ is an improper integral ([[§51 Improper Integrals|§51]]). This section sets up densities, computes the mean (which turns out to be the $x$-coordinate of a centroid, as in [[§54 Applications to Physics and Engineering|§54]]) and the median, and introduces the two most used families: the exponential densities, which model waiting times, and the normal densities, whose integrals have no elementary antiderivative and must be computed numerically.
+A continuous random variable (a height, a lifetime, a waiting time) is described by a probability density function $f$: the probability that the variable lies in an interval is the area under the graph of $f$ over that interval. So probabilities are definite integrals, and the requirement that the total probability is $1$ is an improper integral ([[§51 Improper Integrals#^def-51-1|Definition §51.1]]). This section sets up densities, computes the mean (which turns out to be the $x$-coordinate of a centroid, [[§54 Applications to Physics and Engineering#^thm-54-5|Theorem §54.5]]) and the median, and introduces the two most used families: the exponential densities, which model waiting times, and the normal densities, whose integrals have no elementary antiderivative and must be computed numerically.
 
 ## Probability Density Functions
 
@@ -55,7 +55,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 ^prop-56-1
 
 > [!remark] Remark: Why It Works
-> Stewart argues from the meaning of probability, not from a formal definition. If $f$ were negative on some interval $[a, b]$, then $P(a \le X \le b) = \int_a^b f(x)\,dx$ would be negative, which a proportion cannot be. And $X$ certainly takes *some* real value, so the probability that it lies in $(-\infty, \infty)$ is $1$. In the language of [[§51 Improper Integrals|§51]], $\int_a^b f(x)\,dx \to 1$ as $a \to -\infty$ and $b \to \infty$.
+> Stewart argues from the meaning of probability, not from a formal definition. If $f$ were negative on some interval $[a, b]$, then $P(a \le X \le b) = \int_a^b f(x)\,dx$ would be negative, which a proportion cannot be. And $X$ certainly takes *some* real value, so the probability that it lies in $(-\infty, \infty)$ is $1$. In the language of [[§51 Improper Integrals#^def-51-1|Definition §51.1]], $\int_a^b f(x)\,dx \to 1$ as $a \to -\infty$ and $b \to \infty$.
 
 ^rem-56-1
 
@@ -142,7 +142,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > \sum_{i=1}^n \bar t_i\, f(\bar t_i)\,\Delta t .
 > $$
 >
-> This is a Riemann sum for $t f(t)$ ([[§35 The Definite Integral|§35]]). As $\Delta t \to 0$ and $n \to \infty$ it tends to $\int_0^{60} t f(t)\,dt$, the **mean waiting time**.
+> This is a Riemann sum for $t f(t)$ ([[§35 The Definite Integral#^def-35-2|Definition §35.2]]), with the midpoints as sample points. As $\Delta t \to 0$ and $n \to \infty$ it tends to $\int_0^{60} t f(t)\,dt$ ([[§35 The Definite Integral#^def-35-1|Definition §35.1]]), the **mean waiting time**.
 
 ^rem-56-3
 
@@ -167,7 +167,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 ^prop-56-2
 
 > [!proof]+ Proof
-> By the centroid formula for a region under a graph (Formula 8.3.8, [[§54 Applications to Physics and Engineering|§54]]), here over the whole line,
+> By the centroid formula for a region under a graph ([[§54 Applications to Physics and Engineering#^thm-54-5|Theorem §54.5]], Stewart's Formula 8.3.8), applied as Stewart does to the region over the whole line (its area is then an improper integral),
 >
 > $$
 > \bar x = \frac{\displaystyle\int_{-\infty}^{\infty} x f(x)\,dx}{\displaystyle\int_{-\infty}^{\infty} f(x)\,dx} = \int_{-\infty}^{\infty} x f(x)\,dx = \mu ,
@@ -177,7 +177,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ^pf-56-2
 
-*Uses:* [[§56 Probability#^prop-56-1|§56.1]], [[§56 Probability#^def-56-4|Def. §56.4]], [[§54 Applications to Physics and Engineering|§54]] (centroid of a plane region, Formula 8.3.8)
+*Uses:* [[§56 Probability#^prop-56-1|§56.1]], [[§56 Probability#^def-56-4|Def. §56.4]], [[§54 Applications to Physics and Engineering#^thm-54-5|§54.5]]
 
 > [!example] Example §56.3: The Mean of an Exponential Density
 > Find the mean of the exponential distribution of Example §56.2, $f(t) = 0$ for $t < 0$ and $f(t) = ce^{-ct}$ for $t \ge 0$.
@@ -188,13 +188,13 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > \mu = \int_{-\infty}^{\infty} t f(t)\,dt = \int_0^{\infty} tce^{-ct}\,dt .
 > $$
 >
-> Integrate by parts ([[§44 Integration by Parts|§44]]) with $u = t$, $dv = ce^{-ct}\,dt$, so $du = dt$ and $v = -e^{-ct}$:
+> Integrate by parts ([[§44 Integration by Parts#^thm-44-2|Theorem §44.2]]) with $u = t$, $dv = ce^{-ct}\,dt$, so $du = dt$ and $v = -e^{-ct}$:
 >
 > $$
 > \int_0^{\infty} tce^{-ct}\,dt = \lim_{x \to \infty} \int_0^x tce^{-ct}\,dt = \lim_{x \to \infty} \Big( \Big[-te^{-ct}\Big]_0^x + \int_0^x e^{-ct}\,dt \Big) = \lim_{x \to \infty} \Big( -xe^{-cx} + \frac1c - \frac{e^{-cx}}{c} \Big) = \frac1c .
 > $$
 >
-> The first term tends to $0$ by l'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule|§28]]): $\displaystyle\lim_{x \to \infty} \frac{x}{e^{cx}} = \lim_{x \to \infty} \frac{1}{ce^{cx}} = 0$. The last term tends to $0$ since $c > 0$.
+> The first term tends to $0$ by l'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Theorem §28.2]]): $\displaystyle\lim_{x \to \infty} \frac{x}{e^{cx}} = \lim_{x \to \infty} \frac{1}{ce^{cx}} = 0$. The last term tends to $0$ since $c > 0$.
 >
 > So $\mu = 1/c$, and the exponential density can be written in terms of its mean as
 >
@@ -206,11 +206,26 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ^ex-56-3
 
+> [!definition] Definition §56.5: Median
+> The **median** of a probability density function $f$ is the number $m$ such that
+>
+> $$
+> \int_m^{\infty} f(x)\,dx = \frac12 .
+> $$
+>
+> Half of the area under the graph of $f$ lies to the right of $m$ (and so, by Proposition §56.1, half lies to the left). For waiting times: half of the callers wait less than $m$ and half wait longer.
+>
+> Like the mean, the median is a measure of the centrality of $f$.
+>
+> *Stewart: 8.5 (text)*
+
+^def-56-5
+
 > [!example] Example §56.4: Waiting on Hold
 > Suppose the average waiting time for a customer's call to be answered by a customer service agent is five minutes, and that an exponential distribution is appropriate.
 > (a) Find the probability that a call is answered during the first minute.
 > (b) Find the probability that a customer waits on hold for more than five minutes.
-> (c) Find the median waiting time (Definition §56.5 below).
+> (c) Find the median waiting time (Definition §56.5).
 >
 > The mean is $\mu = 5$ min, so by Example §56.3 the density is $f(t) = 0$ for $t < 0$ and $f(t) = \frac15 e^{-t/5} = 0.2e^{-t/5}$ for $t \ge 0$ ($t$ in minutes).
 >
@@ -240,22 +255,9 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 *The waiting-time density of Example §56.4. The blue area over $[0, 1]$ is the $18\%$ answered in the first minute; the red tail beyond $t = 5$ is the $37\%$ who wait longer than the mean. The median (green) splits the total area into two halves and lies to the left of the mean: the long right tail of rare long waits pulls the mean (the balance point, Proposition §56.2) to the right.*
 
 > [!remark] Remark: Mean Versus Typical Value
-> In Example §56.4(b), the mean waiting time is $5$ minutes, yet only $37\%$ of callers wait more than $5$ minutes. The reason is that some callers have to wait much longer (maybe $10$ or $15$ minutes), and this brings up the average. A measure of centrality that is not pulled by such long waits is the median.
+> In Example §56.4(b), the mean waiting time is $5$ minutes, yet only $37\%$ of callers wait more than $5$ minutes. The reason is that some callers have to wait much longer (maybe $10$ or $15$ minutes), and this brings up the average. The median is not pulled up by such long waits: by Example §56.4(c) it is $5\ln 2 \approx 3.5$ minutes, well below the mean.
 
 ^rem-56-4
-
-> [!definition] Definition §56.5: Median
-> The **median** of a probability density function $f$ is the number $m$ such that
->
-> $$
-> \int_m^{\infty} f(x)\,dx = \frac12 .
-> $$
->
-> Half of the area under the graph of $f$ lies to the right of $m$ (and so, by Proposition §56.1, half lies to the left). For waiting times: half of the callers wait less than $m$ and half wait longer.
->
-> *Stewart: 8.5 (text)*
-
-^def-56-5
 
 ## Normal Distributions
 
@@ -281,20 +283,20 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 >
 > and its mean is $\mu$.
 >
-> *Stewart: 8.5 (text; the integral is Exercise 15.3.48)*
+> *Stewart: 8.5 (text; the integral is Exercise 15.3.50, which the text of 8.5 cites as Exercise 15.3.48)*
 
 ^prop-56-3
 
 > [!proof]+ Proof
 > Stewart leaves both facts to the reader ("you can verify"; the integral "can be verified using the methods of multivariable calculus"). Here is the computation. Clearly $f > 0$.
 >
-> **Total area.** Substitute $x = \mu + \sigma\sqrt2\,u$, $dx = \sigma\sqrt2\,du$ ([[§38 The Substitution Rule|§38]]; on each finite interval, then pass to the limit). Then $(x - \mu)^2/(2\sigma^2) = u^2$ and
+> **Total area.** Substitute $x = \mu + \sigma\sqrt2\,u$, $dx = \sigma\sqrt2\,du$ ([[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]] on each finite interval, then pass to the limit as in [[§51 Improper Integrals#^def-51-1|Definition §51.1]]). Then $(x - \mu)^2/(2\sigma^2) = u^2$ and
 >
 > $$
 > \int_{-\infty}^{\infty} \frac{1}{\sigma\sqrt{2\pi}}\, e^{-(x - \mu)^2/(2\sigma^2)}\,dx = \frac{\sigma\sqrt2}{\sigma\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{-u^2}\,du = \frac{1}{\sqrt\pi} \cdot \sqrt\pi = 1 .
 > $$
 >
-> The value $\int_{-\infty}^{\infty} e^{-u^2}\,du = \sqrt\pi$ is computed in Section 15.3 by squaring the integral and passing to polar coordinates ([[§100 Double Integrals in Polar Coordinates|§100]]).
+> The value $\int_{-\infty}^{\infty} e^{-u^2}\,du = \sqrt\pi$ is Stewart's Exercise 15.3.50: square the integral, write the square as a double integral over the plane and pass to polar coordinates ([[§100 Double Integrals in Polar Coordinates#^thm-100-1|Theorem §100.1]]); the computation is written out in [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]].
 >
 > **Mean.** Write $x = \mu + (x - \mu)$ and use the total area:
 >
@@ -306,7 +308,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ^pf-56-3
 
-*Uses:* [[§56 Probability#^def-56-4|Def. §56.4]], [[§38 The Substitution Rule|§38]], [[§51 Improper Integrals|§51]], [[§100 Double Integrals in Polar Coordinates|§100]] (the integral of e to the minus u squared)
+*Uses:* [[§56 Probability#^def-56-4|Def. §56.4]], [[§38 The Substitution Rule#^thm-38-3|§38.3]], [[§51 Improper Integrals#^def-51-1|Def. §51.1]], [[§100 Double Integrals in Polar Coordinates#^thm-100-1|§100.1]] (the integral of e to the minus u squared), [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]]
 
 > [!remark]- Connections
 > - The normal density and its distribution function, with the value √π taken on credit: [[§36 Improper Integrals#^ex-36-4|451 Ex. §36.4]]; the value √π itself, by polar coordinates: [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]].
@@ -329,7 +331,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > P(85 \le X \le 115) = \int_{85}^{115} \frac{1}{15\sqrt{2\pi}}\, e^{-(x - 100)^2/450}\,dx .
 > $$
 >
-> The function $e^{-x^2}$ has no elementary antiderivative ([[§48 Strategy for Integration|§48]]), so this integral cannot be evaluated exactly. Numerical integration (a calculator, or the Midpoint Rule or Simpson's Rule of [[§50 Approximate Integration|§50]]) gives
+> The function $e^{-x^2}$ has no elementary antiderivative ([[§48 Strategy for Integration#^thm-48-2|Theorem §48.2]], Stewart 7.5), so this integral cannot be evaluated exactly. Numerical integration (a calculator, or the [[§50 Approximate Integration#^def-50-2|Midpoint Rule]] or [[§50 Approximate Integration#^def-50-5|Simpson's Rule]]) gives
 >
 > $$
 > P(85 \le X \le 115) \approx 0.68 .
@@ -355,4 +357,4 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ^ex-56-5
 
-Probabilities for two random variables at once (joint density functions) are double integrals; they come in Section 15.4 ([[§101 Applications of Double Integrals|§101]]).
+Probabilities for two random variables at once (joint density functions) are double integrals; they come in Section 15.4 ([[§101 Applications of Double Integrals#^def-101-6|Definition §101.6]]).

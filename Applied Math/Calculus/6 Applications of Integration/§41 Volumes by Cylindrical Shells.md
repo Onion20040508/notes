@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 6.3.*
 
-Rotating the region under $y = 2x^2 - x^3$ about the $y$-axis produces a solid whose washers ([[§40 Volumes|§40]]) would require solving a cubic for $x$ in terms of $y$. The method of cylindrical shells avoids this. It cuts the region into strips *parallel* to the axis of rotation; each strip sweeps out a thin cylindrical shell of volume about $2\pi x\,f(x)\,\Delta x$ (circumference times height times thickness), and adding the shells gives $V = \int_a^b 2\pi x f(x)\,dx$. The section ends with how to choose between washers and shells.
+Rotating the region under $y = 2x^2 - x^3$ about the $y$-axis produces a solid whose washers ([[§40 Volumes#^rem-40-1|Remark: Method — Disks and Washers]]) would require solving a cubic for $x$ in terms of $y$. The method of cylindrical shells avoids this. It cuts the region into strips *parallel* to the axis of rotation; each strip sweeps out a thin cylindrical shell of volume about $2\pi x\,f(x)\,\Delta x$ (circumference times height times thickness), and adding the shells gives $V = \int_a^b 2\pi x f(x)\,dx$. The section ends with how to choose between washers and shells.
 
 ## The Method of Cylindrical Shells
 
@@ -76,7 +76,7 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 ^rem-41-1
 
 > [!proof]- Proof
-> *Stewart proves the formula only later, in Exercise 7.1.81, by integration by parts ([[§44 Integration by Parts|§44]]), for $f$ one-to-one. Here is that argument, for $f$ increasing with a continuous derivative.* Let $c = f(a)$, $d = f(b)$, and let $g = f^{-1}$, so $x = g(y)$ for $c \le y \le d$.
+> *Stewart proves the formula only later, in Exercise 7.1.81, for $f$ one-to-one, by integration by parts. This proof therefore uses a result from a later section, [[§44 Integration by Parts#^thm-44-2|Theorem §44.2]] (integration by parts for definite integrals); that theorem rests only on the Product Rule and FTC2, not on this section, so the forward reference is not circular. Here is the argument, for $f$ increasing with a continuous derivative.* Let $c = f(a)$, $d = f(b)$, and let $g = f^{-1}$, so $x = g(y)$ for $c \le y \le d$.
 >
 > **Slicing.** Slice the solid perpendicular to the $y$-axis ([[§40 Volumes#^def-40-2|Definition §40.2]]). At height $y$ with $0 \le y \le c$, the cross-section is a washer with radii $a$ and $b$. At height $y$ with $c \le y \le d$, the region extends from $x = g(y)$ to $x = b$, so the cross-section is a washer with radii $g(y)$ and $b$. Hence
 >
@@ -90,7 +90,7 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 > \int_c^d [g(y)]^2\,dy = \int_a^b x^2 f'(x)\,dx .
 > $$
 >
-> **Integration by parts** with $u = x^2$, $dv = f'(x)\,dx$:
+> **Integration by parts** ([[§44 Integration by Parts#^thm-44-2|Theorem §44.2]], forward reference) with $u = x^2$, $dv = f'(x)\,dx$:
 >
 > $$
 > \int_a^b x^2 f'(x)\,dx = x^2 f(x) \Big]_a^b - \int_a^b 2x f(x)\,dx = b^2 d - a^2 c - \int_a^b 2x f(x)\,dx .
@@ -106,13 +106,13 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 
 ^pf-41-2
 
-*Uses:* [[§40 Volumes#^def-40-2|Def. §40.2]], [[§38 The Substitution Rule#^thm-38-3|§38.3]], [[§44 Integration by Parts|§44]] (integration by parts)
+*Uses:* [[§40 Volumes#^def-40-2|Def. §40.2]], [[§38 The Substitution Rule#^thm-38-3|§38.3]], [[§44 Integration by Parts#^thm-44-2|§44.2]] (integration by parts; forward reference)
 
 ![[m233-41-1.svg]]
 *The shell method on Example §41.1. (a) A thin strip at distance $x$ from the $y$-axis, of height $f(x)$ and width $\Delta x$, sweeps out a cylindrical shell when rotated about the axis. (b) Cut along a vertical line and flattened, the shell is nearly a slab of length $2\pi x$ (its circumference), height $f(x)$ and thickness $\Delta x$, with volume $2\pi x f(x)\,\Delta x$.*
 
 > [!remark]- Connections
-> - The general proof: in cylindrical coordinates the solid is $\{0 \le z \le f(r),\ a \le r \le b\}$, and its volume $\int_0^{2\pi} \int_a^b \int_0^{f(r)} r\,dz\,dr\,d\theta = \int_a^b 2\pi r f(r)\,dr$ ([[§104 Triple Integrals in Cylindrical Coordinates|§104]]). The factor $r$ is the Jacobian of the change of variables, [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]].
+> - The general proof: in cylindrical coordinates the solid is $\{0 \le z \le f(r),\ a \le r \le b\}$, and its volume $\int_0^{2\pi} \int_a^b \int_0^{f(r)} r\,dz\,dr\,d\theta = \int_a^b 2\pi r f(r)\,dr$ ([[§104 Triple Integrals in Cylindrical Coordinates#^thm-104-1|Theorem §104.1]]). The factor $r$ is the Jacobian of the change of variables, [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]].
 
 > [!remark] Remark: Method — Cylindrical Shells
 > 1. Sketch the region and a typical strip **parallel** to the axis of rotation; rotated, it sweeps out a shell.

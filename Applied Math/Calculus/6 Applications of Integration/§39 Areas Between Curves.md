@@ -21,7 +21,7 @@ $$
 S = \{(x, y) \mid a \le x \le b,\ g(x) \le y \le f(x)\} .
 $$
 
-As in [[§34 The Area and Distance Problems|§34]], divide $S$ into $n$ strips of equal width $\Delta x$ and approximate the $i$th strip by a rectangle with base $\Delta x$ and height $f(x_i^*) - g(x_i^*)$. The Riemann sum $\sum_{i=1}^{n} [f(x_i^*) - g(x_i^*)]\,\Delta x$ approximates what we intuitively mean by the area of $S$.
+As in [[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]], divide $S$ into $n$ strips of equal width $\Delta x$ and approximate the $i$th strip by a rectangle with base $\Delta x$ and height $f(x_i^*) - g(x_i^*)$. The Riemann sum $\sum_{i=1}^{n} [f(x_i^*) - g(x_i^*)]\,\Delta x$ approximates what we intuitively mean by the area of $S$.
 
 > [!definition] Definition §39.1: Area Between Two Curves
 > The **area** $A$ of the region $S$ is the limiting value of the sum of the areas of the approximating rectangles:
@@ -64,7 +64,7 @@ As in [[§34 The Area and Distance Problems|§34]], divide $S$ into $n$ strips o
 *Uses:* [[§39 Areas Between Curves#^def-39-1|Def. §39.1]], [[§35 The Definite Integral#^def-35-1|Def. §35.1]], [[§35 The Definite Integral#^thm-35-1|§35.1]]
 
 > [!remark]- Connections
-> - The same area as a double integral: $\iint_S 1\,dA$ over a type I region ([[§99 Double Integrals Over General Regions|§99]]). Its iterated form $\int_a^b \int_{g(x)}^{f(x)} 1\,dy\,dx$ is exactly Theorem §39.1, and the rigorous version is Fubini for type I regions, [[§15 Multivariable Integration#^thm-15-9|452 Thm. §15.9]].
+> - The same area as a double integral: $\iint_S 1\,dA$ over a type I region ([[§99 Double Integrals Over General Regions#^thm-99-5|Theorem §99.5]], [[§99 Double Integrals Over General Regions#^thm-99-1|Theorem §99.1]]). Its iterated form $\int_a^b \int_{g(x)}^{f(x)} 1\,dy\,dx$ is exactly Theorem §39.1, and the rigorous version is Fubini for type I regions, [[§15 Multivariable Integration#^thm-15-9|452 Thm. §15.9]].
 
 > [!remark] Remark: Method — Area Between Curves
 > 1. **Sketch the region.** Identify the top curve $y_T$, the bottom curve $y_B$, and a typical approximating rectangle of width $\Delta x$ and height $y_T - y_B$.

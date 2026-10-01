@@ -69,9 +69,9 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 > [!proof]+ Proof
 > Stewart reads the equations from a figure with $r > 0$ and $0 < \theta < \pi/2$: in the right triangle with hypotenuse $OP = r$, $\cos\theta = x/r$ and $\sin\theta = y/r$. For general values:
 >
-> **$r > 0$.** $P$ lies on the circle of radius $r$ about $O$, on the ray at angle $\theta$. By the general definition of sine and cosine ([[§119 Trigonometry|§119]]: $\cos\theta = x/r$, $\sin\theta = y/r$ for the point $(x, y)$ at angle $\theta$ on the circle of radius $r$), $x = r\cos\theta$ and $y = r\sin\theta$.
+> **$r > 0$.** $P$ lies on the circle of radius $r$ about $O$, on the ray at angle $\theta$. By the general definition of sine and cosine ([[§119 Trigonometry#^def-119-4|Definition §119.4]]: $\cos\theta = x/r$, $\sin\theta = y/r$ for the point $(x, y)$ at angle $\theta$ on the circle of radius $r$), $x = r\cos\theta$ and $y = r\sin\theta$.
 >
-> **$r < 0$.** $(r, \theta)$ is the point $(|r|, \theta + \pi)$, so by the first case $x = |r|\cos(\theta + \pi) = -|r|\cos\theta = r\cos\theta$, and likewise $y = -|r|\sin\theta = r\sin\theta$.
+> **$r < 0$.** $(r, \theta)$ is the point $(|r|, \theta + \pi)$, so by the first case $x = |r|\cos(\theta + \pi) = -|r|\cos\theta = r\cos\theta$, and likewise $y = -|r|\sin\theta = r\sin\theta$. (Here $\cos(\theta + \pi) = -\cos\theta$ and $\sin(\theta + \pi) = -\sin\theta$ by Definition §119.4: if $(x', y')$ is on the terminal side of $\theta$, then $(-x', -y')$, at the same distance from $O$, is on the terminal side of $\theta + \pi$.)
 >
 > **$r = 0$.** Both sides are $0$.
 >
@@ -79,10 +79,10 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 
 ^pf-65-2
 
-*Uses:* [[§65 Polar Coordinates#^def-65-1|Def. §65.1]], [[§119 Trigonometry|§119]] (sine and cosine of a general angle, $\cos(\theta + \pi) = -\cos\theta$, $\sin(\theta + \pi) = -\sin\theta$)
+*Uses:* [[§65 Polar Coordinates#^def-65-1|Def. §65.1]], [[§119 Trigonometry#^def-119-4|Def. §119.4]] (sine and cosine of a general angle, $\cos(\theta + \pi) = -\cos\theta$, $\sin(\theta + \pi) = -\sin\theta$), [[§119 Trigonometry#^thm-119-4|§119.4]] ($\cos^2\theta + \sin^2\theta = 1$)
 
 > [!remark]- Connections
-> - The map $(r, \theta) \mapsto (r\cos\theta, r\sin\theta)$ in 452: it is locally invertible wherever its Jacobian $r$ is nonzero, [[§13 The Inverse Function Theorem#Example: Polar Coordinates|452 §13]] (polar coordinates example), and $r$ is the factor in $dx\,dy = r\,dr\,d\theta$, [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]]. Workhorse example: [[Polar and spherical coordinates]].
+> - The map $(r, \theta) \mapsto (r\cos\theta, r\sin\theta)$ in 452: it is locally invertible wherever its Jacobian $r$ is nonzero, [[§13 The Inverse Function Theorem#^ex-13-4|452 Ex. §13.4]] (with its inverse, [[§13 The Inverse Function Theorem#^ex-13-3|452 Ex. §13.3]]), and $r$ is the factor in $dx\,dy = r\,dr\,d\theta$, [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]]. Workhorse example: [[Polar and spherical coordinates]].
 
 > [!remark] Remark: Choosing the Angle
 > Equations 2 do not determine $\theta$: as $\theta$ runs through $[0, 2\pi)$, each value of $\tan\theta$ occurs twice. When converting from Cartesian to polar coordinates, it is not enough to find $r$ and $\theta$ satisfying Equations 2; choose $\theta$ so that the point $(r, \theta)$ lies in the correct quadrant (Example §65.1(c)).
@@ -158,7 +158,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 > - $\pi \to 3\pi/2$: $r$ decreases from $1$ to $0$, through the third quadrant into the pole, which it reaches pointing straight down.
 > - $3\pi/2 \to 2\pi$: $r$ increases from $0$ to $1$, through the fourth quadrant back to $(1, 0)$.
 >
-> Beyond $2\pi$ or below $0$ the path is retraced. The curve is heart-shaped, with a cusp at the pole: a **cardioid**. It is symmetric about the line $\theta = \pi/2$ (Theorem §65.3(c)), since $\sin(\pi - \theta) = \sin\theta$.
+> Beyond $2\pi$ or below $0$ the path is retraced. The curve is heart-shaped, with a cusp at the pole: a **cardioid**. It is symmetric about the line $\theta = \pi/2$ ([[§65 Polar Coordinates#^thm-65-3|Theorem §65.3]](c)), since $\sin(\pi - \theta) = \sin\theta$.
 >
 > *Stewart: Example 10.3.7*
 
@@ -213,12 +213,21 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 
 ^pf-65-3
 
-*Uses:* [[§65 Polar Coordinates#^def-65-2|Def. §65.2]], [[§65 Polar Coordinates#^thm-65-2|§65.2]], [[§119 Trigonometry|§119]] (cosine is even, sine is odd; $\cos(\pi - \theta) = -\cos\theta$, $\sin(\pi - \theta) = \sin\theta$)
+*Uses:* [[§65 Polar Coordinates#^def-65-2|Def. §65.2]], [[§65 Polar Coordinates#^thm-65-2|§65.2]], [[§119 Trigonometry#^thm-119-5|§119.5]] (cosine is even, sine is odd), [[§119 Trigonometry#^def-119-4|Def. §119.4]] ($\cos(\theta + \pi) = -\cos\theta$, $\sin(\theta + \pi) = -\sin\theta$; $\cos(\pi - \theta) = -\cos\theta$, $\sin(\pi - \theta) = \sin\theta$, since $(-x, y)$ is on the terminal side of $\pi - \theta$ when $(x, y)$ is on that of $\theta$)
 
 > [!remark] Remark: Using Symmetry
 > The circle $r = 2\cos\theta$ and the rose $r = \cos 2\theta$ are symmetric about the polar axis, since $\cos(-\theta) = \cos\theta$. The cardioid $r = 1 + \sin\theta$ and the rose are symmetric about $\theta = \pi/2$, since $\sin(\pi - \theta) = \sin\theta$ and $\cos[2(\pi - \theta)] = \cos(2\pi - 2\theta) = \cos 2\theta$. The rose is also symmetric about the pole. So in Example §65.3 it would have been enough to plot points for $0 \le \theta \le \pi/2$ and reflect in the polar axis. The tests are sufficient, not necessary, because a point has many polar representations. For example, replacing $\theta$ by $-\theta$ turns $r = \sin 2\theta$ into $r = -\sin 2\theta$, yet this rose is symmetric about the polar axis: if $(r, \theta)$ satisfies $r = \sin 2\theta$, then the reflected point $(r, -\theta)$ has the representation $(-r, \pi - \theta)$, and $\sin 2(\pi - \theta) = -\sin 2\theta = -r$.
 
 ^rem-65-2
+
+## Graphing Polar Curves with Technology
+
+> [!remark]- Remark: Graphing Polar Curves with Technology
+> To graph a polar curve with software one must first choose the $\theta$-interval that gives the whole curve. For $r = \sin(8\theta/5)$ (Stewart's Example 9): after $n$ full turns, $\sin\frac{8(\theta + 2n\pi)}{5} = \sin\big(\frac{8\theta}{5} + \frac{16n\pi}{5}\big)$, which equals $\sin\frac{8\theta}{5}$ for all $\theta$ once $16n\pi/5$ is an even multiple of $\pi$, first at $n = 5$. So $0 \le \theta \le 10\pi$ gives the entire curve, which has $16$ loops.
+>
+> Stewart's Example 10 graphs the **limaçons** $r = 1 + c\sin\theta$ ($0 \le \theta \le 2\pi$ gives the whole curve). For $c > 1$ there is an inner loop, which shrinks as $c$ decreases; at $c = 1$ it disappears and the curve is the cardioid of Example §65.4; for $\frac12 < c < 1$ the cusp is smoothed into a "dimple"; for $0 < c \le \frac12$ the curve is an oval, more and more circular as $c \to 0$; at $c = 0$ it is the circle $r = 1$. For negative $c$ the shapes repeat in reverse order, reflected in the horizontal axis (replacing $c$ by $-c$ and $\theta$ by $-\theta$ leaves $r$ unchanged). The path of Mars as seen from Earth has been modelled by a limaçon with a loop.
+
+^rem-65-3
 
 > [!remark] Remark: Common Polar Curves
 > Stewart's Table 1 (for $a > 0$, $b > 0$):
@@ -232,12 +241,5 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 > | lemniscates | $r^2 = a^2\sin 2\theta$, $r^2 = a^2\cos 2\theta$ | figure eights |
 >
 > The orientation of a limaçon depends on the trigonometric function (sine or cosine) and the sign of $b$.
-
-^rem-65-3
-
-> [!remark]- Remark: Graphing Polar Curves with Technology
-> To graph a polar curve with software one must first choose the $\theta$-interval that gives the whole curve. For $r = \sin(8\theta/5)$ (Stewart's Example 9): after $n$ full turns, $\sin\frac{8(\theta + 2n\pi)}{5} = \sin\big(\frac{8\theta}{5} + \frac{16n\pi}{5}\big)$, which equals $\sin\frac{8\theta}{5}$ for all $\theta$ once $16n\pi/5$ is an even multiple of $\pi$, first at $n = 5$. So $0 \le \theta \le 10\pi$ gives the entire curve, which has $16$ loops.
->
-> Stewart's Example 10 graphs the **limaçons** $r = 1 + c\sin\theta$ ($0 \le \theta \le 2\pi$ gives the whole curve). For $c > 1$ there is an inner loop, which shrinks as $c$ decreases; at $c = 1$ it disappears and the curve is the cardioid of Example §65.4; for $\frac12 < c < 1$ the cusp is smoothed into a "dimple"; for $0 < c \le \frac12$ the curve is an oval, more and more circular as $c \to 0$; at $c = 0$ it is the circle $r = 1$. For negative $c$ the shapes repeat in reverse order, reflected in the horizontal axis (replacing $c$ by $-c$ and $\theta$ by $-\theta$ leaves $r$ unchanged). The path of Mars as seen from Earth has been modelled by a limaçon with a loop.
 
 ^rem-65-4

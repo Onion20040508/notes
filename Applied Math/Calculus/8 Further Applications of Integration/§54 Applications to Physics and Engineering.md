@@ -84,7 +84,7 @@ The pressure on a *vertical* plate is not constant: it increases with depth. Tha
 > F = \sum_{i=1}^n F_i \approx \sum_{i=1}^n \delta x_i^* w(x_i^*)\,\Delta x \;\longrightarrow\; \int_a^b \delta x\, w(x)\,dx \qquad (n \to \infty).
 > $$
 >
-> **Making the "$\approx$" precise.** The exact area of the $i$th strip is $A_i = \int_{x_{i-1}}^{x_i} w(x)\,dx$ ([[§39 Areas Between Curves|§39]]). Every point of the strip has depth between $x_{i-1}$ and $x_i$, so the pressure there lies between $\delta x_{i-1}$ and $\delta x_i$, and the force on the strip (pressure acting on area, all perpendicular to the plate) satisfies
+> **Making the "$\approx$" precise.** The exact area of the $i$th strip is $A_i = \int_{x_{i-1}}^{x_i} w(x)\,dx$ ([[§39 Areas Between Curves#^thm-39-3|Theorem §39.3]], with the vertical depth as the variable). Every point of the strip has depth between $x_{i-1}$ and $x_i$, so the pressure there lies between $\delta x_{i-1}$ and $\delta x_i$, and the force on the strip (pressure acting on area, all perpendicular to the plate) satisfies
 >
 > $$
 > \delta x_{i-1} A_i \le F_i \le \delta x_i A_i .
@@ -106,7 +106,7 @@ The pressure on a *vertical* plate is not constant: it increases with depth. Tha
 
 ^pf-54-2
 
-*Uses:* [[§54 Applications to Physics and Engineering#^thm-54-1|§54.1]], [[§35 The Definite Integral|§35]] (Riemann sums, comparison properties of the integral), [[§39 Areas Between Curves|§39]] (area as an integral of width)
+*Uses:* [[§54 Applications to Physics and Engineering#^thm-54-1|§54.1]], [[§35 The Definite Integral#^def-35-1|Def. §35.1]] (Riemann sums), [[§35 The Definite Integral#^thm-35-5|§35.5]] (additivity over adjacent intervals), [[§35 The Definite Integral#^thm-35-6|§35.6]] (comparison properties), [[§39 Areas Between Curves#^thm-39-3|§39.3]] (area as an integral of width)
 
 ![[m233-54-1.svg]]
 *The dam of Example §54.1. With depth $x$ measured down from the water surface, the horizontal strip at depth $x$ (red) has width $w(x) = 2(15 + a)$, where similar triangles give $a / (16 - x) = 10/20$ (green). The pressure on the strip is about $\rho g x$, so it carries a force of about $\rho g x\,w(x)\,\Delta x$.*
@@ -119,7 +119,7 @@ The pressure on a *vertical* plate is not constant: it increases with depth. Tha
 > 2. **Width.** Find the width of a horizontal strip as a function of the depth variable, from the equation of the edge or from similar triangles.
 > 3. **Force on a strip.** Pressure $\times$ area: $\delta \cdot (\text{depth}) \cdot (\text{width}) \cdot \Delta x$. Use $\rho g$ with $\rho$ in $\text{kg/m}^3$ in SI units, and $\delta$ in $\text{lb/ft}^3$ in US units.
 > 4. **Integrate** over the depths where the plate is under the fluid; a plate sticking out of the fluid is cut off at the surface.
-> 5. **Evaluate** using symmetry where possible. In Stewart's Example 8.3.2 (the end of a drum of radius $3$ ft, center $7$ ft deep), $F = 125 \int_{-3}^{3} (7 - y)\sqrt{9 - y^2}\,dy$; the part $\int_{-3}^3 y\sqrt{9 - y^2}\,dy$ is $0$ because the integrand is odd ([[§38 The Substitution Rule|§38]]), and $\int_{-3}^3 \sqrt{9 - y^2}\,dy = \frac12 \pi (3)^2$ is the area of a half-disk, so $F = 875 \cdot \frac92 \pi = \frac{7875\pi}{2} \approx 12{,}370$ lb.
+> 5. **Evaluate** using symmetry where possible. In Stewart's Example 8.3.2 (the end of a drum of radius $3$ ft, center $7$ ft deep), $F = 125 \int_{-3}^{3} (7 - y)\sqrt{9 - y^2}\,dy$; the part $\int_{-3}^3 y\sqrt{9 - y^2}\,dy$ is $0$ because the integrand is odd ([[§38 The Substitution Rule#^thm-38-4|Theorem §38.4]]), and $\int_{-3}^3 \sqrt{9 - y^2}\,dy = \frac12 \pi (3)^2$ is the area of a half-disk, so $F = 875 \cdot \frac92 \pi = \frac{7875\pi}{2} \approx 12{,}370$ lb.
 
 ^rem-54-1
 
@@ -273,7 +273,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 ### Plates: Centroids
 
 > [!definition] Definition §54.4: Lamina and Centroid
-> A **lamina** is a flat plate. If a lamina of uniform density $\rho$ occupies a region $\mathcal{R}$ of the plane, its center of mass is called the **centroid** of $\mathcal{R}$. (By Theorem §54.5 below it depends only on the shape of $\mathcal{R}$, not on $\rho$. A plate of non-uniform density usually balances elsewhere; that case is treated with double integrals in [[§101 Applications of Double Integrals|§101]].)
+> A **lamina** is a flat plate. If a lamina of uniform density $\rho$ occupies a region $\mathcal{R}$ of the plane, its center of mass is called the **centroid** of $\mathcal{R}$. (By Theorem §54.5 below it depends only on the shape of $\mathcal{R}$, not on $\rho$. A plate of non-uniform density usually balances elsewhere; that case is treated with double integrals in [[§101 Applications of Double Integrals#^def-101-3|Definition §101.3]].)
 >
 > *Stewart: 8.3 (text and margin note)*
 
@@ -323,11 +323,11 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 > M_x = \lim_{n \to \infty} \sum_{i=1}^n \rho \cdot \tfrac12 [f(\bar x_i)]^2\,\Delta x = \rho \int_a^b \tfrac12 [f(x)]^2\,dx .
 > $$
 >
-> (The moments of $\mathcal{R}$ are *defined* as these limits of the moments of the approximating polygons; the [[§54 Applications to Physics and Engineering#^rem-54-3|principles]] fix the moments of the polygons.) The mass is density times area, $m = \rho A$ with $A = \int_a^b f(x)\,dx$ ([[§35 The Definite Integral|§35]]). Dividing, $\bar x = M_y / m$ and $\bar y = M_x / m$, and $\rho$ cancels from numerator and denominator.
+> (The moments of $\mathcal{R}$ are *defined* as these limits of the moments of the approximating polygons; the [[§54 Applications to Physics and Engineering#^rem-54-3|principles]] fix the moments of the polygons.) The mass is density times area, $m = \rho A$ with $A = \int_a^b f(x)\,dx$ ([[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]]); the midpoint sums above converge because $x f(x)$ and $\frac12 [f(x)]^2$ are continuous ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]]) and the limit of Riemann sums does not depend on the sample points ([[§35 The Definite Integral#^def-35-1|Definition §35.1]]). Dividing, $\bar x = M_y / m$ and $\bar y = M_x / m$, and $\rho$ cancels from numerator and denominator.
 
 ^pf-54-5
 
-*Uses:* [[§54 Applications to Physics and Engineering#^def-54-3|Def. §54.3]], [[§54 Applications to Physics and Engineering#^rem-54-3|Remark: The Principles Behind the Formulas]], [[§35 The Definite Integral|§35]] (Riemann sums of continuous functions converge to the integral)
+*Uses:* [[§54 Applications to Physics and Engineering#^def-54-3|Def. §54.3]], [[§54 Applications to Physics and Engineering#^rem-54-3|Remark: The Principles Behind the Formulas]], [[§35 The Definite Integral#^def-35-1|Def. §35.1]], [[§35 The Definite Integral#^thm-35-1|§35.1]] (Riemann sums of continuous functions converge to the integral), [[§34 The Area and Distance Problems#^def-34-1|Def. §34.1]] (area under a curve)
 
 > [!remark]- Connections
 > - $\bar x = \int_a^b x f(x)\,dx \big/ \int_a^b f(x)\,dx$ is the average of $x$ with weight $f \ge 0$. The Weighted Mean Value Theorem [[§33 Properties of the Riemann Integral#^thm-33-10|451 Thm. §33.10]] (with the continuous function $x$ and the weight $f$) gives $\bar x \in [a, b]$: the centroid lies over the base of the region.
@@ -385,14 +385,14 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 > M_y = \rho \int_a^b x\,[f(x) - g(x)]\,dx, \qquad M_x = \rho \int_a^b \tfrac12 \big\{ [f(x)]^2 - [g(x)]^2 \big\}\,dx ,
 > $$
 >
-> and the mass is $m = \rho A$ ([[§39 Areas Between Curves|§39]]). Dividing by $m$ gives the formulas.
+> and the mass is $m = \rho A$ ([[§39 Areas Between Curves#^thm-39-1|Theorem §39.1]]). Dividing by $m$ gives the formulas.
 
 ^pf-54-6
 
-*Uses:* [[§54 Applications to Physics and Engineering#^thm-54-5|§54.5]], [[§54 Applications to Physics and Engineering#^rem-54-3|Remark: The Principles Behind the Formulas]], [[§39 Areas Between Curves|§39]] (area between curves)
+*Uses:* [[§54 Applications to Physics and Engineering#^thm-54-5|§54.5]], [[§54 Applications to Physics and Engineering#^rem-54-3|Remark: The Principles Behind the Formulas]], [[§39 Areas Between Curves#^thm-39-1|§39.1]] (area between curves)
 
 > [!remark]- Connections
-> - These are iterated integrals in disguise: with $\mathcal{R}$ a type I region, $\int_{g(x)}^{f(x)} x\,dy = x[f(x) - g(x)]$ and $\int_{g(x)}^{f(x)} y\,dy = \frac12\{[f(x)]^2 - [g(x)]^2\}$, so by Fubini's theorem [[§15 Multivariable Integration#^thm-15-9|452 Thm. §15.9]], $A\bar x = \iint_{\mathcal{R}} x\,dA$ and $A\bar y = \iint_{\mathcal{R}} y\,dA$. That is the definition used for plates of variable density in [[§101 Applications of Double Integrals|§101]].
+> - These are iterated integrals in disguise: with $\mathcal{R}$ a type I region, $\int_{g(x)}^{f(x)} x\,dy = x[f(x) - g(x)]$ and $\int_{g(x)}^{f(x)} y\,dy = \frac12\{[f(x)]^2 - [g(x)]^2\}$, so by Fubini's theorem [[§15 Multivariable Integration#^thm-15-9|452 Thm. §15.9]], $A\bar x = \iint_{\mathcal{R}} x\,dA$ and $A\bar y = \iint_{\mathcal{R}} y\,dA$. That is the definition used for plates of variable density in [[§101 Applications of Double Integrals#^def-101-3|Definition §101.3]].
 
 > [!example] Example §54.4: Region Between a Line and a Parabola
 > Find the centroid of the region bounded by the line $y = x$ and the parabola $y = x^2$.
@@ -435,7 +435,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 ^thm-54-7
 
 > [!proof]+ Proof
-> Stewart proves the special case in which $\mathcal{R}$ lies between $y = f(x)$ and $y = g(x)$, $a \le x \le b$ (with $f \ge g$ continuous), and $l$ is the $y$-axis. Since $\mathcal{R}$ lies on one side of $l$, we may take $0 \le a$. By the method of cylindrical shells ([[§41 Volumes by Cylindrical Shells|§41]]),
+> Stewart proves the special case in which $\mathcal{R}$ lies between $y = f(x)$ and $y = g(x)$, $a \le x \le b$ (with $f \ge g$ continuous), and $l$ is the $y$-axis. Since $\mathcal{R}$ lies on one side of $l$, we may take $0 \le a$. By the method of cylindrical shells ([[§41 Volumes by Cylindrical Shells#^thm-41-2|Theorem §41.2]]),
 >
 > $$
 > \begin{aligned}
@@ -449,7 +449,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 ^pf-54-7
 
-*Uses:* [[§54 Applications to Physics and Engineering#^thm-54-6|§54.6]], [[§41 Volumes by Cylindrical Shells|§41]] (shell method)
+*Uses:* [[§54 Applications to Physics and Engineering#^thm-54-6|§54.6]], [[§41 Volumes by Cylindrical Shells#^thm-41-2|§41.2]] (shell method)
 
 *Stewart proves only this special case. Any line $l$ can be made the $y$-axis by a choice of coordinates, so the proof covers every region that is bounded by two graphs over an interval in the direction perpendicular to $l$; a region that can be cut into finitely many such pieces follows by additivity of volumes and of moments.*
 

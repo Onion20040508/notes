@@ -58,7 +58,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 ^def-70-2
 
 > [!remark] Remark: Two Sequences, and the Analogy with Improper Integrals
-> With every series $\sum a_n$ come two sequences: the sequence $\{a_n\}$ of its *terms* and the sequence $\{s_n\}$ of its *partial sums*. Convergence of the series is about $\{s_n\}$. Compare the improper integral $\int_1^{\infty} f(x)\,dx = \lim_{t \to \infty} \int_1^t f(x)\,dx$ ([[§51 Improper Integrals|§51]]): there we integrate from $1$ to $t$ and let $t \to \infty$; for a series we sum from $1$ to $n$ and let $n \to \infty$.
+> With every series $\sum a_n$ come two sequences: the sequence $\{a_n\}$ of its *terms* and the sequence $\{s_n\}$ of its *partial sums*. Convergence of the series is about $\{s_n\}$. Compare the improper integral $\int_1^{\infty} f(x)\,dx = \lim_{t \to \infty} \int_1^t f(x)\,dx$ ([[§51 Improper Integrals#^def-51-1|Definition §51.1]]): there we integrate from $1$ to $t$ and let $t \to \infty$; for a series we sum from $1$ to $n$ and let $n \to \infty$.
 
 ^rem-70-1
 
@@ -260,7 +260,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 *Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§69 Sequences#^def-69-4|Def. §69.4]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§14 Series#^thm-14-5|451 Thm. §14.5]]; the integral test gives a second proof, [[§15 Alternating Series and Integral Tests#^ex-15-3|451 Ex. §15.3]] (and [[§71 The Integral Test and Estimates of Sums|§71]]). The grouping argument is due to Nicole Oresme (1323–1382).
+> - Rigorous treatment: [[§14 Series#^thm-14-5|451 Thm. §14.5]]; the integral test gives a second proof, [[§15 Alternating Series and Integral Tests#^ex-15-3|451 Ex. §15.3]] (and [[§71 The Integral Test and Estimates of Sums#^thm-71-2|Theorem §71.2]] with $p = 1$). The grouping argument is due to Nicole Oresme (1323–1382).
 
 > [!theorem] Theorem §70.4: Terms of a Convergent Series Tend to Zero
 > If the series $\displaystyle\sum_{n=1}^{\infty} a_n$ is convergent, then $\displaystyle\lim_{n \to \infty} a_n = 0$.
@@ -339,7 +339,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 > s_n = \sum_{i=1}^{n} a_i , \qquad s = \sum_{n=1}^{\infty} a_n , \qquad t_n = \sum_{i=1}^{n} b_i , \qquad t = \sum_{n=1}^{\infty} b_n .
 > $$
 >
-> **(ii)** The $n$th partial sum of $\sum (a_n + b_n)$ is $u_n = \sum_{i=1}^{n} (a_i + b_i)$. A finite sum can be split (Equation 5.2.10, [[§35 The Definite Integral|§35]]), so by the Sum Law for sequences
+> **(ii)** The $n$th partial sum of $\sum (a_n + b_n)$ is $u_n = \sum_{i=1}^{n} (a_i + b_i)$. A finite sum can be split ([[§35 The Definite Integral#^thm-35-3|Theorem §35.3]], Stewart's Equation 5.2.10), so by the Sum Law for sequences
 >
 > $$
 > \lim_{n \to \infty} u_n = \lim_{n \to \infty} \left( \sum_{i=1}^{n} a_i + \sum_{i=1}^{n} b_i \right) = \lim_{n \to \infty} s_n + \lim_{n \to \infty} t_n = s + t .
@@ -351,7 +351,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 
 ^pf-70-6
 
-*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§69 Sequences#^thm-69-3|§69.3]], [[§35 The Definite Integral|§35]] (properties of sigma notation)
+*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§69 Sequences#^thm-69-3|§69.3]], [[§35 The Definite Integral#^thm-35-3|§35.3]]
 
 > [!example] Example §70.5: Combining Known Sums
 > Find the sum of $\displaystyle\sum_{n=1}^{\infty} \left( \frac{3}{n(n+1)} + \frac{1}{2^n} \right)$.

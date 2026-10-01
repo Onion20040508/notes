@@ -11,7 +11,7 @@ tags: [calculus, math233]
 
 *Stewart, Section 15.5 · MATH 233 (UMass, Spring 2023): Practice Exam 2 (Q4), Exam 2 Practice Questions (Q13).*
 
-The area of a surface $z = f(x, y)$ is computed like arc length one dimension down. Over a small rectangle of area $\Delta A$, the surface is close to its tangent plane, and the piece of tangent plane above the rectangle is a parallelogram whose area, by the cross product, is $\sqrt{f_x^2 + f_y^2 + 1}\,\Delta A$. Adding and taking the limit gives surface area as a double integral. Surfaces of revolution were handled with single integrals in [[§53 Area of a Surface of Revolution|§53]]; general parametric surfaces come in [[§112 Parametric Surfaces and Their Areas|§112]], where the formula of this section reappears as a special case (Stewart notes that this section may be omitted if 16.6 is covered).
+The area of a surface $z = f(x, y)$ is computed like arc length one dimension down. Over a small rectangle of area $\Delta A$, the surface is close to its tangent plane, and the piece of tangent plane above the rectangle is a parallelogram whose area, by the cross product, is $\sqrt{f_x^2 + f_y^2 + 1}\,\Delta A$. Adding and taking the limit gives surface area as a double integral. Surfaces of revolution were handled with single integrals in [[§53 Area of a Surface of Revolution|§53]]; general parametric surfaces come in [[§112 Parametric Surfaces and Their Areas|§112]], where the formula of this section reappears as a special case ([[§112 Parametric Surfaces and Their Areas#^thm-112-2|Theorem §112.2]]; Stewart notes that this section may be omitted if 16.6 is covered).
 
 ## The Surface Area of a Graph
 
@@ -44,13 +44,13 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 ^thm-102-1
 
 > [!proof]+ Proof
-> **The area of one parallelogram.** Let $\mathbf a$ and $\mathbf b$ be the vectors that start at $P_{ij}$ and lie along the sides of the parallelogram of area $\Delta T_{ij}$; they lie above the sides of $R_{ij}$ of lengths $\Delta x$ and $\Delta y$. The numbers $f_x(x_i, y_j)$ and $f_y(x_i, y_j)$ are the slopes of the tangent lines through $P_{ij}$ in the directions of $\mathbf a$ and $\mathbf b$ ([[§92 Partial Derivatives|§92]]), so going $\Delta x$ in the $x$-direction along the tangent plane raises $z$ by $f_x(x_i, y_j)\,\Delta x$, and similarly in the $y$-direction:
+> **The area of one parallelogram.** Let $\mathbf a$ and $\mathbf b$ be the vectors that start at $P_{ij}$ and lie along the sides of the parallelogram of area $\Delta T_{ij}$; they lie above the sides of $R_{ij}$ of lengths $\Delta x$ and $\Delta y$. The numbers $f_x(x_i, y_j)$ and $f_y(x_i, y_j)$ are the slopes of the tangent lines through $P_{ij}$ in the directions of $\mathbf a$ and $\mathbf b$ ([[§92 Partial Derivatives#^rem-92-1|§92, Remark: Partial Derivatives as Slopes]]), so going $\Delta x$ in the $x$-direction along the tangent plane raises $z$ by $f_x(x_i, y_j)\,\Delta x$, and similarly in the $y$-direction:
 >
 > $$
 > \mathbf a = \Delta x\,\mathbf i + f_x(x_i, y_j)\,\Delta x\,\mathbf k , \qquad \mathbf b = \Delta y\,\mathbf j + f_y(x_i, y_j)\,\Delta y\,\mathbf k .
 > $$
 >
-> The area of the parallelogram is $\Delta T_{ij} = |\mathbf a \times \mathbf b|$ ([[§83 The Cross Product|§83]]), and
+> The area of the parallelogram is $\Delta T_{ij} = |\mathbf a \times \mathbf b|$ ([[§83 The Cross Product#^cor-83-6|Corollary §83.6]]), and
 >
 > $$
 > \mathbf a \times \mathbf b = \begin{vmatrix} \mathbf i & \mathbf j & \mathbf k \\ \Delta x & 0 & f_x(x_i, y_j)\,\Delta x \\ 0 & \Delta y & f_y(x_i, y_j)\,\Delta y \end{vmatrix}
@@ -74,7 +74,7 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 
 ^pf-102-1
 
-*Uses:* [[§102 Surface Area#^def-102-1|Def. §102.1]], [[§83 The Cross Product|§83]] (area of a parallelogram), [[§92 Partial Derivatives|§92]] (partial derivatives as slopes), [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§98 Double Integrals Over Rectangles#^thm-98-1|§98.1]]
+*Uses:* [[§102 Surface Area#^def-102-1|Def. §102.1]], [[§83 The Cross Product#^cor-83-6|§83.6]] (area of a parallelogram), [[§92 Partial Derivatives#^rem-92-1|Rem. §92]] (partial derivatives as slopes), [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§98 Double Integrals Over Rectangles#^thm-98-1|§98.1]]
 
 ![[m233-102-1.svg]]
 *The tangent parallelogram of Definition §102.1. Above the small rectangle $R_{ij}$ (green) the surface $S$ (blue) is approximated by the piece of its tangent plane at $P_{ij}$ (red), spanned by $\mathbf a = \langle \Delta x, 0, f_x\Delta x \rangle$ and $\mathbf b = \langle 0, \Delta y, f_y\Delta y \rangle$. Its area $|\mathbf a \times \mathbf b| = \sqrt{f_x^2 + f_y^2 + 1}\,\Delta A$ exceeds $\Delta A$ by the factor that measures how steeply the surface is tilted.*
@@ -83,7 +83,7 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 > - Rigorous treatment for parametrized surfaces: [[§18 Surface Integrals#^thm-18-1|452 Thm. §18.1]] (area element $\sqrt{\det G}\,du\,dv = |\mathbf X_u \times \mathbf X_v|\,du\,dv$); Formula 2 is the case $\mathbf X(x, y) = (x, y, f(x, y))$, with $\mathbf X_x \times \mathbf X_y = \langle -f_x, -f_y, 1 \rangle$. Hub: [[Surface Area via the Gram Matrix]].
 
 > [!remark] Remark: Comparison with Arc Length
-> Formula 3 is the analogue of the arc length formula $L = \int_a^b \sqrt{1 + (dy/dx)^2}\,dx$ ([[§52 Arc Length|§52]]): in both, the square root of $1$ plus the squared slopes is the factor by which the graph stretches the length or area of the domain. In particular $A(S) \ge A(D)$, with equality exactly when $S$ is horizontal ($f_x = f_y = 0$). For a plane $z = ax + by + c$ the factor is the constant $\sqrt{a^2 + b^2 + 1}$, so $A(S) = \sqrt{a^2 + b^2 + 1}\,A(D)$ (Stewart's Exercise 15.5.23). Stewart verifies in 16.6 that Formula 2 is consistent with the area of a surface of revolution of [[§53 Area of a Surface of Revolution|§53]].
+> Formula 3 is the analogue of the arc length formula $L = \int_a^b \sqrt{1 + (dy/dx)^2}\,dx$ ([[§52 Arc Length#^thm-52-1|Theorem §52.1]]): in both, the square root of $1$ plus the squared slopes is the factor by which the graph stretches the length or area of the domain. In particular $A(S) \ge A(D)$, with equality exactly when $S$ is horizontal ($f_x = f_y = 0$). For a plane $z = ax + by + c$ the factor is the constant $\sqrt{a^2 + b^2 + 1}$, so $A(S) = \sqrt{a^2 + b^2 + 1}\,A(D)$ (Stewart's Exercise 15.5.23). Stewart verifies in 16.6 ([[§112 Parametric Surfaces and Their Areas#^thm-112-3|Theorem §112.3]]) that Formula 2 is consistent with the area of a surface of revolution, [[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]].
 
 ^rem-102-1
 

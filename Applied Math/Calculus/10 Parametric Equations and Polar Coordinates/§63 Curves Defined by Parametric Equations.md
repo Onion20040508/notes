@@ -172,6 +172,8 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ^ex-63-5
 
+## Graphing Parametric Curves with Technology
+
 > [!remark] Remark: Graphs as Parametric Curves
 > A graph $y = f(x)$ is the parametric curve $x = t$, $y = f(t)$, and a curve $x = g(y)$ is the parametric curve $x = g(t)$, $y = t$. Graphing software uses the second form to draw, say, $x = y^4 - 3y^2$ (Stewart's Example 8), which would otherwise have to be solved for $y$ as four separate functions of $x$. Software also draws curves such as $x = t + \sin 5t$, $y = t + \sin 6t$ that are hopeless by hand; parametric curves called Bézier curves are the basis of computer-aided design and of the letter shapes in PDF files.
 

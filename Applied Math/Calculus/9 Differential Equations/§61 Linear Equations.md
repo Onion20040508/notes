@@ -35,7 +35,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 > y' + \frac1x\,y = 2 . \qquad (2)
 > $$
 >
-> It is not separable: $y' = 2 - y/x$ cannot be factored as a function of $x$ times a function of $y$, so the method of [[§59 Separable Equations|§59]] does not apply. But by the Product Rule the left side of $xy' + y = 2x$ is a derivative, $xy' + y = (xy)'$, so the equation says
+> It is not separable: $y' = 2 - y/x$ cannot be factored as a function of $x$ times a function of $y$, so the method of [[§59 Separable Equations#^thm-59-1|Theorem §59.1]] does not apply. But by the Product Rule the left side of $xy' + y = 2x$ is a derivative, $xy' + y = (xy)'$, so the equation says
 >
 > $$
 > (xy)' = 2x .
@@ -116,7 +116,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 
 ^pf-61-1
 
-*Uses:* [[§61 Linear Equations#^def-61-1|Def. §61.1]], [[§61 Linear Equations#^def-61-2|Def. §61.2]], [[§15 The Product and Quotient Rules|§15]] (Product Rule), [[§17 The Chain Rule|§17]] (Chain Rule), [[§59 Separable Equations|§59]] (separable equations), [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 1: a continuous function has an antiderivative), [[§26 The Mean Value Theorem|§26]] (equal derivatives differ by a constant)
+*Uses:* [[§61 Linear Equations#^def-61-1|Def. §61.1]], [[§61 Linear Equations#^def-61-2|Def. §61.2]], [[§15 The Product and Quotient Rules#^thm-15-1|§15.1]] (Product Rule), [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§59 Separable Equations#^thm-59-1|§59.1]] (separable equations), [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]] (FTC Part 1: a continuous function has an antiderivative), [[§26 The Mean Value Theorem#^cor-26-4|§26.4]] (equal derivatives differ by a constant)
 
 > [!remark]- Connections
 > - The integrating factor appears in 451 in a Rolle's-theorem argument, where $(y e^{g})' = e^{g}(y' + y g')$ is used exactly as in (3): [[§29 The Mean Value Theorem#^ex-29-4|451 Ex. §29.4]] and [[§29 The Mean Value Theorem#^rem-29-2|451 Remark after Ex. §29.4]].
@@ -147,7 +147,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 > e^{x^3}\frac{dy}{dx} + 3x^2 e^{x^3} y = 6x^2 e^{x^3}, \qquad\text{that is,}\qquad \frac{d}{dx}\big(e^{x^3} y\big) = 6x^2 e^{x^3}
 > $$
 >
-> by the Product Rule. Integrating both sides (substitute $u = x^3$, $du = 3x^2\,dx$, [[§38 The Substitution Rule|§38]]),
+> by the Product Rule. Integrating both sides (substitute $u = x^3$, $du = 3x^2\,dx$, [[§38 The Substitution Rule#^thm-38-1|Theorem §38.1]]),
 >
 > $$
 > e^{x^3} y = \int 6x^2 e^{x^3}\,dx = 2e^{x^3} + C, \qquad y = 2 + Ce^{-x^3} .
@@ -218,7 +218,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 > e^{x^2} y = \int e^{x^2}\,dx + C, \qquad y = e^{-x^2} \int e^{x^2}\,dx + Ce^{-x^2} .
 > $$
 >
-> The integral $\int e^{x^2}\,dx$ cannot be expressed in terms of elementary functions ([[§48 Strategy for Integration|§48]]). It is still a perfectly good function. To name one antiderivative explicitly, use Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]):
+> The integral $\int e^{x^2}\,dx$ cannot be expressed in terms of elementary functions ([[§48 Strategy for Integration#^thm-48-2|Theorem §48.2]]). It is still a perfectly good function. To name one antiderivative explicitly, use Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]):
 >
 > $$
 > y = e^{-x^2} \int_0^x e^{t^2}\,dt + Ce^{-x^2} .
@@ -243,7 +243,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 > L\,\frac{dI}{dt} + RI = E(t) . \qquad (7)
 > $$
 >
-> This is a first-order linear equation for $I$ (Definition §61.1, after dividing by $L$). The circuit was first met in [[§58 Direction Fields and Euler's Method|§58]].
+> This is a first-order linear equation for $I$ (Definition §61.1, after dividing by $L$). The circuit was first met in [[§58 Direction Fields and Euler's Method#^def-58-2|Definition §58.2]].
 >
 > *Stewart: 9.5, Equation 7*
 
@@ -299,7 +299,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 > \frac{d}{dt}\big(e^{3t} I\big) = e^{3t}\frac{dI}{dt} + 3e^{3t} I = 15e^{3t}\sin 30t .
 > $$
 >
-> **The integral.** By Formula 98 of the Table of Integrals, $\displaystyle\int e^{au}\sin bu\,du = \frac{e^{au}}{a^2 + b^2}(a\sin bu - b\cos bu) + C$ ([[§49 Integration Using Tables and Technology|§49]]; it also follows by integrating by parts twice, [[§44 Integration by Parts|§44]]). With $a = 3$, $b = 30$, $a^2 + b^2 = 909$:
+> **The integral.** By Formula 98 of the Table of Integrals, $\displaystyle\int e^{au}\sin bu\,du = \frac{e^{au}}{a^2 + b^2}(a\sin bu - b\cos bu) + C$ ([[§49 Integration Using Tables and Technology|§49]]; it also follows by integrating by parts twice, [[§44 Integration by Parts#^thm-44-1|Theorem §44.1]]). With $a = 3$, $b = 30$, $a^2 + b^2 = 909$:
 >
 > $$
 > e^{3t} I = \int 15e^{3t}\sin 30t\,dt = 15\,\frac{e^{3t}}{909}\,(3\sin 30t - 30\cos 30t) + C .

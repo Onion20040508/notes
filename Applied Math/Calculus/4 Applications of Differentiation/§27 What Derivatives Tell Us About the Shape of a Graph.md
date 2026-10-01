@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 4.3.*
 
-Since $f'(x)$ is the slope of the curve $y = f(x)$ at $(x, f(x))$, the sign of $f'$ tells where the curve rises and falls, and the sign of $f''$ tells which way it bends. This section turns those observations into tests, each proved from the Mean Value Theorem ([[§26 The Mean Value Theorem|§26]]). The Increasing/Decreasing Test reads monotonicity off the sign of $f'$. The First Derivative Test decides whether a critical number gives a local maximum, a local minimum or neither. The Concavity Test reads concavity off the sign of $f''$, and the Second Derivative Test is an alternative way to classify critical numbers. Together they are the tools for sketching a curve from its formula ([[§29 Summary of Curve Sketching|§29]]).
+Since $f'(x)$ is the slope of the curve $y = f(x)$ at $(x, f(x))$, the sign of $f'$ tells where the curve rises and falls, and the sign of $f''$ tells which way it bends. This section turns those observations into tests, each proved from the Mean Value Theorem ([[§26 The Mean Value Theorem#^thm-26-2|Theorem §26.2]]). The Increasing/Decreasing Test reads monotonicity off the sign of $f'$. The First Derivative Test decides whether a critical number gives a local maximum, a local minimum or neither. The Concavity Test reads concavity off the sign of $f''$, and the Second Derivative Test is an alternative way to classify critical numbers. Together they are the tools for sketching a curve from its formula ([[§29 Summary of Curve Sketching|§29]]).
 
 ## What Does f′ Say About f?
 
@@ -20,7 +20,7 @@ Since $f'(x)$ is the slope of the curve $y = f(x)$ at $(x, f(x))$, the sign of $
 >
 > (b) If $f'(x) < 0$ on an interval, then $f$ is decreasing on that interval.
 >
-> Stewart abbreviates the name to the **I/D Test**. ("Increasing" means $x_1 < x_2 \Rightarrow f(x_1) < f(x_2)$, as defined in [[§1 Four Ways to Represent a Function|§1]].)
+> Stewart abbreviates the name to the **I/D Test**. ("Increasing" means $x_1 < x_2 \Rightarrow f(x_1) < f(x_2)$, as defined in [[§1 Four Ways to Represent a Function#^def-1-8|Def. §1.8]].)
 >
 > *Stewart: 4.3, Increasing/Decreasing Test*
 
@@ -39,7 +39,7 @@ Since $f'(x)$ is the slope of the curve $y = f(x)$ at $(x, f(x))$, the sign of $
 
 ^pf-27-1
 
-*Uses:* [[§26 The Mean Value Theorem#^thm-26-2|§26.2]], [[§13 The Derivative as a Function|§13]] (differentiable implies continuous)
+*Uses:* [[§26 The Mean Value Theorem#^thm-26-2|§26.2]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^cor-29-7|451 Cor. §29.7]], which also gives the non-strict version ($f' \ge 0$ implies $f$ non-decreasing).
@@ -68,7 +68,7 @@ Since $f'(x)$ is the slope of the curve $y = f(x)$ at $(x, f(x))$, the sign of $
 
 ## The First Derivative Test
 
-By Fermat's Theorem ([[§25 Maximum and Minimum Values|§25]]) a local extremum can only occur at a critical number, but not every critical number gives one. In Example §27.1, $f(0) = 5$ is a local maximum because $f$ rises up to $0$ and falls after it: $f'$ changes sign from positive to negative at $0$.
+By Fermat's Theorem ([[§25 Maximum and Minimum Values#^cor-25-3|Corollary §25.3]]) a local extremum can only occur at a critical number, but not every critical number gives one. In Example §27.1, $f(0) = 5$ is a local maximum because $f$ rises up to $0$ and falls after it: $f'$ changes sign from positive to negative at $0$.
 
 > [!theorem] Theorem §27.2: The First Derivative Test
 > Suppose that $c$ is a critical number of a continuous function $f$.
@@ -214,7 +214,7 @@ For example, in a population curve $P(t)$ that grows slowly, then quickly, then 
 > [!proof]+ Proof
 > Stewart's argument for (a): $f''(x) > 0$ near $c$, so $f$ is concave upward near $c$, so the graph lies above its horizontal tangent at $c$, and $f$ has a local minimum at $c$. In detail:
 >
-> (a) (Stewart asserts that $f'' > 0$ near $c$; here is why.) $f''$ is continuous at $c$ and $f''(c) > 0$, so $\lim_{x \to c} f''(x) = f''(c) > 0$. Taking $\varepsilon = f''(c)$ in the definition of the limit ([[§9 The Precise Definition of a Limit|§9]]), there is $\delta > 0$ such that $|f''(x) - f''(c)| < f''(c)$, hence $f''(x) > 0$, for all $x$ in the open interval $I = (c - \delta, c + \delta)$. By the Concavity Test the graph of $f$ lies above its tangent line at $c$ on $I$:
+> (a) (Stewart asserts that $f'' > 0$ near $c$; here is why.) $f''$ is continuous at $c$ and $f''(c) > 0$, so $\lim_{x \to c} f''(x) = f''(c) > 0$. Taking $\varepsilon = f''(c)$ in the definition of the limit ([[§9 The Precise Definition of a Limit#^def-9-1|Def. §9.1]]), there is $\delta > 0$ such that $|f''(x) - f''(c)| < f''(c)$, hence $f''(x) > 0$, for all $x$ in the open interval $I = (c - \delta, c + \delta)$. By the Concavity Test the graph of $f$ lies above its tangent line at $c$ on $I$:
 >
 > $$
 > f(x) > f(c) + f'(c)(x - c) = f(c) \qquad\text{for } x \in I,\ x \ne c ,
@@ -226,10 +226,10 @@ For example, in a population curve $P(t)$ that grows slowly, then quickly, then 
 
 ^pf-27-4
 
-*Uses:* [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-3|§27.3]], [[§27 What Derivatives Tell Us About the Shape of a Graph#^def-27-1|Def. §27.1]], [[§25 Maximum and Minimum Values#^def-25-2|Def. §25.2]], [[§9 The Precise Definition of a Limit|§9]] (precise definition of a limit)
+*Uses:* [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-3|§27.3]], [[§27 What Derivatives Tell Us About the Shape of a Graph#^def-27-1|Def. §27.1]], [[§25 Maximum and Minimum Values#^def-25-2|Def. §25.2]], [[§9 The Precise Definition of a Limit#^def-9-1|Def. §9.1]]
 
 > [!remark]- Connections
-> - Several variables: the Hessian test, [[§14 Optimization and Lagrange Multipliers#^thm-14-4|452 Thm. §14.4]]; in this subject, [[§96 Maximum and Minimum Values|§96]].
+> - Several variables: the Hessian test, [[§14 Optimization and Lagrange Multipliers#^thm-14-4|452 Thm. §14.4]]; in this subject, [[§96 Maximum and Minimum Values#^thm-96-2|Theorem §96.2]].
 
 > [!remark] Remark: When the Second Derivative Test Is Inconclusive
 > If $f''(c) = 0$, the test gives no information: at such a point there might be a maximum, a minimum, or neither. The functions $x^4$, $-x^4$ and $x^3$ all have $f'(0) = f''(0) = 0$, and they have a minimum, a maximum and neither at $0$. The test also fails when $f''(c)$ does not exist. In such cases use the First Derivative Test. Even when both tests apply, the First Derivative Test is often easier.
@@ -313,7 +313,7 @@ The first and second derivatives together determine the shape of a graph.
 > \lim_{x \to 0^+} e^{1/x} = \lim_{t \to \infty} e^t = \infty, \qquad \lim_{x \to 0^-} e^{1/x} = \lim_{t \to -\infty} e^t = 0 .
 > $$
 >
-> So $x = 0$ is a vertical asymptote (from the right). As $x \to \pm\infty$, $1/x \to 0$ and $e^{1/x} \to e^0 = 1$, so $y = 1$ is a horizontal asymptote on both sides ([[§11 Limits at Infinity; Horizontal Asymptotes|§11]]).
+> So $x = 0$ is a vertical asymptote (from the right). As $x \to \pm\infty$, $1/x \to 0$ and $e^{1/x} \to e^0 = 1$, so $y = 1$ is a horizontal asymptote on both sides ([[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-2|Def. §11.2]]).
 >
 > **First derivative.** By the Chain Rule,
 >

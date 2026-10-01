@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 4.9.*
 
-Often the derivative of a function is known and the function itself is wanted: position from velocity, the amount of water leaked from the rate of leaking, a population from its growth rate. A function $F$ with $F' = f$ is an antiderivative of $f$. The Mean Value Theorem ([[§26 The Mean Value Theorem|§26]]) shows that on an interval all antiderivatives of $f$ differ by constants, so one antiderivative gives them all. Reading the table of derivatives backwards gives a table of antiderivatives. Extra conditions, such as an initial position and velocity, then pick out one function from the family; this is the first step toward solving differential equations and toward the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]).
+Often the derivative of a function is known and the function itself is wanted: position from velocity, the amount of water leaked from the rate of leaking, a population from its growth rate. A function $F$ with $F' = f$ is an antiderivative of $f$. The Mean Value Theorem ([[§26 The Mean Value Theorem#^cor-26-4|Corollary §26.4]]) shows that on an interval all antiderivatives of $f$ differ by constants, so one antiderivative gives them all. Reading the table of derivatives backwards gives a table of antiderivatives. Extra conditions, such as an initial position and velocity, then pick out one function from the family; this is the first step toward solving differential equations and toward the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]).
 
 ## The Antiderivative of a Function
 
@@ -48,10 +48,10 @@ For instance, $F(x) = \frac13 x^3$ is an antiderivative of $f(x) = x^2$, by the 
 
 ^pf-33-1
 
-*Uses:* [[§26 The Mean Value Theorem#^cor-26-4|§26.4]], [[§14 Derivatives of Polynomials and Exponential Functions|§14]] (derivative of a constant; Sum Rule)
+*Uses:* [[§26 The Mean Value Theorem#^cor-26-4|§26.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-1|§14.1]] (derivative of a constant), [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|§14.4]] (Sum Rule)
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]]. Integrals produce antiderivatives of continuous functions: [[§36 The Fundamental Theorem of Calculus|§36]] and [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]; the general antiderivative is written $\int f(x)\,dx$ in [[§37 Indefinite Integrals and the Net Change Theorem|§37]].
+> - Rigorous treatment: [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]]. Integrals produce antiderivatives of continuous functions: [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]] and [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]; the general antiderivative is written $\int f(x)\,dx$ in [[§37 Indefinite Integrals and the Net Change Theorem#^def-37-1|Def. §37.1]].
 
 ![[m233-33-1.svg]]
 *Members of the family of antiderivatives $\frac13 x^3 + C$ of $f(x) = x^2$, for $C = -2, -1, 0, 1, 2, 3$. They are vertical translates of one another, since all have the same slope $x^2$ at each $x$. By Theorem §33.1 there are no other antiderivatives on $\mathbb{R}$.*
@@ -61,7 +61,7 @@ For instance, $F(x) = \frac13 x^3$ is an antiderivative of $f(x) = x^2$, by the 
 >
 > **(a)** If $F(x) = -\cos x$, then $F'(x) = \sin x$. By Theorem §33.1, the most general antiderivative is $G(x) = -\cos x + C$.
 >
-> **(b)** Since $\frac{d}{dx}(\ln x) = \frac1x$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]), on the interval $(0, \infty)$ the general antiderivative of $1/x$ is $\ln x + C$. More generally, $\frac{d}{dx}\ln|x| = \frac1x$ for all $x \ne 0$, so by Theorem §33.1 the general antiderivative of $1/x$ is $\ln|x| + C$ on any interval that does not contain $0$, in particular on $(-\infty, 0)$ and on $(0, \infty)$. The domain of $1/x$ is not an interval, so the constants on the two pieces are independent ([[§26 The Mean Value Theorem#^rem-26-2|Remark: The Interval Matters]]): the general antiderivative of $f$ is
+> **(b)** Since $\frac{d}{dx}(\ln x) = \frac1x$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3|Corollary §19.3]], with [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|Theorem §19.5]] for the absolute value below), on the interval $(0, \infty)$ the general antiderivative of $1/x$ is $\ln x + C$. More generally, $\frac{d}{dx}\ln|x| = \frac1x$ for all $x \ne 0$, so by Theorem §33.1 the general antiderivative of $1/x$ is $\ln|x| + C$ on any interval that does not contain $0$, in particular on $(-\infty, 0)$ and on $(0, \infty)$. The domain of $1/x$ is not an interval, so the constants on the two pieces are independent ([[§26 The Mean Value Theorem#^rem-26-2|Remark: The Interval Matters]]): the general antiderivative of $f$ is
 >
 > $$
 > F(x) = \begin{cases} \ln x + C_1 & \text{if } x > 0 \\ \ln(-x) + C_2 & \text{if } x < 0 . \end{cases}
@@ -104,15 +104,15 @@ Every differentiation formula, read from right to left, gives an antidifferentia
 
 > [!proof]+ Proof
 > Each formula is true because the derivative of the function in the right column is the function in the left column:
-> - $(cF)' = cF' = cf$ and $(F + G)' = F' + G' = f + g$ (Constant Multiple and Sum Rules, [[§14 Derivatives of Polynomials and Exponential Functions|§14]]);
-> - $\big(\frac{x^{n+1}}{n + 1}\big)' = x^n$ (Power Rule, Example §33.1(c)) and $(e^x)' = e^x$ ([[§14 Derivatives of Polynomials and Exponential Functions|§14]]);
-> - $(\ln|x|)' = \frac1x$, $\big(\frac{b^x}{\ln b}\big)' = \frac{b^x \ln b}{\ln b} = b^x$, $(\sin^{-1} x)' = \frac{1}{\sqrt{1 - x^2}}$, $(\tan^{-1} x)' = \frac{1}{1 + x^2}$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]);
-> - $(\sin x)' = \cos x$, $(-\cos x)' = \sin x$, $(\tan x)' = \sec^2 x$, $(\sec x)' = \sec x \tan x$ ([[§16 Derivatives of Trigonometric Functions|§16]]);
-> - $(\sinh x)' = \cosh x$ and $(\cosh x)' = \sinh x$ ([[§24 Hyperbolic Functions|§24]]).
+> - $(cF)' = cF' = cf$ and $(F + G)' = F' + G' = f + g$ (Constant Multiple and Sum Rules, [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|Theorems §14.3]] and [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|§14.4]]);
+> - $\big(\frac{x^{n+1}}{n + 1}\big)' = x^n$ (Power Rule, Example §33.1(c)) and $(e^x)' = e^x$ ([[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-6|Theorem §14.6]]);
+> - $(\ln|x|)' = \frac1x$, $\big(\frac{b^x}{\ln b}\big)' = \frac{b^x \ln b}{\ln b} = b^x$, $(\sin^{-1} x)' = \frac{1}{\sqrt{1 - x^2}}$, $(\tan^{-1} x)' = \frac{1}{1 + x^2}$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|Theorem §19.5]], [[§17 The Chain Rule#^thm-17-5|Theorem §17.5]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|Theorem §19.8]]);
+> - $(\sin x)' = \cos x$, $(-\cos x)' = \sin x$, $(\tan x)' = \sec^2 x$, $(\sec x)' = \sec x \tan x$ ([[§16 Derivatives of Trigonometric Functions#^thm-16-4|Theorem §16.4]]);
+> - $(\sinh x)' = \cosh x$ and $(\cosh x)' = \sinh x$ ([[§24 Hyperbolic Functions#^thm-24-2|Theorem §24.2]]).
 
 ^pf-33-2
 
-*Uses:* [[§33 Antiderivatives#^def-33-1|Def. §33.1]], [[§14 Derivatives of Polynomials and Exponential Functions|§14]], [[§16 Derivatives of Trigonometric Functions|§16]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]], [[§24 Hyperbolic Functions|§24]]
+*Uses:* [[§33 Antiderivatives#^def-33-1|Def. §33.1]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|§14.3]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|§14.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-6|§14.6]], [[§33 Antiderivatives#^ex-33-1|Ex. §33.1]], [[§16 Derivatives of Trigonometric Functions#^thm-16-4|§16.4]], [[§17 The Chain Rule#^thm-17-5|§17.5]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|§19.5]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|§19.8]], [[§24 Hyperbolic Functions#^thm-24-2|§24.2]]
 
 > [!example] Example §33.2: Using the Table
 > Find all functions $g$ such that
@@ -142,7 +142,7 @@ Every differentiation formula, read from right to left, gives an antidifferentia
 > [!definition] Definition §33.2: Differential Equation
 > An equation that involves the derivatives of a function is called a **differential equation**.
 >
-> Finding a function from its derivative, as in Example §33.2, is solving the simplest kind of differential equation, $y' = f(x)$. The general solution involves an arbitrary constant (or constants, if higher derivatives are given). Extra conditions, such as the value of the function at one point (an *initial condition*), may determine the constants and so specify the solution uniquely. Differential equations are studied in Chapter 9 ([[§57 Modeling with Differential Equations|§57]]).
+> Finding a function from its derivative, as in Example §33.2, is solving the simplest kind of differential equation, $y' = f(x)$. The general solution involves an arbitrary constant (or constants, if higher derivatives are given). Extra conditions, such as the value of the function at one point (an *initial condition*), may determine the constants and so specify the solution uniquely. Differential equations are studied in Chapter 9 ([[§57 Modeling with Differential Equations#^def-57-5|Def. §57.5]]).
 >
 > *Stewart: 4.9 (text)*
 
@@ -201,7 +201,7 @@ A given value such as $F(0) = 2$ fixes the starting point, and hence the one mem
 
 ## Linear Motion
 
-If an object moves in a straight line with position function $s = f(t)$, its velocity is $v(t) = s'(t)$ and its acceleration is $a(t) = v'(t)$ ([[§12 Derivatives and Rates of Change|§12]], [[§20 Rates of Change in the Natural and Social Sciences|§20]]). So the velocity is an antiderivative of the acceleration, and the position is an antiderivative of the velocity. If $a(t)$ and the initial values $s(0)$ and $v(0)$ are known, the position is found by antidifferentiating twice.
+If an object moves in a straight line with position function $s = f(t)$, its velocity is $v(t) = s'(t)$ and its acceleration is $a(t) = v'(t)$ ([[§12 Derivatives and Rates of Change#^def-12-2|Def. §12.2]], [[§20 Rates of Change in the Natural and Social Sciences#^def-20-2|Def. §20.2]]). So the velocity is an antiderivative of the acceleration, and the position is an antiderivative of the velocity. If $a(t)$ and the initial values $s(0)$ and $v(0)$ are known, the position is found by antidifferentiating twice.
 
 > [!example] Example §33.4: Motion with Given Acceleration
 > **(a)** A particle moves in a straight line with acceleration $a(t) = 6t + 4$. Its initial velocity is $v(0) = -6$ cm/s and its initial displacement is $s(0) = 9$ cm. Find its position function.

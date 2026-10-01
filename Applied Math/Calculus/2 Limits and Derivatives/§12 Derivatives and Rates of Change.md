@@ -28,9 +28,6 @@ With limits available, the tangent and velocity problems of [[§6 The Tangent an
 
 ^def-12-1
 
-![[m233-12-1.svg]]
-*Secant lines of $y = x^2$ through $P(1, 1)$ and $Q(x, x^2)$ for $x = 2, 1.5, 1.2$ (blue), with slopes $m_{PQ} = x + 1 = 3, 2.5, 2.2$. As $Q$ slides along the parabola toward $P$, the secants turn toward the tangent line $y = 2x - 1$ of slope $2$ (red; Example §12.1).*
-
 > [!theorem] Theorem §12.1: Slope of the Tangent with an Increment
 > Writing $h = x - a$, so that $x = a + h$, the slope of the tangent line in Definition §12.1 is
 >
@@ -56,6 +53,9 @@ With limits available, the tangent and velocity problems of [[§6 The Tangent an
 ^pf-12-1
 
 *Uses:* [[§12 Derivatives and Rates of Change#^def-12-1|Def. §12.1]], [[§9 The Precise Definition of a Limit#^def-9-1|Def. §9.1]] (precise definition of a limit)
+
+![[m233-12-1.svg]]
+*Theorem §12.1 in a picture. With $Q = (a + h, f(a + h))$ the secant $PQ$ (blue) has run $h$ and rise $f(a + h) - f(a)$ (green), so its slope is the difference quotient $\big(f(a + h) - f(a)\big)/h$; as $h \to 0$, $Q$ slides along the curve to $P$ and the secant turns into the tangent line at $P$ (red). (The concrete case $y = x^2$ at $(1, 1)$, with numerical secant slopes $3, 2.5, 2.2, \ldots \to 2$, is pictured after [[§6 The Tangent and Velocity Problems#^ex-6-1|Example §6.1]].)*
 
 > [!example] Example §12.1: Tangent Lines from the Definition
 > **(a)** Find an equation of the tangent line to the parabola $y = x^2$ at $P(1, 1)$.

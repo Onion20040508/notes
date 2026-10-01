@@ -16,7 +16,7 @@ Three more quantities come out of the slice-and-add strategy of [[§54 Applicati
 ## Consumer Surplus
 
 > [!definition] Definition §55.1: Demand Function
-> The **demand function** $p(x)$ is the price that a company can charge in order to sell $x$ units of a commodity ([[§31 Optimization Problems|§31]]). Selling larger quantities usually requires lowering prices, so the demand function is usually decreasing. Its graph is the **demand curve**. If $X$ is the amount of the commodity that can currently be sold, then $P = p(X)$ is the current selling price.
+> The **demand function** $p(x)$ is the price that a company can charge in order to sell $x$ units of a commodity ([[§31 Optimization Problems#^def-31-1|Definition §31.1]]). Selling larger quantities usually requires lowering prices, so the demand function is usually decreasing. Its graph is the **demand curve**. If $X$ is the amount of the commodity that can currently be sold, then $P = p(X)$ is the current selling price.
 >
 > *Stewart: 8.4 (text)*
 
@@ -87,7 +87,7 @@ Three more quantities come out of the slice-and-add strategy of [[§54 Applicati
 >
 > the area between the line $p = P$ and the supply curve (the same argument as in Remark: Why It Works, with producers in place of consumers). A market is in **equilibrium** when the quantity demanded equals the quantity supplied: the equilibrium quantity and price are the coordinates of the point where the demand and supply curves cross. Consumer surplus plus producer surplus is the **total surplus**; for a good in equilibrium it is maximized.
 >
-> *Stewart: 8.4, Exercises 9–14 (text)*
+> *Stewart: 8.4, Exercises 9–11 (producer surplus), Exercise 12 (equilibrium), Exercises 13–14 (total surplus)*
 
 ^def-55-3
 
@@ -133,7 +133,7 @@ Three more quantities come out of the slice-and-add strategy of [[§54 Applicati
 ^def-55-4
 
 > [!theorem] Theorem §55.1: Poiseuille's Law
-> Blood flows along a blood vessel of radius $R$ and length $l$; $P$ is the pressure difference between the ends of the vessel and $\eta$ the viscosity of the blood. Suppose the velocity of the blood at distance $r$ from the central axis is given by the law of laminar flow ([[§20 Rates of Change in the Natural and Social Sciences|§20]], Stewart's Example 3.7.7),
+> Blood flows along a blood vessel of radius $R$ and length $l$; $P$ is the pressure difference between the ends of the vessel and $\eta$ the viscosity of the blood. Suppose the velocity of the blood at distance $r$ from the central axis is given by the law of laminar flow ([[§20 Rates of Change in the Natural and Social Sciences#^ex-20-4|Example §20.4]], Stewart's Example 3.7.7),
 >
 > $$
 > v(r) = \frac{P}{4\eta l}\,(R^2 - r^2), \qquad 0 \le r \le R .
@@ -173,10 +173,10 @@ Three more quantities come out of the slice-and-add strategy of [[§54 Applicati
 
 ^pf-55-1
 
-*Uses:* [[§55 Applications to Economics and Biology#^def-55-4|Def. §55.4]], [[§20 Rates of Change in the Natural and Social Sciences|§20]] (law of laminar flow), [[§35 The Definite Integral|§35]] (Riemann sums, comparison properties)
+*Uses:* [[§55 Applications to Economics and Biology#^def-55-4|Def. §55.4]], [[§20 Rates of Change in the Natural and Social Sciences#^ex-20-4|Ex. §20.4]] (law of laminar flow), [[§35 The Definite Integral#^def-35-1|Def. §35.1]] (Riemann sums), [[§35 The Definite Integral#^thm-35-5|§35.5]] (additivity over adjacent intervals), [[§35 The Definite Integral#^thm-35-6|§35.6]] (comparison properties)
 
 > [!remark]- Connections
-> - The flux is the double integral of the velocity over the disk $D$ of radius $R$, and $\int_0^R 2\pi r\,v(r)\,dr$ is that integral in polar coordinates for a velocity depending only on $r$: $\iint_D v\,dA = \int_0^{2\pi}\!\int_0^R v(r)\,r\,dr\,d\theta$ ([[§100 Double Integrals in Polar Coordinates|§100]]; rigorously [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]]). The rings are the polar rectangles with $\theta$ running all the way around.
+> - The flux is the double integral of the velocity over the disk $D$ of radius $R$, and $\int_0^R 2\pi r\,v(r)\,dr$ is that integral in polar coordinates for a velocity depending only on $r$: $\iint_D v\,dA = \int_0^{2\pi}\!\int_0^R v(r)\,r\,dr\,d\theta$ ([[§100 Double Integrals in Polar Coordinates#^thm-100-1|Theorem §100.1]]; rigorously [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]]). The rings are the polar rectangles with $\theta$ running all the way around.
 
 ## Cardiac Output
 
@@ -221,7 +221,7 @@ Blood returns from the body through the veins, enters the right atrium of the he
 
 ^pf-55-2
 
-*Uses:* [[§55 Applications to Economics and Biology#^def-55-5|Def. §55.5]], [[§35 The Definite Integral|§35]] (Riemann sums)
+*Uses:* [[§55 Applications to Economics and Biology#^def-55-5|Def. §55.5]], [[§35 The Definite Integral#^def-35-1|Def. §35.1]] (Riemann sums), [[§35 The Definite Integral#^thm-35-1|§35.1]] (continuous functions are integrable)
 
 > [!example] Example §55.3: Estimating Cardiac Output
 > A $5$-mg dose (a bolus) of dye is injected into a patient's right atrium. The concentration of the dye (in milligrams per liter) is measured in the aorta at one-second intervals:
@@ -232,7 +232,7 @@ Blood returns from the body through the veins, enters the right atrium of the he
 >
 > Estimate the cardiac output.
 >
-> Here $A = 5$, $\Delta t = 1$ and $T = 10$. Approximate the integral by Simpson's Rule with $n = 10$ ([[§50 Approximate Integration|§50]]):
+> Here $A = 5$, $\Delta t = 1$ and $T = 10$. Approximate the integral by Simpson's Rule with $n = 10$ ([[§50 Approximate Integration#^def-50-5|Definition §50.5]]):
 >
 > $$
 > \begin{aligned}

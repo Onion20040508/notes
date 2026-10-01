@@ -122,7 +122,7 @@ $$
 
 ## Evaluating Definite Integrals
 
-To compute a limit of Riemann sums by hand we need the sums of powers of the first $n$ positive integers (Stewart's Equations 5–8; 7 and 8 were used in [[§34 The Area and Distance Problems|§34]], and all four are proved in Appendix E, [[§120 Sigma Notation|§120]]):
+To compute a limit of Riemann sums by hand we need the sums of powers of the first $n$ positive integers (Stewart's Equations 5–8; 7 was used in [[§34 The Area and Distance Problems#^ex-34-2|Example §34.2]], and all four are proved in Appendix E, [[§120 Sigma Notation#^thm-120-2|Theorem §120.2]]):
 
 $$
 \sum_{i=1}^{n} 1 = n, \qquad
@@ -155,6 +155,8 @@ $$
 
 *Uses:* field axioms of $\mathbb{R}$ ([[§3 The Set ℝ of Real Numbers#^def-3-1|451 Def. §3.1]])
 
+The same rules, for sums running from any $i = m$ to $n$, are [[§120 Sigma Notation#^thm-120-1|Theorem §120.1]] (Stewart's Appendix E), together with the other rules of sigma notation.
+
 > [!example] Example §35.1: A Riemann Sum and the Exact Integral of x³ − 6x
 > Let $f(x) = x^3 - 6x$ on $[0, 3]$.
 >
@@ -184,7 +186,7 @@ $$
 > \end{aligned}
 > $$
 >
-> This is not an area. It is $A_1 - A_2$, where $A_1$ is the area between the graph and the $x$-axis for $\sqrt6 \le x \le 3$ (where $f \ge 0$) and $A_2$ the area for $0 \le x \le \sqrt6$ (where $f \le 0$). With $n = 40$, $R_{40} \approx -6.3998$; the right Riemann sums approach $-6.75$ slowly ($R_{5000} \approx -6.7473$). The Fundamental Theorem ([[§36 The Fundamental Theorem of Calculus|§36]]) gets $-6.75$ in one line.
+> This is not an area. It is $A_1 - A_2$, where $A_1$ is the area between the graph and the $x$-axis for $\sqrt6 \le x \le 3$ (where $f \ge 0$) and $A_2$ the area for $0 \le x \le \sqrt6$ (where $f \le 0$). With $n = 40$, $R_{40} \approx -6.3998$; the right Riemann sums approach $-6.75$ slowly ($R_{5000} \approx -6.7473$). The Fundamental Theorem ([[§36 The Fundamental Theorem of Calculus#^thm-36-2|Theorem §36.2]]) gets $-6.75$ in one line.
 >
 > *Stewart: Examples 5.2.1 and 5.2.3*
 
@@ -204,7 +206,7 @@ For $f(x) = e^x$ on $[1, 3]$ the same method gives $\int_1^3 e^x\,dx = \lim_{n \
 > \int_0^1 \sqrt{1 - x^2}\,dx = \tfrac14 \pi (1)^2 = \frac{\pi}{4} .
 > $$
 >
-> (That a circle of radius $r$ has area $\pi r^2$ is proved with integrals in [[§46 Trigonometric Substitution|§46]].)
+> (That a circle of radius $r$ has area $\pi r^2$ is proved with integrals in [[§46 Trigonometric Substitution#^ex-46-2|Example §46.2]], the case $a = b = r$ of the ellipse.)
 >
 > **(b)** $y = x - 1$ is the line of slope $1$ through $(1, 0)$. On $[1, 3]$ it is above the axis, bounding a triangle $A_1$ with base $2$ and height $2$; on $[0, 1]$ it is below, bounding a triangle $A_2$ with base $1$ and height $1$. So
 >
@@ -245,7 +247,7 @@ Right endpoints make the limit easy to compute. To *approximate* an integral, mi
 > = \frac15 \Big( \frac{1}{1.1} + \frac{1}{1.3} + \frac{1}{1.5} + \frac{1}{1.7} + \frac{1}{1.9} \Big) \approx 0.691908 .
 > $$
 >
-> Since $1/x > 0$ on $[1, 2]$, this is the total area of five rectangles approximating the area under the hyperbola. (The exact value is $\ln 2 \approx 0.693147$, as [[§36 The Fundamental Theorem of Calculus|§36]] will show; error estimates for the Midpoint Rule come in [[§50 Approximate Integration|§50]].)
+> Since $1/x > 0$ on $[1, 2]$, this is the total area of five rectangles approximating the area under the hyperbola. (The exact value is $\ln 2 \approx 0.693147$, as [[§36 The Fundamental Theorem of Calculus#^thm-36-2|Theorem §36.2]] will show; error estimates for the Midpoint Rule come in [[§50 Approximate Integration#^thm-50-1|Theorem §50.1]].)
 >
 > For the integral of Example §35.1, the Midpoint Rule with $n = 40$ gives $M_{40} \approx -6.7563$, much closer to $-6.75$ than $R_{40} \approx -6.3998$.
 >
@@ -316,7 +318,7 @@ In the following properties $f$ and $g$ are continuous functions, so all the int
 
 ^pf-35-4
 
-*Uses:* [[§35 The Definite Integral#^thm-35-1|§35.1]], [[§35 The Definite Integral#^thm-35-2|§35.2]], [[§35 The Definite Integral#^thm-35-3|§35.3]], [[§8 Calculating Limits Using the Limit Laws|§8]] (Sum and Constant Multiple Laws, for limits as $n \to \infty$)
+*Uses:* [[§35 The Definite Integral#^thm-35-1|§35.1]], [[§35 The Definite Integral#^thm-35-2|§35.2]], [[§35 The Definite Integral#^thm-35-3|§35.3]], [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-2|§11.2]] (Sum and Constant Multiple Laws, for limits as $n \to \infty$)
 
 > [!remark]- Connections
 > - Rigorous treatment: linearity [[§33 Properties of the Riemann Integral#^thm-33-2|451 Thm. §33.2]], proved there with upper and lower sums for all integrable (not only continuous) $f$ and $g$.
@@ -357,7 +359,7 @@ Properties 1–5 hold for any order of the limits. The next three compare sizes 
 ^thm-35-6
 
 > [!remark] Remark: Why It Works
-> For $f \ge 0$ the integral is an area, and areas are positive (Property 6); a bigger function has a bigger integral (Property 7). For $f \ge 0$ continuous, take $m$ and $M$ to be the absolute minimum and maximum of $f$ on $[a, b]$ ([[§25 Maximum and Minimum Values|§25]]). Then Property 8 says that the area under the graph lies between the areas of the rectangles over $[a, b]$ of heights $m$ and $M$.
+> For $f \ge 0$ the integral is an area, and areas are positive (Property 6); a bigger function has a bigger integral (Property 7). For $f \ge 0$ continuous, take $m$ and $M$ to be the absolute minimum and maximum of $f$ on $[a, b]$ ([[§25 Maximum and Minimum Values#^thm-25-1|Theorem §25.1]]). Then Property 8 says that the area under the graph lies between the areas of the rectangles over $[a, b]$ of heights $m$ and $M$.
 
 ^rem-35-5
 
@@ -380,7 +382,7 @@ Properties 1–5 hold for any order of the limits. The next three compare sizes 
 
 ^pf-35-6
 
-*Uses:* [[§35 The Definite Integral#^thm-35-2|§35.2]], [[§35 The Definite Integral#^thm-35-4|§35.4]], [[§8 Calculating Limits Using the Limit Laws|§8]] (limits preserve inequalities)
+*Uses:* [[§35 The Definite Integral#^thm-35-2|§35.2]], [[§35 The Definite Integral#^thm-35-4|§35.4]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-6|§8.6]] (limits preserve inequalities)
 
 > [!remark]- Connections
 > - Rigorous treatment: monotonicity [[§33 Properties of the Riemann Integral#^thm-33-3|451 Thm. §33.3]]; the companion estimate $\big|\int_a^b f\big| \le \int_a^b |f|$ is [[§33 Properties of the Riemann Integral#^thm-33-4|451 Thm. §33.4]].

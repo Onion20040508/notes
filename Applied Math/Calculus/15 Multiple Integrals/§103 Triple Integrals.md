@@ -77,7 +77,7 @@ $$
 > \iiint_E f(x, y, z)\,dV = \iiint_B F(x, y, z)\,dV .
 > $$
 >
-> This integral exists if $f$ is continuous and the boundary of $E$ is "reasonably smooth". The triple integral has essentially the same properties as the double integral (Properties 5–8 of [[§99 Double Integrals Over General Regions|§99]]: [[§99 Double Integrals Over General Regions#^thm-99-3|Theorem §99.3]], [[§99 Double Integrals Over General Regions#^thm-99-4|Theorem §99.4]]).
+> This integral exists if $f$ is continuous and the boundary of $E$ is "reasonably smooth". The triple integral has essentially the same properties as the double integral (Stewart's Properties 5–8 of Section 15.2: [[§99 Double Integrals Over General Regions#^thm-99-3|Theorem §99.3]] and [[§99 Double Integrals Over General Regions#^thm-99-4|Theorem §99.4]]).
 >
 > *Stewart: 15.6 (text)*
 
@@ -122,7 +122,7 @@ $$
 ^thm-103-2
 
 > [!proof]+ Proof
-> *Stewart: "by the same sort of argument that led to (15.2.3), it can be shown"; here is that argument.* Enclose $E$ in a box $B = R \times [r, s]$, where $R = [a, b] \times [c, d]$ is a rectangle containing $D$, and $r \le u_1$, $u_2 \le s$. Let $F$ be $f$ on $E$ and $0$ elsewhere in $B$. By Definition §103.2 and Fubini's Theorem (in the order $z$ first, the remaining double integral over $R$ being an iterated integral too, by [[§98 Double Integrals Over Rectangles#^thm-98-3|Theorem §98.3]]),
+> *Stewart: "by the same sort of argument that led to (15.2.3), it can be shown"; here is that argument.* Enclose $E$ in a box $B = R \times [r, s]$, where $R = [a, b] \times [c, d]$ is a rectangle containing $D$, and $r \le u_1$, $u_2 \le s$. Let $F$ be $f$ on $E$ and $0$ elsewhere in $B$. By Definition §103.2 and Fubini's Theorem (in the order $z$ first, the remaining double integral over $R$ being an iterated integral too, by [[§98 Double Integrals Over Rectangles#^thm-98-3|Theorem §98.3]]; Fubini's Theorem is used in its general form, since $F$ is bounded and discontinuous at most on the boundary surfaces $z = u_1(x, y)$, $z = u_2(x, y)$ and above the boundary curve of $D$, just as in the proof of [[§99 Double Integrals Over General Regions#^thm-99-1|Theorem §99.1]]),
 >
 > $$
 > \iiint_E f\,dV = \iiint_B F\,dV = \iint_R \left[ \int_r^s F(x, y, z)\,dz \right] dA .
@@ -311,7 +311,7 @@ For $f \ge 0$, $\int_a^b f\,dx$ is an area and $\iint_D f\,dA$ a volume; $\iiint
 > \iiint_E 1\,dV = \iint_D \left[ \int_{u_1(x, y)}^{u_2(x, y)} dz \right] dA = \iint_D \big[ u_2(x, y) - u_1(x, y) \big]\,dA ,
 > $$
 >
-> and by [[§99 Double Integrals Over General Regions|§99]] this is the volume that lies between the surfaces $z = u_1(x, y)$ and $z = u_2(x, y)$: the volume under $z = u_2$ minus the volume under $z = u_1$ (when $u_1 \ge 0$; otherwise shift both up by a constant, which does not change the difference).
+> and by [[§98 Double Integrals Over Rectangles#^thm-98-2|Theorem §98.2]] and [[§99 Double Integrals Over General Regions#^def-99-1|Definition §99.1]] (with linearity, [[§99 Double Integrals Over General Regions#^thm-99-3|Theorem §99.3]]) this is the volume that lies between the surfaces $z = u_1(x, y)$ and $z = u_2(x, y)$: the volume under $z = u_2$ minus the volume under $z = u_1$ (when $u_1 \ge 0$; otherwise shift both up by a constant, which does not change the difference).
 
 ^pf-103-4
 
@@ -334,13 +334,15 @@ Triple integrals are not necessary for computing volumes, but they give an alter
 > \iiint_T y^2\,dV = \int_0^2 y^2 \cdot \tfrac12 (2 - y)^2\,dy = \frac12 \int_0^2 (4y^2 - 4y^3 + y^4)\,dy = \frac12 \Big( \frac{32}{3} - 16 + \frac{32}{5} \Big) = \frac12 \cdot \frac{16}{15} = \frac{8}{15} .
 > $$
 >
-> **The volume.** By Theorem §103.4, with the same limits,
+> **The volume.** By [[§103 Triple Integrals#^thm-103-4|Theorem §103.4]], with the same limits,
 >
 > $$
 > V(T) = \iiint_T dV = \int_0^2 \tfrac12 (2 - y)^2\,dy = \Big[ -\tfrac16 (2 - y)^3 \Big]_0^2 = \frac86 = \frac43 ,
 > $$
 >
 > which agrees with $\frac13 \cdot (\text{base area}) \cdot (\text{height}) = \frac13 \cdot 2 \cdot 2 = \frac43$.
+>
+> *The posted solution integrates in the order $dz\,dy\,dx$; its last line drops the factor $-\tfrac13$ on the middle term and the sign of the last term (it would give $\frac{88}{15}$), and its antiderivative evaluated correctly gives $\frac{8}{15}$. Its volume $\frac43$ agrees.*
 >
 > *Source: 233 Chapter 15 Review, Q7*
 
@@ -371,37 +373,30 @@ All the applications of double integrals in [[§101 Applications of Double Integ
 
 ^def-103-5
 
-> [!example] Example §103.6: The Center of Mass of a Solid
-> Find the center of mass of a solid of constant density $\rho$ bounded by the parabolic cylinder $x = y^2$ and the planes $x = z$, $z = 0$ and $x = 1$.
->
-> The lower and upper surfaces are the planes $z = 0$ and $z = x$, and the projection onto the $xy$-plane is the region between $x = y^2$ and $x = 1$, so as a type 1 region
->
-> $$
-> E = \{(x, y, z) \mid -1 \le y \le 1,\ y^2 \le x \le 1,\ 0 \le z \le x\} .
-> $$
->
-> **Mass.** Using the symmetry in $y$ to halve the $y$-interval,
->
-> $$
-> m = \int_{-1}^{1} \int_{y^2}^{1} \int_0^x \rho\,dz\,dx\,dy = \rho\int_{-1}^{1} \int_{y^2}^{1} x\,dx\,dy = \rho\int_{-1}^{1} \Big[ \frac{x^2}{2} \Big]_{x=y^2}^{x=1} dy = \frac{\rho}{2} \int_{-1}^{1} (1 - y^4)\,dy = \rho\int_0^1 (1 - y^4)\,dy = \frac{4\rho}{5} .
-> $$
->
-> **Moments.** $E$ and $\rho$ are symmetric about the $xz$-plane, so $M_{xz} = 0$ and $\bar y = 0$. The other moments are
->
-> $$
-> M_{yz} = \iiint_E x\rho\,dV = \rho\int_{-1}^{1} \int_{y^2}^{1} x^2\,dx\,dy = \frac{2\rho}{3} \int_0^1 (1 - y^6)\,dy = \frac{2\rho}{3} \cdot \frac67 = \frac{4\rho}{7} ,
-> $$
->
-> $$
-> M_{xy} = \iiint_E z\rho\,dV = \rho\int_{-1}^{1} \int_{y^2}^{1} \Big[ \frac{z^2}{2} \Big]_{z=0}^{z=x} dx\,dy = \frac{\rho}{2} \int_{-1}^{1} \int_{y^2}^{1} x^2\,dx\,dy = \frac{\rho}{3} \int_0^1 (1 - y^6)\,dy = \frac{2\rho}{7} .
-> $$
->
-> **Center of mass.**
->
-> $$
-> (\bar x, \bar y, \bar z) = \Big( \frac{M_{yz}}{m}, \frac{M_{xz}}{m}, \frac{M_{xy}}{m} \Big) = \Big( \frac57, 0, \frac{5}{14} \Big) .
-> $$
->
-> *Stewart: Example 15.6.6*
+For example (Stewart's Example 15.6.6), consider the solid of constant density $\rho$ bounded by the parabolic cylinder $x = y^2$ and the planes $x = z$, $z = 0$ and $x = 1$. The lower and upper surfaces are the planes $z = 0$ and $z = x$, and the projection onto the $xy$-plane is the region between $x = y^2$ and $x = 1$, so as a type 1 region
 
-^ex-103-6
+$$
+E = \{(x, y, z) \mid -1 \le y \le 1,\ y^2 \le x \le 1,\ 0 \le z \le x\} .
+$$
+
+**Mass.** Using the symmetry in $y$ to halve the $y$-interval,
+
+$$
+m = \int_{-1}^{1} \int_{y^2}^{1} \int_0^x \rho\,dz\,dx\,dy = \rho\int_{-1}^{1} \int_{y^2}^{1} x\,dx\,dy = \rho\int_{-1}^{1} \Big[ \frac{x^2}{2} \Big]_{x=y^2}^{x=1} dy = \frac{\rho}{2} \int_{-1}^{1} (1 - y^4)\,dy = \rho\int_0^1 (1 - y^4)\,dy = \frac{4\rho}{5} .
+$$
+
+**Moments.** $E$ and $\rho$ are symmetric about the $xz$-plane, so $M_{xz} = 0$ and $\bar y = 0$. The other moments are
+
+$$
+M_{yz} = \iiint_E x\rho\,dV = \rho\int_{-1}^{1} \int_{y^2}^{1} x^2\,dx\,dy = \frac{2\rho}{3} \int_0^1 (1 - y^6)\,dy = \frac{2\rho}{3} \cdot \frac67 = \frac{4\rho}{7} ,
+$$
+
+$$
+M_{xy} = \iiint_E z\rho\,dV = \rho\int_{-1}^{1} \int_{y^2}^{1} \Big[ \frac{z^2}{2} \Big]_{z=0}^{z=x} dx\,dy = \frac{\rho}{2} \int_{-1}^{1} \int_{y^2}^{1} x^2\,dx\,dy = \frac{\rho}{3} \int_0^1 (1 - y^6)\,dy = \frac{2\rho}{7} .
+$$
+
+Therefore the center of mass is
+
+$$
+(\bar x, \bar y, \bar z) = \Big( \frac{M_{yz}}{m}, \frac{M_{xz}}{m}, \frac{M_{xy}}{m} \Big) = \Big( \frac57, 0, \frac{5}{14} \Big) .
+$$

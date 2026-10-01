@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 3.2.*
 
-The derivative of a sum is the sum of the derivatives ([[§14 Derivatives of Polynomials and Exponential Functions|§14]]), but the derivative of a product is *not* the product of the derivatives. This section finds the correct formulas for products and quotients. Both come from the same idea: write the change in $uv$ or $u/v$ in terms of the changes $\Delta u$ and $\Delta v$, divide by $\Delta x$, and let $\Delta x \to 0$. With them every rational function, and every product or quotient of functions with known derivatives, can be differentiated.
+The derivative of a sum is the sum of the derivatives ([[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|Theorem §14.4]]), but the derivative of a product is *not* the product of the derivatives. This section finds the correct formulas for products and quotients. Both come from the same idea: write the change in $uv$ or $u/v$ in terms of the changes $\Delta u$ and $\Delta v$, divide by $\Delta x$, and let $\Delta x \to 0$. With them every rational function, and every product or quotient of functions with known derivatives, can be differentiated.
 
 ## The Product Rule
 
@@ -69,7 +69,7 @@ By analogy with the Sum Rule one might guess, as Leibniz first did, that $(fg)' 
 
 ^pf-15-1
 
-*Uses:* [[§13 The Derivative as a Function|§13]] (Leibniz notation; differentiable implies continuous, Theorem 2.8.4), [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Laws 1, 3, 4)
+*Uses:* [[§13 The Derivative as a Function#^def-13-2|Def. §13.2]] (Leibniz notation), [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous, Theorem 2.8.4), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws 1, 3, 4)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-2|451 Thm. §28.2]], which proves the product rule by inserting the mixed term $f(a)g(x)$ and states the quotient rule.
@@ -180,7 +180,7 @@ By analogy with the Sum Rule one might guess, as Leibniz first did, that $(fg)' 
 
 ^pf-15-2
 
-*Uses:* [[§13 The Derivative as a Function|§13]] (Leibniz notation; differentiable implies continuous), [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Laws 1–5)
+*Uses:* [[§13 The Derivative as a Function#^def-13-2|Def. §13.2]] (Leibniz notation), [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws 1–5)
 
 > [!theorem] Corollary §15.3: The Power Rule for Negative Integers
 > If $n$ is a positive integer, then for $x \ne 0$

@@ -125,7 +125,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 > D_{\mathbf{u}} f(x, y) = \nabla f(x, y) \cdot \mathbf{u} . \qquad (9)
 > $$
 >
-> That is, the directional derivative in the direction of $\mathbf{u}$ is the scalar projection of the gradient vector onto $\mathbf{u}$ ([[§82 The Dot Product|§82]]).
+> That is, the directional derivative in the direction of $\mathbf{u}$ is the scalar projection of the gradient vector onto $\mathbf{u}$ ([[§82 The Dot Product#^def-82-5|Definition §82.5]]).
 >
 > *Stewart: 14.6, Equation 9*
 
@@ -153,7 +153,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 > D_{\mathbf{u}} f(\mathbf{x}_0) = \lim_{h \to 0} \frac{f(\mathbf{x}_0 + h\mathbf{u}) - f(\mathbf{x}_0)}{h} , \qquad (11)
 > $$
 >
-> where $\mathbf{x}_0 = \langle x_0, y_0 \rangle$ or $\langle x_0, y_0, z_0 \rangle$; here $f(\mathbf{x}_0 + h\mathbf{u})$ is the value of $f$ at a point of the line $\mathbf{x} = \mathbf{x}_0 + t\mathbf{u}$ ([[§84 Equations of Lines and Planes|§84]]). The **gradient** of a function of three variables is
+> where $\mathbf{x}_0 = \langle x_0, y_0 \rangle$ or $\langle x_0, y_0, z_0 \rangle$; here $f(\mathbf{x}_0 + h\mathbf{u})$ is the value of $f$ at a point of the line $\mathbf{x} = \mathbf{x}_0 + t\mathbf{u}$ ([[§84 Equations of Lines and Planes#^thm-84-1|Theorem §84.1]]). The **gradient** of a function of three variables is
 >
 > $$
 > \nabla f = \langle f_x, f_y, f_z \rangle = \frac{\partial f}{\partial x}\,\mathbf{i} + \frac{\partial f}{\partial y}\,\mathbf{j} + \frac{\partial f}{\partial z}\,\mathbf{k} . \qquad (13)
@@ -227,7 +227,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 ^thm-95-4
 
 > [!proof]+ Proof
-> By Equation (9) or (14) and the geometric form of the dot product (Stewart, Theorem 12.3.3; [[§82 The Dot Product|§82]]),
+> By Equation (9) or (14) and the geometric form of the dot product (Stewart, Theorem 12.3.3; [[§82 The Dot Product#^thm-82-2|Theorem §82.2]]),
 >
 > $$
 > D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u} = |\nabla f|\,|\mathbf{u}| \cos\theta = |\nabla f| \cos\theta ,
@@ -237,7 +237,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 
 ^pf-95-4
 
-*Uses:* [[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|§95.2]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-3|§95.3]], [[§82 The Dot Product|§82]] (angle between vectors)
+*Uses:* [[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|§95.2]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-3|§95.3]], [[§82 The Dot Product#^thm-82-2|§82.2]] (angle between vectors)
 
 > [!remark]- Connections
 > - This is the equality case of the Cauchy–Schwarz inequality $|\nabla f \cdot \mathbf{u}| \le |\nabla f|\,|\mathbf{u}|$ ([[§19 Inner Products and Norms#^ladr-6-14|LADR 6.14]]), and it holds in $\mathbb{R}^n$ for every $n$. The 452 version: [[§7 Directional Derivatives#^rem-7-3|452 Remark: Gradient and Maximum Rate of Change]].
@@ -287,7 +287,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 
 ## Tangent Planes to Level Surfaces
 
-Suppose $S$ is a surface with equation $F(x, y, z) = k$, a level surface of a function $F$ of three variables, and let $P(x_0, y_0, z_0)$ be a point on $S$. Let $C$ be any curve that lies on $S$ and passes through $P$, described by a continuous vector function $\mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle$ ([[§86 Vector Functions and Space Curves|§86]]), with $\mathbf{r}(t_0) = \langle x_0, y_0, z_0 \rangle$.
+Suppose $S$ is a surface with equation $F(x, y, z) = k$, a level surface of a function $F$ of three variables, and let $P(x_0, y_0, z_0)$ be a point on $S$. Let $C$ be any curve that lies on $S$ and passes through $P$, described by a continuous vector function $\mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle$ ([[§86 Vector Functions and Space Curves#^def-86-4|Definition §86.4]]), with $\mathbf{r}(t_0) = \langle x_0, y_0, z_0 \rangle$.
 
 > [!theorem] Theorem §95.5: The Gradient Is Normal to Level Surfaces
 > Let $F$ be differentiable, let $S$ be the level surface $F(x, y, z) = k$, and let $\mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle$ be a curve on $S$, with $x$, $y$, $z$ differentiable, passing through $P(x_0, y_0, z_0)$ at $t = t_0$. Then
@@ -315,7 +315,7 @@ Suppose $S$ is a surface with equation $F(x, y, z) = k$, a level surface of a fu
 > \frac{\partial F}{\partial x}\frac{dx}{dt} + \frac{\partial F}{\partial y}\frac{dy}{dt} + \frac{\partial F}{\partial z}\frac{dz}{dt} = 0 . \qquad (17)
 > $$
 >
-> Since $\nabla F = \langle F_x, F_y, F_z \rangle$ and $\mathbf{r}'(t) = \langle x'(t), y'(t), z'(t) \rangle$ ([[§87 Derivatives and Integrals of Vector Functions|§87]]), Equation (17) says $\nabla F \cdot \mathbf{r}'(t) = 0$. At $t = t_0$, $\mathbf{r}(t_0) = \langle x_0, y_0, z_0 \rangle$, which gives (18).
+> Since $\nabla F = \langle F_x, F_y, F_z \rangle$ and $\mathbf{r}'(t) = \langle x'(t), y'(t), z'(t) \rangle$ ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|Theorem §87.1]]), Equation (17) says $\nabla F \cdot \mathbf{r}'(t) = 0$. At $t = t_0$, $\mathbf{r}(t_0) = \langle x_0, y_0, z_0 \rangle$, which gives (18).
 
 ^pf-95-5
 
@@ -338,7 +338,7 @@ Suppose $S$ is a surface with equation $F(x, y, z) = k$, a level surface of a fu
 
 ^def-95-4
 
-By Theorem §95.5 every tangent line at $P$ to a curve on $S$ through $P$ lies in this plane, which is the fact used in [[§93 Tangent Planes and Linear Approximations|§93]] (Example §93.5). The normal line can also be written in vector form, $\mathbf{r}(t) = \langle x_0, y_0, z_0 \rangle + t\,\nabla F(x_0, y_0, z_0)$ ([[§84 Equations of Lines and Planes|§84]]); this form also works when a component of $\nabla F$ is $0$.
+By Theorem §95.5 every tangent line at $P$ to a curve on $S$ through $P$ lies in this plane, which is the fact used in [[§93 Tangent Planes and Linear Approximations#^ex-93-5|Example §93.5]]. The normal line can also be written in vector form, $\mathbf{r}(t) = \langle x_0, y_0, z_0 \rangle + t\,\nabla F(x_0, y_0, z_0)$ ([[§84 Equations of Lines and Planes#^thm-84-1|Theorem §84.1]]); this form also works when a component of $\nabla F$ is $0$.
 
 > [!theorem] Proposition §95.6: Consistency with the Tangent Plane to a Graph
 > If $S$ is the graph $z = f(x, y)$ of a differentiable function, then the tangent plane (19) to $S$, regarded as the level surface $F(x, y, z) = f(x, y) - z = 0$, is the tangent plane $z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)$ of [[§93 Tangent Planes and Linear Approximations#^thm-93-1|Theorem §93.1]].
@@ -425,7 +425,7 @@ By Theorem §95.5 every tangent line at $P$ to a curve on $S$ through $P$ lies i
 > F_x = 2x - 2y + 8 = 0 , \qquad F_y = -2x - 2y + 4 = 0 .
 > $$
 >
-> Adding, $-4y + 12 = 0$, so $y = 3$, and then $x = y - 4 = -1$. On the surface, $z = x^2 - 2xy - y^2 + 8x + 4y = 1 + 6 - 9 - 8 + 12 = 2$. The point is $(-1, 3, 2)$. (Since the surface is the graph $z = f(x, y)$, this is the critical point condition $f_x = f_y = 0$ of [[§96 Maximum and Minimum Values|§96]].)
+> Adding, $-4y + 12 = 0$, so $y = 3$, and then $x = y - 4 = -1$. On the surface, $z = x^2 - 2xy - y^2 + 8x + 4y = 1 + 6 - 9 - 8 + 12 = 2$. The point is $(-1, 3, 2)$. (Since the surface is the graph $z = f(x, y)$, this is the critical point condition $f_x = f_y = 0$ of [[§96 Maximum and Minimum Values#^def-96-2|Definition §96.2]].)
 >
 > *Source: 233 Practice Final Set 1, Part II Q3*
 > *Source: 233 Midterm 1 Practice Questions, Q33*
@@ -454,6 +454,6 @@ For a function $f$ of three variables and a point $P$ of its domain, $\nabla f(P
 *Uses:* [[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|§95.2]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-3|§95.3]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-4|§95.4]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-5|§95.5]], [[§94 The Chain Rule#^thm-94-1|§94.1]]
 
 > [!remark] Remark: Curves of Steepest Ascent and Gradient Fields
-> On a topographic map of a hill, with $f(x, y)$ the height above sea level, a **curve of steepest ascent** is drawn by making it perpendicular to all of the contour lines; a creek running downhill follows a curve of steepest descent. Mathematical software can plot sample gradient vectors $\nabla f(a, b)$, each starting at the point $(a, b)$: a **gradient vector field** ([[§107 Vector Fields|§107]]). For $f(x, y) = x^2 - y^2$, superimposed on the contour map of $f$ (hyperbolas), the gradient vectors $\langle 2x, -2y \rangle$ point "uphill" and cross the level curves at right angles.
+> On a topographic map of a hill, with $f(x, y)$ the height above sea level, a **curve of steepest ascent** is drawn by making it perpendicular to all of the contour lines; a creek running downhill follows a curve of steepest descent. Mathematical software can plot sample gradient vectors $\nabla f(a, b)$, each starting at the point $(a, b)$: a **gradient vector field** ([[§107 Vector Fields#^def-107-3|Definition §107.3]]). For $f(x, y) = x^2 - y^2$, superimposed on the contour map of $f$ (hyperbolas), the gradient vectors $\langle 2x, -2y \rangle$ point "uphill" and cross the level curves at right angles.
 
 ^rem-95-2

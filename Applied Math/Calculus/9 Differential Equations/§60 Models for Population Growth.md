@@ -30,7 +30,7 @@ Why should a population grow at a rate proportional to its size? Suppose $1000$ 
 > \frac{dP/dt}{P} = k :
 > $$
 >
-> the **relative growth rate** (the growth rate divided by the population size; [[§21 Exponential Growth and Decay|§21]]) is constant.
+> the **relative growth rate** (the growth rate divided by the population size; [[§21 Exponential Growth and Decay#^def-21-2|Definition §21.2]]) is constant.
 >
 > *Stewart: 9.4, Equation 1*
 
@@ -49,7 +49,7 @@ Why should a population grow at a rate proportional to its size? Suppose $1000$ 
 > P(t) = P_0\,e^{kt} .
 > $$
 >
-> So a population with constant relative growth rate grows exponentially. This is the theorem of [[§21 Exponential Growth and Decay|§21]] (Stewart 3.8, Theorem 2), where it is applied to populations, radioactive decay, Newton's law of cooling and compound interest.
+> So a population with constant relative growth rate grows exponentially. This is [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]] (Stewart 3.8, Theorem 2), where it is applied to populations, radioactive decay, Newton's law of cooling and compound interest.
 >
 > *Stewart: 9.4, Equation 2*
 
@@ -64,20 +64,14 @@ Why should a population grow at a rate proportional to its size? Suppose $1000$ 
 >
 > so $P = A\,e^{kt}$, where $A$ ($= \pm e^{C}$ or $0$) is an arbitrary constant. To see what $A$ means, put $t = 0$: $P(0) = A\,e^{k \cdot 0} = A$. So $A$ is the initial value $P_0$, and $P(t) = P_0\,e^{kt}$.
 >
-> **Uniqueness.** Stewart's computation shows that each solution that never vanishes, and the zero solution, is of this form. To include every solution, let $P$ satisfy $P' = kP$ on an interval. Then
->
-> $$
-> \frac{d}{dt}\Big(P(t)\,e^{-kt}\Big) = \big(P'(t) - kP(t)\big)\,e^{-kt} = 0 ,
-> $$
->
-> so $P(t)\,e^{-kt}$ is constant (Stewart 4.2, Theorem 5). Its value at $t = 0$ is $P_0$, so $P(t) = P_0\,e^{kt}$ for all $t$.
+> **Every solution.** The computation divides by $P$, so it finds only the zero solution and the solutions that never vanish. That every solution of $P' = kP$ on an interval is $P_0\,e^{kt}$ is the uniqueness half of [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]] with $y = P$ (see [[§21 Exponential Growth and Decay#^pf-21-1|its proof]]).
 
 ^pf-60-1
 
-*Uses:* [[§59 Separable Equations#^thm-59-1|§59.1]], [[§26 The Mean Value Theorem|§26]] (zero derivative on an interval implies constant), [[§21 Exponential Growth and Decay|§21]]
+*Uses:* [[§59 Separable Equations#^thm-59-1|§59.1]], [[§21 Exponential Growth and Decay#^thm-21-1|§21.1]] (every solution of $y' = ky$)
 
 > [!remark]- Connections
-> - The uniqueness step rests on [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (a vanishing derivative means constant), proved there from the Mean Value Theorem.
+> - The uniqueness half, proved in [[§21 Exponential Growth and Decay#^pf-21-1|the proof of Theorem §21.1]], rests on [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (a vanishing derivative means constant), proved there from the Mean Value Theorem.
 
 > [!remark] Remark: Emigration
 > Emigration (or "harvesting") at a constant rate $m$ changes Equation 1 into
@@ -117,7 +111,7 @@ $$
 > - If $P \to M$, then $P/M \to 1$ and $dP/dt \to 0$.
 > - If $0 < P < M$, the right side is positive, so $dP/dt > 0$ and the population increases.
 > - If $P > M$, then $1 - P/M < 0$, so $dP/dt < 0$ and the population decreases.
-> - The constant functions $P = 0$ and $P = M$ are **equilibrium solutions** ([[§57 Modeling with Differential Equations|§57]]).
+> - The constant functions $P = 0$ and $P = M$ are **equilibrium solutions** ([[§57 Modeling with Differential Equations#^def-57-3|Definition §57.3]]).
 
 ^rem-60-2
 
@@ -130,7 +124,7 @@ $$
 > \frac{dP}{dt} = 0.08P\Big(1 - \frac{P}{1000}\Big) .
 > $$
 >
-> Only the first quadrant matters, since negative populations are not meaningful and we are interested in $t \ge 0$. The equation is **autonomous** ($dP/dt$ depends only on $P$, not on $t$; [[§58 Direction Fields and Euler's Method|§58]]), so the slopes are the same along any horizontal line. The slopes are positive for $0 < P < 1000$ and negative for $P > 1000$. They are small when $P$ is close to $0$ or to $1000$. The solutions move away from the equilibrium solution $P = 0$ and toward the equilibrium solution $P = 1000$.
+> Only the first quadrant matters, since negative populations are not meaningful and we are interested in $t \ge 0$. The equation is **autonomous** ($dP/dt$ depends only on $P$, not on $t$; [[§58 Direction Fields and Euler's Method#^def-58-3|Definition §58.3]]), so the slopes are the same along any horizontal line. The slopes are positive for $0 < P < 1000$ and negative for $P > 1000$. They are small when $P$ is close to $0$ or to $1000$. The solutions move away from the equilibrium solution $P = 0$ and toward the equilibrium solution $P = 1000$.
 >
 > Sketching solution curves with initial populations $P(0) = 100$, $400$ and $1300$ in the field: curves that start below $P = 1000$ increase, and the one that starts above decreases. The slope $0.08P(1 - P/1000)$ is largest at $P = 500$ (a downward parabola in $P$, with zeros $0$ and $1000$). So the curves that start below $500$ get steeper until $P \approx 500$ and less steep afterward: they have inflection points near $P = 500$. Proposition §60.3 shows that the inflection happens exactly at $P = 500$.
 >
@@ -169,7 +163,7 @@ The logistic equation is separable, so it can be solved explicitly with the meth
 > \int \frac{dP}{P(1 - P/M)} = \int k\,dt . \qquad (5)
 > $$
 >
-> To evaluate the left side, write $\dfrac{1}{P(1 - P/M)} = \dfrac{M}{P(M - P)}$ and use partial fractions ([[§47 Integration of Rational Functions by Partial Fractions|§47]]):
+> To evaluate the left side, write $\dfrac{1}{P(1 - P/M)} = \dfrac{M}{P(M - P)}$ and use partial fractions ([[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|Theorem §47.3]]):
 >
 > $$
 > \frac{M}{P(M - P)} = \frac{1}{P} + \frac{1}{M - P}
@@ -201,11 +195,11 @@ The logistic equation is separable, so it can be solved explicitly with the meth
 >
 > **The formula is valid for all $t \ge 0$.** Since $P_0 > 0$, $A = M/P_0 - 1 > -1$. If $A \ge 0$, then $1 + A\,e^{-kt} \ge 1$. If $-1 < A < 0$ (that is, $P_0 > M$), then for $t \ge 0$ we have $0 < e^{-kt} \le 1$, so $1 + A\,e^{-kt} \ge 1 + A > 0$. Either way the denominator is positive. (Stewart does not discuss this.)
 >
-> **The limit.** Since $k > 0$, $e^{-kt} \to 0$ as $t \to \infty$ ([[§11 Limits at Infinity; Horizontal Asymptotes|§11]]), so $P(t) \to M/(1 + 0) = M$.
+> **The limit.** Since $k > 0$, $e^{-kt} \to 0$ as $t \to \infty$ ([[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-4|Theorem §11.4]]), so $P(t) \to M/(1 + 0) = M$.
 
 ^pf-60-2
 
-*Uses:* [[§59 Separable Equations#^thm-59-1|§59.1]], [[§47 Integration of Rational Functions by Partial Fractions|§47]] (partial fractions), [[§11 Limits at Infinity; Horizontal Asymptotes|§11]] (limit of an exponential at infinity)
+*Uses:* [[§59 Separable Equations#^thm-59-1|§59.1]], [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|§47.3]] (partial fractions), [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-4|§11.4]] (limit of an exponential at infinity)
 
 > [!theorem] Proposition §60.3: Inflection at Half the Carrying Capacity
 > If $P$ satisfies the logistic equation (4), then
@@ -221,17 +215,17 @@ The logistic equation is separable, so it can be solved explicitly with the meth
 ^prop-60-3
 
 > [!proof]+ Proof
-> Write (4) as $P' = kP - \frac{k}{M}P^2$ and differentiate with respect to $t$, using the Chain Rule ([[§17 The Chain Rule|§17]]):
+> Write (4) as $P' = kP - \frac{k}{M}P^2$ and differentiate with respect to $t$, using the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]):
 >
 > $$
 > P'' = \Big(k - \frac{2k}{M}P\Big)P' = k\Big(1 - \frac{2P}{M}\Big) \cdot kP\Big(1 - \frac{P}{M}\Big) = k^2 P\Big(1 - \frac{P}{M}\Big)\Big(1 - \frac{2P}{M}\Big) .
 > $$
 >
-> Now let $0 < P_0 < M/2$, so $A = (M - P_0)/P_0 > 1$ in Theorem §60.2. Then $0 < P(t) < M$ for all $t \ge 0$, so $P$ is increasing ([[§60 Models for Population Growth#^rem-60-2|Remark: Reading the Logistic Equation]]). By (7), $P(t) = M/2$ exactly when $A\,e^{-kt} = 1$, that is, at $t^* = (\ln A)/k > 0$. For $0 \le t < t^*$ we have $P < M/2$, so all three factors $P$, $1 - P/M$, $1 - 2P/M$ are positive and $P'' > 0$. For $t > t^*$ we have $M/2 < P < M$, so $1 - 2P/M < 0$ and $P'' < 0$. So the graph changes from concave upward to concave downward at $t^*$: an inflection point ([[§27 What Derivatives Tell Us About the Shape of a Graph|§27]]). There $P'$ changes from increasing to decreasing, so $P'$ has its maximum at $t^*$: the population grows fastest when it reaches half its carrying capacity.
+> Now let $0 < P_0 < M/2$, so $A = (M - P_0)/P_0 > 1$ in Theorem §60.2. Then $0 < P(t) < M$ for all $t \ge 0$, so $P$ is increasing ([[§60 Models for Population Growth#^rem-60-2|Remark: Reading the Logistic Equation]]). By (7), $P(t) = M/2$ exactly when $A\,e^{-kt} = 1$, that is, at $t^* = (\ln A)/k > 0$. For $0 \le t < t^*$ we have $P < M/2$, so all three factors $P$, $1 - P/M$, $1 - 2P/M$ are positive and $P'' > 0$. For $t > t^*$ we have $M/2 < P < M$, so $1 - 2P/M < 0$ and $P'' < 0$. So the graph changes from concave upward to concave downward at $t^*$: an inflection point ([[§27 What Derivatives Tell Us About the Shape of a Graph#^def-27-2|Definition §27.2]]). There $P'$ changes from increasing to decreasing, so $P'$ has its maximum at $t^*$: the population grows fastest when it reaches half its carrying capacity.
 
 ^pf-60-3
 
-*Uses:* [[§60 Models for Population Growth#^thm-60-2|§60.2]], [[§17 The Chain Rule|§17]] (Chain Rule), [[§27 What Derivatives Tell Us About the Shape of a Graph|§27]] (concavity and inflection points)
+*Uses:* [[§60 Models for Population Growth#^thm-60-2|§60.2]], [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]] (Increasing/Decreasing Test, applied to $P'$), [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-3|§27.3]] (Concavity Test), [[§27 What Derivatives Tell Us About the Shape of a Graph#^def-27-2|Def. §27.2]] (inflection point)
 
 The same formula shows that a solution starting at $M/2 \le P_0 < M$ is concave downward for all $t > 0$, and one starting above $M$ is concave upward (then $1 - P/M$ and $1 - 2P/M$ are both negative).
 

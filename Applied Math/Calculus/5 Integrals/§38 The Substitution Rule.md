@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 5.5.*
 
-The table of [[§37 Indefinite Integrals and the Net Change Theorem|§37]] does not cover integrals such as $\int 2x\sqrt{1 + x^2}\,dx$. The Substitution Rule handles them by changing from $x$ to a new variable $u = g(x)$. It is the Chain Rule read backward, and it says that one may calculate with $dx$ and $du$ as if they were differentials. For definite integrals the limits of integration change along with the variable. As an application, the integral of an even function over $[-a, a]$ is twice the integral over $[0, a]$, and that of an odd function is $0$.
+The table of [[§37 Indefinite Integrals and the Net Change Theorem#^thm-37-1|Theorem §37.1]] does not cover integrals such as $\int 2x\sqrt{1 + x^2}\,dx$. The Substitution Rule handles them by changing from $x$ to a new variable $u = g(x)$. It is the Chain Rule read backward, and it says that one may calculate with $dx$ and $du$ as if they were differentials. For definite integrals the limits of integration change along with the variable. As an application, the integral of an even function over $[-a, a]$ is twice the integral over $[0, a]$, and that of an odd function is $0$.
 
 ## Substitution: Indefinite Integrals
 
@@ -21,7 +21,7 @@ $$
 \int 2x\sqrt{1 + x^2}\,dx , \qquad (1)
 $$
 
-introduce something extra: a new variable $u = 1 + x^2$. Its differential is $du = 2x\,dx$ ([[§23 Linear Approximations and Differentials|§23]]). If the $dx$ in the notation of an integral were a differential, $2x\,dx$ would occur in (1), and formally
+introduce something extra: a new variable $u = 1 + x^2$. Its differential is $du = 2x\,dx$ ([[§23 Linear Approximations and Differentials#^def-23-2|Def. §23.2]]). If the $dx$ in the notation of an integral were a differential, $2x\,dx$ would occur in (1), and formally
 
 $$
 \int 2x\sqrt{1 + x^2}\,dx = \int \sqrt{1 + x^2}\,2x\,dx = \int \sqrt{u}\,du = \tfrac23 u^{3/2} + C = \tfrac23 (1 + x^2)^{3/2} + C . \qquad (2)
@@ -65,10 +65,10 @@ The answer is correct, as the Chain Rule confirms: $\frac{d}{dx}\big[\tfrac23 (1
 
 ^pf-38-1
 
-*Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§17 The Chain Rule|§17]] (Chain Rule), [[§37 Indefinite Integrals and the Net Change Theorem#^def-37-1|Def. §37.1]]
+*Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§37 Indefinite Integrals and the Net Change Theorem#^def-37-1|Def. §37.1]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§15 Multivariable Integration#^lem-15-13|452 Lemma §15.13]] proves the definite form from FTC and the Chain Rule for a $C^1$ bijection $g$ with $g' \ne 0$, written with $|g'(t)|$ so that the limits always run upward. It is the one-variable case of the change of variables formula for multiple integrals ([[§106 Change of Variables in Multiple Integrals|§106]]; [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]]).
+> - Rigorous treatment: [[§15 Multivariable Integration#^lem-15-13|452 Lemma §15.13]] proves the definite form from FTC and the Chain Rule for a $C^1$ bijection $g$ with $g' \ne 0$, written with $|g'(t)|$ so that the limits always run upward. It is the one-variable case of the change of variables formula for multiple integrals ([[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]]; [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]]).
 
 > [!remark] Remark: Method — Choosing a Substitution
 > The idea is to replace a complicated integral by a simpler one, as in Example §38.1, where $\int x^3\cos(x^4 + 2)\,dx$ becomes $\frac14 \int \cos u\,du$.
@@ -247,7 +247,7 @@ A definite integral can be evaluated by substitution in two ways: find the indef
 
 ## Symmetry
 
-Recall ([[§1 Four Ways to Represent a Function|§1]]) that $f$ is **even** if $f(-x) = f(x)$ and **odd** if $f(-x) = -f(x)$ for all $x$ in its domain.
+Recall ([[§1 Four Ways to Represent a Function#^def-1-7|Def. §1.7]]) that $f$ is **even** if $f(-x) = f(x)$ and **odd** if $f(-x) = -f(x)$ for all $x$ in its domain.
 
 > [!theorem] Theorem §38.4: Integrals of Symmetric Functions
 > Suppose $f$ is continuous on $[-a, a]$.

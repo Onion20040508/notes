@@ -34,7 +34,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 ^thm-97-1
 
 > [!proof]+ Proof
-> **$\nabla f(P)$ is orthogonal to every curve on $S$ through $P$.** Let $C$ be a curve with vector equation $\mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle$ ($x$, $y$, $z$ differentiable) that lies on $S$ and passes through $P$, with $\mathbf{r}(t_0) = \langle x_0, y_0, z_0 \rangle$. The composite function $h(t) = f(x(t), y(t), z(t))$ represents the values that $f$ takes on $C$. Since $f$ has an extreme value on $S$ at $P$, $h$ has a local extreme value at $t_0$, so $h'(t_0) = 0$ by Fermat's Theorem ([[§25 Maximum and Minimum Values|§25]]). By the Chain Rule ([[§94 The Chain Rule#^thm-94-3|Theorem §94.3]]; $f$ is differentiable by [[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]]),
+> **$\nabla f(P)$ is orthogonal to every curve on $S$ through $P$.** Let $C$ be a curve with vector equation $\mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle$ ($x$, $y$, $z$ differentiable) that lies on $S$ and passes through $P$, with $\mathbf{r}(t_0) = \langle x_0, y_0, z_0 \rangle$. The composite function $h(t) = f(x(t), y(t), z(t))$ represents the values that $f$ takes on $C$. Since $f$ has an extreme value on $S$ at $P$, $h$ has a local extreme value at $t_0$, so $h'(t_0) = 0$ by Fermat's Theorem ([[§25 Maximum and Minimum Values#^thm-25-2|Theorem §25.2]]). By the Chain Rule ([[§94 The Chain Rule#^thm-94-3|Theorem §94.3]]; $f$ is differentiable by the three-variable form of [[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]]),
 >
 > $$
 > 0 = h'(t_0) = f_x(x_0, y_0, z_0)\,x'(t_0) + f_y(x_0, y_0, z_0)\,y'(t_0) + f_z(x_0, y_0, z_0)\,z'(t_0) = \nabla f(x_0, y_0, z_0) \cdot \mathbf{r}'(t_0) .
@@ -46,7 +46,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 
 ^pf-97-1
 
-*Uses:* [[§94 The Chain Rule#^thm-94-3|§94.3]], [[§94 The Chain Rule#^thm-94-6|§94.6]] (Implicit Function Theorem), [[§95 Directional Derivatives and the Gradient Vector#^thm-95-5|§95.5]], [[§93 Tangent Planes and Linear Approximations#^thm-93-2|§93.2]], [[§25 Maximum and Minimum Values|§25]] (Fermat's Theorem)
+*Uses:* [[§94 The Chain Rule#^thm-94-3|§94.3]], [[§94 The Chain Rule#^thm-94-6|§94.6]] (Implicit Function Theorem), [[§95 Directional Derivatives and the Gradient Vector#^thm-95-5|§95.5]], [[§93 Tangent Planes and Linear Approximations#^thm-93-2|§93.2]], [[§25 Maximum and Minimum Values#^thm-25-2|§25.2]] (Fermat's Theorem)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Optimization and Lagrange Multipliers#^thm-14-2|452 Thm. §14.2]], with the hypothesis $\nabla g \ne \mathbf{0}$ as the "constraint qualification" and the proof through the Implicit Function Theorem; hub [[Method of Lagrange Multipliers]].

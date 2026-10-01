@@ -184,7 +184,7 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 
 ^rem-59-2
 
-Stewart's Example 4 solves the circuit equation of [[§58 Direction Fields and Euler's Method#^def-58-2|Definition §58.2]] in the same way. With $L = 4$ H, $R = 12\ \Omega$ and a constant voltage $E = 60$ V, $L\,dI/dt + RI = E(t)$ becomes $dI/dt = 15 - 3I$, $I(0) = 0$. Separating, $-\frac13\ln|15 - 3I| = t + C$, so $15 - 3I = Ae^{-3t}$, and $I(0) = 0$ gives $A = 15$: $I(t) = 5 - 5e^{-3t}$. The limiting current is $\lim_{t \to \infty} I(t) = 5$ A.
+Stewart's Example 4 solves the circuit equation of [[§58 Direction Fields and Euler's Method#^def-58-2|Definition §58.2]] (the circuit of [[§58 Direction Fields and Euler's Method#^ex-58-2|Example §58.2]]) in the same way. With $L = 4$ H, $R = 12\ \Omega$ and a constant voltage $E = 60$ V, $L\,dI/dt + RI = E(t)$ becomes $dI/dt = 15 - 3I$, $I(0) = 0$. Separating, $-\frac13\ln|15 - 3I| = t + C$, so $15 - 3I = Ae^{-3t}$, and $I(0) = 0$ gives $A = 15$: $I(t) = 5 - 5e^{-3t}$. The limiting current is $\lim_{t \to \infty} I(t) = 5$ A.
 
 ## Orthogonal Trajectories
 

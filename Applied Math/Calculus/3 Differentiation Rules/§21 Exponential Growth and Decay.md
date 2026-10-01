@@ -48,7 +48,7 @@ Many quantities change at a rate proportional to their size: a population under 
 >
 > and $y(0) = Ce^{k \cdot 0} = C$. So the constant $C$ is the initial value, and $y(t) = y(0)e^{kt}$.
 >
-> **There are no others.** Stewart defers this half to Section 9.4 ([[§60 Models for Population Growth|§60]]), where the equation is solved by separation of variables. A direct argument, using a consequence of the Mean Value Theorem from Chapter 4: let $y$ be any solution and put $g(t) = y(t)e^{-kt}$. By the Product Rule,
+> **There are no others.** Stewart defers this half to Section 9.4 ([[§60 Models for Population Growth#^thm-60-1|Theorem §60.1]]), where the equation is solved by separation of variables. That computation divides by $y$, so it finds only the zero solution and the solutions that never vanish. A direct argument that covers every solution, using a consequence of the Mean Value Theorem from Chapter 4: let $y$ be any solution on an interval containing $0$ and put $g(t) = y(t)e^{-kt}$. By the Product Rule,
 >
 > $$
 > g'(t) = y'(t)e^{-kt} - k\,y(t)e^{-kt} = \big(ky(t) - ky(t)\big)e^{-kt} = 0 .

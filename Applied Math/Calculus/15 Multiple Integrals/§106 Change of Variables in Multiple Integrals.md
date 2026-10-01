@@ -15,7 +15,7 @@ Polar, cylindrical and spherical coordinates are special cases of one formula. A
 
 ## Change of Variables in Double Integrals
 
-In one variable, the Substitution Rule ([[§38 The Substitution Rule|§38]]) with the roles of $x$ and $u$ reversed reads
+In one variable, the Substitution Rule ([[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]]) with the roles of $x$ and $u$ reversed reads
 
 $$
 \int_a^b f(x)\,dx = \int_c^d f(g(u))\,g'(u)\,du = \int_c^d f(x(u))\,\frac{dx}{du}\,du , \qquad x = g(u),\ a = g(c),\ b = g(d)
@@ -72,7 +72,7 @@ $$
 \mathbf r_u = \lim_{\Delta u \to 0} \frac{\mathbf r(u_0 + \Delta u, v_0) - \mathbf r(u_0, v_0)}{\Delta u} ,
 $$
 
-we have $\mathbf a \approx \Delta u\,\mathbf r_u$, and similarly $\mathbf b \approx \Delta v\,\mathbf r_v$. So $R$ is approximately the parallelogram determined by $\Delta u\,\mathbf r_u$ and $\Delta v\,\mathbf r_v$, whose area ([[§83 The Cross Product|§83]]) is
+we have $\mathbf a \approx \Delta u\,\mathbf r_u$, and similarly $\mathbf b \approx \Delta v\,\mathbf r_v$. So $R$ is approximately the parallelogram determined by $\Delta u\,\mathbf r_u$ and $\Delta v\,\mathbf r_v$, whose area ([[§83 The Cross Product#^cor-83-6|Corollary §83.6]]) is
 
 $$
 |(\Delta u\,\mathbf r_u) \times (\Delta v\,\mathbf r_v)| = |\mathbf r_u \times \mathbf r_v|\,\Delta u\,\Delta v . \qquad (6)
@@ -185,7 +185,7 @@ The Jacobian is named after Carl Gustav Jacob Jacobi (1804–1851); Cauchy first
 > Example §106.3 was not difficult because a suitable change of variables was given. Otherwise the first step is to think of one.
 > 1. If $f(x, y)$ is difficult to integrate, its form may suggest new variables: expressions that occur together, such as $x + y$ and $x - y$, become $u$ and $v$.
 > 2. If the region $R$ is awkward, choose the transformation so that the corresponding region $S$ in the $uv$-plane has a convenient description, ideally a rectangle: if the sides of $R$ lie on curves $G(x, y) = c_1$, $G(x, y) = c_2$, $H(x, y) = c_3$, $H(x, y) = c_4$, try $u = G(x, y)$, $v = H(x, y)$.
-> 3. Such a choice gives $u$, $v$ in terms of $x$, $y$, that is, $T^{-1}$. Theorem §106.1 needs $T$: solve for $x$ and $y$, and compute $\partial(x, y)/\partial(u, v)$. (Alternatively, $\partial(x, y)/\partial(u, v) = 1\big/\big(\partial(u, v)/\partial(x, y)\big)$, Stewart's Exercise 15.9.29.)
+> 3. Such a choice gives $u$, $v$ in terms of $x$, $y$, that is, $T^{-1}$. Theorem §106.1 needs $T$: solve for $x$ and $y$, and compute $\partial(x, y)/\partial(u, v)$. (Alternatively, $\partial(x, y)/\partial(u, v) = 1\big/\big(\partial(u, v)/\partial(x, y)\big)$: by the Chain Rule the matrices of partial derivatives of $T$ and $T^{-1}$ are inverse to each other, and the determinant of a product is the product of the determinants.)
 > 4. Find $S$ by mapping each boundary curve of $R$, and remember the absolute value of the Jacobian.
 
 ^rem-106-2

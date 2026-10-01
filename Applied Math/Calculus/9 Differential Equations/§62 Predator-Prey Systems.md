@@ -15,7 +15,7 @@ The population models so far describe one species living alone. This section cou
 
 ## The Lotka–Volterra Equations
 
-Let $R(t)$ be the number of prey (rabbits) and $W(t)$ the number of predators (wolves) at time $t$. Without predators, the ample food supply would support exponential growth of the prey, $dR/dt = kR$ with $k > 0$ ([[§21 Exponential Growth and Decay|§21]]). Without prey, the predators would die out at a rate proportional to their number, $dW/dt = -rW$ with $r > 0$. With both present, assume that the main cause of death among the prey is being eaten, and that the birth and survival rates of the predators depend on their food supply, the prey. Assume also that the two species meet at a rate proportional to both populations, that is, to the product $RW$: the more there are of either, the more encounters.
+Let $R(t)$ be the number of prey (rabbits) and $W(t)$ the number of predators (wolves) at time $t$. Without predators, the ample food supply would support exponential growth of the prey, $dR/dt = kR$ with $k > 0$ ([[§60 Models for Population Growth#^def-60-1|Definition §60.1]], [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]]). Without prey, the predators would die out at a rate proportional to their number, $dW/dt = -rW$ with $r > 0$. With both present, assume that the main cause of death among the prey is being eaten, and that the birth and survival rates of the predators depend on their food supply, the prey. Assume also that the two species meet at a rate proportional to both populations, that is, to the product $RW$: the more there are of either, the more encounters.
 
 > [!definition] Definition §62.1: The Predator-Prey Equations
 > The **predator-prey equations**, or **Lotka–Volterra equations**, are the system
@@ -61,7 +61,7 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 ^prop-62-1
 
 > [!proof]+ Proof
-> Let $(R(t), W(t))$ be a solution, and let $t_0$ be a time with $dR/dt \ne 0$. (Stewart applies the Chain Rule directly; here is why $W$ is a function of $R$.) The derivative $dR/dt = kR - aRW$ is continuous, so it keeps its sign on an interval around $t_0$. There $R$ is strictly monotone in $t$, hence one-to-one, and $t$ is a differentiable function of $R$ with $dt/dR = 1/(dR/dt)$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]], derivative of an inverse function). So $W = W(t(R))$ is a function of $R$, and by the Chain Rule
+> Let $(R(t), W(t))$ be a solution, and let $t_0$ be a time with $dR/dt \ne 0$. (Stewart applies the Chain Rule directly; here is why $W$ is a function of $R$.) The derivative $dR/dt = kR - aRW$ is continuous, so it keeps its sign on an interval around $t_0$. There $R$ is strictly monotone in $t$ (Increasing/Decreasing Test, [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]]), hence one-to-one, and $t$ is a differentiable function of $R$ with $dt/dR = 1/(dR/dt)$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Theorem §19.1]], derivative of an inverse function). So $W = W(t(R))$ is a function of $R$, and by the Chain Rule
 >
 > $$
 > \frac{dW}{dt} = \frac{dW}{dR}\,\frac{dR}{dt} .
@@ -75,7 +75,7 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 
 ^pf-62-1
 
-*Uses:* [[§62 Predator-Prey Systems#^def-62-1|Def. §62.1]], [[§17 The Chain Rule|§17]] (Chain Rule), [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]] (derivative of an inverse function)
+*Uses:* [[§62 Predator-Prey Systems#^def-62-1|Def. §62.1]], [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|§19.1]] (derivative of an inverse function), [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]] (Increasing/Decreasing Test)
 
 > [!remark]- Connections
 > - The local inversion of $t \mapsto R(t)$ where $dR/dt \ne 0$ is the one-variable inverse function theorem, [[§29 The Mean Value Theorem#^thm-29-10|451 Thm. §29.10]].
@@ -109,7 +109,7 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 > \frac{dW}{dR} = \frac{dW/dt}{dR/dt} = \frac{-0.02W + 0.00002RW}{0.08R - 0.001RW} .
 > $$
 >
-> **(c)** Regarding $W$ as a function of $R$, this is a first-order differential equation, and its direction field can be drawn as in [[§58 Direction Fields and Euler's Method|§58]]. Its solution curves, sketched from the field (the phase portrait after Example §62.2), appear to be closed: travelling along one, we always return to the starting point. The equilibrium point $(1000, 80)$ lies inside all of them.
+> **(c)** Regarding $W$ as a function of $R$, this is a first-order differential equation, and its direction field can be drawn as in [[§58 Direction Fields and Euler's Method#^def-58-1|Definition §58.1]]. Its solution curves, sketched from the field (the phase portrait after Example §62.2), appear to be closed: travelling along one, we always return to the starting point. The equilibrium point $(1000, 80)$ lies inside all of them.
 >
 > *Stewart: Example 9.6.1(a)–(c)*
 
@@ -150,7 +150,7 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 *$R(t)$ (blue, left scale) and $W(t)$ (red, right scale) for the solution with $R(0) = 1000$, $W(0) = 40$, computed numerically. One cycle takes about $T \approx 170$ months. The rabbits peak at $t_1 \approx 36$, the wolves at $t_2 \approx 63$, and the rabbits bottom out at $t_3 \approx 110$. The wolf peak trails the rabbit peak by about $27$ months, and the wolf minimum trails the rabbit minimum by about $60$ months; on average the lag is about a quarter cycle.*
 
 > [!remark]- Remark: Why the Trajectories Are Closed
-> Stewart observes that the trajectories *appear* closed. His Exercise 9.6.9 gives the reason. The equation of Proposition §62.1 is separable ([[§59 Separable Equations|§59]]):
+> Stewart observes that the trajectories *appear* closed. His Exercise 9.6.9 gives the reason. The equation of Proposition §62.1 is separable ([[§59 Separable Equations#^def-59-1|Definition §59.1]]; solved by [[§59 Separable Equations#^thm-59-1|Theorem §59.1]]):
 >
 > $$
 > \frac{dW}{dR} = \frac{W(-r + bR)}{R(k - aW)} \quad\Longrightarrow\quad \int \frac{k - aW}{W}\,dW = \int \frac{-r + bR}{R}\,dR ,
@@ -187,7 +187,7 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 The simple model has had some success in explaining and predicting coupled populations, but more refined models have also been proposed.
 
 > [!definition] Definition §62.4: Predator-Prey Equations with Logistic Prey
-> If, in the absence of predators, the prey grow according to the logistic model with carrying capacity $M$ ([[§60 Models for Population Growth|§60]]), the Lotka–Volterra equations (1) are replaced by
+> If, in the absence of predators, the prey grow according to the logistic model with carrying capacity $M$ ([[§60 Models for Population Growth#^def-60-2|Definition §60.2]]), the Lotka–Volterra equations (1) are replaced by
 >
 > $$
 > \frac{dR}{dt} = kR\Big(1 - \frac{R}{M}\Big) - aRW, \qquad \frac{dW}{dt} = -rW + bRW .

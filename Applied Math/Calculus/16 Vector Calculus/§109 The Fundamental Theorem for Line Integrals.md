@@ -302,7 +302,7 @@ The test of Theorem §110.5 says that $\mathbf{F}$ is conservative but not how t
 >
 > (Check: $\nabla f = \langle y, x + z, y \rangle = \mathbf{F}$. Equivalently, $\operatorname{curl}\mathbf{F} = \mathbf{0}$ on all of $\mathbb{R}^3$; see [[§111 Curl and Divergence#^ex-111-2|Example §111.2]].)
 >
-> **(b)** By Theorem §109.1, along the segment (or any path),
+> **(b)** By [[§109 The Fundamental Theorem for Line Integrals#^thm-109-1|Theorem §109.1]], along the segment (or any path),
 >
 > $$
 > \int_C \mathbf{F} \cdot d\mathbf{r} = f(8, 3, -1) - f(2, 1, 4) = 3(8 - 1) - 1(2 + 4) = 21 - 6 = 15 .
@@ -323,7 +323,7 @@ The test of Theorem §110.5 says that $\mathbf{F}$ is conservative but not how t
 > \frac{\partial P}{\partial y} = e^y\sin x, \qquad \frac{\partial Q}{\partial x} = -e^y\sin x .
 > $$
 >
-> These differ wherever $\sin x \ne 0$, so $\mathbf{F}$ is not conservative (Theorem §109.4). (The posted solution reaches the same conclusion by trying to integrate: $\int P\,dx = -e^y\cos x + f(y)$ and $\int Q\,dy = e^y\cos x + g(x)$ cannot be matched.)
+> These differ wherever $\sin x \ne 0$, so $\mathbf{F}$ is not conservative ([[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]). (The posted solution reaches the same conclusion by trying to integrate: $\int P\,dx = -e^y\cos x + f(y)$ and $\int Q\,dy = e^y\cos x + g(x)$ cannot be matched.)
 >
 > **(b)** So the integral must be computed along the segment: $\mathbf{r}(t) = \langle \pi t, t \rangle$, $0 \le t \le 1$, $\mathbf{r}'(t) = \langle \pi, 1 \rangle$, and
 >

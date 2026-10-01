@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 4.4.*
 
-A limit such as $\lim_{x \to 1} \frac{\ln x}{x - 1}$ cannot be found with the Limit Laws, because numerator and denominator both tend to $0$, and cancelling a common factor does not work for it. L'Hospital's Rule handles such indeterminate forms of type $\frac00$ and $\frac{\infty}{\infty}$: under mild hypotheses, the limit of $f/g$ equals the limit of $f'/g'$. Its proof uses Cauchy's Mean Value Theorem, a version of the Mean Value Theorem ([[§26 The Mean Value Theorem|§26]]) for two functions. The other indeterminate forms, the products $0 \cdot \infty$, the differences $\infty - \infty$ and the powers $0^0$, $\infty^0$, $1^\infty$, are reduced to these two types by algebra or by taking logarithms.
+A limit such as $\lim_{x \to 1} \frac{\ln x}{x - 1}$ cannot be found with the Limit Laws, because numerator and denominator both tend to $0$, and cancelling a common factor does not work for it. L'Hospital's Rule handles such indeterminate forms of type $\frac00$ and $\frac{\infty}{\infty}$: under mild hypotheses, the limit of $f/g$ equals the limit of $f'/g'$. Its proof uses Cauchy's Mean Value Theorem, a version of the Mean Value Theorem ([[§26 The Mean Value Theorem#^thm-26-2|Theorem §26.2]]) for two functions. The other indeterminate forms, the products $0 \cdot \infty$, the differences $\infty - \infty$ and the powers $0^0$, $\infty^0$, $1^\infty$, are reduced to these two types by algebra or by taking logarithms.
 
 ## Indeterminate Forms (Types 0/0 and ∞/∞)
 
@@ -28,7 +28,7 @@ A limit such as $\lim_{x \to 1} \frac{\ln x}{x - 1}$ cannot be found with the Li
 
 ^def-28-1
 
-Some limits of these types were found earlier by algebra. For rational functions one cancels common factors, $\lim_{x \to 1} \frac{x^2 - x}{x^2 - 1} = \lim_{x \to 1} \frac{x}{x + 1} = \frac12$ ([[§8 Calculating Limits Using the Limit Laws|§8]]), or divides by the highest power of $x$ in the denominator, $\lim_{x \to \infty} \frac{x^2 - 1}{2x^2 + 1} = \lim_{x \to \infty} \frac{1 - 1/x^2}{2 + 1/x^2} = \frac12$ ([[§11 Limits at Infinity; Horizontal Asymptotes|§11]]). A geometric argument gave $\lim_{x \to 0} \frac{\sin x}{x} = 1$ ([[§16 Derivatives of Trigonometric Functions|§16]]). None of these methods works for $\lim_{x \to 1} \frac{\ln x}{x - 1}$ or $\lim_{x \to \infty} \frac{\ln x}{x - 1}$. In a limit of type $\frac{\infty}{\infty}$ there is a contest: if the numerator grows significantly faster the limit is $\infty$, if the denominator does it is $0$, and there may be a compromise at a finite positive number.
+Some limits of these types were found earlier by algebra. For rational functions one cancels common factors, $\lim_{x \to 1} \frac{x^2 - x}{x^2 - 1} = \lim_{x \to 1} \frac{x}{x + 1} = \frac12$ ([[§8 Calculating Limits Using the Limit Laws#^thm-8-4|Theorem §8.4]]), or divides by the highest power of $x$ in the denominator, $\lim_{x \to \infty} \frac{x^2 - 1}{2x^2 + 1} = \lim_{x \to \infty} \frac{1 - 1/x^2}{2 + 1/x^2} = \frac12$ ([[§11 Limits at Infinity; Horizontal Asymptotes#^rem-11-2|Remark: Method — Limits at Infinity of Algebraic Expressions]]). A geometric argument gave $\lim_{x \to 0} \frac{\sin x}{x} = 1$ ([[§16 Derivatives of Trigonometric Functions#^thm-16-6|Theorem §16.6]]). None of these methods works for $\lim_{x \to 1} \frac{\ln x}{x - 1}$ or $\lim_{x \to \infty} \frac{\ln x}{x - 1}$. In a limit of type $\frac{\infty}{\infty}$ there is a contest: if the numerator grows significantly faster the limit is $\infty$, if the denominator does it is $0$, and there may be a compromise at a finite positive number.
 
 ## L'Hospital's Rule
 
@@ -105,7 +105,7 @@ The proof of l'Hospital's Rule, given in Stewart's Appendix F, rests on a genera
 > [!remark] Remark: Why It Works
 > Suppose $f(a) = g(a) = 0$. Zooming in toward the point $(a, 0)$, the graphs of $f$ and $g$ look almost linear, like their tangent lines $y = f'(a)(x - a)$ and $y = g'(a)(x - a)$. If they actually were linear, their ratio would be $\frac{f'(a)(x - a)}{g'(a)(x - a)} = \frac{f'(a)}{g'(a)}$, the ratio of the derivatives.
 >
-> This becomes a proof in a special case (Stewart's Note 3): $f(a) = g(a) = 0$, $f'$ and $g'$ continuous, and $g'(a) \ne 0$. Then, by continuity of $f'$ and $g'$ and the alternative form of the definition of the derivative ([[§12 Derivatives and Rates of Change|§12]]),
+> This becomes a proof in a special case (Stewart's Note 3): $f(a) = g(a) = 0$, $f'$ and $g'$ continuous, and $g'(a) \ne 0$. Then, by continuity of $f'$ and $g'$ and the alternative form of the definition of the derivative ([[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]]),
 >
 > $$
 > \lim_{x \to a} \frac{f'(x)}{g'(x)} = \frac{f'(a)}{g'(a)}
@@ -159,9 +159,9 @@ The proof of l'Hospital's Rule, given in Stewart's Appendix F, rests on a genera
 
 ^pf-28-2
 
-*Uses:* [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-1|§28.1]], [[§9 The Precise Definition of a Limit|§9]] (precise definition of a limit), [[§13 The Derivative as a Function|§13]] (differentiable implies continuous), [[§17 The Chain Rule|§17]]
+*Uses:* [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-1|§28.1]], [[§9 The Precise Definition of a Limit#^def-9-1|Def. §9.1]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous), [[§17 The Chain Rule#^thm-17-2|§17.2]]
 
-*Stewart proves only the type $\frac00$. The type $\frac{\infty}{\infty}$ needs a different estimate (Cauchy's theorem on $[x, x_1]$ with $x_1$ fixed near $a$); it is not proved in Stewart, nor in 451, whose proof also treats $\frac00$ only.*
+*Stewart proves only the type $\frac00$ (his Appendix F proof assumes $f, g \to 0$ and says nothing about the other type). The type $\frac{\infty}{\infty}$ needs a different estimate (Cauchy's theorem on $[x, x_1]$ with $x_1$ fixed near $a$, then $x \to a$); it is proved neither in Stewart nor elsewhere in the vault: [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]] states it, in the stronger form that only the denominator needs to tend to infinity, but proves only the type $\frac00$.*
 
 ![[m233-28-1.svg]]
 *Why l'Hospital's Rule is plausible. Near $(a, 0)$ the graphs of $f$ (red) and $g$ (blue) are close to their tangent lines $y = m_1(x - a)$ and $y = m_2(x - a)$ (dashed), where $m_1 = f'(a)$ and $m_2 = g'(a)$. For the lines, the ratio of heights above any $x$ is $m_1/m_2$, the ratio of the derivatives.*
@@ -333,13 +333,13 @@ Again there is a contest: the answer may be $\infty$ ($f$ wins), $-\infty$ ($g$ 
 
 ^def-28-4
 
-Each case is treated either by taking the natural logarithm, $y = [f(x)]^{g(x)} \Rightarrow \ln y = g(x)\ln f(x)$, or by writing the function as an exponential ([[§5 Inverse Functions and Logarithms|§5]]),
+Each case is treated either by taking the natural logarithm, $y = [f(x)]^{g(x)} \Rightarrow \ln y = g(x)\ln f(x)$, or by writing the function as an exponential ([[§5 Inverse Functions and Logarithms#^prop-5-7|Proposition §5.7]]),
 
 $$
 [f(x)]^{g(x)} = e^{g(x)\ln f(x)} .
 $$
 
-Either way one is led to the indeterminate product $g(x)\ln f(x)$, of type $0 \cdot \infty$. (Both methods were used for differentiating such functions, in [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]].) The last step uses the continuity of $e^x$: if $\ln y \to L$, then $y = e^{\ln y} \to e^L$ ([[§10 Continuity#^thm-10-7|Theorem §10.7]]).
+Either way one is led to the indeterminate product $g(x)\ln f(x)$, of type $0 \cdot \infty$. (Both methods were used for differentiating such functions, in [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^rem-19-2|Remark: Method — Logarithmic Differentiation]].) The last step uses the continuity of $e^x$: if $\ln y \to L$, then $y = e^{\ln y} \to e^L$ ([[§10 Continuity#^thm-10-7|Theorem §10.7]]).
 
 > [!example] Example §28.5: Indeterminate Powers
 > **(a)** Calculate $\displaystyle\lim_{x \to 0^+} (1 + \sin 4x)^{\cot x}$.

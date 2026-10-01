@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Appendix G.*
 
-Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x$ ([[§4 Exponential Functions|§4]]) and defined $\log_b$ as its inverse ([[§5 Inverse Functions and Logarithms|§5]]); Chapter 3 then took for granted that the number $e$ exists ([[§14 Derivatives of Polynomials and Exponential Functions|§14]]) and differentiated $\ln x$ by implicit differentiation ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]). All of that rested on intuition and numerical evidence. This appendix rebuilds the theory on the Fundamental Theorem of Calculus, in the opposite order: $\ln x$ is *defined* as the integral $\int_1^x dt/t$, and $e^x$, $e$, $b^x$ and $\log_b x$ are defined from it. **No previous definition or result about exponential or logarithmic functions is used.** Every law of logarithms and exponents and every differentiation formula is then proved, and the definitions are shown to agree with the earlier ones.
+This appendix is the rigorous development of the exponential and logarithmic functions introduced in Chapter 1, where everything rested on intuition and numerical evidence: $b^x$ was defined by roots for rational $x$ and by filling in the holes of the graph for irrational $x$ ([[§4 Exponential Functions#^def-4-2|Definition §4.2]], [[§4 Exponential Functions#^def-4-3|Definition §4.3]]), $e$ as the base whose exponential has slope $1$ at $0$ ([[§4 Exponential Functions#^def-4-4|Definition §4.4]]), and $\log_b$ as the inverse of $b^x$, with $\ln = \log_e$ ([[§5 Inverse Functions and Logarithms#^def-5-3|Definition §5.3]], [[§5 Inverse Functions and Logarithms#^def-5-4|Definition §5.4]]); the laws of exponents and logarithms were stated without proof for real exponents ([[§4 Exponential Functions#^thm-4-1|Theorem §4.1]], [[§5 Inverse Functions and Logarithms#^thm-5-5|Theorem §5.5]]), and Chapter 3 took the derivatives and the limit formula for $e$ on credit ([[§14 Derivatives of Polynomials and Exponential Functions#^def-14-2|Definition §14.2]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|Theorem §19.7]]). Here the order is reversed and the Fundamental Theorem of Calculus does the work: $\ln x$ is *defined* as $\int_1^x dt/t$ ([[§121 The Logarithm Defined as an Integral#^def-121-1|Definition §121.1]]), $e^x$ as its inverse ([[§121 The Logarithm Defined as an Integral#^def-121-3|Definition §121.3]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Definition §121.4]]), and $b^x$ and $\log_b x$ from these ([[§121 The Logarithm Defined as an Integral#^def-121-5|Definition §121.5]], [[§121 The Logarithm Defined as an Integral#^def-121-6|Definition §121.6]]). **No previous definition or result about exponential or logarithmic functions is used.** Every law of logarithms and exponents and every differentiation formula is then proved, and the new definitions agree with the old ones ([[§121 The Logarithm Defined as an Integral#^prop-121-4|Proposition §121.4]], [[§121 The Logarithm Defined as an Integral#^thm-121-12|Theorem §121.12]], and [[§121 The Logarithm Defined as an Integral#^rem-121-2|the closing remark]]).
 
 ## The Natural Logarithm
 
@@ -27,7 +27,7 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 ^def-121-1
 
 > [!remark] Remark: What the Definition Says
-> The function exists because the integral of a continuous function always exists ([[§35 The Definite Integral|§35]]), and $1/t$ is continuous on $(0, \infty)$, which contains the interval between $1$ and $x$. If $x > 1$, $\ln x$ is the area under the hyperbola $y = 1/t$ from $t = 1$ to $t = x$. For $x = 1$, $\ln 1 = \int_1^1 \frac1t\,dt = 0$. For $0 < x < 1$,
+> The function exists because the integral of a continuous function always exists ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]]), and $1/t$ is continuous on $(0, \infty)$, which contains the interval between $1$ and $x$. If $x > 1$, $\ln x$ is the area under the hyperbola $y = 1/t$ from $t = 1$ to $t = x$. For $x = 1$, $\ln 1 = \int_1^1 \frac1t\,dt = 0$. For $0 < x < 1$,
 >
 > $$
 > \ln x = \int_1^x \frac1t\,dt = -\int_x^1 \frac1t\,dt < 0 ,
@@ -53,7 +53,7 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 > \tfrac12 \cdot 1 < \ln 2 < 1 \cdot \tfrac12\big(1 + \tfrac12\big), \qquad\text{that is,}\qquad \tfrac12 < \ln 2 < \tfrac34 .
 > $$
 >
-> **(b)** By the Midpoint Rule ([[§50 Approximate Integration|§50]]) with $f(t) = 1/t$, $n = 10$, $\Delta t = 0.1$:
+> **(b)** By the Midpoint Rule ([[§50 Approximate Integration#^def-50-2|Definition §50.2]]) with $f(t) = 1/t$, $n = 10$, $\Delta t = 0.1$:
 >
 > $$
 > \ln 2 = \int_1^2 \frac1t\,dt \approx (0.1)\big[f(1.05) + f(1.15) + \cdots + f(1.95)\big] = (0.1)\Big(\frac{1}{1.05} + \frac{1}{1.15} + \cdots + \frac{1}{1.95}\Big) \approx 0.693 .
@@ -78,11 +78,11 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 ^thm-121-1
 
 > [!proof]+ Proof
-> The integral defining $\ln x$ is exactly of the type in Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus|§36]]): $1/t$ is continuous on $(0, \infty)$, so $\dfrac{d}{dx}\displaystyle\int_1^x \frac1t\,dt = \frac1x$ for every $x > 0$.
+> The integral defining $\ln x$ is exactly of the type in Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]): $1/t$ is continuous on $(0, \infty)$, so $\dfrac{d}{dx}\displaystyle\int_1^x \frac1t\,dt = \frac1x$ for every $x > 0$.
 
 ^pf-121-1
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^def-121-1|Def. §121.1]], [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 1)
+*Uses:* [[§121 The Logarithm Defined as an Integral#^def-121-1|Def. §121.1]], [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]] (FTC Part 1)
 
 > [!remark]- Connections
 > - Rigorous FTC Part 1: [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]].
@@ -99,17 +99,17 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 ^thm-121-2
 
 > [!proof]+ Proof
-> **Law 1.** Let $a > 0$ be a constant and $f(x) = \ln(ax)$ for $x > 0$. By Theorem §121.1 and the Chain Rule ([[§17 The Chain Rule|§17]]),
+> **Law 1.** Let $a > 0$ be a constant and $f(x) = \ln(ax)$ for $x > 0$. By Theorem §121.1 and the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]),
 >
 > $$
 > f'(x) = \frac{1}{ax} \cdot \frac{d}{dx}(ax) = \frac{1}{ax} \cdot a = \frac1x .
 > $$
 >
-> So $f(x)$ and $\ln x$ have the same derivative on the interval $(0, \infty)$, and therefore differ by a constant ([[§26 The Mean Value Theorem|§26]]): $\ln(ax) = \ln x + C$. Putting $x = 1$: $\ln a = \ln 1 + C = C$. Thus $\ln(ax) = \ln x + \ln a$ for all $x > 0$; since $a > 0$ was arbitrary, replacing $a$ by $y$ gives Law 1.
+> So $f(x)$ and $\ln x$ have the same derivative on the interval $(0, \infty)$, and therefore differ by a constant ([[§26 The Mean Value Theorem#^cor-26-4|Corollary §26.4]]): $\ln(ax) = \ln x + C$. Putting $x = 1$: $\ln a = \ln 1 + C = C$. Thus $\ln(ax) = \ln x + \ln a$ for all $x > 0$; since $a > 0$ was arbitrary, replacing $a$ by $y$ gives Law 1.
 >
 > **Law 2.** By Law 1 with $x = 1/y$: $\ln\frac1y + \ln y = \ln\big(\frac1y \cdot y\big) = \ln 1 = 0$, so $\ln\frac1y = -\ln y$. Then by Law 1 again, $\ln\frac xy = \ln\big(x \cdot \frac1y\big) = \ln x + \ln\frac1y = \ln x - \ln y$.
 >
-> **Law 3** (Stewart leaves this as Exercise 5; here is a proof that needs no derivative of $x^r$). For integers $n \ge 0$, by induction: $\ln(x^0) = \ln 1 = 0$, and $\ln(x^{n+1}) = \ln(x^n \cdot x) = \ln(x^n) + \ln x = n\ln x + \ln x = (n + 1)\ln x$ by Law 1. For $n = -m < 0$: $\ln(x^{-m}) = \ln\frac{1}{x^m} = -\ln(x^m) = -m\ln x$ by Law 2. For $r = p/q$ with $p$, $q$ integers, $q > 0$: $x^{p/q} > 0$ and $(x^{p/q})^q = x^p$, so by the integer case
+> **Law 3** (Stewart leaves this as Exercise 5; here is a proof that needs no derivative of $x^r$). For integers $n \ge 0$, by induction: $\ln(x^0) = \ln 1 = 0$, and $\ln(x^{n+1}) = \ln(x^n \cdot x) = \ln(x^n) + \ln x = n\ln x + \ln x = (n + 1)\ln x$ by Law 1. For $n = -m < 0$: $\ln(x^{-m}) = \ln\frac{1}{x^m} = -\ln(x^m) = -m\ln x$ by Law 2. For $r = p/q$ with $p$, $q$ integers, $q > 0$: $x^{p/q} = \sqrt[q]{x^p} > 0$ (a root, [[§4 Exponential Functions#^def-4-2|Definition §4.2]], not an exponential function) and $(x^{p/q})^q = x^p$, so by the integer case
 >
 > $$
 > q\ln(x^{p/q}) = \ln\big((x^{p/q})^q\big) = \ln(x^p) = p\ln x , \qquad\text{hence}\qquad \ln(x^{p/q}) = \tfrac pq\ln x .
@@ -119,7 +119,7 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 
 ^pf-121-2
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§17 The Chain Rule|§17]] (Chain Rule), [[§26 The Mean Value Theorem|§26]] (functions with equal derivatives differ by a constant), induction ([[§120 Sigma Notation#^def-120-2|Def. §120.2]])
+*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§26 The Mean Value Theorem#^cor-26-4|§26.4]] (functions with equal derivatives differ by a constant), induction ([[§120 Sigma Notation#^def-120-2|Def. §120.2]])
 
 > [!theorem] Theorem §121.3: Shape and Limits of ln
 > $\ln$ is continuous, increasing and concave downward on $(0, \infty)$, and
@@ -135,7 +135,7 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 ^thm-121-3
 
 > [!proof]+ Proof
-> **Shape.** $\ln$ is differentiable (Theorem §121.1), hence continuous. For $y = \ln x$, $\dfrac{dy}{dx} = \dfrac1x > 0$ and $\dfrac{d^2y}{dx^2} = -\dfrac{1}{x^2} < 0$, so $\ln$ is increasing and concave downward on $(0, \infty)$ ([[§27 What Derivatives Tell Us About the Shape of a Graph|§27]]).
+> **Shape.** $\ln$ is differentiable (Theorem §121.1), hence continuous. For $y = \ln x$, $\dfrac{dy}{dx} = \dfrac1x > 0$ and $\dfrac{d^2y}{dx^2} = -\dfrac{1}{x^2} < 0$, so $\ln$ is increasing and concave downward on $(0, \infty)$ ([[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]], [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-3|Theorem §27.3]]).
 >
 > **(a)** By Law 3 with $x = 2$ and $r = n$ a positive integer, $\ln(2^n) = n\ln 2$. Since $\ln 2 > 0$ (Example §121.1, or because $\ln$ is increasing and $\ln 1 = 0$), $\ln(2^n) \to \infty$ as $n \to \infty$. As $\ln$ is increasing, for any $M$ choose $n$ with $n\ln 2 > M$; then $\ln x > M$ for all $x > 2^n$. So $\ln x \to \infty$ as $x \to \infty$.
 >
@@ -149,12 +149,12 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 
 ^pf-121-3
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§121 The Logarithm Defined as an Integral#^thm-121-2|§121.2]], [[§27 What Derivatives Tell Us About the Shape of a Graph|§27]] (increasing/decreasing and concavity tests), [[§10 Continuity#^thm-10-10|§10.10]] (Intermediate Value Theorem), [[§11 Limits at Infinity; Horizontal Asymptotes|§11]] (infinite limits at infinity)
+*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§121 The Logarithm Defined as an Integral#^thm-121-2|§121.2]], [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]], [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-3|§27.3]] (increasing/decreasing and concavity tests), [[§10 Continuity#^thm-10-10|§10.10]] (Intermediate Value Theorem), [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-3|Def. §11.3]] (infinite limits at infinity)
 
 > [!definition] Definition §121.2: The Number e
 > $e$ is the number such that $\ln e = 1$.
 >
-> It exists by the Intermediate Value Theorem, since $\ln$ is continuous with $\ln 1 = 0$ and takes arbitrarily large values (Theorem §121.3), and it is unique because $\ln$ is increasing. Theorem §121.13 shows that it is the number $e$ of [[§14 Derivatives of Polynomials and Exponential Functions|§14]] and [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]].
+> It exists by the Intermediate Value Theorem, since $\ln$ is continuous with $\ln 1 = 0$ and takes arbitrarily large values (Theorem §121.3), and it is unique because $\ln$ is increasing. Theorem §121.12 shows that it is the number $e$ of Chapters 1 and 3 ([[§4 Exponential Functions#^def-4-4|Definition §4.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^def-14-2|Definition §14.2]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|Theorem §19.7]]).
 >
 > *Stewart: Appendix G, Definition 5*
 
@@ -272,7 +272,7 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 ^thm-121-7
 
 > [!proof]+ Proof
-> The function $y = e^x$ is differentiable because it is the inverse function of $y = \ln x$, which is differentiable with nonzero derivative $1/x$ (the derivative of an inverse function, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]). To find the derivative, let $y = e^x$. Then $\ln y = x$, and differentiating this implicitly with respect to $x$ ([[§18 Implicit Differentiation|§18]]), using Theorem §121.1 and the Chain Rule,
+> The function $y = e^x$ is differentiable because it is the inverse function of $y = \ln x$, which is differentiable with nonzero derivative $1/x$ (the derivative of an inverse function, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Theorem §19.1]]). To find the derivative, let $y = e^x$. Then $\ln y = x$, and differentiating this implicitly with respect to $x$ ([[§18 Implicit Differentiation|§18]]), using Theorem §121.1 and the Chain Rule,
 >
 > $$
 > \frac1y\,\frac{dy}{dx} = 1, \qquad\text{so}\qquad \frac{dy}{dx} = y = e^x .
@@ -280,7 +280,7 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 
 ^pf-121-7
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Def. §121.4]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]] (differentiability of an inverse function), [[§18 Implicit Differentiation|§18]], [[§17 The Chain Rule|§17]]
+*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Def. §121.4]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|§19.1]] (differentiability of an inverse function), [[§18 Implicit Differentiation|§18]] (implicit differentiation), [[§17 The Chain Rule#^thm-17-2|§17.2]]
 
 > [!remark]- Connections
 > - The differentiability of the inverse, which Stewart quotes, is the one-variable inverse function theorem: [[§29 The Mean Value Theorem#^thm-29-10|451 Thm. §29.10]], which also gives the derivative directly: $(e^x)' = 1/(\ln)'(e^x) = 1/(1/e^x) = e^x$.
@@ -377,11 +377,11 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 > \frac{d}{dx}(b^x) = \frac{d}{dx}\big(e^{x\ln b}\big) = e^{x\ln b}\,\frac{d}{dx}(x\ln b) = b^x\ln b .
 > $$
 >
-> Since $b^x > 0$, the sign of the derivative is the sign of $\ln b$, which is positive for $b > 1$ and negative for $0 < b < 1$ ($\ln$ is increasing with $\ln 1 = 0$). The monotonicity follows from the Increasing/Decreasing Test ([[§27 What Derivatives Tell Us About the Shape of a Graph|§27]]).
+> Since $b^x > 0$, the sign of the derivative is the sign of $\ln b$, which is positive for $b > 1$ and negative for $0 < b < 1$ ($\ln$ is increasing with $\ln 1 = 0$). The monotonicity follows from the Increasing/Decreasing Test ([[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]]).
 
 ^pf-121-10
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^def-121-5|Def. §121.5]], [[§121 The Logarithm Defined as an Integral#^thm-121-7|§121.7]], [[§121 The Logarithm Defined as an Integral#^thm-121-3|§121.3]], [[§17 The Chain Rule|§17]], [[§27 What Derivatives Tell Us About the Shape of a Graph|§27]]
+*Uses:* [[§121 The Logarithm Defined as an Integral#^def-121-5|Def. §121.5]], [[§121 The Logarithm Defined as an Integral#^thm-121-7|§121.7]], [[§121 The Logarithm Defined as an Integral#^thm-121-3|§121.3]], [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]]
 
 ## General Logarithmic Functions
 
@@ -431,7 +431,7 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 > e = \lim_{x \to 0} (1 + x)^{1/x} . \qquad (19)
 > $$
 >
-> So the number $e$ of Definition §121.2 is the number $e$ of Section 3.1 (Equation 3.6.5; [[§14 Derivatives of Polynomials and Exponential Functions|§14]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]]).
+> So the number $e$ of Definition §121.2 is the number $e$ of Section 3.1 ([[§14 Derivatives of Polynomials and Exponential Functions#^def-14-2|Definition §14.2]]) and of Equation 3.6.5 ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|Theorem §19.7]]).
 >
 > *Stewart: Appendix G, Theorem 19*
 
@@ -452,4 +452,27 @@ Chapter 1 introduced $b^x$ by filling in the holes of its graph at irrational $x
 
 ^pf-121-12
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§121 The Logarithm Defined as an Integral#^thm-121-8|§121.8]], [[§121 The Logarithm Defined as an Integral#^thm-121-5|§121.5]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Def. §121.4]], [[§10 Continuity#^thm-10-7|§10.7]] (limit of a composite function), [[§13 The Derivative as a Function|§13]] (definition of the derivative)
+*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§121 The Logarithm Defined as an Integral#^thm-121-8|§121.8]], [[§121 The Logarithm Defined as an Integral#^thm-121-5|§121.5]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Def. §121.4]], [[§10 Continuity#^thm-10-7|§10.7]] (limit of a composite function), [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]] (definition of the derivative)
+
+## Agreement with the Earlier Definitions
+
+> [!remark]- Remark: Dictionary with Chapters 1 and 3
+> Each function and formula of Chapters 1 and 3 and its rigorous counterpart here:
+>
+> | | Chapters 1 and 3 | Appendix G |
+> |---|---|---|
+> | $\ln x$ | [[§5 Inverse Functions and Logarithms#^def-5-4\|Def. §5.4]] ($\log_e$) | [[§121 The Logarithm Defined as an Integral#^def-121-1\|Def. §121.1]]; $\log_e = \ln$ by [[§121 The Logarithm Defined as an Integral#^def-121-6\|Def. §121.6]] |
+> | $e$ | [[§4 Exponential Functions#^def-4-4\|Def. §4.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^def-14-2\|Def. §14.2]] | [[§121 The Logarithm Defined as an Integral#^def-121-2\|Def. §121.2]]; the same number by [[§121 The Logarithm Defined as an Integral#^thm-121-12\|Thm. §121.12]] and [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7\|Thm. §19.7]] |
+> | $e^x$, $b^x$ | [[§4 Exponential Functions#^def-4-2\|Def. §4.2]], [[§4 Exponential Functions#^def-4-3\|Def. §4.3]] | [[§121 The Logarithm Defined as an Integral#^def-121-4\|Def. §121.4]], [[§121 The Logarithm Defined as an Integral#^def-121-5\|Def. §121.5]]; equal for rational $x$ by [[§121 The Logarithm Defined as an Integral#^prop-121-4\|Prop. §121.4]], for irrational $x$ see below |
+> | $\log_b x$ | [[§5 Inverse Functions and Logarithms#^def-5-3\|Def. §5.3]] | [[§121 The Logarithm Defined as an Integral#^def-121-6\|Def. §121.6]] |
+> | inverse pair $\ln$, $e^x$ | [[§5 Inverse Functions and Logarithms#^cor-5-6\|Cor. §5.6]] | (8)–(10) of [[§121 The Logarithm Defined as an Integral#^def-121-4\|Def. §121.4]] |
+> | laws of exponents | [[§4 Exponential Functions#^thm-4-1\|Thm. §4.1]] | [[§121 The Logarithm Defined as an Integral#^thm-121-6\|Thm. §121.6]], [[§121 The Logarithm Defined as an Integral#^thm-121-9\|Thm. §121.9]] |
+> | laws of logarithms, change of base | [[§5 Inverse Functions and Logarithms#^thm-5-5\|Thm. §5.5]], [[§5 Inverse Functions and Logarithms#^thm-5-8\|Thm. §5.8]] | [[§121 The Logarithm Defined as an Integral#^thm-121-2\|Thm. §121.2]], [[§121 The Logarithm Defined as an Integral#^thm-121-8\|Thm. §121.8]], [[§121 The Logarithm Defined as an Integral#^thm-121-11\|Thm. §121.11]] |
+> | $(\ln x)' = 1/x$ | [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3\|Cor. §19.3]] | [[§121 The Logarithm Defined as an Integral#^thm-121-1\|Thm. §121.1]] |
+> | $(e^x)' = e^x$ | [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-6\|Thm. §14.6]] | [[§121 The Logarithm Defined as an Integral#^thm-121-7\|Thm. §121.7]] |
+> | $(b^x)' = b^x\ln b$ | [[§17 The Chain Rule#^thm-17-5\|Thm. §17.5]] | [[§121 The Logarithm Defined as an Integral#^thm-121-10\|Thm. §121.10]] |
+> | $(\log_b x)' = 1/(x\ln b)$ | [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-2\|Thm. §19.2]] | [[§121 The Logarithm Defined as an Integral#^thm-121-11\|Thm. §121.11]] |
+>
+> **Irrational exponents agree.** Let $b > 1$ and $x$ irrational. For rationals $r < x < s$, the function $t \mapsto e^{t\ln b}$ is increasing (Theorem §121.10) and equals $b^t$ at rational $t$ (by (9) and Law 3 of Theorem §121.6, as in Definition §121.5), so $b^r < e^{x\ln b} < b^s$. Thus $e^{x\ln b}$ is the unique number between all $b^r$ and all $b^s$ that [[§4 Exponential Functions#^def-4-3|Definition §4.3]] calls $b^x$; for $0 < b < 1$ reverse the inequalities, and $1^x = e^0 = 1$. So every result proved here is a proof of the corresponding statement taken on credit earlier.
+
+^rem-121-2

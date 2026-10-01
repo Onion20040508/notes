@@ -115,7 +115,7 @@ Substituting this formula for $c_n$ back into the series: *if* $f$ has a power s
 ^rem-78-1
 
 > [!example] Example §78.1: Maclaurin Series from the Definition
-> **(a)** $f(x) = 1/(1 - x)$ has the power series representation $\sum_{n=0}^{\infty} x^n$ for $|x| < 1$ ([[§77 Representations of Functions as Power Series#^def-77-1|§77]]). By Theorem §78.1 this must be its Maclaurin series. To confirm:
+> **(a)** $f(x) = 1/(1 - x)$ has the power series representation $\sum_{n=0}^{\infty} x^n$ for $|x| < 1$ ([[§77 Representations of Functions as Power Series#^def-77-1|Definition §77.1]]). By Theorem §78.1 this must be its Maclaurin series. To confirm:
 >
 > $$
 > f(x) = \frac{1}{1 - x}, \quad f'(x) = \frac{1}{(1 - x)^2}, \quad f''(x) = \frac{1 \cdot 2}{(1 - x)^3}, \quad f'''(x) = \frac{1 \cdot 2 \cdot 3}{(1 - x)^4}, \quad \ldots, \quad f^{(n)}(x) = \frac{n!}{(1 - x)^{n+1}} ,
@@ -235,7 +235,7 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 
 ^pf-78-4
 
-*Uses:* [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 2), [[§35 The Definite Integral|§35]] (comparison property of integrals), [[§78 Taylor and Maclaurin Series#^def-78-2|Def. §78.2]]
+*Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2), [[§35 The Definite Integral#^thm-35-6|§35.6]] (comparison property of integrals), [[§78 Taylor and Maclaurin Series#^def-78-2|Def. §78.2]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]] (Taylor's theorem with Lagrange remainder, proved from Rolle's theorem; it implies Taylor's Inequality at once and needs no continuity of $f^{(n+1)}$), and [[§31 Taylor's Theorem#^prop-31-1|451 Prop. §31.1]] (= Theorem §78.3).
@@ -390,7 +390,7 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 
 ^pf-78-7
 
-*Uses:* [[§78 Taylor and Maclaurin Series#^thm-78-4|§78.4]], [[§78 Taylor and Maclaurin Series#^prop-78-5|§78.5]], [[§78 Taylor and Maclaurin Series#^thm-78-3|§78.3]], [[§69 Sequences#^thm-69-4|§69.4]], [[§16 Derivatives of Trigonometric Functions|§16]] (derivatives of sine and cosine)
+*Uses:* [[§78 Taylor and Maclaurin Series#^thm-78-4|§78.4]], [[§78 Taylor and Maclaurin Series#^prop-78-5|§78.5]], [[§78 Taylor and Maclaurin Series#^thm-78-3|§78.3]], [[§69 Sequences#^thm-69-4|§69.4]], [[§16 Derivatives of Trigonometric Functions#^thm-16-1|§16.1]], [[§16 Derivatives of Trigonometric Functions#^thm-16-2|§16.2]] (derivatives of sine and cosine)
 
 ![[m233-78-1.svg]]
 *$\sin x$ (black) and its Maclaurin polynomials $T_1(x) = x$, $T_3(x) = x - \frac{x^3}{3!}$, $T_5$ and $T_9$. Each polynomial follows the sine curve on a larger interval around $0$ before it breaks away: for fixed $x$ the error $|R_n(x)| \le |x|^{n+1}/(n+1)!$ tends to $0$, but more slowly for larger $|x|$.*
@@ -483,13 +483,13 @@ These series, found by Newton by other methods, say that everything about $e^x$,
 > h'(x) = -k(1 + x)^{-k-1} g(x) + (1 + x)^{-k} g'(x) = (1 + x)^{-k-1} \big[ (1 + x) g'(x) - k\,g(x) \big] = 0 ,
 > $$
 >
-> so $h$ is constant on $(-1, 1)$ ([[§26 The Mean Value Theorem|§26]]), and $h(x) = h(0) = g(0) = 1$. Hence $g(x) = (1 + x)^k$ for $|x| < 1$.
+> so $h$ is constant on $(-1, 1)$ ([[§26 The Mean Value Theorem#^thm-26-3|Theorem §26.3]]), and $h(x) = h(0) = g(0) = 1$. Hence $g(x) = (1 + x)^k$ for $|x| < 1$.
 >
 > (The endpoint behavior stated in the theorem is quoted from Stewart without proof.)
 
 ^pf-78-9
 
-*Uses:* [[§78 Taylor and Maclaurin Series#^def-78-1|Def. §78.1]], [[§78 Taylor and Maclaurin Series#^def-78-3|Def. §78.3]], [[§74 The Ratio and Root Tests#^thm-74-1|§74.1]], [[§77 Representations of Functions as Power Series#^thm-77-1|§77.1]], [[§26 The Mean Value Theorem|§26]] (a function with zero derivative is constant)
+*Uses:* [[§78 Taylor and Maclaurin Series#^def-78-1|Def. §78.1]], [[§78 Taylor and Maclaurin Series#^def-78-3|Def. §78.3]], [[§74 The Ratio and Root Tests#^thm-74-1|§74.1]], [[§77 Representations of Functions as Power Series#^thm-77-1|§77.1]], [[§26 The Mean Value Theorem#^thm-26-3|§26.3]] (a function with zero derivative is constant)
 
 > [!remark] Remark: Important Maclaurin Series
 > For future reference (Stewart's Table 1), the Maclaurin series found here and in [[§77 Representations of Functions as Power Series|§77]], with their radii of convergence:
@@ -575,7 +575,7 @@ By Corollary §78.2, however a power series representation of $f$ is obtained, i
 > [!example] Example §78.4: Integrals and Limits by Series
 > **(a)** Evaluate $\int e^{-x^2}\,dx$ as an infinite series, and **(b)** evaluate $\int_0^1 e^{-x^2}\,dx$ correct to within an error of $0.001$.
 >
-> $e^{-x^2}$ has no elementary antiderivative ([[§48 Strategy for Integration|§48]]); following Newton, expand and integrate term by term. Replacing $x$ by $-x^2$ in the series for $e^x$, for all $x$,
+> $e^{-x^2}$ has no elementary antiderivative ([[§48 Strategy for Integration#^thm-48-2|Theorem §48.2]]); following Newton, expand and integrate term by term. Replacing $x$ by $-x^2$ in the series for $e^x$, for all $x$,
 >
 > $$
 > e^{-x^2} = \sum_{n=0}^{\infty} \frac{(-x^2)^n}{n!} = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{n!} = 1 - \frac{x^2}{1!} + \frac{x^4}{2!} - \frac{x^6}{3!} + \cdots

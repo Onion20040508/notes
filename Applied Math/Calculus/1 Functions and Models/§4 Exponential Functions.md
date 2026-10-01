@@ -67,7 +67,7 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 
 ^def-4-3
 
-*Stewart omits the proof that exactly one such number exists, citing J. Marsden and A. Weinstein, "Calculus Unlimited" (1981). An alternative construction of $b^x$, through the logarithm defined as an integral, is in Appendix G ([[§121 The Logarithm Defined as an Integral|§121]]).*
+*Stewart omits the proof that exactly one such number exists, citing J. Marsden and A. Weinstein, "Calculus Unlimited" (1981). An alternative construction of $b^x$, through the logarithm defined as an integral, is in Appendix G: $\ln$ is defined as an integral in [[§121 The Logarithm Defined as an Integral#^def-121-1|Definition §121.1]], $e^x$ as its inverse in [[§121 The Logarithm Defined as an Integral#^def-121-3|Definition §121.3]], and $b^x = e^{x \ln b}$ in [[§121 The Logarithm Defined as an Integral#^def-121-5|Definition §121.5]], which agrees with Definition §4.2 for rational $x$ ([[§121 The Logarithm Defined as an Integral#^prop-121-4|Proposition §121.4]]) and with Definition §4.3 for irrational $x$ ([[§121 The Logarithm Defined as an Integral#^rem-121-2|Remark: Dictionary with Chapters 1 and 3]]).*
 
 ![[m233-4-2.svg]]
 *(a) $y = 2^x$ plotted at rational $x$ only (here at multiples of $\frac18$); between any two plotted points there are holes at the irrational numbers. (b) Filling the hole at $\sqrt3$: the rational bounds $1.7 < \sqrt3 < 1.8$ (orange) trap $2^{\sqrt3}$ between $2^{1.7} \approx 3.249$ and $2^{1.8} \approx 3.482$, and the finer bounds $1.73 < \sqrt3 < 1.74$ (red) trap it between $2^{1.73} \approx 3.317$ and $2^{1.74} \approx 3.340$. The nested ranges on the $y$-axis shrink to the single value $2^{\sqrt3} \approx 3.322$ (black dot).*
@@ -87,7 +87,7 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 
 ^thm-4-1
 
-*For rational $x$ and $y$ these are the laws of elementary algebra; Stewart states that they remain true for all real $x$ and $y$ ("it can be proved") but gives no proof in 1.4. Appendix G proves them from the integral definition of $\ln$: [[§121 The Logarithm Defined as an Integral|§121]] (Laws of Exponents 15).*
+*For rational $x$ and $y$ these are the laws of elementary algebra; Stewart states that they remain true for all real $x$ and $y$ ("it can be proved") but gives no proof in 1.4. Appendix G proves them from the integral definition of $\ln$: [[§121 The Logarithm Defined as an Integral#^thm-121-6|Theorem §121.6]] (for base $e$) and [[§121 The Logarithm Defined as an Integral#^thm-121-9|Theorem §121.9]] (any base).*
 
 > [!theorem] Proposition §4.2: The Three Kinds of Exponential Functions
 > Let $b > 0$.
@@ -96,13 +96,13 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 > 3. If $b \ne 1$, then $y = b^x$ has domain $\mathbb{R}$ and range $(0, \infty)$.
 > 4. Since $(1/b)^x = 1/b^x = b^{-x}$, the graph of $y = (1/b)^x$ is the reflection of the graph of $y = b^x$ about the $y$-axis.
 >
-> In both cases $b \ne 1$ the $x$-axis is a horizontal asymptote: $b^x \to 0$ as $x \to \infty$ if $b < 1$, and as $x \to -\infty$ if $b > 1$ ([[§11 Limits at Infinity; Horizontal Asymptotes|§11]]).
+> In both cases $b \ne 1$ the $x$-axis is a horizontal asymptote: $b^x \to 0$ as $x \to \infty$ if $b < 1$, and as $x \to -\infty$ if $b > 1$ ([[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-2|Definition §11.2]]; for $b = e$, [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-4|Theorem §11.4]]).
 >
 > *Stewart: 1.4 (text)*
 
 ^prop-4-2
 
-*Stewart reads parts 2 and 3 off the graphs (his Figures 3 and 4). Appendix G proves the monotonicity from the derivative $\frac{d}{dx} b^x = b^x \ln b$: [[§121 The Logarithm Defined as an Integral|§121]] (Equation 16).*
+*Stewart reads parts 2 and 3 off the graphs (his Figures 3 and 4). Appendix G proves the monotonicity from the derivative $\frac{d}{dx} b^x = b^x \ln b$: [[§121 The Logarithm Defined as an Integral#^thm-121-10|Theorem §121.10]].*
 
 > [!proof]+ Proof
 > *Of part 4, the only part Stewart justifies.* By Definition §4.2, $1/b > 0$ and $1/b = b^{-1}$. Law 3 of Theorem §4.1 gives $(1/b)^x = (b^{-1})^x = b^{-x}$. Law 1 gives $b^x \cdot b^{-x} = b^{0} = 1$, so $b^{-x} = 1/b^x$. Hence the point $(x, y)$ is on the graph of $y = b^x$ exactly when $(-x, y)$ is on the graph of $y = (1/b)^x$: the two graphs are mirror images in the $y$-axis.
@@ -114,7 +114,7 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 > [!example] Example §4.1: Reflecting and Shifting an Exponential
 > Sketch the graph of $y = 3 - 2^x$ and determine its domain and range.
 >
-> Build the graph from $y = 2^x$ with the transformations of [[§3 New Functions from Old Functions|§3]]:
+> Build the graph from $y = 2^x$ with the transformations of [[§3 New Functions from Old Functions#^thm-3-2|Theorem §3.2]] (reflection) and [[§3 New Functions from Old Functions#^thm-3-1|Theorem §3.1]] (shift):
 > 1. Reflect $y = 2^x$ about the $x$-axis to get $y = -2^x$. It passes through $(0, -1)$, decreases, and approaches $0$ from below as $x \to -\infty$.
 > 2. Shift up $3$ units to get $y = 3 - 2^x$. It passes through $(0, 2)$, crosses the $x$-axis where $2^x = 3$, and approaches the horizontal asymptote $y = 3$ from below as $x \to -\infty$.
 >
@@ -174,7 +174,7 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 
 ## The Number e
 
-Of all bases, one is most convenient for calculus. The choice is governed by how the graph $y = b^x$ crosses the $y$-axis: the tangent line to $y = 2^x$ at $(0, 1)$ has slope $m \approx 0.7$, and the one to $y = 3^x$ has slope $m \approx 1.1$. (Tangent lines are defined precisely in Section 2.7, [[§12 Derivatives and Rates of Change|§12]]; for now, think of the line that touches the graph only at that point. See [[§6 The Tangent and Velocity Problems#^def-6-2|Definition §6.2]].) The formulas of calculus become simplest when this slope is exactly $1$.
+Of all bases, one is most convenient for calculus. The choice is governed by how the graph $y = b^x$ crosses the $y$-axis: the tangent line to $y = 2^x$ at $(0, 1)$ has slope $m \approx 0.7$, and the one to $y = 3^x$ has slope $m \approx 1.1$. (Tangent lines are defined precisely in Section 2.7, [[§12 Derivatives and Rates of Change#^def-12-1|Definition §12.1]]; for now, think of the line that touches the graph only at that point. See [[§6 The Tangent and Velocity Problems#^def-6-2|Definition §6.2]].) The formulas of calculus become simplest when this slope is exactly $1$.
 
 > [!definition] Definition §4.4: The Number e
 > The number $e$ is the base $b$ for which the tangent line to $y = b^x$ at the point $(0, 1)$ has slope exactly $1$. Correct to five decimal places,
@@ -191,7 +191,7 @@ Of all bases, one is most convenient for calculus. The choice is governed by how
 
 ^def-4-4
 
-*Stewart only asserts that such a base exists; the existence and the value $2.71828$ come in Chapter 3 ([[§14 Derivatives of Polynomials and Exponential Functions|§14]], where $e$ is the number with $\lim_{h \to 0} (e^h - 1)/h = 1$).*
+*Stewart only asserts that such a base exists. Chapter 3 restates the definition as $\lim_{h \to 0} (e^h - 1)/h = 1$ ([[§14 Derivatives of Polynomials and Exponential Functions#^def-14-2|Definition §14.2]]) and obtains the value $2.71828$ from $e = \lim_{x \to 0}(1 + x)^{1/x}$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|Theorem §19.7]]). A rigorous construction is in Appendix G: $e$ is the number with $\ln e = 1$ ([[§121 The Logarithm Defined as an Integral#^def-121-2|Definition §121.2]]), $\frac{d}{dx} e^x = e^x$ ([[§121 The Logarithm Defined as an Integral#^thm-121-7|Theorem §121.7]]), and $e = \lim_{x \to 0}(1 + x)^{1/x}$ ([[§121 The Logarithm Defined as an Integral#^thm-121-12|Theorem §121.12]]).*
 
 ![[m233-4-1.svg]]
 *Tangent lines (red) to $y = 2^x$, $y = e^x$ and $y = 3^x$ (blue) at the common point $(0, 1)$. Their slopes increase with the base: about $0.69$, exactly $1$, about $1.10$. (Chapter 3 shows that the slope for base $b$ is $\ln b$.) The base $e$ is the one in between whose tangent line is $y = x + 1$.*
@@ -202,7 +202,7 @@ Of all bases, one is most convenient for calculus. The choice is governed by how
 > [!example] Example §4.4: Transforming the Natural Exponential
 > Graph $y = \frac12 e^{-x} - 1$ and state the domain and range.
 >
-> Start from $y = e^x$ and use the transformations of [[§3 New Functions from Old Functions|§3]]:
+> Start from $y = e^x$ and use the transformations of [[§3 New Functions from Old Functions#^thm-3-2|Theorem §3.2]] (reflection, compression) and [[§3 New Functions from Old Functions#^thm-3-1|Theorem §3.1]] (shift):
 > 1. Reflect about the $y$-axis: $y = e^{-x}$. It is decreasing, passes through $(0, 1)$, and its tangent line there has slope $-1$ (the mirror image of the slope-$1$ tangent of $e^x$).
 > 2. Compress vertically by a factor of $2$: $y = \frac12 e^{-x}$, through $(0, \frac12)$.
 > 3. Shift down $1$ unit: $y = \frac12 e^{-x} - 1$, through $(0, -\frac12)$, with horizontal asymptote $y = -1$ as $x \to \infty$.
