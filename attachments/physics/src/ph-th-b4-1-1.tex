@@ -1,0 +1,23 @@
+% Figure for Thermal Physics §B4.1 (binomial distribution P(n,k) with p = 0.3 for n = 10 and n = 50, as bars, against the Gaussian of the same mean np and variance np(1-p); computed).
+\begin{tikzpicture}[font=\small,
+  declare function={gau(\x,\n,\p)=exp(-(\x-\n*\p)^2/(2*\n*\p*(1-\p)))/sqrt(2*pi*\n*\p*(1-\p));}]
+  \begin{axis}[nfig, name=left, width=6.6cm, height=5cm, xmin=-0.8, xmax=10.8, ymin=0, ymax=0.3,
+      xlabel={$k$}, ylabel={$P(n,k)$}, xtick={0,2,4,6,8,10}, ytick={0.1,0.2,0.3},
+      yticklabel style={/pgf/number format/fixed},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south west, xshift=-14pt},
+      clip=false, title={$n = 10$}, title style={font=\small, yshift=-4pt}]
+    \addplot[ycomb, figB, line width=4pt, opacity=0.75] coordinates {(0,0.02825) (1,0.12106) (2,0.23347) (3,0.26683) (4,0.20012) (5,0.10292) (6,0.03676) (7,0.00900) (8,0.00145) (9,0.00014) (10,0.00001)};
+    \addplot[figR, domain=-0.8:10.8, samples=120] {gau(x,10,0.3)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:5.2,0.262) {binomial, $p = 0.3$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:5.2,0.236) {Gaussian $\mathcal N(np,\,npq)$};
+  \end{axis}
+  \begin{axis}[nfig, at={(left.east)}, anchor=west, xshift=1.3cm, width=6.6cm, height=5cm, xmin=0, xmax=32, ymin=0, ymax=0.15,
+      xlabel={$k$}, xtick={0,5,10,15,20,25,30}, ytick={0.05,0.1,0.15},
+      yticklabel style={/pgf/number format/fixed},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      title={$n = 50$}, title style={font=\small, yshift=-4pt}]
+    \addplot[ycomb, figB, line width=2.6pt, opacity=0.75] coordinates {(3,0.00003) (4,0.00014) (5,0.00055) (6,0.00177) (7,0.00477) (8,0.01099) (9,0.02198) (10,0.03862) (11,0.06019) (12,0.08383) (13,0.10502) (14,0.11895) (15,0.12235) (16,0.11470) (17,0.09831) (18,0.07725) (19,0.05576) (20,0.03704) (21,0.02268) (22,0.01281) (23,0.00668) (24,0.00322) (25,0.00144) (26,0.00059) (27,0.00023) (28,0.00008)};
+    \addplot[figR, domain=0:32, samples=160] {gau(x,50,0.3)};
+  \end{axis}
+\end{tikzpicture}

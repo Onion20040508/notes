@@ -1,0 +1,35 @@
+% Figure for Thermal and Statistical Physics §B13.1 (ideal Fermi gas in 3D: Fermi function at several T with the exact mu(T), and C_V(T) against the Sommerfeld line; computed numerically from N = int g f, U = int eps g f).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=left, width=6.6cm, height=4.8cm, xmin=0, xmax=2.6, ymin=0, ymax=1.18,
+      xlabel={$\varepsilon/\varepsilon_F$}, ylabel={$f(\varepsilon)$},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={0.5,1,1.5,2,2.5}, ytick={0.5,1}, samples=240, clip=false, title={\small (a) Fermi function}]
+    \addplot[black, thick] coordinates {(0,1) (1,1) (1,0) (2.5,0)};
+    \addplot[figB, domain=0:2.5] {1/(exp((x-0.9979)/0.05)+1)};
+    \addplot[figG, domain=0:2.5] {1/(exp((x-0.9646)/0.2)+1)};
+    \addplot[figO, domain=0:2.5] {1/(exp((x-0.7431)/0.5)+1)};
+    \addplot[figR, domain=0:2.5] {1/(exp((x+0.0215)/1.0)+1)};
+    \addplot[only marks, mark=*, mark size=1.3pt, black!70] coordinates {(0.9979,0.5) (0.9646,0.5) (0.7431,0.5)};
+    \draw[black!45, densely dotted] (axis cs:0,0.5) -- (axis cs:2.5,0.5);
+    \node[font=\scriptsize, anchor=west] at (axis cs:1.62,1.02) {$kT/\varepsilon_F$:};
+    \node[font=\scriptsize, black, anchor=west] at (axis cs:1.62,0.91) {$0$};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:1.62,0.81) {$0.05$};
+    \node[font=\scriptsize, figG, anchor=west] at (axis cs:1.62,0.71) {$0.2$};
+    \node[font=\scriptsize, figO, anchor=west] at (axis cs:2.02,0.81) {$0.5$};
+    \node[font=\scriptsize, figR, anchor=west] at (axis cs:2.02,0.71) {$1$};
+    \addplot[only marks, mark=*, mark size=1.3pt, black!70] coordinates {(1.66,0.59)};
+    \node[font=\scriptsize, black!70, anchor=west] at (axis cs:1.70,0.59) {$f = \tfrac12$ at $\mu(T)$};
+  \end{axis}
+  \begin{axis}[nfig, at={(left.south east)}, xshift=1.5cm, anchor=south west, width=6.6cm, height=4.8cm,
+      xmin=0, xmax=1.65, ymin=0, ymax=1.9,
+      xlabel={$kT/\varepsilon_F$}, ylabel={$C_V/Nk$},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={0.5,1,1.5}, ytick={0.5,1,1.5}, clip=false, title={\small (b) heat capacity}]
+    \addplot[black!50, dashed, domain=0:0.34] {pi^2/2*x};
+    \addplot[black!50, densely dotted] coordinates {(0,1.5) (1.6,1.5)};
+    \addplot[figB, thick] coordinates {(0,0) (0.010,0.0493) (0.027,0.1343) (0.045,0.2185) (0.062,0.3015) (0.079,0.3826) (0.096,0.4611) (0.114,0.5361) (0.131,0.6068) (0.148,0.6727) (0.165,0.7335) (0.183,0.7892) (0.200,0.8400) (0.250,0.9622) (0.321,1.0865) (0.392,1.1720) (0.463,1.2328) (0.534,1.2775) (0.605,1.3112) (0.676,1.3374) (0.747,1.3582) (0.818,1.3749) (0.889,1.3887) (0.961,1.4001) (1.032,1.4097) (1.103,1.4179) (1.174,1.4249) (1.245,1.4310) (1.316,1.4363) (1.387,1.4410) (1.458,1.4451) (1.529,1.4488) (1.600,1.4521)};
+    \node[font=\scriptsize, black!60, anchor=west, align=left] at (axis cs:0.36,1.74) {$\tfrac{\pi^2}{2}\,kT/\varepsilon_F$ (Sommerfeld)};
+    \node[font=\scriptsize, black!60, anchor=north] at (axis cs:1.25,1.47) {classical $\tfrac32$};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:0.55,1.05) {exact};
+  \end{axis}
+\end{tikzpicture}

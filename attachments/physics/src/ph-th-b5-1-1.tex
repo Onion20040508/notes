@@ -1,0 +1,20 @@
+% Figure for Thermal Physics §B5.1 (Maxwell speed distribution of nitrogen at 100 K, 300 K and 1000 K, with the fraction of molecules faster than 1000 m/s at 300 K shaded (1.05 %); computed from f(v) = 4 v^2/(sqrt(pi) v_p^3) exp(-v^2/v_p^2), v_p = sqrt(2kT/m)).
+\begin{tikzpicture}[font=\small,
+  declare function={mb(\v,\p)=1000*4*\v^2/(sqrt(pi)*\p^3)*exp(-(\v/\p)^2);}]
+  \begin{axis}[nfig, width=10cm, height=6cm, xmin=0, xmax=2000, ymin=0, ymax=3.6,
+      xlabel={$v$ (m/s)}, ylabel={$f(v)$ ($10^{-3}$ s/m)},
+      xtick={0,500,1000,1500,2000}, ytick={1,2,3},
+      scaled x ticks=false, x tick label style={/pgf/number format/1000 sep={}},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south west, xshift=-12pt}]
+    \addplot[draw=none, fill=figB!30, domain=1000:2000, samples=60] {mb(x,422.0)} \closedcycle;
+    \addplot[figG, domain=0:2000, samples=220] {mb(x,243.6)};
+    \addplot[figB, domain=0:2000, samples=220] {mb(x,422.0)};
+    \addplot[figR, domain=0:2000, samples=220] {mb(x,770.5)};
+    \node[figG, font=\scriptsize, anchor=west] at (axis cs:330,3.3) {$T = 100$ K};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:560,1.95) {$300$ K};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1450,0.52) {$1000$ K};
+    \node[figB, font=\scriptsize, anchor=south west, align=left] at (axis cs:1230,1.45) {$v > 1000$ m/s at $300$ K:\\ $1.05\,\%$ of the molecules};
+    \draw[figB, thin] (axis cs:1300,1.47) -- (axis cs:1070,0.08);
+  \end{axis}
+\end{tikzpicture}

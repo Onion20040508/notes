@@ -1,0 +1,43 @@
+% Figure for Thermal and Statistical Physics §B11.1 ((a) Planck spectral energy density per unit frequency at 3000, 4500, 6000 K with peaks at h nu = 2.821 kT; (b) normalized distributions of photon energy and photon number in x = h nu/kT; computed).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=0.52\textwidth, height=0.42\textwidth,
+      xmin=0, xmax=12, ymin=0, ymax=2.0,
+      xlabel={$\nu$ \scriptsize($10^{14}$ Hz)}, ylabel={$u_\nu$ \scriptsize($10^{-15}$ J$\,$m$^{-3}$Hz$^{-1}$)},
+      xtick={0,2,4,6,8,10,12}, ytick={0,0.5,1,1.5,2},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south west, xshift=-14pt, yshift=2pt},
+      xlabel style={at={(axis description cs:1,-0.12)}, anchor=north east},
+      clip=false]
+    \fill[black!7] (axis cs:4.0,0) rectangle (axis cs:7.5,2.0);
+    \node[black!55, font=\scriptsize] at (axis cs:5.75,1.9) {visible};
+    \addplot[figB, domain=0.02:12, samples=200] {0.61807*x^3/(exp(4799.24*x/6000)-1)};
+    \addplot[figB!70!black, domain=0.02:12, samples=200] {0.61807*x^3/(exp(4799.24*x/4500)-1)};
+    \addplot[figB!45, domain=0.02:12, samples=200] {0.61807*x^3/(exp(4799.24*x/3000)-1)};
+    \addplot[only marks, mark=*, mark size=1.4pt, black] coordinates {
+      (3.5272,{0.61807*3.5272^3/(exp(2.82144)-1)})
+      (2.6454,{0.61807*2.6454^3/(exp(2.82144)-1)})
+      (1.7636,{0.61807*1.7636^3/(exp(2.82144)-1)})};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:5.6,1.47) {6000 K};
+    \node[figB!70!black, font=\scriptsize, anchor=west] at (axis cs:3.2,0.80) {4500 K};
+    \node[figB!45!black, font=\scriptsize, anchor=west] at (axis cs:2.3,0.30) {3000 K};
+    \node[black, font=\scriptsize, anchor=west, align=left] at (axis cs:8.0,1.75) {dots: peaks,\\ $h\nu_{\max} = 2.821\,k_BT$};
+    \node[black!55, font=\scriptsize, anchor=north west] at (axis cs:0.2,1.95) {(a)};
+  \end{axis}
+  \begin{scope}[xshift=0.58\textwidth]
+  \begin{axis}[nfig, width=0.46\textwidth, height=0.42\textwidth,
+      xmin=0, xmax=10, ymin=0, ymax=0.3,
+      xlabel={$x = h\nu/k_BT$}, ylabel={per unit $x$},
+      xtick={0,2,4,6,8,10}, ytick={0,0.1,0.2,0.3},
+      yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=1},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south, yshift=2pt},
+      xlabel style={at={(axis description cs:1,-0.12)}, anchor=north east},
+      clip=false]
+    \addplot[figR, domain=0.01:10, samples=160] {x^2/(exp(x)-1)/2.40411};
+    \addplot[figB, domain=0.01:10, samples=160] {x^3/(exp(x)-1)/6.49394};
+    \draw[black!45, thin, dashed] (axis cs:2.7012,0) -- (axis cs:2.7012,0.215);
+    \draw[black!45, thin] (axis cs:2.35,0.245) -- (axis cs:3.55,0.245);
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:3.55,0.245) {photon number};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:4.6,0.17) {photon energy};
+    \node[black!55, font=\scriptsize, anchor=north west] at (axis cs:7.2,0.29) {(b)};
+  \end{axis}
+  \end{scope}
+\end{tikzpicture}

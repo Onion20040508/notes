@@ -1,0 +1,21 @@
+% Figure for Thermal Physics §B5.3 (thermal wave in a half-space whose surface temperature oscillates: (T - T_0)/Delta T = exp(-x/delta) cos(Omega t - x/delta) at Omega t = 0, pi/2, pi, 3 pi/2, inside the envelope ±exp(-x/delta); computed).
+\begin{tikzpicture}[font=\small, declare function={tw(\x,\p)=exp(-\x)*cos(deg(\p-\x));}]
+  \begin{axis}[nfig, width=10cm, height=5.8cm, xmin=0, xmax=6.3, ymin=-1.15, ymax=1.15,
+      xlabel={depth $x/\delta$}, ylabel={$\dfrac{T - T_0}{\Delta T}$}, xtick={0,1,2,3,4,5,6}, ytick={-1,-0.5,0,0.5,1},
+      axis x line=middle, axis y line=left,
+      xlabel style={at={(axis description cs:1.0,0.5)}, anchor=north east, yshift=-14pt},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south west, xshift=-14pt}]
+    \addplot[black!55, dashed, domain=0:6.3, samples=100] {exp(-x)};
+    \addplot[black!55, dashed, domain=0:6.3, samples=100] {-exp(-x)};
+    \addplot[figB, domain=0:6.3, samples=200] {tw(x,0)};
+    \addplot[figG, domain=0:6.3, samples=200] {tw(x,pi/2)};
+    \addplot[figR, domain=0:6.3, samples=200] {tw(x,pi)};
+    \addplot[figO, domain=0:6.3, samples=200] {tw(x,3*pi/2)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.05,1.05) {$\Omega t = 0$};
+    \node[figG, font=\scriptsize, anchor=west] at (axis cs:1.2,0.47) {$\pi/2$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.05,-1.05) {$\pi$};
+    \node[figO, font=\scriptsize, anchor=west] at (axis cs:1.05,-0.55) {$3\pi/2$};
+    \node[black!60, font=\scriptsize, anchor=west] at (axis cs:2.4,0.32) {envelope $\pm e^{-x/\delta}$};
+    \draw[black!55, thin] (axis cs:2.4,0.3) -- (axis cs:2.05,0.135);
+  \end{axis}
+\end{tikzpicture}

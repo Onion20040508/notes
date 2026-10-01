@@ -1,0 +1,33 @@
+% Figure for Thermal and Statistical Physics §B2.1 (Example: three quasi-static paths from A to B for a gas whose reversible adiabat is p = 32 V^{-5/3} (units 10^5 Pa and litres), after PHY 306 Problem Set 2, Problem 3; heats and works computed in the example).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2mm]}]
+  \begin{axis}[nfig, width=8.6cm, height=7.0cm, xmin=0, xmax=9.6, ymin=0, ymax=36, clip=false,
+      xlabel={$V$ (L)}, ylabel={$p$ ($10^5$ Pa)}, xtick={1,8}, ytick={1,32},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1.02)}, anchor=south}]
+    % adiabat (Q = 0): reference path fixing Delta U
+    \addplot[black!55, thick, dashed, domain=1:8, samples=120] {32*x^(-5/3)};
+    \node[black!65, font=\scriptsize, anchor=south west, align=left] at (axis cs:2.4,8.6) {adiabat, $Q = 0$:\\ $W = 3.6$ kJ};
+    % path 1: A -> B' -> B (blue)
+    \draw[figB, very thick, ->] (axis cs:1,32) -- (axis cs:4.6,32);
+    \draw[figB, very thick] (axis cs:4.5,32) -- (axis cs:8,32);
+    \draw[figB, very thick, ->] (axis cs:8,32) -- (axis cs:8,16);
+    \draw[figB, very thick] (axis cs:8,16.5) -- (axis cs:8,1);
+    % path 2: straight line (orange)
+    \draw[figO, very thick, ->] (axis cs:1,32) -- (axis cs:4.6,16.06);
+    \draw[figO, very thick] (axis cs:4.5,16.5) -- (axis cs:8,1);
+    % path 3: A -> A' -> B (red)
+    \draw[figR, very thick, ->] (axis cs:1,32) -- (axis cs:1,16);
+    \draw[figR, very thick] (axis cs:1,16.5) -- (axis cs:1,1);
+    \draw[figR, very thick, ->] (axis cs:1,1) -- (axis cs:4.6,1);
+    \draw[figR, very thick] (axis cs:4.5,1) -- (axis cs:8,1);
+    \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(1,32) (8,1) (8,32) (1,1)};
+    \node[font=\scriptsize, anchor=south east] at (axis cs:1,32) {$A$};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:8,32) {$B'$};
+    \node[font=\scriptsize, anchor=north west] at (axis cs:8,1) {$B$};
+    \node[font=\scriptsize, anchor=north east] at (axis cs:1,1) {$A'$};
+    \node[figB, font=\scriptsize, anchor=west, align=left] at (axis cs:8.15,22) {$AB'B$:\\ $W = 22.4$ kJ\\ $Q = 18.8$ kJ};
+    \node[figO, font=\scriptsize, anchor=west, align=left] at (axis cs:5.0,26.5) {straight line:\\ $W = 11.55$ kJ\\ $Q = 7.95$ kJ};
+    \node[figR, font=\scriptsize, anchor=north, align=center] at (axis cs:4.5,-0.8) {$AA'B$: $W = 0.7$ kJ, $Q = -2.9$ kJ};
+    \node[black, font=\scriptsize, anchor=north] at (axis cs:4.5,-6.2) {$\Delta U = U_B - U_A = -3.6$ kJ on every path};
+  \end{axis}
+\end{tikzpicture}
