@@ -40,7 +40,10 @@ A matrix transformation $\mathbf{x} \mapsto A\mathbf{x}$ may move vectors in all
 >
 > An eigenvector must be nonzero, by definition, but an eigenvalue may be zero ([[§32 Eigenvectors and Eigenvalues#^thm-32-2|Theorem §32.2]]).
 >
+> *The lecture's first statement of the definition (L18, p. 4) reads "$\vec v = \vec 0$" where $\vec v \ne \vec 0$ is meant; L18, p. 6 and L19 state it correctly.*
+>
 > *Lay: 5.1, Definition*
+> *Source: 235 lectures L18, L19*
 
 ^def-32-1
 
@@ -317,50 +320,28 @@ is a recursive description of a sequence $\{\mathbf{x}_k\}$ in $\mathbb{R}^n$. A
 
 So if $\mathbf{x}_0$ can be written as a combination of eigenvectors, the difference equation is solved. This is the idea of the rest of the chapter ([[§34 Diagonalization|§34]], [[§37 Discrete Dynamical Systems|§37]]). The lecture uses it to find a formula for the Fibonacci numbers. Finding the eigenvalues uses the characteristic equation $\det(A - \lambda I) = 0$ of the next section: $A - \lambda I$ has a nonzero null space exactly when it is not invertible, that is, when its determinant is $0$ ([[§33 The Characteristic Equation#^thm-33-4|Theorem §33.4]]).
 
-> [!example] Example §32.4: The Fibonacci Numbers and the Golden Ratio
-> The Fibonacci numbers are $F_0 = 0$, $F_1 = 1$ and $F_n = F_{n-1} + F_{n-2}$: $0, 1, 1, 2, 3, 5, 8, 13, 21, \ldots$. The ratios $\frac{2}{1}, \frac{3}{2}, \frac{5}{3}, \frac{8}{5}, \frac{13}{8}, \frac{21}{13}, \ldots$ seem to approach the **golden ratio** $\varphi = \frac{1 + \sqrt5}{2} \approx 1.618$ (the ratio $a/b$ of a segment cut into $a > b$ with $\frac{a}{b} = \frac{a + b}{a}$). We find a formula for $F_n$ and prove $\lim_{n\to\infty} F_{n+1}/F_n = \varphi$.
+> [!example] Example §32.4: The Fibonacci Numbers by Eigenvectors
+> The Fibonacci numbers $F_0 = 0$, $F_1 = 1$, $F_n = F_{n-1} + F_{n-2}$ ($0, 1, 1, 2, 3, 5, 8, 13, \ldots$) were found in [[§30 Applications to Difference Equations#^ex-30-4|Example §30.4]] from the auxiliary equation of the recurrence. The lecture finds them with eigenvectors instead.
 >
-> **A difference equation.** Let $\mathbf{v}_n = \begin{bmatrix} F_n \\ F_{n+1} \end{bmatrix}$, so $\mathbf{v}_0 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$. Then
->
-> $$
-> \mathbf{v}_n = \begin{bmatrix} F_n \\ F_{n+1} \end{bmatrix} = \begin{bmatrix} F_n \\ F_{n-1} + F_n \end{bmatrix} = \begin{bmatrix} 0 & 1 \\ 1 & 1 \end{bmatrix}\begin{bmatrix} F_{n-1} \\ F_n \end{bmatrix} = A\mathbf{v}_{n-1}, \qquad A = \begin{bmatrix} 0 & 1 \\ 1 & 1 \end{bmatrix},
-> $$
->
-> so $\mathbf{v}_n = A^n\mathbf{v}_0$, and we need $A^n\mathbf{v}_0$.
->
-> **Eigenvalues.** $\det(A - \lambda I) = \det\begin{bmatrix} -\lambda & 1 \\ 1 & 1 - \lambda \end{bmatrix} = -\lambda(1 - \lambda) - 1 = \lambda^2 - \lambda - 1$, whose roots are
+> **A first-order system.** Let $\mathbf{v}_n = \begin{bmatrix} F_n \\ F_{n+1} \end{bmatrix}$, so $\mathbf{v}_0 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$. Then
 >
 > $$
-> \lambda = \frac{1 \pm \sqrt5}{2} : \qquad \varphi = \frac{1 + \sqrt5}{2}, \qquad \psi = \frac{1 - \sqrt5}{2} .
+> \mathbf{v}_n = \begin{bmatrix} F_n \\ F_{n-1} + F_n \end{bmatrix} = \begin{bmatrix} 0 & 1 \\ 1 & 1 \end{bmatrix}\begin{bmatrix} F_{n-1} \\ F_n \end{bmatrix} = A\mathbf{v}_{n-1}, \qquad A = \begin{bmatrix} 0 & 1 \\ 1 & 1 \end{bmatrix},
 > $$
 >
-> Note $\varphi + \psi = 1$, $\varphi\psi = -1$, $\varphi - \psi = \sqrt5$, and $\varphi^2 = \varphi + 1$, $\psi^2 = \psi + 1$.
+> so $\mathbf{v}_n = A^n\mathbf{v}_0$. Computing $A^n$ is easy only in a basis in which $A$ acts diagonally, a basis of eigenvectors.
 >
-> **Eigenvectors.** $A - \varphi I = \begin{bmatrix} -\varphi & 1 \\ 1 & 1 - \varphi \end{bmatrix}$. Its second row times $\varphi$ is $(\varphi, \varphi - \varphi^2) = (\varphi, -1)$, the negative of the first row, so the rows are proportional, as they must be, and the system reduces to $-\varphi u_1 + u_2 = 0$. Taking $u_1 = 1$: $\mathbf{u} = \begin{bmatrix} 1 \\ \varphi \end{bmatrix}$. In the same way $\mathbf{v} = \begin{bmatrix} 1 \\ \psi \end{bmatrix}$ is an eigenvector for $\psi$.
+> **Eigenvalues.** $\det(A - \lambda I) = \det\begin{bmatrix} -\lambda & 1 \\ 1 & 1 - \lambda \end{bmatrix} = -\lambda(1 - \lambda) - 1 = \lambda^2 - \lambda - 1$, with roots $\varphi = \frac{1 + \sqrt5}{2}$ (the golden ratio) and $\psi = \frac{1 - \sqrt5}{2}$. Note $\varphi - \psi = \sqrt5$ and $\varphi^2 = \varphi + 1$.
 >
-> **Decompose $\mathbf{v}_0$.** $\mathbf{u} - \mathbf{v} = \begin{bmatrix} 0 \\ \varphi - \psi \end{bmatrix} = \sqrt5\begin{bmatrix} 0 \\ 1 \end{bmatrix} = \sqrt5\,\mathbf{v}_0$, so $\mathbf{v}_0 = \frac{1}{\sqrt5}(\mathbf{u} - \mathbf{v})$. By Theorem §32.5,
+> **Eigenvectors.** $A - \varphi I = \begin{bmatrix} -\varphi & 1 \\ 1 & 1 - \varphi \end{bmatrix}$. Its second row times $\varphi$ is $(\varphi, \varphi - \varphi^2) = (\varphi, -1)$, the negative of the first row: the rows are proportional, as they must be for an eigenvalue, and the system reduces to $-\varphi u_1 + u_2 = 0$. Taking $u_1 = 1$ gives $\mathbf{u} = \begin{bmatrix} 1 \\ \varphi \end{bmatrix}$. In the same way $\mathbf{v} = \begin{bmatrix} 1 \\ \psi \end{bmatrix}$ is an eigenvector for $\psi$.
 >
-> $$
-> \mathbf{v}_n = A^n\mathbf{v}_0 = \frac{1}{\sqrt5}\big(\varphi^n\mathbf{u} - \psi^n\mathbf{v}\big) = \frac{1}{\sqrt5}\begin{bmatrix} \varphi^n - \psi^n \\ \varphi^{n+1} - \psi^{n+1} \end{bmatrix} .
-> $$
->
-> The first entry is **Binet's formula**
+> **Decompose $\mathbf{v}_0$ and apply Theorem §32.5.** $\mathbf{u} - \mathbf{v} = \begin{bmatrix} 0 \\ \varphi - \psi \end{bmatrix} = \sqrt5\,\mathbf{v}_0$, so $\mathbf{v}_0 = \frac{1}{\sqrt5}(\mathbf{u} - \mathbf{v})$ and
 >
 > $$
-> F_n = \frac{\varphi^n - \psi^n}{\sqrt5} = \frac{1}{\sqrt5}\left[\Big(\frac{1 + \sqrt5}{2}\Big)^n - \Big(\frac{1 - \sqrt5}{2}\Big)^n\right] .
+> \mathbf{v}_n = A^n\mathbf{v}_0 = \frac{1}{\sqrt5}\big(\varphi^n\mathbf{u} - \psi^n\mathbf{v}\big) = \frac{1}{\sqrt5}\begin{bmatrix} \varphi^n - \psi^n \\ \varphi^{n+1} - \psi^{n+1} \end{bmatrix}, \qquad F_n = \frac{\varphi^n - \psi^n}{\sqrt5} .
 > $$
 >
-> Check: $F_0 = \frac{1 - 1}{\sqrt5} = 0$, $F_1 = \frac{\varphi - \psi}{\sqrt5} = \frac{\sqrt5}{\sqrt5} = 1$, and since $\varphi^2 = \frac{6 + 2\sqrt5}{4}$, $\psi^2 = \frac{6 - 2\sqrt5}{4}$, $F_2 = \frac{1}{\sqrt5}\cdot\frac{4\sqrt5}{4} = 1$.
->
-> **The ratio.** $\varphi > 1$ and $|\psi| = \frac{\sqrt5 - 1}{2} \approx 0.618 < 1$, so $\psi^n \to 0$ and $F_n \approx \varphi^n/\sqrt5$ for large $n$ (in fact $F_n$ is the integer nearest to $\varphi^n/\sqrt5$, since $|\psi^n/\sqrt5| < \frac12$). Precisely,
->
-> $$
-> \frac{F_{n+1}}{F_n} = \frac{\varphi^{n+1} - \psi^{n+1}}{\varphi^n - \psi^n} = \frac{\varphi - \psi(\psi/\varphi)^n}{1 - (\psi/\varphi)^n} \to \varphi \qquad (n \to \infty),
-> $$
->
-> because $|\psi/\varphi| < 1$.
->
-> *The lecture writes $F_0 = 1$ at one point and lists $\mathbf{v}_2, \mathbf{v}_3$ with their entries in reverse order; with $\mathbf{v}_0 = (0, 1)$, as used for the formula, the indexing is $F_0 = 0$, $F_1 = F_2 = 1$.*
+> This is the formula of Example §30.4, where it is checked and used to show $F_{n+1}/F_n \to \varphi$. In the present language: $\varphi$ is the eigenvalue of largest absolute value ($|\psi| < 1 < \varphi$), so $\mathbf{v}_n$ turns toward the eigenvector line through $(1, \varphi)$, whose slope is the limit of $F_{n+1}/F_n$ ([[§37 Discrete Dynamical Systems#^prop-37-2|Proposition §37.2]]).
 >
 > *Source: 235 lecture L18*
 

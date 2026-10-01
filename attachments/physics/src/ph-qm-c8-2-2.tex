@@ -1,0 +1,18 @@
+% Figure for QM §C8.2★ (tight-binding band): E(k) = E0 - 2 Delta cos(ka) over the Brillouin zone |k| <= pi/a (curve),
+% with the N = 8 levels of a ring of eight sites, k = 2 pi j/(8a) (dots); energies in units of Delta, E0 = 0.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=8.2cm, height=5.6cm, xmin=-1.12, xmax=1.18, ymin=-2.6, ymax=2.9,
+    axis lines=middle, xlabel={$ka/\pi$}, ylabel={$(E - E_0)/\Delta$},
+    xlabel style={anchor=north west, font=\small}, ylabel style={anchor=south, font=\small},
+    xtick={-1,-0.5,0.5,1}, xticklabels={$-1$,$-\tfrac12$,$\tfrac12$,$1$},
+    ytick={-2,-1,1,2}, extra y ticks={0}, extra y tick labels={}, clip=false]
+  \addplot[figB, domain=-1:1, samples=121] {-2*cos(deg(pi*x))};
+  \addplot[black!45, dashed, thin, domain=-1:1] {2};
+  \addplot[black!45, dashed, thin, domain=-1:1] {-2};
+  \addplot[only marks, mark=*, mark size=1.8pt, figR] coordinates {
+    (-0.75,1.41421) (-0.5,0) (-0.25,-1.41421) (0,-2) (0.25,-1.41421) (0.5,0) (0.75,1.41421) (1,2) (-1,2)};
+  \node[font=\scriptsize, anchor=west, black!70] at (axis cs:1.03,2) {$E_0 + 2\Delta$};
+  \node[font=\scriptsize, anchor=west, black!70] at (axis cs:1.03,-2) {$E_0 - 2\Delta$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.32,-0.85) {ring of $N = 8$ sites};
+\end{axis}
+\end{tikzpicture}

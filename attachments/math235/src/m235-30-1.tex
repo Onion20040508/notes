@@ -1,0 +1,17 @@
+% Figure for Applied Linear Algebra §30.
+\begin{tikzpicture}
+  \begin{axis}[nfig, name=top, width=11cm, height=4.2cm, axis lines=middle, xmin=-0.5, xmax=16.8, ymin=-1.35, ymax=1.5,
+      xtick={0,2,...,16}, ytick={-1,1}, xlabel={$k$}, xlabel style={at={(ticklabel* cs:1)}, anchor=west},
+      title={\small input $y_k = \cos(\pi k/4)$ (blue), output $z_k = y_{k+1}$ (red)}, title style={yshift=-2pt}]
+    \addplot[figB!45, thin, domain=-0.3:16.5, samples=200] {cos(deg(pi*x/4))};
+    \addplot[figB, ycomb, mark=*, mark size=1.4pt, samples at={0,...,16}] {cos(deg(pi*x/4))};
+    \addplot[figR, only marks, mark=o, mark size=2.1pt, thick, samples at={0,...,16}] {cos(deg(pi*(x+1)/4))};
+  \end{axis}
+  \begin{axis}[nfig, at={(top.south)}, anchor=north, yshift=-0.9cm, width=11cm, height=4.2cm, axis lines=middle, xmin=-0.5, xmax=16.8, ymin=-1.35, ymax=1.5,
+      xtick={0,2,...,16}, ytick={-1,1}, xlabel={$k$}, xlabel style={at={(ticklabel* cs:1)}, anchor=west},
+      title={\small input $w_k = \cos(3\pi k/4)$ (blue), output $0$ (red)}, title style={yshift=-2pt}]
+    \addplot[figB!45, thin, domain=-0.3:16.5, samples=300] {cos(deg(3*pi*x/4))};
+    \addplot[figB, ycomb, mark=*, mark size=1.4pt, samples at={0,...,16}] {cos(deg(3*pi*x/4))};
+    \addplot[figR, only marks, mark=o, mark size=2.1pt, thick, samples at={0,...,16}] {0};
+  \end{axis}
+\end{tikzpicture}

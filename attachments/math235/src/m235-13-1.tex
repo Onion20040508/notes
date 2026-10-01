@@ -1,0 +1,30 @@
+% Figure for Applied Linear Algebra §13.
+\begin{tikzpicture}[>=Stealth, font=\small,
+  st/.style={draw=figB, rounded corners=2pt, fill=figB!8, inner sep=3pt, align=center},
+  imp/.style={-{Stealth[length=2.2mm]}, double, double distance=1.2pt, thick, black!70},
+  eqv/.style={{Stealth[length=2.2mm]}-{Stealth[length=2.2mm]}, double, double distance=1.2pt, thick, black!70}]
+  \def\R{2.0}
+  \node[st] (a) at (90:\R)  {(a) $A$ invertible};
+  \node[st] (j) at (18:\R)  {(j) $CA = I$};
+  \node[st] (d) at (-54:\R) {(d) $A\mathbf{x} = \mathbf{0}$\\ only trivially};
+  \node[st] (c) at (-126:\R){(c) $n$ pivots};
+  \node[st] (b) at (162:\R) {(b) $A \sim I_n$};
+  \draw[imp] (a) -- (j); \draw[imp] (j) -- (d); \draw[imp] (d) -- (c);
+  \draw[imp] (c) -- (b); \draw[imp] (b) -- (a);
+  % k and g
+  \node[st, draw=figG, fill=figG!8] (k) at (4.6,2.7) {(k) $AD = I$};
+  \node[st, draw=figG, fill=figG!8] (g) at (4.6,0.9) {(g) $A\mathbf{x} = \mathbf{b}$\\ always solvable};
+  \draw[imp] (a.north east) -- (k.west); \draw[imp] (k) -- (g);
+  \draw[imp] (g.west) to[out=180, in=-20] (a.south east);
+  \node[st, draw=figO, fill=figO!8] (h) at (7.6,0.9) {(h) columns\\ span $\mathbb{R}^n$};
+  \node[st, draw=figO, fill=figO!8] (i) at (7.6,-0.9) {(i) $\mathbf{x} \mapsto A\mathbf{x}$\\ onto};
+  \draw[eqv] (g) -- (h); \draw[eqv] (h) -- (i);
+  % d e f
+  \node[st, draw=figO, fill=figO!8] (e) at (4.6,-2.5) {(e) columns\\ independent};
+  \node[st, draw=figO, fill=figO!8] (f) at (7.6,-2.5) {(f) $\mathbf{x} \mapsto A\mathbf{x}$\\ one-to-one};
+  \draw[eqv] (d) -- (e); \draw[eqv] (e) -- (f);
+  % l
+  \node[st, draw=figR, fill=figR!8] (l) at (-4.2,2.0) {(l) $A^T$ invertible};
+  \draw[eqv] (l) -- (a);
+  \node[font=\scriptsize, black!60, align=center] at (0,0) {the circle\\ (uses $A$ square)};
+\end{tikzpicture}

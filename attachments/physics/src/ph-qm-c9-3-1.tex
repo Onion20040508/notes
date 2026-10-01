@@ -1,0 +1,15 @@
+% Figure for Quantum Mechanics §C9.3 (linear Ritz method for H = p^2/2 + x^4 (hbar = m = 1) with the nested nonorthogonal basis of N even Gaussians exp(-a_k x^2), a = 0.9, 1.35, 0.6, 2.025, 0.4, 3.0375, 0.2667: relative error of the three lowest Ritz values against the exact even levels 0.667986, 4.696795, 10.244308; computed with scipy.linalg.eigh(H, S).)
+\begin{tikzpicture}[font=\small]
+  \begin{semilogyaxis}[nfig, width=9.5cm, height=6.4cm, xmin=0.6, xmax=7.4, ymin=3e-5, ymax=1,
+      xlabel={basis size $N$}, ylabel={$\varepsilon_k/E_k - 1$},
+      xtick={1,2,3,4,5,6,7},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1.02)}, anchor=south, rotate=-90}]
+    \addplot[figB, thick, mark=*, mark size=1.6pt] coordinates {(1,2.0203e-02) (2,1.9421e-02) (3,2.9974e-03) (4,1.0187e-03) (5,4.3032e-04) (6,1.0411e-04) (7,6.6237e-05)};
+    \addplot[figR, thick, mark=square*, mark size=1.5pt] coordinates {(2,2.3394e-02) (3,7.3838e-03) (4,4.1069e-03) (5,1.1981e-03) (6,8.1129e-04) (7,4.3361e-04)};
+    \addplot[figO, thick, mark=triangle*, mark size=2pt] coordinates {(3,4.0977e-01) (4,1.4772e-02) (5,1.4666e-02) (6,1.2799e-03) (7,9.0144e-04)};
+    \node[figB, font=\scriptsize, anchor=north east] at (axis cs:3.6,9e-4) {$k = 0$ (ground state)};
+    \node[figR, font=\scriptsize, anchor=south west] at (axis cs:5.1,1.4e-3) {$k = 1$};
+    \node[figO, font=\scriptsize, anchor=south] at (axis cs:4.5,2.2e-2) {$k = 2$};
+  \end{semilogyaxis}
+\end{tikzpicture}

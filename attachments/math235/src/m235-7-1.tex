@@ -1,0 +1,29 @@
+% Figure for Applied Linear Algebra §7.
+\begin{tikzpicture}[x={(-0.32cm,-0.26cm)}, y={(0.42cm,0cm)}, z={(0cm,0.42cm)}, >=Stealth, font=\scriptsize]
+  % ---- left: w in Span{u,v} ----
+  \begin{scope}
+    \fill[figB!12] (-1,-1,0) -- (6,-1,0) -- (6,8,0) -- (-1,8,0) -- cycle;
+    \draw[figB!40] (-1,-1,0) -- (6,-1,0) -- (6,8,0) -- (-1,8,0) -- cycle;
+    \draw[->, black!50] (0,0,0) -- (7,0,0) node[below left=-2pt] {$x_1$};
+    \draw[->, black!50] (0,0,0) -- (0,9,0) node[right] {$x_2$};
+    \draw[->, black!50] (0,0,0) -- (0,0,6) node[above] {$x_3$};
+    \draw[->, thick] (0,0,0) -- (3,1,0) node[left] {$\mathbf{u}$};
+    \draw[->, thick] (0,0,0) -- (1,6,0) node[above right=-2pt] {$\mathbf{v}$};
+    \draw[->, thick, figR] (0,0,0) -- (4,4,0) node[below] {$\mathbf{w}$};
+    \node[align=center, font=\small] at (10.2,4,0) {dependent: $\mathbf{w}\in\operatorname{Span}\{\mathbf{u},\mathbf{v}\}$};
+  \end{scope}
+  % ---- right: w not in Span{u,v} ----
+  \begin{scope}[shift={(0,15,0)}]
+    \fill[figB!12] (-1,-1,0) -- (6,-1,0) -- (6,8,0) -- (-1,8,0) -- cycle;
+    \draw[figB!40] (-1,-1,0) -- (6,-1,0) -- (6,8,0) -- (-1,8,0) -- cycle;
+    \draw[->, black!50] (0,0,0) -- (7,0,0) node[below left=-2pt] {$x_1$};
+    \draw[->, black!50] (0,0,0) -- (0,9,0) node[right] {$x_2$};
+    \draw[->, black!50] (0,0,0) -- (0,0,6) node[above] {$x_3$};
+    \draw[->, thick] (0,0,0) -- (3,1,0) node[left] {$\mathbf{u}$};
+    \draw[->, thick] (0,0,0) -- (1,6,0) node[above right=-2pt] {$\mathbf{v}$};
+    \draw[dashed, figR!60] (2,3,0) -- (2,3,4);
+    \fill[figR!60] (2,3,0) circle (1pt);
+    \draw[->, thick, figR] (0,0,0) -- (2,3,4) node[above] {$\mathbf{w}$};
+    \node[align=center, font=\small] at (10.2,4,0) {independent: $\mathbf{w}\notin\operatorname{Span}\{\mathbf{u},\mathbf{v}\}$};
+  \end{scope}
+\end{tikzpicture}

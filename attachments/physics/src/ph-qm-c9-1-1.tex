@@ -1,0 +1,19 @@
+% Figure for Quantum Mechanics §C9.1 (Sakurai Problem 5.15, Schiff's three-level matrix with E1 = 0, E2 = 1, a = b = g: the two levels that grow out of the degenerate pair. Exact eigenvalues 0 and (1 - sqrt(1 + 8 g^2))/2; second-order degenerate perturbation theory 0 and -2 g^2; naive nondegenerate second order -g^2 for both states.)
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9.5cm, height=6.2cm, xmin=0, xmax=0.32, ymin=-0.215, ymax=0.035,
+      xlabel={$g/(E_2 - E_1)$}, ylabel={$(E - E_1)/(E_2 - E_1)$},
+      xtick={0,0.1,0.2,0.3}, ytick={-0.2,-0.15,-0.1,-0.05,0},
+      yticklabel style={/pgf/number format/fixed},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1.02)}, anchor=south, rotate=-90}]
+    \addplot[figB, very thick, domain=0:0.32, samples=2] {0};
+    \addplot[figB, very thick, domain=0:0.32, samples=120] {(1-sqrt(1+8*x^2))/2};
+    \addplot[figR, thick, dashed, domain=0:0.32, samples=2] {0.0015};
+    \addplot[figR, thick, dashed, domain=0:0.32, samples=120] {-2*x^2};
+    \addplot[figO, thick, densely dotted, domain=0:0.32, samples=120] {-x^2};
+    \node[figB, font=\scriptsize, anchor=south east] at (axis cs:0.315,0.004) {exact $= E_1$ (state $\propto b^*|1\rangle - a^*|2\rangle$)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.01,-0.13) {exact};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.01,-0.155) {degenerate, 2nd order};
+    \node[figO, font=\scriptsize, anchor=west] at (axis cs:0.01,-0.18) {naive nondegenerate (both states)};
+  \end{axis}
+\end{tikzpicture}

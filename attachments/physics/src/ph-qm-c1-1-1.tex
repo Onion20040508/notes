@@ -1,0 +1,51 @@
+% Figure for Quantum Mechanics §C1.1 (sequential Stern–Gerlach arrangements (a)–(c); schematic, after Sakurai §1.1.2; fractions relative to the oven beam).
+\begin{tikzpicture}[>={Stealth[length=2mm]}, font=\small,
+  sg/.style={draw, thick, minimum width=1.25cm, minimum height=0.8cm, fill=black!5},
+  oven/.style={draw, thick, minimum width=0.9cm, minimum height=0.8cm, fill=figO!20},
+  beam/.style={->, thick, figB},
+  lost/.style={thick, figR}]
+  \newcommand{\blocked}[2]{\draw[lost] (#1) -- (#2); \draw[line width=2pt, black!70] ($(#2)+(0,0.16)$) -- ($(#2)-(0,0.16)$);}
+  % ---------- row (a)
+  \begin{scope}[yshift=0cm]
+    \node[font=\small\bfseries] at (-1.3,0) {(a)};
+    \node[oven] (o) at (0,0) {\scriptsize oven};
+    \node[sg] (s1) at (2.2,0) {SG$\hat{\mathbf z}$};
+    \draw[beam] (o.east) -- (s1.west);
+    \node[sg] (s2) at (5.2,0.35) {SG$\hat{\mathbf z}$};
+    \draw[beam] (s1.east) ++(0,0.2) -- node[above, font=\scriptsize, black] {$S_z+$, $\tfrac12$} (s2.west|-0,0.55);
+    \blocked{$(s1.east)+(0,-0.2)$}{$(s1.east)+(1.2,-0.55)$}
+    \node[font=\scriptsize, figR, anchor=west] at ($(s1.east)+(1.25,-0.55)$) {$S_z-$};
+    \draw[beam] (s2.east) ++(0,0.2) -- ++(1.4,0.35) node[right, font=\scriptsize, black] {$S_z+$, $\tfrac12$};
+    \node[font=\scriptsize, black!60, anchor=west] at ($(s2.east)+(0.25,-0.35)$) {no $S_z-$ beam};
+  \end{scope}
+  % ---------- row (b)
+  \begin{scope}[yshift=-2.1cm]
+    \node[font=\small\bfseries] at (-1.3,0) {(b)};
+    \node[oven] (o) at (0,0) {\scriptsize oven};
+    \node[sg] (s1) at (2.2,0) {SG$\hat{\mathbf z}$};
+    \draw[beam] (o.east) -- (s1.west);
+    \node[sg] (s2) at (5.2,0.35) {SG$\hat{\mathbf x}$};
+    \draw[beam] (s1.east) ++(0,0.2) -- node[above, font=\scriptsize, black] {$S_z+$, $\tfrac12$} (s2.west|-0,0.55);
+    \blocked{$(s1.east)+(0,-0.2)$}{$(s1.east)+(1.2,-0.55)$}
+    \node[font=\scriptsize, figR, anchor=west] at ($(s1.east)+(1.25,-0.55)$) {$S_z-$};
+    \draw[beam] (s2.east) ++(0,0.2) -- ++(1.4,0.35) node[right, font=\scriptsize, black] {$S_x+$, $\tfrac14$};
+    \draw[beam] (s2.east) ++(0,-0.2) -- ++(1.4,-0.35) node[right, font=\scriptsize, black] {$S_x-$, $\tfrac14$};
+  \end{scope}
+  % ---------- row (c)
+  \begin{scope}[yshift=-4.4cm]
+    \node[font=\small\bfseries] at (-1.3,0) {(c)};
+    \node[oven] (o) at (0,0) {\scriptsize oven};
+    \node[sg] (s1) at (2.2,0) {SG$\hat{\mathbf z}$};
+    \draw[beam] (o.east) -- (s1.west);
+    \node[sg] (s2) at (5.2,0.35) {SG$\hat{\mathbf x}$};
+    \draw[beam] (s1.east) ++(0,0.2) -- node[above, font=\scriptsize, black] {$S_z+$, $\tfrac12$} (s2.west|-0,0.55);
+    \blocked{$(s1.east)+(0,-0.2)$}{$(s1.east)+(1.2,-0.55)$}
+    \node[font=\scriptsize, figR, anchor=west] at ($(s1.east)+(1.25,-0.55)$) {$S_z-$};
+    \node[sg] (s3) at (8.3,0.7) {SG$\hat{\mathbf z}$};
+    \draw[beam] (s2.east) ++(0,0.2) -- node[above, font=\scriptsize, black] {$S_x+$, $\tfrac14$} (s3.west|-0,0.9);
+    \blocked{$(s2.east)+(0,-0.2)$}{$(s2.east)+(1.2,-0.55)$}
+    \node[font=\scriptsize, figR, anchor=west] at ($(s2.east)+(1.25,-0.55)$) {$S_x-$};
+    \draw[beam] (s3.east) ++(0,0.2) -- ++(1.3,0.35) node[right, font=\scriptsize, black] {$S_z+$, $\tfrac18$};
+    \draw[beam] (s3.east) ++(0,-0.2) -- ++(1.3,-0.35) node[right, font=\scriptsize, black] {$S_z-$, $\tfrac18$};
+  \end{scope}
+\end{tikzpicture}

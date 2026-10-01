@@ -1,0 +1,25 @@
+% Figure for Applied Linear Algebra §6.
+\begin{tikzpicture}[x=1cm, y=1cm, font=\scriptsize,
+    flow/.style={thick, figB, -{Stealth[length=6pt]}},
+    ext/.style={thick, black!70, -{Stealth[length=6pt]}}]
+  \coordinate (A) at (0,0); \coordinate (B) at (0,2); \coordinate (C) at (3,2); \coordinate (D) at (3,0);
+  % internal branches
+  \draw[flow] (A) -- node[below] {$x_1$} (D);
+  \draw[flow] (A) -- node[left] {$x_2$} (B);
+  \draw[flow] (C) -- node[above] {$x_4$} (B);
+  \draw[flow] (C) -- node[right] {$x_5$} (D);
+  % external branches
+  \draw[ext] (-2,0) -- node[above] {$300$} (A);
+  \draw[ext] (0,-1.3) -- node[left] {$500$} (A);
+  \draw[ext] (B) -- node[above] {$300$} (-2,2);
+  \draw[ext] (B) -- node[left] {$x_3$} (0,3.3);
+  \draw[ext] (3,3.3) -- node[right] {$100$} (C);
+  \draw[ext] (5,2) -- node[above] {$400$} (C);
+  \draw[ext] (D) -- node[above] {$600$} (5,0);
+  \foreach \p/\n/\pos in {A/A/below right, B/B/above right, C/C/above left, D/D/below left}
+    { \fill (\p) circle (2pt); \node[\pos=1pt, font=\small] at (\p) {$\n$}; }
+  \node[black!60, left] at (-2,0) {Pratt St.};
+  \node[black!60, left] at (-2,2) {Lombard St.};
+  \node[black!60, above] at (0,3.3) {Calvert St.};
+  \node[black!60, above] at (3,3.3) {South St.};
+\end{tikzpicture}

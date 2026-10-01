@@ -1,0 +1,19 @@
+% Figure for Quantum Mechanics §C1.3 (Example §C1.3.2: uncertainty product of S_x, S_y for spin-1/2 states |S.n;+>, PHY 511 HW 2 Problem 2; computed).
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.42\textwidth,
+  xmin=0, xmax=180, ymin=0, ymax=1.08,
+  xtick={0,45,90,135,180}, xticklabels={$0$,$\pi/4$,$\pi/2$,$3\pi/4$,$\pi$},
+  ytick={0,0.5,1},
+  xlabel={polar angle $\beta$ of $\hat{\mathbf n}$},
+  ylabel={$\sqrt{\langle(\Delta S_x)^2\rangle\langle(\Delta S_y)^2\rangle}\ \big/\ (\hbar^2/4)$},
+  ylabel style={font=\scriptsize},
+  legend style={font=\scriptsize, draw=none, fill=white, fill opacity=0.85, at={(0.5,1.02)}, anchor=south, legend columns=3},
+  samples=181, domain=0:180]
+  \addplot[figO, line width=1.1pt] {1 - 0.5*sin(x)^2};
+  \addlegendentry{$\alpha = \pi/4$}
+  \addplot[figB, line width=2.2pt, opacity=0.55] {abs(cos(x))};
+  \addlegendentry{$\alpha = 0$}
+  \addplot[figR, dashed, line width=1pt] {abs(cos(x))};
+  \addlegendentry{bound $\frac{\hbar}{2}\lvert\langle S_z\rangle\rvert$}
+\end{axis}
+\end{tikzpicture}

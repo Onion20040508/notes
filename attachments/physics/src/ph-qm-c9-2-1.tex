@@ -1,0 +1,21 @@
+% Figure for Quantum Mechanics §C9.2 (Sakurai Problem 5.19: Stark effect of the 2s_{1/2} and 2p_{1/2} levels of hydrogen with the Lamb shift delta = 1057.8 MHz; coupling sqrt(3) e E a0; energies in units of h*delta measured from 2p_{1/2}; field F in V/cm, x = F/477; exact, linear (degenerate) and quadratic (nondegenerate) approximations.)
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9.5cm, height=6.4cm, xmin=0, xmax=1500, ymin=-3.1, ymax=4.1,
+      xlabel={field $\mathcal E$ (V/cm)}, ylabel={$E/h\delta$},
+      xtick={0,500,1000,1500}, ytick={-3,-2,-1,0,1,2,3,4},
+      xlabel style={at={(axis description cs:1.0,-0.08)}, anchor=north east},
+      ylabel style={at={(axis description cs:0,1.02)}, anchor=south, rotate=-90}]
+    \addplot[figB, very thick, domain=0:1500, samples=150] {0.5+sqrt(0.25+(x/477.3)^2)};
+    \addplot[figB, very thick, domain=0:1500, samples=150] {0.5-sqrt(0.25+(x/477.3)^2)};
+    \addplot[figR, thick, dashed, domain=0:1500, samples=2] {0.5+x/477.3};
+    \addplot[figR, thick, dashed, domain=0:1500, samples=2] {0.5-x/477.3};
+    \addplot[figO, thick, densely dotted, domain=0:820, samples=100] {1+(x/477.3)^2};
+    \addplot[figO, thick, densely dotted, domain=0:820, samples=100] {-(x/477.3)^2};
+    \node[font=\scriptsize, anchor=east] at (axis cs:-15,1) {$2s_{1/2}$};
+    \node[font=\scriptsize, anchor=east] at (axis cs:-15,0) {$2p_{1/2}$};
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:1120,2.55) {exact};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:900,0.3) {linear: $\tfrac12 \pm \sqrt3\,e\mathcal E a_0/h\delta$};
+    \node[figO, font=\scriptsize, anchor=east] at (axis cs:700,3.6) {quadratic};
+    \node[figO, font=\scriptsize, anchor=west] at (axis cs:560,-2.4) {quadratic};
+  \end{axis}
+\end{tikzpicture}

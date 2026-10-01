@@ -1,0 +1,20 @@
+% Figure for Applied Linear Algebra §27.
+\begin{tikzpicture}[>=Stealth, x={(-0.8cm,-0.6cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}, scale=1.2]
+  % plane through origin: x3 = -0.3 x1 + 0.1 x2
+  \fill[figB!14] (-1.4,-1.6,0.26) -- (1.6,-1.6,-0.64) -- (1.6,1.6,-0.32) -- (-1.4,1.6,0.58) -- cycle;
+  \draw[figB, thick] (-1.4,-1.6,0.26) -- (1.6,-1.6,-0.64) -- (1.6,1.6,-0.32) -- (-1.4,1.6,0.58) -- cycle;
+  % axes
+  \draw[->, black!70] (0,0,0) -- (2.2,0,0) node[below left=-2pt, font=\small] {$x_1$};
+  \draw[->, black!70] (0,0,0) -- (0,2.4,0) node[right, font=\small] {$x_2$};
+  \draw[->, black!70] (0,0,0) -- (0,0,2.1) node[above, font=\small] {$x_3$};
+  \draw[black!40, dashed] (0,0,0) -- (-1.2,0,0);
+  \draw[black!40, dashed] (0,0,0) -- (0,-1.6,0);
+  \draw[black!40, dashed] (0,0,0) -- (0,0,-1.1);
+  % line through origin, direction (-0.5,0.6,1)
+  \draw[figR, very thick] (0.75,-0.9,-1.5) -- (-1.0,1.2,2.0);
+  \fill (0,0,0) circle (1.5pt);
+  \node[font=\scriptsize, left] at (0,-0.02,0.12) {$\mathbf{0}$};
+  \node[font=\small, figR, right] at (-1.0,1.2,2.0) {1-dim: a line through $\mathbf{0}$};
+  \node[font=\small, figB, right] at (1.6,1.6,-0.32) {2-dim: a plane through $\mathbf{0}$};
+  \node[font=\small, black!80, align=left, anchor=west] at (0,2.4,-0.9) {0-dim: only $\{\mathbf{0}\}$\\ 3-dim: only $\mathbb{R}^3$ itself};
+\end{tikzpicture}

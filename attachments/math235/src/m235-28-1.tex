@@ -1,0 +1,31 @@
+% Figure for Applied Linear Algebra §28.
+\begin{tikzpicture}[>=Stealth, x={(-0.7cm,-0.55cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}, scale=1.1]
+  % ---------- domain ----------
+  \begin{scope}
+    \fill[figB!14] (-1.3,0,-1.3) -- (1.5,0,-1.3) -- (1.5,0,1.4) -- (-1.3,0,1.4) -- cycle;
+    \draw[figB, thick] (-1.3,0,-1.3) -- (1.5,0,-1.3) -- (1.5,0,1.4) -- (-1.3,0,1.4) -- cycle;
+    \draw[->, black!70] (0,0,0) -- (2.0,0,0) node[below left=-2pt, font=\small] {$x_1$};
+    \draw[->, black!70] (0,0,0) -- (0,0,1.9) node[above, font=\small] {$x_3$};
+    \draw[figR, very thick] (0,-1.5,0) -- (0,1.9,0);
+    \draw[->, black!70] (0,1.9,0) -- (0,2.2,0) node[right, font=\small] {$x_2$};
+    \fill (0,0,0) circle (1.4pt);
+    \node[font=\small, figB] at (0.9,0,-0.8) {$\operatorname{Row} A$};
+    \node[font=\small, figR, above] at (0,1.35,0.02) {$\operatorname{Nul} A$};
+    \node at (1.6,1.4,-2.0) {$\mathbb{R}^3$};
+  \end{scope}
+  % ---------- arrow ----------
+  \draw[->, thick, black!75] (0,2.4,1.6) to[bend left=15] node[above, font=\small] {$\mathbf{x} \mapsto A\mathbf{x}$} (0,4.6,1.6);
+  % ---------- codomain ----------
+  \begin{scope}[shift={(0,6.6,0)}]
+    \fill[figB!14] (-1.8,-1.8,-1.3) -- (1.9,1.9,-1.3) -- (1.9,1.9,1.4) -- (-1.8,-1.8,1.4) -- cycle;
+    \draw[figB, thick] (-1.8,-1.8,-1.3) -- (1.9,1.9,-1.3) -- (1.9,1.9,1.4) -- (-1.8,-1.8,1.4) -- cycle;
+    \draw[->, black!70] (0,0,0) -- (2.0,0,0) node[below left=-2pt, font=\small] {$x_1$};
+    \draw[->, black!70] (0,0,0) -- (0,1.9,0) node[right, font=\small] {$x_2$};
+    \draw[->, black!70] (0,0,0) -- (0,0,1.9) node[above, font=\small] {$x_3$};
+    \draw[figR, very thick] (-1.1,1.1,0) -- (1.3,-1.3,0);
+    \fill (0,0,0) circle (1.4pt);
+    \node[font=\small, figB] at (1.6,1.6,0.3) {$\operatorname{Col} A$};
+    \node[font=\small, figR, below] at (1.3,-1.3,0) {$\operatorname{Nul} A^T$};
+    \node at (1.6,1.4,-2.0) {$\mathbb{R}^3$};
+  \end{scope}
+\end{tikzpicture}

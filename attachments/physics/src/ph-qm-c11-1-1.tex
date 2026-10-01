@@ -1,0 +1,45 @@
+% Figure for Quantum Mechanics §C11.1 (Theorem §C11.1.5: the Bloch ball of spin-1/2 density operators rho = (1 + b.sigma)/2). Orthographic view, azimuth 25 deg, elevation 20 deg: u = -x sin25 + y cos25, v = z cos20 - (x cos25 + y sin25) sin20. Pure states on the surface (|z+>, |x+>, |y->); the completely random ensemble at the centre; Example §C11.1.1 (Sakurai Problem 3.12): mixtures a|z+><z+| + (1-a)|y-><y-| lie on the chord from y- (a = 0) to z+ (a = 1); the point a = 1/2 at b = (0,-1/2,1/2), |b| = 0.707, with its eigen-decomposition along +-n (n = b/|b|): weights (1 +- 0.707)/2 = 0.854, 0.146. Sakurai Example 4 (75:25 of z+ and x+): b = (1/4, 0, 3/4). Computed.
+\begin{tikzpicture}[font=\small, >={Stealth[length=2mm]}, x=1cm, y=1cm]
+  \def\R{2.6}
+  \newcommand\Pt[3]{({\R*(-(#1)*0.4226+(#2)*0.9063)},{\R*((#3)*0.9397-((#1)*0.9063+(#2)*0.4226)*0.3420)})}
+  \shade[ball color=figB!12, opacity=0.6] (0,0) circle (\R);
+  \draw[thick, figB!70] (0,0) circle (\R);
+  % equator: u = R sin(t-25), v = -R cos(t-25) sin20 ; front for |t-25|<90
+  \draw[figB!60, thin, domain=-65:115, samples=60] plot ({\R*sin(\x-25)}, {-0.3420*\R*cos(\x-25)});
+  \draw[figB!60, thin, dashed, domain=115:295, samples=60] plot ({\R*sin(\x-25)}, {-0.3420*\R*cos(\x-25)});
+  % axes (inside dashed, outside solid)
+  \draw[black!40, thin, dashed] \Pt{0}{0}{0} -- \Pt{0}{0}{1};
+  \draw[->, black!60, thin] \Pt{0}{0}{1} -- \Pt{0}{0}{1.25} node[above] {$b_z$};
+  \draw[black!40, thin, dashed] \Pt{0}{0}{0} -- \Pt{0}{1}{0};
+  \draw[->, black!60, thin] \Pt{0}{1}{0} -- \Pt{0}{1.3}{0} node[right] {$b_y$};
+  \draw[black!40, thin, dashed] \Pt{0}{0}{0} -- \Pt{1}{0}{0};
+  \draw[->, black!60, thin] \Pt{1}{0}{0} -- \Pt{1.45}{0}{0} node[below left] {$b_x$};
+  \draw[black!30, thin, dashed] \Pt{0}{0}{0} -- \Pt{0}{-1}{0};
+  % centre
+  \fill[black] (0,0) circle (1.8pt);
+  \node[font=\scriptsize, anchor=west] at (0.08,-0.22) {$\rho = \tfrac12\mathbf 1$};
+  % Sakurai Example 4: chord z+ -> x+, point b = (1/4,0,3/4)
+  \draw[figG, thick] \Pt{0}{0}{1} -- \Pt{1}{0}{0};
+  \fill[figG] \Pt{0.25}{0}{0.75} circle (2.4pt);
+  \node[figG, font=\scriptsize, anchor=west] at \Pt{0.25}{0.07}{0.75} {$\tfrac34\,z{+} + \tfrac14\,x{+}$};
+  % Problem 3.12 chord y- -> z+
+  \draw[figR, very thick] \Pt{0}{-1}{0} -- \Pt{0}{0}{1};
+  \fill[figR] \Pt{0}{-0.5}{0.5} circle (2.4pt);
+  \node[figR, font=\scriptsize, anchor=north west] at \Pt{0}{-0.47}{0.44} {$a = \tfrac12$};
+  % eigen-decomposition diameter along n = (0,-1,1)/sqrt2
+  \draw[figR!70, thin, densely dashed] \Pt{0}{-0.7071}{0.7071} -- \Pt{0}{0.7071}{-0.7071};
+  \fill[figR!70] \Pt{0}{-0.7071}{0.7071} circle (1.6pt);
+  \node[figR, font=\scriptsize, anchor=south east] at \Pt{0}{-0.72}{0.74} {$+\hat{\mathbf n}$: weight $0.854$};
+  \fill[figR!70] \Pt{0}{0.7071}{-0.7071} circle (1.6pt);
+  \node[figR, font=\scriptsize, anchor=north west] at \Pt{0}{0.72}{-0.74} {$-\hat{\mathbf n}$: weight $0.146$};
+  % pure states
+  \fill[figB] \Pt{0}{0}{1} circle (2.2pt);
+  \node[figB, anchor=south west] at \Pt{0}{0.05}{1.02} {$|S_z;+\rangle$};
+  \fill[figB] \Pt{0}{-1}{0} circle (2.2pt);
+  \node[figB, anchor=east] at \Pt{0}{-1.03}{0} {$|S_y;-\rangle$};
+  \fill[figB] \Pt{1}{0}{0} circle (2.2pt);
+  \node[figB, anchor=west] at \Pt{1}{0.08}{-0.02} {$|S_x;+\rangle$};
+  % legend
+  \node[font=\scriptsize, align=left, anchor=west] at (\R+0.4,1.6) {surface, $|\mathbf b| = 1$: pure\\[1pt] interior, $|\mathbf b| < 1$: mixed\\[1pt] $\operatorname{tr}\rho^2 = \tfrac12(1 + |\mathbf b|^2)$};
+  \node[font=\scriptsize, figR, align=left, anchor=west] at (\R+0.4,0.35) {red chord: $a\,|S_z;+\rangle\langle S_z;+|$\\ $\quad + (1 - a)\,|S_y;-\rangle\langle S_y;-|$};
+\end{tikzpicture}

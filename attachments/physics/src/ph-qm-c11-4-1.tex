@@ -1,0 +1,27 @@
+% Figure for Quantum Mechanics §C11.4★ (Theorem §C11.4.1, Theorem §C11.4.3, Example §C11.4.1). (a) Spin correlation E(a,b) = <(sigma1.a)(sigma2.b)> against the angle eta between the analyzers: singlet -cos(eta) (Griffiths eq. (12.4)) versus the local "baseball" model of Griffiths Problem 12.3, -1 + 2 eta/pi; they agree at eta = 0, pi/2, pi. (b) Wigner's form of Bell's inequality for coplanar a, b with c bisecting (Sakurai eqs. (3.438)-(3.441)): left side sin^2(theta) (= sin^2(theta_ab/2), theta_ab = 2 theta) against the right side 2 sin^2(theta/2); violated (shaded) for 0 < theta < pi/2, by cos(theta)(1 - cos(theta)), largest (1/4) at theta = pi/3; at theta = pi/4: 0.500 > 0.293. Computed.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=A, width=7.4cm, height=5.6cm, xmin=0, xmax=3.1416, ymin=-1.1, ymax=1.1,
+      xtick={0,0.7854,1.5708,2.3562,3.1416}, xticklabels={$0$,$\frac\pi4$,$\frac\pi2$,$\frac{3\pi}4$,$\pi$},
+      ytick={-1,-0.5,0,0.5,1}, xlabel={$\eta$ (angle between $\hat{\mathbf a}$ and $\hat{\mathbf b}$)}, ylabel={$E(\hat{\mathbf a},\hat{\mathbf b})$},
+      title={(a) correlation of the two results}, title style={font=\small},
+      legend style={draw=none, fill=none, font=\scriptsize, at={(0.02,0.98)}, anchor=north west}]
+    \draw[black!40, thin] (axis cs:0,0) -- (axis cs:3.1416,0);
+    \addplot[figB, very thick, domain=0:3.1416, samples=120] {-cos(deg(x))};
+    \addplot[figR, thick, dashed, domain=0:3.1416, samples=2] {-1 + 2*x/pi};
+    \legend{singlet: $-\cos\eta$, local model: $-1 + 2\eta/\pi$}
+    \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(0,-1) (1.5708,0) (3.1416,1)};
+  \end{axis}
+  \begin{axis}[nfig, at={(A.east)}, anchor=west, xshift=1.6cm, width=7.4cm, height=5.6cm, xmin=0, xmax=3.1416, ymin=0, ymax=2.15,
+      xtick={0,0.7854,1.0472,1.5708,2.3562,3.1416}, xticklabels={$0$,$\frac\pi4$,$\frac\pi3$,$\frac\pi2$,$\frac{3\pi}4$,$\pi$},
+      ytick={0,0.5,1,1.5,2}, xlabel={$\theta = \theta_{ac} = \theta_{cb}$, \ $\theta_{ab} = 2\theta$},
+      title={(b) Bell's inequality, Wigner's form}, title style={font=\small},
+      legend style={draw=none, fill=none, font=\scriptsize, at={(0.02,0.98)}, anchor=north west}]
+    \addplot[name path=L, figB, very thick, domain=0:3.1416, samples=150] {sin(deg(x))^2};
+    \addplot[name path=Rr, figR, thick, dashed, domain=0:3.1416, samples=150] {2*sin(deg(x/2))^2};
+    \addplot[figO!45, opacity=0.6] fill between[of=L and Rr, soft clip={domain=0:1.5708}];
+    \legend{QM, left: $\sin^2\theta$, QM, right: $2\sin^2\frac\theta2$}
+    \draw[black!55, thin, densely dotted] (axis cs:0.7854,0.2929) -- (axis cs:0.7854,0.5);
+    \node[font=\scriptsize, anchor=west] at (axis cs:0.80,0.40) {$0.500 > 0.293$};
+    \node[font=\scriptsize, anchor=south, figO!80!black] at (axis cs:0.9,0.78) {violated};
+  \end{axis}
+\end{tikzpicture}

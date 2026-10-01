@@ -1,0 +1,16 @@
+% Figure for Applied Linear Algebra §5.
+\begin{tikzpicture}[x=1cm, y=1cm, >=Stealth, font=\scriptsize]
+  \draw[->, black!60] (-1.2,0) -- (6.2,0);
+  \draw[->, black!60] (0,-0.9) -- (0,3.4);
+  % homogeneous line through 0, direction v=(2,0.6)
+  \draw[thick, black] (-1.2,-0.36) -- (5.8,1.74) node[right] {$A\mathbf{x}=\mathbf{0}$};
+  % translated line through p=(0.9,1.35)
+  \draw[thick, figB] (-1.0,0.78) -- (5.8,2.82) node[right] {$A\mathbf{x}=\mathbf{b}$};
+  \fill (0,0) circle (1.4pt) node[below left] {$\mathbf{0}$};
+  \draw[->, thick, figR] (0,0) -- (0.9,1.35) node[above left=-1pt] {$\mathbf{p}$};
+  \draw[->, thick, black] (0,0) -- (2,0.6) node[below=1pt] {$\mathbf{v}$};
+  \fill (3.6,1.08) circle (1.4pt) node[below right=-1pt] {$t\mathbf{v}$};
+  \fill[figB] (4.5,2.43) circle (1.4pt) node[above left=-1pt] {$\mathbf{p}+t\mathbf{v}$};
+  \draw[->, dashed, figR] (3.6,1.08) -- (4.48,2.38);
+  \fill[figB] (0.9,1.35) circle (1.4pt);
+\end{tikzpicture}

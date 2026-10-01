@@ -1,0 +1,19 @@
+% Figure for Quantum Mechanics §C9.2 (Breit-Rabi diagram of the hydrogen ground state, Sakurai Problem 5.40: H = A S_e.S_p + 2 mu_B B S_ez/hbar, proton Zeeman term neglected; energies in units of the zero-field splitting Delta E = A hbar^2 = 5.87 micro-eV; B in mT with x = 2 mu_B B / Delta E = B/(50.7 mT).)
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9.5cm, height=6.6cm, xmin=0, xmax=150, ymin=-2.0, ymax=2.0,
+      xlabel={$B$ (mT)}, ylabel={$E/\Delta E$},
+      xtick={0,50,100,150}, ytick={-2,-1.5,-1,-0.5,0,0.5,1,1.5,2},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1.02)}, anchor=south, rotate=-90}]
+    \addplot[figB, very thick, domain=0:150, samples=2] {0.25+x/(2*50.74)};
+    \addplot[figB, very thick, domain=0:150, samples=2] {0.25-x/(2*50.74)};
+    \addplot[figR, very thick, domain=0:150, samples=120] {-0.25+0.5*sqrt(1+(x/50.74)^2)};
+    \addplot[figR, very thick, domain=0:150, samples=120] {-0.25-0.5*sqrt(1+(x/50.74)^2)};
+    \node[font=\scriptsize, anchor=east] at (axis cs:-3,0.25) {$F = 1$};
+    \node[font=\scriptsize, anchor=east] at (axis cs:-3,-0.75) {$F = 0$};
+    \node[figB, font=\scriptsize, anchor=south east] at (axis cs:148,1.72) {$|{\uparrow\uparrow}\rangle$, $M_F = 1$};
+    \node[figR, font=\scriptsize, anchor=north west] at (axis cs:95,0.78) {$M_F = 0$};
+    \node[figB, font=\scriptsize, anchor=north east] at (axis cs:148,-1.27) {$|{\downarrow\downarrow}\rangle$, $M_F = -1$};
+    \node[figR, font=\scriptsize, anchor=north west] at (axis cs:55,-1.5) {$M_F = 0$};
+  \end{axis}
+\end{tikzpicture}

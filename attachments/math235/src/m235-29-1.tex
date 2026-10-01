@@ -1,0 +1,40 @@
+% Figure for Applied Linear Algebra §29.
+\begin{tikzpicture}[>=Stealth, scale=0.62]
+  % ---------- B grid ----------
+  \begin{scope}
+    \clip (-4.2,-2.4) rectangle (8.6,3.4);
+    \foreach \i in {-6,...,6} {
+      \draw[black!22] ($(0,0)+\i*(-3.4,1.8)+(-10*2.6,10*0.2)$) -- ($(0,0)+\i*(-3.4,1.8)+(10*2.6,-10*0.2)$);
+    }
+    \foreach \i in {-6,...,6} {
+      \draw[black!22] ($\i*(2.6,-0.2)+(-10*-3.4,-10*1.8)$) -- ($\i*(2.6,-0.2)+(10*-3.4,10*1.8)$);
+    }
+    \fill[figB!15] (0,0) -- (7.8,-0.6) -- (4.4,1.2) -- (-3.4,1.8) -- cycle;
+    \draw[figB!70, thin] (0,0) -- (7.8,-0.6) -- (4.4,1.2) -- (-3.4,1.8) -- cycle;
+  \end{scope}
+  \draw[->, thick, figB] (0,0) -- (2.6,-0.2) node[below, font=\small] {$\mathbf{b}_1$};
+  \draw[->, thick, figB] (0,0) -- (-3.4,1.8) node[above, font=\small] {$\mathbf{b}_2$};
+  \node[font=\small, figB, below] at (7.8,-0.6) {$3\mathbf{b}_1$};
+  \draw[->, very thick, figR] (0,0) -- (4.4,1.2) node[above right=-2pt, font=\small] {$\mathbf{x}$};
+  \fill (0,0) circle (1.6pt) node[below left=-1pt, font=\scriptsize] {$\mathbf{0}$};
+  \node[font=\small] at (2.2,-3.0) {$[\mathbf{x}]_{\mathcal B} = (3, 1)$};
+  % ---------- C grid ----------
+  \begin{scope}[xshift=14.2cm]
+    \begin{scope}
+      \clip (-4.2,-2.4) rectangle (8.6,3.4);
+      \foreach \i in {-25,...,25} {
+        \draw[black!22] ($\i*(0.2,0.6)+(-20*0.6,20*0.2)$) -- ($\i*(0.2,0.6)+(20*0.6,-20*0.2)$);
+        \draw[black!22] ($\i*(0.6,-0.2)+(-20*0.2,-20*0.6)$) -- ($\i*(0.6,-0.2)+(20*0.2,20*0.6)$);
+      }
+      \fill[figB!15] (0,0) -- (3.6,-1.2) -- (4.4,1.2) -- (0.8,2.4) -- cycle;
+      \draw[figB!70, thin] (0,0) -- (3.6,-1.2) -- (4.4,1.2) -- (0.8,2.4) -- cycle;
+    \end{scope}
+    \draw[->, thick, figB] (0,0) -- (0.6,-0.2) node[below, font=\small] {$\mathbf{c}_1$};
+    \draw[->, thick, figB] (0,0) -- (0.2,0.6) node[left, font=\small] {$\mathbf{c}_2$};
+    \node[font=\small, figB, below] at (3.6,-1.2) {$6\mathbf{c}_1$};
+    \node[font=\small, figB, above] at (0.8,2.4) {$4\mathbf{c}_2$};
+    \draw[->, very thick, figR] (0,0) -- (4.4,1.2) node[above right=-2pt, font=\small] {$\mathbf{x}$};
+    \fill (0,0) circle (1.6pt) node[below left=-1pt, font=\scriptsize] {$\mathbf{0}$};
+    \node[font=\small] at (2.2,-3.0) {$[\mathbf{x}]_{\mathcal C} = (6, 4)$};
+  \end{scope}
+\end{tikzpicture}
