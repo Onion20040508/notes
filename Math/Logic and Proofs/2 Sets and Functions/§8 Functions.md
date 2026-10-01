@@ -78,7 +78,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 > The formula $x \mapsto x^2$ gives four different functions:
 >
 > $$
-> f_1 : \R \to \R, \qquad f_2 : \R^{\ge 0} \to \R, \qquad f_3 : \R \to \R^{\ge 0}, \qquad f_4 : \R^{\ge 0} \to \R^{\ge 0}, \qquad f_i(x) = x^2 .
+> f_1 : \R \to \R, \qquad f_2 : \R^{\geq} \to \R, \qquad f_3 : \R \to \R^{\geq}, \qquad f_4 : \R^{\geq} \to \R^{\geq}, \qquad f_i(x) = x^2 .
 > $$
 >
 > They are distinct because the domain and codomain are part of a function. They also have different properties ([[§9 Injections, Surjections and Bijections#^ex-9-1|Example §9.1]]): only $f_4$ is a bijection.
@@ -105,7 +105,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 ^ex-8-4
 
 > [!example] Example §8.5: Piecewise Definitions Must Be Well-Defined
-> **(a)** The **modulus** function $\R \to \R$ is
+> **(a)** The **modulus** function $\R \to \R$ (the absolute value of [[§1 The Language of Mathematics#^def-1-4|Def. §1.4]], viewed as a function) is
 >
 > $$
 > |x| = \begin{cases} x & x \ge 0, \\ -x & x \le 0. \end{cases}
@@ -140,7 +140,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 > [!definition] Definition §8.4: Restriction
 > Let $f : X \to Y$ and $A \subseteq X$. The **restriction** of $f$ to $A$ is the function $f|A : A \to Y$ given by $(f|A)(a) = f(a)$ for all $a \in A$.
 >
-> For example, in [[§8 Functions#^ex-8-2|Example §8.2]] $f_1|\{a, b\} = f_2|\{a, b\}$ is the constant function with value $d$; in [[§8 Functions#^ex-8-3|Example §8.3]] $f_2 = f_1|\R^{\ge 0}$ and $f_4 = f_3|\R^{\ge 0}$; in [[§8 Functions#^ex-8-4|Example §8.4]] $f_2|(\R - \{1\}) = f_4|(\R - \{1\}) = f_1$.
+> For example, in [[§8 Functions#^ex-8-2|Example §8.2]] $f_1|\{a, b\} = f_2|\{a, b\}$ is the constant function with value $d$; in [[§8 Functions#^ex-8-3|Example §8.3]] $f_2 = f_1|\R^{\geq}$ and $f_4 = f_3|\R^{\geq}$; in [[§8 Functions#^ex-8-4|Example §8.4]] $f_2|(\R - \{1\}) = f_4|(\R - \{1\}) = f_1$.
 >
 > *Eccles: Definition 8.1.11; Examples 8.1.12*
 
@@ -288,7 +288,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 > \operatorname{Im} f = \{f(x) \mid x \in X\} \subseteq Y .
 > $$
 >
-> So $f$ gives a constructive definition of the set $\operatorname{Im} f$ ([[§6 The Language of Set Theory#^def-6-3|Def. §6.3]]). For example, $x \mapsto x^2$ on $\R$ has image $\R^{\ge 0}$; in particular $-1 \notin \operatorname{Im} f$.
+> So $f$ gives a constructive definition of the set $\operatorname{Im} f$ ([[§6 The Language of Set Theory#^def-6-2|Def. §6.2]]). For example, $x \mapsto x^2$ on $\R$ has image $\R^{\geq}$; in particular $-1 \notin \operatorname{Im} f$.
 >
 > *Eccles: Definition 8.4.1*
 
@@ -345,7 +345,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 
 ^pf-8-2
 
-*Uses:* [[§8 Functions#^def-8-10|Def. §8.10]], [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-1|Def. §8.1]], [[§7 Quantifiers#^def-7-5|Def. §7.5]]
+*Uses:* [[§8 Functions#^def-8-10|Def. §8.10]], [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-1|Def. §8.1]], [[§7 Quantifiers#^def-7-4|Def. §7.4]]
 
 > [!remark] Remark: A Function Is Its Graph
 > Definition §8.1 rests on the undefined word "assignment". In more advanced mathematics a function $X \to Y$ is *defined* to be a subset of $X \times Y$ in which each element of $X$ occurs as the first coordinate of exactly one element; by Proposition §8.2 this captures exactly the same objects, and it reduces functions to sets.

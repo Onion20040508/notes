@@ -19,7 +19,7 @@ Many counting problems ask for the number of functions between two finite sets, 
 If $X$ is a set of people and $Y$ the dishes on a menu, a function $X \to Y$ is an order for the table; if $S$ is a set of students and $T$ a set of tutors, a function $S \to T$ assigns a tutor to each student.
 
 > [!example] Example §12.1: Functions from a 3-Set to a 2-Set
-> Let $X = \{a, b, c\}$ and $Y = \{d, e\}$. A function $f : X \to Y$ is given by listing $f(a)$, $f(b)$, $f(c)$; each can be chosen in $2$ ways, so there are $2 \times 2 \times 2 = 8$ functions (they are listed in Eccles Example 8.1.3, [[§8 Functions|§8]]).
+> Let $X = \{a, b, c\}$ and $Y = \{d, e\}$. A function $f : X \to Y$ is given by listing $f(a)$, $f(b)$, $f(c)$; each can be chosen in $2$ ways, so there are $2 \times 2 \times 2 = 8$ functions (they are listed in [[§8 Functions#^ex-8-2|Example §8.2]]).
 >
 > *Eccles: Example 12.1.1*
 
@@ -145,7 +145,7 @@ When $m = n$ an injection $X \to Y$ is automatically a bijection ([[§11 Propert
 
 ## 12.2 Counting Sets of Subsets
 
-Recall (Eccles Definition 6.3.1, [[§6 The Language of Set Theory|§6]]) that the **power set** of $X$ is the set of its subsets, $\mathcal{P}(X) = \{ A \mid A \subseteq X \}$.
+Recall ([[§6 The Language of Set Theory#^def-6-9|Definition §6.9]]) that the **power set** of $X$ is the set of its subsets, $\mathcal{P}(X) = \{ A \mid A \subseteq X \}$.
 
 > [!theorem] Proposition §12.4: The Size of the Power Set
 > If $X$ is a finite set with $|X| = n$, then $\mathcal{P}(X)$ is finite and
@@ -211,7 +211,7 @@ For infinite sets the comparison of $X$ with $\mathcal{P}(X)$ survives as Cantor
 
 ^def-12-5
 
-The number does not depend on which $n$-element set $X$ is used. If $|X_1| = |X_2|$, there is a bijection $f : X_1 \to X_2$ ([[§10 Counting#^prop-10-3|Proposition §10.3]]); it restricts to a bijection $A \to f(A)$ for each subset $A$, so $|f(A)| = |A|$, and $A \mapsto f(A)$ is a bijection $\mathcal{P}_r(X_1) \to \mathcal{P}_r(X_2)$ with inverse $B \mapsto f^{-1}(B)$ (the induced maps of Eccles Definition 9.3.1, [[§9 Injections, Surjections and Bijections|§9]]).
+The number does not depend on which $n$-element set $X$ is used. If $|X_1| = |X_2|$, there is a bijection $f : X_1 \to X_2$ ([[§10 Counting#^prop-10-3|Proposition §10.3]]); it restricts to a bijection $A \to f(A)$ for each subset $A$, so $|f(A)| = |A|$, and $A \mapsto f(A)$ is a bijection $\mathcal{P}_r(X_1) \to \mathcal{P}_r(X_2)$ with inverse $B \mapsto f^{-1}(B)$ (images and pre-images of subsets, [[§9 Injections, Surjections and Bijections#^def-9-4|Definition §9.4]]).
 
 > [!example] Example §12.2: The Subsets of a 4-Set
 > For $X = \{a, b, c, d\}$:

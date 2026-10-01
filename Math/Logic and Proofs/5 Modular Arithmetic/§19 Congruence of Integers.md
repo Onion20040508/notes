@@ -163,11 +163,11 @@ The introduction described congruence as "same remainder on division by $m$". We
 ^prop-19-4
 
 > [!proof]+ Proof
-> For $r \in R_m$, $\ a \equiv r \pmod m$ means $a = mq + r$ for some $q \in \mathbb{Z}$. By the division theorem there are unique $q, r$ with $a = mq + r$ and $0 \leq r < m$; so such an $r$ exists, and it is unique (if $a = mq + r = mq' + r'$ with $r, r' \in R_m$, uniqueness in the division theorem gives $r = r'$).
+> For $r \in R_m$, $\ a \equiv r \pmod m$ means $a = mq + r$ for some $q \in \mathbb{Z}$. By the division theorem ([[§15 The Division Theorem#^thm-15-1|Theorem §15.1]]) there are unique $q, r$ with $a = mq + r$ and $0 \leq r < m$; so such an $r$ exists, and it is unique (if $a = mq + r = mq' + r'$ with $r, r' \in R_m$, uniqueness in the division theorem gives $r = r'$).
 
 ^pf-19-4
 
-*Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]], [[§19 Congruence of Integers#^def-19-2|Def. §19.2]], [[§15 The Division Theorem|§15]] (the division theorem, Eccles 15.1.1)
+*Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]], [[§19 Congruence of Integers#^def-19-2|Def. §19.2]], [[§15 The Division Theorem#^thm-15-1|§15.1]]
 
 > [!definition] Definition §19.3: The Remainder Map
 > The **remainder map** $r_m : \mathbb{Z} \to R_m$ is defined by
@@ -237,7 +237,7 @@ The language of congruence shortens earlier case-by-case arguments: an integer i
 > |---|---|---|---|---|
 > | $a^2 \bmod 4$ | $0$ | $1$ | $4 \equiv 0$ | $9 \equiv 1$ |
 >
-> So every square is $\equiv 0$ or $1 \pmod 4$, and $a^2 + b^2 \equiv 0, 1$ or $2 \pmod 4$, never $3$. Suppose for contradiction that $a^2 + b^2 = 1234567$. Since $1234567 = 4 \times 308641 + 3 \equiv 3 \pmod 4$, this gives $a^2 + b^2 \equiv 3 \pmod 4$, a contradiction.
+> So every square is $\equiv 0$ or $1 \pmod 4$ (the congruence form of [[§15 The Division Theorem#^ex-15-7|Example §15.7]]), and $a^2 + b^2 \equiv 0, 1$ or $2 \pmod 4$, never $3$. Suppose for contradiction that $a^2 + b^2 = 1234567$. Since $1234567 = 4 \times 308641 + 3 \equiv 3 \pmod 4$, this gives $a^2 + b^2 \equiv 3 \pmod 4$, a contradiction.
 >
 > (b) *For all integers $a, b$: $a^2 + b^2 \equiv 0, 1, 2, 4$ or $5 \pmod 8$; hence $a^2 + b^2 = 12345790$ has no integer solutions.* The squares of $0, 1, \ldots, 7$ are $\equiv 0, 1, 4, 1, 0, 1, 4, 1 \pmod 8$, so every square is $\equiv 0, 1$ or $4$. The sums of two of these are $0, 1, 2, 4, 5, 8 \equiv 0$, i.e. $a^2 + b^2 \equiv 0, 1, 2, 4$ or $5$. But $12345790 = 8 \times 1543223 + 6 \equiv 6 \pmod 8$.
 >
@@ -317,7 +317,7 @@ At the other extreme, division by an integer coprime to the modulus is harmless.
 ^prop-19-7
 
 > [!proof]+ Proof
-> ($\Rightarrow$) If $ab_1 \equiv ab_2 \pmod m$, then $m$ divides $a(b_1 - b_2)$. Since $a$ and $m$ are coprime, $m$ divides $b_1 - b_2$ (Eccles Theorem 17.3.2). Directly, and for integers of any sign: by Bézout write $1 = ar + ms$ with $r, s \in \mathbb{Z}$; then
+> ($\Rightarrow$) If $ab_1 \equiv ab_2 \pmod m$, then $m$ divides $a(b_1 - b_2)$. Since $a$ and $m$ are coprime, $m$ divides $b_1 - b_2$ (Theorem [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|§17.4]], Eccles 17.3.2). Directly, and for integers of any sign: by Bézout ([[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]) write $1 = ar + ms$ with $r, s \in \mathbb{Z}$; then
 >
 > $$
 > b_1 - b_2 = r \cdot a(b_1 - b_2) + m \cdot s(b_1 - b_2)
@@ -329,7 +329,7 @@ At the other extreme, division by an integer coprime to the modulus is harmless.
 
 ^pf-19-7
 
-*Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]], [[§19 Congruence of Integers#^prop-19-2|§19.2]], [[§17 Consequences of the Euclidean Algorithm|§17]] (Bézout, Eccles 17.1.1; Eccles 17.3.2)
+*Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]], [[§19 Congruence of Integers#^prop-19-2|§19.2]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|§17.4]]
 
 > [!remark]- Connections
 > - The divisibility step is the general form of [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|493 Lemma §9.1]] (Euclid's lemma); cancellation by $a$ is invertibility of $[a]$, [[§8 Invertibility and Unit Groups#^prop-8-1|493 Prop. §8.1]].
@@ -350,7 +350,7 @@ Combining the two propositions gives the general cancellation law.
 ^cor-19-8
 
 > [!proof]+ Proof
-> Put $d = \gcd(a, m) \geq 1$, $a = d a'$, $m = d m'$. First, $a'$ and $m'$ are coprime: by Bézout $d = ar + ms$, and dividing by $d$ gives $1 = a' r + m' s$, so every common divisor of $a'$ and $m'$ divides $1$. Now
+> Put $d = \gcd(a, m) \geq 1$, $a = d a'$, $m = d m'$. First, $a'$ and $m'$ are coprime (cf. [[§11 Properties of Finite Sets#^prop-11-10|Proposition §11.10]]): by Bézout $d = ar + ms$ ([[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]), and dividing by $d$ gives $1 = a' r + m' s$, so every common divisor of $a'$ and $m'$ divides $1$. Now
 >
 > $$
 > d a' b_1 \equiv d a' b_2 \pmod m \iff a' b_1 \equiv a' b_2 \pmod{m'} \iff b_1 \equiv b_2 \pmod{m'}
@@ -360,7 +360,7 @@ Combining the two propositions gives the general cancellation law.
 
 ^pf-19-8
 
-*Uses:* [[§19 Congruence of Integers#^prop-19-6|§19.6]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§17 Consequences of the Euclidean Algorithm|§17]] (Bézout)
+*Uses:* [[§19 Congruence of Integers#^prop-19-6|§19.6]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]]
 
 Division first arises in solving $ax = b$; in modular arithmetic it arises in solving the **linear congruence** $ax \equiv b \pmod m$, i.e. finding *all* integers $x$ satisfying it. For small numbers, Propositions §19.6 and §19.7 used in turn already do this: divide by common factors of $a$, $b$ and $m$ until none remain, then cancel factors coprime to the modulus.
 

@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # B6 Spin
 ← [[· B5 Quantum Mechanics in Three Dimensions]] · ↑ [[Quantum Mechanics]] · [[· B7 Identical Particles]] →
 
-**Builds on:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (3), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (7), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (18)
-**Used by:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (1), [[· B7 Identical Particles|B7 Identical Particles]] (4), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (13)
+**Builds on:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (3), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (7), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (19)
+**Used by:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (1), [[· B7 Identical Particles|B7 Identical Particles]] (4), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (17)
 
 ## Sections
 - [[§B6.1 Spin One-Half and the Pauli Matrices]] — Griffiths 4.4.1; Greensite 13

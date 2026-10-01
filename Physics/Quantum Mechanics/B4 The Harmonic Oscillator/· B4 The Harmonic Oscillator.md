@@ -8,7 +8,7 @@ tags: [chapter, quantum-mechanics]
 # B4 The Harmonic Oscillator
 ← [[· B3 One-Dimensional Potentials]] · ↑ [[Quantum Mechanics]] · [[· B5 Quantum Mechanics in Three Dimensions]] →
 
-**Builds on:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (5), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (3), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (16), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (3)
+**Builds on:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (5), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (4), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (16), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (3)
 **Used by:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (1), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (4)
 
 ## Sections

@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # B2 The Formalism of Quantum Mechanics
 ← [[· B1 Wave Mechanics]] · ↑ [[Quantum Mechanics]] · [[· B3 One-Dimensional Potentials]] →
 
-**Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (7), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (7), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (5), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (1), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2)
-**Used by:** [[· B1 Wave Mechanics|B1 Wave Mechanics]] (2), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (16), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (19), [[· B6 Spin|B6 Spin]] (7), [[· B7 Identical Particles|B7 Identical Particles]] (2), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (8), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (4)
+**Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (7), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (7), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (9), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (1), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2)
+**Used by:** [[· B1 Wave Mechanics|B1 Wave Mechanics]] (3), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (16), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (18), [[· B6 Spin|B6 Spin]] (7), [[· B7 Identical Particles|B7 Identical Particles]] (2), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (8), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (4)
 
 ## Sections
 - [[§B2.1 Hilbert Space and Dirac Notation]] — Griffiths 3.1, 3.6, App. A; Fleisch 1–2; Greensite 4, 21; Classical notes §10

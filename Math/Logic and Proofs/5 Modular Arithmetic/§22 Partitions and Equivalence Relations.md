@@ -285,7 +285,7 @@ The proof contains the general principle for defining functions on a quotient se
 > - $f([a]_6) = [2a]_4$: well defined, since $2a' - 2a = 12k = 4 \cdot 3k$.
 > - $f([a]_6) = [a^2]_4$: well defined, since $a'^2 - a^2 = 12ak + 36k^2 = 4(3ak + 9k^2)$.
 >
-> (b) Which formulas define a function $f : \mathbb{Q} \to \mathbb{Q}$? Here $a/b = c/d$ means $ad = bc$ ([[§13 Number Systems|§13]]).
+> (b) Which formulas define a function $f : \mathbb{Q} \to \mathbb{Q}$? Here $a/b = c/d$ means $ad = bc$ ([[§13 Number Systems#^prop-13-1|Proposition §13.1]]).
 > - $f(a/b) = a^2/b^2$: well defined, since $ad = bc \Rightarrow a^2 d^2 = b^2 c^2$.
 > - $f(a/b) = a^2/b^3$: **not**: $1/1 = 2/2$, but $1/1 \neq 4/8$.
 > - $f(a/b) = b/a$: **not** a function on $\mathbb{Q}$: $0 = 0/1$ would go to $1/0$, which is not a fraction. (On $\mathbb{Q} - \{0\}$ it is well defined: $ad = bc \Rightarrow da = cb$.)
@@ -309,7 +309,7 @@ The proof contains the general principle for defining functions on a quotient se
 > F : \bigl(\mathbb{Z} \times (\mathbb{Z} - \{0\})\bigr)/{\sim} \;\to\; \mathbb{Q} .
 > $$
 >
-> This makes precise the relation between fractions and rationals of [[§13 Number Systems|§13]]: a fraction is a pair $(a, b)$ written $a/b$, and two fractions represent the same rational iff $a_1 b_2 = a_2 b_1$.
+> This makes precise the relation between fractions and rationals of [[§13 Number Systems#^prop-13-1|Proposition §13.1]]: a fraction is a pair $(a, b)$ written $a/b$, and two fractions represent the same rational iff $a_1 b_2 = a_2 b_1$.
 >
 > *Eccles: Example 22.3.5*
 
@@ -317,7 +317,7 @@ The proof contains the general principle for defining functions on a quotient se
 
 ## 22.4 Construction of the Rational Numbers
 
-Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse it and *define* $\mathbb{Q}$ to be the quotient set, so that a rational number simply *is* a class of fractions; the temporary notation of [[§13 Number Systems|§13]] for "the fraction $a/b$ represents $q$" anticipated $q = [(a, b)]$. This is the construction carried out in the student's Rational Number Project. It uses only the following properties of $\mathbb{Z}$: addition and multiplication are commutative and associative, multiplication distributes over addition, $0$ and $1$ are identities, every integer has a negative, and there are **no zero divisors**: $ab = 0 \Rightarrow a = 0$ or $b = 0$, equivalently, $cx = cy$ with $c \neq 0$ implies $x = y$ ([[§2 Implications|§2]], Properties 2.3.1).
+Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse it and *define* $\mathbb{Q}$ to be the quotient set, so that a rational number simply *is* a class of fractions; the temporary notation of [[§13 Number Systems#^def-13-1|Definition §13.1]] for "the fraction $a/b$ represents $q$" anticipated $q = [(a, b)]$. This is the construction carried out in the student's Rational Number Project. It uses only the following properties of $\mathbb{Z}$: addition and multiplication are commutative and associative, multiplication distributes over addition, $0$ and $1$ are identities, every integer has a negative, and there are **no zero divisors**: $ab = 0 \Rightarrow a = 0$ or $b = 0$, equivalently, $cx = cy$ with $c \neq 0$ implies $x = y$ ([[§2 Implications#^def-2-8|Def. §2.8]], Eccles Properties 2.3.1).
 
 > [!definition] Definition §22.5: The Set of Fractions and Its Relation
 > Let
@@ -524,7 +524,7 @@ Finally, $\mathbb{Z}$ sits inside the new $\mathbb{Q}$, and $a/b$ really is $a$ 
 
 *Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-9|§22.9]], [[§22 Partitions and Equivalence Relations#^def-22-7|Def. §22.7]]
 
-Identifying each integer $a$ with $\iota(a) = a/1$, we get $\mathbb{Z} \subseteq \mathbb{Q}$, the fraction $a/b$ denotes $[(a, b)]$, and we are back to the usual notation — but now $\mathbb{Q}$ has been *built* from $\mathbb{Z}$ rather than assumed. The order extends too: for $b, d > 0$ (Lemma §22.7(1)), put $a/b < c/d$ iff $ad < bc$ (Eccles Problems III Q21).
+Identifying each integer $a$ with $\iota(a) = a/1$, we get $\mathbb{Z} \subseteq \mathbb{Q}$, the fraction $a/b$ denotes $[(a, b)]$, and we are back to the usual notation — but now $\mathbb{Q}$ has been *built* from $\mathbb{Z}$ rather than assumed. The order extends too: choosing representatives with $b, d > 0$ (Lemma §22.7(1)), put $a/b < c/d$ iff $ad < bc$; one checks as in Proposition §22.8 that this does not depend on the choice (Eccles Problems III Q21).
 
 ## 22.5 Construction of the Integers
 

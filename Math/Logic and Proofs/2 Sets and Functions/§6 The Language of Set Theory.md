@@ -22,23 +22,9 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 
 ^def-6-1
 
-> [!definition] Definition §6.2: The Standard Number Sets
-> - $\Z$ is the set of all integers;
-> - $\Z^+ = \{1, 2, 3, \ldots\}$ is the set of **positive integers**;
-> - $\N = \Z^{\ge 0} = \{0, 1, 2, 3, \ldots\}$ is the set of **non-negative integers**;
-> - $\Q$ is the set of rational numbers, $\R$ the set of real numbers, and $\C$ the set of complex numbers;
-> - $\R^+$ is the set of positive real numbers and $\R^{\ge 0}$ the set of non-negative real numbers.
->
-> *Eccles: §6.1 (Eccles writes $\Z^{\geqslant}$ and $\R^{\geqslant}$ for $\Z^{\ge 0}$ and $\R^{\ge 0}$)*
+The standard sets of numbers, $\Z$, $\Z^+$, $\N = \{0, 1, 2, \ldots\}$, $\Q$, $\R$, $\R^+$, $\R^{\geq}$ and $\C$, were fixed in [[§1 The Language of Mathematics#^def-1-1|Def. §1.1]], together with the convention that $\N$ contains $0$ (Single Variable Analysis uses $\N = \{1, 2, \ldots\}$, our $\Z^+$).
 
-^def-6-2
-
-> [!remark] Remark: Which Natural Numbers?
-> Whether $0$ is a "natural number" is a matter of convention. In these notes $\Z^+$ always means $\{1, 2, 3, \ldots\}$ and $\N$ means $\{0, 1, 2, \ldots\}$; Eccles avoids the word and says "positive" or "non-negative" integers. Single Variable Analysis (Ross) uses the other convention, $\N = \{1, 2, 3, \ldots\}$ ([[§1 The Set ℕ of Natural Numbers|451 §1]]); its $\N$ is our $\Z^+$.
-
-^rem-6-1
-
-> [!definition] Definition §6.3: Specifying a Set
+> [!definition] Definition §6.2: Specifying a Set
 > There are three basic ways to specify a set.
 > 1. **Listing the elements** in curly brackets, $A = \{1, 3, \pi, -14\}$. Order and repetition do not matter: $\{1, 3, \pi, -14\} = \{\pi, 3, \pi, 1, -14, -14\}$. Dots mean "and so on": $\Z^+ = \{1, 2, 3, \ldots\}$.
 > 2. **Conditional definition.** For a set $A$ and a predicate $P(x)$ with free variable $x$ ranging over $A$,
@@ -60,7 +46,7 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 >
 > *Eccles: §6.1(a)–(c)*
 
-^def-6-3
+^def-6-2
 
 > [!example] Example §6.1: Three Ways of Writing Sets
 > - $B = \{n \in \Z \mid 0 < n < 6\} = \{\alpha \in \Z \mid 0 < \alpha < 6\} = \{1, 2, 3, 4, 5\}$.
@@ -88,7 +74,7 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 
 ^ex-6-2
 
-> [!definition] Definition §6.4: Equality of Sets
+> [!definition] Definition §6.3: Equality of Sets
 > Two sets $A$ and $B$ are **equal**, written $A = B$, if they have precisely the same elements:
 >
 > $$
@@ -99,33 +85,33 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 >
 > *Eccles: Definition 6.1.1*
 
-^def-6-4
+^def-6-3
 
 > [!example] Example §6.3: A Solution Set
 > $\{x \in \R \mid x^2 - x - 2 = 0\} = \{-1, 2\}$.
 >
-> By [[§6 The Language of Set Theory#^def-6-4|Def. §6.4]] this says: for a real number $x$, $\ x^2 - x - 2 = 0 \iff x = -1 \text{ or } x = 2$. Indeed
+> By [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]] this says: for a real number $x$, $\ x^2 - x - 2 = 0 \iff x = -1 \text{ or } x = 2$. Indeed
 >
 > $$
 > x^2 - x - 2 = 0 \iff (x - 2)(x + 1) = 0 \iff x - 2 = 0 \text{ or } x + 1 = 0 \iff x = 2 \text{ or } x = -1,
 > $$
 >
-> the middle step because a product of real numbers is zero exactly when one factor is zero ([[§4 Proof by Contradiction|§4]], Eccles Proposition 4.4.1).
+> the middle step because a product of real numbers is zero exactly when one factor is zero ([[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]]).
 >
 > *Eccles: Example 6.1.2*
 
 ^ex-6-3
 
-> [!definition] Definition §6.5: The Empty Set
+> [!definition] Definition §6.4: The Empty Set
 > The **empty set** $\emptyset$ is the unique set which has no elements at all. (Uniqueness: [[§6 The Language of Set Theory#^prop-6-1|Proposition §6.1]](4).)
 >
 > For example, "$x^2 + 2x + 2 = 0$ has no real solutions" may be written $\{x \in \R \mid x^2 + 2x + 2 = 0\} = \emptyset$.
 >
 > *Eccles: Definition 6.1.3*
 
-^def-6-5
+^def-6-4
 
-> [!definition] Definition §6.6: Subset; Proper Subset
+> [!definition] Definition §6.5: Subset; Proper Subset
 > Given sets $A$ and $B$, $A$ is a **subset** of $B$, written $A \subseteq B$ or $B \supseteq A$, when every element of $A$ is an element of $B$:
 >
 > $$
@@ -136,7 +122,7 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 >
 > *Eccles: Definition 6.1.4 (some authors write $\subset$ for $\subseteq$)*
 
-^def-6-6
+^def-6-5
 
 > [!theorem] Proposition §6.1: Basic Facts About Subsets
 > Let $A$, $B$, $C$ be sets.
@@ -157,18 +143,18 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 >
 > (3) Let $x \in A$. Then $x \in B$ since $A \subseteq B$, and so $x \in C$ since $B \subseteq C$.
 >
-> (4) For any $x$ the statement $x \in \emptyset$ is false, so the implication $x \in \emptyset \Rightarrow x \in A$ is true ([[§2 Implications|§2]]: an implication with false hypothesis is true). Hence $\emptyset \subseteq A$. If $A \subseteq \emptyset$, then together with $\emptyset \subseteq A$, (1) gives $A = \emptyset$. Finally, if $E$ and $E'$ both have no elements, the argument just given shows $E \subseteq E'$ and $E' \subseteq E$, so $E = E'$ by (1).
+> (4) For any $x$ the statement $x \in \emptyset$ is false, so the implication $x \in \emptyset \Rightarrow x \in A$ is true ([[§2 Implications#^def-2-1|Def. §2.1]]: an implication with false hypothesis is true). Hence $\emptyset \subseteq A$. If $A \subseteq \emptyset$, then together with $\emptyset \subseteq A$, (1) gives $A = \emptyset$. Finally, if $E$ and $E'$ both have no elements, the argument just given shows $E \subseteq E'$ and $E' \subseteq E$, so $E = E'$ by (1).
 >
 > (5) Write $S_P = \{a \in A \mid P(a)\}$ and $S_Q = \{a \in A \mid Q(a)\}$. For $a \in A$ we have $a \in S_P \iff P(a)$ and $a \in S_Q \iff Q(a)$, and every element of $S_P$ lies in $A$. So $S_P \subseteq S_Q$, i.e. $a \in S_P \Rightarrow a \in S_Q$ for all $a$, says exactly that $P(a) \Rightarrow Q(a)$ for all $a \in A$.
 
 ^pf-6-1
 
-*Uses:* [[§6 The Language of Set Theory#^def-6-4|Def. §6.4]], [[§6 The Language of Set Theory#^def-6-5|Def. §6.5]], [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§2 Implications|§2]]
+*Uses:* [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§6 The Language of Set Theory#^def-6-4|Def. §6.4]], [[§6 The Language of Set Theory#^def-6-5|Def. §6.5]], [[§6 The Language of Set Theory#^def-6-2|Def. §6.2]], [[§2 Implications#^def-2-1|Def. §2.1]]
 
 > [!remark] Remark: Membership Versus Inclusion
 > The symbols $\in$ and $\subseteq$ must be kept apart: $a \in A$ relates an element to a set, $A \subseteq B$ relates two sets, and they are linked by $a \in A \iff \{a\} \subseteq A$. For instance $1 \in \{1, 2\}$ and $\{1\} \subseteq \{1, 2\}$, but $\{1\} \notin \{1, 2\}$. Likewise a singleton $\{a\}$ is not the element $a$, and $\{\emptyset\} \neq \emptyset$: a box containing an empty box is not an empty box.
 
-^rem-6-2
+^rem-6-1
 
 > [!example] Example §6.4: Which of These Sets Are Equal?
 > Consider the following sets of real numbers:
@@ -234,7 +220,7 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 
 ## 6.2 Operations on Sets
 
-> [!definition] Definition §6.7: Intersection; Disjoint Sets
+> [!definition] Definition §6.6: Intersection; Disjoint Sets
 > The **intersection** of sets $A$ and $B$ is the set of elements lying in both:
 >
 > $$
@@ -245,9 +231,9 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 >
 > *Eccles: Definition 6.2.1*
 
-^def-6-7
+^def-6-6
 
-> [!definition] Definition §6.8: Union
+> [!definition] Definition §6.7: Union
 > The **union** of sets $A$ and $B$ is the set of elements lying in $A$ or in $B$ (or both):
 >
 > $$
@@ -256,9 +242,9 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 >
 > *Eccles: Definition 6.2.2*
 
-^def-6-8
+^def-6-7
 
-> [!definition] Definition §6.9: Difference
+> [!definition] Definition §6.8: Difference
 > The **difference** of sets $A$ and $B$ is the set of elements lying in $A$ but not in $B$:
 >
 > $$
@@ -269,12 +255,12 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 >
 > *Eccles: Definition 6.2.3*
 
-^def-6-9
+^def-6-8
 
 > [!remark] Remark: First Identities
 > Directly from the definitions: $A \cap A = A = A \cup A$ (since "$P$ and $P$" and "$P$ or $P$" are equivalent to $P$); $A \cap \emptyset = \emptyset$ and $A \cup \emptyset = A$ (since $x \in \emptyset$ is always false); $A - A = \emptyset$ (no $x$ has $x \in A$ and $x \notin A$); and $A - \emptyset = A$ (since $x \notin \emptyset$ is always true).
 
-^rem-6-3
+^rem-6-2
 
 > [!theorem] Proposition §6.2: Splitting a Union
 > For any sets $A$ and $B$, the three sets $A \cap B$, $A - B$ and $B - A$ are pairwise disjoint, and
@@ -297,11 +283,11 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 > | F | T | F | F | T | T | T |
 > | F | F | F | F | F | F | F |
 >
-> No row has more than one T among the columns for $A \cap B$, $A - B$, $B - A$, so no $x$ lies in two of these sets: they are pairwise disjoint. The last two columns agree in every row, so $x \in (A \cap B) \cup (A - B) \cup (B - A) \iff x \in A \cup B$, which is the equality of sets ([[§6 The Language of Set Theory#^def-6-4|Def. §6.4]]).
+> No row has more than one T among the columns for $A \cap B$, $A - B$, $B - A$, so no $x$ lies in two of these sets: they are pairwise disjoint. The last two columns agree in every row, so $x \in (A \cap B) \cup (A - B) \cup (B - A) \iff x \in A \cup B$, which is the equality of sets ([[§6 The Language of Set Theory#^def-6-3|Def. §6.3]]).
 
 ^pf-6-2
 
-*Uses:* [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]], [[§6 The Language of Set Theory#^def-6-9|Def. §6.9]], [[§6 The Language of Set Theory#^def-6-4|Def. §6.4]], [[§1 The Language of Mathematics|§1]]
+*Uses:* [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]], [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§1 The Language of Mathematics|§1]]
 
 ![[m250-6-1.svg]]
 *The Venn diagram of Proposition §6.2: the four rows of the truth table are the four regions. $A - B$ (blue), $A \cap B$ (red) and $B - A$ (green) do not overlap, and together they fill $A \cup B$; the fourth row is the region outside both circles.*
@@ -309,16 +295,16 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 > [!remark] Remark: Venn Diagrams
 > A **Venn diagram** represents sets by regions of the page, and the regions cut out by $k$ overlapping regions correspond to the $2^k$ rows of a truth table. This makes identities like Proposition §6.2 visible, but a diagram is an illustration, not a proof: a region may be empty (the diagram above does not claim $A \cap B \ne \emptyset$), a careless drawing may omit a possible region, and a diagram may contain features with no set-theoretic meaning. The proofs are the truth tables and element arguments.
 
-^rem-6-4
+^rem-6-3
 
 ## 6.3 The Power Set
 
-> [!definition] Definition §6.10: Power Set; Singleton
+> [!definition] Definition §6.9: Power Set; Singleton
 > The **power set** $\mathcal{P}(X)$ of a set $X$ is the set of all subsets of $X$. Thus $A \in \mathcal{P}(X)$ is another way of writing $A \subseteq X$. A set $\{a\}$ with a single element is a **singleton**.
 >
 > *Eccles: Definition 6.3.1*
 
-^def-6-10
+^def-6-9
 
 > [!remark]- Connections
 > - Developed further in: [[§4 Uncountability#^def-4-1|551 Def. §4.1]] (power set), where Cantor's theorem ([[§4 Uncountability#^thm-4-1|551 Thm. §4.1]]) shows there is no surjection $X \to \mathcal{P}(X)$.
@@ -336,7 +322,7 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 
 ^ex-6-6
 
-> [!definition] Definition §6.11: Universal Set; Complement
+> [!definition] Definition §6.10: Universal Set; Complement
 > Often all the sets under consideration are subsets of one fixed set $U$, the **universal set**. Once $U$ is fixed, the **complement** of $A \in \mathcal{P}(U)$ is
 >
 > $$
@@ -347,7 +333,7 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 >
 > *Eccles: Definition 6.3.3*
 
-^def-6-11
+^def-6-10
 
 Intersection, union and complement of subsets of $U$ correspond to the connectives "and", "or" and "not": for $x \in U$,
 
@@ -371,7 +357,7 @@ So each law of logic from [[§1 The Language of Mathematics|§1]] translates int
 ^thm-6-3
 
 > [!proof]+ Proof
-> In every identity both sides are subsets of $U$, so by [[§6 The Language of Set Theory#^def-6-4|Def. §6.4]] it suffices to show that each $x \in U$ lies in the left side if and only if it lies in the right side. Fix $x \in U$ and write $P$, $Q$, $R$ for the statements $x \in A$, $x \in B$, $x \in C$. By the correspondence displayed above, each side's membership condition is a propositional form in $P, Q, R$, and the identity reduces to a logical equivalence that holds for all truth values of $P, Q, R$ ([[§1 The Language of Mathematics|§1]]):
+> In every identity both sides are subsets of $U$, so by [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]] it suffices to show that each $x \in U$ lies in the left side if and only if it lies in the right side. Fix $x \in U$ and write $P$, $Q$, $R$ for the statements $x \in A$, $x \in B$, $x \in C$. By the correspondence displayed above, each side's membership condition is a propositional form in $P, Q, R$, and the identity reduces to a logical equivalence that holds for all truth values of $P, Q, R$ ([[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1]], [[§1 The Language of Mathematics#^thm-1-2|Theorem §1.2]]):
 >
 > | identity | membership condition, left $\equiv$ right |
 > |---|---|
@@ -392,7 +378,7 @@ So each law of logic from [[§1 The Language of Mathematics|§1]] translates int
 
 ^pf-6-3
 
-*Uses:* [[§6 The Language of Set Theory#^def-6-4|Def. §6.4]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]], [[§6 The Language of Set Theory#^def-6-11|Def. §6.11]], [[§1 The Language of Mathematics|§1]]
+*Uses:* [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-10|Def. §6.10]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^thm-1-2|§1.2]]
 
 Once these laws are available, further identities follow by algebra, without returning to elements.
 
@@ -450,7 +436,7 @@ Once these laws are available, further identities follow by algebra, without ret
 > [!example] Example §6.8: A Proof by Contradiction with Sets
 > **Claim:** if $A \cap B \subseteq C$ and $x \in B$, then $x \notin A - C$.
 >
-> The conclusion is a negative statement, which suggests contradiction. Suppose $A \cap B \subseteq C$ and $x \in B$, and suppose for contradiction that $x \in A - C$. By [[§6 The Language of Set Theory#^def-6-9|Def. §6.9]], $x \in A$ and $x \notin C$. Since also $x \in B$, we have $x \in A \cap B$, and so $x \in C$ because $A \cap B \subseteq C$. This contradicts $x \notin C$. Hence $x \notin A - C$.
+> The conclusion is a negative statement, which suggests contradiction. Suppose $A \cap B \subseteq C$ and $x \in B$, and suppose for contradiction that $x \in A - C$. By [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]], $x \in A$ and $x \notin C$. Since also $x \in B$, we have $x \in A \cap B$, and so $x \in C$ because $A \cap B \subseteq C$. This contradicts $x \notin C$. Hence $x \notin A - C$.
 >
 > *Source: HW3*
 > *Eccles: Exercise 6.6*
@@ -467,7 +453,7 @@ Once these laws are available, further identities follow by algebra, without ret
 >
 > (2) Always $A \cap B \subseteq A$. If $A \subseteq B$, then $x \in A$ gives $x \in B$, so $x \in A \cap B$; hence $A \subseteq A \cap B$ and equality holds. Conversely, if $A \cap B = A$, then $A = A \cap B \subseteq B$.
 >
-> (3) For $x \in U$, $A \subseteq B$ says $x \in A \Rightarrow x \in B$, and $B^c \subseteq A^c$ says $x \notin B \Rightarrow x \notin A$. These implications are contrapositives of each other, hence equivalent ([[§2 Implications|§2]]).
+> (3) For $x \in U$, $A \subseteq B$ says $x \in A \Rightarrow x \in B$, and $B^c \subseteq A^c$ says $x \notin B \Rightarrow x \notin A$. These implications are contrapositives of each other, hence equivalent ([[§2 Implications#^prop-2-2|Proposition §2.2]]).
 >
 > *Eccles: Exercises 6.5, 6.7*
 

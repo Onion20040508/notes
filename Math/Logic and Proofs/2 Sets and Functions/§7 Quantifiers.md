@@ -15,6 +15,8 @@ A predicate $P(a)$ becomes a proposition not only by substituting a value for $a
 
 ## 7.1 Universal Statements
 
+The universal statements met informally in [[§2 Implications#^def-2-2|Def. §2.2]] are made precise here.
+
 > [!definition] Definition §7.1: Universal Statement
 > For a predicate $P(a)$ with free variable $a$ ranging over a set $A$, the notation
 >
@@ -31,7 +33,7 @@ A predicate $P(a)$ becomes a proposition not only by substituting a value for $a
 ^def-7-1
 
 > [!example] Example §7.1: Three Ways to Write a Universal Statement
-> "$a^2 > 0$ for every non-zero real number $a$" ([[§3 Proofs|§3]], Eccles Proposition 3.1.4) can be written
+> "$a^2 > 0$ for every non-zero real number $a$" ([[§3 Proofs#^prop-3-2|Proposition §3.2]]) can be written
 >
 > $$
 > \forall a \in \R - \{0\},\ a^2 > 0, \qquad \{a \in \R - \{0\} \mid a^2 > 0\} = \R - \{0\}, \qquad a \in \R - \{0\} \Rightarrow a^2 > 0 ,
@@ -114,7 +116,7 @@ A predicate $P(a)$ becomes a proposition not only by substituting a value for $a
 ^ex-7-3
 
 > [!theorem] Proposition §7.1: Squares of Even Integers Are Even
-> For integers $n$, if $n$ is even then $n^2$ is even. In symbols, with "even" spelled out ([[§2 Implications|§2]], Eccles Definition 2.2.2):
+> For integers $n$, if $n$ is even then $n^2$ is even. In symbols, with "even" spelled out ([[§2 Implications#^def-2-7|Def. §2.7]]):
 >
 > $$
 > \forall n \in \Z,\ \big( (\exists q \in \Z,\ n = 2q) \Rightarrow (\exists p \in \Z,\ n^2 = 2p) \big).
@@ -137,7 +139,7 @@ A predicate $P(a)$ becomes a proposition not only by substituting a value for $a
 
 ^pf-7-1
 
-*Uses:* [[§7 Quantifiers#^def-7-1|Def. §7.1]], [[§7 Quantifiers#^def-7-2|Def. §7.2]], [[§2 Implications|§2]]
+*Uses:* [[§7 Quantifiers#^def-7-1|Def. §7.1]], [[§7 Quantifiers#^def-7-2|Def. §7.2]], [[§2 Implications#^def-2-7|Def. §2.7]]
 
 > [!example] Example §7.4: Squares of Odd Integers Are Odd
 > **Claim:** for $n \in \Z$, $\ (\exists q \in \Z,\ n = 2q + 1) \Rightarrow (\exists p \in \Z,\ n^2 = 2p + 1)$.
@@ -181,7 +183,7 @@ Disproving a statement $S$ is the same as proving its negation "not $S$". For qu
 
 ^pf-7-2
 
-*Uses:* [[§7 Quantifiers#^def-7-1|Def. §7.1]], [[§7 Quantifiers#^def-7-2|Def. §7.2]], [[§6 The Language of Set Theory#^prop-6-1|§6.1]], [[§6 The Language of Set Theory#^def-6-9|Def. §6.9]]
+*Uses:* [[§7 Quantifiers#^def-7-1|Def. §7.1]], [[§7 Quantifiers#^def-7-2|Def. §7.2]], [[§6 The Language of Set Theory#^prop-6-1|§6.1]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]]
 
 So a universal statement is disproved by a single **counterexample**, an $a \in A$ with $P(a)$ false; an existential statement is disproved either by proving $\forall a \in A,\ \text{not}\, P(a)$ or by showing that $P(a)$ with $a \in A$ leads to a contradiction ([[§4 Proof by Contradiction|§4]]).
 
@@ -213,21 +215,13 @@ So a universal statement is disproved by a single **counterexample**, an $a \in 
 
 ^rem-7-3
 
-> [!definition] Definition §7.4: Denial; Useful Denial
-> A **denial** of a statement $S$ is any statement logically equivalent to "not $S$". A **useful denial** is one written in affirmative terms: the negation has been pushed inward until it applies only to the simplest component statements, and these are rewritten without "not" (e.g. "not $x > 2$" as $x \le 2$). It is computed with the rules
->
-> $$
-> \begin{aligned}
-> \neg\, \forall a,\ P(a) &\equiv \exists a,\ \neg P(a), & \neg\, \exists a,\ P(a) &\equiv \forall a,\ \neg P(a), & \neg\neg P &\equiv P, \\
-> \neg(P \wedge Q) &\equiv \neg P \vee \neg Q, & \neg(P \vee Q) &\equiv \neg P \wedge \neg Q, & \neg(P \Rightarrow Q) &\equiv P \wedge \neg Q ,
-> \end{aligned}
-> $$
->
-> from [[§7 Quantifiers#^thm-7-2|Theorem §7.2]] and [[§1 The Language of Mathematics|§1]]–[[§2 Implications|§2]]. In particular each quantifier is switched ($\forall \leftrightarrow \exists$) while its domain stays the same, and the order of the quantifiers is kept.
->
-> *Source: MAT 200 supplement §3; MAT 200 Practice Midterm 1*
+Combined with the laws of [[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1]] and [[§2 Implications#^prop-2-1|Proposition §2.1]], Theorem §7.2 produces a *useful denial* ([[§1 The Language of Mathematics#^def-1-7|Def. §1.7]]) of any quantified statement: switch each quantifier ($\forall \leftrightarrow \exists$), keeping its domain and the order of the quantifiers, and then deny the predicate using
 
-^def-7-4
+$$
+\neg\neg P \equiv P, \qquad \neg(P \wedge Q) \equiv \neg P \vee \neg Q, \qquad \neg(P \vee Q) \equiv \neg P \wedge \neg Q, \qquad \neg(P \Rightarrow Q) \equiv P \wedge \neg Q ,
+$$
+
+until "not" is absorbed into the simplest statements ($\neg(x > 2)$ becomes $x \le 2$). For example, the denial of $\forall \varepsilon > 0\ \exists N\ \forall n\ (n \ge N \Rightarrow |a_n| < \varepsilon)$ is $\exists \varepsilon > 0\ \forall N\ \exists n\ (n \ge N \wedge |a_n| \ge \varepsilon)$.
 
 > [!example] Example §7.6: From English to Symbols
 > **(a)** "There exists a positive integer $n$ such that $n$ is greater than $3$ but two times $n$ is not greater than $3$":
@@ -259,13 +253,13 @@ So a universal statement is disproved by a single **counterexample**, an $a \in 
 > \forall x \in \R,\ \exists y \in \R,\ (x + y \le 3 \Rightarrow x > 2).
 > $$
 >
-> **Useful denial.** Switching the quantifiers and using $\neg(P \Rightarrow Q) \equiv P \wedge \neg Q$ ([[§7 Quantifiers#^def-7-4|Def. §7.4]]):
+> **Useful denial.** Switching the quantifiers and using $\neg(P \Rightarrow Q) \equiv P \wedge \neg Q$ ([[§2 Implications#^prop-2-1|Proposition §2.1]]):
 >
 > $$
 > \exists x \in \R,\ \forall y \in \R,\ (x + y \le 3 \wedge x \le 2).
 > $$
 >
-> **Truth value.** The statement is true and the denial false. Since $(P \Rightarrow Q) \equiv (\neg P \vee Q)$, the statement says $\forall x\ \exists y,\ (x + y > 3 \vee x > 2)$. Given $x$, take $y = 4 - x$: then $x + y = 4 > 3$, so the implication has a false hypothesis and is true. (The denial fails for the same reason: no $x$ has $x + y \le 3$ for *all* $y$.)
+> **Truth value.** The statement is true and the denial false. Since $(P \Rightarrow Q) \equiv (\neg P \vee Q)$ ([[§2 Implications#^prop-2-1|Proposition §2.1]]), the statement says $\forall x\ \exists y,\ (x + y > 3 \vee x > 2)$. Given $x$, take $y = 4 - x$: then $x + y = 4 > 3$, so the implication has a false hypothesis and is true. (The denial fails for the same reason: no $x$ has $x + y \le 3$ for *all* $y$.)
 >
 > **Picture.** The set $\{(x, y) \in \R^2 \mid x + y > 3 \text{ or } x > 2\}$ is the union of the half-plane above the line $x + y = 3$ and the half-plane $x > 2$; the statement says that every vertical line $\{x\} \times \R$ meets it (see §7.7 below).
 >
@@ -313,7 +307,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 > \end{aligned}
 > $$
 >
-> They are read from the left: in (iii), "$\exists b \in B,\ P(a, b)$" is a predicate in the single free variable $a$, and (iii) says it holds for every $a$. So in (iii) the $b$ may depend on $a$, while in (iv) one $b$ must work for every $a$. "$\forall a, b \in A$" abbreviates "$\forall a \in A,\ \forall b \in A$", and similarly for $\exists$. Examples already met: Eccles Propositions 3.1.1 ($\forall a, b \in \R^+,\ a < b \Rightarrow a^2 < b^2$) and 4.1.1 (not $\exists m, n \in \Z,\ 14m + 20n = 101$).
+> They are read from the left: in (iii), "$\exists b \in B,\ P(a, b)$" is a predicate in the single free variable $a$, and (iii) says it holds for every $a$. So in (iii) the $b$ may depend on $a$, while in (iv) one $b$ must work for every $a$. "$\forall a, b \in A$" abbreviates "$\forall a \in A,\ \forall b \in A$", and similarly for $\exists$. Examples already met: [[§3 Proofs#^prop-3-1|Proposition §3.1]] ($\forall a, b \in \R^+,\ a < b \Rightarrow a^2 < b^2$) and [[§4 Proof by Contradiction#^prop-4-1|Proposition §4.1]] (not $\exists m, n \in \Z,\ 14m + 20n = 101$).
 >
 > *Eccles: §7.6*
 
@@ -389,7 +383,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 > | (iv) $\exists y \in \R,\ \forall x \in \R,\ xy = 0$ | true | $y = 0$ works for every $x$ |
 > | (v) $\forall x \in \R,\ \exists y \in \R,\ xy = 1$ | false | counterexample $x = 0$: $0 \cdot y = 0 \ne 1$ |
 > | (vi) $\exists y \in \R,\ \forall x \in \R,\ xy = 1$ | false | for each $y$, $x = 0$ gives $xy = 0 \ne 1$ |
-> | (vii) $\forall n \in \Z^+,\ (n \text{ even or } n \text{ odd})$ | true | "odd" means "not even", so this is $P \vee \neg P$ |
+> | (vii) $\forall n \in \Z^+,\ (n \text{ even or } n \text{ odd})$ | true | "odd" means "not even" ([[§2 Implications#^def-2-7\|Def. §2.7]]), so this is $P \vee \neg P$ |
 > | (viii) $(\forall n \in \Z^+,\ n \text{ even}) \text{ or } (\forall n \in \Z^+,\ n \text{ odd})$ | false | $1$ is not even and $2$ is not odd |
 >
 > In (iii)–(iv) one $y$ serves for all $x$; in (i)–(ii) the $y$ has to depend on $x$. Items (vii) and (viii) show that $\forall$ distributes over "or" in only one direction: (viii) $\Rightarrow$ (vii), but not conversely.
@@ -462,7 +456,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 
 ## 7.7 The Cartesian Product of Two Sets
 
-> [!definition] Definition §7.5: Cartesian Product; Ordered Pair
+> [!definition] Definition §7.4: Cartesian Product; Ordered Pair
 > Given sets $X$ and $Y$, the **Cartesian product** $X \times Y$ is the set of all **ordered pairs** $(x, y)$ with $x \in X$ and $y \in Y$:
 >
 > $$
@@ -473,7 +467,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 >
 > *Eccles: Definition 7.7.1*
 
-^def-7-5
+^def-7-4
 
 > [!example] Example §7.14: Products
 > - For $X = \{a, b, c\}$ and $Y = \{a, b\}$: $X \times Y = \{(a,a), (a,b), (b,a), (b,b), (c,a), (c,b)\}$ and $Y \times X = \{(a,a), (a,b), (a,c), (b,a), (b,b), (b,c)\}$. These are different: $(c, a) \in X \times Y$ but $(c, a) \notin Y \times X$.
@@ -502,7 +496,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 > [!example] Example §7.16: An Implication as a Region of the Plane
 > **Problem:** find all points $(x, y)$ for which the propositional form $2x + 3y > 6 \Rightarrow x \le y^2$ is true.
 >
-> Since $(P \Rightarrow Q) \equiv (\neg P \vee Q)$ ([[§2 Implications|§2]]), the truth set is
+> Since $(P \Rightarrow Q) \equiv (\neg P \vee Q)$ ([[§2 Implications#^prop-2-1|Proposition §2.1]]), the truth set is
 >
 > $$
 > \{(x, y) \in \R^2 \mid 2x + 3y \le 6\} \cup \{(x, y) \in \R^2 \mid x \le y^2\} ,
@@ -541,7 +535,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 
 ^pf-7-6
 
-*Uses:* [[§7 Quantifiers#^def-7-5|Def. §7.5]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]], [[§6 The Language of Set Theory#^thm-6-3|§6.3]]
+*Uses:* [[§7 Quantifiers#^def-7-4|Def. §7.4]], [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^thm-6-3|§6.3]]
 
 > [!example] Example §7.17: The Inclusion in Part 4 Can Be Strict
 > **Claim:** $(A \times B) \cup (C \times D) \subseteq (A \cup C) \times (B \cup D)$, and the two sets need not be equal.

@@ -82,7 +82,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 > - Residue classes in group theory: [[§6 Divisibility and Congruence#^def-6-4|493 Def. §6.4]]; the general statement for any equivalence relation is [[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]] here, and [[§22 Equivalence Relations and Partitions#^prop-22-1|493 Prop. §22.1]].
 
 > [!remark] Remark: The Box Model of the Remainder Map
-> Picture the remainder map $r_m : \mathbb{Z} \to R_m$ ([[§19 Congruence of Integers#^def-19-3|Def. §19.3]]) as $m$ boxes labelled $0, 1, \ldots, m - 1$, each integer dropped into the box of its remainder (the box model of a function, [[§8 Functions|§8]]). The contents of box $r$ form
+> Picture the remainder map $r_m : \mathbb{Z} \to R_m$ ([[§19 Congruence of Integers#^def-19-3|Def. §19.3]]) as $m$ boxes labelled $0, 1, \ldots, m - 1$, each integer dropped into the box of its remainder (the box model of a function, [[§8 Functions#^ex-8-1|Example §8.1]]). The contents of box $r$ form
 >
 > $$
 > r_m^{-1}(\{r\}) = \{x \in \mathbb{Z} \mid r_m(x) = r\} = [r]_m ,
@@ -135,7 +135,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 
 ^pf-21-2
 
-*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]], [[§19 Congruence of Integers#^prop-19-5|§19.5]], [[§19 Congruence of Integers#^def-19-3|Def. §19.3]], [[§10 Counting|§10]] (cardinality), [[§9 Injections, Surjections and Bijections|§9]] (inverse maps)
+*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]], [[§19 Congruence of Integers#^prop-19-5|§19.5]], [[§19 Congruence of Integers#^def-19-3|Def. §19.3]], [[§10 Counting#^def-10-1|Def. §10.1]], [[§9 Injections, Surjections and Bijections|§9]] (inverse maps)
 
 > [!remark]- Connections
 > - The same set as a group: [[§7 The Group ℤ∕nℤ#^def-7-1|493 Def. §7.1]] ($\mathbb{Z}/n\mathbb{Z}$, of order $n$).
@@ -223,7 +223,7 @@ The same idea works for every $m$: to add two columns of the table, pick any ele
 
 ^pf-21-4
 
-*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-3|Def. §21.3]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|§21.3]], [[§2 Implications|§2]] (Properties 2.3.1, the laws in $\mathbb{Z}$)
+*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-3|Def. §21.3]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|§21.3]], [[§2 Implications#^def-2-8|Def. §2.8]] (the laws in $\mathbb{Z}$)
 
 > [!remark]- Connections
 > - With (1)–(5), $\mathbb{Z}_m$ under $+$ is the group [[§7 The Group ℤ∕nℤ#^def-7-1|493 Def. §7.1]]; it is a field exactly when $m$ is prime, [[§8 Invertibility and Unit Groups#^prop-8-4|493 Prop. §8.4]].
@@ -327,13 +327,13 @@ Arithmetic in $\mathbb{Z}_m$ (or $R_m$) differs from arithmetic in $\mathbb{Z}$ 
 >
 > by Proposition [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]] and Proposition [[§19 Congruence of Integers#^prop-19-7|§19.7]].
 >
-> *$f$ is surjective.* Suppose for contradiction that some $[y_0]_m \in \mathbb{Z}_m$ is not a value of $f$. Then $f$ is an injection from $\mathbb{Z}_m$, of cardinality $m$ (Proposition [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-2|§21.2]]), to $\mathbb{Z}_m - \{[y_0]_m\}$, of cardinality $m - 1$, contradicting the pigeonhole principle. Hence $f$ is a surjection, so a bijection.
+> *$f$ is surjective.* Suppose for contradiction that some $[y_0]_m \in \mathbb{Z}_m$ is not a value of $f$. Then $f$ is an injection from $\mathbb{Z}_m$, of cardinality $m$ (Proposition [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-2|§21.2]]), to $\mathbb{Z}_m - \{[y_0]_m\}$, of cardinality $m - 1$, contradicting the pigeonhole principle ([[§11 Properties of Finite Sets#^thm-11-2|Theorem §11.2]]). Hence $f$ is a surjection, so a bijection.
 >
 > Therefore there is exactly one $[x_0]_m \in \mathbb{Z}_m$ with $f([x_0]_m) = [b]_m$, i.e. $[a]_m \times [x_0]_m = [b]_m$.
 
 ^pf-21-6
 
-*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-2|§21.2]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|§21.3]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§11 Properties of Finite Sets|§11]] (pigeonhole principle, Eccles 11.1.2)
+*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-2|§21.2]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|§21.3]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§11 Properties of Finite Sets#^thm-11-2|§11.2]]
 
 This proof is **non-constructive**: it guarantees a solution without saying how to find it (short of trying all $m$ classes), which is typical of counting arguments; the Euclidean algorithm proof of [[§20 Linear Congruences|§20]] computes it. On the other hand the counting proof shows *why* the result holds: multiplication by a class coprime to $m$ just permutes $\mathbb{Z}_m$. Different proofs of one theorem can illuminate different things.
 
@@ -406,8 +406,10 @@ The inverse class is unique: if $aa' \equiv 1 \equiv aa''$, then $a' \equiv a'(a
 
 *Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-5|Def. §21.5]], [[§20 Linear Congruences#^thm-20-4|§20.4]]
 
+For a prime modulus $p$ every class other than $[0]_p$ is invertible; the counting proof of Theorem §21.6 then leads to Fermat's little theorem, [[§24★ Congruence Modulo a Prime#^thm-24-1|Theorem §24.1]].
+
 > [!remark]- Connections
-> - [[§8 Invertibility and Unit Groups#^prop-8-1|493 Prop. §8.1]] (invertibility criterion). For a prime modulus every nonzero class is invertible; Fermat's little theorem is the next step, [[§24★ Congruence Modulo a Prime|§24★]].
+> - [[§8 Invertibility and Unit Groups#^prop-8-1|493 Prop. §8.1]] (invertibility criterion).
 
 > [!example] Example §21.5: Computing Inverses
 > (a) In $\mathbb{Z}_{10}$ the invertible elements are $[1], [3], [7], [9]$ (the rows of Example §21.3 containing $1$), with $[1]^{-1} = [1]$, $[3]^{-1} = [7]$, $[7]^{-1} = [3]$, $[9]^{-1} = [9]$.

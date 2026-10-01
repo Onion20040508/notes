@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 20 · MAT 200 lecture (syllabus week 11: linear congruences). No homework survives for this chapter.*
 
-This section solves the linear congruence $ax \equiv b \pmod m$ completely: it has a solution exactly when $\gcd(a, m)$ divides $b$, and then it has $\gcd(a, m)$ solutions modulo $m$. The key is that a linear congruence is a linear diophantine equation in disguise ([[§18★ Linear Diophantine Equations|§18★]]), so the Euclidean algorithm ([[§16 The Euclidean Algorithm|§16]]) finds the solutions. Throughout, $m$ is a fixed positive integer.
+This section solves the linear congruence $ax \equiv b \pmod m$ completely: it has a solution exactly when $\gcd(a, m)$ divides $b$, and then it has $\gcd(a, m)$ solutions modulo $m$. The key is that a linear congruence is a linear diophantine equation in disguise ([[§18★ Linear Diophantine Equations|§18★]]), so the Euclidean algorithm ([[§16 The Euclidean Algorithm#^thm-16-3|Theorem §16.3]]) finds the solutions. Throughout, $m$ is a fixed positive integer.
 
 ## 20.1 A Criterion for the Existence of Solutions
 
@@ -74,7 +74,7 @@ Propositions [[§19 Congruence of Integers#^prop-19-6|§19.6]] and [[§19 Congru
 
 ^ex-20-2
 
-Proposition §20.1 gives a necessary condition: if there is a solution, every common divisor of $a$ and $m$ divides $b$. "Every common divisor" sounds like a lot to check, but all common divisors divide $\gcd(a, m)$ (Eccles Corollary 17.2.1, [[§17 Consequences of the Euclidean Algorithm|§17]]), so one divisibility captures it.
+Proposition §20.1 gives a necessary condition: if there is a solution, every common divisor of $a$ and $m$ divides $b$. "Every common divisor" sounds like a lot to check, but all common divisors divide $\gcd(a, m)$ ([[§17 Consequences of the Euclidean Algorithm#^cor-17-2|Corollary §17.2]]), so one divisibility captures it.
 
 > [!theorem] Corollary §20.2: The gcd Condition Is Necessary
 > If the linear congruence $ax \equiv b \pmod m$ has a solution, then $\gcd(a, m)$ divides $b$.
@@ -138,7 +138,7 @@ Putting together Theorem §20.3, Proposition [[§19 Congruence of Integers#^prop
 > ax \equiv b \pmod m \iff \frac{a}{d}\, x \equiv \frac{b}{d} \pmod{m_1} .
 > $$
 >
-> The integers $a/d$ and $m_1$ are coprime (by Bézout $d = ar + ms$, so $1 = (a/d) r + m_1 s$). By Theorem [[§20 Linear Congruences#^thm-20-3|§20.3]] the right-hand congruence has a solution, unique modulo $m_1$. So solutions exist.
+> The integers $a/d$ and $m_1$ are coprime (by Bézout, [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]], $d = ar + ms$, so $1 = (a/d) r + m_1 s$; cf. [[§11 Properties of Finite Sets#^prop-11-10|Proposition §11.10]]). By Theorem [[§20 Linear Congruences#^thm-20-3|§20.3]] the right-hand congruence has a solution, unique modulo $m_1$. So solutions exist.
 >
 > *Counting.* Let $r_1 \in R_{m_1}$ represent the unique solution modulo $m_1$, so that an integer $x$ is a solution if and only if $x \equiv r_1 \pmod{m_1}$. Every integer $x$ is congruent modulo $m$ to exactly one $r \in R_m$ (Proposition [[§19 Congruence of Integers#^prop-19-4|§19.4]]), and since $m_1 \mid m$, $\ x \equiv r \pmod m$ implies $x \equiv r \pmod{m_1}$; so $x$ is a solution iff $r$ is, i.e. iff $r \equiv r_1 \pmod{m_1}$, i.e. iff $r = r_1 + m_1 q$ for some $q \in \mathbb{Z}$. For such $r$, using $0 \leq r_1 < m_1$ and $m = m_1 d$,
 >
@@ -150,7 +150,7 @@ Putting together Theorem §20.3, Proposition [[§19 Congruence of Integers#^prop
 
 ^pf-20-4
 
-*Uses:* [[§20 Linear Congruences#^cor-20-2|§20.2]], [[§20 Linear Congruences#^thm-20-3|§20.3]], [[§19 Congruence of Integers#^prop-19-4|§19.4]], [[§19 Congruence of Integers#^prop-19-6|§19.6]], [[§17 Consequences of the Euclidean Algorithm|§17]] (Bézout)
+*Uses:* [[§20 Linear Congruences#^cor-20-2|§20.2]], [[§20 Linear Congruences#^thm-20-3|§20.3]], [[§19 Congruence of Integers#^prop-19-4|§19.4]], [[§19 Congruence of Integers#^prop-19-6|§19.6]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]]
 
 > [!remark] Remark: The Degenerate Case $a = 0$
 > At first sight Theorem §20.4 says nothing sensible when $a = 0$; checking it there is a good test. Then $\gcd(0, m) = m$, so it says: $0 \cdot x \equiv b \pmod m$ is solvable iff $m \mid b$, and then there are $m$ solutions modulo $m$. Indeed the congruence reads $0 \equiv b \pmod m$, which does not involve $x$: it holds for every $x$ when $m \mid b$ (all $m$ remainders are solutions) and for no $x$ otherwise. A general result that fails in such a simple case would signal something missed.
@@ -191,7 +191,7 @@ Now a systematic method, which also proves Theorem §20.3. By definition, $ax \e
 *Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]], [[§9 Injections, Surjections and Bijections|§9]] (a map with a two-sided inverse is a bijection)
 
 > [!proof]+ Proof of Theorem §20.3
-> Let $a$ and $m$ be coprime. By Bézout there are integers $r, s$ with $ar + ms = 1$; multiplying by $b$, $\ a(rb) + m(sb) = b$. So the diophantine equation $ax + my = b$ has the solution $(rb, sb)$ — this is Eccles's Theorem 18.2.1 in the case $\gcd(a, m) = 1$ — and by Proposition [[§20 Linear Congruences#^prop-20-5|§20.5]], $x_0 = rb$ solves $ax \equiv b \pmod m$.
+> Let $a$ and $m$ be coprime. By Bézout ([[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]) there are integers $r, s$ with $ar + ms = 1$; multiplying by $b$, $\ a(rb) + m(sb) = b$. So the diophantine equation $ax + my = b$ has the solution $(rb, sb)$ — this is [[§18★ Linear Diophantine Equations#^thm-18-1|Theorem §18.1]] (Eccles 18.2.1) in the case $\gcd(a, m) = 1$ — and by Proposition [[§20 Linear Congruences#^prop-20-5|§20.5]], $x_0 = rb$ solves $ax \equiv b \pmod m$.
 >
 > *Uniqueness modulo $m$.* For any integer $x$,
 >
@@ -203,7 +203,7 @@ Now a systematic method, which also proves Theorem §20.3. By definition, $ax \e
 
 ^pf-20-3
 
-*Uses:* [[§20 Linear Congruences#^prop-20-5|§20.5]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§17 Consequences of the Euclidean Algorithm|§17]] (Bézout), [[§18★ Linear Diophantine Equations|§18★]]
+*Uses:* [[§20 Linear Congruences#^prop-20-5|§20.5]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]], [[§18★ Linear Diophantine Equations#^thm-18-1|§18.1]]
 
 The proof is constructive: the Euclidean algorithm produces $r$ and $s$, hence the solution.
 
@@ -268,7 +268,7 @@ The correspondence also runs the other way: congruence techniques solve diophant
 > \end{aligned}
 > $$
 >
-> Substituting, $63y = 35 - 140(7 + 9q) = -945 - 1260q$, so $y = -15 - 20q$. The solutions are $(x, y) = (7 + 9q, \ -15 - 20q)$, $q \in \mathbb{Z}$ — the solution set of Eccles Example 18.4.2, described differently.
+> Substituting, $63y = 35 - 140(7 + 9q) = -945 - 1260q$, so $y = -15 - 20q$. The solutions are $(x, y) = (7 + 9q, \ -15 - 20q)$, $q \in \mathbb{Z}$ — the solution set of [[§18★ Linear Diophantine Equations#^ex-18-3|Example §18.3]] (Eccles 18.4.2), described differently.
 >
 > *Eccles: Example 20.2.4*
 

@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # B7 Identical Particles
 ← [[· B6 Spin]] · ↑ [[Quantum Mechanics]] · [[· B8 Time-Independent Perturbation Theory]] →
 
-**Builds on:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (2), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (3), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (4), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (2), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (2), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (6), [[· B6 Spin|B6 Spin]] (4)
-**Used by:** [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (2)
+**Builds on:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (2), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (4), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (4), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (2), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (2), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (6), [[· B6 Spin|B6 Spin]] (4)
+**Used by:** [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (3)
 
 ## Sections
 - [[§B7.1 Two-Particle Systems, Bosons and Fermions]] — Griffiths 5.1; Greensite 15

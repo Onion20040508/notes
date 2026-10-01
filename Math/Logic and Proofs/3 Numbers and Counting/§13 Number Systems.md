@@ -74,7 +74,7 @@ For example $\langle 2/3 \rangle = \langle 8/12 \rangle = \langle (-14)/(-21) \r
 
 *Uses:* [[§13 Number Systems#^prop-13-1|§13.1]], [[§11 Properties of Finite Sets#^prop-11-10|§11.10]], [[§13 Number Systems#^def-13-2|Def. §13.2]]
 
-The lowest-terms fraction is in fact unique; this needs Euclid's lemma and is Eccles Exercise 17.6 ([[§17 Consequences of the Euclidean Algorithm|§17]]).
+The lowest-terms fraction is in fact unique; this needs Euclid's lemma and is Eccles Exercise 17.6 ([[§17 Consequences of the Euclidean Algorithm#^ex-17-7|Example §17.7]]).
 
 To see how sums look in terms of fractions, let $q_1 = \langle a/b \rangle$ and $q_2 = \langle c/d \rangle$, so $bq_1 = a$ and $dq_2 = c$. Then $bdq_1 = ad$ and $bdq_2 = bc$, so by distributivity $bd(q_1 + q_2) = ad + bc$: $q_1 + q_2$ is represented by $(ad + bc)/bd$. Similarly $bd\,q_1 q_2 = ac$, so $q_1 q_2$ is represented by $ac/bd$.
 
@@ -120,7 +120,7 @@ $$
 $$
 
 > [!remark]- Connections
-> - Developed further in: [[§22 Partitions and Equivalence Relations|§22]] constructs $\Q$ as the set of classes of pairs $(a, b)$, $b \ne 0$, under $(a, b) \sim (c, d) \iff ad = bc$, the relation of Proposition [[§13 Number Systems#^prop-13-1|§13.1]], and verifies the field axioms.
+> - Developed further in: [[§22 Partitions and Equivalence Relations#^def-22-6|Def. §22.6]] constructs $\Q$ as the set of classes of pairs $(a, b)$, $b \ne 0$, under $(a, b) \sim (c, d) \iff ad = bc$, the relation of Proposition [[§13 Number Systems#^prop-13-1|§13.1]]; the operations are well defined by [[§22 Partitions and Equivalence Relations#^prop-22-8|§22.8]] and $\Q$ is a field by [[§22 Partitions and Equivalence Relations#^thm-22-9|§22.9]].
 > - "Well defined" as a general notion: [[§7 The Group ℤ∕nℤ#^def-7-2|493 Def. §7.2]]; $\Q$ is a field, [[§2 The Set ℚ of Rational Numbers#^def-2-4|451 Def. §2.4]].
 
 ## 13.2 The Irrationality of √2
@@ -140,7 +140,7 @@ A good number system should measure every length. By Pythagoras's theorem the di
 ^thm-13-4
 
 > [!proof]+ Proof
-> First, *if $a^2$ is even then $a$ is even*: if $a$ is odd then $a = 2q + 1$ ([[§11 Properties of Finite Sets#^prop-11-11|Proposition §11.11]]), and $a^2 = 2(2q^2 + 2q) + 1$ is odd, by the same proposition.
+> First, *if $a^2$ is even then $a$ is even* ([[§4 Proof by Contradiction#^ex-4-2|Example §4.2]]; Eccles Problems I Q7): if $a$ is odd then $a = 2q + 1$ ([[§11 Properties of Finite Sets#^prop-11-11|Proposition §11.11]]), and $a^2 = 2(2q^2 + 2q) + 1$ is odd, by the same proposition.
 >
 > Suppose for contradiction that $q \in \Q$ with $q^2 = 2$. Write $q = a/b$ in lowest terms (Proposition [[§13 Number Systems#^prop-13-2|§13.2]]), so $(a, b) = 1$. Then
 >
@@ -152,13 +152,13 @@ A good number system should measure every length. By Pythagoras's theorem the di
 
 ^pf-13-4
 
-*Uses:* [[§13 Number Systems#^prop-13-2|§13.2]], [[§11 Properties of Finite Sets#^prop-11-11|§11.11]], [[§11 Properties of Finite Sets#^def-11-2|Def. §11.2]], [[§4 Proof by Contradiction|§4]]
+*Uses:* [[§13 Number Systems#^prop-13-2|§13.2]], [[§11 Properties of Finite Sets#^prop-11-11|§11.11]], [[§11 Properties of Finite Sets#^def-11-2|Def. §11.2]], [[§4 Proof by Contradiction#^ex-4-2|Ex. §4.2]]
 
 > [!remark]- Connections
 > - The same theorem in 451: [[§2 The Set ℚ of Rational Numbers#^thm-2-1|451 Thm. §2.1]]; its generalization to all non-square integers, [[§2 The Set ℚ of Rational Numbers#^prop-2-2|451 Prop. §2.2]], is proved there with unique factorization (here [[§23 The Sequence of Prime Numbers|§23]]).
 
 > [!example] Example §13.1: √3 Is Irrational
-> There is no rational number whose square is $3$. (Assume, as proved in [[§15 The Division Theorem|§15]] (Eccles Proposition 15.2.1), that $3 \mid a^2$ if and only if $3 \mid a$.)
+> There is no rational number whose square is $3$. (Assume, as proved in [[§15 The Division Theorem#^prop-15-3|Proposition §15.3]] (Eccles Proposition 15.2.1), that $3 \mid a^2$ if and only if $3 \mid a$.)
 >
 > Suppose $x \in \Q$ with $x^2 = 3$, and write $x = p/q$ in lowest terms, $(p, q) = 1$. Then $p^2 = 3q^2$, so $3 \mid p^2$ and hence $3 \mid p$: $p = 3a$ with $a \in \Z$. Substituting, $9a^2 = 3q^2$, so $q^2 = 3a^2$ and as before $3 \mid q$. Then $3$ is a common divisor of $p$ and $q$, contradicting $(p, q) = 1$. So no such $x$ exists.
 >
@@ -167,7 +167,7 @@ A good number system should measure every length. By Pythagoras's theorem the di
 
 ^ex-13-1
 
-*Uses:* [[§13 Number Systems#^prop-13-2|§13.2]], [[§15 The Division Theorem|§15]]
+*Uses:* [[§13 Number Systems#^prop-13-2|§13.2]], [[§15 The Division Theorem#^prop-15-3|§15.3]]
 
 > [!example] Example §13.2: Where the Argument Fails for 4
 > Mimic the proof for $4$: $q = a/b$ in lowest terms and $q^2 = 4$ give $a^2 = 4b^2$, so $4 \mid a^2$. But it does not follow that $4 \mid a$ ($a = 2$); all one gets is $2 \mid a$, $a = 2a_1$, and then $4a_1^2 = 4b^2$, i.e. $a_1^2 = b^2$, which says nothing about the parity of $b$. No contradiction arises, as there should not be: $2 = 2/1$ has square $4$. The step that matters in Theorem [[§13 Number Systems#^thm-13-4|§13.4]] is "$2 \mid a^2 \Rightarrow 2 \mid a$" together with the factor $2$ (not $4$) on the right.
@@ -244,7 +244,7 @@ The inequalities are $\le$, not $<$, so that rational numbers such as finite dec
 
 ^pf-13-5
 
-*Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[Archimedean Property|451 Thm. §4.5]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]], [[§5 The Induction Principle|§5]]
 
 > [!remark]- Connections
 > - The two facts used about $\R$: the [[Completeness Axiom]] ([[§4 The Completeness Axiom#^def-4-4|451 Def. §4.4]]) and the [[Archimedean Property]] ([[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]]), which 451 derives from completeness. A construction of $\R$ from $\Q$: [[§6 Dedekind Cuts#^def-6-1|451 Def. §6.1]] (Dedekind cuts).
@@ -274,7 +274,7 @@ The inequalities are $\le$, not $<$, so that rational numbers such as finite dec
 
 ^ex-13-4
 
-*Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§13 Number Systems#^prop-13-5|§13.5]], [[Archimedean Property|451 Thm. §4.5]]
+*Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§13 Number Systems#^prop-13-5|§13.5]], [[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]]
 
 > [!example] Example §13.5: The First Decimals of √3
 > Since $1^2 < 3 < 2^2$, $1.7^2 = 2.89 < 3 < 3.24 = 1.8^2$ and $1.73^2 = 2.9929 < 3 < 3.0276 = 1.74^2$, and $a < b \iff a^2 < b^2$ for non-negative reals, we get $1.73 < \sqrt3 < 1.74$: $\sqrt3 = 1.73\ldots$

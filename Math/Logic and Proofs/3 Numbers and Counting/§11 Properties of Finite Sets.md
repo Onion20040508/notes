@@ -49,7 +49,7 @@ The key step in showing that cardinality is well defined was [[§10 Counting#^le
 
 ^pf-10-2
 
-*Uses:* [[§5 The Induction Principle|§5]], [[§9 Injections, Surjections and Bijections|§9]] (composites of injections are injective)
+*Uses:* [[§5 The Induction Principle|§5]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]] (composites of injections)
 
 ![[m250-11-1.svg]]
 *Case (ii) of the inductive step with $m_1 = 4$, $k + 1 = 5$: $f$ (black) sends $i_0 = 2$ to the top value $5$ (red). The map $g$ (blue) skips $i_0$, so $f \circ g : \N_3 \to \N_5$ never takes the value $5$ and is an injection into $\N_4$, to which the inductive hypothesis applies.*
@@ -68,7 +68,7 @@ The lemma passes at once from the standard sets $\N_n$ to arbitrary finite sets,
 
 ^pf-11-1
 
-*Uses:* [[§10 Counting#^lem-10-2|§10.2]], [[§9 Injections, Surjections and Bijections|§9]]
+*Uses:* [[§10 Counting#^lem-10-2|§10.2]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]]
 
 For example, if a group of people sit in a room on separate chairs, the number of people is at most the number of chairs. The contrapositive is the form usually quoted; Dirichlet called it the "drawer principle".
 

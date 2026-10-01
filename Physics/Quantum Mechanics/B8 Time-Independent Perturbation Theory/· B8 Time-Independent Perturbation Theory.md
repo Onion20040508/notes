@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # B8 Time-Independent Perturbation Theory
 ← [[· B7 Identical Particles]] · ↑ [[Quantum Mechanics]] · [[· B9 The Variational Principle and the WKB Approximation]] →
 
-**Builds on:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (2), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (8), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (13), [[· B6 Spin|B6 Spin]] (13)
-**Used by:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (1), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (6)
+**Builds on:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (2), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (8), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (12), [[· B6 Spin|B6 Spin]] (17)
+**Used by:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (5)
 
 ## Sections
 - [[§B8.1 Nondegenerate Perturbation Theory]] — Griffiths 7.1; Greensite 17

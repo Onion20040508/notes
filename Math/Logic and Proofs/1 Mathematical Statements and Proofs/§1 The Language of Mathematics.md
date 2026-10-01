@@ -130,16 +130,14 @@ Mathematics proceeds by formulating statements and deciding whether they are tru
 The negation of a statement is obtained by inserting "not", but this needs care, since everyday speech uses "not" loosely.
 
 > [!example] Example §1.4: Negations Need Care
-> **(a)** Let $f(x)$ be a polynomial with real coefficients and consider
-> (i) *For real numbers $a$, if $f(a) = 0$ then $a$ is positive.*
-> Candidate negations:
-> (ii) for real $a$, if $f(a) = 0$ then $a$ is negative;
-> (iii) for real $a$, if $f(a) = 0$ then $a$ is non-positive;
-> (iv) for real $a$, if $f(a) \neq 0$ then $a$ is positive;
-> (v) for real $a$, if $a$ is positive then $f(a) = 0$;
-> (vi) for real $a$, if $a$ is positive then $f(a) \neq 0$;
-> (vii) for real $a$, if $a$ is non-positive then $f(a) \neq 0$;
-> (viii) for some non-positive real number $a$, $f(a) = 0$.
+> **(a)** Let $f(x)$ be a polynomial with real coefficients and consider the statement (i) *For real numbers $a$, if $f(a) = 0$ then $a$ is positive*, and the candidate negations:
+> - (ii) for real $a$, if $f(a) = 0$ then $a$ is negative;
+> - (iii) for real $a$, if $f(a) = 0$ then $a$ is non-positive;
+> - (iv) for real $a$, if $f(a) \neq 0$ then $a$ is positive;
+> - (v) for real $a$, if $a$ is positive then $f(a) = 0$;
+> - (vi) for real $a$, if $a$ is positive then $f(a) \neq 0$;
+> - (vii) for real $a$, if $a$ is non-positive then $f(a) \neq 0$;
+> - (viii) for some non-positive real number $a$, $f(a) = 0$.
 >
 > Only (viii) is the negation: a negation must have the opposite truth value to (i) for *every* $f$. For $f(x) = x^3 - x = x(x+1)(x-1)$, statement (i) is false, since $f(0) = 0$ but $0$ is not positive. Its negation must then be true, and (viii) is (take $a = 0$), whereas each of (ii)–(vii) is false for this $f$: (ii) and (iii) fail at $a = 1$, (iv) at $a = -2$, (v) at $a = 2$, (vi) at $a = 1$ and (vii) at $a = 0$. The negation of (i) is analysed formally in [[§2 Implications#^ex-2-2|Ex. §2.2]].
 >
