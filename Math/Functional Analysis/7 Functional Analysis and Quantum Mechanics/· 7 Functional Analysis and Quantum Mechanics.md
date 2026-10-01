@@ -9,9 +9,9 @@ tags: [chapter, functional-analysis, companion]
 
 This chapter is a companion to the course, not part of it: nothing here was covered in lecture. Its purpose is to translate the formalism of quantum mechanics — kets and bras, “inserting a complete set of states,” position eigenstates — into the results of the preceding chapters, and to say precisely which physics statements are theorems, which need reinterpretation, and which are false as usually stated. It is written to grow: each new part of the course (operators, adjoints, spectral theory) will add a section here.
 
-**Builds on:** [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (3), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (1), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (29)
+**Builds on:** [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (3), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (1), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (30)
 **Used by:** —
-**Builds on (other subjects):** [[Measure Theory]] (3)
+**Builds on (other subjects):** [[Linear Algebra]] (1), [[Measure Theory]] (3)
 
 ## Sections
 - [[§22 Bras, Kets, and the Riesz Map]]

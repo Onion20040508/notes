@@ -11,6 +11,7 @@ tags: [functional-analysis, hub]
 - [[§10 New Normed Spaces from Old#^thm-10-8|Theorem §10.8: Quotient Norm]], in [[§10 New Normed Spaces from Old]]
 
 ## Its proof uses
+- [[§1 Linear Spaces#^def-1-2|Definition §1.2: Linear Subspace]]
 - [[§1 Linear Spaces#^prop-1-6|Proposition §1.6: X/Y is a Linear Space]]
 - [[§1 Linear Spaces#^def-1-7|Definition §1.7: Equivalence Class and Quotient Space]]
 - [[§8 Normed Linear Spaces#^def-8-1|Definition §8.1: Norm; Normed Linear Space]]

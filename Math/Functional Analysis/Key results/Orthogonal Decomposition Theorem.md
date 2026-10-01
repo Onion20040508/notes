@@ -14,8 +14,8 @@ tags: [functional-analysis, hub]
 - [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3|Definition §2.3: Convex Set]]
 - [[§16 Definition and Examples#^def-16-1|Definition §16.1: Inner Product; Scalar Product]]
 - [[§18 Projection and Orthogonal Decomposition#^def-18-1|Definition §18.1: Orthogonality; Orthogonal Complement]]
-- [[§18 Projection and Orthogonal Decomposition#^thm-18-2|Theorem §18.2: Closest Point in a Closed Convex Set]]
 - [[§18 Projection and Orthogonal Decomposition#^def-18-2|Definition §18.2: Internal Direct Sum]]
+- [[§18 Projection and Orthogonal Decomposition#^thm-18-2|Theorem §18.2: Closest Point in a Closed Convex Set]]
 - [[§18 Projection and Orthogonal Decomposition#^prop-18-3|Proposition §18.3: M^perp is a Closed Subspace]]
 
 ## Used in (Functional Analysis)

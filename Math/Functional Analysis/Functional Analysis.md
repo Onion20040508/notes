@@ -57,8 +57,8 @@ graph TD
   X2 -.->|7| C5
   X2 -.->|3| C7
   X4 -.->|2| C2
-  X4 -.->|8| C3
-  X4 -.->|8| C4
+  X4 -.->|9| C3
+  X4 -.->|11| C4
   X4 -.->|3| C5
 ```
 
@@ -109,6 +109,7 @@ The results from other subjects that this course's proofs and definitions cite m
 
 **[[Linear Algebra]]**
 - [[Triangle inequality]] (1)
+- [[§4 Span and Linear Independence#^ladr-2-22|2.22 Length of linearly independent list ≤ length of spanning list]] (1)
 
 **[[Measure Theory]]**
 - [[Countable Union of Countable Sets is Countable]] (4)
@@ -125,13 +126,13 @@ The results from other subjects that this course's proofs and definitions cite m
 
 **[[Single Variable Analysis]]**
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8: Cauchy Implies Convergent]] (4)
+- [[§33 Properties of the Riemann Integral#^thm-33-3|Theorem §33.3: Monotonicity of the Integral]] (3)
 - [[Bolzano–Weierstrass Theorem]] (2)
 - [[Fundamental Theorem of Calculus]] (2)
-- [[§33 Properties of the Riemann Integral#^thm-33-3|Theorem §33.3: Monotonicity of the Integral]] (2)
+- [[§33 Properties of the Riemann Integral#^thm-33-4|Theorem §33.4: Absolute Values]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-5|Theorem §33.5: Additivity over Subintervals]] (2)
+- [[§33 Properties of the Riemann Integral#^thm-33-2|Theorem §33.2: Linearity]] (2)
 - [[Completeness Axiom]] (1)
-- [[§4 The Completeness Axiom#^cor-4-4|Corollary §4.4: Completeness for Infima]] (1)
-- [[Characterization of the Supremum]] (1)
 
 ## Workhorse examples
 - [[Norms on ℝⁿ and their unit balls]]: the 1-, 2- and max norms; disk, square and diamond as unit balls and gauges

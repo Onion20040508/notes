@@ -221,7 +221,7 @@ The pattern of the [[§3 Statement and Motivation#^thm-3-2|Hahn–Banach]] proof
 ## Technique 15: Separability by Truncation and Rational Approximation
 
 > [!remark] Remark: Strategy
-> To show a space is separable, write down a countable set built from finitely many rational parameters (finitely many rational coordinates, rational coefficients on finitely many basis vectors, rational heights on rational rectangles). Countability: a countable union over the number of parameters of countable products. Density: first cut off a small “tail” (the tail of a convergent series or expansion, or the part of a function outside a large box), then replace the finitely many remaining parameters by nearby rationals. The first step is what fails in $\ell^\infty$ and $L^\infty$, where the norm is a supremum rather than a sum or integral.
+> To show a space is separable, write down a countable set built from finitely many rational parameters (finitely many rational coordinates, rational coefficients on finitely many basis vectors, rational heights on rational rectangles). Countability: a [[Countable Union of Countable Sets is Countable|countable union]] over the number of parameters of countable products. Density: first cut off a small “tail” (the tail of a convergent series or expansion, or the part of a function outside a large box), then replace the finitely many remaining parameters by nearby rationals. The first step is what fails in $\ell^\infty$ and $L^\infty$, where the norm is a supremum rather than a sum or integral.
 
 ^rem-t15
 

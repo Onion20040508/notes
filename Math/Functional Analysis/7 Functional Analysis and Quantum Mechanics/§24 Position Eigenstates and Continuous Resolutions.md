@@ -43,7 +43,7 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 
 ^pf-24-2
 
-*Uses:* [[§20 Orthonormal Sets and Bases#^prop-20-15|§20.15]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 §19.20]], [[§24 Position Eigenstates and Continuous Resolutions#^prop-24-1|§24.1]], [[§20 Orthonormal Sets and Bases#^def-20-4|Def. §20.4]], [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]]
+*Uses:* [[§20 Orthonormal Sets and Bases#^prop-20-15|§20.15]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 §19.20]], [[§24 Position Eigenstates and Continuous Resolutions#^prop-24-1|§24.1]], [[§20 Orthonormal Sets and Bases#^def-20-4|Def. §20.4]], [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]], [[§4 Span and Linear Independence#^ladr-2-22|LADR 2.22]]
 
 > [!remark]- Connections
 > - Separability of $L^p(E)$, proved in Chapter 5: [[§20 Orthonormal Sets and Bases#^prop-20-15|§20.15]]; its home in measure theory: [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 §19.20]].

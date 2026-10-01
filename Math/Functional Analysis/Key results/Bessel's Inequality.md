@@ -12,8 +12,8 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses
 - [[§20 Orthonormal Sets and Bases#^lem-20-2|Lemma §20.2: Finite Bessel Inequality]]
-- [[§20 Orthonormal Sets and Bases#^def-20-3|Definition §20.3: Sums of Non-Negative Families]]
 - [[§20 Orthonormal Sets and Bases#^lem-20-3|Lemma §20.3: The Sum Does Not Depend on the Enumeration]]
+- [[§20 Orthonormal Sets and Bases#^def-20-3|Definition §20.3: Sums of Non-Negative Families]]
 - [[§20 Orthonormal Sets and Bases#^prop-20-4|Proposition §20.4: Only Countably Many Coefficients are Nonzero]]
 
 ## Used in (Functional Analysis)

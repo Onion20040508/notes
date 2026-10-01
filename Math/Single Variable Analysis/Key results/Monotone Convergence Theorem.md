@@ -19,5 +19,8 @@ tags: [real-analysis, hub]
 - [[§12 Measurable Functions#^rem-12-4|Remark: Recalling Limsup and Liminf for Sequences]]
 - [[§14 The Lebesgue Integral for Simple Functions#^thm-14-4|Theorem §14.4: Monotone Convergence Theorem (MCT)]]
 
+## Used in (Functional Analysis)
+- [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|Theorem §13.5: ℓ^p is a Banach Space]]
+
 ## Connections
 - Equivalent to the [[Completeness Axiom]] over an ordered field. The tool for recursively defined sequences (§10) and for series with nonnegative terms (§14).
