@@ -1,0 +1,29 @@
+% Figure for Oscillations, Waves and Optics §A6.4 (planar view of the Michelson interferometer: source S, half-silvered mirror M at 45 deg, movable mirror M1 at distance d1, fixed mirror M2 at distance d2 behind the compensator plate C; both returning beams reach the observer).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]},
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=2.2mm]}}}}, mid/.default=0.55]
+  % rays (slightly offset so that outgoing and returning beams can be told apart)
+  \draw[figB, thick, mid] (-3.4,0) -- (0,0);
+  \draw[figB, thick, mid] (-0.07,0) -- (-0.07,3.0);
+  \draw[figB, thick, mid=0.25, mid=0.8] (0.07,3.0) -- (0.07,-2.6);
+  \draw[figR, thick, mid] (0,0.0) -- (3.6,0.0);
+  \draw[figR, thick, mid] (3.6,-0.14) -- (0.14,-0.14);
+  \draw[figR, thick, mid] (0.14,-0.14) -- (0.14,-2.6);
+  % half-silvered mirror M and compensator C
+  \fill[black!45, rotate around={45:(0,0)}] (-0.75,-0.05) rectangle (0.75,0.05);
+  \node[font=\scriptsize, anchor=south east] at (-0.45,0.45) {$M$};
+  \fill[black!20, draw=black!45, rotate around={45:(1.6,0)}] (0.85,-0.05) rectangle (2.35,0.05);
+  \node[font=\scriptsize, anchor=south east] at (1.25,0.45) {$C$};
+  % mirrors
+  \fill[black!70] (-0.7,3.0) rectangle (0.7,3.12);
+  \node[font=\scriptsize, anchor=south] at (0,3.12) {$M_1$ (movable)};
+  \draw[<->, black!60, thin] (0.95,2.75) -- (0.95,3.4) node[right, font=\scriptsize] {$\Delta d$};
+  \fill[black!70] (3.6,-0.7) rectangle (3.72,0.7);
+  \node[font=\scriptsize, anchor=west] at (3.72,0) {$M_2$};
+  % source and observer
+  \fill[black!25] (-3.7,-0.5) rectangle (-3.4,0.5);
+  \node[font=\scriptsize, anchor=east] at (-3.7,0) {$S$};
+  \node[font=\scriptsize, anchor=north] at (0.1,-2.65) {observer};
+  % distances
+  \draw[<->, black!60, thin] (-1.05,0) -- (-1.05,3.0) node[midway, left, font=\scriptsize] {$d_1$};
+  \draw[<->, black!60, thin] (0,1.05) -- (3.6,1.05) node[midway, above, font=\scriptsize] {$d_2$};
+\end{tikzpicture}

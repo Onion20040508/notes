@@ -1,0 +1,30 @@
+% Figure for Oscillations, Waves and Optics §A5.5 (two-lens telescope with coincident focal planes, to scale along the axis, vertical scale doubled: f_obj = 6, f_eye = 2; parallel rays at slope -0.1 focus at height h = -0.6 in the common focal plane and leave the eyepiece parallel at slope +0.3, so M = -f_obj/f_eye = -3.)
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.0mm]}, x=0.9cm, y=1.8cm,
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position 0.5 with {\arrow{Stealth[length=2.0mm]}}}}]
+  \draw[black!55, thin] (-2.7,0) -- (11.3,0);
+  \draw[black!75, thick, {Stealth[length=2mm]}-{Stealth[length=2mm]}] (0,-0.9) -- (0,0.9);
+  \draw[black!75, thick, {Stealth[length=2mm]}-{Stealth[length=2mm]}] (8,-1.15) -- (8,0.65);
+  \node[font=\scriptsize, anchor=south] at (0,0.92) {objective};
+  \node[font=\scriptsize, anchor=south] at (8,0.67) {eyepiece};
+  \draw[black!45, thin, dashed] (6,-1.1) -- (6,0.5);
+  \node[black!60, font=\scriptsize, anchor=south] at (6,0.5) {common focal plane};
+  % incoming parallel rays
+  \foreach \a/\b in {0.75/0.5, 0.25/0, -0.25/-0.5} \draw[figB, thick, mid] (-2.5,\a) -- (0,\b);
+  % to the image point in the focal plane
+  \foreach \b/\c in {0.5/-0.9667, 0/-0.8, -0.5/-0.6333} \draw[figB, thick] (0,\b) -- (8,\c);
+  % after the eyepiece: parallel again, slope +0.3
+  \foreach \c in {-0.9667, -0.8, -0.6333} \draw[figR, thick, mid] (8,\c) -- (11,{\c+0.9});
+  % construction line through the eyepiece centre
+  \draw[black!45, thin, dotted] (6,-0.6) -- (10.2,0.66);
+  % image in the focal plane
+  \draw[->, very thick, figR] (6,0) -- (6,-0.6);
+  \node[figR, font=\scriptsize, anchor=east] at (5.95,-0.3) {$h$};
+  % angles
+  \draw[figB] ([shift={(180:1.9cm)}]0,0) arc[start angle=180, end angle=168.69, radius=1.9cm];
+  \node[figB, font=\scriptsize, anchor=east] at (-2.15,0.2) {$\theta_{\text{object}}$};
+  \draw[figR] ([shift={(0:1.6cm)}]8,0) arc[start angle=0, end angle=30.96, radius=1.6cm];
+  \node[figR, font=\scriptsize, anchor=west] at (9.85,0.3) {$\theta_{\text{image}}$};
+  % focal lengths
+  \draw[<->, black!55] (0,-1.3) -- (6,-1.3) node[midway, below, font=\scriptsize, black] {$f_{\text{obj}}$};
+  \draw[<->, black!55] (6,-1.3) -- (8,-1.3) node[midway, below, font=\scriptsize, black] {$f_{\text{eye}}$};
+\end{tikzpicture}

@@ -1,0 +1,30 @@
+% Figure for Oscillations, Waves and Optics §A5.2 (apparent depth, to scale: object 4.0 units deep in water n_1 = 1.33, viewed from air; exact refraction of two rays at x = +-1.0, theta_1 = 14.0 deg, theta_2 = 18.8 deg; their backward extensions meet 2.93 units deep, near the paraxial value 4.0/1.33 = 3.01).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}, x=0.75cm, y=0.75cm,
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=2.2mm]}}}}]
+  \fill[figB!8] (-3.6,0) rectangle (3.6,-4.75);
+  \draw[black!70, thick] (-3.6,0) -- (3.6,0);
+  \node[black!60, font=\scriptsize, anchor=west] at (1.9,0.35) {air, $n_2 = 1.00$};
+  \node[black!60, font=\scriptsize, anchor=west] at (0.9,-4.42) {water, $n_1 = 1.33$};
+  \draw[black!55, dashed, thin] (0,2.7) -- (0,-4.4);
+  \draw[black!55, dashed, thin] (1,2.25) -- (1,-2.3);
+  % rays
+  \draw[figB, thick, mid] (0,-4) -- (1,0);
+  \draw[figB, thick, mid] (0,-4) -- (-1,0);
+  \draw[figR, thick, mid] (1,0) -- (1.886,2.6);
+  \draw[figR, thick, mid] (-1,0) -- (-1.886,2.6);
+  \draw[figR, thin, dashed] (1,0) -- (0,-2.934);
+  \draw[figR, thin, dashed] (-1,0) -- (0,-2.934);
+  % angles at the right refraction point
+  \draw[figB] (1,-1.6) arc (-90:-104.04:1.6);
+  \node[figB, font=\scriptsize] at (0.77,-1.98) {$\theta_1$};
+  \draw[figR] (1,1.6) arc (90:71.18:1.6);
+  \node[figR, font=\scriptsize] at (1.31,1.98) {$\theta_2$};
+  % points
+  \fill[figB] (0,-4) circle (2pt) node[right=2pt, font=\scriptsize] {$P$ (object)};
+  \fill[figR] (0,-2.934) circle (2pt) node[right=2pt, font=\scriptsize] {$Q$ (image)};
+  % eye
+  \node[black!70, font=\scriptsize] at (0,3.0) {to the observer above};
+  % depths
+  \draw[<->, black!55] (-2.9,0) -- (-2.9,-4) node[midway, left, font=\scriptsize, black] {$h_o$};
+  \draw[<->, black!55] (-2.2,0) -- (-2.2,-2.934) node[midway, right, font=\scriptsize, black] {$h_i$};
+\end{tikzpicture}

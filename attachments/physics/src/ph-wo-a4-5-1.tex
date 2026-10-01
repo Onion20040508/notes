@@ -1,0 +1,32 @@
+% Figure for Oscillations, Waves and Optics §A4.5 (top: unpolarized light through two ideal polarizers whose axes make an angle theta; bottom: the field after the first polarizer split into components along and across the second polarizer's axis, theta = 35 deg).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.0mm]}]
+  % ---- left panel: setup, sheets seen obliquely; in-sheet direction (z,y) maps to (0.5 z, y + 0.3 z)
+  \def\th{35}
+  \draw[black!55, ->] (-0.6,0) -- (8.3,0) node[right, font=\scriptsize] {beam};
+  \foreach \x in {2.2,5.4} {
+    \fill[black!6] (\x-0.5,-1.3) -- (\x+0.5,-0.7) -- (\x+0.5,1.3) -- (\x-0.5,0.7) -- cycle;
+    \draw[black!60] (\x-0.5,-1.3) -- (\x+0.5,-0.7) -- (\x+0.5,1.3) -- (\x-0.5,0.7) -- cycle;
+  }
+  \draw[black!70, thick] (2.2,-0.9) -- (2.2,0.9);
+  \draw[black!70, thick] ({5.4-0.5*sin(\th)},{-cos(\th)-0.3*sin(\th)}) -- ({5.4+0.5*sin(\th)},{cos(\th)+0.3*sin(\th)});
+  \node[black!70, font=\scriptsize] at (2.2,-1.65) {polarizer 1};
+  \node[black!70, font=\scriptsize] at (5.4,-1.65) {polarizer 2};
+  % polarization symbols
+  \foreach \a in {0,60,120} \draw[<->, figB] ($(0.5,0)+0.55*({0.5*cos(\a)},{sin(\a)})$) -- ($(0.5,0)-0.55*({0.5*cos(\a)},{sin(\a)})$);
+  \node[figB, font=\scriptsize, align=center] at (0.5,1.05) {unpolarized\\ $I_0$};
+  \draw[<->, figB, thick] (3.8,-0.7) -- (3.8,0.7);
+  \node[figB, font=\scriptsize] at (3.8,1.05) {$I_1 = I_0/2$};
+  \draw[<->, figR, thick] ({7.0-0.5*0.82*sin(\th)},{-0.82*(cos(\th)+0.3*sin(\th))}) -- ({7.0+0.5*0.82*sin(\th)},{0.82*(cos(\th)+0.3*sin(\th))});
+  \node[figR, font=\scriptsize] at (7.1,1.05) {$I = I_1\cos^2\theta$};
+  % ---- right panel: decomposition in the plane of polarizer 2
+  \begin{scope}[xshift=4.6cm, yshift=-5.6cm]
+    \draw[black!55, dashed] (0,0) -- (0,2.9) node[above, font=\scriptsize, align=center] {axis of\\ polarizer 2};
+    \draw[->, figB, very thick] (0,0) -- ({2.6*sin(\th)},{2.6*cos(\th)}) node[right, font=\scriptsize] {$\vec E$};
+    \draw[->, figR, very thick] (0,0) -- (0,{2.6*cos(\th)});
+    \node[figR, font=\scriptsize, anchor=east] at (-0.05,{1.3*cos(\th)}) {$E_0\cos\theta$ passes};
+    \draw[black!45, dashed] ({2.6*sin(\th)},{2.6*cos(\th)}) -- (0,{2.6*cos(\th)});
+    \draw[->, black!55, thick] (0,0) -- ({2.6*sin(\th)},0);
+    \node[black!60, font=\scriptsize, anchor=north] at ({1.5*sin(\th)},-0.1) {$E_0\sin\theta$ absorbed};
+    \draw[figB] (0,0.8) arc (90:{90-\th}:0.8); \node[figB, font=\scriptsize] at (0.28,1.02) {$\theta$};
+  \end{scope}
+\end{tikzpicture}

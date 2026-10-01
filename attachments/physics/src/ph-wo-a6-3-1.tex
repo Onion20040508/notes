@@ -1,0 +1,19 @@
+% Figure for Oscillations, Waves and Optics §A6.3 (thin film of thickness t and index n2 between media n1 and n3: ray 1 reflects at the top surface, ray 2 is refracted, reflects at the bottom surface and emerges parallel to ray 1; incidence drawn oblique for clarity, the text treats normal incidence).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \fill[figB!8] (-2.4,0) rectangle (4.6,-1.4);
+  \draw[black!60, thin] (-2.4,0) -- (4.6,0);
+  \draw[black!60, thin] (-2.4,-1.4) -- (4.6,-1.4);
+  \node[font=\scriptsize, anchor=west] at (3.3,1.2) {$n_1$};
+  \node[font=\scriptsize, anchor=west] at (3.3,-0.7) {film $n_2$};
+  \node[font=\scriptsize, anchor=west] at (3.3,-2.0) {$n_3$};
+  \draw[<->, black!60, thin] (-1.9,0) -- (-1.9,-1.4) node[midway, left, font=\scriptsize] {$t$};
+  \draw[black!40, dashed, thin] (0,0.9) -- (0,-1.7);
+  \draw[figB, thick, ->] (-0.9740,2.4107) -- ($(-0.9740,2.4107)!0.55!(0,0)$);
+  \draw[figB, thick] ($(-0.9740,2.4107)!0.5!(0,0)$) -- (0,0);
+  \node[font=\scriptsize, anchor=east] at (-0.9740,2.4107) {incident};
+  \draw[figB, thick, ->] (0,0) -- (0.9740,2.4107) node[above, font=\scriptsize] {ray 1};
+  \draw[figR, thick, ->] (0,0) -- ($(0,0)!0.55!(0.4100,-1.4000)$);
+  \draw[figR, thick] ($(0,0)!0.5!(0.4100,-1.4000)$) -- (0.4100,-1.4000) -- (0.8199,0.0000);
+  \draw[figR, thick, ->] (0.8199,0.0000) -- (1.7939,2.4107) node[above, font=\scriptsize] {ray 2};
+  \draw[figR, thick, dotted] (0.4100,-1.4000) -- ++(0.21,-0.52) node[below right, font=\scriptsize, figR] {transmitted};
+\end{tikzpicture}

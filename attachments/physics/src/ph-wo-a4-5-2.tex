@@ -1,0 +1,15 @@
+% Figure for Oscillations, Waves and Optics §A4.5 (transmitted intensity over I_1, the intensity after the first polarizer: Malus's law cos^2 theta for two polarizers; cos^2 theta sin^2 theta for a middle polarizer at theta between crossed polarizers; points: the user's PHY 300 lab data for three polarizers divided by I_1 = 135.0 lux).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=11cm, height=6cm, xmin=0, xmax=185, ymin=0, ymax=1.12,
+      xlabel={$\theta$ (degrees)}, ylabel={$I/I_1$}, xtick={0,45,90,135,180}, ytick={0,0.25,0.5,0.75,1},
+      xlabel style={at={(axis description cs:0.5,-0.08)}, anchor=north},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south}]
+    \addplot[figB, domain=0:180, samples=181] {cos(x)^2};
+    \addplot[figR, domain=0:180, samples=181] {cos(x)^2*sin(x)^2};
+    \addplot[only marks, mark=*, mark size=1.4pt, black!70] coordinates {(0,0.004) (10,0.058) (20,0.093) (30,0.143) (40,0.168) (50,0.181) (60,0.211) (70,0.159) (80,0.103) (90,0.017) (100,0.104) (110,0.173) (120,0.183) (130,0.159) (140,0.125) (150,0.134) (160,0.100) (170,0.040) (180,0.004)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:33,0.82) {two polarizers: $\cos^2\theta$};
+    \node[figR, font=\scriptsize, anchor=south] at (axis cs:90,0.30) {three polarizers (outer pair crossed): $\cos^2\theta\,\sin^2\theta$};
+    \node[black!70, font=\scriptsize, anchor=west] at (axis cs:95,0.78) {$\bullet$ lab data,};
+    \node[black!70, font=\scriptsize, anchor=west] at (axis cs:95,0.70) {three polarizers};
+  \end{axis}
+\end{tikzpicture}

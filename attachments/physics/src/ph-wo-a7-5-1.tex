@@ -1,0 +1,22 @@
+% Figure for Oscillations, Waves and Optics §A7.5 (Bragg reflection: parallel X-rays at glancing angle theta, measured from the atomic planes, reflect off two adjacent planes a distance d apart; the lower ray travels the extra path 2 d sin(theta), shown as the two red segments).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \draw[black!35, thin] (-3.6,0.000) -- (3.6,0.000);
+  \foreach \x in {-3,-2.25,...,3.1} {\fill[black!55] (\x,0.000) circle (1.6pt);}
+  \draw[black!35, thin] (-3.6,-1.500) -- (3.6,-1.500);
+  \foreach \x in {-3,-2.25,...,3.1} {\fill[black!55] (\x,-1.500) circle (1.6pt);}
+  \draw[black!35, thin] (-3.6,-3.000) -- (3.6,-3.000);
+  \foreach \x in {-3,-2.25,...,3.1} {\fill[black!55] (\x,-3.000) circle (1.6pt);}
+  \draw[figB, thick, ->] (-2.8254,1.5023) -- (0.0000,0.0000);
+  \draw[figB, thick, ->] (-3.4472,0.3329) -- (0.0000,-1.5000);
+  \draw[figB, thick, ->] (0.0000,0.0000) -- (2.8254,1.5023);
+  \draw[figB, thick, ->] (0.0000,-1.5000) -- (3.4472,0.3329);
+  \draw[black!55, dashed, thin] (-0.6218,-1.1694) -- (0,0) -- (0.6218,-1.1694);
+  \draw[figR, line width=1.6pt] (-0.6218,-1.1694) -- (0,-1.5) -- (0.6218,-1.1694);
+  \node[figR, font=\scriptsize, anchor=north, fill=white, inner sep=1pt] at (0,-1.6400000000000001) {extra path $2d\sin\theta$};
+  \draw[black!60, thin] (-1.0,0) arc (180:152:1.0);
+  \node[font=\scriptsize] at (-1.213,0.302) {$\theta$};
+  \draw[black!60, thin] (1.0,0) arc (0:28:1.0);
+  \node[font=\scriptsize] at (1.213,0.302) {$\theta$};
+  \draw[<->, black!60, thin] (3.85,0) -- (3.85,-1.5) node[midway, right, font=\scriptsize] {$d$};
+  \node[font=\scriptsize, figB, anchor=south east] at (-2.825,1.502) {X-rays};
+\end{tikzpicture}

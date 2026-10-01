@@ -1,0 +1,28 @@
+% Figure for Oscillations, Waves and Optics §A6.2 (phasor diagram for N = 6 slits: equal phasors of length A0, each turned by the adjacent phase difference phi = 40 deg, are chords of one circle; the resultant chord subtends N phi at the centre, so A = A0 sin(N phi/2)/sin(phi/2)).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \coordinate (O) at (0.6250,1.7172);
+  \coordinate (P0) at (0.0000,0.0000);
+  \coordinate (P1) at (1.2500,0.0000);
+  \coordinate (P2) at (2.2076,0.8035);
+  \coordinate (P3) at (2.4246,2.0345);
+  \coordinate (P4) at (1.7996,3.1170);
+  \coordinate (P5) at (0.6250,3.5446);
+  \coordinate (P6) at (-0.5496,3.1170);
+  \draw[black!35, dashed, thin] (O) circle (1.8274);
+  \draw[black!55, thin] (O) -- (P0); \draw[black!55, thin] (O) -- (P6);
+  \draw[black!55, thin] ($(O)+(-110.00:0.45)$) arc (-110.00:130.00:0.45);
+  \node[font=\scriptsize] at ($(O)+(10.00:0.78)$) {$N\phi$};
+  \fill (O) circle (1.3pt);
+  \node[font=\scriptsize, anchor=east] at ($(O)+(-0.05,0)$) {$O$};
+  \draw[figB, very thick, ->] (P0) -- (P1);
+  \draw[figB, very thick, ->] (P1) -- (P2);
+  \draw[figB, very thick, ->] (P2) -- (P3);
+  \draw[figB, very thick, ->] (P3) -- (P4);
+  \draw[figB, very thick, ->] (P4) -- (P5);
+  \draw[figB, very thick, ->] (P5) -- (P6);
+  \node[figB, font=\scriptsize, below] at ($(P0)!0.5!(P1)$) {$A_0$};
+  \draw[black!55, dashed, thin] (P1) -- ++(0:0.9);
+  \draw[black!55, thin] ($(P1)+(0:0.7)$) arc (0:40:0.7);
+  \node[font=\scriptsize] at ($(P1)+(20.0:0.95)$) {$\phi$};
+  \draw[figR, very thick, ->] (P0) -- (P6) node[midway, left, font=\scriptsize] {$A$};
+\end{tikzpicture}

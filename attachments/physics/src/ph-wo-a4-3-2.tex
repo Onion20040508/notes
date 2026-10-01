@@ -1,0 +1,18 @@
+% Figure for Oscillations, Waves and Optics §A4.3 (dispersion by a 60-degree prism, ray paths computed from Snell's law at both faces for incidence 50 deg; dispersion exaggerated: n = 1.50 for red, 1.62 for violet).
+\begin{tikzpicture}[font=\small,
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position 0.5 with {\arrow{Stealth[length=2.3mm]}}}}]
+  \fill[figB!6] (0,0) -- (4,0) -- (2,3.4641) -- cycle;
+  \draw[black!70, thick] (0,0) -- (4,0) -- (2,3.4641) -- cycle;
+  \coordinate (S) at (-1.4153,0.6341); \coordinate (P) at (0.84,1.4549);
+  \coordinate (Qr) at (3.1435,1.4835); \coordinate (Er) at (5.6271,0.7142);
+  \coordinate (Qv) at (3.2024,1.3815); \coordinate (Ev) at (5.4860,0.1386);
+  % normal at entry
+  \draw[black!45, dashed] ($(P)+0.9*(-0.8660,0.5)$) -- ($(P)-0.9*(-0.8660,0.5)$);
+  \draw[black!70, very thick, mid] (S) -- (P);
+  \node[black!70, font=\scriptsize, anchor=east] at (S) {white light};
+  \draw[figR, thick] (P) -- (Qr); \draw[figR, thick, mid] (Qr) -- (Er);
+  \draw[figB, thick] (P) -- (Qv); \draw[figB, thick, mid] (Qv) -- (Ev);
+  \node[figR, font=\scriptsize, anchor=west] at (Er) {red, $n = 1.50$};
+  \node[figB, font=\scriptsize, anchor=west] at (Ev) {violet, $n = 1.62$};
+  \node[black!60, font=\scriptsize] at (2,0.45) {glass};
+\end{tikzpicture}

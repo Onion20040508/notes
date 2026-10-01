@@ -1,22 +1,27 @@
 % Figure for Oscillations, Waves and Optics §A3.5 (wave fronts of a source moving at v_s = v/2 through still air; crests emitted one period apart).
-\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
-  % emissions at t_j = 0..4 (period T = 1), snapshot at t = 5; v = 1, v_s = 0.5 (units of length per T)
-  \foreach \j in {0,...,4} {
-    \pgfmathsetmacro\cx{0.5*\j}
-    \pgfmathsetmacro\r{5-\j}
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small, scale=0.62]
+  % emissions at t_j = 0..3 (period T = 1), snapshot at t = 4; v = 1.2, v_s = 0.6 (length units per T)
+  \foreach \j in {0,...,3} {
+    \pgfmathsetmacro\cx{0.6*\j}
+    \pgfmathsetmacro\r{1.2*(4-\j)}
     \draw[figB, thick] (\cx,0) circle (\r);
-    \fill[figB] (\cx,0) circle (1.1pt);
+    \fill[figB] (\cx,0) circle (1.2pt);
   }
-  \fill[figR] (2.5,0) circle (2.6pt);
-  \draw[->, very thick, figR] (2.5,0) -- (3.4,0) node[above, pos=0.6] {$\vec v_s$};
-  % spacing annotations
-  \draw[<->, black!70] (2.8,-0.55) -- node[below, font=\scriptsize] {$(v - v_s)T$} (3.3,-0.55);
-  \draw[<->, black!70] (-3.5,-0.55) -- node[below, font=\scriptsize] {$(v + v_s)T$} (-2.0,-0.55);
-  \draw[black!35, thin] (2.8,-0.6) -- (2.8,0); \draw[black!35, thin] (3.3,-0.6) -- (3.3,0);
-  \draw[black!35, thin] (-3.5,-0.6) -- (-3.5,0); \draw[black!35, thin] (-2.0,-0.6) -- (-2.0,0);
+  \fill[figR] (2.4,0) circle (2.4pt);
+  \draw[->, very thick, figR] (2.4,0) -- (3.25,0);
+  \node[figR, font=\scriptsize] at (2.2,0.5) {$\vec v_s$};
+  % spacing annotations (front crests at x = 3.0, 3.6, 4.2, 4.8; back crests at x = 0.6, -1.2, -3.0, -4.8)
+  \draw[black!40, thin] (4.2,0) -- (4.2,-1.0); \draw[black!40, thin] (4.8,0) -- (4.8,-1.0);
+  \draw[{Bar[width=2mm]}-{Bar[width=2mm]}, black!70] (4.2,-0.85) -- (4.8,-0.85);
+  \draw[black!50, thin] (4.5,-0.9) -- (5.25,-1.65);
+  \node[font=\scriptsize, black!80, anchor=north west] at (5.15,-1.6) {$(v - v_s)T$};
+  \draw[black!40, thin] (-4.8,0) -- (-4.8,-1.0); \draw[black!40, thin] (-3.0,0) -- (-3.0,-1.0);
+  \draw[<->, black!70] (-4.8,-0.85) -- (-3.0,-0.85);
+  \draw[black!50, thin] (-3.9,-0.9) -- (-5.25,-1.65);
+  \node[font=\scriptsize, black!80, anchor=north east] at (-5.15,-1.6) {$(v + v_s)T$};
   % observers
-  \node[draw, circle, inner sep=1.6pt, fill=white] (A) at (5.9,0) {};
-  \node[font=\scriptsize, align=center, anchor=west] at (6.05,0) {observer ahead:\\ shorter $\lambda$, higher $f_o$};
-  \node[draw, circle, inner sep=1.6pt, fill=white] (B) at (-5.5,0) {};
-  \node[font=\scriptsize, align=center, anchor=east] at (-5.65,0) {observer behind:\\ longer $\lambda$, lower $f_o$};
+  \node[draw, circle, inner sep=1.5pt, fill=white] at (6.0,0) {};
+  \node[font=\scriptsize, align=left, anchor=south west] at (5.4,0.3) {observer ahead:\\ shorter $\lambda$,\\ higher $f_o$};
+  \node[draw, circle, inner sep=1.5pt, fill=white] at (-6.0,0) {};
+  \node[font=\scriptsize, align=right, anchor=south east] at (-5.4,0.3) {observer behind:\\ longer $\lambda$,\\ lower $f_o$};
 \end{tikzpicture}

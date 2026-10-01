@@ -1,32 +1,34 @@
-% Figure for Oscillations, Waves and Optics §A2.3 (a short element of a stretched string, displaced by a passing wave: the tension pulls along the string at each end; the horizontal components cancel and the difference of the vertical components accelerates the element; slopes exaggerated).
+% Figure for Oscillations, Waves and Optics §A2.3 (a short element of a stretched string displaced by a passing wave: the tension pulls along the string at each end; the horizontal components cancel for small slopes, and the difference of the vertical components accelerates the element; slopes exaggerated).
 \begin{tikzpicture}[font=\small, >={Stealth[length=2.4mm]}]
-  % the string: y = 0.9 sin(...) piece, curved element between x1 and x2
-  \draw[black!35, thin] (-0.6,0) -- (7.2,0);
-  \draw[black!40, thick, domain=-0.6:1.5, samples=40] plot (\x, {1.6*sin(deg(0.5*\x))});
-  \draw[black!40, thick, domain=4.7:7.2, samples=40] plot (\x, {1.6*sin(deg(0.5*\x))});
-  \draw[figB, line width=2pt, domain=1.5:4.7, samples=60] plot (\x, {1.6*sin(deg(0.5*\x))});
-  % endpoints
-  \coordinate (P) at (1.5,{1.6*sin(deg(0.75))});
-  \coordinate (Q) at (4.7,{1.6*sin(deg(2.35))});
-  \fill[figB] (P) circle (2pt); \fill[figB] (Q) circle (2pt);
-  % slopes: y' = 0.8 cos(0.5 x)
-  \pgfmathsetmacro{\sP}{0.8*cos(deg(0.75))}
-  \pgfmathsetmacro{\sQ}{0.8*cos(deg(2.35))}
-  % tension at left end points down-left along tangent, at right end up-right along tangent
-  \draw[->, figR, very thick] (P) -- ++({-1.6/sqrt(1+\sP*\sP)},{-1.6*\sP/sqrt(1+\sP*\sP)}) node[below left] {$\vec F_T$};
-  \draw[->, figR, very thick] (Q) -- ++({1.6/sqrt(1+\sQ*\sQ)},{1.6*\sQ/sqrt(1+\sQ*\sQ)}) node[below right] {$\vec F_T$};
-  % angle markers
-  \draw[black!55, thin, dashed] (P) -- ++(-1.5,0);
-  \draw[black!55, thin, dashed] (Q) -- ++(1.5,0);
-  \node[black!70, font=\scriptsize] at ($(P)+(-1.25,-0.32)$) {$\theta_1$};
+  \def\yy(#1){1.8*sin(deg(0.5*#1))}
+  \draw[->, black!45, thin] (-1.2,-1.0) -- (5.4,-1.0) node[right, font=\scriptsize] {$x$};
+  \draw[black!30, thin, domain=-0.9:0.8, samples=40] plot (\x, {1.8*sin(deg(0.5*\x))});
+  \draw[black!30, thin, domain=2.8:5.4, samples=40] plot (\x, {1.8*sin(deg(0.5*\x))});
+  \draw[figB, line width=2pt, domain=0.8:2.8, samples=60] plot (\x, {1.8*sin(deg(0.5*\x))});
+  \coordinate (P) at (0.8,{1.8*sin(deg(0.4))});
+  \coordinate (Q) at (2.8,{1.8*sin(deg(1.4))});
+  \pgfmathsetmacro{\sP}{0.9*cos(deg(0.4))}
+  \pgfmathsetmacro{\sQ}{0.9*cos(deg(1.4))}
+  \pgfmathsetmacro{\nP}{sqrt(1+\sP*\sP)}
+  \pgfmathsetmacro{\nQ}{sqrt(1+\sQ*\sQ)}
+  % tensions along the tangents
+  \draw[->, figR, very thick] (P) -- ++({-1.7/\nP},{-1.7*\sP/\nP}) node[left] {$\vec F_T$};
+  \draw[->, figR, very thick] (Q) -- ++({1.7/\nQ},{1.7*\sQ/\nQ}) node[right] {$\vec F_T$};
+  % horizontal reference lines and angles
+  \draw[black!50, thin, dashed] (P) -- ++(-1.5,0);
+  \draw[black!50, thin, dashed] (Q) -- ++(1.6,0);
+  \draw[black!55, thin] ($(P)+(-0.75,0)$) arc[start angle=180, end angle={180+atan(\sP)}, radius=0.75];
+  \node[black!70, font=\scriptsize] at ($(P)+(-1.0,-0.22)$) {$\theta_1$};
+  \draw[black!55, thin] ($(Q)+(1.1,0)$) arc[start angle=0, end angle={atan(\sQ)}, radius=1.1];
   \node[black!70, font=\scriptsize] at ($(Q)+(1.3,-0.2)$) {$\theta_2$};
   % vertical components
-  \draw[->, figG, thick] ($(P)+(-0.12,0)$) -- ++(0,{-1.6*\sP/sqrt(1+\sP*\sP)}) node[left, font=\scriptsize] {$F_T\sin\theta_1$};
-  \draw[->, figG, thick] ($(Q)+(0.12,0)$) -- ++(0,{1.6*\sQ/sqrt(1+\sQ*\sQ)});
-  \node[figG, font=\scriptsize, anchor=west] at ($(Q)+(0.2,{0.8*\sQ/sqrt(1+\sQ*\sQ)})$) {$F_T\sin\theta_2$};
+  \draw[->, figG, thick] ($(P)+(0.15,0)$) -- ++(0,{-1.7*\sP/\nP});
+  \node[figG, font=\scriptsize, anchor=west] at ($(P)+(0.25,-0.85)$) {$F_T\sin\theta_1$ (down)};
+  \draw[->, figG, thick] ($(Q)+(-0.15,0)$) -- ++(0,{1.7*\sQ/\nQ});
+  \node[figG, font=\scriptsize, anchor=south] at ($(Q)+(-0.15,0.3)$) {$F_T\sin\theta_2$ (up)};
   % x labels
-  \draw[black!55, thin] (1.5,0) -- (1.5,-0.12) node[below, font=\scriptsize] {$x_1$};
-  \draw[black!55, thin] (4.7,0) -- (4.7,-0.12) node[below, font=\scriptsize] {$x_2 = x_1 + \Delta x$};
-  \draw[black!35, thin, dotted] (1.5,0) -- (P); \draw[black!35, thin, dotted] (4.7,0) -- (Q);
-  \node[figB, font=\scriptsize] at (3.1,2.0) {element, mass $\mu\,\Delta x$};
+  \draw[black!35, thin, dotted] (0.8,-1.0) -- (P); \draw[black!35, thin, dotted] (2.8,-1.0) -- (Q);
+  \draw[black!55, thin] (0.8,-1.0) -- (0.8,-1.12) node[below, font=\scriptsize] {$x_1$};
+  \draw[black!55, thin] (2.8,-1.0) -- (2.8,-1.12) node[below, font=\scriptsize] {$x_2 = x_1 + \Delta x$};
+  \node[figB, font=\scriptsize, anchor=north west] at (1.7,1.05) {element, mass $\mu\,\Delta x$};
 \end{tikzpicture}

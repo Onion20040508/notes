@@ -13,7 +13,7 @@
     \draw[figB, thick] (0.12,0.5) -- (P) node[pos=0.55, above, sloped, font=\scriptsize] {$r_1$};
     \draw[figB, thick] (0.12,-0.5) -- (P) node[pos=0.6, below, sloped, font=\scriptsize] {$r_2$};
     \draw[black!55, dashed, thin] (0,0) -- (P);
-    \fill (P) circle (1.6pt) node[right, font=\scriptsize] {$P$};
+    \fill (P) circle (1.6pt) node[above right, font=\scriptsize] {$P$};
     \draw[black!55, thin] (1.3,0) arc (0:{atan(1.55/5.2)}:1.3);
     \node[font=\scriptsize] at (1.55,0.2) {$\theta$};
     \draw[<->, black!60, thin] (5.5,0) -- (5.5,1.55) node[midway, right, font=\scriptsize] {$y$};
@@ -29,15 +29,15 @@
     \fill[black!30] (-0.12,1.0) rectangle (0.12,2.0);
     \coordinate (A) at (0.12,0.875);
     \coordinate (B) at (0.12,-0.875);
-    \node[font=\scriptsize, left] at (-0.12,1.2) {$S_1$};
-    \node[font=\scriptsize, left] at (-0.12,-1.2) {$S_2$};
+    \node[font=\scriptsize, left] at (-0.12,0.875) {$S_1$};
+    \node[font=\scriptsize, left] at (-0.12,-0.875) {$S_2$};
     \draw[figB, thick, ->] (A) -- ++(\th:4.2) node[right, font=\scriptsize] {to $P$};
     \draw[figB, thick, ->] (B) -- ++(\th:5.0) node[right, font=\scriptsize] {to $P$};
     % foot of the perpendicular from S1 onto ray 2
     \coordinate (F) at ($(B)+(\th:{1.75*sin(\th)})$);
     \draw[black!55, dashed, thin] (A) -- (F);
     \draw[figR, line width=1.6pt] (B) -- (F);
-    \node[figR, font=\scriptsize, anchor=north west] at ($(B)!0.5!(F)+(0.05,-0.05)$) {$\Delta l = d\sin\theta$};
+    \node[figR, font=\scriptsize, anchor=north west] at ($(B)+(0.3,-0.12)$) {$\Delta l = d\sin\theta$};
     % right-angle mark at F
     \draw[black!55, thin] ($(F)+(\th:-0.18)$) -- ++(\th+90:0.18) -- ++(\th:0.18);
     % angle theta at S2 between the axis and the ray
@@ -47,7 +47,7 @@
     % angle theta at S1 between the barrier and the perpendicular
     \draw[black!55, thin] ($(A)+(0,-0.55)$) arc (-90:{-90+\th}:0.55);
     \node[font=\scriptsize] at ($(A)+({-90+\th/2}:0.8)$) {$\theta$};
-    \draw[<->, black!60, thin] (-0.95,-0.875) -- (-0.95,0.875) node[midway, left, font=\scriptsize] {$d$};
+    \draw[<->, black!60, thin] (-1.05,-0.875) -- (-1.05,0.875) node[midway, left, font=\scriptsize] {$d$};
     \node[font=\scriptsize, black!70] at (2.2,-3.0) {(b) close-up: rays to a distant $P$ are parallel};
   \end{scope}
 \end{tikzpicture}

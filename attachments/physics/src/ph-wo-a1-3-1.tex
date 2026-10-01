@@ -1,0 +1,24 @@
+% Figure for Oscillations, Waves and Optics §A1.3: the reference circle; the reference point P at phase angle omega t + phi, its projection x on the horizontal axis, and the projection of its velocity.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  \def\R{2.2}\def\th{40}
+  \draw[->, thin, black!55] (-2.9,0) -- (3.0,0) node[right, font=\scriptsize] {$x$};
+  \draw[->, thin, black!55] (0,-2.6) -- (0,2.7);
+  \draw[black!55, thin] (0,0) circle (\R);
+  \draw[->, black!55, thin] ({1.0*cos(100)},{1.0*sin(100)}) arc (100:150:1.0) node[left, font=\scriptsize] {$\omega$};
+  % radius and projection
+  \draw[black!70, thin] (0,0) -- ({\R*cos(\th)},{\R*sin(\th)});
+  \draw[black!45, thin, dashed] ({\R*cos(\th)},{\R*sin(\th)}) -- ({\R*cos(\th)},0);
+  \draw[black!55, thin] (0.55,0) arc (0:\th:0.55);
+  \node[font=\scriptsize, black!75, anchor=west] at ({0.6*cos(18)},{0.6*sin(18)}) {$\omega t + \phi$};
+  \node[font=\scriptsize, black!75, anchor=south east] at ({0.5*\R*cos(\th)},{0.5*\R*sin(\th)}) {$A$};
+  % velocity of P and its projection
+  \draw[->, thick, figR] ({\R*cos(\th)},{\R*sin(\th)}) -- ++({-1.4*sin(\th)},{1.4*cos(\th)}) node[above left, font=\scriptsize] {$A\omega$};
+  \draw[->, thick, figB] ({\R*cos(\th)},-0.3) -- ++({-1.4*sin(\th)},0) node[below, font=\scriptsize, yshift=-1pt] {$v_x$};
+  \fill[figR] ({\R*cos(\th)},{\R*sin(\th)}) circle (2.2pt) node[right, xshift=2pt] {$P$};
+  \fill[figB] ({\R*cos(\th)},0) circle (2.2pt);
+  \node[figB, font=\scriptsize, below right] at ({\R*cos(\th)},0) {$x$};
+  % axis marks
+  \node[font=\scriptsize, black!70, anchor=north east] at (-2.22,-0.02) {$-A$};
+  \node[font=\scriptsize, black!70, anchor=north west] at (2.22,-0.02) {$A$};
+  \node[font=\scriptsize, black!70, below left] at (0,0) {$0$};
+\end{tikzpicture}

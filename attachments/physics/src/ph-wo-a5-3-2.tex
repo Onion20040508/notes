@@ -1,0 +1,18 @@
+% Figure for Oscillations, Waves and Optics §A5.3 (image distance d_i = (1/f - 1/d_o)^(-1) against object distance, computed for f = +10 cm (converging) and f = -10 cm (diverging); dots mark the three cases of the converging-lens example.)
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=10cm, height=6.6cm, xmin=0, xmax=52, ymin=-45, ymax=62,
+      xlabel={$d_o$ (cm)}, ylabel={$d_i$ (cm)}, axis lines=left, xtick={10,20,30,40,50}, ytick={-40,-20,0,20,40,60}, clip=true]
+    \addplot[black!70, thin, domain=0:52] {0};
+    \addplot[black!45, dashed, thin, domain=0:52] {10};
+    \addplot[black!45, dashed, thin, domain=0:52] {-10};
+    \addplot[black!45, dashed, thin] coordinates {(10,-45) (10,62)};
+    \addplot[figB, domain=10.95:52, samples=150] {1/(1/10 - 1/x)};
+    \addplot[figB, domain=0.3:9.25, samples=150] {1/(1/10 - 1/x)};
+    \addplot[figR, domain=0.3:52, samples=150] {1/(-1/10 - 1/x)};
+    \addplot[only marks, mark=*, mark size=1.8pt, figB] coordinates {(50,12.5) (5,-10) (20,20)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:21,25) {$f = +10$ cm: real image};
+    \node[figB, font=\scriptsize, anchor=west, align=left] at (axis cs:11,-30) {$f = +10$ cm, $d_o < f$:\\ virtual image (left branch)};
+    \node[figR, font=\scriptsize, anchor=north west] at (axis cs:30,-11) {$f = -10$ cm: always virtual};
+    \node[black!60, font=\scriptsize, anchor=south west] at (axis cs:40,15) {$d_i \to f$};
+  \end{axis}
+\end{tikzpicture}

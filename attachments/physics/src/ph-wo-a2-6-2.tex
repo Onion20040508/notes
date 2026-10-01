@@ -1,0 +1,19 @@
+% Figure for Oscillations, Waves and Optics §A2.6 (the first four normal modes of a string of length L fixed at both ends: extreme shapes +/- sin(n pi x / L), with wavelength 2L/n and frequency n f1).
+\begin{tikzpicture}[font=\small]
+  \def\L{6}
+  \foreach \n in {1,2,3,4} {
+    \begin{scope}[yshift={-(\n-1)*1.55cm}]
+      \draw[black!30, thin] (0,0) -- (\L,0);
+      \draw[figB, very thick, domain=0:\L, samples=120] plot (\x, {0.55*sin(deg(\n*pi*\x/\L))});
+      \draw[figB!45, thick, dashed, domain=0:\L, samples=120] plot (\x, {-0.55*sin(deg(\n*pi*\x/\L))});
+      \fill[black!70] (-0.12,-0.45) rectangle (0,0.45);
+      \fill[black!70] (\L,-0.45) rectangle (\L+0.12,0.45);
+      \pgfmathtruncatemacro{\nm}{\n-1}
+      \ifnum\n>1
+        \foreach \j in {1,...,\nm} { \fill[figR] ({\j*\L/\n},0) circle (1.8pt); }
+      \fi
+      \node[anchor=west, font=\scriptsize, align=left] at (\L+0.4,0) {$n = \n$:\ \ $\lambda_{\n} = \ifnum\n=1 2L\else\ifnum\n=2 L\else\ifnum\n=3 2L/3\else L/2\fi\fi\fi$,\ \ $f_{\n} = \ifnum\n=1 v/2L\else \n f_1\fi$};
+    \end{scope}
+  }
+  \draw[<->, black!55] (0,-5.3) -- node[below, font=\scriptsize] {$L$} (\L,-5.3);
+\end{tikzpicture}

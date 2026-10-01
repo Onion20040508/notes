@@ -1,0 +1,31 @@
+% Figure for Oscillations, Waves and Optics §A5.4 (correcting nearsightedness: a lens of f = -28.5 cm, 1.5 cm in front of the eye, makes parallel rays diverge from the far point 30.0 cm from the eye. Horizontal positions to scale; vertical scale stretched about 6 times; eye schematic.)
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.0mm]}, x=0.27cm, y=1.6cm,
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position 0.5 with {\arrow{Stealth[length=2.0mm]}}}}]
+  \draw[black!55, thin] (-31,0) -- (4.5,0);
+  % eye
+  \draw[black!60, fill=black!4] (2.45,0) ellipse (1.05 and 0.62);
+  \draw[black!60, thick, {Stealth[length=1.6mm]}-{Stealth[length=1.6mm]}] (1.5,-0.5) -- (1.5,0.5);
+  \node[black!60, font=\scriptsize, anchor=south] at (2.45,0.64) {eye};
+  \node[black!60, font=\scriptsize, anchor=west] at (3.6,0.3) {retina};
+  % corrective lens
+  \draw[black!80, thick, {Stealth[length=2mm, reversed]}-{Stealth[length=2mm, reversed]}] (0,-0.62) -- (0,0.62);
+  \node[font=\scriptsize, anchor=south east] at (-0.2,0.6) {corrective lens, $f = -28.5$ cm};
+  % incoming parallel rays from a distant object
+  \foreach \h in {0.4,-0.4} {
+    \draw[figB, thick, mid] (-24,\h) -- (0,\h);
+  }
+  % diverging rays after the lens, as from the far point
+  \draw[figR, thick] (0,0.4) -- (1.5,0.421);
+  \draw[figR, thick] (0,-0.4) -- (1.5,-0.421);
+  \draw[figR, thick] (1.5,0.421) -- (3.5,0);
+  \draw[figR, thick] (1.5,-0.421) -- (3.5,0);
+  \draw[figR, thin, dashed] (0,0.4) -- (-28.5,0);
+  \draw[figR, thin, dashed] (0,-0.4) -- (-28.5,0);
+  \fill[figR] (-28.5,0) circle (1.6pt);
+  \node[figR, font=\scriptsize, anchor=north] at (-28.5,-0.06) {far point};
+  \node[figB, font=\scriptsize, anchor=south west] at (-24,0.42) {from a distant object};
+  % distances
+  \draw[<->, black!55] (-28.5,-0.5) -- (0,-0.5) node[midway, below, font=\scriptsize, black] {$|d_i| = 28.5$ cm};
+  \draw[black!55, thin] (0,-0.7) -- (0,-0.95); \draw[black!55, thin] (1.5,-0.62) -- (1.5,-0.95);
+  \draw[<->, black!55] (-28.5,-0.9) -- (1.5,-0.9) node[pos=0.75, below, font=\scriptsize, black] {30.0 cm from the eye};
+\end{tikzpicture}

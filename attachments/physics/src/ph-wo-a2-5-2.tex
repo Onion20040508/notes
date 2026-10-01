@@ -1,0 +1,34 @@
+% Figure for Oscillations, Waves and Optics §A2.5 (reflection of a pulse at a fixed end and at a free end, computed by superposing the incident pulse with a mirror-image pulse coming from beyond the end: inverted image for a fixed end, upright image for a free end).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]},
+    declare function={g(\u) = 0.75*exp(-(\u)^2/0.06);}]
+  \def\L{2.7}
+  \foreach \row/\s/\name in {0/-1/fixed end, 1/1/free end} {
+    \begin{scope}[yshift={-\row*2.9cm}]
+      \node[anchor=east, font=\small, align=right] at (-0.25,0.2) {\name};
+      \foreach \col/\c/\lab in {0/1.0/before, 1/2.55/during, 2/4.4/after} {
+        \begin{scope}[xshift={\col*3.9cm}]
+          \draw[black!35, thin] (0,0) -- (\L,0);
+          % image pulse beyond the end (dashed), and incident pulse continued beyond the end (dotted)
+          \ifnum\col=1
+            \draw[figG, dashed, thin, domain={\L}:{\L+0.8}, samples=60] plot (\x, {\s*g(2*\L-\x-\c)});
+            \draw[figB, densely dotted, thin, domain={\L-0.8}:{\L+0.8}, samples=60] plot (\x, {g(\x-\c)});
+            \draw[figG, dashed, thin, domain={\L-0.8}:{\L}, samples=60] plot (\x, {\s*g(2*\L-\x-\c)});
+          \fi
+          \draw[figR, very thick, domain=0:\L, samples=150] plot (\x, {g(\x-\c) + \s*g(2*\L-\x-\c)});
+          % boundary
+          \ifnum\row=0
+            \fill[pattern=north east lines, pattern color=black!50] (\L,-0.9) rectangle (\L+0.18,1.15);
+            \draw[black!70, thick] (\L,-0.9) -- (\L,1.15);
+          \else
+            \draw[black!60, line width=1.6pt] (\L+0.06,-0.9) -- (\L+0.06,1.15);
+            \draw[black!80, thick] (\L+0.06,{g(\L-\c)+\s*g(\L-\c)}) circle (0.07);
+          \fi
+          \node[font=\scriptsize, black!60] at ({\L/2},-1.1) {\lab};
+          % direction arrows
+          \ifnum\col=0 \draw[->, figB, thick] (0.7,1.0) -- (1.3,1.0); \fi
+          \ifnum\col=2 \draw[->, figB, thick] (1.6,{0.75+0.25*\s}) -- (1.0,{0.75+0.25*\s}); \fi
+        \end{scope}
+      }
+    \end{scope}
+  }
+\end{tikzpicture}

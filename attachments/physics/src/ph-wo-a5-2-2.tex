@@ -1,0 +1,30 @@
+% Figure for Oscillations, Waves and Optics §A5.2 (real image by refraction at a convex spherical surface, to scale along the axis: n_1 = 1.00, n_2 = 1.50, R = 2 cm, so f_1 = 4 cm, f_2 = 6 cm; d_o = 8 cm gives d_i = 12 cm and m = -1. Vertical scale stretched; surface shape schematic.)
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}, x=0.43cm, y=0.95cm,
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position 0.5 with {\arrow{Stealth[length=2.2mm]}}}}]
+  % glass to the right of the surface x = 0.25 y^2
+  \fill[figB!8, domain=-1.8:1.8, samples=30, variable=\y] plot ({0.25*\y*\y},\y) -- (13.6,1.8) -- (13.6,-1.8) -- cycle;
+  \draw[black!75, thick, domain=-1.8:1.8, samples=30, variable=\y] plot ({0.25*\y*\y},\y);
+  \draw[black!55, thin] (-8.8,0) -- (13.6,0);
+  \node[black!60, font=\scriptsize, anchor=west] at (-8.8,1.6) {air, $n_1 = 1.00$};
+  \node[black!60, font=\scriptsize, anchor=east] at (13.5,1.55) {glass, $n_2 = 1.50$};
+  % special points
+  \fill[black] (-4,0) circle (1.4pt) node[below left=0pt, font=\scriptsize] {$F_1$};
+  \fill[black] (6,0) circle (1.4pt) node[above=1pt, font=\scriptsize] {$F_2$};
+  \fill[black] (2,0) circle (1.4pt) node[above=1pt, font=\scriptsize] {$C$};
+  % object and image
+  \draw[->, very thick, figB] (-8,0) -- (-8,1) node[above, font=\scriptsize] {object};
+  \draw[->, very thick, figR] (12,0) -- (12,-1);
+  \node[figR, font=\scriptsize, anchor=west] at (12.1,-0.45) {image};
+  % ray 1: parallel, then through F2
+  \draw[figB, thick, mid] (-8,1) -- (0.25,1);
+  \draw[figR, thick, mid] (0.25,1) -- (13,-1.17);
+  % ray 2: through F1, then parallel
+  \draw[figB, thick, mid] (-8,1) -- (0.2872,-1.0718);
+  \draw[figR, thick, mid] (0.2872,-1.0718) -- (13,-0.994);
+  % ray 3: toward C, undeviated
+  \draw[figB, thick, mid] (-8,1) -- (0.0099,0.199);
+  \draw[figR, thick, mid] (0.0099,0.199) -- (13,-1.1);
+  % distances
+  \draw[<->, black!55] (-8,-1.55) -- (0,-1.55) node[midway, below, font=\scriptsize, black] {$d_o = 8$ cm};
+  \draw[<->, black!55] (0,-1.55) -- (12,-1.55) node[midway, below, font=\scriptsize, black] {$d_i = 12$ cm};
+\end{tikzpicture}

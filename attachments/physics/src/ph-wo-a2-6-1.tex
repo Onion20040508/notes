@@ -1,0 +1,22 @@
+% Figure for Oscillations, Waves and Optics §A2.6 (top: two identical sinusoids travelling in opposite directions and their sum at one instant; bottom: the sum 2A sin(kx) cos(wt) at several instants, with fixed nodes and antinodes).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \begin{axis}[nfig, name=top, width=10.5cm, height=3.8cm, xmin=0, xmax=2.08, ymin=-2.2, ymax=2.2,
+      axis lines=middle, xtick=\empty, ytick={-2,-1,1,2}, yticklabels={$-2A$,$-A$,$A$,$2A$}, clip=false]
+    \addplot[figB, thick, domain=0:2, samples=120] {sin(deg(2*pi*x) - 60)};
+    \addplot[figG, thick, dashed, domain=0:2, samples=120] {sin(deg(2*pi*x) + 60)};
+    \addplot[figR, very thick, domain=0:2, samples=120] {2*sin(deg(2*pi*x))*cos(60)};
+    \node[font=\scriptsize, anchor=south] at (axis cs:1.0,2.25) {\textcolor{figB}{$A\sin(kx - \omega t)$ (to the right)}, \quad \textcolor{figG}{$A\sin(kx + \omega t)$ (to the left, dashed)}, \quad \textcolor{figR}{sum at $\omega t = \pi/3$}};
+  \end{axis}
+  \begin{axis}[nfig, at={(top.south)}, anchor=north, yshift=-0.2cm, width=10.5cm, height=3.8cm, xmin=0, xmax=2.08, ymin=-2.2, ymax=2.2,
+      axis lines=middle, xlabel={$x$}, xtick={0.5,1,1.5,2}, xticklabels={$\lambda/2$,$\lambda$,$3\lambda/2$,$2\lambda$},
+      ytick={-2,2}, yticklabels={$-2A$,$2A$}, xlabel style={anchor=west}, clip=false,
+      xticklabel style={anchor=north west, xshift=-1pt}]
+    \foreach \wt/\op in {0/1, 45/0.7, 90/0.5, 135/0.35, 180/0.25} {
+      \edef\temp{\noexpand\addplot[figR, thick, opacity=\op, domain=0:2, samples=120] {2*sin(deg(2*pi*x))*cos(\wt)};}
+      \temp
+    }
+    \addplot[only marks, mark=*, mark size=1.8pt, black] coordinates {(0,0) (0.5,0) (1,0) (1.5,0) (2,0)};
+    \addplot[only marks, mark=o, mark size=2pt, figB, thick] coordinates {(0.25,2) (0.75,-2) (1.25,2) (1.75,-2)};
+    \node[font=\scriptsize, anchor=north] at (axis cs:1.0,-2.45) {\textcolor{figR}{$2A\sin(kx)\cos(\omega t)$ at $\omega t = 0, \tfrac{\pi}{4}, \tfrac{\pi}{2}, \tfrac{3\pi}{4}, \pi$ (fading)}, \quad $\bullet$ nodes, \quad \textcolor{figB}{$\circ$ antinodes}};
+  \end{axis}
+\end{tikzpicture}

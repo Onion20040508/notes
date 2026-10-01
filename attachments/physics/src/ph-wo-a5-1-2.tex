@@ -1,0 +1,52 @@
+% Figure for Oscillations, Waves and Optics §A5.1 (principal rays for a concave and a convex mirror, to scale; lengths in units of 10 cm. (a) f = 20 cm, d_o = 50 cm -> d_i = 33.3 cm, m = -2/3. (b) f = -20 cm, d_o = 40 cm -> d_i = -13.3 cm, m = +1/3.)
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}, x=0.78cm, y=0.78cm,
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position 0.5 with {\arrow{Stealth[length=2.2mm]}}}}]
+  %% (a) concave mirror, vertex at origin, light from the left
+  \begin{scope}
+    \draw[black!55, thin] (-5.7,0) -- (0.6,0);
+    \draw[black!75, very thick, domain=-1.8:1.8, samples=30, variable=\y] plot ({-0.05*\y*\y},\y);
+    \foreach \y in {-1.7,-1.45,...,1.75} \draw[black!40] ({-0.05*\y*\y},\y) -- ({-0.05*\y*\y+0.16},\y+0.12);
+    \fill[black] (-2,0) circle (1.3pt) node[below=1pt, font=\scriptsize] {$F$};
+    \fill[black] (-4,0) circle (1.3pt) node[above=1pt, font=\scriptsize] {$C$};
+    % object and image
+    \draw[->, very thick, figB] (-5,0) -- (-5,1.2) node[above, font=\scriptsize] {object};
+    \draw[->, very thick, figR] (-3.333,0) -- (-3.333,-0.8);
+    \node[figR, font=\scriptsize, anchor=east] at (-3.42,-0.38) {real image};
+    % ray 1: parallel, then through F
+    \draw[figB, thick, mid] (-5,1.2) -- (-0.072,1.2);
+    \draw[figR, thick, mid] (-0.072,1.2) -- (-5.5,-2.129);
+    % ray 2: through F, then parallel
+    \draw[figB, thick, mid] (-5,1.2) -- (-0.031,-0.7876);
+    \draw[figR, thick, mid] (-0.031,-0.7876) -- (-5.5,-0.808);
+    % ray 4: to the vertex, reflected symmetrically
+    \draw[figB, thick, mid] (-5,1.2) -- (0,0);
+    \draw[figR, thick, mid] (0,0) -- (-5.5,-1.32);
+    \node[font=\scriptsize, anchor=north west, align=left] at (-5.7,-2.25) {(a) concave: $f = 20$ cm, $d_o = 50$ cm\\ $\Rightarrow d_i = 33.3$ cm, $m = -0.67$};
+  \end{scope}
+  %% (b) convex mirror
+  \begin{scope}[yshift=-5.0cm, xshift=-0.9cm]
+    \draw[black!55, thin] (-4.6,0) -- (4.5,0);
+    \draw[black!75, very thick, domain=-1.8:1.8, samples=30, variable=\y] plot ({0.05*\y*\y},\y);
+    \foreach \y in {-1.7,-1.45,...,1.75} \draw[black!40] ({0.05*\y*\y},\y) -- ({0.05*\y*\y+0.16},\y+0.12);
+    \fill[black] (2,0) circle (1.3pt) node[below=1pt, font=\scriptsize] {$F$};
+    \fill[black] (4,0) circle (1.3pt) node[below=1pt, font=\scriptsize] {$C$};
+    \draw[->, very thick, figB] (-4,0) -- (-4,1.2) node[above, font=\scriptsize] {object};
+    \draw[->, very thick, figR, dashed] (1.333,0) -- (1.333,0.4);
+    \node[figR, font=\scriptsize, anchor=south west, align=left] at (2.0,0.75) {virtual\\ image};
+    \draw[figR!60, thin] (2.05,0.85) -- (1.40,0.45);
+    % ray 1: parallel, reflected as if from F
+    \draw[figB, thick, mid] (-4,1.2) -- (0.072,1.2);
+    \draw[figR, thick, mid] (0.072,1.2) -- (-2.0,2.514);
+    \draw[figR, thin, dashed] (0.072,1.2) -- (2,0);
+    % ray 2: toward F, reflected parallel
+    \draw[figB, thick, mid] (-4,1.2) -- (0.008,0.3984);
+    \draw[figB, thin, dotted] (0.008,0.3984) -- (2,0);
+    \draw[figR, thick, mid] (0.008,0.3984) -- (-4.5,0.399);
+    \draw[figR, thin, dashed] (0.008,0.3984) -- (1.333,0.4);
+    % ray 4: to the vertex
+    \draw[figB, thick, mid] (-4,1.2) -- (0,0);
+    \draw[figR, thick, mid] (0,0) -- (-3.5,-1.05);
+    \draw[figR, thin, dashed] (0,0) -- (1.333,0.4);
+    \node[font=\scriptsize, anchor=north west, align=left] at (-4.6,-2.25) {(b) convex: $f = -20$ cm, $d_o = 40$ cm\\ $\Rightarrow d_i = -13.3$ cm, $m = +0.33$};
+  \end{scope}
+\end{tikzpicture}

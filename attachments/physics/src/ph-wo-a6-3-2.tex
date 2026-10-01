@@ -1,0 +1,17 @@
+% Figure for Oscillations, Waves and Optics §A6.3 (light of 650 nm reflected by a soap film, n = 1.333, in air at normal incidence, in the two-beam picture with equal amplitudes: I/Imax = sin^2(2 pi n t/lambda), computed against the thickness t; dark at t = 0, 244, 488 nm, bright at 122, 366, 610 nm).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, clip=false, width=11cm, height=4.6cm, xmin=0, xmax=720, ymin=0, ymax=1.3,
+      xlabel={$t$ (nm)}, ylabel={$I/I_{\max}$},
+      xtick={0,122,244,366,488,610}, ytick={0,1},
+      xlabel style={at={(axis description cs:1.0,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south}]
+    \addplot[figR, domain=0:700, samples=400] {sin(deg(2*pi*1.333*x/650))^2};
+    \foreach \t in {122,366,610} {\addplot[black!40, dashed, thin] coordinates {(\t,0) (\t,1)};}
+    \node[font=\scriptsize, figR, anchor=south] at (axis cs:122,1.0) {bright};
+    \node[font=\scriptsize, figR, anchor=south] at (axis cs:366,1.0) {bright};
+    \node[font=\scriptsize, figR, anchor=south] at (axis cs:610,1.0) {bright};
+    \node[font=\scriptsize, black!60, anchor=north] at (axis cs:244,-0.2) {dark};
+    \node[font=\scriptsize, black!60, anchor=north] at (axis cs:488,-0.2) {dark};
+    \node[font=\scriptsize, black!60, anchor=north] at (axis cs:0,-0.2) {dark};
+  \end{axis}
+\end{tikzpicture}

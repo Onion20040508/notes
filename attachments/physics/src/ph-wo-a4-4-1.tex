@@ -1,0 +1,15 @@
+% Figure for Oscillations, Waves and Optics §A4.4 (Huygens's construction for a plane wave front: forward wavelets of radius s = vt from points of the front; the new front is their common tangent).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \def\s{1.1}
+  \draw[figB, very thick] (-2.4,0) -- (2.4,0);
+  \node[figB, font=\scriptsize, anchor=west] at (2.5,0) {wave front at time $0$};
+  \foreach \x in {-2,-1,0,1,2} {
+    \draw[black!50, thin] ({\x+\s},0) arc (0:180:\s);
+    \fill[figB] (\x,0) circle (1.6pt);
+  }
+  \draw[figR, very thick] (-2.4,\s) -- (2.4,\s);
+  \node[figR, font=\scriptsize, anchor=west] at (2.5,\s) {new front at time $t$};
+  \draw[->, black!70] (-0.5,0) -- node[left, font=\scriptsize] {$s = vt$} (-0.5,\s);
+  \foreach \x in {-1.5,1.5} \draw[->, black!55] (\x,\s+0.12) -- (\x,\s+0.85);
+  \node[black!60, font=\scriptsize, anchor=west] at (1.55,\s+0.75) {ray};
+\end{tikzpicture}

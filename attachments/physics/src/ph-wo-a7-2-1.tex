@@ -1,0 +1,16 @@
+% Figure for Oscillations, Waves and Optics §A7.2 (two slits of width D separated by d = 3D, computed: interference factor cos^2(pi d sin(theta)/lambda) thin blue, single-slit envelope (sin(beta)/beta)^2 with beta = pi D sin(theta)/lambda dashed green, and their product, the observed pattern, thick red; orders m = +-3, +-6 are missing).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, clip=false, width=12cm, height=5.6cm, xmin=-6.4, xmax=7.6, ymin=0, ymax=1.22,
+      xlabel={$d\sin\theta/\lambda$}, ylabel={$I/I_0$},
+      xtick={-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6}, ytick={0,0.5,1},
+      xlabel style={at={(axis description cs:1.0,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south}]
+    \addplot[figB, thin, domain=-6.3:6.3, samples=900] {cos(deg(pi*x))^2};
+    \addplot[figG, dashed, thick, domain=-6.3:6.3, samples=500] {(sin(deg(pi*x/3+1e-4))/(pi*x/3+1e-4))^2};
+    \addplot[figR, line width=1.5pt, domain=-6.3:6.3, samples=900] {cos(deg(pi*x))^2*(sin(deg(pi*x/3+1e-4))/(pi*x/3+1e-4))^2};
+    \node[font=\scriptsize, figR, anchor=south] at (axis cs:3,1.02) {missing};
+    \node[font=\scriptsize, figR, anchor=south] at (axis cs:-3,1.02) {missing};
+    \node[font=\scriptsize, figG, anchor=west] at (axis cs:6.45,0.25) {envelope};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:6.45,0.95) {interference};
+  \end{axis}
+\end{tikzpicture}

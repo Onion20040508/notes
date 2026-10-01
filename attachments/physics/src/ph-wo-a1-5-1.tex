@@ -1,0 +1,19 @@
+% Figure for Oscillations, Waves and Optics §A1.5: damped oscillators released from rest at x0 (omega0 = 1): underdamped b/2m = 0.1 omega0 with its envelope, critically damped, overdamped b/2m = 2 omega0.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=10cm, height=5.2cm, xmin=0, xmax=20.5, ymin=-1.05, ymax=1.15,
+      axis x line=middle, axis y line=left, clip=false,
+      xtick={6.283,12.566,18.850}, xticklabels={$T_0$,$2T_0$,$3T_0$},
+      xticklabel style={below right, xshift=-2pt},
+      ytick={-1,1}, yticklabels={$-x_0$,$x_0$}, xlabel={$t$}, xlabel style={anchor=west}]
+    \addplot[figB, domain=0:19.5, samples=500] {exp(-0.1*x)*(cos(deg(0.994987*x)) + 0.1/0.994987*sin(deg(0.994987*x)))};
+    \addplot[figB!55, dashed, thin, domain=0:19.5, samples=80] {1.005038*exp(-0.1*x)};
+    \addplot[figB!55, dashed, thin, domain=0:19.5, samples=80] {-1.005038*exp(-0.1*x)};
+    \addplot[figR, domain=0:19.5, samples=200] {(1+x)*exp(-x)};
+    \addplot[figG, domain=0:19.5, samples=200] {(-3.732051*exp(-0.267949*x) + 0.267949*exp(-3.732051*x))/(-3.732051+0.267949)};
+    \node[figB, font=\scriptsize, anchor=south west] at (axis cs:7.3,0.5) {underdamped};
+    \node[figR, font=\scriptsize, anchor=west] (cr) at (axis cs:4.2,-0.72) {critically damped};
+    \draw[figR, thin] (cr.west) -- (axis cs:2.6,0.267);
+    \node[figG, font=\scriptsize, anchor=south] (ov) at (axis cs:15.6,0.33) {overdamped};
+    \draw[figG, thin] (ov.south) -- (axis cs:15.0,0.022);
+  \end{axis}
+\end{tikzpicture}

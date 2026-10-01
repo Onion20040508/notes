@@ -1,0 +1,24 @@
+% Figure for Oscillations, Waves and Optics §A4.3 (light going from glass, n_1 = 1.50, to air, n_2 = 1.00, at three angles of incidence; critical angle 41.8 deg; drawn to scale).
+\begin{tikzpicture}[font=\small,
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=2.4mm]}}}}]
+  \def\L{2.0}
+  \foreach \i/\ti/\tt/\rw/\lab/\cap in {0/30/48.59/0.5/{$\theta_1 = 30^\circ$}/{(a) partial reflection},
+                                       1/41.81/90/0.5/{$\theta_1 = \theta_c = 41.8^\circ$}/{(b) critical angle},
+                                       2/60/0/1.4/{$\theta_1 = 60^\circ$}/{(c) total internal reflection}} {
+    \begin{scope}[xshift=\i*4.3cm]
+      \fill[figB!8] (-1.9,0) rectangle (1.9,-2.0);
+      \draw[black!70, thick] (-1.9,0) -- (1.9,0);
+      \draw[black!50, dashed] (0,1.6) -- (0,-2.0);
+      \draw[figB, very thick, mid] ({-\L*sin(\ti)},{-\L*cos(\ti)}) -- (0,0);
+      \draw[figB!70, line width=\rw pt, mid] (0,0) -- ({\L*sin(\ti)},{-\L*cos(\ti)});
+      \node[figB, font=\scriptsize] at (-0.95,-2.3) {\lab};
+      \node[black!70, font=\scriptsize] at (0,-2.75) {\cap};
+    \end{scope}
+  }
+  % refracted rays (a), (b)
+  \draw[figR, very thick, mid] (0,0) -- ({1.6*sin(48.59)},{1.6*cos(48.59)}) node[right, font=\scriptsize] {$\theta_2 = 48.6^\circ$};
+  \draw[figR, very thick, mid] (4.3,0) -- (6.2,0.0) node[above left, font=\scriptsize] {$\theta_2 = 90^\circ$};
+  \node[black!60, font=\scriptsize, anchor=east] at (10.5,1.35) {air, $n_2 = 1.00$};
+  \node[black!60, font=\scriptsize, anchor=east] at (10.5,-1.8) {glass, $n_1 = 1.50$};
+  \node[figR, font=\scriptsize] at (8.6,0.6) {no refracted ray};
+\end{tikzpicture}
