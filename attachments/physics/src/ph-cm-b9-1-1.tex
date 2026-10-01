@@ -1,0 +1,28 @@
+% Figure for Classical Mechanics §B9.1 (Example: a mass released from a frictionless turntable at radius a; inertial path x = a, y = a*omega*t, and rotating-frame path r = a sqrt(1+s^2), theta = -(s - arctan s), s = omega t; dots at s = 1,...,5).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \begin{axis}[name=left, axis equal image, axis lines=none, width=6.6cm, xmin=-5.8, xmax=5.8, ymin=-5.8, ymax=5.8, clip=false]
+    \draw[black!35, thin] (axis cs:0,0) circle[radius=5.4];
+    \draw[->, black!55, thin] (axis cs:-5.8,0) -- (axis cs:5.8,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, black!55, thin] (axis cs:0,-5.8) -- (axis cs:0,5.8) node[above, font=\scriptsize] {$y$};
+    \draw[->, black!55, thin] (axis cs:3.9,-3.9) arc[start angle=-45, end angle=-15, radius=5.5];
+    \node[font=\scriptsize, black!70] at (axis cs:4.3,-2.2) {$\omega$};
+    \addplot[figB, very thick, domain=0:5, samples=2] ({1}, {x});
+    \addplot[only marks, mark=*, mark size=1.4pt, figB] coordinates {(1,1) (1,2) (1,3) (1,4) (1,5)};
+    \addplot[only marks, mark=*, mark size=1.8pt, black] coordinates {(1,0)};
+    \node[font=\scriptsize, anchor=north west] at (axis cs:1,0) {release};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:1.2,4.6) {$\omega t = 5$};
+    \node[font=\scriptsize, black!70] at (axis cs:0,-7.0) {inertial frame};
+  \end{axis}
+  \begin{axis}[at={(left.east)}, anchor=west, xshift=0.8cm, axis equal image, axis lines=none, width=6.6cm, xmin=-5.8, xmax=5.8, ymin=-5.8, ymax=5.8, clip=false]
+    \draw[black!35, thin] (axis cs:0,0) circle[radius=5.4];
+    \draw[->, black!55, thin] (axis cs:-5.8,0) -- (axis cs:5.8,0) node[right, font=\scriptsize] {$x'$};
+    \draw[->, black!55, thin] (axis cs:0,-5.8) -- (axis cs:0,5.8) node[above, font=\scriptsize] {$y'$};
+    \addplot[figR, very thick, domain=0:5, samples=200, smooth]
+      ({sqrt(1+x^2)*cos(deg(rad(atan(x)) - x))}, {sqrt(1+x^2)*sin(deg(rad(atan(x)) - x))});
+    \addplot[only marks, mark=*, mark size=1.4pt, figR, domain=1:5, samples=5]
+      ({sqrt(1+x^2)*cos(deg(rad(atan(x)) - x))}, {sqrt(1+x^2)*sin(deg(rad(atan(x)) - x))});
+    \addplot[only marks, mark=*, mark size=1.8pt, black] coordinates {(1,0)};
+    \node[font=\scriptsize, figR, anchor=west, fill=white, inner sep=1pt] at (axis cs:-3.9,2.6) {$\omega t = 5$};
+    \node[font=\scriptsize, black!70] at (axis cs:0,-7.0) {frame of the turntable};
+  \end{axis}
+\end{tikzpicture}

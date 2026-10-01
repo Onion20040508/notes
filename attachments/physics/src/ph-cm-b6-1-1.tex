@@ -1,0 +1,26 @@
+% Figure for Classical Mechanics §B6.1: mass m1 on a frictionless table tied through a hole to a hanging mass m2 (PHY 421 Final F2021, Problem 1); side view and top view.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % side view
+  \fill[black!12] (-3.6,-0.35) rectangle (-0.12,0);
+  \fill[black!12] (0.12,-0.35) rectangle (1.6,0);
+  \draw[thick] (-3.6,0) -- (-0.12,0) (0.12,0) -- (1.6,0);
+  \draw[thick] (-3.6,-0.35) -- (-0.12,-0.35) (0.12,-0.35) -- (1.6,-0.35);
+  \fill[figB] (-2.7,0) rectangle (-2.2,0.4); \node[above] at (-2.45,0.4) {$m_1$};
+  \draw[black!70, thick] (-2.2,0.12) -- (0,0.12) -- (0,-1.9);
+  \fill[figR] (-0.25,-1.9) rectangle (0.25,-2.4); \node[right] at (0.3,-2.15) {$m_2$};
+  \draw[<->, black!60] (-2.45,-0.6) -- (0,-0.6) node[midway, below] {$r$};
+  \draw[<->, black!60] (0.6,-0.02) -- (0.6,-1.9) node[midway, right] {$z = \ell - r$};
+  \draw[->, figO] (0,-2.6) -- (0,-3.2) node[right] {$\vec g$};
+  \node[black!60, font=\scriptsize] at (-1.0,0.75) {side view};
+  % top view
+  \begin{scope}[xshift=4.6cm, yshift=-1.0cm]
+    \draw[black!30] (-1.8,-1.6) rectangle (1.9,1.9);
+    \fill (0,0) circle (1.6pt) node[below left] {hole};
+    \draw[->, thin, black!50] (0,0) -- (1.7,0);
+    \draw[black!70, thick] (0,0) -- ({1.45*cos(50)},{1.45*sin(50)});
+    \fill[figB] ({1.45*cos(50)},{1.45*sin(50)}) circle (3pt) node[above right] {$m_1$};
+    \draw[black!60] (0.55,0) arc (0:50:0.55); \node at (0.75,0.32) {$\theta$};
+    \node[black!70] at ({0.95*cos(50)-0.25},{0.95*sin(50)+0.12}) {$r$};
+    \node[black!60, font=\scriptsize] at (0.05,-1.35) {top view};
+  \end{scope}
+\end{tikzpicture}

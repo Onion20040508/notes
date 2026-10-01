@@ -1,0 +1,32 @@
+% Figure for Classical Mechanics §B2.2: Kepler orbits r = p/(1 + e cos phi) with the same semi-latus rectum p (same angular momentum) and different energies; force centre at the focus (origin).
+\begin{tikzpicture}[font=\small, scale=0.95]
+  \begin{axis}[nfig, width=11cm, height=8.4cm, axis equal image,
+      axis lines=none, xmin=-5.4, xmax=1.9, ymin=-2.75, ymax=2.75, clip=true]
+    % axis of symmetry
+    \addplot[black!35, thin, domain=-5.3:1.8, samples=2] {0};
+    % e = 0.8 ellipse
+    \addplot[figB, dashed, domain=0:360, samples=240, variable=\t] ({cos(\t)/(1+0.8*cos(\t))}, {sin(\t)/(1+0.8*cos(\t))});
+    % e = 0.5 ellipse
+    \addplot[figB, domain=0:360, samples=200, variable=\t] ({cos(\t)/(1+0.5*cos(\t))}, {sin(\t)/(1+0.5*cos(\t))});
+    % e = 0 circle
+    \addplot[figB, thick, domain=0:360, samples=120, variable=\t] ({cos(\t)}, {sin(\t)});
+    % e = 1 parabola
+    \addplot[figR, domain=-139:139, samples=200, variable=\t] ({cos(\t)/(1+cos(\t))}, {sin(\t)/(1+cos(\t))});
+    % e = 1.5 hyperbola
+    \addplot[figG, domain=-118:118, samples=200, variable=\t] ({cos(\t)/(1+1.5*cos(\t))}, {sin(\t)/(1+1.5*cos(\t))});
+    % focus
+    \fill[figO] (axis cs:0,0) circle (2.6pt);
+    % semi-latus rectum
+    \draw[black!60, thin, <->, >={Stealth[length=1.5mm]}] (axis cs:0.06,0.03) -- (axis cs:0.06,0.97);
+    \node[black!70, font=\scriptsize, anchor=east] at (axis cs:0.0,0.55) {$p$};
+    \fill[black] (axis cs:0,1) circle (1.3pt);
+    \fill[black] (axis cs:0,-1) circle (1.3pt);
+    % labels
+    \node[figB, font=\scriptsize] at (axis cs:-0.5,-0.4) {$e=0$};
+    \node[figB, font=\scriptsize] at (axis cs:-1.85,-1.0) {$e=0.5$};
+    \node[figB, font=\scriptsize] at (axis cs:-3.6,-1.78) {$e=0.8$};
+    \node[figR, font=\scriptsize, anchor=east] at (axis cs:-2.75,2.45) {$e=1$};
+    \node[figG, font=\scriptsize, anchor=west] at (axis cs:-0.7,2.45) {$e=1.5$};
+    \node[black!70, font=\scriptsize, align=left, anchor=north west] at (axis cs:0.35,-1.45) {blue: $E<0$\\ red: $E=0$\\ green: $E>0$};
+  \end{axis}
+\end{tikzpicture}

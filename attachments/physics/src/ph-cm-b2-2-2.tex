@@ -1,0 +1,24 @@
+% Figure for Classical Mechanics §B2.2: two bodies (m1 = 2 m2) on Kepler ellipses (e = 0.5) about their centre of mass; positions at eight equal time steps T/8, computed from Kepler's equation.
+\begin{tikzpicture}[font=\small, scale=1.25]
+  % orbits (parametrised by the eccentric anomaly)
+  \draw[figB, thick, domain=0:360, samples=150, smooth, variable=\t] plot ({2*(cos(\t)-0.5)}, {1.7321*sin(\t)});
+  \draw[figR, thick, domain=0:360, samples=120, smooth, variable=\t] plot ({-(cos(\t)-0.5)}, {-0.8660*sin(\t)});
+  % simultaneous positions joined through the centre of mass
+  \foreach \xa/\ya/\xb/\yb/\k in {1.000/0.000/-0.500/0.000/0, -0.392/1.650/0.196/-0.825/1, -1.870/1.559/0.935/-0.780/2, -2.724/0.878/1.362/-0.439/3, -3.000/0.000/1.500/0.000/4, -2.724/-0.878/1.362/0.439/5, -1.870/-1.559/0.935/0.780/6, -0.392/-1.650/0.196/0.825/7} {
+    \draw[black!40, thin, densely dotted] (\xa,\ya) -- (\xb,\yb);
+    \fill[figB] (\xa,\ya) circle (1.5pt);
+    \fill[figR] (\xb,\yb) circle (2.1pt);
+  }
+  % time labels on the outer orbit
+  \node[figB, font=\scriptsize, anchor=south] at (1.0,0.04) {$0$};
+  \node[figB, font=\scriptsize, anchor=south] at (-0.392,1.68) {$T/8$};
+  \node[figB, font=\scriptsize, anchor=south east] at (-1.87,1.58) {$2T/8$};
+  \node[figB, font=\scriptsize, anchor=east] at (-3.05,0.0) {$4T/8$};
+  \node[figB, font=\scriptsize, anchor=north] at (-0.392,-1.68) {$7T/8$};
+  % centre of mass
+  \draw[black, thick] (-0.09,-0.09) -- (0.09,0.09) (-0.09,0.09) -- (0.09,-0.09);
+  \node[black!80, font=\scriptsize, anchor=north west] at (0.02,-0.07) {CM};
+  % legends
+  \node[figR, font=\scriptsize, align=left, anchor=west] at (1.75,0.75) {$m_1 = 2m_2$\\ semi-major axis $\tfrac13 a$};
+  \node[figB, font=\scriptsize, align=left, anchor=west] at (1.75,-0.75) {$m_2$\\ semi-major axis $\tfrac23 a$};
+\end{tikzpicture}

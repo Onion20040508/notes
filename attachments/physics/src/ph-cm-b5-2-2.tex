@@ -1,0 +1,16 @@
+% Figure for Classical Mechanics §B5.2: catenary y = C(cosh(x/C) - 1), C = 0.6 b, against the parabola through the same vertex and endpoints and the osculating parabola x^2/(2C).
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=10cm, height=7cm, xmin=-1.12, xmax=1.12, ymin=0, ymax=1.5,
+      axis lines=left, xlabel={$x/b$}, ylabel={$y/b$}, xtick={-1,-0.5,0,0.5,1}, ytick={0,0.5,1},
+      legend style={at={(axis cs:0,1.49)}, anchor=north, font=\small, draw=black!30, fill=white, row sep=1pt},
+      legend cell align=left]
+    \addplot[domain=-1:1, samples=101, figB, line width=1.4pt] {0.6*(cosh(x/0.6) - 1)};
+    \addlegendentry{catenary, $C = 0.6\,b$}
+    \addplot[domain=-1:1, samples=101, figR, line width=1.0pt] {1.0450097*x^2};
+    \addlegendentry{parabola with the same vertex and ends}
+    \addplot[domain=-1:1, samples=101, black!50, dashed, line width=0.9pt] {x^2/1.2};
+    \addlegendentry{osculating parabola $x^2/2C$}
+    \fill (axis cs:-1,1.0450097) circle (1.8pt);
+    \fill (axis cs:1,1.0450097) circle (1.8pt);
+  \end{axis}
+\end{tikzpicture}

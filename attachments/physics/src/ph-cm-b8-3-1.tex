@@ -1,0 +1,27 @@
+% Figure for Classical Mechanics §B8.3 (Example: a beam of projectiles): wavefronts W(x, y) = x + (2 sqrt2/3)(-y)^{3/2} = const of the separated Hamilton–Jacobi solution for uniform gravity (units m = g = 1, horizontal speed 1, apex height 0, descending branch) and the trajectories y = -(x - x0)^2/2 that cross them at right angles.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small, scale=1.05]
+  \begin{scope}
+    \clip (-0.35,-3.35) rectangle (5.25,0.02);
+    % wavefronts W = c  (x = c - 0.9428 u^1.5, y = -u)
+    \foreach \c in {0.5,1.0,...,5.0} {
+      \draw[figB, thick] plot[domain=0:3.35, samples=60, smooth] ({\c - 0.942809*(\x)^1.5}, {-\x});
+    }
+    % trajectories y = -(x - x0)^2 / 2, x >= x0
+    \foreach \xo in {-0.75,0,0.75,1.5,2.25,3.0} {
+      \draw[figR, very thick] plot[domain=0:2.6, samples=50, smooth] ({\xo + \x}, {-\x*\x/2});
+    }
+  \end{scope}
+  % apex line
+  \draw[black!55, dashed, thin] (-0.35,0) -- (5.25,0);
+  \node[font=\scriptsize, black!70, anchor=south west] at (3.05,0.02) {apex height: $p_y = 0$};
+  % momentum arrow at x0 = 0.75, t = 1.2 : point (1.95, -0.72), direction (1, -1.2)
+  \fill (1.95,-0.72) circle (1.4pt);
+  \draw[->, thick, black] (1.95,-0.72) -- ({1.95 + 0.62/1.562}, {-0.72 - 0.62*1.2/1.562}) node[right, font=\scriptsize, xshift=1pt, fill=white, inner sep=1.5pt] {$\vec p = \nabla W$};
+  % axes
+  \draw[->, thin, black!55] (-0.35,-3.45) -- (5.45,-3.45) node[right, font=\scriptsize] {$x$};
+  \draw[->, thin, black!55] (-0.35,-3.45) -- (-0.35,0.45) node[above, font=\scriptsize] {$y$};
+  % legend
+  \draw[figB, thick] (5.55,-1.15) -- (5.95,-1.15) node[right, font=\scriptsize, black] {wavefronts $W = $ const};
+  \draw[figR, very thick] (5.55,-1.6) -- (5.95,-1.6) node[right, font=\scriptsize, black] {trajectories};
+  \node[font=\scriptsize, black!70, align=left, anchor=north west] at (5.55,-1.95) {same $E$ and $p_x$,\\ different launch $x_0$};
+\end{tikzpicture}

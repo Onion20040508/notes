@@ -1,0 +1,24 @@
+% Figure for Classical Mechanics §B5.1: a stationary curve y(x), the family y + eps*eta with pinned endpoints, and the test function eta.
+\begin{tikzpicture}
+  \begin{axis}[nfig, name=top, width=9cm, height=5.2cm, xmin=0, xmax=3.35, ymin=0.3, ymax=2.35,
+      xtick=\empty, ytick=\empty, xlabel={$x$}, ylabel={$y$}, clip=false,
+      xlabel style={at={(axis description cs:1,0)}, anchor=north east}, ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south east}]
+    \addplot[domain=0:3, samples=80, black!35, line width=0.7pt] {1 + 0.6*x - 0.15*x^2 + (-0.5)*(sin(deg(pi*x/3)) + 0.35*sin(deg(2*pi*x/3)))};
+    \addplot[domain=0:3, samples=80, black!35, line width=0.7pt] {1 + 0.6*x - 0.15*x^2 + (-0.25)*(sin(deg(pi*x/3)) + 0.35*sin(deg(2*pi*x/3)))};
+    \addplot[domain=0:3, samples=80, figO, line width=0.7pt] {1 + 0.6*x - 0.15*x^2 + (0.25)*(sin(deg(pi*x/3)) + 0.35*sin(deg(2*pi*x/3)))};
+    \addplot[domain=0:3, samples=80, figO, line width=0.7pt] {1 + 0.6*x - 0.15*x^2 + (0.5)*(sin(deg(pi*x/3)) + 0.35*sin(deg(2*pi*x/3)))};
+    \addplot[domain=0:3, samples=80, figB, line width=1.3pt] {1 + 0.6*x - 0.15*x^2};
+    \fill (axis cs:0,1) circle (2pt) node[left] {$A$};
+    \fill (axis cs:3,1.45) circle (2pt) node[right] {$B$};
+    \draw[figB, thin] (axis cs:2.45,1.535) -- (axis cs:2.6,0.85) node[below, font=\small] {$y(x)$, stationary};
+    \node[figO, anchor=south, font=\small] at (axis cs:1.35,2.03) {$y + \varepsilon\eta$, $\varepsilon > 0$};
+    \node[black!55, anchor=north, font=\small] at (axis cs:1.2,0.92) {$\varepsilon < 0$};
+  \end{axis}
+  \begin{axis}[nfig, at={(top.south west)}, anchor=north west, yshift=-0.9cm, width=9cm, height=3.3cm,
+      xmin=0, xmax=3.35, ymin=-0.2, ymax=1.5, xtick={3}, xticklabels={$b$}, ytick=\empty, clip=false, xlabel={$x$},
+      xlabel style={at={(axis description cs:1,0)}, anchor=north east}, axis x line=middle]
+    \addplot[domain=0:3, samples=80, figR, line width=1.1pt] {sin(deg(pi*x/3)) + 0.35*sin(deg(2*pi*x/3))};
+    \node[font=\scriptsize, anchor=north] at (axis cs:0,-0.07) {$a$};
+    \node[figR, anchor=west, font=\small] at (axis cs:1.75,1.05) {$\eta(x)$, \ $\eta(a) = \eta(b) = 0$};
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,55 @@
+% Figure for Classical Mechanics §B8.2 (Example: oscillator to (Q, P) with K = omega P): the canonical map q = sqrt(2P/(m omega)) sin Q, p = sqrt(2 m omega P) cos Q, units m = omega = 1. Left: (q, p) plane with circles P = const and rays Q = const; a cell and its image after a quarter period. Right: the same in the (Q, P) plane, where the motion is a uniform shift in Q.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small, scale=1.15]
+  % ---------- left panel: (q, p) plane ----------
+  % rays Q = const (Q measured from the +p axis toward +q; polar angle phi = 90 - Q)
+  \foreach \Q in {0,30,...,330} {
+    \draw[black!22, thin] (0,0) -- ({2.36*sin(\Q)},{2.36*cos(\Q)});
+  }
+  % circles P = const, radius sqrt(2P)
+  \foreach \r in {1.0,1.4142,1.7321,2.0,2.2361} {
+    \draw[figB, thin] (0,0) circle (\r);
+  }
+  % shaded cell: P in [1, 1.5], Q in [30, 60] deg  -> phi in [30, 60]
+  \fill[figO, opacity=0.45] (60:1.7321) arc[start angle=60, end angle=30, radius=1.7321] -- (30:1.4142) arc[start angle=30, end angle=60, radius=1.4142] -- cycle;
+  % its image after omega t = 90 deg: Q in [120, 150] -> phi in [-30, -60]
+  \fill[figR, opacity=0.45] (-30:1.7321) arc[start angle=-30, end angle=-60, radius=1.7321] -- (-60:1.4142) arc[start angle=-60, end angle=-30, radius=1.4142] -- cycle;
+  % flow arrow (clockwise)
+  \draw[->, thick, black!70] (250:2.5) arc[start angle=250, end angle=200, radius=2.5];
+  \node[font=\scriptsize, black!70, anchor=north east] at (228:2.62) {flow};
+  % axes
+  \draw[->, thin, black!55] (-2.6,0) -- (2.75,0) node[right, font=\scriptsize] {$q$};
+  \draw[->, thin, black!55] (0,-2.6) -- (0,2.75) node[above, font=\scriptsize] {$p$};
+  % labels
+  \node[figB, font=\scriptsize, anchor=west, inner sep=1pt] at (-2.75,2.45) {$P = \tfrac12, 1, \tfrac32, 2, \tfrac52$};
+  \node[font=\scriptsize, black!60, anchor=south west, inner sep=1pt] at (0.04,2.36) {$Q = 0$};
+  \node[font=\scriptsize, black!60, anchor=north west, inner sep=1pt] at (2.3,-0.04) {$Q = \tfrac{\pi}{2}$};
+  \node[font=\scriptsize, figO!80!black, anchor=south west] at (45:2.3) {cell};
+  \node[font=\scriptsize, figR, anchor=north west] at (-45:2.3) {image at $\omega t = \tfrac{\pi}{2}$};
+  \node[font=\scriptsize, black!70] at (0,-3.05) {$(q, p)$: circles $H = \omega P$, rays $Q = $ const};
+  % ---------- right panel: (Q, P) plane ----------
+  \begin{scope}[xshift=4.0cm, yshift=-1.3cm]
+    \def\sx{0.62}
+    \foreach \P in {0.5,1.0,1.5,2.0,2.5} {
+      \draw[figB, thin] (0,\P) -- ({2*pi*\sx},\P);
+    }
+    \foreach \k in {1,...,11} {
+      \draw[black!22, thin] ({\k*pi/6*\sx},0) -- ({\k*pi/6*\sx},2.7);
+    }
+    % cell Q in [pi/6, pi/3], P in [1, 1.5]
+    \fill[figO, opacity=0.45] ({pi/6*\sx},1.0) rectangle ({pi/3*\sx},1.5);
+    % image Q in [2pi/3, 5pi/6]
+    \fill[figR, opacity=0.45] ({2*pi/3*\sx},1.0) rectangle ({5*pi/6*\sx},1.5);
+    \draw[->, thick, black!70] ({0.42*pi*\sx},1.25) -- ({0.6*pi*\sx},1.25);
+    % axes
+    \draw[->, thin, black!55] (0,0) -- ({2*pi*\sx+0.35},0) node[right, font=\scriptsize] {$Q$};
+    \draw[->, thin, black!55] (0,0) -- (0,2.95) node[above, font=\scriptsize] {$P$};
+    \foreach \k/\lab in {1/{\tfrac{\pi}{2}},2/{\pi},3/{\tfrac{3\pi}{2}},4/{2\pi}} {
+      \draw[black!55, thin] ({\k*pi/2*\sx},0) -- ({\k*pi/2*\sx},-0.07) node[below, font=\scriptsize] {$\lab$};
+    }
+    \foreach \P/\lab in {1.0/1, 2.0/2} {
+      \draw[black!55, thin] (0,\P) -- (-0.07,\P) node[left, font=\scriptsize] {$\lab$};
+    }
+    \node[font=\scriptsize, black!70, align=center] at ({pi*\sx},3.25) {$\dot Q = \omega$, $\dot P = 0$};
+    \node[font=\scriptsize, black!70] at ({pi*\sx},-0.75) {$(Q, P)$: both cells have area $\Delta Q\,\Delta P$};
+  \end{scope}
+\end{tikzpicture}

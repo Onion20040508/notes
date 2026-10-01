@@ -1,0 +1,24 @@
+% Figure for Classical Mechanics §B3.2 (perpendicular-axis theorem: distances of a mass element of a lamina from the three axes).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small,
+  x={(-0.62cm,-0.5cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}]
+  % lamina in the xy-plane
+  \draw[black!55, thin, fill=figB!8] plot[smooth cycle, tension=0.75] coordinates {(2.6,-0.6,0) (2.9,1.6,0) (1.6,3.0,0) (-0.4,3.0,0) (-1.6,1.4,0) (-1.2,-0.8,0) (0.6,-1.5,0)};
+  % axes
+  \draw[->, thin, black!70] (0,0,0) -- (3.6,0,0) node[below left] {$x$};
+  \draw[->, thin, black!70] (0,0,0) -- (0,4.2,0) node[right] {$y$};
+  \draw[->, thin, black!70] (0,0,0) -- (0,0,2.6) node[above] {$z$};
+  \draw[thin, black!40] (0,0,0) -- (-1.4,0,0);
+  \draw[thin, black!40] (0,0,0) -- (0,-1.6,0);
+  % mass element
+  \coordinate (P) at (1.3,2.0,0);
+  \fill[figR] (P) circle (2pt);
+  \node[figR, below right] at (P) {$dm$};
+  % distance to x-axis: |y|
+  \draw[thick, figG] (1.3,0,0) -- (P) node[pos=0.45, below, yshift=-1pt] {$|y|$};
+  % distance to y-axis: |x|
+  \draw[thick, figO] (0,2.0,0) -- (P) node[pos=0.5, right, xshift=1pt] {$|x|$};
+  % distance to z-axis: rho
+  \draw[very thick, figR, dashed] (0,0,0) -- (P) node[pos=0.55, above, yshift=1pt] {$\rho$};
+  \draw[black!45, thin] (1.3,0.18,0) -- (1.48,0.18,0) -- (1.48,0,0);
+  \node[font=\scriptsize, black!70, anchor=north] at (3.4,2.6,0) {$\rho^2 = x^2 + y^2$, so $I_z = I_x + I_y$};
+\end{tikzpicture}

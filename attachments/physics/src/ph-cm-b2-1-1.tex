@@ -1,0 +1,38 @@
+% Figure for Classical Mechanics §B2.1: effective potential of the Kepler problem, U_eff = -alpha/r + L^2/(2 mu r^2) (units alpha = L^2/mu = 1), with three energies and their turning points.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=10.5cm, height=7cm,
+      axis lines=middle, xmin=0, xmax=6.3, ymin=-0.78, ymax=0.62,
+      xlabel={$r$}, ylabel={energy},
+      xlabel style={anchor=north west}, ylabel style={anchor=south},
+      xtick=\empty, ytick=\empty, clip=false]
+    % centrifugal term and true potential (dashed)
+    \addplot[figO, dashed, thin, domain=0.92:6.1, samples=120] {1/(2*x^2)};
+    \node[figO, font=\scriptsize, anchor=west] at (axis cs:0.98,0.58) {$\dfrac{L^2}{2\mu r^2}$};
+    \addplot[black!55, dashed, thin, domain=1.50:6.1, samples=120] {-1/x};
+    \node[black!60, font=\scriptsize, anchor=north west] at (axis cs:4.2,-0.31) {$U(r) = -\dfrac{\alpha}{r}$};
+    % effective potential
+    \addplot[figB, domain=0.403:6.1, samples=200] {-1/x + 1/(2*x^2)};
+    \node[figB, font=\scriptsize, anchor=south west] at (axis cs:4.6,-0.19) {$U_{\text{eff}}(r)$};
+    % E > 0: unbound, one turning point
+    \addplot[figG, domain=0.4673:6.1, samples=2] {0.15};
+    \fill[figG] (axis cs:0.4673,0.15) circle (1.6pt);
+    \node[figG, font=\scriptsize, anchor=south east] at (axis cs:6.1,0.15) {$E>0$: unbounded};
+    % E < 0: bound, two turning points
+    \addplot[figR, domain=0.6126:2.7208, samples=2] {-0.3};
+    \fill[figR] (axis cs:0.6126,-0.3) circle (1.6pt);
+    \fill[figR] (axis cs:2.7208,-0.3) circle (1.6pt);
+    \draw[black!55, dotted, thin] (axis cs:0.6126,-0.3) -- (axis cs:0.6126,0);
+    \draw[black!55, dotted, thin] (axis cs:2.7208,-0.3) -- (axis cs:2.7208,0);
+    \node[font=\scriptsize, black!70, anchor=south west] at (axis cs:0.60,0.0) {$r_{\min}$};
+    \node[font=\scriptsize, black!70, anchor=south] at (axis cs:2.7208,0.0) {$r_{\max}$};
+    \node[figR, font=\scriptsize, anchor=south] at (axis cs:1.75,-0.29) {$E<0$: bounded};
+    % radial kinetic energy as the gap
+    \draw[<->, >={Stealth[length=1.6mm]}, figR, thin] (axis cs:1.2,{-1/1.2+1/(2*1.2^2)}) -- (axis cs:1.2,-0.3);
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.23,-0.385) {$\tfrac12\mu\dot r^2$};
+    % minimum: circular orbit
+    \fill[figB] (axis cs:1,-0.5) circle (1.8pt);
+    \draw[figB, thin] (axis cs:0.75,-0.5) -- (axis cs:1.25,-0.5);
+    \draw[black!55, dotted, thin] (axis cs:1,-0.5) -- (axis cs:1,-0.64);
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:0.9,-0.64) {$E = U_{\text{eff,min}}$: circle of radius $r_0 = L^2/\mu\alpha$};
+  \end{axis}
+\end{tikzpicture}

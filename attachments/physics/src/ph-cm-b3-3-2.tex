@@ -1,0 +1,31 @@
+% Figure for Classical Mechanics §B3.3 (sliding to rolling with constant kinetic friction, solid sphere beta = 2/5; computed: V = V0 - mu g t, R omega = R omega0 + mu g t / beta until they meet).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=left, xmin=0, xmax=0.9, ymin=-1.15, ymax=1.15,
+      xlabel={$\mu g\,t/V_0$}, ylabel={velocity$/V_0$},
+      xtick={0,0.2857}, xticklabels={$0$,$\tfrac27$},
+      ytick={-1,0,0.7143}, yticklabels={$-1$,$0$,$\tfrac57$},
+      title={\footnotesize no initial spin, $\omega_0 = 0$}]
+    \addplot[figB, domain=0:0.2857, samples=2] {1 - x};
+    \addplot[figR, domain=0:0.2857, samples=2] {2.5*x};
+    \addplot[black!70, domain=0.2857:0.9, samples=2] {0.7143};
+    \addplot[black!35, dashed, thin, domain=0:0.9, samples=2] {0};
+    \draw[black!45, dashed, thin] (axis cs:0.2857,-1.15) -- (axis cs:0.2857,0.7143);
+    \node[figB, anchor=south west, font=\scriptsize] at (axis cs:0.02,0.92) {$V$};
+    \node[figR, anchor=north west, font=\scriptsize] at (axis cs:0.06,0.1) {$R\omega$};
+    \node[black!70, anchor=south, font=\scriptsize] at (axis cs:0.62,0.74) {rolling};
+  \end{axis}
+  \begin{axis}[nfig, at={(left.east)}, anchor=west, xshift=1.3cm, xmin=0, xmax=0.9, ymin=-1.15, ymax=1.15,
+      xlabel={$\mu g\,t/V_0$},
+      xtick={0,0.5714}, xticklabels={$0$,$\tfrac47$},
+      ytick={-1,0,0.4286}, yticklabels={$-1$,$0$,$\tfrac37$},
+      title={\footnotesize backspin, $R\omega_0 = -V_0$}]
+    \addplot[figB, domain=0:0.5714, samples=2] {1 - x};
+    \addplot[figR, domain=0:0.5714, samples=2] {-1 + 2.5*x};
+    \addplot[black!70, domain=0.5714:0.9, samples=2] {0.4286};
+    \addplot[black!35, dashed, thin, domain=0:0.9, samples=2] {0};
+    \draw[black!45, dashed, thin] (axis cs:0.5714,-1.15) -- (axis cs:0.5714,0.4286);
+    \node[figB, anchor=south west, font=\scriptsize] at (axis cs:0.02,0.92) {$V$};
+    \node[figR, anchor=north west, font=\scriptsize] at (axis cs:0.03,-0.82) {$R\omega$};
+    \node[black!70, anchor=south, font=\scriptsize] at (axis cs:0.74,0.46) {rolling};
+  \end{axis}
+\end{tikzpicture}

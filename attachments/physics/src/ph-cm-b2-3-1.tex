@@ -1,0 +1,32 @@
+% Figure for Classical Mechanics §B2.3: effective potential for U = -alpha/r - alpha r0^2/r^3 (PHY 421 F2015 Midterm 2, Problem 3), units alpha = L^2/mu = 1, r0 = 0.25; Kepler case dashed.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=10.5cm, height=7cm,
+      axis lines=middle, xmin=0, xmax=5.3, ymin=-0.8, ymax=0.32,
+      xlabel={$r$}, ylabel={energy},
+      xlabel style={anchor=north west}, ylabel style={anchor=south},
+      xtick=\empty, ytick=\empty, clip=false]
+    % Kepler effective potential for comparison
+    \addplot[black!45, dashed, thin, domain=0.5:5.1, samples=150] {-1/x + 1/(2*x^2)};
+    \node[black!55, font=\scriptsize, anchor=north west] at (axis cs:3.3,-0.33) {Kepler, $r_0 = 0$};
+    % effective potential with the 1/r^3 term
+    \addplot[figB, domain=0.181:5.1, samples=300] {-1/x - 0.0625/x^3 + 1/(2*x^2)};
+    \node[figB, font=\scriptsize, anchor=south west] at (axis cs:3.3,-0.16) {$U_{\text{eff}}(r)$};
+    % unstable circular orbit (maximum)
+    \fill[figR] (axis cs:0.25,0) circle (1.8pt);
+    \node[figR, font=\scriptsize, anchor=south west] at (axis cs:0.27,0.02) {unstable circular orbit $r_-$};
+    % stable circular orbit (minimum)
+    \fill[figB] (axis cs:0.75,-0.5926) circle (1.8pt);
+    \draw[black!55, dotted, thin] (axis cs:0.75,-0.5926) -- (axis cs:0.75,-0.70);
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:0.62,-0.70) {stable circular orbit $r_+$};
+    % bound energy: two allowed regions
+    \addplot[figO, domain=0.4578:1.5714, samples=2] {-0.45};
+    \addplot[figO, domain=0.181:0.1931, samples=2] {-0.45};
+    \fill[figO] (axis cs:0.4578,-0.45) circle (1.4pt);
+    \fill[figO] (axis cs:1.5714,-0.45) circle (1.4pt);
+    \fill[figO] (axis cs:0.1931,-0.45) circle (1.4pt);
+    \node[figO, font=\scriptsize, anchor=west] at (axis cs:1.62,-0.45) {$E<0$: bounded, precessing; or falls in};
+    % energy above the barrier
+    \addplot[figG, domain=0:5.1, samples=2] {0.18};
+    \node[figG, font=\scriptsize, anchor=south east] at (axis cs:5.1,0.18) {$E > U_{\text{eff}}(r_-)$: falls to the centre if $\dot r<0$};
+  \end{axis}
+\end{tikzpicture}

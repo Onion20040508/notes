@@ -1,0 +1,31 @@
+% Figure for Classical Mechanics §B6.5 (Example: the double pendulum, equal masses and lengths): the two normal modes, drawn at both extremes theta = ±A v with A = 0.2 rad; slow mode v = (1, sqrt2), fast mode v = (1, -sqrt2); positions computed exactly from the angles.
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small]
+  \begin{scope}[xshift=0cm]
+  \fill[pattern=north east lines, pattern color=black!45] (-0.6,0) rectangle (0.6,0.15); \draw[thick] (-0.6,0) -- (0.6,0);
+  \draw[black!35, densely dashed, thin] (0,0) -- (0,-3.85);
+  \draw[black!30, thick] (0,0) -- (-0.348,-1.715) -- (-0.836,-3.396);
+  \fill[black!30] (-0.348,-1.715) circle (2.6pt); \fill[black!30] (-0.836,-3.396) circle (2.6pt);
+  \draw[black, thick] (0,0) -- (0.348,-1.715) -- (0.836,-3.396);
+  \fill[figB] (0.348,-1.715) circle (2.6pt); \fill[figB] (0.836,-3.396) circle (2.6pt);
+  \draw[figR, thin] (0,-1.0) arc (-90:-78.54:1.0); \node[figR, font=\scriptsize, anchor=west] at (0.26,-1.02) {$\theta_1$};
+  \draw[black!35, densely dashed, thin] (0.348,-1.715) -- (0.348,-2.915);
+  \draw[figR, thin] (0.348,-2.715) arc (-90:-73.79:1.0); \node[figR, font=\scriptsize, anchor=west] at (0.678,-2.715) {$\theta_2$};
+  \node[font=\scriptsize, anchor=west] at (0.956,-3.396) {$\theta_2/\theta_1 = +\sqrt2$};
+  \node[font=\small, anchor=south] at (0,0.25) {slow mode};
+  \node[font=\scriptsize, anchor=north] at (0,-3.90) {$\omega_-^2 = (2 - \sqrt2)\,g/\ell$};
+  \end{scope}
+  \begin{scope}[xshift=4.6cm]
+  \fill[pattern=north east lines, pattern color=black!45] (-0.6,0) rectangle (0.6,0.15); \draw[thick] (-0.6,0) -- (0.6,0);
+  \draw[black!35, densely dashed, thin] (0,0) -- (0,-3.85);
+  \draw[black!30, thick] (0,0) -- (-0.348,-1.715) -- (0.141,-3.396);
+  \fill[black!30] (-0.348,-1.715) circle (2.6pt); \fill[black!30] (0.141,-3.396) circle (2.6pt);
+  \draw[black, thick] (0,0) -- (0.348,-1.715) -- (-0.141,-3.396);
+  \fill[figB] (0.348,-1.715) circle (2.6pt); \fill[figB] (-0.141,-3.396) circle (2.6pt);
+  \draw[figR, thick] (0,-2.911) circle (2.2pt);
+  \node[figR, font=\scriptsize, anchor=west, align=left] at (0.55,-2.861) {nearly at rest\\($\approx 0.71\,\ell$ down the lower rod)};
+  \draw[figR, thin] (0.55,-2.861) -- (0.1,-2.911);
+  \node[font=\scriptsize, anchor=west] at (0.498,-1.715) {$\theta_2/\theta_1 = -\sqrt2$};
+  \node[font=\small, anchor=south] at (0,0.25) {fast mode};
+  \node[font=\scriptsize, anchor=north] at (0,-3.90) {$\omega_+^2 = (2 + \sqrt2)\,g/\ell$};
+  \end{scope}
+\end{tikzpicture}

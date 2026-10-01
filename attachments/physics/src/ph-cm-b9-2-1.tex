@@ -1,0 +1,19 @@
+% Figure for Classical Mechanics §B9.2 (Foucault pendulum: exact small-amplitude solution xi = A e^{i(w'-Wz)t} + B e^{-i(w'+Wz)t}, released from rest at x = a; Wz/w0 = 1/12 exaggerated, t from 0 to pi/(2 Wz): the swing plane turns clockwise through 90 degrees in three periods).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \pgfmathsetmacro{\Wz}{1/12}
+  \pgfmathsetmacro{\wp}{sqrt(1+\Wz*\Wz)}
+  \pgfmathsetmacro{\Ac}{(1+\Wz/\wp)/2}
+  \pgfmathsetmacro{\Bc}{(1-\Wz/\wp)/2}
+  \begin{axis}[axis equal image, axis lines=none, width=8.2cm, xmin=-1.25, xmax=1.25, ymin=-1.25, ymax=1.25, clip=false]
+    \draw[black!30, thin] (axis cs:0,0) circle[radius=1];
+    \draw[->, black!55, thin] (axis cs:-1.25,0) -- (axis cs:1.3,0) node[right, font=\scriptsize] {$x$ (east)};
+    \draw[->, black!55, thin] (axis cs:0,-1.25) -- (axis cs:0,1.3) node[above, font=\scriptsize] {$y$ (north)};
+    \addplot[figB, line width=0.5pt, domain=0:6*pi, samples=1500]
+      ({\Ac*cos(deg((\wp-\Wz)*x)) + \Bc*cos(deg((\wp+\Wz)*x))},
+       {\Ac*sin(deg((\wp-\Wz)*x)) - \Bc*sin(deg((\wp+\Wz)*x))});
+    \addplot[only marks, mark=*, mark size=1.8pt, black] coordinates {(1,0)};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:1.0,0.02) {release};
+    \draw[->, figR, thick] (axis cs:1.12,-0.18) arc[start angle=-9, end angle=-60, radius=1.13];
+    \node[font=\scriptsize, figR, anchor=north west] at (axis cs:0.62,-0.98) {plane turns at $\Omega\sin\lambda$};
+  \end{axis}
+\end{tikzpicture}
