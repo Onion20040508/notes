@@ -1,0 +1,21 @@
+% Figure for Quantum Mechanics §C2.3 (Example: the Wigner function; PHY 511 HW 3, Problem 4). Two-packet superposition psi ∝ g(x-a) + g(x+a), g = exp(-x^2/2d^2), a = 2.5 d, units d = hbar = 1: W(x,p) = [e^{-(x-a)^2} + e^{-(x+a)^2} + 2 e^{-x^2} cos(2ap)] e^{-p^2} / (2 pi (1 + e^{-a^2})). Top: its x-marginal |psi(x)|^2; right: its p-marginal |phi(p)|^2 = 2 e^{-p^2} cos^2(ap) / (sqrt(pi)(1 + e^{-a^2})). Computed from the exact formulas.
+\begin{tikzpicture}[font=\small,
+    declare function={aa=2.5; C=1/(2*pi*(1+exp(-aa^2)));
+      W(\x,\p)=C*(exp(-(\x-aa)^2)+exp(-(\x+aa)^2)+2*exp(-\x^2)*cos(deg(2*aa*\p)))*exp(-\p^2);}]
+  \begin{axis}[name=M, width=8.2cm, height=5.6cm, scale only axis=false, view={0}{90},
+      xmin=-5, xmax=5, ymin=-2.5, ymax=2.5, xlabel={$x'/d$}, ylabel={$p'd/\hbar$},
+      tick style={thin}, ticklabel style={font=\scriptsize}, label style={font=\small},
+      colormap={rwb}{rgb255=(31,90,166) rgb255=(255,255,255) rgb255=(176,48,48)},
+      point meta min=-0.32, point meta max=0.32,
+      colorbar, colorbar style={width=0.25cm, ytick={-0.3,-0.15,0,0.15,0.3}, yticklabel style={font=\scriptsize}, title={\scriptsize $\hbar W$}, at={(1.32,1)}}]
+    \addplot3[surf, shader=flat, mesh/ordering=x varies, domain=-5:5, y domain=-2.5:2.5, samples=67, samples y=41, point meta=z] {W(x,y)};
+  \end{axis}
+  \begin{axis}[nfig, at={(M.north west)}, anchor=south west, yshift=0.25cm, width=8.2cm, height=2.6cm, scale only axis=false,
+      xmin=-5, xmax=5, ymin=0, ymax=0.62, xticklabels={}, ytick={0,0.5}, ylabel={\scriptsize $|\psi|^2 d$}, axis lines=left]
+    \addplot[figB, thick, domain=-5:5, samples=200] {(exp(-(x-2.5)^2)+exp(-(x+2.5)^2)+2*exp(-x^2-6.25))/(2*sqrt(pi)*(1+exp(-6.25)))};
+  \end{axis}
+  \begin{axis}[nfig, at={(M.north east)}, anchor=north west, xshift=0.25cm, width=2.8cm, height=5.6cm, scale only axis=false,
+      ymin=-2.5, ymax=2.5, xmin=0, xmax=1.2, yticklabels={}, xtick={0,1}, xlabel={\scriptsize $|\varphi|^2\hbar/d$}, axis lines=left]
+    \addplot[figB, thick, domain=-2.5:2.5, samples=300] ({2*exp(-x^2)*cos(deg(2.5*x))^2/(sqrt(pi)*(1+exp(-6.25)))},{x});
+  \end{axis}
+\end{tikzpicture}

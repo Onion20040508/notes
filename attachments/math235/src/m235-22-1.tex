@@ -1,0 +1,24 @@
+% Figure for Applied Linear Algebra §22.
+\begin{tikzpicture}[scale=0.95, >=Stealth]
+  \coordinate (O) at (0,0);
+  \coordinate (A1) at (3,1);
+  \coordinate (A2) at (1,2.5);
+  \coordinate (A2c) at ($(A2)+1.6*(A1)$);
+  % the lines L and a2 + L
+  \draw[figB!60, thick] ($(O)-0.75*(A1)$) -- ($(O)+3.25*(A1)$) node[right, font=\small, figB] {$L$};
+  \draw[figB!60, thick] ($(A2)-0.75*(A1)$) -- ($(A2)+3.25*(A1)$) node[right, font=\small, figB] {$\mathbf{a}_2 + L$};
+  % the two parallelograms
+  \fill[figB!18] (O) -- (A1) -- ($(A1)+(A2)$) -- (A2) -- cycle;
+  \fill[figG!22] (O) -- (A1) -- ($(A1)+(A2c)$) -- (A2c) -- cycle;
+  \draw[figB, thick] (O) -- (A1) -- ($(A1)+(A2)$) -- (A2) -- cycle;
+  \draw[figG!80!black, thick] (O) -- (A1) -- ($(A1)+(A2c)$) -- (A2c) -- cycle;
+  % height
+  \coordinate (F) at ($(O)!(A2)!(A1)$);
+  \draw[figR, dashed, thick] (A2) -- (F);
+  \node[figR, font=\scriptsize, left] at ($(A2)!0.5!(F)$) {height};
+  % vectors
+  \draw[->, very thick] (O) -- (A1) node[below right, font=\small] {$\mathbf{a}_1$};
+  \draw[->, very thick, figB] (O) -- (A2) node[above left, font=\small] {$\mathbf{a}_2$};
+  \draw[->, very thick, figG!70!black] (O) -- (A2c) node[above left, font=\small] {$\mathbf{a}_2 + c\,\mathbf{a}_1$};
+  \fill (O) circle (1.5pt) node[below left, font=\small] {$\mathbf{0}$};
+\end{tikzpicture}

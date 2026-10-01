@@ -1,0 +1,35 @@
+% Figure for Applied Linear Algebra §3.
+\begin{tikzpicture}[x=0.5cm, y=0.5cm, >=Stealth, font=\scriptsize]
+  % ---- left: parallelogram rule, u=(2,2), v=(-6,1) ----
+  \begin{scope}
+    \draw[->, black!60] (-7,0) -- (3.2,0) node[right] {$x_1$};
+    \draw[->, black!60] (0,-1) -- (0,4.4) node[above] {$x_2$};
+    \fill[figB!12] (0,0) -- (2,2) -- (-4,3) -- (-6,1) -- cycle;
+    \draw[figB!50, dashed] (2,2) -- (-4,3) -- (-6,1);
+    \draw[->, thick, black] (0,0) -- (2,2) node[right] {$\mathbf{u}$};
+    \draw[->, thick, black] (0,0) -- (-6,1) node[left] {$\mathbf{v}$};
+    \draw[->, thick, figB] (0,0) -- (-4,3) node[above] {$\mathbf{u}+\mathbf{v}$};
+    \foreach \x in {-6,...,2} \draw[black!60] (\x,-0.12) -- (\x,0.12);
+    \node[below] at (-6,-0.1) {$-6$}; \node[below] at (2,-0.1) {$2$};
+    \node[font=\small] at (-2,-2.2) {(a) the parallelogram rule};
+  \end{scope}
+  % ---- right: combinations of v1=(1,2), v2=(3,1) ----
+  \begin{scope}[xshift=7.2cm]
+    \begin{scope}
+      \clip (-4.5,-3.5) rectangle (6.5,5.2);
+      \foreach \k in {-4,...,4} {
+        \draw[figB!35] ($\k*(3,1) + (-6,-12)$) -- ($\k*(3,1) + (6,12)$);
+        \draw[figR!35] ($\k*(1,2) + (-15,-5)$) -- ($\k*(1,2) + (15,5)$);
+      }
+    \end{scope}
+    \draw[->, black!60] (-4.5,0) -- (6.7,0) node[right] {$x_1$};
+    \draw[->, black!60] (0,-3.5) -- (0,5.4) node[above] {$x_2$};
+    \draw[->, very thick, figR] (0,0) -- (1,2) node[left] {$\mathbf{v}_1$};
+    \draw[->, very thick, figB] (0,0) -- (3,1) node[below right=-1pt] {$\mathbf{v}_2$};
+    \fill (4,3) circle (1.6pt) node[above right=-1pt] {$\mathbf{v}_1+\mathbf{v}_2$};
+    \fill (-2,1) circle (1.6pt) node[above left=-1pt] {$\mathbf{v}_1-\mathbf{v}_2$};
+    \fill (5,0) circle (1.6pt) node[below right=-1pt] {$-\mathbf{v}_1+2\mathbf{v}_2$};
+    \fill (-1,-2) circle (1.6pt) node[left] {$-\mathbf{v}_1$};
+    \node[font=\small] at (1,-4.4) {(b) combinations $a\mathbf{v}_1+b\mathbf{v}_2$};
+  \end{scope}
+\end{tikzpicture}

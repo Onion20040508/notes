@@ -1,0 +1,42 @@
+% Figure for Applied Linear Algebra §11.
+\begin{tikzpicture}[x=1.5cm, y=1.5cm, >=Stealth, font=\scriptsize]
+  \pgfmathsetmacro{\c}{cos(50)} \pgfmathsetmacro{\s}{sin(50)}
+  \newcommand{\axes}{\draw[->, black!50] (-0.25,0) -- (1.35,0) node[right] {$x_1$};
+    \draw[->, black!50] (0,-0.25) -- (0,1.2) node[above] {$x_2$};}
+  % top row: P then R
+  \node[font=\small, anchor=east] at (-0.45,0.45) {$R_\varphi P$:};
+  \begin{scope}
+    \axes
+    \draw[->, very thick, figB] (0,0) -- (1,0) node[below] {$\mathbf{e}_1$};
+  \end{scope}
+  \draw[->, thick, black!70] (1.6,0.45) -- node[above] {$P$} (2.2,0.45);
+  \begin{scope}[xshift=3.9cm]
+    \axes
+    \draw[->, very thick, figB] (0,0) -- (1,0) node[below] {$P\mathbf{e}_1 = \mathbf{e}_1$};
+  \end{scope}
+  \draw[->, thick, black!70] (4.2,0.45) -- node[above] {$R_\varphi$} (4.8,0.45);
+  \begin{scope}[xshift=7.8cm]
+    \axes
+    \draw[black!60] (0.35,0) arc (0:50:0.35) node[midway, right] {$\varphi$};
+    \draw[->, very thick, figR] (0,0) -- (\c,\s) node[above right] {$(\cos\varphi, \sin\varphi)$};
+  \end{scope}
+  % bottom row: R then P
+  \begin{scope}[yshift=-3.3cm]
+    \node[font=\small, anchor=east] at (-0.45,0.45) {$PR_\varphi$:};
+    \axes
+    \draw[->, very thick, figB] (0,0) -- (1,0) node[below] {$\mathbf{e}_1$};
+    \draw[->, thick, black!70] (1.6,0.45) -- node[above] {$R_\varphi$} (2.2,0.45);
+    \draw[->, thick, black!70] (4.2,0.45) -- node[above] {$P$} (4.8,0.45);
+  \end{scope}
+  \begin{scope}[xshift=3.9cm, yshift=-3.3cm]
+    \axes
+    \draw[black!60] (0.35,0) arc (0:50:0.35) node[midway, right] {$\varphi$};
+    \draw[->, very thick, figB] (0,0) -- (\c,\s) node[above right] {$R_\varphi\mathbf{e}_1$};
+  \end{scope}
+  \begin{scope}[xshift=7.8cm, yshift=-3.3cm]
+    \axes
+    \draw[black!40, dashed] (0,0) -- (\c,\s) -- (\c,0);
+    \draw[->, very thick, figR] (0,0) -- (\c,0);
+    \node[figR, below=5pt] at (0.5,0) {$(\cos\varphi, 0)$};
+  \end{scope}
+\end{tikzpicture}
