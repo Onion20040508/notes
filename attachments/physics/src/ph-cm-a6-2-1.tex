@@ -1,0 +1,18 @@
+% Figure for Classical Mechanics §A6.2 (parallel-axis theorem: positions of a mass element relative to the centre-of-mass axis and to a parallel axis P).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  \draw[thick, black!60, fill=figB!8] plot[smooth cycle, tension=0.8] coordinates {(-2.2,0.2) (-1.4,1.5) (0.4,1.8) (2.2,1.1) (2.6,-0.4) (1.2,-1.6) (-0.8,-1.5) (-2.0,-0.9)};
+  \coordinate (C) at (0.8,-0.6);
+  \coordinate (P) at (-1.5,-0.4);
+  \coordinate (M) at (1.2,1.25);
+  % axes out of page
+  \draw[black!70] (C) circle (0.12); \fill[black!70] (C) circle (0.035);
+  \node[below right, font=\scriptsize] at (C) {cm axis};
+  \draw[black!70] (P) circle (0.12); \fill[black!70] (P) circle (0.035);
+  \node[below left, font=\scriptsize] at (P) {axis $P$};
+  % vectors
+  \draw[->, very thick, figB, shorten <=3pt] (P) -- (C) node[midway, below] {$\vec d$};
+  \draw[->, very thick, figB, shorten <=3pt] (C) -- (M) node[midway, right] {$\vec\rho_j$};
+  \draw[->, very thick, figR, shorten <=3pt] (P) -- (M) node[midway, above left] {$\vec d+\vec\rho_j$};
+  \fill (M) circle (2.2pt) node[above right] {$m_j$};
+  \node[font=\scriptsize, black!70] at (0.2,-2.2) {$I = \sum_j m_j\lvert\vec d+\vec\rho_j\rvert^2 = I_{\text{cm}} + Md^2$};
+\end{tikzpicture}

@@ -1,0 +1,18 @@
+% Figure for Classical Mechanics §A4.6 (package released on a rough incline above a spring; after PHY 181 Exam 2, Fall 2021, Question 4).
+\begin{tikzpicture}[>={Stealth[length=2mm]}, font=\small]
+  \def\ang{53}
+  \draw[black!55, thin] (-0.4,0) -- (3.4,0);
+  \fill[black!8] (0,0) -- ({4.6*cos(\ang)},{4.6*sin(\ang)}) -- ({4.6*cos(\ang)},0) -- cycle;
+  \draw[thick, black!70] (0,0) -- ({4.6*cos(\ang)},{4.6*sin(\ang)});
+  \draw[black!55, thin] (0.6,0) arc (0:\ang:0.6); \node[font=\scriptsize] at (0.85,0.35) {$53^\circ$};
+  \begin{scope}[rotate=\ang]
+    \draw[very thick, black!70] (0.25,0) -- (0.25,0.55);
+    \draw[thick, figB, decorate, decoration={zigzag, segment length=2.2mm, amplitude=1.3mm}] (0.25,0.22) -- (1.35,0.22);
+    \draw[thick, figB] (1.35,0.05) -- (1.35,0.4);
+    \node[font=\scriptsize, figB, rotate=\ang] at (0.8,0.62) {$K$};
+    \draw[very thick, figR, fill=figR!15] (2.95,0) rectangle (3.6,0.5);
+    \node[font=\scriptsize, rotate=\ang] at (3.27,0.25) {$M$};
+    \draw[<->, black!55, thin] (1.35,-0.22) -- (2.95,-0.22) node[midway, below, sloped, font=\scriptsize, black] {$D$};
+    \node[font=\scriptsize, black!70, rotate=\ang] at (2.2,0.6) {friction $\mu$};
+  \end{scope}
+\end{tikzpicture}

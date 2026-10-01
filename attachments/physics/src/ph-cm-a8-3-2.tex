@@ -1,0 +1,24 @@
+% Figure for Classical Mechanics §A8.3: orbits through the same perihelion with the attracting mass at the common focus: circle, ellipse, parabola, hyperbola, r = r_p(1+e)/(1+e cos theta).
+\begin{tikzpicture}[font=\small]
+  \begin{scope}
+    \clip (-4.6,-2.4) rectangle (1.9,2.4);
+    % circle e = 0
+    \draw[figB, thick] (0,0) circle (1);
+    % ellipse e = 0.5
+    \draw[figB, thick, dashed] plot[domain=0:360, samples=120, variable=\t] ({1.5/(1+0.5*cos(\t))*cos(\t)},{1.5/(1+0.5*cos(\t))*sin(\t)});
+    % parabola e = 1
+    \draw[figR, thick] plot[domain=-128:128, samples=120, variable=\t] ({2/(1+cos(\t))*cos(\t)},{2/(1+cos(\t))*sin(\t)});
+    % hyperbola e = 1.5
+    \draw[figG, thick] plot[domain=-118:118, samples=120, variable=\t] ({2.5/(1+1.5*cos(\t))*cos(\t)},{2.5/(1+1.5*cos(\t))*sin(\t)});
+  \end{scope}
+  \fill[figO] (0,0) circle (3pt);
+  \node[font=\scriptsize, anchor=north east] at (-0.05,-0.05) {$M$};
+  \fill (1,0) circle (1.5pt);
+  \node[font=\scriptsize, anchor=north west] at (1.02,-0.04) {perihelion};
+  % labels
+  \node[figB, font=\scriptsize, anchor=east] at (-1.05,0.55) {circle, $e=0$};
+  \node[figB, font=\scriptsize, anchor=east] at (-3.05,0.75) {ellipse, $0<e<1$};
+  \node[figR, font=\scriptsize, anchor=east] at (-0.55,2.25) {parabola, $e=1$};
+    \node[figG, font=\scriptsize, anchor=west] at (0.3,-2.2) {hyperbola, $e>1$};
+  \node[font=\scriptsize, black!70, align=left, anchor=north west] at (2.5,1.2) {$E<0$: circle, ellipse\\ (bound)\\[3pt] $E=0$: parabola\\[3pt] $E>0$: hyperbola\\ (unbound)};
+\end{tikzpicture}

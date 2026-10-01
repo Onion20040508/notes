@@ -1,0 +1,32 @@
+% Figure for Classical Mechanics §A6.1 (angular position, tangential velocity; acceleration of a point split into centripetal and tangential parts).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  % left panel: angular position and velocity
+  \def\R{2.0}
+  \draw[black!55, thin] (0,0) circle (\R);
+  \draw[->, thin, black!55] (-2.5,0) -- (2.9,0) node[right, font=\scriptsize] {$x$};
+  \draw[->, thin, black!55] (0,-2.5) -- (0,2.7) node[above, font=\scriptsize] {$y$};
+  \draw[very thick, figR] (\R,0) arc (0:50:\R);
+  \node[figR] at ({(\R+0.3)*cos(22)},{(\R+0.3)*sin(22)}) {$s$};
+  \draw[->, very thick, figB] (0,0) -- ({\R*cos(50)},{\R*sin(50)}) node[midway, above left, xshift=2pt] {$\vec r$};
+  \draw[black!55, thin] (0.6,0) arc (0:50:0.6); \node[font=\scriptsize, black!70] at (0.85,0.38) {$\theta$};
+  \fill ({\R*cos(50)},{\R*sin(50)}) circle (2pt) node[above right, xshift=-1pt] {$P$};
+  \draw[->, very thick, figB] ({\R*cos(50)},{\R*sin(50)}) -- ++({1.0*cos(140)},{1.0*sin(140)}) node[above, xshift=2pt] {$\vec v$};
+  \draw[black!70] (0,0) circle (0.13); \fill[black!70] (0,0) circle (0.04);
+  \node[font=\scriptsize, black!70] at (-1.0,-0.45) {$\vec\omega$ out of page};
+  \node[font=\scriptsize, black!70] at (0,-3.0) {$\theta = s/r$, \ $\vec v = \vec\omega\times\vec r$, \ $v_t = r\omega$};
+  % right panel: acceleration
+  \begin{scope}[xshift=6.6cm]
+    \draw[black!55, thin] (0,0) circle (\R);
+    \fill[black!70] (0,0) circle (1.5pt) node[below left, font=\scriptsize] {axis};
+    \coordinate (P) at ({\R*cos(60)},{\R*sin(60)});
+    \coordinate (Ac) at ($(P)+({1.5*cos(240)},{1.5*sin(240)})$);
+    \coordinate (At) at ($(P)+({0.9*cos(150)},{0.9*sin(150)})$);
+    \coordinate (A) at ($(P)+({1.5*cos(240)+0.9*cos(150)},{1.5*sin(240)+0.9*sin(150)})$);
+    \draw[black!45, dashed, thin] (Ac) -- (A) -- (At);
+    \draw[->, very thick, figB] (P) -- (Ac) node[below right, xshift=-2pt] {$\vec a_c$};
+    \draw[->, very thick, figB] (P) -- (At) node[above left] {$\vec a_t$};
+    \draw[->, very thick, figR] (P) -- (A) node[left] {$\vec a$};
+    \fill (P) circle (2pt) node[above right] {$P$};
+    \node[font=\scriptsize, black!70, align=center] at (0,-3.0) {speeding up: $a_t = r\alpha$, \ $a_c = r\omega^2$};
+  \end{scope}
+\end{tikzpicture}

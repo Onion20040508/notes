@@ -1,0 +1,20 @@
+% Figure for Classical Mechanics §A9.4: incompressible flow through a narrowing pipe; equal volumes A1 v1 dt and A2 v2 dt pass sections 1 and 2 in the same time, so the fluid speeds up where the pipe narrows.
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  % pipe walls
+  \draw[black!70, thick] (0,1.0) -- (3.0,1.0) .. controls (3.9,1.0) and (4.1,0.45) .. (5.0,0.45) -- (10.0,0.45);
+  \draw[black!70, thick] (0,-1.0) -- (3.0,-1.0) .. controls (3.9,-1.0) and (4.1,-0.45) .. (5.0,-0.45) -- (10.0,-0.45);
+  % streamlines
+  \foreach \f in {-0.6,-0.2,0.2,0.6} {
+    \draw[figB!50, thin] (0,\f) -- (3.0,\f) .. controls (3.9,\f) and (4.1,{0.45*\f}) .. (5.0,{0.45*\f}) -- (10.0,{0.45*\f});
+  }
+  % swept volumes
+  \fill[figB!30, opacity=0.8] (1.0,-1.0) rectangle (1.45,1.0);
+  \fill[figB!30, opacity=0.8] (5.5,-0.45) rectangle (7.72,0.45);
+  \draw[black!55, thin, <->] (1.0,1.25) -- (1.45,1.25) node[midway, above, font=\scriptsize] {$v_1\,dt$};
+  \draw[black!55, thin, <->] (5.5,0.7) -- (7.72,0.7) node[midway, above, font=\scriptsize] {$v_2\,dt$};
+  \node[font=\scriptsize, black!70, anchor=north] at (1.22,-1.05) {area $A_1$};
+  \node[font=\scriptsize, black!70, anchor=north] at (6.61,-0.5) {area $A_2$};
+  % velocities
+  \draw[->, figR, very thick] (2.0,0) -- (2.4,0) node[above, font=\scriptsize] {$\vec v_1$};
+  \draw[->, figR, very thick] (7.95,0) -- (9.9,0) node[above, font=\scriptsize] {$\vec v_2$};
+\end{tikzpicture}

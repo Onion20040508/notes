@@ -1,0 +1,26 @@
+% Figure for Classical Mechanics §A9.2: hydraulic press; a small force F1 on the small piston (area A1) produces a large force F2 on the large piston (area A2); the pistons move d1 and d2 with A1 d1 = A2 d2.
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  % fluid
+  \fill[figB!14] (0,0) rectangle (0.7,2.0);
+  \fill[figB!14] (0,0) rectangle (5.4,0.6);
+  \fill[figB!14] (3.2,0) rectangle (5.4,2.0);
+  % walls
+  \draw[black!70, thick] (0,2.9) -- (0,0) -- (5.4,0) -- (5.4,2.9);
+  \draw[black!70, thick] (0.7,2.9) -- (0.7,0.6) -- (3.2,0.6) -- (3.2,2.9);
+  % pistons
+  \fill[black!45] (0,2.0) rectangle (0.7,2.18);
+  \fill[black!45] (3.2,2.0) rectangle (5.4,2.18);
+  % old positions (dashed): small piston started higher, large piston lower
+  \draw[black!55, dashed] (0,2.75) -- (0.7,2.75);
+  \draw[black!55, dashed] (3.2,1.76) -- (5.4,1.76);
+  \draw[black!55, thin, <->] (-0.25,2.75) -- (-0.25,2.0) node[midway, left, font=\scriptsize] {$d_1$};
+  \draw[black!55, thin] (5.5,1.76) -- (5.65,1.76) -- (5.65,2.0) -- (5.5,2.0);
+  \node[black!55, font=\scriptsize, anchor=west] at (5.68,1.88) {$d_2$};
+  % forces
+  \draw[->, figB, very thick] (0.35,3.5) -- (0.35,2.22) node[pos=0.1, right, font=\scriptsize] {$\vec F_1$};
+  \draw[->, figR, very thick] (4.3,2.2) -- (4.3,3.6) node[right, font=\scriptsize] {$\vec F_2$};
+  % areas
+  \node[font=\scriptsize, black!70] at (0.35,1.3) {$A_1$};
+  \node[font=\scriptsize, black!70] at (4.3,1.3) {$A_2$};
+  \node[font=\scriptsize, figB, anchor=west] at (1.0,0.3) {same pressure $p$ at equal heights};
+\end{tikzpicture}

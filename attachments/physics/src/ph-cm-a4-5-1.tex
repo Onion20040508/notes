@@ -1,0 +1,22 @@
+% Figure for Classical Mechanics §A4.5 (three paths between the same endpoints in a non-conservative force field; after University Physics Vol. 1, Examples 7.4 and 8.2 discussion).
+\begin{tikzpicture}[>={Stealth[length=1.6mm]}, font=\small, scale=2.4]
+  \draw[->, thin, black!55] (0,0) -- (2.35,0) node[right, font=\scriptsize] {$x$ (m)};
+  \draw[->, thin, black!55] (0,0) -- (0,2.35) node[above, font=\scriptsize] {$y$ (m)};
+  \foreach \t in {1,2} {\draw[thin, black!55] (\t,0.03) -- (\t,-0.03) node[below, font=\scriptsize] {\t};
+                        \draw[thin, black!55] (0.03,\t) -- (-0.03,\t) node[left, font=\scriptsize] {\t};}
+  % force field F = (5y, 10x) N, arrows scaled
+  \foreach \x in {0.25,0.75,1.25,1.75} {
+    \foreach \y in {0.25,0.75,1.25,1.75} {
+      \draw[->, black!35, thin] (\x,\y) -- ++({0.011*5*\y},{0.011*10*\x});
+    }
+  }
+  % paths
+  \draw[very thick, figG] (0,0) -- (2,2);
+  \draw[very thick, figB, domain=0:2, samples=40] plot (\x,{0.5*\x*\x});
+  \draw[very thick, figO, domain=0:2, samples=40] plot (\x,{0.25*\x*\x*\x});
+  \fill (0,0) circle (0.9pt) node[below left, font=\scriptsize] {$A$};
+  \fill (2,2) circle (0.9pt) node[above right, font=\scriptsize] {$B$};
+  \node[font=\scriptsize, figG, anchor=east] at (0.95,1.18) {$y=x$: 30 J};
+  \node[font=\scriptsize, figB, anchor=west] at (1.42,0.78) {$y=x^2/2$: 33.3 J};
+  \node[font=\scriptsize, figO, anchor=west] at (1.62,0.42) {$y=x^3/4$: 35 J};
+\end{tikzpicture}

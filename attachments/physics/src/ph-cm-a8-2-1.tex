@@ -1,0 +1,28 @@
+% Figure for Classical Mechanics §A8.2: energy diagram for U(r) = -GMm/r, with a bound (E<0) and an unbound (E>0) total energy.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9cm, height=6cm,
+      axis lines=middle, xmin=0, xmax=7.4, ymin=-1.15, ymax=0.45,
+      xlabel={$r$}, ylabel={energy},
+      xlabel style={anchor=north west}, ylabel style={anchor=south},
+      xtick=\empty, ytick=\empty, clip=false]
+    % potential energy
+    \addplot[figB, domain=0.87:7.2, samples=120] {-1/x};
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:4.6,-0.25) {$U(r) = -\dfrac{GMm}{r}$};
+    % bound energy level
+    \addplot[figR, domain=1:3.333, samples=2] {-0.3};
+    \fill[figR] (axis cs:3.333,-0.3) circle (1.7pt);
+    \draw[black!55, dashed, thin] (axis cs:3.333,-0.3) -- (axis cs:3.333,0);
+    \node[font=\scriptsize, black!70, anchor=south] at (axis cs:3.333,0.0) {$r_{\max}$};
+    \node[figR, font=\scriptsize, anchor=south] at (axis cs:2.25,-0.3) {$E<0$: bound};
+    % kinetic energy as gap
+    \draw[<->, >={Stealth[length=1.8mm]}, figR, thin] (axis cs:1.45,{-1/1.45}) -- (axis cs:1.45,-0.3);
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.5,-0.5) {$K$};
+    % E = 0 and E > 0
+    \node[black!70, font=\scriptsize, anchor=south west] at (axis cs:5.0,0.0) {$E=0$: just escapes};
+    \addplot[figG, domain=1:7.2, samples=2] {0.25};
+    \node[figG, font=\scriptsize, anchor=south east] at (axis cs:7.2,0.25) {$E>0$: unbound};
+    % surface
+    \draw[black!55, dashed, thin] (axis cs:1,-1.1) -- (axis cs:1,0.3);
+    \node[font=\scriptsize, black!70, anchor=north] at (axis cs:1,-1.1) {$R$};
+  \end{axis}
+\end{tikzpicture}

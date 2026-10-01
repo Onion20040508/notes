@@ -1,0 +1,22 @@
+% Figure for Classical Mechanics §A4.2 (loop-the-loop: start height and forces at the top of the loop; after University Physics Vol. 1, Example 7.9).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  \def\R{1.2}
+  % ground and track
+  \draw[black!55, thin] (-6.2,0) -- (3.4,0);
+  \draw[very thick, figB] (-5.6,3.6) .. controls (-4.0,0.4) and (-2.2,0) .. (0,0) -- (3.0,0);
+  \draw[very thick, figB] (0,\R) circle (\R);
+  % start
+  \fill[figB] (-5.6,3.6) circle (2.4pt);
+  \node[font=\scriptsize, anchor=south east, black!70] at (-5.6,3.65) {start from rest};
+  % heights
+  \draw[black!55, densely dashed, thin] (-5.6,3.6) -- (-6.0,3.6);
+  \draw[<->, black!55, thin] (-5.9,0) -- (-5.9,3.6) node[midway, left, font=\scriptsize, black] {$y_1$};
+  \draw[black!55, densely dashed, thin] (0,2*\R) -- (1.9,2*\R);
+  \draw[<->, black!55, thin] (1.8,0) -- (1.8,2*\R) node[midway, right, font=\scriptsize, black] {$y_2=2R$};
+  \draw[black!55, thin] (0,\R) -- ({\R*cos(-35)},{\R+\R*sin(-35)}) node[midway, below left=-1pt, font=\scriptsize, black] {$R$};
+  % forces at the top
+  \fill (0,2*\R) circle (2.2pt);
+  \draw[->, very thick, figR] (0,2*\R) -- (0,2*\R-0.75) node[pos=0.95, left, font=\scriptsize] {$m\vec g$};
+  \draw[->, very thick, figR] (0.08,2*\R) -- (0.08,2*\R-0.45) node[pos=1, right, font=\scriptsize] {$\vec N$};
+  \draw[->, thick, black!55] (-0.35,2*\R+0.25) -- (0.45,2*\R+0.25) node[right, font=\scriptsize, black] {$\vec v_2$};
+\end{tikzpicture}

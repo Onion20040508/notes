@@ -1,0 +1,18 @@
+% Figure for Classical Mechanics §A1.2 (accuracy versus precision: two targets; after University Physics Vol. 1, Fig. 1.12).
+\begin{tikzpicture}[font=\small]
+  \foreach \cx/\lab in {0/{accurate, not precise}, 5.2/{precise, not accurate}} {
+    \begin{scope}[xshift=\cx cm]
+      \foreach \r in {1.8,1.35,0.9,0.45} \draw[black!55, thin] (0,0) circle (\r);
+      \fill[figR] (0,0) circle (2.2pt);
+      \node[font=\scriptsize, black!70] at (0,-2.2) {\lab};
+    \end{scope}
+  }
+  % left: scattered around the centre
+  \foreach \x/\y in {-0.95/0.55, 0.75/0.85, 1.05/-0.45, -0.6/-0.95, 0.15/1.2, -1.2/-0.2, 0.55/-1.1, 0.3/0.15}
+    \fill[figB] (\x,\y) circle (2.4pt);
+  % right: tight cluster away from the centre
+  \begin{scope}[xshift=5.2cm]
+    \foreach \x/\y in {0.95/0.95, 1.1/1.05, 1.02/0.82, 0.85/1.08, 1.18/0.9, 0.92/0.78, 1.05/1.18}
+      \fill[figB] (\x,\y) circle (2.4pt);
+  \end{scope}
+\end{tikzpicture}

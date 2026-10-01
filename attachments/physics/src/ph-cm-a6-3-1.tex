@@ -1,0 +1,24 @@
+% Figure for Classical Mechanics §A6.3 (Example: mass hanging from a wire wrapped on a uniform disc; free-body diagrams of the mass and of the disc).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  % left: the hanging mass
+  \draw[thick, fill=figB!12, draw=figB] (-0.45,-0.4) rectangle (0.45,0.4);
+  \node at (0,0) {$m$};
+  \draw[->, very thick, figB] (0,0.4) -- (0,1.7) node[above] {$F_T$};
+  \draw[->, very thick, figB] (0,-0.4) -- (0,-1.9) node[below] {$m g$};
+  \draw[->, thick, black!55] (1.0,0.5) -- (1.0,-0.6) node[below, font=\scriptsize] {$+$, $a$};
+  \node[font=\scriptsize, black!70] at (0,-2.8) {mass};
+  % right: the disc
+  \begin{scope}[xshift=5.0cm]
+    \def\R{1.3}
+    \draw[thick, black!60, fill=figB!8] (0,0) circle (\R);
+    \fill[black!70] (0,0) circle (2pt);
+    \draw[->, very thick, figR] (\R,0) -- (\R,-1.6) node[below] {$F_T$};
+    \draw[black!55, thin, dashed] (0,0) -- (\R,0) node[midway, above, font=\scriptsize] {$R$};
+    \draw[->, very thick, figB] (0,0) -- (0,1.45) node[above] {$\vec F_{\text{axle}}$};
+    \draw[->, very thick, figB] (0,0) -- (-0.0,-0.0) ;
+    \draw[->, very thick, figB] (-0.05,0) -- (-0.05,-1.0) node[below left, xshift=2pt] {$M g$};
+    \draw[->, thick, black!55] (-0.55,{\R+0.35}) arc (110:55:{\R+0.4});
+    \node[font=\scriptsize, black!70] at (-1.35,{\R+0.25}) {$+$, $\alpha$};
+    \node[font=\scriptsize, black!70] at (0,-2.8) {disc, $I = \tfrac12 MR^2$};
+  \end{scope}
+\end{tikzpicture}

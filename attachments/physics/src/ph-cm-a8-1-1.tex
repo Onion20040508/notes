@@ -1,0 +1,17 @@
+% Figure for Classical Mechanics §A8.1: g(r) for a uniform-density spherical planet (linear inside, inverse square outside).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=8.5cm, height=5.2cm,
+      xmin=0, xmax=4.2, ymin=0, ymax=1.25,
+      xlabel={$r/R$}, ylabel={$g(r)/g_{\text{surface}}$},
+      xtick={0,1,2,3,4}, ytick={0,0.25,0.5,0.75,1},
+      yticklabels={$0$,$\tfrac14$,$\tfrac12$,$\tfrac34$,$1$},
+      clip=false]
+    \addplot[figB, domain=0:1, samples=2] {x};
+    \addplot[figR, domain=1:4.2, samples=80] {1/x^2};
+    \draw[black!55, dashed, thin] (axis cs:1,0) -- (axis cs:1,1.15);
+    \node[font=\scriptsize, black!70, anchor=south] at (axis cs:1,1.15) {surface};
+    \node[figB, font=\scriptsize, anchor=north west, align=left] at (axis cs:0.04,1.08) {inside:\\ $g \propto r$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.75,0.55) {outside: $g \propto 1/r^2$};
+    \fill[black] (axis cs:1,1) circle (1.6pt);
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,27 @@
+% Figure for Classical Mechanics §A9.3: pressure forces on a submerged block; forces grow with depth, the side forces cancel, and the excess of the upward force on the bottom over the downward force on the top is the buoyant force F_B.
+\begin{tikzpicture}[font=\small, >={Stealth[length=1.8mm]}]
+  % fluid
+  \fill[figB!12] (-2.6,-3.4) rectangle (2.6,0);
+  \draw[figB, thin] (-2.6,0) -- (2.6,0);
+  \node[font=\scriptsize, black!70, anchor=south west] at (-2.6,0) {surface, $p_0$};
+  % block
+  \fill[black!18] (-0.8,-2.6) rectangle (0.8,-1.2);
+  \draw[black!70, thick] (-0.8,-2.6) rectangle (0.8,-1.2);
+  % top forces (down, short)
+  \foreach \x in {-0.5,0,0.5} \draw[->, figB, thick] (\x,-0.72) -- (\x,-1.18);
+  % bottom forces (up, longer)
+  \foreach \x in {-0.5,0,0.5} \draw[->, figB, thick] (\x,-3.35) -- (\x,-2.62);
+  % side forces, growing with depth
+  \foreach \y/\l in {-1.45/0.42, -1.9/0.55, -2.35/0.68} {
+    \draw[->, figB, thick] ({-0.82-\l},\y) -- (-0.82,\y);
+    \draw[->, figB, thick] ({0.82+\l},\y) -- (0.82,\y);
+  }
+  % depths
+  \draw[black!55, thin, <->] (-2.25,0) -- (-2.25,-1.2) node[midway, left, font=\scriptsize] {$h_1$};
+  \draw[black!55, thin, <->] (-1.95,0) -- (-1.95,-2.6) node[pos=0.75, left, font=\scriptsize] {$h_2$};
+  \draw[black!55, dashed, thin] (-2.3,-1.2) -- (-0.8,-1.2);
+  \draw[black!55, dashed, thin] (-2.0,-2.6) -- (-0.8,-2.6);
+  \node[font=\scriptsize, black!70] at (0,-1.9) {$A$};
+  % resultant
+  \draw[->, figR, very thick, >={Stealth[length=2.4mm]}] (2.0,-2.4) -- (2.0,-1.0) node[above, font=\scriptsize] {$\vec F_B$};
+\end{tikzpicture}

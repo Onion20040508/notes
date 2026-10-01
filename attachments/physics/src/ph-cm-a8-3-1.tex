@@ -1,0 +1,28 @@
+% Figure for Classical Mechanics §A8.3: elliptical orbit (a = 3, e = 0.6) with the Sun at a focus; two sectors swept in equal times have equal areas.
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \def\a{3}\def\b{2.4}\def\c{1.8}
+  % equal-area sectors (eccentric anomaly limits from Kepler's equation, equal time intervals)
+  \fill[figR!22] (\c,0) -- plot[domain=-43.884:43.884, samples=40, variable=\t] ({\a*cos(\t)},{\b*sin(\t)}) -- cycle;
+  \fill[figR!22] (\c,0) -- plot[domain=167.429:192.571, samples=20, variable=\t] ({\a*cos(\t)},{\b*sin(\t)}) -- cycle;
+  \node[figR, font=\scriptsize] at (2.12,1.08) {$A_1$};
+  \node[figR, font=\scriptsize] at (-2.25,0.17) {$A_2$};
+  % orbit
+  \draw[figB, thick] (0,0) ellipse ({\a} and {\b});
+  % major axis and semi-major axis
+  \draw[black!55, thin] (-\a,0) -- (\a,0);
+  \draw[black!55, thin, |<->|] (-\a,-2.85) -- (0,-2.85) node[midway, below, font=\scriptsize] {$a$};
+  \draw[black!55, dashed, thin] (-\a,-2.95) -- (-\a,0);
+  \draw[black!55, dashed, thin] (0,-2.95) -- (0,0);
+  % foci
+  \fill[figO] (\c,0) circle (4pt);
+  \node[font=\scriptsize, anchor=north] at (\c,-0.15) {Sun (focus)};
+  \fill[black!55] (-\c,0) circle (1.3pt);
+  \draw[black!55, thin] (-\c,0) -- (-1.5,-0.75) node[below, font=\scriptsize, black!70] {empty focus};
+  % apsides
+  \fill[figB] (\a,0) circle (1.8pt) node[right, font=\scriptsize, black] {perihelion};
+  \fill[figB] (-\a,0) circle (1.8pt) node[left, font=\scriptsize, black] {aphelion};
+  \draw[black!55, thin, |<->|] (\c,0.3) -- (\a,0.3) node[midway, above, font=\scriptsize] {$r_p$};
+  % velocity arrows (longer at perihelion)
+  \draw[->, figR, thick] (\a,0) -- (\a,1.5) node[right, font=\scriptsize] {$\vec v_p$};
+  \draw[->, figR, thick] (-\a,0) -- (-\a,-0.38) node[left, font=\scriptsize] {$\vec v_a$};
+\end{tikzpicture}

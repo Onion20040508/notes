@@ -1,0 +1,21 @@
+% Figure for Classical Mechanics §A8.5: principle of equivalence; a lab at rest in a uniform field g and a lab accelerating at a = g far from all masses give identical results (a released ball falls toward the floor with acceleration g relative to the lab).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  % left: lab at rest on Earth
+  \draw[figB, thick] (0,0) rectangle (2.4,2.6);
+  \fill[pattern=north east lines, pattern color=black!45] (-0.4,-0.25) rectangle (2.8,0);
+  \draw[black!55] (-0.4,0) -- (2.8,0);
+  \fill[figB] (1.2,1.9) circle (0.13);
+  \draw[->, figR, thick] (1.2,1.7) -- (1.2,0.9) node[right, font=\scriptsize] {$\vec g$};
+  \node[font=\scriptsize, black!70, align=center, anchor=north] at (1.2,-0.35) {at rest on Earth,\\ uniform field $\vec g$};
+  % equivalence sign
+  \node[font=\Large, black!70] at (3.6,1.3) {$\equiv$};
+  % right: accelerating lab in deep space
+  \begin{scope}[xshift=4.8cm]
+    \draw[figB, thick] (0,0) rectangle (2.4,2.6);
+    \fill[figB] (1.2,1.9) circle (0.13);
+    \draw[->, figR, thick] (1.2,1.7) -- (1.2,0.9) node[right, font=\scriptsize] {$-\vec a$};
+    \draw[->, figB, very thick] (2.75,0.6) -- (2.75,2.0) node[right, font=\scriptsize] {$\vec a = -\vec g$};
+    \foreach \x in {0.5,1.2,1.9} \draw[figO, thick, decorate, decoration={snake, amplitude=0.6pt, segment length=3pt}] (\x,-0.05) -- (\x,-0.45);
+    \node[font=\scriptsize, black!70, align=center, anchor=north] at (1.2,-0.55) {far from all masses,\\ accelerating at $a = g$};
+  \end{scope}
+\end{tikzpicture}
