@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ← [[· B1 Vector Calculus for Electrodynamics]] · ↑ [[Electromagnetism]] · [[· B3 Boundary-Value Problems]] →
 
 **Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (12), [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A3 Electric Potential|A3 Electric Potential]] (8), [[· A4 Capacitance|A4 Capacitance]] (2), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (25), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (2), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (1)
-**Used by:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (1), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (6), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (3), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (14), [[· B6 Magnetostatics|B6 Magnetostatics]] (6), [[· B8 Electrodynamics|B8 Electrodynamics]] (9), [[· B11★ Potentials and Radiation|B11 Potentials and Radiation]] (7)
+**Used by:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (1), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (6), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (3), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (13), [[· B6 Magnetostatics|B6 Magnetostatics]] (7), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (1), [[· B8 Electrodynamics|B8 Electrodynamics]] (12), [[· B11★ Potentials and Radiation|B11 Potentials and Radiation]] (7)
 
 ## Sections
 - [[§B2.1 The Electric Field, Its Divergence and Curl]] — Griffiths 2.1–2.2; Nelson ch. 2

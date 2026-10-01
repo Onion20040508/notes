@@ -8,7 +8,7 @@ tags: [chapter, electromagnetism]
 # B7 Magnetic Fields in Matter
 ← [[· B6 Magnetostatics]] · ↑ [[Electromagnetism]] · [[· B8 Electrodynamics]] →
 
-**Builds on:** [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (3), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (17), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (11), [[· B6 Magnetostatics|B6 Magnetostatics]] (17), [[· B8 Electrodynamics|B8 Electrodynamics]] (1)
+**Builds on:** [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (4), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (19), [[· B2 Electrostatics|B2 Electrostatics]] (1), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (11), [[· B6 Magnetostatics|B6 Magnetostatics]] (19), [[· B8 Electrodynamics|B8 Electrodynamics]] (2)
 **Used by:** [[· B8 Electrodynamics|B8 Electrodynamics]] (7), [[· B9 Conservation Laws|B9 Conservation Laws]] (2), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1)
 
 ## Sections

@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ← [[· B3 Boundary-Value Problems]] · ↑ [[Electromagnetism]] · [[· B5 Electric Fields in Matter]] →
 
 **Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (5), [[· A3 Electric Potential|A3 Electric Potential]] (5), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (6), [[· B2 Electrostatics|B2 Electrostatics]] (3), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (4)
-**Used by:** [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (5), [[· B6 Magnetostatics|B6 Magnetostatics]] (3), [[· B11★ Potentials and Radiation|B11 Potentials and Radiation]] (2)
+**Used by:** [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (5), [[· B6 Magnetostatics|B6 Magnetostatics]] (3), [[· B11★ Potentials and Radiation|B11 Potentials and Radiation]] (3)
 
 ## Sections
 - [[§B4.1 Multipole Expansion of the Potential]] — Griffiths 3.4.1–3.4.3; Nelson ch. 3

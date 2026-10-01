@@ -2,14 +2,14 @@
 type: subject
 discipline: physics
 courses: ["PHY 182 (UMass, S. Hertel)", "PHY 422 (UMass, A. Thamm, Spring 2024)", "PHY 505 (UMich, J. Wells, Fall 2025)"]
-textbooks: ["OpenStax, University Physics Vol. 2", "Griffiths, Introduction to Electrodynamics", "Zangwill, Modern Electrodynamics"]
+textbooks: ["OpenStax, University Physics Vol. 2", "Griffiths, Introduction to Electrodynamics (4th ed.)", "Nelson, PHYS 5516 notes (EMP)", "Zangwill, Modern Electrodynamics"]
 conventions: "[[University Physics]]"
-status: level A in progress
+status: levels A and B done
 tags: [subject, electromagnetism]
 ---
 # Electromagnetism
 
-Electric and magnetic fields, their sources, circuits, induction and electromagnetic waves, in three levels: **A** introductory (University Physics Vol. 2; PHY 182), **B** upper-level (Griffiths; PHY 422), **C** graduate (PHY 505; the series Part III). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). The mechanics it uses is in [[Classical Mechanics]]; optics is in [[Oscillations, Waves and Optics]]; the covariant formulation and relativistic electrodynamics are at level C here.
+Electric and magnetic fields, their sources, circuits, induction and electromagnetic waves, in three levels: **A** introductory (University Physics Vol. 2; PHY 182), **B** upper-level (Griffiths; PHY 422; Nelson's PHYS 5516 notes, Schwartz's Physics 15c lectures and McDonald's note as supplements), **C** graduate (PHY 505; the series Part III). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). The mechanics it uses is in [[Classical Mechanics]]; optics is in [[Oscillations, Waves and Optics]], which also owns plane waves in media, the Fresnel equations, dispersion and skin depth; the covariant formulation and relativistic electrodynamics are at level C here. At level B, ★ marks material beyond the course (PHY 422: Griffiths ch. 1–9, its homework and exams): whole sections are starred in the lists below, and folded ★ callouts inside a section are side topics.
 
 ## Level A — introductory
 - [[· A1 Electric Charges and Fields]]
@@ -118,9 +118,9 @@ graph TD
   B7 -->|1| B10
   B8 -->|14| B10
   B9 -->|14| B10
-  B1 -->|13| B11
+  B1 -->|17| B11
   B2 -->|7| B11
-  B4 -->|2| B11
+  B4 -->|3| B11
   B6 -->|9| B11
   B8 -->|2| B11
   B9 -->|2| B11
@@ -141,7 +141,7 @@ graph TD
   A2 -->|2| B5
   A4 -->|3| B5
   B1 -->|21| B5
-  B2 -->|14| B5
+  B2 -->|13| B5
   B3 -->|7| B5
   B4 -->|5| B5
   A1 -->|2| B6
@@ -149,13 +149,15 @@ graph TD
   A7 -->|9| B6
   A8 -->|4| B6
   B1 -->|25| B6
-  B2 -->|6| B6
+  B2 -->|7| B6
   B3 -->|4| B6
   B4 -->|3| B6
-  A8 -->|3| B7
-  B1 -->|17| B7
+  A2 -->|2| B7
+  A8 -->|4| B7
+  B1 -->|19| B7
+  B2 -->|1| B7
   B5 -->|11| B7
-  B6 -->|17| B7
+  B6 -->|19| B7
   A10 -->|2| B8
   A12 -->|4| B8
   A5 -->|1| B8
@@ -163,10 +165,10 @@ graph TD
   A7 -->|2| B8
   A9 -->|1| B8
   B1 -->|9| B8
-  B2 -->|9| B8
+  B2 -->|12| B8
   B3 -->|2| B8
   B5 -->|9| B8
-  B6 -->|27| B8
+  B6 -->|29| B8
   B7 -->|7| B8
   B1 -->|4| B9
   B5 -->|3| B9
@@ -184,19 +186,16 @@ graph TD
   B3 -.->|2| B1
   B3 -.->|2| B2
   B5 -.->|1| B2
+  B11 -.->|1| B6
   B8 -.->|3| B6
-  B9 -.->|1| B6
-  B8 -.->|1| B7
+  B9 -.->|2| B6
+  B8 -.->|2| B7
   B10 -.->|2| B8
-  B11 -.->|1| B8
+  B11 -.->|2| B8
 ```
 
 ## Planned
 Chapters without notes yet; sources in brackets (∅ = no typed source).
 
-**Level B — upper (PHY 422, Griffiths)**
-B1 Electrostatics: field, potential, energy · B2 Boundary-value problems: Laplace, uniqueness, images, separation of variables · B3 Multipole expansion · B4 Dielectrics · B5 Magnetostatics, vector potential · B6 Magnetization · B7 Induction, Maxwell's equations, conservation laws · B8 EM waves in vacuum and matter [PHY 300, Fowles 1] · B9 Potentials and radiation [Schwartz 15c lectures; otherwise ∅]
-PHY 422's lecture notes are handwritten scans; level B is planned from the typed PHY 422 homework sets and solutions and Griffiths.
-
 **Level C — graduate (PHY 505)**
-C1 Electrostatics II: Green's functions, capacitance matrix [PHY 505 HW; Zangwill] · C2 Multipoles II [PHY 505 HW8; the user's multipole-lattice paper] · C3 Covariant electrodynamics [series Part III; PHY 505 typed notes] · C4 Media from the action, monopoles, Chern–Simons [PHY 505 typed notes] · C5 Radiation from moving charges [∅] · C6 Waveguides and cavities [∅]
+C1 Electrostatics II: Green's functions, capacitance matrix [PHY 505 HW; Zangwill] · C2 Multipoles II [PHY 505 HW8; the user's multipole-lattice paper] · C3 Covariant electrodynamics [series Part III; PHY 505 typed notes; Griffiths ch. 12; Nelson ch. 32–38] · C4 Media from the action, monopoles, Chern–Simons [PHY 505 typed notes; Nelson ch. 39] · C5 Radiation from moving charges beyond Griffiths: general multipole radiation, Abraham–Lorentz–Dirac [Nelson ch. 41–44] · C6 Waveguides and cavities beyond Griffiths 9.5 [∅]
