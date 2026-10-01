@@ -1,0 +1,19 @@
+% Figure for Oscillations, Waves and Optics §B3.1 (dispersion relation of the chain, omega = 2 omega_0 sin(ka/2), with the allowed modes of the fixed-end chain for N = 6 (open circles) and N = 20 (dots), the continuum line omega = omega_0 k a = c k, and the ceiling 2 omega_0).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=10.5cm, height=6.6cm, xmin=0, xmax=3.45, ymin=0, ymax=2.6,
+      xtick={0,1.5708,3.14159}, xticklabels={$0$,$\pi/2$,$\pi$},
+      ytick={0,1,2}, yticklabels={$0$,$\omega_0$,$2\omega_0$},
+      xlabel={$ka$ (phase step per site)}, ylabel={$\omega$}, clip=false]
+    \draw[black!40, thin, dashed] (axis cs:0,2) -- (axis cs:3.3,2);
+    \draw[black!40, thin, dashed] (axis cs:3.14159,0) -- (axis cs:3.14159,2.45);
+    \addplot[figG, dashed, domain=0:2.45, samples=2, line width=0.8pt] {x};
+    \addplot[figB, domain=0:3.14159, samples=150, line width=0.9pt] {2*sin(deg(x/2))};
+    \addplot[only marks, mark=*, mark size=1.1pt, black!70] coordinates {(0.1496,0.1495) (0.2992,0.2981) (0.4488,0.4450) (0.5984,0.5895) (0.7480,0.7307) (0.8976,0.8678) (1.0472,1.0000) (1.1968,1.1266) (1.3464,1.2470) (1.4960,1.3603) (1.6456,1.4661) (1.7952,1.5637) (1.9448,1.6525) (2.0944,1.7321) (2.2440,1.8019) (2.3936,1.8617) (2.5432,1.9111) (2.6928,1.9499) (2.8424,1.9777) (2.9920,1.9944)};
+    \addplot[only marks, mark=o, mark size=2.8pt, figR, thick] coordinates {(0.4488,0.4450) (0.8976,0.8678) (1.3464,1.2470) (1.7952,1.5637) (2.2440,1.8019) (2.6928,1.9499)};
+    \node[figG, anchor=west, font=\scriptsize] at (axis cs:2.2,2.45) {continuum: $\omega = \omega_0 ka = ck$};
+    \node[figB, anchor=north west, font=\scriptsize] at (axis cs:1.65,1.25) {chain: $\omega = 2\omega_0\sin(ka/2)$};
+    \node[black!60, anchor=south, font=\scriptsize] at (axis cs:1.0,2.0) {ceiling $2\omega_0$};
+    \node[figR, anchor=west, font=\scriptsize] at (axis cs:0.75,0.25) {$\circ$\ modes for $N = 6$};
+    \node[black!70, anchor=west, font=\scriptsize] at (axis cs:0.75,0.08) {$\bullet$\ modes for $N = 20$};
+  \end{axis}
+\end{tikzpicture}

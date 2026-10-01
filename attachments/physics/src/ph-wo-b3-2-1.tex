@@ -1,0 +1,14 @@
+% Figure for Oscillations, Waves and Optics §B3.2 (ratio of the chain's normal frequencies to those of the continuous string of the same length, tension and mass per length, omega_n / (n pi c / L) = sin(x)/x with x = n pi / (2(N+1)), for N = 3, 10, 30).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=10.5cm, height=5.6cm, xmin=0, xmax=31.5, ymin=0.6, ymax=1.04,
+      xtick={1,5,10,15,20,25,30}, ytick={0.6,0.7,0.8,0.9,1.0},
+      xlabel={mode number $n$}, ylabel={$\omega_n^{\text{chain}}\,/\,(n\pi c/L)$}, clip=false]
+    \draw[black!40, thin, dashed] (axis cs:0,1) -- (axis cs:31,1);
+    \addplot[figB, mark=*, mark size=1.3pt, thin] coordinates {(1,0.9996) (2,0.9983) (3,0.9962) (4,0.9932) (5,0.9893) (6,0.9847) (7,0.9792) (8,0.9728) (9,0.9657) (10,0.9578) (11,0.9490) (12,0.9395) (13,0.9292) (14,0.9182) (15,0.9065) (16,0.8940) (17,0.8808) (18,0.8670) (19,0.8525) (20,0.8374) (21,0.8217) (22,0.8054) (23,0.7885) (24,0.7711) (25,0.7532) (26,0.7348) (27,0.7160) (28,0.6967) (29,0.6770) (30,0.6570)};
+    \addplot[figG, mark=square*, mark size=1.5pt, thin] coordinates {(1,0.9966) (2,0.9865) (3,0.9697) (4,0.9465) (5,0.9172) (6,0.8821) (7,0.8416) (8,0.7962) (9,0.7466) (10,0.6932)};
+    \addplot[figR, mark=triangle*, mark size=2.2pt, thin] coordinates {(1,0.9745) (2,0.9003) (3,0.7842)};
+    \node[figR, anchor=west, font=\scriptsize] at (axis cs:3.4,0.775) {$N = 3$};
+    \node[figG, anchor=west, font=\scriptsize] at (axis cs:10.4,0.66) {$N = 10$};
+    \node[figB, anchor=west, font=\scriptsize] at (axis cs:30.5,0.655) {$N = 30$};
+  \end{axis}
+\end{tikzpicture}

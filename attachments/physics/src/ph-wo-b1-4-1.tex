@@ -1,0 +1,29 @@
+% Figure for Oscillations, Waves and Optics §B1.4. Left: elastic (in-phase) and absorptive (quadrature) parts of the response, in units of the static response F0/k, for Q = 5; they are equal in magnitude at the half-power frequencies. Right: exact absorbed power for Q = 2 (normalised) against the Lorentzian approximation, with the exact half-power points (geometric mean omega0) and the Lorentzian ones.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=L, width=7.2cm, height=5.6cm, xmin=0.6, xmax=1.42, ymin=-3.2, ymax=5.9,
+      axis lines=middle,
+      ylabel={response$\,/\,(F_0/k)$}, ylabel style={anchor=south},
+      xtick={0.8,1,1.2}, ytick={-2,2,4}, clip=false]
+    \draw[black!40, thin, dashed] (axis cs:0.90499,-3.0) -- (axis cs:0.90499,5.5);
+    \draw[black!40, thin, dashed] (axis cs:1.10499,-3.0) -- (axis cs:1.10499,5.5);
+    \addplot[figR, domain=0.6:1.42, samples=400] {(x/5)/((1-x^2)^2+(x/5)^2)};
+    \addplot[figB, domain=0.6:1.42, samples=400] {(1-x^2)/((1-x^2)^2+(x/5)^2)};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.125,4.2) {absorptive $\chi''$};
+    \node[font=\small, anchor=west] at (axis cs:1.445,0) {$\omega/\omega_0$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.61,3.0) {elastic $\chi'$};
+    \node[black!60, font=\scriptsize, anchor=south] at (axis cs:0.90499,5.5) {$\omega_-$};
+    \node[black!60, font=\scriptsize, anchor=south] at (axis cs:1.10499,5.5) {$\omega_+$};
+    \node[black!60, font=\scriptsize] at (axis cs:1.0,-2.75) {$Q = 5$};
+  \end{axis}
+  \begin{axis}[nfig, at={(L.east)}, anchor=west, xshift=2.5cm, width=7.2cm, height=5.6cm, xmin=0, xmax=2.5, ymin=0, ymax=1.12,
+      xlabel={$\omega/\omega_0$}, ylabel={$\langle P\rangle/\langle P\rangle_{\max}$},
+      xtick={0.781,1,1.281,2}, xticklabels={$\omega_-$,$\omega_0$,$\omega_+$,$2\omega_0$}, ytick={0.5,1}, clip=false]
+    \draw[black!40, thin] (axis cs:0,0.5) -- (axis cs:2.4,0.5);
+    \draw[black!40, thin, dashed] (axis cs:0.781,0) -- (axis cs:0.781,0.5);
+    \draw[black!40, thin, dashed] (axis cs:1.281,0) -- (axis cs:1.281,0.5);
+    \addplot[black!55, dashed, domain=0:2.5, samples=300] {0.0625/((x-1)^2+0.0625)};
+    \addplot[figR, domain=0.001:2.5, samples=400] {1/(1+4*(x-1/x)^2)};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.45,0.42) {exact, $Q = 2$};
+    \node[black!60, font=\scriptsize, anchor=west] at (axis cs:1.42,0.12) {Lorentzian};
+  \end{axis}
+\end{tikzpicture}

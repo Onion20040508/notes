@@ -1,0 +1,36 @@
+% Figure for Oscillations, Waves and Optics §B5.1 (the internal force F(x,t): what the medium to the left of a cut at x exerts on the medium to the right, for a string under tension and for a rod or gas column; the slab between x and x + dx feels F(x) on its left face and -F(x+dx) on its right face).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  % ---------- left panel: string, transverse ----------
+  \begin{scope}
+    \draw[black!30, thin, dashed] (-0.3,0) -- (5.3,0);
+    \draw[figB, line width=1.6pt, domain=-0.3:4.1, samples=80] plot (\x, {0.9*sin(deg(0.75*\x))});
+    \pgfmathsetmacro{\xa}{1.6}\pgfmathsetmacro{\xb}{3.4}
+    \pgfmathsetmacro{\ya}{0.9*sin(deg(0.75*\xa))}\pgfmathsetmacro{\yb}{0.9*sin(deg(0.75*\xb))}
+    \pgfmathsetmacro{\sa}{0.675*cos(deg(0.75*\xa))}\pgfmathsetmacro{\sb}{0.675*cos(deg(0.75*\xb))}
+    \draw[black!55, thin] (\xa,-1.25) -- (\xa,\ya); \draw[black!55, thin] (\xb,-1.25) -- (\xb,\yb);
+    \node[below, font=\scriptsize] at (\xa,-1.25) {$x$};
+    \node[below, font=\scriptsize] at (\xb,-1.25) {$x + \Delta x$};
+    % transverse force components on the element
+    \draw[->, figR, very thick] (\xa,\ya) -- ++(0,{-1.1*\sa}); \node[figR, above left=1pt and 0pt, font=\scriptsize] at (\xa,\ya) {$F(x) = -T\,\partial_x y$};
+    \draw[->, figR, very thick] (\xb,\yb) -- ++(0,{1.1*\sb}) node[pos=1, anchor=north west, xshift=1pt, yshift=-3pt, font=\scriptsize, align=left] {$-F(x+\Delta x)$\\ $\;= T\,\partial_x y$};
+    \fill (\xa,\ya) circle (1.4pt); \fill (\xb,\yb) circle (1.4pt);
+    \node[figB, font=\scriptsize] at (2.5,1.45) {string: $\xi = y$, $K = T$};
+    \node[font=\scriptsize, black!70] at (2.5,-2.25) {transverse};
+  \end{scope}
+  % ---------- right panel: rod or gas column, longitudinal ----------
+  \begin{scope}[xshift=7.2cm]
+    \fill[figB!12] (0,-0.6) rectangle (5.0,0.6);
+    \draw[figB, thick] (0,-0.6) -- (5.0,-0.6); \draw[figB, thick] (0,0.6) -- (5.0,0.6);
+    \fill[figB!35] (1.3,-0.6) rectangle (3.7,0.6);
+    \draw[figB, thick] (1.3,-0.6) -- (1.3,0.6); \draw[figB, thick] (3.7,-0.6) -- (3.7,0.6);
+    \draw[->, figR, very thick] (0.25,0) -- (1.25,0);
+    \node[figR, font=\scriptsize, above] at (0.75,0.62) {$F(x)$};
+    \draw[->, figR, very thick] (4.75,0) -- (3.75,0);
+    \node[figR, font=\scriptsize, above] at (4.25,0.62) {$-F(x+\Delta x)$};
+    \draw[black!55, thin] (1.3,-0.6) -- (1.3,-1.0); \draw[black!55, thin] (3.7,-0.6) -- (3.7,-1.4);
+    \node[below, font=\scriptsize] at (1.3,-1.0) {$x + \xi(x)$};
+    \node[below, font=\scriptsize] at (3.9,-1.4) {$x + \Delta x + \xi(x + \Delta x)$};
+    \node[figB, font=\scriptsize, align=center] at (2.5,1.35) {rod: $K = YA$;\ \ gas column: $K = BA$};
+    \node[font=\scriptsize, black!70] at (2.5,-2.25) {longitudinal: $F = -K\,\partial_x\xi$ (a push if compressed)};
+  \end{scope}
+\end{tikzpicture}

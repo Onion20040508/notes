@@ -1,0 +1,16 @@
+% Figure for Oscillations, Waves and Optics §B1.3: resonant start-up from rest. Damped oscillator with Q = 10 driven at omega = omega0 (exact solution), with its envelope Q(1 - e^{-gamma t/2}), and the secular-growth envelope t/2 of the undamped oscillator; displacement in units of the static deflection F0/k, time in units of 1/omega0.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=12.5cm, height=5.6cm, xmin=0, xmax=62, ymin=-13.5, ymax=13.5,
+      xlabel={$\omega_0 t$}, ylabel={$x\,/\,(F_0/k)$}, axis lines=middle, xlabel style={anchor=north west},
+      ylabel style={anchor=south}, xtick={10,20,30,40,50,60}, ytick={-10,-5,5,10}, clip=false]
+    \addplot[black!55, thin, dashed, domain=0:27, samples=2] {x/2};
+    \addplot[black!55, thin, dashed, domain=0:27, samples=2] {-x/2};
+    \addplot[figR, thin, dashed, domain=0:62, samples=200] {10*(1-exp(-x/20))};
+    \addplot[figR, thin, dashed, domain=0:62, samples=200] {-10*(1-exp(-x/20))};
+    \addplot[figB, domain=0:62, samples=1400] {10*(sin(deg(x)) - (1/sqrt(1-1/400))*exp(-x/20)*sin(deg(sqrt(1-1/400)*x)))};
+    \draw[black!40, thin, dotted] (axis cs:0,10) -- (axis cs:62,10);
+    \node[black!60, font=\scriptsize, anchor=west, fill=white, inner sep=1pt] at (axis cs:27.5,-12.6) {undamped envelope $\pm\tfrac12\omega_0 t$ (secular growth)};
+    \node[figR, font=\scriptsize, anchor=west, fill=white, inner sep=1pt] at (axis cs:44,12.2) {$\pm Q\bigl(1 - e^{-\gamma t/2}\bigr)$};
+    \node[black!60, font=\scriptsize, anchor=west] at (axis cs:62.5,10) {$Q$};
+  \end{axis}
+\end{tikzpicture}

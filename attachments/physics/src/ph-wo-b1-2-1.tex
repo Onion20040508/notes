@@ -1,0 +1,36 @@
+% Figure for Oscillations, Waves and Optics §B1.2: root locus of the characteristic roots lambda = -gamma/2 ± sqrt(gamma^2/4 - omega0^2) in the complex plane as the damping gamma grows (units omega0 = 1).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small, scale=1.6]
+  % axes
+  \draw[->, thin, black!55] (-2.75,0) -- (0.75,0) node[right, font=\scriptsize] {$\operatorname{Re}\lambda$};
+  \draw[->, thin, black!55] (0,-1.45) -- (0,1.5) node[above, font=\scriptsize] {$\operatorname{Im}\lambda$};
+  % reference circle |lambda| = omega0 (right half faint)
+  \draw[black!25, thin, dashed] (0,1) arc (90:-90:1);
+  % underdamped branch: arc from i to -1 and from -i to -1
+  \draw[figB, very thick] (0,1) arc (90:180:1);
+  \draw[figB, very thick] (0,-1) arc (-90:-180:1);
+  \draw[figB, ->, thick] ({cos(125)},{sin(125)}) arc (125:135:1);
+  \draw[figB, ->, thick] ({cos(-125)},{sin(-125)}) arc (-125:-135:1);
+  % overdamped branch on the real axis
+  \draw[figR, very thick] (-2.6,0) -- (-0.02,0);
+  \draw[figR, ->, thick] (-0.75,0) -- (-0.45,0);
+  \draw[figR, ->, thick] (-1.6,0) -- (-1.95,0);
+  % marked points
+  \fill[black] (0,1) circle (1.1pt) node[right, font=\scriptsize] {$i\omega_0$ \;($\gamma = 0$)};
+  \fill[black] (0,-1) circle (1.1pt) node[right, font=\scriptsize] {$-i\omega_0$};
+  \foreach \s in {1,-1} {
+    \fill[figB] (-0.1,{\s*0.995}) circle (1.3pt);
+    \fill[figB] (-0.5,{\s*0.866}) circle (1.3pt);
+  }
+  \draw[figB, thin] (-0.1,0.995) -- (-0.36,1.3) node[above, font=\scriptsize] {$Q = 5$};
+  \draw[figB, thin] (-0.5,0.866) -- (-0.86,1.2) node[above, font=\scriptsize] {$Q = 1$};
+  \fill[black] (-1,0) circle (1.6pt);
+  \node[font=\scriptsize, anchor=north] at (-1,-0.07) {$-\omega_0$};
+  \node[font=\scriptsize, anchor=south, align=center] at (-1.3,0.06) {double root\\$Q = \tfrac12$};
+  \fill[figR] (-0.5,0) circle (1.3pt);
+  \fill[figR] (-2.0,0) circle (1.3pt);
+  \node[figR, font=\scriptsize, anchor=north] at (-0.5,-0.07) {$\lambda_+$};
+  \node[figR, font=\scriptsize, anchor=north] at (-2.0,-0.07) {$\lambda_-$};
+  \node[figR, font=\scriptsize, anchor=north, align=center] at (-2.1,-0.32) {overdamped, $Q = 0.4$:\\$\lambda_\pm = -\tfrac12\omega_0,\ -2\omega_0$};
+  % labels for branches
+  \node[figB, font=\scriptsize, anchor=east, align=right] at (-1.15,0.95) {underdamped:\\$\lambda_\pm = -\tfrac{\gamma}{2} \pm i\omega_d$\\$|\lambda_\pm| = \omega_0$};
+\end{tikzpicture}

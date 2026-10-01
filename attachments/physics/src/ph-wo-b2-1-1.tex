@@ -1,0 +1,34 @@
+% Figure for Oscillations, Waves and Optics §B2.1 (two identical blocks with wall springs k and coupling spring k_c; the in-phase mode at omega_0 and the antiphase mode at sqrt(omega_0^2 + 2 omega_c^2)).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]},
+    spr/.style={thick, black!70, decorate, decoration={coil, aspect=0.45, segment length=1.9mm, amplitude=1.6mm, pre length=1.5mm, post length=1.5mm}},
+    blk/.style={draw, thick, fill=black!8, minimum width=0.8cm, minimum height=0.8cm, inner sep=0pt}]
+  \foreach \row/\lab/\col/\dA/\dB/\txt in {0/{}/black/0/0/{},
+      -2.4/{Mode 1, $\omega_1 = \omega_0$}/figB/0.75/0.75/{in phase, $\vec v_1 = (1, 1)$; the coupling spring keeps its length},
+      -4.6/{Mode 2, $\omega_2 = \sqrt{\omega_0^2 + 2\omega_c^2}$}/figR/-0.75/0.75/{antiphase, $\vec v_2 = (1, -1)$; the coupling spring stretches twice as far}} {
+    \begin{scope}[yshift=\row cm]
+      \fill[pattern=north east lines, pattern color=black!50] (-0.3,-0.55) rectangle (0,0.55);
+      \draw[thick] (0,-0.55) -- (0,0.55);
+      \fill[pattern=north east lines, pattern color=black!50] (7.0,-0.55) rectangle (7.3,0.55);
+      \draw[thick] (7.0,-0.55) -- (7.0,0.55);
+      \draw[black!40, thin] (-0.3,-0.55) -- (7.3,-0.55);
+      \draw[spr] (0,0) -- (1.8,0);
+      \node[blk] at (2.2,0) {$m$};
+      \draw[spr] (2.6,0) -- (4.4,0);
+      \node[blk] at (4.8,0) {$m$};
+      \draw[spr] (5.2,0) -- (7.0,0);
+      \ifdim \dA pt=0pt
+        \node[above] at (0.9,0.25) {$k$};
+        \node[above] at (3.5,0.25) {$k_c$};
+        \node[above] at (6.1,0.25) {$k$};
+        \draw[->, black!70] (2.2,-0.85) -- (2.9,-0.85) node[right, font=\scriptsize] {$x_1$};
+        \draw[black!70] (2.2,-0.75) -- (2.2,-0.95);
+        \draw[->, black!70] (4.8,-0.85) -- (5.5,-0.85) node[right, font=\scriptsize] {$x_2$};
+        \draw[black!70] (4.8,-0.75) -- (4.8,-0.95);
+      \else
+        \draw[->, very thick, \col] (2.2,0.65) -- ++(\dA,0);
+        \draw[->, very thick, \col] (4.8,0.65) -- ++(\dB,0);
+        \node[anchor=west, font=\scriptsize, \col] at (-0.3,-0.9) {\textbf{\lab}: \txt};
+      \fi
+    \end{scope}
+  }
+\end{tikzpicture}

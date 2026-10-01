@@ -1,0 +1,31 @@
+% Figure for Oscillations, Waves and Optics §B5.2 (a pulse meeting a junction of two media at x = 0, computed from the reflection and transmission coefficients of Theorem §B5.2.4: the incident pulse at t = 0 (grey, dashed) and the reflected and transmitted pulses at a later time (red), for Z2 = 3 Z1 (c2 = c1/3, equal stiffness K) and for Z2 = Z1/3 (c2 = 3 c1)).
+\begin{tikzpicture}
+  \def\w{0.7}
+  % top: Z2 = 3 Z1, c2 = 1/3 ; r = -1/2, t = 1/2 ; incident centred at -4 at t=0, snapshot at t = 5.5 (c1 = 1)
+  \begin{axis}[nfig, name=top, width=12cm, height=3.9cm, xmin=-6, xmax=8, ymin=-0.75, ymax=1.3,
+      ytick={-0.5,0,0.5,1}, xtick={-6,-4,-2,0,2,4,6,8}, xticklabels={}, ylabel={$\xi$}, axis lines=left, clip=false]
+    \fill[figB!8] (axis cs:0,-0.75) rectangle (axis cs:8,1.3);
+    \draw[black!60, thin] (axis cs:0,-0.75) -- (axis cs:0,1.3);
+    \addplot[black!55, dashed, domain=-6:0, samples=200, line width=0.7pt] {exp(-((x+4)/\w)^2)};
+    \addplot[figR, domain=-6:0, samples=200] {-0.5*exp(-((x+1.5)/\w)^2)};
+    \addplot[figR, domain=0:8, samples=300] {0.5*exp(-((x-0.5)/(\w/3))^2)};
+    \node[font=\scriptsize, anchor=east, black!70] at (axis cs:-0.15,1.12) {medium 1: $Z_1$, $c_1$};
+    \node[font=\scriptsize, anchor=east, figB] at (axis cs:7.9,1.12) {medium 2: $Z_2 = 3Z_1$, $c_2 = c_1/3$};
+    \node[font=\scriptsize, black!55, anchor=south east] at (axis cs:-4.35,0.9) {incident};
+    \node[font=\scriptsize, figR, anchor=east] at (axis cs:-2.3,-0.45) {reflected, $r = -\tfrac12$};
+    \node[font=\scriptsize, figR, anchor=west] at (axis cs:1.0,0.42) {transmitted, $t = \tfrac12$};
+  \end{axis}
+  % bottom: Z2 = Z1/3, c2 = 3 ; r = +1/2, t = 3/2
+  \begin{axis}[nfig, at={(top.south west)}, anchor=north west, yshift=-0.3cm, width=12cm, height=3.9cm,
+      xmin=-6, xmax=8, ymin=-0.75, ymax=1.75, ytick={0,0.5,1,1.5}, xtick={-6,-4,-2,0,2,4,6,8},
+      xlabel={$x$ (units with $c_1 = 1$; incident pulse at $t = 0$, the others at $t = 5.5$)}, ylabel={$\xi$}, axis lines=left, clip=false]
+    \fill[figB!8] (axis cs:0,-0.75) rectangle (axis cs:8,1.75);
+    \draw[black!60, thin] (axis cs:0,-0.75) -- (axis cs:0,1.75);
+    \addplot[black!55, dashed, domain=-6:0, samples=200, line width=0.7pt] {exp(-((x+4)/\w)^2)};
+    \addplot[figR, domain=-6:0, samples=200] {0.5*exp(-((x+1.5)/\w)^2)};
+    \addplot[figR, domain=0:8, samples=300] {1.5*exp(-((x-4.5)/(3*\w))^2)};
+    \node[font=\scriptsize, anchor=east, figB] at (axis cs:7.9,-0.45) {medium 2: $Z_2 = Z_1/3$, $c_2 = 3c_1$};
+    \node[font=\scriptsize, figR, anchor=south] at (axis cs:-1.5,0.55) {reflected, $r = +\tfrac12$};
+    \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.25,1.05) {transmitted, $t = \tfrac32$};
+  \end{axis}
+\end{tikzpicture}

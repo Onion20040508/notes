@@ -1,0 +1,25 @@
+% Figure for Oscillations, Waves and Optics §B3.3 (d'Alembert: a bump y0(x) = exp(-x^2) released from rest on an infinite string splits into two half-height copies moving apart at speed c; snapshots at ct = 0, 0.75, 1.5, 3; components dashed).
+\begin{tikzpicture}[font=\small]
+  \pgfplotsset{dpanel/.style={nfig, anchor=north west, width=11.5cm, height=3.3cm,
+        xmin=-6, xmax=6, ymin=-0.1, ymax=1.15, ytick={0,0.5,1}, yticklabels={$0$,$\tfrac12$,$1$},
+        xtick={-4.5,-3,-1.5,0,1.5,3,4.5}, axis lines=left, clip=false, ylabel={$y$}}}
+  \foreach \t/\row in {0/0, 0.75/1, 1.5/2, 3/3} {
+    \ifnum\row<3
+      \begin{axis}[dpanel, at={(0,-\row*2.05cm)}, xticklabels={}]
+        \ifdim \t pt>0pt
+          \addplot[figG, dashed, domain=-6:6, samples=200, line width=0.7pt] {0.5*exp(-(x+\t)^2)};
+          \addplot[figB, dashed, domain=-6:6, samples=200, line width=0.7pt] {0.5*exp(-(x-\t)^2)};
+        \fi
+        \addplot[figR, domain=-6:6, samples=300, line width=1.0pt] {0.5*exp(-(x-\t)^2) + 0.5*exp(-(x+\t)^2)};
+        \node[anchor=west, font=\scriptsize] at (axis cs:3.6,0.8) {$ct = \t$};
+      \end{axis}
+    \else
+      \begin{axis}[dpanel, at={(0,-\row*2.05cm)}, xlabel={$x$}]
+        \addplot[figG, dashed, domain=-6:6, samples=200, line width=0.7pt] {0.5*exp(-(x+\t)^2)};
+        \addplot[figB, dashed, domain=-6:6, samples=200, line width=0.7pt] {0.5*exp(-(x-\t)^2)};
+        \addplot[figR, domain=-6:6, samples=300, line width=1.0pt] {0.5*exp(-(x-\t)^2) + 0.5*exp(-(x+\t)^2)};
+        \node[anchor=west, font=\scriptsize] at (axis cs:3.6,0.8) {$ct = \t$};
+      \end{axis}
+    \fi
+  }
+\end{tikzpicture}

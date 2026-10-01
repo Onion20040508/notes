@@ -1,0 +1,20 @@
+% Figure for Oscillations, Waves and Optics §B3.1 (normal modes n = 1, 2, 3, 6 of the fixed-end chain with N = 6 masses: mode components sin(j n pi / 7) at the sites, wall sites j = 0, 7 included, with the interpolating sine; frequencies 2 sin(n pi / 14) omega_0).
+\begin{tikzpicture}[font=\small]
+  \def\N{6}\def\dx{0.9}
+  \foreach \n/\row/\w in {1/0/0.445, 2/1/0.868, 3/2/1.247, 6/3/1.950} {
+    \begin{scope}[yshift={-\row*1.75cm}]
+      \draw[black!30, thin] (0,0) -- ({7*\dx},0);
+      \draw[black!45, thin, domain=0:{7*\dx}, samples=150] plot (\x, {0.62*sin(deg(\n*pi*\x/(7*\dx)))});
+      \fill[black!70] (-0.1,-0.5) rectangle (0,0.5);
+      \fill[black!70] ({7*\dx},-0.5) rectangle ({7*\dx+0.1},0.5);
+      \foreach \j in {1,...,\N} {
+        \pgfmathsetmacro{\yy}{0.62*sin(deg(\j*\n*pi/7))}
+        \draw[figB, thick] ({\j*\dx},0) -- ({\j*\dx},\yy);
+        \fill[figB] ({\j*\dx},\yy) circle (2.3pt);
+      }
+      \node[anchor=west, font=\scriptsize] at ({7*\dx+0.35},0) {$n = \n$, \ $\omega_{\n} = \w\,\omega_0$};
+    \end{scope}
+  }
+  \foreach \j in {0,...,7} { \node[font=\scriptsize, black!60] at ({\j*\dx},-5.95) {$\j$}; }
+  \node[font=\scriptsize, black!60, anchor=west] at ({7*\dx+0.35},-5.95) {site $j$};
+\end{tikzpicture}
