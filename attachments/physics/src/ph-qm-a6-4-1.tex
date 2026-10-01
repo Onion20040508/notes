@@ -1,0 +1,24 @@
+% Figure for Quantum Mechanics §A6.4 (critical field B_c(T) = B_c(0)[1 - (T/T_c)^2] of four type I superconductors, computed from the data of UP Vol. 3 Table 9.5, with the niobium wire of UP Example 9.7).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9cm, height=6cm, xmin=0, xmax=10.5, ymin=0, ymax=0.27,
+      xlabel={$T$ (K)}, ylabel={$B_c$ (T)},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={2,4,6,8,10}, ytick={0.05,0.10,0.15,0.20,0.25}, yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=2},
+      samples=100, clip=false]
+    \addplot[figB, thick, domain=0:9.3] {0.20*(1-(x/9.3)^2)};
+    \addplot[figR, thick, domain=0:7.2] {0.080*(1-(x/7.2)^2)};
+    \addplot[figG, thick, domain=0:4.2] {0.041*(1-(x/4.2)^2)};
+    \addplot[figO, thick, domain=0:3.7] {0.031*(1-(x/3.7)^2)};
+    \node[font=\scriptsize, figB, anchor=south west] at (axis cs:5.6,0.13) {Nb};
+    \node[font=\scriptsize, figR, anchor=south west] at (axis cs:4.6,0.05) {Pb};
+    \node[font=\scriptsize, figG, anchor=south west] at (axis cs:2.4,0.031) {Hg};
+    \node[font=\scriptsize, figO, anchor=north east] at (axis cs:1.6,0.025) {Sn};
+    \node[font=\scriptsize, black!60, align=center] at (axis cs:2.0,0.12) {superconducting\\below each curve};
+    \node[font=\scriptsize, black!60] at (axis cs:8.3,0.22) {normal};
+    \draw[black!45, densely dashed, thin] (axis cs:4.2,0) -- (axis cs:4.2,0.24);
+    \addplot[only marks, mark=*, mark size=1.6pt, figB] coordinates {(4.2,0.159)};
+    \addplot[only marks, mark=x, mark size=3pt, very thick, black] coordinates {(4.2,0.24)};
+    \node[font=\scriptsize, black, anchor=west] at (axis cs:4.35,0.243) {Nb wire, 300 A: 0.24 T};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:4.35,0.163) {0.16 T};
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,52 @@
+% Figure for Quantum Mechanics §A6.3 (band schemes of a conductor, an insulator, an intrinsic semiconductor and n- and p-type semiconductors; schematic; after UP Vol. 3 Figs. 9.17, 9.20, 9.21 and Tipler Figs. 10-22, 10-27b, 10-28b).
+\begin{tikzpicture}[font=\small]
+  \def\w{1.5}
+  % (a) conductor
+  \begin{scope}
+    \fill[figB!35] (0,0) rectangle (\w,1.2);
+    \draw[figB, thick] (0,0) rectangle (\w,2.2);
+    \draw[figR, thick] (0,1.2) -- (\w,1.2) node[right, font=\scriptsize] {$E_F$};
+    \node[font=\scriptsize, align=center] at (0.75,-0.55) {(a) conductor\\partly filled band};
+  \end{scope}
+  % (b) insulator
+  \begin{scope}[xshift=2.9cm]
+    \fill[figB!35] (0,0) rectangle (\w,1.0);
+    \draw[figB, thick] (0,0) rectangle (\w,1.0);
+    \draw[figB, thick] (0,3.0) rectangle (\w,4.0);
+    \draw[<->, black!60] (0.75,1.05) -- (0.75,2.95) node[midway, right, font=\scriptsize, black] {large $E_g$};
+    \node[font=\scriptsize, align=center] at (0.75,-0.55) {(b) insulator};
+  \end{scope}
+  % (c) intrinsic semiconductor
+  \begin{scope}[xshift=5.8cm]
+    \fill[figB!35] (0,0) rectangle (\w,1.0);
+    \draw[figB, thick] (0,0) rectangle (\w,1.0);
+    \draw[figB, thick] (0,1.9) rectangle (\w,2.9);
+    \foreach \x in {0.3,0.8,1.2} {\fill[figB] (\x,2.0) circle (1.6pt); \draw[figB, fill=white] (\x+0.05,0.9) circle (1.6pt);}
+    \draw[<->, black!60] (0.75,1.05) -- (0.75,1.85) node[midway, right, font=\scriptsize, black] {$E_g \sim 1$ eV};
+    \node[font=\scriptsize, align=center] at (0.75,-0.55) {(c) intrinsic\\semiconductor};
+  \end{scope}
+  % (d) n-type
+  \begin{scope}[xshift=8.7cm]
+    \fill[figB!35] (0,0) rectangle (\w,1.0);
+    \draw[figB, thick] (0,0) rectangle (\w,1.0);
+    \draw[figB, thick] (0,1.9) rectangle (\w,2.9);
+    \foreach \x in {0.15,0.45,0.75,1.05,1.35} \draw[figR, very thick] (\x-0.08,1.75) -- (\x+0.08,1.75);
+    \foreach \x in {0.3,1.0} \fill[figB] (\x,2.0) circle (1.6pt);
+    \node[font=\scriptsize, figR, anchor=west] at (\w,1.68) {donor levels};
+    \node[font=\scriptsize, align=center] at (0.75,-0.55) {(d) n-type};
+  \end{scope}
+  % (e) p-type
+  \begin{scope}[xshift=11.9cm]
+    \fill[figB!35] (0,0) rectangle (\w,1.0);
+    \draw[figB, thick] (0,0) rectangle (\w,1.0);
+    \draw[figB, thick] (0,1.9) rectangle (\w,2.9);
+    \foreach \x in {0.15,0.45,0.75,1.05,1.35} \draw[figR, very thick] (\x-0.08,1.15) -- (\x+0.08,1.15);
+    \foreach \x in {0.3,1.0} \draw[figB, fill=white] (\x,0.9) circle (1.6pt);
+    \node[font=\scriptsize, figR, anchor=west] at (\w,1.22) {acceptor levels};
+    \node[font=\scriptsize, align=center] at (0.75,-0.55) {(e) p-type};
+  \end{scope}
+  % labels on the left
+  \node[font=\scriptsize, black!75, align=center] at (3.65,3.5) {conduction\\band};
+  \node[font=\scriptsize, black!80, align=center] at (3.65,0.5) {valence\\band};
+  \draw[->, thin, black!55] (-0.4,-0.1) -- (-0.4,4.2) node[above, font=\scriptsize] {$E$};
+\end{tikzpicture}

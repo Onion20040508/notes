@@ -1,0 +1,19 @@
+% Figure for Quantum Mechanics §A7.2 (radioactive decay law N/N0 = 2^(-t/T_half), half-lives and the mean lifetime 1/lambda = T_half/ln 2).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9cm, height=5.6cm, xmin=0, xmax=5.2, ymin=0, ymax=1.1,
+      xlabel={$t/T_{1/2}$}, ylabel={$N/N_0$},
+      xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={1,2,3,4}, ytick={0.125,0.25,0.5,1}, yticklabels={$\tfrac18$,$\tfrac14$,$\tfrac12$,$1$}, clip=false]
+    \addplot[figB, domain=0:4.9, samples=120] {2^(-x)};
+    \foreach \k/\v in {1/0.5, 2/0.25, 3/0.125, 4/0.0625} {
+      \edef\temp{\noexpand\draw[black!55, dashed, thin] (axis cs:\k,0) -- (axis cs:\k,\v) -- (axis cs:0,\v);}\temp
+      \edef\temp{\noexpand\addplot[only marks, mark=*, mark size=1.6pt, figB] coordinates {(\k,\v)};}\temp
+    }
+    \draw[figR, dashed, thin] (axis cs:1.4427,0) -- (axis cs:1.4427,0.3679);
+    \addplot[only marks, mark=*, mark size=1.8pt, figR] coordinates {(1.4427,0.3679)};
+    \node[figR, font=\scriptsize, anchor=south west] at (axis cs:1.47,0.37) {$t = \bar T$: $N/N_0 = 1/e$};
+    \node[figR, font=\scriptsize, anchor=north] at (axis cs:1.4427,-0.07) {$\bar T$};
+    \node[figB, font=\scriptsize, anchor=south west] at (axis cs:2.6,0.2) {$N = N_0e^{-\lambda t}$};
+  \end{axis}
+\end{tikzpicture}

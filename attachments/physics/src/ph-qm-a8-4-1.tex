@@ -1,0 +1,18 @@
+% Figure for Quantum Mechanics §A8.4 (Hubble's law: the five galaxies of Tipler §13-6, Fig. 13-26, recession velocity vs distance; least-squares line through the origin, slope 80 km/s/Mpc, and H0 = 71 km/s/Mpc for comparison).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9cm, height=6cm, xmin=0, xmax=320, ymin=0, ymax=27,
+      xlabel={$d$ (Mpc)}, ylabel={$v$ ($10^3$ km/s)},
+      xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={0,100,200,300}, ytick={0,5,10,15,20,25}, clip=false]
+    \addplot[figB, domain=0:310] {0.0800*x};
+    \addplot[figR, dashed, domain=0:310] {0.0710*x};
+    \addplot[only marks, mark=*, mark size=2pt, black] coordinates {(2.6,0.21) (28.8,2.3) (68.8,5.5) (187.5,15.0) (287.5,23.0)};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:40,0.2) {NGC 221, NGC 4473};
+    \node[font=\scriptsize, anchor=south east] at (axis cs:66,6.0) {NGC 379};
+    \node[font=\scriptsize, anchor=south east] at (axis cs:184,15.6) {Ursa Major cluster};
+    \node[font=\scriptsize, anchor=south east] at (axis cs:284,23.6) {Gemini cluster};
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:215,13.2) {slope 80 km/s/Mpc};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:312,22.0) {$H_0 = 71$};
+  \end{axis}
+\end{tikzpicture}

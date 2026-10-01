@@ -1,0 +1,27 @@
+% Figure for Quantum Mechanics §A7.1 (binding energy per nucleon vs A, computed from atomic masses quoted in UP Vol. 3 ch. 10 and Tipler ch. 11-12; M(1H)=1.007825 u, m_n=1.008665 u, 1 u = 931.494 MeV).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=11cm, height=6.4cm, xmin=0, xmax=250, ymin=0, ymax=9.6,
+      xlabel={mass number $A$}, ylabel={$E_b/A$ (MeV)},
+      xlabel style={at={(axis description cs:0.5,0)}, anchor=north, yshift=-12pt},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south west},
+      xtick={0,50,100,150,200,250}, ytick={0,2,4,6,8}, clip=false]
+    \addplot[only marks, mark=*, mark size=1.7pt, figB] coordinates {
+      (2,1.112) (3,2.843) (7,5.607) (12,7.680) (13,7.470) (14,7.474) (15,7.700) (16,7.977) (17,7.752) (18,7.765)
+      (32,8.444) (40,8.595) (40,8.538) (63,8.752) (65,8.757) (92,8.512) (95,8.549) (96,8.521) (107,8.554) (109,8.548)
+      (140,8.291) (142,8.311) (222,7.697) (229,7.630) (233,7.604) (235,7.591) (238,7.570) (239,7.560)};
+    \addplot[only marks, mark=*, mark size=2.0pt, figR] coordinates {(4,7.074)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:4,1.05) {$^2$H};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:5,2.8) {$^3$H};
+    \node[figR, font=\scriptsize, anchor=north west] at (axis cs:5,7.0) {$^4$He};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:9,5.45) {$^7$Li};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:20,7.55) {$^{12}$C, $^{16}$O};
+    \node[figB, font=\scriptsize, anchor=south] at (axis cs:64,8.85) {$^{63,65}$Cu};
+    \node[figB, font=\scriptsize, anchor=south] at (axis cs:141,8.42) {$^{140}$Xe, $^{142}$Ba};
+    \node[figB, font=\scriptsize, anchor=south] at (axis cs:236,7.72) {$^{235,238}$U};
+    % fusion and fission arrows
+    \draw[->, thick, black!55] (axis cs:24,4.2) -- (axis cs:44,6.8);
+    \node[black!70, font=\scriptsize, anchor=west] at (axis cs:36,4.9) {fusion};
+    \draw[->, thick, black!55] (axis cs:225,7.2) -- (axis cs:150,7.75);
+    \node[black!70, font=\scriptsize, anchor=north] at (axis cs:190,7.2) {fission};
+  \end{axis}
+\end{tikzpicture}

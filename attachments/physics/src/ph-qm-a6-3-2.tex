@@ -1,0 +1,15 @@
+% Figure for Quantum Mechanics §A6.3 (current-voltage curve of an ideal p-n junction, I = I0 (exp(eV/kT) - 1) at T = 300 K, computed; after UP Vol. 3 Fig. 9.25 and Tipler Fig. 10-34).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=8.5cm, height=5.6cm, xmin=-0.2, xmax=0.16, ymin=-30, ymax=320,
+      axis x line=middle, axis y line=middle,
+      xlabel={$V_b$ (V)}, ylabel={$I_{\text{net}}/I_0$},
+      xlabel style={at={(axis description cs:1.0,0.085)}, anchor=west},
+      ylabel style={at={(axis description cs:0.56,1)}, anchor=south},
+      xtick={-0.15,-0.1,-0.05,0.05,0.1}, xticklabel style={/pgf/number format/fixed},
+      ytick={100,200,300}, samples=200, clip=false]
+    \addplot[figB, thick, domain=-0.2:0.1495] {exp(x/0.02585)-1};
+    \node[font=\scriptsize, figB, anchor=west, align=left] at (axis cs:-0.19,185) {forward bias ($V_b > 0$):\\grows by a factor $e$\\every 26 mV};
+    \node[font=\scriptsize, figR, anchor=south, align=center] at (axis cs:-0.115,10) {reverse bias: $I_{\text{net}} \to -I_0$};
+    \node[font=\scriptsize, black!60, anchor=north west, align=left] at (axis cs:-0.19,310) {$T = 300$ K\\$k_BT/e = 25.9$ mV};
+  \end{axis}
+\end{tikzpicture}

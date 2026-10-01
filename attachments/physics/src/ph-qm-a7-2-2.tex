@@ -1,0 +1,22 @@
+% Figure for Quantum Mechanics §A7.2 (the thorium 4n decay series 232Th -> 208Pb on an N-Z chart; chain as given in Tipler §11-4 and UP Fig. 10.13).
+\begin{tikzpicture}[x=0.78cm, y=0.40cm, font=\small, >={Stealth[length=2mm]}]
+  % axes
+  \draw[->, thin, black!55] (80.3,124.2) -- (91.4,124.2) node[right, font=\scriptsize, black] {$Z$};
+  \draw[->, thin, black!55] (80.3,124.2) -- (80.3,144) node[above, font=\scriptsize, black] {$N$};
+  \foreach \z in {81,82,...,90} \draw[thin, black!55] (\z,124.2) -- (\z,123.9) node[below, font=\scriptsize, black] {\z};
+  \foreach \n in {126,130,134,138,142} \draw[thin, black!55] (80.3,\n) -- (80.0,\n) node[left, font=\scriptsize, black] {\n};
+  % nuclides
+  \foreach \z/\n/\lab/\pos in {90/142/{$^{232}$Th}/right, 88/140/{$^{228}$Ra}/left, 89/139/{$^{228}$Ac}/right, 90/138/{$^{228}$Th}/right,
+     88/136/{$^{224}$Ra}/right, 86/134/{$^{220}$Rn}/right, 84/132/{$^{216}$Po}/right, 82/130/{$^{212}$Pb}/left,
+     83/129/{$^{212}$Bi}/right, 81/127/{$^{208}$Tl}/left, 84/128/{$^{212}$Po}/right}
+    \node[circle, fill=figB!25, draw=figB, inner sep=1.4pt, label={[font=\scriptsize]\pos:\lab}] (n\z-\n) at (\z,\n) {};
+  \node[circle, fill=black, inner sep=1.8pt, label={[font=\scriptsize]below:{$^{208}$Pb (stable)}}] (n82-126) at (82,126) {};
+  % alpha decays (red), beta-minus decays (blue)
+  \foreach \a/\b in {90-142/88-140, 90-138/88-136, 88-136/86-134, 86-134/84-132, 84-132/82-130, 83-129/81-127, 84-128/82-126}
+    \draw[->, thick, figR, shorten >=1.5pt, shorten <=1.5pt] (n\a) -- (n\b);
+  \foreach \a/\b in {88-140/89-139, 89-139/90-138, 82-130/83-129, 81-127/82-126, 83-129/84-128}
+    \draw[->, thick, figB, shorten >=1.5pt, shorten <=1.5pt] (n\a) -- (n\b);
+  % legend
+  \draw[->, thick, figR] (87.4,130.6) -- (86.7,129.9); \node[font=\scriptsize, anchor=west] at (87.6,130.2) {$\alpha$: $Z-2$, $N-2$};
+  \draw[->, thick, figB] (86.8,128.4) -- (87.4,127.8); \node[font=\scriptsize, anchor=west] at (87.6,128.1) {$\beta^-$: $Z+1$, $N-1$};
+\end{tikzpicture}

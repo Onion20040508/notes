@@ -1,0 +1,13 @@
+% Figure for Quantum Mechanics §A8.4 (spectrum of the cosmic microwave background: Planck's law B_lambda for T = 2.725 K, normalized to its peak; hc/(k T) = 5.280 mm; Wien peak 1.06 mm).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9cm, height=5.4cm, xmin=0, xmax=6.3, ymin=0, ymax=1.15,
+      xlabel={$\lambda$ (mm)}, ylabel={spectral radiance (arb. units)},
+      xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south west},
+      xtick={1,2,3,4,5,6}, ytick={0,0.5,1}, clip=false]
+    \addplot[figB, domain=0.22:6.2, samples=240] {x^(-5)/(exp(5.280/x)-1)/0.0051665};
+    \draw[figR, dashed, thin] (axis cs:1.0635,0) -- (axis cs:1.0635,1.0);
+    \node[figR, font=\scriptsize, anchor=south west] at (axis cs:1.12,1.0) {$\lambda_{\max} = 1.06$ mm};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:2.6,0.45) {blackbody, $T_0 = 2.725$ K};
+  \end{axis}
+\end{tikzpicture}
