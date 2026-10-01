@@ -1,0 +1,12 @@
+/* Figure size for the math notes' SVG figures (attachments/…/*.svg).
+   Change --fig-zoom to make every figure bigger or smaller, in proportion:
+   1 = as compiled, 1.4 = 40% bigger, 2 = twice as big. Figures are vectors, so any size stays sharp.
+   A figure never gets wider than the note; for wider notes turn off Settings → Editor → Readable line length. */
+body {
+  --fig-zoom: 1.4;
+}
+img[src*="/attachments/"][src*=".svg"] {
+  zoom: var(--fig-zoom);
+  max-width: 100%;
+  height: auto;
+}

@@ -1,7 +1,9 @@
 {
   "enabledCssSnippets": [
     "boxes",
-    "figures-dark"
+    "figures-dark",
+    "figure-size"
   ],
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "baseFontSize": 20
 }
