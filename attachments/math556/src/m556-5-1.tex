@@ -1,0 +1,13 @@
+% Figure from MATH 556 notes, section 5. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.1, >=stealth]
+    \begin{scope}[rotate=25]
+        \draw[thick] (0,0) ellipse (2.2 and 0.6);
+        \coordinate (x0) at (0.4,0);
+        \draw[thick, red!75!black, |-|] ($(x0)+(-1.2,0)$) -- ($(x0)+(1.2,0)$);
+        \draw[thick, red!75!black, |-|] ($(x0)+(0,-0.45)$) -- ($(x0)+(0,0.45)$);
+        \draw[thick, red!75!black, |-|] ($(x0)+(-0.35,-0.35)$) -- ($(x0)+(0.35,0.35)$);
+        \fill (x0) circle (1.5pt);
+        \node[anchor=west, font=\footnotesize] at ($(x0)+(0.5,-0.22)$) {$x_0$};
+    \end{scope}
+    \node[font=\footnotesize] at (0,-1.5) {segments $x_0 + t y$, $|t| < \varepsilon(y)$, in three directions $y$};
+\end{tikzpicture}

@@ -1,0 +1,9 @@
+% Figure from MATH 556 notes, section 6. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.3, >=stealth]
+    \draw[thick] plot[smooth cycle, tension=0.8] coordinates {(-1.4,-0.3) (-0.8,0.9) (0.5,1.1) (1.3,0.4) (0.9,-0.8) (-0.3,-1.1)};
+    \node[font=\footnotesize] at (-0.2,0.1) {$K$};
+    \fill (2.065,0.85) circle (1.5pt) node[right, font=\footnotesize, xshift=2pt] {$y_0$};
+    \draw[thick, red!75!black] (1.3,2.2) -- (3.0,-0.8) node[below, font=\footnotesize] {$\{\ell = c_0\}$};
+    \node[font=\footnotesize] at (0.3,1.8) {$\ell < c_0$};
+    \node[font=\footnotesize] at (3.3,1.4) {$\ell > c_0$};
+\end{tikzpicture}

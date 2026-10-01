@@ -1,0 +1,9 @@
+% Figure from MATH 556 notes, section 1. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.1, >=stealth]
+    \draw[->] (-1.8,0) -- (2.6,0);
+    \draw[->] (0,-1.2) -- (0,1.8);
+    \draw[dashed] (-1.6,-1.07) -- (2.4,1.6) node[right] {$\operatorname{span}\{s_0\}$};
+    \draw[->, thick] (0,0) -- (1.2,0.8) node[pos=0.6, above left] {$s_0$};
+    \fill (1.8,1.2) circle (1.2pt) node[below right, font=\footnotesize, yshift=-2pt] {$a s_0$, $a>1$};
+    \fill (-0.9,-0.6) circle (1.2pt) node[left, font=\footnotesize, xshift=-2pt] {$a s_0$, $a<0$};
+\end{tikzpicture}

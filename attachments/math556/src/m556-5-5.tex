@@ -1,0 +1,21 @@
+% Figure from MATH 556 notes, section 5. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.5, >=stealth]
+    \draw[thick] (0,0) ellipse (2.0 and 1.25);
+    \node[font=\footnotesize] at (-1.5,0.6) {$K$};
+    % base segment through 0 in direction y (not parallel to x)
+    \draw[very thick, red!75!black] (-0.35,-0.65) -- (0.35,0.65);
+    \node[left, font=\footnotesize, red!75!black] at (-0.2,-0.45) {$ty$, $|t| < \delta(y)$};
+    \fill (0,0) circle (1.2pt) node[below right, font=\footnotesize] {$0$};
+    % apex x/a
+    \coordinate (apex) at (1.5,0.75);
+    \fill (apex) circle (1.5pt) node[right, font=\footnotesize] {$x/a$};
+    \draw[thin] (apex) -- (-0.35,-0.65);
+    \draw[thin] (apex) -- (0.35,0.65);
+    \draw[dashed] (apex) -- (0,0);
+    % x on the median at fraction a (a = 0.6)
+    \coordinate (x) at (0.9,0.45);
+    \fill (x) circle (1.5pt) node[below right, font=\footnotesize, yshift=-1pt] {$x$};
+    % cross-section through x parallel to y, half-length (1-a)delta = 0.4*(0.35,0.65)
+    \draw[very thick, red!75!black] ($(x)+(-0.14,-0.26)$) -- ($(x)+(0.14,0.26)$);
+    \node[above left, font=\footnotesize, red!75!black, xshift=-1pt] at ($(x)+(0.0,0.15)$) {$(1-a)\delta(y)$};
+\end{tikzpicture}

@@ -1,0 +1,17 @@
+% Figure from MATH 556 notes, section 11. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.2, >=stealth]
+    \draw[->] (0,-1.2) -- (0,1.4);
+    \draw[->] (0,0) -- (4.4,0);
+    \draw[thick, domain=0.3:4.2, samples=60] plot (\x, {ln(\x)});
+    \node[right, font=\footnotesize] at (4.2,1.43) {$\ln t$};
+    \coordinate (A) at (0.6,{ln(0.6)});
+    \coordinate (B) at (3.6,{ln(3.6)});
+    \draw[red!75!black] (A) -- (B);
+    \fill (A) circle (1.2pt) node[left, font=\footnotesize] {$a$};
+    \fill (B) circle (1.2pt) node[below right, font=\footnotesize] {$b$};
+    \coordinate (M) at (1.8,0);
+    \draw[dashed] (1.8,-0.05) -- (1.8,{ln(1.8)});
+    \fill (1.8,{ln(1.8)}) circle (1.2pt);
+    \fill[red!75!black] (1.8,{ln(0.6)+ (1.8-0.6)/(3.6-0.6)*(ln(3.6)-ln(0.6))}) circle (1.2pt);
+    \node[below, font=\footnotesize] at (1.8,-0.05) {$(1-\theta)a + \theta b$};
+\end{tikzpicture}
