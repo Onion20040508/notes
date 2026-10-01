@@ -305,6 +305,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 > [!remark]- Connections
 > - 1D version of “nonnegative continuous integrand with zero integral vanishes”: [[§33 Properties of the Riemann Integral#^thm-33-7|Vanishing Integral of a Nonnegative Function (451 §33.7)]].
+> - Used in Electromagnetism: with [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-2|Ex. §17.2]], the uniqueness of the electrostatic potential for given boundary values or normal derivatives — [[§B3.1 Laplace's Equation and the Uniqueness Theorems#^thm-b3-1-3|EM Theorem §B3.1.3]].
 
 > [!example] Example §17.2: Uniqueness for the Neumann Problem
 > **Claim:** If $\Delta u_1 = \Delta u_2$ on $D$ and $\dfrac{\partial u_1}{\partial n} = \dfrac{\partial u_2}{\partial n}$ on $\partial D$, then $u_1 - u_2$ is constant on $D$.
@@ -331,6 +332,9 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > i.e., the value of a harmonic function at any point equals its average over any sphere centered at that point. The proof uses [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|Green's second identity]] with $v$ chosen as the **[[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|fundamental solution]]** of the Laplacian ($v = |x - x_0|^{2-n}$ for $n \geq 3$, or $v = \log |x - x_0|$ for $n = 2$).
 
 ^ex-17-3
+
+> [!remark]- Connections
+> - Used in Electromagnetism: the mean-value property of the electrostatic potential, proved there in full — [[§B3.1 Laplace's Equation and the Uniqueness Theorems#^thm-b3-1-1|EM Theorem §B3.1.1]].
 
 > [!remark] Remark: Summary: The Hierarchy of Integral Theorems
 > All the integral theorems in this course are instances of a single pattern:

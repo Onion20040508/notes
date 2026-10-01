@@ -774,6 +774,7 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 
 > [!remark]- Connections
 > - The topological side of the same hole: $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \pi_1(S^1)$ ([[§26 Deformation Retracts and Homotopy Type#^thm-26-2|590 §26.2]]) $\cong \mathbb{Z}$ ([[Fundamental Group of the Circle]]); $\frac{1}{2\pi}\int_{\boldsymbol{\gamma}}\omega$ counts the winding.
+> - Used in Electromagnetism: $\omega$ is the field $\hat\varphi/s$ of a line current, curl-free off the axis with circulation $2\pi$ around it, so its curl is a delta function on the axis — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^ex-b1-2-2|EM Example §B1.2.2]]; the warning that curl-free is not enough on a region with a hole — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^cau-b1-2-1|EM Caution: Curl-free is not enough on a region with a hole]].
 
 > [!theorem] Proposition §22.12: Poincaré Lemma
 > On a star-shaped domain $D \subseteq \mathbb{R}^n$ (i.e., there exists a point $\mathbf{p}_0 \in D$ such that the line segment from $\mathbf{p}_0$ to any $\mathbf{p} \in D$ lies entirely in $D$), every closed form is exact: $d\omega = 0 \;\Rightarrow\; \omega = d\eta$ for some $\eta$.
@@ -787,6 +788,7 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 
 > [!remark]- Connections
 > - A star-shaped domain contracts to $\mathbf{p}_0$ along the segments — a [[§22 Homotopy of Paths#^thm-22-1|straight-line homotopy (590 §22.1)]] — so it is [[§23 The Fundamental Group#^def-23-3|simply connected (590 Def. §23.3)]]; the homotopy operator in the proof integrates along exactly these segments.
+> - Used in Electromagnetism: on a star-shaped region a curl-free field is a gradient and a divergence-free field is a curl, which gives the scalar and vector potentials — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-3|EM Theorem §B1.2.3]], with the hole case in [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^cau-b1-2-1|EM Caution: Curl-free is not enough on a region with a hole]].
 
 The proof (constructing $\eta$ explicitly via a homotopy operator) is beyond the scope of this course; see Lee, Chapter 17. The key point is that the failure of exactness is a *topological* property of the domain — it detects holes.
 

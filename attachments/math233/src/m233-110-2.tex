@@ -1,0 +1,24 @@
+% Figure for Calculus §110.
+\begin{tikzpicture}[x=1cm, y=1cm, font=\scriptsize,
+    arr/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
+  \def\A{3.0} \def\B{1.9} \def\r{0.65}
+  % region D (even-odd fill leaves the hole)
+  \fill[figB!10, even odd rule] (0,0) ellipse ({\A} and {\B}) (0,0) circle (\r);
+  % outer curve C1, counterclockwise
+  \draw[figR, thick, arr=0.13, arr=0.38, arr=0.63, arr=0.88] (\A,0) arc[start angle=0, end angle=360, x radius=\A, y radius=\B];
+  % inner curve C2, clockwise (region on the left)
+  \draw[figR, thick, arr=0.3, arr=0.8] (\r,0) arc[start angle=0, end angle=-360, radius=\r];
+  % the cuts, each traversed once in each direction
+  \foreach \s in {1,-1} {
+    \draw[figG, very thick] (\s*\r,0) -- (\s*\A,0);
+  }
+  \foreach \xa/\xb in {-2.6/-1.2, 1.2/2.6} {
+    \draw[figG, -{Stealth[length=4pt]}] (\xa,0.16) -- (\xb,0.16);
+    \draw[figG, -{Stealth[length=4pt]}] (\xb,-0.16) -- (\xa,-0.16);
+  }
+  \node[figB, font=\small] at (0,1.15) {$D'$};
+  \node[figB, font=\small] at (0,-1.15) {$D''$};
+  \node[figR, above right] at ({\A*cos(40)},{\B*sin(40)}) {$C_1$};
+  \node[figR] at (0,0) {$C_2$};
+  \node[figG, align=center, right] at (\A+0.25,0) {cuts: traversed once\\ in each direction};
+\end{tikzpicture}

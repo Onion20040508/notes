@@ -36,7 +36,7 @@ tags: [measure-theory, hub]
 ## Used in (Functional Analysis)
 - [[§14 The Function Spaces Lᵖ(Ω)#^rem-14-2|Remark: What “Integrable” Means Here]]
 - [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-3|Theorem §14.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
-- [[§24 Position Eigenstates and Continuous Resolutions#^prop-24-5|Proposition §24.5: The Spectral Projections of Position]]
+- [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-5|Proposition §26.5: The Spectral Projections of Position]]
 
 ## Connections
 - **Proof idea.** Fatou applied to F + f_k and F − f_k gives the [[§15 The General Lebesgue Integral#^thm-15-6|dominated]] (§15.6) and [[§15 The General Lebesgue Integral#^thm-15-7|reverse]] (§15.7) Fatou lemmas. Together they give ∫f ≤ liminf ∫f_k ≤ limsup ∫f_k ≤ ∫f, and [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|451 §10.6]] finishes. The alternative proof applies [[Fatou's Lemma]] to 2F − |f_k − f| and gets ∫|f_k − f| → 0 ([[§15 The General Lebesgue Integral#^rem-15-4|Rem. §15.4]]). It is the last link of MCT → Fatou → DCT.

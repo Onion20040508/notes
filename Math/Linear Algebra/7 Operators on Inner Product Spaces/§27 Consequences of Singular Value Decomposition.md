@@ -48,7 +48,7 @@ tags: [linear-algebra]
 > (a) clear. (b) If $\|T\|=0$ then $T$ kills the unit ball, so $Tu=\|u\|T(u/\|u\|)=0$ for $u\ne0$. (c) $\max\|\lambda Tv\|=|\lambda|\max\|Tv\|$. (d) Pick $v$, $\|v\|\le1$, with $\|S+T\|=\|(S+T)v\|\le\|Sv\|+\|Tv\|\le\|S\|+\|T\|$.
 
 > [!remark]- Connections
-> - Same properties for bounded maps between normed spaces, which make ℒ(X, Y) a normed space: [[§21 Boundedness and Continuity#^thm-21-3|556 Thm. §21.3]].
+> - Same properties for bounded maps between normed spaces, which make ℒ(X, Y) a normed space: [[§21 Boundedness and Continuity#^thm-21-5|556 Thm. §21.5]].
 
 > [!theorem] Theorem 7.88: Alternative formulas for ‖T‖
 > For $T\in\Lin(V,W)$:

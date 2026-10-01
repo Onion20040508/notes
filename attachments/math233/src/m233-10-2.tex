@@ -1,0 +1,30 @@
+% Figure for Calculus §10.
+\begin{tikzpicture}[x=1.15cm, y=0.62cm, font=\scriptsize,
+    declare function={f(\x)=1.1+0.6*\x+1.6*sin(deg(1.75*\x-1.3));}]
+  \def\a{0.5} \def\b{5.2} \def\N{3.0}
+  \draw[-stealth, thin, black!70] (-0.2,0) -- (5.9,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.3) -- (0,6.6) node[above] {$y$};
+  % levels f(a), N, f(b)
+  \draw[figG, thin, dashed] (0,{f(\a)}) -- (\a,{f(\a)});
+  \draw[figG, thin, dashed] (0,{f(\b)}) -- (\b,{f(\b)});
+  \node[figG, left] at (0,{f(\a)}) {$f(a)$};
+  \node[figG, left] at (0,{f(\b)}) {$f(b)$};
+  \fill[figG!10] (-0.06,{f(\a)}) rectangle (0.06,{f(\b)});
+  \draw[figR, thick] (0,\N) -- (5.6,\N) node[right] {$y=N$};
+  \node[figR, left] at (0,\N) {$N$};
+  % the graph
+  \draw[figB, thick] plot[domain=\a:\b, samples=120] (\x,{f(\x)});
+  \fill[figB] (\a,{f(\a)}) circle (1.8pt);
+  \fill[figB] (\b,{f(\b)}) circle (1.8pt);
+  \node[figB, above left] at (4.6,{f(4.6)}) {$y=f(x)$};
+  % the three solutions of f(c) = N
+  \foreach \c/\k in {1.213/1, 2.363/2, 4.124/3} {
+    \draw[figR!70, thin, dashed] (\c,\N) -- (\c,0);
+    \fill[figR] (\c,\N) circle (1.8pt);
+    \node[below] at (\c,0) {$c_{\k}$};
+  }
+  \draw[thin, black!70] (\a,0.08) -- (\a,-0.08) node[below] {$a$};
+  \draw[thin, black!70] (\b,0.08) -- (\b,-0.08) node[below] {$b$};
+  \draw[black!30, dotted] (\a,0) -- (\a,{f(\a)});
+  \draw[black!30, dotted] (\b,0) -- (\b,{f(\b)});
+\end{tikzpicture}

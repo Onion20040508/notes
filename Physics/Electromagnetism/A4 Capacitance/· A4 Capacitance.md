@@ -8,7 +8,7 @@ tags: [chapter, electromagnetism]
 # A4 Capacitance
 ← [[· A3 Electric Potential]] · ↑ [[Electromagnetism]] · [[· A5 Current and Resistance]] →
 
-**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (4), [[· A2 Gauss's Law|A2 Gauss's Law]] (5), [[· A3 Electric Potential|A3 Electric Potential]] (17), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (1)
+**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (4), [[· A2 Gauss's Law|A2 Gauss's Law]] (5), [[· A3 Electric Potential|A3 Electric Potential]] (17), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (1), [[· B2 Electrostatics|B2 Electrostatics]] (2), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (2)
 **Used by:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (1), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (3), [[· A10 Inductance|A10 Inductance]] (4), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (3), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (2), [[· B2 Electrostatics|B2 Electrostatics]] (2), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (3), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (2)
 
 ## Sections

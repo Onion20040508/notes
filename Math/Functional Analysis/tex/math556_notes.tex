@@ -199,7 +199,7 @@
 \begin{center}
 \textit{Instructor: Sijue Wu} \\
 \textit{Text: P.~Lax, \emph{Functional Analysis} (electronic copy available through the library)} \\[0.5em]
-\textit{Grading: Homework/Quizzes 30\%; one in-class midterm (October 15) and one final.} \\
+\textit{Grading: Homework/Quizzes 30\%; one in-class midterm (October 15) and one final (December 11, 6--8 pm).} \\
 \textit{Quizzes, if given, are unannounced and drawn from homework problems. Attendance required.} \\
 \textit{Prerequisites: linear algebra (mandatory), some complex analysis, advanced calculus. Lebesgue theory not assumed.}
 \end{center}
@@ -4850,6 +4850,83 @@ The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to
 For $Y = \mathbb{F}$ this is Proposition~\ref{prop:bounded-continuous} on linear functionals, and $\|T\|$ is then the dual norm of Definition~\ref{def:dual-space}. The companion chapter's bounded operators on $H$ (Definition~\ref{def:operator}) are the case $X = Y = H$. Since $\|Tx - Tx'\|_Y \le \|T\|\, \|x - x'\|_X$, a bounded linear map is even Lipschitz continuous, uniformly on all of $X$.
 \end{rembox}
 
+% Lecture 10 (2026-10-01)
+
+\subsection{Examples}
+
+Wu opened Lecture 10 with examples: ``in reality we actually need to work on linear maps because nonlinear ones are very difficult.'' Whether a map is bounded depends on the norms, not only on the formula.
+
+\begin{exbox}[Differentiation is Bounded from $C^m$ to $C^{m-1}$]\boxlabel{ex:diff-bounded}
+Let $\Omega \subset \mathbb{R}^n$ be bounded and open, and let $C^m(\overline{\Omega})$ be the functions on $\Omega$ whose partial derivatives $\partial^\alpha f$ of all orders $|\alpha| \le m$ exist, are continuous, and extend continuously to the compact set $\overline{\Omega}$, with the norm
+\[
+\|f\|_{C^m(\overline{\Omega})} = \sum_{|\alpha| \le m} \|\partial^\alpha f\|_{L^\infty(\Omega)}, \qquad \|g\|_{L^\infty(\Omega)} = \max_{x \in \overline{\Omega}} |g(x)| .
+\]
+For $m \ge 1$, $Tf = \partial_{x_1} f$ is a linear map $C^m(\overline{\Omega}) \to C^{m-1}(\overline{\Omega})$, and it is bounded with $\|T\| \le 1$:
+\[
+\|Tf\|_{C^{m-1}(\overline{\Omega})} \le \|f\|_{C^m(\overline{\Omega})} \qquad \text{for all } f \in C^m(\overline{\Omega}).
+\]
+\end{exbox}
+
+\begin{proof}
+%% FILL-IN: Wu stated the bound; the counting of derivatives is written out here.
+Linearity is linearity of differentiation. For a multi-index $\beta$ with $|\beta| \le m - 1$, $\partial^\beta(\partial_{x_1} f) = \partial^{\beta + e_1} f$, where $\beta + e_1$ has order $|\beta| + 1 \le m$, and distinct $\beta$ give distinct $\beta + e_1$. So the terms of
+\[
+\|Tf\|_{C^{m-1}} = \sum_{|\beta| \le m-1} \|\partial^{\beta + e_1} f\|_{L^\infty}
+\]
+are some of the terms of $\|f\|_{C^m} = \sum_{|\alpha| \le m} \|\partial^\alpha f\|_{L^\infty}$, all non-negative, and the inequality follows.
+\end{proof}
+
+\begin{rembox}\label{rem:bounded-maps-2}
+Wu noted that $C^m(\overline{\Omega})$ is complete in this norm and left that to the class; it is not needed for the example. For $m = 1$ and $\Omega = (a,b)$ it is Part~2 of the proof of Proposition~\ref{prop:C2-incomplete}.
+\end{rembox}
+
+\begin{propbox}[{{Differentiation is Unbounded in the Maximum Norm}}]\boxlabel{prop:diff-unbounded}
+Give $C^\infty(\overline{\Omega})$ the norm $\|f\| = \max_{x \in \overline{\Omega}} |f(x)|$ (a norm under which $C^\infty(\overline{\Omega})$ is not complete). Then $Tf = \partial_{x_1} f$ is a linear map $C^\infty(\overline{\Omega}) \to C^\infty(\overline{\Omega})$ that is \emph{not} bounded: there is no $M$ with $\max_{\overline{\Omega}} |\partial_{x_1} f| \le M \max_{\overline{\Omega}} |f|$ for all $f$.
+\end{propbox}
+
+\begin{proof}
+Homework; to be added after submission.
+\end{proof}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}\label{rem:bounded-maps-3}
+The two examples have the same formula and opposite answers. In the first, the norm of the target counts one derivative fewer than the norm of the domain, so the derivative taken by $T$ is already paid for; in the second, both norms see only the values of $f$, and ``you cannot control derivatives by functions.''
+\end{rembox}
+%% <<< END ADDED
+
+\begin{exbox}[The Fourier Transform from $L^1$ to $L^\infty$]\boxlabel{ex:fourier-L1}
+For $f \in L^1(\mathbb{R}^n)$ define
+\[
+\mathcal{F}(f)(x) = \int_{\mathbb{R}^n} e^{-i x \cdot \xi} f(\xi)\, d\xi, \qquad x \cdot \xi = \sum_{j=1}^n x_j \xi_j .
+\]
+Then $\mathcal{F} : L^1(\mathbb{R}^n) \to L^\infty(\mathbb{R}^n)$ is a bounded linear map with
+\[
+\|\mathcal{F}(f)\|_{L^\infty(\mathbb{R}^n)} \le \|f\|_{L^1(\mathbb{R}^n)} .
+\]
+\end{exbox}
+
+\begin{proof}
+For fixed $x$, $|e^{-ix\cdot\xi} f(\xi)| = |f(\xi)|$ since $|e^{-ix\cdot\xi}| = 1$, so the integrand is integrable and
+\[
+|\mathcal{F}(f)(x)| \le \int_{\mathbb{R}^n} |f(\xi)|\, d\xi = \|f\|_{L^1}
+\]
+for every $x$. %% FILL-IN: the points below are not from the board.
+Changing $f$ on a null set does not change the integral, so $\mathcal{F}$ is defined on classes, and it is linear by linearity of the integral. $\mathcal{F}(f)$ is measurable (in fact continuous: if $x_k \to x$, the integrands converge pointwise and are dominated by $|f|$, so the dominated convergence theorem gives $\mathcal{F}(f)(x_k) \to \mathcal{F}(f)(x)$). Hence $\mathcal{F}(f) \in L^\infty$ with $\|\mathcal{F}(f)\|_{L^\infty} \le \|f\|_{L^1}$.
+\end{proof}
+
+\begin{propbox}[Linear Maps on Finite-Dimensional Spaces are Bounded]\boxlabel{prop:findim-bounded}
+Let $X$ and $Y$ be normed linear spaces with $\dim X < \infty$. Every linear map $T : X \to Y$ is bounded.
+\end{propbox}
+
+\begin{proof}
+%% FILL-IN: Wu left this to the class ("you can figure out by yourself"); the proof is written out here.
+(Left to the class in lecture.) Let $e_1, \ldots, e_n$ be a basis of $X$ and $\|x\|_1 = \sum_i |a_i|$ for $x = \sum_i a_i e_i$ (Step~2 of the proof of Theorem~\ref{prop:norms-equiv}). By linearity and the triangle inequality,
+\[
+\|Tx\|_Y = \Bigl\| \sum_i a_i\, T e_i \Bigr\|_Y \le \sum_i |a_i|\, \|T e_i\|_Y \le \Bigl( \max_i \|T e_i\|_Y \Bigr) \|x\|_1 .
+\]
+By Theorem~\ref{prop:norms-equiv}, $\|x\|_1 \le C\|x\|_X$ for some $C$, so $\|Tx\|_Y \le C \max_i \|Te_i\|_Y\, \|x\|_X$.
+\end{proof}
+
 \begin{defbox}[{{The Space $\mathcal{L}(X, Y)$}}]\boxlabel{def:LXY}
 $\mathcal{L}(X, Y)$ is the set of all bounded linear maps $T : X \to Y$, with the pointwise operations $(T_1 + T_2)x = T_1 x + T_2 x$ and $(aT)x = a\, Tx$, and the norm $\|T\|$ of Definition~\ref{def:bounded-map}.
 \laxref{\S15.1, definition of $\mathcal{L}(X, U)$}
@@ -4882,12 +4959,248 @@ The first inequality is the triangle inequality in $Y$ at each $x$. The second h
 \end{proof}
 
 \begin{proof}[Proof of (2)]
-Next lecture.
+(Lecture 10.) Assume $Y$ is complete, and let $\{T_n\}$ be a Cauchy sequence in $\mathcal{L}(X, Y)$: for every $\varepsilon > 0$ there is $N$ with $\|T_n - T_k\| < \varepsilon$ for all $n, k \ge N$.
+
+\textbf{Step 1: pointwise limits.} Fix $x_0 \in X$. By Proposition~\ref{prop:op-norm}(b),
+\[
+\|T_n x_0 - T_k x_0\|_Y = \|(T_n - T_k) x_0\|_Y \le \|T_n - T_k\|\, \|x_0\|_X \le \varepsilon\, \|x_0\|_X \qquad (n, k \ge N),
+\]
+so $\{T_n x_0\}$ is a Cauchy sequence in $Y$. Since $Y$ is complete, it converges. Define
+\[
+T x_0 = \lim_{n \to \infty} T_n x_0 \qquad (x_0 \in X).
+\]
+This is the candidate.
+
+\textbf{Step 2: $T$ is linear.} For $a_1, a_2 \in \mathbb{F}$ and $x_1, x_2 \in X$, $T_n(a_1 x_1 + a_2 x_2) = a_1 T_n x_1 + a_2 T_n x_2$. As $n \to \infty$ the left side converges to $T(a_1 x_1 + a_2 x_2)$ and the right side to $a_1 T x_1 + a_2 T x_2$ %% FILL-IN: why the right side converges.
+(since $\|(a_1 T_n x_1 + a_2 T_n x_2) - (a_1 T x_1 + a_2 T x_2)\|_Y \le |a_1|\,\|T_n x_1 - T x_1\|_Y + |a_2|\,\|T_n x_2 - T x_2\|_Y \to 0$). Limits are unique, so $T(a_1 x_1 + a_2 x_2) = a_1 T x_1 + a_2 T x_2$.
+
+\textbf{Step 3: the uniform estimate.} Let $\varepsilon > 0$ and $N$ as above. For every $x \in X$ and $n, k \ge N$, $\|T_n x - T_k x\|_Y \le \varepsilon\,\|x\|_X$. Fix $x$ and $k \ge N$. For any $n \ge N$, by the triangle inequality,
+\[
+\|T x - T_k x\|_Y \le \|T x - T_n x\|_Y + \|T_n x - T_k x\|_Y \le \|T_n x - T x\|_Y + \varepsilon\, \|x\|_X .
+\]
+The left side does not depend on $n$; letting $n \to \infty$, the first term on the right tends to $0$ by Step 1, so
+\[
+\|T_k x - T x\|_Y \le \varepsilon\, \|x\|_X \qquad \text{for all } x \in X \text{ and all } k \ge N .
+\]
+
+\textbf{Step 4: conclusion.} By Step 2, $T_k - T$ is linear, and by Step 3 it is bounded with $\|T_k - T\| \le \varepsilon$ for $k \ge N$. Since $\mathcal{L}(X, Y)$ is a linear space (part (1)) and $T_k, T_k - T \in \mathcal{L}(X, Y)$, also $T = T_k - (T_k - T) \in \mathcal{L}(X, Y)$. Finally $\|T_k - T\| \le \varepsilon$ for all $k \ge N$ says $T_k \to T$ in $\mathcal{L}(X, Y)$. So every Cauchy sequence converges, and $\mathcal{L}(X, Y)$ is a Banach space.
 \end{proof}
+
+\begin{rembox}[Why $\varepsilon$ Does Not Depend on $x$]\label{rem:why-does-not-depend-x}
+A student asked whether $\varepsilon$ in Step 3 varies with $x$. It does not: $N$ is chosen from $\|T_n - T_k\| < \varepsilon$ alone, and $\|T_n - T_k\|$ is the supremum of $\|T_n x - T_k x\|_Y/\|x\|_X$ over all $x$, so the single inequality $\|T_n x - T_k x\|_Y \le \varepsilon\|x\|_X$ holds for every $x$ at once. That is what makes $\|T_k - T\| \le \varepsilon$ legitimate at the end. If $N$ depended on $x$, the conclusion would only be pointwise convergence. Wu compared the argument to the proof that a uniformly Cauchy sequence of functions converges uniformly (MATH 451): first a pointwise limit, then the uniform bound passes to the limit. The same pattern was used in Part~3 of the proof of Theorem~\ref{thm:Cab-banach}.
+\end{rembox}
 
 \begin{rembox}[Comparison with Lax]\label{rem:comparison-lax-8}
 Lax states Theorem~1 of \S15.1 for Banach spaces $X, U$, but the proof uses no completeness, as Wu remarked. In the ($\Rightarrow$) direction Lax normalizes differently: he rescales $x_n$ to have $|x_n| = 1/\sqrt{n}$, so that $x_n \to 0$ while $|Mx_n| > \sqrt{n} \to \infty$; Wu divides by $n\|x_n\|_X$, so that $\|y_n\|_X = 1/n \to 0$ while $\|Ty_n\|_Y > 1$ merely stays away from $0$. Either contradicts continuity at $0$. Lax proves homogeneity and positivity of the operator norm as ``obvious'' and leaves subadditivity as his Exercise~1; here it is Wu's board argument.
 \end{rembox}
+
+% ============================================================================
+% SECTION: DUAL SPACES (Lecture 10)
+% ============================================================================
+
+\section{Dual Spaces}\label{sec:dual}
+
+\roadmark{Stage: maps}{Thread: functionals. The bounded functionals on a space form a Banach space; on a Hilbert space it is the space itself.}
+
+\begin{defbox}[Dual Space]\boxlabel{def:dual}
+Let $X$ be a normed linear space over $\mathbb{F}$. The set of bounded linear functionals on $X$,
+\[
+X' = \mathcal{L}(X, \mathbb{F}),
+\]
+with the norm $\|\ell\| = \sup_{x \neq 0} |\ell(x)|/\|x\|$, is the \textbf{dual space} of $X$. (Wu follows Lax's notation $X'$.)
+\laxref{\S8.1, dual space}
+\end{defbox}
+
+\begin{corbox}[The Dual is Always a Banach Space]\boxlabel{cor:dual-banach}
+For any normed linear space $X$ over $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$, $X'$ is a Banach space, whether or not $X$ is complete.
+\laxref{\S8.1}
+\end{corbox}
+
+\begin{proof}
+$\mathbb{F}$ is complete, so Theorem~\ref{thm:LXY}(2) applies with $Y = \mathbb{F}$.
+\end{proof}
+
+\begin{notebox}[{{The Pairing $\langle x, \ell \rangle$}}]\label{note:pairing-gen-x-l}
+For $\ell \in X'$ and $x \in X$ one often writes $\ell(x) = \langle x, \ell \rangle$. This is only notation, borrowed from inner product spaces: $\langle x, \ell \rangle$ pairs an element of $X$ with an element of $X'$, and is linear in $x$. In general $X'$ is a different space from $X$; on a Hilbert space the two can be identified, by the next theorem.
+\end{notebox}
+
+\begin{thmbox}[{{Riesz Representation Theorem, with Norms}}]\boxlabel{thm:riesz-norm}
+Let $H$ be a Hilbert space.
+\begin{enumerate}[label=(\arabic*)]
+    \item For $a \in H$, $\ell_a(x) = (x, a)$ defines a bounded linear functional $\ell_a \in H'$ with $\|\ell_a\| = \|a\|$.
+    \item For every $\ell \in H'$ there is a unique $a \in H$ with $\ell(x) = (x, a)$ for all $x \in H$; moreover $\|\ell\| = \|a\|$.
+\end{enumerate}
+\laxref{\S6.3, Thm~4}
+\end{thmbox}
+
+\begin{proof}
+(1) Linearity of $\ell_a$ is linearity of the inner product in its first slot. By Cauchy--Schwarz, $|\ell_a(x)| = |(x, a)| \le \|x\|\,\|a\|$, so
+\[
+\|\ell_a\| = \sup_{x \neq 0} \frac{|(x, a)|}{\|x\|} \le \|a\| .
+\]
+For equality, take $x = a$ (if $a = 0$ both sides are $0$): $\ell_a(a) = (a, a) = \|a\|^2$, so the ratio $|\ell_a(a)|/\|a\| = \|a\|$ is attained, and $\|\ell_a\| = \|a\|$.
+
+(2) Existence and uniqueness of $a$ are Theorem~\ref{thm:riesz-rep}(2), proved in Lecture 8. %% FILL-IN: uniqueness argument (Wu: "I forgot to say uniqueness, but that's obvious").
+(Uniqueness: if $(x, a) = (x, a')$ for all $x$, take $x = a - a'$ to get $\|a - a'\|^2 = 0$.) Then $\ell = \ell_a$, and $\|\ell\| = \|a\|$ by (1).
+\end{proof}
+
+\begin{corbox}[{{The Riesz Map: $H' \cong H$}}]\boxlabel{cor:riesz-map}
+The map $R : H \to H'$, $R(a) = \ell_a$, is one-to-one, onto, and norm-preserving: $\|R(a)\| = \|a\|$. It is additive, and $R(ca) = \bar{c}\, R(a)$ for scalars $c$; so $R$ is linear if $\mathbb{F} = \mathbb{R}$ and conjugate-linear if $\mathbb{F} = \mathbb{C}$.
+\laxref{\S6.3, Thm~4}
+\end{corbox}
+
+\begin{proof}
+Onto and one-to-one are the existence and uniqueness in Theorem~\ref{thm:riesz-norm}(2), and $\|R(a)\| = \|a\|$ is part (1). %% FILL-IN: the (conjugate-)linearity is written out; Wu: "if it's complex, it's a bit complicated".
+For all $x$, $\ell_{a + b}(x) = (x, a + b) = (x, a) + (x, b)$ and $\ell_{ca}(x) = (x, ca) = \bar{c}\,(x, a)$, by conjugate-linearity of the inner product in its second slot.
+\end{proof}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}\label{rem:dual}
+Wu called $R$ an isometry and concluded that the dual of a Hilbert space can be identified with the space itself, $H' = H$, ``through this Riesz representation.'' Over $\mathbb{C}$ the identification is conjugate-linear, which is harmless for norms and distances: $\|R(a) - R(b)\| = \|R(a - b)\| = \|a - b\|$. The companion chapter writes the same map in bra--ket notation (Theorem~\ref{thm:riesz-map}).
+\end{rembox}
+%% <<< END ADDED
+
+\begin{exbox}[{{$(L^2)' = L^2$ and $(\ell^2)' = \ell^2$}}]\boxlabel{ex:L2-dual}
+$L^2(\Omega)$ is a Hilbert space with $(f, g) = \int_\Omega f(x)\, \overline{g(x)}\, dx$. By Theorem~\ref{thm:riesz-norm}, every bounded linear functional on $L^2(\Omega)$ is
+\[
+\ell(f) = \int_\Omega f(x)\, \overline{g(x)}\, dx \qquad \text{for a unique } g \in L^2(\Omega),
+\]
+with $\|\ell\| = \|g\|_{L^2}$. Likewise every $\ell \in (\ell^2)'$ is $\ell(a) = \sum_{j=1}^\infty a_j \overline{b_j}$ for a unique $b = (b_1, b_2, \ldots) \in \ell^2$, with $\|\ell\| = \|b\|_2$. A student asked which function carries the bar: the second one, since $\ell$ is linear in the function it acts on.
+\end{exbox}
+
+\begin{rembox}[Not Every Space is its Own Dual]\label{rem:not-every-space-own-dual}
+A student asked whether the dual of every space is itself. No: the identification $X' = X$ is a Hilbert-space phenomenon, and ``almost always'' $X' \neq X$. The standard example, stated in lecture and to be proved next time, is below; the reason the exponent $p'$ appears is H\"older's inequality, which makes $\int f g$ meaningful for $f \in L^p$, $g \in L^{p'}$.
+\end{rembox}
+
+\begin{thmbox}[{{The Dual of $L^p$}}]\boxlabel{thm:Lp-dual}
+Let $1 \le p < \infty$ and $\frac1p + \frac{1}{p'} = 1$. Then $(L^p)' = L^{p'}$: every $\ell \in (L^p)'$ is $\ell(f) = \int f g$ for a unique $g \in L^{p'}$, with $\|\ell\| = \|g\|_{L^{p'}}$.
+\end{thmbox}
+
+\begin{proof}
+Next lecture.
+\end{proof}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}\label{rem:dual-2}
+On the board: $(L^p)' = L^{p'}$ with no range for $p$. The range $1 \le p < \infty$ is added here: for $p = \infty$ the statement fails (the dual of $L^\infty$ is larger than $L^1$), which was not covered.
+\end{rembox}
+%% <<< END ADDED
+
+% ============================================================================
+% SECTION: SESQUILINEAR FORMS AND LAX-MILGRAM (Lecture 10)
+% ============================================================================
+
+\section{Sesquilinear Forms and the Lax--Milgram Theorem}\label{sec:lax-milgram}
+
+\roadmark{Stage: maps}{Thread: functionals. Bounded sesquilinear forms are bounded operators in disguise; Lax--Milgram extends the Riesz representation to forms that are not symmetric.}
+
+\begin{exbox}[{{Bilinear Forms on $\mathbb{R}^n$ are Matrices}}]\boxlabel{ex:bilinear-matrix}
+Let $B : \mathbb{R}^n \times \mathbb{R}^n \to \mathbb{R}$ be bilinear (linear in each variable). Then $B(x, y) = (x, Ay)$ for the matrix $A = \bigl( B(e_i, e_j) \bigr)_{i,j}$.
+\end{exbox}
+
+\begin{proof}
+%% FILL-IN: Wu: "you just plug in and do the expansion"; the expansion is written out.
+Write $x = \sum_i x_i e_i$, $y = \sum_j y_j e_j$. By bilinearity, $B(x, y) = \sum_{i,j} x_i y_j\, B(e_i, e_j)$. On the other hand $(Ay)_i = \sum_j A_{ij} y_j$, so $(x, Ay) = \sum_i x_i \sum_j A_{ij} y_j = \sum_{i,j} x_i y_j A_{ij}$. The two agree when $A_{ij} = B(e_i, e_j)$.
+\end{proof}
+
+The theorem below is the infinite-dimensional version. Wu warned against the naive route --- expanding $x$ and $y$ in an orthonormal basis and building an infinite matrix --- because of the ambiguity in such infinite sums; the Riesz representation theorem does the work instead.
+
+\begin{defbox}[Sesquilinear Form; Bounded Form]\boxlabel{def:sesquilinear}
+Let $X$ be a linear space over $\mathbb{F}$. A map $B : X \times X \to \mathbb{F}$ is \textbf{sesquilinear} if
+\begin{enumerate}[label=(\arabic*)]
+    \item $B(a_1 x_1 + a_2 x_2, y) = a_1 B(x_1, y) + a_2 B(x_2, y)$ for all $a_1, a_2 \in \mathbb{F}$ and $x_1, x_2, y \in X$;
+    \item $B(x, b_1 y_1 + b_2 y_2) = \overline{b_1}\, B(x, y_1) + \overline{b_2}\, B(x, y_2)$ for all $b_1, b_2 \in \mathbb{F}$ and $x, y_1, y_2 \in X$.
+\end{enumerate}
+(For $\mathbb{F} = \mathbb{R}$ this is bilinear.) If $X$ is normed, $B$ is \textbf{bounded} if there is $M > 0$ with $|B(x, y)| \le M\, \|x\|\, \|y\|$ for all $x, y \in X$.
+\laxref{\S6.3, conditions (i)--(ii) of Thm~6}
+\end{defbox}
+
+\begin{thmbox}[Bounded Sesquilinear Forms are Bounded Operators]\boxlabel{thm:form-operator}
+Let $H$ be a Hilbert space over $\mathbb{F}$ and $B : H \times H \to \mathbb{F}$ a bounded sesquilinear form. Then there is a bounded linear map $A : H \to H$ with
+\[
+B(x, y) = (x, Ay) \qquad \text{for all } x, y \in H,
+\]
+and
+\[
+\|A\| = \sup_{\substack{x, y \in H \\ x \neq 0,\ y \neq 0}} \frac{|B(x, y)|}{\|x\|\, \|y\|} .
+\]
+\end{thmbox}
+
+\begin{proof}
+\textbf{Step 1: defining $A$.} Fix $y_0 \in H$ and let $\ell(x) = B(x, y_0)$. By (1), $\ell$ is linear, and $|\ell(x)| = |B(x, y_0)| \le M\, \|x\|\, \|y_0\|$, so $\ell$ is a bounded linear functional with $\|\ell\| \le M\|y_0\|$. By the Riesz representation theorem there is a unique $z_0 \in H$ with
+\[
+B(x, y_0) = \ell(x) = (x, z_0) \qquad \text{for all } x \in H .
+\]
+Define $A y_0 = z_0$. Doing this for every $y_0$ defines $A : H \to H$, characterized by $B(x, y) = (x, Ay)$ for all $x, y$.
+
+\textbf{Step 2: $A$ is linear.} For $a_1, a_2 \in \mathbb{F}$, $y_1, y_2 \in H$ and every $x \in H$,
+\begin{align*}
+(x, A(a_1 y_1 + a_2 y_2)) &= B(x, a_1 y_1 + a_2 y_2) = \overline{a_1}\, B(x, y_1) + \overline{a_2}\, B(x, y_2) \\
+&= \overline{a_1}\, (x, A y_1) + \overline{a_2}\, (x, A y_2) = (x, a_1 A y_1 + a_2 A y_2),
+\end{align*}
+by the definition of $A$, property (2) of $B$, the definition of $A$ again, and conjugate-linearity of the inner product. %% FILL-IN: the uniqueness step that turns equal inner products into equal vectors.
+Since this holds for every $x$, taking $x = A(a_1 y_1 + a_2 y_2) - (a_1 A y_1 + a_2 A y_2)$ shows that this vector has norm $0$. So $A(a_1 y_1 + a_2 y_2) = a_1 A y_1 + a_2 A y_2$.
+
+\textbf{Step 3: $A$ is bounded.} From $|B(x, y)| \le M\|x\|\,\|y\|$, $|(x, Ay)| \le M\, \|x\|\, \|y\|$ for all $x, y$. Take $x = Ay$: $\|Ay\|^2 \le M\, \|Ay\|\, \|y\|$, so $\|Ay\| \le M\|y\|$ (trivially if $Ay = 0$, otherwise divide by $\|Ay\|$). Hence $A$ is bounded with $\|A\| \le M$.
+
+\textbf{Step 4: the norm of $A$.} %% FILL-IN: left to the class in lecture ("I leave it to you to show the norm actually equals the supremum").
+(Left to the class in lecture.) Let $S$ denote the supremum in the statement; we may assume $H \neq \{0\}$. For $x, y \neq 0$, Cauchy--Schwarz and Proposition~\ref{prop:op-norm}(b) give $|B(x,y)| = |(x, Ay)| \le \|x\|\,\|Ay\| \le \|A\|\,\|x\|\,\|y\|$, so $S \le \|A\|$. Conversely, for $y \neq 0$ with $Ay \neq 0$, take $x = Ay$: $\dfrac{|B(Ay, y)|}{\|Ay\|\,\|y\|} = \dfrac{\|Ay\|^2}{\|Ay\|\,\|y\|} = \dfrac{\|Ay\|}{\|y\|}$, so $\|Ay\|/\|y\| \le S$; this also holds when $Ay = 0$. Taking the supremum over $y \neq 0$ gives $\|A\| \le S$.
+\end{proof}
+
+\begin{thmbox}[Lax--Milgram]\boxlabel{thm:lax-milgram}
+Let $H$ be a Hilbert space over $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$, and let $B : H \times H \to \mathbb{F}$ satisfy
+\begin{enumerate}[label=(\arabic*)]
+    \item $B(a_1 x_1 + a_2 x_2, y) = a_1 B(x_1, y) + a_2 B(x_2, y)$;
+    \item $B(x, b_1 y_1 + b_2 y_2) = \overline{b_1}\, B(x, y_1) + \overline{b_2}\, B(x, y_2)$;
+    \item $B$ is bounded: $|B(x, y)| \le M\, \|x\|\, \|y\|$ for all $x, y \in H$;
+    \item $B$ is \textbf{coercive}: there is $\beta > 0$ with $|B(x, x)| \ge \beta\, \|x\|^2$ for all $x \in H$.
+\end{enumerate}
+Then for every $\ell \in H'$ there is a unique $y \in H$ with
+\[
+\ell(x) = B(x, y) \qquad \text{for all } x \in H .
+\]
+\laxref{\S6.3, Thm~6}
+\end{thmbox}
+
+\begin{proof}
+Next lecture.
+\end{proof}
+
+\begin{rembox}[The Plan of the Proof]\label{rem:plan-proof}
+Wu's outline at the end of the lecture. By Theorem~\ref{thm:form-operator}, conditions (1)--(3) give $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$. By the Riesz representation theorem, $\ell \in H'$ if and only if $\ell(x) = (x, a)$ for some $a \in H$. So the theorem says: for every $a \in H$ there is a unique $y$ with $Ay = a$. That is, \emph{$A$ is one-to-one and onto}, and the coercivity (4) is what will be used to prove it. Wu said Lax--Milgram is ``very useful in solving elliptic PDE''; examples are to come.
+\end{rembox}
+
+\begin{rembox}[What is New in Lax--Milgram]\label{rem:what-new-lax-milgram}
+Wu's question: since the conclusion looks like the Riesz representation theorem, why is a new theorem needed? Compare $B$ with an inner product. Conditions (1)--(2) are the linearity of an inner product, (3) is the Cauchy--Schwarz bound (with $M = 1$ for an inner product), and (4) is a quantitative form of $(x, x) = 0 \Rightarrow x = 0$. What is missing is the symmetry $B(x, y) = \overline{B(y, x)}$. When $B$ is symmetric there is nothing new: $B$ is itself an inner product (up to sign) and Lax--Milgram is the Riesz theorem for it. This is made precise below. What is new in Lax--Milgram is that it does not assume symmetry.
+\end{rembox}
+
+%% >>> ADDED: result (not covered in lecture)
+\begin{lembox}[A Symmetric Coercive Form Has a Sign]\boxlabel{lem:sym-sign}
+Let $B$ satisfy (1)--(4) of Theorem~\ref{thm:lax-milgram} and $B(x, y) = \overline{B(y, x)}$ for all $x, y$. Then either $B(x, x) \ge \beta\|x\|^2$ for all $x$, or $B(x, x) \le -\beta\|x\|^2$ for all $x$.
+\end{lembox}
+
+\begin{proof}
+%% ADDED: not in lecture. Wu's remark says "B is an inner product"; with coercivity in the form |B(x,x)| >= beta ||x||^2 a sign has to be fixed first.
+(Not covered in lecture.) $B(x, x) = \overline{B(x, x)}$ is real, and by (4) it is nonzero for $x \neq 0$, with $|B(x,x)| \ge \beta\|x\|^2$. It suffices to show that $B(x, x)$ and $B(y, y)$ have the same sign for $x, y \neq 0$. If $y = cx$ with $c \in \mathbb{R}$, $c \neq 0$, then $B(y, y) = c^2 B(x, x)$. Otherwise $z(t) = (1 - t)x + ty \neq 0$ for every $t \in [0,1]$, and for real $t$
+\[
+f(t) = B(z(t), z(t)) = (1-t)^2 B(x,x) + t(1-t)\bigl( B(x,y) + B(y,x) \bigr) + t^2 B(y,y)
+\]
+is a real polynomial in $t$, never $0$ on $[0,1]$. By the intermediate value theorem $f(0) = B(x,x)$ and $f(1) = B(y,y)$ have the same sign.
+\end{proof}
+%% <<< END ADDED
+
+\begin{propbox}[Symmetric Lax--Milgram is Riesz]\boxlabel{prop:sym-lax-milgram}
+If $B$ satisfies (1)--(4) of Theorem~\ref{thm:lax-milgram} and $B(x, y) = \overline{B(y, x)}$ for all $x, y$, then the conclusion of Theorem~\ref{thm:lax-milgram} holds, and it follows from the Riesz representation theorem applied to the inner product $((x, y)) = \pm B(x, y)$.
+\end{propbox}
+
+\begin{proof}
+%% FILL-IN: Wu's remark ("then there is nothing to prove"); the details are written out.
+(Wu's remark; the details are written out here.) By Lemma~\ref{lem:sym-sign}, replacing $(B, \ell)$ by $(-B, -\ell)$ if necessary --- which does not change the equation $\ell(x) = B(x, y)$ --- we may assume $B(x, x) \ge \beta\|x\|^2$. Then $((x, y)) = B(x, y)$ is an inner product on $H$: it is linear in $x$ by (1), $((y, x)) = \overline{((x, y))}$ by symmetry, and $((x, x)) \ge \beta\|x\|^2 > 0$ for $x \neq 0$. Its norm $|||x||| = ((x,x))^{1/2}$ satisfies
+\[
+\beta\, \|x\|^2 \le |||x|||^2 \le M\, \|x\|^2 ,
+\]
+by coercivity and boundedness. So $|||\cdot|||$ and $\|\cdot\|$ are equivalent, they have the same Cauchy sequences and the same limits (Proposition~\ref{prop:equiv-same}), and $(H, ((\cdot,\cdot)))$ is a Hilbert space. Given $\ell \in H'$, $|\ell(x)| \le \|\ell\|\,\|x\| \le \|\ell\|\, \beta^{-1/2}\, |||x|||$, so $\ell$ is bounded for the new norm as well. The Riesz representation theorem in $(H, ((\cdot,\cdot)))$ gives a unique $y$ with $\ell(x) = ((x, y)) = B(x, y)$ for all $x$.
+\end{proof}
 
 % ============================================================================
 % CHAPTER 7: FUNCTIONAL ANALYSIS AND QUANTUM MECHANICS

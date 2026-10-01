@@ -18,11 +18,11 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§20 Orthonormal Sets and Bases#^prop-20-6|Proposition §20.6: The Orthonormal Expansion Converges]]
-- [[§23 The Completeness Relation#^cor-23-4|Corollary §23.4: Inserting a Complete Set of States]]
-- [[§25 Bound States Need Not Be Complete꞉ Hydrogen#^cor-25-2|Corollary §25.2: Bound States are Not Complete]]
+- [[§25 The Completeness Relation#^cor-25-4|Corollary §25.4: Inserting a Complete Set of States]]
+- [[§27 Bound States Need Not Be Complete꞉ Hydrogen#^cor-27-2|Corollary §27.2: Bound States are Not Complete]]
 
 ## Connections
 - **How.** The finite version comes first. Subtracting from x its components along e₁, …, e_k leaves a remainder orthogonal to each e_j, so Pythagoras gives ‖x‖² = ‖y‖² + Σ|(x, e_j)|² ([[§20 Orthonormal Sets and Bases#^lem-20-2|§20.2]]). To make sense of the sum over an arbitrary index set, the level sets |(x, e_α)| ≥ 1/k each have at most k²‖x‖² elements, so only countably many coefficients are nonzero ([[§20 Orthonormal Sets and Bases#^prop-20-4|§20.4]], [[Functional Analysis Problem-Solving Techniques#^rem-t12|Technique 12]]). A sum of non-negative terms is the supremum of its finite sums ([[§20 Orthonormal Sets and Bases#^lem-20-3|§20.3]]). No completeness is used, so Bessel holds in every inner product space.
 - **Used for.** In a Hilbert space it makes the orthonormal expansion converge. ‖s_n − s_m‖² is a tail of the convergent series Σ|(x, e_j)|², so the partial sums are Cauchy ([[§20 Orthonormal Sets and Bases#^prop-20-6|§20.6]]). Equality for every x is Parseval, which holds exactly for complete sets ([[Characterizations of an Orthonormal Basis]]).
 - **Finite dimensions.** LADR's Bessel inequality for an orthonormal list ([[§20 Orthonormal Bases#^ladr-6-26|LADR 6.26]]) is exactly the finite lemma §20.2. What is new here is countable support and the passage to the limit.
-- **In the companion chapter.** For a normalized state ψ, Σ|(ψ, ψ_nlm)|² is the probability of finding the hydrogen electron in some bound state, and Bessel says it is at most 1. It is strictly less than 1 for some ψ, because the bound states are not complete ([[§25 Bound States Need Not Be Complete꞉ Hydrogen#^cor-25-2|§25.2]]); the deficit is the ionization probability. Bessel also gives the absolute convergence in “inserting a complete set of states” ([[§23 The Completeness Relation#^cor-23-4|§23.4]]).
+- **In the companion chapter.** For a normalized state ψ, Σ|(ψ, ψ_nlm)|² is the probability of finding the hydrogen electron in some bound state, and Bessel says it is at most 1. It is strictly less than 1 for some ψ, because the bound states are not complete ([[§27 Bound States Need Not Be Complete꞉ Hydrogen#^cor-27-2|§27.2]]); the deficit is the ionization probability. Bessel also gives the absolute convergence in “inserting a complete set of states” ([[§25 The Completeness Relation#^cor-25-4|§25.4]]).

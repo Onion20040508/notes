@@ -1,0 +1,32 @@
+% Figure for Calculus §110.
+\begin{tikzpicture}[x=1.2cm, y=1.2cm, font=\scriptsize,
+    declare function={g1(\x)=0.75+0.28*sin(deg(1.4*\x-0.3));
+                      g2(\x)=2.85+0.3*sin(deg(1.2*\x+0.8));},
+    mid arrow/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
+  \def\a{0.6} \def\b{4.4} \def\xx{3.1}
+  % region D
+  \fill[figB!10] plot[domain=\a:\b, samples=80] (\x,{g1(\x)}) -- plot[domain=\b:\a, samples=80] (\x,{g2(\x)}) -- cycle;
+  \draw[-stealth, thin, black!70] (-0.2,0) -- (5.6,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.2) -- (0,3.9) node[above] {$y$};
+  % boundary pieces with orientation
+  \draw[figR, thick, mid arrow=0.55] plot[domain=\a:\b, samples=80] (\x,{g1(\x)});
+  \draw[figR, thick, mid arrow=0.6] (\b,{g1(\b)}) -- (\b,{g2(\b)});
+  \draw[figR, thick, mid arrow=0.5] plot[domain=\b:\a, samples=80] (\x,{g2(\x)});
+  \draw[figR, thick, mid arrow=0.6] (\a,{g2(\a)}) -- (\a,{g1(\a)});
+  \node[figR, below] at (2.0,{g1(2.0)}) {$C_1$};
+  \node[figR, right] at (\b,{(g1(\b)+g2(\b))/2}) {$C_2$};
+  \node[figR, above] at (1.6,{g2(1.6)}) {$C_3$};
+  \node[figR, left] at (\a,{(g1(\a)+g2(\a))/2}) {$C_4$};
+  \node[figB, font=\small] at (1.2,1.9) {$D$};
+  % a vertical fibre: FTC in y
+  \draw[figB, thick] (\xx,{g1(\xx)}) -- (\xx,{g2(\xx)});
+  \fill[figB] (\xx,{g1(\xx)}) circle (1.5pt) (\xx,{g2(\xx)}) circle (1.5pt);
+  \node[figB, left] at (\xx,{(g1(\xx)+g2(\xx))/2}) {$\displaystyle\int_{g_1(x)}^{g_2(x)}\!\frac{\partial P}{\partial y}\,dy$};
+  \draw[black!30, dotted] (\xx,0) -- (\xx,{g1(\xx)});
+  \node[below] at (\xx,0) {$x$};
+  \node[figR!80!black, right] at (\b+0.05,{g2(\b)}) {$y=g_2(x)$};
+  \node[figR!80!black, right] at (\b+0.05,{g1(\b)}) {$y=g_1(x)$};
+  % ticks a, b
+  \draw[black!30, dotted] (\a,0) -- (\a,{g1(\a)}) (\b,0) -- (\b,{g1(\b)});
+  \node[below] at (\a,0) {$a$}; \node[below] at (\b,0) {$b$};
+\end{tikzpicture}

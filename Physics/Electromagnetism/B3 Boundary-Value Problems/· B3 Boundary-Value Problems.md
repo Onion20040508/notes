@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ← [[· B2 Electrostatics]] · ↑ [[Electromagnetism]] · [[· B4 The Multipole Expansion]] →
 
 **Builds on:** [[· A2 Gauss's Law|A2 Gauss's Law]] (3), [[· A3 Electric Potential|A3 Electric Potential]] (5), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (8), [[· B2 Electrostatics|B2 Electrostatics]] (6)
-**Used by:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (2), [[· B2 Electrostatics|B2 Electrostatics]] (2), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (4), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (7), [[· B6 Magnetostatics|B6 Magnetostatics]] (4), [[· B8 Electrodynamics|B8 Electrodynamics]] (2), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (5)
+**Used by:** [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A4 Capacitance|A4 Capacitance]] (2), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (2), [[· B2 Electrostatics|B2 Electrostatics]] (2), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (4), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (7), [[· B6 Magnetostatics|B6 Magnetostatics]] (4), [[· B8 Electrodynamics|B8 Electrodynamics]] (2), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (5)
 
 ## Sections
 - [[§B3.1 Laplace's Equation and the Uniqueness Theorems]] — Griffiths 3.1

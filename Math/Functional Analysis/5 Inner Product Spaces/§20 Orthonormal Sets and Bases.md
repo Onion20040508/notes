@@ -285,7 +285,8 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 
 > [!remark]- Connections
 > - Finite-dimensional home (expansion and Parseval in an orthonormal basis): [[§20 Orthonormal Bases#^ladr-6-30|LADR 6.30]].
-> - Restated in Dirac notation as the completeness relation: [[§23 The Completeness Relation#^thm-23-2|§23.2]], [[§23 The Completeness Relation#^cor-23-4|§23.4]].
+> - Restated in Dirac notation as the completeness relation: [[§25 The Completeness Relation#^thm-25-2|§25.2]], [[§25 The Completeness Relation#^cor-25-4|§25.4]].
+> - Used in Electromagnetism: the completeness of the Legendre polynomials in $L^2[-1, 1]$, which justifies expanding boundary potentials in Legendre series — [[§B3.4 Separation of Variables in Spherical Coordinates#^thm-b3-4-2|EM Theorem §B3.4.2]].
 
 > [!remark] Remark
 > In finite dimensions these are the familiar facts: a complete orthonormal set is a basis, every vector is the sum of its components, and its squared length is the sum of the squared components. The theorem says that all three survive in any Hilbert space once the sums are interpreted correctly — countable support, then convergence — and that [[§20 Orthonormal Sets and Bases#^thm-20-5|Bessel's inequality]] becomes an equality exactly for complete sets.
@@ -376,7 +377,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 
 > [!remark]- Connections
 > - The real trigonometric orthonormal list on $[-\pi, \pi]$ in finite dimensions: [[§20 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d).
-> - Used for the particle on a ring: [[§23 The Completeness Relation#^ex-23-2|Ex. §23.2]].
+> - Used for the particle on a ring: [[§25 The Completeness Relation#^ex-25-2|Ex. §25.2]].
 > - Used in Quantum Mechanics: the completeness of the infinite-well states, proved from this basis — [[§B1.3 Stationary States and Expansion in Energy Eigenstates#^thm-b1-3-3|QM Theorem §B1.3.3]].
 > - The density step it needs (continuous functions vanishing at the endpoints are dense in $L^2[0,2\pi]$) follows from [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 Thm. §19.19]](iii) by cutting the approximant off near the endpoints.
 
@@ -525,7 +526,7 @@ The two moves of the proof: cut off the tail, which is small because the series 
 
 > [!remark]- Connections
 > - Vault home: [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 §19.20]], via density of step functions and of $C_c$ in $L^p$, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 §19.19]] (its (iii) is the compactly supported density used in Step 1).
-> - The companion chapter's case $L^2(\mathbb{R}^n)$: [[§24 Position Eigenstates and Continuous Resolutions#^thm-24-2|§24.2]].
+> - The companion chapter's case $L^2(\mathbb{R}^n)$: [[§26 Position Eigenstates and Continuous Resolutions#^thm-26-2|§26.2]].
 
 ![[m556-20-4.svg]]
 *Step 2 and Step 3 for $n = 1$: a continuous $g$ and the step function $\varphi$ on dyadic intervals with rational heights.*
@@ -617,6 +618,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 
 > [!remark]- Connections
 > - Finite-dimensional home: [[Gram–Schmidt procedure|LADR 6.32]].
+> - Used in Electromagnetism: Gram–Schmidt applied to $1, x, x^2, \dots$ in $L^2[-1, 1]$ gives the Legendre polynomials up to normalization — [[§B3.4 Separation of Variables in Spherical Coordinates#^rem-b3-4-1|EM Remark: Legendre polynomials are orthogonalized powers]], with their properties in [[§B3.4 Separation of Variables in Spherical Coordinates#^thm-b3-4-2|EM Theorem §B3.4.2]].
 
 > [!proof]+ Proof of (⇐) in Theorem §20.17
 > Assume $D = \{y_1, y_2, \ldots\}$ is a countable dense subset of $H$. If $H = \{0\}$, the empty set is a countable orthonormal basis; assume $H \neq \{0\}$, so $D$ contains a nonzero element.
@@ -654,10 +656,10 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 *Uses:* [[§20 Orthonormal Sets and Bases#^def-20-5|Def. §20.5]], [[§20 Orthonormal Sets and Bases#^lem-20-18|§20.18]], [[§20 Orthonormal Sets and Bases#^def-20-2|Def. §20.2]], [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]], [[§18 Projection and Orthogonal Decomposition#^lem-18-1|§18.1]]
 
 > [!remark]- Connections
-> - Every orthonormal set in a separable Hilbert space is countable, not just this one: [[§24 Position Eigenstates and Continuous Resolutions#^prop-24-1|§24.1]].
+> - Every orthonormal set in a separable Hilbert space is countable, not just this one: [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-1|§26.1]].
 
 > [!remark] Remark
-> The dense set $D$ is used twice, for different purposes: its span supplies the orthonormal vectors, and its density supplies the approximating sequence in Step 3. Only finite linear combinations appear anywhere — the limit is taken in the inner product, not in the expansion. Compare Proposition [[§24 Position Eigenstates and Continuous Resolutions#^prop-24-1|§24.1]]: in a separable Hilbert space *every* orthonormal set is countable, not just the one constructed here.
+> The dense set $D$ is used twice, for different purposes: its span supplies the orthonormal vectors, and its density supplies the approximating sequence in Step 3. Only finite linear combinations appear anywhere — the limit is taken in the inner product, not in the expansion. Compare Proposition [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-1|§26.1]]: in a separable Hilbert space *every* orthonormal set is countable, not just the one constructed here.
 
 ^rem-20-12
 

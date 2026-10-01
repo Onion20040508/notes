@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ← [[· A12 Electromagnetic Waves]] · ↑ [[Electromagnetism]] · [[· B2 Electrostatics]] →
 
 **Builds on:** [[· B2 Electrostatics|B2 Electrostatics]] (1), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (2)
-**Used by:** [[· B2 Electrostatics|B2 Electrostatics]] (25), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (8), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (6), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (21), [[· B6 Magnetostatics|B6 Magnetostatics]] (25), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (19), [[· B8 Electrodynamics|B8 Electrodynamics]] (9), [[· B9 Conservation Laws|B9 Conservation Laws]] (4), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (3), [[· B11★ Potentials and Radiation|B11 Potentials and Radiation]] (17)
+**Used by:** [[· A2 Gauss's Law|A2 Gauss's Law]] (1), [[· B2 Electrostatics|B2 Electrostatics]] (25), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (8), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (6), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (21), [[· B6 Magnetostatics|B6 Magnetostatics]] (25), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (19), [[· B8 Electrodynamics|B8 Electrodynamics]] (9), [[· B9 Conservation Laws|B9 Conservation Laws]] (4), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (3), [[· B11★ Potentials and Radiation|B11 Potentials and Radiation]] (17)
 
 ## Sections
 - [[§B1.1 Fields, Integral Theorems and Curvilinear Coordinates]] — Griffiths 1.1–1.4, App. A; Nelson ch. 5

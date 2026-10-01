@@ -14,13 +14,13 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 - On $L^2$ every bounded linear functional is $f \mapsto \int f\,\bar{g}$ ([[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^rem-19-2|§19]])
 - The Fourier basis of $L^2[0,2\pi]$ ([[§20 Orthonormal Sets and Bases#^thm-20-11|§20]])
 - Fourier series converge in $L^2$, with Parseval's equality ([[§20 Orthonormal Sets and Bases#^rem-20-9|§20]])
-- Parity on $L^2[-1,1]$: the simplest resolution of the identity ([[§23 The Completeness Relation#^ex-23-1|§23]])
-- A particle on a ring: the Fourier basis as momentum eigenstates ([[§23 The Completeness Relation#^ex-23-2|§23]])
-- $L^2(\mathbb{R}^n)$ is separable, and every orthonormal basis of it is countably infinite ([[§24 Position Eigenstates and Continuous Resolutions#^thm-24-2|§24]])
-- Position has no eigenvectors in $L^2(\mathbb{R})$ ([[§24 Position Eigenstates and Continuous Resolutions#^prop-24-3|§24]])
-- Point evaluation is not bounded in the $L^2$ norm ([[§24 Position Eigenstates and Continuous Resolutions#^prop-24-4|§24]])
-- The spectral projections of position on $L^2(\mathbb{R}^n)$ ([[§24 Position Eigenstates and Continuous Resolutions#^prop-24-5|§24]])
-- The bound states of hydrogen are not complete in $L^2(\mathbb{R}^3)$ ([[§25 Bound States Need Not Be Complete꞉ Hydrogen#^cor-25-2|§25]])
+- Parity on $L^2[-1,1]$: the simplest resolution of the identity ([[§25 The Completeness Relation#^ex-25-1|§23]])
+- A particle on a ring: the Fourier basis as momentum eigenstates ([[§25 The Completeness Relation#^ex-25-2|§23]])
+- $L^2(\mathbb{R}^n)$ is separable, and every orthonormal basis of it is countably infinite ([[§26 Position Eigenstates and Continuous Resolutions#^thm-26-2|§24]])
+- Position has no eigenvectors in $L^2(\mathbb{R})$ ([[§26 Position Eigenstates and Continuous Resolutions#^prop-26-3|§24]])
+- Point evaluation is not bounded in the $L^2$ norm ([[§26 Position Eigenstates and Continuous Resolutions#^prop-26-4|§24]])
+- The spectral projections of position on $L^2(\mathbb{R}^n)$ ([[§26 Position Eigenstates and Continuous Resolutions#^prop-26-5|§24]])
+- The bound states of hydrogen are not complete in $L^2(\mathbb{R}^3)$ ([[§27 Bound States Need Not Be Complete꞉ Hydrogen#^cor-27-2|§25]])
 
 ## The $L^2$ inner product, convergent by Hölder's inequality
 ![[§16 Definition and Examples#^ex-16-3]]
@@ -47,22 +47,22 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 ![[§20 Orthonormal Sets and Bases#^rem-20-9]]
 
 ## Parity on $L^2[-1,1]$: the simplest resolution of the identity
-![[§23 The Completeness Relation#^ex-23-1]]
+![[§25 The Completeness Relation#^ex-25-1]]
 
 ## A particle on a ring: the Fourier basis as momentum eigenstates
-![[§23 The Completeness Relation#^ex-23-2]]
+![[§25 The Completeness Relation#^ex-25-2]]
 
 ## $L^2(\mathbb{R}^n)$ is separable, and every orthonormal basis of it is countably infinite
-![[§24 Position Eigenstates and Continuous Resolutions#^thm-24-2]]
+![[§26 Position Eigenstates and Continuous Resolutions#^thm-26-2]]
 
 ## Position has no eigenvectors in $L^2(\mathbb{R})$
-![[§24 Position Eigenstates and Continuous Resolutions#^prop-24-3]]
+![[§26 Position Eigenstates and Continuous Resolutions#^prop-26-3]]
 
 ## Point evaluation is not bounded in the $L^2$ norm
-![[§24 Position Eigenstates and Continuous Resolutions#^prop-24-4]]
+![[§26 Position Eigenstates and Continuous Resolutions#^prop-26-4]]
 
 ## The spectral projections of position on $L^2(\mathbb{R}^n)$
-![[§24 Position Eigenstates and Continuous Resolutions#^prop-24-5]]
+![[§26 Position Eigenstates and Continuous Resolutions#^prop-26-5]]
 
 ## The bound states of hydrogen are not complete in $L^2(\mathbb{R}^3)$
-![[§25 Bound States Need Not Be Complete꞉ Hydrogen#^cor-25-2]]
+![[§27 Bound States Need Not Be Complete꞉ Hydrogen#^cor-27-2]]

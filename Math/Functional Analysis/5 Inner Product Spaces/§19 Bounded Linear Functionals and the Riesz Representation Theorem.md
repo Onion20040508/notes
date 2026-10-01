@@ -25,7 +25,7 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique 
 ^def-19-1
 
 > [!remark]- Connections
-> - The general notion for maps between normed spaces: [[§21 Boundedness and Continuity#^def-21-2|Def. §21.2]]; the dual space of bounded functionals: [[§22 Bras, Kets, and the Riesz Map#^def-22-1|Def. §22.1]].
+> - The general notion for maps between normed spaces: [[§21 Boundedness and Continuity#^def-21-2|Def. §21.2]]; the dual space of bounded functionals: [[§24 Bras, Kets, and the Riesz Map#^def-24-1|Def. §24.1]].
 
 > [!remark] Remark: Why Boundedness
 > On $\mathbb{R}^n$ every linear functional is bounded: $|a \cdot x| \le \|a\|\,\|x\|$ by [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|Cauchy–Schwarz]], so $c = \|a\|$ works. More generally every linear functional on a finite-dimensional normed space is bounded (with a basis $e_1, \ldots, e_n$ and $x = \sum_i a_i e_i$, $|\ell(x)| \le \sum_i |a_i|\,|\ell(e_i)| \le \bigl(\max_i |\ell(e_i)|\bigr)\|x\|_1$, and $\|\cdot\|_1$ is equivalent to the given norm by Theorem [[§10 New Normed Spaces from Old#^thm-10-3|§10.3]]). In infinite dimensions this fails — the [[§8 Normed Linear Spaces#^rem-8-3|remark]] after Proposition [[§8 Normed Linear Spaces#^prop-8-4|§8.4]] and the [[§17 Cauchy–Schwarz and the Induced Norm#^rem-17-3|remark]] after Theorem [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-4|§17.4]] both mention functionals built from a Hamel basis that are unbounded on every ball — so boundedness is a genuine hypothesis, and it is the one that makes the finite-dimensional picture survive. “Bounded” does not mean bounded as a function: a nonzero linear functional is never bounded on all of $X$, since $\ell(nx) = n\ell(x)$; it means bounded on the unit ball.
@@ -67,7 +67,7 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique 
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[Riesz representation theorem|LADR 6.42]], revisited through orthogonal projection in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]].
-> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§22 Bras, Kets, and the Riesz Map#^thm-22-2|§22.2]].
+> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§24 Bras, Kets, and the Riesz Map#^thm-24-2|§24.2]].
 
 > [!remark] Remark: Reading the Statement
 > Part (1) is the easy direction and holds in any inner product space. Part (2) is the content: on a Hilbert space there are *no other* bounded linear functionals than the ones given by inner products, exactly as on $\mathbb{R}^n$. Wu's example: on $L^2$, every bounded linear functional is $f \mapsto \int f\,\bar{g}$ for a unique $g \in L^2$. The vector is on the *second* slot because the functional must be linear in $x$, and the inner product is linear in its first argument; with the physicists' convention it would be $(a, x)$.

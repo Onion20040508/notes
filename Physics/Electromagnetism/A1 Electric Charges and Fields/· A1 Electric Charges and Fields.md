@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ↑ [[Electromagnetism]] · [[· A2 Gauss's Law]] →
 
 **Builds on:** [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A4 Capacitance|A4 Capacitance]] (1), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (1)
-**Used by:** [[· A2 Gauss's Law|A2 Gauss's Law]] (11), [[· A3 Electric Potential|A3 Electric Potential]] (10), [[· A4 Capacitance|A4 Capacitance]] (4), [[· A5 Current and Resistance|A5 Current and Resistance]] (2), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (2), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (1), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (5), [[· B2 Electrostatics|B2 Electrostatics]] (12), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (5), [[· B6 Magnetostatics|B6 Magnetostatics]] (2), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (2)
+**Used by:** [[· A2 Gauss's Law|A2 Gauss's Law]] (11), [[· A3 Electric Potential|A3 Electric Potential]] (10), [[· A4 Capacitance|A4 Capacitance]] (4), [[· A5 Current and Resistance|A5 Current and Resistance]] (2), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (2), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (1), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (5), [[· B2 Electrostatics|B2 Electrostatics]] (14), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (5), [[· B6 Magnetostatics|B6 Magnetostatics]] (2), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (2)
 
 ## Sections
 - [[§A1.1 Electric Charge]] — UP Vol. 2 §5.1–5.2

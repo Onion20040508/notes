@@ -123,7 +123,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: (a) is the completeness relation $\sum_k|e_k\rangle\langle e_k|=I$; (c) in Dirac order reads $\langle u|v\rangle=\sum_k\langle u|e_k\rangle\langle e_k|v\rangle$ (conjugate on the other factor, per the convention remark in [[§19 Inner Products and Norms#^ladr-6-2|6.2]]).
-> - Hilbert-space version: [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]], where the expansion and Parseval characterize orthonormal bases; (a) as an operator identity is the completeness relation, [[§23 The Completeness Relation#^thm-23-2|556 Thm. §23.2]].
+> - Hilbert-space version: [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]], where the expansion and Parseval characterize orthonormal bases; (a) as an operator identity is the completeness relation, [[§25 The Completeness Relation#^thm-25-2|556 Thm. §25.2]].
 
 > [!example] Example 6.31: Finding coefficients for a linear combination (p. 200)
 > Write $(1,2,4,7)$ in the basis of [[§20 Orthonormal Bases#^ladr-6-29|6.29]]. By [[§20 Orthonormal Bases#^ladr-6-30|6.30]](a) the coefficients are just inner products:

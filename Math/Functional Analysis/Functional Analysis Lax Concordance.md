@@ -162,4 +162,4 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §15.1, (3) and ($3'$) | Proposition [[§21 Boundedness and Continuity#^prop-21-1\|§21.1]] | The Operator Norm |
 | §15.1, definition of $\mathcal{L}(X, U)$ | Definition [[§21 Boundedness and Continuity#^def-21-3\|§21.3]] | The Space $\mathcal{L}(X, Y)$ |
 | §15.1, Thm 1 | Proposition [[§21 Boundedness and Continuity#^prop-21-2\|§21.2]] | Continuous if and only if Bounded |
-| §15.1, Thms 2–3 | Theorem [[§21 Boundedness and Continuity#^thm-21-3\|§21.3]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |
+| §15.1, Thms 2–3 | Theorem [[§21 Boundedness and Continuity#^thm-21-5\|§21.5]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |

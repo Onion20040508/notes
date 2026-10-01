@@ -1,0 +1,46 @@
+% Figure for Calculus §10.
+\begin{tikzpicture}[x=0.62cm, y=0.62cm, font=\scriptsize]
+  % ---------- (a) removable: f(x) = (x^2-x-2)/(x-2) for x != 2, f(2) = 1 ----------
+  \begin{scope}
+    \draw[-stealth, thin, black!70] (-1.6,0) -- (3.6,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-1.4) -- (0,4.6) node[above] {$y$};
+    \foreach \t in {1,2} \draw[thin, black!70] (\t,0.08) -- (\t,-0.08) node[below] {$\t$};
+    \draw[thin, black!70] (0.08,1) -- (-0.08,1) node[left] {$1$};
+    \draw[thin, black!70] (0.08,3) -- (-0.08,3) node[left] {$3$};
+    \draw[figB, thick] (-1.4,-0.4) -- (3.3,4.3);
+    \draw[black!35, dashed] (2,0) -- (2,3);
+    \draw[figB, thick, fill=white] (2,3) circle (2.6pt);
+    \fill[figR] (2,1) circle (2.6pt);
+    \node[figR, right] at (2.1,1) {$f(2)=1$};
+    \node[figB, right] at (2.15,2.85) {$\lim\limits_{x\to2}f(x)=3$};
+    \node[font=\small] at (1,-2.3) {(a) removable};
+  \end{scope}
+  % ---------- (b) infinite: f(x) = 1/x^2 for x != 0, f(0) = 1 ----------
+  \begin{scope}[xshift=6.4cm]
+    \draw[-stealth, thin, black!70] (-2.6,0) -- (2.8,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-1.4) -- (0,4.6) node[above] {$y$};
+    \draw[thin, black!70] (0.08,1) -- (-0.08,1) node[left] {$1$};
+    \draw[figB, thick] plot[domain=0.48:2.5, samples=60] (\x,{1/(\x*\x)});
+    \draw[figB, thick] plot[domain=-2.5:-0.48, samples=60] (\x,{1/(\x*\x)});
+    \fill[figR] (0,1) circle (2.6pt);
+    \node[figR, right] at (0.12,0.62) {$f(0)=1$};
+    \node[figB] at (1.75,3.6) {$f(x)\to\infty$};
+    \node[font=\small] at (0,-2.3) {(b) infinite};
+  \end{scope}
+  % ---------- (c) jump: f(x) = [[x]] ----------
+  \begin{scope}[xshift=11.4cm]
+    \draw[-stealth, thin, black!70] (-1.6,0) -- (3.9,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-1.4) -- (0,4.6) node[above] {$y$};
+    \foreach \t in {1,2,3} \draw[thin, black!70] (\t,0.08) -- (\t,-0.08) node[below] {$\t$};
+    \draw[thin, black!70] (0.08,1) -- (-0.08,1) node[left] {$1$};
+    \foreach \n in {-1,0,1,2} {
+      \draw[figB, thick] (\n,\n) -- (\n+1,\n);
+      \fill[figB] (\n,\n) circle (2.4pt);
+      \draw[figB, thick, fill=white] (\n+1,\n) circle (2.4pt);
+    }
+    \draw[figB, thick] (3,3) -- (3.6,3); \fill[figB] (3,3) circle (2.4pt);
+    \draw[figR, thick, -stealth] (2,1.17) -- (2,1.8);
+    \node[figR, right] at (2.02,1.5) {jump};
+    \node[font=\small] at (1.2,-2.3) {(c) jump};
+  \end{scope}
+\end{tikzpicture}

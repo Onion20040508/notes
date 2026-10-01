@@ -39,7 +39,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - In particular every self-adjoint operator (on $V\ne\{0\}$) has an eigenvalue, even over $\R$.
-> - No analogue in infinite dimensions, where a self-adjoint operator need not have any eigenvalue: multiplication by x on L²(ℝ) has no eigenvectors at all, [[§24 Position Eigenstates and Continuous Resolutions#^prop-24-3|556 Prop. §24.3]].
+> - No analogue in infinite dimensions, where a self-adjoint operator need not have any eigenvalue: multiplication by x on L²(ℝ) has no eigenvectors at all, [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-3|556 Prop. §26.3]].
 
 > [!theorem] Theorem 7.29: Real spectral theorem
 > Let $\F=\R$ and $T\in\Lin(V)$. Equivalent:

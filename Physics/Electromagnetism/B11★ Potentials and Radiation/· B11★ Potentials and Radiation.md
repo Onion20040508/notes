@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ← [[· B10 Electromagnetic Waves]] · ↑ [[Electromagnetism]]
 
 **Builds on:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (17), [[· B2 Electrostatics|B2 Electrostatics]] (7), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (3), [[· B6 Magnetostatics|B6 Magnetostatics]] (9), [[· B8 Electrodynamics|B8 Electrodynamics]] (2), [[· B9 Conservation Laws|B9 Conservation Laws]] (2)
-**Used by:** [[· B6 Magnetostatics|B6 Magnetostatics]] (1), [[· B8 Electrodynamics|B8 Electrodynamics]] (2)
+**Used by:** [[· B2 Electrostatics|B2 Electrostatics]] (1), [[· B6 Magnetostatics|B6 Magnetostatics]] (1), [[· B8 Electrodynamics|B8 Electrodynamics]] (2)
 
 ## Sections
 - [[§B11.1★ Potentials, Gauges and Retarded Potentials]] — Griffiths 10.1–10.2; Nelson ch. 25, 38

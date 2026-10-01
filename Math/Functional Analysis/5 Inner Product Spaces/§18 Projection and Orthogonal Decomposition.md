@@ -362,7 +362,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 *Uses:* [[§16 Definition and Examples#^ex-16-3|Ex. §16.3]], [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|§17.1]], [[§18 Projection and Orthogonal Decomposition#^def-18-1|Def. §18.1]], [[§18 Projection and Orthogonal Decomposition#^prop-18-3|§18.3]], [[§18 Projection and Orthogonal Decomposition#^thm-18-4|§18.4]]
 
 > [!remark]- Connections
-> - The parity operator in the quantum mechanics chapter: [[§23 The Completeness Relation#^ex-23-1|Ex. §23.1]]; the method: [[Functional Analysis Problem-Solving Techniques#^ex-t14|Technique 14]].
+> - The parity operator in the quantum mechanics chapter: [[§25 The Completeness Relation#^ex-25-1|Ex. §25.1]]; the method: [[Functional Analysis Problem-Solving Techniques#^ex-t14|Technique 14]].
 
 ![[m556-18-3.svg]]
 *$e^x$ on $[-1,1]$ (black) with its even part $\cosh x$ (red) and odd part $\sinh x$ (blue); at every $x$ the red and blue values add up to the black one.*
