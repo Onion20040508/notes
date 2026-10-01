@@ -20,6 +20,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Physics: $\langle e_j|e_k\rangle=\delta_{jk}$.
 > - Same definition for possibly infinite sets: [[§20 Orthonormal Sets and Bases#^def-20-1|556 Def. §20.1]].
+> - Computational version: [[§41 Orthogonal Sets#^def-41-4|235 Def. §41.4]] (orthonormal sets in $\mathbb R^n$).
 
 > [!example] Example 6.23: Orthonormal lists (p. 197)
 > - (a) The standard basis of $\F^n$.
@@ -32,6 +33,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - In L² the Fourier list of (d), continued indefinitely, is an orthonormal basis: [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]] (stated there with complex exponentials on [0, 2π]).
+> - Computational version: [[§47 Applications of Inner Product Spaces#^prop-47-2|235 Prop. §47.2]] (orthogonality of the trigonometric system, as in (d), with $\langle1,1\rangle=2\pi$ and $\langle\cos kt,\cos kt\rangle=\pi$).
 
 > [!theorem] Theorem 6.24: Norm of an orthonormal linear combination
 > If $e_1,\dots,e_m$ is orthonormal, then for all $a_1,\dots,a_m\in\F$,
@@ -61,6 +63,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Hence [[§20 Orthonormal Bases#^ladr-6-28|6.28]].
+> - Computational version: [[§41 Orthogonal Sets#^thm-41-1|235 Thm. §41.1]] (an orthogonal set of nonzero vectors in $\mathbb R^n$ is linearly independent).
 
 > [!theorem] Theorem 6.26: Bessel’s inequality
 > If $e_1,\dots,e_m$ is orthonormal and $v\in V$, then
@@ -89,6 +92,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - In a Hilbert space an orthonormal basis is defined by the series expansion of every vector ([[§20 Orthonormal Sets and Bases#^def-20-4|556 Def. §20.4]]); in infinite dimensions it is never a basis in the sense of this definition, since some vectors need infinitely many terms.
+> - Computational version: [[§41 Orthogonal Sets#^def-41-4|235 Def. §41.4]] (orthonormal basis of a subspace of $\mathbb R^n$).
 
 > [!theorem] Theorem 6.28: Orthonormal lists of the right length are orthonormal bases
 > If $V$ is finite-dimensional, every orthonormal list of length $\dim V$ is an orthonormal basis.
@@ -124,6 +128,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Physics: (a) is the completeness relation $\sum_k|e_k\rangle\langle e_k|=I$; (c) in Dirac order reads $\langle u|v\rangle=\sum_k\langle u|e_k\rangle\langle e_k|v\rangle$ (conjugate on the other factor, per the convention remark in [[§19 Inner Products and Norms#^ladr-6-2|6.2]]).
 > - Hilbert-space version: [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]], where the expansion and Parseval characterize orthonormal bases; (a) as an operator identity is the completeness relation, [[§25 The Completeness Relation#^thm-25-2|556 Thm. §25.2]].
+> - Computational version: [[§41 Orthogonal Sets#^thm-41-2|235 Thm. §41.2]] (the weights $c_j=\mathbf y\cdot\mathbf u_j/\mathbf u_j\cdot\mathbf u_j$ in an orthogonal basis, as in (a)).
 
 > [!example] Example 6.31: Finding coefficients for a linear combination (p. 200)
 > Write $(1,2,4,7)$ in the basis of [[§20 Orthonormal Bases#^ladr-6-29|6.29]]. By [[§20 Orthonormal Bases#^ladr-6-30|6.30]](a) the coefficients are just inner products:
@@ -159,6 +164,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-25|6.25]], [[§6 Dimension#^ladr-2-39|2.39]]
 
+> [!remark]- Connections
+> - Computational version: [[§43 The Gram–Schmidt Process#^thm-43-1|235 Thm. §43.1]] (Gram–Schmidt in $\mathbb R^n$, worked in [[§43 The Gram–Schmidt Process#^ex-43-2|235 Ex. §43.2]]); in an inner product space, [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]].
+
 %% ex:6.32-fig %%
 > [!example] Example: One Gram–Schmidt step, pictured
 > $f_2=v_2-\langle v_2,e_1\rangle e_1$: remove from $v_2$ its shadow on $e_1$; what remains is perpendicular to $e_1$, and normalizing gives $e_2$.
@@ -179,6 +187,9 @@ tags: [linear-algebra]
 
 ^ladr-6-34
 
+> [!remark]- Connections
+> - Computational version: [[§46 Inner Product Spaces#^ex-46-5|235 Ex. §46.5]] (Gram–Schmidt on $1,2t-1,12t^2$ in $C[0,1]$: the Legendre polynomials moved to $[0,1]$).
+
 > [!theorem] Theorem 6.35: Existence of orthonormal basis
 > Every finite-dimensional inner product space has an orthonormal basis.
 
@@ -191,6 +202,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Every Hilbert space has an orthonormal basis ([[§20 Orthonormal Sets and Bases#^thm-20-12|556 Thm. §20.12]], by Zorn's lemma), and a countable one exactly when it is separable ([[§20 Orthonormal Sets and Bases#^thm-20-17|556 Thm. §20.17]]).
+> - Computational version: [[§43 The Gram–Schmidt Process#^cor-43-2|235 Cor. §43.2]] (every nonzero subspace of $\mathbb R^n$ has an orthonormal basis).
 
 > [!theorem] Theorem 6.36: Every orthonormal list extends to an orthonormal basis
 > If $V$ is finite-dimensional, every orthonormal list in $V$ extends to an orthonormal basis of $V$.

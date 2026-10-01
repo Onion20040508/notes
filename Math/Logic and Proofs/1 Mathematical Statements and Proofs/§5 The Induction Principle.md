@@ -342,6 +342,9 @@ Conversely, the induction principle can be deduced from well-ordering (Eccles, P
 
 *Uses:* [[§5 The Induction Principle#^thm-5-6|§5.6]], [[§5 The Induction Principle#^def-5-5|Def. §5.5]], [[§5 The Induction Principle#^ex-5-5|Ex. §5.5]]
 
+> [!remark]- Connections
+> - Computational version: the same formula derived, not just verified, from the linear difference equation, [[§30 Applications to Difference Equations#^ex-30-4|235 Ex. §30.4]] (the same numbers, indexed from F₀ = 0), and by eigenvectors of a 2 × 2 matrix, [[§32 Eigenvectors and Eigenvalues#^ex-32-4|235 Ex. §32.4]].
+
 It is remarkable that a formula for these integers involves $\sqrt5$, which is not even rational (the proof for $\sqrt2$ in [[§13 Number Systems#^thm-13-4|Theorem §13.4]] adapts to it, and [[§23 The Sequence of Prime Numbers#^ex-23-6|Ex. §23.6]] covers $\sqrt p$ for every prime $p$). The ratio $u_{n+1}/u_n$ tends to $\alpha$, the **golden ratio** (since $|\beta| < 1$).
 
 ## Exercises from the Homework

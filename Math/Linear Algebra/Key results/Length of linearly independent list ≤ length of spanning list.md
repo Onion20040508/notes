@@ -26,3 +26,4 @@ tags: [linear-algebra, hub]
 ## Connections
 - Gives well-defined dimension: [[§6 Dimension#^ladr-2-34|Basis length does not depend on basis]]. Also [[§4 Span and Linear Independence#^ladr-2-25|Finite-dimensional subspaces]] and [[§6 Dimension#^ladr-2-37|Dimension of a subspace]].
 - Consequence in Chapter 3: [[§8 Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]] and [[§8 Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]] (via [[Fundamental theorem of linear maps]]).
+- **Also in [[Applied Linear Algebra]]:** [[§7 Linear Independence#^thm-7-6|235 Thm. §7.6]] (the ℝⁿ case: more vectors than entries means dependent) and [[§27 The Dimension of a Vector Space#^thm-27-1|235 Thm. §27.1]] (the case where the spanning list is a basis).

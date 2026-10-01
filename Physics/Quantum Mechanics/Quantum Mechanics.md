@@ -1,15 +1,15 @@
 ---
 type: subject
 discipline: physics
-courses: ["PHY 284 (UMass, S. Hertel, Spring 2024)", "PHY 308 (Stony Brook, J. Pérez Ríos, Spring 2025)", "PHY 511 (UMich, A. Pierce, Fall 2025)"]
-textbooks: ["OpenStax, University Physics Vol. 3", "Tipler & Llewellyn, Modern Physics", "Griffiths & Schroeter, Introduction to Quantum Mechanics (3rd ed.)", "Zwiebach, MIT 8.04 lecture notes", "Fleisch, A Student's Guide to the Schrödinger Equation", "Greensite, Physics 430 lecture notes", "Sakurai, Modern Quantum Mechanics"]
+courses: ["PHY 284 (UMass, S. Hertel, Spring 2024)", "PHY 308 (Stony Brook, J. Pérez Ríos, Spring 2025)", "PHY 511 (UMich, A. Pierce, Fall 2025)", "PHY 512 (UMich, Winter 2026)"]
+textbooks: ["OpenStax, University Physics Vol. 3", "Tipler & Llewellyn, Modern Physics", "Griffiths & Schroeter, Introduction to Quantum Mechanics (3rd ed.)", "Zwiebach, MIT 8.04 lecture notes", "Fleisch, A Student's Guide to the Schrödinger Equation", "Greensite, Physics 430 lecture notes", "Sakurai & Napolitano, Modern Quantum Mechanics (3rd ed.)", "Likharev, Essential Graduate Physics — Quantum Mechanics"]
 conventions: "[[University Physics]]"
-status: levels A and B done
+status: levels A, B and C done
 tags: [subject, quantum-mechanics]
 ---
 # Quantum Mechanics
 
-The quantum behaviour of light and matter and its applications to atoms, molecules, solids, nuclei and particles, in three levels: **A** introductory (University Physics Vol. 3 ch. 6–11; Tipler & Llewellyn; PHY 284), **B** upper-level (PHY 308; Griffiths & Schroeter; Zwiebach's MIT 8.04 notes, Fleisch and Greensite as supplements; the user's own Potential solutions, WKB and Classical notes), **C** graduate (PHY 511). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). Special relativity is in [[Relativity]]; the Hilbert-space mathematics is in [[Functional Analysis]]. At level B, ★ marks material beyond the course (PHY 308: its syllabus, homework and the user's notes): whole sections are starred in the lists below, and folded ★ callouts inside a section are side topics.
+The quantum behaviour of light and matter and its applications to atoms, molecules, solids, nuclei and particles, in three levels: **A** introductory (University Physics Vol. 3 ch. 6–11; Tipler & Llewellyn; PHY 284), **B** upper-level (PHY 308; Griffiths & Schroeter; Zwiebach's MIT 8.04 notes, Fleisch and Greensite as supplements; the user's own Potential solutions, WKB and Classical notes), **C** graduate (PHY 511–512; Sakurai & Napolitano; the user's 511 final review and lecture-notes series Part IV; Griffiths & Schroeter and Likharev as supplements; hydrogen and radiation in Gaussian units). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). Special relativity is in [[Relativity]]; the Hilbert-space mathematics is in [[Functional Analysis]]. At levels B and C, ★ marks material beyond the course (PHY 308, resp. PHY 511–512: their syllabi, homework and the user's notes): whole chapters and sections are starred in the lists below, and folded ★ callouts inside a section are side topics. Level B is wave-function-centred, level C ket-and-operator-centred: where both treat a result, C links the B home and says what changes.
 
 ## Level A — introductory
 - [[· A1 The Particle Nature of Light]]
@@ -40,6 +40,12 @@ The quantum behaviour of light and matter and its applications to atoms, molecul
 - [[· C5 Rotations and Angular Momentum]]
 - [[· C6 Central Potentials]]
 - [[· C7 Addition of Angular Momentum and Tensor Operators]]
+- [[· C8★ Symmetries in Quantum Mechanics]]
+- [[· C9 Approximation Methods]]
+- [[· C10 Scattering Theory]]
+- [[· C11 Density Matrices and Entanglement]] (★ §C11.4, §C11.5)
+- [[· C12★ Identical Particles and Second Quantization]]
+- [[· C13★ Relativistic Quantum Mechanics]]
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -70,6 +76,12 @@ graph TD
   C5["C5 Rotations and Angular Momentum"]
   C6["C6 Central Potentials"]
   C7["C7 Addition of Angular Momentum and Tensor Operators"]
+  C8["C8★ Symmetries in Quantum Mechanics"]
+  C9["C9 Approximation Methods"]
+  C10["C10 Scattering Theory"]
+  C11["C11 Density Matrices and Entanglement"]
+  C12["C12★ Identical Particles and Second Quantization"]
+  C13["C13★ Relativistic Quantum Mechanics"]
   A1 -->|3| A2
   A1 -->|1| A3
   A2 -->|1| A3
@@ -129,40 +141,95 @@ graph TD
   B7 -->|3| B9
   B8 -->|5| B9
   A5 -->|1| C1
-  B2 -->|22| C1
+  B2 -->|24| C1
   B5 -->|2| C1
   B6 -->|4| C1
   B7 -->|1| C1
-  B2 -->|19| C2
+  B1 -->|1| C10
+  B5 -->|1| C10
+  B9 -->|2| C10
+  C2 -->|4| C10
+  C3 -->|3| C10
+  C4 -->|6| C10
+  C5 -->|4| C10
+  C6 -->|12| C10
+  C7 -->|3| C10
+  C9 -->|5| C10
+  B2 -->|2| C11
+  B6 -->|5| C11
+  C1 -->|15| C11
+  C2 -->|2| C11
+  C3 -->|9| C11
+  C4 -->|4| C11
+  C9 -->|1| C11
+  B6 -->|2| C12
+  B7 -->|3| C12
+  B8 -->|4| C12
+  C1 -->|4| C12
+  C2 -->|2| C12
+  C3 -->|5| C12
+  B1 -->|1| C13
+  B6 -->|7| C13
+  B8 -->|3| C13
+  C12 -->|3| C13
+  C2 -->|1| C13
+  C4 -->|6| C13
+  C5 -->|6| C13
+  C6 -->|2| C13
+  C7 -->|2| C13
+  C8 -->|1| C13
+  B2 -->|18| C2
   C1 -->|2| C2
   B1 -->|1| C3
   B2 -->|14| C3
   B3 -->|6| C3
   B4 -->|9| C3
   B5 -->|1| C3
-  B6 -->|5| C3
+  B6 -->|6| C3
   B9 -->|2| C3
   C1 -->|7| C3
-  C2 -->|11| C3
+  C2 -->|13| C3
   B1 -->|1| C4
   B4 -->|4| C4
   B6 -->|1| C4
   C2 -->|10| C4
   C3 -->|10| C4
-  B2 -->|3| C5
+  B2 -->|2| C5
   B5 -->|8| C5
   B6 -->|4| C5
-  C2 -->|2| C5
-  C3 -->|1| C5
-  B5 -->|22| C6
+  C2 -->|5| C5
+  C3 -->|2| C5
+  B5 -->|23| C6
   B8 -->|1| C6
   C1 -->|1| C6
   C2 -->|1| C6
-  C5 -->|9| C6
+  C5 -->|10| C6
   B5 -->|2| C7
-  B6 -->|8| C7
+  B6 -->|9| C7
   C1 -->|1| C7
-  C5 -->|22| C7
+  C5 -->|23| C7
+  B2 -->|4| C8
+  B3 -->|2| C8
+  B5 -->|8| C8
+  B7 -->|1| C8
+  C2 -->|10| C8
+  C3 -->|8| C8
+  C5 -->|12| C8
+  C6 -->|6| C8
+  C7 -->|8| C8
+  A5 -->|2| C9
+  B2 -->|2| C9
+  B6 -->|3| C9
+  B8 -->|9| C9
+  B9 -->|5| C9
+  C1 -->|14| C9
+  C2 -->|2| C9
+  C3 -->|18| C9
+  C4 -->|3| C9
+  C5 -->|4| C9
+  C6 -->|3| C9
+  C7 -->|14| C9
+  C8 -->|1| C9
   A3 -.->|1| A1
   A4 -.->|1| A1
   A4 -.->|1| A2
@@ -189,15 +256,13 @@ graph TD
   B9 -.->|2| B5
   C2 -.->|1| C1
   C5 -.->|2| C1
-  C3 -.->|7| C2
+  C3 -.->|5| C2
   C4 -.->|1| C2
   C5 -.->|1| C3
+  C9 -.->|2| C3
   C6 -.->|1| C5
   C7 -.->|1| C6
 ```
 
 ## Planned
-Chapters without notes yet; sources in brackets (∅ = no typed source).
-
-**Level C — graduate (PHY 511; Sakurai; the user's 511 final review; series Part IV)**
-C1 Fundamental concepts: Stern–Gerlach, kets, measurement, change of basis · C2 Position, momentum, translations · C3 Dynamics: pictures, two-state systems, oscillator · C4 Propagators, path integrals, Aharonov–Bohm · C5 Rotations, SU(2)/SO(3), angular-momentum spectrum · C6 Central potentials and hydrogen · C7 Addition of angular momentum, tensor operators, Wigner–Eckart · C8 Symmetries and approximation methods: symmetry operators, parity, selection rules, time-dependent perturbation theory, Fermi's golden rule, adiabatic approximation [Griffiths ch. 6, 11; PHY 512: ∅] · C9 Scattering [Griffiths ch. 10] · C10 Density matrices and entanglement [Griffiths ch. 12] · C11 Relativistic QM [∅; bridge to QFT]
+No chapters planned. Not covered at level C: the general (Racah) formula for Clebsch–Gordan coefficients, Young tableaux and a proof of spin–statistics; quantized fields continue in [[Quantum Field Theory I]].

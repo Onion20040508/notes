@@ -15,6 +15,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Characterization by unique coordinates: [[§5 Bases#^ladr-2-28|Criterion for basis]]. Existence: [[§5 Bases#^ladr-2-31|Basis of finite-dimensional vector space]]. All bases have the same length: [[§6 Dimension#^ladr-2-34|Basis length does not depend on basis]].
+> - Computational version: [[§25 Linearly Independent Sets; Bases#^def-25-2|235 Def. §25.2]]; for subspaces of ℝⁿ, [[§18 Subspaces of ℝⁿ#^def-18-4|235 Def. §18.4]].
 
 > [!example] Example 2.27: Bases (p. 39)
 > - (a) $e_1,\dots,e_n$ is a basis of $\F^n$: the **standard basis**.
@@ -28,6 +29,9 @@ tags: [linear-algebra]
 > Bases are far from unique: $(7,5),(-4,9)$ is another basis of $\F^2$.
 
 ^ladr-2-27
+
+> [!remark]- Connections
+> - Computational version: [[§25 Linearly Independent Sets; Bases#^ex-25-2|235 Ex. §25.2]] (columns of an invertible matrix, and the standard bases of ℝⁿ, ℙₙ and the 2 × 2 matrices).
 
 > [!theorem] Theorem 2.28: Criterion for basis
 > A list $v_1,\dots,v_n$ in $V$ is a basis of $V$ iff every $v\in V$ can be written uniquely as
@@ -44,6 +48,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The unique $a_k$ are coordinates: [[§10 Invertibility and Isomorphisms#^ladr-3-73|Matrix of a vector, M(v)]]. Uniqueness is also what makes [[Linear map lemma]] work.
+> - Computational version (the ⇒ direction): [[§26 Coordinate Systems#^thm-26-1|235 Thm. §26.1]] (the Unique Representation Theorem); for subspaces of ℝⁿ, [[§19 Dimension and Rank#^prop-19-1|235 Prop. §19.1]].
 
 > [!theorem] Theorem 2.30: Every spanning list contains a basis
 > Every spanning list in a vector space can be reduced to a basis of the vector space.
@@ -56,6 +61,9 @@ tags: [linear-algebra]
 > Only vectors already in the span of earlier ones are discarded, so $B$ still spans $V$. No vector of $B$ lies in the span of the earlier ones in $B$, so $B$ is linearly independent by [[Linear dependence lemma]]. Hence $B$ is a basis.
 
 *Uses:* [[Linear dependence lemma|2.19]]
+
+> [!remark]- Connections
+> - Computational version: [[§25 Linearly Independent Sets; Bases#^thm-25-2|235 Thm. §25.2]] (the Spanning Set Theorem); for the columns of a matrix, the pivot columns are the basis kept, [[§25 Linearly Independent Sets; Bases#^thm-25-3|235 Thm. §25.3]].
 
 > [!theorem] Theorem 2.31: Basis of finite-dimensional vector space
 > Every finite-dimensional vector space has a basis.
@@ -79,6 +87,9 @@ tags: [linear-algebra]
 > Let $u_1,\dots,u_m$ be linearly independent in $V$ and let $w_1,\dots,w_n$ span $V$. Then $u_1,\dots,u_m,w_1,\dots,w_n$ spans $V$. Run the reduction procedure of [[Every spanning list contains a basis]] on this list. No $u_k$ is deleted, because $u_k\notin\Span(u_1,\dots,u_{k-1})$ by independence. The result is a basis consisting of $u_1,\dots,u_m$ and some $w$'s.
 
 *Uses:* [[Every spanning list contains a basis|2.30]]
+
+> [!remark]- Connections
+> - Computational version: [[§27 The Dimension of a Vector Space#^thm-27-3|235 Thm. §27.3]] (a linearly independent set in H can be expanded to a basis of H); worked case in [[§25 Linearly Independent Sets; Bases#^ex-25-5|235 Ex. §25.5]](a).
 
 > [!theorem] Theorem 2.33: Every subspace of V is part of a direct sum equal to V
 > Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then there is a subspace $W$ of $V$ with $V=U\oplus W$.

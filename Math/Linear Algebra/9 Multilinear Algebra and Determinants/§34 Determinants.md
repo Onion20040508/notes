@@ -41,6 +41,9 @@ tags: [linear-algebra]
 
 ^ladr-9-43
 
+> [!remark]- Connections
+> - Computational version: [[§20 Introduction to Determinants#^def-20-2|235 Def. §20.2]] (the determinant defined by cofactor expansion, with worked examples).
+
 > [!example] Example 9.44: Determinants of matrices (p. 355)
 > - $\det I=1$ for the identity matrix.
 > - A diagonal matrix with entries $\lambda_1,\dots,\lambda_n$ has $\det=\lambda_1\cdots\lambda_n$ (last bullet of [[§34 Determinants#^ladr-9-42|9.42]]).
@@ -63,6 +66,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Consequences for row/column operations: [[§34 Determinants#^ladr-9-57|9.57]].
+> - Computational version: [[§21 Properties of Determinants#^thm-21-11|235 Thm. §21.11]] (linear in each column) and [[§21 Properties of Determinants#^thm-21-1|235 Thm. §21.1]] (an interchange changes the sign).
 
 > [!theorem] Theorem 9.46: Formula for determinant of a matrix
 > For an $n$-by-$n$ matrix $A$,
@@ -85,6 +89,7 @@ tags: [linear-algebra]
 > - Since this formula is a polynomial in the entries, det is continuous ([[§5 Topological Groups and Classical Matrix Groups#^prop-5-3|591 Prop. §5.3]]) and smooth, with derivative given by Jacobi's formula ([[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|591 Prop. §5.9]]).
 > - Used in Relativity: by the Leibniz formula the Levi-Civita symbol is an invariant pseudotensor — [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]]; it gives the second field invariant $\vec E\cdot\vec B$ — [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-3|REL Theorem §B4.2.3]].
 > - Determinants of order 2 and 3, computed by cofactor expansion: [[§83 The Cross Product#^def-83-2|Calc Def. §83.2]] (with worked examples).
+> - Computational version: [[§20 Introduction to Determinants#^thm-20-1|235 Thm. §20.1]] (cofactor expansion along any row or column, the formula used by hand in place of the permutation sum).
 
 > [!example] Example 9.47: Explicit formula for determinant (p. 356)
 > - $2\times2$: $\det A=A_{1,1}A_{2,2}-A_{2,1}A_{1,2}$.
@@ -93,6 +98,9 @@ tags: [linear-algebra]
 > In $\R^3$ this is the scalar triple product $v_1\cdot(v_2\times v_3)$ of the columns.
 
 ^ladr-9-47
+
+> [!remark]- Connections
+> - Computational version: [[§20 Introduction to Determinants#^prop-20-3|235 Prop. §20.3]] (the diagonal rule for $3\times3$ determinants, the same six terms).
 
 > [!theorem] Theorem 9.48: Determinant of upper-triangular matrix
 > If $A$ is upper triangular with diagonal $\lambda_1,\dots,\lambda_n$, then $\det A=\lambda_1\cdots\lambda_n$.
@@ -103,6 +111,9 @@ tags: [linear-algebra]
 > For $(j_1,\dots,j_n)\ne(1,\dots,n)$ some $j_k>k$ (otherwise, going from $k=1$ up, $j_k=k$ is forced), so $A_{j_k,k}=0$. Only the identity permutation contributes to [[§34 Determinants#^ladr-9-46|9.46]].
 
 *Uses:* [[§34 Determinants#^ladr-9-46|9.46]]
+
+> [!remark]- Connections
+> - Computational version: [[§20 Introduction to Determinants#^thm-20-2|235 Thm. §20.2]] (determinant of a triangular matrix).
 
 > [!theorem] Theorem 9.49: Determinant is multiplicative
 > (a) $\det(ST)=(\det S)(\det T)$ for $S,T\in\Lin(V)$. (b) $\det(AB)=(\det A)(\det B)$ for square matrices of the same size.
@@ -123,6 +134,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - In group language: det is a homomorphism from the general linear group onto the nonzero scalars with kernel the special linear group, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]]; composed with permutation matrices it is the sign, [[The Sign Homomorphism]].
+> - Computational version: [[§21 Properties of Determinants#^thm-21-9|235 Thm. §21.9]] ($\det AB=(\det A)(\det B)$).
 
 > [!theorem] Theorem 9.50: Invertible ⟺ nonzero determinant
 > $T\in\Lin(V)$ is invertible iff $\det T\ne0$; then $\det(T^{-1})=\dfrac1{\det T}$.
@@ -136,6 +148,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§34 Determinants#^ladr-9-49|9.49]], [[§33 Alternating Multilinear Forms#^ladr-9-39|9.39]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]]
 
+> [!remark]- Connections
+> - Computational version: [[§21 Properties of Determinants#^thm-21-3|235 Thm. §21.3]] (proved by row reduction).
+
 > [!theorem] Theorem 9.51: Eigenvalues and determinants
 > $\lambda$ is an eigenvalue of $T$ iff $\det(\lambda I-T)=0$.
 
@@ -145,6 +160,9 @@ tags: [linear-algebra]
 > $\lambda$ is an eigenvalue iff $T-\lambda I$ is not invertible ([[§14 Invariant Subspaces#^ladr-5-7|5.7]]) iff $\lambda I-T$ is not invertible iff $\det(\lambda I-T)=0$ ([[Invertible ⟺ nonzero determinant|9.50]]).
 
 *Uses:* [[§14 Invariant Subspaces#^ladr-5-7|5.7]], [[Invertible ⟺ nonzero determinant|9.50]]
+
+> [!remark]- Connections
+> - Computational version: [[§33 The Characteristic Equation#^thm-33-4|235 Thm. §33.4]] (the characteristic equation $\det(A-\lambda I)=0$).
 
 > [!theorem] Theorem 9.52: Determinant is a similarity invariant
 > If $T\in\Lin(V)$ and $S:W\to V$ is invertible, then $\det(S^{-1}TS)=\det T$.
@@ -159,6 +177,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - In group language: det is constant on conjugacy classes of the general linear group, [[§31 Conjugacy Classes#^def-31-3|493 Def. §31.3]], as every character is, [[§40 Characters#^prop-40-1|493 Prop. §40.1]].
+> - Computational version: [[§21 Properties of Determinants#^cor-21-10|235 Cor. §21.10]] (part 5: $\det(PAP^{-1})=\det A$) and [[§33 The Characteristic Equation#^thm-33-6|235 Thm. §33.6]].
 
 > [!theorem] Theorem 9.53: Determinant of operator equals determinant of its matrix
 > For any basis $e_1,\dots,e_n$ of $V$, $\det T=\det\mathcal{M}(T,(e_1,\dots,e_n))$.
@@ -198,6 +217,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§34 Determinants#^ladr-9-46|9.46]], [[Invertible ⟺ nonzero determinant|9.50]], [[§33 Alternating Multilinear Forms#^ladr-9-37|9.37]], [[§34 Determinants#^ladr-9-53|9.53]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]
 
+> [!remark]- Connections
+> - Computational version: [[§21 Properties of Determinants#^thm-21-6|235 Thm. §21.6]] ($\det A^T=\det A$).
+
 > [!theorem] Theorem 9.57: Helpful results in evaluating determinants
 > For square matrices:
 > - (a) two equal columns or two equal rows $\Rightarrow\det=0$;
@@ -220,6 +242,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§34 Determinants#^ladr-9-45|9.45]], [[§34 Determinants#^ladr-9-56|9.56]], [[§33 Alternating Multilinear Forms#^ladr-9-30|9.30]]
 
+> [!remark]- Connections
+> - Computational version: [[§21 Properties of Determinants#^thm-21-1|235 Thm. §21.1]] (row operations), [[§21 Properties of Determinants#^cor-21-7|235 Cor. §21.7]] (column operations) and [[§21 Properties of Determinants#^cor-21-5|235 Cor. §21.5]] (dependent rows or columns).
+
 %% ex:9.57-fig %%
 > [!example] Example: Adding a multiple of a column, pictured
 > In $\R^2$, replacing $v_1$ by $v_1+cv_2$ slides the top edge of the parallelogram along $v_2$. The base $v_2$ and the height stay the same, so the area $|\det\begin{pmatrix}v_1&v_2\end{pmatrix}|$ does not change: this is (d).
@@ -238,6 +263,9 @@ tags: [linear-algebra]
 > $1=\det(S^*S)=\overline{\det S}\,\det S=|\det S|^2$ ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]], [[§34 Determinants#^ladr-9-49|9.49]], [[§34 Determinants#^ladr-9-56|9.56]](c)).
 
 *Uses:* [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]], [[§34 Determinants#^ladr-9-49|9.49]], [[§34 Determinants#^ladr-9-56|9.56]]
+
+> [!remark]- Connections
+> - Computational version: [[§41 Orthogonal Sets#^prop-41-6|235 Prop. §41.6]] (an orthogonal matrix has $\det U=\pm1$).
 
 > [!theorem] Theorem 9.59: Every positive operator has nonnegative determinant
 > If $T$ is positive, then $\det T\ge0$.
@@ -278,6 +306,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The Jacobian in the change-of-variables formula $\int_{T(\Omega)}f=\int_\Omega(f\circ T)|\det DT|$; integration of forms on oriented manifolds keeps the sign (Lee, Ch. 16).
 > - The case n = 3 with worked examples: [[§83 The Cross Product#^thm-83-10|Calc Thm. §83.10]]; for nonlinear maps the factor |det| becomes the Jacobian in [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Calc Thm. §106.1]].
+> - Computational version: [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-5|235 Thm. §22.5]] and [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-6|235 Thm. §22.6]] (the cases $n=2,3$).
 
 %% ex:9.61-fig %%
 > [!example] Example: Determinant as signed volume
@@ -302,6 +331,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Agrees with [[§29 Generalized Eigenspace Decomposition#^ladr-8-26|8.26]] over $\C$ ([[§34 Determinants#^ladr-9-62|9.62]]); makes sense over $\R$, where operators may lack eigenvalues.
+> - Computational version: [[§33 The Characteristic Equation#^def-33-1|235 Def. §33.1]] ($\det(A-\lambda I)$, which differs by the sign $(-1)^n$).
 
 > [!theorem] Theorem 9.64: Cayley–Hamilton theorem
 > If $q$ is the characteristic polynomial of $T\in\Lin(V)$ (any $\F$), then $q(T)=0$.
@@ -331,6 +361,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - For $2\times2$: $z^2-(\operatorname{tr}T)z+\det T$; eigenvalues $\frac12\big(\operatorname{tr}\pm\sqrt{\operatorname{tr}^2-4\det}\big)$.
+> - Computational version: [[§33 The Characteristic Equation#^thm-33-5|235 Thm. §33.5]] (the same coefficients, written in powers of $-\lambda$).
 
 > [!theorem] Theorem 9.66: Hadamard’s inequality
 > If $A$ is $n$-by-$n$ with columns $v_1,\dots,v_n$, then
@@ -373,4 +404,5 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Polynomial interpolation through $n$ points with distinct $\beta_k$ exists and is unique (the matrix is invertible, [[Invertible ⟺ nonzero determinant|9.50]]).
+> - Computational version: [[§21 Properties of Determinants#^prop-21-8|235 Prop. §21.8]] (the Vandermonde determinant, with columns in place of rows).
 

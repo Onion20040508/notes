@@ -30,3 +30,4 @@ tags: [logic-and-proofs, hub]
 ## Connections
 - Same result stated with $g \circ f$ and $f \circ g$: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|590 Prop. §21.4]].
 - For linear maps: [[§10 Invertibility and Isomorphisms#^ladr-3-63|LADR Thm. 3.63]] (invertible iff injective and surjective), with uniqueness of the inverse in [[§10 Invertibility and Isomorphisms#^ladr-3-60|LADR Thm. 3.60]].
+- **Also in [[Applied Linear Algebra]]:** [[§13 Characterizations of Invertible Matrices#^thm-13-3|235 Thm. §13.3]] and [[§13 Characterizations of Invertible Matrices#^rem-13-2|235 Remark §13.2]] (linear maps of ℝⁿ: invertible iff one-to-one and onto, decided by pivots, with worked examples).

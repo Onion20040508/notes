@@ -16,3 +16,4 @@ tags: [linear-algebra, hub]
 
 ## Connections
 - Second version: [[§13 Polynomials#^ladr-4-13|Fundamental theorem of algebra, second version]]. The reason complex operators have eigenvalues: [[Existence of eigenvalues]].
+- **Also in [[Applied Linear Algebra]]:** [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (stated without proof, in factored form, to count the complex eigenvalues of an n × n matrix).

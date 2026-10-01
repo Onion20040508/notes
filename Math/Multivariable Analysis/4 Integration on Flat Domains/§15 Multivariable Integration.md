@@ -2165,6 +2165,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 > - For $n = 2$ this is Part I of the first proof of [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14]].
 > - For Lebesgue measure the identity $m(T(R)) = |\det T|\, m(R)$ on rectangles is proved by elementary row operations inside [[§18 Differentiation Theory#^thm-18-22|551 Thm. §18.22]] (linear maps preserve null sets).
 > - The case n = 3 with worked examples: [[§83 The Cross Product#^thm-83-10|Calc Thm. §83.10]] (volume of a parallelepiped as a determinant).
+> - Computational version for n = 2, 3: [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-4|235 Thm. §22.4]] (determinants as area or volume), [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-5|235 Thm. §22.5]] and [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-6|235 Thm. §22.6]] (a linear map multiplies area or volume by its absolute determinant), with worked areas.
 
 This proposition explains why the Jacobian determinant appears in the change of variables formula: locally, the transformation $\Phi$ is approximated by its linearization $J_\Phi$ ([[§6 Differentiability#^def-6-2|Def. §6.2]]), and $|\det(J_\Phi)| = |J|$ measures the local volume distortion.
 
@@ -2190,6 +2191,7 @@ The proof follows the same structure as the 2D case ([[§15 Multivariable Integr
 > - In $\mathbb{R}^3$: the spherical volume element used in [[§19 The Laplacian in Spherical Coordinates|§19]]; for general dimension it underlies the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] and, as pullback of $n$-forms, the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]].
 > - The smooth version of the diffeomorphisms allowed here is [[§8 Differentiable Structures#^def-8-3|591 Def. §8.3]], where diffeomorphisms of open subsets of ℝⁿ are the transition maps between charts.
 > - Computational version: [[§106 Change of Variables in Multiple Integrals#^thm-106-2|Calc Thm. §106.2]] (n = 3, with worked examples), with cylindrical and spherical coordinates in [[§104 Triple Integrals in Cylindrical Coordinates#^thm-104-1|Calc Thm. §104.1]] and [[§105 Triple Integrals in Spherical Coordinates#^thm-105-2|Calc Thm. §105.2]].
+> - The linear case, where the Jacobian is constant: [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-6|235 Thm. §22.6]] (with worked areas, n = 2, 3).
 
 ### Common Coordinate Systems and Worked Examples
 

@@ -25,6 +25,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 > [!remark]- Connections
 > - Same notion: [[§1 Countability and Set Theory#^def-1-2|551 Def. §1.2]] (mapping).
 > - Stewart's definition: [[§1 Four Ways to Represent a Function#^def-1-1|Calc Def. §1.1]].
+> - Computational version: [[§8 Introduction to Linear Transformations#^def-8-1|235 Def. §8.1]] (transformations from ℝⁿ to ℝᵐ, with domain, codomain, image and range).
 
 > [!example] Example §8.1: Three Pictures of One Function
 > Let $X = \{x_1, x_2, x_3, x_4\}$ and $Y = \{y_1, y_2, y_3, y_4, y_5\}$. The table
@@ -220,6 +221,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 > [!remark]- Connections
 > - Composites of three functions computed from the inside out: [[§3 New Functions from Old Functions#^def-3-2|Calc Def. §3.2]], [[§3 New Functions from Old Functions#^ex-3-5|Calc Ex. §3.5]] (c), (d).
+> - Matrix version: [[§11 Matrix Operations#^thm-11-6|235 Thm. §11.6]](a), (e) (matrix multiplication, which is composition of linear maps, is associative, with identity I).
 
 > [!example] Example §8.7: Computing Composites
 > Let $f, g : \R \to \R$ be $f(x) = x^3$ and $g(x) = 1 - x$. Then
@@ -307,6 +309,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 > [!remark]- Connections
 > - Same notion, called the range: [[§1 Countability and Set Theory#^def-1-5|551 Def. §1.5]].
 > - The range in Stewart: [[§1 Four Ways to Represent a Function#^def-1-1|Calc Def. §1.1]].
+> - For linear transformations: the range in [[§8 Introduction to Linear Transformations#^def-8-1|235 Def. §8.1]]; for a matrix it is the column space, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|235 Def. §24.2]].
 
 > [!example] Example §8.9: Functions With Prescribed Images
 > Functions $f_i : \R \to \R$ with:

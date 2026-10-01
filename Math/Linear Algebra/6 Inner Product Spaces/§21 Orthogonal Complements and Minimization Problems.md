@@ -21,6 +21,7 @@ tags: [linear-algebra]
 > - Basic properties [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]]; direct sum [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]]. Compare the annihilator $U^0\subseteq V'$ ([[§12 Duality#^ladr-3-121|3.121]]): Riesz ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-58|6.58]]) identifies $U^\perp$ with $U^0$.
 > - Same definition for arbitrary subsets of a Hilbert space: [[§18 Projection and Orthogonal Decomposition#^def-18-1|556 Def. §18.1]]; the complement is always closed, [[§18 Projection and Orthogonal Decomposition#^prop-18-3|556 Prop. §18.3]].
 > - In ℝ³: the plane through $\mathbf r_0$ with normal $\mathbf n$ is $\mathbf r_0 + \operatorname{span}(\mathbf n)^\perp$, [[§84 Equations of Lines and Planes#^thm-84-5|Calc Thm. §84.5]] (with worked examples).
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^def-40-6|235 Def. §40.6]] (the orthogonal complement of a subspace of $\mathbb R^n$).
 
 > [!example] Example 6.47: Orthogonal complements (p. 211)
 > - In $\R^3$: $\{(2,3,5)\}^\perp$ is the plane $2x+3y+5z=0$, and the complement of that plane is the line $\{t(2,3,5)\}$.
@@ -43,6 +44,9 @@ tags: [linear-algebra]
 > (a) $0\in U^\perp$, and if $v,w\in U^\perp$, $\lambda\in\F$, $u\in U$: $\langle u,v+w\rangle=0+0$ and $\langle u,\lambda v\rangle=\bar\lambda\cdot0=0$ ([[§19 Inner Products and Norms#^ladr-6-6|6.6]]). (b) $\langle0,v\rangle=0$. (c) $v\in V^\perp$ gives $\langle v,v\rangle=0$. (d) $u\in U\cap U^\perp$ gives $\langle u,u\rangle=0$. (e) orthogonal to all of $H$ implies orthogonal to all of $G$.
 
 *Uses:* [[§19 Inner Products and Norms#^ladr-6-6|6.6]]
+
+> [!remark]- Connections
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|235 Thm. §40.5]] (basic facts about $W^\perp$ in $\mathbb R^n$).
 
 > [!theorem] Theorem 6.49: Direct sum of a subspace and its orthogonal complement
 > If $U$ is a finite-dimensional subspace of $V$, then
@@ -67,6 +71,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Defines $P_U$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-55|6.55]]); dimensions [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|6.51]]; double complement [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|6.52]].
 > - Hilbert-space version, with the subspace closed instead of finite-dimensional: [[§18 Projection and Orthogonal Decomposition#^thm-18-4|556 Thm. §18.4]].
+> - Computational version: [[§42 Orthogonal Projections#^thm-42-1|235 Thm. §42.1]] (the Orthogonal Decomposition Theorem, with the projection formula).
 
 %% ex:6.49-fig %%
 > [!example] Example: $V=U\oplus U^\perp$ in $\R^3$
@@ -86,6 +91,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Parallel to $\dim U^0=\dim V-\dim U$ ([[§12 Duality#^ladr-3-125|3.125]]).
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|235 Prop. §40.7]] ($\dim W+\dim W^\perp=n$).
 
 > [!theorem] Theorem 6.52: Orthogonal complement of the orthogonal complement
 > If $U$ is a finite-dimensional subspace of $V$, then $U=(U^\perp)^\perp$.
@@ -101,6 +107,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - For any subset of a Hilbert space the double complement is the closed linear span: [[§18 Projection and Orthogonal Decomposition#^thm-18-6|556 Thm. §18.6]].
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|235 Cor. §40.8]] (including $(\operatorname{Nul}A)^\perp=\operatorname{Row}A$).
 
 > [!theorem] Theorem 6.54: U⟂ = {0} ⟺ U = V (for U a finite-dimensional subspace of V)
 > For a finite-dimensional subspace $U$ of $V$: $U^\perp=\{0\}\iff U=V$.
@@ -123,6 +130,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Properties [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]]; closest point [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|6.61]]. Physics: $P_U=\sum_k|e_k\rangle\langle e_k|$ over an orthonormal basis of $U$, the projector of a measurement outcome.
 > - Same definition onto a closed subspace of a Hilbert space: [[§25 The Completeness Relation#^def-25-2|556 Def. §25.2]].
+> - Computational version: [[§42 Orthogonal Projections#^def-42-1|235 Def. §42.1]] ($\operatorname{proj}_W\mathbf y$ in $\mathbb R^n$, with worked examples).
 
 > [!example] Example 6.56: Orthogonal projection onto one-dimensional subspace (p. 214)
 > For $U=\Span(u)$, $u\ne0$:
@@ -135,6 +143,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§82 The Dot Product#^thm-82-6|Calc Thm. §82.6]] (with worked examples).
+> - Computational version: [[§41 Orthogonal Sets#^def-41-3|235 Def. §41.3]] (projection onto a line, worked in [[§41 Orthogonal Sets#^ex-41-2|235 Ex. §41.2]]).
 
 > [!theorem] Theorem 6.57: Properties of orthogonal projection PU
 > For a finite-dimensional subspace $U$ of $V$:
@@ -159,6 +168,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - (g)+(e): $P_U$ is an idempotent whose null space is orthogonal to its range; these are exactly the self-adjoint idempotents (Chapter 7).
+> - Computational version: [[§42 Orthogonal Projections#^thm-42-4|235 Thm. §42.4]] (formula (i), and $\operatorname{proj}_W\mathbf y=UU^T\mathbf y$) and [[§42 Orthogonal Projections#^prop-42-2|235 Prop. §42.2]] (property (b)).
 
 > [!theorem] Theorem 6.58: Riesz representation theorem, revisited
 > Let $V$ be finite-dimensional. For $v\in V$ define $\varphi_v\in V'$ by $\varphi_v(u)=\langle u,v\rangle$. Then $v\mapsto\varphi_v$ is a bijection $V\to V'$.
@@ -207,6 +217,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Pseudoinverse version for equations $Tx=b$: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-70|6.70]].
 > - Generalization: in a Hilbert space every nonempty closed convex set has a unique closest point, [[§18 Projection and Orthogonal Decomposition#^thm-18-2|556 Thm. §18.2]].
+> - Computational version: [[§42 Orthogonal Projections#^thm-42-3|235 Thm. §42.3]] (the Best Approximation Theorem in $\mathbb R^n$); with $U=\operatorname{Col}A$ it gives least squares, [[§44 Least-Squares Problems#^thm-44-1|235 Thm. §44.1]].
 
 %% ex:6.61-fig %%
 > [!example] Example: The closest point, pictured
@@ -226,6 +237,9 @@ tags: [linear-algebra]
 > ![[ladr-6.63-sine.svg|460]]
 
 ^ladr-6-63
+
+> [!remark]- Connections
+> - Computational version: [[§46 Inner Product Spaces#^ex-46-3|235 Ex. §46.3]] (best approximation of a polynomial from $\mathbb P_2$ by the same method, with an inner product given by evaluation at five points).
 
 > [!theorem] Theorem 6.67: Restriction of a linear map to obtain a one-to-one and onto map
 > Let $V$ be finite-dimensional and $T\in\Lin(V,W)$. Then $T|_{(\nullsp T)^\perp}$ is a bijection of $(\nullsp T)^\perp$ onto $\range T$.
@@ -253,6 +267,9 @@ tags: [linear-algebra]
 
 > [!remark] Remark: Also called
 > the Moore–Penrose inverse. Formula via SVD: [[§26 Singular Value Decomposition#^ladr-7-75|Singular value decomposition of adjoint and pseudoinverse]].
+
+> [!remark]- Connections
+> - Computational version: [[§51★ The Singular Value Decomposition#^def-51-4|235 Def. §51.4]] (the matrix pseudoinverse $A^+=V_rD^{-1}U_r^T$, defined from the reduced SVD; it agrees with $T^\dagger$ by 7.75).
 
 > [!theorem] Theorem 6.69: Algebraic properties of the pseudoinverse
 > Let $V$ be finite-dimensional and $T\in\Lin(V,W)$.
@@ -290,6 +307,9 @@ tags: [linear-algebra]
 > (b) $x=(x-T^\dagger b)+T^\dagger b$ with $x-T^\dagger b\in\nullsp T$ and $T^\dagger b\in(\nullsp T)^\perp$; apply [[§19 Inner Products and Norms#^ladr-6-12|6.12]].
 
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-69|6.69]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]], [[§19 Inner Products and Norms#^ladr-6-12|6.12]]
+
+> [!remark]- Connections
+> - Computational version: [[§51★ The Singular Value Decomposition#^thm-51-8|235 Thm. §51.8]] ($A^+\mathbf b$ is the least-squares solution of smallest length) and [[§44 Least-Squares Problems#^thm-44-1|235 Thm. §44.1]] (least squares via the normal equations).
 
 %% ex:6.70-fig %%
 > [!example] Example: The pseudoinverse, pictured

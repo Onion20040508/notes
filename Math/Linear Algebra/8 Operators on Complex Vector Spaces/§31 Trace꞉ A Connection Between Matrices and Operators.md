@@ -16,6 +16,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The trace of a permutation matrix counts fixed points; averaged over a group it counts orbits, [[§28 Orbit–Stabilizer#^thm-28-6|493 Thm. §28.6]] (hub [[Burnside's Lemma]]).
 > - The trace is the derivative of the determinant at the identity ([[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|591 Prop. §5.9]], [[Jacobi's Formula]]), so the tangent space of SL(n, ℝ) at I consists of the trace-zero matrices, [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|591 Thm. §11.5]].
+> - Computational version: [[§33 The Characteristic Equation#^thm-33-5|235 Thm. §33.5]] (the trace as a coefficient of the characteristic polynomial) and [[§52★ Applications to Image Processing and Statistics#^def-52-4|235 Def. §52.4]] (the trace as total variance).
 
 > [!example] Example 8.48: Trace of a 3-by-3 matrix (p. 326)
 > $\operatorname{tr}\begin{pmatrix}3&-1&-2\\3&2&-3\\1&2&0\end{pmatrix}=3+2+0=5$.
@@ -42,6 +43,9 @@ tags: [linear-algebra]
 > $A=C^{-1}BC$ by [[§10 Invertibility and Isomorphisms#^ladr-3-84|3.84]], so $\operatorname{tr}A=\operatorname{tr}\big((C^{-1}B)C\big)=\operatorname{tr}\big(C(C^{-1}B)\big)=\operatorname{tr}B$ ([[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|8.49]]).
 
 *Uses:* [[§10 Invertibility and Isomorphisms#^ladr-3-84|3.84]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|8.49]]
+
+> [!remark]- Connections
+> - Computational version: [[§33 The Characteristic Equation#^thm-33-6|235 Thm. §33.6]] (similar matrices have the same characteristic polynomial, hence the same trace by [[§33 The Characteristic Equation#^thm-33-5|235 Thm. §33.5]]).
 
 > [!definition] Definition 8.51: Trace of an operator
 > The *trace* of $T\in\Lin(V)$ is $\operatorname{tr}T=\operatorname{tr}\mathcal{M}(T,(v_1,\dots,v_n))$ for any basis (well defined by [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|8.50]]).

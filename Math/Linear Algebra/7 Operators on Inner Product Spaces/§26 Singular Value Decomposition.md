@@ -24,6 +24,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Row rank = column rank once more (d). Least squares: normal equations $T^*Tx=T^*b$.
+> - Computational version: [[§51★ The Singular Value Decomposition#^prop-51-1|235 Prop. §51.1]] ($A^TA$ is symmetric with eigenvalues $\|A\mathbf v_i\|^2\ge0$).
 
 > [!definition] Definition 7.65: Singular values
 > The *singular values* of $T\in\Lin(V,W)$ are the nonnegative square roots of the eigenvalues of $T^*T$, in decreasing order, each repeated $\dim E(\lambda,T^*T)$ times. There are exactly $\dim V$ of them.
@@ -32,6 +33,9 @@ tags: [linear-algebra]
 
 > [!remark] Remark: Eigenvalues vs singular values
 > Singular values: defined for any $T:V\to W$; always real $\ge0$; list length $\dim V$; contain $0$ iff $T$ is not injective. Eigenvalues: only for operators; possibly complex or absent; no canonical order.
+
+> [!remark]- Connections
+> - Computational version: [[§51★ The Singular Value Decomposition#^def-51-1|235 Def. §51.1]] (singular values of a matrix, the square roots of the eigenvalues of $A^TA$).
 
 > [!example] Example 7.66: Singular values of an operator on F⁴ (p. 271)
 > $T(z_1,z_2,z_3,z_4)=(0,\ 3z_1,\ 2z_2,\ -3z_4)$ on $\F^4$. Then $T^*T(z_1,z_2,z_3,z_4)=(9z_1,4z_2,0,9z_4)$, with eigenvalues $9$ (twice), $4$, $0$, so the singular values are $3,3,2,0$. The eigenvalues of $T$ are only $-3$ and $0$: the '$2$' in the definition of $T$ is invisible to eigenvalues but visible to singular values. (Verified numerically.)
@@ -59,6 +63,9 @@ tags: [linear-algebra]
 > (a) $\nullsp T=\{0\}\iff\nullsp T^*T=\{0\}$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](b)) $\iff0$ is not an eigenvalue of $T^*T$. (b) By the spectral theorem $\dim\range T^*T$ is the number of positive eigenvalues of $T^*T$ with multiplicity, and $\dim\range T^*T=\dim\range T$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](d)). (c) from (b) and [[§6 Dimension#^ladr-2-39|2.39]].
 
 *Uses:* [[§26 Singular Value Decomposition#^ladr-7-64|7.64]], [[§6 Dimension#^ladr-2-39|2.39]]
+
+> [!remark]- Connections
+> - Computational version: [[§51★ The Singular Value Decomposition#^thm-51-3|235 Thm. §51.3]] (the rank of $A$ is the number of nonzero singular values).
 
 > [!theorem] Theorem 7.69: Isometries characterized by having all singular values equal 1
 > $S\in\Lin(V,W)$ is an isometry iff all singular values of $S$ equal $1$.
@@ -89,6 +96,9 @@ tags: [linear-algebra]
 > so $f_1,\dots,f_m$ is orthonormal. For $k>m$, $T^*Te_k=0$, hence $Te_k=0$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](b)). So $Tv=\sum_{k\le n}\langle v,e_k\rangle Te_k=\sum_{k\le m}s_k\langle v,e_k\rangle f_k$.
 
 *Uses:* [[§26 Singular Value Decomposition#^ladr-7-64|7.64]]
+
+> [!remark]- Connections
+> - Computational version: [[§51★ The Singular Value Decomposition#^thm-51-4|235 Thm. §51.4]] ($A=U\Sigma V^T$) and [[§51★ The Singular Value Decomposition#^thm-51-5|235 Thm. §51.5]] ($A\mathbf v_i=\sigma_i\mathbf u_i$), worked in [[§51★ The Singular Value Decomposition#^ex-51-2|235 Ex. §51.2]].
 
 %% ex:7.70-fig %%
 > [!example] Example: SVD pictured: the unit ball goes to an ellipsoid
@@ -122,6 +132,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-68|6.68]]
 
+> [!remark]- Connections
+> - Computational version: [[§51★ The Singular Value Decomposition#^def-51-4|235 Def. §51.4]] ($A^+=V_rD^{-1}U_r^T$, the same formula in matrix form).
+
 > [!example] Example 7.79: Finding a singular value decomposition (p. 276)
 > SVD of $T(x_1,x_2,x_3,x_4)=(-5x_4,\ 0,\ x_1+x_2)$ (the map of [[§26 Singular Value Decomposition#^ladr-7-67|7.67]]). Positive singular values $5,\sqrt2$. Orthonormal eigenvectors of $T^*T$: $e_1=(0,0,0,1)$ for $25$, $e_2=\tfrac1{\sqrt2}(1,1,0,0)$ for $2$. Then
 > $$
@@ -141,4 +154,5 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The usual 'full' SVD $A=U\Sigma V^*$ with square unitary $U,V$ is obtained by extending the orthonormal columns to bases.
+> - Computational version: [[§51★ The Singular Value Decomposition#^prop-51-7|235 Prop. §51.7]] (the reduced SVD $A=U_rDV_r^T$, the same form) and [[§51★ The Singular Value Decomposition#^thm-51-4|235 Thm. §51.4]].
 

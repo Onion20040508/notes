@@ -15,6 +15,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used to define [[§13 Polynomials#^ladr-4-2|Complex conjugate, z, absolute value, ∣z∣]].
+> - Computational version: [[§53 Complex Numbers#^def-53-1|235 Def. §53.1]] (Re z and Im z).
 
 > [!definition] Definition 4.2: Complex conjugate, z, absolute value, |z|
 > For $z\in\C$:
@@ -25,6 +26,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Properties: [[§13 Polynomials#^ladr-4-4|Properties of complex numbers]]. The conjugate is why complex inner products are conjugate-symmetric ([[§19 Inner Products and Norms#^ladr-6-2|Inner product]]) and why adjoints involve conjugate transposes ([[§22 Self-Adjoint and Normal Operators#^ladr-7-7|Conjugate transpose, A∗]]).
+> - Computational version: [[§53 Complex Numbers#^def-53-3|235 Def. §53.3]] and [[§53 Complex Numbers#^def-53-4|235 Def. §53.4]], with worked examples in [[§53 Complex Numbers#^ex-53-2|235 Ex. §53.2]].
 
 > [!example] Example 4.3: Real and imaginary part, complex conjugate, absolute value (p. 120)
 > For $z=3+2i$: $\operatorname{Re}z=3$, $\operatorname{Im}z=2$, $\bar z=3-2i$, $|z|=\sqrt{3^2+2^2}=\sqrt{13}$.
@@ -34,6 +36,9 @@ tags: [linear-algebra]
 > ![[ladr-4.3-complex-plane.svg|300]]
 
 ^ladr-4-3
+
+> [!remark]- Connections
+> - In 235: [[§53 Complex Numbers#^def-53-5|235 Def. §53.5]] (the complex plane: z̄ is the mirror image in the real axis, |z| the distance to 0).
 
 > [!theorem] Theorem 4.4: Properties of complex numbers
 > For $w,z\in\C$:
@@ -63,6 +68,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The same proof pattern gives the triangle inequality for norms: [[Triangle inequality]], via [[Cauchy–Schwarz inequality]].
+> - Computational version: [[§53 Complex Numbers#^thm-53-3|235 Thm. §53.3]] (stated without proof) and [[§53 Complex Numbers#^prop-53-2|235 Prop. §53.2]] (z z̄ = a² + b²).
 
 > [!definition] Definition 4.5: Zero of a polynomial
 > $\lambda\in\F$ is a *zero* (or *root*) of $p\in\Poly(\F)$ if $p(\lambda)=0$.
@@ -107,6 +113,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Alternative bound on the number of eigenvalues: via [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]] and [[Existence, uniqueness, and degree of minimal polynomial]] (compare [[§14 Invariant Subspaces#^ladr-5-12|Operator cannot have more eigenvalues than dimension of vector space]]).
+> - In 235: [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (via p(λ) = (λ − r)q(λ), for characteristic polynomials).
 
 > [!theorem] Theorem 4.9: Division algorithm for polynomials
 > Let $p,s\in\Poly(\F)$ with $s\neq0$. Then there are unique $q,r\in\Poly(\F)$ with
@@ -162,6 +169,9 @@ tags: [linear-algebra]
 >
 > ![[ladr-4.12-fta-step.svg|320]]
 
+> [!remark]- Connections
+> - In 235: stated without proof, in factored form, in [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (an n × n matrix has n complex eigenvalues, counting multiplicities).
+
 > [!theorem] Theorem 4.13: Fundamental theorem of algebra, second version
 > A nonconstant $p\in\Poly(\C)$ has a factorization, unique up to the order of the factors,
 > $$
@@ -185,6 +195,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Complex minimal polynomials split: [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]](b). Real version: [[§13 Polynomials#^ladr-4-16|Factorization of a polynomial over R]].
+> - In 235: [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (the characteristic polynomial of an n × n matrix has n complex roots, counting multiplicities).
 
 > [!theorem] Theorem 4.14: Polynomials with real coefficients have nonreal zeros in pairs
 > If $p\in\Poly(\C)$ has real coefficients and $\lambda\in\C$ is a zero of $p$, then so is $\bar\lambda$.
@@ -199,6 +210,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Pairs $(z-\lambda)(z-\bar\lambda)=z^2-2(\operatorname{Re}\lambda)z+|\lambda|^2$: the real quadratic factors of [[§13 Polynomials#^ladr-4-16|Factorization of a polynomial over R]].
 > - Physics: for real (e.g. time-reversal symmetric) problems, complex eigenvalues come in conjugate pairs.
+> - Matrix version: [[§36 Complex Eigenvalues#^thm-36-2|235 Thm. §36.2]] (complex eigenvalues of a real matrix come in conjugate pairs).
 
 > [!theorem] Theorem 4.15: Factorization of a quadratic polynomial
 > For $b,c\in\R$: $x^2+bx+c=(x-\lambda_1)(x-\lambda_2)$ with $\lambda_1,\lambda_2\in\R$ if and only if $b^2\ge4c$.

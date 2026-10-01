@@ -21,3 +21,4 @@ tags: [linear-algebra, hub]
 
 ## Connections
 - Dual statement: [[Every linearly independent list extends to a basis]]. Consequences: [[§5 Bases#^ladr-2-31|Basis of finite-dimensional vector space]], [[§6 Dimension#^ladr-2-42|Spanning list of the right length is a basis]].
+- **Also in [[Applied Linear Algebra]]:** [[§25 Linearly Independent Sets; Bases#^thm-25-2|235 Thm. §25.2]] (the Spanning Set Theorem; for matrix columns, the pivot columns, [[§25 Linearly Independent Sets; Bases#^thm-25-3|235 Thm. §25.3]]).

@@ -122,6 +122,7 @@ Recall the single-variable [[§28 Basic Properties of the Derivative#^thm-28-3|c
 
 > [!remark]- Connections
 > - Linear algebra: the matrix of a composition is the product of the matrices, [[§9 Matrices#^ladr-3-43|LADR 3.43]].
+> - Computational version: [[§11 Matrix Operations#^def-11-3|235 Def. §11.3]] (the matrix product is defined so that it represents the composite linear map).
 
 ## The Chain Rule in Matrix and Operator Form
 

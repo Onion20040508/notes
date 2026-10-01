@@ -204,6 +204,7 @@ If two finite sets are known to have the same size, checking that a function bet
 
 > [!remark]- Connections
 > - The linear-algebra twin: a linear map between spaces of the same finite dimension is injective iff surjective, [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]; dimension plays the role of cardinality. Both fail for infinite sets ($n \mapsto n + 1$ on $\Z^+$ is injective and not surjective).
+> - Matrix version: for a square matrix, one-to-one iff onto, part of the Invertible Matrix Theorem [[§13 Characterizations of Invertible Matrices#^thm-13-1|235 Thm. §13.1]].
 
 ## 11.2 Finite Sets of Real Numbers
 

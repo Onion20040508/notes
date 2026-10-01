@@ -25,6 +25,9 @@ tags: [linear-algebra]
 
 *Uses:* [[Fundamental theorem of algebra, first version|4.12]], [[§13 Polynomials#^ladr-4-6|4.6]], [[§14 Invariant Subspaces#^ladr-5-17|5.17]]
 
+> [!remark]- Connections
+> - Computational version: [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (by the Fundamental Theorem of Algebra the characteristic equation of an $n\times n$ matrix has $n$ complex roots, counted with multiplicity; they are eigenvalues in the sense of [[§36 Complex Eigenvalues#^def-36-1|235 Def. §36.1]]).
+
 > [!example] Example 5.20: An operator on a complex vector space with no eigenvalues (p. 143)
 > $T\in\Lin(\Poly(\C))$, $(Tp)(z)=zp(z)$. For $p\ne0$, $\deg Tp=\deg p+1$, so $Tp$ is never a multiple of $p$: $T$ has **no eigenvalues**, even over $\C$. This does not contradict [[Existence of eigenvalues|5.19]] because $\Poly(\C)$ is infinite-dimensional. (Compare the position operator $\hat x$ in quantum mechanics, which has no eigenvectors in $L^2$.)
 

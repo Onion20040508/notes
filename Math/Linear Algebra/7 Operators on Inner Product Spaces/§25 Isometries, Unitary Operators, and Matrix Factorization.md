@@ -16,6 +16,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Characterizations [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]]; singular values all $1$ ([[§26 Singular Value Decomposition#^ladr-7-69|7.69]]).
 > - Infinite-dimensional counterpart: isomorphic Hilbert spaces are related by an inner-product-preserving bijection ([[§20 Orthonormal Sets and Bases#^def-20-6|556 Def. §20.6]]), and there an isometry of a space into itself need not be onto ([[§20 Orthonormal Sets and Bases#^ex-20-2|556 Ex. §20.2]]).
+> - Computational version: [[§41 Orthogonal Sets#^thm-41-5|235 Thm. §41.5]] (a matrix with orthonormal columns preserves lengths and inner products).
 
 > [!example] Example 7.45: Orthonormal basis maps to orthonormal list ⟹ isometry (p. 258)
 > If $e_1,\dots,e_n$ is an orthonormal basis of $V$ and $g_1,\dots,g_n$ an orthonormal list in $W$, the linear $S$ with $Se_k=g_k$ is an isometry: for $v=\sum\langle v,e_k\rangle e_k$,
@@ -52,6 +53,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§22 Self-Adjoint and Normal Operators#^ladr-7-16|7.16]], [[§20 Orthonormal Bases#^ladr-6-30|6.30]], [[§20 Orthonormal Bases#^ladr-6-24|6.24]]
 
+> [!remark]- Connections
+> - Computational version: [[§41 Orthogonal Sets#^thm-41-4|235 Thm. §41.4]] ($U^TU=I$ iff $U$ has orthonormal columns) and [[§41 Orthogonal Sets#^thm-41-5|235 Thm. §41.5]].
+
 > [!definition] Definition 7.51: Unitary operator
 > An operator $S\in\Lin(V)$ is *unitary* if it is an invertible isometry. (In finite dimensions 'invertible' is automatic, by injectivity and [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]].)
 
@@ -83,6 +87,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Unitary operators are normal, so over $\C$ the spectral theorem applies: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-55|7.55]].
+> - Computational version: [[§41 Orthogonal Sets#^prop-41-6|235 Prop. §41.6]] (orthogonal matrices: $U^{-1}=U^T$ iff orthonormal columns iff orthonormal rows).
 
 > [!theorem] Theorem 7.54: Eigenvalues of unitary operators have absolute value 1
 > Every eigenvalue $\lambda$ of a unitary operator has $|\lambda|=1$.
@@ -112,6 +117,9 @@ tags: [linear-algebra]
 
 ^ladr-7-56
 
+> [!remark]- Connections
+> - Computational version: [[§41 Orthogonal Sets#^def-41-5|235 Def. §41.5]] (orthogonal matrices, the real case).
+
 > [!theorem] Theorem 7.57: Characterizations of unitary matrices
 > For an $n$-by-$n$ matrix $Q$, equivalent:
 > - (a) $Q$ is unitary;
@@ -129,6 +137,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The real orthogonal matrices form the orthogonal group O(n), [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
 > - The matrices described here form the groups O(n) and U(n) of 591: [[§5 Topological Groups and Classical Matrix Groups#^def-5-6|591 Def. §5.6]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-7|591 Prop. §5.7]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-8|591 Def. §5.8]]; orthonormal columns make U(n) compact, [[§10 Vector Spaces and Matrix Groups#^cor-10-16|591 Cor. §10.16]].
+> - Computational version: [[§41 Orthogonal Sets#^prop-41-6|235 Prop. §41.6]] and [[§41 Orthogonal Sets#^thm-41-5|235 Thm. §41.5]] (length preservation, as in (c)).
 
 > [!theorem] Theorem 7.58: QR factorization
 > If $A$ is a square matrix with linearly independent columns, there are unique $Q,R$ with $Q$ unitary, $R$ upper triangular with positive diagonal, and $A=QR$.
@@ -147,6 +156,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Gives Cholesky [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-63|7.63]]; used for Hadamard's inequality ([[§34 Determinants#^ladr-9-66|Hadamard’s inequality]]).
+> - Computational version: [[§43 The Gram–Schmidt Process#^thm-43-3|235 Thm. §43.3]] (QR from Gram–Schmidt, for $m\times n$ matrices with independent columns; worked in [[§43 The Gram–Schmidt Process#^ex-43-3|235 Ex. §43.3]]).
 
 > [!example] Example 7.60: QR factorization of a 3-by-3 matrix (p. 265)
 > $A=\begin{pmatrix}1&2&1\\0&1&-4\\0&3&2\end{pmatrix}$, columns $v_1=(1,0,0)$, $v_2=(2,1,3)$, $v_3=(1,-4,2)$. Gram–Schmidt gives
@@ -179,6 +189,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Equivalently all eigenvalues $>0$; Gram matrices $\big(\langle v_k,v_j\rangle\big)$ of independent lists are positive definite. Metric tensors $g_{ij}$ in Riemannian geometry are positive definite at each point.
+> - Computational version: [[§49★ Quadratic Forms#^def-49-5|235 Def. §49.5]] (positive definite matrices, real case).
 
 > [!theorem] Theorem 7.63: Cholesky factorization
 > If $B$ is positive definite, there is a unique upper-triangular $R$ with positive diagonal such that $B=R^*R$.
@@ -194,4 +205,7 @@ tags: [linear-algebra]
 > Uniqueness: if also $B=S^*S$ with $S$ upper triangular, positive diagonal, then $S$ is invertible and $(AS^{-1})^*(AS^{-1})=(S^*)^{-1}BS^{-1}=I$, so $AS^{-1}$ is unitary and $A=(AS^{-1})S$ is a QR factorization. Uniqueness in [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|7.58]] gives $S=R$.
 
 *Uses:* [[§24 Positive Operators#^ladr-7-38|7.38]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|7.58]]
+
+> [!remark]- Connections
+> - Computational version: [[§49★ Quadratic Forms#^rem-49-3|235 Remark §49.3]] (as a fast test for positive definiteness).
 

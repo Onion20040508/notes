@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· B7 Identical Particles]] · ↑ [[Quantum Mechanics]] · [[· B9 The Variational Principle and the WKB Approximation]] →
 
 **Builds on:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (2), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (8), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (12), [[· B6 Spin|B6 Spin]] (17)
-**Used by:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (4), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (5), [[· C6 Central Potentials|C6 Central Potentials]] (1)
+**Used by:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (4), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (5), [[· C6 Central Potentials|C6 Central Potentials]] (1), [[· C9 Approximation Methods|C9 Approximation Methods]] (9), [[· C12★ Identical Particles and Second Quantization|C12 Identical Particles and Second Quantization]] (4), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (3)
 
 ## Sections
 - [[§B8.1 Nondegenerate Perturbation Theory]] — Griffiths 7.1; Greensite 17

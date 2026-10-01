@@ -120,6 +120,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > - Jacobians of compositions multiply: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Chain Rule for Jacobians]], i.e. [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps]] (LADR 3.43).
 > - In 591 the total derivative becomes the coordinate-free differential of a map between vector spaces, [[§10 Vector Spaces and Matrix Groups#^def-10-9|591 Def. §10.9]], and the Jacobian is the matrix of the differential of a smooth map between manifolds in coordinate bases, [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|591 Thm. §12.22]].
 > - Computational version: the linearization $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$, [[§93 Tangent Planes and Linear Approximations#^def-93-2|Calc Def. §93.2]] (with worked examples).
+> - The Jacobian is the standard matrix of the linear map Df: [[§9 The Matrix of a Linear Transformation#^thm-9-1|235 Thm. §9.1]] (its columns are the images of e₁, …, eₙ, with worked examples).
 
 > [!definition] Definition §6.3: Tangent Plane
 > Let $f$ be differentiable at $(x_0, y_0)$. The **tangent plane** to the graph of $f$ at $(x_0, y_0, f(x_0, y_0))$ is the plane

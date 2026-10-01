@@ -29,3 +29,4 @@ tags: [linear-algebra, hub]
 ## Connections
 - The key step of [[Fundamental theorem of linear maps]], [[§5 Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]], [[§6 Dimension#^ladr-2-43|Dimension of a sum]], [[§6 Dimension#^ladr-2-38|Linearly independent list of the right length is a basis]].
 - Inner-product version: [[§20 Orthonormal Bases#^ladr-6-36|Every orthonormal list extends to an orthonormal basis]] (via [[Gram–Schmidt procedure]]).
+- **Also in [[Applied Linear Algebra]]:** [[§27 The Dimension of a Vector Space#^thm-27-3|235 Thm. §27.3]] (any linearly independent set in a subspace H expands to a basis of H); an independent pair in ℝ³ extended to a basis in [[§25 Linearly Independent Sets; Bases#^ex-25-5|235 Ex. §25.5]](a).

@@ -46,3 +46,4 @@ tags: [linear-algebra, hub]
 - **Immediate consequences.** Comparing dimensions: [[§8 Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]] (3.22), [[§8 Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]] (3.24), [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (3.65).
 - **Isomorphism classes.** [[Dimension shows whether vector spaces are isomorphic]] (3.70) uses it to show isomorphic ⟺ equal dimension.
 - **Matrix form.** With [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]] (3.78), it becomes the matrix rank–nullity
+- **Also in [[Applied Linear Algebra]]:** [[§19 Dimension and Rank#^thm-19-2|235 Thm. §19.2]] and [[§28 Rank#^thm-28-3|235 Thm. §28.3]] (the Rank Theorem for matrices, rank A + dim Nul A = n, with worked examples).

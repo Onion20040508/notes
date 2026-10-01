@@ -28,3 +28,4 @@ tags: [linear-algebra, hub]
 - **Also proved in [[Logic and Proofs]]:** [[§4 Proof by Contradiction#^ex-4-5|250 Ex. §4.5]] (the case V = ℝ, |a + b| ≤ |a| + |b|, by comparing squares, with equality exactly when ab ≥ 0).
 - For a general norm this is an axiom ([[§8 Normed Linear Spaces#^def-8-1|556 Def. §8.1]]); for the ℓᵖ norms it is Minkowski's inequality, [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-1|556 Thm. §13.1]].
 - **Also in [[Calculus]]:** [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|Calc Thm. §116.6]] (the case V = ℝ, computational treatment with worked examples).
+- **Also in [[Applied Linear Algebra]]:** [[§46 Inner Product Spaces#^thm-46-5|235 Thm. §46.5]] (real inner product spaces, with the Cauchy–Schwarz proof).

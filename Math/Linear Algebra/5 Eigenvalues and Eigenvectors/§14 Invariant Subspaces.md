@@ -55,6 +55,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Equivalent conditions: [[§14 Invariant Subspaces#^ladr-5-7|Equivalent conditions to be an eigenvalue]]. Existence over $\C$: [[Existence of eigenvalues]]. Zeros of the minimal polynomial: [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]].
+> - Computational version: [[§32 Eigenvectors and Eigenvalues#^def-32-1|235 Def. §32.1]] (eigenvalues and eigenvectors of an $n\times n$ matrix, with worked examples).
 
 > [!example] Example 5.6: Eigenvalue (p. 134)
 > $T(x,y,z)=(7x+3z,\ 3x+6y+9z,\ -6y)$ on $\F^3$. Then
@@ -84,6 +85,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in [[§15 The Minimal Polynomial#^ladr-5-32|T not invertible ⟺ constant term of minimal polynomial of T is 0]]. Determinant version: $\det(T-\lambda I)=0$ ([[Invertible ⟺ nonzero determinant]]).
+> - Computational version: [[§33 The Characteristic Equation#^thm-33-4|235 Thm. §33.4]] ($\lambda$ is an eigenvalue of $A$ iff $\det(A-\lambda I)=0$, i.e. iff $A-\lambda I$ is not invertible) and [[§32 Eigenvectors and Eigenvalues#^thm-32-2|235 Thm. §32.2]] (the case $\lambda=0$).
 
 > [!definition] Definition 5.8: Eigenvector
 > If $\lambda$ is an eigenvalue of $T\in\Lin(V)$, a vector $v$ is an *eigenvector* for $\lambda$ if $v\ne0$ and $Tv=\lambda v$; equivalently $v\in\nullsp(T-\lambda I)\setminus\{0\}$.
@@ -92,6 +94,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Eigenvectors for distinct eigenvalues are independent: [[Linearly independent eigenvectors]]. The eigenspace $E(\lambda,T)=\nullsp(T-\lambda I)$: [[§17 Diagonalizable Operators#^ladr-5-52|Eigenspace, E(λ, T)]].
+> - Computational version: [[§32 Eigenvectors and Eigenvalues#^def-32-1|235 Def. §32.1]] (eigenvectors of a matrix, found by row reducing $A-\lambda I$).
 
 %% ex:5.8-plane %%
 > [!example] Example: Eigenvectors in the plane
@@ -130,6 +133,9 @@ tags: [linear-algebra]
 > $$
 > with all coefficients nonzero. This is a shorter dependent list, a contradiction.
 
+> [!remark]- Connections
+> - Computational version: [[§32 Eigenvectors and Eigenvalues#^thm-32-3|235 Thm. §32.3]] (the same statement for an $n\times n$ matrix).
+
 > [!theorem] Theorem 5.12: Operator cannot have more eigenvalues than dimension of vector space
 > If $V$ is finite-dimensional, each operator on $V$ has at most $\dim V$ distinct eigenvalues.
 
@@ -142,6 +148,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Alternative proof: zeros of the minimal polynomial ([[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]], [[Existence, uniqueness, and degree of minimal polynomial]], [[§13 Polynomials#^ladr-4-8|Degree m implies at most m zeros]]). With exactly $\dim V$ eigenvalues, $T$ is diagonalizable ([[§17 Diagonalizable Operators#^ladr-5-58|Enough eigenvalues implies diagonalizability]]).
+> - Computational version: [[§32 Eigenvectors and Eigenvalues#^cor-32-4|235 Cor. §32.4]] (an $n\times n$ matrix has at most $n$ distinct eigenvalues).
 
 > [!remark] Notation 5.13: Tᵐ (p. 137)
 

@@ -22,6 +22,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Special case of [[§9 Matrices#^ladr-3-31|3.31]] with the same basis on both sides; change of basis is [[§10 Invertibility and Isomorphisms#^ladr-3-84|3.84]].
+> - Computational version: [[§35 Eigenvectors and Linear Transformations#^def-35-1|235 Def. §35.1]] and [[§35 Eigenvectors and Linear Transformations#^thm-35-1|235 Thm. §35.1]] (the matrix of a transformation relative to bases, computed column by column, with worked examples).
 
 > [!example] Example 5.36: Matrix of an operator with respect to standard basis (p. 154)
 > $T(x,y,z)=(2x+y,\ 5y+3z,\ 8z)$ on $\F^3$. The columns of the matrix are $T(e_1)=(2,0,0)$, $T(e_2)=(1,5,0)$, $T(e_3)=(0,3,8)$:
@@ -114,6 +115,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Eigenvalues are hard to compute in general ([[§15 The Minimal Polynomial#^ladr-5-28|5.28]]); upper-triangular form makes them visible.
+> - Computational version: [[§32 Eigenvectors and Eigenvalues#^thm-32-1|235 Thm. §32.1]] (the eigenvalues of a triangular matrix are its diagonal entries).
 
 > [!example] Example 5.42: Eigenvalues via an upper-triangular matrix (p. 158)
 > For $T$ of [[§16 Upper-Triangular Matrices#^ladr-5-36|5.36]], the standard matrix is upper triangular with diagonal $2,5,8$, so by [[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]] the eigenvalues are exactly $2$, $5$, $8$, with no computation.

@@ -20,6 +20,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Hence $\max\{\|Tv\|:\|v\|\le1\}=s_1$, motivating [[§27 Consequences of Singular Value Decomposition#^ladr-7-86|7.86]].
+> - Computational version: [[§51★ The Singular Value Decomposition#^prop-51-2|235 Prop. §51.2]] ($\sigma_1$ is the maximum of $\|A\mathbf x\|$ over unit vectors).
 
 > [!definition] Definition 7.86: Norm of a linear map, ‖⋅ ‖
 > The *norm* of $T\in\Lin(V,W)$ is
@@ -68,6 +69,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Parts (b) and (c) are [[§21 Boundedness and Continuity#^prop-21-1|556 Prop. §21.1]] (a) and (c), with max replaced by sup.
+> - Computational version: [[§51★ The Singular Value Decomposition#^prop-51-2|235 Prop. §51.2]] (formula (b) for matrices, via [[§50★ Constrained Optimization#^thm-50-1|235 Thm. §50.1]] applied to $A^TA$).
 
 > [!example] Example 7.90: Norms (p. 283)
 > - $\|I\|=1$.
@@ -76,6 +78,9 @@ tags: [linear-algebra]
 > - For the $5\times5$ matrix with entries $\frac1{j^2+k}$: largest singular value $\approx0.81$, smallest $\approx9.6\times10^{-7}$ (recomputed), so $\|T\|\approx0.81$ and $\|T^{-1}\|\approx10^6$. Such matrices are *ill-conditioned*: tiny input errors can be amplified a million-fold.
 
 ^ladr-7-90
+
+> [!remark]- Connections
+> - Computational version: [[§51★ The Singular Value Decomposition#^def-51-3|235 Def. §51.3]] (the condition number $\sigma_1/\sigma_n$, the ill-conditioning of the last bullet).
 
 > [!theorem] Theorem 7.91: Norm of the adjoint
 > For $T\in\Lin(V,W)$, $\|T^*\|=\|T\|$.
@@ -174,6 +179,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Figure after [[Singular value decomposition|7.70]].
+> - Computational version: [[§51★ The Singular Value Decomposition#^ex-51-1|235 Ex. §51.1]] (a matrix maps the unit sphere onto an ellipse whose semi-axes are the singular values).
 
 > [!theorem] Theorem 7.101: Invertible operator takes ellipsoids to ellipsoids
 > An invertible $T\in\Lin(V)$ maps every ellipsoid onto an ellipsoid.

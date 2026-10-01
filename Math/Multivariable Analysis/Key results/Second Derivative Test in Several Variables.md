@@ -30,3 +30,4 @@ tags: [multivariable-analysis, hub]
 - **Where hypotheses matter.** A semidefinite H is inconclusive. For example, x⁴ + y⁴ (a minimum) and x⁴ − y⁴ (a saddle) both have H = 0 at the origin. Candidates come from [[§14 Optimization and Lagrange Multipliers#^thm-14-1|Fermat's theorem]] (∇f = 0).
 - **Local vs. global.** The test is local. Global extrema on a compact set exist ([[Heine–Borel Theorem]], [[Continuous Image of a Compact Space is Compact]]) and are found by comparing values at the candidates and on the boundary ([[§14 Optimization and Lagrange Multipliers#^rem-14-10|The Logical Flow]]).
 - **Also in [[Calculus]]:** [[§96 Maximum and Minimum Values#^thm-96-2|Calc Thm. §96.2]] (computational treatment with worked examples).
+- **Also in [[Applied Linear Algebra]]:** [[§49★ Quadratic Forms#^thm-49-4|235 Thm. §49.4]] (definiteness of a symmetric matrix from the signs of its eigenvalues, with worked classifications).

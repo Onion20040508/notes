@@ -90,6 +90,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Annihilator versions: [[§12 Duality#^ladr-3-128|3.128]], [[§12 Duality#^ladr-3-130|3.130]]. Dimension consequence: column rank = row rank again.
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|235 Thm. §40.6]] (the matrix case: $(\operatorname{Row}A)^\perp=\operatorname{Nul}A$ and $(\operatorname{Col}A)^\perp=\operatorname{Nul}A^T$).
 
 %% ex:7.6-fig %%
 > [!example] Example: The four subspaces, pictured
@@ -137,6 +138,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Physics: Hermitian operators = observables. Structure: [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]].
 > - The self-adjoint matrices form the real vector space of Hermitian matrices, [[§10 Vector Spaces and Matrix Groups#^def-10-11|591 Def. §10.11]], used to show that U(n) is a manifold.
+> - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^def-48-1|235 Def. §48.1]] (symmetric matrices: the real self-adjoint case in the standard basis).
 
 > [!example] Example 7.11: Determining whether T is self-adjoint from its matrix (p. 233)
 > $\mathcal{M}(T)=\begin{pmatrix}2&c\\3&7\end{pmatrix}$ (standard basis of $\F^2$, orthonormal) has $\mathcal{M}(T^*)=\begin{pmatrix}2&3\\\bar c&7\end{pmatrix}$, so $T$ is self-adjoint iff $c=3$.
@@ -153,6 +155,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: measured values of an observable are real.
+> - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]](a) (a symmetric matrix has $n$ real eigenvalues, counting multiplicities).
 
 > [!theorem] Theorem 7.13: Tv is orthogonal to v for all v ⟺ T = 0 (assuming F = C)
 > On a **complex** inner product space, $\langle Tv,v\rangle=0$ for every $v$ iff $T=0$.
@@ -257,6 +260,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: eigenstates of an observable with different eigenvalues are orthogonal. Compare [[Linearly independent eigenvectors|5.11]] (only independent, for general operators).
+> - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^thm-48-1|235 Thm. §48.1]] (for symmetric matrices).
 
 > [!theorem] Theorem 7.23: T is normal ⟺ the real and imaginary parts of T commute
 > Let $\F=\C$. Then $T\in\Lin(V)$ is normal iff $T=A+iB$ for commuting self-adjoint $A,B$.

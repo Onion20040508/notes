@@ -23,3 +23,4 @@ tags: [linear-algebra, hub]
 ## Connections
 - Gives [[§14 Invariant Subspaces#^ladr-5-12|Operator cannot have more eigenvalues than dimension of vector space]], and that eigenspaces form a direct sum ([[§17 Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]]).
 - Physics: states with different energies are independent (and orthogonal for self-adjoint $H$, [[§22 Self-Adjoint and Normal Operators#^ladr-7-12|Eigenvalues of self-adjoint operators]]).
+- **Also in [[Applied Linear Algebra]]:** [[§32 Eigenvectors and Eigenvalues#^thm-32-3|235 Thm. §32.3]] (matrix version, with a second proof via the Vandermonde determinant).

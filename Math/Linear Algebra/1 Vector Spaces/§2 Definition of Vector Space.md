@@ -40,6 +40,7 @@ tags: [linear-algebra]
 > - Forgetting scalar multiplication, (V, +) is an abelian group: [[§1 The Definition of a Group#^def-1-2|493 Def. §1.2]].
 > - Same definition in 556, as a linear space: [[§1 Linear Spaces#^def-1-1|556 Def. §1.1]].
 > - The axioms checked for ℝⁿ in Stewart: [[§81 Vectors#^thm-81-5|Calc Thm. §81.5]].
+> - Computational version: [[§23 Vector Spaces and Subspaces#^def-23-1|235 Def. §23.1]] (real scalars, ten axioms), with the catalogue ℝⁿ, signals, ℙₙ, functions and matrices in [[§23 Vector Spaces and Subspaces#^ex-23-1|235 Ex. §23.1]].
 
 > [!definition] Definition 1.21: Vector, point
 > Elements of a vector space are called *vectors* or *points*. When the field matters we say $V$ is a vector space *over* $\F$.
@@ -82,6 +83,9 @@ tags: [linear-algebra]
 
 ^ladr-1-25
 
+> [!remark]- Connections
+> - Computational version: [[§23 Vector Spaces and Subspaces#^ex-23-1|235 Ex. §23.1]](e) (real-valued functions on a set, with pointwise operations).
+
 > [!theorem] Theorem 1.26: Unique additive identity
 > A vector space has a unique additive identity.
 
@@ -97,6 +101,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Justifies speaking of *the* $0$ in [[§2 Definition of Vector Space#^ladr-1-20|Vector space]].
 > - Same argument for the identity of any group: [[§2 First Consequences of the Axioms#^prop-2-2|493 Prop. §2.2]].
+> - Computational version: [[§23 Vector Spaces and Subspaces#^prop-23-1|235 Prop. §23.1]] (the zero vector and negatives are unique).
 
 > [!theorem] Theorem 1.27: Unique additive inverse
 > Every element of a vector space has a unique additive inverse.
@@ -113,6 +118,7 @@ tags: [linear-algebra]
 > - Makes the notation $-v$ and $w-v:=w+(-v)$ legitimate (notation 1.28).
 > - Computed concretely in [[§2 Definition of Vector Space#^ladr-1-32|The number −1 times a vector]]: $-v=(-1)v$.
 > - Same argument for inverses in any group: [[§2 First Consequences of the Axioms#^prop-2-3|493 Prop. §2.3]].
+> - Computational version: [[§23 Vector Spaces and Subspaces#^prop-23-1|235 Prop. §23.1]] (uniqueness of the negative −u).
 
 > [!remark] Notation 1.28: −v, w − v (p. 15)
 
@@ -135,6 +141,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Companion: [[§2 Definition of Vector Space#^ladr-1-31|A number times the vector 0]] ($a0=0$). Used in [[§2 Definition of Vector Space#^ladr-1-32|The number −1 times a vector]].
+> - Computational version: [[§23 Vector Spaces and Subspaces#^prop-23-2|235 Prop. §23.2]], equation (1).
 
 > [!theorem] Theorem 1.31: A number times the vector 0
 > $a0=0$ for every $a\in\F$ (vector $0$ on both sides).
@@ -146,6 +153,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Not the same statement as [[§2 Definition of Vector Space#^ladr-1-30|The number 0 times a vector]]: there the scalar is $0$, here the vector is $0$.
+> - Computational version: [[§23 Vector Spaces and Subspaces#^prop-23-2|235 Prop. §23.2]], equation (2).
 
 > [!theorem] Theorem 1.32: The number −1 times a vector
 > $(-1)v=-v$ for every $v\in V$.
@@ -159,3 +167,4 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in [[§3 Subspaces#^ladr-1-34|Conditions for a subspace]] to see that subspaces contain additive inverses.
+> - Computational version: [[§23 Vector Spaces and Subspaces#^prop-23-2|235 Prop. §23.2]], equation (3).

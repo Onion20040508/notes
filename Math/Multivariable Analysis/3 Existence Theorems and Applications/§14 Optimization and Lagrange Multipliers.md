@@ -212,6 +212,7 @@ The proof (carried out below for two constraints in $\mathbb{R}^4$) uses the imp
 > - The case $k = 1$, $n = 2$ is [[Method of Lagrange Multipliers|Theorem §14.2]]; the case $k = 2$, $n = 4$ is derived below.
 > - The implicit function theorem for systems that the proof needs, not proved in 452, is [[§4 The Regular Value Theorem#^thm-4-1|591 Thm. §4.1]]; the tangent space of the constraint set is the kernel of the constraint Jacobian, [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|591 Thm. §11.3]], and the coordinate-free counterpart of the normal space spanned by the $\nabla g_i$ is the conormal space, [[§15 Submanifolds#^def-15-2|591 Def. §15.2]].
 > - Computational version: [[§97 Lagrange Multipliers#^thm-97-2|Calc Thm. §97.2]] (two constraints, with worked examples).
+> - A worked special case: [[§50★ Constrained Optimization#^thm-50-1|235 Thm. §50.1]] (the extremes of xᵀAx on the unit sphere are the extreme eigenvalues of A; the Lagrange condition there reads Ax = λx) and, with the two constraints xᵀx = 1, xᵀu₁ = 0, [[§50★ Constrained Optimization#^thm-50-3|235 Thm. §50.3]].
 
 > [!remark] Remark: Why Multiple Constraints?
 > In $\mathbb{R}^3$, a single constraint $g(x, y, z) = 0$ defines a surface (2D object). To get a curve (1D object), we need two constraints.
@@ -495,6 +496,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 > [!remark]- Connections
 > - $\mathbf{x}^T A \mathbf{x}$ is the quadratic form of $A$ ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-18|LADR 9.18]], [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-20|LADR 9.20]]); positive definite is the strict version of a positive operator ([[§24 Positive Operators#^ladr-7-34|LADR 7.34]]).
 > - By the [[Real spectral theorem|real spectral theorem]] (LADR 7.29), definiteness is read off from the signs of the eigenvalues of $A$.
+> - Computational version for n × n matrices: [[§49★ Quadratic Forms#^def-49-4|235 Def. §49.4]], with definiteness read off from eigenvalues in [[§49★ Quadratic Forms#^thm-49-4|235 Thm. §49.4]] (worked classifications).
 
 > [!theorem] Theorem §14.4: Second-Order Sufficient Conditions — Unconstrained
 > Let $f \in C^2(B_\varepsilon(x_0, y_0))$ with $f_x(x_0, y_0) = f_y(x_0, y_0) = 0$ (critical point).
@@ -544,6 +546,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 > - MATH 451 relative: the one-variable Taylor expansion with Lagrange remainder ([[§31 Taylor's Theorem#^thm-31-2|451 §31.2]]) is the whole engine; in 1D the Hessian is just $f''(x_0)$.
 > - The eigenvalue picture in the figure is the [[Real spectral theorem|real spectral theorem]] (LADR 7.29) applied to the symmetric matrix $H$.
 > - Computational version: the test with $D = f_{xx}f_{yy} - f_{xy}^2$, [[§96 Maximum and Minimum Values#^thm-96-2|Calc Thm. §96.2]] (with worked examples).
+> - Classifying the Hessian by its eigenvalues, with worked examples: [[§49★ Quadratic Forms#^thm-49-4|235 Thm. §49.4]].
 
 ## Testing Definiteness: Principal Minors
 

@@ -109,6 +109,9 @@ tags: [linear-algebra]
 
 *Uses:* [[Generalized eigenspace decomposition|8.22]], [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-45|8.45]]
 
+> [!remark]- Connections
+> - Computational version: [[§35 Eigenvectors and Linear Transformations#^ex-35-3|235 Ex. §35.3]] (a non-diagonalizable $2\times2$ matrix put in Jordan form).
+
 %% ex:8.46-fig %%
 > [!example] Example: What a Jordan form looks like
 > Eigenvalue $\lambda_1$ with multiplicity $4$ (blocks of size $3$ and $1$) and $\lambda_2$ with multiplicity $2$ (one block): $1$'s only directly above the diagonal, inside blocks.

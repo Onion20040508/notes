@@ -56,6 +56,9 @@ tags: [linear-algebra]
 > [!remark] Remark: Algebraic vs geometric
 > This is the *algebraic* multiplicity; the *geometric* multiplicity is $\dim E(\lambda,T)$. Over $\C$ they agree for all $\lambda$ iff $T$ is diagonalizable, in particular for normal $T$.
 
+> [!remark]- Connections
+> - Computational version: [[§33 The Characteristic Equation#^def-33-2|235 Def. §33.2]] (algebraic multiplicity as a root of the characteristic polynomial; compared with eigenspace dimensions in [[§34 Diagonalization#^thm-34-3|235 Thm. §34.3]]).
+
 > [!example] Example 8.24: Multiplicity of each eigenvalue of an operator (p. 310)
 > $T(z_1,z_2,z_3)=(6z_1+3z_2+4z_3,\ 6z_2+2z_3,\ 7z_3)$ on $\C^3$, $\mathcal{M}(T)=\begin{pmatrix}6&3&4\\0&6&2\\0&0&7\end{pmatrix}$. Eigenvalues $6,7$, with
 > $$
@@ -86,6 +89,9 @@ tags: [linear-algebra]
 > [!remark] Remark: No determinants
 > Equivalent to $\det(zI-T)$ ([[§34 Determinants#^ladr-9-62|If F = C, then characteristic polynomial of T equals det(zI − T)]]), but defined without them.
 
+> [!remark]- Connections
+> - Computational version: [[§33 The Characteristic Equation#^def-33-1|235 Def. §33.1]] ($\det(A-\lambda I)$, which is $(-1)^n\det(\lambda I-A)$).
+
 > [!example] Example 8.27: The characteristic polynomial of an operator (p. 311)
 > The operator of [[§29 Generalized Eigenspace Decomposition#^ladr-8-24|8.24]] has characteristic polynomial $(z-6)^2(z-7)$, which here equals the minimal polynomial ([[§17 Diagonalizable Operators#^ladr-5-61|5.61]]).
 
@@ -100,6 +106,9 @@ tags: [linear-algebra]
 > Degree by [[§29 Generalized Eigenspace Decomposition#^ladr-8-25|8.25]]; zeros by definition.
 
 *Uses:* [[§29 Generalized Eigenspace Decomposition#^ladr-8-25|8.25]]
+
+> [!remark]- Connections
+> - Computational version: [[§33 The Characteristic Equation#^thm-33-5|235 Thm. §33.5]] (degree $n$) and [[§33 The Characteristic Equation#^thm-33-4|235 Thm. §33.4]] (its roots are the eigenvalues).
 
 > [!theorem] Theorem 8.29: Cayley–Hamilton theorem
 > If $\F=\C$ and $q$ is the characteristic polynomial of $T\in\Lin(V)$, then $q(T)=0$.

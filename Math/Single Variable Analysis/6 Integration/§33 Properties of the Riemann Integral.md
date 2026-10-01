@@ -240,6 +240,9 @@ The converse direction — that integrability passes *down* to subintervals — 
 
 ^pf-33-8
 
+> [!remark]- Connections
+> - Used in Applied Linear Algebra for the positivity axiom of the integral inner product on C[a, b]: [[§46 Inner Product Spaces#^ex-46-4|235 Ex. §46.4]].
+
 > [!example] Example §33.1: Orthogonal to everything means zero
 > Let $f: [a,b] \to \mathbb{R}$ be continuous, and suppose that for *all* continuous $g: [a,b] \to \mathbb{R}$,
 >

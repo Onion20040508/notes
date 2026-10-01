@@ -29,3 +29,4 @@ tags: [linear-algebra, hub]
 ## Connections
 - Matrix and operator consequences: [[§10 Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I (on vector spaces of the same dimension)]]. Eigenvalue criterion: [[§14 Invariant Subspaces#^ladr-5-7|Equivalent conditions to be an eigenvalue]].
 - **Also proved in [[Logic and Proofs]]:** [[§11 Properties of Finite Sets#^thm-11-7|250 Thm. §11.7]] (the finite-set analogue: for |X| = |Y| finite, a function X → Y is injective if and only if it is surjective).
+- **Also in [[Applied Linear Algebra]]:** [[§13 Characterizations of Invertible Matrices#^thm-13-1|235 Thm. §13.1]] (the Invertible Matrix Theorem: for square A, x ↦ Ax is one-to-one iff onto iff A is invertible).

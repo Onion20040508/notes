@@ -20,3 +20,4 @@ tags: [linear-algebra, hub]
 
 ## Connections
 - The engine of Chapter 2: [[Length of linearly independent list ≤ length of spanning list]], [[§4 Span and Linear Independence#^ladr-2-25|Finite-dimensional subspaces]], [[Every spanning list contains a basis]]. Through those it underlies almost everything that follows.
+- **Also in [[Applied Linear Algebra]]:** [[§7 Linear Independence#^thm-7-4|235 Thm. §7.4]] and [[§25 Linearly Independent Sets; Bases#^thm-25-1|235 Thm. §25.1]] (characterization of linearly dependent sets, with worked examples).

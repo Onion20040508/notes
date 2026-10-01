@@ -335,3 +335,4 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - First proof by column–row factorization: [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]]. A third proof via adjoints appears in Chapter 7.
+> - Computational version: [[§28 Rank#^thm-28-3|235 Thm. §28.3]] (dim Row A = dim Col A).

@@ -37,6 +37,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The workhorse for every 'is a subspace' claim: [[§3 Subspaces#^ladr-1-40|Sum of subspaces is the smallest containing subspace]], [[§4 Span and Linear Independence#^ladr-2-6|Span is the smallest containing subspace]], [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]], [[§8 Null Spaces and Ranges#^ladr-3-16|Range]].
 > - Group version: the subgroup tests, [[§4 Subgroups#^prop-4-2|493 Prop. §4.2]] (hub [[Subgroup Criteria]]).
+> - Computational version: [[§23 Vector Spaces and Subspaces#^def-23-2|235 Def. §23.2]], where Lay takes these three conditions as the definition, and [[§23 Vector Spaces and Subspaces#^prop-23-3|235 Prop. §23.3]] (they make H a vector space); for subspaces of ℝⁿ, [[§18 Subspaces of ℝⁿ#^def-18-1|235 Def. §18.1]].
 
 > [!example] Example 1.35: Subspaces (p. 19)
 > - (a) $\{x\in\F^4 : x_3=5x_4+b\}$ is a subspace iff $b=0$ (for $b\ne0$ it misses $0$).
@@ -48,6 +49,9 @@ tags: [linear-algebra]
 > Always: $\{0\}$ is the smallest subspace and $V$ the largest; $\varnothing$ is not a subspace. Checking (b)–(e) is exactly the linearity of limits and derivatives from analysis (see [[Single Variable Analysis]]).
 
 ^ladr-1-35
+
+> [!remark]- Connections
+> - More worked examples: [[§23 Vector Spaces and Subspaces#^ex-23-2|235 Ex. §23.2]] (subspaces, including ℙₙ ⊂ C^∞(ℝ) ⊂ C(ℝ) and convergent sequences) and [[§23 Vector Spaces and Subspaces#^ex-23-3|235 Ex. §23.3]] (sets that fail the test).
 
 > [!definition] Definition 1.36: Sum of subspaces
 > For subspaces $V_1,\dots,V_m$ of $V$,

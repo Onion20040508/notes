@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # C5 Rotations and Angular Momentum
 ← [[· C4 Propagators and Path Integrals]] · ↑ [[Quantum Mechanics]] · [[· C6 Central Potentials]] →
 
-**Builds on:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (3), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (8), [[· B6 Spin|B6 Spin]] (4), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (1), [[· C6 Central Potentials|C6 Central Potentials]] (1)
-**Used by:** [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (1), [[· C6 Central Potentials|C6 Central Potentials]] (9), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (22)
+**Builds on:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (2), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (8), [[· B6 Spin|B6 Spin]] (4), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (5), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (2), [[· C6 Central Potentials|C6 Central Potentials]] (1)
+**Used by:** [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (1), [[· C6 Central Potentials|C6 Central Potentials]] (10), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (23), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (12), [[· C9 Approximation Methods|C9 Approximation Methods]] (4), [[· C10 Scattering Theory|C10 Scattering Theory]] (4), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (6)
 
 ## Sections
 - [[§C5.1 Rotations and the Angular-Momentum Commutation Relations]] — notes §17; Sakurai 3.1; series IV §11

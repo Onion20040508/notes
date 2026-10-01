@@ -18,6 +18,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: density operators are positive with trace $1$; $T^*T$ is always positive ([[§24 Positive Operators#^ladr-7-38|7.38]](f)).
+> - Computational version: [[§49★ Quadratic Forms#^def-49-5|235 Def. §49.5]] (positive semidefinite matrices).
 
 > [!example] Example 7.35: Positive operators (p. 251)
 > - (a) $\mathcal{M}(T)=\begin{pmatrix}2&-1\\-1&1\end{pmatrix}$ is self-adjoint and $\langle T(w,z),(w,z)\rangle=2|w|^2-2\operatorname{Re}(w\bar z)+|z|^2=|w-z|^2+|w|^2\ge0$: positive.
@@ -70,6 +71,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - (f) gives the positivity of $T^*T$ that SVD rests on ([[§26 Singular Value Decomposition#^ladr-7-64|Properties of T∗T]]).
+> - Computational version: [[§49★ Quadratic Forms#^prop-49-5|235 Prop. §49.5]] ((a)⟺(b) for symmetric matrices; the definite case is [[§49★ Quadratic Forms#^thm-49-4|235 Thm. §49.4]]) and [[§52★ Applications to Image Processing and Statistics#^prop-52-1|235 Prop. §52.1]] ($BB^T$ is positive semidefinite, as in (f)).
 
 > [!theorem] Theorem 7.39: Each positive operator has only one positive square root
 > Every positive operator has a unique positive square root, denoted $\sqrt T$.

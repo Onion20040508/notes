@@ -28,6 +28,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Equivalent conditions: [[§17 Diagonalizable Operators#^ladr-5-55|5.55]], [[§17 Diagonalizable Operators#^ladr-5-62|5.62]]. Sufficient condition: [[§17 Diagonalizable Operators#^ladr-5-58|5.58]]. Physics: diagonalizing a Hamiltonian = finding a basis of stationary states.
+> - Computational version: [[§34 Diagonalization#^def-34-1|235 Def. §34.1]] ($A=PDP^{-1}$) and [[§35 Eigenvectors and Linear Transformations#^thm-35-2|235 Thm. §35.2]] ($D$ is then the matrix of $\mathbf x\mapsto A\mathbf x$ in the basis of columns of $P$).
 
 > [!example] Example 5.51: Diagonalization may require a different basis (p. 163)
 > $T(x,y)=(41x+7y,\ -20x+74y)$ on $\R^2$ has standard matrix $\begin{pmatrix}41&7\\-20&74\end{pmatrix}$, not diagonal. But
@@ -49,6 +50,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Eigenspaces form a direct sum: [[§17 Diagonalizable Operators#^ladr-5-54|5.54]]. Invariant under commuting operators: [[§18 Commuting Operators#^ladr-5-75|5.75]]. Physics: the degenerate subspace of an energy level.
+> - Computational version: [[§32 Eigenvectors and Eigenvalues#^def-32-2|235 Def. §32.2]] (the eigenspace $\operatorname{Nul}(A-\lambda I)$, with bases found by row reduction).
 
 > [!example] Example 5.53: Eigenspaces of an operator (p. 164)
 > If $T$ has the matrix of [[§17 Diagonalizable Operators#^ladr-5-49|5.49]] in a basis $v_1,v_2,v_3$, then
@@ -97,6 +99,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Minimal-polynomial criterion: [[§17 Diagonalizable Operators#^ladr-5-62|5.62]]. Failure: [[§17 Diagonalizable Operators#^ladr-5-57|5.57]].
+> - Computational version: [[§34 Diagonalization#^thm-34-1|235 Thm. §34.1]] (diagonalizable iff there are $n$ independent eigenvectors) and [[§34 Diagonalization#^thm-34-3|235 Thm. §34.3]] (iff the eigenspace dimensions add up to $n$), with worked diagonalizations.
 
 > [!example] Example 5.57: An operator that is not diagonalizable (p. 166)
 > $T(a,b,c)=(b,c,0)$ on $\F^3$, with $\mathcal{M}(T)=\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix}$ (upper triangular, not diagonal). Its only eigenvalue is $0$ ([[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]]), and $E(0,T)=\{(a,0,0)\}$ is $1$-dimensional $<3$. So (d) of [[§17 Diagonalizable Operators#^ladr-5-55|5.55]] fails and $T$ is not diagonalizable, over $\R$ and over $\C$.
@@ -122,6 +125,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in [[§17 Diagonalizable Operators#^ladr-5-59|5.59]]. Other sufficient conditions: the spectral theorems [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]].
+> - Computational version: [[§34 Diagonalization#^thm-34-2|235 Thm. §34.2]] (an $n\times n$ matrix with $n$ distinct eigenvalues is diagonalizable).
 
 > [!example] Example 5.59: Using diagonalization to compute T¹⁰⁰ (p. 167)
 > $T(x,y,z)=(2x+y,\ 5y+3z,\ 8z)$ has eigenvalues $2,5,8$ ([[§16 Upper-Triangular Matrices#^ladr-5-42|5.42]]): three distinct, so diagonalizable ([[§17 Diagonalizable Operators#^ladr-5-58|5.58]]). Eigenvectors: $(1,0,0)$, $(1,3,0)$, $(1,6,6)$.
@@ -137,6 +141,9 @@ tags: [linear-algebra]
 > (Checked with exponent $3$ in place of $100$.) The same idea gives a closed formula for the Fibonacci numbers.
 
 ^ladr-5-59
+
+> [!remark]- Connections
+> - Computational version: [[§34 Diagonalization#^ex-34-1|235 Ex. §34.1]] ($A^k=PD^kP^{-1}$ for a $2\times2$ matrix); the Fibonacci formula by the same idea, [[§30 Applications to Difference Equations#^ex-30-4|235 Ex. §30.4]].
 
 > [!example] Example 5.60: Diagonalizable, but with no known exact eigenvalues (p. 168)
 > The operator of [[§15 The Minimal Polynomial#^ladr-5-28|5.28]] on $\C^5$ has minimal polynomial $z^5-6z+3$, whose five zeros are numerically distinct ($\approx-1.67,\ 0.51,\ 1.40,\ -0.12\pm1.59i$). Distinct roots, so it is diagonalizable ([[§17 Diagonalizable Operators#^ladr-5-62|5.62]]), although no eigenvalue has an exact formula.

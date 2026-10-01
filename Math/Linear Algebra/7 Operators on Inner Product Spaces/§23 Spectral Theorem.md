@@ -61,6 +61,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§23 Spectral Theorem#^ladr-7-27|7.27]], [[§20 Orthonormal Bases#^ladr-6-37|6.37]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]], [[§17 Diagonalizable Operators#^ladr-5-55|5.55]]
 
+> [!remark]- Connections
+> - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]] (the spectral theorem for symmetric matrices) and [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|235 Thm. §48.2]] (orthogonally diagonalizable iff symmetric), with worked orthogonal diagonalizations.
+
 %% ex:7.29-fig %%
 > [!example] Example: Self-adjoint versus merely diagonalizable
 > Left: $\begin{pmatrix}2&1\\1&2\end{pmatrix}$ is symmetric; its eigenvector lines are perpendicular and the unit circle goes to an ellipse with axes along them. Right: $\begin{pmatrix}2&1\\0&3\end{pmatrix}$ is diagonalizable (distinct eigenvalues) but not self-adjoint; its eigenvector lines $\Span(1,0)$ and $\Span(1,1)$ meet at $45^\circ$, so no orthonormal eigenbasis exists.

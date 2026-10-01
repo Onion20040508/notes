@@ -23,6 +23,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Abstracted in [[§19 Inner Products and Norms#^ladr-6-2|6.2]].
 > - Same definition in ℝ² and ℝ³: [[§82 The Dot Product#^def-82-1|Calc Def. §82.1]] (with worked examples).
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^def-40-1|235 Def. §40.1]] (the dot product as $\mathbf u^T\mathbf v$) and its properties, [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|235 Thm. §40.1]].
 
 > [!definition] Definition 6.2: Inner product
 > An *inner product* on $V$ is a function $(u,v)\mapsto\langle u,v\rangle\in\F$ with
@@ -42,6 +43,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Basic consequences: [[§19 Inner Products and Norms#^ladr-6-6|6.6]]. Norm: [[§19 Inner Products and Norms#^ladr-6-7|6.7]].
 > - Same definition in 556 ([[§16 Definition and Examples#^def-16-1|556 Def. §16.1]]); a complete inner product space is a Hilbert space ([[§17 Cauchy–Schwarz and the Induced Norm#^def-17-1|556 Def. §17.1]]), and every finite-dimensional one is complete ([[§10 New Normed Spaces from Old#^cor-10-4|556 Cor. §10.4]]).
+> - Computational version: [[§46 Inner Product Spaces#^def-46-1|235 Def. §46.1]] (real inner products, the same axioms, with worked examples).
 
 > [!example] Example 6.3: Inner products (p. 184)
 > - (a) **Euclidean** on $\F^n$: $\langle w,z\rangle=w_1\bar z_1+\dots+w_n\bar z_n$.
@@ -51,6 +53,9 @@ tags: [linear-algebra]
 > - (e) On $\Poly(\R)$: $\langle p,q\rangle=\int_0^\infty p(x)q(x)e^{-x}\,dx$ (converges because $e^{-x}$ beats polynomials). Gram–Schmidt with this weight produces the Laguerre polynomials; their associated versions appear in the hydrogen radial wave functions.
 
 ^ladr-6-3
+
+> [!remark]- Connections
+> - Computational version: [[§46 Inner Product Spaces#^ex-46-1|235 Ex. §46.1]] (a weighted inner product on $\mathbb R^2$, as in (b)) and [[§46 Inner Product Spaces#^ex-46-4|235 Ex. §46.4]] (the integral inner product on $C[a,b]$, as in (c)).
 
 > [!definition] Definition 6.4: Inner product space
 > An *inner product space* is a vector space $V$ together with an inner product on $V$. $\F^n$ always carries the Euclidean inner product ([[§19 Inner Products and Norms#^ladr-6-3|6.3]](a)) unless said otherwise.
@@ -81,6 +86,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - (a) is the functional that [[Riesz representation theorem|6.42]] shows is the only kind.
+> - Computational version: [[§46 Inner Product Spaces#^prop-46-1|235 Prop. §46.1]] (the same consequences of the axioms, real case).
 
 > [!definition] Definition 6.7: Norm, ‖v‖
 > The *norm* of $v\in V$ is $\|v\|=\sqrt{\langle v,v\rangle}$.
@@ -91,6 +97,7 @@ tags: [linear-algebra]
 > - Properties: [[§19 Inner Products and Norms#^ladr-6-9|6.9]], [[Triangle inequality|6.17]]. Whether a norm comes from an inner product is decided by [[§19 Inner Products and Norms#^ladr-6-21|6.21]].
 > - The general notion of a norm, not necessarily coming from an inner product: [[§8 Normed Linear Spaces#^def-8-1|556 Def. §8.1]]; that this one satisfies those axioms is [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-2|556 Thm. §17.2]].
 > - In ℝ² and ℝ³: the length of a vector, [[§81 Vectors#^def-81-6|Calc Def. §81.6]] and [[§81 Vectors#^thm-81-3|Calc Thm. §81.3]] (with worked examples).
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^def-40-2|235 Def. §40.2]] (length in $\mathbb R^n$) and [[§46 Inner Product Spaces#^def-46-2|235 Def. §46.2]] (in an inner product space).
 
 > [!example] Example 6.8: Norms (p. 186)
 > - (a) In $\F^n$: $\|(z_1,\dots,z_n)\|=\sqrt{|z_1|^2+\dots+|z_n|^2}$.
@@ -125,6 +132,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Pythagoras: [[§19 Inner Products and Norms#^ladr-6-12|6.12]]. Orthogonal complements: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|6.46]].
 > - In ℝ² and ℝ³: [[§82 The Dot Product#^def-82-3|Calc Def. §82.3]] and the test $\mathbf a \cdot \mathbf b = 0$, [[§82 The Dot Product#^thm-82-4|Calc Thm. §82.4]] (with worked examples).
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^def-40-5|235 Def. §40.5]] (orthogonal vectors in $\mathbb R^n$); in an inner product space, [[§46 Inner Product Spaces#^def-46-2|235 Def. §46.2]].
 
 > [!theorem] Theorem 6.11: Orthogonality and 0
 > (a) $0$ is orthogonal to every vector. (b) $0$ is the only vector orthogonal to itself.
@@ -151,6 +159,7 @@ tags: [linear-algebra]
 > - Used in [[Cauchy–Schwarz inequality|6.14]], [[§20 Orthonormal Bases#^ladr-6-24|6.24]], [[§20 Orthonormal Bases#^ladr-6-26|6.26]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|6.61]].
 > - Same statement in 556, together with LADR 6.24: [[§20 Orthonormal Sets and Bases#^lem-20-1|556 Lemma §20.1]].
 > - The Law of Cosines, [[§119 Trigonometry#^thm-119-11|Calc Thm. §119.11]], reduces to it when the angle is a right angle.
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|235 Thm. §40.4]] (the Pythagorean theorem in $\mathbb R^n$, stated as an iff).
 
 > [!theorem] Theorem 6.13: An orthogonal decomposition
 > Let $u,v\in V$, $v\ne0$. Set $c=\dfrac{\langle u,v\rangle}{\|v\|^2}$ and $w=u-cv$. Then $u=cv+w$ and $\langle w,v\rangle=0$.
@@ -163,6 +172,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - $cv$ is the orthogonal projection of $u$ onto $\Span(v)$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-56|6.56]]). Iterated, this is Gram–Schmidt ([[Gram–Schmidt procedure|6.32]]). Used for [[Cauchy–Schwarz inequality|6.14]].
 > - Computational version: vector and scalar projections, [[§82 The Dot Product#^thm-82-6|Calc Thm. §82.6]] (with worked examples).
+> - Computational version: [[§41 Orthogonal Sets#^prop-41-3|235 Prop. §41.3]] (decomposing $\mathbf y$ along $\mathbf u$, with the projection of [[§41 Orthogonal Sets#^def-41-3|235 Def. §41.3]]).
 
 %% ex:6.13-fig %%
 > [!example] Example: The orthogonal decomposition, pictured
@@ -187,6 +197,9 @@ tags: [linear-algebra]
 > Multiply by $\|v\|^2$ and take square roots. Equality holds iff $w=0$, i.e. iff $u$ is a multiple of $v$.
 
 *Uses:* [[§19 Inner Products and Norms#^ladr-6-13|6.13]], [[§19 Inner Products and Norms#^ladr-6-12|6.12]]
+
+> [!remark]- Connections
+> - Computational version: [[§46 Inner Product Spaces#^thm-46-4|235 Thm. §46.4]] (Cauchy–Schwarz in a real inner product space).
 
 %% ex:6.14-fig %%
 
@@ -228,6 +241,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in Relativity: for timelike vectors in spacetime the inequality reverses, and the straight worldline is the longest — [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-2|REL Theorem §B1.3.2]].
+> - Computational version: [[§46 Inner Product Spaces#^thm-46-5|235 Thm. §46.5]] (the triangle inequality in a real inner product space).
 
 > [!theorem] Theorem 6.21: Parallelogram equality
 > For $u,v\in V$,

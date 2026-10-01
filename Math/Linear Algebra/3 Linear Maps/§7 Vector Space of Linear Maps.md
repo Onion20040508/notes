@@ -25,6 +25,7 @@ tags: [linear-algebra]
 > - Two subspaces attached to every linear map: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]], [[§8 Null Spaces and Ranges#^ladr-3-16|Range]], tied together by [[Fundamental theorem of linear maps]].
 > - Physics: observables and time evolution in quantum mechanics are linear maps on the state space.
 > - Forgetting scalars, a linear map is a homomorphism of additive groups: [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]].
+> - Computational version: [[§8 Introduction to Linear Transformations#^def-8-3|235 Def. §8.3]] (for ℝⁿ → ℝᵐ) and [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4|235 Def. §24.4]] (between vector spaces).
 
 > [!remark] Notation 3.2: L(V, W), L(V) (p. 52)
 
@@ -43,6 +44,9 @@ tags: [linear-algebra]
 > - **composition** for fixed $q\in\Poly(\R)$, $(Tp)(x)=p(q(x))$.
 
 ^ladr-3-3
+
+> [!remark]- Connections
+> - The Fⁿ → Fᵐ example in 235: [[§8 Introduction to Linear Transformations#^prop-8-2|235 Prop. §8.2]] (every x ↦ Ax is linear).
 
 > [!theorem] Lemma 3.4: Linear map lemma
 > Suppose $v_1,\dots,v_n$ is a basis of $V$ and $w_1,\dots,w_n\in W$. Then there is a unique linear map $T:V\to W$ with $Tv_k=w_k$ for each $k$.
@@ -64,6 +68,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Restated and re-proved in 493 as [[§19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|493 Thm. §19.2]] (Linear Extension), where it turns permutations of a basis into the permutation representation, [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-4|493 Prop. §19.4]].
+> - The case V = ℝⁿ with the standard basis: [[§9 The Matrix of a Linear Transformation#^thm-9-1|235 Thm. §9.1]] (T is determined by T(e₁), …, T(eₙ), the columns of its standard matrix).
 
 > [!example] Example: The linear map lemma, pictured
 > The basis $v_1,v_2$ of $V$ gives the grid of points $c_1v_1+c_2v_2$. Choosing $w_1,w_2$ determines $T$ on all of it: the grid is carried to the grid of $w_1,w_2$, and each point goes to the point with the same coefficients, e.g. $T(2v_1+v_2)=2w_1+w_2$.
@@ -113,6 +118,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Commutation relations such as $DT-TD=I$ are the prototype of $[\hat{p},\hat{x}]$ in quantum mechanics; in finite dimensions $ST-TS=I$ is impossible ([[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-57|Identity operator is not the difference of ST and TS]]).
 > - Commuting operators: [[§18 Commuting Operators#^ladr-5-71|Commute]].
+> - Matrix version: [[§11 Matrix Operations#^thm-11-6|235 Thm. §11.6]] (associative and distributive laws, identity); noncommutativity in [[§11 Matrix Operations#^rem-11-2|235 Remark §11.2]].
 
 > [!example] Example 3.9: Two noncommuting linear maps from P(R) to P(R) (p. 56)
 > With $D$ = differentiation and $T$ = multiplication by $x^2$ on $\Poly(\R)$:
@@ -134,3 +140,4 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Gives $0\in\nullsp T$ and $0\in\range T$: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]], [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]]. Also $\{0\}\subseteq\nullsp T$ in [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]].
 > - Group version: homomorphisms preserve the identity and inverses, [[§15 Homomorphisms#^prop-15-1|493 Prop. §15.1]].
+> - Computational version: [[§8 Introduction to Linear Transformations#^prop-8-3|235 Prop. §8.3]], equation (3).

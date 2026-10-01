@@ -35,3 +35,4 @@ tags: [linear-algebra, hub]
 ## Connections
 - The reason a linear map is the same data as its matrix: [[§9 Matrices#^ladr-3-31|Matrix of a linear map, M(T)]], and why $\mathcal{M}$ is bijective in [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]].
 - Builds the isomorphism in [[Dimension shows whether vector spaces are isomorphic]].
+- **Also in [[Applied Linear Algebra]]:** [[§9 The Matrix of a Linear Transformation#^thm-9-1|235 Thm. §9.1]] (the case of ℝⁿ with the standard basis: T is determined by T(e₁), …, T(eₙ), with worked examples).

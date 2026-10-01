@@ -87,6 +87,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Physics/GR: $g'_{\mu\nu}=\frac{\partial x^\alpha}{\partial x'^\mu}\frac{\partial x^\beta}{\partial x'^\nu}g_{\alpha\beta}$ is this formula.
 > - Used in Relativity: a Lorentz transformation is a change of basis that leaves the matrix of the metric unchanged, $\Lambda^{\mathsf T}\eta\Lambda = \eta$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-1|REL Def. §B1.2.1]]; the field tensor, an alternating bilinear form, transforms by the same formula — [[§B4.2 The Electromagnetic Field Tensor#^def-b4-2-2|REL Def. §B4.2.2]], [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-2|REL Theorem §B4.2.2]].
+> - Computational version: [[§49★ Quadratic Forms#^prop-49-1|235 Prop. §49.1]] (the change of variable $\mathbf x=P\mathbf y$ turns the matrix $A$ of a quadratic form into $P^TAP$).
 
 > [!example] Example 9.8: The matrix of a bilinear form on P2(R) (p. 336)
 > $\beta(p,q)=p(2)\,q'(3)$ on $\Poly_2(\R)$. With the bases $(1,\ x-2,\ (x-3)^2)$ and $(1,x,x^2)$:
@@ -121,6 +122,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The symmetric matrices form a Euclidean space of dimension n(n + 1)∕2, [[§10 Vector Spaces and Matrix Groups#^def-10-10|591 Def. §10.10]], the target of A ↦ AAᵗ when O(n) is shown to be a manifold ([[§10 Vector Spaces and Matrix Groups#^ex-10-1|591 Ex. §10.1]]).
+> - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^def-48-1|235 Def. §48.1]] (symmetric matrices, with examples).
 
 > [!theorem] Theorem 9.12: Symmetric bilinear forms are diagonalizable
 > For $\rho\in V^{(2)}$, equivalent:
@@ -160,6 +162,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in Stewart to bring a quadric surface to standard form: [[§85 Cylinders and Quadric Surfaces#^def-85-3|Calc Def. §85.3]].
+> - Computational version: [[§49★ Quadratic Forms#^thm-49-2|235 Thm. §49.2]] (the Principal Axes Theorem for $\mathbf x^TA\mathbf x$ on $\mathbb R^n$).
 
 > [!definition] Definition 9.14: Alternating bilinear form, V⁽²⁾ alt
 > $\alpha\in V^{(2)}$ is *alternating* if $\alpha(v,v)=0$ for all $v$. $V^{(2)}_{\mathrm{alt}}$ is the set of alternating bilinear forms.
@@ -203,6 +206,9 @@ tags: [linear-algebra]
 
 ^ladr-9-18
 
+> [!remark]- Connections
+> - Computational version: [[§49★ Quadratic Forms#^def-49-1|235 Def. §49.1]] (quadratic forms $\mathbf x^TA\mathbf x$ on $\mathbb R^n$).
+
 > [!example] Example 9.19: Quadratic form (p. 341)
 > $\beta(x,y)=x_1y_1-4x_1y_2+8x_1y_3-3x_3y_3$ on $\R^3$ gives $q_\beta(x)=x_1^2-4x_1x_2+8x_1x_3-3x_3^2$.
 
@@ -215,6 +221,9 @@ tags: [linear-algebra]
 
 > [!proof]+ Proof
 > ($\Rightarrow$) take $A=\mathcal{M}(\beta)$ in the standard basis. ($\Leftarrow$) $\beta(x,y)=\sum_{j,k}A_{j,k}x_jy_k$ is bilinear with $q_\beta=q$.
+
+> [!remark]- Connections
+> - Computational version: [[§49★ Quadratic Forms#^def-49-1|235 Def. §49.1]] (the real case, with $A$ symmetric).
 
 > [!theorem] Theorem 9.21: Characterization of quadratic forms
 > For $q:V\to\F$, equivalent:
@@ -239,6 +248,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in Relativity: invariance of the interval, a quadratic form, gives invariance of the Minkowski scalar product — [[§B1.1 The Metric and Index Notation#^thm-b1-1-1|REL Theorem §B1.1.1]]; and a quadratic form fixes its symmetric matrix in the proof that the postulates force the invariance of the interval — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-1|REL Theorem §B1.2.1]].
+> - Computational version: [[§49★ Quadratic Forms#^def-49-1|235 Def. §49.1]] (the symmetric matrix of a form on $\mathbb R^n$ is unique: split each cross-product coefficient evenly, as in (b)).
 
 > [!example] Example 9.22: Symmetric bilinear form associated with a quadratic form (p. 343)
 > The $\beta$ of [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-19|9.19]] is not symmetric. The unique symmetric $\rho$ with $q_\rho=q_\beta$ splits each cross term evenly:
@@ -248,6 +258,9 @@ tags: [linear-algebra]
 > $$
 
 ^ladr-9-22
+
+> [!remark]- Connections
+> - Computational version: [[§49★ Quadratic Forms#^ex-49-1|235 Ex. §49.1]] (from a matrix to a form and back, splitting the cross terms evenly).
 
 > [!theorem] Theorem 9.23: Diagonalization of quadratic form
 > Let $q$ be a quadratic form on $V$.
@@ -263,6 +276,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: normal modes (simultaneously diagonalize kinetic and potential energy forms), the inertia tensor, and the second-derivative test (Hessian) are all this result.
+> - Computational version: [[§49★ Quadratic Forms#^thm-49-2|235 Thm. §49.2]] (part (b) on $\mathbb R^n$, worked in [[§49★ Quadratic Forms#^ex-49-2|235 Ex. §49.2]]).
 
 %% ex:9.23-fig %%
 > [!example] Example: Diagonalizing a quadratic form, pictured

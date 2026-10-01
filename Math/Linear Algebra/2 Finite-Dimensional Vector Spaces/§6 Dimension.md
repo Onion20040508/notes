@@ -20,6 +20,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Allows the definition [[§6 Dimension#^ladr-2-35|Dimension, dim V]].
+> - Computational version: [[§27 The Dimension of a Vector Space#^thm-27-2|235 Thm. §27.2]] (all bases have the same size).
 
 > [!definition] Definition 2.35: Dimension, dim V
 > The *dimension* of a finite-dimensional vector space $V$, written $\dim V$, is the length of any basis of $V$.
@@ -31,6 +32,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Well defined by [[§6 Dimension#^ladr-2-34|Basis length does not depend on basis]]. Classifies spaces up to isomorphism: [[Dimension shows whether vector spaces are isomorphic]].
+> - Computational version: [[§27 The Dimension of a Vector Space#^def-27-1|235 Def. §27.1]]; for subspaces of ℝⁿ, [[§19 Dimension and Rank#^def-19-2|235 Def. §19.2]].
 
 > [!example] Example 2.36: Dimensions (p. 44)
 > - $\dim\F^n=n$ (standard basis).
@@ -38,6 +40,9 @@ tags: [linear-algebra]
 > - $\dim\{(x,x,y)\}=2$ and $\dim\{(x,y,z):x+y+z=0\}=2$, by (e) and (f) of [[§5 Bases#^ladr-2-27|2.27]].
 
 ^ladr-2-36
+
+> [!remark]- Connections
+> - Computational version: [[§27 The Dimension of a Vector Space#^ex-27-1|235 Ex. §27.1]] (dim ℝⁿ = n, dim ℙₙ = n + 1, a plane in ℝ³).
 
 > [!theorem] Theorem 2.37: Dimension of a subspace
 > If $V$ is finite-dimensional and $U$ is a subspace of $V$, then $\dim U\le\dim V$.
@@ -51,6 +56,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Equality case: [[§6 Dimension#^ladr-2-39|Subspace of full dimension equals the whole space]]. Used in [[§8 Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]] and throughout Chapter 3.
+> - Computational version: [[§27 The Dimension of a Vector Space#^thm-27-3|235 Thm. §27.3]] (dim H ≤ dim V).
 
 > [!theorem] Theorem 2.38: Linearly independent list of the right length is a basis
 > If $V$ is finite-dimensional, every linearly independent list in $V$ of length $\dim V$ is a basis of $V$.
@@ -64,6 +70,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Companion: [[§6 Dimension#^ladr-2-42|Spanning list of the right length is a basis]]. Consequence: [[§6 Dimension#^ladr-2-39|Subspace of full dimension equals the whole space]]. Orthonormal version: [[§20 Orthonormal Bases#^ladr-6-28|Orthonormal lists of the right length are orthonormal bases]].
+> - Computational version: [[§27 The Dimension of a Vector Space#^thm-27-5|235 Thm. §27.5]] (the Basis Theorem, first half).
 
 > [!theorem] Theorem 2.39: Subspace of full dimension equals the whole space
 > If $V$ is finite-dimensional and $U$ is a subspace with $\dim U=\dim V$, then $U=V$.
@@ -77,6 +84,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Typical use: to prove $U=V$, show $U\subseteq V$ and compare dimensions.
+> - Computational version: [[§27 The Dimension of a Vector Space#^cor-27-6|235 Cor. §27.6]] (in particular, the only n-dimensional subspace of ℝⁿ is ℝⁿ).
 
 > [!example] Example 2.40: A basis of F² (p. 46)
 > $(5,7),(4,3)$ is independent in $\F^2$ (neither is a multiple of the other), and $\dim\F^2=2$. By [[§6 Dimension#^ladr-2-38|2.38]] it is a basis; spanning comes for free.
@@ -106,6 +114,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Companion: [[§6 Dimension#^ladr-2-38|Linearly independent list of the right length is a basis]]. Operator analogue: [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (injective $\iff$ surjective when $\dim V=\dim W$).
+> - Computational version: [[§27 The Dimension of a Vector Space#^thm-27-5|235 Thm. §27.5]] (the Basis Theorem, second half).
 
 > [!theorem] Theorem 2.43: Dimension of a sum
 > If $V_1,V_2$ are subspaces of a finite-dimensional vector space, then
