@@ -1,4 +1,4 @@
-% Figure for Classical Mechanics §B1.1 (Example: payload sliding out along a rotating boom; after Helliwell & Sahakian Example 1.3). Path computed from r = r0 cosh(wt), theta = wt with r0 = 1, R = 6.
+% Figure for Classical Mechanics §B1.1 (Example: payload sliding out along a rotating boom; after Helliwell & Sahakian Example 1.3). Path computed from r = r0 cosh(wt), phi = wt with r0 = 1, R = 6.
 \begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small, scale=0.62]
   \draw[->, thin, black!55] (-7.6,0) -- (1.8,0) node[right, font=\scriptsize] {$x$};
   \draw[->, thin, black!55] (0,-0.6) -- (0,5.0) node[above, font=\scriptsize] {$y$};
@@ -16,11 +16,11 @@
   \fill[figB] (0.527,1.899) circle (2.2pt);
   \draw[->, thick, figG] (0.527,1.899) -- ++({1.1*0.2675},{1.1*0.9636}) node[right, font=\scriptsize] {$\hat r$};
   \draw[->, very thick, figO] (0.527,1.899) -- ++({-2.0*0.9636},{2.0*0.2675});
-  \node[font=\scriptsize, figO, anchor=north] at (-0.95,1.95) {$F_\theta\hat\theta$};
+  \node[font=\scriptsize, figO, anchor=north] at (-0.95,1.95) {$F_\varphi\hat\varphi$};
   % release point: velocity components
   \fill[figB] (-4.726,3.696) circle (2.4pt);
   \draw[->, very thick, figG] (-4.726,3.696) -- ++({0.32*5.916*(-0.7880)},{0.32*5.916*0.6157}) node[above, font=\scriptsize] {$v_r\hat r$};
-  \draw[->, very thick, figG] (-4.726,3.696) -- ++({0.32*6*(-0.6157)},{0.32*6*(-0.7880)}) node[right, font=\scriptsize] {$v_\theta\hat\theta$};
+  \draw[->, very thick, figG] (-4.726,3.696) -- ++({0.32*6*(-0.6157)},{0.32*6*(-0.7880)}) node[right, font=\scriptsize] {$v_\varphi\hat\varphi$};
   \draw[->, very thick, figR] (-4.726,3.696) -- ++({0.32*8.426*(-0.9917)},{0.32*8.426*(-0.1284)}) node[left, font=\scriptsize] {$\vec v_f$};
   \node[font=\scriptsize, black!70, anchor=south] at (-3.3,4.0) {release at $r = R$};
   \node[font=\scriptsize, figB, anchor=west] at (1.3,0.9) {$r = r_0\cosh\omega t$};

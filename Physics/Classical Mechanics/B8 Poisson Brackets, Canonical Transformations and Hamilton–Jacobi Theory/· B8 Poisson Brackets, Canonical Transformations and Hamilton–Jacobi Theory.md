@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory
 ← [[· B7 Hamiltonian Mechanics and Phase Space]] · ↑ [[Classical Mechanics]] · [[· B9 Non-Inertial Frames]] →
 
-**Builds on:** [[· A4 Work and Energy|A4 Work and Energy]] (2), [[· A6 Rotation|A6 Rotation]] (2), [[· B5 The Calculus of Variations|B5 The Calculus of Variations]] (4), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (6), [[· B7 Hamiltonian Mechanics and Phase Space|B7 Hamiltonian Mechanics and Phase Space]] (6)
-**Used by:** [[· B7 Hamiltonian Mechanics and Phase Space|B7 Hamiltonian Mechanics and Phase Space]] (2)
+**Builds on:** [[· A4 Work and Energy|A4 Work and Energy]] (1), [[· A6 Rotation|A6 Rotation]] (2), [[· B5 The Calculus of Variations|B5 The Calculus of Variations]] (4), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (5), [[· B7 Hamiltonian Mechanics and Phase Space|B7 Hamiltonian Mechanics and Phase Space]] (7)
+**Used by:** [[· B7 Hamiltonian Mechanics and Phase Space|B7 Hamiltonian Mechanics and Phase Space]] (4)
 
 ## Sections
 - [[§B8.1 Poisson Brackets]] — Series II §8; H&S 11
@@ -31,4 +31,3 @@ tags: [chapter, classical-mechanics]
 - [[§B8.3 The Hamilton–Jacobi Equation#^thm-b8-3-2|§B8.3.2]] Jacobi's Theorem
 - [[§B8.3 The Hamilton–Jacobi Equation#^thm-b8-3-3|§B8.3.3]] Separating the Time; the Energy Quadrature
 - [[§B8.3 The Hamilton–Jacobi Equation#^thm-b8-3-4|§B8.3.4]] The Action Solves the Hamilton–Jacobi Equation
-- [[§B8.3 The Hamilton–Jacobi Equation#^thm-b8-3-5|§B8.3.5]] The Classical Limit of the Schrödinger Equation

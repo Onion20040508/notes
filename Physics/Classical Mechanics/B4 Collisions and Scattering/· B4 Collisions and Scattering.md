@@ -8,7 +8,7 @@ tags: [chapter, classical-mechanics]
 # B4 Collisions and Scattering
 ← [[· B3 Systems of Particles and Rotation about an Axis]] · ↑ [[Classical Mechanics]] · [[· B5 The Calculus of Variations]] →
 
-**Builds on:** [[· A4 Work and Energy|A4 Work and Energy]] (1), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (9), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (7), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (4), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (1)
+**Builds on:** [[· A4 Work and Energy|A4 Work and Energy]] (1), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (10), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (4), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (8), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (1)
 **Used by:** —
 
 ## Sections

@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # B7 Hamiltonian Mechanics and Phase Space
 ← [[· B6 Lagrangian Mechanics]] · ↑ [[Classical Mechanics]] · [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] →
 
-**Builds on:** [[· A4 Work and Energy|A4 Work and Energy]] (2), [[· B5 The Calculus of Variations|B5 The Calculus of Variations]] (2), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (8), [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory|B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] (2)
-**Used by:** [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory|B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] (6)
+**Builds on:** [[· A4 Work and Energy|A4 Work and Energy]] (2), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (3), [[· B5 The Calculus of Variations|B5 The Calculus of Variations]] (2), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (8), [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory|B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] (4)
+**Used by:** [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory|B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] (7)
 
 ## Sections
 - [[§B7.1 The Legendre Transform and Hamilton's Equations]] — Series II §6–7; Morin 15; H&S 11

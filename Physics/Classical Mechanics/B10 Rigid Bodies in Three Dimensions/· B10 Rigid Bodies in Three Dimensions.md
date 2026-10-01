@@ -8,7 +8,7 @@ tags: [chapter, classical-mechanics]
 # B10 Rigid Bodies in Three Dimensions
 ← [[· B9 Non-Inertial Frames]] · ↑ [[Classical Mechanics]]
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (2), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (3), [[· A6 Rotation|A6 Rotation]] (9), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (2), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (2), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (4), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (7), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (14)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (2), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (3), [[· A6 Rotation|A6 Rotation]] (9), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (2), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (2), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (6), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (8), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (14)
 **Used by:** [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (1), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (1)
 
 ## Sections

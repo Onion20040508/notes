@@ -9,7 +9,7 @@ tags: [chapter, classical-mechanics]
 ← [[· B5 The Calculus of Variations]] · ↑ [[Classical Mechanics]] · [[· B7 Hamiltonian Mechanics and Phase Space]] →
 
 **Builds on:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (4), [[· A4 Work and Energy|A4 Work and Energy]] (1), [[· A6 Rotation|A6 Rotation]] (1), [[· B5 The Calculus of Variations|B5 The Calculus of Variations]] (6)
-**Used by:** [[· B7 Hamiltonian Mechanics and Phase Space|B7 Hamiltonian Mechanics and Phase Space]] (8), [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory|B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] (6), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (7)
+**Used by:** [[· B7 Hamiltonian Mechanics and Phase Space|B7 Hamiltonian Mechanics and Phase Space]] (8), [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory|B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] (5), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (8)
 
 ## Sections
 - [[§B6.1 Generalized Coordinates and Lagrange's Equations]] — Morin 6.1–6.2; Series II §3.2; Landau §1–5; H&S 4
@@ -34,7 +34,7 @@ tags: [chapter, classical-mechanics]
 - [[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-1|§B6.4.1]] Cyclic Coordinates Have Conserved Momenta
 - [[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-2|§B6.4.2]] Noether's Theorem
 - [[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-3|§B6.4.3]] Energy Function and Time Translation
-- [[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-4|§B6.4.4]] When the Energy Function Is T + V
+- [[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-4|§B6.4.4]] When the Energy Function Is T + U
 - [[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-5|§B6.4.5]] Conservation Laws from Homogeneity and Isotropy
 - [[§B6.5 Small Oscillations about Equilibrium#^thm-b6-5-2|§B6.5.2]] Equilibria and Linearized Equations
 - [[§B6.5 Small Oscillations about Equilibrium#^thm-b6-5-3|§B6.5.3]] Normal Modes of a Quadratic Lagrangian

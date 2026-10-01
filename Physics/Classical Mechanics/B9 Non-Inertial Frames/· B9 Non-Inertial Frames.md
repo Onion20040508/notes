@@ -8,7 +8,7 @@ tags: [chapter, classical-mechanics]
 # B9 Non-Inertial Frames
 ← [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] · ↑ [[Classical Mechanics]] · [[· B10 Rigid Bodies in Three Dimensions]] →
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (7), [[· A2 Kinematics|A2 Kinematics]] (5), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (2), [[· A4 Work and Energy|A4 Work and Energy]] (2), [[· A6 Rotation|A6 Rotation]] (1), [[· A8 Gravitation|A8 Gravitation]] (3), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (1)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (7), [[· A2 Kinematics|A2 Kinematics]] (5), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (3), [[· A4 Work and Energy|A4 Work and Energy]] (2), [[· A6 Rotation|A6 Rotation]] (1), [[· A8 Gravitation|A8 Gravitation]] (3), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (1)
 **Used by:** [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (14)
 
 ## Sections
