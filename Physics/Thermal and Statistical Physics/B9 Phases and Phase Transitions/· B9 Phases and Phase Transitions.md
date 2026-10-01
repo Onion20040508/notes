@@ -13,13 +13,13 @@ tags: [chapter, thermal-and-statistical-physics]
 
 ## Sections
 - [[§B9.1 Real Gases and the van der Waals Equation]] — Blundell 26–27; Schroeder 5.3; Schwartz L9
-- [[§B9.2 Phase Equilibrium and the Clausius–Clapeyron Equation]] ★ — Blundell 28; Schroeder 5.3; Schwartz L9
-- [[§B9.3 The Classification of Phase Transitions]] ★ — Blundell 28; Schwartz L9; Schroeder 8.2
+- [[§B9.2★ Phase Equilibrium and the Clausius–Clapeyron Equation]] — Blundell 28; Schroeder 5.3; Schwartz L9
+- [[§B9.3★ The Classification of Phase Transitions]] — Blundell 28; Schwartz L9; Schroeder 8.2
 
 ## Laws
 - [[§B9.1 Real Gases and the van der Waals Equation#^law-b9-1-5|§B9.1.5]] Law of Corresponding States
-- [[§B9.3 The Classification of Phase Transitions#^law-b9-3-2|§B9.3.2]] Trouton's Rule
-- [[§B9.3 The Classification of Phase Transitions#^law-b9-3-4|§B9.3.4]] Universality of Critical Exponents
+- [[§B9.3★ The Classification of Phase Transitions#^law-b9-3-2|§B9.3.2]] Trouton's Rule
+- [[§B9.3★ The Classification of Phase Transitions#^law-b9-3-4|§B9.3.4]] Universality of Critical Exponents
 
 ## Theorems
 - [[§B9.1 Real Gases and the van der Waals Equation#^thm-b9-1-2|§B9.1.2]] Thermodynamics of the van der Waals Gas
@@ -29,15 +29,15 @@ tags: [chapter, thermal-and-statistical-physics]
 - [[§B9.1 Real Gases and the van der Waals Equation#^thm-b9-1-7|§B9.1.7]] Virial Expansion of the van der Waals Gas; Boyle Temperature
 - [[§B9.1 Real Gases and the van der Waals Equation#^thm-b9-1-8|§B9.1.8]] Microscopic Meaning of the van der Waals Constants
 - [[§B9.1 Real Gases and the van der Waals Equation#^thm-b9-1-9|§B9.1.9]] Joule–Thomson Inversion Temperature
-- [[§B9.2 Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-1|§B9.2.1]] Conditions for Phase Equilibrium
-- [[§B9.2 Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-2|§B9.2.2]] Latent Heat as a Jump in Entropy and Enthalpy
-- [[§B9.2 Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-3|§B9.2.3]] Clausius–Clapeyron Equation
-- [[§B9.2 Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-4|§B9.2.4]] The Vapour-Pressure Curve
-- [[§B9.2 Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-5|§B9.2.5]] Gibbs Phase Rule
-- [[§B9.2 Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-6|§B9.2.6]] Maxwell Construction
-- [[§B9.2 Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-7|§B9.2.7]] Latent Heat of the van der Waals Fluid
-- [[§B9.3 The Classification of Phase Transitions#^thm-b9-3-1|§B9.3.1]] Signatures of a First-Order Transition
-- [[§B9.3 The Classification of Phase Transitions#^thm-b9-3-3|§B9.3.3]] The van der Waals Fluid near Its Critical Point
+- [[§B9.2★ Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-1|§B9.2.1]] Conditions for Phase Equilibrium
+- [[§B9.2★ Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-2|§B9.2.2]] Latent Heat as a Jump in Entropy and Enthalpy
+- [[§B9.2★ Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-3|§B9.2.3]] Clausius–Clapeyron Equation
+- [[§B9.2★ Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-4|§B9.2.4]] The Vapour-Pressure Curve
+- [[§B9.2★ Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-5|§B9.2.5]] Gibbs Phase Rule
+- [[§B9.2★ Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-6|§B9.2.6]] Maxwell Construction
+- [[§B9.2★ Phase Equilibrium and the Clausius–Clapeyron Equation#^thm-b9-2-7|§B9.2.7]] Latent Heat of the van der Waals Fluid
+- [[§B9.3★ The Classification of Phase Transitions#^thm-b9-3-1|§B9.3.1]] Signatures of a First-Order Transition
+- [[§B9.3★ The Classification of Phase Transitions#^thm-b9-3-3|§B9.3.3]] The van der Waals Fluid near Its Critical Point
 
 ## Models
 - [[§B9.1 Real Gases and the van der Waals Equation#^mod-b9-1-1|§B9.1.1]] The van der Waals Gas

@@ -9,7 +9,7 @@ tags: [chapter, thermal-and-statistical-physics]
 ← [[· A3 The First Law of Thermodynamics]] · ↑ [[Thermal and Statistical Physics]] · [[· B1 The Mathematical Toolkit of Thermodynamics]] →
 
 **Builds on:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (4), [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (5), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (18), [[· B2 The Laws of Thermodynamics, Formally|B2 The Laws of Thermodynamics, Formally]] (4), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (4)
-**Used by:** [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (1), [[· B2 The Laws of Thermodynamics, Formally|B2 The Laws of Thermodynamics, Formally]] (17), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (2), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (6), [[· B9 Phases and Phase Transitions|B9 Phases and Phase Transitions]] (2), [[· B11 Photons and Phonons|B11 Photons and Phonons]] (7)
+**Used by:** [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (1), [[· B2 The Laws of Thermodynamics, Formally|B2 The Laws of Thermodynamics, Formally]] (17), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (2), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (6), [[· B9 Phases and Phase Transitions|B9 Phases and Phase Transitions]] (2), [[· B11★ Photons and Phonons|B11 Photons and Phonons]] (7)
 
 ## Sections
 - [[§A4.1 Reversible and Irreversible Processes]] — UP Vol. 2 §4.1

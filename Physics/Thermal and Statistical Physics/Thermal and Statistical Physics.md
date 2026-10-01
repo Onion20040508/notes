@@ -28,9 +28,9 @@ Temperature, heat, the kinetic theory of gases and the laws of thermodynamics, t
 - [[· B8 The Classical Ideal Gas and Equipartition]]
 - [[· B9 Phases and Phase Transitions]] (★ §B9.2, §B9.3)
 - [[· B10 Quantum Statistics]]
-- [[· B11 Photons and Phonons]] ★
-- [[· B12 Bose–Einstein Condensation]] ★
-- [[· B13 Fermi Gases]] ★
+- [[· B11★ Photons and Phonons]]
+- [[· B12★ Bose–Einstein Condensation]]
+- [[· B13★ Fermi Gases]]
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -51,9 +51,9 @@ graph TD
   B8["B8 The Classical Ideal Gas and Equipartition"]
   B9["B9 Phases and Phase Transitions"]
   B10["B10 Quantum Statistics"]
-  B11["B11 Photons and Phonons ★"]
-  B12["B12 Bose–Einstein Condensation ★"]
-  B13["B13 Fermi Gases ★"]
+  B11["B11★ Photons and Phonons"]
+  B12["B12★ Bose–Einstein Condensation"]
+  B13["B13★ Fermi Gases"]
   A2 -->|9| A3
   A1 -->|4| A4
   A2 -->|5| A4

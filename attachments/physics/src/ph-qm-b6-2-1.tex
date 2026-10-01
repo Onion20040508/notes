@@ -1,0 +1,30 @@
+% Figure for Quantum Mechanics §B6.2 (Larmor precession of <S> about B = B0 k, computed from Theorem §B6.2.3 with gamma > 0, alpha = 35 degrees; dots at time steps pi/(4 omega)).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small,
+  x={(-0.55cm,-0.40cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}]
+  \def\L{3.2}\def\al{35}
+  \pgfmathsetmacro{\R}{\L*sin(\al)}\pgfmathsetmacro{\H}{\L*cos(\al)}
+  % axes
+  \draw[->, thin, black!55] (0,0,0) -- (2.6,0,0) node[below left, font=\scriptsize] {$x$};
+  \draw[->, thin, black!55] (0,0,0) -- (0,3.0,0) node[right, font=\scriptsize] {$y$};
+  \draw[->, thin, black!55] (0,0,0) -- (0,0,4.5) node[above, font=\scriptsize] {$z$};
+  % field
+  \draw[->, very thick, black!70] (0,-2.6,0.2) -- (0,-2.6,2.6) node[above, font=\small] {$\mathbf B = B_0\hat k$};
+  % cone generators
+  \draw[black!35, dashed] (0,0,0) -- (0,\R,\H);
+  \draw[black!35, dashed] (0,0,0) -- (0,-\R,\H);
+  % precession circle
+  \draw[black!55, thin] plot[domain=0:360, samples=120, variable=\t] ({\R*cos(\t)},{\R*sin(\t)},\H);
+  % dots: phi = beta - omega t, beta = 60 deg, steps of 45 deg
+  \foreach \k in {0,...,7} {
+    \pgfmathsetmacro{\ph}{60-45*\k}
+    \fill[figR] ({\R*cos(\ph)},{\R*sin(\ph)},\H) circle (1.6pt);
+  }
+  % sense of motion (phi decreasing)
+  \draw[->, figR, thick] plot[domain=50:-10, samples=30, variable=\t] ({(\R+0.35)*cos(\t)},{(\R+0.35)*sin(\t)},\H);
+  % <S> at the first dot
+  \draw[->, very thick, figB] (0,0,0) -- ({\R*cos(60)},{\R*sin(60)},\H) node[above right, xshift=-2pt] {$\langle\mathbf S\rangle$};
+  % angle alpha
+  \draw[black!60, thin] plot[domain=0:\al, samples=20, variable=\a] ({1.1*sin(\a)*cos(60)},{1.1*sin(\a)*sin(60)},{1.1*cos(\a)});
+  \node[font=\scriptsize, black!70] at ({0.0},{0.55},{1.55}) {$\alpha$};
+  \node[font=\scriptsize, figR, align=left, anchor=west] at (0,2.4,3.35) {$\omega = \gamma B_0$\\ clockwise from above};
+\end{tikzpicture}

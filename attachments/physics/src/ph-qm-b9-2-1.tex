@@ -1,0 +1,21 @@
+% Figure for Quantum Mechanics §B9.2 (hydrogen molecule ion in the LCAO trial state: upper bound on the total energy, in units of |E_1| = 13.6 eV, against x = R/a for the bonding (+) combination, Griffiths eq. (8.52), and the antibonding (-) combination, Griffiths Problem 8.10; the line -1 is a hydrogen atom plus a free proton).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9.8cm, height=6.2cm, xmin=0, xmax=7, ymin=-1.4, ymax=0.6,
+      xlabel={$x = R/a$}, ylabel={$E/|E_1|$},
+      xtick={0,1,2,3,4,5,6,7}, ytick={-1.2,-1,-0.8,-0.6,-0.4,-0.2,0,0.2,0.4},
+      yticklabel style={/pgf/number format/fixed},
+      xlabel style={at={(axis description cs:0.5,-0.08)}, anchor=north},
+      ylabel style={at={(axis description cs:0,1.02)}, anchor=south, rotate=-90}]
+    \addplot[black!45, thin, dashed, domain=0:7, samples=2] {-1};
+    \addplot[figB, very thick, domain=0.62:7, samples=220]
+      {-1+(2/x)*((1-(2/3)*x^2)*exp(-x)+(1+x)*exp(-2*x))/(1+(1+x+x^2/3)*exp(-x))};
+    \addplot[figR, thick, domain=1.05:7, samples=220]
+      {-1-2*((1/x-(1+1/x)*exp(-2*x))-(1+x)*exp(-x))/(1-(1+x+x^2/3)*exp(-x))+2/x};
+    \draw[black!55, thin, densely dotted] (axis cs:2.493,-1.4) -- (axis cs:2.493,-1.1297);
+    \fill[figB] (axis cs:2.493,-1.1297) circle (1.6pt);
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:2.6,-1.16) {minimum: $R = 2.49\,a$, $E = -1.130\,|E_1|$};
+    \node[figB, font=\scriptsize, anchor=north] at (axis cs:5.3,-1.045) {bonding $(+)$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.7,0.2) {antibonding $(-)$};
+    \node[black!60, font=\scriptsize, anchor=south east] at (axis cs:6.95,-0.99) {H + p};
+  \end{axis}
+\end{tikzpicture}

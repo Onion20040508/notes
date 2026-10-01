@@ -1,0 +1,27 @@
+% Figure for Quantum Mechanics §B6.2 (Example §B6.2.2, PHY 308 HW 6.7: spin-flip probability relative to a precessing field, theta = 30 deg, gamma > 0, computed from P = (omega sin theta/Omega)^2 sin^2(Omega t/2)).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=left, width=7.0cm, height=4.8cm, xmin=0, xmax=22.5, ymin=0, ymax=1.12,
+      xlabel={$\omega_1 t$}, ylabel={$P(t)$},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={0,5,10,15,20}, ytick={0.25,0.5,0.75,1}, samples=300, clip=false, title={\small (a) probability of reversal}]
+    \addplot[figB, domain=0:22] {sin(deg(0.5*0.57735*x))^2};
+    \addplot[figR, domain=0:22] {0.066987*sin(deg(0.5*1.93185*x))^2};
+    \addplot[figG, domain=0:22] {0.039447*sin(deg(0.5*0.75525*x))^2};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:7.2,0.97) {$\omega = -\omega_1/\cos\theta$};
+    \node[font=\scriptsize, figR, anchor=south west] at (axis cs:12.5,0.22) {$\omega = +\omega_1$};
+    \node[font=\scriptsize, figG, anchor=south west] at (axis cs:15.2,0.09) {$\omega = -0.3\,\omega_1$};
+    \draw[figR, thin] (axis cs:13.2,0.22) -- (axis cs:12.3,0.07);
+    \draw[figG, thin] (axis cs:15.8,0.09) -- (axis cs:16.6,0.042);
+  \end{axis}
+  \begin{axis}[nfig, at={(left.south east)}, xshift=1.5cm, anchor=south west, width=7.0cm, height=4.8cm,
+      xmin=-4.2, xmax=4.2, ymin=0, ymax=1.12, axis x line=bottom, axis y line=left,
+      xlabel={$\omega/\omega_1$}, ylabel={$P_{\max}$},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={-4,-2,0,2,4}, ytick={0.25,0.5,0.75,1}, samples=400, clip=false, title={\small (b) maximum over time}]
+    \addplot[black!45, dashed, thin, domain=-4:4] {0.25};
+    \addplot[figB, domain=-4:4] {0.25*x^2/(1+x^2+1.7320508*x)};
+    \draw[black!50, thin] (axis cs:-1.1547,0) -- (axis cs:-1.1547,1.0);
+    \node[font=\scriptsize, black!70, anchor=south] at (axis cs:-1.1547,1.02) {$-1/\cos\theta$};
+    \node[font=\scriptsize, black!60, anchor=south west] at (axis cs:1.6,0.26) {$\sin^2\theta$};
+  \end{axis}
+\end{tikzpicture}

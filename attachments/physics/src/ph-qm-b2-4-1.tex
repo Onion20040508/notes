@@ -1,0 +1,19 @@
+% Figure for Quantum Mechanics §B2.4 (Example: energy-time relation for Psi = (psi_1 + psi_2)/sqrt2 in the infinite well, observable x; Griffiths Problem 3.20). Left: sigma_H sigma_x and (hbar/2)|d<x>/dt| in units hbar omega L (omega = E_1/hbar) against t/T, T = 2 pi/(3 omega): sigma_H = 1.5 hbar omega, sigma_x^2 = L^2 [1/12 - 5/(16 pi^2) - (256/(81 pi^4)) cos^2(3 omega t)], d<x>/dt = (16 L omega/(3 pi^2)) sin(3 omega t). Right: Delta E Delta t/hbar = sqrt(1/4 + 0.14813/sin^2) >= 0.631. Computed.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=a, width=7.6cm, height=5.4cm, xmin=0, xmax=2.05, ymin=0, ymax=0.42,
+      xtick={0,0.5,1,1.5,2}, xticklabels={$0$,$T/2$,$T$,$3T/2$,$2T$}, ytick={0,0.1,0.2,0.3,0.4},
+      xlabel={$t$}, ylabel={units of $\hbar\omega L$}, legend style={draw=none, font=\scriptsize, at={(0.5,1.03)}, anchor=south, legend columns=2, /tikz/every even column/.append style={column sep=8pt}}]
+    \addplot[figB, very thick, domain=0:2, samples=300] {1.5*sqrt(0.051670-0.032446*cos(360*x)^2)};
+    \addplot[figR, very thick, domain=0:2, samples=300] {0.27019*abs(sin(360*x))};
+    \legend{$\sigma_H\sigma_x$, $\tfrac{\hbar}{2}\lvert d\langle x\rangle/dt\rvert$}
+  \end{axis}
+  \begin{axis}[nfig, at={(a.east)}, anchor=west, xshift=1.2cm, width=6.2cm, height=5.4cm, xmin=0, xmax=2.05, ymin=0, ymax=2.2,
+      xtick={0,0.5,1,1.5,2}, xticklabels={$0$,$T/2$,$T$,$3T/2$,$2T$}, ytick={0,0.631,1,1.5,2}, yticklabels={$0$,$0.63$,$1$,$1.5$,$2$},
+      xlabel={$t$}, ylabel={$\Delta E\,\Delta t/\hbar$}, ylabel style={yshift=-6pt}, restrict y to domain=0:3, unbounded coords=jump]
+    \draw[black!55, thin, dashed] (axis cs:0,0.5) -- (axis cs:2.05,0.5);
+    \node[black!60, font=\scriptsize, anchor=north east] at (axis cs:2.0,0.48) {bound $\tfrac12$ of (3.76)};
+    \addplot[figB, very thick, domain=0.004:0.996, samples=300] {sqrt(0.25+0.14813/(sin(360*x)^2))};
+    \addplot[figB, very thick, domain=1.004:1.996, samples=300] {sqrt(0.25+0.14813/(sin(360*x)^2))};
+    \draw[figB, thin, densely dotted] (axis cs:0,0.631) -- (axis cs:0.25,0.631);
+  \end{axis}
+\end{tikzpicture}
