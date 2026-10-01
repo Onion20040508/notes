@@ -8,7 +8,7 @@ tags: [linear-algebra]
 ---
 ← [[§18 Commuting Operators]] · ↑ [[· 6 Inner Product Spaces]] · [[§20 Orthonormal Bases]] →
 
-> [!definition] 6.1 Dot product
+> [!definition] Definition 6.1: Dot product
 > For $x,y\in\R^n$ the *dot product* is
 > $$
 > x\cdot y=x_1y_1+\dots+x_ny_n .
@@ -17,13 +17,13 @@ tags: [linear-algebra]
 
 ^ladr-6-1
 
-> [!remark] Why the complex case needs conjugates
+> [!remark] Remark: Why the complex case needs conjugates
 > For $z\in\C^n$ the length is $\|z\|^2=|z_1|^2+\dots+|z_n|^2=z_1\bar z_1+\dots+z_n\bar z_n$, which suggests pairing $w$ with $z$ as $w_1\bar z_1+\dots+w_n\bar z_n$. Without the bar, $(i)\cdot(i)=-1<0$.
 
 > [!remark]- Connections
 > - Abstracted in [[§19 Inner Products and Norms#^ladr-6-2|6.2]].
 
-> [!definition] 6.2 Inner product
+> [!definition] Definition 6.2: Inner product
 > An *inner product* on $V$ is a function $(u,v)\mapsto\langle u,v\rangle\in\F$ with
 > - **positivity** $\langle v,v\rangle\ge0$;
 > - **definiteness** $\langle v,v\rangle=0$ iff $v=0$;
@@ -35,13 +35,13 @@ tags: [linear-algebra]
 
 ^ladr-6-2
 
-> [!remark] Convention warning (physics)
+> [!remark] Remark: Convention warning (physics)
 > Axler is linear in the **first** slot and conjugate-linear in the second. Physics (Dirac notation, and your PHY 513 conventions) is linear in the **second** slot: $\langle\psi|\phi\rangle_{\text{phys}}=\langle\phi,\psi\rangle_{\text{Axler}}$. Every formula with a conjugate moves slots when translating, e.g. [[§20 Orthonormal Bases#^ladr-6-30|6.30]](c) and [[Riesz representation theorem|6.42]].
 
 > [!remark]- Connections
 > - Basic consequences: [[§19 Inner Products and Norms#^ladr-6-6|6.6]]. Norm: [[§19 Inner Products and Norms#^ladr-6-7|6.7]].
 
-> [!example] 6.3 Inner products (p. 184)
+> [!example] Example 6.3: Inner products (p. 184)
 > - (a) **Euclidean** on $\F^n$: $\langle w,z\rangle=w_1\bar z_1+\dots+w_n\bar z_n$.
 > - (b) **Weighted**: $\langle w,z\rangle=c_1w_1\bar z_1+\dots+c_nw_n\bar z_n$ for fixed $c_k>0$ (positivity needs every $c_k>0$).
 > - (c) On continuous real functions on $[-1,1]$: $\langle f,g\rangle=\int_{-1}^1fg$. Definiteness uses continuity: a continuous $f\ge0$ with $\int f^2=0$ is $0$.
@@ -50,16 +50,16 @@ tags: [linear-algebra]
 
 ^ladr-6-3
 
-> [!definition] 6.4 Inner product space
+> [!definition] Definition 6.4: Inner product space
 > An *inner product space* is a vector space $V$ together with an inner product on $V$. $\F^n$ always carries the Euclidean inner product ([[§19 Inner Products and Norms#^ladr-6-3|6.3]](a)) unless said otherwise.
 
 ^ladr-6-4
 
-> [!remark] 6.5 Notation: V, W (p. 185)
+> [!remark] Notation 6.5: V, W (p. 185)
 
 ^ladr-6-5
 
-> [!theorem] 6.6 Basic properties of an inner product
+> [!theorem] Theorem 6.6: Basic properties of an inner product
 > In an inner product space:
 > - (a) for fixed $v$, $u\mapsto\langle u,v\rangle$ is linear $V\to\F$;
 > - (b) $\langle0,v\rangle=0$;
@@ -69,10 +69,10 @@ tags: [linear-algebra]
 
 ^ladr-6-6
 
-> [!remark] Sesquilinear
+> [!remark] Remark: Sesquilinear
 > So $\langle\cdot,\cdot\rangle$ is linear in the first slot and conjugate-linear in the second ('one and a half' linear).
 
-> [!proof]+
+> [!proof]+ Proof
 > (a) is additivity and homogeneity in the first slot. (b) follows from (a) and [[§7 Vector Space of Linear Maps#^ladr-3-10|3.10]]. (c) $\langle v,0\rangle=\overline{\langle0,v\rangle}=0$. (d) $\langle u,v+w\rangle=\overline{\langle v+w,u\rangle}=\overline{\langle v,u\rangle}+\overline{\langle w,u\rangle}=\langle u,v\rangle+\langle u,w\rangle$. (e) $\langle u,\lambda v\rangle=\overline{\lambda\langle v,u\rangle}=\bar\lambda\,\overline{\langle v,u\rangle}=\bar\lambda\langle u,v\rangle$.
 
 *Uses:* [[§7 Vector Space of Linear Maps#^ladr-3-10|3.10]]
@@ -80,7 +80,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - (a) is the functional that [[Riesz representation theorem|6.42]] shows is the only kind.
 
-> [!definition] 6.7 Norm, ‖v‖
+> [!definition] Definition 6.7: Norm, ‖v‖
 > The *norm* of $v\in V$ is $\|v\|=\sqrt{\langle v,v\rangle}$.
 
 ^ladr-6-7
@@ -88,78 +88,78 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Properties: [[§19 Inner Products and Norms#^ladr-6-9|6.9]], [[Triangle inequality|6.17]]. Whether a norm comes from an inner product is decided by [[§19 Inner Products and Norms#^ladr-6-21|6.21]].
 
-> [!example] 6.8 Norms (p. 186)
+> [!example] Example 6.8: Norms (p. 186)
 > - (a) In $\F^n$: $\|(z_1,\dots,z_n)\|=\sqrt{|z_1|^2+\dots+|z_n|^2}$.
 > - (b) With [[§19 Inner Products and Norms#^ladr-6-3|6.3]](c): $\|f\|=\sqrt{\int_{-1}^1f^2}$, the $L^2$ norm. A function can have a small $L^2$ norm while being large at some points.
 
 ^ladr-6-8
 
-> [!theorem] 6.9 Basic properties of the norm
+> [!theorem] Theorem 6.9: Basic properties of the norm
 > For $v\in V$: (a) $\|v\|=0$ iff $v=0$; (b) $\|\lambda v\|=|\lambda|\,\|v\|$ for all $\lambda\in\F$.
 
 ^ladr-6-9
 
-> [!remark] Working with squares
+> [!remark] Remark: Working with squares
 > Norms squared are inner products and expand algebraically; this is the standard move.
 
-> [!proof]+
+> [!proof]+ Proof
 > (a) is definiteness. (b) $\|\lambda v\|^2=\langle\lambda v,\lambda v\rangle=\lambda\bar\lambda\langle v,v\rangle=|\lambda|^2\|v\|^2$ ([[§19 Inner Products and Norms#^ladr-6-6|6.6]]); take square roots.
 
 *Uses:* [[§19 Inner Products and Norms#^ladr-6-6|6.6]]
 
-> [!definition] 6.10 Orthogonal
+> [!definition] Definition 6.10: Orthogonal
 > $u,v\in V$ are *orthogonal* if $\langle u,v\rangle=0$ (symmetric in $u,v$ by conjugate symmetry).
 
 ^ladr-6-10
 
-> [!remark] Geometry
+> [!remark] Remark: Geometry
 > In $\R^2$, $\langle u,v\rangle=\|u\|\|v\|\cos\theta$, so orthogonal means perpendicular.
 
 > [!remark]- Connections
 > - Pythagoras: [[§19 Inner Products and Norms#^ladr-6-12|6.12]]. Orthogonal complements: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|6.46]].
 
-> [!theorem] 6.11 Orthogonality and 0
+> [!theorem] Theorem 6.11: Orthogonality and 0
 > (a) $0$ is orthogonal to every vector. (b) $0$ is the only vector orthogonal to itself.
 
 ^ladr-6-11
 
-> [!proof]+
+> [!proof]+ Proof
 > (a) is [[§19 Inner Products and Norms#^ladr-6-6|6.6]](b). (b) $\langle v,v\rangle=0$ forces $v=0$ by definiteness.
 
 *Uses:* [[§19 Inner Products and Norms#^ladr-6-6|6.6]]
 
-> [!theorem] 6.12 Pythagorean theorem
+> [!theorem] Theorem 6.12: Pythagorean theorem
 > If $u,v\in V$ are orthogonal, then $\|u+v\|^2=\|u\|^2+\|v\|^2$.
 
 ^ladr-6-12
 
-> [!remark] Converse
+> [!remark] Remark: Converse
 > Over $\R$ the converse holds (the expansion shows $2\langle u,v\rangle=0$). Over $\C$ it fails: $u=1$, $v=i$ in $\C$ satisfy the equation but $\langle u,v\rangle=-i\ne0$; only $\operatorname{Re}\langle u,v\rangle=0$ follows.
 
-> [!proof]+
+> [!proof]+ Proof
 > $\|u+v\|^2=\langle u,u\rangle+\langle u,v\rangle+\langle v,u\rangle+\langle v,v\rangle=\|u\|^2+\|v\|^2$.
 
 > [!remark]- Connections
 > - Used in [[Cauchy–Schwarz inequality|6.14]], [[§20 Orthonormal Bases#^ladr-6-24|6.24]], [[§20 Orthonormal Bases#^ladr-6-26|6.26]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|6.61]].
 
-> [!theorem] 6.13 An orthogonal decomposition
+> [!theorem] Theorem 6.13: An orthogonal decomposition
 > Let $u,v\in V$, $v\ne0$. Set $c=\dfrac{\langle u,v\rangle}{\|v\|^2}$ and $w=u-cv$. Then $u=cv+w$ and $\langle w,v\rangle=0$.
 
 ^ladr-6-13
 
-> [!proof]+
+> [!proof]+ Proof
 > $\langle w,v\rangle=\langle u,v\rangle-c\|v\|^2=0$. (This is how $c$ was found: require $\langle u-cv,v\rangle=0$ and solve.)
 
 > [!remark]- Connections
 > - $cv$ is the orthogonal projection of $u$ onto $\Span(v)$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-56|6.56]]). Iterated, this is Gram–Schmidt ([[Gram–Schmidt procedure|6.32]]). Used for [[Cauchy–Schwarz inequality|6.14]].
 
 %% ex:6.13-fig %%
-> [!example] The orthogonal decomposition, pictured
+> [!example] Example: The orthogonal decomposition, pictured
 > $cv$ is the foot of the perpendicular from $u$ to the line $\Span(v)$, and $w=u-cv$ is the perpendicular.
 >
 > ![[ladr-6.13-orth-decomp.svg|340]]
 
-> [!theorem] 6.14 Cauchy–Schwarz inequality
+> [!theorem] Theorem 6.14: Cauchy–Schwarz inequality
 > For $u,v\in V$,
 > $$
 > |\langle u,v\rangle|\le\|u\|\,\|v\|,
@@ -168,7 +168,7 @@ tags: [linear-algebra]
 
 ^ladr-6-14
 
-> [!proof]+
+> [!proof]+ Proof
 > If $v=0$ both sides are $0$. Otherwise write $u=\frac{\langle u,v\rangle}{\|v\|^2}v+w$ with $w\perp v$ ([[§19 Inner Products and Norms#^ladr-6-13|6.13]]). By [[§19 Inner Products and Norms#^ladr-6-12|6.12]],
 > $$
 > \|u\|^2=\frac{|\langle u,v\rangle|^2}{\|v\|^2}+\|w\|^2\ \ge\ \frac{|\langle u,v\rangle|^2}{\|v\|^2}.
@@ -178,12 +178,12 @@ tags: [linear-algebra]
 *Uses:* [[§19 Inner Products and Norms#^ladr-6-13|6.13]], [[§19 Inner Products and Norms#^ladr-6-12|6.12]]
 
 %% ex:6.14-fig %%
-> [!example] Cauchy–Schwarz as leg $\le$ hypotenuse
+> [!example] Example: Cauchy–Schwarz as leg $\le$ hypotenuse
 > In the decomposition $u=cv+w$ of [[§19 Inner Products and Norms#^ladr-6-13|6.13]] the right triangle has hypotenuse $\|u\|$ and legs $\|cv\|=\frac{|\langle u,v\rangle|}{\|v\|}$ and $\|w\|$. A leg is at most the hypotenuse: that is the inequality. Equality means $w=0$, i.e. $u\in\Span(v)$.
 >
 > ![[ladr-6.14-cauchy-schwarz.svg|360]]
 
-> [!example] 6.16 Cauchy–Schwarz inequality (p. 189)
+> [!example] Example 6.16: Cauchy–Schwarz inequality (p. 189)
 > - (a) For real $x_k,y_k$: $(x_1y_1+\dots+x_ny_n)^2\le(x_1^2+\dots+x_n^2)(y_1^2+\dots+y_n^2)$.
 > - (b) For continuous real $f,g$ on $[-1,1]$: $\Big|\int_{-1}^1fg\Big|^2\le\Big(\int_{-1}^1f^2\Big)\Big(\int_{-1}^1g^2\Big)$.
 >
@@ -191,7 +191,7 @@ tags: [linear-algebra]
 
 ^ladr-6-16
 
-> [!theorem] 6.17 Triangle inequality
+> [!theorem] Theorem 6.17: Triangle inequality
 > For $u,v\in V$,
 > $$
 > \|u+v\|\le\|u\|+\|v\|,
@@ -200,10 +200,10 @@ tags: [linear-algebra]
 
 ^ladr-6-17
 
-> [!remark] Reverse form
+> [!remark] Remark: Reverse form
 > $\big|\|u\|-\|v\|\big|\le\|u-v\|$, by applying the inequality to $u=(u-v)+v$ and symmetrically.
 
-> [!proof]+
+> [!proof]+ Proof
 > $$
 > \|u+v\|^2=\|u\|^2+\|v\|^2+2\operatorname{Re}\langle u,v\rangle\le\|u\|^2+\|v\|^2+2|\langle u,v\rangle|\le\|u\|^2+\|v\|^2+2\|u\|\|v\|=(\|u\|+\|v\|)^2,
 > $$
@@ -211,7 +211,7 @@ tags: [linear-algebra]
 
 *Uses:* [[Cauchy–Schwarz inequality|6.14]]
 
-> [!theorem] 6.21 Parallelogram equality
+> [!theorem] Theorem 6.21: Parallelogram equality
 > For $u,v\in V$,
 > $$
 > \|u+v\|^2+\|u-v\|^2=2\big(\|u\|^2+\|v\|^2\big).
@@ -219,17 +219,17 @@ tags: [linear-algebra]
 
 ^ladr-6-21
 
-> [!remark] Which norms come from inner products
+> [!remark] Remark: Which norms come from inner products
 > A norm comes from an inner product iff it satisfies this identity (Jordan–von Neumann); the inner product is then recovered by polarization, e.g. over $\R$: $\langle u,v\rangle=\tfrac14\big(\|u+v\|^2-\|u-v\|^2\big)$. The max-norm on $\R^2$ fails it: $u=(1,0)$, $v=(0,1)$ give $1+1\ne4$.
 
-> [!proof]+
+> [!proof]+ Proof
 > Expand both squares: the cross terms $\pm(\langle u,v\rangle+\langle v,u\rangle)$ cancel, leaving $2\|u\|^2+2\|v\|^2$.
 
 > [!remark]- Connections
 > - Geometry: diagonals of a parallelogram (figure below).
 
 %% ex:6.21-fig %%
-> [!example] The parallelogram
+> [!example] Example: The parallelogram
 > The sides are $u,v$ (each twice) and the diagonals $u+v$, $u-v$: the sum of the squares of the diagonals equals the sum of the squares of the four sides.
 >
 > ![[ladr-6.21-parallelogram.svg|340]]

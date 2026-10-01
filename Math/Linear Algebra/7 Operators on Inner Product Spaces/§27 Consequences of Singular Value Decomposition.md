@@ -8,12 +8,12 @@ tags: [linear-algebra]
 ---
 ← [[§26 Singular Value Decomposition]] · ↑ [[· 7 Operators on Inner Product Spaces]] · [[§28 Generalized Eigenvectors and Nilpotent Operators]] →
 
-> [!theorem] 7.82 Upper bound for ‖Tv‖
+> [!theorem] Theorem 7.82: Upper bound for ‖Tv‖
 > If $s_1$ is the largest singular value of $T\in\Lin(V,W)$, then $\|Tv\|\le s_1\|v\|$ for all $v$, with equality for $v=e_1$.
 
 ^ladr-7-82
 
-> [!proof]+
+> [!proof]+ Proof
 > From the SVD, $\|Tv\|^2=\sum_ks_k^2|\langle v,e_k\rangle|^2\le s_1^2\sum_k|\langle v,e_k\rangle|^2\le s_1^2\|v\|^2$ (Bessel, [[§20 Orthonormal Bases#^ladr-6-26|6.26]]). And $Te_1=s_1f_1$.
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-26|6.26]]
@@ -21,7 +21,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Hence $\max\{\|Tv\|:\|v\|\le1\}=s_1$, motivating [[§27 Consequences of Singular Value Decomposition#^ladr-7-86|7.86]].
 
-> [!definition] 7.86 Norm of a linear map, ‖⋅ ‖
+> [!definition] Definition 7.86: Norm of a linear map, ‖⋅ ‖
 > The *norm* of $T\in\Lin(V,W)$ is
 > $$
 > \|T\|=\max\{\|Tv\|:v\in V,\ \|v\|\le1\}.
@@ -30,24 +30,24 @@ tags: [linear-algebra]
 
 ^ladr-7-86
 
-> [!remark] Not an inner-product norm
+> [!remark] Remark: Not an inner-product norm
 > This operator norm generally does not come from an inner product on $\Lin(V,W)$ (it fails the parallelogram law, [[§19 Inner Products and Norms#^ladr-6-21|6.21]]). The Frobenius norm $\sqrt{\operatorname{tr}T^*T}$ does.
 
 > [!remark]- Connections
 > - Same as the operator norm in functional analysis ([[§21 Boundedness and Continuity#^prop-21-1|556 §21.1]]): there the max becomes a sup.
 
-> [!theorem] 7.87 Basic properties of norms of linear maps
+> [!theorem] Theorem 7.87: Basic properties of norms of linear maps
 > For $S,T\in\Lin(V,W)$: (a) $\|T\|\ge0$; (b) $\|T\|=0\iff T=0$; (c) $\|\lambda T\|=|\lambda|\|T\|$; (d) $\|S+T\|\le\|S\|+\|T\|$.
 
 ^ladr-7-87
 
-> [!remark] Distance
+> [!remark] Remark: Distance
 > $\|S-T\|$ is a distance on $\Lin(V,W)$; e.g. invertible operators come arbitrarily close to any $T$.
 
-> [!proof]+
+> [!proof]+ Proof
 > (a) clear. (b) If $\|T\|=0$ then $T$ kills the unit ball, so $Tu=\|u\|T(u/\|u\|)=0$ for $u\ne0$. (c) $\max\|\lambda Tv\|=|\lambda|\max\|Tv\|$. (d) Pick $v$, $\|v\|\le1$, with $\|S+T\|=\|(S+T)v\|\le\|Sv\|+\|Tv\|\le\|S\|+\|T\|$.
 
-> [!theorem] 7.88 Alternative formulas for ‖T‖
+> [!theorem] Theorem 7.88: Alternative formulas for ‖T‖
 > For $T\in\Lin(V,W)$:
 > - (a) $\|T\|$ is the largest singular value;
 > - (b) $\|T\|=\max\{\|Tv\|:\|v\|=1\}$;
@@ -55,15 +55,15 @@ tags: [linear-algebra]
 
 ^ladr-7-88
 
-> [!remark] Computing
+> [!remark] Remark: Computing
 > (a) is the practical route: form $T^*T$, compute its largest eigenvalue numerically, take the square root.
 
-> [!proof]+
+> [!proof]+ Proof
 > (a) is [[§27 Consequences of Singular Value Decomposition#^ladr-7-82|7.82]]. (b) for $0<\|v\|\le1$, $u=v/\|v\|$ has $\|Tu\|=\|Tv\|/\|v\|\ge\|Tv\|$. (c) $\|T(v/\|v\|)\|\le\|T\|$ gives $\|Tv\|\le\|T\|\|v\|$; conversely if $\|Tv\|\le c\|v\|$ for all $v$, then $\|Tv\|\le c$ on the unit ball, so $\|T\|\le c$.
 
 *Uses:* [[§27 Consequences of Singular Value Decomposition#^ladr-7-82|7.82]]
 
-> [!example] 7.90 Norms (p. 283)
+> [!example] Example 7.90: Norms (p. 283)
 > - $\|I\|=1$.
 > - If $\mathcal{M}(T)$ on $\F^n$ is all $1$'s, then $\|T\|=n$: $T^*T=nT$ has largest eigenvalue $n^2$ (eigenvector $(1,\dots,1)$).
 > - If $T$ has an orthonormal eigenbasis with eigenvalues $\lambda_k$, then $\|T\|=\max_k|\lambda_k|$.
@@ -71,20 +71,20 @@ tags: [linear-algebra]
 
 ^ladr-7-90
 
-> [!theorem] 7.91 Norm of the adjoint
+> [!theorem] Theorem 7.91: Norm of the adjoint
 > For $T\in\Lin(V,W)$, $\|T^*\|=\|T\|$.
 
 ^ladr-7-91
 
-> [!remark] Via SVD
+> [!remark] Remark: Via SVD
 > [[§26 Singular Value Decomposition#^ladr-7-75|7.75]] shows $T$ and $T^*$ have the same positive singular values.
 
-> [!proof]+
+> [!proof]+ Proof
 > $\|T^*w\|^2=\langle TT^*w,w\rangle\le\|TT^*w\|\|w\|\le\|T\|\|T^*w\|\|w\|$ ([[Cauchy–Schwarz inequality|6.14]], [[§27 Consequences of Singular Value Decomposition#^ladr-7-88|7.88]](c)), so $\|T^*w\|\le\|T\|\|w\|$ and $\|T^*\|\le\|T\|$. Apply to $T^*$ and use $(T^*)^*=T$.
 
 *Uses:* [[Cauchy–Schwarz inequality|6.14]], [[§27 Consequences of Singular Value Decomposition#^ladr-7-88|7.88]]
 
-> [!theorem] 7.92 Best approximation by linear map whose range has dimension ≤ k
+> [!theorem] Theorem 7.92: Best approximation by linear map whose range has dimension ≤ k
 > Let $T\in\Lin(V,W)$ with positive singular values $s_1\ge\dots\ge s_m$ and $1\le k<m$. Then
 > $$
 > \min\{\|T-S\|:\dim\range S\le k\}=s_{k+1},
@@ -93,10 +93,10 @@ tags: [linear-algebra]
 
 ^ladr-7-92
 
-> [!remark] Eckart–Young
+> [!remark] Remark: Eckart–Young
 > This is the operator-norm Eckart–Young theorem: to compress a matrix to rank $k$, keep the top $k$ singular triples. Basis of PCA and image compression.
 
-> [!proof]+
+> [!proof]+ Proof
 > **$T_k$ achieves $s_{k+1}$.** $\|(T-T_k)v\|^2=\sum_{j>k}s_j^2|\langle v,e_j\rangle|^2\le s_{k+1}^2\|v\|^2$ (Bessel), with equality at $v=e_{k+1}$.
 >
 > **Nothing does better.** If $\dim\range S\le k$, the $k+1$ vectors $Se_1,\dots,Se_{k+1}$ are dependent: $\sum_{j\le k+1}a_jSe_j=0$ with $u=\sum a_je_j\ne0$. Then
@@ -105,7 +105,7 @@ tags: [linear-algebra]
 > $$
 > so $\|T-S\|\ge s_{k+1}$.
 
-> [!theorem] 7.93 Polar decomposition
+> [!theorem] Theorem 7.93: Polar decomposition
 > For $T\in\Lin(V)$ there is a unitary $S\in\Lin(V)$ with
 > $$
 > T=S\sqrt{T^*T}.
@@ -113,10 +113,10 @@ tags: [linear-algebra]
 
 ^ladr-7-93
 
-> [!remark] Number analogy and geometry
+> [!remark] Remark: Number analogy and geometry
 > $z=e^{i\theta}|z|$: every operator is a positive stretch (along the orthogonal axes $e_k$) followed by an isometry. Figure below.
 
-> [!proof]+
+> [!proof]+ Proof
 > Take an SVD $Tv=\sum_{k\le m}s_k\langle v,e_k\rangle f_k$ and extend $e$'s and $f$'s to orthonormal bases of $V$ ([[§20 Orthonormal Bases#^ladr-6-36|6.36]]). Define $Sv=\sum_{k\le n}\langle v,e_k\rangle f_k$: $\|Sv\|^2=\sum|\langle v,e_k\rangle|^2=\|v\|^2$, so $S$ is unitary. By [[§26 Singular Value Decomposition#^ladr-7-75|7.75]], $T^*Tv=\sum_ks_k^2\langle v,e_k\rangle e_k$, so $\sqrt{T^*T}v=\sum_ks_k\langle v,e_k\rangle e_k$ (this operator is positive with square $T^*T$; [[§24 Positive Operators#^ladr-7-39|7.39]]). Then $S\sqrt{T^*T}v=\sum_ks_k\langle v,e_k\rangle f_k=Tv$.
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-36|6.36]], [[§26 Singular Value Decomposition#^ladr-7-75|7.75]], [[§24 Positive Operators#^ladr-7-39|7.39]]
@@ -125,17 +125,17 @@ tags: [linear-algebra]
 > - Physics/mechanics: the polar decomposition of the deformation gradient $F=RU$ into rotation and stretch in continuum mechanics.
 
 %% ex:7.93-fig %%
-> [!example] Polar decomposition pictured
+> [!example] Example: Polar decomposition pictured
 > $\sqrt{T^*T}$ stretches along the orthogonal axes $e_1,e_2$ (by $s_1,s_2$), then the isometry $S$ rotates $e_k$ to $f_k$. Same $T$ as in the SVD figure.
 >
 > ![[ladr-7.93-polar.svg|560]]
 
-> [!definition] 7.95 Ball, B
+> [!definition] Definition 7.95: Ball, B
 > The *unit ball* $B=\{v\in V:\|v\|<1\}$.
 
 ^ladr-7-95
 
-> [!definition] 7.96 Ellipsoid, E(s1f1, ...,snfn), principal axes
+> [!definition] Definition 7.96: Ellipsoid, E(s1f1, ...,snfn), principal axes
 > For an orthonormal basis $f_1,\dots,f_n$ and $s_1,\dots,s_n>0$, the *ellipsoid* with *principal axes* $s_1f_1,\dots,s_nf_n$ is
 > $$
 > E(s_1f_1,\dots,s_nf_n)=\Big\{v\in V:\ \frac{|\langle v,f_1\rangle|^2}{s_1^2}+\dots+\frac{|\langle v,f_n\rangle|^2}{s_n^2}<1\Big\}.
@@ -144,7 +144,7 @@ tags: [linear-algebra]
 
 ^ladr-7-96
 
-> [!example] 7.97 Ellipsoids (p. 287)
+> [!example] Example 7.97: Ellipsoids (p. 287)
 > - $E(2f_1,f_2)$ in $\R^2$ with the standard basis: the ellipse $x^2/4+y^2<1$.
 > - $E(2f_1,f_2)$ with $f_1=\tfrac1{\sqrt2}(1,1)$, $f_2=\tfrac1{\sqrt2}(-1,1)$: the same ellipse rotated by $45^\circ$.
 > - $E(4f_1,3f_2,2f_3)$ in $\R^3$ (standard basis): semi-axes $4,3,2$.
@@ -152,16 +152,16 @@ tags: [linear-algebra]
 
 ^ladr-7-97
 
-> [!remark] 7.98 Notation: T(Ω) (p. 288)
+> [!remark] Notation 7.98: T(Ω) (p. 288)
 
 ^ladr-7-98
 
-> [!theorem] 7.99 Invertible operator takes ball to ellipsoid
+> [!theorem] Theorem 7.99: Invertible operator takes ball to ellipsoid
 > An invertible $T\in\Lin(V)$ maps $B$ onto the ellipsoid $E(s_1f_1,\dots,s_nf_n)$, where $Tv=\sum s_k\langle v,e_k\rangle f_k$ is an SVD.
 
 ^ladr-7-99
 
-> [!proof]+
+> [!proof]+ Proof
 > All $s_k>0$ ([[§26 Singular Value Decomposition#^ladr-7-68|7.68]]). For $v\in B$, $\langle Tv,f_k\rangle=s_k\langle v,e_k\rangle$, so $\sum_k|\langle Tv,f_k\rangle|^2/s_k^2=\sum_k|\langle v,e_k\rangle|^2=\|v\|^2<1$. Conversely, for $w$ in the ellipsoid, $v=\sum_k\frac{\langle w,f_k\rangle}{s_k}e_k$ has $\|v\|<1$ and $Tv=w$.
 
 *Uses:* [[§26 Singular Value Decomposition#^ladr-7-68|7.68]]
@@ -169,68 +169,68 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Figure after [[Singular value decomposition|7.70]].
 
-> [!theorem] 7.101 Invertible operator takes ellipsoids to ellipsoids
+> [!theorem] Theorem 7.101: Invertible operator takes ellipsoids to ellipsoids
 > An invertible $T\in\Lin(V)$ maps every ellipsoid onto an ellipsoid.
 
 ^ladr-7-101
 
-> [!proof]+
+> [!proof]+ Proof
 > $E=E(s_1f_1,\dots,s_nf_n)=S(B)$ for $S(\sum a_kf_k)=\sum a_ks_kf_k$ (check with the definition). So $T(E)=(TS)(B)$, an ellipsoid by [[§27 Consequences of Singular Value Decomposition#^ladr-7-99|7.99]].
 
 *Uses:* [[§27 Consequences of Singular Value Decomposition#^ladr-7-99|7.99]]
 
-> [!definition] 7.102 P(v1, ..., vn), parallelepiped
+> [!definition] Definition 7.102: P(v1, ..., vn), parallelepiped
 > For a basis $v_1,\dots,v_n$, $P(v_1,\dots,v_n)=\{a_1v_1+\dots+a_nv_n:a_k\in(0,1)\}$. A *parallelepiped* is a translate $u+P(v_1,\dots,v_n)$, with *edges* $v_1,\dots,v_n$.
 
 ^ladr-7-102
 
-> [!example] 7.103 Parallelepipeds (p. 289)
+> [!example] Example 7.103: Parallelepipeds (p. 289)
 > $(0.3,0.5)+P\big((1,0),(1,1)\big)$ is a parallelogram in $\R^2$ with corner $(0.3,0.5)$ and edges $(1,0)$, $(1,1)$ (open: the boundary is excluded since $a_k\in(0,1)$).
 
 ^ladr-7-103
 
-> [!theorem] 7.104 Invertible operator takes parallelepipeds to parallelepipeds
+> [!theorem] Theorem 7.104: Invertible operator takes parallelepipeds to parallelepipeds
 > If $T$ is invertible, $T\big(u+P(v_1,\dots,v_n)\big)=Tu+P(Tv_1,\dots,Tv_n)$.
 
 ^ladr-7-104
 
-> [!proof]+
+> [!proof]+ Proof
 > $Tv_1,\dots,Tv_n$ is a basis, and $T(u+\sum a_kv_k)=Tu+\sum a_kTv_k$.
 
-> [!definition] 7.105 Box
+> [!definition] Definition 7.105: Box
 > A *box* is $u+P(r_1e_1,\dots,r_ne_n)$ with $e_1,\dots,e_n$ orthonormal and $r_k>0$: a parallelepiped with orthogonal edges.
 
 ^ladr-7-105
 
-> [!example] 7.106 Boxes (p. 290)
+> [!example] Example 7.106: Boxes (p. 290)
 > - $(1,0)+P(\sqrt2e_1,\sqrt2e_2)$ with $e_1=\tfrac1{\sqrt2}(1,1)$, $e_2=\tfrac1{\sqrt2}(-1,1)$: a square of side $\sqrt2$ tilted by $45^\circ$, area $2$.
 > - $P(e_1,2e_2,e_3)$ in $\R^3$: a $1\times2\times1$ box, volume $2$.
 
 ^ladr-7-106
 
-> [!theorem] 7.107 Every invertible operator takes some boxes to boxes
+> [!theorem] Theorem 7.107: Every invertible operator takes some boxes to boxes
 > Let $T$ be invertible with SVD $Tv=\sum s_k\langle v,e_k\rangle f_k$ ($e$'s, $f$'s orthonormal bases). Then $T$ maps the box $u+P(r_1e_1,\dots,r_ne_n)$ onto the box $Tu+P(r_1s_1f_1,\dots,r_ns_nf_n)$.
 
 ^ladr-7-107
 
-> [!remark] Point
+> [!remark] Remark: Point
 > A generic box goes to a slanted parallelepiped; boxes aligned with the right singular vectors go to boxes. This is what makes volume computable ([[§27 Consequences of Singular Value Decomposition#^ladr-7-111|7.111]]).
 
-> [!proof]+
+> [!proof]+ Proof
 > $T(u+\sum a_kr_ke_k)=Tu+\sum a_kr_ks_kf_k$, since $Te_k=s_kf_k$.
 
 %% ex:7.107-fig %%
-> [!example] Boxes aligned with the singular vectors, pictured
+> [!example] Example: Boxes aligned with the singular vectors, pictured
 > Same $T$ as in the SVD figure after [[Singular value decomposition|7.70]] ($s_1=2$, $s_2=0.8$). The blue box $P(e_1,e_2)$ goes to the box $P(s_1f_1,s_2f_2)$, again with a right angle. The orange unit square, not aligned with $e_1,e_2$, goes to a slanted parallelogram. Both areas are multiplied by $s_1s_2=1.6$ ([[§27 Consequences of Singular Value Decomposition#^ladr-7-111|7.111]]).
 >
 > ![[ladr-7.107-boxes.svg|440]]
 
-> [!definition] 7.108 Volume of a box
+> [!definition] Definition 7.108: Volume of a box
 > ($\F=\R$) $\operatorname{volume}\big(u+P(r_1e_1,\dots,r_ne_n)\big)=r_1\cdots r_n$.
 
 ^ladr-7-108
 
-> [!definition] 7.109 Volume
+> [!definition] Definition 7.109: Volume
 > ($\F=\R$, informal) The volume of $\Omega\subseteq V$ is approximately the sum of the volumes of disjoint boxes approximating $\Omega$ (made rigorous by measure theory).
 
 ^ladr-7-109
@@ -238,12 +238,12 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Riemann sums in [[Single Variable Analysis]] are the one-dimensional version; Lebesgue measure makes this precise.
 
-> [!example] 7.110 Volume change by a linear map (p. 292)
+> [!example] Example 7.110: Volume change by a linear map (p. 292)
 > $Tv=2\langle v,e_1\rangle e_1+\langle v,e_2\rangle e_2$ on $\R^2$ stretches by $2$ along $e_1$. Boxes aligned with $e_1,e_2$ go to boxes of twice the width, so every approximating box doubles in area, and so does the ball: $T(B)$ has area $2\pi$. The general statement is [[§27 Consequences of Singular Value Decomposition#^ladr-7-111|7.111]].
 
 ^ladr-7-110
 
-> [!theorem] 7.111 Volume changes by a factor of the product of the singular values
+> [!theorem] Theorem 7.111: Volume changes by a factor of the product of the singular values
 > ($\F=\R$) If $T\in\Lin(V)$ is invertible and $\Omega\subseteq V$, then
 > $$
 > \operatorname{volume}T(\Omega)=(s_1\cdots s_n)\operatorname{volume}\Omega .
@@ -251,7 +251,7 @@ tags: [linear-algebra]
 
 ^ladr-7-111
 
-> [!proof]+
+> [!proof]+ Proof
 > Approximate $\Omega$ by boxes aligned with the $e_k$ of an SVD. Each $u+P(r_1e_1,\dots,r_ne_n)$ goes to the box $Tu+P(r_1s_1f_1,\dots,r_ns_nf_n)$ ([[§27 Consequences of Singular Value Decomposition#^ladr-7-107|7.107]]) of volume $s_1\cdots s_n\,r_1\cdots r_n$, and the image boxes approximate $T(\Omega)$.
 
 *Uses:* [[§27 Consequences of Singular Value Decomposition#^ladr-7-107|7.107]]
