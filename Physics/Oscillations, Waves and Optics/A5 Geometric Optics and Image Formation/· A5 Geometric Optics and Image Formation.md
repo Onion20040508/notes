@@ -9,7 +9,7 @@ tags: [chapter, oscillations-waves-and-optics]
 ← [[· A4 The Nature of Light]] · ↑ [[Oscillations, Waves and Optics]] · [[· A6 Interference]] →
 
 **Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (9)
-**Used by:** [[· A7 Diffraction|A7 Diffraction]] (1)
+**Used by:** [[· A7 Diffraction|A7 Diffraction]] (1), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (2), [[· B11 Diffraction Theory|B11 Diffraction Theory]] (2), [[· B12 Matrix Ray Optics|B12 Matrix Ray Optics]] (7)
 
 ## Sections
 - [[§A5.1 Images Formed by Mirrors]] — UP Vol. 3 §2.1–2.2

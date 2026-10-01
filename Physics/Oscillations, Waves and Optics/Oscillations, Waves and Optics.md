@@ -28,6 +28,12 @@ Oscillators, mechanical and sound waves, and light as a wave and as rays, in thr
 - [[· B5 Travelling Waves, Energy and Impedance]]
 - [[· B6 Wave Packets and Dispersion]]
 - [[· B7 Waves in Two and Three Dimensions]]
+- [[· B8 Polarization and the Jones Calculus]]
+- [[· B9 The Fresnel Equations]]
+- [[· B10 Interferometry and Coherence]]
+- [[· B11 Diffraction Theory]]
+- [[· B12 Matrix Ray Optics]]
+- [[· B13 Optics of Materials and Colour]]
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -48,6 +54,12 @@ graph TD
   B5["B5 Travelling Waves, Energy and Impedance"]
   B6["B6 Wave Packets and Dispersion"]
   B7["B7 Waves in Two and Three Dimensions"]
+  B8["B8 Polarization and the Jones Calculus"]
+  B9["B9 The Fresnel Equations"]
+  B10["B10 Interferometry and Coherence"]
+  B11["B11 Diffraction Theory"]
+  B12["B12 Matrix Ray Optics"]
+  B13["B13 Optics of Materials and Colour"]
   A1 -->|2| A2
   A2 -->|18| A3
   A2 -->|2| A4
@@ -61,6 +73,25 @@ graph TD
   A5 -->|1| A7
   A6 -->|20| A7
   A1 -->|30| B1
+  A4 -->|2| B10
+  A5 -->|2| B10
+  A6 -->|16| B10
+  A7 -->|2| B10
+  B1 -->|2| B10
+  B4 -->|13| B10
+  B9 -->|2| B10
+  A5 -->|2| B11
+  A7 -->|5| B11
+  B10 -->|1| B11
+  B4 -->|15| B11
+  B7 -->|1| B11
+  A4 -->|4| B12
+  A5 -->|7| B12
+  A4 -->|4| B13
+  B1 -->|18| B13
+  B6 -->|1| B13
+  B8 -->|4| B13
+  B9 -->|11| B13
   A1 -->|11| B2
   A3 -->|3| B2
   B1 -->|6| B2
@@ -90,10 +121,20 @@ graph TD
   B1 -->|1| B7
   B3 -->|5| B7
   B4 -->|9| B7
+  A4 -->|9| B8
+  B1 -->|2| B8
+  B7 -->|1| B8
+  A4 -->|1| B9
+  A6 -->|1| B9
+  B7 -->|1| B9
+  B8 -->|21| B9
   A7 -.->|1| A6
+  B11 -.->|3| B10
   B4 -.->|1| B3
   B5 -.->|2| B4
   B6 -.->|1| B4
+  B13 -.->|2| B8
+  B9 -.->|2| B8
 ```
 
 ## Planned

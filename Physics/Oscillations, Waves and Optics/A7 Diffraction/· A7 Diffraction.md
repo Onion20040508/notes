@@ -9,7 +9,7 @@ tags: [chapter, oscillations-waves-and-optics]
 ← [[· A6 Interference]] · ↑ [[Oscillations, Waves and Optics]] · [[· B1 Damped and Driven Oscillators]] →
 
 **Builds on:** [[· A1 Oscillations|A1 Oscillations]] (2), [[· A2 Mechanical Waves|A2 Mechanical Waves]] (1), [[· A4 The Nature of Light|A4 The Nature of Light]] (5), [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (1), [[· A6 Interference|A6 Interference]] (20)
-**Used by:** [[· A6 Interference|A6 Interference]] (1)
+**Used by:** [[· A6 Interference|A6 Interference]] (1), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (2), [[· B11 Diffraction Theory|B11 Diffraction Theory]] (5)
 
 ## Sections
 - [[§A7.1 Single-Slit Diffraction]] — UP Vol. 3 §4.1–4.2
