@@ -60,21 +60,21 @@ graph TD
   A4 -->|5| A7
   A5 -->|1| A7
   A6 -->|20| A7
-  A1 -->|26| B1
+  A1 -->|30| B1
   A1 -->|11| B2
-  A3 -->|2| B2
+  A3 -->|3| B2
   B1 -->|6| B2
-  A2 -->|15| B3
+  A2 -->|14| B3
   B1 -->|2| B3
   B2 -->|11| B3
-  A1 -->|7| B4
+  A1 -->|8| B4
   A2 -->|7| B4
   A3 -->|8| B4
   B1 -->|2| B4
   B2 -->|1| B4
   B3 -->|7| B4
   A1 -->|3| B5
-  A2 -->|6| B5
+  A2 -->|7| B5
   A3 -->|4| B5
   B1 -->|7| B5
   B3 -->|8| B5
@@ -88,7 +88,7 @@ graph TD
   A2 -->|5| B7
   A3 -->|3| B7
   B1 -->|1| B7
-  B3 -->|4| B7
+  B3 -->|5| B7
   B4 -->|9| B7
   A7 -.->|1| A6
   B4 -.->|1| B3
@@ -99,9 +99,9 @@ graph TD
 ## Planned
 Chapters without notes yet; sources in brackets (∅ = no typed source).
 
-**Level B — upper (PHY 300; French; Fowles; Schwartz Physics 15c lectures; the series Part I)**
-B1 Damped and driven oscillators, resonance [S-I §2–5; Schwartz 1–2] · B2 Coupled oscillators and normal modes [S-I §6–7; Schwartz 3] · B3 N-chain, continuum limit, wave equation [S-I §8–9; Schwartz 4] · B4 Fourier series and transforms, strings [Schwartz 5, 7–8] · B5 Travelling waves: energy, impedance, reflection [Schwartz 6, 9–10] · B6 Wavepackets and dispersion [Schwartz 11] · B7 Waves in 2D and 3D [S-I §10] · B8 Polarization and Jones calculus [Schwartz 14; Fowles 2] · B9 Fresnel equations, total internal reflection [Schwartz 15; Fowles 2] · B10 Interferometry and coherence [Fowles 3–4] · B11 Fraunhofer and Fresnel diffraction, resolution [Schwartz 19; Fowles 5] · B12 Matrix ray optics [Fowles 10] · B13 Optics of materials, colour [Schwartz 16–17; Fowles 6]
-PHY 300's lectures are handwritten scans; level B is planned from the typed sources above.
+**Level B — upper, optics (PHY 300; Fowles; Schwartz Physics 15c lectures)** — B1–B7 are written (above).
+B8 Polarization and Jones calculus [Schwartz 14; Fowles 2] · B9 Fresnel equations, total internal reflection [Schwartz 15; Fowles 2] · B10 Interferometry and coherence [Fowles 3–4] · B11 Fraunhofer and Fresnel diffraction, resolution [Schwartz 19; Fowles 5] · B12 Matrix ray optics [Fowles 10] · B13 Optics of materials, colour [Schwartz 16–17; Fowles 6]
+PHY 300's lectures are handwritten scans, and French's and Fowles's books are scans without a text layer (Fowles would need OCR).
 
 **Level C — graduate**
 C1 Fourier optics and scalar diffraction theory [∅] · C2 Lasers and Gaussian beams [Fowles 9] · C3 Statistical optics [∅] · C4 Waveguides and fibres [∅] · C5 Nonlinear optics [∅]

@@ -8,7 +8,7 @@ tags: [chapter, oscillations-waves-and-optics]
 # B5 Travelling Waves, Energy and Impedance
 ← [[· B4 Fourier Analysis and Strings]] · ↑ [[Oscillations, Waves and Optics]] · [[· B6 Wave Packets and Dispersion]] →
 
-**Builds on:** [[· A1 Oscillations|A1 Oscillations]] (3), [[· A2 Mechanical Waves|A2 Mechanical Waves]] (6), [[· A3 Sound|A3 Sound]] (4), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (7), [[· B3 From the Bead Chain to the Wave Equation|B3 From the Bead Chain to the Wave Equation]] (8), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (1)
+**Builds on:** [[· A1 Oscillations|A1 Oscillations]] (3), [[· A2 Mechanical Waves|A2 Mechanical Waves]] (7), [[· A3 Sound|A3 Sound]] (4), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (7), [[· B3 From the Bead Chain to the Wave Equation|B3 From the Bead Chain to the Wave Equation]] (8), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (1)
 **Used by:** [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (2), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (2)
 
 ## Sections

@@ -8,7 +8,7 @@ tags: [chapter, oscillations-waves-and-optics]
 # B2 Coupled Oscillators and Normal Modes
 ← [[· B1 Damped and Driven Oscillators]] · ↑ [[Oscillations, Waves and Optics]] · [[· B3 From the Bead Chain to the Wave Equation]] →
 
-**Builds on:** [[· A1 Oscillations|A1 Oscillations]] (11), [[· A3 Sound|A3 Sound]] (2), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (6)
+**Builds on:** [[· A1 Oscillations|A1 Oscillations]] (11), [[· A3 Sound|A3 Sound]] (3), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (6)
 **Used by:** [[· B3 From the Bead Chain to the Wave Equation|B3 From the Bead Chain to the Wave Equation]] (11), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (1)
 
 ## Sections

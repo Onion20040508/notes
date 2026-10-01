@@ -8,7 +8,7 @@ tags: [chapter, oscillations-waves-and-optics]
 # B1 Damped and Driven Oscillators
 ← [[· A7 Diffraction]] · ↑ [[Oscillations, Waves and Optics]] · [[· B2 Coupled Oscillators and Normal Modes]] →
 
-**Builds on:** [[· A1 Oscillations|A1 Oscillations]] (26)
+**Builds on:** [[· A1 Oscillations|A1 Oscillations]] (30)
 **Used by:** [[· B2 Coupled Oscillators and Normal Modes|B2 Coupled Oscillators and Normal Modes]] (6), [[· B3 From the Bead Chain to the Wave Equation|B3 From the Bead Chain to the Wave Equation]] (2), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (2), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (7), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (3), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (1)
 
 ## Sections

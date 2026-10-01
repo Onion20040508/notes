@@ -8,8 +8,8 @@ tags: [chapter, oscillations-waves-and-optics]
 # B3 From the Bead Chain to the Wave Equation
 ← [[· B2 Coupled Oscillators and Normal Modes]] · ↑ [[Oscillations, Waves and Optics]] · [[· B4 Fourier Analysis and Strings]] →
 
-**Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (15), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (2), [[· B2 Coupled Oscillators and Normal Modes|B2 Coupled Oscillators and Normal Modes]] (11), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (1)
-**Used by:** [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (7), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (8), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (8), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (4)
+**Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (14), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (2), [[· B2 Coupled Oscillators and Normal Modes|B2 Coupled Oscillators and Normal Modes]] (11), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (1)
+**Used by:** [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (7), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (8), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (8), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (5)
 
 ## Sections
 - [[§B3.1 The N-Mass Chain]] — Series I §8 · Schwartz L4 §1–4
