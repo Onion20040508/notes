@@ -1,0 +1,19 @@
+% Figure for Thermal Physics §A2.2 (kinetic derivation of pressure: a molecule in a box of length l reflects elastically from the wall of area A; after University Physics Vol. 2, §2.2).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  \draw[thick, black!70] (0,0) rectangle (6,3.6);
+  \fill[figB!12] (6,0) rectangle (6.25,3.6);
+  \draw[thick, figB] (6,0) -- (6,3.6);
+  \node[figB, font=\scriptsize, anchor=west] at (6.3,3.3) {wall, area $A$};
+  \draw[<->, black!55] (0,-0.35) -- (6,-0.35) node[midway, below, font=\scriptsize, black] {$l$};
+  \draw[->, thin, black!55] (-1.4,0.2) -- (-0.8,0.2) node[right, font=\scriptsize] {$x$};
+  \draw[->, thin, black!55] (-1.4,0.2) -- (-1.4,0.8) node[above, font=\scriptsize] {$y$};
+  \draw[dashed, black!40] (3.0,0.5) -- (6,2.0) -- (3.4,3.3);
+  \fill[black] (3.8,0.9) circle (2.2pt);
+  \draw[->, very thick, figB] (3.8,0.9) -- (4.8,1.4);
+  \node[figB, font=\scriptsize, anchor=north west] at (4.3,1.0) {$\vec v = (v_x, v_y)$};
+  \fill[black] (5.0,2.5) circle (2.2pt);
+  \draw[->, very thick, figB] (5.0,2.5) -- (4.0,3.0);
+  \node[figB, font=\scriptsize, anchor=east] at (3.95,3.0) {after: $(-v_x, v_y)$};
+  \draw[->, very thick, figR] (6.25,2.0) -- (7.45,2.0) node[right, font=\scriptsize, align=left] {impulse on wall\\ $2 m v_x$ per hit};
+  \node[font=\scriptsize, black!70, align=left, anchor=south west] at (0.2,0.2) {hits this wall once\\ per $\Delta t = 2l/v_x$};
+\end{tikzpicture}

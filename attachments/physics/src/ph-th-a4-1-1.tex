@@ -1,0 +1,25 @@
+% Figure for Thermal Physics §A4.1 (free expansion of an ideal gas into a vacuum, before and after; after University Physics Vol. 2, Fig. 4.2).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  % left: before
+  \fill[figB!18] (0,0) rectangle (1.6,1.8);
+  \draw[black!70, line width=1.4pt] (0,0) rectangle (3.2,1.8);
+  \draw[black!70, line width=1.4pt] (1.6,0) -- (1.6,1.8);
+  \foreach \x/\y in {0.25/0.3, 0.6/1.2, 1.0/0.55, 1.35/1.45, 0.35/0.95, 1.2/0.2, 0.85/1.6, 1.4/0.9, 0.2/1.55, 0.7/0.4}
+    \fill[figB] (\x,\y) circle (1.6pt);
+  \node[font=\scriptsize, black!70] at (2.4,0.9) {vacuum};
+  \node[font=\scriptsize, figB] at (0.8,-0.3) {$p_0,\ V,\ T$};
+  \node[font=\scriptsize, black!70] at (1.6,2.1) {before};
+  % arrows
+  \draw[->, very thick, black!70] (3.6,1.15) -- (4.6,1.15) node[midway, above, font=\scriptsize] {wall removed};
+  \draw[<-, thick, figR, dashed] (3.6,0.65) -- (4.6,0.65) node[midway, below, font=\scriptsize] {never};
+  % right: after
+  \begin{scope}[xshift=5.0cm]
+    \fill[figB!18] (0,0) rectangle (3.2,1.8);
+    \draw[black!70, line width=1.4pt] (0,0) rectangle (3.2,1.8);
+    \foreach \x/\y in {0.3/0.35, 0.9/1.3, 1.5/0.6, 2.1/1.5, 2.8/0.3, 2.5/0.95, 0.5/1.55, 1.8/0.2, 2.95/1.4, 1.2/1.0}
+      \fill[figB] (\x,\y) circle (1.6pt);
+    \node[font=\scriptsize, figB] at (1.6,-0.3) {$p_0/2,\ 2V,\ T$};
+    \node[font=\scriptsize, black!70] at (1.6,2.1) {after};
+  \end{scope}
+  \node[font=\scriptsize, black!60] at (4.1,-0.75) {insulated walls: $Q = 0$, $W = 0$, $\Delta E_{\text{int}} = 0$};
+\end{tikzpicture}

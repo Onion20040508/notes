@@ -1,0 +1,22 @@
+% Figure for Thermal Physics §A2.4 (Maxwell-Boltzmann speed distribution of nitrogen at 300 K and 900 K, with the most probable, mean and rms speeds marked at 300 K; computed from f(v) = 4 v^2/(sqrt(pi) v_p^3) exp(-v^2/v_p^2)).
+\begin{tikzpicture}[font=\small,
+  declare function={vp1=422.; vp2=731.; mb(\v,\p)=1000*4*\v^2/(sqrt(pi)*\p^3)*exp(-(\v/\p)^2);}]
+  \begin{axis}[nfig, width=10cm, height=6cm, xmin=0, xmax=2000, ymin=0, ymax=2.3,
+      xlabel={$v$ (m/s)}, ylabel={$f(v)$ ($10^{-3}$ s/m)},
+      xtick={0,500,1000,1500,2000}, ytick={0.5,1,1.5,2},
+      scaled x ticks=false, x tick label style={/pgf/number format/1000 sep={}},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south west, xshift=-12pt}]
+    \addplot[figB, domain=0:2000, samples=200] {mb(x,vp1)};
+    \addplot[figR, domain=0:2000, samples=200] {mb(x,vp2)};
+    \draw[black!55, dashed] (axis cs:422,0) -- (axis cs:422,{mb(422,vp1)});
+    \draw[black!55, dashed] (axis cs:476,0) -- (axis cs:476,{mb(476,vp1)});
+    \draw[black!55, dashed] (axis cs:517,0) -- (axis cs:517,{mb(517,vp1)});
+    \node[font=\scriptsize, anchor=north east] at (axis cs:418,0.32) {$v_p$};
+    \node[font=\scriptsize, anchor=south] at (axis cs:490,2.08) {$\bar v$};
+    \draw[black!55, thin] (axis cs:486,2.09) -- (axis cs:477,1.93);
+    \node[font=\scriptsize, anchor=north west] at (axis cs:522,0.32) {$v_{\text{rms}}$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:600,1.8) {$T = 300$ K};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1000,1.05) {$T = 900$ K};
+  \end{axis}
+\end{tikzpicture}

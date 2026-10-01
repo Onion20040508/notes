@@ -1,0 +1,17 @@
+% Figure for Thermal and Statistical Physics §A1.5 (Newton's law of cooling: iced tea warming in a 30 C room, T(t) = 30 - 25 exp(-t/tau), tau = 22.4 min; PHY 287 Problem Set 2).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, xmin=0, xmax=95, ymin=0, ymax=34,
+      xlabel={$t$ (min)}, ylabel={$T$ ($^\circ$C)},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={0,22.41,40,60,80}, xticklabels={0,$\tau$,40,60,80}, ytick={5,10,20,30}, clip=false, height=0.45\textwidth]
+    \addplot[black!55, dashed, thin, domain=0:92] {30};
+    \node[font=\scriptsize, anchor=south east] at (axis cs:92,30) {room, $30\ ^\circ$C};
+    \addplot[figB, domain=0:90, samples=120] {30 - 25*exp(-x/22.41)};
+    \addplot[only marks, mark=*, mark size=1.6pt, figR] coordinates {(5,10) (10,14) (20.53,20)};
+    \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(0,5)};
+    \node[font=\scriptsize, figR, anchor=north west] at (axis cs:5.8,9.6) {5 min};
+    \node[font=\scriptsize, figR, anchor=north west] at (axis cs:10.8,13.6) {10 min};
+    \node[font=\scriptsize, figR, anchor=north west] at (axis cs:22.5,19.6) {20.5 min};
+  \end{axis}
+\end{tikzpicture}

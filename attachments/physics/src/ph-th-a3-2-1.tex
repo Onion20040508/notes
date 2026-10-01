@@ -1,0 +1,34 @@
+% Figure for Thermal Physics §A3.2 (work is path dependent: an ideal gas goes from A to C along the isotherm AC, along ABC and along ADC; the shaded areas under each path are the work, with the numbers of University Physics Vol. 2, Example 3.4).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2mm]}]
+  \foreach \k/\ttl/\W in {0/{isotherm $AC$}/{$W = 328$ J}, 1/{path $ABC$}/{$W = 473$ J}, 2/{path $ADC$}/{$W = 236$ J}} {
+  \begin{scope}[xshift=\k*4.15cm]
+  \begin{axis}[nfig, width=4.6cm, height=4.3cm, xmin=0, xmax=5.6, ymin=0, ymax=2.75,
+      xlabel={$V$}, ylabel={$p$}, xtick={2.25,4.5}, xticklabels={$V_1$,$V_2$}, ytick={1.05,2.1}, yticklabels={$p_2$,$p_1$},
+      xlabel style={at={(axis description cs:1.03,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south}, title={\ttl}, title style={font=\small, yshift=-4pt}]
+    \addplot[black!25, domain=2.25:4.5, samples=40] {4.725/x};
+    \draw[black!25] (axis cs:2.25,2.1) -- (axis cs:4.5,2.1) -- (axis cs:4.5,1.05);
+    \draw[black!25] (axis cs:2.25,2.1) -- (axis cs:2.25,1.05) -- (axis cs:4.5,1.05);
+    \ifnum\k=0
+      \addplot[fill=figB, fill opacity=0.18, draw=none, domain=2.25:4.5, samples=40] {4.725/x} \closedcycle;
+      \addplot[figB, very thick, domain=2.25:4.5, samples=40, ->] {4.725/x};
+    \fi
+    \ifnum\k=1
+      \fill[figB, fill opacity=0.18] (axis cs:2.25,0) rectangle (axis cs:4.5,2.1);
+      \draw[figB, very thick, ->] (axis cs:2.25,2.1) -- (axis cs:4.5,2.1);
+      \draw[figB, very thick, ->] (axis cs:4.5,2.1) -- (axis cs:4.5,1.05);
+    \fi
+    \ifnum\k=2
+      \fill[figB, fill opacity=0.18] (axis cs:2.25,0) rectangle (axis cs:4.5,1.05);
+      \draw[figB, very thick, ->] (axis cs:2.25,2.1) -- (axis cs:2.25,1.05);
+      \draw[figB, very thick, ->] (axis cs:2.25,1.05) -- (axis cs:4.5,1.05);
+    \fi
+    \addplot[only marks, mark=*, mark size=1.4pt, black] coordinates {(2.25,2.1) (4.5,1.05)};
+    \node[font=\scriptsize, anchor=south east] at (axis cs:2.25,2.1) {$A$};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:4.5,2.1) {$B$};
+    \node[font=\scriptsize, anchor=north east] at (axis cs:2.25,1.05) {$D$};
+    \node[font=\scriptsize, anchor=west] at (axis cs:4.55,1.05) {$C$};
+    \node[figR, font=\scriptsize] at (axis cs:3.37,0.45) {\W};
+  \end{axis}
+  \end{scope}}
+\end{tikzpicture}

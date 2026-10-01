@@ -1,0 +1,23 @@
+% Figure for Thermal Physics §A2.3 (schematic molar heat capacity C_V/R of hydrogen gas against temperature on a log scale: translational, rotational and vibrational plateaus; after University Physics Vol. 2, Figure 2.13).
+\begin{tikzpicture}[font=\small]
+  \begin{semilogxaxis}[nfig, width=9.5cm, height=5.6cm, xmin=10, xmax=10000, ymin=0, ymax=4.2,
+      xlabel={$T$ (K)}, ylabel={$C_V/R$},
+      ytick={1.5,2.5,3.5}, yticklabels={$\tfrac32$,$\tfrac52$,$\tfrac72$},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      ymajorgrids=false]
+    \addplot[black!35, dashed, thin, domain=10:10000, samples=2] {1.5};
+    \addplot[black!35, dashed, thin, domain=10:10000, samples=2] {2.5};
+    \addplot[black!35, dashed, thin, domain=10:10000, samples=2] {3.5};
+    \addplot[figB, very thick, domain=10:10000, samples=200]
+      {1.5 + 1/(1+exp(-(ln(x)-ln(120))/0.3)) + 1/(1+exp(-(ln(x)-ln(1300))/0.35))};
+    \node[font=\scriptsize, anchor=south] at (axis cs:25,1.55) {translation};
+    \node[font=\scriptsize, anchor=south] at (axis cs:25,1.9) {$d = 3$};
+    \node[font=\scriptsize, anchor=south] at (axis cs:420,2.55) {+ rotation};
+    \node[font=\scriptsize, anchor=south] at (axis cs:420,2.9) {$d = 5$};
+    \node[font=\scriptsize, anchor=south] at (axis cs:5000,3.55) {+ vibration};
+    \node[font=\scriptsize, anchor=south] at (axis cs:5000,3.9) {$d = 7$};
+    \draw[figR, thin] (axis cs:300,0) -- (axis cs:300,2.45);
+    \node[figR, font=\scriptsize, anchor=south west] at (axis cs:300,0.15) {room temperature};
+  \end{semilogxaxis}
+\end{tikzpicture}

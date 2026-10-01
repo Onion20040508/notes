@@ -1,0 +1,22 @@
+% Figure for Thermal Physics §A4.3 (proof of Carnot's theorem: a hypothetical engine E more efficient than a reversible engine R drives R backwards; after University Physics Vol. 2, Fig. 4.10).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]},
+    res/.style={draw=black!70, thick, fill=black!6, minimum height=0.55cm, font=\scriptsize},
+    dev/.style={draw=#1, very thick, fill=#1!12, circle, minimum size=1.15cm, inner sep=1pt, font=\scriptsize, align=center},
+    fl/.style={->, very thick, #1}, lab/.style={font=\scriptsize, fill=white, inner sep=1pt}]
+  \node[res, minimum width=5.0cm] (H) at (1.6,2.3) {hot reservoir $T_h$};
+  \node[res, minimum width=5.0cm] (C) at (1.6,-1.3) {cold reservoir $T_c$};
+  \node[dev=figB] (E) at (0.2,0.5) {$E$};
+  \node[dev=figR, align=center] (R) at (2.9,0.5) {$R$\\[-1pt]\tiny reversed};
+  \draw[fl=figB] (0.2,2.0) -- (E.north) node[midway, lab, left=2pt] {$Q_h'$};
+  \draw[fl=figB] (E.south) -- (0.2,-1.0) node[midway, lab, left=2pt] {$Q_c'$};
+  \draw[fl=black!70] (E.east) -- (R.west) node[midway, lab, above=2pt] {$W$};
+  \draw[fl=figR] (2.9,-1.0) -- (R.south) node[midway, lab, right=2pt] {$Q_c$};
+  \draw[fl=figR] (R.north) -- (2.9,2.0) node[midway, lab, right=2pt] {$Q_h$};
+  \node[font=\scriptsize, black!60, align=center] at (1.55,-0.45) {if $e_E > e_R$:\\[2pt]$Q_h' < Q_h$\\[2pt]$Q_c' < Q_c$};
+  \node[font=\large] at (5.4,0.5) {$=$};
+  \node[res, minimum width=2.2cm] at (7.2,2.3) {hot $T_h$};
+  \node[res, minimum width=2.2cm] at (7.2,-1.3) {cold $T_c$};
+  \node[dev=figR] (N) at (7.2,0.5) {perfect\\refrig.};
+  \draw[fl=figR] (7.2,-1.0) -- (N.south) node[midway, lab, right=2pt] {$Q_h - Q_h'$};
+  \draw[fl=figR] (N.north) -- (7.2,2.0) node[midway, lab, right=2pt] {$Q_h - Q_h'$};
+\end{tikzpicture}

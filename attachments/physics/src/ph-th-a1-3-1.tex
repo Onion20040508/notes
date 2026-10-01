@@ -1,0 +1,16 @@
+% Figure for Thermal and Statistical Physics §A1.3 (Debye T^3 molar heat capacity of rock salt, C = k (T/theta)^3 with k = 1940 J/(mol K), theta = 281 K; shaded area = heat per mole from 10 K to 40 K; PHY 287 Midterm 1 practice).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, xmin=0, xmax=52, ymin=0, ymax=12,
+      xlabel={$T$ (K)}, ylabel={$C$ (J/(mol$\cdot$K))},
+      xlabel style={at={(axis description cs:1.03,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south west},
+      xtick={10,20,30,40,50}, ytick={2,4,6,8,10}, clip=false]
+    \addplot[draw=none, fill=figR!25, domain=10:40, samples=60] {1940*(x/281)^3} \closedcycle;
+    \addplot[figB, domain=0:50, samples=100] {1940*(x/281)^3};
+    \addplot[only marks, mark=*, mark size=1.5pt, figR] coordinates {(40,5.5955)};
+    \node[font=\scriptsize, anchor=west, figR] at (axis cs:41.5,4.9) {$C(40\ \mathrm{K}) = 5.60$};
+    \node[font=\scriptsize, figR, align=center] (Q) at (axis cs:17,5.2) {$Q/n = \int_{10}^{40} C\,dT$\\$= 55.7$ J/mol};
+    \draw[->, thin, figR] (Q.south) -- (axis cs:31,1.0);
+    \node[font=\scriptsize, figB, anchor=east] at (axis cs:44,10) {$C = k\,(T/\theta)^3$};
+  \end{axis}
+\end{tikzpicture}

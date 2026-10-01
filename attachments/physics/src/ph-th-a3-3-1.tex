@@ -1,0 +1,26 @@
+% Figure for Thermal Physics §A3.3 (sign conventions of the first law: gas in a cylinder with a piston; heat Q > 0 flows in from a reservoir, the gas does work W > 0 by pushing the piston out).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  % reservoir
+  \fill[figO!15] (-0.6,-1.3) rectangle (3.6,-0.35);
+  \draw[black!60] (-0.6,-1.3) rectangle (3.6,-0.35);
+  \node[font=\scriptsize] at (1.5,-0.95) {heat reservoir (surroundings)};
+  % cylinder walls and gas
+  \fill[figB!15] (0,0) rectangle (3,2.2);
+  \draw[very thick, black!70] (0,3.6) -- (0,0) -- (3,0) -- (3,3.6);
+  % piston
+  \fill[black!35] (0.05,2.2) rectangle (2.95,2.55);
+  \draw[black!70] (0.05,2.2) rectangle (2.95,2.55);
+  \draw[very thick, black!70] (1.5,2.55) -- (1.5,3.5);
+  % system boundary
+  \draw[figB, dashed, thick] (0.12,0.12) rectangle (2.88,2.12);
+  \node[figB, font=\scriptsize, align=center] at (1.5,1.05) {system: gas\\ $E_{\text{int}}$};
+  \node[figB, font=\scriptsize, anchor=west] at (3.1,1.7) {boundary};
+  \draw[figB, thin] (3.1,1.7) -- (2.9,1.7);
+  % heat in
+  \draw[->, very thick, figR] (1.5,-0.3) -- (1.5,0.55);
+  \node[figR, font=\scriptsize, anchor=west] at (1.6,0.35) {$Q > 0$};
+  % work out
+  \draw[->, very thick, figR] (2.3,2.65) -- (2.3,3.45);
+  \node[figR, font=\scriptsize, align=left, anchor=west] at (3.2,3.1) {$W > 0$: gas pushes\\ piston out, $dW = p\,dV$};
+  \node[font=\scriptsize, black!70, anchor=east] at (-0.1,3.2) {surroundings};
+\end{tikzpicture}

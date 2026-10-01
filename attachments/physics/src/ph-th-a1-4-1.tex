@@ -1,0 +1,31 @@
+% Figure for Thermal and Statistical Physics §A1.4 (schematic phase diagram of water, not to scale: sublimation, fusion and vaporization curves, triple and critical points, the 1 atm line, melting of ice by pressure).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % axes
+  \draw[->, thin, black!55] (0,0) -- (7.6,0) node[right, font=\small, black] {$T$};
+  \draw[->, thin, black!55] (0,0) -- (0,5.8) node[above, font=\small, black] {$p$};
+  \coordinate (TP) at (2.0,1.0); \coordinate (CP) at (6.0,4.2);
+  % coexistence curves
+  \draw[figB, thick] (0.3,0.12) .. controls (1.2,0.25) and (1.7,0.6) .. (TP);
+  \draw[figB, thick, name path=vap] (TP) .. controls (3.5,1.7) and (5,2.8) .. (CP);
+  \draw[figB, thick, name path=fus] (TP) -- (1.4,5.2);
+  % 1 atm line
+  \path[name path=atm] (0,2.0) -- (7.4,2.0);
+  \draw[black!55, dashed] (0,2.0) -- (7.4,2.0) node[right, font=\scriptsize, black] {1 atm};
+  \path[name intersections={of=atm and fus, by=F}];
+  \path[name intersections={of=atm and vap, by=B}];
+  \draw[black!55, dotted] (F) -- (F |- 0,0) node[below, font=\scriptsize, black] {$0\ ^\circ$C};
+  \draw[black!55, dotted] (B) -- (B |- 0,0) node[below, font=\scriptsize, black] {$100\ ^\circ$C};
+  \fill[black] (F) circle (1.5pt) (B) circle (1.5pt);
+  % special points
+  \fill[figB] (TP) circle (2.2pt); \fill[figB] (CP) circle (2.2pt);
+  \node[font=\scriptsize, anchor=west, align=left] at (2.15,0.65) {triple point\\$0.01\ ^\circ$C, 611 Pa};
+  \node[font=\scriptsize, anchor=north west, align=left] at (6.1,4.15) {critical point\\$374\ ^\circ$C, 218 atm};
+  % regions
+  \node[font=\small] at (0.75,3.3) {solid};
+  \node[font=\small] at (3.4,3.6) {liquid};
+  \node[font=\small] at (5.0,0.9) {vapour};
+  \node[font=\scriptsize, align=center, black!70] at (6.6,5.3) {supercritical\\fluid};
+  % melting under pressure
+  \draw[->, very thick, figR] (1.72,2.25) -- (1.72,4.1);
+  \node[font=\scriptsize, figR, anchor=west, align=left] at (1.85,4.55) {ice melts\\under pressure};
+\end{tikzpicture}

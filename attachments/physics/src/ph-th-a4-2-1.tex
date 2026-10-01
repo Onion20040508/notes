@@ -1,0 +1,26 @@
+% Figure for Thermal Physics §A4.2 (energy-flow diagrams of a heat engine and of a refrigerator/heat pump; after University Physics Vol. 2, Figs. 4.4 and 4.6).
+\begin{tikzpicture}[font=\small,
+    res/.style={draw=black!70, thick, fill=black!6, minimum width=3.0cm, minimum height=0.7cm},
+    dev/.style={draw=figB, very thick, fill=figB!12, circle, minimum size=1.65cm, inner sep=1pt, font=\scriptsize, align=center},
+    f3/.style={-{Triangle[length=2.8mm, width=4.6mm]}, line width=1.5mm},
+    f2/.style={-{Triangle[length=2.6mm, width=3.4mm]}, line width=1.0mm},
+    f1/.style={-{Triangle[length=2.2mm, width=2.4mm]}, line width=0.5mm}]
+  % ---------- engine ----------
+  \node[res] (H1) at (0,2.6) {hot reservoir $T_h$};
+  \node[dev] (E) at (0,0.6) {engine};
+  \node[res] (C1) at (0,-1.4) {cold reservoir $T_c$};
+  \draw[f3, figB] (H1.south) -- (E.north) node[midway, right=3pt] {$Q_h$};
+  \draw[f2, figB] (E.south) -- (C1.north) node[midway, right=3pt] {$Q_c$};
+  \draw[f1, figR] (E.east) -- ++(1.4,0) node[right] {$W$};
+  \node[font=\scriptsize, black!60] at (0,-2.3) {$Q_h = W + Q_c$};
+  % ---------- refrigerator ----------
+  \begin{scope}[xshift=5.6cm]
+    \node[res] (H2) at (0,2.6) {hot reservoir $T_h$};
+    \node[dev] (R) at (0,0.6) {refrigerator\\or heat\\pump};
+    \node[res] (C2) at (0,-1.4) {cold reservoir $T_c$};
+    \draw[f3, figB] (R.north) -- (H2.south) node[midway, right=3pt] {$Q_h$};
+    \draw[f2, figB] (C2.north) -- (R.south) node[midway, right=3pt] {$Q_c$};
+    \draw[f1, figR] (1.85,0.6) node[right] {$W$} -- (R.east);
+    \node[font=\scriptsize, black!60] at (0,-2.3) {$Q_h = Q_c + W$};
+  \end{scope}
+\end{tikzpicture}
