@@ -9,7 +9,7 @@ tags: [chapter, oscillations-waves-and-optics]
 ← [[· A1 Oscillations]] · ↑ [[Oscillations, Waves and Optics]] · [[· A3 Sound]] →
 
 **Builds on:** [[· A1 Oscillations|A1 Oscillations]] (2)
-**Used by:** [[· A3 Sound|A3 Sound]] (18), [[· A4 The Nature of Light|A4 The Nature of Light]] (2), [[· A6 Interference|A6 Interference]] (4)
+**Used by:** [[· A3 Sound|A3 Sound]] (18), [[· A4 The Nature of Light|A4 The Nature of Light]] (2), [[· A6 Interference|A6 Interference]] (6), [[· A7 Diffraction|A7 Diffraction]] (1)
 
 ## Sections
 - [[§A2.1 Travelling Waves]] — UP Vol. 1 §16.1

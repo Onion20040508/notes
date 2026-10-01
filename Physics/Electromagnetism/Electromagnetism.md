@@ -9,7 +9,7 @@ tags: [subject, electromagnetism]
 ---
 # Electromagnetism
 
-Electric and magnetic fields, their sources, circuits, induction and electromagnetic waves, in three levels: **A** introductory (University Physics Vol. 2; PHY 182), **B** upper-level (Griffiths; PHY 422), **C** graduate (PHY 505; the series Part III). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). The mechanics it uses is in [[Classical Mechanics]]; optics is in Oscillations, Waves and Optics; the covariant formulation and relativistic electrodynamics are at level C here.
+Electric and magnetic fields, their sources, circuits, induction and electromagnetic waves, in three levels: **A** introductory (University Physics Vol. 2; PHY 182), **B** upper-level (Griffiths; PHY 422), **C** graduate (PHY 505; the series Part III). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). The mechanics it uses is in [[Classical Mechanics]]; optics is in [[Oscillations, Waves and Optics]]; the covariant formulation and relativistic electrodynamics are at level C here.
 
 ## Level A — introductory
 - [[· A1 Electric Charges and Fields]]

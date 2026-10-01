@@ -8,8 +8,8 @@ tags: [chapter, oscillations-waves-and-optics]
 # A6 Interference
 ← [[· A5 Geometric Optics and Image Formation]] · ↑ [[Oscillations, Waves and Optics]] · [[· A7 Diffraction]] →
 
-**Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (4), [[· A4 The Nature of Light|A4 The Nature of Light]] (5), [[· A7 Diffraction|A7 Diffraction]] (1)
-**Used by:** [[· A7 Diffraction|A7 Diffraction]] (19)
+**Builds on:** [[· A1 Oscillations|A1 Oscillations]] (5), [[· A2 Mechanical Waves|A2 Mechanical Waves]] (6), [[· A4 The Nature of Light|A4 The Nature of Light]] (5), [[· A7 Diffraction|A7 Diffraction]] (1)
+**Used by:** [[· A7 Diffraction|A7 Diffraction]] (20)
 
 ## Sections
 - [[§A6.1 Young's Double-Slit Interference]] — UP Vol. 3 §3.1–3.2

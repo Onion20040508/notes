@@ -9,7 +9,7 @@ tags: [chapter, oscillations-waves-and-optics]
 ↑ [[Oscillations, Waves and Optics]] · [[· A2 Mechanical Waves]] →
 
 **Builds on:** —
-**Used by:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (2)
+**Used by:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (2), [[· A6 Interference|A6 Interference]] (5), [[· A7 Diffraction|A7 Diffraction]] (2)
 
 ## Sections
 - [[§A1.1 Simple Harmonic Motion]] — UP Vol. 1 §15.1
@@ -27,6 +27,7 @@ tags: [chapter, oscillations-waves-and-optics]
 - [[§A1.2 Energy in Simple Harmonic Motion#^thm-a1-2-2|§A1.2.2]] Speed at a Given Position
 - [[§A1.2 Energy in Simple Harmonic Motion#^thm-a1-2-3|§A1.2.3]] Small Oscillations about a Stable Equilibrium
 - [[§A1.3 Simple Harmonic Motion and Circular Motion#^thm-a1-3-1|§A1.3.1]] SHM Is the Projection of Uniform Circular Motion
+- [[§A1.3 Simple Harmonic Motion and Circular Motion#^thm-a1-3-2|§A1.3.2]] Adding Sinusoids of the Same Frequency
 - [[§A1.4 Pendulums#^thm-a1-4-2|§A1.4.2]] Period of a Simple Pendulum
 - [[§A1.4 Pendulums#^thm-a1-4-3|§A1.4.3]] Period of a Physical Pendulum
 - [[§A1.4 Pendulums#^thm-a1-4-5|§A1.4.5]] Period of a Torsion Pendulum
