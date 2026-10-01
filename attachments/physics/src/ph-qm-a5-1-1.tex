@@ -1,0 +1,32 @@
+% Figure for Quantum Mechanics §A5.1 (vector model of space quantization for l = 2; after Tipler Fig. 7-4 and UP Vol. 3 Fig. 8.5).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small, x=1.05cm, y=1.05cm]
+  \def\R{2.449}
+  % axes
+  \draw[->, thin, black!55] (0,-2.9) -- (0,3.1) node[above, font=\scriptsize] {$z$ (field direction)};
+  \draw[->, thin, black!55] (-1.7,0) -- (3.0,0);
+  % semicircle |L| = sqrt(6) hbar
+  \draw[black!40, dashed] (0,-\R) arc (-90:90:\R);
+  % m_l levels
+  \foreach \m/\lab in {-2/-2\hbar,-1/-\hbar,0/0,1/\hbar,2/2\hbar} {
+    \draw[black!30, thin] (-1.6,\m) -- (3.0,\m);
+    \node[font=\scriptsize, anchor=west, black!75] at (3.05,\m) {$L_z = \lab$};
+  }
+  % vectors
+  \foreach \m in {-2,-1,0,1} {
+    \pgfmathsetmacro{\xx}{sqrt(6-\m*\m)}
+    \draw[->, thick, figB] (0,0) -- (\xx,\m);
+  }
+  \draw[->, very thick, figR] (0,0) -- ({sqrt(2)},2);
+  % cone for m_l = 2
+  \draw[figR, thin, densely dotted] (0,2) ellipse ({sqrt(2)} and 0.22);
+  % angle
+  \draw[figR, thin] (0,0.8) arc (90:{90-35.26}:0.8);
+  \node[figR, font=\scriptsize] at (0.33,1.12) {$35.3^\circ$};
+  % labels
+  \node[font=\scriptsize, figR, anchor=south west] at (1.5,2.08) {$m_l = 2$};
+  \node[font=\scriptsize, figB, anchor=south east] at (2.15,1.02) {$m_l = 1$};
+  \node[font=\scriptsize, figB, anchor=south east] at (2.3,0.02) {$m_l = 0$};
+  \node[font=\scriptsize, figB, anchor=north east] at (2.15,-1.02) {$m_l = -1$};
+  \node[font=\scriptsize, figB, anchor=east] at (1.0,-1.82) {$m_l = -2$};
+  \node[font=\scriptsize, black!70, anchor=west] at (1.6,-2.75) {$\lvert\vec L\rvert = \sqrt{6}\,\hbar \approx 2.45\,\hbar$};
+\end{tikzpicture}

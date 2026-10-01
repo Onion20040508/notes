@@ -1,0 +1,17 @@
+% Figure for Quantum Mechanics §A3.5 (Gaussian wave functions Psi = C exp(-x^2/2a^2) of width a = 0.5 and a = 2 (units of a reference length a_0): position density and momentum density, sigma_x = a/sqrt2, sigma_p = hbar/(a sqrt2); computed).
+\begin{tikzpicture}
+  \begin{axis}[nfig, name=a, scale only axis, width=5.2cm, height=3.0cm, xmin=-4.5, xmax=4.5, ymin=0, ymax=1.25,
+      axis lines=left, xlabel={$x/a_0$}, ylabel={$|\Psi(x)|^2$}, ytick=\empty, xtick={-4,-2,0,2,4}, ylabel style={font=\scriptsize}]
+    \addplot[figB, domain=-4.5:4.5, samples=300] {exp(-x^2/0.25)/sqrt(pi*0.25)};
+    \addplot[figR, domain=-4.5:4.5, samples=300] {exp(-x^2/4)/sqrt(pi*4)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.45,1.0) {$a = 0.5a_0$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.7,0.3) {$a = 2a_0$};
+  \end{axis}
+  \begin{axis}[nfig, at={(a.east)}, anchor=west, xshift=1.3cm, scale only axis, width=5.2cm, height=3.0cm, xmin=-4.5, xmax=4.5, ymin=0, ymax=1.25,
+      axis lines=left, xlabel={$p\,a_0/\hbar$}, ylabel={$|\phi(p)|^2$}, ytick=\empty, xtick={-4,-2,0,2,4}, ylabel style={font=\scriptsize}]
+    \addplot[figB, domain=-4.5:4.5, samples=300] {exp(-x^2*0.25)/sqrt(pi/0.25)};
+    \addplot[figR, domain=-4.5:4.5, samples=300] {exp(-x^2*4)/sqrt(pi/4)};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.45,1.0) {$a = 2a_0$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.7,0.3) {$a = 0.5a_0$};
+  \end{axis}
+\end{tikzpicture}

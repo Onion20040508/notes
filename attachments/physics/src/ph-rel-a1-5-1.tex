@@ -1,0 +1,44 @@
+% Figure for Relativity §A1.5 (axes of S' drawn on the spacetime diagram of S for beta = 0.6, gamma = 1.25: ct' axis x = 0.6 ct, x' axis ct = 0.6 x, unit ticks at (gamma beta, gamma) and (gamma, gamma beta), S' grid lines ct' = 1, 2 and x' = 1, 2, calibration hyperbolas c^2t^2 - x^2 = 1 and x^2 - c^2t^2 = 1, light worldline at 45 deg; all computed from the Lorentz transformation).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}, scale=1.35]
+  \def\b{0.6} \def\g{1.25}
+  % S axes
+  \draw[->, black!55] (-0.4,0) -- (3.5,0) node[right] {$x$};
+  \draw[->, black!55] (0,-0.4) -- (0,3.4) node[above] {$ct$};
+  \foreach \t in {1,2,3} {
+    \draw[black!55] (\t,0.04) -- (\t,-0.04);
+    \draw[black!55] (0.04,\t) -- (-0.04,\t);
+  }
+  \foreach \t in {2,3} {
+    \node[black!55, below, font=\scriptsize] at (\t,-0.04) {$\t$};
+    \node[black!55, left, font=\scriptsize] at (-0.04,\t) {$\t$};
+  }
+  % calibration hyperbolas
+  \draw[figG, thin, domain=-0.3:1.45, samples=60, variable=\x] plot ({\x},{sqrt(1+\x*\x)});
+  \draw[figG, thin, domain=-0.3:1.45, samples=60, variable=\y] plot ({sqrt(1+\y*\y)},{\y});
+  \node[figG, font=\scriptsize, anchor=south east] at (-0.3,1.06) {$c^2t^2 - x^2 = 1$};
+  \node[figG, font=\scriptsize, anchor=north] at (1.05,-0.33) {$x^2 - c^2t^2 = 1$};
+  % S' grid lines: ct' = 1, 2 (parallel to x' axis) and x' = 1, 2 (parallel to ct' axis)
+  \begin{scope}
+    \clip (-0.4,-0.4) rectangle (3.45,3.3);
+    \foreach \s in {1,2} {
+      \draw[figB, dashed, thin] ({\g*\b*\s},{\g*\s}) -- ({\g*\b*\s + \g*3},{\g*\s + \g*\b*3});
+      \draw[figB, dashed, thin] ({\g*\s},{\g*\b*\s}) -- ({\g*\s + \g*\b*3},{\g*\b*\s + \g*3});
+    }
+  \end{scope}
+  % S' axes
+  \draw[->, figB, thick] (0,0) -- ({\g*\b*2.6},{\g*2.6}) node[above] {$ct'$};
+  \draw[->, figB, thick] (0,0) -- ({\g*2.6},{\g*\b*2.6}) node[right] {$x'$};
+  \foreach \s in {1,2} {
+    \fill[figB] ({\g*\b*\s},{\g*\s}) circle (1.3pt);
+    \fill[figB] ({\g*\s},{\g*\b*\s}) circle (1.3pt);
+  }
+  \node[figB, font=\scriptsize, anchor=east] at ({\g*\b*1-0.06},{\g*1+0.2}) {$ct'=1$};
+  \node[figB, font=\scriptsize, anchor=north west] at ({\g*1-0.02},{\g*\b*1-0.03}) {$x'=1$};
+  % light
+  \draw[figR, thick] (-0.3,-0.3) -- (3.25,3.25) node[above right, font=\scriptsize] {light};
+  % angle alpha
+  \draw[black!60, thin] (0,0.75) arc (90:{90-30.96}:0.75);
+  \node[black!70, font=\scriptsize] at (0.2,0.95) {$\alpha$};
+  \draw[black!60, thin] (0.75,0) arc (0:30.96:0.75);
+  \node[black!70, font=\scriptsize] at (0.95,0.2) {$\alpha$};
+\end{tikzpicture}

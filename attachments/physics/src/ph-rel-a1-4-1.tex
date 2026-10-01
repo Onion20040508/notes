@@ -1,0 +1,21 @@
+% Figure for Relativity §A1.4 (Lorentz factor gamma = 1/sqrt(1 - beta^2) against beta = v/c, computed, with the low-speed approximation 1 + beta^2/2 and marked values at beta = 0.5, 0.8, 0.99).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=0.62\textwidth, height=0.42\textwidth,
+      xmin=0, xmax=1.05, ymin=0, ymax=7.8,
+      xlabel={$\beta = v/c$}, ylabel={$\gamma$},
+      xtick={0,0.2,0.4,0.6,0.8,1}, ytick={1,2,3,4,5,6,7},
+      xlabel style={at={(axis description cs:1.03,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      clip=false]
+    \addplot[black!55, dashed, thin, domain=0:7.8, samples=2] ({1}, {x});
+    \addplot[figB, domain=0:0.9914, samples=300] {1/sqrt(1-x^2)};
+    \addplot[figR, dashed, domain=0:1.0, samples=60] {1 + x^2/2};
+    \addplot[only marks, mark=*, mark size=1.6pt, figB] coordinates {(0.5,1.1547) (0.8,1.6667) (0.99,7.0888)};
+    \node[figB, font=\scriptsize, anchor=south east] at (axis cs:0.5,1.25) {$1.155$};
+    \node[figB, font=\scriptsize, anchor=south east] at (axis cs:0.79,1.75) {$1.667$};
+    \node[figB, font=\scriptsize, anchor=east] at (axis cs:0.975,7.09) {$7.09$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.6,4.6) {$\gamma = 1/\sqrt{1-\beta^2}$};
+    \node[figR, font=\scriptsize, anchor=north] at (axis cs:0.8,1.2) {$1 + \beta^2/2$};
+    \node[black!60, font=\scriptsize, anchor=north, rotate=90] at (axis cs:1.0,3.0) {$v = c$};
+  \end{axis}
+\end{tikzpicture}

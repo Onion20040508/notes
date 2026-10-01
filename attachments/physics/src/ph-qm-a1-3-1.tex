@@ -1,0 +1,24 @@
+% Figure for Quantum Mechanics §A1.3 (Compton scattering geometry and momentum triangle, drawn to scale for lambda = lambda_c, theta = 60 deg: p'/p = 2/3, electron recoil at phi = 40.9 deg below the axis).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  % left panel: collision geometry
+  \draw[->, very thick, figB, decorate, decoration={snake, amplitude=1.2pt, segment length=6pt, post length=2.5mm}] (-3.2,0) -- (-0.15,0);
+  \node[figB, above] at (-1.9,0.12) {$\vec p_f$, $\lambda$};
+  \fill[black] (0,0) circle (2.4pt);
+  \node[below left, font=\scriptsize] at (0,-0.05) {electron at rest};
+  \draw[black!55, thin, dashed] (0,0) -- (2.6,0);
+  \draw[->, very thick, figB, decorate, decoration={snake, amplitude=1.2pt, segment length=6pt, post length=2.5mm}] (0.1,0.17) -- ({2.4*cos(60)},{2.4*sin(60)});
+  \node[figB, right] at ({2.4*cos(60)},{2.4*sin(60)}) {$\tilde{\vec p}_f$, $\lambda'$};
+  \draw[->, very thick, figR] (0.1,-0.09) -- ({2.4*cos(-40.9)},{2.4*sin(-40.9)});
+  \node[figR, right] at ({2.4*cos(-40.9)},{2.4*sin(-40.9)}) {$\vec p$ (electron)};
+  \draw[black!55, thin] (0.9,0) arc (0:60:0.9); \node[font=\scriptsize] at (1.12,0.42) {$\theta$};
+  \draw[black!55, thin] (0.9,0) arc (0:-40.9:0.9); \node[font=\scriptsize] at (1.15,-0.35) {$\varphi$};
+  % right panel: momentum triangle p_f = p~_f + p
+  \begin{scope}[xshift=6.0cm, yshift=-0.4cm]
+    \def\s{3.2}
+    \draw[->, very thick, figB] (0,0) -- (\s,0) node[midway, below] {$\vec p_f$};
+    \draw[->, very thick, figB!60] (0,0) -- ({\s*2/3*cos(60)},{\s*2/3*sin(60)}) node[midway, left] {$\tilde{\vec p}_f$};
+    \draw[->, very thick, figR] ({\s*2/3*cos(60)},{\s*2/3*sin(60)}) -- (\s,0) node[midway, above right] {$\vec p$};
+    \draw[black!55, thin] (0.6,0) arc (0:60:0.6); \node[font=\scriptsize] at (0.78,0.32) {$\theta$};
+    \node[font=\scriptsize, black!70, align=center] at ({\s/2},-0.8) {$\vec p_f = \tilde{\vec p}_f + \vec p$};
+  \end{scope}
+\end{tikzpicture}

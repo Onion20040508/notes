@@ -1,0 +1,38 @@
+% Figure for Relativity §A1.2 (ether model, seen in the ether frame: the arm along the motion, with closing speeds c - v out and c + v back; the arm across the motion, with the zigzag light path and its velocity triangle; after Tipler & Llewellyn Fig. 1-6 and Morin Figs. 1.3-1.5).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  % ---- left panel: arm along the motion
+  \begin{scope}
+    \node[font=\small] at (2.0,3.1) {arm along $\vec v$};
+    \draw[very thick, black!70] (0,1.6) -- (4.0,1.6);
+    \fill[black!45] (-0.12,1.25) rectangle (0.0,1.95);
+    \fill[black!70] (4.0,1.25) rectangle (4.12,1.95);
+    \node[font=\scriptsize, anchor=east] at (-0.15,1.6) {splitter};
+    \node[font=\scriptsize, anchor=west] at (4.15,1.6) {mirror};
+    \draw[<->, black!60] (0,1.05) -- (4.0,1.05) node[midway, below, font=\scriptsize] {$L$};
+    \draw[->, thick, figR] (0.3,2.05) -- (3.7,2.05) node[midway, above, font=\scriptsize] {out: closing speed $c - v$};
+    \draw[->, thick, figR] (3.7,0.45) -- (0.3,0.45) node[midway, below, font=\scriptsize] {back: closing speed $c + v$};
+    \draw[->, very thick, figB] (1.3,-0.55) -- (2.7,-0.55) node[right] {$\vec v$ (apparatus)};
+  \end{scope}
+  % ---- right panel: arm across the motion (ether frame)
+  \begin{scope}[xshift=7.6cm]
+    \node[font=\small] at (2.0,3.1) {arm across $\vec v$};
+    % splitter positions at emission, reflection, return
+    \foreach \x/\lab in {0/{emit}, 2/{}, 4/{return}} {
+      \fill[black!45] (\x-0.3,-0.06) rectangle (\x+0.3,0.06);
+    }
+    \node[font=\scriptsize, below] at (0,-0.1) {emission};
+    \node[font=\scriptsize, below] at (4,-0.1) {return};
+    % mirror at reflection time
+    \fill[black!70] (1.7,2.4) rectangle (2.3,2.52);
+    \node[font=\scriptsize, above] at (2,2.52) {mirror};
+    % light path
+    \draw[->, thick, figR] (0,0.08) -- (1.98,2.38);
+    \draw[->, thick, figR] (2.02,2.38) -- (4,0.08);
+    \node[figR, font=\scriptsize, rotate=49.0, anchor=south] at (0.92,1.25) {$c\,t_\perp/2$};
+    % triangle legs
+    \draw[dashed, black!55] (2,0) -- (2,2.4);
+    \node[black!70, font=\scriptsize, anchor=west] at (2.03,1.2) {$L$};
+    \draw[<->, black!60] (0,-0.62) -- (2,-0.62) node[midway, below, font=\scriptsize] {$v\,t_\perp/2$};
+    \draw[->, very thick, figB] (4.6,1.2) -- (5.6,1.2) node[below, xshift=-6pt, yshift=-1pt] {$\vec v$};
+  \end{scope}
+\end{tikzpicture}

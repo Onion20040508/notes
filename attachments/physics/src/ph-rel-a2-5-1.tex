@@ -1,0 +1,46 @@
+% Figure for Relativity §A2.5 (twin paradox in Homer's frame, star 4 ly away, beta = 0.8: (a) Ulysses' lines of simultaneity just before and just after the turnaround; (b) yearly light signals of both twins).
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small, x=0.62cm, y=0.62cm]
+  % ---------- panel (a) ----------
+  \draw[->, thin, black!55] (-0.3,0) -- (5.2,0) node[right] {$x$ (ly)};
+  \draw[->, thin, black!55] (0,-0.3) -- (0,10.9) node[above] {$ct$ (y)};
+  \foreach \t in {2,4,6,8,10} \draw[black!55] (-0.12,\t) -- (0.12,\t) node[pos=0, left, font=\scriptsize, black!70] {\t};
+  \foreach \x in {2,4} \draw[black!55] (\x,-0.12) -- (\x,0.12) node[pos=0, below, font=\scriptsize, black!70] {\x};
+  \draw[black, thick] (0,0) -- (0,10);
+  \draw[figB, very thick] (0,0) -- (4,5) -- (0,10);
+  \foreach \n in {1,2} \fill[figB] ({4*\n/3},{5*\n/3}) circle (2pt);
+  \foreach \n in {1,2} \fill[figB] ({4-4*\n/3},{5+5*\n/3}) circle (2pt);
+  \fill[figB] (4,5) circle (2pt);
+  \draw[black!40, dashed] (4,0) -- (4,10.3) node[above, font=\scriptsize, black!60] {star};
+  % simultaneity lines through the turnaround
+  \draw[figR, thick] (4,5) -- (0,1.8);
+  \draw[figR, thick] (4,5) -- (0,8.2);
+  \fill[figR] (0,1.8) circle (2pt);
+  \fill[figR] (0,8.2) circle (2pt);
+  \node[figR, font=\scriptsize, anchor=west] at (0.15,1.35) {$1.8$};
+  \node[figR, font=\scriptsize, anchor=west] at (0.15,8.75) {$8.2$};
+  \draw[<->, figR, thin] (-0.85,1.8) -- (-0.85,8.2) node[midway, left, font=\scriptsize, align=right] {jump\\ $6.4$ y};
+  \node[figB, font=\scriptsize, anchor=west, align=left] at (2.2,1.75) {Ulysses\\ out};
+  \node[figB, font=\scriptsize, anchor=west, align=left] at (2.25,8.15) {Ulysses\\ back};
+  \node[font=\scriptsize] at (2.3,-1.6) {(a)};
+  % ---------- panel (b) ----------
+  \begin{scope}[xshift=8.6cm]
+    \draw[->, thin, black!55] (-0.3,0) -- (5.2,0) node[right] {$x$ (ly)};
+    \draw[->, thin, black!55] (0,-0.3) -- (0,10.9) node[above] {$ct$ (y)};
+    \foreach \t in {2,4,6,8,10} \draw[black!55] (-0.12,\t) -- (0.12,\t) node[pos=0, left, font=\scriptsize, black!70] {\t};
+    \foreach \x in {2,4} \draw[black!55] (\x,-0.12) -- (\x,0.12) node[pos=0, below, font=\scriptsize, black!70] {\x};
+    % Homer's yearly signals (to the right)
+    \draw[figB, dashed] (0,1) -- (4,5);
+    \foreach \e in {2,...,9} \draw[figB, dashed] (0,\e) -- ({(8+\e)/1.8-\e},{(8+\e)/1.8});
+    % Ulysses' yearly signals (to the left)
+    \foreach \n in {1,2,3} \draw[figR, dashed] ({4*\n/3},{5*\n/3}) -- (0,{3*\n});
+    \foreach \n in {1,2} \draw[figR, dashed] ({4-4*\n/3},{5+5*\n/3}) -- (0,{9+\n/3});
+    \draw[black, thick] (0,0) -- (0,10);
+    \draw[black!70, very thick] (0,0) -- (4,5) -- (0,10);
+    \foreach \e in {1,...,10} \fill[figB] (0,\e) circle (1.6pt);
+    \foreach \n in {1,2,3} \fill[figR] ({4*\n/3},{5*\n/3}) circle (1.6pt);
+    \foreach \n in {1,2,3} \fill[figR] ({4-4*\n/3},{5+5*\n/3}) circle (1.6pt);
+    \node[figB, font=\scriptsize, anchor=west, align=left] at (2.9,2.2) {Homer's\\ signals};
+    \node[figR, font=\scriptsize, anchor=west, align=left] at (3.0,7.6) {Ulysses'\\ signals};
+    \node[font=\scriptsize] at (2.3,-1.6) {(b)};
+  \end{scope}
+\end{tikzpicture}

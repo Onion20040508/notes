@@ -1,0 +1,35 @@
+% Figure for Quantum Mechanics §A4.2: infinite square well; psi_n and |psi_n|^2 for n = 1, 2, 3 drawn on their energy levels (E_n = n^2 E_1, to scale), and |psi_20|^2 against the classical density 1/L. Units: x in L, psi in (2/L)^(1/2).
+\begin{tikzpicture}[font=\small]
+  % panel 1: wave functions on the levels
+  \begin{axis}[nfig, name=p1, width=5.4cm, height=6.2cm, xmin=-0.12, xmax=1.12, ymin=0, ymax=11.2,
+      axis lines=none, clip=false]
+    \draw[black!55, thick] (axis cs:0,0) -- (axis cs:0,11) (axis cs:1,0) -- (axis cs:1,11) (axis cs:0,0) -- (axis cs:1,0);
+    \pgfplotsinvokeforeach{1,2,3}{
+      \draw[black!40, densely dashed, thin] (axis cs:0,#1*#1) -- (axis cs:1,#1*#1);
+      \addplot[figB, thick, domain=0:1, samples=120] {#1*#1 + 0.9*sin(deg(#1*pi*x))};
+      \node[anchor=east, font=\scriptsize] at (axis cs:-0.02,#1*#1) {$E_{#1}$};
+    }
+    \node[font=\scriptsize] at (axis cs:0,-0.6) {$0$};
+    \node[font=\scriptsize] at (axis cs:1,-0.6) {$L$};
+    \node[figB] at (axis cs:0.5,11.4) {$\psi_n(x)$};
+  \end{axis}
+  % panel 2: probability densities on the levels
+  \begin{axis}[nfig, name=p2, at={(p1.east)}, anchor=west, xshift=0.5cm, width=5.4cm, height=6.2cm, xmin=-0.12, xmax=1.12, ymin=0, ymax=11.2,
+      axis lines=none, clip=false]
+    \draw[black!55, thick] (axis cs:0,0) -- (axis cs:0,11) (axis cs:1,0) -- (axis cs:1,11) (axis cs:0,0) -- (axis cs:1,0);
+    \pgfplotsinvokeforeach{1,2,3}{
+      \draw[black!40, densely dashed, thin] (axis cs:0,#1*#1) -- (axis cs:1,#1*#1);
+    }
+    \pgfplotsinvokeforeach{1,2,3}{ \addplot[figR, thick, domain=0:1, samples=120] {#1*#1 + 0.9*(sin(deg(#1*pi*x)))^2}; }
+    \node[font=\scriptsize] at (axis cs:0,-0.6) {$0$};
+    \node[font=\scriptsize] at (axis cs:1,-0.6) {$L$};
+    \node[figR] at (axis cs:0.5,11.4) {$|\psi_n(x)|^2$};
+  \end{axis}
+  % panel 3: n = 20 and the classical density
+  \begin{axis}[nfig, name=p3, at={(p2.east)}, anchor=west, xshift=0.9cm, width=5.6cm, height=4.2cm, xmin=0, xmax=1, ymin=0, ymax=2.7,
+      xtick={0,0.5,1}, xticklabels={$0$,$L/2$,$L$}, ytick={1,2}, yticklabels={$1/L$,$2/L$}, xlabel={$x$}, clip=true]
+    \addplot[figR, thin, domain=0:1, samples=600] {2*(sin(deg(20*pi*x)))^2};
+    \addplot[figB, very thick, dashed, domain=0:1] {1};
+    \node[font=\scriptsize, anchor=south] at (axis cs:0.5,2.18) {$|\psi_{20}|^2$ and classical $1/L$};
+  \end{axis}
+\end{tikzpicture}

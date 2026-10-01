@@ -1,0 +1,31 @@
+% Figure for Quantum Mechanics §A5.1 (radial probability densities P(r) = r^2 R_nl^2 of hydrogen for n = 1, 2, 3, computed from the radial functions of Tipler Table 7-2).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=left, width=7.2cm, height=5.0cm, xmin=0, xmax=16, ymin=0, ymax=0.62,
+      xlabel={$r/a_0$}, ylabel={$a_0 P(r)$},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={1,4,8,12,16}, ytick={0.2,0.4,0.6}, samples=200, domain=0:16, clip=false,
+      title={\small (a) $n = 1, 2$}]
+    \draw[black!40, dashed, thin] (axis cs:1,0) -- (axis cs:1,0.6);
+    \draw[black!40, dashed, thin] (axis cs:4,0) -- (axis cs:4,0.6);
+    \addplot[figB, thick] {4*x^2*exp(-2*x)};
+    \addplot[figB, dashed, thick] {0.5*x^2*(1-x/2)^2*exp(-x)};
+    \addplot[figR, thick] {x^4*exp(-x)/24};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.5,0.48) {1s};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:7.3,0.14) {2s};
+    \node[figR, font=\scriptsize, anchor=south] at (axis cs:4.6,0.2) {2p};
+  \end{axis}
+  \begin{axis}[nfig, at={(left.south east)}, xshift=1.5cm, anchor=south west, width=7.2cm, height=5.0cm,
+      xmin=0, xmax=28, ymin=0, ymax=0.125,
+      xlabel={$r/a_0$}, ylabel={$a_0 P(r)$},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={0,9,20,28}, ytick={0.04,0.08,0.12}, yticklabel style={/pgf/number format/fixed}, samples=250, domain=0:28, clip=false,
+      title={\small (b) $n = 3$}]
+    \draw[black!40, dashed, thin] (axis cs:9,0) -- (axis cs:9,0.12);
+    \addplot[figB, thick] {x^2*(4/27)*(1-2*x/3+2*x^2/27)^2*exp(-2*x/3)};
+    \addplot[figR, thick] {x^2*(64/4374)*x^2*(1-x/6)^2*exp(-2*x/3)};
+    \addplot[figG, thick] {x^2*(16/196830)*x^4*exp(-2*x/3)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:15.5,0.085) {3s};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:14.5,0.105) {3p};
+    \node[figG, font=\scriptsize, anchor=east] at (axis cs:6.6,0.1) {3d};
+  \end{axis}
+\end{tikzpicture}

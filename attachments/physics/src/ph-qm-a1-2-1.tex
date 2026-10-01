@@ -1,0 +1,31 @@
+% Figure for Quantum Mechanics §A1.2 (K_max = hf - phi against f for sodium, phi = 2.46 eV, and silver, phi = 4.73 eV; work functions from University Physics Vol. 3, Table 6.1; computed with h = 4.136e-15 eV s).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=0.6\textwidth, height=0.42\textwidth,
+      xmin=0, xmax=20, ymin=-5.4, ymax=4,
+      axis x line=middle, axis y line=left,
+      xlabel={$f$ ($10^{14}$ Hz)}, ylabel={$K_{\max}$ (eV)},
+      xtick={5,10,15,20}, ytick={-4,-2,0,2,4},
+      xlabel style={at={(axis description cs:1,0.47)}, anchor=north east},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      clip=false, axis on top]
+    \fill[black!7] (axis cs:4.0,-5.4) rectangle (axis cs:7.5,4);
+    \node[black!55, font=\scriptsize] at (axis cs:5.75,3.65) {visible};
+    % sodium: fc = 2.46/0.4136 = 5.948
+    \addplot[figB, dashed, thin, domain=0:5.948] {0.4136*x - 2.46};
+    \addplot[figB, very thick, domain=5.948:15.6] {0.4136*x - 2.46};
+    % silver: fc = 4.73/0.4136 = 11.44
+    \addplot[figR, dashed, thin, domain=0:11.44] {0.4136*x - 4.73};
+    \addplot[figR, very thick, domain=11.44:20] {0.4136*x - 4.73};
+    \addplot[only marks, mark=*, mark size=1.5pt, figB] coordinates {(5.948,0) (0,-2.46)};
+    \addplot[only marks, mark=*, mark size=1.5pt, figR] coordinates {(11.44,0) (0,-4.73)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:15.8,4.0) {Na};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:20.2,3.54) {Ag};
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:5.75,-0.15) {$f_c$};
+    \node[figR, font=\scriptsize, anchor=north west] at (axis cs:11.3,-0.15) {$f_c$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.3,-2.46) {$-\phi_{\text{Na}} = -2.46$ eV};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.3,-4.73) {$-\phi_{\text{Ag}} = -4.73$ eV};
+    % slope triangle on Na line
+    \draw[black!55] (axis cs:10,1.676) -- (axis cs:14,1.676) -- (axis cs:14,3.330);
+    \node[black!70, font=\scriptsize, anchor=north] at (axis cs:12,1.6) {slope $h$};
+  \end{axis}
+\end{tikzpicture}

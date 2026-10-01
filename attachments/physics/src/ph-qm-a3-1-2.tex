@@ -1,0 +1,27 @@
+% Figure for Quantum Mechanics §A3.1 (Davisson–Germer surface diffraction: two neighbouring surface atoms a distance D apart, normal incidence, rays scattered at angle phi; extra path D sin phi).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  \def\D{2.4}\def\ph{50}\def\Lr{3.6}
+  % crystal surface and atoms
+  \draw[black!55, thin] (-1.5,0) -- ({2*\D+0.3},0);
+  \foreach \x in {-1.2,0,\D,{2*\D}} {\fill[black!45] (\x,0) circle (3pt);}
+  % incident rays (normal incidence)
+  \foreach \x in {0,\D} {\draw[->, figB, thick] (\x,3.0) -- (\x,0.14);}
+  \node[figB, anchor=south, align=center, font=\scriptsize] at ({\D/2},3.05) {incident electrons};
+  % scattered rays at angle phi from the normal
+  \draw[->, figB, thick] (0.10,0.12) -- ({\Lr*sin(\ph)},{\Lr*cos(\ph)});
+  \draw[->, figB, thick] ({\D+0.10},0.12) -- ({\D+\Lr*sin(\ph)},{\Lr*cos(\ph)});
+  % perpendicular from right atom onto the left ray: foot at D sin(phi) along the ray direction
+  \coordinate (F) at ({\D*sin(\ph)*sin(\ph)},{\D*sin(\ph)*cos(\ph)});
+  \draw[black!55, dashed] (\D,0) -- (F);
+  \draw[figR, line width=1.6pt] (0,0) -- (F);
+  \node[figR, anchor=east, font=\scriptsize] at ($(0,0)!0.55!(F)+(-0.08,0.12)$) {$D\sin\varphi$};
+  % right-angle mark at F
+  \draw[black!55, thin] ($(F)+({-0.18*sin(\ph)},{-0.18*cos(\ph)})$) -- ++({0.18*cos(\ph)},{-0.18*sin(\ph)}) -- ++({0.18*sin(\ph)},{0.18*cos(\ph)});
+  % angle phi at right atom
+  \draw[black!55, thin, dashed] (\D,0) -- (\D,2.6);
+  \draw[black!70, thin] (\D,1.0) arc (90:{90-\ph}:1.0);
+  \node[font=\scriptsize] at ({\D+0.32},1.25) {$\varphi$};
+  % spacing D
+  \draw[<->, black!70, thin] (0,-0.42) -- node[below, font=\scriptsize] {$D$} (\D,-0.42);
+  \node[font=\scriptsize, black!70, anchor=west] at ({2*\D+0.35},0) {surface atoms};
+\end{tikzpicture}

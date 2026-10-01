@@ -1,0 +1,21 @@
+% Figure for Quantum Mechanics §A3.1 (de Broglie waves around a circular orbit: 3 wavelengths close on themselves, 3.4 do not; computed r = R + A cos(n theta)).
+\begin{tikzpicture}[font=\small]
+  \def\R{1.6}\def\A{0.22}
+  % left: n = 3, standing wave closes
+  \draw[black!55, thin, dashed] (0,0) circle (\R);
+  \fill[black!55] (0,0) circle (1.6pt) node[below, font=\scriptsize, black!70] {nucleus};
+  \draw[figB, line width=0.9pt, smooth, samples=241, domain=0:360] plot ({(\R+\A*cos(3*\x))*cos(\x)}, {(\R+\A*cos(3*\x))*sin(\x)});
+  \node[font=\scriptsize, align=center] at (0,-2.45) {$2\pi r = 3\lambda$: the wave joins itself\\ (allowed orbit, $L = 3\hbar$)};
+  % right: 3.4 wavelengths, does not close
+  \begin{scope}[xshift=5.2cm]
+    \draw[black!55, thin, dashed] (0,0) circle (\R);
+    \fill[black!55] (0,0) circle (1.6pt);
+    \draw[figB, line width=0.9pt, smooth, samples=241, domain=0:360] plot ({(\R+\A*cos(3.4*\x))*cos(\x)}, {(\R+\A*cos(3.4*\x))*sin(\x)});
+    % mismatch at theta = 0 (start) and theta = 360 (end)
+    \fill[figR] ({\R+\A},0) circle (1.5pt);
+    \fill[figR] ({\R+\A*cos(1224)},0) circle (1.5pt);
+    \draw[figR, thick] ({\R+\A*cos(1224)},0) -- ({\R+\A},0);
+    \node[figR, font=\scriptsize, anchor=west] at ({\R+\A+0.08},0) {mismatch};
+    \node[font=\scriptsize, align=center] at (0,-2.45) {$2\pi r = 3.4\lambda$: the wave does not join\\ (no standing wave)};
+  \end{scope}
+\end{tikzpicture}

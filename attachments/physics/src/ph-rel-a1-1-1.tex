@@ -1,0 +1,23 @@
+% Figure for Relativity §A1.1 (Galilean transformation: frame S' moves at velocity v along +x of S; an event P at time t has x = x' + vt; after University Physics Vol. 3, Fig. 5.13).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  % frame S
+  \draw[->, thick, black!70] (0,0) -- (7.6,0) node[right] {$x$};
+  \draw[->, thick, black!70] (0,0) -- (0,2.6) node[above] {$y$};
+  \node[black!70, anchor=north east] at (0,0) {$O$};
+  \node[black!70, font=\normalsize] at (-0.55,2.2) {$S$};
+  % frame S' (shifted by vt, drawn slightly raised for clarity)
+  \begin{scope}[shift={(2.6,0.0)}]
+    \draw[->, thick, figB] (0,0) -- (0,2.6) node[above] {$y'$};
+    \draw[->, thick, figB] (0,-0.12) -- (4.8,-0.12) node[right, yshift=-3pt] {$x'$};
+    \node[figB, anchor=north west] at (0,-0.12) {$O'$};
+    \node[figB, font=\normalsize] at (0.55,2.2) {$S'$};
+    \draw[->, very thick, figB] (0.25,1.55) -- (1.35,1.55) node[right] {$\vec v$};
+  \end{scope}
+  % event P
+  \fill[figR] (5.8,1.0) circle (2.4pt) node[above right, figR] {$P\,(x, y, z, t)$};
+  \draw[dashed, black!55] (5.8,1.0) -- (5.8,-0.12);
+  % dimension lines
+  \draw[<->, black!60] (0,-0.75) -- (2.6,-0.75) node[midway, below, font=\scriptsize] {$vt$};
+  \draw[<->, figB] (2.6,-0.75) -- (5.8,-0.75) node[midway, below, font=\scriptsize] {$x'$};
+  \draw[<->, black!60] (0,-1.45) -- (5.8,-1.45) node[midway, below, font=\scriptsize] {$x = x' + vt$};
+\end{tikzpicture}

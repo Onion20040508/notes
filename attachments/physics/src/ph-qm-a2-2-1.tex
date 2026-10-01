@@ -1,0 +1,48 @@
+% Figure for Quantum Mechanics §A2.2 (hydrogen energy levels E_n = -13.6 eV/n^2 drawn to scale, with the first transitions and series limits of the Lyman, Balmer and Paschen series).
+\begin{tikzpicture}[>={Stealth[length=2mm]}, font=\small]
+  \draw[black!70, thick] (0,0.186) -- (8.2,0.186);
+  \draw[black!70, thick] (0,4.471) -- (8.2,4.471);
+  \draw[black!70, thick] (0,5.265) -- (8.2,5.265);
+  \draw[black!70, thick] (0,5.543) -- (8.2,5.543);
+  \draw[black!70, thick] (0,5.671) -- (8.2,5.671);
+  \draw[black!70, thick] (0,5.741) -- (8.2,5.741);
+  \draw[black!70, thick, dashed] (0,5.900) -- (8.2,5.900);
+  \draw[black!40, thin] (8.2,5.900) -- (8.549999999999999,6.300);
+  \node[anchor=west, font=\scriptsize] at (8.549999999999999,6.300) {$n=\infty$, $E = 0$ (ionization)};
+  \draw[black!40, thin] (8.2,5.671) -- (8.549999999999999,5.970);
+  \node[anchor=west, font=\scriptsize] at (8.549999999999999,5.970) {$n=5, 6, \dots$};
+  \draw[black!40, thin] (8.2,5.543) -- (8.549999999999999,5.630);
+  \node[anchor=west, font=\scriptsize] at (8.549999999999999,5.630) {$n=4$, $-0.85$ eV};
+  \draw[black!40, thin] (8.2,5.265) -- (8.549999999999999,5.220);
+  \node[anchor=west, font=\scriptsize] at (8.549999999999999,5.220) {$n=3$, $-1.51$ eV};
+  \draw[black!40, thin] (8.2,4.471) -- (8.549999999999999,4.471);
+  \node[anchor=west, font=\scriptsize] at (8.549999999999999,4.471) {$n=2$, $-3.40$ eV};
+  \draw[black!40, thin] (8.2,0.186) -- (8.549999999999999,0.186);
+  \node[anchor=west, font=\scriptsize] at (8.549999999999999,0.186) {$n=1$, $-13.6$ eV};
+  \draw[->, black!55] (-0.5,-0.014) -- (-0.5,6.400) node[above, font=\scriptsize] {$E$ (eV)};
+  \draw[black!55] (-0.58,0.860) -- (-0.42,0.860) node[left, xshift=-4pt, font=\scriptsize, black] {$-12$};
+  \draw[black!55] (-0.58,1.700) -- (-0.42,1.700) node[left, xshift=-4pt, font=\scriptsize, black] {$-10$};
+  \draw[black!55] (-0.58,2.540) -- (-0.42,2.540) node[left, xshift=-4pt, font=\scriptsize, black] {$-8$};
+  \draw[black!55] (-0.58,3.380) -- (-0.42,3.380) node[left, xshift=-4pt, font=\scriptsize, black] {$-6$};
+  \draw[black!55] (-0.58,4.220) -- (-0.42,4.220) node[left, xshift=-4pt, font=\scriptsize, black] {$-4$};
+  \draw[black!55] (-0.58,5.060) -- (-0.42,5.060) node[left, xshift=-4pt, font=\scriptsize, black] {$-2$};
+  \draw[black!55] (-0.58,5.900) -- (-0.42,5.900) node[left, xshift=-4pt, font=\scriptsize, black] {$0$};
+  \draw[->, figB, thick] (0.50,4.471) -- (0.50,0.186);
+  \draw[->, figB, thick] (0.82,5.265) -- (0.82,0.186);
+  \draw[->, figB, thick] (1.14,5.543) -- (1.14,0.186);
+  \draw[->, figB, thick] (1.46,5.671) -- (1.46,0.186);
+  \draw[->, figB, thick] (1.78,5.741) -- (1.78,0.186);
+  \draw[->, figB, thick] (2.10,5.900) -- (2.10,0.186);
+  \node[figB, font=\scriptsize, anchor=north] at (1.30,0.136) {Lyman (UV)};
+  \draw[->, figR, thick] (3.40,5.265) -- (3.40,4.471);
+  \draw[->, figR, thick] (3.72,5.543) -- (3.72,4.471);
+  \draw[->, figR, thick] (4.04,5.671) -- (4.04,4.471);
+  \draw[->, figR, thick] (4.36,5.741) -- (4.36,4.471);
+  \draw[->, figR, thick] (4.68,5.900) -- (4.68,4.471);
+  \node[figR, font=\scriptsize, anchor=north] at (4.04,4.421) {Balmer (visible and near UV)};
+  \draw[->, figG, thick] (6.00,5.543) -- (6.00,5.265);
+  \draw[->, figG, thick] (6.32,5.671) -- (6.32,5.265);
+  \draw[->, figG, thick] (6.64,5.741) -- (6.64,5.265);
+  \draw[->, figG, thick] (6.96,5.900) -- (6.96,5.265);
+  \node[figG, font=\scriptsize, anchor=north] at (6.48,5.215) {Paschen (IR)};
+\end{tikzpicture}

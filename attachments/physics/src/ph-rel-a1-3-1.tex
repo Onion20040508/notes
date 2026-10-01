@@ -1,0 +1,22 @@
+% Figure for Relativity §A1.3 (Einstein's train in the ground frame S, beta = 0.5: lightning strikes the ends of the train simultaneously in S (events 1, 2); the flashes meet at the ground observer C (event 3) but reach the train's midpoint C' at different times (events 4 at ct = 2/3 and 5 at ct = 2, in units of the half-length of the train measured in S); event numbering as in the PHY 284 EinsteinTrain slides).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}, scale=1.6]
+  % axes (the ct axis is also the worldline of the ground observer C)
+  \draw[->, black!55] (-1.7,0) -- (2.7,0) node[right] {$x$};
+  \draw[->, black!55] (0,-0.2) -- (0,2.6) node[above] {$ct$};
+  \node[black!70, font=\scriptsize, anchor=south east] at (-0.03,2.25) {$C$ (ground)};
+  \foreach \y in {1,2} \draw[black!55] (0.04,\y) -- (-0.04,\y) node[left, font=\scriptsize] {$\y$};
+  \foreach \x in {-1,1,2} \draw[black!55] (\x,0.04) -- (\x,-0.04) node[below, font=\scriptsize] {$\x$};
+  % train worldlines (rear, middle C', front): x = x0 + 0.5 ct
+  \draw[figB, thick] (-1,0) -- (0.25,2.5) node[above, font=\scriptsize] {rear};
+  \draw[figB, very thick] (0,0) -- (1.25,2.5) node[above, font=\scriptsize] {$C'$};
+  \draw[figB, thick] (1,0) -- (2.25,2.5) node[above, font=\scriptsize] {front};
+  % light from the strikes
+  \draw[figR, thick, ->] (1,0) -- (-0.25,1.25);
+  \draw[figR, thick, ->] (-1,0) -- (1.25,2.25);
+  % events
+  \fill[figR] (1,0) circle (1.6pt) node[above right, font=\scriptsize, xshift=1pt] {$1$};
+  \fill[figR] (-1,0) circle (1.6pt) node[above left, font=\scriptsize, xshift=-1pt] {$2$};
+  \fill[black] (0,1) circle (1.5pt) node[right, font=\scriptsize, xshift=3pt] {$3$};
+  \fill[figB] (0.3333,0.6667) circle (1.6pt) node[right, font=\scriptsize, xshift=2pt] {$4$};
+  \fill[figB] (1,2) circle (1.6pt) node[right, font=\scriptsize, xshift=3pt, yshift=-2pt] {$5$};
+\end{tikzpicture}

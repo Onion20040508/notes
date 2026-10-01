@@ -1,0 +1,30 @@
+% Figure for Quantum Mechanics §A1.1 (blackbody spectra from Planck's law at 4000, 5000, 6000 K, Wien peaks, Rayleigh–Jeans at 5000 K; computed).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=0.62\textwidth, height=0.42\textwidth,
+      xmin=0, xmax=2.6, ymin=0, ymax=11.5,
+      xlabel={$\lambda$ ($\mu$m)}, ylabel={$I(\lambda,T)$ \scriptsize($10^{7}$ W/(m$^2\cdot\mu$m))},
+      xtick={0,0.5,1,1.5,2,2.5}, ytick={0,2,4,6,8,10},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south west, xshift=-14pt},
+      xlabel style={at={(axis description cs:1,-0.1)}, anchor=north east},
+      clip=false]
+    % visible band
+    \fill[black!7] (axis cs:0.38,0) rectangle (axis cs:0.75,11.5);
+    \node[black!55, font=\scriptsize] at (axis cs:0.565,10.9) {visible};
+    % Planck: I = 37.418/lambda^5 /(exp(14388/(lambda T))-1)  in 1e7 W/(m^2 um), lambda in um
+    \addplot[figB, domain=0.12:2.6, samples=220] {37.418/(x^5*(exp(14388/(x*6000))-1))};
+    \addplot[figB!70!black, domain=0.12:2.6, samples=220] {37.418/(x^5*(exp(14388/(x*5000))-1))};
+    \addplot[figB!45, domain=0.12:2.6, samples=220] {37.418/(x^5*(exp(14388/(x*4000))-1))};
+    % Rayleigh-Jeans at 5000 K: 37.418*T/(14388 x^4)
+    \addplot[figR, dashed, thick, domain=1.035:2.6, samples=120] {37.418*5000/(14388*x^4)};
+    % Wien peaks lambda_max = 2898/T um
+    \addplot[only marks, mark=*, mark size=1.5pt, black] coordinates {
+      (0.4830,{37.418/(0.4830^5*(exp(14388/(0.4830*6000))-1))})
+      (0.5796,{37.418/(0.5796^5*(exp(14388/(0.5796*5000))-1))})
+      (0.7245,{37.418/(0.7245^5*(exp(14388/(0.7245*4000))-1))})};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.62,9.9) {6000 K};
+    \node[figB!70!black, font=\scriptsize, anchor=west] at (axis cs:0.75,4.4) {5000 K};
+    \node[figB!45!black, font=\scriptsize, anchor=west] at (axis cs:0.93,0.5) {4000 K};
+    \node[figR, font=\scriptsize, anchor=west, align=left] at (axis cs:1.32,6.4) {Rayleigh--Jeans,\\ 5000 K};
+    \node[black, font=\scriptsize, anchor=west, align=left] at (axis cs:1.45,9.6) {dots: peaks,\\ $\lambda_{\max}T = 2.898$ mm$\cdot$K};
+  \end{axis}
+\end{tikzpicture}

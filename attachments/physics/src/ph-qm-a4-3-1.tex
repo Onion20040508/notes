@@ -1,0 +1,22 @@
+% Figure for Quantum Mechanics §A4.3: probability density of the equal superposition (psi_1 + psi_2)/sqrt2 in the infinite well at three times (phase 3 omega t = 0, pi/2, pi), computed from the formula, with <x> marked; right: <x>(t).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=a, width=8cm, height=5.4cm, xmin=0, xmax=1, ymin=0, ymax=3.3,
+      xtick={0,0.25,0.5,0.75,1}, xticklabels={$0$,$L/4$,$L/2$,$3L/4$,$L$}, ytick={1,2,3}, yticklabels={$1/L$,$2/L$,$3/L$},
+      xlabel={$x$}, ylabel={$|\Psi(x,t)|^2$}, clip=false]
+    \addplot[figB, very thick, domain=0:1, samples=150] {(sin(deg(pi*x)))^2+(sin(deg(2*pi*x)))^2+2*sin(deg(pi*x))*sin(deg(2*pi*x))};
+    \addplot[figG, very thick, domain=0:1, samples=150] {(sin(deg(pi*x)))^2+(sin(deg(2*pi*x)))^2};
+    \addplot[figR, very thick, domain=0:1, samples=150] {(sin(deg(pi*x)))^2+(sin(deg(2*pi*x)))^2-2*sin(deg(pi*x))*sin(deg(2*pi*x))};
+    \draw[figB, dashed] (axis cs:0.3199,0) -- (axis cs:0.3199,3.15);
+    \draw[figG, dashed] (axis cs:0.5,0) -- (axis cs:0.5,3.15);
+    \draw[figR, dashed] (axis cs:0.6801,0) -- (axis cs:0.6801,3.15);
+    \node[figB, font=\scriptsize, anchor=south] at (axis cs:0.3199,3.15) {$t = 0$};
+    \node[figG, font=\scriptsize, anchor=south] at (axis cs:0.5,3.15) {$T/4$};
+    \node[figR, font=\scriptsize, anchor=south] at (axis cs:0.6801,3.15) {$T/2$};
+  \end{axis}
+  \begin{axis}[nfig, at={(a.east)}, anchor=west, xshift=1.3cm, width=5.2cm, height=5.4cm, xmin=0, xmax=2.15, ymin=0, ymax=1,
+      xtick={0,0.5,1,1.5,2}, xticklabels={$0$,,$T$,,$2T$}, ytick={0.3199,0.5,0.6801}, yticklabels={$0.32L$,$L/2$,$0.68L$},
+      xlabel={$t$}, ylabel={$\langle x\rangle$}]
+    \draw[black!40, thin, densely dotted] (axis cs:0,0.5) -- (axis cs:2.15,0.5);
+    \addplot[figB, very thick, domain=0:2.1, samples=150] {0.5-0.18013*cos(deg(2*pi*x))};
+  \end{axis}
+\end{tikzpicture}

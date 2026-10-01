@@ -1,0 +1,25 @@
+% Figure for Relativity §A2.3 (u/c against u'/c for frame speeds v = 0.5c and 0.9c: relativistic composition (solid) versus Galilean u = u' + v (dashed); computed).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=8.4cm, height=6.6cm, xmin=-1, xmax=1, ymin=-1.1, ymax=1.65,
+      xlabel={$u'_x/c$}, ylabel={$u_x/c$},
+      xtick={-1,-0.5,0,0.5,1}, ytick={-1,-0.5,0,0.5,1,1.5},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      legend style={font=\scriptsize, at={(axis cs:0.97,-1.0)}, anchor=south east, draw=black!30, fill=white},
+      legend cell align=left, clip=true]
+    \addplot[black!25, thin, domain=-1:1, forget plot] {0};
+    \addplot[black!25, thin, forget plot] coordinates {(0,-1.1) (0,1.65)};
+    \addplot[black!45, densely dotted, thick, domain=-1:1, forget plot] {1};
+    \addplot[black!45, densely dotted, thick, domain=-1:1, forget plot] {-1};
+    \addplot[black!45, thin, domain=-1:1, forget plot] {x};
+    \addplot[figB, domain=-1:1, samples=101] {(x+0.5)/(1+0.5*x)};
+    \addlegendentry{$v = 0.5c$}
+    \addplot[figB, dashed, domain=-1:1] {x+0.5};
+    \addlegendentry{$v = 0.5c$, Galilean}
+    \addplot[figR, domain=-1:1, samples=201] {(x+0.9)/(1+0.9*x)};
+    \addlegendentry{$v = 0.9c$}
+    \addplot[figR, dashed, domain=-1:1] {x+0.9};
+    \addlegendentry{$v = 0.9c$, Galilean}
+    \node[black!60, font=\scriptsize, anchor=south] at (axis cs:-0.72,1.0) {$u_x = c$};
+    \node[black!60, font=\scriptsize, anchor=north west] at (axis cs:-0.38,-0.48) {$v = 0$};
+  \end{axis}
+\end{tikzpicture}

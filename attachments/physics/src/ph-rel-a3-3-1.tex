@@ -1,0 +1,24 @@
+% Figure for Relativity §A3.3 (PHY 286 relativistic-energy lab, the user's data: kinetic energy against momentum of beta electrons from Sr-90, with the relativistic K = sqrt((mc^2)^2 + (pc)^2) - mc^2 and Newtonian K = p^2/2m predictions for m c^2 = 0.511 MeV; curves computed).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=8.2cm, height=6.0cm, xmin=0, xmax=2.2, ymin=0, ymax=2.5,
+      xlabel={$p$ (MeV$/c$)}, ylabel={$K$ (MeV)},
+      xtick={0,0.5,1,1.5,2}, ytick={0,0.5,1,1.5,2,2.5},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      legend style={font=\scriptsize, at={(axis cs:2.15,0.05)}, anchor=south east, draw=black!30},
+      legend cell align=left, clip=true]
+    \addplot[figR, domain=0:2.2, samples=120] {sqrt(0.511^2 + x^2) - 0.511};
+    \addlegendentry{relativistic}
+    \addplot[figB, dashed, domain=0:2.2, samples=120] {x^2/1.022};
+    \addlegendentry{Newtonian}
+    \addplot[only marks, mark=*, mark size=1.5pt, black,
+        error bars/.cd, x dir=both, x explicit, y dir=both, y explicit]
+      coordinates {
+        (1.0602,0.627) +- (0.0372,0.016)
+        (1.209,0.794) +- (0.0372,0.023)
+        (1.395,0.985) +- (0.0372,0.020)
+        (1.674,1.261) +- (0.0372,0.029)
+        (1.953,1.551) +- (0.0372,0.027)
+      };
+    \addlegendentry{measured}
+  \end{axis}
+\end{tikzpicture}

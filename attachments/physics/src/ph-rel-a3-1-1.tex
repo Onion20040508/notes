@@ -1,0 +1,15 @@
+% Figure for Relativity §A3.1 (momentum in units of mc against u/c: relativistic gamma*m*u versus classical m*u; computed).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=7.6cm, height=5.6cm, xmin=0, xmax=1.08, ymin=0, ymax=4.6,
+      xlabel={$u/c$}, ylabel={$p/mc$},
+      xtick={0,0.2,0.4,0.6,0.8,1}, ytick={0,1,2,3,4},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      clip=true, legend style={font=\scriptsize, at={(axis cs:0.03,0.97*\pgfkeysvalueof{/pgfplots/ymax})}, anchor=north west, draw=black!30}, legend cell align=left]
+    \addplot[black!45, densely dotted, thick, forget plot] coordinates {(1,0) (1,4.6)};
+    \addplot[figR, domain=0:0.976, samples=200]  {x/sqrt(1-x^2)};
+    \addlegendentry{$p = \gamma m u$}
+    \addplot[figB, dashed, domain=0:1.08] {x};
+    \addlegendentry{$p = m u$}
+    \node[black!60, font=\scriptsize, anchor=west] at (axis cs:1.0,2.0) {$c$};
+  \end{axis}
+\end{tikzpicture}

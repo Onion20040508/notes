@@ -1,0 +1,19 @@
+% Figure for Quantum Mechanics §A3.4 (Gaussian wave packet Psi = (2 pi)^(-1/4) exp(-x^2/4) exp(6ix), sigma_x = 1: real and imaginary parts, and the probability density with the probability of 0.5 < x < 1.5 shaded; computed).
+\begin{tikzpicture}
+  \begin{axis}[nfig, name=a, scale only axis, width=10cm, height=2.3cm, xmin=-4, xmax=4, ymin=-0.7, ymax=0.7,
+      axis lines=left, xticklabels={}, ytick={-0.5,0,0.5}, ylabel={$\Psi$}, ylabel style={font=\scriptsize}]
+    \addplot[black!55, dashed, line width=0.6pt, domain=-4:4, samples=200] {0.63162*exp(-x^2/4)};
+    \addplot[black!55, dashed, line width=0.6pt, domain=-4:4, samples=200] {-0.63162*exp(-x^2/4)};
+    \addplot[figG, line width=0.7pt, domain=-4:4, samples=700] {0.63162*exp(-x^2/4)*sin(deg(6*x))};
+    \addplot[figB, line width=0.7pt, domain=-4:4, samples=700] {0.63162*exp(-x^2/4)*cos(deg(6*x))};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:2.15,0.5) {$\operatorname{Re}\Psi$};
+    \node[figG, font=\scriptsize, anchor=west] at (axis cs:2.15,0.32) {$\operatorname{Im}\Psi$};
+    \node[black!70, font=\scriptsize, anchor=west] at (axis cs:-3.95,0.5) {$\pm|\Psi|$};
+  \end{axis}
+  \begin{axis}[nfig, at={(a.south west)}, anchor=north west, yshift=-0.35cm, scale only axis, width=10cm, height=2.3cm,
+      xmin=-4, xmax=4, ymin=0, ymax=0.48, axis lines=left, ytick={0,0.2,0.4}, xlabel={$x$}, ylabel={$|\Psi|^2$}, ylabel style={font=\scriptsize}, clip=false]
+    \addplot[draw=none, fill=figR, fill opacity=0.25, domain=0.5:1.5, samples=60] {0.398942*exp(-x^2/2)} \closedcycle;
+    \addplot[figR, line width=0.9pt, domain=-4:4, samples=300] {0.398942*exp(-x^2/2)};
+    \node[figR, font=\scriptsize, anchor=west, align=left] at (axis cs:1.75,0.3) {shaded area\\ $P(0.5 < x < 1.5) = 0.24$};
+  \end{axis}
+\end{tikzpicture}
