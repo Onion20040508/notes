@@ -1,4 +1,4 @@
-% Figure for Electromagnetism §B9.1 (Example: energy flow into a current-carrying resistor, after Griffiths Ex. 8.1; longitudinal section; S = E x B/mu0 points radially inward with |S| proportional to 1/s outside the wire (E uniform along the wire, B = mu0 I/(2 pi s)), so the arrow lengths are drawn proportional to 1/s and the power through every coaxial cylinder is the same, VI).
+% Figure for Electromagnetism §B9.1 (Example: energy flow into a current-carrying resistor, after Griffiths Ex. 8.1; longitudinal section; S = E x B/mu0 points radially inward with |S| proportional to 1/s outside the wire (E uniform along the wire, B = mu0 I/(2 pi s)), B out of the page above the axis and into it below for I to the right; so the arrow lengths are drawn proportional to 1/s and the power through every coaxial cylinder is the same, VI).
 \begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small]
 \fill[black!12] (0,-0.350) rectangle (6.000,0.350);
 \draw[black!55, thin] (0,-0.350) rectangle (6.000,0.350);
@@ -20,9 +20,9 @@
 \draw[->, thick, figG] (2.300,1.840) -- (2.300,1.660);
 \draw[->, thick, figG] (3.700,1.840) -- (3.700,1.660);
 \draw[->, thick, figG] (5.100,1.840) -- (5.100,1.660);
-\draw[figR, thick] (1.600,0.950) circle (0.09) (1.536,0.886) -- (1.664,1.014) (1.536,1.014) -- (1.664,0.886);
-\draw[figR, thick] (3.000,0.950) circle (0.09) (2.936,0.886) -- (3.064,1.014) (2.936,1.014) -- (3.064,0.886);
-\draw[figR, thick] (4.400,0.950) circle (0.09) (4.336,0.886) -- (4.464,1.014) (4.336,1.014) -- (4.464,0.886);
+\draw[figR, thick] (1.600,0.950) circle (0.09); \fill[figR] (1.600,0.950) circle (0.03);
+\draw[figR, thick] (3.000,0.950) circle (0.09); \fill[figR] (3.000,0.950) circle (0.03);
+\draw[figR, thick] (4.400,0.950) circle (0.09); \fill[figR] (4.400,0.950) circle (0.03);
 \draw[->, thick, figG] (0.900,-0.960) -- (0.900,-0.540);
 \draw[->, thick, figG] (2.300,-0.960) -- (2.300,-0.540);
 \draw[->, thick, figG] (3.700,-0.960) -- (3.700,-0.540);
@@ -35,9 +35,9 @@
 \draw[->, thick, figG] (2.300,-1.840) -- (2.300,-1.660);
 \draw[->, thick, figG] (3.700,-1.840) -- (3.700,-1.660);
 \draw[->, thick, figG] (5.100,-1.840) -- (5.100,-1.660);
-\draw[figR, thick] (1.600,-0.950) circle (0.09); \fill[figR] (1.600,-0.950) circle (0.03);
-\draw[figR, thick] (3.000,-0.950) circle (0.09); \fill[figR] (3.000,-0.950) circle (0.03);
-\draw[figR, thick] (4.400,-0.950) circle (0.09); \fill[figR] (4.400,-0.950) circle (0.03);
+\draw[figR, thick] (1.600,-0.950) circle (0.09) (1.536,-1.014) -- (1.664,-0.886) (1.536,-0.886) -- (1.664,-1.014);
+\draw[figR, thick] (3.000,-0.950) circle (0.09) (2.936,-1.014) -- (3.064,-0.886) (2.936,-0.886) -- (3.064,-1.014);
+\draw[figR, thick] (4.400,-0.950) circle (0.09) (4.336,-1.014) -- (4.464,-0.886) (4.336,-0.886) -- (4.464,-1.014);
 \node[figR, anchor=west] at (4.550,0.95) {$\vec B$};
 \node[figG, anchor=west] at (5.300,1.75) {$\vec S$};
 \draw[|<->|, thin, black!55] (0.300,0) -- node[right, font=\scriptsize] {$a$} (0.300,0.350);

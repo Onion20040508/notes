@@ -10,7 +10,8 @@
 \addplot[only marks, mark=*, mark size=1.4pt, figR] coordinates {(1.5,0.0400)};
 \addplot[only marks, mark=*, mark size=1.4pt, figR] coordinates {(2.42,0.1724)};
 \node[font=\scriptsize, black!70, anchor=south east] at (axis cs:1.30,0.045) {water};
-\node[font=\scriptsize, black!70, anchor=west] at (axis cs:1.85,0.04) {glass};
+\draw[black!45, very thin] (axis cs:1.5,0.05) -- (axis cs:1.5,0.21);
+\node[font=\scriptsize, black!70, anchor=south] at (axis cs:1.5,0.21) {glass};
 \node[font=\scriptsize, black!70, anchor=north west] at (axis cs:2.50,0.16) {diamond};
 \node[font=\scriptsize, black!70, align=center] at (axis cs:0.21,0.92) {$R(n) = R(1/n)$\\ $R + T = 1$};
 \end{axis}
