@@ -1,0 +1,28 @@
+% Figure for Applied Linear Algebra §19.
+\begin{tikzpicture}[x={(-0.3cm,-0.4cm)}, y={(0.42cm,0cm)}, z={(0cm,0.42cm)}, >=Stealth, font=\scriptsize]
+  % axes
+  \draw[->, black!50] (0,0,0) -- (8,0,0) node[below left] {$x_1$};
+  \draw[->, black!50] (0,0,0) -- (0,15,0) node[right] {$x_2$};
+  \draw[->, black!50] (0,0,0) -- (0,0,10) node[above] {$x_3$};
+  % plane patch s v1 + t v2, s in [-0.3,2.6], t in [-0.3,3.6]; v1=(3,6,2), v2=(-1,0,1)
+  \fill[figB!12] (-0.6,-1.8,-0.9) -- (8.1,15.6,4.9) -- (4.2,15.6,8.8) -- (-4.5,-1.8,3.0) -- cycle;
+  % grid lines c2 = const (direction v1)
+  \foreach \t in {0,1,2,3} {
+    \draw[figB!45] ({-0.3*3-\t},{-0.3*6},{-0.3*2+\t}) -- ({2.6*3-\t},{2.6*6},{2.6*2+\t});
+  }
+  % grid lines c1 = const (direction v2)
+  \foreach \s in {0,1,2} {
+    \draw[figB!45] ({3*\s+0.3},{6*\s},{2*\s-0.3}) -- ({3*\s-3.6},{6*\s},{2*\s+3.6});
+  }
+  % basis vectors and multiples
+  \draw[->, very thick, figB] (0,0,0) -- (3,6,2) node[below right=-1pt] {$\mathbf{v}_1$};
+  \draw[->, very thick, figG] (0,0,0) -- (-1,0,1) node[left] {$\mathbf{v}_2$};
+  \fill[figB] (6,12,4) circle (1.5pt) node[below right=-1pt] {$2\mathbf{v}_1$};
+  \fill[figG] (-2,0,2) circle (1.5pt) node[left] {$2\mathbf{v}_2$};
+  \fill[figG] (-3,0,3) circle (1.5pt) node[left] {$3\mathbf{v}_2$};
+  % x = 2v1 + 3v2 = (3,12,7)
+  \draw[black!50, dashed] (6,12,4) -- (3,12,7);
+  \fill[figR] (3,12,7) circle (2pt) node[above right=-1pt] {$\mathbf{x} = 2\mathbf{v}_1 + 3\mathbf{v}_2$};
+  \fill (0,0,0) circle (1.2pt) node[below=2pt] {$\mathbf{0}$};
+  \node[figB, right] at (6.15,15.6,6.85) {$H$};
+\end{tikzpicture}

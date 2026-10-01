@@ -32,6 +32,15 @@ The quantum behaviour of light and matter and its applications to atoms, molecul
 - [[· B8 Time-Independent Perturbation Theory]] (★ §B8.2, §B8.4)
 - [[· B9 The Variational Principle and the WKB Approximation]] (★ §B9.1, §B9.2)
 
+## Level C — graduate
+- [[· C1 Fundamental Concepts]]
+- [[· C2 Position, Momentum and Translation]]
+- [[· C3 Quantum Dynamics]]
+- [[· C4 Propagators and Path Integrals]]
+- [[· C5 Rotations and Angular Momentum]]
+- [[· C6 Central Potentials]]
+- [[· C7 Addition of Angular Momentum and Tensor Operators]]
+
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
 
@@ -54,6 +63,13 @@ graph TD
   B7["B7 Identical Particles"]
   B8["B8 Time-Independent Perturbation Theory"]
   B9["B9 The Variational Principle and the WKB Approximation"]
+  C1["C1 Fundamental Concepts"]
+  C2["C2 Position, Momentum and Translation"]
+  C3["C3 Quantum Dynamics"]
+  C4["C4 Propagators and Path Integrals"]
+  C5["C5 Rotations and Angular Momentum"]
+  C6["C6 Central Potentials"]
+  C7["C7 Addition of Angular Momentum and Tensor Operators"]
   A1 -->|3| A2
   A1 -->|1| A3
   A2 -->|1| A3
@@ -112,6 +128,41 @@ graph TD
   B5 -->|7| B9
   B7 -->|3| B9
   B8 -->|5| B9
+  A5 -->|1| C1
+  B2 -->|22| C1
+  B5 -->|2| C1
+  B6 -->|4| C1
+  B7 -->|1| C1
+  B2 -->|19| C2
+  C1 -->|2| C2
+  B1 -->|1| C3
+  B2 -->|14| C3
+  B3 -->|6| C3
+  B4 -->|9| C3
+  B5 -->|1| C3
+  B6 -->|5| C3
+  B9 -->|2| C3
+  C1 -->|7| C3
+  C2 -->|11| C3
+  B1 -->|1| C4
+  B4 -->|4| C4
+  B6 -->|1| C4
+  C2 -->|10| C4
+  C3 -->|10| C4
+  B2 -->|3| C5
+  B5 -->|8| C5
+  B6 -->|4| C5
+  C2 -->|2| C5
+  C3 -->|1| C5
+  B5 -->|22| C6
+  B8 -->|1| C6
+  C1 -->|1| C6
+  C2 -->|1| C6
+  C5 -->|9| C6
+  B5 -->|2| C7
+  B6 -->|8| C7
+  C1 -->|1| C7
+  C5 -->|22| C7
   A3 -.->|1| A1
   A4 -.->|1| A1
   A4 -.->|1| A2
@@ -136,6 +187,13 @@ graph TD
   B6 -.->|1| B5
   B8 -.->|2| B5
   B9 -.->|2| B5
+  C2 -.->|1| C1
+  C5 -.->|2| C1
+  C3 -.->|7| C2
+  C4 -.->|1| C2
+  C5 -.->|1| C3
+  C6 -.->|1| C5
+  C7 -.->|1| C6
 ```
 
 ## Planned

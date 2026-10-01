@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· B3 One-Dimensional Potentials]] · ↑ [[Quantum Mechanics]] · [[· B5 Quantum Mechanics in Three Dimensions]] →
 
 **Builds on:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (5), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (4), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (16), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (3)
-**Used by:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (1), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (1), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (4)
+**Used by:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (1), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (1), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (4), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (9), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (4)
 
 ## Sections
 - [[§B4.1 Ladder Operators and the Spectrum]] — Griffiths 2.3.1; Zwiebach L14–15; Greensite 9

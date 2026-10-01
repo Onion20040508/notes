@@ -1,0 +1,17 @@
+% Figure for Applied Linear Algebra §9.
+\begin{tikzpicture}[x=1.05cm, y=1.05cm, >=Stealth, font=\scriptsize]
+  \newcommand{\panel}[6]{% #1 xshift, #2 title, #3 matrix, #4 image of e1, #5 image of e2, #6 image of e1+e2
+    \begin{scope}[xshift=#1]
+      \draw[->, black!50] (-1.2,0) -- (1.8,0);
+      \draw[->, black!50] (0,-1.2) -- (0,1.8);
+      \draw[black!40, dashed] (0,0) rectangle (1,1);
+      \fill[figB!18] (0,0) -- #4 -- #6 -- #5 -- cycle;
+      \draw[figB, thick] (0,0) -- #4 -- #6 -- #5 -- cycle;
+      \draw[->, thick, figR] (0,0) -- #4; \draw[->, thick, figG] (0,0) -- #5;
+      \node[font=\small, align=center] at (0.3,-1.95) {#2\\[2pt] $#3$};
+    \end{scope}}
+  \panel{0cm}{reflection\\ through $x_2 = x_1$}{\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}}{(0,1)}{(1,0)}{(1,1)}
+  \panel{4.2cm}{horizontal contraction,\\ $k = \tfrac12$}{\begin{bmatrix} \frac12 & 0 \\ 0 & 1 \end{bmatrix}}{(0.5,0)}{(0,1)}{(0.5,1)}
+  \panel{8.4cm}{horizontal shear,\\ $k = \tfrac12$}{\begin{bmatrix} 1 & \frac12 \\ 0 & 1 \end{bmatrix}}{(1,0)}{(0.5,1)}{(1.5,1)}
+  \panel{12.6cm}{reflection\\ through $\mathbf{0}$}{\begin{bmatrix} -1 & 0 \\ 0 & -1 \end{bmatrix}}{(-1,0)}{(0,-1)}{(-1,-1)}
+\end{tikzpicture}

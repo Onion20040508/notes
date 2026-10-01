@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· B2 The Formalism of Quantum Mechanics]] · ↑ [[Quantum Mechanics]] · [[· B4 The Harmonic Oscillator]] →
 
 **Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (2), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (15), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (8)
-**Used by:** [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (3), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (4), [[· B7 Identical Particles|B7 Identical Particles]] (2), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (11)
+**Used by:** [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (3), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (4), [[· B7 Identical Particles|B7 Identical Particles]] (2), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (11), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (6)
 
 ## Sections
 - [[§B3.1 General Properties of One-Dimensional Eigenstates]] — Zwiebach L10, L12–13; Griffiths 2.1–2.2 (problems); Greensite 8

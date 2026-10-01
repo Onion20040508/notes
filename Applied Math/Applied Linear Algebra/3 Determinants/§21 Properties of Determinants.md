@@ -419,7 +419,7 @@ Column operations are useful for theoretical purposes and for hand computation; 
 ^cor-21-10
 
 > [!proof]+ Proof
-> 1. $\det A \cdot \det A^{-1} = \det(AA^{-1}) = \det I = 1$ (Theorem §21.9, Theorem §20.2), so $\det A \ne 0$ and $\det A^{-1} = 1/\det A$.
+> 1. $\det A \cdot \det A^{-1} = \det(AA^{-1}) = \det I = 1$ (Theorem §21.9, [[§20 Introduction to Determinants#^thm-20-2|Theorem §20.2]]), so $\det A \ne 0$ and $\det A^{-1} = 1/\det A$.
 > 2. Induction on $k$: $\det A^{k+1} = \det(A^k A) = (\det A)^k \det A$. For negative $k$ combine with part 1.
 > 3. $rA$ is obtained from $A$ by multiplying each of its $n$ rows by $r$; by Theorem §21.1(c) each multiplies the determinant by $r$.
 > 4. $\det AB = (\det A)(\det B) = (\det B)(\det A) = \det BA$.

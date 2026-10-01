@@ -60,7 +60,7 @@ The determinant has turned the matrix equation $(A - \lambda I)\mathbf{x} = \mat
 >
 > t. The determinant of $A$ is *not* zero.
 >
-> These continue the list of equivalent statements (a)–(r) of [[§28 Rank|§28]] (Lay 4.6).
+> These continue the list of equivalent statements (a)–(r) of [[§28 Rank#^thm-28-5|Theorem §28.5]] (Lay 4.6).
 >
 > *Lay: 5.2, The Invertible Matrix Theorem (continued)*
 
@@ -92,7 +92,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 ^thm-33-3
 
-*Lay collects these from Chapter 3 for reference: (d) is Theorem 2 of [[§20 Introduction to Determinants|§20]] (Lay 3.1), and (e), (a), (c), (b) are Theorems 3–6 of [[§21 Properties of Determinants|§21]] (Lay 3.2), where they are proved.*
+*Lay collects these from Chapter 3 for reference: (d) is [[§20 Introduction to Determinants#^thm-20-2|Theorem §20.2]] (Lay 3.1, Theorem 2), and (e), (a), (c), (b) are Theorems 3–6 of [[§21 Properties of Determinants|§21]] (Lay 3.2), where they are proved.*
 
 ## The Characteristic Equation
 
@@ -165,7 +165,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 ^pf-33-5
 
-*Uses:* [[§20 Introduction to Determinants|§20]] (Theorem 1: cofactor expansion across any row)
+*Uses:* [[§20 Introduction to Determinants#^thm-20-1|§20.1]] (cofactor expansion across any row)
 
 > [!definition] Definition §33.2: Multiplicity of an Eigenvalue
 > The **(algebraic) multiplicity** of an eigenvalue $\lambda$ is its multiplicity as a root of the characteristic equation, that is, the number of times the factor $(\lambda - \text{eigenvalue})$ occurs in the characteristic polynomial. The eigenvalues are sometimes listed repeated according to their multiplicities.
@@ -333,7 +333,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 >
 > As $k \to \infty$, $(.92)^k \to 0$, so $\mathbf{x}_k \to .125\mathbf{v}_1 = \begin{bmatrix} .375 \\ .625 \end{bmatrix}$.
 >
-> $A$ is the city–suburb migration matrix of [[§31 Applications to Markov Chains|§31]], and $\mathbf{x}_k$ is the population distribution after $k$ years. Theorem 18 of that section said that $\mathbf{x}_k$ tends to a steady-state vector; formula (5) shows why: the steady-state vector $.125\mathbf{v}_1$ is an eigenvector for $\lambda = 1$, and the other component dies out like $(.92)^k$.
+> $A$ is the city–suburb migration matrix of [[§31 Applications to Markov Chains|§31]], and $\mathbf{x}_k$ is the population distribution after $k$ years. [[§31 Applications to Markov Chains#^thm-31-3|Theorem §31.3]] (Lay's Theorem 18) said that $\mathbf{x}_k$ tends to a steady-state vector; formula (5) shows why: the steady-state vector $.125\mathbf{v}_1$ is an eigenvector for $\lambda = 1$, and the other component dies out like $(.92)^k$.
 >
 > *Lay: Example 5.2.5*
 

@@ -6,10 +6,10 @@ chapter: B9
 tags: [chapter, quantum-mechanics]
 ---
 # B9 The Variational Principle and the WKB Approximation
-← [[· B8 Time-Independent Perturbation Theory]] · ↑ [[Quantum Mechanics]]
+← [[· B8 Time-Independent Perturbation Theory]] · ↑ [[Quantum Mechanics]] · [[· C1 Fundamental Concepts]] →
 
 **Builds on:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (5), [[· A7 Nuclear Physics|A7 Nuclear Physics]] (4), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (4), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (11), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (7), [[· B7 Identical Particles|B7 Identical Particles]] (3), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (5)
-**Used by:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2)
+**Used by:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (2)
 
 ## Sections
 - [[§B9.1★ The Variational Principle]] — Griffiths 8.1

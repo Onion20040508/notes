@@ -269,13 +269,11 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 > [!theorem] Theorem §11.6: Properties of Matrix Multiplication
 > Let $A$ be an $m \times n$ matrix, and let $B$ and $C$ have sizes for which the indicated sums and products are defined.
 >
-> | | | |
-> |---|---|---|
-> | (a) | $A(BC) = (AB)C$ | associative law of multiplication |
-> | (b) | $A(B + C) = AB + AC$ | left distributive law |
-> | (c) | $(B + C)A = BA + CA$ | right distributive law |
-> | (d) | $r(AB) = (rA)B = A(rB)$ for any scalar $r$ | |
-> | (e) | $I_mA = A = AI_n$ | identity for matrix multiplication |
+> a. $A(BC) = (AB)C$ (associative law of multiplication)
+> b. $A(B + C) = AB + AC$ (left distributive law)
+> c. $(B + C)A = BA + CA$ (right distributive law)
+> d. $r(AB) = (rA)B = A(rB)$ for any scalar $r$
+> e. $I_mA = A = AI_n$ (identity for matrix multiplication)
 >
 > *Lay: Theorem 2 (2.1)*
 

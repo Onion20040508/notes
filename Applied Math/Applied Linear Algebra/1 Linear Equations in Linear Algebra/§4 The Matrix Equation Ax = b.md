@@ -181,8 +181,11 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 > Let $A$ be an $m \times n$ matrix. Then the following statements are logically equivalent; that is, for a particular $A$, either they are all true or they are all false.
 >
 > a. For each $\mathbf{b}$ in $\mathbb{R}^m$, the equation $A\mathbf{x} = \mathbf{b}$ has a solution.
+>
 > b. Each $\mathbf{b}$ in $\mathbb{R}^m$ is a linear combination of the columns of $A$.
+>
 > c. The columns of $A$ span $\mathbb{R}^m$.
+>
 > d. $A$ has a pivot position in every row.
 >
 > *Lay: Theorem 4 (1.4)*
@@ -264,6 +267,7 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 > If $A$ is an $m \times n$ matrix, $\mathbf{u}$ and $\mathbf{v}$ are vectors in $\mathbb{R}^n$, and $c$ is a scalar, then:
 >
 > a. $A(\mathbf{u} + \mathbf{v}) = A\mathbf{u} + A\mathbf{v}$;
+>
 > b. $A(c\mathbf{u}) = c(A\mathbf{u})$.
 >
 > *Lay: Theorem 5 (1.4)*

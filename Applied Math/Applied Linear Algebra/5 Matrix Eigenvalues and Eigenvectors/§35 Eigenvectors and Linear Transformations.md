@@ -64,7 +64,7 @@ Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space,
 > [T(\mathbf{x})]_{\mathcal{B}} = [T]_{\mathcal{B}}[\mathbf{x}]_{\mathcal{B}} \qquad \text{for all } \mathbf{x} \text{ in } V . \qquad (5)
 > $$
 >
-> When $\mathcal{B}$ and $\mathcal{C}$ are bases of the same space $V$ and $T$ is the identity, $T(\mathbf{x}) = \mathbf{x}$, the matrix $M$ is the change-of-coordinates matrix $P_{\mathcal{C} \leftarrow \mathcal{B}}$ of [[§29 Change of Basis|§29]].
+> When $\mathcal{B}$ and $\mathcal{C}$ are bases of the same space $V$ and $T$ is the identity, $T(\mathbf{x}) = \mathbf{x}$, the matrix $M$ is the change-of-coordinates matrix $P_{\mathcal{C} \leftarrow \mathcal{B}}$ of [[§29 Change of Basis#^def-29-1|Definition §29.1]].
 >
 > *Lay: 5.4 (text)*
 
@@ -74,7 +74,7 @@ Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space,
 > - Rigorous treatment: [[§9 Matrices#^ladr-3-31|LADR 3.31]] (matrix of a linear map, $\mathcal{M}(T, (v), (w))$, column $k$ = coordinates of $Tv_k$) and, for operators, [[§16 Upper-Triangular Matrices#^ladr-5-35|LADR 5.35]]. Equation (3) is Axler's $\mathcal{M}(Tv) = \mathcal{M}(T)\mathcal{M}(v)$; Lay's $[\,\cdot\,]_{\mathcal{B}}$ is Axler's $\mathcal{M}(\,\cdot\,)$.
 
 > [!example] Example §35.1: Reading Off the Matrix
-> **(a)** Suppose $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$ is a basis for $V$ and $\mathcal{C} = \{\mathbf{c}_1, \mathbf{c}_2, \mathbf{c}_3\}$ is a basis for $W$, and $T : V \to W$ is linear with
+> Suppose $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$ is a basis for $V$ and $\mathcal{C} = \{\mathbf{c}_1, \mathbf{c}_2, \mathbf{c}_3\}$ is a basis for $W$, and $T : V \to W$ is linear with
 >
 > $$
 > T(\mathbf{b}_1) = 3\mathbf{c}_1 - 2\mathbf{c}_2 + 5\mathbf{c}_3, \qquad T(\mathbf{b}_2) = 4\mathbf{c}_1 + 7\mathbf{c}_2 - \mathbf{c}_3 .
@@ -86,7 +86,12 @@ Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space,
 > M = \begin{bmatrix} 3 & 4 \\ -2 & 7 \\ 5 & -1 \end{bmatrix} .
 > $$
 >
-> **(b) Differentiation.** $T : \mathbb{P}_2 \to \mathbb{P}_2$, $T(a_0 + a_1t + a_2t^2) = a_1 + 2a_2t$, is linear (it is differentiation). Find the $\mathcal{B}$-matrix for $T$ when $\mathcal{B} = \{1, t, t^2\}$, and verify (5).
+> *Lay: Example 5.4.1*
+
+^ex-35-1
+
+> [!example] Example §35.2: The Matrix of Differentiation
+> $T : \mathbb{P}_2 \to \mathbb{P}_2$, $T(a_0 + a_1t + a_2t^2) = a_1 + 2a_2t$, is linear (it is differentiation). Find the $\mathcal{B}$-matrix for $T$ when $\mathcal{B} = \{1, t, t^2\}$, and verify (5).
 >
 > The images of the basis vectors are $T(1) = 0$ (the zero polynomial), $T(t) = 1$ (the constant polynomial $1$) and $T(t^2) = 2t$. Their $\mathcal{B}$-coordinate vectors, found by inspection, are the columns of $[T]_{\mathcal{B}}$:
 >
@@ -102,9 +107,9 @@ Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space,
 >
 > (The only eigenvalue of this triangular matrix is $0$, with eigenspace spanned by $(1, 0, 0)$, the constants: the polynomials whose derivative is $0 \cdot \mathbf{p}$. So differentiation on $\mathbb{P}_2$ is not diagonalizable.)
 >
-> *Lay: Examples 5.4.1 and 5.4.2*
+> *Lay: Example 5.4.2*
 
-^ex-35-1
+^ex-35-2
 
 ## Linear Transformations on ℝⁿ
 
@@ -167,7 +172,7 @@ Conversely, for any basis $\mathcal{B}$ of $\mathbb{R}^n$, the $\mathcal{B}$-mat
 > [!remark]- Connections
 > - Rigorous treatment: formula (6) is the change-of-basis formula [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]] ($A = C^{-1}BC$, with $C = \mathcal{M}(I, (u), (v))$ the matrix that converts $u$-coordinates into $v$-coordinates); Axler's Example 3.83 is the same computation with $\mathcal{B} = \{(4, 2), (5, 3)\}$.
 
-> [!example] Example §35.2: A Triangular Representation (Jordan Form)
+> [!example] Example §35.3: A Triangular Representation (Jordan Form)
 > Let $A = \begin{bmatrix} 4 & -9 \\ 4 & -8 \end{bmatrix}$, $\mathbf{b}_1 = \begin{bmatrix} 3 \\ 2 \end{bmatrix}$, $\mathbf{b}_2 = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$. The characteristic polynomial of $A$ is $(4 - \lambda)(-8 - \lambda) + 36 = \lambda^2 + 4\lambda + 4 = (\lambda + 2)^2$, but
 >
 > $$
@@ -186,7 +191,7 @@ Conversely, for any basis $\mathcal{B}$ of $\mathbb{R}^n$, the $\mathcal{B}$-mat
 >
 > *Lay: Example 5.4.4*
 
-^ex-35-2
+^ex-35-3
 
 Every square matrix is similar to a matrix in Jordan form, using a basis of eigenvectors and generalized eigenvectors (Lay cites Noble–Daniel, *Applied Linear Algebra*, Ch. 9; rigorous treatment [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-46|LADR 8.46]], over $\mathbb{C}$). For $2 \times 2$ matrices the lecture states the complete answer, which can be proved with what we have.
 
@@ -221,9 +226,9 @@ Every square matrix is similar to a matrix in Jordan form, using a basis of eige
 
 ^pf-35-3
 
-*Uses:* [[§34 Diagonalization#^thm-34-2|§34.2]], [[§19 Dimension and Rank|§19]] (Theorem 14, the Rank Theorem), [[§35 Eigenvectors and Linear Transformations#^thm-35-2|§35.2]]
+*Uses:* [[§34 Diagonalization#^thm-34-2|§34.2]], [[§28 Rank#^thm-28-3|§28.3]] (the Rank Theorem), [[§35 Eigenvectors and Linear Transformations#^thm-35-2|§35.2]]
 
-In Example §35.2, $N = A + 2I$ and $N\mathbf{b}_2 = (12 - 9, 8 - 6) = (3, 2) = \mathbf{b}_1$: Lay's basis is exactly the one built in the proof.
+In Example §35.3, $N = A + 2I$ and $N\mathbf{b}_2 = (12 - 9, 8 - 6) = (3, 2) = \mathbf{b}_1$: Lay's basis is exactly the one built in the proof.
 
 > [!remark] Remark: Computing a B-Matrix Efficiently
 > To compute $P^{-1}AP$, compute $AP$ and then row reduce the augmented matrix $[\,P \;\; AP\,]$ to $[\,I \;\; P^{-1}AP\,]$. A separate computation of $P^{-1}$ is unnecessary. (Row reduction of $[\,P \;\; B\,]$ to $[\,I \;\; X\,]$ solves $PX = B$, column by column; here $B = AP$.)

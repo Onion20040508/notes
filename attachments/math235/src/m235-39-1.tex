@@ -1,0 +1,22 @@
+% Figure for Applied Linear Algebra §39.
+\begin{tikzpicture}[x=0.85cm, y=0.85cm, font=\scriptsize, >=Stealth]
+\draw[->, thin, black!60] (-1.2,0) -- (11,0) node[right] {$x_1$};
+\draw[->, thin, black!60] (0,-0.6) -- (0,4.3) node[above] {$x_2$};
+\foreach \t in {2,4,6,8,10} \draw[black!40] (\t,-0.08) -- (\t,0.08) node[below=2pt, black!60] {\t};
+\foreach \t in {1,2,3,4} \draw[black!40] (-0.08,\t) -- (0.08,\t);
+\draw[black!35, thin] (0,0) -- (-1.100,2.200);
+\draw[black!35, thin] (0,0) -- (-0.373,4.100);
+\draw[black!35, thin] (0,0) -- (2.208,4.100);
+\draw[black!35, thin] (0,0) -- (5.547,4.100);
+\draw[black!35, thin] (0,0) -- (9.020,4.100);
+\draw[black!35, thin] (0,0) -- (10.600,3.652);
+\draw[black!35, thin] (0,0) -- (10.600,3.133);
+\draw[black!35, thin] (0,0) -- (10.600,2.887);
+\draw[figB, thick] (0,0) -- (10.8,2.7) node[right] {eigenspace};
+\draw[->, figB, very thick] (0,0) -- (4,1) node[below right=-1pt] {$\mathbf{v}_1$};
+\fill[figR] (-0.500,1.000) circle (2pt) node[below left=-1pt] {$\mathbf{x}$};
+\fill[figR] (-0.100,1.100) circle (2pt) node[above left=-1pt] {$A\mathbf{x}$};
+\fill[figR] (0.700,1.300) circle (2pt) node[right=1pt] {$A^2\mathbf{x}$};
+\fill[figR] (2.300,1.700) circle (2pt) node[above left=-1pt] {$A^3\mathbf{x}$};
+\fill[figR] (5.500,2.500) circle (2pt) node[above left=-1pt] {$A^4\mathbf{x}$};
+\end{tikzpicture}

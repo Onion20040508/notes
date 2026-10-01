@@ -1,0 +1,13 @@
+% Figure for Quantum Mechanics §C9.5 (Example §C9.5.2): ionization rate of the delta-well bound state by a force F0 cos(omega t), w = (8 m F0^2/(hbar^3 kappa^4)) sqrt(x-1)/x^4, x = omega/omega_min, omega_min = |E0|/hbar. Peak at x = 8/7 (value 0.2215); dashed: high-frequency tail x^(-7/2). Computed.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=11.5cm, height=5.4cm, xmin=0, xmax=4.2, ymin=0, ymax=0.27, clip=true,
+      xtick={0,1,1.142857,2,3,4}, xticklabels={$0$,$1$,$\tfrac87$,$2$,$3$,$4$}, ytick={0,0.05,0.1,0.15,0.2,0.25}, yticklabel style={/pgf/number format/fixed},
+      xlabel={$\omega/\omega_{\min}$}, ylabel={$w\;\bigl[8mF_0^2/\hbar^3\kappa^4\bigr]$},
+      legend style={draw=none, fill=none, font=\scriptsize, at={(0.98,0.95)}, anchor=north east}]
+    \addplot[figB, very thick, domain=1:4.2, samples=400] {sqrt(x-1)/x^4};
+    \addplot[figR, thick, dashed, domain=1.6:4.2, samples=100] {x^(-3.5)};
+    \addplot[figB, very thick, domain=0:1, samples=2] {0};
+    \draw[black!55, thin, densely dotted] (axis cs:1.142857,0) -- (axis cs:1.142857,0.2215);
+    \legend{golden rule, $\propto\omega^{-7/2}$}
+  \end{axis}
+\end{tikzpicture}

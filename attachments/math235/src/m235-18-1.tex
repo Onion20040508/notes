@@ -1,0 +1,35 @@
+% Figure for Applied Linear Algebra §18.
+\begin{tikzpicture}[x=0.7cm, y=0.7cm, >=Stealth, font=\scriptsize]
+  % (a) line not through origin: L: y = 3 - x/2
+  \begin{scope}
+    \draw[->, black!50] (-0.6,0) -- (5,0); \draw[->, black!50] (0,-0.6) -- (0,4.6);
+    \draw[figB, thick] (-0.4,3.2) -- (5,0.5) node[below left] {$L$};
+    \fill[figB!15] (0,0) -- (1,2.5) -- (4,4) -- (3,1.5) -- cycle;
+    \draw[->, thick] (0,0) -- (1,2.5) node[above left=-1pt] {$\mathbf{u}$};
+    \draw[->, thick] (0,0) -- (3,1.5) node[below right=-1pt] {$\mathbf{v}$};
+    \draw[black!40, dashed] (1,2.5) -- (4,4) -- (3,1.5);
+    \draw[->, thick, figR] (0,0) -- (4,4) node[above] {$\mathbf{u} + \mathbf{v}$};
+    \node[font=\small] at (2.2,-2.2) {(a) $\mathbf{u} + \mathbf{v} \notin L$};
+  \end{scope}
+  % (b) first quadrant
+  \begin{scope}[xshift=6.4cm]
+    \fill[figB!15] (0,0) rectangle (2.6,2.6);
+    \draw[->, black!50] (-2.2,0) -- (2.8,0); \draw[->, black!50] (0,-1.5) -- (0,2.8);
+    \draw[figB, thick] (2.6,0) -- (0,0) -- (0,2.6);
+    \draw[->, thick] (0,0) -- (1.6,1) node[above right=-1pt] {$\mathbf{v}$};
+    \draw[->, thick, figR] (0,0) -- (-1.6,-1) node[below left=-1pt] {$-\mathbf{v}$};
+    \node[figB] at (1.6,2.2) {$x, y \ge 0$};
+    \node[font=\small] at (0,-2.2) {(b) $-\mathbf{v}$ leaves the quadrant};
+  \end{scope}
+  % (c) union of axes
+  \begin{scope}[xshift=11.8cm]
+    \draw[figB, very thick] (-0.8,0) -- (3,0); \draw[figB, very thick] (0,-0.8) -- (0,3.8);
+    \node[figB, right] at (3,0) {$x_1$}; \node[figB, above] at (0,3.8) {$x_2$};
+    \draw[->, thick] (0,0) -- (2,0) node[below] {$(2,0)$};
+    \draw[->, thick] (0,0) -- (0,3) node[left] {$(0,3)$};
+    \draw[black!40, dashed] (2,0) -- (2,3) -- (0,3);
+    \draw[->, thick, figR] (0,0) -- (2,3) node[above right=-1pt] {$(2,3)$};
+    \node[figB] at (3.3,2.2) {$xy = 0$};
+    \node[font=\small] at (1.2,-2.2) {(c) $(2,0) + (0,3) \notin V$};
+  \end{scope}
+\end{tikzpicture}

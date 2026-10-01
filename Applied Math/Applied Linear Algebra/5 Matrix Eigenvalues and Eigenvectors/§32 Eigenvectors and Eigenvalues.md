@@ -29,7 +29,7 @@ A matrix transformation $\mathbf{x} \mapsto A\mathbf{x}$ may move vectors in all
 ^rem-32-1
 
 > [!remark]- Remark: The Perron–Frobenius Theorem
-> The lecture states the general fact behind the shrinking wedges, without proof: if $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$ with $a, b, c, d > 0$, then there are a vector $\mathbf{u} = (u_1, u_2)$ with $u_1, u_2 > 0$ and a number $\lambda > 0$ such that $A\mathbf{u} = \lambda\mathbf{u}$. In L21 a sharper form is stated for matrices with positive entries whose columns sum to $1$: the eigenvalue $1$ has a one-dimensional eigenspace spanned by a vector with positive entries, and every other eigenvalue has absolute value less than $1$. This explains the convergence of regular Markov chains ([[§31 Applications to Markov Chains|§31]], Theorem 18); see [[§34 Diagonalization#^ex-34-5|Example §34.5]].
+> The lecture states the general fact behind the shrinking wedges, without proof: if $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$ with $a, b, c, d > 0$, then there are a vector $\mathbf{u} = (u_1, u_2)$ with $u_1, u_2 > 0$ and a number $\lambda > 0$ such that $A\mathbf{u} = \lambda\mathbf{u}$. In L21 a sharper form is stated for matrices with positive entries whose columns sum to $1$: the eigenvalue $1$ has a one-dimensional eigenspace spanned by a vector with positive entries, and every other eigenvalue has absolute value less than $1$. This explains the convergence of regular Markov chains ([[§31 Applications to Markov Chains#^thm-31-3|Theorem §31.3]], Lay's Theorem 18); see [[§34 Diagonalization#^ex-34-5|Example §34.5]].
 >
 > *Source: 235 lectures L18, L21*
 
@@ -96,7 +96,7 @@ $$
 has a nontrivial solution.
 
 > [!definition] Definition §32.2: Eigenspace
-> Let $\lambda$ be an eigenvalue of the $n \times n$ matrix $A$. The set of all solutions of $(A - \lambda I)\mathbf{x} = \mathbf{0}$ is the null space $\operatorname{Nul}(A - \lambda I)$, so it is a subspace of $\mathbb{R}^n$ ([[§24 Null Spaces, Column Spaces, and Linear Transformations|§24]], Theorem 2). It is called the **eigenspace** of $A$ corresponding to $\lambda$. The eigenspace consists of the zero vector and all the eigenvectors corresponding to $\lambda$.
+> Let $\lambda$ be an eigenvalue of the $n \times n$ matrix $A$. The set of all solutions of $(A - \lambda I)\mathbf{x} = \mathbf{0}$ is the null space $\operatorname{Nul}(A - \lambda I)$, so it is a subspace of $\mathbb{R}^n$ ([[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-1|Theorem §24.1]]). It is called the **eigenspace** of $A$ corresponding to $\lambda$. The eigenspace consists of the zero vector and all the eigenvectors corresponding to $\lambda$.
 >
 > *Lay: 5.1 (text)*
 
@@ -105,7 +105,7 @@ has a nontrivial solution.
 For the matrix of Example §32.1, the eigenspace for $\lambda = 7$ consists of all multiples of $(1, 1)$, the line through $(1, 1)$ and the origin. From part (a), the eigenspace for $\lambda = -4$ is the line through $(6, -5)$.
 
 ![[m235-32-1.svg]]
-*The two eigenspaces of $A = \begin{bmatrix} 1 & 6 \\ 5 & 2 \end{bmatrix}$. On the line through $(1, 1)$ (blue) the transformation $\mathbf{x} \mapsto A\mathbf{x}$ is multiplication by $7$; on the line through $(6, -5)$ (red) it is multiplication by $-4$, which reverses direction. Every other vector, such as $\mathbf{v} = (3, -2)$ (gray), is moved off its own line: $A\mathbf{v} = (-9, 11)$.*
+*The two eigenspaces of $A = \begin{bmatrix} 1 & 6 \\ 5 & 2 \end{bmatrix}$. On the line through $(1, 1)$ (blue) the transformation $\mathbf{x} \mapsto A\mathbf{x}$ is multiplication by $7$: $\mathbf{u} = (1, 1)$ goes to $(7, 7)$. On the line through $(6, -5)$ (red) it is multiplication by $-4$, which reverses direction: $\mathbf{w} = (3/2, -5/4)$ goes to $(-6, 5)$. Every other vector, such as $\mathbf{v} = (3, -2)$ (gray), is moved off its own line: $A\mathbf{v} = (-9, 11)$.*
 
 > [!example] Example §32.2: A Two-Dimensional Eigenspace
 > Let $A = \begin{bmatrix} 4 & -1 & 6 \\ 2 & 1 & 6 \\ 2 & -1 & 8 \end{bmatrix}$. An eigenvalue of $A$ is $2$. Find a basis for the corresponding eigenspace.
@@ -143,7 +143,7 @@ For the matrix of Example §32.1, the eigenspace for $\lambda = 7$ consists of a
 > [!remark] Remark: Method — The Eigenspace for a Known Eigenvalue
 > 1. Form $A - \lambda I$: subtract $\lambda$ from each diagonal entry of $A$.
 > 2. Row reduce the augmented matrix $[\,A - \lambda I \;\; \mathbf{0}\,]$. If there is no free variable, $\lambda$ is *not* an eigenvalue.
-> 3. Write the general solution in parametric vector form; the vectors multiplying the free variables form a basis of the eigenspace $\operatorname{Nul}(A - \lambda I)$ ([[§24 Null Spaces, Column Spaces, and Linear Transformations|§24]]).
+> 3. Write the general solution in parametric vector form; the vectors multiplying the free variables form a basis of the eigenspace $\operatorname{Nul}(A - \lambda I)$ ([[§24 Null Spaces, Column Spaces, and Linear Transformations#^prop-24-2|Proposition §24.2]]).
 > 4. Check one vector $\mathbf{v}$ of the basis: $A\mathbf{v} = \lambda\mathbf{v}$.
 >
 > This is a good method by hand. With a matrix program it usually works too but is not entirely reliable: roundoff error can produce an echelon form with the wrong number of pivots. The best programs compute approximate eigenvalues and eigenvectors simultaneously (see [[§39 Iterative Estimates for Eigenvalues|§39]]).

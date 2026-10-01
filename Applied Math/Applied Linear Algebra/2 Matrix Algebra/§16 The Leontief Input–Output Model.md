@@ -221,6 +221,8 @@ The entries of $(I - C)^{-1}$ predict how the production $\mathbf{x}$ must chang
 > (For $m = 1$: $\mathbf{d} + C\mathbf{d} = (50, 30, 20) + (25 + 12 + 4,\ 10 + 9 + 2,\ 5 + 3 + 6) = (91, 51, 34)$.) Here the convergence is fairly slow, because the column sums $.8$ are not far below $1$.
 >
 > **Interpretation.** Column 1 of $(I - C)^{-1}$ says that one more unit of final demand for manufactured goods requires about 2.96 more units of manufacturing, .93 of agriculture and .56 of services: the extra unit itself, plus all the rounds of intermediate demand it sets off.
+>
+> *Lay: 2.6, Equations (6) and (8) and Exercise 8, applied to Example 2.6.2*
 
 ^ex-16-2
 

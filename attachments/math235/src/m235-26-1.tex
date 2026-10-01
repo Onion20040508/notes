@@ -1,0 +1,31 @@
+% Figure for Applied Linear Algebra §26.
+\begin{tikzpicture}[x=0.62cm, y=0.62cm, >=Stealth]
+  % left: standard graph paper
+  \begin{scope}
+    \clip (-2.5,-1.5) rectangle (6.5,6.5);
+    \draw[black!15, step=0.62cm] (-3,-2) grid (7,7);
+  \end{scope}
+  \draw[->, black!60] (-2.5,0) -- (6.7,0) node[right, font=\scriptsize, black] {$x_1$};
+  \draw[->, black!60] (0,-1.5) -- (0,6.7) node[above, font=\scriptsize, black] {$x_2$};
+  \draw[->, very thick, figB] (0,0) -- (2,1) node[below right=-1pt, font=\small] {$\mathbf{b}_1$};
+  \draw[->, very thick, figG!70!black] (0,0) -- (-1,1) node[above left=-1pt, font=\small] {$\mathbf{b}_2$};
+  \fill[figR] (4,5) circle (2.2pt) node[above right, font=\small] {$\mathbf{x} = (4, 5)$};
+  \node[font=\small, align=center] at (2,-2.4) {standard grid: $\mathbf{x} = 4\mathbf{e}_1 + 5\mathbf{e}_2$};
+  % right: B-graph paper
+  \begin{scope}[xshift=7.2cm]
+    \begin{scope}
+      \clip (-2.5,-1.5) rectangle (6.5,6.5);
+      \foreach \s in {-6,...,8} \draw[figB!25] ($\s*(2,1) + -8*(-1,1)$) -- ($\s*(2,1) + 8*(-1,1)$);
+      \foreach \t in {-6,...,8} \draw[figG!25] ($\t*(-1,1) + -8*(2,1)$) -- ($\t*(-1,1) + 8*(2,1)$);
+      \draw[figB!55, dashed, thick] (0,0) -- (6,3);
+      \draw[figG!55!black, dashed, thick] (6,3) -- (4,5);
+    \end{scope}
+    \draw[->, black!40] (-2.5,0) -- (6.7,0);
+    \draw[->, black!40] (0,-1.5) -- (0,6.7);
+    \draw[->, very thick, figB] (0,0) -- (2,1) node[below right=-1pt, font=\small] {$\mathbf{b}_1$};
+    \draw[->, very thick, figG!70!black] (0,0) -- (-1,1) node[above left=-1pt, font=\small] {$\mathbf{b}_2$};
+    \fill (6,3) circle (1.6pt) node[right, font=\scriptsize] {$3\mathbf{b}_1$};
+    \fill[figR] (4,5) circle (2.2pt) node[above right, font=\small] {$\mathbf{x}$};
+    \node[font=\small, align=center] at (2,-2.4) {$\mathcal{B}$-grid: $\mathbf{x} = 3\mathbf{b}_1 + 2\mathbf{b}_2$, $[\mathbf{x}]_{\mathcal{B}} = (3, 2)$};
+  \end{scope}
+\end{tikzpicture}

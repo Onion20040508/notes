@@ -1,0 +1,19 @@
+%% Figure for Quantum Mechanics §C12.2★ (electron gas in a uniform positive background, energy per electron to first order in the Coulomb interaction, in Rydberg: kinetic 2.210/r_s^2, exchange -0.9163/r_s, total; minimum at r_s = 4.82, -0.095 Ry; sodium point E/N = -1.13 eV = -0.083 Ry at r_s = 3.96 quoted by Sakurai §7.7.3; Example §C12.2.2).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9.5cm, height=6.2cm, xmin=0, xmax=10.5, ymin=-0.4, ymax=0.3,
+      xlabel={$r_s = r_0/a_0$}, ylabel={$E/N$ (Ry)},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={0,2,4,6,8,10}, ytick={-0.4,-0.2,0,0.2}, yticklabel style={/pgf/number format/fixed}, clip=true, samples=200, domain=1:10.5]
+    \draw[black!55, thin] (axis cs:0,0) -- (axis cs:10.5,0);
+    \addplot[figG, dashed] {2.2099/x^2};
+    \addplot[figO, dashed] {-0.91633/x};
+    \addplot[figB, thick] {2.2099/x^2 - 0.91633/x};
+    \fill[figB] (axis cs:4.8234,-0.094989) circle (1.6pt);
+    \fill[figR] (axis cs:3.96,-0.0831) circle (1.8pt);
+    \node[figR, font=\scriptsize, anchor=south] at (axis cs:3.96,-0.0831) {Na};
+    \node[figB, font=\scriptsize, anchor=north] at (axis cs:4.8234,-0.105) {$r_s = 4.82$, $-0.095$ Ry};
+    \node[figG, font=\scriptsize, anchor=west] at (axis cs:3.1,0.24) {kinetic, $2.21/r_s^2$};
+    \node[figO, font=\scriptsize, anchor=west] at (axis cs:5.6,-0.21) {exchange, $-0.916/r_s$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:7.6,-0.03) {total};
+  \end{axis}
+\end{tikzpicture}

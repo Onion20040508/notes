@@ -1,0 +1,15 @@
+%% Figure for Quantum Mechanics §C12.2★ (two particles in a symmetric double well, one in each well at t = 0; probability of still finding one particle in each well against the mixing angle theta = kappa t / hbar: bosons cos^2(2 theta), fermions 1, distinguishable particles 1 - sin^2(2 theta)/2; Example §C12.2.1).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9.5cm, height=5.6cm, xmin=0, xmax=3.3, ymin=0, ymax=1.18,
+      xlabel={$\theta = \kappa t/\hbar$}, ylabel={$P(1,1)$},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      xtick={0,0.7854,1.5708,2.3562,3.1416}, xticklabels={$0$,$\pi/4$,$\pi/2$,$3\pi/4$,$\pi$},
+      ytick={0,0.5,1}, yticklabel style={/pgf/number format/fixed}, clip=true, samples=181, domain=0:3.1416]
+    \addplot[figR, thick] {1};
+    \addplot[black!55, dashed] {1 - 0.5*sin(deg(2*x))^2};
+    \addplot[figB, thick] {cos(deg(2*x))^2};
+    \node[figR, font=\scriptsize, anchor=south] at (axis cs:1.5708,1.0) {fermions};
+    \node[black!60, font=\scriptsize, anchor=north] at (axis cs:1.5708,0.47) {distinguishable};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.85,0.08) {bosons};
+  \end{axis}
+\end{tikzpicture}

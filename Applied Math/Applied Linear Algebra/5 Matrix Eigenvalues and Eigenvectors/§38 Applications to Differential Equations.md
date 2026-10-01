@@ -48,11 +48,11 @@ This section is the continuous analogue of [[§37 Discrete Dynamical Systems|§3
 > (c\mathbf{u} + d\mathbf{v})' = c\mathbf{u}' + d\mathbf{v}' = cA\mathbf{u} + dA\mathbf{v} = A(c\mathbf{u} + d\mathbf{v}) .
 > $$
 >
-> The zero function has derivative $\mathbf{0} = A\mathbf{0}$. A set of functions containing $\mathbf{0}$ and closed under linear combinations is a subspace ([[§23 Vector Spaces and Subspaces|§23]]). (Engineers call this property **superposition of solutions**.)
+> The zero function has derivative $\mathbf{0} = A\mathbf{0}$. A set of functions containing $\mathbf{0}$ and closed under linear combinations is a subspace ([[§23 Vector Spaces and Subspaces#^def-23-2|Definition §23.2]]). (Engineers call this property **superposition of solutions**.)
 
 ^pf-38-1
 
-*Uses:* [[§23 Vector Spaces and Subspaces|§23]] (definition of a subspace)
+*Uses:* [[§23 Vector Spaces and Subspaces#^def-23-2|Def. §23.2]] (subspace)
 
 Standard texts on differential equations show that there is always a **fundamental set of solutions** of (1): $n$ linearly independent functions such that every solution is a unique linear combination of them. That is, the solution set is an $n$-dimensional vector space of functions, and a fundamental set is a basis for it; each initial value problem has exactly one solution. Lay does not prove this; for diagonalizable $A$ the fundamental set is constructed explicitly below (Theorem §38.3).
 
@@ -324,4 +324,4 @@ Since $\mathbf{x}_2 = \overline{\mathbf{x}_1}$ has real and imaginary parts $\ma
 ^ex-38-3
 
 ![[m235-38-1.svg]]
-*(a) Example §38.1: trajectories of $\mathbf{x}' = A\mathbf{x}$ with eigenvalues $-.5$ and $-2$. The origin is a sink; the solution from $(5, 4)$ (thick) first moves quickly in the $\mathbf{v}_2$-direction (green, fast decay $e^{-2t}$) and then comes in tangent to the line through $\mathbf{v}_1$ (blue, slow decay $e^{-.5t}$). (b) Example §38.3: the trajectory from $(3, 3)$ in the $(i_L, v_C)$-plane spirals into the origin, turning with $\cos 5t$, $\sin 5t$ and shrinking like $e^{-2t}$.*
+*(a) Example §38.1: trajectories of $\mathbf{x}' = A\mathbf{x}$ with eigenvalues $-.5$ and $-2$. The origin is a sink; the solution from $(5, 4)$ (red) first moves quickly in the $\mathbf{v}_2$-direction (green, fast decay $e^{-2t}$) and then comes in tangent to the line through $\mathbf{v}_1$ (blue, slow decay $e^{-.5t}$). (b) Example §38.3: the trajectory from $(3, 3)$ in the $(i_L, v_C)$-plane spirals into the origin, turning with $\cos 5t$, $\sin 5t$ and shrinking like $e^{-2t}$.*

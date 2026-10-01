@@ -1,0 +1,12 @@
+% Figure for Quantum Mechanics §C9.5 (Theorem §C9.5.1, derivation): the first-order kernel F_t(w) = sin^2(w t/2)/(w/2)^2 against w = omega_ni, for t = t0, 2 t0, 4 t0 (w in units of 1/t0, F in units of t0^2). Height t^2, first zeros at +-2 pi/t, area 2 pi t. Computed.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=11.5cm, height=5.8cm, xmin=-8.5, xmax=8.5, ymin=0, ymax=17.5, axis x line=bottom, axis y line=left, clip=false,
+      xtick={-6.2832,-3.1416,0,3.1416,6.2832}, xticklabels={$-2\pi$,$-\pi$,$0$,$\pi$,$2\pi$}, ytick={1,4,16}, yticklabels={$t_0^2$,$4t_0^2$,$16t_0^2$},
+      xlabel={$\omega_{ni}\,t_0$}, xlabel style={at={(1,0)}, anchor=west},
+      legend style={draw=none, fill=none, font=\scriptsize, at={(1.0,0.98)}, anchor=north east}]
+    \addplot[figG, very thick, domain=-8.5:8.5, samples=400] {(abs(x)<1e-6) ? 1 : sin(deg(x/2))^2/(x/2)^2};
+    \addplot[figR, very thick, domain=-8.5:8.5, samples=400] {(abs(x)<1e-6) ? 4 : sin(deg(x))^2/(x/2)^2};
+    \addplot[figB, very thick, domain=-8.5:8.5, samples=600] {(abs(x)<1e-6) ? 16 : sin(deg(2*x))^2/(x/2)^2};
+    \legend{$t = t_0$, $t = 2t_0$, $t = 4t_0$}
+  \end{axis}
+\end{tikzpicture}

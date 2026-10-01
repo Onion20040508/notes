@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· B5 Quantum Mechanics in Three Dimensions]] · ↑ [[Quantum Mechanics]] · [[· B7 Identical Particles]] →
 
 **Builds on:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (3), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (7), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (19)
-**Used by:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (3), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (1), [[· B7 Identical Particles|B7 Identical Particles]] (4), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (17)
+**Used by:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (3), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (1), [[· B7 Identical Particles|B7 Identical Particles]] (4), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (17), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (4), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (5), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (1), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (4), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (8)
 
 ## Sections
 - [[§B6.1 Spin One-Half and the Pauli Matrices]] — Griffiths 4.4.1; Greensite 13

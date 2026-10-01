@@ -108,7 +108,7 @@ Surprisingly, the matrix of Example §36.2 acts essentially as a rotation, which
 ^ex-36-3
 
 ![[m235-36-1.svg]]
-*The iterates $\mathbf{x}_0, \ldots, \mathbf{x}_8$ (large dots) and $\mathbf{x}_9, \ldots, \mathbf{x}_{60}$ (small dots) of $\mathbf{x}_0 = (2, 0)$ under $A = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}$. Each step is a rotation through about $36.9°$ (the argument of $.8 + .6i$) in the coordinates given by $\operatorname{Re}\mathbf{v}_1$ and $\operatorname{Im}\mathbf{v}_1$ (gray), so the orbit is an ellipse rather than a circle. The points never repeat exactly ($36.87°$ is not a rational fraction of $360°$); they fill out the ellipse.*
+*The iterates $\mathbf{x}_0, \ldots, \mathbf{x}_8$ (large dots) and $\mathbf{x}_9, \ldots, \mathbf{x}_{60}$ (small dots) of $\mathbf{x}_0 = (2, 0)$ under $A = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}$. Each step is a rotation through about $36.9°$ (the argument of $.8 + .6i$) in the coordinates given by $\operatorname{Re}\mathbf{v}_1$ and $\operatorname{Im}\mathbf{v}_1$ (gray, drawn at half length), so the orbit is an ellipse rather than a circle. The points never repeat exactly ($36.87°$ is not a rational fraction of $360°$); they fill out the ellipse.*
 
 ## Real and Imaginary Parts of Vectors
 
