@@ -9,7 +9,7 @@
     \addplot[figR, dashed, line width=0.7pt, samples=3, domain=-14.99:0] {0.5*(1 - 1 - 2*x/29.98)};
     \addplot[figR, dashed, line width=0.7pt, samples=3, domain=0:14.99] {0.5*(1 - 1 + 2*x/29.98)};
     \draw[black!55, thin, densely dotted] (axis cs:-22,0.5) -- (axis cs:22,0.5);
-    \draw[black!55, thin, <->] (axis cs:-14.99,1.08) -- node[above, font=\scriptsize, black!70] {$2|x| < c\tau_0 = 3.0\ \mathrm{cm}$} (axis cs:14.99,1.08);
+    \draw[black!55, thin, <->] (axis cs:-14.99,1.08) -- node[above, font=\scriptsize, black!70] {fringes for $|x| < c\tau_0/2 = 15\ \mathrm{mm}$} (axis cs:14.99,1.08);
     \node[font=\scriptsize, black!70, anchor=west, align=left] at (axis cs:15.6,0.80) {no fringes:\\ $I = I(0)/2$};
     \node[font=\scriptsize, figR, anchor=east] at (axis cs:-7.5,0.93) {envelope};
   \end{axis}
@@ -19,8 +19,8 @@
     \addplot[figB, samples=200, domain=0:1.25] {max(0, 1 - x/0.8859)};
     \addplot[figR, samples=200, domain=0:1.25] {exp(-pi*x)};
     \addplot[figG, samples=200, domain=0:1.25] {exp(-(pi*x)^2/(4*ln(2)))};
-    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.62,0.42) {wave trains of length $c\tau_0$ (line $\propto \mathrm{sinc}^2$)};
+    \draw[figB, thin] (axis cs:0.70,0.21) -- (axis cs:0.76,0.42) node[anchor=south west, font=\scriptsize, inner sep=1pt] {wave trains of length $c\tau_0$ (line $\propto \mathrm{sinc}^2$)};
     \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.30,0.16) {Lorentzian line};
-    \node[figG, font=\scriptsize, anchor=south west] at (axis cs:0.53,0.72) {Gaussian line};
+    \node[figG, font=\scriptsize, anchor=south west] at (axis cs:0.31,0.80) {Gaussian line};
   \end{axis}
 \end{tikzpicture}

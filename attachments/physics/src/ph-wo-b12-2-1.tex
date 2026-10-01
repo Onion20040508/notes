@@ -1,0 +1,28 @@
+% Figure for Oscillations, Waves and Optics §B12.2 (telephoto pair: converging lens f1 = +10 cm followed after d = 5 cm by a diverging lens f2 = -10 cm; two rays parallel to the axis traced by ray matrices; the exit rays cross the axis at F' 10 cm behind L2, and their backward extensions meet the incoming rays in the second principal plane H', 5 cm in front of L1, so the effective focal length is 20 cm). x scale 0.42 per cm, heights in figure units.
+\begin{tikzpicture}[>={Stealth[length=2mm]}, font=\small, x=0.42cm, y=1cm]
+  \draw[black!55, thin] (-9,0) -- (22,0);
+  % principal plane H'
+  \draw[black!45, thin, dashed] (-5,-0.6) -- (-5,2.15) node[above, font=\scriptsize, black!70] {$H'$};
+  % lenses
+  \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]}, very thick, black!75] (0,-0.9) -- (0,2.1);
+  \node[font=\scriptsize, anchor=north] at (0,-0.95) {$L_1$: $f_1 = +10$};
+  \draw[{Stealth[length=2mm,reversed]}-{Stealth[length=2mm,reversed]}, very thick, black!75] (5,-0.9) -- (5,2.1);
+  \node[font=\scriptsize, anchor=north] at (6.6,-0.95) {$L_2$: $f_2 = -10$};
+  % rays, heights 1.6 and 0.8 (computed with the matrices of the text)
+  \foreach \r in {1.6,0.8} {
+    \draw[figB, thick] (-9,\r) -- (0,\r);
+    \draw[figB, thick] (0,\r) -- (5,{\r/2});
+    \draw[figR, thick, ->] (5,{\r/2}) -- (15,0);
+    \draw[figR, thick] (15,0) -- (21,{-\r*6/20});
+    \draw[figR, thin, densely dashed] (5,{\r/2}) -- (-5,\r);
+  }
+  \fill[figR] (15,0) circle (1.8pt);
+  \node[figR, font=\scriptsize, anchor=south] at (15.4,0.08) {$F'$};
+  % dimensions
+  \draw[black!60, thin, |<->|] (-5,-1.65) -- (15,-1.65);
+  \node[fill=white, inner sep=1pt, font=\scriptsize, text=black!75] at (5,-1.65) {$f = 20$ cm};
+  \draw[black!60, thin, |<->|] (5,-0.5) -- (15,-0.5);
+  \node[fill=white, inner sep=1pt, font=\scriptsize, text=black!75] at (11.2,-0.5) {$10$ cm};
+  \draw[black!60, thin, |<->|] (0,2.45) -- (5,2.45);
+  \node[font=\scriptsize, black!75, anchor=south] at (2.5,2.5) {$d = 5$ cm};
+\end{tikzpicture}

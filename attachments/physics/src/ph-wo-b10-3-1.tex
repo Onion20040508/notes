@@ -1,0 +1,19 @@
+% Figure for Oscillations, Waves and Optics §B10.3: modulus of the complex degree of coherence |gamma_12| between two points a distance l apart, illuminated by an incoherent quasi-monochromatic source of angular size theta_s (Theorems §B10.3.1, §B10.3.2): two equal point sources an angle theta_s apart, |cos(pi u)|; a uniform strip of angular width theta_s, |sin(pi u)/(pi u)|; a uniform disk of angular diameter theta_s, |2 J1(pi u)/(pi u)|; u = l theta_s/lambda. Disk values computed with scipy.special.j1.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=12cm, height=5.4cm, xmin=0, xmax=2.55, ymin=0, ymax=1.1,
+      xtick={0,0.5,1,1.22,1.5,2,2.5}, xticklabels={$0$,$0.5$,$1$,$1.22$,$1.5$,$2$,$2.5$}, ytick={0,0.5,1},
+      xlabel={separation of the two points, $l\,\theta_s/\lambda$}, ylabel={$|\gamma_{12}|$}, clip=false]
+    \addplot[figO, samples=400, domain=0.001:2.5] {abs(cos(deg(pi*x)))};
+    \addplot[figG, samples=400, domain=0.001:2.5] {abs(sin(deg(pi*x))/(pi*x))};
+    \addplot[figB, line width=1.1pt] coordinates {(0.001,1.0000) (0.021,0.9995) (0.041,0.9980) (0.060,0.9955) (0.081,0.9920) (0.101,0.9876) (0.120,0.9822) (0.141,0.9759) (0.161,0.9686) (0.180,0.9604) (0.201,0.9512) (0.221,0.9412) (0.240,0.9303) (0.260,0.9186) (0.280,0.9061) (0.300,0.8927) (0.320,0.8786) (0.340,0.8637) (0.360,0.8481) (0.380,0.8318) (0.400,0.8148) (0.420,0.7972) (0.440,0.7791) (0.460,0.7603) (0.480,0.7411) (0.500,0.7213) (0.520,0.7011) (0.540,0.6805) (0.560,0.6595) (0.580,0.6382) (0.600,0.6165) (0.620,0.5947) (0.640,0.5726) (0.660,0.5503) (0.680,0.5279) (0.700,0.5053) (0.720,0.4827) (0.740,0.4601) (0.760,0.4375) (0.780,0.4150) (0.800,0.3926) (0.820,0.3702) (0.840,0.3481) (0.860,0.3261) (0.880,0.3044) (0.900,0.2830) (0.920,0.2618) (0.940,0.2410) (0.960,0.2206) (0.980,0.2005) (1.000,0.1809) (1.020,0.1617) (1.040,0.1430) (1.060,0.1248) (1.080,0.1071) (1.100,0.0900) (1.120,0.0734) (1.140,0.0574) (1.160,0.0421) (1.180,0.0273) (1.200,0.0131) (1.220,0.0004) (1.240,0.0132) (1.260,0.0254) (1.280,0.0370) (1.300,0.0479) (1.320,0.0580) (1.340,0.0676) (1.360,0.0764) (1.380,0.0846) (1.400,0.0920) (1.420,0.0989) (1.440,0.1050) (1.460,0.1105) (1.480,0.1154) (1.500,0.1196) (1.520,0.1232) (1.540,0.1261) (1.560,0.1285) (1.580,0.1303) (1.600,0.1315) (1.620,0.1321) (1.640,0.1323) (1.660,0.1319) (1.680,0.1310) (1.700,0.1296) (1.720,0.1278) (1.740,0.1255) (1.760,0.1228) (1.780,0.1198) (1.800,0.1164) (1.820,0.1126) (1.840,0.1085) (1.860,0.1042) (1.880,0.0996) (1.900,0.0947) (1.920,0.0896) (1.940,0.0843) (1.960,0.0789) (1.980,0.0733) (2.000,0.0676) (2.020,0.0618) (2.040,0.0559) (2.060,0.0500) (2.080,0.0440) (2.100,0.0381) (2.120,0.0322) (2.140,0.0263) (2.160,0.0205) (2.180,0.0147) (2.200,0.0091) (2.220,0.0035) (2.240,0.0019) (2.260,0.0071) (2.280,0.0122) (2.300,0.0171) (2.320,0.0218) (2.340,0.0263) (2.360,0.0306) (2.380,0.0346) (2.400,0.0385) (2.420,0.0420) (2.440,0.0454) (2.460,0.0484) (2.480,0.0513) (2.500,0.0538)};
+    \draw[black!45, thin, densely dotted] (axis cs:0.5,0) -- (axis cs:0.5,1.02);
+    \draw[black!45, thin, densely dotted] (axis cs:1,0) -- (axis cs:1,1.02);
+    \draw[black!45, thin, densely dotted] (axis cs:1.22,0) -- (axis cs:1.22,1.02);
+    \node[figO, font=\scriptsize, anchor=south] at (axis cs:2.0,1.01) {two points};
+    \node[figG, font=\scriptsize, anchor=south west] at (axis cs:1.30,0.22) {strip};
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:1.62,0.125) {disk};
+    \node[font=\scriptsize, black!70, anchor=south, align=center] at (axis cs:0.5,1.02) {$\lambda/2\theta_s$};
+    \node[font=\scriptsize, black!70, anchor=south east, align=center] at (axis cs:1.04,1.02) {$\lambda/\theta_s$};
+    \node[font=\scriptsize, black!70, anchor=south west, align=center] at (axis cs:1.18,1.02) {$1.22\lambda/\theta_s$};
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,20 @@
+% Figure for Oscillations, Waves and Optics §B10.4: Airy function 1/(1 + F sin^2(Delta/2)) (transmission of a lossless Fabry–Perot normalised to its peak, Theorem §B10.4.2) against Delta/2pi for mirror reflectances R = 0.2, 0.5, 0.8, 0.95 (reflecting finesse 1.76, 4.44, 14.0, 61.2); free spectral range and the full width at half maximum for R = 0.8 marked.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=12.5cm, height=6cm, xmin=-0.5, xmax=1.5, ymin=0, ymax=1.22,
+      xtick={-0.5,0,0.5,1,1.5}, xticklabels={$-\tfrac12$,$0$ (order $N$),$\tfrac12$,$1$ (order $N+1$),$\tfrac32$}, ytick={0,0.5,1},
+      xlabel={$\Delta/2\pi$}, ylabel={$I_T/I_{T,\max}$}, clip=false]
+    \addplot[black!55, samples=401, domain=-0.5:1.5] {1/(1 + 1.25*sin(deg(pi*x))^2)};
+    \addplot[figG, samples=401, domain=-0.5:1.5] {1/(1 + 8*sin(deg(pi*x))^2)};
+    \addplot[figB, samples=801, domain=-0.5:1.5] {1/(1 + 80*sin(deg(pi*x))^2)};
+    \addplot[figR, samples=1601, domain=-0.5:1.5] {1/(1 + 1520*sin(deg(pi*x))^2)};
+    \draw[black!55, thin, <->] (axis cs:0,1.08) -- node[above, font=\scriptsize, black!70] {free spectral range} (axis cs:1,1.08);
+    \draw[figB, thin, |<->|] (axis cs:0.9644,0.5) -- (axis cs:1.0356,0.5);
+    \draw[figB, thin] (axis cs:1.04,0.5) -- (axis cs:1.16,1.05) node[anchor=south west, font=\scriptsize, inner sep=1pt] {FWHM $=$ FSR$/\mathcal F$};
+    \node[black!70, font=\scriptsize, anchor=south] at (axis cs:0.5,0.57) {$R = 0.2$, $\mathcal F = 1.8$};
+    \node[figG, font=\scriptsize, anchor=west] at (axis cs:0.175,0.37) {$R = 0.5$, $\mathcal F = 4.4$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.15,0.06) {$R = 0.8$, $\mathcal F = 14$};
+    \draw[figB, thin] (axis cs:0.07,0.205) -- (axis cs:0.15,0.07);
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.13,0.90) {$R = 0.95$, $\mathcal F = 61$};
+    \draw[figR, thin] (axis cs:0.012,0.82) -- (axis cs:0.13,0.90);
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,20 @@
+% Figure for Oscillations, Waves and Optics §B13.4 (CIE chromaticity plane computed from Schwartz's RGB-to-XYZ matrix, Lecture 17 eq. (7): the XYZ triangle x, y >= 0, x + y <= 1, the gamut triangle of the R, G, B primaries (columns of the matrix), the equal-energy white R = G = B, and Schwartz's computed sky colour (r, g, b) = (0.117, 0.295, 0.587); Examples §B13.4.1-§B13.4.2. The spectral locus is not drawn: its data are not tabulated in the sources).
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.6cm, height=8.6cm, xmin=0, xmax=1.0, ymin=0, ymax=1.0, axis equal image,
+      xtick={0,0.2,0.4,0.6,0.8,1}, ytick={0,0.2,0.4,0.6,0.8,1},
+      xlabel={$x$}, ylabel={$y$}, clip=false]
+    \draw[black!55, thin, dashed] (axis cs:0,0) -- (axis cs:1,0) -- (axis cs:0,1) -- cycle;
+    \fill[figB, opacity=0.10] (axis cs:0.7424,0.2576) -- (axis cs:0.2743,0.7168) -- (axis cs:0.1667,0.0083) -- cycle;
+    \draw[figB, thin] (axis cs:0.7424,0.2576) -- (axis cs:0.2743,0.7168) -- (axis cs:0.1667,0.0083) -- cycle;
+    \fill[figR] (axis cs:0.7424,0.2576) circle (1.8pt) node[anchor=west, font=\scriptsize] {R $(0.742, 0.258)$};
+    \fill[figG] (axis cs:0.2743,0.7168) circle (1.8pt) node[anchor=west, font=\scriptsize, xshift=2pt] {G $(0.274, 0.717)$};
+    \fill[figB] (axis cs:0.1667,0.0083) circle (1.8pt) node[anchor=south west, font=\scriptsize, xshift=2pt] {B $(0.167, 0.008)$};
+    \fill[black] (axis cs:0.3344,0.3311) circle (1.6pt) node[anchor=west, font=\scriptsize, xshift=1pt] {white $E$};
+    \fill[figB] (axis cs:0.2387,0.2374) circle (1.6pt) node[anchor=east, font=\scriptsize, xshift=-1pt] {sky};
+    \node[font=\scriptsize, black!60, anchor=west] at (axis cs:0.02,1) {Y};
+    \node[font=\scriptsize, black!60, anchor=south west] at (axis cs:0.005,0.0) {Z};
+    \node[font=\scriptsize, black!60, anchor=south] at (axis cs:1,0.02) {X};
+    \node[font=\scriptsize, black!70, anchor=west, align=left] at (axis cs:0.52,0.62) {$x + y = 1$};
+    \node[font=\scriptsize, figB, align=left, anchor=west] at (axis cs:0.27,0.50) {gamut of\\ R, G, B};
+  \end{axis}
+\end{tikzpicture}

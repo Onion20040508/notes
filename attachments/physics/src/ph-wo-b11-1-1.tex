@@ -1,0 +1,30 @@
+% Figure for Oscillations, Waves and Optics §B11.1 (geometry of the Fresnel–Kirchhoff formula: point source S, opaque screen with aperture A, aperture point Q, receiving point P, forward normal z-hat, the distances r' = SQ and r = QP and the angles chi' and chi they make with the normal).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % screen with aperture
+  \draw[line width=2.4pt, black!70] (0,-2.3) -- (0,-0.45);
+  \draw[line width=2.4pt, black!70] (0,1.45) -- (0,2.6);
+  \draw[black!40, thin, densely dotted] (0,-0.45) -- (0,1.45);
+  \node[font=\scriptsize, black!65, anchor=west] at (0.08,-1.9) {opaque screen};
+  \node[font=\scriptsize, black!65, anchor=east] at (-0.1,1.25) {aperture $\mathcal A$};
+  % points
+  \coordinate (S) at (-3.8,-1.2); \coordinate (Q) at (0,0.5); \coordinate (P) at (4.2,2.45);
+  \fill[figB] (S) circle (2.2pt) node[below left] {$S$};
+  \fill[black] (Q) circle (1.6pt);
+  \node[anchor=north west, font=\small] at (0.04,0.47) {$Q$};
+  \fill[figR] (P) circle (2.2pt) node[above right] {$P$};
+  % rays
+  \draw[->, thick, figB] (S) -- ($(S)!0.93!(Q)$);
+  \node[figB, anchor=north west] at ($(S)!0.55!(Q)$) {$r'$};
+  \draw[->, thick, figR] (Q) -- ($(Q)!0.96!(P)$);
+  \node[figR, anchor=north west] at ($(Q)!0.55!(P)$) {$r$};
+  % normal
+  \draw[black!45, thin, dashed] (-1.6,0.5) -- (0,0.5);
+  \draw[->, black!70, thick] (Q) -- (1.5,0.5) node[right] {$\hat z$};
+  % angles
+  \draw[figR, thin] (1.0,0.5) arc (0:{atan(1.95/4.2)}:1.0);
+  \node[figR, font=\scriptsize] at (1.25,0.78) {$\chi$};
+  \draw[figB, thin] (-1.0,0.5) arc (180:{180+atan(1.7/3.8)}:1.0);
+  \node[figB, font=\scriptsize] at (-1.28,0.27) {$\chi'$};
+  \node[font=\scriptsize, black!60, align=center] at (-2.6,1.9) {source side};
+  \node[font=\scriptsize, black!60, align=center] at (2.6,-0.9) {receiving side};
+\end{tikzpicture}
