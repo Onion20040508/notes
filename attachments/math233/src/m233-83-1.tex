@@ -1,0 +1,35 @@
+% Figure for Calculus §83.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth]
+  % (a) parallelogram, area |a x b|  (drawn in its own plane; a x b points out of the page)
+  \begin{scope}
+    \coordinate (O) at (0,0); \coordinate (A) at (3.4,0); \coordinate (B) at (1.1,1.9); \coordinate (C) at (4.5,1.9);
+    \fill[figB!12] (O) -- (A) -- (C) -- (B) -- cycle;
+    \draw[black!40] (A) -- (C) -- (B);
+    \draw[->, figR, thick] (O) -- (A) node[midway, below] {$\mathbf{a}$};
+    \draw[->, figR, thick] (O) -- (B) node[midway, above left] {$\mathbf{b}$};
+    \draw[black!60, dashed] (B) -- (1.1,0) node[pos=0.5, right] {$|\mathbf{b}|\sin\theta$};
+    \draw[black!60] (1.1,0.18) -- (1.28,0.18) -- (1.28,0);
+    \draw[black!70] (0.5,0) arc[start angle=0, end angle=60, radius=0.5];
+    \node at (0.62,0.3) {$\theta$};
+    \node[figB, font=\small] at (3.1,1.15) {$A=|\mathbf{a}\times\mathbf{b}|$};
+    \node[font=\small] at (2.2,-0.75) {(a) Parallelogram spanned by $\mathbf{a}$, $\mathbf{b}$};
+  \end{scope}
+  % (b) parallelepiped, volume |a . (b x c)|
+  \begin{scope}[xshift=8.2cm, x={(1cm,0cm)}, y={(0.6cm,0.35cm)}, z={(0cm,1cm)}]
+    \coordinate (O) at (0,0,0);
+    \def\bx{3}\def\cy{2}\def\ax{0.5}\def\ay{0.4}\def\az{1.6}
+    \fill[figB!10] (0,0,0) -- (\bx,0,0) -- (\bx,\cy,0) -- (0,\cy,0) -- cycle;
+    \draw[black!35] (\bx,0,0) -- (\bx,\cy,0) -- (0,\cy,0);
+    \draw[black!50] (\ax,\ay,\az) -- ({\ax+\bx},\ay,\az) -- ({\ax+\bx},{\ay+\cy},\az) -- (\ax,{\ay+\cy},\az) -- cycle;
+    \draw[black!35] (\bx,0,0) -- ({\ax+\bx},\ay,\az);
+    \draw[black!35] (\bx,\cy,0) -- ({\ax+\bx},{\ay+\cy},\az);
+    \draw[black!35, dashed] (0,\cy,0) -- (\ax,{\ay+\cy},\az);
+    \draw[->, figR, thick] (O) -- (\bx,0,0) node[pos=0.6, below] {$\mathbf{b}$};
+    \draw[->, figR, thick] (O) -- (0,\cy,0) node[pos=0.55, above left, inner sep=1pt] {$\mathbf{c}$};
+    \draw[->, figG, thick] (O) -- (\ax,\ay,\az) node[pos=0.55, right] {$\mathbf{a}$};
+    \draw[->, figB, very thick] (O) -- (0,0,2.5) node[above] {$\mathbf{b}\times\mathbf{c}$};
+    \draw[black!60, dashed] (\ax,\ay,\az) -- (0,0,\az);
+    \draw[decorate, decoration={brace, amplitude=3pt, mirror}] (-0.15,0,\az) -- (-0.15,0,0) node[midway, left=4pt] {$h=|\mathbf{a}|\,|\cos\theta|$};
+    \node[font=\small] at (1.6,-1.45,0) {(b) Parallelepiped spanned by $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$};
+  \end{scope}
+\end{tikzpicture}

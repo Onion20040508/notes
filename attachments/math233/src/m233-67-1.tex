@@ -1,0 +1,23 @@
+% Figure for Calculus §67.
+\begin{tikzpicture}[x=1cm, y=1cm, font=\scriptsize]
+  \def\a{3} \def\b{2} \pgfmathsetmacro{\c}{sqrt(5)}
+  \pgfmathsetmacro{\px}{3*cos(deg(2.3))} \pgfmathsetmacro{\py}{2*sin(deg(2.3))}
+  \draw[-stealth, thin, black!70] (-3.7,0) -- (3.9,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-2.5) -- (0,2.7) node[above] {$y$};
+  \draw[figR!80!black, thick] (0,0) ellipse (\a cm and \b cm);
+  % focal distances from P
+  \draw[figB, thick] (-\c,0) -- (\px,\py) -- (\c,0);
+  \fill[figB] (\px,\py) circle (1.6pt) node[above left] {$P(x,y)$};
+  % the a-b-c triangle
+  \draw[figR, thick] (0,0) -- (\c,0) -- (0,\b) -- cycle;
+  \draw[figR] (0.15,0) |- (0,0.15);
+  \node[figR, left] at (0,0.55) {$b$};
+  \node[figR, below] at ({\c/2},0) {$c$};
+  \node[figR, above right] at ({\c/2},1) {$a$};
+  \fill (-\c,0) circle (1.6pt) node[below] {$F_1(-c,0)$};
+  \fill (\c,0) circle (1.6pt) node[below=2pt] {$F_2(c,0)$};
+  \fill (\a,0) circle (1.3pt) node[below right] {$(a,0)$};
+  \fill (-\a,0) circle (1.3pt) node[below left] {$(-a,0)$};
+  \fill (0,\b) circle (1.3pt) node[above right] {$(0,b)$};
+  \fill (0,-\b) circle (1.3pt) node[below right] {$(0,-b)$};
+\end{tikzpicture}

@@ -1,0 +1,22 @@
+% Figure for Calculus §55.
+\begin{tikzpicture}[x=0.022cm, y=0.075cm, font=\scriptsize]
+  % consumer surplus: between demand p = 50 - x/20 and p = 40 on [0, 200]
+  \fill[figB!25] (0,50) -- (200,40) -- (0,40) -- cycle;
+  % producer surplus: between p = 40 and supply p = 20 + x/10 on [0, 200]
+  \fill[figG!25] (0,40) -- (200,40) -- (0,20) -- cycle;
+  % axes
+  \draw[-stealth, thin, black!70] (-8,0) -- (330,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-3) -- (0,62) node[above] {$p$};
+  \node[below left] at (0,0) {$0$};
+  \foreach \t in {100,200,300} \draw[thin, black!70] (\t,1) -- (\t,-1) node[below] {$\t$};
+  \foreach \t in {20,40,50} \draw[thin, black!70] (3,\t) -- (-3,\t) node[left] {$\t$};
+  % curves
+  \draw[figB, thick] (0,50) -- (300,35) node[right] {demand $p = 50 - \frac{x}{20}$};
+  \draw[figG!80!black, thick] (0,20) -- (300,50) node[right] {supply $p = 20 + \frac{x}{10}$};
+  \draw[figR, thick, dashed] (0,40) -- (200,40);
+  \draw[black!35, dotted] (200,0) -- (200,40);
+  \fill[figR] (200,40) circle (1.7pt) node[below right] {$(200, 40)$};
+  % labels
+  \node[figB!70!black] at (62,44.2) {CS $= 1000$};
+  \node[figG!60!black] at (62,34.2) {PS $= 2000$};
+\end{tikzpicture}

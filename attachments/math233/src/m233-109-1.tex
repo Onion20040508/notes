@@ -1,0 +1,16 @@
+% Figure for Calculus §109.
+\begin{tikzpicture}[x=1cm, y=1cm, font=\scriptsize,
+    mid arrow/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
+  \draw[black!70, thick, fill=figB!8] plot[smooth cycle, tension=0.8] coordinates {(0.2,0.6) (1.6,0.2) (3.4,0.5) (5.2,0.3) (6.0,1.6) (5.6,3.2) (3.8,3.6) (1.8,3.4) (0.4,2.6) (0.9,1.7)};
+  \node[font=\small] at (5.2,1.0) {$D$};
+  \coordinate (A) at (1.6,1.0); \coordinate (X1) at (3.5,2.5); \coordinate (X) at (4.3,2.5);
+  \fill[figG!20] (X) circle (0.95); \draw[figG] (X) circle (0.95);
+  \draw[figB, thick, mid arrow=0.55] (A) .. controls (2.6,1.0) and (2.2,2.5) .. (X1);
+  \draw[figR, very thick, mid arrow=0.6] (X1) -- (X);
+  \fill (A) circle (1.6pt) node[below left] {$(a,b)$};
+  \fill (X1) circle (1.6pt) node[above left] {$(x_1,y)$};
+  \fill (X) circle (1.6pt) node[above right] {$(x,y)$};
+  \node[figB] at (2.15,1.65) {$C_1$};
+  \node[figR, below] at (3.9,2.5) {$C_2$};
+  \node[figR, align=left, right] at (6.2,2.6) {on $C_2$: $dy=0$,\\ $\displaystyle\int_{C_2}\mathbf{F}\cdot d\mathbf{r}=\int_{x_1}^{x} P(t,y)\,dt$};
+\end{tikzpicture}

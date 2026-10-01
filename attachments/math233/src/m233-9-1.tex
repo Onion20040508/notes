@@ -1,0 +1,18 @@
+% Figure for Calculus §9.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=9cm, height=7.5cm, xmin=2.35, xmax=3.62, ymin=5, ymax=13,
+      xtick={2.7142857,3,3.2857143}, xticklabels={$3-\delta$,$3$,$3+\delta$},
+      ytick={7,9,11}, yticklabels={$9-\varepsilon=7$,$9$,$9+\varepsilon=11$}, xlabel={$x$}, ylabel={$y$}]
+    \fill[figB, opacity=0.10] (axis cs:2.35,7) rectangle (axis cs:3.62,11);
+    \draw[black!40, thin] (axis cs:2.35,7) -- (axis cs:3.62,7);
+    \draw[black!40, thin] (axis cs:2.35,11) -- (axis cs:3.62,11);
+    \draw[figR, thick] (axis cs:2.7142857,7) rectangle (axis cs:3.2857143,11);
+    \draw[black!50, dashed] (axis cs:2.6457513,5) -- (axis cs:2.6457513,7);
+    \draw[black!50, dashed] (axis cs:3.3166248,5) -- (axis cs:3.3166248,11);
+    \node[black!70, font=\scriptsize, anchor=east] at (axis cs:2.64,5.6) {$\sqrt7$};
+    \node[black!70, font=\scriptsize, anchor=west] at (axis cs:3.322,5.6) {$\sqrt{11}$};
+    \draw[black!35, dotted] (axis cs:3,5) -- (axis cs:3,9) -- (axis cs:2.35,9);
+    \addplot[figB, domain=2.4:3.58, samples=80] {x^2} node[pos=0.93, left, font=\scriptsize] {$y=x^2$};
+    \fill[figB] (axis cs:3,9) circle (1.6pt);
+  \end{axis}
+\end{tikzpicture}

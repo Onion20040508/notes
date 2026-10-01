@@ -1,0 +1,44 @@
+% Figure for Calculus §98.
+\begin{tikzpicture}[x={(-0.62cm,-0.5cm)}, y={(1.6cm,0cm)}, z={(0cm,0.21cm)}, font=\scriptsize,
+    declare function={f(\x,\y)=16-\x*\x-2*\y*\y;}]
+  % base rectangle R and its grid
+  \fill[figG!12] (0,0,0) -- (2,0,0) -- (2,2,0) -- (0,2,0) -- cycle;
+  \draw[figG!70!black, thin] (0,0,0) -- (2,0,0) -- (2,2,0) -- (0,2,0) -- cycle;
+  \draw[figG!70!black, thin] (1,0,0) -- (1,2,0) (0,1,0) -- (2,1,0);
+  % axes (back parts)
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,2.75,0) node[right] {$y$};
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,0,18) node[above] {$z$};
+  % boxes, back to front
+  \foreach \xa/\ya/\h in {0/0/13, 0/1/7, 1/0/10, 1/1/4} {
+    \pgfmathsetmacro{\xb}{\xa+1} \pgfmathsetmacro{\yb}{\ya+1}
+    \filldraw[draw=figB!80!black, fill=figB!32, line width=0.4pt, fill opacity=0.7]
+      (\xb,\ya,0) -- (\xb,\yb,0) -- (\xb,\yb,\h) -- (\xb,\ya,\h) -- cycle;
+    \filldraw[draw=figB!80!black, fill=figB!20, line width=0.4pt, fill opacity=0.7]
+      (\xa,\yb,0) -- (\xb,\yb,0) -- (\xb,\yb,\h) -- (\xa,\yb,\h) -- cycle;
+    \filldraw[draw=figB!80!black, fill=figB!10, line width=0.4pt, fill opacity=0.7]
+      (\xa,\ya,\h) -- (\xb,\ya,\h) -- (\xb,\yb,\h) -- (\xa,\yb,\h) -- cycle;
+  }
+  % surface mesh over [0,2]^2
+  \foreach \t in {0.5,1,1.5} {
+    \draw[figB!55, thin, opacity=0.8] plot[domain=0:2, samples=30] (\t,\x,{f(\t,\x)});
+    \draw[figB!55, thin, opacity=0.8] plot[domain=0:2, samples=30] (\x,\t,{f(\x,\t)});
+  }
+  \draw[figB, thick] plot[domain=0:2, samples=40] (0,\x,{f(0,\x)});
+  \draw[figB, thick] plot[domain=0:2, samples=40] (2,\x,{f(2,\x)});
+  \draw[figB, thick] plot[domain=0:2, samples=40] (\x,0,{f(\x,0)});
+  \draw[figB, thick] plot[domain=0:2, samples=40] (\x,2,{f(\x,2)});
+  % sample points (upper right corners) on the surface
+  \foreach \xx/\yy in {1/1, 1/2, 2/1, 2/2} { \fill[figR] (\xx,\yy,{f(\xx,\yy)}) circle (1.5pt); }
+  % heights
+  \node[figR, right] at (2,2,4) {$4$};
+  \node[figR, below right] at (2,1,10) {$10$};
+  \node[figR, above right] at (1,2,7) {$7$};
+  \node[figR, above] at (1,1,13.3) {$13$};
+  % x axis (front part) and ticks
+  \draw[-stealth, thin, black!70] (2,0,0) -- (2.75,0,0) node[below left] {$x$};
+  \node[left] at (2,0,0) {$2$};
+  \node[above right] at (0,2,0) {$2$};
+  \draw[thin, black!70] (0,-0.05,16) -- (0,0.05,16); \node[left] at (0,0,16) {$16$};
+  \node[figB, right] at (0,1.25,{f(0,1.25)+1}) {$z=16-x^2-2y^2$};
+  \node[figG!60!black] at (2.35,1.0,0) {$R$};
+\end{tikzpicture}

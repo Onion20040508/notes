@@ -1,0 +1,26 @@
+% Figure for Calculus §58.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.6cm, height=7.2cm, xmin=0, xmax=1.12, ymin=0.6, ymax=3.6, clip=false,
+      xtick={0,0.25,0.5,0.75,1}, xticklabels={$0$,$0.25$,$0.5$,$0.75$,$1$},
+      ytick={1,1.5,2,2.5,3,3.5},
+      xlabel={$x$}, ylabel={$y$}, xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south, rotate=-90}]
+    % exact solution
+    \addplot[figR, domain=0:1.05, samples=80] {2*exp(x)-x-1};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.05,{2*exp(1.05)-2.05}) {exact $y = 2e^x - x - 1$};
+    % Euler, h = 0.25
+    \addplot[figG, mark=*, mark size=1.4pt] coordinates {(0,1) (0.25,1.25) (0.5,1.625) (0.75,2.15625) (1,2.8828125)};
+    \node[figG, font=\scriptsize, anchor=west] at (axis cs:1.05,2.85) {$h = 0.25$: $y(1) \approx 2.883$};
+    % Euler, h = 0.5
+    \addplot[figB, mark=*, mark size=1.4pt] coordinates {(0,1) (0.5,1.5) (1,2.5)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.05,2.45) {$h = 0.5$: $y(1) \approx 2.5$};
+    % first step of h = 0.5 : run h, rise h F(x0,y0)
+    \draw[black!60, thin, dashed] (axis cs:0,1) -- (axis cs:0.5,1);
+    \draw[black!60, thin, dashed] (axis cs:0.5,1) -- (axis cs:0.5,1.5);
+    \node[font=\scriptsize, anchor=north] at (axis cs:0.25,1) {$h = 0.5$};
+    \node[font=\scriptsize, anchor=west] at (axis cs:0.5,1.2) {$hF(0,1) = 0.5$};
+    % the error at x = 1
+    \draw[decorate, decoration={brace, amplitude=3pt, mirror}, thin] (axis cs:1.0,2.5) -- (axis cs:1.0,3.4366);
+    \node[font=\scriptsize, anchor=west] at (axis cs:1.05,3.2) {error of $h=0.5$: $\approx 0.94$};
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,37 @@
+% Figure for Calculus §98.
+\begin{tikzpicture}[x={(-0.6cm,-0.48cm)}, y={(1.35cm,0cm)}, z={(0cm,0.36cm)}, font=\scriptsize,
+    declare function={f(\x,\y)=6.2+1.4*sin(deg(1.6*\y-0.4))-0.55*\x+0.25*\x*\y;}]
+  \def\a{0.3} \def\b{2.9} \def\c{0.4} \def\d{3.4} \def\xo{1.7}
+  % axes
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,4.1,0) node[right] {$y$};
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,0,10.5) node[above] {$z$};
+  \draw[-stealth, thin, black!70] (0,0,0) -- (3.8,0,0) node[below left] {$x$};
+  % base rectangle R
+  \fill[figG!12] (\a,\c,0) -- (\b,\c,0) -- (\b,\d,0) -- (\a,\d,0) -- cycle;
+  \draw[figG!70!black, thin] (\a,\c,0) -- (\b,\c,0) -- (\b,\d,0) -- (\a,\d,0) -- cycle;
+  % back edges of the solid
+  \draw[figB!60, thin, dashed] (\a,\c,0) -- (\a,\c,{f(\a,\c)});
+  \draw[figB!60, thin] (\a,\d,0) -- (\a,\d,{f(\a,\d)});
+  % faces x = b (front) and y = d (right)
+  \fill[figB!24, opacity=0.8] plot[domain=\a:\b, samples=50] (\x,\d,{f(\x,\d)}) -- (\b,\d,0) -- (\a,\d,0) -- cycle;
+  % the slice at x = xo
+  \fill[figR!22, opacity=0.9] plot[domain=\c:\d, samples=50] (\xo,\x,{f(\xo,\x)}) -- (\xo,\d,0) -- (\xo,\c,0) -- cycle;
+  \draw[figR, thick] plot[domain=\c:\d, samples=50] (\xo,\x,{f(\xo,\x)});
+  \draw[figR, thin] (\xo,\c,0) -- (\xo,\d,0) (\xo,\c,0) -- (\xo,\c,{f(\xo,\c)}) (\xo,\d,0) -- (\xo,\d,{f(\xo,\d)});
+  \fill[figB!10, opacity=0.55] plot[domain=\c:\d, samples=50] (\b,\x,{f(\b,\x)}) -- (\b,\d,0) -- (\b,\c,0) -- cycle;
+  \node[figR] at (\xo,{(\c+\d)/2},3.0) {$A(x)$};
+  % top surface edges
+  \draw[figB, thick] plot[domain=\c:\d, samples=50] (\a,\x,{f(\a,\x)});
+  \draw[figB, thick] plot[domain=\a:\b, samples=50] (\x,\c,{f(\x,\c)});
+  \draw[figB, thick] plot[domain=\a:\b, samples=50] (\x,\d,{f(\x,\d)});
+  \draw[figB, thick] plot[domain=\c:\d, samples=50] (\b,\x,{f(\b,\x)});
+  \foreach \t in {0.95,2.3} \draw[figB!45, thin] plot[domain=\c:\d, samples=40] (\t,\x,{f(\t,\x)});
+  \foreach \t in {1.4,2.4} \draw[figB!45, thin] plot[domain=\a:\b, samples=40] (\x,\t,{f(\x,\t)});
+  % front vertical edges
+  \draw[figB, thin] (\b,\c,0) -- (\b,\c,{f(\b,\c)}) (\b,\d,0) -- (\b,\d,{f(\b,\d)});
+  \node[figB, right] at (\a,2.9,{f(\a,2.9)+0.4}) {$z=f(x,y)$};
+  % ticks
+  \foreach \p/\l in {\a/a, \xo/x, \b/b} { \draw[black!40, dotted] (\p,0,0) -- (\p,\c,0); \node[left] at (\p,0,0) {$\l$}; }
+  \foreach \p/\l in {\c/c, \d/d} { \draw[black!40, dotted] (0,\p,0) -- (\a,\p,0); \node[above] at (0,\p,0) {$\l$}; }
+  \node[figG!60!black] at (3.25,1.1,0) {$R$};
+\end{tikzpicture}

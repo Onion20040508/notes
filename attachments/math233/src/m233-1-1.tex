@@ -1,0 +1,32 @@
+% Figure for Calculus §1.
+\begin{tikzpicture}[x=0.8cm, y=0.8cm, font=\scriptsize]
+  % ---------- (a) a graph: every vertical line meets it once ----------
+  \begin{scope}
+    \draw[-stealth, thin, black!70] (-0.4,0) -- (5.6,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-0.4) -- (0,3.6) node[above] {$y$};
+    \draw[figB, thick] plot[domain=0.2:5.2, samples=80, smooth] (\x,{1.5+0.75*sin(1.5*\x r)+0.12*\x});
+    \draw[figR, dashed] (3.4,0) -- (3.4,3.4) node[above] {$x=a$};
+    \pgfmathsetmacro{\yb}{1.5+0.75*sin(1.5*3.4 r)+0.12*3.4}
+    \fill[figR] (3.4,\yb) circle (2.4pt);
+    \node[figR, right] at (3.45,\yb-0.25) {$(a,b)$};
+    \draw[thin, black!70] (3.4,0.08) -- (3.4,-0.08) node[below] {$a$};
+    \node[font=\small] at (2.6,-1.2) {(a) the graph of a function};
+  \end{scope}
+  % ---------- (b) x = y^2 - 2: one vertical line meets it twice ----------
+  \begin{scope}[xshift=7.2cm]
+    \draw[-stealth, thin, black!70] (-2.8,0) -- (3.2,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-2.3) -- (0,2.6) node[above] {$y$};
+    \draw[figB, thick] plot[domain=0:2.15, samples=60, smooth] ({\x*\x-2},{\x});
+    \draw[figG, thick] plot[domain=-2.15:0, samples=60, smooth] ({\x*\x-2},{\x});
+    \fill[black] (-2,0) circle (2pt);
+    \node[above left] at (-2,0) {$(-2,0)$};
+    \draw[figR, dashed] (1,-2.3) -- (1,2.4) node[above] {$x=a$};
+    \fill[figR] (1,1.732) circle (2.4pt);
+    \fill[figR] (1,-1.732) circle (2.4pt);
+    \node[figR, right] at (1.05,1.45) {$(a,\sqrt{a+2})$};
+    \node[figR, right] at (1.05,-1.45) {$(a,-\sqrt{a+2})$};
+    \node[figB, right] at (2.75,1.95) {$y=\sqrt{x+2}$};
+    \node[figG, right] at (2.75,-1.95) {$y=-\sqrt{x+2}$};
+    \node[font=\small] at (0.2,-3.1) {(b) $x=y^2-2$ is not a graph of $x$};
+  \end{scope}
+\end{tikzpicture}

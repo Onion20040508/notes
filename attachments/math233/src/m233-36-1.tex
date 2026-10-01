@@ -1,0 +1,32 @@
+% Figure for Calculus §36.
+\begin{tikzpicture}[x=1.45cm, y=1.25cm, font=\scriptsize,
+    declare function={f(\t)=2+0.9*sin(deg(1.6*\t))+0.12*\t;}]
+  \def\a{0.4} \def\x{2.45} \def\xh{3.55} \def\b{4.6} \def\u{2.851}
+  % g(x) = area so far
+  \fill[figB!14] (\a,0) -- plot[domain=\a:\x, samples=60] (\x,{f(\x)}) -- (\x,0) -- cycle;
+  \node[figB] at (1.35,1.0) {$g(x)$};
+  % the strip from x to x+h
+  \fill[figR!22] (\x,0) -- plot[domain=\x:\xh, samples=40] (\x,{f(\x)}) -- (\xh,0) -- cycle;
+  % rectangles of heights m and M
+  \pgfmathsetmacro{\m}{f(\u)} \pgfmathsetmacro{\M}{f(\xh)}
+  \draw[figR, thin, dashed] (\x,\m) -- (\xh,\m);
+  \draw[figR, thin, dashed] (\x,\M) -- (\xh,\M);
+  \draw[figR!60, thin] (\x,0) -- (\x,{f(\x)});
+  \draw[figR!60, thin] (\xh,0) -- (\xh,\M);
+  \node[figR, right] at (\xh,\M) {$M=f(v)$};
+  \node[figR, right] at (\xh,{\m-0.05}) {$m=f(u)$};
+  \draw[figR, thin, dotted] (\u,0) -- (\u,\m);
+  \fill[figR] (\u,\m) circle (1.4pt);
+  \fill[figR] (\xh,\M) circle (1.4pt);
+  % the graph
+  \draw[figB, thick] plot[domain=0.2:4.8, samples=120] (\x,{f(\x)});
+  \node[figB, above] at (1.1,{f(1.1)}) {$y=f(t)$};
+  \draw[black!40, thin] (\a,0) -- (\a,{f(\a)});
+  \draw[black!40, thin] (\b,0) -- (\b,{f(\b)});
+  % axes and labels
+  \draw[-stealth, thin, black!70] (-0.1,0) -- (5.1,0) node[right] {$t$};
+  \draw[-stealth, thin, black!70] (0,-0.1) -- (0,3.4) node[above] {$y$};
+  \foreach \p/\l in {\a/a, \x/x, \xh/{x+h\,=\,v}, \b/b} \draw[thin, black!70] (\p,0.05) -- (\p,-0.05) node[below] {$\l$};
+  \node[below] at (\u,-0.05) {$u$};
+  \node[below left] at (0,0) {$0$};
+\end{tikzpicture}

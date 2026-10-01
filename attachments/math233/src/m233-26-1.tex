@@ -1,0 +1,27 @@
+% Figure for Calculus §26.
+\begin{tikzpicture}[x=1.3cm, y=1.1cm, font=\scriptsize,
+    declare function={f(\x)=1+2.2*sin(deg(0.75*\x)); s(\x)=1.650145-0.175958*(\x-0.4);}]
+  \def\a{0.4} \def\b{4.2} \def\c{2.236854} \def\m{-0.175958} \def\X{1.3}
+  \draw[-stealth, thin, black!70] (-0.2,0) -- (4.8,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.2) -- (0,3.9) node[above] {$y$};
+  % secant AB
+  \draw[figB, thick] (\a,{s(\a)}) -- (\b,{s(\b)});
+  % tangent at c, parallel
+  \draw[figR, thick] ({\c-1.6},{f(\c)-1.6*\m}) -- ({\c+1.7},{f(\c)+1.7*\m});
+  % graph
+  \draw[black, thick] plot[domain=\a:\b, samples=120] (\x,{f(\x)});
+  \node[black, right] at (3.8,{f(3.8)+0.1}) {$y=f(x)$};
+  % h(x) bracket
+  \draw[figG, very thick] (\X,{s(\X)}) -- (\X,{f(\X)});
+  \node[figG, left] at (\X,{0.5*(s(\X)+f(\X))}) {$h(x)$};
+  \draw[black!30, dotted] (\X,0) -- (\X,{s(\X)});
+  % points
+  \fill (\a,{f(\a)}) circle (1.8pt) node[left] {$A$};
+  \fill (\b,{f(\b)}) circle (1.8pt) node[below right] {$B$};
+  \fill[figR] (\c,{f(\c)}) circle (1.8pt);
+  \node[figR, above] at (\c,{f(\c)+0.08}) {$P(c,f(c))$};
+  \draw[black!30, dotted] (\c,0) -- (\c,{f(\c)});
+  \draw[black!30, dotted] (\a,0) -- (\a,{f(\a)});
+  \draw[black!30, dotted] (\b,0) -- (\b,{f(\b)});
+  \foreach \p/\l in {\a/a, \X/x, \c/c, \b/b} \draw[thin, black!70] (\p,0.06) -- (\p,-0.06) node[below] {$\l$};
+\end{tikzpicture}

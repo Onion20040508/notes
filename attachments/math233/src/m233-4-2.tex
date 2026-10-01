@@ -1,0 +1,33 @@
+% Figure for Calculus §4.
+\begin{tikzpicture}[font=\scriptsize]
+  % (a) y = 2^x at rational x only: a graph full of holes
+  \begin{scope}[x=0.95cm, y=0.62cm]
+    \draw[-stealth, thin, black!70] (-3.2,0) -- (2.6,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-0.6) -- (0,5.6) node[above] {$y$};
+    \foreach \t in {-2,-1,1,2} \draw[thin, black!70] (\t,0.08) -- (\t,-0.08) node[below] {$\t$};
+    \foreach \t in {1,2,4} \draw[thin, black!70] (0.06,\t) -- (-0.06,\t) node[left] {$\t$};
+    \foreach \k in {-24,...,19} \fill[figB] ({\k/8},{2^(\k/8)}) circle (1.1pt);
+    \node[figB] at (-1.9,3.2) {$y=2^x$, $x$ rational};
+    \node[font=\small] at (-0.3,-1.8) {(a) before: only rational $x$};
+  \end{scope}
+  % (b) zoom near x = sqrt 3: nested bounds
+  \begin{scope}[xshift=7.2cm, x=22cm, y=9cm, shift={(-1.66cm*22,-3.18cm*9)}]
+    \draw[-stealth, thin, black!70] (1.66,3.18) -- (1.835,3.18) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (1.66,3.18) -- (1.66,3.53) node[above] {$y$};
+    \draw[figB, thick] plot[domain=1.675:1.82, samples=40] (\x,{2^\x});
+    % outer bounds 1.7 < sqrt3 < 1.8
+    \foreach \x/\c in {1.7/figO, 1.8/figO, 1.73/figR, 1.74/figR} {
+      \draw[\c, thin, dashed] (\x,3.18) -- (\x,{2^\x}) -- (1.66,{2^\x});
+      \fill[\c] (\x,{2^\x}) circle (0.03pt);
+    }
+    \foreach \x in {1.7,1.8} \node[figO, below] at (\x,3.18) {$\x$};
+    \node[figR, below] at (1.735,3.18) {$1.73\ 1.74$};
+    \node[figO, left] at (1.66,{2^1.7}) {$2^{1.7}$};
+    \node[figO, left] at (1.66,{2^1.8}) {$2^{1.8}$};
+    \node[figR, left] at (1.66,{2^1.74+0.004}) {$2^{1.74}$};
+    \node[figR, left] at (1.66,{2^1.73-0.004}) {$2^{1.73}$};
+    \fill[black] (1.7320508,3.321997) circle (1.5pt);
+    \node[black, right] at (1.748,3.262) {$(\sqrt3,\,2^{\sqrt3})$};
+    \node[font=\small] at (1.75,3.075) {(b) squeezing $2^{\sqrt3}$};
+  \end{scope}
+\end{tikzpicture}

@@ -1,0 +1,16 @@
+% Figure for Calculus §28.
+\begin{tikzpicture}[x=1.3cm, y=1.3cm, font=\scriptsize,
+    declare function={f(\x)=1.8*(\x-1)-0.35*(\x-1)*(\x-1); g(\x)=0.8*(\x-1)-0.12*(\x-1)*(\x-1);}]
+  \draw[-stealth, thin, black!70] (-0.2,0) -- (4.2,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.9) -- (0,3.3) node[above] {$y$};
+  \draw[figR, thin, dashed] (0.6,{1.8*(-0.4)}) -- (2.75,{1.8*1.75});
+  \draw[figB, thin, dashed] (0.1,{0.8*(-0.9)}) -- (3.9,{0.8*2.9});
+  \draw[figR, thick] plot[domain=0.55:3.6, samples=80] (\x,{f(\x)});
+  \draw[figB, thick] plot[domain=0.1:3.9, samples=80] (\x,{g(\x)});
+  \node[figR, right] at (3.6,{f(3.6)}) {$f$};
+  \node[figB, below] at (3.7,{g(3.7)-0.03}) {$g$};
+  \node[figR, left] at (2.6,{1.8*1.6+0.05}) {$y=m_1(x-a)$};
+  \node[figB, right] at (3.9,{0.8*2.9}) {$y=m_2(x-a)$};
+  \fill (1,0) circle (1.6pt);
+  \draw[thin, black!70] (1,0.06) -- (1,-0.06) node[below right] {$a$};
+\end{tikzpicture}

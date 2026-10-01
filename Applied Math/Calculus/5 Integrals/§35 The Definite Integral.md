@@ -69,8 +69,6 @@ When writing $\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*)\,\Delta x = \int_a^b f
 > $$
 >
 > where $A_1$ is the area of the region above the $x$-axis and below the graph of $f$, and $A_2$ the area of the region below the $x$-axis and above the graph of $f$.
->
-> *Stewart: 5.2 (text)*
 
 ^rem-35-1
 
@@ -80,8 +78,6 @@ When writing $\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*)\,\Delta x = \int_a^b f
 > $$
 > \int_a^b f(x)\,dx = \lim_{\max \Delta x_i \to 0} \sum_{i=1}^{n} f(x_i^*)\,\Delta x_i .
 > $$
->
-> *Stewart: 5.2, Note 4*
 
 ^rem-35-2
 

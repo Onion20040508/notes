@@ -1,0 +1,32 @@
+% Figure for Calculus §82.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth]
+  % (a) acute angle
+  \begin{scope}
+    \coordinate (P) at (0,0); \coordinate (Q) at (4.2,0.84); \coordinate (R) at (1.6,2.4);
+    % foot S of perpendicular from R to line PQ: a=(5,1)/sqrt26 direction
+    \coordinate (S) at ($(P)!(R)!(Q)$);
+    \draw[black!30, thin] ($(P)!-0.15!(Q)$) -- ($(P)!1.12!(Q)$);
+    \draw[->, figG, thick] (P) -- (Q) node[above] {$\mathbf{a}$};
+    \draw[->, figB, thick] (P) -- (R) node[midway, above left] {$\mathbf{b}$};
+    \draw[black!50, dashed] (R) -- (S);
+    \draw[->, figR, very thick] (P) -- (S);
+    \node[figR, below, yshift=-2pt] at ($(P)!0.5!(S)$) {$\operatorname{proj}_{\mathbf{a}}\mathbf{b}$};
+    \draw[black!70] ($(P)!0.55cm!(Q)$) arc[start angle=11.3, end angle=56.3, radius=0.55cm];
+    \node at (0.75,0.45) {$\theta$};
+    \node[left] at (P) {$P$}; \node[above] at (R) {$R$}; \node[below right] at (S) {$S$};
+    \node[font=\small] at (2.1,-1.1) {(a) $0 \le \theta < \pi/2$: $\operatorname{comp}_{\mathbf{a}}\mathbf{b} = |\mathbf{b}|\cos\theta > 0$};
+  \end{scope}
+  % (b) obtuse angle
+  \begin{scope}[xshift=7.4cm]
+    \coordinate (P) at (0,0); \coordinate (Q) at (3.0,0.6); \coordinate (R) at (-1.7,2.2);
+    \coordinate (S) at ($(P)!(R)!(Q)$);
+    \draw[black!30, thin] ($(P)!-0.8!(Q)$) -- ($(P)!1.15!(Q)$);
+    \draw[->, figG, thick] (P) -- (Q) node[above] {$\mathbf{a}$};
+    \draw[->, figB, thick] (P) -- (R) node[midway, above right] {$\mathbf{b}$};
+    \draw[black!50, dashed] (R) -- (S);
+    \draw[->, figR, very thick] (P) -- (S);
+    \node[figR, below, yshift=-2pt] at ($(P)!0.5!(S)$) {$\operatorname{proj}_{\mathbf{a}}\mathbf{b}$};
+    \node[below right] at (P) {$P$}; \node[above] at (R) {$R$}; \node[below left] at (S) {$S$};
+    \node[font=\small] at (0.6,-1.1) {(b) $\pi/2 < \theta \le \pi$: $\operatorname{comp}_{\mathbf{a}}\mathbf{b} < 0$};
+  \end{scope}
+\end{tikzpicture}

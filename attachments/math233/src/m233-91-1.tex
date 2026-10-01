@@ -1,0 +1,22 @@
+% Figure for Calculus §91.
+\begin{tikzpicture}[x=1.25cm, y=1.25cm, font=\scriptsize]
+  \begin{scope}
+    \clip (-2.3,-1.65) rectangle (2.3,1.65);
+    % lines through the origin
+    \foreach \m in {0.6,-0.6,2,-2} \draw[black!45, dashed, thin] (-2.3,{-2.3*\m}) -- (2.3,{2.3*\m});
+    % parabolas x = lambda y^2
+    \foreach \l in {3,0.3333} {
+      \draw[figG!70!black, thin] plot[domain=-1.65:1.65, samples=80] ({\l*\x*\x},\x);
+      \draw[figR!80, thin] plot[domain=-1.65:1.65, samples=80] ({-\l*\x*\x},\x);
+    }
+    \draw[figG, very thick] plot[domain=-1.65:1.65, samples=80] ({\x*\x},\x);
+    \draw[figR, very thick] plot[domain=-1.65:1.65, samples=80] ({-\x*\x},\x);
+  \end{scope}
+  \draw[-stealth, thin, black!70] (-2.4,0) -- (2.5,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-1.75) -- (0,1.85) node[above] {$y$};
+  \node[figG, anchor=west] at (2.32,1.52) {$f=\tfrac12$ on $x=y^2$};
+  \node[figR, anchor=east] at (-2.32,1.52) {$f=-\tfrac12$ on $x=-y^2$};
+  \node[figG!70!black, anchor=west] at (0.98,1.68) {$x=\tfrac13y^2$};
+  \node[figG!70!black, anchor=west] at (1.75,0.42) {$x=3y^2$};
+  \fill[white, draw=black] (0,0) circle (1.4pt);
+\end{tikzpicture}

@@ -1,0 +1,30 @@
+% Figure for Calculus §100.
+\begin{tikzpicture}[scale=1.15, font=\scriptsize]
+  \def\ra{1.2} \def\rb{3.4} \def\al{20} \def\be{75}
+  \draw[-stealth, thin, black!70] (-0.3,0) -- (4.0,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.3) -- (0,3.8) node[above] {$y$};
+  % polar rectangle
+  \fill[figG!12] (\al:\ra) arc (\al:\be:\ra) -- (\be:\rb) arc (\be:\al:\rb) -- cycle;
+  % highlighted subrectangle
+  \def\ri{2.3} \def\rj{2.85} \def\ti{42} \def\tj{53}
+  \fill[figR!30] (\ti:\ri) arc (\ti:\tj:\ri) -- (\tj:\rj) arc (\tj:\ti:\rj) -- cycle;
+  % grid
+  \foreach \r in {1.2,1.75,2.3,2.85,3.4} \draw[figG!70!black, thin] (\al:\r) arc (\al:\be:\r);
+  \foreach \t in {20,31,42,53,64,75} \draw[figG!70!black, thin] (\t:\ra) -- (\t:\rb);
+  \draw[figR, thick] (\ti:\ri) arc (\ti:\tj:\ri) -- (\tj:\rj) arc (\tj:\ti:\rj) -- cycle;
+  \fill[figR] (47.5:2.575) circle (1.2pt);
+  \draw[figR, thin] (47.5:2.575) -- (3.3,2.75) node[right] {$(r_i^*,\theta_j^*)$};
+  % rays to origin (dashed) and angle labels
+  \draw[black!35, dashed] (0,0) -- (\al:\ra) (0,0) -- (\be:\ra) (0,0) -- (\ti:\ri) (0,0) -- (\tj:\ri);
+  \draw[black!60] (\al:0.5) arc (\al:\be:0.5); \node[left] at (80:0.62) {$\beta-\alpha$};
+  \draw[figR!80!black] (\ti:1.6) arc (\ti:\tj:1.6); \node[figR!80!black, left] at (47.5:1.55) {$\Delta\theta$};
+  % labels for sides
+  \draw[figB, thick, |-|] ($(\tj:\ri)+(143:0.18)$) -- ($(\tj:\rj)+(143:0.18)$) node[midway, above left] {$\Delta r$};
+  \draw[figB, thick] (\ti:\rj) arc (\ti:\tj:\rj);
+  \draw[figB, thin] (45:2.85) -- (3.6,2.25) node[right] {$r_i^*\Delta\theta$};
+  \node[figG!60!black, right] at (\al:\rb) {$\theta=\alpha$};
+  \node[figG!60!black, above] at (\be:\rb) {$\theta=\beta$};
+  \node[figG!60!black, below right] at (\al:\ra) {$r=a$};
+  \node[figG!60!black, right] at (28:\rb) {$r=b$};
+  \node[below left] at (0,0) {$O$};
+\end{tikzpicture}

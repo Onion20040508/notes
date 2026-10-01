@@ -1,0 +1,25 @@
+% Figure for Calculus §66.
+\begin{tikzpicture}[x=1.7cm, y=1.7cm, font=\scriptsize,
+    declare function={f(\t)=2.2+0.45*sin(deg(4*\t));}]
+  \def\A{0.25} \def\B{1.45} \def\ta{0.82} \def\tb{1.0}
+  \def\m{1.8594} \def\M{2.1379}
+  % region
+  \fill[figB!8] (0,0) -- plot[domain=\A:\B, samples=100, variable=\t] ({f(\t)*cos(deg(\t))},{f(\t)*sin(deg(\t))}) -- cycle;
+  % thin piece
+  \fill[figB!35] (0,0) -- plot[domain=\ta:\tb, samples=40, variable=\t] ({f(\t)*cos(deg(\t))},{f(\t)*sin(deg(\t))}) -- cycle;
+  % inner and outer sectors
+  \draw[figG, thick] (0,0) -- ({\m*cos(deg(\ta))},{\m*sin(deg(\ta))}) arc[start angle={deg(\ta)}, end angle={deg(\tb)}, radius=\m] -- cycle;
+  \draw[figR, thick, dashed] ({\m*cos(deg(\ta))},{\m*sin(deg(\ta))}) -- ({\M*cos(deg(\ta))},{\M*sin(deg(\ta))}) arc[start angle={deg(\ta)}, end angle={deg(\tb)}, radius=\M] -- ({\m*cos(deg(\tb))},{\m*sin(deg(\tb))});
+  % boundary curve and rays
+  \draw[figB, thick] plot[domain=\A:\B, samples=100, variable=\t] ({f(\t)*cos(deg(\t))},{f(\t)*sin(deg(\t))});
+  \draw[black!70] (0,0) -- ({f(\A)*cos(deg(\A))},{f(\A)*sin(deg(\A))});
+  \draw[black!70] (0,0) -- ({f(\B)*cos(deg(\B))},{f(\B)*sin(deg(\B))});
+  \node[right] at ({f(\A)*cos(deg(\A))},{f(\A)*sin(deg(\A))}) {$\theta = a$};
+  \node[left] at ({f(\B)*cos(deg(\B))},{f(\B)*sin(deg(\B))}) {$\theta = b$};
+  \node[figB, right] at ({f(0.5)*cos(deg(0.5))+0.05},{f(0.5)*sin(deg(0.5))}) {$r = f(\theta)$};
+  \node[right=10pt] at ({\M*cos(deg(\ta))},{\M*sin(deg(\ta))}) {$\theta = \theta_{i-1}$};
+  \node[above left=4pt] at ({\M*cos(deg(\tb))},{\M*sin(deg(\tb))}) {$\theta = \theta_i$};
+  \node[figG] at ({1.3*cos(deg(0.91))+0.35},{1.3*sin(deg(0.91))-0.1}) {$m_i$};
+  \node[figR] at ({2.42*cos(deg(0.93))},{2.42*sin(deg(0.93))}) {$M_i$};
+  \fill (0,0) circle (1.3pt) node[below left] {$O$};
+\end{tikzpicture}

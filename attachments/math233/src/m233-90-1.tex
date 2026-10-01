@@ -1,0 +1,22 @@
+% Figure for Calculus §90.
+\begin{tikzpicture}[x=0.95cm, y=0.62cm, font=\scriptsize]
+  \begin{scope}
+    \clip (-2.2,-4.6) rectangle (3.6,4.6);
+    \foreach \k in {1,2,3} {
+      \draw[figB, thick] plot[domain=-2.2:3.6, samples=80] (\x,{\k*exp(-\x)});
+      \draw[figR, thick] plot[domain=-2.2:3.6, samples=80] (\x,{-\k*exp(-\x)});
+    }
+  \end{scope}
+  \draw[-stealth, thin, black!70] (-2.3,0) -- (3.9,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-4.7) -- (0,4.9) node[above] {$y$};
+  \draw[black, thick] (-2.2,0) -- (3.6,0);
+  \node[above, black] at (-1.7,0) {$k=0$};
+  % labels at x = 0 (y = k) on the left of the axis
+  \foreach \k in {1,2,3} {
+    \fill[figB] (0,\k) circle (1.3pt);
+    \node[figB, above right, yshift=1pt] at (0,\k) {$k=\k$};
+    \fill[figR] (0,-\k) circle (1.3pt);
+    \node[figR, below right, yshift=-3pt] at (0,-\k) {$k=-\k$};
+  }
+  \foreach \t in {-2,-1,1,2,3} \draw[thin, black!70] (\t,0.08) -- (\t,-0.08) node[below, fill=white, inner sep=1pt, yshift=-1pt] {$\t$};
+\end{tikzpicture}

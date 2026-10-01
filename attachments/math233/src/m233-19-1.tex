@@ -1,0 +1,24 @@
+% Figure for Calculus §19.
+\begin{tikzpicture}[x=0.95cm, y=0.95cm, font=\scriptsize]
+  \draw[-stealth, thin, black!70] (-1.6,0) -- (4.4,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-1.6) -- (0,4.4) node[above] {$y$};
+  \foreach \t in {1,2,3} {\draw[thin, black!70] (\t,0.07) -- (\t,-0.07) node[below] {$\t$};
+    \draw[thin, black!70] (0.07,\t) -- (-0.07,\t) node[left] {$\t$};}
+  \draw[black!40, dashed] (-1.5,-1.5) -- (4.2,4.2) node[above right] {$y=x$};
+  \begin{scope}
+    \clip (-1.6,-1.6) rectangle (4.3,4.3);
+    \draw[figB, thick] plot[domain=-1.6:1.45, samples=80] (\x,{exp(\x)});
+    \draw[figG, thick] plot[domain=0.2:4.3, samples=80] (\x,{ln(\x)});
+    \draw[figB, thin] (0.45,{exp(1)-0.55*exp(1)}) -- (1.55,{exp(1)+0.55*exp(1)});
+    \draw[figG, thin] ({exp(1)-0.55*exp(1)},0.45) -- ({exp(1)+0.55*exp(1)},1.55);
+  \end{scope}
+  \fill[figB] (1,{exp(1)}) circle (1.8pt);
+  \fill[figG] ({exp(1)},1) circle (1.8pt);
+  \draw[black!35, dotted] (1,{exp(1)}) -- ({exp(1)},1);
+  \node[figB, left] at (1,{exp(1)}) {$(1,e)$};
+  \node[figG, below right] at ({exp(1)},1) {$(e,1)$};
+  \node[figB] at (-0.9,0.9) {$y=e^x$};
+  \node[figG] at (3.9,1.75) {$y=\ln x$};
+  \node[figB, right] at (1.45,3.7) {slope $e$};
+  \node[figG, right] at (3.6,0.95) {slope $1/e$};
+\end{tikzpicture}

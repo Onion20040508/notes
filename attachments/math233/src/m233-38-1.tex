@@ -1,0 +1,31 @@
+% Figure for Calculus §38.
+\begin{tikzpicture}[x=0.9cm, y=0.9cm, font=\scriptsize,
+    declare function={fe(\x)=1.1+0.35*cos(deg(2.4*\x))+0.12*\x*\x; fo(\x)=0.9*sin(deg(1.25*\x));}]
+  \def\a{2.5}
+  % (a) even
+  \begin{scope}
+    \fill[figB!12] (-\a,0) -- plot[domain=-\a:0, samples=60] (\x,{fe(\x)}) -- (0,0) -- cycle;
+    \fill[figB!30] (0,0) -- plot[domain=0:\a, samples=60] (\x,{fe(\x)}) -- (\a,0) -- cycle;
+    \draw[figB, thick] plot[domain=-\a-0.2:\a+0.2, samples=120] (\x,{fe(\x)});
+    \draw[-stealth, thin, black!70] (-3.1,0) -- (3.2,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-0.2) -- (0,2.6) node[above] {$y$};
+    \foreach \p/\l in {-\a/-a, \a/a} \draw[thin, black!70] (\p,0.05) -- (\p,-0.05) node[below] {$\l$};
+    \node[below left] at (0,0) {$0$};
+    \node[figB] at (1.25,0.55) {$\int_0^a f$};
+    \node[figB!80] at (-1.25,0.55) {$\int_0^a f$};
+    \node[align=center] at (0,-0.85) {(a) $f$ even: $\int_{-a}^{a} f\,dx = 2\int_0^a f\,dx$};
+  \end{scope}
+  % (b) odd
+  \begin{scope}[xshift=7.2cm, yshift=0.9cm]
+    \fill[figO!25] (-\a,0) -- plot[domain=-\a:0, samples=60] (\x,{fo(\x)}) -- (0,0) -- cycle;
+    \fill[figB!25] (0,0) -- plot[domain=0:\a, samples=60] (\x,{fo(\x)}) -- (\a,0) -- cycle;
+    \draw[figB, thick] plot[domain=-\a-0.2:\a+0.2, samples=120] (\x,{fo(\x)});
+    \draw[-stealth, thin, black!70] (-3.1,0) -- (3.2,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-1.3) -- (0,1.5) node[above] {$y$};
+    \draw[thin, black!70] (-\a,0.05) -- (-\a,-0.05); \node[above left=-1pt] at (-\a-0.1,0.05) {$-a$};
+    \draw[thin, black!70] (\a,0.05) -- (\a,-0.05) node[below] {$a$};
+    \node[figB] at (1.3,0.35) {$+$};
+    \node[figO!80!black] at (-1.3,-0.35) {$-$};
+    \node[align=center] at (0,-1.75) {(b) $f$ odd: $\int_{-a}^{a} f\,dx = 0$};
+  \end{scope}
+\end{tikzpicture}

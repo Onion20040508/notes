@@ -1,0 +1,23 @@
+% Figure for Calculus §27.
+\begin{tikzpicture}[x=1.15cm, y=0.13cm, font=\scriptsize,
+    declare function={f(\x)=\x*\x*\x*\x-4*\x*\x*\x;}]
+  % concave-up regions
+  \fill[figG!9] (-1.35,-31) rectangle (0,14);
+  \fill[figG!9] (2,-31) rectangle (4.2,14);
+  \node[figG!80!black] at (-0.68,12) {CU};
+  \node[black!50] at (1,12) {CD};
+  \node[figG!80!black] at (2.3,12) {CU};
+  \draw[-stealth, thin, black!70] (-1.4,0) -- (4.5,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-30) -- (0,15) node[above] {$y$};
+  \foreach \t in {1,2,3} \draw[thin, black!70] (\t,0.5) -- (\t,-0.5) node[below] {$\t$}; \draw[thin, black!70] (4,0.5) -- (4,-0.5); \node[above left] at (4,0.3) {$4$};
+  \foreach \t in {-10,-20} \draw[thin, black!70] (0.06,\t) -- (-0.06,\t) node[left] {$\t$};
+  \draw[black!45, thin] (-0.8,0) -- (0.8,0);
+  \draw[figB, thick] plot[domain=-1.25:4.17, samples=150] (\x,{f(\x)});
+  \fill[figR] (0,0) circle (2pt);
+  \node[figR, above right] at (0,0.6) {$(0,0)$};
+  \fill[figR] (2,-16) circle (2pt);
+  \node[figR, right] at (2.07,-15) {$(2,-16)$};
+  \fill[figB] (3,-27) circle (2pt);
+  \node[figB, right] at (3.1,-28) {$(3,-27)$ local min};
+  \node[figB, left] at (3.95,9) {$y=x^4-4x^3$};
+\end{tikzpicture}

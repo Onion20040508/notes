@@ -1,0 +1,29 @@
+% Figure for Calculus §71.
+\begin{tikzpicture}[x=0.85cm, y=0.95cm, font=\scriptsize, declare function={f(\x)=3/(\x);}]
+  % left panel: rectangles below the curve (right endpoints)
+  \begin{scope}
+    \foreach \i in {2,...,6} {
+      \filldraw[fill=figB!15, draw=figB!70!black, thin] ({\i-1},0) rectangle (\i,{f(\i)});
+      \node at ({\i-0.5},{f(\i)/2}) {$a_{\i}$};
+    }
+    \draw[-stealth, thin, black!70] (-0.2,0) -- (7,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-0.2) -- (0,4.2) node[above] {$y$};
+    \draw[figR, thick] plot[domain=0.75:6.8, samples=80] (\x,{f(\x)});
+    \node[figR, right] at (0.95,3.6) {$y=f(x)$};
+    \foreach \i in {1,...,6} \draw[thin] (\i,0.06) -- (\i,-0.06) node[below] {$\i$};
+    \node[below] at (3.5,-0.5) {$a_2 + \cdots + a_n \le \int_1^n f(x)\,dx$};
+  \end{scope}
+  % right panel: rectangles above the curve (left endpoints)
+  \begin{scope}[xshift=8.6cm]
+    \foreach \i in {1,...,5} {
+      \filldraw[fill=figG!15, draw=figG!70!black, thin] (\i,0) rectangle ({\i+1},{f(\i)});
+      \node at ({\i+0.5},{min(f(\i)/2,1.1)}) {$a_{\i}$};
+    }
+    \draw[-stealth, thin, black!70] (-0.2,0) -- (7,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-0.2) -- (0,4.2) node[above] {$y$};
+    \draw[figR, thick] plot[domain=0.75:6.8, samples=80] (\x,{f(\x)});
+    \node[figR, right] at (2.1,2.6) {$y=f(x)$};
+    \foreach \i in {1,...,6} \draw[thin] (\i,0.06) -- (\i,-0.06) node[below] {$\i$};
+    \node[below] at (3.5,-0.5) {$\int_1^n f(x)\,dx \le a_1 + \cdots + a_{n-1}$};
+  \end{scope}
+\end{tikzpicture}

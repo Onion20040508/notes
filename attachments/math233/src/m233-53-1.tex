@@ -14,7 +14,7 @@
   \fill (0,\A) circle (1.2pt);
   % axis and radii
   \draw[black!45, dashed] (0,-0.2) -- (0,\A);
-  \draw[figR, thick] (0,\H) -- (\Ra,\H) node[midway, above=-1pt] {$r_1$};
+  \draw[figR, thick] (0,\H) -- (\Ra,\H); \node[figR] at (0.6,\H+0.42) {$r_1$};
   \draw[figR, thick] (0,0) -- (\Rb,0) node[midway, below] {$r_2$};
   \draw[black!60, thin] (0.14,\H) -- (0.14,\H+0.14) -- (0,\H+0.14);
   \draw[black!60, thin] (0.16,0) -- (0.16,0.16) -- (0,0.16);
@@ -23,5 +23,5 @@
   \draw[decorate, decoration={brace, amplitude=4pt}, thin] ({\Ra+0.868*0.22},{\H+0.496*0.22}) -- ({\Rb+0.868*0.22},{0+0.496*0.22}) node[midway, above right=1pt] {$l$};
   % the similar triangles
   \node[align=left, anchor=west] at (-4.6,3.5) {similar right triangles\\(apex, axis, rim):\\[3pt] $\dfrac{l_1}{r_1} = \dfrac{l_1 + l}{r_2}$};
-  \node[figB, anchor=west, align=left] at (-4.6,1.2) {band area\\$= \pi r_2(l_1+l) - \pi r_1 l_1$\\$= 2\pi\,\tfrac{r_1+r_2}{2}\,l$};
+  \node[figB, anchor=west, align=left] at (-4.6,1.2) {band area\\$= \pi r_2(l_1+l) - \pi r_1 l_1$\\$= 2\pi \cdot \tfrac12 (r_1+r_2)\, l$};
 \end{tikzpicture}

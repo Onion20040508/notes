@@ -1,0 +1,26 @@
+% Figure for Relativity §B2.1 (threshold of p + p -> p + p + p + pbar on a fixed target, in momentum space, units m_p c: lab total four-momentum P = p_a + p_b with p_b = (1, 0) traces P^0 = 1 + sqrt(1 + p^2); products need P.P >= 16, the region above the hyperbola P^0 = sqrt(16 + p^2); they meet at p = sqrt(48) = 6.93, P^0 = 8, i.e. E_a = 7 m_p c^2; the CM frame point (0, 4) lies on the same hyperbola; computed).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \begin{axis}[nfig, width=8.6cm, height=7.4cm, xmin=0, xmax=9.4, ymin=0, ymax=10.6,
+      xlabel={$P^1$ $(m_pc)$}, ylabel={$P^0$ $(m_pc)$},
+      xtick={0,2,4,6,8}, ytick={0,2,4,6,8,10},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      clip mode=individual]
+    % allowed region P.P >= 16 (above the hyperbola)
+    \addplot[fill=figR!8, draw=none, domain=0:9.4, samples=60, forget plot] {sqrt(16+x^2)} -- (axis cs:9.4,10.6) -- (axis cs:0,10.6) -- cycle;
+    \addplot[figR, thick, domain=0:9.4, samples=80, forget plot] {sqrt(16+x^2)};
+    % light cone and the incoming proton's mass shell
+    \addplot[black!45, densely dotted, domain=0:9.4, forget plot] {x};
+    \addplot[black!45, dashed, thin, domain=0:9.4, samples=60, forget plot] {sqrt(1+x^2)};
+    % lab total four-momentum as the beam energy grows
+    \addplot[figB, very thick, domain=0:9.4, samples=80, forget plot] {1+sqrt(1+x^2)};
+    % threshold point and CM point
+    \addplot[only marks, mark=*, mark size=1.8pt, black, forget plot] coordinates {(6.928,8) (0,4)};
+    \node[black, font=\scriptsize, anchor=south east] at (axis cs:6.85,8.15) {threshold: $E_a = 7m_pc^2$};
+    \node[black, font=\scriptsize, anchor=west] at (axis cs:0.15,3.55) {CM frame};
+    \node[figR, font=\scriptsize, anchor=south west, rotate=8] at (axis cs:0.5,5.35) {$P\cdot P = (4m_pc)^2$};
+    \draw[figB, thin] (axis cs:2.0,3.24) -- (axis cs:3.2,1.3) node[anchor=west, font=\scriptsize] {lab: $P = p_a + p_b$};
+    \node[figR, font=\scriptsize, anchor=west, align=left] at (axis cs:0.25,9.9) {reaction allowed};
+    \node[black!55, font=\scriptsize, anchor=west] at (axis cs:7.6,6.6) {light cone};
+    \node[black!55, font=\scriptsize, anchor=west] at (axis cs:4.6,3.7) {mass shell of $p_a$};
+  \end{axis}
+\end{tikzpicture}

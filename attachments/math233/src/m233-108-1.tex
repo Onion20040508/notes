@@ -1,0 +1,15 @@
+% Figure for Calculus §108.
+\begin{tikzpicture}[x=0.62cm, y=0.62cm, font=\scriptsize,
+    mid arrow/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
+  \draw[-stealth, thin, black!70] (-6,0) -- (5.6,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-3.8) -- (0,3.2) node[above] {$y$};
+  \foreach \t in {-5,4} \draw[black!60] (\t,0.1) -- (\t,-0.1) node[below] {$\t$};
+  \draw[figR, thick, mid arrow=0.35, mid arrow=0.8] plot[domain=-3:2, samples=80] ({4-\x*\x},\x);
+  \draw[figB, thick, mid arrow=0.55] (-5,-3) -- (0,2);
+  \fill (-5,-3) circle (1.8pt) node[below left] {$(-5,-3)$};
+  \fill (0,2) circle (1.8pt) node[above left] {$(0,2)$};
+  \node[figB, above left] at (-2.6,-0.6) {$C_1$};
+  \node[figR, right] at (3.2,1.4) {$C_2:\ x = 4 - y^2$};
+  \node[figB, align=left, right] at (-6.4,1.3) {$\displaystyle\int_{C_1} y^2\,dx + x\,dy = -\tfrac56$};
+  \node[figR, align=left, right] at (1.2,-3.0) {$\displaystyle\int_{C_2} y^2\,dx + x\,dy = \tfrac{245}{6}$};
+\end{tikzpicture}

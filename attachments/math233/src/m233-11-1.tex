@@ -1,0 +1,18 @@
+% Figure for Calculus §11.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=11cm, height=6cm, xmin=0, xmax=20.5, ymin=-0.45, ymax=0.95,
+  xlabel={$x$}, ylabel={$y$}, xtick={0,5,10,15,20}, ytick={0,0.5,0.6,0.7},
+  yticklabels={$0$,$0.5$,$0.6$,$0.7$}, clip=true]
+  \fill[figG, opacity=0.15] (axis cs:6.742,0.5) rectangle (axis cs:20.5,0.7);
+  \addplot[black!45, dashed, thin, domain=0:20.5] {0.7};
+  \addplot[black!45, dashed, thin, domain=0:20.5] {0.5};
+  \addplot[figR, thin, domain=0:20.5] {0.6};
+  \addplot[figB, samples=300, domain=0.5:20.5] {(3*x^2-x-2)/(5*x^2+4*x+1)};
+  \draw[figG, thick] (axis cs:6.742,-0.45) -- (axis cs:6.742,0.9);
+  \node[figG, anchor=south west, font=\scriptsize] at (axis cs:6.85,-0.42) {$N=3+\sqrt{14}\approx 6.74$};
+  \node[figR, anchor=south west, font=\scriptsize] at (axis cs:0.2,0.6) {$L=0.6$};
+  \node[black!60, anchor=south, font=\scriptsize] at (axis cs:17,0.7) {$y=L+\varepsilon$};
+  \node[black!60, anchor=north, font=\scriptsize] at (axis cs:17,0.5) {$y=L-\varepsilon$};
+  \node[figB, anchor=west, font=\scriptsize] at (axis cs:9,0.2) {$y=\dfrac{3x^2-x-2}{5x^2+4x+1}$};
+\end{axis}
+\end{tikzpicture}

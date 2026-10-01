@@ -1,0 +1,18 @@
+% Figure for Calculus §76.
+\begin{tikzpicture}[x=1cm, y=1cm, font=\scriptsize]
+  \draw[-stealth, thin, black!70] (-4.8,0) -- (4.8,0) node[right] {$x$};
+  \draw[figB, line width=2.2pt] (-2,0) -- (2,0);
+  \draw[figR, line width=1.2pt, dashed] (-4.6,0) -- (-2,0);
+  \draw[figR, line width=1.2pt, dashed] (2,0) -- (4.6,0);
+  \fill[figB] (0,0) circle (2pt) node[below=3pt, black] {$a$};
+  \foreach \x/\l in {-2/{a-R}, 2/{a+R}} {
+    \filldraw[fill=white, draw=figO, thick] (\x,0) circle (2.6pt);
+    \node[below=4pt] at (\x,0) {$\l$};
+    \node[figO, above=4pt] at (\x,0) {?};
+  }
+  \draw[decorate, decoration={brace, amplitude=5pt}, figB] (-1.9,0.45) -- node[above=5pt] {converges absolutely: $|x-a|<R$} (1.9,0.45);
+  \node[figR, above=3pt] at (-3.4,0) {diverges};
+  \node[figR, above=3pt] at (3.4,0) {diverges};
+  \node[figR, below=4pt] at (-3.4,0) {$|x-a|>R$};
+  \node[figR, below=4pt] at (3.4,0) {$|x-a|>R$};
+\end{tikzpicture}

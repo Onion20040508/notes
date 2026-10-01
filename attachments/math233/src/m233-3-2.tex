@@ -1,0 +1,18 @@
+% Figure for Calculus §3.
+\begin{tikzpicture}[x=1.3cm, y=1.0cm, font=\scriptsize]
+  \draw[-stealth, thin, black!70] (-2.3,0) -- (2.4,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-1.5) -- (0,2.9) node[above] {$y$};
+  \foreach \t in {-1,1} \draw[thin, black!70] (\t,0.06) -- (\t,-0.06);
+  \node[below left] at (-1,0) {$-1$}; \node[below right] at (1,0) {$1$};
+  \draw[black!45, dashed, thick] plot[domain=-1:1, samples=60, smooth] (\x,{\x*\x-1});
+  \draw[figB, thick] plot[domain=-1.9:-1, samples=40, smooth] (\x,{\x*\x-1});
+  \draw[figB, thick] plot[domain=1:1.9, samples=40, smooth] (\x,{\x*\x-1});
+  \draw[figR, thick] plot[domain=-1:1, samples=60, smooth] (\x,{1-\x*\x});
+  \foreach \u in {-0.6,0.6} \draw[figR, -stealth] (\u,{\u*\u-1+0.08}) -- (\u,{1-\u*\u-0.08});
+  \draw[black!55, thick, fill=white] (0,-1) circle (2pt);
+  \fill[figR] (0,1) circle (2pt);
+  \node[black!60, right] at (0.05,-1.12) {$(0,-1)$};
+  \node[figR, above right] at (0.02,1) {$(0,1)$};
+  \node[figB, right] at (1.9,2.61) {$y=|x^2-1|$};
+  \node[black!60, right] at (0.75,-0.75) {$y=x^2-1$};
+\end{tikzpicture}

@@ -1,0 +1,43 @@
+% Figure for Calculus §65.
+\begin{tikzpicture}[font=\scriptsize,
+    num/.style={circle, draw, inner sep=0.6pt, font=\tiny}]
+  % ---- left panel: r = cos 2theta in Cartesian coordinates
+  \begin{scope}[x=0.62cm, y=1.1cm]
+    \draw[-stealth, thin, black!70] (0,0) -- (6.9,0) node[right] {$\theta$};
+    \draw[-stealth, thin, black!70] (0,-1.3) -- (0,1.4) node[above] {$r$};
+    \foreach \k in {1,...,8} {
+      \pgfmathsetmacro{\a}{(\k-1)*pi/4} \pgfmathsetmacro{\b}{\k*pi/4}
+      \pgfmathsetmacro{\neg}{(\k==2 || \k==3 || \k==6 || \k==7) ? 1 : 0}
+      \ifnum\neg=1 \def\col{figB}\else\def\col{figR}\fi
+      \draw[\col, thick] plot[domain=\a:\b, samples=30] (\x,{cos(deg(2*\x))});
+      \pgfmathsetmacro{\m}{(\k-0.5)*pi/4}
+      \pgfmathsetmacro{\yy}{\neg==1 ? 0.35 : -0.35}
+      \node[num, \col] at (\m,\yy) {\k};
+    }
+    \draw[thin] (-0.08,1) -- (0.08,1) node[left=3pt] {$1$};
+    \draw[thin] (-0.08,-1) -- (0.08,-1) node[left=3pt] {$-1$};
+    \foreach \t/\l in {1/{\frac{\pi}{2}}, 2/{\pi}, 3/{\frac{3\pi}{2}}, 4/{2\pi}}
+      \draw[thin] ({\t*pi/2},0.06) -- ({\t*pi/2},-0.06) node[below, fill=white, inner sep=1pt] {$\l$};
+  \end{scope}
+  % ---- right panel: the polar curve
+  \begin{scope}[shift={(7.4,0)}, x=1.45cm, y=1.45cm]
+    \draw[-stealth, thin, black!70] (-1.2,0) -- (1.3,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-1.2) -- (0,1.3) node[above] {$y$};
+    \draw[black!35, dashed] (-1.05,-1.05) -- (1.05,1.05);
+    \draw[black!35, dashed] (-1.05,1.05) -- (1.05,-1.05);
+    \foreach \k in {1,...,8} {
+      \pgfmathsetmacro{\a}{(\k-1)*pi/4} \pgfmathsetmacro{\b}{\k*pi/4}
+      \pgfmathsetmacro{\neg}{(\k==2 || \k==3 || \k==6 || \k==7) ? 1 : 0}
+      \ifnum\neg=1 \def\col{figB}\else\def\col{figR}\fi
+      \draw[\col, thick] plot[domain=\a:\b, samples=40] ({cos(deg(2*\x))*cos(deg(\x))},{cos(deg(2*\x))*sin(deg(\x))});
+      \pgfmathsetmacro{\m}{(\k-0.5)*pi/4}
+      \pgfmathsetmacro{\rr}{cos(deg(2*\m))}
+      \pgfmathsetmacro{\px}{\rr*cos(deg(\m))} \pgfmathsetmacro{\py}{\rr*sin(deg(\m))}
+      \pgfmathsetmacro{\ox}{\neg==1 ? \px + 0.2*sign(\px) : \px}
+      \pgfmathsetmacro{\oy}{\neg==1 ? \py : \py + 0.2*sign(\py)}
+      \node[num, \col] at (\ox,\oy) {\k};
+    }
+    \node[black!60] at (1.15,1.15) {$\theta = \frac{\pi}{4}$};
+    \node[black!60] at (-1.15,1.15) {$\theta = \frac{3\pi}{4}$};
+  \end{scope}
+\end{tikzpicture}

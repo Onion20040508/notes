@@ -1,0 +1,22 @@
+% Figure for Calculus §20.
+\begin{tikzpicture}[x=1.3cm, y=0.13cm, font=\scriptsize]
+  \fill[figO!12] (1,-13) rectangle (2,26);
+  \fill[figO!12] (3,-13) rectangle (5,26);
+  \node[figO!80!black] at (1.5,24) {speeds up};
+  \node[figO!80!black] at (4,24) {speeds up};
+  \node[black!60] at (0.5,24) {slows};
+  \node[black!60] at (2.5,24) {slows};
+  \draw[-stealth, thin, black!70] (0,0) -- (5.4,0) node[right] {$t$};
+  \draw[-stealth, thin, black!70] (0,-13) -- (0,27);
+  \foreach \t in {1,2,3,4,5} \draw[thin, black!70] (\t,0.5) -- (\t,-0.5) node[below] {$\t$};
+  \foreach \y in {-10,10,20} \draw[thin, black!70] (0.05,\y) -- (-0.05,\y) node[left] {$\y$};
+  \draw[figR, thick] plot[domain=0:5, samples=80] (\x,{\x*\x*\x-6*\x*\x+9*\x});
+  \draw[figB, thick] plot[domain=0:5, samples=80] (\x,{3*\x*\x-12*\x+9});
+  \draw[figG, thick] (0,-12) -- (5,18);
+  \node[figB, left] at (4.93,24) {$v$};
+  \node[figR, right] at (5,20.5) {$s$};
+  \node[figG, right] at (5,17) {$a$};
+  \node[figB, right] at (0.05,10) {$v$};
+  \node[figR, above] at (1,4.2) {$s$};
+  \node[figG, right] at (0.05,-11) {$a$};
+\end{tikzpicture}

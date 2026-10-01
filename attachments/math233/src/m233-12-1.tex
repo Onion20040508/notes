@@ -1,0 +1,22 @@
+% Figure for Calculus §12.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=8.5cm, height=7.5cm, xmin=0, xmax=2.4, ymin=0, ymax=4.8,
+  xlabel={$x$}, ylabel={$y$}, xtick={1,1.2,1.5,2}, xticklabels={$1$,$1.2$,$1.5$,$2$}, ytick={1,4}, clip=true]
+  \addplot[black, samples=100, domain=0:2.25] {x^2};
+  \addplot[figB, thin, domain=0.2:2.3] {3*x-2};
+  \addplot[figB, thin, domain=0.2:2.3] {2.5*x-1.5};
+  \addplot[figB, thin, domain=0.2:2.3] {2.2*x-1.2};
+  \addplot[figR, thick, domain=0.2:2.3] {2*x-1};
+  \draw[black!35, dashed, thin] (axis cs:1,0) -- (axis cs:1,1);
+  \draw[black!35, dashed, thin] (axis cs:2,0) -- (axis cs:2,4);
+  \draw[black!35, dashed, thin] (axis cs:1.5,0) -- (axis cs:1.5,2.25);
+  \draw[black!35, dashed, thin] (axis cs:1.2,0) -- (axis cs:1.2,1.44);
+  \fill (axis cs:1,1) circle (1.6pt) node[above left, font=\scriptsize] {$P(1,1)$};
+  \fill[figB] (axis cs:2,4) circle (1.6pt) node[left, font=\scriptsize] {$Q$};
+  \fill[figB] (axis cs:1.5,2.25) circle (1.6pt) node[left, font=\scriptsize] {$Q$};
+  \fill[figB] (axis cs:1.2,1.44) circle (1.6pt) node[above left, font=\scriptsize] {$Q$};
+  \node[figR, font=\scriptsize, anchor=north west] at (axis cs:1.56,1.75) {$y=2x-1$};
+  \node[font=\scriptsize] at (axis cs:0.45,3.6) {$y=x^2$};
+\end{axis}
+\end{tikzpicture}
+

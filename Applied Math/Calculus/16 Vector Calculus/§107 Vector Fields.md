@@ -78,7 +78,7 @@ To picture $\mathbf{F}$, draw the arrow representing $\mathbf{F}(x, y)$ starting
 ^ex-107-1
 
 ![[m233-107-1.svg]]
-*The rotation field $\mathbf{F} = -y\,\mathbf{i} + x\,\mathbf{j}$ (arrows drawn at half length). Every arrow is tangent to a circle about the origin (gray) and as long as that circle's radius, so the field circulates counterclockwise and grows linearly with distance. This field returns throughout the chapter: its line integral around a circle is not $0$ ([[§108 Line Integrals|§108]]), so it is not conservative, and its curl is $2\mathbf{k}$ ([[§111 Curl and Divergence|§111]]).*
+*The rotation field $\mathbf{F} = -y\,\mathbf{i} + x\,\mathbf{j}$ (arrows scaled down). Every arrow is tangent to a circle about the origin (gray) and as long as that circle's radius, so the field circulates counterclockwise and grows linearly with distance. This field returns throughout the chapter: it is not conservative, since $\partial P/\partial y = -1 \ne 1 = \partial Q/\partial x$ ([[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]), and its curl is $2\mathbf{k}$ ([[§111 Curl and Divergence#^ex-111-3|Example §111.3]]).*
 
 > [!example] Example §107.2: Force Fields from Inverse Square Laws
 > **Gravitation.** Newton's Law of Gravitation says that the magnitude of the gravitational force between two objects with masses $m$ and $M$ is $|\mathbf{F}| = mMG/r^2$, where $r$ is the distance between them and $G$ is the gravitational constant. Put the object of mass $M$ at the origin and let $\mathbf{x} = \langle x, y, z \rangle$ be the position vector of the object of mass $m$. Then $r = |\mathbf{x}|$, and the force on the second object points toward the origin, in the direction of the unit vector $-\mathbf{x}/|\mathbf{x}|$. So the **gravitational field** is
@@ -162,10 +162,10 @@ To picture $\mathbf{F}$, draw the arrow representing $\mathbf{F}(x, y)$ starting
 > [!remark]- Connections
 > - Same definition in 452 (with "irrotational" and "solenoidal" alongside): [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1|452 Def. §11.1]]. In the language of differential forms a conservative field is an exact 1-form: [[§22 The Algebra of Differential Forms#^def-22-8|452 Def. §22.8]], with the gradient as the differential [[§22 The Algebra of Differential Forms#^prop-22-6|452 Prop. §22.6]].
 
-Not every vector field is conservative (the rotation field of Example §107.1 is not; see [[§109 The Fundamental Theorem for Line Integrals#^ex-109-2|Example §109.2]] for the test), but conservative fields arise often in physics.
+Not every vector field is conservative (the rotation field of [[§107 Vector Fields#^ex-107-1|Example §107.1]] is not; the test is [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]), but conservative fields arise often in physics.
 
 > [!example] Example §107.4: A Potential for the Gravitational Field
-> The gravitational field of Example §107.2 is conservative. Define
+> The gravitational field of [[§107 Vector Fields#^ex-107-2|Example §107.2]] is conservative. Define
 >
 > $$
 > f(x, y, z) = \frac{mMG}{\sqrt{x^2 + y^2 + z^2}} = mMG\,(x^2 + y^2 + z^2)^{-1/2} .

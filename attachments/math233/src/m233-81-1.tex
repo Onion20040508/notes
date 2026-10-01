@@ -1,0 +1,29 @@
+% Figure for Calculus §81.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth, scale=1.0]
+  % (a) Triangle Law
+  \begin{scope}
+    \coordinate (O) at (0,0); \coordinate (U) at (2.6,0.7); \coordinate (S) at (3.2,2.3);
+    \draw[->, figB, thick] (O) -- (U) node[midway, below right] {$\mathbf{u}$};
+    \draw[->, figB, thick] (U) -- (S) node[midway, right] {$\mathbf{v}$};
+    \draw[->, figR, thick] (O) -- (S) node[midway, above left] {$\mathbf{u}+\mathbf{v}$};
+    \node[font=\small] at (1.6,-0.8) {(a) Triangle Law};
+  \end{scope}
+  % (b) Parallelogram Law
+  \begin{scope}[xshift=5.2cm]
+    \coordinate (O) at (0,0); \coordinate (U) at (2.6,0.7); \coordinate (V) at (0.6,1.6); \coordinate (S) at (3.2,2.3);
+    \draw[->, figB, thick] (O) -- (U) node[midway, below right] {$\mathbf{u}$};
+    \draw[->, figB, thick] (U) -- (S) node[midway, right] {$\mathbf{v}$};
+    \draw[->, figG, thick] (O) -- (V) node[midway, left] {$\mathbf{v}$};
+    \draw[->, figG, thick] (V) -- (S) node[midway, above left] {$\mathbf{u}$};
+    \draw[->, figR, thick] (O) -- (S) node[pos=0.55, fill=white, inner sep=1pt] {$\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}$};
+    \node[font=\small] at (1.6,-0.8) {(b) Parallelogram Law};
+  \end{scope}
+  % (c) Difference
+  \begin{scope}[xshift=10.4cm]
+    \coordinate (O) at (0,0); \coordinate (U) at (2.6,0.7); \coordinate (V) at (0.6,1.6);
+    \draw[->, figB, thick] (O) -- (U) node[midway, below right] {$\mathbf{u}$};
+    \draw[->, figG, thick] (O) -- (V) node[midway, left] {$\mathbf{v}$};
+    \draw[->, figR, thick] (V) -- (U) node[midway, above right] {$\mathbf{u}-\mathbf{v}$};
+    \node[font=\small] at (1.4,-0.8) {(c) $\mathbf{v}+(\mathbf{u}-\mathbf{v})=\mathbf{u}$};
+  \end{scope}
+\end{tikzpicture}

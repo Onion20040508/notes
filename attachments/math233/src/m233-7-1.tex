@@ -1,0 +1,23 @@
+% Figure for Calculus §7.
+\begin{tikzpicture}[x=1.05cm, y=1.05cm, font=\scriptsize]
+  \draw[-stealth, thin, black!70] (-0.9,0) -- (7.2,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.5) -- (0,4.3) node[above] {$y$};
+  \foreach \t in {1,2,3,4,5,6} \draw[thin, black!70] (\t,0.06) -- (\t,-0.06) node[below] {$\t$};
+  \foreach \t in {1,2,3} \draw[thin, black!70] (0.06,\t) -- (-0.06,\t) node[left] {$\t$};
+  \draw[black!35, dashed] (2,0) -- (2,3);
+  \draw[black!35, dashed] (5,0) -- (5,2);
+  \draw[black!35, dashed] (0,3) -- (2,3);
+  \draw[black!35, dashed] (0,2) -- (5,2);
+  \draw[figB, thick] plot[domain=-0.6:1.955, samples=60] (\x,{3-0.5*(\x-2)^2});
+  \draw[figB, thick] plot[domain=2.045:4.94, samples=60] (\x,{2-(\x-5)^2/9});
+  \draw[figB, thick] plot[domain=5.06:6.9, samples=30] (\x,{2-(\x-5)^2/9});
+  \draw[figB, thick, fill=white] (2,3) circle (2.4pt);
+  \draw[figB, thick, fill=white] (2,1) circle (2.4pt);
+  \draw[figB, thick, fill=white] (5,2) circle (2.4pt);
+  \fill[figR] (5,1) circle (2.4pt);
+  \node[figR, right] at (5.08,0.85) {$g(5)=1$};
+  \node[figB, above left] at (1.9,3.05) {$\lim\limits_{x\to2^-}g(x)=3$};
+  \node[figB, right] at (2.12,0.72) {$\lim\limits_{x\to2^+}g(x)=1$};
+  \node[figB, above] at (5,2.12) {$\lim\limits_{x\to5}g(x)=2$};
+  \node[figB] at (6.6,2.15) {$y=g(x)$};
+\end{tikzpicture}

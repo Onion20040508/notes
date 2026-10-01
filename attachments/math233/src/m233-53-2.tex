@@ -1,0 +1,38 @@
+% Figure for Calculus §53.
+\begin{tikzpicture}[x=1.15cm, y=1.15cm, font=\scriptsize,
+    declare function={f(\x)=1.25+0.4*sin(deg(1.25*\x-1.2))+0.08*\x;}]
+  \def\a{0.6} \def\b{5.0} \def\xl{3.45} \def\xr{4.05} \def\k{0.2}
+  \pgfmathsetmacro{\fa}{f(\a)} \pgfmathsetmacro{\fb}{f(\b)}
+  \pgfmathsetmacro{\fl}{f(\xl)} \pgfmathsetmacro{\fr}{f(\xr)}
+  % the surface
+  \fill[figB!10] plot[domain=\a:\b, samples=80] (\x,{f(\x)}) -- plot[domain=\b:\a, samples=80] (\x,{-f(\x)}) -- cycle;
+  \fill[figB!10] (\b,0) ellipse[x radius={\k*\fb}, y radius=\fb];
+  \draw[figB, thin] plot[domain=\a:\b, samples=80] (\x,{-f(\x)});
+  \draw[figB, thin, dashed] (\a,\fa) arc[start angle=90, end angle=270, x radius={\k*\fa}, y radius=\fa];
+  \draw[figB, thin] (\a,-\fa) arc[start angle=-90, end angle=90, x radius={\k*\fa}, y radius=\fa];
+  \draw[figB, thin] (\b,0) ellipse[x radius={\k*\fb}, y radius=\fb];
+  % the band
+  \fill[figR!22] (\xl,\fl) arc[start angle=90, end angle=-90, x radius={\k*\fl}, y radius=\fl] -- (\xr,-\fr) arc[start angle=-90, end angle=90, x radius={\k*\fr}, y radius=\fr] -- cycle;
+  \draw[figR, thin, dashed] (\xl,\fl) arc[start angle=90, end angle=270, x radius={\k*\fl}, y radius=\fl];
+  \draw[figR, thin] (\xl,-\fl) arc[start angle=-90, end angle=90, x radius={\k*\fl}, y radius=\fl];
+  \draw[figR, thin, dashed] (\xr,\fr) arc[start angle=90, end angle=270, x radius={\k*\fr}, y radius=\fr];
+  \draw[figR, thin] (\xr,-\fr) arc[start angle=-90, end angle=90, x radius={\k*\fr}, y radius=\fr];
+  \draw[figR, thin] (\xl,-\fl) -- (\xr,-\fr);
+  % the generating curve and its polygon segment
+  \draw[figB, thick] plot[domain=\a:\b, samples=80] (\x,{f(\x)});
+  \node[figB, above] at (1.2,{f(1.2)+0.05}) {$y=f(x)$};
+  \draw[figR, very thick] (\xl,\fl) -- (\xr,\fr);
+  \fill[figR] (\xl,\fl) circle (1.5pt) node[above=3pt, black] {$P_{i-1}$};
+  \fill[figR] (\xr,\fr) circle (1.5pt) node[above right=-1pt, black] {$P_i$};
+  % axes
+  \draw[-stealth, thin, black!70] (-0.2,0) -- (6.0,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-2.0) -- (0,2.4) node[above] {$y$};
+  \draw[black!45, dashed] (\a,0) -- (\b,0);
+  \fill (\a,0) circle (1.1pt) node[below right=-1pt] {$a$};
+  \fill (\b,0) circle (1.1pt) node[below right=-1pt] {$b$};
+  % radii of the band
+  \draw[black!70, thin] (\xr,0) -- (\xr,\fr);
+  \node[right, fill=white, inner sep=1pt] at (\xr+0.32,{0.5*\fr}) {$y_i$};
+  \draw[black!70, thin] (\xl,0) -- (\xl,\fl);
+  \node[left, fill=white, inner sep=1pt] at (\xl-0.36,{0.5*\fl}) {$y_{i-1}$}; \draw[black!50, thin] (\xl-0.36,{0.5*\fl}) -- (\xl,{0.5*\fl});
+\end{tikzpicture}

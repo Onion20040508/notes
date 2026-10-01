@@ -11,7 +11,7 @@ tags: [calculus, math233]
 
 *Stewart, Section 16.4 · MATH 233 (UMass, Spring 2023): Practice Final Exam (Q2), Chapter 16 Review (Q6a).*
 
-Green's Theorem turns a line integral around a simple closed curve $C$ into a double integral over the region $D$ that $C$ bounds. It is the Fundamental Theorem of Calculus one dimension up: an integral of derivatives over $D$ equals boundary values of the original functions, integrated over $\partial D$. It is used in both directions. A line integral that would need several parametrizations becomes one double integral, and an area becomes a line integral around the boundary. Cutting regions into pieces extends it to regions with holes. That gives the standard calculation for fields with a singularity, such as $(-y\,\mathbf{i} + x\,\mathbf{j})/(x^2 + y^2)$, and the proof of the test for conservative fields stated in [[§109 The Fundamental Theorem for Line Integrals|§109]].
+Green's Theorem turns a line integral around a simple closed curve $C$ into a double integral over the region $D$ that $C$ bounds. It is the Fundamental Theorem of Calculus one dimension up: an integral of derivatives over $D$ equals boundary values of the original functions, integrated over $\partial D$. It is used in both directions. A line integral that would need several parametrizations becomes one double integral, and an area becomes a line integral around the boundary. Cutting regions into pieces extends it to regions with holes. That gives the standard calculation for fields with a singularity, such as $(-y\,\mathbf{i} + x\,\mathbf{j})/(x^2 + y^2)$, and the proof of the test for conservative fields announced in §109 (the converse of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]).
 
 ## Green's Theorem
 
@@ -23,9 +23,6 @@ Green's Theorem turns a line integral around a simple closed curve $C$ into a do
 > *Stewart: 16.4 (text)*
 
 ^def-110-1
-
-> [!remark]- Connections
-> - The same convention ("$D$ on the left") in 452, where it reappears as the induced boundary orientation of Stokes' theorem: [[§16 Line Integrals and Green's Theorem|452 §16]].
 
 > [!definition] Definition §110.2: Simple Region
 > A plane region is **simple** if it is both of type I and of type II ([[§99 Double Integrals Over General Regions|§99]]). That is, it can be written both as
@@ -42,9 +39,6 @@ Green's Theorem turns a line integral around a simple closed curve $C$ into a do
 
 ^def-110-2
 
-> [!remark]- Connections
-> - Type I and type II regions in 452: [[§15 Multivariable Integration#^def-15-12|452 Def. §15.12]].
-
 > [!theorem] Theorem §110.1: Green's Theorem
 > Let $C$ be a positively oriented, piecewise-smooth, simple closed curve in the plane and let $D$ be the region bounded by $C$. If $P$ and $Q$ have continuous partial derivatives on an open region that contains $D$, then
 >
@@ -58,7 +52,7 @@ Green's Theorem turns a line integral around a simple closed curve $C$ into a do
 > \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA = \oint_{\partial D} P\,dx + Q\,dy .
 > $$
 >
-> The left side of the first equation is $\oint_C \mathbf{F} \cdot d\mathbf{r}$ for $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j}$ ([[§108 Line Integrals|§108]]).
+> The left side of the first equation is $\oint_C \mathbf{F} \cdot d\mathbf{r}$ for $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j}$ ([[§108 Line Integrals#^thm-108-7|Theorem §108.7]]).
 >
 > *Stewart: 16.4, Green's Theorem and Equation 1*
 
@@ -130,26 +124,26 @@ Green's Theorem is not easy to prove in general. Stewart proves it for simple re
 
 ^pf-110-1
 
-*Uses:* [[§110 Green's Theorem#^def-110-1|Def. §110.1]], [[§110 Green's Theorem#^def-110-2|Def. §110.2]], [[§99 Double Integrals Over General Regions|§99]] (iterated integrals over type I and II regions), [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 2), [[§108 Line Integrals|§108]] (line integrals with respect to x and y; reversing orientation)
+*Uses:* [[§110 Green's Theorem#^def-110-1|Def. §110.1]], [[§110 Green's Theorem#^def-110-2|Def. §110.2]], [[§99 Double Integrals Over General Regions|§99]] (iterated integrals over type I and II regions), [[§36 The Fundamental Theorem of Calculus|§36]] (FTC Part 2), [[§108 Line Integrals#^thm-108-2|§108.2]] (line integrals with respect to x and y), [[§108 Line Integrals#^thm-108-4|§108.4]] (reversing orientation)
 
 ![[m233-110-1.svg]]
 *Equation 2 on a type I region. The positively oriented boundary runs right along the bottom $C_1$, up $C_2$, left along the top $C_3$ and down $C_4$. Only $C_1$ and $C_3$ see $P\,dx$, with opposite signs because they are traversed in opposite directions. On each vertical segment at $x$ (blue), the Fundamental Theorem of Calculus in $y$ turns the difference $P(x, g_2(x)) - P(x, g_1(x))$ into $\int_{g_1}^{g_2} \partial P/\partial y\,dy$. Equation 3 is the same picture cut into horizontal segments.*
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]], with the same proof (Fubini on type I and type II regions plus the FTC; general regions by subdivision). Hub: [[Green's Theorem]].
-> - It is the flat case of Stokes' theorem ([[§114 Stokes' Theorem|§114]]; 452 [[Stokes' Theorem in ℝ³]]) and the case of 1-forms in the plane of the [[Generalized Stokes' Theorem]].
+> - Rigorous treatment: [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]], with the same proof (Fubini on type I and type II regions, [[§15 Multivariable Integration#^def-15-12|452 Def. §15.12]], plus the FTC; general regions by subdivision) and the same convention "$D$ on the left", which reappears there as the induced boundary orientation of Stokes' theorem. Hub: [[Green's Theorem]].
+> - It is the flat case of Stokes' theorem ([[§114 Stokes' Theorem#^thm-114-1|Theorem §114.1]]; 452 [[Stokes' Theorem in ℝ³]]) and the case of 1-forms in the plane of the [[Generalized Stokes' Theorem]].
 
 > [!remark] Remark: Method — Using Green's Theorem
 > 1. **Check the curve.** $C$ must be closed, simple and piecewise smooth. Find its orientation: counterclockwise, with $D$ on the left, is positive. If $C$ is traversed clockwise, then $\oint_C P\,dx + Q\,dy = -\iint_D (Q_x - P_y)\,dA$.
-> 2. **Check the field.** $P$ and $Q$ must have continuous partial derivatives on an open region containing *all* of $D$. A point of $D$ where $P$ or $Q$ is undefined (Example §110.7) rules out a direct application.
+> 2. **Check the field.** $P$ and $Q$ must have continuous partial derivatives on an open region containing *all* of $D$. A point of $D$ where $P$ or $Q$ is undefined ([[§110 Green's Theorem#^ex-110-5|Example §110.5]]) rules out a direct application.
 > 3. **Compute** $\dfrac{\partial Q}{\partial x} - \dfrac{\partial P}{\partial y}$. Terms of $P$ that depend on $x$ alone and terms of $Q$ that depend on $y$ alone drop out, however complicated they are.
 > 4. **Evaluate the double integral**, choosing coordinates that fit $D$: polar coordinates for disks, annuli and sectors ([[§100 Double Integrals in Polar Coordinates|§100]]), and area formulas when the integrand is constant.
 > 5. **Reverse direction.** Sometimes the line integral is the easier side: areas (Corollary §110.2), or the case $P = Q = 0$ on $C$, which gives $\iint_D (Q_x - P_y)\,dA = 0$ whatever $P$ and $Q$ do inside $D$.
 
 ^rem-110-2
 
-> [!example] Example §110.1: A Triangle
-> Evaluate $\displaystyle\int_C x^4\,dx + xy\,dy$, where $C$ is the triangular curve consisting of the line segments from $(0, 0)$ to $(1, 0)$, from $(1, 0)$ to $(0, 1)$ and from $(0, 1)$ to $(0, 0)$.
+> [!example] Example §110.1: A Triangle and a Circle
+> **(a)** Evaluate $\displaystyle\int_C x^4\,dx + xy\,dy$, where $C$ is the triangular curve consisting of the line segments from $(0, 0)$ to $(1, 0)$, from $(1, 0)$ to $(0, 1)$ and from $(0, 1)$ to $(0, 0)$.
 >
 > Directly, this needs three parametrizations, one for each side. Instead: the region $D$ enclosed by $C$ is simple, $C$ is traversed counterclockwise (positively), and $P(x, y) = x^4$, $Q(x, y) = xy$ are polynomials. So
 >
@@ -166,12 +160,7 @@ Green's Theorem is not easy to prove in general. Stewart proves it for simple re
 > \end{aligned}
 > $$
 >
-> *Stewart: Example 16.4.1*
-
-^ex-110-1
-
-> [!example] Example §110.2: A Circle
-> Evaluate $\displaystyle\oint_C (3y - e^{\sin x})\,dx + \big(7x + \sqrt{y^4 + 1}\big)\,dy$, where $C$ is the circle $x^2 + y^2 = 9$.
+> **(b)** Evaluate $\displaystyle\oint_C (3y - e^{\sin x})\,dx + \big(7x + \sqrt{y^4 + 1}\big)\,dy$, where $C$ is the circle $x^2 + y^2 = 9$.
 >
 > Here $D$ is the disk $x^2 + y^2 \le 9$, and $P = 3y - e^{\sin x}$, $Q = 7x + \sqrt{y^4 + 1}$ have continuous partial derivatives everywhere. The awkward terms drop out (step 3 of the method):
 >
@@ -187,11 +176,11 @@ Green's Theorem is not easy to prove in general. Stewart proves it for simple re
 >
 > Or, without integrating: $\iint_D 4\,dA = 4 \cdot \text{area}(D) = 4 \cdot \pi (3)^2 = 36\pi$. (Setting up the line integral directly is hopeless.)
 >
-> *Stewart: Example 16.4.2*
+> *Stewart: Examples 16.4.1 and 16.4.2*
 
-^ex-110-2
+^ex-110-1
 
-> [!example] Example §110.3: Checking Green's Theorem on a Quarter Disk
+> [!example] Example §110.2: Checking Green's Theorem on a Quarter Disk
 > Let $\mathbf{F}(x, y) = \langle y^3, -x^3 \rangle$. Evaluate $\oint_C \mathbf{F} \cdot d\mathbf{r}$ for the closed curve $C$ consisting of the segment from $(0, 0)$ to $(1, 0)$, the part of the circle $x^2 + y^2 = 1$ from $(1, 0)$ to $(0, 1)$, and the segment from $(0, 1)$ to $(0, 0)$.
 >
 > **By Green's Theorem.** $C = C_1 \cup C_2 \cup C_3$ is simple, closed and piecewise smooth, and it is traversed counterclockwise around the quarter disk $D = \{0 \le r \le 1,\ 0 \le \theta \le \pi/2\}$. With $P = y^3$ and $Q = -x^3$,
@@ -218,7 +207,7 @@ Green's Theorem is not easy to prove in general. Stewart proves it for simple re
 >
 > *Source: 233 Chapter 16 Review, Q6(a)*
 
-^ex-110-3
+^ex-110-2
 
 ## Finding Areas with Green's Theorem
 
@@ -254,7 +243,7 @@ $$
 
 *Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]]
 
-> [!example] Example §110.4: The Area of an Ellipse
+> [!example] Example §110.3: The Area of an Ellipse
 > Find the area enclosed by the ellipse $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$.
 >
 > The ellipse has the counterclockwise parametrization $x = a\cos t$, $y = b\sin t$, $0 \le t \le 2\pi$. By the third formula in Corollary §110.2,
@@ -268,7 +257,7 @@ $$
 >
 > *Stewart: Example 16.4.3*
 
-^ex-110-4
+^ex-110-3
 
 > [!remark]- Remark: The Planimeter
 > Corollary §110.2 explains how a **planimeter** works. This 19th-century mechanical instrument measures the area of a region by tracing its boundary. In a polar planimeter the pole is fixed, and as the tracer moves around the boundary curve, a wheel partly slides and partly rolls perpendicular to the tracer arm. The distance the wheel rolls is proportional to the enclosed area. (Stewart cites R. W. Gatterman, *Amer. Math. Monthly* 88 (1981), 701–704, and T. Leise, *College Math. J.* 38 (2007), 24–31.)
@@ -302,10 +291,10 @@ $$
 
 ^pf-110-3
 
-*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§108 Line Integrals|§108]] (reversing orientation)
+*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§108 Line Integrals#^thm-108-4|§108.4]] (reversing orientation)
 
-> [!example] Example §110.5: A Semiannulus
-> Evaluate $\displaystyle\oint_C y^2\,dx + 3xy\,dy$, where $C$ is the boundary of the semiannular region $D$ in the upper half-plane between the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 4$.
+> [!example] Example §110.4: Sectors of Annuli
+> **(a) A semiannulus.** Evaluate $\displaystyle\oint_C y^2\,dx + 3xy\,dy$, where $C$ is the boundary of the semiannular region $D$ in the upper half-plane between the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 4$.
 >
 > $D$ is not simple, but the $y$-axis divides it into two simple regions, so Theorem §110.3 applies. In polar coordinates $D = \{(r, \theta) \mid 1 \le r \le 2,\ 0 \le \theta \le \pi\}$, and
 >
@@ -322,12 +311,7 @@ $$
 > \end{aligned}
 > $$
 >
-> *Stewart: Example 16.4.4*
-
-^ex-110-5
-
-> [!example] Example §110.6: A Sector of an Annulus
-> Use Green's Theorem to evaluate
+> **(b) A sector of an annulus.** Use Green's Theorem to evaluate
 >
 > $$
 > \oint_C \big(\sqrt{2 + x^3} - 8y^3\big)\,dx + \big(8x^3 + \sqrt{1 + y^3}\big)\,dy ,
@@ -335,7 +319,7 @@ $$
 >
 > where $C$ is the boundary of $D = \{(x, y) \mid 1 \le x^2 + y^2 \le 4,\ -y \le x \le y,\ y \ge 0\}$, traversed in the positive sense.
 >
-> **The region.** $-y \le x \le y$ with $y \ge 0$ says $|x| \le y$: the wedge between the lines $y = x$ and $y = -x$ above the origin. So in polar coordinates $D = \{(r, \theta) \mid 1 \le r \le 2,\ \pi/4 \le \theta \le 3\pi/4\}$, a sector of an annulus. Like the semiannulus of Example §110.5, it is a union of simple regions.
+> **The region.** $-y \le x \le y$ with $y \ge 0$ says $|x| \le y$: the wedge between the lines $y = x$ and $y = -x$ above the origin. So in polar coordinates $D = \{(r, \theta) \mid 1 \le r \le 2,\ \pi/4 \le \theta \le 3\pi/4\}$, a sector of an annulus. Like the semiannulus of part (a), it is a union of simple regions.
 >
 > **The integrand.** With $P = \sqrt{2 + x^3} - 8y^3$ and $Q = 8x^3 + \sqrt{1 + y^3}$, the square roots drop out:
 >
@@ -351,9 +335,10 @@ $$
 >
 > *A caveat on the problem as set: $\sqrt{2 + x^3}$ is undefined where $x < -\sqrt[3]{2} \approx -1.26$, and $D$ reaches $x = -\sqrt2 \approx -1.41$ at its corner $(-\sqrt2, \sqrt2)$. So $P$ is not defined on all of $D$, and strictly the hypotheses of Green's Theorem fail. The intended point is step 3 of the method: a term of $P$ that depends on $x$ alone contributes nothing. The posted answer $45\pi$ is the value of the intended problem.*
 >
+> *Stewart: Example 16.4.4*
 > *Source: 233 Practice Final Exam, Q2*
 
-^ex-110-6
+^ex-110-4
 
 > [!theorem] Theorem §110.4: Green's Theorem for Regions with Holes
 > Let $D$ be a region whose boundary $C$ consists of two piecewise-smooth simple closed curves, an outer curve $C_1$ and an inner curve $C_2$, oriented so that $D$ is always on the left as $C$ is traversed: counterclockwise on $C_1$, clockwise on $C_2$. If $P$ and $Q$ have continuous partial derivatives on an open region containing $D$, then
@@ -362,7 +347,7 @@ $$
 > \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA = \int_{C_1} P\,dx + Q\,dy + \int_{C_2} P\,dx + Q\,dy = \int_C P\,dx + Q\,dy .
 > $$
 >
-> The same holds with several holes. Such regions are not simply connected ([[§109 The Fundamental Theorem for Line Integrals|§109]]).
+> The same holds with several holes. Such regions are not simply connected ([[§109 The Fundamental Theorem for Line Integrals#^def-109-5|Definition §109.5]]).
 >
 > *Stewart: 16.4 (text)*
 
@@ -387,12 +372,12 @@ $$
 
 ^pf-110-4
 
-*Uses:* [[§110 Green's Theorem#^thm-110-3|§110.3]], [[§108 Line Integrals|§108]] (reversing orientation)
+*Uses:* [[§110 Green's Theorem#^thm-110-3|§110.3]], [[§108 Line Integrals#^thm-108-4|§108.4]] (reversing orientation)
 
 ![[m233-110-2.svg]]
 *The cutting argument for a region with a hole. Each half $D'$ and $D''$ gets its own counterclockwise boundary. Along the two cuts (green) the upper half travels one way and the lower half the other, so those contributions cancel. What remains is the outer curve $C_1$ counterclockwise and the inner curve $C_2$ clockwise, both with $D$ on the left.*
 
-> [!example] Example §110.7: A Field with a Singularity at the Origin
+> [!example] Example §110.5: A Field with a Singularity at the Origin
 > If $\mathbf{F}(x, y) = \dfrac{-y\,\mathbf{i} + x\,\mathbf{j}}{x^2 + y^2}$, show that $\displaystyle\int_C \mathbf{F} \cdot d\mathbf{r} = 2\pi$ for every positively oriented simple closed path $C$ that encloses the origin.
 >
 > Green's Theorem cannot be applied to $C$ directly, because $\mathbf{F}$ is undefined at the origin, which lies inside $C$. And $C$ is arbitrary, so we cannot parametrize it. Instead, choose $a > 0$ small enough that the counterclockwise circle $C'$ with center the origin and radius $a$ lies inside $C$. Let $D$ be the region between $C$ and $C'$. It does not contain the origin, and its positively oriented boundary is $C \cup (-C')$. With $P = \dfrac{-y}{x^2 + y^2}$ and $Q = \dfrac{x}{x^2 + y^2}$,
@@ -418,14 +403,14 @@ $$
 >
 > *Stewart: Example 16.4.5*
 
-^ex-110-7
+^ex-110-5
 
 > [!remark]- Connections
 > - This field is the angle form $d\theta$ of 452, the standard closed but not exact form: [[Angle form on the punctured plane]], [[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]]. The value $\frac{1}{2\pi}\oint_C \mathbf{F} \cdot d\mathbf{r}$ is the winding number of $C$ about the origin.
 
 ## Curl-Free Fields on Simply-Connected Regions
 
-Green's Theorem supplies the proof, promised in [[§109 The Fundamental Theorem for Line Integrals|§109]], of the test for conservative vector fields in the plane.
+Green's Theorem supplies the proof, promised in §109 after [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]], of the test for conservative vector fields in the plane.
 
 > [!theorem] Theorem §110.5: Test for Conservative Fields
 > Let $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j}$ be a vector field on an open simply-connected region $D$. Suppose that $P$ and $Q$ have continuous first-order partial derivatives and
@@ -447,14 +432,14 @@ Green's Theorem supplies the proof, promised in [[§109 The Fundamental Theorem 
 > \oint_C \mathbf{F} \cdot d\mathbf{r} = \oint_C P\,dx + Q\,dy = \iint_R \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA = \iint_R 0\,dA = 0 .
 > $$
 >
-> If $C$ is negatively oriented, the integral is $-0 = 0$. A closed curve that is not simple crosses itself at one or more points and can be broken up into a number of simple closed curves. The line integral of $\mathbf{F}$ around each of these is $0$, so the sum is $0$. Hence $\int_C \mathbf{F} \cdot d\mathbf{r} = 0$ for every closed curve $C$ in $D$. By Theorem 16.3.3, $\int_C \mathbf{F} \cdot d\mathbf{r}$ is independent of path in $D$. Since $D$ is open and connected, $\mathbf{F}$ is conservative by Theorem 16.3.4 ([[§109 The Fundamental Theorem for Line Integrals|§109]]).
+> If $C$ is negatively oriented, the integral is $-0 = 0$. A closed curve that is not simple crosses itself at one or more points and can be broken up into a number of simple closed curves. The line integral of $\mathbf{F}$ around each of these is $0$, so the sum is $0$. Hence $\int_C \mathbf{F} \cdot d\mathbf{r} = 0$ for every closed curve $C$ in $D$. By [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|Theorem §109.2]], $\int_C \mathbf{F} \cdot d\mathbf{r}$ is independent of path in $D$. Since $D$ is open and connected, $\mathbf{F}$ is conservative by [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Theorem §109.3]].
 >
 > (What makes this a sketch is the step "broken up into simple closed curves": it is clear for curves that cross themselves finitely often, but needs more care in general.)
 
 ^pf-110-5
 
-*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§109 The Fundamental Theorem for Line Integrals|§109]] (simply-connected regions; Theorems 16.3.3 and 16.3.4)
+*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-5|Def. §109.5]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|§109.2]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|§109.3]]
 
 > [!remark]- Connections
-> - Rigorous treatment in the language of forms: on a star-shaped domain every closed form is exact, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]] ([[Poincaré Lemma]]). Example §110.7 shows that some hypothesis on the region is needed.
+> - Rigorous treatment in the language of forms: on a star-shaped domain every closed form is exact, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]] ([[Poincaré Lemma]]). [[§110 Green's Theorem#^ex-110-5|Example §110.5]] shows that some hypothesis on the region is needed.
 > - Topology's definition of simply connected (path-connected, every loop shrinks to a point): [[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]. Stewart's definition (every simple closed curve in $D$ encloses only points of $D$) agrees with it for open connected regions in the plane (a nontrivial fact of plane topology).

@@ -1,0 +1,27 @@
+% Figure for Calculus §27.
+\begin{tikzpicture}[x=1.4cm, y=0.8cm, font=\scriptsize,
+    declare function={f(\x)=0.35+0.28*(\x-0.4)*(\x-0.4)+0.04*(\x-0.4)*(\x-0.4)*(\x-0.4);
+                      fp(\x)=0.56*(\x-0.4)+0.12*(\x-0.4)*(\x-0.4);}]
+  \def\a{1.5} \def\X{3.4}
+  \draw[-stealth, thin, black!70] (-0.2,0) -- (4.3,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.2) -- (0,5.4) node[above] {$y$};
+  % tangent at a
+  \draw[figR, thick] (0.6,{f(\a)+fp(\a)*(0.6-\a)}) -- (3.95,{f(\a)+fp(\a)*(4.1-\a)});
+  % secant from a to X
+  \draw[figB, thick] (\a,{f(\a)}) -- (\X,{f(\X)});
+  % graph
+  \draw[black, thick] plot[domain=0.2:3.72, samples=100] (\x,{f(\x)});
+  \node[black, left] at (3.62,{f(3.62)}) {$y=f(x)$};
+  % gap
+  \draw[figG, very thick] (\X,{f(\a)+fp(\a)*(\X-\a)}) -- (\X,{f(\X)});
+  \node[figG, right, align=left] at (\X+0.03,{0.5*(f(\X)+f(\a)+fp(\a)*(\X-\a))}) {$f(x)-[f(a)+f'(a)(x-a)]$};
+  \fill (\a,{f(\a)}) circle (1.8pt);
+  \fill (\X,{f(\X)}) circle (1.8pt);
+  \node[figR, below right] at (2.55,{f(\a)+fp(\a)*(2.55-\a)}) {slope $f'(a)$};
+  \node[figB, above left] at (2.45,{0.5*(f(\a)+f(\X))+0.05}) {slope $f'(c)$};
+  \draw[black!30, dotted] (\a,0) -- (\a,{f(\a)});
+  \draw[black!30, dotted] (\X,0) -- (\X,{f(\a)+fp(\a)*(\X-\a)});
+  \draw[thin, black!70] (\a,0.06) -- (\a,-0.06) node[below] {$a$};
+  \draw[thin, black!70] (\X,0.06) -- (\X,-0.06) node[below] {$x$};
+  \draw[thin, black!70] (2.5,0.06) -- (2.5,-0.06) node[below] {$c$};
+\end{tikzpicture}

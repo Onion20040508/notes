@@ -1,0 +1,35 @@
+% Figure for Calculus §99.
+\begin{tikzpicture}[x=0.42cm, y=0.42cm, font=\scriptsize]
+  % ---- left panel: type I ----
+  \begin{scope}
+    \fill[figG!15] plot[domain=-2:4, samples=60] ({0.5*\x*\x-3},\x) -- cycle;
+    \draw[-stealth, thin, black!70] (-3.8,0) -- (6.3,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-3.2) -- (0,5.3) node[above] {$y$};
+    \draw[figG!70!black, thick] plot[domain=-2.4:4.3, samples=80] ({0.5*\x*\x-3},\x);
+    \draw[figG!70!black, thick] (-2.2,-3.2) -- (6,5);
+    \draw[black!40, dashed] (-1,-3.2) -- (-1,5);
+    \foreach \xx in {-2.2} \draw[figB, thick, -stealth] (\xx,{-sqrt(2*\xx+6)}) -- (\xx,{sqrt(2*\xx+6)});
+    \foreach \xx in {2.2} \draw[figB, thick, -stealth] (\xx,{\xx-1}) -- (\xx,{sqrt(2*\xx+6)});
+    \fill[black] (-1,-2) circle (1.5pt) node[below right] {$(-1,-2)$};
+    \fill[black] (5,4) circle (1.5pt) node[right] {$(5,4)$};
+    \node[figG!60!black] at (2.2,4.3) {$y=\sqrt{2x+6}$};
+    \node[figG!60!black, left] at (-2.4,-2.4) {$y=-\sqrt{2x+6}$};
+    \node[figG!60!black, right] at (4.4,2.6) {$y=x-1$};
+    \node[above left] at (-3,0) {$-3$};
+    \node at (1.2,-4.6) {(a) type I: split at $x=-1$};
+  \end{scope}
+  % ---- right panel: type II ----
+  \begin{scope}[xshift=5.4cm]
+    \fill[figG!15] plot[domain=-2:4, samples=60] ({0.5*\x*\x-3},\x) -- cycle;
+    \draw[-stealth, thin, black!70] (-3.8,0) -- (6.3,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-3.2) -- (0,5.3) node[above] {$y$};
+    \draw[figG!70!black, thick] plot[domain=-2.4:4.3, samples=80] ({0.5*\x*\x-3},\x);
+    \draw[figG!70!black, thick] (-2.2,-3.2) -- (6,5);
+    \foreach \yy in {-1.2, 1.6, 3.2} \draw[figB, thick, -stealth] ({0.5*\yy*\yy-3},\yy) -- ({\yy+1},\yy);
+    \fill[black] (-1,-2) circle (1.5pt) node[below right] {$(-1,-2)$};
+    \fill[black] (5,4) circle (1.5pt) node[right] {$(5,4)$};
+    \node[figG!60!black, left] at (-0.6,3.0) {$x=\tfrac12y^2-3$};
+    \node[figG!60!black, right] at (4.4,2.6) {$x=y+1$};
+    \node at (1.2,-4.6) {(b) type II: one integral};
+  \end{scope}
+\end{tikzpicture}

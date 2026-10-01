@@ -1,0 +1,15 @@
+% Figure for Calculus §107.
+\begin{tikzpicture}[x=0.62cm, y=0.62cm, font=\scriptsize]
+  \foreach \r in {1,2,3} \draw[black!25] (0,0) circle (\r);
+  \draw[-stealth, thin, black!70] (-4.2,0) -- (4.4,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-4.2) -- (0,4.4) node[above] {$y$};
+  \foreach \x in {-3,...,3} \foreach \y in {-3,...,3} {
+    \pgfmathsetmacro{\rr}{sqrt(\x*\x+\y*\y)}
+    \ifdim \rr pt > 0.1pt
+      \draw[figB, -{Stealth[length=3.5pt]}, line width=0.7pt] (\x,\y) -- ++({-0.3*\y},{0.3*\x});
+      \fill[figB] (\x,\y) circle (1pt);
+    \fi
+  }
+  \foreach \t in {1,2,3} \node[below right, black!60, inner sep=1pt] at (\t,0) {$\t$};
+  \node[figB, font=\small, fill=white, inner sep=1pt] at (2.8,-4.7) {$\mathbf{F}(x,y) = -y\,\mathbf{i} + x\,\mathbf{j}$};
+\end{tikzpicture}

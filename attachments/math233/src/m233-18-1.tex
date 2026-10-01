@@ -1,0 +1,21 @@
+% Figure for Calculus §18.
+\begin{tikzpicture}[x=0.75cm, y=0.75cm, font=\scriptsize,
+    declare function={fx(\t)=6*\t/(1+\t*\t*\t); fy(\t)=6*\t*\t/(1+\t*\t*\t);}]
+  \draw[-stealth, thin, black!70] (-4.2,0) -- (5.2,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-4.2) -- (0,5.2) node[above] {$y$};
+  \foreach \t in {2,4} {\draw[thin, black!70] (\t,0.08) -- (\t,-0.08) node[below] {$\t$};
+    \draw[thin, black!70] (0.08,\t) -- (-0.08,\t) node[left] {$\t$};}
+  % tangent x + y = 6 at (3,3)
+  \draw[figR, thin] (1.0,5.0) -- (5.0,1.0) node[right] {$x+y=6$};
+  % horizontal tangent at (2^{4/3}, 2^{5/3})
+  \draw[figG, thin] (1.3,3.1748) -- (3.8,3.1748);
+  % the folium: loop (t in [0,1] and its mirror) and the two arms
+  \draw[figB, thick] plot[domain=0:1, samples=80] ({fx(\x)},{fy(\x)});
+  \draw[figB, thick] plot[domain=0:1, samples=80] ({fy(\x)},{fx(\x)});
+  \draw[figB, thick] plot[domain=-0.6:0, samples=80] ({fx(\x)},{fy(\x)});
+  \draw[figB, thick] plot[domain=-0.6:0, samples=80] ({fy(\x)},{fx(\x)});
+  \fill[figR] (3,3) circle (2pt); \node[figR, right] at (3.2,3.45) {$(3,3)$};
+  \fill[figG] (2.5198,3.1748) circle (2pt);
+  \node[figG, above left] at (2.45,3.2) {$(2^{4/3},2^{5/3})$};
+  \node[figB] at (-2.6,2.6) {$x^3+y^3=6xy$};
+\end{tikzpicture}
