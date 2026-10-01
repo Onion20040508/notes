@@ -1,0 +1,38 @@
+% Figure for Logic and Proofs §22.
+\begin{tikzpicture}[x=0.62cm, y=0.62cm]
+  % axes
+  \draw[-{Stealth[length=2mm]}, black!60] (-4.7,0) -- (4.9,0) node[right, font=\small, black] {$a$};
+  \draw[-{Stealth[length=2mm]}, black!60] (0,-4.7) -- (0,4.9) node[above, font=\small, black] {$b$};
+  % class lines (through the origin, which is not in S)
+  \draw[figB, thick, dashed] (-2.35,-4.7) -- (2.35,4.7);
+  \draw[figR, thick, dashed] (-4.6,-4.6) -- (4.6,4.6);
+  \draw[figO, thick, dashed] (-4.7,-2.35) -- (4.7,2.35);
+  \draw[figG, thick, dashed] (1.55,-4.65) -- (-1.55,4.65);
+  \draw[black!75, very thick] (0,-4.5) -- (0,-0.25);
+  \draw[black!75, very thick] (0,0.25) -- (0,4.5);
+  % all lattice points
+  \foreach \a in {-4,...,4} {
+    \foreach \b in {-4,...,4} {
+      \fill[black!30] (\a,\b) circle (1.6pt);
+    }
+  }
+  % the excluded row b = 0
+  \foreach \a in {-4,...,4} {
+    \fill[white] (\a,0) circle (2.6pt);
+    \draw[black!55] (\a,0) circle (2.2pt);
+    \draw[black!55, line width=0.5pt] (\a-0.14,-0.14) -- (\a+0.14,0.14);
+  }
+  % highlighted classes
+  \foreach \k in {-2,-1,1,2} { \fill[figB] (\k,2*\k) circle (2.4pt); }
+  \foreach \k in {-4,...,-1,1,2,3,4} { \fill[figR] (\k,\k) circle (2.4pt); }
+  \foreach \k in {-2,-1,1,2} { \fill[figO] (2*\k,\k) circle (2.4pt); }
+  \foreach \k in {-1,1} { \fill[figG] (\k,-3*\k) circle (2.4pt); }
+  \foreach \b in {-4,...,-1,1,2,3,4} { \fill[black!80] (0,\b) circle (2.4pt); }
+  % labels
+  \node[figB, font=\small, above right] at (2.35,4.7) {$\tfrac12 = [(1,2)]$};
+  \node[figR, font=\small, right] at (4.6,4.6) {$1 = [(1,1)]$};
+  \node[figO, font=\small, right] at (4.7,2.35) {$2 = [(2,1)]$};
+  \node[figG, font=\small, above left] at (-1.55,4.65) {$-\tfrac13 = [(-1,3)]$};
+  \node[black!80, font=\small, below] at (0,-4.7) {$0 = [(0,1)]$};
+  \node[black!65, font=\scriptsize, left] at (-4.75,0) {$b=0$: not in $S$};
+\end{tikzpicture}

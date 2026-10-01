@@ -1,0 +1,23 @@
+% Figure for Logic and Proofs §7.
+\begin{tikzpicture}[x=0.55cm, y=0.55cm]
+  \pgfmathsetmacro{\ya}{(-3+sqrt(57))/4}
+  \pgfmathsetmacro{\yb}{(-3-sqrt(57))/4}
+  \begin{scope}
+    \clip (-4.5,-3.8) rectangle (10,3.8);
+    % truth set (everything except F), tinted
+    \fill[figB!15] (-4.5,-3.8) rectangle (10,3.8);
+    % F = {2x+3y>6} cap {x>y^2}: white
+    \fill[white] (10,3.8) -- plot[domain=3.8:\ya, samples=60] ({\x*\x},\x)
+      -- ({(6-3*\yb)/2},\yb) -- plot[domain=\yb:-3.8, samples=60] ({\x*\x},\x) -- (10,-3.8) -- cycle;
+    % boundaries
+    \draw[figB, thick] plot[domain=-3.2:3.2, samples=80] ({\x*\x},\x);
+    \draw[figG!70!black, thick, dashed] (-1.6,{(6+3.2)/3}) -- (10,{(6-20)/3});
+    \draw[figR, very thick] ({\ya*\ya},\ya) -- ({(6-3*\yb)/2},\yb);
+  \end{scope}
+  \draw[-stealth, thin] (-4.5,0) -- (10.4,0) node[right, font=\small] {$x$};
+  \draw[-stealth, thin] (0,-3.8) -- (0,4.2) node[above, font=\small] {$y$};
+  \node[figB, font=\scriptsize, anchor=south east] at (9.9,3.1) {$x=y^2$};
+  \node[figG!70!black, font=\scriptsize, anchor=west] at (9.0,-3.5) {$2x+3y=6$};
+  \node[figR, font=\scriptsize, align=center] at (5.6,0.9) {implication false:\\ $2x+3y>6$ and $x>y^2$};
+  \node[font=\scriptsize, align=center] at (-2.4,-2.2) {implication true\\ (shaded)};
+\end{tikzpicture}

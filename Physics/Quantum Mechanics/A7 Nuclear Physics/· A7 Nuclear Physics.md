@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· A6 Molecules and Solids]] · ↑ [[Quantum Mechanics]] · [[· A8 Particle Physics and Cosmology]] →
 
 **Builds on:** [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (2)
-**Used by:** [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (1), [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (1)
+**Used by:** [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (1), [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (1), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (4)
 
 ## Sections
 - [[§A7.1 Properties of Nuclei and Binding Energy]] — UP Vol. 3 §10.1–10.2

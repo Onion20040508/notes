@@ -1,0 +1,31 @@
+% Figure for Logic and Proofs §6.
+\begin{tikzpicture}[scale=0.85]
+  \def\A{(0,0.55) circle (1)}
+  \def\B{(1.1,0.55) circle (1)}
+  \def\C{(0.55,-0.4) circle (1)}
+  % left panel: A cap (B cup C)
+  \begin{scope}
+    \draw[black!60, thin] (-1.5,-1.75) rectangle (2.6,1.9);
+    \begin{scope}\clip \B; \fill[figB!14] (-2,-2) rectangle (3,2);\end{scope}
+    \begin{scope}\clip \C; \fill[figB!14] (-2,-2) rectangle (3,2);\end{scope}
+    \begin{scope}\clip \A; \clip \B; \fill[figR!45] (-2,-2) rectangle (3,2);\end{scope}
+    \begin{scope}\clip \A; \clip \C; \fill[figR!45] (-2,-2) rectangle (3,2);\end{scope}
+    \draw[thick] \A; \draw[thick] \B; \draw[thick] \C;
+    \node[font=\small] at (-0.55,1.05) {$A$};
+    \node[font=\small] at (1.65,1.05) {$B$};
+    \node[font=\small] at (0.55,-1.05) {$C$};
+    \node[font=\small] at (0.55,-2.15) {$A\cap(B\cup C)$};
+  \end{scope}
+  % right panel: (A cap B) cup (A cap C)
+  \begin{scope}[shift={(5,0)}]
+    \draw[black!60, thin] (-1.5,-1.75) rectangle (2.6,1.9);
+    \begin{scope}\clip \A; \clip \B; \fill[figR!45] (-2,-2) rectangle (3,2);\end{scope}
+    \begin{scope}\clip \A; \clip \C; \fill[figR!45] (-2,-2) rectangle (3,2);\end{scope}
+    \begin{scope}\clip \A; \clip \B; \draw[figR!70!black, pattern=north east lines, pattern color=figR!80!black] (-2,-2) rectangle (3,2);\end{scope}
+    \draw[thick] \A; \draw[thick] \B; \draw[thick] \C;
+    \node[font=\small] at (-0.55,1.05) {$A$};
+    \node[font=\small] at (1.65,1.05) {$B$};
+    \node[font=\small] at (0.55,-1.05) {$C$};
+    \node[font=\small] at (0.55,-2.15) {$(A\cap B)\cup(A\cap C)$};
+  \end{scope}
+\end{tikzpicture}

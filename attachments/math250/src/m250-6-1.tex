@@ -1,0 +1,31 @@
+% Figure for Logic and Proofs §6.
+\begin{tikzpicture}[scale=1]
+  \def\A{(0,0) circle (1.25)}
+  \def\B{(1.5,0) circle (1.25)}
+  % universal rectangle
+  \draw[black!60, thin] (-1.75,-1.65) rectangle (3.25,1.65);
+  \node[font=\small, black!60, anchor=north east] at (3.2,1.6) {$U$};
+  % A - B
+  \begin{scope}
+    \clip \A;
+    \fill[figB!18] (-2,-2) rectangle (4,2);
+  \end{scope}
+  % B - A
+  \begin{scope}
+    \clip \B;
+    \fill[figG!18] (-2,-2) rectangle (4,2);
+  \end{scope}
+  % A cap B
+  \begin{scope}
+    \clip \A; \clip \B;
+    \fill[figR!25] (-2,-2) rectangle (4,2);
+  \end{scope}
+  \draw[figB, thick] \A;
+  \draw[figG!70!black, thick] \B;
+  \node[figB, font=\small] at (-0.95,1.2) {$A$};
+  \node[figG!70!black, font=\small] at (2.45,1.2) {$B$};
+  \node[font=\small] at (-0.45,0) {$A-B$};
+  \node[font=\small] at (0.75,0) {$A\cap B$};
+  \node[font=\small] at (1.95,0) {$B-A$};
+  \node[font=\scriptsize, black!60] at (0.75,-1.45) {outside $A\cup B$};
+\end{tikzpicture}

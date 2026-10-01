@@ -1,0 +1,35 @@
+% Figure for Logic and Proofs §25.
+\begin{tikzpicture}[scale=1.15, >=stealth,
+  one/.style={postaction={decorate}, decoration={markings, mark=at position 0.56 with {\arrow{Stealth[length=2.4mm]}}}},
+  two/.style={postaction={decorate}, decoration={markings, mark=at position 0.47 with {\arrow{Stealth[length=2.4mm]}}, mark=at position 0.63 with {\arrow{Stealth[length=2.4mm]}}}}]
+  % torus
+  \fill[black!4] (0,0) rectangle (2,2);
+  \draw[figB, thick, one] (0,0) -- (2,0);
+  \draw[figB, thick, one] (0,2) -- (2,2);
+  \draw[figR, thick, two] (0,0) -- (0,2);
+  \draw[figR, thick, two] (2,0) -- (2,2);
+  \node[figB, below, font=\small] at (1,0) {$a$};
+  \node[figB, above, font=\small] at (1,2) {$a$};
+  \node[figR, left, font=\small] at (0,1) {$b$};
+  \node[figR, right, font=\small] at (2,1) {$b$};
+  \foreach \p in {(0,0),(2,0),(0,2),(2,2)} \fill[black] \p circle (1.6pt);
+  \node[font=\scriptsize, black!60] at (1,1.12) {$V{=}1,\ E{=}2$};
+  \node[font=\scriptsize, black!60] at (1,0.82) {$F{=}1$};
+  \node[font=\small] at (1,-0.7) {torus: $\chi = 0$};
+  % Klein bottle
+  \begin{scope}[shift={(3.6,0)}]
+    \fill[black!4] (0,0) rectangle (2,2);
+    \draw[figB, thick, one] (0,0) -- (2,0);
+    \draw[figB, thick, one] (0,2) -- (2,2);
+    \draw[figR, thick, two] (0,2) -- (0,0);
+    \draw[figR, thick, two] (2,0) -- (2,2);
+    \node[figB, below, font=\small] at (1,0) {$a$};
+    \node[figB, above, font=\small] at (1,2) {$a$};
+    \node[figR, left, font=\small] at (0,1) {$b$};
+    \node[figR, right, font=\small] at (2,1) {$b$};
+    \foreach \p in {(0,0),(2,0),(0,2),(2,2)} \fill[black] \p circle (1.6pt);
+    \node[font=\scriptsize, black!60] at (1,1.12) {$V{=}1,\ E{=}2$};
+    \node[font=\scriptsize, black!60] at (1,0.82) {$F{=}1$};
+    \node[font=\small] at (1,-0.7) {Klein bottle: $\chi = 0$};
+  \end{scope}
+\end{tikzpicture}

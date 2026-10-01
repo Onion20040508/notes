@@ -1,0 +1,28 @@
+% Figure for Logic and Proofs §22.
+\begin{tikzpicture}[x=0.7cm, y=0.7cm]
+  \draw[-{Stealth[length=2mm]}, black!60] (-0.4,0) -- (5.8,0) node[right, font=\small, black] {$a$};
+  \draw[-{Stealth[length=2mm]}, black!60] (0,-0.4) -- (0,5.8) node[above, font=\small, black] {$b$};
+  \foreach \t in {0,...,5} {
+    \node[font=\scriptsize, below] at (\t,-0.1) {$\t$};
+    \node[font=\scriptsize, left] at (-0.1,\t) {$\t$};
+  }
+  % diagonals a - b = k
+  \foreach \k/\c in {-2/figG, -1/figB, 0/black!80, 1/figR, 2/figO} {
+    \pgfmathsetmacro{\s}{max(0,\k)}
+    \pgfmathsetmacro{\e}{min(5,5+\k)}
+    \draw[\c, thick] (\s,\s-\k) -- (\e,\e-\k);
+  }
+  \foreach \a in {0,...,5} { \foreach \b in {0,...,5} { \fill[black!30] (\a,\b) circle (1.6pt); } }
+  \foreach \k/\c in {-2/figG, -1/figB, 0/black!80, 1/figR, 2/figO} {
+    \foreach \a in {0,...,5} {
+      \pgfmathtruncatemacro{\b}{\a-\k}
+      \ifnum\b>-1 \ifnum\b<6 \fill[\c] (\a,\b) circle (2.4pt); \fi\fi
+    }
+  }
+  \node[figG, font=\small, above] at (3,5) {$-2$};
+  \node[figB, font=\small, above] at (4,5) {$-1$};
+  \node[black!80, font=\small, above right] at (5,5) {$0$};
+  \node[figR, font=\small, right] at (5,4) {$1$};
+  \node[figO, font=\small, right] at (5,3) {$2$};
+  \node[font=\small, align=left, anchor=west] at (6.6,1.6) {class of $(a,b)$\\$=$ the diagonal\\ $a-b=$ const.\\[2pt] $[(a,b)]$ stands for $a-b$};
+\end{tikzpicture}

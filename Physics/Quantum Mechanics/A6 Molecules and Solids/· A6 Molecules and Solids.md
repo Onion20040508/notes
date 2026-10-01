@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· A5 Atoms and Spin]] · ↑ [[Quantum Mechanics]] · [[· A7 Nuclear Physics]] →
 
 **Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (4), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (15)
-**Used by:** —
+**Used by:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (1), [[· B7 Identical Particles|B7 Identical Particles]] (4)
 
 ## Sections
 - [[§A6.1 Molecular Bonds and Spectra]] — UP Vol. 3 §9.1–9.2

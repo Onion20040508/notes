@@ -1,0 +1,25 @@
+% Figure for Logic and Proofs §7.
+\begin{tikzpicture}[x=0.55cm, y=0.55cm]
+  % highlight column m = 3 and row n = 1
+  \fill[figB!12, rounded corners=2pt] (2.6,0.55) rectangle (3.4,8.45);
+  \fill[figR!12, rounded corners=2pt] (0.55,0.6) rectangle (8.45,1.4);
+  \foreach \m in {1,...,8} {
+    \foreach \n in {1,...,8} {
+      \ifnum\m<\n
+        \fill[black] (\m,\n) circle (2.2pt);
+      \else
+        \draw[black!55] (\m,\n) circle (2.2pt);
+      \fi
+    }
+    \node[font=\scriptsize] at (\m,0) {$\m$};
+    \node[font=\scriptsize] at (0,\m) {$\m$};
+  }
+  \draw[-stealth, thin] (0.4,-0.6) -- (9.2,-0.6) node[right, font=\small] {$m$};
+  \draw[-stealth, thin] (-0.6,0.4) -- (-0.6,9.2) node[above, font=\small] {$n$};
+  \draw[figB, thick] (3,4) circle (4pt);
+  \node[figB, font=\scriptsize, anchor=west] at (9.4,6.2) {column $\{3\}\times\mathbb{Z}^+$};
+  \node[figB, font=\scriptsize, anchor=west] at (9.4,5.5) {contains $(3,4)$};
+  \draw[figB, thin, -stealth] (9.3,5.85) -- (3.5,5.85);
+  \node[figR, font=\scriptsize, anchor=west] at (9.4,1) {row $\mathbb{Z}^+\times\{1\}$: no solid dot};
+  \node[font=\scriptsize, black!60] at (4.5,9.4) {$\bullet$: $m<n$ \quad $\circ$: $m\not<n$};
+\end{tikzpicture}

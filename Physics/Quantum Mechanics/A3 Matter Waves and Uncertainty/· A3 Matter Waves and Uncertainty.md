@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· A2 The Nuclear Atom and the Bohr Model]] · ↑ [[Quantum Mechanics]] · [[· A4 The Schrödinger Equation in One Dimension]] →
 
 **Builds on:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (1), [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (1), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1)
-**Used by:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (1), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (20), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (5), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (1), [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (2)
+**Used by:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (1), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (20), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (5), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (1), [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (2), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (3), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (7), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (2), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (3)
 
 ## Sections
 - [[§A3.1 De Broglie's Matter Waves]] — UP Vol. 3 §6.5
