@@ -1,0 +1,26 @@
+% Figure for Oscillations, Waves and Optics §B10.2: (top) the interferogram of PHY 300 Worksheet 10, Question 3 — a Mach–Zehnder interferometer with a delay stage, source of the quasi-monochromatic model with coherence time 1e-10 s and wavelength 1 mm; I(x)/I(0) = (1/2)[1 + (1 - 2|x|/c tau0) cos(4 pi x/lambda)] for 2|x| < c tau0 (Theorems §B10.2.1, §B10.2.3); (bottom) fringe visibility against path difference for three line shapes of the same FWHM line width (Theorem §B10.2.4): rectangular wave trains (sinc^2 line), Lorentzian line, Gaussian line.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=top, width=12.5cm, height=4.6cm, xmin=-22, xmax=22, ymin=0, ymax=1.18,
+      xtick={-20,-15,-10,-5,0,5,10,15,20}, ytick={0,0.5,1}, yticklabels={$0$,$\tfrac12$,$1$},
+      xlabel={delay-stage displacement $x$ (mm)}, ylabel={$I(x)/I(0)$}, clip=false]
+    \addplot[figB, line width=0.45pt, samples=3501, domain=-22:22] {0.5*(1 + max(0, 1 - 2*abs(x)/29.98)*cos(deg(4*pi*x)))};
+    \addplot[figR, dashed, line width=0.7pt, samples=3, domain=-14.99:0] {0.5*(1 + 1 + 2*x/29.98)};
+    \addplot[figR, dashed, line width=0.7pt, samples=3, domain=0:14.99] {0.5*(1 + 1 - 2*x/29.98)};
+    \addplot[figR, dashed, line width=0.7pt, samples=3, domain=-14.99:0] {0.5*(1 - 1 - 2*x/29.98)};
+    \addplot[figR, dashed, line width=0.7pt, samples=3, domain=0:14.99] {0.5*(1 - 1 + 2*x/29.98)};
+    \draw[black!55, thin, densely dotted] (axis cs:-22,0.5) -- (axis cs:22,0.5);
+    \draw[black!55, thin, <->] (axis cs:-14.99,1.08) -- node[above, font=\scriptsize, black!70] {$2|x| < c\tau_0 = 3.0\ \mathrm{cm}$} (axis cs:14.99,1.08);
+    \node[font=\scriptsize, black!70, anchor=west, align=left] at (axis cs:15.6,0.80) {no fringes:\\ $I = I(0)/2$};
+    \node[font=\scriptsize, figR, anchor=east] at (axis cs:-7.5,0.93) {envelope};
+  \end{axis}
+  \begin{axis}[nfig, at={(top.south)}, anchor=north, yshift=-1.6cm, width=12.5cm, height=4.8cm, xmin=0, xmax=1.25, ymin=0, ymax=1.08,
+      xtick={0,0.25,0.5,0.75,1,1.25}, ytick={0,0.5,1},
+      xlabel={path difference $\Delta l$ in units of $c/\Delta\nu$ ($\Delta\nu$: full width at half maximum of the line)}, ylabel={visibility $\mathcal V$}, clip=false]
+    \addplot[figB, samples=200, domain=0:1.25] {max(0, 1 - x/0.8859)};
+    \addplot[figR, samples=200, domain=0:1.25] {exp(-pi*x)};
+    \addplot[figG, samples=200, domain=0:1.25] {exp(-(pi*x)^2/(4*ln(2)))};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.62,0.42) {wave trains of length $c\tau_0$ (line $\propto \mathrm{sinc}^2$)};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.30,0.16) {Lorentzian line};
+    \node[figG, font=\scriptsize, anchor=south west] at (axis cs:0.53,0.72) {Gaussian line};
+  \end{axis}
+\end{tikzpicture}

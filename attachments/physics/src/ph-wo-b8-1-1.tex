@@ -1,0 +1,24 @@
+% Figure for Oscillations, Waves and Optics §B8.1 (polarization ellipses traced by the real field E = Re[(x̂ + 0.7 e^{iδ} ŷ) e^{i(kz - ωt)}] at fixed z, for eight values of the phase difference δ, seen by an observer facing the oncoming wave; arrows give the sense of rotation in time (Theorem §B8.1.3)).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  \foreach \d/\lab/\hand [count=\i from 0] in {0/0/linear, 45/{\pi/4}/left, 90/{\pi/2}/left, 135/{3\pi/4}/left, 180/\pi/linear, 225/{-3\pi/4}/right, 270/{-\pi/2}/right, 315/{-\pi/4}/right} {
+    \pgfmathsetmacro{\xo}{mod(\i,4)*3.3}
+    \pgfmathsetmacro{\yo}{-int(\i/4)*3.3}
+    \begin{scope}[shift={(\xo,\yo)}]
+      \draw[black!35, thin] (-1.25,0) -- (1.25,0);
+      \draw[black!35, thin] (0,-1.05) -- (0,1.05);
+      \draw[black!30, thin, dashed] (-1,-0.7) rectangle (1,0.7);
+      \ifnum\d=0
+        \draw[figB, line width=1.1pt, <->] ({-cos(atan(0.7))*1.2207},{-sin(atan(0.7))*1.2207}) -- ({cos(atan(0.7))*1.2207},{sin(atan(0.7))*1.2207});
+      \else\ifnum\d=180
+        \draw[figB, line width=1.1pt, <->] ({-cos(atan(0.7))*1.2207},{sin(atan(0.7))*1.2207}) -- ({cos(atan(0.7))*1.2207},{-sin(atan(0.7))*1.2207});
+      \else
+        \ifnum\d<180 \def\col{figR}\else\def\col{figG}\fi
+        \draw[\col, line width=1.1pt, smooth, samples=120, domain=360:0, postaction={decorate}, decoration={markings, mark=at position 0.1 with {\arrow{Stealth[length=2.6mm]}}, mark=at position 0.6 with {\arrow{Stealth[length=2.6mm]}}}] plot ({cos(\x)}, {0.7*cos(\x+\d)});
+      \fi\fi
+      \node[font=\scriptsize, anchor=north] at (0,-1.1) {$\delta = \lab$};
+      \node[font=\scriptsize, black!60, anchor=north] at (0,-1.45) {\hand};
+    \end{scope}
+  }
+  \node[font=\scriptsize, black!60] at (-1.45,0.95) {$y$};
+  \node[font=\scriptsize, black!60] at (1.2,0.18) {$x$};
+\end{tikzpicture}
