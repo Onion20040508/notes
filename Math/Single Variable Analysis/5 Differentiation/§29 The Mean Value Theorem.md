@@ -4,7 +4,7 @@ section: 29
 chapter: 5
 tags: [real-analysis, math451]
 ---
-← [[§28 Basic Properties of the Derivative]] · ↑ [[5 Differentiation]] · [[§30 L'Hospital's Rule]] →
+← [[§28 Basic Properties of the Derivative]] · ↑ [[· 5 Differentiation]] · [[§30 L'Hospital's Rule]] →
 
 We come to an important section — the first of the three main results of this chapter.
 

@@ -17,8 +17,8 @@ tags: [differentiable-manifolds, hub]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-5|Theorem §3.5: Subspaces Inherit Both Conditions]]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-6|Definition §3.6: Open Equivalence Relation]]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-7|Definition §3.7: Saturation and Saturated Sets]]
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-10|Definition §3.10: Graph of a Relation]]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-10|Theorem §3.10: Universal Property of the Product]]
+- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-10|Definition §3.10: Graph of a Relation]]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-11|Definition §3.11: Complex Projective Space ℂPⁿ]]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-17|Proposition §3.17: Openness via Saturations]]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-26|Theorem §3.26: Hausdorff Criterion]]
@@ -31,6 +31,7 @@ tags: [differentiable-manifolds, hub]
 - [[Heine–Borel Theorem]] (Topology)
 - [[§11 Metric Topology#^thm-11-4|590 §11.4: Every Metric Space is Hausdorff]]
 - [[§15 Compact Spaces#^thm-15-8|590 §15.8: Finite Product of Compact Spaces]]
+- [[§16 Limit Point Compactness#^thm-16-2|590 §16.2: Equivalence for Metrizable Spaces]]
 
 ## Used in (Differentiable Manifolds)
 - [[§6 Group Actions and Orbit Spaces#^ex-6-3|Example §6.3: ℂPⁿ Is an Orbit Space]]

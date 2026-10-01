@@ -5,7 +5,7 @@ chapter: 8
 section: 36
 tags: [group-theory, math493]
 ---
-← [[§35 Normal Subgroups]] · ↑ [[8 Normal Subgroups and Quotient Groups]] · [[§37 Quotient Groups]] →
+← [[§35 Normal Subgroups]] · ↑ [[· 8 Normal Subgroups and Quotient Groups]] · [[§37 Quotient Groups]] →
 
 *Reference: Pinter Ch. 14.*
 
@@ -159,7 +159,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 > - This is condition (2) of [[§35 Normal Subgroups#^thm-35-3|Five Characterizations of Normality]]; used to prove [[§39 Simple Groups#^prop-39-6|A₅ Is Simple]].
 
 > [!example] Example §36.3: Normal Subgroups of $S_3$ and $S_4$
-> (For $S_3$, compare the lattice in [[§13 Subgroups of S₃#^prop-13-1|the figure of §13]].) In the language of [[7 Conjugacy and the Center|Chapter 7]]: $G$ acts on itself by conjugation, the orbits are the conjugacy classes, and a subgroup is normal precisely when it is a union of orbits — stable under the action. This gives a quick normality test once the conjugacy classes are known. In $S_3$ the classes are $\{e\}$, the three transpositions, and the two $3$-cycles ([[§32 Conjugation as an Action and the Class Equation#^ex-32-1|Ex. §32.1]]), so a normal subgroup must be a union of these containing $e$ with order dividing $6$: the only options are $\{e\}$, $\{e, (1\,2\,3), (1\,3\,2)\}$, and $S_3$, confirming that $\{e, (1\,2)\}$ is not normal. In $S_4$, with class sizes $1, 6, 3, 8, 6$, a normal subgroup has order a sum of class sizes including the $1$ and dividing $24$; this singles out $\{e\}$, $1 + 3 = 4$ (the Klein four-group $V = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$), $1 + 3 + 8 = 12$ ($A_4$), and $S_4$, and each is indeed a normal subgroup.
+> (For $S_3$, compare the lattice in [[§13 Subgroups of S₃#^prop-13-1|the figure of §13]].) In the language of [[· 7 Conjugacy and the Center|Chapter 7]]: $G$ acts on itself by conjugation, the orbits are the conjugacy classes, and a subgroup is normal precisely when it is a union of orbits — stable under the action. This gives a quick normality test once the conjugacy classes are known. In $S_3$ the classes are $\{e\}$, the three transpositions, and the two $3$-cycles ([[§32 Conjugation as an Action and the Class Equation#^ex-32-1|Ex. §32.1]]), so a normal subgroup must be a union of these containing $e$ with order dividing $6$: the only options are $\{e\}$, $\{e, (1\,2\,3), (1\,3\,2)\}$, and $S_3$, confirming that $\{e, (1\,2)\}$ is not normal. In $S_4$, with class sizes $1, 6, 3, 8, 6$, a normal subgroup has order a sum of class sizes including the $1$ and dividing $24$; this singles out $\{e\}$, $1 + 3 = 4$ (the Klein four-group $V = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$), $1 + 3 + 8 = 12$ ($A_4$), and $S_4$, and each is indeed a normal subgroup.
 
 ^ex-36-3
 

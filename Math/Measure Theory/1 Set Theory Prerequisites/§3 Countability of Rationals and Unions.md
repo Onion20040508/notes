@@ -5,7 +5,7 @@ chapter: 1
 section: 3
 tags: [measure-theory, math551]
 ---
-← [[§2 The Cantor–Bernstein Theorem]] · ↑ [[1 Set Theory Prerequisites]] · [[§4 Uncountability]] →
+← [[§2 The Cantor–Bernstein Theorem]] · ↑ [[· 1 Set Theory Prerequisites]] · [[§4 Uncountability]] →
 
 > [!example] Example §3.1: $\mathbb{Q}$ is countable
 > The set of rational numbers $\mathbb{Q}$ is countable.

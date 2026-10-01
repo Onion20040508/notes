@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 12.8", "v ↦ D_v", "Lee Proposition 3.2", "Lee Proposition 5.37"]
+aliases: ["MATH 591 12.8", "v ↦ D_v", "Lee Proposition 3.2", "Lee Proposition 5.37", "Lee Proposition 5.38"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-8]]
@@ -13,8 +13,8 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-1|Definition §11.1: Geometric Tangent Space]]
 - [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|Theorem §11.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
-- [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-1|Proposition §12.1: Basic Properties of D_v]]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-1|Definition §12.1: The Directional Derivative Attached to a Tangent Vector]]
+- [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-1|Proposition §12.1: Basic Properties of D_v]]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-2|Proposition §12.2: D_v Determines v]]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-16|Theorem §12.16: Basis Theorem]]
 

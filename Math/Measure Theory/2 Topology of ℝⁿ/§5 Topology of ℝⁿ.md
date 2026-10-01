@@ -5,7 +5,7 @@ chapter: 2
 section: 5
 tags: [measure-theory, math551]
 ---
-← [[§4 Uncountability]] · ↑ [[2 Topology of ℝⁿ]] · [[§6 Open Covers and the Heine–Borel Theorem]] →
+← [[§4 Uncountability]] · ↑ [[· 2 Topology of ℝⁿ]] · [[§6 Open Covers and the Heine–Borel Theorem]] →
 
 ## Open and Closed Sets
 

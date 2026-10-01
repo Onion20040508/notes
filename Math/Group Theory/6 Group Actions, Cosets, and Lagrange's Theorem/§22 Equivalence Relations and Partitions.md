@@ -5,7 +5,7 @@ chapter: 6
 section: 22
 tags: [group-theory, math493]
 ---
-← [[§21 The Structure of Uₙ]] · ↑ [[6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§23 Actions]] →
+← [[§21 The Structure of Uₙ]] · ↑ [[· 6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§23 Actions]] →
 
 *Reference: Pinter Ch. 12.*
 

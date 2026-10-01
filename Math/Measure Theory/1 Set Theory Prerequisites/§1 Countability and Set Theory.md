@@ -5,7 +5,7 @@ chapter: 1
 section: 1
 tags: [measure-theory, math551]
 ---
-↑ [[1 Set Theory Prerequisites]] · [[§2 The Cantor–Bernstein Theorem]] →
+↑ [[· 1 Set Theory Prerequisites]] · [[§2 The Cantor–Bernstein Theorem]] →
 
 ## Countability of Sets
 

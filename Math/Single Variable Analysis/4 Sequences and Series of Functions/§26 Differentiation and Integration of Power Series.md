@@ -4,7 +4,7 @@ section: 26
 chapter: 4
 tags: [real-analysis, math451]
 ---
-← [[§25 More on Uniform Convergence]] · ↑ [[4 Sequences and Series of Functions]] · [[§27 Weierstrass's Approximation Theorem (Not Covered)]] →
+← [[§25 More on Uniform Convergence]] · ↑ [[· 4 Sequences and Series of Functions]] · [[§27 Weierstrass's Approximation Theorem (Not Covered)]] →
 
 We now apply the machinery of §24–§25 to power series — with striking consequences.
 

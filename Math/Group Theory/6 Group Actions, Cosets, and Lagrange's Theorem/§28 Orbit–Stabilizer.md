@@ -5,7 +5,7 @@ chapter: 6
 section: 28
 tags: [group-theory, math493]
 ---
-← [[§27 The Index and Lagrange's Theorem]] · ↑ [[6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§29 G Acting on Coset Spaces]] →
+← [[§27 The Index and Lagrange's Theorem]] · ↑ [[· 6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§29 G Acting on Coset Spaces]] →
 
 *Reference: Pinter Ch. 13, Ex. J.*
 
@@ -105,7 +105,7 @@ tags: [group-theory, math493]
 *The four-petal figure from lecture. Red: the orbit $\{x_1, x_2, x_3, x_4\}$ of the tip $x_1$. Green: the vertical axis, whose reflection $r_v$ together with $e$ forms $\operatorname{Stab}(x_1)$. Dotted: the other three reflection axes.*
 
 > [!remark] Remark: Where Orbit–Stabilizer Has Already Appeared
-> Two instances: the cosets of the point stabilizer in $S_n$ ([[§28 Orbit–Stabilizer#^cor-28-5|next subsection]]), where the orbit of $n$ is all of $\{1, \ldots, n\}$ and $n! = (n-1)! \cdot n$; and the conjugacy classes of a group ([[7 Conjugacy and the Center|Chapter 7]]), which are the orbits of the conjugation action, so that their sizes divide $|G|$ — e.g. $1, 6, 3, 8, 6$ in $S_4$.
+> Two instances: the cosets of the point stabilizer in $S_n$ ([[§28 Orbit–Stabilizer#^cor-28-5|next subsection]]), where the orbit of $n$ is all of $\{1, \ldots, n\}$ and $n! = (n-1)! \cdot n$; and the conjugacy classes of a group ([[· 7 Conjugacy and the Center|Chapter 7]]), which are the orbits of the conjugation action, so that their sizes divide $|G|$ — e.g. $1, 6, 3, 8, 6$ in $S_4$.
 
 ^rem-28-2
 

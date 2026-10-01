@@ -23,7 +23,7 @@ tags: [linear-algebra, hub]
 - [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|Proposition §30.2: O_3(ℝ) Acting on ℝ³]]
 
 ## Used in (Differentiable Manifolds)
-- [[§7 Homogeneous Spaces#^prop-7-11|Proposition §7.11: O(n) Acts Transitively on Grₖ(ℝⁿ)]]
+- [[§7 Homogeneous Spaces#^prop-7-11|Proposition §7.11: O(n) Acts Transitively on Gr_k(ℝⁿ)]]
 
 ## Connections
 - Existence of orthonormal bases [[6B Orthonormal Bases#^ladr-6-35|6.35]]; triangular form [[6B Orthonormal Bases#^ladr-6-37|6.37]]; QR factorization is Gram–Schmidt in matrix form ([[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|QR factorization]]).

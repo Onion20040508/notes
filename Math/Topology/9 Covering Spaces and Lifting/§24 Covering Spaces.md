@@ -6,7 +6,7 @@ section: 24
 munkres: "§53"
 tags: [topology, math590]
 ---
-← [[§23 The Fundamental Group]] · ↑ [[9 Covering Spaces and Lifting]] · [[§25 The Fundamental Theorem of Algebra]] →
+← [[§23 The Fundamental Group]] · ↑ [[· 9 Covering Spaces and Lifting]] · [[§25 The Fundamental Theorem of Algebra]] →
 
 ## Evenly Covered Sets and Covering Maps
 

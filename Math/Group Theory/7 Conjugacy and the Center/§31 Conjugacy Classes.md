@@ -5,7 +5,7 @@ chapter: 7
 section: 31
 tags: [group-theory, math493]
 ---
-← [[§30 Examples꞉ Linear Groups and the Cube]] · ↑ [[7 Conjugacy and the Center]] · [[§32 Conjugation as an Action and the Class Equation]] →
+← [[§30 Examples꞉ Linear Groups and the Cube]] · ↑ [[· 7 Conjugacy and the Center]] · [[§32 Conjugation as an Action and the Class Equation]] →
 
 *Reference: Pinter Ch. 13, Ex. I.*
 

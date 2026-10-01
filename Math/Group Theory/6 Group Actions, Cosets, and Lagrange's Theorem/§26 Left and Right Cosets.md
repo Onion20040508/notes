@@ -5,7 +5,7 @@ chapter: 6
 section: 26
 tags: [group-theory, math493]
 ---
-← [[§25 Orbits]] · ↑ [[6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§27 The Index and Lagrange's Theorem]] →
+← [[§25 Orbits]] · ↑ [[· 6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§27 The Index and Lagrange's Theorem]] →
 
 *Reference: Pinter Ch. 13.*
 
@@ -107,7 +107,7 @@ tags: [group-theory, math493]
 > - The standard non-normal subgroup: [[§35 Normal Subgroups#^ex-35-1|A Non-Normal Subgroup of S₃, §35.1]].
 
 > [!remark] Remark: Normal Subgroups
-> In many important cases the two decompositions coincide, i.e. $gH = Hg$ for every $g$; such a subgroup is called *[[§35 Normal Subgroups#^def-35-1|normal]]*, and these are exactly the subgroups for which the set of cosets inherits a group structure. See [[8 Normal Subgroups and Quotient Groups|Chapter 8]]; the example [[§26 Left and Right Cosets#^ex-26-1|Left and Right Cosets Differ in S₃]] is the standard non-normal one.
+> In many important cases the two decompositions coincide, i.e. $gH = Hg$ for every $g$; such a subgroup is called *[[§35 Normal Subgroups#^def-35-1|normal]]*, and these are exactly the subgroups for which the set of cosets inherits a group structure. See [[· 8 Normal Subgroups and Quotient Groups|Chapter 8]]; the example [[§26 Left and Right Cosets#^ex-26-1|Left and Right Cosets Differ in S₃]] is the standard non-normal one.
 
 ^rem-26-2
 

@@ -6,7 +6,7 @@ section: 25
 munkres: "§56"
 tags: [topology, math590]
 ---
-← [[§24 Covering Spaces]] · ↑ [[10 Applications of π₁]] · [[§26 Deformation Retracts and Homotopy Type]] →
+← [[§24 Covering Spaces]] · ↑ [[· 10 Applications of π₁]] · [[§26 Deformation Retracts and Homotopy Type]] →
 
 > [!theorem] Theorem §25.1: Fundamental Theorem of Algebra
 > Every polynomial equation $x^n + a_{n-1}x^{n-1} + \cdots + a_1 x + a_0 = 0$ with coefficients in $\mathbb{R}$ or $\mathbb{C}$, $n > 0$, has at least one root in $\mathbb{C}$.

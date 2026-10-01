@@ -4,7 +4,7 @@ section: 9
 chapter: 2
 tags: [real-analysis, math451]
 ---
-← [[§8 A Discussion About Proofs]] · ↑ [[2 Sequences]] · [[§10 Monotone Sequences and Cauchy Sequences]] →
+← [[§8 A Discussion About Proofs]] · ↑ [[· 2 Sequences]] · [[§10 Monotone Sequences and Cauchy Sequences]] →
 
 We want to simplify life — not using $(\varepsilon, N)$ every time. The theorems of this section let us compute limits by combining known ones.
 

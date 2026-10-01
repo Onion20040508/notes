@@ -5,7 +5,7 @@ chapter: 4
 section: 14
 tags: [group-theory, math493]
 ---
-← [[§13 Subgroups of S₃]] · ↑ [[4 Homomorphisms and Isomorphisms]] · [[§15 Homomorphisms]] →
+← [[§13 Subgroups of S₃]] · ↑ [[· 4 Homomorphisms and Isomorphisms]] · [[§15 Homomorphisms]] →
 
 *Reference: Pinter Ch. 3 (group tables), Ch. 9 (isomorphism).*
 

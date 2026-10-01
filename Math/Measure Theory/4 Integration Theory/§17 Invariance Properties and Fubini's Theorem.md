@@ -5,7 +5,7 @@ chapter: 4
 section: 17
 tags: [measure-theory, math551]
 ---
-← [[§16 The L¹ Space and Density Theorems]] · ↑ [[4 Integration Theory]] · [[§18 Differentiation Theory]] →
+← [[§16 The L¹ Space and Density Theorems]] · ↑ [[· 4 Integration Theory]] · [[§18 Differentiation Theory]] →
 
 ## Translation Invariance of the Lebesgue Integral
 

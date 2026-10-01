@@ -5,7 +5,7 @@ chapter: 4
 section: 14
 tags: [measure-theory, math551]
 ---
-← [[§13 Egorov's and Lusin's Theorems]] · ↑ [[4 Integration Theory]] · [[§15 The General Lebesgue Integral]] →
+← [[§13 Egorov's and Lusin's Theorems]] · ↑ [[· 4 Integration Theory]] · [[§15 The General Lebesgue Integral]] →
 
 ## Definition and Well-Definedness
 

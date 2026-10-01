@@ -4,7 +4,7 @@ section: 23
 chapter: 4
 tags: [real-analysis, math451]
 ---
-← [[§22 More on Metric Spaces꞉ Connectedness]] · ↑ [[4 Sequences and Series of Functions]] · [[§24 Uniform Convergence]] →
+← [[§22 More on Metric Spaces꞉ Connectedness]] · ↑ [[· 4 Sequences and Series of Functions]] · [[§24 Uniform Convergence]] →
 
 The simplest functions are the constants $a$ and the variable $x$. Starting from them we get all polynomials $a_0 + a_1 x + \cdots + a_n x^n$. Letting $n \to +\infty$, we should get **power series**
 

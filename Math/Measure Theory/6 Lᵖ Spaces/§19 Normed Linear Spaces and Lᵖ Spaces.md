@@ -5,7 +5,7 @@ chapter: 6
 section: 19
 tags: [measure-theory, math551]
 ---
-← [[§18 Differentiation Theory]] · ↑ [[6 Lᵖ Spaces]]
+← [[§18 Differentiation Theory]] · ↑ [[· 6 Lᵖ Spaces]]
 
 ## Normed Linear Spaces
 

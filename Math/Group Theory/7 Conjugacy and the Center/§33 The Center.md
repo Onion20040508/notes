@@ -5,7 +5,7 @@ chapter: 7
 section: 33
 tags: [group-theory, math493]
 ---
-← [[§32 Conjugation as an Action and the Class Equation]] · ↑ [[7 Conjugacy and the Center]] · [[§34 Multiplying Cosets]] →
+← [[§32 Conjugation as an Action and the Class Equation]] · ↑ [[· 7 Conjugacy and the Center]] · [[§34 Multiplying Cosets]] →
 
 *Reference: Pinter Ch. 15, Exs. F–G.*
 

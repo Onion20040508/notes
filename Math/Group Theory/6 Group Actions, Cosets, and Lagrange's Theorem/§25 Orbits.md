@@ -5,7 +5,7 @@ chapter: 6
 section: 25
 tags: [group-theory, math493]
 ---
-← [[§24 Stabilizers and Fixed Points]] · ↑ [[6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§26 Left and Right Cosets]] →
+← [[§24 Stabilizers and Fixed Points]] · ↑ [[· 6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§26 Left and Right Cosets]] →
 
 *Reference: Pinter Ch. 13, Ex. J.*
 

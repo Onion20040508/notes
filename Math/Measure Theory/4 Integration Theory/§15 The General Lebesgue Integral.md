@@ -5,7 +5,7 @@ chapter: 4
 section: 15
 tags: [measure-theory, math551]
 ---
-← [[§14 The Lebesgue Integral for Simple Functions]] · ↑ [[4 Integration Theory]] · [[§16 The L¹ Space and Density Theorems]] →
+← [[§14 The Lebesgue Integral for Simple Functions]] · ↑ [[· 4 Integration Theory]] · [[§16 The L¹ Space and Density Theorems]] →
 
 We now extend the Lebesgue integral from non-negative functions to general measurable functions that may take negative values.
 

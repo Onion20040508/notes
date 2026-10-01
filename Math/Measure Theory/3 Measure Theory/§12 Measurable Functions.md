@@ -5,7 +5,7 @@ chapter: 3
 section: 12
 tags: [measure-theory, math551]
 ---
-← [[§11 Borel Sets and Measure Spaces]] · ↑ [[3 Measure Theory]] · [[§13 Egorov's and Lusin's Theorems]] →
+← [[§11 Borel Sets and Measure Spaces]] · ↑ [[· 3 Measure Theory]] · [[§13 Egorov's and Lusin's Theorems]] →
 
 ## Extended Real Numbers
 

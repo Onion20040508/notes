@@ -66,15 +66,15 @@ graph TD
 ```
 
 ## Chapters
-- [[1 Groups and Subgroups]]
-- [[2 Arithmetic Modulo n]]
-- [[3 Permutations]]
-- [[4 Homomorphisms and Isomorphisms]]
-- [[5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]]
-- [[6 Group Actions, Cosets, and Lagrange's Theorem]]
-- [[7 Conjugacy and the Center]]
-- [[8 Normal Subgroups and Quotient Groups]]
-- [[9 Characters and Commutators]]
+- [[· 1 Groups and Subgroups]]
+- [[· 2 Arithmetic Modulo n]]
+- [[· 3 Permutations]]
+- [[· 4 Homomorphisms and Isomorphisms]]
+- [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]]
+- [[· 6 Group Actions, Cosets, and Lagrange's Theorem]]
+- [[· 7 Conjugacy and the Center]]
+- [[· 8 Normal Subgroups and Quotient Groups]]
+- [[· 9 Characters and Commutators]]
 
 ## Planned topics (syllabus)
 First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓); the Sylow theorems; composition series and the Jordan–Hölder theorem; simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups (maybe up to order 168); solvable and nilpotent groups; semidirect products; central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups.

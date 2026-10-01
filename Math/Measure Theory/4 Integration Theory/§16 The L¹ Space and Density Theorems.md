@@ -5,7 +5,7 @@ chapter: 4
 section: 16
 tags: [measure-theory, math551]
 ---
-← [[§15 The General Lebesgue Integral]] · ↑ [[4 Integration Theory]] · [[§17 Invariance Properties and Fubini's Theorem]] →
+← [[§15 The General Lebesgue Integral]] · ↑ [[· 4 Integration Theory]] · [[§17 Invariance Properties and Fubini's Theorem]] →
 
 ## Absolute Continuity of the Integral
 

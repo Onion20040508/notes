@@ -5,7 +5,7 @@ chapter: 4
 section: 18
 tags: [group-theory, math493]
 ---
-← [[§17 Cyclic Groups]] · ↑ [[4 Homomorphisms and Isomorphisms]] · [[§19 Polynomial Rings, Permutation Matrices, and Representations]] →
+← [[§17 Cyclic Groups]] · ↑ [[· 4 Homomorphisms and Isomorphisms]] · [[§19 Polynomial Rings, Permutation Matrices, and Representations]] →
 
 *Reference: Pinter Ch. 4, Ex. G (direct products); Ch. 13, Ex. I (conjugate elements).*
 

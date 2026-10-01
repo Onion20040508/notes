@@ -5,7 +5,7 @@ chapter: 2
 section: 7
 tags: [topology, math590]
 ---
-← [[§6 Closed Sets and Limit Points]] · ↑ [[2 Closedness, Continuity, and Hausdorff]] · [[§8 Hausdorff Spaces]] →
+← [[§6 Closed Sets and Limit Points]] · ↑ [[· 2 Closedness, Continuity, and Hausdorff]] · [[§8 Hausdorff Spaces]] →
 
 ## Definitions
 

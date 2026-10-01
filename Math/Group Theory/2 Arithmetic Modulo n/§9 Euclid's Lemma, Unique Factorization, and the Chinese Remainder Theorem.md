@@ -5,7 +5,7 @@ chapter: 2
 section: 9
 tags: [group-theory, math493]
 ---
-← [[§8 Invertibility and Unit Groups]] · ↑ [[2 Arithmetic Modulo n]] · [[§10 Cycle Notation and the Group S₃]] →
+← [[§8 Invertibility and Unit Groups]] · ↑ [[· 2 Arithmetic Modulo n]] · [[§10 Cycle Notation and the Group S₃]] →
 
 *Reference: Pinter Ch. 22 (factoring into primes), Ch. 23 (simultaneous congruences).*
 

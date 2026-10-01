@@ -6,7 +6,7 @@ section: 19
 munkres: "§31"
 tags: [topology, math590]
 ---
-← [[§18 Countability Axioms]] · ↑ [[6 Countability and Separation]] · [[§20 Normal Spaces]] →
+← [[§18 Countability Axioms]] · ↑ [[· 6 Countability and Separation]] · [[§20 Normal Spaces]] →
 
 ## The Separation Hierarchy
 

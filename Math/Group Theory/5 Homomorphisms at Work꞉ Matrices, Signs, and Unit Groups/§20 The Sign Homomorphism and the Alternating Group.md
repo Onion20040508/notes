@@ -5,7 +5,7 @@ chapter: 5
 section: 20
 tags: [group-theory, math493]
 ---
-← [[§19 Polynomial Rings, Permutation Matrices, and Representations]] · ↑ [[5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] · [[§21 The Structure of Uₙ]] →
+← [[§19 Polynomial Rings, Permutation Matrices, and Representations]] · ↑ [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] · [[§21 The Structure of Uₙ]] →
 
 *Reference: Pinter Ch. 8 (even and odd permutations).*
 

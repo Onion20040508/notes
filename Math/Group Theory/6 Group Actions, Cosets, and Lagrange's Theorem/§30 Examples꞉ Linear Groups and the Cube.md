@@ -5,7 +5,7 @@ chapter: 6
 section: 30
 tags: [group-theory, math493]
 ---
-← [[§29 G Acting on Coset Spaces]] · ↑ [[6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§31 Conjugacy Classes]] →
+← [[§29 G Acting on Coset Spaces]] · ↑ [[· 6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§31 Conjugacy Classes]] →
 
 *Reference: Not treated in Pinter.*
 

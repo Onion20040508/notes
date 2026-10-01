@@ -4,7 +4,7 @@ section: 18
 chapter: 3
 tags: [real-analysis, math451]
 ---
-← [[§17 Continuous Functions]] · ↑ [[3 Continuity]] · [[§19 Uniform Continuity]] →
+← [[§17 Continuous Functions]] · ↑ [[· 3 Continuity]] · [[§19 Uniform Continuity]] →
 
 Now we come to one of the most exciting sections of this course. We have defined continuous functions and have examples. *What can we do with them?* To use them, we need to know their properties — to sharpen our tools. Throughout, the recurring theme: given $f$, the domain $\operatorname{dom}(f) = \Omega$ is part of the definition; now we want to understand the **image**
 

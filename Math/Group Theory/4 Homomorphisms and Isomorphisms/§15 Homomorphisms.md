@@ -5,7 +5,7 @@ chapter: 4
 section: 15
 tags: [group-theory, math493]
 ---
-← [[§14 Multiplication Tables]] · ↑ [[4 Homomorphisms and Isomorphisms]] · [[§16 Isomorphisms]] →
+← [[§14 Multiplication Tables]] · ↑ [[· 4 Homomorphisms and Isomorphisms]] · [[§16 Isomorphisms]] →
 
 *Reference: Pinter Ch. 14.*
 

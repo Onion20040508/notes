@@ -5,7 +5,7 @@ chapter: 2
 section: 8
 tags: [multivariable-analysis, math452]
 ---
-← [[§7 Directional Derivatives]] · ↑ [[2 Differentiation]] · [[§9 Taylor's Theorem for Multivariable Functions]] →
+← [[§7 Directional Derivatives]] · ↑ [[· 2 Differentiation]] · [[§9 Taylor's Theorem for Multivariable Functions]] →
 
 ## What is the Differential?
 

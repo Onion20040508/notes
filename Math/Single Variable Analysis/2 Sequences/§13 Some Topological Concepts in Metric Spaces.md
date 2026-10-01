@@ -4,7 +4,7 @@ section: 13
 chapter: 2
 tags: [real-analysis, math451]
 ---
-← [[§12 Lim Sup and Lim Inf Continued (Skipped)]] · ↑ [[2 Sequences]] · [[§14 Series]] →
+← [[§12 Lim Sup and Lim Inf Continued (Skipped)]] · ↑ [[· 2 Sequences]] · [[§14 Series]] →
 
 ## Metric Spaces
 

@@ -5,7 +5,7 @@ chapter: 4
 section: 16
 tags: [group-theory, math493]
 ---
-← [[§15 Homomorphisms]] · ↑ [[4 Homomorphisms and Isomorphisms]] · [[§17 Cyclic Groups]] →
+← [[§15 Homomorphisms]] · ↑ [[· 4 Homomorphisms and Isomorphisms]] · [[§17 Cyclic Groups]] →
 
 *Reference: Pinter Ch. 9.*
 

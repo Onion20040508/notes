@@ -5,7 +5,7 @@ chapter: 2
 section: 7
 tags: [multivariable-analysis, math452]
 ---
-← [[§6 Differentiability]] · ↑ [[2 Differentiation]] · [[§8 The Differential]] →
+← [[§6 Differentiability]] · ↑ [[· 2 Differentiation]] · [[§8 The Differential]] →
 
 A basic property of [[§6 Differentiability#^def-6-1|differentiable]] functions $f$ is that they not only possess [[§4 Partial Derivatives#^def-4-1|partial derivatives]] with respect to $x$ and $y$ — or, as we also say, in the $x$- and $y$-directions — but that they have derivatives in **any direction**, and these derivatives can all be expressed in terms of $f_x$ and $f_y$.
 

@@ -5,7 +5,7 @@ chapter: 3
 section: 9
 tags: [differentiable-manifolds, math591]
 ---
-← [[§8 Differentiable Structures]] · ↑ [[3 Smooth Manifolds]] · [[§10 Vector Spaces and Matrix Groups]] →
+← [[§8 Differentiable Structures]] · ↑ [[· 3 Smooth Manifolds]] · [[§10 Vector Spaces and Matrix Groups]] →
 
 *Stage: geometric — The equations thread made smooth: a manifold given inside $\mathbb{R}^N$, and level sets smoothed by graph charts (Proposition [[§9 Manifolds in Euclidean Space#^prop-9-2|§9.2]]).*
 
@@ -70,7 +70,7 @@ tags: [differentiable-manifolds, math591]
 > - The same circle in 452: [[Unit circle and unit sphere]], solved for $y$ near $(0,1)$ by the implicit function theorem in [[§12 The Implicit Function Theorem#^ex-12-1|452 Ex. §12.1]].
 
 > [!remark] Remark: A Parametrization Is an Inverse Chart
-> “A parametrization is just another name for my inverse” — if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§5 Topological Groups and Classical Matrix Groups#The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]]. Theorem [[§9 Manifolds in Euclidean Space#^thm-9-1|§9.1]] says the two carry the same information locally, which is why one may pass freely between “solve the equations” and “draw the parametrization” — “the same thing.”
+> “A parametrization is just another name for my inverse” — if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[· 1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§5 Topological Groups and Classical Matrix Groups#The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]]. Theorem [[§9 Manifolds in Euclidean Space#^thm-9-1|§9.1]] says the two carry the same information locally, which is why one may pass freely between “solve the equations” and “draw the parametrization” — “the same thing.”
 
 ^rem-9-2
 

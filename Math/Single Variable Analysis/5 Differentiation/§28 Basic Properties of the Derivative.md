@@ -4,7 +4,7 @@ section: 28
 chapter: 5
 tags: [real-analysis, math451]
 ---
-← [[§27 Weierstrass's Approximation Theorem (Not Covered)]] · ↑ [[5 Differentiation]] · [[§29 The Mean Value Theorem]] →
+← [[§27 Weierstrass's Approximation Theorem (Not Covered)]] · ↑ [[· 5 Differentiation]] · [[§29 The Mean Value Theorem]] →
 
 > [!definition] Definition §28.1: The Derivative
 > Let $I = (\alpha, \beta)$ be an open interval, $f: I \to \mathbb{R}$, and $a \in I$. We say $f$ is **differentiable at $a$** if

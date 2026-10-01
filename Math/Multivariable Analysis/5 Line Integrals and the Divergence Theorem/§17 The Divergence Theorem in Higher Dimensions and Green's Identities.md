@@ -5,7 +5,7 @@ chapter: 5
 section: 17
 tags: [multivariable-analysis, math452]
 ---
-← [[§16 Line Integrals and Green's Theorem]] · ↑ [[5 Line Integrals and the Divergence Theorem]] · [[§18 Surface Integrals]] →
+← [[§16 Line Integrals and Green's Theorem]] · ↑ [[· 5 Line Integrals and the Divergence Theorem]] · [[§18 Surface Integrals]] →
 
 In the [[§16 Line Integrals and Green's Theorem|previous section]] we derived [[Green's Theorem|Green's theorem]] (2D) and its two vector reformulations: the [[§16 Line Integrals and Green's Theorem#^thm-16-3|2D Stokes form]] (circulation = integral of curl) and the [[§16 Line Integrals and Green's Theorem#^thm-16-2|2D Divergence form]] (flux = integral of divergence). We now extend the Divergence Theorem to $\mathbb{R}^n$ and derive the classical **Green's identities**, which are the key tools for studying the Laplacian.
 

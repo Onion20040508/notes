@@ -5,7 +5,7 @@ chapter: 3
 section: 9
 tags: [measure-theory, math551]
 ---
-← [[§8 Motivation꞉ The Riemann Integral]] · ↑ [[3 Measure Theory]] · [[§10 Lebesgue Measurable Sets]] →
+← [[§8 Motivation꞉ The Riemann Integral]] · ↑ [[· 3 Measure Theory]] · [[§10 Lebesgue Measurable Sets]] →
 
 ## The Lebesgue Idea
 

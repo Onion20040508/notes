@@ -6,7 +6,7 @@ section: 2
 munkres: "§13"
 tags: [topology, math590]
 ---
-← [[§1 Topological Spaces]] · ↑ [[1 Topological Spaces and Constructions]] · [[§3 Order Topology]] →
+← [[§1 Topological Spaces]] · ↑ [[· 1 Topological Spaces and Constructions]] · [[§3 Order Topology]] →
 
 ## Definition of a Basis
 

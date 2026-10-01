@@ -5,7 +5,7 @@ chapter: 5
 section: 19
 tags: [group-theory, math493]
 ---
-← [[§18 Conjugation, Products, and Pointwise Products]] · ↑ [[5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] · [[§20 The Sign Homomorphism and the Alternating Group]] →
+← [[§18 Conjugation, Products, and Pointwise Products]] · ↑ [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] · [[§20 The Sign Homomorphism and the Alternating Group]] →
 
 *Reference: Pinter Ch. 24 (rings of polynomials). Permutation matrices and representations are not treated in Pinter.*
 
@@ -222,7 +222,7 @@ tags: [group-theory, math493]
 > - One-dimensional representations are characters: [[§40 Characters#^rem-40-4|One-Dimensional Representations]]; $\operatorname{sgn}$ is the first example ([[§20 The Sign Homomorphism and the Alternating Group#^rem-20-3|The Origin of the Names]]).
 
 > [!remark] Remark: Group Actions
-> The three ways $S_n$ has appeared — on $\{1, \ldots, n\}$, on $k^n$ via $M(\sigma)$, and on $k[x_1, \ldots, x_n]$ — are instances of a single notion, that of a *group action*, developed in [[6 Group Actions, Cosets, and Lagrange's Theorem|Chapter 6]]; the compatibility statements proved above are exactly the [[§23 Actions#^def-23-1|action axioms]].
+> The three ways $S_n$ has appeared — on $\{1, \ldots, n\}$, on $k^n$ via $M(\sigma)$, and on $k[x_1, \ldots, x_n]$ — are instances of a single notion, that of a *group action*, developed in [[· 6 Group Actions, Cosets, and Lagrange's Theorem|Chapter 6]]; the compatibility statements proved above are exactly the [[§23 Actions#^def-23-1|action axioms]].
 
 ^rem-19-4
 

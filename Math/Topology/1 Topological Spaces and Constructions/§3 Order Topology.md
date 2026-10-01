@@ -6,7 +6,7 @@ section: 3
 munkres: "§3, §14"
 tags: [topology, math590]
 ---
-← [[§2 Basis for a Topology]] · ↑ [[1 Topological Spaces and Constructions]] · [[§4 Product Topology]] →
+← [[§2 Basis for a Topology]] · ↑ [[· 1 Topological Spaces and Constructions]] · [[§4 Product Topology]] →
 
 ## Order Relations and Intervals
 

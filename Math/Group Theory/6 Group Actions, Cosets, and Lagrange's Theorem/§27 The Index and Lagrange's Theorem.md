@@ -5,7 +5,7 @@ chapter: 6
 section: 27
 tags: [group-theory, math493]
 ---
-← [[§26 Left and Right Cosets]] · ↑ [[6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§28 Orbit–Stabilizer]] →
+← [[§26 Left and Right Cosets]] · ↑ [[· 6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§28 Orbit–Stabilizer]] →
 
 *Reference: Pinter Ch. 13 (with Exs. C–D).*
 

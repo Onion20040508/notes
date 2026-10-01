@@ -5,7 +5,7 @@ chapter: 3
 section: 8
 tags: [differentiable-manifolds, math591]
 ---
-← [[§7 Homogeneous Spaces]] · ↑ [[3 Smooth Manifolds]] · [[§9 Manifolds in Euclidean Space]] →
+← [[§7 Homogeneous Spaces]] · ↑ [[· 3 Smooth Manifolds]] · [[§9 Manifolds in Euclidean Space]] →
 
 *Stage: foundations — Charts, atlases and smooth maps, for every smooth manifold. The quotient-built manifolds get their smooth structures here, from atlases written down by hand ([[§8 Differentiable Structures#Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]).*
 

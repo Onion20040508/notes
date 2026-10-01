@@ -5,7 +5,7 @@ chapter: 9
 section: 40
 tags: [group-theory, math493]
 ---
-← [[§39 Simple Groups]] · ↑ [[9 Characters and Commutators]] · [[§41 Commutators]] →
+← [[§39 Simple Groups]] · ↑ [[· 9 Characters and Commutators]] · [[§41 Commutators]] →
 
 *Reference: Not treated in Pinter (characters in this sense).*
 

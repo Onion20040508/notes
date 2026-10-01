@@ -4,7 +4,7 @@ section: 6
 chapter: 1
 tags: [real-analysis, math451]
 ---
-← [[§5 The Symbols +∞, −∞]] · ↑ [[1 Introduction]] · [[§7 Limits of Sequences]] →
+← [[§5 The Symbols +∞, −∞]] · ↑ [[· 1 Introduction]] · [[§7 Limits of Sequences]] →
 
 **Question.** How can $\mathbb{R}$ be *defined* from $\mathbb{Q}$?
 

@@ -5,7 +5,7 @@ chapter: 2
 section: 8
 tags: [group-theory, math493]
 ---
-← [[§7 The Group ℤ∕nℤ]] · ↑ [[2 Arithmetic Modulo n]] · [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem]] →
+← [[§7 The Group ℤ∕nℤ]] · ↑ [[· 2 Arithmetic Modulo n]] · [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem]] →
 
 *Reference: Pinter Ch. 22 (greatest common divisors), Ch. 23, Thm. 1 (linear congruences).*
 
@@ -149,7 +149,7 @@ tags: [group-theory, math493]
 > | $11$ | $\{1, 2, \ldots, 10\}$ | $10$ |
 > | $12$ | $\{1, 5, 7, 11\}$ | $4$ |
 >
-> (Brackets omitted.) For prime $p$, $U_p$ is everything except $[0]$, of size $p - 1$. The sizes are the values of Euler's totient $\varphi(n)$; note that it is not monotone in $n$ ($\varphi(12) = 4 < \varphi(11) = 10$). Observe also that $U_5$, $U_8$, $U_{10}$, $U_{12}$ all have four elements but need not be “the same” group — comparing them is the subject of [[4 Homomorphisms and Isomorphisms|Worksheet 2]].
+> (Brackets omitted.) For prime $p$, $U_p$ is everything except $[0]$, of size $p - 1$. The sizes are the values of Euler's totient $\varphi(n)$; note that it is not monotone in $n$ ($\varphi(12) = 4 < \varphi(11) = 10$). Observe also that $U_5$, $U_8$, $U_{10}$, $U_{12}$ all have four elements but need not be “the same” group — comparing them is the subject of [[· 4 Homomorphisms and Isomorphisms|Worksheet 2]].
 
 ^ex-8-5
 

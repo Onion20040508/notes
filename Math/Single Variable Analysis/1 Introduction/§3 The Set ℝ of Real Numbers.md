@@ -4,7 +4,7 @@ section: 3
 chapter: 1
 tags: [real-analysis, math451]
 ---
-← [[§2 The Set ℚ of Rational Numbers]] · ↑ [[1 Introduction]] · [[§4 The Completeness Axiom]] →
+← [[§2 The Set ℚ of Rational Numbers]] · ↑ [[· 1 Introduction]] · [[§4 The Completeness Axiom]] →
 
 ## Field Axioms
 

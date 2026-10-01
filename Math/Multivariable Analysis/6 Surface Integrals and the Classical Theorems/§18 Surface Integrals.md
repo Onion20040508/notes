@@ -5,7 +5,7 @@ chapter: 6
 section: 18
 tags: [multivariable-analysis, math452]
 ---
-← [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities]] · ↑ [[6 Surface Integrals and the Classical Theorems]] · [[§19 The Laplacian in Spherical Coordinates]] →
+← [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities]] · ↑ [[· 6 Surface Integrals and the Classical Theorems]] · [[§19 The Laplacian in Spherical Coordinates]] →
 
 > [!remark] Note: Smoothness Assumptions for This Section
 > The results in this section require increasingly strong conditions on the parametrization $\mathbf{X}$, the surface $S$, and the vector field $\mathbf{F}$. Here is the hierarchy, from weakest to strongest:

@@ -6,7 +6,7 @@ section: 9
 munkres: "§18"
 tags: [topology, math590]
 ---
-← [[§8 Hausdorff Spaces]] · ↑ [[2 Closedness, Continuity, and Hausdorff]] · [[§10 Product Topology on Arbitrary Products]] →
+← [[§8 Hausdorff Spaces]] · ↑ [[· 2 Closedness, Continuity, and Hausdorff]] · [[§10 Product Topology on Arbitrary Products]] →
 
 ## Definition and Basic Properties
 

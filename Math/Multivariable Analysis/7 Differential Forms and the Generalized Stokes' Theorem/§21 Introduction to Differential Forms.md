@@ -5,11 +5,11 @@ chapter: 7
 section: 21
 tags: [multivariable-analysis, math452]
 ---
-← [[§20 Stokes' Theorem in ℝ³]] · ↑ [[7 Differential Forms and the Generalized Stokes' Theorem]] · [[§22 The Algebra of Differential Forms]] →
+← [[§20 Stokes' Theorem in ℝ³]] · ↑ [[· 7 Differential Forms and the Generalized Stokes' Theorem]] · [[§22 The Algebra of Differential Forms]] →
 
 ## Part III: Differential Forms
 
-Chapter 7: [[7 Differential Forms and the Generalized Stokes' Theorem|Differential Forms and the Generalized Stokes' Theorem]].
+Chapter 7: [[· 7 Differential Forms and the Generalized Stokes' Theorem|Differential Forms and the Generalized Stokes' Theorem]].
 
 ## Motivation: What Are We Integrating?
 

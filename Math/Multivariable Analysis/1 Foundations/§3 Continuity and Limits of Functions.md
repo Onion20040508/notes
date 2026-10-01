@@ -5,7 +5,7 @@ chapter: 1
 section: 3
 tags: [multivariable-analysis, math452]
 ---
-← [[§2 Open and Closed Sets]] · ↑ [[1 Foundations]] · [[§4 Partial Derivatives]] →
+← [[§2 Open and Closed Sets]] · ↑ [[· 1 Foundations]] · [[§4 Partial Derivatives]] →
 
 > [!definition] Definition §3.1: Continuity
 > A function $f : \mathbb{R}^2 \to \mathbb{R}$ is **continuous** at $(x_0, y_0)$ if

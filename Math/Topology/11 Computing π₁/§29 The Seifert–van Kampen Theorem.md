@@ -6,7 +6,7 @@ section: 29
 munkres: "§70, §74"
 tags: [topology, math590]
 ---
-← [[§28 Fundamental Group of Some Surfaces]] · ↑ [[11 Computing π₁]]
+← [[§28 Fundamental Group of Some Surfaces]] · ↑ [[· 11 Computing π₁]]
 
 > [!remark] Remark: Motivation
 > We can now compute $\pi_1$ of spaces using [[Properties of the Lifting Correspondence|covering spaces]], [[Deformation Retract Induces Isomorphism on π₁|deformation retracts]], and the [[§23 The Fundamental Group#^thm-23-7|product formula]]. But a major gap remains: given $X = A \cup B$, the [[§27 The Fundamental Group of Sⁿ#^thm-27-1|generation theorem (§27)]] tells us $\pi_1(X)$ is *generated* by loops in $A$ and $B$, but says nothing about *relations* between them. The Seifert-van Kampen theorem fills this gap: it computes $\pi_1(X)$ exactly as a quotient of the [[§21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]] $\pi_1(A) * \pi_1(B)$.

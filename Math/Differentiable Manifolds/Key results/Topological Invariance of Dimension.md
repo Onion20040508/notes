@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 2.1", "invariance of domain consequence", "Lee Theorem 1.2", "Lee Theorem 17.26"]
+aliases: ["MATH 591 2.1", "invariance of domain consequence", "Lee Theorem 1.2"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§2 Topological Manifolds#^thm-2-1]]

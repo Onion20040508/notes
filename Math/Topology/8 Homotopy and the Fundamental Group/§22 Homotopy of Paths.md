@@ -6,7 +6,7 @@ section: 22
 munkres: "§51"
 tags: [topology, math590]
 ---
-← [[§21 Algebra Prerequisites꞉ Groups]] · ↑ [[8 Homotopy and the Fundamental Group]] · [[§23 The Fundamental Group]] →
+← [[§21 Algebra Prerequisites꞉ Groups]] · ↑ [[· 8 Homotopy and the Fundamental Group]] · [[§23 The Fundamental Group]] →
 
 > [!remark] Remark: Motivation: Continuously Deforming Paths
 > The fundamental group will classify loops “up to continuous deformation.” To make this precise, we need to answer: when are two paths “essentially the same”?

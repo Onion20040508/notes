@@ -6,7 +6,7 @@ section: 21
 munkres: "§69"
 tags: [topology, math590]
 ---
-← [[§20 Normal Spaces]] · ↑ [[7 Algebraic Foundations]] · [[§22 Homotopy of Paths]] →
+← [[§20 Normal Spaces]] · ↑ [[· 7 Algebraic Foundations]] · [[§22 Homotopy of Paths]] →
 
 ## Part II: Algebraic Topology
 

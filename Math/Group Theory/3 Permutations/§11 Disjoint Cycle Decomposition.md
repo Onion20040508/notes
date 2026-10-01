@@ -5,7 +5,7 @@ chapter: 3
 section: 11
 tags: [group-theory, math493]
 ---
-← [[§10 Cycle Notation and the Group S₃]] · ↑ [[3 Permutations]] · [[§12 Multiplying and Conjugating Cycles]] →
+← [[§10 Cycle Notation and the Group S₃]] · ↑ [[· 3 Permutations]] · [[§12 Multiplying and Conjugating Cycles]] →
 
 *Reference: Pinter Ch. 8.*
 

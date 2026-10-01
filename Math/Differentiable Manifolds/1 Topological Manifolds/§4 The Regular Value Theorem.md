@@ -5,14 +5,14 @@ chapter: 1
 section: 4
 tags: [differentiable-manifolds, math591]
 ---
-← [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients]] · ↑ [[1 Topological Manifolds]] · [[§5 Topological Groups and Classical Matrix Groups]] →
+← [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients]] · ↑ [[· 1 Topological Manifolds]] · [[§5 Topological Groups and Classical Matrix Groups]] →
 
 *Thread: equations — Manifolds cut out as level sets. It sits in this chapter because the next one needs it: $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$ and $\mathrm{U}(n)$ are level sets.*
 
 *Reference: Lee Appendix C (Inverse and Implicit Function Theorems); MATH 452. The theorem itself is PSet 1, Problem 6.*
 
 > [!remark] Remark: Why This Section
-> [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients|§3]] built manifolds out of manifolds. This section builds them out of *equations*: given a smooth map $F$ on an open subset of $\mathbb{R}^{n+k}$, when is the solution set $\{F = c\}$ a topological manifold, and of what dimension? The answer — whenever the $k$ equations are independent at every solution — is the single most productive source of examples in the course. It produces the spheres, every classical matrix group ([[§5 Topological Groups and Classical Matrix Groups|§5]]), and in its smooth form every example of [[3 Smooth Manifolds|Chapter 3]]. The machinery is multivariable calculus, and the one theorem taken on faith is the [[§4 The Regular Value Theorem#^thm-4-1|implicit function theorem]].
+> [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients|§3]] built manifolds out of manifolds. This section builds them out of *equations*: given a smooth map $F$ on an open subset of $\mathbb{R}^{n+k}$, when is the solution set $\{F = c\}$ a topological manifold, and of what dimension? The answer — whenever the $k$ equations are independent at every solution — is the single most productive source of examples in the course. It produces the spheres, every classical matrix group ([[§5 Topological Groups and Classical Matrix Groups|§5]]), and in its smooth form every example of [[· 3 Smooth Manifolds|Chapter 3]]. The machinery is multivariable calculus, and the one theorem taken on faith is the [[§4 The Regular Value Theorem#^thm-4-1|implicit function theorem]].
 
 ^rem-4-1
 
@@ -109,7 +109,7 @@ has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the
 
 > [!remark]- Connections
 > - The one-equation version is proved in 452: [[§12 The Implicit Function Theorem#^thm-12-2|452 §12.2]] (hub: [[Implicit Function Theorem]]); this vector-valued version has its home here.
-> - Deduced from the inverse function theorem: [[Inverse Function Theorem (several variables)]] in 452, [[§14 Local Diffeomorphisms and Submersions#^thm-14-1|§14.1]] in this course.
+> - Deduced from the inverse function theorem: [[§14 Local Diffeomorphisms and Submersions#^thm-14-1|§14.1]] in this course (452 proves only the two-variable case, [[Inverse Function Theorem (several variables)]]).
 
 Lee deduces this from the Inverse Function Theorem ([[§14 Local Diffeomorphisms and Submersions#^thm-14-1|Theorem §14.1]]; Lee, Theorem C.34), applied to the auxiliary map $(x,y) \mapsto (x, \Phi(x,y))$, whose total derivative is block lower triangular with nonsingular diagonal blocks $I_n$ and $(\partial\Phi^i/\partial y^j)$. Both theorems are proved in MATH 452 ([[Implicit Function Theorem|452 §12]], [[Inverse Function Theorem (several variables)|452 §13]]); Lee's proofs are in Appendix C.
 
@@ -207,7 +207,7 @@ This is the form needed on manifolds, where a chart has an open subset of Euclid
 The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at once. *Left:* $F = x^2+y^2-1$; at a point off the horizontal axis $\partial F/\partial y \neq 0$, so the implicit function theorem solves $y = h(x) = \sqrt{1-x^2}$ and the thick arc is the graph over the $x$-interval beneath it — the chart is “project to $x$,” which is exactly $\varphi_2$ of [[§8 Differentiable Structures#^ex-8-2|Example §8.2]]. *Middle:* at $(1,0)$ that partial vanishes and the curve is vertical, so no interval of $x$ works; but $\partial F/\partial x \neq 0$, so one solves $x = h(y)$ and projects to $y$ instead. That switch is the permutation-of-coordinates step in the proof, and the picture shows it is not a technicality: which coordinate can be solved for changes from point to point. *Right:* at a critical point the conclusion fails — near the origin $\{x^2 = y^2\}$ is two crossing lines, a graph over neither axis.
 
 > [!remark] Remark: Reading the Dimension
-> The level set of $k$ independent equations in $\mathbb{R}^{n+k}$ has dimension $(n+k) - k = n$: each independent constraint costs one dimension. The independence is exactly the rank condition, and it is needed at every point of the level set, not just at one — that is what “regular *value*” means ([[§4 The Regular Value Theorem#^def-4-2|Definition §4.2]]). The theorem is the general form of the computation carried out for $\mathrm{SL}(n,\mathbb{R})$ in [[§5 Topological Groups and Classical Matrix Groups#The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]], the case $k = 1$, $n + k = n^2$; the smooth version, giving $X$ a smooth structure rather than just a topology, comes in [[3 Smooth Manifolds|Chapter 3]].
+> The level set of $k$ independent equations in $\mathbb{R}^{n+k}$ has dimension $(n+k) - k = n$: each independent constraint costs one dimension. The independence is exactly the rank condition, and it is needed at every point of the level set, not just at one — that is what “regular *value*” means ([[§4 The Regular Value Theorem#^def-4-2|Definition §4.2]]). The theorem is the general form of the computation carried out for $\mathrm{SL}(n,\mathbb{R})$ in [[§5 Topological Groups and Classical Matrix Groups#The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]], the case $k = 1$, $n + k = n^2$; the smooth version, giving $X$ a smooth structure rather than just a topology, comes in [[· 3 Smooth Manifolds|Chapter 3]].
 
 ^rem-4-5
 

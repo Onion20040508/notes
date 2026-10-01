@@ -5,7 +5,7 @@ chapter: 7
 section: 22
 tags: [multivariable-analysis, math452]
 ---
-← [[§21 Introduction to Differential Forms]] · ↑ [[7 Differential Forms and the Generalized Stokes' Theorem]] · [[§23 The Generalized Stokes' Theorem]] →
+← [[§21 Introduction to Differential Forms]] · ↑ [[· 7 Differential Forms and the Generalized Stokes' Theorem]] · [[§23 The Generalized Stokes' Theorem]] →
 
 ## The Wedge Product
 

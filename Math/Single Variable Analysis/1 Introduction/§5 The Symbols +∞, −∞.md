@@ -4,7 +4,7 @@ section: 5
 chapter: 1
 tags: [real-analysis, math451]
 ---
-← [[§4 The Completeness Axiom]] · ↑ [[1 Introduction]] · [[§6 Dedekind Cuts]] →
+← [[§4 The Completeness Axiom]] · ↑ [[· 1 Introduction]] · [[§6 Dedekind Cuts]] →
 
 These symbols are convenient. For any $a \in \mathbb{R}$,
 

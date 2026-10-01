@@ -5,7 +5,7 @@ chapter: 2
 section: 5
 tags: [differentiable-manifolds, math591]
 ---
-← [[§4 The Regular Value Theorem]] · ↑ [[2 Topological Groups and Homogeneous Spaces]] · [[§6 Group Actions and Orbit Spaces]] →
+← [[§4 The Regular Value Theorem]] · ↑ [[· 2 Topological Groups and Homogeneous Spaces]] · [[§6 Group Actions and Orbit Spaces]] →
 
 *Thread: equations — The classical groups are level sets of polynomial maps ([[§4 The Regular Value Theorem|§4]]). Acting on spaces, they then feed the quotient thread.*
 

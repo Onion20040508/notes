@@ -6,7 +6,7 @@ section: 10
 munkres: "§19"
 tags: [topology, math590]
 ---
-← [[§9 Continuous Functions]] · ↑ [[3 Products, Metrics, and Quotients]] · [[§11 Metric Topology]] →
+← [[§9 Continuous Functions]] · ↑ [[· 3 Products, Metrics, and Quotients]] · [[§11 Metric Topology]] →
 
 ## Definition and Basis
 

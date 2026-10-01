@@ -5,7 +5,7 @@ chapter: 4
 section: 15
 tags: [multivariable-analysis, math452]
 ---
-← [[§14 Optimization and Lagrange Multipliers]] · ↑ [[4 Integration on Flat Domains]] · [[§16 Line Integrals and Green's Theorem]] →
+← [[§14 Optimization and Lagrange Multipliers]] · ↑ [[· 4 Integration on Flat Domains]] · [[§16 Line Integrals and Green's Theorem]] →
 
 ## Part II: Integral Calculus and Vector Calculus
 

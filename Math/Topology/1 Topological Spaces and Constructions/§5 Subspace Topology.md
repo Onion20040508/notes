@@ -6,7 +6,7 @@ section: 5
 munkres: "§16"
 tags: [topology, math590]
 ---
-← [[§4 Product Topology]] · ↑ [[1 Topological Spaces and Constructions]] · [[§6 Closed Sets and Limit Points]] →
+← [[§4 Product Topology]] · ↑ [[· 1 Topological Spaces and Constructions]] · [[§6 Closed Sets and Limit Points]] →
 
 ## Definition and Basic Properties
 

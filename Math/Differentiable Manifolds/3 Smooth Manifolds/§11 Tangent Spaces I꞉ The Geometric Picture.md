@@ -5,7 +5,7 @@ chapter: 3
 section: 11
 tags: [differentiable-manifolds, math591]
 ---
-← [[§10 Vector Spaces and Matrix Groups]] · ↑ [[3 Smooth Manifolds]] · [[§12 Tangent Spaces II꞉ The Abstract Tangent Space]] →
+← [[§10 Vector Spaces and Matrix Groups]] · ↑ [[· 3 Smooth Manifolds]] · [[§12 Tangent Spaces II꞉ The Abstract Tangent Space]] →
 
 *Stage: geometric — Tangent vectors as velocities inside the ambient space, $T^{\mathrm{geo}}_pM = \ker F'(p)$ — available only for manifolds presented by equations.*
 

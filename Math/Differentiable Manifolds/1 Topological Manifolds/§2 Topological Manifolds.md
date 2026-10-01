@@ -5,7 +5,7 @@ chapter: 1
 section: 2
 tags: [differentiable-manifolds, math591]
 ---
-← [[§1 Point-Set Topology Review]] · ↑ [[1 Topological Manifolds]] · [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients]] →
+← [[§1 Point-Set Topology Review]] · ↑ [[· 1 Topological Manifolds]] · [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients]] →
 
 *Foundations — The definition of a topological manifold and the role of each axiom. The two ways of building examples begin next: by quotients ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients|§3]]) and by equations ([[§4 The Regular Value Theorem|§4]]).*
 
@@ -409,7 +409,7 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 
 ## Charts and Transition Functions
 
-*Reference: Lee Ch. 1, “Coordinate Charts.” Presented in the last minutes of Lecture 1 as a preview; the topological content is recorded here, the smooth version is [[3 Smooth Manifolds|Chapter 3]].*
+*Reference: Lee Ch. 1, “Coordinate Charts.” Presented in the last minutes of Lecture 1 as a preview; the topological content is recorded here, the smooth version is [[· 3 Smooth Manifolds|Chapter 3]].*
 
 Suppose $X$ is a topological manifold of dimension $n$, and let $p \in X$. By definition (in the form of [[§2 Topological Manifolds#^prop-2-3|Proposition §2.3]]), there is a neighborhood $U$ of $p$ and a homeomorphism $\varphi : U \to A$ onto an open set $A \subseteq \mathbb{R}^n$.
 
@@ -478,7 +478,7 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 *Uses:* [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§2 Topological Manifolds#^def-2-4|Def. §2.4]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§5 Subspace Topology#^lem-5-2|590 §5.2]]
 
 ![[m591-2-3.svg]]
-*Two charts on the same manifold. On the overlap $U \cap V$ (orange) both charts apply, and the two pictures of it, $\varphi(U \cap V)$ and $\psi(U \cap V)$, are compared by the transition map $\psi \circ \varphi^{-1}$ — a homeomorphism between open subsets of $\mathbb{R}^n$ by [[§2 Topological Manifolds#^prop-2-12|Proposition §2.12]]. [[3 Smooth Manifolds|Chapter 3]] defines smooth structures by asking these maps to be smooth.*
+*Two charts on the same manifold. On the overlap $U \cap V$ (orange) both charts apply, and the two pictures of it, $\varphi(U \cap V)$ and $\psi(U \cap V)$, are compared by the transition map $\psi \circ \varphi^{-1}$ — a homeomorphism between open subsets of $\mathbb{R}^n$ by [[§2 Topological Manifolds#^prop-2-12|Proposition §2.12]]. [[· 3 Smooth Manifolds|Chapter 3]] defines smooth structures by asking these maps to be smooth.*
 
 > [!example] Example §2.5: Two Hemisphere Charts on $S^2$
 > Take $U = \{z > 0\}$ with $\varphi(x, y, z) = (x, y)$ and $V = \{x > 0\}$ with $\psi(x, y, z) = (y, z)$, both charts onto the open unit disk. Then $U \cap V = \{x > 0, z > 0\}$, $\varphi(U \cap V) = \{(x, y) \in D \mid x > 0\}$, and

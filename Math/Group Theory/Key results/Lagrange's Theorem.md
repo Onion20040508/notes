@@ -12,12 +12,12 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[§26 Left and Right Cosets#^prop-26-2|Proposition §26.2: Cosets Are the Equivalence Classes]]
-- [[§27 The Index and Lagrange's Theorem#^def-27-1|Definition §27.1: Index]]
 - [[§27 The Index and Lagrange's Theorem#^prop-27-1|Proposition §27.1: All Cosets Have the Same Size]]
+- [[§27 The Index and Lagrange's Theorem#^def-27-1|Definition §27.1: Index]]
 
 ## Used in (Group Theory)
 - [[§27 The Index and Lagrange's Theorem#^ex-27-1|Example §27.1: The Converse of Lagrange Fails: A_4]]
-- [[§27 The Index and Lagrange's Theorem#^cor-27-3|Corollary §27.3: Order of an Element Divides ∣G∣; g^∣G∣ = e]]
+- [[§27 The Index and Lagrange's Theorem#^cor-27-3|Corollary §27.3: Order of an Element Divides ∣G∣; g^(∣G∣) = e]]
 - [[§27 The Index and Lagrange's Theorem#^thm-27-7|Theorem §27.7: Groups of Prime Order]]
 - [[§27 The Index and Lagrange's Theorem#^cor-27-8|Corollary §27.8: Groups of Prime Order Have No Proper Nontrivial Subgroups]]
 - [[§28 Orbit–Stabilizer#^thm-28-3|Theorem §28.3: Orbit–Stabilizer]]

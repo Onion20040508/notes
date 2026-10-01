@@ -5,7 +5,7 @@ chapter: 3
 section: 10
 tags: [measure-theory, math551]
 ---
-← [[§9 Lebesgue Outer Measure]] · ↑ [[3 Measure Theory]] · [[§11 Borel Sets and Measure Spaces]] →
+← [[§9 Lebesgue Outer Measure]] · ↑ [[· 3 Measure Theory]] · [[§11 Borel Sets and Measure Spaces]] →
 
 ## The Problem with Outer Measure
 

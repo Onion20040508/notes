@@ -4,7 +4,7 @@ section: 31
 chapter: 5
 tags: [real-analysis, math451]
 ---
-← [[§30 L'Hospital's Rule]] · ↑ [[5 Differentiation]] · [[§32 The Definition of the Riemann Integral]] →
+← [[§30 L'Hospital's Rule]] · ↑ [[· 5 Differentiation]] · [[§32 The Definition of the Riemann Integral]] →
 
 The third main result of the chapter: how to approximate general functions by polynomials — and, in the limit, represent a function by a power series.
 

@@ -4,7 +4,7 @@ section: 19
 chapter: 3
 tags: [real-analysis, math451]
 ---
-← [[§18 Properties of Continuous Functions]] · ↑ [[3 Continuity]] · [[§20 Limits of Functions]] →
+← [[§18 Properties of Continuous Functions]] · ↑ [[· 3 Continuity]] · [[§20 Limits of Functions]] →
 
 In the $(\varepsilon, \delta)$ definition of continuity, one important point: $\delta$ depends on $\varepsilon$ *and on the point $x_0$*. This was very clear for $f(x) = \sqrt{x}$, where $\delta = \varepsilon\sqrt{x_0}$ shrank as $x_0 \to 0$ (§17). For some applications we want a choice of $\delta$ *independent of $x_0$* — depending only on $\varepsilon$: a uniform criterion for all points of the domain.
 

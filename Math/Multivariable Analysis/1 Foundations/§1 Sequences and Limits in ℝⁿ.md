@@ -5,7 +5,7 @@ chapter: 1
 section: 1
 tags: [multivariable-analysis, math452]
 ---
-↑ [[1 Foundations]] · [[§2 Open and Closed Sets]] →
+↑ [[· 1 Foundations]] · [[§2 Open and Closed Sets]] →
 
 > [!definition] Definition §1.1: Convergence of Sequences in $\mathbb{R}^n$
 > A sequence $(a_n) \subset \mathbb{R}^n$ **converges** to $A \in \mathbb{R}^n$ if

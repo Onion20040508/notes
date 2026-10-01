@@ -6,7 +6,7 @@ section: 15
 munkres: "§26, §27"
 tags: [topology, math590]
 ---
-← [[§14 Connected Subspaces of ℝ]] · ↑ [[5 Compactness]] · [[§16 Limit Point Compactness]] →
+← [[§14 Connected Subspaces of ℝ]] · ↑ [[· 5 Compactness]] · [[§16 Limit Point Compactness]] →
 
 $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 

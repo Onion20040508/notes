@@ -5,7 +5,7 @@ chapter: 3
 section: 12
 tags: [differentiable-manifolds, math591]
 ---
-← [[§11 Tangent Spaces I꞉ The Geometric Picture]] · ↑ [[3 Smooth Manifolds]] · [[§13 Tangent Spaces III꞉ The Cotangent Space]] →
+← [[§11 Tangent Spaces I꞉ The Geometric Picture]] · ↑ [[· 3 Smooth Manifolds]] · [[§13 Tangent Spaces III꞉ The Cotangent Space]] →
 
 *Stage: abstract — Tangent vectors as derivations of germs — available for every manifold, including those built by quotients. The two notions agree wherever both exist (Theorem [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-8|§12.8]]).*
 

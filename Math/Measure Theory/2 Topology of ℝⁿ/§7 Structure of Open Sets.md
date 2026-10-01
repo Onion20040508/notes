@@ -5,7 +5,7 @@ chapter: 2
 section: 7
 tags: [measure-theory, math551]
 ---
-← [[§6 Open Covers and the Heine–Borel Theorem]] · ↑ [[2 Topology of ℝⁿ]] · [[§8 Motivation꞉ The Riemann Integral]] →
+← [[§6 Open Covers and the Heine–Borel Theorem]] · ↑ [[· 2 Topology of ℝⁿ]] · [[§8 Motivation꞉ The Riemann Integral]] →
 
 > [!theorem] Proposition §7.1: Open Sets in $\mathbb{R}$ are Countable Unions of Disjoint Intervals
 > Any open set $O \subseteq \mathbb{R}$ is a countable union of mutually disjoint open intervals.

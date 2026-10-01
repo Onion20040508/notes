@@ -5,7 +5,7 @@ chapter: 3
 section: 13
 tags: [multivariable-analysis, math452]
 ---
-← [[§12 The Implicit Function Theorem]] · ↑ [[3 Existence Theorems and Applications]] · [[§14 Optimization and Lagrange Multipliers]] →
+← [[§12 The Implicit Function Theorem]] · ↑ [[· 3 Existence Theorems and Applications]] · [[§14 Optimization and Lagrange Multipliers]] →
 
 ## Motivation: Inverting Functions
 

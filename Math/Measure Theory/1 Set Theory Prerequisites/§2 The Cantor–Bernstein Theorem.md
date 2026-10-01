@@ -5,7 +5,7 @@ chapter: 1
 section: 2
 tags: [measure-theory, math551]
 ---
-← [[§1 Countability and Set Theory]] · ↑ [[1 Set Theory Prerequisites]] · [[§3 Countability of Rationals and Unions]] →
+← [[§1 Countability and Set Theory]] · ↑ [[· 1 Set Theory Prerequisites]] · [[§3 Countability of Rationals and Unions]] →
 
 > [!theorem] Theorem §2.1: Cantor–Bernstein
 > Assume there exists an injection $f: X \to Y$ and an injection $g: Y \to X$. Then $X \sim Y$.

@@ -4,7 +4,7 @@ section: 34
 chapter: 6
 tags: [real-analysis, math451]
 ---
-← [[§33 Properties of the Riemann Integral]] · ↑ [[6 Integration]] · [[§35 Riemann–Stieltjes Integrals]] →
+← [[§33 Properties of the Riemann Integral]] · ↑ [[· 6 Integration]] · [[§35 Riemann–Stieltjes Integrals]] →
 
 The last main section — and the moment the oldest debts of these notes are repaid.
 

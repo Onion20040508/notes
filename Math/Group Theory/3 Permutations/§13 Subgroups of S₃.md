@@ -5,7 +5,7 @@ chapter: 3
 section: 13
 tags: [group-theory, math493]
 ---
-← [[§12 Multiplying and Conjugating Cycles]] · ↑ [[3 Permutations]] · [[§14 Multiplication Tables]] →
+← [[§12 Multiplying and Conjugating Cycles]] · ↑ [[· 3 Permutations]] · [[§14 Multiplication Tables]] →
 
 *Reference: Pinter Ch. 5, Ch. 7.*
 

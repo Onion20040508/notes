@@ -5,7 +5,7 @@ chapter: 2
 section: 6
 tags: [differentiable-manifolds, math591]
 ---
-← [[§5 Topological Groups and Classical Matrix Groups]] · ↑ [[2 Topological Groups and Homogeneous Spaces]] · [[§7 Homogeneous Spaces]] →
+← [[§5 Topological Groups and Classical Matrix Groups]] · ↑ [[· 2 Topological Groups and Homogeneous Spaces]] · [[§7 Homogeneous Spaces]] →
 
 *Thread: quotients — Orbit spaces generalize the quotients of [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients|§3]] — $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ — and the Hausdorff question returns (Corollary [[§6 Group Actions and Orbit Spaces#^cor-6-4|§6.4]]).*
 

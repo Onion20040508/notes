@@ -5,7 +5,7 @@ chapter: 1
 section: 3
 tags: [differentiable-manifolds, math591]
 ---
-← [[§2 Topological Manifolds]] · ↑ [[1 Topological Manifolds]] · [[§4 The Regular Value Theorem]] →
+← [[§2 Topological Manifolds]] · ↑ [[· 1 Topological Manifolds]] · [[§4 The Regular Value Theorem]] →
 
 *Thread: quotients — Manifolds built by gluing and identifying points; $\mathbb{CP}^n$ is the first. The thread continues with orbit spaces ([[§6 Group Actions and Orbit Spaces|§6]]) and coset spaces ([[§7 Homogeneous Spaces|§7]]), where the Hausdorff question answered here by Theorem [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-26|§3.26]] returns.*
 

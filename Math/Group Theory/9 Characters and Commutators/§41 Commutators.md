@@ -5,7 +5,7 @@ chapter: 9
 section: 41
 tags: [group-theory, math493]
 ---
-← [[§40 Characters]] · ↑ [[9 Characters and Commutators]]
+← [[§40 Characters]] · ↑ [[· 9 Characters and Commutators]]
 
 *Reference: Pinter Ch. 15 (commutators).*
 
@@ -82,7 +82,7 @@ tags: [group-theory, math493]
 ^def-41-2
 
 > [!theorem] Proposition §41.4: Properties of the Commutator Subgroup
-> 1. $[G,G]$ is a normal subgroup of $G$ ([[8 Normal Subgroups and Quotient Groups|Chapter 8]]).
+> 1. $[G,G]$ is a normal subgroup of $G$ ([[· 8 Normal Subgroups and Quotient Groups|Chapter 8]]).
 > 2. Every character $\chi: G \to A$ is trivial on $[G,G]$, i.e. $[G,G] \subseteq \operatorname{Ker}\chi$.
 > 3. $[G,G] = \{e\}$ if and only if $G$ is abelian.
 

@@ -5,7 +5,7 @@ chapter: 6
 section: 19
 tags: [multivariable-analysis, math452]
 ---
-← [[§18 Surface Integrals]] · ↑ [[6 Surface Integrals and the Classical Theorems]] · [[§20 Stokes' Theorem in ℝ³]] →
+← [[§18 Surface Integrals]] · ↑ [[· 6 Surface Integrals and the Classical Theorems]] · [[§20 Stokes' Theorem in ℝ³]] →
 
 In Cartesian coordinates, the Laplacian ([[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]]) is $\Delta u = u_{xx} + u_{yy} + u_{zz}$. What is the corresponding expression in spherical coordinates? Computing this by brute-force [[Multivariable Chain Rule|chain rule]] is extremely tedious (it requires second derivatives of the coordinate transformation). The [[Divergence Theorem in ℝ³|Divergence Theorem]] provides a much cleaner derivation.
 

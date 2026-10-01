@@ -17,8 +17,8 @@ tags: [differentiable-manifolds, hub]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-32|Theorem §12.32: The Tangent Space of a Product]]
 - [[§14 Local Diffeomorphisms and Submersions#^def-14-3|Definition §14.3: Regular Points and Critical Points]]
 - [[§14 Local Diffeomorphisms and Submersions#^thm-14-5|Theorem §14.5: Local Normal Form for Submersions]]
-- [[§15 Submanifolds#^def-15-1|Definition §15.1: Submanifold and Adapted Charts]]
 - [[§15 Submanifolds#^prop-15-1|Proposition §15.1: Two Observations on Adapted Charts]]
+- [[§15 Submanifolds#^def-15-1|Definition §15.1: Submanifold and Adapted Charts]]
 - [[§15 Submanifolds#^prop-15-4|Proposition §15.4: Tangent Spaces of a Submanifold]]
 
 ## Its proof uses (other subjects)

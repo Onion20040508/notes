@@ -4,7 +4,7 @@ section: 2
 chapter: 1
 tags: [real-analysis, math451]
 ---
-← [[§1 The Set ℕ of Natural Numbers]] · ↑ [[1 Introduction]] · [[§3 The Set ℝ of Real Numbers]] →
+← [[§1 The Set ℕ of Natural Numbers]] · ↑ [[· 1 Introduction]] · [[§3 The Set ℝ of Real Numbers]] →
 
 ## From $\mathbb{N}$ to $\mathbb{Q}$: Algebraic Structures
 

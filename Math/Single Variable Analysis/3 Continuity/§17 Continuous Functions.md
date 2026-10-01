@@ -4,7 +4,7 @@ section: 17
 chapter: 3
 tags: [real-analysis, math451]
 ---
-← [[§16 Decimal Expansions of Real Numbers (Not Covered)]] · ↑ [[3 Continuity]] · [[§18 Properties of Continuous Functions]] →
+← [[§16 Decimal Expansions of Real Numbers (Not Covered)]] · ↑ [[· 3 Continuity]] · [[§18 Properties of Continuous Functions]] →
 
 We now start a central chapter of this course: the notion of *continuity*. You have all used continuous functions in calculus; now we will be rigorous.
 

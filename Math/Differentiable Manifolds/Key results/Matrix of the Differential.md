@@ -11,8 +11,8 @@ tags: [differentiable-manifolds, hub]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|Theorem §12.22: The Matrix of the Differential]], in [[§12 Tangent Spaces II꞉ The Abstract Tangent Space]]
 
 ## Its proof uses
-- [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-10|Proposition §12.10: The Differential Is a Linear Map of Abstract Tangent Spaces]]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-10|Definition §12.10: Pushforward — the Differential]]
+- [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-10|Proposition §12.10: The Differential Is a Linear Map of Abstract Tangent Spaces]]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-16|Theorem §12.16: Basis Theorem]]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-21|Proposition §12.21: Partial Derivatives Upstairs and Downstairs]]
 

@@ -5,7 +5,7 @@ chapter: 5
 section: 16
 tags: [multivariable-analysis, math452]
 ---
-← [[§15 Multivariable Integration]] · ↑ [[5 Line Integrals and the Divergence Theorem]] · [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities]] →
+← [[§15 Multivariable Integration]] · ↑ [[· 5 Line Integrals and the Divergence Theorem]] · [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities]] →
 
 ## Line Integrals: Two Types
 

@@ -5,7 +5,7 @@ chapter: 1
 section: 1
 tags: [group-theory, math493]
 ---
-↑ [[1 Groups and Subgroups]] · [[§2 First Consequences of the Axioms]] →
+↑ [[· 1 Groups and Subgroups]] · [[§2 First Consequences of the Axioms]] →
 
 *Reference: Pinter Ch. 2 (operations), Ch. 3 (the definition of groups).*
 

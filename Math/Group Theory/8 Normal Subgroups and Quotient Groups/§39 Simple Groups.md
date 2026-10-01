@@ -5,7 +5,7 @@ chapter: 8
 section: 39
 tags: [group-theory, math493]
 ---
-← [[§38 The First Isomorphism Theorem]] · ↑ [[8 Normal Subgroups and Quotient Groups]] · [[§40 Characters]] →
+← [[§38 The First Isomorphism Theorem]] · ↑ [[· 8 Normal Subgroups and Quotient Groups]] · [[§40 Characters]] →
 
 *Reference: Not treated in Pinter.*
 

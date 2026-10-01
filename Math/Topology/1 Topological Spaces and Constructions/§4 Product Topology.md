@@ -6,7 +6,7 @@ section: 4
 munkres: "§15"
 tags: [topology, math590]
 ---
-← [[§3 Order Topology]] · ↑ [[1 Topological Spaces and Constructions]] · [[§5 Subspace Topology]] →
+← [[§3 Order Topology]] · ↑ [[· 1 Topological Spaces and Constructions]] · [[§5 Subspace Topology]] →
 
 ## Definition and Basis
 

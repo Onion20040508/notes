@@ -4,7 +4,7 @@ section: 36
 chapter: 6
 tags: [real-analysis, math451]
 ---
-← [[§35 Riemann–Stieltjes Integrals]] · ↑ [[6 Integration]]
+← [[§35 Riemann–Stieltjes Integrals]] · ↑ [[· 6 Integration]]
 
 > [!remark] Remark: Provenance
 > This section was only mentioned in the final lecture; it is written out here from Ross §36, because it settles two accounts: the symbol $\int_1^\infty \tfrac{dx}{x^p}$, used on credit by the integral test of §15, and the completion of the Stieltjes story of §35, which ends at the distribution functions of probability theory.

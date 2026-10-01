@@ -6,7 +6,7 @@ section: 12
 munkres: "§22"
 tags: [topology, math590]
 ---
-← [[§11 Metric Topology]] · ↑ [[3 Products, Metrics, and Quotients]] · [[§13 Connected Spaces]] →
+← [[§11 Metric Topology]] · ↑ [[· 3 Products, Metrics, and Quotients]] · [[§13 Connected Spaces]] →
 
 Motivated from geometry: can form topological spaces by “pasting” or identifying points together on a given space.
 

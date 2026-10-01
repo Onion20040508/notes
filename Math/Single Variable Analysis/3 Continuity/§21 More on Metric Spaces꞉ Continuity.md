@@ -4,7 +4,7 @@ section: 21
 chapter: 3
 tags: [real-analysis, math451]
 ---
-← [[§20 Limits of Functions]] · ↑ [[3 Continuity]] · [[§22 More on Metric Spaces꞉ Connectedness]] →
+← [[§20 Limits of Functions]] · ↑ [[· 3 Continuity]] · [[§22 More on Metric Spaces꞉ Connectedness]] →
 
 The next two sections generalize what we have learned to metric spaces. (They are important, but discussing them in full would take many lectures; the lecture touched only the key definitions and one theorem.)
 

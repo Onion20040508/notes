@@ -5,7 +5,7 @@ chapter: 1
 section: 3
 tags: [group-theory, math493]
 ---
-← [[§2 First Consequences of the Axioms]] · ↑ [[1 Groups and Subgroups]] · [[§4 Subgroups]] →
+← [[§2 First Consequences of the Axioms]] · ↑ [[· 1 Groups and Subgroups]] · [[§4 Subgroups]] →
 
 *Reference: Pinter Ch. 3 (examples of groups), Ch. 7 (groups of permutations), Ch. 4, Ex. G (direct products).*
 

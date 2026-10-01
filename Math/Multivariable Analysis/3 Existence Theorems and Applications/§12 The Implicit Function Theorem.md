@@ -5,7 +5,7 @@ chapter: 3
 section: 12
 tags: [multivariable-analysis, math452]
 ---
-← [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence]] · ↑ [[3 Existence Theorems and Applications]] · [[§13 The Inverse Function Theorem]] →
+← [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence]] · ↑ [[· 3 Existence Theorems and Applications]] · [[§13 The Inverse Function Theorem]] →
 
 ## Motivation: Curves Defined Implicitly
 

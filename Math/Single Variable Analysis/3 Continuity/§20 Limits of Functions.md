@@ -4,7 +4,7 @@ section: 20
 chapter: 3
 tags: [real-analysis, math451]
 ---
-← [[§19 Uniform Continuity]] · ↑ [[3 Continuity]] · [[§21 More on Metric Spaces꞉ Continuity]] →
+← [[§19 Uniform Continuity]] · ↑ [[· 3 Continuity]] · [[§21 More on Metric Spaces꞉ Continuity]] →
 
 Recall: $f$ is continuous at $x_0$ if $x_n \to x_0$ implies $f(x_n) \to f(x_0)$. What we *really* want to say is: as $x \to x_0$, $f(x) \to f(x_0)$ — with the continuous variable $x$, not just discrete sequences. This jump from discrete to continuous is an important interplay in mathematics and science; we now formalize it.
 

@@ -5,7 +5,7 @@ chapter: 1
 section: 1
 tags: [differentiable-manifolds, math591]
 ---
-↑ [[1 Topological Manifolds]] · [[§2 Topological Manifolds]] →
+↑ [[· 1 Topological Manifolds]] · [[§2 Topological Manifolds]] →
 
 *Foundations — The point-set tools that every later construction draws on.*
 

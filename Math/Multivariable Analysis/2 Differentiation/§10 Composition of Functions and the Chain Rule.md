@@ -5,7 +5,7 @@ chapter: 2
 section: 10
 tags: [multivariable-analysis, math452]
 ---
-← [[§9 Taylor's Theorem for Multivariable Functions]] · ↑ [[2 Differentiation]] · [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence]] →
+← [[§9 Taylor's Theorem for Multivariable Functions]] · ↑ [[· 2 Differentiation]] · [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence]] →
 
 ## Setup
 

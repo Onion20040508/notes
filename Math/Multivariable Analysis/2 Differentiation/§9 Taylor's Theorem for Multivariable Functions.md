@@ -5,7 +5,7 @@ chapter: 2
 section: 9
 tags: [multivariable-analysis, math452]
 ---
-← [[§8 The Differential]] · ↑ [[2 Differentiation]] · [[§10 Composition of Functions and the Chain Rule]] →
+← [[§8 The Differential]] · ↑ [[· 2 Differentiation]] · [[§10 Composition of Functions and the Chain Rule]] →
 
 ## Review: Single-Variable Taylor's Theorem
 

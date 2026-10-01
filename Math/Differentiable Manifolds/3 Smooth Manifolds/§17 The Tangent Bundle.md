@@ -5,7 +5,7 @@ chapter: 3
 section: 17
 tags: [differentiable-manifolds, math591]
 ---
-← [[§16 Fibrations]] · ↑ [[3 Smooth Manifolds]] · [[§18 Immersions]] →
+← [[§16 Fibrations]] · ↑ [[· 3 Smooth Manifolds]] · [[§18 Immersions]] →
 
 *Stage: bundles — All the tangent spaces of $M$, assembled into a single manifold that fibres over $M$.*
 
@@ -20,7 +20,7 @@ tags: [differentiable-manifolds, math591]
 >
 > all the tangent spaces “put together in one big set.” It comes with the **projection** $\pi : TM \to M$, $\pi(p, v) = p$, whose fibre $\pi^{-1}(p) = \{p\} \times T_pM$ is identified with $T_pM$; and with the **zero section** $\zeta : M \to TM$, $\zeta(p) = (p, 0)$, which is one-to-one because every tangent space has a distinguished element, its zero.
 >
-> *Lee: Ch. 3,* The Tangent Bundle
+> *Lee: Ch. 3, The Tangent Bundle*
 
 ^def-17-1
 
@@ -173,7 +173,7 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 > [!definition] Definition §17.3: Section
 > Let $\pi : E \to B$ be a fibration. A **section** of $\pi$ is a smooth map $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$: “if you first go up and then down, you get the identity on the base.” It picks, smoothly in $b$, one point $s(b)$ of each fibre $\pi^{-1}(b)$.
 >
-> *Lee: Ch. 10,* Sections of Vector Bundles
+> *Lee: Ch. 10, Sections of Vector Bundles*
 
 ^def-17-3
 
@@ -191,7 +191,7 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 > [!definition] Definition §17.4: Vector Field
 > A **vector field** on $M$ is a section of the tangent bundle $\pi : TM \to M$: a smooth map $X : M \to TM$ with $X(p) \in T_pM$ for every $p$ — “for every point, [it] selects a tangent vector at that point.”
 >
-> *Lee: Ch. 8,* Vector Fields
+> *Lee: Ch. 8, Vector Fields*
 
 ^def-17-4
 

@@ -5,7 +5,7 @@ chapter: 8
 section: 37
 tags: [group-theory, math493]
 ---
-← [[§36 Sources of Normal Subgroups]] · ↑ [[8 Normal Subgroups and Quotient Groups]] · [[§38 The First Isomorphism Theorem]] →
+← [[§36 Sources of Normal Subgroups]] · ↑ [[· 8 Normal Subgroups and Quotient Groups]] · [[§38 The First Isomorphism Theorem]] →
 
 *Reference: Pinter Ch. 15.*
 
@@ -73,7 +73,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§35 No
 ^rem-37-2
 
 > [!example] Example §37.1: Quotient Groups
-> 1. $\mathbb{Z}/n\mathbb{Z}$ is the quotient of $\mathbb{Z}$ by the (normal, since $\mathbb{Z}$ is abelian) subgroup $n\mathbb{Z}$: its elements are the cosets $a + n\mathbb{Z} = [a]$, and coset addition is the addition of residue classes of [[§7 The Group ℤ∕nℤ#^prop-7-1|§7.1]]. The notation of [[2 Arithmetic Modulo n|Chapter 2]] is thus an instance of the general one.
+> 1. $\mathbb{Z}/n\mathbb{Z}$ is the quotient of $\mathbb{Z}$ by the (normal, since $\mathbb{Z}$ is abelian) subgroup $n\mathbb{Z}$: its elements are the cosets $a + n\mathbb{Z} = [a]$, and coset addition is the addition of residue classes of [[§7 The Group ℤ∕nℤ#^prop-7-1|§7.1]]. The notation of [[· 2 Arithmetic Modulo n|Chapter 2]] is thus an instance of the general one.
 > 2. $G/G$ is the trivial group, and $G/\{e\} \cong G$ via $g\{e\} \mapsto g$.
 > 3. $S_3/A_3$ has two elements, $A_3$ and $(1\,2)A_3$; it is cyclic of order $2$.
 

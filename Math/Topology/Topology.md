@@ -53,19 +53,19 @@ graph TD
 
 ## Chapters
 **Part I: General Topology**
-- [[1 Topological Spaces and Constructions]]
-- [[2 Closedness, Continuity, and Hausdorff]]
-- [[3 Products, Metrics, and Quotients]]
-- [[4 Connectedness]]
-- [[5 Compactness]]
-- [[6 Countability and Separation]]
+- [[· 1 Topological Spaces and Constructions]]
+- [[· 2 Closedness, Continuity, and Hausdorff]]
+- [[· 3 Products, Metrics, and Quotients]]
+- [[· 4 Connectedness]]
+- [[· 5 Compactness]]
+- [[· 6 Countability and Separation]]
 
 **Part II: Algebraic Topology**
-- [[7 Algebraic Foundations]]
-- [[8 Homotopy and the Fundamental Group]]
-- [[9 Covering Spaces and Lifting]]
-- [[10 Applications of π₁]]
-- [[11 Computing π₁]]
+- [[· 7 Algebraic Foundations]]
+- [[· 8 Homotopy and the Fundamental Group]]
+- [[· 9 Covering Spaces and Lifting]]
+- [[· 10 Applications of π₁]]
+- [[· 11 Computing π₁]]
 
 ## Summary
 - [[Algebraic Topology Toolkit]]: the four tools for computing π₁, a decision tree, and a table of computed fundamental groups.

@@ -5,7 +5,7 @@ chapter: 3
 section: 12
 tags: [group-theory, math493]
 ---
-← [[§11 Disjoint Cycle Decomposition]] · ↑ [[3 Permutations]] · [[§13 Subgroups of S₃]] →
+← [[§11 Disjoint Cycle Decomposition]] · ↑ [[· 3 Permutations]] · [[§13 Subgroups of S₃]] →
 
 *Reference: Pinter Ch. 8.*
 

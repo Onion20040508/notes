@@ -5,7 +5,7 @@ chapter: 3
 section: 15
 tags: [differentiable-manifolds, math591]
 ---
-← [[§14 Local Diffeomorphisms and Submersions]] · ↑ [[3 Smooth Manifolds]] · [[§16 Fibrations]] →
+← [[§14 Local Diffeomorphisms and Submersions]] · ↑ [[· 3 Smooth Manifolds]] · [[§16 Fibrations]] →
 
 *Stage: submanifolds — Subsets of a manifold that are locally coordinate slices — the equations thread, completed.*
 

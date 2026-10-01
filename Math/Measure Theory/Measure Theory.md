@@ -45,12 +45,12 @@ graph TD
 ```
 
 ## Chapters
-- [[1 Set Theory Prerequisites]]
-- [[2 Topology of ℝⁿ]]
-- [[3 Measure Theory]]
-- [[4 Integration Theory]]
-- [[5 Differentiation and the FTC]]
-- [[6 Lᵖ Spaces]]
+- [[· 1 Set Theory Prerequisites]]
+- [[· 2 Topology of ℝⁿ]]
+- [[· 3 Measure Theory]]
+- [[· 4 Integration Theory]]
+- [[· 5 Differentiation and the FTC]]
+- [[· 6 Lᵖ Spaces]]
 
 ## Summary
 - [[Measure Theory Problem-Solving Techniques]]: 21 recurring proof strategies from the homework, each linked to the results it relies on.

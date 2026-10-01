@@ -5,7 +5,7 @@ chapter: 1
 section: 5
 tags: [group-theory, math493]
 ---
-← [[§4 Subgroups]] · ↑ [[1 Groups and Subgroups]] · [[§6 Divisibility and Congruence]] →
+← [[§4 Subgroups]] · ↑ [[· 1 Groups and Subgroups]] · [[§6 Divisibility and Congruence]] →
 
 *Source: WS 1.7*
 

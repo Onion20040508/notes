@@ -5,7 +5,7 @@ chapter: 3
 section: 10
 tags: [group-theory, math493]
 ---
-← [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem]] · ↑ [[3 Permutations]] · [[§11 Disjoint Cycle Decomposition]] →
+← [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem]] · ↑ [[· 3 Permutations]] · [[§11 Disjoint Cycle Decomposition]] →
 
 *Reference: Pinter Ch. 7, Ch. 8.*
 

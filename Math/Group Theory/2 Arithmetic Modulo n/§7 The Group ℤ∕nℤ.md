@@ -5,7 +5,7 @@ chapter: 2
 section: 7
 tags: [group-theory, math493]
 ---
-← [[§6 Divisibility and Congruence]] · ↑ [[2 Arithmetic Modulo n]] · [[§8 Invertibility and Unit Groups]] →
+← [[§6 Divisibility and Congruence]] · ↑ [[· 2 Arithmetic Modulo n]] · [[§8 Invertibility and Unit Groups]] →
 
 *Reference: Pinter Ch. 3 (the groups $\mathbb{Z}_n$), Ch. 23.*
 

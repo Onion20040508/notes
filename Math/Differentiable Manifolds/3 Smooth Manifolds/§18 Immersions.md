@@ -5,7 +5,7 @@ chapter: 3
 section: 18
 tags: [differentiable-manifolds, math591]
 ---
-← [[§17 The Tangent Bundle]] · ↑ [[3 Smooth Manifolds]]
+← [[§17 The Tangent Bundle]] · ↑ [[· 3 Smooth Manifolds]]
 
 *Stage: maps — The maps with injective differentials: locally inclusions, globally more subtle.*
 
@@ -20,7 +20,7 @@ The third special type of map, dual to the submersions of [[§14 Local Diffeomor
 > [!definition] Definition §18.1: Immersions
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$. $F$ is an **immersion at $p$** if $F_{*p} : T_pM \to T_{F(p)}N$ is injective — which forces $m \le n$, since an injective linear map cannot lower dimension — and an **immersion** if it is an immersion at every point. “Go from a lower-dimensional manifold to a bigger one.”
 >
-> *Lee: Ch. 4,* Immersions
+> *Lee: Ch. 4, Immersions*
 
 ^def-18-1
 

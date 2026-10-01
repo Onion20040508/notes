@@ -5,7 +5,7 @@ chapter: 5
 section: 21
 tags: [group-theory, math493]
 ---
-← [[§20 The Sign Homomorphism and the Alternating Group]] · ↑ [[5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] · [[§22 Equivalence Relations and Partitions]] →
+← [[§20 The Sign Homomorphism and the Alternating Group]] · ↑ [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] · [[§22 Equivalence Relations and Partitions]] →
 
 *Reference: Pinter Ch. 23.*
 

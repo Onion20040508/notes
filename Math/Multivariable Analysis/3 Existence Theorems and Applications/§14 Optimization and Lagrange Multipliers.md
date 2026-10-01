@@ -5,7 +5,7 @@ chapter: 3
 section: 14
 tags: [multivariable-analysis, math452]
 ---
-← [[§13 The Inverse Function Theorem]] · ↑ [[3 Existence Theorems and Applications]] · [[§15 Multivariable Integration]] →
+← [[§13 The Inverse Function Theorem]] · ↑ [[· 3 Existence Theorems and Applications]] · [[§15 Multivariable Integration]] →
 
 ## Unconstrained Optimization
 

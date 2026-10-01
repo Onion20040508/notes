@@ -5,7 +5,7 @@ chapter: 1
 section: 1
 tags: [topology, math590]
 ---
-↑ [[1 Topological Spaces and Constructions]] · [[§2 Basis for a Topology]] →
+↑ [[· 1 Topological Spaces and Constructions]] · [[§2 Basis for a Topology]] →
 
 ## What is Topology?
 

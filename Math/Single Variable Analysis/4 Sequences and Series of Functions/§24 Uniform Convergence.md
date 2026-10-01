@@ -4,7 +4,7 @@ section: 24
 chapter: 4
 tags: [real-analysis, math451]
 ---
-← [[§23 Power Series]] · ↑ [[4 Sequences and Series of Functions]] · [[§25 More on Uniform Convergence]] →
+← [[§23 Power Series]] · ↑ [[· 4 Sequences and Series of Functions]] · [[§25 More on Uniform Convergence]] →
 
 The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every point separately* is not sufficient. We need something stronger.
 

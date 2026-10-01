@@ -6,7 +6,7 @@ section: 23
 munkres: "§52"
 tags: [topology, math590]
 ---
-← [[§22 Homotopy of Paths]] · ↑ [[8 Homotopy and the Fundamental Group]] · [[§24 Covering Spaces]] →
+← [[§22 Homotopy of Paths]] · ↑ [[· 8 Homotopy and the Fundamental Group]] · [[§24 Covering Spaces]] →
 
 ## Definition
 

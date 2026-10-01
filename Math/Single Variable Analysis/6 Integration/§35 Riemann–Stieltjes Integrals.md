@@ -4,7 +4,7 @@ section: 35
 chapter: 6
 tags: [real-analysis, math451]
 ---
-← [[§34 Fundamental Theorem of Calculus]] · ↑ [[6 Integration]] · [[§36 Improper Integrals]] →
+← [[§34 Fundamental Theorem of Calculus]] · ↑ [[· 6 Integration]] · [[§36 Improper Integrals]] →
 
 A brief introduction, as in lecture. The Riemann integral is essentially a sum, and one application is taking *averages* — where *weights* matter. How to pass from $\int_a^b f\,dx$ to weighted sums and weighted integrals?
 

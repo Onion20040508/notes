@@ -35,12 +35,12 @@ graph TD
 ```
 
 ## Chapters
-- [[1 Introduction]]
-- [[2 Sequences]]
-- [[3 Continuity]]
-- [[4 Sequences and Series of Functions]]
-- [[5 Differentiation]]
-- [[6 Integration]]
+- [[· 1 Introduction]]
+- [[· 2 Sequences]]
+- [[· 3 Continuity]]
+- [[· 4 Sequences and Series of Functions]]
+- [[· 5 Differentiation]]
+- [[· 6 Integration]]
 
 ## Workhorse examples
 - [[Reciprocal function 1∕x]]

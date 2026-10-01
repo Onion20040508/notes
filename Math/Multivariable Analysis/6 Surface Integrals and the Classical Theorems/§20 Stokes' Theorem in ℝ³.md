@@ -5,7 +5,7 @@ chapter: 6
 section: 20
 tags: [multivariable-analysis, math452]
 ---
-← [[§19 The Laplacian in Spherical Coordinates]] · ↑ [[6 Surface Integrals and the Classical Theorems]] · [[§21 Introduction to Differential Forms]] →
+← [[§19 The Laplacian in Spherical Coordinates]] · ↑ [[· 6 Surface Integrals and the Classical Theorems]] · [[§21 Introduction to Differential Forms]] →
 
 Green's theorem ([[Green's Theorem|Section 16]]) relates a line integral around a closed curve $\gamma$ to a double integral over the enclosed *flat* region $D \subseteq \mathbb{R}^2$. Stokes' theorem generalizes this: it relates a line integral around the boundary $\partial S$ of a *curved* surface $S \subseteq \mathbb{R}^3$ to a surface integral over $S$.
 

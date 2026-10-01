@@ -5,7 +5,7 @@ chapter: 3
 section: 11
 tags: [measure-theory, math551]
 ---
-← [[§10 Lebesgue Measurable Sets]] · ↑ [[3 Measure Theory]] · [[§12 Measurable Functions]] →
+← [[§10 Lebesgue Measurable Sets]] · ↑ [[· 3 Measure Theory]] · [[§12 Measurable Functions]] →
 
 ## Generated $\sigma$-Algebras
 

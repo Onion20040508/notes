@@ -4,7 +4,7 @@ section: 8
 chapter: 2
 tags: [real-analysis, math451]
 ---
-← [[§7 Limits of Sequences]] · ↑ [[2 Sequences]] · [[§9 Limit Theorems for Sequences]] →
+← [[§7 Limits of Sequences]] · ↑ [[· 2 Sequences]] · [[§9 Limit Theorems for Sequences]] →
 
 This section is a workshop on the two-step method: guess the limit, then prove it. The recurring technique: simplify $|s_n - s|$ by replacing it with a *simpler upper bound*, then solve $N$ in terms of $\varepsilon$ — the point being to get a simple, clean formula for $N$.
 

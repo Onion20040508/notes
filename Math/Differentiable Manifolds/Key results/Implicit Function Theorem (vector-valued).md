@@ -17,7 +17,9 @@ tags: [differentiable-manifolds, hub]
 - [[§4 The Regular Value Theorem#^cor-4-2|Corollary §4.2: Implicit Function Theorem — Scalar Case]]
 - [[§4 The Regular Value Theorem#^thm-4-3|Theorem §4.3: Regular Value Theorem]]
 - [[§4 The Regular Value Theorem#^cor-4-4|Corollary §4.4: Open Domains and Arbitrary Values]]
+- [[§9 Manifolds in Euclidean Space#^ex-9-1|Example §9.1: The Circle in Three Descriptions]]
 - [[§9 Manifolds in Euclidean Space#^thm-9-1|Theorem §9.1: The Two Descriptions Agree]]
+- [[§9 Manifolds in Euclidean Space#^ex-9-2|Example §9.2: A Surface in ℝ³]]
 - [[§9 Manifolds in Euclidean Space#^prop-9-2|Proposition §9.2: Regular Level Sets Are Smooth Manifolds]]
 
 ## Connections

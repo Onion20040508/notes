@@ -16,7 +16,7 @@ tags: [differentiable-manifolds, hub]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^cor-3-19|Corollary §3.19: The Form Used in Practice]]
 - [[§7 Homogeneous Spaces#^def-7-3|Definition §7.3: Orbit Map]]
 - [[§7 Homogeneous Spaces#^lem-7-5|Lemma §7.5: Homogeneous Spaces Are Coset Spaces]]
-- [[§7 Homogeneous Spaces#^cor-7-7|Corollary §7.7: pi Is a Quotient Map]]
+- [[§7 Homogeneous Spaces#^cor-7-7|Corollary §7.7: π Is a Quotient Map]]
 
 ## Its proof uses (other subjects)
 - [[Bijection from Compact to Hausdorff is a Homeomorphism]] (Topology)

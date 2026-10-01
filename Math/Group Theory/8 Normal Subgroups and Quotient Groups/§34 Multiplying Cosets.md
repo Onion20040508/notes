@@ -5,7 +5,7 @@ chapter: 8
 section: 34
 tags: [group-theory, math493]
 ---
-← [[§33 The Center]] · ↑ [[8 Normal Subgroups and Quotient Groups]] · [[§35 Normal Subgroups]] →
+← [[§33 The Center]] · ↑ [[· 8 Normal Subgroups and Quotient Groups]] · [[§35 Normal Subgroups]] →
 
 *Reference: Pinter Ch. 15.*
 

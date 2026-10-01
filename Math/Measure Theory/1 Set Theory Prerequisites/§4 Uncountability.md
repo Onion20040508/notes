@@ -5,7 +5,7 @@ chapter: 1
 section: 4
 tags: [measure-theory, math551]
 ---
-← [[§3 Countability of Rationals and Unions]] · ↑ [[1 Set Theory Prerequisites]] · [[§5 Topology of ℝⁿ]] →
+← [[§3 Countability of Rationals and Unions]] · ↑ [[· 1 Set Theory Prerequisites]] · [[§5 Topology of ℝⁿ]] →
 
 ## Uncountability of Binary Sequences
 

@@ -6,7 +6,7 @@ section: 14
 munkres: "§24"
 tags: [topology, math590]
 ---
-← [[§13 Connected Spaces]] · ↑ [[4 Connectedness]] · [[§15 Compact Spaces]] →
+← [[§13 Connected Spaces]] · ↑ [[· 4 Connectedness]] · [[§15 Compact Spaces]] →
 
 ## Least Upper Bound Property and Linear Continuum
 

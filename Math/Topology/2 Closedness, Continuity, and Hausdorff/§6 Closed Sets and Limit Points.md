@@ -5,7 +5,7 @@ chapter: 2
 section: 6
 tags: [topology, math590]
 ---
-← [[§5 Subspace Topology]] · ↑ [[2 Closedness, Continuity, and Hausdorff]] · [[§7 Interior and Closure]] →
+← [[§5 Subspace Topology]] · ↑ [[· 2 Closedness, Continuity, and Hausdorff]] · [[§7 Interior and Closure]] →
 
 ## Closed Sets
 

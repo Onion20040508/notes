@@ -5,7 +5,7 @@ chapter: 2
 section: 4
 tags: [multivariable-analysis, math452]
 ---
-← [[§3 Continuity and Limits of Functions]] · ↑ [[2 Differentiation]] · [[§5 Equality of Mixed Partials]] →
+← [[§3 Continuity and Limits of Functions]] · ↑ [[· 2 Differentiation]] · [[§5 Equality of Mixed Partials]] →
 
 > [!definition] Definition §4.1: Partial Derivatives
 > For $f : \mathbb{R}^2 \to \mathbb{R}$ defined near $(x, y)$:

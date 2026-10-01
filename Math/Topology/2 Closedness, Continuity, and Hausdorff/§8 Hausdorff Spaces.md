@@ -5,7 +5,7 @@ chapter: 2
 section: 8
 tags: [topology, math590]
 ---
-← [[§7 Interior and Closure]] · ↑ [[2 Closedness, Continuity, and Hausdorff]] · [[§9 Continuous Functions]] →
+← [[§7 Interior and Closure]] · ↑ [[· 2 Closedness, Continuity, and Hausdorff]] · [[§9 Continuous Functions]] →
 
 > [!definition] Definition §8.1: Hausdorff Space
 > A topological space $X$ is called **Hausdorff** (or $T_2$) if for each pair $x_1$ and $x_2$ of distinct points in $X$, there exist neighborhoods $U_1$ of $x_1$ and $U_2$ of $x_2$ that are disjoint.

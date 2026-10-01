@@ -5,7 +5,7 @@ chapter: 2
 section: 8
 tags: [measure-theory, math551]
 ---
-← [[§7 Structure of Open Sets]] · ↑ [[2 Topology of ℝⁿ]] · [[§9 Lebesgue Outer Measure]] →
+← [[§7 Structure of Open Sets]] · ↑ [[· 2 Topology of ℝⁿ]] · [[§9 Lebesgue Outer Measure]] →
 
 We now begin the transition to measure theory. We start by reviewing the Riemann integral (MATH 451 [[§32 The Definition of the Riemann Integral|§32]]–[[§34 Fundamental Theorem of Calculus|§34]]) and understanding its limitations.
 

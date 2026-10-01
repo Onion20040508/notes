@@ -4,7 +4,7 @@ section: 10
 chapter: 2
 tags: [real-analysis, math451]
 ---
-← [[§9 Limit Theorems for Sequences]] · ↑ [[2 Sequences]] · [[§11 Subsequences]] →
+← [[§9 Limit Theorems for Sequences]] · ↑ [[· 2 Sequences]] · [[§11 Subsequences]] →
 
 So far, mainly three ways to determine whether a sequence converges: (1) guess the limit and check the $(\varepsilon, N)$ definition; (2) use basic examples plus the limit theorems and the [[Squeeze Theorem|Squeeze Theorem]]; (3) sometimes, the ratio test. But we need criteria that work *without knowing the value of the limit* — sometimes we need the existence of $\lim s_n$ even when we cannot compute it. In one important case, we can do it.
 

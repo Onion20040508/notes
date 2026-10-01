@@ -4,7 +4,7 @@ section: 14
 chapter: 2
 tags: [real-analysis, math451]
 ---
-← [[§13 Some Topological Concepts in Metric Spaces]] · ↑ [[2 Sequences]] · [[§15 Alternating Series and Integral Tests]] →
+← [[§13 Some Topological Concepts in Metric Spaces]] · ↑ [[· 2 Sequences]] · [[§15 Alternating Series and Integral Tests]] →
 
 We know how to add up finitely many numbers:
 

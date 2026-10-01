@@ -5,7 +5,7 @@ chapter: 2
 section: 6
 tags: [group-theory, math493]
 ---
-← [[§5 A Zoo of Subgroups]] · ↑ [[2 Arithmetic Modulo n]] · [[§7 The Group ℤ∕nℤ]] →
+← [[§5 A Zoo of Subgroups]] · ↑ [[· 2 Arithmetic Modulo n]] · [[§7 The Group ℤ∕nℤ]] →
 
 *Reference: Pinter Ch. 21 (the division algorithm), Ch. 23 (congruences).*
 

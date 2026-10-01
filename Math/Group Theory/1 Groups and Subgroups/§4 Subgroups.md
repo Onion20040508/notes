@@ -5,7 +5,7 @@ chapter: 1
 section: 4
 tags: [group-theory, math493]
 ---
-← [[§3 Basic Examples of Groups]] · ↑ [[1 Groups and Subgroups]] · [[§5 A Zoo of Subgroups]] →
+← [[§3 Basic Examples of Groups]] · ↑ [[· 1 Groups and Subgroups]] · [[§5 A Zoo of Subgroups]] →
 
 *Reference: Pinter Ch. 5 (subgroups), Ch. 10 (order of group elements), Ch. 11 (cyclic groups).*
 

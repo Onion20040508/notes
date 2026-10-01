@@ -5,7 +5,7 @@ chapter: 6
 section: 24
 tags: [group-theory, math493]
 ---
-← [[§23 Actions]] · ↑ [[6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§25 Orbits]] →
+← [[§23 Actions]] · ↑ [[· 6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§25 Orbits]] →
 
 *Reference: Pinter Ch. 13, Ex. J.*
 

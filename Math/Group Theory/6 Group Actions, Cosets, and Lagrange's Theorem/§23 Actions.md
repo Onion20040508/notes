@@ -5,7 +5,7 @@ chapter: 6
 section: 23
 tags: [group-theory, math493]
 ---
-← [[§22 Equivalence Relations and Partitions]] · ↑ [[6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§24 Stabilizers and Fixed Points]] →
+← [[§22 Equivalence Relations and Partitions]] · ↑ [[· 6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§24 Stabilizers and Fixed Points]] →
 
 *Reference: Pinter Ch. 13, Ex. J (group acting on a set); Ch. 9 (Cayley's theorem).*
 
@@ -189,7 +189,7 @@ tags: [group-theory, math493]
 ^rem-23-5
 
 > [!remark] Remark: Two Languages for One Thing
-> “$G$ acts on $X$” and “there is a homomorphism $G \to S_X$” are interchangeable, and each is useful: the action language describes what happens to points of $X$; the homomorphism language brings in kernels, images, and the results of [[4 Homomorphisms and Isomorphisms|Chapter 4]].
+> “$G$ acts on $X$” and “there is a homomorphism $G \to S_X$” are interchangeable, and each is useful: the action language describes what happens to points of $X$; the homomorphism language brings in kernels, images, and the results of [[· 4 Homomorphisms and Isomorphisms|Chapter 4]].
 
 ^rem-23-6
 

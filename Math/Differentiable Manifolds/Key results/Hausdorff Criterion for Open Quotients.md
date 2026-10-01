@@ -17,6 +17,7 @@ tags: [differentiable-manifolds, hub]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-6|Definition §3.6: Open Equivalence Relation]]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-8|Proposition §3.8: Box Characterization of Open Sets]]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-10|Definition §3.10: Graph of a Relation]]
+- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-13|Proposition §3.13: The Quotient Topology Is the Finest Making π Continuous]]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-28|Theorem §3.28: Second Countability of Open Quotients]]
 
 ## Used in (Differentiable Manifolds)

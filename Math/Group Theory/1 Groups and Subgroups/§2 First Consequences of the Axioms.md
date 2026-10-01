@@ -5,7 +5,7 @@ chapter: 1
 section: 2
 tags: [group-theory, math493]
 ---
-← [[§1 The Definition of a Group]] · ↑ [[1 Groups and Subgroups]] · [[§3 Basic Examples of Groups]] →
+← [[§1 The Definition of a Group]] · ↑ [[· 1 Groups and Subgroups]] · [[§3 Basic Examples of Groups]] →
 
 *Source: WS 1.1–1.4*
 

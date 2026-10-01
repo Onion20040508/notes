@@ -4,7 +4,7 @@ section: 11
 chapter: 2
 tags: [real-analysis, math451]
 ---
-← [[§10 Monotone Sequences and Cauchy Sequences]] · ↑ [[2 Sequences]] · [[§12 Lim Sup and Lim Inf Continued (Skipped)]] →
+← [[§10 Monotone Sequences and Cauchy Sequences]] · ↑ [[· 2 Sequences]] · [[§12 Lim Sup and Lim Inf Continued (Skipped)]] →
 
 We now want to understand the structure of sequences better. Recall: monotone $+$ bounded $\implies$ convergent, and both conditions are needed. If we remove boundedness, we still know what happens: an unbounded increasing sequence tends to $+\infty$, an unbounded decreasing one to $-\infty$. But what can we say about a *bounded* sequence that is not monotone?
 

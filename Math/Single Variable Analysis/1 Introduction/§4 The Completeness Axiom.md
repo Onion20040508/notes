@@ -4,7 +4,7 @@ section: 4
 chapter: 1
 tags: [real-analysis, math451]
 ---
-← [[§3 The Set ℝ of Real Numbers]] · ↑ [[1 Introduction]] · [[§5 The Symbols +∞, −∞]] →
+← [[§3 The Set ℝ of Real Numbers]] · ↑ [[· 1 Introduction]] · [[§5 The Symbols +∞, −∞]] →
 
 We have studied properties of $\mathbb{Z}$, $\mathbb{Q}$, and $\mathbb{R}$, emphasizing their similarities: for example, $\mathbb{Q}$ and $\mathbb{R}$ are both ordered fields, with the resulting notion of absolute value as a way to measure the size of a number. Of course they are not the same: $\mathbb{Q}$ is countable while $\mathbb{R}$ is not.
 

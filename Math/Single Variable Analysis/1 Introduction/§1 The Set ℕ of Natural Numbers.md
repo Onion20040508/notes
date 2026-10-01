@@ -4,7 +4,7 @@ section: 1
 chapter: 1
 tags: [real-analysis, math451]
 ---
-↑ [[1 Introduction]] · [[§2 The Set ℚ of Rational Numbers]] →
+↑ [[· 1 Introduction]] · [[§2 The Set ℚ of Rational Numbers]] →
 
 ## The Peano Axioms
 

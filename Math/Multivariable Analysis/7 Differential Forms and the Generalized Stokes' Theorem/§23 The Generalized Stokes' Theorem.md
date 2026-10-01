@@ -5,7 +5,7 @@ chapter: 7
 section: 23
 tags: [multivariable-analysis, math452]
 ---
-← [[§22 The Algebra of Differential Forms]] · ↑ [[7 Differential Forms and the Generalized Stokes' Theorem]]
+← [[§22 The Algebra of Differential Forms]] · ↑ [[· 7 Differential Forms and the Generalized Stokes' Theorem]]
 
 ## The Classical Theorems in Forms Language
 

@@ -33,7 +33,7 @@ tags: [group-theory, hub]
 - [[§17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]
 - [[§17 Cyclic Groups#^thm-17-4|Theorem §17.4: Subgroups of Cyclic Groups Are Cyclic]]
 - [[§17 Cyclic Groups#^prop-17-5|Proposition §17.5: The Order of a Power]]
-- [[§27 The Index and Lagrange's Theorem#^cor-27-3|Corollary §27.3: Order of an Element Divides ∣G∣; g^∣G∣ = e]]
+- [[§27 The Index and Lagrange's Theorem#^cor-27-3|Corollary §27.3: Order of an Element Divides ∣G∣; g^(∣G∣) = e]]
 - [[§27 The Index and Lagrange's Theorem#^thm-27-7|Theorem §27.7: Groups of Prime Order]]
 
 ## Connections

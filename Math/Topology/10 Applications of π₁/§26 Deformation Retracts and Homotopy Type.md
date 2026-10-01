@@ -6,7 +6,7 @@ section: 26
 munkres: "§58"
 tags: [topology, math590]
 ---
-← [[§25 The Fundamental Theorem of Algebra]] · ↑ [[10 Applications of π₁]] · [[§27 The Fundamental Group of Sⁿ]] →
+← [[§25 The Fundamental Theorem of Algebra]] · ↑ [[· 10 Applications of π₁]] · [[§27 The Fundamental Group of Sⁿ]] →
 
 ## Homotopic Maps Induce the Same Homomorphism
 

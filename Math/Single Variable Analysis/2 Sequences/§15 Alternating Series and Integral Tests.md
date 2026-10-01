@@ -4,7 +4,7 @@ section: 15
 chapter: 2
 tags: [real-analysis, math451]
 ---
-← [[§14 Series]] · ↑ [[2 Sequences]] · [[§16 Decimal Expansions of Real Numbers (Not Covered)]] →
+← [[§14 Series]] · ↑ [[· 2 Sequences]] · [[§16 Decimal Expansions of Real Numbers (Not Covered)]] →
 
 ## Alternating Series
 

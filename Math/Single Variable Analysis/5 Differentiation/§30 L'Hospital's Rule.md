@@ -4,7 +4,7 @@ section: 30
 chapter: 5
 tags: [real-analysis, math451]
 ---
-← [[§29 The Mean Value Theorem]] · ↑ [[5 Differentiation]] · [[§31 Taylor's Theorem]] →
+← [[§29 The Mean Value Theorem]] · ↑ [[· 5 Differentiation]] · [[§31 Taylor's Theorem]] →
 
 Now the most interesting section — with a good story about learning: paying for knowledge and fame (L'Hospital famously bought the result from Johann Bernoulli). We often meet limits of the type
 

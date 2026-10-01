@@ -5,7 +5,7 @@ chapter: 3
 section: 13
 tags: [measure-theory, math551]
 ---
-← [[§12 Measurable Functions]] · ↑ [[3 Measure Theory]] · [[§14 The Lebesgue Integral for Simple Functions]] →
+← [[§12 Measurable Functions]] · ↑ [[· 3 Measure Theory]] · [[§14 The Lebesgue Integral for Simple Functions]] →
 
 ## Egorov's Theorem
 

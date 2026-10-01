@@ -5,7 +5,7 @@ chapter: 4
 section: 17
 tags: [group-theory, math493]
 ---
-← [[§16 Isomorphisms]] · ↑ [[4 Homomorphisms and Isomorphisms]] · [[§18 Conjugation, Products, and Pointwise Products]] →
+← [[§16 Isomorphisms]] · ↑ [[· 4 Homomorphisms and Isomorphisms]] · [[§18 Conjugation, Products, and Pointwise Products]] →
 
 *Reference: Pinter Ch. 11.*
 

@@ -5,7 +5,7 @@ chapter: 2
 section: 11
 tags: [multivariable-analysis, math452]
 ---
-← [[§10 Composition of Functions and the Chain Rule]] · ↑ [[2 Differentiation]] · [[§12 The Implicit Function Theorem]] →
+← [[§10 Composition of Functions and the Chain Rule]] · ↑ [[· 2 Differentiation]] · [[§12 The Implicit Function Theorem]] →
 
 In [[§7 Directional Derivatives#^rem-7-2|§7]], we introduced the gradient $\nabla f$ of a scalar field. There are two more first-order differential operators that act on *vector* fields: the curl and the divergence. All three will play central roles in the integral theorems of Part II ([[§15 Multivariable Integration|§15]]–[[§20 Stokes' Theorem in ℝ³|§20]]) and will be unified by the [[§22 The Algebra of Differential Forms#^def-22-4|exterior derivative]] in Part III (§22).
 

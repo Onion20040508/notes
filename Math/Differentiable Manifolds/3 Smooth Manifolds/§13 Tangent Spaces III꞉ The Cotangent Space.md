@@ -5,7 +5,7 @@ chapter: 3
 section: 13
 tags: [differentiable-manifolds, math591]
 ---
-← [[§12 Tangent Spaces II꞉ The Abstract Tangent Space]] · ↑ [[3 Smooth Manifolds]] · [[§14 Local Diffeomorphisms and Submersions]] →
+← [[§12 Tangent Spaces II꞉ The Abstract Tangent Space]] · ↑ [[· 3 Smooth Manifolds]] · [[§14 Local Diffeomorphisms and Submersions]] →
 
 *Stage: abstract, dual — Differentials of functions and the cotangent space: defined as a dual, then recovered from germs alone.*
 

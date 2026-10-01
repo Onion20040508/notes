@@ -6,7 +6,7 @@ section: 27
 munkres: "§59"
 tags: [topology, math590]
 ---
-← [[§26 Deformation Retracts and Homotopy Type]] · ↑ [[11 Computing π₁]] · [[§28 Fundamental Group of Some Surfaces]] →
+← [[§26 Deformation Retracts and Homotopy Type]] · ↑ [[· 11 Computing π₁]] · [[§28 Fundamental Group of Some Surfaces]] →
 
 The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]]). The proof requires a [[§27 The Fundamental Group of Sⁿ#^thm-27-1|general theorem]] about how $\pi_1$ interacts with open covers.
 

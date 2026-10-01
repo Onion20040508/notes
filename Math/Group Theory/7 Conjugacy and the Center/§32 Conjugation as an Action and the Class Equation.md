@@ -5,7 +5,7 @@ chapter: 7
 section: 32
 tags: [group-theory, math493]
 ---
-← [[§31 Conjugacy Classes]] · ↑ [[7 Conjugacy and the Center]] · [[§33 The Center]] →
+← [[§31 Conjugacy Classes]] · ↑ [[· 7 Conjugacy and the Center]] · [[§33 The Center]] →
 
 *Reference: Pinter Ch. 13, Ex. I; Ch. 15, Ex. G (the class equation).*
 

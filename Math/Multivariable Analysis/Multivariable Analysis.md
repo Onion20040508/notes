@@ -60,17 +60,17 @@ graph TD
 ## Chapters
 
 **Part I: Differential Calculus in Several Variables**
-- [[1 Foundations]]
-- [[2 Differentiation]]
-- [[3 Existence Theorems and Applications]]
+- [[· 1 Foundations]]
+- [[· 2 Differentiation]]
+- [[· 3 Existence Theorems and Applications]]
 
 **Part II: Integral Calculus and Vector Calculus**
-- [[4 Integration on Flat Domains]]
-- [[5 Line Integrals and the Divergence Theorem]]
-- [[6 Surface Integrals and the Classical Theorems]]
+- [[· 4 Integration on Flat Domains]]
+- [[· 5 Line Integrals and the Divergence Theorem]]
+- [[· 6 Surface Integrals and the Classical Theorems]]
 
 **Part III: Differential Forms**
-- [[7 Differential Forms and the Generalized Stokes' Theorem]]
+- [[· 7 Differential Forms and the Generalized Stokes' Theorem]]
 
 ## Prerequisites from other subjects
 The results from other subjects that this course's proofs and definitions cite most, with the number of citing items. Each chapter note gives per-chapter counts; each hub note lists its own cross-subject dependencies.

@@ -5,7 +5,7 @@ chapter: 6
 section: 29
 tags: [group-theory, math493]
 ---
-← [[§28 Orbit–Stabilizer]] · ↑ [[6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§30 Examples꞉ Linear Groups and the Cube]] →
+← [[§28 Orbit–Stabilizer]] · ↑ [[· 6 Group Actions, Cosets, and Lagrange's Theorem]] · [[§30 Examples꞉ Linear Groups and the Cube]] →
 
 *Reference: Not treated in Pinter.*
 

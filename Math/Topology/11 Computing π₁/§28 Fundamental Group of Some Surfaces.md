@@ -6,7 +6,7 @@ section: 28
 munkres: "§60"
 tags: [topology, math590]
 ---
-← [[§27 The Fundamental Group of Sⁿ]] · ↑ [[11 Computing π₁]] · [[§29 The Seifert–van Kampen Theorem]] →
+← [[§27 The Fundamental Group of Sⁿ]] · ↑ [[· 11 Computing π₁]] · [[§29 The Seifert–van Kampen Theorem]] →
 
 ## The Projective Plane $P^2$
 

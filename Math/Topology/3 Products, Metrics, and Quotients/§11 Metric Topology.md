@@ -6,7 +6,7 @@ section: 11
 munkres: "§20, §21"
 tags: [topology, math590]
 ---
-← [[§10 Product Topology on Arbitrary Products]] · ↑ [[3 Products, Metrics, and Quotients]] · [[§12 Quotient Topology]] →
+← [[§10 Product Topology on Arbitrary Products]] · ↑ [[· 3 Products, Metrics, and Quotients]] · [[§12 Quotient Topology]] →
 
 ## Metrics and Metric Spaces
 

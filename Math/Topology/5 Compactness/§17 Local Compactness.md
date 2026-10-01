@@ -6,7 +6,7 @@ section: 17
 munkres: "§29"
 tags: [topology, math590]
 ---
-← [[§16 Limit Point Compactness]] · ↑ [[5 Compactness]] · [[§18 Countability Axioms]] →
+← [[§16 Limit Point Compactness]] · ↑ [[· 5 Compactness]] · [[§18 Countability Axioms]] →
 
 ## Definition and Examples
 

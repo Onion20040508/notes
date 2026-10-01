@@ -4,7 +4,7 @@ section: 32
 chapter: 6
 tags: [real-analysis, math451]
 ---
-← [[§31 Taylor's Theorem]] · ↑ [[6 Integration]] · [[§33 Properties of the Riemann Integral]] →
+← [[§31 Taylor's Theorem]] · ↑ [[· 6 Integration]] · [[§33 Properties of the Riemann Integral]] →
 
 Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We want to understand when $\int_a^b f(x)\,dx$ exists, and how to define it rigorously from what we have learned. Geometrically, it should be the area under the graph — so we have the notion of the integral, right? **No.** The problem: *what is area?* We only know how to compute areas of simple regions — rectangles, triangles, trapezoids. The idea, as always in this course: approximate the complicated by the simple, and take a limit. *The limit is the key.*
 

@@ -45,17 +45,17 @@ graph TD
   X3 -.->|30| C3
   X2 -.->|3| C1
   X2 -.->|6| C2
-  X2 -.->|29| C3
+  X2 -.->|28| C3
   X5 -.->|2| C3
-  X1 -.->|54| C1
+  X1 -.->|55| C1
   X1 -.->|16| C2
-  X1 -.->|33| C3
+  X1 -.->|34| C3
 ```
 
 ## Chapters
-- [[1 Topological Manifolds]]
-- [[2 Topological Groups and Homogeneous Spaces]]
-- [[3 Smooth Manifolds]]
+- [[· 1 Topological Manifolds]]
+- [[· 2 Topological Groups and Homogeneous Spaces]]
+- [[· 3 Smooth Manifolds]]
 
 ## Planned topics (syllabus)
 Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields (defined, §17); differential forms; submanifolds ✓; immersions/submersions ✓ (immersion normal form stated); Sard's theorem; transversality (in Euclidean space, §11); Lie groups and algebras (classical matrix groups and their tangent spaces at $I$ so far); Stokes' theorem; de Rham cohomology; other topics time permitting.

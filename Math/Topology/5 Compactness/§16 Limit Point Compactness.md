@@ -6,7 +6,7 @@ section: 16
 munkres: "§28"
 tags: [topology, math590]
 ---
-← [[§15 Compact Spaces]] · ↑ [[5 Compactness]] · [[§17 Local Compactness]] →
+← [[§15 Compact Spaces]] · ↑ [[· 5 Compactness]] · [[§17 Local Compactness]] →
 
 ## Definitions
 

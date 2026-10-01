@@ -4,7 +4,7 @@ section: 33
 chapter: 6
 tags: [real-analysis, math451]
 ---
-← [[§32 The Definition of the Riemann Integral]] · ↑ [[6 Integration]] · [[§34 Fundamental Theorem of Calculus]] →
+← [[§32 The Definition of the Riemann Integral]] · ↑ [[· 6 Integration]] · [[§34 Fundamental Theorem of Calculus]] →
 
 It is often not easy to check integrability from the definitions — we need properties.
 

@@ -5,7 +5,7 @@ chapter: 2
 section: 6
 tags: [measure-theory, math551]
 ---
-← [[§5 Topology of ℝⁿ]] · ↑ [[2 Topology of ℝⁿ]] · [[§7 Structure of Open Sets]] →
+← [[§5 Topology of ℝⁿ]] · ↑ [[· 2 Topology of ℝⁿ]] · [[§7 Structure of Open Sets]] →
 
 ## Open Covers
 

@@ -5,7 +5,7 @@ chapter: 8
 section: 35
 tags: [group-theory, math493]
 ---
-← [[§34 Multiplying Cosets]] · ↑ [[8 Normal Subgroups and Quotient Groups]] · [[§36 Sources of Normal Subgroups]] →
+← [[§34 Multiplying Cosets]] · ↑ [[· 8 Normal Subgroups and Quotient Groups]] · [[§36 Sources of Normal Subgroups]] →
 
 *Reference: Pinter Ch. 14, Exs. D–E.*
 

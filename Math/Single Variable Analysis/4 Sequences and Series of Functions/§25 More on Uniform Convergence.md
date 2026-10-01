@@ -4,7 +4,7 @@ section: 25
 chapter: 4
 tags: [real-analysis, math451]
 ---
-← [[§24 Uniform Convergence]] · ↑ [[4 Sequences and Series of Functions]] · [[§26 Differentiation and Integration of Power Series]] →
+← [[§24 Uniform Convergence]] · ↑ [[· 4 Sequences and Series of Functions]] · [[§26 Differentiation and Integration of Power Series]] →
 
 ## Exchanging Limits and Integrals
 

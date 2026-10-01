@@ -5,7 +5,7 @@ chapter: 5
 section: 18
 tags: [measure-theory, math551]
 ---
-← [[§17 Invariance Properties and Fubini's Theorem]] · ↑ [[5 Differentiation and the FTC]] · [[§19 Normed Linear Spaces and Lᵖ Spaces]] →
+← [[§17 Invariance Properties and Fubini's Theorem]] · ↑ [[· 5 Differentiation and the FTC]] · [[§19 Normed Linear Spaces and Lᵖ Spaces]] →
 
 ## Motivation: The Fundamental Theorem of Calculus
 

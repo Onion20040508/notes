@@ -4,7 +4,7 @@ section: 22
 chapter: 3
 tags: [real-analysis, math451]
 ---
-← [[§21 More on Metric Spaces꞉ Continuity]] · ↑ [[3 Continuity]] · [[§23 Power Series]] →
+← [[§21 More on Metric Spaces꞉ Continuity]] · ↑ [[· 3 Continuity]] · [[§23 Power Series]] →
 
 Given a subset $S \subseteq \mathbb{R}$, when should we consider it *connected*? Intervals — $(a,b)$, $[a,b]$, $(a,b]$, $[a,b)$ — should count: they are like unbroken strings, and we can travel from any point to any other continuously. How about $\mathbb{Q}$? Probably not: we cannot move continuously from one rational to another without leaving $\mathbb{Q}$. There are several ways to make this precise; here is one.
 

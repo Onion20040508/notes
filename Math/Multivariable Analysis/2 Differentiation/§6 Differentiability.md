@@ -5,7 +5,7 @@ chapter: 2
 section: 6
 tags: [multivariable-analysis, math452]
 ---
-← [[§5 Equality of Mixed Partials]] · ↑ [[2 Differentiation]] · [[§7 Directional Derivatives]] →
+← [[§5 Equality of Mixed Partials]] · ↑ [[· 2 Differentiation]] · [[§7 Directional Derivatives]] →
 
 ## Motivation: What Should Differentiability Mean?
 

@@ -5,7 +5,7 @@ chapter: 1
 section: 2
 tags: [multivariable-analysis, math452]
 ---
-← [[§1 Sequences and Limits in ℝⁿ]] · ↑ [[1 Foundations]] · [[§3 Continuity and Limits of Functions]] →
+← [[§1 Sequences and Limits in ℝⁿ]] · ↑ [[· 1 Foundations]] · [[§3 Continuity and Limits of Functions]] →
 
 > [!definition] Definition §2.1: Open Ball
 > The **open ball** (spherical neighborhood) centered at $x \in \mathbb{R}^n$ with radius $r > 0$ is

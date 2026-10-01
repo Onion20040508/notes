@@ -5,7 +5,7 @@ chapter: 8
 section: 38
 tags: [group-theory, math493]
 ---
-← [[§37 Quotient Groups]] · ↑ [[8 Normal Subgroups and Quotient Groups]] · [[§39 Simple Groups]] →
+← [[§37 Quotient Groups]] · ↑ [[· 8 Normal Subgroups and Quotient Groups]] · [[§39 Simple Groups]] →
 
 *Reference: Pinter Ch. 16 (there called the Fundamental Homomorphism Theorem).*
 
