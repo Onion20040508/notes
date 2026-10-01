@@ -28,9 +28,11 @@ graph TD
   A4["A4 The Second Law of Thermodynamics"]
   A2 -->|9| A3
   A1 -->|4| A4
-  A2 -->|4| A4
-  A3 -->|14| A4
-  A3 -.->|3| A2
+  A2 -->|5| A4
+  A3 -->|18| A4
+  A3 -.->|2| A1
+  A3 -.->|4| A2
+  A4 -.->|1| A3
 ```
 
 ## Planned

@@ -8,7 +8,7 @@ tags: [chapter, thermal-and-statistical-physics]
 # A1 Temperature and Heat
 ↑ [[Thermal and Statistical Physics]] · [[· A2 The Kinetic Theory of Gases]] →
 
-**Builds on:** —
+**Builds on:** [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (2)
 **Used by:** [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (4)
 
 ## Sections

@@ -8,8 +8,8 @@ tags: [chapter, thermal-and-statistical-physics]
 # A4 The Second Law of Thermodynamics
 ← [[· A3 The First Law of Thermodynamics]] · ↑ [[Thermal and Statistical Physics]]
 
-**Builds on:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (4), [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (4), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (14)
-**Used by:** —
+**Builds on:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (4), [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (5), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (18)
+**Used by:** [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (1)
 
 ## Sections
 - [[§A4.1 Reversible and Irreversible Processes]] — UP Vol. 2 §4.1
@@ -26,8 +26,8 @@ tags: [chapter, thermal-and-statistical-physics]
 - [[§A4.6 Entropy on a Microscopic Scale#^pr-a4-6-3|§A4.6.3]] Third Law of Thermodynamics
 
 ## Theorems
-- [[§A4.2 Heat Engines, Refrigerators and Heat Pumps#^thm-a4-2-2|§A4.2.2]] Energy Balance of a Heat Engine
-- [[§A4.2 Heat Engines, Refrigerators and Heat Pumps#^thm-a4-2-3|§A4.2.3]] Coefficients of Performance from the Heats
+- [[§A4.2 Heat Engines, Refrigerators and Heat Pumps#^thm-a4-2-1|§A4.2.1]] Energy Balance of a Heat Engine
+- [[§A4.2 Heat Engines, Refrigerators and Heat Pumps#^thm-a4-2-2|§A4.2.2]] Coefficients of Performance from the Heats
 - [[§A4.3 Statements of the Second Law#^thm-a4-3-2|§A4.3.2]] Equivalence of the Clausius and Kelvin–Planck Statements
 - [[§A4.3 Statements of the Second Law#^thm-a4-3-3|§A4.3.3]] Carnot's Theorem
 - [[§A4.4 The Carnot Cycle#^thm-a4-4-2|§A4.4.2]] Efficiency of the Ideal-Gas Carnot Engine
@@ -42,5 +42,4 @@ tags: [chapter, thermal-and-statistical-physics]
 
 ## Models
 - [[§A4.1 Reversible and Irreversible Processes#^mod-a4-1-1|§A4.1.1]] Reversible Process
-- [[§A4.2 Heat Engines, Refrigerators and Heat Pumps#^mod-a4-2-1|§A4.2.1]] Heat Reservoir
 - [[§A4.4 The Carnot Cycle#^mod-a4-4-1|§A4.4.1]] Carnot Cycle; Carnot Engine
