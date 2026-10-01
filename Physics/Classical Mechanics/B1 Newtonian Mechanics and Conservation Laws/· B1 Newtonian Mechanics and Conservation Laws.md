@@ -8,7 +8,7 @@ tags: [chapter, classical-mechanics]
 # B1 Newtonian Mechanics and Conservation Laws
 ← [[· A9 Fluid Mechanics]] · ↑ [[Classical Mechanics]] · [[· B2 Central Forces and Orbits]] →
 
-**Builds on:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (8), [[· A4 Work and Energy|A4 Work and Energy]] (13), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (1), [[· A6 Rotation|A6 Rotation]] (5), [[· A8 Gravitation|A8 Gravitation]] (1)
+**Builds on:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (8), [[· A4 Work and Energy|A4 Work and Energy]] (12), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (1), [[· A6 Rotation|A6 Rotation]] (5), [[· A8 Gravitation|A8 Gravitation]] (1)
 **Used by:** [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (15), [[· B4 Collisions and Scattering|B4 Collisions and Scattering]] (4), [[· B7 Hamiltonian Mechanics and Phase Space|B7 Hamiltonian Mechanics and Phase Space]] (3), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (2)
 
 ## Sections

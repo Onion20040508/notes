@@ -2,14 +2,14 @@
 type: subject
 discipline: physics
 courses: ["PHY 181 (UMass, Fall 2022)", "PHY 421 (UMass, Fall 2023)"]
-textbooks: ["OpenStax, University Physics Vol. 1", "Marion & Thornton, Classical Dynamics", "Landau & Lifshitz, Mechanics"]
+textbooks: ["OpenStax, University Physics Vol. 1", "Morin, Introduction to Classical Mechanics", "Helliwell & Sahakian, Modern Classical Mechanics", "Landau & Lifshitz, Mechanics", "Marion & Thornton, Classical Dynamics"]
 conventions: "[[University Physics]]"
-status: level A in progress
+status: levels A and B done
 tags: [subject, classical-mechanics]
 ---
 # Classical Mechanics
 
-The mechanics of particles, rigid bodies and fluids, in three levels: **A** introductory (University Physics Vol. 1; PHY 181), **B** upper-level (Newtonian, Lagrangian and Hamiltonian mechanics; PHY 421, the series Part II), **C** graduate (classical field theory and beyond). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). Oscillations, waves and sound are in [[Oscillations, Waves and Optics]]; relativistic mechanics in [[Relativity]].
+The mechanics of particles, rigid bodies and fluids, in three levels: **A** introductory (University Physics Vol. 1; PHY 181), **B** upper-level (Newtonian, Lagrangian and Hamiltonian mechanics, non-inertial frames, rigid bodies; Morin, Helliwell & Sahakian, Landau, the series Part II; PHY 421), **C** graduate (classical field theory and beyond). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). Oscillations, waves and sound are in [[Oscillations, Waves and Optics]]; relativistic mechanics in [[Relativity]].
 
 ## Level A — introductory
 - [[· A1 Units, Measurement and Vectors]]
@@ -82,7 +82,7 @@ graph TD
   A7 -->|1| A9
   A8 -->|2| A9
   A3 -->|8| B1
-  A4 -->|13| B1
+  A4 -->|12| B1
   A5 -->|1| B1
   A6 -->|5| B1
   A8 -->|1| B1
@@ -149,10 +149,5 @@ graph TD
 ## Planned
 Chapters without notes yet; sources in brackets (∅ = no typed source).
 
-**Level B — upper (PHY 421, Marion & Thornton, series Part II)**
-B1 Newtonian mechanics and conservation theorems · B2 Central forces and orbits · B3 Systems of particles, rigid bodies about an axis · B4 Collisions and scattering [Landau] · B5 Calculus of variations [series II] · B6 Lagrangian mechanics, constraints, Noether [series II] · B7 Hamiltonian mechanics, phase space, Liouville [series II] · B8 Poisson brackets, canonical transformations, Hamilton–Jacobi [series II] · B9 Non-inertial frames [∅] · B10 3D rigid bodies, Euler equations, tops [∅]
-
-**Level C — graduate**
+**Level C — graduate** (levels A and B are written, above)
 C1 Classical field theory [series III; PHY 505 typed notes] · C2 Elasticity and fluids as field theories [PHY 505 typed notes] · C3 Action-angle variables, adiabatic invariants, perturbation theory [∅] · C4 Nonlinear dynamics and chaos [∅] · C5 Geometric mechanics [∅]
-
-PHY 421's lecture notes are handwritten scans, so level B is planned from the typed sources: the series Part II, the PHY 421 homework sets, and Marion & Thornton.
