@@ -28,5 +28,5 @@ tags: [chapter, differentiable-manifolds]
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§5 Topological Groups and Classical Matrix Groups#^prop-5-3|Proposition §5.3: Determinant Is Continuous]]: 18 later results
 - [[§6 Group Actions and Orbit Spaces#^lem-6-2|Lemma §6.2: Left Translations Are Homeomorphisms]]: 18 later results
-- [[§5 Topological Groups and Classical Matrix Groups#^prop-5-7|Proposition §5.7: Equivalent Description of mathrmO(n,ℝ)]]: 16 later results
-- [[§5 Topological Groups and Classical Matrix Groups#^prop-5-4|Proposition §5.4: mathrmGL(n,ℝ) Is a Topological Group]]: 15 later results
+- [[§5 Topological Groups and Classical Matrix Groups#^prop-5-7|Proposition §5.7: Equivalent Description of O(n,ℝ)]]: 16 later results
+- [[§5 Topological Groups and Classical Matrix Groups#^prop-5-4|Proposition §5.4: GL(n,ℝ) Is a Topological Group]]: 15 later results

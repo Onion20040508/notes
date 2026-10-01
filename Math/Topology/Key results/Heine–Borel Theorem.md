@@ -23,13 +23,13 @@ tags: [topology, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-29|Proposition §3.29: mathbbCP^n is Hausdorff and Second Countable]]
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-30|Proposition §3.30: mathbbCP^n Is Compact]]
+- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-29|Proposition §3.29: ℂPⁿ is Hausdorff and Second Countable]]
+- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-30|Proposition §3.30: ℂPⁿ Is Compact]]
 - [[§7 Homogeneous Spaces#^cor-7-13|Corollary §7.13: Grassmannians as Homogeneous Spaces]]
 - [[§8 Differentiable Structures#^prop-8-3|Proposition §8.3: The Circle Needs More Than One Chart]]
-- [[§8 Differentiable Structures#^prop-8-9|Proposition §8.9: mathbbCP^1 Is the Riemann Sphere]]
+- [[§8 Differentiable Structures#^prop-8-9|Proposition §8.9: ℂP¹ Is the Riemann Sphere]]
 - [[§10 Vector Spaces and Matrix Groups#^cor-10-13|Corollary §10.13: Consequences]]
-- [[§10 Vector Spaces and Matrix Groups#^cor-10-16|Corollary §10.16: mathrmU(n) Is Compact]]
+- [[§10 Vector Spaces and Matrix Groups#^cor-10-16|Corollary §10.16: U(n) Is Compact]]
 
 ## Connections
 - **Proof.** Compact ⇒ closed is [[Compact Subspace of a Hausdorff Space is Closed]] (ℝⁿ is a metric space, hence Hausdorff). Closed and bounded ⇒ compact goes through a box [−N, N]ⁿ, which is compact by [[§15 Compact Spaces#^thm-15-10|Closed Intervals are Compact]] and [[§15 Compact Spaces#^thm-15-8|Finite Product of Compact Spaces]] (proved with the [[Tube Lemma]]). The last step is [[Closed Subspace of a Compact Space is Compact]].

@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Reference: Lee Ch. 7 (“Lie Groups”). For the calculus: MATH 452 notes ([[§12 The Implicit Function Theorem|Implicit Function Theorem]]).*
 
 > [!remark] Remark: Why This Section
-> Topological groups are the precursor of *Lie groups*, one of the main topics later in the course; and the classical matrix groups introduced here “are going to be our friends for the semester, and hopefully for later on in life.” Besides being examples of manifolds in their own right ([[§5 Topological Groups and Classical Matrix Groups#The Classical Groups Are Topological Manifolds|§5.3]]), they are the groups whose *actions* produce the quotient manifolds of [[§6 Group Actions and Orbit Spaces|§6]]–[[§7 Homogeneous Spaces|§7]]: spheres, projective spaces, Grassmannians.
+> Topological groups are the precursor of *Lie groups*, one of the main topics later in the course; and the classical matrix groups introduced here “are going to be our friends for the semester, and hopefully for later on in life.” Besides being examples of manifolds in their own right ([[§5 Topological Groups and Classical Matrix Groups#The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]]), they are the groups whose *actions* produce the quotient manifolds of [[§6 Group Actions and Orbit Spaces|§6]]–[[§7 Homogeneous Spaces|§7]]: spheres, projective spaces, Grassmannians.
 
 ^rem-5-1
 
@@ -168,7 +168,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§5 Topological Groups and Classical Matrix Groups#^def-5-1|Def. §5.1]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-2|Def. §5.2]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-4|Def. §5.4]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-3|§3.3]], [[3C Matrices#^ladr-3-46|LADR 3.46]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 §3.3]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1]]
 
 > [!remark]- Connections
-> - $\mathrm{GL}(n,\mathbb{R})$ with the smooth structure of an open subset: [[§10 Vector Spaces and Matrix Groups#^prop-10-9|§10.9]]; all the classical groups together: [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|§11.5]].
+> - The smooth structure on $\operatorname{Mat}(n,\mathbb{R})$, of which $\mathrm{GL}(n,\mathbb{R})$ is an open subset: [[§10 Vector Spaces and Matrix Groups#^prop-10-9|§10.9]]; all the classical groups together: [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|§11.5]].
 
 > [!theorem] Proposition §5.5: $\mathrm{GL}(n,\mathbb{R})$ Is Disconnected
 > $\mathrm{GL}(n,\mathbb{R}) = \det^{-1}(0,\infty) \sqcup \det^{-1}(-\infty,0)$ is a disjoint union of two nonempty open sets, hence disconnected.
@@ -267,7 +267,7 @@ $\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}
 > (z_1, \ldots, z_n) \longmapsto (x_1, y_1, x_2, y_2, \ldots, x_n, y_n).
 > $$
 >
-> (Any other ordering of the real coordinates, e.g. all $x$'s first, differs by a linear homeomorphism and changes nothing topologically; the choice made in [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#Application: Complex Projective Space|§3.7]] was of the latter kind.) Applying this to each entry of a complex matrix, in the row-by-row order of [[§5 Topological Groups and Classical Matrix Groups#^def-5-2|Definition §5.2]], gives the coordinate map
+> (Any other ordering of the real coordinates, e.g. all $x$'s first, differs by a linear homeomorphism and changes nothing topologically; the choice made in [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#Application: Complex Projective Space|§3, Application: Complex Projective Space]] was of the latter kind.) Applying this to each entry of a complex matrix, in the row-by-row order of [[§5 Topological Groups and Classical Matrix Groups#^def-5-2|Definition §5.2]], gives the coordinate map
 >
 > $$
 > \operatorname{Mat}(n,\mathbb{C}) \longrightarrow \mathbb{R}^{2n^2}, \qquad g \longmapsto \big(\operatorname{Re} g_{11}, \operatorname{Im} g_{11},\ \operatorname{Re} g_{12}, \operatorname{Im} g_{12},\ \ldots,\ \operatorname{Re} g_{nn}, \operatorname{Im} g_{nn}\big),
@@ -304,7 +304,7 @@ $\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}
 > \mathrm{U}(1) = \{\, \xi \in \mathbb{C} \setminus \{0\} \mid |\xi| = 1 \,\} = S^1,
 > $$
 >
-> the unit circle, which is the notation “everybody uses.” This is the group acting in the construction of $\mathbb{CP}^n$ ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#Application: Complex Projective Space|§3.7]]).
+> the unit circle, which is the notation “everybody uses.” This is the group acting in the construction of $\mathbb{CP}^n$ ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#Application: Complex Projective Space|§3, Application: Complex Projective Space]]).
 
 ^ex-5-4
 
@@ -322,7 +322,7 @@ $\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}
 
 *Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-5|§3.5]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-6|§3.6]], [[§5 Topological Groups and Classical Matrix Groups#^cor-5-13|§5.13]], [[§10 Vector Spaces and Matrix Groups#^ex-10-1|Ex. §10.1]], [[§10 Vector Spaces and Matrix Groups#^ex-10-2|Ex. §10.2]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|§11.5]]
 
-The proof has two parts of very different difficulty. The point-set part is free: each group is a subspace of $\mathbb{R}^{n^2}$ or $\mathbb{R}^{2n^2}$, hence $T_2$ and second countable by [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-5|Theorem §3.5]]. Local Euclideanness is the real content, and it is established in stages. $\mathrm{GL}(n,\mathbb{R})$ and $\mathrm{GL}(n,\mathbb{C})$ are open subsets of Euclidean space and hence locally Euclidean of dimensions $n^2$ and $2n^2$ ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-6|Proposition §3.6]]). $\mathrm{SL}(n,\mathbb{R})$ is done below, in this subsection. $\mathrm{O}(n)$, $\mathrm{SO}(n)$ and $\mathrm{U}(n)$ need the coordinate-free differential and are done in [[§10 Vector Spaces and Matrix Groups#The Orthogonal Group as a Smooth Manifold|§10.3]] and [[§10 Vector Spaces and Matrix Groups#The Unitary Group as a Smooth Manifold|§10.4]]; [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|Theorem §11.5]] collects all six, with their dimensions and geometric tangent spaces.
+The proof has two parts of very different difficulty. The point-set part is free: each group is a subspace of $\mathbb{R}^{n^2}$ or $\mathbb{R}^{2n^2}$, hence $T_2$ and second countable by [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-5|Theorem §3.5]]. Local Euclideanness is the real content, and it is established in stages. $\mathrm{GL}(n,\mathbb{R})$ and $\mathrm{GL}(n,\mathbb{C})$ are open subsets of Euclidean space and hence locally Euclidean of dimensions $n^2$ and $2n^2$ ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-6|Proposition §3.6]]). $\mathrm{SL}(n,\mathbb{R})$ is done below, in this subsection. $\mathrm{O}(n)$, $\mathrm{SO}(n)$ and $\mathrm{U}(n)$ need the coordinate-free differential and are done in [[§10 Vector Spaces and Matrix Groups#The Orthogonal Group as a Smooth Manifold|§10, The Orthogonal Group as a Smooth Manifold]] and [[§10 Vector Spaces and Matrix Groups#The Unitary Group as a Smooth Manifold|§10, The Unitary Group as a Smooth Manifold]]; [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|Theorem §11.5]] collects all six, with their dimensions and geometric tangent spaces.
 
 > [!remark] Remark: The Method: Level Sets and the Implicit Function Theorem
 > “For the first time, we're going to use some calculus.” $\mathrm{SL}(n,\mathbb{R})$ is a *level set*, $\det^{-1}(1)$, of a smooth function on $\mathbb{R}^{n^2}$. Multivariable calculus says that a level set of $F$ is locally a graph—hence locally Euclidean—near any point where $\nabla F \neq 0$. So the work is to compute $\nabla \det$ and show it does not vanish on $\mathrm{SL}(n,\mathbb{R})$. Uribe's methodological message: the [[9C Determinants#^ladr-9-46|Leibniz formula]] makes computing $\nabla\det$ directly “a nightmare”; instead, *differentiate along curves* and use the [[Multivariable Chain Rule|chain rule]]. “It's nice to compute gradients or differentials using curves.” This kind of computation “will happen several times.”

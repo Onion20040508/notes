@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 12.17", "Lee Proposition 3.2"]
+aliases: ["MATH 591 12.17"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^lem-12-17]]

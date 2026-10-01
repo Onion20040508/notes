@@ -25,7 +25,7 @@ tags: [linear-algebra, hub]
 - [[§31 Conjugacy Classes#^prop-31-3|Proposition §31.3: Conjugacy Class of a Diagonal Matrix]]
 
 ## Used in (Differentiable Manifolds)
-- [[§4 The Regular Value Theorem#^prop-4-5|Proposition §4.5: Regular Points When N le m]]
+- [[§4 The Regular Value Theorem#^prop-4-5|Proposition §4.5: Regular Points When N ≤ m]]
 - [[§5 Topological Groups and Classical Matrix Groups#^def-5-4|Definition §5.4: General Linear Group]]
 - [[§5 Topological Groups and Classical Matrix Groups#^def-5-8|Definition §5.8: Complex Matrix Groups]]
 - [[§10 Vector Spaces and Matrix Groups#^lem-10-14|Lemma §10.14: A One-Sided Inverse Suffices]]

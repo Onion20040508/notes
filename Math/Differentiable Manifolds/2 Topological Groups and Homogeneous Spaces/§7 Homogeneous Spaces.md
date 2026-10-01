@@ -285,7 +285,9 @@ tags: [differentiable-manifolds, math591]
 **Transcription note.** Page 12 of the handwritten notes writes “$X = \mathrm{SO}(3)$ acting on $S^2$”; the group is $G = \mathrm{SO}(3)$ and the space is $X = S^2$.
 
 ![[m591-7-1.svg]]
-*The picture behind Example [[§7 Homogeneous Spaces#^ex-7-3|§7.3]]. The rotations about the vertical axis fix the north pole $N$; they form the isotropy group $H \cong \mathrm{SO}(2)$. A rotation $g$ carries $N$ to $g \cdot N$, and the rotations carrying $N$ to that same point are exactly the products $gh$ with $h \in H$: the fibre of the orbit map $\theta_N$ over $g \cdot N$ is the coset $gH$. Collapsing each fibre to a point is the passage from $\mathrm{SO}(3)$ to $\mathrm{SO}(3)/\mathrm{SO}(2)$, which is why the coset space is the sphere (Theorem [[§7 Homogeneous Spaces#^thm-7-8|§7.8]]).*
+*The north pole $N$, its isotropy group $H \cong \mathrm{SO}(2)$ of rotations about the vertical axis, and a rotation $g$ carrying $N$ to $g \cdot N$.*
+
+The picture behind Example [[§7 Homogeneous Spaces#^ex-7-3|§7.3]]. The rotations about the vertical axis fix the north pole $N$; they form the isotropy group $H \cong \mathrm{SO}(2)$. A rotation $g$ carries $N$ to $g \cdot N$, and the rotations carrying $N$ to that same point are exactly the products $gh$ with $h \in H$: the fibre of the orbit map $\theta_N$ over $g \cdot N$ is the coset $gH$. Collapsing each fibre to a point is the passage from $\mathrm{SO}(3)$ to $\mathrm{SO}(3)/\mathrm{SO}(2)$, which is why the coset space is the sphere (Theorem [[§7 Homogeneous Spaces#^thm-7-8|§7.8]]).
 
 ## The Topology of $G/H$
 
@@ -364,7 +366,9 @@ Definitions [[§7 Homogeneous Spaces#^def-7-4|§7.4]] and [[§7 Homogeneous Spac
 ^thm-7-8
 
 ![[m591-7-2.svg]]
-*Upstairs is the group, downstairs its coset space, and the triangle commutes: $\Phi \circ \pi$ is the orbit map. The orbit map is continuous for free; part (1) is the universal property pushing that continuity down along $\pi$, and part (2) is the compactness argument upgrading the bottom arrow to a homeomorphism.*
+*The triangle $G \to G/H \to X$: the orbit map $g \mapsto g \cdot x_0$ factors as $\Phi \circ \pi$.*
+
+Upstairs is the group, downstairs its coset space, and the triangle commutes: $\Phi \circ \pi$ is the orbit map. The orbit map is continuous for free; part (1) is the universal property pushing that continuity down along $\pi$, and part (2) is the compactness argument upgrading the bottom arrow to a homeomorphism.
 
 > [!proof]+ Proof
 > *(Stated in Lecture 4, with a hypothesis missing — the board said “$G$ compact $\Rightarrow$ $G/H \cong X$”, and $X$ must also be Hausdorff; filled in.)*
@@ -408,7 +412,9 @@ Definitions [[§7 Homogeneous Spaces#^def-7-4|§7.4]] and [[§7 Homogeneous Spac
 ^ex-7-4
 
 ![[m591-7-3.svg]]
-*The same triangle with $G = \mathbb{R}$. The exponential wraps the line around the circle; it is constant exactly on the cosets $t + \mathbb{Z}$, which is why it descends to the quotient, and the induced bottom arrow is the homeomorphism.*
+*The triangle for $\mathbb{R}$ acting on $S^1$: $t \mapsto e^{2\pi i t}$ factors through $\mathbb{R}/\mathbb{Z}$ as $\Phi \circ \pi$.*
+
+The same triangle with $G = \mathbb{R}$. The exponential wraps the line around the circle; it is constant exactly on the cosets $t + \mathbb{Z}$, which is why it descends to the quotient, and the induced bottom arrow is the homeomorphism.
 
 > [!remark]- Connections
 > - In 590 the circle is the quotient $[0,1]/(0 \sim 1)$ via the same map $e^{2\pi i t}$: [[§12 Quotient Topology#^ex-12-2|590 Ex. §12.2]].
@@ -571,7 +577,7 @@ Definitions [[§7 Homogeneous Spaces#^def-7-4|§7.4]] and [[§7 Homogeneous Spac
 > - For $k = 1$ the transported topology agrees with the quotient topology of $\mathbb{RP}^{n-1}$: [[§8 Differentiable Structures#^prop-8-11|§8.11]]; $\mathrm{O}(n)$ becomes a smooth manifold in [[§10 Vector Spaces and Matrix Groups#^ex-10-1|Ex. §10.1]].
 
 > [!remark] Remark: Dimension Count and What Is Still Missing
-> Heuristically, $\dim G/H = \dim G - \dim H$, which with $\dim \mathrm{O}(m) = \tfrac{m(m-1)}{2}$ ([[§5 Topological Groups and Classical Matrix Groups#^rem-5-5|§5]]) gives
+> Heuristically, $\dim G/H = \dim G - \dim H$, which with $\dim \mathrm{O}(m) = \tfrac{m(m-1)}{2}$ ([[§5 Topological Groups and Classical Matrix Groups#The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]]) gives
 >
 > $$
 > \dim \mathrm{Gr}_k(\mathbb{R}^n) = \frac{n(n-1)}{2} - \frac{k(k-1)}{2} - \frac{(n-k)(n-k-1)}{2} = k(n-k).

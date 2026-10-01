@@ -40,26 +40,28 @@ tags: [differentiable-manifolds, math591]
 >
 > *(G) $\Rightarrow$ internal.* Take $\alpha(x) = (x, h(x))$ on $V$. It is smooth, its Jacobian $\big(I_n \, ; \, Dh_x\big)$ has rank $n$, and it is a homeomorphism onto $X \cap (V \times V')$ with inverse the restriction of the projection $(x,y) \mapsto x$.
 >
-> *Internal $\Rightarrow$ (G).* Since $D\alpha_q$ has rank $n$, some $n$ of its $n+k$ rows are independent; permute coordinates so these are the first $n$, and write $\alpha = (\alpha_1, \alpha_2)$ with $\alpha_1 : V \to \mathbb{R}^n$, $\alpha_2 : V \to \mathbb{R}^k$. Then $D(\alpha_1)_q$ is invertible, so by the [[Inverse Function Theorem (several variables)|inverse function theorem]] (Lee, Theorem C.34) $\alpha_1$ restricts to a diffeomorphism of a neighborhood $V_1 \ni q$ onto an open $V_2 \subseteq \mathbb{R}^n$. Put $h = \alpha_2 \circ (\alpha_1|_{V_1})^{-1} : V_2 \to \mathbb{R}^k$, smooth. Then $\alpha(V_1) = \{(x, h(x)) \mid x \in V_2\}$, and because $\alpha$ is a homeomorphism onto $X \cap W$, the set $\alpha(V_1)$ is open in $X \cap W$, so it equals $X \cap (V_2 \times V')$ for a suitable box.
+> *Internal $\Rightarrow$ (G).* Since $D\alpha_q$ has rank $n$, some $n$ of its $n+k$ rows are independent; permute coordinates so these are the first $n$, and write $\alpha = (\alpha_1, \alpha_2)$ with $\alpha_1 : V \to \mathbb{R}^n$, $\alpha_2 : V \to \mathbb{R}^k$. Then $D(\alpha_1)_q$ is invertible, so by the [[§14 Local Diffeomorphisms and Submersions#^thm-14-1|inverse function theorem]] (Lee, Theorem C.34) $\alpha_1$ restricts to a diffeomorphism of a neighborhood $V_1 \ni q$ onto an open $V_2 \subseteq \mathbb{R}^n$. Put $h = \alpha_2 \circ (\alpha_1|_{V_1})^{-1} : V_2 \to \mathbb{R}^k$, smooth. Then $\alpha(V_1) = \{(x, h(x)) \mid x \in V_2\}$, and because $\alpha$ is a homeomorphism onto $X \cap W$, the set $\alpha(V_1)$ is open in $X \cap W$, so it equals $X \cap (V_2 \times V')$ for a suitable box.
 
 ^pf-9-1
 
-*Uses:* [[§9 Manifolds in Euclidean Space#^def-9-1|Def. §9.1]], [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-3|§4.3]], [[§4 The Regular Value Theorem#^thm-4-1|§4.1]], [[§14 Local Diffeomorphisms and Submersions#^thm-14-1|§14.1]], [[Inverse Function Theorem (several variables)|452 §13.2]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§9 Manifolds in Euclidean Space#^def-9-1|Def. §9.1]], [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-3|§4.3]], [[§4 The Regular Value Theorem#^thm-4-1|§4.1]], [[§14 Local Diffeomorphisms and Submersions#^thm-14-1|§14.1]], [[Multivariable Chain Rule|452 §10.2]]
 
 > [!remark]- Connections
-> - Home of the analytic input: [[§12 The Implicit Function Theorem#^thm-12-2|452 §12.2 (implicit function theorem, general case)]], [[Inverse Function Theorem (several variables)|452 §13.2 (inverse function theorem)]].
+> - The analytic input: the vector-valued implicit function theorem [[§4 The Regular Value Theorem#^thm-4-1|§4.1]] (one-equation version in 452: [[§12 The Implicit Function Theorem#^thm-12-2|452 §12.2]]) and the inverse function theorem [[§14 Local Diffeomorphisms and Submersions#^thm-14-1|§14.1]] (two-variable version in 452: [[Inverse Function Theorem (several variables)|452 §13.2]]).
 > - The external description becomes the regular value theorem for manifolds, [[§15 Submanifolds#^thm-15-6|§15.6]], and adapted charts, [[§15 Submanifolds#^def-15-1|Def. §15.1]]; the internal one becomes the local normal form for immersions, [[§18 Immersions#^thm-18-1|§18.1]].
 > - The tangent space in both pictures: [[§11 Tangent Spaces I꞉ The Geometric Picture#^cor-11-4|§11.4]].
 
 > [!example] Example §9.1: The Circle in Three Descriptions
 > Near the point $p = (0,1)$ of $S^1 \subseteq \mathbb{R}^2$ (here $n = k = 1$):
 > - **External:** $F(x,y) = x^2 + y^2 - 1$, with $\nabla F = (2x, 2y) \neq 0$ on $S^1$, so $0$ is a regular value and $S^1 = F^{-1}(0)$.
-> - **Graph:** on $(-1,1) \times (0,\infty)$, $S^1$ is the graph of $h(x) = \sqrt{1-x^2}$ — which is the chart $\varphi_2$ of Example [[§8 Differentiable Structures#^ex-8-2|§8.2]], read backwards.
-> - **Internal:** $\alpha(\theta) = (\cos\theta, \sin\theta)$ on $\theta \in (0,\pi)$, with $\alpha'(\theta) = (-\sin\theta, \cos\theta) \neq 0$ — the angle chart of Example [[§8 Differentiable Structures#^ex-8-4|§8.4]], read backwards.
+> - **Graph:** on $(-1,1) \times (0,\infty)$, $S^1$ is the graph of $h(x) = \sqrt{1-x^2}$ — which is the chart $\varphi_2$ of [[§8 Differentiable Structures#^ex-8-2|Ex. §8.2]], read backwards.
+> - **Internal:** $\alpha(\theta) = (\cos\theta, \sin\theta)$ on $\theta \in (0,\pi)$, with $\alpha'(\theta) = (-\sin\theta, \cos\theta) \neq 0$ — the angle chart of [[§8 Differentiable Structures#^ex-8-4|Ex. §8.4]], read backwards.
 >
 > The three are related exactly as in the proof: $h$ comes from $F$ by the implicit function theorem, and $\alpha$ comes from $h$ by $x \mapsto (x, h(x))$ followed by the reparametrization $x = \cos\theta$.
 
 ^ex-9-1
+
+*Uses:* [[§9 Manifolds in Euclidean Space#^def-9-1|Def. §9.1]], [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-1|§4.1]], [[§8 Differentiable Structures#^ex-8-2|Ex. §8.2]], [[§8 Differentiable Structures#^ex-8-4|Ex. §8.4]]
 
 ![[m591-9-1.svg]]
 *The circle described externally, as the zero set of $F = x^2 + y^2 - 1$ with nonvanishing gradient, and internally, as the image of $\alpha(\theta) = (\cos\theta, \sin\theta)$ on $(0,\pi)$.*
@@ -68,7 +70,7 @@ tags: [differentiable-manifolds, math591]
 > - The same circle in 452: [[Unit circle and unit sphere]], solved for $y$ near $(0,1)$ by the implicit function theorem in [[§12 The Implicit Function Theorem#^ex-12-1|452 Ex. §12.1]].
 
 > [!remark] Remark: A Parametrization Is an Inverse Chart
-> “A parametrization is just another name for my inverse” — if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§5 Topological Groups and Classical Matrix Groups|§5.3]]. Theorem [[§9 Manifolds in Euclidean Space#^thm-9-1|§9.1]] says the two carry the same information locally, which is why one may pass freely between “solve the equations” and “draw the parametrization” — “the same thing.”
+> “A parametrization is just another name for my inverse” — if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§5 Topological Groups and Classical Matrix Groups#The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]]. Theorem [[§9 Manifolds in Euclidean Space#^thm-9-1|§9.1]] says the two carry the same information locally, which is why one may pass freely between “solve the equations” and “draw the parametrization” — “the same thing.”
 
 ^rem-9-2
 
@@ -132,8 +134,10 @@ The proof in one picture. The transition function between two graph charts facto
 
 ^ex-9-2
 
+*Uses:* [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-1|§4.1]], [[§8 Differentiable Structures#^def-8-4|Def. §8.4]]
+
 > [!proof]+ Proof
-> *(Lecture 6 worked the surface of Example [[§9 Manifolds in Euclidean Space#^ex-9-2|§9.2]] first, then gave this general argument: “the general thing is just harder to write.”)* The domains cover $M$, since each $p \in M$ lies in some $U_J$. Let $(U_J, \varphi_J)$ and $(U_{J'}, \varphi_{J'})$ be two of the charts, with complementary index sets $I$ and $I'$. Two observations, each valid for every choice of $J$:
+> *(Lecture 6 worked the surface of [[§9 Manifolds in Euclidean Space#^ex-9-2|Ex. §9.2]] first, then gave this general argument: “the general thing is just harder to write.”)* The domains cover $M$, since each $p \in M$ lies in some $U_J$. Let $(U_J, \varphi_J)$ and $(U_{J'}, \varphi_{J'})$ be two of the charts, with complementary index sets $I$ and $I'$. Two observations, each valid for every choice of $J$:
 > 1. $\varphi_J^{-1} : V_J \to \mathbb{R}^{n+k}$ is smooth *in the Euclidean sense*: its components are either coordinates of $u$ or components of the smooth map $h_J$.
 > 2. $\varphi_{J'}$ is the restriction of the linear map $\pi_{I'}$, which is smooth on all of $\mathbb{R}^{n+k}$.
 >
@@ -143,7 +147,7 @@ The proof in one picture. The transition function between two graph charts facto
 > \varphi_{J'} \circ \varphi_J^{-1} = \pi_{I'} \circ \varphi_J^{-1},
 > $$
 >
-> a composite of smooth maps between open subsets of Euclidean spaces, hence smooth. Exchanging the roles of $J$ and $J'$ shows $\varphi_J \circ \varphi_{J'}^{-1}$ is smooth as well, so the transition function is a diffeomorphism and the two charts are $C^\infty$-compatible (Definition [[§8 Differentiable Structures#^def-8-4|§8.4]]). By Theorem [[§8 Differentiable Structures#^thm-8-5|§8.5]] the atlas determines a smooth structure, of dimension $n$ by Theorem [[§4 The Regular Value Theorem#^thm-4-3|§4.3]].
+> a composite of smooth maps between open subsets of Euclidean spaces, hence smooth. Exchanging the roles of $J$ and $J'$ shows $\varphi_J \circ \varphi_{J'}^{-1}$ is smooth as well, so the transition function is a diffeomorphism and the two charts are $C^\infty$-compatible ([[§8 Differentiable Structures#^def-8-4|Def. §8.4]]). By Theorem [[§8 Differentiable Structures#^thm-8-5|§8.5]] the atlas determines a smooth structure, of dimension $n$ by Theorem [[§4 The Regular Value Theorem#^thm-4-3|§4.3]].
 
 ^pf-9-2
 
@@ -191,7 +195,7 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 Not stated in lecture; filled in because it is used repeatedly — tacitly in the next proof, and explicitly for $S^n \to \mathbb{RP}^n$ in [[§14 Local Diffeomorphisms and Submersions#^ex-14-2|§14]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
 
 > [!theorem] Proposition §9.4: The Three Circle Atlases Define One Smooth Structure
-> The four-chart atlas (Example [[§8 Differentiable Structures#^ex-8-2|§8.2]]), the angle atlas (Example [[§8 Differentiable Structures#^ex-8-4|§8.4]]) and the stereographic atlas (Example [[§8 Differentiable Structures#^ex-8-3|§8.3]]) on $S^1$ are pairwise compatible. All three generate the smooth structure that Proposition [[§9 Manifolds in Euclidean Space#^prop-9-2|§9.2]] gives $S^1 = F^{-1}(1)$, $F(x,y) = x^2 + y^2$.
+> The four-chart atlas ([[§8 Differentiable Structures#^ex-8-2|Ex. §8.2]]), the angle atlas ([[§8 Differentiable Structures#^ex-8-4|Ex. §8.4]]) and the stereographic atlas ([[§8 Differentiable Structures#^ex-8-3|Ex. §8.3]]) on $S^1$ are pairwise compatible. All three generate the smooth structure that Proposition [[§9 Manifolds in Euclidean Space#^prop-9-2|§9.2]] gives $S^1 = F^{-1}(1)$, $F(x,y) = x^2 + y^2$.
 
 ^prop-9-4
 

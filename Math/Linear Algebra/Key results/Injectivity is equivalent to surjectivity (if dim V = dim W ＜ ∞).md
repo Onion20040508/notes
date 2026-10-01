@@ -19,7 +19,7 @@ tags: [linear-algebra, hub]
 - [[7B Spectral Theorem#^ladr-7-26|7.26 Invertible quadratic expressions]]
 
 ## Used in (Differentiable Manifolds)
-- [[§4 The Regular Value Theorem#^prop-4-5|Proposition §4.5: Regular Points When N le m]]
+- [[§4 The Regular Value Theorem#^prop-4-5|Proposition §4.5: Regular Points When N ≤ m]]
 - [[§10 Vector Spaces and Matrix Groups#^prop-10-3|Proposition §10.3: The Double Dual]]
 - [[§10 Vector Spaces and Matrix Groups#^thm-10-5|Theorem §10.5: Non-Degenerate Pairings]]
 - [[§11 Tangent Spaces I꞉ The Geometric Picture#^cor-11-4|Corollary §11.4: Three Descriptions of the Geometric Tangent Space]]

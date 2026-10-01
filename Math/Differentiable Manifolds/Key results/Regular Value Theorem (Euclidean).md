@@ -23,12 +23,12 @@ tags: [differentiable-manifolds, hub]
 - [[Multivariable Chain Rule]] (Multivariable Analysis)
 
 ## Used in (Differentiable Manifolds)
-- [[§4 The Regular Value Theorem#^ex-4-2|Example §4.2: A Level Set in ℝ^4]]
+- [[§4 The Regular Value Theorem#^ex-4-2|Example §4.2: A Level Set in ℝ⁴]]
 - [[§4 The Regular Value Theorem#^cor-4-4|Corollary §4.4: Open Domains and Arbitrary Values]]
-- [[§4 The Regular Value Theorem#^prop-4-5|Proposition §4.5: Regular Points When N le m]]
+- [[§4 The Regular Value Theorem#^prop-4-5|Proposition §4.5: Regular Points When N ≤ m]]
 - [[§4 The Regular Value Theorem#^cor-4-7|Corollary §4.7: Holomorphic Regular Value Theorem]]
 - [[§5 Topological Groups and Classical Matrix Groups#^cor-5-12|Corollary §5.12: Every Nonzero Value Is a Regular Value of det]]
-- [[§5 Topological Groups and Classical Matrix Groups#^cor-5-13|Corollary §5.13: mathrmSL(n,ℝ) Is a Manifold of Dimension n² - 1]]
+- [[§5 Topological Groups and Classical Matrix Groups#^cor-5-13|Corollary §5.13: SL(n,ℝ) Is a Manifold of Dimension n² − 1]]
 - [[§9 Manifolds in Euclidean Space#^thm-9-1|Theorem §9.1: The Two Descriptions Agree]]
 - [[§9 Manifolds in Euclidean Space#^prop-9-2|Proposition §9.2: Regular Level Sets Are Smooth Manifolds]]
 - [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|Theorem §11.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]

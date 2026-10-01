@@ -42,6 +42,8 @@ tags: [differentiable-manifolds, math591]
 
 ^prop-17-1
 
+*Uses:* [[§17 The Tangent Bundle#^prop-17-2|§17.2]], [[§17 The Tangent Bundle#^prop-17-3|§17.3]], [[§17 The Tangent Bundle#^cor-17-4|§17.4]]
+
 *Status.* Stated in Lecture 12 — “the claim, which takes a lot of detail to prove” — and made precise in Lecture 13 ([[§17 The Tangent Bundle#Trivializations and Charts|Trivializations and Charts]]), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; “putting all that together gives us a map” $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
 
 ## Trivializations and Charts

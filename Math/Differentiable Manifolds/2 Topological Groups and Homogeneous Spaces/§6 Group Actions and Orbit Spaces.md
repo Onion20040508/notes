@@ -29,7 +29,7 @@ tags: [differentiable-manifolds, math591]
 > 1. $e \cdot x = x$ for all $x \in X$, where $e \in G$ is the identity; and
 > 2. $g \cdot (h \cdot x) = (gh) \cdot x$ for all $g, h \in G$ and $x \in X$, where $gh$ is the product in $G$.
 >
-> *Lee: Ch. 7,* Group Actions and Equivariant Maps
+> *Lee: Ch. 7, Group Actions and Equivariant Maps*
 
 ^def-6-1
 
@@ -71,7 +71,7 @@ tags: [differentiable-manifolds, math591]
 >
 > the set of everything reachable from $x$ by acting with elements of $G$.
 >
-> *Lee: Ch. 7,* Group Actions and Equivariant Maps
+> *Lee: Ch. 7, Group Actions and Equivariant Maps*
 
 ^def-6-3
 
@@ -97,7 +97,7 @@ tags: [differentiable-manifolds, math591]
 > [!theorem] Proposition §6.1: Orbits Partition $X$
 > The orbit relation $\sim$ of Definition [[§6 Group Actions and Orbit Spaces#^def-6-4|§6.4]] is an equivalence relation, its equivalence classes are exactly the orbits, and consequently the orbits partition $X$.
 >
-> *Lee: Ch. 7,* Group Actions and Equivariant Maps
+> *Lee: Ch. 7, Group Actions and Equivariant Maps*
 
 ^prop-6-1
 
@@ -126,9 +126,9 @@ tags: [differentiable-manifolds, math591]
 > X/G \;:=\; X/{\sim}
 > $$
 >
-> of $X$ by the orbit relation, with the quotient topology ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-4|§3]]). Explicitly: a point of $X/G$ is an orbit $\mathcal{O}_x \subseteq X$; the quotient map is $\pi(x) = \mathcal{O}_x$; and $W \subseteq X/G$ is open iff $\bigcup_{\mathcal{O} \in W} \mathcal{O}$ (the union in $X$ of the orbits belonging to $W$) is open in $X$.
+> of $X$ by the orbit relation, with the quotient topology ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#Quotient Spaces|§3, Quotient Spaces]]). Explicitly: a point of $X/G$ is an orbit $\mathcal{O}_x \subseteq X$; the quotient map is $\pi(x) = \mathcal{O}_x$; and $W \subseteq X/G$ is open iff $\bigcup_{\mathcal{O} \in W} \mathcal{O}$ (the union in $X$ of the orbits belonging to $W$) is open in $X$.
 >
-> *Lee: Ch. 21,* Quotients of Manifolds by Group Actions
+> *Lee: Ch. 21, Quotients of Manifolds by Group Actions*
 
 ^def-6-5
 
@@ -233,7 +233,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 ^rem-6-6
 
 > [!theorem] Lemma §6.3: Orbit Relations Are Open
-> For a continuous action of $G$ on $X$, the orbit relation is an open equivalence relation (Definition of open relation in [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-6|§3]]). Equivalently: for every open $U \subseteq X$, its saturation $\tilde U = \pi^{-1}(\pi(U))$ is open.
+> For a continuous action of $G$ on $X$, the orbit relation is an open equivalence relation (Definition of open relation in [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#Open Maps and Open Relations|§3, Open Maps and Open Relations]]). Equivalently: for every open $U \subseteq X$, its saturation $\tilde U = \pi^{-1}(\pi(U))$ is open.
 >
 > *Lee: Lemma 21.1, the same statement and proof*
 
@@ -350,7 +350,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 > [!definition] Definition §6.6: Proper Map and Proper Action
 > A continuous map is **proper** if the preimage of every compact set is compact. A continuous action of a topological group $G$ on a space $X$ is **proper** if the map $\Psi : G \times X \to X \times X$, $\Psi(g,x) = (x, g\cdot x)$, of $(\ast)$ in the proof of Corollary [[§6 Group Actions and Orbit Spaces#^pf-6-4|§6.4]] is proper.
 >
-> *Lee: Ch. 21,* Proper Actions
+> *Lee: Ch. 21, Proper Actions*
 
 ^def-6-6
 

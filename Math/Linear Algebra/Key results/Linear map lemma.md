@@ -28,7 +28,7 @@ tags: [linear-algebra, hub]
 - [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-4|Proposition §30.4: The Cube Group Embeds in S_6]]
 
 ## Used in (Differentiable Manifolds)
-- [[§7 Homogeneous Spaces#^prop-7-11|Proposition §7.11: mathrmO(n) Acts Transitively on mathrmGr_k(ℝⁿ)]]
+- [[§7 Homogeneous Spaces#^prop-7-11|Proposition §7.11: O(n) Acts Transitively on Grₖ(ℝⁿ)]]
 - [[§10 Vector Spaces and Matrix Groups#^prop-10-2|Proposition §10.2: The Dual Basis]]
 - [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|Lemma §13.2: The Differential in Coordinates]]
 

@@ -22,8 +22,8 @@ tags: [topology, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^rem-3-11|Remark: How This Gets Used]]
-- [[§6 Group Actions and Orbit Spaces#^ex-6-5|Example §6.5: mathrmSO(3) Acting on ℝ³]]
-- [[§8 Differentiable Structures#^prop-8-6|Proposition §8.6: Each varphi_i Is a Chart]]
+- [[§6 Group Actions and Orbit Spaces#^ex-6-5|Example §6.5: SO(3) Acting on ℝ³]]
+- [[§8 Differentiable Structures#^prop-8-6|Proposition §8.6: Each φᵢ Is a Chart]]
 
 ## Connections
 - **Immediate consequence.** [[§12 Quotient Topology#^cor-12-4|Induced Bijection from Quotient]] (§12.4): a continuous surjection g induces a homeomorphism X* ≅ Z exactly when g is a quotient map. The hypothesis that g is constant on fibers is exactly what well-definedness needs ([[§12 Quotient Topology#^rem-12-7|Constant on Fibers]]).

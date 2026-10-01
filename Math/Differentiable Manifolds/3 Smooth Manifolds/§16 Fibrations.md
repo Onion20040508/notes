@@ -130,7 +130,7 @@ This upgrades [[§16 Fibrations#^prop-16-1|Proposition §16.1]](1) from homeomor
 
 ^pf-ex-16-2
 
-*Uses:* [[§14 Local Diffeomorphisms and Submersions#^ex-14-3|Ex. §14.3]], [[§16 Fibrations#^def-16-1|Def. §16.1]], [[§16 Fibrations#^prop-16-2|§16.2]], [[§13 Connected Spaces#^thm-13-3|590 §13.3]]
+*Uses:* [[§14 Local Diffeomorphisms and Submersions#^ex-14-3|Ex. §14.3]], [[§16 Fibrations#^def-16-1|Def. §16.1]], [[§16 Fibrations#^prop-16-2|§16.2]], [[§13 Connected Spaces#^thm-13-3|590 §13.3]], [[§14 Connected Subspaces of ℝ#^cor-14-2|590 §14.2]]
 
 ![[m591-16-4.svg]]
 *The punctured plane over the $x$-axis. Every fibre is a whole vertical line except the one over $0$, which is broken at the missing point into two half-lines. The fibres are all submanifolds ([[§15 Submanifolds#^cor-15-7|Corollary §15.7]]), but not all of the same type.*

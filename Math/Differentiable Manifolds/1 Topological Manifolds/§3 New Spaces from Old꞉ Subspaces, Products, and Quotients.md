@@ -238,7 +238,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 ^pf-3-9
 
-*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]]
+*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]], [[§1 Point-Set Topology Review#^prop-1-1|§1.1]]
 
 > [!theorem] Theorem §3.10: Universal Property of the Product
 > Let $Z$ be any topological space and $F : Z \to X \times Y$ a function. Then
@@ -264,7 +264,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 ^pf-3-10
 
-*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-9|§3.9]], [[§9 Continuous Functions#^thm-9-4|590 §9.4]]
+*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-9|§3.9]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (1), [[§9 Continuous Functions#^thm-9-4|590 §9.4]]
 
 > [!remark]- Connections
 > - Home in MATH 590: [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1 (Continuity into Product Spaces)]]; imported in [[§1 Point-Set Topology Review#^prop-1-5|§1.5]].
@@ -386,6 +386,8 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 ^ex-3-1
 
+*Uses:* [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-14|§3.14]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-4|Def. §3.4]]
+
 ![[m591-3-8.svg]]
 *Two copies of $\mathbb{R}$ (blue) glued along every vertical pair $(x,1) \sim (x,2)$ with $x \neq 0$ — except the two origins (red). The glued pairs at $x = \tfrac1n$ crowd in on the unglued pair $\big((0,1),(0,2)\big)$: that is the sequence in $\Gamma$ whose limit escapes $\Gamma$ in [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^ex-3-7|Example §3.7]], and downstairs it is why every neighbourhood of $0_1$ meets every neighbourhood of $0_2$.*
 
@@ -435,7 +437,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - First and second countability in MATH 590: [[§18 Countability Axioms#^def-18-2|590 Def. §18.2]], [[§18 Countability Axioms#^def-18-3|590 Def. §18.3]].
-> - Cited in [[§1 Point-Set Topology Review#^prop-1-4|§1.4]] as the use of the contrapositive.
+> - Cited as the use of the contrapositive of [[§1 Point-Set Topology Review#^prop-1-4|§1.4]] in [[§1 Point-Set Topology Review#^rem-1-7|the remark after it]].
 
 > [!remark] Remark: Why the Diagonal
 > The mechanism is Cantor's: each candidate $U_j$ is pinned down at the single integer $j$, and $W$ is built to be strictly thinner than $U_j$ exactly there. No countable family can control all of the infinitely many arms at once, because a neighborhood of $x_0$ must specify a radius at *every* integer simultaneously—that is what collapsing infinitely many points to one costs. [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-28|Theorem §3.28]] is not contradicted, because its hypothesis fails: this relation is *not* open. The saturation of the open set $(-\tfrac12, \tfrac12)$, which meets $\mathbb{Z}$ at $0$, is $(-\tfrac12,\tfrac12) \cup \mathbb{Z}$, and that is not open—no neighborhood of the point $1$ is contained in it.
@@ -470,7 +472,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ^pf-ex-3-3
 
-*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-5|Def. §3.5]]
+*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-5|Def. §3.5]], [[§1 Point-Set Topology Review#^prop-1-1|§1.1]]
 
 > [!definition] Definition §3.6: Open Equivalence Relation
 > An equivalence relation $\sim$ on $X$ is **open** if the projection $\pi : X \to X/{\sim}$ is an open map.
@@ -487,6 +489,8 @@ The single most useful fact about the quotient topology — that a map *out* of 
 > because the identified point $[0] = [1]$ has the *two* preimages $0$ and $1$. This set is not open in $\mathbb{R}$ (no neighborhood of $1$ fits inside), so $\pi\left(-\tfrac12,\tfrac12\right)$ is not open in the quotient, and $\sim$ is not an open relation. Uribe: “I love little examples like this.”
 
 ^ex-3-4
+
+*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-4|Def. §3.4]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-6|Def. §3.6]]
 
 > [!definition] Definition §3.7: Saturation and Saturated Sets
 > Let $\sim$ be an equivalence relation on a set $X$ with quotient map $\pi : X \to X/{\sim}$. For any subset $U \subseteq X$, the **saturation** of $U$ is
@@ -579,6 +583,8 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > The projection $\pi : X \to X/{\sim}$ of [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-4|Definition §3.4]] is a quotient map in the sense of [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-8|Definition §3.8]]: it is surjective, and $W$ is open in $X/{\sim}$ if and only if $\pi^{-1}(W)$ is open in $X$, which is the definition of the quotient topology. The [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-21|next proposition]] says that these are the only examples.
 
 ^ex-3-5
+
+*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-4|Def. §3.4]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-8|Def. §3.8]]
 
 > [!definition] Definition §3.9: Maps Constant on Fibres
 > Let $p : X \to Y$ be a map. A map $g : X \to Z$ is **constant on the fibres of $p$** if it is constant on $p^{-1}(\{y\})$ for every $y \in Y$; equivalently, $p(x) = p(x')$ implies $g(x) = g(x')$.
@@ -852,7 +858,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 
 ^pf-3-27
 
-*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-26|§3.26]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-17|§3.17]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-10|Def. §3.10]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]]
+*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-26|§3.26]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-17|§3.17]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-10|Def. §3.10]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (2), [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]]
 
 > [!proof]+ Proof (given in full in lecture)
 > ($\Leftarrow$) Assume $\Gamma$ is closed. Let $[x] \neq [y]$ in $X/{\sim}$, i.e. $x \not\sim y$, i.e. $(x, y) \notin \Gamma$. Since $\Gamma$ is closed, its complement is an open set containing $(x,y)$, so by the box characterization ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-8|Proposition §3.8]]) there exist neighborhoods $U$ of $x$ and $V$ of $y$ such that
@@ -875,7 +881,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 
 ^pf-3-26
 
-*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-10|Def. §3.10]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-6|Def. §3.6]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-4|Def. §3.4]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-8|§3.8]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]]
+*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-10|Def. §3.10]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-6|Def. §3.6]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-4|Def. §3.4]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-13|§3.13]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-8|§3.8]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]]
 
 ![[m591-3-6.svg]]
 *The direction ($\Leftarrow$): a point $(x,y)$ off the closed graph $\Gamma$ has a box $U \times V$ missing $\Gamma$, and then $\pi(U)$ and $\pi(V)$ separate $[x]$ from $[y]$.*
@@ -958,7 +964,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 ^def-3-11
 
 > [!remark]- Connections
-> - As an orbit space of $\mathrm{U}(1) = S^1$: [[§6 Group Actions and Orbit Spaces#^ex-6-3|Ex. §6.3]] (cf. group actions and orbits, [[§23 Actions#^def-23-1|493 Def. §23.1]], [[§25 Orbits#^def-25-1|493 Def. §25.1]]); charts and smooth structure in [[§8 Differentiable Structures#^def-8-11|§8.11]], [[§8 Differentiable Structures#^thm-8-7|§8.7]]; the projection is a submersion, [[§14 Local Diffeomorphisms and Submersions#^ex-14-5|Ex. §14.5]].
+> - As an orbit space of $\mathrm{U}(1) = S^1$: [[§6 Group Actions and Orbit Spaces#^ex-6-3|Ex. §6.3]] (cf. group actions and orbits, [[§23 Actions#^def-23-1|493 Def. §23.1]], [[§25 Orbits#^def-25-1|493 Def. §25.1]]); charts and smooth structure in [[§8 Differentiable Structures#^def-8-11|Def. §8.11]], [[§8 Differentiable Structures#^thm-8-7|§8.7]]; the projection is a submersion, [[§14 Local Diffeomorphisms and Submersions#^ex-14-5|Ex. §14.5]].
 > - Real analogue in MATH 590: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2 (Projective n-Space)]], [[Projective plane]].
 
 > [!theorem] Proposition §3.29: $\mathbb{CP}^n$ is Hausdorff and Second Countable
@@ -1023,7 +1029,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 
 ^pf-3-29-2
 
-*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-11|Def. §3.11]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-7|Def. §3.7]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-6|Def. §3.6]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^pf-3-29|§3.29 (openness of the relation)]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]
+*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-11|Def. §3.11]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-7|Def. §3.7]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-6|Def. §3.6]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^pf-3-29|§3.29 (openness of the relation)]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§16 Limit Point Compactness#^thm-16-2|590 §16.2]]
 
 > [!remark] Remark
 > The one place the group enters the direct proof is $|\lambda \vec u - \lambda \vec z_1| = |\vec u - \vec z_1|$: every $\lambda \in S^1$ is an *isometry*, so the thickening by $r$ is uniform over the whole group. That uniformity — a compact group acting by isometries — is the concrete mechanism behind [[§6 Group Actions and Orbit Spaces#^cor-6-4|Corollary §6.4]], and it is exactly what fails for $\mathbb{R}^+$ in [[§6 Group Actions and Orbit Spaces#^ex-6-6|Example §6.6]], where $t \cdot (x,y) = (tx, y/t)$ distorts distances without bound.
@@ -1100,6 +1106,8 @@ The following was set up in the last four minutes of lecture; the proof of the c
 > Let $\mathbb{C}^\times$ act instead on all of $\mathbb{C}^{n+1}$ by scalar multiplication. The action is still continuous, but the orbit space acquires one extra point, the orbit $\{\lambda \cdot 0\} = \{0\}$, which is not a line; and that point cannot be separated from any other. Indeed, let $U$ be an open set of the quotient containing $\{0\}$. Its preimage is open, saturated, and contains $0$, hence contains a ball $B(0,\varepsilon)$. For every $\vec z \neq 0$ the vector $\frac{\varepsilon}{2|\vec z|}\vec z$ lies in that ball and in the orbit of $\vec z$, so by saturation the preimage contains every orbit. Thus $U$ is the whole quotient: every neighbourhood of $\{0\}$ contains every point, and the quotient is not Hausdorff. Deleting the origin removes exactly this one orbit. Every orbit accumulates at $0$ — the same pathology as [[§6 Group Actions and Orbit Spaces#^ex-6-6|Example §6.6]], where orbits accumulate on other orbits, here concentrated at a single point.
 
 ^ex-3-8
+
+*Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-4|Def. §3.4]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-7|Def. §3.7]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]]
 
 > [!remark] Remark: Where This Is Going
 > $\mathbb{CP}^n$ is “one of the main examples of manifolds” and will recur throughout the course. With $T_2$ and second countability now secured, what is missing from manifold status is the locally Euclidean condition — charts on $\mathbb{CP}^n$ — which is supplied in [[§8 Differentiable Structures#Projective Spaces as Smooth Manifolds|§8, Projective Spaces as Smooth Manifolds]], together with the smooth structure. The same two-step pattern ($\sim$ open via a group acting by homeomorphisms + graph closed via compactness) is the template for many quotient constructions to come: real projective space $\mathbb{RP}^n$ (Lee Example 1.5), Grassmannians, tori, and lens spaces all fit it.

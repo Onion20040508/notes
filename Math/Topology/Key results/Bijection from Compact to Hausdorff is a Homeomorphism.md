@@ -23,8 +23,8 @@ tags: [topology, hub]
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
 - [[§7 Homogeneous Spaces#^thm-7-8|Theorem §7.8: Homogeneous Spaces Are Homeomorphic to Coset Spaces]]
-- [[§8 Differentiable Structures#^prop-8-9|Proposition §8.9: mathbbCP^1 Is the Riemann Sphere]]
-- [[§8 Differentiable Structures#^prop-8-11|Proposition §8.11: The Two Topologies on mathbbRP^n Agree]]
+- [[§8 Differentiable Structures#^prop-8-9|Proposition §8.9: ℂP¹ Is the Riemann Sphere]]
+- [[§8 Differentiable Structures#^prop-8-11|Proposition §8.11: The Two Topologies on ℝPⁿ Agree]]
 
 ## Connections
 - **Mechanism.** It chains [[Closed Subspace of a Compact Space is Compact]], [[Continuous Image of a Compact Space is Compact]] and [[Compact Subspace of a Hausdorff Space is Closed]] to show f is a closed map, so f⁻¹ is continuous for free ([[§15 Compact Spaces#^rem-15-6|Why This Theorem is Powerful]]).

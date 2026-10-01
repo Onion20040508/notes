@@ -22,7 +22,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^ex-3-7|Example §3.7: The Line with Two Origins — via the Criterion]]
 - [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^cor-3-27|Corollary §3.27: The Diagonal Criterion]]
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-29|Proposition §3.29: mathbbCP^n is Hausdorff and Second Countable]]
+- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-29|Proposition §3.29: ℂPⁿ is Hausdorff and Second Countable]]
 - [[§6 Group Actions and Orbit Spaces#^cor-6-4|Corollary §6.4: Compact Group and Compact Hausdorff Space]]
 - [[§6 Group Actions and Orbit Spaces#^thm-6-5|Theorem §6.5: Compactness of X Is Not Needed]]
 

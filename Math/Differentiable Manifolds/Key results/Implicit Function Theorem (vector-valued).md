@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 4.1", "IFT vector-valued"]
+aliases: ["MATH 591 4.1", "IFT vector-valued", "Lee Theorem C.40"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§4 The Regular Value Theorem#^thm-4-1]]

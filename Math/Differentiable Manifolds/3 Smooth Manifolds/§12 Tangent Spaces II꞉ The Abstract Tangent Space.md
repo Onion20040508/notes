@@ -852,7 +852,7 @@ $$
 > 1. the matrix of the differential (Theorem [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|§12.22]]), which is a one-line proof because of it;
 > 2. regular values in one chart (Proposition [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-27|§12.27]]): the rank of $F_{*p}$ is the rank of $\tilde F'(\varphi(p))$;
 > 3. the proof of the local normal form (Theorem [[§14 Local Diffeomorphisms and Submersions#^thm-14-5|§14.5]]), where the matrix $\big[\partial F^j/\partial x^i(p)\big]$ is built from the components $F^j$ but is the Jacobian of $\tilde F$;
-> 4. Assignment 3, Problem 4, whose “matching coefficients” step computes $F_{*p}(\partial/\partial u_k|_p)[x^j]$ as an ordinary partial derivative of $F_\varphi$.
+> 4. [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^rem-12-15|Assignment 3, Problem 4]], whose “matching coefficients” step computes $F_{*p}(\partial/\partial u_k|_p)[x^j]$ as an ordinary partial derivative of $F_\varphi$.
 >
 > Both sides depend on the charts: changing $\varphi$ or $\psi$ changes the matrix (Corollary [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-24|§12.24]]), while $F_{*p}$ itself does not.
 

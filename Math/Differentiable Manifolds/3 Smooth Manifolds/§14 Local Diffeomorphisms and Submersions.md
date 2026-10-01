@@ -212,6 +212,8 @@ Lecture 11 supplied it (Theorem [[§12 Tangent Spaces II꞉ The Abstract Tangent
 
 ^ex-14-5
 
+*Uses:* [[§16 Fibrations#^ex-16-1|Ex. §16.1]], [[§16 Fibrations#^prop-16-1|§16.1]]
+
 > [!remark]- Connections
 > - Proved in §16, as a consequence of the local triviality of the Hopf fibration: [[§16 Fibrations#^ex-16-1|Ex. §16.1]] with [[§16 Fibrations#^prop-16-1|§16.1]](2).
 

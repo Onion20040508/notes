@@ -11,7 +11,7 @@ The notes are arranged in logical order, not in the order of the lectures. This 
 
 **Course facts.** Instructor: A. Uribe. Text: Lee, *Introduction to Smooth Manifolds* (2nd ed.) — see [[Differentiable Manifolds Lee Concordance]]. Midterm: Wednesday, October 21, 6:00–8:00 PM (written as a 90-minute exam; room TBA). Final: Thursday, December 17, 10:30 AM–12:30 PM. Homework: due Sunday midnight, uploaded to Canvas.
 
-*Planned topics (syllabus): smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields (defined only, [[§17 The Tangent Bundle|§17]]); differential forms; submanifolds ✓; immersions/submersions ✓ (immersion normal form stated only, [[§18 Immersions|§18]]); Sard's theorem; transversality ✓ (in Euclidean space, [[§11 Tangent Spaces I꞉ The Geometric Picture|§11]]); Lie groups and algebras (so far only the classical matrix groups and their tangent spaces at $I$, [[§5 Topological Groups and Classical Matrix Groups|§5]], [[§10 Vector Spaces and Matrix Groups|§10]], [[§11 Tangent Spaces I꞉ The Geometric Picture|§11]]); Stokes' theorem; de Rham cohomology.*
+*Planned topics (syllabus): smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields (defined only, [[§17 The Tangent Bundle|§17]]); differential forms; submanifolds ✓; immersions/submersions ✓ (immersion normal form stated only, [[§18 Immersions|§18]]); Sard's theorem; transversality (so far in Euclidean space only, [[§11 Tangent Spaces I꞉ The Geometric Picture|§11]]); Lie groups and algebras (so far only the classical matrix groups and their tangent spaces at $I$, [[§5 Topological Groups and Classical Matrix Groups|§5]], [[§10 Vector Spaces and Matrix Groups|§10]], [[§11 Tangent Spaces I꞉ The Geometric Picture|§11]]); Stokes' theorem; de Rham cohomology.*
 
 ## Lectures
 

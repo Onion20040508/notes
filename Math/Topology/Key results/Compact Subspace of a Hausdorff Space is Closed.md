@@ -28,7 +28,7 @@ tags: [topology, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-29|Proposition §3.29: mathbbCP^n is Hausdorff and Second Countable]]
+- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-29|Proposition §3.29: ℂPⁿ is Hausdorff and Second Countable]]
 - [[§6 Group Actions and Orbit Spaces#^cor-6-4|Corollary §6.4: Compact Group and Compact Hausdorff Space]]
 - [[§8 Differentiable Structures#^prop-8-3|Proposition §8.3: The Circle Needs More Than One Chart]]
 

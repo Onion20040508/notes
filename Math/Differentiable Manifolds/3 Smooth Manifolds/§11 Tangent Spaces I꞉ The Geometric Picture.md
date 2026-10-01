@@ -342,7 +342,7 @@ a smooth manifold of dimension $k - \ell$ with $T^{\mathrm{geo}}_qS = \ker G'(q)
 > [!definition] Definition §11.4: Codimension
 > If $S \subseteq \mathbb{R}^k$ is a manifold of dimension $s$ — for instance a regular level set — its **codimension** in $\mathbb{R}^k$ is $\operatorname{codim} S = k - s$.
 >
-> *Lee: Ch. 5, _Embedded Submanifolds_*
+> *Lee: Ch. 5, Embedded Submanifolds*
 
 ^def-11-4
 

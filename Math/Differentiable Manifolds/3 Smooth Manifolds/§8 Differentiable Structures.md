@@ -69,7 +69,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The general notion for smooth manifolds: [[§8 Differentiable Structures#^def-8-14|Def. §8.14]]; the two agree by [[§8 Differentiable Structures#^prop-8-14|§8.14]].
-> - The local version: [[§14 Local Diffeomorphisms and Submersions#^def-14-1|Def. §14.1]]; detected by the differential via the [[Inverse Function Theorem (several variables)|inverse function theorem (452 §13)]].
+> - The local version: [[§14 Local Diffeomorphisms and Submersions#^def-14-1|Def. §14.1]]; detected by the differential via the [[§14 Local Diffeomorphisms and Submersions#^thm-14-1|inverse function theorem, §14.1]].
 
 > [!definition] Definition §8.4: Smoothly Compatible Charts
 > Two charts $(U, \varphi)$ and $(V, \psi)$ on $M$ are **$C^\infty$-compatible** if the **transition function**
@@ -182,6 +182,8 @@ tags: [differentiable-manifolds, math591]
 
 ^ex-8-1
 
+*Uses:* [[§8 Differentiable Structures#^def-8-4|Def. §8.4]], [[§8 Differentiable Structures#^def-8-6|Def. §8.6]]
+
 > [!example] Example §8.2: The Four-Chart Atlas on the Circle
 > Let $S^1 = \{(x,y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$ and cut it along the axes into four open half-circles, each projected onto the axis it is a graph over:
 >
@@ -211,6 +213,8 @@ tags: [differentiable-manifolds, math591]
 > *Lee: Examples 1.4 and 1.31*
 
 ^ex-8-2
+
+*Uses:* [[§8 Differentiable Structures#^def-8-1|Def. §8.1]], [[§8 Differentiable Structures#^def-8-4|Def. §8.4]], [[§8 Differentiable Structures#^def-8-6|Def. §8.6]]
 
 > [!remark]- Connections
 > - The circle as a level set, and the implicit function theorem solving for $y$ (452): [[Unit circle and unit sphere]].
@@ -270,11 +274,15 @@ The board wrote “$x^2 + y^2 = 0$” when setting up the first transition funct
 
 ^ex-8-3
 
+*Uses:* [[§8 Differentiable Structures#^def-8-1|Def. §8.1]], [[§8 Differentiable Structures#^def-8-4|Def. §8.4]], [[§8 Differentiable Structures#^def-8-6|Def. §8.6]]
+
 > [!remark]- Connections
 > - Compatible with the other two circle atlases: [[§9 Manifolds in Euclidean Space#^prop-9-4|§9.4]]; the complex counterpart $w \mapsto 1/w$ on $\mathbb{CP}^1$: [[§8 Differentiable Structures#^rem-8-12|Remark after §8.9]].
 
 ![[m591-8-3.svg]]
-*Left, $\sigma_N$: the line from $N$ through a point $P$ of the circle meets the horizontal axis at $\sigma_N(P)$. The hollow circle marks the omitted pole — the line through $N$ and $N$ is not determined, and as $P$ climbs towards $N$ the image $\sigma_N(P)$ runs off to $\pm\infty$. Every point of the axis is hit exactly once, so $\sigma_N$ is a bijection onto all of $\mathbb{R}$. Right, $\sigma_S$: the same construction from the south pole.*
+*Left, $\sigma_N$: the line from $N$ through a point $P$ of the circle meets the horizontal axis at $\sigma_N(P)$. Right, $\sigma_S$: the same construction from the south pole.*
+
+The hollow circle marks the pole each chart *omits*: $\sigma_N$ is undefined at $N$, since the line through $N$ and $N$ is not determined, and as $P$ climbs towards $N$ the image $\sigma_N(P)$ runs off to $\pm\infty$. Every other point is hit exactly once, so $\sigma_N$ is a bijection onto all of $\mathbb{R}$.
 
 The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axis at the origin, so $\sigma_N(S) = 0/(1-(-1)) = 0$, and by symmetry $\sigma_S(N) = 0$. The two charts are mirror images in this respect — $\sigma_N$ compresses the *lower* half-circle into $(-1,1)$ and throws the upper half outside it, while $\sigma_S$ does the reverse. On the overlap $S^1 \setminus \{N,S\}$ this exchange of inside and outside is exactly the transition function $u \mapsto 1/u$.
 
@@ -297,6 +305,8 @@ The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axi
 > a translation on each component of its domain, hence a diffeomorphism. A parametrization is just the inverse of a chart — “putting labels on points” — so the two descriptions carry the same information.
 
 ^ex-8-4
+
+*Uses:* [[§8 Differentiable Structures#^def-8-4|Def. §8.4]], [[§8 Differentiable Structures#^def-8-6|Def. §8.6]]
 
 > [!remark]- Connections
 > - Polar angle as a coordinate (452): [[Polar and spherical coordinates]]; parametrizations as inverse charts: [[§9 Manifolds in Euclidean Space#^rem-9-2|§9, Remark: A Parametrization Is an Inverse Chart]].
@@ -849,6 +859,8 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 > *Lee: Example 1.23*
 
 ^ex-8-6
+
+*Uses:* [[§8 Differentiable Structures#^ex-8-5|Ex. §8.5]], [[§8 Differentiable Structures#^cor-8-18|§8.18]]
 
 > [!remark] Remark
 > [[§8 Differentiable Structures#^cor-8-18|§8.18]] produces, from each homeomorphism of $\mathbb{R}^n$ that is not a diffeomorphism — there are uncountably many — a smooth structure on $\mathbb{R}^n$ *different* from the standard one. By (2), every one of them is *diffeomorphic* to the standard one. So “how many smooth structures” is the wrong question: the right one is how many up to diffeomorphism. It also shows something about the exotic structures of the [[§8 Differentiable Structures#^rem-8-20|next remark]]. An exotic $\mathbb{R}^4$ cannot admit a single chart whose image is all of $\mathbb{R}^4$, since by the argument of (2) that chart would be a diffeomorphism onto standard $\mathbb{R}^4$.
