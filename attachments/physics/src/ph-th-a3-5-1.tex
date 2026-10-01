@@ -1,0 +1,22 @@
+% Figure for Thermal Physics §A3.5 (why C_p > C_V: from state A an ideal gas is heated to the isotherm T + dT either at constant volume (A to B) or at constant pressure (A to C); same change of internal energy, but the isobaric path also does the work shown shaded).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2mm]}]
+  \begin{axis}[nfig, width=8.6cm, height=6.2cm, xmin=0, xmax=5.3, ymin=0, ymax=3.0,
+      xlabel={$V$}, ylabel={$p$}, xtick=\empty, ytick=\empty,
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south}]
+    \addplot[black!45, domain=1.1:4.2, samples=60] {3/x};
+    \addplot[black!45, domain=1.4:4.2, samples=60] {4/x};
+    \fill[figR, fill opacity=0.15] (axis cs:1.5,0) rectangle (axis cs:2,2);
+    \addplot[figB, very thick, ->] coordinates {(1.5,2) (1.5,2.6667)};
+    \addplot[figB, very thick, ->] coordinates {(1.5,2) (2,2)};
+    \addplot[only marks, mark=*, mark size=1.5pt, black] coordinates {(1.5,2) (1.5,2.6667) (2,2)};
+    \node[font=\scriptsize, anchor=north east] at (axis cs:1.5,2) {$A$};
+    \node[font=\scriptsize, anchor=south east] at (axis cs:1.5,2.6667) {$B$};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:2,2) {$C$};
+    \node[font=\scriptsize, black!60, anchor=west] at (axis cs:4.2,0.71) {$T$};
+    \node[font=\scriptsize, black!60, anchor=west] at (axis cs:4.2,0.95) {$T + dT$};
+    \node[figB, font=\scriptsize, anchor=east, align=right] at (axis cs:1.45,2.33) {isochoric:\\ $dQ = nC_V\,dT$};
+    \node[figB, font=\scriptsize, anchor=west, align=left] at (axis cs:2.3,2.45) {isobaric: $dQ = nC_p\,dT$};
+    \node[figR, font=\scriptsize, align=center] at (axis cs:1.75,0.7) {$p\,dV$\\ $= nR\,dT$};
+  \end{axis}
+\end{tikzpicture}

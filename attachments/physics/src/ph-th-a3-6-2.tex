@@ -1,0 +1,19 @@
+% Figure for Thermal Physics §A3.6 (the cycle a -> c -> b -> a of PHY 287 Problem Set 4: isobaric expansion, adiabatic compression (gamma = 1.40), isochoric cooling; traversed counterclockwise, so the net work is negative; pressures in units of p_a, volumes in units of V_a).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \begin{axis}[nfig, width=8cm, height=6.2cm, xmin=0, xmax=2.2, ymin=0, ymax=2.5,
+      xlabel={$V/V_a$}, ylabel={$p/p_a$}, xtick={1,1.6667}, xticklabels={$1$,$\tfrac53$}, ytick={1,2.043}, yticklabels={$1$,$2.04$},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south}]
+    \addplot[fill=figB, fill opacity=0.15, draw=none, domain=1:1.6667, samples=60] {(1.6667/x)^1.4} \closedcycle;
+    \fill[white] (axis cs:0.99,0.001) rectangle (axis cs:1.68,0.999);
+    \addplot[figB, very thick, ->] coordinates {(1,1) (1.6667,1)};
+    \addplot[figB, very thick, domain=1.6667:1, samples=60, ->] {(1.6667/x)^1.4};
+    \addplot[figB, very thick, ->] coordinates {(1,2.043) (1,1)};
+    \addplot[only marks, mark=*, mark size=1.5pt, black] coordinates {(1,1) (1.6667,1) (1,2.043)};
+    \node[font=\scriptsize, anchor=north east] at (axis cs:1,1) {$a$, 300 K};
+    \node[font=\scriptsize, anchor=north west] at (axis cs:1.6667,1) {$c$, 500 K};
+    \node[font=\scriptsize, anchor=south east] at (axis cs:1,2.043) {$b$, 613 K};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.42,1.45) {adiabatic};
+    \node[figR, font=\scriptsize] at (axis cs:1.2,1.25) {$W < 0$};
+  \end{axis}
+\end{tikzpicture}
