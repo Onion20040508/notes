@@ -1,0 +1,28 @@
+% Figure for Thermal Physics §B3.3 (Gibbs free energy of an ideal-gas reaction A <=> B at fixed T and p = p°, g(xi) = xi*D + xi ln xi + (1-xi) ln(1-xi), for D = 2 and D = -1; dashed: without mixing; dots: minima at xi/(1-xi) = exp(-D)).
+\begin{tikzpicture}[font=\small,
+  declare function={gm(\x,\D)=\x*\D + \x*ln(\x) + (1-\x)*ln(1-\x);}]
+  \begin{axis}[nfig, width=10cm, height=6.6cm, xmin=0, xmax=1.08, ymin=-1.6, ymax=2.25,
+      xlabel={$\xi$}, ylabel={$\dfrac{G - N\mu_A^\circ}{Nk_BT}$},
+      xtick={0,0.25,0.5,0.75,1}, ytick={-1,0,1,2},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south west, xshift=-6pt}]
+    \draw[black!40, thin] (axis cs:0,0) -- (axis cs:1.08,0);
+    % without mixing
+    \addplot[figB, dashed, line width=0.7pt, domain=0:1, samples=2] {2*x};
+    \addplot[figR, dashed, line width=0.7pt, domain=0:1, samples=2] {-x};
+    % with mixing
+    \addplot[figB, domain=0.0005:0.9995, samples=300] {gm(x,2)};
+    \addplot[figR, domain=0.0005:0.9995, samples=300] {gm(x,-1)};
+    % minima
+    \addplot[figB, only marks, mark=*, mark size=1.8pt] coordinates {(0.1192,-0.1269)};
+    \addplot[figR, only marks, mark=*, mark size=1.8pt] coordinates {(0.7311,-1.3133)};
+    \draw[black!55, densely dotted] (axis cs:0.1192,-0.1269) -- (axis cs:0.1192,0);
+    \draw[black!55, densely dotted] (axis cs:0.7311,-1.3133) -- (axis cs:0.7311,0);
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.62,0.40) {$\Delta = 2$, $K = e^{-2}$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.10,-1.36) {$\Delta = -1$, $K = e$};
+    \node[font=\scriptsize, black!60, anchor=south east] at (axis cs:0.92,1.95) {no mixing};
+    \draw[black!50, thin] (axis cs:0.90,1.97) -- (axis cs:0.93,1.86);
+    \node[figB, font=\scriptsize, anchor=north] at (axis cs:0.16,-0.24) {$\xi^* = 0.12$};
+    \node[figR, font=\scriptsize, anchor=south west] at (axis cs:0.74,-1.33) {$\xi^* = 0.73$};
+  \end{axis}
+\end{tikzpicture}

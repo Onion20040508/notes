@@ -1,0 +1,24 @@
+% Figure for Thermal Physics §B3.1 (the potentials U, H, F, G, Phi of a simple system: natural variables, differentials, the Legendre steps between them, and the constraints under which each is minimum).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small,
+  pot/.style={draw=figB, line width=0.8pt, rounded corners=3pt, fill=figB!6, align=center, minimum width=4.4cm, minimum height=1.25cm, inner sep=3pt},
+  lstep/.style={->, line width=0.8pt, black!70},
+  lab/.style={font=\scriptsize, black!80},
+  cons/.style={font=\scriptsize, black!55}]
+  \node[pot] (U) at (0,0) {$U(S, V, N)$\\[1pt] {\scriptsize $dU = T\,dS - p\,dV + \mu\,dN$}};
+  \node[pot] (H) at (7.2,0) {$H(S, p, N)$\\[1pt] {\scriptsize $dH = T\,dS + V\,dp + \mu\,dN$}};
+  \node[pot] (F) at (0,-3.0) {$F(T, V, N)$\\[1pt] {\scriptsize $dF = -S\,dT - p\,dV + \mu\,dN$}};
+  \node[pot] (G) at (7.2,-3.0) {$G(T, p, N)$\\[1pt] {\scriptsize $dG = -S\,dT + V\,dp + \mu\,dN$}};
+  \node[pot] (P) at (0,-6.0) {$\Phi(T, V, \mu)$\\[1pt] {\scriptsize $d\Phi = -S\,dT - p\,dV - N\,d\mu$}};
+  % Legendre steps
+  \draw[lstep] (U.east) -- (H.west) node[midway, above, lab] {$+\,pV$} node[midway, below, lab] {trade $V$ for $p$};
+  \draw[lstep] (F.east) -- (G.west) node[midway, above, lab] {$+\,pV$} node[midway, below, lab] {trade $V$ for $p$};
+  \draw[lstep] (U.south) -- (F.north) node[midway, left, lab] {$-\,TS$} node[midway, right, lab] {trade $S$ for $T$};
+  \draw[lstep] (H.south) -- (G.north) node[midway, left, lab] {$-\,TS$} node[midway, right, lab] {trade $S$ for $T$};
+  \draw[lstep] (F.south) -- (P.north) node[midway, left, lab] {$-\,\mu N$} node[midway, right, lab] {trade $N$ for $\mu$};
+  % minimum principles
+  \node[cons, anchor=south] at (U.north) {minimum at fixed $S, V, N$};
+  \node[cons, anchor=south] at (H.north) {minimum at fixed $S, p, N$};
+  \node[cons, anchor=north east] at ([xshift=-3pt, yshift=-1pt]F.south) {minimum at fixed $T, V, N$};
+  \node[cons, anchor=north] at (G.south) {minimum at fixed $T, p, N$};
+  \node[cons, anchor=west] at ([xshift=4pt]P.east) {minimum at fixed $T, V, \mu$};
+\end{tikzpicture}
