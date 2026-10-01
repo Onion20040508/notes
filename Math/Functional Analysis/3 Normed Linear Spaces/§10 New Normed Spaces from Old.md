@@ -121,7 +121,7 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 
 > [!remark]- Connections
 > - The case $X = \mathbb{R}^n$ with the Euclidean and max norms: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]], [[§11 Metric Topology#^thm-11-2|590 §11.2]]; coordinatewise Bolzano–Weierstrass in $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]].
-> - Used for $\ell^p$ and compactness: [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|§13.5]], [[§15 Compactness and the Unit Ball|§15]].
+> - Used later: the $p$-norms on $\mathbb{R}^2$ after [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^prop-13-4|§13.4]], the compact unit ball [[§15 Compactness and the Unit Ball#^ex-15-1|Ex. §15.1]]; through [[§10 New Normed Spaces from Old#^cor-10-4|§10.4]], completeness of $\ell^p$ ([[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|§13.5]]).
 
 > [!remark] Remark: Finite Dimension is Necessary
 > The two inequalities are of different depth. $C_1\|x\|' \le \|x\|_1$ is pure algebra (Step 3): a norm is controlled by its values on a basis. The reverse inequality needs compactness of the unit sphere, which is exactly what fails in infinite dimensions — the unit sphere of $\ell^1$ contains $e_1, e_2, \ldots$ with $\|e_i - e_j\|_1 = 2$, no convergent subsequence — and correspondingly the theorem fails there: on $\ell^1$ the norms $\|\cdot\|_1$ and $\|\cdot\|_2$ are not equivalent (Proposition [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^prop-13-4|§13.4]](c)). Note also what Step 4 shows: an arbitrary norm is continuous for the $\|\cdot\|_1$-topology before we know the two are equivalent; this is the easy direction of Proposition [[§10 New Normed Spaces from Old#^prop-10-2|§10.2]].
@@ -279,7 +279,7 @@ The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from t
 
 ^pf-10-8
 
-*Uses:* [[§1 Linear Spaces#^def-1-7|Def. §1.7]], [[§1 Linear Spaces#^prop-1-6|§1.6]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^def-8-6|Def. §8.6]], [[Characterization of the Supremum|451 Characterization of the Supremum]]
+*Uses:* [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§1 Linear Spaces#^def-1-7|Def. §1.7]], [[§1 Linear Spaces#^prop-1-6|§1.6]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^def-8-6|Def. §8.6]], [[Characterization of the Supremum|451 Characterization of the Supremum]]
 
 > [!remark]- Connections
 > - The quotient space itself: [[§1 Linear Spaces#^prop-1-6|§1.6]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103]]; a seminorm made into a norm by passing to a quotient: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-3|551 Ex. §19.3]] ($BV$ modulo constants).

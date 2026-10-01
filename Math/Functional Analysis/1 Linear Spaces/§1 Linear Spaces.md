@@ -530,6 +530,9 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 
 ^rem-1-9
 
+![[m556-1-3.svg]]
+*Quotient versus complement in $\mathbb{R}^2$. The elements of $X/Y$ are the red lines parallel to $Y$ (with $Y$ itself the zero class $[0]$). A complement $W$ (blue) is a line through $0$ that meets each class exactly once, at $w$ — this is the isomorphism $w \mapsto [w]$ of Corollary §1.12. A second complement $W'$ (green) meets the same classes at different points: $w$ and $w'$ represent the same class $[x]$, so each complement is a model of $X/Y$, and neither is $X/Y$ itself.*
+
 > [!theorem] Corollary §1.13: Orthogonal Complement (inner products; later)
 > Let $X$ carry an inner product $\langle \cdot, \cdot \rangle$ and let $Y^\perp = \{ z \in X : \langle z, y \rangle = 0 \ \forall y \in Y \}$. If $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$, so $X/Y \cong Y^\perp$ via $z \mapsto [z]$ and $X \cong X/Y \oplus Y$.
 >

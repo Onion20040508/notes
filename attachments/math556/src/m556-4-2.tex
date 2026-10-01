@@ -1,0 +1,20 @@
+% Figure from MATH 556 notes, section 4. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0, >=stealth]
+    \draw[->, thin] (-0.2,0) -- (8.4,0) node[right, font=\scriptsize] {$\mathbb{R}$};
+    % admissible interval [sup, inf]
+    \fill[figG!20] (3.6,-0.13) rectangle (4.7,0.13);
+    \draw[figG, very thick] (3.6,0) -- (4.7,0);
+    \draw[figG, thin] (3.6,-0.13) -- (3.6,0.13);
+    \draw[figG, thin] (4.7,-0.13) -- (4.7,0.13);
+    % lower bounds  l(y') - p(-x_0 + y')  (red), accumulating at the sup
+    \foreach \t in {0.4,1.1,1.8,2.4,2.85,3.15,3.35,3.47}
+        \fill[figR] (\t,0) circle (1.6pt);
+    % upper bounds  p(x_0 + y) - l(y)  (blue), accumulating at the inf
+    \foreach \t in {4.8,4.95,5.3,5.8,6.4,7.0,7.7}
+        \fill[figB] (\t,0) circle (1.6pt);
+    \node[figR, font=\scriptsize, anchor=south] at (1.9,0.25) {$\ell(y') - p(-x_0 + y')$, \ $y' \in Y$};
+    \node[figB, font=\scriptsize, anchor=south] at (6.3,0.25) {$p(x_0 + y) - \ell(y)$, \ $y \in Y$};
+    \node[font=\scriptsize, anchor=base] at (3.6,-0.45) {$\sup$};
+    \node[font=\scriptsize, anchor=base] at (4.7,-0.45) {$\inf$};
+    \node[figG!70!black, font=\scriptsize, anchor=north] at (4.15,-0.62) {admissible values of $c = L(x_0)$};
+\end{tikzpicture}

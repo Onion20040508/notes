@@ -169,7 +169,7 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 *Uses:* [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-4|§19.4]], [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^pf-19-2|§19.2 (1)]], [[§18 Projection and Orthogonal Decomposition#^def-18-1|Def. §18.1]], [[§16 Definition and Examples#^def-16-1|Def. §16.1]]
 
 ![[m556-19-1.svg]]
-*The kernel $N$, the line $N^\perp$, and the decomposition $x = kx_0 + y$ that locates $x$ on the level set $\{\ell = \ell(x)\}$.*
+*The kernel $N$, the line $N^\perp$ spanned by $x_0$ (red), and the decomposition $x = kx_0 + y$ that locates $x$ on the level set $\{\ell = \ell(x)\}$ (dashed): $\ell(x)$ sees only the $N^\perp$-component $kx_0$. The representing vector $a$ (blue) is the multiple of $x_0$ normal to $N$.*
 
 The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal vector to $N$, a multiple of $x_0$. The level sets $\{\ell = c\}$ are the translates of $N$, and $\ell(x)$ records only which translate $x$ lies on, i.e. the $N^\perp$-component $kx_0$ of $x$.
 

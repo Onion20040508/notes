@@ -69,7 +69,7 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 ^ex-3-1
 
 > [!remark]- Connections
-> - The same three norms on $\mathbb{R}^n$: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-2|551 Ex. §19.2]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]]; the triangle inequality for $p_1$: [[Triangle inequality|LADR 6.17]].
+> - The Euclidean and $\ell^1$ norms on $\mathbb{R}^n$: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-2|551 Ex. §19.2]]; the Euclidean and max distances: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]]; the triangle inequality for $p_1$: [[Triangle inequality|LADR 6.17]].
 > - In this course as norms: [[§8 Normed Linear Spaces#^ex-8-1|Ex. §8.1]].
 
 > [!example] Example §3.2: The Sets $\{p < 1\}$ in $\mathbb{R}^2$
@@ -79,14 +79,14 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 > - (c) $p_3 < 1$: the open diamond $|x_1| + |x_2| < 1$, with vertices $(\pm 1, 0)$, $(0, \pm 1)$.
 >
 > ![[m556-3-1.svg]]
-> *The three sets $\{p < 1\}$ in $\mathbb{R}^2$: the disk, the square and the diamond.*
+> *The three sets $\{p < 1\}$ in $\mathbb{R}^2$: the open disk, square and diamond. The boundaries are dashed because the points with $p = 1$ are not included.*
 >
 > All three sets are convex. This is not a coincidence: there is a correspondence between convex sets and positive homogeneous subadditive functions, to be made precise [[§5 Convex Sets and the Gauge#^cor-5-8|later in the course]]. In finite dimensions the picture already suggests it.
 
 ^ex-3-2
 
 > [!remark]- Connections
-> - The closed unit balls of the same norms: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-2|551 Ex. §19.2]].
+> - The same sets as unit balls, the pictures of the norms: [[§8 Normed Linear Spaces#^rem-8-2|Relation to Chapter 2]]; all collected in [[Norms on ℝⁿ and their unit balls]].
 > - The correspondence: [[§5 Convex Sets and the Gauge#^prop-5-1|§5.1]], [[§5 Convex Sets and the Gauge#^ex-5-2|Ex. §5.2]], [[§5 Convex Sets and the Gauge#^cor-5-8|§5.8]].
 
 ## The Hahn–Banach Theorem (Real Version)

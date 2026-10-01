@@ -79,7 +79,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - The same norms in 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-2|551 Ex. §19.2]] (unit-ball figure); as metrics on $\mathbb{R}^n$: [[§11 Metric Topology#^ex-11-1|590 Ex. §11.1]], [[§11 Metric Topology#^ex-11-5|590 Ex. §11.5]], [[§13 Some Topological Concepts in Metric Spaces#^ex-13-4|451 Ex. §13.4]].
-> - Minkowski in the vault: [[Minkowski's Inequality]] (551 §19.9).
+> - Minkowski's inequality for $L^p$ functions in 551: [[Minkowski's Inequality|551 §19.9]]; the version for sums used here is [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-1|§13.1]].
 
 ## The Induced Metric
 
@@ -310,3 +310,6 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > The definition of [[§5 Convex Sets and the Gauge#^def-5-1|interior point]] tests one line at a time, and the parabola approaches $0$ along no single line. The set $K$ is not convex.
 
 ^ex-8-2
+
+![[m556-8-1.svg]]
+*The parabola $P$ (red) is removed from the plane. A line through $0$ meets $P$ at most once (red dots), so $0$ can move some distance along every line without leaving $K$ (blue: $|t| < |t^*|$ on one line): $0$ is an interior point. But the points $(1/n, 1/n^2)$ of $P$ enter every ball $B_r(0)$ (dashed), so $0$ is not a metric interior point.*

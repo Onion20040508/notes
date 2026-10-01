@@ -30,7 +30,7 @@ This is the first application of [[§3 Statement and Motivation#^thm-3-2|Hahn–
 In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies strictly on one side of it. The point $y_0$ may be a boundary point of $K$ (it is excluded from $K$ only because $K$ has no boundary points), and the statement still holds; the hyperplane is then a supporting hyperplane at $y_0$.
 
 ![[m556-6-1.svg]]
-*The point $y_0$ lies on the hyperplane $\{\ell = c_0\}$, and $K$ lies strictly in the half-space $\{\ell < c_0\}$.*
+*Left: the point $y_0$ lies on the hyperplane $\{\ell = c_0\}$ (red), and $K$ — dashed, since every point of $K$ is interior — lies strictly in the half-space $\{\ell < c_0\}$. Right: $y_0$ may sit on the edge of $K$ (it is still not in $K$); the hyperplane is then a supporting hyperplane, touching $K$'s boundary at $y_0$ without meeting $K$.*
 
 > [!proof]+ Proof
 > **Step 1: Reduction to $0 \in K$.** Assume first that $0 \in K$; the general case is Step 4.
@@ -77,7 +77,7 @@ In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies s
 
 ^pf-6-1
 
-*Uses:* [[§3 Statement and Motivation#^thm-3-2|§3.2]], [[§4 Proof of the Hahn–Banach Theorem#^ex-4-1|Ex. §4.1]], [[§5 Convex Sets and the Gauge#^def-5-1|Def. §5.1]], [[§5 Convex Sets and the Gauge#^def-5-2|Def. §5.2]], [[§5 Convex Sets and the Gauge#^prop-5-5|§5.5]], [[§5 Convex Sets and the Gauge#^prop-5-6|§5.6]], [[§5 Convex Sets and the Gauge#^cor-5-8|§5.8]], [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3|Def. §2.3]], [[§3 Statement and Motivation#^def-3-2|Def. §3.2]]
+*Uses:* [[§3 Statement and Motivation#^thm-3-2|§3.2]], [[§5 Convex Sets and the Gauge#^def-5-1|Def. §5.1]], [[§5 Convex Sets and the Gauge#^def-5-2|Def. §5.2]], [[§5 Convex Sets and the Gauge#^prop-5-5|§5.5]], [[§5 Convex Sets and the Gauge#^prop-5-6|§5.6]], [[§5 Convex Sets and the Gauge#^cor-5-8|§5.8]], [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3|Def. §2.3]]
 
 > [!remark] Remark
 > Everything in the proof was already in place; the theorem is an assembly. The gauge converts the geometric hypothesis (convex, all points interior, $y_0$ outside) into an inequality $p_K(y_0) \ge 1 = \ell(y_0)$ on a one-dimensional subspace; Hahn–Banach extends $\ell$ without breaking $\ell \le p_K$; and the description $K = \{p_K < 1\}$ converts the inequality back into geometry. The hyperplane is $\{\ell = 1\}$ in the normalized case; there is nothing canonical about it, since the extension is not unique. This is the sense in which a convex set can be described by hyperplanes: it lies on one side of a supporting hyperplane at every point outside it.

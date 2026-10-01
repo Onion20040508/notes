@@ -237,7 +237,7 @@ tags: [functional-analysis, math556]
 The parallelogram law is a statement of plane geometry: in the parallelogram spanned by $x$ and $y$, the diagonals are $x + y$ and $x - y$, and the squares of the two diagonals sum to the squares of the four sides.
 
 ![[m556-17-1.svg]]
-*The parallelogram spanned by $x$ and $y$, with its two diagonals $x + y$ and $x - y$.*
+*The parallelogram spanned by $x$ and $y$, with its two diagonals $x + y$ (red) and $x - y$ (blue). The law says the two diagonals' squares add up to the four sides' squares; polarization reads it the other way: the difference of the diagonals' squares is $4\operatorname{Re}(x,y)$, so the norm alone determines the inner product.*
 
 The next theorem says it is the *only* obstruction.
 
@@ -417,3 +417,6 @@ The next theorem says it is the *only* obstruction.
 ^pf-17-5
 
 *Uses:* [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-4|§17.4]], [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^def-13-1|Def. §13.1]], [[§14 The Function Spaces Lᵖ(Ω)#^def-14-1|Def. §14.1]]
+
+![[m556-17-2.svg]]
+*The proof in $\mathbb{R}^2$: the unit spheres of $\|\cdot\|_1$ (red), $\|\cdot\|_2$ (blue) and $\|\cdot\|_\infty$ (black). The sides $e_1$, $e_2$ of the square have norm $1$ in all three, but the diagonals $e_1 \pm e_2$ (dashed) cross the three spheres at $\tfrac12$, $\tfrac{1}{\sqrt2}$ and $1$ of their length, so their norms are $2$, $\sqrt2$ and $1$. The parallelogram law needs $\|e_1 + e_2\|^2 + \|e_1 - e_2\|^2 = 4$, which only the round sphere delivers.*

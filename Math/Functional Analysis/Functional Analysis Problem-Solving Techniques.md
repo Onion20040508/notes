@@ -81,7 +81,7 @@ The pattern of the [[§3 Statement and Motivation#^thm-3-2|Hahn–Banach]] proof
 ^rem-t5
 
 > [!example] Example T5: Applications
-> - **$\ell^p$ complete** (lecture, Theorem [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|§13.5]]): candidate by coordinates; closing by the tail estimate ([[§13 Minkowski's Inequality and the Spaces ℓᵖ#^pf-13-5|§13.5, Step 2]]).
+> - **$\ell^p$ complete** (lecture, Theorem [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|§13.5]]): candidate by coordinates; closing by the tail estimate ([[§13 Minkowski's Inequality and the Spaces ℓᵖ#^pf-13-5|4.4]]).
 > - **Completion of a normed space** (HW2 P3, Theorem [[§9 Completeness#^thm-9-3|§9.3]]): candidate is the diagonal sequence $y_j = x^{(M_j)}_{N_j}$; closing by two three-term triangle inequalities with an auxiliary index sent to infinity last.
 > - **$C[a,b]$ with the sup norm** (HW2 P1, Theorem [[§9 Completeness#^thm-9-1|§9.1]]): candidate by pointwise limits; closing by uniform convergence, then the $3\varepsilon$ argument for continuity of the limit.
 
@@ -167,7 +167,7 @@ The pattern of the [[§3 Statement and Motivation#^thm-3-2|Hahn–Banach]] proof
 > [!remark] Remark: Strategy
 > To produce a point with a geometric property (closest point, orthogonal vector) in a Hilbert space:
 > - (i) **Minimize.** Take a minimizing sequence for the relevant infimum, and show it is Cauchy by applying the [[§17 Cauchy–Schwarz and the Induced Norm#^prop-17-3|parallelogram law]] to two of its terms; convexity of the constraint set puts the midpoint back in the set and makes the cross term large. Completeness gives a limit; closedness keeps it in the set.
-> - (ii) **Perturb.** To extract the property of the minimizer, compare it with nearby competitors $y_0 + ty$, expand $\|v - ty\|^2$, and let $t \to 0$ along a ray $t = s e^{i\theta}$ chosen ([[#Technique 8 Rotate to Make it Real|Technique 8]]) to make the linear term real: a minimum forces the coefficient of the linear term to vanish. Write down explicitly how small $s$ must be.
+> - (ii) **Perturb.** To extract the property of the minimizer, compare it with nearby competitors $y_0 + ty$, expand $\|v - ty\|^2$, and let $t \to 0$ along a ray $t = s e^{i\theta}$ chosen ([[#^rem-t8|Technique 8]]) to make the linear term real: a minimum forces the coefficient of the linear term to vanish. Write down explicitly how small $s$ must be.
 >
 > The same two moves prove uniqueness (apply (i) to two minimizers) and the double-complement identity (apply (ii) to the decomposition).
 

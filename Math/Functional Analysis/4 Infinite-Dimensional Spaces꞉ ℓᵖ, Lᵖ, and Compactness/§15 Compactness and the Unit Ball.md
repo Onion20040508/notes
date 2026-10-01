@@ -55,6 +55,8 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 
 ^pf-15-1
 
+*Uses:* [[§16 Limit Point Compactness#^thm-16-2|590 §16.2]]
+
 > [!remark]- Connections
 > - Home: [[§16 Limit Point Compactness#^thm-16-2|590 §16.2]] (compact ⇔ limit point compact ⇔ sequentially compact for metrizable spaces).
 
@@ -127,7 +129,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 *The picture drawn in Lecture 6, for $Y$ a line in $\mathbb{R}^2$: $y_0$ is only an almost-closest point, $d \le a = \|x_0 - y_0\| < 2d$, and $z = (x_0 - y_0)/a$ is the unit vector in the same direction. Every point of $Y$ is at distance at least $d/a > \tfrac12$ from $z$; here $z$ lies above the dashed line.*
 
 > [!remark]- Connections
-> - In an inner product space the closest point exists and the unit vector can be taken orthogonal: [[§18 Projection and Orthogonal Decomposition#^thm-18-4|§18.4]], and the remark contrasting the two arguments, [[§18 Projection and Orthogonal Decomposition#^rem-18-6|Remark §18]].
+> - In an inner product space the closest point exists ([[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]]) and the unit vector can be taken orthogonal: [[§18 Projection and Orthogonal Decomposition#^thm-18-4|§18.4]], and the remark contrasting the two arguments, [[§18 Projection and Orthogonal Decomposition#^rem-18-6|Remark §18]].
 
 > [!theorem] Corollary §15.3: Riesz's Lemma with Any Constant Below One
 > Under the hypotheses of Lemma [[§15 Compactness and the Unit Ball#^lem-15-2|§15.2]], for every $\theta \in (0,1)$ there is $z \in X$ with $\|z\| = 1$ and $\operatorname{dist}(z, Y) \ge \theta$.
@@ -197,7 +199,10 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 
 ^pf-15-4
 
-*Uses:* [[§9 Completeness#^thm-9-1|§9.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§8 Normed Linear Spaces#^def-8-6|Def. §8.6]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§9 Completeness#^def-9-2|Def. §9.2]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§33 Properties of the Riemann Integral#^thm-33-5|451 §33.5]]
+*Uses:* [[§9 Completeness#^thm-9-1|§9.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§8 Normed Linear Spaces#^def-8-6|Def. §8.6]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§9 Completeness#^def-9-2|Def. §9.2]], [[§33 Properties of the Riemann Integral#^thm-33-2|451 §33.2]], [[§33 Properties of the Riemann Integral#^thm-33-3|451 §33.3]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§33 Properties of the Riemann Integral#^thm-33-5|451 §33.5]]
+
+![[m556-15-2.svg]]
+*Why the constant $1$ is not attained. A unit vector $f$ of $X$ (blue) starts at $f(0) = 0$, so it stays below $\tfrac12$ on some $[0, \delta]$, and $\int_0^1 f$ falls short of $1$ by at least the red area $\delta/2$ (Step 4). The ramps $g_n = \min\{nt, 1\}$ (gray) have $\int_0^1 g_n = 1 - \tfrac1{2n}$, which beats $1 - \tfrac\delta2$ once $\tfrac1n < \delta$; subtracting the right multiple of $g_n$ moves $f$ into $Y$ at a cost $|\int_0^1 f| / \int_0^1 g_n < 1$ (Steps 3 and 5).*
 
 > [!remark] Remark: On the Constant
 > Since $0 \in Y$, always $\operatorname{dist}(z, Y) \le \|z - 0\| = 1$ for a unit vector $z$. So Corollary [[§15 Compactness and the Unit Ball#^cor-15-3|§15.3]] says $\sup_{\|z\| = 1} \operatorname{dist}(z, Y) = 1$ for every closed proper subspace, and Proposition [[§15 Compactness and the Unit Ball#^prop-15-4|§15.4]] says the supremum need not be attained. The mechanism is visible in Steps 3–4: letting $n \to \infty$ in Step 3 gives $\operatorname{dist}(f, Y) \le |\int_0^1 f|$, so a unit vector at distance $1$ from $Y$ would need $|\int_0^1 f| = 1 = \max |f|$, which forces $|f| \equiv 1$ and is ruled out by $f(0) = 0$.
@@ -274,6 +279,8 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > Hence $\{e_j\}$ has no convergent subsequence, and the closed unit ball of $\ell^p$ is not compact. (In $\ell^\infty$, $\|e_i - e_j\|_\infty = 1$.) The theorem says that every infinite-dimensional normed space contains a sequence behaving like this one, even when no basis is available to write it down.
 
 ^ex-15-2
+
+*Uses:* [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^def-13-1|Def. §13.1]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§15 Compactness and the Unit Ball#^def-15-1|Def. §15.1]]
 
 > [!remark] Remark: Why This Matters: Toward Weak Convergence
 > Compactness is what allows a limit to be produced when no formula for it exists. The model application: to solve an equation $P(x) = 1$ one constructs approximate solutions, $P(x_1) \approx 1$, $P(x_2)$ closer, and so on, with $\|x_j\| \le M$ for all $j$; in finite dimensions the bounded sequence $\{x_j\}$ has a convergent subsequence, and its limit solves the equation provided $P$ is continuous. Theorem [[§15 Compactness and the Unit Ball#^thm-15-5|§15.5]] says this move is unavailable in the function spaces the course is about — $L^p$, $\ell^p$, $C[a,b]$ are all infinite-dimensional.

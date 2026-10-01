@@ -134,3 +134,9 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Characterization of the Supremum]] (1)
 
 ## Workhorse examples
+- [[Norms on ℝⁿ and their unit balls]]: the 1-, 2- and max norms; disk, square and diamond as unit balls and gauges
+- [[Sequence spaces ℓᵖ]]: nested Banach spaces of sequences; ℓ² the sequence Hilbert space
+- [[Standard unit vectors eₙ]]: the separated sequence; non-compact unit ball, inequivalent norms, basis of ℓ²
+- [[Finitely supported sequences c₀₀]]: dense but not closed in ℓᵖ; why closedness hypotheses are needed
+- [[Continuous functions on a closed interval]]: C[a,b], complete in the sup norm, completed to Lᵖ in the Lᵖ norms
+- [[L² function spaces]]: inner product, even and odd functions, Fourier basis, position in quantum mechanics

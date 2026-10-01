@@ -58,7 +58,7 @@ Everything from here on uses completeness, and the results are the ones for whic
 ^thm-18-2
 
 ![[m556-18-1.svg]]
-*A minimizing sequence $y_n \in K$ with $\|x_0 - y_n\| \to \operatorname{dist}(x_0, K)$, converging to the closest point $y_0$.*
+*A minimizing sequence $y_n \in K$ (gray dashes) with $\|x_0 - y_n\| \to \operatorname{dist}(x_0, K)$, converging to the closest point $y_0$ (red). The dotted arc is the sphere of radius $\operatorname{dist}(x_0, K)$ about $x_0$: it touches $K$ only at $y_0$. The proof has to produce $y_0$ as a limit, which is where completeness and closedness enter.*
 
 > [!proof]+ Proof
 > If $x_0 \in K$, take $y_0 = x_0$; it is unique since $\|x_0 - y\| = 0$ forces $y = x_0$. So assume $x_0 \notin K$ and put $d = \operatorname{dist}(x_0, K)$.
@@ -115,6 +115,9 @@ Everything from here on uses completeness, and the results are the ones for whic
 > Convexity puts the midpoint $\tfrac{y_m + y_n}{2}$ in $K$, which is what makes the cross term in the parallelogram law large and forces $\|y_n - y_m\|$ small; this is the whole mechanism, and it is why the parallelogram law — hence an inner product, not merely a norm — is needed. Completeness of $H$ turns the Cauchy sequence into a limit; closedness of $K$ keeps that limit in $K$. The theorem fails without each: in $\ell^1$ (no inner product) closest points need not be unique; in an incomplete inner product space a minimizing sequence need not converge; for $K$ open the infimum need not be attained. The same midpoint argument gives uniqueness.
 
 ^rem-18-2
+
+![[m556-18-4.svg]]
+*Uniqueness needs the inner product. The same half-plane $K$ (blue) and the same point $x_0$, with the ball of radius $\operatorname{dist}(x_0, K)$ in two norms (dashed). The round Euclidean ball touches $K$ at a single point $y_0$ (red); the $\ell^1$ ball has a flat edge lying along the boundary of $K$, so every point of that segment (red) is a closest point. The midpoint of two of them is just as close, which the parallelogram law forbids in a Hilbert space.*
 
 > [!remark] Remark: Comparison with Lax
 > The statement and proof are Lax's Theorem 6.2, which assumes $K$ nonempty; the hypothesis is needed (for $K = \varnothing$ the infimum is $+\infty$) and was missing from an earlier version of these notes. Lax also proves the same result in any *uniformly convex* Banach space (§5.2, Theorem 8), where the parallelogram law is replaced by a quantitative form of the strict convexity of the unit ball; Hilbert spaces are the model case. Not covered in lecture.
@@ -181,7 +184,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 ^thm-18-4
 
 ![[m556-18-2.svg]]
-*$x_0 = y_0 + v$ with $y_0 \in Y$ the closest point and $v \perp Y$.*
+*The decomposition $x_0 = y_0 + v$: $y_0 \in Y$ is the closest point of $Y$ to $x_0$ (Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]]), and the error $v = x_0 - y_0$ (red arrow) is perpendicular to $Y$, i.e. parallel to the line $Y^\perp$.*
 
 > [!proof]+ Proof
 > **(1), existence.** Since $Y$ is a linear subspace it is convex, and it is closed by hypothesis. By Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]] there is a unique $y_0 \in Y$ with $\|x_0 - y_0\| = \operatorname{dist}(x_0, Y)$. Put $v = x_0 - y_0$, so $x_0 = y_0 + v$. It remains to show $v \in Y^\perp$, i.e. $(v, y) = 0$ for every $y \in Y$.
@@ -362,7 +365,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > - The parity operator in the quantum mechanics chapter: [[§23 The Completeness Relation#^ex-23-1|Ex. §23.1]]; the method: [[Functional Analysis Problem-Solving Techniques#^ex-t14|Technique 14]].
 
 ![[m556-18-3.svg]]
-*$e^x$ on $[-1,1]$ with its even part $\cosh x$ and odd part $\sinh x$.*
+*$e^x$ on $[-1,1]$ (black) with its even part $\cosh x$ (red) and odd part $\sinh x$ (blue); at every $x$ the red and blue values add up to the black one.*
 
 For $f(x) = e^x$ the decomposition is $e^x = \cosh x + \sinh x$: the even part is the orthogonal projection of $e^x$ onto $E$, and the odd part is orthogonal to every even function.
 

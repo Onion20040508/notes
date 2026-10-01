@@ -11,8 +11,8 @@
     \draw[thin] (apex) -- (bt);
     \draw[thin] (apex) -- (bb);
     \draw[dashed] (apex) -- (0,0);
-    \draw[very thick, figR] (bb) -- (bt);
-    \node[anchor=east, font=\footnotesize, figR] at (-0.2,-0.55) {$ty$, $|t| < \delta(y)$};
+    \draw[very thick, red!75!black] (bb) -- (bt);
+    \node[anchor=east, font=\footnotesize, red!75!black] at (-0.2,-0.55) {$ty$, $|t| < \delta(y)$};
     \fill (0,0) circle (1.2pt) node[left, font=\footnotesize] {$0$};
     \fill (apex) circle (1.5pt) node[right, font=\footnotesize] {$x/a$};
     % x on the median at fraction a from 0 (a = 0.6): x = 0.6 * apex
@@ -20,7 +20,7 @@
     % cross-section through x parallel to y, half-length (1-a)delta = 0.4*(0.25,0.85)
     \coordinate (ct) at ($(x)+(0.1,0.34)$);
     \coordinate (cb) at ($(x)+(-0.1,-0.34)$);
-    \draw[very thick, figR] (cb) -- (ct);
+    \draw[very thick, red!75!black] (cb) -- (ct);
     \fill (x) circle (1.5pt) node[anchor=north west, font=\footnotesize, inner sep=2pt] {$x$};
-    \node[anchor=south west, font=\footnotesize, figR, inner sep=1pt] at ($(ct)+(0.02,0.06)$) {$|t| < (1-a)\,\delta(y)$};
+    \node[anchor=south west, font=\footnotesize, red!75!black, inner sep=1pt] at ($(ct)+(0.02,0.06)$) {$|t| < (1-a)\,\delta(y)$};
 \end{tikzpicture}

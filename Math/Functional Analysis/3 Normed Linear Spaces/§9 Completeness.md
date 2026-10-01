@@ -195,6 +195,9 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 
 ^rem-9-3
 
+![[m556-9-2.svg]]
+*Equivalent Cauchy sequences in the open disk $M$ of [[§9 Completeness#^ex-9-1|Ex. §9.1]]: $x_n$ (blue dots) and $y_n$ (blue squares) both head for the boundary point $p \notin M$, and $d(x_n, y_n) \to 0$ (dotted), so they are one element $[\{x_n\}] = [\{y_n\}]$ of $\overline{M}$, which plays the role of $p$. The sequence $z_n$ (red), heading for $q$, is a different class; a point $x \in M$ is the class of its constant sequence.*
+
 > [!example] Example §9.1: Completions of Subsets of $\mathbb{R}^n$
 > For subsets of $\mathbb{R}^n$ with the usual metric, completion is closure:
 > - $M = (0, 1)$ with $d(x,y) = |x - y|$: $\overline{M} = [0, 1]$. The missing limits are the endpoints, each the limit of Cauchy sequences such as $(1/n)$ and $(1 - 1/n)$.
@@ -539,4 +542,4 @@ The construction by equivalence classes is abstract, but in practice the complet
 
 ^pf-9-6
 
-*Uses:* [[§9 Completeness#^thm-9-1|§9.1]], [[§9 Completeness#^prop-9-4|§9.4]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[Fundamental Theorem of Calculus|451 Fundamental Theorem of Calculus]], [[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27 (Weierstrass approximation)]]
+*Uses:* [[§9 Completeness#^thm-9-1|§9.1]], [[§9 Completeness#^prop-9-4|§9.4]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[Fundamental Theorem of Calculus|451 Fundamental Theorem of Calculus]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27 (Weierstrass approximation)]]

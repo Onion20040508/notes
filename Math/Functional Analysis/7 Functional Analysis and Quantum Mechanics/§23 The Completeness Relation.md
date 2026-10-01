@@ -96,6 +96,9 @@ As for functionals (Lemma [[§22 Bras, Kets, and the Riesz Map#^lem-22-1|§22.1]
 
 ^rem-23-1
 
+![[m556-23-1.svg]]
+*The coefficients $|(x, e_n)|^2$ against $n$, for a complete orthonormal set. Left: for a fixed unit vector $x$, $P_N$ keeps the blue bars (summing to $\|P_N x\|^2$) and misses the red tail, whose sum $\|x - P_N x\|^2$ tends to $0$ as the cut at $N$ (dashed) moves right — strong convergence. Right: for $x = e_{N+1}$ the whole unit mass sits just beyond the cut, so $\|(\mathbf{1} - P_N)e_{N+1}\| = 1$ for every $N$, and $P_N \not\to \mathbf{1}$ in norm.*
+
 > [!theorem] Corollary §23.4: Inserting a Complete Set of States
 > Let $\{e_n\}_{n \ge 1}$ be a complete orthonormal set in $H$. For all $x, y \in H$,
 >

@@ -69,6 +69,9 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 *Uses:* [[§21 Boundedness and Continuity#^def-21-2|Def. §21.2]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]]
 
+![[m556-21-2.svg]]
+*The operator norm of a linear map $T$ of the Euclidean plane: the unit circle of $X$ (blue, left) is mapped onto an ellipse (right). By (a), $\|T\|$ is the largest $\|Tu\|_Y$ over unit vectors $u$ — here the long semi-axis, attained at $u_0$ (red). By (b) and (c), the circle $\|y\|_Y = \|T\|$ (red, dashed) is the smallest circle about $0$ containing the image: every $Tu$ lies inside it, and a smaller $M$ would cut off $Tu_0$.*
+
 > [!remark]- Connections
 > - Finite-dimensional home: [[§27 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
 > - The same statements for the dual norm in the companion chapter: [[§22 Bras, Kets, and the Riesz Map#^lem-22-1|§22.1]].
@@ -115,7 +118,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 > - The case $Y = \mathbb{F}$, proved the same way: [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-19-1|§19.1]].
 
 ![[m556-21-1.svg]]
-*The sequence $y_n \to 0$ in $X$, and its images $Ty_n$ in $Y$, all outside the closed unit ball around $T0 = 0$.*
+*Left: the sequence $y_n = x_n / (n\|x_n\|_X)$ shrinks to $0$ in $X$. Right: its images $Ty_n$ all lie outside the closed unit ball of $Y$ (red, dashed) around $T0 = 0$.*
 
 The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to points that all stay outside the unit ball, so $Ty_n \not\to T0$.
 
@@ -133,7 +136,7 @@ The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to
 
 > [!remark]- Connections
 > - Finite-dimensional home (all linear maps, same operations): [[§7 Vector Space of Linear Maps#^ladr-3-5|LADR 3.5]].
-> - The dual space $X' = \mathcal{L}(X, \mathbb{F})$ of the companion chapter: [[§22 Bras, Kets, and the Riesz Map#^def-22-1|Def. §22.1]].
+> - The dual space $X^* = \mathcal{L}(X, \mathbb{F})$ of the companion chapter: [[§22 Bras, Kets, and the Riesz Map#^def-22-1|Def. §22.1]].
 
 > [!theorem] Theorem §21.3: $\mathcal{L}(X, Y)$ is a Normed Linear Space
 > Let $X$ and $Y$ be normed linear spaces.
@@ -166,7 +169,7 @@ The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to
 
 ^pf-21-3
 
-*Uses:* [[§9 Completeness#^pf-9-1|§9.1 (Part 1 of the proof)]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§21 Boundedness and Continuity#^def-21-3|Def. §21.3]], [[§21 Boundedness and Continuity#^prop-21-1|§21.1]]
+*Uses:* [[§9 Completeness#^pf-9-1|§9.1 (Part 1 of the proof)]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§21 Boundedness and Continuity#^def-21-1|Def. §21.1]], [[§21 Boundedness and Continuity#^def-21-2|Def. §21.2]], [[§21 Boundedness and Continuity#^def-21-3|Def. §21.3]], [[§21 Boundedness and Continuity#^prop-21-1|§21.1]]
 
 > [!proof]+ Proof of (2)
 > Next lecture.

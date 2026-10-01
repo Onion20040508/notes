@@ -142,6 +142,9 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 
 *Uses:* [[§14 The Function Spaces Lᵖ(Ω)#^def-14-1|Def. §14.1]], [[§8 Normed Linear Spaces#^def-8-7|Def. §8.7]], [[§9 Completeness#^thm-9-1|§9.1]], [[§9 Completeness#^lem-9-2|§9.2]]
 
+![[m556-14-3.svg]]
+*Why the step $f = \chi_{[1/2,1]}$ has no uniform approximation: a continuous $g$ with $\|f - g\|_{L^\infty} < \tfrac12$ would have to stay in the open gray band around $f$, below $\tfrac12$ on $[0, \tfrac12)$ and above $\tfrac12$ on $[\tfrac12, 1]$. Being continuous, $g$ must reach the level $\tfrac12$, and wherever it does it leaves the band (red). Compare the ramps of [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]], which do approach a step in $L^p$.*
+
 > [!remark]- Connections
 > - The same example in Measure Theory, where the $L^p$ approximation chain breaks at $p = \infty$: [[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-4|551 Remark §19]] (The Approximation Chain for $L^p$); a uniform limit of continuous functions is continuous, [[§24 Uniform Convergence#^thm-24-2|451 §24.2]].
 

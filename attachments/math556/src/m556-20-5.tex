@@ -1,0 +1,16 @@
+% Figure from MATH 556 notes, section 20. Compile with the notes preamble.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.75\textwidth, height=0.4\textwidth, clip=false,
+  xmin=0, xmax=1.02, ymin=0, ymax=0.72,
+  xtick=\empty, ytick={0.3333}, yticklabels={$\tfrac1k$}, xlabel={}]
+  \addplot[figR, dashed, thin] coordinates {(0,0.3333) (1.02,0.3333)};
+  \addplot[ycomb, black!40, thin, mark=none] coordinates {(0.05,0.08) (0.11,0.25) (0.17,0.05) (0.26,0.15) (0.30,0.6) (0.37,0.04) (0.43,0.2) (0.49,0.12) (0.55,0.39) (0.61,0.06) (0.66,0.22) (0.72,0.07) (0.78,0.45) (0.83,0.18) (0.88,0.1) (0.95,0.05)};
+  \addplot[only marks, mark=*, mark size=1.4pt, figB] coordinates {(0.05,0.08) (0.11,0.25) (0.17,0.05) (0.26,0.15) (0.37,0.04) (0.43,0.2) (0.49,0.12) (0.61,0.06) (0.66,0.22) (0.72,0.07) (0.83,0.18) (0.88,0.1) (0.95,0.05)};
+  \addplot[only marks, mark=*, mark size=1.7pt, figR] coordinates {(0.30,0.6) (0.55,0.39) (0.78,0.45)};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.82,0.62) {$\Lambda_k$: at most};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.82,0.555) {$k^2\|x\|^2$ dots};
+  \node[font=\small, anchor=south] at (axis cs:0,0.72) {$|(x, e_\alpha)|$};
+  \node[font=\small, anchor=west] at (axis cs:1.02,0) {$\alpha \in \Lambda$};
+  \node[font=\scriptsize, black!60, anchor=north] at (axis cs:0.5,-0.01) {$(x, e_\alpha) = 0$ for all other $\alpha$};
+\end{axis}
+\end{tikzpicture}

@@ -112,7 +112,7 @@ tags: [functional-analysis, math556]
 > Let $S \subset \mathbb{R}^2$ be a four-pointed star (the boundary of the region obtained from a square by pushing the midpoints of its edges inward). The convex hull of $S$ is the filled square with the star's four tips as vertices. Indeed, taking any two tips, the whole segment between them must be included; taking any point of $S$ and any point already included, the segment between them must be included; iterating fills the square, which is itself convex.
 >
 > ![[m556-2-1.svg]]
-> *Left: a convex set contains the segment between any two of its points. Right: the star $S$ and its convex hull, the square on its four tips.*
+> *Left: a convex set contains the segment (red) between any two of its points. Right: the star $S$ (solid) and its convex hull, the filled square on its four tips (shaded, dashed red edge) — the hull fills in the four notches, which no convex set containing the tips can avoid.*
 
 ^ex-2-1
 

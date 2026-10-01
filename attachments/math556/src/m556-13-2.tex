@@ -1,0 +1,30 @@
+% Figure from MATH 556 notes, section 13. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0]
+  \def\dx{0.62}
+  % rows: label, y
+  \foreach \lab/\y in {{a^{(1)}}/0, {a^{(2)}}/-0.45, {a^{(n)}}/-1.3, {a^{(m)}}/-2.15} {
+    \node[font=\scriptsize, anchor=east] at (0.45,\y) {$\lab$};
+    \foreach \i in {1,...,7} \fill[black!70] (\i*\dx,\y) circle (1.1pt);
+    \node[font=\scriptsize] at (8*\dx,\y) {$\cdots$};
+  }
+  \foreach \y in {-0.85,-1.7,-2.55} \node[font=\scriptsize] at (0.12,\y+0.05) {$\vdots$};
+  \node[font=\scriptsize, black!60, anchor=west] at (8.4*\dx,-1.3) {$n \ge N$ fixed};
+  \node[font=\scriptsize, black!60, anchor=west] at (8.4*\dx,-2.15) {$m \ge N$};
+  % candidate row
+  \draw[black!40, thin] (0.3,-2.85) -- (8.4*\dx,-2.85);
+  \node[font=\scriptsize, anchor=east] at (0.45,-3.25) {$a$};
+  \foreach \i in {1,...,7} \fill[figB] (\i*\dx,-3.25) circle (1.1pt);
+  \node[font=\scriptsize, figB] at (8*\dx,-3.25) {$\cdots$};
+  % column indices
+  \foreach \i/\t in {1/1, 2/2, 4/k} \node[font=\scriptsize, black!60] at (\i*\dx,0.4) {$\t$};
+  \node[font=\scriptsize, black!60, anchor=east] at (0.45,0.4) {$i =$};
+  % truncation box: columns 1..k, rows n and m
+  \draw[figR, thick, rounded corners=2pt] (0.5*\dx+0.05,-2.38) rectangle (4.5*\dx-0.05,-1.07);
+  \node[figR, font=\scriptsize, anchor=south, align=center] at (2.5*\dx,-1.07) {(1) truncate: $i \le k$};
+  % m -> infinity, column by column
+  \foreach \i in {1,...,4} \draw[figB, -stealth, thin] (\i*\dx,-2.42) -- (\i*\dx,-3.1);
+  \node[figB, font=\scriptsize, anchor=west] at (4.5*\dx+0.05,-2.62) {(2) $m \to \infty$};
+  % k -> infinity
+  \draw[figR, -stealth, thick, dashed] (4.5*\dx+0.05,-1.82) -- (7.6*\dx,-1.82);
+  \node[figR, font=\scriptsize, anchor=south] at (6.05*\dx,-1.78) {(3) $k \to \infty$};
+\end{tikzpicture}

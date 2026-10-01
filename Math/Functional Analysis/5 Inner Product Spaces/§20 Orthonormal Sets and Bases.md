@@ -50,13 +50,13 @@ tags: [functional-analysis, math556]
 ^lem-20-1
 
 > [!proof]+ Proof
-> (a) By the expansion in Step 1 of the proof of Cauchy–Schwarz ([[§17 Cauchy–Schwarz and the Induced Norm#^pf-17-1|§17.1]]) with $t = 1$, $\|u + v\|^2 = \|u\|^2 + 2\operatorname{Re}(v, u) + \|v\|^2$, and $(v, u) = 0$.
+> (a) By [[§17 Cauchy–Schwarz and the Induced Norm#^pf-17-1|(5.1)]] with $t = 1$, $\|u + v\|^2 = \|u\|^2 + 2\operatorname{Re}(v, u) + \|v\|^2$, and $(v, u) = 0$.
 >
 > (b) Induction on $k$; the case $k = 1$ is $\|c_1 e_1\|^2 = |c_1|^2$. For the step, $u = \sum_{j < k} c_j e_j$ and $v = c_k e_k$ are orthogonal, since $(u, v) = \sum_{j<k} c_j \bar{c}_k (e_j, e_k) = 0$; so by (a) and the induction hypothesis, $\|u + v\|^2 = \sum_{j<k} |c_j|^2 + |c_k|^2$.
 
 ^pf-20-1
 
-*Uses:* [[§17 Cauchy–Schwarz and the Induced Norm#^pf-17-1|§17.1 (Step 1)]], [[§20 Orthonormal Sets and Bases#^def-20-1|Def. §20.1]]
+*Uses:* [[§17 Cauchy–Schwarz and the Induced Norm#^pf-17-1|§17.1 (5.1)]], [[§20 Orthonormal Sets and Bases#^def-20-1|Def. §20.1]]
 
 > [!remark]- Connections
 > - Finite-dimensional home: (a) is [[§19 Inner Products and Norms#^ladr-6-12|LADR 6.12]], (b) is [[§20 Orthonormal Bases#^ladr-6-24|LADR 6.24]].
@@ -87,7 +87,7 @@ tags: [functional-analysis, math556]
 > - Finite-dimensional home: [[§20 Orthonormal Bases#^ladr-6-26|LADR 6.26]] (Bessel's inequality for an orthonormal list).
 
 ![[m556-20-1.svg]]
-*$x$ split into its component $\sum_j (x, e_j) e_j$ in $\operatorname{span}\{e_1, \ldots, e_k\}$ and the remainder $y$ perpendicular to it.*
+*$x$ split into its component $\sum_j (x, e_j) e_j$ (red) in $\operatorname{span}\{e_1, \ldots, e_k\}$ and the remainder $y$ (blue) perpendicular to it. Pythagoras across the right angle is the identity $\|x\|^2 = \|y\|^2 + \sum_j |(x, e_j)|^2$; dropping the blue leg is Bessel.*
 
 The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\operatorname{span}\{e_1, \ldots, e_k\}$, and $y$ is the perpendicular remainder. Pythagoras ([[§20 Orthonormal Sets and Bases#^lem-20-1|§20.1]]) applied to $k + 1$ orthogonal pieces gives the identity; dropping $\|y\|^2$ gives the inequality.
 
@@ -147,6 +147,9 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 ^pf-20-4
 
 *Uses:* [[§20 Orthonormal Sets and Bases#^lem-20-2|§20.2]], [[Countable Union of Countable Sets is Countable|551 §3.1]]
+
+![[m556-20-5.svg]]
+*The coefficients $|(x, e_\alpha)|$ over an index set $\Lambda$ that may be uncountable. The finite Bessel inequality caps how many can reach any level: at most $k^2\|x\|^2$ of them lie on or above $\tfrac1k$ (red, the set $\Lambda_k$). Every nonzero coefficient clears some level $\tfrac1k$, so the support $S_x = \bigcup_k \Lambda_k$ is a countable union of finite sets, however large $\Lambda$ is.*
 
 > [!remark] Remark
 > A student read this as saying that every vector “lives in a countably-infinite-dimensional part” of $H$; Wu separated the two concepts. The proposition is about one fixed $x$: its coefficients vanish outside a countable set $S_x$. Different $x$ can have different, even disjoint, supports, and $\Lambda$ itself can be uncountable. Nothing about bases or dimension is being asserted yet. Another question: the norm $\|x\|$ is a real number, finite by definition, so the bound $k^2\|x\|^2$ is finite.
@@ -461,7 +464,7 @@ Both examples have *countable* orthonormal bases. Wu announced for next lecture 
 *Uses:* [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^def-13-1|Def. §13.1]], [[§20 Orthonormal Sets and Bases#^def-20-5|Def. §20.5]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§3 Countability of Rationals and Unions#^cor-3-2|551 §3.2]]
 
 ![[m556-20-3.svg]]
-*Approximating $a \in \ell^p$ by an element of $D$: the coordinates beyond $J$ are set to $0$, the first $J$ replaced by nearby rationals.*
+*Approximating $a \in \ell^p$ by an element of $D$: the coordinates beyond $J$ (blue) are set to $0$, and the first $J$ (gray) are replaced by nearby rationals (red dots).*
 
 The two moves of the proof: cut off the tail, which is small because the series converges, and replace the finitely many remaining coordinates by nearby rationals. Both need $p < \infty$: the tail of a convergent series is small, but a bounded sequence need not have a small tail in the supremum norm.
 
@@ -616,7 +619,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > **Step 1: a linearly independent subsequence.** Discard elements that depend linearly on earlier ones. Precisely: let $n_1$ be the first index with $y_{n_1} \neq 0$, and put $y_1' = y_{n_1}$. Having chosen $n_1 < \cdots < n_k$, let $n_{k+1}$ be the first index $n > n_k$ with $y_n \notin \operatorname{span}\{y_1', \ldots, y_k'\}$, and put $y_{k+1}' = y_{n_{k+1}}$; if there is no such index, stop. Wu: “we just take the first linearly independent one, name it $y_2'$, then continue.” The result $D' = \{y_1', y_2', \ldots\}$ (finite or infinite) is linearly independent by construction, and every element of $D$ is a linear combination of elements of $D'$: an element $y_j$ that was discarded, with $n_k < j < n_{k+1}$ (or $j > n_k$ if the process stopped at $k$), lies in $\operatorname{span}\{y_1', \ldots, y_k'\}$, and $y_j = 0$ if $j < n_1$. So
 >
 > $$
-> \text{for every } y_j \in D \text{ there is } k \text{ with } y_j \in \operatorname{span}\{y_1', \ldots, y_k'\}. \tag{$*$}
+> \text{for every } y_j \in D \text{ there is } k \text{ with } y_j \in \operatorname{span}\{y_1', \ldots, y_k'\}. \tag{5.4}
 > $$
 >
 > **Step 2: Gram–Schmidt.** Lemma [[§20 Orthonormal Sets and Bases#^lem-20-18|§20.18]] gives an orthonormal sequence $\{e_1, e_2, \ldots\}$ with
@@ -627,7 +630,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 >
 > It is countable; it remains to show it is complete, hence (Theorem [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]]) an orthonormal basis.
 >
-> **Step 3: completeness.** Let $x \in H$ with $(x, e_j) = 0$ for all $j$; we show $x = 0$. Since $D$ is dense in $H$, there is a sequence $y_{n_k} \in D$ with $\lim_{k \to \infty} y_{n_k} = x$. By $(*)$ and Step 2, each $y_{n_k}$ lies in $\operatorname{span}\{e_1, \ldots, e_{j_k}\}$ for some $j_k$, say $y_{n_k} = \sum_{j=1}^{j_k} a_j^{(k)} e_j$. Then
+> **Step 3: completeness.** Let $x \in H$ with $(x, e_j) = 0$ for all $j$; we show $x = 0$. Since $D$ is dense in $H$, there is a sequence $y_{n_k} \in D$ with $\lim_{k \to \infty} y_{n_k} = x$. By (5.4) and Step 2, each $y_{n_k}$ lies in $\operatorname{span}\{e_1, \ldots, e_{j_k}\}$ for some $j_k$, say $y_{n_k} = \sum_{j=1}^{j_k} a_j^{(k)} e_j$. Then
 >
 > $$
 > (x, y_{n_k}) = \sum_{j=1}^{j_k} \overline{a_j^{(k)}}\, (x, e_j) = 0 \qquad \text{for all } k,
@@ -681,6 +684,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > Every separable Hilbert space $H$ over $\mathbb{F}$ is isomorphic either to $\mathbb{F}^n$ for some $n \in \{0, 1, 2, \ldots\}$, or to $\ell^2$.
 >
 > *Source: HW5*
+>
 > *Lax: §6.4, Exercise 10*
 
 ^thm-20-19

@@ -24,4 +24,7 @@ tags: [functional-analysis, hub]
 - [[§17 Cauchy–Schwarz and the Induced Norm#^cor-17-5|Corollary §17.5: Only p = 2 Gives an Inner Product]]
 
 ## Connections
-- TODO
+- **How.** Define (x, y) by polarization. The parallelogram law gives a midpoint identity, hence additivity, and additivity gives ℚ-homogeneity by algebra. Continuity of the norm and density of ℚ ([[§4 The Completeness Axiom#^thm-4-7|451 §4.7]]) extend this to ℝ ([[Functional Analysis Problem-Solving Techniques#^rem-t10|Technique 10]]). In the complex case the real form R is an inner product on the underlying real space, and (x, y) = R(x, y) + iR(x, iy). This is the same reduction as in the [[Complex Hahn–Banach Theorem]].
+- **Why continuity.** Additivity alone does not give linearity, since additive non-linear functions ℝ → ℝ exist (built from a Hamel basis). Real homogeneity is the only analytic step ([[§17 Cauchy–Schwarz and the Induced Norm#^rem-17-3|Remark §17]]).
+- **Used for.** Only p = 2 gives an inner-product norm on 𝔽ⁿ (n ≥ 2), ℓᵖ and Lᵖ ([[§17 Cauchy–Schwarz and the Induced Norm#^cor-17-5|§17.5]]). Unit vectors with disjoint supports violate the parallelogram law unless p = 2. So [[Closest Point in a Closed Convex Set]], which runs on the parallelogram law, is a Hilbert-space theorem.
+- **Finite dimensions.** LADR's parallelogram equality ([[§19 Inner Products and Norms#^ladr-6-21|LADR 6.21]]) has a remark naming Jordan–von Neumann. The operator norm on ℒ(V, W) fails the law and so comes from no inner product (remark after [[§27 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]]).

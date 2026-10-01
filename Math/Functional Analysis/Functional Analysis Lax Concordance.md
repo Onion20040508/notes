@@ -149,7 +149,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §6.3, Lemma 5(i) | Lemma [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-4\|§19.4]] | The Kernel Has Codimension One |
 | §6.4, closed linear span | Definition [[§8 Normed Linear Spaces#^def-8-8\|§8.8]] | Closed Linear Span |
 | §6.4, definition of orthonormal set | Definition [[§20 Orthonormal Sets and Bases#^def-20-1\|§20.1]] | Orthogonal and Orthonormal Sets |
-| §6.4, definition of orthonormal base (via closed linear span; see Proposition [[§20 Orthonormal Sets and Bases#^prop-20-9|§20.9]]) | Definition [[§20 Orthonormal Sets and Bases#^def-20-4\|§20.4]] | Orthonormal Basis |
+| §6.4, definition of orthonormal base (via closed linear span; see Proposition [[§20 Orthonormal Sets and Bases#^prop-20-9\|§20.9]]) | Definition [[§20 Orthonormal Sets and Bases#^def-20-4\|§20.4]] | Orthonormal Basis |
 | §6.4, Thm $9'$ | Theorem [[§20 Orthonormal Sets and Bases#^thm-20-17\|§20.17]] | Separable Hilbert Spaces and Countable Bases |
 | §6.4, Thm $9'$ | Lemma [[§20 Orthonormal Sets and Bases#^lem-20-18\|§20.18]] | Gram–Schmidt |
 | §6.4, Thm 7 | Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-6\|§18.6]] | The Double Complement |

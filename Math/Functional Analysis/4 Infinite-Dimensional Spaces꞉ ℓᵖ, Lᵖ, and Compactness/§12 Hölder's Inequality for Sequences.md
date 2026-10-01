@@ -29,7 +29,7 @@ tags: [functional-analysis, math556]
 > For $1 \le p \le \infty$, the **conjugate exponent** $q$ is defined by
 >
 > $$
-> \frac{1}{p} + \frac{1}{q} = 1, \qquad \text{i.e.\ } \frac{1}{q} = 1 - \frac{1}{p},
+> \frac{1}{p} + \frac{1}{q} = 1, \qquad \text{i.e. } \frac{1}{q} = 1 - \frac{1}{p},
 > $$
 >
 > with the conventions $1/\infty = 0$; so $q = \infty$ when $p = 1$, $q = 1$ when $p = \infty$, and $q = 2$ when $p = 2$. As $p$ ranges over $[1, \infty]$ so does $q$.

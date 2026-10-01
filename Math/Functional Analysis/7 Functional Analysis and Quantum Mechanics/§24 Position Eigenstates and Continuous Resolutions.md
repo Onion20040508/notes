@@ -23,10 +23,10 @@ Physics also writes $\int |x\rangle\langle x|\,dx = \mathbf{1}$, with an uncount
 
 ^pf-24-1
 
-*Uses:* [[§20 Orthonormal Sets and Bases#^def-20-5|Def. §20.5]], [[§20 Orthonormal Sets and Bases#^def-20-1|Def. §20.1]], [[§20 Orthonormal Sets and Bases#^lem-20-1|§20.1]], [[§8 Normed Linear Spaces#^def-8-7|Def. §8.7]]
+*Uses:* [[§20 Orthonormal Sets and Bases#^def-20-5|Def. §20.5]], [[§20 Orthonormal Sets and Bases#^def-20-1|Def. §20.1]], [[§20 Orthonormal Sets and Bases#^lem-20-1|§20.1]], [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-2|§17.2]], [[§8 Normed Linear Spaces#^def-8-7|Def. §8.7]]
 
 ![[m556-24-1.svg]]
-*Two orthonormal vectors $e_\alpha$, $e_\beta$ at distance $\sqrt{2}$, the disjoint balls of radius $\sqrt{2}/2$ around them, and a point $d_\alpha$, $d_\beta$ of the dense set in each.*
+*Two orthonormal vectors $e_\alpha$, $e_\beta$ at distance $\sqrt{2}$ (red), the disjoint balls of radius $\sqrt{2}/2$ around them (dashed), and a point $d_\alpha$, $d_\beta$ of the dense set (blue) in each.*
 
 > [!remark]- Connections
 > - The countable-basis half of the separability theorem of Chapter 5: [[§20 Orthonormal Sets and Bases#^thm-20-17|§20.17]].
@@ -81,6 +81,9 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 
 *Uses:* [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|§17.1]]
 
+![[m556-24-3.svg]]
+*The tent functions $\varphi_1, \varphi_2, \varphi_4$ (blue) of the proof. All have $\varphi_n(x_0) = 1$ (red), but $\varphi_n$ lives on $[x_0 - \frac1n, x_0 + \frac1n]$ with $0 \le \varphi_n \le 1$, so $\|\varphi_n\|_2^2$ (for $n = 4$ the shaded area under $\varphi_4^2$) is at most the area $\frac2n$ of the dashed box. A bound $|\varphi(x_0)| \le C\|\varphi\|_2$ would force $\varphi_n(x_0) \to 0$.*
+
 > [!remark] Remark: What $|x_0\rangle$ Would Have to Be
 > In Dirac notation a position eigenstate is characterized by $\langle x_0 | \varphi \rangle = \varphi(x_0)$, i.e. $(\varphi, |x_0\rangle) = \varphi(x_0)$. Proposition [[§24 Position Eigenstates and Continuous Resolutions#^prop-24-4|§24.4]] says no element of $L^2$ does this: the functional $\varphi \mapsto \varphi(x_0)$ is unbounded in the $L^2$ norm, so by the [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|Riesz theorem]] it is not a bra, and $|x_0\rangle$ is not a ket. (Point evaluation is not even well defined on $L^2$, whose elements are functions up to sets of measure zero.) The “wavefunction” of $|x_0\rangle$ would be $\delta(x - x_0)$, and the physicists' normalization $\langle x | x' \rangle = \delta(x - x')$ in place of $1$ is the symptom. Proposition [[§24 Position Eigenstates and Continuous Resolutions#^prop-24-3|§24.3]] says the same thing from the operator side: multiplication by $x$ has no eigenvalues at all.
 
@@ -113,7 +116,7 @@ The object that does exist is the family of projections “$\int_B |x\rangle\lan
 *Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-17|551 §19.17]], [[§18 Projection and Orthogonal Decomposition#^def-18-1|Def. §18.1]], [[§18 Projection and Orthogonal Decomposition#^thm-18-4|§18.4]], [[§23 The Completeness Relation#^def-23-2|Def. §23.2]], [[§23 The Completeness Relation#^def-23-1|Def. §23.1]], [[Dominated Convergence Theorem]]
 
 ![[m556-24-2.svg]]
-*The Born rule, (d): $(E(B)\psi, \psi)$ is the area under $|\psi(x)|^2$ over the region $B$.*
+*The Born rule, (d): $(E(B)\psi, \psi) = \int_B |\psi(x)|^2\,dx$ is the shaded red area under $|\psi(x)|^2$ over the region $B$ — the probability of finding the particle in $B$.*
 
 > [!remark] Remark: Reading $\int |x\rangle\langle x|\,dx = \mathbf{1}$
 > The proposition is the rigorous form of the continuous completeness relation. The symbol $\int_B |x\rangle\langle x|\,dx$ means $E(B)$, a genuine bounded operator even though no $|x\rangle$ is a vector; (b) is “$\int_{\mathbb{R}^n} |x\rangle\langle x|\,dx = \mathbf{1}$”; (c) replaces “summing over basis states” by countable additivity over disjoint regions, again in the strong sense; and (d) is the Born rule — the probability of finding the particle in $B$. A map $B \mapsto E(B)$ with these properties is a *projection-valued measure*. The spectral theorem, later in the course, will attach one to every self-adjoint operator: for an operator with a basis of eigenvectors it is $E(B) = \sum_{\lambda_n \in B} |e_n\rangle\langle e_n|$, for position it is the one above, and in general it mixes both. The kets $|x\rangle$ themselves can be given a rigorous meaning as elements of a larger space of distributions, via a rigged Hilbert space $\mathcal{S} \subset L^2 \subset \mathcal{S}'$; that construction is not needed for anything above.

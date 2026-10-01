@@ -2,21 +2,21 @@
 \begin{tikzpicture}[scale=0.85, >=stealth]
     % disk
     \begin{scope}
-        \filldraw[thick, dashed, fill=figB!12] (0,0) circle (1);
+        \draw[thick, dashed] (0,0) circle (1);
         \draw[->] (-1.6,0) -- (1.6,0);
         \draw[->] (0,-1.6) -- (0,1.6);
         \node[font=\footnotesize] at (0,-2) {$p_1(x) < 1$};
     \end{scope}
     % square
     \begin{scope}[xshift=4.2cm]
-        \filldraw[thick, dashed, fill=figB!12] (-1,-1) rectangle (1,1);
+        \draw[thick, dashed] (-1,-1) rectangle (1,1);
         \draw[->] (-1.6,0) -- (1.6,0);
         \draw[->] (0,-1.6) -- (0,1.6);
         \node[font=\footnotesize] at (0,-2) {$p_2(x) < 1$};
     \end{scope}
     % diamond
     \begin{scope}[xshift=8.4cm]
-        \filldraw[thick, dashed, fill=figB!12] (1,0) -- (0,1) -- (-1,0) -- (0,-1) -- cycle;
+        \draw[thick, dashed] (1,0) -- (0,1) -- (-1,0) -- (0,-1) -- cycle;
         \draw[->] (-1.6,0) -- (1.6,0);
         \draw[->] (0,-1.6) -- (0,1.6);
         \node[font=\footnotesize] at (0,-2) {$p_3(x) < 1$};

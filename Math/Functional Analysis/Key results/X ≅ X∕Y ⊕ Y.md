@@ -23,4 +23,7 @@ tags: [functional-analysis, hub]
 - [[§1 Linear Spaces#^cor-1-13|Corollary §1.13: Orthogonal Complement (inner products; later)]]
 
 ## Connections
-- TODO
+- **How.** Fix a complement W ([[Every Subspace Has a Complement]]). Decompose x = w + y uniquely ([[§1 Linear Spaces#^lem-1-10|§1.10]], [[Functional Analysis Problem-Solving Techniques#^rem-t2|Technique 2]]) and send x ↦ ([w], y). Linearity follows from uniqueness of the decomposition ([[Functional Analysis Problem-Solving Techniques#^rem-t4|Technique 4]]). Surjectivity replaces a representative by its W-component ([[Functional Analysis Problem-Solving Techniques#^rem-t1|Technique 1]]).
+- **Not canonical.** M depends on the choice of W. X/Y is canonical and isomorphic to every complement ([[§1 Linear Spaces#^cor-1-12|§1.12]]), but equal to none ([[§1 Linear Spaces#^rem-1-9|Remark §1]]).
+- **Finite dimensions.** It gives dim V/U = dim V − dim U ([[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105]]), with a complement obtained by extending a basis ([[§5 Bases#^ladr-2-33|LADR 2.33]]).
+- **With more structure.** If X = Y + Y⊥ for an inner product, then Y⊥ is a complement and X/Y ≅ Y⊥ ([[§1 Linear Spaces#^cor-1-13|§1.13]]). The [[Orthogonal Decomposition Theorem]] supplies this for closed Y in a Hilbert space, and c₀₀ ⊂ ℓ² shows that it can fail otherwise ([[§1 Linear Spaces#^rem-1-10|Remark §1]]). With a norm, X/Y is normed when Y is closed ([[Quotient Norm]]).

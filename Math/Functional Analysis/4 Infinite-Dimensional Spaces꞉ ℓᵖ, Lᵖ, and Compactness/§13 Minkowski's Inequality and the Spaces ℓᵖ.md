@@ -246,7 +246,7 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 
 ^pf-13-5
 
-*Uses:* [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§9 Completeness#^def-9-2|Def. §9.2]], [[§10 New Normed Spaces from Old#^cor-10-4|§10.4]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^prop-13-3|§13.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]]
+*Uses:* [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§9 Completeness#^def-9-2|Def. §9.2]], [[§10 New Normed Spaces from Old#^cor-10-4|§10.4]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^prop-13-3|§13.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 §10.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]]
 
 > [!remark]- Connections
 > - The function-space counterpart: [[Riesz–Fischer Theorem|551 §19.18]] (Riesz–Fischer), cited in this course as [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-3|§14.3]].
@@ -256,6 +256,9 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 > The delicate point is Step 2, and it produced the longest discussion in lecture. Two limits are involved: $m \to \infty$ (to replace $a^{(m)}$ by the candidate $a$) and $k \to \infty$ (to pass from partial sums to the full series). A student proposed handling the infinite sum directly as a limit of partial sums and choosing, for each $k$, an $n$ large enough. That does not work: the $n$ obtained depends on $k$, and as $k \to \infty$ it may go to infinity with it, so nothing is proved for the full series with a single $n$. The proof avoids this by using the Cauchy condition in its full form (4.3) — with the *infinite* sum and $N$ independent of everything else — and only then truncating to a finite sum, where $m \to \infty$ can be taken termwise, and finally sending $k \to \infty$ through a monotone bounded sequence. The order matters: truncate, then $m \to \infty$, then $k \to \infty$, with $n \ge N$ fixed throughout. Interchanging limits requires justification; when two are present, arrange for one of them to be a finite sum.
 
 ^rem-13-4
+
+![[m556-13-2.svg]]
+*The order of limits in Step 2. Each row is one term $a^{(n)}$ of the Cauchy sequence, each column one coordinate $i$. (1) Compare rows $n$ and $m$ on the first $k$ coordinates only (red box), a finite sum $< \varepsilon^p$; (2) let $m \to \infty$ column by column inside the box, legitimate because there are only $k$ columns; (3) only then let $k \to \infty$, which is harmless because the bound $\varepsilon^p$ does not depend on $k$. Doing (3) before (2) would mean exchanging $m \to \infty$ with an infinite sum.*
 
 > [!remark] Remark: The Coordinate Formulation
 > Step 1 can be shortened by working with one coordinate at a time. Fix a coordinate $i$. A single term of a series of non-negative numbers is at most the sum, so
