@@ -16,7 +16,7 @@
 \node[violet!75!black,font=\scriptsize,anchor=west] at (1.45,-0.419) {$f = f(p)$};
 \node[font=\footnotesize] at (0.85,-1.35) {$M$ near $p$: level curves of $f$};
 \end{scope}
-\begin{scope}[xshift=6.5cm,scale=1.55]
+\begin{scope}[xshift=7cm,scale=1.55]
 \begin{scope}\clip (-1.2,-1.05) rectangle (1.6,1.55);
 \draw[teal!40] (-1.300,-0.416) -- (1.700,-1.856);
 \draw[teal!40] (-1.300,0.104) -- (1.700,-1.336);
@@ -27,10 +27,10 @@
 \end{scope}
 \draw[gray!55] (-1.2,-1.05) rectangle (1.6,1.55);
 \fill (0,0) circle (1.3pt);
-\draw[red!75!black,->,thick] (0,0) -- (0.500,0.800) node[anchor=south east,font=\scriptsize]{$v$};
+\draw[red!75!black,->,thick] (0,0) -- (0.500,0.800) node[anchor=south west,font=\scriptsize]{$v$};
 \node[teal!65!black,font=\scriptsize,anchor=south west,inner sep=1pt] at (1.050,-0.484) {$df_p = 0$};
 \node[teal!65!black,font=\scriptsize,anchor=south west,inner sep=1pt] at (1.050,0.556) {$df_p = 2\Delta$};
 \node[font=\footnotesize] at (0.2,-1.35) {$T_pM$: level lines of $df_p$};
 \end{scope}
-\draw[->,gray!70] (3.7,0.9) -- node[above,font=\scriptsize]{linearize} (4.55,0.9);
+\draw[->,gray!70] (3.7,0.9) -- node[above,font=\scriptsize]{linearize} (4.95,0.9);
 \end{tikzpicture}

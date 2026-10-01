@@ -16,7 +16,8 @@
 \draw[blue!65!black,very thick] (4:1.25) arc (4:176:1.25);
 \foreach \a in {20,60,120,160} { \draw[dashed,gray!55] (\a:1.25) -- ({1.25*cos(\a)},-0.55); }
 \draw[blue!65!black,thick] (-1.25,-0.55) -- (1.25,-0.55);
+\foreach \x in {-1.25,1.25} { \draw[blue!65!black,fill=white] (\x,-0.55) circle (1.5pt); }
 \node[font=\footnotesize,anchor=north] at (0,-0.68) {$\varphi_2(U_2)=(-1,1)$};
-\node[blue!65!black,font=\footnotesize] at (0,1.45) {$U_2$};
+\node[blue!65!black,font=\footnotesize] at (55:1.62) {$U_2$};
 \end{scope}
 \end{tikzpicture}

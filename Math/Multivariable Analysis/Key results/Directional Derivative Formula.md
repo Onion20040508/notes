@@ -18,6 +18,9 @@ tags: [multivariable-analysis, hub]
 - [[§22 The Algebra of Differential Forms#^prop-22-2|Proposition §22.2: d on 0-Forms Gives the Gradient]]
 - [[§22 The Algebra of Differential Forms#^prop-22-6|Proposition §22.6: Gradient = Differential = 1-Form]]
 
+## Used in (Differentiable Manifolds)
+- [[§15 Submanifolds#^prop-15-8|Proposition §15.8: The Old and New Versions Agree]]
+
 ## Connections
 - **Proof.** Substitute h = ρ cos α and k = ρ sin α into the definition of [[§6 Differentiability#^def-6-1|differentiability]] and let ρ → 0. The unit-vector form, with the total derivative L = Df, is [[§6 Differentiability#^thm-6-1|Theorem §6.1]].
 - **Linear algebra.** D_u f = ∇f · u is the linear functional Df evaluated at u, and ∇f is the vector that represents it ([[Riesz representation theorem]]). By the equality case of the [[Cauchy–Schwarz inequality]], D_u f is largest when u points along ∇f, with maximum |∇f| ([[§7 Directional Derivatives#^rem-7-3|Gradient and Maximum Rate of Change]]).

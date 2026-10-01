@@ -20,6 +20,12 @@ tags: [topology, hub]
 - [[§24 Covering Spaces#^lem-24-6|Lemma §24.6: Path Lifting Lemma]]
 - [[§24 Covering Spaces#^lem-24-7|Lemma §24.7: Homotopy Lifting Lemma]]
 
+## Used in (Differentiable Manifolds)
+- [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7: Connectedness and Components]]
+- [[§8 Differentiable Structures#^prop-8-4|Proposition §8.4: Chart Domains on the Circle]]
+- [[§16 Fibrations#^ex-16-2|Example §16.2: A Submersion That Is Not a Fibration]]
+- [[§18 Immersions#^ex-18-1|Example §18.1: An Immersion That Crosses Itself]]
+
 ## Connections
 - **Generalizes.** It is the engine of the [[§14 Connected Subspaces of ℝ#^thm-14-3|Intermediate Value Theorem]] (§14.3), whose MATH 451 case on [a, b] is [[Intermediate Value Theorem]]. Without connectedness IVT fails, e.g. for a map on [0, 1] ∪ [2, 3] taking the values 0 and 2 ([[§14 Connected Subspaces of ℝ#^rem-14-2|IVT: The Power of Connectedness]]).
 - **Paths.** Applied to a path on [a, b], it gives [[§14 Connected Subspaces of ℝ#^thm-14-4|Path-Connected Implies Connected]] (§14.4). The converse fails for the [[§14 Connected Subspaces of ℝ#^ex-14-7|Topologist's Sine Curve]]: S is connected as a continuous image of (0, 1], hence so is its closure S̄, which is not path-connected.

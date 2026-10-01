@@ -613,6 +613,9 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^def-8-14
 
+![[m591-8-8.svg]]
+*The top row is the map one cares about, between spaces where “smooth” has no meaning; the bottom row is its coordinate representation, between open subsets of Euclidean spaces where it does. The two vertical arrows are charts, so they are homeomorphisms, and the square commutes by construction. Smoothness of $F$ is defined by smoothness of the bottom arrow, and [[§8 Differentiable Structures#^prop-8-13|§8.13]] says this does not depend on which charts are used to build it.*
+
 > [!remark]- Connections
 > - The Euclidean notion it generalizes: [[§8 Differentiable Structures#^def-8-3|Def. §8.3]]; local diffeomorphisms and the bijective case: [[§14 Local Diffeomorphisms and Submersions#^def-14-1|Def. §14.1]], [[§14 Local Diffeomorphisms and Submersions#^cor-14-3|§14.3]].
 > - The topological counterpart, homeomorphism: [[§9 Continuous Functions#^def-9-2|590 §9.2]].
@@ -731,9 +734,6 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 > Uribe: “the composition of smooth maps is smooth is something I would trust ChatGPT to prove without looking at the answer.” The only content is Step 2 — the middle charts produced by the two hypotheses need not agree, and one must shrink the domain using continuity of $F$ and then pay one transition function to switch. “Just compose the two” skips exactly this.
 
 ^rem-8-17
-
-![[m591-8-8.svg]]
-*The top row is the map one cares about, between spaces where “smooth” has no meaning; the bottom row is its coordinate representation, between open subsets of Euclidean spaces where it does. The two vertical arrows are charts, so they are homeomorphisms, and the square commutes by construction. Smoothness of $F$ is defined by smoothness of the bottom arrow, and [[§8 Differentiable Structures#^prop-8-13|§8.13]] says this does not depend on which charts are used to build it.*
 
 > [!example] Example §8.5: Two Smooth Structures on the Real Line
 > Take $M = \mathbb{R}$ as a topological space in both cases, and put

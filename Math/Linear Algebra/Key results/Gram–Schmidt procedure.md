@@ -22,6 +22,9 @@ tags: [linear-algebra, hub]
 ## Used in (Group Theory)
 - [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|Proposition §30.2: O_3(ℝ) Acting on ℝ³]]
 
+## Used in (Differentiable Manifolds)
+- [[§7 Homogeneous Spaces#^prop-7-11|Proposition §7.11: mathrmO(n) Acts Transitively on mathrmGr_k(ℝⁿ)]]
+
 ## Connections
 - Existence of orthonormal bases [[6B Orthonormal Bases#^ladr-6-35|6.35]]; triangular form [[6B Orthonormal Bases#^ladr-6-37|6.37]]; QR factorization is Gram–Schmidt in matrix form ([[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|QR factorization]]).
 - Applied to $1,x,x^2,\dots$ with $\int_{-1}^1pq$ it produces the Legendre polynomials ([[6B Orthonormal Bases#^ladr-6-34|6.34]]), the angular part of multipole expansions.

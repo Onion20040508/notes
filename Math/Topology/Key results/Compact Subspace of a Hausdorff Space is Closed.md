@@ -26,6 +26,12 @@ tags: [topology, hub]
 - [[§26 Deformation Retracts and Homotopy Type#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
 - [[§27 The Fundamental Group of Sⁿ#^ex-27-1|Example §27.1: Wedge of Two Spheres is Simply Connected]]
 
+## Used in (Differentiable Manifolds)
+- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
+- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-29|Proposition §3.29: mathbbCP^n is Hausdorff and Second Countable]]
+- [[§6 Group Actions and Orbit Spaces#^cor-6-4|Corollary §6.4: Compact Group and Compact Hausdorff Space]]
+- [[§8 Differentiable Structures#^prop-8-3|Proposition §8.3: The Circle Needs More Than One Chart]]
+
 ## Connections
 - **Technique.** First separate x from each point of Y, then pass to a finite subcover. The same local-then-global argument, applied twice, proves [[§20 Normal Spaces#^thm-20-2|Every Compact Hausdorff Space is Normal]] ([[§20 Normal Spaces#^rem-20-4|The Two-Stage Pattern]]).
 - **Partner result.** With [[Closed Subspace of a Compact Space is Compact]] it yields [[Bijection from Compact to Hausdorff is a Homeomorphism]]. Since metric spaces are Hausdorff, it also gives the “compact ⇒ closed” half of [[Heine–Borel Theorem]].

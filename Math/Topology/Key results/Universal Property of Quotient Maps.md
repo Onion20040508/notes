@@ -20,6 +20,11 @@ tags: [topology, hub]
 - [[§26 Deformation Retracts and Homotopy Type#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
 - [[§26 Deformation Retracts and Homotopy Type#^ex-26-9|Example §26.9: T² ∖ pt Deformation Retracts onto the Figure Eight]]
 
+## Used in (Differentiable Manifolds)
+- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^rem-3-11|Remark: How This Gets Used]]
+- [[§6 Group Actions and Orbit Spaces#^ex-6-5|Example §6.5: mathrmSO(3) Acting on ℝ³]]
+- [[§8 Differentiable Structures#^prop-8-6|Proposition §8.6: Each varphi_i Is a Chart]]
+
 ## Connections
 - **Immediate consequence.** [[§12 Quotient Topology#^cor-12-4|Induced Bijection from Quotient]] (§12.4): a continuous surjection g induces a homeomorphism X* ≅ Z exactly when g is a quotient map. The hypothesis that g is constant on fibers is exactly what well-definedness needs ([[§12 Quotient Topology#^rem-12-7|Constant on Fibers]]).
 - **Toolkit.** It is Theorem C of [[§12 Quotient Topology#^rem-12-8|The Quotient Space Toolkit]]. It is used together with [[Bijection from Compact to Hausdorff is a Homeomorphism]] (to recognize quotient maps) and [[§12 Quotient Topology#^thm-12-5|Product of Quotient Maps]].

@@ -18,6 +18,9 @@ tags: [multivariable-analysis, hub]
 ## Used in (Multivariable Analysis)
 - (not cited later in the course)
 
+## Used in (Differentiable Manifolds)
+- [[§9 Manifolds in Euclidean Space#^thm-9-1|Theorem §9.1: The Two Descriptions Agree]]
+
 ## Connections
 - **Proof idea.** Apply the [[§12 The Implicit Function Theorem#^thm-12-2|Implicit Function Theorem]] twice: first solve φ(x, y) = ũ for x, then solve ψ(X(y, ũ), y) = ṽ for y. The second step needs det J / φ_x ≠ 0 ([[§13 The Inverse Function Theorem#^rem-13-4|Tracking IFT Hypotheses]]). The [[Multivariable Chain Rule]] gives the Jacobian of the inverse.
 - **One-variable version.** The 451 [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (§29.10) has the condition f′(x₀) ≠ 0 and the derivative 1/f′ ([[§13 The Inverse Function Theorem#^rem-13-5|Comparison: 1D vs 2D]]).

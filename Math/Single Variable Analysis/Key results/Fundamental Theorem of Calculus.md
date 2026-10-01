@@ -34,6 +34,9 @@ tags: [real-analysis, hub]
 ## Used in (Measure Theory)
 - [[§17 Invariance Properties and Fubini's Theorem#^thm-17-13|Theorem §17.13: Layer Cake Formula (Cavalieri's Principle)]]
 
+## Used in (Differentiable Manifolds)
+- [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^lem-12-17|Lemma §12.17: Hadamard's Lemma]]
+
 ## Connections
 - Generalized by Stokes's theorem $\int_M d\omega=\int_{\partial M}\omega$ (Lee, *Smooth Manifolds*, Ch. 16; his Example 16.12 recovers FTC as the case $M=[a,b]$).
 - Physics: the gradient theorem (work done by a conservative force depends only on endpoints) is FTC along a curve.

@@ -23,6 +23,9 @@ tags: [linear-algebra, hub]
 ## Used in (Group Theory)
 - [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-1|Proposition §30.1: GL_3(ℝ) Acting on ℝ³]]
 
+## Used in (Differentiable Manifolds)
+- [[§10 Vector Spaces and Matrix Groups#^prop-10-3|Proposition §10.3: The Double Dual]]
+
 ## Connections
 - The key step of [[Fundamental theorem of linear maps]], [[2B Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]], [[2C Dimension#^ladr-2-43|Dimension of a sum]], [[2C Dimension#^ladr-2-38|Linearly independent list of the right length is a basis]].
 - Inner-product version: [[6B Orthonormal Bases#^ladr-6-36|Every orthonormal list extends to an orthonormal basis]] (via [[Gram–Schmidt procedure]]).

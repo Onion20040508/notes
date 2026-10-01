@@ -33,6 +33,15 @@ tags: [linear-algebra, hub]
 ## Used in (Group Theory)
 - [[§38 The First Isomorphism Theorem#^rem-38-2|Remark: Rank–Nullity]]
 
+## Used in (Differentiable Manifolds)
+- [[§10 Vector Spaces and Matrix Groups#^prop-10-4|Proposition §10.4: Properties of the Dual Map]]
+- [[§10 Vector Spaces and Matrix Groups#^prop-10-6|Proposition §10.6: Quotient Spaces and Their Universal Property]]
+- [[§11 Tangent Spaces I꞉ The Geometric Picture#^lem-11-2|Lemma §11.2: The Geometric Tangent Space of a Graph]]
+- [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|Theorem §11.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
+- [[§11 Tangent Spaces I꞉ The Geometric Picture#^prop-11-10|Proposition §11.10: Transverse Intersections]]
+- [[§14 Local Diffeomorphisms and Submersions#^prop-14-4|Proposition §14.4: Dimension Constraints]]
+- [[§15 Submanifolds#^thm-15-6|Theorem §15.6: The Regular Value Theorem for Manifolds]]
+
 ## Connections
 - **Immediate consequences.** Comparing dimensions: [[3B Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]] (3.22), [[3B Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]] (3.24), [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (3.65).
 - **Isomorphism classes.** [[Dimension shows whether vector spaces are isomorphic]] (3.70) uses it to show isomorphic ⟺ equal dimension.

@@ -24,6 +24,9 @@ tags: [topology, hub]
 - [[§20 Normal Spaces#^thm-20-2|Theorem §20.2: Every Compact Hausdorff Space is Normal]]
 - [[§26 Deformation Retracts and Homotopy Type#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
 
+## Used in (Differentiable Manifolds)
+- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
+
 ## Connections
 - **Partner result.** It pairs with [[Compact Subspace of a Hausdorff Space is Closed]] ([[§15 Compact Spaces#^rem-15-4|Summary: Compact and Closed]]). In a compact Hausdorff space the two together say that a subset is closed exactly when it is compact.
 - **Closedness is needed.** (0, 1] is a non-closed subspace of the compact interval [0, 1] and is not compact ([[§15 Compact Spaces#^ex-15-3|Example §15.3]]).

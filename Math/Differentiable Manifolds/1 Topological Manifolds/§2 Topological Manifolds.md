@@ -120,7 +120,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 *Uses:* [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (3), [[§5 Subspace Topology#^lem-5-2|590 §5.2]], [[§9 Continuous Functions#^prop-9-3|590 §9.3]]
 
 > [!remark] Remark
-> Lee takes the “open subset” version as the *definition* of locally Euclidean and leaves the equivalence as Exercise 1.1. The practical upshot: to verify that a space is locally Euclidean, it is enough to exhibit, around each point, a homeomorphism onto an open ball, or onto an open disk, or onto any open subset of $\mathbb{R}^n$—one never needs to hit all of $\mathbb{R}^n$. This is used immediately in the [[§2 Topological Manifolds#^ex-2-4|$S^2$ example]] below.
+> Lee takes the “open subset” version as the *definition* of locally Euclidean and leaves the equivalence as Exercise 1.1. The practical upshot: to verify that a space is locally Euclidean, it is enough to exhibit, around each point, a homeomorphism onto an open ball, or onto an open disk, or onto any open subset of $\mathbb{R}^n$—one never needs to hit all of $\mathbb{R}^n$. This is used immediately in the $S^2$ example ([[§2 Topological Manifolds#^ex-2-4|Ex. §2.4]]) below.
 
 ^rem-2-4
 

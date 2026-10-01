@@ -27,6 +27,11 @@ tags: [linear-algebra, hub]
 - [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-4|Proposition §19.4: Permutation Representation of S_X]]
 - [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-4|Proposition §30.4: The Cube Group Embeds in S_6]]
 
+## Used in (Differentiable Manifolds)
+- [[§7 Homogeneous Spaces#^prop-7-11|Proposition §7.11: mathrmO(n) Acts Transitively on mathrmGr_k(ℝⁿ)]]
+- [[§10 Vector Spaces and Matrix Groups#^prop-10-2|Proposition §10.2: The Dual Basis]]
+- [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|Lemma §13.2: The Differential in Coordinates]]
+
 ## Connections
 - The reason a linear map is the same data as its matrix: [[3C Matrices#^ladr-3-31|Matrix of a linear map, M(T)]], and why $\mathcal{M}$ is bijective in [[3D Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]].
 - Builds the isomorphism in [[Dimension shows whether vector spaces are isomorphic]].

@@ -25,6 +25,9 @@ tags: [topology, hub]
 - [[§24 Covering Spaces#^thm-24-10|Theorem §24.10: π₁(S¹) ≅ ℤ]]
 - [[§27 The Fundamental Group of Sⁿ#^ex-27-1|Example §27.1: Wedge of Two Spheres is Simply Connected]]
 
+## Used in (Differentiable Manifolds)
+- [[§2 Topological Manifolds#^lem-2-8|Lemma §2.8: Concatenation and Reversal of Paths]]
+
 ## Connections
 - **Proof.** It uses the closed-set criterion (3) of [[Equivalent Conditions for Continuity]], together with the fact that a set closed in a closed subspace is closed in X ([[§6 Closed Sets and Limit Points#^thm-6-3|Theorem §6.3]]).
 - **Typical use.** It gives continuity of piecewise-defined maps, first |x| ([[§9 Continuous Functions#^ex-9-6|Example §9.6]]). In homotopy theory it covers path products f ∗ g ([[§22 Homotopy of Paths#^rem-22-6|Well-Definedness]]), transitivity of ≃ ([[§22 Homotopy of Paths#^lem-22-3|Lemma §22.3]]) and every homotopy in [[Properties of Path Concatenation]].
