@@ -9,7 +9,7 @@ tags: [chapter, thermal-and-statistical-physics]
 ← [[· B4 Probability and Fluctuations]] · ↑ [[Thermal and Statistical Physics]] · [[· B6 The Microcanonical Ensemble and Entropy]] →
 
 **Builds on:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (4), [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (11), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (22), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (3)
-**Used by:** [[· B10 Quantum Statistics|B10 Quantum Statistics]] (1)
+**Used by:** [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (2), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (1)
 
 ## Sections
 - [[§B5.1 The Maxwell–Boltzmann Distribution and Effusion]] — Blundell 5–7; Schwartz L4
