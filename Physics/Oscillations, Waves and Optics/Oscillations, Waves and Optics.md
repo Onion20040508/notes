@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 287 (UMass, M. Kandula, Fall 2023)", "PHY 300 (Stony Brook, L. Mihaly, Fall 2024)"]
 textbooks: ["OpenStax, University Physics Vol. 1 and 3", "French, Vibrations and Waves", "Fowles, Introduction to Modern Optics", "Schwartz, Physics 15c Waves lectures"]
 conventions: "[[University Physics]]"
-status: level A in progress
+status: level A done; level B in progress (B1–B7 done)
 tags: [subject, oscillations-waves-and-optics]
 ---
 # Oscillations, Waves and Optics
