@@ -138,5 +138,3 @@ These are personal study notes. Statements and proofs are written in my own word
 - All other textbooks are cited for reference only. No textbook PDFs or other copyrighted materials are included in this repository.
 
 Course codes refer to courses at the University of Michigan unless marked otherwise. These notes are not affiliated with or endorsed by the authors, publishers or instructors.
-
-The notes and original figures are shared under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
