@@ -1,0 +1,13 @@
+% Figure for Classical Mechanics §A2.7 (centripetal, tangential and total acceleration of a particle slowing down on a circle).
+\begin{tikzpicture}[>={Stealth[length=2.3mm]}, font=\small]
+  \draw[black!45, thick] (0,0) circle (2.2);
+  \fill (0,0) circle (1.5pt) node[below, font=\scriptsize] {center};
+  \draw[->, thin, black!55] (0:2.6) arc[start angle=0, end angle=25, radius=2.6];
+  \coordinate (P) at (50:2.2);
+  \draw[->, very thick, figB] (P) -- ++(140:1.5) node[above left] {$\vec v$};
+  \draw[->, thick, figG] (P) -- ++(230:1.3) node[left, xshift=-1pt] {$\vec a_C$};
+  \draw[->, thick, figG] (P) -- ++(320:0.75) node[right] {$\vec a_T$};
+  \draw[dashed, black!45] ($(P)+(230:1.3)$) -- ++(320:0.75) -- ($(P)+(320:0.75)$);
+  \draw[->, very thick, figR] (P) -- ($(P)+(230:1.3)+(320:0.75)$) node[below, yshift=-1pt] {$\vec a$};
+  \fill (P) circle (1.8pt);
+\end{tikzpicture}

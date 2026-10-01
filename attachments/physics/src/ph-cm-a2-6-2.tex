@@ -1,0 +1,15 @@
+% Figure for Classical Mechanics §A2.6 (velocity and its components at five points of a projectile path on level ground).
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small]
+  \draw[thin, black!55] (-0.4,0) -- (6.4,0);
+  \draw[black!45, thick, domain=0:5.637, samples=60] plot (\x, {(2.4575/1.7207)*\x - 2.25*(\x/(3*1.7207))^2*3});
+  \foreach \px/\py/\vy in {0/0/1.352, 1.409/1.510/0.676, 2.819/2.013/0, 4.228/1.510/-0.676, 5.637/0/-1.352} {
+    \draw[->, thick, figB] (\px,\py) -- ++(0.946,0);
+    \ifdim \vy pt=0pt \else \draw[->, thick, figB] (\px,\py) -- ++(0,\vy); \fi
+    \draw[->, very thick, figR] (\px,\py) -- ++(0.946,\vy);
+    \fill (\px,\py) circle (1.5pt);
+  }
+  \node[figR, font=\scriptsize, anchor=south] at (0.55,1.4) {$\vec v_0$};
+  \node[figB, font=\scriptsize, anchor=north] at (0.47,-0.05) {$v_x$};
+  \node[figB, font=\scriptsize, anchor=east] at (-0.03,0.68) {$v_{0y}$};
+  \node[font=\scriptsize, anchor=south] at (2.82,2.1) {apex: $v_y = 0$};
+\end{tikzpicture}

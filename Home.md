@@ -12,8 +12,9 @@
 - [[Group Theory]]
 
 **Physics**
+- [[Classical Mechanics]]
 - [[Quantum Field Theory I]]
-- Conventions: [[Larsen PHY 513]]
+- Conventions: [[University Physics]] (introductory level), [[Larsen PHY 513]]
 
 ## Layout
 - `Math/` and `Physics/` hold one folder per **subject**, named by content. Course code, term, instructor, textbook and status are properties of the subject's home note.

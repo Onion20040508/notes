@@ -1,0 +1,17 @@
+% Figure for Classical Mechanics §A2.8 (vector triangle for a plane flying due north in a northeast wind; after University Physics Vol. 1, Example 4.14). Scale 1 cm = 80 km/h.
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  % compass
+  \begin{scope}[xshift=-2.6cm, yshift=0.3cm]
+    \draw[->, thin, black!55] (0,0) -- (0,0.8) node[above, font=\scriptsize] {N};
+    \draw[->, thin, black!55] (0,0) -- (0.8,0) node[right, font=\scriptsize] {E};
+  \end{scope}
+  \coordinate (O) at (0,0);
+  \coordinate (H) at (0.7955,3.665);
+  \coordinate (G) at (0,2.869);
+  \draw[->, very thick, figB] (O) -- (H) node[pos=0.5, right] {$\vec v_{PA}$ \scriptsize(300 km/h)};
+  \draw[->, very thick, figG] (H) -- (G) node[midway, above left] {$\vec v_{AG}$ \scriptsize(90 km/h)};
+  \draw[->, very thick, figR] (O) -- (G) node[pos=0.45, left] {$\vec v_{PG}$ \scriptsize(230 km/h)};
+  \draw[black!55, thin] (0,1.1) arc[start angle=90, end angle=77.75, radius=1.1];
+  \node[font=\scriptsize, black!70, anchor=west] at (0.33,0.98) {$12^\circ$};
+  \fill (O) circle (1.8pt);
+\end{tikzpicture}

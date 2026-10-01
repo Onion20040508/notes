@@ -1,0 +1,25 @@
+% Figure for Classical Mechanics §A2.7 (similar isosceles triangles in the derivation of the centripetal acceleration; angle exaggerated).
+\begin{tikzpicture}[>={Stealth[length=2.3mm]}, font=\small]
+  % left: positions
+  \draw[black!45, thick] (0,0) circle (2);
+  \coordinate (C) at (0,0);
+  \coordinate (P1) at (20:2);
+  \coordinate (P2) at (55:2);
+  \draw[->, thick, figB] (C) -- (P1) node[pos=0.6, below right] {$\vec r(t)$};
+  \draw[->, thick, figB] (C) -- (P2) node[pos=0.55, left] {$\vec r(t + \Delta t)$};
+  \draw[->, thick, dashed, black!75] (P1) -- (P2) node[midway, right, xshift=2pt] {$\Delta\vec r$};
+  \draw[black!55, thin] (20:0.6) arc[start angle=20, end angle=55, radius=0.6];
+  \node[font=\scriptsize] at (37.5:0.85) {$\Delta\theta$};
+  \fill (C) circle (1.6pt) node[below, font=\scriptsize] {center};
+  \fill (P1) circle (1.5pt); \fill (P2) circle (1.5pt);
+  % right: velocities from a common tail
+  \begin{scope}[xshift=5.6cm, yshift=-1.0cm]
+    \coordinate (T) at (0,0);
+    \draw[->, thick, figB] (T) -- (110:2.2) node[right, xshift=1pt] {$\vec v(t)$};
+    \draw[->, thick, figB] (T) -- (145:2.2) node[left] {$\vec v(t + \Delta t)$};
+    \draw[->, very thick, figR] (110:2.2) -- (145:2.2) node[midway, above, yshift=2pt] {$\Delta\vec v$};
+    \draw[black!55, thin] (110:0.6) arc[start angle=110, end angle=145, radius=0.6];
+    \node[font=\scriptsize] at (127.5:0.85) {$\Delta\theta$};
+    \fill (T) circle (1.5pt);
+  \end{scope}
+\end{tikzpicture}

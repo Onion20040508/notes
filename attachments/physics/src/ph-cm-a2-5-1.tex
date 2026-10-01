@@ -1,0 +1,15 @@
+% Figure for Classical Mechanics §A2.5 (position vectors, displacement chord and tangent velocity on a curved path).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  \coordinate (O) at (4.6,-0.6);
+  \draw[black!45, very thick, domain=0.4:4.5, samples=60] plot (\x, {0.3 + 0.2*(\x-0.5)^2});
+  \coordinate (P1) at (2,0.75);
+  \coordinate (P2) at (3.6,2.222);
+  \draw[->, thick, figB] (O) -- (P1) node[pos=0.45, below left] {$\vec r(t)$};
+  \draw[->, thick, figB] (O) -- (P2) node[pos=0.5, right] {$\vec r(t + \Delta t)$};
+  \draw[->, thick, dashed, black!75] (P1) -- (P2) node[pos=0.5, above left] {$\Delta\vec r$};
+  \draw[->, very thick, figR] (P1) -- ++(1.2,0.72) node[below right, xshift=-3pt, yshift=-2pt] {$\vec v(t)$};
+  \fill (P1) circle (1.8pt);
+  \fill (P2) circle (1.8pt);
+  \fill (O) circle (1.6pt) node[below, font=\scriptsize] {origin $O$};
+  \node[black!55, font=\scriptsize, anchor=west] at (4.5,3.4) {path};
+\end{tikzpicture}
