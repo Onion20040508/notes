@@ -11,8 +11,8 @@ tags: [calculus, hub]
 - [[§73 Alternating Series and Absolute Convergence#^thm-73-1|Theorem §73.1: The Alternating Series Test]], in [[§73 Alternating Series and Absolute Convergence]]
 
 ## Its proof uses
-- [[§69 Sequences#^thm-69-3|Theorem §69.3: Limit Laws for Sequences]]
 - [[§69 Sequences#^def-69-3|Definition §69.3: Precise Definition of a Limit of a Sequence]]
+- [[§69 Sequences#^thm-69-3|Theorem §69.3: Limit Laws for Sequences]]
 - [[§69 Sequences#^thm-69-9|Theorem §69.9: Monotonic Sequence Theorem]]
 - [[§70 Series#^def-70-2|Definition §70.2: Partial Sums; Convergent Series; Sum]]
 

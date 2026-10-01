@@ -215,7 +215,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 ^ex-6-1
 
 > [!remark]- Connections
-> - Same example (xy/(x² + y²)) in Stewart: [[§93 Tangent Planes and Linear Approximations#^rem-93-1|Calc §93 remark]].
+> - Same example (xy/(x² + y²)) in Stewart: [[§93 Tangent Planes and Linear Approximations#^rem-93-1|Calc Remark §93.1]].
 
 > [!theorem] Theorem §6.2: Continuous Partials Imply Differentiability
 > Let $R$ be an open set. If $f_x$ and $f_y$ exist and are continuous on $R$, then $f$ is differentiable at every point of $R$.
