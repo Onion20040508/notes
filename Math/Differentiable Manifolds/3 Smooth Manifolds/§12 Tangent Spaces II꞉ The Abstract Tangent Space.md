@@ -173,6 +173,9 @@ Point (1) of the [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12
 
 ^rem-12-3
 
+![[m591-12-19.svg]]
+*Two representatives of one germ, drawn as graphs over $M = \mathbb{R}$: $f$ (blue) on $U$ and $g$ (red, dashed) on $V$ agree on the shaded open set $W \ni p$ and part ways outside it. The germ $[f] = [g]$ keeps only the common piece near $p$; how large the domains are and what the functions do away from $p$ is forgotten — which is exactly why shrinking a representative's domain is free.*
+
 > [!example] Example §12.2: Germs Versus Taylor Series
 > Take $M = \mathbb{R}^n$ and $x_0 \in \mathbb{R}^n$. All partial derivatives of a function at $x_0$ depend only on its germ, so the Taylor series construction descends to a map into the ring of formal power series,
 >
@@ -773,7 +776,7 @@ $$
 \varphi^*[r^i] = [x^i], \qquad \varphi^*[f_\varphi] = [f]
 $$
 
-*The proof in one diagram — the defining triangle of the pushforward, for the chart. Downstairs the Euclidean formula computes $\tilde D$ on everything; the two pullback identities on the right carry the answer back upstairs, turning $\tilde D[r^i]$ into $D[x^i]$ and $\tilde D[f_\varphi]$ into $D[f]$.*
+*The proof in one diagram — the defining triangle of the pushforward, for the chart. Downstairs the Euclidean formula computes $\tilde D$ on everything; the two pullback identities displayed under the diagram carry the answer back upstairs, turning $\tilde D[r^i]$ into $D[x^i]$ and $\tilde D[f_\varphi]$ into $D[f]$.*
 
 > [!remark]- Connections
 > - The coefficients $D[x^i]$ are the values of the dual basis $dx^i|_p$: [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|§13.2]]; cf. [[3F Duality#^ladr-3-114|LADR 3.114]].

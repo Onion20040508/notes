@@ -1,0 +1,22 @@
+% Figure from MATH 591 notes, section 7. Compile with the notes preamble.
+\begin{tikzpicture}[x={(-0.55cm,-0.38cm)}, y={(1.25cm,0cm)}, z={(0cm,1.25cm)}]
+\pgfmathsetmacro{\ca}{cos(45)}\pgfmathsetmacro{\sa}{sin(45)}
+% the base point V_0 = span(e_1, e_2): a disc in the xy-plane
+\filldraw[figB!12, draw=figB, thick] plot[domain=0:360, samples=90, smooth cycle] ({1.5*sin(\x)}, {1.5*cos(\x)}, 0);
+% another point V = g V_0: a disc in the plane spanned by e_2 and u = (cos a, 0, sin a)
+\filldraw[figR!12, draw=figR, thick, fill opacity=0.75] plot[domain=0:360, samples=90, smooth cycle] ({1.5*sin(\x)*\ca}, {1.5*cos(\x)}, {1.5*sin(\x)*\sa});
+% the common line V \cap V_0 (the y-axis)
+\draw[black!45, densely dashed] (0,-1.5,0) -- (0,1.5,0);
+\draw[-stealth, thin, black!55] (0,1.5,0) -- (0,2.05,0) node[anchor=west, inner sep=1pt, font=\scriptsize, black] {$y$};
+\draw[-stealth, thin, black!55] (0,0,0) -- (2.1,0,0) node[anchor=north east, inner sep=1pt, font=\scriptsize, black] {$x$};
+% unit normals: e_3 for V_0, g e_3 for V; -e_3 also gives V_0
+\draw[-stealth, figB, thick] (0,0,0) -- (0,0,1.25) node[anchor=south, inner sep=1.5pt, font=\scriptsize] {$e_3$};
+\draw[-stealth, figR, thick] (0,0,0) -- (-1.25*\sa,0,1.25*\ca) node[anchor=south west, inner sep=1pt, font=\scriptsize] {$g e_3$};
+\draw[figB, densely dashed, thin] (0,0,0) -- (0,0,-0.95) node[anchor=north, inner sep=1.5pt, font=\scriptsize] {$-e_3$};
+\fill[black] (0,0,0) circle (1.2pt);
+% g carries V_0 to V
+\draw[-stealth, figR, thick] (1.5,0,0) to[bend left=30] node[left, font=\scriptsize] {$g$} (1.5*\ca,0,1.5*\sa);
+% labels
+\node[figB, font=\small, anchor=north east, inner sep=1pt] at (canvas cs:x=-1.95cm,y=-0.38cm) {$V_0$};
+\node[figR, font=\small, anchor=west, inner sep=1pt] at (canvas cs:x=2.0cm,y=-0.62cm) {$V = gV_0$};
+\end{tikzpicture}

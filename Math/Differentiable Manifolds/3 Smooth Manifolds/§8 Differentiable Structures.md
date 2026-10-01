@@ -274,7 +274,7 @@ The board wrote “$x^2 + y^2 = 0$” when setting up the first transition funct
 > - Compatible with the other two circle atlases: [[§9 Manifolds in Euclidean Space#^prop-9-4|§9.4]]; the complex counterpart $w \mapsto 1/w$ on $\mathbb{CP}^1$: [[§8 Differentiable Structures#^rem-8-12|Remark after §8.9]].
 
 ![[m591-8-3.svg]]
-*The hollow circle marks the pole each chart omits: $\sigma_N$ is undefined at $N$, since the line through $N$ and $N$ is not determined, and as $P$ climbs towards $N$ the image $\sigma_N(P)$ runs off to $\pm\infty$. Every other point is hit exactly once, so $\sigma_N$ is a bijection onto all of $\mathbb{R}$.*
+*Left, $\sigma_N$: the line from $N$ through a point $P$ of the circle meets the horizontal axis at $\sigma_N(P)$. The hollow circle marks the omitted pole — the line through $N$ and $N$ is not determined, and as $P$ climbs towards $N$ the image $\sigma_N(P)$ runs off to $\pm\infty$. Every point of the axis is hit exactly once, so $\sigma_N$ is a bijection onto all of $\mathbb{R}$. Right, $\sigma_S$: the same construction from the south pole.*
 
 The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axis at the origin, so $\sigma_N(S) = 0/(1-(-1)) = 0$, and by symmetry $\sigma_S(N) = 0$. The two charts are mirror images in this respect — $\sigma_N$ compresses the *lower* half-circle into $(-1,1)$ and throws the upper half outside it, while $\sigma_S$ does the reverse. On the overlap $S^1 \setminus \{N,S\}$ this exchange of inside and outside is exactly the transition function $u \mapsto 1/u$.
 

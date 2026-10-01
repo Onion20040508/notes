@@ -143,3 +143,10 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Fundamental Theorem of Calculus]] (1)
 
 ## Workhorse examples
+- [[The line with two origins]]: second countable and locally Euclidean but not Hausdorff, built from neighborhoods and as a quotient
+- [[Spheres Sⁿ]]: hemisphere charts, regular level set, tangent space, homogeneous space, cover of projective space
+- [[The circle S¹]]: three compatible atlases, no single chart, U(1) and ℝ/ℤ, covered by ℝ
+- [[Real and complex projective spaces]]: the model quotient manifolds, with homogeneous-coordinate charts
+- [[The Hopf fibration]]: S²ⁿ⁺¹ → ℂPⁿ as quotient, orbit map, submersion and fibration without a section
+- [[Classical groups O(n), U(n), SL(n,ℝ)]]: matrix groups as level sets, with dimensions, tangent spaces and actions
+- [[Grassmannians]]: k-planes in ℝⁿ as the homogeneous space O(n)/(O(k) × O(n−k))

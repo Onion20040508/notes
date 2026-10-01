@@ -32,4 +32,7 @@ tags: [differentiable-manifolds, hub]
 - [[§15 Submanifolds#^prop-15-8|Proposition §15.8: The Old and New Versions Agree]]
 
 ## Connections
-- TODO
+- **Used for.** Smooth structures on O(n) and U(n) ([[§10 Vector Spaces and Matrix Groups#^ex-10-1|Ex. §10.1]], [[§10 Vector Spaces and Matrix Groups#^ex-10-2|Ex. §10.2]]), on SL(n,ℝ) and on the spheres, hence the smooth half of [[Classical Groups Are Manifolds]] ([[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|§11.5]]). Maps into and out of a level set are smooth when the ambient formulas are ([[§9 Manifolds in Euclidean Space#^lem-9-3|§9.3]]), which shows that the three circle atlases define one structure ([[§9 Manifolds in Euclidean Space#^prop-9-4|§9.4]]).
+- **Why it works.** A transition map between two graph charts factors through the ambient space, a parametrization up and a linear projection down ([[§9 Manifolds in Euclidean Space#^ex-9-2|Ex. §9.2]]). This needs the implicit functions to be smooth; the topological [[Regular Value Theorem (Euclidean)]] only needed them continuous ([[§9 Manifolds in Euclidean Space#^rem-9-3|§9, Remark]]).
+- **Same idea elsewhere.** 452 solves the circle for y near (0, 1) ([[§12 The Implicit Function Theorem#^ex-12-1|452 Ex. §12.1]]) and for x near (1, 0) ([[§12 The Implicit Function Theorem#^ex-12-2|452 Ex. §12.2]]); the proposition says that such graph charts over different variables are smoothly compatible. At a critical value the conclusion fails: x² + y² = 0 is a single point, not a curve ([[§4 The Regular Value Theorem#^ex-4-1|Ex. §4.1]]).
+- **Coming later in the course.** Whitney's embedding theorem puts every abstract manifold in some ℝᴺ, which is what an external description of it needs.

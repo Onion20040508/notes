@@ -581,5 +581,8 @@ Definitions [[§7 Homogeneous Spaces#^def-7-4|§7.4]] and [[§7 Homogeneous Spac
 
 ^rem-7-9
 
+![[m591-7-4.svg]]
+*Uribe's picture for $n = 3$, $k = 2$: a point of $\mathrm{Gr}_2(\mathbb{R}^3)$ is a whole plane through the origin. The base point $V_0 = \operatorname{span}(e_1, e_2)$ (blue) is carried by an orthogonal $g$ to another plane $V = gV_0$ (red); two distinct planes through $0$ always share a line (dashed). The isotropy group $\mathrm{O}(2) \times \mathrm{O}(1)$ of [[§7 Homogeneous Spaces#^prop-7-12|Proposition §7.12]] consists of the $g$ that move $V_0$ onto itself: an orthogonal map of the plane, together with $e_3 \mapsto \pm e_3$ on the normal line. A plane is pinned down by its unit normal up to sign ($\pm e_3$ for $V_0$, $\pm g e_3$ for $V$), so it takes two parameters to choose one — the count $k(n-k) = 2$.*
+
 > [!remark]- Connections
 > - $\dim \mathrm{O}(n) = \tfrac{n(n-1)}{2}$ is proved in [[§10 Vector Spaces and Matrix Groups#^ex-10-1|Ex. §10.1]]; the same subtraction of dimensions for $S^2 = \mathrm{SO}(3)/\mathrm{SO}(2)$ is [[§11 Tangent Spaces I꞉ The Geometric Picture#^rem-11-9|Dimension Checks through Homogeneous Spaces]].

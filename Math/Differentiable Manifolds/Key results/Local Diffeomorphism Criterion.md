@@ -23,4 +23,6 @@ tags: [differentiable-manifolds, hub]
 - [[§14 Local Diffeomorphisms and Submersions#^prop-14-4|Proposition §14.4: Dimension Constraints]]
 
 ## Connections
-- TODO
+- **Used for.** Diffeomorphisms are exactly the bijective local diffeomorphisms ([[§14 Local Diffeomorphisms and Submersions#^cor-14-3|§14.3]]), and a map between manifolds of equal dimension that is a submersion, or an immersion, at every point is a local diffeomorphism ([[§14 Local Diffeomorphisms and Submersions#^prop-14-4|§14.4]]). The same inverse-function step, with [[§14 Local Diffeomorphisms and Submersions#^lem-14-7|§14.7]], builds the new chart in the [[Submersion Normal Form]].
+- **Local, not global.** t ↦ (cos t, sin t) on (0, 4π) is a local diffeomorphism onto S¹ that is neither injective nor a covering map: (1, 0) has one preimage and every other point two ([[§14 Local Diffeomorphisms and Submersions#^ex-14-1|Ex. §14.1]], [[§14 Local Diffeomorphisms and Submersions#^rem-14-2|Covering Maps]]). Injectivity is the entire difference from a diffeomorphism ([[§14 Local Diffeomorphisms and Submersions#^rem-14-3|§14, Remark]]).
+- **Same idea elsewhere.** The analytic input is the [[Inverse Function Theorem (several variables)]] of 452, applied to the coordinate representation, whose Jacobian is the matrix of F_*p ([[Matrix of the Differential]]). In 590, ℝ → S¹ is a covering map ([[§24 Covering Spaces#^thm-24-2|590 §24.2]]) while its restriction to (0, ∞) is a local homeomorphism that is not ([[§24 Covering Spaces#^ex-24-2|590 Ex. §24.2]]), the same failure as (0, 4π) → S¹.

@@ -77,6 +77,9 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 
 *Uses:* [[§16 Fibrations#^def-16-1|Def. §16.1]], [[§8 Differentiable Structures#^def-8-11|Def. §8.11]], [[§8 Differentiable Structures#^def-8-14|Def. §8.14]], [[§9 Manifolds in Euclidean Space#^lem-9-3|§9.3]]
 
+![[m591-16-7.svg]]
+*The fibres of the Hopf fibration for $n = 1$, $S^3 \to \mathbb{CP}^1$, made visible in $\mathbb{R}^3$ by stereographic projection of $S^3$ from the point $(0, 1)$. Blue: the fibre through $(1, 0)$, which projects to the unit circle, and the fibre through $(0, 1)$ itself, which projects to the vertical axis closed up at infinity. Red: two more fibres, through points with $|z_1| = |z_2|$. Each fibre is a circle $\{\lambda z : |\lambda| = 1\}$, no two meet, and any two are linked: over each $U_j$ the circles sit side by side as in $U_j \times S^1$, but globally they are woven together.*
+
 > [!remark]- Connections
 > - $\mathbb{CP}^n$ as the orbit space $S^{2n+1}/\mathrm{U}(1)$: [[§6 Group Actions and Orbit Spaces#^ex-6-3|Ex. §6.3]]. The Hopf fibration has no section: [[§17 The Tangent Bundle#^rem-17-3|Remark: Sections Need Not Exist (§17)]].
 

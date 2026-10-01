@@ -29,4 +29,7 @@ tags: [differentiable-manifolds, hub]
 - [[§15 Submanifolds#^prop-15-8|Proposition §15.8: The Old and New Versions Agree]]
 
 ## Connections
-- TODO
+- **Used for.** Every fibre of a submersion is a submanifold ([[§15 Submanifolds#^cor-15-7|§15.7]]), in particular every fibre of a fibration ([[§16 Fibrations#^prop-16-2|§16.2]]). It contains the Euclidean versions, with the same smooth structure and tangent spaces ([[§15 Submanifolds#^prop-15-8|§15.8]], [[§15 Submanifolds#^rem-15-2|The Regular Value Theorems — Old and New]]).
+- **Proof, and its limits.** Near each point of the level set F is a projection, by the [[Submersion Normal Form]], so the level set is a coordinate slice. Fibres of a submersion can still change type: (x, y) ↦ x on ℝ² ∖ {(0, 1)} has one broken fibre ([[§16 Fibrations#^ex-16-2|Ex. §16.2]]). Even all fibres diffeomorphic does not make a fibration ([[§16 Fibrations#^ex-16-4|Ex. §16.4]]), unless the map is also proper and the base connected ([[§16 Fibrations#^thm-16-3|Ehresmann]]).
+- **Same idea elsewhere.** ι_*(T_pS) = ker F_*p generalizes [[Geometric Tangent Space Is the Kernel of the Jacobian]], and dim S = m − n is rank–nullity ([[Fundamental theorem of linear maps]]). The conormal space, of dimension the codimension ([[§15 Submanifolds#^prop-15-5|§15.5]]), is LADR's annihilator ([[3F Duality#^ladr-3-121|LADR 3.121]], [[3F Duality#^ladr-3-125|LADR 3.125]]).
+- **Coming later in the course.** Transversality on manifolds: the preimage of a submanifold under a transverse map is a submanifold of the same codimension, and this theorem is the case of a point. Sard's theorem makes regular values, and transversality, generic.

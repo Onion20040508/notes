@@ -33,4 +33,7 @@ tags: [differentiable-manifolds, hub]
 - [[§15 Submanifolds#^prop-15-8|Proposition §15.8: The Old and New Versions Agree]]
 
 ## Connections
-- TODO
+- **Used for.** Writing down any atlas specifies a smooth structure ([[§8 Differentiable Structures#^def-8-9|Def. §8.9]]): the standard atlas of ℂPⁿ ([[§8 Differentiable Structures#^thm-8-7|§8.7]]), graph charts on level sets ([[Regular Level Sets Are Smooth Manifolds]]), linear charts on a vector space ([[§10 Vector Spaces and Matrix Groups#^prop-10-9|§10.9]]). Two atlases give the same structure exactly when they are compatible, which is how the three circle atlases are compared ([[§9 Manifolds in Euclidean Space#^prop-9-4|§9.4]]).
+- **Why the proof needs the atlas.** Compatibility of charts is not transitive ([[§8 Differentiable Structures#^prop-8-2|§8.2]]), so the charts compatible with one given chart need not form an atlas. The proof passes through a chart of the given atlas at each point of an overlap ([[§8 Differentiable Structures#^rem-8-7|§8, Remark]]).
+- **Different structures.** ℝ with the identity chart and ℝ with the chart ∛x have different maximal atlases, yet they are diffeomorphic ([[§8 Differentiable Structures#^ex-8-5|Ex. §8.5]], [[§8 Differentiable Structures#^cor-8-18|§8.18]]). Structures that are not even diffeomorphic exist, on S⁷ and on ℝ⁴ ([[§8 Differentiable Structures#^rem-8-20|Distinct Structures versus Non-Diffeomorphic Manifolds]]).
+- **Coming later in the course.** Integration of differential forms and Stokes' theorem need an orientation, given by an atlas whose transition maps have positive Jacobian determinant; such an atlas likewise lies in a unique maximal one.

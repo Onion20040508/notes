@@ -165,6 +165,9 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 
 ^rem-13-3
 
+![[m591-13-4.svg]]
+*Classes in $I_p/I_p^2$, for $M = \mathbb{R}$. The blue germs $f_1$ and $f_2$ both vanish at $p$ with the same slope $c$, so $f_1 - f_2$ vanishes to second order and ${[}[f_1]{]} = {[}[f_2]{]} = c\,{[}[x - p]{]}$: the class keeps only the red tangent line and forgets the curvature. The green $g$ has value and slope zero at $p$, so $[g] \in I_p^2$ and ${[}[g]{]} = 0$ (Proposition [[§13 Tangent Spaces III꞉ The Cotangent Space#^prop-13-4|§13.4]]).*
+
 > [!theorem] Proposition §13.5: A Basis of $I_p/I_p^2$
 > Let $(U, \varphi)$ be a chart at $p$ with coordinate functions $x^1, \ldots, x^n$. For every $[f] \in I_p$,
 >

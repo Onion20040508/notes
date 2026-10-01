@@ -1,0 +1,15 @@
+% Figure from MATH 591 notes, section 13. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.25]
+  \draw[-stealth, thin] (-1.65,0) -- (1.75,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,-1.85) -- (0,1.95) node[above, font=\scriptsize] {$\mathbb{R}$};
+  \draw[figG, thick, domain=-1.15:1.15, samples=60] plot (\x, {0.45*\x*\x});
+  \draw[figR, thick] (-1.45,-0.87) -- (1.45,0.87);
+  \draw[figB, thick, domain=-1.45:1.2, samples=80] plot (\x, {0.6*\x + 0.5*\x*\x});
+  \draw[figB!60, thick, domain=-1.0:1.45, samples=80] plot (\x, {0.6*\x - 0.6*\x*\x});
+  \fill[black] (0,0) circle (1.4pt);
+  \node[font=\scriptsize, anchor=north west, inner sep=1.5pt] at (0.02,-0.04) {$p$};
+  \node[font=\scriptsize, figB, anchor=west] at (1.2,1.44) {$f_1$};
+  \node[font=\scriptsize, figB!60, anchor=west] at (1.45,-0.39) {$f_2$};
+  \node[font=\scriptsize, figR, anchor=west] at (1.45,0.87) {slope $c$};
+  \node[font=\scriptsize, figG, anchor=east] at (-1.15,0.60) {$g$};
+\end{tikzpicture}

@@ -1,0 +1,27 @@
+% Figure from MATH 591 notes, section 3. Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.0]
+% the complex line C z (a real 2-plane), seen from slightly above
+\fill[figB!10] (-2.9,-0.95) -- (2.3,-0.95) -- (2.9,0.95) -- (-2.3,0.95) -- cycle;
+\draw[figB!60, thin] (-2.9,-0.95) -- (2.3,-0.95) -- (2.9,0.95) -- (-2.3,0.95) -- cycle;
+% the unit sphere S^{2n+1}
+\draw[black!55, thin] (0,0) circle (1.5);
+% the circle S^1 z = (C z) \cap S^{2n+1}
+\draw[figR, thick, dashed] (1.5,0) arc (0:180:1.5 and 0.6);
+\draw[figR, very thick] (-1.5,0) arc (180:360:1.5 and 0.6);
+% two points of the punctured line and their normalizations g(w) = w/|w|
+\draw[black!55, densely dashed] (0,0) -- (1.78,-0.50);
+\draw[black!55, densely dashed] (0,0) -- (-1.229,-0.344);
+\fill[figB] (1.78,-0.50) circle (1.5pt) node[anchor=north west, inner sep=1.5pt, font=\scriptsize] {$\vec z$};
+\fill[figB] (-0.553,-0.155) circle (1.5pt) node[anchor=north, inner sep=2.5pt, font=\scriptsize] {$\lambda\vec z$};
+\draw[-stealth, figB, thin, shorten <=2pt, shorten >=2pt] (1.78,-0.50) -- (1.229,-0.344);
+\draw[-stealth, figB, thin, shorten <=2pt, shorten >=2pt] (-0.553,-0.155) -- (-1.229,-0.344);
+\fill[figR] (1.229,-0.344) circle (1.5pt);
+\fill[figR] (-1.229,-0.344) circle (1.5pt);
+% the origin is not in C^{n+1} \ {0}
+\filldraw[fill=white, draw=black!70] (0,0) circle (1.5pt);
+\node[font=\scriptsize, black!70, anchor=south] at (0,0.04) {$0$};
+% labels
+\node[font=\scriptsize, black!70, anchor=south west] at (1.0,1.12) {$S^{2n+1}$};
+\node[font=\scriptsize, figB, anchor=west] at (2.95,0.75) {$\mathbb{C}\vec z\setminus\{0\} = \mathbb{C}^\times\vec z$};
+\node[font=\scriptsize, figR] at (0.42,-0.31) {$S^1\vec z$};
+\end{tikzpicture}

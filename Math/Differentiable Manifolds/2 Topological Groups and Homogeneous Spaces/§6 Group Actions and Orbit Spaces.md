@@ -306,7 +306,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 ^ex-6-6
 
 ![[m591-6-2.svg]]
-*The orbits of $t \cdot (x,y) = (tx, y/t)$ in the first quadrant: the hyperbola branches $xy = c$ and the two positive half-axes. The points $z_n = (1, \tfrac1n)$ lie on orbits that approach both axes as $c \to 0$.*
+*The orbits of $t \cdot (x,y) = (tx, y/t)$ in the first quadrant: the hyperbola branches $xy = c$ and the two positive half-axes. The orbit of $z_n = (1, \tfrac1n)$ also passes through $\tfrac1n \cdot z_n = (\tfrac1n, 1)$, so this one orbit has a point near $(1,0)$ and a point near $(0,1)$: $[z_n]$ converges to both $[(1,0)]$ and $[(0,1)]$, as in the proof below.*
 
 > [!proof]+ Proof (PSet 1, Problem 3)
 > The orbits of $(1,0)$ and $(0,1)$ are the positive $x$-axis $\{(t,0) \mid t>0\}$ and the positive $y$-axis $\{(0,s) \mid s>0\}$; they are distinct classes, since $t \cdot (1,0) = (t,0)$ never has a nonzero second coordinate. Consider $z_n = (1, \tfrac1n) \in X$.

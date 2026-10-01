@@ -37,4 +37,7 @@ tags: [differentiable-manifolds, hub]
 - [[§15 Submanifolds#^prop-15-8|Proposition §15.8: The Old and New Versions Agree]]
 
 ## Connections
-- TODO
+- **Used for.** The tangent spaces of the classical groups at I: Skew(n) for O(n), skew-Hermitian matrices for U(n), trace-zero matrices for SL(n,ℝ) ([[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|§11.5]]). It is the input to the [[Transverse Preimage Theorem]], to transverse intersections ([[§11 Tangent Spaces I꞉ The Geometric Picture#^prop-11-10|§11.10]]) and to [[Ambient and Abstract Tangent Spaces Agree]], and the [[Regular Value Theorem for Manifolds]] generalizes it to ι_*(T_pS) = ker F_*p.
+- **How the proof goes.** Only T^geo_pM ⊆ ker F′(p) is proved directly, by the chain rule. The other inclusion is forced by dimension: the graph lemma ([[§11 Tangent Spaces I꞉ The Geometric Picture#^lem-11-2|§11.2]]) shows T^geo_pM is a subspace of dimension n, and rank–nullity ([[Fundamental theorem of linear maps]]) gives dim ker F′(p) = n ([[§11 Tangent Spaces I꞉ The Geometric Picture#^rem-11-4|§11, Remark]]).
+- **The regular value hypothesis matters.** Take S the x-axis in ℝ², G(x, y) = y and F(t) = (t, t²). The zero set of G ∘ F(t) = t² is the point {0}, whose tangent space is 0, but (G ∘ F)′(0) = 0 has kernel all of ℝ ([[§11 Tangent Spaces I꞉ The Geometric Picture#^ex-11-6|Ex. §11.6]](b)).
+- **Same idea elsewhere.** In 452 this is the geometry of Lagrange multipliers: at a constrained extremum ∇f is orthogonal to the tangent space of the constraint set, so it lies in the span of the constraint gradients ([[Method of Lagrange Multipliers]], [[§14 Optimization and Lagrange Multipliers#^thm-14-3|452 §14.3]]).

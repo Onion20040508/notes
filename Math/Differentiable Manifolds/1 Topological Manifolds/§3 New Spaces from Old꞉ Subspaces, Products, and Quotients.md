@@ -386,6 +386,9 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 ^ex-3-1
 
+![[m591-3-8.svg]]
+*Two copies of $\mathbb{R}$ (blue) glued along every vertical pair $(x,1) \sim (x,2)$ with $x \neq 0$ — except the two origins (red). The glued pairs at $x = \tfrac1n$ crowd in on the unglued pair $\big((0,1),(0,2)\big)$: that is the sequence in $\Gamma$ whose limit escapes $\Gamma$ in [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^ex-3-7|Example §3.7]], and downstairs it is why every neighbourhood of $0_1$ meets every neighbourhood of $0_2$.*
+
 > [!remark]- Connections
 > - The same space: [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§1 Point-Set Topology Review#^rem-1-9|§1, The Line with Two Origins as a Quotient]], [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; via the Hausdorff criterion in [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^ex-3-7|Ex. §3.7]].
 > - A quotient of the Hausdorff $\mathbb{R}$ that is not Hausdorff, in MATH 590: [[§12 Quotient Topology#^ex-12-5|590 Ex. §12.5]].
@@ -1089,6 +1092,9 @@ The following was set up in the last four minutes of lecture; the proof of the c
 > The key identity behind (2) is that for a unit vector $\vec z$ the part of its $\mathbb{C}^\times$-orbit lying on the sphere is exactly its $S^1$-orbit: $|\lambda\vec z| = |\lambda|$, which equals $1$ iff $\lambda \in S^1$. So each punctured line meets the unit sphere in precisely one circle, and normalizing $\vec z \mapsto \vec z/|\vec z|$ is the bridge between the two descriptions — a point downstairs, a whole line upstairs in one, a circle upstairs in the other.
 
 ^rem-3-18
+
+![[m591-3-9.svg]]
+*A cartoon in real dimensions: the complex line $\mathbb{C}\vec z$ is drawn as a plane (blue) through the removed origin, and the unit sphere $S^{2n+1}$ cuts it in exactly one circle, the $S^1$-orbit $S^1\vec z$ (red). Normalizing $g(\vec w) = \vec w/|\vec w|$ pushes every point of the punctured line radially onto that circle — $\vec z$ and $\lambda\vec z$ land on different points of it, but on the same circle. So one $\mathbb{C}^\times$-orbit upstairs corresponds to one $S^1$-orbit, which is why $\Theta$ is a bijection.*
 
 > [!example] Example §3.8: Why the Origin Must Be Removed
 > Let $\mathbb{C}^\times$ act instead on all of $\mathbb{C}^{n+1}$ by scalar multiplication. The action is still continuous, but the orbit space acquires one extra point, the orbit $\{\lambda \cdot 0\} = \{0\}$, which is not a line; and that point cannot be separated from any other. Indeed, let $U$ be an open set of the quotient containing $\{0\}$. Its preimage is open, saturated, and contains $0$, hence contains a ball $B(0,\varepsilon)$. For every $\vec z \neq 0$ the vector $\frac{\varepsilon}{2|\vec z|}\vec z$ lies in that ball and in the orbit of $\vec z$, so by saturation the preimage contains every orbit. Thus $U$ is the whole quotient: every neighbourhood of $\{0\}$ contains every point, and the quotient is not Hausdorff. Deleting the origin removes exactly this one orbit. Every orbit accumulates at $0$ — the same pathology as [[§6 Group Actions and Orbit Spaces#^ex-6-6|Example §6.6]], where orbits accumulate on other orbits, here concentrated at a single point.

@@ -25,4 +25,7 @@ tags: [differentiable-manifolds, hub]
 - [[§16 Fibrations#^prop-16-1|Proposition §16.1: Fibres and Fibrations]]
 
 ## Connections
-- TODO
+- **Used for.** Diffeomorphisms induce isomorphisms of tangent spaces ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-12|§12.12]]), so a chart identifies T_pM with a tangent space of an open subset of ℝⁿ ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-14|§12.14]]); this is how the [[Basis Theorem for Tangent Spaces]] is proved. It also gives the chain rule and the change of coordinates in matrices ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-23|§12.23]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-24|§12.24]]), differentials computed by curves ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-31|§12.31]]) and the [[Local Diffeomorphism Criterion]].
+- **Why the proof is one line.** Pulling back germs reverses the order, (G ∘ F)* = F* ∘ G*. The differential is the dual of pullback, so it composes in the same order as the maps, as dual maps do in linear algebra, (ST)′ = T′S′ ([[3F Duality#^ladr-3-120|LADR 3.120]]).
+- **Same idea elsewhere.** In coordinates it is the [[Multivariable Chain Rule]] of 452: the Jacobian of a composite is the product of the Jacobians ([[3C Matrices#^ladr-3-43|LADR 3.43]]). In 590, induced homomorphisms on π₁ compose the same way ([[Functoriality of π₁]]). Together with the basis theorem it shows that diffeomorphic manifolds have the same dimension, the easy smooth counterpart of [[Topological Invariance of Dimension]].
+- **Coming later in the course.** Differential forms pull back along smooth maps with the same reversal of order, (G ∘ F)* = F* ∘ G*.
