@@ -15,7 +15,7 @@ tags: [chapter, thermal-and-statistical-physics]
 - [[§B3.1 Potentials and Their Natural Variables]] — Blundell 16; Schroeder 5.1–5.2; Schwartz L8; user notes
 - [[§B3.2 Maxwell Relations and Response Functions]] — Blundell 16; Schroeder 5.2, App. B; user notes
 - [[§B3.3 Chemical Potential and Conditions for Equilibrium]] — Blundell 22; Schroeder 3.5, 5.2, 5.5–5.6
-- [[§B3.4 Rods, Bubbles and Magnets]] — Blundell 17; Schroeder 3.3
+- [[§B3.4 Rods, Bubbles and Magnets]] ★ — Blundell 17; Schroeder 3.3
 
 ## Theorems
 - [[§B3.1 Potentials and Their Natural Variables#^thm-b3-1-1|§B3.1.1]] Differentials and Natural Variables of the Potentials

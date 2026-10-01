@@ -13,8 +13,8 @@ tags: [chapter, thermal-and-statistical-physics]
 
 ## Sections
 - [[§B9.1 Real Gases and the van der Waals Equation]] — Blundell 26–27; Schroeder 5.3; Schwartz L9
-- [[§B9.2 Phase Equilibrium and the Clausius–Clapeyron Equation]] — Blundell 28; Schroeder 5.3; Schwartz L9
-- [[§B9.3 The Classification of Phase Transitions]] — Blundell 28; Schwartz L9; Schroeder 8.2
+- [[§B9.2 Phase Equilibrium and the Clausius–Clapeyron Equation]] ★ — Blundell 28; Schroeder 5.3; Schwartz L9
+- [[§B9.3 The Classification of Phase Transitions]] ★ — Blundell 28; Schwartz L9; Schroeder 8.2
 
 ## Laws
 - [[§B9.1 Real Gases and the van der Waals Equation#^law-b9-1-5|§B9.1.5]] Law of Corresponding States

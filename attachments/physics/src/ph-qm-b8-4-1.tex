@@ -1,0 +1,35 @@
+% Figure for Quantum Mechanics §B8.4 (Zeeman effect on the eight n = 2 states of hydrogen from weak to strong field: energies relative to the Bohr energy E_2 in units of gamma = (alpha/8)^2 13.6 eV, against beta/gamma with beta = mu_B B; the exact eigenvalues of the 8x8 matrix of Griffiths Table 7.2; labels: weak-field terms on the left, strong-field (m_l, m_s) on the right, 2S states marked S).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=10.5cm, height=8.2cm, xmin=0, xmax=6, ymin=-14, ymax=12.5,
+      xlabel={$\mu_B B_{\text{ext}}/\gamma$}, ylabel={$(E - E_2)/\gamma$},
+      xtick={0,1,2,3,4,5,6}, ytick={-12,-8,-4,0,4,8,12},
+      xlabel style={at={(axis description cs:0.5,-0.06)}, anchor=north},
+      ylabel style={at={(axis description cs:0,1.02)}, anchor=south, rotate=-90},
+      clip=false]
+    % 2S states (red)
+    \addplot[figR, thick, domain=0:6, samples=2] {-5+x};
+    \addplot[figR, thick, domain=0:6, samples=2] {-5-x};
+    % 2P states (blue)
+    \addplot[figB, thick, domain=0:6, samples=2] {-1+2*x};
+    \addplot[figB, thick, domain=0:6, samples=2] {-1-2*x};
+    \addplot[figB, thick, domain=0:6, samples=120] {-3+x/2+sqrt(4+2*x/3+x^2/4)};
+    \addplot[figB, thick, domain=0:6, samples=120] {-3+x/2-sqrt(4+2*x/3+x^2/4)};
+    \addplot[figB, thick, domain=0:6, samples=120] {-3-x/2+sqrt(4-2*x/3+x^2/4)};
+    \addplot[figB, thick, domain=0:6, samples=120] {-3-x/2-sqrt(4-2*x/3+x^2/4)};
+    % right-end labels (strong field)
+    \node[figB, font=\tiny, anchor=west] at (axis cs:6.05,11) {$(1, \uparrow)$};
+    \node[figB, font=\tiny, anchor=west] at (axis cs:6.05,3.84) {$(0, \uparrow)$};
+    \node[figR, font=\tiny, anchor=west] at (axis cs:6.05,1) {S$\uparrow$};
+    \node[figB, font=\tiny, anchor=west] at (axis cs:6.05,-2.6) {$(-1, \uparrow)$};
+    \node[figB, font=\tiny, anchor=west] at (axis cs:6.05,-4.4) {$(1, \downarrow)$};
+    \node[figB, font=\tiny, anchor=west] at (axis cs:6.05,-9.1) {$(0, \downarrow)$};
+    \node[figR, font=\tiny, anchor=west] at (axis cs:6.05,-11) {S$\downarrow$};
+    \node[figB, font=\tiny, anchor=west] at (axis cs:6.05,-13) {$(-1, \downarrow)$};
+    % left labels (zero field)
+    \node[font=\scriptsize, anchor=east, align=right] at (axis cs:-0.15,-1) {$2P_{3/2}$};
+    \node[font=\scriptsize, anchor=east, align=right] at (axis cs:-0.15,-5) {$2S_{1/2}$, $2P_{1/2}$};
+    \node[black!60, font=\scriptsize, anchor=north west] at (axis cs:0.1,12.2) {weak};
+    \node[black!60, font=\scriptsize, anchor=north] at (axis cs:2.3,12.2) {intermediate};
+    \node[black!60, font=\scriptsize, anchor=north east] at (axis cs:5.0,12.2) {strong $\rightarrow$};
+  \end{axis}
+\end{tikzpicture}

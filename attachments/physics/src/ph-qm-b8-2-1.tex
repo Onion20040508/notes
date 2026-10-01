@@ -1,0 +1,20 @@
+% Figure for Quantum Mechanics §B8.2 (two-dimensional oscillator with perturbation H' = eps m omega^2 x y: exact energies of the ground state and of the two states growing out of the degenerate first excited level, against the first-order energies 2 +- eps/2 from degenerate perturbation theory; after Griffiths Examples 7.2-7.3, eq. (7.21)).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9.5cm, height=6.2cm, xmin=0, xmax=0.8, ymin=0.6, ymax=2.75,
+      xlabel={$\epsilon$}, ylabel={$E/\hbar\omega$},
+      xtick={0,0.2,0.4,0.6,0.8}, ytick={1,1.5,2,2.5},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1.02)}, anchor=south, rotate=-90}]
+    \addplot[figR, thick, dashed, domain=0:0.8, samples=2] {2+x/2};
+    \addplot[figR, thick, dashed, domain=0:0.8, samples=2] {2-x/2};
+    \addplot[figR, thick, dashed, domain=0:0.8, samples=2] {1};
+    \addplot[figB, very thick, domain=0:0.8, samples=120] {1.5*sqrt(1+x)+0.5*sqrt(1-x)};
+    \addplot[figB, very thick, domain=0:0.8, samples=120] {0.5*sqrt(1+x)+1.5*sqrt(1-x)};
+    \addplot[figB, very thick, domain=0:0.8, samples=120] {0.5*sqrt(1+x)+0.5*sqrt(1-x)};
+    \node[figB, font=\scriptsize, anchor=west, align=left] at (axis cs:0.05,2.35) {$\psi_+^0 = (\psi_b^0 + \psi_a^0)/\sqrt2$};
+    \node[figB, font=\scriptsize, anchor=west, align=left] at (axis cs:0.05,1.68) {$\psi_-^0 = (\psi_b^0 - \psi_a^0)/\sqrt2$};
+    \node[figR, font=\scriptsize, anchor=south east] at (axis cs:0.79,2.42) {$2 + \epsilon/2$};
+    \node[figR, font=\scriptsize, anchor=south east] at (axis cs:0.79,1.63) {$2 - \epsilon/2$};
+    \node[figB, font=\scriptsize, anchor=north east] at (axis cs:0.79,0.88) {ground state (no first-order shift)};
+  \end{axis}
+\end{tikzpicture}

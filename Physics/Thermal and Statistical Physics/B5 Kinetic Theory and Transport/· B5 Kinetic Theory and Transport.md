@@ -13,9 +13,9 @@ tags: [chapter, thermal-and-statistical-physics]
 
 ## Sections
 - [[§B5.1 The Maxwell–Boltzmann Distribution and Effusion]] — Blundell 5–7; Schwartz L4
-- [[§B5.2 Mean Free Path and Transport Coefficients]] — Blundell 8–9
-- [[§B5.3 The Thermal Diffusion Equation]] — Blundell 10
-- [[§B5.4 Liouville's Theorem, the Boltzmann Equation and the H-Theorem]] — Schwartz L3; Blundell 34
+- [[§B5.2 Mean Free Path and Transport Coefficients]] ★ — Blundell 8–9
+- [[§B5.3 The Thermal Diffusion Equation]] ★ — Blundell 10
+- [[§B5.4 Liouville's Theorem, the Boltzmann Equation and the H-Theorem]] ★ — Schwartz L3; Blundell 34
 
 ## Laws
 - [[§B5.3 The Thermal Diffusion Equation#^law-b5-3-1|§B5.3.1]] Fourier's Law, Local Form

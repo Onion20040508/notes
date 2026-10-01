@@ -5,16 +5,16 @@ level: B
 chapter: B13
 tags: [chapter, thermal-and-statistical-physics]
 ---
-# B13 Fermi Gases
+# B13 Fermi Gases ★
 ← [[· B12 Bose–Einstein Condensation]] · ↑ [[Thermal and Statistical Physics]]
 
 **Builds on:** [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (6), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (4), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (2), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (4), [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (2), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (10)
 **Used by:** [[· B10 Quantum Statistics|B10 Quantum Statistics]] (1)
 
 ## Sections
-- [[§B13.1 The Degenerate Fermi Gas and Metals]] — Schwartz L13; Blundell 30; Schroeder 7.3
-- [[§B13.2 Semiconductors]] — Schwartz L14
-- [[§B13.3 White Dwarfs and Neutron Stars]] — Schwartz L15; Blundell 35–36
+- [[§B13.1 The Degenerate Fermi Gas and Metals]] ★ — Schwartz L13; Blundell 30; Schroeder 7.3
+- [[§B13.2 Semiconductors]] ★ — Schwartz L14
+- [[§B13.3 White Dwarfs and Neutron Stars]] ★ — Schwartz L15; Blundell 35–36
 
 ## Theorems
 - [[§B13.1 The Degenerate Fermi Gas and Metals#^thm-b13-1-2|§B13.1.2]] Ground State of the Ideal Fermi Gas

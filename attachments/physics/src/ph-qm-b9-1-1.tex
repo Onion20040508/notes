@@ -1,0 +1,17 @@
+% Figure for Quantum Mechanics §B9.1 (variational energy of a gaussian trial function A exp(-b x^2) for the delta-function well V = -alpha delta(x): <H> = hbar^2 b/2m - alpha sqrt(2b/pi), in units of m alpha^2/hbar^2 against b in units of m^2 alpha^2/hbar^4; minimum -1/pi at b = 2/pi, above the exact ground-state energy -1/2; after Griffiths Example 8.2).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9.5cm, height=6cm, xmin=0, xmax=2.6, ymin=-0.62, ymax=0.12,
+      xlabel={$b\,\hbar^4/m^2\alpha^2$}, ylabel={$\langle H\rangle\,\hbar^2/m\alpha^2$},
+      xtick={0,0.5,1,1.5,2,2.5}, ytick={-0.5,-0.25,0},
+      xlabel style={at={(axis description cs:0.5,-0.08)}, anchor=north},
+      ylabel style={at={(axis description cs:0,1.02)}, anchor=south, rotate=-90}]
+    \addplot[black!35, thin, domain=0:2.6, samples=2] {0};
+    \addplot[figR, thick, dashed, domain=0:2.6, samples=2] {-0.5};
+    \addplot[figB, very thick, domain=0:2.6, samples=200] {x/2-sqrt(2*x/pi)};
+    \draw[black!55, thin, densely dotted] (axis cs:0.6366,-0.62) -- (axis cs:0.6366,-0.3183);
+    \fill[figB] (axis cs:0.6366,-0.3183) circle (1.6pt);
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:0.7,-0.345) {best bound $-1/\pi$ at $b = 2/\pi$};
+    \node[figR, font=\scriptsize, anchor=south east] at (axis cs:2.55,-0.49) {exact $E_{\text{gs}} = -1/2$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.75,-0.06) {$\langle H\rangle(b)$};
+  \end{axis}
+\end{tikzpicture}

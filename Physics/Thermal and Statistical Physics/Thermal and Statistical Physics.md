@@ -9,7 +9,7 @@ tags: [subject, thermal-and-statistical-physics]
 ---
 # Thermal and Statistical Physics
 
-Temperature, heat, the kinetic theory of gases and the laws of thermodynamics, then statistical mechanics, in three levels: **A** introductory (University Physics Vol. 2; PHY 287), **B** upper-level (PHY 306; Schroeder; Blundell; Schwartz's statistical-mechanics lectures; the user's own notes), **C** graduate. Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). The mechanics it uses is in [[Classical Mechanics]].
+Temperature, heat, the kinetic theory of gases and the laws of thermodynamics, then statistical mechanics, in three levels: **A** introductory (University Physics Vol. 2; PHY 287), **B** upper-level (PHY 306; Schroeder; Blundell; Schwartz's statistical-mechanics lectures; the user's own notes), **C** graduate. Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). The mechanics it uses is in [[Classical Mechanics]]. At level B, ★ marks material beyond the course (PHY 306: its syllabus, problem sets and the user's notes): whole sections are starred in the lists below, and folded ★ callouts inside a section are side topics.
 
 ## Level A — introductory
 - [[· A1 Temperature and Heat]]
@@ -20,17 +20,17 @@ Temperature, heat, the kinetic theory of gases and the laws of thermodynamics, t
 ## Level B — upper
 - [[· B1 The Mathematical Toolkit of Thermodynamics]]
 - [[· B2 The Laws of Thermodynamics, Formally]]
-- [[· B3 Thermodynamic Potentials]]
+- [[· B3 Thermodynamic Potentials]] (★ §B3.4)
 - [[· B4 Probability and Fluctuations]]
-- [[· B5 Kinetic Theory and Transport]]
+- [[· B5 Kinetic Theory and Transport]] (★ §B5.2, §B5.3, §B5.4)
 - [[· B6 The Microcanonical Ensemble and Entropy]]
 - [[· B7 The Canonical and Grand Canonical Ensembles]]
 - [[· B8 The Classical Ideal Gas and Equipartition]]
-- [[· B9 Phases and Phase Transitions]]
+- [[· B9 Phases and Phase Transitions]] (★ §B9.2, §B9.3)
 - [[· B10 Quantum Statistics]]
-- [[· B11 Photons and Phonons]]
-- [[· B12 Bose–Einstein Condensation]]
-- [[· B13 Fermi Gases]]
+- [[· B11 Photons and Phonons]] ★
+- [[· B12 Bose–Einstein Condensation]] ★
+- [[· B13 Fermi Gases]] ★
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -51,9 +51,9 @@ graph TD
   B8["B8 The Classical Ideal Gas and Equipartition"]
   B9["B9 Phases and Phase Transitions"]
   B10["B10 Quantum Statistics"]
-  B11["B11 Photons and Phonons"]
-  B12["B12 Bose–Einstein Condensation"]
-  B13["B13 Fermi Gases"]
+  B11["B11 Photons and Phonons ★"]
+  B12["B12 Bose–Einstein Condensation ★"]
+  B13["B13 Fermi Gases ★"]
   A2 -->|9| A3
   A1 -->|4| A4
   A2 -->|5| A4

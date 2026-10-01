@@ -1,0 +1,44 @@
+% Figure for Quantum Mechanics §B8.3 (fine structure of hydrogen for n = 1, 2, 3: level shifts E_fs = -(13.6 eV) alpha^2/n^4 [n/(j+1/2) - 3/4] from Griffiths eq. (7.68)-(7.69), drawn to scale within each panel, each panel with its own scale; columns S, P, D are l = 0, 1, 2).
+\begin{tikzpicture}[font=\small]
+  \tikzset{lev/.style={very thick, figB}, bohr/.style={black!55, densely dashed, thin}, tl/.style={font=\scriptsize, anchor=south}, ax/.style={thin, black!55}}
+  % ---------- n = 1 (scale 0.015 cm per micro-eV)
+  \begin{scope}
+    \draw[ax] (0,0.4) -- (0,-3.2);
+    \foreach \v/\w in {0/0,100/-100,200/-200} { \draw[ax] (-0.08,{-0.015*\v}) -- (0,{-0.015*\v}); \node[font=\tiny, anchor=east, black!70] at (-0.08,{-0.015*\v}) {$\w$}; }
+    \draw[bohr] (0.2,0) -- (2.9,0); \node[font=\scriptsize, black!65, anchor=south west] at (1.2,0.02) {Bohr $E_1$};
+    \draw[lev] (0.3,-2.717) -- (0.9,-2.717); \node[tl] at (0.6,-2.70) {$1S_{1/2}$};
+    \node[font=\scriptsize, anchor=west] at (1.0,-2.717) {$-181\ \mu$eV};
+    \node[font=\small] at (1.5,-3.75) {$n = 1$};
+    \node[font=\scriptsize, black!65] at (0.6,-3.35) {S};
+  \end{scope}
+  % ---------- n = 2 (scale 0.05 cm per micro-eV)
+  \begin{scope}[xshift=4.3cm]
+    \draw[ax] (0,0.4) -- (0,-3.2);
+    \foreach \v/\w in {0/0,20/-20,40/-40,60/-60} { \draw[ax] (-0.08,{-0.05*\v}) -- (0,{-0.05*\v}); \node[font=\tiny, anchor=east, black!70] at (-0.08,{-0.05*\v}) {$\w$}; }
+    \draw[bohr] (0.2,0) -- (2.9,0); \node[font=\scriptsize, black!65, anchor=south west] at (1.2,0.02) {Bohr $E_2$};
+    \draw[lev] (0.3,-2.830) -- (0.9,-2.830); \node[tl] at (0.6,-2.82) {$2S_{1/2}$};
+    \draw[lev] (1.2,-2.830) -- (1.8,-2.830); \node[tl] at (1.5,-2.82) {$2P_{1/2}$};
+    \draw[lev] (1.2,-0.566) -- (1.8,-0.566); \node[tl] at (1.5,-0.56) {$2P_{3/2}$};
+    \node[font=\scriptsize, anchor=west] at (1.9,-2.830) {$j = \tfrac12$};
+    \node[font=\scriptsize, anchor=west] at (1.9,-0.566) {$j = \tfrac32$};
+    \node[font=\scriptsize, black!65] at (0.6,-3.35) {S}; \node[font=\scriptsize, black!65] at (1.5,-3.35) {P};
+    \node[font=\small] at (1.5,-3.75) {$n = 2$};
+  \end{scope}
+  % ---------- n = 3 (scale 0.14 cm per micro-eV)
+  \begin{scope}[xshift=8.6cm]
+    \draw[ax] (0,0.4) -- (0,-3.2);
+    \foreach \v/\w in {0/0,10/-10,20/-20} { \draw[ax] (-0.08,{-0.14*\v}) -- (0,{-0.14*\v}); \node[font=\tiny, anchor=east, black!70] at (-0.08,{-0.14*\v}) {$\w$}; }
+    \draw[bohr] (0.2,0) -- (3.0,0); \node[font=\scriptsize, black!65, anchor=south west] at (1.2,0.02) {Bohr $E_3$};
+    \draw[lev] (0.3,-2.818) -- (0.9,-2.818); \node[tl] at (0.6,-2.81) {$3S_{1/2}$};
+    \draw[lev] (1.2,-2.818) -- (1.8,-2.818); \node[tl] at (1.5,-2.81) {$3P_{1/2}$};
+    \draw[lev] (1.2,-0.939) -- (1.8,-0.939); \node[font=\scriptsize, anchor=north] at (1.5,-0.96) {$3P_{3/2}$};
+    \draw[lev] (2.1,-0.939) -- (2.7,-0.939); \node[font=\scriptsize, anchor=north] at (2.4,-0.96) {$3D_{3/2}$};
+    \draw[lev] (2.1,-0.313) -- (2.7,-0.313); \node[font=\scriptsize, anchor=east] at (2.05,-0.313) {$3D_{5/2}$};
+    \node[font=\scriptsize, anchor=west] at (2.8,-2.818) {$j = \tfrac12$};
+    \node[font=\scriptsize, anchor=west] at (2.8,-0.939) {$j = \tfrac32$};
+    \node[font=\scriptsize, anchor=west] at (2.8,-0.313) {$j = \tfrac52$};
+    \node[font=\scriptsize, black!65] at (0.6,-3.35) {S}; \node[font=\scriptsize, black!65] at (1.5,-3.35) {P}; \node[font=\scriptsize, black!65] at (2.4,-3.35) {D};
+    \node[font=\small] at (1.5,-3.75) {$n = 3$};
+  \end{scope}
+  \node[font=\scriptsize, black!70, anchor=south west] at (-0.6,0.5) {shift from the Bohr level ($\mu$eV), scale differs per panel};
+\end{tikzpicture}

@@ -1,0 +1,18 @@
+% Figure for Quantum Mechanics §B1.4 (free Gaussian packet of Theorem §B1.4.4, units hbar = m = 1, sigma = 1, k0 = 2, x0 = 0, tau = 2 m sigma^2/hbar = 2: left |Psi(x,t)|^2 at t = 0, tau, 2 tau, 3 tau, Gaussian of centre v0 t and width sigma sqrt(1 + t^2/tau^2); right |phi(k)|^2 = sqrt(2/pi) sigma exp(-2 sigma^2 (k - k0)^2), the same at all t).
+\begin{tikzpicture}
+  \begin{axis}[nfig, name=L, scale only axis, width=8.2cm, height=3.6cm, xmin=-4, xmax=22, ymin=0, ymax=0.46, xlabel={$x/\sigma$}, ylabel={$\sigma\,|\Psi(x,t)|^2$}, xtick={0,4,8,12,16,20}, ytick={0,0.2,0.4}, samples=261, clip=false]
+    \addplot[figB, domain=-4:22] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot[figG, domain=-4:22] {exp(-(x-4)^2/4)/sqrt(2*pi*2)};
+    \addplot[figO, domain=-4:22] {exp(-(x-8)^2/10)/sqrt(2*pi*5)};
+    \addplot[figR, domain=-4:22] {exp(-(x-12)^2/20)/sqrt(2*pi*10)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.7,0.40) {$t = 0$};
+    \node[figG, font=\scriptsize, anchor=west] at (axis cs:4.9,0.28) {$\tau$};
+    \node[figO, font=\scriptsize, anchor=west] at (axis cs:9.6,0.185) {$2\tau$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:15.2,0.12) {$3\tau$};
+  \end{axis}
+  \begin{axis}[nfig, at={(L.east)}, anchor=west, xshift=1.6cm, scale only axis, width=3.4cm, height=3.6cm, xmin=0, xmax=4.2, ymin=0, ymax=0.9, xlabel={$k\sigma$}, ylabel={$|\phi(k)|^2/\sigma$}, xtick={0,1,2,3,4}, ytick={0,0.4,0.8}, samples=161, clip=false]
+    \addplot[black, domain=0:4.2] {sqrt(2/pi)*exp(-2*(x-2)^2)};
+    \draw[black!55, thin, densely dotted] (axis cs:2,0) -- (axis cs:2,0.8);
+    \node[font=\scriptsize, black!70, anchor=west] at (axis cs:2.55,0.7) {all $t$};
+  \end{axis}
+\end{tikzpicture}

@@ -5,14 +5,14 @@ level: B
 chapter: B12
 tags: [chapter, thermal-and-statistical-physics]
 ---
-# B12 Bose–Einstein Condensation
+# B12 Bose–Einstein Condensation ★
 ← [[· B11 Photons and Phonons]] · ↑ [[Thermal and Statistical Physics]] · [[· B13 Fermi Gases]] →
 
 **Builds on:** [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (2), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (17)
 **Used by:** [[· B10 Quantum Statistics|B10 Quantum Statistics]] (1)
 
 ## Sections
-- [[§B12.1 Bose–Einstein Condensation]] — Schwartz L12; Blundell 30; Schroeder 7.6
+- [[§B12.1 Bose–Einstein Condensation]] ★ — Schwartz L12; Blundell 30; Schroeder 7.6
 
 ## Theorems
 - [[§B12.1 Bose–Einstein Condensation#^thm-b12-1-2|§B12.1.2]] Ground-State and Excited-State Occupations

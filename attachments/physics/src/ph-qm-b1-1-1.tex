@@ -1,0 +1,23 @@
+% Figure for Quantum Mechanics §B1.1 (probability density rho and current J of a free Gaussian packet, units hbar = m = 1, sigma = 1, k0 = 1.5, tau = 2 m sigma^2/hbar = 2; exact formulas of Theorem §B1.4.4: rho Gaussian of centre v0 t and width s(t) = sqrt(1 + t^2/tau^2), J = rho [v0 + (x - v0 t) t/(t^2 + tau^2)]; at t = 0 and t = 2 tau).
+\begin{tikzpicture}
+  \begin{axis}[nfig, scale only axis, width=10.5cm, height=4.2cm, xmin=-4, xmax=14, ymin=0, ymax=0.68, xlabel={$x$}, ylabel={$\rho$,\ \ $J$}, xtick={-4,-2,0,2,4,6,8,10,12,14}, ytick={0,0.2,0.4,0.6}, clip=false, samples=241]
+    % t = 0
+    \addplot[figB, domain=-4:14] {exp(-x^2/2)/sqrt(2*pi)};
+    \addplot[figR, dashed, domain=-4:14] {1.5*exp(-x^2/2)/sqrt(2*pi)};
+    % t = 2 tau = 4: s^2 = 5, centre 6
+    \addplot[figB, domain=-4:14, line width=0.9pt, opacity=0.55] {exp(-(x-6)^2/10)/sqrt(2*pi*5)};
+    \addplot[figR, dashed, domain=-4:14, opacity=0.55] {exp(-(x-6)^2/10)/sqrt(2*pi*5)*(1.5+0.2*(x-6))};
+    \addplot[black!55, densely dotted, domain=-4:14, line width=0.8pt] {1.5*exp(-(x-6)^2/10)/sqrt(2*pi*5)};
+    % centres
+    \draw[black!55, thin, densely dotted] (axis cs:0,0) -- (axis cs:0,0.64);
+    \draw[black!55, thin, densely dotted] (axis cs:6,0) -- (axis cs:6,0.64);
+    \node[font=\scriptsize, black!70, anchor=south] at (axis cs:0,0.64) {$t = 0$};
+    \node[font=\scriptsize, black!70, anchor=south] at (axis cs:6,0.64) {$t = 2\tau$};
+    % labels
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.75,0.56) {$J$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:-2.3,0.36) {$\rho$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:8.1,0.25) {$J$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:3.6,0.19) {$\rho$};
+    \node[black!60, font=\scriptsize, anchor=east] at (axis cs:4.3,0.27) {$v_0\rho$};
+  \end{axis}
+\end{tikzpicture}
