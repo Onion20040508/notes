@@ -9,7 +9,7 @@ tags: [calculus, math233]
 ---
 ← [[§98 Double Integrals Over Rectangles]] · ↑ [[· 15 Multiple Integrals]] · [[§100 Double Integrals in Polar Coordinates]] →
 
-*Stewart, Section 15.2 · MATH 233 (UMass, Spring 2023): Exam 2 Practice Questions (Q7, Q10, Q11), Practice Final Set 1 (Part I, Q2).*
+*Stewart, Section 15.2 · MATH 233 (UMass, Spring 2023): Exam 2 Practice Questions (Q7, Q10, Q11), Practice Final Exam (Q1(b)), Practice Final Set 1 (Part I, Q2).*
 
 A double integral over a bounded region $D$ is defined by enclosing $D$ in a rectangle and extending the integrand by $0$. For the two kinds of region met in practice, those lying between two graphs $y = g_1(x)$, $y = g_2(x)$ (type I) or $x = h_1(y)$, $x = h_2(y)$ (type II), Fubini's Theorem turns the integral into an iterated integral whose inner limits are functions. The real work is reading the limits off a sketch of $D$. Describing the same region the other way reverses the order of integration, which can make an impossible iterated integral easy. The section ends with the properties of double integrals: linearity, comparison, additivity over regions, area, and the resulting bounds.
 

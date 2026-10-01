@@ -1,0 +1,23 @@
+% Figure for Calculus §95.
+\begin{tikzpicture}[x=1.5cm, y=1.5cm, font=\scriptsize]
+  \begin{scope}
+    \clip (0,-0.7) rectangle (3.5,2.4);
+    \foreach \c in {1,3,4,5,6,8,10} {
+      \draw[figG!70!black, thin] plot[domain=0.08:3.5, samples=100] (\x,{ln(\c/\x)});
+    }
+    \draw[figG!70!black, very thick] plot[domain=0.08:3.5, samples=100] (\x,{ln(2/\x)});
+  \end{scope}
+  \draw[-stealth, thin, black!70] (-0.1,0) -- (3.65,0) node[below] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.75) -- (0,2.55) node[above] {$y$};
+  \foreach \t in {1,3} \draw[thin, black!70] (\t,0.04) -- (\t,-0.04) node[below, fill=white, inner sep=1pt] {$\t$};
+  \foreach \t in {1,2} \draw[thin, black!70] (0.04,\t) -- (-0.04,\t) node[left] {$\t$};
+  % labels of a few level curves at the right edge
+  \foreach \c in {2,4,8} \node[figG!70!black, anchor=west] at (3.5,{ln(\c/3.5)}) {$xe^y=\c$};
+  % gradient and direction to Q
+  \draw[-{Stealth[length=6pt]}, figR, very thick] (2,0) -- (3,2) node[above, fill=white, inner sep=1pt] {$\nabla f(2,0)=\langle 1,2\rangle$};
+  \draw[-{Stealth[length=6pt]}, figB, very thick] (2,0) -- (0.5,2);
+  \fill[figB] (0.5,2) circle (1.4pt) node[above right, fill=white, inner sep=1pt] {$Q(\frac12,2)$};
+  \fill (2,0) circle (1.5pt) node[below right, fill=white, inner sep=1pt, xshift=2pt] {$P(2,0)$};
+  % right-angle mark between gradient and tangent of level curve at P (tangent direction <2,-1>)
+  \draw[thin] ($(2,0)+0.16*(0.4472,0.8944)$) -- ++($0.16*(0.8944,-0.4472)$) -- ($(2,0)+0.16*(0.8944,-0.4472)$);
+\end{tikzpicture}

@@ -228,7 +228,7 @@ When setting up a line integral, the hardest step is often finding a parametric 
 > \end{aligned}
 > $$
 >
-> The two curves have the same endpoints but give different answers: in general a line integral depends on the path, not only on its endpoints ([[§109 The Fundamental Theorem for Line Integrals#^def-109-1|§109]] studies when it does not). The answers also depend on the direction: for $-C_1$, the segment from $(0, 2)$ to $(-5, -3)$, parametrized by $x = -5t$, $y = 2 - 5t$, $0 \le t \le 1$, one finds $\int_{-C_1} y^2\,dx + x\,dy = \frac56$.
+> The two curves have the same endpoints but give different answers: in general a line integral depends on the path, not only on its endpoints ([[§109 The Fundamental Theorem for Line Integrals#^def-109-1|Definition §109.1]] and the theorems after it say when it does not). The answers also depend on the direction: for $-C_1$, the segment from $(0, 2)$ to $(-5, -3)$, parametrized by $x = -5t$, $y = 2 - 5t$, $0 \le t \le 1$, one finds $\int_{-C_1} y^2\,dx + x\,dy = \frac56$.
 >
 > *Stewart: Example 16.2.4*
 

@@ -1,0 +1,31 @@
+% Figure for Relativity §B4.1 (Klein–Gordon dispersion omega^2 = c^2 k^2 + (mc^2/hbar)^2 in units x = k*lambdabar_C, y = hbar*omega/mc^2; light line; nonrelativistic 1 + x^2/2; phase and group velocities; pion at p = 200 MeV/c, x = 1.4327; all computed).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=6.6cm, height=5.6cm, xmin=0, xmax=3.1, ymin=0, ymax=3.4,
+      xlabel={$k\bar\lambda_C = p/mc$}, ylabel={$\hbar\omega/mc^2$},
+      xtick={0,1,2,3}, ytick={0,1,2,3},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      legend style={font=\scriptsize, at={(axis cs:0.08,3.3)}, anchor=north west, draw=black!30},
+      legend cell align=left, clip=true]
+    \addplot[figR, domain=0:3.1, samples=150] {sqrt(1 + x^2)};
+    \addlegendentry{Klein--Gordon}
+    \addplot[black!50, dashed, domain=0:3.1, samples=2] {x};
+    \addlegendentry{massless, $\omega = ck$}
+    \addplot[figG, densely dotted, domain=0:3.1, samples=100] {1 + x^2/2};
+    \addlegendentry{non-relativistic}
+    \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(1.4327,1.7473)};
+    \node[font=\scriptsize, anchor=north west] at (axis cs:1.47,1.72) {pion};
+  \end{axis}
+  \begin{axis}[nfig, xshift=7.6cm, width=6.6cm, height=5.6cm, xmin=0, xmax=3.1, ymin=0, ymax=3.4,
+      xlabel={$k\bar\lambda_C$}, ylabel={velocity$/c$},
+      xtick={0,1,2,3}, ytick={0,1,2,3},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
+      legend style={font=\scriptsize, at={(axis cs:3.05,3.3)}, anchor=north east, draw=black!30},
+      legend cell align=left, clip=true]
+    \addplot[figB, domain=0.3:3.1, samples=150] {sqrt(1 + 1/x^2)};
+    \addlegendentry{phase velocity $v_p$}
+    \addplot[figR, domain=0:3.1, samples=150] {x/sqrt(1 + x^2)};
+    \addlegendentry{group velocity $v_g$}
+    \addplot[black!40, thin, dotted, domain=0:3.1, samples=2] {1};
+    \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(1.4327,1.2196) (1.4327,0.8200)};
+  \end{axis}
+\end{tikzpicture}

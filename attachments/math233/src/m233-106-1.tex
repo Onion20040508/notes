@@ -1,0 +1,33 @@
+% Figure for Calculus §106.
+\begin{tikzpicture}[scale=1.25, font=\scriptsize,
+    mid arrow/.style={postaction={decorate}, decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=4pt]}}}}]
+  % uv-plane
+  \begin{scope}
+    \fill[figG!15] (0,0) rectangle (1,1);
+    \draw[-stealth, thin, black!70] (-0.3,0) -- (1.5,0) node[right] {$u$};
+    \draw[-stealth, thin, black!70] (0,-0.3) -- (0,1.5) node[above] {$v$};
+    \draw[figB, thick, mid arrow] (0,0) -- (1,0) node[midway, below] {$S_1$};
+    \draw[figR, thick, mid arrow] (1,0) -- (1,1) node[midway, right] {$S_2$};
+    \draw[figO, thick, mid arrow] (1,1) -- (0,1) node[midway, above] {$S_3$};
+    \draw[figG!70!black, thick, mid arrow] (0,1) -- (0,0) node[midway, left] {$S_4$};
+    \node at (0.5,0.5) {$S$};
+    \node[below left] at (0,0) {$0$}; \node[below] at (1,-0.15) {$1$};
+    \fill (1,1) circle (1pt) node[above right] {$(1,1)$};
+  \end{scope}
+  \draw[-stealth, thick, black!60] (1.9,0.7) -- (2.7,0.7) node[midway, above] {$T$};
+  % xy-plane
+  \begin{scope}[xshift=4.2cm]
+    \fill[figB!12] plot[domain=0:2, samples=40] ({1-\x*\x/4},\x) -- plot[domain=2:0, samples=40] ({\x*\x/4-1},\x) -- cycle;
+    \draw[-stealth, thin, black!70] (-1.5,0) -- (1.6,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-0.3) -- (0,2.5) node[above] {$y$};
+    \draw[figB, thick, mid arrow] (0,0) -- (1,0);
+    \draw[figR, thick, mid arrow] plot[domain=0:2, samples=40] ({1-\x*\x/4},\x);
+    \draw[figO, thick, mid arrow] plot[domain=2:0, samples=40] ({\x*\x/4-1},\x);
+    \draw[figG!70!black, thick, mid arrow] (-1,0) -- (0,0);
+    \node[figR, right] at (0.75,1.1) {$x=1-\tfrac{y^2}{4}$};
+    \node[figO, left] at (-0.75,1.1) {$x=\tfrac{y^2}{4}-1$};
+    \node at (0,0.7) [fill=figB!12, inner sep=1pt] {$R$};
+    \node[below] at (-1,0) {$-1$}; \node[below] at (1,0) {$1$};
+    \fill (0,2) circle (1pt) node[above right] {$(0,2)$};
+  \end{scope}
+\end{tikzpicture}

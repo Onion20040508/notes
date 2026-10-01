@@ -1,0 +1,30 @@
+% Figure for Calculus §121.
+\begin{tikzpicture}[font=\scriptsize]
+  % left panel: ln x as an area
+  \begin{scope}[x=1.15cm, y=1.15cm]
+    \fill[figB!20] (1,0) -- plot[domain=1:2.6, samples=60] (\x,{1/\x}) -- (2.6,0) -- cycle;
+    \draw[-stealth, thin, black!70] (0,0) -- (3.4,0) node[right] {$t$};
+    \draw[-stealth, thin, black!70] (0,0) -- (0,2.7) node[above] {$y$};
+    \draw[figB, thick] plot[domain=0.4:3.2, samples=100] (\x,{1/\x});
+    \node[figB] at (1.35,1.55) {$y = \frac1t$};
+    \node at (1.75,0.25) {$\ln x$};
+    \draw[thin] (1,0.06) -- (1,-0.06) node[below] {$1$};
+    \draw[thin] (2.6,0.06) -- (2.6,-0.06) node[below] {$x$};
+    \node[below left] at (0,0) {$0$};
+  \end{scope}
+  % right panel: bounds for ln 2
+  \begin{scope}[shift={(5.0,0)}, x=2.0cm, y=2.0cm]
+    \fill[figB!20] (1,0) -- plot[domain=1:2, samples=60] (\x,{1/\x}) -- (2,0) -- cycle;
+    \draw[-stealth, thin, black!70] (0,0) -- (2.5,0) node[right] {$t$};
+    \draw[-stealth, thin, black!70] (0,0) -- (0,1.55) node[above] {$y$};
+    \draw[figB, thick] plot[domain=0.68:2.4, samples=100] (\x,{1/\x});
+    \draw[figG, thick] (1,0) rectangle (2,0.5);
+    \draw[figR, thick, dashed] (1,0) -- (1,1) -- (2,0.5) -- (2,0);
+    \fill (1,1) circle (1.3pt) node[above right] {$A$};
+    \fill (2,0.5) circle (1.3pt) node[above right] {$D$};
+    \node[below] at (1,0) {$1$};
+    \node[below] at (2,0) {$2$};
+    \node[figG, left] at (1,0.5) {$\frac12$};
+    \node[below left] at (0,0) {$0$};
+  \end{scope}
+\end{tikzpicture}

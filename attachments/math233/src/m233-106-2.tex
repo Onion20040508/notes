@@ -1,0 +1,36 @@
+% Figure for Calculus §106.
+\begin{tikzpicture}[scale=1.25, font=\scriptsize,
+    declare function={X(\u,\v)=0.6*\u*\u-0.25*\v*\v+0.3*\u*\v; Y(\u,\v)=0.5*\u*\v+0.35*\v*\v+0.15*\u;}]
+  % uv-plane
+  \begin{scope}
+    \draw[-stealth, thin, black!70] (-0.2,0) -- (2.6,0) node[right] {$u$};
+    \draw[-stealth, thin, black!70] (0,-0.2) -- (0,2.3) node[above] {$v$};
+    \fill[figG!20] (0.9,0.8) rectangle (1.4,1.2);
+    \draw[figG!70!black, thick] (0.9,0.8) rectangle (1.4,1.2);
+    \node at (1.15,1.0) {$S$};
+    \fill (0.9,0.8) circle (1pt) node[below left] {$(u_0,v_0)$};
+    \draw[|-|, black!60] (0.9,0.6) -- (1.4,0.6) node[midway, below] {$\Delta u$};
+    \draw[|-|, black!60] (1.6,0.8) -- (1.6,1.2) node[midway, right] {$\Delta v$};
+  \end{scope}
+  \draw[-stealth, thick, black!60] (2.2,1.0) -- (3.0,1.0) node[midway, above] {$T$};
+  % xy-plane: image of S under the map (u,v) -> (X,Y) scaled and shifted
+  \begin{scope}[xshift=3.9cm, yshift=-0.3cm, x=2.7cm, y=2.7cm]
+    \draw[-stealth, thin, black!70] (-0.1,0) -- (1.6,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-0.05) -- (0,1.2) node[above] {$y$};
+    \def\ua{0.9} \def\ub{1.4} \def\va{0.8} \def\vb{1.2}
+    \fill[figB!15] plot[domain=\ua:\ub, samples=20] ({X(\x,\va)},{Y(\x,\va)}) -- plot[domain=\va:\vb, samples=20] ({X(\ub,\x)},{Y(\ub,\x)})
+       -- plot[domain=\ub:\ua, samples=20] ({X(\x,\vb)},{Y(\x,\vb)}) -- plot[domain=\vb:\va, samples=20] ({X(\ua,\x)},{Y(\ua,\x)}) -- cycle;
+    \draw[figB, thick] plot[domain=\ua:\ub, samples=20] ({X(\x,\va)},{Y(\x,\va)}) -- plot[domain=\va:\vb, samples=20] ({X(\ub,\x)},{Y(\ub,\x)})
+       -- plot[domain=\ub:\ua, samples=20] ({X(\x,\vb)},{Y(\x,\vb)}) -- plot[domain=\vb:\va, samples=20] ({X(\ua,\x)},{Y(\ua,\x)}) -- cycle;
+    % tangent vectors at (u0,v0): r_u = (1.2u+0.3v, 0.5v+0.15), r_v = (-0.5v+0.3u, 0.5u+0.7v)
+    \pgfmathsetmacro{\xo}{X(\ua,\va)} \pgfmathsetmacro{\yo}{Y(\ua,\va)}
+    \pgfmathsetmacro{\aux}{(1.2*\ua+0.3*\va)*(\ub-\ua)} \pgfmathsetmacro{\auy}{(0.5*\va+0.15)*(\ub-\ua)}
+    \pgfmathsetmacro{\avx}{(-0.5*\va+0.3*\ua)*(\vb-\va)} \pgfmathsetmacro{\avy}{(0.5*\ua+0.7*\va)*(\vb-\va)}
+    \fill[figR!15, opacity=0.8] (\xo,\yo) -- ++(\aux,\auy) -- ++(\avx,\avy) -- ++(-\aux,-\auy) -- cycle;
+    \draw[figR, thin] (\xo,\yo) -- ++(\aux,\auy) -- ++(\avx,\avy) -- ++(-\aux,-\auy) -- cycle;
+    \draw[figR, thick, -stealth] (\xo,\yo) -- ++(\aux,\auy) node[midway, below right] {$\Delta u\,\mathbf r_u$};
+    \draw[figR, thick, -stealth] (\xo,\yo) -- ++(\avx,\avy) node[midway, left] {$\Delta v\,\mathbf r_v$};
+    \fill (\xo,\yo) circle (1pt) node[below left] {$(x_0,y_0)$};
+    \node[figB, right] at (1.08,0.62) {$R=T(S)$};
+  \end{scope}
+\end{tikzpicture}

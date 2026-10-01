@@ -122,7 +122,7 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 > 1. **For a line integral $\oint_C \mathbf{F} \cdot d\mathbf{r}$ around a closed space curve:** compute $\operatorname{curl}\mathbf{F}$, and choose the simplest surface $S$ with boundary $C$, usually the flat piece of a plane (a disk, an ellipse, a polygon) or a piece of a surface on which $C$ lies.
 > 2. **For the flux of a curl $\iint_S \operatorname{curl}\mathbf{F} \cdot d\mathbf{S}$:** either compute $\oint_{\partial S} \mathbf{F} \cdot d\mathbf{r}$ directly, or replace $S$ by a simpler surface with the same boundary (Corollary §114.2).
 > 3. **Match the orientations** (Definition §114.1): counterclockwise from above goes with the upward normal; for a curve described "as viewed from the positive $x$-axis", the matching normal points toward $+x$.
-> 4. **Evaluate** with Formula 9 or 10 of [[§113 Surface Integrals#^thm-113-3|§113]]; on a horizontal disk $\operatorname{curl}\mathbf{F} \cdot \mathbf{k}$ is just the $\mathbf{k}$-component, and if it is constant the answer is that constant times the area.
+> 4. **Evaluate** with Formula 9 or 10 ([[§113 Surface Integrals#^thm-113-3|Theorem §113.3]], [[§113 Surface Integrals#^thm-113-4|Theorem §113.4]]); on a horizontal disk $\operatorname{curl}\mathbf{F} \cdot \mathbf{k}$ is just the $\mathbf{k}$-component, and if it is constant the answer is that constant times the area.
 
 ^rem-114-2
 

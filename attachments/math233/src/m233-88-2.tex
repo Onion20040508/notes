@@ -1,0 +1,14 @@
+% Figure for Calculus §88.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth]
+  \begin{axis}[view={160}{12}, width=7.5cm, height=8.2cm, axis lines=center, axis line style={-stealth, black!60},
+      xlabel={$x$}, ylabel={$y$}, zlabel={$z$}, ticks=none, xmin=-1.8, xmax=1.9, ymin=-1.8, ymax=1.9, zmin=0, zmax=4.9, clip=false]
+    \addplot3[figB!35, thin, domain=0:360, samples=60, samples y=1] ({cos(x)}, {sin(x)}, 0);
+    \addplot3[black!70, thick, domain=0:4.4, samples=150, samples y=1] ({cos(deg(x))}, {sin(deg(x))}, x);
+    \draw[->, figR, very thick] (axis cs:-0.589,0.808,2.200) -- (axis cs:-1.217,0.351,2.978) node[anchor=west] {$\mathbf{T}$};
+    \draw[->, figB, very thick] (axis cs:-0.589,0.808,2.200) -- (axis cs:0.059,-0.081,2.200) node[anchor=north] {$\mathbf{N}$};
+    \draw[->, figG, very thick] (axis cs:-0.589,0.808,2.200) -- (axis cs:0.040,1.266,2.978) node[anchor=south] {$\mathbf{B}$};
+    \draw[black!40, dashed] (axis cs:-0.589,0.808,2.200) -- (axis cs:0,0,2.200);
+    \fill (axis cs:-0.589,0.808,2.200) circle (1.6pt);
+    \node[anchor=north west] at (axis cs:-0.589,0.808,2.200) {$P$};
+  \end{axis}
+\end{tikzpicture}

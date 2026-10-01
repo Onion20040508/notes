@@ -1,0 +1,21 @@
+% Figure for Calculus §115.
+\begin{tikzpicture}[x=1cm, y=1cm, font=\scriptsize]
+  \fill[figB!12, even odd rule] plot[smooth cycle, tension=0.8] coordinates {(-2.6,0.2) (-1.6,1.7) (0.4,1.9) (2.4,1.3) (2.7,-0.6) (1.0,-1.8) (-1.5,-1.5)} (0.1,0.05) circle (0.8);
+  \draw[figB, thick] plot[smooth cycle, tension=0.8] coordinates {(-2.6,0.2) (-1.6,1.7) (0.4,1.9) (2.4,1.3) (2.7,-0.6) (1.0,-1.8) (-1.5,-1.5)};
+  \draw[figG, thick] (0.1,0.05) circle (0.8);
+  \fill (0.1,0.05) circle (1.2pt);
+  % inner normals: outward n1 (dashed) and -n1 (solid red, pointing into the inner region)
+  \foreach \a in {30,150,270} {
+    \draw[figG, dashed, -{Stealth[length=4pt]}] ({0.1+0.8*cos(\a)},{0.05+0.8*sin(\a)}) -- ++({0.55*cos(\a)},{0.55*sin(\a)});
+    \draw[figR, thick, -{Stealth[length=5pt]}] ({0.1+0.8*cos(\a)},{0.05+0.8*sin(\a)}) -- ++({-0.5*cos(\a)},{-0.5*sin(\a)});
+  }
+  \node[figG, right] at ({0.1+1.35*cos(30)},{0.05+1.35*sin(30)}) {$\mathbf{n}_1$};
+  \node[figR] at (0.62,-0.3) {$-\mathbf{n}_1$};
+  % outer normals
+  \draw[figR, thick, -{Stealth[length=5pt]}] (2.7,-0.6) -- ++(0.65,-0.1) node[right] {$\mathbf{n}_2$};
+  \draw[figR, thick, -{Stealth[length=5pt]}] (0.4,1.9) -- ++(0.05,0.6) node[above] {$\mathbf{n}_2$};
+  \draw[figR, thick, -{Stealth[length=5pt]}] (-2.6,0.2) -- ++(-0.6,0.05) node[left] {$\mathbf{n}_2$};
+  \node[figG] at (0.95,-0.75) {$S_1$};
+  \node[figB] at (-1.9,-1.45) {$S_2$};
+  \node[font=\small] at (-1.5,0.3) {$E$};
+\end{tikzpicture}

@@ -19,8 +19,8 @@
   \draw[figR!80!black] plot[domain=0:\ph, samples=20] ({0.75*sin(\x)*cos(\th)},{0.75*sin(\x)*sin(\th)},{0.75*cos(\x)});
   \node[figR!80!black] at ({0.95*sin(\ph/2)*cos(\th)},{0.95*sin(\ph/2)*sin(\th)},{0.95*cos(\ph/2)}) {$\phi$};
   % angle theta in xy-plane
-  \draw[black!70] plot[domain=0:\th, samples=20] ({0.9*cos(\x)},{0.9*sin(\x)},0);
-  \node at ({1.15*cos(\th/2)},{1.15*sin(\th/2)},0) {$\theta$};
+  \draw[black!70] plot[domain=0:\th, samples=20] ({0.5*cos(\x)},{0.5*sin(\x)},0);
+  \node at ({0.72*cos(\th/2)},{0.72*sin(\th/2)},0) {$\theta$};
   \fill[black] (P) circle (1.5pt) node[above right] {$P(\rho,\theta,\phi)$};
   \fill[figB] (Pp) circle (1.2pt) node[below right] {$P'$};
   \fill[black!60] (Q) circle (1pt) node[left] {$Q$};
