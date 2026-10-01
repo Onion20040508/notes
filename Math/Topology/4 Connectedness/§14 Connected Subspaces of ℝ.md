@@ -216,7 +216,7 @@ tags: [topology, math590]
 *The topologist's sine curve. $S$ (blue) is a continuous image of $(0,1]$, so it is connected. As $x \to 0^+$ it oscillates ever faster between $\pm1$ and accumulates on the whole segment $\{0\} \times [-1,1]$ (red), so $\overline{S} = S \cup \{0\} \times [-1,1]$ is connected. No path can travel from the red segment into $S$: it would have to pass through infinitely many oscillations of height $2$ in a finite parameter interval, which is incompatible with continuity.*
 
 > [!remark]- Connections
-> - The function sin(1/x) and its failure to have a limit at 0: [[§17 Continuous Functions#^ex-17-5|451 Ex. §17.5]].
+> - The function sin(1/x) and its discontinuity at 0 (it oscillates between ±1 near 0): [[§17 Continuous Functions#^ex-17-5|451 Ex. §17.5]].
 
 > [!theorem] Theorem §14.5: Product of Path-Connected Spaces
 > If $X$ and $Y$ are path-connected, then $X \times Y$ is path-connected.

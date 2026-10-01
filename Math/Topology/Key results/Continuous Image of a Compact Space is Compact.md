@@ -28,6 +28,14 @@ tags: [topology, hub]
 - [[§7 Homogeneous Spaces#^thm-7-8|Theorem §7.8: Homogeneous Spaces Are Homeomorphic to Coset Spaces]]
 - [[§8 Differentiable Structures#^prop-8-3|Proposition §8.3: The Circle Needs More Than One Chart]]
 
+## Used in (Multivariable Analysis)
+- [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14: Change of Variables Formula — Rectangular Case]]
+- [[§15 Multivariable Integration#^thm-15-17|Theorem §15.17: Change of Variables — General Jordan Measurable Domains]]
+- [[§15 Multivariable Integration#^thm-15-9|Theorem §15.9: Fubini for Type I Regions]]
+
+## Used in (Measure Theory)
+- [[§18 Differentiation Theory#^thm-18-20|Theorem §18.20: Continuous Maps Preserve Bounded Closed Sets]]
+
 ## Connections
 - **Generalizes.** With Y = ℝ it is the source of the MATH 451 [[Extreme Value Theorem]]: f([a, b]) is compact, hence closed and bounded by [[Heine–Borel Theorem]].
 - **Invariance.** Compactness is therefore a topological property ([[§15 Compact Spaces#^rem-15-1|Why Compactness Matters]]). The connectedness analogue is [[Continuous Image of a Connected Space is Connected]].

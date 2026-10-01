@@ -286,4 +286,4 @@ The Implicit Function Theorem generalizes to functions of more variables.
 
 > [!remark]- Connections
 > - Systems of equations: solving several equations for several unknowns needs a nonzero Jacobian determinant instead of $F_y \neq 0$ — see the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] (§13.2) and the two-constraint Lagrange derivation in [[§14 Optimization and Lagrange Multipliers|§14]]; the linear-algebra fact behind it is [[Invertible ⟺ nonzero determinant|LADR 9.50]].
-> - The version for k equations in n + k unknowns, with an invertible k × k block of partials in place of $F_y \neq 0$, is [[§4 The Regular Value Theorem#^thm-4-1|591 Thm. §4.1]], and this theorem is its case k = 1, [[§4 The Regular Value Theorem#^cor-4-2|591 Cor. §4.2]].
+> - The version for k equations in n + k unknowns, with an invertible k × k block of partials in place of $F_y \neq 0$, is [[§4 The Regular Value Theorem#^thm-4-1|591 Thm. §4.1]] (for smooth maps), and the smooth case of this theorem is its case k = 1, [[§4 The Regular Value Theorem#^cor-4-2|591 Cor. §4.2]].

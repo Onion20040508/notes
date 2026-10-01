@@ -15,4 +15,4 @@ tags: [linear-algebra, hub]
 
 ## Connections
 - Physics/ODE: $e^{tJ}$ for a Jordan block gives the $t^ke^{\lambda t}$ solutions of linear ODEs with repeated roots (critical damping). The picture of the form is below.
-- **Group-theoretic reading.** Two matrices in GLₙ(ℂ) are conjugate iff they have the same Jordan form, so Jordan forms index the conjugacy classes ([[§31 Conjugacy Classes#^rem-31-1|493 Rem. §31.1]]), as cycle types do for Sₙ ([[Conjugacy Classes of Sₙ Are Cycle Types]]).
+- **Group-theoretic reading.** Two matrices in GLₙ(ℂ) are conjugate iff they have the same Jordan form, so Jordan forms index the conjugacy classes ([[§31 Conjugacy Classes#^rem-31-1|493 §31, Remark: What the Argument Uses]]), as cycle types do for Sₙ ([[Conjugacy Classes of Sₙ Are Cycle Types]]).

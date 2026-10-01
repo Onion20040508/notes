@@ -146,7 +146,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Operations: [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|Addition and scalar multiplication on V∕U]]. A vector space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]]. Dimension: [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
-> - Same construction as quotient groups and rings in abstract algebra (MATH 591 algebra part): $U$ plays the role of the normal subgroup/ideal.
+> - Same construction as quotient groups and rings in abstract algebra ([[§37 Quotient Groups#^def-37-1|493 Def. §37.1]]): $U$ plays the role of the normal subgroup/ideal.
 > - Group version: the quotient group G/N, [[§37 Quotient Groups#^def-37-1|493 Def. §37.1]] (hub [[Quotient Groups]]), with U in the role of the normal subgroup N.
 > - Same construction in 556: [[§1 Linear Spaces#^def-1-7|556 Def. §1.7]] and [[§1 Linear Spaces#^prop-1-6|556 Prop. §1.6]]; a norm passes to the quotient only when the subspace is closed, [[§10 New Normed Spaces from Old#^thm-10-8|556 Thm. §10.8]].
 > - Same construction in 591, with its universal property: [[§10 Vector Spaces and Matrix Groups#^def-10-4|591 Def. §10.4]], [[§10 Vector Spaces and Matrix Groups#^prop-10-6|591 Prop. §10.6]]; it builds the cotangent space from germs in [[§13 Tangent Spaces III꞉ The Cotangent Space#^def-13-2|591 Def. §13.2]].

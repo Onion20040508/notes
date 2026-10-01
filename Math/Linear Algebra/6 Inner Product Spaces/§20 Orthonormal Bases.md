@@ -88,7 +88,7 @@ tags: [linear-algebra]
 ^ladr-6-27
 
 > [!remark]- Connections
-> - In a Hilbert space an orthonormal basis is defined by the series expansion of every vector ([[§20 Orthonormal Sets and Bases#^def-20-4|556 Def. §20.4]]); in infinite dimensions it is usually not a basis in the sense of this definition.
+> - In a Hilbert space an orthonormal basis is defined by the series expansion of every vector ([[§20 Orthonormal Sets and Bases#^def-20-4|556 Def. §20.4]]); in infinite dimensions it is never a basis in the sense of this definition, since some vectors need infinitely many terms.
 
 > [!theorem] Theorem 6.28: Orthonormal lists of the right length are orthonormal bases
 > If $V$ is finite-dimensional, every orthonormal list of length $\dim V$ is an orthonormal basis.

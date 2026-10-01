@@ -82,7 +82,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^pf-2-2
 
-*Uses:* [[§2 Topological Manifolds#^thm-2-1|§2.1]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§13 Connected Spaces#^def-13-1|590 §13.1]]
+*Uses:* [[§2 Topological Manifolds#^thm-2-1|§2.1]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]
 
 > [!theorem] Proposition §2.3: Charts onto Open Subsets Suffice
 > In the definition of locally Euclidean, replacing “$\varphi : U \to \mathbb{R}^n$ is a homeomorphism” by
@@ -232,7 +232,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^ex-2-3
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]], [[§4 Product Topology#^def-4-1|590 §4.1]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]], [[§4 Product Topology#^def-4-1|590 Def. §4.1]]
 
 > [!remark] Remark: Dimension-Zero Version
 > A student observed that $\mathbb{R}_{\mathrm{disc}}$ alone already works: it is $T_2$ (discrete), locally Euclidean of dimension $0$ (each $\{x\}$ is an open neighborhood homeomorphic to $\mathbb{R}^0 = \{\text{pt}\}$), and not second countable ([[§1 Point-Set Topology Review#^ex-1-2|Example §1.2]]). The next proposition says exactly why: it is uncountable.
@@ -360,10 +360,10 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 
 ^pf-2-8
 
-*Uses:* [[Pasting Lemma|590 §9.5 (Pasting Lemma)]], [[§14 Connected Subspaces of ℝ#^def-14-3|590 §14.3]]
+*Uses:* [[Pasting Lemma|590 §9.5 (Pasting Lemma)]], [[§14 Connected Subspaces of ℝ#^def-14-3|590 Def. §14.3]]
 
 > [!remark]- Connections
-> - The same concatenation is the product of paths in 590: [[§22 Homotopy of Paths#^def-22-6|590 §22.6]], with its algebra in [[Properties of Path Concatenation]].
+> - The same concatenation is the product of paths in 590: [[§22 Homotopy of Paths#^def-22-6|590 Def. §22.6]], with its algebra in [[Properties of Path Concatenation]].
 
 > [!theorem] Theorem §2.9: Connected Manifolds Are Path Connected
 > A connected topological manifold is path connected.
@@ -389,7 +389,7 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 
 ^pf-2-9
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^lem-2-8|§2.8]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]], [[§14 Connected Subspaces of ℝ#^def-14-3|590 §14.3]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^lem-2-8|§2.8]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]], [[§14 Connected Subspaces of ℝ#^def-14-3|590 Def. §14.3]]
 
 > [!theorem] Corollary §2.10: Components of a Manifold
 > Let $M$ be a topological manifold. Then the connected components of $M$ are open, coincide with its path components, and each is itself a topological manifold of the same dimension.

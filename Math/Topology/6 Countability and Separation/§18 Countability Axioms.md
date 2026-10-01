@@ -135,7 +135,7 @@ tags: [topology, math590]
 *Uses:* [[§5 Subspace Topology#^def-5-1|Def. §5.1]], [[§2 Basis for a Topology#^def-2-1|Def. §2.1]]
 
 > [!remark]- Connections
-> - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable ([[§24 Position Eigenstates and Continuous Resolutions#^prop-24-1|556 Prop. §24.1]]), and the 0–1 sequences, at mutual distance 1, show that ℓ^∞ is not separable ([[§20 Orthonormal Sets and Bases#^prop-20-14|556 Prop. §20.14]]).
+> - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable ([[§24 Position Eigenstates and Continuous Resolutions#^prop-24-1|556 Prop. §24.1]]).
 > - The same argument shows L^∞ is not separable: the indicators of (0, t) form an uncountable family at mutual distance 1, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 Thm. §19.21]].
 
 ## Inheritance Properties

@@ -32,7 +32,7 @@ tags: [group-theory, math493]
 *Uses:* [[§23 Actions#^def-23-1|Def. §23.1]], [[§25 Orbits#^def-25-1|Def. §25.1]], [[§31 Conjugacy Classes#^def-31-1|Def. §31.1]], [[§24 Stabilizers and Fixed Points#^def-24-1|Def. §24.1]], [[§32 Conjugation as an Action and the Class Equation#^def-32-1|Def. §32.1]], [[§24 Stabilizers and Fixed Points#^prop-24-1|§24.1]], [[§23 Actions#^thm-23-3|§23.3]], [[§23 Actions#^def-23-3|Def. §23.3]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Def. §18.2]], [[§33 The Center#^def-33-1|Def. §33.1]]
 
 > [!remark]- Connections
-> - Restricted to the tangent space at the identity of a matrix group this is the adjoint action, [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-2|591 Def. §11.2]].
+> - For a matrix group, conjugation X ↦ gXg⁻¹ applied to tangent vectors at the identity is the adjoint action, [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-2|591 Def. §11.2]].
 
 > [!theorem] Corollary §32.2: Class Sizes Divide the Group Order
 > For every $g$ in a finite group $G$, $|\operatorname{Conj}(g)| = [G : C_G(g)]$ divides $|G|$, and $|\operatorname{Conj}(g)| \cdot |C_G(g)| = |G|$.

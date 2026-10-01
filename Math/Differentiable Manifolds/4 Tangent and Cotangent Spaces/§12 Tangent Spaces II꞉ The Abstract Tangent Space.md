@@ -199,7 +199,7 @@ Point (1) of the [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12
 
 ^pf-ex-12-2
 
-*Uses:* [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-3|Def. §12.3]], [[§31 Taylor's Theorem#^ex-31-3|451 §31.3]]
+*Uses:* [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-3|Def. §12.3]], [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]
 
 > [!remark]- Connections
 > - The one-variable flat function $e^{-1/x^2}$, a smooth function that is not its Taylor series: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]; Taylor series: [[§31 Taylor's Theorem#^def-31-1|451 Def. §31.1]].

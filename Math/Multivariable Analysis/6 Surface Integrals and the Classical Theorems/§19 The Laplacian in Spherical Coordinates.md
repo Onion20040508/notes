@@ -100,7 +100,7 @@ $$
 \end{aligned}
 $$
 
-(The second line is the definition of the derivative ([[§28 Basic Properties of the Derivative#^def-28-1|451 §28.1]]): $f(r_0 + dr) - f(r_0) \approx f'(r_0) \, dr$.)
+(The second line is the definition of the derivative ([[§28 Basic Properties of the Derivative#^def-28-1|451 Def. §28.1]]): $f(r_0 + dr) - f(r_0) \approx f'(r_0) \, dr$.)
 
 **Flux through the $\theta$-faces** (at $\theta_0 + d\theta$ and $\theta_0$):
 
@@ -149,7 +149,7 @@ Dividing both sides by $r^2\sin\theta \, dr \, d\theta \, d\psi$:
 
 ^thm-19-1
 
-*Uses:* [[Divergence Theorem in ℝ³|§18.2]], [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]], [[§15 Multivariable Integration#^ex-15-6|Ex. §15.6]], [[§28 Basic Properties of the Derivative#^def-28-1|451 §28.1]]
+*Uses:* [[Divergence Theorem in ℝ³|§18.2]], [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]], [[§15 Multivariable Integration#^ex-15-6|Ex. §15.6]], [[§28 Basic Properties of the Derivative#^def-28-1|451 Def. §28.1]]
 
 > [!remark]- Connections
 > - The volume factor $r^2\sin\theta$ is the Jacobian of [[§15 Multivariable Integration#^ex-15-6|Spherical Coordinates in ℝ³]]; the scale factors are the square roots of the diagonal of the Gram matrix ([[§18 Surface Integrals#^def-18-4|Def. §18.4]]) of the coordinate map.

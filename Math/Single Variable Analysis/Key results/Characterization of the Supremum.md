@@ -21,6 +21,7 @@ tags: [real-analysis, hub]
 - [[§7 Structure of Open Sets#^prop-7-1|Proposition §7.1: Open Sets in ℝ are Countable Unions of Disjoint Intervals]]
 - [[§12 Measurable Functions#^thm-12-6|Theorem §12.6: Measurability of Suprema and Infima]]
 - [[§13 Egorov's and Lusin's Theorems#^lem-13-2|Lemma §13.2: Distance Between Disjoint Compact Sets]]
+- [[§7 Structure of Open Sets#^lem-7-2|Lemma §7.2]]
 
 ## Used in (Group Theory)
 - [[§5 A Zoo of Subgroups#^prop-5-3|Proposition §5.3: Dichotomy for Subgroups of ℝ]]

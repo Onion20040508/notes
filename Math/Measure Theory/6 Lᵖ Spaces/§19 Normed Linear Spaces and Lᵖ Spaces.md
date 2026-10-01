@@ -299,7 +299,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - $p = 2$ is the [[Cauchy–Schwarz inequality|Cauchy–Schwarz inequality (LADR 6.14)]] for the $L^2$ inner product of [[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|the remark above]]; its Riemann-integral form for continuous functions is [[§19 Inner Products and Norms#^ladr-6-16|LADR 6.16(b)]].
 > - Used to prove [[Minkowski's Inequality|Minkowski's inequality]], the $L^p$ inclusions ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-6|Corollary §19.6]]) and [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-7|interpolation]].
-> - Sequence version (counting measure), with the same proof: [[§12 Hölder's Inequality for Sequences#^thm-12-1|556 Thm. §12.1]]; for $p = 2$ it is the Cauchy–Schwarz inequality of every inner product space, [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|556 Thm. §17.1]].
+> - Sequence version (counting measure), with the same proof: [[§12 Hölder's Inequality for Sequences#^thm-12-1|556 Thm. §12.1]]; the case $p = 2$ is the $L^2$ instance of the Cauchy–Schwarz inequality of every inner product space, [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|556 Thm. §17.1]].
 
 > [!theorem] Corollary §19.6: $L^p$ Inclusion for Finite Measure Spaces
 > Assume $m(E) < \infty$. Then for $1 \leq p_1 < p_2 \leq \infty$, $L^{p_2}(E) \subseteq L^{p_1}(E)$, and:
@@ -767,4 +767,3 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 > [!remark]- Connections
 > - Same uncountable-versus-countable counting as in [[§18 Countability Axioms#^prop-18-4|590 §18.4]](2) ($\mathbb{R}_l$ not second countable); by [[§18 Countability Axioms#^prop-18-4|590 §18.4]](3), $L^\infty$ is also not second countable.
-> - Stated without proof in 556 as [[§20 Orthonormal Sets and Bases#^prop-20-16|556 Prop. §20.16]]; the sequence analogue is [[§20 Orthonormal Sets and Bases#^prop-20-14|556 Prop. §20.14]] ($\ell^\infty$ is not separable).

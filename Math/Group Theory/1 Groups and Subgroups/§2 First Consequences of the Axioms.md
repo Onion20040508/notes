@@ -203,6 +203,6 @@ tags: [group-theory, math493]
 > - Multiplication tables are defined and computed in [[§14 Multiplication Tables#^def-14-1|Multiplication Table]]; the unit-group analogue (finiteness plus cancellation): [[§8 Invertibility and Unit Groups#^prop-8-2|Multiplication by a Nonzero Class Permutes the Nonzero Classes]].
 
 > [!remark] Remark: The Converse Fails
-> A Latin square need not be a group table, since associativity is not encoded row by row. The property is visible in the $S_3$ table ([[§10 Cycle Notation and the Group S₃#^ex-10-1|§10.1]]).
+> A Latin square need not be a group table, since associativity is not encoded row by row. The property is visible in the $S_3$ table ([[§10 Cycle Notation and the Group S₃#^ex-10-1|Ex. §10.1]]).
 
 ^rem-2-5

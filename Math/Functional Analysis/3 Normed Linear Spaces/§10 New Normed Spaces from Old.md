@@ -195,7 +195,7 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 ^prop-10-7
 
 > [!proof]+ Proof
-> (Left as an exercise in lecture.) Write $\|(x,y)\|_*$ for any of the three, and $N_*$ for the corresponding norm on $\mathbb{R}^2$ ($N_2(s,t) = (s^2 + t^2)^{1/2}$, $N_\infty(s,t) = \max\{|s|,|t|\}$, $N_1(s,t) = |s| + |t|$), so that $\|(x,y)\|_* = N_*(\|x\|_X, \|y\|_Y)$. Each $N_*$ is a norm on $\mathbb{R}^2$ (Examples [[§8 Normed Linear Spaces#^ex-8-1|§8.1]] and [[§3 Statement and Motivation#^ex-3-1|§3.1]]) and is *monotone* on the non-negative quadrant: $0 \le s \le s'$, $0 \le t \le t'$ imply $N_*(s,t) \le N_*(s',t')$, as is clear from the three formulas.
+> (Left as an exercise in lecture.) Write $\|(x,y)\|_*$ for any of the three, and $N_*$ for the corresponding norm on $\mathbb{R}^2$ ($N_2(s,t) = (s^2 + t^2)^{1/2}$, $N_\infty(s,t) = \max\{|s|,|t|\}$, $N_1(s,t) = |s| + |t|$), so that $\|(x,y)\|_* = N_*(\|x\|_X, \|y\|_Y)$. Each $N_*$ is a norm on $\mathbb{R}^2$ (Examples [[§8 Normed Linear Spaces#^ex-8-1|§8.1]] and [[§3 Statement and Motivation#^ex-3-1|Ex. §3.1]]) and is *monotone* on the non-negative quadrant: $0 \le s \le s'$, $0 \le t \le t'$ imply $N_*(s,t) \le N_*(s',t')$, as is clear from the three formulas.
 >
 > *Positivity.* $\|(x,y)\|_* \ge 0$, and it is $0$ iff $N_*(\|x\|_X, \|y\|_Y) = 0$ iff $\|x\|_X = \|y\|_Y = 0$ iff $x = 0$ and $y = 0$ iff $(x,y) = (0,0)$.
 >

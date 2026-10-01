@@ -111,6 +111,9 @@ tags: [topology, math590]
 
 ^rem-20-3
 
+> [!remark]- Connections
+> - A use of Tietze in measure theory: the continuous restriction to a closed set in Lusin's theorem extends to a continuous function on all of ℝⁿ, [[§13 Egorov's and Lusin's Theorems#^thm-13-3|551 Thm. §13.3]].
+
 > [!remark] Remark: The Two-Stage Pattern
 > Both proofs of normality ([[§20 Normal Spaces#^pf-20-1|metrizable]] and [[§20 Normal Spaces#^pf-20-2|compact Hausdorff]]) follow the same template: start with a local separation (point-by-point), then patch to a global separation (for the whole closed set). The difference is the patching mechanism:
 > - **Metrizable:** half-radii + triangle inequality ensure disjointness.
@@ -119,6 +122,3 @@ tags: [topology, math590]
 > The compact Hausdorff proof uses the same technique as [[Compact Subspace of a Hausdorff Space is Closed|Theorem §15.4]] (compact $\subseteq$ Hausdorff $\Rightarrow$ closed) *twice* — once to separate a point from $B$, once to separate $A$ from $B$. Each stage replaces a single point with a compact set by extracting a finite subcover and taking intersections.
 
 ^rem-20-4
-
-> [!remark]- Connections
-> - A use of Tietze in measure theory: the continuous restriction to a closed set in Lusin's theorem extends to a continuous function on all of ℝⁿ, [[§13 Egorov's and Lusin's Theorems#^thm-13-3|551 Thm. §13.3]].

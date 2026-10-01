@@ -59,7 +59,7 @@ It is not obvious from [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-
 
 ^pf-11-1
 
-*Uses:* [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-1|Def. §11.1]], [[§9 Continuous Functions#^def-9-1|590 §9.1]]
+*Uses:* [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-1|Def. §11.1]], [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]
 
 > [!theorem] Lemma §11.2: The Geometric Tangent Space of a Graph
 > Let $A \subseteq \mathbb{R}^n$ be open, $G : A \to \mathbb{R}^k$ smooth, and

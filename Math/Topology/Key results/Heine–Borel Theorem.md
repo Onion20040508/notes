@@ -31,6 +31,14 @@ tags: [topology, hub]
 - [[§10 Vector Spaces and Matrix Groups#^cor-10-13|Corollary §10.13: Consequences]]
 - [[§10 Vector Spaces and Matrix Groups#^cor-10-16|Corollary §10.16: U(n) Is Compact]]
 
+## Used in (Multivariable Analysis)
+- [[§15 Multivariable Integration#^prop-15-16|Proposition §15.16: C¹ Diffeomorphisms Preserve Jordan Measurability]]
+- [[§15 Multivariable Integration#^thm-15-8|Theorem §15.8: Fubini's Theorem — Rectangle Case]]
+- [[§15 Multivariable Integration#^thm-15-9|Theorem §15.9: Fubini for Type I Regions]]
+
+## Used in (Measure Theory)
+- [[§18 Differentiation Theory#^thm-18-20|Theorem §18.20: Continuous Maps Preserve Bounded Closed Sets]]
+
 ## Connections
 - **Proof.** Compact ⇒ closed is [[Compact Subspace of a Hausdorff Space is Closed]] (ℝⁿ is a metric space, hence Hausdorff). Closed and bounded ⇒ compact goes through a box [−N, N]ⁿ, which is compact by [[§15 Compact Spaces#^thm-15-10|Closed Intervals are Compact]] and [[§15 Compact Spaces#^thm-15-8|Finite Product of Compact Spaces]] (proved with the [[Tube Lemma]]). The last step is [[Closed Subspace of a Compact Space is Compact]].
 - **MATH 451.** With [[Continuous Image of a Compact Space is Compact]] it recovers the [[Extreme Value Theorem]]. In metric spaces, compactness is equivalent to sequential compactness ([[§16 Limit Point Compactness#^thm-16-2|Equivalence for Metrizable Spaces]]), the form met in MATH 451 through [[Bolzano–Weierstrass Theorem]].

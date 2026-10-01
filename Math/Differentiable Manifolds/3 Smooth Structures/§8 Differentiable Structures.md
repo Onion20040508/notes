@@ -537,7 +537,7 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 *Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-29|§3.29]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-30|§3.30]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-31|§3.31]], [[§8 Differentiable Structures#^prop-8-6|§8.6]], [[§8 Differentiable Structures#^thm-8-7|§8.7]], [[§6 Group Actions and Orbit Spaces#^cor-6-4|§6.4]]
 
 > [!remark]- Connections
-> - The same space in 590, projective $n$-space: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 §28.2]], [[Projective plane]]; the double cover $S^n \to \mathbb{RP}^n$ as a local diffeomorphism: [[§14 Local Diffeomorphisms and Submersions#^ex-14-2|Ex. §14.2]].
+> - The same space in 590, projective $n$-space: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2]], [[Projective plane]]; the double cover $S^n \to \mathbb{RP}^n$ as a local diffeomorphism: [[§14 Local Diffeomorphisms and Submersions#^ex-14-2|Ex. §14.2]].
 
 ![[m591-8-6.svg]]
 *The chart $U_0$ of $\mathbb{RP}^1$, drawn in the plane of homogeneous coordinates. A point of $\mathbb{RP}^1$ is a line through the origin. A line $L$ with $x_0 \ne 0$ meets the affine line $x_0 = 1$ in exactly one point, $(1, x_1/x_0)$, and the chart $\varphi_0(L) = x_1/x_0$ records where. The one line with $x_0 = 0$ — the $x_1$-axis, the point $[0:1]$ — is parallel to $x_0 = 1$ and never meets it: it is the point at infinity that $U_0$ misses, and the second chart $U_1$ covers it. On the right, $\mathbb{RP}^1$ drawn as a circle, with $U_0$ everything except the top point. In $\mathbb{RP}^n$ the same picture holds with the affine hyperplane $x_0 = 1$ in place of the line.*
@@ -634,7 +634,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 > [!remark]- Connections
 > - The Euclidean notion it generalizes: [[§8 Differentiable Structures#^def-8-3|Def. §8.3]]; local diffeomorphisms and the bijective case: [[§14 Local Diffeomorphisms and Submersions#^def-14-1|Def. §14.1]], [[§14 Local Diffeomorphisms and Submersions#^cor-14-3|§14.3]].
-> - The topological counterpart, homeomorphism: [[§9 Continuous Functions#^def-9-2|590 §9.2]].
+> - The topological counterpart, homeomorphism: [[§9 Continuous Functions#^def-9-2|590 Def. §9.2]].
 
 > [!theorem] Proposition §8.13: Smoothness of a Map Does Not Depend on the Charts
 > If $F : M \to N$ is smooth, then for *every* pair of smooth charts $(U',\varphi')$ of $M$ and $(V',\psi')$ of $N$ with $F(U') \subseteq V'$, the coordinate representation $\psi' \circ F \circ \varphi'^{-1} : \varphi'(U') \to \psi'(V')$ is smooth. For $N = \mathbb{R}$ with its standard one-chart atlas, [[§8 Differentiable Structures#^def-8-14|Def. §8.14]] agrees with [[§8 Differentiable Structures#^def-8-13|Def. §8.13]].
@@ -739,7 +739,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^pf-8-16
 
-*Uses:* [[§8 Differentiable Structures#^def-8-14|Def. §8.14]], [[§8 Differentiable Structures#^def-8-15|Def. §8.15]], [[§8 Differentiable Structures#^lem-8-15|§8.15]], [[§9 Continuous Functions#^def-9-2|590 §9.2]]
+*Uses:* [[§8 Differentiable Structures#^def-8-14|Def. §8.14]], [[§8 Differentiable Structures#^def-8-15|Def. §8.15]], [[§8 Differentiable Structures#^lem-8-15|§8.15]], [[§9 Continuous Functions#^def-9-2|590 Def. §9.2]]
 
 > [!remark] Remark
 > The converse of (2) is false: Milnor's exotic $7$-spheres are homeomorphic to $S^7$ but not diffeomorphic to it (see the [[§8 Differentiable Structures#^rem-8-20|remark after Ex. §8.5]]). Two further distinctions are worth keeping apart. *Different smooth structures* on one set may still be *diffeomorphic*: in [[§8 Differentiable Structures#^ex-8-5|Ex. §8.5]], $\mathbb{R}$ and $\widetilde{\mathbb{R}}$ have different maximal atlases, yet $x \mapsto x^3$ is a diffeomorphism between them. And being diffeomorphic is a property of a *pair* of manifolds, while being a diffeomorphism is a property of a *map*: $\mathrm{id} : \mathbb{R} \to \widetilde{\mathbb{R}}$ is not a diffeomorphism even though the two are diffeomorphic.
@@ -821,7 +821,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^pf-8-17
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§8 Differentiable Structures#^def-8-1|Def. §8.1]], [[§8 Differentiable Structures#^def-8-4|Def. §8.4]], [[§8 Differentiable Structures#^def-8-6|Def. §8.6]], [[§8 Differentiable Structures#^def-8-14|Def. §8.14]], [[§8 Differentiable Structures#^prop-8-13|§8.13]], [[§8 Differentiable Structures#^thm-8-5|§8.5]], [[§9 Continuous Functions#^def-9-2|590 §9.2]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§8 Differentiable Structures#^def-8-1|Def. §8.1]], [[§8 Differentiable Structures#^def-8-4|Def. §8.4]], [[§8 Differentiable Structures#^def-8-6|Def. §8.6]], [[§8 Differentiable Structures#^def-8-14|Def. §8.14]], [[§8 Differentiable Structures#^prop-8-13|§8.13]], [[§8 Differentiable Structures#^thm-8-5|§8.5]], [[§9 Continuous Functions#^def-9-2|590 Def. §9.2]]
 
 > [!definition] Definition §8.16: Transported Smooth Structure
 > In the situation of [[§8 Differentiable Structures#^prop-8-17|§8.17]], the smooth structure on $X$ generated by $\mathcal{A}_h$ — the unique one for which $h$ is a diffeomorphism — is the smooth structure **transported** along $h$.
@@ -909,7 +909,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 *Uses:* [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-12|§3.12]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-10|§3.10]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§8 Differentiable Structures#^def-8-1|Def. §8.1]], [[§8 Differentiable Structures#^def-8-4|Def. §8.4]], [[§8 Differentiable Structures#^def-8-6|Def. §8.6]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1]]
 
 > [!remark]- Connections
-> - Product topology in 590: [[§4 Product Topology#^def-4-1|590 §4.1]]; the tangent space of a product: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-32|§12.32]].
+> - Product topology in 590: [[§4 Product Topology#^def-4-1|590 Def. §4.1]]; the tangent space of a product: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-32|§12.32]].
 
 > [!definition] Definition §8.17: Product Manifold
 > The **product manifold** $M_1 \times M_2$ is the product space with the smooth structure generated by the product charts ([[§8 Differentiable Structures#^prop-8-19|§8.19]]). If $\varphi_1 = (x^1, \ldots, x^{m_1})$ and $\varphi_2 = (y^1, \ldots, y^{m_2})$, the coordinate functions of the product chart are $x^i \circ \pi_1$ and $y^j \circ \pi_2$, written again $x^i$, $y^j$: “the $x$'s and then the $y$'s”. For $p_2 \in M_2$ and $p_1 \in M_1$, the **slice inclusions** are

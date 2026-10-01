@@ -110,7 +110,7 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 ^rem-13-4
 
 > [!remark]- Connections
-> - Same definition in ℝⁿ with the Euclidean norm: [[§1 Sequences and Limits in ℝⁿ#^def-1-1|452 Def. §1.1]].
+> - The case X = ℝⁿ with the Euclidean distance is 452's convergence of sequences: [[§1 Sequences and Limits in ℝⁿ#^def-1-1|452 Def. §1.1]].
 > - Convergence in any topological space, with neighborhoods in place of ε-balls: [[§7 Interior and Closure#^def-7-4|590 Def. §7.4]].
 
 > [!theorem] Proposition §13.1: Equivalence of the Two Distances

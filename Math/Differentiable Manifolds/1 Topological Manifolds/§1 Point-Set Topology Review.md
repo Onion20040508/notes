@@ -30,7 +30,7 @@ tags: [differentiable-manifolds, math591]
 ^def-1-1
 
 > [!remark]- Connections
-> - Home in 590: [[§2 Basis for a Topology#^def-2-1|590 §2.1]] (the generative form, recorded here as [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]]).
+> - Home in 590: [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]] (the generative form, recorded here as [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]]).
 
 > [!theorem] Proposition §1.1: Equivalent Formulation of a Basis
 > Let $(U_\alpha)_{\alpha \in A}$ be a collection of open subsets of $X$. The following are equivalent:
@@ -72,7 +72,7 @@ tags: [differentiable-manifolds, math591]
 ^def-1-2
 
 > [!remark]- Connections
-> - This is verbatim the 590 definition: [[§2 Basis for a Topology#^def-2-1|590 §2.1]].
+> - This is verbatim the 590 definition: [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]].
 
 > [!theorem] Proposition §1.2: The Two Definitions of Basis Agree
 > Let $X$ be a set and $\mathcal{B}$ a collection of subsets of $X$.
@@ -90,7 +90,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-1-2
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]], [[§2 Basis for a Topology#^def-2-1|590 §2.1]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]], [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]]
 
 > [!remark] Remark: Which Definition to Use When
 > The proposition says “basis” has a single meaning; the two definitions are just the two directions of use.
@@ -154,7 +154,7 @@ tags: [differentiable-manifolds, math591]
 ^def-1-5
 
 > [!remark]- Connections
-> - Home in 590: [[§18 Countability Axioms#^def-18-3|590 §18.3]].
+> - Home in 590: [[§18 Countability Axioms#^def-18-3|590 Def. §18.3]].
 
 > [!remark] Remark: Why Second Countability?
 > Second countability is the first of the three conditions defining a manifold. Its job is to keep the space from being “too big.” Concretely, it is what makes *partitions of unity* possible later in the course (via paracompactness), and it forces a manifold to have only countably many connected components ([[§2 Topological Manifolds#^prop-2-6|Proposition §2.6]]). Compare [[§18 Countability Axioms#^thm-18-1|590 §18]], where second countability was the hypothesis of the Urysohn metrization theorem.
@@ -183,10 +183,10 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-ex-1-1
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§11 Metric Topology#^ex-11-3|590 §11.3]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§11 Metric Topology#^ex-11-3|590 Ex. §11.3]]
 
 > [!remark]- Connections
-> - The 590 version uses rational boxes instead of balls: [[§18 Countability Axioms#^ex-18-4|590 §18.4]].
+> - The 590 version uses rational boxes instead of balls: [[§18 Countability Axioms#^ex-18-4|590 Ex. §18.4]].
 
 > [!example] Example §1.2: Non-Example: $\mathbb{R}$ with the Discrete Topology
 > Let $X = \mathbb{R}$ with the discrete topology, so every subset (in particular every singleton $\{x\}$) is open. Then $X$ is *not* second countable.
@@ -210,7 +210,7 @@ tags: [differentiable-manifolds, math591]
 ^def-1-6
 
 > [!remark]- Connections
-> - Home in 590: [[§18 Countability Axioms#^def-18-2|590 §18.2]].
+> - Home in 590: [[§18 Countability Axioms#^def-18-2|590 Def. §18.2]].
 
 > [!theorem] Proposition §1.4: Second Countable Implies First Countable
 > A second countable space is first countable at each of its points.
@@ -248,7 +248,7 @@ tags: [differentiable-manifolds, math591]
 ^def-1-7
 
 > [!remark]- Connections
-> - Home in 590: [[§8 Hausdorff Spaces#^def-8-1|590 §8.1]].
+> - Home in 590: [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]].
 > - For quotients, Hausdorffness is decided by the [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-26|Hausdorff criterion, §3.26]].
 
 > [!remark] Remark
@@ -276,7 +276,7 @@ tags: [differentiable-manifolds, math591]
 
 ^ex-1-3
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§11 Metric Topology#^def-11-1|590 §11.1]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§11 Metric Topology#^def-11-1|590 Def. §11.1]]
 
 ![[m591-1-1.svg]]
 *Separating $p \neq q$ in a metric space: the balls $U = B(p, r)$ and $V = B(q, r)$ of radius $r = \tfrac13 d(p,q)$ are disjoint, with a gap of $\tfrac13 d(p,q)$ between them.*
@@ -362,7 +362,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-1-5
 
-*Uses:* [[§1 Point-Set Topology Review#^prop-1-1|§1.1]], [[§9 Continuous Functions#^def-9-1|590 §9.1]]
+*Uses:* [[§1 Point-Set Topology Review#^prop-1-1|§1.1]], [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]
 
 > [!remark]- Connections
 > - Part (1) is also proved in 590, right after [[§9 Continuous Functions#^pf-def-9-1|the definition of continuity, 590 §9.1]]; part (4) is [[§10 Product Topology on Arbitrary Products#^thm-10-1|Continuity into Product Spaces, 590 §10.1]].

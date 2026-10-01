@@ -104,7 +104,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-17-2
 
-*Uses:* [[§17 The Tangent Bundle#^def-17-2|Def. §17.2]], [[§17 The Tangent Bundle#^prop-17-3|§17.3]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^lem-2-11|§2.11]], [[§2 Basis for a Topology#^def-2-1|590 §2.1]], [[§8 Hausdorff Spaces#^def-8-1|590 §8.1]], [[§18 Countability Axioms#^def-18-3|590 §18.3]]
+*Uses:* [[§17 The Tangent Bundle#^def-17-2|Def. §17.2]], [[§17 The Tangent Bundle#^prop-17-3|§17.3]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^lem-2-11|§2.11]], [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]], [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]], [[§18 Countability Axioms#^def-18-3|590 Def. §18.3]]
 
 The same argument, word for word, builds the topology of the cotangent bundle ([[§17 The Tangent Bundle#The Cotangent Bundle|The Cotangent Bundle]]), with the dual bases in place of the coordinate bases.
 
@@ -142,7 +142,7 @@ The same argument, word for word, builds the topology of the cotangent bundle ([
 *The transition map of the charts $\tilde\varphi$ and $\tilde\psi$ of $TM$, as drawn in lecture over a point $(p, v)$ of $TU \cap TV$.*
 
 > [!remark]- Connections
-> - The same expansion of coordinate derivations: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-24|Change of Coordinates, §12.24]]; the Jacobian matrix in 452: [[§13 The Inverse Function Theorem#^def-13-1|452 §13.1]]; change of basis: [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
+> - The same expansion of coordinate derivations: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-24|Change of Coordinates, §12.24]]; the Jacobian matrix in 452: [[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]]; change of basis: [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
 
 The transition map of $TM$, in one line: the base point moves by the transition map of $M$, and the vector by its Jacobian. This is Uribe's identity at work once more — the partials $\partial y^i/\partial x^j$, taken upstairs on $M$, are the Jacobian downstairs.
 
@@ -216,7 +216,7 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 ^def-17-5
 
 > [!remark]- Connections
-> - The fibre $T_p^*M$ is a dual space, [[§12 Duality#^ladr-3-110|LADR 3.110]], and the chart uses the dual basis, [[§12 Duality#^ladr-3-112|LADR 3.112]]. Counterpart in 452: differential forms on $\mathbb{R}^n$, [[§21 Introduction to Differential Forms#^def-21-1|452 §21.1]].
+> - The fibre $T_p^*M$ is a dual space, [[§12 Duality#^ladr-3-110|LADR 3.110]], and the chart uses the dual basis, [[§12 Duality#^ladr-3-112|LADR 3.112]]. Counterpart in 452: differential forms on $\mathbb{R}^n$, [[§21 Introduction to Differential Forms#^def-21-1|452 Def. §21.1]].
 
 > [!theorem] Proposition §17.5: The Cotangent Transition Maps
 > For charts $\varphi = (x^i)$ and $\psi = (y^j)$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then

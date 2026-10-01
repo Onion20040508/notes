@@ -32,7 +32,7 @@ The submersions that look locally like the projection $U \times F \to U$. Their 
 
 > [!remark]- Connections
 > - The first major example: [[§17 The Tangent Bundle#^cor-17-4|the tangent bundle, §17.4]]; sections of a fibration: [[§17 The Tangent Bundle#^def-17-3|Def. §17.3]].
-> - The topological analogue with discrete fibre: [[§24 Covering Spaces#^def-24-2|covering maps, 590 §24.2]]; in 591, [[§14 Local Diffeomorphisms and Submersions#^rem-14-2|Remark: Covering Maps (§14)]].
+> - The topological analogue with discrete fibre: [[§24 Covering Spaces#^def-24-2|covering maps, 590 Def. §24.2]]; in 591, [[§14 Local Diffeomorphisms and Submersions#^rem-14-2|Remark: Covering Maps (§14)]].
 
 ![[m591-16-1.svg]]
 *The local trivialization $\phi_\alpha$ over $U_\alpha$: the triangle commutes, $\mathrm{pr}_1 \circ \phi_\alpha = \pi|$.*
@@ -150,7 +150,7 @@ A student asked the converse: if all the fibres of a surjective submersion are d
 *Left: the strip $[0, 1] \times (-1, 1)$, ruled by its fibres, with the core circle in orange; glue the two ends with a half-twist, matching the arrows. Right: the band itself. Each grey segment is a fibre, lying over one point of the orange core circle, and the boundary is a single curve.*
 
 > [!remark]- Connections
-> - $E$ is the orbit space of $\mathbb{Z}$ acting on $\mathbb{R} \times (-1,1)$: [[§6 Group Actions and Orbit Spaces#^def-6-5|Def. §6.5]]; quotient spaces in 590: [[§12 Quotient Topology#^def-12-3|590 §12.3]].
+> - $E$ is the orbit space of $\mathbb{Z}$ acting on $\mathbb{R} \times (-1,1)$: [[§6 Group Actions and Orbit Spaces#^def-6-5|Def. §6.5]]; quotient spaces in 590: [[§12 Quotient Topology#^def-12-3|590 Def. §12.3]].
 
 ## When Is a Submersion a Fibration?
 

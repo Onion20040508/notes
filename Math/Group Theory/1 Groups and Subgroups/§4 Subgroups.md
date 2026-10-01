@@ -267,7 +267,7 @@ tags: [group-theory, math493]
 >
 > An element $g \in G$ has **finite order** if there is some positive integer $N$ with $g^N = e$ (Worksheet 3's formulation); in that case the least such $N$ is the **order** of $g$, written $\operatorname{ord}(g)$. If no such $N$ exists, $g$ has **infinite order**. The identity is the only element of order $1$.
 >
-> A group $G$ is **cyclic** if $G = \langle g \rangle$ for some $g \in G$; such a $g$ is a **generator** of $G$. Thus $\mathbb{Z}/n\mathbb{Z} = \langle [1] \rangle$ ([[§7 The Group ℤ∕nℤ#^def-7-1|§7.1]]) is cyclic of order $n$, and $\mathbb{Z} = \langle 1 \rangle$ is infinite cyclic. A cyclic group is abelian, since $\langle g \rangle$ is ([[§4 Subgroups#^prop-4-6|§4.6]]).
+> A group $G$ is **cyclic** if $G = \langle g \rangle$ for some $g \in G$; such a $g$ is a **generator** of $G$. Thus $\mathbb{Z}/n\mathbb{Z} = \langle [1] \rangle$ ([[§7 The Group ℤ∕nℤ#^def-7-1|Def. §7.1]]) is cyclic of order $n$, and $\mathbb{Z} = \langle 1 \rangle$ is infinite cyclic. A cyclic group is abelian, since $\langle g \rangle$ is ([[§4 Subgroups#^prop-4-6|§4.6]]).
 >
 > *Source: WS 3; cf. MATH 412*
 

@@ -285,4 +285,4 @@ These are not arbitrary conventions — they are forced by the determinant:
 ![[m452-21-1.svg]]
 *Each 2-form pullback is a signed projected area: $dx \wedge dy$ measures the shadow of the tangent parallelogram on the $xy$-plane, with sign given by orientation. The three shadows (on the $yz$-, $zx$-, $xy$-planes) are the three components of $\mathbf{X}_u \times \mathbf{X}_v$; the Gram determinant $\det(G)$ is the sum of their squares.*
 
-The computation above is informal: we have not yet defined the wedge product. In [[§22 The Algebra of Differential Forms#^def-22-1|§22.1]], we axiomatize these rules, and then the computation becomes a formal proposition (the *[[§22 The Algebra of Differential Forms#^def-22-3|pullback formula]]*) that underlies all integration of forms.
+The computation above is informal: we have not yet defined the wedge product. In [[§22 The Algebra of Differential Forms#^def-22-1|Def. §22.1]], we axiomatize these rules, and then the computation becomes a formal proposition (the *[[§22 The Algebra of Differential Forms#^def-22-3|pullback formula]]*) that underlies all integration of forms.

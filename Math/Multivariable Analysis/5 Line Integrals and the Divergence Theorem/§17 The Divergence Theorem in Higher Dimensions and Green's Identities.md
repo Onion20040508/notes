@@ -301,7 +301,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 ^ex-17-1
 
-*Uses:* [[Green's First Identity|§17.2]], [[§13 Connected Spaces#^def-13-1|590 §13.1]]
+*Uses:* [[Green's First Identity|§17.2]], [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]
 
 > [!remark]- Connections
 > - 1D version of “nonnegative continuous integrand with zero integral vanishes”: [[§33 Properties of the Riemann Integral#^thm-33-7|Vanishing Integral of a Nonnegative Function (451 §33.7)]].
@@ -319,7 +319,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 ^ex-17-2
 
-*Uses:* [[Green's First Identity|§17.2]], [[§13 Connected Spaces#^def-13-1|590 §13.1]]
+*Uses:* [[Green's First Identity|§17.2]], [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]
 
 > [!example] Example §17.3: Mean Value Property of Harmonic Functions (Sketch)
 > Green's identities can be used to prove the **mean value property**: if $\Delta u = 0$ on a ball $B_r(x_0) \subseteq \mathbb{R}^n$, then:

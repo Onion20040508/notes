@@ -25,6 +25,19 @@ Electric and magnetic fields, their sources, circuits, induction and electromagn
 - [[· A11 Alternating-Current Circuits]]
 - [[· A12 Electromagnetic Waves]]
 
+## Level B — upper
+- [[· B1 Vector Calculus for Electrodynamics]]
+- [[· B2 Electrostatics]]
+- [[· B3 Boundary-Value Problems]]
+- [[· B4 The Multipole Expansion]]
+- [[· B5 Electric Fields in Matter]]
+- [[· B6 Magnetostatics]]
+- [[· B7 Magnetic Fields in Matter]]
+- [[· B8 Electrodynamics]]
+- [[· B9 Conservation Laws]]
+- [[· B10 Electromagnetic Waves]] (★ §B10.3, §B10.4)
+- [[· B11★ Potentials and Radiation]]
+
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
 
@@ -42,6 +55,17 @@ graph TD
   A10["A10 Inductance"]
   A11["A11 Alternating-Current Circuits"]
   A12["A12 Electromagnetic Waves"]
+  B1["B1 Vector Calculus for Electrodynamics"]
+  B2["B2 Electrostatics"]
+  B3["B3 Boundary-Value Problems"]
+  B4["B4 The Multipole Expansion"]
+  B5["B5 Electric Fields in Matter"]
+  B6["B6 Magnetostatics"]
+  B7["B7 Magnetic Fields in Matter"]
+  B8["B8 Electrodynamics"]
+  B9["B9 Conservation Laws"]
+  B10["B10 Electromagnetic Waves"]
+  B11["B11★ Potentials and Radiation"]
   A3 -->|2| A10
   A4 -->|4| A10
   A5 -->|4| A10
@@ -82,6 +106,73 @@ graph TD
   A6 -->|8| A9
   A7 -->|8| A9
   A8 -->|2| A9
+  A1 -->|2| B10
+  A10 -->|2| B10
+  A12 -->|1| B10
+  A4 -->|2| B10
+  A5 -->|1| B10
+  B1 -->|3| B10
+  B3 -->|5| B10
+  B5 -->|1| B10
+  B6 -->|1| B10
+  B7 -->|1| B10
+  B8 -->|14| B10
+  B9 -->|14| B10
+  B1 -->|13| B11
+  B2 -->|7| B11
+  B4 -->|2| B11
+  B6 -->|9| B11
+  B8 -->|2| B11
+  B9 -->|2| B11
+  A1 -->|12| B2
+  A2 -->|2| B2
+  A3 -->|8| B2
+  A4 -->|2| B2
+  B1 -->|25| B2
+  A2 -->|3| B3
+  A3 -->|5| B3
+  B1 -->|8| B3
+  B2 -->|6| B3
+  A1 -->|5| B4
+  A3 -->|5| B4
+  B1 -->|6| B4
+  B2 -->|3| B4
+  B3 -->|4| B4
+  A2 -->|2| B5
+  A4 -->|3| B5
+  B1 -->|21| B5
+  B2 -->|14| B5
+  B3 -->|7| B5
+  B4 -->|5| B5
+  A1 -->|2| B6
+  A5 -->|1| B6
+  A7 -->|9| B6
+  A8 -->|4| B6
+  B1 -->|25| B6
+  B2 -->|6| B6
+  B3 -->|4| B6
+  B4 -->|3| B6
+  A8 -->|3| B7
+  B1 -->|17| B7
+  B5 -->|11| B7
+  B6 -->|17| B7
+  A10 -->|2| B8
+  A12 -->|4| B8
+  A5 -->|1| B8
+  A6 -->|2| B8
+  A7 -->|2| B8
+  A9 -->|1| B8
+  B1 -->|9| B8
+  B2 -->|9| B8
+  B3 -->|2| B8
+  B5 -->|9| B8
+  B6 -->|27| B8
+  B7 -->|7| B8
+  B1 -->|4| B9
+  B5 -->|3| B9
+  B6 -->|10| B9
+  B7 -->|2| B9
+  B8 -->|7| B9
   A2 -.->|2| A1
   A4 -.->|1| A1
   A7 -.->|1| A1
@@ -89,6 +180,15 @@ graph TD
   A5 -.->|1| A2
   A12 -.->|1| A4
   A12 -.->|1| A9
+  B2 -.->|1| B1
+  B3 -.->|2| B1
+  B3 -.->|2| B2
+  B5 -.->|1| B2
+  B8 -.->|3| B6
+  B9 -.->|1| B6
+  B8 -.->|1| B7
+  B10 -.->|2| B8
+  B11 -.->|1| B8
 ```
 
 ## Planned

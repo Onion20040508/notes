@@ -291,7 +291,7 @@ The picture behind Example [[§7 Homogeneous Spaces#^ex-7-3|§7.3]]. The rotatio
 
 ## The Topology of $G/H$
 
-Definitions [[§7 Homogeneous Spaces#^def-7-4|§7.4]] and [[§7 Homogeneous Spaces#^def-7-5|§7.5]] are purely algebraic. If $G$ carries a topology, $G/H$ inherits one in the only reasonable way.
+Definitions [[§7 Homogeneous Spaces#^def-7-4|§7.4]] and [[§7 Homogeneous Spaces#^def-7-5|Def. §7.5]] are purely algebraic. If $G$ carries a topology, $G/H$ inherits one in the only reasonable way.
 
 > [!definition] Definition §7.6: The Quotient Topology on a Coset Space
 > Let $G$ be a topological group and $H \le G$ a subgroup. The **quotient topology** on $G/H$ is the quotient topology induced by the canonical projection $\pi$ of Definition [[§7 Homogeneous Spaces#^def-7-5|§7.5]], in the sense of Definition [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-4|§3.4]]:
@@ -427,7 +427,7 @@ The same triangle with $G = \mathbb{R}$. The exponential wraps the line around t
 ^ex-7-5
 
 > [!remark]- Connections
-> - [[Discrete and indiscrete topologies]]; the same group appears in [[§2 Topological Manifolds#^ex-2-3|§2.3]] and [[§5 Topological Groups and Classical Matrix Groups#^ex-5-1|Discrete Groups, §5.1]].
+> - [[Discrete and indiscrete topologies]]; the same group appears in [[§2 Topological Manifolds#^ex-2-3|Ex. §2.3]] and [[§5 Topological Groups and Classical Matrix Groups#^ex-5-1|Discrete Groups, §5.1]].
 
 **Comparison with Lee.** Lee's Theorem 21.18 has no compactness hypothesis: for a Lie group acting smoothly and transitively on a manifold, $\Phi$ is an equivariant *diffeomorphism*. Smoothness does the work that compactness does here — $\Phi$ has constant rank by his equivariant rank theorem (Theorem 7.25), and a bijection of constant rank is a diffeomorphism. His standing assumption that $G$ is a Lie group, in particular second countable, also rules out Example [[§7 Homogeneous Spaces#^ex-7-5|§7.5]], where $G$ is an uncountable discrete group. In the purely topological setting of the course some hypothesis is needed, and “$G/H$ compact, $X$ Hausdorff” is the one used.
 

@@ -21,6 +21,7 @@ tags: [real-analysis, hub]
 
 ## Used in (Measure Theory)
 - [[§7 Structure of Open Sets#^prop-7-1|Proposition §7.1: Open Sets in ℝ are Countable Unions of Disjoint Intervals]]
+- [[§7 Structure of Open Sets#^lem-7-2|Lemma §7.2]]
 
 ## Used in (Functional Analysis)
 - [[§4 Proof of the Hahn–Banach Theorem#^lem-4-1|Lemma §4.1: One-Step Extension]]

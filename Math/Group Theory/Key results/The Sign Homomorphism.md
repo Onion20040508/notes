@@ -26,6 +26,9 @@ tags: [group-theory, hub]
 - [[§41 Commutators#^prop-41-3|Proposition §41.3: Transpositions Are Not Commutators]]
 - [[§41 Commutators#^thm-41-5|Theorem §41.5: The Commutator Subgroup of Sₙ]]
 
+## Used in (Differentiable Manifolds)
+- [[§5 Topological Groups and Classical Matrix Groups#^prop-5-2|Proposition §5.2: Properties of the Sign]]
+
 ## Connections
 - **Used for.** Aₙ = Ker sgn is normal of order n!/2 ([[§20 The Sign Homomorphism and the Alternating Group#^prop-20-5|§20.5]], [[§38 The First Isomorphism Theorem#^ex-38-1|Ex. §38.1]]), and the parity of a permutation is well defined ([[§20 The Sign Homomorphism and the Alternating Group#^cor-20-4|§20.4]]). Transpositions are not commutators ([[§41 Commutators#^prop-41-3|§41.3]]), and [Sₙ, Sₙ] = Aₙ ([[§41 Commutators#^thm-41-5|§41.5]]), so every character of Sₙ factors through sgn.
 - **Three definitions.** The sign can be defined by Δ, by inversions, or as det ∘ M ([[§20 The Sign Homomorphism and the Alternating Group#^thm-20-2|Three Formulas for the Sign]], [[§20 The Sign Homomorphism and the Alternating Group#^rem-20-2|Speyer's Presentation]]). Δ spans a line on which Sₙ acts by sgn ([[§40 Characters#^ex-40-2|Ex. §40.2]]).

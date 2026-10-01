@@ -30,6 +30,7 @@ tags: [linear-algebra, hub]
 - [[§5 Topological Groups and Classical Matrix Groups#^def-5-8|Definition §5.8: Complex Matrix Groups]]
 - [[§10 Vector Spaces and Matrix Groups#^lem-10-14|Lemma §10.14: A One-Sided Inverse Suffices]]
 - [[§14 Local Diffeomorphisms and Submersions#^thm-14-5|Theorem §14.5: Local Normal Form for Submersions]]
+- [[§14 Local Diffeomorphisms and Submersions#^lem-14-7|Lemma §14.7: Diffeomorphisms onto Open Sets Are Charts]]
 
 ## Connections
 - Characteristic polynomial: $\lambda$ is an eigenvalue iff $\det(\lambda I-T)=0$ ([[§34 Determinants#^ladr-9-51|9.51]]).

@@ -71,7 +71,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - $\varphi_j$ reads off the $j$-th coordinate: [[§12 Duality#^ladr-3-114|Dual basis gives coefficients for linear combination]]. It is a basis: [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]].
 > - Physics: $\langle e_j|$ against an orthonormal $|e_k\rangle$; index notation $e^j(e_k)=\delta^j_k$ for upper/lower indices.
-> - Same in 591: [[§10 Vector Spaces and Matrix Groups#^prop-10-2|591 Prop. §10.2]]; the differentials of the coordinate functions form the dual basis of the coordinate derivations, [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|591 Lemma §13.2]].
+> - Same in 591: [[§10 Vector Spaces and Matrix Groups#^def-10-1|591 Def. §10.1]], a basis of the dual by [[§10 Vector Spaces and Matrix Groups#^prop-10-2|591 Prop. §10.2]]; the differentials of the coordinate functions form the dual basis of the coordinate derivations, [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|591 Lemma §13.2]].
 
 > [!example] Example 3.113: The dual basis of the standard basis of Fⁿ (p. 106)
 > On $\F^n$ let $\varphi_j(x_1,\dots,x_n)=x_j$ (select the $j$-th coordinate). Then $\varphi_j(e_k)=1$ if $k=j$ and $0$ otherwise, so $\varphi_1,\dots,\varphi_n$ is the dual basis of the standard basis ([[§12 Duality#^ladr-3-112|3.112]]). In index notation: $e^j(e_k)=\delta^j_k$.

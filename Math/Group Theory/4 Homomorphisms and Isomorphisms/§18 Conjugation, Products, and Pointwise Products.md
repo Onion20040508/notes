@@ -168,7 +168,7 @@ tags: [group-theory, math493]
 
 ^rem-18-2
 
-Worksheet 3 restates the definition of an abelian group ($g_1 * g_2 = g_2 * g_1$ for all $g_1, g_2$; the definition in [[§1 The Definition of a Group#^def-1-2|§1.2]]) together with the convention that $+$ and $0$ are used only for abelian groups ([[§1 The Definition of a Group#^rem-1-1|§1, Notation]]). Its WS 3.4 is the characterization already proved in [[§18 Conjugation, Products, and Pointwise Products#^prop-18-4|§18.4]] from the problem set:
+Worksheet 3 restates the definition of an abelian group ($g_1 * g_2 = g_2 * g_1$ for all $g_1, g_2$; the definition in [[§1 The Definition of a Group#^def-1-2|Def. §1.2]]) together with the convention that $+$ and $0$ are used only for abelian groups ([[§1 The Definition of a Group#^rem-1-1|§1, Notation]]). Its WS 3.4 is the characterization already proved in [[§18 Conjugation, Products, and Pointwise Products#^prop-18-4|§18.4]] from the problem set:
 
 > [!theorem] Proposition §18.5: Characterizations of Abelian Groups, Worksheet Form
 > Let $G$ be a group. Then $G$ is abelian if and only if each of the following holds (and each is equivalent to abelian-ness on its own):

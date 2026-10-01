@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ← [[· A5 Current and Resistance]] · ↑ [[Electromagnetism]] · [[· A7 Magnetic Forces and Fields]] →
 
 **Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (2), [[· A3 Electric Potential|A3 Electric Potential]] (6), [[· A4 Capacitance|A4 Capacitance]] (3), [[· A5 Current and Resistance|A5 Current and Resistance]] (15)
-**Used by:** [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (8), [[· A10 Inductance|A10 Inductance]] (7), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (9)
+**Used by:** [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (8), [[· A10 Inductance|A10 Inductance]] (7), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (9), [[· B8 Electrodynamics|B8 Electrodynamics]] (2)
 
 ## Sections
 - [[§A6.1 Electromotive Force]] — UP Vol. 2 §10.1

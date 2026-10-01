@@ -303,7 +303,7 @@ tags: [linear-algebra]
 > - Similar matrices describe the same operator; similarity invariants: [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|Trace of matrix of operator does not depend on basis]], [[§34 Determinants#^ladr-9-52|Determinant is a similarity invariant]].
 > - Physics: with orthonormal bases $C$ is unitary and this is the familiar $A=U^\dagger BU$ change of representation.
 > - Bilinear-form version (different rule, $C^tBC$): [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-7|Change-of-basis formula (LADR 9.7)]].
-> - Similar matrices are exactly the conjugate elements of the general linear group: [[§31 Conjugacy Classes#^def-31-3|493 Def. §31.3]].
+> - Similarity is conjugation by an invertible matrix; for invertible matrices, similar means conjugate in the general linear group: [[§31 Conjugacy Classes#^def-31-3|493 Def. §31.3]].
 > - On a manifold the change-of-basis matrix between coordinate bases is the Jacobian of the transition map ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-24|591 Cor. §12.24]]); it gives the transition maps of the tangent bundle, [[§17 The Tangent Bundle#^prop-17-3|591 Prop. §17.3]].
 
 %% ex:3.84-diagram %%

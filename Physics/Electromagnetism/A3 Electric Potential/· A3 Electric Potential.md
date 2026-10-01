@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ← [[· A2 Gauss's Law]] · ↑ [[Electromagnetism]] · [[· A4 Capacitance]] →
 
 **Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (10), [[· A2 Gauss's Law|A2 Gauss's Law]] (14)
-**Used by:** [[· A4 Capacitance|A4 Capacitance]] (17), [[· A5 Current and Resistance|A5 Current and Resistance]] (3), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (6), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (2), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (3), [[· A10 Inductance|A10 Inductance]] (2)
+**Used by:** [[· A4 Capacitance|A4 Capacitance]] (17), [[· A5 Current and Resistance|A5 Current and Resistance]] (3), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (6), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (2), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (3), [[· A10 Inductance|A10 Inductance]] (2), [[· B2 Electrostatics|B2 Electrostatics]] (8), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (5), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (5)
 
 ## Sections
 - [[§A3.1 Electric Potential Energy]] — UP Vol. 2 §7.1

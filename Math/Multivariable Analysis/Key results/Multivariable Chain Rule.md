@@ -60,6 +60,7 @@ tags: [multivariable-analysis, hub]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-25|Proposition §12.25: Agreement with the Vector-Space Differential]]
 - [[§15 Submanifolds#^prop-15-8|Proposition §15.8: The Old and New Versions Agree]]
 - [[§17 The Tangent Bundle#^prop-17-5|Proposition §17.5: The Cotangent Transition Maps]]
+- [[§9 Manifolds in Euclidean Space#^ex-9-2|Example §9.2: A Surface in ℝ³]]
 
 ## Connections
 - **Proof idea.** Split the increment of g into single-variable increments and apply the one-variable [[Mean Value Theorem]]. Continuity of the partials controls the intermediate points. The 451 version is the [[§28 Basic Properties of the Derivative#^thm-28-3|Chain Rule]] (§28.3). Under differentiability alone, see [[§6 Differentiability#^thm-6-9|Theorem §6.9]].
