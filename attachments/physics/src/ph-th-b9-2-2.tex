@@ -1,0 +1,32 @@
+% Figure for Thermal Physics §B9.2 (phase diagram of water on a logarithmic pressure axis: coexistence curves computed from the Clausius-Clapeyron equation, compared with the vapour-pressure data tabulated in Schroeder §5.3, Fig. 5.11).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=10.5cm, height=7.5cm, ymode=log, xmin=195, xmax=700, ymin=1e-6, ymax=3000,
+      xlabel={$T$ (K)}, ylabel={$p$ (bar)},
+      xtick={200,273,373,500,647}, ytick={1e-6,1e-4,1e-2,1,100},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south}, clip=true]
+    % 1 atm line
+    \addplot[black!55, thin, dashed] coordinates {(195,1.013) (700,1.013)};
+    % sublimation (constant L_s)
+    \addplot[figB] coordinates {(200.00,1.6379e-06) (205.23,3.5805e-06) (210.45,7.5287e-06) (215.68,1.527e-05) (220.90,2.9954e-05) (226.13,5.6956e-05) (231.35,0.0001052) (236.58,0.00018911) (241.81,0.00033144) (247.03,0.00056726) (252.26,0.0009495) (257.48,0.0015564) (262.71,0.0025016) (267.93,0.0039471) (273.16,0.00612)};
+    % fusion
+    \addplot[figB] coordinates {(273.16,0.00612) (273.16,0.01) (273.16,0.1) (273.15,1) (273.09,10) (272.42,100) (270.95,300) (265.85,1000) (258.74,2000)};
+    % vaporization, constant L (dashed) and L linear in T (solid)
+    \addplot[figR, dashed] coordinates {(273.16,0.0083578) (282.75,0.015338) (292.34,0.027048) (301.92,0.046011) (311.51,0.07575) (321.10,0.12105) (330.69,0.18826) (340.28,0.28559) (349.87,0.42345) (359.45,0.6148) (369.04,0.87549) (378.63,1.2246) (388.22,1.6848) (397.81,2.2825) (407.39,3.0483) (416.98,4.0174) (426.57,5.2292) (436.16,6.728) (445.75,8.5632) (455.34,10.789) (464.92,13.464) (474.51,16.653) (484.10,20.424) (493.69,24.851) (503.28,30.013) (512.87,35.992) (522.45,42.875) (532.04,50.754) (541.63,59.723) (551.22,69.88) (560.81,81.326) (570.39,94.166) (579.98,108.51) (589.57,124.45) (599.16,142.12) (608.75,161.62) (618.34,183.06) (627.92,206.56) (637.51,232.23) (647.10,260.19)};
+    \addplot[figB] coordinates {(273.16,0.0063998) (282.75,0.01245) (292.34,0.023058) (301.92,0.040855) (311.51,0.069548) (321.10,0.11417) (330.69,0.18134) (340.28,0.27948) (349.87,0.41904) (359.45,0.61266) (369.04,0.87522) (378.63,1.224) (388.22,1.6783) (397.81,2.26) (407.39,2.9926) (416.98,3.9013) (426.57,5.0129) (436.16,6.3551) (445.75,7.9563) (455.34,9.8451) (464.92,12.05) (474.51,14.599) (484.10,17.518) (493.69,20.833) (503.28,24.567) (512.87,28.742) (522.45,33.377) (532.04,38.488) (541.63,44.09) (551.22,50.192) (560.81,56.802) (570.39,63.926) (579.98,71.564) (589.57,79.716) (599.16,88.376) (608.75,97.539) (618.34,107.19) (627.92,117.33) (637.51,127.92) (647.10,138.97)};
+    % data (Schroeder Fig. 5.11 table)
+    \addplot[only marks, mark=o, mark size=1.8pt, black] coordinates {(233.15,0.00013) (253.15,0.00103) (273.15,0.00611) (298.15,0.0317) (323.15,0.1234) (373.15,1.013) (423.15,4.757) (473.15,15.54) (523.15,39.74) (573.15,85.84) (623.15,165.2) (647.15,220.6)};
+    \addplot[only marks, mark=*, mark size=1.8pt, black] coordinates {(273.16,0.00612) (647.15,220.6)};
+    % labels
+    \node[font=\scriptsize, anchor=north west] at (axis cs:276,0.005) {triple point};
+    \node[font=\scriptsize, anchor=south east] at (axis cs:645,300) {critical point};
+    \node[black!70, font=\small] at (axis cs:225,30) {ice};
+    \node[black!70, font=\small] at (axis cs:330,30) {liquid};
+    \node[black!70, font=\small] at (axis cs:560,0.3) {vapour};
+    \node[black!70, font=\scriptsize] at (axis cs:655,1900) {supercritical};
+    \node[black!55, font=\scriptsize, anchor=south west] at (axis cs:560,1.1) {1 atm};
+    \node[figB, font=\scriptsize, anchor=west, align=left] at (axis cs:420,2e-3) {solid: $L = L_0 + \Delta C_p\,T$};
+    \node[figR, font=\scriptsize, anchor=west, align=left] at (axis cs:420,6e-4) {dashed: $L$ constant};
+    \node[black, font=\scriptsize, anchor=west, align=left] at (axis cs:420,1.8e-4) {circles: data};
+  \end{axis}
+\end{tikzpicture}

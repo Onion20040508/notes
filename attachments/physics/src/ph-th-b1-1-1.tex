@@ -1,0 +1,32 @@
+% Figure for Thermal and Statistical Physics §B1.1 (Example: the line integral of the inexact differential (x^2 - y) dx + x dy from (1,1) to (2,2) along four paths, after PHY 306 Problem Set 1, Problem 3; the values are computed in the example).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2mm]}]
+  \begin{axis}[nfig, width=7.8cm, height=6.4cm, xmin=0.75, xmax=2.75, clip=false, ymin=0.75, ymax=2.45,
+      xlabel={$x$}, ylabel={$y$}, xtick={1,1.5,2,2.5}, ytick={1,1.5,2},
+      xlabel style={at={(axis description cs:1.02,0)}, anchor=west},
+      ylabel style={rotate=-90, at={(axis description cs:0,1.02)}, anchor=south}]
+    % path 1: up, then right
+    \draw[figB, very thick, ->] (axis cs:1,1) -- (axis cs:1,1.55);
+    \draw[figB, very thick] (axis cs:1,1.5) -- (axis cs:1,2);
+    \draw[figB, very thick, ->] (axis cs:1,2) -- (axis cs:1.55,2);
+    \draw[figB, very thick] (axis cs:1.5,2) -- (axis cs:2,2);
+    % path 2: right, then up
+    \draw[figR, very thick, ->] (axis cs:1,1) -- (axis cs:1.55,1);
+    \draw[figR, very thick] (axis cs:1.5,1) -- (axis cs:2,1);
+    \draw[figR, very thick, ->] (axis cs:2,1) -- (axis cs:2,1.55);
+    \draw[figR, very thick] (axis cs:2,1.5) -- (axis cs:2,2);
+    % path 3: straight line
+    \draw[figG, very thick, ->] (axis cs:1,1) -- (axis cs:1.55,1.55);
+    \draw[figG, very thick] (axis cs:1.5,1.5) -- (axis cs:2,2);
+    % path 4: parabola y = x^2 - 2x + 2
+    \addplot[figO, very thick, domain=1:2, samples=40] {x^2 - 2*x + 2};
+    \draw[figO, very thick, ->] (axis cs:1.62,1.3844) -- (axis cs:1.66,1.4356);
+    \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(1,1) (2,2)};
+    \node[font=\scriptsize, anchor=north east] at (axis cs:1,1) {$(1,1)$};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:2,2) {$(2,2)$};
+    \node[figB, font=\scriptsize, anchor=south] at (axis cs:1.5,2.03) {$\int df = 4/3$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:2.03,1.5) {$\int df = 10/3$};
+    \node[figG, font=\scriptsize, anchor=south east] at (axis cs:1.43,1.47) {$7/3$};
+    \node[figO, font=\scriptsize, anchor=north west] at (axis cs:1.6,1.32) {$8/3$};
+    \node[black!70, font=\scriptsize, align=center] at (axis cs:1.5,0.86) {$\int dg = 1$ on every path};
+  \end{axis}
+\end{tikzpicture}

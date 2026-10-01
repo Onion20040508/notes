@@ -1,0 +1,30 @@
+% Figure for Thermal and Statistical Physics §B1.2 (geometry of the Legendre transform: U(S) of an ideal gas at fixed volume, U = 0.5 e^{0.9 S} in arbitrary units, with tangent lines of slope T; each tangent meets the axis S = 0 at F = U - TS).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2mm]}]
+  \begin{axis}[nfig, width=8.4cm, height=7.2cm, xmin=0, xmax=2.75, ymin=-4.1, ymax=4.6, clip=false,
+      axis lines=middle, xlabel={$S$}, ylabel={$U$}, xtick=\empty, ytick=\empty,
+      xlabel style={anchor=west}, ylabel style={anchor=south}]
+    % faint family of tangents (the curve is their envelope)
+    \foreach \s in {0.3,0.9,1.45,1.95,2.45} {
+      \addplot[black!22, thin, domain=0:2.7, samples=80, restrict y to domain=-4.05:4.9, unbounded coords=jump] {0.5*exp(0.9*\s) + 0.45*exp(0.9*\s)*(x-\s)};
+    }
+    % the curve U(S)
+    \addplot[figB, very thick, domain=0:2.6, samples=80] {0.5*exp(0.9*x)};
+    \node[figB, anchor=west] at (axis cs:2.6,5.2) {$U(S)$};
+    % tangent at S0 = 2.2: slope T = 3.2592, intercept F = -3.5489
+    \addplot[figR, thick, domain=0:2.6, samples=2] {3.6214 + 3.2592*(x-2.2)};
+    \draw[black!55, dashed] (axis cs:2.2,0) -- (axis cs:2.2,3.6214);
+    \draw[black!55, dashed] (axis cs:0,3.6214) -- (axis cs:2.2,3.6214);
+    \addplot[only marks, mark=*, mark size=1.6pt, figR] coordinates {(2.2,3.6214) (0,-3.5489)};
+    \node[font=\scriptsize, anchor=east] at (axis cs:0,3.6214) {$U$};
+    \node[font=\scriptsize, anchor=north] at (axis cs:2.2,0) {$S$};
+    \node[figR, font=\scriptsize, anchor=east] at (axis cs:0,-3.5489) {$F = U - TS$};
+    \node[figR, font=\scriptsize, anchor=north west] at (axis cs:0.3,-2.75) {rise $TS$ over the run $S$};
+    % slope triangle
+    \draw[figR, thin] (axis cs:1.55,1.5029) -- (axis cs:1.95,1.5029) -- (axis cs:1.95,2.8066);
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.95,2.1) {slope $T = \partial U/\partial S$};
+    % second tangent at S0 = 1.2: intercept -0.1178
+    \addplot[figO, thick, domain=0:2.0, samples=2] {1.4723 + 1.3251*(x-1.2)};
+    \addplot[only marks, mark=*, mark size=1.4pt, figO] coordinates {(1.2,1.4723) (0,-0.1178)};
+    \node[figO, font=\scriptsize, anchor=east] at (axis cs:0,-0.1178) {$F$ at a lower $T$};
+  \end{axis}
+\end{tikzpicture}
