@@ -50,3 +50,6 @@ The torus $T^2 = S^1 \times S^1$, equivalently the unit square with opposite edg
 
 ## The torus as the square with boundary word $aba^{-1}b^{-1}$
 ![[§29 The Seifert–van Kampen Theorem#^ex-29-7]]
+
+## Connections
+- **Also in [[Logic and Proofs]]:** the torus as the same glued square, with Euler characteristic 0 computed three ways: [[§25 Surfaces and the Euler Characteristic#^ex-25-3|250 Ex. §25.3]].

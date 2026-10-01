@@ -1,0 +1,29 @@
+% Figure for Electromagnetism §B6.1 (Theorem §B6.1.4, Example §B6.1.1): computed trajectories of a positive charge in uniform crossed fields E (up) and B (out of the page), starting at the origin with velocity v0 along y, in units R = u/omega, u = E/B.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small, x=0.62cm, y=0.62cm]
+  % axes
+  \draw[->, thin, black!55] (-0.6,0) -- (14.2,0) node[right, font=\scriptsize] {$y/R$};
+  \draw[->, thin, black!55] (0,-4.6) -- (0,2.9) node[above, font=\scriptsize] {$z/R$};
+  \foreach \k in {1,2} \draw[thin, black!55] ({2*pi*\k},0.12) -- ({2*pi*\k},-0.12) node[below, font=\scriptsize, black!70, fill=white, inner sep=1pt] {$\ifnum\k=1 2\pi\else 4\pi\fi$};
+  \foreach \zz in {-4,-2,2} \draw[thin, black!55] (0.12,\zz) -- (-0.12,\zz) node[left, font=\scriptsize, black!70] {$\zz$};
+  % v0 = 0: cycloid (w0 = -u)
+  \draw[figB, thick, domain=0:4*pi, samples=240, variable=\t] plot ({\t - sin(\t r)}, {1 - cos(\t r)});
+  % v0 = u/2 (w0 = -u/2)
+  \draw[figG, thick, domain=0:4*pi, samples=240, variable=\t] plot ({\t - 0.5*sin(\t r)}, {0.5*(1 - cos(\t r))});
+  % v0 = u: straight line
+  \draw[figO, thick] (0,0) -- (4*pi,0);
+  % v0 = 3u (w0 = 2u): loops
+  \draw[figR, thick, domain=0:4*pi, samples=320, variable=\t] plot ({\t + 2*sin(\t r)}, {2*(cos(\t r) - 1)});
+  % direction arrows
+  \draw[figB, ->, thick] ({pi/2 - 1},1) -- ++(0.15,0.15);
+  \draw[figR, ->, thick] ({pi + 0.0},-4) -- ++(-0.3,0);
+  % labels
+  \node[figB, font=\scriptsize, anchor=south] at (pi,2.05) {$v_0 = 0$ (cycloid)};
+  \node[figG, font=\scriptsize, anchor=west] at ({3*pi+0.25},1.15) {$v_0 = u/2$};
+  \node[figO, font=\scriptsize, anchor=west] at ({4*pi+0.1},0.35) {$v_0 = u$};
+  \node[figR, font=\scriptsize, anchor=west] at (11.9,-3.4) {$v_0 = 3u$};
+  % field symbols
+  \draw[->, very thick, black] (15.0,-3.9) -- (15.0,-2.4) node[above] {$\vec E$};
+  \draw[thick] (16.3,-3.15) circle (0.22); \fill (16.3,-3.15) circle (0.06);
+  \node[above] at (16.3,-2.85) {$\vec B$};
+  \fill (0,0) circle (2.2pt);
+\end{tikzpicture}

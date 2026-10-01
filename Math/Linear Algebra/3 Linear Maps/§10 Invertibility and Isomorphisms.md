@@ -26,6 +26,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Same argument as [[§2 Definition of Vector Space#^ladr-1-27|Unique additive inverse]]; same argument for matrices in [[§10 Invertibility and Isomorphisms#^ladr-3-80|Invertible, inverse, A⁻¹]].
+> - For arbitrary functions: [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]] (an inverse, when it exists, is unique).
 
 > [!remark] Notation 3.61: T⁻¹ (p. 82)
 
@@ -52,6 +53,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Linear bijections automatically have linear inverses. In finite equal dimensions, one condition suffices: [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]].
+> - Set-level version: [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]] (a function is invertible if and only if it is bijective); the new point here is that the inverse is linear.
 
 > [!example] Example 3.64: Neither injectivity nor surjectivity implies invertibility (p. 84)
 > In infinite dimensions neither half of [[§10 Invertibility and Isomorphisms#^ladr-3-63|3.63]] suffices:
@@ -77,6 +79,9 @@ tags: [linear-algebra]
 > By [[Fundamental theorem of linear maps]], $\dim V=\dim\nullsp T+\dim\range T$. If $T$ is injective, then $\dim\nullsp T=0$ ([[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]]), so $\dim\range T=\dim V=\dim W$ and $\range T=W$ by [[§6 Dimension#^ladr-2-39|Subspace of full dimension equals the whole space]]. If $T$ is surjective, then $\dim\nullsp T=\dim V-\dim W=0$, so $T$ is injective. Either condition therefore gives both, hence invertibility by [[§10 Invertibility and Isomorphisms#^ladr-3-63|Invertibility ⟺ injectivity and surjectivity]].
 
 *Uses:* [[Fundamental theorem of linear maps|3.21]], [[§8 Null Spaces and Ranges#^ladr-3-15|3.15]], [[§6 Dimension#^ladr-2-39|2.39]], [[§10 Invertibility and Isomorphisms#^ladr-3-63|3.63]]
+
+> [!remark]- Connections
+> - Finite-set analogue, with cardinality in place of dimension: [[§11 Properties of Finite Sets#^thm-11-7|250 Thm. §11.7]].
 
 %% ex:3.65-fig %%
 > [!example] Example: The shifts on $\F^\infty$, pictured

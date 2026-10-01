@@ -1,0 +1,30 @@
+% Figure for Electromagnetism §B8.1 (PHY 422 HW 10 Problem 4, sliding bar: circuit, and the computed decay of speed, position and dissipated energy, tau = mR/(B^2 l^2)).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % left panel: the circuit
+  \begin{scope}
+    \foreach \x in {0.8,1.6,2.4,4.0,4.8} \foreach \y in {0.5,1.5,2.5}
+      \node[black!45, font=\scriptsize] at (\x,\y) {$\otimes$};
+    \node[black!60, font=\scriptsize, anchor=south east] at (5.3,3.05) {$\vec B$ into page};
+    \draw[very thick, black!70] (5.3,3) -- (0,3) to[R, l_=$R$, color=black] (0,0) -- (5.3,0);
+    \draw[line width=2.2pt, figB] (3.2,-0.15) -- (3.2,3.15);
+    \node[figB, font=\scriptsize, below] at (3.2,-0.15) {bar, mass $m$};
+    \draw[->, very thick, figB] (3.35,1.0) -- (4.4,1.0) node[right] {$\vec v$};
+    \draw[->, very thick, figR] (3.05,2.0) -- (1.95,2.0) node[left, fill=white, inner sep=1.5pt] {$\vec F$};
+    \draw[->, very thick, figR] (2.95,0.35) -- (2.95,1.25);
+    \node[figR, font=\scriptsize, left] at (2.95,0.8) {$I$};
+    \draw[<->, thin, black!55] (5.55,0) -- (5.55,3) node[midway, right, font=\scriptsize, black] {$\ell$};
+    \draw[<->, thin, black!55] (0,-0.75) -- (3.2,-0.75) node[midway, below, font=\scriptsize, black] {$x$};
+  \end{scope}
+  % right panel: computed curves
+  \begin{scope}[xshift=7.4cm, yshift=-0.55cm]
+    \begin{axis}[nfig, width=6.4cm, height=4.6cm, xmin=0, xmax=4.2, ymin=0, ymax=1.12,
+        xlabel={$t/\tau$}, ytick={0,0.5,1}, xtick={0,1,2,3,4}, clip=false]
+      \addplot[figB, domain=0:4, samples=80] {exp(-x)};
+      \addplot[figG, domain=0:4, samples=80] {1-exp(-x)};
+      \addplot[figR, domain=0:4, samples=80] {1-exp(-2*x)};
+      \node[figB, font=\scriptsize, anchor=south west] at (axis cs:2.2,0.17) {$v/v_0$};
+      \node[figG, font=\scriptsize, anchor=west] at (axis cs:1.35,0.62) {$(x - x_0)/v_0\tau$};
+      \node[figR, font=\scriptsize, anchor=south west] at (axis cs:0.45,0.93) {$W_R\big/\tfrac12mv_0^2$};
+    \end{axis}
+  \end{scope}
+\end{tikzpicture}

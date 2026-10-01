@@ -120,6 +120,9 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 ^pf-14-2
 
+> [!remark]- Connections
+> - Its logic in 250: [[§2 Implications#^ex-2-10|250 Ex. §2.10]] (a necessary condition; the contrapositive is the divergence test; the converse fails).
+
 > [!theorem] Proposition §14.3: Linearity of Series
 > If $\sum a_n$ and $\sum b_n$ converge and $c \in \mathbb{R}$, then
 >
@@ -193,6 +196,9 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 ![[m451-14-1.svg]]
 *The dyadic estimate as areas: term $n$ is a bar of area $\tfrac1n$ on $[n-1, n]$ (term $1$ gray). Under each block of terms $(2^k, 2^{k+1}]$ sits a red dashed box of height $\tfrac{1}{2^{k+1}}$ (the block's smallest term) and width $2^k$ — area exactly $\tfrac12$. Every bar reaches at least its box's roof, so each block sums to at least $\tfrac12$, and the partial sums gain half a unit per block, forever.*
+
+> [!remark]- Connections
+> - Used in [[§2 Implications#^ex-2-10|250 Ex. §2.10]](c) as the counterexample to the converse of Corollary 14.2.
 
 ## Absolute Convergence
 

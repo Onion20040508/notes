@@ -133,6 +133,9 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ^def-12-3
 
+> [!remark]- Connections
+> - Equivalence relations, equivalence classes and the quotient set in 250: [[§22 Partitions and Equivalence Relations#^def-22-3|250 Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]]; the classes form a partition by [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]].
+
 > [!example] Example §12.2: Circle as Quotient Space
 > $X = [0, 1]$. Let $\sim$ be defined by $0 \sim 1$ (i.e., glue the endpoints). Then $X/{\sim}$ is homeomorphic to a circle.
 >
@@ -158,6 +161,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 > [!remark]- Connections
 > - The quotient map to $S^1 \times S^1$ is justified in [[§12 Quotient Topology#^ex-12-6|Example §12.6: The Square-to-Torus Quotient Map]].
+> - The same square in 250, where it gives the Euler characteristic of the torus, 1 − 2 + 1 = 0: [[§25 Surfaces and the Euler Characteristic#^ex-25-3|250 Ex. §25.3]], method 3.
 
 ## Properties of Quotient Maps
 

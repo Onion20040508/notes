@@ -24,6 +24,7 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 > [!remark]- Connections
 > - MATH 590 uses equivalence relations to build quotient spaces: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 §12.3).
 > - Group-theoretic instances: [[§25 Orbits#^prop-25-2|The Orbit Relation]], [[§26 Left and Right Cosets#^def-26-1|Congruence Modulo a Subgroup]].
+> - Same definition: [[§22 Partitions and Equivalence Relations#^def-22-3|250 Def. §22.3]], with relations as subsets of $X \times X$ in [[§22 Partitions and Equivalence Relations#^def-22-2|250 Def. §22.2]].
 
 > [!definition] Definition §22.2: Equivalence Class
 > Given an equivalence relation $\sim$ on $X$ and $x \in X$, the **equivalence class** of $x$ is
@@ -34,10 +35,16 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 
 ^def-22-2
 
+> [!remark]- Connections
+> - Same definition: [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]] (which also names the quotient set).
+
 > [!definition] Definition §22.3: Partition
 > A **partition** of a set $X$ is a collection of nonempty subsets of $X$, the **parts**, such that every element of $X$ lies in exactly one part; equivalently, $X$ is the disjoint union of the parts, written $X = \bigsqcup_{i \in I} X_i$.
 
 ^def-22-3
+
+> [!remark]- Connections
+> - Same definition: [[§22 Partitions and Equivalence Relations#^def-22-1|250 Def. §22.1]].
 
 > [!theorem] Proposition §22.1: Equivalence Classes Partition a Set
 > Let $\sim$ be an equivalence relation on $X$. Then
@@ -61,6 +68,7 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 > [!remark]- Connections
 > - The same pattern in linear algebra: [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]] (LADR 3.101); in MATH 590: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 §12.3).
 > - Applied to orbits and cosets: [[§25 Orbits#^prop-25-2|The Orbit Relation]], [[§26 Left and Right Cosets#^prop-26-2|Cosets Are the Equivalence Classes]].
+> - Elementary version: [[§22 Partitions and Equivalence Relations#^thm-22-3|250 Thm. §22.3]] (classes are equal or disjoint) and [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]].
 
 > [!theorem] Proposition §22.2: Partitions Come from Equivalence Relations
 > Every partition $X = \bigsqcup_{i \in I} X_i$ arises from a unique equivalence relation, namely “$x \sim y$ iff $x$ and $y$ lie in the same part.” So specifying an equivalence relation on $X$ and specifying a partition of $X$ are the same thing.
@@ -73,3 +81,6 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 ^pf-22-2
 
 *Uses:* [[§22 Equivalence Relations and Partitions#^def-22-1|Def. §22.1]], [[§22 Equivalence Relations and Partitions#^def-22-2|Def. §22.2]], [[§22 Equivalence Relations and Partitions#^def-22-3|Def. §22.3]]
+
+> [!remark]- Connections
+> - Elementary version: [[§22 Partitions and Equivalence Relations#^prop-22-2|250 Prop. §22.2]] (a partition gives an equivalence relation) and [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]] (the two constructions are mutually inverse).

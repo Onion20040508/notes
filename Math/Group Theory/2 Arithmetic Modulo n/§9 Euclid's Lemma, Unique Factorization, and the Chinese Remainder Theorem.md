@@ -23,6 +23,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[§5 A Zoo of Subgroups#^cor-5-2|§5.2]], [[§6 Divisibility and Congruence#^def-6-1|Def. §6.1]], [[§8 Invertibility and Unit Groups#^def-8-1|Def. §8.1]]
 
+> [!remark]- Connections
+> - Elementary versions: [[§23 The Sequence of Prime Numbers#^thm-23-2|250 Thm. §23.2]] (prime case) and [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|250 Thm. §17.4]] (coprime case).
+
 > [!theorem] Theorem §9.2: Unique Prime Factorization
 > Every integer $n \geq 2$ can be written as a product of primes $n = p_1 p_2 \cdots p_k$, and this expression is unique up to the order of the factors. Equivalently, $n = p_1^{a_1} \cdots p_r^{a_r}$ with distinct primes $p_i$ and exponents $a_i \geq 1$, uniquely.
 >
@@ -38,6 +41,9 @@ tags: [group-theory, math493]
 ^pf-9-2
 
 *Uses:* [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]], [[§1 The Set ℕ of Natural Numbers#^rem-1-3|451 §1 (strong induction)]]
+
+> [!remark]- Connections
+> - Elementary version: [[§23 The Sequence of Prime Numbers#^thm-23-5|250 Thm. §23.5]] (Fundamental Theorem of Arithmetic), with existence in [[§23 The Sequence of Prime Numbers#^prop-23-1|250 Prop. §23.1]].
 
 > [!theorem] Theorem §9.3: Chinese Remainder Theorem
 > Let $m, n \geq 1$ with $\gcd(m, n) = 1$. Then the map

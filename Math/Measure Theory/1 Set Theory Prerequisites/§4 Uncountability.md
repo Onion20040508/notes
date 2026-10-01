@@ -118,6 +118,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - MATH 451 states “$\mathbb{R}$ is uncountable” when proving [[§2 The Set ℚ of Rational Numbers#^thm-2-7|Existence of Transcendental Numbers (451 §2.7)]].
 > - Expansions in a base (ternary digits mapped to binary ones) show that the Cantor set is uncountable: [[§11 Borel Sets and Measure Spaces#^prop-11-21|Proposition §11.21]].
+> - Elementary version: ℝ is uncountable, [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]], by Cantor's diagonal argument on decimal expansions.
 
 ## Power Sets
 
@@ -129,6 +130,9 @@ tags: [measure-theory, math551]
 > $$
 
 ^def-4-1
+
+> [!remark]- Connections
+> - Same definition: [[§6 The Language of Set Theory#^def-6-9|250 Def. §6.9]].
 
 > [!theorem] Theorem §4.1: Cantor's Theorem
 > For any set $X$, we have $X \not\sim \mathcal{P}(X)$. That is, there is no bijection from $X$ to its power set.
@@ -151,3 +155,6 @@ tags: [measure-theory, math551]
 ^pf-4-1
 
 *Uses:* [[§4 Uncountability#^def-4-1|Def. §4.1]], [[§1 Countability and Set Theory#^def-1-4|Def. §1.4]], [[§1 Countability and Set Theory#^def-1-6|Def. §1.6]]
+
+> [!remark]- Connections
+> - Elementary version: [[§14 Counting Infinite Sets#^thm-14-13|250 Thm. §14.13]] (stated as an inequality of cardinalities, with the same diagonal set).

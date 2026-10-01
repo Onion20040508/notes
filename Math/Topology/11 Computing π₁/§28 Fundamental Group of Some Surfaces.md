@@ -265,6 +265,9 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 
 ^def-28-5
 
+> [!remark]- Connections
+> - The same construction in 250 (two tori joined by a tube), with Euler characteristic −2: [[§25 Surfaces and the Euler Characteristic#^ex-25-4|250 Ex. §25.4]].
+
 > [!theorem] Theorem §28.5: $\pi_1(\Sigma_2)$ is Non-Abelian
 > The fundamental group of the genus $2$ surface is not abelian.
 
@@ -353,3 +356,6 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 > - $\pi_1(\Sigma_2)$ non-abelian: retract of figure eight + covering space lifting argument ([[§28 Fundamental Group of Some Surfaces#^thm-28-5|§28]]).
 
 ^rem-28-6
+
+> [!remark]- Connections
+> - In 250 the Euler characteristics 2, 0, 1, −2 also tell these four surfaces apart ([[§25 Surfaces and the Euler Characteristic#^ex-25-1|250 Ex. §25.1]], [[§25 Surfaces and the Euler Characteristic#^ex-25-3|250 Ex. §25.3]], [[§25 Surfaces and the Euler Characteristic#^thm-25-7|250 Thm. §25.7]], [[§25 Surfaces and the Euler Characteristic#^ex-25-4|250 Ex. §25.4]]), but the invariance of the Euler characteristic, [[§25 Surfaces and the Euler Characteristic#^thm-25-2|250 Thm. §25.2]], is taken on trust there ([[§25 Surfaces and the Euler Characteristic#^rem-25-1|250 Remark §25.1]] (what is taken on trust)).

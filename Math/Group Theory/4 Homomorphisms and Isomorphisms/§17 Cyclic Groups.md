@@ -111,6 +111,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-1|Properties Inherited by Subgroups]] (590 §21.1, part 2).
+> - The well-ordering step: [[§5 The Induction Principle#^cor-5-7|250 Cor. §5.7]] (proved there from induction).
 
 > [!theorem] Proposition §17.5: The Order of a Power
 > Let $g$ have finite order $n$ and let $k \in \mathbb{Z}$. Then

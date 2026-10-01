@@ -51,6 +51,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - For linear maps it suffices to test $0$: [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]].
+> - Elementary version, for arbitrary functions: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]], part 1.
 
 > [!theorem] Theorem 3.15: Injectivity ⟺ null space equals {0}
 > Let $T\in\Lin(V,W)$. Then $T$ is injective if and only if $\nullsp T=\{0\}$.
@@ -112,6 +113,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Dimension obstruction: [[§8 Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]]. Equivalent to injectivity when dimensions agree: [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]].
+> - Elementary version, for arbitrary functions: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]], part 2.
 
 > [!example] Example 3.20: Surjectivity depends on the target space (p. 62)
 > $D\in\Lin(\Poly_5(\R))$, $Dp=p'$, is not surjective: $x^5$ is not in the range, since derivatives of polynomials of degree $\le5$ have degree $\le4$. But $S\in\Lin(\Poly_5(\R),\Poly_4(\R))$, $Sp=p'$, is surjective. Surjectivity is a property of the map *together with its target* ([[§8 Null Spaces and Ranges#^ladr-3-19|3.19]]).

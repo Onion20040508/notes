@@ -120,6 +120,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[§4 Subgroups#^def-4-2|Def. §4.2]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§2 First Consequences of the Axioms#^prop-2-3|§2.3]], [[§1 The Definition of a Group#^prop-1-1|§1.1]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
 
+> [!remark]- Connections
+> - Elementary version: [[§5 The Induction Principle#^ex-5-5|250 Ex. §5.5]] (the same laws for real numbers and exponents in ℕ, by induction).
+
 > [!remark] Remark: Two Non-Laws
 > The exponent laws concern powers of a *single* element. For two elements, as stressed in lecture:
 >
@@ -288,6 +291,9 @@ tags: [group-theory, math493]
 ^pf-4-8
 
 *Uses:* [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§1 The Set ℕ of Natural Numbers#^thm-1-2|451 §1.2]]
+
+> [!remark]- Connections
+> - The pigeonhole step is [[§11 Properties of Finite Sets#^thm-11-2|250 Thm. §11.2]]; well-ordering is proved from induction in [[§5 The Induction Principle#^cor-5-7|250 Cor. §5.7]].
 
 > [!remark] Remark: Where Finiteness Enters
 > The argument is the pigeonhole principle and fails without finiteness: in $(\mathbb{Z}, +)$ the element $1$ satisfies $N \cdot 1 = N \neq 0$ for every $N \geq 1$, so it has infinite order — the powers never repeat because there is unlimited room. The same pigeonhole appears elsewhere in these notes: it is why following $a, \sigma(a), \sigma^2(a), \ldots$ must return to $a$ in the disjoint cycle decomposition ([[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]]), and why every nonzero class modulo a prime is invertible ([[§8 Invertibility and Unit Groups#^prop-8-2|§8.2]]). This proposition gives only $\operatorname{ord}(g) \leq |G|$; the stronger statement $\operatorname{ord}(g) \mid |G|$ requires Lagrange's theorem ([[§27 The Index and Lagrange's Theorem#^cor-27-3|§27.3]]).

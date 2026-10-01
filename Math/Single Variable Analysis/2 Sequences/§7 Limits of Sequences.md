@@ -21,6 +21,9 @@ We have discussed the properties of $\mathbb{R}$, including the [[Completeness A
 
 ^def-7-1
 
+> [!remark]- Connections
+> - Elementary version: a sequence as a function on ℤ⁺, [[§8 Functions#^def-8-7|250 Def. §8.7]].
+
 > [!example] Example §7.1: First examples
 > 1. $s_n = 1$: a constant sequence.
 >
@@ -54,6 +57,9 @@ We have discussed the properties of $\mathbb{R}$, including the [[Completeness A
 > The condition $|s_n - s| < \varepsilon$ says $s_n$ approximates $s$ with error less than $\varepsilon$. The definition demands: *no matter how small an error tolerance $\varepsilon$ is prescribed, from some stage $N$ onward, every term of the sequence meets that tolerance.* The order of quantifiers is essential: $\varepsilon$ is given first (arbitrarily), and $N$ is allowed to depend on $\varepsilon$.
 
 ^rem-7-1
+
+> [!remark]- Connections
+> - The case s = 0 in 250: null sequences, [[§8 Functions#^def-8-8|250 Def. §8.8]], with the order of the quantifiers ∀ε ∃N discussed in [[§8 Functions#^ex-8-8|250 Ex. §8.8]].
 
 > [!definition] Definition §7.3: Divergence
 > If there exists no real number $s$ such that $(s_n)$ converges to $s$, we say $(s_n)$ **diverges**. For example, $s_n = 2^n$ diverges (it is unbounded; see §9).

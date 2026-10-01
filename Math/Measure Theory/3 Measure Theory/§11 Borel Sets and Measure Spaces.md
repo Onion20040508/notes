@@ -710,6 +710,9 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 
 ^def-11-10
 
+> [!remark]- Connections
+> - The general notion: equivalence relation, [[§22 Partitions and Equivalence Relations#^def-22-3|250 Def. §22.3]].
+
 > [!theorem] Proposition §11.16: Properties of $\sim$
 > The relation $\sim$ is an equivalence relation:
 > - Reflexive: $x \sim x$ (since $x - x = 0 \in \mathbb{Q}$).
@@ -727,6 +730,9 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 
 ^def-11-11
 
+> [!remark]- Connections
+> - The general notion: equivalence class and quotient set, [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]].
+
 > [!theorem] Proposition §11.17
 > For any $x, y \in [0, 1]$, either $E_x \cap E_y = \emptyset$ or $E_x = E_y$.
 
@@ -741,6 +747,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 
 > [!remark]- Connections
 > - Linear-algebra analogue: the classes are translates of $\mathbb{Q}$ (a $\mathbb{Q}$-subspace of $\mathbb{R}$), and translates of a subspace are equal or disjoint, [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|LADR 3.101]]; the set of classes is a [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|quotient space]] (LADR 3.99).
+> - General version: classes are equal or disjoint, [[§22 Partitions and Equivalence Relations#^thm-22-3|250 Thm. §22.3]]; so the classes partition [0, 1], [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]].
 
 Let $\{E_\alpha \mid \alpha \in I\}$ be the collection of distinct equivalence classes, where $I$ is some index set. Note that $\bigcup_{\alpha \in I} E_\alpha = [0, 1]$.
 

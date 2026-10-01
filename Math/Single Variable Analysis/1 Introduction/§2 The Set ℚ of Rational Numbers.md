@@ -22,6 +22,9 @@ But $\mathbb{N}$ is *not* closed under $-$: if $n > m$, then $m - n \notin \math
 
 ^def-2-2
 
+> [!remark]- Connections
+> - ℤ constructed from pairs of natural numbers, with its group and ring laws verified: [[§22 Partitions and Equivalence Relations#^def-22-9|250 Def. §22.9]], [[§22 Partitions and Equivalence Relations#^thm-22-13|250 Thm. §22.13]].
+
 Next, $\mathbb{Z}$ is also closed under multiplication: for $m, n \in \mathbb{Z}$, $m \times n \in \mathbb{Z}$. We now have two operations $+, \times$, plus the inverse of $+$ (negative numbers), all compatible with each other, and $\mathbb{Z}$ is closed under all of them.
 
 > [!definition] Definition §2.3: Ring
@@ -46,6 +49,9 @@ what is special about $n^{-1}$ is that $n \times n^{-1} = 1$: it is the inverse 
 > The notions of semigroup, group, ring, and field are all basic objects of abstract algebra; here they are stated informally, in the commutative setting relevant to numbers. Each stage of the chain $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q}$ is the closure of the previous one under one more operation.
 
 ^rem-2-1
+
+> [!remark]- Connections
+> - ℚ constructed from fractions as equivalence classes, with all field axioms verified: [[§22 Partitions and Equivalence Relations#^thm-22-9|250 Thm. §22.9]].
 
 ## $\sqrt{2}$ Is Not Rational
 
@@ -85,12 +91,18 @@ So we should be happy with $\mathbb{Q}$ — but not so. One reason, mentioned in
 
 ^rem-2-3
 
+> [!remark]- Connections
+> - Elementary version: [[§13 Number Systems#^thm-13-4|250 Thm. §13.4]] (the same parity proof from a fraction in lowest terms); a second proof by unique factorization in [[§23 The Sequence of Prime Numbers#^ex-23-6|250 Ex. §23.6]](a).
+
 The divisibility argument above adapts to $\sqrt3$, $\sqrt5$, and beyond — but a bookkeeping of prime factorizations settles *all* square roots of integers at once. We cite one standard fact from elementary number theory (not proved in this course):
 
 > [!remark] Remark: Cited fact: the Fundamental Theorem of Arithmetic
 > Every positive integer can be expressed as $\prod_{i=1}^{\infty} p_i^{\,n_i}$, where $p_1 < p_2 < \cdots$ lists the primes and the $n_i$ are nonnegative integers, all but finitely many zero (e.g. $1 = \prod_i p_i^0$, $2 = 2^1\cdot3^0\cdots$, $24 = 2^3\cdot3^1\cdot5^0\cdots$) — and this expression is *unique*: if $\prod_i p_i^{\alpha_i} = \prod_i p_i^{\beta_i}$, then $\alpha_i = \beta_i$ for every $i$.
 
 ^rem-2-4
+
+> [!remark]- Connections
+> - Proved in [[§23 The Sequence of Prime Numbers#^thm-23-5|250 Thm. §23.5]] (existence by strong induction, uniqueness by cancelling common primes).
 
 > [!theorem] Proposition §2.2: Rational Square Roots of Integers (HW)
 > Let $m$ be a positive integer. Then $\sqrt m \in \mathbb{Q}$ if and only if $m$ is a perfect square. Equivalently: if some prime appears in the factorization of $m$ with an *odd* exponent, then $\sqrt m \notin \mathbb{Q}$.
@@ -125,6 +137,9 @@ The divisibility argument above adapts to $\sqrt3$, $\sqrt5$, and beyond — but
 > But the left side is even, while the right side is odd (since $k_j$ is odd) — contradiction. Hence $\sqrt m$ cannot be written as $\tfrac PQ$, so $\sqrt m \notin \mathbb{Q}$.
 
 ^pf-2-2
+
+> [!remark]- Connections
+> - Elementary version: [[§23 The Sequence of Prime Numbers#^ex-23-6|250 Ex. §23.6]], the same exponent count for √2 and ∛2, with the general √n case noted after part (a); √3 by divisibility in [[§13 Number Systems#^ex-13-1|250 Ex. §13.1]], using [[§15 The Division Theorem#^prop-15-3|250 Prop. §15.3]].
 
 > [!example] Example §2.1: Instances (HW)
 > $\sqrt3, \sqrt5, \sqrt7, \sqrt{31} \notin \mathbb{Q}$: each of $3, 5, 7, 31$ is prime, so it appears in itself with exponent $1$, odd. $\sqrt{24} \notin \mathbb{Q}$: here $24 = 2^3 \cdot 3^1$, and *both* exponents are odd — either prime alone yields the parity contradiction. The criterion also re-proves $\sqrt2 \notin \mathbb{Q}$ and covers $\sqrt6$ ($6 = 2^1\cdot3^1$), used below.
@@ -163,6 +178,9 @@ To get a field containing all such numbers, we need a new notion. What is $\sqrt
 
 ^def-2-5
 
+> [!remark]- Connections
+> - 250's version, for real numbers and with rational coefficients: [[§14 Counting Infinite Sets#^def-14-4|250 Def. §14.4]].
+
 > [!definition] Definition §2.6: Algebraic Integer
 > If moreover $a_n = 1$, the solution $x$ is called an **algebraic integer**.
 
@@ -198,12 +216,18 @@ To compare the sizes of two classes of students, we count. The same works for an
 
 ^thm-2-3
 
+> [!remark]- Connections
+> - Proved in [[§10 Counting#^prop-10-3|250 Prop. §10.3]].
+
 This matching criterion makes sense even when counting does not, so we turn it into a definition:
 
 > [!definition] Definition §2.7: Same Size
 > Two infinite sets $A$ and $B$ are said to have the **same size** if there exists a bijective map $f: A \to B$.
 
 ^def-2-7
+
+> [!remark]- Connections
+> - Same definition: equipotent sets, [[§14 Counting Infinite Sets#^def-14-1|250 Def. §14.1]].
 
 > [!theorem] Theorem §2.4: $\mathbb{N}$ and $\mathbb{Z}$ have the same size
 > There exists a bijection $f: \mathbb{N} \to \mathbb{Z}$.
@@ -231,10 +255,16 @@ This matching criterion makes sense even when counting does not, so we turn it i
 
 ^pf-2-4
 
+> [!remark]- Connections
+> - Same bijection: [[§14 Counting Infinite Sets#^ex-14-1|250 Ex. §14.1]](c).
+
 > [!definition] Definition §2.8: Countable
 > An infinite set $A$ is said to be **countable** if it has the same size as $\mathbb{N}$. This is reasonable terminology, since $\mathbb{N}$ itself arises from counting.
 
 ^def-2-8
+
+> [!remark]- Connections
+> - 451's countable is 250's denumerable, [[§14 Counting Infinite Sets#^def-14-2|250 Def. §14.2]]; there (as in 551) countable also allows finite sets.
 
 > [!theorem] Theorem §2.5: $\mathbb{Q}$ is countable
 > There exists a bijection $f: \mathbb{Q} \to \mathbb{N}$.
@@ -271,6 +301,9 @@ This matching criterion makes sense even when counting does not, so we turn it i
 ![[m451-2-1.svg]]
 *The listing strategy of the proof: the pair $(p,q)$ sits at a grid point, and the dashed diagonals collect the pairs with $p+q = 2, 3, \ldots, 6$. Walking the diagonals in turn, each with increasing $p$ (red arrows), lists the coprime pairs (blue) and skips $(2,2), (2,4), (3,3), (4,2)$ (hollow), whose values $1, \tfrac12, 1, 2$ already appeared in lowest terms.*
 
+> [!remark]- Connections
+> - Elementary version: [[§14 Counting Infinite Sets#^thm-14-10|250 Thm. §14.10]] (Cantor, 1874).
+
 > [!theorem] Theorem §2.6: $\overline{\mathbb{Q}}$ is countable
 > The set $\overline{\mathbb{Q}}$ of algebraic numbers is countable.
 
@@ -283,10 +316,16 @@ This is more difficult; we do not prove it here.
 
 ^rem-2-6
 
+> [!remark]- Connections
+> - Proved, for the real algebraic numbers, in [[§14 Counting Infinite Sets#^thm-14-16|250 Thm. §14.16]], by listing the polynomials with rational coefficients as here.
+
 > [!definition] Definition §2.9: Uncountable
 > An infinite set $A$ is called **uncountable** if it does *not* have the same size as $\mathbb{N}$. In this case it has more elements than $\mathbb{N}$.
 
 ^def-2-9
+
+> [!remark]- Connections
+> - Same as uncountable in [[§14 Counting Infinite Sets#^def-14-2|250 Def. §14.2]], where finite sets count as countable, so uncountable sets are automatically infinite.
 
 Later we will see that $\mathbb{R}$ is uncountable.
 
@@ -296,6 +335,9 @@ Later we will see that $\mathbb{R}$ is uncountable.
 > A number $x$ is called **transcendental** if it is not an algebraic number.
 
 ^def-2-10
+
+> [!remark]- Connections
+> - Same definition: [[§14 Counting Infinite Sets#^def-14-4|250 Def. §14.4]].
 
 > [!example] Example §2.3: $\pi$ and $e$
 > $\pi$ and $e$ are transcendental. (Both facts are hard theorems.) It is not easy to name more — after all, how do we write down numbers? If we define them as solutions of algebraic equations, we only ever get algebraic numbers.
@@ -322,3 +364,6 @@ Later we will see that $\mathbb{R}$ is uncountable.
 > Note what the argument actually shows: the transcendental numbers are not merely infinite but *uncountable* — in the sense of size, almost all real numbers are transcendental, even though it is hard to name any single one. This existence proof (due to Cantor) produces infinitely many transcendental numbers without exhibiting even one.
 
 ^rem-2-7
+
+> [!remark]- Connections
+> - Elementary version: [[§14 Counting Infinite Sets#^thm-14-16|250 Thm. §14.16]], with the uncountability of ℝ proved by Cantor's diagonal argument in [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]].

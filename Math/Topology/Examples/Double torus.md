@@ -26,3 +26,6 @@ The genus 2 surface $\Sigma_2$: two tori glued along a removed disk. It is the t
 
 ## $\pi_1(\Sigma_2)$ from the boundary word $a_1 b_1 a_1^{-1} b_1^{-1} a_2 b_2 a_2^{-1} b_2^{-1}$
 ![[§29 The Seifert–van Kampen Theorem#^ex-29-8]]
+
+## Connections
+- **Also in [[Logic and Proofs]]:** the genus-2 surface as two tori joined by a tube and as the glued octagon, with Euler characteristic −2 computed three ways: [[§25 Surfaces and the Euler Characteristic#^ex-25-4|250 Ex. §25.4]].

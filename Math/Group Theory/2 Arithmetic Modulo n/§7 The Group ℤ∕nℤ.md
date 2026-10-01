@@ -21,6 +21,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^ex-21-1|590 Ex. §21.1]], and $\mathbb{Z}/n\mathbb{Z}$ as a quotient in [[§21 Algebra Prerequisites꞉ Groups#^ex-21-7|590 Ex. §21.7]].
 > - The general construction: [[§37 Quotient Groups#^def-37-1|Quotient Group]]; every cyclic group is one of these: [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]].
+> - Elementary version: the set of classes [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|250 Def. §21.2]] and its size [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-2|250 Prop. §21.2]].
 
 > [!definition] Definition §7.2: Well-Defined
 > Let $\sim$ be an equivalence relation on a set $X$. A rule assigning to each equivalence class $[x]$ a value $f([x])$ computed from a chosen representative $x$ is **well defined** if the value does not depend on the choice: $x \sim x'$ implies that the rule gives the same value for $x$ and $x'$. Only then does the rule define a function on the set of classes. The same applies to rules taking several classes as input, such as $[a] + [b] := [a + b]$.
@@ -29,6 +30,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The same issue for cosets of an arbitrary subgroup: [[§34 Multiplying Cosets#^prop-34-1|When Coset Multiplication Is Well Defined]]; 590 version: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-19|Why Normality is Required]].
+> - In 250: [[§22 Partitions and Equivalence Relations#^ex-22-5|250 Ex. §22.5]] (well defined or not, on residue classes and on ℚ); first met for fractions in [[§13 Number Systems#^prop-13-3|250 Prop. §13.3]].
 
 > [!theorem] Proposition §7.1: Addition of Residue Classes Is Well-Defined; $\mathbb{Z}/n\mathbb{Z}$ Is a Group
 > Fix $n \geq 1$. The rule
@@ -49,6 +51,9 @@ tags: [group-theory, math493]
 ^pf-7-1
 
 *Uses:* [[§7 The Group ℤ∕nℤ#^def-7-2|Def. §7.2]], [[§6 Divisibility and Congruence#^def-6-3|Def. §6.3]], [[§6 Divisibility and Congruence#^def-6-4|Def. §6.4]], [[§3 Basic Examples of Groups#^def-3-1|Def. §3.1]], [[§1 The Definition of a Group#^def-1-1|Def. §1.1]], [[§1 The Definition of a Group#^def-1-2|Def. §1.2]]
+
+> [!remark]- Connections
+> - Elementary version: [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|250 Prop. §21.3]] (the operations on classes are well defined) and [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-4|250 Prop. §21.4]] (laws of arithmetic).
 
 > [!theorem] Lemma §7.2: Descending a Map to $\mathbb{Z}/n\mathbb{Z}$
 > Fix $n \geq 1$, let $X$ be any set, and let $f: \mathbb{Z} \to X$ be a function.
@@ -72,6 +77,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - Topological analogue: [[Universal Property of Quotient Maps]] (590 §12.3), same factorization triangle.
 > - Generalized to arbitrary normal subgroups by the [[§38 The First Isomorphism Theorem#^thm-38-1|First Isomorphism Theorem]].
+> - Set-level version: [[§22 Partitions and Equivalence Relations#^prop-22-5|250 Prop. §22.5]] (a surjection induces a bijection on the quotient set).
 
 > [!remark] Remark: Where This Is Used
 > Well-definedness of a map out of $\mathbb{Z}/n\mathbb{Z}$ is the recurring technical step in these notes: addition and multiplication of residue classes ([[§7 The Group ℤ∕nℤ#^prop-7-1|above]], and for $U_n$ [[§8 Invertibility and Unit Groups#^prop-8-3|below]]), the isomorphisms $\mathbb{Z}/4\mathbb{Z} \to U_5$, $k \mapsto 2^k$, and $\mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 3^k$ ([[§16 Isomorphisms#^prop-16-7|§16.7]], [[§16 Isomorphisms#^prop-16-8|§16.8]]), the Classification of Cyclic Groups ([[§17 Cyclic Groups#^thm-17-1|§17.1]]), and $\langle g \rangle \cong \mathbb{Z}/N\mathbb{Z}$ ([[§17 Cyclic Groups#^prop-17-3|§17.3]]). In each case the verification is the same: check the formula is unchanged when the representative is shifted by $n$.

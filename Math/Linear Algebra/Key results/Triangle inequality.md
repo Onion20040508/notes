@@ -22,3 +22,4 @@ tags: [linear-algebra, hub]
 ## Connections
 - The case $V=\R$ with $\langle x,y\rangle=xy$ is the absolute-value triangle inequality $|x+y|\le|x|+|y|$ of [[Single Variable Analysis]].
 - Makes $d(u,v)=\|u-v\|$ a metric, so every inner product space is a metric space (in the sense of Single Variable Analysis §13).
+- **Also proved in [[Logic and Proofs]]:** [[§4 Proof by Contradiction#^ex-4-5|250 Ex. §4.5]] (the case V = ℝ, |a + b| ≤ |a| + |b|, by comparing squares, with equality exactly when ab ≥ 0).

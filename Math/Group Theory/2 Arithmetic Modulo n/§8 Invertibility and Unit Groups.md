@@ -14,6 +14,9 @@ tags: [group-theory, math493]
 
 ^def-8-1
 
+> [!remark]- Connections
+> - Same definitions: [[§11 Properties of Finite Sets#^def-11-2|250 Def. §11.2]] (gcd) and [[§11 Properties of Finite Sets#^def-11-3|250 Def. §11.3]] (coprime); the gcd is computed by [[§16 The Euclidean Algorithm#^thm-16-3|250 Thm. §16.3]] (Euclidean algorithm).
+
 > [!definition] Definition §8.2: Invertibility Modulo $n$
 > Fix $n \geq 1$. An integer $a$ (or its class $[a]$) is **invertible modulo $n$** if there is an integer $x$ with
 >
@@ -22,6 +25,9 @@ tags: [group-theory, math493]
 > i.e. $ax = 1 + kn$ for some $k$: some multiple of $a$ is one more than a multiple of $n$. Such an $x$ is called an **inverse of $a$ modulo $n$**, and $[x]$ is written $[a]^{-1}$. An invertible class is also called a **unit** modulo $n$.
 
 ^def-8-2
+
+> [!remark]- Connections
+> - Same definition: [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-5|250 Def. §21.5]].
 
 > [!example] Example §8.1: Inverses Modulo 5 and Modulo 8
 > Modulo $5$: $2 \cdot 3 = 6 \equiv 1$, so $[2]^{-1} = [3]$ and $[3]^{-1} = [2]$; $4 \cdot 4 = 16 \equiv 1$, so $[4]^{-1} = [4]$ (unsurprising, as $[4] = [-1]$); and $[1]^{-1} = [1]$. Every nonzero class is invertible.
@@ -48,6 +54,9 @@ tags: [group-theory, math493]
 ^pf-8-1
 
 *Uses:* [[§8 Invertibility and Unit Groups#^def-8-1|Def. §8.1]], [[§8 Invertibility and Unit Groups#^def-8-2|Def. §8.2]], [[§5 A Zoo of Subgroups#^cor-5-2|§5.2]]
+
+> [!remark]- Connections
+> - Same result: [[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9|250 Cor. §21.9]]; the Bézout step is [[§17 Consequences of the Euclidean Algorithm#^prop-17-3|250 Prop. §17.3]].
 
 > [!example] Example §8.2: Deciding Invertibility Modulo 5, 6, 7, and 8
 > Applying the criterion to every class (inverses found by trial multiplication):
@@ -117,12 +126,18 @@ tags: [group-theory, math493]
 
 ^ex-8-3
 
+> [!remark]- Connections
+> - The same back-substitution in 250: [[§17 Consequences of the Euclidean Algorithm#^ex-17-1|250 Ex. §17.1]].
+
 > [!example] Example §8.4: Solving Linear Congruences
 > **Invertible coefficient.** Solve $3x \equiv 5 \pmod 7$. Since $\gcd(3, 7) = 1$, $[3]$ is invertible, with $[3]^{-1} = [5]$ (as $3 \cdot 5 = 15 \equiv 1$). Multiplying through: $x \equiv 5 \cdot 5 = 25 \equiv 4 \pmod 7$, and this is the *unique* solution modulo $7$ ([[§2 First Consequences of the Axioms#^prop-2-7|Unique Solvability]]). Check: $3 \cdot 4 = 12 \equiv 5$.
 >
 > **Non-invertible coefficient.** Consider $4x \equiv b \pmod 6$. Here $\gcd(4, 6) = 2$, so $[4]$ is not invertible and the equation is not guaranteed a unique solution. The values of $4x \bmod 6$ for $x = 0, \ldots, 5$ are $0, 4, 2, 0, 4, 2$. So $4x \equiv 1$ has *no* solution, while $4x \equiv 2$ has *two* solutions, $x \equiv 2$ and $x \equiv 5$. Both failures — nonexistence and nonuniqueness — are exactly what the absence of an inverse permits; an invertible coefficient rules out both.
 
 ^ex-8-4
+
+> [!remark]- Connections
+> - The general rule behind both cases: [[§20 Linear Congruences#^thm-20-4|250 Thm. §20.4]] (solvable iff $\gcd(a, n) \mid b$, then with $\gcd(a, n)$ solutions).
 
 > [!definition] Definition §8.3: Euler's Totient Function
 > For $n \geq 1$, **Euler's totient** $\varphi(n)$ is the number of integers $a$ with $1 \leq a \leq n$ and $\gcd(a, n) = 1$, i.e. the number of invertible classes modulo $n$. Once $U_n$ is defined [[§8 Invertibility and Unit Groups#^def-8-4|below]], $\varphi(n) = |U_n|$.
@@ -131,6 +146,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Computed from the prime factorization in [[§21 The Structure of Uₙ#^cor-21-3|Euler's Totient Formula]].
+> - Same definition in 250, with $\varphi(p^k)$ computed: [[§23 The Sequence of Prime Numbers#^ex-23-5|250 Ex. §23.5]].
 
 > [!example] Example §8.5: The Unit Groups for Small $n$
 > Listing the classes coprime to $n$:
@@ -164,6 +180,9 @@ tags: [group-theory, math493]
 ^pf-8-2
 
 *Uses:* [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]], [[§5 A Zoo of Subgroups#^cor-5-2|§5.2]], [[§6 Divisibility and Congruence#^def-6-4|Def. §6.4]], [[§8 Invertibility and Unit Groups#^def-8-2|Def. §8.2]]
+
+> [!remark]- Connections
+> - The same bijection drives the proof of Fermat's little theorem in [[§24★ Congruence Modulo a Prime#^thm-24-1|250 Thm. §24.1]].
 
 > [!remark] Remark: Finiteness Plus Cancellation
 > This is a second proof of ($\Leftarrow$) of the [[§8 Invertibility and Unit Groups#^prop-8-1|Invertibility Criterion]] for prime moduli, and it exposes the real reason inverses exist. In $\mathbb{Z}$ the argument collapses: the multiples $2, 4, 6, \ldots$ are all distinct, but there are infinitely many slots, so nothing forces one of them to be $1$. *Finiteness plus cancellation forces inverses.*

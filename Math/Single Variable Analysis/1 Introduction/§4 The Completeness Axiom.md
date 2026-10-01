@@ -19,6 +19,9 @@ The answer is the **completeness** of $\mathbb{R}$. As mentioned before, this is
 
 ^def-4-1
 
+> [!remark]- Connections
+> - Same definition: [[§11 Properties of Finite Sets#^def-11-1|250 Def. §11.1]].
+
 > [!theorem] Proposition §4.1: Uniqueness of the Maximum
 > If $\max S$ exists, it is unique; similarly for $\min S$.
 
@@ -28,6 +31,9 @@ The answer is the **completeness** of $\mathbb{R}$. As mentioned before, this is
 > Suppose $x_0$ and $x_0'$ are both maxima of $S$. Since $x_0' \in S$ and $x_0$ is a maximum, $x_0' \leq x_0$. Symmetrically, $x_0 \leq x_0'$. By antisymmetry (O2), $x_0 = x_0'$. The same argument works for minima.
 
 ^pf-4-1
+
+> [!remark]- Connections
+> - Same result: [[§11 Properties of Finite Sets#^prop-11-8|250 Prop. §11.8]].
 
 > [!remark] Remark
 > In mathematics, two things are always important about an object: **existence** and **uniqueness**. Uniqueness of $\max S$ is settled above; existence is a genuine issue, to which we return below.

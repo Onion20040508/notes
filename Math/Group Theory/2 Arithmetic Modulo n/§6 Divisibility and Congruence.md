@@ -14,6 +14,9 @@ tags: [group-theory, math493]
 
 ^def-6-1
 
+> [!remark]- Connections
+> - Same definition: [[§2 Implications#^def-2-6|250 Def. §2.6]].
+
 > [!theorem] Lemma §6.1: Division Algorithm
 > Let $m, n \in \mathbb{Z}$ with $n > 0$. There exist unique integers $q$ (the *quotient*) and $r$ (the *remainder*) with
 >
@@ -32,10 +35,16 @@ tags: [group-theory, math493]
 
 *Uses:* [[§1 The Set ℕ of Natural Numbers#^thm-1-2|451 §1.2]]
 
+> [!remark]- Connections
+> - Elementary version: [[§15 The Division Theorem#^thm-15-1|250 Thm. §15.1]] (proved there from the maximum of a finite set); well-ordering itself is proved from induction in [[§5 The Induction Principle#^cor-5-7|250 Cor. §5.7]].
+
 > [!definition] Definition §6.2: Quotient and Remainder; “$a \bmod n$”
 > For $n \geq 1$ and $a \in \mathbb{Z}$, write $a = qn + r$ with $0 \leq r < n$ as in the [[§6 Divisibility and Congruence#^lem-6-1|Division Algorithm]]. The integer $q$ is the **quotient** and $r$ the **remainder** of $a$ on division by $n$; the remainder is also called the **remainder of $a$ modulo $n$** and written $a \bmod n$. For example, $14 \bmod 12 = 2$, $\ 8 \bmod 5 = 3$, $\ 25 \bmod 8 = 1$, $\ -7 \bmod 5 = 3$ (since $-7 = (-2)\cdot 5 + 3$). Note that $n \mid a$ if and only if $a \bmod n = 0$.
 
 ^def-6-2
+
+> [!remark]- Connections
+> - Same definition: [[§15 The Division Theorem#^def-15-1|250 Def. §15.1]].
 
 > [!definition] Definition §6.3: Congruence Modulo $n$
 > For $n \geq 1$ and $a, b \in \mathbb{Z}$, we say $a$ is **congruent to $b$ modulo $n$**, written
@@ -45,6 +54,9 @@ tags: [group-theory, math493]
 > if $n \mid a - b$, i.e. $a$ and $b$ differ by a multiple of $n$. The integer $n$ is called the **modulus**. For example, $14 \equiv 2 \pmod{12}$, $\ 6 \equiv 1 \pmod 5$, $\ 9 \equiv 1 \pmod 8$, $\ -1 \equiv 4 \pmod 5$.
 
 ^def-6-3
+
+> [!remark]- Connections
+> - Same definition: [[§19 Congruence of Integers#^def-19-1|250 Def. §19.1]].
 
 > [!theorem] Proposition §6.2: Congruence Is an Equivalence Relation with Remainder Classes
 > Fix $n \geq 1$.
@@ -65,6 +77,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - The general notion: [[§22 Equivalence Relations and Partitions#^def-22-1|Equivalence Relation]].
 > - Congruence modulo $n$ is congruence modulo the subgroup $n\mathbb{Z}$: [[§26 Left and Right Cosets#^def-26-1|Congruence Modulo a Subgroup]].
+> - Elementary version: [[§19 Congruence of Integers#^prop-19-5|250 Prop. §19.5]] (part 1) and [[§19 Congruence of Integers#^prop-19-1|250 Prop. §19.1]] (part 2).
 
 > [!definition] Definition §6.4: Residue Classes
 > Fix $n \geq 1$. The **residue class** (or **congruence class**) of $a \in \mathbb{Z}$ modulo $n$ is its equivalence class
@@ -78,6 +91,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - The classes $a + n\mathbb{Z}$ are the cosets of $n\mathbb{Z}$ in $\mathbb{Z}$: [[§26 Left and Right Cosets#^def-26-2|Left and Right Cosets]], [[§22 Equivalence Relations and Partitions#^def-22-2|Equivalence Class]].
 > - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^ex-21-7|590 Ex. §21.7]].
+> - Elementary version: [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-1|250 Def. §21.1]] (congruence class), with [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|250 Prop. §21.1]] (classes are equal or disjoint).
 
 > [!remark] Remark: The Clock Picture
 > On a $12$-hour clock, $9$ o'clock plus $5$ hours is $2$ o'clock: compute $9 + 5 = 14$, then reduce, $14 \bmod 12 = 2$. Arithmetic modulo $n$ is exactly this “wrap-around” arithmetic: the infinite line $\mathbb{Z}$ is rolled up into a circle with $n$ points, and integers that land on the same point are identified. The residue classes are the points of the circle.

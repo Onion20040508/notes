@@ -1,0 +1,14 @@
+% Figure for Electromagnetism §B1.2: radial profile 4 pi r^2 D(r,eps) of the regularized divergence D = (3 eps^2/4pi)(r^2+eps^2)^(-5/2) for three values of eps; each curve has unit area.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.40\textwidth,
+  xmin=0, xmax=3, ymin=0, ymax=2.5, xlabel={$r$}, ylabel={$4\pi r^2 D(r,\epsilon)$},
+  xtick={0,0.5,1,1.5,2,2.5,3}, ytick={0,0.5,1,1.5,2}, clip=false]
+  \addplot[figB, domain=0:3, samples=240] {3*1^2*x^2/(x^2+1^2)^(2.5)};
+  \addplot[figG, domain=0:3, samples=240] {3*0.5^2*x^2/(x^2+0.5^2)^(2.5)};
+  \addplot[figR, domain=0:3, samples=300] {3*0.25^2*x^2/(x^2+0.25^2)^(2.5)};
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.35,0.48) {$\epsilon = 1$};
+  \node[figG, font=\scriptsize, anchor=west] at (axis cs:0.62,1.05) {$\epsilon = 0.5$};
+  \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.32,2.15) {$\epsilon = 0.25$};
+  \node[black!70, font=\scriptsize, align=left, anchor=west] at (axis cs:1.75,1.85) {each curve has area $1$:\\ $\displaystyle\int_0^\infty 4\pi r^2 D\,dr = 1$};
+\end{axis}
+\end{tikzpicture}

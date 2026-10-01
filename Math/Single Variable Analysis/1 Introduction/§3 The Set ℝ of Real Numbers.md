@@ -37,6 +37,9 @@ Recall that $\mathbb{Q}$ is a field: it carries the two operations of addition a
 
 ^rem-3-2
 
+> [!remark]- Connections
+> - In 250 the same laws are taken as the properties of ℝ, [[§2 Implications#^def-2-8|250 Def. §2.8]], and verified for the constructed ℚ in [[§22 Partitions and Equivalence Relations#^thm-22-9|250 Thm. §22.9]].
+
 ## Order Axioms: Ordered Fields
 
 The field properties above are purely algebraic. We now discuss a more geometric structure. One important geometric property of the line is the *sense of direction*: along a line we have left and right. This is directly related to **ordering**.
@@ -57,6 +60,9 @@ The field properties above are purely algebraic. We now discuss a more geometric
 > A field with an order $\leq$ satisfying O1–O5 is called an **ordered field**. Once we have $\leq$, we define $\geq$ by: $a \leq b$ if and only if $b \geq a$; and $a < b$ means $a \leq b$ and $a \neq b$.
 
 ^def-3-2
+
+> [!remark]- Connections
+> - Elementary version: the order axioms for <, with trichotomy, [[§3 Proofs#^def-3-1|250 Def. §3.1]].
 
 So $\mathbb{Q}$ is an ordered field, and similarly $\mathbb{R}$ is an ordered field — very reasonable when we represent $\mathbb{R}$ by the real line. Note that O4–O5 tie the order to the field operations; O1–O3 concern $\leq$ alone.
 
@@ -110,6 +116,9 @@ So $\mathbb{Q}$ is an ordered field, and similarly $\mathbb{R}$ is an ordered fi
 > The lecture proved (e) by contradiction: if $0 \geq 1$, multiply by any $a > 0$ to get $0 \geq a$ — so *no* element could be positive, which is absurd. The proof above via (d) reaches the same conclusion directly. The remaining proofs are in the book (§3 of Ross); they are all short manipulations of O1–O5 of the same kind as above.
 
 ^rem-3-3
+
+> [!remark]- Connections
+> - Parts (d) and (e) in 250: [[§3 Proofs#^prop-3-2|250 Prop. §3.2]], [[§3 Proofs#^cor-3-3|250 Cor. §3.3]] (squares are non-negative, 1 > 0, products of positive numbers are positive).
 
 ## Partial Orders; $\mathbb{C}$ Is Not an Ordered Field
 
@@ -176,6 +185,9 @@ For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of ab
 
 ^def-3-4
 
+> [!remark]- Connections
+> - Same definition: [[§1 The Language of Mathematics#^def-1-4|250 Def. §1.4]].
+
 > [!theorem] Theorem §3.3: Properties of the Absolute Value
 > For all $a, b \in \mathbb{R}$:
 >
@@ -202,6 +214,9 @@ For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of ab
 > Think about what these two properties mean: they describe how $|\cdot|$ interacts with the two field operations $+$ and $\times$ — sub-additive for $+$ (with equality exactly when $a, b$ have the same sign), and exactly multiplicative for $\times$.
 
 ^rem-3-4
+
+> [!remark]- Connections
+> - Elementary version: [[§4 Proof by Contradiction#^ex-4-5|250 Ex. §4.5]] (both parts, by comparing squares, with equality in (i) exactly when ab ≥ 0).
 
 > [!definition] Definition §3.5: Distance
 > The **distance** between two numbers $a, b \in \mathbb{R}$ (two points on the real line) is

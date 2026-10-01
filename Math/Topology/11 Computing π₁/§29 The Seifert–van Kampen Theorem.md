@@ -316,6 +316,9 @@ tags: [topology, math590]
 
 ^def-29-1
 
+> [!remark]- Connections
+> - Elementary version: polygonal surfaces, [[§25 Surfaces and the Euler Characteristic#^def-25-1|250 Def. §25.1]] (polygons with sides glued in pairs so that the arrows match, and their vertices, edges and faces).
+
 > [!example] Example §29.7: Surfaces as Quotients of Polygons
 > **Torus** ($aba^{-1}b^{-1}$): opposite edges identified with same orientation. All four corners become one point.
 >
@@ -342,6 +345,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - The torus as a quotient of the square: [[§12 Quotient Topology#^ex-12-3|Torus as Quotient Space]], [[§12 Quotient Topology#^ex-12-6|The Square-to-Torus Quotient Map]].
+> - The same gluing diagrams in 250, with their Euler characteristics: torus [[§25 Surfaces and the Euler Characteristic#^ex-25-3|250 Ex. §25.3]], Klein bottle [[§25 Surfaces and the Euler Characteristic#^ex-25-5|250 Ex. §25.5]]; the projective plane and the Klein bottle are the spheres with one and two crosscaps in [[§25 Surfaces and the Euler Characteristic#^thm-25-7|250 Thm. §25.7]].
 
 > [!theorem] Theorem §29.3: Fundamental Group of a Polygonal Surface (Munkres 74.1)
 > Let $P$ be a polygonal region with labels and orientations on edges. Let $X = P/{\sim}$ be the quotient space and $\pi: P \to X$ the quotient map. If $\pi$ maps all the vertices of $P$ to a single point $x_0 \in X$, then
@@ -395,4 +399,7 @@ tags: [topology, math590]
 
 ![[m590-29-9.svg]]
 *The double torus $\Sigma_2$ as an octagon with boundary word $a_1b_1a_1^{-1}b_1^{-1}a_2b_2a_2^{-1}b_2^{-1}$, read counterclockwise from the bottom-left vertex. All eight vertices become one point, so Theorem §29.3 applies. The dashed diagonal cuts the octagon into two pentagons, each a torus with a disk removed: the two handles of $\Sigma_2$.*
+
+> [!remark]- Connections
+> - Euler characteristics of these surfaces in 250: torus [[§25 Surfaces and the Euler Characteristic#^ex-25-3|250 Ex. §25.3]], double torus from the same octagon [[§25 Surfaces and the Euler Characteristic#^ex-25-4|250 Ex. §25.4]], Klein bottle [[§25 Surfaces and the Euler Characteristic#^ex-25-5|250 Ex. §25.5]]; all of them in the classification [[§25 Surfaces and the Euler Characteristic#^thm-25-7|250 Thm. §25.7]].
 

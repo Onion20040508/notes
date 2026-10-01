@@ -39,6 +39,9 @@ In each example, associativity is inherited from a known associative operation (
 
 ^def-3-3
 
+> [!remark]- Connections
+> - The example ℚ is constructed in 250 and checked to be a field: [[§22 Partitions and Equivalence Relations#^thm-22-9|250 Thm. §22.9]].
+
 > [!definition] Definition §3.4: Multiplicative Group of a Field: $k^\times$
 > For a field $k$, set $k^\times = (k \setminus \{0\}, \cdot)$; this is a group directly by condition (2) of the [[§3 Basic Examples of Groups#^def-3-3|field definition]], e.g. $\mathbb{Q}^\times$, $\mathbb{R}^\times$, $\mathbb{C}^\times$.
 
@@ -82,6 +85,9 @@ In each example, associativity is inherited from a known associative operation (
 ^pf-def-3-5
 
 *Uses:* [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|590 §21.4]], [[§10 Cycle Notation and the Group S₃#^ex-10-1|Ex. §10.1]]
+
+> [!remark]- Connections
+> - Elementary versions: [[§12★ Counting Functions and Subsets#^def-12-3|250 Def. §12.3]] (permutation), [[§12★ Counting Functions and Subsets#^cor-12-3|250 Cor. §12.3]] (there are $n!$ of them), [[§9 Injections, Surjections and Bijections#^ex-9-9|250 Ex. §9.9]] (inverse of a composite, the closure step).
 
 > [!definition] Definition §3.6: General Linear Groups $GL_n(k)$
 > For a field $k$ and integer $n \geq 1$, let

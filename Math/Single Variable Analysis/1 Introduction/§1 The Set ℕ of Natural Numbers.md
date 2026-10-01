@@ -38,6 +38,9 @@ are the numbers we first learn by counting. They feel so natural that one rarely
 
 ^rem-1-1
 
+> [!remark]- Connections
+> - Elementary version: Peano's axioms with a successor function, [[§9 Injections, Surjections and Bijections#^def-9-6|250 Def. §9.6]]; axiom N5 is the set form of induction, [[§7 Quantifiers#^def-7-4|250 Def. §7.4]].
+
 ## Mathematical Induction
 
 Axiom N5 is the important one for us: it yields the method of proof by **mathematical induction**.
@@ -57,6 +60,9 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 > Let $S = \{n \in \mathbb{N} : P_n \text{ is true}\}$. By (I1), $1 \in S$. By (I2), whenever $n \in S$ we have $n+1 \in S$. By axiom N5, $S = \mathbb{N}$, i.e. $P_n$ is true for every $n \in \mathbb{N}$.
 
 ^pf-1-1
+
+> [!remark]- Connections
+> - Elementary version: [[§5 The Induction Principle#^def-5-1|250 Def. §5.1]], where induction itself is the axiom and is shown equivalent to the set form N5 in [[§7 Quantifiers#^def-7-4|250 Def. §7.4]].
 
 > [!remark] Remark
 > When applying induction, it is important to state precisely what $P_n$ is. Many failed induction proofs fail at exactly this point: the statement being carried through the induction is not strong enough (see Example 1.2 below) or the starting point is wrong (see Example 1.3).
@@ -153,6 +159,9 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 
 ^rem-1-3
 
+> [!remark]- Connections
+> - Elementary version: the strong induction principle [[§5 The Induction Principle#^thm-5-6|250 Thm. §5.6]], derived there from ordinary induction applied to the strengthened statement, as in Example 1.2.
+
 > [!theorem] Theorem §1.2: Well-Ordering Principle
 > Every nonempty subset $S \subseteq \mathbb{N}$ has a least element. Consequently, every nonempty set of integers that is bounded below has a least element.
 >
@@ -172,6 +181,9 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 > For the second statement, let $T \subseteq \mathbb{Z}$ be nonempty with $t \geq b$ for all $t \in T$, where $b \in \mathbb{Z}$. Then $T' = \{t - b + 1 : t \in T\}$ is a nonempty subset of $\mathbb{N}$; if $m$ is its least element, then $m + b - 1$ is the least element of $T$.
 
 ^pf-1-2
+
+> [!remark]- Connections
+> - Elementary version: [[§5 The Induction Principle#^cor-5-7|250 Cor. §5.7]] (both statements, from strong induction).
 
 > [!example] Example §1.3: Shifting the starting point
 > Decide for which integers $n$ the inequality
@@ -218,7 +230,13 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 
 ^ex-1-3
 
+> [!remark]- Connections
+> - Elementary version: [[§5 The Induction Principle#^prop-5-4|250 Prop. §5.4]] (the same inequality, as n² ≤ 2ⁿ for n ≥ 4, by induction from base case 4).
+
 > [!remark] Remark
 > Induction need not start at $1$. If $P_{n_0}$ is true and $P_n \implies P_{n+1}$ for all $n \geq n_0$, then $P_n$ is true for all $n \geq n_0$. (Apply the usual induction to $Q_m := P_{n_0 + m - 1}$.) The example above also shows why checking small cases first matters: the inequality is true at $n=1$, fails at $n = 2,3,4$, and only becomes true permanently at $n = 5$ — a naive induction from $n=1$ would break at the induction step.
 
 ^rem-1-4
+
+> [!remark]- Connections
+> - Elementary version: induction from any base case, [[§5 The Induction Principle#^thm-5-3|250 Thm. §5.3]].

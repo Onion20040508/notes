@@ -57,6 +57,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - MATH 590 states this without proof: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-1|590 §21.1 (3)]].
 > - Generalized to orbits: [[§28 Orbit–Stabilizer#^thm-28-3|Orbit–Stabilizer, §28.3]]; the homomorphism version: [[§38 The First Isomorphism Theorem#^cor-38-2|§38.2]].
+> - Elementary instance: Gauss's proof of Fermat in [[§24★ Congruence Modulo a Prime#^rem-24-1|250 Remark §24.1]] (three proofs of Fermat) is this argument for the powers of $a$ among the nonzero residues modulo $p$.
 
 > [!theorem] Corollary §27.3: Order of an Element Divides $|G|$; $g^{|G|} = e$
 > Let $G$ be a finite group and $g \in G$. Then $\operatorname{ord}(g)$ divides $|G|$, and $g^{|G|} = e$.
@@ -70,6 +71,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[§27 The Index and Lagrange's Theorem#^thm-27-2|§27.2]], [[§17 Cyclic Groups#^prop-17-3|§17.3]], [[§4 Subgroups#^lem-4-4|§4.4]]
 
+> [!remark]- Connections
+> - Elementary version for $G = U_p$: [[§24★ Congruence Modulo a Prime#^prop-24-3|250 Prop. §24.3]] (the order of $a$ modulo $p$ divides $p - 1$).
+
 > [!theorem] Corollary §27.4: Fermat's Little Theorem
 > Let $p$ be a prime. Then $a^{p-1} \equiv 1 \pmod p$ for every integer $a$ with $p \nmid a$.
 
@@ -81,6 +85,9 @@ tags: [group-theory, math493]
 ^pf-27-4
 
 *Uses:* [[§8 Invertibility and Unit Groups#^def-8-4|Def. §8.4]], [[§8 Invertibility and Unit Groups#^prop-8-3|§8.3]], [[§27 The Index and Lagrange's Theorem#^cor-27-3|§27.3]]
+
+> [!remark]- Connections
+> - Same theorem in 250, proved without groups by the bijection of [[§8 Invertibility and Unit Groups#^prop-8-2|§8.2]]: [[§24★ Congruence Modulo a Prime#^thm-24-1|250 Thm. §24.1]].
 
 > [!remark] Remark: Uses of Lagrange
 > The divisibility $|H| \mid |G|$ is the main tool for locating subgroups of a finite group: e.g. the subgroups of $S_3$ ([[§13 Subgroups of S₃#^prop-13-1|§13.1]]) have orders $1, 2, 3, 6$, and no subgroup of order $4$ or $5$ can exist. [[§27 The Index and Lagrange's Theorem#^cor-27-3|The corollary]] explains the pattern observed in [[§15 Homomorphisms#^ex-15-2|Ex. §15.2]]: for $\varphi: \mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$, the image had $3$ elements and the kernel $2$, with $3 \cdot 2 = 6$ — the index of $\operatorname{Ker}(\varphi)$ equals $|\operatorname{Im}(\varphi)|$, a fact that the [[§38 The First Isomorphism Theorem#^thm-38-1|first isomorphism theorem]] will make precise. Note also that the [[§27 The Index and Lagrange's Theorem#^ex-27-1|converse of Lagrange fails]] in general: a divisor of $|G|$ need not be the order of a subgroup.

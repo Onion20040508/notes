@@ -175,6 +175,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Linear-algebra version: [[§10 Invertibility and Isomorphisms#^ladr-3-63|Invertibility ⟺ injectivity and surjectivity]].
+> - Elementary version: invertible means bijective, [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]], and inverses via composition, [[§9 Injections, Surjections and Bijections#^prop-9-3|250 Prop. §9.3]].
 
 > [!remark] Remark
 > This is the standard technique for proving bijectivity in algebraic topology: construct two maps, show they compose to the identity in both orders. It appears repeatedly: the [[Basepoint Independence of π₁|basepoint independence isomorphism]] ([[§23 The Fundamental Group|§23]]), the [[§23 The Fundamental Group#^cor-23-6|functorial corollary]] that $\pi_1$ is a topological invariant ([[§23 The Fundamental Group|§23]]), and the [[Deformation Retract Induces Isomorphism on π₁|deformation retract theorem]] ([[§26 Deformation Retracts and Homotopy Type|§26]]) all use exactly this pattern.
