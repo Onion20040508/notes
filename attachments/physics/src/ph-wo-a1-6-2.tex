@@ -1,0 +1,13 @@
+% Figure for Oscillations, Waves and Optics §A1.6: a driven damped oscillator started from rest (omega0 = 1, b/m = 0.1, so Q = 10; driving at omega = 0.85 omega0): full motion (transient + steady state) and the steady state it settles into.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=11.5cm, height=5cm, xmin=0, xmax=84, ymin=-6.3, ymax=7.2,
+      axis x line=middle, axis y line=left, clip=false,
+      xtick={20,40,60,80}, xticklabels={$20$,$40$,$60$,$80$},
+      xticklabel style={below right, xshift=-3pt, font=\scriptsize},
+      ytick={-3.4456,3.4456}, yticklabels={$-A$,$A$}, xlabel={$\omega_0 t$}, xlabel style={anchor=west}]
+    \addplot[black!45, dashed, thin, domain=0:80, samples=500] {3.294502*cos(deg(0.85*x)) + 1.009127*sin(deg(0.85*x))};
+    \addplot[figB, domain=0:80, samples=1000] {3.294502*cos(deg(0.85*x)) + 1.009127*sin(deg(0.85*x)) + exp(-0.05*x)*(-3.294502*cos(deg(0.998749*x)) - 1.023763*sin(deg(0.998749*x)))};
+    \node[figB, font=\scriptsize, anchor=south] at (axis cs:22,6.3) {full motion, from rest};
+    \node[black!60, font=\scriptsize, anchor=south west] at (axis cs:62,4.0) {steady state};
+  \end{axis}
+\end{tikzpicture}

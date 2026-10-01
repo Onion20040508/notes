@@ -1,6 +1,6 @@
 % Figure for Oscillations, Waves and Optics §A1.6: steady-state amplitude (in units of the static deflection F0/k) and phase lag of a driven damped oscillator versus driving frequency, for Q = 1, 2, 5.
 \begin{tikzpicture}[font=\small]
-  \begin{axis}[nfig, name=amp, width=7.2cm, height=5.4cm, xmin=0, xmax=2.05, ymin=0, ymax=5.6,
+  \begin{axis}[nfig, name=amp, width=6.4cm, height=5.4cm, xmin=0, xmax=2.05, ymin=0, ymax=5.6,
       xtick={1,2}, xticklabels={$\omega_0$,$2\omega_0$}, ytick={1,2,3,4,5},
       xlabel={$\omega$}, ylabel={$A\,/\,(F_0/k)$}, clip=false]
     \addplot[figG, domain=0:2, samples=200] {1/sqrt((1-x^2)^2+(x/1)^2)};
@@ -8,10 +8,10 @@
     \addplot[figR, domain=0:2, samples=400] {1/sqrt((1-x^2)^2+(x/5)^2)};
     \draw[black!40, thin, dashed] (axis cs:1,0) -- (axis cs:1,5.4);
     \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.08,4.6) {$Q = 5$};
-    \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.12,2.1) {$Q = 2$};
-    \node[figG, font=\scriptsize, anchor=west] at (axis cs:0.25,1.45) {$Q = 1$};
+    \node[figB, font=\scriptsize, anchor=south, fill=white, inner sep=0.3pt] at (axis cs:0.955,2.1) {$Q = 2$};
+    \node[figG, font=\scriptsize, anchor=north] at (axis cs:0.55,1.0) {$Q = 1$};
   \end{axis}
-  \begin{axis}[nfig, at={(amp.east)}, anchor=west, xshift=1.5cm, width=7.2cm, height=5.4cm, xmin=0, xmax=2.05, ymin=0, ymax=190,
+  \begin{axis}[nfig, at={(amp.east)}, anchor=west, xshift=1.3cm, width=6.4cm, height=5.4cm, xmin=0, xmax=2.05, ymin=0, ymax=190,
       xtick={1,2}, xticklabels={$\omega_0$,$2\omega_0$}, ytick={0,90,180}, yticklabels={$0$,$\pi/2$,$\pi$},
       xlabel={$\omega$}, ylabel={$\delta$}, clip=false]
     \addplot[figG, domain=0.001:2, samples=200] {atan2(x/1,1-x^2)};
