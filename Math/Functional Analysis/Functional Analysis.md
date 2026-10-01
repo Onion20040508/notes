@@ -57,7 +57,7 @@ graph TD
   X2 -.->|7| C5
   X2 -.->|3| C7
   X4 -.->|2| C2
-  X4 -.->|9| C3
+  X4 -.->|10| C3
   X4 -.->|11| C4
   X4 -.->|3| C5
 ```
@@ -82,8 +82,8 @@ graph TD
 - [[Hyperplane Separation Theorem]] (§6.1)
 - [[Complex Hahn–Banach Theorem]] (§7.1)
 - [[Norms Are Gauges]] (§8.1)
-- [[C[a,b] Is a Banach Space]] (§9.1)
-- [[Completion of a Normed Space]] (§9.3)
+- [[Continuous Functions with the Sup Norm Form a Banach Space]] (§9.1)
+- [[Completion of a Normed Space]] (§9.4)
 - [[All Norms on a Finite-Dimensional Space Are Equivalent]] (§10.3)
 - [[Quotient Norm]] (§10.8)
 - [[ℓᵖ Is a Banach Space]] (§13.5)
@@ -125,7 +125,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§16 Limit Point Compactness#^thm-16-2|Theorem §16.2: Equivalence for Metrizable Spaces]] (1)
 
 **[[Single Variable Analysis]]**
-- [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8: Cauchy Implies Convergent]] (4)
+- [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8: Cauchy Implies Convergent]] (5)
 - [[§33 Properties of the Riemann Integral#^thm-33-3|Theorem §33.3: Monotonicity of the Integral]] (3)
 - [[Bolzano–Weierstrass Theorem]] (2)
 - [[Fundamental Theorem of Calculus]] (2)

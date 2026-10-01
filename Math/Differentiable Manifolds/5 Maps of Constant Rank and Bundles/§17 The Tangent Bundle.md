@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Differentiable Manifolds]]"
-chapter: 3
+chapter: 5
 section: 17
 tags: [differentiable-manifolds, math591]
 ---
-← [[§16 Fibrations]] · ↑ [[· 3 Smooth Manifolds]] · [[§18 Immersions]] →
+← [[§16 Fibrations]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§18 Immersions]] →
 
 *Stage: bundles — All the tangent spaces of $M$, assembled into a single manifold that fibres over $M$.*
 

@@ -5,7 +5,7 @@ chapter: 3
 section: 10
 tags: [differentiable-manifolds, math591]
 ---
-← [[§9 Manifolds in Euclidean Space]] · ↑ [[· 3 Smooth Manifolds]] · [[§11 Tangent Spaces I꞉ The Geometric Picture]] →
+← [[§9 Manifolds in Euclidean Space]] · ↑ [[· 3 Smooth Structures]] · [[§11 Tangent Spaces I꞉ The Geometric Picture]] →
 
 *Stage: linear — The tool both tangent spaces will need: linear algebra, and the differential of a map between vector spaces. The matrix groups become smooth level sets.*
 

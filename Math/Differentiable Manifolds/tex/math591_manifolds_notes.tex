@@ -223,7 +223,7 @@
 \chapter*{Roadmap}
 \addcontentsline{toc}{chapter}{Roadmap}
 
-These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the \emph{equations} thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\Ugp(n)$. Along the \emph{quotients} thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters~1 and~2 develop the two threads side by side, and in Chapter~3 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the \emph{geometric} stage). A manifold built by quotients has none, and needs the \emph{abstract} tangent space of derivations. Between them sits a \emph{linear} stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first (\ref{sec:special-maps}): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds (\ref{sec:submanifolds}); the submersions that are locally products are the fibrations (\ref{sec:fibrations}); and the tangent spaces themselves assemble into one, the tangent bundle (\ref{sec:tangent-bundle}). Immersions, the maps dual to submersions, begin a new arc (\ref{sec:immersions}).
+These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the \emph{equations} thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\Ugp(n)$. Along the \emph{quotients} thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters~1 and~2 develop the two threads side by side, and in Chapters~3 and~4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the \emph{geometric} stage). A manifold built by quotients has none, and needs the \emph{abstract} tangent space of derivations. Between them sits a \emph{linear} stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first (\ref{sec:special-maps}): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds (\ref{sec:submanifolds}); the submersions that are locally products are the fibrations (\ref{sec:fibrations}); and the tangent spaces themselves assemble into one, the tangent bundle (\ref{sec:tangent-bundle}). Immersions, the maps dual to submersions, begin a new arc (\ref{sec:immersions}).
 
 \begin{center}
 \begin{tikzpicture}[scale=0.92, transform shape]
@@ -265,9 +265,13 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \draw[->, thick, gray!70] (T2.east) -- ++(0.45,0) |- node[pos=0.25, font=\scriptsize, fill=white, inner sep=1.5pt, rotate=90] {assemble $T_pM$, $T_p^*M$} (BU.east);
 \node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (IM) at (9.2,-16.3) {\ref*{sec:immersions}\\ immersions and their images};
 \draw[->, thick, gray!70] (SM) -- node[pos=0.5, font=\scriptsize, fill=white, inner sep=1.5pt] {images} (IM);
-\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-11.0) {Ch.~3};
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-6.8) {Ch.~3};
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-10.9) {Ch.~4};
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-14.6) {Ch.~5};
 \draw[gray!35, dashed] (-2.5,-3.05) -- (11.4,-3.05);
 \draw[gray!35, dashed] (-2.5,-4.8) -- (11.4,-4.8);
+\draw[gray!35, dashed] (-2.5,-8.85) -- (11.4,-8.85);
+\draw[gray!35, dashed] (-2.5,-12.95) -- (6.9,-12.95) -- (6.9,-10.95) -- (11.4,-10.95);
 \end{tikzpicture}
 \end{center}
 
@@ -3222,7 +3226,7 @@ Heuristically, $\dim G/H = \dim G - \dim H$, which with $\dim \Ogp(m) = \tfrac{m
 This is correct, but nothing proved so far shows $\Gr_k(\mathbb{R}^n)$ is locally Euclidean at all: the corollary only supplies the two point-set conditions. Charts on Grassmannians (graphs of linear maps $V_0 \to V_0^\perp$) are Lee Example 1.36, and will make $\Gr_k(\mathbb{R}^n)$ a $k(n-k)$-manifold. For $k = 1$ this is $\mathbb{RP}^{n-1}$, of dimension $n - 1$, consistent with the index remark above. The picture Uribe drew is $n = 3$, $k = 2$: $V_0$ is the $xy$-plane, $\Gr_2(\mathbb{R}^3)$ is the space of planes through the origin in $\mathbb{R}^3$, and $k(n-k) = 2$.
 \end{rembox}
 
-\chapter{Smooth Manifolds}
+\chapter{Smooth Structures}
 
 % ============================================================================
 % Lecture 5 (Fri Sep 11, 2026) -- given by a substitute
@@ -4734,6 +4738,8 @@ $\Ugp(n)$ is a compact smooth manifold of dimension $n^2$.
 \begin{proof}
 It is closed in $\Mat(n,\mathbb{C}) \cong \mathbb{R}^{2n^2}$ as $F^{-1}(I)$ with $F$ continuous, and bounded because the columns of a unitary matrix are unit vectors of $\mathbb{C}^n$, so every entry has modulus at most $1$. Apply Proposition~\ref{fact:compact}(1).
 \end{proof}
+
+\chapter{Tangent and Cotangent Spaces}
 
 \section{Tangent Spaces I: The Geometric Picture}\label{sec:tangent}
 
@@ -6511,6 +6517,8 @@ The three spaces and their three bases. $\Phi$ sends the class of a germ to its 
 \textbf{Assignment 3, Problem 3.} Part (a) is the well-definedness in Proposition~\ref{prop:cotangent-pairing}. Part (b) is its non-degeneracy, and the ``therefore'' of (b) is Theorem~\ref{thm:pairing}, which uses \emph{both} halves: right non-degeneracy bounds $\dim I_p/I_p^2 \le n$, left non-degeneracy gives $n \le \dim I_p/I_p^2$. The submitted solution reaches the isomorphism by another route: it shows $\Phi$ injective by right non-degeneracy and surjective by checking that $\Phi([[x^i - x^i(p)]])$ is the dual basis --- which is part (3) of the theorem.
 
 \textbf{Comparison with Lee.} In the text of Chapter~11, Lee defines the cotangent space as the dual $(T_pM)^*$, motivated as the coordinate-independent replacement for the gradient. The description of this subsection is his Problem~11-4. Part~(a) is Proposition~\ref{prop:second-order}, down to the phrase ``vanishes to second order'', and part~(b) is Theorem~\ref{thm:cotangent-ideal}(1)--(2). There are two differences. First, Lee's $I_p$ consists of smooth functions on all of $M$ vanishing at $p$, not germs, so his version needs bump functions to pass between local and global, as everywhere in his treatment (Proposition~\ref{prop:germ-global}). Second, Lee proves the isomorphism directly, showing that $f \mapsto df_p$ vanishes on $I_p^2$ and descends to the quotient, where Assignment~3 goes through a non-degenerate pairing and the pairing theorem. His remark to the problem adds two points: some treatments define $T_p^*M$ first, as $I_p/I_p^2$, and then $T_pM$ as its dual --- the order Uribe called in some ways more natural --- and covectors, as classes of functions $M \to \mathbb{R}$, are dual to tangent vectors as classes of curves $\mathbb{R} \to M$ (his Problem~3-8; here Theorem~\ref{thm:every-vector-velocity}). The quotient $I_p/I_p^2$ is also the manifold analogue of the Zariski cotangent space of algebraic geometry.
+
+\chapter{Maps of Constant Rank and Bundles}
 
 % ============================================================================
 \section{Local Diffeomorphisms and Submersions}\label{sec:special-maps}

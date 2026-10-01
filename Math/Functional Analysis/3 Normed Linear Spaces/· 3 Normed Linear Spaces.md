@@ -11,7 +11,7 @@ So far $X$ has had only linear structure, and the [[§3 Statement and Motivation
 
 **Builds on:** [[· 1 Linear Spaces|1 Linear Spaces]] (11), [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (10), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (1)
 **Used by:** [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (1), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (27), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (22), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (3), [[· 7 Functional Analysis and Quantum Mechanics|7 Functional Analysis and Quantum Mechanics]] (3)
-**Builds on (other subjects):** [[Single Variable Analysis]] (9)
+**Builds on (other subjects):** [[Single Variable Analysis]] (10)
 
 ## Sections
 - [[§8 Normed Linear Spaces]]
@@ -20,14 +20,14 @@ So far $X$ has had only linear structure, and the [[§3 Statement and Motivation
 
 ## Central results
 - [[Norms Are Gauges]] (§8.1)
-- [[C[a,b] Is a Banach Space]] (§9.1)
-- [[Completion of a Normed Space]] (§9.3)
+- [[Continuous Functions with the Sup Norm Form a Banach Space]] (§9.1)
+- [[Completion of a Normed Space]] (§9.4)
 - [[All Norms on a Finite-Dimensional Space Are Equivalent]] (§10.3)
 - [[Quotient Norm]] (§10.8)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§8 Normed Linear Spaces#^lem-8-3|Lemma §8.3: Reverse Triangle Inequality]]: 37 later results
-- [[§8 Normed Linear Spaces#^prop-8-4|Proposition §8.4: A Norm is Continuous]]: 28 later results
-- [[§8 Normed Linear Spaces#^prop-8-5|Proposition §8.5: Limits are Unique; Convergent Sequences are Cauchy]]: 16 later results
+- [[§8 Normed Linear Spaces#^lem-8-3|Lemma §8.3: Reverse Triangle Inequality]]: 38 later results
+- [[§8 Normed Linear Spaces#^prop-8-4|Proposition §8.4: A Norm is Continuous]]: 29 later results
+- [[§8 Normed Linear Spaces#^prop-8-5|Proposition §8.5: Limits are Unique; Convergent Sequences are Cauchy]]: 17 later results
 - [[§8 Normed Linear Spaces#^prop-8-6|Proposition §8.6: Properties of the Closure]]: 12 later results

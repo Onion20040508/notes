@@ -15,8 +15,8 @@ tags: [differentiable-manifolds, hub]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^lem-12-13|Lemma §12.13: Open Subsets Have the Same Abstract Tangent Spaces]]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-14|Proposition §12.14: Charts Are Diffeomorphisms]]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|Theorem §12.22: The Matrix of the Differential]]
-- [[§14 Local Diffeomorphisms and Submersions#^def-14-1|Definition §14.1: Local Diffeomorphism]]
 - [[§14 Local Diffeomorphisms and Submersions#^thm-14-1|Theorem §14.1: Inverse Function Theorem]]
+- [[§14 Local Diffeomorphisms and Submersions#^def-14-1|Definition §14.1: Local Diffeomorphism]]
 
 ## Used in (Differentiable Manifolds)
 - [[§14 Local Diffeomorphisms and Submersions#^cor-14-3|Corollary §14.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms]]

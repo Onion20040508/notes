@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Differentiable Manifolds]]"
-chapter: 3
+chapter: 5
 section: 18
 tags: [differentiable-manifolds, math591]
 ---
-← [[§17 The Tangent Bundle]] · ↑ [[· 3 Smooth Manifolds]]
+← [[§17 The Tangent Bundle]] · ↑ [[· 5 Maps of Constant Rank and Bundles]]
 
 *Stage: maps — The maps with injective differentials: locally inclusions, globally more subtle.*
 

@@ -188,7 +188,7 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 
 > [!remark]- Connections
 > - The model: $\mathbb{R}$ as classes of Cauchy sequences of rationals, [[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark (Cauchy sequences and the construction of the reals)]].
-> - For normed spaces: [[§9 Completeness#^thm-9-3|§9.3]]; concrete completions: [[§9 Completeness#^prop-9-4|§9.4]], [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]].
+> - For normed spaces: [[§9 Completeness#^thm-9-4|§9.4]]; concrete completions: [[§9 Completeness#^prop-9-5|§9.5]], [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]].
 
 > [!remark] Remark: Why Classes, and Why the Objects Look Different
 > Two points were raised in lecture. First, why equivalence classes: a point $x \in M$ is the limit of many Cauchy sequences (on the real line, $(x, x, \ldots)$ and $(x + 1/n)$ both converge to $x$), and different sequences with the same destination must not be counted as different elements of $\overline{M}$. Second, the elements of $\overline{M}$ are sets of sequences, not points of $M$, so how is $M$ a subset? By the identification $x \leftrightarrow [(x, x, \ldots)]$, which is one-to-one; $M$ is not literally contained in $\overline{M}$ but is embedded in it. This is the same kind of identification as $\mathbb{R} \subset \mathbb{R} \oplus \mathbb{R}^2 = \mathbb{R}^3$ ([[§1 Linear Spaces#^ex-1-2|Ex. §1.2]]).
@@ -197,6 +197,47 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 
 ![[m556-9-2.svg]]
 *Equivalent Cauchy sequences in the open disk $M$ of [[§9 Completeness#^ex-9-1|Ex. §9.1]]: $x_n$ (blue dots) and $y_n$ (blue squares) both head for the boundary point $p \notin M$, and $d(x_n, y_n) \to 0$ (dotted), so they are one element $[\{x_n\}] = [\{y_n\}]$ of $\overline{M}$, which plays the role of $p$. The sequence $z_n$ (red), heading for $q$, is a different class; a point $x \in M$ is the class of its constant sequence.*
+
+> [!theorem] Proposition §9.3: The Completion is a Complete Metric Space, and $M$ is Dense in It
+> Let $(M, d)$ be a metric space. For Cauchy sequences $\{x_n\}, \{y_n\}$ in $M$ put
+>
+> $$
+> \bar d\bigl([\{x_n\}], [\{y_n\}]\bigr) := \lim_{n \to \infty} d(x_n, y_n).
+> $$
+>
+> - (a) The limit exists and depends only on the classes, and $\bar d$ is a metric on $\overline{M}$.
+> - (b) $\bar d(x, y) = d(x, y)$ for $x, y \in M$ (identified with constant sequences), so $M \subset \overline{M}$ isometrically.
+> - (c) $M$ is dense in $\overline{M}$: if $\xi = [\{x_n\}]$, then $x_k \to \xi$ in $\overline{M}$ as $k \to \infty$.
+> - (d) $(\overline{M}, \bar d)$ is complete.
+
+^prop-9-3
+
+> [!proof]+ Proof
+> (Not covered in lecture; added because [[§9 Completeness#^ex-9-1|Example §9.1]], [[§9 Completeness#^rem-9-8|Remark “How Do We Know We Have Not Added Too Much?”]] and the normed case below rely on these facts.)
+>
+> (a) By the triangle inequality, applied twice, $|d(x_n, y_n) - d(x_m, y_m)| \le d(x_n, x_m) + d(y_n, y_m)$, so $\{d(x_n, y_n)\}$ is a Cauchy sequence of real numbers and converges. If $\{x_n\} \sim \{x_n'\}$ and $\{y_n\} \sim \{y_n'\}$, the same estimate gives $|d(x_n, y_n) - d(x_n', y_n')| \le d(x_n, x_n') + d(y_n, y_n') \to 0$, so the limit depends only on the classes. Symmetry and the triangle inequality hold termwise and pass to the limit, and $\bar d \ge 0$. Finally $\bar d([\{x_n\}], [\{y_n\}]) = 0$ iff $d(x_n, y_n) \to 0$ iff $\{x_n\} \sim \{y_n\}$ iff the two classes are equal.
+>
+> (b) For constant sequences, $\bar d(x, y) = \lim_n d(x, y) = d(x, y)$.
+>
+> (c) Let $\varepsilon > 0$ and choose $N$ with $d(x_n, x_m) < \varepsilon$ for all $n, m \ge N$. For $k \ge N$, $\bar d(x_k, \xi) = \lim_n d(x_k, x_n) \le \varepsilon$. Hence $x_k \to \xi$.
+>
+> (d) Let $\{\xi_m\}$ be a Cauchy sequence in $\overline{M}$. By (c) there are $z_m \in M$ with $\bar d(z_m, \xi_m) < 1/m$. By (b) and the triangle inequality,
+>
+> $$
+> d(z_m, z_k) = \bar d(z_m, z_k) \le \frac{1}{m} + \bar d(\xi_m, \xi_k) + \frac{1}{k},
+> $$
+>
+> so $\{z_m\}$ is Cauchy in $M$; let $\xi = [\{z_m\}] \in \overline{M}$. Then $\bar d(\xi_m, \xi) \le 1/m + \bar d(z_m, \xi)$, and $\bar d(z_m, \xi) \to 0$ as $m \to \infty$ by (c) applied to the representative $\{z_k\}$ of $\xi$. Hence $\xi_m \to \xi$.
+>
+> For a normed linear space $X$ with the norm of Theorem [[§9 Completeness#^thm-9-4|§9.4]], $\bigl\| [\{x_n\}] - [\{y_n\}] \bigr\|_{\overline{X}} = \lim_n \|x_n - y_n\| = \bar d\bigl([\{x_n\}], [\{y_n\}]\bigr)$ for the metric $d(x, y) = \|x - y\|$ of $X$, so (c) says that $X$ is dense in $\overline{X}$.
+
+^pf-9-3
+
+*Uses:* [[§9 Completeness#^def-9-3|Def. §9.3]], [[§9 Completeness#^def-9-4|Def. §9.4]], [[§8 Normed Linear Spaces#^def-8-3|Def. §8.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]], [[§9 Completeness#^thm-9-4|§9.4]]
+
+> [!remark]- Connections
+> - The same construction one level down: ℝ as Cauchy classes of ℚ ([[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark §10.4]]).
+> - The normed version, where the linear structure and the norm are added: Theorem [[§9 Completeness#^thm-9-4|§9.4]]; uniqueness: Corollary [[§9 Completeness#^cor-9-6|§9.6]].
 
 > [!example] Example §9.1: Completions of Subsets of $\mathbb{R}^n$
 > For subsets of $\mathbb{R}^n$ with the usual metric, completion is closure:
@@ -214,7 +255,7 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 
 For a normed linear space $X$, the completion $\overline{X}$ as a metric space should again be a normed linear space, with $X$ sitting inside it as a subspace and with the original norm. The natural candidate for the norm of a class is the limit of the norms of a representative.
 
-> [!theorem] Theorem §9.3: The Completion of a Normed Space is a Banach Space
+> [!theorem] Theorem §9.4: The Completion of a Normed Space is a Banach Space
 > Let $(X, \|\cdot\|)$ be a normed linear space and $\overline{X}$ its completion. For a Cauchy sequence $\{x_n\}$ in $X$, write $[\{x_n\}] \in \overline{X}$ for its class, and define
 >
 > $$
@@ -226,7 +267,7 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 > *Source: HW2, Problem 3*
 > *Lax: §5.1, Thm 3*
 
-^thm-9-3
+^thm-9-4
 
 > [!remark] Note: Notation for the Proof
 > The norm of $X$ is written $\|\cdot\|$ and the candidate norm on $\overline{X}$ is written $\|\cdot\|_{\overline{X}}$. A sequence in $\overline{X}$ is a sequence of classes; its $m$-th term is written $[\{x^{(m)}_n\}_n]$, where $\{x^{(m)}_n\}_n$ is a Cauchy sequence in $X$ (superscript: which class; subscript: which term of the representative).
@@ -352,7 +393,7 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 >
 > *Conclusion.* By (3.3), for every $m \ge M_j$, $\|[\{x^{(m)}_n\}] - [\{y_n\}]\|_{\overline{X}} < 1/j + 2/j = 3/j < \varepsilon$. So the Cauchy sequence converges in $\overline{X}$ to $[\{y_n\}]$, and $(\overline{X}, \|\cdot\|_{\overline{X}})$ is complete; with Steps 5 and 6 it is a Banach space.
 
-^pf-9-3
+^pf-9-4
 
 *Uses:* [[§8 Normed Linear Spaces#^lem-8-3|§8.3]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[§9 Completeness#^def-9-3|Def. §9.3]], [[§9 Completeness#^def-9-4|Def. §9.4]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]] (completeness of $\mathbb{R}$)
 
@@ -374,7 +415,7 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 
 The construction by equivalence classes is abstract, but in practice the completion of a concrete space can almost always be written down as a concrete space. The following proposition is the tool: if the space is already sitting densely inside something complete, that something *is* the completion.
 
-> [!theorem] Proposition §9.4: Identifying a Completion
+> [!theorem] Proposition §9.5: Identifying a Completion
 > Let $(X, \|\cdot\|_X)$ be a normed linear space, $(Z, \|\cdot\|_Z)$ a Banach space, and $J : X \to Z$ a linear map with $\|Jx\|_Z = \|x\|_X$ for all $x \in X$, such that $J(X)$ is dense in $Z$. Then
 >
 > $$
@@ -383,7 +424,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > is an isometric isomorphism of $\overline{X}$ onto $Z$, and it sends the class of the constant sequence $(x, x, \ldots)$ to $Jx$. In particular, if $X \subset Z$ is a dense linear subspace carrying the restricted norm ($J$ the inclusion), then $\overline{X}$ is isometrically isomorphic to $Z$ by an isomorphism that is the identity on $X$.
 
-^prop-9-4
+^prop-9-5
 
 > [!proof]+ Proof
 > (Not covered in lecture.) *The limit exists.* If $\{x_n\}$ is Cauchy in $X$, then $\|Jx_n - Jx_m\|_Z = \|J(x_n - x_m)\|_Z = \|x_n - x_m\|_X$, so $\{Jx_n\}$ is Cauchy in $Z$, and it converges because $Z$ is complete.
@@ -404,32 +445,32 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > Finally $\Phi([(x, x, \ldots)]) = \lim_n Jx = Jx$.
 
-^pf-9-4
+^pf-9-5
 
-*Uses:* [[§9 Completeness#^thm-9-3|§9.3]], [[§9 Completeness#^def-9-3|Def. §9.3]], [[§9 Completeness#^def-9-4|Def. §9.4]], [[§8 Normed Linear Spaces#^prop-8-4|§8.4]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§8 Normed Linear Spaces#^def-8-7|Def. §8.7]], [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1|Def. §2.1]]
+*Uses:* [[§9 Completeness#^thm-9-4|§9.4]], [[§9 Completeness#^def-9-3|Def. §9.3]], [[§9 Completeness#^def-9-4|Def. §9.4]], [[§8 Normed Linear Spaces#^prop-8-4|§8.4]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§8 Normed Linear Spaces#^def-8-7|Def. §8.7]], [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1|Def. §2.1]]
 
 > [!remark]- Connections
-> - Used for concrete completions: [[§9 Completeness#^prop-9-6|§9.6]] ($C^1$), [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]] ($L^p$).
+> - Used for concrete completions: [[§9 Completeness#^prop-9-7|§9.7]] ($C^1$), [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]] ($L^p$).
 
 > [!remark] Remark
 > The embedding form is needed in practice: an element of $L^p[a,b]$ is a class of functions equal almost everywhere, so $C[a,b]$ is not literally a subset of $L^p[a,b]$; it sits inside via $f \mapsto [f]$. The proposition is the precise meaning of “$Z$ *is* the completion of $X$”: the abstract $\overline{X}$ and the concrete $Z$ are the same Banach space, with $X$ corresponding to $J(X)$.
 
 ^rem-9-7
 
-> [!theorem] Corollary §9.5: Uniqueness of the Completion
+> [!theorem] Corollary §9.6: Uniqueness of the Completion
 > Let $X$ be a normed linear space. If $Z_1$ and $Z_2$ are Banach spaces each containing $X$ as a dense subspace with the same norm, then $Z_1$ and $Z_2$ are isometrically isomorphic by a map fixing $X$. In this sense the completion of $X$ is unique.
 
-^cor-9-5
+^cor-9-6
 
 > [!proof]+ Proof
-> (Stated in lecture without proof; the proof is not from lecture.) Both are isometrically isomorphic to $\overline{X}$ by Proposition [[§9 Completeness#^prop-9-4|§9.4]]; compose one isomorphism with the inverse of the other (Lemma [[§2 Linear Maps, Convexity, and Linear Functionals#^lem-2-1|§2.1]]).
+> (Stated in lecture without proof; the proof is not from lecture.) Both are isometrically isomorphic to $\overline{X}$ by Proposition [[§9 Completeness#^prop-9-5|§9.5]]; compose one isomorphism with the inverse of the other (Lemma [[§2 Linear Maps, Convexity, and Linear Functionals#^lem-2-1|§2.1]]).
 
-^pf-9-5
+^pf-9-6
 
-*Uses:* [[§9 Completeness#^prop-9-4|§9.4]], [[§2 Linear Maps, Convexity, and Linear Functionals#^lem-2-1|§2.1]]
+*Uses:* [[§9 Completeness#^prop-9-5|§9.5]], [[§2 Linear Maps, Convexity, and Linear Functionals#^lem-2-1|§2.1]]
 
 > [!remark] Remark: “How Do We Know We Have Not Added Too Much?”
-> This was asked in lecture, and Corollary [[§9 Completeness#^cor-9-5|§9.5]] is the answer: there is no freedom. The construction adds only limits of Cauchy sequences in $X$ and identifies two sequences whenever they head for the same place, so nothing extra can appear.
+> This was asked in lecture, and Corollary [[§9 Completeness#^cor-9-6|§9.6]] is the answer: there is no freedom. The construction adds only limits of Cauchy sequences in $X$ and identifies two sequences whenever they head for the same place, so nothing extra can appear.
 >
 > A larger complete space containing $X$ need not be the completion. A student's example: with the usual absolute value, the completion of $\mathbb{Q}$ is $\mathbb{R}$, and $\mathbb{R} \subset \mathbb{C}$ with $\mathbb{C}$ complete — but $\mathbb{C}$ is not the completion of $\mathbb{Q}$, because a Cauchy sequence of rationals cannot converge to a non-real number. Equivalently in Wu's version, $\mathbb{R} \subset \mathbb{R}^2$ is a complete space containing $\mathbb{R}$, and is not its completion. The condition that fails is density.
 >
@@ -461,12 +502,12 @@ The construction by equivalence classes is abstract, but in practice the complet
 
 ^ex-9-2
 
-> [!theorem] Proposition §9.6: $(C^2[a,b], \|\cdot\|_X)$ is Not Complete
+> [!theorem] Proposition §9.7: $(C^2[a,b], \|\cdot\|_X)$ is Not Complete
 > With $\|f\|_X = \max |f| + \max |f'|$, the space $X = C^2[a,b]$ is not complete, and its completion is $C^1[a,b]$ with the same norm.
 >
 > *Source: HW3, Problem 2*
 
-^prop-9-6
+^prop-9-7
 
 > [!proof]+ Proof
 > (HW3, Problem 2.)
@@ -536,10 +577,10 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > *$X$ is not complete.* By Part 3 there are $q_n \in X$ with $\|q_n - \varphi\| \to 0$. The sequence $\{q_n\}$ is Cauchy in $X$, since $\|q_n - q_m\| \leq \|q_n - \varphi\| + \|\varphi - q_m\|$. If it converged in $X$ to some $h \in X$, then, as $X$ carries the norm of $Z$, it would converge in $Z$ to both $h$ and $\varphi$. Limits in a metric space are unique, so $\varphi = h \in X$, contradicting Part 4. Hence $(X, \|\cdot\|)$ is not complete.
 >
-> *The completion.* The inclusion $J : X \to Z$ is linear and norm-preserving, $J(X) = X$ is dense in $Z$ by Part 3, and $Z$ is a Banach space by Part 2. By Proposition [[§9 Completeness#^prop-9-4|§9.4]], the completion of $(X, \|\cdot\|)$ is
+> *The completion.* The inclusion $J : X \to Z$ is linear and norm-preserving, $J(X) = X$ is dense in $Z$ by Part 3, and $Z$ is a Banach space by Part 2. By Proposition [[§9 Completeness#^prop-9-5|§9.5]], the completion of $(X, \|\cdot\|)$ is
 >
 > $$\Bigl( C^1([a,b]),\ \|f\| = \max_{t \in [a,b]} |f(t)| + \max_{t \in [a,b]} |f'(t)| \Bigr).$$
 
-^pf-9-6
+^pf-9-7
 
-*Uses:* [[§9 Completeness#^thm-9-1|§9.1]], [[§9 Completeness#^prop-9-4|§9.4]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[Fundamental Theorem of Calculus|451 Fundamental Theorem of Calculus]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27 (Weierstrass approximation)]]
+*Uses:* [[§9 Completeness#^thm-9-1|§9.1]], [[§9 Completeness#^prop-9-5|§9.5]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[Fundamental Theorem of Calculus|451 Fundamental Theorem of Calculus]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27 (Weierstrass approximation)]]

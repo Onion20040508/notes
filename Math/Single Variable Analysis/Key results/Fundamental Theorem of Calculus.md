@@ -38,7 +38,7 @@ tags: [real-analysis, hub]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^lem-12-17|Lemma §12.17: Hadamard's Lemma]]
 
 ## Used in (Functional Analysis)
-- [[§9 Completeness#^prop-9-6|Proposition §9.6: (C²[a,b], ∣·∣_X) is Not Complete]]
+- [[§9 Completeness#^prop-9-7|Proposition §9.7: (C²[a,b], ∣·∣_X) is Not Complete]]
 - [[§18 Projection and Orthogonal Decomposition#^prop-18-8|Proposition §18.8: A Sharp Integral Inequality]]
 
 ## Connections

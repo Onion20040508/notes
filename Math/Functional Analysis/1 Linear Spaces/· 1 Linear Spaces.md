@@ -26,4 +26,4 @@ Ranked by how many later results depend on them (through the proofs' citations).
 - [[§1 Linear Spaces#^prop-1-4|Proposition §1.4: The Smallest Subspace Exists]]: 6 later results
 - [[§1 Linear Spaces#^prop-1-5|Proposition §1.5: Span as Finite Linear Combinations]]: 5 later results
 - [[§1 Linear Spaces#^prop-1-6|Proposition §1.6: X/Y is a Linear Space]]: 5 later results
-- [[§2 Linear Maps, Convexity, and Linear Functionals#^lem-2-1|Lemma §2.1: Inverse of an Isomorphism]]: 4 later results
+- [[§2 Linear Maps, Convexity, and Linear Functionals#^lem-2-1|Lemma §2.1: Inverse of an Isomorphism]]: 5 later results

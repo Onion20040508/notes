@@ -126,7 +126,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §5.1, Thm 1 | Theorem [[§10 New Normed Spaces from Old#^thm-10-8\|§10.8]] | Quotient Norm |
 | §5.1, before Thm 2; “dense” in the definition of separable space | Definition [[§8 Normed Linear Spaces#^def-8-7\|§8.7]] | Closure; Dense Subset |
 | §5.1, Thm 2 (part (d)) | Proposition [[§8 Normed Linear Spaces#^prop-8-6\|§8.6]] | Properties of the Closure |
-| §5.1, Thm 3 | Theorem [[§9 Completeness#^thm-9-3\|§9.3]] | The Completion of a Normed Space is a Banach Space |
+| §5.1, Thm 3 | Theorem [[§9 Completeness#^thm-9-4\|§9.4]] | The Completion of a Normed Space is a Banach Space |
 | §5.1, Thms 4–5 | Theorem [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-1\|§13.1]] | Minkowski's Inequality for Sequences |
 | §5.1, Thm 4 | Proposition [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^prop-13-3\|§13.3]] | $\ell^p$ is a Normed Linear Space |
 | §5.2, Thm 6 | Theorem [[§15 Compactness and the Unit Ball#^thm-15-5\|§15.5]] | The Unit Ball of an Infinite-Dimensional Space is Not Compact |

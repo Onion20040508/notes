@@ -31,7 +31,7 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 > Let $\Omega \subset \mathbb{R}^n$ be a domain. For $1 \le p < \infty$,
 >
 > $$
-> L^p(\Omega) = \Bigl\{ f \text{ integrable on } \Omega : \|f\|_{L^p} := \Bigl( \int_\Omega |f(x)|^p\, dx \Bigr)^{1/p} < \infty \Bigr\},
+> L^p(\Omega) = \Bigl\{ f \text{ measurable on } \Omega : \|f\|_{L^p} := \Bigl( \int_\Omega |f(x)|^p\, dx \Bigr)^{1/p} < \infty \Bigr\},
 > $$
 >
 > and
@@ -51,7 +51,7 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 > - The sequence analogue: [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^def-13-1|Def. §13.1]].
 
 > [!remark] Remark: What “Integrable” Means Here
-> Wu deliberately left “integrable” unspecified. Rigorously it means Lebesgue integrable (measurable with finite integral of $|f|^p$), functions agreeing outside a set of measure zero are identified, and $\|f\|_{L^\infty}$ is the [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|essential supremum]]; without the identification, positivity of the norm fails ($f = 0$ except at one point has $\|f\|_p = 0$). Since MATH 551 is not a prerequisite for this course, she asked us to take “integrable” as “anything you will meet,” with continuous functions as the safe case (continuous on a compact $\Omega$ implies Riemann integrable), and said the theory could be made rigorous later. The full treatment — Lebesgue integral, $L^p$, [[Hölder's Inequality|Hölder]], [[Minkowski's Inequality|Minkowski]], [[Riesz–Fischer Theorem|Riesz–Fischer]], [[Dominated Convergence Theorem|dominated]] and [[Monotone Convergence Theorem (Lebesgue)|monotone convergence]], [[Fatou's Lemma|Fatou]] — is in the MATH 551 notes, Chapters on [[· 4 Integration Theory|Lebesgue integration]] and [[· 6 Lᵖ Spaces|Lᵖ spaces]], and that is the version to rely on. (For those without it: chapter 2 of the posted reference notes.)
+> On the board the definition read “$f$ integrable on $\Omega$”, and Wu deliberately left “integrable” unspecified. Rigorously the condition is that $f$ be Lebesgue measurable with finite integral of $|f|^p$; for $p > 1$ this does not require $\int_\Omega |f| < \infty$ ($1/x$ on $(1, \infty)$ is in $L^2$ but not in $L^1$). Functions agreeing outside a set of measure zero are identified, and $\|f\|_{L^\infty}$ is the [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|essential supremum]]; without the identification, positivity of the norm fails ($f = 0$ except at one point has $\|f\|_p = 0$). Since MATH 551 is not a prerequisite for this course, she asked us to take “integrable” as “anything you will meet,” with continuous functions as the safe case (continuous on a compact $\Omega$ implies Riemann integrable), and said the theory could be made rigorous later. The full treatment — Lebesgue integral, $L^p$, [[Hölder's Inequality|Hölder]], [[Minkowski's Inequality|Minkowski]], [[Riesz–Fischer Theorem|Riesz–Fischer]], [[Dominated Convergence Theorem|dominated]] and [[Monotone Convergence Theorem (Lebesgue)|monotone convergence]], [[Fatou's Lemma|Fatou]] — is in the MATH 551 notes, Chapters on [[· 4 Integration Theory|Lebesgue integration]] and [[· 6 Lᵖ Spaces|Lᵖ spaces]], and that is the version to rely on. (For those without it: chapter 2 of the posted reference notes.)
 
 ^rem-14-2
 
@@ -113,12 +113,12 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 > - Used in [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]] (R2); $L^2$ is a Hilbert space: [[§17 Cauchy–Schwarz and the Induced Norm#^ex-17-1|Ex. §17.1]].
 
 > [!theorem] Theorem §14.4: Density of Smooth Functions
-> For $1 \le p < \infty$, $C^\infty(\Omega)$ is dense in $L^p(\Omega)$: for every $f \in L^p(\Omega)$ and $\varepsilon > 0$ there is $\varphi \in C^\infty(\Omega)$ with $\|f - \varphi\|_{L^p} < \varepsilon$.
+> For $1 \le p < \infty$, $C_c^\infty(\Omega)$, the smooth functions with compact support in $\Omega$, is dense in $L^p(\Omega)$: for every $f \in L^p(\Omega)$ and $\varepsilon > 0$ there is $\varphi \in C_c^\infty(\Omega)$ with $\|f - \varphi\|_{L^p} < \varepsilon$.
 
 ^thm-14-4
 
 > [!proof]+ Proof
-> Deferred. Wu said she would look for a proof that avoids heavy measure theory and present it next lecture if one is available. (The MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *Density and Separability*, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|prove]] that simple functions, step functions, and compactly supported continuous functions are dense in $L^p$ for $1 \le p < \infty$; smoothing by convolution with a $C^\infty$ bump takes it the rest of the way to $C^\infty$.)
+> Deferred. Wu said she would look for a proof that avoids heavy measure theory and present it next lecture if one is available. (The MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *Density and Separability*, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|prove]] that simple functions, step functions, and compactly supported continuous functions are dense in $L^p$ for $1 \le p < \infty$; smoothing by convolution with a $C^\infty$ bump takes it the rest of the way to $C_c^\infty$.)
 
 ^pf-14-4
 
@@ -291,20 +291,20 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 >
 > Then $\lim_{x \to c^+} f(x) = 1 \neq 0 = f(c)$, contradicting the continuity of $f$ at $c$. So $\{f_n\}$ is a Cauchy sequence in $X$ with no limit in $X$, and $(X, \|\cdot\|_p)$ is not complete.
 >
-> **Part 3: the completion is $L^p([a,b])$.** Here $\overline{Y}$ denotes the completion of a normed linear space $Y$ [[§9 Completeness#^thm-9-3|constructed in class]], the space of equivalence classes of Cauchy sequences with $\|[\{y_n\}]\| = \lim_{n} \|y_n\|$, which is a Banach space (Homework 2, Problem 3).
+> **Part 3: the completion is $L^p([a,b])$.** Here $\overline{Y}$ denotes the completion of a normed linear space $Y$ [[§9 Completeness#^thm-9-4|constructed in class]], the space of equivalence classes of Cauchy sequences with $\|[\{y_n\}]\| = \lim_{n} \|y_n\|$, which is a Banach space (Homework 2, Problem 3).
 >
-> By Proposition [[§9 Completeness#^prop-9-4|§9.4]], it suffices to embed $X$ isometrically and densely in a Banach space.
+> By Proposition [[§9 Completeness#^prop-9-5|§9.5]], it suffices to embed $X$ isometrically and densely in a Banach space.
 >
 > Now let $Z = L^p([a,b])$, the Lebesgue measurable functions $F$ on $[a,b]$ with $\int_{[a,b]} |F|^p \, dm < \infty$, modulo equality almost everywhere, normed by $\|F\|_{L^p} = \bigl( \int_{[a,b]} |F|^p\, dm \bigr)^{1/p}$; and let $J : X \to L^p([a,b])$ send $f$ to its class. We use three facts from real analysis, cited from real analysis:
 > - (R1) For continuous $f$ on $[a,b]$, the Riemann and Lebesgue integrals of $|f|^p$ [[Riemann Integrable Implies Lebesgue Integrable|coincide]]; hence $\|Jf\|_{L^p} = \|f\|_p$. Clearly $J$ is linear.
 > - (R2) ([[Riesz–Fischer Theorem|Riesz–Fischer]]) $L^p([a,b])$ is complete for $1 \leq p < \infty$ (Theorem [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-3|§14.3]]).
 > - (R3) $C([a,b])$ is dense in $L^p([a,b])$ for $1 \leq p < \infty$ (Theorem [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-4|§14.4]]).
 >
-> By (R1)–(R3), $J$ is a norm-preserving linear map of $X$ onto a dense subspace of the Banach space $L^p([a,b])$. By Proposition [[§9 Completeness#^prop-9-4|§9.4]], the completion of $(C([a,b]), \|\cdot\|_p)$ is $L^p([a,b])$.
+> By (R1)–(R3), $J$ is a norm-preserving linear map of $X$ onto a dense subspace of the Banach space $L^p([a,b])$. By Proposition [[§9 Completeness#^prop-9-5|§9.5]], the completion of $(C([a,b]), \|\cdot\|_p)$ is $L^p([a,b])$.
 
 ^pf-14-8
 
-*Uses:* [[§9 Completeness#^thm-9-1|§9.1]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-6|§14.6]], [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-7|§14.7]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[§9 Completeness#^thm-9-3|§9.3]], [[§9 Completeness#^prop-9-4|§9.4]], [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-3|§14.3]], [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-4|§14.4]], [[Riemann Integrable Implies Lebesgue Integrable|551 §15.10]], [[Riesz–Fischer Theorem|551 §19.18]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 §19.19]]
+*Uses:* [[§9 Completeness#^thm-9-1|§9.1]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-6|§14.6]], [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-7|§14.7]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[§9 Completeness#^thm-9-4|§9.4]], [[§9 Completeness#^prop-9-5|§9.5]], [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-3|§14.3]], [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-4|§14.4]], [[Riemann Integrable Implies Lebesgue Integrable|551 §15.10]], [[Riesz–Fischer Theorem|551 §19.18]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 §19.19]]
 
 ![[m556-14-2.svg]]
 *The ramps of Step 2 for $n = 2, 4, 8$ on $[a,b]$, with $c$ the midpoint. They differ from one another only near $c$, so they are Cauchy in $L^p$; an $L^p$ limit would have to be $0$ on $[a,c]$ and $1$ on $(c,b]$ — the step function, which is not continuous.*

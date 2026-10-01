@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Differentiable Manifolds]]"
-chapter: 3
+chapter: 5
 section: 16
 tags: [differentiable-manifolds, math591]
 ---
-← [[§15 Submanifolds]] · ↑ [[· 3 Smooth Manifolds]] · [[§17 The Tangent Bundle]] →
+← [[§15 Submanifolds]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§17 The Tangent Bundle]] →
 
 *Stage: bundles — Submersions that are locally products.*
 

@@ -11,7 +11,7 @@ The space $C[a,b]$ of continuous functions $f : [a,b] \to \mathbb{F}$, the first
 - $C[a,b]$ sits inside $L^p[a,b]$ via $f \mapsto [f]$ ([[§9 Completeness#^rem-9-7|§9]])
 - The norm decides, not the set: $L^1[a,b]$ is not the completion of $(C[a,b], \|\cdot\|_\infty)$ ([[§9 Completeness#^rem-9-9|§9]])
 - $C^2[a,b]$ with a $C^1$ norm ([[§9 Completeness#^ex-9-2|§9]])
-- $(C^2[a,b], \|\cdot\|_X)$ is not complete, and its completion is $C^1[a,b]$ ([[§9 Completeness#^prop-9-6|§9]])
+- $(C^2[a,b], \|\cdot\|_X)$ is not complete, and its completion is $C^1[a,b]$ ([[§9 Completeness#^prop-9-7|§9]])
 - $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ on $C[a,b]$ are not equivalent ([[§10 New Normed Spaces from Old#^rem-10-1|§10]])
 - Continuous functions are not dense in $L^\infty$ ([[§14 The Function Spaces Lᵖ(Ω)#^prop-14-5|§14]])
 - A continuous $h \ge 0$ with vanishing integral is identically $0$ ([[§14 The Function Spaces Lᵖ(Ω)#^lem-14-6|§14]])
@@ -37,7 +37,7 @@ The space $C[a,b]$ of continuous functions $f : [a,b] \to \mathbb{F}$, the first
 ![[§9 Completeness#^ex-9-2]]
 
 ## $(C^2[a,b], \|\cdot\|_X)$ is not complete, and its completion is $C^1[a,b]$
-![[§9 Completeness#^prop-9-6]]
+![[§9 Completeness#^prop-9-7]]
 
 ## $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ on $C[a,b]$ are not equivalent
 ![[§10 New Normed Spaces from Old#^rem-10-1]]

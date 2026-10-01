@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Differentiable Manifolds]]"
-chapter: 3
+chapter: 5
 section: 14
 tags: [differentiable-manifolds, math591]
 ---
-← [[§13 Tangent Spaces III꞉ The Cotangent Space]] · ↑ [[· 3 Smooth Manifolds]] · [[§15 Submanifolds]] →
+← [[§13 Tangent Spaces III꞉ The Cotangent Space]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§15 Submanifolds]] →
 
 *Stage: maps — Properties of the linear maps $F_{*p}$ control the local behaviour of $F$ itself.*
 

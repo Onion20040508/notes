@@ -667,7 +667,7 @@ The hypothesis $X = Y + Y^\perp$ holds automatically in finite dimensions, and i
 \end{rembox}
 
 % ============================================================================
-% SECTION 2: LINEAR MAPS AND CONVEXITY
+% SECTION 2: LINEAR MAPS, CONVEXITY, AND LINEAR FUNCTIONALS
 % ============================================================================
 \section{Linear Maps, Convexity, and Linear Functionals}\label{sec:maps-convex}
 
@@ -1255,8 +1255,8 @@ Positive homogeneity (Proposition~\ref{prop:gauge-sublinear} below, $p_K(tx) = t
 
 The two halves of (b) are the same statement seen from opposite sides. In both, $p_K(x)$ is the scale $a$ at which $x/a$ sits on the boundary of $K$:
 \begin{itemize}
-    \item \emph{$x$ outside $K$.} Dividing by $a$ must \emph{shrink} $x$, so $a$ increases from $1$; the points $x/a$ move along the ray toward $0$ and enter $K$ at $a = p_K(x) > 1$. Every larger $a$ is admissible (Lemma~\ref{lem:upset}); no smaller $a$ is, since shrinking can only bring $x$ into $K$, never take it out. The crossing scale is the infimum.
-    \item \emph{$x$ inside $K$.} Dividing by $a$ must \emph{stretch} $x$, so $a$ decreases from $1$; the points $x/a$ move outward and reach the boundary at $a = p_K(x) < 1$. Every $a$ above this is admissible, no $a$ below it is, and again the crossing scale is the infimum.
+    \item \emph{$x$ outside $K$.} Dividing by $a$ must \emph{shrink} $x$, so $a$ increases from $1$; the points $x/a$ move along the ray toward $0$ and enter $K$ at $a = p_K(x) \ge 1$. Every larger $a$ is admissible (Lemma~\ref{lem:upset}); no smaller $a$ is, since shrinking can only bring $x$ into $K$, never take it out. The crossing scale is the infimum.
+    \item \emph{$x$ inside $K$.} Dividing by $a$ must \emph{stretch} $x$, so $a$ decreases from $1$; the points $x/a$ move outward and reach the boundary at $a = p_K(x) \le 1$. Every $a$ above this is admissible, no $a$ below it is, and again the crossing scale is the infimum.
 \end{itemize}
 
 \begin{center}
@@ -2020,6 +2020,37 @@ An element $x \in M$ is identified with the class of the constant sequence $(x, 
 Two points were raised in lecture. First, why equivalence classes: a point $x \in M$ is the limit of many Cauchy sequences (on the real line, $(x, x, \ldots)$ and $(x + 1/n)$ both converge to $x$), and different sequences with the same destination must not be counted as different elements of $\overline{M}$. Second, the elements of $\overline{M}$ are sets of sequences, not points of $M$, so how is $M$ a subset? By the identification $x \leftrightarrow [(x, x, \ldots)]$, which is one-to-one; $M$ is not literally contained in $\overline{M}$ but is embedded in it. This is the same kind of identification as $\mathbb{R} \subset \mathbb{R} \oplus \mathbb{R}^2 = \mathbb{R}^3$.
 \end{rembox}
 
+\begin{propbox}[{{The Completion is a Complete Metric Space, and $M$ is Dense in It}}]\boxlabel{prop:completion-metric}
+Let $(M, d)$ be a metric space. For Cauchy sequences $\{x_n\}, \{y_n\}$ in $M$ put
+\[
+\bar d\bigl([\{x_n\}], [\{y_n\}]\bigr) := \lim_{n \to \infty} d(x_n, y_n).
+\]
+\begin{enumerate}[label=(\alph*)]
+    \item The limit exists and depends only on the classes, and $\bar d$ is a metric on $\overline{M}$.
+    \item $\bar d(x, y) = d(x, y)$ for $x, y \in M$ (identified with constant sequences), so $M \subset \overline{M}$ isometrically.
+    \item $M$ is dense in $\overline{M}$: if $\xi = [\{x_n\}]$, then $x_k \to \xi$ in $\overline{M}$ as $k \to \infty$.
+    \item $(\overline{M}, \bar d)$ is complete.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+(Not covered in lecture; added because Example~\ref{ex:completions-subsets-rn}, Remark~\ref{rem:how-do-we-know-we-have-not-added-too-much} and the normed case below rely on these facts.)
+
+(a) By the triangle inequality, applied twice, $|d(x_n, y_n) - d(x_m, y_m)| \le d(x_n, x_m) + d(y_n, y_m)$, so $\{d(x_n, y_n)\}$ is a Cauchy sequence of real numbers and converges. If $\{x_n\} \sim \{x_n'\}$ and $\{y_n\} \sim \{y_n'\}$, the same estimate gives $|d(x_n, y_n) - d(x_n', y_n')| \le d(x_n, x_n') + d(y_n, y_n') \to 0$, so the limit depends only on the classes. Symmetry and the triangle inequality hold termwise and pass to the limit, and $\bar d \ge 0$. Finally $\bar d([\{x_n\}], [\{y_n\}]) = 0$ iff $d(x_n, y_n) \to 0$ iff $\{x_n\} \sim \{y_n\}$ iff the two classes are equal.
+
+(b) For constant sequences, $\bar d(x, y) = \lim_n d(x, y) = d(x, y)$.
+
+(c) Let $\varepsilon > 0$ and choose $N$ with $d(x_n, x_m) < \varepsilon$ for all $n, m \ge N$. For $k \ge N$, $\bar d(x_k, \xi) = \lim_n d(x_k, x_n) \le \varepsilon$. Hence $x_k \to \xi$.
+
+(d) Let $\{\xi_m\}$ be a Cauchy sequence in $\overline{M}$. By (c) there are $z_m \in M$ with $\bar d(z_m, \xi_m) < 1/m$. By (b) and the triangle inequality,
+\[
+d(z_m, z_k) = \bar d(z_m, z_k) \le \frac{1}{m} + \bar d(\xi_m, \xi_k) + \frac{1}{k},
+\]
+so $\{z_m\}$ is Cauchy in $M$; let $\xi = [\{z_m\}] \in \overline{M}$. Then $\bar d(\xi_m, \xi) \le 1/m + \bar d(z_m, \xi)$, and $\bar d(z_m, \xi) \to 0$ as $m \to \infty$ by (c) applied to the representative $\{z_k\}$ of $\xi$. Hence $\xi_m \to \xi$.
+
+For a normed linear space $X$ with the norm of Theorem~\ref{thm:completion-normed}, $\bigl\| [\{x_n\}] - [\{y_n\}] \bigr\|_{\overline{X}} = \lim_n \|x_n - y_n\| = \bar d\bigl([\{x_n\}], [\{y_n\}]\bigr)$ for the metric $d(x, y) = \|x - y\|$ of $X$, so (c) says that $X$ is dense in $\overline{X}$.
+\end{proof}
+
 \begin{exbox}[Completions of Subsets of $\mathbb{R}^n$]\boxlabel{ex:completions-subsets-rn}
 For subsets of $\mathbb{R}^n$ with the usual metric, completion is closure:
 \begin{itemize}
@@ -2224,7 +2255,7 @@ Also worth separating: the definition of $\overline{X}$ is by equivalence classe
 \end{rembox}
 
 \begin{rembox}[{{The Norm Decides, Not the Set}}]\label{rem:norm-decides-not-set}
-A second trap. As \emph{sets}, $C[a,b] \subset L^1[a,b]$, and $L^1[a,b]$ is complete; but $L^1[a,b]$ is not the completion of $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$, which is already complete (Theorem~\ref{thm:Cab-banach}) and is therefore its own completion. The two norms $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ are not equivalent, so they give different topologies, different Cauchy sequences, and different completions. A normed linear space is the pair $(X, \|\cdot\|)$, never the set alone; the completion is determined by the norm. The same set $C[a,b]$ with the $L^p$ norm, $1 \le p < \infty$, does have completion $L^p[a,b]$ (\S\ref{sec:completion-L1}).
+A second trap. As \emph{sets}, $C[a,b] \subset L^1[a,b]$, and $L^1[a,b]$ is complete; but $L^1[a,b]$ is not the completion of $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$, which is already complete (Theorem~\ref{thm:Cab-banach}) and is therefore its own completion. The two norms $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ are not equivalent, so they give different topologies, different Cauchy sequences, and different completions. A normed linear space is the pair $(X, \|\cdot\|)$, never the set alone; the completion is determined by the norm. The same set $C[a,b]$ with the $L^p$ norm, $1 \le p < \infty$, does have completion $L^p[a,b]$ (\S\ref{subsec:completion-L1}).
 \end{rembox}
 
 \subsection{An Incomplete Normed Space}
@@ -2305,7 +2336,7 @@ so $\varphi'$ is not differentiable at $c$, and $\varphi \notin C^2([a,b])$.
 
 The constructions of Chapter 1 --- subspaces, direct sums, quotients --- each acquire a natural norm. The first two are immediate; the quotient requires a hypothesis and a proof.
 
-\subsection{Equivalent Norms}\label{sec:equiv-norms}
+\subsection{Equivalent Norms}\label{subsec:equiv-norms}
 
 \begin{defbox}[Equivalent Norms]\boxlabel{def:equivalent-norms}
 Let $X$ be a linear space with two norms $\|\cdot\|_1$ and $\|\cdot\|_2$. They are \textbf{equivalent} if there are constants $c_1, c_2 > 0$ such that
@@ -2895,13 +2926,13 @@ Put $a = (a_1, a_2, \ldots) \in \ell$. This is the candidate. Nothing has been p
 As Wu noted at the end of the lecture, the two formulations are the same thing: convergence in $\mathbb{F}^k$ is coordinatewise convergence, and only the coordinates are used afterwards. A student's example of $e_1, e_2, e_1, e_2, \ldots$ (alternating) was raised as a worry for coordinatewise limits; it is not Cauchy in $\ell^p$ ($\|e_1 - e_2\|_p = 2^{1/p}$ does not go to $0$), so it is not a counterexample to anything.
 \end{rembox}
 
-% ============================================================================
-% SECTION 14: THE FUNCTION SPACES L^p
-% ============================================================================
-
 \begin{rembox}[Comparison with Lax]\label{rem:comparison-lax-4}
 Three differences of route in \ref{sec:holder}--\ref{sec:minkowski}. Lax states H\"older's inequality without proof, referring to Courant; here it is proved from Young's inequality (Lemma~\ref{lem:young}). Lax obtains Minkowski's inequality from the \emph{duality formula} $\|x\|_p = \max_{\|u\|_q = 1} |(x, u)|$ with $(x,u) = \sum_j a_j c_j$ (his Theorem~5): a maximum of sums is at most a sum of maxima, so subadditivity is immediate once the formula is known, and the formula itself rests on the equality case of H\"older. Wu's route (Theorem~\ref{thm:minkowski-seq}) avoids the equality case at the price of the truncation argument. The duality formula is the first appearance of the dual-space theme that returns in Lax's Chapter~8. Finally, Lax asserts the completeness of $\ell^p$ and $\ell^\infty$ without proof (examples (a)--(b)); Theorem~\ref{thm:lp-complete} proves it.
 \end{rembox}
+
+% ============================================================================
+% SECTION 14: THE FUNCTION SPACES L^p
+% ============================================================================
 
 \section{The Function Spaces $L^p(\Omega)$}\label{sec:completion-L1-sec}
 
@@ -2938,7 +2969,7 @@ the Riemann sum, which improves as the partition is refined. So $\int |f|^p$ is 
 \begin{defbox}[{{$L^p(\Omega)$, $L^\infty(\Omega)$ --- working definition}}]\boxlabel{def:Lp}
 Let $\Omega \subset \mathbb{R}^n$ be a domain. For $1 \le p < \infty$,
 \[
-L^p(\Omega) = \Bigl\{ f \text{ integrable on } \Omega : \|f\|_{L^p} := \Bigl( \int_\Omega |f(x)|^p\, dx \Bigr)^{1/p} < \infty \Bigr\},
+L^p(\Omega) = \Bigl\{ f \text{ measurable on } \Omega : \|f\|_{L^p} := \Bigl( \int_\Omega |f(x)|^p\, dx \Bigr)^{1/p} < \infty \Bigr\},
 \]
 and
 \[
@@ -2949,7 +2980,7 @@ $\|f\|_{L^p}$ is also written $\|f\|_p$.
 \end{defbox}
 
 \begin{rembox}[What ``Integrable'' Means Here]\label{rem:what-integrable-means-here}
-Wu deliberately left ``integrable'' unspecified. Rigorously it means Lebesgue integrable (measurable with finite integral of $|f|^p$), functions agreeing outside a set of measure zero are identified, and $\|f\|_{L^\infty}$ is the essential supremum; without the identification, positivity of the norm fails ($f = 0$ except at one point has $\|f\|_p = 0$). Since MATH 551 is not a prerequisite for this course, she asked us to take ``integrable'' as ``anything you will meet,'' with continuous functions as the safe case (continuous on a compact $\Omega$ implies Riemann integrable), and said the theory could be made rigorous later. The full treatment --- Lebesgue integral, $L^p$, H\"older, Minkowski, Riesz--Fischer, dominated and monotone convergence, Fatou --- is in the MATH 551 notes, Chapters on Lebesgue integration and $L^p$ spaces, and that is the version to rely on. (For those without it: chapter 2 of the posted reference notes.)
+On the board the definition read ``$f$ integrable on $\Omega$'', and Wu deliberately left ``integrable'' unspecified. Rigorously the condition is that $f$ be Lebesgue measurable with finite integral of $|f|^p$; for $p > 1$ this does not require $\int_\Omega |f| < \infty$ ($1/x$ on $(1, \infty)$ is in $L^2$ but not in $L^1$). Functions agreeing outside a set of measure zero are identified, and $\|f\|_{L^\infty}$ is the essential supremum; without the identification, positivity of the norm fails ($f = 0$ except at one point has $\|f\|_p = 0$). Since MATH 551 is not a prerequisite for this course, she asked us to take ``integrable'' as ``anything you will meet,'' with continuous functions as the safe case (continuous on a compact $\Omega$ implies Riemann integrable), and said the theory could be made rigorous later. The full treatment --- Lebesgue integral, $L^p$, H\"older, Minkowski, Riesz--Fischer, dominated and monotone convergence, Fatou --- is in the MATH 551 notes, Chapters on Lebesgue integration and $L^p$ spaces, and that is the version to rely on. (For those without it: chapter 2 of the posted reference notes.)
 \end{rembox}
 
 \begin{thmbox}[H\"older's Inequality for Functions]\boxlabel{thm:holder-fn}
@@ -2985,11 +3016,11 @@ Deferred: Wu skipped the proof because it needs real-analysis tools (a candidate
 \end{proof}
 
 \begin{thmbox}[Density of Smooth Functions]\boxlabel{thm:density}
-For $1 \le p < \infty$, $C^\infty(\Omega)$ is dense in $L^p(\Omega)$: for every $f \in L^p(\Omega)$ and $\varepsilon > 0$ there is $\varphi \in C^\infty(\Omega)$ with $\|f - \varphi\|_{L^p} < \varepsilon$.
+For $1 \le p < \infty$, $C_c^\infty(\Omega)$, the smooth functions with compact support in $\Omega$, is dense in $L^p(\Omega)$: for every $f \in L^p(\Omega)$ and $\varepsilon > 0$ there is $\varphi \in C_c^\infty(\Omega)$ with $\|f - \varphi\|_{L^p} < \varepsilon$.
 \end{thmbox}
 
 \begin{proof}
-Deferred. Wu said she would look for a proof that avoids heavy measure theory and present it next lecture if one is available. (The MATH 551 notes, Chapter \emph{$L^p$ Spaces}, subsection \emph{Density and Separability}, prove that simple functions, step functions, and compactly supported continuous functions are dense in $L^p$ for $1 \le p < \infty$; smoothing by convolution with a $C^\infty$ bump takes it the rest of the way to $C^\infty$.)
+Deferred. Wu said she would look for a proof that avoids heavy measure theory and present it next lecture if one is available. (The MATH 551 notes, Chapter \emph{$L^p$ Spaces}, subsection \emph{Density and Separability}, prove that simple functions, step functions, and compactly supported continuous functions are dense in $L^p$ for $1 \le p < \infty$; smoothing by convolution with a $C^\infty$ bump takes it the rest of the way to $C_c^\infty$.)
 \end{proof}
 
 \begin{propbox}[Continuous Functions are Not Dense in $L^\infty$]\boxlabel{prop:C-not-dense}
@@ -3006,7 +3037,7 @@ Alternatively, as Wu suggested: $C[0,1]$ with the supremum norm is complete (The
 The failure at $p = \infty$ is the first sign that $L^\infty$ behaves differently from the other $L^p$: uniform approximation cannot smooth out a jump. The pattern ``true for $1 \le p < \infty$, false for $p = \infty$'' will recur, e.g.\ in identifying dual spaces.
 \end{rembox}
 
-\subsection{The Completion of $C[a,b]$ in the $L^p$ Norm}\label{sec:completion-L1}
+\subsection{The Completion of $C[a,b]$ in the $L^p$ Norm}\label{subsec:completion-L1}
 
 \begin{lembox}[A Vanishing Integral]\boxlabel{lem:vanishing-int}
 Let $\alpha < \beta$ and let $h : [\alpha,\beta] \to [0,\infty)$ be continuous with $\int_\alpha^\beta h(x)\,dx = 0$. Then $h(x) = 0$ for all $x \in [\alpha,\beta]$.
@@ -3500,7 +3531,7 @@ using $\operatorname{Re} w \le |w|$ and then Theorem~\ref{thm:cauchy-schwarz}. T
 \end{proof}
 
 \begin{rembox}\label{rem:cauchy-schwarz}
-So every inner product space is a normed linear space, and all of Chapters 3 and 4 applies to it. The converse question --- which norms come from an inner product --- is answered in \S\ref{sec:parallelogram}.
+So every inner product space is a normed linear space, and all of Chapters 3 and 4 applies to it. The converse question --- which norms come from an inner product --- is answered in \S\ref{subsec:parallelogram}.
 \end{rembox}
 
 \begin{defbox}[Hilbert Space]\boxlabel{def:hilbert}
@@ -3537,7 +3568,7 @@ Wu's motivation: if $f$ is a velocity, $\int |f|^2$ is an energy, and a physical
 \laxref{\S5.1, example (g)}
 \end{exbox}
 
-\subsection{Which Norms Come from an Inner Product}\label{sec:parallelogram}
+\subsection{Which Norms Come from an Inner Product}\label{subsec:parallelogram}
 
 \begin{propbox}[Parallelogram Law and Polarization]\boxlabel{prop:parallelogram}
 Let $(X, (\cdot,\cdot))$ be an inner product space and $\|x\| = (x,x)^{1/2}$. For all $x, y \in X$:
@@ -4153,14 +4184,14 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 Wu on method: ``when we try to prove a big theorem, very often the simple examples we learned, like in linear algebra, give the answer; start with simple examples and go from there.'' Here the finite-dimensional picture dictated both the object to study ($\ker \ell$) and the candidate ($a$ normal to it); the analysis consisted of making the orthogonal decomposition available, which is where completeness of $H$ and boundedness of $\ell$ enter.
 \end{rembox}
 
+\begin{rembox}[Comparison with Lax]\label{rem:comparison-lax-6}
+Lax proves the representation theorem through his Lemma~5: the null space of a nonzero functional has codimension one, and two functionals with the same null space are proportional. He takes $z \neq 0$ in $N^\perp$ and observes that $\ell$ and $x \mapsto (x, z)$ have the same null space, so $\ell$ is a multiple of $(\cdot, z)$. Wu's proof (Lemma~\ref{lem:ker-codim1} and the explicit decomposition $x = kx_0 + y$) is the same argument with the proportionality constant computed by hand.
+\end{rembox}
+
 % ============================================================================
 % SECTION 20: ORTHONORMAL SETS AND BASES
 % ============================================================================
 % Lecture 8 (2026-09-24)
-
-\begin{rembox}[Comparison with Lax]\label{rem:comparison-lax-6}
-Lax proves the representation theorem through his Lemma~5: the null space of a nonzero functional has codimension one, and two functionals with the same null space are proportional. He takes $z \neq 0$ in $N^\perp$ and observes that $\ell$ and $x \mapsto (x, z)$ have the same null space, so $\ell$ is a multiple of $(\cdot, z)$. Wu's proof (Lemma~\ref{lem:ker-codim1} and the explicit decomposition $x = kx_0 + y$) is the same argument with the proportionality constant computed by hand.
-\end{rembox}
 
 \section{Orthonormal Sets and Bases}\label{sec:onb}
 
@@ -4877,7 +4908,7 @@ The state space of a quantum system is a Hilbert space $H$ over $\mathbb{C}$, in
 \end{rembox}
 
 % ============================================================================
-% SECTION 21: BRAS, KETS, AND THE RIESZ MAP
+% SECTION 22: BRAS, KETS, AND THE RIESZ MAP
 % ============================================================================
 
 \section{Bras, Kets, and the Riesz Map}\label{sec:qm-riesz}
@@ -4937,7 +4968,7 @@ Theorem~\ref{thm:riesz-map} is the precise content of the physicists' rule that 
 \end{rembox}
 
 % ============================================================================
-% SECTION 22: THE COMPLETENESS RELATION
+% SECTION 23: THE COMPLETENESS RELATION
 % ============================================================================
 
 \section{The Completeness Relation}\label{sec:qm-completeness}
@@ -5020,7 +5051,7 @@ The Fourier basis $e_n(\theta) = e^{in\theta}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, 
 \end{exbox}
 
 % ============================================================================
-% SECTION 23: POSITION EIGENSTATES AND CONTINUOUS "BASES"
+% SECTION 24: POSITION EIGENSTATES AND CONTINUOUS "BASES"
 % ============================================================================
 
 \section{Position Eigenstates and Continuous Resolutions}\label{sec:qm-continuous}
@@ -5137,7 +5168,7 @@ If $\{e_n\}$ is an orthonormal basis of $L^2(\mathbb{R}^n)$, physics writes $\su
 \end{rembox}
 
 % ============================================================================
-% SECTION 24: DISCRETE AND CONTINUOUS SPECTRUM: HYDROGEN
+% SECTION 25: DISCRETE AND CONTINUOUS SPECTRUM: HYDROGEN
 % ============================================================================
 
 \section{Bound States Need Not Be Complete: Hydrogen}\label{sec:qm-hydrogen}

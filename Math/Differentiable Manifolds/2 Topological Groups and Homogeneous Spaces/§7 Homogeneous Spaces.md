@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§6 Group Actions and Orbit Spaces]] · ↑ [[· 2 Topological Groups and Homogeneous Spaces]] · [[§8 Differentiable Structures]] →
 
-*Thread: quotients — A transitive action identifies a space with a coset space $G/H$; the Grassmannians are the payoff. The two threads meet in the [[· 3 Smooth Manifolds|next chapter]].*
+*Thread: quotients — A transitive action identifies a space with a coset space $G/H$; the Grassmannians are the payoff. The two threads meet in the [[· 3 Smooth Structures|next chapter]].*
 
 *Reference: Lee Ch. 21, the section on homogeneous spaces; Lee Example 1.36 (Grassmannians). Logistics: a substitute lectures on Friday Sep 11; smooth structures are scheduled to begin then.*
 

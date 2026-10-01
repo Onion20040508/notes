@@ -5,7 +5,7 @@ chapter: 3
 section: 9
 tags: [differentiable-manifolds, math591]
 ---
-← [[§8 Differentiable Structures]] · ↑ [[· 3 Smooth Manifolds]] · [[§10 Vector Spaces and Matrix Groups]] →
+← [[§8 Differentiable Structures]] · ↑ [[· 3 Smooth Structures]] · [[§10 Vector Spaces and Matrix Groups]] →
 
 *Stage: geometric — The equations thread made smooth: a manifold given inside $\mathbb{R}^N$, and level sets smoothed by graph charts (Proposition [[§9 Manifolds in Euclidean Space#^prop-9-2|§9.2]]).*
 

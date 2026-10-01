@@ -82,7 +82,7 @@ The pattern of the [[§3 Statement and Motivation#^thm-3-2|Hahn–Banach]] proof
 
 > [!example] Example T5: Applications
 > - **$\ell^p$ complete** (lecture, Theorem [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|§13.5]]): candidate by coordinates; closing by the tail estimate ([[§13 Minkowski's Inequality and the Spaces ℓᵖ#^pf-13-5|4.4]]).
-> - **Completion of a normed space** (HW2 P3, Theorem [[§9 Completeness#^thm-9-3|§9.3]]): candidate is the diagonal sequence $y_j = x^{(M_j)}_{N_j}$; closing by two three-term triangle inequalities with an auxiliary index sent to infinity last.
+> - **Completion of a normed space** (HW2 P3, Theorem [[§9 Completeness#^thm-9-4|§9.4]]): candidate is the diagonal sequence $y_j = x^{(M_j)}_{N_j}$; closing by two three-term triangle inequalities with an auxiliary index sent to infinity last.
 > - **$C[a,b]$ with the sup norm** (HW2 P1, Theorem [[§9 Completeness#^thm-9-1|§9.1]]): candidate by pointwise limits; closing by uniform convergence, then the $3\varepsilon$ argument for continuity of the limit.
 
 ^ex-t5
@@ -139,13 +139,13 @@ The pattern of the [[§3 Statement and Motivation#^thm-3-2|Hahn–Banach]] proof
 > - (ii) show $J(X)$ is dense in $Z$;
 > - (iii) show $J(X) \ne Z$ by exhibiting $z \in Z \setminus J(X)$.
 >
-> Then $\overline{X} = Z$ (Proposition [[§9 Completeness#^prop-9-4|§9.4]]), and $X$ is not complete, because a sequence in $X$ whose image converges to $z$ is Cauchy with no limit in $X$. When a proof without the ambient $Z$ is wanted, write the Cauchy sequence down explicitly and show that any limit in $X$ would have to violate the defining property of $X$ (continuity, differentiability, …). Before starting, check the norm, not only the set: the same set may be complete under one norm and not under another.
+> Then $\overline{X} = Z$ (Proposition [[§9 Completeness#^prop-9-5|§9.5]]), and $X$ is not complete, because a sequence in $X$ whose image converges to $z$ is Cauchy with no limit in $X$. When a proof without the ambient $Z$ is wanted, write the Cauchy sequence down explicitly and show that any limit in $X$ would have to violate the defining property of $X$ (continuity, differentiability, …). Before starting, check the norm, not only the set: the same set may be complete under one norm and not under another.
 
 ^rem-t9
 
 > [!example] Example T9: Applications (HW3)
 > - **$C[a,b]$ in the $L^p$ norm** (P1, Proposition [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]]): $Z = L^p[a,b]$; witness the step function, approached by ramps.
-> - **$C^2[a,b]$ in the norm $\max|f| + \max|f'|$** (P2, Proposition [[§9 Completeness#^prop-9-6|§9.6]]): $Z = C^1[a,b]$; density by approximating $f'$ uniformly and integrating; witness $|x - c|^{3/2}$.
+> - **$C^2[a,b]$ in the norm $\max|f| + \max|f'|$** (P2, Proposition [[§9 Completeness#^prop-9-7|§9.7]]): $Z = C^1[a,b]$; density by approximating $f'$ uniformly and integrating; witness $|x - c|^{3/2}$.
 > - **Contrast**: $C[a,b]$ in the sup norm is already complete (Theorem [[§9 Completeness#^thm-9-1|§9.1]]), and so is $C^2[a,b]$ in the full $C^2$ norm.
 
 ^ex-t9
