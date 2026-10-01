@@ -12,6 +12,7 @@ My mathematics and physics notes, kept as an [Obsidian](https://obsidian.md) vau
 
 | Subject | Source | Status |
 |---|---|---|
+| [Logic and Proofs](Math/Logic%20and%20Proofs) | MAT 250 (Stony Brook) · Eccles, *An Introduction to Mathematical Reasoning* | complete |
 | [Linear Algebra](Math/Linear%20Algebra) | Axler, *Linear Algebra Done Right*, 4th ed. | complete (Ch. 1–9) |
 | [Single Variable Analysis](Math/Single%20Variable%20Analysis) | MATH 451 · Ross, *Elementary Analysis* | complete |
 | [Multivariable Analysis](Math/Multivariable%20Analysis) | MATH 452 · Courant & John, Vol. II | complete |

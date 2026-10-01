@@ -282,7 +282,7 @@ Division needs care. $30 \equiv 2 \pmod 4$, but halving both sides gives $15 \no
 > a b_1 \equiv a b_2 \pmod m \iff b_1 \equiv b_2 \pmod{m/a} .
 > $$
 >
-> (For a negative divisor $a$ apply this to $-a$: $ab_1 \equiv ab_2 \iff (-a)b_1 \equiv (-a)b_2$.)
+> (Eccles allows any divisor $a$ of $m$. For $a < 0$ the number $m/a$ is negative and so not a modulus; apply the result to $-a$ instead, since $ab_1 \equiv ab_2 \iff (-a)b_1 \equiv (-a)b_2$.)
 >
 > *Eccles: Proposition 19.3.1*
 

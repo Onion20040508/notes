@@ -102,7 +102,7 @@ The hypothesis "$a > 0$ or $a < 0$" was handled by proving the conclusion in eac
 > 2. $1 > 0$.
 > 3. If $a > 0$ and $b > 0$, then $ab > 0$.
 >
-> *Source: standard (used in Exercises 3.1 and 5.3); MAT 200 HW2 Problem 5 (part 3)*
+> *Source: standard (used in Exercises 3.1 and 5.3); part 3 is MAT 200 HW2 Problem 5*
 
 ^cor-3-3
 

@@ -52,7 +52,7 @@ A function assigns exactly one value to each point of its domain, but says nothi
 > 2. $f$ is surjective $\iff$ every element of $Y$ has at least one pre-image;
 > 3. $f$ is bijective $\iff$ every element of $Y$ has exactly one pre-image.
 >
-> *Eccles: §9.1 (after Definition 9.1.2)*
+> *Eccles: Section 9.1 (after Definition 9.1.2)*
 
 ^prop-9-1
 
@@ -340,7 +340,7 @@ The notation $f^{-1}$ is also used when $f$ is not a bijection, for a function b
 
 ## 9.4 Peano's Axioms for the Natural Numbers
 
-The successor of an integer was used in [[§5 The Induction Principle|§5]]; Dedekind observed that the successor function together with the number $1$ captures everything about the positive integers.
+The successor of an integer was used to explain the induction principle ([[§5 The Induction Principle#^rem-5-1|§5, remark after Def. §5.1]]); Dedekind observed that the successor function together with the number $1$ captures everything about the positive integers.
 
 > [!definition] Definition §9.5: Successor Function
 > The **successor function** $s : \Z^+ \to \Z^+$ is defined by $s(n) = n + 1$ for $n \in \Z^+$.
@@ -361,9 +361,9 @@ The successor of an integer was used in [[§5 The Induction Principle|§5]]; Ded
 ^def-9-6
 
 > [!remark] Remark: What the Axioms Say
-> Axiom 3 is the induction principle in the set form of [[§7 Quantifiers#^def-7-4|Def. §7.4]]. Axiom 1 says distinct numbers have distinct successors, and axiom 2 that counting has a starting point; together with 3 they say that $1, s(1), s(s(1)), \ldots$ runs through $\Z^+$ without repetition. These are axioms *for* $\Z^+$ in the sense that any set $X$ with a function $s : X \to X$ and an element $1 \in X$ satisfying them is in bijection with $\Z^+$ by a bijection matching the two elements $1$ and the two successor functions (Dedekind; proved by induction, not proved here). Addition and multiplication can then be *defined* from $s$.
+> Axiom 3 is the induction principle ([[§5 The Induction Principle#^def-5-1|Def. §5.1]]) in the set form of [[§7 Quantifiers#^def-7-4|Def. §7.4]]. Axiom 1 says distinct numbers have distinct successors, and axiom 2 that counting has a starting point; together with 3 they say that $1, s(1), s(s(1)), \ldots$ runs through $\Z^+$ without repetition. These are axioms *for* $\Z^+$ in the sense that any set $X$ with a function $s : X \to X$ and an element $1 \in X$ satisfying them is in bijection with $\Z^+$ by a bijection matching the two elements $1$ and the two successor functions (Dedekind; proved by induction, not proved here). Addition and multiplication can then be *defined* from $s$.
 >
-> *Eccles: §9.4*
+> *Eccles: Section 9.4*
 
 ^rem-9-3
 
@@ -393,7 +393,7 @@ The successor of an integer was used in [[§5 The Induction Principle|§5]]; Ded
 ^ex-9-12
 
 > [!example] Example §9.13: Addition Is Associative and Commutative
-> From [[§9 Injections, Surjections and Bijections#^def-9-7|Def. §9.7]] and [[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]](3) (in the form of induction):
+> From [[§9 Injections, Surjections and Bijections#^def-9-7|Def. §9.7]] and [[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]](3), used as proof by induction ([[§5 The Induction Principle#^def-5-1|Def. §5.1]]):
 >
 > **(i) Associativity:** $(a + b) + c = a + (b + c)$ for all $a, b, c \in \Z^+$. Fix $a, b$ and induct on $c$. For $c = 1$: $(a + b) + 1 = s(a + b) = a + s(b) = a + (b + 1)$. If it holds for $c = k$, then
 >
@@ -401,7 +401,7 @@ The successor of an integer was used in [[§5 The Induction Principle|§5]]; Ded
 > (a + b) + s(k) = s\big((a + b) + k\big) = s\big(a + (b + k)\big) = a + s(b + k) = a + \big(b + s(k)\big),
 > $$
 >
-> using Def. §9.6(2) three times and the inductive hypothesis once. So it holds for $c = s(k)$.
+> using Def. §9.7(2) three times and the inductive hypothesis once. So it holds for $c = s(k)$.
 >
 > **(ii) Commutativity:** $a + b = b + a$. *Step 1:* $a + 1 = 1 + a$, by induction on $a$. For $a = 1$ it is trivial. If $k + 1 = 1 + k$, then $s(k) + 1 = s(s(k))$ and $1 + s(k) = s(1 + k) = s(k + 1) = s(s(k))$, so $s(k) + 1 = 1 + s(k)$.
 >

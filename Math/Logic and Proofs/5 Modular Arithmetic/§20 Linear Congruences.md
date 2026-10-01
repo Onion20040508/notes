@@ -208,9 +208,9 @@ Now a systematic method, which also proves Theorem §20.3. By definition, $ax \e
 The proof is constructive: the Euclidean algorithm produces $r$ and $s$, hence the solution.
 
 > [!example] Example §20.4: The Euclidean Algorithm Method
-> *Solve $290x \equiv 5 \pmod{357}$.* Solve $290x + 357y = 5$. The Euclidean algorithm writes each remainder as an integral combination of $357$ and $290$ (the quotients in brackets):
+> *Solve $290x \equiv 5 \pmod{357}$.* Solve $290x + 357y = 5$. The Euclidean algorithm writes each remainder as an integral combination of $357$ and $290$ (in brackets, minus the quotients, as Eccles writes them: each row is the row two above plus the row above times that row's bracket):
 >
-> | remainder | | combination | quotient |
+> | remainder | | combination | $-$quotient |
 > |---|---|---|---|
 > | $357$ | $=$ | $357 \times 1 + 290 \times 0$ | |
 > | $290$ | $=$ | $357 \times 0 + 290 \times 1$ | $(-1)$ |

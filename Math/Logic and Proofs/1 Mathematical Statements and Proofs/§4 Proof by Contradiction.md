@@ -160,7 +160,7 @@ To prove $P \Rightarrow (Q \vee R)$, assume $P$ and $\neg Q$, and deduce $R$: th
 
 *Uses:* [[§3 Proofs#^def-3-1|Def. §3.1]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]], [[§2 Implications#^ex-2-13|Ex. §2.13]]
 
-Proposition §4.4 is what we use to solve polynomial equations, and Proposition §4.5 to solve polynomial inequalities ([[§6 The Language of Set Theory|§6]]).
+Proposition §4.4 is what we use to solve polynomial equations, and Proposition §4.5 to solve polynomial inequalities ([[§6 The Language of Set Theory#^ex-6-10|Ex. §6.10]]).
 
 ## Exercises from the Homework
 
@@ -169,14 +169,16 @@ Proposition §4.4 is what we use to solve polynomial equations, and Proposition 
 >
 > **Solution.** (a) Suppose that $n^2$ is odd and, for contradiction, that $n$ is even, say $n = 2q$. Then $n^2 = 4q^2 = 2(2q^2)$ with $2q^2$ an integer, so $n^2$ is even, contradicting the fact that $n^2$ is odd (odd means not even). Hence $n$ is odd. Alternatively, the contrapositive "$n$ even $\Rightarrow$ $n^2$ even" is [[§3 Proofs#^ex-3-3|Ex. §3.3]](b).
 >
-> (b) We use that an integer is odd if and only if it has the form $2q + 1$ for an integer $q$ ([[§11 Properties of Finite Sets#^prop-11-11|Proposition §11.11]], Eccles's Proposition 11.3.4). Suppose that $n^2$ is even and, for contradiction, that $n$ is odd, say $n = 2q + 1$. Then $n^2 = 4q^2 + 4q + 1 = 2(2q^2 + 2q) + 1$. As $n^2$ is even, $n^2 = 2p$ for some integer $p$, so $1 = 2k$ with $k = p - 2q^2 - 2q$ an integer. This is impossible: $k \leq 0$ gives $2k \leq 0 < 1$, and $k \geq 1$ gives $2k \geq 2 > 1$. Hence $n$ is even.
+> (b) Suppose that $n^2$ is even, say $n^2 = 2b$, and, for contradiction, that $n$ is odd. Then $n \neq 0$, since $0 = 2 \times 0$ is even. If $n > 0$, then $n^2 + n$ is even ([[§5 The Induction Principle#^prop-5-2|Proposition §5.2]]), say $n^2 + n = 2a$, and so $n = (n^2 + n) - n^2 = 2(a - b)$ is even. If $n < 0$, then $m = -n$ is a positive integer with $m^2 = n^2$ even, so $m = 2c$ for an integer $c$ by the case just treated, and $n = 2(-c)$ is even. In every case $n$ is even, contradicting the assumption that $n$ is odd. Hence $n$ is even.
 >
 > *Source: HW1 (part (a))*
 > *Eccles: Exercises 4.2 and 4.3; Problems I Q7*
 
 ^ex-4-2
 
-*Uses:* [[§2 Implications#^def-2-7|Def. §2.7]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]], [[§3 Proofs#^ex-3-3|Ex. §3.3]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]], [[§11 Properties of Finite Sets#^prop-11-11|§11.11]]
+*Uses:* [[§2 Implications#^def-2-6|Def. §2.6]], [[§2 Implications#^def-2-7|Def. §2.7]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]], [[§3 Proofs#^ex-3-3|Ex. §3.3]], [[§5 The Induction Principle#^prop-5-2|§5.2]]
+
+Eccles's hint to Problems I Q7 instead assumes that the odd integers are exactly those of the form $2q + 1$, which is proved only later ([[§11 Properties of Finite Sets#^prop-11-11|Proposition §11.11]]); with that fact, (b) is the contrapositive of "$n = 2q + 1 \Rightarrow n^2 = 2p + 1$" ([[§7 Quantifiers#^ex-7-4|Ex. §7.4]]). The proof of (b) above needs only [[§5 The Induction Principle#^prop-5-2|Proposition §5.2]].
 
 > [!example] Example §4.3: Proving an "Or" Conclusion
 > If $a$ is a real number with $a^2 \geq 7a$, then $a \leq 0$ or $a \geq 7$.

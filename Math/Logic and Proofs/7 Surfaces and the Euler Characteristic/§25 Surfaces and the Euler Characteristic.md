@@ -79,8 +79,8 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 ^thm-25-2
 
 > [!remark] Remark: What Is Proved Here and What Is Taken on Trust
-> - *Proved:* all the counting — [[§25 Surfaces and the Euler Characteristic#^lem-25-1|Lemma §25.1]], and the cutting and gluing rules and formulas below, each of which compares two explicit decompositions.
-> - *Taken on trust:* [[§25 Surfaces and the Euler Characteristic#^thm-25-2|Theorem §25.2]]. Lemma §25.1 shows that $\chi$ survives subdividing, so the theorem would follow if any two decompositions of a surface had a common subdivision. That is true, but its proof needs real topology (every surface can be triangulated, and any two triangulations of it have subdivisions that match up — both due to Radó in the 1920s); the modern proof identifies $\chi$ with an alternating sum of ranks of homology groups. We also trust that the result of a gluing does not depend on which matching homeomorphism is used, only on the directions of the arrows.
+> - *Proved:* all the counting — [[§25 Surfaces and the Euler Characteristic#^lem-25-1|Lemma §25.1]], the cutting and gluing rules ([[§25 Surfaces and the Euler Characteristic#^prop-25-3|Propositions §25.3]], [[§25 Surfaces and the Euler Characteristic#^prop-25-4|§25.4]], [[§25 Surfaces and the Euler Characteristic#^cor-25-5|Corollary §25.5]]) and the formula of [[§25 Surfaces and the Euler Characteristic#^thm-25-6|Theorem §25.6]]. Each says how $V - E + F$ changes from one explicit decomposition to the next, so each computes $V - E + F$ for the particular decomposition that the construction produces.
+> - *Taken on trust:* [[§25 Surfaces and the Euler Characteristic#^thm-25-2|Theorem §25.2]]. It is what turns these counts into facts about surfaces: that *every* decomposition of the torus has $V - E + F = 0$, that the different methods in the examples below had to give the same answer, and that the result does not depend on where the disks are removed or in which order the steps are made. Lemma §25.1 shows that $\chi$ survives subdividing, so the theorem would follow if any two decompositions of a surface had a common subdivision. That is true, but its proof needs real topology (every surface can be triangulated, and any two triangulations of it have subdivisions that match up — both due to Radó in the 1920s); the modern proof identifies $\chi$ with an alternating sum of ranks of homology groups. We also trust that the result of a gluing does not depend on which matching homeomorphism is used, only on the directions of the arrows, and the claim in [[§25 Surfaces and the Euler Characteristic#^def-25-1|Def. §25.1]] that the glued space is a surface.
 > - *Also taken on trust:* the classification of surfaces ([[§25 Surfaces and the Euler Characteristic#^thm-25-7|Theorem §25.7]]).
 >
 > Granting Theorem §25.2, $\chi$ distinguishes surfaces: a sphere ($\chi = 2$) is not homeomorphic to a torus ($\chi = 0$), however the two are cut up.
@@ -221,7 +221,7 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 > - [[§28 Fundamental Group of Some Surfaces#^def-28-5|590 Def. §28.5]] (the double torus $\Sigma_2$, two tori glued along a removed disk, as in Method 1). Workhorse note: [[Double torus]].
 
 > [!example] Example §25.5: The Klein Bottle
-> The **Klein bottle** is obtained from a cylinder by gluing its two boundary circles to each other in the *opposite* direction from the torus; equivalently, it is the square with one pair of opposite sides glued with matching arrows and the other pair with reversed arrows (figure below). It cannot be built inside $\mathbb{R}^3$ without the surface passing through itself, and it has only one side. Its Euler characteristic is $0$.
+> The **Klein bottle** is obtained from a cylinder by gluing its two boundary circles to each other in the *opposite* direction from the torus; equivalently, it is the square with one pair of opposite sides arrowed in the same direction and the other pair arrowed in opposite directions, each pair glued so that the arrows match (figure below). It cannot be built inside $\mathbb{R}^3$ without the surface passing through itself, and it has only one side. Its Euler characteristic is $0$.
 >
 > *Method 1 (glue the ends of a cylinder).* Gluing the two boundary circles of a cylinder together, in either direction, does not change $\chi$ ([[§25 Surfaces and the Euler Characteristic#^prop-25-4|Proposition §25.4]]): $\chi_{\text{Klein bottle}} = \chi_{\text{cylinder}} = 0$.
 >
@@ -258,11 +258,11 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 ^thm-25-6
 
 > [!proof]+ Proof
-> Start from the sphere, $\chi = 2$ ([[§25 Surfaces and the Euler Characteristic#^ex-25-1|Example §25.1]]). Each of the $h$ handles lowers $\chi$ by $2$ ([[§25 Surfaces and the Euler Characteristic#^cor-25-5|Corollary §25.5]]), and each of the $b$ removed disks lowers it by $1$ ([[§25 Surfaces and the Euler Characteristic#^prop-25-3|Proposition §25.3]]). Formally, by induction on $h + b$: the case $h = b = 0$ is the sphere, and $\Sigma_{h,b}$ arises from $\Sigma_{h-1,b}$ by attaching a handle or from $\Sigma_{h,b-1}$ by removing a disk. Hence $\chi(\Sigma_{h,b}) = 2 - 2h - b$.
+> Start from the sphere, $\chi = 2$ ([[§25 Surfaces and the Euler Characteristic#^ex-25-1|Example §25.1]]). Each of the $h$ handles lowers $\chi$ by $2$ ([[§25 Surfaces and the Euler Characteristic#^cor-25-5|Corollary §25.5]]), and each of the $b$ removed disks lowers it by $1$ ([[§25 Surfaces and the Euler Characteristic#^prop-25-3|Proposition §25.3]]). Formally, by induction on $h + b$: the case $h = b = 0$ is the sphere, and $\Sigma_{h,b}$ arises from $\Sigma_{h-1,b}$ by attaching a handle or from $\Sigma_{h,b-1}$ by removing a disk. Hence $\chi(\Sigma_{h,b}) = 2 - 2h - b$ for the decomposition built in this way, and so, by [[§25 Surfaces and the Euler Characteristic#^thm-25-2|Theorem §25.2]], for every decomposition.
 
 ^pf-25-6
 
-*Uses:* [[§25 Surfaces and the Euler Characteristic#^ex-25-1|Ex. §25.1]], [[§25 Surfaces and the Euler Characteristic#^cor-25-5|§25.5]], [[§25 Surfaces and the Euler Characteristic#^prop-25-3|§25.3]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§25 Surfaces and the Euler Characteristic#^ex-25-1|Ex. §25.1]], [[§25 Surfaces and the Euler Characteristic#^cor-25-5|§25.5]], [[§25 Surfaces and the Euler Characteristic#^prop-25-3|§25.3]], [[§25 Surfaces and the Euler Characteristic#^thm-25-2|§25.2]], [[§5 The Induction Principle#^thm-5-3|§5.3]] (induction from $0$)
 
 | surface | $h$ | $b$ | $\chi = 2 - 2h - b$ |
 |---|---|---|---|

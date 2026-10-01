@@ -9,8 +9,8 @@ tags: [chapter, logic-and-proofs]
 
 *Eccles, Chapters 19–22.*
 
-**Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (1), [[· 3 Numbers and Counting|3 Numbers and Counting]] (6), [[· 4 Arithmetic|4 Arithmetic]] (9)
-**Used by:** [[· 6 Prime Numbers|6 Prime Numbers]] (6)
+**Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (7), [[· 2 Sets and Functions|2 Sets and Functions]] (5), [[· 3 Numbers and Counting|3 Numbers and Counting]] (7), [[· 4 Arithmetic|4 Arithmetic]] (9)
+**Used by:** [[· 6 Prime Numbers|6 Prime Numbers]] (7)
 **Developed further in (other subjects):** [[Single Variable Analysis]] (6), [[Group Theory]] (31), [[Measure Theory]] (2), [[Topology]] (1)
 
 ## Sections

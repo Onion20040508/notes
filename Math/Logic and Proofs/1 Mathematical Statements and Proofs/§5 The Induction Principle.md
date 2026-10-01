@@ -28,7 +28,7 @@ The rules of arithmetic and order do not capture the fact that every positive in
 > - In analysis, with $\mathbb{N} = \{1, 2, \ldots\}$: induction is Peano's axiom N5 ([[§1 The Set ℕ of Natural Numbers#^def-1-1|451 Def. §1.1]]), from which the principle is derived ([[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 Thm. §1.1]]).
 
 > [!remark] Remark: Why Induction Is an Axiom
-> The integer $k + 1$ is the **successor** of $k$, and starting from $1$ and taking successors repeatedly we eventually reach any positive integer: from $P(1)$ and $P(1) \Rightarrow P(2)$ we get $P(2)$, then $P(2) \Rightarrow P(3)$ gives $P(3)$, and so on. Think of the positive integers as a line of dominoes: the inductive step says each domino knocks over the next, the base case that the first one falls. (The analogy is imperfect: dominoes take time to fall, while implication is outside time.) This seems obvious because our idea of the integers includes more than the facts that they can be added, multiplied and compared; the induction principle is exactly that extra content, an axiom in addition to the algebraic and order axioms ([[§2 Implications#^def-2-8|Def. §2.8]], [[§3 Proofs#^def-3-1|Def. §3.1]]). Checking cases is never a proof: the Goldbach conjecture ([[§1 The Language of Mathematics#^ex-1-1|Ex. §1.1]]) has been verified in an enormous number of cases and is still unproved. The integers are characterized as an ordered integral domain whose positive elements satisfy induction, and the positive integers alone by Peano's axioms, one of which is induction ([[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]]): "the essence of the natural number concept is … closure under the successor operation" (Dedekind, 1888).
+> The integer $k + 1$ is the **successor** of $k$, and starting from $1$ and taking successors repeatedly we eventually reach any positive integer: from $P(1)$ and $P(1) \Rightarrow P(2)$ we get $P(2)$, then $P(2) \Rightarrow P(3)$ gives $P(3)$, and so on. Think of the positive integers as a line of dominoes: the inductive step says each domino knocks over the next, the base case that the first one falls. (The analogy is imperfect: dominoes take time to fall, while implication is outside time.) This seems obvious because our idea of the integers includes more than the facts that they can be added, multiplied and compared; the induction principle is exactly that extra content, an axiom in addition to the algebraic and order axioms ([[§2 Implications#^def-2-8|Def. §2.8]], [[§3 Proofs#^def-3-1|Def. §3.1]]). Checking cases is never a proof: the Goldbach conjecture ([[§1 The Language of Mathematics#^ex-1-1|Ex. §1.1]]) has been verified in an enormous number of cases and is still unproved. The integers are characterized as an ordered integral domain whose positive elements satisfy induction, and the positive integers alone by Peano's axioms, one of which is induction ([[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]], axiom 3): "the essence of the natural number concept is … closure under the successor operation" (Dedekind, 1888). In the language of sets the principle says that a subset of $\mathbb{Z}^+$ which contains $1$ and contains $k + 1$ whenever it contains $k$ is the whole of $\mathbb{Z}^+$; this **set form** is [[§7 Quantifiers#^def-7-4|Def. §7.4]], where it is shown to be equivalent to the version above.
 
 ^rem-5-1
 
@@ -225,7 +225,7 @@ Inductive definitions are implicit in many familiar functions of the non-negativ
 
 ^def-5-4
 
-Even addition and multiplication of positive integers can be defined inductively from the successor operation ([[§9 Injections, Surjections and Bijections|§9]]).
+Even addition and multiplication of positive integers can be defined inductively from the successor operation ([[§9 Injections, Surjections and Bijections#^def-9-7|Def. §9.7]]).
 
 ## 5.4 The Strong Induction Principle
 
@@ -256,32 +256,38 @@ Sometimes $P(k + 1)$ follows not from $P(k)$ alone but from $P(k)$ together with
 > [!remark]- Connections
 > - The same device (strengthening $P_n$ to "for all $k \leq n$") in analysis: [[§1 The Set ℕ of Natural Numbers#^ex-1-2|451 Ex. §1.2]] and the remark after it.
 
-The template is that of [[§5 The Induction Principle#^rem-5-2|the remark above]], with inductive hypothesis "$P(n)$ is true for all positive integers $n \leq k$". Apart from the well-ordering principle below, Eccles next needs the method in [[§23 The Sequence of Prime Numbers|§23]] (every integer greater than $1$ is a product of primes).
+The template is that of [[§5 The Induction Principle#^rem-5-2|the remark above]], with inductive hypothesis "$P(n)$ is true for all positive integers $n \leq k$". Apart from the well-ordering principle below, Eccles next needs the method in [[§23 The Sequence of Prime Numbers#^prop-23-1|Proposition §23.1]] (every integer greater than $1$ is a product of primes).
 
 > [!theorem] Corollary §5.7: The Well-Ordering Principle
-> Every non-empty set of positive integers has a least element.
+> 1. Every non-empty set of positive integers has a least element.
+> 2. More generally, for any integer $n_0$, every non-empty set of integers $n \geq n_0$ has a least element; in particular ($n_0 = 0$) every non-empty set of non-negative integers has one.
+>
+> Here a **least element** of $A$ is an $m \in A$ with $m \leq a$ for every $a \in A$.
 >
 > *Eccles: Example 11.2.2(c), Exercise 11.6*
+> *Source: standard (part 2)*
 
 ^cor-5-7
 
 > [!proof]+ Proof
-> We prove the contrapositive: if a set $A$ of positive integers has no least element, then $A$ is empty. Let $P(n)$ be the statement "$n \notin A$"; we use strong induction ([[§5 The Induction Principle#^thm-5-6|Theorem §5.6]]).
+> (1) We prove the contrapositive: if a set $A$ of positive integers has no least element, then $A$ is empty. Let $P(n)$ be the statement "$n \notin A$"; we use strong induction ([[§5 The Induction Principle#^thm-5-6|Theorem §5.6]]).
 >
 > *Base case.* Every positive integer is $\geq 1$ ([[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]), so if $1 \in A$ it would be the least element of $A$. Hence $1 \notin A$.
 >
-> *Inductive step.* Suppose $1, \ldots, k \notin A$. If $k + 1 \in A$, then every $a \in A$ is a positive integer different from $1, \ldots, k$, so $a > k$ and hence $a \geq k + 1$ ([[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]); then $k + 1$ would be the least element of $A$. Hence $k + 1 \notin A$.
+> *Inductive step.* Suppose that $n \notin A$ for every positive integer $n \leq k$. If $k + 1 \in A$, let $a \in A$. Then $a$ is a positive integer, and $a \leq k$ is impossible (such integers are not in $A$), so $a > k$ by trichotomy and hence $a \geq k + 1$ ([[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]). Then $k + 1$ would be the least element of $A$. Hence $k + 1 \notin A$.
 >
 > *Conclusion.* No positive integer lies in $A$, so $A = \varnothing$.
+>
+> (2) Let $A$ be a non-empty set of integers $n \geq n_0$, and let $B$ be the set of the integers $a - n_0 + 1$ for $a \in A$. Each of them is $\geq 1$ (addition law), so $B$ is a non-empty set of positive integers, and by (1) it has a least element, $a_0 - n_0 + 1$ say, with $a_0 \in A$. For every $a \in A$, $a - n_0 + 1 \geq a_0 - n_0 + 1$, so $a \geq a_0$. Thus $a_0$ is the least element of $A$.
 
 ^pf-5-7
 
-*Uses:* [[§5 The Induction Principle#^thm-5-6|§5.6]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]
+*Uses:* [[§5 The Induction Principle#^thm-5-6|§5.6]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]], [[§3 Proofs#^def-3-1|Def. §3.1]]
 
 > [!remark]- Connections
 > - The same proof in analysis: [[§1 The Set ℕ of Natural Numbers#^thm-1-2|451 Thm. §1.2]].
 
-Conversely, the induction principle can be deduced from well-ordering (Eccles, Problems III Q15; compare the second proof in [[§5 The Induction Principle#^ex-5-9|Ex. §5.9]]), so the two are equivalent. Arguments of the form "take the least counterexample" are applications of well-ordering. The positive reals have no such property ([[§4 Proof by Contradiction#^ex-4-7|Ex. §4.7]]); in [[§11 Properties of Finite Sets|§11]] well-ordering reappears among the properties of maxima and minima.
+Conversely, the induction principle can be deduced from well-ordering (Eccles, Problems III Q15; compare the second proof in [[§5 The Induction Principle#^ex-5-9|Ex. §5.9]]), so the two are equivalent. Arguments of the form "take the least counterexample" are applications of well-ordering. The positive reals have no such property ([[§4 Proof by Contradiction#^ex-4-7|Ex. §4.7]]); in [[§11 Properties of Finite Sets#^ex-11-3|Ex. §11.3]](c) well-ordering reappears among the properties of maxima and minima.
 
 > [!definition] Definition §5.5: Fibonacci Numbers
 > The **Fibonacci numbers** $u_n$, $n \in \mathbb{Z}^+$, are defined inductively by
@@ -329,7 +335,7 @@ Conversely, the induction principle can be deduced from well-ordering (Eccles, P
 
 *Uses:* [[§5 The Induction Principle#^thm-5-6|§5.6]], [[§5 The Induction Principle#^def-5-5|Def. §5.5]], [[§5 The Induction Principle#^ex-5-5|Ex. §5.5]]
 
-It is remarkable that a formula for these integers involves $\sqrt5$, which is not even rational ([[§13 Number Systems|§13]]). The ratio $u_{n+1}/u_n$ tends to $\alpha$, the **golden ratio** (since $|\beta| < 1$).
+It is remarkable that a formula for these integers involves $\sqrt5$, which is not even rational (the proof for $\sqrt2$ in [[§13 Number Systems#^thm-13-4|Theorem §13.4]] adapts to it, and [[§23 The Sequence of Prime Numbers#^ex-23-6|Ex. §23.6]] covers $\sqrt p$ for every prime $p$). The ratio $u_{n+1}/u_n$ tends to $\alpha$, the **golden ratio** (since $|\beta| < 1$).
 
 ## Exercises from the Homework
 
@@ -427,7 +433,7 @@ It is remarkable that a formula for these integers involves $\sqrt5$, which is n
 > *Source: HW1*
 > *Eccles: Exercise 5.7*
 >
-> *In (iii) the HW1 solution's induction on $m$ uses $(x^m \cdot x)^n = (x^{m+1})^n = x^{(m+1)n}$, which is the statement being proved; induction on $n$ alone, using (ii), avoids this. (The "power rule" $x^n \cdot x = x^{n+1}$ proved there separately is [[§5 The Induction Principle#^def-5-3|Def. §5.3]] together with commutativity.)*
+> *In (iii) the first part of the HW1 solution, an induction on $m$, uses $(x^m \cdot x)^n = (x^{m+1})^n = x^{(m+1)n}$, which is the statement being proved; its second part, the induction on $n$ using (ii) given above, is valid on its own. (The "power rule" $x^n \cdot x = x^{n+1}$ proved there separately is [[§5 The Induction Principle#^def-5-3|Def. §5.3]] together with commutativity.)*
 
 ^ex-5-5
 
@@ -519,6 +525,8 @@ It is remarkable that a formula for these integers involves $\sqrt5$, which is n
 > [!example] Example §5.9: Strong Induction for Subsets
 > Reformulate the strong induction principle as a method of proving that a subset of $\mathbb{Z}^+$ is the whole set, in the manner of the set version of induction ([[§7 Quantifiers#^def-7-4|Def. §7.4]], Eccles's Axiom 7.5.1).
 >
+> *(Forward reference: this is Eccles's Exercise 7.9, placed here with strong induction. It is phrased in the language of sets of [[§6 The Language of Set Theory|§6]] and imitates the set form of induction in §7, but the solution uses only results of this section.)*
+>
 > **Solution.** *Let $A$ be a subset of $\mathbb{Z}^+$ such that (i) $1 \in A$, and (ii) for every positive integer $k$, if every positive integer $n \leq k$ lies in $A$ (that is, $\{1, \ldots, k\} \subseteq A$), then $k + 1 \in A$. Then $A = \mathbb{Z}^+$.*
 >
 > This is [[§5 The Induction Principle#^thm-5-6|Theorem §5.6]] applied to the statement $P(n)$: "$n \in A$". Conversely, Theorem §5.6 is recovered by applying it to $A = \{n \in \mathbb{Z}^+ \mid P(n)\}$.
@@ -528,7 +536,7 @@ It is remarkable that a formula for these integers involves $\sqrt5$, which is n
 > *Source: HW3*
 > *Eccles: Exercise 7.9*
 >
-> *The HW3 solution writes "$F$ has no least element" as "for all $x \in F$ there is no $y \in F$ with $y \leq x$", which fails for $y = x$; the correct form is "for every $x \in F$ there is $y \in F$ with $y < x$" ([[§7 Quantifiers|§7]]), and the argument is completed by the well-ordering principle as above.*
+> *The HW3 solution writes "$F$ has no least element" as "for all $x \in F$ there is no $y \in F$ with $y \leq x$", which fails for $y = x$; the correct form is "for every $x \in F$ there is $y \in F$ with $y < x$" ([[§7 Quantifiers#^thm-7-2|Theorem §7.2]]), and the argument is completed by the well-ordering principle as above.*
 
 ^ex-5-9
 

@@ -10,9 +10,9 @@ tags: [logic-and-proofs, mat250, extension]
 ← [[§17 Consequences of the Euclidean Algorithm]] · ↑ [[· 4 Arithmetic]] · [[§19 Congruence of Integers]] →
 
 *Eccles, Chapter 18 (with Problems IV, Q12).*
-★ *Not in the MAT 250 course record (no homework or syllabus entry for this chapter); included from Eccles because it is the direct application of the Bézout coefficients computed in HW7 ([[§17 Consequences of the Euclidean Algorithm|§17]]).*
+★ *Not in the MAT 250 course record (no homework or syllabus entry for this chapter); included from Eccles because it is the direct application of the Bézout coefficients computed in HW7 ([[§17 Consequences of the Euclidean Algorithm#^ex-17-2|Example §17.2]]).*
 
-An ancient problem, solved completely by Brahmagupta in the seventh century: **given integers $a, b, c$, find all integers $m, n$ with $am + bn = c$.** The answer has two parts. A solution exists exactly when $\gcd(a, b) \mid c$; necessity is the divisibility argument already used in [[§4 Proof by Contradiction|§4]], and sufficiency is Bézout ([[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]). If one solution exists, all of them are that solution plus the solutions of the *homogeneous* equation $am + bn = 0$, and those are found with [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]].
+An ancient problem, solved completely by Brahmagupta in the seventh century: **given integers $a, b, c$, find all integers $m, n$ with $am + bn = c$.** The answer has two parts. A solution exists exactly when $\gcd(a, b) \mid c$; necessity is the divisibility argument already used in [[§4 Proof by Contradiction#^prop-4-1|Proposition §4.1]], and sufficiency is Bézout ([[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]). If one solution exists, all of them are that solution plus the solutions of the *homogeneous* equation $am + bn = 0$, and those are found with [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]].
 
 ## 18.1 Diophantine Equations
 
@@ -30,7 +30,7 @@ An ancient problem, solved completely by Brahmagupta in the seventh century: **g
 ^def-18-1
 
 > [!remark]- Remark: History
-> The name honours Diophantus (third century A.D.), whose *Arithmetica* is the high point of Greek number theory; he was usually content with one positive solution. In 1637 Fermat wrote in the margin of his copy that $x^n + y^n = z^n$ has no solutions in positive integers for $n \ge 3$, "a truly marvellous demonstration of which this margin is too narrow to contain". Fermat proved the case $n = 4$ and Euler (completed by Legendre) the case $n = 3$. The general case, Fermat's Last Theorem, was proved by Andrew Wiles in 1994. Closer to home, [[§13 Number Systems|§13]]'s theorem that $\sqrt2$ is irrational (Eccles Theorem 13.2.1) is a statement about a diophantine equation: the only solution of $m^2 = 2n^2$ is $m = n = 0$.
+> The name honours Diophantus (third century A.D.), whose *Arithmetica* is the high point of Greek number theory; he was usually content with one positive solution. In 1637 Fermat wrote in the margin of his copy that $x^n + y^n = z^n$ has no solutions in positive integers for $n \ge 3$, "a truly marvellous demonstration of which this margin is too narrow to contain". Fermat proved the case $n = 4$ and Euler (completed by Legendre) the case $n = 3$. The general case, Fermat's Last Theorem, was proved by Andrew Wiles in 1994. Closer to home, the theorem that $\sqrt2$ is irrational ([[§13 Number Systems#^thm-13-4|Theorem §13.4]]) is a statement about a diophantine equation: the only solution of $m^2 = 2n^2$ is $m = n = 0$.
 
 ^rem-18-1
 
@@ -64,7 +64,7 @@ An ancient problem, solved completely by Brahmagupta in the seventh century: **g
 
 *Uses:* [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]]
 
-Positivity is not used: the same proof works for any integers $a, b$, not both zero, and any $c$ (Eccles Exercise 18.2 does a case with a minus sign; see [[§18★ Linear Diophantine Equations#^ex-18-4|Example §18.4]]). For instance, Eccles Proposition 4.1.1 ([[§4 Proof by Contradiction|§4]]) showed that $14m + 20n = 101$ has no integer solutions, because $2$ divides $14m + 20n$ but not $101$. In the language of the theorem, $\gcd(14, 20) = 2 \nmid 101$.
+Positivity is not used: the same proof works for any integers $a, b$, not both zero, and any $c$ (Eccles Exercise 18.2 does a case with a minus sign; see [[§18★ Linear Diophantine Equations#^ex-18-4|Example §18.4]]). For instance, [[§4 Proof by Contradiction#^prop-4-1|Proposition §4.1]] (Eccles Proposition 4.1.1) showed that $14m + 20n = 101$ has no integer solutions, because $2$ divides $14m + 20n$ but not $101$. In the language of the theorem, $\gcd(14, 20) = 2 \nmid 101$.
 
 > [!example] Example §18.1: One Solution of 140m + 63n = 35
 > Applying the Euclidean algorithm to $140$ and $63$, and carrying the multipliers along as in [[§17 Consequences of the Euclidean Algorithm#^ex-17-1|Example §17.1]]:
@@ -180,6 +180,8 @@ Once (18.1) has one solution, all its solutions come from solving the associated
 
 ^pf-18-3
 
+*Uses:* [[§2 Implications#^def-2-8|Def. §2.8]] (algebraic properties)
+
 Putting the pieces together gives the complete answer to the problem. Eccles carries it out in examples; here it is in general form.
 
 > [!theorem] Corollary §18.4: All Solutions of am + bn = c
@@ -208,14 +210,14 @@ Putting the pieces together gives the complete answer to the problem. Eccles car
 
 ^pf-18-4
 
-*Uses:* [[§11 Properties of Finite Sets#^prop-11-10|§11.10]], [[§18★ Linear Diophantine Equations#^thm-18-1|§18.1]], [[§18★ Linear Diophantine Equations#^prop-18-2|§18.2]], [[§18★ Linear Diophantine Equations#^prop-18-3|§18.3]]
+*Uses:* [[§11 Properties of Finite Sets#^prop-11-10|§11.10]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]], [[§17 Consequences of the Euclidean Algorithm#^prop-17-3|§17.3]], [[§18★ Linear Diophantine Equations#^thm-18-1|§18.1]], [[§18★ Linear Diophantine Equations#^prop-18-2|§18.2]], [[§18★ Linear Diophantine Equations#^prop-18-3|§18.3]]
 
 ![[m250-18-1.svg]]
 *The solutions of $3m + 5n = 7$ (red) are the lattice points on a line. Here $\gcd(3, 5) = 1$, a particular solution is $(4, -1)$ (blue arrow), and consecutive solutions differ by $(b', -a') = (5, -3)$ (green). The homogeneous solutions $(5q, -3q)$ (black) lie on the parallel line through the origin. The red line is that line shifted by $(4, -1)$, which is Proposition §18.3. No lattice point of the red line lies between two consecutive red dots: that is the coprimality in Proposition §18.2.*
 
 > [!remark]- Connections
 > - The same structure as for linear equations: the solution set is a translate $(m_0, n_0) + H$ of the solution set $H$ of the homogeneous equation, cf. [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR Def. 3.97]] (translate), where solvable inhomogeneous systems have the null space as $H$. Here $H = \{(b'q, -a'q)\}$ is a subgroup of $\Z^2$ rather than a subspace.
-> - The case $c = 1$ with $b = n$: $am + nk = 1$ is solvable iff $\gcd(a, n) = 1$, which is [[§8 Invertibility and Unit Groups#^prop-8-1|493 Prop. §8.1]] (inverses modulo $n$). Linear congruences return in [[§20 Linear Congruences|§20]].
+> - The case $c = 1$ with $b = n$: $am + nk = 1$ is solvable iff $\gcd(a, n) = 1$, which is [[§8 Invertibility and Unit Groups#^prop-8-1|493 Prop. §8.1]] (inverses modulo $n$). Linear congruences return in [[§20 Linear Congruences#^thm-20-4|Theorem §20.4]], whose solvability condition is this theorem read modulo $n$ ([[§20 Linear Congruences#^prop-20-5|Proposition §20.5]]).
 
 > [!example] Example §18.3: All Solutions of 140m + 63n = 35
 > From [[§18★ Linear Diophantine Equations#^ex-18-1|Example §18.1]] the particular solution $(-20, 45)$, so by [[§18★ Linear Diophantine Equations#^prop-18-3|Proposition §18.3]] and [[§18★ Linear Diophantine Equations#^ex-18-2|Example §18.2]],
@@ -233,11 +235,13 @@ Putting the pieces together gives the complete answer to the problem. Eccles car
 > | $m$ | $-38$ | $-29$ | $-20$ | $-11$ | $-2$ | $7$ |
 > | $n$ | $85$ | $65$ | $45$ | $25$ | $5$ | $-15$ |
 >
-> Starting instead from the particular solution $(-2, 5)$ gives $(m, n) = (-2 + 9q, 5 - 20q)$. This is the same set, with $q$ shifted by $2$; a solution set does not depend on which particular solution is used to describe it. (Eccles returns to this equation in Example 20.2.4 with a method using congruences, [[§20 Linear Congruences|§20]].)
+> Starting instead from the particular solution $(-2, 5)$ gives $(m, n) = (-2 + 9q, 5 - 20q)$. This is the same set, with $q$ shifted by $2$; a solution set does not depend on which particular solution is used to describe it.
 >
 > *Eccles: Example 18.4.2*
 
 ^ex-18-3
+
+Eccles returns to this equation in Example 20.2.4 with a method using congruences: [[§20 Linear Congruences#^ex-20-6|Example §20.6]].
 
 > [!example] Example §18.4: Using the HW7 Coefficients
 > **$7684m + 4148n = 272$.** In HW7 ([[§17 Consequences of the Euclidean Algorithm#^ex-17-2|Example §17.2]]) we found $\gcd(7684, 4148) = 68$ and $7684 \times 27 + 4148 \times (-50) = 68$. Since $272 = 4 \times 68$, solutions exist, and multiplying by $4$ gives the particular solution $(108, -200)$. With $a' = 7684/68 = 113$ and $b' = 4148/68 = 61$, [[§18★ Linear Diophantine Equations#^cor-18-4|Corollary §18.4]] gives all solutions:

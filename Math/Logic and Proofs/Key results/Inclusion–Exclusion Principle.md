@@ -11,6 +11,7 @@ tags: [logic-and-proofs, hub]
 - [[§10 Counting#^thm-10-9|Theorem §10.9: The Inclusion–Exclusion Principle]], in [[§10 Counting]]
 
 ## Its proof uses
+- [[§5 The Induction Principle#^def-5-1|Definition §5.1: The Induction Principle]]
 - [[§6 The Language of Set Theory#^thm-6-3|Theorem §6.3: The Laws of the Algebra of Sets]]
 - [[§10 Counting#^prop-10-7|Proposition §10.7: Inclusion–Exclusion for Two Sets]]
 

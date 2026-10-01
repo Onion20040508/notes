@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 10 and Problems III (Q4) · MAT 200 lecture (syllabus week 14).*
 
-Counting a set means pairing its elements off, one by one, with $1, 2, \ldots, n$, which is to say constructing a bijection from $\{1, \ldots, n\}$ to the set. This section makes that the definition of the number of elements, proves that the number does not depend on the order of counting (using a lemma proved at the start of [[§11 Properties of Finite Sets|§11]]), and derives the two basic counting principles (disjoint unions and products) and the inclusion–exclusion principle.
+Counting a set means pairing its elements off, one by one, with $1, 2, \ldots, n$, which is to say constructing a bijection from $\{1, \ldots, n\}$ to the set. This section makes that the definition of the number of elements, proves that the number does not depend on the order of counting (using a lemma proved at the start of §11: [[§11 Properties of Finite Sets#^pf-10-2|proof of Lemma §10.2]]), and derives the two basic counting principles (disjoint unions and products) and the inclusion–exclusion principle.
 
 ## 10.1 Counting Finite Sets
 
@@ -28,7 +28,7 @@ Counting a set means pairing its elements off, one by one, with $1, 2, \ldots, n
 
 ^def-10-1
 
-The standard set $\N_n$ starts at $1$ (it is Eccles's notation; it is not a subset of $\N = \{0, 1, 2, \ldots\}$ starting at $0$). Counting $X$ in a particular order defines such a bijection: $f(1)$ is the element counted first, $f(2)$ the element counted second, and so on. Writing $x_i = f(i)$ lists $X = \{x_1, x_2, \ldots, x_n\}$, each element exactly once: $f$ is injective because nothing is counted twice and surjective because everything is counted.
+The standard set $\N_n$ is Eccles's notation and starts at $1$: it is a subset of $\Z^+$, and not the first $n$ elements $\{0, 1, \ldots, n - 1\}$ of $\N = \{0, 1, 2, \ldots\}$ ([[§1 The Language of Mathematics#^def-1-1|Definition §1.1]]). Counting $X$ in a particular order defines such a bijection: $f(1)$ is the element counted first, $f(2)$ the element counted second, and so on. Writing $x_i = f(i)$ lists $X = \{x_1, x_2, \ldots, x_n\}$, each element exactly once: $f$ is injective because nothing is counted twice and surjective because everything is counted.
 
 > [!example] Example §10.1: Two Ways of Counting
 > (a) $A = \{ k \in \Z \mid 25 < k \le 30 \}$ has $|A| = 5$. Listing it as $\{29, 26, 30, 27, 28\}$ is the bijection $f : \N_5 \to A$
@@ -99,7 +99,7 @@ The lemma is proved by induction on $n$ at the start of the next section: [[§11
 *Uses:* [[§10 Counting#^def-10-1|Def. §10.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]]
 
 > [!remark]- Connections
-> - The same statement in 451: [[§2 The Set ℚ of Rational Numbers#^thm-2-3|451 Thm. §2.3]]; for infinite sets it becomes the definition of "same cardinality" ([[§14 Counting Infinite Sets|§14]]).
+> - The same statement in 451: [[§2 The Set ℚ of Rational Numbers#^thm-2-3|451 Thm. §2.3]]; for infinite sets it becomes the definition of "same cardinality" ([[§14 Counting Infinite Sets#^def-14-1|Def. §14.1]], [[§14 Counting Infinite Sets#^def-14-3|Def. §14.3]]).
 
 ## 10.2 Two Basic Counting Principles
 
@@ -151,7 +151,7 @@ The conclusion is an "and" statement, but the first part follows from the second
 
 ^pf-10-5
 
-*Uses:* [[§10 Counting#^thm-10-4|§10.4]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§10 Counting#^thm-10-4|§10.4]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 > [!theorem] Theorem §10.6: The Multiplication Principle
 > Let $X$ and $Y$ be finite sets with $|X| = n$ and $|Y| = m$. Then the Cartesian product $X \times Y$ is finite and $|X \times Y| = mn$.
@@ -176,7 +176,7 @@ The conclusion is an "and" statement, but the first part follows from the second
 > [!example] Example §10.2: Ordered and Unordered Pairs
 > (a) By the multiplication principle, $\N_9 \times \N_9$, the set of ordered pairs of positive integers at most $9$, has $9 \times 9 = 81$ elements.
 >
-> (b) The **diagonal** $\Delta(\N_9) = \{(n, n) \mid n \in \N_9\}$ has $9$ elements, by the bijection $n \mapsto (n, n)$ from $\N_9$. Its complement $\N_9 \times \N_9 - \Delta(\N_9)$ is finite (a subset of a finite set, [[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4]]), and $\N_9 \times \N_9$ is the disjoint union of the two, so by the addition principle
+> (b) The **diagonal** $\Delta(\N_9) = \{(n, n) \mid n \in \N_9\}$ has $9$ elements, by the bijection $n \mapsto (n, n)$ from $\N_9$. Its complement $\N_9 \times \N_9 - \Delta(\N_9)$ is finite (a subset of a finite set, [[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4]], proved in §11), and $\N_9 \times \N_9$ is the disjoint union of the two, so by the addition principle
 >
 > $$
 > 81 = |\Delta(\N_9)| + |\N_9 \times \N_9 - \Delta(\N_9)| = 9 + |\N_9 \times \N_9 - \Delta(\N_9)|.
@@ -206,7 +206,7 @@ For sets that are not disjoint, adding the cardinalities counts the common eleme
 ^prop-10-7
 
 > [!proof]+ Proof
-> The sets $X - Y$, $Y - X$ and $X \cap Y$ are subsets of finite sets, hence finite ([[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4]]), and $X \cup Y = (X - Y) \cup (Y - X) \cup (X \cap Y)$ is a union of pairwise disjoint sets ([[§6 The Language of Set Theory#^prop-6-2|Proposition §6.2]]). By Corollary [[§10 Counting#^cor-10-5|§10.5]],
+> The sets $X - Y$, $Y - X$ and $X \cap Y$ are subsets of finite sets, hence finite ([[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4]], proved in §11 from the addition principle, without this proposition), and $X \cup Y = (X - Y) \cup (Y - X) \cup (X \cap Y)$ is a union of pairwise disjoint sets ([[§6 The Language of Set Theory#^prop-6-2|Proposition §6.2]]). By Corollary [[§10 Counting#^cor-10-5|§10.5]],
 >
 > $$
 > |X \cup Y| = |X - Y| + |Y - X| + |X \cap Y|.
@@ -297,9 +297,9 @@ The general principle is proved by induction, with the three-set proof as the mo
 
 ^pf-10-9
 
-*Uses:* [[§10 Counting#^prop-10-7|§10.7]], [[§5 The Induction Principle|§5]], [[§6 The Language of Set Theory#^thm-6-3|§6.3]] (distributive law)
+*Uses:* [[§10 Counting#^prop-10-7|§10.7]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§6 The Language of Set Theory#^thm-6-3|§6.3]] (distributive law)
 
-For $n = 2$ and $n = 3$ this is Propositions [[§10 Counting#^prop-10-7|§10.7]] and [[§10 Counting#^prop-10-8|§10.8]]. The figure's pattern persists: an element lying in exactly $r$ of the sets is counted $\binom{r}{1} - \binom{r}{2} + \cdots + (-1)^{r-1}\binom{r}{r} = 1$ times, by the binomial theorem ([[§12★ Counting Functions and Subsets|§12★]]) applied to $(1 - 1)^r = 0$.
+For $n = 2$ and $n = 3$ this is Propositions [[§10 Counting#^prop-10-7|§10.7]] and [[§10 Counting#^prop-10-8|§10.8]]. The figure's pattern persists: an element lying in exactly $r$ of the sets is counted $\binom{r}{1} - \binom{r}{2} + \cdots + (-1)^{r-1}\binom{r}{r} = 1$ times, by the binomial theorem ([[§12★ Counting Functions and Subsets#^thm-12-10|Theorem §12.10]], proved in §12★; see [[§12★ Counting Functions and Subsets#^cor-12-11|Corollary §12.11]]) applied to $(1 - 1)^r = 0$.
 
 > [!example] Example §10.3: Tiles
 > Each of $144$ tiles is triangular or square, red or blue, wooden or plastic. There are $68$ wooden, $69$ red and $75$ triangular tiles; $36$ are red and wooden, $40$ triangular and wooden, $38$ red and triangular, and $23$ red, wooden and triangular. How many tiles are blue, plastic and square?

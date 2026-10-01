@@ -317,7 +317,7 @@ The proof contains the general principle for defining functions on a quotient se
 
 ## 22.4 Construction of the Rational Numbers
 
-Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse it and *define* $\mathbb{Q}$ to be the quotient set, so that a rational number simply *is* a class of fractions; the temporary notation of [[§13 Number Systems#^def-13-1|Definition §13.1]] for "the fraction $a/b$ represents $q$" anticipated $q = [(a, b)]$. This is the construction carried out in the student's Rational Number Project. It uses only the following properties of $\mathbb{Z}$: addition and multiplication are commutative and associative, multiplication distributes over addition, $0$ and $1$ are identities, every integer has a negative, and there are **no zero divisors**: $ab = 0 \Rightarrow a = 0$ or $b = 0$, equivalently, $cx = cy$ with $c \neq 0$ implies $x = y$ ([[§2 Implications#^def-2-8|Def. §2.8]], Eccles Properties 2.3.1).
+Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse it and *define* $\mathbb{Q}$ to be the quotient set, so that a rational number simply *is* a class of fractions; the temporary notation of [[§13 Number Systems#^def-13-1|Definition §13.1]] for "the fraction $a/b$ represents $q$" anticipated $q = [(a, b)]$. This is the construction carried out in the student's Rational Number Project, whose motivation is that $\mathbb{Z}$ is not closed under division ($6 \div 4 \notin \mathbb{Z}$): we want a number system extending $\mathbb{Z}$, with the same laws of arithmetic, in which $bx = a$ can be solved for every $b \neq 0$ ([[§22 Partitions and Equivalence Relations#^prop-22-10|Proposition §22.10]]). It uses only the following properties of $\mathbb{Z}$: addition and multiplication are commutative and associative, multiplication distributes over addition, $0$ and $1$ are identities, every integer has a negative, and there are **no zero divisors**: $ab = 0 \Rightarrow a = 0$ or $b = 0$, equivalently, $cx = cy$ with $c \neq 0$ implies $x = y$ ([[§2 Implications#^def-2-8|Def. §2.8]], Eccles Properties 2.3.1; [[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]]). The Project's list of properties of $\mathbb{Z}$ (its §1.1) contains all of these except the last; the last is what makes $bd \neq 0$ whenever $b, d \neq 0$, so that sums and products of fractions are again fractions.
 
 > [!definition] Definition §22.5: The Set of Fractions and Its Relation
 > Let
@@ -363,7 +363,7 @@ Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse
 
 ^pf-22-6
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-5|Def. §22.5]], [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-5|Def. §22.5]], [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]] (no zero divisors)
 
 > [!definition] Definition §22.6: The Rational Numbers
 > The set of **rational numbers** is the quotient set
@@ -373,6 +373,8 @@ Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse
 > $$
 >
 > We write $\dfrac{a}{b}$ or $a/b$ for the class $[(a, b)]$. By Theorem [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], $\ a/b = c/d \iff ad = bc$, and each rational is a single class: all the fractions representing it.
+>
+> (The Project first names each class by a symbol $q = f([(a, b)])$ through a map $f$ that sends different classes to different symbols, and calls these symbols the rational numbers. Such an $f$ is a bijection from $S/{\sim}$ onto its image, so nothing changes if the classes themselves are taken as the rational numbers, as here.)
 >
 > *Source: Rational Number Project §2.3–2.5*
 > *Eccles: §22.3 (after Example 22.3.5)*
@@ -397,7 +399,7 @@ Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse
 
 ^pf-22-7
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-6|Def. §22.6]], [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-6|Def. §22.6]], [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]]
 
 > [!definition] Definition §22.7: Addition and Multiplication of Rationals
 > For $a/b, c/d \in \mathbb{Q}$ define
@@ -414,7 +416,7 @@ Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse
 ^def-22-7
 
 > [!remark] Remark: Why These Formulas
-> (1) *They are forced by what $a/b$ should mean.* If $q_1$ is to satisfy $b q_1 = a$ and $q_2$ to satisfy $d q_2 = c$, then $bd\,(q_1 + q_2) = ad + bc$ and $bd\, q_1 q_2 = ac$, so $q_1 + q_2$ "is" $(ad + bc)/bd$ and $q_1 q_2$ "is" $ac/bd$ — the computation of Eccles §13.1.
+> (1) *They are forced by what $a/b$ should mean.* If $q_1$ is to satisfy $b q_1 = a$ and $q_2$ to satisfy $d q_2 = c$, then $bd\,(q_1 + q_2) = ad + bc$ and $bd\, q_1 q_2 = ac$, so $q_1 + q_2$ "is" $(ad + bc)/bd$ and $q_1 q_2$ "is" $ac/bd$ — the computation before [[§13 Number Systems#^def-13-3|Def. §13.3]] (Eccles §13.1).
 >
 > (2) *They extend integer arithmetic.* Treating the integer $a$ as $a/1$: $\ a/1 + b/1 = (a \cdot 1 + 1 \cdot b)/(1 \cdot 1) = (a + b)/1$ and $(a/1)(b/1) = ab/1$.
 >
@@ -431,7 +433,7 @@ Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse
 > (a_1 c_1,\ b_1 d_1) \sim (a_2 c_2,\ b_2 d_2) \quad \text{and} \quad (a_1 d_1 + b_1 c_1,\ b_1 d_1) \sim (a_2 d_2 + b_2 c_2,\ b_2 d_2) .
 > $$
 >
-> So addition and multiplication of rational numbers are well defined.
+> So addition and multiplication of rational numbers are well defined. (This is the computation of [[§13 Number Systems#^prop-13-3|Proposition §13.3]], where $\mathbb{Q}$ was assumed; here $ad = bc$ is the definition of $\sim$, and nothing else is used.)
 >
 > *Source: Rational Number Project §3.3, §4.3*
 > *Eccles: Proposition 13.1.5*
@@ -468,6 +470,7 @@ Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse
 > Subtraction and division are then defined by $x - y = x + (-y)$ and $x \div y = x\, y^{-1}$ ($y \neq 0$).
 >
 > *Source: Rational Number Project §5 (Theorems 1–6)*
+> *In its distributivity step (§5.6) the Project writes $\frac{ac}{bd} + \frac{ae}{bf} = \frac{acf + aed}{bdf}$ directly; by Definition §22.7 the sum is $\frac{b(acf + ade)}{b(bdf)}$, and removing the common factor $b$ is Lemma §22.7(1).*
 
 ^thm-22-9
 

@@ -41,7 +41,7 @@ The universal statements met informally in [[§2 Implications#^def-2-2|Def. §2.
 >
 > and also as $\forall x \in \R - \{0\},\ x^2 > 0$. The third form is the one used to prove it: take a general non-zero real $a$ and deduce $a^2 > 0$.
 >
-> *Eccles: §7.1*
+> *Eccles: Section 7.1*
 
 ^ex-7-1
 
@@ -89,22 +89,22 @@ The universal statements met informally in [[§2 Implications#^def-2-2|Def. §2.
 > [!example] Example §7.2: Existence With and Without Uniqueness
 > - $\exists!\, x \in \R,\ 2x + 1 = 5$. Existence: $x = 2$ works. Uniqueness: if $2b + 1 = 5$ then $2b = 4$, so $b = 2$.
 > - $\exists x \in \R,\ x^2 = 4$ is true but $\exists!\, x \in \R,\ x^2 = 4$ is false, since both $2$ and $-2$ satisfy it.
-> - $\exists!\, n \in \Z^+,\ \forall m \in \Z^+,\ n \le m$ (there is exactly one least positive integer, namely $1$): existence by $n = 1$; if $n_1, n_2$ both have the property, then $n_1 \le n_2$ and $n_2 \le n_1$, so $n_1 = n_2$.
->
-> Uniqueness statements of this kind recur throughout: the quotient and remainder in [[§15 The Division Theorem|§15]], the inverse of a bijection in [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]].
+> - $\exists!\, n \in \Z^+,\ \forall m \in \Z^+,\ n \le m$ (there is exactly one least positive integer, namely $1$): existence by $n = 1$, since every positive integer is $\ge 1$ ([[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]); if $n_1, n_2$ both have the property, then $n_1 \le n_2$ and $n_2 \le n_1$, so $n_1 = n_2$ ([[§4 Proof by Contradiction#^ex-4-4|Ex. §4.4]]).
 >
 > *Source: MAT 200 supplement §6*
 
 ^ex-7-2
 
+Uniqueness statements of this kind recur throughout: the inverse of a bijection ([[§9 Injections, Surjections and Bijections#^thm-9-2|Theorem §9.2]]), the quotient and remainder of the division theorem ([[§15 The Division Theorem#^thm-15-1|Theorem §15.1]]).
+
 ## 7.3 Proving Statements Involving Quantifiers
 
 > [!remark] Remark: How to Prove ∀ and ∃
 > - To prove $\forall a \in A,\ P(a)$, rewrite it as the universal implication $a \in A \Rightarrow P(a)$: take a *general* element $a \in A$, about which nothing else is assumed, and deduce $P(a)$.
-> - To prove $\exists a \in A,\ P(a)$, the most direct way is **proof by example**: exhibit one particular $a \in A$ and check $P(a)$. (Indirect existence proofs, such as counting arguments, come in [[§11 Properties of Finite Sets|§11]].)
+> - To prove $\exists a \in A,\ P(a)$, the most direct way is **proof by example**: exhibit one particular $a \in A$ and check $P(a)$. (Indirect existence proofs, such as counting arguments, come later: the pigeonhole principle, [[§11 Properties of Finite Sets#^thm-11-2|Theorem §11.2]].)
 > - To *use* a hypothesis $\exists q,\ Q(q)$ in a proof, name a specific element with the property ("let $q_1$ be an integer with $n = 2q_1$") and work with it; use a fresh letter each time a definition involving $\exists$ is unpacked.
 >
-> *Eccles: §7.3*
+> *Eccles: Section 7.3*
 
 ^rem-7-2
 
@@ -170,7 +170,7 @@ Disproving a statement $S$ is the same as proving its negation "not $S$". For qu
 >
 > The second negation is also written $\nexists a \in A,\ P(a)$.
 >
-> *Eccles: §7.4(a), (b)*
+> *Eccles: Section 7.4(a), (b)*
 
 ^thm-7-2
 
@@ -185,7 +185,7 @@ Disproving a statement $S$ is the same as proving its negation "not $S$". For qu
 
 *Uses:* [[§7 Quantifiers#^def-7-1|Def. §7.1]], [[§7 Quantifiers#^def-7-2|Def. §7.2]], [[§6 The Language of Set Theory#^prop-6-1|§6.1]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]]
 
-So a universal statement is disproved by a single **counterexample**, an $a \in A$ with $P(a)$ false; an existential statement is disproved either by proving $\forall a \in A,\ \text{not}\, P(a)$ or by showing that $P(a)$ with $a \in A$ leads to a contradiction ([[§4 Proof by Contradiction|§4]]).
+So a universal statement is disproved by a single **counterexample**, an $a \in A$ with $P(a)$ false; an existential statement is disproved either by proving $\forall a \in A,\ \text{not}\, P(a)$ or by showing that $P(a)$ with $a \in A$ leads to a contradiction ([[§4 Proof by Contradiction#^thm-4-2|Theorem §4.2]]).
 
 > [!example] Example §7.5: Disproof by Counterexample
 > $\forall x \in \R,\ x^2 > 2$ is false: $x = 1$ is a counterexample, since $1 \in \R$ and $1^2 = 1 \not> 2$.
@@ -211,7 +211,7 @@ So a universal statement is disproved by a single **counterexample**, an $a \in 
 > [!remark] Remark: Negation in Everyday Speech
 > "All the members of the class are not here" is normally meant as the negation of "all the members are here", i.e. "*some* member is not here". Read literally it says "every member is absent", which is a different statement: compare "all the numbers in the set are not even", which can only mean "all the numbers are odd". To express the negation of a universal statement unambiguously, say "not all the members are here".
 >
-> *Eccles: §7.4(a)*
+> *Eccles: Section 7.4(a)*
 
 ^rem-7-3
 
@@ -221,7 +221,7 @@ $$
 \neg\neg P \equiv P, \qquad \neg(P \wedge Q) \equiv \neg P \vee \neg Q, \qquad \neg(P \vee Q) \equiv \neg P \wedge \neg Q, \qquad \neg(P \Rightarrow Q) \equiv P \wedge \neg Q ,
 $$
 
-until "not" is absorbed into the simplest statements ($\neg(x > 2)$ becomes $x \le 2$). For example, the denial of $\forall \varepsilon > 0\ \exists N\ \forall n\ (n \ge N \Rightarrow |a_n| < \varepsilon)$ is $\exists \varepsilon > 0\ \forall N\ \exists n\ (n \ge N \wedge |a_n| \ge \varepsilon)$.
+until "not" is absorbed into the simplest statements ($\neg(x > 2)$ becomes $x \le 2$), as in the unquantified denial of [[§2 Implications#^ex-2-9|Ex. §2.9]](c). For example, the denial of $\forall \varepsilon > 0\ \exists N\ \forall n\ (n \ge N \Rightarrow |a_n| < \varepsilon)$ is $\exists \varepsilon > 0\ \forall N\ \exists n\ (n \ge N \wedge |a_n| \ge \varepsilon)$.
 
 > [!example] Example §7.6: From English to Symbols
 > **(a)** "There exists a positive integer $n$ such that $n$ is greater than $3$ but two times $n$ is not greater than $3$":
@@ -261,7 +261,7 @@ until "not" is absorbed into the simplest statements ($\neg(x > 2)$ becomes $x \
 >
 > **Truth value.** The statement is true and the denial false. Since $(P \Rightarrow Q) \equiv (\neg P \vee Q)$ ([[§2 Implications#^prop-2-1|Proposition §2.1]]), the statement says $\forall x\ \exists y,\ (x + y > 3 \vee x > 2)$. Given $x$, take $y = 4 - x$: then $x + y = 4 > 3$, so the implication has a false hypothesis and is true. (The denial fails for the same reason: no $x$ has $x + y \le 3$ for *all* $y$.)
 >
-> **Picture.** The set $\{(x, y) \in \R^2 \mid x + y > 3 \text{ or } x > 2\}$ is the union of the half-plane above the line $x + y = 3$ and the half-plane $x > 2$; the statement says that every vertical line $\{x\} \times \R$ meets it (see §7.7 below).
+> **Picture.** The set $\{(x, y) \in \R^2 \mid x + y > 3 \text{ or } x > 2\}$ is the union of the half-plane above the line $x + y = 3$ and the half-plane $x > 2$; the statement says that every vertical line $\{x\} \times \R$ meets it (compare the pictures in [[§7 Quantifiers#^ex-7-15|Example §7.15]] and [[§7 Quantifiers#^ex-7-16|Example §7.16]]).
 >
 > *Source: MAT 200 Practice Midterm 1 ("Example from L3")*
 
@@ -269,7 +269,7 @@ until "not" is absorbed into the simplest statements ($\neg(x > 2)$ becomes $x \
 
 ## 7.5 Proof by Induction in the Language of Sets
 
-A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid P(n)\}$ is all of $\Z^+$. So induction ([[§5 The Induction Principle|§5]]) is a method for proving that certain subsets of $\Z^+$ are the whole set.
+A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid P(n)\}$ is all of $\Z^+$. So induction ([[§5 The Induction Principle#^def-5-1|Def. §5.1]]; strong induction and well-ordering are also in [[§5 The Induction Principle|§5]]) is a method for proving that certain subsets of $\Z^+$ are the whole set.
 
 > [!definition] Definition §7.4: The Induction Principle, Set Form
 > Let $A$ be a subset of $\Z^+$. Then $A = \Z^+$ if
@@ -281,7 +281,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 ^def-7-4
 
 > [!proof]- Proof (equivalence with the induction principle of §5)
-> The induction principle (Eccles Axiom 5.1.1) says: if $P(n)$ is a statement about a general positive integer $n$, $P(1)$ is true, and $P(k) \Rightarrow P(k + 1)$ for all $k \in \Z^+$, then $P(n)$ is true for all $n \in \Z^+$.
+> The induction principle ([[§5 The Induction Principle#^def-5-1|Def. §5.1]], Eccles Axiom 5.1.1) says: if $P(n)$ is a statement about a general positive integer $n$, $P(1)$ is true, and $P(k) \Rightarrow P(k + 1)$ for all $k \in \Z^+$, then $P(n)$ is true for all $n \in \Z^+$.
 >
 > *Axiom 5.1.1 implies the set form:* given $A \subseteq \Z^+$ satisfying 1 and 2, let $P(n)$ be the statement $n \in A$. Then $P(1)$ holds and $P(k) \Rightarrow P(k + 1)$ for all $k$, so $n \in A$ for all $n \in \Z^+$, i.e. $\Z^+ \subseteq A$; with $A \subseteq \Z^+$ this gives $A = \Z^+$.
 >
@@ -289,10 +289,12 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 
 ^pf-def-7-4
 
-*Uses:* [[§5 The Induction Principle|§5]], [[§6 The Language of Set Theory#^prop-6-1|§6.1]], [[§7 Quantifiers#^def-7-1|Def. §7.1]]
+*Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§6 The Language of Set Theory#^prop-6-1|§6.1]], [[§7 Quantifiers#^def-7-1|Def. §7.1]]
 
 > [!remark]- Connections
-> - This is Peano's axiom (iii) in [[§9 Injections, Surjections and Bijections|§9]], and axiom 5 of [[§1 The Set ℕ of Natural Numbers#^def-1-1|451 Def. §1.1]] (Peano axioms), from which 451 derives induction ([[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 Thm. §1.1]]).
+> - This is axiom 3 of Peano's axioms in [[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]], and axiom 5 of [[§1 The Set ℕ of Natural Numbers#^def-1-1|451 Def. §1.1]] (Peano axioms), from which 451 derives induction ([[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 Thm. §1.1]]).
+
+The strong induction principle ([[§5 The Induction Principle#^thm-5-6|Theorem §5.6]]) has a set form in the same way: [[§5 The Induction Principle#^ex-5-9|Example §5.9]].
 
 ## 7.6 Predicates Involving More Than One Free Variable
 
@@ -309,7 +311,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 >
 > They are read from the left: in (iii), "$\exists b \in B,\ P(a, b)$" is a predicate in the single free variable $a$, and (iii) says it holds for every $a$. So in (iii) the $b$ may depend on $a$, while in (iv) one $b$ must work for every $a$. "$\forall a, b \in A$" abbreviates "$\forall a \in A,\ \forall b \in A$", and similarly for $\exists$. Examples already met: [[§3 Proofs#^prop-3-1|Proposition §3.1]] ($\forall a, b \in \R^+,\ a < b \Rightarrow a^2 < b^2$) and [[§4 Proof by Contradiction#^prop-4-1|Proposition §4.1]] (not $\exists m, n \in \Z,\ 14m + 20n = 101$).
 >
-> *Eccles: §7.6*
+> *Eccles: Section 7.6*
 
 ^rem-7-4
 
@@ -363,7 +365,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 > | (i) $\forall m, n \in \Z^+,\ m \le n$ | false | counterexample $m = 2$, $n = 1$ |
 > | (ii) $\exists m, n \in \Z^+,\ m \le n$ | true | example $m = n = 1$ |
 > | (iii) $\forall m \in \Z^+,\ \exists n \in \Z^+,\ m \le n$ | true | given $m$, take $n = m$ (or $m + 1$) |
-> | (iv) $\exists m \in \Z^+,\ \forall n \in \Z^+,\ m \le n$ | true | $m = 1$: every positive integer is $\ge 1$ |
+> | (iv) $\exists m \in \Z^+,\ \forall n \in \Z^+,\ m \le n$ | true | $m = 1$: every positive integer is $\ge 1$ ([[§5 The Induction Principle#^ex-5-2\|Ex. §5.2]]) |
 > | (v) $\forall n \in \Z^+,\ \exists m \in \Z^+,\ m \le n$ | true | given $n$, take $m = n$ (or $m = 1$) |
 > | (vi) $\exists n \in \Z^+,\ \forall m \in \Z^+,\ m \le n$ | false | for each $n$, $m = n + 1$ gives $m \not\le n$ |
 >

@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 23 (with Problems VI) · MAT 250 HW8 (Exercises 23.2, 23.4, 23.6; Problems VI Q3, Q7, Q8).*
 
-Primes are the multiplicative building blocks of the positive integers. This section proves that every integer $n > 1$ is a product of primes, and that the product is unique apart from the order of the factors (the fundamental theorem of arithmetic); the key step is Euclid's property $p \mid ab \Rightarrow p \mid a$ or $p \mid b$, which rests on the Euclidean algorithm of [[§17 Consequences of the Euclidean Algorithm|§17]]. Unique factorization then gives the divisors and greatest common divisors of a number, a second proof that $\sqrt 2$ is irrational, and a toolkit for HW8. The section ends with Euclid's proof that there are infinitely many primes and a look at how they are distributed.
+Primes are the multiplicative building blocks of the positive integers. This section proves that every integer $n > 1$ is a product of primes, and that the product is unique apart from the order of the factors (the fundamental theorem of arithmetic); the key step is Euclid's property $p \mid ab \Rightarrow p \mid a$ or $p \mid b$, which rests on the Euclidean algorithm through [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]]. Unique factorization then gives the divisors and greatest common divisors of a number, a second proof that $\sqrt 2$ is irrational (first proved in [[§13 Number Systems#^thm-13-4|Theorem §13.4]]), and a toolkit for HW8. The section ends with Euclid's proof that there are infinitely many primes and a look at how they are distributed.
 
 ## 23.1 Definition and Basic Properties
 
@@ -42,36 +42,36 @@ Primes are the multiplicative building blocks of the positive integers. This sec
 
 ^pf-23-1
 
-*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§5 The Induction Principle|§5]] (strong induction, Eccles Axiom 5.4.1)
+*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§5 The Induction Principle#^thm-5-6|§5.6]] (strong induction)
 
 > [!theorem] Theorem §23.2: Euclid's Property of Primes
 > Let $p$ be a prime and $a, b$ positive integers. If $p \mid ab$, then $p \mid a$ or $p \mid b$.
 >
 > The same holds for arbitrary integers $a, b$.
 >
-> *Eccles: Theorem 23.1.3*
+> *Eccles: Theorem 23.1.3 (stated for positive $a, b$; extended here to all integers)*
 
 ^thm-23-2
 
 > [!remark] Remark: Constructing the Proof
-> The conclusion is an "or" statement, so we prove it by assuming that the first alternative fails and deducing the second ([[§4 Proof by Contradiction|§4]]):
+> The conclusion is an "or" statement, so we prove it by assuming that the first alternative fails and deducing the second (as in [[§4 Proof by Contradiction#^ex-4-3|Example §4.3]]):
 >
 > | Given | Goal |
 > |---|---|
 > | $p$ prime, $p \mid ab$, $p \nmid a$ | $p \mid b$ |
 >
-> Because $p$ is prime, its only divisors are $\pm 1$ and $\pm p$, so these are the only candidates for a common divisor of $p$ and $a$; if $p \nmid a$, only $\pm 1$ remain, and $p$ and $a$ are coprime. The rest is Eccles's Theorem 17.3.2: *if $a$ and $b$ are coprime and $a \mid bc$, then $a \mid c$.*
+> Because $p$ is prime, its only divisors are $\pm 1$ and $\pm p$, so these are the only candidates for a common divisor of $p$ and $a$; if $p \nmid a$, only $\pm 1$ remain, and $p$ and $a$ are coprime. The rest is already proved, as [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]] (Eccles 17.3.2): *if $a$ and $b$ are coprime and $a \mid bc$, then $a \mid c$.* So the proof below only has to check coprimality and cite it; the Bézout argument is not repeated.
 
 ^rem-23-1
 
 > [!proof]+ Proof
-> Suppose $p \mid ab$ and $p \nmid a$. The positive divisors of $p$ are $1$ and $p$, and $p$ is not a divisor of $a$, so the only positive common divisor of $p$ and $a$ is $1$: $\gcd(p, a) = 1$. By Eccles's Theorem 17.3.2 ([[§17 Consequences of the Euclidean Algorithm|§17]]), $p \mid ab$ with $\gcd(p, a) = 1$ gives $p \mid b$. Hence $p \mid a$ or $p \mid b$.
+> Suppose $p \mid ab$ and $p \nmid a$. The positive divisors of $p$ are $1$ and $p$, and $p$ is not a divisor of $a$, so the only positive common divisor of $p$ and $a$ is $1$: $\gcd(p, a) = 1$. By [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]], $p \mid ab$ with $\gcd(p, a) = 1$ gives $p \mid b$. Hence $p \mid a$ or $p \mid b$.
 >
 > For arbitrary integers: if $a = 0$ or $b = 0$, then $p$ divides that factor. Otherwise $p \mid ab$ gives $p \mid \abs{a}\,\abs{b}$, the first part gives $p \mid \abs{a}$ or $p \mid \abs{b}$, and $p \mid \abs{x} \iff p \mid x$.
 
 ^pf-23-2
 
-*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§17 Consequences of the Euclidean Algorithm|§17]] (Eccles Theorem 17.3.2), [[§11 Properties of Finite Sets#^def-11-2|Def. §11.2]], [[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]
+*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|§17.4]], [[§11 Properties of Finite Sets#^def-11-2|Def. §11.2]], [[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]
 
 > [!remark]- Connections
 > - Same result in group theory, proved there via Bézout: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|493 Lemma §9.1]] (Euclid's lemma, together with the general form $\gcd(c, a) = 1,\ c \mid ab \Rightarrow c \mid b$).
@@ -113,7 +113,7 @@ To decide whether $n$ is prime one can try all smaller divisors; the next result
 ^ex-23-1
 
 ![[m250-23-1.svg]]
-*The sieve on $1, \ldots, 100$. Each composite is coloured by the round in which it is first crossed out (multiples of $2$, then of $3$, $5$, $7$); after four rounds nothing composite is left, because every composite up to $100$ has a prime factor at most $10$. The framed numbers are the $25$ primes.*
+*The sieve on $1, \ldots, 100$. Each composite is coloured by the round in which it is first crossed out (multiples of $2$, then of $3$, $5$, $7$); after four rounds nothing composite is left, because every composite up to $100$ has a prime factor at most $10$. The framed numbers are the $25$ primes; $1$, neither prime nor composite, is left plain.*
 
 ## 23.3 The Fundamental Theorem of Arithmetic
 
@@ -142,7 +142,7 @@ Factorization into primes is not unique as written, since the factors can be reo
 
 ^pf-23-4
 
-*Uses:* [[§23 The Sequence of Prime Numbers#^thm-23-2|§23.2]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§23 The Sequence of Prime Numbers#^thm-23-2|§23.2]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 > [!theorem] Theorem §23.5: Fundamental Theorem of Arithmetic
 > Every integer $n > 1$ can be written uniquely as a product of primes with the factors in non-decreasing order. Equivalently, $n$ can be written uniquely as
@@ -171,7 +171,7 @@ Factorization into primes is not unique as written, since the factors can be reo
 
 ^pf-23-5
 
-*Uses:* [[§23 The Sequence of Prime Numbers#^prop-23-1|§23.1]], [[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]], [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§4 Proof by Contradiction|§4]]
+*Uses:* [[§23 The Sequence of Prime Numbers#^prop-23-1|§23.1]], [[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]], [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]]
 
 > [!remark]- Connections
 > - Same theorem in group theory: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|493 Thm. §9.2]] (uniqueness there by induction on $n$ rather than by contradiction).
@@ -194,7 +194,7 @@ Factorization into primes is not unique as written, since the factors can be reo
 >
 > *The two factorizations.* $2 = 2 \cdot 1$, $30 = 2 \cdot 15$, $6 = 2 \cdot 3$ and $10 = 2 \cdot 5$ all have the form $2 \times \text{odd}$, so all four factors are E-prime, and the factorizations $\{2, 30\}$ and $\{6, 10\}$ are not reorderings of each other.
 >
-> What goes wrong is Euclid's property: inside $E$, $2$ "divides" $6 \times 10 = 2 \times 30$, but $2$ divides neither $6$ nor $10$ within $E$ ($6 = 2 \times 3$ and $3 \notin E$). Compare [[§23 The Sequence of Prime Numbers#^rem-23-2|the remark on Euclid's property]]. (Eccles's Exercise 23.7 gives another example: among the numbers $4q + 1$, the "pseudo-primes" $9, 21, 49$ give $441 = 9 \times 49 = 21 \times 21$.)
+> What goes wrong is Euclid's property: inside $E$, $2$ "divides" $6 \times 10 = 2 \times 30$, but $2$ divides neither $6$ nor $10$ within $E$ ($6 = 2 \times 3$ and $3 \notin E$). Compare [[§23 The Sequence of Prime Numbers#^rem-23-2|the remark on Euclid's property]]. (Eccles's Exercise 23.7 asks for another example, among the numbers $4q + 1$; his solution: the "pseudo-primes" $9, 21, 49$ give $441 = 9 \times 49 = 21 \times 21$.)
 >
 > *Source: HW8*
 > *Eccles: Problems VI Q3*
@@ -284,16 +284,18 @@ Factorization into primes is not unique as written, since the factors can be reo
 ^ex-23-5
 
 > [!remark]- Connections
-> - The totient in group theory: [[§8 Invertibility and Unit Groups#^def-8-3|493 Def. §8.3]] ($\phi(n) = \abs{U_n}$), and the general formula $\phi(p_1^{a_1} \cdots p_r^{a_r}) = \prod (p_i - 1) p_i^{a_i - 1}$, [[§21 The Structure of Uₙ#^cor-21-3|493 Cor. §21.3]] (Eccles proves it by inclusion–exclusion in Problems VI Q10).
+> - The totient in group theory: [[§8 Invertibility and Unit Groups#^def-8-3|493 Def. §8.3]] ($\phi(n) = \abs{U_n}$), and the general formula $\phi(p_1^{a_1} \cdots p_r^{a_r}) = \prod (p_i - 1) p_i^{a_i - 1}$, [[§21 The Structure of Uₙ#^cor-21-3|493 Cor. §21.3]] (Eccles sets it as Problems VI Q10).
 
 > [!example] Example §23.6: No Rational Square or Cube Root of 2
-> **(a) $\sqrt 2$** (a second proof of Eccles's Theorem 13.2.1, [[§13 Number Systems|§13]]). Suppose $q \in \mathbb{Q}$ with $q^2 = 2$. Since $(-q)^2 = q^2$ we may assume $q > 0$, and write $q = a/b$ with $a, b \in \mathbb{Z}^+$. Then $a^2 = 2b^2$. Let $2 < p_2 < \cdots < p_r$ be the odd primes occurring in $a$ or $b$, and write $a = 2^{k_1} p_2^{k_2} \cdots p_r^{k_r}$, $b = 2^{l_1} p_2^{l_2} \cdots p_r^{l_r}$ with exponents $\ge 0$. Then
+> **(a) $\sqrt 2$** (a second proof of [[§13 Number Systems#^thm-13-4|Theorem §13.4]], Eccles 13.2.1, which is proved there by parity). Suppose $q \in \mathbb{Q}$ with $q^2 = 2$. Since $(-q)^2 = q^2$ we may assume $q > 0$, and write $q = a/b$ with $a, b \in \mathbb{Z}^+$. Then $a^2 = 2b^2$. Let $2 < p_2 < \cdots < p_r$ be the odd primes occurring in $a$ or $b$, and write $a = 2^{k_1} p_2^{k_2} \cdots p_r^{k_r}$, $b = 2^{l_1} p_2^{l_2} \cdots p_r^{l_r}$ with exponents $\ge 0$. Then
 >
 > $$
 > a^2 = 2^{2k_1} p_2^{2k_2} \cdots p_r^{2k_r}, \qquad 2b^2 = 2^{2l_1 + 1} p_2^{2l_2} \cdots p_r^{2l_r} .
 > $$
 >
 > By uniqueness ([[§23 The Sequence of Prime Numbers#^def-23-2|Def. §23.2]]) the exponents of $2$ agree: $2k_1 = 2l_1 + 1$, an even number equal to an odd one. Contradiction.
+>
+> *What this proof adds.* The proof in §13 needs a fraction in lowest terms and the lemma "$a^2$ even $\Rightarrow$ $a$ even", and has to be redone for each new case. Here neither is needed: the only input is unique factorization, and the contradiction is a count of exponents. The same count works for cube roots in (b), for $\sqrt p$ with any prime $p$ (the exponent of $p$ gives $2k = 2l + 1$), and for $\sqrt n$ whenever some prime occurs in $n$ to an odd power; it also explains [[§13 Number Systems#^ex-13-2|Example §13.2]], since $4 = 2^2$ has even exponents.
 >
 > **(b) $\sqrt[3]{2}$.** Suppose $q \in \mathbb{Q}$ with $q^3 = 2$. If $q \le 0$ then $q^3 \le 0$; so $q > 0$ and $q = a/b$ with $a, b \in \mathbb{Z}^+$, and $a^3 = 2b^3$. With $a, b$ factorized as in (a),
 >
@@ -370,7 +372,7 @@ The sequence of primes is very irregular, but it never stops. The proof is from 
 
 ^pf-23-8
 
-*Uses:* [[§23 The Sequence of Prime Numbers#^prop-23-1|§23.1]], [[§15 The Division Theorem#^thm-15-1|§15.1]], [[§4 Proof by Contradiction|§4]]
+*Uses:* [[§23 The Sequence of Prime Numbers#^prop-23-1|§23.1]], [[§15 The Division Theorem#^thm-15-1|§15.1]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]]
 
 > [!example] Example §23.9: Arbitrarily Long Runs of Composite Numbers
 > For each positive integer $n$ there are $n$ consecutive integers that are all composite: the numbers
@@ -396,7 +398,8 @@ The sequence of primes is very irregular, but it never stops. The proof is from 
 > - Euler showed that $n^2 - n + 41$ is prime for $1 \le n \le 40$, but it is not prime for every $n$: at $n = 41$ it equals $41^2 - 41 + 41 = 41^2$.
 > - The number $m = p_1 \cdots p_n + 1$ in Euclid's proof need not itself be prime: $2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 + 1 = 30031 = 59 \times 509$. The proof only uses that its prime factors are new.
 >
-> *Eccles: Exercise 23.3; §23.5 (text)*
+> *Eccles: Exercise 23.3 and its solution; §23.5 (text)*
+> *Source: standard (the example $30031$)*
 
 ^ex-23-10
 
@@ -408,7 +411,7 @@ The sequence of primes is very irregular, but it never stops. The proof is from 
 ^def-23-3
 
 > [!theorem] Theorem §23.9: Prime Number Theorem
-> The ratio of $\pi(n)$ to $n / \log_e n$ tends to $1$ as $n$ grows without bound: the sequence $n \mapsto \dfrac{\pi(n) \log_e n}{n} - 1$ is a null sequence ([[§8 Functions|§8]]).
+> The ratio of $\pi(n)$ to $n / \log_e n$ tends to $1$ as $n$ grows without bound: the sequence $n \mapsto \dfrac{\pi(n) \log_e n}{n} - 1$ is a null sequence ([[§8 Functions#^def-8-8|Def. §8.8]]).
 >
 > (Stated without proof.)
 >
@@ -419,8 +422,8 @@ The sequence of primes is very irregular, but it never stops. The proof is from 
 > [!remark]- Remark: How Good Is the Estimate?
 > | $n$ | $\pi(n)$ | $n / \log_e n$ | ratio |
 > |---|---|---|---|
-> | $10^3$ | $168$ | $144.8$ | $1.160$ |
-> | $10^6$ | $78498$ | $72382.4$ | $1.085$ |
+> | $10^3$ | $168$ | $144.8$ | $1.161$ |
+> | $10^6$ | $78498$ | $72382.4$ | $1.084$ |
 > | $10^9$ | $50847534$ | $48254942.4$ | $1.054$ |
 > | $10^{12}$ | $37607912018$ | $36191206825.3$ | $1.039$ |
 >

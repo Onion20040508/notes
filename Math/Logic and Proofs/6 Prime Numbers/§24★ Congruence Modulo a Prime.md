@@ -12,7 +12,7 @@ tags: [logic-and-proofs, mat250, extension]
 *Eccles, Chapter 24 (with Problems VI Q14, Q17, Q18).*
 ★ *Not in the MAT 250 course record (no homework or syllabus entry for this chapter); included from Eccles to complete the arithmetic of primes, and because it is where group theory begins.*
 
-Modulo a prime $p$, every nonzero congruence class is invertible ([[§21 Congruence Classes and the Arithmetic of Remainders|§21]]), and this makes arithmetic modulo $p$ unusually rigid. This section proves the two classical consequences, Fermat's little theorem $a^{p-1} \equiv 1$ and Wilson's theorem $(p-1)! \equiv -1 \pmod p$, both by counting arguments in $\mathbb{Z}_p$, and then asks how far Fermat's theorem can be turned into a test for primality. Ivory's proof of Fermat's theorem below is the special case of Lagrange's theorem that group theory later makes general.
+Modulo a prime $p$, every nonzero congruence class is invertible ([[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9|Corollary §21.9]]), and this makes arithmetic modulo $p$ unusually rigid. This section proves the two classical consequences, Fermat's little theorem $a^{p-1} \equiv 1$ and Wilson's theorem $(p-1)! \equiv -1 \pmod p$, both by counting arguments in $\mathbb{Z}_p$, and then asks how far Fermat's theorem can be turned into a test for primality. Ivory's proof of Fermat's theorem below is the special case of Lagrange's theorem that group theory later makes general.
 
 ## 24.1 Fermat's Little Theorem
 
@@ -84,18 +84,18 @@ Recall from [[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9
 Fermat's theorem need not give the *smallest* power of $a$ that is $\equiv 1$: trivially for $a = 1$, and for instance $2^3 = 8 \equiv 1 \pmod 7$, while $p - 1 = 6$.
 
 > [!definition] Definition §24.1: Order Modulo $p$; Primitive Root
-> Let $p$ be prime and $a \not\equiv 0 \pmod p$. The **order of $a$ modulo $p$** is the least positive integer $n$ with $a^n \equiv 1 \pmod p$; it exists because the set of such $n$ contains $p - 1$ ([[§24★ Congruence Modulo a Prime#^thm-24-1|Theorem §24.1]]) and so has a least element (well-ordering). An $a$ of order $p - 1$ is a **primitive root** modulo $p$.
+> Let $p$ be prime and $a \not\equiv 0 \pmod p$. The **order of $a$ modulo $p$** is the least positive integer $n$ with $a^n \equiv 1 \pmod p$; it exists because the set of such $n$ contains $p - 1$ ([[§24★ Congruence Modulo a Prime#^thm-24-1|Theorem §24.1]]) and so has a least element (well-ordering, [[§5 The Induction Principle#^cor-5-7|Corollary §5.7]]). An $a$ of order $p - 1$ is a **primitive root** modulo $p$.
 >
 > For example, modulo $7$ the powers of $2$ are $2, 4, 1, \ldots$, so $2$ has order $3$; the powers of $3$ are $3, 2, 6, 4, 5, 1$, so $3$ has order $6$ and is a primitive root. Every prime has a primitive root (Eccles quotes this; it is not proved here).
 >
-> *Eccles: §24.1 (text); Problems VI Q13*
+> *Eccles: §24.1 (text); Problems VI Q13 (order computations)*
 
 ^def-24-1
 
 > [!theorem] Proposition §24.3: The Order Divides $p - 1$
 > Let $p$ be prime, $a \not\equiv 0 \pmod p$, and $n$ the order of $a$ modulo $p$. Then for every $m \in \mathbb{N}$, $a^m \equiv 1 \pmod p$ if and only if $n \mid m$. In particular $n \mid p - 1$.
 >
-> *Eccles: Problems VI Q14*
+> *Eccles: Problems VI Q14 (which asks only for $n \mid p - 1$; the "if and only if" is added here)*
 
 ^prop-24-3
 
@@ -171,7 +171,7 @@ Fermat's theorem need not give the *smallest* power of $a$ that is $\equiv 1$: t
 
 ^pf-24-5
 
-*Uses:* [[§20 Linear Congruences#^thm-20-3|§20.3]], [[§24★ Congruence Modulo a Prime#^lem-24-4|§24.4]], [[§22 Partitions and Equivalence Relations|§22]] (partitions)
+*Uses:* [[§20 Linear Congruences#^thm-20-3|§20.3]], [[§24★ Congruence Modulo a Prime#^lem-24-4|§24.4]], [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]
 
 > [!example] Example §24.3: Wilson's Theorem Characterizes Primes
 > For an integer $n > 1$: $n$ is prime $\iff (n - 1)! \equiv -1 \pmod n$.
@@ -200,7 +200,7 @@ Fermat's theorem gives a way to prove that a number is composite *without findin
 
 ^pf-24-6
 
-*Uses:* [[§24★ Congruence Modulo a Prime#^cor-24-2|§24.2]], [[§2 Implications|§2]] (contrapositive)
+*Uses:* [[§24★ Congruence Modulo a Prime#^cor-24-2|§24.2]], [[§2 Implications#^prop-2-2|§2.2]] (contrapositive)
 
 > [!example] Example §24.4: 63 Is Not Prime
 > $2^6 = 64 \equiv 1 \pmod{63}$, so $2^{63} = (2^6)^{10} \times 2^3 \equiv 8 \pmod{63}$. Since $8 \not\equiv 2$, [[§24★ Congruence Modulo a Prime#^cor-24-6|Corollary §24.6]] shows $63$ is composite — although $63 = 7 \times 9$ shows it faster. The point is that for large $n$, powers modulo $n$ are cheap to compute while factors are hard to find.
@@ -225,8 +225,8 @@ The converse of [[§24★ Congruence Modulo a Prime#^cor-24-6|Corollary §24.6]]
 
 > [!remark] Remark: Three Proofs of Fermat's Theorem
 > Problems VI gives two more proofs of [[§24★ Congruence Modulo a Prime#^thm-24-1|Theorem §24.1]].
-> - *Euler's (Q17).* For $0 < i < p$ the binomial coefficient $\binom{p}{i} = \frac{p!}{i!\,(p-i)!}$ is a multiple of $p$: $p$ divides the numerator $p!$ but, by [[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]], not $i!\,(p-i)!$, whose factors are all $< p$. Hence $(a + b)^p \equiv a^p + b^p \pmod p$ ([[§12★ Counting Functions and Subsets|§12★]], binomial theorem), and induction on $a$ gives $a^p = ((a - 1) + 1)^p \equiv (a-1)^p + 1 \equiv a$.
-> - *Gauss's (Q18).* On the nonzero residues define $x_1 \sim x_2 \iff x_1 \equiv x_2 a^k$ for some $k \in \mathbb{Z}^+$. This is an equivalence relation ([[§22 Partitions and Equivalence Relations|§22]]) whose classes $\{x, xa, \ldots, xa^{n-1}\}$ all have $n$ elements, $n$ the order of $a$. The classes partition the $p - 1$ nonzero residues, so $n \mid p - 1$ — Proposition §24.3 without using Fermat — and then $a^{p-1} = (a^n)^{(p-1)/n} \equiv 1$.
+> - *Euler's (Q17).* For $0 < i < p$ the binomial coefficient $\binom{p}{i} = \frac{p!}{i!\,(p-i)!}$ is a multiple of $p$: $p$ divides the numerator $p!$ but, by [[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]], not $i!\,(p-i)!$, whose factors are all $< p$. Hence $(a + b)^p \equiv a^p + b^p \pmod p$ (binomial theorem, [[§12★ Counting Functions and Subsets#^thm-12-10|Theorem §12.10]]), and induction on $a \geq 0$ gives $a^p = ((a - 1) + 1)^p \equiv (a-1)^p + 1 \equiv a$; this extends to all $a$ since $a^p \bmod p$ depends only on $a \bmod p$, and cancelling $a$ when $p \nmid a$ ([[§19 Congruence of Integers#^prop-19-7|§19.7]]) gives $a^{p-1} \equiv 1$.
+> - *Gauss's (Q18).* On the nonzero residues define $x_1 \sim x_2 \iff x_1 \equiv x_2 a^k$ for some $k \in \mathbb{Z}^+$. This is an equivalence relation ([[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]]) whose classes $\{x, xa, \ldots, xa^{n-1}\}$ all have $n$ elements, $n$ the order of $a$. The classes partition the $p - 1$ nonzero residues, so $n \mid p - 1$ — Proposition §24.3 without using Fermat — and then $a^{p-1} = (a^n)^{(p-1)/n} \equiv 1$.
 >
 > Gauss's argument is exactly the proof of Lagrange's theorem: the classes are the cosets of the subgroup $\{1, a, \ldots, a^{n-1}\}$ of the nonzero residues.
 

@@ -9,7 +9,7 @@ tags: [chapter, logic-and-proofs]
 
 *Eccles, not in Eccles (MAT 250 lecture).*
 
-**Builds on:** —
+**Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (1)
 **Used by:** —
 **Developed further in (other subjects):** [[Topology]] (14)
 

@@ -107,7 +107,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 
 ^def-21-2
 
-By Proposition §21.1 the classes in $\mathbb{Z}_m$ are non-empty, pairwise disjoint and cover $\mathbb{Z}$: $\mathbb{Z}_m$ is a *partition* of $\mathbb{Z}$. This is the model example of [[§22 Partitions and Equivalence Relations|§22]], which defines partitions in general ([[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]), proves Proposition §21.1 for any equivalence relation ([[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]]), and recovers $\mathbb{Z}_m$ as the quotient set $\mathbb{Z}/{\equiv}$ ([[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]]).
+Each integer $a$ lies in its own class $[a]_m$, and by Proposition §21.1 two classes are equal or disjoint: so $\mathbb{Z}_m$ is a *partition* of $\mathbb{Z}$ into non-empty, pairwise disjoint sets. This is the model example of [[§22 Partitions and Equivalence Relations|§22]], which defines partitions in general ([[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]), proves Proposition §21.1 for any equivalence relation ([[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]]), and recovers $\mathbb{Z}_m$ as the quotient set $\mathbb{Z}/{\equiv}$ ([[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]]).
 
 > [!theorem] Proposition §21.2: $\mathbb{Z}_m$ Has $m$ Elements
 > The set $\mathbb{Z}_m$ is finite of cardinality $m$; its elements are $[r]_m$ for the integers $0 \leq r < m$:
@@ -210,7 +210,7 @@ The same idea works for every $m$: to add two columns of the table, pick any ele
 > 4. $[0]_m$ is an additive identity, $\alpha + [0]_m = \alpha$, and $[1]_m$ a multiplicative identity, $\alpha \times [1]_m = \alpha$;
 > 5. $[a]_m + [-a]_m = [0]_m$, and $\alpha - \beta = \alpha + (-\beta)$ where $-[b]_m = [-b]_m$.
 >
-> *Eccles: §21.2 (text after Proposition 21.2.2)*
+> *Eccles: §21.2 (text after Proposition 21.2.2), parts 1–4; part 5 added here*
 
 ^prop-21-4
 

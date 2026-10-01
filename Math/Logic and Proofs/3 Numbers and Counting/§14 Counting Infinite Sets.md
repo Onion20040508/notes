@@ -90,7 +90,7 @@ A finite set is never equipotent to a proper subset ([[§11 Properties of Finite
 
 ^pf-14-2
 
-*Uses:* [[§10 Counting#^def-10-2|Def. §10.2]], [[§5 The Induction Principle|§5]] (definition by induction)
+*Uses:* [[§10 Counting#^def-10-2|Def. §10.2]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]] (definition by induction, as in [[§5 The Induction Principle#^def-5-2|Def. §5.2]])
 
 > [!remark]- Remark: Infinitely Many Choices
 > The proof makes infinitely many arbitrary choices, one at each step. That this is legitimate is an axiom of set theory (the axiom of dependent choice, a weak form of the axiom of choice), used tacitly by Eccles here and in similar places below (choosing a bijection $\Z^+ \to A_n$ for every $n$ in Example [[§14 Counting Infinite Sets#^ex-14-4|§14.4]]). Where a choice can be made by a rule, such as "the least element", no axiom is needed; Proposition [[§14 Counting Infinite Sets#^prop-14-5|§14.5]] works that way.
@@ -154,7 +154,7 @@ To prove statements about all denumerable sets, prove them first for the standar
 The conclusion is an "or" statement, so (as in [[§4 Proof by Contradiction#^ex-4-3|Example §4.3]]) we assume the subset is not finite and show it is denumerable, listing its elements in increasing order.
 
 > [!proof]+ Proof
-> (a) Let $A \subseteq \Z^+$ be infinite. Define $f : \Z^+ \to A$ inductively: $f(1) = \min A$, which exists by the well-ordering principle ([[§11 Properties of Finite Sets#^ex-11-3|Example §11.3]](c)); and $f(k+1) = \min\{ a \in A \mid a > f(k) \}$. This set is non-empty, since otherwise $A \subseteq \N_{f(k)}$ would be finite ([[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4]]).
+> (a) Let $A \subseteq \Z^+$ be infinite. Define $f : \Z^+ \to A$ inductively: $f(1) = \min A$, which exists by the well-ordering principle ([[§5 The Induction Principle#^cor-5-7|Corollary §5.7]]); and $f(k+1) = \min\{ a \in A \mid a > f(k) \}$. This set is non-empty, since otherwise $A \subseteq \N_{f(k)}$ would be finite ([[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4]]).
 >
 > *Injective:* $f(k) < f(k+1)$ for all $k$, so $j < k \Rightarrow f(j) < f(k)$.
 >
@@ -166,7 +166,7 @@ The conclusion is an "or" statement, so (as in [[§4 Proof by Contradiction#^ex-
 
 ^pf-14-5
 
-*Uses:* [[§11 Properties of Finite Sets#^ex-11-3|Ex. §11.3]], [[§11 Properties of Finite Sets#^cor-11-4|§11.4]], [[§5 The Induction Principle|§5]], [[§9 Injections, Surjections and Bijections#^def-9-4|Def. §9.4]] (pre-images)
+*Uses:* [[§5 The Induction Principle#^cor-5-7|§5.7]] (well-ordering), [[§11 Properties of Finite Sets#^cor-11-4|§11.4]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§9 Injections, Surjections and Bijections#^def-9-4|Def. §9.4]] (pre-images)
 
 > [!theorem] Corollary §14.6: Countable Means Injecting into the Positive Integers
 > A set $X$ is countable if and only if there is an injection $X \to \Z^+$.
@@ -252,7 +252,7 @@ Forming unions or products of finite sets normally makes them bigger. For denume
 
 ^prop-14-8
 
-List $A = \{a_1, a_2, \ldots\}$ and $B = \{b_1, b_2, \ldots\}$ and arrange $A \times B$ in an infinite array, $(a_m, b_n)$ in column $m$ and row $n$. Counting along the first row never reaches the second. Counting along the diagonals $m + n - 1 = 1, 2, 3, \ldots$ in turn does reach every element: diagonal $s$ has $s$ elements, and $(a_m, b_n)$ is the $n$th element of diagonal $m + n - 1$, so its number is $1 + 2 + \cdots + (m + n - 2) + n = \tfrac12 (m+n-2)(m+n-1) + n$ (Eccles Proposition 5.3.1).
+List $A = \{a_1, a_2, \ldots\}$ and $B = \{b_1, b_2, \ldots\}$ and arrange $A \times B$ in an infinite array, $(a_m, b_n)$ in column $m$ and row $n$. Counting along the first row never reaches the second. Counting along the diagonals $m + n - 1 = 1, 2, 3, \ldots$ in turn does reach every element: diagonal $s$ has $s$ elements, and $(a_m, b_n)$ is the $n$th element of diagonal $m + n - 1$, so its number is $1 + 2 + \cdots + (m + n - 2) + n = \tfrac12 (m+n-2)(m+n-1) + n$ ([[§5 The Induction Principle#^prop-5-5|Proposition §5.5]]).
 
 > [!proof]+ Proof
 > Let $T(s) = s(s+1)/2 = 1 + 2 + \cdots + s$ for $s \ge 0$, so $T(0) = 0$ and $T(s) - T(s-1) = s$; in particular $T$ is strictly increasing. Define
@@ -271,7 +271,7 @@ List $A = \{a_1, a_2, \ldots\}$ and $B = \{b_1, b_2, \ldots\}$ and arrange $A \t
 
 ^pf-14-8
 
-*Uses:* [[§5 The Induction Principle|§5]] (the sum $1 + \cdots + s$), [[§11 Properties of Finite Sets#^ex-11-3|Ex. §11.3]] (well-ordering), [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]]
+*Uses:* [[§5 The Induction Principle#^prop-5-5|§5.5]] (the sum $1 + \cdots + s$), [[§5 The Induction Principle#^cor-5-7|§5.7]] (well-ordering), [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]]
 
 ![[m250-14-1.svg]]
 *The diagonal count of $\Z^+ \times \Z^+$: the point $(m, n)$ is labelled $\varphi(m, n)$. Each diagonal $m + n - 1 = s$ is run from $(s, 1)$ up to $(1, s)$ (solid arrows), and the count then jumps to the start of the next diagonal (dotted). Every point is reached after finitely many steps, unlike a row-by-row count, which never leaves the first row.*
@@ -288,7 +288,7 @@ List $A = \{a_1, a_2, \ldots\}$ and $B = \{b_1, b_2, \ldots\}$ and arrange $A \t
 
 ^pf-14-9
 
-*Uses:* [[§14 Counting Infinite Sets#^prop-14-8|§14.8]], [[§14 Counting Infinite Sets#^prop-14-4|§14.4]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§14 Counting Infinite Sets#^prop-14-8|§14.8]], [[§14 Counting Infinite Sets#^prop-14-4|§14.4]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 > [!example] Example §14.4: A Denumerable Union of Denumerable Sets
 > If $\{A_n \mid n \in \Z^+\}$ is a denumerable set of pairwise disjoint denumerable sets, then
@@ -363,7 +363,7 @@ To show that $\R$ is not denumerable is to show that *no* bijection $\Z^+ \to \R
 > [!proof]- Proof
 > Write $s_n$ for the truncation of a decimal at place $n$.
 >
-> (1) By the standing assumption of [[§13 Number Systems|§13]], $x$ is represented by some decimal $a_0.a_1a_2\ldots$; $a_0 \le s_1 \le x < 1$ forces $a_0 = 0$. Suppose it ends in $9$s, say $a_i = 9$ for all $i > k$. If $k = 0$, then $x = 0.\dot9 = 1$ (Example [[§13 Number Systems#^ex-13-4|§13.4]]), which is excluded. So take $k \ge 1$ least, so that $a_k \le 8$, and let $d = s_k + 10^{-k} = 0.a_1 \ldots a_{k-1}(a_k + 1)$. For $n \ge k$, $s_n = d - 10^{-n}$, so the defining inequalities give $d - 10^{-n} \le x \le d$, hence $|d - x| \le 10^{-n}$ for all $n \ge k$, and $x = d$ by the argument of Proposition [[§13 Number Systems#^prop-13-5|§13.5]]. The terminating decimal $0.a_1 \ldots a_{k-1}(a_k + 1)000\ldots$ represents $d$: its truncation $t_n$ is $d$ for $n \ge k$, and for $n < k$, $0 \le d - t_n \le 9 \cdot 10^{-(n+1)} + \cdots + 9 \cdot 10^{-k} = 10^{-n} - 10^{-k}$. It does not end in $9$s.
+> (1) By the standing assumption of §13 (stated before [[§13 Number Systems#^def-13-5|Definition §13.5]]), $x$ is represented by some decimal $a_0.a_1a_2\ldots$; $a_0 \le s_1 \le x < 1$ forces $a_0 = 0$. Suppose it ends in $9$s, say $a_i = 9$ for all $i > k$. If $k = 0$, then $x = 0.\dot9 = 1$ (Example [[§13 Number Systems#^ex-13-4|§13.4]]), which is excluded. So take $k \ge 1$ least, so that $a_k \le 8$, and let $d = s_k + 10^{-k} = 0.a_1 \ldots a_{k-1}(a_k + 1)$. For $n \ge k$, $s_n = d - 10^{-n}$, so the defining inequalities give $d - 10^{-n} \le x \le d$, hence $|d - x| \le 10^{-n}$ for all $n \ge k$, and $x = d$ by the argument of Proposition [[§13 Number Systems#^prop-13-5|§13.5]]. The terminating decimal $0.a_1 \ldots a_{k-1}(a_k + 1)000\ldots$ represents $d$: its truncation $t_n$ is $d$ for $n \ge k$, and for $n < k$, $0 \le d - t_n \le 9 \cdot 10^{-(n+1)} + \cdots + 9 \cdot 10^{-k} = 10^{-n} - 10^{-k}$. It does not end in $9$s.
 >
 > (2) Let $a = 0.a_1 a_2 \ldots = 0.b_1 b_2 \ldots$ (truncations $s_n$, $t_n$), neither ending in $9$s, and suppose they differ; let $k$ be the first place where $a_k \ne b_k$, say $a_k < b_k$. Then $s_{k-1} = t_{k-1}$ (both $0$ if $k = 1$) and
 >
@@ -488,7 +488,7 @@ The difficulty is that neither $f$ nor $g^{-1}$ alone is a bijection; we use $f$
 
 ^pf-14-14
 
-*Uses:* [[§14 Counting Infinite Sets#^def-14-3|Def. §14.3]], [[§5 The Induction Principle|§5]] (definition by induction)
+*Uses:* [[§14 Counting Infinite Sets#^def-14-3|Def. §14.3]], [[§5 The Induction Principle#^thm-5-3|§5.3]] (definition by induction from $k = 0$), [[§9 Injections, Surjections and Bijections#^def-9-4|Def. §9.4]] (images of subsets)
 
 > [!remark]- Connections
 > - Developed further in: [[§2 The Cantor–Bernstein Theorem#^thm-2-1|551 Thm. §2.1]] ([[Cantor–Bernstein Theorem]]); 551 proves it differently, finding the dividing set $A$ ([[§2 The Cantor–Bernstein Theorem#^lem-2-2|551 Lemma §2.2]]) as the union of all "admissible" sets rather than by the chains $C_k$ used here.
@@ -509,14 +509,14 @@ Eccles states the theorem in a form that looks like the pigeonhole principle.
 
 *Uses:* [[§14 Counting Infinite Sets#^thm-14-14|§14.14]], [[§14 Counting Infinite Sets#^def-14-3|Def. §14.3]]
 
+For finite sets this is the pigeonhole principle, [[§11 Properties of Finite Sets#^thm-11-2|Theorem §11.2]], which needed no Cantor–Schröder–Bernstein theorem (for finite sets, $|X| > |Y|$ in the sense of Definition [[§14 Counting Infinite Sets#^def-14-3|§14.3]] is the inequality of the numbers $|X|$ and $|Y|$, by [[§11 Properties of Finite Sets#^cor-11-1|Corollary §11.1]] and [[§10 Counting#^prop-10-3|Proposition §10.3]]).
+
 > [!example] Example §14.5: The Usual Form from Eccles's Form
 > Use Eccles's form of the Cantor–Schröder–Bernstein theorem (Corollary [[§14 Counting Infinite Sets#^cor-14-15|§14.15]]) to prove that if $|X| \le |Y|$ and $|Y| \le |X|$ then $|X| = |Y|$.
 >
 > *Solution.* Suppose for contradiction that $|X| \ne |Y|$. With $|X| \le |Y|$ this gives $|X| < |Y|$, and with $|Y| \le |X|$ it gives $|Y| < |X|$, i.e. $|X| > |Y|$. By $|X| < |Y|$ there is an injection $X \to Y$; by $|X| > |Y|$ and Eccles's form, no function $X \to Y$ is an injection. This contradiction shows $|X| = |Y|$. (If $X$ or $Y$ is empty, both are, since there is no function from a non-empty set to $\emptyset$, and $|X| = |Y|$ trivially.)
 >
 > So the two forms are equivalent; neither is easier than the other, and Theorem [[§14 Counting Infinite Sets#^thm-14-14|§14.14]] is the proof of both.
->
-> *The HW5 solution is this argument (it is also Eccles's); it is valid given Eccles's form, which is itself equivalent to the statement being proved, so the self-contained proof is that of Theorem §14.14.*
 >
 > *Eccles: Exercise 14.4*
 > *Source: HW5*

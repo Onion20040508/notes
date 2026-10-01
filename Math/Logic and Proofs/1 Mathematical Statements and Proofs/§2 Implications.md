@@ -55,7 +55,7 @@ A proof is a chain of statements, each true because earlier ones are; the link b
 ^ex-2-1
 
 > [!remark] Remark: Vacuous Truth
-> An implication with a false hypothesis is true whatever its conclusion; it is then called **vacuously** true. For instance "$\sqrt{2}$ is rational only if $2$ is not a perfect square" and "$\sqrt{2}$ is rational only if $2$ is a perfect square" are both true, because $\sqrt{2}$ is not rational ([[§13 Number Systems|§13]]). So a proof of $P \Rightarrow Q$ says nothing about $Q$ until $P$ is known to be true: the "proof that $1$ is the largest integer" in [[§4 Proof by Contradiction#^ex-4-6|Ex. §4.6]] proves a vacuous implication.
+> An implication with a false hypothesis is true whatever its conclusion; it is then called **vacuously** true. For instance "$\sqrt{2}$ is rational only if $2$ is not a perfect square" and "$\sqrt{2}$ is rational only if $2$ is a perfect square" are both true, because $\sqrt{2}$ is not rational (proved in [[§13 Number Systems#^thm-13-4|Theorem §13.4]]). So a proof of $P \Rightarrow Q$ says nothing about $Q$ until $P$ is known to be true: the "proof that $1$ is the largest integer" in [[§4 Proof by Contradiction#^ex-4-6|Ex. §4.6]] proves a vacuous implication.
 >
 > *Source: MAT 200 lecture (practice midterm 1)*
 
@@ -369,8 +369,6 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 > $S$ is false: $a = 2$, $b = -1$ give $a + b = 1 > 0$ but $b < 0$; the same values refute the contrapositive, as they must ([[§2 Implications#^prop-2-2|Proposition §2.2]]). The converse is true: if $a > 0$ and $b > 0$ then $a + b > 0 + b = b > 0$ by the addition and transitive laws ([[§3 Proofs#^def-3-1|Def. §3.1]]). The inverse is equivalent to the converse, so it is true as well.
 >
 > *Source: MAT 200 HW1 Problem 4*
->
-> *The HW1 solution quotes the original statement in part (b) as "$a + b \leq 0 \Rightarrow a \leq 0 \vee b \leq 0$", which is the inverse; the truth values it assigns to the four statements are right.*
 
 ^ex-2-8
 
@@ -390,7 +388,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 > \neg\bigl(x^2 = 4 \Rightarrow (x = 2 \vee x < 0)\bigr) \equiv x^2 = 4 \wedge \neg(x = 2 \vee x < 0) \equiv x^2 = 4 \wedge x \neq 2 \wedge x \geq 0.
 > $$
 >
-> (As a universal statement about all real $x$, its denial asserts that *some* $x$ satisfies $x^2 = 4$, $x \neq 2$ and $x \geq 0$; see [[§7 Quantifiers|§7]].)
+> (As a universal statement about all real $x$, its denial asserts that *some* $x$ satisfies $x^2 = 4$, $x \neq 2$ and $x \geq 0$.)
 >
 > (d) True. $x^2 = 4 \iff (x - 2)(x + 2) = 0 \iff x = 2$ or $x = -2$ ([[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]]). If $x = 2$ the conclusion holds; if $x = -2$ then $x < 0$ and it holds again. Equivalently, the denial has no solution: $x^2 = 4$ forces $x = \pm 2$, and $x \neq 2$, $x \geq 0$ exclude both.
 >
@@ -399,6 +397,8 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 ^ex-2-9
 
 *Uses:* [[§2 Implications#^def-2-3|Def. §2.3]], [[§2 Implications#^prop-2-1|§2.1]], [[§1 The Language of Mathematics#^def-1-7|Def. §1.7]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]]
+
+That the negation of "for all $x$, $P(x)$" is "for some $x$, not $P(x)$" is [[§7 Quantifiers#^thm-7-2|Theorem §7.2]], where denials of quantified statements are treated systematically.
 
 > [!example] Example §2.10: A Necessary Condition for Convergence
 > Calculus proves: *if a series $\sum_{n=1}^\infty a_n$ converges, then $\lim_{n \to \infty} a_n = 0$.*
@@ -489,18 +489,20 @@ The proof rests on the two universal implications $q \leq 50 \Rightarrow 2q \leq
 >
 > *Necessity.* If $n = 6k$ then $n = 3(2k) = 2(3k)$, giving (i), (vi) and hence (vii); and $n^2 = 6(6k^2)$, giving (v).
 >
-> *Sufficiency.* (iii): $n = 12k = 6(2k)$; (iv): $12 = 6 \times 2$. (vi): if $n = 2a$ and $n = 3b$, then $b = 3b - 2b = 2a - 2b = 2(a - b)$, so $n = 3b = 6(a - b)$. (v): suppose $6 \mid n^2$; then $2 \mid n^2$ and $3 \mid n^2$. An integer whose square is even is even ([[§4 Proof by Contradiction#^ex-4-2|Ex. §4.2]](b)), so $2 \mid n$. If $3 \nmid n$, then $n = 3q + r$ with $r = 1$ or $2$ (division by $3$, [[§15 The Division Theorem|§15]]), and $n^2 = 3(3q^2 + 2qr) + r^2$ with $r^2 = 1$ or $4 = 3 + 1$; so $n^2 = 3m + 1$ for an integer $m$. But $3m + 1 = 3p$ would give $1 = 3(p - m)$, impossible since $3k \leq 0$ for $k \leq 0$ and $3k \geq 3$ for $k \geq 1$. So $3 \mid n$, and (vi) gives $6 \mid n$.
+> *Sufficiency.* (iii): $n = 12k = 6(2k)$; (iv): $12 = 6 \times 2$. (vi): if $n = 2a$ and $n = 3b$, then $b = 3b - 2b = 2a - 2b = 2(a - b)$, so $n = 3b = 6(a - b)$. (v): suppose $6 \mid n^2$, say $n^2 = 6k$; then $n^2 = 2(3k) = 3(2k)$, so $2 \mid n^2$ and $3 \mid n^2$. An integer whose square is even is even ([[§4 Proof by Contradiction#^ex-4-2|Ex. §4.2]](b)), so $2 \mid n$. For $3$: from $n^2 = 3c$ we get $n^3 = n \cdot n^2 = 3(nc)$, and $n^3 - n = 3d$ for an integer $d$ since $n$ is a positive integer ([[§5 The Induction Principle#^ex-5-1|Ex. §5.1]](a)); hence $n = n^3 - (n^3 - n) = 3(nc - d)$, and $3 \mid n$. Now (vi) gives $6 \mid n$.
 >
 > *Source: HW2*
 > *Eccles: Problems I Q5*
 
 ^ex-2-12
 
-*Uses:* [[§2 Implications#^def-2-3|Def. §2.3]], [[§2 Implications#^def-2-6|Def. §2.6]], [[§4 Proof by Contradiction#^ex-4-2|Ex. §4.2]], [[§15 The Division Theorem|§15]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]
+*Uses:* [[§2 Implications#^def-2-3|Def. §2.3]], [[§2 Implications#^def-2-6|Def. §2.6]], [[§4 Proof by Contradiction#^ex-4-2|Ex. §4.2]], [[§5 The Induction Principle#^ex-5-1|Ex. §5.1]]
+
+Once the division theorem is available, the step $3 \mid n^2 \Rightarrow 3 \mid n$ also follows by dividing $n$ by $3$ and squaring the possible remainders: [[§15 The Division Theorem#^prop-15-3|Proposition §15.3]].
 
 ## 2.3 Mathematical Truth
 
-Proofs must start somewhere. Euclid's *Elements* began from axioms regarded as self-evident truths; in the modern view, axioms are simply statements assumed to be true, and mathematics explores what follows from them by accepted rules of deduction. (The discovery of non-Euclidean geometries in the nineteenth century showed that different axiom systems can be equally valid.) Developing arithmetic formally from axioms would be cumbersome here: we take the basic algebraic properties of numbers for granted, and state the order properties as axioms in [[§3 Proofs#^def-3-1|Def. §3.1]]. The positive integers have a particularly simple axiom system, Peano's axioms ([[§9 Injections, Surjections and Bijections|§9]]).
+Proofs must start somewhere. Euclid's *Elements* began from axioms regarded as self-evident truths; in the modern view, axioms are simply statements assumed to be true, and mathematics explores what follows from them by accepted rules of deduction. (The discovery of non-Euclidean geometries in the nineteenth century showed that different axiom systems can be equally valid.) Developing arithmetic formally from axioms would be cumbersome here: we take the basic algebraic properties of numbers for granted, and state the order properties as axioms in [[§3 Proofs#^def-3-1|Def. §3.1]]. The positive integers have a particularly simple axiom system, Peano's axioms ([[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]]), one of which is the induction principle of [[§5 The Induction Principle#^def-5-1|Def. §5.1]].
 
 > [!definition] Definition §2.8: Algebraic Properties of the Real Numbers
 > Any two real numbers $a, b$ have a **sum** $a + b$ and a **product** $ab$ (also $a \cdot b$, $a \times b$), which are real numbers, and:

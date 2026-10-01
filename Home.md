@@ -2,6 +2,7 @@
 
 ## Subjects
 **Math**
+- [[Logic and Proofs]]
 - [[Linear Algebra]]
 - [[Single Variable Analysis]]
 - [[Multivariable Analysis]]

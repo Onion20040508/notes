@@ -149,7 +149,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 > [!remark] Remark: Many Pictures, One Notion
 > A table of values, a diagram of arrows, a placing of objects into boxes, a formula, and (below) a graph are all ways of describing a function. Each suits some purposes better than others, and each makes different properties visible; in [[§9 Injections, Surjections and Bijections|§9]], injectivity and surjectivity are read off from each of them. What they share is the defining property: exactly one value at each point of the domain.
 >
-> *Eccles: §8.1*
+> *Eccles: Section 8.1*
 
 ^rem-8-1
 
@@ -169,7 +169,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 > [!remark] Remark: The Order in g∘f
 > Since values are written $f(x)$, with the function on the left, "apply $f$, then $g$" is written $g \circ f$, in the opposite order to the order of application: $X \xrightarrow{\ f\ } Y \xrightarrow{\ g\ } Z$. Avoid the phrase "the composite of $f$ and $g$" when both orders make sense; write $g \circ f$ or $f \circ g$.
 >
-> *Eccles: §8.2*
+> *Eccles: Section 8.2*
 
 ^rem-8-2
 
@@ -240,7 +240,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 ^def-8-7
 
-Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto 2^n$, $n \mapsto (1 + 1/n)^n$), but the more interesting ones are defined inductively, like the Fibonacci sequence in [[§5 The Induction Principle|§5]]; even $2^n$ and $n!$ are, strictly, inductive definitions. A central use of quantifiers is the definition of the limit of a sequence; the simplest case is limit $0$.
+Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto 2^n$, $n \mapsto (1 + 1/n)^n$), but the more interesting ones are defined inductively, like the Fibonacci sequence ([[§5 The Induction Principle#^def-5-5|Def. §5.5]]); even $2^n$ and $n!$ are, strictly, inductive definitions ([[§5 The Induction Principle#^def-5-3|Def. §5.3]], [[§5 The Induction Principle#^def-5-4|Def. §5.4]]). A central use of quantifiers is the definition of the limit of a sequence; the simplest case is limit $0$.
 
 > [!definition] Definition §8.8: Null Sequence
 > A sequence $f : \Z^+ \to \R$ is **null**, written $\lim f = 0$ or $\displaystyle\lim_{n \to \infty} f(n) = 0$, when
@@ -265,7 +265,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 > \frac{1}{\sqrt{n}} < \varepsilon \iff \frac{1}{n} < \varepsilon^2 \iff n > \frac{1}{\varepsilon^2}.
 > $$
 >
-> Any positive integer $N > 1/\varepsilon^2$ will do: $\varepsilon = 1$ needs $N > 1$, $\varepsilon = \frac12$ needs $N > 4$, $\varepsilon = \frac{1}{100}$ needs $N > 10000$. The smaller $\varepsilon$, the larger $N$ must be; $N$ depends on $\varepsilon$, as the order $\forall \varepsilon\, \exists N$ allows ([[§7 Quantifiers|§7]]).
+> Any positive integer $N > 1/\varepsilon^2$ will do: $\varepsilon = 1$ needs $N > 1$, $\varepsilon = \frac12$ needs $N > 4$, $\varepsilon = \frac{1}{100}$ needs $N > 10000$. The smaller $\varepsilon$, the larger $N$ must be; $N$ depends on $\varepsilon$, as the order $\forall \varepsilon\, \exists N$ allows ([[§7 Quantifiers#^rem-7-4|§7, remark on statements with two quantifiers]]).
 >
 > **Proof of (a).** Let $\varepsilon \in \R^+$. Choose a positive integer $N > 1/\varepsilon$ (one exists because the positive integers are unbounded in $\R$). If $n \in \Z^+$ and $n \ge N$, then $n > 1/\varepsilon$, so $|1/n| = 1/n < \varepsilon$.
 >
@@ -332,7 +332,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 >
 > In particular, not every subset of $X \times Y$ is a graph.
 >
-> *Eccles: §8.5 (after Example 8.5.3)*
+> *Eccles: Section 8.5 (after Example 8.5.3)*
 
 ^prop-8-2
 
@@ -350,7 +350,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 > [!remark] Remark: A Function Is Its Graph
 > Definition §8.1 rests on the undefined word "assignment". In more advanced mathematics a function $X \to Y$ is *defined* to be a subset of $X \times Y$ in which each element of $X$ occurs as the first coordinate of exactly one element; by Proposition §8.2 this captures exactly the same objects, and it reduces functions to sets.
 >
-> *Eccles: footnote to §8.5*
+> *Eccles: footnote to Section 8.5*
 
 ^rem-8-3
 

@@ -18,7 +18,7 @@ This section sets up the vocabulary of sets that the rest of the subject is writ
 > [!definition] Definition §6.1: Set and Element
 > A **set** is a well-defined collection of objects, its **elements** (or **members**, or **points**). We write $x \in E$ for the statement that $x$ is an element of the set $E$, and $x \notin E$ for its negation. A set is a single mathematical object; it may itself be an element of another set.
 >
-> *Eccles: §6.1*
+> *Eccles: Section 6.1*
 
 ^def-6-1
 
@@ -44,7 +44,7 @@ The standard sets of numbers, $\Z$, $\Z^+$, $\N = \{0, 1, 2, \ldots\}$, $\Q$, $\
 >
 > In (2) and (3) the variable $x$ is a **dummy variable**: it can be replaced by any symbol not already in use without changing the set.
 >
-> *Eccles: §6.1(a)–(c)*
+> *Eccles: Section 6.1(a)–(c)*
 
 ^def-6-2
 
@@ -56,7 +56,7 @@ The standard sets of numbers, $\Z$, $\Z^+$, $\N = \{0, 1, 2, \ldots\}$, $\Q$, $\
 >
 > Note that $\{n \in \Z \mid 0 < n < 6\}$ is an object, not a statement: it is neither true nor false. Statements can be made about it, such as $2 \in \{n \in \Z \mid 0 < n < 6\}$ (true), or $m \in \{n \in \Z \mid 0 < n < 6\}$, which is the predicate "$m \in \Z$ and $0 < m < 6$".
 >
-> *Eccles: §6.1(a)–(c)*
+> *Eccles: Section 6.1(a)–(c)*
 
 ^ex-6-1
 
@@ -67,7 +67,7 @@ The standard sets of numbers, $\Z$, $\Z^+$, $\N = \{0, 1, 2, \ldots\}$, $\Q$, $\
 > \{3\} = \{x \in \Z \mid x = 3\}, \qquad \{1, 2, 3\} = \{x \in \Z \mid 0 < x < 4\}, \qquad \{1, 3\} = \{x \in \Z \mid 0 < x < 4 \text{ and } x \text{ is odd}\}.
 > $$
 >
-> The first is immediate. For the second, the integers $x$ with $0 < x < 4$ are exactly $1, 2, 3$, since there is no integer strictly between two consecutive integers. For the third, of these three only $1$ and $3$ are odd.
+> The first is immediate. For the second, the integers $x$ with $0 < x < 4$ are exactly $1, 2, 3$, since there is no integer strictly between two consecutive integers ([[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]). For the third, of these three only $1$ and $3$ are odd.
 >
 > *Source: HW3*
 > *Eccles: Exercise 6.3*
@@ -102,6 +102,8 @@ The standard sets of numbers, $\Z$, $\Z^+$, $\N = \{0, 1, 2, \ldots\}$, $\Q$, $\
 
 ^ex-6-3
 
+Quadratic inequalities are solved in the same way, with the sign rules for products in place of the zero-product rule: [[§6 The Language of Set Theory#^ex-6-10|Example §6.10]].
+
 > [!definition] Definition §6.4: The Empty Set
 > The **empty set** $\emptyset$ is the unique set which has no elements at all. (Uniqueness: [[§6 The Language of Set Theory#^prop-6-1|Proposition §6.1]](4).)
 >
@@ -132,7 +134,7 @@ The standard sets of numbers, $\Z$, $\Z^+$, $\N = \{0, 1, 2, \ldots\}$, $\Q$, $\
 > 4. $\emptyset \subseteq A$ for every set $A$, and $A \subseteq \emptyset$ only if $A = \emptyset$. There is only one set with no elements.
 > 5. If sets are defined by predicates on a set $A$, then "$P(a) \Rightarrow Q(a)$ for all $a \in A$" is equivalent to $\{a \in A \mid P(a)\} \subseteq \{a \in A \mid Q(a)\}$: implication between predicates corresponds to inclusion between their solution sets.
 >
-> *Eccles: §6.1 (after Definition 6.1.4)*
+> *Eccles: Section 6.1 (after Definition 6.1.4)*
 
 ^prop-6-1
 
@@ -287,7 +289,7 @@ The standard sets of numbers, $\Z$, $\Z^+$, $\N = \{0, 1, 2, \ldots\}$, $\Q$, $\
 
 ^pf-6-2
 
-*Uses:* [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]], [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§1 The Language of Mathematics|§1]]
+*Uses:* [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]], [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]
 
 ![[m250-6-1.svg]]
 *The Venn diagram of Proposition §6.2: the four rows of the truth table are the four regions. $A - B$ (blue), $A \cap B$ (red) and $B - A$ (green) do not overlap, and together they fill $A \cup B$; the fourth row is the region outside both circles.*
@@ -316,11 +318,13 @@ The standard sets of numbers, $\Z$, $\Z^+$, $\N = \{0, 1, 2, \ldots\}$, $\Q$, $\
 > \mathcal{P}(X) = \{\emptyset, \{a\}, \{b\}, \{c\}, \{a, b\}, \{a, c\}, \{b, c\}, X\}.
 > $$
 >
-> Note $\emptyset \in \mathcal{P}(X)$ for every set $X$, since $\emptyset \subseteq X$ ([[§6 The Language of Set Theory#^prop-6-1|Proposition §6.1]](4)), and $X \in \mathcal{P}(X)$. Here $X$ has $3$ elements and $\mathcal{P}(X)$ has $8 = 2^3$; the general count is in [[§12★ Counting Functions and Subsets|§12★]].
+> Note $\emptyset \in \mathcal{P}(X)$ for every set $X$, since $\emptyset \subseteq X$ ([[§6 The Language of Set Theory#^prop-6-1|Proposition §6.1]](4)), and $X \in \mathcal{P}(X)$. Here $X$ has $3$ elements and $\mathcal{P}(X)$ has $8 = 2^3$.
 >
 > *Eccles: Example 6.3.2*
 
 ^ex-6-6
+
+In general a set with $n$ elements has $2^n$ subsets: [[§12★ Counting Functions and Subsets#^prop-12-4|Proposition §12.4]].
 
 > [!definition] Definition §6.10: Universal Set; Complement
 > Often all the sets under consideration are subsets of one fixed set $U$, the **universal set**. Once $U$ is fixed, the **complement** of $A \in \mathcal{P}(U)$ is
@@ -458,3 +462,33 @@ Once these laws are available, further identities follow by algebra, without ret
 > *Eccles: Exercises 6.5, 6.7*
 
 ^ex-6-9
+
+> [!example] Example §6.10: Solving a Quadratic Inequality
+> Prove that
+> (i) $\{x \in \R \mid x^2 + x - 2 = 0\} = \{1, -2\}$;
+> (ii) $\{x \in \R \mid x^2 + x - 2 < 0\} = (-2, 1)$;
+> (iii) $\{x \in \R \mid x^2 + x - 2 > 0\} = \{x \in \R \mid x < -2\} \cup \{x \in \R \mid x > 1\}$.
+>
+> **Solution.** Factor $x^2 + x - 2 = (x - 1)(x + 2)$, and use the sign of a product ([[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]], [[§4 Proof by Contradiction#^prop-4-5|Proposition §4.5]]). For a real number $x$:
+>
+> (i) $(x - 1)(x + 2) = 0 \iff x - 1 = 0$ or $x + 2 = 0 \iff x = 1$ or $x = -2$, as in [[§6 The Language of Set Theory#^ex-6-3|Example §6.3]].
+>
+> (ii) $(x - 1)(x + 2) < 0 \iff (x - 1 > 0$ and $x + 2 < 0)$ or $(x - 1 < 0$ and $x + 2 > 0) \iff (x > 1$ and $x < -2)$ or $(x < 1$ and $x > -2)$. The first alternative never holds, since $x > 1$ and $x < -2$ would give $1 < -2$. So the condition is $-2 < x < 1$, i.e. $x \in (-2, 1)$.
+>
+> (iii) $(x - 1)(x + 2) > 0 \iff (x > 1$ and $x > -2)$ or $(x < 1$ and $x < -2) \iff x > 1$ or $x < -2$, since $x > 1$ already implies $x > -2$, and $x < -2$ already implies $x < 1$. This is membership of the union ([[§6 The Language of Set Theory#^def-6-7|Def. §6.7]]).
+>
+> The three cases can be read off at once from a table of signs:
+>
+> | | $x - 1$ | $x + 2$ | $(x - 1)(x + 2)$ |
+> |:-:|:-:|:-:|:-:|
+> | $x < -2$ | $-$ | $-$ | $+$ |
+> | $x = -2$ | $-$ | $0$ | $0$ |
+> | $-2 < x < 1$ | $-$ | $+$ | $-$ |
+> | $x = 1$ | $0$ | $+$ | $0$ |
+> | $x > 1$ | $+$ | $+$ | $+$ |
+>
+> *Eccles: Exercise 6.2*
+
+^ex-6-10
+
+*Uses:* [[§4 Proof by Contradiction#^prop-4-4|§4.4]], [[§4 Proof by Contradiction#^prop-4-5|§4.5]], [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]]

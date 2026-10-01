@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 17 · MAT 250 HW7 (Exercises 17.1, 17.2, 17.6; Problems IV, Q10, Q11).*
 
-Run backwards (or, better, carried along), the Euclidean algorithm of [[§16 The Euclidean Algorithm|§16]] writes $\gcd(a, b)$ as $am + bn$ with integers $m, n$. This fact (Bézout's identity) is both a computational tool and the theoretical key to elementary number theory. From it: every common divisor divides the gcd; $a$ and $b$ are coprime exactly when $am + bn = 1$ is solvable; and if $a \mid bc$ with $a, b$ coprime then $a \mid c$. The last of these is the lemma behind unique factorization ([[§23 The Sequence of Prime Numbers|§23]]).
+Run backwards (or, better, carried along), the Euclidean algorithm ([[§16 The Euclidean Algorithm#^thm-16-3|Theorem §16.3]]) writes $\gcd(a, b)$ as $am + bn$ with integers $m, n$. This fact (Bézout's identity) is both a computational tool and the theoretical key to elementary number theory. From it: every common divisor divides the gcd; $a$ and $b$ are coprime exactly when $am + bn = 1$ is solvable; and if $a \mid bc$ with $a, b$ coprime then $a \mid c$. The last of these is the lemma behind unique factorization ([[§23 The Sequence of Prime Numbers#^thm-23-5|Theorem §23.5]]).
 
 ## 17.1 Integral Linear Combinations
 
@@ -95,13 +95,13 @@ So [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]] say
 
 ^pf-17-1
 
-*Uses:* [[§16 The Euclidean Algorithm#^thm-16-3|§16.3]], [[§16 The Euclidean Algorithm#^def-16-1|Def. §16.1]], [[§17 Consequences of the Euclidean Algorithm#^def-17-1|Def. §17.1]], induction ([[§5 The Induction Principle|§5]])
+*Uses:* [[§16 The Euclidean Algorithm#^thm-16-3|§16.3]], [[§16 The Euclidean Algorithm#^def-16-1|Def. §16.1]], [[§17 Consequences of the Euclidean Algorithm#^def-17-1|Def. §17.1]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]] (induction)
 
 > [!remark]- Connections
 > - The same theorem in group theory: [[§5 A Zoo of Subgroups#^cor-5-2|493 Cor. §5.2]] ([[Bézout's Identity]]). There it is proved with subgroups: $a\Z + b\Z$ is a subgroup of $\Z$, hence equal to $e\Z$ for some $e > 0$ ([[§5 A Zoo of Subgroups#^prop-5-1|493 Prop. §5.1]]), and then $e = \gcd(a, b)$. That proof only shows that $m$ and $n$ exist. Eccles's proof is the algorithm itself, so it also computes them. 493 computes them the same way when it needs an actual inverse: [[§8 Invertibility and Unit Groups#^ex-8-3|493 Ex. §8.3]].
 
 > [!remark]- Remark: A Second Proof by Well-Ordering
-> Eccles's Problems IV, Q14 gives a proof without the algorithm, which is the subgroup proof of 493 in elementary dress. Let $a, b > 0$ and let $S = \{am + bn \mid m, n \in \Z,\ am + bn > 0\}$. Then $a \in S$, so by the well-ordering principle ([[§11 Properties of Finite Sets#^ex-11-3|Example §11.3]](c)) $S$ has a least element $c = am_0 + bn_0$.
+> Eccles's Problems IV, Q14 gives a proof without the algorithm, which is the subgroup proof of 493 in elementary dress. Let $a, b > 0$ and let $S = \{am + bn \mid m, n \in \Z,\ am + bn > 0\}$. Then $a \in S$, so by the well-ordering principle ([[§5 The Induction Principle#^cor-5-7|Corollary §5.7]]) $S$ has a least element $c = am_0 + bn_0$.
 > - *$c \mid a$.* Divide: $a = cq + r$ with $0 \le r < c$ ([[§15 The Division Theorem#^thm-15-1|Theorem §15.1]]). Then $r = a - cq = a(1 - qm_0) + b(-qn_0)$ is an integral linear combination. If $r > 0$ then $r \in S$ and $r < c$, contradicting minimality. So $r = 0$. Likewise $c \mid b$.
 > - *$c = \gcd(a,b)$.* By the first point $c \in D(a, b)$, so $c \le \gcd(a, b)$. Conversely $\gcd(a, b)$ divides $a$ and $b$, hence divides $am_0 + bn_0 = c$, so $\gcd(a, b) \le c$.
 >
@@ -194,13 +194,13 @@ So [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]] say
 ^cor-17-2
 
 > [!proof]+ Proof
-> (*If.*) Suppose $c \mid d$. Since $d \mid a$, transitivity of divisibility ([[§3 Proofs|§3]], Eccles Exercise 3.2) gives $c \mid a$, and likewise $c \mid b$.
+> (*If.*) Suppose $c \mid d$. Since $d \mid a$, transitivity of divisibility ([[§3 Proofs#^ex-3-3|Example §3.3]], Eccles Exercise 3.2) gives $c \mid a$, and likewise $c \mid b$.
 >
 > (*Only if.*) By [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]], $d = am + bn$ for some $m, n \in \Z$. If $c \mid a$ and $c \mid b$, say $a = cq_1$ and $b = cq_2$, then $d = (cq_1)m + (cq_2)n = c(q_1 m + q_2 n)$, so $c \mid d$.
 
 ^pf-17-2
 
-*Uses:* [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]], [[§16 The Euclidean Algorithm#^def-16-1|Def. §16.1]], transitivity of "divides" ([[§3 Proofs|§3]])
+*Uses:* [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]], [[§16 The Euclidean Algorithm#^def-16-1|Def. §16.1]], [[§3 Proofs#^ex-3-3|Ex. §3.3]] (transitivity of "divides")
 
 So $d = \gcd(a, b)$ satisfies (ii)′. Conversely, if a positive common divisor $d'$ satisfies (ii)′, then $d \mid d'$ (as $d$ is a common divisor), so $d \le d'$; and $d' \le d$ by (ii) for $d$. Hence $d' = d$, and the two definitions single out the same number.
 
@@ -246,7 +246,7 @@ Recall ([[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]): integers $a, 
 ^prop-17-3
 
 > [!remark] Remark: Using an Existence Statement
-> One direction is a special case of [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]. In the other direction we *start* from an existence statement, and the way to use one is to take particular elements that satisfy it: integers $m_0, n_0$ with $am_0 + bn_0 = 1$. (One often reuses the letters $m, n$, as in [[§7 Quantifiers|§7]]; fresh symbols are clearer here.) Then unpack the goal $\gcd(a, b) = 1$: for every integer $c$, if $c \mid a$ and $c \mid b$ then $c = \pm 1$. The direct method now finishes it by spelling out "divides".
+> One direction is a special case of [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]. In the other direction we *start* from an existence statement, and the way to use one is to take particular elements that satisfy it: integers $m_0, n_0$ with $am_0 + bn_0 = 1$. (One often reuses the letters $m, n$; fresh symbols are clearer here, as recommended in [[§7 Quantifiers#^rem-7-2|the remark in §7.3]].) Then unpack the goal $\gcd(a, b) = 1$: for every integer $c$, if $c \mid a$ and $c \mid b$ then $c = \pm 1$. The direct method now finishes it by spelling out "divides".
 
 ^rem-17-3
 
@@ -300,14 +300,14 @@ Recall ([[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]): integers $a, 
 *Uses:* [[§17 Consequences of the Euclidean Algorithm#^prop-17-3|§17.3]]
 
 > [!remark]- Connections
-> - Developed further in: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|493 Lemma §9.1]] ([[Euclid's Lemma]]). It has the same general statement and the same proof from Bézout, with the prime case $p \mid ab \Rightarrow p \mid a$ or $p \mid b$ deduced from it. That case gives unique factorization, here in [[§23 The Sequence of Prime Numbers|§23]] and in group theory as [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|493 Thm. §9.2]].
+> - Developed further in: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|493 Lemma §9.1]] ([[Euclid's Lemma]]). It has the same general statement and the same proof from Bézout, with the prime case $p \mid ab \Rightarrow p \mid a$ or $p \mid b$ deduced from it (here [[§23 The Sequence of Prime Numbers#^thm-23-2|Theorem §23.2]]). That case gives unique factorization, here in [[§23 The Sequence of Prime Numbers#^thm-23-5|Theorem §23.5]] and in group theory as [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|493 Thm. §9.2]].
 
 > [!example] Example §17.7: Equal Cross-Products of Coprime Pairs
 > **Claim.** Let $a_1, a_2, b_1, b_2$ be positive integers with $\gcd(a_1, b_1) = 1$ and $\gcd(a_2, b_2) = 1$. If $a_1 b_2 = a_2 b_1$, then $a_1 = a_2$ and $b_1 = b_2$.
 >
 > **Proof.** Since $a_2 \mid a_2 b_1 = a_1 b_2 = b_2 a_1$ and $\gcd(a_2, b_2) = 1$, [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]] gives $a_2 \mid a_1$. Symmetrically, $a_1 \mid a_1 b_2 = a_2 b_1 = b_1 a_2$ and $\gcd(a_1, b_1) = 1$ give $a_1 \mid a_2$. For positive integers, $x \mid y$ implies $x \le y$ (as $y = xk$ with $k \ge 1$). So $a_2 \le a_1 \le a_2$, i.e. $a_1 = a_2$. Cancelling $a_1 \neq 0$ in $a_1 b_2 = a_1 b_1$ gives $b_1 = b_2$.
 >
-> Since $a_1/b_1 = a_2/b_2 \iff a_1 b_2 = a_2 b_1$, this shows that a positive rational number has only one expression as a fraction in lowest terms ([[§13 Number Systems|§13]], Eccles Definition 13.1.3).
+> Since $a_1/b_1 = a_2/b_2 \iff a_1 b_2 = a_2 b_1$ ([[§13 Number Systems#^prop-13-1|Proposition §13.1]]), this shows that a positive rational number has only one expression as a fraction in lowest terms ([[§13 Number Systems#^def-13-2|Definition §13.2]]). The same follows for every rational: a negative $q$ has numerator $< 0$ in every lowest-terms fraction, so apply the claim to $-q$; and $0 = 0/b$ is in lowest terms only for $b = \gcd(0, b) = 1$.
 >
 > *Eccles: Exercise 17.6*
 > *Source: HW7*

@@ -9,7 +9,7 @@ tags: [chapter, logic-and-proofs]
 
 *Eccles, Chapters 23–24.*
 
-**Builds on:** [[· 3 Numbers and Counting|3 Numbers and Counting]] (5), [[· 4 Arithmetic|4 Arithmetic]] (4), [[· 5 Modular Arithmetic|5 Modular Arithmetic]] (6)
+**Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (6), [[· 2 Sets and Functions|2 Sets and Functions]] (1), [[· 3 Numbers and Counting|3 Numbers and Counting]] (7), [[· 4 Arithmetic|4 Arithmetic]] (5), [[· 5 Modular Arithmetic|5 Modular Arithmetic]] (7)
 **Used by:** —
 **Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Group Theory]] (10)
 

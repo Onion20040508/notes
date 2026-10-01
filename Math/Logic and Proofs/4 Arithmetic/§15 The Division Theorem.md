@@ -57,14 +57,14 @@ Arithmetic begins with division with remainder: every integer $a$ is $bq + r$ wi
 
 ^pf-15-1
 
-*Uses:* [[§11 Properties of Finite Sets#^prop-11-9|§11.9]], proof by contradiction ([[§4 Proof by Contradiction|§4]])
+*Uses:* [[§11 Properties of Finite Sets#^prop-11-9|§11.9]], [[§11 Properties of Finite Sets#^cor-11-4|§11.4]] ($A$ is finite), proof by contradiction ([[§4 Proof by Contradiction#^thm-4-2|§4.2]])
 
 > [!remark]- Connections
 > - Same result, with existence proved by well-ordering (the route of Eccles's footnote): [[§6 Divisibility and Congruence#^lem-6-1|493 Lemma §6.1]] (the Division Algorithm), where $r$ is also written $a \bmod n$ ([[§6 Divisibility and Congruence#^def-6-2|493 Def. §6.2]]).
 > - It is the only tool used to classify the subgroups of $\Z$: [[§5 A Zoo of Subgroups#^prop-5-1|493 Prop. §5.1]].
 
 > [!remark]- Remark: Other Routes to Existence
-> Eccles's footnote: drop the condition $k \ge 0$ and use $A' = \{k \in \Z \mid bk \le a\}$ for every $a$. This set is infinite, since it contains all large negative integers, but it is non-empty and bounded above by $|a|$, so it still has a maximum. Getting that maximum needs the well-ordering principle ([[§11 Properties of Finite Sets#^ex-11-3|Example §11.3]](c)) rather than the finite-set fact. Eccles keeps to finite sets, and in practice one handles $a < 0$ through $-a$ anyway, as in Example §15.1 below.
+> Eccles's footnote: drop the condition $k \ge 0$ and use $A' = \{k \in \Z \mid bk \le a\}$ for every $a$. This set is infinite, since it contains all large negative integers, but it is non-empty and bounded above by $|a|$, so it still has a maximum. Getting that maximum needs the well-ordering principle ([[§5 The Induction Principle#^cor-5-7|Corollary §5.7]], applied to $\{|a| + 1 - k \mid k \in A'\}$) rather than the finite-set fact. Eccles keeps to finite sets, and in practice one handles $a < 0$ through $-a$ anyway, as in Example §15.1 below.
 
 ^rem-15-2
 
@@ -151,7 +151,7 @@ The uniqueness half of the theorem is used through the following corollary.
 *Uses:* [[§15 The Division Theorem#^thm-15-1|§15.1]], [[§15 The Division Theorem#^cor-15-2|§15.2]]
 
 > [!remark]- Connections
-> - This is the fact asserted without proof in Eccles Exercise 13.1 (no rational number has square $3$; see [[§13 Number Systems|§13]]). The general version for every prime, $p \mid a^2 \Rightarrow p \mid a$, is the case $a = b$ of [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|493 Lemma §9.1]] (Euclid's lemma), proved here as [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]].
+> - This is the fact assumed in Eccles Exercise 13.1 (no rational number has square $3$; [[§13 Number Systems#^ex-13-1|Example §13.1]]). The general version for every prime, $p \mid a^2 \Rightarrow p \mid a$, is the case $a = b$ of [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|493 Lemma §9.1]] (Euclid's lemma), proved here as [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]].
 > - Developed further in: [[§2 The Set ℚ of Rational Numbers#^prop-2-2|451 Prop. §2.2]] ($\sqrt m$ is rational only for perfect squares $m$).
 
 The proof shows more than was asked: for every integer $a$, the remainder of $a^2$ on division by $3$ is $0$ or $1$, never $2$. That gives a quick test for non-squares.

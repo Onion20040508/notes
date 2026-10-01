@@ -20,7 +20,7 @@ Numbers arose for counting, which needs only the positive integers; subtraction 
 
 ## 13.1 The Rational Numbers
 
-The integers can be added, subtracted and multiplied, but not always divided: for integers $b \ne 0$ and $a$, the equation $bx = a$ has an integer solution only if $b \mid a$. The rational numbers satisfy all the basic algebraic properties of the integers (Eccles Properties 2.3.1) and in addition: for integers $b \ne 0$ and $a$ there is a unique rational $q$ with $bq = a$; and they are just enough for this, since for every rational $q$ there are integers $b \ne 0$ and $a$ with $bq = a$. For now we take such a system as given and describe it through fractions; its construction from $\Z$ is in [[§22 Partitions and Equivalence Relations|§22]] (Eccles Example 22.3.5 and the Rational Number Project). A rational number and a fraction are different things: every rational number is represented by a fraction, but different fractions may represent the same rational number.
+The integers can be added, subtracted and multiplied, but not always divided: for integers $b \ne 0$ and $a$, the equation $bx = a$ has an integer solution only if $b \mid a$. The rational numbers satisfy all the basic algebraic properties of the integers ([[§2 Implications#^def-2-8|Definition §2.8]], Eccles Properties 2.3.1) and in addition: for integers $b \ne 0$ and $a$ there is a unique rational $q$ with $bq = a$; and they are just enough for this, since for every rational $q$ there are integers $b \ne 0$ and $a$ with $bq = a$. For now we take such a system as given and describe it through fractions; its construction from $\Z$ is in §22 ([[§22 Partitions and Equivalence Relations#^def-22-6|Definition §22.6]] and [[§22 Partitions and Equivalence Relations#^thm-22-9|Theorem §22.9]]; Eccles Example 22.3.5 and the Rational Number Project). A rational number and a fraction are different things: every rational number is represented by a fraction, but different fractions may represent the same rational number.
 
 > [!definition] Definition §13.1: Fraction; the Rational Number It Represents
 > A **fraction** is an expression $a/b$ with $a, b \in \Z$ and $b \ne 0$; $a$ is its **numerator** and $b$ its **denominator**. The fraction $a/b$ **represents** the **rational number** $q$ with $bq = a$. As a temporary notation, write $q = \langle a/b \rangle$.
@@ -68,13 +68,13 @@ For example $\langle 2/3 \rangle = \langle 8/12 \rangle = \langle (-14)/(-21) \r
 ^prop-13-2
 
 > [!proof]+ Proof
-> Let $q = \langle a/b \rangle$. Multiplying numerator and denominator by $-1$ if necessary (allowed by Proposition [[§13 Number Systems#^prop-13-1|§13.1]], since $(-a)b = a(-b)$), we may take $b > 0$. If $a = 0$ then $q = \langle 0/1 \rangle$ and $(0, 1) = 1$. Otherwise let $d = (a, b) > 0$; then $a/d$ and $b/d$ are coprime integers (Proposition [[§11 Properties of Finite Sets#^prop-11-10|§11.10]]), $b/d > 0$, and $\langle (a/d)/(b/d) \rangle = \langle a/b \rangle$ because $(a/d)\, b = a\, (b/d)$.
+> Let $q = \langle a/b \rangle$. Multiplying numerator and denominator by $-1$ if necessary (allowed by Proposition [[§13 Number Systems#^prop-13-1|§13.1]], since $(-a)b = a(-b)$), we may take $b > 0$. If $a = 0$ then $q = \langle 0/1 \rangle$ and $\gcd(0, 1) = 1$. Otherwise let $d = \gcd(a, b) > 0$; then $a/d$ and $b/d$ are coprime integers (Proposition [[§11 Properties of Finite Sets#^prop-11-10|§11.10]]), $b/d > 0$, and $\langle (a/d)/(b/d) \rangle = \langle a/b \rangle$ because $(a/d)\, b = a\, (b/d)$.
 
 ^pf-13-2
 
 *Uses:* [[§13 Number Systems#^prop-13-1|§13.1]], [[§11 Properties of Finite Sets#^prop-11-10|§11.10]], [[§13 Number Systems#^def-13-2|Def. §13.2]]
 
-The lowest-terms fraction is in fact unique; this needs Euclid's lemma and is Eccles Exercise 17.6 ([[§17 Consequences of the Euclidean Algorithm#^ex-17-7|Example §17.7]]).
+The lowest-terms fraction is in fact unique; this needs Euclid's lemma and is proved later, in [[§17 Consequences of the Euclidean Algorithm#^ex-17-7|Example §17.7]] (Eccles Exercise 17.6). Nothing before §17 uses the uniqueness.
 
 To see how sums look in terms of fractions, let $q_1 = \langle a/b \rangle$ and $q_2 = \langle c/d \rangle$, so $bq_1 = a$ and $dq_2 = c$. Then $bdq_1 = ad$ and $bdq_2 = bc$, so by distributivity $bd(q_1 + q_2) = ad + bc$: $q_1 + q_2$ is represented by $(ad + bc)/bd$. Similarly $bd\,q_1 q_2 = ac$, so $q_1 q_2$ is represented by $ac/bd$.
 
@@ -128,7 +128,7 @@ $$
 A good number system should measure every length. By Pythagoras's theorem the diagonal of a unit square has length $\sqrt2$, a number whose square is $2$. There is no such rational number.
 
 > [!remark] Remark: Constructing the Proof
-> Every non-zero rational is $a/b$ with $a, b$ non-zero integers, so the claim is: there are no $a, b \in \Z - \{0\}$ with $2 = (a/b)^2$. A statement that something does *not* exist is hard to prove directly, which suggests contradiction: assume $a, b \in \Z - \{0\}$ with $a^2 = 2b^2$ and aim for a contradiction. So the theorem is really about integer solutions of $m^2 = 2n^2$, and the tool for showing an equation has no integer solutions is divisibility. From $a^2 = 2b^2$, $a^2$ is even, so $a$ is even, $a = 2a_1$; then $4a_1^2 = 2b^2$, $b^2 = 2a_1^2$, so $b$ is even too. That alone is no contradiction, but it would be if $a/b$ had been in lowest terms. So go back and insist on $(a, b) = 1$ from the start.
+> Every non-zero rational is $a/b$ with $a, b$ non-zero integers, so the claim is: there are no $a, b \in \Z - \{0\}$ with $2 = (a/b)^2$. A statement that something does *not* exist is hard to prove directly, which suggests contradiction: assume $a, b \in \Z - \{0\}$ with $a^2 = 2b^2$ and aim for a contradiction. So the theorem is really about integer solutions of $m^2 = 2n^2$, and the tool for showing an equation has no integer solutions is divisibility. From $a^2 = 2b^2$, $a^2$ is even, so $a$ is even, $a = 2a_1$; then $4a_1^2 = 2b^2$, $b^2 = 2a_1^2$, so $b$ is even too. That alone is no contradiction, but it would be if $a/b$ had been in lowest terms. So go back and insist on $\gcd(a, b) = 1$ from the start.
 
 ^rem-13-2
 
@@ -142,25 +142,25 @@ A good number system should measure every length. By Pythagoras's theorem the di
 > [!proof]+ Proof
 > First, *if $a^2$ is even then $a$ is even* ([[§4 Proof by Contradiction#^ex-4-2|Example §4.2]]; Eccles Problems I Q7): if $a$ is odd then $a = 2q + 1$ ([[§11 Properties of Finite Sets#^prop-11-11|Proposition §11.11]]), and $a^2 = 2(2q^2 + 2q) + 1$ is odd, by the same proposition.
 >
-> Suppose for contradiction that $q \in \Q$ with $q^2 = 2$. Write $q = a/b$ in lowest terms (Proposition [[§13 Number Systems#^prop-13-2|§13.2]]), so $(a, b) = 1$. Then
+> Suppose for contradiction that $q \in \Q$ with $q^2 = 2$. Write $q = a/b$ in lowest terms (Proposition [[§13 Number Systems#^prop-13-2|§13.2]]), so $\gcd(a, b) = 1$. Then
 >
 > $$
 > q^2 = 2 \Rightarrow \frac{a^2}{b^2} = 2 \Rightarrow a^2 = 2b^2 \Rightarrow a^2 \text{ is even} \Rightarrow a \text{ is even} \Rightarrow a = 2a_1 \text{ for some } a_1 \in \Z.
 > $$
 >
-> But then $4a_1^2 = 2b^2$, so $b^2 = 2a_1^2$ is even and $b$ is even. So $2$ divides both $a$ and $b$, and $(a, b) \ge 2$, contradicting $(a, b) = 1$. Hence no rational number has square $2$.
+> But then $4a_1^2 = 2b^2$, so $b^2 = 2a_1^2$ is even and $b$ is even. So $2$ divides both $a$ and $b$, and $\gcd(a, b) \ge 2$, contradicting $\gcd(a, b) = 1$. Hence no rational number has square $2$.
 
 ^pf-13-4
 
 *Uses:* [[§13 Number Systems#^prop-13-2|§13.2]], [[§11 Properties of Finite Sets#^prop-11-11|§11.11]], [[§11 Properties of Finite Sets#^def-11-2|Def. §11.2]], [[§4 Proof by Contradiction#^ex-4-2|Ex. §4.2]]
 
 > [!remark]- Connections
-> - The same theorem in 451: [[§2 The Set ℚ of Rational Numbers#^thm-2-1|451 Thm. §2.1]]; its generalization to all non-square integers, [[§2 The Set ℚ of Rational Numbers#^prop-2-2|451 Prop. §2.2]], is proved there with unique factorization (here [[§23 The Sequence of Prime Numbers|§23]]).
+> - The same theorem in 451: [[§2 The Set ℚ of Rational Numbers#^thm-2-1|451 Thm. §2.1]]; its generalization to all non-square integers, [[§2 The Set ℚ of Rational Numbers#^prop-2-2|451 Prop. §2.2]], is proved there with unique factorization (here [[§23 The Sequence of Prime Numbers#^thm-23-5|Theorem §23.5]]; the irrationality of √2 by factorization is [[§23 The Sequence of Prime Numbers#^ex-23-6|Ex. §23.6]]).
 
 > [!example] Example §13.1: √3 Is Irrational
-> There is no rational number whose square is $3$. (Assume, as proved in [[§15 The Division Theorem#^prop-15-3|Proposition §15.3]] (Eccles Proposition 15.2.1), that $3 \mid a^2$ if and only if $3 \mid a$.)
+> There is no rational number whose square is $3$. (As Eccles's exercise allows, assume that $3 \mid a^2$ if and only if $3 \mid a$; this is proved later, from the division theorem, as [[§15 The Division Theorem#^prop-15-3|Proposition §15.3]] (Eccles Proposition 15.2.1), whose proof does not use this section.)
 >
-> Suppose $x \in \Q$ with $x^2 = 3$, and write $x = p/q$ in lowest terms, $(p, q) = 1$. Then $p^2 = 3q^2$, so $3 \mid p^2$ and hence $3 \mid p$: $p = 3a$ with $a \in \Z$. Substituting, $9a^2 = 3q^2$, so $q^2 = 3a^2$ and as before $3 \mid q$. Then $3$ is a common divisor of $p$ and $q$, contradicting $(p, q) = 1$. So no such $x$ exists.
+> Suppose $x \in \Q$ with $x^2 = 3$, and write $x = p/q$ in lowest terms, $\gcd(p, q) = 1$. Then $p^2 = 3q^2$, so $3 \mid p^2$ and hence $3 \mid p$: $p = 3a$ with $a \in \Z$. Substituting, $9a^2 = 3q^2$, so $q^2 = 3a^2$ and as before $3 \mid q$. Then $3$ is a common divisor of $p$ and $q$, contradicting $\gcd(p, q) = 1$. So no such $x$ exists.
 >
 > *Eccles: Exercise 13.1*
 > *Source: HW4*
@@ -202,7 +202,7 @@ $$
 The idea of an infinite decimal is that its truncations are better and better approximations.
 
 > [!example] Example §13.3: The Decimal Expansion of √2
-> The digits of the positive number whose square is $2$ are found one at a time, using that for non-negative reals $a < b \iff a^2 < b^2$ (Eccles Exercise 4.6).
+> The digits of the positive number whose square is $2$ are found one at a time, using that for non-negative reals $a < b \iff a^2 < b^2$ ([[§4 Proof by Contradiction#^ex-4-5|Example §4.5]], Step 1; Eccles Exercise 4.6).
 > - Step 0: the largest integer whose square is less than $2$ is $1$, since $1^2 < 2 < 2^2$; so $1 < \sqrt2 < 2$ and $a_0 = 1$.
 > - Step 1: square $1.0, 1.1, \ldots, 1.9$ and take the largest with square below $2$ (equality is impossible, $2$ not being a rational square): $(14/10)^2 = 196/100 < 2 < (15/10)^2 = 225/100$, so $1.4 < \sqrt2 < 1.5$ and $a_1 = 4$.
 > - Step 2: $(141/100)^2 = 19881/10000 < 2 < (142/100)^2 = 20164/10000$, so $a_2 = 1$.
@@ -244,7 +244,7 @@ The inequalities are $\le$, not $<$, so that rational numbers such as finite dec
 
 ^pf-13-5
 
-*Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 > [!remark]- Connections
 > - The two facts used about $\R$: the [[Completeness Axiom]] ([[§4 The Completeness Axiom#^def-4-4|451 Def. §4.4]]) and the [[Archimedean Property]] ([[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]]), which 451 derives from completeness. A construction of $\R$ from $\Q$: [[§6 Dedekind Cuts#^def-6-1|451 Def. §6.1]] (Dedekind cuts).
@@ -277,7 +277,7 @@ The inequalities are $\le$, not $<$, so that rational numbers such as finite dec
 *Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§13 Number Systems#^prop-13-5|§13.5]], [[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]]
 
 > [!example] Example §13.5: The First Decimals of √3
-> Since $1^2 < 3 < 2^2$, $1.7^2 = 2.89 < 3 < 3.24 = 1.8^2$ and $1.73^2 = 2.9929 < 3 < 3.0276 = 1.74^2$, and $a < b \iff a^2 < b^2$ for non-negative reals, we get $1.73 < \sqrt3 < 1.74$: $\sqrt3 = 1.73\ldots$
+> Since $1^2 < 3 < 2^2$, $1.7^2 = 2.89 < 3 < 3.24 = 1.8^2$ and $1.73^2 = 2.9929 < 3 < 3.0276 = 1.74^2$, and $a < b \iff a^2 < b^2$ for non-negative reals ([[§4 Proof by Contradiction#^ex-4-5|Example §4.5]]), we get $1.73 < \sqrt3 < 1.74$: $\sqrt3 = 1.73\ldots$
 >
 > *Eccles: Exercise 13.2*
 > *Source: HW4*
@@ -320,7 +320,7 @@ so it moves the decimal point one place to the right, and the same holds for inf
 
 ^pf-13-6
 
-*Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§5 The Induction Principle#^thm-5-3|§5.3]] (induction from $0$)
 
 > [!definition] Definition §13.6: Recurring Decimal
 > An infinite decimal $a_0.a_1a_2\ldots$ is **recurring** (or repeating) if there are integers $k \ge 0$ and $p \ge 1$ such that $a_{i+p} = a_i$ for all $i > k$: after the $k$th place a block of $p$ digits repeats forever. The repeating block is marked by dots over its first and last digits, as in $7.32\dot0081\dot4 = 7.320081400814\ldots$
@@ -392,4 +392,4 @@ The idea: if the repeating block has length $p$, multiply by $10^p$ and subtract
 
 *Uses:* [[§13 Number Systems#^thm-13-7|§13.7]], [[§13 Number Systems#^lem-13-6|§13.6]]
 
-The converse also holds: every rational number is represented by a recurring decimal (Eccles Problems IV Q5). Long division of $a$ by $b$ produces remainders in $\{0, 1, \ldots, b-1\}$; by the pigeonhole principle some remainder recurs, and from then on the digits repeat ([[§15 The Division Theorem|§15]]). So the rational numbers are exactly the recurring decimals, a finite decimal counting as recurring: $a_0.a_1\ldots a_n = a_0.a_1 \ldots a_n \dot0$.
+The converse also holds: every rational number is represented by a recurring decimal (Eccles Problems IV Q5). Long division of $a$ by $b$ produces remainders in $\{0, 1, \ldots, b-1\}$; by the pigeonhole principle ([[§11 Properties of Finite Sets#^thm-11-2|Theorem §11.2]]) some remainder recurs, and from then on the digits repeat (the division theorem, [[§15 The Division Theorem#^thm-15-1|Theorem §15.1]], proved later; Eccles Exercise 15.6). So the rational numbers are exactly the recurring decimals, a finite decimal counting as recurring: $a_0.a_1\ldots a_n = a_0.a_1 \ldots a_n \dot0$.

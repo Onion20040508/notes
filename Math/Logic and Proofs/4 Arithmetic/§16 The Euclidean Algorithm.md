@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 16 · MAT 250 HW7 (Exercises 16.1–16.4; Problems IV, Q6–Q8).*
 
-The greatest common divisor was defined in [[§11 Properties of Finite Sets#^def-11-2|§11]] as the largest common divisor, and computed there by listing all divisors. That is hopeless for large numbers. Euclid's algorithm (*Elements*, Book VII, found independently in China) computes it by repeated division with remainder ([[§15 The Division Theorem|§15]]). Two lemmas drive it: if $b \mid a$ the answer is $b$, and otherwise $\gcd(a, b) = \gcd(b, r)$ where $r$ is the remainder. The proof that the algorithm is correct is an induction hidden behind "and so on". Its by-products, the integral linear combinations of [[§17 Consequences of the Euclidean Algorithm|§17]], are the real payoff.
+The greatest common divisor was defined in [[§11 Properties of Finite Sets#^def-11-2|Definition §11.2]] as the largest common divisor, and computed there by listing all divisors. That is hopeless for large numbers. Euclid's algorithm (*Elements*, Book VII, found independently in China) computes it by repeated division with remainder ([[§15 The Division Theorem#^thm-15-1|Theorem §15.1]]). Two lemmas drive it: if $b \mid a$ the answer is $b$, and otherwise $\gcd(a, b) = \gcd(b, r)$ where $r$ is the remainder. The proof that the algorithm is correct is an induction hidden behind "and so on". Its by-products, the integral linear combinations of [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]], are the real payoff.
 
 ## 16.1 Finding the Greatest Common Divisor
 
@@ -24,7 +24,7 @@ Recall ([[§11 Properties of Finite Sets#^def-11-2|Def. §11.2]]): for integers 
 > D(a, b) = \{c \in \Z \mid c \text{ divides } a \text{ and } c \text{ divides } b\}.
 > $$
 >
-> When $a, b$ are not both zero, $D(a, b)$ is finite and non-empty ($1 \in D(a,b)$), and $\gcd(a, b) = \max D(a, b)$.
+> So $D(a, b) = D(a) \cap D(b)$ in the notation of §11.3. When $a, b$ are not both zero, $D(a, b)$ is finite and non-empty ($1 \in D(a,b)$), and $\gcd(a, b) = \max D(a, b)$ ([[§11 Properties of Finite Sets#^def-11-2|Def. §11.2]]).
 >
 > *Eccles: Section 16.1 (from Section 11.3)*
 
@@ -150,7 +150,7 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 ^ex-16-2
 
 > [!remark] Remark: The Dots Are an Induction
-> In the example, repeated use of [[§16 The Euclidean Algorithm#^lem-16-2|Lemma §16.2]] gives $(232, 136) = (136, 96) = (96, 40) = (40, 16) = (16, 8) = 8$. In general, $(a, b) = (a_0, a_1) = (a_1, a_2) = \cdots = (a_{n-1}, a_n) = a_n$. That is the whole idea of the proof. The dots ("and so on") signal that, strictly, the induction principle ([[§5 The Induction Principle|§5]]) is being used, and the formal proof below makes the induction explicit.
+> In the example, repeated use of [[§16 The Euclidean Algorithm#^lem-16-2|Lemma §16.2]] gives $\gcd(232, 136) = \gcd(136, 96) = \gcd(96, 40) = \gcd(40, 16) = \gcd(16, 8) = 8$. In general, $\gcd(a, b) = \gcd(a_0, a_1) = \gcd(a_1, a_2) = \cdots = \gcd(a_{n-1}, a_n) = a_n$. That is the whole idea of the proof. The dots ("and so on") signal that, strictly, the induction principle ([[§5 The Induction Principle#^def-5-1|Definition §5.1]]) is being used, and the formal proof below makes the induction explicit.
 
 ^rem-16-3
 
@@ -165,7 +165,7 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 
 ^pf-16-3
 
-*Uses:* [[§15 The Division Theorem#^thm-15-1|§15.1]], [[§16 The Euclidean Algorithm#^lem-16-1|§16.1]], [[§16 The Euclidean Algorithm#^lem-16-2|§16.2]], induction ([[§5 The Induction Principle|§5]])
+*Uses:* [[§15 The Division Theorem#^thm-15-1|§15.1]], [[§16 The Euclidean Algorithm#^lem-16-1|§16.1]], [[§16 The Euclidean Algorithm#^lem-16-2|§16.2]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]] (induction)
 
 > [!remark]- Connections
 > - The gcd in group theory: [[§8 Invertibility and Unit Groups#^def-8-1|493 Def. §8.1]]. There the algorithm, run backwards, computes an inverse modulo $26$: [[§8 Invertibility and Unit Groups#^ex-8-3|493 Ex. §8.3]].
@@ -205,7 +205,7 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 ^ex-16-4
 
 > [!example] Example §16.5: Consecutive Fibonacci Numbers
-> Let $u_1 = u_2 = 1$, $u_{m+1} = u_m + u_{m-1}$ be the Fibonacci numbers ([[§5 The Induction Principle|§5]], Eccles Definition 5.4.2). The problem asks to show that the Euclidean algorithm takes precisely $n$ steps to show $\gcd(u_{n+1}, u_n) = 1$. With the step count of [[§16 The Euclidean Algorithm#^thm-16-3|Theorem §16.3]] (every division counts, including the last), the exact count is:
+> Let $u_1 = u_2 = 1$, $u_{m+1} = u_m + u_{m-1}$ be the Fibonacci numbers ([[§5 The Induction Principle#^def-5-5|Definition §5.5]]). The problem asks to show that the Euclidean algorithm takes precisely $n$ steps to show $\gcd(u_{n+1}, u_n) = 1$. With the step count of [[§16 The Euclidean Algorithm#^thm-16-3|Theorem §16.3]] (every division counts, including the last), the exact count is:
 >
 > **Claim.** For $n \ge 2$ the algorithm on $a = u_{n+1}$, $b = u_n$ takes exactly $n - 1$ steps, with $a_k = u_{n+1-k}$ and $q_k = 1$ before the last step. Equivalently, the pair $(u_{n+2}, u_{n+1})$ takes exactly $n$ steps for every $n \ge 1$.
 >
@@ -239,7 +239,7 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 > [!proof]- Solution
 > **Facts about the run.** For $1 \le k \le n$, step $k$ reads $a_{k-1} = a_k q_k + a_{k+1}$, where we write $a_{n+1} = r_n = 0$. Moreover $a_1 > a_2 > \cdots > a_n \ge 1$, and $a_0 = a \ge b = a_1$. Every quotient satisfies $q_k \ge 1$: if $q_k \le 0$ then $a_{k-1} = a_k q_k + a_{k+1} \le a_{k+1} < a_k$, contradicting $a_{k-1} \ge a_k$. If $n \ge 2$ then also $q_n \ge 2$, since $a_{n-1} = a_n q_n$ with $a_{n-1} > a_n$.
 >
-> **Part 1**, by induction on $k$ in which each step uses the *two* preceding cases (strong induction, [[§5 The Induction Principle|§5]]); so two base cases are needed.
+> **Part 1**, by induction on $k$ in which each step uses the *two* preceding cases (strong induction, [[§5 The Induction Principle#^thm-5-6|Theorem §5.6]]); so two base cases are needed.
 > - $k = 0$: $a_n \ge 1 = u_2$.
 > - $k = 1$ (when $n \ge 2$): $a_{n-1} = a_n q_n \ge 1 \cdot 2 = 2 = u_3$.
 > - *Step.* Let $1 \le k \le n - 2$ and suppose $a_{n-k} \ge u_{k+2}$ and $a_{n-k+1} \ge u_{k+1}$. Step $n - k$ gives
@@ -272,4 +272,4 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 
 ^pf-ex-16-6
 
-*Uses:* [[§16 The Euclidean Algorithm#^thm-16-3|§16.3]], [[§16 The Euclidean Algorithm#^ex-16-5|Ex. §16.5]], strong induction ([[§5 The Induction Principle|§5]])
+*Uses:* [[§16 The Euclidean Algorithm#^thm-16-3|§16.3]], [[§16 The Euclidean Algorithm#^ex-16-5|Ex. §16.5]], [[§5 The Induction Principle#^def-5-5|Def. §5.5]], [[§5 The Induction Principle#^thm-5-6|§5.6]] (strong induction)

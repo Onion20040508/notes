@@ -47,7 +47,7 @@ Mathematics proceeds by formulating statements and deciding whether they are tru
 > In the following list, (i)–(v) are propositions, (vi)–(viii) are predicates, and (ix)–(x) are not statements.
 > 1. $1 + 1 = 2$ — a true proposition.
 > 2. $\pi = 3$ — a false proposition.
-> 3. $12$ may be written as the sum of two primes — true, since $12 = 5 + 7$. (A **prime** is an integer greater than $1$ divisible only by $1$ and itself; see [[§23 The Sequence of Prime Numbers|§23]].)
+> 3. $12$ may be written as the sum of two primes — true, since $12 = 5 + 7$. (A **prime** is an integer greater than $1$ divisible only by $1$ and itself.)
 > 4. Every even integer greater than $2$ is the sum of two primes — a proposition whose truth value is unknown (the **Goldbach conjecture**, 1742).
 > 5. The square of every even integer is even — true; it is proved in [[§3 Proofs#^ex-3-3|Ex. §3.3]].
 > 6. $n$ is a prime number — a predicate: true for $n = 2$ and $n = 3$, false for $n = 4$.
@@ -59,6 +59,8 @@ Mathematics proceeds by formulating statements and deciding whether they are tru
 > *Eccles: Section 1.1*
 
 ^ex-1-1
+
+Primes, used informally in (iii), (iv) and (vi), are defined formally and studied in [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]] and the rest of §23.
 
 ## 1.2 Logical Connectives
 
@@ -119,7 +121,7 @@ Mathematics proceeds by formulating statements and deciding whether they are tru
 > [!example] Example §1.3: The Square of the Absolute Value
 > For every real number $a$, $|a|^2 = a^2$.
 >
-> **Solution.** If $a \geq 0$ then $|a| = a$ and $|a|^2 = a^2$. If $a \leq 0$ then $|a| = -a$ and $|a|^2 = (-a)^2 = a^2$ by the rule of signs ([[§2 Implications#^ex-2-13|Ex. §2.13]]). Every real $a$ satisfies $a \geq 0$ or $a \leq 0$, so $|a|^2 = a^2$ always.
+> **Solution.** If $a \geq 0$ then $|a| = a$ and $|a|^2 = a^2$. If $a \leq 0$ then $|a| = -a$ and $|a|^2 = (-a)^2 = a^2$ by the rule of signs (proved from the algebraic properties of numbers in [[§2 Implications#^ex-2-13|Ex. §2.13]]). Every real $a$ satisfies $a \geq 0$ or $a \leq 0$, so $|a|^2 = a^2$ always.
 >
 > *Eccles: Exercise 1.5*
 
@@ -241,6 +243,8 @@ A contradiction $P \wedge \neg P$ is what a proof by contradiction aims to reach
 
 ^def-1-7
 
+For statements with quantifiers, a useful denial also turns each "for all" into "there exists" and vice versa ([[§7 Quantifiers#^thm-7-2|Theorem §7.2]]; worked denials in [[§7 Quantifiers#^ex-7-7|Ex. §7.7]] and [[§7 Quantifiers#^ex-7-11|Ex. §7.11]]).
+
 > [!example] Example §1.5: Denying a Compound Statement
 > Let $P$ be $A \wedge (\neg B \vee C)$. By De Morgan's laws and double negation ([[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1]]),
 >
@@ -285,7 +289,7 @@ A contradiction $P \wedge \neg P$ is what a proof by contradiction aims to reach
 > F \equiv \neg\neg F \equiv \bigwedge_r \bigl(\neg L_{r,1} \vee \cdots \vee \neg L_{r,k}\bigr),
 > $$
 >
-> and each $\neg L_{r,i}$ is $\neg A_i$ or $\neg\neg A_i \equiv A_i$, a literal. This is in CNF.
+> and each $\neg L_{r,i}$ is $\neg A_i$ or $\neg\neg A_i \equiv A_i$, a literal. This is in CNF. (If $F$ is true in every row, the DNF case gives $\neg F \equiv A_1 \wedge \neg A_1$ instead, and then $F \equiv \neg A_1 \vee \neg\neg A_1 \equiv \neg A_1 \vee A_1$, a single disjunction of literals.)
 
 ^pf-1-3
 

@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 11 and Problems III (Q5, Q9–Q11, Q14) · MAT 200 lecture (syllabus week 14).*
 
-Finite sets allow two special kinds of argument: an element with a property can be found by testing the elements one at a time, a search that must end; and a "counting argument" can show that an element with a property exists without looking at any element individually. This section first proves the lemma that [[§10 Counting|§10]] left open, which is the pigeonhole principle in disguise, then shows that finite sets of real numbers have a greatest and a least element, and uses this to define the greatest common divisor and to write odd integers as $2q + 1$.
+Finite sets allow two special kinds of argument: an element with a property can be found by testing the elements one at a time, a search that must end; and a "counting argument" can show that an element with a property exists without looking at any element individually. This section first proves the lemma that §10 left open ([[§10 Counting#^lem-10-2|Lemma §10.2]]), which is the pigeonhole principle in disguise, then shows that finite sets of real numbers have a greatest and a least element, and uses this to define the greatest common divisor and to write odd integers as $2q + 1$.
 
 ## 11.1 The Pigeonhole Principle
 
@@ -49,7 +49,7 @@ The key step in showing that cardinality is well defined was [[§10 Counting#^le
 
 ^pf-10-2
 
-*Uses:* [[§5 The Induction Principle|§5]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]] (composites of injections)
+*Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]] (composites of injections)
 
 ![[m250-11-1.svg]]
 *Case (ii) of the inductive step with $m_1 = 4$, $k + 1 = 5$: $f$ (black) sends $i_0 = 2$ to the top value $5$ (red). The map $g$ (blue) skips $i_0$, so $f \circ g : \N_3 \to \N_5$ never takes the value $5$ and is an injection into $\N_4$, to which the inductive hypothesis applies.*
@@ -86,6 +86,8 @@ For example, if a group of people sit in a room on separate chairs, the number o
 ^pf-11-2
 
 *Uses:* [[§11 Properties of Finite Sets#^cor-11-1|§11.1]]
+
+The same statement holds for infinite sets, with $|X| > |Y|$ in the sense of [[§14 Counting Infinite Sets#^def-14-3|Definition §14.3]]; there it is the Cantor–Schröder–Bernstein theorem in disguise ([[§14 Counting Infinite Sets#^cor-14-15|Corollary §14.15]]).
 
 > [!remark]- Connections
 > - The pigeonhole principle in group theory: every element of a finite group has finite order, [[§4 Subgroups#^prop-4-8|493 Prop. §4.8]] (and its remark on where finiteness enters).
@@ -130,7 +132,7 @@ Mimicking the proof of Lemma [[§10 Counting#^lem-10-2|§10.2]] gives a version 
 
 ^pf-11-3
 
-*Uses:* [[§10 Counting#^thm-10-4|§10.4]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§10 Counting#^thm-10-4|§10.4]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 The following is intuitively obvious, but a proof has to rest on the definitions.
 
@@ -146,7 +148,7 @@ The following is intuitively obvious, but a proof has to rest on the definitions
 
 ^pf-11-4
 
-*Uses:* [[§11 Properties of Finite Sets#^prop-11-3|§11.3]]
+*Uses:* [[§11 Properties of Finite Sets#^prop-11-3|§11.3]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]]
 
 > [!theorem] Corollary §11.5: Proper Subsets Are Smaller
 > Let $X \subseteq Y$ with $Y$ finite. Then $X = Y$ if and only if $|X| = |Y|$, and $X \ne Y$ if and only if $|X| < |Y|$.
@@ -162,7 +164,7 @@ The following is intuitively obvious, but a proof has to rest on the definitions
 
 *Uses:* [[§11 Properties of Finite Sets#^cor-11-4|§11.4]], [[§10 Counting#^thm-10-4|§10.4]]
 
-So a finite set is never equipotent to a proper subset of itself; [[§14 Counting Infinite Sets|§14]] shows that this property characterizes finite sets.
+So a finite set is never equipotent to a proper subset of itself; [[§14 Counting Infinite Sets#^thm-14-3|Theorem §14.3]] shows that this property characterizes finite sets.
 
 The results so far concern injectivity; there are matching results for surjectivity.
 
@@ -174,11 +176,11 @@ The results so far concern injectivity; there are matching results for surjectiv
 ^thm-11-6
 
 > [!proof]+ Proof
-> We show that a surjection $f : X \to Y$ forces $|Y| \le |X|$, by building an injection $Y \to X$. Let $|X| = m$ and $h : \N_m \to X$ a bijection. For $y \in Y$ the set $\{ i \in \N_m \mid f(h(i)) = y \}$ is non-empty, because $f$ and $h$ are surjective, and finite; let $i_y$ be its least element ([[§11 Properties of Finite Sets#^prop-11-9|Proposition §11.9]]) and put $g(y) = h(i_y)$. Then $f(g(y)) = y$ for every $y$, so $g(y_1) = g(y_2)$ implies $y_1 = f(g(y_1)) = f(g(y_2)) = y_2$: $g : Y \to X$ is an injection. By Corollary [[§11 Properties of Finite Sets#^cor-11-1|§11.1]], $|Y| \le |X|$. Contrapositively, if $|X| < |Y|$ then $f$ is not a surjection.
+> We show that a surjection $f : X \to Y$ forces $|Y| \le |X|$, by building an injection $Y \to X$. Let $|X| = m$ and $h : \N_m \to X$ a bijection. For $y \in Y$ the set $\{ i \in \N_m \mid f(h(i)) = y \}$ is a non-empty set of positive integers, because $f$ and $h$ are surjective; let $i_y$ be its least element (the well-ordering principle, [[§5 The Induction Principle#^cor-5-7|Corollary §5.7]]) and put $g(y) = h(i_y)$. Then $f(g(y)) = y$ for every $y$, so $g(y_1) = g(y_2)$ implies $y_1 = f(g(y_1)) = f(g(y_2)) = y_2$: $g : Y \to X$ is an injection. By Corollary [[§11 Properties of Finite Sets#^cor-11-1|§11.1]], $|Y| \le |X|$. Contrapositively, if $|X| < |Y|$ then $f$ is not a surjection.
 
 ^pf-11-6
 
-*Uses:* [[§11 Properties of Finite Sets#^cor-11-1|§11.1]], [[§11 Properties of Finite Sets#^prop-11-9|§11.9]] (least element of a finite set)
+*Uses:* [[§11 Properties of Finite Sets#^cor-11-1|§11.1]], [[§5 The Induction Principle#^cor-5-7|§5.7]] (well-ordering)
 
 If two finite sets are known to have the same size, checking that a function between them is a bijection takes half the work.
 
@@ -192,13 +194,13 @@ If two finite sets are known to have the same size, checking that a function bet
 > [!proof]+ Proof
 > Let $|X| = |Y| = n$.
 >
-> ($\Rightarrow$) Suppose $f$ is injective but not surjective, say $y_0 \in Y$ is not a value. Then $f$ is an injection $X \to Y - \{y_0\}$, and $|Y - \{y_0\}| = n - 1$ by the addition principle. If $n = 1$ this set is empty, and there is no function from the non-empty $X$ into it; if $n \ge 2$, then $|X| = n > n - 1$ and the pigeonhole principle says $f$ is not injective. Either way, a contradiction.
+> ($\Rightarrow$) Suppose $f$ is injective but not surjective, say $y_0 \in Y$ is not a value. Then $f$ is an injection $X \to Y - \{y_0\}$, and $Y - \{y_0\}$ is finite ([[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4]]) with $|Y - \{y_0\}| = n - 1$ by the addition principle. If $n = 1$ this set is empty, and there is no function from the non-empty $X$ into it; if $n \ge 2$, then $|X| = n > n - 1$ and the pigeonhole principle says $f$ is not injective. Either way, a contradiction.
 >
-> ($\Leftarrow$) Suppose $f$ is surjective but not injective, say $f(x_1) = f(x_2)$ with $x_1 \ne x_2$. Then the restriction of $f$ to $X - \{x_2\}$ is still surjective, because the value $f(x_2)$ is also taken at $x_1$. Here $|X - \{x_2\}| = n - 1$. If $n = 1$ then $X - \{x_2\} = \emptyset$ cannot map onto the non-empty $Y$; if $n \ge 2$, Theorem [[§11 Properties of Finite Sets#^thm-11-6|§11.6]] says no function from a set of $n - 1$ elements onto $Y$ exists. Either way, a contradiction.
+> ($\Leftarrow$) Suppose $f$ is surjective but not injective, say $f(x_1) = f(x_2)$ with $x_1 \ne x_2$. Then the restriction of $f$ to $X - \{x_2\}$ is still surjective, because the value $f(x_2)$ is also taken at $x_1$. Here $|X - \{x_2\}| = n - 1$, as before. If $n = 1$ then $X - \{x_2\} = \emptyset$ cannot map onto the non-empty $Y$; if $n \ge 2$, Theorem [[§11 Properties of Finite Sets#^thm-11-6|§11.6]] says no function from a set of $n - 1$ elements onto $Y$ exists. Either way, a contradiction.
 
 ^pf-11-7
 
-*Uses:* [[§11 Properties of Finite Sets#^thm-11-2|§11.2]], [[§11 Properties of Finite Sets#^thm-11-6|§11.6]], [[§10 Counting#^thm-10-4|§10.4]]
+*Uses:* [[§11 Properties of Finite Sets#^thm-11-2|§11.2]], [[§11 Properties of Finite Sets#^thm-11-6|§11.6]], [[§10 Counting#^thm-10-4|§10.4]], [[§11 Properties of Finite Sets#^cor-11-4|§11.4]]
 
 > [!remark]- Connections
 > - The linear-algebra twin: a linear map between spaces of the same finite dimension is injective iff surjective, [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]; dimension plays the role of cardinality. Both fail for infinite sets ($n \mapsto n + 1$ on $\Z^+$ is injective and not surjective).
@@ -240,7 +242,7 @@ When we look for an element of a finite set with some property, each element can
 >
 > (b) $\min \Z^+ = 1$, but $\Z^+$ has no maximum element.
 >
-> (c) Every non-empty set of positive integers has a minimum element. This is the **well-ordering principle**; it is equivalent to the induction principle (Eccles Exercise 11.6 and Problems III Q15).
+> (c) Every non-empty set of positive integers has a minimum element. This is the **well-ordering principle**, proved from induction in [[§5 The Induction Principle#^cor-5-7|Corollary §5.7]] (Eccles Exercise 11.6); conversely it implies the induction principle (Problems III Q15), so the two are equivalent.
 >
 > (d) The set $\R^+ = \{ x \in \R \mid x > 0 \}$ has no minimum and no maximum: given $a \in \R^+$, $a/2 \in \R^+$ is smaller and $2a$ is larger.
 >
@@ -248,8 +250,7 @@ When we look for an element of a finite set with some property, each element can
 
 ^ex-11-3
 
-> [!remark]- Connections
-> - Well-ordering in 451: [[§1 The Set ℕ of Natural Numbers#^thm-1-2|451 Thm. §1.2]]; its proof from induction is the argument of Eccles Exercise 11.6.
+*Uses:* [[§5 The Induction Principle#^cor-5-7|§5.7]]
 
 > [!theorem] Proposition §11.9: Finite Sets Have a Maximum and a Minimum
 > Every finite non-empty set $A$ of real numbers has a minimum element and a maximum element.
@@ -269,13 +270,13 @@ The statement mentions no integer, but there is one hidden in it: $|A|$. The inf
 
 ^pf-11-9
 
-*Uses:* [[§11 Properties of Finite Sets#^def-11-1|Def. §11.1]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§11 Properties of Finite Sets#^def-11-1|Def. §11.1]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 ## 11.3 Two Applications of Finiteness
 
 ### The greatest common divisor
 
-Recall (Eccles Definition 2.2.1) that a non-zero integer $d$ **divides** $a$, $d \mid a$, when $a = dq$ for some integer $q$; $d$ is a **divisor** or **factor** of $a$ and $a$ is a **multiple** of $d$. Every non-zero integer divides $0$. If $a \ne 0$ and $a = dq$, then $q \ne 0$, so $|q| \ge 1$ and $|a| \ge |d|$. Hence for $a \ne 0$ the set of divisors
+Recall ([[§2 Implications#^def-2-6|Definition §2.6]]) that $d$ **divides** $a$, $d \mid a$, when $a = dq$ for some integer $q$; then $d$ is a **divisor** or **factor** of $a$ and $a$ is a **multiple** of $d$. Here, as in Eccles, divisors are taken non-zero; every non-zero integer divides $0$. If $a \ne 0$ and $a = dq$, then $q \ne 0$, so $|q| \ge 1$ and $|a| \ge |d|$. Hence for $a \ne 0$ the set of divisors
 
 $$
 D(a) = \{ n \in \Z \mid n \text{ divides } a \}
@@ -288,21 +289,21 @@ is finite, with $\min D(a) = -|a|$ and $\max D(a) = |a|$. For integers $a, b$ no
 > 1. $d$ is a common divisor: $d \mid a$ and $d \mid b$, and
 > 2. $d$ is greater than every other common divisor: $c \mid a$ and $c \mid b$ $\Rightarrow$ $c \le d$.
 >
-> It is written $(a, b)$, or $\gcd(a, b)$ where $(a, b)$ could be confused with an ordered pair or an interval.
+> It is written $\gcd(a, b)$. (Eccles writes simply $(a, b)$, which could be confused with an ordered pair or an interval; these notes use $\gcd(a, b)$ throughout.)
 >
 > *Eccles: Definition 11.3.1*
 
 ^def-11-2
 
 > [!definition] Definition §11.3: Coprime
-> Integers $a$ and $b$, not both zero, are **coprime** (or **relatively prime**) when $(a, b) = 1$: their only common factors are $1$ and $-1$.
+> Integers $a$ and $b$, not both zero, are **coprime** (or **relatively prime**) when $\gcd(a, b) = 1$: their only common factors are $1$ and $-1$.
 >
 > *Eccles: Definition 11.3.2*
 
 ^def-11-3
 
 > [!remark]- Connections
-> - In 493: [[§8 Invertibility and Unit Groups#^def-8-1|493 Def. §8.1]]. The computation of gcds by the Euclidean algorithm is [[§16 The Euclidean Algorithm|§16]].
+> - In 493: [[§8 Invertibility and Unit Groups#^def-8-1|493 Def. §8.1]]. The computation of gcds by the Euclidean algorithm is [[§16 The Euclidean Algorithm#^thm-16-3|Theorem §16.3]].
 
 > [!example] Example §11.4: A gcd by Listing Divisors
 > $$
@@ -312,14 +313,14 @@ is finite, with $\min D(a) = -|a|$ and $\max D(a) = |a|$. For integers $a, b$ no
 > \end{aligned}
 > $$
 >
-> so the common divisors are $D(30) \cap D(72) = \{\pm 1, \pm 2, \pm 3, \pm 6\}$ and $(30, 72) = 6$.
+> so the common divisors are $D(30) \cap D(72) = \{\pm 1, \pm 2, \pm 3, \pm 6\}$ and $\gcd(30, 72) = 6$.
 >
 > *Eccles: Example 11.3.3*
 
 ^ex-11-4
 
 > [!theorem] Proposition §11.10: Dividing Out the gcd
-> If $a$ and $b$ are non-zero integers with $(a, b) = d$, then $a/d$ and $b/d$ are coprime.
+> If $a$ and $b$ are non-zero integers with $\gcd(a, b) = d$, then $a/d$ and $b/d$ are coprime.
 >
 > *Eccles: Exercise 11.4*
 
@@ -332,11 +333,11 @@ is finite, with $\min D(a) = -|a|$ and $\max D(a) = |a|$. For integers $a, b$ no
 
 *Uses:* [[§11 Properties of Finite Sets#^def-11-2|Def. §11.2]], [[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]
 
-This is what puts fractions in lowest terms in [[§13 Number Systems|§13]].
+This is what puts fractions in lowest terms in [[§13 Number Systems#^prop-13-2|Proposition §13.2]].
 
 ### Odd and even integers
 
-"Odd" was defined to mean "not divisible by $2$" (Eccles Definition 2.2.3). The familiar description of odd numbers as $2q + 1$ is a special case of the division theorem of [[§15 The Division Theorem|§15]], and finiteness gives a direct proof.
+"Odd" was defined to mean "not divisible by $2$" ([[§2 Implications#^def-2-7|Definition §2.7]]). The familiar description of odd numbers as $2q + 1$ is a special case of the division theorem, proved later as [[§15 The Division Theorem#^thm-15-1|Theorem §15.1]], and finiteness gives a direct proof now.
 
 > [!theorem] Proposition §11.11: Odd Integers
 > An integer $a$ is odd if and only if $a = 2q + 1$ for some integer $q$.
@@ -362,7 +363,7 @@ This is what puts fractions in lowest terms in [[§13 Number Systems|§13]].
 
 ^pf-11-11
 
-*Uses:* [[§11 Properties of Finite Sets#^prop-11-9|§11.9]], [[§11 Properties of Finite Sets#^cor-11-4|§11.4]]
+*Uses:* [[§11 Properties of Finite Sets#^prop-11-9|§11.9]], [[§11 Properties of Finite Sets#^cor-11-4|§11.4]], [[§2 Implications#^def-2-7|Def. §2.7]]
 
 > [!remark]- Connections
-> - The general statement, $a = bq + r$ with $0 \le r < b$, is [[§15 The Division Theorem|§15]]; in 493 it is the [[§6 Divisibility and Congruence#^lem-6-1|493 Lemma §6.1]] (Division Algorithm), proved there by well-ordering, the infinite counterpart of taking a maximum.
+> - The general statement, $a = bq + r$ with $0 \le r < b$, is [[§15 The Division Theorem#^thm-15-1|Theorem §15.1]]; in 493 it is the [[§6 Divisibility and Congruence#^lem-6-1|493 Lemma §6.1]] (Division Algorithm), proved there by well-ordering, the infinite counterpart of taking a maximum.

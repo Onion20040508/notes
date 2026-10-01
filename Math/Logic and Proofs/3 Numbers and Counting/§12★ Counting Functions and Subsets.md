@@ -66,7 +66,7 @@ The informal argument: list $X = \{x_1, \ldots, x_m\}$; there are $n$ choices fo
 
 ^pf-12-1
 
-*Uses:* [[§10 Counting#^cor-10-5|§10.5]], [[§10 Counting#^prop-10-3|§10.3]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§10 Counting#^cor-10-5|§10.5]], [[§10 Counting#^prop-10-3|§10.3]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 Often only functions with a particular property are wanted, most commonly injections.
 
@@ -115,7 +115,7 @@ The number $(n)_m = n(n-1)\cdots(n-m+1)$ ($m$ factors) is the **falling factoria
 
 ^pf-12-2
 
-*Uses:* [[§10 Counting#^cor-10-5|§10.5]], [[§10 Counting#^thm-10-4|§10.4]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§10 Counting#^cor-10-5|§10.5]], [[§10 Counting#^thm-10-4|§10.4]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 When $m = n$ an injection $X \to Y$ is automatically a bijection ([[§11 Properties of Finite Sets#^thm-11-7|Theorem §11.7]]). Bijections of a set to itself are of particular interest.
 
@@ -196,7 +196,7 @@ Informally: a subset $A$ is determined by deciding, for each of the $n$ elements
 
 *Uses:* [[§12★ Counting Functions and Subsets#^lem-12-5|§12.5]], [[§12★ Counting Functions and Subsets#^prop-12-1|§12.1]], [[§10 Counting#^prop-10-3|§10.3]]
 
-For infinite sets the comparison of $X$ with $\mathcal{P}(X)$ survives as Cantor's theorem, $|X| < |\mathcal{P}(X)|$ ([[§14 Counting Infinite Sets|§14]]).
+For infinite sets the comparison of $X$ with $\mathcal{P}(X)$ survives as Cantor's theorem, $|X| < |\mathcal{P}(X)|$ ([[§14 Counting Infinite Sets#^thm-14-13|Theorem §14.13]]).
 
 > [!definition] Definition §12.5: r-Subsets and Binomial Coefficients
 > For a set $X$ and a non-negative integer $r$, an **$r$-subset** of $X$ is a subset $A \subseteq X$ with $|A| = r$. The set of $r$-subsets is
@@ -349,7 +349,7 @@ The triangle is not a convenient way to find a single coefficient; there is an e
 
 ^pf-12-9
 
-*Uses:* [[§12★ Counting Functions and Subsets#^prop-12-8|§12.8]], [[§12★ Counting Functions and Subsets#^prop-12-6|§12.6]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§12★ Counting Functions and Subsets#^prop-12-8|§12.8]], [[§12★ Counting Functions and Subsets#^prop-12-6|§12.6]], [[§5 The Induction Principle#^thm-5-3|§5.3]] (induction from $0$), [[§5 The Induction Principle#^def-5-4|Def. §5.4]]
 
 > [!example] Example §12.3: Cards
 > Three people each select a different card from a pack of $52$ distinct cards. If we record who selected which card, a selection is an injection from the set of three people to the pack: there are $(52)_3 = 52 \times 51 \times 50 = 132600$ possibilities. If we forget who selected which card, a selection is a $3$-subset of the pack: there are $\binom{52}{3} = \frac{52 \times 51 \times 50}{3!} = 22100$, each unordered selection arising from $3! = 6$ ordered ones.
@@ -376,7 +376,7 @@ A **binomial** is a sum of two terms, such as $a + b$. The binomial coefficients
 ^thm-12-10
 
 > [!proof]+ Proof
-> We use the convention $x^0 = 1$ for every real $x$, including $x = 0$ (Eccles Definition 5.3.3, [[§5 The Induction Principle|§5]]). Induction on $n$; let $P(n)$ be the statement for all $a, b$.
+> We use the convention $x^0 = 1$ for every real $x$, including $x = 0$ ([[§5 The Induction Principle#^def-5-3|Definition §5.3]]). Induction on $n$; let $P(n)$ be the statement for all $a, b$.
 >
 > *Base case.* $P(0)$ reads $(a + b)^0 = \binom00 a^0 b^0$, true since both sides are $1$.
 >
@@ -396,7 +396,7 @@ A **binomial** is a sum of two terms, such as $a + b$. The binomial coefficients
 
 ^pf-12-10
 
-*Uses:* [[§12★ Counting Functions and Subsets#^prop-12-8|§12.8]], [[§12★ Counting Functions and Subsets#^prop-12-6|§12.6]], [[§5 The Induction Principle|§5]]
+*Uses:* [[§12★ Counting Functions and Subsets#^prop-12-8|§12.8]], [[§12★ Counting Functions and Subsets#^prop-12-6|§12.6]], [[§5 The Induction Principle#^thm-5-3|§5.3]] (induction from $0$), [[§5 The Induction Principle#^def-5-3|Def. §5.3]]
 
 The same proof works for complex $a$ and $b$. For negative or non-integer exponents there are versions in which the finite sum becomes an infinite series (Newton).
 

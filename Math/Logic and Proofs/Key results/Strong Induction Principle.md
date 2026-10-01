@@ -19,6 +19,8 @@ tags: [logic-and-proofs, hub]
 - [[§5 The Induction Principle#^cor-5-7|Corollary §5.7: The Well-Ordering Principle]]
 - [[§5 The Induction Principle#^prop-5-8|Proposition §5.8: The Binet Formula]]
 - [[§5 The Induction Principle#^ex-5-9|Example §5.9: Strong Induction for Subsets]]
+- [[§16 The Euclidean Algorithm#^ex-16-6|Example §16.6: Lamé's Theorem]]
+- [[§23 The Sequence of Prime Numbers#^prop-23-1|Proposition §23.1: Existence of Prime Factorizations]]
 
 ## Connections
 - The same device (strengthening $P_n$ to "for all $k \leq n$") in analysis: [[§1 The Set ℕ of Natural Numbers#^ex-1-2|451 Ex. §1.2]] and the remark after it.
