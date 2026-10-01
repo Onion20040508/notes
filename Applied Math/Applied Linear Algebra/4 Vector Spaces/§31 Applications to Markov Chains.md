@@ -11,7 +11,7 @@ tags: [applied-linear-algebra, math235]
 
 *Lay, Section 4.9 · MATH 235 lecture L18.*
 
-A Markov chain models an experiment or measurement repeated many times in the same way, where each outcome is one of finitely many states and depends only on the outcome just before. The state is a probability vector $\mathbf{x}_k$, and one step multiplies it by a stochastic matrix: $\mathbf{x}_{k+1} = P\mathbf{x}_k$, a first-order difference equation as in [[§30 Applications to Difference Equations|§30]]. Such chains are used in biology, business, chemistry, engineering and physics. The interesting question is the long run. A steady-state vector $\mathbf{q}$ with $P\mathbf{q} = \mathbf{q}$ is found by solving the homogeneous system $(P - I)\mathbf{x} = \mathbf{0}$, and for a regular stochastic matrix every chain converges to it, whatever the initial state.
+A Markov chain models an experiment or measurement repeated many times in the same way, where each outcome is one of finitely many states and depends only on the outcome just before. The state is a probability vector $\mathbf{x}_k$, and one step multiplies it by a stochastic matrix: $\mathbf{x}_{k+1} = P\mathbf{x}_k$, a first-order difference equation as in [[§30 Applications to Difference Equations#^prop-30-8|Proposition §30.8]]. Such chains are used in biology, business, chemistry, engineering and physics. The interesting question is the long run. A steady-state vector $\mathbf{q}$ with $P\mathbf{q} = \mathbf{q}$ is found by solving the homogeneous system $(P - I)\mathbf{x} = \mathbf{0}$, and for a regular stochastic matrix every chain converges to it, whatever the initial state.
 
 ## Markov Chains
 
@@ -60,7 +60,7 @@ A Markov chain models an experiment or measurement repeated many times in the sa
 
 ^pf-31-1
 
-*Uses:* [[§31 Applications to Markov Chains#^def-31-1|Def. §31.1]], [[§11 Matrix Operations|§11]] (columns of a product)
+*Uses:* [[§31 Applications to Markov Chains#^def-31-1|Def. §31.1]], [[§11 Matrix Operations#^prop-11-3|§11.3]] (columns of a product)
 
 > [!remark]- Remark: Numerical Note — Powers or Steps
 > To compute a specific vector such as $\mathbf{x}_3$, fewer arithmetic operations are needed to compute $\mathbf{x}_1$, $\mathbf{x}_2$, $\mathbf{x}_3$ one step at a time than to compute $P^3$ and then $P^3\mathbf{x}_0$. For a small matrix (say $30 \times 30$) the machine time is insignificant either way, and a command computing $P^3\mathbf{x}_0$ may be preferred because it takes fewer keystrokes.
@@ -68,7 +68,7 @@ A Markov chain models an experiment or measurement repeated many times in the sa
 ^rem-31-1
 
 > [!example] Example §31.1: Migration Between a City and Its Suburbs
-> Section 1.10 ([[§10 Linear Models in Business, Science, and Engineering|§10]]) modeled the population movement between a city and its suburbs with the *migration matrix*
+> Section 1.10 ([[§10 Linear Models in Business, Science, and Engineering#^ex-10-3|Example §10.3]]) modeled the population movement between a city and its suburbs with the *migration matrix*
 >
 > $$
 > M = \begin{bmatrix} .95 & .03 \\ .05 & .97 \end{bmatrix} \qquad \text{(columns: from City, Suburbs; rows: to City, Suburbs)} .
@@ -273,7 +273,7 @@ The most interesting aspect of a Markov chain is its long-term behavior: what ha
 
 ^thm-31-3
 
-*Lay omits the proof ("proved in standard texts on Markov chains"); Section 5.2 ([[§33 The Characteristic Equation|§33]]) shows why it holds for several of the stochastic matrices studied here. It is a case of the Perron–Frobenius theorem (stated in lecture L18), which is not proved in the vault.*
+*Lay omits the proof ("proved in standard texts on Markov chains"); Section 5.2 ([[§33 The Characteristic Equation#^ex-33-4|Example §33.4]]) shows why it holds for several of the stochastic matrices studied here. It is a case of the Perron–Frobenius theorem (stated in lecture L18; [[§32 Eigenvectors and Eigenvalues#^rem-32-2|Remark: The Perron–Frobenius Theorem]]), which is not proved in the vault.*
 
 The striking part of the theorem is that the initial state has no effect on the long-term behavior of the chain.
 

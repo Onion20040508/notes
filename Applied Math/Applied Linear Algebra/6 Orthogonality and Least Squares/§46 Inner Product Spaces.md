@@ -146,13 +146,13 @@ From now on, polynomials and other functions in an inner product space are writt
 > [!proof]+ Proof
 > Lay states that these hold "just as in $\mathbb{R}^n$". Indeed, the proofs of [[§41 Orthogonal Sets#^thm-41-1|Theorem §41.1]] (orthogonal sets of nonzero vectors are independent), [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|Theorem §40.5]] (the vectors orthogonal to $W$ form a subspace meeting $W$ only in $\mathbf{0}$, and orthogonality to a spanning set suffices), [[§40 Inner Product, Length, and Orthogonality#^prop-40-3|Proposition §40.3]] and the Pythagorean Theorem [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|§40.4]], the Orthogonal Decomposition Theorem [[§42 Orthogonal Projections#^thm-42-1|§42.1]], the Best Approximation Theorem [[§42 Orthogonal Projections#^thm-42-3|§42.3]] and Gram–Schmidt [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]] use only:
 > - the properties (a)–(d) of Theorem §40.1, which hold for $\langle\ ,\ \rangle$ by the axioms and Proposition §46.1;
-> - dimension counting inside the finite-dimensional spaces $W$ and $W_k = \operatorname{Span}\{\mathbf{x}_1, \ldots, \mathbf{x}_k\}$ (the Basis Theorem).
+> - dimension counting inside the finite-dimensional spaces $W$ and $W_k = \operatorname{Span}\{\mathbf{x}_1, \ldots, \mathbf{x}_k\}$ (the Basis Theorem, [[§27 The Dimension of a Vector Space#^thm-27-5|Theorem §27.5]], which Lay proves for any vector space).
 >
 > They never use coordinates of vectors in $\mathbb{R}^n$, or the dimension of the ambient space. So they hold verbatim with $\mathbf{u} \cdot \mathbf{v}$ replaced by $\langle \mathbf{u}, \mathbf{v}\rangle$, even when $V$ is infinite-dimensional, as $C[a, b]$ is. (Only $W$ must be finite-dimensional: Gram–Schmidt and the projection formula need a finite basis of $W$.) Uniqueness of the decomposition gives the independence of the basis, exactly as in Definition §42.1.
 
 ^pf-46-2
 
-*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|§40.5]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|§40.4]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]], [[§42 Orthogonal Projections#^thm-42-1|§42.1]], [[§42 Orthogonal Projections#^thm-42-3|§42.3]], [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]], [[§46 Inner Product Spaces#^prop-46-1|§46.1]]
+*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|§40.5]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|§40.4]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]], [[§42 Orthogonal Projections#^thm-42-1|§42.1]], [[§42 Orthogonal Projections#^thm-42-3|§42.3]], [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]], [[§46 Inner Product Spaces#^prop-46-1|§46.1]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]]
 
 A common problem in applied mathematics is to approximate a function $f$ in a space $V$ of functions by a function $g$ from a specified subspace $W$. How close the approximation is depends on how $\|f - g\|$ is defined. When the distance comes from an inner product, Theorem §46.2(3) says that **the best approximation to $f$ by functions in $W$ is the orthogonal projection of $f$ onto $W$**.
 

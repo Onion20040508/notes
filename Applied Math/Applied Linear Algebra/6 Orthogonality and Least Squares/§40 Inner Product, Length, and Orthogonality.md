@@ -91,7 +91,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^pf-40-1
 
-*Uses:* [[§11 Matrix Operations|§11]] (Theorems 2 and 3: properties of matrix multiplication and of the transpose)
+*Uses:* [[§11 Matrix Operations#^thm-11-6|§11.6]] (properties of matrix multiplication), [[§11 Matrix Operations#^thm-11-7|§11.7]] (properties of the transpose)
 
 ## The Length of a Vector
 
@@ -264,7 +264,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > [!proof]+ Proof
 > By Proposition §40.3, $\|\mathbf{u} + \mathbf{v}\|^2 - \|\mathbf{u}\|^2 - \|\mathbf{v}\|^2 = 2\,\mathbf{u} \cdot \mathbf{v}$. This is $0$ if and only if $\mathbf{u} \cdot \mathbf{v} = 0$, that is, if and only if $\mathbf{u}$ and $\mathbf{v}$ are orthogonal.
 >
-> (The lecture used the difference instead: for the right triangle with legs $\mathbf{u}$, $\mathbf{v}$ and hypotenuse $\mathbf{u} - \mathbf{v}$, the second formula of Proposition §40.3 gives $\|\mathbf{u} - \mathbf{v}\|^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2$ when $\mathbf{u} \cdot \mathbf{v} = 0$.)
+> (The lecture used the difference instead: for the right triangle with legs $\mathbf{u}$, $\mathbf{v}$ and hypotenuse $\mathbf{u} - \mathbf{v}$, the second formula of Proposition §40.3 gives $\|\mathbf{u} - \mathbf{v}\|^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2$ when $\mathbf{u} \cdot \mathbf{v} = 0$. It left as an exercise to recover the school formula $b = c\cos\varphi$ for a right triangle with leg $b$, hypotenuse $c$ and angle $\varphi$ between them: with legs $\mathbf{u} \perp \mathbf{v}$ and hypotenuse $\mathbf{h} = \mathbf{u} + \mathbf{v}$, Theorem §40.9 gives $\|\mathbf{h}\|\,\|\mathbf{v}\|\cos\varphi = \mathbf{h} \cdot \mathbf{v} = \mathbf{u} \cdot \mathbf{v} + \mathbf{v} \cdot \mathbf{v} = \|\mathbf{v}\|^2$, so $\|\mathbf{v}\| = \|\mathbf{h}\|\cos\varphi$.)
 
 ^pf-40-4
 
@@ -309,7 +309,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^pf-40-5
 
-*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|§40.1]], [[§18 Subspaces of ℝⁿ|§18]] (definition of a subspace)
+*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|§40.1]], [[§18 Subspaces of ℝⁿ#^def-18-1|Def. §18.1]] (subspace)
 
 > [!theorem] Theorem §40.6: The Fundamental Subspaces Are Orthogonal Complements
 > Let $A$ be an $m \times n$ matrix. The orthogonal complement of the row space of $A$ is the null space of $A$, and the orthogonal complement of the column space of $A$ is the null space of $A^T$:
@@ -331,7 +331,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^pf-40-6
 
-*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|§40.5]], [[§4 The Matrix Equation Ax = b|§4]] (row–column rule), [[§28 Rank|§28]] (row space)
+*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|§40.5]], [[§4 The Matrix Equation Ax = b#^prop-4-4|§4.4]] (row–vector rule), [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-3|Def. §24.3]] (row space)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|LADR 7.6]] ($\operatorname{null} T^* = (\operatorname{range} T)^\perp$ and $\operatorname{range} T^* = (\operatorname{null} T)^\perp$ for a linear map between inner product spaces; the transpose becomes the adjoint, and the row space is $\operatorname{range} T^*$). Orthogonal complements in general: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], with $\dim U^\perp = \dim V - \dim U$ in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]] and $(U^\perp)^\perp = U$ in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] (Proposition §40.7 and Corollary §40.8 below).
@@ -357,7 +357,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^pf-40-7
 
-*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|§40.6]], [[§28 Rank|§28]] (Theorem 14, the Rank Theorem)
+*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|§40.6]], [[§28 Rank#^thm-28-3|§28.3]] (the Rank Theorem)
 
 > [!theorem] Corollary §40.8: The Double Complement
 > If $W$ is a subspace of $\mathbb{R}^n$, then $(W^\perp)^\perp = W$. In particular, for an $m \times n$ matrix $A$,
@@ -366,7 +366,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > (\operatorname{Nul} A)^\perp = \operatorname{Row} A = \operatorname{Col} A^T \qquad\text{and}\qquad (\operatorname{Nul} A^T)^\perp = \operatorname{Col} A .
 > $$
 >
-> The lecture stated Theorem §40.6 in this form.
+> The lecture stated the orthogonality theorem as $(\operatorname{Nul} A)^\perp = \operatorname{Row} A = \operatorname{Col} A^T$ together with $(\operatorname{Col} A)^\perp = \operatorname{Nul} A^T$ (Theorem §40.6).
 >
 > *Source: 235 lecture L22*
 
@@ -379,11 +379,11 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > \dim (W^\perp)^\perp = n - \dim W^\perp = n - (n - \dim W) = \dim W .
 > $$
 >
-> A subspace of $(W^\perp)^\perp$ with the same dimension is all of it (a basis of $W$ is a linearly independent set of $\dim (W^\perp)^\perp$ vectors there, hence a basis, by the Basis Theorem). So $W = (W^\perp)^\perp$. Taking complements in Theorem §40.6 gives $(\operatorname{Nul} A)^\perp = ((\operatorname{Row} A)^\perp)^\perp = \operatorname{Row} A$ and $(\operatorname{Nul} A^T)^\perp = \operatorname{Col} A$.
+> A subspace of $(W^\perp)^\perp$ with the same dimension is all of it (a basis of $W$ is a linearly independent set of $\dim (W^\perp)^\perp$ vectors there, hence a basis, by the Basis Theorem; this is [[§27 The Dimension of a Vector Space#^cor-27-6|Corollary §27.6]]). So $W = (W^\perp)^\perp$. Taking complements in Theorem §40.6 gives $(\operatorname{Nul} A)^\perp = ((\operatorname{Row} A)^\perp)^\perp = \operatorname{Row} A$ and $(\operatorname{Nul} A^T)^\perp = \operatorname{Col} A$.
 
 ^pf-40-8
 
-*Uses:* [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|§40.7]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|§40.6]], [[§27 The Dimension of a Vector Space|§27]] (Theorem 12, the Basis Theorem)
+*Uses:* [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|§40.7]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|§40.6]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]] (the Basis Theorem), [[§27 The Dimension of a Vector Space#^cor-27-6|§27.6]]
 
 ![[m235-40-1.svg]]
 *The four fundamental subspaces of an $m \times n$ matrix $A$. In $\mathbb{R}^n$, $\operatorname{Row} A$ and $\operatorname{Nul} A$ are orthogonal complements (Theorem §40.6); in $\mathbb{R}^m$, so are $\operatorname{Col} A$ and $\operatorname{Nul} A^T$. Their dimensions add up to $n$ and to $m$ (Proposition §40.7): $\operatorname{rank} A + \dim \operatorname{Nul} A = n$ and $\operatorname{rank} A + \dim \operatorname{Nul} A^T = m$.*

@@ -11,7 +11,7 @@ tags: [applied-linear-algebra, math235]
 
 *Lay, Section 4.7 · MATH 235 lecture L17.*
 
-A basis $\mathcal{B}$ of an $n$-dimensional space $V$ gives each vector $\mathbf{x}$ a "name" $[\mathbf{x}]_{\mathcal B} \in \mathbb{R}^n$, the list of weights that build $\mathbf{x}$ from the basis ([[§26 Coordinate Systems|§26]]). Often a problem is posed in one basis $\mathcal{B}$ but is easier to solve in another basis $\mathcal{C}$; Chapters 5 and 7 are full of such changes (eigenvector bases). This section shows that the two coordinate vectors are related by a single invertible matrix, $[\mathbf{x}]_{\mathcal C} = P_{\mathcal C \leftarrow \mathcal B}[\mathbf{x}]_{\mathcal B}$, whose columns are the $\mathcal{C}$-coordinates of the old basis vectors, and how to compute it in $\mathbb{R}^n$ by one row reduction. (This is Section 4.6 in the 6th edition and in the instructor's checklist.)
+A basis $\mathcal{B}$ of an $n$-dimensional space $V$ gives each vector $\mathbf{x}$ a "name" $[\mathbf{x}]_{\mathcal B} \in \mathbb{R}^n$, the list of weights that build $\mathbf{x}$ from the basis ([[§26 Coordinate Systems#^def-26-1|Definition §26.1]]). Often a problem is posed in one basis $\mathcal{B}$ but is easier to solve in another basis $\mathcal{C}$; Chapters 5 and 7 are full of such changes (eigenvector bases). This section shows that the two coordinate vectors are related by a single invertible matrix, $[\mathbf{x}]_{\mathcal C} = P_{\mathcal C \leftarrow \mathcal B}[\mathbf{x}]_{\mathcal B}$, whose columns are the $\mathcal{C}$-coordinates of the old basis vectors, and how to compute it in $\mathbb{R}^n$ by one row reduction. (This is Section 4.6 in the 6th edition and in the instructor's checklist.)
 
 > [!example] Example §29.1: Two Coordinate Systems for One Space
 > Let $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$ and $\mathcal{C} = \{\mathbf{c}_1, \mathbf{c}_2\}$ be bases of a vector space $V$ such that
@@ -22,7 +22,7 @@ A basis $\mathcal{B}$ of an $n$-dimensional space $V$ gives each vector $\mathbf
 >
 > **(a)** Suppose $\mathbf{x} = 3\mathbf{b}_1 + \mathbf{b}_2$, that is, $[\mathbf{x}]_{\mathcal B} = \begin{bmatrix} 3 \\ 1 \end{bmatrix}$. Find $[\mathbf{x}]_{\mathcal C}$.
 >
-> Apply the coordinate mapping of $\mathcal{C}$ to $\mathbf{x}$. It is linear ([[§26 Coordinate Systems|§26]], Theorem 8), so
+> Apply the coordinate mapping of $\mathcal{C}$ to $\mathbf{x}$. It is linear ([[§26 Coordinate Systems#^thm-26-3|Theorem §26.3]]), so
 >
 > $$
 > [\mathbf{x}]_{\mathcal C} = [3\mathbf{b}_1 + \mathbf{b}_2]_{\mathcal C} = 3[\mathbf{b}_1]_{\mathcal C} + [\mathbf{b}_2]_{\mathcal C} = \big[\, [\mathbf{b}_1]_{\mathcal C}\ \ [\mathbf{b}_2]_{\mathcal C} \,\big] \begin{bmatrix} 3 \\ 1 \end{bmatrix} ,
@@ -73,19 +73,19 @@ The argument of Example §29.1 works for any two bases.
 > [!proof]+ Proof
 > Lay derives (4) in Example §29.1 and leaves the general proof to Exercises 15 and 16, which outline the following argument (lecture L17 gives the existence part the same way).
 >
-> **The matrix (5) works.** Let $\mathbf{x} \in V$. Since $\mathcal{B}$ spans $V$, there are scalars $x_1, \ldots, x_n$ with $\mathbf{x} = x_1\mathbf{b}_1 + \cdots + x_n\mathbf{b}_n$, that is, $[\mathbf{x}]_{\mathcal B} = (x_1, \ldots, x_n)$. Apply the coordinate mapping of $\mathcal{C}$, which is linear ([[§26 Coordinate Systems|§26]], Theorem 8):
+> **The matrix (5) works.** Let $\mathbf{x} \in V$. Since $\mathcal{B}$ spans $V$, there are scalars $x_1, \ldots, x_n$ with $\mathbf{x} = x_1\mathbf{b}_1 + \cdots + x_n\mathbf{b}_n$, that is, $[\mathbf{x}]_{\mathcal B} = (x_1, \ldots, x_n)$. Apply the coordinate mapping of $\mathcal{C}$, which is linear ([[§26 Coordinate Systems#^thm-26-3|Theorem §26.3]]):
 >
 > $$
 > [\mathbf{x}]_{\mathcal C} = x_1 [\mathbf{b}_1]_{\mathcal C} + \cdots + x_n [\mathbf{b}_n]_{\mathcal C} = \big[\, [\mathbf{b}_1]_{\mathcal C}\ \cdots\ [\mathbf{b}_n]_{\mathcal C} \,\big] \begin{bmatrix} x_1 \\ \vdots \\ x_n \end{bmatrix} ,
 > $$
 >
-> by the definition of a matrix–vector product as a linear combination of the columns ([[§4 The Matrix Equation Ax = b|§4]]). The vector on the right is $[\mathbf{x}]_{\mathcal B}$, so the matrix in (5) satisfies (4).
+> by the definition of a matrix–vector product as a linear combination of the columns ([[§4 The Matrix Equation Ax = b#^def-4-1|Definition §4.1]]). The vector on the right is $[\mathbf{x}]_{\mathcal B}$, so the matrix in (5) satisfies (4).
 >
 > **Uniqueness.** Suppose $Q$ is any matrix with $[\mathbf{v}]_{\mathcal C} = Q[\mathbf{v}]_{\mathcal B}$ for each $\mathbf{v} \in V$. Take $\mathbf{v} = \mathbf{b}_1$: since $\mathbf{b}_1 = 1 \cdot \mathbf{b}_1 + 0 \cdot \mathbf{b}_2 + \cdots + 0 \cdot \mathbf{b}_n$, $[\mathbf{b}_1]_{\mathcal B} = \mathbf{e}_1$, and $Q\mathbf{e}_1$ is the first column of $Q$. So the first column of $Q$ is $[\mathbf{b}_1]_{\mathcal C}$. Similarly, for $k = 2, \ldots, n$, the $k$th column of $Q$ is $Q\mathbf{e}_k = Q[\mathbf{b}_k]_{\mathcal B} = [\mathbf{b}_k]_{\mathcal C}$. So $Q$ is the matrix (5).
 
 ^pf-29-1
 
-*Uses:* [[§26 Coordinate Systems|§26]] (Theorem 8; coordinates of a basis vector), [[§4 The Matrix Equation Ax = b|§4]] (Definition of $A\mathbf{x}$)
+*Uses:* [[§26 Coordinate Systems#^thm-26-3|§26.3]], [[§26 Coordinate Systems#^def-26-1|Def. §26.1]] (coordinates of a basis vector), [[§4 The Matrix Equation Ax = b#^def-4-1|Def. §4.1]]
 
 > [!definition] Definition §29.1: Change-of-Coordinates Matrix
 > The matrix $P_{\mathcal C \leftarrow \mathcal B}$ of Theorem §29.1 is the **change-of-coordinates matrix from $\mathcal{B}$ to $\mathcal{C}$**. Multiplication by $P_{\mathcal C \leftarrow \mathcal B}$ converts $\mathcal{B}$-coordinates into $\mathcal{C}$-coordinates:
@@ -101,7 +101,7 @@ The argument of Example §29.1 works for any two bases.
 ^def-29-1
 
 > [!remark]- Connections
-> - Rigorous treatment: $P_{\mathcal C \leftarrow \mathcal B}$ is the matrix of the identity operator with input basis $\mathcal{B}$ and output basis $\mathcal{C}$, Axler's $\mathcal{M}(I, (\mathbf{b}), (\mathbf{c}))$. That the two change-of-coordinates matrices are inverse to each other is [[§10 Invertibility and Isomorphisms#^ladr-3-82|LADR 3.82]], and conjugating by it changes the matrix of an operator, $A = C^{-1}BC$, [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]] (in Lay: similarity, Section 5.4, [[§35 Eigenvectors and Linear Transformations|§35]]).
+> - Rigorous treatment: $P_{\mathcal C \leftarrow \mathcal B}$ is the matrix of the identity operator with input basis $\mathcal{B}$ and output basis $\mathcal{C}$, Axler's $\mathcal{M}(I, (\mathbf{b}), (\mathbf{c}))$. That the two change-of-coordinates matrices are inverse to each other is [[§10 Invertibility and Isomorphisms#^ladr-3-82|LADR 3.82]], and conjugating by it changes the matrix of an operator, $A = C^{-1}BC$, [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]] (in Lay: similarity of matrix representations, Section 5.4, [[§35 Eigenvectors and Linear Transformations#^thm-35-2|Theorem §35.2]]).
 
 > [!theorem] Theorem §29.2: The Change-of-Coordinates Matrix Is Invertible
 > $P_{\mathcal C \leftarrow \mathcal B}$ is invertible, and its inverse converts $\mathcal{C}$-coordinates into $\mathcal{B}$-coordinates:
@@ -115,7 +115,7 @@ The argument of Example §29.1 works for any two bases.
 ^thm-29-2
 
 > [!proof]+ Proof
-> The columns of $P_{\mathcal C \leftarrow \mathcal B}$ are the coordinate vectors $[\mathbf{b}_1]_{\mathcal C}, \ldots, [\mathbf{b}_n]_{\mathcal C}$ of the linearly independent set $\mathcal{B}$. They are linearly independent: if $c_1[\mathbf{b}_1]_{\mathcal C} + \cdots + c_n[\mathbf{b}_n]_{\mathcal C} = \mathbf{0}$, then $[c_1\mathbf{b}_1 + \cdots + c_n\mathbf{b}_n]_{\mathcal C} = \mathbf{0}$, so $c_1\mathbf{b}_1 + \cdots + c_n\mathbf{b}_n = \mathbf{0}$ and all $c_i = 0$ ([[§26 Coordinate Systems|§26]], Exercise 25). A square matrix with linearly independent columns is invertible, by the Invertible Matrix Theorem ([[§13 Characterizations of Invertible Matrices|§13]]). Left-multiplying both sides of (4) by $(P_{\mathcal C \leftarrow \mathcal B})^{-1}$ gives
+> The columns of $P_{\mathcal C \leftarrow \mathcal B}$ are the coordinate vectors $[\mathbf{b}_1]_{\mathcal C}, \ldots, [\mathbf{b}_n]_{\mathcal C}$ of the linearly independent set $\mathcal{B}$. They are linearly independent: if $c_1[\mathbf{b}_1]_{\mathcal C} + \cdots + c_n[\mathbf{b}_n]_{\mathcal C} = \mathbf{0}$, then $[c_1\mathbf{b}_1 + \cdots + c_n\mathbf{b}_n]_{\mathcal C} = \mathbf{0}$, so $c_1\mathbf{b}_1 + \cdots + c_n\mathbf{b}_n = \mathbf{0}$ and all $c_i = 0$ ([[§26 Coordinate Systems#^cor-26-4|Corollary §26.4]], Lay's Exercise 25 in Section 4.4). A square matrix with linearly independent columns is invertible, by the Invertible Matrix Theorem ([[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]]). Left-multiplying both sides of (4) by $(P_{\mathcal C \leftarrow \mathcal B})^{-1}$ gives
 >
 > $$
 > (P_{\mathcal C \leftarrow \mathcal B})^{-1} [\mathbf{x}]_{\mathcal C} = [\mathbf{x}]_{\mathcal B} \qquad \text{for all } \mathbf{x} \in V .
@@ -125,12 +125,12 @@ The argument of Example §29.1 works for any two bases.
 
 ^pf-29-2
 
-*Uses:* [[§29 Change of Basis#^thm-29-1|§29.1]], [[§26 Coordinate Systems|§26]] (Theorem 8), [[§13 Characterizations of Invertible Matrices|§13]] (Invertible Matrix Theorem)
+*Uses:* [[§29 Change of Basis#^thm-29-1|§29.1]], [[§26 Coordinate Systems#^thm-26-3|§26.3]], [[§26 Coordinate Systems#^cor-26-4|§26.4]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (Invertible Matrix Theorem)
 
 ## Change of Basis in ℝⁿ
 
 > [!theorem] Proposition §29.3: Change of Basis Through the Standard Basis
-> Let $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$, $\mathcal{C} = \{\mathbf{c}_1, \ldots, \mathbf{c}_n\}$ and $\mathcal{D}$ be bases of $\mathbb{R}^n$ (or, in (c), of any vector space $V$), let $\mathcal{E} = \{\mathbf{e}_1, \ldots, \mathbf{e}_n\}$ be the standard basis, and let $P_{\mathcal B} = [\mathbf{b}_1\ \cdots\ \mathbf{b}_n]$ and $P_{\mathcal C} = [\mathbf{c}_1\ \cdots\ \mathbf{c}_n]$ be the change-of-coordinates matrices of [[§26 Coordinate Systems|§26]].
+> Let $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$, $\mathcal{C} = \{\mathbf{c}_1, \ldots, \mathbf{c}_n\}$ and $\mathcal{D}$ be bases of $\mathbb{R}^n$ (or, in (c), of any vector space $V$), let $\mathcal{E} = \{\mathbf{e}_1, \ldots, \mathbf{e}_n\}$ be the standard basis, and let $P_{\mathcal B} = [\mathbf{b}_1\ \cdots\ \mathbf{b}_n]$ and $P_{\mathcal C} = [\mathbf{c}_1\ \cdots\ \mathbf{c}_n]$ be the change-of-coordinates matrices of [[§26 Coordinate Systems#^def-26-2|Definition §26.2]].
 >
 > (a) $P_{\mathcal E \leftarrow \mathcal B} = P_{\mathcal B}$.
 >

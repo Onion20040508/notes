@@ -76,7 +76,7 @@ Matrices can be added, scaled and multiplied, and these operations obey most of 
 
 ^pf-11-1
 
-*Uses:* [[§11 Matrix Operations#^def-11-2|Def. §11.2]], [[§3 Vector Equations|§3]] (algebraic properties of $\mathbb{R}^n$)
+*Uses:* [[§11 Matrix Operations#^def-11-2|Def. §11.2]], [[§3 Vector Equations#^thm-3-2|§3.2]] (algebraic properties of $\mathbb{R}^n$)
 
 By (b), a sum $A + B + C$ can be computed in either grouping; the same holds for sums of four or more matrices.
 
@@ -125,17 +125,17 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 ^thm-11-2
 
 > [!proof]+ Proof
-> Write $B = [\,\mathbf{b}_1 \ \cdots \ \mathbf{b}_p\,]$ and $\mathbf{x} = (x_1, \ldots, x_p)$. By the definition of $B\mathbf{x}$ as a linear combination of the columns of $B$, and by linearity of multiplication by $A$ (Theorem 5 of §4),
+> Write $B = [\,\mathbf{b}_1 \ \cdots \ \mathbf{b}_p\,]$ and $\mathbf{x} = (x_1, \ldots, x_p)$. By the definition of $B\mathbf{x}$ as a linear combination of the columns of $B$, and by linearity of multiplication by $A$ ([[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5]]),
 >
 > $$
 > A(B\mathbf{x}) = A(x_1\mathbf{b}_1 + \cdots + x_p\mathbf{b}_p) = x_1A\mathbf{b}_1 + \cdots + x_pA\mathbf{b}_p .
 > $$
 >
-> The right side is the linear combination of the columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ of $AB$ with weights $x_1, \ldots, x_p$, which is $(AB)\mathbf{x}$ by definition of a matrix–vector product. This proves (1). The map $\mathbf{x} \mapsto A(B\mathbf{x})$ therefore equals $\mathbf{x} \mapsto (AB)\mathbf{x}$, a matrix transformation, which is linear; its standard matrix is $AB$ because a matrix transformation $\mathbf{x} \mapsto M\mathbf{x}$ has standard matrix $M$ (Theorem 10 of §9).
+> The right side is the linear combination of the columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ of $AB$ with weights $x_1, \ldots, x_p$, which is $(AB)\mathbf{x}$ by definition of a matrix–vector product. This proves (1). The map $\mathbf{x} \mapsto A(B\mathbf{x})$ therefore equals $\mathbf{x} \mapsto (AB)\mathbf{x}$, a matrix transformation, which is linear; its standard matrix is $AB$ because a matrix transformation $\mathbf{x} \mapsto M\mathbf{x}$ has standard matrix $M$ (uniqueness in [[§9 The Matrix of a Linear Transformation#^thm-9-1|Theorem §9.1]]).
 
 ^pf-11-2
 
-*Uses:* [[§11 Matrix Operations#^def-11-3|Def. §11.3]], [[§4 The Matrix Equation Ax = b|§4]] (definition of $A\mathbf{x}$; Theorem 5), [[§9 The Matrix of a Linear Transformation|§9]] (Theorem 10: the standard matrix)
+*Uses:* [[§11 Matrix Operations#^def-11-3|Def. §11.3]], [[§4 The Matrix Equation Ax = b#^def-4-1|Def. §4.1]], [[§4 The Matrix Equation Ax = b#^thm-4-5|§4.5]], [[§9 The Matrix of a Linear Transformation#^thm-9-1|§9.1]]
 
 > [!remark] Remark: Composition Reverses the Order
 > In $AB$ the transformation applied *first* is $B$, the one on the right. "First $A$, then $B$" is the product $BA$. The lecture puts it this way: composition of linear transformations corresponds to the product of the matrices in the opposite order ([[§11 Matrix Operations#^ex-11-2|Example §11.2]]).
@@ -158,7 +158,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 
 ^pf-11-3
 
-*Uses:* [[§11 Matrix Operations#^def-11-3|Def. §11.3]], [[§4 The Matrix Equation Ax = b|§4]] (definition of $A\mathbf{x}$)
+*Uses:* [[§11 Matrix Operations#^def-11-3|Def. §11.3]], [[§4 The Matrix Equation Ax = b#^def-4-1|Def. §4.1]]
 
 > [!theorem] Proposition §11.4: Row–Column Rule for Computing AB
 > If $AB$ is defined, the entry in row $i$ and column $j$ of $AB$ is the sum of the products of corresponding entries of row $i$ of $A$ and column $j$ of $B$. If $A$ is $m \times n$,
@@ -172,11 +172,11 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 ^prop-11-4
 
 > [!proof]+ Proof
-> Column $j$ of $AB$ is $A\mathbf{b}_j$. By the row–vector rule for $A\mathbf{x}$ (§4), the $i$th entry of $A\mathbf{b}_j$ is the sum of the products of corresponding entries of row $i$ of $A$ and of the vector $\mathbf{b}_j$, that is, $a_{i1}b_{1j} + \cdots + a_{in}b_{nj}$.
+> Column $j$ of $AB$ is $A\mathbf{b}_j$. By the row–vector rule for $A\mathbf{x}$ ([[§4 The Matrix Equation Ax = b#^prop-4-4|Proposition §4.4]]), the $i$th entry of $A\mathbf{b}_j$ is the sum of the products of corresponding entries of row $i$ of $A$ and of the vector $\mathbf{b}_j$, that is, $a_{i1}b_{1j} + \cdots + a_{in}b_{nj}$.
 
 ^pf-11-4
 
-*Uses:* [[§11 Matrix Operations#^def-11-3|Def. §11.3]], [[§4 The Matrix Equation Ax = b|§4]] (row–vector rule)
+*Uses:* [[§11 Matrix Operations#^def-11-3|Def. §11.3]], [[§4 The Matrix Equation Ax = b#^prop-4-4|§4.4]] (row–vector rule)
 
 > [!theorem] Proposition §11.5: Rows of AB
 > Writing $\operatorname{row}_i(A)$ for the $i$th row of $A$,
@@ -296,7 +296,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 >
 > the sum of the $(i, j)$-entries of $AB$ and $AC$.
 >
-> **(c)** The same computation with the factor on the right: the $(i, j)$-entry of $(B + C)A$ is $\sum_k (b_{ik} + c_{ik})a_{kj} = \sum_k b_{ik}a_{kj} + \sum_k c_{ik}a_{kj}$.
+> **(c)** (Also Exercise 29.) The same computation with the factor on the right: the $(i, j)$-entry of $(B + C)A$ is $\sum_k (b_{ik} + c_{ik})a_{kj} = \sum_k b_{ik}a_{kj} + \sum_k c_{ik}a_{kj}$.
 >
 > **(d)** (Exercise 30.) The $(i, j)$-entry of $(rA)B$ is $(ra_{i1})b_{1j} + \cdots + (ra_{in})b_{nj} = r(a_{i1}b_{1j} + \cdots + a_{in}b_{nj})$, which is the $(i, j)$-entry of $r(AB)$. Likewise $a_{i1}(rb_{1j}) + \cdots + a_{in}(rb_{nj})$ is the $(i, j)$-entry of $r(AB)$, so $A(rB) = r(AB)$.
 >
@@ -304,7 +304,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 
 ^pf-11-6
 
-*Uses:* [[§11 Matrix Operations#^def-11-3|Def. §11.3]], [[§11 Matrix Operations#^thm-11-2|§11.2]], [[§11 Matrix Operations#^prop-11-4|§11.4]]
+*Uses:* [[§11 Matrix Operations#^def-11-3|Def. §11.3]], [[§11 Matrix Operations#^thm-11-2|§11.2]], [[§11 Matrix Operations#^prop-11-4|§11.4]], [[§4 The Matrix Equation Ax = b#^def-4-1|Def. §4.1]], [[§4 The Matrix Equation Ax = b#^def-4-4|Def. §4.4]] ($I_m\mathbf{x} = \mathbf{x}$)
 
 > [!remark]- Connections
 > - Rigorous treatment: the same laws for linear maps between any vector spaces, [[§7 Vector Space of Linear Maps#^ladr-3-8|LADR 3.8]] (associativity, identity, distributivity); they transfer to matrices through $\mathcal{M}(ST) = \mathcal{M}(S)\mathcal{M}(T)$. Associativity of composition of arbitrary functions: [[§8 Functions#^prop-8-1|250 Prop. §8.1]], which is Lay's second proof of (a).
@@ -530,12 +530,12 @@ The associative and distributive laws say that parentheses can be inserted and r
 > Also $\mathbf{x}\mathbf{x}^T = \begin{bmatrix} 25 & 15 \\ 15 & 9 \end{bmatrix}$ and $\mathbf{x}^T\mathbf{x} = [\,25 + 9\,] = 34$, while $A^T\mathbf{x}^T$ is not defined ($\mathbf{x}^T$ has one row, $A^T$ has two columns).
 >
 > *Lay: Practice Problem 2.1.1*
-> *Source: MATH 235 checklist (Section 2.1)*
+> *Source: 235 checklist (2.1)*
 
 ^ex-11-5
 
 > [!remark] Remark: Inner and Outer Products
-> For $\mathbf{u}$, $\mathbf{v}$ in $\mathbb{R}^n$ (as $n \times 1$ matrices), the $1 \times 1$ matrix $\mathbf{u}^T\mathbf{v} = u_1v_1 + \cdots + u_nv_n$ is the **scalar product** or **inner product** of $\mathbf{u}$ and $\mathbf{v}$, written as a number ([[§40 Inner Product, Length, and Orthogonality#^def-40-1|Definition §40.1]]). The $n \times n$ matrix $\mathbf{u}\mathbf{v}^T$ is their **outer product**. By Theorem §11.7(d), $\mathbf{v}^T\mathbf{u} = (\mathbf{u}^T\mathbf{v})^T = \mathbf{u}^T\mathbf{v}$ and $\mathbf{v}\mathbf{u}^T = (\mathbf{u}\mathbf{v}^T)^T$. Outer products reappear in the column–row expansion of $AB$ ([[§14 Partitioned Matrices|§14]]) and in [[§11 Matrix Operations#^ex-11-4|Example §11.4]](b). (Lay's Exercises 27–28.)
+> For $\mathbf{u}$, $\mathbf{v}$ in $\mathbb{R}^n$ (as $n \times 1$ matrices), the $1 \times 1$ matrix $\mathbf{u}^T\mathbf{v} = u_1v_1 + \cdots + u_nv_n$ is the **scalar product** or **inner product** of $\mathbf{u}$ and $\mathbf{v}$, written as a number ([[§40 Inner Product, Length, and Orthogonality#^def-40-1|Definition §40.1]]). The $n \times n$ matrix $\mathbf{u}\mathbf{v}^T$ is their **outer product**. By Theorem §11.7(d), $\mathbf{v}^T\mathbf{u} = (\mathbf{u}^T\mathbf{v})^T = \mathbf{u}^T\mathbf{v}$ and $\mathbf{v}\mathbf{u}^T = (\mathbf{u}\mathbf{v}^T)^T$. Outer products reappear in the column–row expansion of $AB$ ([[§14 Partitioned Matrices#^thm-14-3|Theorem §14.3]]) and in [[§11 Matrix Operations#^ex-11-4|Example §11.4]](b). (Lay's Exercises 27–28.)
 
 ^rem-11-4
 

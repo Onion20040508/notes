@@ -274,7 +274,7 @@ Let the real matrix $A$ have a pair of complex eigenvalues $\lambda$ and $\bar\l
 > \mathbf{v}e^{\lambda t} = (\operatorname{Re}\mathbf{v} + i\operatorname{Im}\mathbf{v})\,e^{at}(\cos bt + i\sin bt) = \big[(\operatorname{Re}\mathbf{v})\cos bt - (\operatorname{Im}\mathbf{v})\sin bt\big]e^{at} + i\big[(\operatorname{Re}\mathbf{v})\sin bt + (\operatorname{Im}\mathbf{v})\cos bt\big]e^{at} .
 > $$
 >
-> **Independence** (Lay: "it can be shown"). At $t = 0$, $\mathbf{y}_1(0) = \operatorname{Re}\mathbf{v}$ and $\mathbf{y}_2(0) = \operatorname{Im}\mathbf{v}$, which are linearly independent by Step 1 of the proof of [[§36 Complex Eigenvalues#^thm-36-4|Theorem §36.4]] (valid for real $n \times n$ matrices). If $c_1\mathbf{y}_1 + c_2\mathbf{y}_2$ is the zero function, its value at $0$ gives $c_1 = c_2 = 0$.
+> **Independence** (Lay: "it can be shown"). At $t = 0$, $\mathbf{y}_1(0) = \operatorname{Re}\mathbf{v}$ and $\mathbf{y}_2(0) = \operatorname{Im}\mathbf{v}$, which are linearly independent by Step 1 of the proof of [[§36 Complex Eigenvalues#^thm-36-4|Theorem §36.4]] (valid for real $n \times n$ matrices; it uses only that the eigenvalue is not real, so it applies to $a + bi$ as well as to $a - bi$). If $c_1\mathbf{y}_1 + c_2\mathbf{y}_2$ is the zero function, its value at $0$ gives $c_1 = c_2 = 0$.
 
 ^pf-38-4
 

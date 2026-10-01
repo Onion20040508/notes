@@ -283,7 +283,7 @@ Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C
 
 ^pf-36-4
 
-*Uses:* [[§36 Complex Eigenvalues#^prop-36-1|§36.1]], [[§36 Complex Eigenvalues#^def-36-2|Def. §36.2]], [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8: independent columns make a square matrix invertible)
+*Uses:* [[§36 Complex Eigenvalues#^prop-36-1|§36.1]], [[§36 Complex Eigenvalues#^def-36-2|Def. §36.2]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem: independent columns make a square matrix invertible)
 
 > [!remark]- Connections
 > - Rigorous treatment: on a real vector space, an irreducible quadratic factor $x^2 + bx + c$ ($b^2 < 4c$) of the minimal polynomial gives two-dimensional invariant subspaces without real eigenvectors, [[§15 The Minimal Polynomial#^ladr-5-33|LADR 5.33]] (and hence every operator on an odd-dimensional real space has an eigenvalue, [[§15 The Minimal Polynomial#^ladr-5-34|LADR 5.34]]). Theorem §36.4 is the explicit $2 \times 2$ form: on the plane spanned by $\operatorname{Re}\mathbf{v}$, $\operatorname{Im}\mathbf{v}$ the matrix acts as a rotation–scaling.

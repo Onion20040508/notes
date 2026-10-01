@@ -11,7 +11,7 @@ tags: [applied-linear-algebra, math235]
 
 *Lay, Appendix B · MATH 235 lecture L21.*
 
-Complex numbers $a + bi$ are needed in linear algebra because real matrices can have non-real eigenvalues: $\begin{bmatrix} 0 & 1 \\ -4 & 0 \end{bmatrix}$ has characteristic polynomial $\lambda^2 + 4 = (\lambda - 2i)(\lambda + 2i)$ ([[§36 Complex Eigenvalues|§36]]). This appendix collects the arithmetic: addition and multiplication, the conjugate $\bar z$ and absolute value $|z|$ (with $z\bar z = |z|^2$, which gives division), and the geometry of the complex plane. In polar form, multiplication multiplies absolute values and adds arguments, so multiplying by a number of absolute value $1$ is a rotation. Powers follow by De Moivre's Theorem. The lecture adds Euler's formula $e^{i\varphi} = \cos\varphi + i\sin\varphi$ and the $2 \times 2$ real matrices that act like complex numbers.
+Complex numbers $a + bi$ are needed in linear algebra because real matrices can have non-real eigenvalues: $\begin{bmatrix} 0 & 1 \\ -4 & 0 \end{bmatrix}$ has characteristic polynomial $\lambda^2 + 4 = (\lambda - 2i)(\lambda + 2i)$ ([[§36 Complex Eigenvalues#^ex-36-1|Example §36.1]]). This appendix collects the arithmetic: addition and multiplication, the conjugate $\bar z$ and absolute value $|z|$ (with $z\bar z = |z|^2$, which gives division), and the geometry of the complex plane. In polar form, multiplication multiplies absolute values and adds arguments, so multiplying by a number of absolute value $1$ is a rotation. Powers follow by De Moivre's Theorem. The lecture adds Euler's formula $e^{i\varphi} = \cos\varphi + i\sin\varphi$ and the $2 \times 2$ real matrices that act like complex numbers.
 
 ## Arithmetic of Complex Numbers
 
@@ -81,8 +81,7 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 >
 > *The lecture writes the real part as $21 - 4 = 17$ and gets $17 + 25i$; since $d = -1$, the term $-bd$ is $+4$, and the product is $25 + 25i$.*
 >
-> *Lay: Appendix B, Example 1*
-> *Source: 235 lecture L21*
+> *Lay: Appendix B, Example 1 (part (a)); Source: 235 lecture L21 (part (b))*
 
 ^ex-53-1
 
@@ -196,8 +195,7 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 >
 > Check: $(2 + 3i)(2 - 3i) = 4 + 9 = 13$, so $(2 + 3i) \cdot \frac{2 - 3i}{13} = 1$.
 >
-> *Lay: Appendix B, Example 3*
-> *Source: 235 lecture L21*
+> *Lay: Appendix B, Example 3 (part (a)); Source: 235 lecture L21 (part (b))*
 
 ^ex-53-2
 
@@ -355,7 +353,7 @@ $$
 > M_{a + bi} = r \begin{bmatrix} a/r & -b/r \\ b/r & a/r \end{bmatrix} = r \begin{bmatrix} \cos\varphi & -\sin\varphi \\ \sin\varphi & \cos\varphi \end{bmatrix},
 > $$
 >
-> a scaling by $|z|$ composed with the rotation by $\arg z$, which is Theorem §53.5 in matrix form. This is the model for every real $2 \times 2$ matrix with complex eigenvalues ([[§36 Complex Eigenvalues|§36]], Theorem 9).
+> a scaling by $|z|$ composed with the rotation by $\arg z$, which is Theorem §53.5 in matrix form. This is the model for every real $2 \times 2$ matrix with complex eigenvalues ([[§36 Complex Eigenvalues#^thm-36-4|Theorem §36.4]]).
 >
 > *Source: 235 lecture L21*
 

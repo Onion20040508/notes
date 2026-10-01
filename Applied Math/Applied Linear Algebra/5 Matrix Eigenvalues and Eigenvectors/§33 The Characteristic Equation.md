@@ -22,7 +22,7 @@ The equation $A\mathbf{x} = \lambda\mathbf{x}$ has two unknowns, $\lambda$ and $
 > A - \lambda I = \begin{bmatrix} 2 & 3 \\ 3 & -6 \end{bmatrix} - \begin{bmatrix} \lambda & 0 \\ 0 & \lambda \end{bmatrix} = \begin{bmatrix} 2 - \lambda & 3 \\ 3 & -6 - \lambda \end{bmatrix}
 > $$
 >
-> is *not* invertible, and a $2 \times 2$ matrix fails to be invertible precisely when its determinant $ad - bc$ is zero ([[§12 The Inverse of a Matrix|§12]], Theorem 4). So the eigenvalues are the solutions of
+> is *not* invertible, and a $2 \times 2$ matrix fails to be invertible precisely when its determinant $ad - bc$ is zero ([[§12 The Inverse of a Matrix#^thm-12-2|Theorem §12.2]]). So the eigenvalues are the solutions of
 >
 > $$
 > \det(A - \lambda I) = (2 - \lambda)(-6 - \lambda) - (3)(3) = -12 + 6\lambda - 2\lambda + \lambda^2 - 9 = \lambda^2 + 4\lambda - 21 = (\lambda - 3)(\lambda + 7) = 0 .
@@ -51,7 +51,7 @@ The determinant has turned the matrix equation $(A - \lambda I)\mathbf{x} = \mat
 
 ^thm-33-1
 
-*Proved in [[§21 Properties of Determinants|§21]] (Lay 3.2, formula (1) after Theorem 3). Readers who skip Chapter 3 may take (1) as the definition of $\det A$.*
+*Proved in [[§21 Properties of Determinants#^prop-21-2|Proposition §21.2]] (Lay 3.2, formula (1) after Theorem 3). Readers who skip Chapter 3 may take (1) as the definition of $\det A$.*
 
 > [!theorem] Theorem §33.2: The Invertible Matrix Theorem (Continued)
 > Let $A$ be an $n \times n$ matrix. Then $A$ is invertible if and only if:
@@ -60,7 +60,7 @@ The determinant has turned the matrix equation $(A - \lambda I)\mathbf{x} = \mat
 >
 > t. The determinant of $A$ is *not* zero.
 >
-> These continue the list of equivalent statements (a)–(r) of [[§28 Rank#^thm-28-5|Theorem §28.5]] (Lay 4.6).
+> These continue the list of equivalent statements (a)–(r): (a)–(l) of [[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]], (m)–(r) of [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]], restated in the previous version [[§28 Rank#^thm-28-5|Theorem §28.5]] (Lay 4.6). Statement (t) was first added in [[§21 Properties of Determinants#^thm-21-4|Theorem §21.4]]. Next (and last) version: [[§51★ The Singular Value Decomposition#^thm-51-6|Theorem §51.6]].
 >
 > *Lay: 5.2, The Invertible Matrix Theorem (continued)*
 
@@ -73,7 +73,7 @@ The determinant has turned the matrix equation $(A - \lambda I)\mathbf{x} = \mat
 
 *Uses:* [[§32 Eigenvectors and Eigenvalues#^thm-32-2|§32.2]], [[§33 The Characteristic Equation#^thm-33-1|§33.1]]
 
-When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determined by the columns $\mathbf{a}_1, \mathbf{a}_2, \mathbf{a}_3$ ([[§22 Cramer’s Rule, Volume, and Linear Transformations|§22]]). This volume is nonzero exactly when the columns are linearly independent, in which case $A$ is invertible.
+When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determined by the columns $\mathbf{a}_1, \mathbf{a}_2, \mathbf{a}_3$ ([[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-4|Theorem §22.4]]). This volume is nonzero exactly when the columns are linearly independent, in which case $A$ is invertible.
 
 > [!theorem] Theorem §33.3: Properties of Determinants
 > Let $A$ and $B$ be $n \times n$ matrices.
@@ -92,7 +92,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 ^thm-33-3
 
-*Lay collects these from Chapter 3 for reference: (d) is [[§20 Introduction to Determinants#^thm-20-2|Theorem §20.2]] (Lay 3.1, Theorem 2), and (e), (a), (c), (b) are Theorems 3–6 of [[§21 Properties of Determinants|§21]] (Lay 3.2), where they are proved.*
+*Lay collects these from Chapter 3 for reference: (d) is [[§20 Introduction to Determinants#^thm-20-2|Theorem §20.2]] (Lay 3.1, Theorem 2), and (e), (a), (c), (b) are [[§21 Properties of Determinants#^thm-21-1|Theorem §21.1]], [[§21 Properties of Determinants#^thm-21-3|Theorem §21.3]], [[§21 Properties of Determinants#^thm-21-6|Theorem §21.6]] and [[§21 Properties of Determinants#^thm-21-9|Theorem §21.9]] (Lay 3.2, Theorems 3–6), where they are proved.*
 
 ## The Characteristic Equation
 
@@ -125,7 +125,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 ^pf-33-4
 
-*Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8, the Invertible Matrix Theorem), [[§33 The Characteristic Equation#^thm-33-3|§33.3]]
+*Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem), [[§33 The Characteristic Equation#^thm-33-3|§33.3]]
 
 > [!theorem] Theorem §33.5: The Characteristic Polynomial Has Degree n
 > If $A$ is an $n \times n$ matrix, then $\det(A - \lambda I)$ is a polynomial in $\lambda$ of degree $n$. More precisely,
@@ -276,18 +276,18 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 *Uses:* [[§33 The Characteristic Equation#^thm-33-3|§33.3]] (b), [[§33 The Characteristic Equation#^thm-33-4|§33.4]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§34 Determinants#^ladr-9-52|LADR 9.52]] (determinant is a similarity invariant) and, for the meaning of similarity, [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]] (change-of-basis formula $A = C^{-1}BC$): similar matrices are the matrices of one operator in two bases, as [[§35 Eigenvectors and Linear Transformations|§35]] shows. The trace is also a similarity invariant: [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|LADR 8.50]].
+> - Rigorous treatment: [[§34 Determinants#^ladr-9-52|LADR 9.52]] (determinant is a similarity invariant) and, for the meaning of similarity, [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]] (change-of-basis formula $A = C^{-1}BC$): similar matrices are the matrices of one operator in two bases, as [[§35 Eigenvectors and Linear Transformations#^thm-35-2|Theorem §35.2]] shows. The trace is also a similarity invariant: [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|LADR 8.50]].
 
 > [!remark] Remark: Warnings
 > 1. **The converse of Theorem §33.6 is false.** $\begin{bmatrix} 2 & 1 \\ 0 & 2 \end{bmatrix}$ and $\begin{bmatrix} 2 & 0 \\ 0 & 2 \end{bmatrix}$ both have characteristic polynomial $(\lambda - 2)^2$, but they are not similar: $P^{-1}(2I)P = 2I$ for every invertible $P$, so $2I$ is similar only to itself.
-> 2. **Similarity is not row equivalence.** If $A$ is row equivalent to $B$, then $B = EA$ for some invertible $E$ (a product of elementary matrices), whereas similarity requires $B = P^{-1}AP$. Row operations usually change the eigenvalues. The lecture's extreme case is $n = 1$: a $1 \times 1$ matrix $[a]$ is similar only to itself ($p^{-1}ap = a$), while any two nonzero $1 \times 1$ matrices, such as $[5]$ and $[-7]$, are row equivalent.
+> 2. **Similarity is not row equivalence.** If $A$ is row equivalent to $B$, then $B = EA$ for some invertible $E$ (a product of elementary matrices), whereas similarity requires $B = P^{-1}AP$. Row operations usually change the eigenvalues. The lecture's extreme case is $n = 1$: a $1 \times 1$ matrix $[a]$ is similar only to itself ($p^{-1}ap = a$), while any two nonzero $1 \times 1$ matrices, such as $[5]$ and $[-7]$, are row equivalent. (The lecture writes row equivalence as $A = CB$ with $B$ invertible; row operations multiply on the left, $A = BC$.)
 >
 > *Lay: 5.2, Warnings; Source: 235 lecture L20*
 
 ^rem-33-2
 
 > [!theorem] Proposition §33.7: Eigenvectors of Similar Matrices
-> If $A = PBP^{-1}$ and $A\mathbf{u} = \lambda\mathbf{u}$ with $\mathbf{u} \ne \mathbf{0}$, then $B(P^{-1}\mathbf{u}) = \lambda(P^{-1}\mathbf{u})$ and $P^{-1}\mathbf{u} \ne \mathbf{0}$. So $P^{-1}$ maps the eigenspace of $A$ for $\lambda$ onto the eigenspace of $B$ for $\lambda$ (with inverse $P$). In particular, if $A$ is similar to $B$ and $A$ is diagonalizable, so is $B$ ([[§34 Diagonalization|§34]]).
+> If $A = PBP^{-1}$ and $A\mathbf{u} = \lambda\mathbf{u}$ with $\mathbf{u} \ne \mathbf{0}$, then $B(P^{-1}\mathbf{u}) = \lambda(P^{-1}\mathbf{u})$ and $P^{-1}\mathbf{u} \ne \mathbf{0}$. So $P^{-1}$ maps the eigenspace of $A$ for $\lambda$ onto the eigenspace of $B$ for $\lambda$ (with inverse $P$). In particular, if $A$ is similar to $B$ and $A$ is diagonalizable, so is $B$ ([[§34 Diagonalization#^def-34-1|Definition §34.1]]).
 >
 > *Source: 235 lecture L20*
 
@@ -333,7 +333,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 >
 > As $k \to \infty$, $(.92)^k \to 0$, so $\mathbf{x}_k \to .125\mathbf{v}_1 = \begin{bmatrix} .375 \\ .625 \end{bmatrix}$.
 >
-> $A$ is the city–suburb migration matrix of [[§31 Applications to Markov Chains|§31]], and $\mathbf{x}_k$ is the population distribution after $k$ years. [[§31 Applications to Markov Chains#^thm-31-3|Theorem §31.3]] (Lay's Theorem 18) said that $\mathbf{x}_k$ tends to a steady-state vector; formula (5) shows why: the steady-state vector $.125\mathbf{v}_1$ is an eigenvector for $\lambda = 1$, and the other component dies out like $(.92)^k$.
+> $A$ is the city–suburb migration matrix of [[§31 Applications to Markov Chains#^ex-31-1|Example §31.1]], and $\mathbf{x}_k$ is the population distribution after $k$ years. [[§31 Applications to Markov Chains#^thm-31-3|Theorem §31.3]] (Lay's Theorem 18) said that $\mathbf{x}_k$ tends to a steady-state vector; formula (5) shows why: the steady-state vector $.125\mathbf{v}_1$ is an eigenvector for $\lambda = 1$, and the other component dies out like $(.92)^k$.
 >
 > *Lay: Example 5.2.5*
 

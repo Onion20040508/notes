@@ -54,7 +54,7 @@ This section turns the theory of [[§20 Introduction to Determinants|§20]]–[[
 
 ^pf-22-1
 
-*Uses:* [[§22 Cramer’s Rule, Volume, and Linear Transformations#^def-22-1|Def. §22.1]], [[§21 Properties of Determinants#^thm-21-3|§21.3]], [[§21 Properties of Determinants#^thm-21-9|§21.9]], [[§20 Introduction to Determinants#^thm-20-1|§20.1]], [[§11 Matrix Operations|§11]] (columns of a product)
+*Uses:* [[§22 Cramer’s Rule, Volume, and Linear Transformations#^def-22-1|Def. §22.1]], [[§21 Properties of Determinants#^thm-21-3|§21.3]], [[§21 Properties of Determinants#^thm-21-9|§21.9]], [[§20 Introduction to Determinants#^thm-20-1|§20.1]], [[§11 Matrix Operations#^prop-11-3|§11.3]] (columns of a product)
 
 > [!example] Example §22.1: Cramer's Rule, With and Without a Parameter
 > **(a)** Solve $\begin{cases} x_1 + 2x_2 = 5 \\ 3x_1 + 4x_2 = 7 \end{cases}$. Here
@@ -199,7 +199,7 @@ This section turns the theory of [[§20 Introduction to Determinants|§20]]–[[
 > \operatorname{adj} A = \begin{bmatrix} C_{11} & C_{21} \\ C_{12} & C_{22} \end{bmatrix} = \begin{bmatrix} d & -b \\ -c & a \end{bmatrix}, \qquad A^{-1} = \frac{1}{ad - bc}\begin{bmatrix} d & -b \\ -c & a \end{bmatrix},
 > $$
 >
-> the formula of [[§12 The Inverse of a Matrix|§12]] (Theorem 4 of 2.2).
+> the formula of [[§12 The Inverse of a Matrix#^thm-12-2|Theorem §12.2]] (Theorem 4 of 2.2).
 >
 > *Source: 235 lecture L13*
 
@@ -230,7 +230,7 @@ This section turns the theory of [[§20 Introduction to Determinants|§20]]–[[
 > (\operatorname{adj} A)\,A = \begin{bmatrix} -2 & 14 & 4 \\ 3 & -7 & 1 \\ 5 & -7 & -3 \end{bmatrix}\begin{bmatrix} 2 & 1 & 3 \\ 1 & -1 & 1 \\ 1 & 4 & -2 \end{bmatrix} = \begin{bmatrix} 14 & 0 & 0 \\ 0 & 14 & 0 \\ 0 & 0 & 14 \end{bmatrix} = 14I .
 > $$
 >
-> Since $(\operatorname{adj} A)A = 14I$, the matrix $\frac{1}{14}\operatorname{adj} A$ is a left inverse of $A$, so $A$ is invertible (Invertible Matrix Theorem). Theorem §22.2 then says $(\operatorname{adj} A)A = (\det A)I$, so $\det A = 14$ and
+> Since $(\operatorname{adj} A)A = 14I$, the matrix $\frac{1}{14}\operatorname{adj} A$ is a left inverse of $A$, so $A$ is invertible ([[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]]). Theorem §22.2 then says $(\operatorname{adj} A)A = (\det A)I$, so $\det A = 14$ and
 >
 > $$
 > A^{-1} = \frac{1}{14}\begin{bmatrix} -2 & 14 & 4 \\ 3 & -7 & 1 \\ 5 & -7 & -3 \end{bmatrix} = \begin{bmatrix} -1/7 & 1 & 2/7 \\ 3/14 & -1/2 & 1/14 \\ 5/14 & -1/2 & -3/14 \end{bmatrix} .
@@ -243,7 +243,7 @@ This section turns the theory of [[§20 Introduction to Determinants|§20]]–[[
 > [!remark] Remark: When to Use Cramer's Rule and the Adjugate
 > - **Conditions.** Cramer's rule applies only to a *square* system with an *invertible* coefficient matrix ($\det A \ne 0$). When $\det A = 0$ it says nothing: the system may be inconsistent or have infinitely many solutions, and row reduction must decide (Example §22.1(b)).
 > - **Advantages.** Both formulas are explicit. They show how the solution or the inverse depends on the entries of $A$ and $\mathbf{b}$, which makes them the tool for theoretical questions: sensitivity of $\mathbf{x}$ to errors in $\mathbf{b}$ or $A$; solutions depending on a parameter (Example §22.1(b)); integrality (if $A$ has integer entries and $\det A = \pm 1$, then $A^{-1} = \pm\operatorname{adj} A$ has integer entries, Lay's Exercise 18). For a $3 \times 3$ matrix with *complex* entries, Cramer's rule is sometimes preferred because row reduction of $[A \ \mathbf{b}]$ with complex arithmetic is messy.
-> - **Cost.** For a larger $n \times n$ matrix, real or complex, Cramer's rule is hopelessly inefficient: it needs $n + 1$ determinants, and computing just *one* determinant takes about as much work as solving $A\mathbf{x} = \mathbf{b}$ by row reduction. Likewise, except in special cases, row reducing $[A \ I]$ ([[§12 The Inverse of a Matrix|§12]]) is a much better way to compute $A^{-1}$ than the $n^2$ cofactors of $\operatorname{adj} A$.
+> - **Cost.** For a larger $n \times n$ matrix, real or complex, Cramer's rule is hopelessly inefficient: it needs $n + 1$ determinants, and computing just *one* determinant takes about as much work as solving $A\mathbf{x} = \mathbf{b}$ by row reduction. Likewise, except in special cases, row reducing $[A \ I]$ ([[§12 The Inverse of a Matrix#^rem-12-3|Remark §12.3]]) is a much better way to compute $A^{-1}$ than the $n^2$ cofactors of $\operatorname{adj} A$.
 
 ^rem-22-2
 
@@ -376,7 +376,7 @@ For a linear transformation $T$ and a set $S$ in its domain, $T(S)$ denotes the 
 
 ^pf-22-5
 
-*Uses:* [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-4|§22.4]], [[§21 Properties of Determinants#^thm-21-9|§21.9]], [[§8 Introduction to Linear Transformations|§8]] (linearity)
+*Uses:* [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-4|§22.4]], [[§21 Properties of Determinants#^thm-21-9|§21.9]], [[§8 Introduction to Linear Transformations#^def-8-3|Def. §8.3]] (linearity)
 
 > [!theorem] Theorem §22.6: Regions of Finite Area or Volume
 > The conclusions of Theorem §22.5 hold whenever $S$ is a region in $\mathbb{R}^2$ with finite area or a region in $\mathbb{R}^3$ with finite volume.

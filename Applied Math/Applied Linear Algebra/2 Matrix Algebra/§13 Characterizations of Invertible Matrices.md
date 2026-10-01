@@ -11,7 +11,7 @@ tags: [applied-linear-algebra, math235]
 
 *Lay, Section 2.3 · MATH 235 lectures L6, L7, L8, L9.*
 
-For a *square* matrix, almost every concept of Chapter 1 turns out to be equivalent to invertibility. This is the Invertible Matrix Theorem: twelve statements about an $n \times n$ matrix $A$ (pivots, solutions of $A\mathbf{x} = \mathbf{0}$ and $A\mathbf{x} = \mathbf{b}$, independence and spanning of the columns, one-to-one and onto, one-sided inverses, invertibility of $A^T$) are either all true or all false. One consequence is that a one-sided inverse of a square matrix is automatically two-sided. The theorem is then read for linear transformations: $T : \mathbb{R}^n \to \mathbb{R}^n$ has an inverse function exactly when its standard matrix is invertible, and the inverse is again linear. The theorem grows in later sections ([[§19 Dimension and Rank|§19]], [[§21 Properties of Determinants|§21]], [[§28 Rank|§28]], [[§33 The Characteristic Equation|§33]], [[§51★ The Singular Value Decomposition#^thm-51-6|Theorem §51.6]]).
+For a *square* matrix, almost every concept of Chapter 1 turns out to be equivalent to invertibility. This is the Invertible Matrix Theorem: twelve statements about an $n \times n$ matrix $A$ (pivots, solutions of $A\mathbf{x} = \mathbf{0}$ and $A\mathbf{x} = \mathbf{b}$, independence and spanning of the columns, one-to-one and onto, one-sided inverses, invertibility of $A^T$) are either all true or all false. One consequence is that a one-sided inverse of a square matrix is automatically two-sided. The theorem is then read for linear transformations: $T : \mathbb{R}^n \to \mathbb{R}^n$ has an inverse function exactly when its standard matrix is invertible, and the inverse is again linear. The theorem grows in later sections: (m)–(r) in [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]], $\det A \ne 0$ in [[§21 Properties of Determinants#^thm-21-4|Theorem §21.4]], (m)–(r) restated in Lay 4.6 form in [[§28 Rank#^thm-28-5|Theorem §28.5]], (s)–(t) in [[§33 The Characteristic Equation#^thm-33-2|Theorem §33.2]], and (u)–(x) in [[§51★ The Singular Value Decomposition#^thm-51-6|Theorem §51.6]].
 
 ## The Invertible Matrix Theorem
 
@@ -31,6 +31,8 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 > k. There is an $n \times n$ matrix $D$ such that $AD = I$.
 > l. $A^T$ is an invertible matrix.
 >
+> Continued with statements (m)–(r) in [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]].
+>
 > *Lay: Theorem 8 (2.3)*
 
 ^thm-13-1
@@ -48,27 +50,27 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 >
 > **(j) $\Rightarrow$ (d).** (Lay's Exercise 23 in Section 2.1.) If $CA = I$ and $A\mathbf{x} = \mathbf{0}$, then $\mathbf{x} = I\mathbf{x} = CA\mathbf{x} = C\mathbf{0} = \mathbf{0}$.
 >
-> **(d) $\Rightarrow$ (c).** (Exercise 23 in Section 2.2.) If $A\mathbf{x} = \mathbf{0}$ has only the trivial solution, the system has no free variables, so every one of the $n$ columns of $A$ is a pivot column: $A$ has $n$ pivot positions.
+> **(d) $\Rightarrow$ (c).** (Exercise 23 in Section 2.2.) If $A\mathbf{x} = \mathbf{0}$ has only the trivial solution, this consistent system has a unique solution, so it has no free variables ([[§2 Row Reduction and Echelon Forms#^thm-2-3|Theorem §2.3]]). Every one of the $n$ variables is then a basic variable, so every one of the $n$ columns of $A$ is a pivot column: $A$ has $n$ pivot positions.
 >
-> **(c) $\Rightarrow$ (b).** $A$ is square, so $n$ pivot positions means one in each row and each column. Pivots move strictly down and to the right, so they lie on the main diagonal, and the reduced echelon form of $A$ is $I_n$.
+> **(c) $\Rightarrow$ (b).** Each row and each column contains at most one pivot position. $A$ is square, so $n$ pivot positions means exactly one in each of the $n$ rows and each of the $n$ columns. In an echelon form the pivot of row $i + 1$ lies strictly to the right of the pivot of row $i$, so the pivot of row $i$ is in column $i$: the pivots lie on the main diagonal. In the reduced echelon form each pivot is $1$ and is the only nonzero entry in its column, and every column is a pivot column, so the reduced echelon form of $A$ is $I_n$. Thus $A$ is row equivalent to $I_n$.
 >
-> **(b) $\Rightarrow$ (a).** Theorem §12.8. This completes the circle.
+> **(b) $\Rightarrow$ (a).** [[§12 The Inverse of a Matrix#^thm-12-8|Theorem §12.8]]. This completes the circle.
 >
 > **(a) $\Rightarrow$ (k).** $D = A^{-1}$ works.
 >
 > **(k) $\Rightarrow$ (g).** (Exercise 24 in Section 2.1.) If $AD = I$, then for each $\mathbf{b}$ the vector $\mathbf{x} = D\mathbf{b}$ satisfies $A\mathbf{x} = (AD)\mathbf{b} = I\mathbf{b} = \mathbf{b}$.
 >
-> **(g) $\Rightarrow$ (a).** (Exercise 24 in Section 2.2.) If $A\mathbf{x} = \mathbf{b}$ is consistent for every $\mathbf{b}$, then $A$ has a pivot position in every row (Theorem 4 of §4). There are $n$ rows, so (c) holds, and (c) implies (a) through the circle. So (k) and (g) are linked to the circle.
+> **(g) $\Rightarrow$ (a).** (Exercise 24 in Section 2.2.) If $A\mathbf{x} = \mathbf{b}$ is consistent for every $\mathbf{b}$, then $A$ has a pivot position in every row ([[§4 The Matrix Equation Ax = b#^thm-4-3|Theorem §4.3]], (a) $\Rightarrow$ (d)). There are $n$ rows, so (c) holds, and (c) implies (a) through the circle. So (k) and (g) are linked to the circle.
 >
-> **(g) $\Leftrightarrow$ (h) $\Leftrightarrow$ (i).** These are equivalent for *any* matrix: (g) $\Leftrightarrow$ (h) is Theorem 4 of §4, and (h) $\Leftrightarrow$ (i) is Theorem 12(a) of §9 ($\mathbf{x} \mapsto A\mathbf{x}$ is onto exactly when the columns of $A$ span). So (h) and (i) are linked through (g).
+> **(g) $\Leftrightarrow$ (h) $\Leftrightarrow$ (i).** These are equivalent for *any* matrix: (g) $\Leftrightarrow$ (h) is [[§4 The Matrix Equation Ax = b#^thm-4-3|Theorem §4.3]] ((a) $\Leftrightarrow$ (c) there), and (h) $\Leftrightarrow$ (i) is [[§9 The Matrix of a Linear Transformation#^thm-9-3|Theorem §9.3]](a) ($\mathbf{x} \mapsto A\mathbf{x}$, whose standard matrix is $A$, is onto exactly when the columns of $A$ span $\mathbb{R}^n$). So (h) and (i) are linked through (g).
 >
-> **(d) $\Leftrightarrow$ (e) $\Leftrightarrow$ (f).** Also equivalent for any matrix: $A\mathbf{x} = \mathbf{0}$ having only the trivial solution is the definition of linear independence of the columns (§7), and (e) $\Leftrightarrow$ (f) is Theorem 12(b) of §9.
+> **(d) $\Leftrightarrow$ (e) $\Leftrightarrow$ (f).** Also equivalent for any matrix: (d) $\Leftrightarrow$ (e) is [[§7 Linear Independence#^prop-7-1|Proposition §7.1]] (the columns of $A$ are independent exactly when $A\mathbf{x} = \mathbf{0}$ has only the trivial solution), and (e) $\Leftrightarrow$ (f) is [[§9 The Matrix of a Linear Transformation#^thm-9-3|Theorem §9.3]](b).
 >
-> **(a) $\Leftrightarrow$ (l).** (a) $\Rightarrow$ (l) is Theorem §12.4(c). Applying the same theorem to $A^T$, and using $(A^T)^T = A$, gives (l) $\Rightarrow$ (a).
+> **(a) $\Leftrightarrow$ (l).** (a) $\Rightarrow$ (l) is [[§12 The Inverse of a Matrix#^thm-12-4|Theorem §12.4]](c). Applying the same theorem to $A^T$, and using $(A^T)^T = A$ ([[§11 Matrix Operations#^thm-11-7|Theorem §11.7]](a)), gives (l) $\Rightarrow$ (a).
 
 ^pf-13-1
 
-*Uses:* [[§12 The Inverse of a Matrix#^thm-12-8|§12.8]], [[§12 The Inverse of a Matrix#^thm-12-4|§12.4]], [[§11 Matrix Operations#^thm-11-7|§11.7]], [[§4 The Matrix Equation Ax = b|§4]] (Theorem 4), [[§7 Linear Independence|§7]] (linear independence of the columns), [[§9 The Matrix of a Linear Transformation|§9]] (Theorem 12), [[§2 Row Reduction and Echelon Forms|§2]] (pivot positions, free variables)
+*Uses:* [[§12 The Inverse of a Matrix#^thm-12-8|§12.8]], [[§12 The Inverse of a Matrix#^thm-12-4|§12.4]], [[§11 Matrix Operations#^thm-11-7|§11.7]], [[§4 The Matrix Equation Ax = b#^thm-4-3|§4.3]], [[§7 Linear Independence#^prop-7-1|§7.1]], [[§9 The Matrix of a Linear Transformation#^thm-9-3|§9.3]], [[§2 Row Reduction and Echelon Forms#^thm-2-3|§2.3]], [[§2 Row Reduction and Echelon Forms#^def-2-3|Def. §2.3]], [[§2 Row Reduction and Echelon Forms#^def-2-4|Def. §2.4]]
 
 ![[m235-13-1.svg]]
 *How the proof of the Invertible Matrix Theorem is organized. The five statements on the circle imply one another in turn; (k) and (g) attach to it through (a); the statements (g), (h), (i) about spanning and onto, and (d), (e), (f) about independence and one-to-one, are equivalent for every matrix, square or not; and (l) is equivalent to (a) by the inverse of a transpose. Squareness is used only in (c) ⇒ (b) and (g) ⇒ (a), where $n$ pivots must fill both the $n$ rows and the $n$ columns.*
@@ -78,10 +80,11 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 > - The same phenomenon for functions between finite sets of equal size: injective iff surjective, [[§11 Properties of Finite Sets#^thm-11-7|250 Thm. §11.7]].
 
 > [!remark] Remark: Using the Theorem
-> - By Theorem §12.3, (g) may be strengthened to "$A\mathbf{x} = \mathbf{b}$ has a *unique* solution for each $\mathbf{b}$ in $\mathbb{R}^n$". That statement certainly implies (b), so it is also equivalent to invertibility.
+> - By [[§12 The Inverse of a Matrix#^thm-12-3|Theorem §12.3]], (g) may be strengthened to "$A\mathbf{x} = \mathbf{b}$ has a *unique* solution for each $\mathbf{b}$ in $\mathbb{R}^n$". That statement certainly implies (b), so it is also equivalent to invertibility.
 > - The theorem divides the $n \times n$ matrices into two disjoint classes, invertible (nonsingular) and singular. The *negation* of each statement describes every singular matrix: an $n \times n$ singular matrix is not row equivalent to $I_n$, has fewer than $n$ pivot positions, has linearly dependent columns, and so on.
 > - The theorem applies **only to square matrices**. If the columns of a $4 \times 3$ matrix are linearly independent, nothing follows about the existence of solutions of $A\mathbf{x} = \mathbf{b}$.
 > - In practice the quickest test is (c): row reduce to an echelon form and count pivots. The lecture calls a pivot in every row the most practical criterion for invertibility.
+> - The lecture (L9) defines an $n \times n$ matrix $A$ to be invertible when $AB = I$ for some $n \times n$ matrix $B$, without also asking for $BA = I$. By (k) $\Rightarrow$ (a) this describes the same matrices as Lay's two-sided definition, and Corollary §13.2 below shows that such a $B$ is $A^{-1}$.
 
 ^rem-13-1
 
@@ -175,7 +178,7 @@ Matrix multiplication corresponds to composition of linear transformations (Theo
 
 ^pf-13-3
 
-*Uses:* [[§13 Characterizations of Invertible Matrices#^def-13-1|Def. §13.1]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]], [[§11 Matrix Operations#^thm-11-2|§11.2]], [[§8 Introduction to Linear Transformations|§8]] (matrix transformations are linear)
+*Uses:* [[§13 Characterizations of Invertible Matrices#^def-13-1|Def. §13.1]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]], [[§11 Matrix Operations#^thm-11-2|§11.2]], [[§8 Introduction to Linear Transformations#^prop-8-2|§8.2]]
 
 > [!remark]- Connections
 > - Rigorous treatment: a linear map is invertible iff it is injective and surjective, and its inverse is then linear, [[§10 Invertibility and Isomorphisms#^ladr-3-63|LADR 3.63]]; for maps between arbitrary sets, [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]] and the uniqueness of the inverse function, [[§9 Injections, Surjections and Bijections#^def-9-3|250 Def. §9.3]].
@@ -183,7 +186,7 @@ Matrix multiplication corresponds to composition of linear transformations (Theo
 > [!example] Example §13.2: A One-to-One Transformation of ℝⁿ Is Invertible
 > What can be said about a one-to-one linear transformation $T$ from $\mathbb{R}^n$ into $\mathbb{R}^n$?
 >
-> The columns of the standard matrix $A$ of $T$ are linearly independent (Theorem 12 of §9). So $A$ is invertible by the Invertible Matrix Theorem, statement (e), and then by statement (i) $T$ maps $\mathbb{R}^n$ onto $\mathbb{R}^n$. Also $T$ is invertible, by Theorem §13.3.
+> The columns of the standard matrix $A$ of $T$ are linearly independent ([[§9 The Matrix of a Linear Transformation#^thm-9-3|Theorem §9.3]](b)). So $A$ is invertible by the Invertible Matrix Theorem, statement (e), and then by statement (i) $T$ maps $\mathbb{R}^n$ onto $\mathbb{R}^n$. Also $T$ is invertible, by Theorem §13.3.
 >
 > *Lay: Example 2.3.2*
 

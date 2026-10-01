@@ -97,7 +97,7 @@ Until Chapter 4, a vector is an ordered list of numbers, written as a column. Ve
 *Uses:* [[§3 Vector Equations#^def-3-1|Def. §3.1]], [[§3 Vector Equations#^def-3-2|Def. §3.2]]
 
 > [!remark]- Connections
-> - The same eight properties for Stewart's $V_n$: [[§81 Vectors#^thm-81-5|Calc Thm. §81.5]]. Axler turns them into the definition of an abstract vector space ([[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]); Lay does the same in [[§23 Vector Spaces and Subspaces|§23]] (Section 4.1).
+> - The same eight properties for Stewart's $V_n$: [[§81 Vectors#^thm-81-5|Calc Thm. §81.5]]. Axler turns them into the definition of an abstract vector space ([[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]); Lay does the same in [[§23 Vector Spaces and Subspaces#^def-23-1|Definition §23.1]] (Section 4.1).
 
 > [!example] Example §3.1: Computing with Vectors
 > Let $\mathbf{u} = \begin{bmatrix} 1 \\ -2 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 2 \\ -5 \end{bmatrix}$. Then
@@ -129,7 +129,7 @@ Until Chapter 4, a vector is an ordered list of numbers, written as a column. Ve
 ^def-3-3
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§4 Span and Linear Independence#^ladr-2-2|LADR 2.2]] (linear combination of a list in any vector space $V$) and [[§4 Span and Linear Independence#^ladr-2-4|LADR 2.4]] (span); Axler also shows that the span is the smallest subspace containing the vectors ([[§4 Span and Linear Independence#^ladr-2-6|LADR 2.6]]), which Lay reaches in [[§18 Subspaces of ℝⁿ|§18]] and [[§23 Vector Spaces and Subspaces|§23]].
+> - Rigorous treatment: [[§4 Span and Linear Independence#^ladr-2-2|LADR 2.2]] (linear combination of a list in any vector space $V$) and [[§4 Span and Linear Independence#^ladr-2-4|LADR 2.4]] (span); Axler also shows that the span is the smallest subspace containing the vectors ([[§4 Span and Linear Independence#^ladr-2-6|LADR 2.6]]), which Lay reaches in [[§18 Subspaces of ℝⁿ#^prop-18-1|Proposition §18.1]] and [[§23 Vector Spaces and Subspaces#^thm-23-4|Theorem §23.4]].
 
 Geometrically, $c_1\mathbf{v}_1 + c_2\mathbf{v}_2$ gives instructions for traveling from the origin: $c_1$ units in the $\mathbf{v}_1$ direction, then $c_2$ units parallel to $\mathbf{v}_2$. On the skewed grid of Figure (b) above, the weights can be read off. With $\mathbf{v}_1 = (-1, 1)$ and $\mathbf{v}_2 = (2, 1)$, Lay reads off $\mathbf{u} = 3\mathbf{v}_1 - 2\mathbf{v}_2$ from such a grid and estimates a point $\mathbf{w}$ between grid lines as $\mathbf{w} \approx \tfrac52\mathbf{v}_1 - \tfrac12\mathbf{v}_2$ (Lay's Example 4).
 
@@ -182,6 +182,28 @@ The augmented matrix can be written down at once: put the vectors into the colum
 
 By Theorem §3.3, asking whether $\mathbf{b}$ is in $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ amounts to asking whether the vector equation $x_1\mathbf{v}_1 + \cdots + x_p\mathbf{v}_p = \mathbf{b}$ has a solution, or equivalently whether the linear system with augmented matrix $[\,\mathbf{v}_1\ \cdots\ \mathbf{v}_p\ \ \mathbf{b}\,]$ is consistent. The span contains every scalar multiple of each $\mathbf{v}_j$ (for example $c\mathbf{v}_1 = c\mathbf{v}_1 + 0\mathbf{v}_2 + \cdots + 0\mathbf{v}_p$), and in particular it contains $\mathbf{0}$.
 
+> [!theorem] Proposition §3.4: Sums and Multiples Stay in the Span
+> If $\mathbf{u}$ and $\mathbf{v}$ are in $\operatorname{Span}\{\mathbf{w}_1, \ldots, \mathbf{w}_p\}$, then so are $\mathbf{u} + \mathbf{v}$ and $c\mathbf{u}$ for every scalar $c$.
+>
+> *Lay: 1.3, Practice Problem 3*
+
+^prop-3-4
+
+> [!proof]+ Proof
+> By Definition §3.4 there are scalars $c_1, \ldots, c_p$ and $d_1, \ldots, d_p$ with $\mathbf{u} = c_1\mathbf{w}_1 + \cdots + c_p\mathbf{w}_p$ and $\mathbf{v} = d_1\mathbf{w}_1 + \cdots + d_p\mathbf{w}_p$. Regrouping by the algebraic properties of $\mathbb{R}^n$ (commutativity, associativity and property (vi)),
+>
+> $$
+> \mathbf{u} + \mathbf{v} = (c_1 + d_1)\mathbf{w}_1 + \cdots + (c_p + d_p)\mathbf{w}_p ,
+> $$
+>
+> and $c_1 + d_1, \ldots, c_p + d_p$ are scalars, so $\mathbf{u} + \mathbf{v}$ is in the span. (Lay's solution does this for $p = 3$.) Likewise, by properties (v) and (vii), $c\mathbf{u} = (cc_1)\mathbf{w}_1 + \cdots + (cc_p)\mathbf{w}_p$ is in the span.
+
+^pf-3-4
+
+*Uses:* [[§3 Vector Equations#^def-3-4|Def. §3.4]], [[§3 Vector Equations#^thm-3-2|§3.2]]
+
+These two closure properties are what will make every span a *subspace* ([[§18 Subspaces of ℝⁿ#^prop-18-1|Proposition §18.1]]).
+
 > [!remark] Remark: A Geometric Description of Span{v} and Span{u, v}
 > - **One vector.** If $\mathbf{v} \ne \mathbf{0}$ in $\mathbb{R}^3$ (or $\mathbb{R}^2$), $\operatorname{Span}\{\mathbf{v}\}$ is the set of all scalar multiples of $\mathbf{v}$: the line through $\mathbf{0}$ in the direction of $\mathbf{v}$. ($\operatorname{Span}\{\mathbf{0}\} = \{\mathbf{0}\}$.)
 > - **Two vectors.** If $\mathbf{u}$ and $\mathbf{v}$ are nonzero vectors in $\mathbb{R}^3$ and $\mathbf{v}$ is not a multiple of $\mathbf{u}$, then $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$ is the plane through $\mathbf{0}$ that contains $\mathbf{u}$ and $\mathbf{v}$ (and so contains the lines through $\mathbf{0}$ and $\mathbf{u}$ and through $\mathbf{0}$ and $\mathbf{v}$). If instead the two vectors are proportional, the span is only the line through $\mathbf{0}$ in their common direction.
@@ -207,7 +229,7 @@ By Theorem §3.3, asking whether $\mathbf{b}$ is in $\operatorname{Span}\{\mathb
 > \begin{bmatrix} 1 & 0 & -1/3 \\ 0 & 1 & 1/3 \\ 0 & 0 & 0 \end{bmatrix} .
 > $$
 >
-> No bad row, so yes: $x = -\tfrac13$, $y = \tfrac13$, and
+> No bad row ([[§2 Row Reduction and Echelon Forms#^thm-2-3|Theorem §2.3]]), so yes: $x = -\tfrac13$, $y = \tfrac13$, and
 >
 > $$
 > \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix} = -\frac13\begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} + \frac13\begin{bmatrix} 4 \\ 5 \\ 6 \end{bmatrix}
@@ -241,6 +263,8 @@ By Theorem §3.3, asking whether $\mathbf{b}$ is in $\operatorname{Span}\{\mathb
 > $$
 >
 > so $\mathbf{b}$ is a linear combination of $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ in at least two ways: $1\mathbf{v}_1 + 2\mathbf{v}_2 + 0\mathbf{v}_3$ and $0\mathbf{v}_1 + 0\mathbf{v}_2 + 2\mathbf{v}_3$. Mixing them gives more: $\tfrac13(\ast) + \tfrac23(\ast\ast)$ yields $\big(\tfrac13 + \tfrac23\big)\mathbf{b} = \mathbf{b} = \tfrac13\mathbf{v}_1 + \tfrac23\mathbf{v}_2 + \tfrac43\mathbf{v}_3$. **Check:** $\tfrac13 + \tfrac13 + \tfrac43 = 2$ and $\tfrac13 + 0 + \tfrac23 = 1$. In terms of Theorem §3.3: the system with augmented matrix $[\,\mathbf{v}_1\ \mathbf{v}_2\ \mathbf{v}_3\ \mathbf{b}\,]$ has 2 equations and 3 unknowns, so it has a free variable and, being consistent, infinitely many solutions. Uniqueness of weights is the subject of [[§7 Linear Independence|§7]].
+>
+> *The lecture writes the weight of $\mathbf{v}_3$ in the mixed combination as $\tfrac23$; it is $\tfrac23 \cdot 2 = \tfrac43$, as the check confirms.*
 >
 > *Source: 235 lecture L3*
 

@@ -48,7 +48,7 @@ A linear system is solved by replacing it with a simpler system that has the sam
 
 ^def-1-2
 
-A system of two equations in two unknowns asks for the intersection of two lines: they meet in one point, are parallel, or coincide ([[§1 Systems of Linear Equations#^ex-1-2|Example §1.2]]). The same three possibilities are the only ones in general: *a system of linear equations has no solution, exactly one solution, or infinitely many solutions.* Lay verifies this in Section 1.2: [[§2 Row Reduction and Echelon Forms|§2]] (Theorem 2, the Existence and Uniqueness Theorem).
+A system of two equations in two unknowns asks for the intersection of two lines: they meet in one point, are parallel, or coincide ([[§1 Systems of Linear Equations#^ex-1-2|Example §1.2]]). The same three possibilities are the only ones in general: *a system of linear equations has no solution, exactly one solution, or infinitely many solutions.* Lay verifies this in Section 1.2: [[§2 Row Reduction and Echelon Forms#^cor-2-4|Corollary §2.4]], from Lay's Theorem 2, the Existence and Uniqueness Theorem ([[§2 Row Reduction and Echelon Forms#^thm-2-3|Theorem §2.3]]).
 
 > [!definition] Definition §1.3: Consistent and Inconsistent Systems
 > A system of linear equations is **consistent** if it has either one solution or infinitely many solutions (that is, at least one solution); it is **inconsistent** if it has no solution.
@@ -70,7 +70,7 @@ A system of two equations in two unknowns asks for the intersection of two lines
 > \sum_i a_i\big((1 - t)u_i + tv_i\big) = (1 - t)\sum_i a_iu_i + t\sum_i a_iv_i = (1 - t)b + tb = b .
 > $$
 >
-> If $\mathbf{u} \ne \mathbf{v}$, different values of $t$ give different points, so two solutions force infinitely many. In the picture, the solution set of each equation in three unknowns is a plane, and two planes that share two points share the whole line through them. The lecture states the finer count "$\infty^a$": a line of solutions is "$\infty^1$", a plane "$\infty^2$", and for $m$ equations in $\ell$ unknowns one expects $\infty^{\ell - m}$ solutions. What is true is that a system has either no solution or $\infty^{k}$ solutions with $k \ge \ell - m$; the exponent is the number of free variables ([[§2 Row Reduction and Echelon Forms|§2]]).
+> If $\mathbf{u} \ne \mathbf{v}$, different values of $t$ give different points, so two solutions force infinitely many. In the picture, the solution set of each equation in three unknowns is a plane, and two planes that share two points share the whole line through them. The lecture states the finer count "$\infty^a$": a line of solutions is "$\infty^1$", a plane "$\infty^2$", and for $m$ equations in $\ell$ unknowns one expects $\infty^{\ell - m}$ solutions. What is true is that a system has either no solution or $\infty^{k}$ solutions with $k \ge \ell - m$ (and $k \ge 0$, where $\infty^0 = 1$ means a unique solution): the exponent is the number of free variables ([[§2 Row Reduction and Echelon Forms#^thm-2-3|Theorem §2.3]]), and since at most $m$ of the $\ell$ variables have a pivot, at least $\ell - m$ of them are free.
 >
 > *Source: 235 lecture L02*
 
@@ -98,7 +98,7 @@ A system of two equations in two unknowns asks for the intersection of two lines
 > \begin{bmatrix} 1 & -2 & 1 & 0 \\ 0 & 2 & -8 & 8 \\ 5 & 0 & -5 & 10 \end{bmatrix} . \qquad (4)
 > $$
 >
-> (The second row contains a zero because the second equation can be written $0 \cdot x_1 + 2x_2 - 8x_3 = 8$.) The **size** of a matrix tells how many rows and columns it has: an **$m \times n$ matrix** ("$m$ by $n$") has $m$ rows and $n$ columns, rows always first. The augmented matrix (4) is $3 \times 4$.
+> (The second row contains a zero because the second equation can be written $0 \cdot x_1 + 2x_2 - 8x_3 = 8$.) The **size** of a matrix tells how many rows and columns it has: an **$m \times n$ matrix** ("$m$ by $n$") has $m$ rows and $n$ columns, rows always first. The augmented matrix (4) is $3 \times 4$. (The lecture calls the coefficient matrix the **main part** of the augmented matrix.)
 >
 > *Lay: 1.1 (text)*
 
@@ -214,7 +214,7 @@ The strategy is to replace a system by an equivalent system that is easier to so
 >
 > So $z = \tfrac{41}{12}$, $y = 5 + \tfrac{41}{12} = \tfrac{101}{12}$, $x = 19 - 5 \cdot \tfrac{41}{12} = \tfrac{228 - 205}{12} = \tfrac{23}{12}$. The three planes meet in the single point $\big(\tfrac{23}{12}, \tfrac{101}{12}, \tfrac{41}{12}\big)$. **Check:** $\tfrac{23 + 202 + 123}{12} = 29$, $\tfrac{23 + 303 + 82}{12} = 34$, $\tfrac{69 + 202 + 41}{12} = 26$.
 >
-> *The lecture writes the third reduced equation as $12z = -61 + 20$ and later restates the first plane as $x + 2y + 3z = 39$; with $-12z$ and $29$ the arithmetic is consistent and the solution above checks.*
+> *The lecture first writes the second reduced equation as $y - z = -5$ (it is $+5$, as the lecture has on the next page), overwrites the signs in front of $z$ and $12z$ in the next system, and later restates the first plane as $x + 2y + 3z = 39$ (it is $29$); with $y - z = 5$ and $-12z = -41$ the solution above checks.*
 >
 > *Lay: Examples 1.1.1 and 1.1.2*
 > *Source: 235 lecture L02*
@@ -246,7 +246,7 @@ The strategy is to replace a system by an equivalent system that is easier to so
 > 1. Is the system consistent; that is, does at least one solution exist?
 > 2. If a solution exists, is it the only one; that is, is the solution unique?
 >
-> These two questions appear throughout the subject in many guises. Row operations on the augmented matrix answer both: bring the matrix to a triangular form, and read off whether a contradiction $0 = b$ ($b \ne 0$) appears and whether every variable is determined. [[§2 Row Reduction and Echelon Forms|§2]] makes this precise.
+> These two questions appear throughout the subject in many guises. Row operations on the augmented matrix answer both: bring the matrix to a triangular form, and read off whether a contradiction $0 = b$ ($b \ne 0$) appears and whether every variable is determined. [[§2 Row Reduction and Echelon Forms#^thm-2-3|Theorem §2.3]] makes this precise.
 
 ^rem-1-2
 
@@ -311,6 +311,27 @@ The strategy is to replace a system by an equivalent system that is easier to so
 > *Lay: 1.1, Practice Problem 4*
 
 ^ex-1-4
+
+> [!example] Example §1.5: Back-Substitution in a Triangular System
+> Solve the system whose augmented matrix is already in triangular form:
+>
+> $$
+> \begin{bmatrix} 2 & 3 & 1 & 5 \\ 0 & 2 & 1 & 1 \\ 0 & 0 & 1 & -2 \end{bmatrix} ,
+> \qquad\text{that is,}\qquad
+> \begin{aligned}
+> 2x + 3y + z &= 5 \\
+> 2y + z &= 1 \\
+> z &= -2 .
+> \end{aligned}
+> $$
+>
+> Instead of clearing the entries above the diagonal by row operations as in Example §1.1, substitute from the bottom up (**back-substitution**). The last equation gives $z = -2$. Substituting into the second, $2y = 1 - z = 1 + 2 = 3$, so $y = \tfrac32$. Substituting both into the first, $2x = 5 - 3y - z = 5 - \tfrac92 + 2 = \tfrac52$, so $x = \tfrac54$. The solution is $\big(\tfrac54, \tfrac32, -2\big)$. **Check:** $2 \cdot \tfrac54 + 3 \cdot \tfrac32 - 2 = \tfrac52 + \tfrac92 - 2 = 5$ and $2 \cdot \tfrac32 - 2 = 1$.
+>
+> This also answers both fundamental questions at once, as in Lay's Example 2: each diagonal coefficient ($2$, $2$, $1$) is nonzero, so each equation determines its variable from the ones below it, a solution exists, and it is unique.
+>
+> *Source: 235 lecture L1*
+
+^ex-1-5
 
 > [!remark]- Remark: Numerical Note — Floating Point Arithmetic
 > In real-world problems linear systems are solved by computer. For a square coefficient matrix, programs nearly always use the elimination algorithm of this section and [[§2 Row Reduction and Echelon Forms|§2]], slightly modified for accuracy. They work in floating point arithmetic: numbers are stored as $\pm .d_1 \cdots d_p \times 10^r$ with $p$ usually between 8 and 16 digits, so results are rounded, and even entering $1/3$ introduces a **roundoff error**. Such inaccuracies seldom cause problems.

@@ -168,7 +168,7 @@ For the matrix of Example §32.1, the eigenspace for $\lambda = 7$ consists of a
 >
 > is upper triangular too. The scalar $\lambda$ is an eigenvalue of $A$ if and only if $(A - \lambda I)\mathbf{x} = \mathbf{0}$ has a nontrivial solution, that is, a free variable. Because of the zero entries, this happens if and only if at least one diagonal entry of $A - \lambda I$ is zero (Lay: "it is easy to see"; here is why).
 > - If all diagonal entries $a_{kk} - \lambda$ are nonzero, $A - \lambda I$ is already an echelon form with a pivot in every column, so there is no free variable.
-> - If $a_{kk} - \lambda = 0$ for some $k$, look at the first $k$ columns of $A - \lambda I$. Column $j$ has zeros below row $j$, and column $k$ also has a zero in row $k$. So all of the first $k$ columns have zeros in rows $k, \ldots, n$. Deleting those rows leaves $k$ vectors in $\mathbb{R}^{k-1}$, which are linearly dependent ([[§7 Linear Independence|§7]], Theorem 8); the same weights give a linear dependence among the first $k$ columns of $A - \lambda I$. So the columns of $A - \lambda I$ are linearly dependent, and $(A - \lambda I)\mathbf{x} = \mathbf{0}$ has a nontrivial solution.
+> - If $a_{kk} - \lambda = 0$ for some $k$, look at the first $k$ columns of $A - \lambda I$. Column $j$ has zeros below row $j$, and column $k$ also has a zero in row $k$. So all of the first $k$ columns have zeros in rows $k, \ldots, n$. Deleting those rows leaves $k$ vectors in $\mathbb{R}^{k-1}$, which are linearly dependent ([[§7 Linear Independence#^thm-7-6|Theorem §7.6]]); the same weights give a linear dependence among the first $k$ columns of $A - \lambda I$. So the columns of $A - \lambda I$ are linearly dependent, and $(A - \lambda I)\mathbf{x} = \mathbf{0}$ has a nontrivial solution.
 >
 > So $\lambda$ is an eigenvalue exactly when $\lambda$ equals one of $a_{11}, \ldots, a_{nn}$.
 >
@@ -176,7 +176,7 @@ For the matrix of Example §32.1, the eigenspace for $\lambda = 7$ consists of a
 
 ^pf-32-1
 
-*Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§7 Linear Independence|§7]] (Theorem 8: more vectors than entries are dependent), [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8, the Invertible Matrix Theorem: (c), (d), (l))
+*Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§7 Linear Independence#^thm-7-6|§7.6]] (more vectors than entries are dependent), [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem: (a), (d), (l))
 
 > [!example] Example §32.3: Eigenvalues by Inspection
 > Let $A = \begin{bmatrix} 3 & 6 & -8 \\ 0 & 0 & 6 \\ 0 & 0 & 2 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & 0 & 0 \\ -2 & 1 & 0 \\ 5 & 3 & 4 \end{bmatrix}$. By Theorem §32.1, the eigenvalues of the upper triangular $A$ are $3$, $0$ and $2$, and the eigenvalues of the lower triangular $B$ are $4$ and $1$ (the diagonal entry $4$ occurs twice, but it is one eigenvalue).
@@ -199,7 +199,7 @@ For the matrix of Example §32.1, the eigenspace for $\lambda = 7$ consists of a
 
 ^pf-32-2
 
-*Uses:* [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8, the Invertible Matrix Theorem)
+*Uses:* [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem)
 
 This fact is added to the Invertible Matrix Theorem in [[§33 The Characteristic Equation#^thm-33-2|Theorem §33.2]].
 
@@ -213,7 +213,7 @@ The next theorem is needed throughout the chapter. Its proof is a typical calcul
 ^thm-32-3
 
 > [!proof]+ Proof
-> Suppose $\{\mathbf{v}_1, \ldots, \mathbf{v}_r\}$ is linearly dependent. Since $\mathbf{v}_1$ is nonzero, one of the vectors in the set is a linear combination of the preceding vectors ([[§7 Linear Independence|§7]], Theorem 7). Let $p$ be the least index such that $\mathbf{v}_{p+1}$ is a linear combination of the preceding vectors; by the minimality of $p$, the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_p$ are linearly independent (otherwise Theorem 7 would apply to them and give a smaller index). Then there are scalars $c_1, \ldots, c_p$ with
+> Suppose $\{\mathbf{v}_1, \ldots, \mathbf{v}_r\}$ is linearly dependent. Since $\mathbf{v}_1$ is nonzero, one of the vectors in the set is a linear combination of the preceding vectors ([[§7 Linear Independence#^thm-7-4|Theorem §7.4]]). Let $p$ be the least index such that $\mathbf{v}_{p+1}$ is a linear combination of the preceding vectors; by the minimality of $p$, the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_p$ are linearly independent (otherwise Theorem §7.4 would apply to them and give a smaller index). Then there are scalars $c_1, \ldots, c_p$ with
 >
 > $$
 > c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p = \mathbf{v}_{p+1} . \qquad (5)
@@ -235,7 +235,7 @@ The next theorem is needed throughout the chapter. Its proof is a typical calcul
 
 ^pf-32-3
 
-*Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§7 Linear Independence|§7]] (Theorem 7: characterization of linearly dependent sets)
+*Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§7 Linear Independence#^thm-7-4|§7.4]] (characterization of linearly dependent sets)
 
 > [!remark]- Remark: A Second Proof (Vandermonde)
 > The lecture proves the case $r = 3$ differently. Suppose $c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + c_3\mathbf{v}_3 = \mathbf{0}$ (1). Applying $A$ once and twice gives
@@ -250,7 +250,7 @@ The next theorem is needed throughout the chapter. Its proof is a typical calcul
 > \begin{bmatrix} c_1\mathbf{v}_1 & c_2\mathbf{v}_2 & c_3\mathbf{v}_3 \end{bmatrix} V^T = 0, \qquad V = \begin{bmatrix} 1 & 1 & 1 \\ \lambda_1 & \lambda_2 & \lambda_3 \\ \lambda_1^2 & \lambda_2^2 & \lambda_3^2 \end{bmatrix} ,
 > $$
 >
-> where $V$ is the **Vandermonde matrix**, with $\det V = (\lambda_2 - \lambda_1)(\lambda_3 - \lambda_1)(\lambda_3 - \lambda_2) \ne 0$ (the Vandermonde determinant; for $3 \times 3$ it can be checked by row reduction). Multiplying on the right by $(V^T)^{-1}$ gives $c_1\mathbf{v}_1 = c_2\mathbf{v}_2 = c_3\mathbf{v}_3 = \mathbf{0}$, and since the $\mathbf{v}_i$ are nonzero, $c_1 = c_2 = c_3 = 0$. The same works for any $r$, with the $r \times r$ Vandermonde matrix. (The lecture writes the matrix of the $c_i\mathbf{v}_i$ on the right of $V$; the product is formed with the columns of $V$ as weights, which is the transposed arrangement above.)
+> where $V$ is the **Vandermonde matrix**, with $\det V = (\lambda_2 - \lambda_1)(\lambda_3 - \lambda_1)(\lambda_3 - \lambda_2) \ne 0$ (the Vandermonde determinant, [[§21 Properties of Determinants#^prop-21-8|Proposition §21.8]], proved there by row reduction for every size). Multiplying on the right by $(V^T)^{-1}$ gives $c_1\mathbf{v}_1 = c_2\mathbf{v}_2 = c_3\mathbf{v}_3 = \mathbf{0}$, and since the $\mathbf{v}_i$ are nonzero, $c_1 = c_2 = c_3 = 0$. The same works for any $r$, with the $r \times r$ Vandermonde matrix. (The lecture writes the matrix of the $c_i\mathbf{v}_i$ on the right of $V$; the product is formed with the columns of $V$ as weights, which is the transposed arrangement above.)
 >
 > *Source: 235 lecture L19*
 
@@ -264,11 +264,11 @@ The next theorem is needed throughout the chapter. Its proof is a typical calcul
 ^cor-32-4
 
 > [!proof]+ Proof
-> If $\lambda_1, \ldots, \lambda_r$ are distinct eigenvalues of $A$, choose an eigenvector $\mathbf{v}_i$ for each. By Theorem §32.3, $\{\mathbf{v}_1, \ldots, \mathbf{v}_r\}$ is a linearly independent set in $\mathbb{R}^n$, so $r \le n$ ([[§7 Linear Independence|§7]], Theorem 8). (The lecture gives a second reason: the eigenvalues are the roots of a polynomial of degree $n$, [[§33 The Characteristic Equation#^thm-33-5|Theorem §33.5]], and such a polynomial has at most $n$ roots.)
+> If $\lambda_1, \ldots, \lambda_r$ are distinct eigenvalues of $A$, choose an eigenvector $\mathbf{v}_i$ for each. By Theorem §32.3, $\{\mathbf{v}_1, \ldots, \mathbf{v}_r\}$ is a linearly independent set in $\mathbb{R}^n$, so $r \le n$ ([[§7 Linear Independence#^thm-7-6|Theorem §7.6]]). (The lecture gives a second reason: the eigenvalues are the roots of a polynomial of degree $n$, [[§33 The Characteristic Equation#^thm-33-5|Theorem §33.5]], and such a polynomial has at most $n$ roots.)
 
 ^pf-32-4
 
-*Uses:* [[§32 Eigenvectors and Eigenvalues#^thm-32-3|§32.3]], [[§7 Linear Independence|§7]] (Theorem 8)
+*Uses:* [[§32 Eigenvectors and Eigenvalues#^thm-32-3|§32.3]], [[§7 Linear Independence#^thm-7-6|§7.6]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Invariant Subspaces#^ladr-5-11|LADR 5.11]] (eigenvectors for distinct eigenvalues are linearly independent; Axler's proof is the same minimal-counterexample argument) and [[§14 Invariant Subspaces#^ladr-5-12|LADR 5.12]] (at most $\dim V$ eigenvalues). In Axler's terms the eigenspaces form a direct sum, [[§17 Diagonalizable Operators#^ladr-5-54|LADR 5.54]].
@@ -362,7 +362,7 @@ So if $\mathbf{x}_0$ can be written as a combination of eigenvectors, the differ
 >
 > The second entry is almost exactly twice the first: $A^{10}\mathbf{e}_1$ lies almost on the eigenvector line through $(1, 2)$, as the shrinking wedges of [[§32 Eigenvectors and Eigenvalues#^rem-32-1|Remark: Motivation]] predict.
 >
-> *The lecture writes $A\mathbf{u} = 5^{10}\mathbf{u}$ for $A^{10}\mathbf{u} = 5^{10}\mathbf{u}$.*
+> *The lecture writes $A\mathbf{u} = 5^{10}\mathbf{u}$ and $A\mathbf{v} = (-1)^{10}\mathbf{v}$ for $A^{10}\mathbf{u} = 5^{10}\mathbf{u}$ and $A^{10}\mathbf{v} = (-1)^{10}\mathbf{v}$.*
 >
 > *Source: 235 lecture L18*
 

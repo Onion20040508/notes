@@ -105,7 +105,7 @@ Leontief asked whether there is a production level $\mathbf{x}$ at which the amo
 
 ^ex-16-1
 
-If $I - C$ is invertible, Theorem §12.3 applied to (5) gives $\mathbf{x} = (I - C)^{-1}\mathbf{d}$. The next theorem shows that in most practical cases $I - C$ *is* invertible and the production vector is **economically feasible**: its entries are nonnegative. The **column sum** of a column is the sum of its entries. Ordinarily the column sums of a consumption matrix are less than 1, because a sector should need less than one unit's worth of inputs to produce one unit of output.
+If $I - C$ is invertible, [[§12 The Inverse of a Matrix#^thm-12-3|Theorem §12.3]] applied to (5) gives $\mathbf{x} = (I - C)^{-1}\mathbf{d}$. The next theorem shows that in most practical cases $I - C$ *is* invertible and the production vector is **economically feasible**: its entries are nonnegative. The **column sum** of a column is the sum of its entries. Ordinarily the column sums of a consumption matrix are less than 1, because a sector should need less than one unit's worth of inputs to produce one unit of output.
 
 > [!theorem] Theorem §16.1: Feasible Production
 > Let $C$ be the consumption matrix for an economy, and let $\mathbf{d}$ be the final demand. If $C$ and $\mathbf{d}$ have nonnegative entries and if each column sum of $C$ is less than 1, then $(I - C)^{-1}$ exists and the production vector
@@ -124,7 +124,14 @@ If $I - C$ is invertible, Theorem §12.3 applied to (5) gives $\mathbf{x} = (I -
 
 ^thm-16-1
 
-*Lay gives no formal proof; his discussion below suggests why the theorem is true, and the remark after Proposition §16.2 completes it.*
+> [!proof]- Proof
+> *Lay gives this as a sketch:* he gives no formal proof, only the discussion of the next subsection, which "will suggest why the theorem is true". The step he leaves as "it can be shown" is proved in Proposition §16.2 below, which does not use this theorem.
+>
+> By Proposition §16.2, $I - C$ is invertible and $(I - C)^{-1}$ is the limit of the partial sums $S_m = I + C + C^2 + \cdots + C^m$. Each $S_m$ has nonnegative entries, because $C$ does and sums and products of matrices with nonnegative entries have nonnegative entries. A limit of nonnegative numbers is nonnegative, so $(I - C)^{-1}$ has nonnegative entries. Then so does $\mathbf{x} = (I - C)^{-1}\mathbf{d}$, since $\mathbf{d}$ does. (This is Lay's remark that (6) shows the entries in $\mathbf{x}$ are nonnegative when those in $C$ and $\mathbf{d}$ are.) Finally, since $I - C$ is invertible, [[§12 The Inverse of a Matrix#^thm-12-3|Theorem §12.3]] says that $(I - C)\mathbf{x} = \mathbf{d}$, which is the same equation as $\mathbf{x} = C\mathbf{x} + \mathbf{d}$, has the unique solution $\mathbf{x} = (I - C)^{-1}\mathbf{d}$.
+
+^pf-16-1
+
+*Uses:* [[§16 The Leontief Input–Output Model#^prop-16-2|§16.2]], [[§12 The Inverse of a Matrix#^thm-12-3|§12.3]]
 
 ## A Formula for (I − C)⁻¹
 
@@ -153,13 +160,13 @@ $$
 > (I - C)(I + C + C^2 + \cdots + C^m) = I - C^{m+1} . \tag{7}
 > $$
 >
-> If the column sums of $C$ are all less than 1 (and its entries are nonnegative), then $I - C$ is invertible, $C^m \to 0$ as $m \to \infty$, and
+> If the entries of $C$ are nonnegative and its column sums are all less than 1, then $I - C$ is invertible, $C^m \to 0$ as $m \to \infty$, and
 >
 > $$
 > (I - C)^{-1} \approx I + C + C^2 + C^3 + \cdots + C^m, \tag{8}
 > $$
 >
-> in the sense that the right side can be made as close to $(I - C)^{-1}$ as desired by taking $m$ large enough.
+> in the sense that the right side can be made as close to $(I - C)^{-1}$ as desired by taking $m$ large enough: $(I - C)^{-1} = \lim_{m \to \infty}(I + C + \cdots + C^m)$, entry by entry.
 >
 > *Lay: 2.6, Equations (7) and (8)*
 
@@ -174,21 +181,14 @@ $$
 >
 > since all the middle terms cancel. (This is the matrix version of $(1 - t)(1 + t + \cdots + t^m) = 1 - t^{m+1}$.)
 >
-> **The limit.** Lay says only that "it can be shown"; this is filled in in the remark below.
+> **The limit.** (Lay says only "it can be shown", comparing it with $t^m \to 0$ for $0 < t < 1$; here is why.) Lay states it for a consumption matrix, whose entries are nonnegative, and that is needed: $C = \begin{bmatrix} 0 & -2 \\ -2 & 0 \end{bmatrix}$ has column sums $-2 < 1$, but $C^2 = 4I$, so $C^m \not\to 0$. There are finitely many columns, so all column sums are at most some $s < 1$. Write $\mathbf{1} = (1, \ldots, 1)$; the column sums of a matrix $M$ are the entries of the row $\mathbf{1}^TM$.
+> - **$C^m \to 0$.** We have $\mathbf{1}^TC \le s\,\mathbf{1}^T$ entrywise. Multiplying an entrywise inequality between rows on the right by a matrix with nonnegative entries preserves it, so (multiplying by $C^{m-1}$, then $C^{m-2}$, and so on) $\mathbf{1}^TC^m \le s\,\mathbf{1}^TC^{m-1} \le s^2\,\mathbf{1}^TC^{m-2} \le \cdots \le s^m\mathbf{1}^T$. So every column sum of $C^m$ is at most $s^m$. The entries of $C^m$ are nonnegative, so each entry is at most its column sum, hence lies between $0$ and $s^m$, and $s^m \to 0$.
+> - **The partial sums converge.** Since every $C^k$ has nonnegative entries, each entry of $S_m = I + C + \cdots + C^m$ increases with $m$, and it is at most $1 + s + s^2 + \cdots + s^m < 1/(1 - s)$. A bounded increasing sequence converges, so $S_m \to S$ entry by entry, for some matrix $S$ with nonnegative entries.
+> - **$S = (I - C)^{-1}$.** Each entry of $(I - C)S_m$ is a fixed linear combination of entries of $S_m$, so $(I - C)S_m \to (I - C)S$. By (7), $(I - C)S_m = I - C^{m+1} \to I$. Hence $(I - C)S = I$, and by [[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]] the square matrix $I - C$ is invertible with $(I - C)^{-1} = S = \lim_{m\to\infty} S_m$, which is (8).
 
 ^pf-16-2
 
-*Uses:* [[§11 Matrix Operations#^thm-11-6|§11.6]]
-
-> [!remark] Remark: Why It Works
-> Let $C$ have nonnegative entries and column sums at most $s < 1$. Write $\mathbf{1} = (1, \ldots, 1)$, so that the column sums of a matrix $M$ are the entries of the row $\mathbf{1}^TM$.
-> - **$C^m \to 0$.** The entries of $C^m$ are nonnegative, and $\mathbf{1}^TC \le s\,\mathbf{1}^T$ entrywise. Multiplying on the right by the nonnegative matrix $C^{m-1}$ preserves such inequalities, so $\mathbf{1}^TC^m \le s\,\mathbf{1}^TC^{m-1} \le \cdots \le s^m\mathbf{1}^T$: every column sum of $C^m$, hence every entry, is at most $s^m$, which tends to $0$ (as $t^m \to 0$ for $0 \le t < 1$).
-> - **The series converges.** The entries of $S_m = I + C + \cdots + C^m$ increase with $m$ and are bounded by $1 + s + s^2 + \cdots = 1/(1 - s)$, so they converge; call the limit $S$. Its entries are nonnegative.
-> - **$S = (I - C)^{-1}$.** Letting $m \to \infty$ in (7), $(I - C)S_m = I - C^{m+1} \to I$, so $(I - C)S = I$. By Corollary §13.2, $I - C$ is invertible with inverse $S$.
->
-> This proves Theorem §16.1: $(I - C)^{-1} = S$ exists, $\mathbf{x} = S\mathbf{d}$ has nonnegative entries because $S$ and $\mathbf{d}$ do, and it is the unique solution of $(I - C)\mathbf{x} = \mathbf{d}$, equivalently of $\mathbf{x} = C\mathbf{x} + \mathbf{d}$, by Theorem §12.3. In Lay's words, (6) shows that if the entries in $C$ and $\mathbf{d}$ are nonnegative, so are the entries in $\mathbf{x}$.
-
-^rem-16-1
+*Uses:* [[§11 Matrix Operations#^thm-11-6|§11.6]], [[§13 Characterizations of Invertible Matrices#^cor-13-2|§13.2]], [[§69 Sequences#^thm-69-8|Calc Thm. §69.8]] ($s^m \to 0$), [[§69 Sequences#^thm-69-9|Calc Thm. §69.9]] (bounded monotonic sequences converge)
 
 > [!remark]- Connections
 > - (8) is the matrix form of the geometric series $\frac{1}{1 - t} = 1 + t + t^2 + \cdots$ for $|t| < 1$, [[§70 Series#^thm-70-1|Calc Thm. §70.1]]; "column sums less than 1" plays the role of $|t| < 1$ (it says that $C$ has norm less than $1$ in the norm given by the largest absolute column sum).
@@ -200,13 +200,13 @@ In actual input–output models, powers of the consumption matrix approach the z
 The entries of $(I - C)^{-1}$ predict how the production $\mathbf{x}$ must change when the final demand $\mathbf{d}$ changes. Since $\mathbf{x} = (I - C)^{-1}\mathbf{d}$ depends linearly on $\mathbf{d}$, increasing $\mathbf{d}$ by $\mathbf{e}_j$ increases $\mathbf{x}$ by $(I - C)^{-1}\mathbf{e}_j$: **the entries in column $j$ of $(I - C)^{-1}$ are the increased amounts the sectors must produce to satisfy an increase of 1 unit in the final demand for the output of sector $j$.** (Lay's Exercise 8.)
 
 > [!example] Example §16.2: The Inverse for the Three-Sector Economy
-> For the consumption matrix (3) of Example §16.1, row reducing $[\,I - C \ \ I\,]$ (or using the cofactor formula of [[§22 Cramer’s Rule, Volume, and Linear Transformations|§22]]) gives
+> For the consumption matrix (3) of Example §16.1, row reducing $[\,I - C \ \ I\,]$ (or using the inverse formula [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-2|Theorem §22.2]]) gives
 >
 > $$
 > (I - C)^{-1} = \frac{1}{27}\begin{bmatrix} 80 & 50 & 30 \\ 25 & 55 & 15 \\ 15 & 15 & 45 \end{bmatrix} \approx \begin{bmatrix} 2.96 & 1.85 & 1.11 \\ .93 & 2.04 & .56 \\ .56 & .56 & 1.67 \end{bmatrix} .
 > $$
 >
-> (Check, row 1 of $I - C$ times column 1: $\tfrac{1}{27}(.5 \cdot 80 - .4 \cdot 25 - .2 \cdot 15) = \tfrac{1}{27}(40 - 10 - 3) = 1$.) All entries are positive, as Theorem §16.1 predicts (the column sums of $C$ are $.8$, $.8$, $.6$).
+> (Check, row 1 of $I - C$ times column 1: $\tfrac{1}{27}(.5 \cdot 80 - .4 \cdot 25 - .2 \cdot 15) = \tfrac{1}{27}(40 - 10 - 3) = 1$.) All entries are nonnegative (here even positive), as Theorem §16.1 predicts (the column sums of $C$ are $.8$, $.8$, $.6$).
 >
 > **Production.** $(I - C)^{-1}\mathbf{d}$ for $\mathbf{d} = (50, 30, 20)$ gives $\tfrac{1}{27}(4000 + 1500 + 600,\ 1250 + 1650 + 300,\ 750 + 450 + 900) = (6100/27,\ 3200/27,\ 2100/27)$, as in Example §16.1 ($2100/27 = 700/9$).
 >
@@ -235,7 +235,7 @@ The entries of $(I - C)^{-1}$ predict how the production $\mathbf{x}$ must chang
 > C = \begin{bmatrix} .2 & .4 \\ .5 & .3 \end{bmatrix}, \qquad \mathbf{d} = \begin{bmatrix} 20 \\ 30 \end{bmatrix} .
 > $$
 >
-> The column sums are $.7$ and $.7$, so Theorem §16.1 applies. Solving with Theorem §12.2: $I - C = \begin{bmatrix} .8 & -.4 \\ -.5 & .7 \end{bmatrix}$ has determinant $.56 - .20 = .36$, so
+> The column sums are $.7$ and $.7$, so Theorem §16.1 applies. Solving with [[§12 The Inverse of a Matrix#^thm-12-2|Theorem §12.2]]: $I - C = \begin{bmatrix} .8 & -.4 \\ -.5 & .7 \end{bmatrix}$ has determinant $.56 - .20 = .36$, so
 >
 > $$
 > \mathbf{x} = (I - C)^{-1}\mathbf{d} = \frac{1}{.36}\begin{bmatrix} .7 & .4 \\ .5 & .8 \end{bmatrix}\begin{bmatrix} 20 \\ 30 \end{bmatrix} = \frac{1}{.36}\begin{bmatrix} 26 \\ 34 \end{bmatrix} \approx \begin{bmatrix} 72.2 \\ 94.4 \end{bmatrix} .
@@ -250,4 +250,4 @@ The entries of $(I - C)^{-1}$ predict how the production $\mathbf{x}$ must chang
 > [!remark]- Remark: Numerical Note
 > Any equation $A\mathbf{x} = \mathbf{b}$, not just in economics, can be written as $(I - C)\mathbf{x} = \mathbf{b}$ with $C = I - A$. If the system is large and sparse (mostly zero entries), it can happen that the column sums of the *absolute values* of the entries of $C$ are less than 1. Then $C^m \to 0$, and if this happens quickly enough, (6) and (8) give practical formulas for solving $A\mathbf{x} = \mathbf{b}$ and finding $A^{-1}$.
 
-^rem-16-2
+^rem-16-1

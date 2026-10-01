@@ -100,7 +100,7 @@ Powers of a diagonal matrix are trivial to compute, and so are powers of any mat
 
 ^pf-34-1
 
-*Uses:* [[§34 Diagonalization#^def-34-1|Def. §34.1]], [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§11 Matrix Operations|§11]] (definition of $AB$ column by column), [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8, the Invertible Matrix Theorem)
+*Uses:* [[§34 Diagonalization#^def-34-1|Def. §34.1]], [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§11 Matrix Operations#^def-11-3|Def. §11.3]] (the product $AB$ column by column), [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§17 Diagonalizable Operators#^ladr-5-50|LADR 5.50]] (an operator is diagonalizable if it has a diagonal matrix in *some* basis) and [[§17 Diagonalizable Operators#^ladr-5-55|LADR 5.55]] (equivalent: a basis of eigenvectors; $V$ is the direct sum of the eigenspaces; the eigenspace dimensions add up to $\dim V$). Axler's (a) $\Leftrightarrow$ (b) is the operator form of $AP = PD$; that $D = P^{-1}AP$ is the matrix of $\mathbf{x} \mapsto A\mathbf{x}$ in the basis of columns of $P$ is [[§35 Eigenvectors and Linear Transformations#^thm-35-2|Theorem §35.2]].
@@ -173,7 +173,7 @@ Powers of a diagonal matrix are trivial to compute, and so are powers of any mat
 
 *Uses:* [[§32 Eigenvectors and Eigenvalues#^thm-32-3|§32.3]], [[§34 Diagonalization#^thm-34-1|§34.1]]
 
-For example, $A = \begin{bmatrix} 5 & -8 & 1 \\ 0 & 0 & 7 \\ 0 & 0 & -2 \end{bmatrix}$ is triangular, so its eigenvalues are $5$, $0$ and $-2$ ([[§32 Eigenvectors and Eigenvalues#^thm-32-1|Theorem §32.1]]); three distinct eigenvalues, so $A$ is diagonalizable (Lay, Example 5.3.5). The lecture's $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$ has eigenvalues $-1 \ne 5$, eigenvectors $\mathbf{u} = (1, -1)$ and $\mathbf{v} = (1, 2)$ ([[§32 Eigenvectors and Eigenvalues#^ex-32-5|Example §32.5]]), and with $M = [\,\mathbf{v} \;\; \mathbf{u}\,]$, $AM = [\,5\mathbf{v} \;\; -\mathbf{u}\,] = M\begin{bmatrix} 5 & 0 \\ 0 & -1 \end{bmatrix}$, so $M^{-1}AM = \operatorname{diag}(5, -1)$.
+For example, $A = \begin{bmatrix} 5 & -8 & 1 \\ 0 & 0 & 7 \\ 0 & 0 & -2 \end{bmatrix}$ is triangular, so its eigenvalues are $5$, $0$ and $-2$ ([[§32 Eigenvectors and Eigenvalues#^thm-32-1|Theorem §32.1]]); three distinct eigenvalues, so $A$ is diagonalizable (Lay, Example 5.3.5). The lecture's $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$ has eigenvalues $5 \ne -1$, with eigenvectors $(1, 2)$ and $(1, -1)$ ([[§32 Eigenvectors and Eigenvalues#^ex-32-5|Example §32.5]]); with $M = \begin{bmatrix} 1 & 1 \\ 2 & -1 \end{bmatrix}$ (these eigenvectors as columns), $AM = \begin{bmatrix} 5 & -1 \\ 10 & 1 \end{bmatrix} = M\begin{bmatrix} 5 & 0 \\ 0 & -1 \end{bmatrix}$, so $M^{-1}AM = \operatorname{diag}(5, -1)$.
 
 The condition is sufficient but not *necessary*: the matrix of Example §34.2 is diagonalizable with only two distinct eigenvalues. Nor is every matrix diagonalizable.
 
@@ -224,7 +224,7 @@ If $A$ has $n$ distinct eigenvalues, any choice of eigenvectors gives an inverti
 *Lay omits the proof ("somewhat lengthy but not difficult"; he cites Friedberg–Insel–Spence, Section 5.2); see [[§17 Diagonalizable Operators#^ladr-5-55|LADR 5.55]] for (b) and (c), and, for (a), Axler's multiplicity $\dim G(\lambda, T) \ge \dim E(\lambda, T)$, [[§29 Generalized Eigenspace Decomposition#^ladr-8-23|LADR 8.23]]. The lecture states (a) and (b)(ii) without proof. Here is a proof with the tools of this course.*
 
 > [!proof]- Proof
-> **Step 0: bases of eigenspaces combine to an independent set.** Let $\mathcal{B}_k$ be a basis of the eigenspace $E_k$ for $\lambda_k$, $k = 1, \ldots, p$. Suppose a linear combination of all the vectors of $\mathcal{B}_1 \cup \cdots \cup \mathcal{B}_p$ is $\mathbf{0}$. Group the terms by eigenspace: $\mathbf{w}_1 + \cdots + \mathbf{w}_p = \mathbf{0}$, where $\mathbf{w}_k \in E_k$ is the part of the combination using $\mathcal{B}_k$. Each nonzero $\mathbf{w}_k$ is an eigenvector for $\lambda_k$. If some $\mathbf{w}_k$ were nonzero, the nonzero ones would be eigenvectors for distinct eigenvalues with sum $\mathbf{0}$, a linear dependence contradicting [[§32 Eigenvectors and Eigenvalues#^thm-32-3|Theorem §32.3]]. So every $\mathbf{w}_k = \mathbf{0}$, and since $\mathcal{B}_k$ is linearly independent, all the weights in $\mathbf{w}_k$ are zero. Hence $\mathcal{B}_1 \cup \cdots \cup \mathcal{B}_p$ is linearly independent. (This is Lay's Practice Problem 5.1.3 in general.) In particular $\dim E_1 + \cdots + \dim E_p \le n$.
+> **Step 0: bases of eigenspaces combine to an independent set.** Let $\mathcal{B}_k$ be a basis of the eigenspace $E_k$ for $\lambda_k$, $k = 1, \ldots, p$. Suppose a linear combination of all the vectors of $\mathcal{B}_1 \cup \cdots \cup \mathcal{B}_p$ is $\mathbf{0}$. Group the terms by eigenspace: $\mathbf{w}_1 + \cdots + \mathbf{w}_p = \mathbf{0}$, where $\mathbf{w}_k \in E_k$ is the part of the combination using $\mathcal{B}_k$. Each nonzero $\mathbf{w}_k$ is an eigenvector for $\lambda_k$. If some $\mathbf{w}_k$ were nonzero, the nonzero ones would be eigenvectors for distinct eigenvalues with sum $\mathbf{0}$, a linear dependence contradicting [[§32 Eigenvectors and Eigenvalues#^thm-32-3|Theorem §32.3]]. So every $\mathbf{w}_k = \mathbf{0}$, and since $\mathcal{B}_k$ is linearly independent, all the weights in $\mathbf{w}_k$ are zero. Hence $\mathcal{B}_1 \cup \cdots \cup \mathcal{B}_p$ is linearly independent. (This is Lay's Practice Problem 5.1.3 in general.) In particular $\dim E_1 + \cdots + \dim E_p \le n$, since a linearly independent set in $\mathbb{R}^n$ has at most $n$ vectors ([[§7 Linear Independence#^thm-7-6|Theorem §7.6]]).
 >
 > **(c) and the first part of (b).** If $\dim E_1 + \cdots + \dim E_p = n$, Step 0 gives $n$ linearly independent eigenvectors, a basis of $\mathbb{R}^n$ ([[§27 The Dimension of a Vector Space#^thm-27-5|Theorem §27.5]], the Basis Theorem), so $A$ is diagonalizable by Theorem §34.1. Conversely, if $A$ is diagonalizable, it has $n$ linearly independent eigenvectors (Theorem §34.1). Those belonging to $\lambda_k$ are a linearly independent subset of $E_k$, so there are at most $\dim E_k$ of them; adding over $k$, $n \le \dim E_1 + \cdots + \dim E_p$. With Step 0, the sum equals $n$, and then the union of the $\mathcal{B}_k$ is $n$ independent vectors, an eigenvector basis: this is (c).
 >
@@ -236,7 +236,7 @@ If $A$ has $n$ distinct eigenvalues, any choice of eigenvectors gives an inverti
 >
 > for some blocks $B$, $C$. Expanding the determinant down the first column $d$ times (each time the only nonzero entry is $\lambda - t$ at the top), $\det(P^{-1}AP - tI) = (\lambda - t)^d\det(C - tI)$. By [[§33 The Characteristic Equation#^thm-33-6|Theorem §33.6]] this is the characteristic polynomial of $A$, so $(\lambda - t)^d$ divides it, and the multiplicity of $\lambda$ is at least $d$.
 >
-> **The second part of (b).** Let $m_k$ be the multiplicity of $\lambda_k$. The factors $(\lambda_k - t)^{m_k}$ divide the characteristic polynomial, which has degree $n$, so $m_1 + \cdots + m_p \le n$, with equality if and only if the polynomial is a constant times $(\lambda_1 - t)^{m_1}\cdots(\lambda_p - t)^{m_p}$, that is, factors completely into linear factors (i). By (a),
+> **The second part of (b).** Let $m_k$ be the multiplicity of $\lambda_k$, and write the characteristic polynomial as $f(t) = (\lambda_1 - t)^{m_1}\cdots(\lambda_p - t)^{m_p}\,g(t)$ (divide out the factors one root at a time), where $g$ has no real root, because the real roots of $f$ are exactly the eigenvalues $\lambda_1, \ldots, \lambda_p$ ([[§33 The Characteristic Equation#^thm-33-4|Theorem §33.4]]). Since $f$ has degree $n$ ([[§33 The Characteristic Equation#^thm-33-5|Theorem §33.5]]), $m_1 + \cdots + m_p \le n$, with equality if and only if $g$ is a constant, that is, if and only if $f$ factors completely into linear factors (i): a factorization into linear factors $c(r_1 - t)\cdots(r_n - t)$ has real roots $r_i$, so each $r_i$ is one of the $\lambda_k$. By (a),
 >
 > $$
 > \dim E_1 + \cdots + \dim E_p \le m_1 + \cdots + m_p \le n .
@@ -246,7 +246,7 @@ If $A$ has $n$ distinct eigenvalues, any choice of eigenvectors gives an inverti
 
 ^pf-34-3
 
-*Uses:* [[§32 Eigenvectors and Eigenvalues#^thm-32-3|§32.3]], [[§34 Diagonalization#^thm-34-1|§34.1]], [[§33 The Characteristic Equation#^thm-33-6|§33.6]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]] (the Basis Theorem), [[§27 The Dimension of a Vector Space#^thm-27-3|§27.3]] (a linearly independent set extends to a basis), [[§20 Introduction to Determinants#^thm-20-1|§20.1]] (cofactor expansion)
+*Uses:* [[§32 Eigenvectors and Eigenvalues#^thm-32-3|§32.3]], [[§34 Diagonalization#^thm-34-1|§34.1]], [[§33 The Characteristic Equation#^thm-33-6|§33.6]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]] (the Basis Theorem), [[§27 The Dimension of a Vector Space#^thm-27-3|§27.3]] (a linearly independent set extends to a basis), [[§20 Introduction to Determinants#^thm-20-1|§20.1]] (cofactor expansion), [[§33 The Characteristic Equation#^thm-33-4|§33.4]], [[§33 The Characteristic Equation#^thm-33-5|§33.5]], [[§7 Linear Independence#^thm-7-6|§7.6]]
 
 > [!remark] Remark: Reading Theorem §34.3
 > - Since the geometric multiplicity of an eigenvalue of algebraic multiplicity $1$ is squeezed between $1$ and $1$, an eigenvalue with algebraic multiplicity $1$ never causes trouble. This gives a second proof of Theorem §34.2 (lecture L20): $n$ distinct eigenvalues means all algebraic multiplicities are $1$, so all geometric multiplicities are $1$ and they add up to $n$.
@@ -257,8 +257,8 @@ If $A$ has $n$ distinct eigenvalues, any choice of eigenvectors gives an inverti
 
 ^rem-34-2
 
-> [!example] Example §34.4: Multiplicities in a Diagonalizable Matrix
-> Diagonalize $A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}$, whose characteristic polynomial is $-(\lambda - 1)^2(\lambda - 5)$ ([[§33 The Characteristic Equation#^ex-33-3|Example §33.3]]).
+> [!example] Example §34.4: Multiplicities in Diagonalizable Matrices
+> **(a)** Diagonalize $A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}$, whose characteristic polynomial is $-(\lambda - 1)^2(\lambda - 5)$ ([[§33 The Characteristic Equation#^ex-33-3|Example §33.3]]).
 >
 > **$\lambda = 1$.** $A - I = \begin{bmatrix} 1 & 2 & 1 \\ 1 & 2 & 1 \\ 1 & 2 & 1 \end{bmatrix} \sim \begin{bmatrix} 1 & 2 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}$, so $x_1 = -2x_2 - x_3$ with $x_2, x_3$ free:
 >
@@ -290,6 +290,16 @@ If $A$ has $n$ distinct eigenvalues, any choice of eigenvectors gives an inverti
 > $$
 >
 > *In the lecture the reduction of $A - 5I$ turns the entry $-3$ into $3$ in one step and arrives at $(-5, 1, 1)$, which is not an eigenvector ($A(-5, 1, 1) = (-7, -1, -1)$); the correct row reduction gives $(1, 1, 1)$.*
+>
+> **(b) Only the repeated eigenvalue needs checking.** Is $A = \begin{bmatrix} 1 & 1 & 1 & 1 \\ 1 & 1 & -1 & -1 \\ 1 & -1 & 1 & -1 \\ 1 & -1 & -1 & 1 \end{bmatrix}$ diagonalizable?
+>
+> In $A - \lambda I$, subtract row 4 from rows 2 and 3: they become $(0,\ 2 - \lambda,\ 0,\ \lambda - 2) = (2 - \lambda)(0, 1, 0, -1)$ and $(0,\ 0,\ 2 - \lambda,\ \lambda - 2) = (2 - \lambda)(0, 0, 1, -1)$. Take out the two factors $2 - \lambda$, then add columns 2 and 3 to column 4 and expand along rows 2 and 3 (each now $\mathbf{e}_2^T$, $\mathbf{e}_3^T$):
+>
+> $$
+> \det(A - \lambda I) = (2 - \lambda)^2\det\begin{bmatrix} 1 - \lambda & 1 & 1 & 3 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 1 & -1 & -1 & -1 - \lambda \end{bmatrix} = (2 - \lambda)^2\det\begin{bmatrix} 1 - \lambda & 3 \\ 1 & -1 - \lambda \end{bmatrix} = (2 - \lambda)^2(\lambda^2 - 4) = (\lambda - 2)^3(\lambda + 2) .
+> $$
+>
+> So $2$ has algebraic multiplicity $3$ and $-2$ has algebraic multiplicity $1$. For $\lambda = 2$, every row of $A - 2I$ is $\pm(-1, 1, 1, 1)$, so $A - 2I \sim \begin{bmatrix} -1 & 1 & 1 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}$: $x_2, x_3, x_4$ are free and the geometric multiplicity is $3$, with basis $(1, 1, 0, 0)$, $(1, 0, 1, 0)$, $(1, 0, 0, 1)$. For $\lambda = -2$ nothing needs computing: $1 \le$ geometric multiplicity $\le$ algebraic multiplicity $= 1$ (Theorem §34.3(a)). The multiplicities agree, so $A$ is diagonalizable. (An eigenvector for $-2$ is $(-1, 1, 1, 1)$: $A(-1, 1, 1, 1) = (2, -2, -2, -2)$.)
 >
 > *Source: 235 lectures L19, L20 (Lay: Exercise 5.3.5)*
 

@@ -33,7 +33,7 @@ Suppose a nation's economy is divided into sectors (manufacturing, communication
 
 ^thm-6-1
 
-*Lay omits the proof ("Leontief proved the following result"). That a nonzero solution exists is elementary (Remark below). That it can be chosen with all prices nonnegative is the real content: the exchange table $E$ is a stochastic matrix (nonnegative columns summing to $1$), equilibrium prices are the solutions of $E\mathbf{p} = \mathbf{p}$, and a stochastic matrix has a steady-state probability vector by [[§31 Applications to Markov Chains#^prop-31-2|Proposition §31.2]].*
+*Lay omits the proof ("Leontief proved the following result"). That a nonzero solution exists is elementary (Remark below). That it can be chosen with all prices nonnegative is the real content: the exchange table $E$ is a stochastic matrix ([[§31 Applications to Markov Chains#^def-31-1|Definition §31.1]]: nonnegative columns summing to $1$), equilibrium prices are the solutions of $E\mathbf{p} = \mathbf{p}$, and a stochastic matrix has a steady-state vector by [[§31 Applications to Markov Chains#^prop-31-2|Proposition §31.2]]. A steady-state vector $\mathbf{q}$ of $E$ is a probability vector with $E\mathbf{q} = \mathbf{q}$, so it is a nonzero price vector with all entries $\ge 0$, and so is every positive multiple of it.*
 
 > [!remark] Remark: Why a Nonzero Price Vector Exists
 > Let $E$ be the exchange table and $\mathbf{p}$ the price vector. Row $i$ of $E$ times $\mathbf{p}$ is the expense of sector $i$, so the equilibrium condition is $\mathbf{p} = E\mathbf{p}$, a homogeneous system with coefficient matrix $I - E$. Each column of $E$ sums to $1$, so each column of $I - E$ sums to $0$: the rows of $I - E$ add up to the zero row. Adding all other rows to the last row is a sequence of replacement operations that turns the last row into zeros. So $I - E$ has a row without a pivot. A square coefficient matrix with fewer pivots than columns has a free variable, so $(I - E)\mathbf{p} = \mathbf{0}$ has a nontrivial solution ([[§5 Solution Sets of Linear Systems#^cor-5-1|Corollary §5.1]]).
@@ -88,7 +88,7 @@ Suppose a nation's economy is divided into sectors (manufacturing, communication
 
 ^ex-6-1
 
-The general input–output ("production") model, of which this is a simpler relative, is [[§16 The Leontief Input–Output Model|§16]].
+The general input–output ("production") model, of which this is a simpler relative, is [[§16 The Leontief Input–Output Model#^def-16-2|Definition §16.2]].
 
 ## Balancing Chemical Equations
 

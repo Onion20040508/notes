@@ -75,7 +75,7 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 ^def-45-3
 
 > [!theorem] Proposition §45.2: Fitting a Line in Mean-Deviation Form
-> If the $x$-data are in mean-deviation form ($\sum x_j^* = 0$), then the two columns of the design matrix $X = [\,\mathbf{1}\ \ \mathbf{x}^*\,]$ are orthogonal, $X^TX$ is diagonal, and the least-squares line $y = \beta_0^* + \beta_1^*x^*$ has
+> Let the $x_j$ not all be equal, and put the $x$-data in mean-deviation form, $x_j^* = x_j - \bar{x}$ (so $\sum x_j^* = 0$). Then the two columns of the design matrix $X = [\,\mathbf{1}\ \ \mathbf{x}^*\,]$ are orthogonal, $X^TX$ is diagonal, and the least-squares line $y = \beta_0^* + \beta_1^*x^*$ has
 >
 > $$
 > \beta_0^* = \bar{y} = \frac1n\sum_j y_j, \qquad \beta_1^* = \frac{\sum_j x_j^*y_j}{\sum_j (x_j^*)^2} .
@@ -94,7 +94,7 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 > X^TX = \begin{bmatrix} \mathbf{1} \cdot \mathbf{1} & \mathbf{1} \cdot \mathbf{x}^* \\ \mathbf{x}^* \cdot \mathbf{1} & \mathbf{x}^* \cdot \mathbf{x}^* \end{bmatrix} = \begin{bmatrix} n & 0 \\ 0 & \sum (x_j^*)^2 \end{bmatrix}, \qquad X^T\mathbf{y} = \begin{bmatrix} \sum y_j \\ \sum x_j^*y_j \end{bmatrix},
 > $$
 >
-> and the normal equations decouple into $n\beta_0^* = \sum y_j$ and $\big(\sum (x_j^*)^2\big)\beta_1^* = \sum x_j^*y_j$. (If the $x_j$ are not all equal, $\sum (x_j^*)^2 > 0$.) This gives the formulas, exactly as in [[§44 Least-Squares Problems#^ex-44-4|Example §44.4]].
+> and the normal equations decouple into $n\beta_0^* = \sum y_j$ and $\big(\sum (x_j^*)^2\big)\beta_1^* = \sum x_j^*y_j$. Since the $x_j$ are not all equal, some $x_j^* \ne 0$ and $\sum (x_j^*)^2 > 0$, so both equations can be solved. This gives the formulas, exactly as in [[§44 Least-Squares Problems#^ex-44-4|Example §44.4]].
 >
 > The lines $y = \beta_0 + \beta_1x$ are the same as the lines $y = \beta_0^* + \beta_1^*(x - \bar{x})$, with $\beta_1 = \beta_1^*$ and $\beta_0 = \beta_0^* - \beta_1^*\bar{x}$, and a line has the same residuals at the data points in either description. So the minimizing line is the same, and it is $y = \bar{y} + \beta_1^*(x - \bar{x})$, which takes the value $\bar{y}$ at $x = \bar{x}$.
 

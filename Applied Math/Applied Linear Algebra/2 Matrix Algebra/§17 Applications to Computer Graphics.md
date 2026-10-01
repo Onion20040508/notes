@@ -46,7 +46,7 @@ A picture on a screen is stored as a list of points, the columns of a data matri
 ^ex-17-1
 
 ![[m235-17-1.svg]]
-*Example §17.1. Left: the regular N with its eight vertices. Middle: the sheared N, data matrix $AD$; each vertex moves right by a quarter of its height. Right: the composite $SA$, which also squeezes the width by the factor $.75$. Only the vertices are transformed; the segments between them are redrawn, which is legitimate because linear maps send segments to segments.*
+*Example §17.1. Left: the regular N with its eight vertices. Middle: the sheared N, data matrix $AD$; each vertex moves right by a quarter of its height (dashed: the original). Right: the composite $SA$, which also squeezes the width by the factor $.75$. Only the vertices are transformed; the segments between them are redrawn, which is legitimate because linear maps send segments to segments.*
 
 > [!remark] Remark: Why Figures Are Built from Segments
 > The standard transformations of computer graphics map line segments onto line segments (for a linear $T$, the segment $\{(1 - t)\mathbf{p} + t\mathbf{q} : 0 \le t \le 1\}$ goes to $\{(1 - t)T(\mathbf{p}) + tT(\mathbf{q})\}$, the segment between the images; Lay's Exercise 27 in Section 1.8, [[§8 Introduction to Linear Transformations|§8]]). So once the vertices of an object have been transformed, their images can be joined by the appropriate segments to produce the image of the whole object. Curved letters are stored with additional formulas for the curves, and curves are often approximated by short segments.
@@ -86,13 +86,13 @@ Translating an object does not correspond directly to matrix multiplication, bec
 ^prop-17-1
 
 > [!proof]+ Proof
-> (a) is the displayed multiplication, done by the row–column rule. For (b), block multiplication (Proposition §14.2) gives
+> (a) is the displayed multiplication, done by the row–column rule. For (b), block multiplication ([[§14 Partitioned Matrices#^prop-14-2|Proposition §14.2]]) gives
 >
 > $$
 > \begin{bmatrix} A & 0 \\ 0 & 1 \end{bmatrix}\begin{bmatrix} \mathbf{x} \\ 1 \end{bmatrix} = \begin{bmatrix} A\mathbf{x} + 0 \\ 0 + 1 \end{bmatrix} = \begin{bmatrix} A\mathbf{x} \\ 1 \end{bmatrix},
 > $$
 >
-> the homogeneous coordinates of $A\mathbf{x}$. (c) If $M_1$ and $M_2$ represent two transformations, applying $M_1$ and then $M_2$ to $(x, y, 1)$ gives $M_2(M_1\mathbf{v}) = (M_2M_1)\mathbf{v}$ by Theorem §11.2, and the last coordinate stays $1$ at each step.
+> the homogeneous coordinates of $A\mathbf{x}$. (c) If $M_1$ and $M_2$ represent two transformations, applying $M_1$ and then $M_2$ to $(x, y, 1)$ gives $M_2(M_1\mathbf{v}) = (M_2M_1)\mathbf{v}$ by [[§11 Matrix Operations#^thm-11-2|Theorem §11.2]], and the last coordinate stays $1$ at each step.
 
 ^pf-17-1
 
@@ -127,6 +127,13 @@ Translating an object does not correspond directly to matrix multiplication, bec
 >
 > As a check, $\mathbf{p}$ itself is fixed: the first coordinate of the image of $(p_1, p_2, 1)$ is $cp_1 - sp_2 + p_1 - cp_1 + sp_2 = p_1$, and similarly the second is $p_2$.
 >
+> For instance (Lay's Practice Problem), to rotate points through $-30^\circ$ about $\mathbf{p} = (-2, 6)$, take $c = \cos(-30^\circ) = \sqrt3/2$ and $s = \sin(-30^\circ) = -.5$: then $p_1 - cp_1 + sp_2 = -2 + \sqrt3 - 3 = \sqrt3 - 5$ and $p_2 - sp_1 - cp_2 = 6 - 1 - 3\sqrt3 = 5 - 3\sqrt3$, so the matrix is
+>
+> $$
+> \begin{bmatrix} 1 & 0 & -2 \\ 0 & 1 & 6 \\ 0 & 0 & 1 \end{bmatrix}\begin{bmatrix} \sqrt3/2 & 1/2 & 0 \\ -1/2 & \sqrt3/2 & 0 \\ 0 & 0 & 1 \end{bmatrix}\begin{bmatrix} 1 & 0 & 2 \\ 0 & 1 & -6 \\ 0 & 0 & 1 \end{bmatrix}
+> = \begin{bmatrix} \sqrt3/2 & 1/2 & \sqrt3 - 5 \\ -1/2 & \sqrt3/2 & -3\sqrt3 + 5 \\ 0 & 0 & 1 \end{bmatrix} .
+> $$
+>
 > *Lay: Example 2.7.6; Practice Problem 2.7*
 
 ^ex-17-2
@@ -151,7 +158,7 @@ Three-dimensional graphics is used, for instance, in molecular modeling: a biolo
 > [!example] Example §17.3: Rotating and Translating in Space
 > Give $4 \times 4$ matrices for (a) the rotation about the $y$-axis through $30^\circ$, and (b) the translation by $\mathbf{p} = (-6, 4, 5)$. (By convention, a positive angle is counterclockwise when looking toward the origin from the positive half of the axis of rotation, here the $y$-axis.)
 >
-> **(a)** First the $3 \times 3$ rotation matrix, column by column. $\mathbf{e}_1$ rotates down toward the negative $z$-axis, stopping at $(\cos 30^\circ, 0, -\sin 30^\circ) = (\sqrt3/2, 0, -.5)$. $\mathbf{e}_2$, on the axis, does not move. $\mathbf{e}_3$ rotates down toward the positive $x$-axis, stopping at $(\sin 30^\circ, 0, \cos 30^\circ) = (.5, 0, \sqrt3/2)$. By Theorem 10 of [[§9 The Matrix of a Linear Transformation|§9]] the standard matrix is
+> **(a)** First the $3 \times 3$ rotation matrix, column by column. $\mathbf{e}_1$ rotates down toward the negative $z$-axis, stopping at $(\cos 30^\circ, 0, -\sin 30^\circ) = (\sqrt3/2, 0, -.5)$. $\mathbf{e}_2$, on the axis, does not move. $\mathbf{e}_3$ rotates down toward the positive $x$-axis, stopping at $(\sin 30^\circ, 0, \cos 30^\circ) = (.5, 0, \sqrt3/2)$. By [[§9 The Matrix of a Linear Transformation#^thm-9-1|Theorem §9.1]] the standard matrix is
 >
 > $$
 > \begin{bmatrix} \sqrt3/2 & 0 & .5 \\ 0 & 1 & 0 \\ -.5 & 0 & \sqrt3/2 \end{bmatrix}, \qquad\text{so in homogeneous coordinates}\qquad
@@ -204,7 +211,7 @@ A three-dimensional object is shown on the two-dimensional screen by projecting 
 > \frac{x^*}{d} = \frac{x}{d - z} \qquad\text{and}\qquad x^* = \frac{dx}{d - z} = \frac{x}{1 - z/d} .
 > $$
 >
-> The same argument in the $yz$-plane gives $y^* = y/(1 - z/d)$. So $(x, y, z, 1)$ must go to $\big(\frac{x}{1 - z/d}, \frac{y}{1 - z/d}, 0, 1\big)$. Scaling by $1 - z/d$, we may instead use $(x, y, 0, 1 - z/d)$ as homogeneous coordinates for the image (Definition §17.2), and the displayed product shows that $P$ produces exactly these coordinates.
+> The same argument in the $yz$-plane gives $y^* = y/(1 - z/d)$. (The picture has $0 < x$ and $z < d$; the formulas hold for all points with $z \ne d$, as the parametrization shows: the line through $(0, 0, d)$ and $(x, y, z)$ consists of the points $(tx,\ ty,\ d + t(z - d))$, and the third coordinate is $0$ exactly when $t = d/(d - z)$, which gives $x^* = dx/(d - z)$ and $y^* = dy/(d - z)$.) So $(x, y, z, 1)$ must go to $\big(\frac{x}{1 - z/d}, \frac{y}{1 - z/d}, 0, 1\big)$. Scaling by $1 - z/d$, we may instead use $(x, y, 0, 1 - z/d)$ as homogeneous coordinates for the image (Definition §17.2), and the displayed product shows that $P$ produces exactly these coordinates.
 
 ^pf-17-2
 

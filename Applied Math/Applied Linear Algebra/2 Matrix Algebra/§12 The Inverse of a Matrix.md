@@ -117,7 +117,7 @@ The reciprocal $5^{-1}$ of $5$ satisfies $5^{-1} \cdot 5 = 1$ and $5 \cdot 5^{-1
 > \begin{bmatrix} d & -b \\ -c & a \end{bmatrix}\begin{bmatrix} a & b \\ c & d \end{bmatrix} = \begin{bmatrix} da - bc & db - bd \\ -ca + ac & -cb + ad \end{bmatrix} = (ad - bc)I .
 > $$
 >
-> Dividing by $ad - bc$ (Theorem §11.6(d)) shows that the matrix $\frac{1}{ad - bc}\begin{bmatrix} d & -b \\ -c & a \end{bmatrix}$ satisfies both equations of Definition §12.1.
+> Dividing by $ad - bc$ ([[§11 Matrix Operations#^thm-11-6|Theorem §11.6]](d)) shows that the matrix $\frac{1}{ad - bc}\begin{bmatrix} d & -b \\ -c & a \end{bmatrix}$ satisfies both equations of Definition §12.1.
 >
 > **$ad - bc = 0$.** We find a nonzero $\mathbf{x}$ with $A\mathbf{x} = \mathbf{0}$. If $(a, b) \ne (0, 0)$, take $\mathbf{x} = \begin{bmatrix} -b \\ a \end{bmatrix} \ne \mathbf{0}$:
 >
@@ -131,7 +131,7 @@ The reciprocal $5^{-1}$ of $5$ satisfies $5^{-1} \cdot 5 = 1$ and $5 \cdot 5^{-1
 
 *Uses:* [[§12 The Inverse of a Matrix#^def-12-1|Def. §12.1]], [[§11 Matrix Operations#^thm-11-6|§11.6]]
 
-The determinant is defined for all $n \times n$ matrices in [[§20 Introduction to Determinants|§20]], and $A$ is invertible exactly when $\det A \ne 0$ ([[§21 Properties of Determinants|§21]]). The lecture notes the cost: row reduction inverts an $N \times N$ matrix in about $N^3$ operations, while a determinant formula built like $ad - bc$ has $N!$ terms.
+The determinant is defined for all $n \times n$ matrices in [[§20 Introduction to Determinants#^def-20-2|Definition §20.2]], and $A$ is invertible exactly when $\det A \ne 0$ ([[§21 Properties of Determinants#^thm-21-3|Theorem §21.3]]). The lecture notes the cost: row reduction inverts an $N \times N$ matrix in about $N^3$ operations, while a determinant formula built like $ad - bc$ has $N!$ terms.
 
 > [!theorem] Theorem §12.3: Solving Ax = b with the Inverse
 > If $A$ is an invertible $n \times n$ matrix, then for each $\mathbf{b}$ in $\mathbb{R}^n$ the equation $A\mathbf{x} = \mathbf{b}$ has the unique solution $\mathbf{x} = A^{-1}\mathbf{b}$.
@@ -168,7 +168,7 @@ The determinant is defined for all $n \times n$ matrices in [[§20 Introduction 
 > \mathbf{x} = A^{-1}\mathbf{b} = \begin{bmatrix} -3 & 2 \\ 5/2 & -3/2 \end{bmatrix}\begin{bmatrix} 3 \\ 7 \end{bmatrix} = \begin{bmatrix} -9 + 14 \\ 15/2 - 21/2 \end{bmatrix} = \begin{bmatrix} 5 \\ -3 \end{bmatrix} .
 > $$
 >
-> (Check: $3(5) + 4(-3) = 3$, $5(5) + 6(-3) = 7$.) Lay notes that $\mathbf{x} = A^{-1}\mathbf{b}$ is seldom used numerically, because row reducing $[\,A \ \ \mathbf{b}\,]$ is nearly always faster and more accurate; the $2 \times 2$ case, done mentally, is the exception. The lecture adds the case where it pays: if hundreds of systems $A\mathbf{x} = \mathbf{b}_1$, $A\mathbf{x} = \mathbf{b}_2$, … share the same $A$, compute $A^{-1}$ once (about $N^3$ operations), and then each solution $\mathbf{x}_i = A^{-1}\mathbf{b}_i$ costs only a matrix–vector product (about $N^2$ operations). (The LU factorization of [[§15 Matrix Factorizations|§15]] does this better.)
+> (Check: $3(5) + 4(-3) = 3$, $5(5) + 6(-3) = 7$.) Lay notes that $\mathbf{x} = A^{-1}\mathbf{b}$ is seldom used numerically, because row reducing $[\,A \ \ \mathbf{b}\,]$ is nearly always faster and more accurate; the $2 \times 2$ case, done mentally, is the exception. The lecture adds the case where it pays: if hundreds of systems $A\mathbf{x} = \mathbf{b}_1$, $A\mathbf{x} = \mathbf{b}_2$, … share the same $A$, compute $A^{-1}$ once (about $N^3$ operations), and then each solution $\mathbf{x}_i = A^{-1}\mathbf{b}_i$ costs only a matrix–vector product (about $N^2$ operations). (The LU factorization, [[§15 Matrix Factorizations#^def-15-1|Definition §15.1]], does this better.)
 >
 > *Lay: Examples 2.2.2 and 2.2.4*
 > *Source: 235 lecture L8*
@@ -213,7 +213,7 @@ The determinant is defined for all $n \times n$ matrices in [[§20 Introduction 
 > (B^{-1}A^{-1})(AB) = B^{-1}(A^{-1}A)B = B^{-1}IB = B^{-1}B = I .
 > $$
 >
-> **(c)** By Theorem §11.7(d) read from right to left, $(A^{-1})^TA^T = (AA^{-1})^T = I^T = I$, and similarly $A^T(A^{-1})^T = (A^{-1}A)^T = I^T = I$. So $A^T$ is invertible with inverse $(A^{-1})^T$.
+> **(c)** By [[§11 Matrix Operations#^thm-11-7|Theorem §11.7]](d) read from right to left, $(A^{-1})^TA^T = (AA^{-1})^T = I^T = I$, and similarly $A^T(A^{-1})^T = (A^{-1}A)^T = I^T = I$. So $A^T$ is invertible with inverse $(A^{-1})^T$.
 
 ^pf-12-4
 
@@ -240,7 +240,7 @@ The determinant is defined for all $n \times n$ matrices in [[§20 Introduction 
 > [!example] Example §12.3: Using the Rules for Inverses
 > **(a)** Let $A$ and $B$ be invertible $n \times n$ matrices. Find $(-2AB^T)^{-1}$.
 >
-> First, for a scalar $r \ne 0$ and invertible $M$, $rM$ is invertible with $(rM)^{-1} = r^{-1}M^{-1}$, because $(rM)(r^{-1}M^{-1}) = (r r^{-1})MM^{-1} = I$ and likewise in the other order (Theorem §11.6(d); Lay's Practice Problem 3). Then by Theorem §12.4(b), extended to three factors by Corollary §12.5, and (c),
+> First, for a scalar $r \ne 0$ and invertible $M$, $rM$ is invertible with $(rM)^{-1} = r^{-1}M^{-1}$, because $(rM)(r^{-1}M^{-1}) = (r r^{-1})MM^{-1} = I$ and likewise in the other order ([[§11 Matrix Operations#^thm-11-6|Theorem §11.6]](d); Lay's Practice Problem 3). Then by Theorem §12.4(b), extended to three factors by Corollary §12.5, and (c),
 >
 > $$
 > (-2AB^T)^{-1} = \big((-2I)\,A\,B^T\big)^{-1} = (B^T)^{-1}A^{-1}(-2I)^{-1} = -\tfrac12\,(B^{-1})^TA^{-1} .
@@ -256,13 +256,13 @@ The determinant is defined for all $n \times n$ matrices in [[§20 Introduction 
 >
 > (Check: $AB = \begin{bmatrix} -14 + 15 & -38 + 40 \\ 21 - 21 & 57 - 56 \end{bmatrix} = \begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix} = C^2$.) The solution is unique.
 >
-> *$A$ singular.* Then there may be no solution or infinitely many. Take $A = \begin{bmatrix} 1 & 2 \\ 2 & 4 \end{bmatrix}$. Every column of $AB$ is a combination of the columns of $A$ (Proposition §11.3), hence a multiple of $(1, 2)$. With $C = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$, the first column $(1, 0)$ of $C^2$ is not such a multiple, so $AB = C^2$ has no solution. With $C = A$ instead, $C^2 = A^2 = \begin{bmatrix} 5 & 10 \\ 10 & 20 \end{bmatrix} = 5A$, and $B = 5I$ is one solution; then $B = 5I + X$ is a solution for every $X$ with $AX = 0$, that is (Example §11.3(c)), for all
+> *$A$ singular.* Then there may be no solution or infinitely many. Take $A = \begin{bmatrix} 1 & 2 \\ 2 & 4 \end{bmatrix}$. Every column of $AB$ is a combination of the columns of $A$ ([[§11 Matrix Operations#^prop-11-3|Proposition §11.3]]), hence a multiple of $(1, 2)$. With $C = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$, the first column $(1, 0)$ of $C^2$ is not such a multiple, so $AB = C^2$ has no solution. With $C = A$ instead, $C^2 = A^2 = \begin{bmatrix} 5 & 10 \\ 10 & 20 \end{bmatrix} = 5A$, and $B = 5I$ is one solution; then $B = 5I + X$ is a solution for every $X$ with $AX = 0$, that is ([[§11 Matrix Operations#^ex-11-3|Example §11.3]](c)), for all
 >
 > $$
 > B = \begin{bmatrix} 5 - 2s & -2t \\ s & 5 + t \end{bmatrix}, \qquad s, t \text{ arbitrary} .
 > $$
 >
-> *Source: MATH 235 checklist (Sections 2.2–2.3)*
+> *Source: 235 checklist (2.2–2.3)*
 
 ^ex-12-3
 
@@ -319,7 +319,7 @@ An invertible matrix is row equivalent to an identity matrix, and $A^{-1}$ can b
 > \operatorname{row}_i(\text{new } M) = \sum_{k=1}^m e_{ik}\operatorname{row}_k(M), \qquad i = 1, \ldots, m .
 > $$
 >
-> (A replacement "row $i$ + $a$ · row $j$" has $e_{ii} = 1$, $e_{ij} = a$ and otherwise $e_{kk} = 1$, all other $e_{k\ell} = 0$; an interchange and a scaling are similar.) Applied to $M = I_m$, whose $k$th row is $\mathbf{e}_k^T$, this gives $\operatorname{row}_i(E) = \sum_k e_{ik}\mathbf{e}_k^T = [\,e_{i1} \ \cdots \ e_{im}\,]$. Now by equation (2) of §11 and the row–column rule,
+> (A replacement "row $i$ + $a$ · row $j$" has $e_{ii} = 1$, $e_{ij} = a$ and otherwise $e_{kk} = 1$, all other $e_{k\ell} = 0$; an interchange and a scaling are similar.) Applied to $M = I_m$, whose $k$th row is $\mathbf{e}_k^T$, this gives $\operatorname{row}_i(E) = \sum_k e_{ik}\mathbf{e}_k^T = [\,e_{i1} \ \cdots \ e_{im}\,]$. Now by [[§11 Matrix Operations#^prop-11-5|Proposition §11.5]] (equation (2) of §11) and the row–column rule ([[§11 Matrix Operations#^prop-11-4|Proposition §11.4]]),
 >
 > $$
 > \operatorname{row}_i(EA) = \operatorname{row}_i(E)\,A = [\,e_{i1} \ \cdots \ e_{im}\,]\,A = \sum_{k=1}^m e_{ik}\operatorname{row}_k(A),
@@ -339,11 +339,11 @@ An invertible matrix is row equivalent to an identity matrix, and $A^{-1}$ can b
 ^prop-12-7
 
 > [!proof]+ Proof
-> Row operations are reversible (§1): a replacement adding $a$ times row $j$ to row $i$ is undone by adding $-a$ times row $j$ to row $i$, an interchange by the same interchange, and scaling a row by $c \ne 0$ by scaling it by $1/c$. Let $E$ come from $I$ by an operation, and let $F$ be the elementary matrix of the reverse operation. By Proposition §12.6, $FE$ is the result of applying the reverse operation to $E$, which is $I$. Likewise $EF$ is the result of applying the original operation to $F$, which undoes the reverse operation and gives $I$. So $FE = EF = I$ and $F = E^{-1}$.
+> Row operations are reversible ([[§1 Systems of Linear Equations#^prop-1-1|Proposition §1.1]]): a replacement adding $a$ times row $j$ to row $i$ is undone by adding $-a$ times row $j$ to row $i$, an interchange by the same interchange, and scaling a row by $c \ne 0$ by scaling it by $1/c$. Let $E$ come from $I$ by an operation, and let $F$ be the elementary matrix of the reverse operation. By Proposition §12.6, $FE$ is the result of applying the reverse operation to $E$, which is $I$. Likewise $EF$ is the result of applying the original operation to $F$, which undoes the reverse operation and gives $I$. So $FE = EF = I$ and $F = E^{-1}$.
 
 ^pf-12-7
 
-*Uses:* [[§12 The Inverse of a Matrix#^prop-12-6|§12.6]], [[§12 The Inverse of a Matrix#^def-12-1|Def. §12.1]], [[§1 Systems of Linear Equations|§1]] (row operations are reversible)
+*Uses:* [[§12 The Inverse of a Matrix#^prop-12-6|§12.6]], [[§12 The Inverse of a Matrix#^def-12-1|Def. §12.1]], [[§1 Systems of Linear Equations#^prop-1-1|§1.1]]
 
 > [!example] Example §12.4: Elementary and Permutation Matrices
 > **(a)** Let
@@ -396,7 +396,7 @@ An invertible matrix is row equivalent to an identity matrix, and $A^{-1}$ can b
 ^thm-12-8
 
 > [!proof]+ Proof
-> **Invertible $\Rightarrow$ row equivalent to $I_n$.** Suppose $A$ is invertible. By Theorem §12.3 the equation $A\mathbf{x} = \mathbf{b}$ has a solution for each $\mathbf{b}$, so $A$ has a pivot position in every row (Theorem 4 of §4). Because $A$ is square, the $n$ pivot positions must lie on the main diagonal (each of the $n$ rows and each of the $n$ columns contains exactly one pivot, and pivots move strictly down and to the right), so the reduced echelon form of $A$ is $I_n$. That is, $A \sim I_n$.
+> **Invertible $\Rightarrow$ row equivalent to $I_n$.** Suppose $A$ is invertible. By Theorem §12.3 the equation $A\mathbf{x} = \mathbf{b}$ has a solution for each $\mathbf{b}$, so $A$ has a pivot position in every row ([[§4 The Matrix Equation Ax = b#^thm-4-3|Theorem §4.3]]). Because $A$ is square, the $n$ pivot positions must lie on the main diagonal (each of the $n$ rows and each of the $n$ columns contains exactly one pivot, and pivots move strictly down and to the right), so the reduced echelon form of $A$ is $I_n$. That is, $A \sim I_n$.
 >
 > **Row equivalent to $I_n$ $\Rightarrow$ invertible.** Conversely, suppose $A \sim I_n$. Each step of the row reduction is left multiplication by an elementary matrix (Proposition §12.6), so there are elementary matrices $E_1, \ldots, E_p$ with
 >
@@ -422,7 +422,7 @@ An invertible matrix is row equivalent to an identity matrix, and $A^{-1}$ can b
 
 ^pf-12-8
 
-*Uses:* [[§12 The Inverse of a Matrix#^thm-12-3|§12.3]], [[§4 The Matrix Equation Ax = b|§4]] (Theorem 4), [[§2 Row Reduction and Echelon Forms|§2]] (pivot positions, reduced echelon form), [[§12 The Inverse of a Matrix#^prop-12-6|§12.6]], [[§12 The Inverse of a Matrix#^prop-12-7|§12.7]], [[§12 The Inverse of a Matrix#^cor-12-5|§12.5]], [[§12 The Inverse of a Matrix#^thm-12-4|§12.4]]
+*Uses:* [[§12 The Inverse of a Matrix#^thm-12-3|§12.3]], [[§4 The Matrix Equation Ax = b#^thm-4-3|§4.3]], [[§2 Row Reduction and Echelon Forms#^def-2-3|Def. §2.3]], [[§2 Row Reduction and Echelon Forms#^def-2-2|Def. §2.2]], [[§12 The Inverse of a Matrix#^prop-12-6|§12.6]], [[§12 The Inverse of a Matrix#^prop-12-7|§12.7]], [[§12 The Inverse of a Matrix#^cor-12-5|§12.5]], [[§12 The Inverse of a Matrix#^thm-12-4|§12.4]]
 
 > [!remark] Remark: An Invertible Matrix Is a Product of Elementary Matrices
 > The proof shows $A = (E_p \cdots E_1)^{-1} = E_1^{-1} \cdots E_p^{-1}$, a product of elementary matrices (Proposition §12.7). So the invertible matrices are exactly the products of elementary matrices; the lecture phrases it as products of replacement matrices $E_{ij}(a)$, permutation matrices and scalings. For example, if $E_{12}(7)\,P\,E_{31}(-2)\,A = I$ for a permutation matrix $P$, then $A^{-1} = E_{12}(7)\,P\,E_{31}(-2)$, and row reducing $[\,A \ \ I\,]$ builds exactly this product in the right half:
@@ -443,7 +443,7 @@ Placing $A$ and $I$ side by side, row operations on $[\,A \ \ I\,]$ act identica
 > 1. Form the $n \times 2n$ augmented matrix $[\,A \ \ I\,]$.
 > 2. Row reduce it. If $A$ is row equivalent to $I$, then $[\,A \ \ I\,]$ is row equivalent to $[\,I \ \ A^{-1}\,]$: read off $A^{-1}$ on the right.
 > 3. If at some stage the left half has fewer than $n$ pivots (for instance a row of zeros appears in it), then $A$ is not row equivalent to $I$ and $A$ does not have an inverse.
-> 4. Check the answer by computing $AA^{-1}$. Checking $A^{-1}A = I$ is unnecessary, since $A$ is invertible (Corollary §13.2 in [[§13 Characterizations of Invertible Matrices|§13]]).
+> 4. Check the answer by computing $AA^{-1}$. Checking $A^{-1}A = I$ is unnecessary, since $A$ is invertible ([[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]]).
 >
 > For a $2 \times 2$ matrix, Theorem §12.2 is faster.
 >

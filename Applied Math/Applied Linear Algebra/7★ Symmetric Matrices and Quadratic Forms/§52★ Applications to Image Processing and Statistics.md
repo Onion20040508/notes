@@ -257,7 +257,7 @@ Principal component analysis is valuable when most of the variation, or dynamic 
 ^prop-52-3
 
 > [!proof]+ Proof
-> (Lay: "roughly speaking, this is true because left-multiplication by $P$ does not change the lengths of vectors or the angles between them"; the proof is Exercise 12.) By Proposition §52.2, the covariance matrix of the $\mathbf{Y}_k = P^T\mathbf{X}_k$ is $P^TSP$, so it suffices to show $\operatorname{tr}(P^TSP) = \operatorname{tr}(S)$. The trace satisfies $\operatorname{tr}(FG) = \operatorname{tr}(GF)$ whenever both products are defined ([[§35 Eigenvectors and Linear Transformations|§35]], Exercise 25), since both equal $\sum_{i,j} f_{ij}g_{ji}$. With $F = P^T$ and $G = SP$:
+> (Lay: "roughly speaking, this is true because left-multiplication by $P$ does not change the lengths of vectors or the angles between them"; the proof is Exercise 12.) By Proposition §52.2, the covariance matrix of the $\mathbf{Y}_k = P^T\mathbf{X}_k$ is $P^TSP$, so it suffices to show $\operatorname{tr}(P^TSP) = \operatorname{tr}(S)$. The trace satisfies $\operatorname{tr}(FG) = \operatorname{tr}(GF)$ whenever both products are defined (Lay's Exercise 25 of Section 5.4), since both equal $\sum_{i,j} f_{ij}g_{ji}$. With $F = P^T$ and $G = SP$:
 >
 > $$
 > \operatorname{tr}(P^TSP) = \operatorname{tr}(SPP^T) = \operatorname{tr}(S) ,
@@ -267,7 +267,7 @@ Principal component analysis is valuable when most of the variation, or dynamic 
 
 ^pf-52-3
 
-*Uses:* [[§52★ Applications to Image Processing and Statistics#^prop-52-2|§52.2]], [[§52★ Applications to Image Processing and Statistics#^def-52-4|Def. §52.4]], [[§41 Orthogonal Sets|§41]] (orthogonal matrices: $PP^T = I$), [[§35 Eigenvectors and Linear Transformations|§35]] (trace)
+*Uses:* [[§52★ Applications to Image Processing and Statistics#^prop-52-2|§52.2]], [[§52★ Applications to Image Processing and Statistics#^def-52-4|Def. §52.4]], [[§41 Orthogonal Sets#^def-41-5|Def. §41.5]] (orthogonal matrices: $PP^T = I$)
 
 ## Characterizations of Principal Component Variables
 
@@ -282,13 +282,13 @@ Principal component analysis is valuable when most of the variation, or dynamic 
 ^thm-52-4
 
 > [!proof]+ Proof
-> (Lay states (a), "turns out to be", and deduces (b)–(c) from Theorems 6 and 8 of Section 7.3. Here are the details.) Work with the data in mean-deviation form, $B = [\,\hat{\mathbf{X}}_1\ \cdots\ \hat{\mathbf{X}}_N\,]$; subtracting the mean of the $\mathbf{X}_k$ from $\mathbf{u}^T\mathbf{X}_k$ gives $\mathbf{u}^T\hat{\mathbf{X}}_k$.
+> (Lay states (a), "turns out to be", and deduces (b)–(c) from Theorem 8 of Section 7.3; for (b), Theorem 6 is the relevant one. Here are the details.) Work with the data in mean-deviation form, $B = [\,\hat{\mathbf{X}}_1\ \cdots\ \hat{\mathbf{X}}_N\,]$; subtracting the mean of the $\mathbf{X}_k$ from $\mathbf{u}^T\mathbf{X}_k$ gives $\mathbf{u}^T\hat{\mathbf{X}}_k$.
 >
 > **(a)** The values of $y$ in mean-deviation form are the entries of the row vector $\mathbf{u}^TB$, so their variance is $\frac{1}{N-1}(\mathbf{u}^TB)(\mathbf{u}^TB)^T = \mathbf{u}^T\big(\frac{1}{N-1}BB^T\big)\mathbf{u} = \mathbf{u}^TS\mathbf{u}$. More generally, the covariance of $y = \mathbf{u}^T\mathbf{X}$ and $y' = \mathbf{u}'^T\mathbf{X}$ is $\frac{1}{N-1}(\mathbf{u}^TB)(\mathbf{u}'^TB)^T = \mathbf{u}^TS\mathbf{u}'$.
 >
 > **(b)** By [[§50★ Constrained Optimization#^thm-50-1|Theorem §50.1]] applied to the quadratic form $\mathbf{u}^TS\mathbf{u}$, its maximum over unit vectors is the largest eigenvalue $\lambda_1$, attained at $\mathbf{u}_1$.
 >
-> **(c)** By (a), the covariance of $y = \mathbf{u}^T\mathbf{X}$ with $y_i = \mathbf{u}_i^T\mathbf{X}$ is $\mathbf{u}^TS\mathbf{u}_i = \lambda_i\,\mathbf{u}^T\mathbf{u}_i$. If $\lambda_i > 0$, then $y$ is uncorrelated with $y_i$ exactly when $\mathbf{u}^T\mathbf{u}_i = 0$. So if $\lambda_1, \dots, \lambda_{k-1} > 0$, the variables uncorrelated with $y_1, \dots, y_{k-1}$ are those with $\mathbf{u}$ orthogonal to $\mathbf{u}_1, \dots, \mathbf{u}_{k-1}$, and by [[§50★ Constrained Optimization#^thm-50-4|Theorem §50.4]] the maximum of $\mathbf{u}^TS\mathbf{u}$ over them is $\lambda_k$, attained at $\mathbf{u}_k$, that is, by $y_k$. (If some of $\lambda_1, \dots, \lambda_{k-1}$ are $0$, let $j$ be the first index with $\lambda_j = 0$. Being uncorrelated with $y_1, \dots, y_{j-1}$ forces $\mathbf{u} \perp \mathbf{u}_1, \dots, \mathbf{u}_{j-1}$, and then $\mathbf{u}^TS\mathbf{u} \le \lambda_j = 0$ by Theorem §50.4. So the maximum is $0 = \lambda_k$, and it is attained by $y_k$, which is uncorrelated with every $y_i$ because $\mathbf{u}_k^TS\mathbf{u}_i = \lambda_i\,\mathbf{u}_k^T\mathbf{u}_i = 0$ for $i \ne k$.)
+> **(c)** By (a), the covariance of $y = \mathbf{u}^T\mathbf{X}$ with $y_i = \mathbf{u}_i^T\mathbf{X}$ is $\mathbf{u}^TS\mathbf{u}_i = \lambda_i\,\mathbf{u}^T\mathbf{u}_i$. If $\lambda_i > 0$, then $y$ is uncorrelated with $y_i$ exactly when $\mathbf{u}^T\mathbf{u}_i = 0$. So if $\lambda_1, \dots, \lambda_{k-1} > 0$, the variables uncorrelated with $y_1, \dots, y_{k-1}$ are those with $\mathbf{u}$ orthogonal to $\mathbf{u}_1, \dots, \mathbf{u}_{k-1}$, and by [[§50★ Constrained Optimization#^thm-50-4|Theorem §50.4]] the maximum of $\mathbf{u}^TS\mathbf{u}$ over them is $\lambda_k$, attained at $\mathbf{u}_k$, that is, by $y_k$. (If some of $\lambda_1, \dots, \lambda_{k-1}$ are $0$, let $j$ be the first index with $\lambda_j = 0$. Being uncorrelated with $y_1, \dots, y_{j-1}$ forces $\mathbf{u} \perp \mathbf{u}_1, \dots, \mathbf{u}_{j-1}$, and then $\mathbf{u}^TS\mathbf{u} \le \lambda_j = 0$ by Theorem §50.4 (by Theorem §50.1 if $j = 1$). So the maximum is $0 = \lambda_k$, and it is attained by $y_k$, which is uncorrelated with every $y_i$ because $\mathbf{u}_k^TS\mathbf{u}_i = \lambda_i\,\mathbf{u}_k^T\mathbf{u}_i = 0$ for $i \ne k$.)
 
 ^pf-52-4
 
@@ -311,7 +311,7 @@ Principal component analysis is valuable when most of the variation, or dynamic 
 
 *Uses:* [[§51★ The Singular Value Decomposition#^def-51-1|Def. §51.1]], [[§51★ The Singular Value Decomposition#^def-51-2|Def. §51.2]], [[§52★ Applications to Image Processing and Statistics#^def-52-3|Def. §52.3]]
 
-The SVD is the main tool for principal component analysis in practice: iterative calculation of the SVD of $A$ is faster and more accurate than an eigenvalue decomposition of $S$ (forming $BB^T$ squares the errors, as noted in §51). This matters especially in hyperspectral image processing, with $p = 224$ spectral bands; principal component analysis is then completed in seconds on specialized workstations.
+The SVD is the main tool for principal component analysis in practice: iterative calculation of the SVD of $A$ is faster and more accurate than an eigenvalue decomposition of $S$ (forming $BB^T$ squares the errors, as noted in [[§51★ The Singular Value Decomposition#^rem-51-3|§51, Remark: Numerical Note]]). This matters especially in hyperspectral image processing, with $p = 224$ spectral bands; principal component analysis is then completed in seconds on specialized workstations.
 
 > [!example] Example §52.3: A Size Index for Weights and Heights
 > The weights and heights of five boys are:
@@ -353,7 +353,7 @@ The SVD is the main tool for principal component analysis in practice: iterative
 >
 > where $\hat w$ and $\hat h$ are weight and height in mean-deviation form. The variance of this index over the data set is $\lambda_1 \approx 123.02$. Since the total variance is $\operatorname{tr}(S) = 100 + 25 = 125$, the size index accounts for practically all ($123.02/125 \approx 98.4\%$) of the variance of the data.
 >
-> **The line of the first principal component.** In parametric vector form, $\mathbf{x} = \mathbf{M} + t\mathbf{u}$. It is the best approximation to the data in the sense that the sum of the squares of the *orthogonal* distances from the data points to the line is minimized: principal component analysis is equivalent to **orthogonal regression**. (Compare the least-squares line of [[§45 Applications to Linear Models|§45]], which minimizes *vertical* distances.)
+> **The line of the first principal component.** In parametric vector form, $\mathbf{x} = \mathbf{M} + t\mathbf{u}$. It is the best approximation to the data in the sense that the sum of the squares of the *orthogonal* distances from the data points to the line is minimized: principal component analysis is equivalent to **orthogonal regression**. (Compare the least-squares line of [[§45 Applications to Linear Models#^def-45-2|Definition §45.2]], which minimizes *vertical* distances.)
 >
 > *Lay: 7.5, Practice Problems 1–2*
 

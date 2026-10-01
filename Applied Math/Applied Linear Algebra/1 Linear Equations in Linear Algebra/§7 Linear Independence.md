@@ -227,6 +227,8 @@ So for two vectors no row operations are needed: check by inspection whether one
 >
 > Any two of them, being non-proportional, describe the plane without redundancy.
 >
+> *In the lecture (p. 3) the third entry of $\mathbf{v}_3$ is written $7$ in places; it is $-7$ (as on p. 2), and the row reduction there is the one for $-7$.*
+>
 > *Source: 235 lecture Feb-18*
 
 ^ex-7-2
@@ -309,6 +311,8 @@ So for two vectors no row operations are needed: check by inspection whether one
 > $$
 >
 > If $h = 6$, column 3 has no pivot, $x_3$ is free, and the vectors are dependent; indeed then $-5\mathbf{v}_1 + 2\mathbf{v}_2 + \mathbf{v}_3 = \mathbf{0}$ (check: $-5 + 6 - 1 = 0$, $5 - 10 + 5 = 0$, $-20 + 14 + 6 = 0$). If $h \ne 6$, there is a pivot in every column, no free variable, and the vectors are independent.
+>
+> *The lecture (p. 5) labels the second step "÷2"; it is division by $-2$, which gives the row $(0, 1, -2)$ written there.*
 >
 > *Source: 235 lecture Feb-18*
 

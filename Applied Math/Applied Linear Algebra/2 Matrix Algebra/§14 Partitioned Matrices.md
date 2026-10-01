@@ -206,7 +206,7 @@ The row–column rule for block matrices is the most general way to view a produ
 >
 > Conversely, if $A_{11}$ and $A_{22}$ are invertible, then $A$ is invertible, with this inverse.
 >
-> *Lay: 2.4, Example 5*
+> *Lay: Example 2.4.5*
 
 ^prop-14-4
 
@@ -254,14 +254,14 @@ The row–column rule for block matrices is the most general way to view a produ
 ^prop-14-5
 
 > [!proof]+ Proof
-> (Lay leaves this to Exercises 13–14.) Two diagonal blocks: $A = \begin{bmatrix} A_{11} & 0 \\ 0 & A_{22} \end{bmatrix}$ is block upper triangular with $A_{12} = 0$, so by Proposition §14.4 it is invertible exactly when $A_{11}$ and $A_{22}$ are, and then $A^{-1} = \begin{bmatrix} A_{11}^{-1} & 0 \\ 0 & A_{22}^{-1} \end{bmatrix}$. With $k$ diagonal blocks, group the last $k - 1$ blocks into one block diagonal block $A'$ and use induction on $k$: $A = \begin{bmatrix} A_{11} & 0 \\ 0 & A' \end{bmatrix}$ is invertible iff $A_{11}$ and $A'$ are, and $A'$ is invertible iff its $k - 1$ diagonal blocks are.
+> (Lay leaves this to Exercises 13–14.) Two diagonal blocks: $A = \begin{bmatrix} A_{11} & 0 \\ 0 & A_{22} \end{bmatrix}$ is block upper triangular with $A_{12} = 0$, so by Proposition §14.4 it is invertible exactly when $A_{11}$ and $A_{22}$ are, and then $A^{-1} = \begin{bmatrix} A_{11}^{-1} & 0 \\ 0 & A_{22}^{-1} \end{bmatrix}$. With $k$ diagonal blocks, group the last $k - 1$ blocks into one block diagonal block $A'$ and use induction on $k$: $A = \begin{bmatrix} A_{11} & 0 \\ 0 & A' \end{bmatrix}$ is invertible iff $A_{11}$ and $A'$ are, and, by the induction hypothesis, $A'$ is invertible iff its $k - 1$ diagonal blocks are, with $A'^{-1}$ block diagonal with the inverses of those blocks on the diagonal. Then $A^{-1} = \begin{bmatrix} A_{11}^{-1} & 0 \\ 0 & A'^{-1} \end{bmatrix}$ has the stated form.
 
 ^pf-14-5
 
 *Uses:* [[§14 Partitioned Matrices#^prop-14-4|§14.4]]
 
 > [!example] Example §14.4: Two Block Computations
-> **(a)** Show that $\begin{bmatrix} I & 0 \\ A & I \end{bmatrix}$ is invertible and find its inverse ($I$ is $n \times n$, $A$ is $n \times n$).
+> **(a)** Show that $\begin{bmatrix} I & 0 \\ A & I \end{bmatrix}$ is invertible and find its inverse (here $A$ is $q \times p$, and the two identity blocks are $I_p$ and $I_q$, so the whole matrix is square).
 >
 > Try $\begin{bmatrix} I & 0 \\ -A & I \end{bmatrix}$: by block multiplication
 >
@@ -277,7 +277,7 @@ The row–column rule for block matrices is the most general way to view a produ
 > X^TX = \begin{bmatrix} X_1^T \\ X_2^T \end{bmatrix}\begin{bmatrix} X_1 & X_2 \end{bmatrix} = \begin{bmatrix} X_1^TX_1 & X_1^TX_2 \\ X_2^TX_1 & X_2^TX_2 \end{bmatrix} .
 > $$
 >
-> The partitions are conformable: the columns of $X^T$ and the rows of $X$ are each left as a single group, so this is a $2 \times 1$ block matrix times a $1 \times 2$ block matrix, and each block of the product is a single block product. (This matrix reappears in least squares, [[§44 Least-Squares Problems|§44]].)
+> The partitions are conformable: the columns of $X^T$ and the rows of $X$ are each left as a single group, so this is a $2 \times 1$ block matrix times a $1 \times 2$ block matrix, and each block of the product is a single block product. (This matrix reappears in least squares, as the matrix $A^TA$ of the normal equations $A^TA\mathbf{x} = A^T\mathbf{b}$, [[§44 Least-Squares Problems#^def-44-2|Definition §44.2]].)
 >
 > *Lay: Practice Problems 2.4.1 and 2.4.2*
 

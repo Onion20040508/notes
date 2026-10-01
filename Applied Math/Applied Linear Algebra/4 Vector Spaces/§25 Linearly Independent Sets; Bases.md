@@ -24,7 +24,7 @@ This section identifies the subsets that span a vector space $V$ (or a subspace 
 >
 > has *only* the trivial solution $c_1 = 0, \ldots, c_p = 0$. The set is **linearly dependent** if (1) has a nontrivial solution, that is, if there are weights $c_1, \ldots, c_p$, *not all zero*, such that (1) holds; then (1) is called a **linear dependence relation** among $\mathbf{v}_1, \ldots, \mathbf{v}_p$.
 >
-> Just as in $\mathbb{R}^n$ ([[§7 Linear Independence|§7]]): a set $\{\mathbf{v}\}$ of one vector is linearly independent if and only if $\mathbf{v} \ne \mathbf{0}$; a set of two vectors is linearly dependent if and only if one of them is a multiple of the other; and any set containing the zero vector is linearly dependent.
+> Just as in $\mathbb{R}^n$ ([[§7 Linear Independence#^prop-7-2|Proposition §7.2]], [[§7 Linear Independence#^prop-7-3|Proposition §7.3]], [[§7 Linear Independence#^thm-7-7|Theorem §7.7]]): a set $\{\mathbf{v}\}$ of one vector is linearly independent if and only if $\mathbf{v} \ne \mathbf{0}$; a set of two vectors is linearly dependent if and only if one of them is a multiple of the other; and any set containing the zero vector is linearly dependent.
 >
 > *Lay: 4.3 (text)*
 
@@ -59,7 +59,7 @@ This section identifies the subsets that span a vector space $V$ (or a subspace 
 > [!remark]- Connections
 > - Rigorous treatment: [[§4 Span and Linear Independence#^ladr-2-15|LADR 2.15]] (linearly independent lists) and the linear dependence lemma [[§4 Span and Linear Independence#^ladr-2-19|LADR 2.19]], which adds that removing such a $\mathbf{v}_j$ does not change the span (part (a) of Theorem §25.2 below). Axler works with lists, Lay with indexed sets; the difference is only that a list may repeat a vector.
 
-The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, equation (1) usually cannot be written as a system of $n$ linear equations, so the vectors cannot be made the columns of a matrix $A$ and studied through $A\mathbf{x} = \mathbf{0}$. One must rely on the definition and on Theorem §25.1, until coordinates ([[§26 Coordinate Systems|§26]]) translate the problem back to $\mathbb{R}^n$.
+The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, equation (1) usually cannot be written as a system of $n$ linear equations, so the vectors cannot be made the columns of a matrix $A$ and studied through $A\mathbf{x} = \mathbf{0}$. One must rely on the definition and on Theorem §25.1, until coordinates ([[§26 Coordinate Systems#^cor-26-4|Corollary §26.4]]) translate the problem back to $\mathbb{R}^n$.
 
 > [!example] Example §25.1: Dependence and Independence Among Functions
 > **(a)** Let $\mathbf{p}_1(t) = 1$, $\mathbf{p}_2(t) = t$, $\mathbf{p}_3(t) = 4 - t$. Then $\{\mathbf{p}_1, \mathbf{p}_2, \mathbf{p}_3\}$ is linearly dependent in $\mathbb{P}$, because $\mathbf{p}_3 = 4\mathbf{p}_1 - \mathbf{p}_2$.
@@ -86,10 +86,10 @@ The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, eq
 ^def-25-2
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§5 Bases#^ladr-2-26|LADR 2.26]], and the criterion [[§5 Bases#^ladr-2-28|LADR 2.28]] (a list is a basis iff every vector is a unique linear combination of it), which is Lay's Unique Representation Theorem ([[§26 Coordinate Systems|§26]], Theorem 7 of 4.4).
+> - Rigorous treatment: [[§5 Bases#^ladr-2-26|LADR 2.26]], and the criterion [[§5 Bases#^ladr-2-28|LADR 2.28]] (a list is a basis iff every vector is a unique linear combination of it), which is Lay's Unique Representation Theorem ([[§26 Coordinate Systems#^thm-26-1|Theorem §26.1]], Theorem 7 of 4.4).
 
 > [!example] Example §25.2: Standard Bases and Bases of ℝⁿ
-> **(a) Columns of an invertible matrix.** If $A = [\mathbf{a}_1 \ \cdots \ \mathbf{a}_n]$ is an invertible $n \times n$ matrix, its columns form a basis for $\mathbb{R}^n$: by the Invertible Matrix Theorem they are linearly independent and span $\mathbb{R}^n$. For instance, $\mathbf{v}_1 = (3, 0, -6)$, $\mathbf{v}_2 = (-4, 1, 7)$, $\mathbf{v}_3 = (-2, 1, 5)$ form a basis of $\mathbb{R}^3$: two row replacements ($R_3 + 2R_1$, then $R_3 + R_2$) give
+> **(a) Columns of an invertible matrix.** If $A = [\mathbf{a}_1 \ \cdots \ \mathbf{a}_n]$ is an invertible $n \times n$ matrix, its columns form a basis for $\mathbb{R}^n$: by the Invertible Matrix Theorem ([[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]]) they are linearly independent and span $\mathbb{R}^n$. For instance, $\mathbf{v}_1 = (3, 0, -6)$, $\mathbf{v}_2 = (-4, 1, 7)$, $\mathbf{v}_3 = (-2, 1, 5)$ form a basis of $\mathbb{R}^3$: two row replacements ($R_3 + 2R_1$, then $R_3 + R_2$) give
 >
 > $$
 > \begin{bmatrix} 3 & -4 & -2 \\ 0 & 1 & 1 \\ -6 & 7 & 5 \end{bmatrix} \sim \begin{bmatrix} 3 & -4 & -2 \\ 0 & 1 & 1 \\ 0 & -1 & 1 \end{bmatrix} \sim \begin{bmatrix} 3 & -4 & -2 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{bmatrix},
@@ -161,7 +161,7 @@ The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, eq
 *Uses:* [[§25 Linearly Independent Sets; Bases#^def-25-1|Def. §25.1]], [[§25 Linearly Independent Sets; Bases#^def-25-2|Def. §25.2]], [[§23 Vector Spaces and Subspaces#^def-23-3|Def. §23.3]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§5 Bases#^ladr-2-30|LADR 2.30]] ([[Every spanning list contains a basis]]), proved by the same deletion process; the companion result [[§5 Bases#^ladr-2-32|LADR 2.32]] ([[Every linearly independent list extends to a basis]]) is Lay's Theorem 11 of 4.5 ([[§27 The Dimension of a Vector Space|§27]]).
+> - Rigorous treatment: [[§5 Bases#^ladr-2-30|LADR 2.30]] ([[Every spanning list contains a basis]]), proved by the same deletion process; the companion result [[§5 Bases#^ladr-2-32|LADR 2.32]] ([[Every linearly independent list extends to a basis]]) is Lay's Theorem 11 of 4.5 ([[§27 The Dimension of a Vector Space#^thm-27-3|Theorem §27.3]]).
 
 > [!example] Example §25.3: Discarding a Dependent Vector
 > Let
@@ -206,14 +206,14 @@ have the same solutions: **the columns of $A$ have exactly the same linear depen
 
 ^pf-25-3
 
-*Uses:* [[§25 Linearly Independent Sets; Bases#^thm-25-1|§25.1]], [[§25 Linearly Independent Sets; Bases#^thm-25-2|§25.2]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|Def. §24.2]], [[§2 Row Reduction and Echelon Forms|§2]] (row equivalent systems have the same solutions)
+*Uses:* [[§25 Linearly Independent Sets; Bases#^thm-25-1|§25.1]], [[§25 Linearly Independent Sets; Bases#^thm-25-2|§25.2]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|Def. §24.2]], [[§1 Systems of Linear Equations#^thm-1-2|§1.2]] (row equivalent systems have the same solutions)
 
 > [!remark] Remark: Warning — Use the Pivot Columns of A Itself
 > The pivot columns are evident once $A$ is reduced only to *echelon* form. But the basis for $\operatorname{Col} A$ consists of the pivot columns *of $A$*, not of the echelon form: row operations can change the column space. In Example §25.4(b), every column of the echelon form $B$ has last entry $0$, so the columns of $B$ cannot span $\operatorname{Col} A$, which contains $\mathbf{a}_1 = (1, 3, 2, 5)$.
 
 ^rem-25-1
 
-**Row A** ([[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-3|Definition §24.3]]). Row operations do not change the row space, and the nonzero rows of an echelon form of $A$ form a basis of $\operatorname{Row} A$; this is Theorem 13 of 4.6, proved in [[§28 Rank|§28]]. Here, unlike for $\operatorname{Col} A$, the rows of the *echelon form* are the ones to use.
+**Row A** ([[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-3|Definition §24.3]]). Row operations do not change the row space, and the nonzero rows of an echelon form of $A$ form a basis of $\operatorname{Row} A$; this is Theorem 13 of 4.6, proved as [[§28 Rank#^thm-28-1|Theorem §28.1]]. Here, unlike for $\operatorname{Col} A$, the rows of the *echelon form* are the ones to use.
 
 > [!remark] Remark: Method — Bases for Nul A, Col A and Row A
 > 1. Row reduce $A$ to an echelon form $B$ (to reduced echelon form if $\operatorname{Nul} A$ is wanted). Locate the pivot columns.
@@ -247,7 +247,7 @@ have the same solutions: **the columns of $A$ have exactly the same linear depen
 > $$
 >
 > already in reduced echelon form, with pivot columns 1 and 2.
-> - $\operatorname{Col} A$: basis $\{(1, 0, 3), (0, 1, -2)\}$, the first two columns of $A$. So $\dim \operatorname{Col} A = 2$, and every basis of $\operatorname{Col} A$ has exactly two vectors ([[§27 The Dimension of a Vector Space|§27]]).
+> - $\operatorname{Col} A$: basis $\{(1, 0, 3), (0, 1, -2)\}$, the first two columns of $A$. So $\dim \operatorname{Col} A = 2$, and every basis of $\operatorname{Col} A$ has exactly two vectors ([[§27 The Dimension of a Vector Space#^thm-27-2|Theorem §27.2]]).
 > - $\operatorname{Nul} A$: $x_1 = 3x_3 - 2x_4$, $x_2 = 5x_3 - 4x_4$, with $x_3$, $x_4$ free, so
 >
 > $$

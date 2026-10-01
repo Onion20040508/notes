@@ -15,32 +15,20 @@ This section looks inside a matrix. Besides $\operatorname{Col} A$ and $\operato
 
 ## The Row Space
 
-> [!definition] Definition §28.1: Row Space
-> Let $A$ be an $m \times n$ matrix. Each row of $A$ has $n$ entries and can be identified with a vector in $\mathbb{R}^n$. The set of all linear combinations of the row vectors is the **row space** of $A$, written $\operatorname{Row} A$. It is a subspace of $\mathbb{R}^n$ (a span, [[§23 Vector Spaces and Subspaces|§23]], Theorem 1). Since the rows of $A$ are the columns of $A^T$,
->
-> $$
-> \operatorname{Row} A = \operatorname{Col} A^T .
-> $$
->
-> For example, for
->
-> $$
-> A = \begin{bmatrix} -2 & -5 & 8 & 0 & -17 \\ 1 & 3 & -5 & 1 & 5 \\ 3 & 11 & -19 & 7 & 1 \\ 1 & 7 & -13 & 5 & -3 \end{bmatrix},
-> \qquad
-> \begin{aligned}
-> \mathbf{r}_1 &= (-2, -5, 8, 0, -17) \\
-> \mathbf{r}_2 &= (1, 3, -5, 1, 5) \\
-> \mathbf{r}_3 &= (3, 11, -19, 7, 1) \\
-> \mathbf{r}_4 &= (1, 7, -13, 5, -3)
-> \end{aligned}
-> $$
->
-> $\operatorname{Row} A = \operatorname{Span}\{\mathbf{r}_1, \mathbf{r}_2, \mathbf{r}_3, \mathbf{r}_4\}$, a subspace of $\mathbb{R}^5$. Row vectors are written horizontally, but may be written as columns when that is convenient.
->
-> *Lay: 4.6, Definition (text) and Example 4.6.1*
-> *Source: 235 lecture L16*
+The **row space** $\operatorname{Row} A$ of an $m \times n$ matrix $A$, the set of all linear combinations of its rows (each identified with a vector in $\mathbb{R}^n$), is defined in [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-3|Definition §24.3]]: the 6th edition introduces it in 4.2, the 5th here in 4.6. It is a subspace of $\mathbb{R}^n$ (a span, [[§23 Vector Spaces and Subspaces#^thm-23-4|Theorem §23.4]]), and $\operatorname{Row} A = \operatorname{Col} A^T$. For example (Lay's Example 4.6.1, also in lecture L16), for
 
-^def-28-1
+$$
+A = \begin{bmatrix} -2 & -5 & 8 & 0 & -17 \\ 1 & 3 & -5 & 1 & 5 \\ 3 & 11 & -19 & 7 & 1 \\ 1 & 7 & -13 & 5 & -3 \end{bmatrix},
+\qquad
+\begin{aligned}
+\mathbf{r}_1 &= (-2, -5, 8, 0, -17) \\
+\mathbf{r}_2 &= (1, 3, -5, 1, 5) \\
+\mathbf{r}_3 &= (3, 11, -19, 7, 1) \\
+\mathbf{r}_4 &= (1, 7, -13, 5, -3)
+\end{aligned}
+$$
+
+$\operatorname{Row} A = \operatorname{Span}\{\mathbf{r}_1, \mathbf{r}_2, \mathbf{r}_3, \mathbf{r}_4\}$, a subspace of $\mathbb{R}^5$. Row vectors are written horizontally, but may be written as columns when that is convenient.
 
 Row operations change the linear dependence relations among the rows, so they do not tell us which rows of $A$ to keep. But they do preserve the row space itself.
 
@@ -65,11 +53,11 @@ Row operations change the linear dependence relations among the rows, so they do
 > [!proof]+ Proof
 > If $B$ is obtained from $A$ by row operations, the rows of $B$ are linear combinations of the rows of $A$. So any linear combination of the rows of $B$ is a linear combination of the rows of $A$, and $\operatorname{Row} B \subseteq \operatorname{Row} A$. Row operations are reversible, so the same argument gives $\operatorname{Row} A \subseteq \operatorname{Row} B$. Hence the row spaces are equal.
 >
-> If $B$ is in echelon form, its nonzero rows span $\operatorname{Row} B$ (zero rows contribute nothing). They are linearly independent, because no nonzero row is a linear combination of the nonzero rows below it: each row below has zeros in the column of the leading entry of the given row, and in all columns to its left. List the nonzero rows in reverse order, the last one first. Then no row is a linear combination of the rows preceding it in the list, and the set is independent by [[§25 Linearly Independent Sets; Bases|§25]] (Theorem 4). So the nonzero rows of $B$ form a basis of the common row space of $B$ and $A$.
+> If $B$ is in echelon form, its nonzero rows span $\operatorname{Row} B$ (zero rows contribute nothing). They are linearly independent, because no nonzero row is a linear combination of the nonzero rows below it: each row below has zeros in the column of the leading entry of the given row, and in all columns to its left. List the nonzero rows in reverse order, the last one first. Then no row is a linear combination of the rows preceding it in the list, and the set is independent by [[§25 Linearly Independent Sets; Bases#^thm-25-1|Theorem §25.1]]. So the nonzero rows of $B$ form a basis of the common row space of $B$ and $A$.
 
 ^pf-28-1
 
-*Uses:* [[§25 Linearly Independent Sets; Bases|§25]] (Theorem 4), [[§1 Systems of Linear Equations|§1]] (row operations are reversible)
+*Uses:* [[§25 Linearly Independent Sets; Bases#^thm-25-1|§25.1]], [[§1 Systems of Linear Equations#^prop-1-1|§1.1]] (row operations are reversible)
 
 The lecture also proved the converse, which Lay does not state.
 
@@ -81,7 +69,7 @@ The lecture also proved the converse, which Lay does not state.
 ^prop-28-2
 
 > [!proof]+ Proof
-> "Only if" is Theorem §28.1. For "if", the lecture's reason is that the reduced echelon form is unique: $A$ and $B$ are row equivalent exactly when they have the same reduced echelon form ([[§2 Row Reduction and Echelon Forms|§2]], Theorem 1). It remains to see that the reduced echelon form is determined by the row space; the lecture asserts this, and here is why.
+> "Only if" is Theorem §28.1. For "if", the lecture's reason is that the reduced echelon form is unique: $A$ and $B$ are row equivalent exactly when they have the same reduced echelon form ([[§2 Row Reduction and Echelon Forms#^thm-2-1|Theorem §2.1]]). It remains to see that the reduced echelon form is determined by the row space; the lecture asserts this, and here is why.
 >
 > Let $R$ and $S$ be the reduced echelon forms of $A$ and $B$. By Theorem §28.1, $\operatorname{Row} R = \operatorname{Row} A = \operatorname{Row} B = \operatorname{Row} S$; call this subspace $W$. Let $\mathbf{r}_1, \ldots, \mathbf{r}_k$ be the nonzero rows of $R$, with leading $1$s in columns $p_1 < \cdots < p_k$. Column $p_i$ of $R$ has a $1$ in row $i$ and $0$ elsewhere.
 >
@@ -93,10 +81,10 @@ The lecture also proved the converse, which Lay does not state.
 
 ^pf-28-2
 
-*Uses:* [[§28 Rank#^thm-28-1|§28.1]], [[§2 Row Reduction and Echelon Forms|§2]] (Theorem 1, uniqueness of the reduced echelon form)
+*Uses:* [[§28 Rank#^thm-28-1|§28.1]], [[§2 Row Reduction and Echelon Forms#^thm-2-1|§2.1]] (uniqueness of the reduced echelon form), [[§1 Systems of Linear Equations#^prop-1-1|§1.1]] (row operations are reversible)
 
 > [!example] Example §28.1: Bases for Row A, Col A and Nul A
-> Find bases for the row space, the column space and the null space of the matrix $A$ of Definition §28.1.
+> Find bases for the row space, the column space and the null space of the matrix $A$ displayed above (Lay's Example 4.6.1).
 >
 > **Echelon form.** Interchange rows 1 and 2. Then add $2 \cdot$(row 1) to row 2, $-3 \cdot$(row 1) to row 3 and $-1 \cdot$(row 1) to row 4:
 >
@@ -156,7 +144,7 @@ The lecture also proved the converse, which Lay does not state.
 
 ## The Rank Theorem
 
-> [!definition] Definition §28.2: Rank
+> [!definition] Definition §28.1: Rank
 > The **rank** of $A$ is the dimension of the column space of $A$:
 >
 > $$
@@ -167,7 +155,7 @@ The lecture also proved the converse, which Lay does not state.
 >
 > *Lay: 4.6, Definition*
 
-^def-28-2
+^def-28-1
 
 > [!theorem] Theorem §28.3: The Rank Theorem
 > The dimensions of the column space and the row space of an $m \times n$ matrix $A$ are equal. This common dimension, the rank of $A$, also equals the number of pivot positions in $A$ and satisfies the equation
@@ -183,7 +171,7 @@ The lecture also proved the converse, which Lay does not state.
 ^thm-28-3
 
 > [!proof]+ Proof
-> By [[§25 Linearly Independent Sets; Bases|§25]] (Theorem 6), the pivot columns of $A$ form a basis of $\operatorname{Col} A$, so $\operatorname{rank} A$ is the number of pivot columns of $A$, that is, the number of pivot positions in an echelon form $B$ of $A$. Since $B$ has one nonzero row for each pivot, and these rows form a basis for $\operatorname{Row} A$ (Theorem §28.1), the rank of $A$ is also $\dim \operatorname{Row} A$.
+> By [[§25 Linearly Independent Sets; Bases#^thm-25-3|Theorem §25.3]], the pivot columns of $A$ form a basis of $\operatorname{Col} A$, so $\operatorname{rank} A$ is the number of pivot columns of $A$, that is, the number of pivot positions in an echelon form $B$ of $A$. Since $B$ has one nonzero row for each pivot, and these rows form a basis for $\operatorname{Row} A$ (Theorem §28.1), the rank of $A$ is also $\dim \operatorname{Row} A$.
 >
 > By [[§27 The Dimension of a Vector Space#^thm-27-8|Theorem §27.8]], $\dim \operatorname{Nul} A$ is the number of free variables in $A\mathbf{x} = \mathbf{0}$, that is, the number of columns of $A$ that are *not* pivot columns. (It is the number of these columns, not the columns themselves, that is related to $\operatorname{Nul} A$.) Obviously
 >
@@ -195,16 +183,16 @@ The lecture also proved the converse, which Lay does not state.
 
 ^pf-28-3
 
-*Uses:* [[§28 Rank#^thm-28-1|§28.1]], [[§27 The Dimension of a Vector Space#^thm-27-8|§27.8]], [[§25 Linearly Independent Sets; Bases|§25]] (Theorem 6)
+*Uses:* [[§28 Rank#^thm-28-1|§28.1]], [[§27 The Dimension of a Vector Space#^thm-27-8|§27.8]], [[§25 Linearly Independent Sets; Bases#^thm-25-3|§25.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment: $\operatorname{rank} A + \dim \operatorname{Nul} A = n$ is the [[§8 Null Spaces and Ranges#^ladr-3-21|fundamental theorem of linear maps (LADR 3.21)]], $\dim V = \dim \operatorname{null} T + \dim \operatorname{range} T$ for any linear map on a finite-dimensional $V$, proved by extending a basis of the null space instead of counting pivots. Column rank equals row rank: [[§9 Matrices#^ladr-3-57|LADR 3.57]] (via a column–row factorization, without row reduction) and [[§12 Duality#^ladr-3-133|LADR 3.133]] (via dual maps); rank [[§9 Matrices#^ladr-3-58|LADR 3.58]].
-> - Lay states the second equation for subspaces of $\mathbb{R}^n$ already in Section 2.9 ([[§19 Dimension and Rank|§19]], Theorem 14). Geometric form: $\operatorname{Row} A$ and $\operatorname{Nul} A$ are orthogonal complements in $\mathbb{R}^n$, [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]].
+> - Lay states the second equation for subspaces of $\mathbb{R}^n$ already in Section 2.9 ([[§19 Dimension and Rank#^thm-19-2|Theorem §19.2]]). Geometric form: $\operatorname{Row} A$ and $\operatorname{Nul} A$ are orthogonal complements in $\mathbb{R}^n$, [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]].
 
 > [!remark] Remark: The Geometry of the Rank Theorem
 > Think of $A$ as the map $\mathbf{x} \mapsto A\mathbf{x}$ from $\mathbb{R}^n$ to $\mathbb{R}^m$. It collapses the $(\dim \operatorname{Nul} A)$-dimensional subspace $\operatorname{Nul} A$ to $\mathbf{0}$, and its image $\operatorname{Col} A$ has dimension $\operatorname{rank} A$: the $n$ dimensions of the domain are split between those that are killed and those that survive. Lecture L16's example is the projection $A = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \end{bmatrix} : \mathbb{R}^3 \to \mathbb{R}^2$. Here $\operatorname{Nul} A$ is the $z$-axis ($\dim 1$) and $\operatorname{Col} A = \mathbb{R}^2$ ($\dim 2$), and $1 + 2 = 3$. Every $\mathbf{x} = (x, y, z)$ splits as $(x, y, 0) + (0, 0, z)$: the first part lies in $\operatorname{Row} A$ (the $xy$-plane of $\mathbb{R}^3$) and is carried one-to-one onto $\operatorname{Col} A$, the second lies in $\operatorname{Nul} A$ and is sent to $\mathbf{0}$.
 >
-> *The lecture writes this splitting as $\mathbb{R}^3 = \operatorname{Nul}(A) \oplus \operatorname{Col}(A)$; since $\operatorname{Col} A$ lies in $\mathbb{R}^2$, the summand inside $\mathbb{R}^3$ is the copy $\operatorname{Row} A$ of the $xy$-plane, as written above.*
+> *The lecture writes this splitting as $\mathbb{R}^3 = \operatorname{Nul}(A) \oplus \operatorname{Col}(A)$, with $\mathbf{x} = A\mathbf{x} + \mathbf{x}'$. But $\operatorname{Col} A = \mathbb{R}^2$ is not a subspace of $\mathbb{R}^3$; the statement holds only after $A\mathbf{x} = (x, y)$ is identified with $(x, y, 0)$. Written correctly, it is $\mathbb{R}^3 = \operatorname{Nul} A \oplus \operatorname{Row} A$, as above: every $\mathbf{x}$ is in exactly one way a vector of $\operatorname{Row} A$ plus a vector of $\operatorname{Nul} A$. The same holds for every $m \times n$ matrix, $\mathbb{R}^n = \operatorname{Nul} A \oplus \operatorname{Row} A$ (orthogonal complements, [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]]). See also [[§19 Dimension and Rank#^rem-19-2|Remark: The Rank Theorem Geometrically]].*
 >
 > *Source: 235 lecture L16*
 
@@ -238,6 +226,8 @@ The lecture also proved the converse, which Lay does not state.
 > $$
 >
 > The lecture lists the cases: rank $6, 5, 4, \ldots$ give $\dim \operatorname{Nul} A = 3, 4, 5, \ldots$, never $2$. (A null space of dimension $2$ would force rank $7$.)
+>
+> *The lecture's third line reads $9 - 3 = 5$; for rank $4$ it should be $9 - 4 = 5$.*
 >
 > *Lay: Example 4.6.3*
 > *Source: 235 lecture L17*
@@ -289,7 +279,7 @@ The lecture also proved the converse, which Lay does not state.
 
 ## Rank and the Invertible Matrix Theorem
 
-The vector space ideas give six more statements for the Invertible Matrix Theorem, continuing the list (a)–(l) of Section 2.3 ([[§13 Characterizations of Invertible Matrices|§13]]). Lay already adds the same six statements in Section 2.9 ([[§19 Dimension and Rank|§19]]) for subspaces of $\mathbb{R}^n$, and repeats them here with the general dimension theory behind them.
+The vector space ideas give six more statements for the Invertible Matrix Theorem, continuing the list (a)–(l) of Section 2.3 ([[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]]). Lay already adds the same six statements in Section 2.9 for subspaces of $\mathbb{R}^n$; their home in these notes is [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]]. Lay 5e repeats them here, in Section 4.6, with the general dimension theory behind them, and the theorem below restates them in that form.
 
 > [!theorem] Theorem §28.5: The Invertible Matrix Theorem (Continued)
 > Let $A$ be an $n \times n$ matrix. Then the following statements are each equivalent to the statement that $A$ is an invertible matrix.
@@ -303,12 +293,14 @@ The vector space ideas give six more statements for the Invertible Matrix Theore
 >
 > Since $A$ is invertible if and only if $A^T$ is (statement (l)), each statement may also be made for $A^T$, for instance $\operatorname{Row} A = \mathbb{R}^n$; Lay leaves these out to keep the list under thirty statements.
 >
+> These are statements (m)–(r) of [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]], restated. Previous version: [[§21 Properties of Determinants#^thm-21-4|Theorem §21.4]] ($\det A \ne 0$); next: [[§33 The Characteristic Equation#^thm-33-2|Theorem §33.2]] (statements (s), (t)).
+>
 > *Lay: 4.6, Theorem (The Invertible Matrix Theorem, continued)*
 
 ^thm-28-5
 
 > [!proof]+ Proof
-> Statement (m) is logically equivalent to statements (e) and (h) of [[§13 Characterizations of Invertible Matrices|§13]] together: the columns of $A$ are linearly independent and span $\mathbb{R}^n$. The other five are linked to the earlier statements by the chain
+> Statement (m) is logically equivalent to statements (e) and (h) of [[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]] together: the columns of $A$ are linearly independent and span $\mathbb{R}^n$. The other five are linked to the earlier statements by the chain
 >
 > $$
 > \text{(g)} \Rightarrow \text{(n)} \Rightarrow \text{(o)} \Rightarrow \text{(p)} \Rightarrow \text{(r)} \Rightarrow \text{(q)} \Rightarrow \text{(d)} .
@@ -326,10 +318,10 @@ The vector space ideas give six more statements for the Invertible Matrix Theore
 
 ^pf-28-5
 
-*Uses:* [[§13 Characterizations of Invertible Matrices|§13]] (statements (d), (e), (g), (h)), [[§28 Rank#^thm-28-3|§28.3]], [[§27 The Dimension of a Vector Space#^cor-27-6|§27.6]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]]
+*Uses:* [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (statements (d), (e), (g), (h)), [[§28 Rank#^thm-28-3|§28.3]], [[§27 The Dimension of a Vector Space#^cor-27-6|§27.6]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]]
 
 > [!remark]- Connections
-> - Rigorous treatment: for an operator on a finite-dimensional space, injective ⟺ surjective ⟺ invertible, [[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]], a consequence of the fundamental theorem of linear maps. Later extensions of the theorem here: determinants and eigenvalues in Section 5.2 ([[§33 The Characteristic Equation|§33]]), orthogonal complements and singular values in [[§51★ The Singular Value Decomposition#^thm-51-6|Theorem §51.6]].
+> - Rigorous treatment: for an operator on a finite-dimensional space, injective ⟺ surjective ⟺ invertible, [[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]], a consequence of the fundamental theorem of linear maps. Later extensions of the theorem here: determinants and eigenvalues in Section 5.2 ([[§33 The Characteristic Equation#^thm-33-2|Theorem §33.2]]), orthogonal complements and singular values in [[§51★ The Singular Value Decomposition#^thm-51-6|Theorem §51.6]].
 
 > [!remark]- Remark: Numerical Note — Computing the Rank
 > Rank determination looks easy: reduce to echelon form and count the pivots. But unless the arithmetic is exact, row operations can change the *apparent* rank. In $\begin{bmatrix} 5 & 7 \\ 5 & x \end{bmatrix}$, if $x$ is not stored exactly as $7$, the computed rank may be $1$ or $2$, depending on whether the computer treats $x - 7$ as zero. In practice the effective rank is found from the singular value decomposition (Section 7.4), which also gives reliable bases for $\operatorname{Col} A$, $\operatorname{Row} A$, $\operatorname{Nul} A$ and $\operatorname{Nul} A^T$: [[§51★ The Singular Value Decomposition#^thm-51-5|Theorem §51.5]].

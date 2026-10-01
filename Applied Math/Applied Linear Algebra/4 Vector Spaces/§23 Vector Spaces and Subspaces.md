@@ -128,7 +128,7 @@ Much of Chapters 1 and 2 used only a few algebraic properties of $\mathbb{R}^n$:
 >
 > **(e) Functions.** The set $V$ of all real-valued functions on a set $\mathbb{D}$ (typically $\mathbb{R}$ or an interval), with $(\mathbf{f} + \mathbf{g})(t) = \mathbf{f}(t) + \mathbf{g}(t)$ and $(c\mathbf{f})(t) = c\,\mathbf{f}(t)$. For instance, if $\mathbf{f}(t) = 1 + \sin 2t$ and $\mathbf{g}(t) = 2 + .5t$, then $(\mathbf{f} + \mathbf{g})(t) = 3 + \sin 2t + .5t$ and $(2\mathbf{g})(t) = 4 + t$. Two functions are equal when their values agree for every $t$ in $\mathbb{D}$; the zero vector is the function that is identically zero, and the negative of $\mathbf{f}$ is $(-1)\mathbf{f}$. Inside it the lecture singles out $C(\mathbb{R})$, the continuous functions on $\mathbb{R}$ (such as $|x|$, $x^3$, $\sin x \cdot e^{x+3}$), and $C^\infty(\mathbb{R})$, the functions with derivatives of all orders (such as $(\sin x)^3 + e^{x^3}(\sin x)^4$; but not $|x|$).
 >
-> **(f) Matrices.** For fixed $m$ and $n$, the set $M_{m \times n}$ of all $m \times n$ matrices with the usual addition and scalar multiplication ([[§11 Matrix Operations|§11]]); its zero vector is the zero matrix.
+> **(f) Matrices.** For fixed $m$ and $n$, the set $M_{m \times n}$ of all $m \times n$ matrices with the usual addition and scalar multiplication ([[§11 Matrix Operations#^def-11-2|Definition §11.2]]); its zero vector is the zero matrix.
 >
 > *Lay: Examples 4.1.1–4.1.5; 4.1 (text before Exercise 21)*
 > *Source: 235 lectures L13, L14*
@@ -158,7 +158,7 @@ Much of Chapters 1 and 2 used only a few algebraic properties of $\mathbb{R}^n$:
 ^def-23-2
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§3 Subspaces#^ladr-1-34|LADR 1.34]] (the same three conditions, with Axiom-by-Axiom proof that they suffice); [[§1 Linear Spaces#^def-1-2|556 Def. §1.2]]. For subspaces of $\mathbb{R}^n$ this is the definition of [[§18 Subspaces of ℝⁿ|§18]] (2.8).
+> - Rigorous treatment: [[§3 Subspaces#^ladr-1-34|LADR 1.34]] (the same three conditions, with Axiom-by-Axiom proof that they suffice); [[§1 Linear Spaces#^def-1-2|556 Def. §1.2]]. For subspaces of $\mathbb{R}^n$ this is [[§18 Subspaces of ℝⁿ#^def-18-1|Definition §18.1]] (2.8).
 
 > [!theorem] Proposition §23.3: A Subspace Is a Vector Space
 > Every subspace $H$ of a vector space $V$ is itself a vector space, under the vector space operations already defined in $V$. Conversely, every vector space is a subspace of itself (and possibly of other, larger spaces).
@@ -203,7 +203,7 @@ The term *subspace* is used when at least two vector spaces are in mind, one ins
 > x_{n+1} = x_n + x_{n-1} \quad \text{for all } n \ge 2 :
 > $$
 >
-> the zero sequence satisfies the recursion, and if $(x_n)$ and $(y_n)$ do, then $x_{n+1} + y_{n+1} = (x_n + y_n) + (x_{n-1} + y_{n-1})$ and $cx_{n+1} = cx_n + cx_{n-1}$. The Fibonacci sequence $1, 1, 2, 3, 5, 8, \ldots$ is one element ([[§26 Coordinate Systems|§26]] identifies this subspace with $\mathbb{R}^2$).
+> the zero sequence satisfies the recursion, and if $(x_n)$ and $(y_n)$ do, then $x_{n+1} + y_{n+1} = (x_n + y_n) + (x_{n-1} + y_{n-1})$ and $cx_{n+1} = cx_n + cx_{n-1}$. The Fibonacci sequence $1, 1, 2, 3, 5, 8, \ldots$ is one element. The lecture asks which geometric sequences $(\lambda, \lambda^2, \lambda^3, \ldots)$ belong to this subspace: the recursion becomes $\lambda^{n-1}(\lambda^2 - \lambda - 1) = 0$, so for $\lambda \ne 0$ exactly the two roots $\lambda = (1 \pm \sqrt5)/2$ of $\lambda^2 = \lambda + 1$ work. ([[§26 Coordinate Systems#^ex-26-3|Example §26.3]](c) identifies this subspace with $\mathbb{R}^2$, and [[§30 Applications to Difference Equations#^ex-30-4|Example §30.4]] writes every Fibonacci-type sequence as a combination of these two geometric sequences, which gives the closed formula for the Fibonacci numbers.)
 >
 > *Lay: Examples 4.1.6–4.1.8; Practice Problem 3 (4.1)*
 > *Source: 235 lectures L13, L14*
@@ -228,7 +228,7 @@ The term *subspace* is used when at least two vector spaces are in mind, one ins
 
 ## A Subspace Spanned by a Set
 
-As in Chapter 1, a **linear combination** of $\mathbf{v}_1, \ldots, \mathbf{v}_p$ is any sum of scalar multiples $c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p$, and $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ is the set of all such linear combinations ([[§3 Vector Equations|§3]]).
+As in Chapter 1, a **linear combination** of $\mathbf{v}_1, \ldots, \mathbf{v}_p$ is any sum of scalar multiples $c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p$, and $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ is the set of all such linear combinations ([[§3 Vector Equations#^def-3-3|Definition §3.3]], [[§3 Vector Equations#^def-3-4|Definition §3.4]]).
 
 > [!theorem] Theorem §23.4: A Span Is a Subspace
 > If $\mathbf{v}_1, \ldots, \mathbf{v}_p$ are in a vector space $V$, then $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ is a subspace of $V$. It is the smallest subspace containing $\mathbf{v}_1, \ldots, \mathbf{v}_p$: every subspace of $V$ that contains $\mathbf{v}_1, \ldots, \mathbf{v}_p$ also contains their span.
@@ -276,7 +276,7 @@ As in Chapter 1, a **linear combination** of $\mathbf{v}_1, \ldots, \mathbf{v}_p
 
 ^def-23-3
 
-In $\mathbb{R}^3$, every nonzero subspace other than $\mathbb{R}^3$ itself is either $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ for linearly independent $\mathbf{v}_1, \mathbf{v}_2$ (a plane through the origin) or $\operatorname{Span}\{\mathbf{v}\}$ for $\mathbf{v} \ne \mathbf{0}$ (a line through the origin); this is proved in [[§27 The Dimension of a Vector Space|§27]] (4.5). The lecture's list: the subspaces of $\mathbb{R}^2$ are $\{\mathbf{0}\}$, the lines through the origin, and $\mathbb{R}^2$; those of $\mathbb{R}^3$ are $\{\mathbf{0}\}$, lines and planes through the origin, and $\mathbb{R}^3$.
+In $\mathbb{R}^3$, every nonzero subspace other than $\mathbb{R}^3$ itself is either $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ for linearly independent $\mathbf{v}_1, \mathbf{v}_2$ (a plane through the origin) or $\operatorname{Span}\{\mathbf{v}\}$ for $\mathbf{v} \ne \mathbf{0}$ (a line through the origin); this is proved in [[§27 The Dimension of a Vector Space#^ex-27-3|Example §27.3]] (4.5). The lecture's list: the subspaces of $\mathbb{R}^2$ are $\{\mathbf{0}\}$, the lines through the origin, and $\mathbb{R}^2$; those of $\mathbb{R}^3$ are $\{\mathbf{0}\}$, lines and planes through the origin, and $\mathbb{R}^3$.
 
 > [!example] Example §23.4: Finding a Spanning Set
 > **(a)** Let $H = \{(a - 3b,\ b - a,\ a,\ b) : a, b \in \mathbb{R}\}$. Show that $H$ is a subspace of $\mathbb{R}^4$.

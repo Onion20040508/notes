@@ -16,7 +16,7 @@ Discrete data (sampled music, yearly populations, monthly loan balances) are seq
 ## Discrete-Time Signals
 
 > [!definition] Definition §30.1: Signals; the Space 𝕊
-> A **signal** is a function defined only on the integers, visualized as a doubly infinite sequence of numbers $\{y_k\} = (\ldots, y_{-2}, y_{-1}, y_0, y_1, y_2, \ldots)$; examples are $\{(.7)^k\}$, $\{1^k\}$ and $\{(-1)^k\}$. The signals form the vector space $\mathbb{S}$ of Section 4.1 ([[§23 Vector Spaces and Subspaces|§23]]), with termwise addition and scalar multiplication. When a process begins at a specific time, a signal may be written $(y_0, y_1, y_2, \ldots)$, the terms with $k < 0$ being zero or omitted.
+> A **signal** is a function defined only on the integers, visualized as a doubly infinite sequence of numbers $\{y_k\} = (\ldots, y_{-2}, y_{-1}, y_0, y_1, y_2, \ldots)$; examples are $\{(.7)^k\}$, $\{1^k\}$ and $\{(-1)^k\}$. The signals form the vector space $\mathbb{S}$ of Section 4.1 ([[§23 Vector Spaces and Subspaces#^ex-23-1|Example §23.1]](c)), with termwise addition and scalar multiplication. When a process begins at a specific time, a signal may be written $(y_0, y_1, y_2, \ldots)$, the terms with $k < 0$ being zero or omitted.
 >
 > *Lay: 4.8 (text); 4.1, Example 3*
 
@@ -65,7 +65,7 @@ implies $c_1 = c_2 = c_3 = 0$. "For all $k$" means all integers $k$ (or all $k \
 
 ^pf-30-1
 
-*Uses:* [[§12 The Inverse of a Matrix|§12]] (solving with an inverse)
+*Uses:* [[§12 The Inverse of a Matrix#^thm-12-3|§12.3]] (solving with an inverse)
 
 If no Casorati matrix is invertible, the signals may or may not be linearly independent (Lay, Exercise 33: $k^2$ and $2k|k|$). For solutions of one homogeneous difference equation, however, the test is decisive: [[§30 Applications to Difference Equations#^prop-30-6|Proposition §30.6]].
 
@@ -188,7 +188,7 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 *Uses:* [[§30 Applications to Difference Equations#^def-30-4|Def. §30.4]]
 
 > [!remark] Remark: Repeated and Complex Roots
-> Lay does not treat repeated roots of the auxiliary equation (then $\{r^k\}$ gives fewer than $n$ solutions; a root $r$ of multiplicity two also gives $\{k r^k\}$, as in Exercise 5). When the auxiliary equation has a complex root, the difference equation has real solutions of the form $s^k\cos k\omega$ and $s^k\sin k\omega$ for constants $s$ and $\omega$: the signal $w_k = \cos(3\pi k/4)$ of Example §30.2 is one ($s = 1$, $\omega = 3\pi/4$; the auxiliary equation $.35r^2 + .5r + .35 = 0$ has the roots $e^{\pm 3\pi i/4}$). Complex numbers: [[§53 Complex Numbers|§53]].
+> Lay does not treat repeated roots of the auxiliary equation (then $\{r^k\}$ gives fewer than $n$ solutions; a root $r$ of multiplicity two also gives $\{k r^k\}$, as in Exercise 5). Lecture L18 poses the recurrence $A_{n+1} = 2A_n - A_{n-1}$ as an exercise (the left side is written $A_n$ there), asking for a formula of the Fibonacci shape $(\mu_1^n - \mu_2^n)/c$; its auxiliary equation $r^2 - 2r + 1 = (r - 1)^2$ has the double root $1$, so that shape does not apply, and the solutions are $\{1\}$ and $\{k\}$: $A_k = c_1 + c_2 k$, the arithmetic progressions (Casorati matrix at $k = 0$: $\begin{bmatrix} 1 & 0 \\ 1 & 1 \end{bmatrix}$, invertible). When the auxiliary equation has a complex root, the difference equation has real solutions of the form $s^k\cos k\omega$ and $s^k\sin k\omega$ for constants $s$ and $\omega$: the signal $w_k = \cos(3\pi k/4)$ of Example §30.2 is one ($s = 1$, $\omega = 3\pi/4$; the auxiliary equation $.35r^2 + .5r + .35 = 0$ has the roots $e^{\pm 3\pi i/4}$). Complex numbers and $e^{i\theta}$: [[§53 Complex Numbers#^rem-53-1|Remark: Euler's Formula]].
 
 ^rem-30-1
 
@@ -214,11 +214,11 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 > (y_{k+n} + y'_{k+n}) + a_1 (y_{k+n-1} + y'_{k+n-1}) + \cdots + a_n (y_k + y'_k) ,
 > $$
 >
-> which regroups as the $k$th term of $T\{y_k\}$ plus the $k$th term of $T\{y'_k\}$; likewise the $k$th term of $T\{c y_k\}$ is $c$ times that of $T\{y_k\}$. So $T$ is linear, and the kernel of a linear transformation is a subspace ([[§24 Null Spaces, Column Spaces, and Linear Transformations|§24]]).
+> which regroups as the $k$th term of $T\{y_k\}$ plus the $k$th term of $T\{y'_k\}$; likewise the $k$th term of $T\{c y_k\}$ is $c$ times that of $T\{y_k\}$. So $T$ is linear, and the kernel of a linear transformation is a subspace ([[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|Theorem §24.5]]).
 
 ^pf-30-3
 
-*Uses:* [[§24 Null Spaces, Column Spaces, and Linear Transformations|§24]] (the kernel is a subspace)
+*Uses:* [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|§24.5]] (the kernel is a subspace)
 
 > [!theorem] Theorem §30.4: Existence and Uniqueness
 > If $a_n \ne 0$ and $\{z_k\}$ is given, the equation
@@ -369,7 +369,7 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 >
 > the golden ratio: the ratios $\frac21, \frac32, \frac53, \frac85, \frac{13}{8}, \frac{21}{13}, \ldots$ approach $\varphi$.
 >
-> **The lecture's route.** L18 writes the recurrence as a first-order system (Proposition §30.8): $\mathbf{v}_k = \begin{bmatrix} F_k \\ F_{k+1} \end{bmatrix}$ satisfies $\mathbf{v}_{k+1} = \begin{bmatrix} 0 & 1 \\ 1 & 1 \end{bmatrix}\mathbf{v}_k$, so $\mathbf{v}_k = A^k\mathbf{v}_0$. The eigenvalues of $A$ are the roots $\varphi$, $\psi$ of $\det(A - \lambda I) = \lambda^2 - \lambda - 1$, with eigenvectors $\mathbf{u} = (1, \varphi)$ and $\mathbf{v} = (1, \psi)$. Since $\mathbf{u} - \mathbf{v} = (0, \sqrt5) = \sqrt5\,\mathbf{v}_0$, one gets $\mathbf{v}_k = A^k\mathbf{v}_0 = \frac{1}{\sqrt5}(\varphi^k\mathbf{u} - \psi^k\mathbf{v})$, whose first entry is the same formula. (Eigenvectors: Chapter 5, [[§32 Eigenvectors and Eigenvalues|§32]] and [[§37 Discrete Dynamical Systems|§37]].)
+> **The lecture's route.** L18 writes the recurrence as a first-order system (Proposition §30.8): $\mathbf{v}_k = \begin{bmatrix} F_k \\ F_{k+1} \end{bmatrix}$ satisfies $\mathbf{v}_{k+1} = \begin{bmatrix} 0 & 1 \\ 1 & 1 \end{bmatrix}\mathbf{v}_k$, so $\mathbf{v}_k = A^k\mathbf{v}_0$. The eigenvalues of $A$ are the roots $\varphi$, $\psi$ of $\det(A - \lambda I) = \lambda^2 - \lambda - 1$, with eigenvectors $\mathbf{u} = (1, \varphi)$ and $\mathbf{v} = (1, \psi)$. Since $\mathbf{u} - \mathbf{v} = (0, \sqrt5) = \sqrt5\,\mathbf{v}_0$, one gets $\mathbf{v}_k = A^k\mathbf{v}_0 = \frac{1}{\sqrt5}(\varphi^k\mathbf{u} - \psi^k\mathbf{v})$, whose first entry is the same formula. (Eigenvectors: Chapter 5, [[§32 Eigenvectors and Eigenvalues#^ex-32-4|Example §32.4]] and [[§37 Discrete Dynamical Systems#^thm-37-1|Theorem §37.1]].)
 >
 > *The lecture first lists $F_0 = F_1 = 1$ and then uses $\mathbf{v}_0 = (F_0, F_1) = (0, 1)$; the closed formula $F_n = (\varphi^n - \psi^n)/\sqrt5$ it derives is the one for $F_0 = 0$, $F_1 = 1$, used here.*
 >
@@ -391,7 +391,7 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 >
 > is one particular solution of (11) plus an arbitrary linear combination of a fundamental set of solutions of the corresponding homogeneous equation (10).
 >
-> This is the analog of the result of Section 1.5 that the solution set of $A\mathbf{x} = \mathbf{b}$ is a translate of that of $A\mathbf{x} = \mathbf{0}$ ([[§5 Solution Sets of Linear Systems|§5]], Theorem 6), with the same explanation: both maps $\mathbf{x} \mapsto A\mathbf{x}$ and $\{y_k\} \mapsto \{z_k\}$ are linear.
+> This is the analog of the result of Section 1.5 that the solution set of $A\mathbf{x} = \mathbf{b}$ is a translate of that of $A\mathbf{x} = \mathbf{0}$ ([[§5 Solution Sets of Linear Systems#^thm-5-3|Theorem §5.3]]), with the same explanation: both maps $\mathbf{x} \mapsto A\mathbf{x}$ and $\{y_k\} \mapsto \{z_k\}$ are linear.
 >
 > *Lay: 4.8 (text); Exercises 35 and 36*
 
@@ -435,7 +435,7 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 
 ## Reduction to Systems of First-Order Equations
 
-A modern way to study an $n$th-order homogeneous equation is to replace it by an equivalent first-order system $\mathbf{x}_{k+1} = A\mathbf{x}_k$, with $\mathbf{x}_k \in \mathbb{R}^n$ and $A$ an $n \times n$ matrix. Such vector difference equations appear in Section 1.10 ([[§10 Linear Models in Business, Science, and Engineering|§10]]), in Markov chains ([[§31 Applications to Markov Chains|§31]]) and in Section 5.6 ([[§37 Discrete Dynamical Systems|§37]]).
+A modern way to study an $n$th-order homogeneous equation is to replace it by an equivalent first-order system $\mathbf{x}_{k+1} = A\mathbf{x}_k$, with $\mathbf{x}_k \in \mathbb{R}^n$ and $A$ an $n \times n$ matrix. Such vector difference equations appear in Section 1.10 ([[§10 Linear Models in Business, Science, and Engineering#^def-10-2|Definition §10.2]]), in Markov chains ([[§31 Applications to Markov Chains#^def-31-2|Definition §31.2]]) and in Section 5.6 ([[§37 Discrete Dynamical Systems|§37]]).
 
 > [!theorem] Proposition §30.8: Reduction to a First-Order System
 > The equation $y_{k+n} + a_1 y_{k+n-1} + \cdots + a_{n-1} y_{k+1} + a_n y_k = 0$ for all $k$ can be rewritten as $\mathbf{x}_{k+1} = A\mathbf{x}_k$ for all $k$, where

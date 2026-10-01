@@ -66,7 +66,7 @@ Three applications show what the inner products of [[§46 Inner Product Spaces|�
 > [!example] Example §47.1: A Weighted Least-Squares Line
 > Find the least-squares line $y = \beta_0 + \beta_1x$ for the data $(-2, 3)$, $(-1, 5)$, $(0, 5)$, $(1, 4)$, $(2, 3)$, if the errors in measuring the $y$-values of the last two points are greater than for the others, so that these two points are weighted half as much as the rest.
 >
-> **Set-up.** As in [[§45 Applications to Linear Models|§45]],
+> **Set-up.** As in [[§45 Applications to Linear Models#^prop-45-1|Proposition §45.1]],
 >
 > $$
 > X = \begin{bmatrix} 1 & -2 \\ 1 & -1 \\ 1 & 0 \\ 1 & 1 \\ 1 & 2 \end{bmatrix}, \qquad \boldsymbol\beta = \begin{bmatrix} \beta_0 \\ \beta_1 \end{bmatrix}, \qquad \mathbf{y} = \begin{bmatrix} 3 \\ 5 \\ 5 \\ 4 \\ 3 \end{bmatrix} .
@@ -111,7 +111,7 @@ Three applications show what the inner products of [[§46 Inner Product Spaces|�
 > \langle p, q\rangle = p(t_0)q(t_0) + \cdots + p(t_n)q(t_n)
 > $$
 >
-> of [[§46 Inner Product Spaces#^ex-46-2|Example §46.2]]. Let $p_0, p_1, p_2, p_3$ be the orthogonal basis of $\mathbb{P}_3$ obtained by Gram–Schmidt from $1, t, t^2, t^3$, and let $g \in \mathbb{P}_n$ be a polynomial whose values at $t_0, \ldots, t_n$ coincide with those of $f$ (one exists by Lay's Supplementary Exercise 11 of Chapter 2). The orthogonal projection of $g$ onto $\mathbb{P}_3$,
+> of [[§46 Inner Product Spaces#^ex-46-2|Example §46.2]]. Let $p_0, p_1, p_2, p_3$ be the orthogonal basis of $\mathbb{P}_3$ obtained by Gram–Schmidt from $1, t, t^2, t^3$, and let $g \in \mathbb{P}_n$ be a polynomial whose values at $t_0, \ldots, t_n$ coincide with those of $f$ (one exists by Lay's Supplementary Exercise 11 of Chapter 2: the interpolation conditions form a linear system whose coefficient matrix is the transposed Vandermonde matrix of the distinct points $t_0, \ldots, t_n$, invertible by [[§21 Properties of Determinants#^prop-21-8|Proposition §21.8]]; compare the Lagrange interpolation of [[§22 Cramer’s Rule, Volume, and Linear Transformations#^ex-22-2|Example §22.2]]). The orthogonal projection of $g$ onto $\mathbb{P}_3$,
 >
 > $$
 > \hat g = c_0p_0 + c_1p_1 + c_2p_2 + c_3p_3, \qquad c_i = \frac{\langle g, p_i\rangle}{\langle p_i, p_i\rangle},
@@ -308,7 +308,7 @@ Continuous functions, such as a sound wave, an electric signal or the motion of 
 
 ^thm-47-4
 
-*Lay omits the proof ("it can be shown"). It is the completeness of the trigonometric system in $L^2[0, 2\pi]$, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]], combined with [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]]; the completeness itself is quoted there without proof as well (via Fejér's theorem).*
+*Lay omits the proof ("it can be shown"). It is the completeness of the trigonometric system in $L^2[0, 2\pi]$, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]], combined with [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]] (the $n$th-order Fourier approximation of a real $f$ is the partial sum $\sum_{|k| \le n} (f, e_k)e_k$ of its expansion in the basis $e_k = e^{ikt}/\sqrt{2\pi}$, and these partial sums converge to $f$ in norm); the completeness itself is quoted there without proof as well (via Fejér's theorem).*
 
 > [!remark]- Connections
 > - Fourier series in $L^2$, with Parseval's equality $\int_0^{2\pi}|f|^2 = \sum |c_n|^2$: [[§20 Orthonormal Sets and Bases#^rem-20-9|556 Remark: Fourier Series]]; the finite Bessel inequality $\|\operatorname{proj}_W f\| \le \|f\|$ (Proposition §46.3 here) is [[§20 Orthonormal Sets and Bases#^lem-20-2|556 Lem. §20.2]].

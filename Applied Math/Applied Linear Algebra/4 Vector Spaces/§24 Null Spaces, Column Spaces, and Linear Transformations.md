@@ -36,7 +36,7 @@ Subspaces of $\mathbb{R}^n$ usually arise in one of two ways: as the set of all 
 ^thm-24-1
 
 > [!proof]+ Proof
-> $\operatorname{Nul} A$ is a subset of $\mathbb{R}^n$ because $A$ has $n$ columns. We check the three properties of a subspace ([[§23 Vector Spaces and Subspaces#^def-23-2|Definition §23.2]]). Certainly $A\mathbf{0} = \mathbf{0}$, so $\mathbf{0}$ is in $\operatorname{Nul} A$. Let $\mathbf{u}$ and $\mathbf{v}$ be in $\operatorname{Nul} A$, so $A\mathbf{u} = \mathbf{0}$ and $A\mathbf{v} = \mathbf{0}$. By the properties of matrix–vector multiplication ([[§4 The Matrix Equation Ax = b|§4]], Theorem 5 of 1.4),
+> $\operatorname{Nul} A$ is a subset of $\mathbb{R}^n$ because $A$ has $n$ columns. We check the three properties of a subspace ([[§23 Vector Spaces and Subspaces#^def-23-2|Definition §23.2]]). Certainly $A\mathbf{0} = \mathbf{0}$, so $\mathbf{0}$ is in $\operatorname{Nul} A$. Let $\mathbf{u}$ and $\mathbf{v}$ be in $\operatorname{Nul} A$, so $A\mathbf{u} = \mathbf{0}$ and $A\mathbf{v} = \mathbf{0}$. By the properties of matrix–vector multiplication ([[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5]], Theorem 5 of 1.4),
 >
 > $$
 > A(\mathbf{u} + \mathbf{v}) = A\mathbf{u} + A\mathbf{v} = \mathbf{0} + \mathbf{0} = \mathbf{0}, \qquad A(c\mathbf{u}) = c(A\mathbf{u}) = c\mathbf{0} = \mathbf{0},
@@ -46,7 +46,7 @@ Subspaces of $\mathbb{R}^n$ usually arise in one of two ways: as the set of all 
 
 ^pf-24-1
 
-*Uses:* [[§23 Vector Spaces and Subspaces#^def-23-2|Def. §23.2]], [[§4 The Matrix Equation Ax = b|§4]] (Theorem 5 of 1.4)
+*Uses:* [[§23 Vector Spaces and Subspaces#^def-23-2|Def. §23.2]], [[§4 The Matrix Equation Ax = b#^thm-4-5|§4.5]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§8 Null Spaces and Ranges#^ladr-3-11|LADR 3.11]], [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]] (the null space of any linear map is a subspace), and homogeneous systems with more unknowns than equations have nonzero solutions, [[§8 Null Spaces and Ranges#^ladr-3-26|LADR 3.26]].
@@ -74,7 +74,7 @@ Subspaces of $\mathbb{R}^n$ usually arise in one of two ways: as the set of all 
 
 ## An Explicit Description of Nul A
 
-There is no obvious relation between the vectors in $\operatorname{Nul} A$ and the entries of $A$: $\operatorname{Nul} A$ is defined *implicitly*, by a condition. Solving $A\mathbf{x} = \mathbf{0}$ (as in [[§5 Solution Sets of Linear Systems|§5]], 1.5) produces an *explicit* description, a spanning set.
+There is no obvious relation between the vectors in $\operatorname{Nul} A$ and the entries of $A$: $\operatorname{Nul} A$ is defined *implicitly*, by a condition. Solving $A\mathbf{x} = \mathbf{0}$ (as in [[§5 Solution Sets of Linear Systems#^prop-5-2|Proposition §5.2]], 1.5) produces an *explicit* description, a spanning set.
 
 > [!remark] Remark: Method — A Spanning Set for Nul A
 > 1. Row reduce the augmented matrix $[A \ \mathbf{0}]$ to *reduced* echelon form, so that each basic variable is expressed in terms of the free variables.
@@ -124,7 +124,7 @@ There is no obvious relation between the vectors in $\operatorname{Nul} A$ and t
 
 ^pf-24-2
 
-*Uses:* [[§7 Linear Independence|§7]] (linear independence)
+*Uses:* [[§7 Linear Independence#^def-7-1|Def. §7.1]] (linear independence)
 
 ## The Column Space of a Matrix
 
@@ -169,11 +169,11 @@ There is no obvious relation between the vectors in $\operatorname{Nul} A$ and t
 ^prop-24-4
 
 > [!proof]+ Proof
-> $A\mathbf{x} = \mathbf{b}$ has a solution exactly when $\mathbf{b}$ is a linear combination of the columns of $A$, that is, when $\mathbf{b} \in \operatorname{Col} A$. So "a solution for each $\mathbf{b}$" means "every $\mathbf{b}$ is in $\operatorname{Col} A$", that is, $\operatorname{Col} A = \mathbb{R}^m$. (Equivalently, by Theorem 4 of 1.4, $A$ has a pivot position in every row: [[§4 The Matrix Equation Ax = b|§4]].)
+> $A\mathbf{x} = \mathbf{b}$ has a solution exactly when $\mathbf{b}$ is a linear combination of the columns of $A$, that is, when $\mathbf{b} \in \operatorname{Col} A$. So "a solution for each $\mathbf{b}$" means "every $\mathbf{b}$ is in $\operatorname{Col} A$", that is, $\operatorname{Col} A = \mathbb{R}^m$. (Equivalently, $A$ has a pivot position in every row: [[§4 The Matrix Equation Ax = b#^thm-4-3|Theorem §4.3]], Theorem 4 of 1.4.)
 
 ^pf-24-4
 
-*Uses:* [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|Def. §24.2]], [[§4 The Matrix Equation Ax = b|§4]] (Theorem 4 of 1.4)
+*Uses:* [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|Def. §24.2]], [[§4 The Matrix Equation Ax = b#^thm-4-3|§4.3]]
 
 > [!example] Example §24.3: A Subspace as a Column Space
 > Find a matrix $A$ such that $W = \operatorname{Col} A$, where $W = \{(6a - b,\ a + b,\ -7a) : a, b \in \mathbb{R}\}$.
@@ -201,9 +201,10 @@ The course checklist lists the row space with $\operatorname{Nul} A$ and $\opera
 > \operatorname{Row} A = \operatorname{Col} A^T ,
 > $$
 >
-> and $\operatorname{Row} A$ is a subspace of $\mathbb{R}^n$ (Theorem §24.3 for $A^T$). For example, the rows of $A = \begin{bmatrix} 1 & -3 & -2 \\ -5 & 9 & 1 \end{bmatrix}$ span the subspace $\operatorname{Row} A = \operatorname{Span}\{(1, -3, -2), (-5, 9, 1)\}$ of $\mathbb{R}^3$. Row operations do not change the row space, and the nonzero rows of an echelon form of $A$ form a basis of $\operatorname{Row} A$ ([[§28 Rank|§28]], Theorem 13 of 4.6; used in [[§25 Linearly Independent Sets; Bases|§25]]).
+> and $\operatorname{Row} A$ is a subspace of $\mathbb{R}^n$ (Theorem §24.3 for $A^T$). For example, the rows of $A = \begin{bmatrix} 1 & -3 & -2 \\ -5 & 9 & 1 \end{bmatrix}$ span the subspace $\operatorname{Row} A = \operatorname{Span}\{(1, -3, -2), (-5, 9, 1)\}$ of $\mathbb{R}^3$. Row operations do not change the row space, and the nonzero rows of an echelon form of $A$ form a basis of $\operatorname{Row} A$ ([[§28 Rank#^thm-28-1|Theorem §28.1]], Theorem 13 of 4.6; used in [[§25 Linearly Independent Sets; Bases#^rem-25-2|Remark §25.2]]). Row operations change the linear dependence relations among the rows, though, so an echelon form does not tell which rows *of $A$* to keep.
 >
-> *Lay: 4.6 (text)*
+> *Lay: 4.6, Definition (text)*
+> *Source: 235 lecture L16*
 
 ^def-24-3
 
@@ -244,7 +245,7 @@ The course checklist lists the row space with $\operatorname{Nul} A$ and $\opera
 
 ^ex-24-4
 
-When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} A$ live in different "universes". When $A$ is square they share the zero vector, and in special cases some nonzero vectors belong to both. A surprising connection between them appears in [[§28 Rank|§28]] (the Rank Theorem).
+When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} A$ live in different "universes". When $A$ is square they share the zero vector, and in special cases some nonzero vectors belong to both. A surprising connection between them appears in [[§28 Rank#^thm-28-3|Theorem §28.3]] (the Rank Theorem).
 
 > [!remark] Remark: Contrast Between Nul A and Col A for an m × n Matrix A
 > | | $\operatorname{Nul} A$ | $\operatorname{Col} A$ |
@@ -258,7 +259,7 @@ When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} 
 > | 7 | $= \{\mathbf{0}\}$ iff $A\mathbf{x} = \mathbf{0}$ has only the trivial solution | $= \mathbb{R}^m$ iff $A\mathbf{x} = \mathbf{b}$ has a solution for every $\mathbf{b}$ |
 > | 8 | $= \{\mathbf{0}\}$ iff $\mathbf{x} \mapsto A\mathbf{x}$ is one-to-one | $= \mathbb{R}^m$ iff $\mathbf{x} \mapsto A\mathbf{x}$ maps $\mathbb{R}^n$ onto $\mathbb{R}^m$ |
 >
-> Item 8 restates Theorems 11 and 12(a) of 1.9 ([[§9 The Matrix of a Linear Transformation|§9]]).
+> Item 8 restates Theorems 11 and 12(a) of 1.9 ([[§9 The Matrix of a Linear Transformation#^thm-9-2|Theorem §9.2]], [[§9 The Matrix of a Linear Transformation#^thm-9-3|Theorem §9.3]]).
 
 ^rem-24-2
 
@@ -271,7 +272,7 @@ When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} 
 >
 > (ii) $T(c\mathbf{u}) = cT(\mathbf{u})$ for all $\mathbf{u}$ in $V$ and all scalars $c$.
 >
-> This generalizes the definition for $V = \mathbb{R}^n$, $W = \mathbb{R}^m$ in [[§8 Introduction to Linear Transformations|§8]] (1.8).
+> This generalizes the definition for $V = \mathbb{R}^n$, $W = \mathbb{R}^m$ in [[§8 Introduction to Linear Transformations#^def-8-3|Definition §8.3]] (1.8).
 >
 > *Lay: 4.2, Definition*
 
@@ -303,7 +304,7 @@ When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} 
 *Uses:* [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4|Def. §24.4]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5|Def. §24.5]], [[§23 Vector Spaces and Subspaces#^def-23-2|Def. §23.2]], [[§23 Vector Spaces and Subspaces#^prop-23-2|§23.2]]
 
 > [!remark]- Connections
-> - Rigorous treatment: linear maps [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]; null space and range are subspaces, [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]], [[§8 Null Spaces and Ranges#^ladr-3-18|LADR 3.18]]; injective iff null space $= \{0\}$, [[§8 Null Spaces and Ranges#^ladr-3-15|LADR 3.15]] (item 8 of the table). Their dimensions add up to $\dim V$: the [[§8 Null Spaces and Ranges#^ladr-3-21|fundamental theorem of linear maps (LADR 3.21)]], whose matrix form is the Rank Theorem of [[§28 Rank|§28]].
+> - Rigorous treatment: linear maps [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]; null space and range are subspaces, [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]], [[§8 Null Spaces and Ranges#^ladr-3-18|LADR 3.18]]; injective iff null space $= \{0\}$, [[§8 Null Spaces and Ranges#^ladr-3-15|LADR 3.15]] (item 8 of the table). Their dimensions add up to $\dim V$: the [[§8 Null Spaces and Ranges#^ladr-3-21|fundamental theorem of linear maps (LADR 3.21)]], whose matrix form is the Rank Theorem, [[§28 Rank#^thm-28-3|Theorem §28.3]].
 > - One-to-one and onto as properties of functions: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]].
 
 In applications a subspace usually arises as the kernel or the range of a suitable linear transformation. For instance, the solutions of a homogeneous linear differential equation form the kernel of a linear transformation built from derivatives.

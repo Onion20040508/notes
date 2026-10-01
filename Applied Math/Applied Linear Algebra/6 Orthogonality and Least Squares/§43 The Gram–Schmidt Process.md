@@ -116,7 +116,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 ^pf-43-1
 
-*Uses:* [[§42 Orthogonal Projections#^thm-42-1|§42.1]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]], [[§27 The Dimension of a Vector Space|§27]] (Theorem 12, the Basis Theorem)
+*Uses:* [[§42 Orthogonal Projections#^thm-42-1|§42.1]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]] (the Basis Theorem)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§20 Orthonormal Bases#^ladr-6-32|LADR 6.32]] (Gram–Schmidt for a linearly independent list in any inner product space; Axler normalizes at every step, $e_k = f_k / \|f_k\|$, and proves the same span property (1)).
@@ -134,7 +134,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 ^pf-43-2
 
-*Uses:* [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]], [[§27 The Dimension of a Vector Space|§27]] (Theorem 11), [[§41 Orthogonal Sets#^def-41-4|Def. §41.4]]
+*Uses:* [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]], [[§27 The Dimension of a Vector Space#^thm-27-3|§27.3]] (a subspace of a finite-dimensional space has a basis), [[§41 Orthogonal Sets#^def-41-4|Def. §41.4]]
 
 > [!remark] Remark: Method — Gram–Schmidt by Hand
 > Given a basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ of $W$:
@@ -184,7 +184,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 ^pf-43-3
 
-*Uses:* [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]], [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8, the Invertible Matrix Theorem), [[§20 Introduction to Determinants|§20]] (Theorem 2: determinant of a triangular matrix), [[§21 Properties of Determinants|§21]] (Theorem 4: invertible iff $\det \ne 0$)
+*Uses:* [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem), [[§20 Introduction to Determinants#^thm-20-2|§20.2]] (determinant of a triangular matrix), [[§21 Properties of Determinants#^thm-21-3|§21.3]] (invertible iff $\det \ne 0$)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|LADR 7.58]], for square $A$ (where $Q$ is unitary), with the same Gram–Schmidt construction and a proof that $Q$ and $R$ are *unique*.
@@ -229,6 +229,6 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 > [!remark]- Remark: Numerical Notes
 > 1. On a computer, roundoff error builds up as the $\mathbf{u}_k$ are computed one by one: for $j$ and $k$ large but unequal, $\mathbf{u}_j^T\mathbf{u}_k$ may not be close enough to $0$. Rearranging the order of the calculations ("modified Gram–Schmidt") reduces this loss of orthogonality substantially, but a different computer QR factorization is usually preferred because it yields a more accurate orthonormal basis, even though it needs about twice as much arithmetic.
-> 2. That method left-multiplies $A$ by a sequence of orthogonal matrices until $A$ becomes upper triangular, in analogy with the left multiplication by elementary matrices that produces an LU factorization ([[§15 Matrix Factorizations|§15]]).
+> 2. That method left-multiplies $A$ by a sequence of orthogonal matrices until $A$ becomes upper triangular, in analogy with the left multiplication by elementary matrices that produces an LU factorization ([[§15 Matrix Factorizations#^def-15-1|Definition §15.1]]).
 
 ^rem-43-3

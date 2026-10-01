@@ -33,7 +33,7 @@ Until Example §37.4 we assume that $A$ is diagonalizable, with $n$ linearly ind
 ^thm-37-1
 
 > [!proof]+ Proof
-> The weights in (1) exist and are unique because the $\mathbf{v}_i$ form a basis ([[§26 Coordinate Systems|§26]], the Unique Representation Theorem). Since the $\mathbf{v}_i$ are eigenvectors,
+> The weights in (1) exist and are unique because the $\mathbf{v}_i$ form a basis ([[§26 Coordinate Systems#^thm-26-1|Theorem §26.1]], the Unique Representation Theorem). Since the $\mathbf{v}_i$ are eigenvectors,
 >
 > $$
 > \mathbf{x}_1 = A\mathbf{x}_0 = c_1A\mathbf{v}_1 + \cdots + c_nA\mathbf{v}_n = c_1\lambda_1\mathbf{v}_1 + \cdots + c_n\lambda_n\mathbf{v}_n ,
@@ -43,7 +43,7 @@ Until Example §37.4 we assume that $A$ is diagonalizable, with $n$ linearly ind
 
 ^pf-37-1
 
-*Uses:* [[§32 Eigenvectors and Eigenvalues#^thm-32-5|§32.5]], [[§26 Coordinate Systems|§26]] (Theorem 7, the Unique Representation Theorem)
+*Uses:* [[§32 Eigenvectors and Eigenvalues#^thm-32-5|§32.5]], [[§26 Coordinate Systems#^thm-26-1|§26.1]] (the Unique Representation Theorem)
 
 ## A Predator–Prey System
 
@@ -80,13 +80,19 @@ Until Example §37.4 we assume that $A$ is diagonalizable, with $n$ linearly ind
 ^ex-37-1
 
 > [!theorem] Proposition §37.2: The Dominant Eigenvalue Determines the Long-Term Behavior
-> Let $A$ be diagonalizable as above, with $|\lambda_1| \ge 1$ and $|\lambda_1| > |\lambda_j|$ for $j = 2, \ldots, n$, and let $\mathbf{x}_0$ be given by (1) with $c_1 \ne 0$. Then
+> Let $A$ be diagonalizable as above, with $|\lambda_1| > |\lambda_j|$ for $j = 2, \ldots, n$, and let $\mathbf{x}_0$ be given by (1) with $c_1 \ne 0$. Then, as $k \to \infty$,
 >
 > $$
-> \frac{1}{\lambda_1^k}\,\mathbf{x}_k \to c_1\mathbf{v}_1 \qquad (k \to \infty),
+> \frac{1}{\lambda_1^k}\,\mathbf{x}_k \to c_1\mathbf{v}_1 \qquad\text{and}\qquad \frac{1}{\lambda_1^k}\big(\mathbf{x}_{k+1} - \lambda_1\mathbf{x}_k\big) \to \mathbf{0} .
 > $$
 >
-> which is the precise meaning of the approximations
+> Under Lay's hypotheses, $|\lambda_1| \ge 1$ and $|\lambda_j| < 1$ for $j = 2, \ldots, n$, even the errors themselves tend to zero:
+>
+> $$
+> \mathbf{x}_k - c_1(\lambda_1)^k\mathbf{v}_1 \to \mathbf{0} \qquad\text{and}\qquad \mathbf{x}_{k+1} - \lambda_1\mathbf{x}_k \to \mathbf{0} .
+> $$
+>
+> These limits are the precise meaning of the approximations
 >
 > $$
 > \mathbf{x}_{k+1} \approx \lambda_1\mathbf{x}_k \qquad (6) \qquad\qquad \text{and} \qquad\qquad \mathbf{x}_k \approx c_1(\lambda_1)^k\mathbf{v}_1 \qquad (7)
@@ -105,13 +111,21 @@ Until Example §37.4 we assume that $A$ is diagonalizable, with $n$ linearly ind
 > \frac{1}{\lambda_1^k}\,\mathbf{x}_k = c_1\mathbf{v}_1 + c_2\Big(\frac{\lambda_2}{\lambda_1}\Big)^k\mathbf{v}_2 + \cdots + c_n\Big(\frac{\lambda_n}{\lambda_1}\Big)^k\mathbf{v}_n .
 > $$
 >
-> Each ratio satisfies $|\lambda_j/\lambda_1| < 1$, so $(\lambda_j/\lambda_1)^k \to 0$, and the right side tends to $c_1\mathbf{v}_1$. In the same way $\lambda_1^{-k}\mathbf{x}_{k+1} = \lambda_1 \cdot \lambda_1^{-(k+1)}\mathbf{x}_{k+1} \to \lambda_1c_1\mathbf{v}_1$, so $\lambda_1^{-k}(\mathbf{x}_{k+1} - \lambda_1\mathbf{x}_k) \to \lambda_1c_1\mathbf{v}_1 - \lambda_1c_1\mathbf{v}_1 = \mathbf{0}$: the error in (6) is small compared with the size $|\lambda_1|^k$ of $\mathbf{x}_k$. (Lay states (6) and (7) as approximations; this is what they mean. The hypothesis $|\lambda_1| \ge 1$ only matters for the interpretation as growth.)
+> Each ratio satisfies $|\lambda_j/\lambda_1| < 1$, so $(\lambda_j/\lambda_1)^k \to 0$, and the right side tends to $c_1\mathbf{v}_1$. In the same way $\lambda_1^{-k}\mathbf{x}_{k+1} = \lambda_1 \cdot \lambda_1^{-(k+1)}\mathbf{x}_{k+1} \to \lambda_1c_1\mathbf{v}_1$, so $\lambda_1^{-k}(\mathbf{x}_{k+1} - \lambda_1\mathbf{x}_k) \to \lambda_1c_1\mathbf{v}_1 - \lambda_1c_1\mathbf{v}_1 = \mathbf{0}$: the error in (6) is small compared with the size $|\lambda_1|^k$ of $\mathbf{x}_k$.
+>
+> Under Lay's hypotheses, subtract the first term of (2) instead of dividing:
+>
+> $$
+> \mathbf{x}_k - c_1\lambda_1^k\mathbf{v}_1 = \sum_{j=2}^n c_j\lambda_j^k\mathbf{v}_j \to \mathbf{0}, \qquad \mathbf{x}_{k+1} - \lambda_1\mathbf{x}_k = \sum_{j=2}^n c_j(\lambda_j - \lambda_1)\lambda_j^k\mathbf{v}_j \to \mathbf{0},
+> $$
+>
+> because $|\lambda_j| < 1$ gives $\lambda_j^k \to 0$. (Lay states (6) and (7) as approximations that "can be made as close as desired"; these limits are what that means. The hypothesis $|\lambda_1| \ge 1$ only matters for the interpretation as growth.)
 
 ^pf-37-2
 
 *Uses:* [[§37 Discrete Dynamical Systems#^thm-37-1|§37.1]]
 
-The case $\lambda_1 = 1$ is [[§33 The Characteristic Equation#^ex-33-4|Example §33.4]]: there $\mathbf{x}_k$ converges to the steady-state vector $c_1\mathbf{v}_1$. The same estimate, with the scaling done numerically, is the power method of [[§39 Iterative Estimates for Eigenvalues|§39]].
+The case $\lambda_1 = 1$ is [[§33 The Characteristic Equation#^ex-33-4|Example §33.4]]: there $\mathbf{x}_k$ converges to the steady-state vector $c_1\mathbf{v}_1$. The same estimate, with the scaling done numerically, is the power method of [[§39 Iterative Estimates for Eigenvalues#^thm-39-1|Theorem §39.1]].
 
 ## Graphical Description of Solutions
 
@@ -206,7 +220,7 @@ The diagonal case is the general one in disguise. Let $A = PDP^{-1}$ with $P = [
 
 ^pf-37-4
 
-*Uses:* [[§34 Diagonalization#^thm-34-1|§34.1]], [[§26 Coordinate Systems|§26]] (the change-of-coordinates matrix $P_{\mathcal{B}}$)
+*Uses:* [[§34 Diagonalization#^thm-34-1|§34.1]], [[§26 Coordinate Systems#^prop-26-2|§26.2]] (the change-of-coordinates equation)
 
 The evolution of $y_1(k)$, for example, is unaffected by what happens to $y_2(k), \ldots, y_n(k)$. We can decouple $\mathbf{x}_{k+1} = A\mathbf{x}_k$ by computing in the eigenvector coordinate system; when $n = 2$, this amounts to using graph paper with axes in the directions of the two eigenvectors.
 

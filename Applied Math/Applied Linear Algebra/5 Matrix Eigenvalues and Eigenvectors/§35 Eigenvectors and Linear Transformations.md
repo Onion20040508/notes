@@ -15,7 +15,7 @@ This section reads the factorization $A = PDP^{-1}$ as a statement about linear 
 
 ## The Matrix of a Linear Transformation
 
-Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space, and $T : V \to W$ a linear transformation. Choose (ordered) bases $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for $V$ and $\mathcal{C}$ for $W$. For $\mathbf{x}$ in $V$, the coordinate vector $[\mathbf{x}]_{\mathcal{B}}$ is in $\mathbb{R}^n$ and the coordinate vector $[T(\mathbf{x})]_{\mathcal{C}}$ of its image is in $\mathbb{R}^m$ ([[§26 Coordinate Systems|§26]]).
+Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space, and $T : V \to W$ a linear transformation. Choose (ordered) bases $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for $V$ and $\mathcal{C}$ for $W$. For $\mathbf{x}$ in $V$, the coordinate vector $[\mathbf{x}]_{\mathcal{B}}$ is in $\mathbb{R}^n$ and the coordinate vector $[T(\mathbf{x})]_{\mathcal{C}}$ of its image is in $\mathbb{R}^m$ ([[§26 Coordinate Systems#^def-26-1|Definition §26.1]]).
 
 > [!theorem] Theorem §35.1: The Matrix for T Relative to B and C
 > With $V$, $W$, $T$, $\mathcal{B}$, $\mathcal{C}$ as above, let
@@ -43,7 +43,7 @@ Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space,
 > T(\mathbf{x}) = T(r_1\mathbf{b}_1 + \cdots + r_n\mathbf{b}_n) = r_1T(\mathbf{b}_1) + \cdots + r_nT(\mathbf{b}_n) . \qquad (1)
 > $$
 >
-> The coordinate mapping $\mathbf{w} \mapsto [\mathbf{w}]_{\mathcal{C}}$ from $W$ to $\mathbb{R}^m$ is linear ([[§26 Coordinate Systems|§26]], Theorem 8), so (1) gives
+> The coordinate mapping $\mathbf{w} \mapsto [\mathbf{w}]_{\mathcal{C}}$ from $W$ to $\mathbb{R}^m$ is linear ([[§26 Coordinate Systems#^thm-26-3|Theorem §26.3]]), so (1) gives
 >
 > $$
 > [T(\mathbf{x})]_{\mathcal{C}} = r_1[T(\mathbf{b}_1)]_{\mathcal{C}} + \cdots + r_n[T(\mathbf{b}_n)]_{\mathcal{C}} . \qquad (2)
@@ -53,7 +53,7 @@ Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space,
 
 ^pf-35-1
 
-*Uses:* [[§26 Coordinate Systems|§26]] (Theorem 8: the coordinate mapping is linear), [[§4 The Matrix Equation Ax = b|§4]] (definition of $A\mathbf{x}$ as a combination of columns)
+*Uses:* [[§26 Coordinate Systems#^thm-26-3|§26.3]] (the coordinate mapping is linear), [[§4 The Matrix Equation Ax = b#^def-4-1|Def. §4.1]] ($A\mathbf{x}$ as a combination of columns)
 
 > [!definition] Definition §35.1: Matrix for T Relative to Bases
 > The matrix $M$ of Theorem §35.1 is called the **matrix for $T$ relative to the bases $\mathcal{B}$ and $\mathcal{C}$**, a matrix representation of $T$. Its $j$th column is the $\mathcal{C}$-coordinate vector of the image of the $j$th basis vector $\mathbf{b}_j$.
@@ -129,7 +129,7 @@ In applied problems a linear transformation of $\mathbb{R}^n$ usually appears fi
 ^thm-35-2
 
 > [!proof]+ Proof
-> Denote the columns of $P$ by $\mathbf{b}_1, \ldots, \mathbf{b}_n$, so that $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ and $P = [\,\mathbf{b}_1 \; \cdots \; \mathbf{b}_n\,]$. Then $P$ is the change-of-coordinates matrix $P_{\mathcal{B}}$ of [[§26 Coordinate Systems|§26]]:
+> Denote the columns of $P$ by $\mathbf{b}_1, \ldots, \mathbf{b}_n$, so that $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ and $P = [\,\mathbf{b}_1 \; \cdots \; \mathbf{b}_n\,]$. Then $P$ is the change-of-coordinates matrix $P_{\mathcal{B}}$ of [[§26 Coordinate Systems#^def-26-2|Definition §26.2]], and by [[§26 Coordinate Systems#^prop-26-2|Proposition §26.2]]
 >
 > $$
 > P[\mathbf{x}]_{\mathcal{B}} = \mathbf{x} \qquad \text{and} \qquad [\mathbf{x}]_{\mathcal{B}} = P^{-1}\mathbf{x} .
@@ -151,7 +151,7 @@ In applied problems a linear transformation of $\mathbb{R}^n$ usually appears fi
 
 ^pf-35-2
 
-*Uses:* [[§35 Eigenvectors and Linear Transformations#^def-35-1|Def. §35.1]], [[§26 Coordinate Systems|§26]] (the change-of-coordinates matrix $P_{\mathcal{B}}$), [[§11 Matrix Operations|§11]] (definition of $AB$ column by column)
+*Uses:* [[§35 Eigenvectors and Linear Transformations#^def-35-1|Def. §35.1]], [[§26 Coordinate Systems#^prop-26-2|§26.2]] (the change-of-coordinates equation), [[§11 Matrix Operations#^def-11-3|Def. §11.3]] (the product $AB$ column by column)
 
 For example, $A = \begin{bmatrix} 7 & 2 \\ -4 & 1 \end{bmatrix} = PDP^{-1}$ with $P = \begin{bmatrix} 1 & 1 \\ -1 & -2 \end{bmatrix}$, $D = \begin{bmatrix} 5 & 0 \\ 0 & 3 \end{bmatrix}$ ([[§34 Diagonalization#^ex-34-1|Example §34.1]]). The columns $\mathbf{b}_1 = (1, -1)$, $\mathbf{b}_2 = (1, -2)$ of $P$ are eigenvectors of $A$, and by Theorem §35.2, $D$ is the $\mathcal{B}$-matrix of $T(\mathbf{x}) = A\mathbf{x}$ for $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$. The mappings $\mathbf{x} \mapsto A\mathbf{x}$ and $\mathbf{u} \mapsto D\mathbf{u}$ describe the same linear transformation, relative to different bases (Lay, Example 5.4.3).
 
@@ -222,11 +222,11 @@ Every square matrix is similar to a matrix in Jordan form, using a basis of eige
 > A\mathbf{b}_1 = \lambda\mathbf{b}_1, \qquad A\mathbf{b}_2 = \lambda\mathbf{b}_2 + N\mathbf{b}_2 = \mathbf{b}_1 + \lambda\mathbf{b}_2 .
 > $$
 >
-> The vectors $\mathbf{b}_1, \mathbf{b}_2$ are linearly independent: $\mathbf{b}_1 \ne \mathbf{0}$, and $\mathbf{b}_2$ is not a multiple of $\mathbf{b}_1$ because $N\mathbf{b}_2 = \mathbf{b}_1 \ne \mathbf{0}$ while $N\mathbf{b}_1 = \mathbf{0}$. With $P = [\,\mathbf{b}_1 \;\; \mathbf{b}_2\,]$, the two equations say $AP = P\begin{bmatrix} \lambda & 1 \\ 0 & \lambda \end{bmatrix}$, which is case (b).
+> The vectors $\mathbf{b}_1, \mathbf{b}_2$ are linearly independent: $\mathbf{b}_1 \ne \mathbf{0}$, and $\mathbf{b}_2$ is not a multiple of $\mathbf{b}_1$ because $N\mathbf{b}_2 = \mathbf{b}_1 \ne \mathbf{0}$ while $N\mathbf{b}_1 = \mathbf{0}$. With $P = [\,\mathbf{b}_1 \;\; \mathbf{b}_2\,]$, which is invertible because its columns are linearly independent (Invertible Matrix Theorem), the two equations say $AP = P\begin{bmatrix} \lambda & 1 \\ 0 & \lambda \end{bmatrix}$; multiplying on the left by $P^{-1}$ gives case (b).
 
 ^pf-35-3
 
-*Uses:* [[§34 Diagonalization#^thm-34-2|§34.2]], [[§28 Rank#^thm-28-3|§28.3]] (the Rank Theorem), [[§35 Eigenvectors and Linear Transformations#^thm-35-2|§35.2]]
+*Uses:* [[§34 Diagonalization#^thm-34-2|§34.2]], [[§28 Rank#^thm-28-3|§28.3]] (the Rank Theorem), [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem)
 
 In Example §35.3, $N = A + 2I$ and $N\mathbf{b}_2 = (12 - 9, 8 - 6) = (3, 2) = \mathbf{b}_1$: Lay's basis is exactly the one built in the proof.
 

@@ -43,7 +43,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 ^pf-41-1
 
-*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|§40.1]], [[§7 Linear Independence|§7]] (linear independence)
+*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|§40.1]], [[§7 Linear Independence#^def-7-1|Def. §7.1]] (linear independence), [[§18 Subspaces of ℝⁿ#^def-18-4|Def. §18.4]] (basis)
 
 > [!definition] Definition §41.2: Orthogonal Basis
 > An **orthogonal basis** for a subspace $W$ of $\mathbb{R}^n$ is a basis for $W$ that is also an orthogonal set.
@@ -243,7 +243,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 ^pf-41-4
 
-*Uses:* [[§11 Matrix Operations|§11]] (row–column rule for products), [[§41 Orthogonal Sets#^def-41-4|Def. §41.4]]
+*Uses:* [[§11 Matrix Operations#^prop-11-4|§11.4]] (row–column rule for products), [[§41 Orthogonal Sets#^def-41-4|Def. §41.4]]
 
 > [!theorem] Theorem §41.5: Matrices with Orthonormal Columns Preserve Lengths and Angles
 > Let $U$ be an $m \times n$ matrix with orthonormal columns, and let $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$. Then
@@ -271,7 +271,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 ^pf-41-5
 
-*Uses:* [[§41 Orthogonal Sets#^thm-41-4|§41.4]], [[§11 Matrix Operations|§11]] (Theorem 3: $(AB)^T = B^TA^T$)
+*Uses:* [[§41 Orthogonal Sets#^thm-41-4|§41.4]], [[§11 Matrix Operations#^thm-11-7|§11.7]] ($(AB)^T = B^TA^T$)
 
 > [!example] Example §41.3: A Matrix with Orthonormal Columns Preserves Length
 > Let
@@ -323,7 +323,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 > [!proof]+ Proof
 > (1) ⇒ (2): $U^TU = U^{-1}U = I$, so the columns are orthonormal by Theorem §41.4.
 >
-> (2) ⇒ (1): by Theorem §41.4, $U^TU = I$. For square matrices a one-sided inverse is an inverse (Invertible Matrix Theorem), so $U$ is invertible with $U^{-1} = U^T$.
+> (2) ⇒ (1): by Theorem §41.4, $U^TU = I$. For square matrices a one-sided inverse is an inverse ([[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]], from the Invertible Matrix Theorem), so $U$ is invertible with $U^{-1} = U^T$.
 >
 > (1) ⇔ (3): $U$ is orthogonal if and only if $U^T$ is: if $U^{-1} = U^T$, then $(U^T)^{-1} = (U^{-1})^T = (U^T)^T$, and conversely by the same computation for $U^T$. The rows of $U$ are the columns of $U^T$, so (3) for $U$ is (2) for $U^T$, which is equivalent to (1) for $U^T$, hence to (1) for $U$.
 >
@@ -331,10 +331,10 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 ^pf-41-6
 
-*Uses:* [[§41 Orthogonal Sets#^thm-41-4|§41.4]], [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8, the Invertible Matrix Theorem), [[§12 The Inverse of a Matrix|§12]] (Theorem 6), [[§21 Properties of Determinants|§21]] (Theorems 5 and 6)
+*Uses:* [[§41 Orthogonal Sets#^thm-41-4|§41.4]], [[§13 Characterizations of Invertible Matrices#^cor-13-2|§13.2]] (a one-sided inverse is an inverse), [[§12 The Inverse of a Matrix#^thm-12-4|§12.4]] ($(A^T)^{-1} = (A^{-1})^T$), [[§21 Properties of Determinants#^thm-21-6|§21.6]] ($\det A^T = \det A$), [[§21 Properties of Determinants#^thm-21-9|§21.9]] (multiplicative property)
 
 > [!remark]- Connections
-> - Rigorous treatment: real orthogonal matrices are the real unitary matrices, [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]] (unitary $\Leftrightarrow$ $Q^*Q = I$ $\Leftrightarrow$ orthonormal columns $\Leftrightarrow$ orthonormal rows $\Leftrightarrow$ norm-preserving); operator version [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]]. Orthogonal matrices return in [[§48★ Diagonalization of Symmetric Matrices|§48★]] (orthogonal diagonalization).
+> - Rigorous treatment: real orthogonal matrices are the real unitary matrices, [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]] (unitary $\Leftrightarrow$ $Q^*Q = I$ $\Leftrightarrow$ orthonormal columns $\Leftrightarrow$ orthonormal rows $\Leftrightarrow$ norm-preserving); operator version [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]]. Orthogonal matrices return in [[§48★ Diagonalization of Symmetric Matrices#^def-48-2|Definition §48.2]] (orthogonal diagonalization).
 > - The orthogonal matrices form the group $O(n) = \{A \in GL_n(\mathbb{R}) : A^TA = I\}$, [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]], and $\det : O(n) \to \{\pm 1\}$ is a homomorphism onto $\{\pm1\}$ with kernel $SO(n)$.
 
 > [!example] Example §41.4: An Orthogonal Matrix

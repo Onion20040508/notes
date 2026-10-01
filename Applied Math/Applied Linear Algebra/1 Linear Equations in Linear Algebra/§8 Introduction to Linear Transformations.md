@@ -162,7 +162,7 @@ By [[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5]], $\mathbf{x} \mapst
 
 *Uses:* [[§4 The Matrix Equation Ax = b#^thm-4-5|§4.5]]
 
-Linear transformations that are not matrix transformations (on spaces of polynomials or functions) appear in Chapters 4 and 5. Between $\mathbb{R}^n$ and $\mathbb{R}^m$, every linear transformation is a matrix transformation ([[§9 The Matrix of a Linear Transformation|§9]]).
+Linear transformations that are not matrix transformations (on spaces of polynomials or functions) appear in Chapters 4 and 5. Between $\mathbb{R}^n$ and $\mathbb{R}^m$, every linear transformation is a matrix transformation ([[§9 The Matrix of a Linear Transformation#^thm-9-1|Theorem §9.1]]).
 
 > [!theorem] Proposition §8.3: Zero, Combinations, Superposition
 > If $T$ is a linear transformation, then
@@ -225,14 +225,14 @@ In engineering and physics, (5) is the **superposition principle**. Think of $\m
 >
 > **(c)** $T: \mathbb{R}^2 \to \mathbb{R}$, $T(x_1, x_2) = 2x_1 + x_2 - 2$ is not linear, because $T(0, 0) = -2 \ne 0$, contradicting (3).
 >
-> **(d)** The polar-coordinate map $T(r, \theta) = (r\sin\theta,\ r\cos\theta)$ is not linear: it sends the straight grid lines $\theta = $ const and $r = $ const of the $(r, \theta)$-plane to rays and circles. Property (2) fails, for instance: $T\big(2(1, \tfrac{\pi}{2})\big) = T(2, \pi) = (0, -2)$, but $2T(1, \tfrac{\pi}{2}) = 2(1, 0) = (2, 0)$.
+> **(d)** The polar-coordinate map $T(r, \theta) = (r\sin\theta,\ r\cos\theta)$ is not linear: it sends the straight grid lines $\theta = $ const and $r = $ const of the $(r, \theta)$-plane to lines through the origin and to circles. Property (2) fails, for instance: $T\big(2(1, \tfrac{\pi}{2})\big) = T(2, \pi) = (0, -2)$, but $2T(1, \tfrac{\pi}{2}) = 2(1, 0) = (2, 0)$.
 >
 > *Source: 235 lectures Feb-18 and L5*
 
 ^ex-8-3
 
 > [!remark] Remark: Recognizing a Linear Transformation
-> In practice (lecture): $T: \mathbb{R}^n \to \mathbb{R}^m$, $T(\mathbf{x}) = \big(f_1(x_1, \ldots, x_n), \ldots, f_m(x_1, \ldots, x_n)\big)$, is linear if and only if each component $f_i$ is a linear function of the $x$'s with no constant term, $f_i = a_{i1}x_1 + \cdots + a_{in}x_n$ (so $f_i(0, \ldots, 0) = 0$). Then $T(\mathbf{x}) = A\mathbf{x}$ with $A = [a_{ij}]$. "If" is Proposition §8.2; "only if" follows from [[§9 The Matrix of a Linear Transformation|§9]] (Theorem 10): a linear $T$ is $\mathbf{x} \mapsto A\mathbf{x}$, and the $i$th entry of $A\mathbf{x}$ is such a linear expression ([[§4 The Matrix Equation Ax = b#^prop-4-4|row–vector rule]]).
+> In practice (lecture): $T: \mathbb{R}^n \to \mathbb{R}^m$, $T(\mathbf{x}) = \big(f_1(x_1, \ldots, x_n), \ldots, f_m(x_1, \ldots, x_n)\big)$, is linear if and only if each component $f_i$ is a linear function of the $x$'s with no constant term, $f_i = a_{i1}x_1 + \cdots + a_{in}x_n$ (so $f_i(0, \ldots, 0) = 0$). Then $T(\mathbf{x}) = A\mathbf{x}$ with $A = [a_{ij}]$. "If" is Proposition §8.2; "only if" follows from [[§9 The Matrix of a Linear Transformation#^thm-9-1|Theorem §9.1]]: a linear $T$ is $\mathbf{x} \mapsto A\mathbf{x}$, and the $i$th entry of $A\mathbf{x}$ is such a linear expression ([[§4 The Matrix Equation Ax = b#^prop-4-4|row–vector rule]]).
 >
 > *Source: 235 lectures Feb-18 and L5*
 
@@ -279,7 +279,7 @@ In engineering and physics, (5) is the **superposition principle**. Think of $\m
 > T(\mathbf{p} + t\mathbf{v}) = T(\mathbf{p}) + tT(\mathbf{v}), \qquad t \in \mathbb{R},
 > $$
 >
-> which is the line through $T(\mathbf{p})$ in the direction $T(\mathbf{v})$ if $T(\mathbf{v}) \ne \mathbf{0}$, and the single point $T(\mathbf{p})$ if $T(\mathbf{v}) = \mathbf{0}$. Restricting to $0 \le t \le 1$: the segment from $\mathbf{p}$ to $\mathbf{p} + \mathbf{v}$ goes to the segment from $T(\mathbf{p})$ to $T(\mathbf{p}) + T(\mathbf{v})$ (or a point). In particular the segment from $\mathbf{0}$ to $\mathbf{u}$ goes to the segment from $\mathbf{0}$ to $T(\mathbf{u})$ (Lay's Practice Problem 3, Exercise 27). Parallel lines $\mathbf{p} + t\mathbf{v}$, $\mathbf{q} + t\mathbf{v}$ go to parallel lines (same direction $T(\mathbf{v})$), which is why a linear map turns a square grid into a grid of parallelograms (Figure above), while a nonlinear map such as the polar map of Example §8.3(d) bends it.
+> which is the line through $T(\mathbf{p})$ in the direction $T(\mathbf{v})$ if $T(\mathbf{v}) \ne \mathbf{0}$, and the single point $T(\mathbf{p})$ if $T(\mathbf{v}) = \mathbf{0}$. Restricting to $0 \le t \le 1$: the segment from $\mathbf{p}$ to $\mathbf{p} + \mathbf{v}$ goes to the segment from $T(\mathbf{p})$ to $T(\mathbf{p}) + T(\mathbf{v})$ (or a point). In particular the segment from $\mathbf{0}$ to $\mathbf{u}$ goes to the segment from $\mathbf{0}$ to $T(\mathbf{u})$. (Lay leaves these facts to Exercises 25 and 27 and Practice Problem 3.) Parallel lines $\mathbf{p} + t\mathbf{v}$, $\mathbf{q} + t\mathbf{v}$ go to parallel lines (same direction $T(\mathbf{v})$), which is why a linear map turns a square grid into a grid of parallelograms (Figure above), while a nonlinear map such as the polar map of Example §8.3(d) bends it.
 >
 > The lecture states a converse: $T: \mathbb{R}^n \to \mathbb{R}^m$ is linear if and only if it maps every straight line to a straight line or a point and $T(\mathbf{0}) = \mathbf{0}$. *As stated, the converse needs an extra hypothesis: $T(x_1, x_2) = (x_1^3, 0)$ maps every line onto the $x_1$-axis or onto a point and fixes $\mathbf{0}$, but is not linear. It becomes true for bijections $T: \mathbb{R}^n \to \mathbb{R}^n$ with $n \ge 2$ (the fundamental theorem of affine geometry: such a map is $\mathbf{x} \mapsto A\mathbf{x} + \mathbf{b}$, and $T(\mathbf{0}) = \mathbf{0}$ forces $\mathbf{b} = \mathbf{0}$).*
 >
@@ -294,7 +294,7 @@ In engineering and physics, (5) is the **superposition principle**. Think of $\m
 > J = \frac{\partial f}{\partial x}\frac{\partial g}{\partial y} - \frac{\partial f}{\partial y}\frac{\partial g}{\partial x}
 > $$
 >
-> (the lecture writes it with the opposite sign, which does not matter here). If $T$ has a polynomial inverse, then $J$ is a nonzero constant (by the chain rule, the product of the Jacobians of $T$ and $T^{-1}$ is $1$, and a polynomial with polynomial reciprocal is constant). The **Jacobian conjecture** (Keller, 1939) asserts the converse: if $J$ is a nonzero constant, then $T$ is bijective with a polynomial inverse. It is open, even for two variables. For a *linear* $T(\mathbf{x}) = A\mathbf{x}$ it is easy: $J = \det A$ is constant, and $\det A \ne 0$ makes $T$ invertible ([[§22 Cramer’s Rule, Volume, and Linear Transformations|§22]]; [[§13 Characterizations of Invertible Matrices|§13]]). For general smooth maps, $J \ne 0$ gives only a local inverse, by the [[§13 The Inverse Function Theorem#^thm-13-2|inverse function theorem (452)]].
+> (the lecture writes it with the opposite sign, which does not matter here). If $T$ has a polynomial inverse, then $J$ is a nonzero constant (by the chain rule, the product of the Jacobians of $T$ and $T^{-1}$ is $1$, and a polynomial with polynomial reciprocal is constant). The **Jacobian conjecture** (Keller, 1939) asserts the converse: if $J$ is a nonzero constant, then $T$ is bijective with a polynomial inverse. It is open, even for two variables. For a *linear* $T(\mathbf{x}) = A\mathbf{x}$ it is easy: $J = \det A$ is constant, and $\det A \ne 0$ makes $T$ invertible ([[§21 Properties of Determinants#^thm-21-3|Theorem §21.3]], [[§13 Characterizations of Invertible Matrices#^thm-13-3|Theorem §13.3]]). For general smooth maps, $J \ne 0$ gives only a local inverse, by the [[§13 The Inverse Function Theorem#^thm-13-2|inverse function theorem (452)]].
 >
 > *Source: 235 lecture Feb-18*
 

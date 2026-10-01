@@ -76,7 +76,7 @@ A quadratic form is a homogeneous polynomial of degree two in $n$ variables, suc
 > \mathbf{x} = P\mathbf{y}, \qquad\text{or equivalently}\qquad \mathbf{y} = P^{-1}\mathbf{x}, \qquad (1)
 > $$
 >
-> where $P$ is an invertible matrix and $\mathbf{y}$ is a new variable vector in $\mathbb{R}^n$. Here $\mathbf{y}$ is the coordinate vector of $\mathbf{x}$ relative to the basis of $\mathbb{R}^n$ formed by the columns of $P$ ([[§26 Coordinate Systems|§26]]). It is an **orthogonal change of variable** when $P$ is orthogonal; then $\mathbf{y} = P^T \mathbf{x}$.
+> where $P$ is an invertible matrix and $\mathbf{y}$ is a new variable vector in $\mathbb{R}^n$. Here $\mathbf{y}$ is the coordinate vector of $\mathbf{x}$ relative to the basis of $\mathbb{R}^n$ formed by the columns of $P$ ([[§26 Coordinate Systems#^def-26-1|Definition §26.1]]). It is an **orthogonal change of variable** when $P$ is orthogonal; then $\mathbf{y} = P^T \mathbf{x}$.
 >
 > *Lay: 7.2, Equation (1)*
 
@@ -106,7 +106,7 @@ A quadratic form is a homogeneous polynomial of degree two in $n$ variables, suc
 
 ^pf-49-1
 
-*Uses:* [[§49★ Quadratic Forms#^def-49-1|Def. §49.1]], [[§11 Matrix Operations|§11]] (Theorem 3: transpose of a product)
+*Uses:* [[§49★ Quadratic Forms#^def-49-1|Def. §49.1]], [[§11 Matrix Operations#^thm-11-7|§11.7]] (transpose of a product)
 
 Since $A$ is symmetric, there is an *orthogonal* $P$ with $P^TAP = D$ diagonal ([[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|Theorem §48.2]]), and then (2) becomes $\mathbf{y}^T D \mathbf{y}$, a form without cross-product terms.
 
@@ -134,7 +134,7 @@ Since $A$ is symmetric, there is an *orthogonal* $P$ with $P^TAP = D$ diagonal (
 
 ^pf-49-2
 
-*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|§48.2]], [[§49★ Quadratic Forms#^prop-49-1|§49.1]], [[§41 Orthogonal Sets|§41]] (Theorem 6: $P^TP = I$)
+*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|§48.2]], [[§49★ Quadratic Forms#^prop-49-1|§49.1]], [[§41 Orthogonal Sets#^thm-41-4|§41.4]] ($P^TP = I$)
 
 > [!definition] Definition §49.3: Principal Axes
 > The columns of $P$ in the Principal Axes Theorem are called the **principal axes** of the quadratic form $\mathbf{x}^T A \mathbf{x}$. They are orthonormal eigenvectors of $A$, and the vector $\mathbf{y}$ is the coordinate vector of $\mathbf{x}$ relative to the orthonormal basis of $\mathbb{R}^n$ given by these principal axes.
@@ -219,7 +219,7 @@ Since $A$ is symmetric, there is an *orthogonal* $P$ with $P^TAP = D$ diagonal (
 > \lambda_1 y_1^2 + \lambda_2 y_2^2 = c ,
 > $$
 >
-> and $\lambda_1 \lambda_2 = \det D = \det A \ne 0$, so both eigenvalues are nonzero. Since $P$ is orthogonal, $\mathbf{y} \mapsto P\mathbf{y}$ preserves lengths and angles ([[§41 Orthogonal Sets|§41]], Theorem 7), so the set in the $\mathbf{x}$-plane is congruent to the set in the $\mathbf{y}$-plane, which has the axes along the coordinate axes. Now go through the cases.
+> and $\lambda_1 \lambda_2 = \det D = \det A \ne 0$ (since $\det A = \det P \det D \det P^T = (\det P)^2 \det D$ and $(\det P)^2 = \det(P^TP) = 1$), so both eigenvalues are nonzero. Since $P$ is orthogonal, $\mathbf{y} \mapsto P\mathbf{y}$ preserves lengths and angles ([[§41 Orthogonal Sets#^thm-41-5|Theorem §41.5]]), so the set in the $\mathbf{x}$-plane is congruent to the set in the $\mathbf{y}$-plane, which has the axes along the coordinate axes. Now go through the cases.
 > - $\lambda_1, \lambda_2$ of the same sign as $c \ne 0$: dividing by $c$ gives $y_1^2/a^2 + y_2^2/b^2 = 1$ with $a = \sqrt{c/\lambda_1}$, $b = \sqrt{c/\lambda_2}$, an ellipse (a circle if $\lambda_1 = \lambda_2$).
 > - $\lambda_1, \lambda_2$ of the same sign, opposite to $c \ne 0$: the left side has the opposite sign of $c$ for every $\mathbf{y} \ne \mathbf{0}$ and is $0$ at $\mathbf{0}$, so there are no points.
 > - $\lambda_1, \lambda_2$ of the same sign and $c = 0$: only $\mathbf{y} = \mathbf{0}$, a single point.
@@ -230,7 +230,7 @@ Since $A$ is symmetric, there is an *orthogonal* $P$ with $P^TAP = D$ diagonal (
 
 ^pf-49-3
 
-*Uses:* [[§49★ Quadratic Forms#^thm-49-2|§49.2]], [[§41 Orthogonal Sets|§41]] (Theorem 7: orthogonal matrices preserve lengths), [[§21 Properties of Determinants|§21]] (Theorem 6: $\det PDP^T = \det D$), [[§118 Graphs of Second-Degree Equations#^def-118-4|Calc Def. §118.4]] (ellipse and hyperbola in standard position)
+*Uses:* [[§49★ Quadratic Forms#^thm-49-2|§49.2]], [[§41 Orthogonal Sets#^thm-41-5|§41.5]] (orthogonal matrices preserve lengths), [[§21 Properties of Determinants#^thm-21-9|§21.9]], [[§21 Properties of Determinants#^thm-21-6|§21.6]] ($\det PDP^T = (\det P)^2 \det D = \det D$), [[§118 Graphs of Second-Degree Equations#^def-118-4|Calc Def. §118.4]] (ellipse and hyperbola in standard position)
 
 > [!example] Example §49.3: Principal Axes of an Ellipse and a Hyperbola
 > **(a)** The graph of $5x_1^2 - 4x_1x_2 + 5x_2^2 = 48$ is an ellipse. Find a change of variable that removes the cross-product term from the equation.

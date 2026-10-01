@@ -48,7 +48,7 @@ The columns of the $n \times n$ identity matrix $I_n$ are the **standard basis v
 *Uses:* [[§8 Introduction to Linear Transformations#^prop-8-3|§8.3]] (superposition), [[§4 The Matrix Equation Ax = b#^def-4-1|Def. §4.1]], [[§4 The Matrix Equation Ax = b#^def-4-4|Def. §4.4]]
 
 > [!remark]- Connections
-> - Rigorous treatment: a linear map is determined by its values on a basis, which may be prescribed freely, [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]; the standard matrix is Axler's $\mathcal{M}(T)$ ([[§9 Matrices#^ladr-3-31|LADR 3.31]]) for the standard bases. Axler allows any bases of any finite-dimensional $V$ and $W$, which Lay reaches in [[§35 Eigenvectors and Linear Transformations|§35]].
+> - Rigorous treatment: a linear map is determined by its values on a basis, which may be prescribed freely, [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]; the standard matrix is Axler's $\mathcal{M}(T)$ ([[§9 Matrices#^ladr-3-31|LADR 3.31]]) for the standard bases. Axler allows any bases of any finite-dimensional $V$ and $W$, which Lay reaches in [[§35 Eigenvectors and Linear Transformations#^def-35-1|Definition §35.1]].
 
 > [!definition] Definition §9.1: Standard Matrix
 > The matrix $A = [\,T(\mathbf{e}_1)\ \cdots\ T(\mathbf{e}_n)\,]$ of Theorem §9.1 is the **standard matrix for the linear transformation $T$**.
@@ -123,7 +123,7 @@ A linear transformation of the plane is determined by what it does to $\mathbf{e
 > | reflection through the line $x_2 = -x_1$ | $\begin{bmatrix} 0 & -1 \\ -1 & 0 \end{bmatrix}$ | vertical shear | $\begin{bmatrix} 1 & 0 \\ k & 1 \end{bmatrix}$ |
 > | reflection through the origin | $\begin{bmatrix} -1 & 0 \\ 0 & -1 \end{bmatrix}$ | projection onto the $x_1$-axis / $x_2$-axis | $\begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}$, $\begin{bmatrix} 0 & 0 \\ 0 & 1 \end{bmatrix}$ |
 >
-> Each is read off from the images of $\mathbf{e}_1$ and $\mathbf{e}_2$: for instance, the reflection through $x_2 = x_1$ swaps $\mathbf{e}_1$ and $\mathbf{e}_2$, and the horizontal shear fixes $\mathbf{e}_1$ and sends $\mathbf{e}_2$ to $(k, 1)$. Other transformations are built by applying one after another (a horizontal shear followed by a reflection in the $x_2$-axis, say); such a composition is again linear ([[§11 Matrix Operations|§11]]).
+> Each is read off from the images of $\mathbf{e}_1$ and $\mathbf{e}_2$: for instance, the reflection through $x_2 = x_1$ swaps $\mathbf{e}_1$ and $\mathbf{e}_2$, and the horizontal shear fixes $\mathbf{e}_1$ and sends $\mathbf{e}_2$ to $(k, 1)$. Other transformations are built by applying one after another (a horizontal shear followed by a reflection in the $x_2$-axis, say); such a composition is again linear ([[§11 Matrix Operations#^thm-11-2|Theorem §11.2]]).
 
 ^rem-9-1
 
@@ -208,7 +208,7 @@ The projections of Table 4 are neither one-to-one nor onto $\mathbb{R}^2$; the r
 *Uses:* [[§8 Introduction to Linear Transformations#^prop-8-3|§8.3]], [[§9 The Matrix of a Linear Transformation#^def-9-3|Def. §9.3]]
 
 > [!remark]- Connections
-> - Rigorous treatment: injective $\iff$ null space $= \{\mathbf{0}\}$, [[§8 Null Spaces and Ranges#^ladr-3-15|LADR 3.15]], with the same subtraction argument. The dimension counts behind Example §9.5 ($\mathbb{R}^2 \to \mathbb{R}^3$ is never onto, $\mathbb{R}^4 \to \mathbb{R}^3$ never one-to-one) are [[§8 Null Spaces and Ranges#^ladr-3-24|LADR 3.24]] and [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]].
+> - Rigorous treatment: injective $\iff$ null space $= \{\mathbf{0}\}$, [[§8 Null Spaces and Ranges#^ladr-3-15|LADR 3.15]], with the same subtraction argument. The dimension counts behind Examples §9.4 and §9.5 ($\mathbb{R}^4 \to \mathbb{R}^3$ is never one-to-one, $\mathbb{R}^2 \to \mathbb{R}^3$ never onto) are [[§8 Null Spaces and Ranges#^ladr-3-24|LADR 3.24]] and [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]].
 
 > [!theorem] Theorem §9.3: Onto and One-to-One via the Standard Matrix
 > Let $T: \mathbb{R}^n \to \mathbb{R}^m$ be a linear transformation, and let $A$ be the standard matrix for $T$. Then:
@@ -243,7 +243,7 @@ In pivot terms: $T$ is onto iff $A$ has a pivot in every row, and one-to-one iff
 > T(\mathbf{x}) = \begin{bmatrix} 3x_1 + x_2 \\ 5x_1 + 7x_2 \\ x_1 + 3x_2 \end{bmatrix} = \begin{bmatrix} 3 & 1 \\ 5 & 7 \\ 1 & 3 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = A\mathbf{x},
 > $$
 >
-> so $T$ is linear with standard matrix $A$. The two columns of $A$ are not multiples of each other ($5/3 \ne 7/1$), so they are linearly independent, and $T$ is one-to-one by Theorem §9.3(b). But $A$ is $3 \times 2$: it has at most 2 pivots, never 3, so its columns cannot span $\mathbb{R}^3$ (Theorem §4.3), and $T$ is not onto $\mathbb{R}^3$. Its range is the plane $\operatorname{Span}\{\mathbf{a}_1, \mathbf{a}_2\}$.
+> so $T$ is linear with standard matrix $A$. The two columns $\mathbf{a}_1 = (3, 5, 1)$ and $\mathbf{a}_2 = (1, 7, 3)$ are not multiples of each other (the ratios of corresponding entries, $1/3$ and $7/5$, differ), so they are linearly independent, and $T$ is one-to-one by Theorem §9.3(b). But $A$ is $3 \times 2$: it has at most 2 pivots, never 3, so its columns cannot span $\mathbb{R}^3$ ([[§4 The Matrix Equation Ax = b#^thm-4-3|Theorem §4.3]]), and $T$ is not onto $\mathbb{R}^3$. Its range is the plane $\operatorname{Span}\{\mathbf{a}_1, \mathbf{a}_2\}$.
 >
 > **(b)** Suppose $A$ is a $7 \times 5$ matrix with 5 pivots, and $T(\mathbf{x}) = A\mathbf{x}$. Every one of the 5 columns has a pivot, so $A\mathbf{x} = \mathbf{0}$ has no free variable and $T$ is one-to-one. Only 5 of the 7 rows have pivots, so $T$ is not onto $\mathbb{R}^7$.
 >

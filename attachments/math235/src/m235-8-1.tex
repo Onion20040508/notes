@@ -3,7 +3,7 @@
   % ---- left: the square ----
   \begin{scope}
     \fill[figB!12] (0,0) rectangle (2,2);
-    \foreach \s in {0.5,1,1.5} { \draw[figB!45] (\s,0) -- (\s,2); \draw[figR!45] (0,\s) -- (2,\s); }
+    \foreach \s in {0.5,1,1.5} { \draw[figB!45] (\s,0) -- (\s,2); \draw[figR!75] (0,\s) -- (2,\s); }
     \draw[figB, thick] (0,0) rectangle (2,2);
     \draw[->, black!60] (-0.5,0) -- (3.4,0) node[right] {$x_1$};
     \draw[->, black!60] (0,-0.5) -- (0,3) node[above] {$x_2$};
@@ -15,7 +15,7 @@
   % ---- right: the sheared parallelogram ----
   \begin{scope}[xshift=5.6cm]
     \fill[figB!12] (0,0) -- (2,0) -- (8,2) -- (6,2) -- cycle;
-    \foreach \s in {0.5,1,1.5} { \draw[figB!45] (\s,0) -- (\s+6,2); \draw[figR!45] (3*\s,\s) -- (3*\s+2,\s); }
+    \foreach \s in {0.5,1,1.5} { \draw[figB!45] (\s,0) -- (\s+6,2); \draw[figR!75] (3*\s,\s) -- (3*\s+2,\s); }
     \draw[figB, thick] (0,0) -- (2,0) -- (8,2) -- (6,2) -- cycle;
     \draw[->, black!60] (-0.5,0) -- (9.2,0) node[right] {$x_1$};
     \draw[->, black!60] (0,-0.5) -- (0,3) node[above] {$x_2$};

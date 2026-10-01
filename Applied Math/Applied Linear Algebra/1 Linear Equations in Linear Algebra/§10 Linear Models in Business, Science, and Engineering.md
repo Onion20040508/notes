@@ -74,7 +74,7 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 > - The physics of these laws (conservation of energy around a loop, of charge at a junction): [[§A6.3 Kirchhoff's Rules]] in Electromagnetism; Ohm's law in [[§A5.3 Resistivity, Resistance and Ohm's Law]].
 
 > [!example] Example §10.2: Loop Currents in a Three-Loop Network
-> Lay's Figure 1 is a ladder of three loops, one above another, all loop currents $I_1, I_2, I_3$ chosen clockwise:
+> Lay's Figure 1 is a ladder of three loops, one above another, all loop currents $I_1, I_2, I_3$ chosen counterclockwise:
 > - loop 1 (top): a 30-volt battery and resistors of $4\,\Omega$, $4\,\Omega$, and $3\,\Omega$ in the branch $AB$ shared with loop 2;
 > - loop 2 (middle): branch $AB$ ($3\,\Omega$), two $1\,\Omega$ resistors on the sides, and the branch $CD$ shared with loop 3, containing a $1\,\Omega$ resistor and a 5-volt battery;
 > - loop 3 (bottom): branch $CD$, two $1\,\Omega$ resistors on the sides, and a 20-volt battery.
@@ -85,7 +85,7 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 >
 > **Loop 2.** $-3I_1$ comes from $I_1$ in branch $AB$ (opposite to $I_2$); $6I_2$ is the sum $3 + 1 + 1 + 1$ of all resistances in loop 2 times $I_2$; $-I_3 = -1 \cdot I_3$ comes from $I_3$ in the $1\,\Omega$ resistor of branch $CD$, opposite to $I_2$. With the 5-volt source, $-3I_1 + 6I_2 - I_3 = 5$.
 >
-> **Loop 3.** $-I_2 + 3I_3 = -25$: the 5-volt battery in $CD$ counts $-5$ for loop 3 because of the direction of $I_3$, and the 20-volt battery is negative for the same reason.
+> **Loop 3.** $-I_2 + 3I_3 = -25$: $3I_3$ comes from the three $1\,\Omega$ resistors of loop 3, $-I_2$ from $I_2$ in the $1\,\Omega$ resistor of branch $CD$ (opposite to $I_3$ there); the 5-volt battery in $CD$ counts $-5$ for loop 3 because of the direction of $I_3$, and the 20-volt battery is negative for the same reason.
 >
 > **Solving**
 >
@@ -137,7 +137,7 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 > \mathbf{x}_{k+1} = A\mathbf{x}_k \qquad \text{for } k = 0, 1, 2, \ldots, \qquad (5)
 > $$
 >
-> then (5) is a **linear difference equation** (or **recurrence relation**). Given $\mathbf{x}_0$, it determines $\mathbf{x}_1, \mathbf{x}_2, \ldots$ in turn. Formulas for $\mathbf{x}_k$ and its behavior as $k \to \infty$ come later: [[§30 Applications to Difference Equations|§30]], [[§31 Applications to Markov Chains|§31]] and Chapter 5 ([[§37 Discrete Dynamical Systems|§37]]).
+> then (5) is a **linear difference equation** (or **recurrence relation**). Given $\mathbf{x}_0$, it determines $\mathbf{x}_1, \mathbf{x}_2, \ldots$ in turn. Formulas for $\mathbf{x}_k$ and its behavior as $k \to \infty$ come later: [[§30 Applications to Difference Equations#^prop-30-8|Proposition §30.8]] (difference equations as first-order systems), [[§31 Applications to Markov Chains#^thm-31-3|Theorem §31.3]] (Markov chains) and, in Chapter 5, [[§37 Discrete Dynamical Systems#^thm-37-1|Theorem §37.1]] (the eigenvector decomposition).
 >
 > *Lay: 1.10 (text)*
 
@@ -167,7 +167,7 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 > \mathbf{x}_2 = M\mathbf{x}_1 = \begin{bmatrix} .95 & .03 \\ .05 & .97 \end{bmatrix}\begin{bmatrix} 582{,}000 \\ 418{,}000 \end{bmatrix} = \begin{bmatrix} 552{,}900 + 12{,}540 \\ 29{,}100 + 405{,}460 \end{bmatrix} = \begin{bmatrix} 565{,}440 \\ 434{,}560 \end{bmatrix} .
 > $$
 >
-> The total stays $1{,}000{,}000$, since each column of $M$ sums to $1$: everyone is somewhere. The model is linear because $\mathbf{x}_k \mapsto \mathbf{x}_{k+1}$ is a linear transformation: the number of people who move is *proportional* to the number in each area, and the cumulative effect is found by *adding* the movements from the different areas. ($M$ is a stochastic matrix; the long-run behavior of $\mathbf{x}_k$ is the subject of [[§31 Applications to Markov Chains|§31]].)
+> The total stays $1{,}000{,}000$, since each column of $M$ sums to $1$: everyone is somewhere. The model is linear because $\mathbf{x}_k \mapsto \mathbf{x}_{k+1}$ is a linear transformation: the number of people who move is *proportional* to the number in each area, and the cumulative effect is found by *adding* the movements from the different areas. ($M$ is a stochastic matrix, [[§31 Applications to Markov Chains#^def-31-1|Definition §31.1]]; the long-run behavior of $\mathbf{x}_k$ is given by [[§31 Applications to Markov Chains#^thm-31-3|Theorem §31.3]].)
 >
 > *Lay: Example 1.10.3*
 

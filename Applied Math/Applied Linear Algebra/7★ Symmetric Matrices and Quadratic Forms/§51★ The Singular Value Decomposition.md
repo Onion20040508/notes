@@ -92,7 +92,7 @@ The SVD imitates the following property of diagonalization. If $A$ is symmetric,
 
 ^pf-51-1
 
-*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|§48.3]], [[§11 Matrix Operations|§11]] (Theorem 3: transpose of a product)
+*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|§48.3]], [[§11 Matrix Operations#^thm-11-7|§11.7]] (transpose of a product)
 
 By renumbering if necessary, we may assume the eigenvalues are arranged so that $\lambda_1 \ge \lambda_2 \ge \cdots \ge \lambda_n \ge 0$.
 
@@ -142,7 +142,7 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal
 > (A\mathbf{v}_i)^T(A\mathbf{v}_j) = \mathbf{v}_i^T A^TA \mathbf{v}_j = \mathbf{v}_i^T(\lambda_j\mathbf{v}_j) = 0 .
 > $$
 >
-> Thus $\{A\mathbf{v}_1, \dots, A\mathbf{v}_n\}$ is an orthogonal set. Furthermore, the lengths of $A\mathbf{v}_1, \dots, A\mathbf{v}_n$ are the singular values of $A$, and since there are $r$ nonzero singular values (the first $r$, by the ordering), $A\mathbf{v}_i \ne \mathbf{0}$ if and only if $1 \le i \le r$. So $A\mathbf{v}_1, \dots, A\mathbf{v}_r$ are nonzero orthogonal vectors, hence linearly independent ([[§41 Orthogonal Sets|§41]], Theorem 4), and they lie in $\operatorname{Col} A$. Finally, for any $\mathbf{y}$ in $\operatorname{Col} A$, say $\mathbf{y} = A\mathbf{x}$, write $\mathbf{x} = c_1\mathbf{v}_1 + \cdots + c_n\mathbf{v}_n$; then
+> Thus $\{A\mathbf{v}_1, \dots, A\mathbf{v}_n\}$ is an orthogonal set. Furthermore, the lengths of $A\mathbf{v}_1, \dots, A\mathbf{v}_n$ are the singular values of $A$, and since there are $r$ nonzero singular values (the first $r$, by the ordering), $A\mathbf{v}_i \ne \mathbf{0}$ if and only if $1 \le i \le r$. So $A\mathbf{v}_1, \dots, A\mathbf{v}_r$ are nonzero orthogonal vectors, hence linearly independent ([[§41 Orthogonal Sets#^thm-41-1|Theorem §41.1]]), and they lie in $\operatorname{Col} A$. Finally, for any $\mathbf{y}$ in $\operatorname{Col} A$, say $\mathbf{y} = A\mathbf{x}$, write $\mathbf{x} = c_1\mathbf{v}_1 + \cdots + c_n\mathbf{v}_n$; then
 >
 > $$
 > \mathbf{y} = A\mathbf{x} = c_1A\mathbf{v}_1 + \cdots + c_rA\mathbf{v}_r + c_{r+1}A\mathbf{v}_{r+1} + \cdots + c_nA\mathbf{v}_n = c_1A\mathbf{v}_1 + \cdots + c_rA\mathbf{v}_r + \mathbf{0} + \cdots + \mathbf{0} .
@@ -152,7 +152,7 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal
 
 ^pf-51-3
 
-*Uses:* [[§51★ The Singular Value Decomposition#^prop-51-1|§51.1]], [[§51★ The Singular Value Decomposition#^def-51-1|Def. §51.1]], [[§41 Orthogonal Sets|§41]] (Theorem 4), [[§28 Rank|§28]] (rank)
+*Uses:* [[§51★ The Singular Value Decomposition#^prop-51-1|§51.1]], [[§51★ The Singular Value Decomposition#^def-51-1|Def. §51.1]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]], [[§28 Rank#^def-28-1|Def. §28.1]] (rank)
 
 > [!remark]- Remark: Numerical Note — Effective Rank
 > The rank of $A$ may be very sensitive to small changes in its entries. Counting pivot columns does not work well when a computer row reduces $A$: roundoff error often creates an echelon form with full rank. In practice, the most reliable way to estimate the rank of a large matrix is to count its nonzero singular values (Theorem §51.3), treating extremely small nonzero singular values as zero. The number that remains is the **effective rank** of the matrix.
@@ -187,7 +187,7 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal
 > A\mathbf{v}_i = \sigma_i \mathbf{u}_i \quad (1 \le i \le r) . \qquad (4)
 > $$
 >
-> Now extend $\{\mathbf{u}_1, \dots, \mathbf{u}_r\}$ to an orthonormal basis $\{\mathbf{u}_1, \dots, \mathbf{u}_m\}$ of $\mathbb{R}^m$ (for instance with an orthonormal basis of $(\operatorname{Col} A)^\perp$, [[§42 Orthogonal Projections|§42]]), and let
+> Now extend $\{\mathbf{u}_1, \dots, \mathbf{u}_r\}$ to an orthonormal basis $\{\mathbf{u}_1, \dots, \mathbf{u}_m\}$ of $\mathbb{R}^m$ (for instance with an orthonormal basis of $(\operatorname{Col} A)^\perp$, which exists by [[§43 The Gram–Schmidt Process#^cor-43-2|Corollary §43.2]] and has $m - r$ vectors by [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|Proposition §40.7]]; the $m$ orthonormal vectors together are linearly independent, hence a basis of $\mathbb{R}^m$), and let
 >
 > $$
 > U = [\,\mathbf{u}_1\ \ \mathbf{u}_2\ \cdots\ \mathbf{u}_m\,] \qquad\text{and}\qquad V = [\,\mathbf{v}_1\ \ \mathbf{v}_2\ \cdots\ \mathbf{v}_n\,] .
@@ -209,7 +209,7 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal
 
 ^pf-51-4
 
-*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-3|§51.3]], [[§41 Orthogonal Sets|§41]] (Theorem 6: orthogonal matrices), [[§42 Orthogonal Projections|§42]] (orthogonal complements; extending an orthonormal set)
+*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-3|§51.3]], [[§41 Orthogonal Sets#^thm-41-4|§41.4]], [[§41 Orthogonal Sets#^def-41-5|Def. §41.5]] (orthogonal matrices), [[§43 The Gram–Schmidt Process#^cor-43-2|§43.2]], [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|§40.7]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]] (extending an orthonormal set)
 
 > [!definition] Definition §51.2: Singular Value Decomposition; Singular Vectors
 > Any factorization $A = U\Sigma V^T$, with $U$ and $V$ orthogonal, $\Sigma$ as in (3), and positive diagonal entries in $D$, is called a **singular value decomposition** (or **SVD**) of $A$. The columns of $U$ are called **left singular vectors** of $A$, and the columns of $V$ are called **right singular vectors** of $A$.
@@ -325,10 +325,10 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal
 
 ## Applications of the Singular Value Decomposition
 
-The two orthogonal matrices $U$ and $V$ do not affect lengths of vectors or angles between vectors ([[§41 Orthogonal Sets|§41]], Theorem 7). So any possible instability in a calculation with $A$ is identified in $\Sigma$: if the singular values of $A$ are extremely large or small, roundoff errors are almost inevitable, and an error analysis is aided by knowing $\Sigma$ and $V$.
+The two orthogonal matrices $U$ and $V$ do not affect lengths of vectors or angles between vectors ([[§41 Orthogonal Sets#^thm-41-5|Theorem §41.5]]). So any possible instability in a calculation with $A$ is identified in $\Sigma$: if the singular values of $A$ are extremely large or small, roundoff errors are almost inevitable, and an error analysis is aided by knowing $\Sigma$ and $V$.
 
 > [!definition] Definition §51.3: Condition Number
-> If $A$ is an invertible $n \times n$ matrix, the ratio $\sigma_1/\sigma_n$ of its largest and smallest singular values is the **condition number** of $A$. It measures how sensitive the solution of $A\mathbf{x} = \mathbf{b}$ is to changes (or errors) in the entries of $A$ (Lay's Exercises 41–43 of Section 2.3, [[§13 Characterizations of Invertible Matrices|§13]]). A "condition number" can be defined in several ways, but this one is widely used for studying $A\mathbf{x} = \mathbf{b}$.
+> If $A$ is an invertible $n \times n$ matrix, the ratio $\sigma_1/\sigma_n$ of its largest and smallest singular values is the **condition number** of $A$. It measures how sensitive the solution of $A\mathbf{x} = \mathbf{b}$ is to changes (or errors) in the entries of $A$ (Lay's Exercises 41–43 of Section 2.3; see the remark on ill-conditioned matrices, [[§13 Characterizations of Invertible Matrices#^rem-13-3|§13]]). A "condition number" can be defined in several ways, but this one is widely used for studying $A\mathbf{x} = \mathbf{b}$.
 >
 > *Lay: Example 7.4.5*
 
@@ -357,22 +357,22 @@ The two orthogonal matrices $U$ and $V$ do not affect lengths of vectors or angl
 >
 > **(5)** The vectors $A\mathbf{v}_1, \dots, A\mathbf{v}_r$ are nonzero and orthogonal, hence a basis of $\operatorname{Col} A$ by Theorem §51.3 (its proof applies verbatim, since by Definition §51.2 the $\mathbf{v}_i$ are orthonormal eigenvectors of $A^TA$ for the eigenvalues $\sigma_i^2$); so their normalizations $\mathbf{u}_1, \dots, \mathbf{u}_r$ are an orthonormal basis.
 >
-> **(6)** Recall that $(\operatorname{Col} A)^\perp = \operatorname{Nul} A^T$ ([[§40 Inner Product, Length, and Orthogonality|§40]], Theorem 3). The vectors $\mathbf{u}_{r+1}, \dots, \mathbf{u}_m$ are orthonormal and orthogonal to $\mathbf{u}_1, \dots, \mathbf{u}_r$, hence to $\operatorname{Col} A$, so they lie in $\operatorname{Nul} A^T$. There are $m - r$ of them, and $\dim (\operatorname{Col} A)^\perp = m - r$, so by the Basis Theorem ([[§27 The Dimension of a Vector Space|§27]], Theorem 12) they form a basis.
+> **(6)** Recall that $(\operatorname{Col} A)^\perp = \operatorname{Nul} A^T$ ([[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]]). The vectors $\mathbf{u}_{r+1}, \dots, \mathbf{u}_m$ are orthonormal and orthogonal to $\mathbf{u}_1, \dots, \mathbf{u}_r$, hence to $\operatorname{Col} A$, so they lie in $\operatorname{Nul} A^T$. There are $m - r$ of them, and $\dim (\operatorname{Col} A)^\perp = m - r$ ([[§40 Inner Product, Length, and Orthogonality#^prop-40-7|Proposition §40.7]]), so by the Basis Theorem ([[§27 The Dimension of a Vector Space#^thm-27-5|Theorem §27.5]]) they form a basis.
 >
-> **(7)** Since $\|A\mathbf{v}_i\| = \sigma_i$ for $1 \le i \le n$, and $\sigma_i = 0$ if and only if $i > r$, the vectors $\mathbf{v}_{r+1}, \dots, \mathbf{v}_n$ lie in $\operatorname{Nul} A$, and they span a subspace of dimension $n - r$. By the Rank Theorem ([[§28 Rank|§28]], Theorem 14), $\dim \operatorname{Nul} A = n - \operatorname{rank} A = n - r$. So by the Basis Theorem, $\{\mathbf{v}_{r+1}, \dots, \mathbf{v}_n\}$ is an orthonormal basis for $\operatorname{Nul} A$.
+> **(7)** Since $\|A\mathbf{v}_i\| = \sigma_i$ for $1 \le i \le n$, and $\sigma_i = 0$ if and only if $i > r$, the vectors $\mathbf{v}_{r+1}, \dots, \mathbf{v}_n$ lie in $\operatorname{Nul} A$, and they span a subspace of dimension $n - r$. By the Rank Theorem ([[§28 Rank#^thm-28-3|Theorem §28.3]]), $\dim \operatorname{Nul} A = n - \operatorname{rank} A = n - r$. So by the Basis Theorem, $\{\mathbf{v}_{r+1}, \dots, \mathbf{v}_n\}$ is an orthonormal basis for $\operatorname{Nul} A$.
 >
 > **(8)** From (5) and (6), the orthogonal complement of $\operatorname{Nul} A^T$ is $\operatorname{Col} A$. Interchanging $A$ and $A^T$: $(\operatorname{Nul} A)^\perp = \operatorname{Col} A^T = \operatorname{Row} A$. The vectors $\mathbf{v}_1, \dots, \mathbf{v}_r$ are orthogonal to $\mathbf{v}_{r+1}, \dots, \mathbf{v}_n$, hence by (7) to $\operatorname{Nul} A$, so they lie in $\operatorname{Row} A$; they are $r = \dim \operatorname{Row} A$ orthonormal vectors, so they are a basis.
 
 ^pf-51-5
 
-*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-3|§51.3]], [[§51★ The Singular Value Decomposition#^def-51-2|Def. §51.2]], [[§40 Inner Product, Length, and Orthogonality|§40]] (Theorem 3), [[§27 The Dimension of a Vector Space|§27]] (Theorem 12, Basis Theorem), [[§28 Rank|§28]] (Theorem 14, Rank Theorem), [[§42 Orthogonal Projections|§42]] (dimension of $W^\perp$)
+*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-3|§51.3]], [[§51★ The Singular Value Decomposition#^def-51-2|Def. §51.2]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|§40.6]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]] (Basis Theorem), [[§28 Rank#^thm-28-3|§28.3]] (Rank Theorem), [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|§40.7]] (dimension of $W^\perp$)
 
 Explicit orthonormal bases for the four fundamental subspaces are useful in some calculations, particularly in constrained optimization problems. In Example §51.3: $\operatorname{Col} A$ is the line spanned by $\mathbf{u}_1$, $\operatorname{Nul} A^T$ the plane spanned by $\mathbf{u}_2, \mathbf{u}_3$, $\operatorname{Row} A$ the line spanned by $\mathbf{v}_1$, and $\operatorname{Nul} A$ the line spanned by $\mathbf{v}_2$.
 
 The four fundamental subspaces and the singular values provide the final statements of the Invertible Matrix Theorem. (Statements about $A^T$ were omitted from earlier versions to avoid nearly doubling their length.)
 
 > [!theorem] Theorem §51.6: The Invertible Matrix Theorem (Concluded)
-> Let $A$ be an $n \times n$ matrix. Then the following statements are each equivalent to the statement that $A$ is an invertible matrix (and so to statements (a)–(t) of the earlier versions, last extended in [[§33 The Characteristic Equation|§33]]):
+> Let $A$ be an $n \times n$ matrix. Then the following statements are each equivalent to the statement that $A$ is an invertible matrix (and so to statements (a)–(t) of the earlier versions: (a)–(l) of [[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]], (m)–(r) of [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]], and (s), (t) of the previous version, [[§33 The Characteristic Equation#^thm-33-2|Theorem §33.2]]):
 > - (u) $(\operatorname{Col} A)^\perp = \{\mathbf{0}\}$.
 > - (v) $(\operatorname{Nul} A)^\perp = \mathbb{R}^n$.
 > - (w) $\operatorname{Row} A = \mathbb{R}^n$.
@@ -385,17 +385,17 @@ The four fundamental subspaces and the singular values provide the final stateme
 > [!proof]+ Proof
 > (Lay states these without proof; each follows from earlier statements.)
 >
-> **(u)** By [[§40 Inner Product, Length, and Orthogonality|§40]], Theorem 3, $(\operatorname{Col} A)^\perp = \operatorname{Nul} A^T$. So (u) says $A^T\mathbf{x} = \mathbf{0}$ has only the trivial solution, which by the Invertible Matrix Theorem (applied to $A^T$) means $A^T$ is invertible, which is equivalent to $A$ invertible.
+> **(u)** By [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]], $(\operatorname{Col} A)^\perp = \operatorname{Nul} A^T$. So (u) says $A^T\mathbf{x} = \mathbf{0}$ has only the trivial solution, which by statement (d) of [[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]] (applied to $A^T$) means $A^T$ is invertible, which is equivalent to $A$ invertible (statement (l)).
 >
-> **(v)** If $\operatorname{Nul} A = \{\mathbf{0}\}$, then $(\operatorname{Nul} A)^\perp = \{\mathbf{0}\}^\perp = \mathbb{R}^n$. Conversely, if $\operatorname{Nul} A$ contains some $\mathbf{x} \ne \mathbf{0}$, then $\mathbf{x} \cdot \mathbf{x} \ne 0$, so $\mathbf{x} \notin (\operatorname{Nul} A)^\perp$ and $(\operatorname{Nul} A)^\perp \ne \mathbb{R}^n$. So (v) is equivalent to $\operatorname{Nul} A = \{\mathbf{0}\}$, an earlier statement of the theorem.
+> **(v)** If $\operatorname{Nul} A = \{\mathbf{0}\}$, then $(\operatorname{Nul} A)^\perp = \{\mathbf{0}\}^\perp = \mathbb{R}^n$. Conversely, if $\operatorname{Nul} A$ contains some $\mathbf{x} \ne \mathbf{0}$, then $\mathbf{x} \cdot \mathbf{x} \ne 0$, so $\mathbf{x} \notin (\operatorname{Nul} A)^\perp$ and $(\operatorname{Nul} A)^\perp \ne \mathbb{R}^n$. So (v) is equivalent to $\operatorname{Nul} A = \{\mathbf{0}\}$, statement (q) of [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]].
 >
-> **(w)** $\operatorname{Row} A = \operatorname{Col} A^T$, so (w) says the columns of $A^T$ span $\mathbb{R}^n$, that is, $A^T$ is invertible, that is, $A$ is invertible. (Equivalently: $\dim \operatorname{Row} A = \operatorname{rank} A$, and $\operatorname{rank} A = n$ is an earlier statement.)
+> **(w)** $\operatorname{Row} A = \operatorname{Col} A^T$, so (w) says the columns of $A^T$ span $\mathbb{R}^n$, that is (statement (h) for $A^T$), $A^T$ is invertible, that is, $A$ is invertible. (Equivalently: $\dim \operatorname{Row} A = \operatorname{rank} A$, and $\operatorname{rank} A = n$ is statement (p) of [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]].)
 >
-> **(x)** By Theorem §51.3, the number of nonzero singular values of $A$ is $\operatorname{rank} A$, and $\operatorname{rank} A = n$ is an earlier statement of the theorem ([[§28 Rank|§28]]).
+> **(x)** By Theorem §51.3, the number of nonzero singular values of $A$ is $\operatorname{rank} A$, and $\operatorname{rank} A = n$ is statement (p) of [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]].
 
 ^pf-51-6
 
-*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-3|§51.3]], [[§40 Inner Product, Length, and Orthogonality|§40]] (Theorem 3), [[§13 Characterizations of Invertible Matrices|§13]] (Invertible Matrix Theorem), [[§28 Rank|§28]] (Invertible Matrix Theorem, continued), [[§33 The Characteristic Equation|§33]] (latest earlier version)
+*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-3|§51.3]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|§40.6]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]], [[§19 Dimension and Rank#^thm-19-3|§19.3]], [[§33 The Characteristic Equation#^thm-33-2|§33.2]]
 
 > [!theorem] Proposition §51.7: The Reduced SVD
 > Let $A = U\Sigma V^T$ be an SVD of an $m \times n$ matrix of rank $r$, with $D$ as in (3). Partition $U$ and $V$ into submatrices whose first blocks contain $r$ columns:
@@ -415,7 +415,7 @@ The four fundamental subspaces and the singular values provide the final stateme
 ^prop-51-7
 
 > [!proof]+ Proof
-> By partitioned matrix multiplication ([[§14 Partitioned Matrices|§14]]; to simplify notation, $U_{m-r}$ or $V_{n-r}$ is allowed to have no columns),
+> By partitioned matrix multiplication ([[§14 Partitioned Matrices#^prop-14-2|Proposition §14.2]]; to simplify notation, $U_{m-r}$ or $V_{n-r}$ is allowed to have no columns),
 >
 > $$
 > A = [\,U_r\ \ U_{m-r}\,] \begin{bmatrix} D & 0 \\ 0 & 0 \end{bmatrix} \begin{bmatrix} V_r^T \\ V_{n-r}^T \end{bmatrix} = [\,U_rD\ \ \ 0\,] \begin{bmatrix} V_r^T \\ V_{n-r}^T \end{bmatrix} = U_r D V_r^T .
@@ -423,7 +423,7 @@ The four fundamental subspaces and the singular values provide the final stateme
 
 ^pf-51-7
 
-*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-4|§51.4]], [[§14 Partitioned Matrices|§14]] (block multiplication)
+*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-4|§51.4]], [[§14 Partitioned Matrices#^prop-14-2|§14.2]] (block multiplication)
 
 > [!definition] Definition §51.4: Reduced SVD; Pseudoinverse
 > The factorization (9), $A = U_rDV_r^T$, is called a **reduced singular value decomposition** of $A$. Since the diagonal entries of $D$ are nonzero, $D$ is invertible, and the matrix
@@ -458,13 +458,13 @@ The four fundamental subspaces and the singular values provide the final stateme
 > A\hat{\mathbf{x}} = (U_rDV_r^T)(V_rD^{-1}U_r^T\mathbf{b}) = U_rDD^{-1}U_r^T\mathbf{b} = U_rU_r^T\mathbf{b} .
 > $$
 >
-> By (5), the columns of $U_r$ are an orthonormal basis of $\operatorname{Col} A$, so $U_rU_r^T\mathbf{b}$ is the orthogonal projection $\hat{\mathbf{b}}$ of $\mathbf{b}$ onto $\operatorname{Col} A$ ([[§42 Orthogonal Projections|§42]], Theorem 10). A vector $\hat{\mathbf{x}}$ with $A\hat{\mathbf{x}} = \hat{\mathbf{b}}$ is a least-squares solution ([[§44 Least-Squares Problems|§44]]).
+> By (5), the columns of $U_r$ are an orthonormal basis of $\operatorname{Col} A$, so $U_rU_r^T\mathbf{b}$ is the orthogonal projection $\hat{\mathbf{b}}$ of $\mathbf{b}$ onto $\operatorname{Col} A$ ([[§42 Orthogonal Projections#^thm-42-4|Theorem §42.4]]). By the Best Approximation Theorem ([[§42 Orthogonal Projections#^thm-42-3|Theorem §42.3]]), $\hat{\mathbf{b}}$ is the unique point of $\operatorname{Col} A$ closest to $\mathbf{b}$, so a vector $\hat{\mathbf{x}}$ with $A\hat{\mathbf{x}} = \hat{\mathbf{b}}$ is a least-squares solution ([[§44 Least-Squares Problems#^def-44-1|Definition §44.1]]).
 >
-> *Minimal length.* (Lay leaves this to Supplementary Exercise 14; here is why.) Every least-squares solution satisfies $A\mathbf{x} = \hat{\mathbf{b}}$, so it differs from $\hat{\mathbf{x}}$ by a vector $\mathbf{z}$ of $\operatorname{Nul} A$. Now $\hat{\mathbf{x}} = V_r(D^{-1}U_r^T\mathbf{b})$ is a combination of $\mathbf{v}_1, \dots, \mathbf{v}_r$, so it lies in $\operatorname{Row} A = (\operatorname{Nul} A)^\perp$ by (7)–(8). By the Pythagorean Theorem ([[§40 Inner Product, Length, and Orthogonality|§40]], Theorem 2), $\|\hat{\mathbf{x}} + \mathbf{z}\|^2 = \|\hat{\mathbf{x}}\|^2 + \|\mathbf{z}\|^2 \ge \|\hat{\mathbf{x}}\|^2$, with equality only for $\mathbf{z} = \mathbf{0}$.
+> *Minimal length.* (Lay leaves this to Supplementary Exercise 14; here is why.) Every least-squares solution satisfies $A\mathbf{x} = \hat{\mathbf{b}}$, so it differs from $\hat{\mathbf{x}}$ by a vector $\mathbf{z}$ of $\operatorname{Nul} A$. Now $\hat{\mathbf{x}} = V_r(D^{-1}U_r^T\mathbf{b})$ is a combination of $\mathbf{v}_1, \dots, \mathbf{v}_r$, so it is orthogonal to $\mathbf{v}_{r+1}, \dots, \mathbf{v}_n$, which span $\operatorname{Nul} A$ by (7); hence $\hat{\mathbf{x}} \cdot \mathbf{z} = 0$. By the Pythagorean Theorem ([[§40 Inner Product, Length, and Orthogonality#^thm-40-4|Theorem §40.4]]), $\|\hat{\mathbf{x}} + \mathbf{z}\|^2 = \|\hat{\mathbf{x}}\|^2 + \|\mathbf{z}\|^2 \ge \|\hat{\mathbf{x}}\|^2$, with equality only for $\mathbf{z} = \mathbf{0}$.
 
 ^pf-51-8
 
-*Uses:* [[§51★ The Singular Value Decomposition#^prop-51-7|§51.7]], [[§51★ The Singular Value Decomposition#^thm-51-5|§51.5]], [[§42 Orthogonal Projections|§42]] (Theorem 10), [[§44 Least-Squares Problems|§44]] (least-squares solutions), [[§40 Inner Product, Length, and Orthogonality|§40]] (Theorem 2, Pythagorean Theorem)
+*Uses:* [[§51★ The Singular Value Decomposition#^prop-51-7|§51.7]], [[§51★ The Singular Value Decomposition#^thm-51-5|§51.5]], [[§42 Orthogonal Projections#^thm-42-4|§42.4]], [[§42 Orthogonal Projections#^thm-42-3|§42.3]], [[§44 Least-Squares Problems#^def-44-1|Def. §44.1]] (least-squares solutions), [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|§40.4]] (Pythagorean Theorem)
 
 > [!remark]- Connections
 > - Rigorous treatment: the pseudoinverse $T^\dagger$ is defined in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-68|LADR 6.68]] without the SVD (invert $T$ on $(\operatorname{null} T)^\perp \to \operatorname{range} T$, after projecting), and [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-70|LADR 6.70]] proves exactly Theorem §51.8, best approximate solution of smallest norm. Its SVD formula, Lay's (10), is [[§26 Singular Value Decomposition#^ladr-7-75|LADR 7.75]]: "swap the singular vectors and invert the positive singular values".
@@ -491,6 +491,6 @@ The four fundamental subspaces and the singular values provide the final stateme
 ^ex-51-4
 
 > [!remark]- Remark: Numerical Note
-> Examples §51.1–§51.4 show how singular values can be computed by hand. In practice, the computation of $A^TA$ should be avoided, since any errors in the entries of $A$ are squared in the entries of $A^TA$. Fast iterative methods produce the singular values and singular vectors of $A$ directly, accurately to many decimal places. Lay's Practice Problems note two consequences of the SVD: $A^T = V\Sigma^TU^T$ is an SVD of $A^T$, so $A$ and $A^T$ have the same nonzero singular values; and for square $A$, $AA^T = U\Sigma^2U^T$ and $A^TA = V\Sigma^2V^T$ are orthogonally similar, $AA^T = Q^T(A^TA)Q$ with $Q = VU^T$.
+> Examples §51.1–§51.4 show how singular values can be computed by hand. In practice, the computation of $A^TA$ should be avoided, since any errors in the entries of $A$ are squared in the entries of $A^TA$. Fast iterative methods produce the singular values and singular vectors of $A$ directly, accurately to many decimal places. Lay's Practice Problems note two consequences of the SVD: $A^T = V\Sigma^TU^T$ is an SVD of $A^T$, so $A$ and $A^T$ have the same nonzero singular values; and for square $A$, $AA^T = U\Sigma^2U^T$ and $A^TA = V\Sigma^2V^T$ are orthogonally similar, $AA^T = Q^T(A^TA)Q$ with $Q = VU^T$. (Lay's Practice Problem 2 prints $A^TA = Q^T(A^TA)Q$; the remark after it shows that $AA^T$ is meant on the left.)
 
 ^rem-51-3

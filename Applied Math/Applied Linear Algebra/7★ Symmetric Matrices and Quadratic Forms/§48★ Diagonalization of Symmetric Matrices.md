@@ -72,7 +72,7 @@ Chapter 5 left the question of which matrices are diagonalizable without a simpl
 > D = \begin{bmatrix} 8 & 0 & 0 \\ 0 & 6 & 0 \\ 0 & 0 & 3 \end{bmatrix}.
 > $$
 >
-> Then $A = PDP^{-1}$ as in the Diagonalization Theorem ([[§34 Diagonalization|§34]], Theorem 5). This time $P$ is square with orthonormal columns, so $P$ is an orthogonal matrix and $P^{-1}$ is simply $P^T$ ([[§41 Orthogonal Sets|§41]], Theorem 6). Thus $A = PDP^T$.
+> Then $A = PDP^{-1}$ as in the Diagonalization Theorem ([[§34 Diagonalization#^thm-34-1|Theorem §34.1]]). This time $P$ is square with orthonormal columns, so $P$ is an orthogonal matrix and $P^{-1}$ is simply $P^T$ ([[§41 Orthogonal Sets#^thm-41-4|Theorem §41.4]]). Thus $A = PDP^T$.
 >
 > *Lay: Example 7.1.2*
 
@@ -103,7 +103,7 @@ The orthogonality of the eigenvectors in Example §48.1 is no accident: they bel
 
 ^pf-48-1
 
-*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^def-48-1|Def. §48.1]], [[§11 Matrix Operations|§11]] (Theorem 3: $(AB)^T = B^T A^T$), [[§40 Inner Product, Length, and Orthogonality|§40]] (the inner product $\mathbf{u}^T \mathbf{v}$)
+*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^def-48-1|Def. §48.1]], [[§11 Matrix Operations#^thm-11-7|§11.7]] ($(AB)^T = B^T A^T$), [[§40 Inner Product, Length, and Orthogonality#^def-40-1|Def. §40.1]] (the inner product $\mathbf{u}^T \mathbf{v}$)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]] proves the same for eigenvectors of any normal operator ($T^*T = TT^*$) on a real or complex inner product space; symmetric matrices are the self-adjoint operators on $\mathbb{R}^n$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]), and the one-line computation above is $\langle T v_1, v_2 \rangle = \langle v_1, T v_2 \rangle$.
@@ -139,7 +139,7 @@ The orthogonality of the eigenvectors in Example §48.1 is no accident: they bel
 
 ^pf-48-2
 
-*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^def-48-2|Def. §48.2]], [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|§48.3]] (d), [[§11 Matrix Operations|§11]] (Theorem 3: transpose of a product)
+*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^def-48-2|Def. §48.2]], [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|§48.3]] (d), [[§11 Matrix Operations#^thm-11-7|§11.7]] (transpose of a product)
 
 This is a remarkable statement: in Chapter 5 there was no way to tell at a glance whether a matrix is diagonalizable, but for symmetric matrices one look suffices.
 
@@ -164,13 +164,13 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 > \ \Rightarrow\ \mathbf{v}_3 = \begin{bmatrix} -1 \\ -1/2 \\ 1 \end{bmatrix}.
 > $$
 >
-> **Orthogonalize inside the eigenspace.** $\mathbf{v}_1$ and $\mathbf{v}_2$ are linearly independent but not orthogonal ($\mathbf{v}_2 \cdot \mathbf{v}_1 = -1/2$). Replace $\mathbf{v}_2$ by its component orthogonal to $\mathbf{v}_1$ ([[§41 Orthogonal Sets|§41]], orthogonal projection onto a line):
+> **Orthogonalize inside the eigenspace.** $\mathbf{v}_1$ and $\mathbf{v}_2$ are linearly independent but not orthogonal ($\mathbf{v}_2 \cdot \mathbf{v}_1 = -1/2$). Replace $\mathbf{v}_2$ by its component orthogonal to $\mathbf{v}_1$ ([[§41 Orthogonal Sets#^def-41-3|Definition §41.3]], orthogonal projection onto a line):
 >
 > $$
 > \mathbf{z}_2 = \mathbf{v}_2 - \frac{\mathbf{v}_2 \cdot \mathbf{v}_1}{\mathbf{v}_1 \cdot \mathbf{v}_1} \mathbf{v}_1 = \begin{bmatrix} -1/2 \\ 1 \\ 0 \end{bmatrix} - \frac{-1/2}{2} \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix} = \begin{bmatrix} -1/4 \\ 1 \\ 1/4 \end{bmatrix}.
 > $$
 >
-> $\mathbf{z}_2$ is a linear combination of the eigenvectors $\mathbf{v}_1, \mathbf{v}_2$, so it lies in the eigenspace for $\lambda = 7$. (This is one step of the Gram–Schmidt process, [[§43 The Gram–Schmidt Process|§43]].) The eigenspace is two-dimensional, so the orthogonal set $\{\mathbf{v}_1, \mathbf{z}_2\}$ is an orthogonal basis for it, by the Basis Theorem ([[§27 The Dimension of a Vector Space|§27]], Theorem 12). Normalizing ($\|\mathbf{v}_1\| = \sqrt2$, $\|\mathbf{z}_2\| = \sqrt{18}/4$, so $\mathbf{z}_2 / \|\mathbf{z}_2\| = 4\mathbf{z}_2/\sqrt{18}$):
+> $\mathbf{z}_2$ is a linear combination of the eigenvectors $\mathbf{v}_1, \mathbf{v}_2$, so it lies in the eigenspace for $\lambda = 7$. (This is one step of the Gram–Schmidt process, [[§43 The Gram–Schmidt Process#^thm-43-1|Theorem §43.1]].) The eigenspace is two-dimensional, so the orthogonal set $\{\mathbf{v}_1, \mathbf{z}_2\}$ is an orthogonal basis for it, by the Basis Theorem ([[§27 The Dimension of a Vector Space#^thm-27-5|Theorem §27.5]]). Normalizing ($\|\mathbf{v}_1\| = \sqrt2$, $\|\mathbf{z}_2\| = \sqrt{18}/4$, so $\mathbf{z}_2 / \|\mathbf{z}_2\| = 4\mathbf{z}_2/\sqrt{18}$):
 >
 > $$
 > \mathbf{u}_1 = \begin{bmatrix} 1/\sqrt2 \\ 0 \\ 1/\sqrt2 \end{bmatrix}, \qquad
@@ -231,7 +231,7 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 > [!proof]+ Proof
 > *Lay gives this as a sketch:* (a) from Exercise 24 of Section 5.5, (b) from (d) via Exercise 31, (c) is Theorem 1, and (d) from the Schur factorization (Supplementary Exercise 16 of Chapter 6) and Exercise 32, "details omitted". Here are the details along that route.
 >
-> **(a) The eigenvalues are real.** The characteristic polynomial has degree $n$, so it has $n$ roots in $\mathbb{C}$, counting multiplicities (fundamental theorem of algebra, [[§13 Polynomials#^ladr-4-13|LADR 4.13]]). Let $\lambda$ be one of them. Then $A - \lambda I$ is not invertible as a complex matrix, so there is a nonzero $\mathbf{x} \in \mathbb{C}^n$ with $A\mathbf{x} = \lambda \mathbf{x}$ ([[§36 Complex Eigenvalues|§36]]). Let $\bar{\mathbf{x}}$ be the vector of complex conjugates of the entries of $\mathbf{x}$, and put $q = \bar{\mathbf{x}}^T A \mathbf{x}$, a complex number. Since $A$ has real entries, $\bar A = A$, and
+> **(a) The eigenvalues are real.** The characteristic polynomial has degree $n$, so it has $n$ roots in $\mathbb{C}$, counting multiplicities (fundamental theorem of algebra, [[§13 Polynomials#^ladr-4-13|LADR 4.13]]). Let $\lambda$ be one of them. Then $A - \lambda I$ is not invertible as a complex matrix, so there is a nonzero $\mathbf{x} \in \mathbb{C}^n$ with $A\mathbf{x} = \lambda \mathbf{x}$ ([[§36 Complex Eigenvalues#^def-36-1|Definition §36.1]]). Let $\bar{\mathbf{x}}$ be the vector of complex conjugates of the entries of $\mathbf{x}$, and put $q = \bar{\mathbf{x}}^T A \mathbf{x}$, a complex number. Since $A$ has real entries, $\bar A = A$, and
 >
 > $$
 > \bar q = \overline{\bar{\mathbf{x}}^T A \mathbf{x}} = \mathbf{x}^T A \bar{\mathbf{x}} = (\mathbf{x}^T A \bar{\mathbf{x}})^T = \bar{\mathbf{x}}^T A^T \mathbf{x} = \bar{\mathbf{x}}^T A \mathbf{x} = q ,
@@ -241,13 +241,13 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 >
 > **(c)** is Theorem §48.1.
 >
-> **(d) Step 1: Schur factorization.** *Claim: an $n \times n$ real matrix $A$ whose $n$ eigenvalues (with multiplicity) are all real can be written $A = URU^T$ with $U$ orthogonal and $R$ upper triangular.* Induction on $n$; for $n = 1$ take $U = [1]$. For $n > 1$, let $\lambda_1$ be an eigenvalue and $\mathbf{u}_1$ a real unit eigenvector. Extend $\{\mathbf{u}_1\}$ to a basis of $\mathbb{R}^n$ and apply Gram–Schmidt ([[§43 The Gram–Schmidt Process|§43]]), which keeps $\mathbf{u}_1$ first: this gives an orthonormal basis $\mathbf{u}_1, \mathbf{w}_2, \dots, \mathbf{w}_n$. Let $W = [\,\mathbf{w}_2\ \cdots\ \mathbf{w}_n\,]$ and $U_1 = [\,\mathbf{u}_1\ \ W\,]$, an orthogonal matrix. By block multiplication,
+> **(d) Step 1: Schur factorization.** *Claim: an $n \times n$ real matrix $A$ whose $n$ eigenvalues (with multiplicity) are all real can be written $A = URU^T$ with $U$ orthogonal and $R$ upper triangular.* Induction on $n$; for $n = 1$ take $U = [1]$. For $n > 1$, let $\lambda_1$ be an eigenvalue and $\mathbf{u}_1$ a real unit eigenvector (it exists because $A - \lambda_1 I$ is a real singular matrix, as at the end of (a)). Extend $\{\mathbf{u}_1\}$ to a basis of $\mathbb{R}^n$ and apply Gram–Schmidt ([[§43 The Gram–Schmidt Process#^thm-43-1|Theorem §43.1]]), which keeps $\mathbf{u}_1$ first: this gives an orthonormal basis $\mathbf{u}_1, \mathbf{w}_2, \dots, \mathbf{w}_n$. Let $W = [\,\mathbf{w}_2\ \cdots\ \mathbf{w}_n\,]$ and $U_1 = [\,\mathbf{u}_1\ \ W\,]$, an orthogonal matrix. By block multiplication,
 >
 > $$
 > U_1^T A U_1 = \begin{bmatrix} \mathbf{u}_1^T A \mathbf{u}_1 & \mathbf{u}_1^T A W \\ W^T A \mathbf{u}_1 & W^T A W \end{bmatrix} = \begin{bmatrix} \lambda_1 & \ast \\ \mathbf{0} & A_1 \end{bmatrix},
 > $$
 >
-> since $\mathbf{u}_1^T A \mathbf{u}_1 = \lambda_1 \mathbf{u}_1^T \mathbf{u}_1 = \lambda_1$ and $W^T A \mathbf{u}_1 = \lambda_1 W^T \mathbf{u}_1 = \mathbf{0}$. The matrices $A$ and $U_1^T A U_1 = U_1^{-1} A U_1$ are similar, so they have the same characteristic polynomial ([[§33 The Characteristic Equation|§33]], Theorem 4); expanding $\det(U_1^T A U_1 - \lambda I)$ down the first column gives $(\lambda_1 - \lambda) \det(A_1 - \lambda I)$. So the eigenvalues of the $(n-1) \times (n-1)$ matrix $A_1$ are the remaining $n - 1$ eigenvalues of $A$, all real. By induction $A_1 = U_2 R_1 U_2^T$ with $U_2$ orthogonal and $R_1$ upper triangular. Then
+> since $\mathbf{u}_1^T A \mathbf{u}_1 = \lambda_1 \mathbf{u}_1^T \mathbf{u}_1 = \lambda_1$ and $W^T A \mathbf{u}_1 = \lambda_1 W^T \mathbf{u}_1 = \mathbf{0}$. The matrices $A$ and $U_1^T A U_1 = U_1^{-1} A U_1$ are similar, so they have the same characteristic polynomial ([[§33 The Characteristic Equation#^thm-33-6|Theorem §33.6]]); expanding $\det(U_1^T A U_1 - \lambda I)$ down the first column gives $(\lambda_1 - \lambda) \det(A_1 - \lambda I)$. So the eigenvalues of the $(n-1) \times (n-1)$ matrix $A_1$ are the remaining $n - 1$ eigenvalues of $A$, all real. By induction $A_1 = U_2 R_1 U_2^T$ with $U_2$ orthogonal and $R_1$ upper triangular. Then
 >
 > $$
 > U = U_1 \begin{bmatrix} 1 & \mathbf{0}^T \\ \mathbf{0} & U_2 \end{bmatrix}
@@ -271,15 +271,15 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 > A\mathbf{x} = \lambda \mathbf{x} \iff PDP^T \mathbf{x} = \lambda \mathbf{x} \iff D(P^T \mathbf{x}) = \lambda (P^T \mathbf{x}) ,
 > $$
 >
-> so $\mathbf{x} \mapsto P^T \mathbf{x}$ maps the eigenspace $\operatorname{Nul}(A - \lambda I)$ onto $\operatorname{Nul}(D - \lambda I) = \operatorname{Span}\{\mathbf{e}_i : d_i = \lambda\}$, and it is one-to-one because $P^T$ is invertible. An invertible linear map preserves dimension, so the eigenspace of $A$ for $\lambda$ has dimension $k$.
+> so $\mathbf{x} \mapsto P^T \mathbf{x}$ maps the eigenspace $\operatorname{Nul}(A - \lambda I)$ onto $\operatorname{Nul}(D - \lambda I) = \operatorname{Span}\{\mathbf{e}_i : d_i = \lambda\}$, and it is one-to-one because $P^T$ is invertible. An invertible linear map preserves dimension ([[§27 The Dimension of a Vector Space#^prop-27-7|Proposition §27.7]]), so the eigenspace of $A$ for $\lambda$ has dimension $k$.
 
 ^pf-48-3
 
-*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^thm-48-1|§48.1]], [[§36 Complex Eigenvalues|§36]] (complex eigenvectors; Exercise 24), [[§43 The Gram–Schmidt Process|§43]] (Theorem 11), [[§41 Orthogonal Sets|§41]] (Theorem 6: orthogonal matrices), [[§33 The Characteristic Equation|§33]] (Theorem 4: similar matrices), [[§20 Introduction to Determinants|§20]] (cofactor expansion), [[§14 Partitioned Matrices|§14]] (block multiplication), [[§53 Complex Numbers|§53]] (conjugates), [[§13 Polynomials#^ladr-4-13|LADR 4.13]] (fundamental theorem of algebra)
+*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^thm-48-1|§48.1]], [[§33 The Characteristic Equation#^thm-33-5|§33.5]] (degree $n$), [[§36 Complex Eigenvalues#^def-36-1|Def. §36.1]] (complex eigenvectors), [[§36 Complex Eigenvalues#^prop-36-1|§36.1]] (conjugates of products), [[§53 Complex Numbers#^prop-53-2|§53.2]] ($\bar z z = \lvert z \rvert^2$), [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]] (Gram–Schmidt), [[§41 Orthogonal Sets#^thm-41-4|§41.4]], [[§41 Orthogonal Sets#^def-41-5|Def. §41.5]] (orthogonal matrices), [[§33 The Characteristic Equation#^thm-33-6|§33.6]] (similar matrices), [[§20 Introduction to Determinants#^thm-20-1|§20.1]] (cofactor expansion), [[§14 Partitioned Matrices#^prop-14-2|§14.2]] (block multiplication), [[§27 The Dimension of a Vector Space#^prop-27-7|§27.7]] (isomorphisms preserve dimension), [[§13 Polynomials#^ladr-4-13|LADR 4.13]] (fundamental theorem of algebra)
 
 > [!remark]- Connections
 > - Rigorous treatment: the real spectral theorem, [[§23 Spectral Theorem#^ladr-7-29|LADR 7.29]] (hub [[Real spectral theorem]]), for self-adjoint operators on a finite-dimensional real inner product space. Axler's proof follows the same route as above: Schur's theorem ([[§20 Orthonormal Bases#^ladr-6-37|LADR 6.37]]) gives an upper-triangular matrix in an orthonormal basis, and self-adjointness forces it to be diagonal. To get real eigenvalues he avoids $\mathbb{C}$ and determinants altogether, showing instead that the minimal polynomial of a self-adjoint operator has only real roots ([[§23 Spectral Theorem#^ladr-7-27|LADR 7.27]]); the complex argument of part (a) is [[§22 Self-Adjoint and Normal Operators#^ladr-7-12|LADR 7.12]].
-> - Over $\mathbb{C}$ the condition becomes "normal" ([[§23 Spectral Theorem#^ladr-7-31|LADR 7.31]], [[Complex spectral theorem]]); the symmetric-bilinear-form version, which is the Principal Axes Theorem of [[§49★ Quadratic Forms|§49]], is [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|LADR 9.13]].
+> - Over $\mathbb{C}$ the condition becomes "normal" ([[§23 Spectral Theorem#^ladr-7-31|LADR 7.31]], [[Complex spectral theorem]]); the symmetric-bilinear-form version, which is the Principal Axes Theorem, [[§49★ Quadratic Forms#^thm-49-2|Theorem §49.2]], is [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|LADR 9.13]].
 
 ## Spectral Decomposition
 
@@ -304,7 +304,7 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 > = [\,\lambda_1 \mathbf{u}_1\ \cdots\ \lambda_n \mathbf{u}_n\,] \begin{bmatrix} \mathbf{u}_1^T \\ \vdots \\ \mathbf{u}_n^T \end{bmatrix}.
 > $$
 >
-> The column–row expansion of a product ([[§14 Partitioned Matrices|§14]], Theorem 10: $AB$ is the sum of (column $k$ of $A$)(row $k$ of $B$)) turns this into (2).
+> The column–row expansion of a product ([[§14 Partitioned Matrices#^thm-14-3|Theorem §14.3]]: $AB$ is the sum of (column $k$ of $A$)(row $k$ of $B$)) turns this into (2).
 >
 > The $i$th column of $\mathbf{u}_j \mathbf{u}_j^T$ is $\mathbf{u}_j$ times the $i$th entry of $\mathbf{u}_j$, so all columns are multiples of $\mathbf{u}_j$ and the rank is at most $1$ (exactly $1$ since $\mathbf{u}_j \ne \mathbf{0}$). Finally (Exercise 35), by associativity,
 >
@@ -312,11 +312,11 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 > (\mathbf{u}_j \mathbf{u}_j^T)\mathbf{x} = \mathbf{u}_j (\mathbf{u}_j^T \mathbf{x}) = (\mathbf{x} \cdot \mathbf{u}_j)\, \mathbf{u}_j = \frac{\mathbf{x} \cdot \mathbf{u}_j}{\mathbf{u}_j \cdot \mathbf{u}_j} \mathbf{u}_j ,
 > $$
 >
-> because $\mathbf{u}_j \cdot \mathbf{u}_j = 1$. This is the orthogonal projection of $\mathbf{x}$ onto $\operatorname{Span}\{\mathbf{u}_j\}$ ([[§41 Orthogonal Sets|§41]]).
+> because $\mathbf{u}_j \cdot \mathbf{u}_j = 1$. This is the orthogonal projection of $\mathbf{x}$ onto $\operatorname{Span}\{\mathbf{u}_j\}$ ([[§41 Orthogonal Sets#^def-41-3|Definition §41.3]]).
 
 ^pf-48-4
 
-*Uses:* [[§14 Partitioned Matrices|§14]] (Theorem 10), [[§41 Orthogonal Sets|§41]] (orthogonal projection onto a line; Theorem 6)
+*Uses:* [[§14 Partitioned Matrices#^thm-14-3|§14.3]] (column–row expansion), [[§41 Orthogonal Sets#^def-41-3|Def. §41.3]] (orthogonal projection onto a line), [[§41 Orthogonal Sets#^thm-41-4|§41.4]]
 
 > [!definition] Definition §48.4: Spectral Decomposition; Projection Matrix
 > The representation (2) of a symmetric matrix $A$ is called a **spectral decomposition** of $A$, because it breaks up $A$ into pieces determined by the spectrum (eigenvalues) of $A$. Each matrix $\mathbf{u}_j \mathbf{u}_j^T$ ($\mathbf{u}_j$ a unit vector) is a **projection matrix**, in the sense of Theorem §48.4: it sends $\mathbf{x}$ to its orthogonal projection onto $\operatorname{Span}\{\mathbf{u}_j\}$.

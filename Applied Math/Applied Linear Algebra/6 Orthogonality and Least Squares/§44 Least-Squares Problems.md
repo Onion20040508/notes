@@ -190,7 +190,7 @@ When $A\mathbf{x} = \mathbf{b}$ has no solution, the best one can do is to make 
 
 ^pf-44-2
 
-*Uses:* [[§44 Least-Squares Problems#^thm-44-1|§44.1]], [[§5 Solution Sets of Linear Systems|§5]] (solution set of $A\mathbf{x} = \mathbf{b}$ as $\mathbf{p} + \operatorname{Nul} A$), [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8, the Invertible Matrix Theorem)
+*Uses:* [[§44 Least-Squares Problems#^thm-44-1|§44.1]], [[§5 Solution Sets of Linear Systems#^thm-5-3|§5.3]] (solution set of $A\mathbf{x} = \mathbf{b}$ as $\mathbf{p} + \operatorname{Nul} A$), [[§7 Linear Independence#^prop-7-1|§7.1]] (independent columns iff $A\mathbf{x} = \mathbf{0}$ has only the trivial solution), [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem)
 
 Formula (4) is mainly of theoretical use, and for hand calculations when $A^TA$ is an invertible $2 \times 2$ matrix. In every case the projection $\hat{\mathbf{b}}$ is unique; only $\hat{\mathbf{x}}$ can fail to be.
 
@@ -295,7 +295,7 @@ Formula (4) is mainly of theoretical use, and for hand calculations when $A^TA$ 
 > A = \begin{bmatrix} 1 & 3 & 5 \\ 1 & 1 & 0 \\ 1 & 1 & 2 \\ 1 & 3 & 3 \end{bmatrix}, \qquad \mathbf{b} = \begin{bmatrix} 3 \\ 5 \\ 7 \\ -3 \end{bmatrix} .
 > $$
 >
-> A QR factorization (obtained as in [[§43 The Gram–Schmidt Process#^rem-43-2|§43]]) is
+> A QR factorization (obtained as in [[§43 The Gram–Schmidt Process#^rem-43-2|the QR method of §43]]) is
 >
 > $$
 > A = QR = \begin{bmatrix} 1/2 & 1/2 & 1/2 \\ 1/2 & -1/2 & -1/2 \\ 1/2 & -1/2 & 1/2 \\ 1/2 & 1/2 & -1/2 \end{bmatrix} \begin{bmatrix} 2 & 4 & 5 \\ 0 & 2 & 3 \\ 0 & 0 & 2 \end{bmatrix} .

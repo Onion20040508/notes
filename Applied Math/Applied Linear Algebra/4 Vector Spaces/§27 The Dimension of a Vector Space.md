@@ -11,7 +11,7 @@ tags: [applied-linear-algebra, math235]
 
 *Lay, Section 4.5 · MATH 235 lecture L16.*
 
-A vector space with a basis of $n$ vectors is isomorphic to $\mathbb{R}^n$ through the coordinate mapping ([[§26 Coordinate Systems|§26]], Theorem 8). This section shows that the number $n$ does not depend on the basis chosen, so it is a property of the space itself: its dimension. Dimension controls the size of linearly independent sets (at most $n$ vectors) and of spanning sets (at least $n$ vectors), and when a set has exactly $n$ vectors, one of the two properties gives the other for free (the Basis Theorem). For a matrix, $\dim \operatorname{Nul} A$ and $\dim \operatorname{Col} A$ are read off an echelon form. (The instructor's checklist for "Section 4.5" follows the 6th edition, where this section also contains the row space, the Rank Theorem and the Invertible Matrix Theorem; in the 5th edition those are in Section 4.6, [[§28 Rank|§28]].)
+A vector space with a basis of $n$ vectors is isomorphic to $\mathbb{R}^n$ through the coordinate mapping ([[§26 Coordinate Systems#^thm-26-3|Theorem §26.3]]). This section shows that the number $n$ does not depend on the basis chosen, so it is a property of the space itself: its dimension. Dimension controls the size of linearly independent sets (at most $n$ vectors) and of spanning sets (at least $n$ vectors), and when a set has exactly $n$ vectors, one of the two properties gives the other for free (the Basis Theorem). For a matrix, $\dim \operatorname{Nul} A$ and $\dim \operatorname{Col} A$ are read off an echelon form. (The instructor's checklist for "Section 4.5" follows the 6th edition, where this section also contains the row space, the Rank Theorem and the Invertible Matrix Theorem; in the 5th edition those are in Section 4.6, [[§28 Rank|§28]].)
 
 ## Dimension
 
@@ -25,13 +25,13 @@ A vector space with a basis of $n$ vectors is isomorphic to $\mathbb{R}^n$ throu
 ^thm-27-1
 
 > [!proof]+ Proof
-> Let $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ be a set in $V$ with $p > n$. The coordinate vectors $[\mathbf{u}_1]_{\mathcal B}, \ldots, [\mathbf{u}_p]_{\mathcal B}$ are $p$ vectors in $\mathbb{R}^n$, more vectors than entries, so they are linearly dependent ([[§7 Linear Independence|§7]], Theorem 8). So there are scalars $c_1, \ldots, c_p$, not all zero, with
+> Let $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ be a set in $V$ with $p > n$. The coordinate vectors $[\mathbf{u}_1]_{\mathcal B}, \ldots, [\mathbf{u}_p]_{\mathcal B}$ are $p$ vectors in $\mathbb{R}^n$, more vectors than entries, so they are linearly dependent ([[§7 Linear Independence#^thm-7-6|Theorem §7.6]]). So there are scalars $c_1, \ldots, c_p$, not all zero, with
 >
 > $$
 > c_1 [\mathbf{u}_1]_{\mathcal B} + \cdots + c_p [\mathbf{u}_p]_{\mathcal B} = \mathbf{0} \in \mathbb{R}^n .
 > $$
 >
-> The coordinate mapping $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal B}$ is linear ([[§26 Coordinate Systems|§26]], Theorem 8), so the left side is $[c_1\mathbf{u}_1 + \cdots + c_p\mathbf{u}_p]_{\mathcal B}$. A vector whose $\mathcal{B}$-coordinates are all $0$ is $0 \cdot \mathbf{b}_1 + \cdots + 0 \cdot \mathbf{b}_n = \mathbf{0}$. Hence
+> The coordinate mapping $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal B}$ is linear ([[§26 Coordinate Systems#^thm-26-3|Theorem §26.3]]), so the left side is $[c_1\mathbf{u}_1 + \cdots + c_p\mathbf{u}_p]_{\mathcal B}$. A vector whose $\mathcal{B}$-coordinates are all $0$ is $0 \cdot \mathbf{b}_1 + \cdots + 0 \cdot \mathbf{b}_n = \mathbf{0}$. Hence
 >
 > $$
 > c_1\mathbf{u}_1 + \cdots + c_p\mathbf{u}_p = \mathbf{0}
@@ -41,7 +41,7 @@ A vector space with a basis of $n$ vectors is isomorphic to $\mathbb{R}^n$ throu
 
 ^pf-27-1
 
-*Uses:* [[§7 Linear Independence|§7]] (Theorem 8), [[§26 Coordinate Systems|§26]] (Theorem 8, the coordinate mapping)
+*Uses:* [[§7 Linear Independence#^thm-7-6|§7.6]], [[§26 Coordinate Systems#^thm-26-3|§26.3]]
 
 > [!theorem] Theorem §27.2: All Bases Have the Same Size
 > If a vector space $V$ has a basis of $n$ vectors, then every basis of $V$ must consist of exactly $n$ vectors.
@@ -57,7 +57,7 @@ A vector space with a basis of $n$ vectors is isomorphic to $\mathbb{R}^n$ throu
 
 *Uses:* [[§27 The Dimension of a Vector Space#^thm-27-1|§27.1]]
 
-If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset of $S$ is a basis of $V$, by the Spanning Set Theorem ([[§25 Linearly Independent Sets; Bases|§25]], Theorem 5). By Theorem §27.2 all such bases have the same size, so the following definition makes sense.
+If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset of $S$ is a basis of $V$, by the Spanning Set Theorem ([[§25 Linearly Independent Sets; Bases#^thm-25-2|Theorem §25.2]]). By Theorem §27.2 all such bases have the same size, so the following definition makes sense.
 
 > [!definition] Definition §27.1: Finite-Dimensional; Dimension
 > If $V$ is spanned by a finite set, then $V$ is **finite-dimensional**, and the **dimension** of $V$, written $\dim V$, is the number of vectors in a basis for $V$. The dimension of the zero vector space $\{\mathbf{0}\}$ is defined to be $0$. If $V$ is not spanned by a finite set, then $V$ is **infinite-dimensional**.
@@ -99,7 +99,7 @@ If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset o
 > \mathbf{v}_4 = \begin{bmatrix} 0 \\ 4 \\ -1 \\ 5 \end{bmatrix} .
 > $$
 >
-> **Shrink it to a basis.** $\mathbf{v}_1 \ne \mathbf{0}$; $\mathbf{v}_2$ is not a multiple of $\mathbf{v}_1$ (its first two entries $-3, 0$ are not proportional to $1, 5$); but $\mathbf{v}_3 = -2\mathbf{v}_2$. By the Spanning Set Theorem we may discard $\mathbf{v}_3$, and $\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_4\}$ still spans $H$. Finally, $\mathbf{v}_4$ is not a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$, since its fourth entry is $5$ while theirs are $0$. No vector of $\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_4\}$ is a linear combination of the ones before it, so the set is linearly independent ([[§25 Linearly Independent Sets; Bases|§25]], Theorem 4) and is a basis for $H$. Thus $\dim H = 3$.
+> **Shrink it to a basis.** $\mathbf{v}_1 \ne \mathbf{0}$; $\mathbf{v}_2$ is not a multiple of $\mathbf{v}_1$ (its first two entries $-3, 0$ are not proportional to $1, 5$); but $\mathbf{v}_3 = -2\mathbf{v}_2$. By the Spanning Set Theorem we may discard $\mathbf{v}_3$, and $\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_4\}$ still spans $H$. Finally, $\mathbf{v}_4$ is not a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$, since its fourth entry is $5$ while theirs are $0$. No vector of $\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_4\}$ is a linear combination of the ones before it, so the set is linearly independent ([[§25 Linearly Independent Sets; Bases#^thm-25-1|Theorem §25.1]]) and is a basis for $H$. Thus $\dim H = 3$.
 >
 > (Check by row reduction: the matrix $[\mathbf{v}_1\ \mathbf{v}_2\ \mathbf{v}_3\ \mathbf{v}_4]$ has reduced echelon form with pivots in columns $1, 2, 4$.)
 >
@@ -112,7 +112,7 @@ If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset o
 > - **0-dimensional:** only the zero subspace $\{\mathbf{0}\}$.
 > - **1-dimensional:** a basis is one nonzero vector $\mathbf{v}$, so $H = \operatorname{Span}\{\mathbf{v}\}$, a line through the origin.
 > - **2-dimensional:** $H = \operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$ with $\mathbf{u}, \mathbf{v}$ linearly independent: a plane through the origin.
-> - **3-dimensional:** only $\mathbb{R}^3$ itself. Three linearly independent vectors in $\mathbb{R}^3$ span $\mathbb{R}^3$, by the Invertible Matrix Theorem ([[§13 Characterizations of Invertible Matrices|§13]]); see also [[§27 The Dimension of a Vector Space#^cor-27-6|Corollary §27.6]].
+> - **3-dimensional:** only $\mathbb{R}^3$ itself. Three linearly independent vectors in $\mathbb{R}^3$ span $\mathbb{R}^3$, by the Invertible Matrix Theorem ([[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]]); see also [[§27 The Dimension of a Vector Space#^cor-27-6|Corollary §27.6]].
 >
 > *Lay: Example 4.5.4*
 
@@ -139,13 +139,13 @@ The next theorem is the counterpart of the Spanning Set Theorem: a spanning set 
 > [!proof]+ Proof
 > If $H = \{\mathbf{0}\}$, then $\dim H = 0 \le \dim V$. Otherwise let $S = \{\mathbf{u}_1, \ldots, \mathbf{u}_k\}$ be any linearly independent set in $H$ (for instance one nonzero vector of $H$). If $S$ spans $H$, then $S$ is a basis for $H$.
 >
-> Otherwise there is some $\mathbf{u}_{k+1}$ in $H$ that is not in $\operatorname{Span} S$. Then $\{\mathbf{u}_1, \ldots, \mathbf{u}_k, \mathbf{u}_{k+1}\}$ is linearly independent: no vector in it is a linear combination of the vectors before it ([[§25 Linearly Independent Sets; Bases|§25]], Theorem 4), since $\mathbf{u}_1, \ldots, \mathbf{u}_k$ are independent and $\mathbf{u}_{k+1} \notin \operatorname{Span} S$. (Lecture L16 checks this directly. Suppose $c_1\mathbf{u}_1 + \cdots + c_{k+1}\mathbf{u}_{k+1} = \mathbf{0}$. If $c_{k+1} \ne 0$, then $\mathbf{u}_{k+1} = -\frac{c_1}{c_{k+1}}\mathbf{u}_1 - \cdots - \frac{c_k}{c_{k+1}}\mathbf{u}_k$ lies in $\operatorname{Span} S$, a contradiction. So $c_{k+1} = 0$, and then $c_1\mathbf{u}_1 + \cdots + c_k\mathbf{u}_k = \mathbf{0}$ forces $c_1 = \cdots = c_k = 0$.)
+> Otherwise there is some $\mathbf{u}_{k+1}$ in $H$ that is not in $\operatorname{Span} S$. Then $\{\mathbf{u}_1, \ldots, \mathbf{u}_k, \mathbf{u}_{k+1}\}$ is linearly independent: no vector in it is a linear combination of the vectors before it ([[§25 Linearly Independent Sets; Bases#^thm-25-1|Theorem §25.1]]), since $\mathbf{u}_1, \ldots, \mathbf{u}_k$ are independent and $\mathbf{u}_{k+1} \notin \operatorname{Span} S$. (Lecture L16 checks this directly. Suppose $c_1\mathbf{u}_1 + \cdots + c_{k+1}\mathbf{u}_{k+1} = \mathbf{0}$. If $c_{k+1} \ne 0$, then $\mathbf{u}_{k+1} = -\frac{c_1}{c_{k+1}}\mathbf{u}_1 - \cdots - \frac{c_k}{c_{k+1}}\mathbf{u}_k$ lies in $\operatorname{Span} S$, a contradiction. So $c_{k+1} = 0$, and then $c_1\mathbf{u}_1 + \cdots + c_k\mathbf{u}_k = \mathbf{0}$ forces $c_1 = \cdots = c_k = 0$.)
 >
 > So long as the new set does not span $H$, repeat: each step produces a larger linearly independent set in $H \subseteq V$. By Theorem §27.1 a linearly independent set in $V$ has at most $\dim V$ vectors, so the process stops after at most $\dim V - k$ steps. When it stops, the expanded set spans $H$, hence is a basis for $H$ with at most $\dim V$ vectors: $H$ is finite-dimensional and $\dim H \le \dim V$.
 
 ^pf-27-3
 
-*Uses:* [[§27 The Dimension of a Vector Space#^thm-27-1|§27.1]], [[§25 Linearly Independent Sets; Bases|§25]] (Theorem 4)
+*Uses:* [[§27 The Dimension of a Vector Space#^thm-27-1|§27.1]], [[§25 Linearly Independent Sets; Bases#^thm-25-1|§25.1]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§5 Bases#^ladr-2-32|LADR 2.32]] (every linearly independent list extends to a basis; Axler adjoins vectors of a spanning list of $V$, so the process visibly stops) and [[§6 Dimension#^ladr-2-37|LADR 2.37]] (dimension of a subspace).
@@ -162,11 +162,11 @@ The next theorem is the counterpart of the Spanning Set Theorem: a spanning set 
 ^cor-27-4
 
 > [!proof]+ Proof
-> 1 is Theorem §27.1. For 2, let $S$ span $V$. If $V = \{\mathbf{0}\}$ there is nothing to prove ($n = 0$). Otherwise, by the Spanning Set Theorem ([[§25 Linearly Independent Sets; Bases|§25]], Theorem 5) some subset $S'$ of $S$ is a basis of $V$, and $S'$ has exactly $n$ vectors by Theorem §27.2. So $S$ has at least $n$ vectors.
+> 1 is Theorem §27.1. For 2, let $S$ span $V$. If $V = \{\mathbf{0}\}$ there is nothing to prove ($n = 0$). Otherwise, by the Spanning Set Theorem ([[§25 Linearly Independent Sets; Bases#^thm-25-2|Theorem §25.2]]) some subset $S'$ of $S$ is a basis of $V$, and $S'$ has exactly $n$ vectors by Theorem §27.2. So $S$ has at least $n$ vectors.
 
 ^pf-27-4
 
-*Uses:* [[§27 The Dimension of a Vector Space#^thm-27-1|§27.1]], [[§27 The Dimension of a Vector Space#^thm-27-2|§27.2]], [[§25 Linearly Independent Sets; Bases|§25]] (Theorem 5)
+*Uses:* [[§27 The Dimension of a Vector Space#^thm-27-1|§27.1]], [[§27 The Dimension of a Vector Space#^thm-27-2|§27.2]], [[§25 Linearly Independent Sets; Bases#^thm-25-2|§25.2]]
 
 When the dimension is known, the search for a basis is simplified: with the right number of vectors, it is enough to check *either* independence *or* spanning. This matters in applications (difference equations, [[§30 Applications to Difference Equations#^ex-30-3|Example §30.3]]; differential equations) where independence is much easier to verify than spanning.
 
@@ -184,7 +184,7 @@ When the dimension is known, the search for a basis is simplified: with the righ
 
 ^pf-27-5
 
-*Uses:* [[§27 The Dimension of a Vector Space#^thm-27-3|§27.3]], [[§27 The Dimension of a Vector Space#^thm-27-2|§27.2]], [[§25 Linearly Independent Sets; Bases|§25]] (Theorem 5)
+*Uses:* [[§27 The Dimension of a Vector Space#^thm-27-3|§27.3]], [[§27 The Dimension of a Vector Space#^thm-27-2|§27.2]], [[§25 Linearly Independent Sets; Bases#^thm-25-2|§25.2]]
 
 Lay states the Basis Theorem for subspaces of $\mathbb{R}^n$ already in Section 2.9 ([[§19 Dimension and Rank|§19]], Theorem 15) and defers its proof to this section; the proof above covers that case, with $V = H$.
 
@@ -200,7 +200,7 @@ Lay states the Basis Theorem for subspaces of $\mathbb{R}^n$ already in Section 
 > \det A = \begin{vmatrix} 1 & 3 & 5 \\ 2 & 4 & 6 \\ 0 & 0 & 7 \end{vmatrix} = 7 \begin{vmatrix} 1 & 3 \\ 2 & 4 \end{vmatrix} = 7(4 - 6) = -14 \ne 0 .
 > $$
 >
-> So $A$ is invertible and its columns are linearly independent (Invertible Matrix Theorem with determinants, [[§21 Properties of Determinants|§21]]). Hence $\mathcal{B} = \{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$ is a basis of $\mathbb{R}^3$.
+> So $A$ is invertible and its columns are linearly independent (Invertible Matrix Theorem with determinants, [[§21 Properties of Determinants#^thm-21-4|Theorem §21.4]]). Hence $\mathcal{B} = \{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$ is a basis of $\mathbb{R}^3$. (The same three vectors, checked by row reduction instead: [[§19 Dimension and Rank#^ex-19-4|Example §19.4]](a).)
 >
 > *Source: 235 lecture L16*
 
@@ -230,18 +230,18 @@ Lay states the Basis Theorem for subspaces of $\mathbb{R}^n$ already in Section 
 ^prop-27-7
 
 > [!proof]+ Proof
-> $T(H)$ is a subspace by [[§24 Null Spaces, Column Spaces, and Linear Transformations|§24]] (Exercise 35 there). Let $\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ be a basis of $H$ (if $H = \{\mathbf{0}\}$, then $T(H) = \{\mathbf{0}\}$ and both dimensions are $0$). Every vector of $T(H)$ is $T(c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p) = c_1 T(\mathbf{v}_1) + \cdots + c_p T(\mathbf{v}_p)$, so $T(\mathbf{v}_1), \ldots, T(\mathbf{v}_p)$ span $T(H)$, and $\dim T(H) \le p$ by Corollary §27.4. This is 1.
+> $T(H)$ is a subspace: it is the range of the restriction of $T$ to $H$, a linear map $H \to W$, so [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|Theorem §24.5]] applies (this is Lay's Exercise 35 in Section 4.2). Let $\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ be a basis of $H$ (if $H = \{\mathbf{0}\}$, then $T(H) = \{\mathbf{0}\}$ and both dimensions are $0$). Every vector of $T(H)$ is $T(c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p) = c_1 T(\mathbf{v}_1) + \cdots + c_p T(\mathbf{v}_p)$, so $T(\mathbf{v}_1), \ldots, T(\mathbf{v}_p)$ span $T(H)$, and $\dim T(H) \le p$ by Corollary §27.4. This is 1.
 >
 > For 2, suppose also $c_1 T(\mathbf{v}_1) + \cdots + c_p T(\mathbf{v}_p) = \mathbf{0}$. Then $T(c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p) = \mathbf{0} = T(\mathbf{0})$, and since $T$ is one-to-one, $c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p = \mathbf{0}$, so all $c_i = 0$. Thus $T(\mathbf{v}_1), \ldots, T(\mathbf{v}_p)$ is a basis of $T(H)$ and $\dim T(H) = p = \dim H$. With $H = V$ and $T$ onto, $T(V) = W$, so $\dim W = \dim V$.
 
 ^pf-27-7
 
-*Uses:* [[§27 The Dimension of a Vector Space#^cor-27-4|§27.4]], [[§24 Null Spaces, Column Spaces, and Linear Transformations|§24]]
+*Uses:* [[§27 The Dimension of a Vector Space#^cor-27-4|§27.4]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|§24.5]]
 
 
 ## The Dimensions of Nul A and Col A
 
-The pivot columns of $A$ form a basis for $\operatorname{Col} A$ ([[§25 Linearly Independent Sets; Bases|§25]], Theorem 6), so $\dim \operatorname{Col} A$ is known as soon as the pivot columns are. A basis of $\operatorname{Nul} A$ usually takes more work, but its size is just as easy to find.
+The pivot columns of $A$ form a basis for $\operatorname{Col} A$ ([[§25 Linearly Independent Sets; Bases#^thm-25-3|Theorem §25.3]]), so $\dim \operatorname{Col} A$ is known as soon as the pivot columns are. A basis of $\operatorname{Nul} A$ usually takes more work, but its size is just as easy to find.
 
 > [!theorem] Theorem §27.8: Dimensions of Nul A and Col A
 > Let $A$ be an $m \times n$ matrix. The dimension of $\operatorname{Nul} A$ is the number of free variables in the equation $A\mathbf{x} = \mathbf{0}$, and the dimension of $\operatorname{Col} A$ is the number of pivot columns in $A$.
@@ -253,11 +253,11 @@ The pivot columns of $A$ form a basis for $\operatorname{Col} A$ ([[§25 Linearl
 > [!proof]+ Proof
 > **Col A.** The pivot columns of $A$ form a basis for $\operatorname{Col} A$, so their number is $\dim \operatorname{Col} A$.
 >
-> **Nul A.** Suppose $A\mathbf{x} = \mathbf{0}$ has $k$ free variables. If $k = 0$, then $\operatorname{Nul} A = \{\mathbf{0}\}$ has dimension $0$. Otherwise, the standard method of Section 4.2 ([[§24 Null Spaces, Column Spaces, and Linear Transformations|§24]]) writes the general solution in parametric vector form $\mathbf{x} = x_{j_1}\mathbf{u}_1 + \cdots + x_{j_k}\mathbf{u}_k$, one vector $\mathbf{u}_i$ for each free variable $x_{j_i}$, so $\mathbf{u}_1, \ldots, \mathbf{u}_k$ span $\operatorname{Nul} A$. They are linearly independent: in entry $j_i$, the vector $\mathbf{u}_i$ has a $1$ and every other $\mathbf{u}_l$ has a $0$, so if $c_1\mathbf{u}_1 + \cdots + c_k\mathbf{u}_k = \mathbf{0}$, then entry $j_i$ gives $c_i = 0$. So $\{\mathbf{u}_1, \ldots, \mathbf{u}_k\}$ is a basis for $\operatorname{Nul} A$, and $\dim \operatorname{Nul} A = k$.
+> **Nul A.** Suppose $A\mathbf{x} = \mathbf{0}$ has $k$ free variables. If $k = 0$, then $\operatorname{Nul} A = \{\mathbf{0}\}$ has dimension $0$. Otherwise, the standard method of Section 4.2 ([[§24 Null Spaces, Column Spaces, and Linear Transformations#^rem-24-1|Remark: Method — A Spanning Set for Nul A]]; see also [[§24 Null Spaces, Column Spaces, and Linear Transformations#^prop-24-2|Proposition §24.2]]) writes the general solution in parametric vector form $\mathbf{x} = x_{j_1}\mathbf{u}_1 + \cdots + x_{j_k}\mathbf{u}_k$, one vector $\mathbf{u}_i$ for each free variable $x_{j_i}$, so $\mathbf{u}_1, \ldots, \mathbf{u}_k$ span $\operatorname{Nul} A$. They are linearly independent: in entry $j_i$, the vector $\mathbf{u}_i$ has a $1$ and every other $\mathbf{u}_l$ has a $0$, so if $c_1\mathbf{u}_1 + \cdots + c_k\mathbf{u}_k = \mathbf{0}$, then entry $j_i$ gives $c_i = 0$. So $\{\mathbf{u}_1, \ldots, \mathbf{u}_k\}$ is a basis for $\operatorname{Nul} A$, and $\dim \operatorname{Nul} A = k$.
 
 ^pf-27-8
 
-*Uses:* [[§25 Linearly Independent Sets; Bases|§25]] (Theorem 6), [[§24 Null Spaces, Column Spaces, and Linear Transformations|§24]] (spanning set for Nul A)
+*Uses:* [[§25 Linearly Independent Sets; Bases#^thm-25-3|§25.3]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^prop-24-2|§24.2]]
 
 > [!example] Example §27.5: Dimensions of the Null Space and the Column Space
 > Find $\dim \operatorname{Nul} A$ and $\dim \operatorname{Col} A$ for

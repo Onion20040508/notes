@@ -116,7 +116,7 @@ Vector notation turns the general solution of a linear system into a geometric o
 
 *Uses:* [[§4 The Matrix Equation Ax = b#^thm-4-5|§4.5]], [[§2 Row Reduction and Echelon Forms#^def-2-4|Def. §2.4]], [[§3 Vector Equations#^def-3-4|Def. §3.4]]
 
-One free variable gives a line through the origin (Example §5.1); two or more give a plane through the origin as a good mental image (Example §5.2). The same picture serves for $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$ in general ([[§3 Vector Equations#^rem-3-2|§3, Remark]]). The solution set of $A\mathbf{x} = \mathbf{0}$ is the null space of $A$, studied in [[§18 Subspaces of ℝⁿ|§18]].
+One free variable gives a line through the origin (Example §5.1); two or more give a plane through the origin as a good mental image (Example §5.2). The same picture serves for $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$ in general ([[§3 Vector Equations#^rem-3-2|§3, Remark]]). The solution set of $A\mathbf{x} = \mathbf{0}$ is the null space of $A$ ([[§18 Subspaces of ℝⁿ#^def-18-3|Definition §18.3]]).
 
 ## Parametric Vector Form
 
@@ -176,7 +176,7 @@ Geometrically, adding $\mathbf{p}$ to $\mathbf{v}$ *translates* $\mathbf{v}$ to 
 ^thm-5-3
 
 > [!proof]+ Proof
-> Lay leaves the proof to Practice Problem 3 and Exercise 25. Both inclusions follow from Theorem §4.5.
+> Lay proves the first inclusion in the solution to Practice Problem 3 and leaves the second to Exercise 25 (written out here). Both follow from Theorem §4.5.
 > - If $A\mathbf{v}_h = \mathbf{0}$ and $\mathbf{w} = \mathbf{p} + \mathbf{v}_h$, then $A\mathbf{w} = A\mathbf{p} + A\mathbf{v}_h = \mathbf{b} + \mathbf{0} = \mathbf{b}$. So every vector of the form $\mathbf{p} + \mathbf{v}_h$ is a solution.
 > - Conversely, let $\mathbf{w}$ be any solution of $A\mathbf{x} = \mathbf{b}$ and put $\mathbf{v}_h = \mathbf{w} - \mathbf{p}$. Then $A\mathbf{v}_h = A\mathbf{w} - A\mathbf{p} = \mathbf{b} - \mathbf{b} = \mathbf{0}$, so $\mathbf{v}_h$ solves the homogeneous equation and $\mathbf{w} = \mathbf{p} + \mathbf{v}_h$ has the stated form.
 

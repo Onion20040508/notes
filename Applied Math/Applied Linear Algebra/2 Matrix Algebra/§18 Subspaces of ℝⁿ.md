@@ -29,7 +29,7 @@ A subspace of $\mathbb{R}^n$ is a set of vectors closed under addition and scala
 ^def-18-1
 
 > [!remark]- Connections
-> - Rigorous treatment: subspaces of an arbitrary vector space, with the same three conditions, [[§3 Subspaces#^ladr-1-34|LADR 1.34]]; here in [[§23 Vector Spaces and Subspaces|§23]]. Over a general field the sum and scalar multiple are those of the ambient space; nothing changes in the proofs below.
+> - Rigorous treatment: subspaces of an arbitrary vector space, with the same three conditions, [[§3 Subspaces#^ladr-1-34|LADR 1.34]]; here in [[§23 Vector Spaces and Subspaces#^def-23-2|Definition §23.2]]. Over a general field the sum and scalar multiple are those of the ambient space; nothing changes in the proofs below.
 
 > [!theorem] Proposition §18.1: A Span Is a Subspace
 > For $\mathbf{v}_1, \ldots, \mathbf{v}_p$ in $\mathbb{R}^n$, the set $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ of all linear combinations of $\mathbf{v}_1, \ldots, \mathbf{v}_p$ is a subspace of $\mathbb{R}^n$, called the **subspace spanned** (or **generated**) by $\mathbf{v}_1, \ldots, \mathbf{v}_p$.
@@ -49,7 +49,7 @@ A subspace of $\mathbb{R}^n$ is a set of vectors closed under addition and scala
 
 ^pf-18-1
 
-*Uses:* [[§18 Subspaces of ℝⁿ#^def-18-1|Def. §18.1]], [[§3 Vector Equations|§3]] (span)
+*Uses:* [[§18 Subspaces of ℝⁿ#^def-18-1|Def. §18.1]], [[§3 Vector Equations#^def-3-4|Def. §3.4]]
 
 For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the standard picture of a subspace: a plane through the origin. If $\mathbf{v}_1 \ne \mathbf{0}$ and $\mathbf{v}_2$ is a multiple of $\mathbf{v}_1$, they span only a line through the origin, which is also a subspace.
 
@@ -63,7 +63,7 @@ For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the stan
 >
 > So the subspaces of $\mathbb{R}^2$ are $\{\mathbf{0}\}$, the lines through the origin, and $\mathbb{R}^2$. Each is a null space: $\{\mathbf{0}\} = \operatorname{Nul}\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$, the line through $(a, b) \ne \mathbf{0}$ is $\operatorname{Nul}\begin{bmatrix} b & -a \end{bmatrix}$ (since $b(ca) - a(cb) = 0$, and conversely $bx - ay = 0$ forces $(x, y)$ to be a multiple of $(a, b)$), and $\mathbb{R}^2 = \operatorname{Nul}\begin{bmatrix} 0 & 0 \end{bmatrix}$.
 >
-> **$\mathbb{R}^3$.** The same reasoning gives: $\{\mathbf{0}\}$; lines through the origin (all vectors of $V$ proportional to one fixed vector); planes through the origin (if $V$ contains two non-proportional vectors $\mathbf{u}$, $\mathbf{v}$, it contains the plane they span, and if nothing else, it is that plane); and $\mathbb{R}^3$ (if $V$ contains three vectors not in one plane through the origin). In general the subspaces of $\mathbb{R}^n$ are the "flat" copies of $\mathbb{R}^0, \mathbb{R}^1, \ldots, \mathbb{R}^n$ passing through the origin; [[§19 Dimension and Rank|§19]] makes "copy of $\mathbb{R}^k$" precise.
+> **$\mathbb{R}^3$.** The same reasoning gives: $\{\mathbf{0}\}$; lines through the origin (all vectors of $V$ proportional to one fixed vector); planes through the origin (if $V$ contains two non-proportional vectors $\mathbf{u}$, $\mathbf{v}$, it contains the plane they span, and if nothing else, it is that plane); and $\mathbb{R}^3$ (if $V$ contains three vectors not in one plane through the origin). In general the subspaces of $\mathbb{R}^n$ are the "flat" copies of $\mathbb{R}^0, \mathbb{R}^1, \ldots, \mathbb{R}^n$ passing through the origin; [[§19 Dimension and Rank#^rem-19-1|§19, Remark: A Subspace with a Basis of p Vectors Looks Like ℝᵖ]] makes "copy of $\mathbb{R}^k$" precise.
 >
 > *Source: 235 lecture L10*
 
@@ -97,7 +97,7 @@ For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the stan
 > \operatorname{Col} A = \operatorname{Span}\{\mathbf{a}_1, \ldots, \mathbf{a}_n\} = \{A\mathbf{x} : \mathbf{x} \in \mathbb{R}^n\} .
 > $$
 >
-> By Proposition §18.1, **the column space of an $m \times n$ matrix is a subspace of $\mathbb{R}^m$**. $\operatorname{Col} A = \mathbb{R}^m$ exactly when the columns of $A$ span $\mathbb{R}^m$; otherwise $\operatorname{Col} A$ is only part of $\mathbb{R}^m$.
+> By [[§18 Subspaces of ℝⁿ#^prop-18-1|Proposition §18.1]], **the column space of an $m \times n$ matrix is a subspace of $\mathbb{R}^m$**. $\operatorname{Col} A = \mathbb{R}^m$ exactly when the columns of $A$ span $\mathbb{R}^m$; otherwise $\operatorname{Col} A$ is only part of $\mathbb{R}^m$.
 >
 > *Lay: 2.8, Definition*
 > *Source: 235 lecture L10*
@@ -140,7 +140,7 @@ For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the stan
 ^thm-18-2
 
 > [!proof]+ Proof
-> The zero vector is in $\operatorname{Nul} A$, because $A\mathbf{0} = \mathbf{0}$. Let $\mathbf{u}$ and $\mathbf{v}$ be in $\operatorname{Nul} A$, so $A\mathbf{u} = \mathbf{0}$ and $A\mathbf{v} = \mathbf{0}$. By the linearity of matrix multiplication (Theorem 5 of §4),
+> The zero vector is in $\operatorname{Nul} A$, because $A\mathbf{0} = \mathbf{0}$. Let $\mathbf{u}$ and $\mathbf{v}$ be in $\operatorname{Nul} A$, so $A\mathbf{u} = \mathbf{0}$ and $A\mathbf{v} = \mathbf{0}$. By the linearity of matrix multiplication ([[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5]]),
 >
 > $$
 > A(\mathbf{u} + \mathbf{v}) = A\mathbf{u} + A\mathbf{v} = \mathbf{0} + \mathbf{0} = \mathbf{0},
@@ -150,13 +150,13 @@ For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the stan
 
 ^pf-18-2
 
-*Uses:* [[§18 Subspaces of ℝⁿ#^def-18-1|Def. §18.1]], [[§4 The Matrix Equation Ax = b|§4]] (Theorem 5)
+*Uses:* [[§18 Subspaces of ℝⁿ#^def-18-1|Def. §18.1]], [[§4 The Matrix Equation Ax = b#^thm-4-5|§4.5]]
 
 > [!remark]- Connections
-> - Rigorous treatment: for a linear map $T : V \to W$, $\operatorname{null} T$ is a subspace of $V$ and $\operatorname{range} T$ a subspace of $W$, [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]] and [[§8 Null Spaces and Ranges#^ladr-3-18|LADR 3.18]]; for $T(\mathbf{x}) = A\mathbf{x}$ these are $\operatorname{Nul} A$ and $\operatorname{Col} A$ (kernel and range, [[§24 Null Spaces, Column Spaces, and Linear Transformations|§24]]).
+> - Rigorous treatment: for a linear map $T : V \to W$, $\operatorname{null} T$ is a subspace of $V$ and $\operatorname{range} T$ a subspace of $W$, [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]] and [[§8 Null Spaces and Ranges#^ladr-3-18|LADR 3.18]]; for $T(\mathbf{x}) = A\mathbf{x}$ these are $\operatorname{Nul} A$ and $\operatorname{Col} A$ (kernel and range, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5|Definition §24.5]]).
 
 > [!remark] Remark: Implicit and Explicit Descriptions
-> To test whether a given $\mathbf{v}$ is in $\operatorname{Nul} A$, just compute $A\mathbf{v}$. Because $\operatorname{Nul} A$ is described by a condition that must be checked for each vector, it is defined **implicitly**. The column space is defined **explicitly**: its vectors are constructed, as linear combinations of the columns. To get an explicit description of $\operatorname{Nul} A$, solve $A\mathbf{x} = \mathbf{0}$ and write the solution in parametric vector form ([[§18 Subspaces of ℝⁿ#^ex-18-4|Example §18.4]]). The lecture adds that *every* subspace of $\mathbb{R}^n$ arises both ways: it is $\operatorname{Nul} A$ for some $A$ and $\operatorname{Col} B$ for some $B$. (Take $B$ with a basis of the subspace as columns, [[§19 Dimension and Rank|§19]]; for $A$, take a matrix whose rows span the orthogonal complement, as in [[§40 Inner Product, Length, and Orthogonality|§40]], where $(\operatorname{Row} A)^\perp = \operatorname{Nul} A$.) Natural questions are then how to describe $\operatorname{Nul} A$ as some $\operatorname{Col} B$, and how to tell whether $\operatorname{Nul} A = \operatorname{Nul} B$; bases answer both.
+> To test whether a given $\mathbf{v}$ is in $\operatorname{Nul} A$, just compute $A\mathbf{v}$. Because $\operatorname{Nul} A$ is described by a condition that must be checked for each vector, it is defined **implicitly**. The column space is defined **explicitly**: its vectors are constructed, as linear combinations of the columns. To get an explicit description of $\operatorname{Nul} A$, solve $A\mathbf{x} = \mathbf{0}$ and write the solution in parametric vector form ([[§18 Subspaces of ℝⁿ#^ex-18-4|Example §18.4]]). The lecture adds that *every* subspace of $\mathbb{R}^n$ arises both ways: it is $\operatorname{Nul} A$ for some $A$ and $\operatorname{Col} B$ for some $B$. (A subspace $H$ of $\mathbb{R}^n$ has a finite basis, [[§27 The Dimension of a Vector Space#^thm-27-3|Theorem §27.3]]; take $B$ with these basis vectors as columns. For $A$, take a matrix whose rows span the orthogonal complement $H^\perp$: then $\operatorname{Nul} A = (\operatorname{Row} A)^\perp = (H^\perp)^\perp = H$ by [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]] and [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|Corollary §40.8]].) Natural questions are then how to describe $\operatorname{Nul} A$ as some $\operatorname{Col} B$, and how to tell whether $\operatorname{Nul} A = \operatorname{Nul} B$; bases answer both.
 >
 > *Source: 235 lecture L10*
 
@@ -164,7 +164,7 @@ For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the stan
 
 ## Basis for a Subspace
 
-A subspace typically contains infinitely many vectors, so problems about it are best handled with a small finite set of vectors that span it. The smaller the set, the better, and a smallest spanning set must be linearly independent.
+A subspace typically contains infinitely many vectors, so problems about it are best handled with a small finite set of vectors that span it. The smaller the set, the better, and a smallest spanning set must be linearly independent (a dependent spanning set contains a redundant vector, which can be dropped without changing the span, [[§7 Linear Independence#^prop-7-5|Proposition §7.5]]).
 
 > [!definition] Definition §18.4: Basis
 > A **basis** for a subspace $H$ of $\mathbb{R}^n$ is a linearly independent set in $H$ that spans $H$.
@@ -177,7 +177,7 @@ A subspace typically contains infinitely many vectors, so problems about it are 
 ^def-18-4
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§5 Bases#^ladr-2-26|LADR 2.26]] (basis of any vector space) and [[§5 Bases#^ladr-2-28|LADR 2.28]] (every vector is a unique combination of the basis, the property used for coordinates in [[§19 Dimension and Rank|§19]]); here in general vector spaces, [[§25 Linearly Independent Sets; Bases|§25]].
+> - Rigorous treatment: [[§5 Bases#^ladr-2-26|LADR 2.26]] (basis of any vector space) and [[§5 Bases#^ladr-2-28|LADR 2.28]] (every vector is a unique combination of the basis, the property used for coordinates in [[§19 Dimension and Rank#^prop-19-1|Proposition §19.1]]); here in general vector spaces, [[§25 Linearly Independent Sets; Bases#^def-25-2|Definition §25.2]].
 
 > [!example] Example §18.4: A Basis for a Null Space
 > Find a basis for the null space of
@@ -252,22 +252,22 @@ A subspace typically contains infinitely many vectors, so problems about it are 
 ^thm-18-3
 
 > [!proof]+ Proof
-> (Lay: "The argument in Example 8 can be adapted to prove the theorem." Here is the adaptation; Lay writes it out for general vector spaces in 4.3, [[§25 Linearly Independent Sets; Bases|§25]].) Let $B$ be the reduced echelon form of $A$, with pivots in columns $p_1 < \cdots < p_r$.
+> (Lay: "The argument in Example 8 can be adapted to prove the theorem." Here is the adaptation; Lay writes it out for general vector spaces in 4.3, [[§25 Linearly Independent Sets; Bases#^thm-25-3|Theorem §25.3]].) Let $B$ be the reduced echelon form of $A$, with pivots in columns $p_1 < \cdots < p_r$.
 >
 > **The columns of $A$ and of $B$ satisfy the same dependence relations.** Row operations do not change the solution set of a homogeneous system, so for every $\mathbf{x}$, $x_1\mathbf{a}_1 + \cdots + x_n\mathbf{a}_n = \mathbf{0}$ if and only if $x_1\mathbf{b}_1 + \cdots + x_n\mathbf{b}_n = \mathbf{0}$.
 >
 > **In $B$.** The pivot columns of $B$ are $\mathbf{e}_1, \ldots, \mathbf{e}_r$, which are linearly independent. Every row of $B$ below row $r$ is zero, so every column of $B$ is a combination of $\mathbf{e}_1, \ldots, \mathbf{e}_r$: a nonpivot column $\mathbf{b}_k$ equals $b_{1k}\mathbf{b}_{p_1} + \cdots + b_{rk}\mathbf{b}_{p_r}$.
 >
-> **Transfer to $A$.** The relation $\mathbf{b}_k - (b_{1k}\mathbf{b}_{p_1} + \cdots + b_{rk}\mathbf{b}_{p_r}) = \mathbf{0}$ gives the same relation $\mathbf{a}_k = b_{1k}\mathbf{a}_{p_1} + \cdots + b_{rk}\mathbf{a}_{p_r}$, so each nonpivot column of $A$ is a combination of the pivot columns of $A$. Hence any combination of all the columns of $A$ can be rewritten as a combination of the pivot columns alone (as in Example §18.5(a)): the pivot columns span $\operatorname{Col} A$. Finally, a dependence relation $c_1\mathbf{a}_{p_1} + \cdots + c_r\mathbf{a}_{p_r} = \mathbf{0}$ would give $c_1\mathbf{b}_{p_1} + \cdots + c_r\mathbf{b}_{p_r} = \mathbf{0}$, so all $c_i = 0$: the pivot columns of $A$ are linearly independent. They form a basis for $\operatorname{Col} A$.
+> **Transfer to $A$.** The relation $\mathbf{b}_k - (b_{1k}\mathbf{b}_{p_1} + \cdots + b_{rk}\mathbf{b}_{p_r}) = \mathbf{0}$ gives the same relation $\mathbf{a}_k = b_{1k}\mathbf{a}_{p_1} + \cdots + b_{rk}\mathbf{a}_{p_r}$, so each nonpivot column of $A$ is a combination of the pivot columns of $A$. Hence any combination of all the columns of $A$ can be rewritten as a combination of the pivot columns alone (as in [[§18 Subspaces of ℝⁿ#^ex-18-5|Example §18.5]](a)): the pivot columns span $\operatorname{Col} A$. Finally, a dependence relation $c_1\mathbf{a}_{p_1} + \cdots + c_r\mathbf{a}_{p_r} = \mathbf{0}$ would give $c_1\mathbf{b}_{p_1} + \cdots + c_r\mathbf{b}_{p_r} = \mathbf{0}$, so all $c_i = 0$: the pivot columns of $A$ are linearly independent. They form a basis for $\operatorname{Col} A$.
 
 ^pf-18-3
 
-*Uses:* [[§18 Subspaces of ℝⁿ#^def-18-4|Def. §18.4]], [[§18 Subspaces of ℝⁿ#^def-18-2|Def. §18.2]], [[§2 Row Reduction and Echelon Forms|§2]] (reduced echelon form, pivot columns), [[§1 Systems of Linear Equations|§1]] (row equivalent systems have the same solutions), [[§7 Linear Independence|§7]]
+*Uses:* [[§18 Subspaces of ℝⁿ#^def-18-4|Def. §18.4]], [[§18 Subspaces of ℝⁿ#^def-18-2|Def. §18.2]], [[§2 Row Reduction and Echelon Forms#^def-2-1|Def. §2.1]], [[§2 Row Reduction and Echelon Forms#^def-2-3|Def. §2.3]], [[§1 Systems of Linear Equations#^thm-1-2|§1.2]], [[§7 Linear Independence#^def-7-1|Def. §7.1]]
 
 > [!remark] Remark: Method — Bases for Nul A and Col A
 > **Nul A.** Row reduce $[\,A \ \ \mathbf{0}\,]$ to reduced echelon form, solve for the basic variables in terms of the free variables, and write the general solution in parametric vector form $\mathbf{x} = x_{f_1}\mathbf{u}_1 + \cdots + x_{f_k}\mathbf{u}_k$, one vector for each free variable. The vectors $\mathbf{u}_1, \ldots, \mathbf{u}_k$ form a basis for $\operatorname{Nul} A$. (If there are no free variables, $\operatorname{Nul} A = \{\mathbf{0}\}$.)
 >
-> **Col A.** Row reduce $A$ to an echelon form (any echelon form) to locate the pivot columns. The corresponding columns **of $A$ itself**, not of the echelon form, form a basis for $\operatorname{Col} A$ (Theorem §18.3). The columns of an echelon form are often not even in $\operatorname{Col} A$.
+> **Col A.** Row reduce $A$ to an echelon form (any echelon form) to locate the pivot columns. The corresponding columns **of $A$ itself**, not of the echelon form, form a basis for $\operatorname{Col} A$ ([[§18 Subspaces of ℝⁿ#^thm-18-3|Theorem §18.3]]). The columns of an echelon form are often not even in $\operatorname{Col} A$.
 >
 > *Source: 235 lecture L16*
 

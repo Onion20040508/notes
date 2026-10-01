@@ -112,7 +112,7 @@ A matrix can be row reduced to many different echelon forms, by different sequen
 
 ^pf-2-1
 
-*Uses:* [[§1 Systems of Linear Equations#^prop-1-1|§1.1]], [[§1 Systems of Linear Equations#^thm-1-2|§1.2]], [[§2 Row Reduction and Echelon Forms#^def-2-1|Def. §2.1]], [[§3 Vector Equations|§3]] (linear combinations)
+*Uses:* [[§1 Systems of Linear Equations#^prop-1-1|§1.1]], [[§1 Systems of Linear Equations#^thm-1-2|§1.2]], [[§2 Row Reduction and Echelon Forms#^def-2-1|Def. §2.1]], [[§3 Vector Equations#^def-3-3|Def. §3.3]] (linear combinations)
 
 > [!definition] Definition §2.2: Echelon Form and Reduced Echelon Form of a Matrix
 > If a matrix $A$ is row equivalent to an echelon matrix $U$, then $U$ is **an echelon form** (or row echelon form) **of $A$**. If $U$ is in reduced echelon form, $U$ is **the reduced echelon form of $A$**; "the" is justified by Theorem §2.1. Matrix programs abbreviate it **RREF** (and an echelon form **REF**).
@@ -338,7 +338,7 @@ $$
 > x_1 - 7x_2 + 2x_3 - 5x_4 + 8x_5 = 10, \qquad x_2 - 3x_3 + 3x_4 + x_5 = -5, \qquad x_4 - x_5 = 4,
 > $$
 >
-> by **back-substitution**: solve the last equation for $x_4$ in terms of $x_5$, substitute into the second and solve for $x_2$, then substitute both into the first and solve for $x_1$. The matrix form of the backward phase uses the same number of arithmetic operations, and its discipline makes errors less likely in hand computation. Best strategy by hand: solve from the *reduced* echelon form only.
+> by **back-substitution**: solve the last equation for $x_4$ in terms of $x_5$, substitute into the second and solve for $x_2$, then substitute both into the first and solve for $x_1$ (a small case by hand: [[§1 Systems of Linear Equations#^ex-1-5|Example §1.5]]). The matrix form of the backward phase uses the same number of arithmetic operations, and its discipline makes errors less likely in hand computation. Best strategy by hand: solve from the *reduced* echelon form only.
 
 ^rem-2-3
 
@@ -373,7 +373,7 @@ A nonreduced echelon form is a poor tool for solving a system, but it is just ri
 *Uses:* [[§1 Systems of Linear Equations#^thm-1-2|§1.2]], [[§2 Row Reduction and Echelon Forms#^cor-2-2|§2.2]], [[§2 Row Reduction and Echelon Forms#^def-2-4|Def. §2.4]]
 
 > [!remark]- Connections
-> - Axler gets the two counting consequences by dimension, without row reduction: a homogeneous system with more variables than equations has a nonzero solution ([[§8 Null Spaces and Ranges#^ladr-3-26|LADR 3.26]]), and a system with more equations than variables is inconsistent for some right-hand side ([[§8 Null Spaces and Ranges#^ladr-3-28|LADR 3.28]]). In Lay's language both are pivot counts: more columns than rows forces a free variable, more rows than columns leaves a row without a pivot ([[§4 The Matrix Equation Ax = b|§4]], [[§7 Linear Independence|§7]]).
+> - Axler gets the two counting consequences by dimension, without row reduction: a homogeneous system with more variables than equations has a nonzero solution ([[§8 Null Spaces and Ranges#^ladr-3-26|LADR 3.26]]), and a system with more equations than variables is inconsistent for some right-hand side ([[§8 Null Spaces and Ranges#^ladr-3-28|LADR 3.28]]). In Lay's language both are pivot counts: more columns than rows forces a free variable ([[§7 Linear Independence#^thm-7-6|Theorem §7.6]]), more rows than columns leaves a row without a pivot ([[§4 The Matrix Equation Ax = b#^thm-4-3|Theorem §4.3]]).
 
 > [!theorem] Corollary §2.4: No Solution, One Solution, or Infinitely Many
 > A system of linear equations has
@@ -448,7 +448,7 @@ The lecture's shorthand for the count: a consistent system has "$\infty^{k}$" so
 > + r \begin{bmatrix} -3 \\ 0 \\ 1 \\ 2 \\ 1 \end{bmatrix} .
 > $$
 >
-> (Vector notation is introduced in [[§3 Vector Equations|§3]]; this "parametric vector form" is the subject of [[§5 Solution Sets of Linear Systems|§5]].) **Check:** $(2, 0, 4, 3, 0)$ gives $4 - 8 + 6 = 2$, $2 - 4 + 6 = 4$, $6 - 8 + 3 = 1$, $10 - 16 + 15 = 9$; and both direction vectors make every left side $0$ (for instance $(-3, 0, 1, 2, 1)$ in equation 3: $-9 - 2 + 2 + 9 = 0$).
+> (Vector notation is introduced in [[§3 Vector Equations|§3]]; this is the "parametric vector form" of [[§5 Solution Sets of Linear Systems#^def-5-2|Definition §5.2]].) **Check:** $(2, 0, 4, 3, 0)$ gives $4 - 8 + 6 = 2$, $2 - 4 + 6 = 4$, $6 - 8 + 3 = 1$, $10 - 16 + 15 = 9$; and both direction vectors make every left side $0$ (for instance $(-3, 0, 1, 2, 1)$ in equation 3: $-9 - 2 + 2 + 9 = 0$).
 >
 > *In the L2 version the first row keeps the right-hand side $2$ after division by $2$ (it should be $1$), so some intermediate matrices there are off; the reduced echelon form and the parametric solution in both lectures are the ones above.*
 >

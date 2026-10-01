@@ -11,7 +11,7 @@ tags: [applied-linear-algebra, math235]
 
 *Lay, Section 2.5 · MATH 235 lecture L9.*
 
-Matrix multiplication combines data; a factorization $A = BC$ analyzes it, splitting $A$ into pieces with more useful structure. This section is about the LU factorization $A = LU$, with $L$ unit lower triangular and $U$ an echelon form of $A$. It is what computer programs use to solve many systems $A\mathbf{x} = \mathbf{b}_1, A\mathbf{x} = \mathbf{b}_2, \ldots$ with the same coefficient matrix: each system becomes two triangular systems, which are cheap to solve. The factorization costs nothing extra, since $L$ simply records the multipliers used while row reducing $A$ to $U$. A second application factors the transfer matrix of an electrical network into the matrices of simple circuits. Other factorizations come later: QR ([[§43 The Gram–Schmidt Process#^thm-43-3|Theorem §43.3]]), $PDP^{-1}$ ([[§34 Diagonalization|§34]]), the spectral decomposition ([[§48★ Diagonalization of Symmetric Matrices#^thm-48-4|Theorem §48.4]]) and the SVD ([[§51★ The Singular Value Decomposition#^thm-51-4|Theorem §51.4]]).
+Matrix multiplication combines data; a factorization $A = BC$ analyzes it, splitting $A$ into pieces with more useful structure. This section is about the LU factorization $A = LU$, with $L$ unit lower triangular and $U$ an echelon form of $A$. It is what computer programs use to solve many systems $A\mathbf{x} = \mathbf{b}_1, A\mathbf{x} = \mathbf{b}_2, \ldots$ with the same coefficient matrix: each system becomes two triangular systems, which are cheap to solve. The factorization costs nothing extra, since $L$ simply records the multipliers used while row reducing $A$ to $U$. A second application factors the transfer matrix of an electrical network into the matrices of simple circuits. Other factorizations come later: QR ([[§43 The Gram–Schmidt Process#^thm-43-3|Theorem §43.3]]), $PDP^{-1}$ ([[§34 Diagonalization#^thm-34-1|Theorem §34.1]]), the spectral decomposition ([[§48★ Diagonalization of Symmetric Matrices#^thm-48-4|Theorem §48.4]]) and the SVD ([[§51★ The Singular Value Decomposition#^thm-51-4|Theorem §51.4]]).
 
 ## The LU Factorization
 
@@ -114,7 +114,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 ^pf-15-1
 
-*Uses:* [[§11 Matrix Operations#^prop-11-4|§11.4]], [[§12 The Inverse of a Matrix#^prop-12-6|§12.6]], [[§13 Characterizations of Invertible Matrices#^cor-13-2|§13.2]]
+*Uses:* [[§11 Matrix Operations#^prop-11-4|§11.4]], [[§12 The Inverse of a Matrix#^def-12-3|Def. §12.3]], [[§12 The Inverse of a Matrix#^prop-12-6|§12.6]], [[§13 Characterizations of Invertible Matrices#^cor-13-2|§13.2]]
 
 > [!theorem] Theorem §15.2: Existence of an LU Factorization
 > Suppose an $m \times n$ matrix $A$ can be reduced to an echelon form $U$ using only row replacements that add a multiple of one row to another row *below* it. Then there are unit lower triangular elementary matrices $E_1, \ldots, E_p$ with
@@ -146,7 +146,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 ^pf-15-2
 
-*Uses:* [[§12 The Inverse of a Matrix#^prop-12-6|§12.6]], [[§15 Matrix Factorizations#^prop-15-1|§15.1]], [[§13 Characterizations of Invertible Matrices#^cor-13-2|§13.2]]
+*Uses:* [[§12 The Inverse of a Matrix#^def-12-3|Def. §12.3]], [[§12 The Inverse of a Matrix#^prop-12-6|§12.6]], [[§15 Matrix Factorizations#^prop-15-1|§15.1]], [[§13 Characterizations of Invertible Matrices#^cor-13-2|§13.2]]
 
 > [!remark] Remark: Method — LU Factorization
 > 1. Reduce $A$ to an echelon form $U$ by a sequence of row replacement operations (each adding a multiple of a row to a row below it), if possible.

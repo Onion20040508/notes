@@ -96,7 +96,7 @@ The expanded version is the one commonly used in applications. When the form has
 
 ^pf-50-1
 
-*Uses:* [[§49★ Quadratic Forms#^thm-49-2|§49.2]] (Principal Axes Theorem), [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|§48.3]], [[§50★ Constrained Optimization#^def-50-1|Def. §50.1]], [[§41 Orthogonal Sets|§41]] (Theorem 7: $\|P\mathbf{y}\| = \|\mathbf{y}\|$)
+*Uses:* [[§49★ Quadratic Forms#^thm-49-2|§49.2]] (Principal Axes Theorem), [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|§48.3]], [[§50★ Constrained Optimization#^def-50-1|Def. §50.1]], [[§41 Orthogonal Sets#^thm-41-5|§41.5]] ($\|P\mathbf{y}\| = \|\mathbf{y}\|$)
 
 > [!remark]- Connections
 > - The same answer by Lagrange multipliers: maximize $f(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$ subject to $g(\mathbf{x}) = \mathbf{x}^T\mathbf{x} - 1 = 0$. Since $\nabla f = 2A\mathbf{x}$ (using $A^T = A$) and $\nabla g = 2\mathbf{x} \ne \mathbf{0}$ on the sphere, the Lagrange condition $\nabla f = \lambda \nabla g$ is exactly $A\mathbf{x} = \lambda\mathbf{x}$: the constrained critical points are the unit eigenvectors, and there $f(\mathbf{x}) = \lambda\,\mathbf{x}^T\mathbf{x} = \lambda$. The sphere is compact, so the maximum and minimum exist and are the largest and smallest eigenvalues. See [[§97 Lagrange Multipliers#^thm-97-1|Calc Thm. §97.1]] and, rigorously in $\mathbb{R}^n$, [[§14 Optimization and Lagrange Multipliers#^thm-14-3|452 Thm. §14.3]]. The proof above avoids calculus altogether.

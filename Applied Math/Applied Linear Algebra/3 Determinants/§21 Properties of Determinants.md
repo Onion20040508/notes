@@ -15,7 +15,7 @@ tags: [applied-linear-algebra, math235]
 
 ## Row Operations
 
-[[§12 The Inverse of a Matrix|§12]] (2.2) showed that each elementary row operation on an $n \times n$ matrix $A$ is left multiplication by an elementary matrix $E$, obtained by performing the same operation on $I_n$.
+[[§12 The Inverse of a Matrix#^prop-12-6|Proposition §12.6]] (2.2) showed that each elementary row operation on an $n \times n$ matrix $A$ is left multiplication by an elementary matrix $E$, obtained by performing the same operation on $I_n$.
 
 > [!definition] Definition §21.1: Replacement, Interchange and Scaling Matrices
 > An elementary matrix $E$ is
@@ -47,7 +47,7 @@ tags: [applied-linear-algebra, math235]
 ^thm-21-1
 
 > [!remark] Remark: Why It Works
-> For $n = 2$, $|\det|$ is the area of the parallelogram spanned by the rows ([[§22 Cramer’s Rule, Volume, and Linear Transformations|§22]], Theorem 9 of 3.3). Replacing a row $\mathbf{u}$ by $\mathbf{u} + k\mathbf{v}$ slides one side of the parallelogram parallel to the other side $\mathbf{v}$: base and height stay the same, so the area does not change, for any value of $k$. The lecture calls this the geometric reincarnation of a row replacement, and reads it algebraically through linearity in one row (Theorem §21.11 applied to $A^T$): $\det\begin{bmatrix} \mathbf{v} \\ \mathbf{u} + k\mathbf{v} \end{bmatrix} = \det\begin{bmatrix} \mathbf{v} \\ \mathbf{u} \end{bmatrix} + \det\begin{bmatrix} \mathbf{v} \\ k\mathbf{v} \end{bmatrix}$, and the last determinant is $0$.
+> For $n = 2$, $|\det|$ is the area of the parallelogram spanned by the rows ([[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-4|Theorem §22.4]], applied to $A^T$). Replacing a row $\mathbf{u}$ by $\mathbf{u} + k\mathbf{v}$ slides one side of the parallelogram parallel to the other side $\mathbf{v}$: base and height stay the same, so the area does not change, for any value of $k$. The lecture calls this the geometric reincarnation of a row replacement, and reads it algebraically through linearity in one row (Theorem §21.11 applied to $A^T$): $\det\begin{bmatrix} \mathbf{v} \\ \mathbf{u} + k\mathbf{v} \end{bmatrix} = \det\begin{bmatrix} \mathbf{v} \\ \mathbf{u} \end{bmatrix} + \det\begin{bmatrix} \mathbf{v} \\ k\mathbf{v} \end{bmatrix}$, and the last determinant is $0$.
 >
 > *Source: 235 lecture L12*
 
@@ -82,14 +82,14 @@ tags: [applied-linear-algebra, math235]
 
 ^pf-21-1
 
-*Uses:* [[§21 Properties of Determinants#^def-21-1|Def. §21.1]], [[§20 Introduction to Determinants#^def-20-2|Def. §20.2]], [[§20 Introduction to Determinants#^thm-20-1|§20.1]], [[§20 Introduction to Determinants#^thm-20-2|§20.2]], [[§12 The Inverse of a Matrix|§12]] (elementary matrices)
+*Uses:* [[§21 Properties of Determinants#^def-21-1|Def. §21.1]], [[§20 Introduction to Determinants#^def-20-2|Def. §20.2]], [[§20 Introduction to Determinants#^thm-20-1|§20.1]], [[§20 Introduction to Determinants#^thm-20-2|§20.2]], [[§12 The Inverse of a Matrix#^def-12-3|Def. §12.3]], [[§12 The Inverse of a Matrix#^prop-12-6|§12.6]] (elementary matrices)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§34 Determinants#^ladr-9-57|LADR 9.57]]. The logic runs the other way there: $\det$ is first shown to be an alternating multilinear function of the columns ([[§34 Determinants#^ladr-9-45|LADR 9.45]]), and the effect of row and column operations follows in one line each. Lay starts from the cofactor recursion and needs an induction.
 
 ## Computing Determinants by Row Reduction
 
-Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only row replacements and row interchanges; this is always possible by the row reduction algorithm of [[§2 Row Reduction and Echelon Forms|§2]].
+Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only row replacements and row interchanges; this is always possible by the row reduction algorithm of [[§2 Row Reduction and Echelon Forms#^rem-2-1|Remark §2.1]].
 
 > [!theorem] Proposition §21.2: The Determinant from an Echelon Form
 > If $A$ is reduced to an echelon form $U$ by row replacements and $r$ row interchanges, then $\det A = (-1)^r \det U$, and
@@ -107,13 +107,13 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 > [!proof]+ Proof
 > By Theorem §21.1, each replacement leaves the determinant unchanged and each interchange changes its sign, so $\det A = (-1)^r \det U$. A square matrix in echelon form is upper triangular, so $\det U = u_{11}u_{22}\cdots u_{nn}$ ([[§20 Introduction to Determinants#^thm-20-2|Theorem §20.2]]).
 >
-> If $A$ is invertible, then $A \sim I_n$, so $A$ has a pivot in every column ([[§13 Characterizations of Invertible Matrices|§13]], Theorem 8); the pivot positions of an $n \times n$ echelon matrix with $n$ pivots are the diagonal positions, so the $u_{ii}$ are exactly the pivots (they have not been scaled to $1$). If $A$ is not invertible, $U$ has fewer than $n$ pivots, hence fewer than $n$ nonzero rows, so its last row is zero, $u_{nn} = 0$, and the product $u_{11}\cdots u_{nn}$ is $0$.
+> If $A$ is invertible, then $A \sim I_n$, so $A$ has a pivot in every column ([[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]]); the pivot positions of an $n \times n$ echelon matrix with $n$ pivots are the diagonal positions, so the $u_{ii}$ are exactly the pivots (they have not been scaled to $1$). If $A$ is not invertible, $U$ has fewer than $n$ pivots, hence fewer than $n$ nonzero rows, so its last row is zero, $u_{nn} = 0$, and the product $u_{11}\cdots u_{nn}$ is $0$.
 >
 > Finally, $\det A$ does not depend on the choice of $U$, so neither does $(-1)^r \cdot (\text{product of pivots})$: the product of the pivots is determined by $A$ up to sign.
 
 ^pf-21-2
 
-*Uses:* [[§21 Properties of Determinants#^thm-21-1|§21.1]], [[§20 Introduction to Determinants#^thm-20-2|§20.2]], [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8)
+*Uses:* [[§21 Properties of Determinants#^thm-21-1|§21.1]], [[§20 Introduction to Determinants#^thm-20-2|§20.2]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]]
 
 > [!remark] Remark: Method — Computing a Determinant by Row Reduction
 > 1. Row reduce $A$ to an echelon form $U$, using row replacements (no effect on $\det$) and interchanges (each changes the sign). Keep count of the interchanges, $r$.
@@ -228,7 +228,7 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 > \det A \ne 0
 > $$
 >
-> is equivalent to each statement of the Invertible Matrix Theorem ([[§13 Characterizations of Invertible Matrices|§13]], Theorem 8; extended in [[§19 Dimension and Rank|§19]], 2.9). In particular, the following are equivalent:
+> is equivalent to each statement of the Invertible Matrix Theorem: (a)–(l) of [[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]] and (m)–(r) of [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]], the previous version. In particular, the following are equivalent:
 > - $A$ is invertible;
 > - $\det A \ne 0$;
 > - the columns of $A$ are linearly independent;
@@ -236,7 +236,7 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 > - $\{\mathbf{a}_1, \ldots, \mathbf{a}_n\}$ is a basis of $\mathbb{R}^n$;
 > - $A^T$ is invertible, that is, the rows of $A$ are linearly independent.
 >
-> (Lay lists the determinant condition as statement (t) when the theorem is extended again in 5.2: [[§33 The Characteristic Equation|§33]].)
+> (The next version is [[§28 Rank#^thm-28-5|Theorem §28.5]], Lay 4.6, which restates (m)–(r). Lay lists the determinant condition as statement (t) when the theorem is extended again in 5.2: [[§33 The Characteristic Equation#^thm-33-2|Theorem §33.2]].)
 >
 > *Lay: 3.2 (text after Theorem 4)*
 > *Source: 235 lecture L11*
@@ -248,7 +248,7 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 
 ^pf-21-4
 
-*Uses:* [[§21 Properties of Determinants#^thm-21-3|§21.3]], [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8), [[§19 Dimension and Rank|§19]] (IMT continued)
+*Uses:* [[§21 Properties of Determinants#^thm-21-3|§21.3]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]], [[§19 Dimension and Rank#^thm-19-3|§19.3]]
 
 > [!theorem] Corollary §21.5: Dependent Rows or Columns
 > If the columns of $A$ are linearly dependent, or the rows of $A$ are linearly dependent, then $\det A = 0$. In practice, linear dependence is obvious when two columns or two rows are equal, or when a column or a row is zero.
@@ -359,7 +359,7 @@ Column operations are useful for theoretical purposes and for hand computation; 
 ^thm-21-9
 
 > [!remark] Remark: Why It Works
-> The lecture's geometric reason: the linear map $\mathbf{x} \mapsto A\mathbf{x}$ multiplies volumes by $|\det A|$ ([[§22 Cramer’s Rule, Volume, and Linear Transformations|§22]], Theorem 10 of 3.3). Applying $B$ and then $A$ multiplies a volume first by $|\det B|$, then by $|\det A|$; and the composite is the map of $AB$. So $|\det AB| = |\det A|\,|\det B|$, at least up to sign.
+> The lecture's geometric reason: the linear map $\mathbf{x} \mapsto A\mathbf{x}$ multiplies volumes by $|\det A|$ ([[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-5|Theorem §22.5]], [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-6|Theorem §22.6]]). Applying $B$ and then $A$ multiplies a volume first by $|\det B|$, then by $|\det A|$; and the composite is the map of $AB$. So $|\det AB| = |\det A|\,|\det B|$, at least up to sign.
 >
 > *Source: 235 lecture L12*
 
@@ -384,7 +384,7 @@ Column operations are useful for theoretical purposes and for hand computation; 
 
 ^pf-21-9
 
-*Uses:* [[§21 Properties of Determinants#^thm-21-1|§21.1]], [[§21 Properties of Determinants#^thm-21-3|§21.3]], [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8), [[§12 The Inverse of a Matrix|§12]] (Theorem 7: invertible matrices are products of elementary matrices)
+*Uses:* [[§21 Properties of Determinants#^thm-21-1|§21.1]], [[§21 Properties of Determinants#^thm-21-3|§21.3]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]], [[§12 The Inverse of a Matrix#^thm-12-8|§12.8]] (an invertible matrix is a product of elementary matrices)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§34 Determinants#^ladr-9-49|LADR 9.49]], where multiplicativity is immediate from the definition of $\det T$ as the factor by which $T$ scales alternating $n$-forms; transpose: [[§34 Determinants#^ladr-9-56|LADR 9.56]].

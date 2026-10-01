@@ -154,7 +154,7 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 > b_1 - \tfrac12 b_2 + b_3 = 0 ,
 > $$
 >
-> the equation of a plane through the origin in $\mathbb{R}^3$ (Lay writes it $b_1 - \tfrac12 b_2 + b_3 = 0$; the lecture, with coordinates $x, y, z$, as $x - \tfrac{y}{2} + z = 0$). This plane is $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$, the set of all linear combinations of the columns of $A$. **Check:** each column satisfies the equation: $1 + 2 - 3 = 0$, $3 - 1 - 2 = 0$, $4 + 3 - 7 = 0$.
+> the equation of a plane through the origin in $\mathbb{R}^3$ (the lecture, in coordinates $x, y, z$, writes it $x - \tfrac{y}{2} + z = 0$). This plane is $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$, the set of all linear combinations of the columns of $A$. **Check:** each column satisfies the equation: $1 + 2 - 3 = 0$, $3 - 1 - 2 = 0$, $4 + 3 - 7 = 0$.
 >
 > The failure comes from the row of zeros in the echelon form of $A$. If $A$ had a pivot in every row, the augmented column could never produce a row $[\,0\ 0\ 0\ \ 1\,]$.
 >
@@ -210,7 +210,7 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 *Uses:* [[§4 The Matrix Equation Ax = b#^cor-4-2|§4.2]], [[§4 The Matrix Equation Ax = b#^def-4-3|Def. §4.3]], [[§2 Row Reduction and Echelon Forms#^thm-2-3|§2.3]], [[§1 Systems of Linear Equations#^prop-1-1|§1.1]], [[§1 Systems of Linear Equations#^thm-1-2|§1.2]]
 
 > [!remark]- Connections
-> - In operator language: the columns of $A$ span $\mathbb{R}^m$ exactly when the map $\mathbf{x} \mapsto A\mathbf{x}$ is onto ([[§9 The Matrix of a Linear Transformation|§9]], Theorem 12). A pivot in every row needs at least $m$ columns, so $n < m$ makes (a)–(d) fail; Axler proves this by dimension: [[§8 Null Spaces and Ranges#^ladr-3-24|LADR 3.24]] (no linear map to a higher-dimensional space is surjective), [[§8 Null Spaces and Ranges#^ladr-3-28|LADR 3.28]].
+> - In operator language: the columns of $A$ span $\mathbb{R}^m$ exactly when the map $\mathbf{x} \mapsto A\mathbf{x}$ is onto ([[§9 The Matrix of a Linear Transformation#^thm-9-3|Theorem §9.3]]). A pivot in every row needs at least $m$ columns, so $n < m$ makes (a)–(d) fail; Axler proves this by dimension: [[§8 Null Spaces and Ranges#^ladr-3-24|LADR 3.24]] (no linear map to a higher-dimensional space is surjective), [[§8 Null Spaces and Ranges#^ladr-3-28|LADR 3.28]].
 
 > [!remark] Remark: Warning — Coefficient Matrix, Not Augmented Matrix
 > Theorem §4.3 is about the *coefficient* matrix $A$. If the augmented matrix $[\,A\ \ \mathbf{b}\,]$ has a pivot position in every row, the equation $A\mathbf{x} = \mathbf{b}$ may or may not be consistent: the pivot in the last row may sit in the augmented column. For example, $[\,A\ \ \mathbf{b}\,] = \begin{bmatrix} 1 & 0 & 2 \\ 0 & 0 & 1 \end{bmatrix}$ has a pivot in every row but is inconsistent.
@@ -294,7 +294,7 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 
 *Uses:* [[§4 The Matrix Equation Ax = b#^def-4-1|Def. §4.1]], [[§3 Vector Equations#^thm-3-2|§3.2]] (properties (i), (ii), (v), (vi), (vii))
 
-These two properties are what makes $\mathbf{x} \mapsto A\mathbf{x}$ a *linear transformation* ([[§8 Introduction to Linear Transformations|§8]]).
+These two properties are what makes $\mathbf{x} \mapsto A\mathbf{x}$ a *linear transformation* ([[§8 Introduction to Linear Transformations#^def-8-3|Definition §8.3]]).
 
 > [!example] Example §4.3: Checking Linearity
 > Let $A = \begin{bmatrix} 2 & 5 \\ 3 & 1 \end{bmatrix}$, $\mathbf{u} = \begin{bmatrix} 4 \\ -1 \end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} -3 \\ 5 \end{bmatrix}$. Verify Theorem §4.5(a).

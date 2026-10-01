@@ -11,7 +11,7 @@ tags: [applied-linear-algebra, math235]
 
 *Lay, Section 2.9 · MATH 235 lecture L16.*
 
-A basis of a subspace $H$ gives every vector of $H$ unique coordinates, so a basis of $p$ vectors makes $H$ look and act like $\mathbb{R}^p$. Every basis of $H$ has the same number of vectors, its dimension. For a matrix, $\dim \operatorname{Nul} A$ is the number of free variables and $\operatorname{rank} A = \dim \operatorname{Col} A$ is the number of pivot columns. Since every column is one or the other, they add up to the number of columns: the Rank Theorem. The Basis Theorem says that in a $p$-dimensional subspace, $p$ independent vectors, or $p$ spanning vectors, are automatically a basis. These ideas add six more statements to the Invertible Matrix Theorem of [[§13 Characterizations of Invertible Matrices|§13]].
+A basis of a subspace $H$ gives every vector of $H$ unique coordinates, so a basis of $p$ vectors makes $H$ look and act like $\mathbb{R}^p$. Every basis of $H$ has the same number of vectors, its dimension. For a matrix, $\dim \operatorname{Nul} A$ is the number of free variables and $\operatorname{rank} A = \dim \operatorname{Col} A$ is the number of pivot columns. Since every column is one or the other, they add up to the number of columns: the Rank Theorem. The Basis Theorem says that in a $p$-dimensional subspace, $p$ independent vectors, or $p$ spanning vectors, are automatically a basis. These ideas add six more statements to the Invertible Matrix Theorem ([[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]]).
 
 ## Coordinate Systems
 
@@ -41,7 +41,7 @@ The main reason for choosing a basis of a subspace $H$, rather than merely a spa
 
 ^pf-19-1
 
-*Uses:* [[§18 Subspaces of ℝⁿ#^def-18-4|Def. §18.4]], [[§7 Linear Independence|§7]]
+*Uses:* [[§18 Subspaces of ℝⁿ#^def-18-4|Def. §18.4]], [[§7 Linear Independence#^def-7-1|Def. §7.1]]
 
 > [!definition] Definition §19.1: Coordinates Relative to a Basis
 > Suppose $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$ is a basis for a subspace $H$. For each $\mathbf{x}$ in $H$, the **coordinates of $\mathbf{x}$ relative to the basis $\mathcal{B}$** are the weights $c_1, \ldots, c_p$ such that $\mathbf{x} = c_1\mathbf{b}_1 + \cdots + c_p\mathbf{b}_p$, and the vector in $\mathbb{R}^p$
@@ -82,13 +82,13 @@ The main reason for choosing a basis of a subspace $H$, rather than merely a spa
 *Example §19.1. The plane $H = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ in $\mathbb{R}^3$ with the grid of the coordinate system defined by $\mathcal{B}$: grid lines are $c_1 = \text{const}$ and $c_2 = \text{const}$. The point $\mathbf{x} = 2\mathbf{v}_1 + 3\mathbf{v}_2$ has $\mathcal{B}$-coordinates $(2, 3)$, although as a vector of $\mathbb{R}^3$ it is $(3, 12, 7)$.*
 
 > [!remark] Remark: A Subspace with a Basis of p Vectors Looks Like ℝᵖ
-> Although the points of $H$ in Example §19.1 are in $\mathbb{R}^3$, they are completely determined by their coordinate vectors, which belong to $\mathbb{R}^2$; the grid makes $H$ "look" like $\mathbb{R}^2$. The correspondence $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal{B}}$ is a one-to-one correspondence between $H$ and $\mathbb{R}^2$ that preserves linear combinations. Such a correspondence is called an **isomorphism**, and $H$ is **isomorphic** to $\mathbb{R}^2$. In general, if $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$ is a basis for $H$, then $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal{B}}$ makes $H$ look and act like $\mathbb{R}^p$, even though the vectors of $H$ may have more than $p$ entries. Details in [[§26 Coordinate Systems|§26]]; rigorously, [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]] and [[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]] (hub [[Dimension shows whether vector spaces are isomorphic]]).
+> Although the points of $H$ in [[§19 Dimension and Rank#^ex-19-1|Example §19.1]] are in $\mathbb{R}^3$, they are completely determined by their coordinate vectors, which belong to $\mathbb{R}^2$; the grid makes $H$ "look" like $\mathbb{R}^2$. The correspondence $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal{B}}$ is a one-to-one correspondence between $H$ and $\mathbb{R}^2$ that preserves linear combinations. Such a correspondence is called an **isomorphism**, and $H$ is **isomorphic** to $\mathbb{R}^2$. In general, if $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$ is a basis for $H$, then $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal{B}}$ makes $H$ look and act like $\mathbb{R}^p$, even though the vectors of $H$ may have more than $p$ entries. Details in [[§26 Coordinate Systems#^thm-26-3|Theorem §26.3]]; rigorously, [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]] and [[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]] (hub [[Dimension shows whether vector spaces are isomorphic]]).
 
 ^rem-19-1
 
 ## The Dimension of a Subspace
 
-If a subspace $H$ has a basis of $p$ vectors, then every basis of $H$ consists of exactly $p$ vectors. Lay leaves this to Exercises 27–28 here and proves it for general vector spaces in 4.5 ([[§27 The Dimension of a Vector Space|§27]], Theorem 10; rigorously [[§6 Dimension#^ladr-2-34|LADR 2.34]]). So the following definition makes sense.
+If a subspace $H$ has a basis of $p$ vectors, then every basis of $H$ consists of exactly $p$ vectors. Lay leaves this to Exercises 27–28 here and proves it for general vector spaces in 4.5 ([[§27 The Dimension of a Vector Space#^thm-27-2|Theorem §27.2]]; rigorously [[§6 Dimension#^ladr-2-34|LADR 2.34]]). So the following definition makes sense.
 
 > [!definition] Definition §19.2: Dimension
 > The **dimension** of a nonzero subspace $H$, denoted $\dim H$, is the number of vectors in any basis for $H$. The dimension of the zero subspace $\{\mathbf{0}\}$ is defined to be zero. (The zero subspace has *no* basis, because the zero vector by itself forms a linearly dependent set.)
@@ -153,7 +153,7 @@ Since the number of pivot columns plus the number of nonpivot columns is exactly
 ^thm-19-2
 
 > [!proof]+ Proof
-> Reduce $A$ to echelon form. Each of the $n$ columns of $A$ is either a pivot column or a nonpivot column. By Definition §19.3, $\operatorname{rank} A$ is the number of pivot columns. The nonpivot columns correspond exactly to the free variables of $A\mathbf{x} = \mathbf{0}$, and by Example §18.4 (one basis vector of $\operatorname{Nul} A$ per free variable) $\dim \operatorname{Nul} A$ is the number of free variables. So
+> Reduce $A$ to echelon form. Each of the $n$ columns of $A$ is either a pivot column or a nonpivot column. By [[§19 Dimension and Rank#^def-19-3|Definition §19.3]], $\operatorname{rank} A$ is the number of pivot columns. The nonpivot columns correspond exactly to the free variables of $A\mathbf{x} = \mathbf{0}$, and by [[§18 Subspaces of ℝⁿ#^ex-18-4|Example §18.4]] (one basis vector of $\operatorname{Nul} A$ per free variable) $\dim \operatorname{Nul} A$ is the number of free variables. So
 >
 > $$
 > \operatorname{rank} A + \dim \operatorname{Nul} A = \#\{\text{pivot columns}\} + \#\{\text{nonpivot columns}\} = n .
@@ -164,10 +164,20 @@ Since the number of pivot columns plus the number of nonpivot columns is exactly
 *Uses:* [[§19 Dimension and Rank#^def-19-3|Def. §19.3]], [[§19 Dimension and Rank#^def-19-2|Def. §19.2]], [[§18 Subspaces of ℝⁿ#^thm-18-3|§18.3]], [[§18 Subspaces of ℝⁿ#^ex-18-4|Ex. §18.4]]
 
 > [!remark]- Connections
-> - Rigorous treatment: the fundamental theorem of linear maps, $\dim V = \dim \operatorname{null} T + \dim \operatorname{range} T$, [[§8 Null Spaces and Ranges#^ladr-3-21|LADR 3.21]] (hub [[Fundamental theorem of linear maps]]), proved by extending a basis of $\operatorname{null} T$ to a basis of $V$ instead of counting pivots; for $T(\mathbf{x}) = A\mathbf{x}$ it is this theorem. Lay's fuller version, with $\dim \operatorname{Row} A = \operatorname{rank} A$, is in [[§28 Rank|§28]].
+> - Rigorous treatment: the fundamental theorem of linear maps, $\dim V = \dim \operatorname{null} T + \dim \operatorname{range} T$, [[§8 Null Spaces and Ranges#^ladr-3-21|LADR 3.21]] (hub [[Fundamental theorem of linear maps]]), proved by extending a basis of $\operatorname{null} T$ to a basis of $V$ instead of counting pivots; for $T(\mathbf{x}) = A\mathbf{x}$ it is this theorem. Lay's fuller version, with $\dim \operatorname{Row} A = \operatorname{rank} A$, is [[§28 Rank#^thm-28-3|Theorem §28.3]].
 
 > [!remark] Remark: The Rank Theorem Geometrically
-> Think of $A$ ($m \times n$) as the map $\mathbf{x} \mapsto A\mathbf{x}$ from $\mathbb{R}^n$ to $\mathbb{R}^m$. It collapses the subspace $\operatorname{Nul} A$ of $\mathbb{R}^n$ to the single point $\mathbf{0}$, and its image is the subspace $\operatorname{Col} A$ of $\mathbb{R}^m$. The Rank Theorem says that the dimensions lost ($\dim \operatorname{Nul} A$) and the dimensions kept ($\dim \operatorname{Col} A$) add up to the dimension $n$ of the domain. For the projection $A = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \end{bmatrix} : \mathbb{R}^3 \to \mathbb{R}^2$, $(x, y, z) \mapsto (x, y)$, the null space is the $z$-axis (dimension 1) and the column space is all of $\mathbb{R}^2$ (dimension 2): $1 + 2 = 3$. Each $\mathbf{x}$ splits as $(x, y, 0) + (0, 0, z)$, a part that $A$ keeps and the projection of $\mathbf{x}$ onto the $z$-axis, which $A$ kills. (The lecture writes this as $\mathbb{R}^3 = \operatorname{Nul}(A) \oplus \operatorname{Col}(A)$, identifying $\operatorname{Col} A = \mathbb{R}^2$ with the $xy$-plane of $\mathbb{R}^3$.)
+> Think of $A$ ($m \times n$) as the map $\mathbf{x} \mapsto A\mathbf{x}$ from $\mathbb{R}^n$ to $\mathbb{R}^m$. It collapses the subspace $\operatorname{Nul} A$ of $\mathbb{R}^n$ to the single point $\mathbf{0}$, and its image is the subspace $\operatorname{Col} A$ of $\mathbb{R}^m$. The Rank Theorem says that the dimensions lost ($\dim \operatorname{Nul} A$) and the dimensions kept ($\dim \operatorname{Col} A$) add up to the dimension $n$ of the domain. For the projection $A = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \end{bmatrix} : \mathbb{R}^3 \to \mathbb{R}^2$, $(x, y, z) \mapsto (x, y)$, the null space is the $z$-axis (dimension 1) and the column space is all of $\mathbb{R}^2$ (dimension 2): $1 + 2 = 3$. Each $\mathbf{x} = (x, y, z)$ splits as $(x, y, 0) + (0, 0, z)$. The first part lies in $\operatorname{Row} A$ (the span of the rows of $A$, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-3|Definition §24.3]]), here the $xy$-plane of $\mathbb{R}^3$, and $A$ carries it one-to-one onto $\operatorname{Col} A = \mathbb{R}^2$. The second part is the projection of $\mathbf{x}$ onto the $z$-axis $\operatorname{Nul} A$, which $A$ kills. So $\mathbb{R}^3 = \operatorname{Nul} A \oplus \operatorname{Row} A$, a **direct sum**: every vector of $\mathbb{R}^3$ is in exactly one way a vector of $\operatorname{Nul} A$ plus a vector of $\operatorname{Row} A$ (equivalently, the two subspaces together span $\mathbb{R}^3$ and meet only in $\mathbf{0}$).
+>
+> **In general.** $\operatorname{Nul} A \subseteq \mathbb{R}^n$ and $\operatorname{Col} A \subseteq \mathbb{R}^m$ lie in different spaces unless $m = n$, so they cannot be summands of one direct sum. Even for a square $A$, where the Rank Theorem gives $\dim \operatorname{Nul} A + \dim \operatorname{Col} A = n$, the sum $\operatorname{Nul} A + \operatorname{Col} A$ need not be direct. For $A = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}$, $A\mathbf{x} = (x_2, 0)$, so $\operatorname{Nul} A = \operatorname{Col} A = \operatorname{Span}\{\mathbf{e}_1\}$ and $\operatorname{Nul} A + \operatorname{Col} A$ is only a line in $\mathbb{R}^2$. (Lay's Practice Problem 2 of 2.8 is the $3 \times 3$ analogue, with $\mathbf{e}_1$ in both $\operatorname{Nul} A$ and $\operatorname{Col} A$.) The direct sums that do hold for every $m \times n$ matrix are
+>
+> $$
+> \mathbb{R}^n = \operatorname{Nul} A \oplus \operatorname{Row} A \qquad\text{and}\qquad \mathbb{R}^m = \operatorname{Col} A \oplus \operatorname{Nul} A^T ,
+> $$
+>
+> with the two summands orthogonal complements of each other ([[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]]; $\dim \operatorname{Row} A = \operatorname{rank} A$ by [[§28 Rank#^thm-28-3|Theorem §28.3]]).
+>
+> *The lecture writes the splitting in the example as $\mathbb{R}^3 = \operatorname{Nul}(A) \oplus \operatorname{Col}(A)$ and $\mathbf{x} = A(\mathbf{x}) + \mathbf{x}'$; since $\operatorname{Col} A$ and $A(\mathbf{x})$ lie in $\mathbb{R}^2$, this reads $\mathbb{R}^2$ as the $xy$-plane of $\mathbb{R}^3$, and the summand inside $\mathbb{R}^3$ is $\operatorname{Row} A$, as written above.*
 >
 > *Source: 235 lecture L16*
 
@@ -192,10 +202,10 @@ Since the number of pivot columns plus the number of nonpivot columns is exactly
 
 The next theorem is important for applications and is needed in Chapters 5 and 6. Lay states it here and proves it in 4.5; it is plausible if one thinks of a $p$-dimensional subspace as isomorphic to $\mathbb{R}^p$, since by the Invertible Matrix Theorem $p$ vectors in $\mathbb{R}^p$ are linearly independent if and only if they span $\mathbb{R}^p$.
 
-**The Basis Theorem** (Lay's Theorem 15). *Let $H$ be a $p$-dimensional subspace of $\mathbb{R}^n$. Any linearly independent set of exactly $p$ elements in $H$ is automatically a basis for $H$. Also, any set of $p$ elements of $H$ that spans $H$ is automatically a basis for $H$.* Proved in [[§27 The Dimension of a Vector Space|§27]] (Theorem 12); rigorously [[§6 Dimension#^ladr-2-38|LADR 2.38]] and [[§6 Dimension#^ladr-2-42|LADR 2.42]].
+**The Basis Theorem** (Lay's Theorem 15). *Let $H$ be a $p$-dimensional subspace of $\mathbb{R}^n$. Any linearly independent set of exactly $p$ elements in $H$ is automatically a basis for $H$. Also, any set of $p$ elements of $H$ that spans $H$ is automatically a basis for $H$.* Proved in [[§27 The Dimension of a Vector Space#^thm-27-5|Theorem §27.5]]; rigorously [[§6 Dimension#^ladr-2-38|LADR 2.38]] and [[§6 Dimension#^ladr-2-42|LADR 2.42]].
 
 > [!example] Example §19.4: Bases, Dimensions and Coordinates
-> **(a) Three independent vectors in $\mathbb{R}^3$.** The vectors $(1, 2, 0)$, $(3, 4, 0)$, $(5, 6, 7)$ are linearly independent: the matrix with these columns reduces by $R_2 - 2R_1$ to $\begin{bmatrix} 1 & 3 & 5 \\ 0 & -2 & -4 \\ 0 & 0 & 7 \end{bmatrix}$, with three pivots. (The lecture checks this with a determinant, $\det = 7 \cdot (1 \cdot 4 - 3 \cdot 2) = -14 \ne 0$; see [[§20 Introduction to Determinants|§20]].) Since $\dim \mathbb{R}^3 = 3$, the Basis Theorem says they form a basis of $\mathbb{R}^3$, with no need to check spanning. Likewise every basis of $\mathbb{R}^4$ has exactly 4 vectors.
+> **(a) Three independent vectors in $\mathbb{R}^3$.** The vectors $(1, 2, 0)$, $(3, 4, 0)$, $(5, 6, 7)$ are linearly independent: the matrix with these columns reduces by $R_2 - 2R_1$ to $\begin{bmatrix} 1 & 3 & 5 \\ 0 & -2 & -4 \\ 0 & 0 & 7 \end{bmatrix}$, with three pivots. (The lecture checks this with a determinant, expanding along row 3 by [[§20 Introduction to Determinants#^thm-20-1|Theorem §20.1]]: $\det = 7 \cdot (1 \cdot 4 - 3 \cdot 2) = -14 \ne 0$.) Since $\dim \mathbb{R}^3 = 3$, the Basis Theorem says they form a basis of $\mathbb{R}^3$, with no need to check spanning. Likewise every basis of $\mathbb{R}^4$ has exactly 4 vectors.
 >
 > **(b) The dimension of a span.** Let $H = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$ with $\mathbf{v}_1 = (2, -8, 6)$, $\mathbf{v}_2 = (3, -7, -1)$, $\mathbf{v}_3 = (-1, 6, -7)$. $H$ is the column space of $A = [\,\mathbf{v}_1 \ \mathbf{v}_2 \ \mathbf{v}_3\,]$, and
 >
@@ -215,7 +225,7 @@ The next theorem is important for applications and is needed in Chapters 5 and 6
 > \mathbf{x} = 3\begin{bmatrix} 1 \\ .2 \end{bmatrix} + 2\begin{bmatrix} .2 \\ 1 \end{bmatrix} = \begin{bmatrix} 3.4 \\ 2.6 \end{bmatrix} .
 > $$
 >
-> **(d) No four-dimensional subspace of $\mathbb{R}^3$.** A basis of a four-dimensional subspace would be four linearly independent vectors in $\mathbb{R}^3$, but any set of more than 3 vectors in $\mathbb{R}^3$ is linearly dependent (Theorem 8 of [[§7 Linear Independence|§7]]). So $\mathbb{R}^3$ has no four-dimensional subspace.
+> **(d) No four-dimensional subspace of $\mathbb{R}^3$.** A basis of a four-dimensional subspace would be four linearly independent vectors in $\mathbb{R}^3$, but any set of more than 3 vectors in $\mathbb{R}^3$ is linearly dependent ([[§7 Linear Independence#^thm-7-6|Theorem §7.6]]). So $\mathbb{R}^3$ has no four-dimensional subspace.
 >
 > *Lay: Practice Problems 2.9.1–2.9.3*
 > *Source: 235 lecture L16*
@@ -236,6 +246,8 @@ The vector space concepts attached to a matrix give six more statements for the 
 > q. $\operatorname{Nul} A = \{\mathbf{0}\}$.
 > r. $\dim \operatorname{Nul} A = 0$.
 >
+> These continue statements (a)–(l) of [[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]], the previous version. This theorem is the home of (m)–(r): Lay 5e restates them in 4.6 ([[§28 Rank#^thm-28-5|Theorem §28.5]]). Next version: [[§21 Properties of Determinants#^thm-21-4|Theorem §21.4]] ($\det A \ne 0$).
+>
 > *Lay: 2.9, The Invertible Matrix Theorem (continued)*
 
 ^thm-19-3
@@ -255,13 +267,13 @@ The vector space concepts attached to a matrix give six more statements for the 
 > - (r) $\Rightarrow$ (q): the only subspace of dimension $0$ is $\{\mathbf{0}\}$ (a nonzero subspace contains a nonzero vector, which is an independent set, so it has positive dimension).
 > - (q) $\Rightarrow$ (d): $\operatorname{Nul} A = \{\mathbf{0}\}$ says exactly that $A\mathbf{x} = \mathbf{0}$ has only the trivial solution.
 >
-> Since (d) and (g) are already known to be equivalent to invertibility (Theorem §13.1), each statement in the chain is implied by invertibility (through (g)) and implies it (through (d)).
+> Since (d) and (g) are already known to be equivalent to invertibility ([[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]]), each statement in the chain is implied by invertibility (through (g)) and implies it (through (d)).
 
 ^pf-19-3
 
 *Uses:* [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]], [[§19 Dimension and Rank#^thm-19-2|§19.2]], [[§19 Dimension and Rank#^def-19-2|Def. §19.2]], [[§19 Dimension and Rank#^def-19-3|Def. §19.3]], [[§18 Subspaces of ℝⁿ#^def-18-2|Def. §18.2]], [[§18 Subspaces of ℝⁿ#^def-18-4|Def. §18.4]]
 
-The lecture proves the same chain the other way round: (m) $\Rightarrow$ (n) $\Rightarrow$ (o) $\Rightarrow$ (p) $\Rightarrow$ (q) by the Rank Theorem, and (q) $\Rightarrow$ (m) because $\dim \operatorname{Nul} A = 0$ gives $\dim \operatorname{Col} A = n$, so the $n$ columns span $\mathbb{R}^n$ and, being $n$ spanning vectors of an $n$-dimensional space, form a basis. The theorem is continued with determinants in [[§21 Properties of Determinants|§21]], with $\operatorname{Row} A$ in [[§28 Rank|§28]], with eigenvalues in [[§33 The Characteristic Equation|§33]], and concluded in [[§51★ The Singular Value Decomposition#^thm-51-6|Theorem §51.6]].
+The lecture proves the same chain the other way round: (m) $\Rightarrow$ (n) $\Rightarrow$ (o) $\Rightarrow$ (p) $\Rightarrow$ (q) by the Rank Theorem, and (q) $\Rightarrow$ (m) because $\dim \operatorname{Nul} A = 0$ gives $\dim \operatorname{Col} A = n$, so the $n$ columns span $\mathbb{R}^n$ and, being $n$ spanning vectors of an $n$-dimensional space, form a basis. The theorem is continued with $\det A \ne 0$ in [[§21 Properties of Determinants#^thm-21-4|Theorem §21.4]]; [[§28 Rank#^thm-28-5|Theorem §28.5]] restates (m)–(r) in Lay 4.6 and remarks that each statement may also be made for $A^T$ (for instance $\operatorname{Row} A = \mathbb{R}^n$); eigenvalues and the determinant give statements (s), (t) in [[§33 The Characteristic Equation#^thm-33-2|Theorem §33.2]]; and the theorem is concluded with (u)–(x), among them $\operatorname{Row} A = \mathbb{R}^n$, in [[§51★ The Singular Value Decomposition#^thm-51-6|Theorem §51.6]].
 
 > [!remark]- Remark: Numerical Note — Rank in Practice
 > Many algorithms in this text are good for understanding concepts and for small hand computations but unsuitable for large real problems. Rank is an example. It seems easy to reduce to echelon form and count pivots, but unless exact arithmetic is done on exactly specified entries, row operations can change the apparent rank. If $x$ in $\begin{bmatrix} 5 & 7 \\ 5 & x \end{bmatrix}$ is not stored exactly as $7$, the computed rank may be 1 or 2, depending on whether the computer treats $x - 7$ as zero. In practice the **effective rank** is found from the singular value decomposition: [[§51★ The Singular Value Decomposition#^rem-51-1|§51★, Remark: Numerical Note — Effective Rank]].

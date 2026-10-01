@@ -177,7 +177,7 @@ Suppose, for example, that $\alpha$ is closer to $\lambda_2$ than to the other e
 >    - d. Compute $\mathbf{x}_{k+1} = (1/\mu_k)\mathbf{y}_k$.
 > 4. For almost all choices of $\mathbf{x}_0$, the sequence $\{\nu_k\}$ approaches the eigenvalue $\lambda$ of $A$, and the sequence $\{\mathbf{x}_k\}$ approaches a corresponding eigenvector.
 >
-> The matrix $B = (A - \alpha I)^{-1}$ does not appear: instead of computing $(A - \alpha I)^{-1}\mathbf{x}_k$, it is better to solve $(A - \alpha I)\mathbf{y}_k = \mathbf{x}_k$. Since this system must be solved for each $k$ with the same coefficient matrix, an LU factorization of $A - \alpha I$ ([[§15 Matrix Factorizations|§15]]) speeds up the process. If no estimate is available for the smallest eigenvalue, take $\alpha = 0$; this works reasonably well if the smallest eigenvalue is much closer to zero than to the others.
+> The matrix $B = (A - \alpha I)^{-1}$ does not appear: instead of computing $(A - \alpha I)^{-1}\mathbf{x}_k$, it is better to solve $(A - \alpha I)\mathbf{y}_k = \mathbf{x}_k$. Since this system must be solved for each $k$ with the same coefficient matrix, an LU factorization of $A - \alpha I$ ([[§15 Matrix Factorizations#^def-15-1|Definition §15.1]]; [[§15 Matrix Factorizations#^rem-15-1|§15, Remark: Method — Solving Ax = b with an LU Factorization]]) speeds up the process. If no estimate is available for the smallest eigenvalue, take $\alpha = 0$; this works reasonably well if the smallest eigenvalue is much closer to zero than to the others.
 >
 > *Lay: 5.8, boxed algorithm and text*
 

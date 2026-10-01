@@ -248,7 +248,7 @@ The projection of a vector onto a line ([[§41 Orthogonal Sets#^def-41-3|Definit
 
 ^pf-42-4
 
-*Uses:* [[§42 Orthogonal Projections#^thm-42-1|§42.1]], [[§4 The Matrix Equation Ax = b|§4]] (definition of $A\mathbf{x}$ as a combination of columns)
+*Uses:* [[§42 Orthogonal Projections#^thm-42-1|§42.1]], [[§4 The Matrix Equation Ax = b#^def-4-1|Def. §4.1]] ($A\mathbf{x}$ as a combination of columns)
 
 > [!remark] Remark: The Matrices UᵀU and UUᵀ
 > Let $U$ be an $n \times p$ matrix with orthonormal columns and $W = \operatorname{Col} U$. Then

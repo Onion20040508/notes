@@ -132,13 +132,13 @@ The matrix in (3) changes the $\mathcal{B}$-coordinates of a vector into its sta
 ^prop-26-2
 
 > [!proof]+ Proof
-> If $[\mathbf{x}]_{\mathcal B} = (c_1, \ldots, c_n)$, then by the definition of a matrix–vector product, $P_{\mathcal B}[\mathbf{x}]_{\mathcal B} = c_1\mathbf{b}_1 + \cdots + c_n\mathbf{b}_n = \mathbf{x}$; this is (4). The columns of $P_{\mathcal B}$ form a basis for $\mathbb{R}^n$, so $P_{\mathcal B}$ is invertible by the Invertible Matrix Theorem ([[§19 Dimension and Rank|§19]], 2.9). Multiplying (4) on the left by $P_{\mathcal B}^{-1}$ gives $[\mathbf{x}]_{\mathcal B} = P_{\mathcal B}^{-1}\mathbf{x}$. The matrix transformation of an invertible matrix is one-to-one and onto (Invertible Matrix Theorem; Theorem 12 of 1.9, [[§9 The Matrix of a Linear Transformation|§9]]).
+> If $[\mathbf{x}]_{\mathcal B} = (c_1, \ldots, c_n)$, then by the definition of a matrix–vector product, $P_{\mathcal B}[\mathbf{x}]_{\mathcal B} = c_1\mathbf{b}_1 + \cdots + c_n\mathbf{b}_n = \mathbf{x}$; this is (4). The columns of $P_{\mathcal B}$ form a basis for $\mathbb{R}^n$, so $P_{\mathcal B}$ is invertible by the Invertible Matrix Theorem ([[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]], 2.9). Multiplying (4) on the left by $P_{\mathcal B}^{-1}$ gives $[\mathbf{x}]_{\mathcal B} = P_{\mathcal B}^{-1}\mathbf{x}$. The matrix transformation of an invertible matrix is one-to-one and onto (Invertible Matrix Theorem; Theorem 12 of 1.9, [[§9 The Matrix of a Linear Transformation#^thm-9-3|Theorem §9.3]]).
 
 ^pf-26-2
 
-*Uses:* [[§26 Coordinate Systems#^def-26-1|Def. §26.1]], [[§26 Coordinate Systems#^def-26-2|Def. §26.2]], [[§13 Characterizations of Invertible Matrices|§13]] (Theorem 8), [[§19 Dimension and Rank|§19]] (IMT continued)
+*Uses:* [[§26 Coordinate Systems#^def-26-1|Def. §26.1]], [[§26 Coordinate Systems#^def-26-2|Def. §26.2]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]], [[§19 Dimension and Rank#^thm-19-3|§19.3]], [[§9 The Matrix of a Linear Transformation#^thm-9-3|§9.3]]
 
-The change-of-coordinates equation (4) is needed at several points in Chapters 5 and 7; the change between two arbitrary bases is [[§29 Change of Basis|§29]] (4.7).
+The change-of-coordinates equation (4) is needed at several points in Chapters 5 and 7; the change between two arbitrary bases is [[§29 Change of Basis#^thm-29-1|Theorem §29.1]] (4.7).
 
 ## The Coordinate Mapping
 
@@ -182,7 +182,7 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 ^def-26-3
 
 > [!remark]- Connections
-> - Rigorous treatment: isomorphisms [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]], and [[Dimension shows whether vector spaces are isomorphic]] ([[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]): finite-dimensional spaces are isomorphic exactly when they have the same dimension, the fact behind Lay's question at the end of 4.4 (answered in [[§27 The Dimension of a Vector Space|§27]]).
+> - Rigorous treatment: isomorphisms [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]], and [[Dimension shows whether vector spaces are isomorphic]] ([[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]): finite-dimensional spaces are isomorphic exactly when they have the same dimension, the fact behind Lay's question at the end of 4.4 (answered in [[§27 The Dimension of a Vector Space#^thm-27-2|Theorem §27.2]]).
 > - One-to-one and onto, and an invertible function is a bijection: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]].
 
 > [!theorem] Corollary §26.4: Coordinates Preserve Independence and Spanning
@@ -232,7 +232,7 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 >
 > the right coordinates for recovering $\mathbf{p}$ from its values at $1, 2, 3, 4$. For example, $\mathbf{p}(t) = t^3$ has $[\mathbf{p}]_{\mathcal B} = (0, 0, 0, 1)$ but $[\mathbf{p}]_{\mathcal L} = (1, 8, 27, 64)$: the same vector, two names.
 >
-> **(c) Fibonacci-type sequences.** The subspace of sequences with $x_{n+1} = x_n + x_{n-1}$ ([[§23 Vector Spaces and Subspaces#^ex-23-2|Example §23.2]](e)) is isomorphic to $\mathbb{R}^2$: a sequence is determined by $(x_1, x_2)$, and $(x_n) \mapsto (x_1, x_2)$ is linear, one-to-one and onto. The sequences starting $1, 0, 1, 1, 2, \ldots$ and $0, 1, 1, 2, 3, \ldots$ form a basis, and the coordinates of a sequence relative to it are $(x_1, x_2)$. (The lecture announces "Fib $= \mathbb{R}^2$" in L14 and returns to these sequences with eigenvalues in L18, Chapter 5.)
+> **(c) Fibonacci-type sequences.** The subspace of sequences with $x_{n+1} = x_n + x_{n-1}$ ([[§23 Vector Spaces and Subspaces#^ex-23-2|Example §23.2]](e)) is isomorphic to $\mathbb{R}^2$: a sequence is determined by $(x_1, x_2)$, and $(x_n) \mapsto (x_1, x_2)$ is linear, one-to-one and onto. The sequences starting $1, 0, 1, 1, 2, \ldots$ and $0, 1, 1, 2, 3, \ldots$ form a basis, and the coordinates of a sequence relative to it are $(x_1, x_2)$. (The lecture announces "Fib $= \mathbb{R}^2$" in L14 and returns to these sequences with eigenvalues in L18: [[§30 Applications to Difference Equations#^ex-30-4|Example §30.4]] uses the basis of the two geometric sequences $(\varphi^k)$, $(\psi^k)$ instead, and finds the Fibonacci numbers in closed form.)
 >
 > *Lay: Example 4.4.5*
 > *Source: 235 lectures L14, L15*
@@ -274,7 +274,7 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 > \begin{bmatrix} 3 & -1 & 3 \\ 6 & 0 & 12 \\ 2 & 1 & 7 \end{bmatrix} \sim \begin{bmatrix} 1 & 0 & 2 \\ 0 & 1 & 3 \\ 0 & 0 & 0 \end{bmatrix} .
 > $$
 >
-> So $c_1 = 2$, $c_2 = 3$, and $[\mathbf{x}]_{\mathcal B} = (2, 3)$; check: $2(3, 6, 2) + 3(-1, 0, 1) = (3, 12, 7)$. The coordinate system on $H$ determined by $\mathcal{B}$ makes $H$ isomorphic to $\mathbb{R}^2$. (Would a different basis of $H$ also make it isomorphic to $\mathbb{R}^2$? Yes: [[§27 The Dimension of a Vector Space|§27]].)
+> So $c_1 = 2$, $c_2 = 3$, and $[\mathbf{x}]_{\mathcal B} = (2, 3)$; check: $2(3, 6, 2) + 3(-1, 0, 1) = (3, 12, 7)$. The coordinate system on $H$ determined by $\mathcal{B}$ makes $H$ isomorphic to $\mathbb{R}^2$. (Would a different basis of $H$ also make it isomorphic to $\mathbb{R}^2$, and not to some other $\mathbb{R}^m$? Yes: all bases of $H$ have the same number of vectors, [[§27 The Dimension of a Vector Space#^thm-27-2|Theorem §27.2]].)
 >
 > **(b) A non-standard basis of $\mathbb{P}_2$.** $\mathcal{B} = \{1 + t,\ 1 + t^2,\ t + t^2\}$ is a basis for $\mathbb{P}_2$. Find the coordinate vector of $\mathbf{p}(t) = 6 + 3t - t^2$. Writing $\mathbf{p} = c_1(1 + t) + c_2(1 + t^2) + c_3(t + t^2)$ and comparing coefficients of $1$, $t$, $t^2$:
 >
