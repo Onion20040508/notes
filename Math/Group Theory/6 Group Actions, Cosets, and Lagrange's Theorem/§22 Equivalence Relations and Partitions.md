@@ -59,7 +59,7 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 *Proposition §22.1: the equivalence classes cut $X$ into disjoint pieces. If $x_1 \sim x_2$, their classes coincide (blue); a point $x_3$ not related to $x_1$ has a class (red) disjoint from it. No two classes partially overlap, and every point lies in its own class.*
 
 > [!remark]- Connections
-> - The same pattern in linear algebra: [[3E Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]] (LADR 3.101); in MATH 590: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 §12.3).
+> - The same pattern in linear algebra: [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]] (LADR 3.101); in MATH 590: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 §12.3).
 > - Applied to orbits and cosets: [[§25 Orbits#^prop-25-2|The Orbit Relation]], [[§26 Left and Right Cosets#^prop-26-2|Cosets Are the Equivalence Classes]].
 
 > [!theorem] Proposition §22.2: Partitions Come from Equivalence Relations

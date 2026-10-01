@@ -79,7 +79,7 @@ The results from other subjects that this course's proofs and definitions cite (
 - [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7: Density of ℚ in ℝ]] (1)
 
 **[[Linear Algebra]]**
-- [[2B Bases#^ladr-2-26|2.26 Basis]] (1)
+- [[§5 Bases#^ladr-2-26|2.26 Basis]] (1)
 
 **[[Group Theory]]**
 - [[First Isomorphism Theorem for Groups]] (2)

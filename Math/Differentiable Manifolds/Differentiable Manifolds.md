@@ -122,11 +122,11 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Fundamental theorem of linear maps]] (7)
 - [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (6)
 - [[Invertible ⟺ nonzero determinant]] (5)
-- [[9C Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (4)
-- [[3C Matrices#^ladr-3-57|3.57 Column rank equals row rank]] (3)
+- [[§34 Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (4)
+- [[§9 Matrices#^ladr-3-57|3.57 Column rank equals row rank]] (3)
 - [[Linear map lemma]] (3)
-- [[9C Determinants#^ladr-9-46|9.46 Formula for determinant of a matrix]] (2)
-- [[9C Determinants#^ladr-9-56|9.56 Determinant of transpose, dual, or adjoint]] (2)
+- [[§34 Determinants#^ladr-9-46|9.46 Formula for determinant of a matrix]] (2)
+- [[§34 Determinants#^ladr-9-56|9.56 Determinant of transpose, dual, or adjoint]] (2)
 
 **[[Group Theory]]**
 - [[§4 Subgroups#^def-4-1|Definition §4.1: Subgroup]] (3)

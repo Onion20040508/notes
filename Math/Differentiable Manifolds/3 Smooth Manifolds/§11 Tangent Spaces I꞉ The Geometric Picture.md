@@ -134,7 +134,7 @@ It is not obvious from [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-
 
 ^pf-11-3
 
-*Uses:* [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-1|Def. §11.1]], [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-3|§4.3]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^lem-11-1|§11.1]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^lem-11-2|§11.2]], [[Multivariable Chain Rule|452 §10.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[2C Dimension#^ladr-2-39|LADR 2.39]]
+*Uses:* [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-1|Def. §11.1]], [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-3|§4.3]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^lem-11-1|§11.1]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^lem-11-2|§11.2]], [[Multivariable Chain Rule|452 §10.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-39|LADR 2.39]]
 
 > [!remark]- Connections
 > - Identified with the abstract tangent space: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-8|Ambient and Abstract Agree, §12.8]]; for submanifolds, [[§15 Submanifolds#^prop-15-4|§15.4]].
@@ -244,7 +244,7 @@ It is not obvious from [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-
 
 ^pf-11-5
 
-*Uses:* [[§5 Topological Groups and Classical Matrix Groups#^thm-5-8|§5.8]], [[§10 Vector Spaces and Matrix Groups#^prop-10-9|§10.9]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-1|Def. §11.1]], [[§5 Topological Groups and Classical Matrix Groups#^cor-5-13|§5.13]], [[§9 Manifolds in Euclidean Space#^prop-9-2|§9.2]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|§5.9]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|§11.3]], [[§10 Vector Spaces and Matrix Groups#^ex-10-1|Ex. §10.1]], [[§10 Vector Spaces and Matrix Groups#^cor-10-13|§10.13]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^ex-11-2|Ex. §11.2]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^lem-11-1|§11.1]], [[§10 Vector Spaces and Matrix Groups#^prop-10-15|§10.15]], [[§10 Vector Spaces and Matrix Groups#^ex-10-2|Ex. §10.2]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^ex-11-3|Ex. §11.3]], [[8D Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]]
+*Uses:* [[§5 Topological Groups and Classical Matrix Groups#^thm-5-8|§5.8]], [[§10 Vector Spaces and Matrix Groups#^prop-10-9|§10.9]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-1|Def. §11.1]], [[§5 Topological Groups and Classical Matrix Groups#^cor-5-13|§5.13]], [[§9 Manifolds in Euclidean Space#^prop-9-2|§9.2]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|§5.9]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|§11.3]], [[§10 Vector Spaces and Matrix Groups#^ex-10-1|Ex. §10.1]], [[§10 Vector Spaces and Matrix Groups#^cor-10-13|§10.13]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^ex-11-2|Ex. §11.2]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^lem-11-1|§11.1]], [[§10 Vector Spaces and Matrix Groups#^prop-10-15|§10.15]], [[§10 Vector Spaces and Matrix Groups#^ex-10-2|Ex. §10.2]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^ex-11-3|Ex. §11.3]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]]
 
 > [!definition] Definition §11.2: Adjoint Action
 > Let $G$ be one of $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{SO}(n)$, $\mathrm{U}(n)$, and $\mathfrak{g} = T^{\mathrm{geo}}_I G$. For $g \in G$, **conjugation** by $g$ is $\mathrm{Ad}_g(X) = gXg^{-1}$. The **adjoint action** of $G$ on $\mathfrak{g}$ is $g \mapsto \mathrm{Ad}_g|_{\mathfrak{g}}$; that each $\mathrm{Ad}_g$ maps $\mathfrak{g}$ onto itself is part of [[§11 Tangent Spaces I꞉ The Geometric Picture#^prop-11-6|the next proposition]].
@@ -270,7 +270,7 @@ It is not obvious from [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-
 
 ^pf-11-6
 
-*Uses:* [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-2|Def. §11.2]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|§11.5]], [[8D Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]]
+*Uses:* [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-2|Def. §11.2]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|§11.5]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]]
 
 > [!remark] Remark: Left and Right Translates
 > The notes computed $T^{\mathrm{geo}}_g\mathrm{O}(n) = g\cdot\operatorname{Skew}(n)$ by writing $A = gB$ (Proposition [[§10 Vector Spaces and Matrix Groups#^prop-10-12|§10.12]]); [[§10 Vector Spaces and Matrix Groups#^prop-10-15|Assignment 2]] computed $T^{\mathrm{geo}}_g\mathrm{U}(n) = \mathfrak{u}(n)\cdot g$ by writing $h = Xg$. Neither choice is privileged, and by [[§11 Tangent Spaces I꞉ The Geometric Picture#^prop-11-6|the proposition]] the two agree, $g \cdot \mathfrak{g} = \mathrm{Ad}_g(\mathfrak{g}) \cdot g = \mathfrak{g} \cdot g$. This is the first structural fact about Lie groups to appear in the course: the geometric tangent space at the identity, carried to every other point by left or right multiplication, determines all the geometric tangent spaces. The spaces $\mathfrak{sl}(n)$, $\mathfrak{so}(n)$, $\mathfrak{u}(n)$ in the table will reappear as *Lie algebras*.
@@ -493,7 +493,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^pf-11-10
 
-*Uses:* [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-6|Def. §11.6]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-4|Def. §11.4]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|§11.3]], [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-3|§4.3]], [[Fundamental theorem of linear maps|LADR 3.21]], [[2C Dimension#^ladr-2-43|LADR 2.43]]
+*Uses:* [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-6|Def. §11.6]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-4|Def. §11.4]], [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|§11.3]], [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-3|§4.3]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-43|LADR 2.43]]
 
 > [!example] Example §11.5: The Sphere and the Plane Re-read
 > The figure in [[§4 The Regular Value Theorem#^rem-4-3|§4]] was a transversality picture. Let $S_1 = S^2$ and $S_2 = \{z = c\}$ in $\mathbb{R}^3$, so $T^{\mathrm{geo}}_qS_1 = q^\perp$ and $T^{\mathrm{geo}}_qS_2 = e_3^\perp$, the horizontal plane. Two planes through the origin in $\mathbb{R}^3$ sum to $\mathbb{R}^3$ iff they are distinct, so the intersection is transverse at $q$ iff $q^\perp \neq e_3^\perp$, i.e. iff $q \neq \pm e_3$ — iff the two normals $q$ and $e_3$ are independent, which is what the figure's caption said in the language of gradients.

@@ -62,7 +62,7 @@ $$
 
 > [!remark]- Connections
 > - The same matrix as the total derivative of §6: [[§6 Differentiability#^def-6-2|Def. §6.2]]; Jacobians multiply under composition: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Remark §10.4]].
-> - Linear-algebra view: the matrix of the linear map $Df$ in the standard bases, [[3C Matrices#^ladr-3-31|LADR 3.31]].
+> - Linear-algebra view: the matrix of the linear map $Df$ in the standard bases, [[§9 Matrices#^ladr-3-31|LADR 3.31]].
 
 **What does the Jacobian do?** It describes how the mapping behaves **locally** near a point. If we make a small displacement $(dx, dy)$ in the input, the output changes by approximately:
 
@@ -109,7 +109,7 @@ This requires $J$ to be an **invertible matrix**, i.e., $\det(J) \neq 0$ ([[Inve
 
 ^pf-13-1
 
-*Uses:* [[3C Matrices#^ladr-3-41|LADR 3.41]], [[3D Invertibility and Isomorphisms#^ladr-3-80|LADR 3.80]]
+*Uses:* [[§9 Matrices#^ladr-3-41|LADR 3.41]], [[§10 Invertibility and Isomorphisms#^ladr-3-80|LADR 3.80]]
 
 > [!remark]- Connections
 > - The general statement behind it: a square matrix is invertible exactly when its determinant is nonzero, [[Invertible ⟺ nonzero determinant|LADR 9.50]].
@@ -155,7 +155,7 @@ $$
 
 > [!remark]- Connections
 > - The 1D version in MATH 451: [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10), where the condition is $f'(x_0) \neq 0$.
-> - The linear-algebra fact behind the hypothesis: [[Invertible ⟺ nonzero determinant|LADR 9.50]], and [[3D Invertibility and Isomorphisms#^ladr-3-86|matrix of inverse equals inverse of matrix]] (LADR 3.86) behind the formula for the inverse's Jacobian.
+> - The linear-algebra fact behind the hypothesis: [[Invertible ⟺ nonzero determinant|LADR 9.50]], and [[§10 Invertibility and Isomorphisms#^ladr-3-86|matrix of inverse equals inverse of matrix]] (LADR 3.86) behind the formula for the inverse's Jacobian.
 > - The Jacobian determinant returns as the area factor in the [[§15 Multivariable Integration#^thm-15-14|change of variables formula]] (§15.14, §15.20).
 
 > [!proof]+ Proof via the Implicit Function Theorem
@@ -335,7 +335,7 @@ $$
 \begin{pmatrix} f_u & g_u \\ f_v & g_v \end{pmatrix} = \begin{pmatrix} \varphi_x & \psi_x \\ \varphi_y & \psi_y \end{pmatrix}^{-1}.
 $$
 
-Taking the transpose ([[3C Matrices#^ladr-3-54|LADR 3.54]]):
+Taking the transpose ([[§9 Matrices#^ladr-3-54|LADR 3.54]]):
 
 $$
 \boxed{\begin{pmatrix} f_u & f_v \\ g_u & g_v \end{pmatrix} = \begin{pmatrix} \varphi_x & \varphi_y \\ \psi_x & \psi_y \end{pmatrix}^{-1} = J^{-1}}
@@ -426,4 +426,4 @@ $$
 ^rem-13-6
 
 > [!remark]- Connections
-> - Why: the [[§10 Composition of Functions and the Chain Rule#^rem-10-4|chain rule for Jacobians]] (Remark §10.4) gives $J_{\Phi^{-1}} J_\Phi = I$, and the determinant is multiplicative ([[9C Determinants#^ladr-9-49|LADR 9.49]]).
+> - Why: the [[§10 Composition of Functions and the Chain Rule#^rem-10-4|chain rule for Jacobians]] (Remark §10.4) gives $J_{\Phi^{-1}} J_\Phi = I$, and the determinant is multiplicative ([[§34 Determinants#^ladr-9-49|LADR 9.49]]).

@@ -98,7 +98,7 @@ These are exactly the tangent vectors to the two families of curves that sweep o
 *The surface integral is computed cell by cell: a grid cell $\Delta u \times \Delta v$ in the parameter domain (red, left) is carried by $\mathbf{X}$ to a curved patch on the surface (red, right). Zoomed to this scale, the patch is approximated by the tangent parallelogram (green) spanned by $\mathbf{X}_u\Delta u$ and $\mathbf{X}_v\Delta v$, with area $|\mathbf{X}_u \times \mathbf{X}_v|\,\Delta u\,\Delta v$. Summing over all cells and refining gives $\iint_S dS = \iint_D |\mathbf{X}_u \times \mathbf{X}_v|\,du\,dv$: the cross product length is the area-scaling factor, playing exactly the role $|J|$ played in [[§15 Multivariable Integration|§15]] — and $|\mathbf{r}'|$ in [[§16 Line Integrals and Green's Theorem|§16]].*
 
 > [!definition] Definition §18.3: Regular Point
-> The surface is **regular** at $(u_0, v_0)$ if $\mathbf{X}_u$ and $\mathbf{X}_v$ are [[2A Span and Linear Independence#^ladr-2-15|linearly independent]] at that point, i.e., $\mathbf{X}_u \times \mathbf{X}_v \neq \mathbf{0}$.
+> The surface is **regular** at $(u_0, v_0)$ if $\mathbf{X}_u$ and $\mathbf{X}_v$ are [[§4 Span and Linear Independence#^ladr-2-15|linearly independent]] at that point, i.e., $\mathbf{X}_u \times \mathbf{X}_v \neq \mathbf{0}$.
 >
 > A surface is **regular** if it is regular at every point of $D$.
 
@@ -121,7 +121,7 @@ These are exactly the tangent vectors to the two families of curves that sweep o
 > D\mathbf{X} = \begin{pmatrix} x_u & x_v \\ y_u & y_v \\ z_u & z_v \end{pmatrix}.
 > $$
 >
-> The image of $D\mathbf{X}$ — the set of all vectors $h \mathbf{X}_u + k \mathbf{X}_v$ — is the **tangent space**. Its dimension equals $\operatorname{rank}(D\mathbf{X})$ ([[3C Matrices#^ladr-3-58|LADR 3.58]]):
+> The image of $D\mathbf{X}$ — the set of all vectors $h \mathbf{X}_u + k \mathbf{X}_v$ — is the **tangent space**. Its dimension equals $\operatorname{rank}(D\mathbf{X})$ ([[§9 Matrices#^ladr-3-58|LADR 3.58]]):
 > - **Rank 2** ($\mathbf{X}_u, \mathbf{X}_v$ independent, i.e., regular): the image of $D\mathbf{X}$ is a 2D plane. The linear approximation faithfully represents a 2D surface. This is the good case.
 > - **Rank 1** ($\mathbf{X}_u, \mathbf{X}_v$ parallel): the image is a line. The derivative compresses two dimensions into one — the parametrization “folds” the $(u,v)$-plane onto a curve at that point.
 > - **Rank 0** ($\mathbf{X}_u = \mathbf{X}_v = \mathbf{0}$): the image is a point. The derivative gives zero information about the surface.
@@ -165,7 +165,7 @@ $$
 dS = |\mathbf{X}_u \times \mathbf{X}_v| \, du \, dv.
 $$
 
-But we want a formula for area that works in *any* ambient dimension (not just $\mathbb{R}^3$), where the cross product is not defined. We need a formula that uses only **dot products** ([[6A Inner Products and Norms#^ladr-6-1|LADR 6.1]]).
+But we want a formula for area that works in *any* ambient dimension (not just $\mathbb{R}^3$), where the cross product is not defined. We need a formula that uses only **dot products** ([[§19 Inner Products and Norms#^ladr-6-1|LADR 6.1]]).
 
 ### The Gram Matrix (First Fundamental Form)
 
@@ -244,11 +244,11 @@ But we want a formula for area that works in *any* ambient dimension (not just $
 
 ^pf-18-1
 
-*Uses:* [[§18 Surface Integrals#^def-18-2|Def. §18.2]], [[§18 Surface Integrals#^def-18-4|Def. §18.4]], [[6A Inner Products and Norms#^ladr-6-1|LADR 6.1]]
+*Uses:* [[§18 Surface Integrals#^def-18-2|Def. §18.2]], [[§18 Surface Integrals#^def-18-4|Def. §18.4]], [[§19 Inner Products and Norms#^ladr-6-1|LADR 6.1]]
 
 > [!remark]- Connections
-> - The linear algebra behind it: $G = (D\mathbf{X})^{T} D\mathbf{X}$ is $T^*T$ for $T = D\mathbf{X}$, so $\operatorname{rank} G = \operatorname{rank} D\mathbf{X}$ ([[7E Singular Value Decomposition#^ladr-7-64|LADR 7.64]]) and $\det G > 0$ exactly at regular points ([[§18 Surface Integrals#^def-18-3|Def. §18.3]]).
-> - When $D\mathbf{X}$ is square, $\sqrt{\det(T^*T)} = |\det T|$ ([[9C Determinants#^ladr-9-60|LADR 9.60]], [[9C Determinants#^ladr-9-61|LADR 9.61]]): the $|J|$ of [[§15 Multivariable Integration#^thm-15-20|Change of Variables in ℝⁿ]].
+> - The linear algebra behind it: $G = (D\mathbf{X})^{T} D\mathbf{X}$ is $T^*T$ for $T = D\mathbf{X}$, so $\operatorname{rank} G = \operatorname{rank} D\mathbf{X}$ ([[§26 Singular Value Decomposition#^ladr-7-64|LADR 7.64]]) and $\det G > 0$ exactly at regular points ([[§18 Surface Integrals#^def-18-3|Def. §18.3]]).
+> - When $D\mathbf{X}$ is square, $\sqrt{\det(T^*T)} = |\det T|$ ([[§34 Determinants#^ladr-9-60|LADR 9.60]], [[§34 Determinants#^ladr-9-61|LADR 9.61]]): the $|J|$ of [[§15 Multivariable Integration#^thm-15-20|Change of Variables in ℝⁿ]].
 > - The same area element pulled back as a 2-form: [[§22 The Algebra of Differential Forms#^ex-22-3|Pullback Along a Surface]].
 
 > [!remark] Remark: Why the Gram Matrix?

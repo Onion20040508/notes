@@ -10,12 +10,12 @@ tags: [measure-theory, math551]
 ## Normed Linear Spaces
 
 > [!definition] Definition §19.1: Linear Space
-> A set $X$ is called a **linear space** (or [[1B Definition of Vector Space#^ladr-1-20|vector space]]) over $\mathbb{R}$ if for all $v_1, v_2 \in X$ and $c_1, c_2 \in \mathbb{R}$, we have $c_1 v_1 + c_2 v_2 \in X$ (with the usual axioms of vector addition and scalar multiplication).
+> A set $X$ is called a **linear space** (or [[§2 Definition of Vector Space#^ladr-1-20|vector space]]) over $\mathbb{R}$ if for all $v_1, v_2 \in X$ and $c_1, c_2 \in \mathbb{R}$, we have $c_1 v_1 + c_2 v_2 \in X$ (with the usual axioms of vector addition and scalar multiplication).
 
 ^def-19-1
 
 > [!remark]- Connections
-> - The axioms in full: [[1B Definition of Vector Space#^ladr-1-20|LADR 1.20]]; the closure condition $c_1v_1 + c_2v_2 \in X$ is the subspace test [[1C Subspaces#^ladr-1-34|LADR 1.34]].
+> - The axioms in full: [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]; the closure condition $c_1v_1 + c_2v_2 \in X$ is the subspace test [[§3 Subspaces#^ladr-1-34|LADR 1.34]].
 
 > [!example] Example §19.1: Linear Spaces in This Course
 > $\mathbb{R}^n$, $L^1(E)$ ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]]), $BV([a,b])$ ([[§18 Differentiation Theory#^prop-18-4|Proposition §18.4]]), and $AC([a,b])$ ([[§18 Differentiation Theory#^prop-18-11|Proposition §18.11]]) are all linear spaces.
@@ -33,8 +33,8 @@ tags: [measure-theory, math551]
 ^def-19-2
 
 > [!remark]- Connections
-> - The norm of an inner product space, $\|v\| = \sqrt{\langle v, v\rangle}$ ([[6A Inner Products and Norms#^ladr-6-7|LADR 6.7]]), satisfies (i), (iii) by [[6A Inner Products and Norms#^ladr-6-9|LADR 6.9]] and (ii) by the [[Triangle inequality|triangle inequality (LADR 6.17)]].
-> - Which norms come from an inner product is decided by the [[6A Inner Products and Norms#^ladr-6-21|parallelogram equality (LADR 6.21)]]; among the $L^p$ norms only $p = 2$ does.
+> - The norm of an inner product space, $\|v\| = \sqrt{\langle v, v\rangle}$ ([[§19 Inner Products and Norms#^ladr-6-7|LADR 6.7]]), satisfies (i), (iii) by [[§19 Inner Products and Norms#^ladr-6-9|LADR 6.9]] and (ii) by the [[Triangle inequality|triangle inequality (LADR 6.17)]].
+> - Which norms come from an inner product is decided by the [[§19 Inner Products and Norms#^ladr-6-21|parallelogram equality (LADR 6.21)]]; among the $L^p$ norms only $p = 2$ does.
 
 > [!example] Example §19.2: Norms on $\mathbb{R}^n$
 > For $\mathbf{x} = (x_1, \ldots, x_n) \in \mathbb{R}^n$: $\|\mathbf{x}\|_2 = \left(\sum_{i=1}^{n} x_i^2\right)^{1/2}$ is the Euclidean norm, and $\|\mathbf{x}\|_1 = \sum_{i=1}^{n} |x_i|$ is the $\ell^1$ norm. Both are norms on $\mathbb{R}^n$.
@@ -45,7 +45,7 @@ tags: [measure-theory, math551]
 *Unit balls $\{\|x\| \leq 1\}$ in $\mathbb{R}^2$: the $\ell^1$ ball is the red diamond and the Euclidean ball the blue disk. The $\ell^4$ ball (dashed) and the square of $\max_i |x_i|$ (gray, the limit $p \to \infty$) show the balls of $\|x\|_p = (\sum_i |x_i|^p)^{1/p}$ growing toward the square as $p$ increases. The shapes differ, but each is convex and symmetric about $0$, as the triangle inequality and homogeneity require.*
 
 > [!remark]- Connections
-> - $\|\cdot\|_2$ is the inner-product norm of [[6A Inner Products and Norms#^ladr-6-8|LADR 6.8(a)]]; its metric is the Euclidean metric of [[§11 Metric Topology#^ex-11-1|590 Ex. §11.1]].
+> - $\|\cdot\|_2$ is the inner-product norm of [[§19 Inner Products and Norms#^ladr-6-8|LADR 6.8(a)]]; its metric is the Euclidean metric of [[§11 Metric Topology#^ex-11-1|590 Ex. §11.1]].
 > - Comparing norms on $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]] ($d$ vs. $d_\infty$).
 
 > [!example] Example §19.3: Norms on Function Spaces
@@ -56,7 +56,7 @@ tags: [measure-theory, math551]
 ^ex-19-3
 
 > [!remark]- Connections
-> - $BV([a,b]) / \{\text{constants}\}$ is a quotient space in the sense of [[3E Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]]; homogeneity and the triangle inequality for $\bigvee_a^b$ are [[§18 Differentiation Theory#^prop-18-4|Proposition §18.4]](ii).
+> - $BV([a,b]) / \{\text{constants}\}$ is a quotient space in the sense of [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]]; homogeneity and the triangle inequality for $\bigvee_a^b$ are [[§18 Differentiation Theory#^prop-18-4|Proposition §18.4]](ii).
 
 > [!theorem] Proposition §19.1: Every Normed Space is a Metric Space
 > If $(X, \|\cdot\|)$ is a normed linear space, then $d(x, y) = \|x - y\|$ defines a [[§11 Metric Topology#^def-11-1|metric]] on $X$.
@@ -125,12 +125,12 @@ tags: [measure-theory, math551]
 >
 > Riesz–Fischer theorem ([[Riesz–Fischer Theorem|Theorem §19.18]]): $(L^p(E), \|\cdot\|_p)$ is a Banach space for all $1 \leq p < \infty$.
 >
-> The case $p = 2$ is especially important: $L^2(E)$ is a Hilbert space with [[6A Inner Products and Norms#^ladr-6-2|inner product]] $\langle f, g \rangle = \int_E f(x)\,g(x)\,dx$, and $\|f\|_2 = \langle f, f \rangle^{1/2}$ ([[6A Inner Products and Norms#^ladr-6-7|LADR 6.7]]).
+> The case $p = 2$ is especially important: $L^2(E)$ is a Hilbert space with [[§19 Inner Products and Norms#^ladr-6-2|inner product]] $\langle f, g \rangle = \int_E f(x)\,g(x)\,dx$, and $\|f\|_2 = \langle f, f \rangle^{1/2}$ ([[§19 Inner Products and Norms#^ladr-6-7|LADR 6.7]]).
 
 ^rem-19-1
 
 > [!remark]- Connections
-> - The Riemann-integral prototype of this inner product and norm: [[6A Inner Products and Norms#^ladr-6-3|LADR 6.3(c)]], [[6A Inner Products and Norms#^ladr-6-8|LADR 6.8(b)]].
+> - The Riemann-integral prototype of this inner product and norm: [[§19 Inner Products and Norms#^ladr-6-3|LADR 6.3(c)]], [[§19 Inner Products and Norms#^ladr-6-8|LADR 6.8(b)]].
 
 > [!example] Example §19.5: $L^p$ Membership Depends on $p$
 > Let $E = (0, 1)$ and $g(x) = 1/\sqrt{x}$. Then $g \in L^p((0,1))$ iff $\int_0^1 x^{-p/2}\,dx < \infty$ iff $p/2 < 1$ iff $p < 2$. So $g \in L^1$ but $g \notin L^2$.
@@ -285,7 +285,7 @@ tags: [measure-theory, math551]
 *Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|§19.4]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]]
 
 > [!remark]- Connections
-> - $p = 2$ is the [[Cauchy–Schwarz inequality|Cauchy–Schwarz inequality (LADR 6.14)]] for the $L^2$ inner product of [[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|the remark above]]; its Riemann-integral form for continuous functions is [[6A Inner Products and Norms#^ladr-6-16|LADR 6.16(b)]].
+> - $p = 2$ is the [[Cauchy–Schwarz inequality|Cauchy–Schwarz inequality (LADR 6.14)]] for the $L^2$ inner product of [[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|the remark above]]; its Riemann-integral form for continuous functions is [[§19 Inner Products and Norms#^ladr-6-16|LADR 6.16(b)]].
 > - Used to prove [[Minkowski's Inequality|Minkowski's inequality]], the $L^p$ inclusions ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-6|Corollary §19.6]]) and [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-7|interpolation]].
 
 > [!theorem] Corollary §19.6: $L^p$ Inclusion for Finite Measure Spaces
@@ -439,7 +439,7 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - The case $p = 1$: [[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]].
-> - Passing to equivalence classes mod a.e. equality is a quotient by the subspace of null functions, as in [[3E Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]].
+> - Passing to equivalence classes mod a.e. equality is a quotient by the subspace of null functions, as in [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]].
 
 > [!theorem] Corollary §19.11: Minkowski for Finite Sums
 > Let $\{f_k\}_{k=1}^m \subseteq L^p(E)$. Then $\left\|\sum_{k=1}^{m} f_k\right\|_p \leq \sum_{k=1}^{m} \|f_k\|_p$.
@@ -629,7 +629,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 *Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-8|Def. §19.8]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]], [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-16|§19.16]], [[Fatou's Lemma|§14.15]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]]
 
 > [!remark]- Connections
-> - $L^p(E)$ is thus a [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|complete metric space (451 Def. §13.3)]], like $\mathbb{R}^n$ ([[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]); for $p = 2$, a complete inner product space (Hilbert space) extending [[6A Inner Products and Norms#^ladr-6-4|LADR 6.4]].
+> - $L^p(E)$ is thus a [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|complete metric space (451 Def. §13.3)]], like $\mathbb{R}^n$ ([[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]); for $p = 2$, a complete inner product space (Hilbert space) extending [[§19 Inner Products and Norms#^ladr-6-4|LADR 6.4]].
 > - The engine is the absolute series test ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|§19.14]]), itself built on [[Monotone Convergence Theorem (Lebesgue)|MCT]]; the upgrade from subsequence to full sequence is [[Fatou's Lemma|Fatou]].
 
 ## Density and Separability

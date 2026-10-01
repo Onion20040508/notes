@@ -140,10 +140,10 @@ tags: [group-theory, math493]
 
 ^def-31-3
 
-*Uses:* [[9C Determinants#^ladr-9-49|LADR 9.49]]
+*Uses:* [[§34 Determinants#^ladr-9-49|LADR 9.49]]
 
 > [!remark]- Connections
-> - The operator version: [[9C Determinants#^ladr-9-52|LADR 9.52 (Determinant is a similarity invariant)]].
+> - The operator version: [[§34 Determinants#^ladr-9-52|LADR 9.52 (Determinant is a similarity invariant)]].
 
 > [!theorem] Proposition §31.3: Conjugacy Class of a Diagonal Matrix
 > Let $D = \begin{pmatrix} 3 & 0 \\ 0 & 4 \end{pmatrix} \in GL_2(\mathbb{C})$. The conjugacy class of $D$ in $GL_2(\mathbb{C})$ is the set of all $2 \times 2$ complex matrices with eigenvalues $3$ and $4$:
@@ -163,7 +163,7 @@ tags: [group-theory, math493]
 
 ^pf-31-3
 
-*Uses:* [[§31 Conjugacy Classes#^def-31-1|Def. §31.1]], [[§31 Conjugacy Classes#^def-31-3|Def. §31.3]], [[5A Invariant Subspaces#^ladr-5-11|LADR 5.11]], [[9C Determinants#^ladr-9-65|LADR 9.65]], [[9C Determinants#^ladr-9-50|LADR 9.50]]
+*Uses:* [[§31 Conjugacy Classes#^def-31-1|Def. §31.1]], [[§31 Conjugacy Classes#^def-31-3|Def. §31.3]], [[§14 Invariant Subspaces#^ladr-5-11|LADR 5.11]], [[§34 Determinants#^ladr-9-65|LADR 9.65]], [[§34 Determinants#^ladr-9-50|LADR 9.50]]
 
 > [!remark] Remark: What the Argument Uses
 > The direction ($\supseteq$) needed the eigenvalues to be *distinct*, which forced diagonalizability. For a diagonal matrix with a repeated eigenvalue, e.g. $\begin{pmatrix} 3 & 0 \\ 0 & 3 \end{pmatrix} = 3I$, the conjugacy class is just $\{3I\}$ (it is [[§33 The Center#^def-33-1|central]]), while $\begin{pmatrix} 3 & 1 \\ 0 & 3 \end{pmatrix}$ has the same characteristic polynomial but is not similar to $3I$. Conjugacy classes in $GL_n(\mathbb{C})$ are classified in general by Jordan normal form, of which this problem is the diagonalizable case.
@@ -171,4 +171,4 @@ tags: [group-theory, math493]
 ^rem-31-1
 
 > [!remark]- Connections
-> - Jordan normal form: [[8C Consequences of Generalized Eigenspace Decomposition#^ladr-8-46|LADR 8.46 (Jordan form)]].
+> - Jordan normal form: [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-46|LADR 8.46 (Jordan form)]].

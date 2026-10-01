@@ -46,7 +46,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 > [!remark]- Connections
 > - MATH 452 counterpart, where area of a rectangle is likewise defined by hand: [[§15 Multivariable Integration#^def-15-1|452 Def. §15.1]].
-> - How a linear map rescales volume: [[9C Determinants#^ladr-9-61|LADR 9.61]], used for null sets in [[§18 Differentiation Theory#^thm-18-22|Thm. §18.22]].
+> - How a linear map rescales volume: [[§34 Determinants#^ladr-9-61|LADR 9.61]], used for null sets in [[§18 Differentiation Theory#^thm-18-22|Thm. §18.22]].
 
 ## Outer Measure
 

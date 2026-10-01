@@ -20,7 +20,7 @@ tags: [group-theory, math493]
 ^def-4-1
 
 > [!remark]- Connections
-> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-2|590 Definition §21.2: Subgroup]]; linear-algebra analogue: [[1C Subspaces#^ladr-1-34|Conditions for a subspace]].
+> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-2|590 Definition §21.2: Subgroup]]; linear-algebra analogue: [[§3 Subspaces#^ladr-1-34|Conditions for a subspace]].
 
 > [!theorem] Proposition §4.1: A Subset That Is a Group Is a Subgroup
 > A subgroup of $G$ is a group under the restricted operation, with the same identity and inverse map. Conversely, let $H \subseteq G$ be closed under the operation of $G$ and suppose $H$ is a group under the restricted operation. Then the identity of $H$ is $e_G$ and inverses in $H$ are inverses in $G$; hence $H$ is a subgroup of $G$.
@@ -249,7 +249,7 @@ tags: [group-theory, math493]
 *Uses:* [[§4 Subgroups#^ex-4-1|Ex. §4.1]], [[§4 Subgroups#^def-4-4|Def. §4.4]], [[§4 Subgroups#^prop-4-3|§4.3]]
 
 > [!remark]- Connections
-> - The same two descriptions of a span in linear algebra: [[2A Span and Linear Independence#^ladr-2-6|Span is the smallest containing subspace]].
+> - The same two descriptions of a span in linear algebra: [[§4 Span and Linear Independence#^ladr-2-6|Span is the smallest containing subspace]].
 
 > [!remark] Remark: Bottom-Up versus Top-Down
 > The word description is “bottom-up” (build the elements); the intersection description is “top-down” (cut down from $G$); they define the same subgroup.

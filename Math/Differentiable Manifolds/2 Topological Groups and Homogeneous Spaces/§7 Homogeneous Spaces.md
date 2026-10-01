@@ -523,10 +523,10 @@ The same triangle with $G = \mathbb{R}$. The exponential wraps the line around t
 
 ^pf-7-11
 
-*Uses:* [[§7 Homogeneous Spaces#^def-7-8|Def. §7.8]], [[§6 Group Actions and Orbit Spaces#^def-6-1|Def. §6.1]], [[§7 Homogeneous Spaces#^def-7-1|Def. §7.1]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-6|Def. §5.6]], [[Gram–Schmidt procedure]], [[6C Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]], [[Linear map lemma]]
+*Uses:* [[§7 Homogeneous Spaces#^def-7-8|Def. §7.8]], [[§6 Group Actions and Orbit Spaces#^def-6-1|Def. §6.1]], [[§7 Homogeneous Spaces#^def-7-1|Def. §7.1]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-6|Def. §5.6]], [[Gram–Schmidt procedure]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]], [[Linear map lemma]]
 
 > [!remark]- Connections
-> - The case $k = 1$ of the orthonormal-basis argument is [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|493 §30.2]] and [[§6 Group Actions and Orbit Spaces#^ex-6-5|Ex. §6.5]]; orthonormal bases in LADR: [[6B Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]].
+> - The case $k = 1$ of the orthonormal-basis argument is [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|493 §30.2]] and [[§6 Group Actions and Orbit Spaces#^ex-6-5|Ex. §6.5]]; orthonormal bases in LADR: [[§20 Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]].
 
 > [!theorem] Proposition §7.12: Isotropy of the Standard $k$-Plane
 > Let $V_0 = \operatorname{span}(e_1, \ldots, e_k) \in \mathrm{Gr}_k(\mathbb{R}^n)$ be the base point. Then

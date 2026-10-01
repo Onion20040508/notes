@@ -21,7 +21,7 @@ tags: [group-theory, math493]
 ^def-19-1
 
 > [!remark]- Connections
-> - The one-variable polynomials of linear algebra: [[2A Span and Linear Independence#^ladr-2-10|LADR 2.10]].
+> - The one-variable polynomials of linear algebra: [[§4 Span and Linear Independence#^ladr-2-10|LADR 2.10]].
 
 > [!definition] Definition §19.2: Commutative Ring (provisional)
 > A **commutative ring** is a set $R$ with two operations $+$ and $\cdot$ such that $(R, +)$ is an abelian group with identity $0$, and multiplication is associative, commutative, has an identity $1$, and distributes over addition. Thus a commutative ring satisfies all the [[§3 Basic Examples of Groups#^def-3-3|field axioms]] except that nonzero elements need not have multiplicative inverses. Rings are treated properly later in the course.
@@ -83,13 +83,13 @@ tags: [group-theory, math493]
 > e_1 = \begin{pmatrix} 1 \\ 0 \\ \vdots \\ 0 \end{pmatrix}, \quad e_2 = \begin{pmatrix} 0 \\ 1 \\ \vdots \\ 0 \end{pmatrix}, \quad \ldots, \quad e_n = \begin{pmatrix} 0 \\ 0 \\ \vdots \\ 1 \end{pmatrix}.
 > $$
 >
-> Every $v \in k^n$ is uniquely $v = v_1 e_1 + \cdots + v_n e_n$; the $v_i$ are its **coordinates**. The set $\{e_1, \ldots, e_n\}$ is the **standard basis**: it [[2A Span and Linear Independence#^ladr-2-7|spans]] $k^n$ and is [[2A Span and Linear Independence#^ladr-2-15|linearly independent]]. In the context of $S_n$, the index set $\{1, \ldots, n\}$ on which permutations act is identified with the standard basis by $i \leftrightarrow e_i$.
+> Every $v \in k^n$ is uniquely $v = v_1 e_1 + \cdots + v_n e_n$; the $v_i$ are its **coordinates**. The set $\{e_1, \ldots, e_n\}$ is the **standard basis**: it [[§4 Span and Linear Independence#^ladr-2-7|spans]] $k^n$ and is [[§4 Span and Linear Independence#^ladr-2-15|linearly independent]]. In the context of $S_n$, the index set $\{1, \ldots, n\}$ on which permutations act is identified with the standard basis by $i \leftrightarrow e_i$.
 
 ^def-19-4
 
 > [!remark]- Connections
-> - Linear-algebra home: [[2B Bases#^ladr-2-27|LADR 2.27]] (a) (standard basis of $\mathbb{F}^n$), [[2B Bases#^ladr-2-26|LADR 2.26]] (basis), [[1A Rⁿ and Cⁿ#^ladr-1-11|LADR 1.11]] ($\mathbb{F}^n$, coordinates).
-> - Unique coordinates are the [[2B Bases#^ladr-2-28|Criterion for basis]] (LADR 2.28).
+> - Linear-algebra home: [[§5 Bases#^ladr-2-27|LADR 2.27]] (a) (standard basis of $\mathbb{F}^n$), [[§5 Bases#^ladr-2-26|LADR 2.26]] (basis), [[§1 Rⁿ and Cⁿ#^ladr-1-11|LADR 1.11]] ($\mathbb{F}^n$, coordinates).
+> - Unique coordinates are the [[§5 Bases#^ladr-2-28|Criterion for basis]] (LADR 2.28).
 
 > [!theorem] Theorem §19.2: Linear Extension
 > Let $V$ be a vector space over $k$ with basis $b_1, \ldots, b_n$, and let $W$ be any vector space over $k$. For any choice of vectors $w_1, \ldots, w_n \in W$ there is exactly one linear map $T: V \to W$ with $T(b_i) = w_i$ for all $i$, namely
@@ -98,7 +98,7 @@ tags: [group-theory, math493]
 > T(c_1 b_1 + \cdots + c_n b_n) = c_1 w_1 + \cdots + c_n w_n.
 > $$
 >
-> In particular, two linear maps that agree on a basis are equal. When $V = W = k^n$ with the standard basis, the [[3C Matrices#^ladr-3-31|matrix]] of $T$ has $T(e_i) = w_i$ as its $i$-th column.
+> In particular, two linear maps that agree on a basis are equal. When $V = W = k^n$ with the standard basis, the [[§9 Matrices#^ladr-3-31|matrix]] of $T$ has $T(e_i) = w_i$ as its $i$-th column.
 
 ^thm-19-2
 
@@ -111,14 +111,14 @@ tags: [group-theory, math493]
 
 ^pf-19-2
 
-*Uses:* [[2B Bases#^ladr-2-28|LADR 2.28]], [[3A Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]], [[3C Matrices#^ladr-3-31|LADR 3.31]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-4|Def. §19.4]]
+*Uses:* [[§5 Bases#^ladr-2-28|LADR 2.28]], [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]], [[§9 Matrices#^ladr-3-31|LADR 3.31]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-4|Def. §19.4]]
 
 > [!remark]- Connections
-> - Linear-algebra home: the [[Linear map lemma]] ([[3A Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]).
-> - Columns of the matrix of a linear map: [[3C Matrices#^ladr-3-31|LADR 3.31]].
+> - Linear-algebra home: the [[Linear map lemma]] ([[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]).
+> - Columns of the matrix of a linear map: [[§9 Matrices#^ladr-3-31|LADR 3.31]].
 
 > [!theorem] Corollary §19.3: Permutations of the Basis Give Invertible Linear Maps
-> Let $\sigma \in S_n$. There is a unique linear map $T_\sigma: k^n \to k^n$ with $T_\sigma(e_i) = e_{\sigma(i)}$ for all $i$. It is [[3D Invertibility and Isomorphisms#^ladr-3-59|invertible]], with inverse $T_{\sigma^{-1}}$, and $T_\sigma \circ T_\tau = T_{\sigma\tau}$. Its matrix is the permutation matrix $M(\sigma)$ defined below ([[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-5|Def. §19.5]]).
+> Let $\sigma \in S_n$. There is a unique linear map $T_\sigma: k^n \to k^n$ with $T_\sigma(e_i) = e_{\sigma(i)}$ for all $i$. It is [[§10 Invertibility and Isomorphisms#^ladr-3-59|invertible]], with inverse $T_{\sigma^{-1}}$, and $T_\sigma \circ T_\tau = T_{\sigma\tau}$. Its matrix is the permutation matrix $M(\sigma)$ defined below ([[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-5|Def. §19.5]]).
 
 ^cor-19-3
 
@@ -127,10 +127,10 @@ tags: [group-theory, math493]
 
 ^pf-19-3
 
-*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|§19.2]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-4|Def. §19.4]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[3A Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]], [[3D Invertibility and Isomorphisms#^ladr-3-59|LADR 3.59]]
+*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|§19.2]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-4|Def. §19.4]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]], [[§10 Invertibility and Isomorphisms#^ladr-3-59|LADR 3.59]]
 
 > [!remark]- Connections
-> - Linear-algebra home: [[Linear map lemma]] ([[3A Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]) for existence/uniqueness; [[3D Invertibility and Isomorphisms#^ladr-3-59|LADR 3.59]] for invertibility.
+> - Linear-algebra home: [[Linear map lemma]] ([[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]) for existence/uniqueness; [[§10 Invertibility and Isomorphisms#^ladr-3-59|LADR 3.59]] for invertibility.
 
 > [!theorem] Proposition §19.4: Permutation Representation of $S_X$
 > Let $X$ be a finite set and $k^X$ the $k$-vector space with basis $\{e_x : x \in X\}$ indexed by $X$. Every bijection $\sigma: X \to X$ extends uniquely to a linear map $T_\sigma: k^X \to k^X$ with $T_\sigma(e_x) = e_{\sigma(x)}$, and $\sigma \mapsto T_\sigma$ is an injective homomorphism $S_X \to GL(k^X)$.
@@ -142,7 +142,7 @@ tags: [group-theory, math493]
 
 ^pf-19-4
 
-*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|§19.2]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^cor-19-3|§19.3]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[3A Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]
+*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|§19.2]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^cor-19-3|§19.3]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]
 
 > [!remark]- Connections
 > - Composed with Cayley's embedding $G \to S_G$ this gives [[§23 Actions#^cor-23-6|Every Finite Group Is a Matrix Group]].
@@ -153,7 +153,7 @@ tags: [group-theory, math493]
 ^rem-19-2
 
 > [!definition] Definition §19.5: Permutation Matrices
-> For $\sigma \in S_n$, the **permutation matrix** $M(\sigma) \in GL_n(k)$ is the [[3C Matrices#^ladr-3-31|matrix]] of the linear map $T_\sigma: k^n \to k^n$ of [[§19 Polynomial Rings, Permutation Matrices, and Representations#^cor-19-3|Permutations of the Basis Give Invertible Linear Maps]], i.e. the unique linear map sending each standard basis vector $e_i$ to $e_{\sigma(i)}$. Thus column $i$ of $M(\sigma)$ has a single nonzero entry, a $1$ in row $\sigma(i)$:
+> For $\sigma \in S_n$, the **permutation matrix** $M(\sigma) \in GL_n(k)$ is the [[§9 Matrices#^ladr-3-31|matrix]] of the linear map $T_\sigma: k^n \to k^n$ of [[§19 Polynomial Rings, Permutation Matrices, and Representations#^cor-19-3|Permutations of the Basis Give Invertible Linear Maps]], i.e. the unique linear map sending each standard basis vector $e_i$ to $e_{\sigma(i)}$. Thus column $i$ of $M(\sigma)$ has a single nonzero entry, a $1$ in row $\sigma(i)$:
 >
 > $$
 > M(\sigma)_{ji} = \begin{cases} 1 & j = \sigma(i), \\ 0 & \text{otherwise.} \end{cases}
@@ -164,7 +164,7 @@ tags: [group-theory, math493]
 ^def-19-5
 
 > [!remark]- Connections
-> - Linear-algebra home: the matrix of a linear map, [[3C Matrices#^ladr-3-31|LADR 3.31]].
+> - Linear-algebra home: the matrix of a linear map, [[§9 Matrices#^ladr-3-31|LADR 3.31]].
 
 > [!example] Example §19.2: $M(\sigma)$ for $\sigma = (1\,2\,3)$
 > Since $\sigma(1) = 2$, $\sigma(2) = 3$, $\sigma(3) = 1$, the columns are $e_2, e_3, e_1$:
@@ -198,19 +198,19 @@ tags: [group-theory, math493]
 
 ^pf-19-5
 
-*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-5|Def. §19.5]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|§19.2]], [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[3C Matrices#^ladr-3-43|LADR 3.43]], [[3C Matrices#^ladr-3-54|LADR 3.54]], [[3D Invertibility and Isomorphisms#^ladr-3-80|LADR 3.80]]
+*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-5|Def. §19.5]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|§19.2]], [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[§9 Matrices#^ladr-3-43|LADR 3.43]], [[§9 Matrices#^ladr-3-54|LADR 3.54]], [[§10 Invertibility and Isomorphisms#^ladr-3-80|LADR 3.80]]
 
 > [!remark]- Connections
-> - Linear-algebra home: matrix of a product is the product of the matrices, [[3C Matrices#^ladr-3-43|LADR 3.43]]; orthogonal (real unitary) matrices, [[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
+> - Linear-algebra home: matrix of a product is the product of the matrices, [[§9 Matrices#^ladr-3-43|LADR 3.43]]; orthogonal (real unitary) matrices, [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
 > - Composed with $\det$ it gives the sign: [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|The Sign Is a Homomorphism]].
 
 > [!remark] Remark: Row vs. Column Convention
-> Some sources define the permutation matrix by rows, “row $i$ is $e_{\sigma(i)}$,” which produces the [[3C Matrices#^ladr-3-54|transpose]] of ours, i.e. $M(\sigma^{-1})$; under that convention $M(\sigma)M(\tau) = M(\tau\sigma)$, reversed. The column convention above is the one compatible with right-to-left composition, $(f \circ g)(j) = f(g(j))$, as used in this course ([[§10 Cycle Notation and the Group S₃#^rem-10-1|Convention Warning]]). Since $\det M(\sigma^{-1}) = (\det M(\sigma))^{-1}$ ([[9C Determinants#^ladr-9-49|LADR 9.49]]) and the determinant of a permutation matrix is $\pm 1$, the choice does not affect the determinant.
+> Some sources define the permutation matrix by rows, “row $i$ is $e_{\sigma(i)}$,” which produces the [[§9 Matrices#^ladr-3-54|transpose]] of ours, i.e. $M(\sigma^{-1})$; under that convention $M(\sigma)M(\tau) = M(\tau\sigma)$, reversed. The column convention above is the one compatible with right-to-left composition, $(f \circ g)(j) = f(g(j))$, as used in this course ([[§10 Cycle Notation and the Group S₃#^rem-10-1|Convention Warning]]). Since $\det M(\sigma^{-1}) = (\det M(\sigma))^{-1}$ ([[§34 Determinants#^ladr-9-49|LADR 9.49]]) and the determinant of a permutation matrix is $\pm 1$, the choice does not affect the determinant.
 
 ^rem-19-3
 
 > [!remark]- Connections
-> - $\det M(\sigma) = \pm 1$ is proved in [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-2|Three Formulas for the Sign]]; multiplicativity of $\det$: [[9C Determinants#^ladr-9-49|LADR 9.49]].
+> - $\det M(\sigma) = \pm 1$ is proved in [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-2|Three Formulas for the Sign]]; multiplicativity of $\det$: [[§34 Determinants#^ladr-9-49|LADR 9.49]].
 
 > [!definition] Definition §19.6: Representation; Permutation Representation
 > A **representation** of a group $G$ is a homomorphism $G \to GL_n(k)$ for some field $k$ and some $n \geq 1$ (more generally $G \to GL(V)$ for a $k$-vector space $V$). The homomorphism $\sigma \mapsto M(\sigma)$, $S_n \to GL_n(k)$, of [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|the proposition just proved]] is the **permutation representation** of $S_n$: it realizes $S_n$ as a group of matrices, with composition of permutations becoming matrix multiplication, and its image is the subgroup of permutation matrices listed among the subgroups of $GL_n(\mathbb{R})$ in [[§5 A Zoo of Subgroups#^ex-5-4|WS 1.7]]. Representations in general are the subject of the second half of the course.

@@ -48,7 +48,7 @@ tags: [group-theory, math493]
 *Bubble sort on the sequence $(4, 3, 1, 2)$ of $\sigma = (1\,4\,2\,3)$ from [[§19 Polynomial Rings, Permutation Matrices, and Representations#^ex-19-2|Ex. §19.2]]. Each red crossing swaps an adjacent inversion and lowers $\operatorname{inv}$ by exactly one, so sorting takes $\operatorname{inv}(\sigma) = 5$ swaps and $\operatorname{sgn}(\sigma) = (-1)^5 = -1$. Two wires cross exactly when their values form an inversion ($1$ and $2$ never cross). Reading the swaps backwards gives [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-7|§20.7]] (1): $\sigma = t_5 t_4 t_3 t_2 t_1 = (2\,3)(1\,2)(3\,4)(2\,3)(1\,2)$.*
 
 > [!remark]- Connections
-> - Linear-algebra counterpart: [[9B Alternating Multilinear Forms#^ladr-9-34|LADR 9.34]] (swapping two entries of a permutation changes the parity of the number of inversions).
+> - Linear-algebra counterpart: [[§33 Alternating Multilinear Forms#^ladr-9-34|LADR 9.34]] (swapping two entries of a permutation changes the parity of the number of inversions).
 
 > [!theorem] Theorem §20.2: Three Formulas for the Sign
 > Let $\sigma \in S_n$, let $\Delta = \prod_{1 \leq i < j \leq n}(x_i - x_j) \in \mathbb{Q}[x_1, \ldots, x_n]$, and let $M(\sigma)$ be the [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-5|permutation matrix]]. Then
@@ -70,15 +70,15 @@ tags: [group-theory, math493]
 >
 > As $\Delta$ is a product of nonzero polynomials it is nonzero, so $\sigma\cdot\Delta/\Delta = (-1)^{\operatorname{inv}(\sigma)}$.
 >
-> **Second equality.** The columns of $M(\sigma)$ are $e_{\sigma(1)}, \ldots, e_{\sigma(n)}$, so swapping entries at positions $k, k+1$ of the sequence $(\sigma(1), \ldots, \sigma(n))$ is exactly swapping columns $k, k+1$ of the matrix, which [[9C Determinants#^ladr-9-57|multiplies the determinant by]] $-1$. Bubble sort ([[§20 The Sign Homomorphism and the Alternating Group#^lem-20-1|Lemma (3)]]) reaches the sequence $(1, \ldots, n)$, whose matrix is $I_n$, after exactly $\operatorname{inv}(\sigma)$ swaps. Hence $\det M(\sigma) = (-1)^{\operatorname{inv}(\sigma)} \det I_n = (-1)^{\operatorname{inv}(\sigma)}$.
+> **Second equality.** The columns of $M(\sigma)$ are $e_{\sigma(1)}, \ldots, e_{\sigma(n)}$, so swapping entries at positions $k, k+1$ of the sequence $(\sigma(1), \ldots, \sigma(n))$ is exactly swapping columns $k, k+1$ of the matrix, which [[§34 Determinants#^ladr-9-57|multiplies the determinant by]] $-1$. Bubble sort ([[§20 The Sign Homomorphism and the Alternating Group#^lem-20-1|Lemma (3)]]) reaches the sequence $(1, \ldots, n)$, whose matrix is $I_n$, after exactly $\operatorname{inv}(\sigma)$ swaps. Hence $\det M(\sigma) = (-1)^{\operatorname{inv}(\sigma)} \det I_n = (-1)^{\operatorname{inv}(\sigma)}$.
 
 ^pf-20-2
 
-*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-3|Def. §19.3]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-1|§19.1]], [[§20 The Sign Homomorphism and the Alternating Group#^def-20-1|Def. §20.1]], [[§20 The Sign Homomorphism and the Alternating Group#^lem-20-1|§20.1]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-5|Def. §19.5]], [[9C Determinants#^ladr-9-57|LADR 9.57]], [[9C Determinants#^ladr-9-44|LADR 9.44]]
+*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-3|Def. §19.3]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-1|§19.1]], [[§20 The Sign Homomorphism and the Alternating Group#^def-20-1|Def. §20.1]], [[§20 The Sign Homomorphism and the Alternating Group#^lem-20-1|§20.1]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-5|Def. §19.5]], [[§34 Determinants#^ladr-9-57|LADR 9.57]], [[§34 Determinants#^ladr-9-44|LADR 9.44]]
 
 > [!remark]- Connections
-> - Linear-algebra home of the determinant facts: column swaps change the sign, [[9C Determinants#^ladr-9-57|LADR 9.57]] (b); $\det I = 1$, [[9C Determinants#^ladr-9-44|LADR 9.44]].
-> - The sign $(-1)^{\operatorname{inv}}$ is the one in the Leibniz formula for $\det$: [[9C Determinants#^ladr-9-46|LADR 9.46]].
+> - Linear-algebra home of the determinant facts: column swaps change the sign, [[§34 Determinants#^ladr-9-57|LADR 9.57]] (b); $\det I = 1$, [[§34 Determinants#^ladr-9-44|LADR 9.44]].
+> - The sign $(-1)^{\operatorname{inv}}$ is the one in the Leibniz formula for $\det$: [[§34 Determinants#^ladr-9-46|LADR 9.46]].
 
 > [!definition] Definition §20.2: The Sign; Even and Odd Permutations
 > The **sign** of $\sigma \in S_n$ is $\operatorname{sgn}(\sigma) := \det M(\sigma) = (-1)^{\operatorname{inv}(\sigma)} = \sigma\cdot\Delta/\Delta \in \{\pm 1\}$. A permutation is **even** if $\operatorname{sgn}(\sigma) = 1$ and **odd** if $\operatorname{sgn}(\sigma) = -1$. (The problem sets write $\varepsilon(\sigma)$; the lectures, and these notes, write $\operatorname{sgn}(\sigma)$.)
@@ -86,7 +86,7 @@ tags: [group-theory, math493]
 ^def-20-2
 
 > [!remark]- Connections
-> - Linear algebra defines the sign by inversions: [[9B Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]].
+> - Linear algebra defines the sign by inversions: [[§33 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]].
 
 > [!theorem] Theorem §20.3: The Sign Is a Homomorphism
 > $\operatorname{sgn}: S_n \to \{\pm 1\}$ is a group [[§15 Homomorphisms#^def-15-1|homomorphism]], where $\{\pm 1\}$ is a group under multiplication.
@@ -96,14 +96,14 @@ tags: [group-theory, math493]
 ^thm-20-3
 
 > [!proof]+ Proof
-> By [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]], $M(\sigma\tau) = M(\sigma)M(\tau)$. Hence $\operatorname{sgn}(\sigma\tau) = \det(M(\sigma)M(\tau)) = \det M(\sigma)\det M(\tau) = \operatorname{sgn}(\sigma)\operatorname{sgn}(\tau)$, by [[9C Determinants#^ladr-9-49|multiplicativity of the determinant]].
+> By [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]], $M(\sigma\tau) = M(\sigma)M(\tau)$. Hence $\operatorname{sgn}(\sigma\tau) = \det(M(\sigma)M(\tau)) = \det M(\sigma)\det M(\tau) = \operatorname{sgn}(\sigma)\operatorname{sgn}(\tau)$, by [[§34 Determinants#^ladr-9-49|multiplicativity of the determinant]].
 
 ^pf-20-3
 
-*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]], [[§20 The Sign Homomorphism and the Alternating Group#^def-20-2|Def. §20.2]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[9C Determinants#^ladr-9-49|LADR 9.49]]
+*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]], [[§20 The Sign Homomorphism and the Alternating Group#^def-20-2|Def. §20.2]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§34 Determinants#^ladr-9-49|LADR 9.49]]
 
 > [!remark]- Connections
-> - Linear-algebra home: [[9C Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
+> - Linear-algebra home: [[§34 Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
 
 > [!theorem] Corollary §20.4: Parity of a Permutation
 > 1. Every transposition is odd: $\operatorname{sgn}((a\ b)) = -1$.
@@ -117,7 +117,7 @@ tags: [group-theory, math493]
 
 ^pf-20-4
 
-*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-5|Def. §19.5]], [[§20 The Sign Homomorphism and the Alternating Group#^def-20-2|Def. §20.2]], [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|§20.3]], [[§12 Multiplying and Conjugating Cycles#^prop-12-2|§12.2]], [[9C Determinants#^ladr-9-57|LADR 9.57]], [[9C Determinants#^ladr-9-44|LADR 9.44]]
+*Uses:* [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-5|Def. §19.5]], [[§20 The Sign Homomorphism and the Alternating Group#^def-20-2|Def. §20.2]], [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|§20.3]], [[§12 Multiplying and Conjugating Cycles#^prop-12-2|§12.2]], [[§34 Determinants#^ladr-9-57|LADR 9.57]], [[§34 Determinants#^ladr-9-44|LADR 9.44]]
 
 > [!remark] Remark: Parity, Settled
 > [[§12 Multiplying and Conjugating Cycles#^rem-12-1|§12]] noted that factorizations into transpositions are far from unique and that “only the parity is an invariant” — deferred to this problem. [[§20 The Sign Homomorphism and the Alternating Group#^cor-20-4|Corollary (2)]] is that statement, and the reason it holds is that parity is computed by a function $\operatorname{sgn}$ defined without reference to factorizations (via $\Delta$, inversions, or determinants) which happens to take the value $-1$ on every transposition.
@@ -131,7 +131,7 @@ tags: [group-theory, math493]
 > S_n \xrightarrow{\ \sigma \mapsto M(\sigma)\ } GL_n(\mathbb{R}) \xrightarrow{\ \det\ } \mathbb{R}^\times,
 > $$
 >
-> a composition of two homomorphisms ([[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]] for the first, [[9C Determinants#^ladr-9-49|multiplicativity]] of $\det$ for the second), hence a homomorphism, with the one thing “needing proof” being $M(\sigma\tau) = M(\sigma)M(\tau)$. Its image is $\{\pm 1\} \cong \mathbb{Z}/2\mathbb{Z}$ (it takes both values, e.g. on $e$ and $(1\,2)$), and its kernel is the [[§20 The Sign Homomorphism and the Alternating Group#^def-20-3|alternating group]] $A_n$. The problem sets write $\varepsilon$ for this map; these notes follow the lecture and write $\operatorname{sgn}$ throughout.
+> a composition of two homomorphisms ([[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]] for the first, [[§34 Determinants#^ladr-9-49|multiplicativity]] of $\det$ for the second), hence a homomorphism, with the one thing “needing proof” being $M(\sigma\tau) = M(\sigma)M(\tau)$. Its image is $\{\pm 1\} \cong \mathbb{Z}/2\mathbb{Z}$ (it takes both values, e.g. on $e$ and $(1\,2)$), and its kernel is the [[§20 The Sign Homomorphism and the Alternating Group#^def-20-3|alternating group]] $A_n$. The problem sets write $\varepsilon$ for this map; these notes follow the lecture and write $\operatorname{sgn}$ throughout.
 
 ^rem-20-2
 

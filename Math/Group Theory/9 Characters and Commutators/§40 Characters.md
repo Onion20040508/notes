@@ -27,7 +27,7 @@ tags: [group-theory, math493]
 ^ex-40-1
 
 > [!remark]- Connections
-> - The multiplicativity in (2): [[9C Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
+> - The multiplicativity in (2): [[§34 Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
 
 > [!remark] Remark: Why Characters
 > A character takes the non-commutative multiplication of $G$ and maps it into a commutative group, where computation is much easier. The price is information: as shown below, a character cannot distinguish conjugate elements and sends every commutator to $e_A$, so it sees only the “abelian part” of $G$.
@@ -75,7 +75,7 @@ tags: [group-theory, math493]
 ^thm-40-2
 
 > [!proof]+ Proof
-> **Values are nonzero.** If $\lambda(g) = 0$ then $gv = 0$, and applying $g^{-1}$ gives $v = g^{-1}(gv) = g^{-1}(0) = 0$ (each group element acts by a linear map, which sends $0$ to $0$, [[3A Vector Space of Linear Maps#^ladr-3-10|LADR 3.10]]), contradicting $v \neq 0$. So $\lambda(g) \in k \setminus \{0\} = k^\times$.
+> **Values are nonzero.** If $\lambda(g) = 0$ then $gv = 0$, and applying $g^{-1}$ gives $v = g^{-1}(gv) = g^{-1}(0) = 0$ (each group element acts by a linear map, which sends $0$ to $0$, [[§7 Vector Space of Linear Maps#^ladr-3-10|LADR 3.10]]), contradicting $v \neq 0$. So $\lambda(g) \in k \setminus \{0\} = k^\times$.
 >
 > **Eigenvalues are determined.** If $av = bv$ with $a, b \in k$, then $(a - b)v = 0$; were $a - b \neq 0$, multiplying by $(a-b)^{-1}$ would give $v = 0$. So $a = b$: the scalar $\lambda(g)$ is uniquely determined by $g$, and $\lambda$ is a well-defined function.
 >
@@ -87,10 +87,10 @@ tags: [group-theory, math493]
 
 ^pf-40-2
 
-*Uses:* [[§23 Actions#^def-23-1|Def. §23.1]], [[3A Vector Space of Linear Maps#^ladr-3-10|LADR 3.10]], [[§3 Basic Examples of Groups#^def-3-4|Def. §3.4]], [[§40 Characters#^def-40-1|Def. §40.1]]
+*Uses:* [[§23 Actions#^def-23-1|Def. §23.1]], [[§7 Vector Space of Linear Maps#^ladr-3-10|LADR 3.10]], [[§3 Basic Examples of Groups#^def-3-4|Def. §3.4]], [[§40 Characters#^def-40-1|Def. §40.1]]
 
 > [!remark]- Connections
-> - Eigenvectors in linear algebra: [[5A Invariant Subspaces#^ladr-5-8|Eigenvector]] (LADR 5.8); here one vector is an eigenvector of every operator in $G$ simultaneously.
+> - Eigenvectors in linear algebra: [[§14 Invariant Subspaces#^ladr-5-8|Eigenvector]] (LADR 5.8); here one vector is an eigenvector of every operator in $G$ simultaneously.
 
 > [!example] Example §40.2: $\Delta$ and the Sign Character
 > Let $V$ be the space of homogeneous polynomials of degree $\binom{n}{2}$ in $x_1, \ldots, x_n$ over $k$, with $S_n \subseteq GL(V)$ acting by permuting variables ([[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-3|Def. §19.3]]). Take

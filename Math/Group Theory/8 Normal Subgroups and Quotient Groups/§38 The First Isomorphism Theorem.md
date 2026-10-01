@@ -62,7 +62,7 @@ tags: [group-theory, math493]
 *Uses:* [[§38 The First Isomorphism Theorem#^thm-38-1|§38.1]], [[§37 Quotient Groups#^thm-37-1|§37.1]]
 
 > [!remark] Remark: Rank–Nullity
-> The corollary is the group version of the [[3B Null Spaces and Ranges#^ladr-3-21|rank–nullity theorem]]. For a linear map $\mathbb{F}_p^m \to \mathbb{F}_p^n$, the kernel is $\cong \mathbb{F}_p^{\text{nullity}}$ and the image is $\cong \mathbb{F}_p^{\text{rank}}$, so the corollary reads $p^m = p^{\text{nullity}} \cdot p^{\text{rank}}$. Rank–nullity has a plus where the corollary has a times because sizes of $\mathbb{F}_p$-spaces are powers of $p$, and multiplying powers adds exponents: $m = \text{nullity} + \text{rank}$.
+> The corollary is the group version of the [[§8 Null Spaces and Ranges#^ladr-3-21|rank–nullity theorem]]. For a linear map $\mathbb{F}_p^m \to \mathbb{F}_p^n$, the kernel is $\cong \mathbb{F}_p^{\text{nullity}}$ and the image is $\cong \mathbb{F}_p^{\text{rank}}$, so the corollary reads $p^m = p^{\text{nullity}} \cdot p^{\text{rank}}$. Rank–nullity has a plus where the corollary has a times because sizes of $\mathbb{F}_p$-spaces are powers of $p$, and multiplying powers adds exponents: $m = \text{nullity} + \text{rank}$.
 >
 > *Source: lecture*
 
@@ -81,7 +81,7 @@ tags: [group-theory, math493]
 *Part 3 of the example, $\alpha: \mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$. The kernel $N = \{[0], [3]\}$ (red) and its cosets are exactly the fibres of $\alpha$: each coset goes to a single element of the image $I = \{1, 2, 4\}$ (blue). So $\beta(gN) = \alpha(g)$ is well defined and bijective, $(\mathbb{Z}/6\mathbb{Z})/N \cong I$, and $6 = 2 \cdot 3$.*
 
 > [!remark]- Connections
-> - The homomorphism in (2): [[9C Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
+> - The homomorphism in (2): [[§34 Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
 
 > [!remark] Remark: PS 3.1 and PS 3.2 as Instances
 > Both problems of Problem Set 3 that build a homomorphism into a symmetric group are special cases of the theorem.

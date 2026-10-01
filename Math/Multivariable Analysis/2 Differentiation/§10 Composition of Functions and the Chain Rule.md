@@ -119,7 +119,7 @@ Recall the single-variable [[§28 Basic Properties of the Derivative#^thm-28-3|c
 ^rem-10-2
 
 > [!remark]- Connections
-> - Linear algebra: the matrix of a composition is the product of the matrices, [[3C Matrices#^ladr-3-43|LADR 3.43]].
+> - Linear algebra: the matrix of a composition is the product of the matrices, [[§9 Matrices#^ladr-3-43|LADR 3.43]].
 
 ## The Chain Rule in Matrix and Operator Form
 
@@ -170,7 +170,7 @@ $$
 $$
 
 > [!remark] Remark
-> Note the matrix is the **[[3C Matrices#^ladr-3-54|transpose]]** of the Jacobian $D(\varphi, \psi) = \begin{pmatrix} \varphi_x & \varphi_y \\ \psi_x & \psi_y \end{pmatrix}$. This is because we are relating column vectors of operators.
+> Note the matrix is the **[[§9 Matrices#^ladr-3-54|transpose]]** of the Jacobian $D(\varphi, \psi) = \begin{pmatrix} \varphi_x & \varphi_y \\ \psi_x & \psi_y \end{pmatrix}$. This is because we are relating column vectors of operators.
 
 ^rem-10-3
 
@@ -201,7 +201,7 @@ $$
 \begin{pmatrix} \partial_x f & \partial_x g \\ \partial_y f & \partial_y g \end{pmatrix} = \begin{pmatrix} \varphi_x & \psi_x \\ \varphi_y & \psi_y \end{pmatrix} \begin{pmatrix} f_\xi & g_\xi \\ f_\eta & g_\eta \end{pmatrix}.
 $$
 
-Taking [[3C Matrices#^ladr-3-55|transposes]]:
+Taking [[§9 Matrices#^ladr-3-55|transposes]]:
 
 $$
 \begin{pmatrix} f_x & f_y \\ g_x & g_y \end{pmatrix} = \begin{pmatrix} f_\xi & f_\eta \\ g_\xi & g_\eta \end{pmatrix} \begin{pmatrix} \varphi_x & \varphi_y \\ \psi_x & \psi_y \end{pmatrix}.
@@ -225,7 +225,7 @@ $$
 ^rem-10-4
 
 > [!remark]- Connections
-> - Linear algebra: [[3C Matrices#^ladr-3-43|Matrix of product of linear maps (LADR 3.43)]].
+> - Linear algebra: [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps (LADR 3.43)]].
 > - Applied to a map and its inverse, this gives [[§13 The Inverse Function Theorem#^rem-13-6|reciprocal Jacobians]] ([[§13 The Inverse Function Theorem#^def-13-1|Def. §13.1]]).
 
 > [!proof]+ Proof of $\partial g / \partial x$

@@ -25,8 +25,8 @@ tags: [differentiable-manifolds, math591]
 ^prop-10-1
 
 > [!remark]- Connections
-> - (1): [[Fundamental theorem of linear maps|LADR 3.21 (fundamental theorem of linear maps)]], [[3B Null Spaces and Ranges#^ladr-3-22|LADR 3.22]], [[3B Null Spaces and Ranges#^ladr-3-24|3.24]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]].
-> - (2): [[Linear map lemma|LADR 3.4 (linear map lemma)]]. (3): [[3C Matrices#^ladr-3-43|LADR 3.43]], [[3C Matrices#^ladr-3-57|LADR 3.57 (column rank equals row rank)]]. (4): [[3D Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84 (change-of-basis formula)]].
+> - (1): [[Fundamental theorem of linear maps|LADR 3.21 (fundamental theorem of linear maps)]], [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]], [[§8 Null Spaces and Ranges#^ladr-3-24|3.24]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]].
+> - (2): [[Linear map lemma|LADR 3.4 (linear map lemma)]]. (3): [[§9 Matrices#^ladr-3-43|LADR 3.43]], [[§9 Matrices#^ladr-3-57|LADR 3.57 (column rank equals row rank)]]. (4): [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84 (change-of-basis formula)]].
 
 > [!definition] Definition §10.1: Dual Space and Dual Basis
 > The **dual space** of $V$ is $V^* = \{\lambda : V \to \mathbb{R} \mid \lambda \text{ linear}\}$, a vector space under pointwise operations; its elements are **linear functionals**, or **covectors**. If $(e_1, \ldots, e_n)$ is a basis of $V$, the **dual basis** $(\varepsilon^1, \ldots, \varepsilon^n)$ consists of the covectors with
@@ -42,7 +42,7 @@ tags: [differentiable-manifolds, math591]
 ^def-10-1
 
 > [!remark]- Connections
-> - Home in linear algebra (written $V'$ there): [[3F Duality#^ladr-3-110|LADR 3.110 (dual space)]], [[3F Duality#^ladr-3-112|LADR 3.112 (dual basis)]].
+> - Home in linear algebra (written $V'$ there): [[§12 Duality#^ladr-3-110|LADR 3.110 (dual space)]], [[§12 Duality#^ladr-3-112|LADR 3.112 (dual basis)]].
 > - Applied to $T_pM$: the cotangent space, [[§13 Tangent Spaces III꞉ The Cotangent Space#^def-13-1|Def. §13.1]].
 
 > [!theorem] Proposition §10.2: The Dual Basis
@@ -64,7 +64,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§10 Vector Spaces and Matrix Groups#^def-10-1|Def. §10.1]], [[§10 Vector Spaces and Matrix Groups#^prop-10-1|§10.1]], [[Linear map lemma|LADR 3.4]]
 
 > [!remark]- Connections
-> - Home: [[3F Duality#^ladr-3-114|LADR 3.114 (dual basis gives coefficients)]], [[3F Duality#^ladr-3-116|LADR 3.116 (dual basis is a basis of the dual space)]], [[3F Duality#^ladr-3-111|LADR 3.111]].
+> - Home: [[§12 Duality#^ladr-3-114|LADR 3.114 (dual basis gives coefficients)]], [[§12 Duality#^ladr-3-116|LADR 3.116 (dual basis is a basis of the dual space)]], [[§12 Duality#^ladr-3-111|LADR 3.111]].
 
 > [!theorem] Proposition §10.3: The Double Dual
 > For a finite-dimensional $V$, the map
@@ -87,7 +87,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§10 Vector Spaces and Matrix Groups#^def-10-1|Def. §10.1]], [[§10 Vector Spaces and Matrix Groups#^prop-10-2|§10.2]], [[§10 Vector Spaces and Matrix Groups#^prop-10-1|§10.1]], [[Every linearly independent list extends to a basis|LADR 2.32]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
 
 > [!remark]- Connections
-> - In LADR the canonical $V \cong V''$ is mentioned in the remark after [[3F Duality#^ladr-3-111|LADR 3.111]] (the non-canonical $V \cong V'$ goes through [[Dimension shows whether vector spaces are isomorphic|LADR 3.70]]).
+> - In LADR the canonical $V \cong V''$ is mentioned in the remark after [[§12 Duality#^ladr-3-111|LADR 3.111]] (the non-canonical $V \cong V'$ goes through [[Dimension shows whether vector spaces are isomorphic|LADR 3.70]]).
 
 > [!remark] Remark
 > A finite-dimensional $V$ is also isomorphic to $V^*$, for instance by $e_i \mapsto \varepsilon^i$, but that isomorphism depends on the basis: change the basis and it changes. $V$ and $V^{**}$ are identified *canonically*. This is why tangent vectors and covectors must be kept apart, as [[§13 Tangent Spaces III꞉ The Cotangent Space#^def-13-1|Lecture 10]] did with $T_pM$ and $T_p^*M$, while the dual of $T_p^*M$ may be silently identified with $T_pM$.
@@ -129,10 +129,10 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 
 ^pf-10-4
 
-*Uses:* [[§10 Vector Spaces and Matrix Groups#^def-10-2|Def. §10.2]], [[§10 Vector Spaces and Matrix Groups#^prop-10-2|§10.2]], [[§10 Vector Spaces and Matrix Groups#^prop-10-1|§10.1]], [[3C Matrices#^ladr-3-57|LADR 3.57]], [[Fundamental theorem of linear maps|LADR 3.21]]
+*Uses:* [[§10 Vector Spaces and Matrix Groups#^def-10-2|Def. §10.2]], [[§10 Vector Spaces and Matrix Groups#^prop-10-2|§10.2]], [[§10 Vector Spaces and Matrix Groups#^prop-10-1|§10.1]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Fundamental theorem of linear maps|LADR 3.21]]
 
 > [!remark]- Connections
-> - Home: [[3F Duality#^ladr-3-118|LADR 3.118 (dual map)]], [[3F Duality#^ladr-3-120|LADR 3.120 (algebraic properties)]], [[3F Duality#^ladr-3-132|LADR 3.132 (matrix of the dual map is the transpose)]]; (3) is [[3F Duality#^ladr-3-128|LADR 3.128]] and [[3F Duality#^ladr-3-130|LADR 3.130]] (null space and range of the dual map).
+> - Home: [[§12 Duality#^ladr-3-118|LADR 3.118 (dual map)]], [[§12 Duality#^ladr-3-120|LADR 3.120 (algebraic properties)]], [[§12 Duality#^ladr-3-132|LADR 3.132 (matrix of the dual map is the transpose)]]; (3) is [[§12 Duality#^ladr-3-128|LADR 3.128]] and [[§12 Duality#^ladr-3-130|LADR 3.130]] (null space and range of the dual map).
 
 > [!definition] Definition §10.3: Bilinear Pairing
 > A **bilinear pairing** is a map $B : V \times W \to \mathbb{R}$ that is linear in each argument separately. It induces linear maps
@@ -167,7 +167,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 
 > [!remark]- Connections
 > - Applied to the pairing of tangent vectors with germs: [[§13 Tangent Spaces III꞉ The Cotangent Space#^prop-13-6|§13.6]], [[§13 Tangent Spaces III꞉ The Cotangent Space#^thm-13-7|§13.7]].
-> - Bilinear forms on a single space in LADR: [[9A Bilinear Forms and Quadratic Forms]].
+> - Bilinear forms on a single space in LADR: [[§32 Bilinear Forms and Quadratic Forms|9A Bilinear Forms and Quadratic Forms]].
 
 > [!remark] Remark
 > Each half of non-degeneracy gives one inequality of dimensions, and it is the *pair* of inequalities that forces the isomorphisms; neither half suffices alone. The finiteness hypothesis cannot be dropped: for an infinite-dimensional $V$, the evaluation pairing $V \times V^* \to \mathbb{R}$, $(v, \lambda) \mapsto \lambda(v)$, is non-degenerate, but its map $B^\flat = \iota : V \to V^{**}$ is injective without being onto. [[§13 Tangent Spaces III꞉ The Cotangent Space#^thm-13-7|Assignment 3, Problem 3]] is exactly a pairing $T_pM \times I_p/I_p^2 \to \mathbb{R}$ to which this theorem applies.
@@ -188,7 +188,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 ^def-10-4
 
 > [!remark]- Connections
-> - Home: [[3E Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99 (quotient space)]], [[3E Products and Quotients of Vector Spaces#^ladr-3-102|LADR 3.102 (operations)]], [[3E Products and Quotients of Vector Spaces#^ladr-3-104|LADR 3.104 (quotient map)]].
+> - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99 (quotient space)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|LADR 3.102 (operations)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|LADR 3.104 (quotient map)]].
 
 > [!theorem] Proposition §10.6: Quotient Spaces and Their Universal Property
 > 1. The operations are well defined, $V/W$ is a vector space, and $\pi$ is linear and surjective with $\ker \pi = W$.
@@ -212,7 +212,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 The universal property as a triangle: a linear map that kills $W$ descends to $V/W$. It is the linear counterpart of the universal property of quotient maps, Theorem [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-18|§3.18]], with “vanishes on $W$” in place of “constant on the fibres” — and the proof is the same: define the map on a class by choosing a representative, and check the choice does not matter. [[§13 Tangent Spaces III꞉ The Cotangent Space#^prop-13-6|Assignment 3, Problem 3(a)]] is an instance: a derivation kills $I_p^2$, so its restriction to $I_p$ descends to $I_p/I_p^2$.
 
 > [!remark]- Connections
-> - Home: [[3E Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103 (quotient space is a vector space)]], [[3E Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105 (dimension)]], [[3E Products and Quotients of Vector Spaces#^ladr-3-106|LADR 3.106]] and [[First isomorphism theorem|LADR 3.107 (first isomorphism theorem)]] for the induced map.
+> - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103 (quotient space is a vector space)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105 (dimension)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-106|LADR 3.106]] and [[First isomorphism theorem|LADR 3.107 (first isomorphism theorem)]] for the induced map.
 > - Topological counterpart: [[Universal Property of Quotient Maps|590 §12 (universal property of quotient maps)]]; applied in [[§13 Tangent Spaces III꞉ The Cotangent Space#^def-13-2|Def. §13.2]].
 
 > [!definition] Definition §10.5: Direct Sum
@@ -221,7 +221,7 @@ The universal property as a triangle: a linear map that kills $W$ descends to $V
 ^def-10-5
 
 > [!remark]- Connections
-> - Home: [[3E Products and Quotients of Vector Spaces#^ladr-3-87|LADR 3.87 (product of vector spaces)]], [[1C Subspaces#^ladr-1-41|LADR 1.41 (internal direct sum)]].
+> - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|LADR 3.87 (product of vector spaces)]], [[§3 Subspaces#^ladr-1-41|LADR 1.41 (internal direct sum)]].
 
 > [!theorem] Proposition §10.7: Direct Sums
 > 1. $\pi_V \iota_V = \mathrm{id}_V$, $\pi_W \iota_W = \mathrm{id}_W$, $\pi_W \iota_V = 0$ and $\pi_V \iota_W = 0$. So $\iota_V$, $\iota_W$ are injective, and $V \oplus W$ is the internal direct sum of $V \oplus \{0\} = \iota_V(V)$ and $\{0\} \oplus W = \iota_W(W)$.
@@ -239,7 +239,7 @@ The universal property as a triangle: a linear map that kills $W$ descends to $V
 *Uses:* [[§10 Vector Spaces and Matrix Groups#^def-10-5|Def. §10.5]]
 
 > [!remark]- Connections
-> - Home: [[3E Products and Quotients of Vector Spaces#^ladr-3-92|LADR 3.92 (dimension of a product)]], [[3E Products and Quotients of Vector Spaces#^ladr-3-93|LADR 3.93 (products and direct sums)]], [[Condition for a direct sum|LADR 1.45]].
+> - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|LADR 3.92 (dimension of a product)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|LADR 3.93 (products and direct sums)]], [[Condition for a direct sum|LADR 1.45]].
 > - Used for the tangent space of a product: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-32|§12.32]].
 
 > [!remark] Remark: Direct Sum and Product
@@ -575,7 +575,7 @@ Write $A^* = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mathrm{U
 ^def-10-11
 
 > [!remark]- Connections
-> - Hermitian matrices are the matrices of self-adjoint operators: [[7A Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]], with the conjugate transpose of [[7A Self-Adjoint and Normal Operators#^ladr-7-7|LADR 7.7]].
+> - Hermitian matrices are the matrices of self-adjoint operators: [[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]], with the conjugate transpose of [[§22 Self-Adjoint and Normal Operators#^ladr-7-7|LADR 7.7]].
 
 > [!theorem] Lemma §10.14: A One-Sided Inverse Suffices
 > If $g \in \operatorname{Mat}(n,\mathbb{C})$ satisfies $gg^* = I$, then also $g^*g = I$. Consequently $\mathrm{U}(n) = \{g \mid gg^* = I\}$.
@@ -587,10 +587,10 @@ Write $A^* = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mathrm{U
 
 ^pf-10-14
 
-*Uses:* [[9C Determinants#^ladr-9-49|LADR 9.49]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
+*Uses:* [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
 
 > [!remark]- Connections
-> - The general linear-algebra fact: [[3D Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68 (ST = I ⟺ TS = I)]]; unitary matrices in LADR: [[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
+> - The general linear-algebra fact: [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68 (ST = I ⟺ TS = I)]]; unitary matrices in LADR: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
 
 > [!example] Example §10.2: $\mathrm{U}(n)$ Is a Smooth Manifold of Dimension $n^2$
 > Define
@@ -642,7 +642,7 @@ The vertical arrows are the real-linear identifications of [[§5 Topological Gro
 *Uses:* [[§10 Vector Spaces and Matrix Groups#^def-10-11|Def. §10.11]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-8|Def. §5.8]], [[§10 Vector Spaces and Matrix Groups#^def-10-7|Def. §10.7]], [[§10 Vector Spaces and Matrix Groups#^lem-10-8|§10.8]], [[§10 Vector Spaces and Matrix Groups#^lem-10-14|§10.14]], [[§10 Vector Spaces and Matrix Groups#^thm-10-10|§10.10]], [[§10 Vector Spaces and Matrix Groups#^cor-10-11|§10.11]], [[§9 Manifolds in Euclidean Space#^prop-9-2|§9.2]]
 
 > [!remark]- Connections
-> - Unitary matrices in LADR: [[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]]; $\mathrm{U}(1)$ is the circle, [[§5 Topological Groups and Classical Matrix Groups#^ex-5-4|Ex. §5.4]].
+> - Unitary matrices in LADR: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]]; $\mathrm{U}(1)$ is the circle, [[§5 Topological Groups and Classical Matrix Groups#^ex-5-4|Ex. §5.4]].
 > - Its tangent spaces: [[§11 Tangent Spaces I꞉ The Geometric Picture#^ex-11-3|Ex. §11.3]].
 
 > [!remark] Remark
@@ -686,4 +686,4 @@ The vertical arrows are the real-linear identifications of [[§5 Topological Gro
 *Uses:* [[§10 Vector Spaces and Matrix Groups#^ex-10-2|Ex. §10.2]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-8|Def. §5.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §15.12]]
 
 > [!remark]- Connections
-> - Proposition §1.8(1) is [[Heine–Borel Theorem|590 §15.12 (Heine–Borel)]]; columns of unitary matrices are orthonormal by [[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
+> - Proposition §1.8(1) is [[Heine–Borel Theorem|590 §15.12 (Heine–Borel)]]; columns of unitary matrices are orthonormal by [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].

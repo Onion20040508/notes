@@ -161,7 +161,7 @@ All four classical theorems have the same form: $\int_{\partial \Omega} \omega =
 > [!remark]- Connections
 > - $k = 1$: [[Fundamental Theorem of Calculus]]; $k = 2$: [[Green's Theorem|Green's theorem (Theorem §16.1)]] and [[Stokes' Theorem in ℝ³|Stokes' theorem in ℝ³ (Theorem §20.1)]]; $k = 3$: [[Divergence Theorem in ℝ³|Divergence theorem in ℝ³ (Theorem §18.2)]].
 > - Top degree in any dimension ($k = n$, $\Omega \subseteq \mathbb{R}^n$) is the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ (Theorem §17.1)]].
-> - The orientation bookkeeping is carried by the sign of the pullback determinant ([[§22 The Algebra of Differential Forms#^def-22-3|Def. §22.3]]; [[9C Determinants#^ladr-9-61|LADR 9.61]]).
+> - The orientation bookkeeping is carried by the sign of the pullback determinant ([[§22 The Algebra of Differential Forms#^def-22-3|Def. §22.3]]; [[§34 Determinants#^ladr-9-61|LADR 9.61]]).
 
 **Reading the formula:** $\omega$ is one degree lower than the dimension of $\Omega$, so $\omega$ can be integrated over $\partial \Omega$ (which has dimension $k-1$), and $d\omega$ can be integrated over $\Omega$ (which has dimension $k$). The four classical theorems are this single identity applied at $k = 1, 2, 2, 3$:
 

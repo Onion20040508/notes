@@ -77,7 +77,7 @@ $$
 \big( x(t_i) - x(t_{i-1}), \; y(t_i) - y(t_{i-1}) \big).
 $$
 
-The force at $(x(t_i), y(t_i))$ is $(f(x(t_i), y(t_i)), \, g(x(t_i), y(t_i)))$. The work done is the [[6A Inner Products and Norms#^ladr-6-1|inner product]] of force and displacement:
+The force at $(x(t_i), y(t_i))$ is $(f(x(t_i), y(t_i)), \, g(x(t_i), y(t_i)))$. The work done is the [[§19 Inner Products and Norms#^ladr-6-1|inner product]] of force and displacement:
 
 $$
 \begin{aligned}

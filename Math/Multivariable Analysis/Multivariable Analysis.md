@@ -86,14 +86,14 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§19 Uniform Continuity#^thm-19-1|Theorem §19.1: Uniform Continuity on Closed Bounded Intervals]] (2)
 
 **[[Linear Algebra]]**
-- [[3A Vector Space of Linear Maps#^ladr-3-1|3.1 Linear map]] (2)
-- [[2A Span and Linear Independence#^ladr-2-15|2.15 Linearly independent]] (2)
-- [[3C Matrices#^ladr-3-31|3.31 Matrix of a linear map, M(T)]] (1)
-- [[3C Matrices#^ladr-3-41|3.41 Matrix multiplication]] (1)
-- [[3D Invertibility and Isomorphisms#^ladr-3-80|3.80 Invertible, inverse, A⁻¹]] (1)
-- [[9A Bilinear Forms and Quadratic Forms#^ladr-9-11|9.11 Symmetric matrix]] (1)
-- [[9C Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (1)
-- [[9C Determinants#^ladr-9-61|9.61 T changes volume by factor of ∣det T∣]] (1)
+- [[§7 Vector Space of Linear Maps#^ladr-3-1|3.1 Linear map]] (2)
+- [[§4 Span and Linear Independence#^ladr-2-15|2.15 Linearly independent]] (2)
+- [[§9 Matrices#^ladr-3-31|3.31 Matrix of a linear map, M(T)]] (1)
+- [[§9 Matrices#^ladr-3-41|3.41 Matrix multiplication]] (1)
+- [[§10 Invertibility and Isomorphisms#^ladr-3-80|3.80 Invertible, inverse, A⁻¹]] (1)
+- [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-11|9.11 Symmetric matrix]] (1)
+- [[§34 Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (1)
+- [[§34 Determinants#^ladr-9-61|9.61 T changes volume by factor of ∣det T∣]] (1)
 
 **[[Topology]]**
 - [[Heine–Borel Theorem]] (3)

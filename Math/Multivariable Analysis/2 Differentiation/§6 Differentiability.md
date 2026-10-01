@@ -9,7 +9,7 @@ tags: [multivariable-analysis, math452]
 
 ## Motivation: What Should Differentiability Mean?
 
-In single-variable calculus, $f: \mathbb{R} \to \mathbb{R}$ is [[§28 Basic Properties of the Derivative#^def-28-1|differentiable]] at $x_0$ if there exists a **[[3A Vector Space of Linear Maps#^ladr-3-1|linear map]]** $L: \mathbb{R} \to \mathbb{R}$ such that
+In single-variable calculus, $f: \mathbb{R} \to \mathbb{R}$ is [[§28 Basic Properties of the Derivative#^def-28-1|differentiable]] at $x_0$ if there exists a **[[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]]** $L: \mathbb{R} \to \mathbb{R}$ such that
 
 $$
 f(x_0 + h) - f(x_0) = L(h) + o(h).
@@ -100,13 +100,13 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > - MATH 451 version: [[§28 Basic Properties of the Derivative#^def-28-1|The Derivative]]; for a mapping $(x, y) \mapsto (\varphi, \psi)$ the derivative becomes the [[§13 The Inverse Function Theorem#^def-13-1|Jacobian matrix]] of §13, and in §22 it is the 1-form $df$ ([[§22 The Algebra of Differential Forms#^prop-22-6|§22.6]]).
 
 > [!definition] Definition §6.2: The Total Derivative and the Jacobian Matrix
-> Let $f: \mathbb{R}^2 \to \mathbb{R}$ be differentiable at $(x_0, y_0)$. The **(total) derivative** of $f$ at $(x_0, y_0)$ is not a number — it is the [[3A Vector Space of Linear Maps#^ladr-3-1|linear map]]
+> Let $f: \mathbb{R}^2 \to \mathbb{R}$ be differentiable at $(x_0, y_0)$. The **(total) derivative** of $f$ at $(x_0, y_0)$ is not a number — it is the [[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]]
 >
 > $$
 > Df_{(x_0, y_0)}: \mathbb{R}^2 \to \mathbb{R}, \quad (h, k) \mapsto f_x(x_0, y_0) \cdot h + f_y(x_0, y_0) \cdot k.
 > $$
 >
-> Its [[3C Matrices#^ladr-3-31|matrix in the standard basis]] is the **Jacobian matrix**:
+> Its [[§9 Matrices#^ladr-3-31|matrix in the standard basis]] is the **Jacobian matrix**:
 >
 > $$
 > Df_{(x_0, y_0)} = \begin{pmatrix} f_x & f_y \end{pmatrix}, \quad Df_{(x_0,y_0)} \begin{pmatrix} h \\ k \end{pmatrix} = f_x \cdot h + f_y \cdot k.
@@ -115,8 +115,8 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 ^def-6-2
 
 > [!remark]- Connections
-> - A linear map $\mathbb{R}^2 \to \mathbb{R}$ is a [[3F Duality#^ladr-3-108|linear functional]] (LADR 3.108), so $Df$ lives in the dual space; this is the viewpoint of the 1-form $df$ in [[§22 The Algebra of Differential Forms#^prop-22-6|Gradient = Differential = 1-Form]].
-> - Jacobians of compositions multiply: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Chain Rule for Jacobians]], i.e. [[3C Matrices#^ladr-3-43|Matrix of product of linear maps]] (LADR 3.43).
+> - A linear map $\mathbb{R}^2 \to \mathbb{R}$ is a [[§12 Duality#^ladr-3-108|linear functional]] (LADR 3.108), so $Df$ lives in the dual space; this is the viewpoint of the 1-form $df$ in [[§22 The Algebra of Differential Forms#^prop-22-6|Gradient = Differential = 1-Form]].
+> - Jacobians of compositions multiply: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Chain Rule for Jacobians]], i.e. [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps]] (LADR 3.43).
 
 > [!definition] Definition §6.3: Tangent Plane
 > Let $f$ be differentiable at $(x_0, y_0)$. The **tangent plane** to the graph of $f$ at $(x_0, y_0, f(x_0, y_0))$ is the plane
@@ -150,7 +150,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > f(x_0 + ta,\, y_0 + tb) - f(x_0, y_0) = L(ta, tb) + E(ta, tb) = t \cdot L(a, b) + E(ta, tb),
 > $$
 >
-> using [[3A Vector Space of Linear Maps#^ladr-3-1|linearity]] of $L$. Here $\rho = \sqrt{(ta)^2 + (tb)^2} = |t|\sqrt{a^2 + b^2} = |t|$, since $\mathbf{u}$ is a unit vector. Dividing by $t \neq 0$:
+> using [[§7 Vector Space of Linear Maps#^ladr-3-1|linearity]] of $L$. Here $\rho = \sqrt{(ta)^2 + (tb)^2} = |t|\sqrt{a^2 + b^2} = |t|$, since $\mathbf{u}$ is a unit vector. Dividing by $t \neq 0$:
 >
 > $$
 > \frac{f(x_0 + ta, y_0 + tb) - f(x_0, y_0)}{t} = L(a, b) + \frac{E(ta, tb)}{t},
@@ -166,7 +166,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 ^pf-6-1
 
-*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§6 Differentiability#^def-6-2|Def. §6.2]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]], [[§7 Directional Derivatives#^def-7-1|Def. §7.1]], [[3A Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]
+*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§6 Differentiability#^def-6-2|Def. §6.2]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]], [[§7 Directional Derivatives#^def-7-1|Def. §7.1]], [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]
 
 > [!remark]- Connections
 > - Restated with the gradient in §7: [[Directional Derivative Formula|Directional Derivative Formula]].
@@ -567,7 +567,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 > [!remark]- Connections
 > - MATH 451 version: [[§28 Basic Properties of the Derivative#^thm-28-3|Chain Rule]]; the continuity analogue is [[§3 Continuity and Limits of Functions#^thm-3-4|§3.4]].
-> - General form in §10: [[Multivariable Chain Rule|Multivariable Chain Rule]] and its [[§10 Composition of Functions and the Chain Rule#^rem-10-2|matrix form]] (Jacobians multiply, [[3C Matrices#^ladr-3-43|LADR 3.43]]).
+> - General form in §10: [[Multivariable Chain Rule|Multivariable Chain Rule]] and its [[§10 Composition of Functions and the Chain Rule#^rem-10-2|matrix form]] (Jacobians multiply, [[§9 Matrices#^ladr-3-43|LADR 3.43]]).
 
 > [!remark] Remark: Summary: Algebra of Differentiable Functions
 > If $f$ and $g$ are differentiable at $(x_0, y_0)$:

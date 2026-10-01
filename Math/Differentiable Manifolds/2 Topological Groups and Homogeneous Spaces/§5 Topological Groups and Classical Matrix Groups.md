@@ -70,7 +70,7 @@ tags: [differentiable-manifolds, math591]
 ^def-5-2
 
 > [!remark]- Connections
-> - $\dim \mathbb{F}^{m,n} = mn$: [[3C Matrices#^ladr-3-40|LADR 3.40]].
+> - $\dim \mathbb{F}^{m,n} = mn$: [[§9 Matrices#^ladr-3-40|LADR 3.40]].
 > - The coordinate-free version (any finite-dimensional vector space is a smooth manifold): [[§10 Vector Spaces and Matrix Groups#^prop-10-9|§10.9]].
 
 > [!definition] Definition §5.3: Permutations and the Sign
@@ -86,7 +86,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Home in 493: inversions [[§20 The Sign Homomorphism and the Alternating Group#^def-20-1|493 Def. §20.1]], the sign [[§20 The Sign Homomorphism and the Alternating Group#^def-20-2|493 Def. §20.2]] (hub: [[The Sign Homomorphism]]).
-> - In linear algebra: [[9B Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]].
+> - In linear algebra: [[§33 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]].
 
 > [!theorem] Proposition §5.2: Properties of the Sign
 > 1. $\operatorname{sgn} : S_n \to \{\pm 1\}$ is a group homomorphism: $\operatorname{sgn}(\sigma\tau) = \operatorname{sgn}(\sigma)\operatorname{sgn}(\tau)$.
@@ -114,7 +114,7 @@ tags: [differentiable-manifolds, math591]
 ^ex-5-2
 
 > [!remark]- Connections
-> - [[The symmetric group S₃]] in 493; the explicit $2 \times 2$ and $3 \times 3$ formulas in LADR: [[9C Determinants#^ladr-9-47|LADR 9.47]].
+> - [[The symmetric group S₃]] in 493; the explicit $2 \times 2$ and $3 \times 3$ formulas in LADR: [[§34 Determinants#^ladr-9-47|LADR 9.47]].
 
 > [!remark] Remark
 > The facts used in the determinant computation of [[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|Proposition §5.9]] are exactly (2) and (4) above: the identity permutation contributes with sign $+1$ (which is why the answer is $+\operatorname{tr} V$), and a permutation fixing all but one symbol is the identity (which is why only that one term survives).
@@ -133,7 +133,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-5-3
 
-*Uses:* [[§5 Topological Groups and Classical Matrix Groups#^def-5-2|Def. §5.2]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-3|Def. §5.3]], [[9C Determinants#^ladr-9-46|LADR 9.46]], [[9C Determinants#^ladr-9-56|LADR 9.56]], [[§3 Continuity and Limits of Functions#^thm-3-1|452 §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]]
+*Uses:* [[§5 Topological Groups and Classical Matrix Groups#^def-5-2|Def. §5.2]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-3|Def. §5.3]], [[§34 Determinants#^ladr-9-46|LADR 9.46]], [[§34 Determinants#^ladr-9-56|LADR 9.56]], [[§3 Continuity and Limits of Functions#^thm-3-1|452 §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]]
 
 > [!definition] Definition §5.4: General Linear Group
 > The **general linear group** is
@@ -165,7 +165,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-5-4
 
-*Uses:* [[§5 Topological Groups and Classical Matrix Groups#^def-5-1|Def. §5.1]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-2|Def. §5.2]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-4|Def. §5.4]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-3|§3.3]], [[3C Matrices#^ladr-3-46|LADR 3.46]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 §3.3]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1]]
+*Uses:* [[§5 Topological Groups and Classical Matrix Groups#^def-5-1|Def. §5.1]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-2|Def. §5.2]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-4|Def. §5.4]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-3|§3.3]], [[§9 Matrices#^ladr-3-46|LADR 3.46]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 §3.3]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1]]
 
 > [!remark]- Connections
 > - The smooth structure on $\operatorname{Mat}(n,\mathbb{R})$, of which $\mathrm{GL}(n,\mathbb{R})$ is an open subset: [[§10 Vector Spaces and Matrix Groups#^prop-10-9|§10.9]]; all the classical groups together: [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|§11.5]].
@@ -201,7 +201,7 @@ tags: [differentiable-manifolds, math591]
 
 ^def-5-5
 
-*Uses:* [[9C Determinants#^ladr-9-49|LADR 9.49]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-1|§5.1]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-4|§5.4]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-3|§5.3]], [[Equivalent Conditions for Continuity|590 §9.1]]
+*Uses:* [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-1|§5.1]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-4|§5.4]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-3|§5.3]], [[Equivalent Conditions for Continuity|590 §9.1]]
 
 > [!remark]- Connections
 > - The group in 493: [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]]; $\mathrm{SL}_n = \ker\det$, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]].
@@ -219,7 +219,7 @@ tags: [differentiable-manifolds, math591]
 ^def-5-6
 
 > [!remark]- Connections
-> - In linear algebra, the isometries of $\mathbb{R}^n$: [[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]]; in 493, [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
+> - In linear algebra, the isometries of $\mathbb{R}^n$: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]]; in 493, [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
 > - $\mathrm{O}(n)$ is a manifold of dimension $\tfrac{n(n-1)}{2}$: [[§10 Vector Spaces and Matrix Groups#^ex-10-1|Ex. §10.1]].
 
 > [!theorem] Proposition §5.7: Equivalent Description of $\mathrm{O}(n,\mathbb{R})$
@@ -234,10 +234,10 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-5-7
 
-*Uses:* [[§5 Topological Groups and Classical Matrix Groups#^def-5-6|Def. §5.6]], [[3D Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68]], [[9C Determinants#^ladr-9-49|LADR 9.49]], [[9C Determinants#^ladr-9-56|LADR 9.56]]
+*Uses:* [[§5 Topological Groups and Classical Matrix Groups#^def-5-6|Def. §5.6]], [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68]], [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§34 Determinants#^ladr-9-56|LADR 9.56]]
 
 > [!remark]- Connections
-> - The real case of [[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]] (characterizations of unitary matrices).
+> - The real case of [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]] (characterizations of unitary matrices).
 
 ![[m591-5-1.svg]]
 *$\mathrm{O}(2)$ as two circles: the rotations $\mathrm{SO}(2)$ over $\det = +1$ and the reflections $R_\theta S$ over $\det = -1$.*
@@ -294,7 +294,7 @@ $\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}
 *Uses:* [[§5 Topological Groups and Classical Matrix Groups#^def-5-2|Def. §5.2]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-3|§5.3]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-4|§5.4]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-7|§5.7]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
 
 > [!remark]- Connections
-> - $\mathbb{C} \cong \mathbb{R}^2$ in 590: [[§9 Continuous Functions#^ex-9-5|590 Ex. §9.5]]; unitary matrices in linear algebra: [[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]], [[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
+> - $\mathbb{C} \cong \mathbb{R}^2$ in 590: [[§9 Continuous Functions#^ex-9-5|590 Ex. §9.5]]; unitary matrices in linear algebra: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
 > - $\mathrm{U}(n)$ is a manifold of dimension $n^2$: [[§10 Vector Spaces and Matrix Groups#^ex-10-2|Ex. §10.2]].
 
 > [!example] Example §5.4: $\mathrm{U}(1)$ Is the Circle
@@ -325,7 +325,7 @@ $\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}
 The proof has two parts of very different difficulty. The point-set part is free: each group is a subspace of $\mathbb{R}^{n^2}$ or $\mathbb{R}^{2n^2}$, hence $T_2$ and second countable by [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-5|Theorem §3.5]]. Local Euclideanness is the real content, and it is established in stages. $\mathrm{GL}(n,\mathbb{R})$ and $\mathrm{GL}(n,\mathbb{C})$ are open subsets of Euclidean space and hence locally Euclidean of dimensions $n^2$ and $2n^2$ ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-6|Proposition §3.6]]). $\mathrm{SL}(n,\mathbb{R})$ is done below, in this subsection. $\mathrm{O}(n)$, $\mathrm{SO}(n)$ and $\mathrm{U}(n)$ need the coordinate-free differential and are done in [[§10 Vector Spaces and Matrix Groups#The Orthogonal Group as a Smooth Manifold|§10, The Orthogonal Group as a Smooth Manifold]] and [[§10 Vector Spaces and Matrix Groups#The Unitary Group as a Smooth Manifold|§10, The Unitary Group as a Smooth Manifold]]; [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|Theorem §11.5]] collects all six, with their dimensions and geometric tangent spaces.
 
 > [!remark] Remark: The Method: Level Sets and the Implicit Function Theorem
-> “For the first time, we're going to use some calculus.” $\mathrm{SL}(n,\mathbb{R})$ is a *level set*, $\det^{-1}(1)$, of a smooth function on $\mathbb{R}^{n^2}$. Multivariable calculus says that a level set of $F$ is locally a graph—hence locally Euclidean—near any point where $\nabla F \neq 0$. So the work is to compute $\nabla \det$ and show it does not vanish on $\mathrm{SL}(n,\mathbb{R})$. Uribe's methodological message: the [[9C Determinants#^ladr-9-46|Leibniz formula]] makes computing $\nabla\det$ directly “a nightmare”; instead, *differentiate along curves* and use the [[Multivariable Chain Rule|chain rule]]. “It's nice to compute gradients or differentials using curves.” This kind of computation “will happen several times.”
+> “For the first time, we're going to use some calculus.” $\mathrm{SL}(n,\mathbb{R})$ is a *level set*, $\det^{-1}(1)$, of a smooth function on $\mathbb{R}^{n^2}$. Multivariable calculus says that a level set of $F$ is locally a graph—hence locally Euclidean—near any point where $\nabla F \neq 0$. So the work is to compute $\nabla \det$ and show it does not vanish on $\mathrm{SL}(n,\mathbb{R})$. Uribe's methodological message: the [[§34 Determinants#^ladr-9-46|Leibniz formula]] makes computing $\nabla\det$ directly “a nightmare”; instead, *differentiate along curves* and use the [[Multivariable Chain Rule|chain rule]]. “It's nice to compute gradients or differentials using curves.” This kind of computation “will happen several times.”
 
 ^rem-5-3
 
@@ -377,7 +377,7 @@ Throughout, identify $\operatorname{Mat}(n,\mathbb{R}) = \mathbb{R}^{n^2}$ via [
 
 ^pf-5-9
 
-*Uses:* [[Multivariable Chain Rule|452 §10.2 (chain rule)]], [[9C Determinants#^ladr-9-49|LADR 9.49]], [[9C Determinants#^ladr-9-46|LADR 9.46]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-3|Def. §5.3]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-2|§5.2]], [[8D Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[§28 Basic Properties of the Derivative#^thm-28-2|451 §28.2]]
+*Uses:* [[Multivariable Chain Rule|452 §10.2 (chain rule)]], [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§34 Determinants#^ladr-9-46|LADR 9.46]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-3|Def. §5.3]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-2|§5.2]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[§28 Basic Properties of the Derivative#^thm-28-2|451 §28.2]]
 
 > [!remark]- Connections
 > - The same computation without coordinates, as the differential of $\det$: [[§10 Vector Spaces and Matrix Groups#^thm-10-10|§10.10]].
@@ -408,7 +408,7 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 
 ^pf-5-10
 
-*Uses:* [[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|§5.9]], [[8D Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[3C Matrices#^ladr-3-54|LADR 3.54]], [[3C Matrices#^ladr-3-46|LADR 3.46]]
+*Uses:* [[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|§5.9]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[§9 Matrices#^ladr-3-54|LADR 3.54]], [[§9 Matrices#^ladr-3-46|LADR 3.46]]
 
 > [!remark] Remark: The Gradient Itself
 > Differentiating the determinant with respect to one entry recovers the cofactor expansion along that entry's row. The directional form of [[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|Proposition §5.9]] is the one used in proofs; the gradient form is what one checks against a direct computation for $n = 2$.

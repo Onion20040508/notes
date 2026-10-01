@@ -63,7 +63,7 @@ tags: [group-theory, math493]
 ^ex-23-2
 
 > [!remark]- Connections
-> - The vector-space axioms behind (2): [[1B Definition of Vector Space#^ladr-1-20|LADR 1.20]]; associativity of matrix multiplication behind (3): [[3A Vector Space of Linear Maps#^ladr-3-8|LADR 3.8]], [[3C Matrices#^ladr-3-43|LADR 3.43]].
+> - The vector-space axioms behind (2): [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]; associativity of matrix multiplication behind (3): [[§7 Vector Space of Linear Maps#^ladr-3-8|LADR 3.8]], [[§9 Matrices#^ladr-3-43|LADR 3.43]].
 > - The conjugation action is studied in [[§32 Conjugation as an Action and the Class Equation#^prop-32-1|The Conjugation Action]]; left multiplication gives [[§23 Actions#^thm-23-5|Cayley's Theorem]].
 
 > [!theorem] Proposition §23.1: A Left Action Gives a Right Action

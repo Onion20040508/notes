@@ -65,7 +65,7 @@ tags: [group-theory, math493]
 ^def-18-3
 
 > [!remark]- Connections
-> - Linear-algebra analogue: [[3A Vector Space of Linear Maps#^ladr-3-5|Addition and scalar multiplication on L(V, W)]] (LADR 3.5), the pointwise sum of linear maps.
+> - Linear-algebra analogue: [[§7 Vector Space of Linear Maps#^ladr-3-5|Addition and scalar multiplication on L(V, W)]] (LADR 3.5), the pointwise sum of linear maps.
 
 > [!theorem] Proposition §18.2: Pointwise Products of Homomorphisms
 > Let $G$ and $H$ be groups.
@@ -125,7 +125,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^def-21-5|Direct Product of Groups]] (590 §21.5).
-> - Linear-algebra version: [[3E Products and Quotients of Vector Spaces#^ladr-3-87|Product of vector spaces]] (LADR 3.87).
+> - Linear-algebra version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|Product of vector spaces]] (LADR 3.87).
 
 > [!theorem] Proposition §18.4: Characterizations of Abelian Groups
 > For a group $G$, the following are equivalent:

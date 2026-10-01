@@ -5,13 +5,13 @@ ladr-hub: "3.107"
 aliases: ["LADR 3.107", "first isomorphism theorem", "Null space and range of ̃T"]
 tags: [linear-algebra, hub]
 ---
-![[3E Products and Quotients of Vector Spaces#^ladr-3-107]]
+![[§11 Products and Quotients of Vector Spaces#^ladr-3-107]]
 
 ## Treated in
-- [[3E Products and Quotients of Vector Spaces#^ladr-3-107|Axler 3.107]], in [[3E Products and Quotients of Vector Spaces]]
+- [[§11 Products and Quotients of Vector Spaces#^ladr-3-107|Axler 3.107]], in [[§11 Products and Quotients of Vector Spaces]]
 
 ## Proof uses
-- [[3E Products and Quotients of Vector Spaces#^ladr-3-101|3.101]]
+- [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|3.101]]
 
 ## Connections
 - Same statement for groups and rings in MATH 591.

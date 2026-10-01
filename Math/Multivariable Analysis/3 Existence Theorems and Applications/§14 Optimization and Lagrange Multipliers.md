@@ -192,7 +192,7 @@ $$
 > [!theorem] Theorem §14.3: Lagrange Multipliers with Multiple Constraints
 > To optimize $f(x_1, \ldots, x_n)$ subject to constraints $g_1 = 0, g_2 = 0, \ldots, g_k = 0$ (where $k < n$):
 >
-> If the gradients $\nabla g_1, \ldots, \nabla g_k$ are [[2A Span and Linear Independence#^ladr-2-15|linearly independent]] at a constrained extremum, then there exist $\lambda_1, \ldots, \lambda_k \in \mathbb{R}$ such that:
+> If the gradients $\nabla g_1, \ldots, \nabla g_k$ are [[§4 Span and Linear Independence#^ladr-2-15|linearly independent]] at a constrained extremum, then there exist $\lambda_1, \ldots, \lambda_k \in \mathbb{R}$ such that:
 >
 > $$
 > \nabla f = \lambda_1 \nabla g_1 + \lambda_2 \nabla g_2 + \cdots + \lambda_k \nabla g_k.
@@ -205,7 +205,7 @@ $$
 The proof (carried out below for two constraints in $\mathbb{R}^4$) uses the implicit function theorem for systems of equations — the general form of [[§12 The Implicit Function Theorem#^thm-12-2|Theorem §12.2]] for several equations, which is not proved in these notes.
 
 > [!remark]- Connections
-> - The linear algebra behind it: $\nabla f$ is orthogonal to the tangent space of the constraint set, and that orthogonal complement ([[6C Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]]) has dimension $k$ ([[6C Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]]), so it is spanned by the $k$ independent constraint gradients.
+> - The linear algebra behind it: $\nabla f$ is orthogonal to the tangent space of the constraint set, and that orthogonal complement ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]]) has dimension $k$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]]), so it is spanned by the $k$ independent constraint gradients.
 > - The case $k = 1$, $n = 2$ is [[Method of Lagrange Multipliers|Theorem §14.2]]; the case $k = 2$, $n = 4$ is derived below.
 
 > [!remark] Remark: Why Multiple Constraints?
@@ -307,7 +307,7 @@ $$
 
 The constraint set is generically a 2-dimensional surface in $\mathbb{R}^4$.
 
-**Constraint qualification:** The gradients $\nabla \phi$ and $\nabla \psi$ are [[2A Span and Linear Independence#^ladr-2-15|linearly independent]]. Equivalently, the $2 \times 4$ Jacobian matrix has [[3C Matrices#^ladr-3-58|rank]] 2, meaning some $2 \times 2$ submatrix has nonzero determinant.
+**Constraint qualification:** The gradients $\nabla \phi$ and $\nabla \psi$ are [[§4 Span and Linear Independence#^ladr-2-15|linearly independent]]. Equivalently, the $2 \times 4$ Jacobian matrix has [[§9 Matrices#^ladr-3-58|rank]] 2, meaning some $2 \times 2$ submatrix has nonzero determinant.
 
 Suppose
 
@@ -455,15 +455,15 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 > H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{pmatrix}
 > $$
 >
-> evaluated at $(x_0, y_0)$. By [[Schwarz–Clairaut Theorem|Schwarz–Clairaut]], $H$ is [[9A Bilinear Forms and Quadratic Forms#^ladr-9-11|symmetric]]: $f_{xy} = f_{yx}$.
+> evaluated at $(x_0, y_0)$. By [[Schwarz–Clairaut Theorem|Schwarz–Clairaut]], $H$ is [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-11|symmetric]]: $f_{xy} = f_{yx}$.
 
 ^def-14-2
 
 > [!remark]- Connections
-> - $H$ is the matrix of a symmetric bilinear form ([[9A Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]], [[9A Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR 9.9]]); made precise in [[§22 The Algebra of Differential Forms#^prop-22-7|The Second Total Derivative Is the Hessian]] (§22.7).
+> - $H$ is the matrix of a symmetric bilinear form ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]], [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR 9.9]]); made precise in [[§22 The Algebra of Differential Forms#^prop-22-7|The Second Total Derivative Is the Hessian]] (§22.7).
 
 > [!remark] Remark: The Hessian as the Second Total Derivative
-> Just as the gradient $\nabla f$ is the first total derivative — a linear map $Df_{\mathbf{p}}: \mathbf{v} \mapsto \nabla f \cdot \mathbf{v}$ that captures the first-order behavior of $f$ ([[§6 Differentiability|§6]]–[[§8 The Differential|§8]]) — the Hessian is the *second* total derivative: a [[9A Bilinear Forms and Quadratic Forms#^ladr-9-1|bilinear form]] $D^2f_{\mathbf{p}}: (\mathbf{u}, \mathbf{v}) \mapsto \mathbf{u}^T H_f \mathbf{v}$ that captures the second-order behavior. The Taylor expansion from [[Multivariable Taylor's Theorem|§9]] says exactly this (where $\mathbf{p} \in \mathbb{R}^n$ is the base point and $\mathbf{h} \in \mathbb{R}^n$ is the increment):
+> Just as the gradient $\nabla f$ is the first total derivative — a linear map $Df_{\mathbf{p}}: \mathbf{v} \mapsto \nabla f \cdot \mathbf{v}$ that captures the first-order behavior of $f$ ([[§6 Differentiability|§6]]–[[§8 The Differential|§8]]) — the Hessian is the *second* total derivative: a [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-1|bilinear form]] $D^2f_{\mathbf{p}}: (\mathbf{u}, \mathbf{v}) \mapsto \mathbf{u}^T H_f \mathbf{v}$ that captures the second-order behavior. The Taylor expansion from [[Multivariable Taylor's Theorem|§9]] says exactly this (where $\mathbf{p} \in \mathbb{R}^n$ is the base point and $\mathbf{h} \in \mathbb{R}^n$ is the increment):
 >
 > $$
 > f(\mathbf{p} + \mathbf{h}) = f(\mathbf{p}) + \underbrace{Df_{\mathbf{p}}(\mathbf{h})}_{\text{linear: gradient}} + \frac{1}{2}\underbrace{D^2f_{\mathbf{p}}(\mathbf{h}, \mathbf{h})}_{\text{bilinear: Hessian}} + o(|\mathbf{h}|^2).
@@ -488,7 +488,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 ^def-14-3
 
 > [!remark]- Connections
-> - $\mathbf{x}^T A \mathbf{x}$ is the quadratic form of $A$ ([[9A Bilinear Forms and Quadratic Forms#^ladr-9-18|LADR 9.18]], [[9A Bilinear Forms and Quadratic Forms#^ladr-9-20|LADR 9.20]]); positive definite is the strict version of a positive operator ([[7C Positive Operators#^ladr-7-34|LADR 7.34]]).
+> - $\mathbf{x}^T A \mathbf{x}$ is the quadratic form of $A$ ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-18|LADR 9.18]], [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-20|LADR 9.20]]); positive definite is the strict version of a positive operator ([[§24 Positive Operators#^ladr-7-34|LADR 7.34]]).
 > - By the [[Real spectral theorem|real spectral theorem]] (LADR 7.29), definiteness is read off from the signs of the eigenvalues of $A$.
 
 > [!theorem] Theorem §14.4: Second-Order Sufficient Conditions — Unconstrained
@@ -569,7 +569,7 @@ For the Hessian $H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{xy} & f_{yy} \end{pma
 ^rem-14-9
 
 > [!remark]- Connections
-> - Other characterizations of (semi)definiteness — nonnegative eigenvalues, $A = R^*R$ — are in [[7C Positive Operators#^ladr-7-38|Characterization of positive operators]] (LADR 7.38).
+> - Other characterizations of (semi)definiteness — nonnegative eigenvalues, $A = R^*R$ — are in [[§24 Positive Operators#^ladr-7-38|Characterization of positive operators]] (LADR 7.38).
 
 > [!remark] Remark: The Logical Flow: Necessary $\to$ Sufficient
 > Now that we have both the Lagrange conditions (necessary) and the Hessian test (sufficient), we can summarize the complete optimization workflow:

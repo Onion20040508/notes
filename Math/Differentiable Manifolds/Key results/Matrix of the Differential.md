@@ -17,7 +17,7 @@ tags: [differentiable-manifolds, hub]
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-21|Proposition §12.21: Partial Derivatives Upstairs and Downstairs]]
 
 ## Its proof uses (other subjects)
-- [[3C Matrices#^ladr-3-31|LADR 3.31 Matrix of a linear map, M(T)]]
+- [[§9 Matrices#^ladr-3-31|LADR 3.31 Matrix of a linear map, M(T)]]
 
 ## Used in (Differentiable Manifolds)
 - [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-23|Corollary §12.23: The Chain Rule in Coordinates]]
@@ -35,5 +35,5 @@ tags: [differentiable-manifolds, hub]
 ## Connections
 - **Used for.** Every local computation with differentials: the chain rule and change of coordinates in matrices ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-23|§12.23]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-24|§12.24]]), agreement with the Jacobian on ℝⁿ ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-25|§12.25]]), regular values inside one chart ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-27|§12.27]]), the [[Local Diffeomorphism Criterion]], the [[Submersion Normal Form]] and the transition maps of TM ([[Tangent Bundle Is a Smooth Manifold]]).
 - **The map is intrinsic, the matrix is not.** Changing charts multiplies the matrix by Jacobians of transition maps, so only rank, kernel, image, injectivity and surjectivity are properties of F; that is why regular values are defined through F_*p ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^rem-12-14|The Map Is Intrinsic — the Matrix Is Not]]). In polar coordinates ∂/∂θ corresponds to a vector of length r, not 1 ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^ex-12-3|Ex. §12.3]]).
-- **Same idea elsewhere.** It is the matrix of a linear map in given bases ([[3C Matrices#^ladr-3-31|LADR 3.31]]), with the change-of-basis rule ([[3D Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]]), and it is the Jacobian matrix of 452 ([[§6 Differentiability#^def-6-2|452 Def. §6.2]]). Row j is the gradient of the component Fʲ: gradients go across ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^rem-12-12|§12, Remark]]).
+- **Same idea elsewhere.** It is the matrix of a linear map in given bases ([[§9 Matrices#^ladr-3-31|LADR 3.31]]), with the change-of-basis rule ([[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]]), and it is the Jacobian matrix of 452 ([[§6 Differentiability#^def-6-2|452 Def. §6.2]]). Row j is the gradient of the component Fʲ: gradients go across ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^rem-12-12|§12, Remark]]).
 - **Coming later in the course.** When m = n, F pulls back dy¹ ∧ ⋯ ∧ dyⁿ to the determinant of this matrix times dx¹ ∧ ⋯ ∧ dxⁿ, the change-of-variables factor in integrating differential forms.

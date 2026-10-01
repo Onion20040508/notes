@@ -16,7 +16,7 @@ In [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commut
 >
 > **Linear in the first argument** if $(\alpha a + \beta b) \star c = \alpha (a \star c) + \beta (b \star c)$ for all scalars $\alpha, \beta$. That is, the operation distributes over addition and commutes with scalar multiplication — just like ordinary multiplication does.
 >
-> **Bilinear** ([[9D Tensor Products#^ladr-9-77|LADR 9.77]]) if it is linear in each argument separately: linear in the first when the second is held fixed, and linear in the second when the first is held fixed. The dot product $\mathbf{u} \cdot \mathbf{v}$ and the cross product $\mathbf{u} \times \mathbf{v}$ are both bilinear. (You already use this implicitly every time you expand $(a\mathbf{u} + b\mathbf{v}) \times \mathbf{w} = a(\mathbf{u} \times \mathbf{w}) + b(\mathbf{v} \times \mathbf{w})$.)
+> **Bilinear** ([[§35 Tensor Products#^ladr-9-77|LADR 9.77]]) if it is linear in each argument separately: linear in the first when the second is held fixed, and linear in the second when the first is held fixed. The dot product $\mathbf{u} \cdot \mathbf{v}$ and the cross product $\mathbf{u} \times \mathbf{v}$ are both bilinear. (You already use this implicitly every time you expand $(a\mathbf{u} + b\mathbf{v}) \times \mathbf{w} = a(\mathbf{u} \times \mathbf{w}) + b(\mathbf{v} \times \mathbf{w})$.)
 >
 > **Associative** if $(a \star b) \star c = a \star (b \star c)$, so parentheses don't matter. Addition and multiplication are associative; the cross product is *not* ($(\mathbf{u} \times \mathbf{v}) \times \mathbf{w} \neq \mathbf{u} \times (\mathbf{v} \times \mathbf{w})$ in general).
 >
@@ -42,8 +42,8 @@ In [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commut
 ^def-22-1
 
 > [!remark]- Connections
-> - Linear-algebra model: for functionals $\varphi, \tau$, $\varphi \wedge \tau(u,w) = \varphi(u)\tau(w) - \varphi(w)\tau(u)$ is an alternating bilinear form ([[9A Bilinear Forms and Quadratic Forms#^ladr-9-15|LADR 9.15]]); anti-commutativity is the swap rule for alternating forms ([[9B Alternating Multilinear Forms#^ladr-9-30|LADR 9.30]]).
-> - The wedge of $k$ covectors is the alternating part of their tensor product $\varphi_1 \otimes \cdots \otimes \varphi_k$ (an $m$-linear functional, [[9D Tensor Products#^ladr-9-85|LADR 9.85]], [[9D Tensor Products#^ladr-9-88|LADR 9.88]]).
+> - Linear-algebra model: for functionals $\varphi, \tau$, $\varphi \wedge \tau(u,w) = \varphi(u)\tau(w) - \varphi(w)\tau(u)$ is an alternating bilinear form ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-15|LADR 9.15]]); anti-commutativity is the swap rule for alternating forms ([[§33 Alternating Multilinear Forms#^ladr-9-30|LADR 9.30]]).
+> - The wedge of $k$ covectors is the alternating part of their tensor product $\varphi_1 \otimes \cdots \otimes \varphi_k$ (an $m$-linear functional, [[§35 Tensor Products#^ladr-9-85|LADR 9.85]], [[§35 Tensor Products#^ladr-9-88|LADR 9.88]]).
 
 **Why anti-commutativity?** This encodes **orientation**. Recall:
 - Swapping the order of parameters in a cross product flips the sign: $\mathbf{X}_u \times \mathbf{X}_v = -\mathbf{X}_v \times \mathbf{X}_u$.
@@ -87,10 +87,10 @@ All of these are manifestations of the same algebraic fact: $dx \wedge dy = -dy 
 
 ^pf-22-1
 
-*Uses:* [[§22 The Algebra of Differential Forms#^def-22-1|Def. §22.1]], [[§22 The Algebra of Differential Forms#^def-22-2|Def. §22.2]], [[9B Alternating Multilinear Forms#^ladr-9-34|LADR 9.34]]
+*Uses:* [[§22 The Algebra of Differential Forms#^def-22-1|Def. §22.1]], [[§22 The Algebra of Differential Forms#^def-22-2|Def. §22.2]], [[§33 Alternating Multilinear Forms#^ladr-9-34|LADR 9.34]]
 
 > [!remark]- Connections
-> - The same argument in linear algebra: an alternating form on permuted inputs picks up the sign of the permutation ([[9B Alternating Multilinear Forms#^ladr-9-35|LADR 9.35]]), which yields the Leibniz formula for the determinant ([[9C Determinants#^ladr-9-46|LADR 9.46]]).
+> - The same argument in linear algebra: an alternating form on permuted inputs picks up the sign of the permutation ([[§33 Alternating Multilinear Forms#^ladr-9-35|LADR 9.35]]), which yields the Leibniz formula for the determinant ([[§34 Determinants#^ladr-9-46|LADR 9.46]]).
 
 The wedge product is the Levi-Civita symbol promoted from a numerical table to an algebraic operation.
 
@@ -135,7 +135,7 @@ We can now formalize the computation from [[§21 Introduction to Differential Fo
 *The two directions of the pullback story. The parametrization $\Phi$ pushes points forward: $(u,v) \mapsto \mathbf{X}(u,v)$. The pullback $\Phi^*$ pulls forms backward: a form written in ambient differentials $dx_i$ becomes a form in parameter differentials $du_j$, via $dx_i = \sum_j (x_i)_{u_j}\,du_j$. Integration always happens at the parameter end — $\int_{\Phi(D)}\omega$ is defined as $\int_D \Phi^*\omega$.*
 
 > [!remark]- Connections
-> - The coefficients of $\Phi^*\omega$ are $k \times k$ minors of the Jacobian, i.e. determinants ([[9C Determinants#^ladr-9-46|LADR 9.46]]); in the top-degree case $k = n$ this is the signed volume factor $\det J$, whose absolute value is the volume distortion ([[9C Determinants#^ladr-9-61|LADR 9.61]], [[§15 Multivariable Integration#^prop-15-19|Proposition §15.19]]).
+> - The coefficients of $\Phi^*\omega$ are $k \times k$ minors of the Jacobian, i.e. determinants ([[§34 Determinants#^ladr-9-46|LADR 9.46]]); in the top-degree case $k = n$ this is the signed volume factor $\det J$, whose absolute value is the volume distortion ([[§34 Determinants#^ladr-9-61|LADR 9.61]], [[§15 Multivariable Integration#^prop-15-19|Proposition §15.19]]).
 > - Pulling back and then applying $d$ is how the classical theorems become one statement: [[Generalized Stokes' Theorem|Theorem §23.1]].
 
 > [!remark] Remark: Clarification of Terms
@@ -158,7 +158,7 @@ $$
 \Phi^*(dx_{i_1} \wedge \cdots \wedge dx_{i_k}) = \det \begin{pmatrix} (x_{i_1})_{u_1} & \cdots & (x_{i_1})_{u_k} \\ \vdots & \ddots & \vdots \\ (x_{i_k})_{u_1} & \cdots & (x_{i_k})_{u_k} \end{pmatrix} du_1 \wedge \cdots \wedge du_k.
 $$
 
-That is, the pullback of a coordinate $k$-form extracts the $k \times k$ minor of $J$ corresponding to rows $i_1, \ldots, i_k$. This is not a new result — it is what happens when you carry out steps 1 and 2 of the definition. Each $dx_{i_\ell}$ becomes $\sum_j (x_{i_\ell})_{u_j}\,du_j$; wedging $k$ of these and using anti-commutativity kills all terms with repeated $du_j$; the surviving terms are the Leibniz formula for the determinant ([[9C Determinants#^ladr-9-46|LADR 9.46]]) (compare the informal $2 \times 2$ computation in [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21.6]]).
+That is, the pullback of a coordinate $k$-form extracts the $k \times k$ minor of $J$ corresponding to rows $i_1, \ldots, i_k$. This is not a new result — it is what happens when you carry out steps 1 and 2 of the definition. Each $dx_{i_\ell}$ becomes $\sum_j (x_{i_\ell})_{u_j}\,du_j$; wedging $k$ of these and using anti-commutativity kills all terms with repeated $du_j$; the surviving terms are the Leibniz formula for the determinant ([[§34 Determinants#^ladr-9-46|LADR 9.46]]) (compare the informal $2 \times 2$ computation in [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21.6]]).
 
 > [!example] Example §22.2: Pullback Along a Curve (Line Integral, §16)
 > Let $\omega = f_1\,dx + f_2\,dy + f_3\,dz$ be a 1-form on $\mathbb{R}^3$, and $\boldsymbol{\gamma}: [a,b] \to \mathbb{R}^3$ a curve with $\boldsymbol{\gamma}(t) = (x(t), y(t), z(t))$.
@@ -446,7 +446,7 @@ Curl and divergence are **not** at the same level: curl goes from degree 1 to de
 *Uses:* [[§22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]], [[§22 The Algebra of Differential Forms#^def-22-1|Def. §22.1]], [[Schwarz–Clairaut Theorem|§5.1]]
 
 > [!remark]- Connections
-> - Why it works: the second derivative is a symmetric bilinear form and $d$ keeps only the alternating part ([[§22 The Algebra of Differential Forms#^prop-22-9|Proposition §22.9]]; linear algebra: [[9A Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]).
+> - Why it works: the second derivative is a symmetric bilinear form and $d$ keeps only the alternating part ([[§22 The Algebra of Differential Forms#^prop-22-9|Proposition §22.9]]; linear algebra: [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]).
 
 > [!remark] Remark: Classical Consequences of $d^2 = 0$
 > The identity $d^2 = 0$ applied at consecutive rungs of the ladder gives:
@@ -609,10 +609,10 @@ Recall from [[§6 Differentiability#^def-6-1|§6]]: $f$ is differentiable at $\m
 ^prop-22-6
 
 > [!remark]- Connections
-> - $Df_{\mathbf{p}}$ is a linear functional on $\mathbb{R}^n$ ([[3F Duality#^ladr-3-108|LADR 3.108]]); the gradient is the vector that represents it via the dot product, by the [[Riesz representation theorem|Riesz representation theorem (LADR 6.42)]].
+> - $Df_{\mathbf{p}}$ is a linear functional on $\mathbb{R}^n$ ([[§12 Duality#^ladr-3-108|LADR 3.108]]); the gradient is the vector that represents it via the dot product, by the [[Riesz representation theorem|Riesz representation theorem (LADR 6.42)]].
 
 > [!definition] Definition §22.7: Second Total Derivative
-> For $f: \mathbb{R}^n \to \mathbb{R}$ of class $C^2$ at $\mathbf{p}$, the **second total derivative** $D^2f_{\mathbf{p}}: \mathbb{R}^n \times \mathbb{R}^n \to \mathbb{R}$ is the bilinear form ([[9A Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]]):
+> For $f: \mathbb{R}^n \to \mathbb{R}$ of class $C^2$ at $\mathbf{p}$, the **second total derivative** $D^2f_{\mathbf{p}}: \mathbb{R}^n \times \mathbb{R}^n \to \mathbb{R}$ is the bilinear form ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]]):
 >
 > $$
 > D^2f_{\mathbf{p}}(\mathbf{u}, \mathbf{v}) = \lim_{t \to 0} \frac{Df_{\mathbf{p}+t\mathbf{u}}(\mathbf{v}) - Df_{\mathbf{p}}(\mathbf{v})}{t}.
@@ -629,7 +629,7 @@ Recall from [[§6 Differentiability#^def-6-1|§6]]: $f$ is differentiable at $\m
 > D^2f_{\mathbf{p}}(\mathbf{u}, \mathbf{v}) = \sum_{i,j} f_{x_i x_j}(\mathbf{p})\, u_i\, v_j.
 > $$
 >
-> The matrix of $D^2f_{\mathbf{p}}$ in the standard basis ([[9A Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]]) is the Hessian from [[§14 Optimization and Lagrange Multipliers#^def-14-2|§14]]: $[D^2f_{\mathbf{p}}]_{ij} = f_{x_i x_j}(\mathbf{p})$.
+> The matrix of $D^2f_{\mathbf{p}}$ in the standard basis ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]]) is the Hessian from [[§14 Optimization and Lagrange Multipliers#^def-14-2|§14]]: $[D^2f_{\mathbf{p}}]_{ij} = f_{x_i x_j}(\mathbf{p})$.
 
 ^prop-22-7
 
@@ -655,7 +655,7 @@ The second derivative test in [[Second Derivative Test in Several Variables|§14
 ^prop-22-8
 
 > [!remark]- Connections
-> - This is $V^{(2)} = V^{(2)}_{\mathrm{sym}} \oplus V^{(2)}_{\mathrm{alt}}$ in LADR ([[9A Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]), with antisymmetric = alternating by [[9A Bilinear Forms and Quadratic Forms#^ladr-9-16|LADR 9.16]].
+> - This is $V^{(2)} = V^{(2)}_{\mathrm{sym}} \oplus V^{(2)}_{\mathrm{alt}}$ in LADR ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]), with antisymmetric = alternating by [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-16|LADR 9.16]].
 
 > [!theorem] Proposition §22.9: $d^2 = 0$ Is Clairaut's Theorem in Forms Language
 > For $C^2$ functions, the following three statements are the same fact in three languages (all three hold, by Clairaut's theorem):
@@ -678,15 +678,15 @@ The second derivative test in [[Second Derivative Test in Several Variables|§14
 
 ^pf-22-9
 
-*Uses:* [[§22 The Algebra of Differential Forms#^prop-22-7|§22.7]], [[§22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]], [[§22 The Algebra of Differential Forms#^prop-22-8|§22.8]], [[9A Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]
+*Uses:* [[§22 The Algebra of Differential Forms#^prop-22-7|§22.7]], [[§22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]], [[§22 The Algebra of Differential Forms#^prop-22-8|§22.8]], [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]
 
 The circle of ideas is:
 
 [[§5 Equality of Mixed Partials|§5]] (mixed partials commute: $f_{xy} = f_{yx}$) $\;\longleftrightarrow\;$ [[§14 Optimization and Lagrange Multipliers|§14]] (Hessian is symmetric) $\;\longleftrightarrow\;$ §22 ($d^2 = 0$).
 
 **The two branches of bilinear algebra.** From “bilinear maps on tangent vectors,” two independent theories branch off:
-- **Symmetric** ([[9A Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR 9.9]]): inner products, metrics, Hessians, the second derivative test. This is the world of Riemannian geometry (Chapter 13 of Lee).
-- **Antisymmetric** ([[9A Bilinear Forms and Quadratic Forms#^ladr-9-14|LADR 9.14]]): forms, wedge products, determinants, orientation. This is the world of differential forms (Chapter 14 of Lee).
+- **Symmetric** ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR 9.9]]): inner products, metrics, Hessians, the second derivative test. This is the world of Riemannian geometry (Chapter 13 of Lee).
+- **Antisymmetric** ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-14|LADR 9.14]]): forms, wedge products, determinants, orientation. This is the world of differential forms (Chapter 14 of Lee).
 
 Both arise from bilinear algebra; neither contains the other. The Hessian lives in the symmetric branch; forms live in the antisymmetric branch. The identity $d^2 = 0$ is the statement that the second derivative is entirely symmetric — so the antisymmetric branch sees nothing there.
 

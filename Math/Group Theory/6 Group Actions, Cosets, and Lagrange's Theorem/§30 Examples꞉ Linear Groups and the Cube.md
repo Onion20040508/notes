@@ -25,7 +25,7 @@ tags: [group-theory, math493]
 
 ^pf-30-1
 
-*Uses:* [[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]], [[§25 Orbits#^def-25-1|Def. §25.1]], [[§24 Stabilizers and Fixed Points#^def-24-1|Def. §24.1]], [[2B Bases#^ladr-2-32|LADR 2.32]], [[9C Determinants#^ladr-9-50|LADR 9.50]]
+*Uses:* [[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]], [[§25 Orbits#^def-25-1|Def. §25.1]], [[§24 Stabilizers and Fixed Points#^def-24-1|Def. §24.1]], [[§5 Bases#^ladr-2-32|LADR 2.32]], [[§34 Determinants#^ladr-9-50|LADR 9.50]]
 
 > [!remark] Remark: $GL_3$ versus $O_3$
 > Both stabilizers are “matrices with first column $e_1$,” but in $O_3$ orthonormality of the columns additionally forces the first *row* to be $(1,0,0)$, killing the block $b$ and restricting $B$ to $O_2$. Correspondingly the $GL_3$-orbit of $e_1$ is all nonzero vectors, while the $O_3$-orbit is only the unit sphere: a smaller group has smaller orbits and, by [[§28 Orbit–Stabilizer#^thm-28-3|orbit–stabilizer]], the two effects are linked through $|G| = |Gx|\cdot|\operatorname{Stab}(x)|$ (here in the infinite form $G/\operatorname{Stab}(x) \leftrightarrow Gx$).
@@ -48,7 +48,7 @@ tags: [group-theory, math493]
 
 ^pf-30-2
 
-*Uses:* [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[§25 Orbits#^def-25-1|Def. §25.1]], [[§24 Stabilizers and Fixed Points#^def-24-1|Def. §24.1]], [[6B Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[6B Orthonormal Bases#^ladr-6-32|LADR 6.32]], [[7D Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]]
+*Uses:* [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[§25 Orbits#^def-25-1|Def. §25.1]], [[§24 Stabilizers and Fixed Points#^def-24-1|Def. §24.1]], [[§20 Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[§20 Orthonormal Bases#^ladr-6-32|LADR 6.32]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]]
 
 ![[m493-30-2.svg]]
 *Left: $GL_3(\mathbb{R})$ has two orbits on $\mathbb{R}^3$, the origin (red) and everything else (blue); any $v \neq 0$ is reached from $e_1$ by an invertible $P$ with first column $v$. Right: $O_3(\mathbb{R})$ preserves length, so its orbits are the origin and the spheres $S_r$ (blue), and $e_1$ reaches only the vectors $w$ with $|w| = 1$. The stabilizer of $e_1$ acts as $O_2(\mathbb{R})$ on the plane $e_1^\perp$, moving the great circle $e_1^\perp \cap S_1$ (red) within itself.*
@@ -108,7 +108,7 @@ tags: [group-theory, math493]
 
 ^pf-30-4
 
-*Uses:* [[§23 Actions#^def-23-3|Def. §23.3]], [[§23 Actions#^prop-23-4|§23.4]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|§19.2]], [[3A Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]
+*Uses:* [[§23 Actions#^def-23-3|Def. §23.3]], [[§23 Actions#^prop-23-4|§23.4]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|§19.2]], [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]
 
 > [!example] Example §30.1: A Non-Faithful Action: Colours
 > The action on the three colours (pairs of opposite faces) is not faithful: every $180^\circ$ rotation about a face axis carries each pair of opposite faces to itself, so these non-identity rotations lie in the kernel of $G \to S_3$.

@@ -5,10 +5,10 @@ ladr-hub: "6.17"
 aliases: ["LADR 6.17"]
 tags: [linear-algebra, hub]
 ---
-![[6A Inner Products and Norms#^ladr-6-17]]
+![[§19 Inner Products and Norms#^ladr-6-17]]
 
 ## Treated in
-- [[6A Inner Products and Norms#^ladr-6-17|Axler 6.17]], in [[6A Inner Products and Norms]]
+- [[§19 Inner Products and Norms#^ladr-6-17|Axler 6.17]], in [[§19 Inner Products and Norms]]
 
 ## Proof uses
 - [[Cauchy–Schwarz inequality|6.14]]

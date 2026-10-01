@@ -26,4 +26,4 @@ tags: [group-theory, hub]
 ## Connections
 - **Used for.** ℚ^× ≅ ℤ^⊕∞ × ℤ/2ℤ, one coordinate per prime ([[§16 Isomorphisms#^prop-16-9|§16.9]]); Uₙ as a product over prime powers ([[§21 The Structure of Uₙ#^thm-21-2|§21.2]]) and [[§21 The Structure of Uₙ#^cor-21-3|Euler's Totient Formula]]. In a group of order pᵏ, every class size divides pᵏ and is therefore a power of p, which drives [[p-Groups Have Nontrivial Center]].
 - **Proof.** Existence is by induction. Uniqueness follows from [[Euclid's Lemma]], the last link of [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^rem-9-1|The Dependency Chain in ℤ]].
-- **Same idea elsewhere.** Polynomials factor uniquely into linear factors over ℂ ([[4 Polynomials (section)#^ladr-4-13|LADR 4.13]]), and into linear and irreducible quadratic factors over ℝ ([[4 Polynomials (section)#^ladr-4-16|LADR 4.16]]).
+- **Same idea elsewhere.** Polynomials factor uniquely into linear factors over ℂ ([[§13 Polynomials#^ladr-4-13|LADR 4.13]]), and into linear and irreducible quadratic factors over ℝ ([[§13 Polynomials#^ladr-4-16|LADR 4.16]]).

@@ -21,7 +21,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - Topology: the [[§11 Metric Topology#^def-11-2|ε-ball (590 Def. §11.2)]] of a metric; the balls form a basis for the [[§11 Metric Topology#^def-11-3|metric topology]].
 > - MATH 452: [[§2 Open and Closed Sets#^def-2-1|Open Ball (452 Def. §2.1)]].
-> - Linear algebra: $|y - x|$ is the Euclidean norm of the dot product, [[6A Inner Products and Norms#^ladr-6-7|Norm (LADR 6.7)]].
+> - Linear algebra: $|y - x|$ is the Euclidean norm of the dot product, [[§19 Inner Products and Norms#^ladr-6-7|Norm (LADR 6.7)]].
 
 > [!definition] Definition §5.2: Open Set
 > A set $\mathcal{O} \subseteq \mathbb{R}^n$ is **open** if for every $x \in \mathcal{O}$, there exists $r > 0$ such that $B(x, r) \subseteq \mathcal{O}$.

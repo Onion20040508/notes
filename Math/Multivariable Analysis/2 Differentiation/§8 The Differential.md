@@ -55,7 +55,7 @@ The notation $df = f'(x) \, dx$ is familiar from single-variable calculus, but w
 ^def-8-1
 
 > [!remark]- Connections
-> - For fixed $(x, y)$, $df$ is a [[3F Duality#^ladr-3-108|linear functional]] on $\mathbb{R}^2$ — the total derivative [[§6 Differentiability#^def-6-2|Def. §6.2]].
+> - For fixed $(x, y)$, $df$ is a [[§12 Duality#^ladr-3-108|linear functional]] on $\mathbb{R}^2$ — the total derivative [[§6 Differentiability#^def-6-2|Def. §6.2]].
 > - Reappears as a 1-form: [[§22 The Algebra of Differential Forms#^prop-22-6|Gradient = Differential = 1-Form]].
 
 > [!remark] Remark: Connection to Differentiability
@@ -113,10 +113,10 @@ The notation $df = f'(x) \, dx$ is familiar from single-variable calculus, but w
 
 > [!remark]- Connections
 > - Its coefficient matrix is the [[§14 Optimization and Lagrange Multipliers#^def-14-2|Hessian (Def. §14.2)]]; in forms language, [[§22 The Algebra of Differential Forms#^prop-22-7|the second total derivative is the Hessian]].
-> - Linear algebra: the [[9A Bilinear Forms and Quadratic Forms#^ladr-9-18|quadratic form associated with a (symmetric) bilinear form]] (LADR 9.18, 9.20).
+> - Linear algebra: the [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-18|quadratic form associated with a (symmetric) bilinear form]] (LADR 9.18, 9.20).
 
 > [!remark] Remark: Interpretation of $d^2f$
-> The second differential $d^2f$ is a **[[9A Bilinear Forms and Quadratic Forms#^ladr-9-18|quadratic form]]** in $(h, k)$. It captures the **curvature** or second-order behavior of $f$:
+> The second differential $d^2f$ is a **[[§32 Bilinear Forms and Quadratic Forms#^ladr-9-18|quadratic form]]** in $(h, k)$. It captures the **curvature** or second-order behavior of $f$:
 > - It appears in the [[§9 Taylor's Theorem for Multivariable Functions#^ex-9-2|second-order Taylor expansion]] of $f$.
 > - It [[Second Derivative Test in Several Variables|determines]] whether a critical point is a local max, local min, or saddle point.
 

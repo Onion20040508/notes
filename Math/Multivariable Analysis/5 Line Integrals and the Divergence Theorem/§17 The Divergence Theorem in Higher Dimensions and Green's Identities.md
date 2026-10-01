@@ -277,14 +277,14 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 *Uses:* [[Green's First Identity|§17.2]]
 
 > [!remark] Remark: Green's Second Identity as Symmetry
-> Green's second identity expresses a kind of **symmetry of the Laplacian**: the “interaction” of $u$ with $\Delta v$ differs from the interaction of $v$ with $\Delta u$ only by a boundary term. This is the $L^2$ analog of integration by parts, and it shows that the Laplacian is a **[[7A Self-Adjoint and Normal Operators#^ladr-7-10|self-adjoint operator]]** (up to boundary terms).
+> Green's second identity expresses a kind of **symmetry of the Laplacian**: the “interaction” of $u$ with $\Delta v$ differs from the interaction of $v$ with $\Delta u$ only by a boundary term. This is the $L^2$ analog of integration by parts, and it shows that the Laplacian is a **[[§22 Self-Adjoint and Normal Operators#^ladr-7-10|self-adjoint operator]]** (up to boundary terms).
 >
 > In more advanced treatments, this property is the starting point for Sturm–Liouville theory, [[Real spectral theorem|spectral theory]], and the theory of distributions.
 
 ^rem-17-2
 
 > [!remark]- Connections
-> - Finite-dimensional model: an operator $T$ with $\langle Tu, v\rangle = \langle u, Tv\rangle$ ([[7A Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]) has an orthonormal eigenbasis by the [[Real spectral theorem]]; Green's second identity with vanishing boundary terms is the analogous statement for $\Delta$ with the $L^2$ inner product.
+> - Finite-dimensional model: an operator $T$ with $\langle Tu, v\rangle = \langle u, Tv\rangle$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]) has an orthonormal eigenbasis by the [[Real spectral theorem]]; Green's second identity with vanishing boundary terms is the analogous statement for $\Delta$ with the $L^2$ inner product.
 
 ## Applications of Green's Identities
 

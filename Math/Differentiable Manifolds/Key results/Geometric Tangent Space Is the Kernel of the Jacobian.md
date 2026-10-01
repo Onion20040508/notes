@@ -18,7 +18,7 @@ tags: [differentiable-manifolds, hub]
 - [[§11 Tangent Spaces I꞉ The Geometric Picture#^lem-11-2|Lemma §11.2: The Geometric Tangent Space of a Graph]]
 
 ## Its proof uses (other subjects)
-- [[2C Dimension#^ladr-2-39|LADR 2.39 Subspace of full dimension equals the whole space]]
+- [[§6 Dimension#^ladr-2-39|LADR 2.39 Subspace of full dimension equals the whole space]]
 - [[Fundamental theorem of linear maps]] (Linear Algebra)
 - [[Multivariable Chain Rule]] (Multivariable Analysis)
 

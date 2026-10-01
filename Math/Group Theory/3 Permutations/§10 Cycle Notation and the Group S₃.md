@@ -17,7 +17,7 @@ tags: [group-theory, math493]
 ^def-10-1
 
 > [!remark]- Connections
-> - Axler's permutations as lists, used for determinants: [[9B Alternating Multilinear Forms#^ladr-9-31|LADR 9.31]].
+> - Axler's permutations as lists, used for determinants: [[§33 Alternating Multilinear Forms#^ladr-9-31|LADR 9.31]].
 
 > [!example] Example §10.1: The Group $S_3$ in Detail
 > **Elements.** $|S_3| = 3! = 6$:

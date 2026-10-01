@@ -148,7 +148,7 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 *Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]]
 
 > [!remark]- Connections
-> - This is the triangle inequality of the $L^1$ norm ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]](iii)); its $L^p$ version is [[Minkowski's Inequality|Minkowski's inequality]] (§19.9). Norm axioms in LADR: [[6A Inner Products and Norms#^ladr-6-9|LADR 6.9]], [[Triangle inequality|LADR 6.17]].
+> - This is the triangle inequality of the $L^1$ norm ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]](iii)); its $L^p$ version is [[Minkowski's Inequality|Minkowski's inequality]] (§19.9). Norm axioms in LADR: [[§19 Inner Products and Norms#^ladr-6-9|LADR 6.9]], [[Triangle inequality|LADR 6.17]].
 
 ## Countable Additivity and Domain Restriction
 

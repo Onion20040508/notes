@@ -144,7 +144,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 ^def-15-2
 
 > [!remark]- Connections
-> - The annihilator of a subspace: [[3F Duality#^ladr-3-121|LADR 3.121]].
+> - The annihilator of a subspace: [[§12 Duality#^ladr-3-121|LADR 3.121]].
 
 > [!theorem] Proposition §15.5: A Basis of the Conormal Space
 > In an adapted chart at $p$, $N_pS$ has basis $dx^{m-k+1}|_p, \ldots, dx^m|_p$. In particular $\dim N_pS = k$, the codimension of $S$.
@@ -159,7 +159,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 *Uses:* [[§15 Submanifolds#^def-15-2|Def. §15.2]], [[§10 Vector Spaces and Matrix Groups#^prop-10-2|§10.2]], [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|§13.2]], [[§15 Submanifolds#^prop-15-4|§15.4]]
 
 > [!remark]- Connections
-> - The dimension count in general: [[3F Duality#^ladr-3-125|LADR 3.125]] ($\dim U^0 = \dim V - \dim U$).
+> - The dimension count in general: [[§12 Duality#^ladr-3-125|LADR 3.125]] ($\dim U^0 = \dim V - \dim U$).
 
 > [!remark] Remark: No Normal Vectors Without a Metric
 > “We don't have normal vectors, because we don't have a metric … There is no notion of orthogonality, but there is an intrinsic” definition: the conormal space. “If we had a metric, [an] inner product on $T_pM$, we could identify $T^*_pM$ with $T_pM$, and this would be the normal space.” Uribe added that he regards the cotangent side as “actually more natural” than the tangent side — “that's where Hamiltonian mechanics takes place.”
@@ -170,7 +170,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 *How to draw a conormal covector. Without a metric, a covector $\xi$ on $T_pM$ is drawn by its level lines $\{\xi = \text{const}\}$. For $\xi \in N_pS$ the level line $\xi = 0$ contains $T_pS$, so all of its level lines run* parallel *to $T_pS$ (left). Only once an inner product is chosen does $\xi$ become a vector, perpendicular to its level lines, and $N_pS$ becomes the normal line $(T_pS)^\perp$ (right). The board, and page 33 of the handwritten notes, draw $N_pS$ as a line perpendicular to $T_pS$: that is the right-hand, metric picture.*
 
 > [!remark]- Connections
-> - With an inner product: the orthogonal complement [[6C Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], and the identification of covectors with vectors, [[Riesz representation theorem|LADR 6.42]].
+> - With an inner product: the orthogonal complement [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], and the identification of covectors with vectors, [[Riesz representation theorem|LADR 6.42]].
 > - The same point for gradients: [[§13 Tangent Spaces III꞉ The Cotangent Space#^rem-13-2|Differential — Not Gradient]].
 
 ## The Regular Value Theorem for Manifolds

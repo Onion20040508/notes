@@ -90,14 +90,14 @@ The answer is purely algebraic: the orientation of a 3D region in $\mathbb{R}^3$
 
 In fact, coordinate ordering describes orientation *at every dimension* — it just happens to coincide with the geometric picture when the region is not top-dimensional:
 
-**In 2D:** A flat region $D \subseteq \mathbb{R}^2$ with coordinates $(x,y)$ has $dx \wedge dy > 0$ (standard orientation). Switching to the ordering $(y,x)$ gives $dy \wedge dx = -dx \wedge dy < 0$ (reversed). The map $(x,y) \mapsto (y,x)$ has Jacobian $\det\left(\begin{smallmatrix} 0 & 1 \\ 1 & 0 \end{smallmatrix}\right) = -1$: a reflection, which reverses orientation ([[9C Determinants#^ladr-9-61|LADR 9.61]]). Now embed $D$ as a surface in $\mathbb{R}^3$ (lying flat in the $xy$-plane). The two orderings correspond to the normal pointing in $+\hat{z}$ or $-\hat{z}$ — flipping the normal. So switching coordinate ordering (the algebraic description) produces the same effect as flipping the surface (the geometric description).
+**In 2D:** A flat region $D \subseteq \mathbb{R}^2$ with coordinates $(x,y)$ has $dx \wedge dy > 0$ (standard orientation). Switching to the ordering $(y,x)$ gives $dy \wedge dx = -dx \wedge dy < 0$ (reversed). The map $(x,y) \mapsto (y,x)$ has Jacobian $\det\left(\begin{smallmatrix} 0 & 1 \\ 1 & 0 \end{smallmatrix}\right) = -1$: a reflection, which reverses orientation ([[§34 Determinants#^ladr-9-61|LADR 9.61]]). Now embed $D$ as a surface in $\mathbb{R}^3$ (lying flat in the $xy$-plane). The two orderings correspond to the normal pointing in $+\hat{z}$ or $-\hat{z}$ — flipping the normal. So switching coordinate ordering (the algebraic description) produces the same effect as flipping the surface (the geometric description).
 
 ![[m452-21-2.svg]]
 *Two descriptions of the same choice. Algebraic: an ordered pair of basis vectors — $(\hat{e}_x, \hat{e}_y)$ on the left, $(\hat{e}_y, \hat{e}_x)$ on the right; the green arc turns from the 1st vector to the 2nd, counterclockwise or clockwise as seen from above. Geometric: the normal $\pm\hat{z}$ (red) given by the right-hand rule from that turn. Swapping the order $\leftrightarrow$ flipping the normal $\leftrightarrow$ negating $dx \wedge dy$.*
 
 **In 1D:** There is only one coordinate $x$ — nothing to swap it with. Instead, orientation is the **choice of direction**: does $x$ increase or decrease as you traverse? Writing $\int_a^b$ means “traverse in the direction of increasing $x$” (standard). Writing $\int_b^a$ means “traverse in the direction of decreasing $x$” (reversed). The sign flip $\int_a^b = -\int_b^a$ is the 1D version of switching the coordinate ordering. There is no second coordinate to swap, so the only freedom is the sign of the single basis vector: $+\hat{e}_x$ or $-\hat{e}_x$.
 
-**The uniform description:** In all dimensions, orientation is determined by the **sign of the permutation** ([[9B Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]]) of basis vectors. Two ordered bases have the same orientation if and only if the permutation relating them is even (an even number of transpositions); they have opposite orientation if the permutation is odd. This is encoded by the Levi-Civita symbol $\varepsilon_{ij\ldots k}$ ([[§22 The Algebra of Differential Forms#^def-22-2|Def. §22.2]]), which equals $+1$ for even permutations, $-1$ for odd, and $0$ if any index is repeated.
+**The uniform description:** In all dimensions, orientation is determined by the **sign of the permutation** ([[§33 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]]) of basis vectors. Two ordered bases have the same orientation if and only if the permutation relating them is even (an even number of transpositions); they have opposite orientation if the permutation is odd. This is encoded by the Levi-Civita symbol $\varepsilon_{ij\ldots k}$ ([[§22 The Algebra of Differential Forms#^def-22-2|Def. §22.2]]), which equals $+1$ for even permutations, $-1$ for odd, and $0$ if any index is repeated.
 
 In 1D, the only “permutation” is the sign of the single basis vector: $\{+\hat{e}_x\}$ vs $\{-\hat{e}_x\}$. In 2D, $\{\hat{e}_x, \hat{e}_y\}$ vs $\{\hat{e}_y, \hat{e}_x\}$ is a single transposition (odd, so orientation reverses). In 3D, even permutations of $\{\hat{e}_x, \hat{e}_y, \hat{e}_z\}$ — such as $(y,z,x)$ and $(z,x,y)$ — preserve orientation, while odd ones — such as $(y,x,z)$ — reverse it.
 
@@ -107,9 +107,9 @@ $$
 dx_i \wedge dx_j \wedge dx_k = \varepsilon_{ijk}\,dx \wedge dy \wedge dz.
 $$
 
-The three defining properties match exactly: swapping two indices negates $\varepsilon_{ijk}$, and swapping two wedge factors negates the product; repeating an index gives $\varepsilon_{iik} = 0$, and $dx_i \wedge dx_i = 0$; the standard ordering gives $\varepsilon_{123} = +1$, and $dx \wedge dy \wedge dz > 0$. The determinant formula $\det(A) = \sum_\sigma \mathrm{sgn}(\sigma)\prod_i A_{i,\sigma(i)}$ ([[9C Determinants#^ladr-9-46|LADR 9.46]]) is what you get when you expand the wedge product evaluated on a set of vectors — the wedge product computes determinants by tracking permutation signs automatically.
+The three defining properties match exactly: swapping two indices negates $\varepsilon_{ijk}$, and swapping two wedge factors negates the product; repeating an index gives $\varepsilon_{iik} = 0$, and $dx_i \wedge dx_i = 0$; the standard ordering gives $\varepsilon_{123} = +1$, and $dx \wedge dy \wedge dz > 0$. The determinant formula $\det(A) = \sum_\sigma \mathrm{sgn}(\sigma)\prod_i A_{i,\sigma(i)}$ ([[§34 Determinants#^ladr-9-46|LADR 9.46]]) is what you get when you expand the wedge product evaluated on a set of vectors — the wedge product computes determinants by tracking permutation signs automatically.
 
-So the cross product, the determinant, the Jacobian, and the wedge product are all manifestations of the same algebraic structure: **alternating multilinear maps** ([[9B Alternating Multilinear Forms#^ladr-9-27|LADR 9.27]]). The Levi-Civita symbol is the coordinate version; the wedge product is the coordinate-free version that works in any dimension and on any manifold. The geometric intuition (direction of traversal, normal vector) is available only when the region is embedded in a higher-dimensional space.
+So the cross product, the determinant, the Jacobian, and the wedge product are all manifestations of the same algebraic structure: **alternating multilinear maps** ([[§33 Alternating Multilinear Forms#^ladr-9-27|LADR 9.27]]). The Levi-Civita symbol is the coordinate version; the wedge product is the coordinate-free version that works in any dimension and on any manifold. The geometric intuition (direction of traversal, normal vector) is available only when the region is embedded in a higher-dimensional space.
 
 The pattern is: a $k$-dimensional region in $\mathbb{R}^n$ with $n > k$ has a **normal direction** in the ambient space, so orientation is geometric and visible. A $k$-dimensional region in $\mathbb{R}^k$ (top-dimensional) has no ambient space to point into, so orientation is purely algebraic.
 
@@ -149,8 +149,8 @@ This also explains why the [[Divergence Theorem in ℝ³|Divergence Theorem]] ne
 ^def-21-1
 
 > [!remark]- Connections
-> - The coordinate 1-forms $dx_1, \ldots, dx_n$ are the dual basis of the standard basis: [[3F Duality#^ladr-3-113|LADR 3.113]].
-> - At each point a $k$-form is an alternating $k$-linear form on $\mathbb{R}^n$ ([[9B Alternating Multilinear Forms#^ladr-9-27|LADR 9.27]]); there are none for $k > n$ ([[9B Alternating Multilinear Forms#^ladr-9-29|LADR 9.29]]) and the top-degree ones form a 1-dimensional space ([[9B Alternating Multilinear Forms#^ladr-9-37|LADR 9.37]]).
+> - The coordinate 1-forms $dx_1, \ldots, dx_n$ are the dual basis of the standard basis: [[§12 Duality#^ladr-3-113|LADR 3.113]].
+> - At each point a $k$-form is an alternating $k$-linear form on $\mathbb{R}^n$ ([[§33 Alternating Multilinear Forms#^ladr-9-27|LADR 9.27]]); there are none for $k > n$ ([[§33 Alternating Multilinear Forms#^ladr-9-29|LADR 9.29]]) and the top-degree ones form a 1-dimensional space ([[§33 Alternating Multilinear Forms#^ladr-9-37|LADR 9.37]]).
 
 **What this definition says, concretely:**
 
@@ -276,8 +276,8 @@ du\,du = 0, \qquad dv\,dv = 0, \qquad dv\,du = -du\,dv.
 $$
 
 These are not arbitrary conventions — they are forced by the determinant:
-- $du\,du = 0$: If we tried to compute $dx \wedge dx$ by the same method, we would get $\det\begin{pmatrix} x_u & x_u \\ x_v & x_v \end{pmatrix} = 0$ — a determinant with two identical columns is always zero ([[9C Determinants#^ladr-9-45|LADR 9.45]]). So the “product of $dx$ with itself” must vanish.
-- $dv\,du = -du\,dv$: Swapping the two columns of a $2 \times 2$ determinant negates it ([[9B Alternating Multilinear Forms#^ladr-9-30|LADR 9.30]]): $\det\begin{pmatrix} x_u & x_v \\ y_u & y_v \end{pmatrix} = -\det\begin{pmatrix} x_v & x_u \\ y_v & y_u \end{pmatrix}$. Swapping $u \leftrightarrow v$ in the parametrization reverses the orientation, so the product of differentials must be anti-commutative.
+- $du\,du = 0$: If we tried to compute $dx \wedge dx$ by the same method, we would get $\det\begin{pmatrix} x_u & x_u \\ x_v & x_v \end{pmatrix} = 0$ — a determinant with two identical columns is always zero ([[§34 Determinants#^ladr-9-45|LADR 9.45]]). So the “product of $dx$ with itself” must vanish.
+- $dv\,du = -du\,dv$: Swapping the two columns of a $2 \times 2$ determinant negates it ([[§33 Alternating Multilinear Forms#^ladr-9-30|LADR 9.30]]): $\det\begin{pmatrix} x_u & x_v \\ y_u & y_v \end{pmatrix} = -\det\begin{pmatrix} x_v & x_u \\ y_v & y_u \end{pmatrix}$. Swapping $u \leftrightarrow v$ in the parametrization reverses the orientation, so the product of differentials must be anti-commutative.
 
 **Step 4.** These are exactly the rules of the wedge product: $du \wedge du = 0$, $dv \wedge dv = 0$, and $dv \wedge du = -du \wedge dv$. The anti-commutativity is not an abstract axiom — it is the *unique* multiplication rule on differentials that makes coordinate substitution produce the Jacobian determinant.
 

@@ -40,7 +40,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Home in 452: the total derivative and Jacobian, [[§6 Differentiability#^def-6-2|452 Def. §6.2]] and [[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]]; the differential, [[§8 The Differential#^def-8-1|452 Def. §8.1]].
-> - Rank: [[3C Matrices#^ladr-3-58|LADR 3.58]]; row rank equals column rank, [[3C Matrices#^ladr-3-57|LADR 3.57]].
+> - Rank: [[§9 Matrices#^ladr-3-58|LADR 3.58]]; row rank equals column rank, [[§9 Matrices#^ladr-3-57|LADR 3.57]].
 > - Coordinate-free differential: [[§10 Vector Spaces and Matrix Groups#^def-10-9|Def. §10.9]].
 
 ## Regular Points and Regular Values
@@ -179,7 +179,7 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 
 ^pf-4-3
 
-*Uses:* [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-5|§3.5]], [[§4 The Regular Value Theorem#^thm-4-1|§4.1]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-10|§3.10]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §10.2 (chain rule)]], [[3C Matrices#^ladr-3-57|LADR 3.57]]
+*Uses:* [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-5|§3.5]], [[§4 The Regular Value Theorem#^thm-4-1|§4.1]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-10|§3.10]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §10.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
 
 > [!remark]- Connections
 > - The smooth structure on $X$: [[§9 Manifolds in Euclidean Space#^prop-9-2|§9.2]]; for level sets of maps between manifolds: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-28|§12.28]] and [[§15 Submanifolds#^thm-15-6|§15.6]].
@@ -223,7 +223,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 
 ^pf-4-5
 
-*Uses:* [[§4 The Regular Value Theorem#^def-4-1|Def. §4.1]], [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-3|§4.3]], [[§2 Topological Manifolds#^prop-2-5|§2.5]], [[3C Matrices#^ladr-3-57|LADR 3.57]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
+*Uses:* [[§4 The Regular Value Theorem#^def-4-1|Def. §4.1]], [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-3|§4.3]], [[§2 Topological Manifolds#^prop-2-5|§2.5]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
 
 > [!example] Example §4.2: A Level Set in $\mathbb{R}^4$
 > *(Qualifying Review, August 2013; Assignment 2, Problem 3.)* Define
@@ -322,7 +322,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 
 ^pf-4-6
 
-*Uses:* [[3B Null Spaces and Ranges#^ladr-3-18|LADR 3.18]], [[2B Bases#^ladr-2-26|LADR 2.26]], [[3C Matrices#^ladr-3-58|LADR 3.58]]
+*Uses:* [[§8 Null Spaces and Ranges#^ladr-3-18|LADR 3.18]], [[§5 Bases#^ladr-2-26|LADR 2.26]], [[§9 Matrices#^ladr-3-58|LADR 3.58]]
 
 > [!theorem] Corollary §4.7: Holomorphic Regular Value Theorem
 > Let $W \subseteq \mathbb{C}^{n+k}$ be open, $F : W \to \mathbb{C}^k$ holomorphic, and $c \in \mathbb{C}^k$ such that the complex Jacobian $F'(p)$ has complex rank $k$ at every $p \in F^{-1}(c)$. Then $F^{-1}(c)$ is a manifold of *real* dimension $2n$, smooth by [[§9 Manifolds in Euclidean Space#^prop-9-2|Proposition §9.2]]. Moreover, for any holomorphic $F$ the real rank of $DF_p$ is even at every point; for $k = 1$ it is $0$ or $2$. And for $p \in F^{-1}(c)$ the kernel of $F'(p)$ is a complex subspace of $\mathbb{C}^{n+k}$; by [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-3|Theorem §11.3]] it is the geometric tangent space $T^{\mathrm{geo}}_p F^{-1}(c)$.
@@ -336,7 +336,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 
 ^pf-4-7
 
-*Uses:* [[§4 The Regular Value Theorem#^lem-4-6|§4.6]], [[§4 The Regular Value Theorem#^def-4-3|Def. §4.3]], [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-3|§4.3]], [[3B Null Spaces and Ranges#^ladr-3-13|LADR 3.13]]
+*Uses:* [[§4 The Regular Value Theorem#^lem-4-6|§4.6]], [[§4 The Regular Value Theorem#^def-4-3|Def. §4.3]], [[§4 The Regular Value Theorem#^def-4-2|Def. §4.2]], [[§4 The Regular Value Theorem#^thm-4-3|§4.3]], [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]]
 
 > [!remark] Remark: The Example Re-read
 > For $f(z,w) = z^2 - w^2 + 2w$ the complex Jacobian is the row $(2z,\ 2 - 2w)$. In the notation of [[§4 The Regular Value Theorem#^ex-4-2|Example §4.2]], $2z = a + ib$ and $2 - 2w = c - id$, and the $\mathbb{C}$-linear functional $(h, k) \mapsto (a+ib)h + (c-id)k$ has real and imaginary parts

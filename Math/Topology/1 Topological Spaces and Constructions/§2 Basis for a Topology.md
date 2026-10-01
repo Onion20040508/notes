@@ -27,7 +27,7 @@ tags: [topology, math590]
 > - Bases for constructions: [[§3 Order Topology#^def-3-4|Order Topology]], [[§4 Product Topology#^thm-4-1|Basis for Product Topology]], [[§5 Subspace Topology#^lem-5-1|Basis for Subspace Topology]].
 
 > [!remark] Remark: Why Bases?
-> Specifying a topology means listing *all* open sets—often an unwieldy collection. A basis is an efficient generating set: you describe a small, concrete family $\mathcal{B}$, and the topology is determined as “all unions of basis elements.” This is analogous to how a [[2B Bases#^ladr-2-26|basis in linear algebra]] generates the whole vector space: you work with the small set and get the rest for free. In practice, nearly every topology you encounter (standard, order, product, metric) is defined by specifying a basis rather than the full topology.
+> Specifying a topology means listing *all* open sets—often an unwieldy collection. A basis is an efficient generating set: you describe a small, concrete family $\mathcal{B}$, and the topology is determined as “all unions of basis elements.” This is analogous to how a [[§5 Bases#^ladr-2-26|basis in linear algebra]] generates the whole vector space: you work with the small set and get the rest for free. In practice, nearly every topology you encounter (standard, order, product, metric) is defined by specifying a basis rather than the full topology.
 
 ^rem-2-1
 

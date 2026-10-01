@@ -122,14 +122,14 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 The results from other subjects that this course's proofs and definitions cite most, with the number of citing items. Each chapter note gives per-chapter counts; each hub note lists its own cross-subject dependencies. The group theory summarized in [[§21 Algebra Prerequisites꞉ Groups|Topology §21]] is developed here in full.
 
 **[[Linear Algebra]]**
-- [[9C Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (4)
-- [[9C Determinants#^ladr-9-50|9.50 Invertible ⟺ nonzero determinant]] (3)
-- [[3A Vector Space of Linear Maps#^ladr-3-4|3.4 Linear map lemma]] (3)
-- [[9C Determinants#^ladr-9-57|9.57 Helpful results in evaluating determinants]] (3)
-- [[3C Matrices#^ladr-3-43|3.43 Matrix of product of linear maps]] (2)
-- [[3C Matrices#^ladr-3-31|3.31 Matrix of a linear map, M(T)]] (2)
-- [[9C Determinants#^ladr-9-44|9.44 Determinants of matrices (p. 355)]] (2)
-- [[2A Span and Linear Independence#^ladr-2-15|2.15 Linearly independent]] (1)
+- [[§34 Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (4)
+- [[§34 Determinants#^ladr-9-50|9.50 Invertible ⟺ nonzero determinant]] (3)
+- [[§7 Vector Space of Linear Maps#^ladr-3-4|3.4 Linear map lemma]] (3)
+- [[§34 Determinants#^ladr-9-57|9.57 Helpful results in evaluating determinants]] (3)
+- [[§9 Matrices#^ladr-3-43|3.43 Matrix of product of linear maps]] (2)
+- [[§9 Matrices#^ladr-3-31|3.31 Matrix of a linear map, M(T)]] (2)
+- [[§34 Determinants#^ladr-9-44|9.44 Determinants of matrices (p. 355)]] (2)
+- [[§4 Span and Linear Independence#^ladr-2-15|2.15 Linearly independent]] (1)
 
 **[[Single Variable Analysis]]**
 - [[§1 The Set ℕ of Natural Numbers#^thm-1-1|Theorem §1.1: Principle of Mathematical Induction]] (10)

@@ -1381,7 +1381,7 @@ We present three different proofs, each offering a distinct perspective:
 > \boldsymbol{\alpha} = (ah, ch), \quad \boldsymbol{\beta} = (bk, dk).
 > $$
 >
-> The area of the parallelogram is $|\det(\boldsymbol{\alpha}, \boldsymbol{\beta})|$ ([[9C Determinants#^ladr-9-61|LADR 9.61]]):
+> The area of the parallelogram is $|\det(\boldsymbol{\alpha}, \boldsymbol{\beta})|$ ([[§34 Determinants#^ladr-9-61|LADR 9.61]]):
 >
 > $$
 > \text{Area} = \left| \det \begin{pmatrix} ah & bk \\ ch & dk \end{pmatrix} \right| = |adhk - bchk| = |ad - bc| \cdot hk = |J| \cdot hk.
@@ -1636,7 +1636,7 @@ We present three different proofs, each offering a distinct perspective:
 
 ^pf-15-14
 
-*Uses:* [[9C Determinants#^ladr-9-61|LADR 9.61]], [[§6 Differentiability#^def-6-2|Def. §6.2]], [[§13 The Inverse Function Theorem#^def-13-1|Def. §13.1]], [[Mean Value Theorem|451 §29.3]], [[§15 Compact Spaces#^rem-15-1|590 §15 Rem. (uniform continuity on compact sets)]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[§15 Multivariable Integration#^thm-15-1|§15.1]], [[§15 Multivariable Integration#^def-15-9|Def. §15.9]], [[§15 Multivariable Integration#^def-15-11|Def. §15.11]], [[§15 Multivariable Integration#^rem-15-6|§15 Rem. (Evaluating the Integral)]]
+*Uses:* [[§34 Determinants#^ladr-9-61|LADR 9.61]], [[§6 Differentiability#^def-6-2|Def. §6.2]], [[§13 The Inverse Function Theorem#^def-13-1|Def. §13.1]], [[Mean Value Theorem|451 §29.3]], [[§15 Compact Spaces#^rem-15-1|590 §15 Rem. (uniform continuity on compact sets)]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[§15 Multivariable Integration#^thm-15-1|§15.1]], [[§15 Multivariable Integration#^def-15-9|Def. §15.9]], [[§15 Multivariable Integration#^def-15-11|Def. §15.11]], [[§15 Multivariable Integration#^rem-15-6|§15 Rem. (Evaluating the Integral)]]
 
 ![[m452-15-9.svg]]
 *Step 3 of the first proof. The linearized map $L$ sends the small square $R$ to the parallelogram $P$ (red, dashed) of area $|J|\,hk$. Each point of $\Phi(R)$ lies within $r = 2\sqrt2\,\varepsilon/2^m$ of the corresponding point of $P$, as at the top corner (dashed circle of radius $r$). So the boundary of $\Phi(R)$ (blue) stays inside the band of width $r$ around $\partial P$ (gray). The two areas can differ only by the area of that band, at most $\text{perimeter}(P) \cdot r + \pi r^2 = O(\varepsilon/2^{2m})$. That is small even compared with $\text{Area}(P) \sim 1/2^{2m}$.*
@@ -1918,13 +1918,13 @@ We present three different proofs, each offering a distinct perspective:
 
 ^pf-15-14-3
 
-*Uses:* [[§15 Multivariable Integration#^lem-15-13|§15.13]], [[§12 The Implicit Function Theorem#^thm-12-2|§12.2]], [[§15 Multivariable Integration#^thm-15-4|§15.4]], [[§15 Multivariable Integration#^thm-15-9|§15.9]], [[§10 Composition of Functions and the Chain Rule#^rem-10-4|§10 Rem. (Chain Rule for Jacobians)]], [[9C Determinants#^ladr-9-49|LADR 9.49]]
+*Uses:* [[§15 Multivariable Integration#^lem-15-13|§15.13]], [[§12 The Implicit Function Theorem#^thm-12-2|§12.2]], [[§15 Multivariable Integration#^thm-15-4|§15.4]], [[§15 Multivariable Integration#^thm-15-9|§15.9]], [[§10 Composition of Functions and the Chain Rule#^rem-10-4|§10 Rem. (Chain Rule for Jacobians)]], [[§34 Determinants#^ladr-9-49|LADR 9.49]]
 
 ![[m452-15-10.svg]]
 *The decomposition behind the second and third proofs. A $C^1$ map with $J \neq 0$ factors into two primitive maps, each of which changes one coordinate only. First, Type II: $(u, v) \mapsto (x, v)$ with $x = \Psi(u, v)$, so points slide horizontally and the lines $v = \text{const}$ (green) stay horizontal. Then Type I: $(x, v) \mapsto (x, y)$ with $y = \Phi(v, x)$, so points slide vertically (red dot: hollow before, filled after each step). Each step is a family of 1D substitutions ([[§15 Multivariable Integration#^lem-15-13|Lemma §15.13]]) in one variable. Integrating over the other variable with Fubini gives factors $\Psi_u$ and $\Phi_v$, and their product is the full Jacobian.*
 
 > [!remark]- Connections
-> - The linear case (Part I of the first proof) is [[9C Determinants#^ladr-9-61|LADR 9.61]]: $T$ changes volume by the factor $|\det T|$; the $C^1$ case is this applied to the derivative cell by cell.
+> - The linear case (Part I of the first proof) is [[§34 Determinants#^ladr-9-61|LADR 9.61]]: $T$ changes volume by the factor $|\det T|$; the $C^1$ case is this applied to the derivative cell by cell.
 > - Generalizes the 1D substitution rule ([[§15 Multivariable Integration#^lem-15-13|Lemma §15.13]]) and the [[§15 Multivariable Integration#^thm-15-7|polar formula]]; extended to Jordan measurable domains in [[Change of Variables Formula (multiple integrals)|Theorem §15.17]] and to $\mathbb{R}^n$ in [[§15 Multivariable Integration#^thm-15-20|Theorem §15.20]].
 > - In forms language the integrand $f\,|J|\,du\,dv$ is the pullback $\Phi^*(f\,dx \wedge dy)$ (up to orientation): [[§22 The Algebra of Differential Forms#^ex-22-4|Ex. §22.4]].
 
@@ -1940,7 +1940,7 @@ We present three different proofs, each offering a distinct perspective:
 ^rem-15-14
 
 > [!remark]- Connections
-> - The linear-algebra picture: [[9C Determinants#^ladr-9-61|LADR 9.61]] (volume scales by $|\det T|$) and its orientation remark; $\det$ as signed volume.
+> - The linear-algebra picture: [[§34 Determinants#^ladr-9-61|LADR 9.61]] (volume scales by $|\det T|$) and its orientation remark; $\det$ as signed volume.
 
 ### Extension to General Domains
 
@@ -2118,7 +2118,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 ^prop-15-19
 
 > [!remark]- Connections
-> - This is [[9C Determinants#^ladr-9-61|LADR 9.61]] ($T$ changes volume by factor of $|\det T|$), proved there via polar decomposition and singular values ([[9C Determinants#^ladr-9-60|LADR 9.60]]); the matrix and operator determinants agree by [[9C Determinants#^ladr-9-53|LADR 9.53]].
+> - This is [[§34 Determinants#^ladr-9-61|LADR 9.61]] ($T$ changes volume by factor of $|\det T|$), proved there via polar decomposition and singular values ([[§34 Determinants#^ladr-9-60|LADR 9.60]]); the matrix and operator determinants agree by [[§34 Determinants#^ladr-9-53|LADR 9.53]].
 > - For $n = 2$ this is Part I of the first proof of [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14]].
 
 This proposition explains why the Jacobian determinant appears in the change of variables formula: locally, the transformation $\Phi$ is approximated by its linearization $J_\Phi$ ([[§6 Differentiability#^def-6-2|Def. §6.2]]), and $|\det(J_\Phi)| = |J|$ measures the local volume distortion.
@@ -2141,7 +2141,7 @@ This proposition explains why the Jacobian determinant appears in the change of 
 The proof follows the same structure as the 2D case ([[§15 Multivariable Integration#^pf-15-14-3|Proof 3]] generalizes most directly: decompose into $n$ primitive transformations).
 
 > [!remark]- Connections
-> - Linear-algebra core: [[9C Determinants#^ladr-9-61|LADR 9.61]] for the local volume factor and [[9C Determinants#^ladr-9-49|LADR 9.49]] (det is multiplicative) for composing primitive transformations.
+> - Linear-algebra core: [[§34 Determinants#^ladr-9-61|LADR 9.61]] for the local volume factor and [[§34 Determinants#^ladr-9-49|LADR 9.49]] (det is multiplicative) for composing primitive transformations.
 > - In $\mathbb{R}^3$: the spherical volume element used in [[§19 The Laplacian in Spherical Coordinates|§19]]; for general dimension it underlies the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] and, as pullback of $n$-forms, the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]].
 
 ### Common Coordinate Systems and Worked Examples

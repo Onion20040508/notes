@@ -32,7 +32,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|590 Def. §21.13 (Cosets and Quotient Group)]].
-> - Linear-algebra analogue of a coset $v + U$: [[3E Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97 (Translate)]].
+> - Linear-algebra analogue of a coset $v + U$: [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97 (Translate)]].
 
 > [!theorem] Proposition §26.1: Cosets Are Orbits
 > Let $H$ be a subgroup of $G$.

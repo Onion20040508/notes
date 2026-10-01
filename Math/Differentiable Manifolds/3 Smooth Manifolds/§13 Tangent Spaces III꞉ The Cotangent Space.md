@@ -32,7 +32,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 *The differential of a function is its pushforward followed by the permanent identification of every tangent space of $\mathbb{R}$ with $\mathbb{R}$; so $df_p$ is the pushforward $f_{*p}$ under another name. The notation $T_p^*M$ puts the star on the $T$ “to save some ink.”*
 
 > [!remark]- Connections
-> - The linear algebra: the dual space is [[3F Duality#^ladr-3-110|LADR 3.110]].
+> - The linear algebra: the dual space is [[§12 Duality#^ladr-3-110|LADR 3.110]].
 > - In multivariable calculus: [[§8 The Differential#^def-8-1|452 Def. §8.1]] and [[§22 The Algebra of Differential Forms#^prop-22-6|452 §22.6 (gradient = differential = 1-form)]].
 > - Assembled over all of $M$: the cotangent bundle, [[§17 The Tangent Bundle#^def-17-5|Def. §17.5]].
 
@@ -66,10 +66,10 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 
 ^pf-13-2
 
-*Uses:* [[§13 Tangent Spaces III꞉ The Cotangent Space#^prop-13-1|§13.1]], [[§10 Vector Spaces and Matrix Groups#^def-10-1|Def. §10.1]], [[§10 Vector Spaces and Matrix Groups#^prop-10-1|§10.1]], [[§10 Vector Spaces and Matrix Groups#^prop-10-2|§10.2]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|§12.22]], [[3F Duality#^ladr-3-112|LADR 3.112]], [[Linear map lemma|LADR 3.4]]
+*Uses:* [[§13 Tangent Spaces III꞉ The Cotangent Space#^prop-13-1|§13.1]], [[§10 Vector Spaces and Matrix Groups#^def-10-1|Def. §10.1]], [[§10 Vector Spaces and Matrix Groups#^prop-10-1|§10.1]], [[§10 Vector Spaces and Matrix Groups#^prop-10-2|§10.2]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|§12.22]], [[§12 Duality#^ladr-3-112|LADR 3.112]], [[Linear map lemma|LADR 3.4]]
 
 > [!remark]- Connections
-> - The dual basis and its coefficients: [[3F Duality#^ladr-3-112|LADR 3.112]], [[3F Duality#^ladr-3-114|LADR 3.114]], [[3F Duality#^ladr-3-116|LADR 3.116]].
+> - The dual basis and its coefficients: [[§12 Duality#^ladr-3-112|LADR 3.112]], [[§12 Duality#^ladr-3-114|LADR 3.114]], [[§12 Duality#^ladr-3-116|LADR 3.116]].
 
 > [!theorem] Corollary §13.3: Properties of the Differential of a Function
 > Let $f, g$ be smooth near $p$ and $a, b \in \mathbb{R}$. Then
@@ -125,7 +125,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 ^def-13-2
 
 > [!remark]- Connections
-> - The quotient space construction: [[3E Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]].
+> - The quotient space construction: [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]].
 
 > [!theorem] Proposition §13.4: Germs Vanishing to Second Order
 > For $[f] \in C_p^\infty(M)$ the following are equivalent:

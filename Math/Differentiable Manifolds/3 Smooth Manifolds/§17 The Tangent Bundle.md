@@ -136,13 +136,13 @@ The same argument, word for word, builds the topology of the cotangent bundle ([
 
 ^pf-17-3
 
-*Uses:* [[§17 The Tangent Bundle#^def-17-2|Def. §17.2]], [[§8 Differentiable Structures#^def-8-4|Def. §8.4]], [[§8 Differentiable Structures#^def-8-6|Def. §8.6]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-16|§12.16]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-21|§12.21]], [[3D Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]]
+*Uses:* [[§17 The Tangent Bundle#^def-17-2|Def. §17.2]], [[§8 Differentiable Structures#^def-8-4|Def. §8.4]], [[§8 Differentiable Structures#^def-8-6|Def. §8.6]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-16|§12.16]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-21|§12.21]], [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]]
 
 ![[m591-17-3.svg]]
 *The transition map of the charts $\tilde\varphi$ and $\tilde\psi$ of $TM$, as drawn in lecture over a point $(p, v)$ of $TU \cap TV$.*
 
 > [!remark]- Connections
-> - The same expansion of coordinate derivations: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-24|Change of Coordinates, §12.24]]; the Jacobian matrix in 452: [[§13 The Inverse Function Theorem#^def-13-1|452 §13.1]]; change of basis: [[3D Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
+> - The same expansion of coordinate derivations: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-24|Change of Coordinates, §12.24]]; the Jacobian matrix in 452: [[§13 The Inverse Function Theorem#^def-13-1|452 §13.1]]; change of basis: [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
 
 The transition map of $TM$, in one line: the base point moves by the transition map of $M$, and the vector by its Jacobian. This is Uribe's identity at work once more — the partials $\partial y^i/\partial x^j$, taken upstairs on $M$, are the Jacobian downstairs.
 
@@ -161,7 +161,7 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 
 ^pf-17-4
 
-*Uses:* [[§17 The Tangent Bundle#^def-17-2|Def. §17.2]], [[§17 The Tangent Bundle#^prop-17-2|§17.2]], [[§17 The Tangent Bundle#^prop-17-3|§17.3]], [[§8 Differentiable Structures#^def-8-14|Def. §8.14]], [[§8 Differentiable Structures#^def-8-17|Def. §8.17]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-14|§12.14]], [[§16 Fibrations#^def-16-1|Def. §16.1]], [[§15 Submanifolds#^def-15-1|Def. §15.1]], [[3D Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]]
+*Uses:* [[§17 The Tangent Bundle#^def-17-2|Def. §17.2]], [[§17 The Tangent Bundle#^prop-17-2|§17.2]], [[§17 The Tangent Bundle#^prop-17-3|§17.3]], [[§8 Differentiable Structures#^def-8-14|Def. §8.14]], [[§8 Differentiable Structures#^def-8-17|Def. §8.17]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-14|§12.14]], [[§16 Fibrations#^def-16-1|Def. §16.1]], [[§15 Submanifolds#^def-15-1|Def. §15.1]], [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]]
 
 > [!remark] Remark: Vector Bundles
 > $TM$ is in fact a *vector bundle*: a fibration whose fibres are vector spaces, with trivializations that are linear isomorphisms on each fibre. Uribe postponed the general definition — “it takes another 10 minutes of axioms” — but these are the two features: “the fibres are abstract vector spaces, and you can find trivializations which restrict to linear isomorphisms fibrewise.” Vector bundles are “fun objects” in their own right; K-theory is built from them.
@@ -216,7 +216,7 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 ^def-17-5
 
 > [!remark]- Connections
-> - The fibre $T_p^*M$ is a dual space, [[3F Duality#^ladr-3-110|LADR 3.110]], and the chart uses the dual basis, [[3F Duality#^ladr-3-112|LADR 3.112]]. Counterpart in 452: differential forms on $\mathbb{R}^n$, [[§21 Introduction to Differential Forms#^def-21-1|452 §21.1]].
+> - The fibre $T_p^*M$ is a dual space, [[§12 Duality#^ladr-3-110|LADR 3.110]], and the chart uses the dual basis, [[§12 Duality#^ladr-3-112|LADR 3.112]]. Counterpart in 452: differential forms on $\mathbb{R}^n$, [[§21 Introduction to Differential Forms#^def-21-1|452 §21.1]].
 
 > [!theorem] Proposition §17.5: The Cotangent Transition Maps
 > For charts $\varphi = (x^i)$ and $\psi = (y^j)$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
@@ -236,9 +236,9 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 
 ^pf-17-5
 
-*Uses:* [[§17 The Tangent Bundle#^def-17-5|Def. §17.5]], [[§13 Tangent Spaces III꞉ The Cotangent Space#^def-13-1|Def. §13.1]], [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|§13.2]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-23|§12.23]], [[§17 The Tangent Bundle#^prop-17-3|§17.3]], [[§17 The Tangent Bundle#^cor-17-4|§17.4]], [[Multivariable Chain Rule|452 §10.2]], [[3F Duality#^ladr-3-132|LADR 3.132]]
+*Uses:* [[§17 The Tangent Bundle#^def-17-5|Def. §17.5]], [[§13 Tangent Spaces III꞉ The Cotangent Space#^def-13-1|Def. §13.1]], [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|§13.2]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-23|§12.23]], [[§17 The Tangent Bundle#^prop-17-3|§17.3]], [[§17 The Tangent Bundle#^cor-17-4|§17.4]], [[Multivariable Chain Rule|452 §10.2]], [[§12 Duality#^ladr-3-132|LADR 3.132]]
 
 > [!remark]- Connections
-> - The matrix of a dual map in dual bases is the transpose: [[3F Duality#^ladr-3-132|LADR 3.132]].
+> - The matrix of a dual map in dual bases is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].
 
 “We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.” $TM$ and $T^*M$ are isomorphic as vector bundles, “but not naturally isomorphic — we have to make choices to construct an isomorphism” (a metric, for instance, as in the [[§15 Submanifolds#^rem-15-1|remark on conormal spaces]]). This is stated, not proved, here.

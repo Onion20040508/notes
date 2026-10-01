@@ -80,7 +80,7 @@ tags: [topology, math590]
 ^def-21-2
 
 > [!remark]- Connections
-> - Linear-algebra analogue: [[1C Subspaces#^ladr-1-34|Conditions for a subspace]].
+> - Linear-algebra analogue: [[§3 Subspaces#^ladr-1-34|Conditions for a subspace]].
 > - Developed in full in Group Theory: [[§4 Subgroups#^def-4-1|493 Def. §4.1]], with the one-step test in [[Subgroup Criteria]].
 
 > [!theorem] Proposition §21.1: Properties Inherited by Subgroups
@@ -147,7 +147,7 @@ tags: [topology, math590]
 *Uses:* [[§21 Algebra Prerequisites꞉ Groups#^def-21-3|Def. §21.3]]
 
 > [!remark]- Connections
-> - Linear-algebra version of (1): [[3A Vector Space of Linear Maps#^ladr-3-10|Linear maps take 0 to 0]].
+> - Linear-algebra version of (1): [[§7 Vector Space of Linear Maps#^ladr-3-10|Linear maps take 0 to 0]].
 > - 493 counterpart: [[§15 Homomorphisms#^prop-15-1|493 Prop. §15.1]].
 
 > [!remark] Remark
@@ -174,7 +174,7 @@ tags: [topology, math590]
 ^pf-21-4
 
 > [!remark]- Connections
-> - Linear-algebra version: [[3D Invertibility and Isomorphisms#^ladr-3-63|Invertibility ⟺ injectivity and surjectivity]].
+> - Linear-algebra version: [[§10 Invertibility and Isomorphisms#^ladr-3-63|Invertibility ⟺ injectivity and surjectivity]].
 
 > [!remark] Remark
 > This is the standard technique for proving bijectivity in algebraic topology: construct two maps, show they compose to the identity in both orders. It appears repeatedly: the [[Basepoint Independence of π₁|basepoint independence isomorphism]] ([[§23 The Fundamental Group|§23]]), the [[§23 The Fundamental Group#^cor-23-6|functorial corollary]] that $\pi_1$ is a topological invariant ([[§23 The Fundamental Group|§23]]), and the [[Deformation Retract Induces Isomorphism on π₁|deformation retract theorem]] ([[§26 Deformation Retracts and Homotopy Type|§26]]) all use exactly this pattern.
@@ -187,7 +187,7 @@ tags: [topology, math590]
 ^def-21-4
 
 > [!remark]- Connections
-> - Linear-algebra version: [[3D Invertibility and Isomorphisms#^ladr-3-69|Isomorphism, isomorphic]].
+> - Linear-algebra version: [[§10 Invertibility and Isomorphisms#^ladr-3-69|Isomorphism, isomorphic]].
 > - 493 counterpart: [[§16 Isomorphisms#^def-16-1|493 Def. §16.1]], with isomorphism invariants in [[§16 Isomorphisms#^prop-16-5|493 §16.5]].
 
 > [!theorem] Theorem §21.5: Inverse of an Isomorphism is a Homomorphism
@@ -276,7 +276,7 @@ tags: [topology, math590]
 ^def-21-5
 
 > [!remark]- Connections
-> - Linear-algebra version: [[3E Products and Quotients of Vector Spaces#^ladr-3-87|Product of vector spaces]].
+> - Linear-algebra version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|Product of vector spaces]].
 > - Appears as $\pi_1$ of a product: [[§23 The Fundamental Group#^thm-23-7|π₁ of a Product Space]].
 > - 493 counterpart: [[§3 Basic Examples of Groups#^def-3-2|493 Def. §3.2]], with its universal property in [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|493 §18.3]].
 
@@ -334,7 +334,7 @@ tags: [topology, math590]
 ^def-21-6
 
 > [!remark]- Connections
-> - Linear-algebra versions: [[3B Null Spaces and Ranges#^ladr-3-11|Null space, null T]] (the kernel) and [[3B Null Spaces and Ranges#^ladr-3-16|Range]] (the image).
+> - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]] (the kernel) and [[§8 Null Spaces and Ranges#^ladr-3-16|Range]] (the image).
 > - 493 counterpart: [[§15 Homomorphisms#^def-15-2|493 Def. §15.2]]; injectivity via the kernel in [[Injective iff Trivial Kernel]].
 
 > [!theorem] Proposition §21.8
@@ -354,7 +354,7 @@ tags: [topology, math590]
 *Uses:* [[§21 Algebra Prerequisites꞉ Groups#^thm-21-3|§21.3]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-2|Def. §21.2]]
 
 > [!remark]- Connections
-> - Linear-algebra versions: [[3B Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]], [[3B Null Spaces and Ranges#^ladr-3-18|The range is a subspace]], [[3B Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]].
+> - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]], [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]], [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]].
 
 > [!theorem] Proposition §21.9: Injective Homomorphisms Preserve Subgroup Structure
 > Let $f: G \to G'$ be an injective homomorphism. Then:
@@ -585,7 +585,7 @@ tags: [topology, math590]
 ^def-21-11
 
 > [!remark]- Connections
-> - Vector-space version of the first isomorphism theorem: [[First isomorphism theorem]] (with [[3E Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]]).
+> - Vector-space version of the first isomorphism theorem: [[First isomorphism theorem]] (with [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]]).
 > - Why $\ker(h)$ is normal: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-17|Remark after Definition §21.12]]; the quotient $F/N$: [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|Cosets and Quotient Group]].
 
 > [!remark] Remark: Reading the $\langle \mid \rangle$ Notation
@@ -671,7 +671,7 @@ The notation $\langle a, b \mid r \rangle$ means “force $r = e$.” But what d
 ^def-21-13
 
 > [!remark]- Connections
-> - Linear-algebra versions: cosets ↔ [[3E Products and Quotients of Vector Spaces#^ladr-3-97|Translate]], $G/N$ ↔ [[3E Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]], $p$ ↔ [[3E Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]].
+> - Linear-algebra versions: cosets ↔ [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|Translate]], $G/N$ ↔ [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]], $p$ ↔ [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]].
 > - Topological version: [[§12 Quotient Topology#^def-12-3|Quotient Space]].
 > - Developed in full in Group Theory: cosets in [[§26 Left and Right Cosets#^def-26-2|493 Def. §26.2]] ([[Cosets Partition a Group]]) and quotient groups in [[§37 Quotient Groups#^def-37-1|493 Def. §37.1]] ([[Quotient Groups]]).
 

@@ -185,7 +185,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§6 Group Actions and Orbit Spaces#^ex-6-5|Ex. §6.5]], [[§6 Group Actions and Orbit Spaces#^def-6-5|Def. §6.5]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^cor-3-19|§3.19]], [[Universal Property of Quotient Maps]]
 
 > [!remark]- Connections
-> - The same orbits for $\mathrm{O}_3$, with the orthonormal-basis argument and the bijection with the radius: [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|493 §30.2]], [[§25 Orbits#^def-25-2|493 Def. §25.2]]; extending to an orthonormal basis is [[6B Orthonormal Bases#^ladr-6-36|LADR 6.36]] ([[Gram–Schmidt procedure]]).
+> - The same orbits for $\mathrm{O}_3$, with the orthonormal-basis argument and the bijection with the radius: [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|493 §30.2]], [[§25 Orbits#^def-25-2|493 Def. §25.2]]; extending to an orthonormal basis is [[§20 Orthonormal Bases#^ladr-6-36|LADR 6.36]] ([[Gram–Schmidt procedure]]).
 > - With $r = 1$ this is the transitivity used in [[§7 Homogeneous Spaces#^ex-7-3|The Sphere as a Homogeneous Space, §7.3]].
 
 > [!remark] Remark

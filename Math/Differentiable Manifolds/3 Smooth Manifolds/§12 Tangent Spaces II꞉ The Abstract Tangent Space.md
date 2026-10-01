@@ -265,7 +265,7 @@ Point (1) of the [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12
 
 ^pf-def-12-7
 
-*Uses:* [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-6|Def. §12.6]], [[1B Definition of Vector Space#^ladr-1-20|LADR 1.20]]
+*Uses:* [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-6|Def. §12.6]], [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]
 
 > [!remark]- Connections
 > - The geometric tangent space it replaces: [[§11 Tangent Spaces I꞉ The Geometric Picture#^def-11-1|Def. §11.1]]; the two agree by [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-8|§12.8]].
@@ -430,7 +430,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 *Above, the definition as a diagram: $F_{*p}D = D \circ F_p^*$, a derivation at $F(p)$ obtained by first pulling the germ back to $p$ and then applying $D$. Below, the directions. Points move forward along $F$; functions move backward, since a function on $N$ composed with $F$ is a function on $M$; and derivations, being dual to functions, reverse the arrow once more and move forward again.*
 
 > [!remark]- Connections
-> - Pushforward as the transpose of pullback: [[3F Duality#^ladr-3-118|LADR 3.118 (dual map)]]; 591's version, [[§10 Vector Spaces and Matrix Groups#^def-10-2|Def. §10.2]].
+> - Pushforward as the transpose of pullback: [[§12 Duality#^ladr-3-118|LADR 3.118 (dual map)]]; 591's version, [[§10 Vector Spaces and Matrix Groups#^def-10-2|Def. §10.2]].
 > - On open subsets of Euclidean space it is the Jacobian: [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-25|§12.25]]; the calculus differential, [[§8 The Differential#^def-8-1|452 Def. §8.1]].
 
 > [!theorem] Proposition §12.10: The Differential Is a Linear Map of Abstract Tangent Spaces
@@ -503,7 +503,7 @@ The board justified the derivation property with “since $F_p^*$ is a ring morp
 
 > [!remark]- Connections
 > - The chain rule of calculus: [[Multivariable Chain Rule|452 §10.2 (Multivariable Chain Rule)]].
-> - Duals compose in the opposite order, $(ST)' = T'S'$: [[3F Duality#^ladr-3-120|LADR 3.120]]; 591's version, [[§10 Vector Spaces and Matrix Groups#^prop-10-4|§10.4]].
+> - Duals compose in the opposite order, $(ST)' = T'S'$: [[§12 Duality#^ladr-3-120|LADR 3.120]]; 591's version, [[§10 Vector Spaces and Matrix Groups#^prop-10-4|§10.4]].
 
 **Lecture 10.** Uribe stated this as the Chain Rule and proved the pullback identity $(G \circ F)_p^* = F_p^* \circ G_{F(p)}^*$ on the board — “see, you know that this is the right point of view when proofs become one line” — leaving the dualization as an exercise; the displayed computation above is that exercise. Pullbacks compose in the *opposite* order, so pushforwards, being their duals, compose in the *same* order as the maps. (The theorem appeared here, ahead of the lecture, because the two results below depend on it.)
 
@@ -779,7 +779,7 @@ $$
 *The proof in one diagram — the defining triangle of the pushforward, for the chart. Downstairs the Euclidean formula computes $\tilde D$ on everything; the two pullback identities displayed under the diagram carry the answer back upstairs, turning $\tilde D[r^i]$ into $D[x^i]$ and $\tilde D[f_\varphi]$ into $D[f]$.*
 
 > [!remark]- Connections
-> - The coefficients $D[x^i]$ are the values of the dual basis $dx^i|_p$: [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|§13.2]]; cf. [[3F Duality#^ladr-3-114|LADR 3.114]].
+> - The coefficients $D[x^i]$ are the values of the dual basis $dx^i|_p$: [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|§13.2]]; cf. [[§12 Duality#^ladr-3-114|LADR 3.114]].
 > - The components in the coordinate basis give the charts of the tangent bundle: [[§17 The Tangent Bundle#^def-17-2|Def. §17.2]].
 
 **Reconciliation with the lecture.** This is the lecture's proof, in the lecture's order of ideas but with the pushforward defined before it is used rather than after. Two details of the board version. It opens with “$\forall\, [f] \in I_p$”: restricting to germs vanishing at $p$ is harmless, since $D[f] = D[f - f(p)]$ by Lemma [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^lem-12-6|§12.6]](1), but the argument works verbatim for every germ. And the notes had filled in a proof of this theorem before Lecture 9, via two reduction lemmas; those were the pushforward by an inclusion and by the chart in disguise, and they now appear as Lemma [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^lem-12-13|§12.13]] and Corollary [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-12|§12.12]].
@@ -888,10 +888,10 @@ $$
 
 ^pf-12-22
 
-*Uses:* [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-10|§12.10]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-16|§12.16]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-10|Def. §12.10]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-21|§12.21]], [[3C Matrices#^ladr-3-31|LADR 3.31]]
+*Uses:* [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-10|§12.10]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-16|§12.16]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^def-12-10|Def. §12.10]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-21|§12.21]], [[§9 Matrices#^ladr-3-31|LADR 3.31]]
 
 > [!remark]- Connections
-> - The matrix of a linear map with respect to bases: [[3C Matrices#^ladr-3-31|LADR 3.31]]; the Jacobian matrix of calculus: [[§6 Differentiability#^def-6-2|452 Def. §6.2]].
+> - The matrix of a linear map with respect to bases: [[§9 Matrices#^ladr-3-31|LADR 3.31]]; the Jacobian matrix of calculus: [[§6 Differentiability#^def-6-2|452 Def. §6.2]].
 > - The same statement between vector spaces: [[§10 Vector Spaces and Matrix Groups#^def-10-9|Def. §10.9]].
 
 > [!remark] Remark
@@ -919,13 +919,13 @@ $$
 
 ^pf-12-23
 
-*Uses:* [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-11|§12.11]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|§12.22]], [[3C Matrices#^ladr-3-43|LADR 3.43]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-11|§12.11]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|§12.22]], [[§9 Matrices#^ladr-3-43|LADR 3.43]], [[Multivariable Chain Rule|452 §10.2]]
 
 ![[m591-12-11.svg]]
 *Upstairs the composite of maps between manifolds; downstairs the composite of their coordinate representations. Each square commutes, so the outer rectangle does, and differentiating the bottom row at $\varphi(p)$ multiplies the Jacobians.*
 
 > [!remark]- Connections
-> - The Euclidean chain rule for Jacobians: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|452 §10 (Chain Rule for Jacobians)]]; matrix of a product: [[3C Matrices#^ladr-3-43|LADR 3.43]].
+> - The Euclidean chain rule for Jacobians: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|452 §10 (Chain Rule for Jacobians)]]; matrix of a product: [[§9 Matrices#^ladr-3-43|LADR 3.43]].
 
 > [!theorem] Corollary §12.24: Change of Coordinates
 > If $(U, \varphi)$ and $(\tilde U, \tilde\varphi)$ are two smooth charts at $p$, with coordinates $x^i$ and $\tilde x^j$, then
@@ -948,7 +948,7 @@ $$
 *Uses:* [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-22|§12.22]], [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-11|§12.11]]
 
 > [!remark]- Connections
-> - The change-of-basis formula of linear algebra: [[3D Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
+> - The change-of-basis formula of linear algebra: [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
 > - Transition functions: [[§2 Topological Manifolds#^def-2-4|Def. §2.4]].
 
 > [!example] Example §12.3: Polar Coordinates
@@ -1242,7 +1242,7 @@ Throughout, $p = (p_1, p_2) \in M_1 \times M_2$, and $\iota_1 = \iota^{p_2} : M_
 *The slice inclusions and the projections through $p$. The four identities $\pi_1 \iota_1 = \mathrm{id}$, $\pi_2 \iota_2 = \mathrm{id}$, and $\pi_2 \iota_1$, $\pi_1 \iota_2$ constant, pushed forward to tangent spaces, are the whole proof that $\Psi \circ \Theta = \mathrm{id}$.*
 
 > [!remark]- Connections
-> - Linear algebra of products and direct sums: [[3E Products and Quotients of Vector Spaces#^ladr-3-92|LADR 3.92]] (dimension of a product), [[3E Products and Quotients of Vector Spaces#^ladr-3-93|LADR 3.93]] (products and direct sums).
+> - Linear algebra of products and direct sums: [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|LADR 3.92]] (dimension of a product), [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|LADR 3.93]] (products and direct sums).
 > - The product smooth structure it rests on: [[§8 Differentiable Structures#^prop-8-19|§8.19]]; projections of products are submersions: [[§14 Local Diffeomorphisms and Submersions#^ex-14-4|Ex. §14.4]].
 
 **Partial derivatives in the $M_1$ variables.** For $v \in T_{p_1}M_1$ and a germ $[f]$ at $p$,

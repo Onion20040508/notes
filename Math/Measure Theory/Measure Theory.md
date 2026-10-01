@@ -81,9 +81,9 @@ The results from other subjects that this course's proofs and definitions cite m
 **[[Linear Algebra]]**
 - [[Triangle inequality]] (1)
 - [[Invertible ⟺ nonzero determinant]] (1)
-- [[9C Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (1)
-- [[9C Determinants#^ladr-9-61|9.61 T changes volume by factor of |det T|]] (1)
-- [[1B Definition of Vector Space#^ladr-1-20|1.20 Vector space]] (1)
+- [[§34 Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (1)
+- [[§34 Determinants#^ladr-9-61|9.61 T changes volume by factor of |det T|]] (1)
+- [[§2 Definition of Vector Space#^ladr-1-20|1.20 Vector space]] (1)
 
 ## Workhorse examples
 - [[Cantor set and Cantor function]]

@@ -22,7 +22,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^def-21-3|Homomorphism]] (590 §21.3).
-> - Linear-algebra analogue: [[3A Vector Space of Linear Maps#^ladr-3-1|Linear map]] (LADR 3.1).
+> - Linear-algebra analogue: [[§7 Vector Space of Linear Maps#^ladr-3-1|Linear map]] (LADR 3.1).
 
 > [!theorem] Proposition §15.1: Homomorphisms Preserve Identity and Inverses
 > Let $\varphi: G \to H$ be a group homomorphism. Then $\varphi(e_G) = e_H$, and $\varphi(g^{-1}) = \varphi(g)^{-1}$ for all $g \in G$.
@@ -40,7 +40,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^thm-21-3|Homomorphisms Preserve Identity and Inverses]] (590 §21.3).
-> - Linear-algebra version of the first half: [[3A Vector Space of Linear Maps#^ladr-3-10|Linear maps take 0 to 0]] (LADR 3.10).
+> - Linear-algebra version of the first half: [[§7 Vector Space of Linear Maps#^ladr-3-10|Linear maps take 0 to 0]] (LADR 3.10).
 
 > [!definition] Definition §15.2: Image and Kernel
 > Let $\varphi: G \to H$ be a group homomorphism. The **image** of $\varphi$ is
@@ -59,10 +59,10 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^def-21-6|Kernel and Image]] (590 §21.6).
-> - Linear-algebra versions: [[3B Null Spaces and Ranges#^ladr-3-11|Null space]] (LADR 3.11) and [[3B Null Spaces and Ranges#^ladr-3-16|Range]] (LADR 3.16).
+> - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space]] (LADR 3.11) and [[§8 Null Spaces and Ranges#^ladr-3-16|Range]] (LADR 3.16).
 
 > [!example] Example §15.1: Homomorphisms and Their Kernels
-> 1. $\det: GL_n(\mathbb{R}) \to \mathbb{R}^\times$ is a homomorphism, since $\det(AB) = \det A \det B$ ([[9C Determinants#^ladr-9-49|LADR 9.49]]). Kernel: $SL_n(\mathbb{R}) = \{A : \det A = 1\}$. Image: all of $\mathbb{R}^\times$ (use $\operatorname{diag}(\lambda, 1, \ldots, 1)$).
+> 1. $\det: GL_n(\mathbb{R}) \to \mathbb{R}^\times$ is a homomorphism, since $\det(AB) = \det A \det B$ ([[§34 Determinants#^ladr-9-49|LADR 9.49]]). Kernel: $SL_n(\mathbb{R}) = \{A : \det A = 1\}$. Image: all of $\mathbb{R}^\times$ (use $\operatorname{diag}(\lambda, 1, \ldots, 1)$).
 > 2. Reduction $\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$, $x \mapsto [x]$, is a homomorphism: $[x + y] = [x] + [y]$ is the definition of addition on classes ([[§7 The Group ℤ∕nℤ#^def-7-1|Def. §7.1]]). Kernel: $n\mathbb{Z}$. Image: everything.
 > 3. $\mathbb{R}^\times \to \mathbb{R}_{>0}$, $x \mapsto |x|$, is a homomorphism since $|xy| = |x||y|$. Kernel: $\{\pm 1\}$.
 > 4. $(\mathbb{R}, +) \to \mathbb{R}^\times$, $x \mapsto 10^x$, is a homomorphism since $10^{x+y} = 10^x 10^y$: it converts addition into multiplication. Kernel: $\{0\}$. Image: $\mathbb{R}_{>0}$.
@@ -74,7 +74,7 @@ tags: [group-theory, math493]
 
 ^ex-15-1
 
-*Uses:* [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[9C Determinants#^ladr-9-49|LADR 9.49]], [[§7 The Group ℤ∕nℤ#^def-7-1|Def. §7.1]]
+*Uses:* [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§7 The Group ℤ∕nℤ#^def-7-1|Def. §7.1]]
 
 > [!theorem] Proposition §15.2: Image and Kernel Are Subgroups
 > Let $\varphi: G \to H$ be a group homomorphism. Then $\operatorname{Im}(\varphi)$ is a subgroup of $H$, and $\operatorname{Ker}(\varphi)$ is a subgroup of $G$.
@@ -94,7 +94,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-8|Proposition §21.8]] (590 §21.8).
-> - Linear-algebra versions: [[3B Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]] (LADR 3.13), [[3B Null Spaces and Ranges#^ladr-3-18|The range is a subspace]] (LADR 3.18).
+> - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]] (LADR 3.13), [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]] (LADR 3.18).
 > - Kernels are even normal: [[§36 Sources of Normal Subgroups#^prop-36-2|Kernels Are Normal]] (§36.2).
 
 > [!theorem] Proposition §15.3: Surjectivity and Injectivity via Image and Kernel
@@ -114,7 +114,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-8|Proposition §21.8]] (590 §21.8).
-> - Linear-algebra version: [[3B Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]] (LADR 3.15).
+> - Linear-algebra version: [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]] (LADR 3.15).
 
 > [!example] Example §15.2: $\mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$
 > Since $2^6 = 64 = 9 \cdot 7 + 1 \equiv 1 \pmod 7$, the map $\varphi: \mathbb{Z}/6\mathbb{Z} \to (\mathbb{Z}/7\mathbb{Z})^\times$, $k \mapsto 2^k$, is well-defined, and it is a homomorphism ($2^{k+l} = 2^k 2^l$). Its values are $2^0 = 1$, $2^1 = 2$, $2^2 = 4$, $2^3 = 8 \equiv 1$, $2^4 \equiv 2$, $2^5 \equiv 4$. So

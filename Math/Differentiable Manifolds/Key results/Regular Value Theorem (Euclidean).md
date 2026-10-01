@@ -19,7 +19,7 @@ tags: [differentiable-manifolds, hub]
 - [[§4 The Regular Value Theorem#^def-4-2|Definition §4.2: Regular Point and Regular Value]]
 
 ## Its proof uses (other subjects)
-- [[3C Matrices#^ladr-3-57|LADR 3.57 Column rank equals row rank]]
+- [[§9 Matrices#^ladr-3-57|LADR 3.57 Column rank equals row rank]]
 - [[Multivariable Chain Rule]] (Multivariable Analysis)
 
 ## Used in (Differentiable Manifolds)

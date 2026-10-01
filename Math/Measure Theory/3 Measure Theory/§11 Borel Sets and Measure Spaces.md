@@ -740,7 +740,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 *Uses:* [[§11 Borel Sets and Measure Spaces#^def-11-10|Def. §11.10]], [[§11 Borel Sets and Measure Spaces#^prop-11-16|§11.16]], [[§11 Borel Sets and Measure Spaces#^def-11-11|Def. §11.11]]
 
 > [!remark]- Connections
-> - Linear-algebra analogue: the classes are translates of $\mathbb{Q}$ (a $\mathbb{Q}$-subspace of $\mathbb{R}$), and translates of a subspace are equal or disjoint, [[3E Products and Quotients of Vector Spaces#^ladr-3-101|LADR 3.101]]; the set of classes is a [[3E Products and Quotients of Vector Spaces#^ladr-3-99|quotient space]] (LADR 3.99).
+> - Linear-algebra analogue: the classes are translates of $\mathbb{Q}$ (a $\mathbb{Q}$-subspace of $\mathbb{R}$), and translates of a subspace are equal or disjoint, [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|LADR 3.101]]; the set of classes is a [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|quotient space]] (LADR 3.99).
 
 Let $\{E_\alpha \mid \alpha \in I\}$ be the collection of distinct equivalence classes, where $I$ is some index set. Note that $\bigcup_{\alpha \in I} E_\alpha = [0, 1]$.
 

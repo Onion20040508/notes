@@ -16,7 +16,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^def-21-4|Isomorphism]] (590 §21.4).
-> - Linear-algebra version: [[3D Invertibility and Isomorphisms#^ladr-3-69|Isomorphism, isomorphic]] (LADR 3.69).
+> - Linear-algebra version: [[§10 Invertibility and Isomorphisms#^ladr-3-69|Isomorphism, isomorphic]] (LADR 3.69).
 
 > [!theorem] Proposition §16.1: The Inverse of an Isomorphism Is an Isomorphism
 > Let $\varphi: G \to H$ be a bijective group homomorphism. Then the inverse map $\varphi^{-1}: H \to G$ is also a group homomorphism (hence an isomorphism). Consequently the definition of isomorphism need not require anything of $\varphi^{-1}$.

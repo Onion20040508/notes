@@ -31,7 +31,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§35 No
 
 > [!remark]- Connections
 > - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|Cosets and Quotient Group (590 §21.13)]].
-> - Linear-algebra versions: [[3E Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]] and [[3E Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]]; topological version: [[§12 Quotient Topology#^def-12-3|Quotient Space]].
+> - Linear-algebra versions: [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]] and [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]]; topological version: [[§12 Quotient Topology#^def-12-3|Quotient Space]].
 
 > [!theorem] Theorem §37.1: $G/N$ Is a Group
 > Let $N \trianglelefteq G$. With coset multiplication, $G/N$ is a group, with identity $eN = N$ and inverses $(gN)^{-1} = g^{-1}N$. If $G$ is finite, $|G/N| = [G : N] = |G|/|N|$.
@@ -48,7 +48,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§35 No
 *Uses:* [[§34 Multiplying Cosets#^prop-34-1|§34.1]], [[§1 The Definition of a Group#^def-1-1|Def. §1.1]], [[§27 The Index and Lagrange's Theorem#^def-27-1|Def. §27.1]], [[§27 The Index and Lagrange's Theorem#^thm-27-2|§27.2]]
 
 > [!remark]- Connections
-> - Vector-space version: [[3E Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]].
+> - Vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]].
 
 > [!theorem] Proposition §37.2: Every Normal Subgroup Is a Kernel
 > Let $N \trianglelefteq G$. The canonical projection $\pi: G \to G/N$, $g \mapsto gN$, is a surjective homomorphism with $\operatorname{Ker}\pi = N$.
@@ -65,7 +65,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§35 No
 *Uses:* [[§37 Quotient Groups#^def-37-1|Def. §37.1]], [[§37 Quotient Groups#^thm-37-1|§37.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§26 Left and Right Cosets#^prop-26-2|§26.2]]
 
 > [!remark]- Connections
-> - Vector-space version: [[3E Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]] ($\operatorname{null}\pi = U$, shown in the proof of [[3E Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]); in 590 stated in [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|Cosets and Quotient Group]].
+> - Vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]] ($\operatorname{null}\pi = U$, shown in the proof of [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]); in 590 stated in [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|Cosets and Quotient Group]].
 
 > [!remark] Remark: Kernels and Normal Subgroups Are the Same Thing
 > Together with [[§36 Sources of Normal Subgroups#^prop-36-2|Kernels Are Normal]], the proposition says: the normal subgroups of $G$ are exactly the kernels of homomorphisms out of $G$. This is why normality, a condition that looks technical, is the natural one.
