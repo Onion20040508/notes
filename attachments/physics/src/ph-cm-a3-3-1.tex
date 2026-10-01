@@ -1,0 +1,22 @@
+% Figure for Classical Mechanics §A3.3 (Example: several forces on a particle; after University Physics Vol. 1, Example 5.7).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  % left panel: free-body diagram (arrow lengths schematic)
+  \draw[->, thin, black!55] (-2.2,0) -- (2.8,0) node[right, font=\scriptsize] {$x$};
+  \draw[->, thin, black!55] (0,-3.4) -- (0,2.0) node[above, font=\scriptsize] {$y$};
+  \draw[->, very thick, figB] (0,0) -- ({2.2*cos(30)},{2.2*sin(30)}) node[above right] {$\vec F_1$ \scriptsize(10 N)};
+  \draw[black!55, thin] (0.8,0) arc (0:30:0.8); \node[font=\scriptsize, black!70] at (1.15,0.22) {$30^\circ$};
+  \draw[->, very thick, figB] (0,0) -- (0,-3.1) node[right] {$\vec F_2$ \scriptsize(40 N)};
+  \draw[->, very thick, figB] (0,0) -- (-1.5,0) node[above, yshift=1pt] {$\vec F_3$ \scriptsize(5 N)};
+  \draw[->, very thick, figB] (0,0) -- (0,1.0) node[left] {$\vec F_4$ \scriptsize(2 N)};
+  \fill (0,0) circle (2.2pt);
+  \node[font=\scriptsize, black!70] at (0,-3.75) {free-body diagram, $m = 4.0$ kg};
+  % right panel: resulting acceleration
+  \begin{scope}[xshift=5.2cm]
+    \draw[->, thin, black!55] (-1.0,0) -- (1.6,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, thin, black!55] (0,-3.4) -- (0,2.0) node[above, font=\scriptsize] {$y$};
+    \draw[->, very thick, figR] (0,0) -- ({0.92*0.36},{-8.3*0.36}) node[right, xshift=2pt] {$\vec a$};
+    \node[font=\scriptsize, figR, align=left, anchor=west] at (0.45,-1.2) {$a_x = 0.92$ m/s$^2$\\ $a_y = -8.3$ m/s$^2$};
+    \fill (0,0) circle (2.2pt);
+    \node[font=\scriptsize, black!70] at (0.3,-3.75) {$\vec a = \vec F_{\text{net}}/m$};
+  \end{scope}
+\end{tikzpicture}
