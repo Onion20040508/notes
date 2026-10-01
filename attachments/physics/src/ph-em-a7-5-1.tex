@@ -1,0 +1,21 @@
+% Figure for Electromagnetism §A7.5: Hall effect in a metal strip; electrons drifting against the current are pushed to the lower edge by the magnetic force until the Hall field balances it.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  \fill[black!5] (0,0) rectangle (6,2);
+  \foreach \x in {0.75,1.6,2.4,3.95,5.3} \foreach \y in {0.4,1.6} { \draw[black!35] (\x,\y) circle (0.07); \fill[black!35] (\x,\y) circle (0.022); }
+  \draw[thick, black!70] (0,0) rectangle (6,2);
+  \foreach \x in {0.4,0.9,...,5.7} { \node[figR, font=\scriptsize] at (\x,2.13) {$+$}; \node[figB, font=\scriptsize] at (\x,-0.15) {$-$}; }
+  % current leads
+  \draw[thick, black] (-1.2,1) -- (0,1); \draw[->, very thick, black] (-1.2,1) -- (-0.75,1) node[above] {$I$};
+  \draw[thick, black] (6,1) -- (7.2,1); \draw[->, very thick, black] (6.4,1) -- (6.85,1) node[above] {$I$};
+  % electron
+  \fill[figB] (3,1) circle (0.13); \node[white, font=\scriptsize] at (3,1) {$-$};
+  \draw[->, thick, black] (2.85,1) -- (2.0,1) node[left] {$\vec v_d$};
+  \draw[->, very thick, figR] (3,0.85) -- (3,0.3) node[right] {$\vec F_B$};
+  \draw[->, very thick, figG] (3,1.15) -- (3,1.7) node[right] {$\vec F_E$};
+  % Hall field
+  \draw[->, thick, figG] (4.6,1.75) -- (4.6,0.25) node[midway, right] {$\vec E$};
+  % width
+  \draw[|<->|, black!60, thin] (0.15,0.05) -- (0.15,1.95);
+  \node[black!70, fill=black!5, inner sep=1pt] at (0.35,0.7) {$l$};
+  \node[font=\scriptsize, black!70] at (3,-0.6) {$\vec B$ out of the page};
+\end{tikzpicture}

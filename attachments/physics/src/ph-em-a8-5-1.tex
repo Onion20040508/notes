@@ -1,0 +1,31 @@
+% Figure for Electromagnetism §A8.5: left, cross-section of an ideal solenoid with the rectangular Amperian path; right, a toroid seen from above with a circular Amperian path inside the windings.
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small]
+  % left: solenoid cross-section
+  \foreach \x in {0,0.35,...,4.6} {
+    \filldraw[fill=white, draw=black, thick] (\x,1.2) circle (0.12); \fill (\x,1.2) circle (0.035);
+    \filldraw[fill=white, draw=black, thick] (\x,-1.2) circle (0.12);
+    \draw[thick] (\x,-1.2) ++(-0.08,-0.08) -- ++(0.16,0.16) ++(-0.16,0) -- ++(0.16,-0.16);
+  }
+  \foreach \y in {-0.75,-0.25,0.25,0.75} \draw[->, figB, thick] (0.1,\y) -- (4.4,\y);
+  \node[figB] at (4.75,0.5) {$\vec B$};
+  \draw[figG, very thick, postaction={decorate}, decoration={markings, mark=at position 0.12 with {\arrow{Stealth[length=2.4mm]}}, mark=at position 0.62 with {\arrow{Stealth[length=2.4mm]}}}]
+    (1.0,0.5) -- (3.2,0.5) -- (3.2,2.1) -- (1.0,2.1) -- cycle;
+  \node[figG, font=\scriptsize, fill=white, inner sep=1pt] at (2.1,0.3) {1};
+  \node[figG, font=\scriptsize] at (3.4,1.7) {2};
+  \node[figG, font=\scriptsize] at (2.1,2.3) {3};
+  \node[figG, font=\scriptsize] at (0.8,1.7) {4};
+  \draw[|<->|, black!55, thin] (1.0,-1.65) -- (3.2,-1.65) node[midway, below, font=\scriptsize] {$l$};
+  % right: toroid from above
+  \begin{scope}[xshift=7.6cm]
+    \fill[black!5, even odd rule] (0,0) circle (1.9) (0,0) circle (0.9);
+    \foreach \a in {0,30,...,330} {
+      \filldraw[fill=white, draw=black, thick] (\a:0.9) circle (0.11); \fill (\a:0.9) circle (0.032);
+      \filldraw[fill=white, draw=black, thick] (\a:1.9) circle (0.11);
+      \draw[thick] (\a:1.9) ++(-0.075,-0.075) -- ++(0.15,0.15) ++(-0.15,0) -- ++(0.15,-0.15);
+    }
+    \draw[figG, very thick, postaction={decorate}, decoration={markings, mark=at position 0.3 with {\arrow{Stealth[length=2.4mm]}}, mark=at position 0.8 with {\arrow{Stealth[length=2.4mm]}}}] (1.4,0) arc (0:360:1.4);
+    \draw[black!55, thin] (0,0) -- (-115:1.4) node[midway, left, font=\scriptsize, black!70] {$r$};
+    \fill[black!55] (0,0) circle (1pt);
+    \draw[->, figB, very thick] (60:1.4) -- ++(150:0.6) node[above, font=\small] {$\vec B$};
+  \end{scope}
+\end{tikzpicture}

@@ -1,0 +1,10 @@
+% Figure for Electromagnetism §A10.4 (RL circuit: with S1 closed the source drives the current up; with S1 open and S2 closed the current decays through R).
+\begin{circuitikz}[font=\small]
+  \draw (0,0) to[battery1, l=$\mathcal E$, invert] (0,3)
+        to[nos, l=$S_1$] (2.6,3)
+        to[R, l=$R$] (5.6,3)
+        to[L, l=$L$] (5.6,0) -- (0,0);
+  \draw (2.6,3) to[nos, l_=$S_2$] (2.6,0);
+  \node[circ] at (2.6,3) {}; \node[circ] at (2.6,0) {};
+  \draw[-{Stealth[length=2.2mm]}, thick, figB] (3.6,2.45) -- (4.6,2.45) node[midway, below] {$I$};
+\end{circuitikz}

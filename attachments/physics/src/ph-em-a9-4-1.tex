@@ -1,0 +1,32 @@
+% Figure for Electromagnetism §A9.4 (induced electric field of a long solenoid whose field, into the page, is decreasing: cross-section and E versus r; after University Physics Vol. 2, Example 13.8).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % left: cross-section
+  \begin{scope}
+    \fill[figB!10] (0,0) circle (1.2);
+    \draw[very thick, figB] (0,0) circle (1.2);
+    \foreach \p in {(0,0),(0.6,0),(-0.6,0),(0,0.6),(0,-0.6),(0.42,0.42),(-0.42,0.42),(0.42,-0.42),(-0.42,-0.42)}
+      \node[figB!70!black, font=\scriptsize] at \p {$\otimes$};
+    \node[figB, font=\scriptsize, align=center] at (0,-2.4) {$\vec B$ into page,\ $|\vec B|$ decreasing};
+    % inner path r < R (clockwise)
+    \draw[dashed, figR, thick] (0,0) circle (0.85);
+    \draw[->, very thick, figR] (130:0.85) arc (130:70:0.85);
+    % outer path r > R (clockwise)
+    \draw[dashed, figR, thick] (0,0) circle (2.0);
+    \draw[->, very thick, figR] (150:2.0) arc (150:110:2.0);
+    \draw[->, very thick, figR] (-30:2.0) arc (-30:-70:2.0);
+    \node[figR] at (55:2.3) {$\vec E$};
+    \draw[<-, thin, black!55] (1.2,0) -- (2.5,0.0) node[right, black, font=\scriptsize] {$R$};
+  \end{scope}
+  % right: magnitude of E versus r
+  \begin{scope}[xshift=3.6cm, yshift=-1.6cm]
+    \begin{axis}[nfig, width=6.2cm, height=4.4cm, xmin=0, xmax=4.2, ymin=0, ymax=1.25,
+        xlabel={$r$}, ylabel={$E$}, ylabel style={rotate=-90},
+        xtick={1}, xticklabels={$R$}, ytick=\empty, clip=false]
+      \addplot[figR, domain=0:1] {x};
+      \addplot[figR, domain=1:4, samples=60] {1/x};
+      \addplot[black!55, dashed, thin] coordinates {(1,0) (1,1)};
+      \node[font=\scriptsize, anchor=west] at (axis cs:0.25,0.95) {$\propto r$};
+      \node[font=\scriptsize, anchor=south west] at (axis cs:2.3,0.45) {$\propto 1/r$};
+    \end{axis}
+  \end{scope}
+\end{tikzpicture}

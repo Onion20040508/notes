@@ -1,0 +1,30 @@
+% Figure for Electromagnetism §A12.2: snapshot of a sinusoidal plane electromagnetic wave travelling along +x, with E along y and B along z, in phase, and E x B along the direction of propagation.
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small, x={(1cm,0cm)}, y={(0cm,1cm)}, z={(-0.28cm,-0.5cm)}]
+  \def\L{7.2}\def\lam{3.6}\def\Ea{1.3}\def\Ba{1.3}
+  % axes
+  \draw[->, black!55, thin] (0,0,0) -- (\L+0.5,0,0) node[right, black] {$x$};
+  \draw[->, black!55, thin] (0,0,0) -- (0,1.8,0) node[above, black] {$y$};
+  \draw[->, black!55, thin] (0,0,0) -- (0,0,2.2) node[below left, black] {$z$};
+  % B sticks and curve (z direction)
+  \foreach \i in {0,...,32} {
+    \pgfmathsetmacro{\xx}{\i*\L/32}
+    \pgfmathsetmacro{\bb}{\Ba*cos(360*\xx/\lam)}
+    \draw[figR!60, thin] (\xx,0,0) -- (\xx,0,\bb);
+  }
+  \draw[figR, thick, domain=0:\L, samples=120, variable=\t] plot (\t, 0, {\Ba*cos(360*\t/\lam)});
+  % E sticks and curve (y direction)
+  \foreach \i in {0,...,32} {
+    \pgfmathsetmacro{\xx}{\i*\L/32}
+    \pgfmathsetmacro{\ee}{\Ea*cos(360*\xx/\lam)}
+    \draw[figB!60, thin] (\xx,0,0) -- (\xx,\ee,0);
+  }
+  \draw[figB, thick, domain=0:\L, samples=120, variable=\t] plot (\t, {\Ea*cos(360*\t/\lam)}, 0);
+  % labels
+  \node[figB, anchor=south west, font=\scriptsize] at (\lam+0.15,\Ea,0) {$\vec E = E_0\cos(kx-\omega t)\,\hat\jmath$};
+  \node[figR, anchor=north, font=\scriptsize] at (\lam*0.5,-1.5,0) {$\vec B = B_0\cos(kx-\omega t)\,\hat k$};
+  % wavelength
+  \draw[<->, black!60, thin] (\lam,2.1,0) -- (2*\lam,2.1,0) node[midway, above, black] {$\lambda$};
+  \draw[black!40, thin, densely dotted] (\lam,\Ea,0) -- (\lam,2.1,0) (2*\lam,\Ea,0) -- (2*\lam,2.1,0);
+  % propagation direction
+  \draw[->, very thick, figG] (\L+0.3,0.9,0) -- (\L+1.3,0.9,0) node[above, font=\scriptsize] {$\vec E\times\vec B$};
+\end{tikzpicture}

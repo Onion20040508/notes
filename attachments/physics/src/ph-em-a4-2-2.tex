@@ -1,0 +1,8 @@
+% Figure for Electromagnetism §A4.2 (Example: C1 = 12.0 uF in series with C2 = 2.0 uF parallel C3 = 4.0 uF, across 12.0 V; after University Physics Vol. 2, Example 8.7).
+\begin{circuitikz}[font=\small]
+  \draw (0,0) to[battery1, l={12.0 V}] (0,2.6) -- (0.4,2.6) to[C, l={$C_1 = 12.0\,\mu\mathrm F$}] (2.6,2.6) -- (5.4,2.6);
+  \draw (3.4,2.6) to[C, l_={$C_2 = 2.0\,\mu\mathrm F$}] (3.4,0);
+  \draw (5.4,2.6) to[C, l={$C_3 = 4.0\,\mu\mathrm F$}] (5.4,0);
+  \draw (0,0) -- (5.4,0);
+  \node[font=\scriptsize, figR] at (2.9,-0.6) {$Q_1 = 48\ \mu\mathrm C$, $V_1 = 4.0$ V; \quad $V_2 = V_3 = 8.0$ V, $Q_2 = 16\ \mu\mathrm C$, $Q_3 = 32\ \mu\mathrm C$};
+\end{circuitikz}

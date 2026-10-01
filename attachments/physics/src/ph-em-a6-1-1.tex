@@ -1,0 +1,31 @@
+% Figure for Electromagnetism §A6.1: battery (ideal emf plus internal resistance) with a load, and the potential around the loop (numbers of Example A6.1.1 (b): emf 12 V, Ir = 2 V, IR = 10 V).
+\begin{circuitikz}[>={Stealth[length=2.2mm]}, font=\small]
+  % circuit
+  \draw (0,1.4) to[battery1, l_=$\mathcal E$] (0,0.2) -- (0,-0.3) -- (3,-0.3)
+        to[R, l_=$R$] (3,2.9) -- (0,2.9) to[R, l_=$r$] (0,1.4);
+  \draw[dashed, black!55] (-0.75,0.05) rectangle (0.75,2.65);
+  \node[font=\scriptsize, black!70, anchor=east] at (-0.8,2.5) {battery};
+  \fill (0,2.9) circle (1.6pt) node[above left, font=\scriptsize] {$a\ (+)$};
+  \fill (0,-0.3) circle (1.6pt) node[below left, font=\scriptsize] {$b\ (-)$};
+  \draw[->, thick, figR] (1.0,3.3) -- (2.0,3.3) node[midway, above, font=\scriptsize] {$I$};
+  % potential profile (0.25 units per volt)
+  \begin{scope}[shift={(5.2,0)}]
+    \draw[->, thin, black!55] (0,0) -- (6.2,0);
+    \node[font=\scriptsize] at (3.1,-0.7) {position around the loop};
+    \draw[->, thin, black!55] (0,0) -- (0,3.5) node[above, font=\scriptsize, black] {$V$ (V)};
+    \foreach \v/\lab in {0/0, 2.5/10, 3.0/12} \draw[black!55, thin] (-0.08,\v) -- (0.08,\v) node[left, xshift=-3pt, font=\scriptsize, black] {\lab};
+    \draw[thick] (0,0) -- (0.6,0);
+    \draw[very thick, figB] (0.6,0) -- (0.6,3.0);
+    \draw[very thick, figR] (0.6,3.0) -- (1.6,2.5);
+    \draw[thick] (1.6,2.5) -- (3.0,2.5);
+    \draw[very thick, figG] (3.0,2.5) -- (5.0,0);
+    \draw[thick] (5.0,0) -- (5.6,0);
+    \node[figB, font=\scriptsize, anchor=east] at (0.55,1.5) {$+\mathcal E$};
+    \node[figR, font=\scriptsize, anchor=south west] at (1.15,2.8) {$-Ir$};
+    \node[figG, font=\scriptsize, anchor=south west] at (4.05,1.3) {$-IR$};
+    \node[black!70, font=\scriptsize, anchor=north] at (1.85,2.4) {$V_{\text{terminal}} = \mathcal E - Ir$};
+    % position labels
+    \foreach \x/\lab in {0/$b$, 0.6/emf, 1.1/$r$, 1.6/$a$, 4.0/$R$, 5.6/$b$}
+      \node[font=\scriptsize, black!70] at (\x,-0.3) {\lab};
+  \end{scope}
+\end{circuitikz}

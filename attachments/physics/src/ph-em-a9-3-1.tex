@@ -1,0 +1,23 @@
+% Figure for Electromagnetism §A9.3 (rod pulled along conducting rails through a uniform field into the page: motional emf, induced current, magnetic force on the rod).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  % field into the page
+  \foreach \x in {0.6,1.6,...,6.6} \foreach \y in {0.5,1.5,2.5}
+    \node[black!45, font=\scriptsize] at (\x,\y) {$\otimes$};
+  \node[black!60, font=\scriptsize, above] at (6.0,3.0) {$\vec B$ into page};
+  % rails and resistor
+  \draw[very thick, black!70] (7.0,3) -- (0,3) to[R, l_=$R$, color=black] (0,0) -- (7.0,0);
+  % moving rod
+  \draw[line width=2.2pt, figB] (4.2,-0.15) -- (4.2,3.15);
+  \node[figB, below] at (4.2,-0.15) {rod, length $l$};
+  \draw[->, very thick, figB] (4.35,1.1) -- (5.5,1.1) node[right] {$\vec v$};
+  % applied force and magnetic force
+  \draw[->, very thick, black] (4.35,2.1) -- (5.6,2.1) node[right] {$\vec F_a$};
+  \draw[->, very thick, figR] (4.05,2.1) -- (2.8,2.1) node[left] {$\vec F_m = I\vec l\times\vec B$};
+  % induced current (counterclockwise): up the rod, left along top, down the resistor
+  \draw[->, very thick, figR] (3.95,0.35) -- (3.95,1.45);
+  \node[figR, left] at (3.95,0.9) {$I$};
+  \draw[->, thick, figR] (2.6,3.25) -- (1.6,3.25);
+  \draw[->, thick, figR] (1.6,-0.25) -- (2.6,-0.25);
+  % x dimension
+  \draw[<->, thin, black!55] (0,-0.75) -- (4.2,-0.75) node[midway, below, font=\scriptsize, black] {$x$};
+\end{tikzpicture}

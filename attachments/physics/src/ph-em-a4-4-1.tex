@@ -1,0 +1,27 @@
+% Figure for Electromagnetism §A4.4 (molecular picture of a dielectric between capacitor plates: aligned dipoles, induced surface charges, and the fields E0, Ei and E = E0 + Ei).
+\begin{tikzpicture}[>={Stealth[length=1.8mm]}, font=\small]
+  % plates
+  \fill[figR!20] (0,2.4) rectangle (5.6,2.55); \draw[figR, thick] (0,2.4) rectangle (5.6,2.55);
+  \fill[figB!20] (0,0) rectangle (5.6,-0.15); \draw[figB, thick] (0,0) rectangle (5.6,-0.15);
+  \foreach \x in {0.25,0.6,...,5.5} \node[font=\scriptsize, figR] at (\x,2.7) {$+$};
+  \foreach \x in {0.25,0.6,...,5.5} \node[font=\scriptsize, figB] at (\x,-0.32) {$-$};
+  % dielectric slab
+  \fill[figG!10] (0,0.08) rectangle (5.6,2.32); \draw[figG!70!black, thin] (0,0.08) rectangle (5.6,2.32);
+  % aligned dipoles: + end toward the negative plate, - end toward the positive plate
+  \foreach \x in {0.35,1.0,1.65,2.3,2.95} \foreach \y in {0.66,1.2,1.74} {
+    \draw[black!60, thin, fill=white] (\x,\y) ellipse (0.12 and 0.23);
+    \node[font=\tiny, figB] at (\x,\y+0.1) {$-$};
+    \node[font=\tiny, figR] at (\x,\y-0.11) {$+$};
+  }
+  % induced surface charges
+  \foreach \x in {0.35,1.0,...,2.95} \node[font=\scriptsize, figB] at (\x,2.18) {$-$};
+  \foreach \x in {0.35,1.0,...,2.95} \node[font=\scriptsize, figR] at (\x,0.22) {$+$};
+  % fields
+  \draw[->, figB, thick] (3.65,2.05) -- (3.65,0.35) node[midway, right, font=\scriptsize] {$\vec E_0$};
+  \draw[->, figG!70!black, thick] (4.45,0.85) -- (4.45,1.55) node[midway, right, font=\scriptsize] {$\vec E_i$};
+  \draw[->, figR, very thick] (5.15,1.7) -- (5.15,0.7) node[midway, right, font=\scriptsize] {$\vec E$};
+  \node[font=\scriptsize, figR, anchor=west] at (5.75,2.7) {free $+Q_0$};
+  \node[font=\scriptsize, figB, anchor=west] at (5.75,2.15) {induced $-Q_i$};
+  \node[font=\scriptsize, figR, anchor=west] at (5.75,0.2) {induced $+Q_i$};
+  \node[font=\scriptsize, figB, anchor=west] at (5.75,-0.32) {free $-Q_0$};
+\end{tikzpicture}

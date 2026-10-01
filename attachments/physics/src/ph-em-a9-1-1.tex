@@ -1,0 +1,21 @@
+% Figure for Electromagnetism §A9.1 (magnetic flux through a flat loop; the normal n-hat fixes the positive sense of circulation by the right-hand rule).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small]
+  % loop (flat, seen obliquely from above)
+  \fill[figB!12] (0,0) ellipse (2.2 and 0.75);
+  \draw[very thick, figB] (0,0) ellipse (2.2 and 0.75);
+  % field lines: uniform B at angle theta to the normal
+  \foreach \x in {-1.5,-0.5,0.5,1.5} {
+    \draw[->, thick, figG] ({\x-0.75},-1.6) -- ({\x+0.75},1.9);
+  }
+  \node[figG, right] at (2.35,1.75) {$\vec B$};
+  % normal
+  \draw[->, very thick, figB] (0,0) -- (0,2.3) node[above] {$\hat n$};
+  % angle theta between n and B (B direction is atan(3.5/1.5) from horizontal)
+  \draw[black!70, thin] (0,1.1) arc (90:{atan(3.5/1.5)}:1.1);
+  \node[font=\scriptsize] at (0.33,1.38) {$\theta$};
+  % positive sense of circulation (counterclockwise seen from the tip of n)
+  \draw[->, very thick, figR] ({2.2*cos(250)},{0.75*sin(250)}) arc (250:300:2.2 and 0.75);
+  \node[figR, font=\scriptsize, align=center] at (0.2,-1.15) {positive sense of $\mathcal E$};
+  \node[figB, font=\scriptsize] at (-2.6,0.55) {area $A$};
+  \fill (0,0) circle (1.4pt);
+\end{tikzpicture}

@@ -1,0 +1,17 @@
+% Figure for Electromagnetism §A10.2 (polarity of the voltage across an inductor: it opposes the change of the current, V_a - V_b = L dI/dt).
+\begin{circuitikz}[font=\small]
+  % (a) increasing current
+  \draw (0,0) node[circ]{} node[left]{$a$} to[L, l=$L$] (3,0) node[circ]{} node[right]{$b$};
+  \draw[-{Stealth[length=2.2mm]}, thick, figB] (0.9,-0.55) -- (2.1,-0.55) node[midway, below] {$I$, increasing};
+  \node[figR, font=\normalsize] at (0.35,0.45) {$+$};
+  \node[figR, font=\normalsize] at (2.65,0.45) {$-$};
+  \node[font=\scriptsize, align=center] at (1.5,-1.55) {(a) $dI/dt>0$: $V_a - V_b = L\,dI/dt > 0$,\\ the inductor pushes back};
+  % (b) decreasing current
+  \begin{scope}[xshift=5.6cm]
+  \draw (0,0) node[circ]{} node[left]{$a$} to[L, l=$L$] (3,0) node[circ]{} node[right]{$b$};
+  \draw[-{Stealth[length=2.2mm]}, thick, figB] (0.9,-0.55) -- (2.1,-0.55) node[midway, below] {$I$, decreasing};
+  \node[figR, font=\normalsize] at (0.35,0.45) {$-$};
+  \node[figR, font=\normalsize] at (2.65,0.45) {$+$};
+  \node[font=\scriptsize, align=center] at (1.5,-1.55) {(b) $dI/dt<0$: $V_a - V_b = L\,dI/dt < 0$,\\ the inductor pushes forward};
+  \end{scope}
+\end{circuitikz}

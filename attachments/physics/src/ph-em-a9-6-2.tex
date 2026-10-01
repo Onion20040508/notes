@@ -1,0 +1,7 @@
+% Figure for Electromagnetism §A9.6 (circuit model of a dc motor: supply emf, coil resistance, and the back emf opposing the supply).
+\begin{circuitikz}[font=\small]
+  \draw (0,0) to[battery1, l=$\mathcal E_S$, invert] (0,2.6)
+        to[R, l=$R$ (coils), color=black] (4,2.6)
+        to[battery1, l_=$\mathcal E_i$ (back emf), color=figR] (4,0) -- (0,0);
+  \draw[-{Stealth[length=2.2mm]}, thick, figB] (1.4,2.2) -- (2.6,2.2) node[midway, below] {$I$};
+\end{circuitikz}

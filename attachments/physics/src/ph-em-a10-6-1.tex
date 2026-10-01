@@ -1,0 +1,21 @@
+% Figure for Electromagnetism §A10.6 (charge on the capacitor of a source-free RLC circuit started with q0 and no current: underdamped, critically damped and overdamped).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=10cm, height=5cm, xmin=0, xmax=21, ymin=-1.05, ymax=1.2,
+      axis x line=middle, axis y line=left, clip=false,
+      xtick={6.283,12.566,18.850}, xticklabels={$T_0$,$2T_0$,$3T_0$},
+      xticklabel style={below right, xshift=-2pt},
+      ytick={-1,1}, yticklabels={$-q_0$,$q_0$}, xlabel={$t$}]
+    % underdamped, gamma = 0.15 omega0
+    \addplot[figB, domain=0:20, samples=400] {exp(-0.15*x)*(cos(deg(0.98869*x)) + 0.15/0.98869*sin(deg(0.98869*x)))};
+    \addplot[figB!50, dashed, thin, domain=0:20, samples=80] {exp(-0.15*x)};
+    \addplot[figB!50, dashed, thin, domain=0:20, samples=80] {-exp(-0.15*x)};
+    % critical, gamma = omega0
+    \addplot[figR, domain=0:20, samples=200] {(1+x)*exp(-x)};
+    % overdamped, gamma = 2.5 omega0
+    \addplot[figG, domain=0:20, samples=200] {(-4.79129*exp(-0.20871*x) + 0.20871*exp(-4.79129*x))/(-4.79129+0.20871)};
+    \node[figB, font=\scriptsize, anchor=south west] at (axis cs:7.0,0.42) {underdamped, $R < 2\sqrt{L/C}$};
+    \node[figR, font=\scriptsize, anchor=west] (cr) at (axis cs:5.0,-0.75) {critical, $R = 2\sqrt{L/C}$};
+    \draw[figR, thin] (cr.west) -- (axis cs:2.8,0.231);
+    \node[figG, font=\scriptsize, anchor=south west] at (axis cs:10.5,0.13) {overdamped, $R > 2\sqrt{L/C}$};
+  \end{axis}
+\end{tikzpicture}

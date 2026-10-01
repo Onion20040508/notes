@@ -1,0 +1,20 @@
+% Figure for Electromagnetism §A2.1: flux of a uniform field through a surface perpendicular to the field and through a tilted surface with the same projection; side view.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  \def\th{35}
+  \foreach \y in {0.4,0.85,1.3,1.75,2.2} {\draw[->, figB, thin] (-0.6,\y) -- (5.6,\y);}
+  \node[font=\scriptsize, figB, anchor=west] at (5.65,2.2) {$\vec E$};
+  % S1: perpendicular
+  \draw[line width=2.4pt, black!65] (0.6,0.2) -- (0.6,2.4);
+  \node[font=\scriptsize, black!70, below] at (0.6,0.15) {$S_1$, area $A_1$};
+  \draw[->, very thick, figR] (0.6,1.52) -- (1.45,1.52) node[above, font=\scriptsize] {$\hat n_1$};
+  % S2: tilted by theta, same projection
+  \pgfmathsetmacro{\dx}{2.2*tan(\th)}
+  \draw[line width=2.4pt, black!65] (3.0,0.2) -- ({3.0+\dx},2.4);
+  \node[font=\scriptsize, black!70, below] at (3.0,0.15) {$S_2$, area $A_2$};
+  \coordinate (M) at ({3.0+0.5*\dx},1.3);
+  \draw[->, very thick, figR] (M) -- ++({-\th}:0.95) node[right, font=\scriptsize] {$\hat n_2$};
+  
+  \draw[black!55, thin] ($(M)+(0.6,0)$) arc (0:-\th:0.6);
+  \node[font=\scriptsize, black!70] at ($(M)+(-\th/2:0.82)$) {$\theta$};
+  \node[font=\scriptsize, black!70, align=center] at (2.3,-0.65) {same lines cross both: $\Phi = E A_1 = E A_2\cos\theta = \vec E\cdot\hat n_2\,A_2$};
+\end{tikzpicture}

@@ -1,0 +1,21 @@
+% Figure for Electromagnetism §A4.4 (Example: two ways to half-fill a parallel-plate capacitor with a dielectric; side by side = parallel, stacked = series).
+\begin{tikzpicture}[font=\small]
+  % (a) side by side
+  \fill[figG!18] (1.6,0) rectangle (3.2,1.6);
+  \draw[figR, very thick] (0,1.6) -- (3.2,1.6); \draw[figB, very thick] (0,0) -- (3.2,0);
+  \draw[black!55, thin, dashed] (1.6,0) -- (1.6,1.6);
+  \node[font=\scriptsize] at (0.8,0.8) {vacuum}; \node[font=\scriptsize] at (2.4,0.8) {$\kappa$};
+  \node[font=\scriptsize, black!70] at (0.8,1.85) {$A/2$}; \node[font=\scriptsize, black!70] at (2.4,1.85) {$A/2$};
+  \draw[<->, black!55, thin] (-0.25,0) -- (-0.25,1.6) node[midway, left, font=\scriptsize] {$d$};
+  \node at (1.6,-0.5) {(a) side by side};
+  % (b) stacked
+  \begin{scope}[shift={(5.2,0)}]
+    \fill[figG!18] (0,0) rectangle (3.2,0.8);
+    \draw[figR, very thick] (0,1.6) -- (3.2,1.6); \draw[figB, very thick] (0,0) -- (3.2,0);
+    \draw[black!55, thin, dashed] (0,0.8) -- (3.2,0.8);
+    \node[font=\scriptsize] at (1.6,1.2) {vacuum}; \node[font=\scriptsize] at (1.6,0.4) {$\kappa$};
+    \draw[<->, black!55, thin] (3.45,0.8) -- (3.45,1.6) node[midway, right, font=\scriptsize] {$d/2$};
+    \draw[<->, black!55, thin] (3.45,0) -- (3.45,0.8) node[midway, right, font=\scriptsize] {$d/2$};
+    \node at (1.6,-0.5) {(b) stacked};
+  \end{scope}
+\end{tikzpicture}

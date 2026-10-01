@@ -1,0 +1,20 @@
+% Figure for Electromagnetism §A3.2 (Example: potential difference near a point charge, integrated along a radial leg and an arc; after University Physics Vol. 2, Example 7.9).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % equipotential circles (arcs) through P1 and P2
+  \draw[figB, thin, dashed] (8:1.2) arc (8:60:1.2);
+  \draw[figB, thin, dashed] (-8:3.6) arc (-8:40:3.6);
+  \node[font=\scriptsize, figB] at (62:1.45) {$r=a$};
+  \node[font=\scriptsize, figB, anchor=west] at (40:3.65) {$r=b$};
+  % a few field directions (radial)
+  \foreach \t in {12,30,48} \draw[->, black!45, thin] (\t:1.7) -- (\t:2.3);
+  % path: radial from P1 to b, then arc to P2
+  \draw[figR, very thick, ->] (1.2,0) -- (3.55,0);
+  \draw[figR, very thick, ->] (0:3.6) arc (0:23.3:3.6);
+  \draw[black!55, thin] (0,0) -- (24:3.6);
+  \draw[black!55, thin] (0.7,0) arc (0:24:0.7); \node[font=\scriptsize, black!70] at (12:0.98) {$24^\circ$};
+  \fill[figB] (0,0) circle (2.4pt); \node[below left, font=\scriptsize] at (0,0) {$q$};
+  \fill (1.2,0) circle (1.6pt); \node[below, font=\scriptsize] at (1.15,-0.04) {$P_1$};
+  \fill (24:3.6) circle (1.6pt); \node[above right, font=\scriptsize] at (24:3.6) {$P_2$};
+  \node[below, font=\scriptsize, figR] at (2.5,-0.04) {$d\vec l = \hat r\,dr$};
+  \node[right, font=\scriptsize, figR] at (11:3.62) {$d\vec l = r\hat\varphi\,d\varphi$};
+\end{tikzpicture}

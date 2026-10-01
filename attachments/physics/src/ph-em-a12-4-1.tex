@@ -1,0 +1,25 @@
+% Figure for Electromagnetism §A12.4: an electron in a plane wave travelling along +x; E drives the electron, and the magnetic force on the moving electron points along +x in both half-cycles.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % left panel: E up, B out of page, electron moving down
+  \draw[->, black!55, thin] (-1.2,0) -- (2.2,0) node[right, black, font=\scriptsize] {$x$};
+  \draw[->, black!55, thin] (0,-1.6) -- (0,1.7) node[above, black, font=\scriptsize] {$y$};
+  \draw[->, very thick, figB] (-0.7,-0.6) -- (-0.7,0.6) node[above, font=\scriptsize] {$\vec E$};
+  \draw[figR, thick] (-0.7,-1.15) circle (0.13); \fill[figR] (-0.7,-1.15) circle (0.035);
+  \node[figR, font=\scriptsize, right] at (-0.55,-1.15) {$\vec B$ out of page};
+  \fill[black] (0.6,0) circle (0.09);
+  \node[font=\scriptsize, anchor=south east] at (0.55,0.05) {$e^-$};
+  \draw[->, thick] (0.6,0) -- (0.6,-0.9) node[right, font=\scriptsize] {$\vec v$};
+  \draw[->, very thick, figG] (0.6,0) -- (1.6,0) node[above, font=\scriptsize] {$\vec F_B$};
+  % right panel: half a cycle later
+  \begin{scope}[xshift=4.6cm]
+  \draw[->, black!55, thin] (-1.2,0) -- (2.2,0) node[right, black, font=\scriptsize] {$x$};
+  \draw[->, black!55, thin] (0,-1.6) -- (0,1.7) node[above, black, font=\scriptsize] {$y$};
+  \draw[->, very thick, figB] (-0.7,0.6) -- (-0.7,-0.6) node[below, font=\scriptsize] {$\vec E$};
+  \draw[figR, thick] (-0.7,1.15) circle (0.13); \draw[figR, thick] (-0.79,1.06) -- (-0.61,1.24) (-0.79,1.24) -- (-0.61,1.06);
+  \node[figR, font=\scriptsize, right] at (-0.55,1.15) {$\vec B$ into page};
+  \fill[black] (0.6,0) circle (0.09);
+  \node[font=\scriptsize, anchor=north east] at (0.55,-0.05) {$e^-$};
+  \draw[->, thick] (0.6,0) -- (0.6,0.9) node[right, font=\scriptsize] {$\vec v$};
+  \draw[->, very thick, figG] (0.6,0) -- (1.6,0) node[below, font=\scriptsize] {$\vec F_B$};
+  \end{scope}
+\end{tikzpicture}

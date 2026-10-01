@@ -1,0 +1,14 @@
+% Figure for Electromagnetism §A3.4 (potential and axial field on the axis of a ring of charge: E_z = -dV/dz).
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.6cm, height=5.8cm, xmin=-3.2, xmax=3.2, ymin=-0.5, ymax=1.12, axis lines=middle,
+      xlabel={$z/R$}, xtick={-3,-2,-1,1,2,3}, ytick={0.5}, ylabel style={anchor=south}, xlabel style={anchor=west}]
+    \addplot[figB, very thick, domain=-3.2:3.2, samples=150] {1/sqrt(1+x^2)};
+    \addplot[figR, very thick, domain=-3.2:3.2, samples=150] {x/(1+x^2)^1.5};
+    \draw[black!55, densely dotted] (axis cs:0.7071,0) -- (axis cs:0.7071,0.8165);
+    \fill[figR] (axis cs:0.7071,0.3849) circle (1.6pt);
+    \fill[figB] (axis cs:0.7071,0.8165) circle (1.6pt);
+    \node[font=\scriptsize, figB, anchor=south west] at (axis cs:1.2,0.66) {$V\,/\,(kQ/R)$};
+    \node[font=\scriptsize, figR, anchor=south west] at (axis cs:-3.1,0.05) {$E_z\,/\,(kQ/R^2)$};
+    \node[font=\scriptsize, black!70, anchor=north] at (axis cs:0.7071,-0.02) {$\tfrac{1}{\sqrt2}$};
+  \end{axis}
+\end{tikzpicture}

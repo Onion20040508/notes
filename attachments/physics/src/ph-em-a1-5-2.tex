@@ -1,0 +1,15 @@
+% Figure for Electromagnetism §A1.5: a dipole in a uniform field; equal and opposite forces give no net force but a torque that turns p toward E.
+\begin{tikzpicture}[>={Stealth[length=2.3mm]}, font=\small]
+  \def\ph{35}
+  \draw[->, thick, black!55] (-3.0,1.75) -- (-1.9,1.75) node[right, font=\scriptsize] {uniform $\vec E$};
+  
+  \draw[very thick, black!70] (\ph+180:1.15) -- (\ph:1.15);
+  \draw[->, very thick, figR] ($(0,0)+(\ph-90:0.22)$) -- ($(\ph:0.9)+(\ph-90:0.22)$) node[pos=0.6, below right, font=\scriptsize, inner sep=1pt] {$\vec p$};
+  \draw[black!55, thin] (-0.55,0) arc (180:180+\ph:0.55); \draw[black!55, thin, dashed] (0,0) -- (-1.4,0); \node[font=\scriptsize, black!70] at (180+\ph/2:0.78) {$\varphi$};
+  \fill[figR] (\ph:1.15) circle (0.11); \node[font=\scriptsize, figR, above] at ($(\ph:1.15)+(0,0.1)$) {$+q$};
+  \fill[black!70] (\ph+180:1.15) circle (0.11); \node[font=\scriptsize, black!70, below] at ($(\ph+180:1.15)+(0,-0.1)$) {$-q$};
+  \draw[->, very thick, figB] (\ph:1.15) -- ++(1.1,0) node[right, font=\scriptsize] {$\vec F_+ = q\vec E$};
+  \draw[->, very thick, figB] (\ph+180:1.15) -- ++(-1.1,0) node[left, font=\scriptsize] {$\vec F_- = -q\vec E$};
+  \draw[->, thick, figR] (100:1.55) arc (100:60:1.55);
+  \node[font=\scriptsize, figR] at (80:1.85) {$\vec\tau = \vec p\times\vec E$};
+\end{tikzpicture}

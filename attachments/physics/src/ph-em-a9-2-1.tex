@@ -1,0 +1,44 @@
+% Figure for Electromagnetism §A9.2 (bar magnet, N pole down, falling through a conducting ring: induced current and induced field before and after it passes; after PHY 182, TBL 23).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % ---------- panel (a): magnet above the ring, approaching ----------
+  \begin{scope}
+    % ring back half
+    \draw[very thick, figB] (1.6,0) arc (0:180:1.6 and 0.5);
+    % induced field (up)
+    \draw[->, very thick, figR] (0,-1.2) -- (0,0.7);
+    \node[figR, font=\scriptsize, right] at (0.05,0.5) {$\vec B_{\text{ind}}$};
+    % ring front half with current arrow (counterclockwise seen from above: near side to the right)
+    \draw[very thick, figB] (-1.6,0) arc (180:360:1.6 and 0.5);
+    \draw[->, very thick, figB] ({1.6*cos(255)},{0.5*sin(255)}) arc (255:300:1.6 and 0.5);
+    \node[figB, font=\scriptsize] at (0.35,-0.78) {$I$};
+    % magnet
+    \fill[black!12] (-0.35,1.1) rectangle (0.35,2.9);
+    \draw (-0.35,1.1) rectangle (0.35,2.9);
+    \draw (-0.35,2.0) -- (0.35,2.0);
+    \node at (0,1.5) {N}; \node at (0,2.45) {S};
+    \draw[->, thick, black] (0.75,2.6) -- (0.75,1.6) node[midway, right] {$\vec v$};
+    % magnet field at ring: downward, increasing
+    \draw[->, thick, figG] (-1.0,1.0) -- (-1.0,0.05);
+    \node[figG, font=\scriptsize, left, align=right] at (-1.05,0.75) {$\vec B_{\text{mag}}$\\ growing};
+    \node[font=\scriptsize, align=center] at (0,-1.75) {(a) approaching: flux $\downarrow$ grows,\\ ring repels the N pole};
+  \end{scope}
+  % ---------- panel (b): magnet below the ring, receding ----------
+  \begin{scope}[xshift=5.4cm]
+    \draw[very thick, figB] (1.6,0) arc (0:180:1.6 and 0.5);
+    % induced field (down)
+    \draw[->, very thick, figR] (0,0.75) -- (0,-0.55);
+    \node[figR, font=\scriptsize, right] at (0.05,0.65) {$\vec B_{\text{ind}}$};
+    \draw[very thick, figB] (-1.6,0) arc (180:360:1.6 and 0.5);
+    \draw[->, very thick, figB] ({1.6*cos(300)},{0.5*sin(300)}) arc (300:255:1.6 and 0.5);
+    \node[figB, font=\scriptsize] at (-0.35,-0.78) {$I$};
+    % magnet below
+    \fill[black!12] (-0.35,-0.95) rectangle (0.35,-2.75);
+    \draw (-0.35,-0.95) rectangle (0.35,-2.75);
+    \draw (-0.35,-1.85) -- (0.35,-1.85);
+    \node at (0,-1.4) {S}; \node at (0,-2.3) {N};
+    \draw[->, thick, black] (0.75,-1.2) -- (0.75,-2.2) node[midway, right] {$\vec v$};
+    \draw[->, thick, figG] (-1.0,0.9) -- (-1.0,-0.05);
+    \node[figG, font=\scriptsize, left, align=right] at (-1.05,0.65) {$\vec B_{\text{mag}}$\\ shrinking};
+    \node[font=\scriptsize, align=center] at (0,-3.25) {(b) receding: flux $\downarrow$ shrinks,\\ ring attracts the S pole};
+  \end{scope}
+\end{tikzpicture}

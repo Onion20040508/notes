@@ -1,0 +1,25 @@
+% Figure for Electromagnetism §A10.4 (RL circuit: growth of the current and decay of the inductor voltage after the source is connected; decay of current and stored energy after it is removed).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=g, width=6.6cm, height=4.4cm, xmin=0, xmax=5.3, ymin=0, ymax=1.18,
+      xtick={1,2,3,4,5}, xticklabels={$\tau_L$,$2\tau_L$,$3\tau_L$,$4\tau_L$,$5\tau_L$},
+      ytick={0.37,0.63,1}, yticklabels={$0.37$,$0.63$,$1$}, xlabel={$t$}, clip=false,
+      title={\small (a) source connected}]
+    \addplot[figB, domain=0:5, samples=100] {1-exp(-x)};
+    \addplot[figR, domain=0:5, samples=100] {exp(-x)};
+    \addplot[black!55, dashed, thin] coordinates {(0,0.632) (1,0.632) (1,0)};
+    \addplot[black!55, dashed, thin] coordinates {(0,0.368) (1,0.368)};
+    \node[figB, font=\scriptsize, anchor=south] at (axis cs:3.6,0.98) {$I/(\mathcal E/R)$};
+    \node[figR, font=\scriptsize, anchor=south west] at (axis cs:1.9,0.16) {$|V_L|/\mathcal E$};
+  \end{axis}
+  \begin{axis}[nfig, at={(g.south east)}, anchor=south west, xshift=1.2cm, width=6.6cm, height=4.4cm,
+      xmin=0, xmax=5.3, ymin=0, ymax=1.18,
+      xtick={1,2,3,4,5}, xticklabels={$\tau_L$,$2\tau_L$,$3\tau_L$,$4\tau_L$,$5\tau_L$},
+      ytick={0.5,1}, xlabel={$t$}, clip=false, title={\small (b) source removed}]
+    \addplot[figB, domain=0:5, samples=100] {exp(-x)};
+    \addplot[figR, domain=0:5, samples=100] {exp(-2*x)};
+    \addplot[black!55, dashed, thin] coordinates {(0,0.5) (0.693,0.5) (0.693,0)};
+    \node[figB, font=\scriptsize, anchor=south west] at (axis cs:1.6,0.25) {$I/I_0 = e^{-t/\tau_L}$};
+    \node[figR, font=\scriptsize, anchor=west] (ul) at (axis cs:2.2,0.62) {$U_L/U_0 = e^{-2t/\tau_L}$};
+    \draw[figR, thin] (ul.west) -- (axis cs:0.6,0.30);
+  \end{axis}
+\end{tikzpicture}

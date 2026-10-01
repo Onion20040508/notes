@@ -1,0 +1,30 @@
+% Figure for Electromagnetism §A11.5: an ideal step-up transformer; primary winding (N_P turns) driven by an ac source, secondary winding (N_S > N_P turns) feeding a load R_S, both on one iron core that guides the common flux.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % core
+  \fill[black!18, even odd rule] (0,0) rectangle (6,4) (1,1) rectangle (5,3);
+  \draw[black!55] (0,0) rectangle (6,4) (1,1) rectangle (5,3);
+  % flux path
+  \draw[figR, thick, dashed, postaction={decorate}, decoration={markings, mark=at position 0.06 with {\arrow{Stealth}}, mark=at position 0.56 with {\arrow{Stealth}}}]
+     (0.5,0.5) rectangle (5.5,3.5);
+  \node[figR, font=\scriptsize, fill=black!18, inner sep=1pt] at (3,3.5) {flux $\Phi$ per turn};
+  % primary: 4 turns on the left leg
+  \foreach \y in {1.35,1.75,2.15,2.55} {
+    \draw[figB, very thick] (-0.15,\y) -- (1.15,{\y+0.16});
+    \draw[figB, thin, dashed] (1.15,{\y+0.16}) -- (-0.15,{\y+0.4});
+  }
+  \draw[figB, very thick] (-0.15,1.35) -- (-1.2,1.35);
+  \draw[figB, very thick] (-0.15,2.55+0.4) -- (-0.15,2.95) -- (-1.2,2.95);
+  \draw (-1.2,1.35) to[sV, l=$v_P(t)$] (-1.2,2.95);
+  \node[figB, font=\scriptsize] at (0.5,-0.3) {$N_P$ turns};
+  % secondary: 7 turns on the right leg
+  \foreach \y in {1.15,1.4,1.65,1.9,2.15,2.4,2.65} {
+    \draw[figG, very thick] (4.85,\y) -- (6.15,{\y+0.1});
+    \draw[figG, thin, dashed] (6.15,{\y+0.1}) -- (4.85,{\y+0.25});
+  }
+  \draw[figG, very thick] (6.15,1.25-0.1) -- (6.15,1.15) -- (7.7,1.15);
+  \draw[figG, very thick] (6.15,2.75) -- (7.7,2.75);
+  \draw (7.7,2.75) to[R, l=$R_S$] (7.7,1.15);
+  \node[font=\small] at (6.9,1.95) {$v_S(t)$};
+  \node[figG, font=\scriptsize] at (5.5,-0.3) {$N_S$ turns};
+  \node[font=\scriptsize, black!70] at (3,-0.3) {iron core};
+\end{tikzpicture}

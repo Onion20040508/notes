@@ -1,0 +1,20 @@
+% Figure for Electromagnetism §A2.4 (Example: charge in an off-centre cavity of a neutral conducting sphere): -q on the cavity wall, +q spread uniformly over the outer surface, no field in the metal, and an outside field centred on the sphere, not on the charge.
+\begin{tikzpicture}[>={Stealth[length=1.8mm]}, font=\small]
+  \def\R{2.0} \def\a{0.75}
+  \coordinate (C) at (-0.85,0.5);
+  \fill[black!13] (0,0) circle (\R);
+  \fill[white] (C) circle (\a);
+  \draw[black!60, thick] (0,0) circle (\R);
+  \draw[black!60, thick] (C) circle (\a);
+  % field in the cavity: radial from q (cavity centred on q)
+  \foreach \t in {22.5,67.5,...,337.5} {\draw[->, figB, line width=0.55pt] ($(C)+(\t:0.16)$) -- ($(C)+(\t:\a-0.03)$);}
+  % field outside: radial from the centre of the sphere
+  \foreach \t in {22.5,67.5,...,337.5} {\draw[->, figB, line width=0.55pt] (\t:\R+0.03) -- (\t:\R+1.0);}
+  % induced charges
+  \foreach \t in {0,45,...,315} {\node[font=\tiny\bfseries, black!80] at ($(C)+(\t:\a+0.13)$) {$-$};}
+  \foreach \t in {0,45,...,315} {\node[font=\tiny\bfseries, figR] at (\t:\R-0.14) {$+$};}
+  \fill[figR] (C) circle (0.09); \node[font=\scriptsize, figR, inner sep=1pt] at ($(C)+(0:0.3)$) {$q$};
+  \fill[black!60] (0,0) circle (0.04);
+  \node[font=\scriptsize, black!70] at (0.85,-0.75) {$\vec E = \vec 0$};
+  \node[font=\scriptsize, black!70, anchor=north west, inner sep=1pt] at (0.04,-0.04) {centre};
+\end{tikzpicture}

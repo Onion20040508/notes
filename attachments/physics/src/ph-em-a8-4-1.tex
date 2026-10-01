@@ -1,0 +1,14 @@
+% Figure for Electromagnetism §A8.4: magnitude of the field of a long straight wire of radius a carrying a uniform current, inside (linear in r) and outside (1/r).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=8.5cm, height=5cm, xmin=0, xmax=4.2, ymin=0, ymax=1.25,
+      xlabel={$r/a$}, ylabel={$B \,/\, \dfrac{\mu_0 I_0}{2\pi a}$}, xtick={0,1,2,3,4}, ytick={0,0.5,1}]
+    \fill[black!6] (axis cs:0,0) rectangle (axis cs:1,1.25);
+    \addplot[figB, domain=0:1, samples=2] {x};
+    \addplot[figB, domain=1:4.2, samples=80] {1/x};
+    \addplot[figR, dashed, thin, domain=0.8:1.0, samples=30] {1/x};
+    \draw[black!50, dashed, thin] (axis cs:1,0) -- (axis cs:1,1);
+    \node[font=\scriptsize, black!70, align=center] at (axis cs:0.5,1.12) {inside\\[-2pt]the wire};
+    \node[font=\scriptsize, figB] at (axis cs:0.62,0.36) {$\propto r$};
+    \node[font=\scriptsize, figB] at (axis cs:2.4,0.6) {$\propto 1/r$};
+  \end{axis}
+\end{tikzpicture}

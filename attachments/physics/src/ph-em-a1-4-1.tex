@@ -1,0 +1,30 @@
+% Figure for Electromagnetism §A1.4: field of a uniformly charged line segment at a point on its perpendicular bisector, built from symmetric pairs of charge elements.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  \def\z{2.2} \def\x{1.4}
+  \draw[->, thin, black!55] (-3.2,0) -- (3.4,0) node[right, font=\scriptsize] {$x$};
+  \draw[->, thin, black!55] (0,-0.3) -- (0,4.7) node[above, font=\scriptsize] {$z$};
+  \draw[line width=2.2pt, figB!45] (-2.6,0) -- (2.6,0);
+  \node[font=\scriptsize, black!70, below] at (-2.6,-0.05) {$-L/2$};
+  \node[font=\scriptsize, black!70, below] at (2.6,-0.05) {$L/2$};
+  \draw[line width=3.2pt, figB] (\x-0.12,0) -- (\x+0.12,0);
+  \draw[line width=3.2pt, figB] (-\x-0.12,0) -- (-\x+0.12,0);
+  \node[font=\scriptsize, figB, below] at (\x,-0.08) {$dq_2 = \lambda\,dx$};
+  \node[font=\scriptsize, figB, below] at (-\x,-0.08) {$dq_1$};
+  \draw[black!55, thin] (\x,0) -- (0,\z) node[pos=0.45, above right, font=\scriptsize] {$r$};
+  \draw[black!55, thin] (-\x,0) -- (0,\z);
+  \node[font=\scriptsize, black!70, left] at (0,1.1) {$z$};
+  \node[font=\scriptsize, black!70] at (0.7,-0.98) {$x$};
+  \draw[black!55, thin, |-|] (0,-0.75) -- (\x,-0.75);
+  % angle theta at P between the line to the element and the z axis
+  \draw[black!55, thin] (0,\z-0.55) arc (270:{270+atan(\x/\z)}:0.55);
+  \node[font=\scriptsize, black!70] at (0.24,\z-0.78) {$\theta$};
+  \fill (0,\z) circle (1.8pt) node[left, font=\scriptsize] {$P$\,};
+  % field contributions (unit length 1.1)
+  \pgfmathsetmacro{\r}{sqrt(\x*\x+\z*\z)}
+  \pgfmathsetmacro{\ux}{\x/\r} \pgfmathsetmacro{\uz}{\z/\r}
+  \draw[->, thick, figB] (0,\z) -- ({-1.1*\ux},{\z+1.1*\uz}) node[above left, font=\scriptsize] {$d\vec E_2$};
+  \draw[->, thick, figB] (0,\z) -- ({1.1*\ux},{\z+1.1*\uz}) node[above right, font=\scriptsize] {$d\vec E_1$};
+  \draw[black!40, thin, dashed] ({-1.1*\ux},{\z+1.1*\uz}) -- (0,{\z+1.1*\uz});
+  \draw[black!40, thin, dashed] ({1.1*\ux},{\z+1.1*\uz}) -- (0,{\z+1.1*\uz});
+  \draw[->, very thick, figR] (0,\z) -- (0,{\z+2.2*\uz}) node[right, font=\scriptsize] {$d\vec E_1 + d\vec E_2$};
+\end{tikzpicture}

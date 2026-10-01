@@ -1,0 +1,14 @@
+% Figure for Electromagnetism §A9.6 (generator coil rotating at constant omega: flux per turn and induced emf versus time, a quarter period apart).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9cm, height=4.6cm, xmin=0, xmax=2.15, ymin=-1.35, ymax=1.45,
+      axis x line=bottom, axis y line=left, clip=false,
+      xtick={0.25,0.5,0.75,1,1.5,2}, xticklabels={$\tfrac T4$,$\tfrac T2$,$\tfrac{3T}4$,$T$,$\tfrac{3T}2$,$2T$},
+      ytick={-1,1}, yticklabels={$-$peak,peak},
+      xlabel={$t$}, xlabel style={at={(axis description cs:1,0)}, anchor=west}]
+    \addplot[black!55, thin] coordinates {(0,0) (2.1,0)};
+    \addplot[figB, domain=0:2, samples=200, dashed] {cos(360*x)};
+    \addplot[figR, domain=0:2, samples=200] {sin(360*x)};
+    \node[figB, font=\scriptsize, anchor=south west] at (axis cs:0.06,1.02) {$N\Phi_m = NBA\cos\omega t$};
+    \node[figR, font=\scriptsize, anchor=south] at (axis cs:1.25,1.02) {$\mathcal E = NBA\omega\sin\omega t$};
+  \end{axis}
+\end{tikzpicture}

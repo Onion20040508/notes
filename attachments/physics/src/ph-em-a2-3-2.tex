@@ -1,0 +1,18 @@
+% Figure for Electromagnetism §A2.3 (Example: coaxial rod and tube of equal uniform density; after PHY 182, TBL 7): field strength against distance from the axis for R2 = 2 R1, R3 = 3 R1.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=8.5cm, height=5.2cm,
+      xmin=0, xmax=6.3, ymin=0, ymax=2.4,
+      xlabel={$r/R_1$}, ylabel={$E \big/ (\rho R_1/2\varepsilon_0)$},
+      xtick={0,1,2,3,4,5,6}, ytick={0,0.5,1,1.5,2}, clip=false]
+    \fill[figB!10] (axis cs:0,0) rectangle (axis cs:1,2.4);
+    \fill[figB!10] (axis cs:2,0) rectangle (axis cs:3,2.4);
+    \addplot[figB, domain=0:1, samples=2] {x};
+    \addplot[figB, domain=1:2, samples=60] {1/x};
+    \addplot[figB, domain=2:3, samples=60] {(x^2-3)/x};
+    \addplot[figB, domain=3:6.3, samples=80] {6/x};
+    \node[font=\scriptsize, black!70] at (axis cs:0.5,2.25) {rod};
+    \node[font=\scriptsize, black!70] at (axis cs:1.5,2.25) {gap};
+    \node[font=\scriptsize, black!70] at (axis cs:2.5,2.25) {tube};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:4.1,1.65) {$\propto 1/r$ outside};
+  \end{axis}
+\end{tikzpicture}

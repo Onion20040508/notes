@@ -1,0 +1,36 @@
+% Figure for Electromagnetism §A1.1: charging a metal sphere by induction with a ground connection (after University Physics Vol. 2, Figure 5.13), in four stages.
+\begin{tikzpicture}[font=\small, >={Stealth[length=2mm]}]
+  \tikzset{rod/.pic={\fill[figR!18] (-0.18,-0.75) rectangle (0.18,0.75); \draw[figR, thick] (-0.18,-0.75) rectangle (0.18,0.75);
+      \foreach \y in {-0.5,-0.17,0.17,0.5} {\node[figR, font=\scriptsize\bfseries] at (0,\y) {$+$};}}}
+  % (a) rod near neutral sphere: polarized
+  \begin{scope}
+    \pic at (-0.25,0) {rod};
+    \draw[black!70, thick] (1.3,0) circle (0.75);
+    \foreach \a in {150,180,210} {\node[font=\scriptsize\bfseries] at ($(1.3,0)+(\a:0.55)$) {$-$};}
+    \foreach \a in {-30,0,30} {\node[font=\scriptsize\bfseries, figR] at ($(1.3,0)+(\a:0.55)$) {$+$};}
+    \node[font=\scriptsize, black!70, align=center] at (0.75,-1.9) {(a) rod brought near:\\ sphere polarized};
+  \end{scope}
+  % (b) grounded: electrons flow up from ground, neutralizing the far side
+  \begin{scope}[xshift=3.3cm]
+    \pic at (-0.25,0) {rod};
+    \draw[black!70, thick] (1.3,0) circle (0.75);
+    \foreach \a in {150,180,210} {\node[font=\scriptsize\bfseries] at ($(1.3,0)+(\a:0.55)$) {$-$};}
+    \draw[black!70, thick] (1.3,-0.75) -- (1.3,-1.0) node[ground] {};
+    \draw[->, figB, thick] (1.5,-1.12) -- (1.5,-0.82); \node[figB, font=\scriptsize, anchor=west] at (1.55,-1.0) {$e^-$};
+    \node[font=\scriptsize, black!70, align=center] at (0.75,-1.9) {(b) grounded: electrons\\ come up from Earth};
+  \end{scope}
+  % (c) ground removed with rod still present
+  \begin{scope}[xshift=6.6cm]
+    \pic at (-0.25,0) {rod};
+    \draw[black!70, thick] (1.3,0) circle (0.75);
+    \foreach \a in {150,180,210} {\node[font=\scriptsize\bfseries] at ($(1.3,0)+(\a:0.55)$) {$-$};}
+    \draw[black!70, thick] (1.3,-0.75) -- (1.3,-0.85); \draw[black!70, thick] (1.3,-0.98) -- (1.3,-1.0) node[ground] {};
+    \node[font=\scriptsize, black!70, align=center] at (0.75,-1.9) {(c) ground removed\\ first};
+  \end{scope}
+  % (d) rod removed: net negative charge spreads over the sphere
+  \begin{scope}[xshift=9.9cm]
+    \draw[black!70, thick] (1.0,0) circle (0.75);
+    \foreach \a in {90,210,330} {\node[font=\scriptsize\bfseries] at ($(1.0,0)+(\a:0.55)$) {$-$};}
+    \node[font=\scriptsize, black!70, align=center] at (1.0,-1.9) {(d) rod removed: sphere\\ keeps net charge $<0$};
+  \end{scope}
+\end{tikzpicture}

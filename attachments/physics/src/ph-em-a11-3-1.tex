@@ -1,0 +1,17 @@
+% Figure for Electromagnetism §A11.3: instantaneous power p(t) = i(t)v(t) and its average, for a resistor, a capacitor, and an RLC circuit with phase angle pi/3.
+\begin{tikzpicture}[font=\small]
+  \foreach \k/\ph/\name in {0/0/{resistor, $\phi = 0$}, 1/-90/{capacitor, $\phi = -\pi/2$}, 2/60/{RLC source, $\phi = \pi/3$}} {
+    \begin{axis}[nfig, at={(\k*4.2cm,0)}, width=4.4cm, height=3.6cm,
+        xmin=0, xmax=12.9, ymin=-0.75, ymax=1.15,
+        xtick={0,3.1416,6.2832,9.4248,12.566}, xticklabels={$0$,$\pi$,$2\pi$,$3\pi$,$4\pi$},
+        ytick={-0.5,0,0.5,1}, yticklabels={$-\tfrac12$,$0$,$\tfrac12$,$1$},
+        xlabel={$\omega t$}, xlabel style={font=\scriptsize, yshift=4pt},
+        ylabel={$p/I_0V_0$}, ylabel style={font=\scriptsize, yshift=-6pt},
+        title={\name}, title style={font=\scriptsize, yshift=-2pt}]
+      \addplot[black!30, thin, domain=0:12.9, samples=2] {0};
+      \addplot[figB, thin, domain=0:12.6, samples=100] {0.45*sin(deg(x))};
+      \addplot[figR, domain=0:12.6, samples=160] {sin(deg(x))*sin(deg(x)-\ph)};
+      \addplot[figR, dashed, thin, domain=0:12.6, samples=2] {0.5*cos(\ph)};
+    \end{axis}
+  }
+\end{tikzpicture}

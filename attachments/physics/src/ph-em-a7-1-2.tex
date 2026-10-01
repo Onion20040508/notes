@@ -1,0 +1,19 @@
+% Figure for Electromagnetism §A7.1: the magnetic force F = q v x B is perpendicular to the plane of v and B (right-hand rule).
+\begin{tikzpicture}[>={Stealth[length=2.4mm]}, font=\small, x={(-0.55cm,-0.5cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}, scale=1.5]
+  \def\th{65}
+  % plane spanned by v (along y) and B (in the floor, angle th from v)
+  \coordinate (O) at (0,0,0);
+  \coordinate (V) at (0,2.0,0);
+  \coordinate (B) at ({-2.2*sin(\th)},{2.2*cos(\th)},0);
+  \fill[black!6] (O) -- (V) -- ($(V)+(B)$) -- (B) -- cycle;
+  \draw[black!45, thin, dashed] (V) -- ($(V)+(B)$) -- (B);
+  \draw[->, very thick, black] (O) -- (V) node[right] {$\vec v$};
+  \draw[->, very thick, figB] (O) -- (B) node[above left] {$\vec B$};
+  \draw[black!60, thin] plot[domain=0:\th, samples=20] ({-0.55*sin(\x)},{0.55*cos(\x)},0);
+  \node[font=\scriptsize, black!70] at ({-0.8*sin(32)},{0.8*cos(32)},0) {$\theta$};
+  \draw[->, very thick, figR] (O) -- (0,0,1.6) node[above] {$\vec F = q\,\vec v\times\vec B$ \ ($q>0$)};
+  \draw[->, thick, figR, dashed] (O) -- (0,0,-1.0) node[below] {$q<0$};
+  \draw[black!60, thin] (0,0,0.18) -- (0,0.18,0.18) -- (0,0.18,0);
+  \fill (O) circle (1.3pt);
+  \node[font=\scriptsize, black!70, anchor=west] at (0,1.2,-0.75) {$F = |q|\,vB\sin\theta$};
+\end{tikzpicture}

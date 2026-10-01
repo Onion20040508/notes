@@ -1,0 +1,29 @@
+% Figure for Electromagnetism §A7.4: rectangular current loop on an axle, seen along the axle, in a uniform field B; forces on the two long sides, lever arms and the dipole moment.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  \def\th{50}
+  \foreach \y in {-1.8,-0.9,0,0.9,1.8} \draw[->, black!30, thin] (-2.6,\y) -- (2.8,\y);
+  \node[black!55, font=\small] at (3.05,1.8) {$\vec B$};
+  \coordinate (P) at ({1.25*sin(\th)},{1.25*cos(\th)});
+  \coordinate (M) at ({-1.25*sin(\th)},{-1.25*cos(\th)});
+  \draw[line width=2.2pt, black!75] (M) -- (P);
+  % dipole moment
+  \draw[->, very thick, figR] (0,0) -- ({1.3*cos(\th)},{-1.3*sin(\th)}) node[below right, inner sep=1pt] {$\vec\mu$};
+  \draw[figR, thin] (0.55,0) arc (0:-\th:0.55);
+  \node[figR, font=\scriptsize] at ({0.78*cos(\th/2)},{-0.78*sin(\th/2)}) {$\theta$};
+  % currents
+  \filldraw[fill=white, draw=black, thick] (P) circle (0.11); \fill (P) circle (0.035);
+  \filldraw[fill=white, draw=black, thick] (M) circle (0.11);
+  \draw[thick] (M) ++(-0.075,-0.075) -- ++(0.15,0.15) ++(-0.15,0) -- ++(0.15,-0.15);
+  % forces
+  \draw[->, very thick, figB] ($(P)+(0,0.13)$) -- ++(0,1.0) node[above] {$\vec F_2$};
+  \draw[->, very thick, figB] ($(M)+(0,-0.13)$) -- ++(0,-1.0) node[below] {$\vec F_4$};
+  % lever arms
+  \draw[black!55, dashed, thin] (M) -- (M |- 0,0);
+  \draw[black!55, dashed, thin] (0,0) -- (M |- 0,0);
+  \node[font=\scriptsize, black!70, fill=white, inner sep=1pt] at (-0.66,0.25) {$\tfrac a2\sin\theta$};
+  % axle
+  \fill[black] (0,0) circle (1.6pt);
+  \node[font=\scriptsize, black!70] at (-0.13,0.15) {$O$};
+  \draw[->, figG, thick] (-0.5,1.2) arc (130:200:0.7);
+  \node[figG, font=\scriptsize] at (-1.25,1.0) {$\vec\tau$ (CCW)};
+\end{tikzpicture}

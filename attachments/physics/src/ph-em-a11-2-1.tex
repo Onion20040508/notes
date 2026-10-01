@@ -1,0 +1,20 @@
+% Figure for Electromagnetism §A11.2: the RLC series circuit with an ac source (left) and its phasor diagram (right), drawn to scale for the values of Example §A11.2.1.
+\begin{tikzpicture}[>={Stealth[length=2.3mm]}, font=\small]
+  % circuit
+  \draw (0,0) to[sV, l=$v(t)$] (0,3) to[R, l=$R$] (3,3) to[L, l=$L$, -] (3,0) to[C, l=$C$] (0,0);
+  \draw[->, figR, thick] (1.0,2.55) -- (2.0,2.55) node[midway, below, font=\scriptsize] {$i(t)$};
+  % phasor diagram (scale: 0.1 V -> 4 cm), current phasor taken horizontal
+  \begin{scope}[shift={(5.6,1.0)}]
+    \def\VR{3.29}\def\VL{3.10}\def\VC{0.82}
+    \draw[thin, black!55] (-0.4,0) -- (4.3,0);
+    \draw[->, very thick, figB] (0,0) -- (\VR,0) node[midway, below, font=\scriptsize] {$V_R = I_0R$};
+    \draw[->, very thick, figB] (0,0) -- (0,\VL) node[left, font=\scriptsize] {$V_L = I_0X_L$};
+    \draw[->, very thick, figB] (0,0) -- (0,-\VC) node[left, font=\scriptsize] {$V_C = I_0X_C$};
+    \draw[dashed, black!55] (\VR,0) -- (\VR,{\VL-\VC}) node[midway, right, font=\scriptsize, black!80] {$V_L - V_C$};
+    \draw[->, very thick, figR] (0,0) -- (\VR,{\VL-\VC}) node[above, font=\scriptsize] {$V_0$};
+    \draw[thin, black!55] (2.0,0) arc (0:{atan((\VL-\VC)/\VR)}:2.0);
+    \node[font=\scriptsize] at (2.2,0.42) {$\phi$};
+    \draw[->, thick, figG] (0,0) -- (1.1,0);
+    \node[font=\scriptsize, figG] at (0.9,0.2) {$I_0$};
+  \end{scope}
+\end{tikzpicture}

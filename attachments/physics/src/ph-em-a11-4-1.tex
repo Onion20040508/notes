@@ -1,0 +1,16 @@
+% Figure for Electromagnetism §A11.4: average power delivered to a series RLC circuit versus driving frequency, for quality factors Q = 2 and Q = 6, with the half-power bandwidth marked.
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small]
+  \begin{axis}[nfig, width=8.5cm, height=5.0cm, xmin=0, xmax=2.6, ymin=0, ymax=1.15,
+      xtick={1}, xticklabels={$\omega_0$}, ytick={0.5,1}, yticklabels={$\tfrac12 P_{\max}$, $P_{\max}$},
+      xlabel={$\omega$}, ylabel={$P_{\text{ave}}$}, ylabel style={rotate=-90, at={(axis description cs:0,1.08)}, anchor=south},
+      clip=false]
+    \addplot[figB, domain=0.05:2.6, samples=300] {1/(1+4*(x-1/x)^2)};
+    \addplot[figR, domain=0.05:2.6, samples=400] {1/(1+36*(x-1/x)^2)};
+    \addplot[black!40, thin, dashed, domain=0:2.6, samples=2] {0.5};
+    \draw[black!40, thin, dashed] (axis cs:1,0) -- (axis cs:1,1);
+    \draw[<->, figB, thin] (axis cs:0.7808,0.5) -- (axis cs:1.2808,0.5);
+    \node[figB, font=\scriptsize, anchor=north west, inner sep=1pt] at (axis cs:1.11,0.485) {$\Delta\omega$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.08,0.93) {$Q = 6$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.45,0.33) {$Q = 2$};
+  \end{axis}
+\end{tikzpicture}

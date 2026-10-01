@@ -1,0 +1,15 @@
+% Figure for Electromagnetism §A4.2 (three capacitors in series and in parallel across a battery of voltage V).
+\begin{circuitikz}[font=\small]
+  % series
+  \draw (0,0) to[battery1, l=$V$] (0,2.4) -- (0.6,2.4) to[C, l=$C_1$] (2.2,2.4) to[C, l=$C_2$] (3.8,2.4) to[C, l=$C_3$] (5.0,2.4) -- (5.0,0) -- (0,0);
+  \node at (2.5,-0.6) {(a) series: same $Q$, voltages add};
+  % parallel
+  \begin{scope}[shift={(7.0,0)}]
+    \draw (0,0) to[battery1, l=$V$] (0,2.4) -- (4.2,2.4);
+    \draw (0,0) -- (4.2,0);
+    \draw (1.4,2.4) to[C, l=$C_1$] (1.4,0);
+    \draw (2.8,2.4) to[C, l=$C_2$] (2.8,0);
+    \draw (4.2,2.4) to[C, l=$C_3$] (4.2,0);
+    \node at (2.1,-0.6) {(b) parallel: same $V$, charges add};
+  \end{scope}
+\end{circuitikz}

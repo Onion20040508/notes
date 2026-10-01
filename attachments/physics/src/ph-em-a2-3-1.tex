@@ -1,0 +1,40 @@
+% Figure for Electromagnetism §A2.3: the Gaussian surface for each of the three symmetries; red arrows show the field on the surface, which is either along the normal (flux E dA) or tangent to the surface (no flux).
+\begin{tikzpicture}[>={Stealth[length=2mm]}, font=\small]
+  % --- spherical ---
+  \begin{scope}
+    \fill[figB!30] (0,0) circle (0.75); \draw[figB!60] (0,0) circle (0.75);
+    \draw[black!60, dashed, thick] (0,0) circle (1.45);
+    \draw[black!45, dashed, thin] (-1.45,0) arc (180:360:1.45 and 0.35);
+    \foreach \a in {0,45,...,315} {\draw[->, thick, figR] (\a:1.45) -- (\a:2.0);}
+    \draw[black!60, thin] (0,0) -- (125:1.45) node[pos=0.6, left, font=\scriptsize] {$r$};
+    \node[font=\scriptsize, black!70, align=center] at (0,-2.55) {spherical:\\ sphere, $\Phi = E\cdot 4\pi r^2$};
+  \end{scope}
+  % --- cylindrical ---
+  \begin{scope}[xshift=4.6cm]
+    \fill[figB!35] (-0.12,-2.0) rectangle (0.12,2.0);
+    \node[figB, font=\scriptsize] at (0,2.2) {$\vdots$}; \node[figB, font=\scriptsize] at (0,-2.15) {$\vdots$};
+    \draw[black!60, dashed, thick] (0,1.15) ellipse (1.0 and 0.28);
+    \draw[black!60, dashed, thick] (-1.0,-1.15) arc (180:360:1.0 and 0.28);
+    \draw[black!45, dashed, thin] (1.0,-1.15) arc (0:180:1.0 and 0.28);
+    \draw[black!60, dashed, thick] (-1.0,-1.15) -- (-1.0,1.15); \draw[black!60, dashed, thick] (1.0,-1.15) -- (1.0,1.15);
+    \foreach \y in {-0.7,0,0.7} {\draw[->, thick, figR] (1.0,\y) -- (1.6,\y); \draw[->, thick, figR] (-1.0,\y) -- (-1.6,\y);}
+    \draw[->, thick, figR] (0.55,1.15) -- (0.95,1.15);
+    \draw[->, thin, black!60] (-0.6,1.15) -- (-0.6,1.6) node[above, font=\scriptsize] {$\hat n$};
+    \draw[black!60, thin, |-|] (1.25,1.15) -- (1.25,-1.15); \node[font=\scriptsize, black!70] at (1.42,-1.45) {$L$};
+    \node[font=\scriptsize, black!70, align=center] at (0,-2.55) {cylindrical:\\ cylinder, $\Phi = E\cdot 2\pi r L$};
+  \end{scope}
+  % --- planar ---
+  \begin{scope}[xshift=8.9cm]
+    \fill[figB!20] (-1.6,-0.35) -- (1.0,-0.35) -- (1.6,0.35) -- (-1.0,0.35) -- cycle;
+    \draw[figB!60] (-1.6,-0.35) -- (1.0,-0.35) -- (1.6,0.35) -- (-1.0,0.35) -- cycle;
+    \node[font=\scriptsize, figB] at (1.25,-0.15) {$\sigma$};
+    \draw[black!60, dashed, thick] (0,1.0) ellipse (0.55 and 0.16);
+    \draw[black!60, dashed, thick] (-0.55,-1.0) arc (180:360:0.55 and 0.16);
+    \draw[black!45, dashed, thin] (0.55,-1.0) arc (0:180:0.55 and 0.16);
+    \draw[black!60, dashed, thick] (-0.55,-1.0) -- (-0.55,1.0); \draw[black!60, dashed, thick] (0.55,-1.0) -- (0.55,1.0);
+    \foreach \x in {-0.25,0.25} {\draw[->, thick, figR] (\x,1.0) -- (\x,1.65); \draw[->, thick, figR] (\x,-1.0) -- (\x,-1.65);}
+    \draw[->, thick, figR] (0.55,0.6) -- (0.55,0.95);
+    \node[font=\scriptsize, black!70] at (-0.85,1.05) {$A$};
+    \node[font=\scriptsize, black!70, align=center] at (0,-2.55) {planar:\\ pillbox, $\Phi = E\cdot 2A$};
+  \end{scope}
+\end{tikzpicture}

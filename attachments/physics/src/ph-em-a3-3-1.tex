@@ -1,0 +1,10 @@
+% Figure for Electromagnetism §A3.3 (potential on the axis of a uniformly charged disk compared with that of a point charge of the same total charge).
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.4cm, height=5.6cm, xmin=0, xmax=4.2, ymin=0, ymax=1.15,
+      xlabel={$z/R$}, ylabel={$V \,/\, (2\pi k\sigma R)$}, xtick={0,1,2,3,4}, ytick={0,0.5,1}]
+    \addplot[figR, very thick, domain=0:4.2, samples=100] {sqrt(1+x^2)-x};
+    \addplot[figB, thick, dashed, domain=0.44:4.2, samples=100] {1/(2*x)};
+    \node[font=\scriptsize, figB, anchor=south west] at (axis cs:1.15,0.47) {point charge $kQ/z$};
+    \node[font=\scriptsize, figR, anchor=north east] at (axis cs:1.15,0.3) {disk};
+  \end{axis}
+\end{tikzpicture}

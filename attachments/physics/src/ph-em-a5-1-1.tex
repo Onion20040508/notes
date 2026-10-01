@@ -1,0 +1,12 @@
+% Figure for Electromagnetism §A5.1: a simple circuit (battery, closed switch, lamp) with the conventional current.
+\begin{circuitikz}[>={Stealth[length=2.2mm]}, font=\small]
+  \draw (0,2.6) to[battery1, l=$\mathcal E$] (0,0) -- (3.4,0)
+        to[lamp, l_=lamp] (3.4,2.6)
+        to[ccsw, l_=switch (closed)] (0,2.6);
+  \node[font=\scriptsize] at (-0.5,1.75) {$+$};
+  \node[font=\scriptsize] at (-0.5,0.85) {$-$};
+  % conventional current arrows
+  \draw[->, thick, figR] (0.35,2.25) -- (1.15,2.25) node[midway, below, font=\scriptsize] {$I$};
+  \draw[->, thick, figR] (2.85,1.9) -- (2.85,0.9) node[midway, left, font=\scriptsize] {$I$};
+  \draw[->, thick, figR] (2.3,0.35) -- (1.3,0.35) node[midway, above, font=\scriptsize] {$I$};
+\end{circuitikz}

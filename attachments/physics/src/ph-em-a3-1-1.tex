@@ -1,0 +1,20 @@
+% Figure for Electromagnetism §A3.1 (Example: charge Q = 3.0 nC repelled from q = 5.0 nC, released at r1 = 10 cm; potential energy, kinetic energy and their constant sum versus r).
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.6cm, height=6cm, xmin=0, xmax=0.62, ymin=0, ymax=17.5,
+      xlabel={$r$ (m)}, ylabel={energy ($10^{-7}$ J)}, xtick={0.1,0.15,0.3,0.45,0.6}, ytick={4.5,9,13.5},
+      xticklabel style={/pgf/number format/fixed}, clip=false]
+    \addplot[black!55, thin, dashed, domain=0.1:0.6] {13.485};
+    \addplot[figB, very thick, domain=0.077:0.6, samples=120] {1.3485/x};
+    \addplot[figR, very thick, domain=0.1:0.6, samples=120] {13.485-1.3485/x};
+    \draw[black!55, densely dotted] (axis cs:0.15,0) -- (axis cs:0.15,8.99);
+    \draw[black!55, densely dotted] (axis cs:0.1,0) -- (axis cs:0.1,13.485);
+    \fill[figB] (axis cs:0.1,13.485) circle (1.8pt);
+    \fill[figB] (axis cs:0.15,8.99) circle (1.8pt);
+    \fill[figR] (axis cs:0.15,4.495) circle (1.8pt);
+    \draw[<->, black!70, thin] (axis cs:0.165,8.99) -- (axis cs:0.165,13.485) node[midway, right, font=\scriptsize] {$-\Delta U$};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:0.32,5.4) {$U(r) = kqQ/r$};
+    \node[font=\scriptsize, figR, anchor=west] at (axis cs:0.36,11.0) {$K(r)$};
+    \node[font=\scriptsize, black!70, anchor=south east] at (axis cs:0.6,13.6) {$K + U$ (constant)};
+    \node[font=\scriptsize, figR, anchor=north west] at (axis cs:0.152,4.3) {$K_2 = 4.5$};
+  \end{axis}
+\end{tikzpicture}

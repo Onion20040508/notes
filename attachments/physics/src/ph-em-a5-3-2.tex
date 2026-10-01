@@ -1,0 +1,26 @@
+% Figure for Electromagnetism §A5.3 (Example: leakage resistance of a coaxial cable): cross-section with radial leakage current and one thin shell.
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small]
+  \def\ri{0.7} \def\ro{2.2} \def\r{1.45} \def\dr{0.16}
+  \fill[black!8] (0,0) circle (\ro);
+  \fill[white] (0,0) circle (\ri);
+  \fill[figR!25, even odd rule] (0,0) circle (\r+\dr/2) (0,0) circle (\r-\dr/2);
+  \draw[figR, thin] (0,0) circle (\r+\dr/2) (0,0) circle (\r-\dr/2);
+  \fill[black!35] (0,0) circle (\ri);
+  \draw[very thick, black!60] (0,0) circle (\ro);
+  \draw[black!70, line width=2.4pt] (0,0) circle (\ro+0.05);
+  \foreach \a in {0,45,...,315} \draw[->, figB, thick] (\a:\ri+0.12) -- (\a:\ro-0.12);
+  % labels
+  \draw[black!55, thin] (0,0) -- (200:\ri) node[midway, above, font=\scriptsize, black] {$r_i$};
+  \draw[black!55, thin] (0,0) -- (250:\ro);
+  \node[font=\scriptsize] at (244:1.85) {$r_o$};
+  \node[font=\scriptsize, figR, anchor=west] at (2.7,1.2) {shell: radius $r$, thickness $dr$};
+  \draw[figR, thin] (2.75,1.05) -- (65:\r+0.05);
+  \node[font=\scriptsize, black!70, anchor=west] at (2.7,0.35) {insulator, resistivity $\rho$};
+  \draw[black!55, thin] (2.75,0.35) -- (10:1.9);
+  \node[font=\scriptsize, black!70, anchor=west] at (2.7,-0.5) {inner conductor};
+  \draw[black!55, thin] (2.75,-0.5) -- (-20:0.45);
+  \node[font=\scriptsize, black!70, anchor=west] at (2.7,-1.3) {outer conductor};
+  \draw[black!55, thin] (2.75,-1.3) -- (-30:\ro+0.05);
+  \node[font=\scriptsize, figB, anchor=west] at (2.7,-2.1) {leakage current};
+  \draw[figB, thin] (2.75,-2.1) -- (-45:1.75);
+\end{tikzpicture}

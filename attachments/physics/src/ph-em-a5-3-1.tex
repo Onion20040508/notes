@@ -1,0 +1,15 @@
+% Figure for Electromagnetism §A5.3: current-voltage characteristics (schematic) of an ohmic resistor and of a diode.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=8.5cm, height=6cm, axis lines=middle, clip=false,
+      xmin=-2.2, xmax=2.3, ymin=-24, ymax=27,
+      xlabel={$V$ (V)}, ylabel={$I$ (mA)},
+      xlabel style={anchor=north west, font=\small}, ylabel style={anchor=south east, font=\small},
+      xtick={-2,-1,1,2}, ytick={-20,-10,10,20}]
+    \addplot[figB, domain=-2.1:2.1, samples=2] {10*x};
+    \addplot[figR, domain=-2.1:0.757, samples=300] {1e-8*(exp(x/0.035)-1)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.15,9.5) {resistor: slope $1/R$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.8,17) {diode};
+    \draw[black!55, dashed, thin] (axis cs:0.7,0) -- (axis cs:0.7,26);
+    \node[black!70, font=\scriptsize, anchor=north east] at (axis cs:0.72,-1.5) {$\approx 0.7$ V};
+  \end{axis}
+\end{tikzpicture}
