@@ -13,6 +13,7 @@
 
 **Physics**
 - [[Classical Mechanics]]
+- [[Electromagnetism]]
 - [[Quantum Field Theory I]]
 - Conventions: [[University Physics]] (introductory level), [[Larsen PHY 513]]
 
