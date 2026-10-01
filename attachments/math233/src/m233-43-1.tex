@@ -1,0 +1,26 @@
+% Figure for Calculus §43.
+\begin{tikzpicture}[x=1.5cm, y=0.75cm, font=\scriptsize,
+    declare function={f(\x)=1+\x*\x;}]
+  % area under the curve
+  \fill[figB!16] (-1,0) -- plot[domain=-1:2, samples=60] (\x,{f(\x)}) -- (2,0) -- cycle;
+  % the rectangle of height f_avg = 2: excess above (red) and deficit (green outline)
+  \fill[figO!30] (-1,0) rectangle (2,2);
+  \fill[figB!16] (-1,0) -- plot[domain=-1:2, samples=60] (\x,{min(f(\x),2)}) -- (2,0) -- cycle;
+  \fill[figB!35] plot[domain=1:2, samples=40] (\x,{f(\x)}) -- (2,2) -- (1,2) -- cycle;
+  \fill[figB!35] (-1,2) -- (-1,{f(-1)}) -- cycle;
+  \draw[figR, thick] (-1.25,2) -- (2.3,2) node[right] {$y=f_{\rm avg}=2$};
+  \draw[figB, thick] plot[domain=-1.15:2.08, samples=80] (\x,{f(\x)});
+  \node[figB, above left] at (1.95,{f(1.95)}) {$y=1+x^2$};
+  \draw[black!40, thin] (-1,0) -- (-1,2);
+  \draw[black!40, thin] (2,0) -- (2,5);
+  \foreach \c in {-1,1} {\draw[figR, thin, dashed] (\c,0) -- (\c,2); \fill[figR] (\c,2) circle (1.5pt);}
+  % axes
+  \draw[-stealth, thin, black!70] (-1.5,0) -- (2.6,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.3) -- (0,5.6) node[above] {$y$};
+  \foreach \t in {-1,1,2} \draw[thin, black!70] (\t,0.08) -- (\t,-0.08) node[below] {$\t$};
+  \node[below left] at (0,0) {$0$};
+  \node[figR, below] at (1,-0.45) {$c=1$};
+  \node[figR, below] at (-1,-0.45) {$c=-1$};
+  \node[figO!80!black] at (0,1.35) {$-$};
+  \node[figB] at (1.72,2.75) {$+$};
+\end{tikzpicture}

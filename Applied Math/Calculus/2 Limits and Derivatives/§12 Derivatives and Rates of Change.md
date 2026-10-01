@@ -45,7 +45,7 @@ With limits available, the tangent and velocity problems of [[§6 The Tangent an
 ^thm-12-1
 
 > [!proof]+ Proof
-> Stewart's reason is that $h = x - a$ approaches $0$ exactly when $x$ approaches $a$. In terms of the precise definition ([[§9 The Precise Definition of a Limit|§9]]): let $F(x) = \dfrac{f(x) - f(a)}{x - a}$, so that $F(a + h) = \dfrac{f(a + h) - f(a)}{h}$. Suppose $\lim_{x \to a} F(x) = m$, and let $\varepsilon > 0$. There is $\delta > 0$ with
+> Stewart's reason is that $h = x - a$ approaches $0$ exactly when $x$ approaches $a$. In terms of the precise definition ([[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]): let $F(x) = \dfrac{f(x) - f(a)}{x - a}$, so that $F(a + h) = \dfrac{f(a + h) - f(a)}{h}$. Suppose $\lim_{x \to a} F(x) = m$, and let $\varepsilon > 0$. There is $\delta > 0$ with
 >
 > $$
 > 0 < |x - a| < \delta \quad\Longrightarrow\quad |F(x) - m| < \varepsilon .
@@ -55,7 +55,7 @@ With limits available, the tangent and velocity problems of [[§6 The Tangent an
 
 ^pf-12-1
 
-*Uses:* [[§12 Derivatives and Rates of Change#^def-12-1|Def. §12.1]], [[§9 The Precise Definition of a Limit|§9]] (precise definition of a limit)
+*Uses:* [[§12 Derivatives and Rates of Change#^def-12-1|Def. §12.1]], [[§9 The Precise Definition of a Limit#^def-9-1|Def. §9.1]] (precise definition of a limit)
 
 > [!example] Example §12.1: Tangent Lines from the Definition
 > **(a)** Find an equation of the tangent line to the parabola $y = x^2$ at $P(1, 1)$.
@@ -66,7 +66,7 @@ With limits available, the tangent and velocity problems of [[§6 The Tangent an
 > m = \lim_{x \to 1} \frac{f(x) - f(1)}{x - 1} = \lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1} \frac{(x - 1)(x + 1)}{x - 1} = \lim_{x \to 1} (x + 1) = 1 + 1 = 2 .
 > $$
 >
-> By the point-slope form $y - y_1 = m(x - x_1)$, the tangent line is $y - 1 = 2(x - 1)$, or $y = 2x - 1$. This confirms the guess made from secant slopes in [[§6 The Tangent and Velocity Problems|§6]] (Stewart's Example 2.1.1). Zooming in toward $(1, 1)$, the parabola becomes almost indistinguishable from this line.
+> By the point-slope form $y - y_1 = m(x - x_1)$, the tangent line is $y - 1 = 2(x - 1)$, or $y = 2x - 1$. This confirms the guess made from secant slopes in [[§6 The Tangent and Velocity Problems#^ex-6-1|Example §6.1]]. Zooming in toward $(1, 1)$, the parabola becomes almost indistinguishable from this line.
 >
 > **(b)** Find an equation of the tangent line to the hyperbola $y = 3/x$ at $(3, 1)$.
 >
@@ -106,7 +106,7 @@ With limits available, the tangent and velocity problems of [[§6 The Tangent an
 > [!example] Example §12.2: The Falling Ball
 > A ball is dropped from the upper observation deck of the CN Tower, $450$ m above the ground. (a) What is its velocity after $5$ seconds? (b) How fast is it traveling when it hits the ground?
 >
-> The distance fallen after $t$ seconds is $s = f(t) = 4.9t^2$ meters ([[§6 The Tangent and Velocity Problems|§6]]). Two velocities are asked for, so first find the velocity at a general time $t = a$:
+> The distance fallen after $t$ seconds is $s = f(t) = 4.9t^2$ meters ([[§6 The Tangent and Velocity Problems#^ex-6-3|Example §6.3]]). Two velocities are asked for, so first find the velocity at a general time $t = a$:
 >
 > $$
 > \begin{aligned}

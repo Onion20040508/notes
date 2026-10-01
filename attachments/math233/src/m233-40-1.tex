@@ -1,0 +1,32 @@
+% Figure for Calculus §40.
+\begin{tikzpicture}[font=\scriptsize]
+  % (a) the region and the radii
+  \begin{scope}[x=3.4cm, y=1.7cm]
+    \def\xx{0.45}
+    \fill[figB!16] plot[domain=0:1, samples=40] (\x,{\x*\x}) -- plot[domain=1:0, samples=2] (\x,\x) -- cycle;
+    \draw[-stealth, thin, black!70] (-0.08,0) -- (1.35,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-0.1) -- (0,2.45) node[above] {$y$};
+    \draw[figB, thick] plot[domain=-0.05:1.18, samples=60] (\x,{\x*\x}) node[above] {$y=x^2$};
+    \draw[figB, thick] (-0.05,-0.05) -- (1.27,1.27) node[right] {$y=x$};
+    \draw[figO, thick, dashed] (-0.08,2) -- (1.3,2) node[right] {axis $y=2$};
+    \draw[figR, very thick] (\xx,{\xx*\xx}) -- (\xx,\xx);
+    \draw[stealth-stealth, thin] ({\xx-0.05},2) -- ({\xx-0.05},\xx) node[midway, left] {$r_{\rm in}=2-x$};
+    \draw[stealth-stealth, thin] ({\xx+0.05},2) -- ({\xx+0.05},{\xx*\xx}) node[pos=0.3, right] {$r_{\rm out}=2-x^2$};
+    \draw[thin, black!70] (\xx,0.03) -- (\xx,-0.03) node[below] {$x$};
+    \draw[thin, black!70] (1,0.03) -- (1,-0.03) node[below] {$1$};
+    \fill (1,1) circle (1.3pt) node[below right] {$(1,1)$};
+    \node[below left] at (0,0) {$0$};
+    \node at (0.62,-0.42) {(a) the region and a typical segment};
+  \end{scope}
+  % (b) the washer swept out by the segment
+  \begin{scope}[xshift=8.0cm, yshift=1.9cm]
+    \def\ro{1.62} \def\ri{1.40}
+    \fill[figR!30, even odd rule] (0,0) circle (\ro) (0,0) circle (\ri);
+    \draw[figR, thin] (0,0) circle (\ro);
+    \draw[figR, thin] (0,0) circle (\ri);
+    \fill[figO] (0,0) circle (1.3pt) node[below] {axis};
+    \draw[-stealth, thin] (0,0) -- (130:\ri) node[pos=0.55, left] {$r_{\rm in}$};
+    \draw[-stealth, thin] (0,0) -- (35:\ro) node[pos=0.6, below right=-1pt] {$r_{\rm out}$};
+    \node[align=center] at (0,-2.33) {(b) cross-section: $A=\pi r_{\rm out}^2-\pi r_{\rm in}^2$};
+  \end{scope}
+\end{tikzpicture}

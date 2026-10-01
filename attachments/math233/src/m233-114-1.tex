@@ -1,0 +1,23 @@
+% Figure for Calculus §114.
+\begin{tikzpicture}[x={(-0.55cm,-0.45cm)}, y={(1.1cm,0cm)}, z={(0cm,1.1cm)}, font=\scriptsize,
+    declare function={gz(\t)=2.0+0.12*cos(2*\t)+0.08*sin(\t);},
+    mid arrow/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
+  \draw[-stealth, thin, black!70] (0,0,0) -- (2.8,0,0) node[below left] {$x$};
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,3.0,0) node[right] {$y$};
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,0,3.3) node[above] {$z$};
+  % region D in the xy-plane
+  \fill[black!12] plot[domain=0:360, samples=90] ({1.3*cos(\x)},{1.4+1.0*sin(\x)},0) -- cycle;
+  \draw[black!60, thick, mid arrow=0.08, mid arrow=0.58] plot[domain=0:360, samples=90] ({1.3*cos(\x)},{1.4+1.0*sin(\x)},0);
+  \node at (0.2,1.5,0) {$D$};
+  \node[black!70, right] at (0.5,2.45,0) {$C_1$};
+  % vertical guides
+  \foreach \t in {0,90,180,270} \draw[black!35, dashed] ({1.3*cos(\t)},{1.4+1.0*sin(\t)},0) -- ({1.3*cos(\t)},{1.4+1.0*sin(\t)},{gz(\t)});
+  % surface S bounded by C
+  \fill[figB!25, opacity=0.85] plot[domain=0:360, samples=90] ({1.3*cos(\x)},{1.4+1.0*sin(\x)},{gz(\x)}) -- cycle;
+  \draw[figB, thick, mid arrow=0.08, mid arrow=0.58] plot[domain=0:360, samples=90] ({1.3*cos(\x)},{1.4+1.0*sin(\x)},{gz(\x)});
+  \node[figB, font=\small] at (0.3,1.3,2.15) {$S$};
+  \node[figB, below right] at ({1.3*cos(330)},{1.4+1.0*sin(330)},{gz(330)}) {$C$};
+  \node[figB, right] at (-0.2,2.55,2.9) {$z = g(x,y)$};
+  % normal vector
+  \draw[figR, very thick, -{Stealth[length=6pt]}] (0.1,1.0,2.05) -- (0.1,1.0,3.05) node[above] {$\mathbf{n}$};
+\end{tikzpicture}

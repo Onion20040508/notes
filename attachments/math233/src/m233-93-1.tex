@@ -1,0 +1,42 @@
+% Figure for Calculus §93.
+\begin{tikzpicture}[font=\scriptsize,
+    declare function={F(\x,\y)=1.2+0.25*\x*\x+0.3*\y*\y; T(\x,\y)=1.75+0.5*(\x-1)+0.6*(\y-1);}]
+\begin{axis}[view={60}{25}, axis lines=center, width=10cm, height=10cm,
+    xmin=0, xmax=3.3, ymin=0, ymax=3.3, zmin=0, zmax=5.4,
+    xtick=\empty, ytick=\empty, ztick=\empty,
+    xlabel={$x$}, ylabel={$y$}, zlabel={$z$},
+    axis line style={-stealth, thin, black!70},
+    every axis x label/.style={at={(axis cs:3.3,0,0)}, anchor=north east},
+    every axis y label/.style={at={(axis cs:0,3.3,0)}, anchor=north west},
+    every axis z label/.style={at={(axis cs:0,0,5.4)}, anchor=south},
+    clip=false]
+  \def\a{1} \def\b{1} \def\A{2.6} \def\B{2.5}
+  % base rectangle and the box up to height f(a,b)
+  \addplot3[black!45, thin, dashed] coordinates {(\a,\b,0) (\A,\b,0) (\A,\B,0) (\a,\B,0) (\a,\b,0)};
+  \addplot3[black!45, thin, dashed] coordinates {(\a,\b,1.75) (\A,\b,1.75) (\A,\B,1.75) (\a,\B,1.75) (\a,\b,1.75)};
+  \foreach \p/\q in {\a/\b, \A/\b, \A/\B, \a/\B} {
+    \edef\tmp{\noexpand\addplot3[black!45, thin, dashed] coordinates {(\p,\q,0) (\p,\q,1.75)};}\tmp
+  }
+  % tangent plane patch
+  \addplot3[surf, shader=flat, draw=figG!60, fill=figG!18, opacity=0.8, domain=\a:\A, y domain=\b:\B, samples=2, samples y=2] {T(x,y)};
+  % surface patch
+  \addplot3[surf, shader=flat, draw=figB!45, fill=figB!14, opacity=0.8, domain=\a:\A, y domain=\b:\B, samples=8, samples y=8] {F(x,y)};
+  % dz and Delta z at the far corner
+  \addplot3[black!50, thin, samples y=0] coordinates {(\A,\B,1.75) (\A,\B,4.765)};
+  \coordinate (c0) at (axis cs:\A,\B,1.75);
+  \coordinate (c1) at (axis cs:\A,\B,3.45);
+  \coordinate (c2) at (axis cs:\A,\B,4.765);
+  % points
+  \addplot3[only marks, mark=*, mark size=1.3pt] coordinates {(\a,\b,1.75) (\A,\B,4.765)};
+  \addplot3[only marks, mark=*, mark size=1pt, black!60] coordinates {(\a,\b,0) (\A,\B,0)};
+  \node[anchor=south east] at (axis cs:\a,\b,1.8) {$(a,b,f(a,b))$};
+  \node[anchor=north] at (axis cs:\a,\b,0) {$(a,b,0)$};
+  \node[anchor=north west] at (axis cs:\A,\B,0) {$(a+\Delta x,b+\Delta y,0)$};
+  \node[anchor=north east] at (axis cs:1.8,\b,0) {$\Delta x=dx$};
+  \node[anchor=north] at (axis cs:\A,1.75,0) {$\Delta y=dy$};
+  \node[figB, anchor=south] at (axis cs:\a,\B,3.9) {surface $z=f(x,y)$};
+  \node[figG!70!black, anchor=north east] at (axis cs:\A,\b,2.55) {tangent plane};
+\end{axis}
+  \draw[figG!80!black, thick, |-|] ([xshift=-7pt]c0) -- ([xshift=-7pt]c1) node[midway, left] {$dz$};
+  \draw[figR, thick, |-|] ([xshift=7pt]c0) -- ([xshift=7pt]c2) node[midway, right] {$\Delta z$};
+\end{tikzpicture}

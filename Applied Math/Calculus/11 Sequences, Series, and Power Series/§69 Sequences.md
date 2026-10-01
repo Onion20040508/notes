@@ -345,9 +345,6 @@ Stewart's Example 11 classifies the geometric sequence $\{r^n\}$; the result is 
 
 *Uses:* [[§69 Sequences#^thm-69-1|§69.1]], [[§69 Sequences#^thm-69-5|§69.5]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§11 Limits at Infinity; Horizontal Asymptotes|§11]] (limits of exponentials)
 
-> [!remark]- Connections
-> - Rigorous treatment: [[§9 Limit Theorems for Sequences#^ex-9-10|451 Ex. §9.10]] (complete classification of the geometric sequence, without logarithms); collected in [[Geometric series]].
-
 ## Monotonic and Bounded Sequences
 
 > [!definition] Definition §69.5: Increasing, Decreasing, Monotonic
@@ -408,9 +405,6 @@ Neither condition alone forces convergence: $(-1)^n$ is bounded but divergent, a
 
 ^def-69-7
 
-> [!remark]- Connections
-> - Rigorous treatment: [[§4 The Completeness Axiom#^def-4-4|451 Def. §4.4]] (with the supremum, [[§4 The Completeness Axiom#^def-4-3|451 Def. §4.3]]); hub [[Completeness Axiom]].
-
 > [!theorem] Theorem §69.9: Monotonic Sequence Theorem
 > Every bounded, monotonic sequence is convergent.
 >
@@ -443,6 +437,7 @@ Neither condition alone forces convergence: $(-1)^n$ is bounded but divergent, a
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 Thm. §10.1]] (Monotone Convergence Theorem, same proof); an unbounded monotone sequence tends to $\pm\infty$, [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-3|451 Thm. §10.3]].
+> - The Completeness Axiom it rests on: [[§4 The Completeness Axiom#^def-4-4|451 Def. §4.4]] (with the supremum, [[§4 The Completeness Axiom#^def-4-3|451 Def. §4.3]]); hub [[Completeness Axiom]]. The geometric sequence of Theorem §69.8: [[§9 Limit Theorems for Sequences#^ex-9-10|451 Ex. §9.10]], collected in [[Geometric series]].
 
 > [!example] Example §69.5: A Recursive Sequence
 > Investigate the sequence defined by the *recurrence relation*

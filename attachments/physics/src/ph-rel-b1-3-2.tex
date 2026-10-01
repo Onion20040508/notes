@@ -1,0 +1,38 @@
+% Figure for Relativity §B1.3 (Example: three pairwise spacelike events A = (x, ct) = (0, 0), B = (2, 1), C = (5, 2) in units of one length; (a) the events, the light cone of A, and the lines of simultaneity ct - 0.35 x = const through them for the observer moving at beta = 0.35; (b) f(beta) = ct - beta x, which is ct'/gamma in the frame moving at beta along x, for each event; crossings at beta = 1/3 (B, C), 2/5 (A, C), 1/2 (A, B); observers at beta = 0, 0.35, 0.6 see ABC, ACB, CBA.)
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small]
+  \begin{scope}[x=0.75cm, y=0.75cm]
+    \fill[black!5] (0,0) -- (3.0,3.0) -- (-0.4,3.0) -- (-0.4,0.4) -- cycle;
+    \draw[->, black!55] (-0.5,0) -- (6.0,0) node[right] {$x$};
+    \draw[->, black!55] (0,-0.5) -- (0,3.3) node[above] {$ct$};
+    \foreach \t in {1,2,3} \draw[black!55] (0.06,\t) -- (-0.06,\t) node[left, font=\scriptsize, black!70] {\t};
+    \foreach \x in {1,...,5} \draw[black!55] (\x,0.06) -- (\x,-0.06) node[below, font=\scriptsize, black!70] {\x};
+    \draw[black!45, dashed] (0,0) -- (3.1,3.1) node[above, font=\scriptsize, black!60] {light};
+    % simultaneity lines of observer 3 (beta = 0.35): ct = 0.35 x + k, k = 0 (A), 0.3 (B), 0.25 (C)
+    \draw[figG, thin] (-0.4,-0.14) -- (5.9,2.065);
+    \draw[figG, thin] (-0.4,0.16) -- (5.9,2.365);
+    \draw[figG, thin] (-0.4,0.11) -- (5.9,2.315);
+    \fill[black] (0,0) circle (2pt) node[above left] {$A$};
+    \fill[black] (2,1) circle (2pt) node[above left] {$B$};
+    \fill[black] (5,2) circle (2pt) node[above left] {$C$};
+    \node[figG, font=\scriptsize, anchor=north east, align=right] at (6.0,0.95) {simultaneity lines\\ of $\beta = 0.35$};
+    \node[font=\scriptsize] at (2.7,-1.1) {(a)};
+  \end{scope}
+  \begin{scope}[xshift=5.6cm, yshift=0.3cm]
+    \begin{axis}[nfig, width=6.4cm, height=5.0cm, xmin=0, xmax=1, ymin=-3.2, ymax=2.4,
+        xlabel={observer's velocity $\beta$}, ylabel={$ct'/\gamma = ct - \beta x$}, xtick={0,0.35,0.6,1}, xticklabels={$0$,$0.35$,$0.6$,$1$}, ytick={-3,-2,-1,0,1,2}, clip=false, axis lines=left]
+      \addplot[black, thick, domain=0:1] {0};
+      \addplot[figR, thick, domain=0:1] {1-2*x};
+      \addplot[figB, thick, domain=0:1] {2-5*x};
+      \node[black, font=\scriptsize, anchor=west] at (axis cs:1.0,0) {$A$};
+      \node[figR, font=\scriptsize, anchor=west] at (axis cs:1.0,-1) {$B$};
+      \node[figB, font=\scriptsize, anchor=west] at (axis cs:1.0,-3) {$C$};
+      \addplot[black!40, dashed] coordinates {(0.35,-3.2) (0.35,2.4)};
+      \addplot[black!40, dashed] coordinates {(0.6,-3.2) (0.6,2.4)};
+      \addplot[only marks, mark=o, mark size=1.8pt, black!70] coordinates {(0.3333,0.3333) (0.4,0) (0.5,0)};
+      \node[font=\scriptsize, anchor=south west] at (axis cs:0.01,2.0) {$ABC$};
+      \node[font=\scriptsize, anchor=south] at (axis cs:0.35,2.4) {$ACB$};
+      \node[font=\scriptsize, anchor=south] at (axis cs:0.6,2.4) {$CBA$};
+    \end{axis}
+    \node[font=\scriptsize] at (2.6,-1.25) {(b)};
+  \end{scope}
+\end{tikzpicture}

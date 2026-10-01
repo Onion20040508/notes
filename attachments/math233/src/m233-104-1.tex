@@ -1,0 +1,26 @@
+% Figure for Calculus §104.
+\begin{tikzpicture}[x={(-0.75cm,-0.6cm)}, y={(1.25cm,0cm)}, z={(0cm,1.1cm)}, font=\scriptsize]
+  \def\R{2} \def\th{50} \def\Z{1.7}
+  % cylinder r = R (light), from z = 0 to 2.4
+  \draw[figB!50, thin] plot[domain=0:360, samples=80] ({\R*cos(\x)},{\R*sin(\x)},2.4);
+  \draw[figB!50, thin, dashed] plot[domain=120.96:300.96, samples=40] ({\R*cos(\x)},{\R*sin(\x)},0);
+  \draw[figB!50, thin] plot[domain=-59.04:120.96, samples=40] ({\R*cos(\x)},{\R*sin(\x)},0);
+  \draw[figB!50, thin] ({\R*cos(-59.04)},{\R*sin(-59.04)},0) -- ({\R*cos(-59.04)},{\R*sin(-59.04)},2.4);
+  \draw[figB!50, thin] ({\R*cos(120.96)},{\R*sin(120.96)},0) -- ({\R*cos(120.96)},{\R*sin(120.96)},2.4);
+  \node[figB!70] at ({\R*cos(-60)},{\R*sin(-60)},2.65) {$r = \text{const}$};
+  % axes
+  \draw[-stealth, thin, black!70] (0,0,0) -- (3.2,0,0) node[below left] {$x$};
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,3.0,0) node[right] {$y$};
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,0,3.0) node[above] {$z$};
+  % projection and point
+  \coordinate (Q) at ({\R*cos(\th)},{\R*sin(\th)},0);
+  \coordinate (P) at ({\R*cos(\th)},{\R*sin(\th)},\Z);
+  \draw[figR, thick] (0,0,0) -- (Q) node[midway, below] {$r$};
+  \draw[figR, thick] (Q) -- (P) node[midway, right] {$z$};
+  \draw[black!40, dashed] (0,0,\Z) -- (P);
+  \draw[figR!80!black] plot[domain=0:\th, samples=20] ({0.7*cos(\x)},{0.7*sin(\x)},0);
+  \node[figR!80!black] at ({0.95*cos(\th/2)},{0.95*sin(\th/2)},0) {$\theta$};
+  \fill[figR] (Q) circle (1.3pt) node[below right] {$(r,\theta,0)$};
+  \fill[black] (P) circle (1.5pt) node[above right] {$P(r,\theta,z)$};
+  \node[below left] at (0,0,0) {$O$};
+\end{tikzpicture}

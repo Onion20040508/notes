@@ -1,0 +1,34 @@
+% Figure for Calculus §41.
+\begin{tikzpicture}[font=\scriptsize]
+  % (a) the region and a typical vertical strip
+  \begin{scope}[x=2.1cm, y=2.1cm, declare function={f(\x)=2*\x*\x-\x*\x*\x;}]
+    \def\xx{1.05} \def\dx{0.1}
+    \fill[figB!14] plot[domain=0:2, samples=60] (\x,{f(\x)}) -- cycle;
+    \fill[figR!40] ({\xx-\dx/2},0) rectangle ({\xx+\dx/2},{f(\xx)});
+    \draw[figR, thin] ({\xx-\dx/2},0) rectangle ({\xx+\dx/2},{f(\xx)});
+    \draw[figB, thick] plot[domain=-0.1:2.04, samples=80] (\x,{f(\x)});
+    \node[figB, above right] at (1.45,{f(1.45)}) {$y=2x^2-x^3$};
+    \draw[-stealth, thin, black!70] (-0.3,0) -- (2.4,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-0.25) -- (0,1.55) node[above] {$y$};
+    \draw[stealth-stealth, thin] (0,0.12) -- ({\xx},0.12) node[midway, above] {radius $x$};
+    \draw[stealth-stealth, thin] ({\xx+0.12},0) -- ({\xx+0.12},{f(\xx)}) node[pos=0.55, right] {$f(x)$};
+    \draw[thin, black!70] (2,0.03) -- (2,-0.03) node[below right=-1pt] {$2$};
+    \node[below] at (\xx,-0.02) {$x$};
+    \node[below left] at (0,0) {$0$};
+    \draw[-stealth, thin, figO] (-0.12,1.38) arc[start angle=200, end angle=520, x radius=0.12, y radius=0.05];
+    \node at (1.0,-0.48) {(a) a strip at distance $x$ from the axis};
+  \end{scope}
+  % (b) the shell cut and flattened
+  \begin{scope}[xshift=6.6cm, yshift=0.15cm]
+    \fill[figR!25] (0,0) -- (4.4,0) -- (4.4,2.31) -- (0,2.31) -- cycle;
+    \fill[figR!45] (4.4,0) -- (4.62,0.14) -- (4.62,2.45) -- (4.4,2.31) -- cycle;
+    \fill[figR!15] (0,2.31) -- (4.4,2.31) -- (4.62,2.45) -- (0.22,2.45) -- cycle;
+    \draw[figR, thin] (0,0) -- (4.4,0) -- (4.4,2.31) -- (0,2.31) -- cycle;
+    \draw[figR, thin] (4.4,0) -- (4.62,0.14) -- (4.62,2.45) -- (4.4,2.31);
+    \draw[figR, thin] (0,2.31) -- (0.22,2.45) -- (4.62,2.45);
+    \draw[stealth-stealth, thin] (0,-0.2) -- (4.4,-0.2) node[midway, below] {circumference $2\pi x$};
+    \draw[stealth-stealth, thin] (4.85,0.14) -- (4.85,2.45) node[midway, right] {$f(x)$};
+    \node[right] at (4.66,-0.05) {thickness $\Delta x$};
+    \node at (2.4,-1.0) {(b) the shell, cut and flattened: $2\pi x\cdot f(x)\cdot\Delta x$};
+  \end{scope}
+\end{tikzpicture}

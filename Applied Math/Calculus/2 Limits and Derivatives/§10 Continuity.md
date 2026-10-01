@@ -32,7 +32,7 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 ^def-10-1
 
 > [!remark] Remark: What the Definition Says
-> $f(x)$ approaches $f(a)$ as $x$ approaches $a$. On the graph, the points $(x, f(x))$ run into the point $(a, f(a))$, so the curve has no gap there. In other words, a small change in $x$ produces only a small change in $f(x)$, and the change in $f(x)$ can be kept as small as we please by keeping the change in $x$ small enough. With the precise definition of a limit ([[§9 The Precise Definition of a Limit|§9]]) this becomes: for every $\varepsilon > 0$ there is a $\delta > 0$ such that
+> $f(x)$ approaches $f(a)$ as $x$ approaches $a$. On the graph, the points $(x, f(x))$ run into the point $(a, f(a))$, so the curve has no gap there. In other words, a small change in $x$ produces only a small change in $f(x)$, and the change in $f(x)$ can be kept as small as we please by keeping the change in $x$ small enough. With the precise definition of a limit ([[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]) this becomes: for every $\varepsilon > 0$ there is a $\delta > 0$ such that
 >
 > $$
 > |x - a| < \delta \quad\Longrightarrow\quad |f(x) - f(a)| < \varepsilon .
@@ -76,7 +76,7 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 >
 > But $\lim_{x \to 2} f(x) = 3 \ne 1 = f(2)$, so condition 3 fails: $f$ is discontinuous at $2$.
 >
-> **(c)** $f(0) = 1$ is defined, but $\lim_{x \to 0} 1/x^2$ does not exist (the values grow without bound; [[§7 The Limit of a Function|§7]]). Condition 2 fails: $f$ is discontinuous at $0$.
+> **(c)** $f(0) = 1$ is defined, but $\lim_{x \to 0} 1/x^2$ does not exist (the values grow without bound; [[§7 The Limit of a Function#^def-7-3|Definition §7.3]]). Condition 2 fails: $f$ is discontinuous at $0$.
 >
 > **(d)** The greatest integer function ($\lfloor x \rfloor$ is the largest integer $\le x$; Stewart writes $[\![x]\!]$) is discontinuous at every integer $n$. For $n - 1 \le x < n$ we have $\lfloor x \rfloor = n - 1$, and for $n \le x < n + 1$ we have $\lfloor x \rfloor = n$. So
 >
@@ -84,7 +84,7 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 > \lim_{x \to n^-} \lfloor x \rfloor = n - 1 \ne n = \lim_{x \to n^+} \lfloor x \rfloor ,
 > $$
 >
-> and $\lim_{x \to n} \lfloor x \rfloor$ does not exist ([[§8 Calculating Limits Using the Limit Laws|§8]]). At a non-integer $a$, $\lfloor x \rfloor$ is constant on an open interval around $a$, so it is continuous there.
+> and $\lim_{x \to n} \lfloor x \rfloor$ does not exist ([[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]]). At a non-integer $a$, $\lfloor x \rfloor$ is constant on an open interval around $a$, so it is continuous there.
 >
 > *Stewart: Example 2.5.2*
 
@@ -175,14 +175,14 @@ Instead of checking Definitions §10.1–§10.5 directly, one builds complicated
 
 ^pf-10-1
 
-*Uses:* [[§10 Continuity#^def-10-1|Def. §10.1]], [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Laws 1–5)
+*Uses:* [[§10 Continuity#^def-10-1|Def. §10.1]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws 1–5)
 
 > [!theorem] Theorem §10.2: Polynomials and Rational Functions Are Continuous
 > (a) Every polynomial is continuous everywhere, that is, on $\mathbb{R} = (-\infty, \infty)$.
 >
 > (b) Every rational function is continuous wherever it is defined, that is, on its domain.
 >
-> This is the Direct Substitution Property of [[§8 Calculating Limits Using the Limit Laws|§8]]: $\lim_{x \to a} f(x) = f(a)$ for $f$ polynomial or rational and $a$ in the domain of $f$.
+> This is the Direct Substitution Property, [[§8 Calculating Limits Using the Limit Laws#^thm-8-3|Theorem §8.3]]: $\lim_{x \to a} f(x) = f(a)$ for $f$ polynomial or rational and $a$ in the domain of $f$.
 >
 > *Stewart: 2.5, Theorem 5*
 
@@ -201,7 +201,7 @@ Instead of checking Definitions §10.1–§10.5 directly, one builds complicated
 
 ^pf-10-2
 
-*Uses:* [[§10 Continuity#^thm-10-1|§10.1]], [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Laws 8 and 10)
+*Uses:* [[§10 Continuity#^thm-10-1|§10.1]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-2|§8.2]] (Limit Laws 8 and 10)
 
 For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous function of its radius, and the height $h = 50t - 16t^2$ (in ft) of a ball thrown upward at $50$ ft/s is a continuous function of time.
 
@@ -244,7 +244,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 ^pf-10-3
 
-*Uses:* [[§8 Calculating Limits Using the Limit Laws|§8]] (Squeeze Theorem)
+*Uses:* [[§8 Calculating Limits Using the Limit Laws#^thm-8-7|§8.7]] (Squeeze Theorem)
 
 > [!theorem] Theorem §10.4: Continuity of the Trigonometric Functions
 > Sine and cosine are continuous on $\mathbb{R}$. Consequently $\tan x = \dfrac{\sin x}{\cos x}$ is continuous except where $\cos x = 0$, that is, except at the odd multiples of $\pi/2$. At $x = \pm\pi/2, \pm 3\pi/2, \pm 5\pi/2, \ldots$ it has infinite discontinuities. Likewise $\sec$, $\csc$ and $\cot$ are continuous on their domains.
@@ -272,7 +272,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 ^pf-10-4
 
-*Uses:* [[§10 Continuity#^thm-10-3|§10.3]], [[§10 Continuity#^thm-10-1|§10.1]], [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Laws 1 and 3)
+*Uses:* [[§10 Continuity#^thm-10-3|§10.3]], [[§10 Continuity#^thm-10-1|§10.1]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws 1 and 3)
 
 ### Inverse Functions
 
@@ -313,7 +313,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 ^pf-10-5
 
-*Uses:* [[§10 Continuity#^thm-10-10|§10.10]], [[§9 The Precise Definition of a Limit|§9]] (precise definition of a limit)
+*Uses:* [[§10 Continuity#^thm-10-10|§10.10]], [[§9 The Precise Definition of a Limit#^def-9-1|Def. §9.1]] (precise definition of a limit)
 
 > [!theorem] Theorem §10.6: The Familiar Functions Are Continuous
 > The following types of functions are continuous at every number in their domains:
@@ -340,12 +340,12 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 ^pf-10-6
 
-*Uses:* [[§10 Continuity#^thm-10-2|§10.2]], [[§10 Continuity#^thm-10-4|§10.4]], [[§10 Continuity#^thm-10-5|§10.5]], [[§4 Exponential Functions|§4]] (definition of the exponential), [[§5 Inverse Functions and Logarithms|§5]] (inverse functions)
+*Uses:* [[§10 Continuity#^thm-10-2|§10.2]], [[§10 Continuity#^thm-10-4|§10.4]], [[§10 Continuity#^thm-10-5|§10.5]], [[§4 Exponential Functions#^def-4-3|Def. §4.3]] (definition of the exponential), [[§5 Inverse Functions and Logarithms#^def-5-2|Def. §5.2]] (inverse functions)
 
 > [!example] Example §10.2: Continuity at the Endpoints of the Domain
 > **(a)** Show that $f(x) = 1 - \sqrt{1 - x^2}$ is continuous on $[-1, 1]$.
 >
-> **Interior points.** Let $-1 < a < 1$, so $1 - a^2 > 0$. By the Limit Laws ([[§8 Calculating Limits Using the Limit Laws|§8]]),
+> **Interior points.** Let $-1 < a < 1$, so $1 - a^2 > 0$. By the Limit Laws ([[§8 Calculating Limits Using the Limit Laws#^thm-8-1|Theorems §8.1]] and [[§8 Calculating Limits Using the Limit Laws#^thm-8-2|§8.2]]),
 >
 > $$
 > \begin{aligned}
@@ -422,7 +422,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 ^pf-10-7
 
-*Uses:* [[§10 Continuity#^def-10-1|Def. §10.1]], [[§9 The Precise Definition of a Limit|§9]] (precise definition of a limit)
+*Uses:* [[§10 Continuity#^def-10-1|Def. §10.1]], [[§9 The Precise Definition of a Limit#^def-9-1|Def. §9.1]] (precise definition of a limit)
 
 > [!example] Example §10.3: Limits by Continuity
 > **(a)** Find $\displaystyle\lim_{x \to -2} \frac{x^3 + 2x^2 - 1}{5 - 3x}$.
@@ -466,7 +466,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > \lim_{x \to a} \sqrt[n]{g(x)} = \sqrt[n]{\lim_{x \to a} g(x)} .
 > $$
 >
-> This is Limit Law 7 of [[§8 Calculating Limits Using the Limit Laws|§8]], whose proof was postponed to this section.
+> This is Limit Law 7 of [[§8 Calculating Limits Using the Limit Laws#^thm-8-2|Theorem §8.2]], whose proof was postponed to this section.
 >
 > *Stewart: 2.3, Limit Law 7 (proved in 2.5)*
 

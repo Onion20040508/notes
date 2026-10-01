@@ -118,9 +118,6 @@ The proof of l'Hospital's Rule, given in Stewart's Appendix F, rests on a genera
 
 ^rem-28-1
 
-![[m233-28-1.svg]]
-*Why l'Hospital's Rule is plausible. Near $(a, 0)$ the graphs of $f$ (red) and $g$ (blue) are close to their tangent lines $y = m_1(x - a)$ and $y = m_2(x - a)$ (dashed), where $m_1 = f'(a)$ and $m_2 = g'(a)$. For the lines, the ratio of heights above any $x$ is $m_1/m_2$, the ratio of the derivatives.*
-
 > [!proof]+ Proof
 > Stewart proves the case of type $\frac00$.
 >
@@ -165,6 +162,9 @@ The proof of l'Hospital's Rule, given in Stewart's Appendix F, rests on a genera
 *Uses:* [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-1|§28.1]], [[§9 The Precise Definition of a Limit|§9]] (precise definition of a limit), [[§13 The Derivative as a Function|§13]] (differentiable implies continuous), [[§17 The Chain Rule|§17]]
 
 *Stewart proves only the type $\frac00$. The type $\frac{\infty}{\infty}$ needs a different estimate (Cauchy's theorem on $[x, x_1]$ with $x_1$ fixed near $a$); it is not proved in Stewart, nor in 451, whose proof also treats $\frac00$ only.*
+
+![[m233-28-1.svg]]
+*Why l'Hospital's Rule is plausible. Near $(a, 0)$ the graphs of $f$ (red) and $g$ (blue) are close to their tangent lines $y = m_1(x - a)$ and $y = m_2(x - a)$ (dashed), where $m_1 = f'(a)$ and $m_2 = g'(a)$. For the lines, the ratio of heights above any $x$ is $m_1/m_2$, the ratio of the derivatives.*
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]], with an $\varepsilon$-proof of the case $\frac00$, $x \to a^-$, by the same route (Generalized Mean Value Theorem, then letting the second point tend to $a$).

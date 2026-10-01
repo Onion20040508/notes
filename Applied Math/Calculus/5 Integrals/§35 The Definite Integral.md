@@ -332,12 +332,12 @@ In the following properties $f$ and $g$ are continuous functions, so all the int
 
 ^thm-35-5
 
+*Stewart omits the proof ("not easy to prove in general"). For $a < c < b$ it is [[§33 Properties of the Riemann Integral#^thm-33-5|451 Thm. §33.5]]. Every other order reduces to that case by Definition §35.4: for instance, if $a < b < c$, then $\int_a^c = \int_a^b + \int_b^c$, so $\int_a^b = \int_a^c - \int_b^c = \int_a^c + \int_c^b$.*
+
 > [!remark] Remark: Why It Works
 > For $f \ge 0$ and $a < c < b$: the area under $y = f(x)$ from $a$ to $c$ plus the area from $c$ to $b$ is the total area from $a$ to $b$.
 
 ^rem-35-4
-
-*Stewart omits the proof ("not easy to prove in general"). For $a < c < b$ it is [[§33 Properties of the Riemann Integral#^thm-33-5|451 Thm. §33.5]]. Every other order reduces to that case by Definition §35.4: for instance, if $a < b < c$, then $\int_a^c = \int_a^b + \int_b^c$, so $\int_a^b = \int_a^c - \int_b^c = \int_a^c + \int_c^b$.*
 
 Properties 1–5 hold for any order of the limits. The next three compare sizes and need $a \le b$.
 

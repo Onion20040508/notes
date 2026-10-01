@@ -1,0 +1,32 @@
+% Figure for Relativity §B1.3 (three worldlines from A = (x, ct) = (0, 0) to B = (0, 10): straight (inertial), kinked at beta = 0.6 (turn at (3, 5)), and oscillating x = -3 sin(pi ct/10) (peak speed 0.942c); dots at equal proper-time intervals c*dtau = 1, computed numerically from dtau = sqrt(1 - u^2/c^2) dt; totals c*tau = 10, 8, 7.09. Dashed: light cones of A and B bounding the causal diamond.)
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small, x=0.5cm, y=0.5cm]
+  % causal diamond
+  \fill[black!4] (0,0) -- (5,5) -- (0,10) -- (-5,5) -- cycle;
+  \draw[black!45, dashed] (-0.6,-0.6) -- (5.4,5.4);
+  \draw[black!45, dashed] (0.6,-0.6) -- (-5.4,5.4);
+  \draw[black!45, dashed] (-0.6,10.6) -- (5.4,4.6);
+  \draw[black!45, dashed] (0.6,10.6) -- (-5.4,4.6);
+  % axes
+  \draw[->, black!55] (-5.8,0) -- (6.0,0) node[right] {$x$};
+  \draw[->, black!55] (0,-0.8) -- (0,11.4) node[above] {$ct$};
+  % straight worldline
+  \draw[black, very thick] (0,0) -- (0,10);
+  \foreach \t in {1,...,9} \fill[black] (0,\t) circle (2.2pt);
+  % kinked
+  \draw[figR, very thick] (0,0) -- (3,5) -- (0,10);
+  \foreach \k in {1,2,3,4} \fill[figR] ({0.75*\k},{1.25*\k}) circle (2.2pt);
+  \foreach \k in {1,2,3} \fill[figR] ({3-0.75*\k},{5+1.25*\k}) circle (2.2pt);
+  % oscillating
+  \draw[figB, very thick, domain=0:10, samples=80, variable=\s] plot ({-3*sin(18*\s)},{\s});
+  \foreach \x/\y in {-1.858/2.126, -2.626/3.394, -2.955/4.451, -2.969/5.455, -2.672/6.502, -1.957/7.738, -0.261/9.723}
+    \fill[figB] (\x,\y) circle (2.2pt);
+  % events
+  \fill[black] (0,0) circle (2.6pt) node[below right] {$A$};
+  \fill[black] (0,10) circle (2.6pt) node[above right] {$B$};
+  % labels (legend at the right)
+  \node[black, font=\scriptsize, anchor=west] at (5.6,10.0) {$c\tau = 10$ (inertial)};
+  \node[figR, font=\scriptsize, anchor=west] at (5.6,9.0) {$c\tau = 8$ (kinked, $\beta = 0.6$)};
+  \node[figB, font=\scriptsize, anchor=west] at (5.6,8.0) {$c\tau = 7.09$ (oscillating,};
+  \node[figB, font=\scriptsize, anchor=west] at (5.6,7.2) {\phantom{$c\tau = 7.09$ (}peak $\beta = 0.94$)};
+  \node[black!55, font=\scriptsize, anchor=north west] at (4.3,3.9) {light};
+\end{tikzpicture}

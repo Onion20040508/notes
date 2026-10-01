@@ -1,0 +1,32 @@
+% Figure for Calculus §24.
+\begin{tikzpicture}[x=1.15cm, y=1.15cm, font=\scriptsize]
+  % ---------- circle ----------
+  \begin{scope}
+    \def\t{0.9}
+    \fill[figB!20] (0,0) -- (1,0) arc[start angle=0, end angle={deg(\t)}, radius=1] -- cycle;
+    \draw[-stealth, thin, black!70] (-1.4,0) -- (1.6,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-1.4) -- (0,1.5) node[above] {$y$};
+    \draw[figB, thick] (0,0) circle (1);
+    \draw[figR, thick] (0,0) -- ({cos(deg(\t))},{sin(deg(\t))});
+    \fill ({cos(deg(\t))},{sin(deg(\t))}) circle (1.5pt) node[above right] {$P(\cos t,\sin t)$};
+    \fill (1,0) circle (1.5pt) node[below right] {$Q$};
+    \node[below left] at (0,0) {$O$};
+    \node[figB] at (0.95,-1.15) {$x^2+y^2=1$};
+  \end{scope}
+  % ---------- hyperbola ----------
+  \begin{scope}[xshift=5.9cm]
+    \def\t{1.1}
+    \fill[figB!20] (0,0) -- (1,0) -- plot[domain=0:\t, samples=40] ({cosh(\x)},{sinh(\x)}) -- cycle;
+    \draw[-stealth, thin, black!70] (-2.2,0) -- (2.5,0) node[right] {$x$};
+    \draw[-stealth, thin, black!70] (0,-1.9) -- (0,2.0) node[above] {$y$};
+    \draw[black!40, dashed] (-1.8,-1.8) -- (1.9,1.9);
+    \draw[black!40, dashed] (-1.8,1.8) -- (1.9,-1.9);
+    \draw[figB, thick] plot[domain=-1.4:1.4, samples=60] ({cosh(\x)},{sinh(\x)});
+    \draw[figB, thick] plot[domain=-1.4:1.4, samples=60] ({-cosh(\x)},{sinh(\x)});
+    \draw[figR, thick] (0,0) -- ({cosh(\t)},{sinh(\t)});
+    \fill ({cosh(\t)},{sinh(\t)}) circle (1.5pt) node[right] {$P(\cosh t,\sinh t)$};
+    \fill (1,0) circle (1.5pt) node[below right] {$Q$};
+    \node[below left] at (0,0) {$O$};
+    \node[figB, right] at (1.45,-0.8) {$x^2-y^2=1$};
+  \end{scope}
+\end{tikzpicture}

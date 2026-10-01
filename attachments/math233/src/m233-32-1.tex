@@ -1,0 +1,21 @@
+% Figure for Calculus §32.
+\begin{tikzpicture}[x=2.1cm, y=0.75cm, font=\scriptsize,
+    declare function={f(\x)=0.08*\x*\x*\x-0.64;}]
+  \draw[-stealth, thin, black!70] (-0.2,0) -- (4.4,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-1.0) -- (0,5.0) node[above] {$y$};
+  \draw[figB, thick] plot[domain=0:4.0, samples=100] (\x,{f(\x)});
+  \node[figB, left] at (3.9,{f(3.9)}) {$y=f(x)$};
+  \def\xa{3.8} \def\xb{2.718006} \def\xc{2.172971} \def\xd{2.013403}
+  \draw[figR, thick] (\xa,{f(\xa)}) -- (\xb,0);
+  \draw[figR, thick] (\xb,{f(\xb)}) -- (\xc,0);
+  \draw[figR, thick] (\xc,{f(\xc)}) -- (\xd,0);
+  \draw[black!40, dotted] (\xa,0) -- (\xa,{f(\xa)});
+  \draw[black!40, dotted] (\xb,0) -- (\xb,{f(\xb)});
+  \draw[black!40, dotted] (\xc,0) -- (\xc,{f(\xc)});
+  \fill (\xa,{f(\xa)}) circle (1.6pt) node[right] {$(x_1,f(x_1))$};
+  \fill (\xb,{f(\xb)}) circle (1.6pt) node[left] {$(x_2,f(x_2))$};
+  \fill (\xc,{f(\xc)}) circle (1.4pt);
+  \foreach \p/\l in {\xa/x_1, \xb/x_2, \xc/x_3} \draw[thin, black!70] (\p,0.07) -- (\p,-0.07) node[below] {$\l$};
+  \fill[figG] (2,0) circle (1.5pt);
+  \node[figG, above left] at (2,0.02) {$r$};
+\end{tikzpicture}

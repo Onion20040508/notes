@@ -1,0 +1,24 @@
+% Figure for Calculus §23.
+\begin{tikzpicture}[x=1.4cm, y=1.4cm, font=\scriptsize,
+    declare function={f(\x)=1.6*sqrt(\x);}]
+  \draw[-stealth, thin, black!70] (-0.3,0) -- (4.3,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.3) -- (0,3.7) node[above] {$y$};
+  \draw[figB, thick] plot[domain=0.02:4.1, samples=100] (\x,{f(\x)});
+  \node[figB, right] at (4.1,{f(4.1)}) {$y=f(x)$};
+  % tangent at x = 1: slope 0.8
+  \draw[figR, thin] (0.1,{1.6-0.72}) -- (3.5,{1.6+2.0});
+  \coordinate (P) at (1,1.6);
+  \coordinate (S) at (3,1.6);
+  \coordinate (Q) at (3,{f(3)});
+  \coordinate (R) at (3,3.2);
+  \draw[black!40, dotted] (1,0) -- (P);
+  \draw[black!40, dotted] (3,0) -- (S);
+  \draw[thin] (P) -- (S);
+  \draw[thin, black!50] (S) -- (R);
+  \foreach \p/\pos in {P/above left, S/below right, Q/right, R/left} {\fill (\p) circle (1.3pt); \node[\pos] at (\p) {$\p$};}
+  \node[below] at (1,0) {$x$};
+  \node[below] at (3,0) {$x+\Delta x$};
+  \node[below] at (2,1.6) {$dx=\Delta x$};
+  \draw[figG, thick, |-|] (3.35,1.6) -- (3.35,{f(3)}) node[midway, right] {$\Delta y$};
+  \draw[figR, thick, |-|] (3.85,1.6) -- (3.85,3.2) node[midway, right] {$dy$};
+\end{tikzpicture}

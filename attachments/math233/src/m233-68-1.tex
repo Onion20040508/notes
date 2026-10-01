@@ -1,0 +1,21 @@
+% Figure for Calculus §68.
+\begin{tikzpicture}[x=1cm, y=1cm, font=\scriptsize]
+  \def\e{0.6} \def\d{2.4}
+  \pgfmathsetmacro{\th}{115}
+  \pgfmathsetmacro{\r}{\e*\d/(1+\e*cos(\th))}
+  \pgfmathsetmacro{\px}{\r*cos(\th)} \pgfmathsetmacro{\py}{\r*sin(\th)}
+  \draw[-stealth, thin, black!70] (-4.6,0) -- (3.3,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-2.3) -- (0,2.5) node[above] {$y$};
+  \draw[figR, thick] plot[domain=0:360, samples=150, variable=\t] ({\e*\d/(1+\e*cos(\t))*cos(\t)},{\e*\d/(1+\e*cos(\t))*sin(\t)});
+  \draw[figB, thick] (\d,-2.2) -- (\d,2.4) node[above] {$l$: $x = d$};
+  \draw[figG, thick] (0,0) -- (\px,\py) node[midway, below left=-1pt] {$r$};
+  \draw[figG, thick] (\px,\py) -- (\d,\py);
+  \node[figG, above] at ({(\px+\d)/2},\py) {$|Pl| = d - r\cos\theta$};
+  \draw[black!50, dashed] (\px,\py) -- (\px,0);
+  \draw[black!70] (0.35,0) arc[start angle=0, end angle=\th, radius=0.35];
+  \node at (0.25,0.45) {$\theta$};
+  \fill[figR] (\px,\py) circle (1.6pt) node[above left] {$P$};
+  \fill (0,0) circle (1.6pt) node[below right] {$F$};
+  \draw[|<->|, thin] (0,-1.9) -- (\d,-1.9) node[midway, below] {$d$};
+  \draw[|<->|, thin] (\px,-0.25) -- (0,-0.25) node[midway, below] {$-r\cos\theta$};
+\end{tikzpicture}

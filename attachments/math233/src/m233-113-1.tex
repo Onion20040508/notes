@@ -1,0 +1,19 @@
+% Figure for Calculus §113.
+\begin{tikzpicture}[x=2cm, y=2cm, font=\scriptsize]
+  \fill[figB!10] plot[domain=-1:1, samples=60] (\x,{1-\x*\x}) -- cycle;
+  \draw[-stealth, thin, black!70] (-1.4,0) -- (1.5,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-0.45) -- (0,1.45) node[above] {$z$};
+  \draw[figB, thick] plot[domain=-1:1, samples=60] (\x,{1-\x*\x});
+  \draw[figG, thick] (-1,0) -- (1,0);
+  \foreach \a in {-0.8,-0.4,0,0.4,0.8} {
+    \pgfmathsetmacro{\z}{1-\a*\a}
+    \pgfmathsetmacro{\nn}{sqrt(4*\a*\a+1)}
+    \draw[figR, thick, -{Stealth[length=4pt]}] (\a,\z) -- ++({0.32*2*\a/\nn},{0.32/\nn});
+  }
+  \foreach \a in {-0.7,-0.2,0.3,0.75} \draw[figR, thick, -{Stealth[length=4pt]}] (\a,0) -- ++(0,-0.3);
+  \node[figB] at (0.72,0.68) {$S_1$};
+  \node[figG, above] at (-0.45,0) {$S_2$};
+  \node[font=\small] at (0.0,0.42) {$E$};
+  \node[figB, right] at (0.95,0.35) {$z = 1 - x^2 - y^2$};
+  \node[below] at (1,-0.02) {$1$}; \node[below] at (-1,-0.02) {$-1$};
+\end{tikzpicture}

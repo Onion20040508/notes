@@ -1,0 +1,28 @@
+% Figure for Relativity §B3.3★ (hyperbolic motion from rest at the origin, units c^2/alpha: worldline x = cosh s - 1, ct = sinh s with s = alpha tau / c; Newtonian parabola x = (ct)^2/2; asymptote ct = x + 1; light signals sent at t = 0 from x = -0.7 (caught at s = ln(1/0.3) = 1.204, ct = 1.516, x = 0.816) and from x = -1.3 (never caught); computed).
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}, scale=1.0]
+  % axes
+  \draw[->, black!55] (-1.7,0) -- (4.9,0) node[right] {$x\ (c^2/\alpha)$};
+  \draw[->, black!55] (0,-0.15) -- (0,4.7) node[above] {$ct\ (c^2/\alpha)$};
+  \foreach \t in {1,2,3,4} \draw[black!55] (\t,0.05) -- (\t,-0.05) node[below, font=\scriptsize] {$\t$};
+  \draw[black!55] (-1,0.05) -- (-1,-0.05) node[below, font=\scriptsize] {$-1$};
+  \foreach \t in {1,2,3,4} \draw[black!55] (-0.05,\t) -- (0.05,\t) node[left, font=\scriptsize, xshift=-2pt] {$\t$};
+  % asymptote (light ray from x = -1 at t = 0)
+  \draw[black!50, densely dotted, thick] (-1,0) -- (3.6,4.6);
+  \node[black!60, font=\scriptsize, anchor=east] at (3.35,4.72) {asymptote};
+  % Newtonian parabola
+  \draw[figB, dashed, thick, domain=0:2.75, samples=60, smooth, variable=\s] plot ({\s*\s/2},{\s});
+  \node[figB, font=\scriptsize, anchor=west] at (3.0,2.25) {Newtonian, $x = \tfrac12\alpha t^2$};
+  % hyperbolic worldline
+  \draw[figR, very thick, domain=0:2.2, samples=80, smooth, variable=\s] plot ({cosh(\s)-1},{sinh(\s)});
+  \node[figR, font=\scriptsize, anchor=west] at (3.55,4.4) {hyperbolic motion};
+  % proper-time marks
+  \foreach \s/\lab in {0.5/0.5, 1/1, 1.5/1.5, 2/2} {
+    \fill[figR] ({cosh(\s)-1},{sinh(\s)}) circle (1.5pt);
+    \node[figR, font=\scriptsize, anchor=west] at ({cosh(\s)-1+0.08},{sinh(\s)-0.12}) {$\alpha\tau/c = \lab$};
+  }
+  % light signals sent at t = 0
+  \draw[->, figG, thick] (-0.7,0) -- (0.816,1.516);
+  \fill[figG] (-0.7,0) circle (1.5pt);
+  \draw[->, figO, thick] (-1.3,0) -- (2.2,3.5);
+  \fill[figO] (-1.3,0) circle (1.5pt);
+\end{tikzpicture}

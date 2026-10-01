@@ -1,0 +1,13 @@
+% Figure for Calculus §33.
+\begin{tikzpicture}[x=1.3cm, y=0.62cm, font=\scriptsize]
+  \draw[-stealth, thin, black!70] (-2.4,0) -- (2.5,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-5.2) -- (0,6.4) node[above] {$y$};
+  \foreach \C/\col in {3/black, 2/figO, 1/figB, 0/figR, -1/figG, -2/violet} {
+    \draw[\col, thick] plot[domain=-2.1:2.1, samples=80] (\x,{\x*\x*\x/3+\C});
+  }
+  \foreach \C/\col in {3/black, 2/figO, 1/figB, 0/figR, -1/figG, -2/violet} {
+    \node[\col, right] at (2.75,{5.6-0.85*(3-\C)}) {$y=\frac13x^3{\ifnum\C<0 \C\else\ifnum\C>0 +\C\fi\fi}$};
+  }
+  \foreach \t in {-1,1} \draw[thin, black!70] (\t,0.1) -- (\t,-0.1);
+  \node[below] at (1,-0.1) {$1$}; \node[above] at (-1,0.1) {$-1$};
+\end{tikzpicture}

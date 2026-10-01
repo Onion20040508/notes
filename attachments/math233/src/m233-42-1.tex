@@ -1,0 +1,33 @@
+% Figure for Calculus §42.
+\begin{tikzpicture}[x=0.42cm, y=-0.42cm, font=\scriptsize]
+  % depth axis x downward from the top of the tank; the cone has top radius 4 at x = 0 and apex at x = 10
+  \def\xs{5.6}
+  \pgfmathsetmacro{\r}{0.4*(10-\xs)}
+  % water from depth 2 to 10
+  \fill[figB!18] (-3.2,2) -- (3.2,2) -- (0,10) -- cycle;
+  \draw[figB!70, thin] (-3.2,2) -- (3.2,2);
+  % the layer at depth x
+  \fill[figR!45] (-\r,{\xs-0.25}) rectangle (\r,{\xs+0.25});
+  \draw[figR, thin] (-\r,{\xs-0.25}) rectangle (\r,{\xs+0.25});
+  % the tank
+  \draw[thick, black!75] (-4,0) -- (0,10) -- (4,0);
+  \draw[thick, black!75] (-4,0) -- (4,0);
+  % depth axis
+  \draw[-stealth, thin, black!70] (0,0) -- (0,11.6) node[below] {$x$ (depth)};
+  \node[below right] at (0,0) {$0$};
+  % radius of the layer
+  \draw[stealth-stealth, thin] (0,{\xs+0.9}) -- (\r,{\xs+0.9}) node[midway, below] {$r$};
+  % dimensions
+  \draw[stealth-stealth, thin] (-4,-0.9) -- (4,-0.9) node[midway, above] {$8$ m};
+  \draw[stealth-stealth, thin] (5.6,0) -- (5.6,10) node[midway, right] {$10$ m};
+  \draw[black!40, thin, dashed] (0,10) -- (5.9,10);
+  \draw[black!40, thin, dashed] (4,0) -- (5.9,0);
+  \draw[stealth-stealth, thin] (-5.4,0) -- (-5.4,2) node[midway, left] {$2$ m};
+  \draw[black!40, thin, dashed] (-5.7,2) -- (-3.2,2);
+  \draw[black!40, thin, dashed] (-5.7,0) -- (-4,0);
+  \draw[stealth-stealth, thin, figR] (-6.8,0) -- (-6.8,\xs) node[midway, left] {$x$};
+  \draw[black!40, thin, dashed] (-7.1,\xs) -- (-\r,\xs);
+  \draw[stealth-stealth, thin] (2.5,\xs) -- (2.5,10) node[midway, right] {$10-x$};
+  \draw[black!40, thin, dashed] (\r,\xs) -- (2.8,\xs); \draw[black!40, thin, dashed] (0,10) -- (2.8,10);
+  \node[figR, right] at (\r,{\xs-0.55}) {$\Delta x$};
+\end{tikzpicture}

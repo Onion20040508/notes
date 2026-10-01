@@ -1,0 +1,36 @@
+% Figure for Calculus §103.
+\begin{tikzpicture}[x={(-0.9cm,-1.4cm)}, y={(2.6cm,0cm)}, z={(0cm,0.25cm)}, font=\scriptsize]
+  % axes
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,1.45,0) node[right] {$y$};
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,0,14) node[above] {$z$};
+  \draw[-stealth, thin, black!70] (0,0,0) -- (1.5,0,0) node[below left] {$x$};
+  % projection D
+  \fill[figG!20] (0,0,0) -- (1,0,0) -- (1,1,0) -- cycle;
+  \draw[figG!70!black] (0,0,0) -- (1,0,0) -- (1,1,0) -- cycle;
+  \node[figG!60!black] at (0.9,0.62,0) {$D$};
+  % back face y = x (under z = 12 t^2)
+  \fill[figB!12] plot[domain=0:1, samples=30] (\x,\x,{12*\x*\x}) -- (1,1,0) -- cycle;
+  % top surface z = 12xy: mesh
+  \fill[figB!25, opacity=0.8] plot[domain=0:1, samples=30] (\x,\x,{12*\x*\x}) -- plot[domain=1:0, samples=20] (1,\x,{12*\x}) -- cycle;
+  \foreach \t in {0.25,0.5,0.75} {
+    \draw[figB!55, thin] plot[domain=0:\t, samples=15] (\t,\x,{12*\t*\x});
+    \draw[figB!55, thin] plot[domain=\t:1, samples=15] (\x,\t,{12*\x*\t});
+  }
+  % front face x = 1
+  \fill[figB!18, opacity=0.75] (1,0,0) -- (1,1,0) -- (1,1,12) -- cycle;
+  % edges
+  \draw[figB, thick] plot[domain=0:1, samples=30] (\x,\x,{12*\x*\x});
+  \draw[figB, thick] (1,0,0) -- (1,1,12) -- (1,1,0);
+  \draw[figB, thin, dashed] (0,0,0) -- (1,1,0);
+  % the vertical segment at (x,y)
+  \def\px{0.72} \def\py{0.4}
+  \draw[black!40, dashed] (\px,0,0) -- (\px,\py,0);
+  \draw[figR, very thick] (\px,\py,0) -- (\px,\py,{12*\px*\py});
+  \fill[figR] (\px,\py,0) circle (1.2pt) (\px,\py,{12*\px*\py}) circle (1.2pt);
+  \draw[figR, thin] (\px,\py,{5*\px*\py}) -- (0.95,0.05,4) node[left] {$0 \le z \le 12xy$};
+  \node[below left] at (\px,0,0) {$x$};
+  \node[left] at (1,0,0) {$1$};
+  \node[figB, right] at (1,1,12) {$z=12xy$};
+  \node[figG!60!black, right] at (1,1,0) {$y=x$};
+  \node[figB!70!black] at (0.85,0.7,4.5) {$E$};
+\end{tikzpicture}

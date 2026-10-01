@@ -324,7 +324,7 @@ $$
 > \frac{d}{dx}(2^x) \approx (0.693)\,2^x, \qquad \frac{d}{dx}(3^x) \approx (1.099)\,3^x \qquad (5)
 > $$
 >
-> Stewart states that these limits exist ("it can be proved") without proof here. [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions|§19]] identifies them: $f'(0) = \ln b$, so $\ln 2 \approx 0.693$ and $\ln 3 \approx 1.099$.
+> Stewart states that these limits exist ("it can be proved") without proof here. [[§17 The Chain Rule#^thm-17-5|Theorem §17.5]] identifies them: $f'(0) = \ln b$, so $\ln 2 \approx 0.693$ and $\ln 3 \approx 1.099$.
 
 ^rem-14-2
 

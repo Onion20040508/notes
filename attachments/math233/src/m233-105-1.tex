@@ -1,0 +1,28 @@
+% Figure for Calculus §105.
+\begin{tikzpicture}[x={(-0.75cm,-0.6cm)}, y={(1.3cm,0cm)}, z={(0cm,1.2cm)}, font=\scriptsize]
+  \def\th{68} \def\ph{42} \def\rr{2.8}
+  \pgfmathsetmacro{\r}{\rr*sin(\ph)} \pgfmathsetmacro{\zz}{\rr*cos(\ph)}
+  \coordinate (O) at (0,0,0);
+  \coordinate (P) at ({\r*cos(\th)},{\r*sin(\th)},\zz);
+  \coordinate (Pp) at ({\r*cos(\th)},{\r*sin(\th)},0);
+  \coordinate (Q) at (0,0,\zz);
+  % axes
+  \draw[-stealth, thin, black!70] (O) -- (2.8,0,0) node[below left] {$x$};
+  \draw[-stealth, thin, black!70] (O) -- (0,2.6,0) node[right] {$y$};
+  \draw[-stealth, thin, black!70] (O) -- (0,0,2.9) node[above] {$z$};
+  % triangle O P' P and Q
+  \draw[black!45, dashed] (Q) -- (P);
+  \draw[figB, thick] (O) -- (Pp) node[pos=0.62, below, sloped] {$r=\rho\sin\phi$};
+  \draw[figB, thick] (Pp) -- (P) node[midway, right] {$z=\rho\cos\phi$};
+  \draw[figR, very thick] (O) -- (P) node[pos=0.6, above left] {$\rho$};
+  % angle phi from z-axis
+  \draw[figR!80!black] plot[domain=0:\ph, samples=20] ({0.75*sin(\x)*cos(\th)},{0.75*sin(\x)*sin(\th)},{0.75*cos(\x)});
+  \node[figR!80!black] at ({0.95*sin(\ph/2)*cos(\th)},{0.95*sin(\ph/2)*sin(\th)},{0.95*cos(\ph/2)}) {$\phi$};
+  % angle theta in xy-plane
+  \draw[black!70] plot[domain=0:\th, samples=20] ({0.9*cos(\x)},{0.9*sin(\x)},0);
+  \node at ({1.15*cos(\th/2)},{1.15*sin(\th/2)},0) {$\theta$};
+  \fill[black] (P) circle (1.5pt) node[above right] {$P(\rho,\theta,\phi)$};
+  \fill[figB] (Pp) circle (1.2pt) node[below right] {$P'$};
+  \fill[black!60] (Q) circle (1pt) node[left] {$Q$};
+  \node[below left] at (O) {$O$};
+\end{tikzpicture}

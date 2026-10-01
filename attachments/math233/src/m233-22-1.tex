@@ -1,0 +1,26 @@
+% Figure for Calculus §22.
+\begin{tikzpicture}[x=1cm, y=1cm, font=\scriptsize]
+  % tank: apex (0,0), top radius 2 at height 4 ; ellipses with vertical squash 0.3
+  \def\s{0.28}
+  % water cone up to h = 3 (r = 1.5)
+  \fill[figB!20] (0,0) -- (-1.5,3) arc[start angle=180, end angle=360, x radius=1.5, y radius=1.5*\s] -- cycle;
+  \fill[figB!30] (0,3) ellipse[x radius=1.5, y radius=1.5*\s];
+  \draw[figB] (0,3) ellipse[x radius=1.5, y radius=1.5*\s];
+  % tank outline
+  \draw[thick] (-2,4) -- (0,0) -- (2,4);
+  \draw[thick] (0,4) ellipse[x radius=2, y radius=2*\s];
+  % axis and radii
+  \draw[black!50, dashed] (0,0) -- (0,4);
+  \draw[figR, thick] (0,4) -- (2,4);
+  \draw[figR, thick] (0,3) -- (1.5,3);
+  \draw[figR, thin] (0,0) -- (2,4);
+  \node[figR, above] at (1,4) {$2$};
+  \node[figR, above] at (0.85,3.0) {$r$};
+  % dimension lines
+  \draw[|-|, thin] (2.6,0) -- (2.6,4) node[midway, right] {$4$};
+  \draw[|-|, thin, figB!80!black] (-2.1,0) -- (-2.1,3) node[midway, left] {$h$};
+  \draw[black!30, dotted] (-2.1,3) -- (-1.5,3);
+  \draw[black!30, dotted] (-2.1,0) -- (0,0);
+  \draw[black!30, dotted] (2.6,4) -- (2,4);
+  \draw[black!30, dotted] (2.6,0) -- (0,0);
+\end{tikzpicture}

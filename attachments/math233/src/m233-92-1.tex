@@ -14,12 +14,12 @@
       domain=0:1, y domain=0:90, samples=11, samples y=10]
       ({2*x*cos(y)}, {sqrt(2)*x*sin(y)}, {4-4*x^2});
   % trace C1 in the plane y = 1
-  \addplot3[figB, thick, domain=0:1.4142, samples=40] (x, 1, {2-x^2});
+  \addplot3[figB, thick, domain=0:1.4142, samples=40, samples y=0] (x, 1, {2-x^2});
   % trace C2 in the plane x = 1
-  \addplot3[figG, thick, domain=0:1.2247, samples=40] (1, x, {3-2*x^2});
+  \addplot3[figG, thick, domain=0:1.2247, samples=40, samples y=0] (1, x, {3-2*x^2});
   % tangent lines
-  \addplot3[figR, very thick, domain=-0.75:0.5, samples=2] ({1+x}, 1, {1-2*x});
-  \addplot3[figO, very thick, domain=-0.3:0.25, samples=2] (1, {1+x}, {1-4*x});
+  \addplot3[figR, very thick, domain=-0.75:0.5, samples=2, samples y=0] ({1+x}, 1, {1-2*x});
+  \addplot3[figO, very thick, domain=-0.3:0.25, samples=2, samples y=0] (1, {1+x}, {1-4*x});
   % the point P and its shadow
   \addplot3[black!50, dashed, thin] coordinates {(1,1,0) (1,1,1)};
   \addplot3[only marks, mark=*, mark size=1.4pt, black] coordinates {(1,1,1)};

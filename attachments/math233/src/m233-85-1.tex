@@ -1,0 +1,19 @@
+% Figure for Calculus §85.
+\begin{tikzpicture}[font=\scriptsize]
+  \begin{axis}[name=A, view={125}{25}, width=7cm, height=6.2cm, axis lines=center, axis line style={-stealth, black!60},
+      xlabel={$x$}, ylabel={$y$}, zlabel={$z$}, ticks=none, xmin=-1.7, xmax=1.9, ymin=-1.7, ymax=1.9, zmin=-1.6, zmax=1.9,
+      title={(a) $z = y^2 - x^2$}, title style={font=\small}]
+    \addplot3[surf, shader=faceted, colormap={bw}{color=(figB!25) color=(figB!65)}, opacity=0.75, faceted color=figB!40, domain=-1.2:1.2, y domain=-1.2:1.2, samples=17, samples y=17] {y^2 - x^2};
+    % traces x = 0 (parabola up) and y = 0 (parabola down)
+    \addplot3[figR, very thick, domain=-1.2:1.2, samples y=1, samples=40] (0, x, x^2);
+    \addplot3[figG, very thick, domain=-1.2:1.2, samples y=1, samples=40] (x, 0, -x^2);
+  \end{axis}
+  \begin{axis}[at={(A.east)}, anchor=west, xshift=0.6cm, view={125}{25}, width=7cm, height=6.2cm, axis lines=center, axis line style={-stealth, black!60},
+      xlabel={$x$}, ylabel={$y$}, zlabel={$z$}, ticks=none, xmin=-2.8, xmax=3, ymin=-0.5, ymax=5, zmin=-0.6, zmax=5,
+      title={(b) $z = 4 - x^2$}, title style={font=\small}]
+    \addplot3[surf, shader=faceted, colormap={bw}{color=(figB!20) color=(figB!55)}, opacity=0.7, faceted color=figB!35, domain=-2:2, y domain=0:4, samples=17, samples y=9] {4 - x^2};
+    \addplot3[figR, very thick, domain=-2:2, samples y=1, samples=40] (x, 3, 4 - x^2);
+    \addplot3[black, thick, dashed, domain=-2:2, samples y=1, samples=40] (x, 0, 4 - x^2);
+    \node[figR, anchor=west] at (axis cs:-2,3,0.4) {trace $y=3$};
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,18 @@
+% Figure for Calculus §78.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=11cm, height=6.2cm, xmin=-6.6, xmax=6.6, ymin=-2.2, ymax=2.2,
+      axis lines=middle, xlabel={$x$}, ylabel={$y$},
+      xtick={-6.2832,-3.1416,3.1416,6.2832}, xticklabels={$-2\pi$,$-\pi$,$\pi$,$2\pi$},
+      ytick={-1,1}, clip=true, legend style={font=\scriptsize, draw=none, fill=none, at={(1.03,0.5)}, anchor=west}]
+    \addplot[black, thick, domain=-6.6:6.6, samples=200] {sin(deg(x))};
+    \addlegendentry{$\sin x$}
+    \addplot[figB, domain=-6.6:6.6, samples=2] {x};
+    \addlegendentry{$T_1$}
+    \addplot[figR, domain=-6.6:6.6, samples=200] {x - x^3/6};
+    \addlegendentry{$T_3$}
+    \addplot[figG, domain=-6.6:6.6, samples=200] {x - x^3/6 + x^5/120};
+    \addlegendentry{$T_5$}
+    \addplot[figO, domain=-6.6:6.6, samples=200] {x - x^3/6 + x^5/120 - x^7/5040 + x^9/362880};
+    \addlegendentry{$T_9$}
+  \end{axis}
+\end{tikzpicture}

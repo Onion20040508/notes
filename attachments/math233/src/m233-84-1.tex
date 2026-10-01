@@ -1,0 +1,18 @@
+% Figure for Calculus §84.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth, x={(1cm,0cm)}, y={(0.6cm,0.38cm)}, z={(0cm,1cm)}]
+  % plane z = 0 patch
+  \fill[figB!12] (-0.5,-0.5,0) -- (5,-0.5,0) -- (5,3,0) -- (-0.5,3,0) -- cycle;
+  \draw[figB!50] (-0.5,-0.5,0) -- (5,-0.5,0) -- (5,3,0) -- (-0.5,3,0) -- cycle;
+  \coordinate (P0) at (0.4,0.5,0);
+  \coordinate (F) at (3.4,1.6,0);
+  \coordinate (P1) at (3.4,1.6,2.4);
+  \draw[->, figB, thick] (P0) -- (P1) node[midway, above left] {$\mathbf{b}=\overrightarrow{P_0P_1}$};
+  \draw[black!50, dashed] (P0) -- (F);
+  \draw[->, figR, very thick] (F) -- (3.4,1.6,1.1) node[left] {$\mathbf{n}$};
+  \draw[figR!60, thick] (3.4,1.6,1.1) -- (P1);
+  \draw[black!60] (3.4,1.6,0.22) -- (3.15,1.48,0.22) -- (3.15,1.48,0);
+  \draw[decorate, decoration={brace, amplitude=3pt}] (3.55,1.6,2.4) -- (3.55,1.6,0) node[midway, right=4pt] {$D = |\operatorname{comp}_{\mathbf{n}}\mathbf{b}|$};
+  \fill (P0) circle (1.5pt) node[below left] {$P_0$};
+  \fill (P1) circle (1.5pt) node[above] {$P_1(x_1,y_1,z_1)$};
+  \node[figB] at (0.9,2.55,0) {$ax+by+cz+d=0$};
+\end{tikzpicture}

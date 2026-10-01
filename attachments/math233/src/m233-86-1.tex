@@ -1,0 +1,24 @@
+% Figure for Calculus §86.
+\begin{tikzpicture}[font=\scriptsize]
+  \begin{axis}[name=A, view={120}{20}, width=6.4cm, height=7cm, axis lines=center, axis line style={-stealth, black!60},
+      xlabel={$x$}, ylabel={$y$}, zlabel={$z$}, ticks=none, xmin=-1.6, xmax=1.8, ymin=-1.6, ymax=1.8, zmin=0, zmax=14.5,
+      title={(a) the helix $\langle\cos t,\sin t,t\rangle$}, title style={font=\small}]
+    \addplot3[surf, shader=flat, colormap={cb}{color=(figB!14) color=(figB!14)}, opacity=0.6, domain=0:360, y domain=0:13, samples=37, samples y=2] ({cos(x)}, {sin(x)}, y);
+    \addplot3[figB!40, thin, domain=0:360, samples=60, samples y=1] ({cos(x)}, {sin(x)}, 0);
+    \addplot3[figB!40, thin, domain=0:360, samples=60, samples y=1] ({cos(x)}, {sin(x)}, 13);
+    \addplot3[figR, very thick, domain=0:12.5, samples=200, samples y=1] ({cos(deg(x))}, {sin(deg(x))}, x);
+    \addplot3[only marks, mark=*, mark size=1.3pt] coordinates {(1,0,0) (0,1,1.5708)};
+    \node[anchor=north west] at (axis cs:1,0,0) {$(1,0,0)$};
+    \node[anchor=west] at (axis cs:0,1,1.5708) {$(0,1,\tfrac{\pi}{2})$};
+  \end{axis}
+  \begin{axis}[at={(A.east)}, anchor=west, xshift=0.8cm, view={120}{20}, width=6.4cm, height=7cm, axis lines=center, axis line style={-stealth, black!60},
+      xlabel={$x$}, ylabel={$y$}, zlabel={$z$}, ticks=none, xmin=-1.6, xmax=1.8, ymin=-1.6, ymax=1.8, zmin=0, zmax=4.2,
+      title={(b) $x^2+y^2=1$ meets $y+z=2$}, title style={font=\small}]
+    \addplot3[surf, shader=flat, colormap={cb}{color=(figB!14) color=(figB!14)}, opacity=0.6, domain=0:360, y domain=0:3.6, samples=37, samples y=2] ({cos(x)}, {sin(x)}, y);
+    \addplot3[surf, shader=flat, colormap={cg}{color=(figG!18) color=(figG!18)}, opacity=0.5, domain=-1.4:1.4, y domain=-1.4:1.4, samples=2, samples y=2] (x, y, {2 - y});
+    \addplot3[figR, very thick, domain=0:360, samples=90, samples y=1] ({cos(x)}, {sin(x)}, {2 - sin(x)});
+    \addplot3[only marks, mark=*, mark size=1.3pt] coordinates {(1,0,2) (0,1,1) (-1,0,2) (0,-1,3)};
+    \node[anchor=north east] at (axis cs:0,1,1) {$(0,1,1)$};
+    \node[anchor=south west] at (axis cs:0,-1,3) {$(0,-1,3)$};
+  \end{axis}
+\end{tikzpicture}

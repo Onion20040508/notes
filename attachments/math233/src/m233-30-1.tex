@@ -1,0 +1,20 @@
+% Figure for Calculus §30.
+\begin{tikzpicture}[x=0.62cm, y=0.38cm, font=\scriptsize,
+    declare function={f(\x)=1+7/\x+3/(\x*\x);}]
+  \draw[-stealth, thin, black!70] (-9.3,0) -- (6.4,0) node[right] {$x$};
+  \draw[-stealth, thin, black!70] (0,-4.4) -- (0,10.6) node[above] {$y$};
+  \draw[black!60, dashed] (-9.2,1) -- (6.2,1);
+  \node[black!70, above] at (5.3,1) {$y=1$};
+  \foreach \t in {-8,-6,-4,-2,2,4} \draw[thin, black!70] (\t,0.1) -- (\t,-0.1);
+  \foreach \t in {-8,-6,-4,2,4} \node[above] at (\t,0.1) {$\t$};
+  \foreach \t in {-2,2,4,6,8} \draw[thin, black!70] (0.1,\t) -- (-0.1,\t);
+  \foreach \t in {2,4,6,8} \node[right] at (0.1,\t) {$\t$};
+  \node[right] at (0.1,-2) {$-2$};
+  \draw[figB, thick] plot[domain=-9.2:-0.309, samples=200] (\x,{f(\x)});
+  \draw[figB, thick] plot[domain=1.09:6.2, samples=120] (\x,{f(\x)});
+  \fill[figB] (-0.857,-3.083) circle (1.9pt);
+  \node[figB, below right] at (-0.8,-3.1) {$\big(-\frac67,-\frac{37}{12}\big)$};
+  \fill[figR] (-1.286,-2.630) circle (1.9pt);
+  \node[figR, left] at (-1.4,-2.63) {$\big(-\frac97,-\frac{71}{27}\big)$};
+  \node[figB, right] at (1.5,{f(1.5)}) {$y=\dfrac{x^2+7x+3}{x^2}$};
+\end{tikzpicture}

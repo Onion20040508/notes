@@ -1,0 +1,20 @@
+% Figure for Calculus §94.
+\begin{tikzpicture}[font=\small, every node/.style={inner sep=2pt},
+    lab/.style={font=\scriptsize, fill=white, inner sep=1pt}]
+  \node (z) at (0,0) {$z$};
+  \node (x) at (-2.2,-1.7) {$x$};
+  \node (y) at (2.2,-1.7) {$y$};
+  \node (s1) at (-3.3,-3.6) {$s$};
+  \node (t1) at (-1.1,-3.6) {$t$};
+  \node (s2) at (1.1,-3.6) {$s$};
+  \node (t2) at (3.3,-3.6) {$t$};
+  \draw[thick, black!70] (z) -- node[lab, above left] {$\dfrac{\partial z}{\partial x}$} (x);
+  \draw[thick, black!70] (z) -- node[lab, above right] {$\dfrac{\partial z}{\partial y}$} (y);
+  \draw[thick, figR] (x) -- node[lab, left, xshift=-2pt] {$\dfrac{\partial x}{\partial s}$} (s1);
+  \draw[thick, figB] (x) -- node[lab, right, xshift=2pt] {$\dfrac{\partial x}{\partial t}$} (t1);
+  \draw[thick, figR] (y) -- node[lab, left, xshift=-2pt] {$\dfrac{\partial y}{\partial s}$} (s2);
+  \draw[thick, figB] (y) -- node[lab, right, xshift=2pt] {$\dfrac{\partial y}{\partial t}$} (t2);
+  \node[font=\scriptsize, black!60, anchor=west] at (4.0,0) {dependent variable};
+  \node[font=\scriptsize, black!60, anchor=west] at (4.0,-1.7) {intermediate variables};
+  \node[font=\scriptsize, black!60, anchor=west] at (4.0,-3.6) {independent variables};
+\end{tikzpicture}

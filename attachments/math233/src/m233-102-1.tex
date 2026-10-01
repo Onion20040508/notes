@@ -1,0 +1,42 @@
+% Figure for Calculus §102.
+\begin{tikzpicture}[x={(-0.75cm,-0.6cm)}, y={(1.3cm,0cm)}, z={(0cm,0.62cm)}, font=\scriptsize,
+    declare function={f(\x,\y)=2.6+0.3*\x+0.2*\y*\y-0.09*\x*\x;
+                      fx(\x,\y)=0.3-0.18*\x; fy(\x,\y)=0.4*\y;}]
+  \def\xa{1.3} \def\ya{1.0} \def\dx{0.9} \def\dy{0.9}
+  \pgfmathsetmacro{\xb}{\xa+\dx} \pgfmathsetmacro{\yb}{\ya+\dy}
+  \pgfmathsetmacro{\P}{f(\xa,\ya)} \pgfmathsetmacro{\A}{fx(\xa,\ya)*\dx} \pgfmathsetmacro{\B}{fy(\xa,\ya)*\dy}
+  % axes
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,3.6,0) node[right] {$y$};
+  \draw[-stealth, thin, black!70] (0,0,0) -- (0,0,5.6) node[above] {$z$};
+  \draw[-stealth, thin, black!70] (0,0,0) -- (3.6,0,0) node[below left] {$x$};
+  % domain D and the small rectangle
+  \draw[black!40, thin] (0.3,0.2,0) -- (3,0.2,0) -- (3,3,0) -- (0.3,3,0) -- cycle;
+  \node[black!60] at (2.8,2.75,0) {$D$};
+  \fill[figG!30] (\xa,\ya,0) -- (\xb,\ya,0) -- (\xb,\yb,0) -- (\xa,\yb,0) -- cycle;
+  \draw[figG!70!black] (\xa,\ya,0) -- (\xb,\ya,0) -- (\xb,\yb,0) -- (\xa,\yb,0) -- cycle;
+  \node[figG!60!black] at ({(\xa+\xb)/2},{(\ya+\yb)/2},0) {$R_{ij}$};
+  \draw[figG!70!black, |-|] (\xb+0.3,\ya,0) -- (\xb+0.3,\yb,0) node[midway, below] {$\Delta y$};
+  \draw[figG!70!black, |-|] (\xa,\ya-0.25,0) -- (\xb,\ya-0.25,0) node[midway, left] {$\Delta x$};
+  % surface mesh
+  \foreach \t in {0.3,0.84,1.38,1.92,2.46,3.0} {
+    \draw[figB!45, thin] plot[domain=0.2:3, samples=30] (\t,\x,{f(\t,\x)});
+  }
+  \foreach \t in {0.2,0.76,1.32,1.88,2.44,3.0} {
+    \draw[figB!45, thin] plot[domain=0.3:3, samples=30] (\x,\t,{f(\x,\t)});
+  }
+  \draw[figB, thick] plot[domain=0.2:3, samples=40] (3,\x,{f(3,\x)}) -- plot[domain=3:0.3, samples=40] (\x,3,{f(\x,3)});
+  % vertical lines
+  \foreach \u/\v in {\xa/\ya, \xb/\ya, \xb/\yb, \xa/\yb} \draw[black!35, dashed] (\u,\v,0) -- (\u,\v,{f(\u,\v)});
+  % surface patch Delta S
+  \fill[figB!35, opacity=0.8] plot[domain=\ya:\yb, samples=20] (\xa,\x,{f(\xa,\x)}) -- plot[domain=\xa:\xb, samples=20] (\x,\yb,{f(\x,\yb)})
+      -- plot[domain=\yb:\ya, samples=20] (\xb,\x,{f(\xb,\x)}) -- plot[domain=\xb:\xa, samples=20] (\x,\ya,{f(\x,\ya)}) -- cycle;
+  % tangent parallelogram
+  \fill[figR!25, opacity=0.85] (\xa,\ya,\P) -- (\xb,\ya,{\P+\A}) -- (\xb,\yb,{\P+\A+\B}) -- (\xa,\yb,{\P+\B}) -- cycle;
+  \draw[figR, thin] (\xa,\ya,\P) -- (\xb,\ya,{\P+\A}) -- (\xb,\yb,{\P+\A+\B}) -- (\xa,\yb,{\P+\B}) -- cycle;
+  \draw[figR, thick, -stealth] (\xa,\ya,\P) -- (\xb,\ya,{\P+\A}) node[midway, left] {$\mathbf a$};
+  \draw[figR, thick, -stealth] (\xa,\ya,\P) -- (\xa,\yb,{\P+\B}) node[midway, above] {$\mathbf b$};
+  \fill[figR] (\xa,\ya,\P) circle (1.3pt) node[above left] {$P_{ij}$};
+  \node[figR, right] at (1.0,2.9,3.2) {$\Delta T_{ij}$};
+  \draw[figR, thin] (1.0,2.92,3.2) -- ({(\xa+\xb)/2+0.1},{(\ya+\yb)/2+0.15},{\P+0.5*\A+0.5*\B+0.05});
+  \node[figB] at (0.3,3.25,{f(0.3,3)+0.2}) {$S$};
+\end{tikzpicture}

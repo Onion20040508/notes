@@ -60,7 +60,7 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 ^thm-11-1
 
 > [!remark] Remark: Why It Works
-> The graph of $\tan^{-1}$ is the reflection in the line $y = x$ of the graph of $\tan$ restricted to $(-\pi/2, \pi/2)$ ([[§5 Inverse Functions and Logarithms|§5]]). The tangent has the vertical asymptotes $x = \pm\pi/2$, and reflecting turns them into the horizontal asymptotes $y = \pm\pi/2$. This is Stewart's argument.
+> The graph of $\tan^{-1}$ is the reflection in the line $y = x$ of the graph of $\tan$ restricted to $(-\pi/2, \pi/2)$ ([[§5 Inverse Functions and Logarithms#^thm-5-3|Theorem §5.3]]). The tangent has the vertical asymptotes $x = \pm\pi/2$, and reflecting turns them into the horizontal asymptotes $y = \pm\pi/2$. This is Stewart's argument.
 
 ^rem-11-1
 
@@ -75,12 +75,12 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 
 ^pf-11-1
 
-*Uses:* [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Def. §11.4]], [[§5 Inverse Functions and Logarithms|§5]] (inverse tangent)
+*Uses:* [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Def. §11.4]], [[§5 Inverse Functions and Logarithms#^def-5-7|Def. §5.7]] (inverse tangent)
 
 ## Evaluating Limits at Infinity
 
 > [!theorem] Theorem §11.2: Limit Laws at Infinity
-> The Limit Laws of [[§8 Calculating Limits Using the Limit Laws|§8]], with the exception of Laws 10 and 11, remain valid if "$x \to a$" is replaced by "$x \to \infty$" or "$x \to -\infty$". (Laws 10 and 11, $\lim_{x \to a} x^n = a^n$ and $\lim_{x \to a} \sqrt[n]{x} = \sqrt[n]{a}$, have no meaning with $a = \pm\infty$.)
+> The Limit Laws of [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|Theorems §8.1]] and [[§8 Calculating Limits Using the Limit Laws#^thm-8-2|§8.2]], with the exception of Laws 10 and 11, remain valid if "$x \to a$" is replaced by "$x \to \infty$" or "$x \to -\infty$". (Laws 10 and 11, $\lim_{x \to a} x^n = a^n$ and $\lim_{x \to a} \sqrt[n]{x} = \sqrt[n]{a}$, have no meaning with $a = \pm\infty$.)
 >
 > *Stewart: 2.6 (text)*
 
@@ -214,7 +214,7 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 
 ^pf-11-4
 
-*Uses:* [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Def. §11.4]], [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-5|Def. §11.5]], [[§4 Exponential Functions|§4]] (the number e; monotonicity of exponentials)
+*Uses:* [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Def. §11.4]], [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-5|Def. §11.5]], [[§4 Exponential Functions#^def-4-4|Def. §4.4]], [[§4 Exponential Functions#^prop-4-2|§4.2]] (the number e; monotonicity of exponentials)
 
 > [!example] Example §11.3: The Conjugate Radical and New Variables
 > **(a)** Compute $\lim_{x \to \infty} \big(\sqrt{x^2 + 1} - x\big)$.

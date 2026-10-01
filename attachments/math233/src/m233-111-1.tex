@@ -1,0 +1,12 @@
+% Figure for Calculus §111.
+\begin{tikzpicture}[x=1cm, y=1cm, font=\scriptsize,
+    mid arrow/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
+  \draw[figG, thick, fill=figG!10, mid arrow=0.45, mid arrow=0.95] (1.9,1.1) ellipse (1.9 and 1.25);
+  \node[font=\small] at (1.6,0.9) {$D$};
+  \node[figG] at (1.0,-0.4) {$C$};
+  \coordinate (P) at (3.622,1.628);
+  \fill (P) circle (1.6pt);
+  \draw[figB, very thick, -{Stealth[length=6pt]}] (P) -- ++(-0.578,0.816) node[above] {$\mathbf{T}$};
+  \draw[figR, very thick, -{Stealth[length=6pt]}] (P) -- ++(0.816,0.578) node[right] {$\mathbf{n}$};
+  \draw[black!50] ($(P)+(-0.578*0.17,0.816*0.17)$) -- ++(0.816*0.17,0.578*0.17) -- ++(0.578*0.17,-0.816*0.17);
+\end{tikzpicture}

@@ -156,7 +156,7 @@ In [[§12 Derivatives and Rates of Change|§12]] the derivative was computed at 
 > \lim_{h \to 0^+} \frac{|h|}{h} = \lim_{h \to 0^+} \frac{h}{h} = 1, \qquad \lim_{h \to 0^-} \frac{|h|}{h} = \lim_{h \to 0^-} \frac{-h}{h} = -1 .
 > $$
 >
-> They differ, so $f'(0)$ does not exist ([[§8 Calculating Limits Using the Limit Laws|§8]], Theorem 2.3.1). Hence $|x|$ is differentiable at every $x$ except $0$, with
+> They differ, so $f'(0)$ does not exist ([[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]]). Hence $|x|$ is differentiable at every $x$ except $0$, with
 >
 > $$
 > f'(x) = \begin{cases} 1 & \text{if } x > 0 \\ -1 & \text{if } x < 0 . \end{cases}
@@ -204,7 +204,7 @@ In [[§12 Derivatives and Rates of Change|§12]] the derivative was computed at 
 
 ^pf-13-1
 
-*Uses:* [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]], [[§10 Continuity#^def-10-1|Def. §10.1]], [[§8 Calculating Limits Using the Limit Laws|§8]] (Limit Laws 1, 4 and 8)
+*Uses:* [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]], [[§10 Continuity#^def-10-1|Def. §10.1]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-2|§8.2]] (Limit Laws 1, 4 and 8)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-1|451 Thm. §28.1]] (same proof), with the derivative defined in [[§28 Basic Properties of the Derivative#^def-28-1|451 Def. §28.1]]; the converse fails, [[§28 Basic Properties of the Derivative#^rem-28-1|451 Remark: The converse fails]].
