@@ -1,0 +1,21 @@
+% Figure for Applied Linear Algebra §48.
+\begin{tikzpicture}[x=0.42cm, y=0.42cm, font=\scriptsize]
+  % eigenvector lines
+  \draw[figG, dashed, thin] ({-9*2/sqrt(5)},{-9*1/sqrt(5)}) -- ({9*2/sqrt(5)},{9*1/sqrt(5)});
+  \draw[figG, dashed, thin] ({4.6*1/sqrt(5)},{-4.6*2/sqrt(5)}) -- ({-4.6*1/sqrt(5)},{4.6*2/sqrt(5)});
+  \draw[-stealth, thin, black!60] (-9,0) -- (9,0) node[right] {$x_1$};
+  \draw[-stealth, thin, black!60] (0,-5.6) -- (0,5.8) node[above] {$x_2$};
+  % image ellipse A(cos t, sin t)
+  \draw[figB, thick, fill=figB!8] plot[domain=0:360, samples=120] ({7*cos(\x)+2*sin(\x)},{2*cos(\x)+4*sin(\x)});
+  % unit circle
+  \draw[black!70, thick, fill=black!10] (0,0) circle (1);
+  % principal semi-axes
+  \draw[-stealth, figB, very thick] (0,0) -- ({8*2/sqrt(5)},{8*1/sqrt(5)}) node[above right=-1pt] {$A\mathbf{u}_1 = 8\mathbf{u}_1$};
+  \draw[-stealth, figB, very thick] (0,0) -- ({-3*1/sqrt(5)},{3*2/sqrt(5)}) node[above left=-1pt] {$A\mathbf{u}_2 = 3\mathbf{u}_2$};
+  \draw[-stealth, figR, very thick] (0,0) -- ({2/sqrt(5)},{1/sqrt(5)});
+  \draw[-stealth, figR, very thick] (0,0) -- ({-1/sqrt(5)},{2/sqrt(5)});
+  \node[figR] at (1.55,-0.35) {$\mathbf{u}_1$};
+  \node[figR] at (-1.25,0.45) {$\mathbf{u}_2$};
+  \node[black!70] at (0.9,-1.3) {$\|\mathbf{x}\| = 1$};
+  \node[figB] at (5.6,-2.9) {$\{A\mathbf{x} : \|\mathbf{x}\| = 1\}$};
+\end{tikzpicture}

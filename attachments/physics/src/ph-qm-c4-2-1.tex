@@ -1,0 +1,20 @@
+% Figure for Quantum Mechanics §C4.2 (time slicing: the composition law iterated; waypoints x_2..x_{N-1} integrated over).
+% Three broken-line paths with pseudo-random waypoints (numpy seed 7, Gaussian scatter 1.1 about the straight line), N = 8 slices.
+\begin{tikzpicture}[x=1.35cm, y=1cm, font=\small]
+  \foreach \j/\lab in {0/1,1/2,2/3,3/4,4/5,5/6,6/{N-1},7/N} {
+    \draw[black!30, thin] (-1.0,{0.62*\j}) -- (4.4,{0.62*\j});
+    \node[font=\scriptsize, black!70, anchor=west] at (4.45,{0.62*\j}) {$t_{\lab}$};
+  }
+  \draw[->, thin, black!60] (-1.0,-0.35) -- (4.4,-0.35) node[right, font=\scriptsize] {$x$};
+  \draw[->, thin, black!60] (-1.0,-0.35) -- (-1.0,4.75) node[above, font=\scriptsize] {$t$};
+  \draw[figB, thick] (0.000,0.000) -- (0.430,0.620) -- (1.186,1.240) -- (0.984,1.860) -- (0.735,2.480) -- (1.643,3.100) -- (1.481,3.720) -- (3.000,4.340);
+  \draw[figG, thick] (0.000,0.000) -- (0.495,0.620) -- (2.331,1.240) -- (0.744,1.860) -- (1.032,2.480) -- (2.682,3.100) -- (2.964,3.720) -- (3.000,4.340);
+  \draw[figO, thick] (0.000,0.000) -- (0.545,0.620) -- (-0.166,1.240) -- (1.254,1.860) -- (2.479,2.480) -- (0.664,3.100) -- (2.068,3.720) -- (3.000,4.340);
+  \draw[figR, very thick] (0,0) -- (3,4.34);
+  \foreach \p in {(0.430,0.620),(1.186,1.240),(0.984,1.860),(0.735,2.480),(1.643,3.100),(1.481,3.720)} \fill[figB] \p circle (1.5pt);
+  \fill (0,0) circle (2.2pt) node[below, font=\scriptsize] {$(x_1, t_1)$};
+  \fill (3,4.34) circle (2.2pt) node[above, font=\scriptsize] {$(x_N, t_N)$};
+  \draw[<->, black!70, thin] (-0.6,2.48) -- (3.9,2.48);
+  \node[font=\scriptsize, black!75, fill=white, inner sep=1pt] at (3.55,2.72) {$\int dx_5$};
+  \node[font=\scriptsize, figR, anchor=west] at (2.05,1.55) {classical path};
+\end{tikzpicture}

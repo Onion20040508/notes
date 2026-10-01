@@ -1,0 +1,22 @@
+% Figure for Quantum Mechanics §C3.4 (Theorems: Heisenberg-picture oscillator; coherent states as displaced vacua). Phase plane in units x0 = sqrt(hbar/m omega), p0 = hbar/x0; ellipses are the 1-sigma contours (sigma_X, sigma_P) of the state at t = kT/8, k = 0..7, centred on the classical orbit (dashed) of radius sqrt2 |lambda| = 2.83 (lambda0 = 2), which the centre runs clockwise. Left: coherent state, sigma_X = sigma_P = 1/sqrt2 (the ground state's disc, carried rigidly). Right: a Gaussian with sigma_X = sqrt2, sigma_P = 1/(2 sqrt2) at t = 0 (minimum uncertainty but not a coherent state); the phase-space flow rotates it rigidly, so its x-width oscillates at 2 omega. Computed.
+\begin{tikzpicture}[font=\small, scale=0.62]
+  \foreach \panel/\sx/\sp/\name in {0/0.7071/0.7071/{coherent state $\lvert\lambda\rangle$, $\lambda_0 = 2$}, 1/1.4142/0.3536/{Gaussian with $\sigma_x = 2\sigma_x^{(0)}$ at $t = 0$}} {
+    \begin{scope}[xshift=\panel*11.4cm]
+      \draw[->, thin, black!55] (-4.4,0) -- (4.6,0) node[right, font=\scriptsize] {$x/x_0$};
+      \draw[->, thin, black!55] (0,-4.4) -- (0,4.6) node[above, font=\scriptsize] {$p/p_0$};
+      \draw[black!50, thin, dashed] (0,0) circle (2.828);
+      \foreach \k in {0,...,7} {
+        \pgfmathsetmacro{\ang}{-45*\k}
+        \pgfmathsetmacro{\cx}{2.828*cos(\ang)}
+        \pgfmathsetmacro{\cy}{2.828*sin(\ang)}
+        \ifnum\k=0 \def\col{figR}\else\def\col{figB}\fi
+        \draw[\col, thick, fill=\col, fill opacity=0.15, rotate around={\ang:(\cx,\cy)}] (\cx,\cy) ellipse ({\sx} and {\sp});
+        \fill (\cx,\cy) circle (1.4pt);
+      }
+      \node[font=\scriptsize, anchor=south, figR] at (3.1,0.85) {$t = 0$};
+      \node[font=\scriptsize, anchor=west] at (0.85,-3.75) {$t = T/4$};
+      \draw[->, black!70, thick] (80:3.9) arc (80:55:3.9);
+      \node[font=\scriptsize, black!75, anchor=north] at (0,-4.9) {\name};
+    \end{scope}
+  }
+\end{tikzpicture}

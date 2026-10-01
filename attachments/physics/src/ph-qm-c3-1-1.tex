@@ -1,0 +1,15 @@
+% Figure for Quantum Mechanics §C3.1 (Theorem: correlation amplitude; ★ Remark: the bound |C|^2 >= cos^2(Delta E t/hbar)). Survival probability |C(t)|^2 against x = t Delta E/hbar for three energy distributions with the same spread Delta E: two equal levels (|C|^2 = cos^2 x; equals the bound up to pi/2), a Gaussian (|C|^2 = exp(-x^2)), a flat distribution of width W = sqrt(12) Delta E (|C|^2 = [sin(sqrt3 x)/(sqrt3 x)]^2). Computed.
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=10cm, height=5.6cm, xmin=0, xmax=3.3, ymin=0, ymax=1.05,
+      xtick={0,0.5,1,1.5708,2,2.5,3}, xticklabels={$0$,$0.5$,$1$,$\frac{\pi}{2}$,$2$,$2.5$,$3$}, ytick={0,0.25,0.5,0.75,1},
+      xlabel={$t\,\Delta E/\hbar$}, ylabel={$\lvert C(t)\rvert^2$},
+      legend style={draw=none, fill=none, font=\scriptsize, at={(0.52,0.97)}, anchor=north west}]
+    \addplot[figR, very thick, domain=0:3.3, samples=300] {cos(deg(x))^2};
+    \addplot[figB, very thick, domain=0:3.3, samples=200] {exp(-x^2)};
+    \addplot[figG, very thick, domain=0.001:3.3, samples=300] {(sin(deg(1.73205*x))/(1.73205*x))^2};
+    \addplot[black!60, thin, dashed, domain=0:1.25, samples=50] {1-x^2};
+    \draw[black!55, thin, densely dotted] (axis cs:1.5708,0) -- (axis cs:1.5708,1.0);
+    \node[black!60, font=\scriptsize, anchor=west] at (axis cs:0.62,0.72) {$1 - (t\Delta E/\hbar)^2$};
+    \legend{two levels, Gaussian, flat band}
+  \end{axis}
+\end{tikzpicture}
