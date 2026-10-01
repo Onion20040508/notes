@@ -8,7 +8,7 @@ tags: [chapter, oscillations-waves-and-optics]
 # A6 Interference
 ← [[· A5 Geometric Optics and Image Formation]] · ↑ [[Oscillations, Waves and Optics]] · [[· A7 Diffraction]] →
 
-**Builds on:** [[· A1 Oscillations|A1 Oscillations]] (5), [[· A2 Mechanical Waves|A2 Mechanical Waves]] (6), [[· A4 The Nature of Light|A4 The Nature of Light]] (5), [[· A7 Diffraction|A7 Diffraction]] (1)
+**Builds on:** [[· A1 Oscillations|A1 Oscillations]] (5), [[· A2 Mechanical Waves|A2 Mechanical Waves]] (6), [[· A4 The Nature of Light|A4 The Nature of Light]] (5), [[· A7 Diffraction|A7 Diffraction]] (1), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (1)
 **Used by:** [[· A7 Diffraction|A7 Diffraction]] (20), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (1), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (16)
 
 ## Sections
