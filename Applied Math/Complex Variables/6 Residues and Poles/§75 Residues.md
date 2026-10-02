@@ -126,8 +126,6 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 >
 > The example is a reminder that analyticity of a function within and on a simple closed contour is a *sufficient* condition for its integral around the contour to be zero ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]), not a *necessary* one.
 >
-> *B&C displays at this point the series of $\cosh(1/z)$, which has the powers $z^{-2}, z^{-4}, z^{-6}, \ldots$; the conclusion $b_1 = 0$ holds for both functions, since neither series contains an odd power of $1/z$.*
->
 > *B&C: Sec. 75, Example 2*
 
 ^ex-75-2

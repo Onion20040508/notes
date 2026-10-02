@@ -145,3 +145,38 @@ The essential singular point of $\sin(1/z)$ at the origin, with residue $1$, is 
 > *Source: 342 practice final (Spring 2005), Q8a*
 
 ^ex-78-2
+
+> [!example] Example §78.3: One Singular Point of Each Kind of Principal Part
+> Write the principal part of each function at its isolated singular point, and classify the point:
+>
+> $$
+> \text{(a)}\ \frac{\sin z}{z}; \qquad \text{(b)}\ \frac{1}{(2 - z)^3}; \qquad \text{(c)}\ \frac{1 - \cosh z}{z^3} .
+> $$
+>
+> **(a)** The singular point is $0$. From the Maclaurin series of $\sin z$,
+>
+> $$
+> \frac{\sin z}{z} = \frac1z\Big(z - \frac{z^3}{3!} + \frac{z^5}{5!} - \cdots\Big) = 1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \cdots \qquad (0 < |z| < \infty) .
+> $$
+>
+> The principal part is zero: a **removable singular point**; with the value $1$ at $0$ the function is entire ([[§78 The Three Types of Isolated Singular Points#^prop-78-1|Proposition §78.1]]).
+>
+> **(b)** The singular point is $2$, and $(2 - z)^3 = -(z - 2)^3$, so
+>
+> $$
+> \frac{1}{(2 - z)^3} = \frac{-1}{(z - 2)^3} \qquad (0 < |z - 2| < \infty)
+> $$
+>
+> is already its own Laurent series. The principal part is $-1/(z - 2)^3$, with $b_3 = -1 \ne 0$ and every other $b_n = 0$: a **pole of order $3$**, with residue $b_1 = 0$.
+>
+> **(c)** The singular point is $0$. From the Maclaurin series of $\cosh z$,
+>
+> $$
+> \frac{1 - \cosh z}{z^3} = -\frac{1}{z^3}\Big(\frac{z^2}{2!} + \frac{z^4}{4!} + \frac{z^6}{6!} + \cdots\Big) = -\frac{1}{2}\cdot\frac1z - \frac{z}{4!} - \frac{z^3}{6!} - \cdots \qquad (0 < |z| < \infty) .
+> $$
+>
+> The principal part is $-\frac{1}{2z}$: a **simple pole**, with residue $-\frac12$, although the denominator is $z^3$. (The numerator vanishes to order $2$ at $0$ and cancels two powers of $z$.)
+>
+> *B&C: Sec. 79, Exercises 1(c), 1(e) and 2(a)*
+
+^ex-78-3

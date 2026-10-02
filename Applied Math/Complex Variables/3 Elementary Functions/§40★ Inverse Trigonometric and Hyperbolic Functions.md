@@ -55,7 +55,7 @@ Since $\sin w$, $\cos w$, $\tan w$ and their hyperbolic counterparts are rationa
 > (e^{iw})^2 - 2iz(e^{iw}) - 1 = 0 ,
 > $$
 >
-> a quadratic equation in $e^{iw}$. By the quadratic formula ([[§11 Examples (Roots of Complex Numbers)|§11]], Exercise 8(a)), with the double-valued square root,
+> a quadratic equation in $e^{iw}$. By the quadratic formula ([[§11 Examples (Roots of Complex Numbers)#^ex-11-4|Example §11.4]]), with the double-valued square root,
 >
 > $$
 > e^{iw} = \frac{2iz + (-4z^2 + 4)^{1/2}}{2} = iz + (1 - z^2)^{1/2} , \qquad (1)
@@ -65,7 +65,7 @@ Since $\sin w$, $\cos w$, $\tan w$ and their hyperbolic counterparts are rationa
 
 ^pf-40-1
 
-*Uses:* [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Def. §37.1]], [[§31 The Logarithmic Function#^thm-31-1|§31.1]], [[§11 Examples (Roots of Complex Numbers)|§11]] (quadratic formula, Exercise 8)
+*Uses:* [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Def. §37.1]], [[§31 The Logarithmic Function#^thm-31-1|§31.1]], [[§11 Examples (Roots of Complex Numbers)#^ex-11-4|Ex. §11.4]]
 
 > [!example] Example §40.1: The Values of sin⁻¹(−i)
 > Expression (2) gives, with $z = -i$, $iz = 1$ and $1 - z^2 = 2$,
@@ -192,7 +192,7 @@ The functions $\cos^{-1}z$ and $\tan^{-1}z$ are also multiple-valued. When speci
 
 ^pf-40-3
 
-*Uses:* [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-1|§40.1]], [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-2|§40.2]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]], [[§20 Rules for Differentiation|§20]] (chain and quotient rules)
+*Uses:* [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-1|§40.1]], [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-2|§40.2]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]], [[§20 Rules for Differentiation#^thm-20-2|§20.2]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]]
 
 > [!remark]- Connections
 > - For real $x$ in $(-1, 1)$ and the principal branches these are the calculus formulas $\frac{d}{dx}\sin^{-1}x = \frac{1}{\sqrt{1 - x^2}}$, $\frac{d}{dx}\cos^{-1}x = -\frac{1}{\sqrt{1 - x^2}}$, $\frac{d}{dx}\tan^{-1}x = \frac{1}{1 + x^2}$: [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|Calc Thm. §19.8]], proved there by differentiating an inverse function, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Calc Thm. §19.1]].
@@ -233,7 +233,7 @@ The functions $\cos^{-1}z$ and $\tan^{-1}z$ are also multiple-valued. When speci
 
 ^pf-40-4
 
-*Uses:* [[§39★ Hyperbolic Functions#^def-39-1|Def. §39.1]], [[§31 The Logarithmic Function#^thm-31-1|§31.1]], [[§11 Examples (Roots of Complex Numbers)|§11]] (quadratic formula, Exercise 8)
+*Uses:* [[§39★ Hyperbolic Functions#^def-39-1|Def. §39.1]], [[§31 The Logarithmic Function#^thm-31-1|§31.1]], [[§11 Examples (Roots of Complex Numbers)#^ex-11-4|Ex. §11.4]]
 
 > [!remark]- Connections
 > - The real formulas, with the positive square root and $\ln$: [[§24 Hyperbolic Functions#^thm-24-3|Calc Thm. §24.3]], proved by the same quadratic in $e^y$; their derivatives, [[§24 Hyperbolic Functions#^thm-24-4|Calc Thm. §24.4]]. In the complex plane the restriction $x \ge 1$ for $\cosh^{-1}x$ and $|x| < 1$ for $\tanh^{-1}x$ disappears, at the price of multiple values.

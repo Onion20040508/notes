@@ -48,7 +48,7 @@ The first consequence of uniform convergence is that the sum of a power series i
 >
 > for every $z$ in that disk, in particular for $z = z_1$ and for every $z$ in a neighborhood $|z - z_1| < \delta_1$ small enough to be contained in the disk (any $\delta_1 \le R_0 - |z_1 - z_0|$ will do).
 >
-> Now fix $N = N_\varepsilon + 1$. The partial sum $S_N(z)$ is a polynomial and is therefore continuous at $z_1$ ([[§18 Continuity|§18]]), so there is $\delta$ with $0 < \delta \le \delta_1$ such that
+> Now fix $N = N_\varepsilon + 1$. The partial sum $S_N(z)$ is a polynomial and is therefore continuous at $z_1$ ([[§18 Continuity#^prop-18-1|Proposition §18.1]]), so there is $\delta$ with $0 < \delta \le \delta_1$ such that
 >
 > $$
 > |S_N(z) - S_N(z_1)| < \frac\varepsilon3 \qquad\text{whenever}\qquad |z - z_1| < \delta . \qquad (5)
@@ -64,7 +64,7 @@ The first consequence of uniform convergence is that the sum of a power series i
 
 ^pf-70-1
 
-*Uses:* [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|§69.3]], [[§61 Convergence of Series#^def-61-3|Def. §61.3]], [[§18 Continuity|§18]] (polynomials are continuous)
+*Uses:* [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|§69.3]], [[§61 Convergence of Series#^def-61-3|Def. §61.3]], [[§18 Continuity#^prop-18-1|§18.1]] (polynomials are continuous)
 
 > [!remark]- Connections
 > - This is the special case for power series of "a uniform limit of continuous functions is continuous", [[§24 Uniform Convergence#^thm-24-2|451 Thm. §24.2]] and [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]]; the real power-series version is [[§26 Differentiation and Integration of Power Series#^cor-26-2|451 Cor. §26.2]]. The $\varepsilon/3$ argument above is the same proof, with the uniformity supplied by Theorem §69.3 on a slightly larger closed disk.
@@ -91,11 +91,11 @@ $$
 > |w| < \frac{1}{|z_1 - z_0|} , \qquad (7)
 > $$
 >
-> and its circle of convergence has radius at least $1/R_1$, so by [[§70★ Continuity of Sums of Power Series#^thm-70-1|Theorem §70.1]] its sum $T(w)$ is continuous in the disk (7). Inequality (7) is the same as $|z - z_0| > |z_1 - z_0|$. In that domain the sum of (6) is $T\big(1/(z - z_0)\big)$, the composition of $T$ with the continuous function $1/(z - z_0)$, hence continuous ([[§18 Continuity|§18]]).
+> and its circle of convergence has radius at least $1/R_1$, so by [[§70★ Continuity of Sums of Power Series#^thm-70-1|Theorem §70.1]] its sum $T(w)$ is continuous in the disk (7). Inequality (7) is the same as $|z - z_0| > |z_1 - z_0|$. In that domain the sum of (6) is $T\big(1/(z - z_0)\big)$, the composition of $T$ with the continuous function $1/(z - z_0)$, hence continuous ([[§18 Continuity#^thm-18-2|Theorem §18.2]]).
 
 ^pf-70-2
 
-*Uses:* [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-1|§69.1]], [[§70★ Continuity of Sums of Power Series#^thm-70-1|§70.1]], [[§18 Continuity|§18]] (composition of continuous functions)
+*Uses:* [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-1|§69.1]], [[§70★ Continuity of Sums of Power Series#^thm-70-1|§70.1]], [[§18 Continuity#^thm-18-2|§18.2]] (composition of continuous functions)
 
 B&C goes on to state, without separate proof, that both halves of a Laurent series converge uniformly away from the edges of their annulus. Here is the statement and why it holds.
 

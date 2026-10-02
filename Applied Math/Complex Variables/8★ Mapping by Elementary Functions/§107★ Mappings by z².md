@@ -31,7 +31,7 @@ Eliminating one of the variables from (1) shows what the coordinate lines become
 > x_1^2 = \frac{|w| + u}{2} .
 > $$
 >
-> Likewise a point on the image of $y = y_1 > 0$ has $y_1^2 = \frac{|w| - u}{2}$. These are the squares of the real and imaginary parts of the principal square root of $w$ ([[§108★ Mappings by Branches of z^(1∕2)|§108]]), as they should be.
+> Likewise a point on the image of $y = y_1 > 0$ has $y_1^2 = \frac{|w| - u}{2}$. These are the squares of the real and imaginary parts of the principal square root of $w$ ([[§108★ Mappings by Branches of z^(1∕2)#^def-108-1|Definition §108.1]]), as they should be.
 
 ^rem-107-1
 
@@ -74,7 +74,7 @@ Eliminating one of the variables from (1) shows what the coordinate lines become
 > Z = \sin z, \qquad w = Z^2 . \qquad (4)
 > $$
 >
-> By [[§104★ Mapping Vertical Line Segments by w = sin z#^ex-104-2|Example §104.2]], the first map takes the strip one to one onto the first quadrant $X \ge 0$, $Y \ge 0$ of the $Z$ plane. The second squares moduli and doubles arguments ([[§14 The Mapping w = z²|§14]]): $Z = Re^{i\Theta}$ with $0 \le \Theta \le \pi/2$ goes to $R^2e^{2i\Theta}$ with $0 \le 2\Theta \le \pi$, one to one onto $v \ge 0$. So the composition maps the strip onto the upper half plane. On the boundary: the base $0 \le x \le \pi/2$ goes onto $0 \le u \le 1$, the wall $x = \pi/2$ onto $u \ge 1$, and the $y$ axis (through $Z = i\sinh y$, $w = -\sinh^2 y$) onto $u \le 0$.
+> By [[§104★ Mapping Vertical Line Segments by w = sin z#^ex-104-2|Example §104.2]], the first map takes the strip one to one onto the first quadrant $X \ge 0$, $Y \ge 0$ of the $Z$ plane. The second squares moduli and doubles arguments ([[§14 The Mapping w = z²#^prop-14-3|Proposition §14.3]]): $Z = Re^{i\Theta}$ with $0 \le \Theta \le \pi/2$ goes to $R^2e^{2i\Theta}$ with $0 \le 2\Theta \le \pi$, one to one onto $v \ge 0$. So the composition maps the strip onto the upper half plane. On the boundary: the base $0 \le x \le \pi/2$ goes onto $0 \le u \le 1$, the wall $x = \pi/2$ onto $u \ge 1$, and the $y$ axis (through $Z = i\sinh y$, $w = -\sinh^2 y$) onto $u \le 0$.
 >
 > *B&C: Sec. 107, Example 2*
 

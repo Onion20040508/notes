@@ -179,7 +179,7 @@ This section proves Taylor's theorem, stated in [[§62 Taylor Series|§62]]. The
 > [!example] Example §63.2: The Disk Is Known Before the Series
 > **Problem.** Find the Maclaurin series of $f(z) = \dfrac{z}{z^4 + 4}$ and the disk in which it represents $f$.
 >
-> **The disk first.** $f$ fails to be analytic only where $z^4 = -4 = 4e^{i\pi}$, that is, at the four fourth roots ([[§10 Roots of Complex Numbers|§10]])
+> **The disk first.** $f$ fails to be analytic only where $z^4 = -4 = 4e^{i\pi}$, that is, at the four fourth roots ([[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]])
 >
 > $$
 > z = \sqrt2\,e^{i(\pi/4 + k\pi/2)} = \pm1 \pm i \qquad (k = 0, 1, 2, 3) ,

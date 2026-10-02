@@ -183,6 +183,8 @@ Harmonic functions play an important role in applied mathematics. For example, t
 >
 > By contrast $e^x\cos y$ and $e^x\sin y$ *are* real parts of entire functions, $e^z$ and $-ie^z$.
 >
+> The same conclusions follow from the Cauchy–Riemann equations alone, without the smoothness behind Theorem §27.1: [[§21 Cauchy–Riemann Equations#^rem-21-2|Remark: The Cauchy–Riemann Equations Alone Rule Out a Real Part]].
+>
 > *Source: 342 practice final (Spring 2005), Q8d; 342 practice final (Fall 2002), Q8d*
 
 ^ex-27-4

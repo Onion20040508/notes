@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§84 Behavior of Functions Near Isolated Singular Points]] · ↑ [[· 7 Applications of Residues]] · [[§86 Example (Evaluation of Improper Integrals)]] →
 
-*Brown–Churchill, Section 85 · MAT 342 Practice Final (Spring 2005).*
+*Brown–Churchill, Section 85.*
 
 Chapter 7 turns the residue theorem into a tool of real analysis. This section first fixes what an improper integral over the whole line means and separates it from its Cauchy principal value, a symmetric limit that can exist when the integral itself diverges. It then describes the basic method: integrate a rational function $p/q$ around a large semicircle in the upper half plane, so that the integral along the real axis equals $2\pi i$ times the sum of the residues at the zeros of $q$ above the axis, minus an arc integral that disappears as the radius grows. The method evaluates integrals for which no elementary antiderivative is in sight, and it is the model for every contour argument in the chapter.
 
@@ -126,7 +126,7 @@ For even functions the two notions agree.
 
 ## The Method of Residues
 
-The method applies to **rational functions** $f(x) = p(x)/q(x)$, where $p$ and $q$ are polynomials with real coefficients and no factors in common, and $q$ has no real zeros but at least one zero above the real axis. The distinct zeros of $q$ above the axis are finite in number (a nonzero polynomial has at most $\deg q$ zeros, [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]]); label them $z_1, z_2, \ldots, z_n$. Integrate
+The method applies to **rational functions** $f(x) = p(x)/q(x)$, where $p$ and $q$ are polynomials with real coefficients and no factors in common, and $q$ has no real zeros but at least one zero above the real axis. The distinct zeros of $q$ above the axis are finite in number (a nonzero polynomial has at most $\deg q$ zeros, [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^cor-58-4|Corollary §58.4]]); label them $z_1, z_2, \ldots, z_n$. Integrate
 
 $$
 f(z) = \frac{p(z)}{q(z)} \qquad (8)
@@ -164,24 +164,24 @@ around the positively oriented boundary of the half disk $|z| \le R$, $\operator
 ^thm-85-3
 
 > [!proof]+ Proof
-> As a quotient of polynomials, $f$ is analytic except at the zeros of $q$, which are isolated singular points. None lies on the closed contour $C$ formed by the segment and $C_R$: the segment is real and $q$ has no real zeros, and every zero of $q$ in the upper half plane has modulus less than $R$. Inside $C$ lie exactly $z_1, \ldots, z_n$ (the zeros of $q$ below the axis are outside). Cauchy's residue theorem ([[§76 Cauchy's Residue Theorem|§76]], Theorem) gives
+> As a quotient of polynomials, $f$ is analytic except at the zeros of $q$, which are isolated singular points. None lies on the closed contour $C$ formed by the segment and $C_R$: the segment is real and $q$ has no real zeros, and every zero of $q$ in the upper half plane has modulus less than $R$. Inside $C$ lie exactly $z_1, \ldots, z_n$ (the zeros of $q$ below the axis are outside). Cauchy's residue theorem ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]) gives
 >
 > $$
 > \int_{\text{segment}} f(z)\,dz + \int_{C_R} f(z)\,dz = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k} f(z) .
 > $$
 >
-> With the parametrization $z = x$ $(-R \le x \le R)$ of the segment, $z'(x) = 1$, the first integral is $\int_{-R}^{R} f(x)\,dx$ ([[§44 Contour Integrals|§44]]), and (9) follows.
+> With the parametrization $z = x$ $(-R \le x \le R)$ of the segment, $z'(x) = 1$, the first integral is $\int_{-R}^{R} f(x)\,dx$ ([[§44 Contour Integrals#^def-44-1|Definition §44.1]]), and (9) follows.
 >
 > The right side of (9) is a constant minus $\int_{C_R} f$. If the arc integral tends to $0$, the right side tends to $2\pi i\sum\operatorname{Res}$, so $\lim_{R\to\infty}\int_{-R}^{R} f(x)\,dx$ exists and equals it: this is (10). If $f$ is even, Proposition §85.2 turns (10) into (11) and (12).
 
 ^pf-85-3
 
-*Uses:* [[§85 Evaluation of Improper Integrals#^def-85-2|Def. §85.2]], [[§85 Evaluation of Improper Integrals#^prop-85-2|§85.2]], [[§76 Cauchy's Residue Theorem|§76]] (Theorem), [[§44 Contour Integrals|§44]], [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]]
+*Uses:* [[§85 Evaluation of Improper Integrals#^def-85-2|Def. §85.2]], [[§85 Evaluation of Improper Integrals#^prop-85-2|§85.2]], [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^cor-58-4|§58.4]]
 
 ![[m342-85-1.svg]]
 *The closed contour of Theorem §85.3: the segment $[-R, R]$ and the semicircle $C_R$. Since $q$ has real coefficients, its zeros come in conjugate pairs $z_k$, $\bar z_k$; the contour encloses the ones above the axis (red) once $R$ exceeds their moduli, and none of the ones below (gray).*
 
-Whether the arc integral tends to zero depends only on the degrees. B&C checks it case by case with the bound of [[§47 Upper Bounds for Moduli of Contour Integrals|§47]]; here is the general statement, which the course quotes as "$\deg q \ge \deg p + 2$".
+Whether the arc integral tends to zero depends only on the degrees. B&C checks it case by case with the bound of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]; here is the general statement, the criterion "$\deg q \ge \deg p + 2$" that the old-final keys quote ([[§86 Example (Evaluation of Improper Integrals)#^ex-86-4|Example §86.4]]).
 
 > [!theorem] Proposition §85.4: The Degree Condition
 > Let $f = p/q$ be as above, and suppose $\deg q \ge \deg p + 2$. Then there are constants $K$ and $R_1 \ge 1$ such that
@@ -198,7 +198,7 @@ Whether the arc integral tends to zero depends only on the degrees. B&C checks i
 >
 > whether or not $f$ is even.
 >
-> *B&C: Sec. 86 (text), stated in general; Source: 342 practice final (Spring 2005), Q9*
+> *B&C: Sec. 86 (text), stated in general*
 
 ^prop-85-4
 
@@ -217,19 +217,19 @@ Whether the arc integral tends to zero depends only on the degrees. B&C checks i
 >
 > since $m - N \le -2$ and $r \ge 1$.
 >
-> **The arc.** For $R \ge R_1$, $|f| \le K/R^2$ on $C_R$, whose length is $\pi R$; by the bound of [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (Theorem), $\big|\int_{C_R} f(z)\,dz\big| \le \pi K/R \to 0$.
+> **The arc.** For $R \ge R_1$, $|f| \le K/R^2$ on $C_R$, whose length is $\pi R$; by [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]], $\big|\int_{C_R} f(z)\,dz\big| \le \pi K/R \to 0$.
 >
 > **Convergence.** On the real axis $f$ is real and continuous ($q$ has no real zeros), and $|f(x)| \le K/x^2$ for $|x| \ge R_1$. Since $\int_{R_1}^{\infty} K\,x^{-2}\,dx$ converges, the comparison theorem shows that $\int_{R_1}^{\infty}|f|$ converges, and then so does $\int_{R_1}^{\infty} f$ (apply comparison to $0 \le f + |f| \le 2|f|$ and subtract $|f|$). With the proper integral over $[0, R_1]$, $\int_0^{\infty} f$ converges; likewise $\int_{-\infty}^{0} f$. So (2) converges, by Proposition §85.1 its value is the principal value, and Theorem §85.3, (10), gives the residue sum.
 
 ^pf-85-4
 
-*Uses:* [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]], [[§85 Evaluation of Improper Integrals#^thm-85-3|§85.3]], [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (Theorem), [[§5 Triangle Inequality|§5]], [[§51 Improper Integrals#^thm-51-2|Calc Thm. §51.2]] (comparison)
+*Uses:* [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]], [[§85 Evaluation of Improper Integrals#^thm-85-3|§85.3]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]], [[§5 Triangle Inequality#^cor-5-2|§5.2]], [[§5 Triangle Inequality#^cor-5-3|§5.3]], [[§51 Improper Integrals#^thm-51-2|Calc Thm. §51.2]] (comparison)
 
 > [!remark] Remark: Method — Improper Integrals of Rational Functions
 > To evaluate $\int_{-\infty}^{\infty} p(x)/q(x)\,dx$ (or $\int_0^\infty$ of an even one):
 > 1. **Check the hypotheses.** $q$ has no real zeros and $\deg q \ge \deg p + 2$; then the integral converges and the arc integral vanishes in the limit (Proposition §85.4). Otherwise bound $\int_{C_R}$ directly with $|q(z)| \ge \big||z|^N - \cdots\big|$ and the length $\pi R$.
-> 2. **Find the zeros of $q$ in the upper half plane**, by the roots of complex numbers ([[§10 Roots of Complex Numbers|§10]]) or the quadratic formula.
-> 3. **Compute the residues** of $p/q$ there: at a simple zero, $p(z_k)/q'(z_k)$ ([[§83 Zeros and Poles|§83]], Theorem 2); at a pole of order $m$, $\phi^{(m-1)}(z_k)/(m-1)!$ with $\phi = (z - z_k)^mf$ ([[§80 Residues at Poles|§80]], Theorem).
+> 2. **Find the zeros of $q$ in the upper half plane**, by the roots of complex numbers ([[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]]) or the quadratic formula.
+> 3. **Compute the residues** of $p/q$ there: at a simple zero, $p(z_k)/q'(z_k)$ ([[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]]); at a pole of order $m$, $\phi^{(m-1)}(z_k)/(m-1)!$ with $\phi = (z - z_k)^mf$ ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]).
 > 4. **Assemble** $2\pi i\sum\operatorname{Res}$; for an even integrand over $0 < x < \infty$ take half, $\pi i\sum\operatorname{Res}$.
 > 5. **Check:** the answer must be real (and positive for a positive integrand).
 
@@ -237,22 +237,34 @@ Whether the arc integral tends to zero depends only on the degrees. B&C checks i
 
 ## Examples
 
-> [!example] Example §85.2: An Arc Integral That Vanishes
-> Let $S_R$ be the upper semicircle $z = Re^{i\theta}$ $(0 \le \theta \le \pi)$, $R > 1$. Prove that
+> [!example] Example §85.2: A Double Pole
+> Show that $\displaystyle\int_0^\infty\frac{x^2\,dx}{(x^2 + 9)(x^2 + 4)^2} = \frac{\pi}{200}$.
+>
+> **Zeros.** $q(z) = (z^2 + 9)(z^2 + 4)^2$ has no real zeros; above the axis it has the simple zero $3i$ and the zero $2i$ of order $2$. Since $\deg q = 6 \ge 2 + 2$, Proposition §85.4 applies, and the integrand is even, so (12) holds.
+>
+> **The simple pole $3i$.** With $\phi(z) = z^2/\big((z + 3i)(z^2 + 4)^2\big)$,
 >
 > $$
-> \lim_{R\to\infty}\int_{S_R}\frac{z^2\,dz}{1 + z^4} = 0 .
+> \operatorname{Res}_{z=3i} f(z) = \phi(3i) = \frac{-9}{6i\cdot(-5)^2} = -\frac{3}{50i} = \frac{3i}{50} .
 > $$
 >
-> On $S_R$, $|z^2| = R^2$ and $|1 + z^4| \ge \big||z|^4 - 1\big| = R^4 - 1$. So the integrand is bounded by $M_R = R^2/(R^4 - 1)$, and with the length $\pi R$ of $S_R$,
+> **The double pole $2i$.** Here $f(z) = \phi(z)/(z - 2i)^2$ with $\phi(z) = \dfrac{z^2}{(z^2 + 9)(z + 2i)^2}$, analytic and nonzero at $2i$, so the residue is $\phi'(2i)$ ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]). The logarithmic derivative is the quickest route:
 >
 > $$
-> \Big|\int_{S_R}\frac{z^2\,dz}{1 + z^4}\Big| \le \frac{\pi R^3}{R^4 - 1} = \frac{\pi/R}{1 - R^{-4}} \longrightarrow 0 \qquad (R \to \infty) .
+> \frac{\phi'(z)}{\phi(z)} = \frac2z - \frac{2z}{z^2 + 9} - \frac{2}{z + 2i}, \qquad \phi(2i) = \frac{-4}{5\cdot(4i)^2} = \frac{1}{20}, \qquad \frac{\phi'(2i)}{\phi(2i)} = \frac{2}{2i} - \frac{4i}{5} - \frac{2}{4i} = -i - \frac{4i}{5} + \frac i2 = -\frac{13i}{10} ,
 > $$
 >
-> This is the case $\deg q = \deg p + 2$ of Proposition §85.4, and it is the arc estimate behind $\int_0^\infty x^2/(x^4 + 1)\,dx$ in [[§86 Example (Evaluation of Improper Integrals)#^ex-86-4|Example §86.4]].
+> so $\operatorname{Res}_{z=2i} f(z) = \phi'(2i) = -\dfrac{13i}{200}$.
 >
-> *Source: 342 practice final (Spring 2005), Q7*
+> **Conclusion.** The sum of the residues is $\frac{12i}{200} - \frac{13i}{200} = -\frac{i}{200}$, and by (12)
+>
+> $$
+> \int_0^\infty\frac{x^2\,dx}{(x^2 + 9)(x^2 + 4)^2} = \pi i\Big(-\frac{i}{200}\Big) = \frac{\pi}{200} \approx 0.0157080 ,
+> $$
+>
+> as quadrature confirms. (Directly, the arc bound is $\pi R^3/\big((R^2 - 9)(R^2 - 4)^2\big) \to 0$ for $R > 3$.) The same arc estimate for $z^2/(1 + z^4)$, an old-final problem, is [[§47 Upper Bounds for Moduli of Contour Integrals#^ex-47-5|Example §47.5]](b).
+>
+> *B&C: Sec. 86, Exercise 6*
 
 ^ex-85-2
 
@@ -265,7 +277,7 @@ Whether the arc integral tends to zero depends only on the degrees. B&C checks i
 >
 > Neither integrand is even, so formula (10) is the one to use; in both cases $\deg q \ge \deg p + 2$, so by Proposition §85.4 the integrals converge and the principal values are their values.
 >
-> **(a)** $z^2 + 2z + 2 = (z + 1)^2 + 1$ has the zeros $-1 \pm i$; only $z_1 = -1 + i$ is above the axis, and it is a simple zero. By [[§83 Zeros and Poles|§83]] (Theorem 2),
+> **(a)** $z^2 + 2z + 2 = (z + 1)^2 + 1$ has the zeros $-1 \pm i$; only $z_1 = -1 + i$ is above the axis, and it is a simple zero. By [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]],
 >
 > $$
 > \operatorname{Res}_{z=-1+i}\frac{1}{z^2 + 2z + 2} = \frac{1}{2z + 2}\Big|_{z=-1+i} = \frac{1}{2i}, \qquad \text{P.V.}\int_{-\infty}^{\infty}\frac{dx}{x^2 + 2x + 2} = 2\pi i\cdot\frac{1}{2i} = \pi .

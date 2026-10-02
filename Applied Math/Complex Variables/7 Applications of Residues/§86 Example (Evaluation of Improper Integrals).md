@@ -16,7 +16,7 @@ B&C devotes this section to one worked instance of the method of [[§85 Evaluati
 > [!example] Example §86.1: The Integral of 1/(x⁶ + 1)
 > Evaluate $\displaystyle\int_0^\infty\frac{dx}{x^6 + 1}$.
 >
-> **Singular points.** $f(z) = 1/(z^6 + 1)$ is analytic except at the zeros of $z^6 + 1$, the sixth roots of $-1$ ([[§10 Roots of Complex Numbers|§10]]):
+> **Singular points.** $f(z) = 1/(z^6 + 1)$ is analytic except at the zeros of $z^6 + 1$, the sixth roots of $-1$ ([[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]]):
 >
 > $$
 > c_k = \exp\Big[i\Big(\frac\pi6 + \frac{2k\pi}{6}\Big)\Big] \qquad (k = 0, 1, 2, \ldots, 5) .
@@ -30,13 +30,13 @@ B&C devotes this section to one worked instance of the method of [[§85 Evaluati
 >
 > where $B_k$ is the residue of $f$ at $c_k$.
 >
-> **Residues.** By [[§83 Zeros and Poles|§83]] (Theorem 2) each $c_k$ is a simple pole, and since $c_k^6 = -1$,
+> **Residues.** By [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]] each $c_k$ is a simple pole, and since $c_k^6 = -1$,
 >
 > $$
 > B_k = \frac{1}{6c_k^5} = \frac{c_k}{6c_k^6} = -\frac{c_k}{6} \qquad (k = 0, 1, 2), \qquad\text{so}\qquad B_0 + B_1 + B_2 = -\frac16(c_0 + c_1 + c_2) . \qquad (2)
 > $$
 >
-> On the unit circle $c_2 = e^{i5\pi/6} = -e^{-i\pi/6}$, and $e^{i\pi/6} - e^{-i\pi/6} = 2i\sin\frac\pi6 = i$ ([[§37 The Trigonometric Functions sin z and cos z|§37]]). Hence
+> On the unit circle $c_2 = e^{i5\pi/6} = -e^{-i\pi/6}$, and $e^{i\pi/6} - e^{-i\pi/6} = 2i\sin\frac\pi6 = i$ ([[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Definition §37.1]]). Hence
 >
 > $$
 > B_0 + B_1 + B_2 = -\frac16\big(e^{i\pi/6} + i - e^{-i\pi/6}\big) = -\frac i3, \qquad \int_{-R}^{R} f(x)\,dx = \frac{2\pi}{3} - \int_{C_R} f(z)\,dz \qquad (3)
@@ -44,7 +44,7 @@ B&C devotes this section to one worked instance of the method of [[§85 Evaluati
 >
 > for all $R > 1$.
 >
-> **The arc.** For $R > 1$ and $z$ on $C_R$, $|z^6 + 1| \ge \big||z|^6 - 1\big| = R^6 - 1$, so $|f(z)| \le M_R = 1/(R^6 - 1)$ and ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]])
+> **The arc.** For $R > 1$ and $z$ on $C_R$, $|z^6 + 1| \ge \big||z|^6 - 1\big| = R^6 - 1$, so $|f(z)| \le M_R = 1/(R^6 - 1)$ and ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]])
 >
 > $$
 > \Big|\int_{C_R} f(z)\,dz\Big| \le M_R\,\pi R = \frac{\pi R}{R^6 - 1} = \frac{\pi/R^5}{1 - 1/R^6} \longrightarrow 0 . \qquad (4)
@@ -125,13 +125,13 @@ B&C devotes this section to one worked instance of the method of [[§85 Evaluati
 > c_k = \exp\Big(i\,\frac{(2k + 1)\pi}{2n}\Big) \qquad (k = 0, 1, \ldots, n - 1) .
 > $$
 >
-> **(b) Residues.** Each $c_k$ is a simple zero of $q = z^{2n} + 1$ ($q'(c_k) = 2nc_k^{2n-1} \ne 0$), and $c_k^{2m} \ne 0$, so by [[§83 Zeros and Poles|§83]] (Theorem 2), with $c_k^{2n} = -1$ and $\alpha = \frac{2m + 1}{2n}\pi$,
+> **(b) Residues.** Each $c_k$ is a simple zero of $q = z^{2n} + 1$ ($q'(c_k) = 2nc_k^{2n-1} \ne 0$), and $c_k^{2m} \ne 0$, so by [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]], with $c_k^{2n} = -1$ and $\alpha = \frac{2m + 1}{2n}\pi$,
 >
 > $$
 > \operatorname{Res}_{z=c_k}\frac{z^{2m}}{z^{2n} + 1} = \frac{c_k^{2m}}{2nc_k^{2n-1}} = \frac{c_k^{2m+1}}{2nc_k^{2n}} = -\frac{1}{2n}e^{i(2k+1)\alpha} .
 > $$
 >
-> The sum is geometric with ratio $e^{i2\alpha} \ne 1$ ([[§9 Arguments of Products and Quotients|§9]], Exercise 9), and $e^{i2n\alpha} = e^{i(2m+1)\pi} = -1$:
+> The sum is a finite geometric sum with ratio $e^{i2\alpha} \ne 1$, and $e^{i2n\alpha} = e^{i(2m+1)\pi} = -1$:
 >
 > $$
 > \sum_{k=0}^{n-1} e^{i(2k+1)\alpha} = e^{i\alpha}\,\frac{1 - e^{i2n\alpha}}{1 - e^{i2\alpha}} = \frac{2e^{i\alpha}}{1 - e^{i2\alpha}} = \frac{2}{e^{-i\alpha} - e^{i\alpha}} = \frac{2}{-2i\sin\alpha} = \frac{i}{\sin\alpha} .
@@ -145,7 +145,7 @@ B&C devotes this section to one worked instance of the method of [[§85 Evaluati
 > \int_0^\infty\frac{x^{2m}}{x^{2n} + 1}\,dx = \frac{\pi}{2n\sin\alpha} = \frac{\pi}{2n}\csc\Big(\frac{2m + 1}{2n}\pi\Big) .
 > $$
 >
-> **Special cases.** $m = 0$, $n = 3$: $\frac\pi6\csc\frac\pi6 = \frac\pi3$ (Example §86.1). $m = 0$, $n = 2$: $\frac\pi4\csc\frac\pi4 = \frac{\pi}{2\sqrt2}$ (Example §86.2). $m = 1$, $n = 2$: $\int_0^\infty\frac{x^2\,dx}{x^4 + 1} = \frac\pi4\csc\frac{3\pi}{4} = \frac{\pi}{2\sqrt2}$, the Spring 2005 problem; its key finds the residues $\frac14e^{-i\pi/4}$, $\frac14e^{-i3\pi/4}$ at $e^{i\pi/4}$, $e^{i3\pi/4}$ and the same value. $m = 1$, $n = 3$: $\int_0^\infty\frac{x^2\,dx}{1 + x^6} = \frac\pi6\csc\frac\pi2 = \frac\pi6$ (B&C's Exercise 4, the Fall 1999 problem). Quadrature confirms all four (and, for instance, $m = 2$, $n = 5$: $\frac{\pi}{10}$).
+> **Special cases.** $m = 0$, $n = 3$: $\frac\pi6\csc\frac\pi6 = \frac\pi3$ (Example §86.1). $m = 0$, $n = 2$: $\frac\pi4\csc\frac\pi4 = \frac{\pi}{2\sqrt2}$ (Example §86.2). $m = 1$, $n = 2$: $\int_0^\infty\frac{x^2\,dx}{x^4 + 1} = \frac\pi4\csc\frac{3\pi}{4} = \frac{\pi}{2\sqrt2}$, the Spring 2005 problem; its key disposes of the arc by the criterion $\deg q \ge \deg p + 2$ (Proposition §85.4), finds the residues $\frac14e^{-i\pi/4}$, $\frac14e^{-i3\pi/4}$ at $e^{i\pi/4}$, $e^{i3\pi/4}$ and the same value. $m = 1$, $n = 3$: $\int_0^\infty\frac{x^2\,dx}{1 + x^6} = \frac\pi6\csc\frac\pi2 = \frac\pi6$ (B&C's Exercise 4, the Fall 1999 problem). Quadrature confirms all four (and, for instance, $m = 2$, $n = 5$: $\frac{\pi}{10}$).
 >
 > *B&C: Sec. 86, Exercise 10; Source: 342 practice final (Spring 2005), Q9, 342 practice final (Fall 1999), Q5*
 

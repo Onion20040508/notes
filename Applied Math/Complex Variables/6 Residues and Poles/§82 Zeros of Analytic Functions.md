@@ -61,7 +61,7 @@ The first theorem provides a useful alternative definition. Both parts of its pr
 > g(z) = \frac{f^{(m)}(z_0)}{m!} + \frac{f^{(m+1)}(z_0)}{(m + 1)!}(z - z_0) + \frac{f^{(m+2)}(z_0)}{(m + 2)!}(z - z_0)^2 + \cdots \qquad (|z - z_0| < \varepsilon) .
 > $$
 >
-> (The bracketed series converges for $|z - z_0| < \varepsilon$: for $z \ne z_0$ it is the convergent Taylor series divided by $(z - z_0)^m$, and at $z_0$ trivially.) The convergence of this power series when $|z - z_0| < \varepsilon$ ensures that $g$ is analytic in that neighborhood, and in particular at $z_0$ ([[§71★ Integration and Differentiation of Power Series|§71★]], Corollary). Moreover,
+> (The bracketed series converges for $|z - z_0| < \varepsilon$: for $z \ne z_0$ it is the convergent Taylor series divided by $(z - z_0)^m$, and at $z_0$ trivially.) The convergence of this power series when $|z - z_0| < \varepsilon$ ensures that $g$ is analytic in that neighborhood, and in particular at $z_0$ ([[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]). Moreover,
 >
 > $$
 > g(z_0) = \frac{f^{(m)}(z_0)}{m!} \ne 0 .
@@ -81,7 +81,7 @@ The first theorem provides a useful alternative definition. Both parts of its pr
 > f(z) = g(z_0)(z - z_0)^m + \frac{g'(z_0)}{1!}(z - z_0)^{m+1} + \frac{g''(z_0)}{2!}(z - z_0)^{m+2} + \cdots
 > $$
 >
-> when $|z - z_0| < \varepsilon$. Since this is a power series in $z - z_0$ that converges to $f$ in a neighborhood of $z_0$, it is the Taylor series of $f$ about $z_0$ ([[§72★ Uniqueness of Series Representations|§72★]], Theorem 1). Comparing coefficients with $f^{(n)}(z_0)/n!$, conditions (1) hold; in particular
+> when $|z - z_0| < \varepsilon$. Since this is a power series in $z - z_0$ that converges to $f$ in a neighborhood of $z_0$, it is the Taylor series of $f$ about $z_0$ ([[§72★ Uniqueness of Series Representations#^thm-72-1|Theorem §72.1]]). Comparing coefficients with $f^{(n)}(z_0)/n!$, conditions (1) hold; in particular
 >
 > $$
 > f^{(m)}(z_0) = m!\,g(z_0) \ne 0 .
@@ -91,7 +91,7 @@ The first theorem provides a useful alternative definition. Both parts of its pr
 
 ^pf-82-1
 
-*Uses:* [[§82 Zeros of Analytic Functions#^def-82-1|Def. §82.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (Taylor's theorem), [[§71★ Integration and Differentiation of Power Series|§71★]] (Corollary), [[§72★ Uniqueness of Series Representations|§72★]] (Theorem 1)
+*Uses:* [[§82 Zeros of Analytic Functions#^def-82-1|Def. §82.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (Taylor's theorem), [[§71★ Integration and Differentiation of Power Series#^cor-71-2|§71.2]] (power series are analytic), [[§72★ Uniqueness of Series Representations#^thm-72-1|§72.1]] (uniqueness of Taylor series)
 
 > [!remark] Remark: Method — Finding the Order of a Zero
 > 1. **Derivatives.** Evaluate $f(z_0), f'(z_0), f''(z_0), \ldots$ until the first nonzero one; its index is the order (Definition §82.1).
@@ -218,7 +218,7 @@ The final theorem concerns functions with zeros that are not all isolated. It wa
 >
 > **(b)** Suppose the poles were infinite in number, with an accumulation point $z_0 \in R$. If $f$ were analytic at $z_0$, it would be analytic in a whole neighborhood of $z_0$, which then could contain no pole. If $z_0$ were a pole, it would be an isolated singular point, with a deleted neighborhood containing no other singular point. Either way some neighborhood of $z_0$ contains no pole other than $z_0$, a contradiction. Hence the poles are finite in number.
 >
-> (These finiteness statements are what make the residue theorem and the argument principle of [[§93 Argument Principle|§93]] applicable to such functions.)
+> (These finiteness statements are what make the residue theorem and the argument principle ([[§93 Argument Principle#^thm-93-4|Theorem §93.4]]) applicable to such functions.)
 >
 > *B&C: Sec. 83, Exercises 11 and 12*
 

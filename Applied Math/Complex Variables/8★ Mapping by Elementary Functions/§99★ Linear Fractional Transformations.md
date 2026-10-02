@@ -152,8 +152,8 @@ which recovers $z$ from its image, except that when $c \ne 0$ the value $w = a/c
 ^thm-99-4
 
 > [!proof]+ Proof
-> **Continuity.** (B&C refers this to an exercise in [[§18 Continuity|§18]]; here are the cases.) Use the facts of [[§17 Limits Involving the Point at Infinity|§17]] (Theorem): $\lim_{z\to z_0} f(z) = \infty$ if and only if $\lim_{z\to z_0} 1/f(z) = 0$, and $\lim_{z\to\infty} f(z) = w_0$ if and only if $\lim_{z\to0} f(1/z) = w_0$.
-> - At a finite $z_0$ with $cz_0 + d \ne 0$, $T$ is a quotient of polynomials with nonzero denominator, hence continuous.
+> **Continuity.** (B&C refers this to Sec. 18, Exercise 11, which is [[§17 Limits Involving the Point at Infinity#^prop-17-2|Proposition §17.2]]; here are the cases.) Use [[§17 Limits Involving the Point at Infinity#^thm-17-1|Theorem §17.1]]: $\lim_{z\to z_0} f(z) = \infty$ if and only if $\lim_{z\to z_0} 1/f(z) = 0$, and $\lim_{z\to\infty} f(z) = w_0$ if and only if $\lim_{z\to0} f(1/z) = w_0$.
+> - At a finite $z_0$ with $cz_0 + d \ne 0$, $T$ is a quotient of polynomials with nonzero denominator, hence continuous ([[§18 Continuity#^prop-18-1|Proposition §18.1]]).
 > - If $c \ne 0$ and $z_0 = -d/c$, then $az_0 + b = (bc - ad)/c \ne 0$, so $1/T(z) = (cz + d)/(az + b) \to 0$; hence $T(z) \to \infty = T(-d/c)$.
 > - At $z_0 = \infty$: for $z \ne 0$, $T(1/z) = \dfrac{a + bz}{c + dz}$. If $c \ne 0$ this tends to $a/c = T(\infty)$ as $z \to 0$. If $c = 0$, then $a \ne 0$ and $1/T(1/z) = dz/(a + bz) \to 0$, so $T(1/z) \to \infty = T(\infty)$.
 >
@@ -169,7 +169,7 @@ which recovers $z$ from its image, except that when $c \ne 0$ the value $w = a/c
 
 ^pf-99-4
 
-*Uses:* [[§99★ Linear Fractional Transformations#^def-99-2|Def. §99.2]], [[§17 Limits Involving the Point at Infinity|§17]] (Theorem), [[§18 Continuity|§18]]
+*Uses:* [[§99★ Linear Fractional Transformations#^def-99-2|Def. §99.2]], [[§17 Limits Involving the Point at Infinity#^thm-17-1|§17.1]], [[§17 Limits Involving the Point at Infinity#^prop-17-2|§17.2]], [[§18 Continuity#^prop-18-1|§18.1]]
 
 > [!theorem] Proposition §99.5: Compositions
 > If $T(z) = \dfrac{a_1z + b_1}{c_1z + d_1}$ and $S(z) = \dfrac{a_2z + b_2}{c_2z + d_2}$ are linear fractional transformations, then so is $S[T(z)]$:

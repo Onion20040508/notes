@@ -29,7 +29,7 @@ An indentation can also step around a **branch point**. To evaluate $\int_0^\inf
 > f(z) = \frac{z^a}{(z^2 + 1)^2} = \frac{\exp(a\log z)}{(z^2 + 1)^2} \qquad \Big(|z| > 0,\ -\frac\pi2 < \arg z < \frac{3\pi}{2}\Big),
 > $$
 >
-> whose branch cut is the origin together with the negative imaginary axis ([[§33 Branches and Derivatives of Logarithms|§33]]), and the indented contour of the figure below: $L_1$ from $\rho$ to $R$, the semicircle $C_R$ counterclockwise, $L_2$ from $-R$ to $-\rho$, and the semicircle $C_\rho$ clockwise, with $\rho < 1 < R$. The function $f$ is analytic inside and on this contour except at $z = i$. By the residue theorem,
+> whose branch cut is the origin together with the negative imaginary axis ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]), and the indented contour of the figure below: $L_1$ from $\rho$ to $R$, the semicircle $C_R$ counterclockwise, $L_2$ from $-R$ to $-\rho$, and the semicircle $C_\rho$ clockwise, with $\rho < 1 < R$. The function $f$ is analytic inside and on this contour except at $z = i$. By the residue theorem,
 >
 > $$
 > \int_{L_1} f(z)\,dz + \int_{L_2} f(z)\,dz = 2\pi i\operatorname{Res}_{z=i} f(z) - \int_{C_\rho} f(z)\,dz - \int_{C_R} f(z)\,dz . \qquad (2)
@@ -47,7 +47,7 @@ An indentation can also step around a **branch point**. To evaluate $\int_0^\inf
 > \int_{L_1} f(z)\,dz + \int_{L_2} f(z)\,dz = \big(1 + e^{ia\pi}\big)\int_\rho^R\frac{r^a}{(r^2 + 1)^2}\,dr . \qquad (3)
 > $$
 >
-> **The residue.** $z = i$ is a pole of order $m = 2$: $f(z) = \phi(z)/(z - i)^2$ with $\phi(z) = z^a/(z + i)^2$, analytic and nonzero at $i$, so $\operatorname{Res}_{z=i} f(z) = \phi'(i)$ (4) ([[§80 Residues at Poles|§80]], Theorem). Straightforward differentiation, using $\frac{d}{dz}z^a = az^{a-1}$ with $z^{a-1} = e^{(a-1)\log z}$ on the same branch ([[§35 The Power Function|§35]]), gives
+> **The residue.** $z = i$ is a pole of order $m = 2$: $f(z) = \phi(z)/(z - i)^2$ with $\phi(z) = z^a/(z + i)^2$, analytic and nonzero at $i$, so $\operatorname{Res}_{z=i} f(z) = \phi'(i)$ (4) ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]). Straightforward differentiation, using $\frac{d}{dz}z^a = az^{a-1}$ with $z^{a-1} = e^{(a-1)\log z}$ on the same branch ([[§35 The Power Function#^thm-35-2|Theorem §35.2]]), gives
 >
 > $$
 > \phi'(z) = \frac{az^{a-1}}{(z + i)^2} - \frac{2z^a}{(z + i)^3} = e^{(a-1)\log z}\Big[\frac{(a - 2)z + ai}{(z + i)^3}\Big] .
@@ -107,7 +107,7 @@ An indentation can also step around a **branch point**. To evaluate $\int_0^\inf
 > 5. **Semicircles:** $|z^a| = |z|^a$; the small one vanishes if $a + 1 > 0$, the large one if $R(z) = O(|z|^{-k})$ with $a + 1 - k < 0$.
 > 6. **Divide** by $1 + e^{ia\pi}$ and simplify with $e^{i\theta} + e^{-i\theta} = 2\cos\theta$.
 >
-> If $R$ is not even, the legs do not combine; the keyhole of [[§91★ Integration Along a Branch Cut|§91★]] is then the right contour.
+> If $R$ is not even, the legs do not combine; the keyhole of [[§91★ Integration Along a Branch Cut#^prop-91-1|Proposition §91.1]] is then the right contour.
 
 ^rem-90-1
 

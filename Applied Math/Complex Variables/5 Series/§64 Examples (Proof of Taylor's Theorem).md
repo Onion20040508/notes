@@ -37,7 +37,7 @@ This section collects the six Maclaurin series that the rest of the course uses 
 >
 > **(2)** (Example 2.) $f(z) = e^z$ is entire, $f^{(n)}(z) = e^z$, and $f^{(n)}(0) = 1$, so $a_n = 1/n!$ and the series converges to $e^z$ for every $z$.
 >
-> **(3)** (Example 3.) Use the definition $\sin z = (e^{iz} - e^{-iz})/(2i)$ ([[§37 The Trigonometric Functions sin z and cos z|§37]]) and expansion (2) with $z$ replaced by $iz$ and by $-iz$. By [[§61 Convergence of Series#^prop-61-4|Proposition §61.4]] the two series may be subtracted term by term:
+> **(3)** (Example 3.) Use the definition $\sin z = (e^{iz} - e^{-iz})/(2i)$ ([[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Definition §37.1]]) and expansion (2) with $z$ replaced by $iz$ and by $-iz$. By [[§61 Convergence of Series#^prop-61-4|Proposition §61.4]] the two series may be subtracted term by term:
 >
 > $$
 > \sin z = \frac{1}{2i}\Big(\sum_{n=0}^{\infty}\frac{(iz)^n}{n!} - \sum_{n=0}^{\infty}\frac{(-iz)^n}{n!}\Big) = \frac{1}{2i}\sum_{n=0}^{\infty}\big(1 - (-1)^n\big)\frac{i^nz^n}{n!} \qquad (|z| < \infty) .
@@ -49,7 +49,7 @@ This section collects the six Maclaurin series that the rest of the course uses 
 > \sin z = \frac{1}{2i}\sum_{n=0}^{\infty}\big(1 - (-1)^{2n+1}\big)\frac{i^{2n+1}z^{2n+1}}{(2n + 1)!} .
 > $$
 >
-> Inasmuch as $1 - (-1)^{2n+1} = 2$ and $i^{2n+1} = (i^2)^ni = (-1)^ni$, this reduces to (3). *(B&C writes "we refer to expansion (1)" here; the expansion used is (2).)*
+> Inasmuch as $1 - (-1)^{2n+1} = 2$ and $i^{2n+1} = (i^2)^ni = (-1)^ni$, this reduces to (3).
 >
 > **(4)** (Example 4.) Differentiate (3) term by term, which is justified by [[§71★ Integration and Differentiation of Power Series#^thm-71-4|Theorem §71.4]], at every $z$ (the circle of convergence of (3) is infinite):
 >
@@ -59,7 +59,7 @@ This section collects the six Maclaurin series that the rest of the course uses 
 >
 > ([[§64 Examples (Proof of Taylor's Theorem)#^ex-64-4|Example §64.4]] obtains (4) from the exponential series instead, without term-by-term differentiation.)
 >
-> **(5)** (Example 5.) Since $\sinh z = -i\sin(iz)$ ([[§39★ Hyperbolic Functions|§39]]), replace $z$ by $iz$ in (3) and multiply by $-i$:
+> **(5)** (Example 5.) Since $\sinh z = -i\sin(iz)$ ([[§39★ Hyperbolic Functions#^prop-39-2|Proposition §39.2]]), replace $z$ by $iz$ in (3) and multiply by $-i$:
 >
 > $$
 > \sinh z = -i\sum_{n=0}^{\infty}(-1)^n\frac{(iz)^{2n+1}}{(2n + 1)!} = \sum_{n=0}^{\infty}\frac{z^{2n+1}}{(2n + 1)!} \qquad (|z| < \infty) ,
@@ -67,7 +67,7 @@ This section collects the six Maclaurin series that the rest of the course uses 
 >
 > because $(iz)^{2n+1} = (-1)^niz^{2n+1}$ and $-i\cdot(-1)^n\cdot(-1)^ni = 1$.
 >
-> **(6)** (Example 6.) Since $\cosh z = \cos(iz)$ ([[§39★ Hyperbolic Functions|§39]]), replace $z$ by $iz$ in (4): $(iz)^{2n} = (-1)^nz^{2n}$, so
+> **(6)** (Example 6.) Since $\cosh z = \cos(iz)$ ([[§39★ Hyperbolic Functions#^prop-39-2|Proposition §39.2]]), replace $z$ by $iz$ in (4): $(iz)^{2n} = (-1)^nz^{2n}$, so
 >
 > $$
 > \cosh z = \sum_{n=0}^{\infty}(-1)^n\frac{(iz)^{2n}}{(2n)!} = \sum_{n=0}^{\infty}\frac{z^{2n}}{(2n)!} \qquad (|z| < \infty) .
@@ -75,7 +75,7 @@ This section collects the six Maclaurin series that the rest of the course uses 
 
 ^pf-64-1
 
-*Uses:* [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]], [[§61 Convergence of Series#^ex-61-1|Ex. §61.1]], [[§61 Convergence of Series#^prop-61-4|§61.4]], [[§71★ Integration and Differentiation of Power Series#^thm-71-4|§71.4]], [[§37 The Trigonometric Functions sin z and cos z|§37]] (definitions of sin, cos), [[§39★ Hyperbolic Functions|§39]] (sinh, cosh), [[§30 The Exponential Function|§30]] ($\frac{d}{dz}e^z = e^z$)
+*Uses:* [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]], [[§61 Convergence of Series#^ex-61-1|Ex. §61.1]], [[§61 Convergence of Series#^prop-61-4|§61.4]], [[§71★ Integration and Differentiation of Power Series#^thm-71-4|§71.4]], [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Def. §37.1]] (definitions of sin, cos), [[§39★ Hyperbolic Functions#^prop-39-2|§39.2]] (sinh, cosh), [[§30 The Exponential Function#^thm-30-3|§30.3]] ($\frac{d}{dz}e^z = e^z$)
 
 > [!remark]- Connections
 > - With $z = x$ real these are the calculus series [[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]] ($e^x$), [[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]] ($\sin x$) and [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]] ($\cos x$), proved there with Taylor's inequality; here analyticity makes the remainder estimate unnecessary. The rigorous real-variable construction of $\sin$ and $\cos$ from their series is [[§26 Differentiation and Integration of Power Series#^ex-26-8|451 Ex. §26.8]].
@@ -144,7 +144,7 @@ Two observations apply to every example below:
 >
 > In particular $\frac{d^5}{dz^5}\big(z^3e^{2z}\big)\big|_{z=0} = 5!\cdot2 = 240$.
 >
-> **(b) $\cosh z$ about $z_0 = -2\pi i$.** Replace $z$ by $z + 2\pi i$ in (6) and recall that $\cosh z$ has period $2\pi i$ ([[§39★ Hyperbolic Functions|§39]]), so $\cosh(z + 2\pi i) = \cosh z$:
+> **(b) $\cosh z$ about $z_0 = -2\pi i$.** Replace $z$ by $z + 2\pi i$ in (6) and recall that $\cosh z$ has period $2\pi i$ ([[§39★ Hyperbolic Functions#^prop-39-2|Proposition §39.2]]), so $\cosh(z + 2\pi i) = \cosh z$:
 >
 > $$
 > \cosh z = \sum_{n=0}^{\infty}\frac{(z + 2\pi i)^{2n}}{(2n)!} \qquad (|z| < \infty) .
@@ -221,7 +221,7 @@ Two observations apply to every example below:
 > \tan^{(5)}(0) = 5!\cdot\frac{2}{15} = \frac{240}{15} = 16 .
 > $$
 >
-> (Direct differentiation confirms $16$. The series converges to $\tan z$ in $|z| < \pi/2$, the distance to the nearest zeros $\pm\pi/2$ of $\cos z$.)
+> (Direct differentiation confirms $16$. The series converges to $\tan z$ in $|z| < \pi/2$, the distance to the nearest zeros $\pm\pi/2$ of $\cos z$.) The rest of this exam problem, the principal part and residues of $(1 + z)\tan z/z^5$, is [[§79 Examples (The Three Types of Isolated Singular Points)#^ex-79-5|Example §79.5]].
 >
 > *B&C: Sec. 65, Exercise 9; Source: 342 HW 9 (part (a)); 342 practice final (Spring 2005), Q1(a) (part (b))*
 

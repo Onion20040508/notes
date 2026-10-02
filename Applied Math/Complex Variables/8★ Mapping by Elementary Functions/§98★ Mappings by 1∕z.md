@@ -217,7 +217,7 @@ This section proves the key geometric fact about $w = 1/z$: **it carries circles
 ^ex-98-4
 
 > [!example] Example §98.5: The Circle Equation in Complex Form
-> **(a)** Since $x = \frac12(z + \bar z)$ and $y = \frac1{2i}(z - \bar z)$ ([[§6 Complex Conjugates|§6]]), multiplying (4) by $2$ and using $1/i = -i$ gives
+> **(a)** Since $x = \frac12(z + \bar z)$ and $y = \frac1{2i}(z - \bar z)$ ([[§6 Complex Conjugates#^prop-6-2|Proposition §6.2]]), multiplying (4) by $2$ and using $1/i = -i$ gives
 >
 > $$
 > 2Az\bar z + (B - Ci)z + (B + Ci)\bar z + 2D = 0 .

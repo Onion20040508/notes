@@ -251,7 +251,7 @@ Most contour integrals are never evaluated exactly; what is needed is an estimat
 >
 > The second part of that problem, $\int_{S_r} f\,dz \to \pi i\operatorname{Res}_{z=0} f$ for a simple pole, is B&C's indentation lemma, [[§89★ An Indented Path#^thm-89-1|Theorem §89.1]].
 >
-> These bounds are used in context later: (a) is the top side of a rectangle for Fourier-type integrals, [[§87 Improper Integrals from Fourier Analysis#^ex-87-5|Example §87.5]]; (b) is the arc estimate for improper integrals of rational functions, [[§85 Evaluation of Improper Integrals#^ex-85-2|Example §85.2]]; (d) and the second part of that problem are [[§84 Behavior of Functions Near Isolated Singular Points#^ex-84-3|Example §84.3]].
+> These bounds are used in context later: (a) is the top side of a rectangle, an alternative to the semicircle for the Fourier-type integrals of [[§87 Improper Integrals from Fourier Analysis#^prop-87-1|Proposition §87.1]]; (b) is the arc estimate behind the degree condition, [[§85 Evaluation of Improper Integrals#^prop-85-4|Proposition §85.4]].
 >
 > *In (d) the Spring 2012 key writes the length of $S_r$ as $2\pi r$; it is $\pi r$. The conclusion is unaffected.*
 >

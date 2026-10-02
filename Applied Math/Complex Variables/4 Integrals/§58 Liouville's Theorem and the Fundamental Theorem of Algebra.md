@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§57 Some Consequences of the Extension]] · ↑ [[· 4 Integrals]] · [[§59 Maximum Modulus Principle]] →
 
-*Brown–Churchill, Section 58 (with Exercises 1 and 8 of Section 59) · MAT 342 HW 8 · Practice Finals (Fall 2009, Fall 2002).*
+*Brown–Churchill, Section 58 (with Exercise 10 of Section 57 and Exercises 1 and 8 of Section 59) · MAT 342 HW 8 · Practice Final (Fall 2002).*
 
 Cauchy's inequality bounds $|f'(z_0)|$ by $M_R/R$, where $M_R$ is the maximum of $|f|$ on a circle of radius $R$ about $z_0$. If $f$ is entire and bounded, $R$ can be taken as large as we please with $M_R$ staying bounded, so $f' = 0$: a bounded entire function is constant (Liouville's theorem). Applied to $1/P(z)$, this proves the fundamental theorem of algebra: a nonconstant polynomial has a zero, and therefore factors completely into linear factors. The vault has two other proofs of the fundamental theorem of algebra, one by a minimum argument (Linear Algebra) and one by the fundamental group of the circle (Topology); this one is the shortest, because the hard work was done in the Cauchy–Goursat theorem.
 
@@ -39,7 +39,7 @@ Cauchy's inequality bounds $|f'(z_0)|$ by $M_R/R$, where $M_R$ is the maximum of
 
 *Uses:* [[§57 Some Consequences of the Extension#^thm-57-4|§57.4]], [[§25 Analytic Functions#^thm-25-3|§25.3]]
 
-In other words, no entire function except a constant is bounded in the complex plane.
+In other words, no entire function except a constant is bounded in the complex plane. For instance, $\sin z$ is entire and not constant, so it is unbounded; [[§37 The Trigonometric Functions sin z and cos z#^ex-37-3|Example §37.3]] (a final exam question) also shows this directly, from $|\sin z| \ge |\sinh y|$.
 
 > [!theorem] Theorem §58.2: Fundamental Theorem of Algebra
 > Any polynomial
@@ -159,12 +159,20 @@ The fundamental theorem tells us that any polynomial $P(z)$ of degree $n$ ($n \g
 
 ^ex-58-1
 
-> [!example] Example §58.2: sin z Is Unbounded
-> Is there a positive number $M$ such that the inequality $|\sin z| \le M$ holds for all complex numbers $z$?
+> [!example] Example §58.2: Entire Functions of Linear Growth
+> **(a)** Let $f$ be an entire function such that $|f(z)| \le A|z|$ for all $z$, where $A$ is a fixed positive number. Show that $f(z) = a_1z$, where $a_1$ is a complex constant.
 >
-> **No.** The function $\sin z$ is entire and not constant ($\sin 0 = 0$, $\sin\frac\pi2 = 1$). By Liouville's theorem a bounded entire function is constant, so $\sin z$ is not bounded. Directly: on the imaginary axis $\sin(iy) = i\sinh y$, and $|\sin(iy)| = |\sinh y| \to \infty$ as $y \to \infty$. (Compare the real sine, which is bounded by $1$ on the real line: boundedness on a line says nothing.)
+> Fix any point $z_0$ and any $R > 0$. Since $f$ is entire, Cauchy's inequality ([[§57 Some Consequences of the Extension#^thm-57-4|Theorem §57.4]]) applies on the circle $|z - z_0| = R$, and on that circle $|z| \le |z_0| + R$, so $M_R \le A(|z_0| + R)$. With $n = 2$,
 >
-> *Source: 342 practice final (Fall 2009), Q1(b)*
+> $$
+> |f''(z_0)| \le \frac{2!\,M_R}{R^2} \le \frac{2A(|z_0| + R)}{R^2} = 2A\Big(\frac{|z_0|}{R^2} + \frac1R\Big) .
+> $$
+>
+> The left side does not depend on $R$, and the right side tends to $0$ as $R \to \infty$; so $f''(z_0) = 0$. Since $z_0$ was arbitrary, $f'' = 0$ everywhere in the plane. A function whose derivative is zero throughout a domain is constant ([[§25 Analytic Functions#^thm-25-3|Theorem §25.3]]), so $f'(z) = a_1$ for a constant $a_1$. Then $(f(z) - a_1z)' = 0$, so $f(z) = a_1z + a_0$. Finally $|f(0)| \le A \cdot 0 = 0$ gives $a_0 = 0$, and $f(z) = a_1z$.
+>
+> **(b)** The same argument with $n = k + 1$ shows more generally: if $f$ is entire and $|f(z)| \le A|z|^k + B$ for all $z$ (constants $A$, $B$, integer $k \ge 0$), then $f$ is a polynomial of degree at most $k$. Indeed $M_R \le A(|z_0| + R)^k + B$, so $|f^{(k+1)}(z_0)| \le (k + 1)!\,\big(A(|z_0| + R)^k + B\big)/R^{k+1} \to 0$ as $R \to \infty$; thus $f^{(k+1)} = 0$, and $k + 1$ applications of [[§25 Analytic Functions#^thm-25-3|Theorem §25.3]] show that $f$ is a polynomial of degree at most $k$. For $k = 0$ this is Liouville's theorem, [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Theorem §58.1]], and the proof is the same: Liouville's argument is the case $n = 1$ of Cauchy's inequality, this one the case $n = k + 1$.
+>
+> *B&C: Sec. 57, Exercise 10; Source: 342 HW 8 (optional)*
 
 ^ex-58-2
 

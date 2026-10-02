@@ -169,7 +169,7 @@ In general $N_\varepsilon$ depends on $z$ as well as on $\varepsilon$.
 
 ^pf-69-3
 
-*Uses:* [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-1|§69.1]], [[§69★ Absolute and Uniform Convergence of Power Series#^cor-69-2|§69.2]], [[§69★ Absolute and Uniform Convergence of Power Series#^def-69-2|Def. §69.2]], [[§60 Convergence of Sequences#^prop-60-3|§60.3]], [[§61 Convergence of Series#^def-61-3|Def. §61.3]], [[§5 Triangle Inequality|§5]], [[§9 Limit Theorems for Sequences#^prop-9-5|451 Prop. §9.5]] (limits preserve weak inequalities)
+*Uses:* [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-1|§69.1]], [[§69★ Absolute and Uniform Convergence of Power Series#^cor-69-2|§69.2]], [[§69★ Absolute and Uniform Convergence of Power Series#^def-69-2|Def. §69.2]], [[§60 Convergence of Sequences#^prop-60-3|§60.3]], [[§61 Convergence of Series#^def-61-3|Def. §61.3]], [[§5 Triangle Inequality#^cor-5-3|§5.3]], [[§9 Limit Theorems for Sequences#^prop-9-5|451 Prop. §9.5]] (limits preserve weak inequalities)
 
 ![[m342-69-1.svg]]
 *Theorems §69.1 and §69.3. The series converges absolutely at every point $z$ inside the circle of convergence $|z - z_0| = R$ (blue) and diverges at every point $z_2$ outside it. For any point $z_1$ inside, the convergence is uniform on the closed disk $|z - z_0| \le |z_1 - z_0|$ (green), because there every term is dominated by the corresponding term of the convergent series $\sum|a_n(z_1 - z_0)^n|$.*

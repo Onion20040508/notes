@@ -81,11 +81,11 @@ B&C takes for granted that $\arg w$ can be made to vary continuously along $\Gam
 >
 > If also $w(t) = \rho(t)e^{i\psi(t)}$, then $e^{i(\phi(t) - \psi(t))} = 1$, so $\phi(t) - \psi(t)$ is a multiple of $2\pi$ for every $t$. A continuous function on an interval whose values lie in the discrete set $2\pi\mathbb{Z}$ is constant (by the intermediate value theorem it cannot jump between two of these values). So $\phi - \psi$ is constant, and $\phi(b) - \phi(a) = \psi(b) - \psi(a)$: the change of argument does not depend on the continuous choice.
 >
-> For $w(t) = f(z(t))$, the chain rule $\frac{d}{dt}f(z(t)) = f'(z(t))z'(t)$ ([[§43 Contours|§43]]) holds on each smooth arc, and $f'(z(t))z'(t)/f(z(t))$ is the integrand of $\int_C f'(z)/f(z)\,dz$ in the parametrization ([[§44 Contour Integrals|§44]]); so $\phi(b) - \phi(a) = \operatorname{Im}h(b) = \operatorname{Im}\int_C f'/f\,dz$. This contour integral does not depend on where the closed contour $C$ is started. Finally $w(b) = w(a)$, so $\phi(b)$ and $\phi(a)$ are two values of $\arg w(a)$, and the change is a multiple of $2\pi$.
+> For $w(t) = f(z(t))$, the chain rule $\frac{d}{dt}f(z(t)) = f'(z(t))z'(t)$ ([[§43 Contours#^prop-43-5|Proposition §43.5]]) holds on each smooth arc, and $f'(z(t))z'(t)/f(z(t))$ is the integrand of $\int_C f'(z)/f(z)\,dz$ in the parametrization ([[§44 Contour Integrals#^def-44-1|Definition §44.1]]); so $\phi(b) - \phi(a) = \operatorname{Im}h(b) = \operatorname{Im}\int_C f'/f\,dz$. This contour integral does not depend on where the closed contour $C$ is started. Finally $w(b) = w(a)$, so $\phi(b)$ and $\phi(a)$ are two values of $\arg w(a)$, and the change is a multiple of $2\pi$.
 
 ^pf-93-1
 
-*Uses:* [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§43 Contours|§43]], [[§44 Contour Integrals|§44]], [[§41 Derivatives of Functions w(t)|§41]]
+*Uses:* [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§43 Contours#^prop-43-5|§43.5]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§41 Derivatives of Functions w(t)#^prop-41-1|§41.1]], [[§42 Definite Integrals of Functions w(t)#^thm-42-2|§42.2]]
 
 > [!remark]- Connections
 > - In topology the continuous argument is a **lift** of the loop $w(t)/|w(t)|$ through the covering map $\mathbb{R} \to S^1$, $\phi \mapsto e^{i\phi}$: its existence and uniqueness up to $2\pi\mathbb{Z}$ is the path lifting lemma, [[§24 Covering Spaces#^lem-24-6|590 Lem. §24.6]], and the winding number is the class of the loop in $\pi_1(S^1) \cong \mathbb{Z}$, [[§24 Covering Spaces#^thm-24-10|590 Thm. §24.10]]. The formula of Lemma §93.1 constructs the lift explicitly for piecewise smooth loops.
@@ -98,7 +98,7 @@ B&C takes for granted that $\arg w$ can be made to vary continuously along $\Gam
 ^prop-93-2
 
 > [!proof]+ Proof
-> Let the ray be $\arg w = \alpha$. Every $w$ on $\Gamma$ has exactly one argument $\Theta(w)$ in the open interval $\alpha < \Theta < \alpha + 2\pi$, and $\Theta$ is continuous on the plane cut along the ray: it is the imaginary part of the branch $\log w = \ln|w| + i\Theta$, $\alpha < \Theta < \alpha + 2\pi$, which is analytic there ([[§33 Branches and Derivatives of Logarithms|§33]]). So $\psi(t) = \Theta(w(t))$ is a continuous argument along $\Gamma$, and by Lemma §93.1
+> Let the ray be $\arg w = \alpha$. Every $w$ on $\Gamma$ has exactly one argument $\Theta(w)$ in the open interval $\alpha < \Theta < \alpha + 2\pi$, and $\Theta$ is continuous on the plane cut along the ray: it is the imaginary part of the branch $\log w = \ln|w| + i\Theta$, $\alpha < \Theta < \alpha + 2\pi$, which is analytic there ([[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]]). So $\psi(t) = \Theta(w(t))$ is a continuous argument along $\Gamma$, and by Lemma §93.1
 >
 > $$
 > \Delta_C\arg f(z) = \psi(b) - \psi(a) = \Theta(w(b)) - \Theta(w(a)) = 0 ,
@@ -108,7 +108,7 @@ B&C takes for granted that $\arg w$ can be made to vary continuously along $\Gam
 
 ^pf-93-2
 
-*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§33 Branches and Derivatives of Logarithms|§33]]
+*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]]
 
 In particular, $\Delta_C\arg f(z) = 0$ when $\Gamma$ lies in an open half plane whose boundary passes through the origin, or in a disk not containing the origin.
 
@@ -130,13 +130,13 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 >
 > **$f$ is not identically zero.** Let $D_0$ be $D$ with the finitely many poles removed; it is open and connected (a polygonal path in $D$ can be rerouted around finitely many points). If $f \equiv 0$ in $D_0$, then by continuity $f = 0$ at the points of $C$, which are limits of points of $D_0$; but $f \ne 0$ on $C$.
 >
-> **Zeros have finite order.** If at a zero $z_0$ all derivatives of $f$ vanished, the Taylor series of $f$ at $z_0$ would be $0$, so $f \equiv 0$ in a disk around $z_0$, and then $f \equiv 0$ in the domain $D_0$ by [[§28★ Uniquely Determined Analytic Functions|§28★]] (Lemma), which we have excluded.
+> **Zeros have finite order.** If at a zero $z_0$ all derivatives of $f$ vanished, the Taylor series of $f$ at $z_0$ would be $0$, so $f \equiv 0$ in a disk around $z_0$, and then $f \equiv 0$ in the domain $D_0$ by [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1]], which we have excluded.
 >
-> **Finitely many zeros.** Suppose there were infinitely many. They accumulate at some $z^* \in \overline{D}$. Not on $C$, since $f \ne 0$ near $C$. Not at a pole, since $|f(z)| \to \infty$ at a pole ([[§84 Behavior of Functions Near Isolated Singular Points|§84]], Theorem 4), so $f \ne 0$ near it. So $f$ is analytic at $z^*$, $f(z^*) = 0$ by continuity, and $z^*$ is a zero that is not isolated. But a zero of finite order is isolated ([[§82 Zeros of Analytic Functions|§82]], Theorem 2): a contradiction.
+> **Finitely many zeros.** Suppose there were infinitely many. They accumulate at some $z^* \in \overline{D}$. Not on $C$, since $f \ne 0$ near $C$. Not at a pole, since $|f(z)| \to \infty$ at a pole ([[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-4|Theorem §84.4]]), so $f \ne 0$ near it. So $f$ is analytic at $z^*$, $f(z^*) = 0$ by continuity, and $z^*$ is a zero that is not isolated. But a zero of finite order is isolated ([[§82 Zeros of Analytic Functions#^thm-82-2|Theorem §82.2]]): a contradiction.
 
 ^pf-93-3
 
-*Uses:* [[§93 Argument Principle#^def-93-1|Def. §93.1]], [[§82 Zeros of Analytic Functions|§82]] (Theorem 2), [[§84 Behavior of Functions Near Isolated Singular Points|§84]] (Theorem 4), [[§28★ Uniquely Determined Analytic Functions|§28★]] (Lemma), [[§62 Taylor Series|§62]]
+*Uses:* [[§93 Argument Principle#^def-93-1|Def. §93.1]], [[§82 Zeros of Analytic Functions#^thm-82-2|§82.2]], [[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-4|§84.4]], [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|§28.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]]
 
 > [!theorem] Theorem §93.4: Argument Principle
 > Let $C$ denote a positively oriented simple closed contour, and suppose that
@@ -181,7 +181,7 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 > \int_C\frac{f'(z)}{f(z)}\,dz = i\Delta_C\arg f(z) . \qquad (4)
 > $$
 >
-> **By residues.** $f'(z)/f(z)$ is analytic inside and on $C$ except at the points inside $C$ where the zeros and poles of $f$ occur. If $f$ has a zero of order $m_0$ at $z_0$, then ([[§82 Zeros of Analytic Functions|§82]], Theorem 1)
+> **By residues.** $f'(z)/f(z)$ is analytic inside and on $C$ except at the points inside $C$ where the zeros and poles of $f$ occur. If $f$ has a zero of order $m_0$ at $z_0$, then ([[§82 Zeros of Analytic Functions#^thm-82-1|Theorem §82.1]])
 >
 > $$
 > f(z) = (z - z_0)^{m_0}g(z), \qquad (5)
@@ -193,19 +193,19 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 > \frac{f'(z)}{f(z)} = \frac{m_0}{z - z_0} + \frac{g'(z)}{g(z)} . \qquad (6)
 > $$
 >
-> Since $g'/g$ is analytic at $z_0$, it has a Taylor series representation about that point, and (6) shows that $f'/f$ has a simple pole at $z_0$ with residue $m_0$. If instead $f$ has a pole of order $m_p$ at $z_0$, then ([[§80 Residues at Poles|§80]], Theorem)
+> Since $g'/g$ is analytic at $z_0$, it has a Taylor series representation about that point, and (6) shows that $f'/f$ has a simple pole at $z_0$ with residue $m_0$. If instead $f$ has a pole of order $m_p$ at $z_0$, then ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]])
 >
 > $$
 > f(z) = (z - z_0)^{-m_p}\phi(z), \qquad (7)
 > $$
 >
-> with $\phi$ analytic and nonzero at $z_0$. This has the form (5) with $m_0$ replaced by $-m_p$, so by (6) $f'/f$ has a simple pole at $z_0$ with residue $-m_p$. The residue theorem ([[§76 Cauchy's Residue Theorem|§76]]) now gives $\int_C f'/f\,dz = 2\pi i(Z - P)$, the first equation of (8).
+> with $\phi$ analytic and nonzero at $z_0$. This has the form (5) with $m_0$ replaced by $-m_p$, so by (6) $f'/f$ has a simple pole at $z_0$ with residue $-m_p$. The residue theorem ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]) now gives $\int_C f'/f\,dz = 2\pi i(Z - P)$, the first equation of (8).
 >
 > Equating the right sides of (4) and (8) gives $\frac{1}{2\pi}\Delta_C\arg f(z) = Z - P$.
 
 ^pf-93-4
 
-*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^lem-93-3|§93.3]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§82 Zeros of Analytic Functions|§82]] (Theorem 1), [[§80 Residues at Poles|§80]] (Theorem), [[§76 Cauchy's Residue Theorem|§76]] (Theorem), [[§43 Contours|§43]]
+*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^lem-93-3|§93.3]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§80 Residues at Poles#^thm-80-1|§80.1]], [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]], [[§43 Contours#^prop-43-5|§43.5]]
 
 > [!remark]- Connections
 > - For polynomials, the argument principle is the analytic form of the winding-number proof of the fundamental theorem of algebra, [[§25 The Fundamental Theorem of Algebra#^thm-25-1|590 Thm. §25.1]], which counts how often the image of a large circle winds around $0$ by means of $\pi_1(S^1) \cong \mathbb{Z}$. B&C completes this route in [[§94 Rouché's Theorem#^ex-94-2|Example §94.2]].
@@ -214,7 +214,7 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 > - **Counting from the formula.** If the zeros and poles inside $C$ are known, $\Delta_C\arg f = 2\pi(Z - P)$ predicts how the image of $C$ winds around $0$ (Examples §93.1, §93.2).
 > - **Counting from the picture.** If the image $\Gamma$ is known, count its signed crossings of a ray from the origin (counterclockwise crossings $+1$, clockwise $-1$); for $f$ analytic inside $C$ the result is the number of zeros (Example §93.3).
 > - **Counting from the integral.** $\frac{1}{2\pi i}\int_C f'/f\,dz = Z - P$; weighted versions such as $\frac{1}{2\pi i}\int_C z^kf'/f\,dz$ return sums of powers of the zeros (Example §93.4).
-> - In practice the winding is rarely visible directly; Rouché's theorem ([[§94 Rouché's Theorem|§94]]) compares $f$ with a simpler function instead.
+> - In practice the winding is rarely visible directly; Rouché's theorem ([[§94 Rouché's Theorem#^thm-94-1|Theorem §94.1]]) compares $f$ with a simpler function instead.
 
 ^rem-93-1
 
@@ -285,7 +285,7 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 > \int_C\frac{z^kf'(z)}{f(z)}\,dz = 2\pi i\sum_{j=1}^{n}m_jz_j^k .
 > $$
 >
-> For $k = 0$ this is the argument principle with $P = 0$, and for $k = 1$ it is B&C's Exercise 5 of §94. Proof: $z^kf'/f$ is analytic inside and on $C$ except at the $z_j$, where $f = (z - z_j)^{m_j}\phi_j$ with $\phi_j$ analytic and nonzero at $z_j$ ([[§82 Zeros of Analytic Functions|§82]], Theorem 1). By (a) the residue there is $m_jz_j^k$, and the residue theorem gives the formula.
+> For $k = 0$ this is the argument principle with $P = 0$, and for $k = 1$ it is B&C's Exercise 5 of §94. Proof: $z^kf'/f$ is analytic inside and on $C$ except at the $z_j$, where $f = (z - z_j)^{m_j}\phi_j$ with $\phi_j$ analytic and nonzero at $z_j$ ([[§82 Zeros of Analytic Functions#^thm-82-1|Theorem §82.1]]). By (a) the residue there is $m_jz_j^k$, and the residue theorem gives the formula.
 >
 > For instance, if $f$ is a polynomial with all its zeros inside $C$, then $\frac{1}{2\pi i}\int_C zf'/f\,dz$ is the sum of the zeros, which is $-a_{n-1}/a_n$ for $f = a_nz^n + a_{n-1}z^{n-1} + \cdots$.
 >

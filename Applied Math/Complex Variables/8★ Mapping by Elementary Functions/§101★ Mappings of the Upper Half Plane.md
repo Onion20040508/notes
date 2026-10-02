@@ -38,7 +38,7 @@ Which linear fractional transformations carry the upper half plane onto the unit
 > w = \frac{az + b}{cz + d} \qquad (ad - bc \ne 0) \qquad (1)
 > $$
 >
-> and use that the three points $z = 0$, $z = 1$, $z = \infty$ of the extended real axis must have images of modulus $1$. (The point at infinity has to be included: $T$ is one to one on the extended plane, so if the finite real axis alone covered the circle, $T(\infty)$ could not lie on it; yet $T(\infty)$ is the limit of $T(x)$ as $x \to \infty$ along the real axis, a point of the circle. B&C's "boundary" means the extended real axis.)
+> and use that the three points $z = 0$, $z = 1$, $z = \infty$ of the extended real axis must have images of modulus $1$. (The point at infinity has to be included: $T$ is one to one on the extended plane, so if the finite real axis alone covered the circle, $T(\infty)$ could not lie on it; yet $T(\infty)$ is the limit of $T(x)$ as $x \to \infty$ along the real axis (continuity, [[§99★ Linear Fractional Transformations#^thm-99-4|Theorem §99.4]]), so it lies on the circle, which is closed. B&C's "boundary" means the extended real axis.)
 >
 > At $z = 0$: $T(0)$ must be finite, so $d \ne 0$ (if $d = 0$ then $T(0) = \infty$), and $|T(0)| = |b/d| = 1$ gives
 >

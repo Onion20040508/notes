@@ -79,7 +79,7 @@ of the logarithm is used, $\log z$ is single-valued and analytic in the indicate
 ^thm-35-2
 
 > [!proof]+ Proof
-> $z^c = \exp(c\log z)$ is the composition of the entire function $\exp$ with the function $c\log z$, which is single-valued and analytic in the domain ([[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]]). So it is single-valued and analytic there, and by the chain rule ([[§20 Rules for Differentiation|§20]]), $\frac{d}{dw}e^w = e^w$ and $\frac{d}{dz}\log z = \frac1z$,
+> $z^c = \exp(c\log z)$ is the composition of the entire function $\exp$ with the function $c\log z$, which is single-valued and analytic in the domain ([[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]]). So it is single-valued and analytic there, and by the chain rule ([[§20 Rules for Differentiation#^thm-20-4|Theorem §20.4]]), $\frac{d}{dw}e^w = e^w$ and $\frac{d}{dz}\log z = \frac1z$,
 >
 > $$
 > \frac{d}{dz}z^c = \frac{d}{dz}\exp(c\log z) = \frac cz\exp(c\log z) .
@@ -93,7 +93,7 @@ of the logarithm is used, $\log z$ is single-valued and analytic in the indicate
 
 ^pf-35-2
 
-*Uses:* [[§35 The Power Function#^def-35-1|Def. §35.1]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]], [[§30 The Exponential Function#^thm-30-2|§30.2]], [[§30 The Exponential Function#^thm-30-3|§30.3]], [[§31 The Logarithmic Function#^prop-31-2|§31.2]], [[§20 Rules for Differentiation|§20]] (chain rule)
+*Uses:* [[§35 The Power Function#^def-35-1|Def. §35.1]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]], [[§30 The Exponential Function#^thm-30-2|§30.2]], [[§30 The Exponential Function#^thm-30-3|§30.3]], [[§31 The Logarithmic Function#^prop-31-2|§31.2]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]]
 
 > [!definition] Definition §35.2: Principal Value and Principal Branch of z^c
 > The **principal value** of $z^c$ occurs when $\log z$ is replaced by $\operatorname{Log} z$ in definition (1):
@@ -145,16 +145,16 @@ Although $e^z$ is, in general, multiple-valued according to (4), with values $e^
 
 ^pf-35-3
 
-*Uses:* [[§35 The Power Function#^def-35-3|Def. §35.3]], [[§30 The Exponential Function#^thm-30-3|§30.3]], [[§20 Rules for Differentiation|§20]] (chain rule)
+*Uses:* [[§35 The Power Function#^def-35-3|Def. §35.3]], [[§30 The Exponential Function#^thm-30-3|§30.3]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]]
 
 ## Examples
 
 B&C's examples of Section 35 are in [[§36 Examples (The Power Function)|§36]]. The examples below are its exercises on the definitions themselves.
 
 > [!example] Example §35.1: The Principal nth Root Is the Principal Value of z^1/n
-> Show that the principal $n$th root of a nonzero $z_0$ defined in [[§10 Roots of Complex Numbers|§10]] is the principal value of $z_0^{1/n}$ defined by (3).
+> Show that the principal $n$th root of a nonzero $z_0$ defined in [[§10 Roots of Complex Numbers#^def-10-1|Definition §10.1]] is the principal value of $z_0^{1/n}$ defined by (3).
 >
-> Write $z_0 = r_0e^{i\Theta_0}$ with $\Theta_0 = \operatorname{Arg} z_0$. The principal root of [[§10 Roots of Complex Numbers|§10]] is the root $c_0 = \sqrt[n]{r_0}\exp\big(i\frac{\Theta_0}{n}\big)$ (the one with $k = 0$). By (3) with $c = 1/n$ and $\operatorname{Log} z_0 = \ln r_0 + i\Theta_0$,
+> Write $z_0 = r_0e^{i\Theta_0}$ with $\Theta_0 = \operatorname{Arg} z_0$. The principal root of Definition §10.1 is the root $c_0 = \sqrt[n]{r_0}\exp\big(i\frac{\Theta_0}{n}\big)$ (the one with $k = 0$). By (3) with $c = 1/n$ and $\operatorname{Log} z_0 = \ln r_0 + i\Theta_0$,
 >
 > $$
 > \text{P.V. } z_0^{1/n} = \exp\Big(\frac1n\operatorname{Log} z_0\Big) = \exp\Big(\frac1n\ln r_0\Big)\exp\Big(i\frac{\Theta_0}{n}\Big) = \sqrt[n]{r_0}\exp\Big(i\frac{\Theta_0}{n}\Big) = c_0 .

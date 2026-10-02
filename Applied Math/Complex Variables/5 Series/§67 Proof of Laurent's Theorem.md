@@ -45,13 +45,13 @@ This section proves Laurent's theorem, stated in [[§66 Laurent Series|§66]]. T
 >
 > Then the closed annular region $r_1 \le |s| \le r_2$ is contained in the domain $R_1 < |s| < R_2$, and its interior contains both the point $z$ and the contour $C$ (Figure). Let $C_1$ and $C_2$ denote the circles $|s| = r_1$ and $|s| = r_2$, both positively oriented. The function $f$ is analytic on $C_1$ and $C_2$ and in the annular domain between them. Next, let $\gamma$ be the positively oriented circle with center $z$ and radius $\delta$, where $0 < \delta < \min(r - r_1, r_2 - r)$. For $|s - z| \le \delta$ we have $r_1 < r - \delta \le |s| \le r + \delta < r_2$, so $\gamma$ and its interior lie in the open region $r_1 < |s| < r_2$; in particular the interiors of $C_1$ and $\gamma$ are disjoint.
 >
-> *Two Cauchy integrals.* The function $f(s)/(s - z)$ is analytic on $C_2$, $C_1$, $\gamma$ and throughout the region inside $C_2$ and outside both $C_1$ and $\gamma$. By the Cauchy–Goursat theorem for the oriented boundary of a multiply connected domain ([[§53 Multiply Connected Domains|§53]]),
+> *Two Cauchy integrals.* The function $f(s)/(s - z)$ is analytic on $C_2$, $C_1$, $\gamma$ and throughout the region inside $C_2$ and outside both $C_1$ and $\gamma$. By the Cauchy–Goursat theorem for the oriented boundary of a multiply connected domain ([[§53 Multiply Connected Domains#^thm-53-1|Theorem §53.1]]),
 >
 > $$
 > \int_{C_2}\frac{f(s)\,ds}{s - z} - \int_{C_1}\frac{f(s)\,ds}{s - z} - \int_\gamma\frac{f(s)\,ds}{s - z} = 0 .
 > $$
 >
-> By the Cauchy integral formula ([[§54 Cauchy Integral Formula|§54]]) the third integral is $2\pi i f(z)$. Hence
+> By the Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]]) the third integral is $2\pi i f(z)$. Hence
 >
 > $$
 > f(z) = \frac{1}{2\pi i}\int_{C_2}\frac{f(s)\,ds}{s - z} + \frac{1}{2\pi i}\int_{C_1}\frac{f(s)\,ds}{z - s} . \qquad (1)
@@ -93,7 +93,7 @@ This section proves Laurent's theorem, stated in [[§66 Laurent Series|§66]]. T
 > \rho_N(z) = \frac{z^N}{2\pi i}\int_{C_2}\frac{f(s)\,ds}{(s - z)s^N}, \qquad \sigma_N(z) = \frac{1}{2\pi i\,z^N}\int_{C_1}\frac{s^Nf(s)\,ds}{z - s} .
 > $$
 >
-> *The remainders tend to zero.* Let $M$ denote the maximum value of $|f(s)|$ on $C_1$ and $C_2$ (a continuous function on closed bounded sets). If $s$ is on $C_2$, then $|s - z| \ge r_2 - r$; if $s$ is on $C_1$, then $|z - s| \ge r - r_1$. The circles have lengths $2\pi r_2$ and $2\pi r_1$. By the ML-inequality ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]]),
+> *The remainders tend to zero.* Let $M$ denote the maximum value of $|f(s)|$ on $C_1$ and $C_2$ (a continuous function on closed bounded sets, [[§18 Continuity#^thm-18-6|Theorem §18.6]]). If $s$ is on $C_2$, then $|s - z| \ge r_2 - r$; if $s$ is on $C_1$, then $|z - s| \ge r - r_1$. The circles have lengths $2\pi r_2$ and $2\pi r_1$. By the ML-inequality ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]),
 >
 > $$
 > |\rho_N(z)| \le \frac{r^N}{2\pi}\cdot\frac{M}{(r_2 - r)r_2^N}\cdot2\pi r_2 = \frac{Mr_2}{r_2 - r}\Big(\frac{r}{r_2}\Big)^N, \qquad |\sigma_N(z)| \le \frac{1}{2\pi r^N}\cdot\frac{r_1^NM}{r - r_1}\cdot2\pi r_1 = \frac{Mr_1}{r - r_1}\Big(\frac{r_1}{r}\Big)^N .
@@ -111,8 +111,8 @@ This section proves Laurent's theorem, stated in [[§66 Laurent Series|§66]]. T
 > f(z) = \sum_{n=0}^{\infty}a_nz^n + \sum_{n=1}^{\infty}\frac{b_n}{z^n} .
 > $$
 >
-> *The coefficients do not depend on $z$.* The circles $C_1$ and $C_2$ were chosen with $z$ in mind, so it remains to show that the integrals (5) may be taken over $C$; then the coefficients are those of the theorem, the same for every $z$ (after renaming the variable of integration $s$ as $z$). Here is why the corollary in [[§53 Multiply Connected Domains|§53]] (two positively oriented simple closed contours, one interior to the other, with the integrand analytic on both and between them, give equal integrals) applies; B&C cites it without detail.
-> - The disk $|s| < m$ is connected, contains the point $0$, which is interior to $C$, and does not meet $C$; so it lies inside $C$. Likewise the set $|s| > m'$ is connected, unbounded and does not meet $C$, so it lies outside $C$. Hence the region inside $C$ is contained in $|s| \le m'$, and the region outside $C$ is contained in $|s| \ge m$.
+> *The coefficients do not depend on $z$.* The circles $C_1$ and $C_2$ were chosen with $z$ in mind, so it remains to show that the integrals (5) may be taken over $C$; then the coefficients are those of the theorem, the same for every $z$ (after renaming the variable of integration $s$ as $z$). Here is why [[§53 Multiply Connected Domains#^cor-53-2|Corollary §53.2]] (two positively oriented simple closed contours, one interior to the other, with the integrand analytic on both and between them, give equal integrals) applies; B&C cites it without detail.
+> - The disk $|s| < m$ is connected, contains the point $0$, which is interior to $C$, and does not meet $C$; so it lies inside $C$ (the interior of $C$ is one of the two domains of the Jordan curve theorem, [[§43 Contours#^thm-43-4|Theorem §43.4]]). Likewise the set $|s| > m'$ is connected, unbounded and does not meet $C$, so it lies outside $C$. Hence the region inside $C$ is contained in $|s| \le m'$, and the region outside $C$ is contained in $|s| \ge m$.
 > - For $a_n$: the integrand $f(s)/s^{n+1}$ is analytic in the annulus $R_1 < |s| < R_2$. The contour $C$ is interior to $C_2$ (since $m' < r_2$), and the points between them, inside $C_2$ and outside $C$, satisfy $R_1 < m \le |s| \le r_2 < R_2$. So $\int_{C_2} = \int_C$.
 > - For $b_n$: the integrand $f(s)s^{n-1}$ is analytic in the same annulus. The circle $C_1$ is interior to $C$ (since $r_1 < m$), and the points between them satisfy $R_1 < r_1 \le |s| \le m' < R_2$. So $\int_{C_1} = \int_C$.
 >
@@ -142,7 +142,7 @@ This section proves Laurent's theorem, stated in [[§66 Laurent Series|§66]]. T
 > a_n = \frac{1}{2\pi i}\int_\Gamma\frac{g(z)\,dz}{z^{n+1}} \quad (n = 0, 1, 2, \ldots), \qquad (10) \qquad\qquad b_n = \frac{1}{2\pi i}\int_\Gamma\frac{g(z)\,dz}{z^{-n+1}} \quad (n = 1, 2, \ldots) . \qquad (11)
 > $$
 >
-> Writing $f(z + z_0)$ for $g(z)$ in (9), then replacing $z$ by $z - z_0$ in the resulting equation and in the condition of validity, gives representation (1) of §66 in $R_1 < |z - z_0| < R_2$. The coefficients agree with (2) and (3) of §66, since by the definition of contour integrals ([[§44 Contour Integrals|§44]]), with $\Gamma'(t) = z'(t)$ and $g(\Gamma(t)) = f[z(t)]$,
+> Writing $f(z + z_0)$ for $g(z)$ in (9), then replacing $z$ by $z - z_0$ in the resulting equation and in the condition of validity, gives representation (1) of §66 in $R_1 < |z - z_0| < R_2$. The coefficients agree with (2) and (3) of §66, since by the definition of contour integrals ([[§44 Contour Integrals#^def-44-1|Definition §44.1]]), with $\Gamma'(t) = z'(t)$ and $g(\Gamma(t)) = f[z(t)]$,
 >
 > $$
 > \int_\Gamma\frac{g(z)\,dz}{z^{n+1}} = \int_a^b\frac{f[z(t)]\,z'(t)}{[z(t) - z_0]^{n+1}}\,dt = \int_C\frac{f(z)\,dz}{(z - z_0)^{n+1}} ,
@@ -152,7 +152,7 @@ This section proves Laurent's theorem, stated in [[§66 Laurent Series|§66]]. T
 
 ^pf-67-1
 
-*Uses:* [[§66 Laurent Series#^def-66-1|Def. §66.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (its proof, expansion (4)), [[§61 Convergence of Series#^ex-61-1|Ex. §61.1]], [[§53 Multiply Connected Domains|§53]] (Cauchy–Goursat for multiply connected domains, and its corollary), [[§54 Cauchy Integral Formula|§54]], [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (ML-inequality), [[§44 Contour Integrals|§44]], [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (extreme value theorem)
+*Uses:* [[§66 Laurent Series#^def-66-1|Def. §66.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (its proof, expansion (4)), [[§61 Convergence of Series#^ex-61-1|Ex. §61.1]], [[§53 Multiply Connected Domains#^thm-53-1|§53.1]] (Cauchy–Goursat for multiply connected domains), [[§53 Multiply Connected Domains#^cor-53-2|§53.2]] (deformation), [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§43 Contours#^thm-43-4|§43.4]] (Jordan curve theorem), [[§18 Continuity#^thm-18-6|§18.6]], [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (extreme value theorem)
 
 ![[m342-67-1.svg]]
 *The proof for $z_0 = 0$. The function is analytic between the dashed circles $|z| = R_1$ and $|z| = R_2$. The circles $C_1$ and $C_2$ (blue) are chosen so that the closed ring between them contains both the point $z$ and the contour $C$ (green); the small circle $\gamma$ (red) about $z$ is cut out of the ring. The integral over $C_2$ produces the nonnegative powers of $z$, the integral over $C_1$ the negative powers, and at the end both are moved to $C$.*
@@ -207,7 +207,7 @@ The proof shows where the two halves of a Laurent series come from, and this sug
 > f(z) = \sum_{n=0}^{\infty}\frac{z^n}{2^{n+1}} + \sum_{n=1}^{\infty}\frac{1}{z^n} \qquad (1 < |z| < 2) .
 > $$
 >
-> **The proof at work in $D_2$.** Compute the coefficients from (5), with $1 < r_1 < r_2 < 2$. For $b_n$, integrate $f(s)s^{n-1} = \frac{s^{n-1}}{s - 1} - \frac{s^{n-1}}{s - 2}$ over $C_1$: the second term is analytic inside and on $C_1$ (the point $2$ is outside), so its integral is $0$ by Cauchy–Goursat, and the Cauchy integral formula gives $\frac{1}{2\pi i}\int_{C_1}\frac{s^{n-1}\,ds}{s - 1} = 1^{n-1} = 1$. So $b_n = 1$, and only the inner pole contributes. For $a_n$, integrate $f(s)/s^{n+1}$ over $C_2$. The term $\frac{1}{(s - 1)s^{n+1}}$ contributes nothing: its integral over $|s| = R$ is the same for all $R > 1$ ([[§53 Multiply Connected Domains|§53]], Corollary) and is at most $2\pi R/\big((R - 1)R^{n+1}\big) \to 0$ as $R \to \infty$. The term $-\frac{1}{(s - 2)s^{n+1}}$ gives, by the extended Cauchy formula at $0$,
+> **The proof at work in $D_2$.** Compute the coefficients from (5), with $1 < r_1 < r_2 < 2$. For $b_n$, integrate $f(s)s^{n-1} = \frac{s^{n-1}}{s - 1} - \frac{s^{n-1}}{s - 2}$ over $C_1$: the second term is analytic inside and on $C_1$ (the point $2$ is outside), so its integral is $0$ by Cauchy–Goursat, and the Cauchy integral formula gives $\frac{1}{2\pi i}\int_{C_1}\frac{s^{n-1}\,ds}{s - 1} = 1^{n-1} = 1$. So $b_n = 1$, and only the inner pole contributes. For $a_n$, integrate $f(s)/s^{n+1}$ over $C_2$. The term $\frac{1}{(s - 1)s^{n+1}}$ contributes nothing: its integral over $|s| = R$ is the same for all $R > 1$ ([[§53 Multiply Connected Domains#^cor-53-2|Corollary §53.2]]) and is at most $2\pi R/\big((R - 1)R^{n+1}\big) \to 0$ as $R \to \infty$. The term $-\frac{1}{(s - 2)s^{n+1}}$ gives, by the extended Cauchy formula at $0$,
 >
 > $$
 > a_n = -\frac{1}{n!}\frac{d^n}{ds^n}\Big(\frac{1}{s - 2}\Big)\Big|_{s=0} = -\frac{(-1)^nn!\,(0 - 2)^{-n-1}}{n!} = \frac{1}{2^{n+1}} .

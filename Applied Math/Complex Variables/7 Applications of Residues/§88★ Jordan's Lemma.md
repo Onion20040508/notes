@@ -62,7 +62,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 ^thm-88-2
 
 > [!proof]+ Proof
-> With the parametrization $z = Re^{i\theta}$, $dz = Rie^{i\theta}\,d\theta$ ([[§44 Contour Integrals|§44]]),
+> With the parametrization $z = Re^{i\theta}$, $dz = Rie^{i\theta}\,d\theta$ ([[§44 Contour Integrals#^def-44-1|Definition §44.1]]),
 >
 > $$
 > \int_{C_R} f(z)e^{iaz}\,dz = \int_0^{\pi} f(Re^{i\theta})\exp\big(iaRe^{i\theta}\big)Rie^{i\theta}\,d\theta .
@@ -74,7 +74,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 > \big|\exp\big(iaRe^{i\theta}\big)\big| = e^{-aR\sin\theta} .
 > $$
 >
-> The modulus of an integral is at most the integral of the modulus ([[§42 Definite Integrals of Functions w(t)|§42]]), so by Jordan's inequality (1) with $aR$ in place of $R$,
+> The modulus of an integral is at most the integral of the modulus ([[§47 Upper Bounds for Moduli of Contour Integrals#^lem-47-1|Lemma §47.1]]), so by Jordan's inequality (1) with $aR$ in place of $R$,
 >
 > $$
 > \Big|\int_{C_R} f(z)e^{iaz}\,dz\Big| \le M_RR\int_0^{\pi} e^{-aR\sin\theta}\,d\theta < M_RR\cdot\frac{\pi}{aR} = \frac{M_R\pi}{a} .
@@ -84,13 +84,13 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 
 ^pf-88-2
 
-*Uses:* [[§88★ Jordan's Lemma#^lem-88-1|§88.1]], [[§44 Contour Integrals|§44]], [[§42 Definite Integrals of Functions w(t)|§42]], [[§30 The Exponential Function|§30]]
+*Uses:* [[§88★ Jordan's Lemma#^lem-88-1|§88.1]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^lem-47-1|§47.1]], [[§30 The Exponential Function#^prop-30-1|§30.1]]
 
 > [!remark]- Connections
 > - Jordan's lemma is what makes the Fourier transform of a function decaying only like $1/x$ computable by residues: the Fourier integral of [[§14 Fourier Integral#^def-14-1|341 Def. §14.1]] in its complex form [[§15★ Complex Methods#^thm-15-2|341 Thm. §15.2]], whose outer integral is likewise a symmetric limit $\lim_{L\to\infty}\int_{-L}^{L}$. For example, Example §88.1 below with $3$ replaced by $1$ and $2$ by $x$ gives $\frac2\pi\int_0^\infty\frac{\lambda\sin\lambda x}{1 + \lambda^2}\,d\lambda = e^{-x}$ $(x > 0)$, the representation of [[§14 Fourier Integral#^ex-14-4|341 Ex. §14.4]](b).
 
 > [!remark] Remark: What Jordan's Lemma Adds
-> The bound of [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] gives $\big|\int_{C_R} fe^{iaz}\big| \le M_R\,\pi R$, which tends to zero only if $M_R = o(1/R)$; for $f = p/q$ that is $\deg q \ge \deg p + 2$. Jordan's lemma gives $M_R\pi/a$, which tends to zero as soon as $M_R \to 0$, that is, $\deg q \ge \deg p + 1$. So for rational $f$ with $\deg q = \deg p + 1$ and $a > 0$,
+> The bound of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]] gives $\big|\int_{C_R} fe^{iaz}\big| \le M_R\,\pi R$, which tends to zero only if $M_R = o(1/R)$; for $f = p/q$ that is $\deg q \ge \deg p + 2$. Jordan's lemma gives $M_R\pi/a$, which tends to zero as soon as $M_R \to 0$, that is, $\deg q \ge \deg p + 1$. So for rational $f$ with $\deg q = \deg p + 1$ and $a > 0$,
 >
 > $$
 > \text{P.V.}\int_{-\infty}^{\infty} f(x)e^{iax}\,dx = 2\pi i\sum_{k}\operatorname{Res}_{z=z_k}\big[f(z)e^{iaz}\big]
@@ -125,7 +125,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 >
 > with $\big|\operatorname{Im}\int_{C_R} fe^{i2z}\big| \le \big|\int_{C_R} fe^{i2z}\big|$ (6).
 >
-> **The arc needs Jordan.** On $C_R$, $|f(z)| \le M_R = R/(R^2 - 3)$ and $|e^{i2z}| \le 1$. The bound of §47 is $M_R\pi R = \pi R^2/(R^2 - 3) = \pi/(1 - 3/R^2)$, which tends to $\pi$, not $0$. But $M_R = \dfrac{1/R}{1 - 3/R^2} \to 0$, so Jordan's lemma (Theorem §88.2, $a = 2$) gives $\lim_{R\to\infty}\int_{C_R} f(z)e^{i2z}\,dz = 0$.
+> **The arc needs Jordan.** On $C_R$, $|f(z)| \le M_R = R/(R^2 - 3)$ and $|e^{i2z}| \le 1$. The bound of Theorem §47.2 is $M_R\pi R = \pi R^2/(R^2 - 3) = \pi/(1 - 3/R^2)$, which tends to $\pi$, not $0$. But $M_R = \dfrac{1/R}{1 - 3/R^2} \to 0$, so Jordan's lemma (Theorem §88.2, $a = 2$) gives $\lim_{R\to\infty}\int_{C_R} f(z)e^{i2z}\,dz = 0$.
 >
 > **Conclusion.** The integrand in (5) is even, so
 >
@@ -144,7 +144,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 >
 > **Zeros.** $z^4 = -4 = 4e^{i\pi}$ gives $z = \sqrt2e^{i(\pi/4 + k\pi/2)}$, that is, $\pm1 \pm i$; above the axis, $1 + i$ and $-1 + i$, both simple.
 >
-> **Residues.** By [[§83 Zeros and Poles|§83]] (Theorem 2), at each such zero $z_k$,
+> **Residues.** By [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]], at each such zero $z_k$,
 >
 > $$
 > \operatorname{Res}_{z=z_k}\frac{z^3e^{iaz}}{z^4 + 4} = \frac{z_k^3e^{iaz_k}}{4z_k^3} = \frac{e^{iaz_k}}{4} .
@@ -167,7 +167,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 > \int_0^\infty\cos(x^2)\,dx = \int_0^\infty\sin(x^2)\,dx = \frac12\sqrt{\frac\pi2} .
 > $$
 >
-> **(a) A sector.** $\exp(iz^2)$ is entire. Integrate it around the boundary of the sector $0 \le r \le R$, $0 \le \theta \le \pi/4$, positively oriented. On the ray $z = re^{i\pi/4}$, $iz^2 = ir^2e^{i\pi/2} = -r^2$ and $dz = e^{i\pi/4}\,dr$. By the Cauchy–Goursat theorem ([[§50 Cauchy–Goursat Theorem|§50]]),
+> **(a) A sector.** $\exp(iz^2)$ is entire. Integrate it around the boundary of the sector $0 \le r \le R$, $0 \le \theta \le \pi/4$, positively oriented. On the ray $z = re^{i\pi/4}$, $iz^2 = ir^2e^{i\pi/2} = -r^2$ and $dz = e^{i\pi/4}\,dr$. By the Cauchy–Goursat theorem ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]),
 >
 > $$
 > \int_0^R e^{ix^2}\,dx + \int_{C_R} e^{iz^2}\,dz - e^{i\pi/4}\int_0^R e^{-r^2}\,dr = 0 ,
@@ -187,7 +187,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 >
 > by the form (2) of Jordan's inequality.
 >
-> **(c) The limit.** With $\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt\pi}{2}$, letting $R \to \infty$ in (a) shows that both Fresnel integrals converge and equal $\frac{1}{\sqrt2}\cdot\frac{\sqrt\pi}{2} = \frac12\sqrt{\frac\pi2} \approx 0.626657$, which quadrature confirms. The integrands do not tend to zero in absolute value at a fixed rate; the integrals converge only because the oscillations of $\cos(x^2)$ and $\sin(x^2)$ speed up.
+> **(c) The limit.** With $\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt\pi}{2}$, letting $R \to \infty$ in (a) shows that both Fresnel integrals converge and equal $\frac{1}{\sqrt2}\cdot\frac{\sqrt\pi}{2} = \frac12\sqrt{\frac\pi2} \approx 0.626657$, which quadrature confirms. The integrands do not even tend to zero as $x \to \infty$; the integrals converge only because the oscillations of $\cos(x^2)$ and $\sin(x^2)$ speed up, so that successive half-waves cancel more and more nearly.
 >
 > *B&C: Sec. 88, Exercise 12*
 

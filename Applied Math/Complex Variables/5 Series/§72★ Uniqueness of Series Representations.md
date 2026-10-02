@@ -48,13 +48,13 @@ A function has only one series representation of each kind. If $\sum a_n(z - z_0
 > g(z) = \frac{1}{2\pi i}\cdot\frac{1}{(z - z_0)^{n+1}} , \qquad (4)
 > $$
 >
-> continuous on $C$. By the extension of the Cauchy integral formula ([[§55 An Extension of the Cauchy Integral Formula|§55]], equation (3)),
+> continuous on $C$. By the extension of the Cauchy integral formula ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]]),
 >
 > $$
 > \int_C g(z)f(z)\,dz = \frac{1}{2\pi i}\int_C\frac{f(z)\,dz}{(z - z_0)^{n+1}} = \frac{f^{(n)}(z_0)}{n!} ; \qquad (5)
 > $$
 >
-> and since ([[§46 Examples Involving Branch Cuts|§46]], Exercise 13)
+> and since ([[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]])
 >
 > $$
 > \int_C g(z)(z - z_0)^m\,dz = \frac{1}{2\pi i}\int_C\frac{dz}{(z - z_0)^{n-m+1}} = \begin{cases} 0 & \text{when } m \ne n, \\ 1 & \text{when } m = n, \end{cases} \qquad (6)
@@ -70,7 +70,7 @@ A function has only one series representation of each kind. If $\sum a_n(z - z_0
 
 ^pf-72-1
 
-*Uses:* [[§71★ Integration and Differentiation of Power Series#^thm-71-1|§71.1]], [[§71★ Integration and Differentiation of Power Series#^cor-71-2|§71.2]], [[§55 An Extension of the Cauchy Integral Formula|§55]], [[§46 Examples Involving Branch Cuts|§46]] (Exercise 13: $\int_C(z - z_0)^k\,dz$)
+*Uses:* [[§71★ Integration and Differentiation of Power Series#^thm-71-1|§71.1]], [[§71★ Integration and Differentiation of Power Series#^cor-71-2|§71.2]], [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|§56.1]], [[§45 Some Examples (Contour Integrals)#^ex-45-5|Ex. §45.5]] ($\int_C(z - z_0)^k\,dz$)
 
 > [!theorem] Corollary §72.2: A Power Series That Vanishes Near z₀ Is Zero
 > If the series (1) converges to zero throughout some neighborhood of $z_0$, then the coefficients $a_n$ are all zero. Consequently, two power series in $z - z_0$ that converge to the same function in a neighborhood of $z_0$ have the same coefficients.
@@ -133,7 +133,7 @@ The proof for Laurent series needs Theorem §71.1 for series that also contain n
 
 ^pf-72-3
 
-*Uses:* [[§71★ Integration and Differentiation of Power Series#^thm-71-1|§71.1]], [[§70★ Continuity of Sums of Power Series#^thm-70-1|§70.1]], [[§70★ Continuity of Sums of Power Series#^cor-70-2|§70.2]], [[§70★ Continuity of Sums of Power Series#^cor-70-3|§70.3]], [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (ML-inequality), [[§66 Laurent Series#^def-66-1|Def. §66.1]]
+*Uses:* [[§71★ Integration and Differentiation of Power Series#^thm-71-1|§71.1]], [[§70★ Continuity of Sums of Power Series#^thm-70-1|§70.1]], [[§70★ Continuity of Sums of Power Series#^cor-70-2|§70.2]], [[§70★ Continuity of Sums of Power Series#^cor-70-3|§70.3]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§66 Laurent Series#^def-66-1|Def. §66.1]]
 
 > [!theorem] Theorem §72.4: Uniqueness of Laurent Series
 > If a series
@@ -165,7 +165,7 @@ The proof for Laurent series needs Theorem §71.1 for series that also contain n
 
 ^pf-72-4
 
-*Uses:* [[§72★ Uniqueness of Series Representations#^lem-72-3|§72.3]], [[§66 Laurent Series#^def-66-1|Def. §66.1]], [[§67 Proof of Laurent's Theorem#^thm-67-1|§67.1]], [[§71★ Integration and Differentiation of Power Series#^cor-71-2|§71.2]], [[§46 Examples Involving Branch Cuts|§46]] (Exercise 13), [[§20 Rules for Differentiation|§20]] (chain rule)
+*Uses:* [[§72★ Uniqueness of Series Representations#^lem-72-3|§72.3]], [[§66 Laurent Series#^def-66-1|Def. §66.1]], [[§67 Proof of Laurent's Theorem#^thm-67-1|§67.1]], [[§71★ Integration and Differentiation of Power Series#^cor-71-2|§71.2]], [[§45 Some Examples (Contour Integrals)#^ex-45-5|Ex. §45.5]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]] (chain rule)
 
 ## Examples
 
@@ -209,7 +209,7 @@ The proof for Laurent series needs Theorem §71.1 for series that also contain n
 > f(z) = \sum_{n=m+1}^{\infty}\frac{f^{(n)}(z_0)}{n!}(z - z_0)^n, \qquad\text{and for } 0 < |z - z_0| < \varepsilon, \qquad g(z) = \sum_{k=0}^{\infty}\frac{f^{(m+1+k)}(z_0)}{(m + 1 + k)!}(z - z_0)^k .
 > $$
 >
-> At $z = z_0$ the series on the right has the value $\frac{f^{(m+1)}(z_0)}{(m + 1)!} = g(z_0)$. So $g$ is the sum of a power series converging in $|z - z_0| < \varepsilon$, hence analytic at $z_0$ by [[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]. This is the basic step in the study of zeros of analytic functions ([[§82 Zeros of Analytic Functions|§82]]): $f(z) = (z - z_0)^{m+1}g(z)$ with $g$ analytic.
+> At $z = z_0$ the series on the right has the value $\frac{f^{(m+1)}(z_0)}{(m + 1)!} = g(z_0)$. So $g$ is the sum of a power series converging in $|z - z_0| < \varepsilon$, hence analytic at $z_0$ by [[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]. This is the basic step in the study of zeros of analytic functions ([[§82 Zeros of Analytic Functions#^thm-82-1|Theorem §82.1]]): $f(z) = (z - z_0)^{m+1}g(z)$ with $g$ analytic.
 >
 > *B&C: Sec. 72, Exercise 8*
 
@@ -239,13 +239,13 @@ The proof for Laurent series needs Theorem §71.1 for series that also contain n
 ^ex-72-3
 
 > [!example] Example §72.4: Power Series and Analytic Continuation
-> **(a)** The function $f_2(z) = \dfrac{1}{z^2 + 1}$ $(z \ne \pm i)$ is the analytic continuation ([[§28★ Uniquely Determined Analytic Functions|§28]]) of
+> **(a)** The function $f_2(z) = \dfrac{1}{z^2 + 1}$ $(z \ne \pm i)$ is the analytic continuation ([[§28★ Uniquely Determined Analytic Functions#^def-28-1|Definition §28.1]]) of
 >
 > $$
 > f_1(z) = \sum_{n=0}^{\infty}(-1)^nz^{2n} \qquad (|z| < 1)
 > $$
 >
-> into the domain consisting of all points except $\pm i$. Indeed, $f_1$ is analytic in $|z| < 1$ (Corollary §71.2), and substituting $-z^2$ into the geometric series shows $f_1(z) = \frac{1}{1 + z^2} = f_2(z)$ there. The function $f_2$ is analytic in the connected domain $\mathbb{C} \setminus \{\pm i\}$, which contains the disk, and agrees with $f_1$ on it, so it is an analytic continuation of $f_1$; by the uniqueness of analytic continuation it is the only one.
+> into the domain consisting of all points except $\pm i$. Indeed, $f_1$ is analytic in $|z| < 1$ (Corollary §71.2), and substituting $-z^2$ into the geometric series shows $f_1(z) = \frac{1}{1 + z^2} = f_2(z)$ there. The function $f_2$ is analytic in the connected domain $\mathbb{C} \setminus \{\pm i\}$, which contains the disk, and agrees with $f_1$ on it, so it is an analytic continuation of $f_1$; by the uniqueness of analytic continuation ([[§28★ Uniquely Determined Analytic Functions#^prop-28-4|Proposition §28.4]]) it is the only one.
 >
 > **(b)** Likewise $f_2(z) = 1/z^2$ $(z \ne 0)$ is the analytic continuation of
 >

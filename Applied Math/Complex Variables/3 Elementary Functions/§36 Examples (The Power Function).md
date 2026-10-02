@@ -73,7 +73,7 @@ This section evaluates powers $z^c = e^{c\log z}$ ([[§35 The Power Function#^de
 ^ex-36-2
 
 > [!example] Example §36.3: Three Ways to (−1 + √3 i)^3/2
-> **(a) By definition (1) of §35.** $-1 + \sqrt3\,i = 2e^{i2\pi/3}$, so $\log(-1 + \sqrt3\,i) = \ln 2 + i\big(\frac{2\pi}{3} + 2n\pi\big)$, and
+> **(a) By [[§35 The Power Function#^def-35-1|Definition §35.1]].** $-1 + \sqrt3\,i = 2e^{i2\pi/3}$, so $\log(-1 + \sqrt3\,i) = \ln 2 + i\big(\frac{2\pi}{3} + 2n\pi\big)$, and
 >
 > $$
 > (-1 + \sqrt3\,i)^{3/2} = \exp\Big[\frac32\ln 2 + i(\pi + 3n\pi)\Big] = 2^{3/2}e^{i(3n + 1)\pi} = 2\sqrt2\,(-1)^{3n + 1} = \pm 2\sqrt2 ,
@@ -81,7 +81,7 @@ This section evaluates powers $z^c = e^{c\log z}$ ([[§35 The Power Function#^de
 >
 > with $-2\sqrt2$ for even $n$ (in particular the principal value, $n = 0$) and $+2\sqrt2$ for odd $n$.
 >
-> **(b) Square roots first.** The square roots of $2e^{i2\pi/3}$ are $\sqrt2\,e^{i(\pi/3 + k\pi)}$, $k = 0, 1$ ([[§10 Roots of Complex Numbers|§10]]). Cubing,
+> **(b) Square roots first.** The square roots of $2e^{i2\pi/3}$ are $\sqrt2\,e^{i(\pi/3 + k\pi)}$, $k = 0, 1$ ([[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]]). Cubing,
 >
 > $$
 > \big[(-1 + \sqrt3\,i)^{1/2}\big]^3 = 2\sqrt2\,e^{i(\pi + 3k\pi)} = \mp 2\sqrt2 \qquad (k = 0, 1) .
@@ -110,7 +110,7 @@ This section evaluates powers $z^c = e^{c\log z}$ ([[§35 The Power Function#^de
 > \text{P.V. } z^{2/3} = \sqrt[3]{r^2}\cos\frac{2\Theta}{3} + i\sqrt[3]{r^2}\sin\frac{2\Theta}{3} .
 > $$
 >
-> This function is analytic in the domain $r > 0$, $-\pi < \Theta < \pi$. One can see this directly from the theorem of [[§24★ Polar Coordinates|§24★]]: with $u = r^{2/3}\cos\frac{2\Theta}{3}$ and $v = r^{2/3}\sin\frac{2\Theta}{3}$, the partial derivatives
+> This function is analytic in the domain $r > 0$, $-\pi < \Theta < \pi$. One can see this directly from [[§24★ Polar Coordinates#^thm-24-3|Theorem §24.3]]: with $u = r^{2/3}\cos\frac{2\Theta}{3}$ and $v = r^{2/3}\sin\frac{2\Theta}{3}$, the partial derivatives
 >
 > $$
 > ru_r = \frac23 r^{2/3}\cos\frac{2\Theta}{3} = v_\Theta, \qquad u_\Theta = -\frac23 r^{2/3}\sin\frac{2\Theta}{3} = -rv_r

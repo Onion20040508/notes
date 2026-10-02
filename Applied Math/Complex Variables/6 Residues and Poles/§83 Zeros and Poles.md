@@ -162,7 +162,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 > f(z) = \cot z = \frac{\cos z}{\sin z} ,
 > $$
 >
-> a quotient of the entire functions $p(z) = \cos z$ and $q(z) = \sin z$. Its singularities occur at the zeros of $q$, the points $z = n\pi$ ($n = 0, \pm1, \pm2, \ldots$) ([[§38 Zeros and Singularities of Trigonometric Functions|§38]]). Since
+> a quotient of the entire functions $p(z) = \cos z$ and $q(z) = \sin z$. Its singularities occur at the zeros of $q$, the points $z = n\pi$ ($n = 0, \pm1, \pm2, \ldots$) ([[§38 Zeros and Singularities of Trigonometric Functions#^thm-38-1|Theorem §38.1]]). Since
 >
 > $$
 > p(n\pi) = (-1)^n \ne 0, \qquad q(n\pi) = 0, \qquad q'(n\pi) = \cos n\pi = (-1)^n \ne 0,
@@ -180,7 +180,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 > f(z) = \frac{z - \sinh z}{z^2\sinh z}
 > $$
 >
-> at the zero $z = \pi i$ of $\sinh z$ ([[§39★ Hyperbolic Functions|§39★]]) is found by writing $p(z) = z - \sinh z$ and $q(z) = z^2\sinh z$. Since $\sinh(\pi i) = i\sin\pi = 0$ and $\cosh(\pi i) = \cos\pi = -1$,
+> at the zero $z = \pi i$ of $\sinh z$ ([[§39★ Hyperbolic Functions#^thm-39-4|Theorem §39.4]]) is found by writing $p(z) = z - \sinh z$ and $q(z) = z^2\sinh z$. Since $\sinh(\pi i) = i\sin\pi = 0$ and $\cosh(\pi i) = \cos\pi = -1$,
 >
 > $$
 > p(\pi i) = \pi i \ne 0, \qquad q(\pi i) = 0, \qquad q'(\pi i) = \big[2z\sinh z + z^2\cosh z\big]_{z=\pi i} = (\pi i)^2(-1) = \pi^2 \ne 0 .
@@ -192,7 +192,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 > B = \frac{p(\pi i)}{q'(\pi i)} = \frac{\pi i}{\pi^2} = \frac i\pi .
 > $$
 >
-> **(c)** The point $z_0 = \sqrt2e^{i\pi/4} = 1 + i$ is a zero of the polynomial $z^4 + 4$ ([[§11 Examples (Roots of Complex Numbers)|§11]], Exercise 6), hence an isolated singularity of
+> **(c)** The point $z_0 = \sqrt2e^{i\pi/4} = 1 + i$ is a zero of the polynomial $z^4 + 4$ ([[§11 Examples (Roots of Complex Numbers)#^ex-11-5|Example §11.5]]), hence an isolated singularity of
 >
 > $$
 > f(z) = \frac{z}{z^4 + 4} .
@@ -214,7 +214,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 > For each function, find all the poles and the residue at each pole, and all the zeros with their orders.
 >
 > **(a) $f(z) = \dfrac{z}{\sin z}$.** The zeros of $\sin z$ are $z = n\pi$ ($n \in \mathbb{Z}$).
-> - *At $z = 0$* the numerator vanishes too: $\frac{z}{\sin z} = \frac{1}{1 - z^2/3! + z^4/5! - \cdots}$, which tends to $1$; equivalently, by the series $(\ast)$ of [[§81 Examples (Residues at Poles)#^ex-81-5|Example §81.5]], $\frac{z}{\sin z} = 1 + \frac{z^2}{6} + \frac{7z^4}{360} + \cdots$. So $0$ is a **removable** singular point, not a pole; with $f(0) = 1$ the function is analytic there.
+> - *At $z = 0$* the numerator vanishes too: $\frac{z}{\sin z} = \frac{1}{1 - z^2/3! + z^4/5! - \cdots}$, which tends to $1$; equivalently, by the Laurent series of $1/\sin z$ in [[§73★ Multiplication and Division of Power Series#^ex-73-3|Example §73.3]], $\frac{z}{\sin z} = 1 + \frac{z^2}{6} + \frac{7z^4}{360} + \cdots$. So $0$ is a **removable** singular point, not a pole; with $f(0) = 1$ the function is analytic there.
 > - *At $z = n\pi$, $n \ne 0$*: $p(z) = z$ has $p(n\pi) = n\pi \ne 0$, and $q(z) = \sin z$ has $q'(n\pi) = \cos n\pi = (-1)^n \ne 0$. By Theorem §83.2 these are **simple poles**, with
 >
 > $$
@@ -223,7 +223,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 >
 > - *Zeros.* $f(z) = 0$ would need $z = 0$, but there $f(0) = 1$ (after the removal). So $f$ has **no zeros**.
 >
-> **(b) $g(z) = \dfrac{z^2}{z^4 + 9}$.** The zeros of $z^4 + 9$ are the fourth roots of $-9 = 9e^{i\pi}$ ([[§10 Roots of Complex Numbers|§10]]):
+> **(b) $g(z) = \dfrac{z^2}{z^4 + 9}$.** The zeros of $z^4 + 9$ are the fourth roots of $-9 = 9e^{i\pi}$ ([[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]]):
 >
 > $$
 > z_k = \sqrt3\,e^{i(\pi/4 + k\pi/2)} \qquad (k = 0, 1, 2, 3), \qquad\text{that is,}\qquad z_k = \sqrt{\tfrac32}\,(\pm1 \pm i) .
@@ -305,7 +305,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 >
 > the same value for $n$ and $-n$.
 >
-> **At $z = 0$** $q$ has a zero of order $3$, and the residue comes from the Laurent series: by $(\ast)$ of [[§81 Examples (Residues at Poles)#^ex-81-5|Example §81.5]],
+> **At $z = 0$** $q$ has a zero of order $3$, and the residue comes from the Laurent series of $1/\sin z$ in [[§73★ Multiplication and Division of Power Series#^ex-73-3|Example §73.3]],
 >
 > $$
 > \frac{1}{z^2\sin z} = \frac{1}{z^2}\Big(\frac1z + \frac z6 + \frac{7z^3}{360} + \cdots\Big) = \frac{1}{z^3} + \frac16\cdot\frac1z + \frac{7z}{360} + \cdots ,
@@ -321,7 +321,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 >
 > (For $N = 3$ both sides equal $-0.04920\ldots\,i$; the left side was checked by numerical integration around the square.)
 >
-> **The integral tends to $0$.** (B&C refers to Exercise 8 of [[§47 Upper Bounds for Moduli of Contour Integrals|§47]]; here is the estimate.) Since $|\sin z|^2 = \sin^2x + \sinh^2y$ ([[§37 The Trigonometric Functions sin z and cos z|§37]]), on the vertical sides $x = \pm(N + \frac12)\pi$ we have $|\sin z| \ge |\sin x| = 1$, and on the horizontal sides $|\sin z| \ge |\sinh y| = \sinh\big((N + \frac12)\pi\big) > 1$. Also $|z| \ge (N + \frac12)\pi$ on $C_N$. Hence $|f(z)| \le \frac{1}{(N + \frac12)^2\pi^2}$ on $C_N$, whose length is $8(N + \frac12)\pi$, and by the ML-inequality ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]])
+> **The integral tends to $0$.** (B&C refers to Exercise 8 of [[§47 Upper Bounds for Moduli of Contour Integrals|§47]]; here is the estimate.) Since $|\sin z|^2 = \sin^2x + \sinh^2y$ ([[§37 The Trigonometric Functions sin z and cos z#^prop-37-6|Proposition §37.6]]), on the vertical sides $x = \pm(N + \frac12)\pi$ we have $|\sin z| \ge |\sin x| = 1$, and on the horizontal sides $|\sin z| \ge |\sinh y| = \sinh\big((N + \frac12)\pi\big) > 1$. Also $|z| \ge (N + \frac12)\pi$ on $C_N$. Hence $|f(z)| \le \frac{1}{(N + \frac12)^2\pi^2}$ on $C_N$, whose length is $8(N + \frac12)\pi$, and by the ML-inequality ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]])
 >
 > $$
 > \Big|\int_{C_N}\frac{dz}{z^2\sin z}\Big| \le \frac{8(N + \frac12)\pi}{(N + \frac12)^2\pi^2} = \frac{8}{(N + \frac12)\pi} \longrightarrow 0 \qquad (N \to \infty) .

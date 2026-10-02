@@ -38,8 +38,6 @@ The basic way to recognize a pole and find its residue is to write out the Laure
 
 ^thm-80-1
 
-The two expressions for residues need not have been written separately: with the conventions $\phi^{(0)}(z_0) = \phi(z_0)$ and $0! = 1$, the second reduces to the first when $m = 1$. The representation in (b) is required to hold in some deleted neighborhood of $z_0$.
-
 > [!proof]+ Proof
 > **(a) implies (b).** Assume (a). Then $f(z)$ has a Laurent series representation
 >
@@ -59,7 +57,7 @@ The two expressions for residues need not have been written separately: with the
 > \phi(z) = b_m + b_{m-1}(z - z_0) + \cdots + b_2(z - z_0)^{m-2} + b_1(z - z_0)^{m-1} + \sum_{n=0}^{\infty} a_n(z - z_0)^{m+n}
 > $$
 >
-> throughout the entire disk $|z - z_0| < R_2$. (For $z \ne z_0$ this is the Laurent series times $(z - z_0)^m$; the series $\sum a_n(z - z_0)^n$ converges in the whole disk, being a power series that converges in the punctured disk, so the right side converges there too; at $z = z_0$ both sides equal $b_m$.) Consequently $\phi$ is analytic in that disk ([[§71★ Integration and Differentiation of Power Series|§71★]], Corollary), and in particular at $z_0$. Since $\phi(z_0) = b_m \ne 0$, and $f(z) = \phi(z)/(z - z_0)^m$ for $0 < |z - z_0| < R_2$, statement (b) follows.
+> throughout the entire disk $|z - z_0| < R_2$. (For $z \ne z_0$ this is the Laurent series times $(z - z_0)^m$; the series $\sum a_n(z - z_0)^n$ converges in the whole disk, being a power series that converges in the punctured disk, so the right side converges there too; at $z = z_0$ both sides equal $b_m$.) Consequently $\phi$ is analytic in that disk ([[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]), and in particular at $z_0$. Since $\phi(z_0) = b_m \ne 0$, and $f(z) = \phi(z)/(z - z_0)^m$ for $0 < |z - z_0| < R_2$, statement (b) follows.
 >
 > **(b) implies (a), and the residue.** Suppose now that we know only that $f$ has the form in (b). Since $\phi$ is analytic at $z_0$, it has a Taylor series representation ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]], Taylor's theorem)
 >
@@ -73,18 +71,20 @@ The two expressions for residues need not have been written separately: with the
 > f(z) = \frac{\phi(z_0)}{(z - z_0)^m} + \frac{\phi'(z_0)/1!}{(z - z_0)^{m-1}} + \frac{\phi''(z_0)/2!}{(z - z_0)^{m-2}} + \cdots + \frac{\phi^{(m-1)}(z_0)/(m - 1)!}{z - z_0} + \sum_{n=m}^{\infty}\frac{\phi^{(n)}(z_0)}{n!}(z - z_0)^{n-m}
 > $$
 >
-> when $0 < |z - z_0| < \varepsilon$. This is a series in powers of $z - z_0$ converging to $f$ in the punctured disk, so it is the Laurent series of $f$ there ([[§72★ Uniqueness of Series Representations|§72★]], Theorem 2). Its principal part has the last term $\phi(z_0)/(z - z_0)^m$, and $\phi(z_0) \ne 0$: so $z_0$ is a pole of order $m$ of $f$. The coefficient of $1/(z - z_0)$ is $\phi^{(m-1)}(z_0)/(m - 1)!$, and this is the residue ([[§75 Residues#^def-75-1|Definition §75.1]]). The proof is complete.
+> when $0 < |z - z_0| < \varepsilon$. This is a series in powers of $z - z_0$ converging to $f$ in the punctured disk, so it is the Laurent series of $f$ there ([[§72★ Uniqueness of Series Representations#^thm-72-4|Theorem §72.4]]). Its principal part has the last term $\phi(z_0)/(z - z_0)^m$, and $\phi(z_0) \ne 0$: so $z_0$ is a pole of order $m$ of $f$. The coefficient of $1/(z - z_0)$ is $\phi^{(m-1)}(z_0)/(m - 1)!$, and this is the residue ([[§75 Residues#^def-75-1|Definition §75.1]]). The proof is complete.
 
 ^pf-80-1
 
-*Uses:* [[§78 The Three Types of Isolated Singular Points#^def-78-4|Def. §78.4]], [[§75 Residues#^def-75-1|Def. §75.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (Taylor's theorem), [[§71★ Integration and Differentiation of Power Series|§71★]] (Corollary: power series are analytic), [[§72★ Uniqueness of Series Representations|§72★]] (Theorem 2: uniqueness of Laurent series)
+*Uses:* [[§78 The Three Types of Isolated Singular Points#^def-78-4|Def. §78.4]], [[§75 Residues#^def-75-1|Def. §75.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (Taylor's theorem), [[§71★ Integration and Differentiation of Power Series#^cor-71-2|§71.2]] (power series are analytic), [[§72★ Uniqueness of Series Representations#^thm-72-4|§72.4]] (uniqueness of Laurent series)
+
+The two expressions for residues need not have been written separately: with the conventions $\phi^{(0)}(z_0) = \phi(z_0)$ and $0! = 1$, the second reduces to the first when $m = 1$. The representation in (b) is required to hold in some deleted neighborhood of $z_0$.
 
 > [!remark]- Connections
 > - In Fourier Series and PDEs, the coefficients of $\frac{A}{s - r} + \frac{B}{(s - r)^2}$ at a double root are $B = \lim_{s\to r}(s - r)^2U(s)$ and $A = \lim_{s\to r}(s - r)\big[U(s) - \frac{B}{(s - r)^2}\big]$, [[§54★ More Difficult Examples#^prop-54-2|341 Prop. §54.2]]. In the notation of Theorem §80.1 with $m = 2$ and $\phi(s) = (s - r)^2U(s)$, these are $B = \phi(r)$ and $A = \phi'(r)$, the residue. At a simple root the formula $\operatorname{Res} = \phi(z_0)$ is Heaviside's $q(r)/p'(r)$, [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]] (see [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]]).
 
 > [!remark] Remark: Method — Computing the Residue at a Pole
 > 1. **Factor out the singular factor.** Write $f(z) = \phi(z)/(z - z_0)^m$, with $m$ the power of $z - z_0$ that the formula of $f$ visibly divides by.
-> 2. **Check $\phi$.** It must be analytic at $z_0$ (no other singular factor at $z_0$, no branch cut through $z_0$) and $\phi(z_0) \ne 0$. If $\phi(z_0) = 0$ the order is lower than $m$; if $\phi$ is not even defined at $z_0$ the factorization is wrong. In either case return to a Laurent series or to [[§83 Zeros and Poles|§83]] ([[§81 Examples (Residues at Poles)|§81]], Examples 4–5).
+> 2. **Check $\phi$.** It must be analytic at $z_0$ (no other singular factor at $z_0$, no branch cut through $z_0$) and $\phi(z_0) \ne 0$. If $\phi(z_0) = 0$ the order is lower than $m$; if $\phi$ is not even defined at $z_0$ the factorization is wrong. In either case return to a Laurent series or to [[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]] ([[§81 Examples (Residues at Poles)#^ex-81-3|Example §81.3]]).
 > 3. **Read off the residue:** $\phi(z_0)$ for a simple pole, equivalently $\lim_{z\to z_0}(z - z_0)f(z)$; $\phi'(z_0)$ for $m = 2$; in general $\phi^{(m-1)}(z_0)/(m - 1)!$.
 > 4. **If the principal part is wanted**, the Taylor coefficients $\phi^{(k)}(z_0)/k!$, $k = 0, \ldots, m - 1$, are its coefficients, read from $(z - z_0)^{-m}$ up to $(z - z_0)^{-1}$ ([[§80 Residues at Poles#^ex-80-2|Example §80.2]]).
 
@@ -105,7 +105,7 @@ The two expressions for residues need not have been written separately: with the
 > g(z) = \frac{f(z_0)}{z - z_0} + f'(z_0) + \frac{f''(z_0)}{2!}(z - z_0) + \frac{f'''(z_0)}{3!}(z - z_0)^2 + \cdots \qquad (0 < |z - z_0| < \varepsilon) .
 > $$
 >
-> So $g$ is analytic in the punctured disk, and by uniqueness this is its Laurent series there, with principal part $f(z_0)/(z - z_0)$.
+> So $g$ is analytic in the punctured disk, and by uniqueness ([[§72★ Uniqueness of Series Representations#^thm-72-4|Theorem §72.4]]) this is its Laurent series there, with principal part $f(z_0)/(z - z_0)$.
 >
 > **(a)** If $f(z_0) \ne 0$, the principal part consists of the single nonzero term $f(z_0)/(z - z_0)$: a simple pole with residue $f(z_0)$. (This is also Theorem §80.1 with $m = 1$ and $\phi = f$.)
 >

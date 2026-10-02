@@ -65,7 +65,7 @@ Rouché's theorem turns the argument principle into a practical tool for locatin
 
 ^pf-94-1
 
-*Uses:* [[§93 Argument Principle#^thm-93-4|§93.4]], [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^prop-93-2|§93.2]], [[§5 Triangle Inequality|§5]]
+*Uses:* [[§93 Argument Principle#^thm-93-4|§93.4]], [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^prop-93-2|§93.2]], [[§5 Triangle Inequality#^cor-5-2|§5.2]]
 
 ![[m342-94-1.svg]]
 *Rouché's theorem for Example §94.1, $f = 3z^3$, $g = z^4 + 6$ on $|z| = 2$. Left: the image of the circle under $f + g = z^4 + 3z^3 + 6$, computed from $z = 2e^{i\theta}$, winds three times counterclockwise around the origin, so $f + g$ has three zeros in $|z| < 2$. Right: the factor $F = 1 + g/f = 1 + z/3 + 2/z^3$ keeps the image inside the disk $|w - 1| < 1$ (dashed), since $|g/f| \le 22/24$ there; it never winds around $0$, so $f + g$ inherits the winding number $3$ of $3z^3$.*
@@ -103,7 +103,7 @@ Rouché's theorem turns the argument principle into a practical tool for locatin
 ^ex-94-1
 
 > [!example] Example §94.2: The Fundamental Theorem of Algebra
-> Rouché's theorem gives another proof of the fundamental theorem of algebra ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]], Theorem 2), in a stronger form: a polynomial
+> Rouché's theorem gives another proof of the fundamental theorem of algebra ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|Theorem §58.2]]), in a stronger form: a polynomial
 >
 > $$
 > P(z) = a_0 + a_1z + a_2z^2 + \cdots + a_nz^n \qquad (a_n \ne 0) \qquad (3)
@@ -131,7 +131,7 @@ Rouché's theorem turns the argument principle into a practical tool for locatin
 >
 > For such $R$, Rouché's theorem says that $f$ and $f + g = P$ have the same number of zeros in $|z| < R$, namely $n$ (the zero of order $n$ of $a_nz^n$ at the origin). This holds for every $R > R^* = \max\big(1, (|a_0| + \cdots + |a_{n-1}|)/|a_n|\big)$. (B&C leaves the last step implicit; here it is.) Fix $R_1 > R^*$; $P$ has $n$ zeros in $|z| < R_1$. If $z_1$ is any zero of $P$, choose $R > \max(R_1, |z_1|)$: the disk $|z| < R$ also contains exactly $n$ zeros, and these include the $n$ zeros in $|z| < R_1$, so they are the same zeros and $z_1$ is one of them. Hence $P$ has precisely $n$ zeros in the plane, all in $|z| \le R^*$.
 >
-> Liouville's theorem ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]]) only ensured at least one zero; Rouché's theorem gives $n$ directly, and also the bound (4) for their location.
+> Liouville's theorem ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Theorem §58.1]]) only ensured at least one zero; Rouché's theorem gives $n$ directly, and also the bound (4) for their location.
 >
 > *B&C: Sec. 94, Example 2*
 

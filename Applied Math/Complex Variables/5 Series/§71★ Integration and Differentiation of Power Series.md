@@ -54,7 +54,7 @@ be a power series with circle of convergence $|z - z_0| = R$, so that $S$ is con
 > |\rho_N(z)| < \varepsilon \qquad\text{whenever}\qquad N > N_\varepsilon .
 > $$
 >
-> Since $N_\varepsilon$ is independent of $z$, the ML-inequality ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]]) gives
+> Since $N_\varepsilon$ is independent of $z$, the ML-inequality ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]) gives
 >
 > $$
 > \Big|\int_C g(z)\rho_N(z)\,dz\Big| \le M\varepsilon L \qquad\text{whenever}\qquad N > N_\varepsilon ;
@@ -70,7 +70,7 @@ be a power series with circle of convergence $|z - z_0| = R$, so that $S$ is con
 
 ^pf-71-1
 
-*Uses:* [[§70★ Continuity of Sums of Power Series#^thm-70-1|§70.1]], [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|§69.3]], [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (ML-inequality), [[§44 Contour Integrals|§44]] (existence and linearity of contour integrals)
+*Uses:* [[§70★ Continuity of Sums of Power Series#^thm-70-1|§70.1]], [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|§69.3]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§44 Contour Integrals#^thm-44-2|§44.2]] (existence and linearity of contour integrals)
 
 > [!theorem] Corollary §71.2: The Sum of a Power Series Is Analytic
 > The sum $S(z)$ of power series (1) is analytic at each point $z$ interior to the circle of convergence of that series.
@@ -86,11 +86,11 @@ be a power series with circle of convergence $|z - z_0| = R$, so that $S$ is con
 > \int_C(z - z_0)^n\,dz = 0 \qquad (n = 0, 1, 2, \ldots)
 > $$
 >
-> (it has the antiderivative $(z - z_0)^{n+1}/(n + 1)$, [[§48 Antiderivatives|§48]]). By equation (2), then, $\int_C S(z)\,dz = 0$ for every such contour. Since $S$ is continuous in the disk ([[§70★ Continuity of Sums of Power Series#^thm-70-1|Theorem §70.1]]), Morera's theorem ([[§57 Some Consequences of the Extension|§57]]) shows that $S$ is analytic throughout the disk.
+> (it has the antiderivative $(z - z_0)^{n+1}/(n + 1)$, [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]). By equation (2), then, $\int_C S(z)\,dz = 0$ for every such contour. Since $S$ is continuous in the disk ([[§70★ Continuity of Sums of Power Series#^thm-70-1|Theorem §70.1]]), Morera's theorem ([[§57 Some Consequences of the Extension#^thm-57-3|Theorem §57.3]]) shows that $S$ is analytic throughout the disk.
 
 ^pf-71-2
 
-*Uses:* [[§71★ Integration and Differentiation of Power Series#^thm-71-1|§71.1]], [[§70★ Continuity of Sums of Power Series#^thm-70-1|§70.1]], [[§48 Antiderivatives|§48]], [[§57 Some Consequences of the Extension|§57]] (Morera's theorem)
+*Uses:* [[§71★ Integration and Differentiation of Power Series#^thm-71-1|§71.1]], [[§70★ Continuity of Sums of Power Series#^thm-70-1|§70.1]], [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49.1]], [[§57 Some Consequences of the Extension#^thm-57-3|§57.3]] (Morera's theorem)
 
 The corollary is often helpful in establishing the analyticity of functions and in evaluating limits ([[§71★ Integration and Differentiation of Power Series#^ex-71-1|Example §71.1]]). It also settles a question left open in [[§62 Taylor Series#^rem-62-1|§62]]. By Taylor's theorem, the Taylor series of $f$ about $z_0$ converges to $f(z)$ inside the circle centered at $z_0$ and passing through the nearest point $z_1$ at which $f$ fails to be analytic. No larger circle has this property.
 
@@ -139,7 +139,7 @@ The corollary is often helpful in establishing the analyticity of functions and 
 > \int_C g(s)S(s)\,ds = \sum_{n=0}^{\infty}a_n\int_C g(s)(s - z_0)^n\,ds . \qquad (8)
 > $$
 >
-> Now $S$ is analytic inside and on $C$ ([[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]), so the integral representation for derivatives ([[§55 An Extension of the Cauchy Integral Formula|§55]]) gives
+> Now $S$ is analytic inside and on $C$ ([[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]), so the integral representation for derivatives ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]]) gives
 >
 > $$
 > \int_C g(s)S(s)\,ds = \frac{1}{2\pi i}\int_C\frac{S(s)\,ds}{(s - z)^2} = S'(z) .
@@ -155,7 +155,7 @@ The corollary is often helpful in establishing the analyticity of functions and 
 
 ^pf-71-4
 
-*Uses:* [[§71★ Integration and Differentiation of Power Series#^thm-71-1|§71.1]], [[§71★ Integration and Differentiation of Power Series#^cor-71-2|§71.2]], [[§55 An Extension of the Cauchy Integral Formula|§55]]
+*Uses:* [[§71★ Integration and Differentiation of Power Series#^thm-71-1|§71.1]], [[§71★ Integration and Differentiation of Power Series#^cor-71-2|§71.2]], [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|§56.1]]
 
 Since $S'$ is again analytic in the disk, the theorem can be applied repeatedly: $S$ has derivatives of all orders there, each given by a term-by-term differentiated series ([[§72★ Uniqueness of Series Representations#^ex-72-3|Example §72.3]]).
 
@@ -260,7 +260,7 @@ Since $S'$ is again analytic in the disk, the theorem can be applied repeatedly:
 > \int_C\frac{dw}{w} = \sum_{n=0}^{\infty}(-1)^n\int_C(w - 1)^n\,dw = \sum_{n=0}^{\infty}(-1)^n\frac{(z - 1)^{n+1}}{n + 1} .
 > $$
 >
-> The disk $|w - 1| < 1$ lies in the right half plane, away from the branch cut of $\operatorname{Log}w$, and $\operatorname{Log}w$ is an antiderivative of $1/w$ there, so the left side is $\operatorname{Log}z - \operatorname{Log}1 = \operatorname{Log}z$ ([[§48 Antiderivatives|§48]]). Replacing $n$ by $n - 1$,
+> The disk $|w - 1| < 1$ lies in the right half plane, away from the branch cut of $\operatorname{Log}w$, and $\operatorname{Log}w$ is an antiderivative of $1/w$ there, so the left side is $\operatorname{Log}z - \operatorname{Log}1 = \operatorname{Log}z$ ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]). Replacing $n$ by $n - 1$,
 >
 > $$
 > \operatorname{Log}z = \sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}(z - 1)^n \qquad (|z - 1| < 1) .

@@ -15,7 +15,7 @@ Euler's formula expresses $\sin x$ and $\cos x$ through $e^{\pm ix}$, and the sa
 
 ## Definition and Derivatives
 
-Euler's formula ([[§7 Exponential Form|§7]]) gives $e^{ix} = \cos x + i\sin x$ and $e^{-ix} = \cos x - i\sin x$ for every real $x$. Subtracting and adding, $e^{ix} - e^{-ix} = 2i\sin x$ and $e^{ix} + e^{-ix} = 2\cos x$, that is,
+Euler's formula ([[§7 Exponential Form#^def-7-2|Definition §7.2]]) gives $e^{ix} = \cos x + i\sin x$ and $e^{-ix} = \cos x - i\sin x$ for every real $x$. Subtracting and adding, $e^{ix} - e^{-ix} = 2i\sin x$ and $e^{ix} + e^{-ix} = 2\cos x$, that is,
 
 $$
 \sin x = \frac{e^{ix} - e^{-ix}}{2i} \qquad\text{and}\qquad \cos x = \frac{e^{ix} + e^{-ix}}{2} .
@@ -35,7 +35,7 @@ $$
 ^def-37-1
 
 > [!remark]- Connections
-> - The formulas for real $x$ are Euler's formula solved for $\cos$ and $\sin$: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]], [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]]. The Maclaurin series $\sin x = \sum (-1)^nx^{2n+1}/(2n+1)!$ and $\cos x = \sum (-1)^nx^{2n}/(2n)!$ ([[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]]) remain valid for all complex $z$, as the Maclaurin series of these entire functions, [[§64 Examples (Proof of Taylor's Theorem)|§64]].
+> - The formulas for real $x$ are Euler's formula solved for $\cos$ and $\sin$: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]], [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]]. The Maclaurin series $\sin x = \sum (-1)^nx^{2n+1}/(2n+1)!$ and $\cos x = \sum (-1)^nx^{2n}/(2n)!$ ([[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]]) remain valid for all complex $z$, as the Maclaurin series of these entire functions, [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]].
 
 > [!theorem] Theorem §37.1: sin z and cos z Are Entire
 > The functions $\sin z$ and $\cos z$ are entire, and
@@ -49,13 +49,13 @@ $$
 ^thm-37-1
 
 > [!proof]+ Proof
-> The functions $e^{iz}$ and $e^{-iz}$ are entire, as compositions of the entire functions $\pm iz$ and $e^z$ ([[§30 The Exponential Function#^thm-30-3|Theorem §30.3]]), and by the chain rule ([[§20 Rules for Differentiation|§20]])
+> The functions $e^{iz}$ and $e^{-iz}$ are entire, as compositions of the entire functions $\pm iz$ and $e^z$ ([[§30 The Exponential Function#^thm-30-3|Theorem §30.3]]), and by the chain rule ([[§20 Rules for Differentiation#^thm-20-4|Theorem §20.4]])
 >
 > $$
 > \frac{d}{dz}e^{iz} = ie^{iz} \qquad\text{and}\qquad \frac{d}{dz}e^{-iz} = -ie^{-iz} .
 > $$
 >
-> By (1), $\sin z$ and $\cos z$ are linear combinations of these, hence entire ([[§26 Further Examples (Analytic Functions)|§26]], Exercise 3), and differentiating (1) term by term,
+> By (1), $\sin z$ and $\cos z$ are linear combinations of these, hence entire ([[§20 Rules for Differentiation#^thm-20-1|Theorem §20.1]], [[§25 Analytic Functions#^prop-25-1|Proposition §25.1]]), and differentiating (1) term by term,
 >
 > $$
 > \frac{d}{dz}\sin z = \frac{ie^{iz} + ie^{-iz}}{2i} = \frac{e^{iz} + e^{-iz}}{2} = \cos z, \qquad \frac{d}{dz}\cos z = \frac{ie^{iz} - ie^{-iz}}{2} = -\frac{e^{iz} - e^{-iz}}{2i} = -\sin z ,
@@ -65,7 +65,7 @@ $$
 
 ^pf-37-1
 
-*Uses:* [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Def. §37.1]], [[§30 The Exponential Function#^thm-30-3|§30.3]], [[§20 Rules for Differentiation|§20]] (chain rule, linearity)
+*Uses:* [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Def. §37.1]], [[§30 The Exponential Function#^thm-30-3|§30.3]], [[§20 Rules for Differentiation#^thm-20-1|§20.1]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]], [[§25 Analytic Functions#^prop-25-1|§25.1]]
 
 > [!theorem] Proposition §37.2: Parity and Euler's Formula
 > For every $z$,
@@ -244,11 +244,11 @@ $$
 > \cos(x + iy) = \cos x\cos(iy) - \sin x\sin(iy) = \cos x\cosh y - i\sin x\sinh y .
 > $$
 >
-> (Once (13) is known, (14) also follows from [[§21 Cauchy–Riemann Equations|§21]]: where $f = u + iv$ is differentiable, $f'(z) = u_x + iv_x$. With $f = \sin z$, $u = \sin x\cosh y$ and $v = \cos x\sinh y$, so $\cos z = f'(z) = \cos x\cosh y - i\sin x\sinh y$.)
+> (Once (13) is known, (14) also follows from [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]: where $f = u + iv$ is differentiable, $f'(z) = u_x + iv_x$. With $f = \sin z$, $u = \sin x\cosh y$ and $v = \cos x\sinh y$, so $\cos z = f'(z) = \cos x\cosh y - i\sin x\sinh y$.)
 
 ^pf-37-5
 
-*Uses:* [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Def. §37.1]], [[§37 The Trigonometric Functions sin z and cos z#^thm-37-3|§37.3]], [[§37 The Trigonometric Functions sin z and cos z#^thm-37-1|§37.1]], [[§21 Cauchy–Riemann Equations|§21]] ($f' = u_x + iv_x$)
+*Uses:* [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Def. §37.1]], [[§37 The Trigonometric Functions sin z and cos z#^thm-37-3|§37.3]], [[§37 The Trigonometric Functions sin z and cos z#^thm-37-1|§37.1]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]]
 
 ![[m342-37-1.svg]]
 *The map $w = \sin z$ on the half strip $-\frac\pi2 \le x \le \frac\pi2$, $y \ge 0$, computed from (13): $u = \sin x\cosh y$, $v = \cos x\sinh y$. A horizontal segment $y = b > 0$ (red; $b = 0.5, 1, 1.5$) goes to the upper half of the ellipse $u^2/\cosh^2b + v^2/\sinh^2b = 1$; a vertical half line $x = a$ (blue; $a = 0, \pm\frac\pi6, \pm\frac\pi3, \pm\frac\pi2$) goes to a branch of the hyperbola $u^2/\sin^2a - v^2/\cos^2a = 1$ (for $a = 0$ the positive $v$ axis, for $a = \pm\frac\pi2$ the rays $u \ge 1$ and $u \le -1$). The ellipses grow like $\cosh b$: $\sin z$ is unbounded. The mapping is studied in [[§104★ Mapping Vertical Line Segments by w = sin z|§104★]] and [[§105★ Mapping Horizontal Line Segments by w = sin z|§105★]].*
@@ -264,7 +264,7 @@ $$
 > |\cos z|^2 = \cos^2x + \sinh^2y . \qquad (16)
 > $$
 >
-> Consequently $\sin z$ and $\cos z$ are not bounded in the complex plane ([[§18 Continuity|§18]]), whereas $|\sin x| \le 1$ and $|\cos x| \le 1$ for all real $x$.
+> Consequently $\sin z$ and $\cos z$ are not bounded in the complex plane ([[§18 Continuity#^def-18-2|Definition §18.2]]), whereas $|\sin x| \le 1$ and $|\cos x| \le 1$ for all real $x$.
 >
 > *B&C: Sec. 37, Equations (15) and (16) (derived in Sec. 38, Exercise 7)*
 
@@ -312,7 +312,7 @@ $$
 >
 > Subtracting, the mixed terms $a_1b_2 + b_1a_2$ cancel and $\cos z_1\cos z_2 - \sin z_1\sin z_2 = \frac{2a_1a_2 + 2b_1b_2}{4} = \cos(z_1 + z_2)$.
 >
-> **(c)** A third proof of (9), by the uniqueness of analytic continuation: $f(z) = \sin^2z + \cos^2z - 1$ is entire and vanishes on the $x$ axis (the identity of calculus), so by the lemma of [[§28★ Uniquely Determined Analytic Functions|§28★]] it vanishes everywhere.
+> **(c)** A third proof of (9), by the uniqueness of analytic continuation: $f(z) = \sin^2z + \cos^2z - 1$ is entire and vanishes on the $x$ axis (the identity of calculus), so by [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1]] it vanishes everywhere (compare [[§28★ Uniquely Determined Analytic Functions#^ex-28-3|Example §28.3]]).
 >
 > *B&C: Sec. 38, Exercise 4; Source: 342 HW 4, Problem 2(a), (b)*
 
@@ -348,7 +348,7 @@ $$
 >
 > In particular $|\sin z| \ge |\sinh y| \to \infty$ as $|y| \to \infty$. For instance, any $M$ is exceeded at $z = iy$ with $\sinh y > M$, say $y = \ln(2M + 1)$, where $\sinh y = \frac12\big(2M + 1 - \frac{1}{2M + 1}\big) > M$. Likewise (15) gives $|\sin z| \ge |\sin x|$: off the real axis $|\sin z|$ only gets larger.
 >
-> Liouville's theorem gives the same conclusion without computation: a bounded entire function is constant ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]]), and $\sin z$ is entire and not constant.
+> Liouville's theorem gives the same conclusion without computation: a bounded entire function is constant ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Theorem §58.1]]), and $\sin z$ is entire and not constant.
 >
 > *B&C: Sec. 38, Exercises 8(a) and 9(a); Source: 342 practice final (Fall 2009), Q1(b)*
 

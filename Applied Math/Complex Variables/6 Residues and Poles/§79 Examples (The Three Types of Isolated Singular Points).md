@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§78 The Three Types of Isolated Singular Points]] · ↑ [[· 6 Residues and Poles]] · [[§80 Residues at Poles]] →
 
-*Brown–Churchill, Section 79 · MAT 342 HW 11, Practice Final (Spring 2005).*
+*Brown–Churchill, Section 79 · MAT 342 HW 11, Practice Final (Spring 2005), Sample Final (Fall 1999).*
 
 This section illustrates the three types of isolated singular points of [[§78 The Three Types of Isolated Singular Points|§78]] by writing out Laurent series: a removable singular point, where the principal part vanishes; the essential singular point of $e^{1/z}$, where it never stops; and poles of orders $1$ and $2$. Two observations point ahead to [[§84 Behavior of Functions Near Isolated Singular Points|§84]]: near a pole the function tends to $\infty$, while near an essential singular point it takes nearly every value infinitely often (Picard's theorem). The remaining sections of the chapter develop faster methods for recognizing poles and computing their residues.
 
@@ -48,7 +48,7 @@ The function $e^{1/z}$ of the next example illustrates an important result about
 B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. III, Sec. 51, for a proof. The weaker Casorati–Weierstrass theorem, that the values come arbitrarily close to every complex number, is proved in [[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-3|Theorem §84.3]].
 
 > [!example] Example §79.2: The Essential Singular Point of e^(1/z)
-> From the Laurent series ([[§68 Examples (Proof of Laurent's Theorem)|§68]], Example 3)
+> From the Laurent series ([[§68 Examples (Proof of Laurent's Theorem)#^ex-68-4|Example §68.4]])
 >
 > $$
 > e^{1/z} = \sum_{n=0}^{\infty}\frac{1}{n!}\cdot\frac{1}{z^n} = 1 + \frac{1}{1!}\cdot\frac1z + \frac{1}{2!}\cdot\frac{1}{z^2} + \cdots \qquad (0 < |z| < \infty), \qquad (2)
@@ -56,7 +56,7 @@ B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. II
 >
 > every $b_n = 1/n!$ is nonzero, so $e^{1/z}$ has an essential singular point at $z_0 = 0$, where the residue $b_1$ is $1$.
 >
-> **Picard's theorem in action.** $e^{1/z}$ assumes the value $-1$ an infinite number of times in each neighborhood of the origin. Indeed, $e^w = -1$ exactly when $w = (2n + 1)\pi i$ ($n = 0, \pm1, \pm2, \ldots$) ([[§30 The Exponential Function|§30]]), so $e^{1/z} = -1$ when
+> **Picard's theorem in action.** $e^{1/z}$ assumes the value $-1$ an infinite number of times in each neighborhood of the origin. Indeed, $e^w = -1$ exactly when $w = (2n + 1)\pi i$ ($n = 0, \pm1, \pm2, \ldots$) ([[§31 The Logarithmic Function#^thm-31-1|Theorem §31.1]]), so $e^{1/z} = -1$ when
 >
 > $$
 > z = \frac{1}{(2n + 1)\pi i}\cdot\frac ii = -\frac{i}{(2n + 1)\pi} \qquad (n = 0, \pm1, \pm2, \ldots) .
@@ -175,9 +175,7 @@ B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. II
 > \tan z = z + \frac13z^3 + \frac{2}{15}z^5 + \cdots \quad\text{(terms of order at least seven)},
 > $$
 >
-> **(a)** evaluate $\tan^{(5)}(0)$; **(b)** find the principal part at $z = 0$ of $f(z) = \dfrac{(1 + z)\tan z}{z^5}$; **(c)** find all the singularities of $f$ in the disk $D = \{|z| < 4\}$ and their type; **(d)** find the residue at each of them.
->
-> **(a)** The coefficient of $z^5$ in a Taylor series is $\tan^{(5)}(0)/5!$ ([[§62 Taylor Series#^def-62-1|Definition §62.1]] and [[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]]), so $\tan^{(5)}(0) = 5!\cdot\frac{2}{15} = 16$.
+> **(b)** find the principal part at $z = 0$ of $f(z) = \dfrac{(1 + z)\tan z}{z^5}$; **(c)** find all the singularities of $f$ in the disk $D = \{|z| < 4\}$ and their type; **(d)** find the residue at each of them. (Part (a) of the problem, $\tan^{(5)}(0) = 5!\cdot\frac{2}{15} = 16$, is worked in [[§64 Examples (Proof of Taylor's Theorem)#^ex-64-5|Example §64.5]](b).)
 >
 > **(b)** Multiplying out,
 >
@@ -191,7 +189,7 @@ B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. II
 > \frac{1}{z^4} + \frac{1}{z^3} + \frac13\cdot\frac{1}{z^2} + \frac13\cdot\frac1z .
 > $$
 >
-> **(c)** $f(z) = \dfrac{(1 + z)\sin z}{z^5\cos z}$ is analytic except at $z = 0$ and at the zeros $z = \frac\pi2 + k\pi$ of $\cos z$ ([[§38 Zeros and Singularities of Trigonometric Functions|§38]]). In $|z| < 4$ these are $\pm\frac\pi2$ only, since $\frac{3\pi}{2} \approx 4.71 > 4$. By (b), $z = 0$ is a **pole of order $4$**. At $z = \pm\frac\pi2$ the numerator $(1 + z)\sin z/z^5$ is analytic and nonzero ($1 \pm \frac\pi2 \ne 0$, $\sin(\pm\frac\pi2) = \pm1$), while $\cos z$ has a simple zero ($\frac{d}{dz}\cos z = -\sin z = \mp1 \ne 0$); so $\pm\frac\pi2$ are **simple poles** ([[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]]).
+> **(c)** $f(z) = \dfrac{(1 + z)\sin z}{z^5\cos z}$ is analytic except at $z = 0$ and at the zeros $z = \frac\pi2 + k\pi$ of $\cos z$ ([[§38 Zeros and Singularities of Trigonometric Functions#^thm-38-1|Theorem §38.1]]). In $|z| < 4$ these are $\pm\frac\pi2$ only, since $\frac{3\pi}{2} \approx 4.71 > 4$. By (b), $z = 0$ is a **pole of order $4$**. At $z = \pm\frac\pi2$ the numerator $(1 + z)\sin z/z^5$ is analytic and nonzero ($1 \pm \frac\pi2 \ne 0$, $\sin(\pm\frac\pi2) = \pm1$), while $\cos z$ has a simple zero ($\frac{d}{dz}\cos z = -\sin z = \mp1 \ne 0$); so $\pm\frac\pi2$ are **simple poles** ([[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]]).
 >
 > **(d)** At $0$ the residue is the coefficient of $1/z$ in (b): $\operatorname{Res}_{z=0} f = \frac13$. At the simple poles, with $p(z) = (1 + z)\sin z/z^5$ and $q(z) = \cos z$, the residue is $p/q'$ ([[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]]):
 >
@@ -200,7 +198,19 @@ B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. II
 > \operatorname{Res}_{z=-\pi/2} f = \frac{(1 - \frac\pi2)(-1)/(-\frac\pi2)^5}{-\sin(-\frac\pi2)} = \frac{1 - \frac\pi2}{(\frac\pi2)^5} = \frac{16(2 - \pi)}{\pi^5} .
 > $$
 >
-> *Source: 342 practice final (Spring 2005), Q1*
+> **Variant with $\cot z$.** Given $\cot z = \frac1z - \frac z3 - \frac{z^3}{45} - \frac{2z^5}{945} - \cdots$, the function $f(z) = \dfrac{(1 + z)\cot z}{z^4}$ in the disk $|z| < 5$ is handled the same way. Multiplying out, $f(z) = (1 + z)\big(z^{-5} - \frac13z^{-3} - \frac{1}{45}z^{-1} - \cdots\big)$, with principal part
+>
+> $$
+> \frac{1}{z^5} + \frac{1}{z^4} - \frac13\cdot\frac{1}{z^3} - \frac13\cdot\frac{1}{z^2} - \frac{1}{45}\cdot\frac1z ,
+> $$
+>
+> so $0$ is a **pole of order $5$** with residue $-\frac{1}{45}$. The other singular points in the disk are the zeros $\pm\pi$ of $\sin z$ ($2\pi > 5$), **simple poles** since $p(z) = (1 + z)\cos z/z^4$ is nonzero there and $q(z) = \sin z$ has $q'(\pm\pi) = -1$. By [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]],
+>
+> $$
+> \operatorname{Res}_{z=\pi} f = \frac{(1 + \pi)\cos\pi/\pi^4}{\cos\pi} = \frac{1 + \pi}{\pi^4}, \qquad \operatorname{Res}_{z=-\pi} f = \frac{(1 - \pi)\cos(-\pi)/\pi^4}{\cos(-\pi)} = \frac{1 - \pi}{\pi^4} .
+> $$
+>
+> *Source: 342 practice final (Spring 2005), Q1(b)–(d); 342 sample final (Fall 1999), Q1*
 
 ^ex-79-5
 

@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra]] · ↑ [[· 4 Integrals]] · [[§60 Convergence of Sequences]] →
 
-*Brown–Churchill, Section 59 · MAT 342 HW 8 · Practice Finals (Fall 2009, Spring 2005, Fall 1999).*
+*Brown–Churchill, Section 59 · MAT 342 HW 8 · Practice Finals (Fall 2009, Spring 2005).*
 
 The Cauchy integral formula on a circle says that the value of an analytic function at the center is the average of its values on the circle (Gauss's mean value theorem). An average cannot exceed its terms unless all are equal, so $|f|$ cannot have a local maximum at a point unless $f$ is constant near it; a chain of overlapping disks spreads this over the whole domain. The result is the maximum modulus principle: a nonconstant analytic function on a closed bounded region takes its largest modulus only on the boundary, and the same holds for its real and imaginary parts, which are harmonic. This is the complex-variable proof of the maximum principle for potentials and steady temperatures.
 
@@ -234,15 +234,13 @@ Properties of *minimum* values of $|f(z)|$ and $u(x, y)$ are similar; they are t
 
 ^ex-59-3
 
-> [!example] Example §59.4: Two True-or-False Questions
-> **(a)** *If $f$ is a non-constant entire function and $|f(z)| \le 2$ for every $z$ on the unit circle $|z| = 1$, then $f$ must map the unit disk $|z| < 1$ into the disk $|w| < 2$.*
+> [!example] Example §59.4: Values Inside the Unit Disk
+> **True or false:** *if $f$ is a non-constant entire function and $|f(z)| \le 2$ for every $z$ on the unit circle $|z| = 1$, then $f$ must map the unit disk $|z| < 1$ into the disk $|w| < 2$.*
 >
 > **True.** Apply Corollary §59.4 on the closed unit disk $R$. The function $f$ is continuous on $R$ and analytic in the interior; it is not constant there, since an entire function that is constant on an open disk is constant in the whole plane ([[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1]]). So the maximum $M$ of $|f|$ on $R$ is attained only on the circle, where $|f| \le 2$; hence $M \le 2$, and every interior point has $|f(z)| < M \le 2$.
 >
-> **(b)** *There is a function $f(z)$, analytic in the disk $D = \{|z| < 1\}$, such that $|f(z)|^2 = 4 - |z|^2$ for all $z$ in $D$.*
->
-> **False.** Such an $f$ would have $|f(z)| = \sqrt{4 - |z|^2} \le 2 = |f(0)|$ for all $z$ in $D$, so $|f|$ would have a maximum value in the domain $D$, at $z = 0$. By the maximum modulus principle $f$ would be constant, so $|f|$ would be constant; but $\sqrt{4 - |z|^2}$ is not. ([[§27★ Harmonic Functions#^ex-27-5|Example §27.5]] gives a second proof, comparing the Laplacians of $|f|^2$ and $4 - |z|^2$.)
->
-> *Source: 342 practice final (Spring 2005), Q8(c); 342 practice final (Fall 1999), Q7(b)*
+> *Source: 342 practice final (Spring 2005), Q8(c)*
 
 ^ex-59-4
+
+The maximum modulus principle also settles a final exam question solved in [[§27★ Harmonic Functions#^ex-27-5|Example §27.5]]: no $f$ analytic in $|z| < 1$ has $|f(z)|^2 = 4 - |z|^2$, since $|f|$ would have a maximum at the interior point $0$, forcing $f$, and so $4 - |z|^2$, to be constant.

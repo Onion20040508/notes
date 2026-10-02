@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 34 · MAT 342 HW 4.*
 
-The laws $\log(z_1z_2) = \log z_1 + \log z_2$ and $\log(z_1/z_2) = \log z_1 - \log z_2$ hold for the multiple-valued logarithm, read as statements about sets of values exactly like $\arg(z_1z_2) = \arg z_1 + \arg z_2$ in [[§9 Arguments of Products and Quotients|§9]]. With principal values they can fail, by $\pm 2\pi i$, and the error is controlled exactly. The section also expresses integer powers and $n$th roots through the logarithm, $z^n = e^{n\log z}$ and $z^{1/n} = \exp\big(\frac1n\log z\big)$, which is what suggests the definition $z^c = e^{c\log z}$ of the general power in [[§35 The Power Function|§35]].
+The laws $\log(z_1z_2) = \log z_1 + \log z_2$ and $\log(z_1/z_2) = \log z_1 - \log z_2$ hold for the multiple-valued logarithm, read as statements about sets of values exactly like $\arg(z_1z_2) = \arg z_1 + \arg z_2$ in [[§9 Arguments of Products and Quotients#^thm-9-1|Theorem §9.1]]. With principal values they can fail, by $\pm 2\pi i$, and the error is controlled exactly. The section also expresses integer powers and $n$th roots through the logarithm, $z^n = e^{n\log z}$ and $z^{1/n} = \exp\big(\frac1n\log z\big)$, which is what suggests the definition $z^c = e^{c\log z}$ of the general power, [[§35 The Power Function#^def-35-1|Definition §35.1]].
 
 ## Products and Quotients
 
@@ -28,7 +28,7 @@ The laws $\log(z_1z_2) = \log z_1 + \log z_2$ and $\log(z_1/z_2) = \log z_1 - \l
 > \arg(z_1z_2) = \arg z_1 + \arg z_2 \qquad (2)
 > $$
 >
-> of [[§9 Arguments of Products and Quotients|§9]]: if values of two of the three logarithms are specified, then there is a value of the third such that (1) holds.
+> of [[§9 Arguments of Products and Quotients#^thm-9-1|Theorem §9.1]]: if values of two of the three logarithms are specified, then there is a value of the third such that (1) holds.
 >
 > *B&C: Sec. 34, Equation (1)*
 
@@ -51,7 +51,7 @@ The laws $\log(z_1z_2) = \log z_1 + \log z_2$ and $\log(z_1/z_2) = \log z_1 - \l
 
 ^pf-34-1
 
-*Uses:* [[§31 The Logarithmic Function#^def-31-1|Def. §31.1]], [[§9 Arguments of Products and Quotients|§9]] (equation (2)), [[§5 Inverse Functions and Logarithms#^thm-5-5|Calc Thm. §5.5]] (laws of logarithms)
+*Uses:* [[§31 The Logarithmic Function#^def-31-1|Def. §31.1]], [[§9 Arguments of Products and Quotients#^thm-9-1|§9.1]], [[§5 Inverse Functions and Logarithms#^thm-5-5|Calc Thm. §5.5]] (laws of logarithms)
 
 > [!remark]- Connections
 > - The real law $\ln(xy) = \ln x + \ln y$: [[§5 Inverse Functions and Logarithms#^thm-5-5|Calc Thm. §5.5]], proved rigorously from $\ln x = \int_1^x dt/t$ in [[§121 The Logarithm Defined as an Integral#^thm-121-2|Calc Thm. §121.2]]. Theorem §34.1 is that law for the moduli plus the addition of arguments, [[§53 Complex Numbers#^thm-53-5|235 Thm. §53.5]] (the product has the sum of the arguments, "possibly shifted by $\pm2\pi$").
@@ -70,7 +70,7 @@ The laws $\log(z_1z_2) = \log z_1 + \log z_2$ and $\log(z_1/z_2) = \log z_1 - \l
 ^thm-34-2
 
 > [!proof]+ Proof
-> B&C leaves this to the exercises (Exercise 2(a)); here is the argument. Since $|z_1/z_2| = |z_1|/|z_2|$, $\ln|z_1/z_2| = \ln|z_1| - \ln|z_2|$. By [[§9 Arguments of Products and Quotients|§9]], $\arg(z_1/z_2) = \arg z_1 - \arg z_2$, in the same sense as (2). Hence
+> B&C leaves this to the exercises (Exercise 2(a)); here is the argument. Since $|z_1/z_2| = |z_1|/|z_2|$, $\ln|z_1/z_2| = \ln|z_1| - \ln|z_2|$. By [[§9 Arguments of Products and Quotients#^cor-9-2|Corollary §9.2]], $\arg(z_1/z_2) = \arg z_1 - \arg z_2$, in the same sense as (2). Hence
 >
 > $$
 > \ln\Big|\frac{z_1}{z_2}\Big| + i\arg\Big(\frac{z_1}{z_2}\Big) = \big(\ln|z_1| + i\arg z_1\big) - \big(\ln|z_2| + i\arg z_2\big) ,
@@ -80,7 +80,7 @@ The laws $\log(z_1z_2) = \log z_1 + \log z_2$ and $\log(z_1/z_2) = \log z_1 - \l
 
 ^pf-34-2
 
-*Uses:* [[§31 The Logarithmic Function#^def-31-1|Def. §31.1]], [[§9 Arguments of Products and Quotients|§9]] ($\arg(z_1/z_2) = \arg z_1 - \arg z_2$), [[§34 Some Identities Involving Logarithms#^thm-34-1|§34.1]]
+*Uses:* [[§31 The Logarithmic Function#^def-31-1|Def. §31.1]], [[§9 Arguments of Products and Quotients#^cor-9-2|§9.2]], [[§34 Some Identities Involving Logarithms#^thm-34-1|§34.1]]
 
 > [!example] Example §34.1: z₁ = z₂ = −1
 > Take $z_1 = z_2 = -1$, so $z_1z_2 = 1$. By [[§32 Examples (The Logarithmic Function)#^ex-32-2|Example §32.2]], $\log 1 = 2n\pi i$ and $\log(-1) = (2n + 1)\pi i$ $(n = 0, \pm1, \pm2, \ldots)$.
@@ -112,7 +112,7 @@ The laws $\log(z_1z_2) = \log z_1 + \log z_2$ and $\log(z_1/z_2) = \log z_1 - \l
 > -\frac\pi2 < \Theta_1 < \frac\pi2 \qquad\text{and}\qquad -\frac\pi2 < \Theta_2 < \frac\pi2 .
 > $$
 >
-> The important point is that then $-\pi < \Theta_1 + \Theta_2 < \pi$. Since $\Theta_1 + \Theta_2$ is an argument of $z_1z_2$ ([[§9 Arguments of Products and Quotients|§9]]) and lies in $(-\pi, \pi]$, it is the principal one: $\operatorname{Arg}(z_1z_2) = \Theta_1 + \Theta_2$. Consequently
+> The important point is that then $-\pi < \Theta_1 + \Theta_2 < \pi$. Since $\Theta_1 + \Theta_2$ is an argument of $z_1z_2$ ([[§9 Arguments of Products and Quotients#^thm-9-1|Theorem §9.1]]) and lies in $(-\pi, \pi]$, it is the principal one: $\operatorname{Arg}(z_1z_2) = \Theta_1 + \Theta_2$. Consequently
 >
 > $$
 > \operatorname{Log}(z_1z_2) = \ln|z_1z_2| + i\operatorname{Arg}(z_1z_2) = \ln(r_1r_2) + i(\Theta_1 + \Theta_2) = (\ln r_1 + i\Theta_1) + (\ln r_2 + i\Theta_2) = \operatorname{Log} z_1 + \operatorname{Log} z_2 .
@@ -157,7 +157,7 @@ The laws $\log(z_1z_2) = \log z_1 + \log z_2$ and $\log(z_1/z_2) = \log z_1 - \l
 
 ## Integer Powers and Roots
 
-Two further properties of $\log z$ prepare the power function of [[§35 The Power Function|§35]].
+Two further properties of $\log z$ prepare the power function of [[§35 The Power Function#^def-35-1|Definition §35.1]].
 
 > [!theorem] Proposition §34.3: Integer Powers
 > If $z$ is a nonzero complex number, then
@@ -179,11 +179,11 @@ Two further properties of $\log z$ prepare the power function of [[§35 The Powe
 > e^{n\log z} = e^{n\ln r}e^{in\theta} = r^ne^{in\theta} ,
 > $$
 >
-> since $e^{n\ln r} = (e^{\ln r})^n = r^n$ for real $r > 0$. On the other hand $z^n = (re^{i\theta})^n = r^ne^{in\theta}$ for every integer $n$ ([[§8 Products and Powers in Exponential Form|§8]]). The two sides agree.
+> since $e^{n\ln r} = (e^{\ln r})^n = r^n$ for real $r > 0$. On the other hand $z^n = (re^{i\theta})^n = r^ne^{in\theta}$ for every integer $n$ ([[§8 Products and Powers in Exponential Form#^thm-8-2|Theorem §8.2]]). The two sides agree.
 
 ^pf-34-3
 
-*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§8 Products and Powers in Exponential Form|§8]] ($z^n = r^ne^{in\theta}$), [[§121 The Logarithm Defined as an Integral#^thm-121-6|Calc Thm. §121.6]]
+*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§8 Products and Powers in Exponential Form#^thm-8-2|§8.2]], [[§121 The Logarithm Defined as an Integral#^thm-121-6|Calc Thm. §121.6]]
 
 > [!theorem] Proposition §34.4: Roots
 > If $z \ne 0$, then
@@ -199,7 +199,7 @@ Two further properties of $\log z$ prepare the power function of [[§35 The Powe
 ^prop-34-4
 
 > [!proof]+ Proof
-> Write $z = r\exp(i\Theta)$, where $\Theta = \operatorname{Arg} z$. By the definition (2) of $\log z$ in [[§31 The Logarithmic Function#^def-31-1|§31]],
+> Write $z = r\exp(i\Theta)$, where $\Theta = \operatorname{Arg} z$. By the definition (2) of $\log z$, [[§31 The Logarithmic Function#^def-31-1|Definition §31.1]],
 >
 > $$
 > \exp\Big(\frac1n\log z\Big) = \exp\Big[\frac1n\ln r + \frac{i(\Theta + 2k\pi)}{n}\Big] \qquad (k = 0, \pm1, \pm2, \ldots) .
@@ -211,9 +211,9 @@ Two further properties of $\log z$ prepare the power function of [[§35 The Powe
 > \exp\Big(\frac1n\log z\Big) = \sqrt[n]{r}\exp\Big[i\Big(\frac\Theta n + \frac{2k\pi}{n}\Big)\Big] \qquad (k = 0, \pm1, \pm2, \ldots) . \qquad (7)
 > $$
 >
-> The factor $\exp(i2k\pi/n)$ depends only on the remainder of $k$ on division by $n$, and takes distinct values for $k = 0, 1, \ldots, n - 1$; so the right side of (7) has exactly $n$ values. It is the expression for the $n$th roots of $z$ found in [[§10 Roots of Complex Numbers|§10]], so it can be written $z^{1/n}$. This is (6).
+> The factor $\exp(i2k\pi/n)$ depends only on the remainder of $k$ on division by $n$, and takes distinct values for $k = 0, 1, \ldots, n - 1$; so the right side of (7) has exactly $n$ values. It is the expression for the $n$th roots of $z$ found in [[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]], so it can be written $z^{1/n}$. This is (6).
 >
-> **Negative $n$.** (B&C's Exercise 4.) Let $n = -m$ with $m = 1, 2, \ldots$; here $z^{1/n}$ means $(z^{1/m})^{-1}$, the set of reciprocals of the $m$th roots ([[§11 Examples (Roots of Complex Numbers)|§11]], Exercise 9). By [[§30 The Exponential Function#^thm-30-2|Theorem §30.2]], $1/e^w = e^{-w}$, so for each value of $\log z$
+> **Negative $n$.** (B&C's Exercise 4.) Let $n = -m$ with $m = 1, 2, \ldots$; here $z^{1/n}$ means $(z^{1/m})^{-1}$, the set of reciprocals of the $m$th roots (B&C's convention in Sec. 11, Exercise 9, extending [[§10 Roots of Complex Numbers#^def-10-1|Definition §10.1]]). By [[§30 The Exponential Function#^thm-30-2|Theorem §30.2]], $1/e^w = e^{-w}$, so for each value of $\log z$
 >
 > $$
 > \exp\Big(\frac1n\log z\Big) = \exp\Big(-\frac1m\log z\Big) = \Big[\exp\Big(\frac1m\log z\Big)\Big]^{-1} ,
@@ -223,7 +223,7 @@ Two further properties of $\log z$ prepare the power function of [[§35 The Powe
 
 ^pf-34-4
 
-*Uses:* [[§31 The Logarithmic Function#^def-31-1|Def. §31.1]], [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§30 The Exponential Function#^thm-30-2|§30.2]], [[§10 Roots of Complex Numbers|§10]] (formula for the $n$th roots), [[§11 Examples (Roots of Complex Numbers)|§11]] (Exercise 9)
+*Uses:* [[§31 The Logarithmic Function#^def-31-1|Def. §31.1]], [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§30 The Exponential Function#^thm-30-2|§30.2]], [[§10 Roots of Complex Numbers#^thm-10-2|§10.2]], [[§10 Roots of Complex Numbers#^def-10-1|Def. §10.1]]
 
 > [!example] Example §34.4: log(z^1/n) = (1/n) log z
 > Let $z = re^{i\Theta}$ $(-\pi < \Theta \le \pi)$ and let $n$ be a positive integer. Show that the set of values of $\log(z^{1/n})$ is the set of values of $\frac1n\log z$. (For $z = i$, $n = 2$ this is [[§32 Examples (The Logarithmic Function)#^ex-32-4|Example §32.4]](a).)

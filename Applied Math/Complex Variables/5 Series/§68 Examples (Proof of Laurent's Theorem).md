@@ -152,22 +152,17 @@ Laurent coefficients are almost never computed from the integrals of Laurent's t
 > (numerical quadrature on the unit circle gives $0.5416667$).
 >
 > **(c) Spring 2005 and Fall 2002: integrals of $\sin\bar z$ and $e^{\bar z}$.** Let $C$ be the circle $|z| = 1$, counterclockwise.
-> - *A conjugate becomes a reciprocal on the circle.* With $z = e^{i\theta}$ $(0 \le \theta \le 2\pi)$, $\bar z = e^{-i\theta} = 1/z$. By the definition of contour integrals ([[§44 Contour Integrals|§44]]),
->
->   $$
->   \int_C\sin(\bar z)\,dz = \int_0^{2\pi}\sin(e^{-i\theta})\,ie^{i\theta}\,d\theta = \int_0^{2\pi}\sin\Big(\frac{1}{e^{i\theta}}\Big)ie^{i\theta}\,d\theta = \int_C\sin\Big(\frac1z\Big)dz .
->   $$
->
+> - *A conjugate becomes a reciprocal on the circle.* On $C$, $\bar z = e^{-i\theta} = 1/z$, so by the definition of contour integrals $\int_C\sin(\bar z)\,dz = \int_C\sin(1/z)\,dz$; this first part of the exam problem is worked in [[§44 Contour Integrals#^ex-44-4|Example §44.4]](b).
 > - *The Laurent series.* From the Maclaurin series of $\sin z$,
 >
 >   $$
 >   \sin\Big(\frac1z\Big) = \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n + 1)!\,z^{2n+1}} = \frac1z - \frac{1}{3!\,z^3} + \frac{1}{5!\,z^5} - \cdots \qquad (0 < |z| < \infty),
 >   $$
 >
->   with infinitely many negative powers (an essential singular point, [[§78 The Three Types of Isolated Singular Points|§78]]).
+>   with infinitely many negative powers (an essential singular point, [[§78 The Three Types of Isolated Singular Points#^def-78-3|Definition §78.3]]).
 > - *The integral.* $b_1 = 1$, so $\int_C\sin(\bar z)\,dz = \int_C\sin(1/z)\,dz = 2\pi i$.
 >
-> In the Fall 2002 version, $C$ is the circle $|z| = 2$; there $\bar z = 4/z$, so $\int_C e^{\bar z}\,dz = \int_C e^{4/z}\,dz$. The series $e^{4/z} = \sum_{n=0}^{\infty}\frac{4^n}{n!\,z^n}$ $(0 < |z| < \infty)$ has $b_1 = 4$, and the integral is $8\pi i$.
+> In the Fall 2002 version, $C$ is the circle $|z| = 2$; there $\bar z = 4/z$, so $\int_C e^{\bar z}\,dz = \int_C e^{4/z}\,dz$ ([[§44 Contour Integrals#^ex-44-4|Example §44.4]](a)). The series $e^{4/z} = \sum_{n=0}^{\infty}\frac{4^n}{n!\,z^n}$ $(0 < |z| < \infty)$ has $b_1 = 4$, and the integral is $8\pi i$.
 >
 > *B&C: Sec. 68, Example 3; Source: 342 practice final (Spring 2012), Q5; 342 practice final (Spring 2005), Q5; 342 practice final (Fall 2002), Q5*
 
@@ -192,7 +187,7 @@ Laurent coefficients are almost never computed from the integrals of Laurent's t
 > \int_C\frac{dz}{(z - i)^{n+3}} = \begin{cases} 0 & \text{when } n \ne -2, \\ 2\pi i & \text{when } n = -2 , \end{cases}
 > $$
 >
-> which is the familiar integral $\int_C(z - z_0)^{m}\,dz$ ($m = -1$ gives $2\pi i$, every other integer $m$ gives $0$; [[§46 Examples Involving Branch Cuts|§46]], Exercise 13), here read off from a Laurent series instead of computed.
+> which is the familiar integral $\int_C(z - z_0)^{m}\,dz$ ($m = -1$ gives $2\pi i$, every other integer $m$ gives $0$; [[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]]), here read off from a Laurent series instead of computed.
 >
 > *B&C: Sec. 68, Example 4*
 

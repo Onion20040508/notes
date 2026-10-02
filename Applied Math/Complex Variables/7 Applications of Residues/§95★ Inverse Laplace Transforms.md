@@ -58,7 +58,7 @@ $$
 > Let $C_R$ be the semicircle $s = \gamma + Re^{i\theta}$ $(\pi/2 \le \theta \le 3\pi/2)$, let $F$ be continuous on $C_R$ with $|F(s)| \le M_R$ there, and let $t > 0$. Then
 >
 > $$
-> \Big|\int_{C_R} e^{st}F(s)\,ds\Big| < \frac{\pi M_Re^{\gamma t}}{t} .
+> \Big|\int_{C_R} e^{st}F(s)\,ds\Big| \le \frac{\pi M_Re^{\gamma t}}{t} .
 > $$
 >
 > Consequently, if $M_R \to 0$ as $R \to \infty$, then for every $t > 0$
@@ -82,7 +82,7 @@ $$
 
 ^pf-95-1
 
-*Uses:* [[§88★ Jordan's Lemma#^lem-88-1|§88.1]], [[§42 Definite Integrals of Functions w(t)|§42]], [[§44 Contour Integrals|§44]]
+*Uses:* [[§88★ Jordan's Lemma#^lem-88-1|§88.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^lem-47-1|§47.1]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]]
 
 This is Jordan's lemma ([[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]]) turned through a right angle: there $e^{iaz}$ decays in the upper half plane, here $e^{st}$ decays in the left half plane. As there, $M_R \to 0$ suffices; the length $\pi R$ of the semicircle does not enter.
 
@@ -98,11 +98,11 @@ This is Jordan's lemma ([[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]]) tur
 ^thm-95-2
 
 > [!proof]+ Proof
-> Let $R > \max_n|s_n - \gamma|$. Then every $s_n$ lies inside the closed contour formed by $L_R$ (upward) and $C_R$: it is in the disk $|s - \gamma| < R$ and to the left of the line $\operatorname{Re}s = \gamma$. The function $e^{st}F(s)$ is analytic inside and on this positively oriented contour except at the $s_n$ ($e^{st}$ is entire), and Cauchy's residue theorem ([[§76 Cauchy's Residue Theorem|§76]]) gives (4). By Lemma §95.1 the last term of (4) tends to $0$ as $R \to \infty$. Hence $\lim_{R\to\infty}\int_{L_R} e^{st}F(s)\,ds$ exists and equals $2\pi i\sum_n\operatorname{Res}_{s=s_n}[e^{st}F(s)]$; dividing by $2\pi i$ gives (6).
+> Let $R > \max_n|s_n - \gamma|$. Then every $s_n$ lies inside the closed contour formed by $L_R$ (upward) and $C_R$: it is in the disk $|s - \gamma| < R$ and to the left of the line $\operatorname{Re}s = \gamma$. The function $e^{st}F(s)$ is analytic inside and on this positively oriented contour except at the $s_n$ ($e^{st}$ is entire), and Cauchy's residue theorem ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]) gives (4). By Lemma §95.1 the last term of (4) tends to $0$ as $R \to \infty$. Hence $\lim_{R\to\infty}\int_{L_R} e^{st}F(s)\,ds$ exists and equals $2\pi i\sum_n\operatorname{Res}_{s=s_n}[e^{st}F(s)]$; dividing by $2\pi i$ gives (6).
 
 ^pf-95-2
 
-*Uses:* [[§95★ Inverse Laplace Transforms#^lem-95-1|§95.1]], [[§95★ Inverse Laplace Transforms#^def-95-1|Def. §95.1]], [[§76 Cauchy's Residue Theorem|§76]] (Theorem)
+*Uses:* [[§95★ Inverse Laplace Transforms#^lem-95-1|§95.1]], [[§95★ Inverse Laplace Transforms#^def-95-1|Def. §95.1]], [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]]
 
 In heat conduction and vibration problems $F(s)$ typically has infinitely many isolated singular points $s_n$, all to the left of some line $\operatorname{Re}s = \gamma$, and the finite sum (6) is replaced by a series of residues (7). B&C states this without conditions; the following version makes the passage to the limit along a suitable sequence of semicircles precise.
 
@@ -134,11 +134,11 @@ In heat conduction and vibration problems $F(s)$ typically has infinitely many i
 > \frac{1}{2\pi i}\int_{L_{R_N}} e^{st}F(s)\,ds = \sum_{|s_n - \gamma| < R_N}\operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] - \frac{1}{2\pi i}\int_{C_{R_N}} e^{st}F(s)\,ds ,
 > $$
 >
-> and by Lemma §95.1 the last term is less than $M_Ne^{\gamma t}/(2t)$ in modulus, which tends to $0$. So the two limits exist together and are equal.
+> and by Lemma §95.1 the last term is at most $M_Ne^{\gamma t}/(2t)$ in modulus, which tends to $0$. So the two limits exist together and are equal.
 
 ^pf-95-3
 
-*Uses:* [[§95★ Inverse Laplace Transforms#^lem-95-1|§95.1]], [[§95★ Inverse Laplace Transforms#^thm-95-2|§95.2]], [[§76 Cauchy's Residue Theorem|§76]] (Theorem)
+*Uses:* [[§95★ Inverse Laplace Transforms#^lem-95-1|§95.1]], [[§95★ Inverse Laplace Transforms#^thm-95-2|§95.2]], [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]]
 
 ## The Bromwich Integral Inverts the Transform
 
@@ -203,11 +203,11 @@ Theorems §95.2 and §95.3 evaluate the Bromwich integral; that its value is the
 >
 > which tends to $0$ with $h$. So $F_j'(s)$ exists for every $s$ in the half plane: $F_j$ is analytic there. (This is the argument of [[§22 Solution of Initial Value Problems#^thm-22-6|331 Thm. §22.6]], entry 19, with complex $h$.)
 >
-> **Conclusion.** $F_1 - F_2$ is analytic in the domain $\operatorname{Re}s > a$ and vanishes on the segment $a + 1 \le s \le a + 2$ of the real axis, so it vanishes identically ([[§28★ Uniquely Determined Analytic Functions|§28★]], Lemma). In particular $F_1 = F_2$ on the line $\operatorname{Re}s = a + 1$, and Theorem §95.4 with $\gamma = a + 1$ gives $\frac12\big(f_1(t+) + f_1(t-)\big) = \frac12\big(f_2(t+) + f_2(t-)\big)$ for $t > 0$.
+> **Conclusion.** $F_1 - F_2$ is analytic in the domain $\operatorname{Re}s > a$ and vanishes on the segment $a + 1 \le s \le a + 2$ of the real axis, so it vanishes identically ([[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1]]). In particular $F_1 = F_2$ on the line $\operatorname{Re}s = a + 1$, and Theorem §95.4 with $\gamma = a + 1$ gives $\frac12\big(f_1(t+) + f_1(t-)\big) = \frac12\big(f_2(t+) + f_2(t-)\big)$ for $t > 0$.
 
 ^pf-95-5
 
-*Uses:* [[§95★ Inverse Laplace Transforms#^thm-95-4|§95.4]], [[§28★ Uniquely Determined Analytic Functions|§28★]] (Lemma), [[§19 Derivatives|§19]]
+*Uses:* [[§95★ Inverse Laplace Transforms#^thm-95-4|§95.4]], [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|§28.1]], [[§19 Derivatives#^def-19-1|Def. §19.1]]
 
 > [!remark]- Connections
 > - This is Lerch's theorem, [[§22 Solution of Initial Value Problems#^thm-22-4|331 Thm. §22.4]], which BDP states without proof ("it can be shown"), here proved for sectionally smooth functions of exponential order (relative to the Fourier integral theorem). It is what makes a table of transforms, read backwards, a table of inverse transforms.
@@ -242,9 +242,9 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 ^thm-95-6
 
 > [!proof]+ Proof
-> Each $s_n$ is a pole of order $m_n$ of $F$ ([[§83 Zeros and Poles|§83]], Theorem 1), and $F$ is analytic elsewhere.
+> Each $s_n$ is a pole of order $m_n$ of $F$ ([[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]]), and $F$ is analytic elsewhere.
 >
-> **(a)** Let $P_n(s) = \sum_{k=1}^{m_n} c_{n,k}(s - s_n)^{-k}$ be the principal part of the Laurent series of $F$ at $s_n$ ([[§66 Laurent Series|§66]]). Then $F - P_n$ is analytic at $s_n$ (its Laurent series there has no negative powers), and the other $P_j$ are analytic at $s_n$. So $G = F - \sum_n P_n$, once its removable singularities at the $s_n$ are filled in, is entire. As $|s| \to \infty$, $F(s) \to 0$ (since $\deg P < \deg Q$) and each $P_n(s) \to 0$; so $G(s) \to 0$. Hence $G$ is bounded (by $1$ outside some disk, and on that closed disk by continuity), so it is constant by Liouville's theorem ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]], Theorem 1), and the constant is its limit $0$.
+> **(a)** Let $P_n(s) = \sum_{k=1}^{m_n} c_{n,k}(s - s_n)^{-k}$ be the principal part of the Laurent series of $F$ at $s_n$ ([[§67 Proof of Laurent's Theorem#^thm-67-1|Theorem §67.1]]). Then $F - P_n$ is analytic at $s_n$ (its Laurent series there has no negative powers), and the other $P_j$ are analytic at $s_n$. So $G = F - \sum_n P_n$, once its removable singularities at the $s_n$ are filled in, is entire. As $|s| \to \infty$, $F(s) \to 0$ (since $\deg P < \deg Q$) and each $P_n(s) \to 0$; so $G(s) \to 0$. Hence $G$ is bounded (by $1$ outside some disk, and on that closed disk by continuity), so it is constant by Liouville's theorem ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Theorem §58.1]]), and the constant is its limit $0$.
 >
 > **(b)** Near $s_n$, $e^{st}F(s) = e^{st}P_n(s) + e^{st}\big(F(s) - P_n(s)\big)$, and the second term is analytic at $s_n$, so $\operatorname{Res}_{s_n}[e^{st}F] = \operatorname{Res}_{s_n}[e^{st}P_n]$. From $e^{st} = e^{s_nt}e^{(s - s_n)t} = e^{s_nt}\sum_{j\ge0}\frac{t^j}{j!}(s - s_n)^j$, the coefficient of $(s - s_n)^{-1}$ in $e^{st}(s - s_n)^{-k}$ is $e^{s_nt}t^{k-1}/(k - 1)!$. Summing over $k$ with the weights $c_{n,k}$ gives (b).
 >
@@ -260,7 +260,7 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 
 ^pf-95-6
 
-*Uses:* [[§95★ Inverse Laplace Transforms#^thm-95-2|§95.2]], [[§83 Zeros and Poles|§83]] (Theorem 1), [[§66 Laurent Series|§66]], [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]] (Theorem 1), [[§85 Evaluation of Improper Integrals#^prop-85-4|§85.4]], [[§22 Solution of Initial Value Problems#^thm-22-6|331 Thm. §22.6]] (entry 11)
+*Uses:* [[§95★ Inverse Laplace Transforms#^thm-95-2|§95.2]], [[§83 Zeros and Poles#^thm-83-1|§83.1]], [[§67 Proof of Laurent's Theorem#^thm-67-1|§67.1]], [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|§58.1]], [[§85 Evaluation of Improper Integrals#^prop-85-4|§85.4]]
 
 > [!remark]- Connections
 > - Part (c) is entry 11 of the table, $\mathcal{L}\{t^ne^{at}\} = n!/(s - a)^{n+1}$, [[§22 Solution of Initial Value Problems#^thm-22-6|331 Thm. §22.6]], extended to complex $a$; part (a) is the partial fraction decomposition used in [[§22 Solution of Initial Value Problems#^rem-22-4|331 Remark: Method — Inverting a Rational Transform]], proved here by Liouville's theorem (for real factors: [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|Calc Thm. §47.3]]). At simple poles the residues are $P(s_n)/Q'(s_n)\,e^{s_nt}$, which is Heaviside's formula, [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]]; at a double pole, [[§54★ More Difficult Examples#^prop-54-2|341 Prop. §54.2]].
@@ -270,7 +270,11 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 > - If $u(x, \cdot)$ is sectionally smooth and of exponential order, Theorem §95.4 says that the Bromwich integral of $U(x, \cdot)$ returns $u(x, t)$.
 > - If $U(x, \cdot)$ is a single-valued function of $s$ with only isolated singular points to the left of $\operatorname{Re}s = \gamma$, and is small on a sequence of semicircles $C_{R_N}$ passing between the poles, Theorem §95.3 evaluates that Bromwich integral as the series of residues, grouped by the semicircles.
 >
-> Together, $u(x, t) = \sum_n\operatorname{Res}_{s=r_n}[e^{st}U(x, s)]$, which is the extended Heaviside formula. Example §95.3 shows how the condition on the semicircles is checked for a denominator $\sinh s$; for $\sinh\sqrt s$, as in [[§53★ Partial Differential Equations#^ex-53-3|341 Ex. §53.3]], a similar estimate of $\sinh w$, $w = \sqrt s$, on curves passing between the poles $-n^2\pi^2$ is needed (it is not carried out here). When $U$ is not single-valued (a branch point at $s = 0$ from $e^{-\sqrt s\,x}$), the contour must avoid the branch cut, as in [[§91★ Integration Along a Branch Cut|§91★]], and the inverse transform contains an integral along the cut besides the residues.
+> Together, $u(x, t) = \sum_n\operatorname{Res}_{s=r_n}[e^{st}U(x, s)]$, which is the extended Heaviside formula. Example §95.3 shows how the condition on the semicircles is checked for a denominator $\sinh s$. For $\sinh\sqrt s$, as in [[§53★ Partial Differential Equations#^ex-53-3|341 Ex. §53.3]], the same idea works with $w = \sqrt s$:
+>
+> **The estimate for 341 Ex. §53.3.** There $U(x, s) = \dfrac{\sinh(wx) + \sinh(w(1 - x))}{s\sinh w}$ $(0 \le x \le 1)$, which is even in $w$ and so a single-valued function of $s$, with poles at $0$ and $-n^2\pi^2$; compute with the principal root $w = \xi + i\eta$, $\xi \ge 0$, so that $s = \xi^2 - \eta^2 + 2i\xi\eta$. Take $\gamma = 1$ and $R_N = 1 + \eta_N^2$ with $\eta_N = (N + \frac12)\pi$, $N \ge 2$: $C_{R_N}$ crosses the negative axis at $-\eta_N^2$, between the poles. Since $|\sinh(wx)|^2 = \sinh^2(\xi x) + \sin^2(\eta x) \le \cosh^2(\xi x)$, the numerator is at most $e^{\xi x} + e^{\xi(1 - x)} \le 1 + e^{\xi}$ (a convex function of $x$ is largest at an endpoint). *Where $\xi \ge 1$*, $|\sinh w| \ge \sinh\xi \ge \frac12e^{\xi}(1 - e^{-2})$, so the quotient of the numerator by $\sinh w$ is at most $2(1 + e^{-1})/(1 - e^{-2}) < 4$. *Where $\xi < 1$*, write a point of $C_{R_N}$ as $s = 1 - R_N + \varepsilon + iy$ with $\varepsilon = R_N - \sqrt{R_N^2 - y^2} \le y^2/R_N$; here $|y| = 2\xi|\eta| < 2|\eta|$ and $\eta^2 = \xi^2 - \operatorname{Re}s \le R_N$, so $0 \le \varepsilon < 4$, and $\eta^2 = \eta_N^2 + \xi^2 - \varepsilon$ gives $\big|\eta^2 - \eta_N^2\big| < 4$, hence $\big||\eta| - \eta_N\big| < 4/\eta_N \le 4/(2.5\pi) < 0.51$ and $|\sinh w| \ge |\sin\eta| > \cos 0.51 > \frac12$; the quotient is at most $2(1 + e) < 8$. So $|U(x, s)| \le 8/|s| \le 8/(R_N - 1) \to 0$ on $C_{R_N}$, uniformly in $x$, and Theorem §95.3 applies.
+>
+> When $U$ is not single-valued (a branch point at $s = 0$ from $e^{-\sqrt s\,x}$), the contour must avoid the branch cut, as in [[§91★ Integration Along a Branch Cut|§91★]], and the inverse transform contains an integral along the cut besides the residues.
 
 ^rem-95-1
 
@@ -354,11 +358,11 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 > F(s) = \frac{1}{s^2} - \frac{1}{s\sinh s} ,
 > $$
 >
-> whose isolated singularities are $s_0 = 0$ and $s_n = n\pi i$, $\bar s_n = -n\pi i$ $(n = 1, 2, \ldots)$, the zeros of $s\sinh s$ ([[§39★ Hyperbolic Functions|§39★]]).
+> whose isolated singularities are $s_0 = 0$ and $s_n = n\pi i$, $\bar s_n = -n\pi i$ $(n = 1, 2, \ldots)$, the zeros of $s\sinh s$ ([[§39★ Hyperbolic Functions#^thm-39-4|Theorem §39.4]]).
 >
-> **(a) $s_0 = 0$ is removable.** From the Laurent series $\frac{1}{\sinh s} = \frac1s - \frac s6 + \cdots$ $(0 < |s| < \pi)$ ([[§73★ Multiplication and Division of Power Series|§73★]], Exercise 5), $\frac{1}{s\sinh s} = \frac{1}{s^2} - \frac16 + \cdots$, so $F(s) = \frac16 + \cdots$ is analytic at $0$ once defined there, and so is $e^{st}F(s)$: its residue at $s_0$ is $0$.
+> **(a) $s_0 = 0$ is removable.** From the Laurent series $\frac{1}{\sinh s} = \frac1s - \frac s6 + \cdots$ $(0 < |s| < \pi)$ ([[§73★ Multiplication and Division of Power Series#^ex-73-2|Example §73.2]], B&C's Exercise 5 of Sec. 73), $\frac{1}{s\sinh s} = \frac{1}{s^2} - \frac16 + \cdots$, so $F(s) = \frac16 + \cdots$ is analytic at $0$ once defined there, and so is $e^{st}F(s)$: its residue at $s_0$ is $0$.
 >
-> **(b) The poles $\pm n\pi i$.** $e^{st}/s^2$ is analytic there. For $-e^{st}/(s\sinh s)$ use [[§83 Zeros and Poles|§83]] (Theorem 2) with $p = -e^{st}/s$ and $q = \sinh s$, $q'(\pm n\pi i) = \cosh(n\pi i) = \cos n\pi = (-1)^n \ne 0$:
+> **(b) The poles $\pm n\pi i$.** $e^{st}/s^2$ is analytic there. For $-e^{st}/(s\sinh s)$ use [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]] with $p = -e^{st}/s$ and $q = \sinh s$, $q'(\pm n\pi i) = \cosh(n\pi i) = \cos n\pi = (-1)^n \ne 0$:
 >
 > $$
 > \operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] = \frac{-e^{in\pi t}}{n\pi i\,(-1)^n} = \frac{(-1)^ni\exp(in\pi t)}{n\pi}, \qquad \operatorname{Res}_{s=\bar s_n}\big[e^{st}F(s)\big] = -\frac{(-1)^ni\exp(-in\pi t)}{n\pi} .
@@ -366,7 +370,7 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 >
 > Each pair adds up to $\frac{(-1)^ni}{n\pi}\big(e^{in\pi t} - e^{-in\pi t}\big) = \frac{(-1)^ni}{n\pi}\cdot2i\sin n\pi t = \frac2\pi\cdot\frac{(-1)^{n+1}}{n}\sin n\pi t$.
 >
-> **(c) The semicircles.** Take $\gamma = 1$ and $R_N^2 = 1 + (N + \frac12)^2\pi^2$, so that $C_{R_N}$ crosses the imaginary axis at $\pm(N + \frac12)\pi i$, midway between poles, and contains no pole. Write $s = x + iy$; $|\sinh s|^2 = \sinh^2x + \sin^2y$ ([[§39★ Hyperbolic Functions|§39★]]). Where $|x| \ge 1$ on $C_{R_N}$, $|\sinh s| \ge \sinh1 > 1$. Where $|x| < 1$, $y^2 = R_N^2 - (x - 1)^2 = (N + \frac12)^2\pi^2 + (2x - x^2)$ with $|2x - x^2| < 3$, so
+> **(c) The semicircles.** Take $\gamma = 1$ and $R_N^2 = 1 + (N + \frac12)^2\pi^2$, so that $C_{R_N}$ crosses the imaginary axis at $\pm(N + \frac12)\pi i$, midway between poles, and contains no pole. Write $s = x + iy$; $|\sinh s|^2 = \sinh^2x + \sin^2y$ ([[§39★ Hyperbolic Functions#^prop-39-3|Proposition §39.3]]). Where $|x| \ge 1$ on $C_{R_N}$, $|\sinh s| \ge \sinh1 > 1$. Where $|x| < 1$, $y^2 = R_N^2 - (x - 1)^2 = (N + \frac12)^2\pi^2 + (2x - x^2)$ with $|2x - x^2| < 3$, so
 >
 > $$
 > \Big||y| - \big(N + \tfrac12\big)\pi\Big| = \frac{|2x - x^2|}{|y| + (N + \frac12)\pi} < \frac{3}{(N + \frac12)\pi} \le \frac{3}{2.5\pi} < 0.4 \qquad (N \ge 2),

@@ -22,7 +22,7 @@ $$
 z = e^{i\theta} \qquad (0 \le \theta \le 2\pi) . \qquad (2)
 $$
 
-By the differentiation formula of [[§41 Derivatives of Functions w(t)|§41]], $dz/d\theta = ie^{i\theta} = iz$, and ([[§37 The Trigonometric Functions sin z and cos z|§37]]) $\sin\theta = (e^{i\theta} - e^{-i\theta})/2i$, $\cos\theta = (e^{i\theta} + e^{-i\theta})/2$. These suggest the substitutions
+By the differentiation formula of [[§41 Derivatives of Functions w(t)#^ex-41-2|Example §41.2]], $dz/d\theta = ie^{i\theta} = iz$, and ([[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Definition §37.1]]) $\sin\theta = (e^{i\theta} - e^{-i\theta})/2i$, $\cos\theta = (e^{i\theta} + e^{-i\theta})/2$. These suggest the substitutions
 
 $$
 \sin\theta = \frac{z - z^{-1}}{2i}, \qquad \cos\theta = \frac{z + z^{-1}}{2}, \qquad d\theta = \frac{dz}{iz} , \qquad (3)
@@ -48,11 +48,11 @@ $$
 ^prop-92-1
 
 > [!proof]+ Proof
-> Write $G(z)$ for the integrand on the right. By the definition of the contour integral with the parametrization (2) ([[§44 Contour Integrals|§44]]), $\int_C G(z)\,dz = \int_0^{2\pi} G(e^{i\theta})\,ie^{i\theta}\,d\theta$. At $z = e^{i\theta}$, $z^{-1} = e^{-i\theta}$, so $\frac{z - z^{-1}}{2i} = \sin\theta$, $\frac{z + z^{-1}}{2} = \cos\theta$, and $\frac{1}{iz}\cdot ie^{i\theta} = 1$; hence $G(e^{i\theta})ie^{i\theta} = F(\sin\theta, \cos\theta)$, which is (1) = (4): the original integral is a parametric form of the contour integral. The last statement is Cauchy's residue theorem ([[§76 Cauchy's Residue Theorem|§76]]), since a rational function has finitely many poles.
+> Write $G(z)$ for the integrand on the right. By the definition of the contour integral with the parametrization (2) ([[§44 Contour Integrals#^def-44-1|Definition §44.1]]), $\int_C G(z)\,dz = \int_0^{2\pi} G(e^{i\theta})\,ie^{i\theta}\,d\theta$. At $z = e^{i\theta}$, $z^{-1} = e^{-i\theta}$, so $\frac{z - z^{-1}}{2i} = \sin\theta$, $\frac{z + z^{-1}}{2} = \cos\theta$, and $\frac{1}{iz}\cdot ie^{i\theta} = 1$; hence $G(e^{i\theta})ie^{i\theta} = F(\sin\theta, \cos\theta)$, which is (1) = (4): the original integral is a parametric form of the contour integral. The last statement is Cauchy's residue theorem ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]), since a rational function has finitely many poles.
 
 ^pf-92-1
 
-*Uses:* [[§44 Contour Integrals|§44]], [[§76 Cauchy's Residue Theorem|§76]] (Theorem), [[§37 The Trigonometric Functions sin z and cos z|§37]]
+*Uses:* [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]], [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Def. §37.1]]
 
 > [!remark] Remark: Method — Integrals over a Period
 > To evaluate $\int_0^{2\pi} F(\sin\theta, \cos\theta)\,d\theta$ with $F$ rational:
@@ -191,7 +191,7 @@ $$
 >
 > **Poles.** With $w = z^2$, $w^2 - 6w + 1 = 0$ gives $w = 3 \pm \sqrt8$. Since $3 - \sqrt8 = (\sqrt2 - 1)^2 < 1$ and $3 + \sqrt8 > 1$, the zeros inside $C$ are $z = \pm\sqrt{3 - \sqrt8} = \pm(\sqrt2 - 1)$, both simple.
 >
-> **Residues.** At each of them, by [[§83 Zeros and Poles|§83]] (Theorem 2),
+> **Residues.** At each of them, by [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]],
 >
 > $$
 > \operatorname{Res}\frac{4iz}{z^4 - 6z^2 + 1} = \frac{4iz}{4z^3 - 12z} = \frac{i}{z^2 - 3} = \frac{i}{(3 - \sqrt8) - 3} = -\frac{i}{2\sqrt2} .

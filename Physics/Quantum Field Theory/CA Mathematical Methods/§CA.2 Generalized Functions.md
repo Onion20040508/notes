@@ -332,7 +332,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 >
 > **What the derivation shows.**
 > - A product is defined exactly when at each point at least one factor is smooth; at a common singular point no value is canonical and a regularization must choose one ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]).
-> - $\theta(x^0)D(x)$: $\operatorname{sing\,supp}\theta(x^0)$ is the hyperplane $x^0 = 0$ and $\operatorname{sing\,supp}D$ is the light cone; they meet only at $x = 0$. So the product is defined on $\mathbb R^4 \setminus \{0\}$, its extension across $0$ is unique up to $\sum c_\alpha\partial^\alpha\delta^4$ ([[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]]), and the Green's-function equation removes even that freedom ([[§CA.2 Generalized Functions#^thm-ca-2-14|Theorem §CA.2.14]], 3).
+> - $\theta(x^0)D(x)$: $\operatorname{sing\,supp}\theta(x^0)$ is the hyperplane $x^0 = 0$ and $\operatorname{sing\,supp}D$ is the light cone; they meet only at $x = 0$. So the product is defined on $\mathbb R^4 \setminus \{0\}$; an extension across $0$ exists (the slice-by-slice definition, [[§C2.11 Green's Functions and Contours#^thm-c2-11-6|Theorem §C2.11.6]]), any two extensions differ by $\sum c_\alpha\partial^\alpha\delta^4$ ([[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]]), and the Green's-function equation removes even that freedom ([[§CA.2 Generalized Functions#^thm-ca-2-14|Theorem §CA.2.14]], 3). Equivalently, by power counting: $D$ scales like $|x|^{-2}$ at the origin, every $\partial^\alpha\delta^4$ at least like $|x|^{-4}$, so exactly one extension is no more singular than $D$ itself (scaling degree $2 < 4$; Brunetti–Fredenhagen, Commun. Math. Phys. 208 (2000), Thm. 5.2; quoted).
 
 ^der-ca-2-7
 
@@ -361,7 +361,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 >
 > **Step 3** (part 1: two kernels). Let $\sigma$ vanish outside $[-1, 1]$ and $\rho(u) = \rho_0(u - b)$ with $\rho_0$ vanishing outside $[-1, 1]$. For $b \ge 2$, $\Sigma = 1$ on the support of $\rho$ and $c = 1$; for $b \le -2$, $\Sigma = 0$ there and $c = 0$; $c$ depends continuously on $b$, so it takes every value in $[0, 1]$.
 >
-> ⚑ By-product: the convention $\theta(0) = \frac12$ is the choice of one symmetric smoothing for both factors, not a fact → [[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2-12-1|§C2.12, Caution: The step function at zero]].
+> ⚑ By-product: the convention $\theta(0) = \frac12$ is the choice of one and the same smoothing for both factors (Step 2), not a fact → [[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2-12-1|§C2.12, Caution: The step function at zero]].
 >
 > **Step 4** (part 2). $\int dx\,\varepsilon^{-2}\rho(x/\varepsilon)^2\varphi(x) = \varepsilon^{-1}\int du\,\rho(u)^2\varphi(\varepsilon u)$ (substitute $x = \varepsilon u$), and the last integral tends to $\varphi(0)\int\rho^2 > 0$ by dominated convergence. So the pairing grows like $\varepsilon^{-1}$.
 >
@@ -416,7 +416,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 *Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
 
 > [!remark] Remark: Point splitting: how a product at one point is regularized
-> For $x \ne y$, $\phi(x)\phi(y)$ is a well-defined operator-valued distribution in the pair $(x, y)$; its vacuum expectation value is $D_W(x - y)$ ([[§C2.8 The Wightman Function#^def-c2-8-1|Def. §C2.8.1]]). The product at one point is the limit $y \to x$, which does not exist: $D_W(x - y)$ grows like $1/4\pi^2|(x - y)^2|$ as the points approach ([[§C2.9 Explicit Forms of the Wightman Function|§C2.9]]). Subtracting the vacuum part first, $:\!\phi(x)^2\!: = \lim_{y\to x}\bigl[\phi(x)\phi(y) - D_W(x - y)\bigr]$, leaves a finite operator-valued distribution: this is normal ordering ([[§C2.3 Energy, Momentum and the Zero-Point Energy#^def-c2-3-1|Def. §C2.3.1]]), and the subtracted $D_W(0)$ is the zero-point energy density ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2-12-3|Remark: The zero-point energy is the Wightman function at coincident points]]). The box ([[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]]) regularizes the volume; point splitting regularizes the coincident point.
+> For $x \ne y$, $\phi(x)\phi(y)$ is a well-defined operator-valued distribution in the pair $(x, y)$; its vacuum expectation value is $D_W(x - y)$ ([[§C2.8 The Wightman Function#^def-c2-8-1|Def. §C2.8.1]]). The product at one point is the limit $y \to x$, which does not exist: $D_W(x - y)$ grows like $1/4\pi^2|(x - y)^2|$ as the points approach ([[§C2.9 Explicit Forms of the Wightman Function|§C2.9]]). Subtracting the vacuum part first, $:\!\phi(x)^2\!: = \lim_{y\to x}\bigl[\phi(x)\phi(y) - D_W(x - y)\bigr]$, leaves a finite operator-valued distribution: this is normal ordering ([[§C2.3 Energy, Momentum and the Zero-Point Energy#^def-c2-3-1|Def. §C2.3.1]]), and the subtracted $c$-number, differentiated in $x$ and $y$ before the points meet, gives the zero-point energy density ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2-12-3|Remark: The zero-point energy is the Wightman function at coincident points]]). The box ([[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]]) regularizes the volume; point splitting regularizes the coincident point.
 >
 > *Source: standard; stated here · the user's PHY 513 notes, Ch. 6 §6.2 ("Why this matters beyond tidiness"), Ch. 6 §6.7 (the zero-point energy as the Wightman function at coincident points)*
 
@@ -725,7 +725,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 > [a(f), a^\dagger(g)] = \int\frac{d^3p}{(2\pi)^3}\overline{f(\mathbf p)}\,g(\mathbf p) ,
 > $$
 >
-> a number bounded by $\|f\|_{L^2}\|g\|_{L^2}/(2\pi)^3$ and hence continuous in each argument. Its kernel, with respect to the measure $\frac{d^3p}{(2\pi)^3}\frac{d^3q}{(2\pi)^3}$, is $(2\pi)^3\delta^3(\mathbf p - \mathbf q)$: the unsmeared relation $[a_{\mathbf p}, a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ is the statement of the theorem for this $B$.
+> a number bounded by $\|f\|_{L^2}\|g\|_{L^2}/(2\pi)^3$ and hence continuous in each argument. (It is antilinear in $f$; the theorem applies to the bilinear form $(f, g) \mapsto [a(\bar f), a^\dagger(g)]$.) Its kernel, with respect to the measure $\frac{d^3p}{(2\pi)^3}\frac{d^3q}{(2\pi)^3}$, is $(2\pi)^3\delta^3(\mathbf p - \mathbf q)$: the unsmeared relation $[a_{\mathbf p}, a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ is the statement of the theorem for this $B$.
 >
 > **What the derivation shows.**
 > - Every two-point formula with $\delta$'s, or with $D_W(x - y)$, is an identity between kernels in the sense of this theorem: it means what it says after both points are smeared.

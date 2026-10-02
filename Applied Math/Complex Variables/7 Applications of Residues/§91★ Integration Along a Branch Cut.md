@@ -68,7 +68,7 @@ On $C_R$ and $C_\rho$ the integrals of $f$ are taken with $0 < \theta < 2\pi$ (t
 > f_2(z) = \frac{z^{-a}}{z + 1} \qquad \Big(|z| > 0,\ \frac\pi2 < \arg z < \frac{5\pi}{2}\Big)
 > $$
 >
-> is analytic on and inside $\Gamma_2$, since the arguments there lie in $[\theta_0, 2\pi] \subset (\pi/2, 5\pi/2)$; on the positive real axis it takes $\arg z = 2\pi$, so $f_2(r) = r^{-a}e^{-i2a\pi}/(r + 1)$. The Cauchy–Goursat theorem ([[§50 Cauchy–Goursat Theorem|§50]]) gives
+> is analytic on and inside $\Gamma_2$, since the arguments there lie in $[\theta_0, 2\pi] \subset (\pi/2, 5\pi/2)$; on the positive real axis it takes $\arg z = 2\pi$, so $f_2(r) = r^{-a}e^{-i2a\pi}/(r + 1)$. The Cauchy–Goursat theorem ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]) gives
 >
 > $$
 > -\int_\rho^R\frac{r^{-a}e^{-i2a\pi}}{r + 1}\,dr + \int_{\gamma_\rho} f_2(z)\,dz - \int_L f_2(z)\,dz + \int_{\gamma_R} f_2(z)\,dz = 0 .
@@ -78,7 +78,7 @@ On $C_R$ and $C_\rho$ the integrals of $f$ are taken with $0 < \theta < 2\pi$ (t
 
 ^pf-91-1
 
-*Uses:* [[§76 Cauchy's Residue Theorem|§76]] (Theorem), [[§50 Cauchy–Goursat Theorem|§50]] (Theorem), [[§33 Branches and Derivatives of Logarithms|§33]], [[§35 The Power Function|§35]]
+*Uses:* [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]], [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]], [[§35 The Power Function#^def-35-1|Def. §35.1]]
 
 ![[m342-91-1.svg]]
 *The keyhole contour of §91. The branch $z^{-a}$ with $0 < \arg z < 2\pi$ is cut along the positive real axis (orange); the contour runs out along the upper edge ($\theta = 0$), around $C_R$, back along the lower edge ($\theta = 2\pi$) and around $C_\rho$ clockwise. It encloses the pole $-1$ (green). Proposition §91.1 justifies the residue theorem on it by splitting along a ray in the third quadrant.*

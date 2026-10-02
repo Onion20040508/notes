@@ -92,7 +92,7 @@ Since $\sin z$ becomes the usual $\sin x$ when $z$ is real, the real numbers $z 
 ^def-38-2
 
 > [!theorem] Proposition §38.2: Singularities, Derivatives and Periods
-> **(a)** $\tan z$ and $\sec z$ are analytic everywhere except at the singularities ([[§25 Analytic Functions|§25]])
+> **(a)** $\tan z$ and $\sec z$ are analytic everywhere except at the singularities ([[§25 Analytic Functions#^def-25-3|Definition §25.3]])
 >
 > $$
 > z = \frac\pi2 + n\pi \qquad (n = 0, \pm1, \pm2, \ldots) ,
@@ -123,9 +123,9 @@ Since $\sin z$ becomes the usual $\sin x$ when $z$ is real, the real numbers $z 
 ^prop-38-2
 
 > [!proof]+ Proof
-> **(a)** A quotient of entire functions is analytic wherever the denominator is not zero ([[§25 Analytic Functions|§25]]); the denominators $\cos z$ and $\sin z$ vanish exactly at the points listed (Theorem §38.1). At those points the functions are not even defined, and every neighborhood of such a point contains points where they are analytic, so the points are singular points.
+> **(a)** A quotient of entire functions is analytic wherever the denominator is not zero ([[§25 Analytic Functions#^prop-25-1|Proposition §25.1]]); the denominators $\cos z$ and $\sin z$ vanish exactly at the points listed (Theorem §38.1). At those points the functions are not even defined, and every neighborhood of such a point contains points where they are analytic, so the points are singular points.
 >
-> **(b)** (B&C's Exercise 6.) By the quotient rule ([[§20 Rules for Differentiation|§20]]), the derivatives (2) of [[§37 The Trigonometric Functions sin z and cos z#^thm-37-1|Theorem §37.1]] and the identity $\sin^2z + \cos^2z = 1$,
+> **(b)** (B&C's Exercise 6.) By the quotient rule ([[§20 Rules for Differentiation#^thm-20-2|Theorem §20.2]]), the derivatives (2) of [[§37 The Trigonometric Functions sin z and cos z#^thm-37-1|Theorem §37.1]] and the identity $\sin^2z + \cos^2z = 1$,
 >
 > $$
 > \frac{d}{dz}\tan z = \frac{\cos z\cos z - \sin z(-\sin z)}{\cos^2z} = \frac{1}{\cos^2z} = \sec^2z, \qquad \frac{d}{dz}\cot z = \frac{-\sin z\sin z - \cos z\cos z}{\sin^2z} = -\csc^2z ,
@@ -139,16 +139,16 @@ Since $\sin z$ becomes the usual $\sin x$ when $z$ is real, the real numbers $z 
 
 ^pf-38-2
 
-*Uses:* [[§38 Zeros and Singularities of Trigonometric Functions#^def-38-2|Def. §38.2]], [[§38 Zeros and Singularities of Trigonometric Functions#^thm-38-1|§38.1]], [[§37 The Trigonometric Functions sin z and cos z#^thm-37-1|§37.1]], [[§37 The Trigonometric Functions sin z and cos z#^cor-37-4|§37.4]], [[§20 Rules for Differentiation|§20]] (quotient rule), [[§25 Analytic Functions|§25]] (singular points)
+*Uses:* [[§38 Zeros and Singularities of Trigonometric Functions#^def-38-2|Def. §38.2]], [[§38 Zeros and Singularities of Trigonometric Functions#^thm-38-1|§38.1]], [[§37 The Trigonometric Functions sin z and cos z#^thm-37-1|§37.1]], [[§37 The Trigonometric Functions sin z and cos z#^cor-37-4|§37.4]], [[§20 Rules for Differentiation#^thm-20-2|§20.2]], [[§25 Analytic Functions#^prop-25-1|§25.1]], [[§25 Analytic Functions#^def-25-3|Def. §25.3]]
 
-Mapping properties of $w = \sin z$ are important in applications; they are discussed in [[§104★ Mapping Vertical Line Segments by w = sin z|§104★]] and [[§105★ Mapping Horizontal Line Segments by w = sin z|§105★]] (see also the figure in [[§37 The Trigonometric Functions sin z and cos z|§37]]).
+Mapping properties of $w = \sin z$ are important in applications; they are discussed in [[§104★ Mapping Vertical Line Segments by w = sin z|§104★]] and [[§105★ Mapping Horizontal Line Segments by w = sin z|§105★]] (see also the figure after [[§37 The Trigonometric Functions sin z and cos z#^prop-37-5|Proposition §37.5]]).
 
 ## Solving sin z = w₀ and cos z = w₀
 
 > [!remark] Remark: Method — Solving sin z = w₀ and cos z = w₀
 > Two routes:
 > 1. **Real and imaginary parts.** By (13) and (14) of [[§37 The Trigonometric Functions sin z and cos z#^prop-37-5|Proposition §37.5]], $\sin z = w_0$ is the pair of real equations $\sin x\cosh y = \operatorname{Re} w_0$, $\cos x\sinh y = \operatorname{Im} w_0$. When $w_0$ is real, the second says $\cos x = 0$ or $y = 0$; treat the two cases separately. This is efficient for real $w_0$.
-> 2. **A quadratic in $e^{iz}$.** Put $W = e^{iz}$. Then $\sin z = w_0$ becomes $W - W^{-1} = 2iw_0$, i.e. $W^2 - 2iw_0W - 1 = 0$, and $\cos z = w_0$ becomes $W + W^{-1} = 2w_0$, i.e. $W^2 - 2w_0W + 1 = 0$. Solve by the quadratic formula ([[§11 Examples (Roots of Complex Numbers)|§11]], Exercise 8), then solve $e^{iz} = W$ for each root ([[§30 The Exponential Function#^rem-30-1|Remark: Method — Solving e^g(z) = w₀]]): $iz = \log W$, $z = -i\log W$. This works for every $w_0$ and leads to the formulas for $\sin^{-1}$ and $\cos^{-1}$ in [[§40★ Inverse Trigonometric and Hyperbolic Functions|§40★]].
+> 2. **A quadratic in $e^{iz}$.** Put $W = e^{iz}$. Then $\sin z = w_0$ becomes $W - W^{-1} = 2iw_0$, i.e. $W^2 - 2iw_0W - 1 = 0$, and $\cos z = w_0$ becomes $W + W^{-1} = 2w_0$, i.e. $W^2 - 2w_0W + 1 = 0$. Solve by the quadratic formula ([[§11 Examples (Roots of Complex Numbers)#^ex-11-4|Example §11.4]]), then solve $e^{iz} = W$ for each root ([[§30 The Exponential Function#^rem-30-1|Remark: Method — Solving e^g(z) = w₀]]): $iz = \log W$, $z = -i\log W$. This works for every $w_0$ and leads to the formulas for $\sin^{-1}$ and $\cos^{-1}$ in [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-1|Proposition §40.1]] and [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-2|Proposition §40.2]].
 >
 > The product of the two roots of each quadratic is $\mp1 \ne 0$, so $W \ne 0$ and there are always solutions: $\sin z$ and $\cos z$ take every complex value, infinitely often.
 

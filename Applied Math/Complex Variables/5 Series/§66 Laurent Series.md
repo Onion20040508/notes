@@ -50,10 +50,10 @@ Replacing $n$ by $-n$ in the second series of (1) writes it as $\sum_{n=-\infty}
 
 ^def-66-1
 
-The integrand in (3) can be written $f(z)(z - z_0)^{n-1}$, so the integrals do not depend on the choice of $C$: by the deformation of contours ([[§53 Multiply Connected Domains|§53]], Corollary), two positively oriented simple closed contours around $z_0$ in the annulus give the same value. The proof in §67 uses this.
+The integrand in (3) can be written $f(z)(z - z_0)^{n-1}$, so the integrals do not depend on the choice of $C$: by the deformation of contours ([[§53 Multiply Connected Domains#^cor-53-2|Corollary §53.2]]), two positively oriented simple closed contours around $z_0$ in the annulus give the same value. The proof in §67 uses this.
 
 > [!remark] Remark: Special Cases of the Annulus
-> 1. **$f$ analytic in the whole disk $|z - z_0| < R_2$.** Then $f(z)(z - z_0)^{n-1}$ is analytic inside and on $C$ for $n \ge 1$, so every $b_n = 0$ by the Cauchy–Goursat theorem ([[§50 Cauchy–Goursat Theorem|§50]]). And since ([[§55 An Extension of the Cauchy Integral Formula|§55]])
+> 1. **$f$ analytic in the whole disk $|z - z_0| < R_2$.** Then $f(z)(z - z_0)^{n-1}$ is analytic inside and on $C$ for $n \ge 1$, so every $b_n = 0$ by the Cauchy–Goursat theorem ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]). And since ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]])
 >
 >    $$
 >    \frac{1}{2\pi i}\int_C\frac{f(z)\,dz}{(z - z_0)^{n+1}} = \frac{f^{(n)}(z_0)}{n!} \qquad (n = 0, 1, 2, \ldots),
@@ -91,7 +91,7 @@ the $n$th Laurent coefficient of $f$ is the $n$th complex Fourier coefficient of
 > x[n] = c_{-n} = \frac{1}{2\pi}\int_{-\pi}^{\pi}X(e^{i\theta})e^{in\theta}\,d\theta .
 > $$
 >
-> **Check.** For $x[n] = a^n$ $(n \ge 0)$, $x[n] = 0$ $(n < 0)$, with $|a| < 1$: $X(z) = \sum_{n \ge 0}(a/z)^n = \dfrac{z}{z - a}$ for $|z| > |a|$, an annulus containing $|z| = 1$. The formula gives $\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{e^{i(n+1)\theta}}{e^{i\theta} - a}\,d\theta = \frac{1}{2\pi i}\int_{|z|=1}\frac{z^n\,dz}{z - a}$, which is $a^n$ for $n \ge 0$ by the Cauchy integral formula ([[§54 Cauchy Integral Formula|§54]]). For $n = -m \le -1$ it is $0$: the integral of $z^{-m}/(z - a)$ is the same over every circle $|z| = R$ with $R \ge 1$ ([[§53 Multiply Connected Domains|§53]], Corollary), and by the ML-inequality it is at most $2\pi R\cdot R^{-m}/(R - |a|) \to 0$ as $R \to \infty$. So the formula returns the signal.
+> **Check.** For $x[n] = a^n$ $(n \ge 0)$, $x[n] = 0$ $(n < 0)$, with $|a| < 1$: $X(z) = \sum_{n \ge 0}(a/z)^n = \dfrac{z}{z - a}$ for $|z| > |a|$, an annulus containing $|z| = 1$. The formula gives $\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{e^{i(n+1)\theta}}{e^{i\theta} - a}\,d\theta = \frac{1}{2\pi i}\int_{|z|=1}\frac{z^n\,dz}{z - a}$, which is $a^n$ for $n \ge 0$ by the Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]]). For $n = -m \le -1$ it is $0$: the integral of $z^{-m}/(z - a)$ is the same over every circle $|z| = R$ with $R \ge 1$ ([[§53 Multiply Connected Domains#^cor-53-2|Corollary §53.2]]), and by the ML-inequality it is at most $2\pi R\cdot R^{-m}/(R - |a|) \to 0$ as $R \to \infty$. So the formula returns the signal.
 >
 > In discrete-time signal processing, $\theta \mapsto X(e^{i\theta})$ is the frequency response, and the formula recovers the signal from it.
 >

@@ -106,7 +106,7 @@ We know from [[§79 Examples (The Three Types of Isolated Singular Points)#^ex-7
 >
 > since $1/g$ is analytic where $g$ is analytic and nonzero. But this means that $z_0$ is a removable singularity of $f$ (the Laurent series of $f$ in the punctured disk is then its Taylor series, with no negative powers), not an essential one, and we have a contradiction.
 >
-> **If $g(z_0) = 0$**, the function $g$ must have a zero of some finite order $m$ at $z_0$ ([[§82 Zeros of Analytic Functions|§82]]), because $g(z)$ is not identically equal to zero in the neighborhood $|z - z_0| < \delta$ (it is nonzero at every point other than $z_0$; compare the proof of [[§82 Zeros of Analytic Functions#^thm-82-2|Theorem §82.2]]). In view of equation (5), then, $f = \frac{1 + w_0g}{g}$ is a quotient whose numerator is analytic and equal to $1$ at $z_0$ and whose denominator has a zero of order $m$ there; so $f$ has a pole of order $m$ at $z_0$ ([[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]]). So, once again, we have a contradiction, and Theorem §84.3 is proved.
+> **If $g(z_0) = 0$**, the function $g$ must have a zero of some finite order $m$ at $z_0$ ([[§82 Zeros of Analytic Functions#^def-82-1|Definition §82.1]]), because $g(z)$ is not identically equal to zero in the neighborhood $|z - z_0| < \delta$ (it is nonzero at every point other than $z_0$; compare the proof of [[§82 Zeros of Analytic Functions#^thm-82-2|Theorem §82.2]]). In view of equation (5), then, $f = \frac{1 + w_0g}{g}$ is a quotient whose numerator is analytic and equal to $1$ at $z_0$ and whose denominator has a zero of order $m$ there; so $f$ has a pole of order $m$ at $z_0$ ([[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]]). So, once again, we have a contradiction, and Theorem §84.3 is proved.
 
 ^pf-84-3
 
@@ -193,7 +193,7 @@ As B&C remarks in a footnote, Theorem §84.4 says that the modulus $|f(z)|$ incr
 > [!example] Example §84.2: Casorati–Weierstrass for e^(1/z)
 > Show directly that $f(z) = e^{1/z}$ comes arbitrarily close to every complex number $w_0$ in every deleted neighborhood $0 < |z| < \delta$ of its essential singular point $0$ ([[§79 Examples (The Three Types of Isolated Singular Points)#^ex-79-2|Example §79.2]]).
 >
-> **$w_0 \ne 0$: the value is attained exactly.** Let $\operatorname{Log}w_0$ be the principal logarithm ([[§31 The Logarithmic Function|§31]]). For each integer $n$,
+> **$w_0 \ne 0$: the value is attained exactly.** Let $\operatorname{Log}w_0$ be the principal logarithm ([[§31 The Logarithmic Function#^def-31-2|Definition §31.2]]). For each integer $n$,
 >
 > $$
 > z_n = \frac{1}{\operatorname{Log}w_0 + 2n\pi i} \qquad\text{satisfies}\qquad e^{1/z_n} = e^{\operatorname{Log}w_0 + 2n\pi i} = w_0 ,
@@ -208,28 +208,38 @@ As B&C remarks in a footnote, Theorem §84.4 says that the modulus $|f(z)|$ incr
 ^ex-84-2
 
 > [!example] Example §84.3: Small Semicircles Around a Simple Pole
-> Let $S_r$ be the upper half of the circle of radius $r$ centered at $0$, parametrized by $z(\theta) = re^{i\theta}$, $0 \le \theta \le \pi$.
+> Let $S_r$ be the upper half of the circle of radius $r$ centered at $0$, parametrized by $z(\theta) = re^{i\theta}$, $0 \le \theta \le \pi$. Let $f$ have a simple pole at $0$, and set $B = \operatorname{Res}_{z=0} f$. Prove that $\lim_{r\to0}\int_{S_r} f(z)\,dz = \pi iB$.
 >
-> **(a)** Let $g$ be analytic in some open disk centered at $0$. Prove that $\lim_{r\to0}\int_{S_r} g(z)\,dz = 0$.
+> **The first part of the problem.** If $g$ is analytic in some open disk centered at $0$, then $\lim_{r\to0}\int_{S_r} g(z)\,dz = 0$: $g$ is bounded, say by $M$, on a closed disk $|z| \le R'$ inside it ([[§18 Continuity#^thm-18-6|Theorem §18.6]]), so $\big|\int_{S_r} g\big| \le M\pi r \to 0$ by the ML-inequality. This is [[§47 Upper Bounds for Moduli of Contour Integrals#^ex-47-5|Example §47.5]](d).
 >
-> **(b)** Let $f$ have a simple pole at $0$, and set $B = \operatorname{Res}_{z=0} f$. Prove that $\lim_{r\to0}\int_{S_r} f(z)\,dz = \pi iB$.
->
-> **(a)** Let $g$ be analytic in $|z| < R$, and fix $0 < R' < R$. On the closed disk $|z| \le R'$ the function $g$ is continuous, hence bounded: $|g(z)| \le M$ there ([[§18 Continuity#^thm-18-6|Theorem §18.6]]). For $r \le R'$ the semicircle $S_r$ has length $\pi r$, so by the ML-inequality
->
-> $$
-> \Big|\int_{S_r} g(z)\,dz\Big| \le M\pi r \longrightarrow 0 \qquad (r \to 0) .
-> $$
->
-> **(b)** Since $0$ is a simple pole, the Laurent series of $f$ in a punctured disk $0 < |z| < R$ is $f(z) = \frac{B}{z} + \sum_{n \ge 0}a_nz^n$. So $g(z) = f(z) - \frac Bz$ has a zero principal part: $0$ is a removable singular point of $g$, and with $g(0) = a_0$ the function $g$ is analytic in $|z| < R$ ([[§78 The Three Types of Isolated Singular Points#^prop-78-1|Proposition §78.1]]; equivalently, $g$ is bounded near $0$ by Theorem §84.1). Then
+> **Removing the principal part.** Since $0$ is a simple pole, the Laurent series of $f$ in a punctured disk $0 < |z| < R$ is $f(z) = \frac{B}{z} + \sum_{n \ge 0}a_nz^n$. So $g(z) = f(z) - \frac Bz$ has a zero principal part: $0$ is a removable singular point of $g$, and with $g(0) = a_0$ the function $g$ is analytic in $|z| < R$ ([[§78 The Three Types of Isolated Singular Points#^prop-78-1|Proposition §78.1]]; equivalently, $g$ is bounded near $0$, Theorem §84.1). Then
 >
 > $$
 > \int_{S_r} f(z)\,dz = \int_{S_r} g(z)\,dz + B\int_{S_r}\frac{dz}{z} = \int_{S_r} g(z)\,dz + B\int_0^{\pi}\frac{ire^{i\theta}}{re^{i\theta}}\,d\theta = \int_{S_r} g(z)\,dz + \pi iB .
 > $$
 >
-> By (a) the first term tends to $0$, so $\lim_{r\to0}\int_{S_r} f(z)\,dz = \pi iB$: half of the $2\pi iB$ that a full circle would give. This is the limit behind the indented contours of [[§89★ An Indented Path|§89★]].
+> By the first part the integral of $g$ tends to $0$, so $\lim_{r\to0}\int_{S_r} f(z)\,dz = \pi iB$: half of the $2\pi iB$ that a full circle would give. This is the limit behind the indented contours of [[§89★ An Indented Path#^thm-89-1|Theorem §89.1]], which treats the clockwise half circle.
 >
-> *The key bounds the length of $S_r$ by $2\pi r$; it is $\pi r$, and the bound tends to $0$ either way.*
->
-> *Source: 342 practice final (Spring 2012), Q7*
+> *Source: 342 practice final (Spring 2012), Q7(b)*
 
 ^ex-84-3
+
+> [!example] Example §84.4: A Growth Bound That Forces Removability
+> Let $f$ be analytic in a deleted neighborhood $0 < |z - z_0| < \varepsilon$, and suppose that $|f(z)| \le M|z - z_0|^{-1/2}$ there for some constant $M$. Show that $f$ is analytic at $z_0$ or has a removable singular point there. Show also that the exponent $-\frac12$ cannot be replaced by $-1$.
+>
+> **The function $g(z) = (z - z_0)f(z)$.** It is analytic in the deleted neighborhood, and there
+>
+> $$
+> |g(z)| \le M|z - z_0|^{1/2} \le M\varepsilon^{1/2} ,
+> $$
+>
+> so $g$ is bounded. By Riemann's theorem (Theorem §84.2), either $g$ is analytic at $z_0$ or $z_0$ is a removable singular point of $g$; in both cases $g$, given the value $\lim_{z\to z_0} g(z)$ at $z_0$, is analytic at $z_0$ ([[§78 The Three Types of Isolated Singular Points#^prop-78-1|Proposition §78.1]]). That limit is $0$, since $|g(z)| \le M|z - z_0|^{1/2} \to 0$. So $g$ is analytic at $z_0$ with $g(z_0) = 0$.
+>
+> **Back to $f$.** For $z \ne z_0$, $f(z) = g(z)/(z - z_0)$. By [[§80 Residues at Poles#^ex-80-1|Example §80.1]](b), applied to $g$, the quotient $g(z)/(z - z_0)$ has a removable singular point at $z_0$ (assigning it the value $g'(z_0)$ makes it analytic there). Hence $f$, which agrees with this quotient in the deleted neighborhood, is analytic at $z_0$ or has a removable singular point there.
+>
+> **Sharpness.** $f(z) = 1/(z - z_0)$ satisfies $|f(z)| = |z - z_0|^{-1}$, a bound of the form $M|z - z_0|^{-1}$ with $M = 1$, but $z_0$ is a simple pole. The same argument works for any bound $|f(z)| \le M|z - z_0|^{-\alpha}$ with $\alpha < 1$: an analytic function that blows up more slowly than $1/|z - z_0|$ cannot blow up at all.
+>
+> *Source: illustration added in these notes (not in B&C)*
+
+^ex-84-4
+

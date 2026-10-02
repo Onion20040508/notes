@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§86 Example (Evaluation of Improper Integrals)]] · ↑ [[· 7 Applications of Residues]] · [[§88★ Jordan's Lemma]] →
 
-*Brown–Churchill, Section 87 · MAT 342 HW 12, Practice Finals (Spring 2012, Fall 2002, Fall 2009).*
+*Brown–Churchill, Section 87 · MAT 342 HW 12, Practice Final (Spring 2012).*
 
 Integrals of the form $\int f(x)\cos ax\,dx$ and $\int f(x)\sin ax\,dx$, with $f = p/q$ rational and $a > 0$, are the Fourier transforms of rational functions; they occur throughout the theory of the Fourier integral. The method of §85 cannot be applied to $f(z)\cos az$ directly, because $\cos az$ grows exponentially away from the real axis. The remedy is to integrate $f(z)e^{iaz}$ instead: on the real axis its real and imaginary parts are the two integrands wanted, and in the upper half plane $|e^{iaz}| = e^{-ay} \le 1$, so the arc integral is no harder than before. One residue computation then gives the cosine and the sine integral together.
 
@@ -21,7 +21,7 @@ $$
 \int_{-\infty}^{\infty} f(x)\sin ax\,dx \qquad\text{or}\qquad \int_{-\infty}^{\infty} f(x)\cos ax\,dx . \qquad (1)
 $$
 
-By [[§39★ Hyperbolic Functions|§39★]], $|\sin az|^2 = \sin^2 ax + \sinh^2 ay$ and $|\cos az|^2 = \cos^2 ax + \sinh^2 ay$; since $\sinh ay = \frac12(e^{ay} - e^{-ay})$, both moduli grow like $\frac12e^{ay}$ as $y \to \infty$, and no estimate on a large semicircle can succeed. But
+By [[§37 The Trigonometric Functions sin z and cos z#^prop-37-6|Proposition §37.6]] (B&C cites Sec. 39), $|\sin az|^2 = \sin^2 ax + \sinh^2 ay$ and $|\cos az|^2 = \cos^2 ax + \sinh^2 ay$; since $\sinh ay = \frac12(e^{ay} - e^{-ay})$, both moduli grow like $\frac12e^{ay}$ as $y \to \infty$, and no estimate on a large semicircle can succeed. But
 
 $$
 \int_{-R}^{R} f(x)\cos ax\,dx + i\int_{-R}^{R} f(x)\sin ax\,dx = \int_{-R}^{R} f(x)e^{iax}\,dx ,
@@ -55,21 +55,21 @@ $$
 > \int_{-R}^{R} f(x)e^{iax}\,dx = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k}\big[f(z)e^{iaz}\big] - \int_{C_R} f(z)e^{iaz}\,dz .
 > $$
 >
-> By [[§85 Evaluation of Improper Integrals#^prop-85-4|Proposition §85.4]], $|f(z)| \le K/|z|^2$ for $|z| \ge R_1$, and $|e^{iaz}| \le 1$ on $C_R$; so $\big|\int_{C_R} f(z)e^{iaz}\,dz\big| \le \pi K/R \to 0$ ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]]). On the real axis $|f(x)e^{iax}| = |f(x)| \le K/x^2$ for $|x| \ge R_1$, so the real and imaginary parts $f(x)\cos ax$ and $f(x)\sin ax$ have absolutely convergent improper integrals (comparison, as in the proof of Proposition §85.4). The integral therefore converges, equals its principal value, and that is the limit of the residue identity. Since $f(x)$ is real, taking real and imaginary parts gives the last two formulas.
+> By [[§85 Evaluation of Improper Integrals#^prop-85-4|Proposition §85.4]], $|f(z)| \le K/|z|^2$ for $|z| \ge R_1$, and $|e^{iaz}| \le 1$ on $C_R$; so $\big|\int_{C_R} f(z)e^{iaz}\,dz\big| \le \pi K/R \to 0$ ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]). On the real axis $|f(x)e^{iax}| = |f(x)| \le K/x^2$ for $|x| \ge R_1$, so the real and imaginary parts $f(x)\cos ax$ and $f(x)\sin ax$ have absolutely convergent improper integrals (comparison, as in the proof of Proposition §85.4). The integral therefore converges, equals its principal value, and that is the limit of the residue identity. Since $f(x)$ is real, taking real and imaginary parts gives the last two formulas.
 
 ^pf-87-1
 
-*Uses:* [[§85 Evaluation of Improper Integrals#^thm-85-3|§85.3]], [[§85 Evaluation of Improper Integrals#^prop-85-4|§85.4]], [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]], [[§76 Cauchy's Residue Theorem|§76]] (Theorem), [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (Theorem), [[§30 The Exponential Function|§30]]
+*Uses:* [[§85 Evaluation of Improper Integrals#^thm-85-3|§85.3]], [[§85 Evaluation of Improper Integrals#^prop-85-4|§85.4]], [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]], [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]], [[§30 The Exponential Function#^prop-30-1|§30.1]]
 
 > [!remark]- Connections
 > - These are the coefficient functions of the Fourier integral: for real $f$, $A(\lambda) = \frac1\pi\int f(x)\cos\lambda x\,dx$ and $B(\lambda) = \frac1\pi\int f(x)\sin\lambda x\,dx$, [[§14 Fourier Integral#^def-14-1|341 Def. §14.1]], or $C(\lambda) = \frac{1}{2\pi}\int f(x)e^{-i\lambda x}\,dx$, [[§15★ Complex Methods#^def-15-2|341 Def. §15.2]]. Proposition §87.1 computes the Fourier transform of any rational function with $\deg q \ge \deg p + 2$ in closed form; Example §87.2 is the case $f = 1/(x^2 + 1)$.
 
-When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argument, although the integrals may still converge; that case is the subject of Jordan's lemma, [[§88★ Jordan's Lemma|§88★]].
+When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argument, although the integrals may still converge; that case is the subject of Jordan's lemma, [[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]]. On a rectangle instead of a semicircle the arc estimate is even easier, because $|e^{iz}| = e^{-y}$ is exponentially small on a high horizontal side: [[§47 Upper Bounds for Moduli of Contour Integrals#^ex-47-5|Example §47.5]](a), an old-final problem, bounds the top side of the rectangle with vertices $\pm A$, $\pm A + iA$ by $2Ae^{-A}/(A^2 - 1)$, and the vertical sides are handled with $\int_0^A e^{-y}\,dy \le 1$.
 
 > [!remark] Remark: Method — Integrals of f(x) cos ax and f(x) sin ax
 > 1. **Replace** $\cos ax$ or $\sin ax$ by $e^{iaz}$ (with $a > 0$; for $a < 0$ use $\cos ax = \cos|a|x$ and $\sin ax = -\sin|a|x$). Never integrate $f(z)\cos az$ around a semicircle.
 > 2. **Residues** of $f(z)e^{iaz}$ at the zeros of $q$ in the upper half plane; $e^{iaz}$ is part of the numerator $\phi$ in the residue formulas.
-> 3. **The arc.** If $\deg q \ge \deg p + 2$: $|f(z)e^{iaz}| \le |f(z)| \le M_R$ and $M_R\,\pi R \to 0$. If $\deg q = \deg p + 1$: Jordan's lemma ([[§88★ Jordan's Lemma|§88★]]).
+> 3. **The arc.** If $\deg q \ge \deg p + 2$: $|f(z)e^{iaz}| \le |f(z)| \le M_R$ and $M_R\,\pi R \to 0$. If $\deg q = \deg p + 1$: Jordan's lemma ([[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]]).
 > 4. **Take real or imaginary parts** of $2\pi i\sum\operatorname{Res}$. For an even integrand halve the result to get $\int_0^\infty$: $f(x)\cos ax$ is even when $f$ is, and $f(x)\sin ax$ is even when $f$ is odd.
 > 5. **Check:** the cosine integral of an even $f$ comes out real, and the sine integral of an even $f$ is $0$.
 
@@ -90,7 +90,7 @@ When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argumen
 > \int_{-R}^{R}\frac{e^{i2x}}{(x^2 + 4)^2}\,dx = 2\pi iB - \int_{C_R} f(z)e^{i2z}\,dz, \qquad B = \operatorname{Res}_{z=2i}\big[f(z)e^{i2z}\big] . \qquad (4)
 > $$
 >
-> **Residue.** $f(z)e^{i2z} = \phi(z)/(z - 2i)^2$ with $\phi(z) = e^{i2z}/(z + 2i)^2$, analytic and nonzero at $2i$, so $z = 2i$ is a pole of order $2$ and $B = \phi'(2i)$ ([[§80 Residues at Poles|§80]], Theorem). Since
+> **Residue.** $f(z)e^{i2z} = \phi(z)/(z - 2i)^2$ with $\phi(z) = e^{i2z}/(z + 2i)^2$, analytic and nonzero at $2i$, so $z = 2i$ is a pole of order $2$ and $B = \phi'(2i)$ ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]). Since
 >
 > $$
 > \phi'(z) = \frac{2ie^{i2z}(z + 2i) - 2e^{i2z}}{(z + 2i)^3}, \qquad B = \phi'(2i) = \frac{e^{-4}(2i\cdot4i - 2)}{(4i)^3} = \frac{-10e^{-4}}{-64i} = \frac{5}{32e^4i} .
@@ -123,7 +123,7 @@ When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argumen
 > \operatorname{Res}_{z=i}\frac{e^{iaz}}{z^2 + 1} = \frac{e^{iaz}}{2z}\Big|_{z=i} = \frac{e^{-a}}{2i}, \qquad 2\pi i\cdot\frac{e^{-a}}{2i} = \pi e^{-a} .
 > $$
 >
-> **The arc.** For $R > 1$ and $z$ on $C_R$: $|e^{iaz}| \le 1$ and $|z^2 + 1| \ge R^2 - 1$, so $\big|\int_{C_R}\frac{e^{iaz}}{z^2 + 1}dz\big| \le \frac{\pi R}{R^2 - 1} \to 0$. (The length factor $\pi R$ matters: $M_R = 1/(R^2 - 1) \to 0$ alone would not suffice for the bound of §47; it suffices only through Jordan's lemma, [[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]].)
+> **The arc.** For $R > 1$ and $z$ on $C_R$: $|e^{iaz}| \le 1$ and $|z^2 + 1| \ge R^2 - 1$, so $\big|\int_{C_R}\frac{e^{iaz}}{z^2 + 1}dz\big| \le \frac{\pi R}{R^2 - 1} \to 0$. (The length factor $\pi R$ matters: $M_R = 1/(R^2 - 1) \to 0$ alone would not suffice for the bound of Theorem §47.2; it suffices only through Jordan's lemma, [[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]].)
 >
 > **Conclusion.** $\int_{-\infty}^{\infty}\frac{\cos ax}{x^2 + 1}\,dx = \operatorname{Re}(\pi e^{-a}) = \pi e^{-a}$, and halving the even integrand, $\int_0^\infty = \frac\pi2e^{-a}$ (for $a = 2$: $0.212584$, as quadrature confirms). The imaginary part gives $\int_{-\infty}^{\infty}\frac{\sin ax}{x^2 + 1}\,dx = 0$, as it must for an odd integrand.
 >
@@ -179,22 +179,3 @@ When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argumen
 > *B&C: Sec. 88, Exercise 8*
 
 ^ex-87-4
-
-> [!example] Example §87.5: The Top Side of a Rectangle
-> Let $C_A$ be the segment from $A + iA$ to $-A + iA$, where $A > 1$. Prove that
->
-> $$
-> \Big|\int_{C_A}\frac{e^{iz}}{z^2 + 1}\,dz\Big| \le \frac{2Ae^{-A}}{A^2 - 1} .
-> $$
->
-> On $C_A$, $z = x + iA$ with $-A \le x \le A$, so $|e^{iz}| = e^{-A}$, and $|z| \ge A$ gives $|z^2 + 1| \ge |z|^2 - 1 \ge A^2 - 1 > 0$. The length of $C_A$ is $2A$, and by [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (Theorem)
->
-> $$
-> \Big|\int_{C_A}\frac{e^{iz}}{z^2 + 1}\,dz\Big| \le \frac{e^{-A}}{A^2 - 1}\cdot 2A .
-> $$
->
-> The bound tends to $0$ as $A \to \infty$, much faster than the semicircle bound: the factor $e^{-A}$ comes from the height of the segment. This is the top side of the rectangle with vertices $\pm A$, $\pm A + iA$, an alternative to the semicircle for Fourier-type integrals; the two vertical sides are handled with $|e^{iz}| = e^{-y}$ and $\int_0^A e^{-y}\,dy \le 1$. The key's estimate is the same.
->
-> *Source: 342 practice final (Fall 2002), Q7, 342 practice final (Fall 2009), Q7*
-
-^ex-87-5

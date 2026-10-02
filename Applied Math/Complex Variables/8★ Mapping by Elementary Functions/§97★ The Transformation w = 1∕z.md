@@ -57,7 +57,7 @@ The reciprocal $w = 1/z$ is the one genuinely new ingredient of the linear fract
 
 ^pf-97-1
 
-*Uses:* [[§97★ The Transformation w = 1∕z#^def-97-1|Def. §97.1]], [[§6 Complex Conjugates|§6]] ($z\bar z = |z|^2$)
+*Uses:* [[§97★ The Transformation w = 1∕z#^def-97-1|Def. §97.1]], [[§6 Complex Conjugates#^prop-6-3|§6.3]] ($z\bar z = |z|^2$)
 
 ![[m342-97-1.svg]]
 *The two steps of $w = 1/z$ for a point $z$ outside the unit circle: the inversion puts $Z$ on the same ray at distance $1/|z|$, inside the circle; the reflection in the real axis then gives $w = \bar Z$, with $|w| = 1/|z|$ and $\arg w = -\arg z$.*
@@ -93,7 +93,7 @@ The reciprocal is undefined at $0$ and gives no finite value at $\infty$, but th
 ^thm-97-2
 
 > [!proof]+ Proof
-> Recall from [[§17 Limits Involving the Point at Infinity|§17]] (Theorem) that $\lim_{z\to z_0} f(z) = \infty$ if and only if $\lim_{z\to z_0} 1/f(z) = 0$, and that $\lim_{z\to\infty} f(z) = w_0$ if and only if $\lim_{z\to0} f(1/z) = w_0$.
+> Recall from [[§17 Limits Involving the Point at Infinity#^thm-17-1|Theorem §17.1]] that $\lim_{z\to z_0} f(z) = \infty$ if and only if $\lim_{z\to z_0} 1/f(z) = 0$, and that $\lim_{z\to\infty} f(z) = w_0$ if and only if $\lim_{z\to0} f(1/z) = w_0$.
 >
 > *At $z_0 = 0$:*
 >
@@ -111,13 +111,13 @@ The reciprocal is undefined at $0$ and gives no finite value at $\infty$, but th
 >
 > and $0 = T(\infty)$.
 >
-> *At a finite $z_0 \ne 0$:* $T(z) = 1/z$ is a quotient of continuous functions with nonzero denominator near $z_0$, so $\lim_{z\to z_0} T(z) = 1/z_0 = T(z_0)$ ([[§18 Continuity|§18]]).
+> *At a finite $z_0 \ne 0$:* $T(z) = 1/z$ is a quotient of continuous functions with nonzero denominator near $z_0$, so $\lim_{z\to z_0} T(z) = 1/z_0 = T(z_0)$ ([[§18 Continuity#^prop-18-1|Proposition §18.1]]).
 >
 > This is (7) at every point, which is continuity on the extended plane. Finally $T(T(z)) = z$: for finite $z \ne 0$ because $1/(1/z) = z$, and $T(T(0)) = T(\infty) = 0$, $T(T(\infty)) = T(0) = \infty$. A map that is its own inverse is one-to-one and onto.
 
 ^pf-97-2
 
-*Uses:* [[§97★ The Transformation w = 1∕z#^def-97-2|Def. §97.2]], [[§17 Limits Involving the Point at Infinity|§17]] (Theorem), [[§18 Continuity|§18]]
+*Uses:* [[§97★ The Transformation w = 1∕z#^def-97-2|Def. §97.2]], [[§17 Limits Involving the Point at Infinity#^thm-17-1|§17.1]], [[§18 Continuity#^prop-18-1|§18.1]]
 
 > [!remark]- Connections
 > - The extended plane is the one-point compactification of $\mathbb{C} = \mathbb{R}^2$, homeomorphic to the sphere $S^2$ by stereographic projection: [[§17 Local Compactness#^ex-17-7|590 Ex. §17.7]], [[§17 Local Compactness#^def-17-3|590 Def. §17.3]]. B&C's neighborhoods $|z| > 1/\varepsilon$ of $\infty$ are exactly the complements of closed disks, as in that topology, and Theorem §97.2 says that $T$ is a homeomorphism of the sphere onto itself (on $S^2$ it is the rotation through $\pi$ about the real axis).

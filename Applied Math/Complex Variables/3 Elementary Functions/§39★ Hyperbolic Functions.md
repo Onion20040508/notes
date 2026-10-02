@@ -50,7 +50,7 @@ The hyperbolic sine and cosine of a complex variable are defined by the formulas
 
 ^pf-39-1
 
-*Uses:* [[§39★ Hyperbolic Functions#^def-39-1|Def. §39.1]], [[§30 The Exponential Function#^thm-30-3|§30.3]], [[§20 Rules for Differentiation|§20]] (chain rule)
+*Uses:* [[§39★ Hyperbolic Functions#^def-39-1|Def. §39.1]], [[§30 The Exponential Function#^thm-30-3|§30.3]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]]
 
 > [!theorem] Proposition §39.2: Hyperbolic and Trigonometric Functions
 > For all $z$,
@@ -70,7 +70,7 @@ The hyperbolic sine and cosine of a complex variable are defined by the formulas
 ^prop-39-2
 
 > [!proof]+ Proof
-> By (1) and the definitions (1) of [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|§37]], using $-\frac i2 = \frac{1}{2i}$:
+> By (1) and [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Definition §37.1]], using $-\frac i2 = \frac{1}{2i}$:
 >
 > $$
 > -i\sinh(iz) = -i\,\frac{e^{iz} - e^{-iz}}{2} = \frac{e^{iz} - e^{-iz}}{2i} = \sin z, \qquad \cosh(iz) = \frac{e^{iz} + e^{-iz}}{2} = \cos z ,
@@ -128,17 +128,17 @@ The hyperbolic sine and cosine of a complex variable are defined by the formulas
 ^prop-39-3
 
 > [!proof]- Proof
-> These follow directly from (1), but more easily from the trigonometric identities of [[§37 The Trigonometric Functions sin z and cos z|§37]] with the relations (3) and (4). Note that (4) gives $\sin(iz) = i\sinh z$, and (3) with $z$ real gives $\cosh(iy) = \cos y$ and $\sinh(iy) = i\sin y$.
+> These follow directly from (1), but more easily from the trigonometric identities of [[§37 The Trigonometric Functions sin z and cos z#^thm-37-3|Theorem §37.3]] and [[§37 The Trigonometric Functions sin z and cos z#^cor-37-4|Corollary §37.4]] with the relations (3) and (4). Note that (4) gives $\sin(iz) = i\sinh z$, and (3) with $z$ real gives $\cosh(iy) = \cos y$ and $\sinh(iy) = i\sin y$.
 >
 > **(5)** Replacing $z$ by $-z$ in (1) interchanges $e^z$ and $e^{-z}$.
 >
-> **(6)** (B&C's Example 1.) Start from $\sin^2z + \cos^2z = 1$ (equation (9) of [[§37 The Trigonometric Functions sin z and cos z#^cor-37-4|§37]]). Using (3) to replace $\sin z$ and $\cos z$,
+> **(6)** (B&C's Example 1.) Start from $\sin^2z + \cos^2z = 1$ (equation (9) of [[§37 The Trigonometric Functions sin z and cos z#^cor-37-4|Corollary §37.4]]). Using (3) to replace $\sin z$ and $\cos z$,
 >
 > $$
 > -\sinh^2(iz) + \cosh^2(iz) = 1 .
 > $$
 >
-> This holds for every $z$; replacing $z$ by $-iz$ (so that $iz$ becomes $z$) gives (6).
+> This holds for every $z$; replacing $z$ by $-iz$ (so that $iz$ becomes $z$) gives (6). (Another route, by the uniqueness of analytic continuation, is [[§28★ Uniquely Determined Analytic Functions#^ex-28-3|Example §28.3]].)
 >
 > **(7)** By (4), the addition formula (5) of §37, and (4) again,
 >
@@ -168,7 +168,7 @@ The hyperbolic sine and cosine of a complex variable are defined by the formulas
 > |\cosh z|^2 = |\cos(iz)|^2 = |\cos(-y + ix)|^2 .
 > $$
 >
-> By (16) of [[§37 The Trigonometric Functions sin z and cos z#^prop-37-6|§37]], $|\cos(x + iy)|^2 = \cos^2x + \sinh^2y$, so $|\cos(-y + ix)|^2 = \cos^2(-y) + \sinh^2x = \cos^2y + \sinh^2x$, which is (12).
+> By (16) of [[§37 The Trigonometric Functions sin z and cos z#^prop-37-6|Proposition §37.6]], $|\cos(x + iy)|^2 = \cos^2x + \sinh^2y$, so $|\cos(-y + ix)|^2 = \cos^2(-y) + \sinh^2x = \cos^2y + \sinh^2x$, which is (12).
 
 ^pf-39-3
 
@@ -247,14 +247,14 @@ The zeros are presented as a theorem, for comparison with [[§38 Zeros and Singu
 
 ^pf-39-5
 
-*Uses:* [[§39★ Hyperbolic Functions#^prop-39-1|§39.1]], [[§39★ Hyperbolic Functions#^prop-39-3|§39.3]], [[§20 Rules for Differentiation|§20]] (quotient rule)
+*Uses:* [[§39★ Hyperbolic Functions#^prop-39-1|§39.1]], [[§39★ Hyperbolic Functions#^prop-39-3|§39.3]], [[§20 Rules for Differentiation#^thm-20-2|§20.2]]
 
 ## Examples
 
 > [!example] Example §39.1: Zeros, Singularities and Period of tanh z
 > **Zeros and singularities.** $\tanh z = \sinh z/\cosh z$ is analytic except where $\cosh z = 0$, and vanishes where $\sinh z = 0$ (the two never vanish together, by (6)). By Theorem §39.4 its zeros are $z = n\pi i$ and its singularities are $z = \big(\frac\pi2 + n\pi\big)i$ $(n = 0, \pm1, \pm2, \ldots)$, all on the imaginary axis.
 >
-> **Period $\pi i$.** By (4) and (10), (11) of [[§37 The Trigonometric Functions sin z and cos z#^cor-37-4|§37]],
+> **Period $\pi i$.** By (4) and (10), (11) of [[§37 The Trigonometric Functions sin z and cos z#^cor-37-4|Corollary §37.4]],
 >
 > $$
 > \sinh(z + \pi i) = -i\sin(iz - \pi) = i\sin(iz) = -\sinh z, \qquad \cosh(z + \pi i) = \cos(iz - \pi) = -\cosh z ,

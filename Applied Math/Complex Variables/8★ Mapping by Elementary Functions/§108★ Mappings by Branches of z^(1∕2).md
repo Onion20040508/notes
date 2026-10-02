@@ -16,13 +16,13 @@ The square root is the inverse of $z^2$, but it is double-valued, so a mapping n
 
 ## Branches of the Square Root
 
-Recall ([[§10 Roots of Complex Numbers|§10]]) that for $z = r\exp(i\Theta)$, $r > 0$, $-\pi < \Theta \le \pi$, the two square roots of $z$ are
+Recall ([[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]]) that for $z = r\exp(i\Theta)$, $r > 0$, $-\pi < \Theta \le \pi$, the two square roots of $z$ are
 
 $$
 z^{1/2} = \sqrt r\exp\frac{i(\Theta + 2k\pi)}{2} \qquad (k = 0, 1) , \qquad (1)
 $$
 
-the principal root occurring when $k = 0$; and ([[§35 The Power Function|§35]]) that $z^{1/2} = \exp\big(\tfrac12\log z\big)$ for $z \ne 0$. (2)
+the principal root occurring when $k = 0$; and ([[§35 The Power Function#^def-35-1|Definition §35.1]]) that $z^{1/2} = \exp\big(\tfrac12\log z\big)$ for $z \ne 0$. (2)
 
 > [!definition] Definition §108.1: The Principal Branch F₀ of z^(1/2)
 > The **principal branch** of the double-valued function $z^{1/2}$ is obtained by taking the principal branch of $\log z$ in (2):
@@ -57,7 +57,7 @@ This is the case $c = 1/2$ of the principal branch of $z^c$, [[§35 The Power Fu
 
 ^pf-108-1
 
-*Uses:* [[§108★ Mappings by Branches of z^(1∕2)#^def-108-1|Def. §108.1]], [[§10 Roots of Complex Numbers|§10]]
+*Uses:* [[§108★ Mappings by Branches of z^(1∕2)#^def-108-1|Def. §108.1]], [[§10 Roots of Complex Numbers#^thm-10-2|§10.2]]
 
 > [!definition] Definition §108.2: The Branch f_α Cut Along θ = α
 > Other branches of $z^{1/2}$ come from other branches of $\log z$ in (2). The branch whose branch cut is the ray $\theta = \alpha$ is
@@ -127,11 +127,11 @@ This is the case $c = 1/2$ of the principal branch of $z^c$, [[§35 The Power Fu
 ^prop-108-3
 
 > [!proof]+ Proof
-> Using the branch $\log z = \ln r + i(\Theta + 2k\pi)$, $-\pi < \Theta < \pi$, which is analytic there ([[§33 Branches and Derivatives of Logarithms|§33]]), $\exp\big(\frac1n\log z\big) = \exp\big(\frac1n\ln r\big)\exp\frac{i(\Theta + 2k\pi)}{n} = F_k(z)$, an analytic function whose $n$th power is $z$: a branch. In polar coordinates $F_k$ is $(r, \Theta) \mapsto (\rho, \phi) = \big(r^{1/n}, (\Theta + 2k\pi)/n\big)$, a bijection of $(0, \infty) \times (-\pi, \pi)$ onto $(0, \infty) \times \big((2k - 1)\pi/n, (2k + 1)\pi/n\big)$. Since the angular interval has length $2\pi/n < 2\pi$, distinct pairs $(\rho, \phi)$ in it are distinct points: the map is one to one onto the sector. For fixed $z$ the arguments $(\Theta + 2k\pi)/n$, $k = 0, \ldots, n - 1$, differ by multiples of $2\pi/n$ less than $2\pi$, so the $n$ values are distinct, and they are all the $n$th roots of $z$ ([[§10 Roots of Complex Numbers|§10]]).
+> Using the branch $\log z = \ln r + i(\Theta + 2k\pi)$, $-\pi < \Theta < \pi$, which is analytic there ([[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]]), $\exp\big(\frac1n\log z\big) = \exp\big(\frac1n\ln r\big)\exp\frac{i(\Theta + 2k\pi)}{n} = F_k(z)$, an analytic function whose $n$th power is $z$: a branch. In polar coordinates $F_k$ is $(r, \Theta) \mapsto (\rho, \phi) = \big(r^{1/n}, (\Theta + 2k\pi)/n\big)$, a bijection of $(0, \infty) \times (-\pi, \pi)$ onto $(0, \infty) \times \big((2k - 1)\pi/n, (2k + 1)\pi/n\big)$. Since the angular interval has length $2\pi/n < 2\pi$, distinct pairs $(\rho, \phi)$ in it are distinct points: the map is one to one onto the sector. For fixed $z$ the arguments $(\Theta + 2k\pi)/n$, $k = 0, \ldots, n - 1$, differ by multiples of $2\pi/n$ less than $2\pi$, so the $n$ values are distinct, and they are all the $n$th roots of $z$ ([[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]]).
 
 ^pf-108-3
 
-*Uses:* [[§10 Roots of Complex Numbers|§10]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]], [[§34 Some Identities Involving Logarithms#^prop-34-4|§34.4]]
+*Uses:* [[§10 Roots of Complex Numbers#^thm-10-2|§10.2]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]], [[§34 Some Identities Involving Logarithms#^prop-34-4|§34.4]]
 
 ## Examples
 

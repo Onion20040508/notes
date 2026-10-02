@@ -64,7 +64,7 @@ Chapter 8 returns to the picture of [[§13 Functions and Mappings|§13]] and [[�
 
 ^pf-96-1
 
-*Uses:* [[§96★ Linear Transformations#^def-96-1|Def. §96.1]], [[§8 Products and Powers in Exponential Form|§8]] (products in exponential form)
+*Uses:* [[§96★ Linear Transformations#^def-96-1|Def. §96.1]], [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]] (products in exponential form)
 
 > [!remark]- Connections
 > - In real coordinates, multiplication by $A = a_1 + ia_2$ is the matrix $\begin{bmatrix} a_1 & -a_2 \\ a_2 & a_1\end{bmatrix}$, a scaling by $|A|$ composed with a rotation through $\operatorname{Arg} A$: [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]. So $w = Az + B$ is an affine map of $\mathbb{R}^2$ whose linear part is a rotation–scaling matrix.

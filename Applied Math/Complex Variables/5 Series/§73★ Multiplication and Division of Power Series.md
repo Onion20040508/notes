@@ -9,7 +9,7 @@ tags: [complex-variables, math342, extension]
 ---
 ← [[§72★ Uniqueness of Series Representations]] · ↑ [[· 5 Series]] · [[§74 Isolated Singular Points]] →
 
-*Brown–Churchill, Section 73 · Practice Finals (Fall 2002, Fall 2009).*
+*Brown–Churchill, Section 73 · Practice Final (Fall 2002).*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
 Power series can be multiplied and divided like polynomials. If $\sum a_n(z - z_0)^n$ and $\sum b_n(z - z_0)^n$ converge in a disk, their product is the series obtained by multiplying term by term and collecting like powers, the **Cauchy product**, valid in the same disk. If the second sum has no zeros in the disk, their quotient is the series obtained by long division. The proofs are short because of what precedes: the sums are analytic ([[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]), so the product and quotient have Taylor series ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]]), and those coefficients are computed from the given ones with Leibniz's rule and uniqueness ([[§72★ Uniqueness of Series Representations#^thm-72-1|Theorem §72.1]]). In practice only the first few terms are needed. They give the leading terms of Laurent series such as $1/\sin z$ and $1/\sinh z$, which the old finals use to find principal parts and residues ([[§74 Isolated Singular Points|Chapter 6]]).
@@ -30,7 +30,7 @@ Power series can be multiplied and divided like polynomials. If $\sum a_n(z - z_
 ^lem-73-1
 
 > [!proof]+ Proof
-> By induction on $n$, for all pairs of functions at once. For $n = 1$ the rule is the product rule $(fg)' = fg' + f'g$ ([[§20 Rules for Differentiation|§20]]). Assume that it holds for $n = m$, where $m$ is any positive integer, and let $f$, $g$ have derivatives up to order $m + 1$. Applying the hypothesis to the pairs $(f, g')$ and $(f', g)$,
+> By induction on $n$, for all pairs of functions at once. For $n = 1$ the rule is the product rule $(fg)' = fg' + f'g$ ([[§20 Rules for Differentiation#^thm-20-2|Theorem §20.2]]). Assume that it holds for $n = m$, where $m$ is any positive integer, and let $f$, $g$ have derivatives up to order $m + 1$. Applying the hypothesis to the pairs $(f, g')$ and $(f', g)$,
 >
 > $$
 > (fg)^{(m+1)} = (fg' + f'g)^{(m)} = (fg')^{(m)} + (f'g)^{(m)} = \sum_{k=0}^{m}\binom mk f^{(k)}g^{(m+1-k)} + \sum_{k=0}^{m}\binom mk f^{(k+1)}g^{(m-k)} .
@@ -42,7 +42,7 @@ Power series can be multiplied and divided like polynomials. If $\sum a_n(z - z_
 > (fg)^{(m+1)} = fg^{(m+1)} + \sum_{k=1}^{m}\Big[\binom mk + \binom{m}{k-1}\Big]f^{(k)}g^{(m+1-k)} + f^{(m+1)}g .
 > $$
 >
-> With the identity $\binom mk + \binom{m}{k-1} = \binom{m+1}{k}$ ([[§3 Further Algebraic Properties|§3]], Exercise 8) and $\binom{m+1}{0} = \binom{m+1}{m+1} = 1$,
+> With the identity $\binom mk + \binom{m}{k-1} = \binom{m+1}{k}$ (Pascal's rule, from the proof of [[§3 Further Algebraic Properties#^thm-3-4|Theorem §3.4]]) and $\binom{m+1}{0} = \binom{m+1}{m+1} = 1$,
 >
 > $$
 > (fg)^{(m+1)} = fg^{(m+1)} + \sum_{k=1}^{m}\binom{m+1}{k}f^{(k)}g^{(m+1-k)} + f^{(m+1)}g = \sum_{k=0}^{m+1}\binom{m+1}{k}f^{(k)}g^{(m+1-k)} ,
@@ -52,7 +52,7 @@ Power series can be multiplied and divided like polynomials. If $\sum a_n(z - z_
 
 ^pf-73-1
 
-*Uses:* [[§20 Rules for Differentiation|§20]] (product rule), [[§3 Further Algebraic Properties|§3]] (Pascal's identity)
+*Uses:* [[§20 Rules for Differentiation#^thm-20-2|§20.2]] (product rule), [[§3 Further Algebraic Properties#^thm-3-4|§3.4]] (Pascal's identity, in its proof)
 
 > [!definition] Definition §73.1: Cauchy Product
 > The **Cauchy product** of the power series $\sum_{n=0}^{\infty}a_n(z - z_0)^n$ and $\sum_{n=0}^{\infty}b_n(z - z_0)^n$ is the power series $\sum_{n=0}^{\infty}c_n(z - z_0)^n$ with
@@ -183,7 +183,7 @@ Continue to let $f(z)$ and $g(z)$ denote the sums of the series (1), and suppose
 ^ex-73-1
 
 > [!example] Example §73.2: 1/sinh z by Division
-> The zeros of the entire function $\sinh z$ are $z = n\pi i$ $(n = 0, \pm1, \pm2, \ldots)$ ([[§39★ Hyperbolic Functions|§39]]). So the reciprocal
+> The zeros of the entire function $\sinh z$ are $z = n\pi i$ $(n = 0, \pm1, \pm2, \ldots)$ ([[§39★ Hyperbolic Functions#^thm-39-4|Theorem §39.4]]). So the reciprocal
 >
 > $$
 > \frac{1}{\sinh z} = \frac{1}{z + \frac{z^3}{3!} + \frac{z^5}{5!} + \cdots} = \frac1z\left(\frac{1}{1 + \frac{z^2}{3!} + \frac{z^4}{5!} + \cdots}\right) \qquad (7)
@@ -232,7 +232,7 @@ Continue to let $f(z)$ and $g(z)$ denote the sums of the series (1), and suppose
 > \frac{1}{\sin z} = \frac1z + \frac16z + \frac{7}{360}z^3 + \cdots \quad\text{(terms of order at least five)} .
 > $$
 >
-> **Division.** The zeros of $\sin z$ are $z = n\pi$ ([[§38 Zeros and Singularities of Trigonometric Functions|§38]]), so $1/\sin z$ has a Laurent series in $0 < |z| < \pi$. As in Example §73.2,
+> **Division.** The zeros of $\sin z$ are $z = n\pi$ ([[§38 Zeros and Singularities of Trigonometric Functions#^thm-38-1|Theorem §38.1]]), so $1/\sin z$ has a Laurent series in $0 < |z| < \pi$. As in Example §73.2,
 >
 > $$
 > \csc z = \frac{1}{\sin z} = \frac1z\cdot\frac{1}{1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \cdots} ,
@@ -244,17 +244,19 @@ Continue to let $f(z)$ and $g(z)$ denote the sums of the series (1), and suppose
 > \csc z = \frac1z + \frac{1}{3!}z + \Big[\frac{1}{(3!)^2} - \frac{1}{5!}\Big]z^3 + \cdots = \frac1z + \frac16z + \frac{7}{360}z^3 + \cdots \qquad (0 < |z| < \pi) .
 > $$
 >
-> **Check by multiplication** (the key's method): $\big(\frac1z + \frac16z + \frac{7}{360}z^3\big)\big(z - \frac{z^3}{6} + \frac{z^5}{120}\big) = 1 + \big(\frac16 - \frac16\big)z^2 + \big(\frac{1}{120} - \frac{1}{36} + \frac{7}{360}\big)z^4 + \cdots = 1 + 0\cdot z^2 + 0\cdot z^4 + \cdots$, since $\frac{3 - 10 + 7}{360} = 0$.
+> **Check by multiplication:** $\big(\frac1z + \frac16z + \frac{7}{360}z^3\big)\big(z - \frac{z^3}{6} + \frac{z^5}{120}\big) = 1 + \big(\frac16 - \frac16\big)z^2 + \big(\frac{1}{120} - \frac{1}{36} + \frac{7}{360}\big)z^4 + \cdots = 1 + 0\cdot z^2 + 0\cdot z^4 + \cdots$, since $\frac{3 - 10 + 7}{360} = 0$.
 >
-> **One more term (Fall 2009).** The Fall 2009 final quotes the next coefficient, $\frac{31}{15120}z^5$. With $b_6 = -\frac{1}{5040}$, the recursion gives
+> **One more term.** The next coefficient is $\frac{31}{15120}$ (the Fall 2009 final quotes the series to this term and then uses it as in [[§81 Examples (Residues at Poles)#^ex-81-5|Example §81.5]]). With $b_6 = -\frac{1}{5040}$, the recursion gives
 >
 > $$
 > d_6 = -\big(b_2d_4 + b_4d_2 + b_6d_0\big) = \frac{7}{2160} - \frac{1}{720} + \frac{1}{5040} = \frac{49 - 21 + 3}{15120} = \frac{31}{15120} ,
 > $$
 >
-> in agreement (and with sympy).
+> as sympy confirms.
 >
-> *B&C: Sec. 73, Exercise 3; Source: 342 practice final (Fall 2002), Q1(a); 342 practice final (Fall 2009), Q2*
+> The rest of the Fall 2002 problem, the principal part and residues of $(1 - z)/(z^5\sin z)$, is [[§81 Examples (Residues at Poles)#^ex-81-5|Example §81.5]].
+>
+> *B&C: Sec. 73, Exercise 3; Source: 342 practice final (Fall 2002), Q1(a)*
 
 ^ex-73-3
 

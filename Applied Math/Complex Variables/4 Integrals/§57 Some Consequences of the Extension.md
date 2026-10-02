@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)]] · ↑ [[· 4 Integrals]] · [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra]] →
 
-*Brown–Churchill, Section 57 · MAT 342 HW 8 (optional problem).*
+*Brown–Churchill, Section 57.*
 
 The extended Cauchy integral formula has three immediate consequences. An analytic function has derivatives of all orders, each analytic, so its real and imaginary parts have continuous partial derivatives of all orders; nothing like this holds for differentiable functions of a real variable. Morera's theorem is a converse of the Cauchy–Goursat theorem: a continuous function whose integrals around all closed contours vanish is analytic. Cauchy's inequality bounds the derivatives of $f$ at the center of a circle by the maximum of $|f|$ on the circle, and is the tool behind Liouville's theorem and the fundamental theorem of algebra in [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]].
 
@@ -168,24 +168,7 @@ In particular, when $D$ is simply connected, Morera's theorem is, for the class 
 
 ^ex-57-2
 
-> [!example] Example §57.3: Entire Functions of Linear Growth
-> **(a)** Let $f$ be an entire function such that $|f(z)| \le A|z|$ for all $z$, where $A$ is a fixed positive number. Show that $f(z) = a_1z$, where $a_1$ is a complex constant.
->
-> Fix any point $z_0$ and any $R > 0$. Since $f$ is entire, Cauchy's inequality applies on the circle $|z - z_0| = R$, and on that circle $|z| \le |z_0| + R$, so $M_R \le A(|z_0| + R)$. With $n = 2$,
->
-> $$
-> |f''(z_0)| \le \frac{2!\,M_R}{R^2} \le \frac{2A(|z_0| + R)}{R^2} = 2A\Big(\frac{|z_0|}{R^2} + \frac1R\Big) .
-> $$
->
-> The left side does not depend on $R$, and the right side tends to $0$ as $R \to \infty$; so $f''(z_0) = 0$. Since $z_0$ was arbitrary, $f'' = 0$ everywhere in the plane. A function whose derivative is zero throughout a domain is constant ([[§25 Analytic Functions#^thm-25-3|Theorem §25.3]]), so $f'(z) = a_1$ for a constant $a_1$. Then $(f(z) - a_1z)' = 0$, so $f(z) = a_1z + a_0$. Finally $|f(0)| \le A \cdot 0 = 0$ gives $a_0 = 0$, and $f(z) = a_1z$.
->
-> **(b)** The same argument with $n = k + 1$ shows more generally: if $f$ is entire and $|f(z)| \le A|z|^k + B$ for all $z$ (constants $A$, $B$, integer $k \ge 0$), then $f$ is a polynomial of degree at most $k$. Indeed $M_R \le A(|z_0| + R)^k + B$, so $|f^{(k+1)}(z_0)| \le (k + 1)!\,\big(A(|z_0| + R)^k + B\big)/R^{k+1} \to 0$ as $R \to \infty$; thus $f^{(k+1)} = 0$, and $k + 1$ applications of [[§25 Analytic Functions#^thm-25-3|Theorem §25.3]] show that $f$ is a polynomial of degree at most $k$. For $k = 0$ this is Liouville's theorem, [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Theorem §58.1]].
->
-> *B&C: Sec. 57, Exercise 10; Source: 342 HW 8 (optional)*
-
-^ex-57-3
-
-> [!example] Example §57.4: Cauchy's Inequality for the Exponential Function
+> [!example] Example §57.3: Cauchy's Inequality for the Exponential Function
 > Apply Cauchy's inequality to $f(z) = e^z$ at $z_0 = 0$, and choose the best radius.
 >
 > Here $f^{(n)}(0) = 1$ for every $n$, and on the circle $|z| = R$ the maximum of $|e^z| = e^x$ is $M_R = e^R$, attained at $z = R$. So (2) says
@@ -204,4 +187,4 @@ In particular, when $D$ is simply connected, Morera's theorem is, for the class 
 >
 > *B&C: Sec. 57, Theorem 3 (illustration)*
 
-^ex-57-4
+^ex-57-3

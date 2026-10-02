@@ -9,7 +9,7 @@ tags: [complex-variables, math342, extension]
 ---
 ← [[§88★ Jordan's Lemma]] · ↑ [[· 7 Applications of Residues]] · [[§90★ An Indentation Around a Branch Point]] →
 
-*Brown–Churchill, Section 89 · MAT 342 Practice Final (Spring 2012).*
+*Brown–Churchill, Section 89.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
 When the integrand has a singular point on the real axis, the contour of §85 must avoid it, and the standard way is an **indentation**: a small semicircle $C_\rho$ around the point. The key fact is a limit: as $\rho \to 0$, the integral over a half circle around a simple pole tends to $\mp\pi i$ times the residue, half of what a full circle gives. With it B&C evaluates Dirichlet's integral $\int_0^\infty \sin x/x\,dx = \pi/2$, where the pole of $e^{iz}/z$ sits at the origin and the arc at infinity needs Jordan's lemma; the same contour gives the integral of $\sin^2 x/x^2$.
@@ -42,7 +42,7 @@ When the integrand has a singular point on the real axis, the contour of §85 mu
 > \int_{C_\rho} f(z)\,dz = \int_{C_\rho} g(z)\,dz + B_0\int_{C_\rho}\frac{dz}{z - x_0} . \qquad (1)
 > $$
 >
-> **The regular part.** The power series $g$ is continuous in its disk of convergence $|z - x_0| < R_2$ ([[§70★ Continuity of Sums of Power Series|§70★]], Theorem). Choose $\rho_0$ with $\rho < \rho_0 < R_2$; then $g$ is continuous on the closed disk $|z - x_0| \le \rho_0$, hence bounded there ([[§18 Continuity|§18]], Theorem 4): $|g(z)| \le M$. (One $\rho_0$ serves for all $\rho < \rho_0$, so $M$ does not depend on $\rho$.) The length of $C_\rho$ is $\pi\rho$, so ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]])
+> **The regular part.** The power series $g$ is continuous in its disk of convergence $|z - x_0| < R_2$ ([[§70★ Continuity of Sums of Power Series#^thm-70-1|Theorem §70.1]]). Choose $\rho_0$ with $\rho < \rho_0 < R_2$; then $g$ is continuous on the closed disk $|z - x_0| \le \rho_0$, hence bounded there ([[§18 Continuity#^thm-18-6|Theorem §18.6]]): $|g(z)| \le M$. (One $\rho_0$ serves for all $\rho < \rho_0$, so $M$ does not depend on $\rho$.) The length of $C_\rho$ is $\pi\rho$, so ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]])
 >
 > $$
 > \Big|\int_{C_\rho} g(z)\,dz\Big| \le M\pi\rho, \qquad\text{and}\qquad \lim_{\rho\to0}\int_{C_\rho} g(z)\,dz = 0 . \qquad (2)
@@ -58,10 +58,10 @@ When the integrand has a singular point on the real axis, the contour of §85 mu
 
 ^pf-89-1
 
-*Uses:* [[§70★ Continuity of Sums of Power Series|§70★]] (Theorem), [[§18 Continuity|§18]] (Theorem 4), [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (Theorem), [[§66 Laurent Series|§66]], [[§44 Contour Integrals|§44]]
+*Uses:* [[§70★ Continuity of Sums of Power Series#^thm-70-1|§70.1]], [[§18 Continuity#^thm-18-6|§18.6]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]], [[§67 Proof of Laurent's Theorem#^thm-67-1|§67.1]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]]
 
 > [!remark] Remark: Other Arcs
-> The proof uses only that $g$ is bounded near $x_0$ and that $\int\frac{dz}{z - x_0}$ over an arc is $i$ times the angle swept. So the counterclockwise upper half circle gives $+B_0\pi i$ (Example §89.3), and an arc of angle $\alpha$ around a simple pole gives $\pm i\alpha B_0$; for $\alpha = 2\pi$ this is the residue theorem for one simple pole. For a pole of order $2$ or more the limit does not exist in general: $\int_{C_\rho} dz/z^2 = -2/\rho$ for the clockwise upper half circle about $0$.
+> The proof uses only that $g$ is bounded near $x_0$ and that $\int\frac{dz}{z - x_0}$ over an arc is $i$ times the angle swept. So the counterclockwise upper half circle gives $+B_0\pi i$; this is an old-final problem, worked out in [[§84 Behavior of Functions Near Isolated Singular Points#^ex-84-3|Example §84.3]] (its first part, for analytic $g$, is [[§47 Upper Bounds for Moduli of Contour Integrals#^ex-47-5|Example §47.5]](d)). An arc of angle $\alpha$ around a simple pole gives $\pm i\alpha B_0$; for $\alpha = 2\pi$ this is the residue theorem for one simple pole. For a pole of order $2$ or more the limit does not exist in general: $\int_{C_\rho} dz/z^2 = -2/\rho$ for the clockwise upper half circle about $0$.
 
 ^rem-89-1
 
@@ -76,7 +76,7 @@ When the integrand has a singular point on the real axis, the contour of §85 mu
 >
 > by integrating $e^{iz}/z$ around the indented contour of the figure below: $L_1$ is the interval $\rho \le x \le R$, then the semicircle $C_R$ counterclockwise, then $L_2$, the interval $-R \le x \le -\rho$, and the semicircle $C_\rho$ clockwise, with $0 < \rho < R$. The semicircle $C_\rho$ avoids the singularity of $e^{iz}/z$ at the origin.
 >
-> **Cauchy–Goursat.** $e^{iz}/z$ is analytic inside and on the contour ([[§50 Cauchy–Goursat Theorem|§50]]), so
+> **Cauchy–Goursat.** $e^{iz}/z$ is analytic inside and on the contour ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]), so
 >
 > $$
 > \int_{L_1}\frac{e^{iz}}{z}\,dz + \int_{L_2}\frac{e^{iz}}{z}\,dz = -\int_{C_\rho}\frac{e^{iz}}{z}\,dz - \int_{C_R}\frac{e^{iz}}{z}\,dz . \qquad (5)
@@ -102,7 +102,7 @@ When the integrand has a singular point on the real axis, the contour of §85 mu
 >
 > $e^{iz}/z$ has a simple pole at the origin with residue $1$, and Theorem §89.1 gives $\lim_{\rho\to0}\int_{C_\rho}\frac{e^{iz}}{z}\,dz = -\pi i$.
 >
-> **The large semicircle.** On $C_R$, $|1/z| = 1/R \to 0$, so by Jordan's lemma ([[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]], $a = 1$) $\lim_{R\to\infty}\int_{C_R}\frac{e^{iz}}{z}\,dz = 0$. (The bound of §47, $\frac1R\cdot\pi R = \pi$, would not do.)
+> **The large semicircle.** On $C_R$, $|1/z| = 1/R \to 0$, so by Jordan's lemma ([[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]], $a = 1$) $\lim_{R\to\infty}\int_{C_R}\frac{e^{iz}}{z}\,dz = 0$. (The bound of Theorem §47.2, $\frac1R\cdot\pi R = \pi$, would not do.)
 >
 > **Conclusion.** Letting $\rho \to 0$ in (7) and then $R \to \infty$: $2i\int_0^\infty\frac{\sin r}{r}\,dr = \pi i$, which is (4). The integral at $0$ is proper ($\sin r/r \to 1$), and the limits show that the improper integral at $\infty$ converges (conditionally: $\int_0^\infty|\sin x|/x\,dx = \infty$).
 >
@@ -145,22 +145,3 @@ When the integrand has a singular point on the real axis, the contour of §85 mu
 
 > [!remark]- Connections
 > - With $a = 0$, $b = 1$ this is $\int_0^\infty\frac{1 - \cos\lambda}{\lambda^2}\,d\lambda = \frac\pi2$, the value used at $x = 0$ for the triangular pulse in [[§14 Fourier Integral#^ex-14-3|341 Ex. §14.3]].
-
-> [!example] Example §89.3: The Counterclockwise Half Circle
-> Let $S_r$ be the upper half of the circle $|z| = r$, parametrized by $z(\theta) = re^{i\theta}$, $0 \le \theta \le \pi$ (counterclockwise).
->
-> **(a)** If $g$ is analytic in some open disk centered at $0$, then $\lim_{r\to0}\int_{S_r} g(z)\,dz = 0$. Indeed, choose $R > 0$ such that $g$ is analytic on the closed disk $|z| \le R$; $g$ is continuous there, so $|g| \le M$ on it ([[§18 Continuity|§18]], Theorem 4), and for $r \le R$, $\big|\int_{S_r} g\big| \le M\pi r \to 0$.
->
-> **(b)** If $f$ has a simple pole at $0$ with residue $B$, then $\lim_{r\to0}\int_{S_r} f(z)\,dz = \pi iB$. Indeed, $g(z) = f(z) - B/z$ has zero principal part at $0$, so it has a removable singularity there and extends to a function analytic in a disk about $0$. By (a), $\int_{S_r} g \to 0$, while
->
-> $$
-> \int_{S_r}\frac Bz\,dz = \int_0^{\pi}\frac{B}{re^{i\theta}}\,ire^{i\theta}\,d\theta = \pi iB
-> $$
->
-> for every $r$. This is Theorem §89.1 with the opposite orientation.
->
-> *The key bounds $\big|\int_{S_r} g\big|$ by $M\cdot 2\pi r$, calling $2\pi r$ the length of $S_r$; the length is $\pi r$, and the bound still tends to $0$.*
->
-> *Source: 342 practice final (Spring 2012), Q7*
-
-^ex-89-3
