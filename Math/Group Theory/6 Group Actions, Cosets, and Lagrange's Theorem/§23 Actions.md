@@ -166,7 +166,7 @@ tags: [group-theory, math493]
 *Uses:* [[§23 Actions#^def-23-1|Def. §23.1]], [[§23 Actions#^prop-23-2|§23.2]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]]
 
 > [!remark]- Connections
-> - Actions used to manufacture homomorphisms later: [[§29 G Acting on Coset Spaces#^prop-29-1|The Action of G on G/H]], [[§36 Sources of Normal Subgroups#^thm-36-5|§36.5]], [[§39 Simple Groups#^prop-39-10|The Pair-Partition Homomorphism]].
+> - Actions used to manufacture homomorphisms later: [[§29 G Acting on Coset Spaces#^prop-29-1|The Action of G on G/H]], [[§36 Sources of Normal Subgroups#^thm-36-5|§36.5]], [[§40 Simple Groups#^prop-40-10|The Pair-Partition Homomorphism]].
 > - Topological version: for a continuous action each translation is a homeomorphism with inverse the translation by the inverse, [[§10 Group Actions and Orbit Spaces#^lem-10-2|591 Lemma §10.2]], so the homomorphism lands in the homeomorphisms of X.
 
 > [!example] Example §23.3: Seeing the Permutations
@@ -254,7 +254,7 @@ tags: [group-theory, math493]
 *The embedding of a group of order $n$ into $GL_n(k)$: Cayley's theorem, relabelling, and the permutation representation, each injective. Their composite (blue) is the embedding of Corollary §23.6.*
 
 > [!remark]- Connections
-> - The small representations the next remark asks for begin with characters: [[§40 Characters#^rem-40-4|One-Dimensional Representations]].
+> - The small representations the next remark asks for begin with characters: [[§41 Characters#^rem-41-4|One-Dimensional Representations]].
 
 > [!remark] Remark: Why Cayley's Theorem Matters, and Why It Is Not the End
 > Cayley's theorem says that “abstract group” and “group of permutations” are the same notion: nothing is lost by studying only subgroups of symmetric groups. Its corollary is the first appearance of the idea behind the second half of the course — every finite group has a faithful [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-6|representation]] by matrices. The embedding is, however, very inefficient: a group of order $n$ is placed inside $S_n$, of order $n!$, or into $n \times n$ matrices. Much of representation theory is about finding the small, informative representations instead.

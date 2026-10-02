@@ -26,10 +26,10 @@ tags: [group-theory, hub]
 - [[§36 Sources of Normal Subgroups#^prop-36-6|Proposition §36.6: The Normal Core]]
 - [[§37 Quotient Groups#^thm-37-1|Theorem §37.1: G/N Is a Group]]
 - [[§38 The First Isomorphism Theorem#^ex-38-1|Example §38.1: The First Isomorphism Theorem in Action]]
-- [[§39 Simple Groups#^prop-39-6|Proposition §39.6: A_5 Is Simple]]
+- [[§40 Simple Groups#^prop-40-6|Proposition §40.6: A_5 Is Simple]]
 
 ## Connections
-- **Used for.** ord(g) divides |G| and g^|G| = e ([[§27 The Index and Lagrange's Theorem#^cor-27-3|§27.3]]), hence [[§27 The Index and Lagrange's Theorem#^cor-27-4|Fermat's Little Theorem]]. Also [[Groups of Prime Order Are Cyclic]] and the [[Orbit–Stabilizer Theorem]]. It rules out subgroups, e.g. S₃ has none of order 4 or 5 ([[§27 The Index and Lagrange's Theorem#^rem-27-1|Uses of Lagrange]]), and together with class sizes it proves [[§39 Simple Groups#^prop-39-6|A₅ Is Simple]].
+- **Used for.** ord(g) divides |G| and g^|G| = e ([[§27 The Index and Lagrange's Theorem#^cor-27-3|§27.3]]), hence [[§27 The Index and Lagrange's Theorem#^cor-27-4|Fermat's Little Theorem]]. Also [[Groups of Prime Order Are Cyclic]] and the [[Orbit–Stabilizer Theorem]]. It rules out subgroups, e.g. S₃ has none of order 4 or 5 ([[§27 The Index and Lagrange's Theorem#^rem-27-1|Uses of Lagrange]]), and together with class sizes it proves [[§40 Simple Groups#^prop-40-6|A₅ Is Simple]].
 - **The converse fails.** |A₄| = 12 but A₄ has no subgroup of order 6 ([[§27 The Index and Lagrange's Theorem#^ex-27-1|Ex. §27.1]]). Only prime divisors are guaranteed, by [[§27 The Index and Lagrange's Theorem#^thm-27-6|Cauchy's Theorem]] ([[§27 The Index and Lagrange's Theorem#^rem-27-2|A Partial Converse to Lagrange]]).
 - **Same idea elsewhere.** The 590 notes state it without proof ([[§21 Algebra Prerequisites꞉ Groups#^prop-21-1|590 §21.1]], part 3). For a subspace U of a finite vector space over 𝔽_p, |V| = |U| · |V/U| is Lagrange. Taking log_p gives dim V/U = dim V − dim U ([[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105]]), as in [[§38 The First Isomorphism Theorem#^rem-38-2|Rank–Nullity]].
 - **Coming later in the course.** The Sylow theorems give a converse for prime powers: G has a subgroup of order pᵏ whenever pᵏ divides |G|.

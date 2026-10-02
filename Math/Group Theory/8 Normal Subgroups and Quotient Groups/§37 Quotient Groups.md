@@ -144,14 +144,14 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§35 No
 ^prop-37-4
 
 > [!proof]+ Proof
-> The composite is the restriction of the projection $\pi$ ([[§37 Quotient Groups#^prop-37-2|§37.2]]) to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the [[§38 The First Isomorphism Theorem#^thm-38-4|Second Isomorphism Theorem]], §38.)
+> The composite is the restriction of the projection $\pi$ ([[§37 Quotient Groups#^prop-37-2|§37.2]]) to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the [[§39 The Second and Third Isomorphism Theorems#^thm-39-2|Second Isomorphism Theorem]], §38.)
 
 ^pf-37-4
 
 *Uses:* [[§37 Quotient Groups#^prop-37-2|§37.2]], [[§37 Quotient Groups#^def-37-2|Def. §37.2]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark]- Connections
-> - Re-proved from the Second Isomorphism Theorem: [[§38 The First Isomorphism Theorem#^cor-38-5|Subgroup Representatives, Again]] (§38.5).
+> - Re-proved from the Second Isomorphism Theorem: [[§39 The Second and Third Isomorphism Theorems#^cor-39-3|Subgroup Representatives, Again]] (§38.5).
 > - Vector-space analogue: a complement $W$ of $U$ ([[§5 Bases#^ladr-2-33|LADR 2.33]]) plays the role of $S$, with $V/U \cong W$; for groups such a subgroup need not exist ([[§37 Quotient Groups#^rem-37-3|Remark]] below).
 
 > [!remark] Remark: Life Is Especially Nice When $S$ Is a Subgroup

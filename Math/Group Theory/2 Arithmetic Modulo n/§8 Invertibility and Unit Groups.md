@@ -251,4 +251,4 @@ tags: [group-theory, math493]
 *Uses:* [[§3 Basic Examples of Groups#^def-3-3|Def. §3.3]], [[§7 The Group ℤ∕nℤ#^prop-7-1|§7.1]], [[§8 Invertibility and Unit Groups#^prop-8-3|§8.3]], [[§8 Invertibility and Unit Groups#^prop-8-1|§8.1]], [[§8 Invertibility and Unit Groups#^def-8-1|Def. §8.1]]
 
 > [!remark]- Connections
-> - Finite fields beyond $\mathbb{F}_p$: [[§39 Simple Groups#^ex-39-2|The Field F₉]] and the [[§39 Simple Groups#^thm-39-12|Classification of Finite Fields]].
+> - Finite fields beyond $\mathbb{F}_p$: [[§40 Simple Groups#^ex-40-2|The Field F₉]] and the [[§40 Simple Groups#^thm-40-12|Classification of Finite Fields]].

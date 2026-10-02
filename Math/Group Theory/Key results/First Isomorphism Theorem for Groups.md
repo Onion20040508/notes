@@ -20,16 +20,16 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§38 The First Isomorphism Theorem#^cor-38-2|Corollary §38.2: ∣G∣ = ∣Keralpha∣ · ∣Imalpha∣]]
-- [[§38 The First Isomorphism Theorem#^thm-38-4|Theorem §38.4: Second Isomorphism Theorem]]
-- [[§39 Simple Groups#^prop-39-10|Proposition §39.10: The Pair-Partition Homomorphism S_4 → S_3]]
-- [[§41 Commutators#^ex-41-1|Example §41.1: The Abelianization of Sₙ]]
+- [[§39 The Second and Third Isomorphism Theorems#^thm-39-2|Theorem §39.2: Second Isomorphism Theorem]]
+- [[§40 Simple Groups#^prop-40-10|Proposition §40.10: The Pair-Partition Homomorphism S_4 → S_3]]
+- [[§42 Commutators#^ex-42-1|Example §42.1: The Abelianization of Sₙ]]
 
 ## Used in (Topology)
 - [[§21 Algebra Prerequisites꞉ Groups#^def-21-11|Definition §21.11: Group Presentation]]
 - [[§29 The Seifert–van Kampen Theorem#^thm-29-1|Theorem §29.1: Seifert-van Kampen Theorem (Munkres 70.2)]]
 
 ## Connections
-- **Used for.** Identifying quotients: Sₙ/Aₙ ≅ {±1}, GL_n(k)/SL_n(k) ≅ k^×, G/Z(G) ≅ Inn(G) ([[§38 The First Isomorphism Theorem#^ex-38-1|Ex. §38.1]]); S₄/V ≅ S₃ ([[§39 Simple Groups#^prop-39-10|§39.10]]); the abelianization of Sₙ ([[§41 Commutators#^ex-41-1|Ex. §41.1]]). Cayley's theorem and PS 3.2 are special cases ([[§38 The First Isomorphism Theorem#^rem-38-3|PS 3.1 and PS 3.2 as Instances]]).
+- **Used for.** Identifying quotients: Sₙ/Aₙ ≅ {±1}, GL_n(k)/SL_n(k) ≅ k^×, G/Z(G) ≅ Inn(G) ([[§38 The First Isomorphism Theorem#^ex-38-1|Ex. §38.1]]); S₄/V ≅ S₃ ([[§40 Simple Groups#^prop-40-10|§40.10]]); the abelianization of Sₙ ([[§42 Commutators#^ex-42-1|Ex. §42.1]]). Cayley's theorem and PS 3.2 are special cases ([[§38 The First Isomorphism Theorem#^rem-38-3|PS 3.1 and PS 3.2 as Instances]]).
 - **The target is the image.** G/Ker α ≅ Im α, and images need not be normal: ℤ/2ℤ → S₃, a ↦ (1 2)ᵃ ([[§38 The First Isomorphism Theorem#^rem-38-1|Images Are Quotients]], [[§36 Sources of Normal Subgroups#^prop-36-3|§36.3]]). Vector spaces have no analogue of this asymmetry.
 - **Same idea elsewhere.** The vector-space version is the [[First isomorphism theorem]] (LADR 3.107). Counting gives |G| = |Ker α| · |Im α| ([[§38 The First Isomorphism Theorem#^cor-38-2|§38.2]]), the group form of rank–nullity ([[Fundamental theorem of linear maps]], [[§38 The First Isomorphism Theorem#^rem-38-2|Rank–Nullity]]). In topology a continuous surjection induces a homeomorphism from the quotient exactly when it is a quotient map ([[§12 Quotient Topology#^cor-12-4|590 §12.4]]). The 590 notes use the group version to write presentations as F/N ([[§21 Algebra Prerequisites꞉ Groups#^def-21-11|Group Presentation]]).
 - **Coming later in the course.** The second and third isomorphism theorems, and the correspondence between subgroups of G/N and subgroups of G containing N.

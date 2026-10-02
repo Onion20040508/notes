@@ -39,7 +39,7 @@ The cyclic group $\mathbb{Z}/n\mathbb{Z}$ of residue classes modulo $n$ under ad
 - Every group of prime order $p$ is isomorphic to $\mathbb{Z}/p\mathbb{Z}$ ([[§27 The Index and Lagrange's Theorem#^thm-27-7|§27]])
 - $\mathbb{Z}/n\mathbb{Z}$ is the quotient of $\mathbb{Z}$ by $n\mathbb{Z}$ ([[§37 Quotient Groups#^ex-37-1|§37]])
 - The First Isomorphism Theorem for $\mathbb{Z}/6\mathbb{Z} \to U_7$ ([[§38 The First Isomorphism Theorem#^ex-38-1|§38]])
-- The abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ ([[§39 Simple Groups#^thm-39-1|§39]])
+- The abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ ([[§40 Simple Groups#^thm-40-1|§40]])
 
 ## $(\mathbb{Z}/n\mathbb{Z}, +)$ is a group; the nonzero classes form a group under multiplication iff $n$ is prime
 ![[§3 Basic Examples of Groups#^ex-3-1]]
@@ -141,4 +141,4 @@ The cyclic group $\mathbb{Z}/n\mathbb{Z}$ of residue classes modulo $n$ under ad
 ![[§38 The First Isomorphism Theorem#^ex-38-1]]
 
 ## The abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$
-![[§39 Simple Groups#^thm-39-1]]
+![[§40 Simple Groups#^thm-40-1]]

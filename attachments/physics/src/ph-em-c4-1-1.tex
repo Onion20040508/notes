@@ -1,0 +1,18 @@
+% Figure for Electromagnetism §C4.1 (Theorem §C4.1.6): surface charge on oblate spheroids flattening to a disk; sigma/(Q/4 pi a^2) = 1/sqrt(1 - rho^2 (1 - c^2)) with a = 1.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=0.62\textwidth, height=0.42\textwidth,
+  xmin=0, xmax=1.08, ymin=0, ymax=4.6,
+  xlabel={$\rho/a$}, ylabel={$\sigma\,/\,(Q/4\pi a^2)$},
+  xtick={0,0.25,0.5,0.75,1}, ytick={0,1,2,3,4},
+  legend style={draw=none, fill=none, font=\scriptsize, at={(0.03,0.97)}, anchor=north west}, legend cell align=left]
+  \addplot[figG, domain=0:1, samples=50] {1/sqrt(1 - x^2*(1 - 1))};
+  \addlegendentry{$c = a$ (sphere)}
+  \addplot[figO, domain=0:1, samples=120] {1/sqrt(1 - x^2*(1 - 0.25))};
+  \addlegendentry{$c = 0.5\,a$}
+  \addplot[figB, domain=0:1, samples=200] {1/sqrt(1 - x^2*(1 - 0.0625))};
+  \addlegendentry{$c = 0.25\,a$}
+  \addplot[figR, dashed, domain=0:0.9765, samples=300] {1/sqrt(1 - x^2)};
+  \addlegendentry{$c = 0$ (disk, each face)}
+  \draw[black!55, thin, dotted] (axis cs:1,0) -- (axis cs:1,4.6);
+\end{axis}
+\end{tikzpicture}

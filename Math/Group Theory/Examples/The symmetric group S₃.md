@@ -31,9 +31,9 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 - The inclusion of $\langle (1\,2) \rangle$: images need not be normal ([[§36 Sources of Normal Subgroups#^prop-36-3|§36]])
 - The normal subgroups $\{e\}$, $A_3$, $S_3$ as unions of conjugacy classes ([[§36 Sources of Normal Subgroups#^ex-36-3|§36]])
 - $S_3/A_3$ is cyclic of order $2$ ([[§37 Quotient Groups#^ex-37-1|§37]])
-- $S_3$ as the quotient $S_4/V$ ([[§39 Simple Groups#^prop-39-10|§39]])
-- $PSL_2(\mathbb{F}_2) \cong S_3$, which is not simple ([[§39 Simple Groups#^ex-39-3|§39]])
-- The identity $S_3 \to S_3$ is not constant on conjugacy classes, so characters need an abelian target ([[§40 Characters#^rem-40-3|§40]])
+- $S_3$ as the quotient $S_4/V$ ([[§40 Simple Groups#^prop-40-10|§40]])
+- $PSL_2(\mathbb{F}_2) \cong S_3$, which is not simple ([[§40 Simple Groups#^ex-40-3|§40]])
+- The identity $S_3 \to S_3$ is not constant on conjugacy classes, so characters need an abelian target ([[§41 Characters#^rem-41-3|§41]])
 
 ## The mixed hypothesis $gh_1 = h_2g$ does not cancel
 ![[§2 First Consequences of the Axioms#^ex-2-1]]
@@ -111,10 +111,10 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 ![[§37 Quotient Groups#^ex-37-1]]
 
 ## $S_3$ as the quotient $S_4/V$
-![[§39 Simple Groups#^prop-39-10]]
+![[§40 Simple Groups#^prop-40-10]]
 
 ## $PSL_2(\mathbb{F}_2) \cong S_3$, which is not simple
-![[§39 Simple Groups#^ex-39-3]]
+![[§40 Simple Groups#^ex-40-3]]
 
 ## The identity $S_3 \to S_3$ is not constant on conjugacy classes, so characters need an abelian target
-![[§40 Characters#^rem-40-3]]
+![[§41 Characters#^rem-41-3]]

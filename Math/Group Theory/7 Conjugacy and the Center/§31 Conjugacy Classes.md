@@ -23,7 +23,7 @@ tags: [group-theory, math493]
 ^def-31-1
 
 > [!remark]- Connections
-> - Normal subgroups are exactly the subgroups that are unions of classes: [[§36 Sources of Normal Subgroups#^prop-36-7|§36.7]]; characters are constant on classes: [[§40 Characters#^prop-40-1|§40.1]].
+> - Normal subgroups are exactly the subgroups that are unions of classes: [[§36 Sources of Normal Subgroups#^prop-36-7|§36.7]]; characters are constant on classes: [[§41 Characters#^prop-41-1|§41.1]].
 
 > [!theorem] Lemma §31.1: Conjugation Relabels the Entries
 > Let $\sigma \in S_n$. For any cycle,
@@ -135,7 +135,7 @@ tags: [group-theory, math493]
 *Uses:* [[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]], [[§31 Conjugacy Classes#^def-31-2|Def. §31.2]], [[§31 Conjugacy Classes#^lem-31-1|§31.1]]
 
 > [!remark]- Connections
-> - In $A_n$ a class of $S_n$ can split: [[§39 Simple Groups#^ex-39-1|Ex. §39.1]]; for $3$-cycles and $n \geq 5$ it does not: [[§39 Simple Groups#^lem-39-8|§39.8]].
+> - In $A_n$ a class of $S_n$ can split: [[§40 Simple Groups#^ex-40-1|Ex. §40.1]]; for $3$-cycles and $n \geq 5$ it does not: [[§40 Simple Groups#^lem-40-8|§40.8]].
 
 > [!example] Example §31.1: Conjugating One Permutation to Another
 > In $S_5$, let $\sigma = (1\,2\,3)(4\,5)$ and $\sigma' = (2\,5\,1)(3\,4)$; both have cycle type $(3,2)$. Reading off the entries in order,

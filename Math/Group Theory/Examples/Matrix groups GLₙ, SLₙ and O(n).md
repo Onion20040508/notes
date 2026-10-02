@@ -27,11 +27,11 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 - $SL_n(\mathbb{R}) = \operatorname{Ker}(\det)$ is normal ([[§36 Sources of Normal Subgroups#^ex-36-2|§36]])
 - Normal and non-normal subgroups of $GL_2(\mathbb{R})$ ([[§36 Sources of Normal Subgroups#^prop-36-8|§36]])
 - $GL_n(k)/SL_n(k) \cong k^\times$ ([[§38 The First Isomorphism Theorem#^ex-38-1|§38]])
-- The projective special linear group $PSL_n(F) = SL_n(F)/Z$ ([[§39 Simple Groups#^def-39-2|§39]])
-- $PSL_n(F)$ is simple, with two exceptions ([[§39 Simple Groups#^thm-39-13|§39]])
-- The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$ ([[§39 Simple Groups#^ex-39-3|§39]])
-- $\det$ is a character of $GL_n(k)$ ([[§40 Characters#^ex-40-1|§40]])
-- Characters are the representations into $GL_1(k) = k^\times$ ([[§40 Characters#^rem-40-4|§40]])
+- The projective special linear group $PSL_n(F) = SL_n(F)/Z$ ([[§40 Simple Groups#^def-40-2|§40]])
+- $PSL_n(F)$ is simple, with two exceptions ([[§40 Simple Groups#^thm-40-13|§40]])
+- The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$ ([[§40 Simple Groups#^ex-40-3|§40]])
+- $\det$ is a character of $GL_n(k)$ ([[§41 Characters#^ex-41-1|§41]])
+- Characters are the representations into $GL_1(k) = k^\times$ ([[§41 Characters#^rem-41-4|§41]])
 
 ## $GL_n(k)$ is a group, non-abelian for $n \geq 2$
 ![[§3 Basic Examples of Groups#^def-3-6]]
@@ -97,16 +97,16 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 ![[§38 The First Isomorphism Theorem#^ex-38-1]]
 
 ## The projective special linear group $PSL_n(F) = SL_n(F)/Z$
-![[§39 Simple Groups#^def-39-2]]
+![[§40 Simple Groups#^def-40-2]]
 
 ## $PSL_n(F)$ is simple, with two exceptions
-![[§39 Simple Groups#^thm-39-13]]
+![[§40 Simple Groups#^thm-40-13]]
 
 ## The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$
-![[§39 Simple Groups#^ex-39-3]]
+![[§40 Simple Groups#^ex-40-3]]
 
 ## $\det$ is a character of $GL_n(k)$
-![[§40 Characters#^ex-40-1]]
+![[§41 Characters#^ex-41-1]]
 
 ## Characters are the representations into $GL_1(k) = k^\times$
-![[§40 Characters#^rem-40-4]]
+![[§41 Characters#^rem-41-4]]

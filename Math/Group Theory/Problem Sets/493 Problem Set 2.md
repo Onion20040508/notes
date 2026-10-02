@@ -38,7 +38,7 @@ tags: [group-theory, math493]
 
 ^hw-2-3
 
-*Treated in [[§40 Characters|§40]] ([[§40 Characters#^thm-40-2|A Common Eigenvector Yields a Character]]; (2): [[§40 Characters#^ex-40-2|Ex. §40.2]]).*
+*Treated in [[§41 Characters|§41]] ([[§41 Characters#^thm-41-2|A Common Eigenvector Yields a Character]]; (2): [[§41 Characters#^ex-41-2|Ex. §41.2]]).*
 
 > [!question] Problem 2.4: Characters and Commutators
 > Let $G$ and $A$ be groups with $A$ abelian and $\chi: G \to A$ a homomorphism (a **character**). An element $h \in G$ is a **commutator** if $h = g_1g_2g_1^{-1}g_2^{-1}$ for some $g_1, g_2 \in G$.
@@ -50,7 +50,7 @@ tags: [group-theory, math493]
 
 ^hw-2-4
 
-*Treated in [[§40 Characters|§40]] ([[§40 Characters#^prop-40-1|Characters Are Constant on Conjugacy Classes]]) and [[§41 Commutators|§41]] (Commutators: (2) [[§41 Commutators#^prop-41-1|§41.1]], (3) [[§41 Commutators#^prop-41-2|§41.2]], (4) [[§41 Commutators#^prop-41-3|§41.3]]).*
+*Treated in [[§41 Characters|§41]] ([[§41 Characters#^prop-41-1|Characters Are Constant on Conjugacy Classes]]) and [[§42 Commutators|§42]] (Commutators: (2) [[§42 Commutators#^prop-42-1|§42.1]], (3) [[§42 Commutators#^prop-42-2|§42.2]], (4) [[§42 Commutators#^prop-42-3|§42.3]]).*
 
 > [!question] Problem 2.5: Groups of Prime Order
 > Let $p$ be a prime and $G$ a group of order $p$. Show that $G \cong \mathbb{Z}/p\mathbb{Z}$.

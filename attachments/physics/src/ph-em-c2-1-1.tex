@@ -1,0 +1,31 @@
+% Figure for Electromagnetism §C2.1 (Theorem §C2.1.6, after Zangwill §3.3.5): equipotentials (confocal ellipses, blue) and field lines (confocal hyperbolas, red) of a uniformly charged segment from z = -L to z = L, in a plane through its axis; L = 1 unit.
+\begin{tikzpicture}[scale=1.15, >={Stealth[length=1.6mm]}]
+  \begin{scope}
+    \clip (-3.3,-2.3) rectangle (3.3,2.3);
+    % field lines: hyperbolas z = t cosh(mu), s = sqrt(1-t^2) sinh(mu)
+    \foreach \t in {-0.9,-0.7,-0.45,-0.2,0.2,0.45,0.7,0.9} {
+      \draw[figR!80, thin] plot[domain=-2.6:2.6, samples=90, smooth, variable=\m] ({\t*cosh(\m)},{sqrt(1-\t*\t)*sinh(\m)});
+    }
+    \draw[figR!80, thin] (0,-2.3) -- (0,2.3);
+    \draw[figR!80, thin] (1,0) -- (3.3,0);
+    \draw[figR!80, thin] (-1,0) -- (-3.3,0);
+    % equipotentials: ellipses with semi-axes u and sqrt(u^2-1)
+    \foreach \u in {1.05,1.2,1.5,2,2.7} {
+      \draw[figB, line width=0.8pt] plot[domain=0:360, samples=120, smooth, variable=\x] ({\u*cos(\x)},{sqrt(\u*\u-1)*sin(\x)});
+    }
+  \end{scope}
+  % arrows on a few field lines (direction away from the positive segment)
+  \foreach \t/\m in {0.45/1.2,-0.45/1.2,0.45/-1.2,-0.45/-1.2,0.9/0.8,-0.9/0.8,0.9/-0.8,-0.9/-0.8} {
+    \pgfmathsetmacro{\za}{\t*cosh(\m)} \pgfmathsetmacro{\sa}{sqrt(1-\t*\t)*sinh(\m)}
+    \pgfmathsetmacro{\zb}{\t*cosh(\m*1.08)} \pgfmathsetmacro{\sb}{sqrt(1-\t*\t)*sinh(\m*1.08)}
+    \draw[->, figR, thick] (\za,\sa) -- (\zb,\sb);
+  }
+  % the charged segment and foci
+  \draw[line width=2.2pt, black] (-1,0) -- (1,0);
+  \fill (-1,0) circle (1.4pt) (1,0) circle (1.4pt);
+  \node[font=\scriptsize, fill=white, inner sep=0.5pt] at (-1,-0.23) {$-L$};
+  \node[font=\scriptsize, fill=white, inner sep=0.5pt] at (1,-0.23) {$L$};
+  \draw[->, thin, black!55] (-3.3,-2.45) -- (3.5,-2.45) node[right, font=\scriptsize] {$z$};
+  \node[font=\scriptsize, figB, fill=white, inner sep=1pt] at (2.35,1.85) {$d_1 + d_2 = 2u$};
+  \node[font=\scriptsize, figR, fill=white, inner sep=1pt] at (-2.35,1.95) {$d_2 - d_1 = 2t$};
+\end{tikzpicture}

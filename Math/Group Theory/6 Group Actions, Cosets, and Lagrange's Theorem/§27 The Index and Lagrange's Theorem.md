@@ -165,7 +165,7 @@ tags: [group-theory, math493]
 *Uses:* [[§4 Subgroups#^prop-4-8|§4.8]], [[§4 Subgroups#^prop-4-5|§4.5]], [[§17 Cyclic Groups#^prop-17-3|§17.3]], [[§27 The Index and Lagrange's Theorem#^thm-27-2|§27.2]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§17 Cyclic Groups#^thm-17-1|§17.1]], [[§4 Subgroups#^lem-4-4|§4.4]]
 
 > [!remark]- Connections
-> - Among abelian groups these are exactly the simple ones: [[§39 Simple Groups#^thm-39-1|Abelian Simple Groups, §39.1]].
+> - Among abelian groups these are exactly the simple ones: [[§40 Simple Groups#^thm-40-1|Abelian Simple Groups, §40.1]].
 
 > [!theorem] Corollary §27.8: Groups of Prime Order Have No Proper Nontrivial Subgroups
 > If $|G| = p$ is prime, the only subgroups of $G$ are $\{e\}$ and $G$.

@@ -177,7 +177,7 @@ tags: [linear-algebra]
 > $$
 
 > [!remark]- Connections
-> - In group language: det is constant on conjugacy classes of the general linear group, [[§31 Conjugacy Classes#^def-31-3|493 Def. §31.3]], as every character is, [[§40 Characters#^prop-40-1|493 Prop. §40.1]].
+> - In group language: det is constant on conjugacy classes of the general linear group, [[§31 Conjugacy Classes#^def-31-3|493 Def. §31.3]], as every character is, [[§41 Characters#^prop-41-1|493 Prop. §41.1]].
 > - Computational version: [[§21 Properties of Determinants#^cor-21-10|235 Cor. §21.10]] (part 5: $\det(PAP^{-1})=\det A$) and [[§33 The Characteristic Equation#^thm-33-6|235 Thm. §33.6]].
 
 > [!theorem] Theorem 9.53: Determinant of operator equals determinant of its matrix

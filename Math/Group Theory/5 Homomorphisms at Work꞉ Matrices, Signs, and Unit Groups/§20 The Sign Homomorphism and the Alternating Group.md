@@ -145,7 +145,7 @@ tags: [group-theory, math493]
 ^def-20-3
 
 > [!remark]- Connections
-> - As a kernel, $A_n$ is normal: [[§36 Sources of Normal Subgroups#^prop-36-2|Kernels Are Normal]]; it is simple for $n \geq 5$: [[§39 Simple Groups#^thm-39-9|§39.9]].
+> - As a kernel, $A_n$ is normal: [[§36 Sources of Normal Subgroups#^prop-36-2|Kernels Are Normal]]; it is simple for $n \geq 5$: [[§40 Simple Groups#^thm-40-9|§40.9]].
 
 > [!theorem] Proposition §20.5: Size of $A_n$
 > For $n \geq 2$, $\operatorname{sgn}$ is surjective and $|A_n| = n!/2$: exactly half the permutations are even.
@@ -225,7 +225,7 @@ tags: [group-theory, math493]
 *Uses:* [[§20 The Sign Homomorphism and the Alternating Group#^lem-20-8|§20.8]], [[§20 The Sign Homomorphism and the Alternating Group#^cor-20-4|§20.4]], [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|§20.3]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§4 Subgroups#^prop-4-7|§4.7]], [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-7|§20.7]], [[§20 The Sign Homomorphism and the Alternating Group#^lem-20-6|§20.6]], [[§11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]]
 
 > [!remark]- Connections
-> - 3-cycles drive the simplicity of $A_n$: [[§39 Simple Groups#^lem-39-8|§39.8]], [[§39 Simple Groups#^thm-39-9|§39.9]]; and they are commutators: [[§41 Commutators#^prop-41-2|§41.2]], [[§41 Commutators#^thm-41-5|The Commutator Subgroup of Sₙ]].
+> - 3-cycles drive the simplicity of $A_n$: [[§40 Simple Groups#^lem-40-8|§40.8]], [[§40 Simple Groups#^thm-40-9|§40.9]]; and they are commutators: [[§42 Commutators#^prop-42-2|§42.2]], [[§42 Commutators#^thm-42-5|The Commutator Subgroup of Sₙ]].
 
 > [!definition] Definition §20.4: Alternating Polynomial
 > A polynomial $f \in \mathbb{Q}[x_1, \ldots, x_n]$ is **alternating** if $\sigma \cdot f = \operatorname{sgn}(\sigma) f$ for every $\sigma \in S_n$: fixed by even permutations and negated by odd ones. (Compare *symmetric*, $\sigma \cdot f = f$ for all $\sigma$; [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-3|Def. §19.3]].) By the [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-2|Three Formulas for the Sign]], $\Delta$ is alternating.
@@ -247,7 +247,7 @@ tags: [group-theory, math493]
 *Uses:* [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-2|§20.2]], [[§20 The Sign Homomorphism and the Alternating Group#^def-20-2|Def. §20.2]], [[§20 The Sign Homomorphism and the Alternating Group#^def-20-3|Def. §20.3]]
 
 > [!remark]- Connections
-> - In the language of actions: $A_n = \operatorname{Stab}(\Delta)$ ([[§24 Stabilizers and Fixed Points#^def-24-1|Def. §24.1]]); $\Delta$ as a common eigenvector giving the sign character: [[§40 Characters#^ex-40-2|Ex. §40.2]].
+> - In the language of actions: $A_n = \operatorname{Stab}(\Delta)$ ([[§24 Stabilizers and Fixed Points#^def-24-1|Def. §24.1]]); $\Delta$ as a common eigenvector giving the sign character: [[§41 Characters#^ex-41-2|Ex. §41.2]].
 
 > [!remark] Remark: The Origin of the Names
 > This is the historical origin of the names: the symmetric group is attached to the [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-3|symmetric polynomials]], and the alternating group is the stabilizer of the alternating polynomial $\Delta$ (whose square, the discriminant, is symmetric). The homomorphism $\operatorname{sgn}$ is also the first nontrivial [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-6|representation]] of $S_n$ into $GL_1 = \mathbb{Q}^\times$, alongside the permutation representation $\sigma \mapsto M(\sigma)$ into $GL_n$.

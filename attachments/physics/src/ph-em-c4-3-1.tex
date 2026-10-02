@@ -1,0 +1,29 @@
+% Figure for Electromagnetism §C4.3 (Example §C4.3.1): the two elementary states of a ball (radius a) inside a concentric shell (radius b); kappa = 4 pi eps0 a b/(b - a).
+\begin{tikzpicture}[>={Stealth[length=2mm]}, font=\small]
+  \def\ra{0.75}\def\rb{1.55}
+  % ---- panel (a): ball at 1, shell grounded
+  \begin{scope}
+    \foreach \t in {15,45,...,345} \draw[->, figB, thin] ({(\ra+0.05)*cos(\t)},{(\ra+0.05)*sin(\t)}) -- ({(\rb-0.06)*cos(\t)},{(\rb-0.06)*sin(\t)});
+    \fill[figR!20] (0,0) circle (\ra); \draw[figR, thick] (0,0) circle (\ra);
+    \draw[black!70, very thick] (0,0) circle (\rb);
+    \node[figR] at (0,0.17) {$\tilde V_1 = 1$};
+    \node[font=\scriptsize, figR] at (0,-0.28) {$Q = +\kappa$};
+    \node[font=\scriptsize, black!70, fill=white, inner sep=1pt] at (0,-\rb+0.22) {$-\kappa$};
+    \node[font=\scriptsize, black!55, anchor=west] at ({(\rb+0.12)*cos(-35)},{(\rb+0.12)*sin(-35)}) {outer face $0$};
+    \node[font=\scriptsize, black!70] at (0,\rb+0.3) {shell: $\tilde V_1 = 0$};
+    \node at (0,-2.55) {(a) $C_{11} = \kappa$, $C_{21} = -\kappa$};
+  \end{scope}
+  % ---- panel (b): ball grounded, shell at 1
+  \begin{scope}[xshift=5.4cm]
+    \foreach \t in {15,45,...,345} \draw[->, figB, thin] ({(\rb-0.06)*cos(\t)},{(\rb-0.06)*sin(\t)}) -- ({(\ra+0.05)*cos(\t)},{(\ra+0.05)*sin(\t)});
+    \foreach \t in {0,45,...,315} \draw[->, figB, thin] ({(\rb+0.06)*cos(\t)},{(\rb+0.06)*sin(\t)}) -- ({(\rb+0.7)*cos(\t)},{(\rb+0.7)*sin(\t)});
+    \fill[black!10] (0,0) circle (\ra); \draw[black!70, thick] (0,0) circle (\ra);
+    \draw[figR, very thick] (0,0) circle (\rb);
+    \node[black!70] at (0,0.17) {$\tilde V_2 = 0$};
+    \node[font=\scriptsize, black!70] at (0,-0.28) {$Q = -\kappa$};
+    \node[font=\scriptsize, figR, fill=white, inner sep=1pt] at (0,-\rb+0.22) {$+\kappa$};
+    \node[font=\scriptsize, figR, anchor=west, fill=white, inner sep=1pt] at ({(\rb+0.3)*cos(-68)},{(\rb+0.3)*sin(-68)}) {outer face $4\pi\varepsilon_0 b$};
+    \node[font=\scriptsize, figR, fill=white, inner sep=1pt] at (0,\rb+0.95) {shell: $\tilde V_2 = 1$};
+    \node at (0,-2.55) {(b) $C_{12} = -\kappa$, $C_{22} = \kappa + 4\pi\varepsilon_0 b$};
+  \end{scope}
+\end{tikzpicture}
