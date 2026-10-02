@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, App. A §§A.6–A.8 and the saddle-point computation of Ch. 2 §2.2 · DLMF §§10.25–10.40 and Abramowitz & Stegun §9.6–9.7 (cited in the user's notes).*
 
-The two-point functions of the free field are Gaussian integrals in disguise, evaluated at a saddle or summed into a modified Bessel function $K_\nu$. Two of the tools already have homes in Quantum Mechanics and are only recalled here: the Gaussian and Fresnel integrals with complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]) and the stationary-phase formula ([[§C4.2 The Feynman Path Integral#^thm-c4-2-5|QM Theorem §C4.2.5]]); Laplace's method appears inline in Stirling's formula ([[§B4.1 Probability Distributions and the Gaussian#^thm-b4-1-5|TH Theorem §B4.1.5]]). New here: the $n$-dimensional Gaussian Fourier transform with Schwinger's parametrization, steepest descent through a *complex* saddle and why it fixes the exponential factor, and the function $K_\nu$ with everything the course uses derived from one integral representation. The single evaluation of a two-point function in terms of $K_1$ is [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-6|Theorem §C2.5.6]]; this section supplies its tools.
+The two-point functions of the free field are Gaussian integrals in disguise, evaluated at a saddle or summed into a modified Bessel function $K_\nu$. Two of the tools already have homes in Quantum Mechanics and are only recalled here: the Gaussian and Fresnel integrals with complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]) and the stationary-phase formula ([[§C4.2 The Feynman Path Integral#^thm-c4-2-5|QM Theorem §C4.2.5]]); Laplace's method appears inline in Stirling's formula ([[§B4.1 Probability Distributions and the Gaussian#^thm-b4-1-5|TH Theorem §B4.1.5]]). New here: the $n$-dimensional Gaussian Fourier transform with Schwinger's parametrization, steepest descent through a *complex* saddle and why it fixes the exponential factor, and the function $K_\nu$ with everything the course uses derived from one integral representation. The single evaluation of a two-point function in terms of $K_1$ is [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-8|Theorem §C2.5.8]]; this section supplies its tools.
 
 ## Gaussian integrals
 
@@ -31,16 +31,26 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 ^thm-ca-3-1
 
 > [!derivation]- Derivation
-> *1.* The integrand factorizes over the $n$ components. Each factor is [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]] with $a = s$, $b = ix_k$: $\frac{1}{2\pi}\sqrt{\pi/s}\,e^{-x_k^2/4s} = (4\pi s)^{-1/2}e^{-x_k^2/4s}$.
+> **Step 1** (factorize). $\mathbf p^2 = \sum_kp_k^2$ and $\mathbf p\cdot\mathbf x = \sum_kp_kx_k$, so the integrand is a product of $n$ one-dimensional integrands and the integral is the product $\prod_{k=1}^n\int\frac{dp_k}{2\pi}e^{-sp_k^2 + ip_kx_k}$ (absolutely convergent since $\operatorname{Re}s > 0$).
 >
-> *2.* $\int_0^\infty e^{-sA}ds = 1/A$ converges because $|e^{-sA}| = e^{-s\operatorname{Re}A}$. For general $\nu$, substitute $u = sA$ for real $A > 0$ to get $\Gamma(\nu)/A^\nu$ ([[§B4.1 Probability Distributions and the Gaussian#^def-b4-1-5|TH Def. §B4.1.5]]); both sides are analytic in $A$ on $\operatorname{Re}A > 0$, so they agree there ([[§CA.2 Contour Integration#^thm-ca-2-3|Theorem §CA.2.3]]).
+> **Step 2** (one factor). [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]] with $a = s$, $b = ix_k$: $\frac{1}{2\pi}\sqrt{\frac\pi s}\,e^{(ix_k)^2/4s} = \frac{1}{\sqrt{4\pi s}}\,e^{-x_k^2/4s}$.
+>
+> **Step 3** (multiply). $\prod_k(4\pi s)^{-1/2}e^{-x_k^2/4s} = (4\pi s)^{-n/2}e^{-\mathbf x^2/4s}$.
+>
+> **Step 4** (part 2, $\nu = 1$). $\int_0^\infty e^{-sA}ds = \bigl[-e^{-sA}/A\bigr]_0^\infty = 1/A$; the boundary term at $\infty$ vanishes because $|e^{-sA}| = e^{-s\operatorname{Re}A}$.
+>
+> **Step 5** (part 2, general $\nu$). For real $A > 0$ substitute $u = sA$, $ds = du/A$: $\int_0^\infty s^{\nu-1}e^{-sA}ds = A^{-\nu}\int_0^\infty u^{\nu-1}e^{-u}du = \Gamma(\nu)A^{-\nu}$ ([[§B4.1 Probability Distributions and the Gaussian#^def-b4-1-5|TH Def. §B4.1.5]]). Both sides are analytic in $A$ on $\operatorname{Re}A > 0$ (principal branch of $A^{-\nu}$), so they agree there ([[§CA.2 Contour Integration#^thm-ca-2-3|Theorem §CA.2.3]]).
+>
+> **What the derivation shows.**
+> - With $s$ read as a proper time, $e^{-s\mathbf p^2}$ is a heat kernel; Schwinger's trick trades a denominator that couples the components for an exponential that factorizes → [[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-3-1|Remark: Why the parametrization helps]].
+> - Used in: the Euclidean evaluation of the Wightman function ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-8|Theorem §C2.5.8]], Steps 3–4), with $n = 1$ and $n = 3$.
 
 ^der-ca-3-1
 
 *Uses:* [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]], [[§B4.1 Probability Distributions and the Gaussian#^def-b4-1-5|TH Def. §B4.1.5]], [[§CA.2 Contour Integration#^thm-ca-2-3|Theorem §CA.2.3]]
 
 > [!remark] Remark: Why the parametrization helps
-> Schwinger's trick trades a denominator, which couples the components of $\mathbf p$ through $\mathbf p^2 + m^2$, for an exponential, which factorizes. Every momentum integral then becomes a product of one-dimensional Gaussians, and the remaining single integral over $s$ is where the special function appears: for the Euclidean propagator it is $\int ds\,s^{-2}e^{-sm^2 - R^2/4s}$, a $K_1$ ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-6|Theorem §C2.5.6]]). With $s$ read as a proper time, $e^{-s\mathbf p^2}$ is a heat kernel, the Euclidean version of the free propagator of [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]]; loop integrals (QFT C7, planned) are done the same way.
+> Schwinger's trick trades a denominator, which couples the components of $\mathbf p$ through $\mathbf p^2 + m^2$, for an exponential, which factorizes. Every momentum integral then becomes a product of one-dimensional Gaussians, and the remaining single integral over $s$ is where the special function appears: for the Euclidean propagator it is $\int ds\,s^{-2}e^{-sm^2 - R^2/4s}$, a $K_1$ ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-8|Theorem §C2.5.8]]). With $s$ read as a proper time, $e^{-s\mathbf p^2}$ is a heat kernel, the Euclidean version of the free propagator of [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]]; loop integrals (QFT C7, planned) are done the same way.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2, App. A §A.6*
 
@@ -62,9 +72,26 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 ^thm-ca-3-2
 
 > [!derivation]- Derivation
-> *1.* Near $p_0$, $\Phi = \Phi(p_0) - \frac12|\Phi''(p_0)|(p - p_0)^2 + O((p - p_0)^3)$, and only $|p - p_0| \lesssim \lambda^{-1/2}$ contributes; elsewhere the integrand is smaller by a factor $e^{-c\lambda}$. Replacing $f$ by $f(p_0)$ and extending the Gaussian to the whole line ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]], real $a$) gives the formula, with relative error $O(1/\lambda)$ from the next Taylor terms.
+> **Step 1** (Laplace: localize). Near $p_0$, $\Phi(p) = \Phi(p_0) - \frac12|\Phi''(p_0)|(p - p_0)^2 + O((p - p_0)^3)$. Outside $|p - p_0| < \delta$ the integrand is smaller than at $p_0$ by a factor $e^{-c\lambda}$ for some $c > 0$, so only a neighbourhood contributes.
 >
-> *2.* By Cauchy's theorem ([[§CA.2 Contour Integration#^thm-ca-2-2|Theorem §CA.2.2]]) move the contour through $p_0$. Near it $\Phi \simeq \Phi(p_0) + \frac12\Phi''(p_0)(p - p_0)^2$; along $p - p_0 = e^{i\theta}q$, $q$ real, with $\Phi''(p_0)e^{2i\theta} = -|\Phi''(p_0)|$, the imaginary part of $\Phi$ is stationary (no oscillation) and the real part falls as fast as possible: the steepest-descent path. The integral is then the real Gaussian of part 1 times $dp = e^{i\theta}dq$. The factor $e^{\lambda\Phi(p_0)}$ depends on $p_0$ alone.
+> **Step 2** (Laplace: the Gaussian). In the neighbourhood, with $u = p - p_0$, the width that contributes is $u \sim \lambda^{-1/2}$; replace $f$ by $f(p_0)$ (error $O(\lambda^{-1/2})$ relative, $O(\lambda^{-1})$ after the odd term integrates to zero) and drop the cubic term (relative $O(\lambda^{-1})$ likewise), and extend the Gaussian to the whole line (exponentially small error):
+>
+> $$
+> I \simeq f(p_0)\,e^{\lambda\Phi(p_0)}\int_{-\infty}^{\infty}du\,e^{-\frac12\lambda|\Phi''(p_0)|u^2} = f(p_0)\,e^{\lambda\Phi(p_0)}\sqrt{\frac{2\pi}{\lambda|\Phi''(p_0)|}},
+> $$
+>
+> by [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]] with real $a = \frac12\lambda|\Phi''|$.
+>
+> **Step 3** (steepest descent: move the contour). By Cauchy's theorem ([[§CA.2 Contour Integration#^thm-ca-2-2|Theorem §CA.2.2]]) move the real line through $p_0$; by hypothesis no singularity is crossed and the ends contribute nothing.
+>
+> **Step 4** (the direction). Near $p_0$, $\Phi \simeq \Phi(p_0) + \frac12\Phi''(p_0)(p - p_0)^2$. Put $p - p_0 = e^{i\theta}q$, $q$ real, $dp = e^{i\theta}dq$, with $\theta$ chosen so that $\Phi''(p_0)e^{2i\theta} = -|\Phi''(p_0)|$. Along this line $\operatorname{Im}\Phi$ is stationary (no oscillation) and $\operatorname{Re}\Phi$ falls off as fast as possible: the steepest-descent path.
+>
+> **Step 5** (the Gaussian again). The integral is now the real Gaussian of Step 2 times $e^{i\theta}$.
+>
+> **What the derivation shows.**
+> - The factor $e^{\lambda\Phi(p_0)}$ depends on $p_0$ alone; the Gaussian width, the next Taylor terms and the variation of $f$ change only the prefactor.
+> - If the saddle sits on a branch cut, Step 3 fails → [[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-3-2|Remark: When the saddle sits on a branch cut]].
+> - Used in: the large-argument form of $K_\nu$ (Theorem §CA.3.3) and the exponent of the Wightman function outside the light cone (Example §CA.3.1).
 
 ^der-ca-3-2
 
@@ -78,27 +105,33 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 ^rem-ca-3-2
 
 > [!example] Example §CA.3.1: The Exponent of the Wightman Function Outside the Light Cone
-> For $0 < |t| < r$ write $\rho = \sqrt{r^2 - t^2}$ and, after the angular integral and folding onto the whole line,
+> For $0 < |t| < r$ write $\rho = \sqrt{r^2 - t^2}$. Find the saddle point, the exponent and the leading prefactor of $D_W(t, r)$ for $m\rho \gg 1$.
+>
+> **Step 1** (one-dimensional form). As in Steps 2–3 of the second route of [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], now with the factor $e^{-iE_{\mathbf p}t}$ kept (angular integral, then folding onto the whole line),
 >
 > $$
 > D_W(t, r) = \frac{1}{8\pi^2ir}\int_{-\infty}^{\infty}dp\;\frac{p}{\sqrt{p^2 + m^2}}\,e^{iS(p)}, \qquad S(p) = pr - t\sqrt{p^2 + m^2} .
 > $$
 >
-> Find the saddle point, the exponent and the leading prefactor for $m\rho \gg 1$.
+> **Step 2** (stationary points). $S'(p) = r - \frac{pt}{\sqrt{p^2 + m^2}} = 0$ gives $r^2(p^2 + m^2) = p^2t^2$, i.e. $p^2(r^2 - t^2) = -m^2r^2$. Inside the cone ($r < |t|$) the root is real, $r/t = p/E_p$, the classical velocity, and stationary phase reproduces the oscillating amplitude. Outside, no real momentum has velocity $r/t > 1$, and the saddle moves to $p_0 = imr/\rho$.
 >
-> *Saddle.* $S'(p) = r - pt/\sqrt{p^2 + m^2} = 0$ gives $p^2(r^2 - t^2) = -m^2r^2$. Inside the cone ($r < |t|$) the root is real, $r/t = p/E_p$: the classical velocity, and stationary phase reproduces the oscillating amplitude. Outside no real momentum has velocity $r/t > 1$, and the saddle moves to $p_0 = imr/\rho$, where $\sqrt{p_0^2 + m^2} = imt/\rho$ (the branch fixed by the Euclidean continuation of [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-6|Theorem §C2.5.6]]). Then
+> **Step 3** (the branch at the saddle). $p_0^2 + m^2 = m^2(1 - r^2/\rho^2) = -m^2t^2/\rho^2$, and the branch fixed by the Euclidean continuation ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-8|Theorem §C2.5.8]]) is $\sqrt{p_0^2 + m^2} = imt/\rho$.
+>
+> **Step 4** (the exponent). $S(p_0) = \frac{imr}{\rho}\,r - t\,\frac{imt}{\rho} = \frac{im(r^2 - t^2)}{\rho} = im\rho$, so $e^{iS(p_0)} = e^{-m\rho} = e^{-m\sqrt{r^2 - t^2}}$.
+>
+> **Step 5** (the second derivative). $S''(p) = -\frac{tm^2}{(p^2 + m^2)^{3/2}}$; at $p_0$, $(p_0^2 + m^2)^{3/2} = (imt/\rho)^3 = -im^3t^3/\rho^3$, so $S''(p_0) = -\frac{tm^2\rho^3}{-im^3t^3} = -\frac{i\rho^3}{mt^2}$. With $\Phi = iS$: $\Phi''(p_0) = \rho^3/mt^2 > 0$.
+>
+> **Step 6** (the direction). $\Phi''e^{2i\theta} < 0$ needs $e^{2i\theta} = -1$: $\theta = \pi/2$, the vertical direction $p = p_0 + iq$, and the Gaussian factor is $e^{i\pi/2}\sqrt{2\pi/\Phi''} = it\sqrt{2\pi m/\rho^3}$ ([[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-3-2|Theorem §CA.3.2]], 2).
+>
+> **Step 7** (assemble). With $f(p_0) = p_0/\sqrt{p_0^2 + m^2} = (imr/\rho)/(imt/\rho) = r/t$,
 >
 > $$
-> S(p_0) = \frac{imr^2}{\rho} - \frac{imt^2}{\rho} = im\rho, \qquad e^{iS(p_0)} = e^{-m\sqrt{r^2 - t^2}} .
+> D_W \simeq \frac{1}{8\pi^2ir}\cdot\frac rt\cdot e^{-m\rho}\cdot it\sqrt{\frac{2\pi m}{\rho^3}} = \frac{\sqrt{2\pi m}}{8\pi^2}\,\rho^{-3/2}e^{-m\rho} = \frac{\sqrt m}{2(2\pi\rho)^{3/2}}\,e^{-m\rho},
 > $$
 >
-> *Prefactor.* $S''(p_0) = -tm^2/(p_0^2 + m^2)^{3/2} = -i\rho^3/mt^2$, so $\Phi = iS$ has $\Phi''(p_0) = \rho^3/mt^2 > 0$ and the steepest-descent direction is vertical, $\theta = \pi/2$ ([[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-3-2|Theorem §CA.3.2]]). With $f(p_0) = p_0/\sqrt{p_0^2 + m^2} = r/t$ and the Gaussian factor $i\sqrt{2\pi/\Phi''} = it\sqrt{2\pi m/\rho^3}$,
+> the leading term of the exact result ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], with $\sqrt{-\xi^2} = \rho$), now at any spacelike point and not only at equal times.
 >
-> $$
-> D_W \simeq \frac{1}{8\pi^2ir}\cdot\frac rt\cdot e^{-m\rho}\cdot it\sqrt{\frac{2\pi m}{\rho^3}} = \frac{\sqrt m}{2(2\pi\rho)^{3/2}}\,e^{-m\rho} ,
-> $$
->
-> the leading term of the exact result ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-7|Theorem §C2.5.7]], 1, with $\sqrt{-\xi^2} = \rho$), now at any spacelike point and not only at equal times. The saddle lies on the cut from $im$ ($|p_0| > m$); on the cut the exponent of the dominant lip is the real function $-\varrho r + t\sqrt{\varrho^2 - m^2}$ of $p = i\varrho$, maximal at $\varrho = mr/\rho$ with value $-m\rho$, which is why the method is right (Remark above). As $t \to 0$ the saddle runs into the branch point $im$, where the cut representation of the equal-time computation takes over.
+> **Step 8** (why it is right). $|p_0| = mr/\rho > m$, so the saddle lies on the cut from $im$ to $i\infty$. On the cut the exponent of the dominant lip is the real function $-\varrho r + t\sqrt{\varrho^2 - m^2}$ of $p = i\varrho$, maximal at $\varrho = mr/\rho$ with value $-m\rho$: Laplace's method on the cut gives the same answer (Remark above). As $t \to 0$ the saddle runs into the branch point $im$, where the cut representation of the equal-time computation takes over.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (Derivation "Saddle point of the relativistic amplitude", done there for the single-particle amplitude, which has the same phase $S$); the prefactor for $D_W$ worked here*
 
@@ -129,17 +162,33 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 ^thm-ca-3-3
 
 > [!derivation]- Derivation
-> *1.* Differentiate under the integral ([[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-1|Theorem §CA.1.1]]) and use $\cosh u\cosh\nu u = \frac12[\cosh(\nu + 1)u + \cosh(\nu - 1)u]$: $K_\nu' = -\frac12(K_{\nu+1} + K_{\nu-1})$. For the difference, $\cosh(\nu + 1)u - \cosh(\nu - 1)u = 2\sinh u\sinh\nu u$ and $\sinh u\,e^{-z\cosh u} = -\frac1z\frac{d}{du}e^{-z\cosh u}$; integrating by parts (no boundary terms), $K_{\nu+1} - K_{\nu-1} = \frac{2\nu}{z}K_\nu$. Adding and subtracting: $K_\nu' = -K_{\nu+1} + \frac\nu zK_\nu$, which is the last identity; $\nu = 0$ gives $K_0' = -K_1$ (using $K_{-1} = K_1$).
+> **Step 1** (derivative). Differentiate under the integral ([[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-1|Theorem §CA.1.1]]; dominated by $\cosh u\cosh\nu u\,e^{-z_0\cosh u}$ for $\operatorname{Re}z \ge z_0 > 0$): $K_\nu' = -\int_0^\infty\cosh u\cosh\nu u\,e^{-z\cosh u}du$. With $\cosh u\cosh\nu u = \frac12[\cosh(\nu + 1)u + \cosh(\nu - 1)u]$, $K_\nu' = -\frac12(K_{\nu+1} + K_{\nu-1})$.
 >
-> *2.* Laplace's method ([[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-3-2|Theorem §CA.3.2]], 1) at the maximum $u = 0$ of $-z\cosh u$, keeping the next order: with $\cosh u = 1 + \frac{u^2}2 + \frac{u^4}{24} + \cdots$ and $\cosh\nu u = 1 + \frac{\nu^2u^2}2 + \cdots$,
+> **Step 2** (difference). $\cosh(\nu + 1)u - \cosh(\nu - 1)u = 2\sinh u\sinh\nu u$, and $\sinh u\,e^{-z\cosh u} = -\frac1z\frac{d}{du}e^{-z\cosh u}$. Integrate by parts:
 >
 > $$
-> K_\nu(z) = e^{-z}\int_0^\infty du\,e^{-zu^2/2}\Bigl[1 + \tfrac12\nu^2u^2 - \tfrac1{24}zu^4 + \cdots\Bigr] = \sqrt{\frac{\pi}{2z}}\,e^{-z}\Bigl[1 + \frac{\nu^2}{2z} - \frac{3}{24z} + \cdots\Bigr],
+> K_{\nu+1} - K_{\nu-1} = -\frac2z\int_0^\infty\sinh\nu u\,\frac{d}{du}e^{-z\cosh u}\,du = -\frac2z\Bigl[\sinh\nu u\,e^{-z\cosh u}\Bigr]_0^\infty + \frac{2\nu}{z}\int_0^\infty\cosh\nu u\,e^{-z\cosh u}du = \frac{2\nu}{z}K_\nu ;
 > $$
 >
-> using $\int_0^\infty e^{-zu^2/2}\{1, u^2, u^4\}du = \sqrt{\pi/2z}\,\{1, z^{-1}, 3z^{-2}\}$; and $\frac{\nu^2}{2} - \frac18 = \frac{4\nu^2 - 1}{8}$.
+> the boundary term vanishes at $0$ ($\sinh0 = 0$) and at $\infty$ (the double exponential wins).
 >
-> *3.* For small $z$ the integral is dominated by large $u$, up to $u \simeq \ln(2/z)$, where $\cosh u \simeq \frac12e^u$ and $\cosh\nu u \simeq \frac12e^{\nu u}$. With $w = \frac12ze^u$, $K_\nu \simeq \frac12(2/z)^\nu\int_{z/2}^\infty w^{\nu-1}e^{-w}dw \to \frac12\Gamma(\nu)(2/z)^\nu$ ([[§B4.1 Probability Distributions and the Gaussian#^def-b4-1-5|TH Def. §B4.1.5]]); the region $u = O(1)$ adds only $O(1)$. The logarithmic terms of $K_0$ and $K_1$ are the standard series (DLMF §10.31); they are consistent with $K_0' = -K_1$.
+> **Step 3** (combine). Adding Step 1 and half of Step 2: $K_\nu' = -K_{\nu+1} + \frac\nu zK_\nu$. Then $\frac{d}{dz}(z^{-\nu}K_\nu) = z^{-\nu}K_\nu' - \nu z^{-\nu-1}K_\nu = -z^{-\nu}K_{\nu+1}$. For $\nu = 0$, Step 1 with $K_{-1} = K_1$ gives $K_0' = -K_1$.
+>
+> **Step 4** (large $z$: Laplace). The exponent $-z\cosh u$ is maximal at $u = 0$ ([[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-3-2|Theorem §CA.3.2]], 1). Write $\cosh u = 1 + \frac{u^2}{2} + \frac{u^4}{24} + \cdots$ and $\cosh\nu u = 1 + \frac{\nu^2u^2}{2} + \cdots$; only $u \lesssim z^{-1/2}$ contributes, so expand everything but the Gaussian:
+>
+> $$
+> K_\nu(z) = e^{-z}\int_0^\infty du\,e^{-zu^2/2}\Bigl[1 + \tfrac12\nu^2u^2 - \tfrac1{24}zu^4 + O(u^4, zu^6)\Bigr].
+> $$
+>
+> **Step 5** (moments). $\int_0^\infty e^{-zu^2/2}\{1, u^2, u^4\}du = \sqrt{\pi/2z}\,\{1, z^{-1}, 3z^{-2}\}$. So $K_\nu = \sqrt{\pi/2z}\,e^{-z}\bigl[1 + \frac{\nu^2}{2z} - \frac{3}{24z} + \cdots\bigr]$, and $\frac{\nu^2}{2} - \frac18 = \frac{4\nu^2 - 1}{8}$. Dropped: terms of relative order $z^{-2}$.
+>
+> **Step 6** (small $z$). Now large $u$ dominates, up to $u \simeq \ln(2/z)$, where $\cosh u \simeq \frac12e^u$ and $\cosh\nu u \simeq \frac12e^{\nu u}$. Substitute $w = \frac12ze^u$, $du = dw/w$: $K_\nu \simeq \frac12\int du\,e^{\nu u}e^{-\frac12ze^u} = \frac12\bigl(\frac2z\bigr)^\nu\int_{z/2}^\infty w^{\nu-1}e^{-w}dw \to \frac12\Gamma(\nu)\bigl(\frac2z\bigr)^\nu$ ([[§B4.1 Probability Distributions and the Gaussian#^def-b4-1-5|TH Def. §B4.1.5]]). Dropped: the region $u = O(1)$, which contributes $O(1)$, subleading to $z^{-\nu}$ for $\nu > 0$.
+>
+> **Step 7** (logarithms). The terms $\frac z2\ln\frac z2$ in $K_1$ and $-\ln\frac z2 - \gamma_E$ in $K_0$ are the standard series (DLMF §10.31), not derived here; they are consistent with $K_0' = -K_1$ at leading order ($\frac{d}{dz}(-\ln z) = -1/z$).
+>
+> **What the derivation shows.**
+> - Everything used in the course follows from the single integral representation.
+> - The two ends of $K_1$ are the physics of the two-point function: $1/z$ is the massless light-cone singularity ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-12|Theorem §C2.5.12]]), $e^{-z}$ the Compton-length decay ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]]).
 
 ^der-ca-3-3
 
@@ -156,18 +205,26 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 ^thm-ca-3-4
 
 > [!derivation]- Derivation
-> *1.* Substitute $\rho = m\cosh u$: $d\rho/\sqrt{\rho^2 - m^2} = du$ and $\rho\,d\rho/\sqrt{\rho^2 - m^2} = m\cosh u\,du$, then [[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-3-1|Def. §CA.3.1]] with $\nu = 0, 1$.
+> **Step 1** (part 1). Substitute $\rho = m\cosh u$, $u: 0 \to \infty$: $d\rho = m\sinh u\,du$ and $\sqrt{\rho^2 - m^2} = m\sinh u$, so $\frac{d\rho}{\sqrt{\rho^2 - m^2}} = du$ and $\frac{\rho\,d\rho}{\sqrt{\rho^2 - m^2}} = m\cosh u\,du$; $e^{-\rho r} = e^{-mr\cosh u}$. [[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-3-1|Def. §CA.3.1]] with $\nu = 0$ and $\nu = 1$.
 >
-> *2.* The two forms are related by $t = \sinh v$. The value is a table integral (A&S 9.6.21); it also follows from the keyhole computation of the equal-time Wightman function, which shows $\int_{-\infty}^\infty\frac{e^{ipr}dp}{\sqrt{p^2 + m^2}} = 2K_0(mr)$ ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-7|Theorem §C2.5.7]], second route), whose real part is twice the integral here with $x = mr$. Convergence: Dirichlet's test ([[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-2|Theorem §CA.1.2]]).
+> **Step 2** (part 2: the two forms). Substitute $t = \sinh v$, $dt = \cosh v\,dv = \sqrt{t^2 + 1}\,dv$. Convergence: Dirichlet's test ([[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-2|Theorem §CA.1.2]]).
 >
-> *3–4.* Connection formula and asymptotics of the Hankel and Bessel functions, quoted from DLMF (10.27.8, 10.17.3); the user's notes checked 3 numerically. Consistency check: 4 gives $J_1 - iY_1 \simeq \sqrt{2/\pi x}\,e^{-i(x - 3\pi/4)}$, so 3 gives $K_1(ix) \simeq -\sqrt{\pi/2x}\,e^{3\pi i/4}e^{-ix} = \sqrt{\pi/2x}\,e^{-i\pi/4}e^{-ix}$, which is the large-argument form of [[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-3-3|Theorem §CA.3.3]], 2 at $z = ix$, since $\sqrt{1/i} = e^{-i\pi/4}$.
+> **Step 3** (part 2: the value). A table integral (A&S 9.6.21). It also follows from the keyhole computation of the equal-time Wightman function, which shows $\int_{-\infty}^\infty\frac{e^{ipr}dp}{\sqrt{p^2 + m^2}} = 2K_0(mr)$ ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], second route, Steps 6–7); the imaginary part of the left side vanishes by oddness, and its real part is $2\int_0^\infty\frac{\cos pr\,dp}{\sqrt{p^2 + m^2}}$, which with $p = mt$ is $2\int_0^\infty\frac{\cos(mrt)}{\sqrt{t^2 + 1}}dt$.
+>
+> **Step 4** (parts 3–4). The connection formula (DLMF 10.27.8) and the Hankel asymptotics (DLMF 10.17.3) are quoted; the user's notes checked 3 numerically.
+>
+> **Step 5** (consistency check of 3 with 4). From 4, $J_1 - iY_1 \simeq \sqrt{2/\pi x}\,e^{-i(x - 3\pi/4)}$; then 3 gives $K_1(ix) \simeq -\sqrt{\pi/2x}\,e^{3\pi i/4}e^{-ix} = \sqrt{\pi/2x}\,e^{-i\pi/4}e^{-ix}$, which is the large-argument form of [[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-3-3|Theorem §CA.3.3]], 2 at $z = ix$, since $\sqrt{1/i} = e^{-i\pi/4}$.
+>
+> **What the derivation shows.**
+> - Part 1 is the cut integral of the equal-time Wightman function and, before differentiation, PS eq. (2.52).
+> - Part 3 is how $K_1$'s decay outside the light cone becomes the oscillation of $J_1$, $Y_1$ inside ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-11|Theorem §C2.5.11]]).
 
 ^der-ca-3-4
 
 *Uses:* [[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-2|Theorem §CA.1.2]]
 
 > [!remark] Remark: One Gaussian in three costumes
-> The large-$z$ form of $K_\nu$ is Laplace's method at $u = 0$; the exponent $e^{-m\rho}$ of Example §CA.3.1 is steepest descent through a complex saddle; and the $K_1$ of the Euclidean propagator came from Schwinger's Gaussian. They are the same Gaussian integral in different clothing, and they agree: the saddle-point prefactor of Example §CA.3.1 is exactly the leading term of Theorem §CA.3.3, 2. The behaviour at the two ends of $K_1$ is the physics of the two-point function: $1/z$ is the massless light-cone singularity, $e^{-z}$ the Compton-length decay.
+> The large-$z$ form of $K_\nu$ is Laplace's method at $u = 0$; the exponent $e^{-m\rho}$ of Example §CA.3.1 is steepest descent through a complex saddle; and the $K_1$ of the Euclidean propagator came from Schwinger's Gaussian. They are the same Gaussian integral in different clothing, and they agree: the saddle-point prefactor of Example §CA.3.1 is exactly the leading term of Theorem §CA.3.3, 2.
 >
 > *Source: the user's PHY 513 notes, App. A §A.8 ("Large z: Laplace's method"), Ch. 2 §2.2*
 
@@ -178,4 +235,4 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 > - Laplace's method is how Stirling's formula is proved ([[§B4.1 Probability Distributions and the Gaussian#^thm-b4-1-5|TH Theorem §B4.1.5]]) and why the canonical ensemble is sharply peaked ([[§B7.2 Free Energy from the Partition Function|TH §B7.2]]); the Gamma function in the small-$z$ form of $K_\nu$ is [[§B4.1 Probability Distributions and the Gaussian#^def-b4-1-5|TH Def. §B4.1.5]].
 > - Stationary phase is the classical limit of the path integral ([[§C4.2 The Feynman Path Integral#^thm-c4-2-5|QM Theorem §C4.2.5]]), the Fresnel-zone construction of optics ([[§B11.3 Fresnel Diffraction and Zone Plates#^thm-b11-3-2|WO Theorem §B11.3.2]]) and the eikonal approximation ([[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]); the complex saddle of Example §CA.3.1 is the field-theory analogue of tunnelling under a barrier, where WKB's exponent $e^{-\int|p|\,dx}$ is likewise a saddle value ([[§B9.4 Tunnelling and the Connection Formulas|QM §B9.4]]).
 > - The $n$-dimensional Gaussian with $s = it/2m$ is the free nonrelativistic propagator ([[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]]); with $s$ real it is the heat kernel of diffusion ([[§B4.2 Random Walks, the Central Limit Theorem and Diffusion#^thm-b4-2-6|TH Theorem §B4.2.6]]). QFT C1 (planned) uses it for the single-particle amplitude, and QFT C11 (planned) for Gaussian path integrals.
-> - The Hankel function $H^{(2)}_\nu$ at real argument is an outgoing-type oscillation; that $K_\nu$ turns into it at imaginary argument is the analytic statement behind "decay outside the light cone, oscillation inside" ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-7|Theorem §C2.5.7]]).
+> - The same $K_\nu$ counts the particles produced by a source switched on over a time $T$ ([[§C2.7 Particle Production by a Classical Source#^ex-c2-7-1|Example §C2.7.1]]): both integrate over the mass shell in hyperbolic variables.

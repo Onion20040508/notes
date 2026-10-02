@@ -1,0 +1,53 @@
+---
+type: course-log
+subject: "[[Quantum Field Theory]]"
+course: "PHY 513 (UMich, F. Larsen, Fall 2026)"
+tags: [quantum-field-theory, course-log]
+---
+# PHY 513 Course Log
+
+The notes of [[Quantum Field Theory]] follow Yu's chapter order; this log follows the course. Each lecture points to the sections where its material lives, with the Peskin–Schroeder (PS) reading from the syllabus and the chapter of the user's PHY 513 notes it was written from. "Planned" chapters are not yet written; *draft* sections are written ahead of the lecture from the user's pre-course notes.
+
+| L | Date | Title | PS | 513 notes | Home in these notes |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Aug 31 | Motivation and the theory of relativity | Ch. 1; Tong Prelim. | Ch. 1 | QFT C1 (planned); [[Relativity]] level B |
+| 2 | Sep 2 | Causality and locality | §2.1 | Ch. 2 | QFT C1 (planned); two-point computations in [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality\|§C2.5]] |
+| 3 | Sep 9 | Classical field theory | §2.2 | Ch. 3 | QFT C1 (planned) |
+| 4 | Sep 14 | The quantum field | §2.3 | Ch. 4 | [[§C2.1 Canonical Quantization of Fields\|§C2.1]], [[§C2.2 The Real Scalar Field\|§C2.2]], [[§C2.3 The Complex Scalar Field and Its Charge\|§C2.3]], [[§C2.4 Coherent States and the Classical Field\|§C2.4]]; [[P1 Canonical Quantization\|P1]] |
+| 5 | Sep 16 | Spacetime interpretation of quantum fields | §2.4, pp. 25–29 | Ch. 5 (no slides; from transcripts and handwritten notes) | [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality\|§C2.5]] |
+| 6 | Sep 21 | Green's functions | §2.4, pp. 29–33 | Ch. 6 | [[§C2.6 Green's Functions and the Feynman Propagator\|§C2.6]], [[§C2.7 Particle Production by a Classical Source\|§C2.7]]; [[P2 Green's Functions by Contour Integration\|P2]]; tools in [[· CA Mathematical Methods\|CA]] |
+| 7 | Sep 23 | The Lorentz group | §3.1, pp. 40–41 | Ch. 7, Ch. 8 (first part) | QFT C3 (planned); spinor representation in QFT C5 (planned) |
+| 8 | Sep 28 | The Dirac equation | §3.2 | Ch. 8 | QFT C5 (planned) |
+| 9 | Sep 30 | Solutions to the Dirac equation | §3.3 | Ch. 9 | QFT C5 (planned) |
+| 10 | Oct 5 | Quantization of the Dirac field | §3.5 | — | QFT C5 (planned) |
+| 11 | | Parity | §3.6 | — | QFT C9 (planned) |
+| 12 | | C, T and CPT | §3.6; §3.4 pp. 49–51 | — | QFT C9 (planned) |
+| — | Oct 14 | Midterm | | | |
+| 13 | | Interactions in QFT | §4.2 | — | QFT C6 (planned) |
+| 14 | | Feynman rules for correlation functions | §4.3–4.4 | — | QFT C6–C7 (planned) |
+| 15 | | S-matrix and cross-section | §4.5 | — | QFT C6, C10 (planned) |
+| 16 | | Feynman diagrams for amplitudes | §4.6 | — | QFT C7, C10 (planned) |
+| 17 | | Yukawa theory | §4.1, 4.7 | — | QFT C7 (planned) |
+| 18 | | Quantum electrodynamics | §4.7–4.8 | — | QFT C8 (planned) |
+| 19 | | Electron–positron annihilation | §5.1 | — | QFT C8 (planned) |
+| 20 | | Helicity structure | §5.2 | — | QFT C8 (planned) |
+| 21 | | Crossing symmetry | §5.4 | — | QFT C8 (planned) |
+| 22 | | Compton scattering | §5.5 | — | QFT C8 (planned) |
+| 23 | | Path integrals | §9.1–9.2 | — | QFT C11 (planned) |
+| 24 | | Feynman rules from path integrals | §9.2–9.3 | — | QFT C11 (planned) |
+| 25 | | Quantization of EM fields | §9.4 | — | QFT C4, C11 (planned) |
+| 26 | | Path integrals and fermions | §9.5 | — | QFT C11 (planned) |
+| — | Dec 14 | Final exam | | | |
+
+## Problem sets
+Statements are not reproduced; only submitted sets are linked (the syllabus forbids AI help on homework).
+
+| HW | Due | Title | Treated in |
+| --- | --- | --- | --- |
+| 1 | Sep 4 | Relativistic invariance | QFT C1 (planned) |
+| 2 | Sep 11 | Relativistic field theory | QFT C1 (planned) |
+| 3 | Sep 18 | The quantum field | [[§C2.2 The Real Scalar Field\|§C2.2]] (Problems 1, 3), [[§C2.3 The Complex Scalar Field and Its Charge\|§C2.3]] (Problem 2), [[§C2.4 Coherent States and the Classical Field\|§C2.4]] (Problem 4) |
+| 4 | Sep 25 | Green's functions | [[§CA.1 Generalized Functions and Fourier Transforms\|§CA.1]] (Problem 0), [[§CA.2 Contour Integration\|§CA.2]] (Problem 1), [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality\|§C2.5]] (Problem 3), [[§C2.6 Green's Functions and the Feynman Propagator\|§C2.6]] (Problems 2, 4); Problem 5 (Lorentz algebra): QFT C3 (planned) |
+| 5 | Oct 2 | Spin ½ particles | open — not linked |
+| 6 | Oct 13 | Discrete transformations and fermions | — |
+| 7–13 | | Towards amplitudes … path integrals | — |

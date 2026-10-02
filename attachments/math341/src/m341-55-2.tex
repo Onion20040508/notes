@@ -1,0 +1,20 @@
+% Figure for Fourier Series and PDEs §55.
+\begin{tikzpicture}[x=2.1cm, y=1cm]
+  \draw[thin, -stealth] (-0.3,0) -- (5.6,0) node[right] {$x$};
+  \draw[black!35, dashed] (4,0) -- (5,0);
+  \foreach \i/\lab in {0/{x_0 = 0},1/{x_1},2/{x_2},3/{x_{n-1}},4/{x_n = 1}} {
+    \draw (\i,-0.08) -- (\i,0.08);
+    \node[font=\small, below] at (\i,-0.12) {$\lab$};
+  }
+  \node[font=\small] at (2.5,0.35) {$\cdots$};
+  \node[font=\small, below] at (5,-0.12) {$x_{n+1}$};
+  \fill[figB] (0,0) circle (2.2pt);
+  \foreach \i in {1,2,3,4} \fill[figR] (\i,0) circle (2.2pt);
+  \draw[figO, thick, fill=white] (5,0) circle (2.4pt);
+  \node[figB, font=\scriptsize, above, align=center] at (0,0.25) {$u_0 = 1$\\ given};
+  \node[figR, font=\scriptsize, above] at (2,0.95) {unknowns $u_1, \dots, u_n$};
+  \draw[figR, thin, decorate, decoration={brace, amplitude=4pt}] (0.9,0.5) -- (4.1,0.5);
+  \node[figO, font=\scriptsize, above, align=center] at (5,0.25) {fictitious\\ $u_{n+1}$};
+  \draw[figG, thick, -{Stealth[length=2mm]}] (3,-0.75) to[bend right=25] node[midway, below, font=\scriptsize, text=figG] {$\dfrac{u_{n+1} - u_{n-1}}{2\,\Delta x} = u'(1)$} (5,-0.75);
+  \draw[black!60, thin] (3,-0.62) -- (3,-0.75);  \draw[black!60, thin] (5,-0.62) -- (5,-0.75);
+\end{tikzpicture}

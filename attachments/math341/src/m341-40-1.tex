@@ -1,0 +1,13 @@
+% Figure for Fourier Series and PDEs §40.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8cm, height=6cm, xmin=-4, xmax=2, ymin=-2.2, ymax=2.2, axis lines=middle,
+      xlabel={$\xi$}, ylabel={$\eta$}, xlabel style={anchor=west}, ylabel style={anchor=south},
+      xtick={-4,-3,-2,-1,1,2}, ytick={-2,-1,1,2}, clip=true, axis on top]
+    \addplot[fill=figG!15, draw=none, domain=-2.2:2.2, samples=80] ({-x^2},{x}) -- (axis cs:2,2.2) -- (axis cs:2,-2.2) -- cycle;
+    \addplot[fill=figO!15, draw=none, domain=-2.2:2.2, samples=80] ({-x^2},{x}) -- (axis cs:-4,2.2) -- (axis cs:-4,-2.2) -- cycle;
+    \addplot[figR, line width=1.2pt, domain=-2.2:2.2, samples=80] ({-x^2},{x});
+    \node[font=\scriptsize, align=center] at (axis cs:0.9,1.2) {elliptic\\ $\xi + \eta^2 > 0$};
+    \node[font=\scriptsize, align=center] at (axis cs:-3,0.5) {hyperbolic\\ $\xi + \eta^2 < 0$};
+    \node[font=\scriptsize, figR, anchor=west] at (axis cs:-3.4,-1.95) {parabolic: $\xi = -\eta^2$};
+  \end{axis}
+\end{tikzpicture}

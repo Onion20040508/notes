@@ -1,0 +1,33 @@
+% Figure for Fourier Series and PDEs §30.
+\begin{tikzpicture}
+  \begin{axis}[nfig, at={(0cm,0)}, width=5.2cm, height=4cm, xmin=0, xmax=1.12, ymin=-1.25, ymax=1.35,
+      axis lines=middle, xtick={1}, xticklabels={$a$}, ytick=\empty, xlabel={$x$}, xlabel style={anchor=west},
+      trig format plots=rad, title={$n = 1$}, title style={font=\small, yshift=-4pt}]
+    \addplot[figB, domain=0:1, samples=120] {sin(1*pi*x)};
+    \addplot[figB!45, domain=0:1, samples=120] {0.5*sin(1*pi*x)};
+    \addplot[black!35, domain=0:1, samples=2] {0};
+    \addplot[figR!45, domain=0:1, samples=120] {-0.5*sin(1*pi*x)};
+    \addplot[figR, domain=0:1, samples=120] {-sin(1*pi*x)};
+    \addplot[only marks, mark=*, mark size=1.4pt, black] coordinates {(0.0000,0) (1.0000,0)};
+  \end{axis}
+  \begin{axis}[nfig, at={(4.6cm,0)}, width=5.2cm, height=4cm, xmin=0, xmax=1.12, ymin=-1.25, ymax=1.35,
+      axis lines=middle, xtick={1}, xticklabels={$a$}, ytick=\empty, xlabel={$x$}, xlabel style={anchor=west},
+      trig format plots=rad, title={$n = 2$}, title style={font=\small, yshift=-4pt}]
+    \addplot[figB, domain=0:1, samples=120] {sin(2*pi*x)};
+    \addplot[figB!45, domain=0:1, samples=120] {0.5*sin(2*pi*x)};
+    \addplot[black!35, domain=0:1, samples=2] {0};
+    \addplot[figR!45, domain=0:1, samples=120] {-0.5*sin(2*pi*x)};
+    \addplot[figR, domain=0:1, samples=120] {-sin(2*pi*x)};
+    \addplot[only marks, mark=*, mark size=1.4pt, black] coordinates {(0.0000,0) (0.5000,0) (1.0000,0)};
+  \end{axis}
+  \begin{axis}[nfig, at={(9.2cm,0)}, width=5.2cm, height=4cm, xmin=0, xmax=1.12, ymin=-1.25, ymax=1.35,
+      axis lines=middle, xtick={1}, xticklabels={$a$}, ytick=\empty, xlabel={$x$}, xlabel style={anchor=west},
+      trig format plots=rad, title={$n = 3$}, title style={font=\small, yshift=-4pt}]
+    \addplot[figB, domain=0:1, samples=120] {sin(3*pi*x)};
+    \addplot[figB!45, domain=0:1, samples=120] {0.5*sin(3*pi*x)};
+    \addplot[black!35, domain=0:1, samples=2] {0};
+    \addplot[figR!45, domain=0:1, samples=120] {-0.5*sin(3*pi*x)};
+    \addplot[figR, domain=0:1, samples=120] {-sin(3*pi*x)};
+    \addplot[only marks, mark=*, mark size=1.4pt, black] coordinates {(0.0000,0) (0.3333,0) (0.6667,0) (1.0000,0)};
+  \end{axis}
+\end{tikzpicture}

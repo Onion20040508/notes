@@ -1,0 +1,30 @@
+% Figure for Fourier Series and PDEs §55.
+\begin{tikzpicture}
+  \begin{axis}[nfig, name=A, width=6.6cm, height=5.6cm, xmin=0, xmax=1.08, ymin=0, ymax=8.6, clip=false,
+      xtick={0.25,0.5,0.75,1}, ytick={2,4,6,8},
+      xlabel={$x$}, ylabel={$u$}, xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south, rotate=-90},
+      title style={yshift=4pt}, title={\small (a) $u'' - 10u = f$, $u'(1) = -1$}]
+    \addplot[figB, smooth] coordinates {(0.000,1.0000) (0.025,1.0778) (0.050,1.1624) (0.075,1.2542) (0.100,1.3538) (0.125,1.4619) (0.150,1.5792) (0.175,1.7064) (0.200,1.8442) (0.225,1.9935) (0.250,2.1553) (0.275,2.3306) (0.300,2.5205) (0.325,2.7261) (0.350,2.9487) (0.375,3.1899) (0.400,3.4509) (0.425,3.7335) (0.450,4.0395) (0.475,4.3708) (0.500,4.7293) (0.525,5.0862) (0.550,5.4124) (0.575,5.7098) (0.600,5.9805) (0.625,6.2260) (0.650,6.4479) (0.675,6.6476) (0.700,6.8263) (0.725,6.9852) (0.750,7.1252) (0.775,7.2472) (0.800,7.3521) (0.825,7.4404) (0.850,7.5126) (0.875,7.5694) (0.900,7.6109) (0.925,7.6375) (0.950,7.6493) (0.975,7.6464) (1.000,7.6288)};
+    \addplot[figR, dashed, mark=*, mark options={solid}, mark size=1.5pt] coordinates {(0,1) (0.25,2.1741) (0.5,4.7070) (0.75,7.0568) (1,7.5671)};
+    \draw[black!40, thin, dashed] (axis cs:0.5,0) -- (axis cs:0.5,8.3);
+    \node[font=\scriptsize, anchor=north] at (axis cs:0.25,8.4) {$f = 0$};
+    \node[font=\scriptsize, anchor=north] at (axis cs:0.77,8.4) {$f = -100$};
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:0.55,4.6) {exact};
+    \node[figR, font=\scriptsize, anchor=south east] at (axis cs:0.47,5.0) {$n = 4$};
+  \end{axis}
+  \begin{axis}[nfig, at={(A.east)}, anchor=west, xshift=1.4cm, width=6.6cm, height=5.6cm, xmin=0, xmax=1.08, ymin=-4, ymax=54, clip=false,
+      xtick={0.25,0.5,0.75,1}, ytick={0,10,20,30,40,50},
+      xlabel={$x$}, ylabel={$u$}, xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south, rotate=-90},
+      title style={yshift=4pt}, title={\small (b) $u'' + 10u = 0$: near resonance}]
+    \addplot[figB, smooth] coordinates {(0.000,0.000) (0.020,3.056) (0.040,6.099) (0.060,9.118) (0.080,12.101) (0.100,15.035) (0.120,17.909) (0.140,20.712) (0.160,23.432) (0.180,26.058) (0.200,28.580) (0.220,30.987) (0.240,33.271) (0.260,35.421) (0.280,37.430) (0.300,39.290) (0.320,40.992) (0.340,42.530) (0.360,43.898) (0.380,45.091) (0.400,46.103) (0.420,46.931) (0.440,47.572) (0.460,48.022) (0.480,48.280) (0.500,48.345) (0.520,48.217) (0.540,47.896) (0.560,47.383) (0.580,46.681) (0.600,45.792) (0.620,44.721) (0.640,43.470) (0.660,42.045) (0.680,40.453) (0.700,38.699) (0.720,36.789) (0.740,34.733) (0.760,32.538) (0.780,30.213) (0.800,27.767) (0.820,25.210) (0.840,22.552) (0.860,19.804) (0.880,16.977) (0.900,14.082) (0.920,11.130) (0.940,8.134) (0.960,5.106) (0.980,2.057) (1.000,-1.000)};
+    \addplot[figO, dashed, mark=square*, mark options={solid}, mark size=1.4pt] coordinates {(0,0) (0.3333,4.7647) (0.6667,4.2353) (1,-1)};
+    \addplot[figR, dashed, mark=*, mark options={solid}, mark size=1.5pt] coordinates {(0,0) (0.25,6.6494) (0.5,9.1429) (0.75,5.9221) (1,-1)};
+    \addplot[figG, dashed, mark=triangle*, mark options={solid}, mark size=1.8pt] coordinates {(0,0) (0.125,9.3076) (0.25,17.1609) (0.375,22.3328) (0.5,24.0152) (0.625,21.9452) (0.75,16.4463) (0.875,8.3777) (1,-1)};
+    \node[figB, font=\scriptsize, anchor=south] at (axis cs:0.5,48.6) {exact};
+    \node[figG, font=\scriptsize, anchor=south] at (axis cs:0.5,24.4) {$n = 8$};
+    \node[figR, font=\scriptsize, anchor=south] at (axis cs:0.5,9.6) {$n = 4$};
+    \node[figO, font=\scriptsize, anchor=north] at (axis cs:0.5,3.6) {$n = 3$};
+  \end{axis}
+\end{tikzpicture}

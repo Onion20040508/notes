@@ -1,0 +1,23 @@
+% Figure for Fourier Series and PDEs §29.
+\begin{tikzpicture}[>=stealth, scale=1.15]
+  % string element y = 0.2x + 0.06x^2 on [0,4]
+  \draw[black!60, thin, ->] (-1.8,-1.1) -- (6.0,-1.1) node[right] {$x$};
+  \draw[black!40, dotted] (0,-1.1) -- (0,0); \draw[black!40, dotted] (4,-1.1) -- (4,1.76);
+  \node[below, font=\small] at (0,-1.1) {$x$}; \node[below, font=\small] at (4,-1.1) {$x + \Delta x$};
+  \draw[figB, line width=2.2pt, domain=0:4, samples=60] plot (\x, {0.2*\x + 0.06*\x*\x});
+  % dashed horizontals
+  \draw[black!50, dashed] (0,0) -- (-1.7,0);
+  \draw[black!50, dashed] (4,1.76) -- (5.8,1.76);
+  % tension at left end: direction (-1,-0.2)
+  \draw[figR, ->, line width=1.1pt] (0,0) -- ({-1.6/sqrt(1.04)},{-0.32/sqrt(1.04)}) node[below left, font=\small] {$T(x, t)$};
+  % tension at right end: direction (1,0.68)
+  \draw[figR, ->, line width=1.1pt] (4,1.76) -- ({4+1.6/sqrt(1.4624)},{1.76+1.6*0.68/sqrt(1.4624)}) node[above right, font=\small] {$T(x + \Delta x, t)$};
+  % angle arcs
+  \draw[black] (-1.0,0) arc[start angle=180, end angle={180+11.31}, radius=1.0];
+  \node[font=\small] at (-1.35,-0.12) {$\alpha$};
+  \draw[black] (5.0,1.76) arc[start angle=0, end angle=34.22, radius=1.0];
+  \node[font=\small] at (5.25,2.05) {$\beta$};
+  % weight
+  \draw[figG, ->, line width=1.1pt] (2,0.64) -- (2,-0.6) node[below, font=\small] {$mg = \rho\,\Delta x\, g$};
+  \node[figB, font=\small, anchor=south east] at (1.9,0.75) {$u(x, t)$};
+\end{tikzpicture}
