@@ -12,36 +12,36 @@ tags: [chapter, electromagnetism]
 **Used by:** [[· C1 Electrodynamics from an Action|C1 Electrodynamics from an Action]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (1), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (7), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (5)
 
 ## Sections
-- [[§C5.1 The Field of Polarized Matter]] — Zangwill §6.2–6.4; HW10
-- [[§C5.2 Simple Dielectrics and Boundary Problems]] — Zangwill §6.5; HW10
-- [[§C5.3 The Microscopic Dielectric Constant]] — Zangwill §6.6, Ex. 7.2; HW11
-- [[§C5.4 Energy and Forces in Dielectrics]] — Zangwill §6.7–6.8
+- [[§C5.1 Polarization Charge and the Polarization]] — Zangwill §6.2–6.4; HW10
+- [[§C5.3 Simple Dielectrics and Boundary Problems]] — Zangwill §6.5; HW10
+- [[§C5.4 The Microscopic Dielectric Constant]] — Zangwill §6.6, Ex. 7.2; HW11
+- [[§C5.5 Energy in Dielectrics]] — Zangwill §6.7–6.8
 
 ## Theorems
-- [[§C5.1 The Field of Polarized Matter#^thm-c5-1-1|§C5.1.1]] The Polarization Is Not Unique
-- [[§C5.1 The Field of Polarized Matter#^thm-c5-1-2|§C5.1.2]] Polarization Charge as a Distribution
-- [[§C5.1 The Field of Polarized Matter#^thm-c5-1-3|§C5.1.3]] Neutrality; the Volume Integral of P Is the Dipole Moment
-- [[§C5.1 The Field of Polarized Matter#^thm-c5-1-4|§C5.1.4]] Potential and Field of Polarized Matter
-- [[§C5.1 The Field of Polarized Matter#^thm-c5-1-5|§C5.1.5]] Polarized Matter as a Superposition of Point Dipoles
-- [[§C5.1 The Field of Polarized Matter#^thm-c5-1-6|§C5.1.6]] Dipole Sums inside Matter Depend on the Cavity
-- [[§C5.1 The Field of Polarized Matter#^thm-c5-1-7|§C5.1.7]] Poisson's Formula
-- [[§C5.1 The Field of Polarized Matter#^thm-c5-1-8|§C5.1.8]] Helmholtz Representation of D
-- [[§C5.2 Simple Dielectrics and Boundary Problems#^thm-c5-2-2|§C5.2.2]] Screening and Interface Charge in Simple Dielectrics
-- [[§C5.2 Simple Dielectrics and Boundary Problems#^thm-c5-2-3|§C5.2.3]] A Dielectric Sphere inside Another Dielectric, in a Uniform Field
-- [[§C5.3 The Microscopic Dielectric Constant#^thm-c5-3-2|§C5.3.2]] Dilute Limit
-- [[§C5.3 The Microscopic Dielectric Constant#^thm-c5-3-3|§C5.3.3]] Lorentz Local Field
-- [[§C5.3 The Microscopic Dielectric Constant#^thm-c5-3-4|§C5.3.4]] Clausius–Mossotti Formula
-- [[§C5.3 The Microscopic Dielectric Constant#^thm-c5-3-5|§C5.3.5]] Onsager Cavity: Cavity Field and Reaction Field
-- [[§C5.4 Energy and Forces in Dielectrics#^thm-c5-4-1|§C5.4.1]] Energy Increment in Dielectric Matter
-- [[§C5.4 Energy and Forces in Dielectrics#^thm-c5-4-2|§C5.4.2]] Field and Force from U_E
-- [[§C5.4 Energy and Forces in Dielectrics#^thm-c5-4-3|§C5.4.3]] Energy of a Simple Dielectric
-- [[§C5.4 Energy and Forces in Dielectrics#^thm-c5-4-4|§C5.4.4]] Energy to Polarize Simple Matter
-- [[§C5.4 Energy and Forces in Dielectrics#^thm-c5-4-5|§C5.4.5]] Field and Force from Û_E
-- [[§C5.4 Energy and Forces in Dielectrics#^thm-c5-4-6|§C5.4.6]] Force on an Isolated Dielectric Body
-- [[§C5.4 Energy and Forces in Dielectrics#^thm-c5-4-7|§C5.4.7]] Helmholtz Force Formula
-- [[§C5.4 Energy and Forces in Dielectrics#^thm-c5-4-8|§C5.4.8]] Force from the Dielectric Stress Tensor
-- [[§C5.4 Energy and Forces in Dielectrics#^thm-c5-4-9|§C5.4.9]] Force on an Embedded Volume
+- [[§C5.1 Polarization Charge and the Polarization#^thm-c5-1-1|§C5.1.1]] The Polarization Is Not Unique
+- [[§C5.1 Polarization Charge and the Polarization#^thm-c5-1-2|§C5.1.2]] Polarization Charge as a Distribution
+- [[§C5.1 Polarization Charge and the Polarization#^thm-c5-1-3|§C5.1.3]] Neutrality; the Volume Integral of P Is the Dipole Moment
+- [[§C5.2 The Field of Polarized Matter#^thm-c5-2-1|§C5.2.1]] Potential and Field of Polarized Matter
+- [[§C5.2 The Field of Polarized Matter#^thm-c5-2-2|§C5.2.2]] Polarized Matter as a Superposition of Point Dipoles
+- [[§C5.2 The Field of Polarized Matter#^thm-c5-2-3|§C5.2.3]] Dipole Sums inside Matter Depend on the Cavity
+- [[§C5.2 The Field of Polarized Matter#^thm-c5-2-4|§C5.2.4]] Poisson's Formula
+- [[§C5.2 The Field of Polarized Matter#^thm-c5-2-5|§C5.2.5]] Helmholtz Representation of D
+- [[§C5.3 Simple Dielectrics and Boundary Problems#^thm-c5-3-2|§C5.3.2]] Screening and Interface Charge in Simple Dielectrics
+- [[§C5.3 Simple Dielectrics and Boundary Problems#^thm-c5-3-3|§C5.3.3]] A Dielectric Sphere inside Another Dielectric, in a Uniform Field
+- [[§C5.4 The Microscopic Dielectric Constant#^thm-c5-4-2|§C5.4.2]] Dilute Limit
+- [[§C5.4 The Microscopic Dielectric Constant#^thm-c5-4-3|§C5.4.3]] Lorentz Local Field
+- [[§C5.4 The Microscopic Dielectric Constant#^thm-c5-4-4|§C5.4.4]] Clausius–Mossotti Formula
+- [[§C5.4 The Microscopic Dielectric Constant#^thm-c5-4-5|§C5.4.5]] Onsager Cavity: Cavity Field and Reaction Field
+- [[§C5.5 Energy in Dielectrics#^thm-c5-5-1|§C5.5.1]] Energy Increment in Dielectric Matter
+- [[§C5.5 Energy in Dielectrics#^thm-c5-5-2|§C5.5.2]] Field and Force from U_E
+- [[§C5.5 Energy in Dielectrics#^thm-c5-5-3|§C5.5.3]] Energy of a Simple Dielectric
+- [[§C5.5 Energy in Dielectrics#^thm-c5-5-4|§C5.5.4]] Energy to Polarize Simple Matter
+- [[§C5.5 Energy in Dielectrics#^thm-c5-5-5|§C5.5.5]] Field and Force from Û_E
+- [[§C5.6 Forces in Dielectrics#^thm-c5-6-1|§C5.6.1]] Force on an Isolated Dielectric Body
+- [[§C5.6 Forces in Dielectrics#^thm-c5-6-2|§C5.6.2]] Helmholtz Force Formula
+- [[§C5.6 Forces in Dielectrics#^thm-c5-6-3|§C5.6.3]] Force from the Dielectric Stress Tensor
+- [[§C5.6 Forces in Dielectrics#^thm-c5-6-4|§C5.6.4]] Force on an Embedded Volume
 
 ## Models
-- [[§C5.2 Simple Dielectrics and Boundary Problems#^mod-c5-2-1|§C5.2.1]] Simple Dielectric
-- [[§C5.3 The Microscopic Dielectric Constant#^mod-c5-3-1|§C5.3.1]] Lorentz Model of a Dielectric Gas
+- [[§C5.3 Simple Dielectrics and Boundary Problems#^mod-c5-3-1|§C5.3.1]] Simple Dielectric
+- [[§C5.4 The Microscopic Dielectric Constant#^mod-c5-4-1|§C5.4.1]] Lorentz Model of a Dielectric Gas
