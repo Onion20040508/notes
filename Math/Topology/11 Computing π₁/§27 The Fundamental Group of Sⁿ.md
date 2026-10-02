@@ -185,6 +185,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 > [!remark]- Connections
 > - Stereographic projection first appeared for $S^1$ and $S^2$ in [[§17 Local Compactness#^ex-17-7|One-Point Compactification of ℝ and ℝ²]].
 > - Recomputed with van Kampen in [[§29 The Seifert–van Kampen Theorem#^ex-29-1|Simply Connected Spheres via van Kampen]].
+> - Used in Quantum Field Theory: $S^3 \cong SU(2)$ is simply connected, hence so is $SL(2, \mathbb C) \cong \mathbb R^3\times S^3$ — [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-4|QFT Theorem §C5.1.4]].
 
 > [!remark] Remark: Why $n \geq 2$ is Essential
 > For $n = 1$: $U \cap V = S^1 \setminus \{p, q\} \cong \mathbb{R}^1 \setminus \{0\} = (-\infty, 0) \cup (0, \infty)$ — two disjoint intervals, **not** path-connected. So [[§27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]] does not apply, and indeed $\pi_1(S^1) \cong \mathbb{Z} \neq 0$ ([[Fundamental Group of the Circle|§24.10]]).

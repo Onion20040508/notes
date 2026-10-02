@@ -34,6 +34,9 @@ tags: [linear-algebra]
 > [!proof]+ Proof
 > $\operatorname{tr}(AB)=\sum_j\sum_kA_{j,k}B_{k,j}=\sum_k\sum_jB_{k,j}A_{j,k}=\operatorname{tr}(BA)$.
 
+> [!remark]- Connections
+> - Used in Quantum Field Theory: cyclicity of the trace makes every $\gamma^\mu$, and every product of an odd number of them, traceless — [[§C5.2 The Clifford Algebra and the Dirac Representation#^thm-c5-2-4|QFT Theorem §C5.2.4]], [[§C5.7 Gamma-Matrix Technology#^thm-c5-7-3|QFT Theorem §C5.7.3]].
+
 > [!theorem] Theorem 8.50: Trace of matrix of operator does not depend on basis
 > For $T\in\Lin(V)$ and bases $u$, $v$ of $V$: $\operatorname{tr}\mathcal{M}(T,(u))=\operatorname{tr}\mathcal{M}(T,(v))$.
 
