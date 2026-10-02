@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ← [[· A1 Electric Charges and Fields]] · ↑ [[Electromagnetism]] · [[· A3 Electric Potential]] →
 
 **Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (11), [[· A5 Current and Resistance|A5 Current and Resistance]] (1), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (1), [[· B2 Electrostatics|B2 Electrostatics]] (1), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (2)
-**Used by:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (2), [[· A3 Electric Potential|A3 Electric Potential]] (14), [[· A4 Capacitance|A4 Capacitance]] (5), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (2), [[· B2 Electrostatics|B2 Electrostatics]] (2), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (3), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (2), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (2)
+**Used by:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (2), [[· A3 Electric Potential|A3 Electric Potential]] (14), [[· A4 Capacitance|A4 Capacitance]] (5), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (2), [[· B2 Electrostatics|B2 Electrostatics]] (2), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (3), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (2), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (2), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (3), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (1)
 
 ## Sections
 - [[§A2.1 Electric Flux]] — UP Vol. 2 §6.1
