@@ -140,7 +140,7 @@ tags: [functional-analysis, math556]
 Lemmas [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-3|§19.3]] and [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-4|§19.4]] described the null space of a bounded functional on a Hilbert space. Both facts hold in any normed space, and the first has a converse.
 
 > [!theorem] Proposition §22.5: The Null Space Has Codimension One
-> Let $X$ be a [[§1 Linear Spaces#^def-1-1|linear space]] over $\mathbb{F}$ and $\ell : X \to \mathbb{F}$ a nonzero [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5|linear functional]], $N_\ell = \{x \in X : \ell(x) = 0\}$. Then $\dim X/N_\ell = 1$ ([[§1 Linear Spaces#^def-1-7|quotient space]]). More precisely, for any $x_0$ with $\ell(x_0) \neq 0$, $X = N_\ell \oplus \operatorname{span}\{x_0\}$ ([[§1 Linear Spaces#^prop-1-3|direct sum]] of subspaces, [[§1 Linear Spaces#^def-1-5|linear span]]), with $x = \bigl( x - \frac{\ell(x)}{\ell(x_0)}\, x_0 \bigr) + \frac{\ell(x)}{\ell(x_0)}\, x_0$.
+> Let $X$ be a [[§1 Linear Spaces#^def-1-1|linear space]] over $\mathbb{F}$ and $\ell : X \to \mathbb{F}$ a nonzero [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5|linear functional]], $N_\ell = \{x \in X : \ell(x) = 0\}$. Then $\dim X/N_\ell = 1$ ([[§1 Linear Spaces#^def-1-7|quotient space]]). More precisely, for any $x_0$ with $\ell(x_0) \neq 0$, $X = N_\ell \oplus \operatorname{span}\{x_0\}$ ([[§1 Linear Spaces#^prop-1-3|internal direct sum]], [[§1 Linear Spaces#^def-1-5|linear span]]), with $x = \bigl( x - \frac{\ell(x)}{\ell(x_0)}\, x_0 \bigr) + \frac{\ell(x)}{\ell(x_0)}\, x_0$.
 >
 > *Source: HW5, Problem 4*
 >
@@ -195,7 +195,9 @@ Lemmas [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^l
 > - The sequence $y_n = x_0 - x_n/\ell(x_n)$ is [[Functional Analysis Problem-Solving Techniques#^ex-t18|Technique 18]].
 
 ![[m556-22-1.svg]]
-*The picture behind ($\Leftarrow$): if $\ell$ were unbounded, points $y_n$ of the null space would approach a point $x_0$ off it, so the null space could not be closed. (The picture is schematic: in finite dimensions every functional is bounded, and an unbounded $\ell$ has a **dense** null space.)*
+*Points $y_n$ of $N_\ell$ with $\|y_n - x_0\| < \frac1n$, approaching $x_0$, $\ell(x_0) = 1$, off the null space.*
+
+The picture behind ($\Leftarrow$): if $\ell$ were unbounded, points $y_n$ of the null space would approach a point $x_0$ off it, so the null space could not be closed. (The picture is schematic: in finite dimensions every functional is bounded, and an unbounded $\ell$ has a *dense* null space.)
 
 > [!remark] Remark
 > Proposition [[§22 Dual Spaces#^prop-22-5|§22.5]] is pure algebra; Proposition [[§22 Dual Spaces#^prop-22-6|§22.6]] is where the norm enters. Together they say that the null space of a nonzero functional is a “hyperplane through $0$” ([[§3 Statement and Motivation#^def-3-2|Def. §3.2]]) that is either closed (bounded $\ell$) or not (unbounded $\ell$). Both proofs use the same move: subtract from $x$ the multiple of $x_0$ that lands it in the null space.

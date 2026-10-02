@@ -823,6 +823,9 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 
 *Uses:* [[§20 Orthonormal Sets and Bases#^thm-20-18|§20.18]], [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]], [[§18 Projection and Orthogonal Decomposition#^lem-18-1|§18.1]], [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|§17.1]], [[§20 Orthonormal Sets and Bases#^lem-20-1|§20.1]], [[§20 Orthonormal Sets and Bases#^def-20-6|Def. §20.6]], [[§17 Cauchy–Schwarz and the Induced Norm#^def-17-1|Def. §17.1]], [[§16 Definition and Examples#^ex-16-2|Ex. §16.2]]
 
+> [!remark]- Connections
+> - Finite-dimensional analogue: vector spaces of the same dimension are isomorphic, [[Dimension shows whether vector spaces are isomorphic|LADR 3.70]], via coordinates [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]].
+
 > [!remark] Remark
 > The isomorphism is “take coordinates”: $x \mapsto ((x, e_j))_j$. Every result about a separable Hilbert space can therefore be checked on $\ell^2$, and the [[§20 Orthonormal Sets and Bases#^rem-20-9|earlier remark]] that $L^2[0, 2\pi]$ with the [[§20 Orthonormal Sets and Bases#^thm-20-11|Fourier basis]] is “the same” as $\ell^2(\mathbb{Z})$ is the special case $e_n = e^{inx}/\sqrt{2\pi}$. The isomorphism depends on the choice of basis, as in finite dimensions.
 
