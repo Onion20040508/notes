@@ -218,6 +218,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > [!remark]- Connections
 > - With $Y = \mathbb{R}$ this is the source of the MATH 451 [[Extreme Value Theorem]]: $f([a,b])$ is compact, hence closed and bounded ([[Heine–Borel Theorem|Heine-Borel]]).
 > - With Y = ℝ it gives the Extreme Value Theorem: [[§25 Maximum and Minimum Values#^thm-25-1|Calc Thm. §25.1]] and, on closed bounded sets in ℝ², [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (with worked examples).
+> - Computational version: [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (a continuous complex function on a closed bounded region is bounded and its modulus attains a maximum).
 
 > [!theorem] Theorem §15.4: Compact Subspace of Hausdorff is Closed
 > Every compact subspace of a Hausdorff space is closed.
@@ -310,6 +311,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 > [!remark]- Connections
 > - The ℝⁿ version for closed bounded sets, proved with Bolzano–Weierstrass and used for Heine–Borel: [[§5 Topology of ℝⁿ#^thm-5-2|551 Thm. §5.2]] (Cantor's nested set theorem).
+> - Concrete case: [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^lem-51-1|342 Lemma §51.1]] (nested closed squares in the plane have a common point; the key step of Goursat's proof).
 
 > [!theorem] Theorem §15.7: Bijection from Compact to Hausdorff
 > Let $f: X \to Y$ be a bijective continuous function. If $X$ is compact and $Y$ is Hausdorff, then $f$ is a homeomorphism.
@@ -532,6 +534,7 @@ To prove this, we first establish a key lemma:
 
 > [!remark]- Connections
 > - Closed bounded sets are where Stewart's two-variable Extreme Value Theorem applies: [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (with worked examples).
+> - Used in the complex plane for closed bounded regions: [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (continuous functions on them are bounded, with maximum modulus attained).
 
 > [!remark] Remark: Filling the Gap: Balls vs. Boxes
 > **Q:** The ball $B_\rho(0, N)$ is not a closed interval. How do we use compactness of $[a,b]$?

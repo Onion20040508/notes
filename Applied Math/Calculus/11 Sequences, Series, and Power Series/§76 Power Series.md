@@ -127,6 +127,9 @@ In these examples the set where the series converges is an interval: finite for 
 
 *Uses:* [[§70 Series#^thm-70-4|§70.4]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§70 Series#^thm-70-1|§70.1]], [[§72 The Comparison Tests#^thm-72-1|§72.1]], [[§73 Alternating Series and Absolute Convergence#^thm-73-3|§73.3]]
 
+> [!remark]- Connections
+> - Complex-variables version: [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-1|342 Thm. §69.1]] (convergence at $z_1$ gives absolute convergence in the disk $|z - z_0| < |z_1 - z_0|$).
+
 > [!theorem] Lemma §76.2: Three Possibilities at Center 0
 > For a power series $\sum c_n x^n$ there are only three possibilities:
 >
@@ -179,6 +182,7 @@ In these examples the set where the series converges is an interval: finite for 
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§23 Power Series#^thm-23-1|451 Thm. §23.1]] (the same trichotomy) and [[§23 Power Series#^thm-23-2|451 Thm. §23.2]], which also gives a formula for $R$: $R = 1/\limsup |c_n|^{1/n}$ (Cauchy–Hadamard), proved with the Root Test.
+> - Complex-variables version: [[§69★ Absolute and Uniform Convergence of Power Series#^cor-69-2|342 Cor. §69.2]] (the interval of convergence becomes a disk, inside the circle of convergence).
 
 > [!definition] Definition §76.3: Radius and Interval of Convergence
 > The number $R$ in case (iii) of Theorem §76.3 is the **radius of convergence** of the power series. By convention, $R = 0$ in case (i) and $R = \infty$ in case (ii).

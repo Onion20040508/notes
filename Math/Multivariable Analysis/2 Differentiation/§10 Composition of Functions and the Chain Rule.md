@@ -109,6 +109,7 @@ Recall the single-variable [[§28 Basic Properties of the Derivative#^thm-28-3|c
 > - Used in Relativity: the gradient of a scalar field transforms as a covector under Lorentz transformations — [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]].
 > - Computational version: [[§94 The Chain Rule#^thm-94-2|Calc Thm. §94.2]] (same case) and [[§94 The Chain Rule#^thm-94-3|Calc Thm. §94.3]] (with worked examples).
 > - Used in PDEs: the change to characteristic coordinates $\xi=x+ct$, $\eta=x-ct$ turns the wave equation into $u_{\xi\eta}=0$, [[§31 d'Alembert's Solution#^thm-31-1|341 Thm. §31.1]]; the same rule gives the Laplacian in polar coordinates, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]].
+> - Complex form along a curve: [[§43 Contours#^prop-43-5|342 Prop. §43.5]] (d/dt f(z(t)) = f′(z(t)) z′(t) for analytic f on a smooth arc).
 
 > [!remark] Remark: Matrix Form
 > In matrix notation, the chain rule becomes:

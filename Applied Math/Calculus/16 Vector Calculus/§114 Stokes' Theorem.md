@@ -294,6 +294,9 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 
 *Uses:* [[§114 Stokes' Theorem#^thm-114-1|§114.1]], [[§114 Stokes' Theorem#^def-114-2|Def. §114.2]], [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§113 Surface Integrals#^def-113-7|Def. §113.7]]
 
+> [!remark]- Connections
+> - See also: [[§124★ Two-Dimensional Fluid Flow#^prop-124-2|342 Prop. §124.2]] (the planar case: the rotation of a plane flow as the limiting angular speed on small circles).
+
 > [!remark] Remark: The Paddle Wheel and the Axis of Fastest Rotation
 > Equation 4 says that $\operatorname{curl}\mathbf{v} \cdot \mathbf{n}$ measures the rotating effect of the fluid about the axis $\mathbf{n}$: a tiny paddle wheel at $P_0$ with axis $\mathbf{n}$ turns at a rate proportional to it. The curling effect is greatest about the axis parallel to $\operatorname{curl}\mathbf{v}$, because $\operatorname{curl}\mathbf{v} \cdot \mathbf{n} = |\operatorname{curl}\mathbf{v}|\cos\theta$ is largest when the angle $\theta$ between them is $0$.
 >

@@ -86,6 +86,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 
 > [!remark]- Connections
 > - The map $(r, \theta) \mapsto (r\cos\theta, r\sin\theta)$ in 452: it is locally invertible wherever its Jacobian $r$ is nonzero, [[§13 The Inverse Function Theorem#^ex-13-4|452 Ex. §13.4]] (with its inverse, [[§13 The Inverse Function Theorem#^ex-13-3|452 Ex. §13.3]]), and $r$ is the factor in $dx\,dy = r\,dr\,d\theta$, [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]]. Workhorse example: [[Polar and spherical coordinates]].
+> - Complex-variables version: [[§7 Exponential Form#^def-7-1|342 Def. §7.1]] (the polar form $z = r(\cos\theta + i\sin\theta)$, with $r = |z| \ge 0$ and $\theta$ an argument) and [[§7 Exponential Form#^def-7-2|342 Def. §7.2]] (Euler's formula and the exponential form $z = re^{i\theta}$).
 
 > [!remark] Remark: Choosing the Angle
 > Equations 2 do not determine $\theta$: as $\theta$ runs through $[0, 2\pi)$, each value of $\tan\theta$ occurs twice. When converting from Cartesian to polar coordinates, it is not enough to find $r$ and $\theta$ satisfying Equations 2; choose $\theta$ so that the point $(r, \theta)$ lies in the correct quadrant (Example §65.1(c)).

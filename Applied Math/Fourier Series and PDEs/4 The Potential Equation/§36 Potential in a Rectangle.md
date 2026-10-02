@@ -115,6 +115,7 @@ $$
 
 > [!remark]- Connections
 > - Why the series really is harmonic inside: for $\delta \le y \le b - \delta$, $\big|\sinh(\lambda_ny)/\sinh(\lambda_nb)\big| \le 2e^{-\lambda_n(b - y)} \le 2e^{-n\pi\delta/a}$ (for $\lambda_n b \ge 1$, say), and the same for the other factor, while $|a_n|, |c_n| \le 2\max|f_i|$. Differentiating term by term only brings in powers of $\lambda_n$, so the series and its differentiated series are dominated by $\sum n^2e^{-n\pi\delta/a} < \infty$; by the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], they converge uniformly and (with [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]]) define a continuous function that may be differentiated term by term. At $y = 0$ and $y = b$ the series reduce to the Fourier sine series of $f_1$, $f_2$, whose convergence is the subject of [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]].
+> - See also: [[§123★ Examples (Electrostatic Potential)#^ex-123-2|342 Ex. §123.2]] (a half annulus mapped by a logarithm onto a rectangle and solved with this series).
 
 > [!remark] Remark: Method — Separation of Variables for the Potential Equation in a Rectangle
 > Lecture 11.19 organizes the work into steps:

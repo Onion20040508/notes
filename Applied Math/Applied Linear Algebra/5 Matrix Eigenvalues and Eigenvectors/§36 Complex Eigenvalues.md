@@ -205,6 +205,9 @@ The next result is the basic "building block" for all real $2 \times 2$ matrices
 
 *Uses:* [[§53 Complex Numbers#^def-53-6|Def. §53.6]], [[§33 The Characteristic Equation#^thm-33-4|§33.4]]
 
+> [!remark]- Connections
+> - See also: [[§96★ Linear Transformations#^prop-96-1|342 Prop. §96.1]] (the map $w = Az$ rotates through $\operatorname{Arg} A$ and scales by $|A|$), [[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]] (the Cauchy–Riemann equations make the Jacobian of an analytic map a rotation–scaling matrix) and [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|342 Thm. §112.1]] (so analytic maps preserve angles where $f' \ne 0$).
+
 The lecture writes $C = M_{a+bi}$, the matrix of multiplication by $a + bi$ on $\mathbb{C} = \mathbb{R}^2$ ([[§53 Complex Numbers#^rem-53-3|§53, Remark: Complex Numbers as 2 × 2 Matrices]]), and notes $M_zM_w = M_{zw}$. In particular, with $R_\varphi$ the rotation matrix, $(R_\varphi)^N = R_{N\varphi}$ and
 
 $$

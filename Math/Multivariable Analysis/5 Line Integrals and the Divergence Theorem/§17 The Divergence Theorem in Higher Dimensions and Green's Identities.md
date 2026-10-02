@@ -165,6 +165,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > [!remark]- Connections
 > - The gradient was introduced in [[§7 Directional Derivatives|§7]]; the normal derivative is the directional derivative ([[Directional Derivative Formula|Theorem §7.1]]) in the direction $\hat{n}$.
 > - Computational version: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]] (the potential equation $\nabla^2u=0$ and harmonic functions, solved by separation of variables in rectangles and disks); the five-point difference approximation of the Laplacian, [[§58★ Potential Equation#^def-58-1|341 Def. §58.1]].
+> - Computational version: [[§27★ Harmonic Functions#^def-27-1|342 Def. §27.1]] (harmonic functions of two variables, Δu = 0, with worked examples) and [[§116★ Transformations of Harmonic Functions#^prop-116-2|342 Prop. §116.2]] (the Laplacian under an analytic change of variables is multiplied by |f′|²).
 
 ## Green's First Identity
 
@@ -223,6 +224,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > - Revisited with surface integrals in $\mathbb{R}^3$: [[§18 Surface Integrals#^rem-18-9|Green's Identities Revisited]].
 > - Its case n = 1 is integration by parts on [a, b]: [[§44 Integration by Parts#^thm-44-2|Calc Thm. §44.2]] (with worked examples).
 > - Used in PDEs: with $u=v=\phi$ an eigenfunction, it shows that the Dirichlet eigenvalues of the Laplacian are positive, [[§44★ Problems in Polar Coordinates#^rem-44-2|341 Remark §44.2]].
+> - Concrete case: [[§140★ Neumann Problems#^rem-140-1|342 Remark §140.1]] (Neumann data on a circle must have mean zero, the case u = 1).
 
 > [!remark] Remark: Special Case: $u = v$
 > Setting $u = v$ in Green's first identity:
@@ -281,6 +283,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 > [!remark]- Connections
 > - Used in PDEs: eigenfunctions of the Laplacian for different eigenvalues are orthogonal, [[§44★ Problems in Polar Coordinates#^thm-44-3|341 Thm. §44.3]], as for the vibrating drum, [[§47★ Vibrations of a Circular Membrane#^prop-47-3|341 Prop. §47.3]].
+> - Concrete case on a disk: [[§134★ Poisson Integral Formula#^thm-134-1|342 Thm. §134.1]] (the Poisson integral formula, which represents a harmonic function by its boundary values).
 
 > [!remark] Remark: Green's Second Identity as Symmetry
 > Green's second identity expresses a kind of **symmetry of the Laplacian**: the “interaction” of $u$ with $\Delta v$ differs from the interaction of $v$ with $\Delta u$ only by a boundary term. This is the $L^2$ analog of integration by parts, and it shows that the Laplacian is a **[[§22 Self-Adjoint and Normal Operators#^ladr-7-10|self-adjoint operator]]** (up to boundary terms).
@@ -492,6 +495,7 @@ This is **Laplace's equation**. A function satisfying $\Delta \phi = 0$ is calle
 
 > [!remark]- Connections
 > - Computational version: [[§35 Potential Equation#^ex-35-1|341 Ex. §35.1]] (the velocity potential of an ideal fluid satisfies the potential equation).
+> - Computational version in the plane: [[§124★ Two-Dimensional Fluid Flow#^prop-124-5|342 Prop. §124.5]] (for incompressible irrotational flow the velocity potential is harmonic, and the flow is described by an analytic complex potential).
 
 > [!remark] Remark: Symmetry and Radial Solutions
 > Laplace's equation $\phi_{xx} + \phi_{yy} = 0$ has a symmetric structure: the operator $\Delta$ treats $x$ and $y$ on equal footing. This symmetry motivates looking for **radial solutions**, i.e., solutions depending only on $r = \sqrt{x^2 + y^2}$: $\phi(x,y) = f(r)$.
@@ -600,6 +604,7 @@ Choosing $C' = 0$:
 > [!remark]- Connections
 > - The 3D radial computation (giving $f'' + \frac{2}{r} f'$ and the solution $1/r$): [[§19 The Laplacian in Spherical Coordinates#^rem-19-2|Verification: Radial Functions]], from the [[§19 The Laplacian in Spherical Coordinates#^thm-19-1|Laplacian in Spherical Coordinates (§19.1)]].
 > - Computational version: [[§35 Potential Equation#^ex-35-3|341 Ex. §35.3]](b) (the radial harmonic functions $A+B\ln r$, from the polar form of the Laplacian).
+> - Computational version: [[§122★ Electrostatic Potential#^ex-122-1|342 Ex. §122.1]] (the potential A ln r + B between coaxial cylinders) and [[§140★ Neumann Problems#^def-140-1|342 Def. §140.1]] (the Neumann kernel of the disk, a multiple of the fundamental solution).
 
 > [!remark] Remark: Connection to Other PDEs
 > This fundamental solution is the starting point for solving boundary value problems via Green's functions. The same approach — exploit symmetry to reduce a PDE to an ODE — applies to other equations:

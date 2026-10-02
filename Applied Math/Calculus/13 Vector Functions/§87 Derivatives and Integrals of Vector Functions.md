@@ -78,6 +78,7 @@ The calculus of vector functions is one-variable calculus done in each component
 > [!remark]- Connections
 > - For a plane curve this is the tangent vector $(x'(t), y'(t))$ of [[§16 Line Integrals and Green's Theorem#^def-16-3|452 Def. §16.3]]. In 452's language, $\mathbf{r}'(t)$ is the Jacobian (a $3 \times 1$ matrix) of $\mathbf{r}: \mathbb{R} \to \mathbb{R}^3$, and Theorem §87.1 says it is computed entry by entry.
 > - ODE version: [[§28 Matrices#^def-28-5|331 Def. §28.5]] (matrix functions, differentiated and integrated entry by entry; a vector function is the case of a single column).
+> - Complex-variables version: [[§41 Derivatives of Functions w(t)#^def-41-1|342 Def. §41.1]] (the derivative of $w(t) = u(t) + iv(t)$, taken component by component).
 
 > [!definition] Definition §87.3: Second Derivative
 > The **second derivative** of a vector function $\mathbf{r}$ is the derivative of $\mathbf{r}'$: $\mathbf{r}'' = (\mathbf{r}')'$. In [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Definition §89.1]], $\mathbf{r}'(t)$ and $\mathbf{r}''(t)$ are the velocity and acceleration of a particle with position $\mathbf{r}(t)$ at time $t$.
@@ -287,6 +288,7 @@ The calculus of vector functions is one-variable calculus done in each component
 
 > [!remark]- Connections
 > - Componentwise this is [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (Stewart's Part 2 of the FTC).
+> - Complex-variables version: [[§42 Definite Integrals of Functions w(t)#^thm-42-2|342 Thm. §42.2]] (the fundamental theorem of calculus for complex-valued $w(t)$).
 
 > [!example] Example §87.4: Integrals and Initial Values
 > **(a)** If $\mathbf{r}(t) = 2\cos t\,\mathbf{i} + \sin t\,\mathbf{j} + 2t\,\mathbf{k}$, then integrating each component,

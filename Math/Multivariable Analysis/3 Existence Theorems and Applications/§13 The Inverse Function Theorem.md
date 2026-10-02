@@ -63,6 +63,7 @@ $$
 > [!remark]- Connections
 > - The same matrix as the total derivative of §6: [[§6 Differentiability#^def-6-2|Def. §6.2]]; Jacobians multiply under composition: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Remark §10.4]].
 > - Linear-algebra view: the matrix of the linear map $Df$ in the standard bases, [[§9 Matrices#^ladr-3-31|LADR 3.31]].
+> - For an analytic map the Cauchy–Riemann equations make the Jacobian matrix a rotation–scaling matrix with determinant |f′|²: [[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]] and [[§114★ Local Inverses#^thm-114-1|342 Thm. §114.1]].
 
 **What does the Jacobian do?** It describes how the mapping behaves **locally** near a point. If we make a small displacement $(dx, dy)$ in the input, the output changes by approximately:
 
@@ -158,6 +159,7 @@ $$
 > - The linear-algebra fact behind the hypothesis: [[Invertible ⟺ nonzero determinant|LADR 9.50]], and [[§10 Invertibility and Isomorphisms#^ladr-3-86|matrix of inverse equals inverse of matrix]] (LADR 3.86) behind the formula for the inverse's Jacobian.
 > - The Jacobian determinant returns as the area factor in the [[§15 Multivariable Integration#^thm-15-14|change of variables formula]] (§15.14, §15.20).
 > - The n-variable theorem, of which this is the case n = 2, is quoted in 591 as [[§28 Local Diffeomorphisms and Submersions#^thm-28-1|591 Thm. §28.1]]; on manifolds it becomes the criterion that a map is a local diffeomorphism exactly where its differential is bijective, [[§28 Local Diffeomorphisms and Submersions#^thm-28-2|591 Thm. §28.2]].
+> - Complex counterpart: [[§114★ Local Inverses#^thm-114-1|342 Thm. §114.1]] (an analytic f with f′(z₀) ≠ 0 has an analytic local inverse; the Jacobian is |f′|²).
 
 > [!proof]+ Proof via the Implicit Function Theorem
 > The strategy is to apply the [[§12 The Implicit Function Theorem#^thm-12-2|Implicit Function Theorem]] **twice** to “peel off” the variables one at a time: first solve for $x$, then solve for $y$.

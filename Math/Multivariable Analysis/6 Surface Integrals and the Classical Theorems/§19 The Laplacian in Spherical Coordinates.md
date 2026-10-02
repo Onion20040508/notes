@@ -183,6 +183,7 @@ Dividing both sides by $r^2\sin\theta \, dr \, d\theta \, d\psi$:
 
 > [!remark]- Connections
 > - Computational version: [[§4★ Singular Boundary Value Problems#^lem-4-2|341 Lemma §4.2]] (the substitution $u=v/\rho$ turns the radial part into $v''/\rho$, used for radial heat flow in a sphere).
+> - In physics form: [[§122★ Electrostatic Potential#^prop-122-1|342 Prop. §122.1]] (the potential of a point charge, proportional to 1/r, is harmonic away from the charges).
 
 > [!remark] Remark: General Orthogonal Coordinates
 > The same Divergence Theorem argument works for *any* orthogonal coordinate system $(q_1, q_2, q_3)$ with scale factors $(h_1, h_2, h_3)$. The result is:

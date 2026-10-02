@@ -279,6 +279,7 @@ The theorem is [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]] (Pow
 > [!remark]- Connections
 > - Convergence of Fourier series in the mean-square sense holds for every $f \in L^2$, with no smoothness at all: [[§20 Orthonormal Sets and Bases#^rem-20-9|556 Rem. §20.9]] (the Fourier basis, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]]); Powers' version is [[§11★ Mean Error and Convergence in Mean#^thm-11-6|Theorem §11.6]], and the computational one [[§47 Applications of Inner Product Spaces#^thm-47-4|235 Thm. §47.4]]. Pointwise convergence, proved here, needs a local condition at the point $x$, which sectional smoothness provides.
 > - The tools are those of Single Variable Analysis: the Riemann integral of sectionally continuous functions and one-sided l'Hôpital's rule, [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]]. For uniform convergence (continuous $f$ with sectionally continuous $f'$) see [[§9 Uniform Convergence#^thm-9-3|Theorem §9.3]].
+> - See also: [[§66 Laurent Series#^ex-66-3|342 Ex. §66.3]] (for boundary values of a function analytic in an annulus, the Fourier series converges as a Laurent series) and [[§135★ Dirichlet Problem for a Disk#^thm-135-1|342 Thm. §135.1]] (for piecewise continuous $f$, the series with its terms damped by $(r/r_0)^n$ converges to $f$ at every point of continuity).
 
 Section 1.3 states the theorem for period $2a$; it follows by stretching the variable.
 

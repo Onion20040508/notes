@@ -36,3 +36,4 @@ tags: [real-analysis, hub]
 - Leads to Taylor's theorem (§31) and, in its generalized (Cauchy) form, to L'Hospital's rule (§30).
 - For vector-valued functions the equality version fails (e.g. $t\mapsto(\cos t,\sin t)$ on $[0,2\pi]$); only the mean value inequality survives.
 - **Also in [[Calculus]]:** [[§26 The Mean Value Theorem#^thm-26-2|Calc Thm. §26.2]], with Rolle's Theorem [[§26 The Mean Value Theorem#^thm-26-1|Calc Thm. §26.1]] (computational treatment with worked examples).
+- **Also in [[Complex Variables]]:** [[§41 Derivatives of Functions w(t)#^ex-41-3|342 Ex. §41.3]] (the failure of the equality version for w(t) = eⁱᵗ on [0, 2π], worked out).

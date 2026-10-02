@@ -101,6 +101,9 @@ The logarithmic function $y = \log_b x$ is the inverse of $y = b^x$, which is di
 
 *Appendix G takes the integral $\int_1^x dt/t$ as the definition of $\ln x$, so that this formula holds by the Fundamental Theorem of Calculus: [[§121 The Logarithm Defined as an Integral#^thm-121-1|Theorem §121.1]].*
 
+> [!remark]- Connections
+> - Complex-variables version: [[§33 Branches and Derivatives of Logarithms#^thm-33-1|342 Thm. §33.1]] (each branch of $\log z$ is analytic, with derivative $1/z$).
+
 Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that natural logarithms (base $e$) are used in calculus: the differentiation formula is simplest when $b = e$, because $\ln e = 1$.
 
 > [!theorem] Corollary §19.4: The Logarithm of a Function
@@ -394,6 +397,7 @@ The inverse trigonometric functions were defined in [[§5 Inverse Functions and 
 
 > [!remark]- Connections
 > - 451 uses $\arctan' = 1/(1 + x^2)$, obtained there from the Inverse Function Theorem, to find the power series of $\arctan$: [[§26 Differentiation and Integration of Power Series#^ex-26-3|451 Ex. §26.3]].
+> - Complex-variables version: [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-3|342 Prop. §40.3]] (the same derivatives for branches of $\sin^{-1}z$, $\cos^{-1}z$ and $\tan^{-1}z$).
 
 > [!example] Example §19.5: Inverse Trigonometric Functions in Combinations
 > **(a)** Differentiate $y = \dfrac{1}{\sin^{-1} x}$. By the Chain Rule (power $-1$),

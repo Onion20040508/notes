@@ -82,6 +82,7 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 > [!remark]- Connections
 > - The series argument of Remark: Where Euler's Formula Comes From, with its series: [[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]] ($e^x$), [[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]] ($\sin x$), [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]] ($\cos x$); the same derivation from the complex-numbers side: [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]], where $e^{i\varphi}$ gives the polar form of a complex number.
 > - Lay defines $e^{(a+bi)t}$ by the power series and arrives at the same formula (14), used for complex eigenvalues of $\mathbf{x}' = A\mathbf{x}$: [[§38 Applications to Differential Equations#^def-38-3|235 Def. §38.3]].
+> - Complex-variables version: [[§7 Exponential Form#^def-7-2|342 Def. §7.2]] (Euler's formula and the exponential form $z = re^{i\theta}$) and [[§30 The Exponential Function#^def-30-1|342 Def. §30.1]] ($e^z = e^xe^{iy}$ for every complex $z$, whose Maclaurin series is proved in [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]]).
 
 > [!theorem] Proposition §15.1: Rules for the Complex Exponential
 > For complex numbers $r$, $r_1$, $r_2$ and real $t$:
@@ -118,6 +119,9 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 ^pf-15-1
 
 *Uses:* [[§15 Complex Roots of the Characteristic Equation#^def-15-1|Def. §15.1]]
+
+> [!remark]- Connections
+> - Complex-variables version: [[§30 The Exponential Function#^thm-30-2|342 Thm. §30.2]] (the law of exponents for all complex exponents) and [[§41 Derivatives of Functions w(t)#^ex-41-2|342 Ex. §41.2]] (the derivative rule, proved the same way).
 
 ## The General Solution
 

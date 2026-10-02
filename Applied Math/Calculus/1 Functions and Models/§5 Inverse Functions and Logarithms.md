@@ -266,6 +266,9 @@ The following properties of logarithms come from the Laws of Exponents of [[§4 
 
 *Appendix G proves the laws for $\ln$ from the integral ([[§121 The Logarithm Defined as an Integral#^thm-121-2|Theorem §121.2]], with Law 3 for real $r$ in [[§121 The Logarithm Defined as an Integral#^thm-121-8|Theorem §121.8]]) and for $\log_b$ by change of base ([[§121 The Logarithm Defined as an Integral#^thm-121-11|Theorem §121.11]]).*
 
+> [!remark]- Connections
+> - Complex-variables version: [[§34 Some Identities Involving Logarithms#^thm-34-1|342 Thm. §34.1]] (Law 1 for the multiple-valued $\log z$, which holds as an equality of sets of values).
+
 > [!example] Example §5.3: Expanding and Combining Logarithms
 > **(a)** Evaluate $\log_2 80 - \log_2 5$. By Law 2,
 >
@@ -340,6 +343,9 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 *Uses:* [[§5 Inverse Functions and Logarithms#^def-5-3|Def. §5.3]], [[§5 Inverse Functions and Logarithms#^thm-5-4|§5.4]], [[§5 Inverse Functions and Logarithms#^def-5-4|Def. §5.4]]
 
 *In Appendix G, (8) and (9) define $e^x$ as the inverse of the integral logarithm: [[§121 The Logarithm Defined as an Integral#^def-121-3|Definition §121.3]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Definition §121.4]].*
+
+> [!remark]- Connections
+> - Complex-variables version: [[§31 The Logarithmic Function#^def-31-1|342 Def. §31.1]] (the solutions $w$ of $e^w = z$, infinitely many for each $z \ne 0$) and [[§31 The Logarithmic Function#^def-31-2|342 Def. §31.2]] (the principal value $\operatorname{Log} z$, equal to $\ln x$ for $z = x > 0$).
 
 > [!theorem] Proposition §5.7: Powers in Exponential Form
 > For $x > 0$ and every real number $r$,

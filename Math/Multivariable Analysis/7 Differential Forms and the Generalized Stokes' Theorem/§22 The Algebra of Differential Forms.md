@@ -803,6 +803,7 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 > - Used in Relativity: on a region without holes every field tensor obeying the homogeneous Maxwell pair comes from a four-potential — [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]], [[§B4.2 The Electromagnetic Field Tensor#^rem-b4-2-4|REL Remark: Layers, and what comes later]].
 > - Vector-field form: curl-free fields on ℝ³ are conservative, [[§114 Stokes' Theorem#^thm-114-4|Calc Thm. §114.4]], and the plane test on simply-connected regions, [[§110 Green's Theorem#^thm-110-5|Calc Thm. §110.5]] (with worked examples).
 > - Computational version: for 1-forms on a rectangle in $\mathbb{R}^2$ the lemma is the test for exactness $M_y = N_x$, proved there by building the potential $\psi$, [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|331 Thm. §9.2]] (with worked examples).
+> - Complex version for 1-forms in the plane: [[§115★ Harmonic Conjugates#^thm-115-4|342 Thm. §115.4]] (on a simply connected domain the closed 1-form −(∂u/∂y) dx + (∂u/∂x) dy of a harmonic u is exact, which gives its harmonic conjugate).
 
 The proof (constructing $\eta$ explicitly via a homotopy operator) is beyond the scope of this course; see Lee, Chapter 17. The key point is that the failure of exactness is a *topological* property of the domain — it detects holes.
 

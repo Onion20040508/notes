@@ -205,6 +205,7 @@ Adding the results:
 > - 1D ancestor: the [[Fundamental Theorem of Calculus]] (boundary of $[a,b]$ is $\{a,b\}$); curved-surface version: [[Stokes' Theorem in ℝ³|Stokes' Theorem (§20.1)]]; everything at once: [[Generalized Stokes' Theorem|Generalized Stokes' Theorem (§23.1)]].
 > - Why the region must have no holes for "curl-free ⇒ conservative": [[§22 The Algebra of Differential Forms#^prop-22-11|A Closed Form That Is Not Exact (§22.11)]]; the topological notion is [[§23 The Fundamental Group#^def-23-3|simply connected]] (590 §23.3).
 > - Computational version: [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]] (with worked examples).
+> - Computational version: [[§50 Cauchy–Goursat Theorem#^thm-50-2|342 Thm. §50.2]] (Cauchy's theorem for f′ continuous, proved by this theorem and the Cauchy–Riemann equations) and [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|342 Thm. §51.3]] (Goursat's proof, which drops the continuity of f′).
 
 > [!remark] Remark: Why the Signs Work Out
 > The sign pattern $g_x - f_y$ is not arbitrary. It comes from:

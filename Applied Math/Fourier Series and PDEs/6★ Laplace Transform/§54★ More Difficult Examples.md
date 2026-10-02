@@ -263,6 +263,7 @@ Sometimes only part of the solution is of interest. For heat conduction in a sem
 
 > [!remark]- Connections
 > - For rational transforms with repeated roots, the same terms $t^ne^{rt}$ come from partial fractions and table entry 11, $\mathcal{L}(t^ne^{at}) = n!/(s - a)^{n+1}$: [[§22 Solution of Initial Value Problems#^thm-22-6|331 Thm. §22.6]], [[§22 Solution of Initial Value Problems#^rem-22-4|331 §22]] (Method — Inverting a Rational Transform). The ODE version of resonance, $mu'' + ku = F_0\cos(\omega_0t)$ with its growing term $\frac{F_0}{2m\omega_0}t\sin(\omega_0t)$, is [[§20 Forced Periodic Vibrations#^prop-20-4|331 Prop. §20.4]].
+> - Complex-variables version: [[§80 Residues at Poles#^thm-80-1|342 Thm. §80.1]] (residues at a pole of any order) and, for rational transforms, [[§95★ Inverse Laplace Transforms#^thm-95-6|342 Thm. §95.6]].
 
 > [!example] Example §54.3: A Wire Driven at a Natural Frequency
 > A steel wire exposed to a sinusoidal magnetic field is displaced according to

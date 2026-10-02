@@ -194,6 +194,9 @@ tags: [topology, math590]
 
 *Uses:* [[§14 Connected Subspaces of ℝ#^cor-14-2|§14.2]], [[§13 Connected Spaces#^thm-13-3|§13.3]], [[§13 Connected Spaces#^lem-13-4|§13.4]]
 
+> [!remark]- Connections
+> - In the complex plane: [[§12★ Regions in the Complex Plane#^def-12-4|342 Def. §12.4]] (B&C's polygonally connected open sets are path-connected, hence connected).
+
 > [!remark] Remark
 > The converse is not true in general: there exist connected spaces that are not path-connected (e.g., the [[§14 Connected Subspaces of ℝ#^ex-14-7|topologist's sine curve]]).
 

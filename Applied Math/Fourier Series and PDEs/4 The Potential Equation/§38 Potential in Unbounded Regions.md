@@ -68,6 +68,9 @@ $$
 
 *Uses:* [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (sine series)
 
+> [!remark]- Connections
+> - See also: [[§27★ Harmonic Functions#^ex-27-1|342 Ex. §27.1]] (the case $a = \pi$, $f(x) = \sin x$, whose solution $e^{-y}\sin x$ is the real part of an entire function).
+
 > [!theorem] Theorem §38.2: Slot with Data on the Walls
 > Let $g_1$ and $g_2$ be sectionally smooth on $0 < y < \infty$ with $\int_0^\infty|g_i(y)|\,dy < \infty$. The bounded solution $u_2$ of the potential equation in the slot $0 < x < a$, $0 < y$, with $u_2(x, 0) = 0$, $u_2(0, y) = g_1(y)$, $u_2(a, y) = g_2(y)$, is
 >
@@ -164,6 +167,9 @@ $$
 ![[m341-38-1.svg]]
 *Level curves $u = 0.1, \ldots, 0.9$ of the slot solution $u = \frac2\pi\arctan\big(\sin(\pi x/a)/\sinh(\pi y/a)\big)$ of Example §38.1. Every level curve runs from one bottom corner to the other, where the boundary value jumps from $1$ to $0$; the curves with $u \ge 0.5$ (red) hug the bottom, and the potential fades exponentially up the slot.*
 
+> [!remark]- Connections
+> - Complex-variables version: [[§120★ A Related Problem (Steady Temperatures in a Half Plane)#^ex-120-1|342 Ex. §120.1]] (the same slot, shifted to $-\pi/2 < x < \pi/2$, mapped onto a half plane by $\sin z$; it gives the same arctangent).
+
 > [!example] Example §38.2: A Slot with Data on Both Walls
 > Solve
 >
@@ -228,3 +234,6 @@ The potential equation can also be solved in a strip ($0 < x < a$, $-\infty < y 
 > the half-plane counterpart of the Poisson integral formula for the disk, [[§39 Potential in a Disk#^thm-39-3|Theorem §39.3]]. For example, with $f = 1$ for $x > 0$ and $0$ for $x < 0$ it gives $u = \frac12 + \frac1\pi\arctan(x/y)$, the harmonic function that is constant on rays from the origin.
 
 ^rem-38-2
+
+> [!remark]- Connections
+> - Complex-variables version: [[§138★ Schwarz Integral Formula#^thm-138-2|342 Thm. §138.2]] (the half-plane formula derived from the Cauchy integral formula) and [[§139★ Dirichlet Problem for a Half Plane#^thm-139-1|342 Thm. §139.1]] (the proof that it solves the Dirichlet problem for bounded data with jumps); a worked case is [[§119★ Steady Temperatures in a Half Plane#^ex-119-1|342 Ex. §119.1]].

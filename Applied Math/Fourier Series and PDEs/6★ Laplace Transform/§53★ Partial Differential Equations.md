@@ -180,7 +180,7 @@ a function that rarely appears in a table of transforms. Powers inverts it by ex
 ^rem-53-2
 
 > [!remark]- Remark: Why It Works
-> Powers gives no justification; the standard one uses complex analysis, which the vault does not develop. The Laplace transform has an inversion formula, the **Bromwich integral**
+> Powers gives no justification; the standard one uses complex analysis, carried out in [[§95★ Inverse Laplace Transforms|342 §95★]]. The Laplace transform has an inversion formula, the **Bromwich integral**
 >
 > $$
 > u(x, t) = \frac{1}{2\pi i}\int_{\sigma - i\infty}^{\sigma + i\infty} e^{st}\,U(x, s)\,ds ,
@@ -191,6 +191,9 @@ a function that rarely appears in a table of transforms. Powers inverts it by ex
 > - **The series must be checked.** The arcs condition can fail, and the formal series may then diverge or converge to the wrong function; Powers' instruction to check convergence (and the problem itself) is the practical safeguard.
 
 ^rem-53-3
+
+> [!remark]- Connections
+> - Complex-variables version: [[§95★ Inverse Laplace Transforms#^thm-95-4|342 Thm. §95.4]] (the Bromwich integral returns $u$), [[§95★ Inverse Laplace Transforms#^thm-95-3|342 Thm. §95.3]] (it equals the series of residues when $U$ is small on semicircles between the poles) and [[§95★ Inverse Laplace Transforms#^rem-95-1|342 Remark §95.1]] (the semicircle estimate carried out for Example §53.3).
 
 > [!theorem] Lemma §53.2: Zeros of sinh and cosh
 > For complex arguments the addition formulas hold, and $\cosh(iA) = \cos(A)$, $\sinh(iA) = i\sin(A)$. Hence, for real $\xi$, $\eta$,

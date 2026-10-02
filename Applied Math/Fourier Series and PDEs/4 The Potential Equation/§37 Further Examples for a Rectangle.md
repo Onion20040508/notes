@@ -250,6 +250,7 @@ The success of separation of variables depends on having homogeneous boundary co
 
 > [!remark]- Connections
 > - Uniqueness: two solutions of the same Poisson equation with the same boundary values differ by a harmonic function vanishing on the boundary, hence coincide, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|452 Ex. §17.1]] (stated there for $\Delta u_1 = \Delta u_2$); in the vault's terms also [[§39 Potential in a Disk#^cor-39-6|Corollary §39.6]] applied to the difference.
+> - See also: [[§116★ Transformations of Harmonic Functions#^cor-116-3|342 Cor. §116.3]] (how the Poisson equation transforms under an analytic change of variables).
 
 > [!theorem] Proposition §37.1: Polynomial Solutions of the Poisson Equation
 > If $H$ is a constant, the polynomial

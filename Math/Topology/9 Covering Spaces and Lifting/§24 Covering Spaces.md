@@ -26,6 +26,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - In 591 the smooth analogue with a discrete fibre is a fibration, [[§30 Fibrations#^def-30-1|591 Def. §30.1]], and smooth covering maps such as ℝ → S¹ are local diffeomorphisms, [[§28 Local Diffeomorphisms and Submersions#^rem-28-2|591 §28, Remark: Covering Maps]].
+> - Concrete example: [[§110★ Riemann Surfaces#^ex-110-1|342 Ex. §110.1]] (the Riemann surface of log z, an infinitely-sheeted covering of the punctured plane).
 
 > [!definition] Definition §24.3: Covering Space
 > If $p: E \to B$ is a covering map, the space $E$ is called a **covering space** of $B$. The space $B$ is called the **base space**. The triple $(E, p, B)$ is called a **covering**.
@@ -122,6 +123,9 @@ tags: [topology, math590]
 
 ![[m590-24-2.svg]]
 *The covering $p: \mathbb{R} \to S^1$ drawn as a helix over the circle: each $x \in \mathbb{R}$ sits directly above $p(x)$, one full turn per unit length. The right half-circle $U$ (red, open, hollow endpoints) is evenly covered. Its preimage is the stack of disjoint red slices $V_n = (n - \tfrac14, n + \tfrac14)$, each carried homeomorphically onto $U$ by $p$. The fiber over $b_0 = (1,0)$ is $\mathbb{Z}$ (black dots), one point in each slice.*
+
+> [!remark]- Connections
+> - Complex form: z ↦ eᶻ covers ℂ ∖ {0}, and the branches of log z are its local inverses on slit planes, [[§33 Branches and Derivatives of Logarithms#^thm-33-1|342 Thm. §33.1]]; the whole covering is the Riemann surface of log z, [[§110★ Riemann Surfaces#^ex-110-1|342 Ex. §110.1]].
 
 > [!remark] Remark
 > This covering map is the key to computing $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]). The idea: $\mathbb{R}$ is simply connected, and the covering map $p: \mathbb{R} \to S^1$ “unwinds” loops on $S^1$ into paths in $\mathbb{R}$. A loop that winds $n$ times around $S^1$ lifts to a path in $\mathbb{R}$ from $0$ to $n$. The integer $n$ is the winding number, and this gives the isomorphism $\pi_1(S^1) \cong \mathbb{Z}$.
@@ -418,6 +422,9 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 
 *Uses:* [[§15 Compact Spaces#^thm-15-10|§15.10]], [[Lebesgue Number Lemma|§16.3]], [[Pasting Lemma|§9.5]], [[Continuous Image of a Connected Space is Connected|§13.3]], [[§14 Connected Subspaces of ℝ#^cor-14-2|§14.2]], [[§13 Connected Spaces#^lem-13-4|§13.4]]
 
+> [!remark]- Connections
+> - Computational version: [[§93 Argument Principle#^lem-93-1|342 Lemma §93.1]] (a continuous argument along a contour, the lift of a loop in ℂ ∖ {0} through θ ↦ eⁱᶿ, given by an integral of w′/w).
+
 ## Homotopy Lifting
 
 > [!theorem] Lemma §24.7: Homotopy Lifting Lemma
@@ -597,6 +604,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 > [!remark]- Connections
 > - Consequences: [[Fundamental Theorem of Algebra (topological proof)|Fundamental Theorem of Algebra]], [[No-Retraction Theorem|No-Retraction Theorem]], Brouwer Fixed Point Theorem for $B^2$ ([[Brouwer Fixed Point Theorem|§26.7]]).
 > - Same method for $P^2$: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$ ([[§28 Fundamental Group of Some Surfaces#^thm-28-2|§28.2]]).
+> - Computational version: [[§93 Argument Principle#^thm-93-4|342 Thm. §93.4]] (the argument principle computes the winding number of f(C) around 0 as Z − P); no branch of log z is continuous on a circle around 0, which is why branches need a cut, [[§33 Branches and Derivatives of Logarithms#^thm-33-1|342 Thm. §33.1]].
 
 > [!theorem] Theorem §24.11: The Generator of $\pi_1(S^1)$
 > Every element of $\pi_1(S^1, b_0)$ can be written uniquely as $[\omega]^k$ for some $k \in \mathbb{Z}$, where $\omega(s) = (\cos 2\pi s, \sin 2\pi s)$ is the standard counterclockwise loop. Here:

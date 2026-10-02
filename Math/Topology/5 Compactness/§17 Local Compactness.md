@@ -99,6 +99,9 @@ tags: [topology, math590]
 
 ^def-17-2
 
+> [!remark]- Connections
+> - Computational version for ℂ: [[§17 Limits Involving the Point at Infinity#^def-17-2|342 Def. §17.2]] (the neighborhoods of ∞ are the exteriors of disks, complements of compact sets).
+
 > [!theorem] Proposition §17.1: The Collection $\mathcal{T}_Y$ is a Topology
 > Let $X$ be a Hausdorff space. Then $\mathcal{T}_Y$ as defined above is a [[§1 Topological Spaces#^def-1-1|topology]] on $Y$.
 
@@ -223,6 +226,9 @@ tags: [topology, math590]
 
 ^def-17-3
 
+> [!remark]- Connections
+> - Computational version: [[§17 Limits Involving the Point at Infinity#^def-17-1|342 Def. §17.1]] (the extended complex plane, the one-point compactification of ℂ, and the Riemann sphere).
+
 > [!remark] Remark
 > If $X$ is already compact, the one-point compactification is uninteresting: $\infty$ is an isolated point (since $X$ itself is compact, $Y \setminus X = \{\infty\}$ is open). If $X$ is not compact, then $\infty$ is a [[§7 Interior and Closure#^def-7-3|limit point]] of $X$, so $\overline{X} = Y$.
 
@@ -263,6 +269,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - In 591, stereographic projection is a smooth chart on the circle, [[§13 Differentiable Structures#^ex-13-3|591 Ex. §13.3]], and identifies S² with ℂP¹, [[§14 Projective Spaces as Smooth Manifolds#^prop-14-4|591 Prop. §14.4]].
+> - Computational version: [[§17 Limits Involving the Point at Infinity#^def-17-1|342 Def. §17.1]] (the Riemann sphere, by stereographic projection of the extended plane) and [[§97★ The Transformation w = 1∕z#^thm-97-2|342 Thm. §97.2]] (1/z is continuous on the extended plane, including at 0 and ∞).
 
 ## Local Compactness in Hausdorff Spaces
 

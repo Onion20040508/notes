@@ -95,6 +95,7 @@ $$
 
 > [!remark]- Connections
 > - The normalized exponentials $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of the complex space $L^2[0, 2\pi]$, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]]: (2) says $c_n\sqrt{2\pi}$ is the inner product of $f$ with the $n$th basis vector, and Parseval's equality reads $\frac{1}{2\pi}\int|f|^2 = \sum|c_n|^2$ ([[§20 Orthonormal Sets and Bases#^rem-20-9|556 Rem. §20.9]]). In quantum mechanics they are the momentum eigenstates of a particle on a ring.
+> - Complex-variables version: [[§42 Definite Integrals of Functions w(t)#^ex-42-4|342 Ex. §42.4]] (orthogonality of the $e^{in\theta}$) and [[§66 Laurent Series#^ex-66-3|342 Ex. §66.3]] (for boundary values of a function analytic in an annulus, this series is the Laurent series [[§66 Laurent Series#^def-66-1|342 Def. §66.1]] on the unit circle).
 
 The complex form is used especially in physics and electrical engineering. Sometimes the function corresponding to a Fourier series can be recognized by use of the complex form.
 
@@ -204,6 +205,9 @@ The lecture reached (5) and (6) as Powers reached (7) of §14 ([[§14 Fourier In
 
 *Uses:* [[§15★ Complex Methods#^def-15-2|Def. §15.2]], [[§14 Fourier Integral#^thm-14-1|§14.1]], [[§14 Fourier Integral#^def-14-1|Def. §14.1]], [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] (Euler's formula)
 
+> [!remark]- Connections
+> - See also: [[§95★ Inverse Laplace Transforms#^thm-95-4|342 Thm. §95.4]] (the Bromwich inversion formula for the Laplace transform, derived from this theorem).
+
 > [!example] Example §15.2: The Rectangular Pulse in Complex Form
 > Find the complex Fourier integral representation of
 >
@@ -272,6 +276,9 @@ The lecture reached (5) and (6) as Powers reached (7) of §14 ([[§14 Fourier In
 
 ![[m341-15-1.svg]]
 *Example §15.3: the temperature $U_t(x)$ (left) and its Fourier cosine coefficient function $A_t(\lambda)$ (right) at $t = 0$ (blue) and $t = 6$ (red). As heat spreads, $U_t$ widens and flattens while $A_t$ narrows (the high frequencies die first, like $e^{-\lambda^2 t}$). The dashed lines mark the half-widths $\Delta x$ and $\Delta\lambda$; their product stays $2\ln 2$.*
+
+> [!remark]- Connections
+> - Complex-variables version: [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^ex-51-3|342 Ex. §51.3]] (the shift of the path of integration done by the Cauchy–Goursat theorem on a rectangle, giving $\int_0^\infty e^{-x^2}\cos 2bx\,dx = \frac{\sqrt\pi}{2}e^{-b^2}$); a rotation of the path in the same spirit is [[§88★ Jordan's Lemma#^ex-88-3|342 Ex. §88.3]].
 
 The Fourier integral or transform may be used to solve differential equations on the interval $-\infty < x < \infty$, in much the same way that the Laplace transform is used: it turns derivatives in $x$ into multiplication by $i\lambda$.
 

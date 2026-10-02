@@ -99,6 +99,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > [!remark]- Connections
 > - MATH 451 version: [[§28 Basic Properties of the Derivative#^def-28-1|The Derivative]]; for a mapping $(x, y) \mapsto (\varphi, \psi)$ the derivative becomes the [[§13 The Inverse Function Theorem#^def-13-1|Jacobian matrix]] of §13, and in §22 it is the 1-form $df$ ([[§22 The Algebra of Differential Forms#^prop-22-6|§22.6]]).
 > - Computational version: [[§93 Tangent Planes and Linear Approximations#^def-93-3|Calc Def. §93.3]] (increment form, with worked examples).
+> - Complex differentiability is this differentiability for (u, v) plus the Cauchy–Riemann equations: [[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]] (the equations are necessary) and [[§23 Sufficient Conditions for Differentiability#^cor-23-2|342 Cor. §23.2]] (real differentiability plus Cauchy–Riemann gives f′).
 
 > [!definition] Definition §6.2: The Total Derivative and the Jacobian Matrix
 > Let $f: \mathbb{R}^2 \to \mathbb{R}$ be differentiable at $(x_0, y_0)$. The **(total) derivative** of $f$ at $(x_0, y_0)$ is not a number — it is the [[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]]
@@ -217,6 +218,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 > [!remark]- Connections
 > - Same example (xy/(x² + y²)) in Stewart: [[§93 Tangent Planes and Linear Approximations#^rem-93-1|Calc Remark §93.1]].
+> - The complex analogue: [[§22 Examples (Cauchy–Riemann Equations)#^ex-22-3|342 Ex. §22.3]] (the Cauchy–Riemann equations hold at 0, yet f′(0) does not exist).
 
 > [!theorem] Theorem §6.2: Continuous Partials Imply Differentiability
 > Let $R$ be an open set. If $f_x$ and $f_y$ exist and are continuous on $R$, then $f$ is differentiable at every point of $R$.
@@ -311,6 +313,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 > [!remark]- Connections
 > - Computational version: [[§93 Tangent Planes and Linear Approximations#^thm-93-2|Calc Thm. §93.2]] (with worked examples).
+> - Computational version: [[§23 Sufficient Conditions for Differentiability#^thm-23-1|342 Thm. §23.1]] (continuous first partials of u and v plus the Cauchy–Riemann equations give complex differentiability, with worked examples).
 
 ## Algebra of Partial Derivatives
 

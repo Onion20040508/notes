@@ -78,3 +78,4 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - MATH 451 version: [[§7 Limits of Sequences#^thm-7-1|Uniqueness of Limits]].
 > - Fails without Hausdorff: [[§7 Interior and Closure#^ex-7-8|Example §7.8]].
+> - The case X = ℂ: [[§60 Convergence of Sequences#^prop-60-1|342 Prop. §60.1]] (complex sequences); the same argument for limits of complex functions is [[§15 Limits#^thm-15-1|342 Thm. §15.1]].

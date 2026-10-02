@@ -70,6 +70,7 @@ In one variable, $x$ can approach $a$ only from the left or from the right, and 
 
 > [!remark]- Connections
 > - The standard example of path dependence in 452 is $\frac{2xy}{x^2 + y^2}$, twice the function of Example §91.1(b): [[§3 Continuity and Limits of Functions#^ex-3-1|452 Ex. §3.1]], [[§3 Continuity and Limits of Functions#^ex-3-2|452 Ex. §3.2]], and the workhorse page [[2xy∕(x²+y²) family]].
+> - Complex-variables version: [[§15 Limits#^cor-15-2|342 Cor. §15.2]] (the two-path test for $\lim_{z\to z_0} f(z)$), with [[§15 Limits#^ex-15-2|342 Ex. §15.2]] ($z/\bar z$ has no limit at $0$).
 
 > [!example] Example §91.1: Different Limits Along Two Lines
 > **(a)** Show that $\displaystyle\lim_{(x, y) \to (0, 0)} \frac{x^2 - y^2}{x^2 + y^2}$ does not exist.

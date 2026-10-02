@@ -15,6 +15,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - The same theorem in linear algebra, proved there with the extreme value theorem: [[Fundamental theorem of algebra, first version]].
+> - Computational version: [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|342 Thm. §58.2]] (proof by Liouville's theorem) and [[§94 Rouché's Theorem#^ex-94-2|342 Ex. §94.2]] (proof by Rouché's theorem, the analytic form of this winding-number argument, via the argument principle [[§93 Argument Principle#^thm-93-4|342 Thm. §93.4]]).
 
 > [!proof]+ Proof
 > The proof proceeds in four steps.

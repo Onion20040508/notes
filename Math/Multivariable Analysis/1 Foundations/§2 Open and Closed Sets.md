@@ -20,6 +20,7 @@ tags: [multivariable-analysis, math452]
 
 > [!remark]- Connections
 > - The ε-ball of a general metric: [[§11 Metric Topology#^def-11-2|590 Def. §11.2]].
+> - Computational version: [[§12★ Regions in the Complex Plane#^def-12-1|342 Def. §12.1]] (ε neighborhoods and deleted neighborhoods in the complex plane, the case n = 2).
 
 > [!definition] Definition §2.2: Square Neighborhood
 > A **square neighborhood** centered at $(x_0, y_0) \in \mathbb{R}^2$ with side length $2\delta$ is
@@ -54,6 +55,7 @@ tags: [multivariable-analysis, math452]
 
 > [!remark]- Connections
 > - Interior in a topological space, the largest open subset: [[§7 Interior and Closure#^def-7-1|590 Def. §7.1]].
+> - Computational version: [[§12★ Regions in the Complex Plane#^def-12-2|342 Def. §12.2]] (interior, exterior and boundary points of a set in the complex plane, with worked examples).
 
 > [!example] Example §2.1
 > For $E = [0, 1)$, the points $0$ and $1$ are both boundary points.
@@ -70,6 +72,7 @@ tags: [multivariable-analysis, math452]
 > [!remark]- Connections
 > - MATH 451 metric-space version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Open and Closed Subsets]].
 > - MATH 590: the open sets of the [[§11 Metric Topology#^def-11-3|metric topology]] with [[§11 Metric Topology#^def-11-2|ε-balls]]; a [[§6 Closed Sets and Limit Points#^def-6-1|closed set]] is the complement of an open set.
+> - Computational version: [[§12★ Regions in the Complex Plane#^def-12-3|342 Def. §12.3]] (open and closed sets in the complex plane).
 
 > [!remark] Notation
 > $\partial E$ denotes the set of boundary points of $E$.
@@ -84,3 +87,4 @@ tags: [multivariable-analysis, math452]
 > [!remark]- Connections
 > - MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^def-13-6|Closure]] in a metric space.
 > - MATH 590: [[§7 Interior and Closure#^def-7-1|Interior and Closure]] in any topological space, and the [[Closure Characterization]] (every neighborhood meets $E$, as in the boundary-point condition above).
+> - Computational version: [[§12★ Regions in the Complex Plane#^def-12-3|342 Def. §12.3]] (closure of a set in the complex plane).

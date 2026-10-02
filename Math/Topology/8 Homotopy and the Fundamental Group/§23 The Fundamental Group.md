@@ -46,6 +46,9 @@ tags: [topology, math590]
 
 ^def-23-3
 
+> [!remark]- Connections
+> - Computational version: [[§52 Simply Connected Domains#^def-52-1|342 Def. §52.1]] (B&C's simply connected domains, every simple closed contour enclosing only points of the domain).
+
 > [!theorem] Lemma §23.1: Paths in Simply Connected Spaces
 > In a simply connected space $X$, any two paths having the same initial and terminal points are path homotopic.
 

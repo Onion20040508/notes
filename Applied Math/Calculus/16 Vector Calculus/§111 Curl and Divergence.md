@@ -349,3 +349,4 @@ Equation 12 is the planar model of Stokes' Theorem ([[§114 Stokes' Theorem#^thm
 
 > [!remark]- Connections
 > - Both forms are in 452: the normal form is the divergence theorem in the plane, [[§16 Line Integrals and Green's Theorem#^thm-16-2|452 Thm. §16.2]], and the tangential form is [[§16 Line Integrals and Green's Theorem#^thm-16-3|452 Thm. §16.3]]; [[§16 Line Integrals and Green's Theorem#^rem-16-4|452 Remark: Two Faces of Green's Theorem]] sets them side by side. In space they become the Divergence Theorem ([[§115 The Divergence Theorem#^thm-115-1|Theorem §115.1]]) and Stokes' Theorem ([[§114 Stokes' Theorem#^thm-114-1|Theorem §114.1]]).
+> - See also: [[§125★ The Stream Function#^prop-125-2|342 Prop. §125.2]] (the stream function of a plane flow as the flux across a curve).

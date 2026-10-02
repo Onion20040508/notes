@@ -245,6 +245,9 @@ Let the real matrix $A$ have a pair of complex eigenvalues $\lambda$ and $\bar\l
 
 *Lay omits the verification of (7). The factor $e^{ibt} = \cos bt + i\sin bt$ is Euler's formula, derived from the series in [[§53 Complex Numbers#^rem-53-1|§53, Remark: Euler's Formula]]; the step $e^{(a + bi)t} = e^{at}e^{ibt}$ uses the law of exponents for complex numbers, which follows from the series by multiplying them out (rigorous treatment of power series: Single Variable Analysis). Below, (7) is all that is used.*
 
+> [!remark]- Connections
+> - Complex-variables version: [[§30 The Exponential Function#^def-30-1|342 Def. §30.1]] ($e^z = e^xe^{iy}$ for all complex $z$), with the law of exponents $e^{z_1}e^{z_2} = e^{z_1 + z_2}$ proved in [[§30 The Exponential Function#^thm-30-2|342 Thm. §30.2]] and the series in [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]].
+
 > [!theorem] Theorem §38.4: Real Solutions from a Complex Eigenvalue
 > Let $A$ be a real $n \times n$ matrix with a complex eigenvalue $\lambda = a + bi$ ($b \ne 0$) and eigenvector $\mathbf{v}$ in $\mathbb{C}^n$. Then $\mathbf{x}_1(t) = \mathbf{v}e^{\lambda t}$ is a (complex) solution of $\mathbf{x}' = A\mathbf{x}$, and its real and imaginary parts
 >

@@ -48,6 +48,7 @@ Part 2 of the Fundamental Theorem of Calculus says $\int_a^b F'(x)\,dx = F(b) - 
 
 > [!remark]- Connections
 > - In the language of forms this is the generalized Stokes theorem for a 0-form on a curve, $\int_C df = f(B) - f(A)$: [[§23 The Generalized Stokes' Theorem#^thm-23-1|452 Thm. §23.1]] (hub [[Generalized Stokes' Theorem]]). It is the argument used in [[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]] to show that a form with a nonzero integral around a closed curve is not exact.
+> - Complex-variables version: [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|342 Thm. §49.1]] (for contour integrals: having an antiderivative, independence of path and vanishing integrals around closed contours are equivalent).
 
 So the line integral of a conservative field is computed from the values of the potential function at the endpoints alone; in fact $\int_C \nabla f \cdot d\mathbf{r}$ is the net change in $f$. In particular, if $C_1$ and $C_2$ are smooth curves with the same initial point and the same terminal point, then $\int_{C_1} \nabla f \cdot d\mathbf{r} = \int_{C_2} \nabla f \cdot d\mathbf{r}$.
 

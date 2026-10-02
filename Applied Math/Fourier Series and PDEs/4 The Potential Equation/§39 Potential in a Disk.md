@@ -132,6 +132,9 @@ $$
 
 *Uses:* [[§39 Potential in a Disk#^prop-39-1|§39.1]], [[§1★ Homogeneous Linear Equations#^thm-1-5|§1.5]] (Cauchy–Euler), [[§35 Potential Equation#^ex-35-3|Ex. §35.3]], [[§6 Periodic Functions and Fourier Series#^def-6-2|Def. §6.2]] (Fourier coefficients)
 
+> [!remark]- Connections
+> - Complex-variables version: [[§135★ Dirichlet Problem for a Disk#^thm-135-1|342 Thm. §135.1]] (the same Dirichlet problem solved by the Poisson integral, for piecewise continuous boundary values) and [[§135★ Dirichlet Problem for a Disk#^prop-135-4|342 Prop. §135.4]] (which expands that integral back into this series).
+
 If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of the absolute values of its Fourier coefficients is finite ([[§9 Uniform Convergence#^rem-9-2|§9]], the remark after Theorem §9.3); since $|a_nr^n| \le |a_nc^n|$ and $|b_nr^n| \le |b_nc^n|$, the M-test then shows that (10) converges uniformly on the closed disk $r \le c$, so $v$ is continuous up to the boundary and takes the values $f$ there. Inside the disk no smoothness of $f$ is needed: since $|c^na_n|, |c^nb_n| \le \frac1\pi\int_{-\pi}^{\pi}|f|$, the terms of (10) are bounded by a constant times $(r/c)^n$, and the series converges uniformly on every smaller disk $r \le r_0 < c$, together with all its term-by-term derivatives.
 
 > [!remark] Remark: Method — The Potential Equation in a Disk
@@ -186,6 +189,9 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 
 ![[m341-39-1.svg]]
 *Level curves $v = 0.1, \ldots, 0.9$ of the solution (12) in the disk $c = 1$. The boundary value is $1$ on the right half (red) and $0$ on the left half (blue). Every level curve is a circular arc through the two points $(0, \pm1)$ where the boundary value jumps; the curve $v = \frac12$ is the diameter, and on the $x$-axis $v = \frac12 + \frac2\pi\tan^{-1}x$.*
+
+> [!remark]- Connections
+> - Complex-variables version: [[§136★ Examples (Dirichlet Problem for a Disk)#^ex-136-1|342 Ex. §136.1]] (the same split cylinder, rotated a quarter turn, solved by integrating the Poisson kernel in closed form).
 
 > [!example] Example §39.2: Boundary Values θ and 2θ + cos 3θ on a Disk of Radius 2
 > **(a) HW 13.** Solve $u_{xx} + u_{yy} = 0$ in $x^2 + y^2 \le 4$ with $u = f(\theta) = \theta$ ($-\pi < \theta < \pi$) on $x^2 + y^2 = 4$.
@@ -286,6 +292,7 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 
 > [!remark]- Connections
 > - The kernel $\frac{c^2 - r^2}{c^2 + r^2 - 2rc\cos(\theta - \phi)}$ is, up to the factor $\frac{1}{2\pi c}$, the normal derivative on the circle of the Green's function of the disk. The general representation of a harmonic function by its boundary values comes from Green's second identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|452 Thm. §17.3]], applied with the fundamental solution $\ln r$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]]; 452 develops these tools but does not compute the kernel of the disk. The half-plane counterpart is [[§38 Potential in Unbounded Regions#^rem-38-2|Remark: The Half-Plane and Its Poisson Formula]].
+> - Complex-variables version: [[§134★ Poisson Integral Formula#^thm-134-1|342 Thm. §134.1]] (the same formula, derived from the Cauchy integral formula; both proofs are kept), with the kernel's positivity and mean value $1$ in [[§134★ Poisson Integral Formula#^prop-134-2|342 Prop. §134.2]] and its series in [[§135★ Dirichlet Problem for a Disk#^prop-135-3|342 Prop. §135.3]].
 
 > [!remark] Remark: The Poisson Kernel Is a Weight
 > The kernel is positive for $r < c$, since $c^2 + r^2 - 2rc\cos\psi \ge (c - r)^2 > 0$. Taking $f \equiv 1$, whose solution is $v \equiv 1$, shows $\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{c^2 - r^2}{c^2 + r^2 - 2rc\cos\psi}\,d\psi = 1$. So $v(r, \theta)$ is a weighted average of the boundary values, and $\min f \le v \le \max f$: the maximum principle for the disk, read off directly. At $r = 0$ the kernel is identically $1$ and the weighted average is the plain average: the mean value property. As $r \to c$ the weight concentrates near $\phi = \theta$, which is why $v(r, \theta) \to f(\theta)$ at points of continuity of $f$.
@@ -340,6 +347,7 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 
 > [!remark]- Connections
 > - The mean value property in $\mathbb{R}^n$, from Green's second identity with the fundamental solution: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-3|452 Ex. §17.3]] (given there as a sketch; the proof of (b) above is a complete two-dimensional version).
+> - Complex-variables version: [[§59 Maximum Modulus Principle#^thm-59-1|342 Thm. §59.1]] (Gauss's mean value theorem for analytic functions; its real part is (b) for $u = \operatorname{Re} f$) and [[§135★ Dirichlet Problem for a Disk#^cor-135-2|342 Cor. §135.2]]; a worked case is [[§123★ Examples (Electrostatic Potential)#^ex-123-4|342 Ex. §123.4]] (the value $\frac34$ on the axis of a cylinder, as the mean of the boundary values).
 
 This characteristic of solutions of the potential equation is called the **mean value property**. From it, it is just a step to the maximum principle stated in [[§35 Potential Equation|§35]]: the mean value of a function lies between its minimum and maximum, and cannot equal either unless the function is constant.
 
@@ -362,6 +370,9 @@ This characteristic of solutions of the potential equation is called the **mean 
 ^pf-39-5
 
 *Uses:* [[§39 Potential in a Disk#^thm-39-4|§39.4]], [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (extreme value theorem), [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]] (connectedness)
+
+> [!remark]- Connections
+> - Complex-variables version: [[§59 Maximum Modulus Principle#^thm-59-3|342 Thm. §59.3]] (the maximum modulus principle) and [[§59 Maximum Modulus Principle#^cor-59-5|342 Cor. §59.5]] (the real part of a nonconstant analytic function takes its maximum only on the boundary, the case $u = \operatorname{Re} f$ of this theorem).
 
 > [!theorem] Corollary §39.6: Uniqueness for Dirichlet's Problem
 > Suppose that $u$ and $v$ are two solutions of the potential equation in a bounded region $R$ (continuous up to the boundary) that have the same values on the boundary of $R$. Then $u$ and $v$ are identical.

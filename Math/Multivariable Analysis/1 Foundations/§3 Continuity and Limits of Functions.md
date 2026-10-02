@@ -22,6 +22,7 @@ tags: [multivariable-analysis, math452]
 > [!remark]- Connections
 > - MATH 451: [[§17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]] on $\mathbb{R}$, and [[§21 More on Metric Spaces꞉ Continuity#^def-21-1|Continuous Maps Between Metric Spaces]].
 > - MATH 590: [[§11 Metric Topology#^thm-11-7|ε-δ Characterization of Continuity]] shows this agrees with the open-set [[§9 Continuous Functions#^def-9-1|definition]].
+> - Computational version: [[§18 Continuity#^def-18-1|342 Def. §18.1]] (continuity of complex functions, with worked examples).
 
 > [!example] Example §3.1: Discontinuity via Path Dependence
 > Consider
@@ -237,6 +238,7 @@ The following theorems show that continuous functions are closed under the stand
 > - MATH 590 version for arbitrary spaces: [[§9 Continuous Functions#^thm-9-4|Rules for Continuous Functions]].
 > - The differentiable analogues: [[§6 Differentiability#^thm-6-6|§6.6]]–[[§6 Differentiability#^thm-6-9|§6.9]]; §3.4 is proved again as [[§10 Composition of Functions and the Chain Rule#^thm-10-1|Continuity of Composition]] in §10.
 > - Computational version: [[§91 Limits and Continuity#^thm-91-5|Calc Thm. §91.5]] (b), composition with a function of one variable.
+> - Computational version: [[§18 Continuity#^thm-18-2|342 Thm. §18.2]] (composition of continuous complex functions).
 
 > [!remark] Remark: Summary: Algebra of Continuous Functions
 > If $f$ and $g$ are continuous at $(x_0, y_0)$, then so are:
@@ -263,6 +265,7 @@ The following theorems show that continuous functions are closed under the stand
 > [!remark]- Connections
 > - MATH 451 version: [[§20 Limits of Functions#^def-20-1|Limit of a Function Along a Set]] and its [[§20 Limits of Functions#^rem-20-1|epsilon-delta version]].
 > - Computational version: [[§91 Limits and Continuity#^def-91-1|Calc Def. §91.1]] (with worked examples).
+> - Computational version: [[§15 Limits#^def-15-1|342 Def. §15.1]] (limits of complex functions: the same ε–δ definition with ℝ² read as ℂ, with worked examples).
 
 > [!example] Example §3.2: Nonexistence of Limit
 > Let $f(x, y) = \dfrac{2xy}{x^2 + y^2}$ for $(x, y) \neq (0, 0)$. Then $f$ has no limit at $(0, 0)$.

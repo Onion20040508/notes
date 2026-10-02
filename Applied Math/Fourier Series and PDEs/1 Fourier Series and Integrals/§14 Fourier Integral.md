@@ -174,6 +174,9 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 ![[m341-14-1.svg]]
 *Example §14.2: the pulse $f$ (dashed) and its truncated Fourier integrals $\int_0^{L}\frac{2\sin\lambda}{\pi\lambda}\cos\lambda x\,d\lambda$ for $L = 4$ and $L = 16$. As $L$ grows they approach $f$ at every point except the jumps, where every truncation passes through the average $\frac12$ (red). Near the jumps they overshoot by about $9\%$ of the jump however large $L$ is (the maximum tends to $\frac12 + \frac1\pi\operatorname{Si}(\pi) \approx 1.09$), the Fourier-integral form of the Gibbs phenomenon.*
 
+> [!remark]- Connections
+> - See also: [[§89★ An Indented Path#^ex-89-1|342 Ex. §89.1]] (Dirichlet's integral $\int_0^\infty \frac{\sin x}{x}\,dx = \frac\pi2$, the value at $x = 0$, by an indented contour).
+
 > [!example] Example §14.3: A Triangular Pulse
 > Find the Fourier integral representation of $f(x) = 1 - |x|$ for $|x| < 1$, $f(x) = 0$ for $|x| > 1$.
 >
@@ -194,6 +197,9 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 > *Source: 341 HW 9, Problem 1*
 
 ^ex-14-3
+
+> [!remark]- Connections
+> - See also: [[§89★ An Indented Path#^ex-89-2|342 Ex. §89.2]] (the integral $\int_0^\infty \frac{1 - \cos\lambda}{\lambda^2}\,d\lambda = \frac\pi2$ used at $x = 0$, by an indented contour).
 
 ## Cosine and Sine Integrals
 
@@ -276,6 +282,9 @@ If $f(x)$ is defined only for $0 < x < \infty$, one can construct an even or odd
 > *Powers: 1.9, Examples 3 and 5 · Source: 341 lecture 10.22, Example 1*
 
 ^ex-14-4
+
+> [!remark]- Connections
+> - See also: [[§87 Improper Integrals from Fourier Analysis#^ex-87-2|342 Ex. §87.2]] (the integral in (a) evaluated by residues for every $x$, without the Fourier integral theorem); sine integrals like (b), whose integrands decay only like $1/\lambda$, need Jordan's lemma, [[§88★ Jordan's Lemma#^thm-88-2|342 Thm. §88.2]].
 
 > [!example] Example §14.5: A Half Sine Wave, Three Ways
 > Let $f(x) = \sin(x)$ for $0 < x < \pi$ and $f(x) = 0$ for $\pi < x$.

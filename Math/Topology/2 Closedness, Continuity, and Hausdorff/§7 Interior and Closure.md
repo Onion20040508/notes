@@ -133,6 +133,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Compactness via limit points: [[§16 Limit Point Compactness#^def-16-1|Limit Point Compact]].
+> - Computational version: [[§12★ Regions in the Complex Plane#^def-12-6|342 Def. §12.6]] (accumulation points in the complex plane, via deleted neighborhoods); a singular point that is a limit point of other singular points, so not isolated: [[§74 Isolated Singular Points#^ex-74-3|342 Ex. §74.3]].
 
 > [!example] Example §7.4
 > In $\mathbb{R}$, let $B = \{\frac{n+1}{n} \mid n \in \mathbb{Z}_+\}$. What are the limit points of $B$?
@@ -186,6 +187,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|Sequential Characterization of Closedness]].
+> - Computational version: [[§12★ Regions in the Complex Plane#^thm-12-2|342 Thm. §12.2]] (the same criterion for sets in the complex plane, with worked examples).
 
 > [!example] Example §7.7: Strange Behavior
 > $X = \{a, b, c\}$ with topology $\{\{b\}, \{a,b\}, \{b,c\}, X, \emptyset\}$. Note $\{b\}$ is not closed (its complement $\{a,c\}$ is not open).

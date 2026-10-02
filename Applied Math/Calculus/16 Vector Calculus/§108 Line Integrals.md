@@ -78,6 +78,9 @@ or vector equation $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, and as
 
 ^def-108-2
 
+> [!remark]- Connections
+> - Complex-variables version: [[§43 Contours#^def-43-5|342 Def. §43.5]] (a contour is a piecewise smooth arc).
+
 > [!example] Example §108.1: Line Integrals with Respect to Arc Length
 > **(a)** Evaluate $\int_C (2 + x^2 y)\,ds$, where $C$ is the upper half of the unit circle $x^2 + y^2 = 1$.
 >
@@ -144,6 +147,9 @@ For example, a semicircular wire $x^2 + y^2 = 1$, $y \ge 0$, with density $\rho 
 > *Stewart: 16.2, Equations 5 and 6*
 
 ^def-108-4
+
+> [!remark]- Connections
+> - See also: [[§50 Cauchy–Goursat Theorem#^prop-50-1|342 Prop. §50.1]] (a contour integral $\int_C f(z)\,dz$ written as real line integrals with respect to $x$ and $y$).
 
 > [!theorem] Theorem §108.2: Evaluating Line Integrals with Respect to x and y
 > With $x = x(t)$, $y = y(t)$, $dx = x'(t)\,dt$, $dy = y'(t)\,dt$:
@@ -278,6 +284,9 @@ When setting up a line integral, the hardest step is often finding a parametric 
 ^pf-108-4
 
 *Uses:* [[§108 Line Integrals#^thm-108-1|§108.1]], [[§108 Line Integrals#^thm-108-2|§108.2]], [[§108 Line Integrals#^def-108-5|Def. §108.5]], [[§38 The Substitution Rule#^thm-38-3|§38.3]]
+
+> [!remark]- Connections
+> - Complex-variables version: [[§44 Contour Integrals#^thm-44-2|342 Thm. §44.2]] (reversing a contour changes the sign of a contour integral, and integrals add over pieces).
 
 ## Line Integrals in Space
 

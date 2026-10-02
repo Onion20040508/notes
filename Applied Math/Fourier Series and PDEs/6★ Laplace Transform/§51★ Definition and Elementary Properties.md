@@ -310,7 +310,7 @@ The Laplace transform $F(s) = \int_0^\infty e^{-st}f(t)\,dt$ trades a function o
 > 1. **Tables** such as Theorem §51.8. This is the least work and the most popular.
 > 2. **Partial fractions**, for rational $F$, and Heaviside's formula: [[§52★ Partial Fractions and Convolutions#^thm-52-2|Theorem §52.2]]. Its extension to transcendental $F$ is the main tool for partial differential equations: [[§53★ Partial Differential Equations#^rem-53-2|§53★]] (Remark: The Extended Heaviside Formula).
 > 3. **Convolution**: $F(s)G(s)$ is the transform of $f * g$, [[§52★ Partial Fractions and Convolutions#^thm-52-3|Theorem §52.3]].
-> 4. **Integration in the complex plane** (the inversion integral). Powers does not use it, and the vault has no complex analysis; §53★ outlines how it explains the extended Heaviside formula.
+> 4. **Integration in the complex plane** (the inversion integral). Powers does not use it; it is proved in [[§95★ Inverse Laplace Transforms#^thm-95-4|342 Thm. §95.4]], and §53★ outlines how it explains the extended Heaviside formula.
 >
 > That $\mathcal{L}^{-1}$ is well defined at all (two continuous functions with the same transform are equal) is [[§22 Solution of Initial Value Problems#^thm-22-4|331 Thm. §22.4]].
 

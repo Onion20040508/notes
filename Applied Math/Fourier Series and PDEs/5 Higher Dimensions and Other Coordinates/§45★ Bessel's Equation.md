@@ -125,6 +125,7 @@ The series serves for evaluating $J_\mu$ and for obtaining its properties. From 
 > [!remark]- Connections
 > - Stewart defines $J_0$ by the same series and finds its domain by the ratio test and its derivative term by term: [[§77 Representations of Functions as Power Series#^ex-77-5|Calc Ex. §77.5]].
 > - The rigorous facts behind Theorem §45.2: radius of convergence, [[§23 Power Series#^thm-23-2|451 Thm. §23.2]]; a power series may be differentiated term by term inside its interval of convergence, [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]].
+> - See also: [[§66 Laurent Series#^ex-66-2|342 Ex. §66.2]] (the $J_n$ as Laurent coefficients of $\exp\big[\frac z2\big(w - \frac1w\big)\big]$, with the integral formula $J_n(z) = \frac1\pi\int_0^\pi\cos(n\phi - z\sin\phi)\,d\phi$).
 
 > [!theorem] Theorem §45.2: J_μ Solves Bessel's Equation
 > For integer $\mu \ge 0$ the series (5) converges for every $r$, and $R = J_\mu(\lambda r)$ is a solution of Bessel's equation (1) on $0 < r < \infty$. It is bounded near $r = 0$, with $J_0(0) = 1$ and $J_\mu(0) = 0$ for $\mu \ge 1$.

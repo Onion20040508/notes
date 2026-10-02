@@ -37,6 +37,7 @@ Chapter 4 studies the potential equation, or Laplace's equation, $\nabla^2u = 0$
 > [!remark]- Connections
 > - The same definition, with the example $e^x\sin y$: [[§92 Partial Derivatives#^def-92-5|Calc Def. §92.5]]; $\nabla^2 = \nabla\cdot\nabla$ as the divergence of the gradient, [[§111 Curl and Divergence#^def-111-5|Calc Def. §111.5]].
 > - The Laplacian in $\mathbb{R}^n$ and the normal derivative, the setting of Green's identities: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]].
+> - Complex-variables version: [[§27★ Harmonic Functions#^def-27-1|342 Def. §27.1]] (the same definition) and [[§27★ Harmonic Functions#^thm-27-1|342 Thm. §27.1]] (the real and imaginary parts of an analytic function are harmonic, the source of closed-form solutions).
 
 Where the equation comes from:
 - **Heat.** The two-dimensional heat equation is $u_t = k\nabla^2u$ ([[§42 Three-Dimensional Heat Equation#^thm-42-3|Theorem §42.3]]). A steady-state (time-independent) temperature has $u_t = 0$, hence $\nabla^2u = 0$. This is the two-dimensional version of the steady-state problems of [[§18 Steady-State Temperatures#^def-18-1|§18]], where $\nabla^2u = 0$ reduced to $u'' = 0$.
@@ -71,6 +72,9 @@ Where the equation comes from:
 
 ^ex-35-1
 
+> [!remark]- Connections
+> - Complex-variables version: [[§124★ Two-Dimensional Fluid Flow#^prop-124-5|342 Prop. §124.5]] (the velocity potential is harmonic, with the opposite sign convention $\mathbf V = +\nabla\phi$), and the stream function and complex potential in [[§125★ The Stream Function#^def-125-1|342 Def. §125.1]].
+
 Harmonic functions have many special properties. The most important one, the **maximum principle**, says: *if $\nabla^2u = 0$ in a region, then $u$ cannot have a relative maximum or minimum inside the region unless $u$ is constant.* In particular, a point inside the region where $\partial u/\partial x$ and $\partial u/\partial y$ both vanish is a saddle point. It is proved, from the mean value property, in [[§39 Potential in a Disk#^thm-39-5|Theorem §39.5]].
 
 > [!remark] Remark: Why the Maximum Principle Is Plausible
@@ -93,6 +97,9 @@ Harmonic functions have many special properties. The most important one, the **m
 
 ^def-35-2
 
+> [!remark]- Connections
+> - Complex-variables version: [[§116★ Transformations of Harmonic Functions#^def-116-1|342 Def. §116.1]] (the same Dirichlet and Neumann problems), with [[§117★ Transformations of Boundary Conditions#^thm-117-2|342 Thm. §117.2]] (conformal maps preserve the conditions $h = h_0$ and $dh/dn = 0$) and the Neumann problem for a disk solved in [[§140★ Neumann Problems#^thm-140-2|342 Thm. §140.2]].
+
 On the sides of a rectangle $0 < x < a$, $0 < y < b$ the normal derivative is simply $\pm u_x$ (at $x = 0$, $x = a$) or $\pm u_y$ (at $y = 0$, $y = b$); a zero normal derivative means "insulated" for temperatures and "no flow across" for fluids.
 
 > [!theorem] Proposition §35.1: Solutions of Neumann's Problem Are Not Unique
@@ -114,6 +121,7 @@ For Dirichlet's problem, by contrast, the solution is unique: [[§39 Potential i
 > [!remark]- Connections
 > - Green's first identity proves both facts: a Dirichlet solution is unique, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|452 Ex. §17.1]], and a Neumann solution is unique up to a constant, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-2|452 Ex. §17.2]].
 > - The same identity with the first function equal to $1$ ([[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]]) shows that $\oint \partial u/\partial n \, ds = \iint \nabla^2u \, dA = 0$ for a harmonic $u$: Neumann data can be prescribed only if their integral over the boundary is zero (no net heat flow into a steady-state plate).
+> - See also: [[§140★ Neumann Problems#^thm-140-2|342 Thm. §140.2]] (the Neumann problem for a disk, solved up to an arbitrary additive constant $U_0$) and [[§140★ Neumann Problems#^rem-140-1|342 Remark §140.1]] (why the data must have mean zero).
 
 ## Harmonic Polynomials
 
@@ -268,6 +276,7 @@ $$
 > [!remark]- Connections
 > - The coordinates: [[§65 Polar Coordinates#^def-65-1|Calc Def. §65.1]] (polar), [[§104 Triple Integrals in Cylindrical Coordinates#^def-104-1|Calc Def. §104.1]] (cylindrical). The three-dimensional analogue, the Laplacian in spherical coordinates, is [[§19 The Laplacian in Spherical Coordinates#^thm-19-1|452 Thm. §19.1]], derived there from the divergence theorem instead of the chain rule.
 > - The general formula for orthogonal coordinates with scale factors, [[§19 The Laplacian in Spherical Coordinates#^rem-19-3|452 §19]] (Remark: General Orthogonal Coordinates), gives the cylindrical formula at once from $h_r = 1$, $h_\theta = r$, $h_z = 1$.
+> - Complex-variables version: [[§116★ Transformations of Harmonic Functions#^prop-116-2|342 Prop. §116.2]] (the Laplacian under an analytic change of variables; with $w = \operatorname{Log} z$ it gives the polar form).
 
 > [!example] Example §35.3: Simple Harmonic Functions in Cartesian and Polar Form
 > **(a) Functions of $x$ only.** If $u = u(x)$, the potential equation reduces to $u'' = 0$, so $u(x) = A + Bx$.

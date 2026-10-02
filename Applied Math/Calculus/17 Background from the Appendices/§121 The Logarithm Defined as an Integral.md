@@ -121,6 +121,9 @@ This appendix is the rigorous development of the exponential and logarithmic fun
 
 *Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§26 The Mean Value Theorem#^cor-26-4|§26.4]] (functions with equal derivatives differ by a constant), induction ([[§120 Sigma Notation#^def-120-2|Def. §120.2]])
 
+> [!remark]- Connections
+> - Complex-variables version: [[§34 Some Identities Involving Logarithms#^thm-34-1|342 Thm. §34.1]] (the law for the product with the multiple-valued $\log z$, valid as an equality of sets of values).
+
 > [!theorem] Theorem §121.3: Shape and Limits of ln
 > $\ln$ is continuous, increasing and concave downward on $(0, \infty)$, and
 >
@@ -299,6 +302,9 @@ This appendix is the rigorous development of the exponential and logarithmic fun
 > *Stewart: Appendix G, Definition 13*
 
 ^def-121-5
+
+> [!remark]- Connections
+> - Complex-variables version: [[§35 The Power Function#^def-35-3|342 Def. §35.3]] ($c^z = e^{z\log c}$, multiple-valued in general) and [[§35 The Power Function#^def-35-1|342 Def. §35.1]] (the power function $z^c = e^{c\log z}$).
 
 > [!example] Example §121.2: An Irrational Power
 > By (13), $2^{\sqrt3} = e^{\sqrt3\ln 2}$. Here $\sqrt3\ln 2 \approx 1.7321 \times 0.6931 \approx 1.2006$, so $2^{\sqrt3} \approx e^{1.20} \approx 3.32$.

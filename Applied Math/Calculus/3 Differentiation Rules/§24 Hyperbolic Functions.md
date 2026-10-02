@@ -32,6 +32,7 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 
 > [!remark]- Connections
 > - Their power series, $\cosh x = \sum \frac{x^{2n}}{(2n)!}$ and $\sinh x = \sum \frac{x^{2n+1}}{(2n+1)!}$, are the even and odd halves of the series of $e^x$: [[§31 Taylor's Theorem#^ex-31-1|451 Ex. §31.1]] (and the Maclaurin series of $e^x$ in Calculus, [[§78 Taylor and Maclaurin Series#^thm-78-6|Theorem §78.6]]). Compare $\cos$ and $\sin$, which have the same series with alternating signs.
+> - Complex-variables version: [[§39★ Hyperbolic Functions#^def-39-1|342 Def. §39.1]] ($\sinh z$ and $\cosh z$ for complex $z$).
 
 > [!remark] Remark: Graphs and Applications
 > **Graphs.** $\sinh x = \frac12 e^x - \frac12 e^{-x}$ and $\cosh x = \frac12 e^x + \frac12 e^{-x}$ can be sketched by adding the graphs of $\pm\frac12 e^{\pm x}$. $\sinh$ has domain $\mathbb{R}$ and range $\mathbb{R}$; $\cosh$ has domain $\mathbb{R}$ and range $[1, \infty)$, with minimum $\cosh 0 = 1$. $\tanh$ has horizontal asymptotes $y = \pm 1$ (Stewart, Exercise 27): $\tanh x = \dfrac{1 - e^{-2x}}{1 + e^{-2x}} \to 1$ as $x \to \infty$, and $\tanh$ is odd.
@@ -102,6 +103,9 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 ^pf-24-1
 
 *Uses:* [[§24 Hyperbolic Functions#^def-24-1|Def. §24.1]]
+
+> [!remark]- Connections
+> - Complex-variables version: [[§39★ Hyperbolic Functions#^prop-39-3|342 Prop. §39.3]] (the same identities for all complex arguments).
 
 > [!remark] Remark: Why "Hyperbolic"
 > For any real $t$, the point $P(\cos t, \sin t)$ lies on the unit circle $x^2 + y^2 = 1$, because $\cos^2 t + \sin^2 t = 1$; $t$ is the radian measure of the angle $POQ$ with $Q = (1, 0)$, and also twice the area of the circular sector $POQ$. That is why the trigonometric functions are sometimes called *circular* functions. Likewise, the point $P(\cosh t, \sinh t)$ lies on the right branch of the hyperbola $x^2 - y^2 = 1$, because $\cosh^2 t - \sinh^2 t = 1$ and $\cosh t \ge 1$. Now $t$ is not the measure of an angle, but it turns out (Stewart states this without proof; it is a computation with integrals) that $t$ is twice the area of the hyperbolic sector between $OQ$, $OP$ and the hyperbola, just as in the circular case.
@@ -224,6 +228,9 @@ Since the hyperbolic functions are built from exponentials, their inverses can b
 ^pf-24-3
 
 *Uses:* [[§24 Hyperbolic Functions#^def-24-1|Def. §24.1]], [[§24 Hyperbolic Functions#^def-24-2|Def. §24.2]], [[§5 Inverse Functions and Logarithms#^cor-5-6|§5.6]] ($\ln$ is the inverse of $e^x$)
+
+> [!remark]- Connections
+> - Complex-variables version: [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-4|342 Prop. §40.4]] (the same logarithmic formulas, with multiple-valued square roots and logarithms).
 
 > [!theorem] Theorem §24.4: Derivatives of Inverse Hyperbolic Functions
 > $$

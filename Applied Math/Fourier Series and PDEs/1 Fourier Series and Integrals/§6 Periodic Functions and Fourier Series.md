@@ -132,6 +132,7 @@ By Proposition §6.1 the right side, if it converges, has period $2\pi$. Two que
 > [!remark]- Connections
 > - The same computation in Stewart: [[§45 Trigonometric Integrals#^rem-45-3|Calc Remark §45.3]]. On $[0, 2\pi]$, as orthogonality in the inner product space $C[0, 2\pi]$ with $\langle f, g\rangle = \int fg$: [[§47 Applications of Inner Product Spaces#^prop-47-2|235 Prop. §47.2]].
 > - Normalized, $\frac{1}{\sqrt{2\pi}}, \frac{\cos x}{\sqrt\pi}, \frac{\sin x}{\sqrt\pi}, \ldots$ is an orthonormal list in $C[-\pi, \pi]$, [[§20 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d); in complex form it is the Fourier basis of $L^2[0, 2\pi]$, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]]. So "orthogonal" is meant in exactly the sense of these inner products.
+> - See also: [[§42 Definite Integrals of Functions w(t)#^ex-42-4|342 Ex. §42.4]] (orthogonality of $e^{im\theta}$ and $e^{in\theta}$; these relations are its real and imaginary parts).
 
 The idea now is that if (1) is a true equality, both sides must give the same result after the same operation. Multiply both sides by one of the functions in the series and integrate from $-\pi$ to $\pi$; the orthogonality relations kill all but one term. This assumes that the series may be integrated term by term, which is sometimes difficult to justify; it is justified in [[§10 Operations on Fourier Series#^thm-10-4|Theorem §10.4]] (Powers 1.5, Theorem 4).
 

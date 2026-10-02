@@ -17,6 +17,9 @@ tags: [topology, math590]
 
 ^def-13-1
 
+> [!remark]- Connections
+> - In the complex plane: [[§12★ Regions in the Complex Plane#^def-12-4|342 Def. §12.4]] (domains, defined by polygonal connectedness, which for open subsets of the plane agrees with connectedness).
+
 > [!remark] Remark: Why Connectedness Matters
 > Connectedness captures the intuitive notion that a space is “in one piece”—you can't split it into two separate open chunks.
 >

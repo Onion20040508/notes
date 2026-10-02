@@ -50,6 +50,7 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§1 Rⁿ and Cⁿ#^ladr-1-1|LADR 1.1]] defines $\mathbb{C}$ as ordered pairs $(a, b)$ with the operations (1)–(2), which removes the vagueness of a "formal symbol $i$"; [[§1 Rⁿ and Cⁿ#^ladr-1-3|LADR 1.3]] lists and proves the field properties, and the conjugate and absolute value are [[§13 Polynomials#^ladr-4-2|LADR 4.2]].
+> - Complex-variables version: [[§2 Basic Algebraic Properties#^thm-2-1|342 Thm. §2.1]], [[§2 Basic Algebraic Properties#^thm-2-2|342 Thm. §2.2]] and [[§2 Basic Algebraic Properties#^thm-2-3|342 Thm. §2.3]] (the laws, identities and additive inverse, verified from the ordered-pair definition of sum and product, [[§1 Sums and Products#^def-1-3|342 Def. §1.3]]).
 
 > [!definition] Definition §53.2: Subtraction
 > Subtraction of complex numbers $z_1$ and $z_2$ is defined by
@@ -151,6 +152,9 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 ^thm-53-3
 
 *Lay lists these without proof; all are proved in [[§13 Polynomials#^ladr-4-4|LADR 4.4]] (properties 1–4 are direct computations from (1)–(3); 5 follows from 3 and 4, $|wz|^2 = wz\,\overline{wz} = w\bar w\,z\bar z$; 6 is the triangle inequality).*
+
+> [!remark]- Connections
+> - Complex-variables version: [[§6 Complex Conjugates#^thm-6-1|342 Thm. §6.1]] (conjugates of sums and products), [[§6 Complex Conjugates#^prop-6-3|342 Prop. §6.3]] ($z\bar z = |z|^2$), [[§6 Complex Conjugates#^thm-6-4|342 Thm. §6.4]] (moduli of products) and [[§5 Triangle Inequality#^thm-5-1|342 Thm. §5.1]] (the triangle inequality), with worked examples.
 
 > [!theorem] Proposition §53.4: Reciprocals and Quotients
 > If $z \ne 0$, then $|z| > 0$ and $z$ has a multiplicative inverse, denoted $1/z$ or $z^{-1}$ and given by
@@ -261,6 +265,9 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 
 *Uses:* [[§53 Complex Numbers#^def-53-6|Def. §53.6]], [[§53 Complex Numbers#^prop-53-4|§53.4]], [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas)
 
+> [!remark]- Connections
+> - Complex-variables version: [[§8 Products and Powers in Exponential Form#^thm-8-1|342 Thm. §8.1]] (the same rule in the exponential form $z = re^{i\theta}$ of [[§7 Exponential Form#^def-7-1|342 Def. §7.1]]) and [[§9 Arguments of Products and Quotients#^thm-9-1|342 Thm. §9.1]] (in what sense $\arg(wz) = \arg w + \arg z$).
+
 Strictly, the sum $\vartheta + \varphi$ in (4) is *an* argument of $wz$; it may have to be shifted by $\pm 2\pi$ to land in $(-\pi, \pi]$.
 
 > [!example] Example §53.3: Multiplication as Rotation
@@ -309,6 +316,9 @@ $$
 
 *Uses:* [[§53 Complex Numbers#^thm-53-5|§53.5]]
 
+> [!remark]- Connections
+> - Complex-variables version: [[§8 Products and Powers in Exponential Form#^cor-8-3|342 Cor. §8.3]] (de Moivre's formula for all integers $n$) and [[§10 Roots of Complex Numbers#^thm-10-2|342 Thm. §10.2]] (its use to find $n$th roots).
+
 > [!remark] Remark: Euler's Formula
 > The lecture writes the polar form with the complex exponential. Defining $e^z$ for complex $z$ by the exponential series $e^z = 1 + \frac{z}{1!} + \frac{z^2}{2!} + \frac{z^3}{3!} + \cdots$ and substituting $z = i\varphi$, the powers $i^2 = -1$, $i^3 = -i$, $i^4 = 1, \dots$ split the series into its real and imaginary terms:
 >
@@ -329,6 +339,7 @@ $$
 
 > [!remark]- Connections
 > - ODE version: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] (the complex exponential $e^{(\lambda + i\mu)t} = e^{\lambda t}(\cos\mu t + i\sin\mu t)$, which BDP takes as a definition after the same series argument, [[§15 Complex Roots of the Characteristic Equation#^rem-15-1|331 §15, Remark: Where Euler's Formula Comes From]]); its law of exponents and derivative rule, [[§15 Complex Roots of the Characteristic Equation#^prop-15-1|331 Prop. §15.1]]; used to turn complex roots of $ay'' + by' + cy = 0$ into real solutions, [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|331 Thm. §15.2]].
+> - Complex-variables version: [[§7 Exponential Form#^def-7-2|342 Def. §7.2]] (Euler's formula and the exponential form) and [[§30 The Exponential Function#^def-30-1|342 Def. §30.1]] ($e^z = e^xe^{iy}$ for all complex $z$, with the law of exponents [[§30 The Exponential Function#^thm-30-2|342 Thm. §30.2]]).
 
 ## Complex Numbers and ℝ²
 
@@ -364,3 +375,4 @@ $$
 
 > [!remark]- Connections
 > - Non-real roots of a real polynomial, and hence non-real eigenvalues of a real matrix, come in conjugate pairs $\lambda, \bar\lambda$ (take conjugates in $p(\lambda) = 0$, using properties 2–3 of Theorem §53.3): [[§13 Polynomials#^ladr-4-14|LADR 4.14]]. That every polynomial has a root in $\mathbb{C}$ is the fundamental theorem of algebra, [[§13 Polynomials#^ladr-4-12|LADR 4.12]] (hub [[Fundamental theorem of algebra, first version]]).
+> - Complex-variables version: [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|342 Thm. §58.2]] (the fundamental theorem of algebra, proved from Liouville's theorem).

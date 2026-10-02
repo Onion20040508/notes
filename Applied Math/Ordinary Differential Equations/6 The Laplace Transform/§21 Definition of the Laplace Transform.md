@@ -193,6 +193,9 @@ Functions satisfying the hypotheses of Theorem §21.2 are called **piecewise con
 
 ^ex-21-2
 
+> [!remark]- Connections
+> - See also: [[§42 Definite Integrals of Functions w(t)#^ex-42-5|342 Ex. §42.5]] (the transform of $1$ for complex $s$ with $\operatorname{Re} s > 0$).
+
 > [!example] Example §21.3: A Unit Pulse
 > Find the Laplace transform of
 >

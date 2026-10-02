@@ -132,6 +132,7 @@ Green's Theorem is not easy to prove in general. Stewart proves it for simple re
 > [!remark]- Connections
 > - Rigorous treatment: [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]], with the same proof (Fubini on type I and type II regions, [[§15 Multivariable Integration#^def-15-12|452 Def. §15.12]], plus the FTC; general regions by subdivision) and the same convention "$D$ on the left", which reappears there as the induced boundary orientation of Stokes' theorem. Hub: [[Green's Theorem]].
 > - It is the flat case of Stokes' theorem ([[§114 Stokes' Theorem#^thm-114-1|Theorem §114.1]]; 452 [[Stokes' Theorem in ℝ³]]) and the case of 1-forms in the plane of the [[Generalized Stokes' Theorem]].
+> - See also: [[§50 Cauchy–Goursat Theorem#^thm-50-2|342 Thm. §50.2]] (Cauchy's theorem $\int_C f(z)\,dz = 0$, derived from Green's theorem and the Cauchy–Riemann equations) and [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|342 Thm. §51.3]] (the Cauchy–Goursat theorem, which drops the continuity of $f'$).
 
 > [!remark] Remark: Method — Using Green's Theorem
 > 1. **Check the curve.** $C$ must be closed, simple and piecewise smooth. Find its orientation: counterclockwise, with $D$ on the left, is positive. If $C$ is traversed clockwise, then $\oint_C P\,dx + Q\,dy = -\iint_D (Q_x - P_y)\,dA$.
@@ -242,6 +243,9 @@ $$
 ^pf-110-2
 
 *Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]]
+
+> [!remark]- Connections
+> - See also: [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^ex-51-2|342 Ex. §51.2]] (the area inside $C$ as $\frac{1}{2i}\int_C \bar z\,dz$, from Green's theorem).
 
 > [!example] Example §110.3: The Area of an Ellipse
 > Find the area enclosed by the ellipse $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$.
@@ -377,6 +381,9 @@ $$
 ![[m233-110-2.svg]]
 *The cutting argument for a region with a hole. Each half $D'$ and $D''$ gets its own counterclockwise boundary. Along the two cuts (green) the upper half travels one way and the lower half the other, so those contributions cancel. What remains is the outer curve $C_1$ counterclockwise and the inner curve $C_2$ clockwise, both with $D$ on the left.*
 
+> [!remark]- Connections
+> - Complex-variables version: [[§53 Multiply Connected Domains#^thm-53-1|342 Thm. §53.1]] (the Cauchy–Goursat theorem for a region with holes, with the same orientation of the boundary).
+
 > [!example] Example §110.5: A Field with a Singularity at the Origin
 > If $\mathbf{F}(x, y) = \dfrac{-y\,\mathbf{i} + x\,\mathbf{j}}{x^2 + y^2}$, show that $\displaystyle\int_C \mathbf{F} \cdot d\mathbf{r} = 2\pi$ for every positively oriented simple closed path $C$ that encloses the origin.
 >
@@ -444,3 +451,4 @@ Green's Theorem supplies the proof, promised in §109 after [[§109 The Fundamen
 > - Rigorous treatment in the language of forms: on a star-shaped domain every closed form is exact, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]] ([[Poincaré Lemma]]). [[§110 Green's Theorem#^ex-110-5|Example §110.5]] shows that some hypothesis on the region is needed.
 > - Topology's definition of simply connected (path-connected, every loop shrinks to a point): [[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]. Stewart's definition (every simple closed curve in $D$ encloses only points of $D$) agrees with it for open connected regions in the plane (a nontrivial fact of plane topology).
 > - ODE version: [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|331 Thm. §9.2]] (the test for exact equations, $M_y = N_x$, proved on a rectangle by constructing $\psi$ directly).
+> - See also: [[§115★ Harmonic Conjugates#^thm-115-4|342 Thm. §115.4]] (applied to the field $(-u_y, u_x)$, the test gives a harmonic conjugate of a harmonic function on a simply connected domain).

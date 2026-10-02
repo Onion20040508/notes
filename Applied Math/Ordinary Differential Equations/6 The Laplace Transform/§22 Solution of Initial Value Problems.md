@@ -170,6 +170,9 @@ The method is most useful for nonhomogeneous equations (from [[§23 Step Functio
 
 ^def-22-1
 
+> [!remark]- Connections
+> - Complex-variables version: [[§95★ Inverse Laplace Transforms#^thm-95-4|342 Thm. §95.4]] (the general inversion formula mentioned below, the Bromwich integral, proved for sectionally smooth $f$ of exponential order).
+
 There is a general formula for the inverse transform, but it requires functions of a complex variable, and BDP does not use it. Instead one relies on the following uniqueness property and a table.
 
 > [!theorem] Theorem §22.4: Uniqueness of the Inverse Transform
@@ -180,6 +183,9 @@ There is a general formula for the inverse transform, but it requires functions 
 ^thm-22-4
 
 *BDP omits the proof ("it can be shown"); it is Lerch's theorem.*
+
+> [!remark]- Connections
+> - Complex-variables version: [[§95★ Inverse Laplace Transforms#^cor-95-5|342 Cor. §95.5]] (Lerch's theorem, proved for sectionally smooth functions of exponential order from the Bromwich inversion formula).
 
 Consistently with this, the solution (8) found in Example §22.1 is continuous and, by the existence and uniqueness theorem for second-order equations ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]], Theorem 3.2.1), the initial value problem has no other solution.
 
@@ -296,6 +302,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 
 > [!remark]- Connections
 > - See also: [[§51★ Definition and Elementary Properties#^thm-51-8|341 Thm. §51.8]] (Powers' table, keyed to the entry numbers here); entry 19 is [[§51★ Definition and Elementary Properties#^thm-51-6|341 Thm. §51.6]], together with its counterpart for division by $t$.
+> - Complex-variables version: [[§95★ Inverse Laplace Transforms#^thm-95-6|342 Thm. §95.6]] (entry 11 for complex $a$, and the inverse transform of every proper rational function as a sum of residues), with entry 6 inverted by residues in [[§95★ Inverse Laplace Transforms#^ex-95-1|342 Ex. §95.1]].
 
 > [!remark] Remark: The Course Table
 > The table handed out with the course review and attached to the final exams lists entries 1, 3 (with $t$ and $t^2$ separately), 2, 11, 5, 6 (with frequency $\omega$ in place of $a$), 7, 8, 9, 10 (as $e^{at}\cos(\omega t)$, $e^{at}\sin(\omega t)$), 12 (as $u_a(t)$), 17, the derivative rules $\mathcal{L}\{y'\} = s\mathcal{L}\{y\} - y(0)$ and $\mathcal{L}\{y''\} = s^2\mathcal{L}\{y\} - sy(0) - y'(0)$ (entry 18 for $n = 1, 2$), the "$t$-shift" $u_a(t)f(t - a) \leftrightarrow e^{-as}F(s)$ (entry 13) and the "$s$-shift" $e^{at}f(t) \leftrightarrow F(s - a)$ (entry 14). It omits entries 4, 15, 16 and 19.
@@ -325,6 +332,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 
 > [!remark]- Connections
 > - See also: [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]] (Heaviside's formula: when the denominator has only simple roots, real or complex, the inverse transform is $\sum_k \frac{q(r_k)}{p'(r_k)}e^{r_kt}$, with no constants to solve for).
+> - Complex-variables version: [[§95★ Inverse Laplace Transforms#^thm-95-6|342 Thm. §95.6]] (part (a) proves the partial fraction decomposition by principal parts and Liouville's theorem) and [[§95★ Inverse Laplace Transforms#^rem-95-2|342 Remark §95.2]] (inverting a rational transform by residues).
 
 > [!example] Example §22.2: A Forced Undamped Oscillator
 > Solve $y'' + y = \sin(2t)$, $y(0) = 2$, $y'(0) = 1$. (19), (20)
