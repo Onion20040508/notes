@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 52 (with Exercise 5 of Section 53) · MAT 342 HW 6 · Practice Final (Fall 2002).*
 
-The Cauchy–Goursat theorem concerns a simple closed contour and the region it encloses. In a domain without holes the contour may be any closed contour, even one that crosses itself, because the region enclosed by each of its loops lies in the domain. Combined with the theorem on antiderivatives of [[§48 Antiderivatives|§48]], this shows that every function analytic in such a domain has an antiderivative there, and that every entire function does. These antiderivatives are what make branches of logarithms possible on domains that do not surround a singular point.
+The Cauchy–Goursat theorem concerns a simple closed contour and the region it encloses. In a domain without holes the contour may be any closed contour, even one that crosses itself, because the region enclosed by each of its loops lies in the domain. Combined with the theorem on antiderivatives, [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]], this shows that every function analytic in such a domain has an antiderivative there, and that every entire function does. These antiderivatives are what make branches of logarithms possible on domains that do not surround a singular point.
 
 ## Simply Connected Domains
 
@@ -25,7 +25,7 @@ The Cauchy–Goursat theorem concerns a simple closed contour and the region it 
 ^def-52-1
 
 > [!remark]- Connections
-> - In Topology a space is simply connected if it is path connected and every loop in it can be shrunk to a point, [[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]. For domains in the plane the two definitions agree (a classical consequence of the Jordan curve theorem, not proved in the vault). B&C's version is the one the integral theorems use: the inside of every simple closed contour in $D$ is a region on which the Cauchy–Goursat theorem can be applied.
+> - In Topology a space is simply connected if it is path connected and every loop in it can be shrunk to a point, [[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]. For domains in the plane the two definitions agree; this is a classical consequence of the Jordan curve theorem ([[§43 Contours#^thm-43-4|Theorem §43.4]], stated without proof), and the equivalence is not proved in the vault. B&C's version is the one the integral theorems use: the inside of every simple closed contour in $D$ is a region on which the Cauchy–Goursat theorem can be applied.
 
 The closed contour in the Cauchy–Goursat theorem need not be simple when the theorem is adapted to simply connected domains; the contour can actually cross itself.
 
@@ -55,7 +55,7 @@ The closed contour in the Cauchy–Goursat theorem need not be simple when the t
 
 ^pf-52-1
 
-*Uses:* [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]], [[§52 Simply Connected Domains#^def-52-1|Def. §52.1]], [[§44 Contour Integrals|§44]] (integrals over sums of contours)
+*Uses:* [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]], [[§52 Simply Connected Domains#^def-52-1|Def. §52.1]], [[§44 Contour Integrals#^thm-44-2|§44.2]]
 
 > [!example] Example §52.1: A Contour That Crosses Itself
 > If $C$ denotes any closed contour lying in the open disk $|z| < 2$, then
@@ -83,11 +83,11 @@ The closed contour in the Cauchy–Goursat theorem need not be simple when the t
 ^cor-52-2
 
 > [!proof]+ Proof
-> A function that is analytic on $D$ is continuous there ([[§19 Derivatives|§19]]). By Theorem §52.1, $\int_C f(z)\,dz = 0$ for every closed contour $C$ in $D$. By the theorem in [[§48 Antiderivatives|§48]] (a continuous function whose integrals around all closed contours in $D$ vanish has an antiderivative throughout $D$), $f$ has an antiderivative throughout $D$.
+> A function that is analytic on $D$ is continuous there ([[§19 Derivatives#^thm-19-1|Theorem §19.1]]). By Theorem §52.1, $\int_C f(z)\,dz = 0$ for every closed contour $C$ in $D$. By [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]] (a continuous function whose integrals around all closed contours in $D$ vanish has an antiderivative throughout $D$), $f$ has an antiderivative throughout $D$.
 
 ^pf-52-2
 
-*Uses:* [[§52 Simply Connected Domains#^thm-52-1|§52.1]], [[§48 Antiderivatives|§48]] (Theorem), [[§19 Derivatives|§19]] (differentiable implies continuous)
+*Uses:* [[§52 Simply Connected Domains#^thm-52-1|§52.1]], [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49.1]], [[§19 Derivatives#^thm-19-1|§19.1]]
 
 > [!theorem] Corollary §52.3: Entire Functions Have Antiderivatives
 > Entire functions always possess antiderivatives.
@@ -104,7 +104,7 @@ The closed contour in the Cauchy–Goursat theorem need not be simple when the t
 *Uses:* [[§52 Simply Connected Domains#^cor-52-2|§52.2]]
 
 > [!remark] Remark: Simple Connectivity Is Needed
-> In the punctured plane $0 < |z| < \infty$, which is not simply connected, $f(z) = 1/z$ is analytic but has no antiderivative: the integral around the unit circle is $2\pi i \ne 0$ ([[§46 Examples Involving Branch Cuts|§46]], Exercise 13), while a function with an antiderivative integrates to $0$ around every closed contour ([[§48 Antiderivatives|§48]]). On a simply connected domain that excludes $0$, such as the plane cut along a ray from the origin, $1/z$ does have an antiderivative, a branch of $\log z$; [[§52 Simply Connected Domains#^ex-52-3|Example §52.3]] constructs such branches in general.
+> In the punctured plane $0 < |z| < \infty$, which is not simply connected, $f(z) = 1/z$ is analytic but has no antiderivative: the integral around the unit circle is $2\pi i \ne 0$ ([[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]]), while a function with an antiderivative integrates to $0$ around every closed contour ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]). On a simply connected domain that excludes $0$, such as the plane cut along a ray from the origin, $1/z$ does have an antiderivative, a branch of $\log z$; [[§52 Simply Connected Domains#^ex-52-3|Example §52.3]] constructs such branches in general.
 
 ^rem-52-1
 
@@ -115,7 +115,7 @@ The closed contour in the Cauchy–Goursat theorem need not be simple when the t
 > y(x) = \begin{cases} x^3\sin(\pi/x), & 0 < x \le 1, \\ 0, & x = 0, \end{cases}
 > $$
 >
-> a smooth arc that crosses the real axis at $x = 1, \frac12, \frac13, \ldots$ ([[§43 Contours|§43]], Exercise 6). Let $C_2$ be the segment of the real axis from $z = 1$ back to the origin, and $C_3$ any smooth arc from the origin to $z = 1$ that does not intersect itself and has only its end points in common with $C_1$ and $C_2$. Show that if $f$ is entire, then
+> a smooth arc that crosses the real axis at $x = 1, \frac12, \frac13, \ldots$ ([[§43 Contours#^ex-43-5|Example §43.5]]). Let $C_2$ be the segment of the real axis from $z = 1$ back to the origin, and $C_3$ any smooth arc from the origin to $z = 1$ that does not intersect itself and has only its end points in common with $C_1$ and $C_2$. Show that if $f$ is entire, then
 >
 > $$
 > \int_{C_1} f(z)\,dz = \int_{C_3} f(z)\,dz, \qquad \int_{C_2} f(z)\,dz = -\int_{C_3} f(z)\,dz ,
@@ -146,7 +146,7 @@ The closed contour in the Cauchy–Goursat theorem need not be simple when the t
 > h(z) = (z - z_0)e^{-F(z)}, \qquad h'(z) = e^{-F(z)} - (z - z_0)\frac{1}{z - z_0}e^{-F(z)} = 0 \quad (z \in D) .
 > $$
 >
-> A function whose derivative vanishes throughout a domain is constant ([[§25 Analytic Functions|§25]]), so $h(z) = c$, and $c \ne 0$ because neither $z - z_0$ nor $e^{-F(z)}$ vanishes in $D$. Let $\gamma$ be any value of $\log c$, so $e^\gamma = c$, and set $G(z) = F(z) + \gamma$. Then $G$ is analytic in $D$ and
+> A function whose derivative vanishes throughout a domain is constant ([[§25 Analytic Functions#^thm-25-3|Theorem §25.3]]), so $h(z) = c$, and $c \ne 0$ because neither $z - z_0$ nor $e^{-F(z)}$ vanishes in $D$. Let $\gamma$ be any value of $\log c$, so $e^\gamma = c$, and set $G(z) = F(z) + \gamma$. Then $G$ is analytic in $D$ and
 >
 > $$
 > e^{G(z)} = e^{F(z)}\,c = e^{F(z)}(z - z_0)e^{-F(z)} = z - z_0 ,

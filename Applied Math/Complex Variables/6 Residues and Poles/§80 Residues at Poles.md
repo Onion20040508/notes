@@ -31,7 +31,7 @@ The basic way to recognize a pole and find its residue is to write out the Laure
 > Moreover, if statements (a) and (b) are true, then
 >
 > $$
-> \operatorname*{Res}_{z=z_0} f(z) = \phi(z_0) \quad\text{when } m = 1 \qquad\text{and}\qquad \operatorname*{Res}_{z=z_0} f(z) = \frac{\phi^{(m-1)}(z_0)}{(m - 1)!} \quad\text{when } m = 2, 3, \ldots .
+> \operatorname{Res}_{z=z_0} f(z) = \phi(z_0) \quad\text{when } m = 1 \qquad\text{and}\qquad \operatorname{Res}_{z=z_0} f(z) = \frac{\phi^{(m-1)}(z_0)}{(m - 1)!} \quad\text{when } m = 2, 3, \ldots .
 > $$
 >
 > *B&C: Sec. 80, Theorem*
@@ -61,7 +61,7 @@ The two expressions for residues need not have been written separately: with the
 >
 > throughout the entire disk $|z - z_0| < R_2$. (For $z \ne z_0$ this is the Laurent series times $(z - z_0)^m$; the series $\sum a_n(z - z_0)^n$ converges in the whole disk, being a power series that converges in the punctured disk, so the right side converges there too; at $z = z_0$ both sides equal $b_m$.) Consequently $\phi$ is analytic in that disk ([[§71★ Integration and Differentiation of Power Series|§71★]], Corollary), and in particular at $z_0$. Since $\phi(z_0) = b_m \ne 0$, and $f(z) = \phi(z)/(z - z_0)^m$ for $0 < |z - z_0| < R_2$, statement (b) follows.
 >
-> **(b) implies (a), and the residue.** Suppose now that we know only that $f$ has the form in (b). Since $\phi$ is analytic at $z_0$, it has a Taylor series representation ([[§62 Taylor Series|§62]], Taylor's theorem)
+> **(b) implies (a), and the residue.** Suppose now that we know only that $f$ has the form in (b). Since $\phi$ is analytic at $z_0$, it has a Taylor series representation ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]], Taylor's theorem)
 >
 > $$
 > \phi(z) = \phi(z_0) + \frac{\phi'(z_0)}{1!}(z - z_0) + \frac{\phi''(z_0)}{2!}(z - z_0)^2 + \cdots + \frac{\phi^{(m-1)}(z_0)}{(m - 1)!}(z - z_0)^{m-1} + \sum_{n=m}^{\infty}\frac{\phi^{(n)}(z_0)}{n!}(z - z_0)^n
@@ -77,10 +77,10 @@ The two expressions for residues need not have been written separately: with the
 
 ^pf-80-1
 
-*Uses:* [[§78 The Three Types of Isolated Singular Points#^def-78-4|Def. §78.4]], [[§75 Residues#^def-75-1|Def. §75.1]], [[§62 Taylor Series|§62]] (Taylor's theorem), [[§71★ Integration and Differentiation of Power Series|§71★]] (Corollary: power series are analytic), [[§72★ Uniqueness of Series Representations|§72★]] (Theorem 2: uniqueness of Laurent series)
+*Uses:* [[§78 The Three Types of Isolated Singular Points#^def-78-4|Def. §78.4]], [[§75 Residues#^def-75-1|Def. §75.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (Taylor's theorem), [[§71★ Integration and Differentiation of Power Series|§71★]] (Corollary: power series are analytic), [[§72★ Uniqueness of Series Representations|§72★]] (Theorem 2: uniqueness of Laurent series)
 
 > [!remark]- Connections
-> - In Fourier Series and PDEs, the coefficients of $\frac{A}{s - r} + \frac{B}{(s - r)^2}$ at a double root are $B = \lim_{s\to r}(s - r)^2U(s)$ and $A = \lim_{s\to r}(s - r)\big[U(s) - \frac{B}{(s - r)^2}\big]$, [[§54★ More Difficult Examples#^prop-54-2|341 Prop. §54.2]]. In the notation of Theorem §80.1 with $m = 2$ and $\phi(s) = (s - r)^2U(s)$, these are $B = \phi(r)$ and $A = \phi'(r)$, the residue. At a simple root the formula $\operatorname*{Res} = \phi(z_0)$ is Heaviside's $q(r)/p'(r)$, [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]] (see [[§83 Zeros and Poles|§83]]).
+> - In Fourier Series and PDEs, the coefficients of $\frac{A}{s - r} + \frac{B}{(s - r)^2}$ at a double root are $B = \lim_{s\to r}(s - r)^2U(s)$ and $A = \lim_{s\to r}(s - r)\big[U(s) - \frac{B}{(s - r)^2}\big]$, [[§54★ More Difficult Examples#^prop-54-2|341 Prop. §54.2]]. In the notation of Theorem §80.1 with $m = 2$ and $\phi(s) = (s - r)^2U(s)$, these are $B = \phi(r)$ and $A = \phi'(r)$, the residue. At a simple root the formula $\operatorname{Res} = \phi(z_0)$ is Heaviside's $q(r)/p'(r)$, [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]] (see [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]]).
 
 > [!remark] Remark: Method — Computing the Residue at a Pole
 > 1. **Factor out the singular factor.** Write $f(z) = \phi(z)/(z - z_0)^m$, with $m$ the power of $z - z_0$ that the formula of $f$ visibly divides by.
@@ -99,7 +99,7 @@ The two expressions for residues need not have been written separately: with the
 >
 > **(b)** if $f(z_0) = 0$, then $z_0$ is a removable singular point of $g$.
 >
-> Since $f$ is analytic at $z_0$, it has a Taylor series about $z_0$ valid in some neighborhood $|z - z_0| < \varepsilon$ ([[§62 Taylor Series|§62]]); dividing by $z - z_0$,
+> Since $f$ is analytic at $z_0$, it has a Taylor series about $z_0$ valid in some neighborhood $|z - z_0| < \varepsilon$ ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]]); dividing by $z - z_0$,
 >
 > $$
 > g(z) = \frac{f(z_0)}{z - z_0} + f'(z_0) + \frac{f''(z_0)}{2!}(z - z_0) + \frac{f'''(z_0)}{3!}(z - z_0)^2 + \cdots \qquad (0 < |z - z_0| < \varepsilon) .
@@ -167,18 +167,18 @@ The two expressions for residues need not have been written separately: with the
 ^ex-80-2
 
 > [!example] Example §80.3: The Residue Formula from Cauchy's Integral Formula
-> Let $z_0$ be an isolated singular point of $f$ and suppose that $f(z) = \phi(z)/(z - z_0)^m$, where $m$ is a positive integer and $\phi$ is analytic and nonzero at $z_0$. Use the extended Cauchy integral formula to show that $\operatorname*{Res}_{z=z_0} f(z) = \phi^{(m-1)}(z_0)/(m - 1)!$.
+> Let $z_0$ be an isolated singular point of $f$ and suppose that $f(z) = \phi(z)/(z - z_0)^m$, where $m$ is a positive integer and $\phi$ is analytic and nonzero at $z_0$. Use the extended Cauchy integral formula to show that $\operatorname{Res}_{z=z_0} f(z) = \phi^{(m-1)}(z_0)/(m - 1)!$.
 >
-> Since $\phi$ is analytic at $z_0$, there is a neighborhood $|z - z_0| < \varepsilon$ throughout which $\phi$ is analytic ([[§25 Analytic Functions|§25]]); then $f = \phi/(z - z_0)^m$ is analytic in $0 < |z - z_0| < \varepsilon$. Let $C$ be the positively oriented circle $|z - z_0| = \varepsilon/2$. It lies in that punctured disk and encloses $z_0$, so by [[§75 Residues#^thm-75-1|Theorem §75.1]]
->
-> $$
-> \operatorname*{Res}_{z=z_0} f(z) = \frac{1}{2\pi i}\int_C \frac{\phi(z)\,dz}{(z - z_0)^m} .
-> $$
->
-> Now $\phi$ is analytic inside and on $C$, and the extended Cauchy integral formula ([[§55 An Extension of the Cauchy Integral Formula|§55]]), $\int_C \frac{\phi(z)\,dz}{(z - z_0)^{n+1}} = \frac{2\pi i}{n!}\phi^{(n)}(z_0)$, applies with $n = m - 1$:
+> Since $\phi$ is analytic at $z_0$, there is a neighborhood $|z - z_0| < \varepsilon$ throughout which $\phi$ is analytic ([[§25 Analytic Functions#^def-25-1|Definition §25.1]]); then $f = \phi/(z - z_0)^m$ is analytic in $0 < |z - z_0| < \varepsilon$. Let $C$ be the positively oriented circle $|z - z_0| = \varepsilon/2$. It lies in that punctured disk and encloses $z_0$, so by [[§75 Residues#^thm-75-1|Theorem §75.1]]
 >
 > $$
-> \operatorname*{Res}_{z=z_0} f(z) = \frac{1}{2\pi i}\cdot\frac{2\pi i}{(m - 1)!}\phi^{(m-1)}(z_0) = \frac{\phi^{(m-1)}(z_0)}{(m - 1)!} .
+> \operatorname{Res}_{z=z_0} f(z) = \frac{1}{2\pi i}\int_C \frac{\phi(z)\,dz}{(z - z_0)^m} .
+> $$
+>
+> Now $\phi$ is analytic inside and on $C$, and the extended Cauchy integral formula ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]]), $\int_C \frac{\phi(z)\,dz}{(z - z_0)^{n+1}} = \frac{2\pi i}{n!}\phi^{(n)}(z_0)$, applies with $n = m - 1$:
+>
+> $$
+> \operatorname{Res}_{z=z_0} f(z) = \frac{1}{2\pi i}\cdot\frac{2\pi i}{(m - 1)!}\phi^{(m-1)}(z_0) = \frac{\phi^{(m-1)}(z_0)}{(m - 1)!} .
 > $$
 >
 > This is a second proof of the residue formula of Theorem §80.1, without series. (It does not need $\phi(z_0) \ne 0$; that hypothesis only fixes the order of the pole.)
@@ -188,12 +188,12 @@ The two expressions for residues need not have been written separately: with the
 ^ex-80-3
 
 > [!example] Example §80.4: The Residue at a Double Zero of the Denominator
-> True or false: if $f$ and $g$ are analytic at $z_0$, $g(z_0) = g'(z_0) = 0$, and both $f(z_0)$ and $g''(z_0)$ are nonzero, then $\operatorname*{Res}_{z=z_0}(f/g) = 0$.
+> True or false: if $f$ and $g$ are analytic at $z_0$, $g(z_0) = g'(z_0) = 0$, and both $f(z_0)$ and $g''(z_0)$ are nonzero, then $\operatorname{Res}_{z=z_0}(f/g) = 0$.
 >
 > **False.** Take $f(z) = e^z$, $g(z) = z^2$, $z_0 = 0$: $g(0) = g'(0) = 0$, $g''(0) = 2 \ne 0$, $f(0) = 1 \ne 0$. Then $f/g = e^z/z^2$ has the form of Theorem §80.1 with $m = 2$ and $\phi(z) = e^z$, analytic and nonzero at $0$, so
 >
 > $$
-> \operatorname*{Res}_{z=0}\frac{e^z}{z^2} = \frac{\phi'(0)}{1!} = 1 \ne 0 .
+> \operatorname{Res}_{z=0}\frac{e^z}{z^2} = \frac{\phi'(0)}{1!} = 1 \ne 0 .
 > $$
 >
 > **In general.** By Taylor's theorem $g(z) = (z - z_0)^2h(z)$ with $h(z) = \frac{g''(z_0)}{2!} + \frac{g'''(z_0)}{3!}(z - z_0) + \cdots$ analytic and $h(z_0) = \frac12 g''(z_0) \ne 0$. Hence $f/g = \phi/(z - z_0)^2$ with $\phi = f/h$ analytic and nonzero at $z_0$: a pole of order $2$, with residue

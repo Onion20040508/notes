@@ -1,0 +1,29 @@
+% Figure for Complex Variables §46.
+\begin{tikzpicture}[line cap=round, line join=round,
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=2.2mm]}}}}]
+  \begin{scope}[scale=0.62]
+    \draw[->, thin] (-4,0) -- (4.6,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, thin] (0,-0.6) -- (0,3.9) node[above, font=\scriptsize] {$y$};
+    \draw[figR, dashed, line width=1.1pt] (0,0) -- (4.3,0);
+    \draw[figB, line width=1pt, mid=0.3] (3,0) arc (0:180:3);
+    \fill[figB] (3,0) circle (2pt); \fill[figB] (-3,0) circle (2pt);
+    \draw[fill=white] (0,0) circle (2.2pt);
+    \node[font=\scriptsize, below] at (3,-0.05) {$3$};
+    \node[font=\scriptsize, below] at (-3,-0.05) {$-3$};
+    \node[font=\scriptsize, figB] at (2.55,2.45) {$C$};
+    \node[font=\scriptsize, figR, align=center] at (2.6,-1.1) {cut of $z^{1/2}$,\\ $0 < \arg z < 2\pi$};
+    \node[font=\small] at (0.3,-2.35) {Example §46.1};
+  \end{scope}
+  \begin{scope}[shift={(7.4,1.0)}, scale=1.35]
+    \draw[->, thin] (-1.75,0) -- (1.6,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, thin] (0,-1.45) -- (0,1.55) node[above, font=\scriptsize] {$y$};
+    \draw[figR, dashed, line width=1.1pt] (0,0) -- (-1.65,0);
+    \draw[figB, line width=1pt, mid=0.12, mid=0.62] (-1,0) arc (-180:180:1);
+    \fill[figB] (-1,0) circle (1.4pt);
+    \draw[fill=white] (0,0) circle (1.6pt);
+    \node[font=\scriptsize, above left] at (-1,0) {$-1$};
+    \node[font=\scriptsize, figB] at (0.85,0.95) {$C$};
+    \node[font=\scriptsize, figR, align=right, anchor=east] at (-1.08,-0.4) {principal\\ cut};
+    \node[font=\small] at (0,-1.85) {Example §46.2};
+  \end{scope}
+\end{tikzpicture}

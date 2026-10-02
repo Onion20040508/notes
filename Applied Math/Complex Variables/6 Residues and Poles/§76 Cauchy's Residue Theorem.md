@@ -21,7 +21,7 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 > Let $C$ be a simple closed contour, described in the positive sense. If a function $f$ is analytic inside and on $C$ except for a finite number of singular points $z_k$ ($k = 1, 2, \ldots, n$) inside $C$ (Fig. 93 in B&C), then
 >
 > $$
-> \int_C f(z)\,dz = 2\pi i\sum_{k=1}^{n}\operatorname*{Res}_{z=z_k} f(z) . \qquad (1)
+> \int_C f(z)\,dz = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k} f(z) . \qquad (1)
 > $$
 >
 > *B&C: Sec. 76, Theorem*
@@ -29,9 +29,9 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 ^thm-76-1
 
 > [!proof]+ Proof
-> By [[§74 Isolated Singular Points#^prop-74-1|Proposition §74.1]], each $z_k$ is isolated and has a deleted neighborhood $0 < |z - z_k| < \varepsilon_k$, lying inside $C$, in which $f$ is analytic; shrinking the radii further (each below half the distance to the nearest other $z_j$), we may assume that the closed disks $|z - z_k| \le \varepsilon_k/2$ are pairwise disjoint and lie inside $C$. Let $C_k$ be the positively oriented circle $|z - z_k| = \varepsilon_k/2$. Then the circles $C_k$ are interior to $C$ and no two of them have points in common.
+> By [[§74 Isolated Singular Points#^prop-74-1|Proposition §74.1]], each $z_k$ is isolated and has a deleted neighborhood $0 < |z - z_k| < \varepsilon_k$, lying inside $C$, in which $f$ is analytic, where (as in that proof) $\varepsilon_k$ is less than the distance from $z_k$ to every other $z_j$ and to $C$. Then the closed disks $|z - z_k| \le \varepsilon_k/2$ lie inside $C$ and are pairwise disjoint, since $\varepsilon_k/2 + \varepsilon_j/2 < |z_k - z_j|$. Let $C_k$ be the positively oriented circle $|z - z_k| = \varepsilon_k/2$. Then the circles $C_k$ are interior to $C$ and no two of them have points in common.
 >
-> The circles $C_k$, together with the simple closed contour $C$, form the boundary of a closed region throughout which $f$ is analytic: the points inside or on $C$ and on or exterior to every $C_k$. Its interior is a multiply connected domain. By the adaptation of the Cauchy–Goursat theorem to such domains ([[§53 Multiply Connected Domains|§53]], Theorem), with $C$ described in the positive sense and the $C_k$ in the negative sense,
+> The circles $C_k$, together with the simple closed contour $C$, form the boundary of a closed region throughout which $f$ is analytic: the points inside or on $C$ and on or exterior to every $C_k$. Its interior is a multiply connected domain. By the adaptation of the Cauchy–Goursat theorem to such domains ([[§53 Multiply Connected Domains#^thm-53-1|Theorem §53.1]]), with $C$ described in the positive sense and the $C_k$ in the negative sense,
 >
 > $$
 > \int_C f(z)\,dz - \sum_{k=1}^{n}\int_{C_k} f(z)\,dz = 0 .
@@ -40,14 +40,14 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 > Each $C_k$ is a positively oriented simple closed contour around $z_k$ lying in the punctured disk $0 < |z - z_k| < \varepsilon_k$ where $f$ is analytic, so by [[§75 Residues#^thm-75-1|Theorem §75.1]]
 >
 > $$
-> \int_{C_k} f(z)\,dz = 2\pi i\operatorname*{Res}_{z=z_k} f(z) \qquad (k = 1, 2, \ldots, n) .
+> \int_{C_k} f(z)\,dz = 2\pi i\operatorname{Res}_{z=z_k} f(z) \qquad (k = 1, 2, \ldots, n) .
 > $$
 >
 > Substituting these values into the previous equation gives (1).
 
 ^pf-76-1
 
-*Uses:* [[§74 Isolated Singular Points#^prop-74-1|§74.1]], [[§75 Residues#^thm-75-1|§75.1]], [[§53 Multiply Connected Domains|§53]] (Theorem: Cauchy–Goursat for multiply connected domains)
+*Uses:* [[§74 Isolated Singular Points#^prop-74-1|§74.1]], [[§75 Residues#^thm-75-1|§75.1]], [[§53 Multiply Connected Domains#^thm-53-1|§53.1]] (Cauchy–Goursat for multiply connected domains)
 
 ![[m342-76-1.svg]]
 *The proof of the residue theorem. The singular points $z_1, \ldots, z_n$ inside $C$ are enclosed in small disjoint circles $C_k$ (red). Between $C$ and the circles $f$ is analytic, so the integral over $C$ equals the sum of the integrals over the $C_k$, all taken counterclockwise; each of these is $2\pi i$ times one residue.*
@@ -60,7 +60,7 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 > 1. **Draw the contour** and find all singular points of $f$; decide which lie inside $C$. Singular points outside $C$ play no role.
 > 2. **Compute the residue** at each singular point inside $C$: from a Laurent series ([[§75 Residues#^rem-75-1|Remark: Method — Computing a Residue from a Laurent Series]]), or, at a pole, by the formulas of [[§80 Residues at Poles|§80]] and [[§83 Zeros and Poles|§83]].
 > 3. **Add and multiply by $2\pi i$**, checking that $C$ is positively oriented (for a clockwise contour the sign changes).
-> 4. **Alternatives.** If $f = g(z)/(z - z_0)^{m}$ with $g$ analytic inside and on $C$ and $z_0$ the only singular point, the (extended) Cauchy integral formula ([[§54 Cauchy Integral Formula|§54]], [[§55 An Extension of the Cauchy Integral Formula|§55]]) gives the same value; it is the residue theorem for a pole. If there are many singular points inside $C$ but few outside, the single residue of [[§77★ Residue at Infinity|§77★]] may be quicker.
+> 4. **Alternatives.** If $f = g(z)/(z - z_0)^{m}$ with $g$ analytic inside and on $C$ and $z_0$ the only singular point, the (extended) Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]], [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]]) gives the same value; it is the residue theorem for a pole. If *all* the singular points of $f$ lie inside $C$ and there are many of them, the single residue of [[§77★ Residue at Infinity|§77★]] may be quicker.
 
 ^rem-76-1
 
@@ -135,7 +135,7 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 > with $g(1) = e^{-1} \ne 0$: the principal part has exactly two terms, so $z = 1$ is a **pole of order 2** ([[§78 The Three Types of Isolated Singular Points|§78]]). The residue is
 >
 > $$
-> \operatorname*{Res}_{z=1}\frac{e^{-z^2}}{(z - 1)^2} = g'(1) = \big[-2ze^{-z^2}\big]_{z=1} = -\frac{2}{e} ,
+> \operatorname{Res}_{z=1}\frac{e^{-z^2}}{(z - 1)^2} = g'(1) = \big[-2ze^{-z^2}\big]_{z=1} = -\frac{2}{e} ,
 > $$
 >
 > and the residue theorem gives
@@ -144,7 +144,7 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 > \int_C \frac{e^{-z^2}}{(z - 1)^2}\,dz = 2\pi i\Big(-\frac2e\Big) = -\frac{4\pi i}{e} .
 > $$
 >
-> *By Cauchy's formula.* Yes: $g(z) = e^{-z^2}$ is analytic inside and on $C$, and $z_0 = 1$ is interior to $C$, so the extended Cauchy integral formula $\int_C \frac{g(z)\,dz}{(z - z_0)^{n+1}} = \frac{2\pi i}{n!}g^{(n)}(z_0)$ ([[§55 An Extension of the Cauchy Integral Formula|§55]]) with $n = 1$ gives $2\pi i\,g'(1) = -4\pi i/e$, the same value.
+> *By Cauchy's formula.* Yes: $g(z) = e^{-z^2}$ is analytic inside and on $C$, and $z_0 = 1$ is interior to $C$, so the extended Cauchy integral formula $\int_C \frac{g(z)\,dz}{(z - z_0)^{n+1}} = \frac{2\pi i}{n!}g^{(n)}(z_0)$ ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]]) with $n = 1$ gives $2\pi i\,g'(1) = -4\pi i/e$, the same value.
 >
 > **(b) The singular point.** $z^3e^{1/z}$ is analytic except at $z = 0$, inside $C$. Its Laurent series is
 >
@@ -155,7 +155,7 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 > Infinitely many negative powers occur, so $z = 0$ is an **essential singular point** ([[§78 The Three Types of Isolated Singular Points|§78]]). The term $z^{-1}$ has $3 - n = -1$, $n = 4$, so
 >
 > $$
-> \operatorname*{Res}_{z=0} z^3e^{1/z} = \frac{1}{4!} = \frac{1}{24}, \qquad \int_C z^3e^{1/z}\,dz = 2\pi i\cdot\frac{1}{24} = \frac{\pi i}{12} .
+> \operatorname{Res}_{z=0} z^3e^{1/z} = \frac{1}{4!} = \frac{1}{24}, \qquad \int_C z^3e^{1/z}\,dz = 2\pi i\cdot\frac{1}{24} = \frac{\pi i}{12} .
 > $$
 >
 > *By Cauchy's formula.* No: the formula needs the integrand in the form $g(z)/(z - z_0)^{n+1}$ with $g$ analytic inside and on $C$. Here $z^3e^{1/z} = g(z)/z^{m}$ would require $g(z) = z^{m+3}e^{1/z}$, which still has an essential singular point at $0$ for every $m$ (its Laurent series still has infinitely many negative powers). At an essential singular point only the Laurent series gives the residue.
@@ -169,12 +169,12 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 >
 > **Singular points.** $z^3 - 2z^2 = z^2(z - 2)$, so the singular points are $z = 0$ and $z = 2$, both inside $C$.
 >
-> **At $z = 2$.** Near $2$, $f(z) = \dfrac{e^z/z^2}{z - 2}$ with $e^z/z^2$ analytic at $2$; its Taylor series about $2$ starts with the value $e^2/4$, so the coefficient of $1/(z - 2)$ is $\operatorname*{Res}_{z=2} f = \dfrac{e^2}{4}$.
+> **At $z = 2$.** Near $2$, $f(z) = \dfrac{e^z/z^2}{z - 2}$ with $e^z/z^2$ analytic at $2$; its Taylor series about $2$ starts with the value $e^2/4$, so the coefficient of $1/(z - 2)$ is $\operatorname{Res}_{z=2} f = \dfrac{e^2}{4}$.
 >
 > **At $z = 0$.** Near $0$, $f(z) = \dfrac{h(z)}{z^2}$ with $h(z) = \dfrac{e^z}{z - 2}$ analytic at $0$. If $h(z) = h(0) + h'(0)z + \cdots$, the coefficient of $1/z$ is $h'(0)$:
 >
 > $$
-> h'(z) = \frac{e^z(z - 2) - e^z}{(z - 2)^2} = \frac{e^z(z - 3)}{(z - 2)^2}, \qquad \operatorname*{Res}_{z=0} f = h'(0) = \frac{-3}{4} .
+> h'(z) = \frac{e^z(z - 2) - e^z}{(z - 2)^2} = \frac{e^z(z - 3)}{(z - 2)^2}, \qquad \operatorname{Res}_{z=0} f = h'(0) = \frac{-3}{4} .
 > $$
 >
 > **The integral.**
@@ -198,7 +198,7 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 >
 > **Where the denominators vanish.** $e^w = 1$ exactly when $w = 2k\pi i$, $k \in \mathbb{Z}$ ([[§30 The Exponential Function|§30]]). (a) $e^{3z} - e^z = e^z(e^{2z} - 1)$ vanishes when $2z = 2k\pi i$, $z = k\pi i$; inside $|z| = 1$ only $z = 0$. (b) $e^{2z} - e^z = e^z(e^z - 1)$ vanishes at $z = 2k\pi i$; inside $|z| = 1$ only $z = 0$. (c) $e^{iz} = 1$ when $iz = 2k\pi i$, $z = 2k\pi$; inside $|z| = 2$ only $z = 0$. In each case the numerator is entire, so the only singular point inside the contour is $z = 0$.
 >
-> **The residue at $0$.** Each integrand has the form $p(z)/q(z)$ with $p, q$ entire, $q(0) = 0$ and $q'(0) \ne 0$. Write $q(z) = q'(0)z + \frac{q''(0)}{2}z^2 + \cdots = z\,g(z)$ with $g$ entire and $g(0) = q'(0) \ne 0$; then $p/q = (p/g)/z$ with $p/g$ analytic at $0$, so the coefficient of $1/z$ is $p(0)/g(0) = p(0)/q'(0)$. (This is Theorem 2 of [[§83 Zeros and Poles|§83]].)
+> **The residue at $0$.** Each integrand has the form $p(z)/q(z)$ with $p, q$ entire, $q(0) = 0$ and $q'(0) \ne 0$. Write $q(z) = q'(0)z + \frac{q''(0)}{2}z^2 + \cdots = z\,g(z)$ with $g$ entire and $g(0) = q'(0) \ne 0$; then $p/q = (p/g)/z$ with $p/g$ analytic at $0$, so the coefficient of $1/z$ is $p(0)/g(0) = p(0)/q'(0)$. (This is [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]].)
 > - (a) $p(0) = \sin 0 + 1 = 1$, $q'(z) = 3e^{3z} - e^z$, $q'(0) = 2$: residue $\frac12$, integral $2\pi i\cdot\frac12 = \pi i$.
 > - (b) $p(0) = \cos 0 + 1 = 2$, $q'(z) = 2e^{2z} - e^z$, $q'(0) = 1$: residue $2$, integral $4\pi i$.
 > - (c) $p(0) = \cos 0 = 1$, $q'(z) = ie^{iz}$, $q'(0) = i$: residue $\frac1i = -i$, integral $2\pi i(-i) = 2\pi$.

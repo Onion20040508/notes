@@ -102,12 +102,12 @@ There are two extremes: the case in which every coefficient in the principal par
 
 ^def-78-4
 
-Every isolated singular point is of exactly one of the three types: the number of nonzero $b_n$ is either zero, finite and positive, or infinite. The type is well defined because the Laurent series in a punctured disk is unique ([[§72★ Uniqueness of Series Representations|§72★]], Theorem 2). (On the name *pole*: B&C refers to books by Wunsch and by Boas. The reason is [[§84 Behavior of Functions Near Isolated Singular Points|§84]], Theorem 4: near a pole $|f(z)|$ increases without bound, so the graph of $|f|$ over the plane rises above $z_0$ like a pole in the everyday sense.)
+Every isolated singular point is of exactly one of the three types: the number of nonzero $b_n$ is either zero, finite and positive, or infinite. The type is well defined because the Laurent series in a punctured disk is unique ([[§72★ Uniqueness of Series Representations|§72★]], Theorem 2). (On the name *pole*: B&C refers to books by Wunsch and by Boas. The reason is [[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-4|Theorem §84.4]]: near a pole $|f(z)|$ increases without bound, so the graph of $|f|$ over the plane rises above $z_0$ like a pole in the everyday sense.)
 
 > [!remark] Remark: Method — Classifying an Isolated Singular Point
 > 1. **Laurent series.** Write the principal part at $z_0$ and count its nonzero terms: none, removable; finitely many with the last one $b_m/(z - z_0)^m$, pole of order $m$; infinitely many, essential. This always works, and is the only method that recognizes an essential singular point directly ([[§79 Examples (The Three Types of Isolated Singular Points)|§79]]).
 > 2. **Factor out a power.** If $f(z) = \phi(z)/(z - z_0)^m$ with $\phi$ analytic and nonzero at $z_0$, then $z_0$ is a pole of order $m$ ([[§80 Residues at Poles|§80]]). Beware: $\phi(z_0) = 0$ or $\phi$ not analytic at $z_0$ invalidates the conclusion ([[§81 Examples (Residues at Poles)|§81]]).
-> 3. **Zeros of a denominator.** If $f = p/q$ with $p(z_0) \ne 0$ and $q$ having a zero of order $m$ at $z_0$, the pole has order $m$ ([[§83 Zeros and Poles|§83]]). If $p$ also vanishes at $z_0$, compare the orders of the two zeros.
+> 3. **Zeros of a denominator.** If $f = p/q$ with $p(z_0) \ne 0$ and $q$ having a zero of order $m$ at $z_0$, the pole has order $m$ ([[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]]). If $p$ also vanishes at $z_0$, compare the orders of the two zeros.
 > 4. **Behavior.** Bounded near $z_0$: removable. $|f(z)| \to \infty$: pole. Neither: essential ([[§84 Behavior of Functions Near Isolated Singular Points|§84]]).
 >
 > A residue of $0$ does not mean the point is removable ([[§78 The Three Types of Isolated Singular Points#^ex-78-2|Example §78.2]]).
@@ -144,7 +144,7 @@ Every isolated singular point is of exactly one of the three types: the number o
 > **(c)** $\sin(1/z)$ is analytic for $z \ne 0$, so by [[§75 Residues#^thm-75-1|Theorem §75.1]]
 >
 > $$
-> \int_C \sin(\bar z)\,dz = \int_C \sin\Big(\frac1z\Big)\,dz = 2\pi i\operatorname*{Res}_{z=0}\sin\Big(\frac1z\Big) = 2\pi i .
+> \int_C \sin(\bar z)\,dz = \int_C \sin\Big(\frac1z\Big)\,dz = 2\pi i\operatorname{Res}_{z=0}\sin\Big(\frac1z\Big) = 2\pi i .
 > $$
 >
 > Note that $\sin(\bar z)$ is analytic nowhere, so the residue theorem cannot be applied to it directly; the identity $(\ast)$ replaces it on the contour by an analytic function.
@@ -154,7 +154,7 @@ Every isolated singular point is of exactly one of the three types: the number o
 ^ex-78-1
 
 > [!example] Example §78.2: A Zero Residue Does Not Make a Point Removable
-> True or false: if $f$ has an isolated singularity at $z_0$ and $\operatorname*{Res}_{z=z_0} f = 0$, then $z_0$ is a removable singularity.
+> True or false: if $f$ has an isolated singularity at $z_0$ and $\operatorname{Res}_{z=z_0} f = 0$, then $z_0$ is a removable singularity.
 >
 > **False.** The residue is only the coefficient $b_1$; removability requires *all* $b_n$ to vanish. Counterexamples:
 > - $f(z) = 1/z^2$: its Laurent series about $0$ is the single term $1/z^2$, so $b_1 = 0$ but $b_2 = 1$: a pole of order $2$ with residue $0$.
@@ -169,7 +169,7 @@ Every isolated singular point is of exactly one of the three types: the number o
 > [!example] Example §78.3: Vanishing Moments Make a Singularity Removable
 > Let $C$ be the circle $|z| = 1$, oriented counterclockwise. Assume that $f$ is analytic in the punctured disk $0 < |z| < 2$ and that $\int_C z^nf(z)\,dz = 0$ for all integers $n \ge 0$. True or false: $0$ is a removable singularity of $f$.
 >
-> **True.** $f$ has a Laurent series $\sum_{k=-\infty}^{\infty} c_kz^k$ in $0 < |z| < 2$, and $C$ is a positively oriented simple closed contour around $0$ in that annulus, so by Laurent's theorem ([[§66 Laurent Series|§66]])
+> **True.** $f$ has a Laurent series $\sum_{k=-\infty}^{\infty} c_kz^k$ in $0 < |z| < 2$, and $C$ is a positively oriented simple closed contour around $0$ in that annulus, so by Laurent's theorem ([[§67 Proof of Laurent's Theorem#^thm-67-1|Theorem §67.1]])
 >
 > $$
 > c_k = \frac{1}{2\pi i}\int_C\frac{f(z)}{z^{k+1}}\,dz \qquad (k \in \mathbb{Z}) .

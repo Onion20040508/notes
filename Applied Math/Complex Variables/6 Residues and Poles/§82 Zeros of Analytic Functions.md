@@ -11,11 +11,11 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 82.*
 
-Zeros and poles are closely related: a zero of order $m$ in a denominator produces a pole of order $m$ ([[§83 Zeros and Poles|§83]]). This section prepares that link with three facts about zeros of analytic functions, all read off from Taylor series. A zero of order $m$ can be factored out as $(z - z_0)^m$, leaving a function that is analytic and nonzero at $z_0$ (Theorem 1); zeros are isolated unless the function vanishes identically near the point (Theorem 2); and a function analytic in a disk that vanishes on a small domain or segment through the center vanishes in the whole disk (Theorem 3). The last fact is the local form of the uniqueness of analytic continuation used in [[§28★ Uniquely Determined Analytic Functions|§28★]].
+Zeros and poles are closely related: a zero of order $m$ in a denominator produces a pole of order $m$ ([[§83 Zeros and Poles|§83]]). This section prepares that link with three facts about zeros of analytic functions, all read off from Taylor series. A zero of order $m$ can be factored out as $(z - z_0)^m$, leaving a function that is analytic and nonzero at $z_0$ (Theorem 1); zeros are isolated unless the function vanishes identically near the point (Theorem 2); and a function analytic in a disk that vanishes on a small domain or segment through the center vanishes in the whole disk (Theorem 3). The last fact is the local form of the uniqueness of analytic continuation used in [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1]].
 
 ## Zeros of Order m
 
-Suppose that $f$ is analytic at a point $z_0$. Then all of the derivatives $f^{(n)}(z)$ ($n = 1, 2, \ldots$) exist at $z_0$ ([[§57 Some Consequences of the Extension|§57]], Theorem 1).
+Suppose that $f$ is analytic at a point $z_0$. Then all of the derivatives $f^{(n)}(z)$ ($n = 1, 2, \ldots$) exist at $z_0$ ([[§57 Some Consequences of the Extension#^thm-57-1|Theorem §57.1]]).
 
 > [!definition] Definition §82.1: Zero of Order m
 > Let $f$ be analytic at $z_0$. If $f(z_0) = 0$ and there is a positive integer $m$ such that
@@ -30,7 +30,7 @@ Suppose that $f$ is analytic at a point $z_0$. Then all of the derivatives $f^{(
 
 ^def-82-1
 
-The first theorem provides a useful alternative definition. Both parts of its proof use the fact ([[§62 Taylor Series|§62]], Taylor's theorem) that a function analytic at $z_0$ has a Taylor series in powers of $z - z_0$ valid throughout some neighborhood $|z - z_0| < \varepsilon$ of $z_0$.
+The first theorem provides a useful alternative definition. Both parts of its proof use the fact ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]], Taylor's theorem) that a function analytic at $z_0$ has a Taylor series in powers of $z - z_0$ valid throughout some neighborhood $|z - z_0| < \varepsilon$ of $z_0$.
 
 > [!theorem] Theorem §82.1: Factoring Out a Zero
 > Let $f$ be a function that is analytic at a point $z_0$. The following two statements are equivalent:
@@ -91,7 +91,7 @@ The first theorem provides a useful alternative definition. Both parts of its pr
 
 ^pf-82-1
 
-*Uses:* [[§82 Zeros of Analytic Functions#^def-82-1|Def. §82.1]], [[§62 Taylor Series|§62]] (Taylor's theorem), [[§71★ Integration and Differentiation of Power Series|§71★]] (Corollary), [[§72★ Uniqueness of Series Representations|§72★]] (Theorem 1)
+*Uses:* [[§82 Zeros of Analytic Functions#^def-82-1|Def. §82.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (Taylor's theorem), [[§71★ Integration and Differentiation of Power Series|§71★]] (Corollary), [[§72★ Uniqueness of Series Representations|§72★]] (Theorem 1)
 
 > [!remark] Remark: Method — Finding the Order of a Zero
 > 1. **Derivatives.** Evaluate $f(z_0), f'(z_0), f''(z_0), \ldots$ until the first nonzero one; its index is the order (Definition §82.1).
@@ -122,7 +122,7 @@ The first theorem provides a useful alternative definition. Both parts of its pr
 > q(0) = 1 - \cos 0 = 0, \qquad q'(z) = \sin z,\ q'(0) = 0, \qquad q''(z) = \cos z,\ q''(0) = 1 \ne 0 .
 > $$
 >
-> So conditions (1) hold with $m = 2$. Equivalently, $1 - \cos z = \frac{z^2}{2!} - \frac{z^4}{4!} + \cdots = z^2\big(\frac12 - \frac{z^2}{24} + \cdots\big)$, with the bracket analytic and equal to $\frac12$ at $0$. This fact is used in [[§83 Zeros and Poles|§83]] (Example 1) to show that $1/(1 - \cos z)$ has a pole of order $2$ at $0$.
+> So conditions (1) hold with $m = 2$. Equivalently, $1 - \cos z = \frac{z^2}{2!} - \frac{z^4}{4!} + \cdots = z^2\big(\frac12 - \frac{z^2}{24} + \cdots\big)$, with the bracket analytic and equal to $\frac12$ at $0$. This fact is used in [[§83 Zeros and Poles#^ex-83-1|Example §83.1]] to show that $1/(1 - \cos z)$ has a pole of order $2$ at $0$.
 >
 > *B&C: Sec. 83, Exercise 2*
 
@@ -153,7 +153,7 @@ The next theorem is a precise statement of the fact that an analytic function ha
 ^thm-82-2
 
 > [!proof]+ Proof
-> Let $f$ be as stated, and observe that not all of the derivatives of $f$ at $z_0$ are zero. If they were, all of the coefficients $f^{(n)}(z_0)/n!$ in the Taylor series for $f$ about $z_0$ would be zero; and since that series represents $f$ in some neighborhood of $z_0$ ([[§62 Taylor Series|§62]]), $f(z)$ would be identically equal to zero in that neighborhood, contrary to (b). So, by the definition of zeros of order $m$, $f$ must have a zero of some finite order $m$ at $z_0$: $m$ is the first index with $f^{(m)}(z_0) \ne 0$, and $m \ge 1$ since $f(z_0) = 0$. According to Theorem §82.1, then,
+> Let $f$ be as stated, and observe that not all of the derivatives of $f$ at $z_0$ are zero. If they were, all of the coefficients $f^{(n)}(z_0)/n!$ in the Taylor series for $f$ about $z_0$ would be zero; and since that series represents $f$ in some neighborhood of $z_0$ ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]]), $f(z)$ would be identically equal to zero in that neighborhood, contrary to (b). So, by the definition of zeros of order $m$, $f$ must have a zero of some finite order $m$ at $z_0$: $m$ is the first index with $f^{(m)}(z_0) \ne 0$, and $m \ge 1$ since $f(z_0) = 0$. According to Theorem §82.1, then,
 >
 > $$
 > f(z) = (z - z_0)^mg(z) \qquad (2)
@@ -161,13 +161,13 @@ The next theorem is a precise statement of the fact that an analytic function ha
 >
 > in some neighborhood of $z_0$, where $g$ is analytic and nonzero at $z_0$.
 >
-> Now $g$ is continuous, in addition to being nonzero, at $z_0$, because it is analytic there. Hence there is some neighborhood $|z - z_0| < \varepsilon$ in which equation (2) holds and in which $g(z) \ne 0$ ([[§18 Continuity|§18]], Theorem 2). Since $(z - z_0)^m \ne 0$ when $z \ne z_0$, consequently $f(z) \ne 0$ in the *deleted* neighborhood $0 < |z - z_0| < \varepsilon$, and the proof is complete.
+> Now $g$ is continuous, in addition to being nonzero, at $z_0$, because it is analytic there. Hence there is some neighborhood $|z - z_0| < \varepsilon$ in which equation (2) holds and in which $g(z) \ne 0$ ([[§18 Continuity#^thm-18-3|Theorem §18.3]]). Since $(z - z_0)^m \ne 0$ when $z \ne z_0$, consequently $f(z) \ne 0$ in the *deleted* neighborhood $0 < |z - z_0| < \varepsilon$, and the proof is complete.
 
 ^pf-82-2
 
-*Uses:* [[§82 Zeros of Analytic Functions#^def-82-1|Def. §82.1]], [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§62 Taylor Series|§62]] (Taylor's theorem), [[§18 Continuity|§18]] (Theorem 2: continuous and nonzero at a point implies nonzero nearby)
+*Uses:* [[§82 Zeros of Analytic Functions#^def-82-1|Def. §82.1]], [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (Taylor's theorem), [[§18 Continuity#^thm-18-3|§18.3]] (nonzero near a point where continuous and nonzero)
 
-The final theorem concerns functions with zeros that are not all isolated. It was referred to in [[§28★ Uniquely Determined Analytic Functions|§28★]] and makes an interesting contrast to Theorem §82.2.
+The final theorem concerns functions with zeros that are not all isolated. It was referred to in [[§28★ Uniquely Determined Analytic Functions|§28★]], where it drives the proof of [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1]], and makes an interesting contrast to Theorem §82.2.
 
 > [!theorem] Theorem §82.3: Vanishing on a Domain or Segment Through z₀
 > Given a function $f$ and a point $z_0$, suppose that
@@ -191,14 +191,14 @@ The final theorem concerns functions with zeros that are not all isolated. It wa
 > a_n = \frac{f^{(n)}(z_0)}{n!} \qquad (n = 0, 1, 2, \ldots)
 > $$
 >
-> in the Taylor series for $f$ about $z_0$ are zero. Thus $f(z) \equiv 0$ in the neighborhood $N_0$, since the Taylor series also represents $f(z)$ in $N_0$ ([[§62 Taylor Series|§62]]: $f$ is analytic throughout the disk $N_0$ centered at $z_0$). This completes the proof.
+> in the Taylor series for $f$ about $z_0$ are zero. Thus $f(z) \equiv 0$ in the neighborhood $N_0$, since the Taylor series also represents $f(z)$ in $N_0$ ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]]: $f$ is analytic throughout the disk $N_0$ centered at $z_0$). This completes the proof.
 
 ^pf-82-3
 
-*Uses:* [[§82 Zeros of Analytic Functions#^thm-82-2|§82.2]], [[§62 Taylor Series|§62]] (Taylor's theorem)
+*Uses:* [[§82 Zeros of Analytic Functions#^thm-82-2|§82.2]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (Taylor's theorem)
 
 > [!remark]- Connections
-> - Theorem §82.3 is local: it reaches only the disk $N_0$. The global statement, that two functions analytic in a domain $D$ which agree on a subdomain or segment agree throughout $D$ ([[§28★ Uniquely Determined Analytic Functions|§28★]]), is obtained by chaining such disks along a polygonal path, and rests on $D$ being connected, [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]: the set of points near which $f$ vanishes identically is open, and so is the set of points near which it does not (by Theorem §82.2), so one of them is empty.
+> - Theorem §82.3 is local: it reaches only the disk $N_0$. The global statement, that two functions analytic in a domain $D$ which agree on a subdomain or segment agree throughout $D$ ([[§28★ Uniquely Determined Analytic Functions#^thm-28-2|Theorem §28.2]]), is obtained by chaining such disks along a polygonal path, and rests on $D$ being connected, [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]: the set of points near which $f$ vanishes identically is open, and so is the set of points near which it does not (by Theorem §82.2), so one of them is empty.
 > - Nothing like this holds for infinitely differentiable real functions: $e^{-1/x^2}$ (extended by $0$) vanishes with all its derivatives at $0$ without being identically zero near $0$, [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]; for an analytic function that would force $f \equiv 0$ near the point (proof of Theorem §82.2). Complex analyticity makes the Taylor series converge to the function, which is what the proofs of Theorems §82.2 and §82.3 use.
 
 > [!example] Example §82.3: Finitely Many Zeros and Poles in a Closed Region

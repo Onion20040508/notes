@@ -97,7 +97,7 @@ The procedure is the one of [[§54 Cauchy Integral Formula#^rem-54-1|Remark: Met
 > \int_C \frac{dz}{z - z_0} = 2\pi i \qquad\text{and}\qquad \int_C \frac{dz}{(z - z_0)^{n+1}} = 0 \quad (n = 1, 2, \ldots) .
 > $$
 >
-> Compare [[§46 Examples Involving Branch Cuts|§46]], Exercise 13, where $C$ had to be a circle centered at $z_0$. (Quadrature: (a) $8.37758\ldots i = 8\pi i/3$; (b) $2\pi i$, $0$, $0$, $0$ for $n = 0, 1, 2, 3$ around the unit circle with $z_0 = 0.3 + 0.2i$.)
+> Compare [[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]], where $C$ had to be a circle centered at $z_0$. (Quadrature: (a) $8.37758\ldots i = 8\pi i/3$; (b) $2\pi i$, $0$, $0$, $0$ for $n = 0, 1, 2, 3$ around the unit circle with $z_0 = 0.3 + 0.2i$.)
 >
 > *B&C: Sec. 55, Examples 1 and 2*
 

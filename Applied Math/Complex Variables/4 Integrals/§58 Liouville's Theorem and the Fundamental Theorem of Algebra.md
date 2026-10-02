@@ -33,11 +33,11 @@ Cauchy's inequality bounds $|f'(z_0)|$ by $M_R/R$, where $M_R$ is the maximum of
 > |f'(z_0)| \le \frac{M}{R} , \qquad (2)
 > $$
 >
-> where $R$ can be arbitrarily large. The number $M$ in inequality (2) is independent of the value of $R$ that is taken. Hence that inequality holds for arbitrarily large values of $R$ only if $f'(z_0) = 0$. Since the choice of $z_0$ was arbitrary, $f'(z) = 0$ everywhere in the complex plane. Consequently, $f$ is a constant function, according to the theorem in [[§25 Analytic Functions|§25]].
+> where $R$ can be arbitrarily large. The number $M$ in inequality (2) is independent of the value of $R$ that is taken. Hence that inequality holds for arbitrarily large values of $R$ only if $f'(z_0) = 0$. Since the choice of $z_0$ was arbitrary, $f'(z) = 0$ everywhere in the complex plane. Consequently, $f$ is a constant function, according to [[§25 Analytic Functions#^thm-25-3|Theorem §25.3]].
 
 ^pf-58-1
 
-*Uses:* [[§57 Some Consequences of the Extension#^thm-57-4|§57.4]], [[§25 Analytic Functions|§25]] ($f' = 0$ on a domain implies $f$ constant)
+*Uses:* [[§57 Some Consequences of the Extension#^thm-57-4|§57.4]], [[§25 Analytic Functions#^thm-25-3|§25.3]]
 
 In other words, no entire function except a constant is bounded in the complex plane.
 
@@ -55,19 +55,19 @@ In other words, no entire function except a constant is bounded in the complex p
 ^thm-58-2
 
 > [!proof]+ Proof
-> The proof is by contradiction. Suppose that $P(z)$ is *not* zero for any value of $z$. Then the quotient $1/P(z)$ is entire, as a quotient of entire functions with nonvanishing denominator. It is also bounded in the complex plane. To see this, recall statement (6) in [[§5 Triangle Inequality|§5]]: there is a positive number $R$ such that
+> The proof is by contradiction. Suppose that $P(z)$ is *not* zero for any value of $z$. Then the quotient $1/P(z)$ is entire, as a quotient of entire functions with nonvanishing denominator. It is also bounded in the complex plane. To see this, recall statement (6) in [[§5 Triangle Inequality#^ex-5-3|Example §5.3]]: there is a positive number $R$ such that
 >
 > $$
 > \left| \frac{1}{P(z)} \right| < \frac{2}{|a_n|R^n} \qquad\text{whenever } |z| > R .
 > $$
 >
-> So $1/P(z)$ is bounded in the region exterior to the disk $|z| \le R$. But $1/P(z)$ is continuous on that closed disk, and this means that $1/P(z)$ is bounded there too ([[§18 Continuity|§18]]). Hence $1/P(z)$ is bounded in the entire plane.
+> So $1/P(z)$ is bounded in the region exterior to the disk $|z| \le R$. But $1/P(z)$ is continuous on that closed disk, and this means that $1/P(z)$ is bounded there too ([[§18 Continuity#^thm-18-6|Theorem §18.6]]). Hence $1/P(z)$ is bounded in the entire plane.
 >
 > It now follows from Liouville's theorem that $1/P(z)$, and consequently $P(z)$, is constant. But $P(z)$ is not constant: its $n$th derivative is the nonzero number $n!\,a_n$. We have reached a contradiction.
 
 ^pf-58-2
 
-*Uses:* [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|§58.1]], [[§5 Triangle Inequality|§5]] (statement (6)), [[§18 Continuity|§18]] (continuous on a closed bounded set implies bounded)
+*Uses:* [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|§58.1]], [[§5 Triangle Inequality#^ex-5-3|Ex. §5.3]], [[§18 Continuity#^thm-18-6|§18.6]]
 
 > [!remark]- Connections
 > - The other proofs in the vault: [[Fundamental theorem of algebra, first version]] ([[§13 Polynomials#^ladr-4-12|LADR 4.12]]) shows that $|P|$ attains a minimum on a large closed disk (the extreme value theorem) and that the minimum cannot be positive, by moving in a direction where the lowest-order term of $P$ about the minimum point decreases $|P|$; [[Fundamental Theorem of Algebra (topological proof)]] ([[§25 The Fundamental Theorem of Algebra#^thm-25-1|590 Thm. §25.1]]) shows that a root-free $P$ would make the loop $z^n$ on a large circle nullhomotopic in $\mathbb{R}^2 \setminus \{0\}$, contradicting $\pi_1(S^1) \cong \mathbb{Z}$. The proof here hides the analysis in Liouville's theorem, that is, in the Cauchy integral formula. (B&C also cites a proof by R. P. Boas, *Amer. Math. Monthly* 71 (1964), p. 180, that uses the Cauchy–Goursat theorem directly.)
@@ -153,7 +153,7 @@ The fundamental theorem tells us that any polynomial $P(z)$ of degree $n$ ($n \g
 > |g(z)| = e^{u(x, y)} \le e^{u_0} \qquad\text{for all } z ,
 > $$
 >
-> so $g$ is bounded and therefore constant. Then $0 = g'(z) = f'(z)e^{f(z)}$, and since $e^{f(z)} \ne 0$, $f'(z) = 0$ for all $z$. By the theorem in [[§25 Analytic Functions|§25]], $f$ is constant, and so is its real part $u$. (The step from "$e^f$ is constant" to "$f$ is constant" needs an argument: $e^w$ takes each nonzero value at infinitely many points $w$, so constancy of $e^f$ alone says only that $f$ takes values in such a set; the derivative settles it.)
+> so $g$ is bounded and therefore constant. Then $0 = g'(z) = f'(z)e^{f(z)}$, and since $e^{f(z)} \ne 0$, $f'(z) = 0$ for all $z$. By [[§25 Analytic Functions#^thm-25-3|Theorem §25.3]], $f$ is constant, and so is its real part $u$. (The step from "$e^f$ is constant" to "$f$ is constant" needs an argument: $e^w$ takes each nonzero value at infinitely many points $w$, so constancy of $e^f$ alone says only that $f$ takes values in such a set; the derivative settles it.)
 >
 > *B&C: Sec. 59, Exercise 1; Source: 342 HW 8*
 

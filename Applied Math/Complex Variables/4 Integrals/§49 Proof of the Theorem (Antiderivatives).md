@@ -204,7 +204,7 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 
 ^ex-49-2
 
-> [!example] Example §49.3: The Principal Branch of z^i from −1 to 1
+> [!example] Example §49.3: The Principal Branch of zⁱ from −1 to 1
 > Show that
 >
 > $$

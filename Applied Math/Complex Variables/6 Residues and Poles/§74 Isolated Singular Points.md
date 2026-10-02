@@ -15,7 +15,7 @@ The Cauchy–Goursat theorem ([[§50 Cauchy–Goursat Theorem|§50]]) says that 
 
 ## Isolated Singular Points
 
-Recall ([[§25 Analytic Functions|§25]]) that $f$ is analytic at $z_0$ if it has a derivative at each point of some neighborhood of $z_0$, and that $z_0$ is a **singular point** of $f$ if $f$ fails to be analytic at $z_0$ but is analytic at some point of every neighborhood of $z_0$.
+Recall ([[§25 Analytic Functions#^def-25-1|Definition §25.1]], [[§25 Analytic Functions#^def-25-3|Definition §25.3]]) that $f$ is analytic at $z_0$ if it has a derivative at each point of some neighborhood of $z_0$, and that $z_0$ is a **singular point** of $f$ if $f$ fails to be analytic at $z_0$ but is analytic at some point of every neighborhood of $z_0$.
 
 > [!definition] Definition §74.1: Isolated Singular Point
 > A singular point $z_0$ of $f$ is **isolated** if there is a deleted $\varepsilon$ neighborhood
@@ -42,7 +42,7 @@ Recall ([[§25 Analytic Functions|§25]]) that $f$ is analytic at $z_0$ if it ha
 >
 > has the three isolated singular points $z = 0$ and $z = \pm 3i$.
 >
-> **Why.** $f$ is a quotient of polynomials, so it is analytic wherever the denominator $z^5(z^2 + 9)$ is nonzero, that is, everywhere except at $0$ and $\pm 3i$ ([[§25 Analytic Functions|§25]]). At those three points $f$ is not even defined, and every neighborhood of each of them contains points where $f$ is analytic; so they are singular points. Around $z = 0$ the deleted disk $0 < |z| < 3$ contains no other zero of the denominator, so $f$ is analytic there; around $\pm 3i$ the deleted disks of radius $3$ work in the same way (the distance from $3i$ to $0$ is $3$, to $-3i$ it is $6$).
+> **Why.** $f$ is a quotient of polynomials, so it is analytic wherever the denominator $z^5(z^2 + 9)$ is nonzero, that is, everywhere except at $0$ and $\pm 3i$ ([[§25 Analytic Functions#^prop-25-1|Proposition §25.1]]). At those three points $f$ is not even defined, and every neighborhood of each of them contains points where $f$ is analytic; so they are singular points. Around $z = 0$ the deleted disk $0 < |z| < 3$ contains no other zero of the denominator, so $f$ is analytic there; around $\pm 3i$ the deleted disks of radius $3$ work in the same way (the distance from $3i$ to $0$ is $3$, to $-3i$ it is $6$).
 >
 > **In general**, the singular points of a rational function are always isolated, because the zeros of the polynomial in the denominator are finite in number ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]], Theorem 2: a polynomial of degree $n \ge 1$ has exactly $n$ zeros counted with multiplicity). Around each zero, take $\varepsilon$ smaller than its distance to the nearest other zero.
 >
@@ -115,15 +115,15 @@ In this chapter the singular points will usually be finitely many points inside 
 > [!proof]+ Proof
 > Fix $k$. Let $d_1$ be the smallest of the distances $|z_k - z_j|$, $j \ne k$ (a minimum of finitely many positive numbers, so $d_1 > 0$; put $d_1 = \infty$ if $n = 1$). Let $d_2$ be the distance from $z_k$ to the closest point of $C$. (B&C takes its existence for granted; here is why it is positive.) If $z = z(t)$, $a \le t \le b$, parametrizes $C$, then $t \mapsto |z(t) - z_k|$ is continuous on $[a, b]$ and never zero, because $z_k$ lies inside $C$ and not on it; so it attains a positive minimum $d_2$ ([[Extreme Value Theorem]]).
 >
-> Choose any $\varepsilon$ with $0 < \varepsilon < \min(d_1, d_2)$. The disk $|z - z_k| < \varepsilon$ does not meet $C$; it is connected and contains the interior point $z_k$, so it lies entirely inside $C$ (the interior of $C$ is one of the two connected pieces into which $C$ divides the plane, [[§43 Contours|§43]]). Each point $z$ with $0 < |z - z_k| < \varepsilon$ is therefore inside $C$ and different from every $z_j$, so $f$ is analytic at $z$. Hence $f$ is analytic throughout the deleted neighborhood $0 < |z - z_k| < \varepsilon$, which lies inside $C$: $z_k$ is isolated.
+> Choose any $\varepsilon$ with $0 < \varepsilon < \min(d_1, d_2)$. The disk $|z - z_k| < \varepsilon$ does not meet $C$; it is connected and contains the interior point $z_k$, so it lies entirely inside $C$ (the interior of $C$ is one of the two connected pieces into which $C$ divides the plane, by the Jordan curve theorem, [[§43 Contours#^thm-43-4|Theorem §43.4]]). Each point $z$ with $0 < |z - z_k| < \varepsilon$ is therefore inside $C$ and different from every $z_j$, so $f$ is analytic at $z$. Hence $f$ is analytic throughout the deleted neighborhood $0 < |z - z_k| < \varepsilon$, which lies inside $C$: $z_k$ is isolated.
 
 ^pf-74-1
 
-*Uses:* [[§74 Isolated Singular Points#^def-74-1|Def. §74.1]], [[§43 Contours|§43]] (interior of a simple closed contour), [[Extreme Value Theorem]]
+*Uses:* [[§74 Isolated Singular Points#^def-74-1|Def. §74.1]], [[§43 Contours#^thm-43-4|§43.4]] (Jordan curve theorem), [[Extreme Value Theorem]]
 
 ## The Point at Infinity
 
-It is sometimes convenient to treat the point at infinity ([[§17 Limits Involving the Point at Infinity|§17]]) as a singular point as well.
+It is sometimes convenient to treat the point at infinity ([[§17 Limits Involving the Point at Infinity#^def-17-1|Definition §17.1]]) as a singular point as well.
 
 > [!definition] Definition §74.2: Isolated Singular Point at Infinity
 > If there is a positive number $R_1$ such that $f$ is analytic for

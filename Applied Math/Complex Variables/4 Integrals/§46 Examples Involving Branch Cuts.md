@@ -15,7 +15,7 @@ The integrand of a contour integral is often a branch of a multiple-valued funct
 
 ## Two Examples
 
-> [!example] Example §46.1: A Branch of z^{1/2} Along a Semicircle Starting on the Cut
+> [!example] Example §46.1: A Branch of z^(1/2) Along a Semicircle Starting on the Cut
 > Let $C$ be the semicircular path $z = 3e^{i\theta}$ $(0 \le \theta \le \pi)$ from $z = 3$ to $z = -3$. The branch
 >
 > $$
@@ -56,7 +56,7 @@ The integrand of a contour integral is often a branch of a multiple-valued funct
 
 ^ex-46-1
 
-> [!example] Example §46.2: The Principal Branch of z^{−1+i} Around the Unit Circle
+> [!example] Example §46.2: The Principal Branch of z^(−1+i) Around the Unit Circle
 > Using the principal branch
 >
 > $$
@@ -98,7 +98,7 @@ The integrand of a contour integral is often a branch of a multiple-valued funct
 
 ## Course and Exercise Examples
 
-> [!example] Example §46.3: z^i Along Two Half Circles, with Two Branches
+> [!example] Example §46.3: zⁱ Along Two Half Circles, with Two Branches
 > Compute $\int_C z^i\,dz$ in two situations.
 >
 > **(a)** $C$ is the semicircle from $-i$ to $i$ through the fourth and first quadrants, and $z^i = e^{i\operatorname{Log} z}$ is the principal branch. Take $z = e^{it}$ $(-\frac\pi2 \le t \le \frac\pi2)$. Then $\operatorname{Log} z = it$, $z^i = e^{i\cdot it} = e^{-t}$, $z' = ie^{it}$, and

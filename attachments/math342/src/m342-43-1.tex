@@ -1,0 +1,28 @@
+% Figure for Complex Variables §43.
+\begin{tikzpicture}[line cap=round, line join=round,
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=2.2mm]}}}}]
+  \begin{scope}[scale=1.5]
+    \draw[->, thin] (-0.3,0) -- (2.5,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, thin] (0,-0.3) -- (0,1.5) node[above, font=\scriptsize] {$y$};
+    \draw[figB, line width=1pt, mid] (0,0) -- (1,1);
+    \draw[figB, line width=1pt, mid] (1,1) -- (2,1);
+    \fill[figB] (0,0) circle (1.2pt) node[below left, font=\scriptsize, black] {$O$};
+    \fill[figB] (1,1) circle (1.2pt) node[above, font=\scriptsize, black] {$1 + i$};
+    \fill[figB] (2,1) circle (1.2pt) node[above, font=\scriptsize, black] {$2 + i$};
+    \draw[thin] (1,0.04) -- (1,-0.04) node[below, font=\scriptsize] {$1$};
+    \draw[thin] (2,0.04) -- (2,-0.04) node[below, font=\scriptsize] {$2$};
+    \draw[thin] (0.04,1) -- (-0.04,1) node[left, font=\scriptsize] {$1$};
+    \node[font=\small] at (1.1,-0.65) {a contour};
+  \end{scope}
+  \begin{scope}[shift={(6.6,0)}, scale=1.25]
+    \fill[figB!10] (-1.2,0) -- (1.5,0) arc (0:90:1.5) .. controls (-0.45,2.05) and (-1.75,1.05) .. (-1.2,0) -- cycle;
+    \draw[figR, line width=1pt, mid] (-1.2,0) -- (1.5,0);
+    \draw[figR, line width=1pt, mid] (1.5,0) arc (0:90:1.5);
+    \draw[figR, line width=1pt, mid] (0,1.5) .. controls (-0.45,2.05) and (-1.75,1.05) .. (-1.2,0);
+    \foreach \p in {(-1.2,0),(1.5,0),(0,1.5)} \fill[figR] \p circle (1.2pt);
+    \node[font=\scriptsize, align=center] at (0.15,0.6) {interior\\ (bounded)};
+    \node[font=\scriptsize, align=center] at (1.75,1.45) {exterior\\ (unbounded)};
+    \node[font=\scriptsize, figR] at (0.2,-0.22) {$C$};
+    \node[font=\small] at (0.15,-0.82) {a simple closed contour};
+  \end{scope}
+\end{tikzpicture}

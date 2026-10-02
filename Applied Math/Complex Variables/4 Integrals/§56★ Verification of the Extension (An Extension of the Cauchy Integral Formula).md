@@ -71,7 +71,7 @@ This section proves the extended Cauchy integral formula of [[§55 An Extension 
 > |s - z - \Delta z| = |(s - z) - \Delta z| \ge \big||s - z| - |\Delta z|\big| \ge d - |\Delta z| > 0 .
 > $$
 >
-> Thus, by the upper bound for moduli of contour integrals ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]]),
+> Thus, by the upper bound for moduli of contour integrals ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]),
 >
 > $$
 > \left| \int_C \frac{\Delta z\,f(s)\,ds}{(s - z - \Delta z)(s - z)^2} \right| \le \frac{|\Delta z|\,M}{(d - |\Delta z|)\,d^2}\,L .
@@ -137,7 +137,7 @@ This section proves the extended Cauchy integral formula of [[§55 An Extension 
 > G'(s) = \frac{f^{(k)}(s)}{(s - z)^m} - m\,\frac{f^{(k-1)}(s)}{(s - z)^{m+1}} ,
 > $$
 >
-> a continuous function. So $G'$ has the antiderivative $G$ on a domain containing $C$ (the part of $U$ minus $z$ that contains the connected set $C$), and its integral around the closed contour $C$ is $0$ by the theorem in [[§48 Antiderivatives|§48]]. That is $(\ast)$.
+> a continuous function. So $G'$ has the antiderivative $G$ on a domain containing $C$ (the part of $U$ minus $z$ that contains the connected set $C$), and its integral around the closed contour $C$ is $0$ by [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]. That is $(\ast)$.
 >
 > **Step 5: the formula for every $n$.** Let $n \ge 2$. By Step 3, $f^{(n-1)}$ is analytic inside and on $C$, so Step 1 applied to $f^{(n-1)}$ gives
 >
@@ -155,7 +155,7 @@ This section proves the extended Cauchy integral formula of [[§55 An Extension 
 
 ^pf-56-1
 
-*Uses:* [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]], [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (Theorem), [[§48 Antiderivatives|§48]] (Theorem), [[§25 Analytic Functions|§25]] (analytic at a point means differentiable in a neighborhood), [[§18 Continuity|§18]] (a continuous function on a closed bounded set is bounded)
+*Uses:* [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]], [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49.1]], [[§25 Analytic Functions#^def-25-1|Def. §25.1]], [[§18 Continuity#^thm-18-6|§18.6]]
 
 > [!remark]- Connections
 > - Steps 4–5 are the complex form of integration by parts, [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]]: there the boundary term $[FG]_a^b$ survives, while around a closed contour it vanishes, so $n$ integrations by parts move all $n$ derivatives from $f$ onto $1/(s - z)$ at no cost.
@@ -227,7 +227,7 @@ The proof of Step 1 used about $f$ on $C$ only that it is continuous there. So a
 > G'(z) = \frac{f'(z)}{z - z_0} - \frac{f(z)}{(z - z_0)^2} ,
 > $$
 >
-> which is continuous because $f'$ is analytic (Step 3). The integral of $G'$ around the closed contour $C$ is $0$ ([[§48 Antiderivatives|§48]]), which is the identity.
+> which is continuous because $f'$ is analytic (Step 3). The integral of $G'$ around the closed contour $C$ is $0$ ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]), which is the identity.
 >
 > **By the formulas.** If $z_0$ is inside $C$, the left side is $2\pi i\,f'(z_0)$ by the Cauchy integral formula applied to the analytic function $f'$, and the right side is $2\pi i\,f'(z_0)$ by (5) with $n = 1$. If $z_0$ is outside $C$, both integrands are analytic inside and on $C$, and both sides are $0$ by the Cauchy–Goursat theorem. (Quadrature for $f = e^z$ on the unit circle: both sides are $-0.766152 + 7.635960i = 2\pi i\,e^{0.2 + 0.1i}$ for $z_0 = 0.2 + 0.1i$, and $0$ for $z_0 = 3$.)
 >

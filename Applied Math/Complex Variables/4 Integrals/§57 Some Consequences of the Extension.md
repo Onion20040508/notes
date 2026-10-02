@@ -23,7 +23,7 @@ The extended Cauchy integral formula has three immediate consequences. An analyt
 ^thm-57-1
 
 > [!proof]+ Proof
-> Assume that $f$ is analytic at a point $z_0$. There must, then, be a neighborhood $|z - z_0| < \varepsilon$ of $z_0$ throughout which $f$ is analytic ([[§25 Analytic Functions|§25]]). Consequently, there is a positively oriented circle $C_0$, centered at $z_0$ and with radius $\varepsilon/2$, such that $f$ is analytic inside and on $C_0$. From the extended Cauchy integral formula with $n = 2$ ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]]),
+> Assume that $f$ is analytic at a point $z_0$. There must, then, be a neighborhood $|z - z_0| < \varepsilon$ of $z_0$ throughout which $f$ is analytic ([[§25 Analytic Functions#^def-25-1|Definition §25.1]]). Consequently, there is a positively oriented circle $C_0$, centered at $z_0$ and with radius $\varepsilon/2$, such that $f$ is analytic inside and on $C_0$. From the extended Cauchy integral formula with $n = 2$ ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]]),
 >
 > $$
 > f''(z) = \frac{1}{\pi i}\int_{C_0}\frac{f(s)\,ds}{(s - z)^3}
@@ -33,9 +33,9 @@ The extended Cauchy integral formula has three immediate consequences. An analyt
 
 ^pf-57-1
 
-*Uses:* [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|§56.1]], [[§25 Analytic Functions|§25]] (definition of analytic at a point)
+*Uses:* [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|§56.1]], [[§25 Analytic Functions#^def-25-1|Def. §25.1]]
 
-As a consequence, when a function $f(z) = u(x, y) + iv(x, y)$ is analytic at a point $z = (x, y)$, the differentiability of $f'$ ensures the continuity of $f'$ there ([[§19 Derivatives|§19]]). Since ([[§21 Cauchy–Riemann Equations|§21]])
+As a consequence, when a function $f(z) = u(x, y) + iv(x, y)$ is analytic at a point $z = (x, y)$, the differentiability of $f'$ ensures the continuity of $f'$ there ([[§19 Derivatives#^thm-19-1|Theorem §19.1]]). Since ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]])
 
 $$
 f'(z) = u_x + iv_x = v_y - iu_y ,
@@ -47,7 +47,7 @@ $$
 f''(z) = u_{xx} + iv_{xx} = v_{yx} - iu_{yx} ,
 $$
 
-and so on, we arrive at a corollary that was anticipated in [[§27★ Harmonic Functions|§27★]], where harmonic functions were introduced.
+and so on, we arrive at a corollary that was anticipated in [[§27★ Harmonic Functions|§27★]], where harmonic functions were introduced ([[§27★ Harmonic Functions#^thm-27-1|Theorem §27.1]]).
 
 > [!theorem] Corollary §57.2: Partial Derivatives of All Orders
 > If a function $f(z) = u(x, y) + iv(x, y)$ is analytic at a point $z = (x, y)$, then the component functions $u$ and $v$ have continuous partial derivatives of all orders at that point.
@@ -73,7 +73,7 @@ and so on, we arrive at a corollary that was anticipated in [[§27★ Harmonic F
 
 ^pf-57-2
 
-*Uses:* [[§57 Some Consequences of the Extension#^thm-57-1|§57.1]], [[§21 Cauchy–Riemann Equations|§21]] ($f' = u_x + iv_x = v_y - iu_y$), [[§19 Derivatives|§19]] (differentiable implies continuous)
+*Uses:* [[§57 Some Consequences of the Extension#^thm-57-1|§57.1]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§19 Derivatives#^thm-19-1|§19.1]]
 
 > [!remark]- Connections
 > - In the language of Multivariable Analysis, $u$ and $v$ are $C^\infty$ and satisfy Laplace's equation $\nabla^2u = 0$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]]; so the real part of an analytic function is a potential in the sense of [[§39 Potential in a Disk|341 §39]], and the mean value and maximum principles there apply to it.
@@ -96,11 +96,11 @@ The proof of the next theorem, due to E. Morera (1856–1909), depends on the fa
 ^thm-57-3
 
 > [!proof]+ Proof
-> When the hypothesis is satisfied, the theorem in [[§48 Antiderivatives|§48]] ensures that $f$ has an antiderivative in $D$; that is, there exists an analytic function $F$ such that $F'(z) = f(z)$ at each point in $D$. Since $f$ is the derivative of the analytic function $F$, it follows from Theorem §57.1 that $f$ is analytic in $D$.
+> When the hypothesis is satisfied, [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]] ensures that $f$ has an antiderivative in $D$; that is, there exists an analytic function $F$ such that $F'(z) = f(z)$ at each point in $D$. Since $f$ is the derivative of the analytic function $F$, it follows from Theorem §57.1 that $f$ is analytic in $D$.
 
 ^pf-57-3
 
-*Uses:* [[§48 Antiderivatives|§48]] (Theorem), [[§57 Some Consequences of the Extension#^thm-57-1|§57.1]]
+*Uses:* [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49.1]], [[§57 Some Consequences of the Extension#^thm-57-1|§57.1]]
 
 In particular, when $D$ is simply connected, Morera's theorem is, for the class of continuous functions on $D$, the converse of [[§52 Simply Connected Domains#^thm-52-1|Theorem §52.1]]: a continuous function on a simply connected domain is analytic if and only if its integral around every closed contour in $D$ is zero.
 
@@ -124,7 +124,7 @@ In particular, when $D$ is simply connected, Morera's theorem is, for the class 
 > f^{(n)}(z_0) = \frac{n!}{2\pi i}\int_{C_R}\frac{f(z)\,dz}{(z - z_0)^{n+1}} \qquad (n = 1, 2, \ldots) .
 > $$
 >
-> On $C_R$, $|z - z_0| = R$, so the integrand has modulus at most $M_R/R^{n+1}$, and $C_R$ has length $2\pi R$. The upper bound for moduli of contour integrals ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]]) gives
+> On $C_R$, $|z - z_0| = R$, so the integrand has modulus at most $M_R/R^{n+1}$, and $C_R$ has length $2\pi R$. The upper bound for moduli of contour integrals ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]) gives
 >
 > $$
 > |f^{(n)}(z_0)| \le \frac{n!}{2\pi}\cdot\frac{M_R}{R^{n+1}}\,2\pi R = \frac{n!\,M_R}{R^n} \qquad (n = 1, 2, \ldots) ,
@@ -134,7 +134,7 @@ In particular, when $D$ is simply connected, Morera's theorem is, for the class 
 
 ^pf-57-4
 
-*Uses:* [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|§56.1]], [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (Theorem), [[§18 Continuity|§18]] (maximum on a closed bounded set)
+*Uses:* [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|§56.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]], [[§18 Continuity#^thm-18-6|§18.6]]
 
 ## Examples
 
@@ -162,7 +162,7 @@ In particular, when $D$ is simply connected, Morera's theorem is, for the class 
 >
 > **(b)** $f(z) = 1/z$ is analytic in the domain $D\colon z \ne 0$, but its integral around the unit circle is $2\pi i \ne 0$ ([[§53 Multiply Connected Domains#^ex-53-1|Example §53.1]]). So the hypothesis of Morera's theorem is sufficient for analyticity but not necessary on a multiply connected domain. On a simply connected domain it is also necessary (Theorem §52.1).
 >
-> **(c)** $f(z) = 1/z^2$ on the same $D$ does satisfy the hypothesis: it has the antiderivative $-1/z$ there, so $\int_C f(z)\,dz = 0$ for every closed contour $C$ in $D$ ([[§48 Antiderivatives|§48]]), and Morera's theorem confirms that it is analytic in $D$.
+> **(c)** $f(z) = 1/z^2$ on the same $D$ does satisfy the hypothesis: it has the antiderivative $-1/z$ there, so $\int_C f(z)\,dz = 0$ for every closed contour $C$ in $D$ ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]), and Morera's theorem confirms that it is analytic in $D$.
 >
 > *B&C: Sec. 57, Theorem 2 and the text after it*
 
@@ -177,7 +177,7 @@ In particular, when $D$ is simply connected, Morera's theorem is, for the class 
 > |f''(z_0)| \le \frac{2!\,M_R}{R^2} \le \frac{2A(|z_0| + R)}{R^2} = 2A\Big(\frac{|z_0|}{R^2} + \frac1R\Big) .
 > $$
 >
-> The left side does not depend on $R$, and the right side tends to $0$ as $R \to \infty$; so $f''(z_0) = 0$. Since $z_0$ was arbitrary, $f'' = 0$ everywhere in the plane. A function whose derivative is zero throughout a domain is constant ([[§25 Analytic Functions|§25]]), so $f'(z) = a_1$ for a constant $a_1$. Then $(f(z) - a_1z)' = 0$, so $f(z) = a_1z + a_0$. Finally $|f(0)| \le A \cdot 0 = 0$ gives $a_0 = 0$, and $f(z) = a_1z$.
+> The left side does not depend on $R$, and the right side tends to $0$ as $R \to \infty$; so $f''(z_0) = 0$. Since $z_0$ was arbitrary, $f'' = 0$ everywhere in the plane. A function whose derivative is zero throughout a domain is constant ([[§25 Analytic Functions#^thm-25-3|Theorem §25.3]]), so $f'(z) = a_1$ for a constant $a_1$. Then $(f(z) - a_1z)' = 0$, so $f(z) = a_1z + a_0$. Finally $|f(0)| \le A \cdot 0 = 0$ gives $a_0 = 0$, and $f(z) = a_1z$.
 >
 > **(b)** The same argument with $n = k + 1$ shows more generally: if $f$ is entire and $|f(z)| \le A|z|^k + B$ for all $z$ (constants $A$, $B$, integer $k \ge 0$), then $f$ is a polynomial of degree at most $k$. Indeed $M_R \le A(|z_0| + R)^k + B$, so $|f^{(k+1)}(z_0)| \le (k + 1)!\,\big(A(|z_0| + R)^k + B\big)/R^{k+1} \to 0$ as $R \to \infty$; thus $f^{(k+1)} = 0$, and $k + 1$ applications of the theorem in §25 show that $f$ is a polynomial of degree at most $k$. For $k = 0$ this is Liouville's theorem, [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Theorem §58.1]].
 >

@@ -15,7 +15,7 @@ This section proves the Cauchy–Goursat theorem, which [[§50 Cauchy–Goursat 
 
 ## A Preliminary Lemma
 
-Throughout, $C$ is a positively oriented simple closed contour and $R$ is the closed region consisting of the points of $C$ together with the points interior to $C$. Saying that $f$ is analytic throughout $R$ means that $f$ is analytic at every point of $R$, hence in some open set containing $R$ ([[§25 Analytic Functions|§25]]).
+Throughout, $C$ is a positively oriented simple closed contour and $R$ is the closed region consisting of the points of $C$ together with the points interior to $C$. Saying that $f$ is analytic throughout $R$ means that $f$ is analytic at every point of $R$, hence in some open set containing $R$ ([[§25 Analytic Functions#^def-25-1|Definition §25.1]]).
 
 Draw equally spaced lines parallel to the real and imaginary axes, with the same spacing in both directions. Since $R$ is bounded, only finitely many of the closed squares they form contain points of $R$.
 
@@ -76,9 +76,9 @@ The proof of the lemma below subdivides squares again and again and needs the fa
 >
 > of squares, each a quarter of the one before, such that every $\sigma_k$ contains points of $R$ and its subregion is not good.
 >
-> **A common point in $R$.** By Lemma §51.1 there is a point $z_0$ common to every $\sigma_k$. If $s$ is the side of $\sigma_0$, the side of $\sigma_k$ is $s/2^k$ and its diagonal is $\sqrt2\,s/2^k$. Choose a point $w_k$ of $R$ in each $\sigma_k$; then $|w_k - z_0| \le \sqrt2\,s/2^k \to 0$. So every $\delta$ neighborhood $|z - z_0| < \delta$ contains points of $R$ (either $z_0$ itself or points of $R$ distinct from $z_0$, which makes $z_0$ an accumulation point of $R$). Since $R$ is a closed set ([[§12★ Regions in the Complex Plane|§12★]]), $z_0$ is a point of $R$.
+> **A common point in $R$.** By Lemma §51.1 there is a point $z_0$ common to every $\sigma_k$. If $s$ is the side of $\sigma_0$, the side of $\sigma_k$ is $s/2^k$ and its diagonal is $\sqrt2\,s/2^k$. Choose a point $w_k$ of $R$ in each $\sigma_k$; then $|w_k - z_0| \le \sqrt2\,s/2^k \to 0$. So every $\delta$ neighborhood $|z - z_0| < \delta$ contains points of $R$ (either $z_0$ itself or points of $R$ distinct from $z_0$, which makes $z_0$ an accumulation point of $R$). Since $R$ is a closed set, it contains its accumulation points ([[§12★ Regions in the Complex Plane#^thm-12-2|Theorem §12.2]]), $z_0$ is a point of $R$.
 >
-> **The contradiction.** Since $f$ is analytic throughout $R$, it is analytic at $z_0$, and $f'(z_0)$ exists. By the definition of derivative ([[§19 Derivatives|§19]]), for our $\varepsilon$ there is a $\delta$ neighborhood $|z - z_0| < \delta$ such that
+> **The contradiction.** Since $f$ is analytic throughout $R$, it is analytic at $z_0$, and $f'(z_0)$ exists. By the definition of derivative ([[§19 Derivatives#^def-19-1|Definition §19.1]]), for our $\varepsilon$ there is a $\delta$ neighborhood $|z - z_0| < \delta$ such that
 >
 > $$
 > \left| \frac{f(z) - f(z_0)}{z - z_0} - f'(z_0) \right| < \varepsilon
@@ -88,7 +88,7 @@ The proof of the lemma below subdivides squares again and again and needs the fa
 
 ^pf-51-2
 
-*Uses:* [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^def-51-1|Def. §51.1]], [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^lem-51-1|§51.1]], [[§19 Derivatives|§19]] (definition of derivative), [[§12★ Regions in the Complex Plane|§12★]] (closed sets contain their accumulation points)
+*Uses:* [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^def-51-1|Def. §51.1]], [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^lem-51-1|§51.1]], [[§19 Derivatives#^def-19-1|Def. §19.1]], [[§12★ Regions in the Complex Plane#^thm-12-2|§12.2]]
 
 ![[m342-51-1.svg]]
 *A covering of $R$ (shaded) by squares and partial squares. The partial squares are the parts inside $C$ of the squares that stick out (dashed). The square $\sigma_0$ (red) was not good and has been divided into four; one of its quarters, $\sigma_1$, was divided again. The lemma says that this process ends after finitely many steps.*
@@ -155,7 +155,7 @@ The proof of the lemma below subdivides squares again and again and needs the fa
 > \int_{C_j} dz = 0 \qquad\text{and}\qquad \int_{C_j} z\,dz = 0 ,
 > $$
 >
-> since the functions $1$ and $z$ possess the antiderivatives $z$ and $z^2/2$ everywhere in the finite plane ([[§48 Antiderivatives|§48]], Theorem). So equation (6) reduces to
+> since the functions $1$ and $z$ possess the antiderivatives $z$ and $z^2/2$ everywhere in the finite plane ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]). So equation (6) reduces to
 >
 > $$
 > \int_{C_j} f(z)\,dz = \int_{C_j}(z - z_j)\delta_j(z)\,dz \qquad (j = 1, 2, \ldots, n) . \qquad (7)
@@ -179,7 +179,7 @@ The proof of the lemma below subdivides squares again and again and needs the fa
 > \left| \int_C f(z)\,dz \right| \le \sum_{j=1}^{n}\left| \int_{C_j}(z - z_j)\delta_j(z)\,dz \right| . \qquad (8)
 > $$
 >
-> **Conclusion.** Bound each modulus on the right of (8) by the upper bound for moduli of contour integrals ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]], Theorem). Each $C_j$ coincides either entirely or partially with the boundary of a square; in either case let $s_j$ denote the length of a side of that square. Since, in the $j$th integral, both the variable $z$ and the point $z_j$ lie in that square,
+> **Conclusion.** Bound each modulus on the right of (8) by the upper bound for moduli of contour integrals ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]). Each $C_j$ coincides either entirely or partially with the boundary of a square; in either case let $s_j$ denote the length of a side of that square. Since, in the $j$th integral, both the variable $z$ and the point $z_j$ lie in that square,
 >
 > $$
 > |z - z_j| \le \sqrt2\,s_j .
@@ -213,25 +213,20 @@ The proof of the lemma below subdivides squares again and again and needs the fa
 
 ^pf-51-3
 
-*Uses:* [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^lem-51-2|§51.2]], [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^def-51-1|Def. §51.1]], [[§48 Antiderivatives|§48]] (Theorem), [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (Theorem), [[§44 Contour Integrals|§44]] (sums of contour integrals)
+*Uses:* [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^lem-51-2|§51.2]], [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^def-51-1|Def. §51.1]], [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]], [[§44 Contour Integrals#^thm-44-2|§44.2]]
 
 > [!remark]- Connections
-> - Cauchy's version ([[§50 Cauchy–Goursat Theorem|§50]]) assumes $f'$ continuous and reduces $\int_C f(z)\,dz$ to two double integrals by Green's theorem, [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]] ([[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]]), whose integrands vanish by the Cauchy–Riemann equations. Goursat's proof uses only the existence of $f'$, and so can later prove that $f'$ is continuous, indeed analytic ([[§57 Some Consequences of the Extension#^thm-57-1|§57.1]]).
+> - Cauchy's version, [[§50 Cauchy–Goursat Theorem#^thm-50-2|Theorem §50.2]], assumes $f'$ continuous and reduces $\int_C f(z)\,dz$ to two double integrals by Green's theorem, [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]] ([[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]]), whose integrands vanish by the Cauchy–Riemann equations. Goursat's proof uses only the existence of $f'$, and so can later prove that $f'$ is continuous, indeed analytic ([[§57 Some Consequences of the Extension#^thm-57-1|§57.1]]).
 > - The nested squares of Lemma §51.1 are a nested sequence of nonempty closed sets in a compact space, which always have a common point: [[§15 Compact Spaces#^cor-15-6|590 Cor. §15.6]]. The halving argument is the two-dimensional form of the bisection proofs in Single Variable Analysis.
 
 > [!remark]- Remark: What the Proof Takes for Granted
-> B&C treats two geometric points as evident. First, the positively oriented boundary of a partial square is a closed contour along which one can integrate, and its pieces on $C$ inherit the positive orientation of $C$. Second, the sides shared by adjacent subregions cancel and the remaining arcs make up $C$ exactly once. For the contours met in practice, which cross each grid line only finitely often, both are clear from a picture. For an arbitrary simple closed contour (one that wiggles across a grid line infinitely often, like the curve in [[§52 Simply Connected Domains#^ex-52-2|Example §52.2]]) a partial square may break into infinitely many pieces, and a complete proof needs more work: many texts first prove the theorem for triangles or rectangles, where no partial squares occur, and then pass to general contours. B&C's route, followed here, is the one used in the course.
+> B&C treats two geometric points as evident. First, the positively oriented boundary of a partial square is a closed contour along which one can integrate, and its pieces on $C$ inherit the positive orientation of $C$. Second, the sides shared by adjacent subregions cancel and the remaining arcs make up $C$ exactly once. For the contours met in practice, which cross each grid line only finitely often, both are clear from a picture; in general they rest on the Jordan curve theorem ([[§43 Contours#^thm-43-4|Theorem §43.4]]), which B&C states without proof. For an arbitrary simple closed contour (one that wiggles across a grid line infinitely often, like the curve in [[§52 Simply Connected Domains#^ex-52-2|Example §52.2]]) a partial square may break into infinitely many pieces, and a complete proof needs more work: many texts first prove the theorem for triangles or rectangles, where no partial squares occur, and then pass to general contours. B&C's route, followed here, is the one used in the course.
 
 ^rem-51-2
 
 ## Applying the Theorem
 
-> [!remark] Remark: Method — Showing ∫ f(z) dz = 0 by Cauchy–Goursat
-> 1. **Find where $f$ is not analytic:** zeros of denominators, points on the branch cut of a logarithm or power, points where an inner function of a composite takes a bad value.
-> 2. **Locate them relative to $C$.** If none lies inside or on $C$, then $f$ is analytic on an open set containing $C$ and its interior (usually a slightly larger disk), and $\int_C f(z)\,dz = 0$ by the Cauchy–Goursat theorem, in either direction.
-> 3. **If one lies inside $C$,** the theorem says nothing; deform $C$ to small circles around the bad points ([[§53 Multiply Connected Domains#^thm-53-1|§53.1]]) or use the Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|§54.1]]).
-
-^rem-51-3
+The procedure for showing that an integral around a closed contour vanishes is [[§50 Cauchy–Goursat Theorem#^rem-50-2|Remark: Method — Showing That an Integral Around a Closed Contour Is Zero]]; with the Cauchy–Goursat theorem now proved, its step 2 needs no continuity of $f'$.
 
 > [!example] Example §51.1: Three Integrals Around the Unit Circle
 > Show that $\int_C f(z)\,dz = 0$ when $C$ is the unit circle $|z| = 1$, in either direction, for (b) $f(z) = ze^{-z}$; (c) $f(z) = \dfrac{1}{z^2 + 2z + 2}$; (f) $f(z) = \operatorname{Log}(z + 2)$.
@@ -255,7 +250,7 @@ The proof of the lemma below subdivides squares again and again and needs the fa
 > \frac{1}{2i}\int_C \bar z\,dz .
 > $$
 >
-> The function $\bar z$ is not analytic anywhere ([[§19 Derivatives|§19]], Example 2), so the Cauchy–Goursat theorem does not apply. But expression (4) of [[§50 Cauchy–Goursat Theorem|§50]],
+> The function $\bar z$ is not analytic anywhere ([[§19 Derivatives#^ex-19-2|Example §19.2]]), so the Cauchy–Goursat theorem does not apply. But expression (4) in the proof of [[§50 Cauchy–Goursat Theorem#^thm-50-2|Theorem §50.2]],
 >
 > $$
 > \int_C f(z)\,dz = \iint_R (-v_x - u_y)\,dA + i\iint_R (u_x - v_y)\,dA ,

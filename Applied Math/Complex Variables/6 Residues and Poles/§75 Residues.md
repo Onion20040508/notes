@@ -15,7 +15,7 @@ Near an isolated singular point $z_0$ a function has a Laurent series, and of al
 
 ## The Residue
 
-When $z_0$ is an isolated singular point of $f$ ([[§74 Isolated Singular Points#^def-74-1|Definition §74.1]]), there is a positive number $R_2$ such that $f$ is analytic at each point $z$ with $0 < |z - z_0| < R_2$. Consequently ([[§66 Laurent Series|§66]], Laurent's theorem, proved in [[§67 Proof of Laurent's Theorem|§67]]) $f$ has a Laurent series representation
+When $z_0$ is an isolated singular point of $f$ ([[§74 Isolated Singular Points#^def-74-1|Definition §74.1]]), there is a positive number $R_2$ such that $f$ is analytic at each point $z$ with $0 < |z - z_0| < R_2$. Consequently (Laurent's theorem, [[§67 Proof of Laurent's Theorem#^thm-67-1|Theorem §67.1]], stated in [[§66 Laurent Series|§66]]) $f$ has a Laurent series representation
 
 $$
 f(z) = \sum_{n=0}^{\infty} a_n(z - z_0)^n + \frac{b_1}{z - z_0} + \frac{b_2}{(z - z_0)^2} + \cdots + \frac{b_n}{(z - z_0)^n} + \cdots \qquad (0 < |z - z_0| < R_2), \qquad (1)
@@ -33,7 +33,7 @@ for any positively oriented simple closed contour $C$ around $z_0$ that lies in 
 > Let $z_0$ be an isolated singular point of $f$, with Laurent series (1) in $0 < |z - z_0| < R_2$. The coefficient $b_1$ of $1/(z - z_0)$ is called the **residue** of $f$ at $z_0$, written
 >
 > $$
-> b_1 = \operatorname*{Res}_{z=z_0} f(z) .
+> b_1 = \operatorname{Res}_{z=z_0} f(z) .
 > $$
 >
 > When the function and the point are clearly indicated, the residue is sometimes denoted simply by $B$.
@@ -46,7 +46,7 @@ for any positively oriented simple closed contour $C$ around $z_0$ that lies in 
 > Let $z_0$ be an isolated singular point of $f$, with $f$ analytic in $0 < |z - z_0| < R_2$, and let $C$ be a positively oriented simple closed contour around $z_0$ lying in that punctured disk. Then
 >
 > $$
-> \int_C f(z)\,dz = 2\pi i\operatorname*{Res}_{z=z_0} f(z) . \qquad (3)
+> \int_C f(z)\,dz = 2\pi i\operatorname{Res}_{z=z_0} f(z) . \qquad (3)
 > $$
 >
 > *B&C: Sec. 75, Equations (2)–(3)*
@@ -60,11 +60,11 @@ for any positively oriented simple closed contour $C$ around $z_0$ that lies in 
 > b_1 = \frac{1}{2\pi i}\int_C f(z)\,dz , \qquad\text{that is,}\qquad \int_C f(z)\,dz = 2\pi i\,b_1 , \qquad (2)
 > $$
 >
-> and $b_1 = \operatorname*{Res}_{z=z_0} f(z)$ by definition.
+> and $b_1 = \operatorname{Res}_{z=z_0} f(z)$ by definition.
 
 ^pf-75-1
 
-*Uses:* [[§75 Residues#^def-75-1|Def. §75.1]], [[§66 Laurent Series|§66]] (Laurent's theorem, coefficient formula)
+*Uses:* [[§75 Residues#^def-75-1|Def. §75.1]], [[§67 Proof of Laurent's Theorem#^thm-67-1|§67.1]] (Laurent's theorem, coefficient formula)
 
 Equation (3) is a powerful method for evaluating integrals around simple closed contours: the whole integral is determined by a single coefficient.
 
@@ -72,7 +72,7 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 > 1. **Locate the singular point** $z_0$ and check that it is isolated; let $R_2$ be its distance to the nearest other singular point ($R_2 = \infty$ if there is none).
 > 2. **Build the Laurent series** in $0 < |z - z_0| < R_2$ from known expansions ([[§64 Examples (Proof of Taylor's Theorem)|§64]]): $e^w$, $\sin w$, $\cos w$, $\cosh w$, $\sinh w$ and the geometric series $\frac{1}{1 - w} = \sum w^n$ ($|w| < 1$), substituting $w = 1/z$, $w = z - z_0$, $w = -(z - z_0)/2$ and so on, and multiplying by powers of $z - z_0$. Any series in powers of $z - z_0$ that converges to $f$ in the punctured disk *is* its Laurent series ([[§72★ Uniqueness of Series Representations|§72★]], Theorem 2), however it was found.
 > 3. **Read off** the coefficient of $1/(z - z_0)$. Only the terms that can produce $(z - z_0)^{-1}$ need to be computed: if $f(z) = (z - z_0)^{-k}g(z)$, it is the coefficient of $(z - z_0)^{k-1}$ in $g$.
-> 4. **Integrate.** If $C$ is positively oriented and encloses $z_0$ and no other singular point, $\int_C f(z)\,dz = 2\pi i\operatorname*{Res}_{z=z_0} f(z)$ (Theorem §75.1). Several singular points inside $C$: [[§76 Cauchy's Residue Theorem|§76]].
+> 4. **Integrate.** If $C$ is positively oriented and encloses $z_0$ and no other singular point, $\int_C f(z)\,dz = 2\pi i\operatorname{Res}_{z=z_0} f(z)$ (Theorem §75.1). Several singular points inside $C$: [[§76 Cauchy's Residue Theorem|§76]].
 >
 > Faster rules at poles come in [[§80 Residues at Poles|§80]] and [[§83 Zeros and Poles|§83]]; the Laurent series is the method of last resort and the only one at essential singular points.
 
@@ -98,7 +98,7 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 > The coefficient of $1/z$ occurs when $n - 5 = -1$, that is, $n = 4$. Hence
 >
 > $$
-> \operatorname*{Res}_{z=0}\frac{e^z - 1}{z^5} = \frac{1}{4!} = \frac{1}{24}, \qquad \int_C \frac{e^z - 1}{z^5}\,dz = 2\pi i\Big(\frac{1}{24}\Big) = \frac{\pi i}{12} .
+> \operatorname{Res}_{z=0}\frac{e^z - 1}{z^5} = \frac{1}{4!} = \frac{1}{24}, \qquad \int_C \frac{e^z - 1}{z^5}\,dz = 2\pi i\Big(\frac{1}{24}\Big) = \frac{\pi i}{12} .
 > $$
 >
 > *B&C prints the integrand of (4) and of the final line as $(e^z - 1)/z^4$, but computes with $z^5$; for $(e^z - 1)/z^4$ the residue is $1/3! = 1/6$ and the integral is $\pi i/3$.*
@@ -170,7 +170,7 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 > \frac{1}{z + z^2} = \frac1z\cdot\frac{1}{1 + z} = \frac1z\sum_{n=0}^{\infty}(-1)^nz^n = \sum_{n=0}^{\infty}(-1)^nz^{n-1} = \frac1z - 1 + z - z^2 + \cdots ,
 > $$
 >
-> and the coefficient of $1/z$ ($n = 0$) is $\operatorname*{Res}_{z=0}\frac{1}{z + z^2} = 1$.
+> and the coefficient of $1/z$ ($n = 0$) is $\operatorname{Res}_{z=0}\frac{1}{z + z^2} = 1$.
 >
 > **(b)** With $\cos w = \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n)!}w^{2n}$ and $w = 1/z$,
 >
@@ -178,7 +178,7 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 > z\cos\Big(\frac1z\Big) = \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n)!}z^{1-2n} = z - \frac{1}{2!}\cdot\frac1z + \frac{1}{4!}\cdot\frac{1}{z^3} - \cdots \qquad (0 < |z| < \infty) .
 > $$
 >
-> The term $z^{-1}$ comes from $1 - 2n = -1$, that is, $n = 1$, so $\operatorname*{Res}_{z=0} z\cos(1/z) = -\frac{1}{2}$.
+> The term $z^{-1}$ comes from $1 - 2n = -1$, that is, $n = 1$, so $\operatorname{Res}_{z=0} z\cos(1/z) = -\frac{1}{2}$.
 >
 > **(c)** With $\sin z = \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n+1)!}z^{2n+1}$,
 >
@@ -186,7 +186,7 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 > \frac{z - \sin z}{z} = 1 - \frac{\sin z}{z} = 1 - \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n+1)!}z^{2n} = \frac{z^2}{3!} - \frac{z^4}{5!} + \cdots \qquad (0 < |z| < \infty) .
 > $$
 >
-> There is no term in $z^{-1}$ (in fact no negative power at all), so $\operatorname*{Res}_{z=0}\frac{z - \sin z}{z} = 0$.
+> There is no term in $z^{-1}$ (in fact no negative power at all), so $\operatorname{Res}_{z=0}\frac{z - \sin z}{z} = 0$.
 >
 > *B&C: Sec. 77, Exercise 1(a)–(c); Source: 342 HW 11*
 
@@ -205,7 +205,7 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 > e^{1/z} = \sum_{n=0}^{\infty}\frac{1}{n!}\cdot\frac{1}{z^n} = 1 + \frac{1}{1!}\cdot\frac1z + \frac{1}{2!}\cdot\frac{1}{z^2} + \cdots \qquad (0 < |z| < \infty) .
 > $$
 >
-> **(b)** The integrand $g(z) = (z^{-2} + z + z^3)e^{1/z}$ is analytic in $0 < |z| < \infty$, so by (3) $I = \operatorname*{Res}_{z=0} g(z)$, the coefficient of $1/z$ in the Laurent series of $g$. Multiplying the series of (a) term by term:
+> **(b)** The integrand $g(z) = (z^{-2} + z + z^3)e^{1/z}$ is analytic in $0 < |z| < \infty$, so by (3) $I = \operatorname{Res}_{z=0} g(z)$, the coefficient of $1/z$ in the Laurent series of $g$. Multiplying the series of (a) term by term:
 > - $z^{-2}e^{1/z} = \sum_n \frac{1}{n!}z^{-n-2}$ contains only the powers $z^{-2}, z^{-3}, \ldots$: no $z^{-1}$ term;
 > - $z\,e^{1/z} = \sum_n \frac{1}{n!}z^{1-n}$: the term $z^{-1}$ has $n = 2$, coefficient $\frac{1}{2!} = \frac12$;
 > - $z^3e^{1/z} = \sum_n \frac{1}{n!}z^{3-n}$: the term $z^{-1}$ has $n = 4$, coefficient $\frac{1}{4!} = \frac{1}{24}$.
@@ -221,7 +221,7 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 ^ex-75-5
 
 > [!remark] Remark: Derivatives Have Zero Residue
-> If $F$ is analytic in a punctured disk $0 < |z - z_0| < R$, then $f = F'$ has residue $0$ at $z_0$. Indeed, let $C$ be the circle $|z - z_0| = r$ with $0 < r < R$. Since $F$ is an antiderivative of $f$ in a domain containing $C$, the integral of $f$ around the closed contour $C$ is zero ([[§48 Antiderivatives|§48]], Theorem), so $\operatorname*{Res}_{z=z_0} f(z) = \frac{1}{2\pi i}\int_C f(z)\,dz = 0$ by (3). (In terms of series: differentiating the Laurent series of $F$ term by term, $\frac{d}{dz}(z - z_0)^n = n(z - z_0)^{n-1}$, and the power $-1$ would come only from $n = 0$, whose coefficient $n$ is $0$.) For instance, there is **no** function $F$ analytic in $0 < |z| < 1$ with $\operatorname*{Res}_{z=0} F'(z) = 1$: $1/z$ has no antiderivative in the punctured disk, which is why $\log z$ needs a branch cut.
+> If $F$ is analytic in a punctured disk $0 < |z - z_0| < R$, then $f = F'$ has residue $0$ at $z_0$. Indeed, let $C$ be the circle $|z - z_0| = r$ with $0 < r < R$. Since $F$ is an antiderivative of $f$ in a domain containing $C$, the integral of $f$ around the closed contour $C$ is zero ([[§48 Antiderivatives|§48]], Theorem), so $\operatorname{Res}_{z=z_0} f(z) = \frac{1}{2\pi i}\int_C f(z)\,dz = 0$ by (3). (In terms of series: differentiating the Laurent series of $F$ term by term, $\frac{d}{dz}(z - z_0)^n = n(z - z_0)^{n-1}$, and the power $-1$ would come only from $n = 0$, whose coefficient $n$ is $0$.) For instance, there is **no** function $F$ analytic in $0 < |z| < 1$ with $\operatorname{Res}_{z=0} F'(z) = 1$: $1/z$ has no antiderivative in the punctured disk, which is why $\log z$ needs a branch cut.
 >
 > *Source: 342 practice final (Spring 2005), Q8b*
 

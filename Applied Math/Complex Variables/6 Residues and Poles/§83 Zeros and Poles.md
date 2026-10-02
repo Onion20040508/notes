@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 83 · MAT 342 HW 12.*
 
-Most poles met in practice come from zeros of a denominator. If $p$ and $q$ are analytic at $z_0$, $p(z_0) \ne 0$ and $q$ has a zero of order $m$ at $z_0$, then $p/q$ has a pole of order $m$ there (Theorem 1), and conversely. For a simple zero of $q$ this gives the most convenient residue formula of all, $\operatorname*{Res}_{z=z_0} p/q = p(z_0)/q'(z_0)$ (Theorem 2), which needs no factorization of $q$. It handles $\cot z$, $\tan z$, $1/\sin z$ and the roots of polynomials at once, and with the residue theorem it evaluates integrals such as the one that sums $\sum(-1)^{n+1}/n^2 = \pi^2/12$.
+Most poles met in practice come from zeros of a denominator. If $p$ and $q$ are analytic at $z_0$, $p(z_0) \ne 0$ and $q$ has a zero of order $m$ at $z_0$, then $p/q$ has a pole of order $m$ there (Theorem 1), and conversely. For a simple zero of $q$ this gives the most convenient residue formula of all, $\operatorname{Res}_{z=z_0} p/q = p(z_0)/q'(z_0)$ (Theorem 2), which needs no factorization of $q$. It handles $\cot z$, $\tan z$, $1/\sin z$ and the roots of polynomials at once, and with the residue theorem it evaluates integrals such as the one that sums $\sum(-1)^{n+1}/n^2 = \pi^2/12$.
 
 ## Zeros of the Denominator
 
@@ -41,11 +41,11 @@ Most poles met in practice come from zeros of a denominator. If $p$ and $q$ are 
 > \frac{p(z)}{q(z)} = \frac{\phi(z)}{(z - z_0)^m} \qquad\text{where}\qquad \phi(z) = \frac{p(z)}{g(z)} . \qquad (1)
 > $$
 >
-> Since $g$ is continuous and nonzero at $z_0$, it is nonzero in a neighborhood of $z_0$ ([[§18 Continuity|§18]]), so $\phi$ is analytic at $z_0$; and $\phi(z_0) = p(z_0)/g(z_0) \ne 0$. It now follows from the theorem in §80 ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]) that $z_0$ is a pole of order $m$ of $p(z)/q(z)$.
+> Since $g$ is continuous and nonzero at $z_0$, it is nonzero in a neighborhood of $z_0$ ([[§18 Continuity#^thm-18-3|Theorem §18.3]]), so $\phi$ is analytic at $z_0$; and $\phi(z_0) = p(z_0)/g(z_0) \ne 0$. It now follows from the theorem in §80 ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]) that $z_0$ is a pole of order $m$ of $p(z)/q(z)$.
 
 ^pf-83-1
 
-*Uses:* [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§82 Zeros of Analytic Functions#^thm-82-2|§82.2]], [[§80 Residues at Poles#^thm-80-1|§80.1]], [[§18 Continuity|§18]] (Theorem 2: nonzero near a point where continuous and nonzero)
+*Uses:* [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§82 Zeros of Analytic Functions#^thm-82-2|§82.2]], [[§80 Residues at Poles#^thm-80-1|§80.1]], [[§18 Continuity#^thm-18-3|§18.3]] (nonzero near a point where continuous and nonzero)
 
 > [!example] Example §83.1: A Double Pole of 1/(1 − cos z)
 > The two functions
@@ -80,7 +80,7 @@ Theorem §83.1 leads to another method for identifying *simple* poles and findin
 > then $z_0$ is a simple pole of the quotient $p(z)/q(z)$ and
 >
 > $$
-> \operatorname*{Res}_{z=z_0}\frac{p(z)}{q(z)} = \frac{p(z_0)}{q'(z_0)} . \qquad (2)
+> \operatorname{Res}_{z=z_0}\frac{p(z)}{q(z)} = \frac{p(z_0)}{q'(z_0)} . \qquad (2)
 > $$
 >
 > *B&C: Sec. 83, Theorem 2*
@@ -103,7 +103,7 @@ Theorem §83.1 leads to another method for identifying *simple* poles and findin
 > Since this $\phi$ is analytic and nonzero at $z_0$, the theorem in §80 gives
 >
 > $$
-> \operatorname*{Res}_{z=z_0}\frac{p(z)}{q(z)} = \frac{p(z_0)}{g(z_0)} . \qquad (4)
+> \operatorname{Res}_{z=z_0}\frac{p(z)}{q(z)} = \frac{p(z_0)}{g(z_0)} . \qquad (4)
 > $$
 >
 > But $g(z_0) = q'(z_0)$, as is seen by differentiating each side of equation (3), $q'(z) = g(z) + (z - z_0)g'(z)$, and then setting $z = z_0$. Expression (4) thus takes the form (2).
@@ -115,11 +115,11 @@ Theorem §83.1 leads to another method for identifying *simple* poles and findin
 > [!remark]- Connections
 > - For polynomials this is Heaviside's formula of Fourier Series and PDEs, [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]]: the coefficient of $1/(s - r_k)$ in the partial-fraction expansion of $q/p$ is $q(r_k)/p'(r_k)$, the residue at the simple pole $r_k$. The partial-fraction decomposition itself, [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|Calc Thm. §47.3]], follows from principal parts and Liouville's theorem (Connections of [[§78 The Three Types of Isolated Singular Points#^def-78-1|Definition §78.1]]).
 
-There are expressions similar to (2) for residues at poles of higher order, but they are lengthier and, in general, not practical. (For a double pole of $1/q^2$, where $q$ has a simple zero, B&C's Exercise 8 gives $\operatorname*{Res} = -q''(z_0)/[q'(z_0)]^3$.)
+There are expressions similar to (2) for residues at poles of higher order, but they are lengthier and, in general, not practical. (For a double pole of $1/q^2$, where $q$ has a simple zero, B&C's Exercise 8 gives $\operatorname{Res} = -q''(z_0)/[q'(z_0)]^3$.)
 
 > [!remark] Remark: Method — Residues of Quotients
 > 1. **Write $f = p/q$** with $p$, $q$ analytic at $z_0$ (often entire), and find the zeros of $q$.
-> 2. **Check the conditions** $p(z_0) \ne 0$, $q(z_0) = 0$, $q'(z_0) \ne 0$. Then $z_0$ is a simple pole and $\operatorname*{Res}_{z=z_0} f = p(z_0)/q'(z_0)$ (Theorem §83.2). No factoring of $q$ is needed, which is the point for $\sin z$, $\cosh z$, $z^n - c$.
+> 2. **Check the conditions** $p(z_0) \ne 0$, $q(z_0) = 0$, $q'(z_0) \ne 0$. Then $z_0$ is a simple pole and $\operatorname{Res}_{z=z_0} f = p(z_0)/q'(z_0)$ (Theorem §83.2). No factoring of $q$ is needed, which is the point for $\sin z$, $\cosh z$, $z^n - c$.
 > 3. **Higher-order zeros.** If $q$ has a zero of order $m \ge 2$ and $p(z_0) \ne 0$, the pole has order $m$ (Theorem §83.1); find the residue by [[§80 Residues at Poles#^thm-80-1|Theorem §80.1]] or a Laurent series.
 > 4. **Common zeros.** If $p(z_0) = 0$ too, compare orders: with $p$ of order $k$ and $q$ of order $m$, $p/q = (z - z_0)^{k-m}\cdot(\text{analytic, nonzero})$, so the point is removable if $k \ge m$ and a pole of order $m - k$ if $k < m$ (Theorem §82.1).
 
@@ -151,7 +151,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 
 ^pf-83-3
 
-*Uses:* [[§80 Residues at Poles#^thm-80-1|§80.1]], [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§18 Continuity|§18]] (Theorem 2)
+*Uses:* [[§80 Residues at Poles#^thm-80-1|§80.1]], [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§18 Continuity#^thm-18-3|§18.3]]
 
 ## Examples
 
@@ -218,7 +218,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 > - *At $z = n\pi$, $n \ne 0$*: $p(z) = z$ has $p(n\pi) = n\pi \ne 0$, and $q(z) = \sin z$ has $q'(n\pi) = \cos n\pi = (-1)^n \ne 0$. By Theorem §83.2 these are **simple poles**, with
 >
 > $$
-> \operatorname*{Res}_{z=n\pi}\frac{z}{\sin z} = \frac{n\pi}{\cos n\pi} = (-1)^nn\pi \qquad (n = \pm1, \pm2, \ldots) .
+> \operatorname{Res}_{z=n\pi}\frac{z}{\sin z} = \frac{n\pi}{\cos n\pi} = (-1)^nn\pi \qquad (n = \pm1, \pm2, \ldots) .
 > $$
 >
 > - *Zeros.* $f(z) = 0$ would need $z = 0$, but there $f(0) = 1$ (after the removal). So $f$ has **no zeros**.
@@ -232,7 +232,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 > - *Poles.* With $p(z) = z^2$ and $q(z) = z^4 + 9$: $p(z_k) \ne 0$ and $q'(z_k) = 4z_k^3 \ne 0$, so each $z_k$ is a **simple pole**, with
 >
 > $$
-> \operatorname*{Res}_{z=z_k} g = \frac{z_k^2}{4z_k^3} = \frac{1}{4z_k} = \frac{\bar z_k}{4|z_k|^2} = \frac{\bar z_k}{12} = \frac{e^{-i(\pi/4 + k\pi/2)}}{4\sqrt3} .
+> \operatorname{Res}_{z=z_k} g = \frac{z_k^2}{4z_k^3} = \frac{1}{4z_k} = \frac{\bar z_k}{4|z_k|^2} = \frac{\bar z_k}{12} = \frac{e^{-i(\pi/4 + k\pi/2)}}{4\sqrt3} .
 > $$
 >
 > Explicitly, at $\sqrt{3/2}(1 + i)$, $\sqrt{3/2}(-1 + i)$, $\sqrt{3/2}(-1 - i)$, $\sqrt{3/2}(1 - i)$ the residues are $\frac{1 - i}{4\sqrt6}$, $\frac{-1 - i}{4\sqrt6}$, $\frac{-1 + i}{4\sqrt6}$, $\frac{1 + i}{4\sqrt6}$ (using $\sqrt{3/2}/12 = 1/(4\sqrt6)$).
@@ -262,7 +262,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 > **The residues.** With $p = 1$ and $q'(z) = 4z(z^2 - 1)$: at $z_0$, $z_0^2 - 1 = \sqrt3\,i$, so $q'(z_0) = 4\sqrt3\,i\,z_0 \ne 0$; at $-\bar z_0$, $(-\bar z_0)^2 - 1 = \bar z_0^2 - 1 = -\sqrt3\,i$, so $q'(-\bar z_0) = 4\sqrt3\,i\,\bar z_0 \ne 0$. Both are simple poles, and by Theorem §83.2
 >
 > $$
-> \operatorname*{Res}_{z=z_0}\frac1q + \operatorname*{Res}_{z=-\bar z_0}\frac1q = \frac{1}{4\sqrt3\,i}\Big(\frac{1}{z_0} + \frac{1}{\bar z_0}\Big) = \frac{1}{4\sqrt3\,i}\cdot\frac{2\operatorname{Re}z_0}{|z_0|^2} = \frac{1}{4\sqrt3\,i}\cdot\frac{2\sqrt3/\sqrt2}{2} = \frac{1}{4\sqrt2\,i} .
+> \operatorname{Res}_{z=z_0}\frac1q + \operatorname{Res}_{z=-\bar z_0}\frac1q = \frac{1}{4\sqrt3\,i}\Big(\frac{1}{z_0} + \frac{1}{\bar z_0}\Big) = \frac{1}{4\sqrt3\,i}\cdot\frac{2\operatorname{Re}z_0}{|z_0|^2} = \frac{1}{4\sqrt3\,i}\cdot\frac{2\sqrt3/\sqrt2}{2} = \frac{1}{4\sqrt2\,i} .
 > $$
 >
 > **The integral.** By the residue theorem,
@@ -300,7 +300,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 > **At $z = n\pi$, $n \ne 0$.** With $p = 1$ and $q(z) = z^2\sin z$, $q'(z) = 2z\sin z + z^2\cos z$ and $q'(n\pi) = n^2\pi^2(-1)^n \ne 0$. By Theorem §83.2 these are simple poles, with
 >
 > $$
-> \operatorname*{Res}_{z=n\pi}\frac{1}{z^2\sin z} = \frac{1}{n^2\pi^2(-1)^n} = \frac{(-1)^n}{n^2\pi^2} ,
+> \operatorname{Res}_{z=n\pi}\frac{1}{z^2\sin z} = \frac{1}{n^2\pi^2(-1)^n} = \frac{(-1)^n}{n^2\pi^2} ,
 > $$
 >
 > the same value for $n$ and $-n$.
@@ -311,7 +311,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 > \frac{1}{z^2\sin z} = \frac{1}{z^2}\Big(\frac1z + \frac z6 + \frac{7z^3}{360} + \cdots\Big) = \frac{1}{z^3} + \frac16\cdot\frac1z + \frac{7z}{360} + \cdots ,
 > $$
 >
-> so $\operatorname*{Res}_{z=0} f = \frac16$ (a pole of order $3$).
+> so $\operatorname{Res}_{z=0} f = \frac16$ (a pole of order $3$).
 >
 > **The integral.** By the residue theorem,
 >
@@ -321,7 +321,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 >
 > (For $N = 3$ both sides equal $-0.04920\ldots\,i$; the left side was checked by numerical integration around the square.)
 >
-> **The integral tends to $0$.** (B&C refers to its Exercise 8 of Sec. 47; here is the estimate.) Since $|\sin z|^2 = \sin^2x + \sinh^2y$ ([[§37 The Trigonometric Functions sin z and cos z|§37]]), on the vertical sides $x = \pm(N + \frac12)\pi$ we have $|\sin z| \ge |\sin x| = 1$, and on the horizontal sides $|\sin z| \ge |\sinh y| = \sinh\big((N + \frac12)\pi\big) > 1$. Also $|z| \ge (N + \frac12)\pi$ on $C_N$. Hence $|f(z)| \le \frac{1}{(N + \frac12)^2\pi^2}$ on $C_N$, whose length is $8(N + \frac12)\pi$, and by the ML-inequality ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]])
+> **The integral tends to $0$.** (B&C refers to Exercise 8 of [[§47 Upper Bounds for Moduli of Contour Integrals|§47]]; here is the estimate.) Since $|\sin z|^2 = \sin^2x + \sinh^2y$ ([[§37 The Trigonometric Functions sin z and cos z|§37]]), on the vertical sides $x = \pm(N + \frac12)\pi$ we have $|\sin z| \ge |\sin x| = 1$, and on the horizontal sides $|\sin z| \ge |\sinh y| = \sinh\big((N + \frac12)\pi\big) > 1$. Also $|z| \ge (N + \frac12)\pi$ on $C_N$. Hence $|f(z)| \le \frac{1}{(N + \frac12)^2\pi^2}$ on $C_N$, whose length is $8(N + \frac12)\pi$, and by the ML-inequality ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]])
 >
 > $$
 > \Big|\int_{C_N}\frac{dz}{z^2\sin z}\Big| \le \frac{8(N + \frac12)\pi}{(N + \frac12)^2\pi^2} = \frac{8}{(N + \frac12)\pi} \longrightarrow 0 \qquad (N \to \infty) .

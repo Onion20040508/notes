@@ -45,7 +45,7 @@ The Cauchy integral formula expresses the value of an analytic function at any p
 > \int_C \frac{f(z)\,dz}{z - z_0} - f(z_0)\int_{C_\rho}\frac{dz}{z - z_0} = \int_{C_\rho}\frac{f(z) - f(z_0)}{z - z_0}\,dz . \qquad (2)
 > $$
 >
-> But $\int_{C_\rho} dz/(z - z_0) = 2\pi i$ ([[§46 Examples Involving Branch Cuts|§46]], Exercise 13), and so equation (2) becomes
+> But $\int_{C_\rho} dz/(z - z_0) = 2\pi i$ ([[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]]), and so equation (2) becomes
 >
 > $$
 > \int_C \frac{f(z)\,dz}{z - z_0} - 2\pi i\,f(z_0) = \int_{C_\rho}\frac{f(z) - f(z_0)}{z - z_0}\,dz . \qquad (3)
@@ -57,7 +57,7 @@ The Cauchy integral formula expresses the value of an analytic function at any p
 > |f(z) - f(z_0)| < \varepsilon \qquad\text{whenever}\qquad |z - z_0| < \delta . \qquad (4)
 > $$
 >
-> Let the radius $\rho$ of $C_\rho$ be smaller than $\delta$. Since $|z - z_0| = \rho < \delta$ when $z$ is on $C_\rho$, the first of inequalities (4) holds there, and the integrand on the right of (3) has modulus less than $\varepsilon/\rho$. The upper bound for moduli of contour integrals ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]]), with $C_\rho$ of length $2\pi\rho$, gives
+> Let the radius $\rho$ of $C_\rho$ be smaller than $\delta$. Since $|z - z_0| = \rho < \delta$ when $z$ is on $C_\rho$, the first of inequalities (4) holds there, and the integrand on the right of (3) has modulus less than $\varepsilon/\rho$. The upper bound for moduli of contour integrals ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]), with $C_\rho$ of length $2\pi\rho$, gives
 >
 > $$
 > \left| \int_{C_\rho}\frac{f(z) - f(z_0)}{z - z_0}\,dz \right| < \frac{\varepsilon}{\rho}\,2\pi\rho = 2\pi\varepsilon .
@@ -73,7 +73,7 @@ The Cauchy integral formula expresses the value of an analytic function at any p
 
 ^pf-54-1
 
-*Uses:* [[§53 Multiply Connected Domains#^cor-53-2|§53.2]], [[§46 Examples Involving Branch Cuts|§46]] (Exercise 13), [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (Theorem), [[§19 Derivatives|§19]] (analytic implies continuous)
+*Uses:* [[§53 Multiply Connected Domains#^cor-53-2|§53.2]], [[§45 Some Examples (Contour Integrals)#^ex-45-5|Ex. §45.5]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]], [[§19 Derivatives#^thm-19-1|§19.1]]
 
 ![[m342-54-1.svg]]
 *The proof. The integrand $f(z)/(z - z_0)$ is analytic in the shaded region between $C$ and the small circle $C_\rho$, so the two integrals are equal. On $C_\rho$, $f(z)$ is within $\varepsilon$ of $f(z_0)$ once $\rho$ is small; what remains is $f(z_0)\int_{C_\rho}dz/(z - z_0) = 2\pi i\,f(z_0)$.*

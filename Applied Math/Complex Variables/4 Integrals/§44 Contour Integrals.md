@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§43 Contours]] · ↑ [[· 4 Integrals]] · [[§45 Some Examples (Contour Integrals)]] →
 
-*Brown–Churchill, Section 44 · MAT 342 HW 5 · Practice Finals (Fall 2002, Spring 2005).*
+*Brown–Churchill, Section 44 · MAT 342 HW 5, Practice Finals (Fall 2002, Spring 2005).*
 
 The integral of $f(z)$ along a contour $C$ is defined by pulling it back along a parametrization $z = z(t)$ to an integral of the kind studied in [[§42 Definite Integrals of Functions w(t)#^def-42-1|§42]]: $\int_C f(z)\,dz = \int_a^b f[z(t)]\,z'(t)\,dt$. It is a line integral, and its value depends on $f$ and, in general, on $C$, but not on the parametrization chosen for $C$. This section proves that invariance and the four properties (constant multiples, sums, reversing a contour, joining contours) on which every later computation rests. Unlike a real integral, a contour integral has no ready interpretation as an area; its meaning emerges from the theorems of the following sections.
 
@@ -160,7 +160,7 @@ The value does not depend on the parametrization used, for the changes of parame
 
 ^ex-44-1
 
-> [!example] Example §44.2: z^m z̄^n Around the Unit Circle
+> [!example] Example §44.2: zᵐ z̄ⁿ Around the Unit Circle
 > Let $m$ and $n$ be integers and $C$ the unit circle $|z| = 1$, counterclockwise. With $z = e^{i\theta}$ $(0 \le \theta \le 2\pi)$, $\bar z = e^{-i\theta}$ and $z' = ie^{i\theta}$, so
 >
 > $$

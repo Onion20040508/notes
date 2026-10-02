@@ -199,12 +199,12 @@ While the theorem of §80 can be extremely useful, the identification of an isol
 > \frac{1}{z^6} - \frac{1}{z^5} + \frac16\Big(\frac{1}{z^4} - \frac{1}{z^3}\Big) + \frac{7}{360}\Big(\frac{1}{z^2} - \frac1z\Big) .
 > $$
 >
-> **(c)** $f$ is analytic except at the zeros of $z^5\sin z$, that is, at $z = n\pi$. In $|z| < 4$ these are $0$ and $\pm\pi$ ($2\pi > 4$). By (b), $z = 0$ is a **pole of order $6$**. At $\pm\pi$, $\sin z$ has a simple zero ($\cos(\pm\pi) = -1 \ne 0$) and $(1 - z)/z^5 \ne 0$, so $\pm\pi$ are **simple poles** ([[§83 Zeros and Poles|§83]], Theorem 1).
+> **(c)** $f$ is analytic except at the zeros of $z^5\sin z$, that is, at $z = n\pi$. In $|z| < 4$ these are $0$ and $\pm\pi$ ($2\pi > 4$). By (b), $z = 0$ is a **pole of order $6$**. At $\pm\pi$, $\sin z$ has a simple zero ($\cos(\pm\pi) = -1 \ne 0$) and $(1 - z)/z^5 \ne 0$, so $\pm\pi$ are **simple poles** ([[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]]).
 >
-> **(d)** At $0$ the residue is the coefficient of $1/z$ in (b): $\operatorname*{Res}_{z=0} f = -\frac{7}{360}$. At the simple poles, with $p(z) = (1 - z)/z^5$ and $q(z) = \sin z$, $\operatorname*{Res} = p(z_0)/q'(z_0)$ ([[§83 Zeros and Poles|§83]], Theorem 2):
+> **(d)** At $0$ the residue is the coefficient of $1/z$ in (b): $\operatorname{Res}_{z=0} f = -\frac{7}{360}$. At the simple poles, with $p(z) = (1 - z)/z^5$ and $q(z) = \sin z$, $\operatorname{Res} = p(z_0)/q'(z_0)$ ([[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]]):
 >
 > $$
-> \operatorname*{Res}_{z=\pi} f = \frac{1 - \pi}{\pi^5\cos\pi} = \frac{\pi - 1}{\pi^5}, \qquad \operatorname*{Res}_{z=-\pi} f = \frac{1 + \pi}{(-\pi)^5\cos(-\pi)} = \frac{1 + \pi}{\pi^5} .
+> \operatorname{Res}_{z=\pi} f = \frac{1 - \pi}{\pi^5\cos\pi} = \frac{\pi - 1}{\pi^5}, \qquad \operatorname{Res}_{z=-\pi} f = \frac{1 + \pi}{(-\pi)^5\cos(-\pi)} = \frac{1 + \pi}{\pi^5} .
 > $$
 >
 > **Variant.** For $f(z) = \dfrac{1 + z}{z^5\sin z}$ the same steps give the principal part $\frac{1}{z^6} + \frac{1}{z^5} + \frac16\big(\frac{1}{z^4} + \frac{1}{z^3}\big) + \frac{7}{360}\big(\frac{1}{z^2} + \frac1z\big)$, again a pole of order $6$ at $0$ and simple poles at $\pm\pi$, with residues $\frac{7}{360}$ at $0$, $-\frac{1 + \pi}{\pi^5}$ at $\pi$ and $\frac{1 - \pi}{\pi^5}$ at $-\pi$.

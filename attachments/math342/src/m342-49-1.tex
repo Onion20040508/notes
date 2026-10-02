@@ -1,0 +1,21 @@
+% Figure for Complex Variables §49.
+\begin{tikzpicture}[line cap=round, line join=round, scale=1.1,
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=2.2mm]}}}}]
+  \draw[thin, dashed] plot[smooth cycle, tension=0.8] coordinates {(-0.4,0.3) (1.2,-0.5) (3.2,-0.3) (5.4,0.2) (6.2,1.6) (5.2,3.0) (3.0,2.8) (1.6,3.2) (0.0,2.4)};
+  \node[font=\small] at (0.55,2.45) {$D$};
+  \coordinate (z0) at (0.5,0.6);
+  \coordinate (p1) at (2.0,0.4);
+  \coordinate (p2) at (2.9,1.9);
+  \coordinate (z) at (4.3,1.5);
+  \coordinate (zd) at (4.95,1.95);
+  \draw[figB, line width=1pt, mid=0.6] (z0) -- (p1);
+  \draw[figB, line width=1pt, mid=0.6] (p1) -- (p2);
+  \draw[figB, line width=1pt, mid=0.6] (p2) -- (z);
+  \draw[gray, thin, dashed] (z) circle (1.05);
+  \draw[figR, line width=1.1pt, mid=0.65] (z) -- (zd);
+  \fill (z0) circle (1.6pt) node[below left, font=\scriptsize] {$z_0$};
+  \fill (z) circle (1.6pt) node[below, font=\scriptsize] {$z$};
+  \fill[figR] (zd) circle (1.6pt) node[above right, font=\scriptsize, black] {$z + \Delta z$};
+  \node[font=\scriptsize, gray] at (4.3,0.25) {$|s - z| < \rho$};
+  \node[font=\scriptsize, figB, align=center] at (1.15,1.45) {any contour\\ from $z_0$ to $z$};
+\end{tikzpicture}

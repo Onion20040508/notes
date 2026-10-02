@@ -45,7 +45,7 @@ The function $e^{1/z}$ of the next example illustrates an important result about
 
 *B&C omits the proof.*
 
-B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. III, Sec. 51, for a proof. The weaker Casorati–Weierstrass theorem, that the values come arbitrarily close to every complex number, is proved in [[§84 Behavior of Functions Near Isolated Singular Points|§84]] (Theorem 3).
+B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. III, Sec. 51, for a proof. The weaker Casorati–Weierstrass theorem, that the values come arbitrarily close to every complex number, is proved in [[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-3|Theorem §84.3]].
 
 > [!example] Example §79.2: The Essential Singular Point of e^(1/z)
 > From the Laurent series ([[§68 Examples (Proof of Laurent's Theorem)|§68]], Example 3)
@@ -77,13 +77,13 @@ B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. II
 > f(z) = \frac{1}{z^2(1 - z)} = \frac{1}{z^2}\big(1 + z + z^2 + z^3 + z^4 + \cdots\big) = \frac{1}{z^2} + \frac1z + 1 + z + z^2 + \cdots \qquad (0 < |z| < 1), \qquad (3)
 > $$
 >
-> $f$ has a pole of order $m = 2$ at the origin, and $\operatorname*{Res}_{z=0} f(z) = 1$. Moreover, since
+> $f$ has a pole of order $m = 2$ at the origin, and $\operatorname{Res}_{z=0} f(z) = 1$. Moreover, since
 >
 > $$
 > \lim_{z\to0}\frac{1}{f(z)} = \lim_{z\to0}\big[z^2(1 - z)\big] = 0 ,
 > $$
 >
-> it follows ([[§17 Limits Involving the Point at Infinity|§17]], Theorem) that
+> it follows ([[§17 Limits Involving the Point at Infinity#^thm-17-1|Theorem §17.1]]) that
 >
 > $$
 > \lim_{z\to0} f(z) = \infty . \qquad (4)
@@ -103,7 +103,7 @@ B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. II
 >
 > we find that $\lim_{z\to-1} f(z) = \infty$. (5)
 >
-> Such a limit always occurs at poles, as is shown in [[§84 Behavior of Functions Near Isolated Singular Points|§84]] (Theorem 4).
+> Such a limit always occurs at poles, as is shown in [[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-4|Theorem §84.4]].
 >
 > *B&C: Sec. 79, Examples 3 and 4*
 
@@ -177,7 +177,7 @@ B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. II
 >
 > **(a)** evaluate $\tan^{(5)}(0)$; **(b)** find the principal part at $z = 0$ of $f(z) = \dfrac{(1 + z)\tan z}{z^5}$; **(c)** find all the singularities of $f$ in the disk $D = \{|z| < 4\}$ and their type; **(d)** find the residue at each of them.
 >
-> **(a)** The coefficient of $z^5$ in a Taylor series is $\tan^{(5)}(0)/5!$ ([[§62 Taylor Series|§62]]), so $\tan^{(5)}(0) = 5!\cdot\frac{2}{15} = 16$.
+> **(a)** The coefficient of $z^5$ in a Taylor series is $\tan^{(5)}(0)/5!$ ([[§62 Taylor Series#^def-62-1|Definition §62.1]] and [[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]]), so $\tan^{(5)}(0) = 5!\cdot\frac{2}{15} = 16$.
 >
 > **(b)** Multiplying out,
 >
@@ -191,13 +191,13 @@ B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. II
 > \frac{1}{z^4} + \frac{1}{z^3} + \frac13\cdot\frac{1}{z^2} + \frac13\cdot\frac1z .
 > $$
 >
-> **(c)** $f(z) = \dfrac{(1 + z)\sin z}{z^5\cos z}$ is analytic except at $z = 0$ and at the zeros $z = \frac\pi2 + k\pi$ of $\cos z$ ([[§38 Zeros and Singularities of Trigonometric Functions|§38]]). In $|z| < 4$ these are $\pm\frac\pi2$ only, since $\frac{3\pi}{2} \approx 4.71 > 4$. By (b), $z = 0$ is a **pole of order $4$**. At $z = \pm\frac\pi2$ the numerator $(1 + z)\sin z/z^5$ is analytic and nonzero ($1 \pm \frac\pi2 \ne 0$, $\sin(\pm\frac\pi2) = \pm1$), while $\cos z$ has a simple zero ($\frac{d}{dz}\cos z = -\sin z = \mp1 \ne 0$); so $\pm\frac\pi2$ are **simple poles** ([[§83 Zeros and Poles|§83]], Theorem 1).
+> **(c)** $f(z) = \dfrac{(1 + z)\sin z}{z^5\cos z}$ is analytic except at $z = 0$ and at the zeros $z = \frac\pi2 + k\pi$ of $\cos z$ ([[§38 Zeros and Singularities of Trigonometric Functions|§38]]). In $|z| < 4$ these are $\pm\frac\pi2$ only, since $\frac{3\pi}{2} \approx 4.71 > 4$. By (b), $z = 0$ is a **pole of order $4$**. At $z = \pm\frac\pi2$ the numerator $(1 + z)\sin z/z^5$ is analytic and nonzero ($1 \pm \frac\pi2 \ne 0$, $\sin(\pm\frac\pi2) = \pm1$), while $\cos z$ has a simple zero ($\frac{d}{dz}\cos z = -\sin z = \mp1 \ne 0$); so $\pm\frac\pi2$ are **simple poles** ([[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]]).
 >
-> **(d)** At $0$ the residue is the coefficient of $1/z$ in (b): $\operatorname*{Res}_{z=0} f = \frac13$. At the simple poles, with $p(z) = (1 + z)\sin z/z^5$ and $q(z) = \cos z$, the residue is $p/q'$ ([[§83 Zeros and Poles|§83]], Theorem 2):
+> **(d)** At $0$ the residue is the coefficient of $1/z$ in (b): $\operatorname{Res}_{z=0} f = \frac13$. At the simple poles, with $p(z) = (1 + z)\sin z/z^5$ and $q(z) = \cos z$, the residue is $p/q'$ ([[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]]):
 >
 > $$
-> \operatorname*{Res}_{z=\pi/2} f = \frac{(1 + \frac\pi2)\cdot 1/(\frac\pi2)^5}{-\sin\frac\pi2} = -\frac{1 + \frac\pi2}{(\frac\pi2)^5} = -\frac{16(\pi + 2)}{\pi^5}, \qquad
-> \operatorname*{Res}_{z=-\pi/2} f = \frac{(1 - \frac\pi2)(-1)/(-\frac\pi2)^5}{-\sin(-\frac\pi2)} = \frac{1 - \frac\pi2}{(\frac\pi2)^5} = \frac{16(2 - \pi)}{\pi^5} .
+> \operatorname{Res}_{z=\pi/2} f = \frac{(1 + \frac\pi2)\cdot 1/(\frac\pi2)^5}{-\sin\frac\pi2} = -\frac{1 + \frac\pi2}{(\frac\pi2)^5} = -\frac{16(\pi + 2)}{\pi^5}, \qquad
+> \operatorname{Res}_{z=-\pi/2} f = \frac{(1 - \frac\pi2)(-1)/(-\frac\pi2)^5}{-\sin(-\frac\pi2)} = \frac{1 - \frac\pi2}{(\frac\pi2)^5} = \frac{16(2 - \pi)}{\pi^5} .
 > $$
 >
 > *Source: 342 practice final (Spring 2005), Q1*

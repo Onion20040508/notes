@@ -133,7 +133,7 @@ But a combination of *two* different antiderivatives can be used to evaluate the
 
 ^ex-48-3
 
-> [!example] Example §48.4: A Branch of z^{1/2}, Replaced by Branches That Agree with It on the Contour
+> [!example] Example §48.4: A Branch of z^(1/2), Replaced by Branches That Agree with It on the Contour
 > Let the integrand be the branch
 >
 > $$

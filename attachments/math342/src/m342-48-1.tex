@@ -1,0 +1,40 @@
+% Figure for Complex Variables §48.
+\begin{tikzpicture}[line cap=round, line join=round,
+    mid/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=2.2mm]}}}}]
+  \begin{scope}[scale=1.35]
+    \draw[->, thin] (-1.85,0) -- (1.9,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, thin] (0,-1.45) -- (0,1.55) node[above, font=\scriptsize] {$y$};
+    \draw[figB, dashed, line width=1.1pt] (0,0) -- (-1.75,0);
+    \draw[figR, dashed, line width=1.1pt] (0,0) -- (1.8,0);
+    \draw[figB, line width=1pt, mid=0.3] (0,-1) arc (-90:90:1);
+    \draw[figR, line width=1pt, mid=0.3] (0,1) arc (90:270:1);
+    \fill (0,1) circle (1.3pt); \fill (0,-1) circle (1.3pt);
+    \draw[fill=white] (0,0) circle (1.6pt);
+    \node[font=\scriptsize, above right] at (0,1) {$i$};
+    \node[font=\scriptsize, below right] at (0,-1) {$-i$};
+    \node[font=\scriptsize, figB] at (0.95,0.92) {$C_1$};
+    \node[font=\scriptsize, figR] at (-0.95,0.92) {$C_2$};
+    \node[font=\scriptsize, figB, align=center] at (-1.3,-0.38) {cut of\\ $\operatorname{Log} z$};
+    \node[font=\scriptsize, figR, align=center] at (1.35,-0.38) {cut of\\ $\log z$};
+    \node[font=\small] at (0,-1.85) {Example §48.3};
+  \end{scope}
+  \begin{scope}[shift={(7.6,0.1)}, scale=0.62]
+    \draw[->, thin] (-4.1,0) -- (4.8,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, thin] (0,-3.4) -- (0,3.5) node[above, font=\scriptsize] {$y$};
+    \draw[gray, dotted, line width=1.1pt] (0,0) -- (4.5,0);
+    \draw[figB, dashed, line width=1.1pt] (0,0) -- (0,-3.2);
+    \draw[figR, dashed, line width=1.1pt] (0,0) -- (0,3.2);
+    \draw[figB, line width=1pt, mid=0.5] (-3,0) .. controls (-2.6,2.2) and (-0.8,1.2) .. (0.4,1.9) .. controls (1.6,2.6) and (3.1,2.2) .. (3,0);
+    \draw[figR, line width=1pt, mid=0.55] (-3,0) .. controls (-2.4,-1.6) and (-1.2,-2.6) .. (0.6,-2.2) .. controls (2.2,-1.8) and (2.8,-1.2) .. (3,0);
+    \fill (-3,0) circle (2pt); \fill (3,0) circle (2pt);
+    \draw[fill=white] (0,0) circle (2.2pt);
+    \node[font=\scriptsize, above left] at (-3,0) {$-3$};
+    \node[font=\scriptsize, above right] at (3,0) {$3$};
+    \node[font=\scriptsize, figB] at (-2.0,2.05) {$C_1$};
+    \node[font=\scriptsize, figR] at (-2.3,-1.85) {$C_2$};
+    \node[font=\scriptsize, figR, anchor=west] at (0.15,3.1) {cut of $f_2$};
+    \node[font=\scriptsize, figB, anchor=west] at (0.15,-3.1) {cut of $f_1$};
+    \node[font=\scriptsize, gray, anchor=north] at (4.0,-0.1) {cut of (2)};
+    \node[font=\small] at (0.3,-4.25) {Example §48.4};
+  \end{scope}
+\end{tikzpicture}

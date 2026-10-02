@@ -105,7 +105,7 @@ B&C states that the integrals in (2) exist when $u$ and $v$ are piecewise contin
 
 ## Examples
 
-> [!example] Example §42.1: The Integral of e^{it} over [0, π/4], Two Ways
+> [!example] Example §42.1: The Integral of eⁱᵗ over [0, π/4], Two Ways
 > **By definition (2).**
 >
 > $$
@@ -174,7 +174,7 @@ B&C states that the integrals in (2) exist when $u$ and $v$ are piecewise contin
 
 ^ex-42-3
 
-> [!example] Example §42.4: Orthogonality of the Exponentials e^{inθ}
+> [!example] Example §42.4: Orthogonality of the Exponentials e^(inθ)
 > Show that if $m$ and $n$ are integers,
 >
 > $$

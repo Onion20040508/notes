@@ -54,13 +54,13 @@ For example, the annulus between two concentric circles, and the domain inside a
 
 ^pf-53-1
 
-*Uses:* [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]], [[§44 Contour Integrals|§44]] (integrals over sums of paths and reversed paths)
+*Uses:* [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]], [[§44 Contour Integrals#^thm-44-2|§44.2]]
 
 ![[m342-53-1.svg]]
 *The proof for $n = 2$. The cuts $L_1$ (from $C$ to $C_1$), $L_2$ (from $C_1$ to $C_2$) and $L_3$ (from $C_2$ to $C$) split the domain into an upper piece bounded by $\Gamma_1$ and a lower piece bounded by $\Gamma_2$. The upper edges of the cuts (arrows to the right) belong to $\Gamma_1$, the lower edges (arrows to the left) to $\Gamma_2$; together they cancel. What remains is $C$ counterclockwise and $C_1$, $C_2$ clockwise, each with the domain on its left.*
 
 > [!remark]- Connections
-> - The same cutting argument proves Green's theorem for regions with holes, [[§110 Green's Theorem#^thm-110-4|Calc Thm. §110.4]]: the outer boundary is counterclockwise and the inner boundaries clockwise, so that the region is always on the left. Applied with the Cauchy–Riemann equations, as in [[§50 Cauchy–Goursat Theorem|§50]], that version gives Theorem §53.1 for functions with continuous $f'$.
+> - The same cutting argument proves Green's theorem for regions with holes, [[§110 Green's Theorem#^thm-110-4|Calc Thm. §110.4]]: the outer boundary is counterclockwise and the inner boundaries clockwise, so that the region is always on the left. Applied with the Cauchy–Riemann equations, as in the proof of [[§50 Cauchy–Goursat Theorem#^thm-50-2|Theorem §50.2]], that version gives Theorem §53.1 for functions with continuous $f'$.
 
 > [!theorem] Corollary §53.2: Principle of Deformation of Paths
 > Let $C_1$ and $C_2$ denote positively oriented simple closed contours, where $C_1$ is interior to $C_2$. If a function $f$ is analytic in the closed region consisting of those contours and all points between them, then
@@ -84,14 +84,14 @@ For example, the annulus between two concentric circles, and the domain inside a
 
 ^pf-53-2
 
-*Uses:* [[§53 Multiply Connected Domains#^thm-53-1|§53.1]], [[§44 Contour Integrals|§44]] (reversing a path)
+*Uses:* [[§53 Multiply Connected Domains#^thm-53-1|§53.1]], [[§44 Contour Integrals#^thm-44-2|§44.2]]
 
 The name comes from the picture: if $C_1$ is continuously deformed into $C_2$, always passing through points at which $f$ is analytic, then the value of the integral of $f$ over $C_1$ never changes.
 
 > [!remark] Remark: Method — Deforming a Contour
 > To evaluate $\int_C f(z)\,dz$ around a positively oriented simple closed contour $C$:
 > 1. **Locate the singular points** of $f$ (where it fails to be analytic) inside $C$. None: the integral is $0$ ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]]).
-> 2. **One singular point $z_0$:** replace $C$ by a positively oriented circle $C_0$ about $z_0$, small enough to lie inside $C$ (Corollary §53.2). The circle can be parametrized, and $\int_{C_0}(z - z_0)^{n-1}\,dz$ is $2\pi i$ for $n = 0$ and $0$ for $n = \pm1, \pm2, \ldots$ ([[§46 Examples Involving Branch Cuts|§46]], Exercise 13).
+> 2. **One singular point $z_0$:** replace $C$ by a positively oriented circle $C_0$ about $z_0$, small enough to lie inside $C$ (Corollary §53.2). The circle can be parametrized, and $\int_{C_0}(z - z_0)^{n-1}\,dz$ is $2\pi i$ for $n = 0$ and $0$ for $n = \pm1, \pm2, \ldots$ ([[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]]).
 > 3. **Several singular points $z_1, \ldots, z_m$:** surround each by a small circle $C_k$, the circles disjoint and inside $C$. Theorem §53.1, with the $C_k$ reversed to the positive sense, gives $\int_C f(z)\,dz = \sum_k\int_{C_k} f(z)\,dz$, each circle taken counterclockwise.
 > 4. **Evaluate the small integrals,** by parametrization or, more often, by the Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|§54.1]]) and its extension ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|§56.1]]).
 >
@@ -106,7 +106,7 @@ The name comes from the picture: if $C_1$ is continuously deformed into $C_2$, a
 > \int_C \frac{dz}{z} = 2\pi i .
 > $$
 >
-> Construct a positively oriented circle $C_0$ with center at the origin and radius so small that $C_0$ lies entirely inside $C$. By [[§46 Examples Involving Branch Cuts|§46]], Exercise 13 (or directly: with $z = \rho e^{i\theta}$, $\int_{C_0}dz/z = \int_{-\pi}^{\pi} i\,d\theta$),
+> Construct a positively oriented circle $C_0$ with center at the origin and radius so small that $C_0$ lies entirely inside $C$. By [[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]] (or directly: with $z = \rho e^{i\theta}$, $\int_{C_0}dz/z = \int_{-\pi}^{\pi} i\,d\theta$),
 >
 > $$
 > \int_{C_0}\frac{dz}{z} = 2\pi i ,
@@ -150,7 +150,7 @@ The name comes from the picture: if $C_1$ is continuously deformed into $C_2$, a
 >
 > **The comparison circle.** The point $z_0 = 2 + i$ lies inside the rectangle, at distance $1$ from the sides $y = 0$, $y = 2$ and $x = 3$, and $2$ from $x = 0$. Let $C_0$ be the positively oriented circle $|z - 2 - i| = \frac12$; since $\frac12 < 1$, it lies entirely inside $C$. (A circle of radius $1$ would touch three sides of the rectangle, so it would not be interior to $C$ and the corollary would not apply.)
 >
-> **Deformation.** For $n \ge 1$, $(z - 2 - i)^{n-1}$ is a polynomial; for $n \le 0$ it is $1/(z - 2 - i)^{1-n}$, analytic except at $z_0$. In either case it is analytic in the closed region between $C_0$ and $C$, so by Corollary §53.2 and [[§46 Examples Involving Branch Cuts|§46]], Exercise 13 (with $R = \frac12$),
+> **Deformation.** For $n \ge 1$, $(z - 2 - i)^{n-1}$ is a polynomial; for $n \le 0$ it is $1/(z - 2 - i)^{1-n}$, analytic except at $z_0$. In either case it is analytic in the closed region between $C_0$ and $C$, so by Corollary §53.2 and [[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]] (with $R = \frac12$),
 >
 > $$
 > \int_C (z - 2 - i)^{n-1}\,dz = \int_{C_0}(z - 2 - i)^{n-1}\,dz = \begin{cases} 0, & n = \pm1, \pm2, \ldots, \\ 2\pi i, & n = 0 . \end{cases}

@@ -76,8 +76,6 @@ On $C_R$ and $C_\rho$ the integrals of $f$ are taken with $0 < \theta < 2\pi$ (t
 >
 > **(c) Adding.** The three branches $f$, $f_1$, $f_2$ use the same value of $\arg z$ wherever their ranges overlap: on the closed region of (a) away from the positive real axis, $0 < \arg z \le \theta_0$, so $f_1 = f$ there; on the region of (b) away from the positive real axis, $\theta_0 \le \arg z < 2\pi$, so $f_2 = f$. In particular $f_1 = f_2 = f$ on the ray $L$, so the two integrals over $L$ cancel when the equations are added; $\Gamma_R$ and $\gamma_R$ together make up $C_R$, and $\Gamma_\rho$ and $\gamma_\rho$ make up $C_\rho$, on which $f_1$ or $f_2$ may be replaced by $f$; and $f_1 = f$ near $-1$, so their residues there agree. Adding the two equations gives (3).
 
-^prop-91-1-pf
-
 ^pf-91-1
 
 *Uses:* [[§76 Cauchy's Residue Theorem|§76]] (Theorem), [[§50 Cauchy–Goursat Theorem|§50]] (Theorem), [[§33 Branches and Derivatives of Logarithms|§33]], [[§35 The Power Function|§35]]
@@ -88,7 +86,7 @@ On $C_R$ and $C_\rho$ the integrals of $f$ are taken with $0 < \theta < 2\pi$ (t
 > [!remark] Remark: Method — Integration Along a Branch Cut
 > To evaluate $\int_0^\infty x^{-a}R(x)\,dx$ (or with $x^{a}$, $\sqrt x$, $\sqrt[3]x$), $R$ rational with no poles on $[0, \infty)$:
 > 1. **Take the branch with $0 < \arg z < 2\pi$**, cut along the positive real axis, and the keyhole contour.
-> 2. **Edges:** the upper edge gives $\int_\rho^R r^{-a}R(r)\,dr$, the lower edge $-e^{-i2a\pi}\int_\rho^R r^{-a}R(r)\,dr$; together $(1 - e^{-i2a\pi})\int_\rho^R$. (Proposition §91.1, whose proof works for any such $R$.)
+> 2. **Edges:** the upper edge gives $\int_\rho^R r^{-a}R(r)\,dr$, the lower edge $-e^{-i2a\pi}\int_\rho^R r^{-a}R(r)\,dr$; together $(1 - e^{-i2a\pi})\int_\rho^R$. (Proposition §91.1; its proof works for any such $R$, with the residue theorem on both halves of the annulus when poles lie in both.)
 > 3. **Residues** at all poles of $R$ in the plane (not only the upper half), with $\arg$ taken in $(0, 2\pi)$: for instance $(-1)^{-a} = e^{-ia\pi}$ and $i^{-a} = e^{-ia\pi/2}$, but $(-i)^{-a} = e^{-i3a\pi/2}$.
 > 4. **Circles:** $|z^{-a}| = |z|^{-a}$; $\int_{C_\rho} \to 0$ and $\int_{C_R} \to 0$ under the convergence conditions at $0$ and $\infty$.
 > 5. **Divide** by $1 - e^{-i2a\pi}$.
@@ -149,7 +147,7 @@ On $C_R$ and $C_\rho$ the integrals of $f$ are taken with $0 < \theta < 2\pi$ (t
 >
 > around the keyhole contour.
 >
-> **Edges.** By Proposition §91.1 (its proof applies verbatim with $z^2 + 1$ in place of $z + 1$; the splitting ray may be taken with $3\pi/2 < \theta_0 < 2\pi$, so that $\pm i$ both lie in the left part), the edges give $\big(1 - e^{-i\pi}\big)\int_\rho^R\frac{dr}{\sqrt r\,(r^2 + 1)} = 2\int_\rho^R\frac{dr}{\sqrt r\,(r^2 + 1)}$.
+> **Edges.** By the argument of Proposition §91.1 with $z^2 + 1$ in place of $z + 1$ (now the pole $-i$ lies in the right half, where the residue theorem replaces the Cauchy–Goursat theorem), the keyhole identity holds with the sum of the residues at $\pm i$, and the edges give $\big(1 - e^{-i\pi}\big)\int_\rho^R\frac{dr}{\sqrt r\,(r^2 + 1)} = 2\int_\rho^R\frac{dr}{\sqrt r\,(r^2 + 1)}$.
 >
 > **Residues.** Both $i = e^{i\pi/2}$ and $-i = e^{i3\pi/2}$ lie inside, and with arguments in $(0, 2\pi)$, $i^{-1/2} = e^{-i\pi/4}$ and $(-i)^{-1/2} = e^{-i3\pi/4}$:
 >
@@ -209,7 +207,7 @@ On $C_R$ and $C_\rho$ the integrals of $f$ are taken with $0 < \theta < 2\pi$ (t
 > B(p, 1 - p) = \int_0^1 t^{p-1}(1 - t)^{-p}\,dt = \int_0^\infty (x + 1)^{1-p}\Big(\frac{x}{x + 1}\Big)^{-p}\frac{dx}{(x + 1)^2} = \int_0^\infty\frac{x^{-p}}{x + 1}\,dx ,
 > $$
 >
-> since the powers of $x + 1$ combine to $(x + 1)^{1 - p + p - 2} = (x + 1)^{-1}$. By (5) with $a = p$ this is $\pi/\sin(p\pi)$. In terms of the gamma function, $B(p, 1 - p) = \Gamma(p)\Gamma(1 - p)$, so this is Euler's reflection formula $\Gamma(p)\Gamma(1 - p) = \pi/\sin p\pi$ (B&C's reason for calling (1) important in the study of the gamma function); at $p = \frac12$ it gives $\Gamma(\frac12) = \sqrt\pi$.
+> since the powers of $x + 1$ combine to $(x + 1)^{1 - p + p - 2} = (x + 1)^{-1}$. By (5) with $a = p$ this is $\pi/\sin(p\pi)$. In terms of the gamma function, $B(p, q) = \Gamma(p)\Gamma(q)/\Gamma(p + q)$ (a standard identity, not proved in the vault) gives $B(p, 1 - p) = \Gamma(p)\Gamma(1 - p)$, so this is Euler's reflection formula $\Gamma(p)\Gamma(1 - p) = \pi/\sin p\pi$ (B&C's reason for calling (1) important in the study of the gamma function); at $p = \frac12$ it gives $\Gamma(\frac12) = \sqrt\pi$.
 >
 > *B&C: Sec. 91, Exercise 5*
 
