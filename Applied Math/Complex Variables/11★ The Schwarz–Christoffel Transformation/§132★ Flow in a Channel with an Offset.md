@@ -39,7 +39,7 @@ A channel whose breadth changes abruptly from $\pi$ to $h\pi$ is a degenerate qu
 > F = V_0\operatorname{Log}z = V_0\ln r + iV_0\theta \qquad (3)
 > $$
 >
-> is the potential for the flow in the upper half of the $z$ plane, with the required source at the origin: its stream function $\psi = V_0\theta$ is constant on the axis and increases from $0$ to $V_0\pi = Q$ over each semicircle $z = Re^{i\theta}$, $0 \le \theta \le \pi$ (compare (5) of [[§125★ The Stream Function|§125★]]).
+> is the potential for the flow in the upper half of the $z$ plane, with the required source at the origin: its stream function $\psi = V_0\theta$ is constant on the axis and increases from $0$ to $V_0\pi = Q$ over each semicircle $z = Re^{i\theta}$, $0 \le \theta \le \pi$ (compare (5) of [[§125★ The Stream Function#^prop-125-2|Proposition §125.2]]).
 >
 > **The velocity.** The conjugate of the velocity in the $w$ plane is, by the chain rule,
 >

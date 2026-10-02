@@ -43,7 +43,7 @@ As in [[§134★ Poisson Integral Formula|§134★]], write $s = r_0\exp(i\phi)$
 ^lem-140-1
 
 > [!proof]+ Proof
-> **Harmonic.** $Q$ is the real component of $-2r_0\log(z - s)$, where the branch cut of $\log(z - s)$ is an outward ray from the point $s$; that branch is analytic inside the circle, and the real part of an analytic function is harmonic ([[§27★ Harmonic Functions|§27★]]).
+> **Harmonic.** $Q$ is the real component of $-2r_0\log(z - s)$, where the branch cut of $\log(z - s)$ is an outward ray from the point $s$; that branch is analytic inside the circle, and the real part of an analytic function is harmonic ([[§27★ Harmonic Functions#^thm-27-1|Theorem §27.1]]).
 >
 > **(2).** Differentiating (1) with respect to $r$,
 >
@@ -55,7 +55,7 @@ As in [[§134★ Poisson Integral Formula|§134★]], write $s = r_0\exp(i\phi)$
 
 ^pf-140-1
 
-*Uses:* [[§140★ Neumann Problems#^def-140-1|Def. §140.1]], [[§134★ Poisson Integral Formula#^def-134-2|Def. §134.2]], [[§27★ Harmonic Functions|§27★]]
+*Uses:* [[§140★ Neumann Problems#^def-140-1|Def. §140.1]], [[§134★ Poisson Integral Formula#^def-134-2|Def. §134.2]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]]
 
 These observations suggest that $Q$ may be used to write an integral representation of a harmonic function $U$ whose normal derivative $U_r$ on the circle $r = r_0$ takes prescribed values $G(\theta)$.
 
@@ -105,9 +105,9 @@ These observations suggest that $Q$ may be used to write an integral representat
 
 ^pf-140-2
 
-*Uses:* [[§140★ Neumann Problems#^lem-140-1|§140.1]], [[§135★ Dirichlet Problem for a Disk#^thm-135-1|§135.1]], [[§27★ Harmonic Functions|§27★]]
+*Uses:* [[§140★ Neumann Problems#^lem-140-1|§140.1]], [[§135★ Dirichlet Problem for a Disk#^thm-135-1|§135.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]]
 
-The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ with insulated faces. Then (5) says that the flux of heat into the disk through its edge is proportional to $G(\theta)$ ([[§118★ Steady Temperatures|§118★]]), and (4) is the natural physical requirement that the total rate of flow of heat into the disk be zero, since the temperatures do not vary with time.
+The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ with insulated faces. Then (5) says that the flux of heat into the disk through its edge is proportional to $G(\theta)$ ([[§118★ Steady Temperatures#^def-118-1|Definition §118.1]]), and (4) is the natural physical requirement that the total rate of flow of heat into the disk be zero, since the temperatures do not vary with time.
 
 > [!remark] Remark: Why the Data Must Have Mean Zero
 > If (4) fails, the integral (3) still defines a harmonic function, but by (2) its normal derivative is
@@ -116,7 +116,7 @@ The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ 
 > U_r = \frac{r_0}{r}\Big[\frac{1}{2\pi}\int_0^{2\pi}P\,G\,d\phi - \overline G\Big] \longrightarrow G(\theta) - \overline G, \qquad \overline G = \frac{1}{2\pi}\int_0^{2\pi}G(\phi)\,d\phi :
 > $$
 >
-> it solves the Neumann problem for the data $G - \overline G$, not $G$. And no harmonic function can do better. If $U$ is harmonic in a neighborhood of the closed disk $r \le \rho$, then $\frac{1}{2\pi}\int_0^{2\pi}U(\rho', \theta)\,d\theta = U(0)$ for every $\rho' \le \rho$ (the case $r = 0$ of [[§134★ Poisson Integral Formula#^thm-134-1|Theorem §134.1]]), so its derivative with respect to $\rho'$, $\frac{1}{2\pi}\int_0^{2\pi}U_r(\rho', \theta)\,d\theta$ is zero: the net flux through every circle is zero. The constant $U_0$ is free, as it must be, since adding a constant to a solution of a Neumann problem gives another solution.
+> it solves the Neumann problem for the data $G - \overline G$, not $G$. And no harmonic function can do better. If $U$ is harmonic in a neighborhood of the closed disk $r \le \rho$, then $\frac{1}{2\pi}\int_0^{2\pi}U(\rho', \theta)\,d\theta = U(0)$ for every $\rho' \le \rho$ (the case $r = 0$ of [[§134★ Poisson Integral Formula#^thm-134-1|Theorem §134.1]]), so its derivative with respect to $\rho'$, $\frac{1}{2\pi}\int_0^{2\pi}U_r(\rho', \theta)\,d\theta$ is zero: the net flux through every circle is zero. So data with nonzero mean are not the normal derivative of any function harmonic up to the circle (nor the limit (5) of $U_r$, when $U_r$ stays bounded near the circle, by letting $\rho' \to r_0$). The constant $U_0$ is free, as it must be, since adding a constant to a solution of a Neumann problem gives another solution.
 
 ^rem-140-1
 
@@ -212,7 +212,7 @@ The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ 
 
 ^pf-140-4
 
-*Uses:* [[§139★ Dirichlet Problem for a Half Plane#^def-139-1|Def. §139.1]], [[§139★ Dirichlet Problem for a Half Plane#^thm-139-1|§139.1]], [[§27★ Harmonic Functions|§27★]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]] (dominated convergence)
+*Uses:* [[§139★ Dirichlet Problem for a Half Plane#^def-139-1|Def. §139.1]], [[§139★ Dirichlet Problem for a Half Plane#^thm-139-1|§139.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]] (dominated convergence)
 
 > [!theorem] Corollary §140.5: Neumann Problem for a Quadrant
 > When $G$ is an odd function, expression (10) with $U_0 = 0$ can be written
@@ -244,7 +244,7 @@ The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ 
 > 1. **Check the data.** On a closed curve (circle) the prescribed normal derivative must have mean zero, (4); otherwise there is no solution.
 > 2. **Disk.** $U = \frac{1}{2\pi}\int Q\,G\,d\phi + U_0$, (6); the constant $U_0$ is $U$ at the center and is not determined by the data. For trigonometric data expand $\ln(1 - 2\rho\cos\psi + \rho^2) = -2\sum_{n\ge1}\rho^n\cos n\psi/n$ ([[§140★ Neumann Problems#^ex-140-1|Example §140.1]]).
 > 3. **Exterior, half plane, quadrant.** Use (7), (10) or (13); for a quadrant with zero values on one edge use the odd extension, (13); for a semicircle, extend $G$ oddly or evenly across the diameter ([[§140★ Neumann Problems#^ex-140-3|Example §140.3]]).
-> 4. **Fluxes.** In heat problems the normal derivative is $-\Phi/K$ by Fourier's law ([[§118★ Steady Temperatures|§118★]]); to find the flux through another edge, differentiate the integral under the integral sign.
+> 4. **Fluxes.** In heat problems the normal derivative is $-\Phi/K$ by Fourier's law ([[§118★ Steady Temperatures#^def-118-1|Definition §118.1]]); to find the flux through another edge, differentiate the integral under the integral sign.
 
 ^rem-140-2
 
@@ -284,7 +284,7 @@ The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ 
 > \frac A\pi\ln\Big(1 + \frac{1}{y^2}\Big) .
 > $$
 >
-> **The data.** By Fourier's law $\Phi = -K\,dT/dN$ ([[§118★ Steady Temperatures|§118★]]), with $N$ pointing into the plate ($+y$) on the edge $y = 0$: $-KT_y = A$ on $0 < x < 1$ and $T_y = 0$ for $x > 1$. So $G(x) = -A/K$ on $0 < x < 1$ and $0$ for $x > 1$; extend it oddly. It has compact support, so (9) holds, and (13) gives
+> **The data.** By Fourier's law $\Phi = -K\,dT/dN$ ([[§118★ Steady Temperatures#^def-118-1|Definition §118.1]]), with $N$ pointing into the plate ($+y$) on the edge $y = 0$: $-KT_y = A$ on $0 < x < 1$ and $T_y = 0$ for $x > 1$. So $G(x) = -A/K$ on $0 < x < 1$ and $0$ for $x > 1$; extend it oddly. It has compact support, so (9) holds, and (13) gives
 >
 > $$
 > T(x, y) = -\frac{A}{2\pi K}\int_0^1\ln\Big[\frac{(t - x)^2 + y^2}{(t + x)^2 + y^2}\Big]dt ,

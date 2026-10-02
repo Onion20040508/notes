@@ -128,7 +128,7 @@ Symmetry and inversion extend the disk formula to three more regions. If the bou
 ^thm-137-4
 
 > [!proof]+ Proof
-> **Harmonic.** The analytic function $z = r_0^2/Z$ maps the circle $|Z| = r_0$ onto the circle $|z| = r_0$ and the exterior of the first onto the interior of the second, punctured at $0$ ([[§97★ The Transformation w = 1∕z|§97★]]). With $z = re^{i\theta}$, $r = r_0^2/R$ and $\theta = 2\pi - \psi$. The harmonic function $U(r, \theta)$ of (1), §135, is transformed into a function harmonic in $R > r_0$ ([[§116★ Transformations of Harmonic Functions|§116★]]):
+> **Harmonic.** The analytic function $z = r_0^2/Z$ maps the circle $|Z| = r_0$ onto the circle $|z| = r_0$ and the exterior of the first onto the interior of the second, punctured at $0$ ([[§97★ The Transformation w = 1∕z#^prop-97-1|Proposition §97.1]]). With $z = re^{i\theta}$, $r = r_0^2/R$ and $\theta = 2\pi - \psi$. The harmonic function $U(r, \theta)$ of (1), §135, is transformed into a function harmonic in $R > r_0$ ([[§116★ Transformations of Harmonic Functions#^thm-116-1|Theorem §116.1]]):
 >
 > $$
 > U\Big(\frac{r_0^2}{R}, 2\pi - \psi\Big) = -\frac{1}{2\pi}\int_0^{2\pi}\frac{r_0^2 - R^2}{r_0^2 - 2r_0R\cos(\phi + \psi) + R^2}F(\phi)\,d\phi .
@@ -156,7 +156,7 @@ Symmetry and inversion extend the disk formula to three more regions. If the bou
 
 ^pf-137-4
 
-*Uses:* [[§135★ Dirichlet Problem for a Disk#^thm-135-1|§135.1]], [[§134★ Poisson Integral Formula#^prop-134-2|§134.2]], [[§137★ Related Boundary Value Problems#^lem-137-3|§137.3]], [[§97★ The Transformation w = 1∕z|§97★]], [[§116★ Transformations of Harmonic Functions|§116★]]
+*Uses:* [[§135★ Dirichlet Problem for a Disk#^thm-135-1|§135.1]], [[§134★ Poisson Integral Formula#^prop-134-2|§134.2]], [[§137★ Related Boundary Value Problems#^lem-137-3|§137.3]], [[§97★ The Transformation w = 1∕z#^prop-97-1|§97.1]], [[§116★ Transformations of Harmonic Functions#^thm-116-1|§116.1]]
 
 ## Examples
 

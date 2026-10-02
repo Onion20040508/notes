@@ -16,7 +16,7 @@ Chapter 12 develops integral formulas that solve boundary value problems for har
 
 ## The Formula
 
-Let $C_0$ be the positively oriented circle $|z| = r_0$, and suppose that $f$ is analytic inside and on $C_0$. The Cauchy integral formula ([[§54 Cauchy Integral Formula|§54]])
+Let $C_0$ be the positively oriented circle $|z| = r_0$, and suppose that $f$ is analytic inside and on $C_0$. The Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]])
 
 $$
 f(z) = \frac{1}{2\pi i}\int_{C_0}\frac{f(s)\,ds}{s - z} \qquad (1)
@@ -31,7 +31,7 @@ expresses the value of $f$ at any point $z$ interior to $C_0$ in terms of its va
 > z_1 = \frac{r_0^2}{r}e^{i\theta} = \frac{r_0^2}{\overline z} .
 > $$
 >
-> If $0 < r < r_0$, then $|z_1| = \frac{r_0}{r}r_0 > r_0$: the inverse of an interior point is exterior. (For $r_0 = 1$, inverse points were used in [[§97★ The Transformation w = 1∕z|§97★]].)
+> If $0 < r < r_0$, then $|z_1| = \frac{r_0}{r}r_0 > r_0$: the inverse of an interior point is exterior. (For $r_0 = 1$, inverse points were used in [[§97★ The Transformation w = 1∕z#^def-97-1|Definition §97.1]].)
 >
 > *B&C: Sec. 134 (text)*
 
@@ -63,7 +63,7 @@ expresses the value of $f$ at any point $z$ interior to $C_0$ in terms of its va
 ^thm-134-1
 
 > [!proof]+ Proof
-> **$0 < r < r_0$.** Let $z_1 = r_0^2/\overline z$ be the inverse point (Definition §134.1). It is exterior to $C_0$, so $f(s)/(s - z_1)$ is analytic inside and on $C_0$, and by the Cauchy–Goursat theorem ([[§50 Cauchy–Goursat Theorem|§50]])
+> **$0 < r < r_0$.** Let $z_1 = r_0^2/\overline z$ be the inverse point (Definition §134.1). It is exterior to $C_0$, so $f(s)/(s - z_1)$ is analytic inside and on $C_0$, and by the Cauchy–Goursat theorem ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]])
 >
 > $$
 > \int_{C_0}\frac{f(s)\,ds}{s - z_1} = 0 .
@@ -101,13 +101,13 @@ expresses the value of $f$ at any point $z$ interior to $C_0$ in terms of its va
 
 ^pf-134-1
 
-*Uses:* [[§54 Cauchy Integral Formula|§54]] (Cauchy integral formula), [[§50 Cauchy–Goursat Theorem|§50]] (Cauchy–Goursat), [[§134★ Poisson Integral Formula#^def-134-1|Def. §134.1]]
+*Uses:* [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]] (Cauchy integral formula), [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]] (Cauchy–Goursat), [[§134★ Poisson Integral Formula#^def-134-1|Def. §134.1]]
 
 > [!remark]- Connections
 > - The same formula is [[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]], proved there from the other end: solve Dirichlet's problem in the disk by separation of variables ([[§39 Potential in a Disk#^thm-39-2|341 Thm. §39.2]]), substitute the Fourier coefficients into the series, and sum the kernel $1 + 2\sum\rho^n\cos n\psi$ as a geometric series. Here the kernel comes from the Cauchy integral formula and the inverse point, with no series at all; [[§135★ Dirichlet Problem for a Disk#^prop-135-3|Proposition §135.3]] recovers the series form, closing the circle between the two proofs.
 > - The kernel is, up to the factor $\frac{1}{2\pi r_0}$, the normal derivative of the Green's function of the disk; the general representation of a harmonic function by its boundary values comes from Green's second identity with the fundamental solution $\ln r$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|452 Thm. §17.3]] and [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]].
 
-Formula (6) holds for every function $u$ harmonic in a domain containing the closed disk $|z| \le r_0$, not only for the real part of a given $f$: such a $u$ is harmonic in a slightly larger open disk, which is simply connected, so it has a harmonic conjugate $v$ there ([[§115★ Harmonic Conjugates|§115★]]), and $f = u + iv$ is analytic inside and on $C_0$.
+Formula (6) holds for every function $u$ harmonic in a domain containing the closed disk $|z| \le r_0$, not only for the real part of a given $f$: such a $u$ is harmonic in a slightly larger open disk, which is simply connected, so it has a harmonic conjugate $v$ there ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]), and $f = u + iv$ is analytic inside and on $C_0$.
 
 ## The Poisson Kernel
 
@@ -161,7 +161,7 @@ Formula (6) defines a linear integral transformation of $u(r_0, \phi)$ into $u(r
 > P = \operatorname{Re}\Big(\frac{s}{s - z} + \frac{\overline z}{\overline s - \overline z}\Big) = \operatorname{Re}\Big(\frac{s}{s - z} + \frac{z}{s - z}\Big) = \operatorname{Re}\frac{s + z}{s - z} .
 > $$
 >
-> **(c)** For fixed $s$, $(s + z)/(s - z)$ is an analytic function of $z$ in $|z| < r_0$, and the real part of an analytic function is harmonic ([[§27★ Harmonic Functions|§27★]]).
+> **(c)** For fixed $s$, $(s + z)/(s - z)$ is an analytic function of $z$ in $|z| < r_0$, and the real part of an analytic function is harmonic ([[§27★ Harmonic Functions#^thm-27-1|Theorem §27.1]]).
 >
 > **(d), (e)** Read off from (7): $\cos$ is even with period $2\pi$, and at $r = 0$ the fraction is $r_0^2/r_0^2$.
 >
@@ -169,7 +169,7 @@ Formula (6) defines a linear integral transformation of $u(r_0, \phi)$ into $u(r
 
 ^pf-134-2
 
-*Uses:* [[§134★ Poisson Integral Formula#^thm-134-1|§134.1]], [[§134★ Poisson Integral Formula#^def-134-2|Def. §134.2]], [[§27★ Harmonic Functions|§27★]]
+*Uses:* [[§134★ Poisson Integral Formula#^thm-134-1|§134.1]], [[§134★ Poisson Integral Formula#^def-134-2|Def. §134.2]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]]
 
 > [!remark]- Connections
 > - Properties (a), (e), (f) are [[§39 Potential in a Disk#^rem-39-2|341 Remark: The Poisson Kernel Is a Weight]]: the solution is a weighted average of the boundary values, which gives the maximum principle for the disk and, at $r = 0$, the mean value property [[§39 Potential in a Disk#^thm-39-4|341 Thm. §39.4]].
@@ -219,7 +219,7 @@ So far $f$ has been assumed analytic on $C_0$ as well as inside, so that $u$ is 
 > \int_0^{2\pi}\frac{d\phi}{r_0^2 - 2r_0r\cos\phi + r^2} = \frac{2\pi}{r_0^2 - r^2} .
 > $$
 >
-> Use the method of [[§92★ Definite Integrals Involving Sines and Cosines|§92★]]: put $z = e^{i\phi}$, $d\phi = dz/(iz)$, on the positively oriented unit circle $C$. The denominator factors as $r_0^2 - 2r_0r\cos\phi + r^2 = (r_0 - re^{i\phi})(r_0 - re^{-i\phi}) = (r_0 - rz)(r_0 - r/z)$, so
+> Use the method of [[§92★ Definite Integrals Involving Sines and Cosines#^prop-92-1|Proposition §92.1]]: put $z = e^{i\phi}$, $d\phi = dz/(iz)$, on the positively oriented unit circle $C$. The denominator factors as $r_0^2 - 2r_0r\cos\phi + r^2 = (r_0 - re^{i\phi})(r_0 - re^{-i\phi}) = (r_0 - rz)(r_0 - r/z)$, so
 >
 > $$
 > \int_0^{2\pi}\frac{d\phi}{r_0^2 - 2r_0r\cos\phi + r^2} = \int_C\frac{dz}{i(r_0 - rz)(r_0z - r)} .

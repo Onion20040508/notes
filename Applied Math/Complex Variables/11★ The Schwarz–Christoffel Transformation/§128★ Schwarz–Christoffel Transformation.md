@@ -35,7 +35,7 @@ This section turns the derivative of [[§127★ Mapping the Real Axis onto a Pol
 
 ^def-128-1
 
-More precisely, $f'$ is analytic in the domain $D$ obtained from the plane by removing the $n - 1$ closed rays $\{x_j - it : t \ge 0\}$, and $D \supseteq R$. The domain $D$ is simply connected ([[§52 Simply Connected Domains#^def-52-1|Definition §52.1]]): a simple closed contour in $D$ misses each removed ray, and a ray is connected and unbounded, so it lies entirely in the exterior of the contour; hence the contour encloses only points of $D$. So $f'$ has an antiderivative throughout $D$ ([[§52 Simply Connected Domains#^cor-52-2|Corollary §52.2]], [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]): if $z_0$ is a point of $R$, the function
+More precisely, $f'$ is analytic in the domain $D$ obtained from the plane by removing the $n - 1$ closed rays $\{x_j - it : t \ge 0\}$, and $D \supseteq R$. The domain $D$ is simply connected ([[§52 Simply Connected Domains#^def-52-1|Definition §52.1]]): a simple closed contour in $D$ misses each removed ray, and a ray is connected and unbounded, so it lies entirely in the unbounded exterior of the contour ([[§43 Contours#^thm-43-4|Theorem §43.4]], Jordan curve theorem); hence the contour encloses only points of $D$. So $f'$ has an antiderivative throughout $D$ ([[§52 Simply Connected Domains#^cor-52-2|Corollary §52.2]], [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]): if $z_0$ is a point of $R$, the function
 
 $$
 F(z) = \int_{z_0}^{z} f'(s)\,ds \qquad (3)
@@ -51,7 +51,7 @@ is single valued and analytic throughout $R$, the path being any contour from $z
 ^lem-128-1
 
 > [!proof]+ Proof
-> Take $j = 1$; the other points are treated in the same way. The factor $(z - x_1)^{-k_1}$ is the only factor in (1) that is not analytic at $x_1$. Let $\phi(z)$ denote the product of the remaining factors. Then $\phi$ is analytic at $x_1$ and is represented throughout an open disk $|z - x_1| < R_1$ by its Taylor series about $x_1$ ([[§62 Taylor Series|§62]], Taylor's theorem), so
+> Take $j = 1$; the other points are treated in the same way. The factor $(z - x_1)^{-k_1}$ is the only factor in (1) that is not analytic at $x_1$. Let $\phi(z)$ denote the product of the remaining factors. Then $\phi$ is analytic at $x_1$ and is represented throughout an open disk $|z - x_1| < R_1$ by its Taylor series about $x_1$ (Taylor's theorem, [[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]]), so
 >
 > $$
 > f'(z) = (z - x_1)^{-k_1}\phi(z) = (z - x_1)^{-k_1}\Big[\phi(x_1) + \frac{\phi'(x_1)}{1!}(z - x_1) + \frac{\phi''(x_1)}{2!}(z - x_1)^2 + \cdots\Big] ,
@@ -79,7 +79,7 @@ is single valued and analytic throughout $R$, the path being any contour from $z
 
 ^pf-128-1
 
-*Uses:* [[§128★ Schwarz–Christoffel Transformation#^def-128-1|Def. §128.1]], [[§62 Taylor Series|§62]] (Taylor's theorem), [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (ML-inequality), [[§48 Antiderivatives|§48]]
+*Uses:* [[§128★ Schwarz–Christoffel Transformation#^def-128-1|Def. §128.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (Taylor's theorem), [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49.1]]
 
 > [!theorem] Lemma §128.2: Order Property at Infinity
 > Let the $k_j$ satisfy conditions (5) of [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-3|Proposition §127.3]]. For a sufficiently large positive number $R$ there is a positive constant $M$ such that, if $\operatorname{Im} z \ge 0$,
@@ -145,7 +145,7 @@ is single valued and analytic throughout $R$, the path being any contour from $z
 
 ^pf-128-3
 
-*Uses:* [[§128★ Schwarz–Christoffel Transformation#^lem-128-2|§128.2]], [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (ML-inequality), [[§36 Improper Integrals#^thm-36-1|451 Thm. §36.1]] (convergence of improper integrals of nonnegative functions)
+*Uses:* [[§128★ Schwarz–Christoffel Transformation#^lem-128-2|§128.2]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§36 Improper Integrals#^thm-36-1|451 Thm. §36.1]] (convergence of improper integrals of nonnegative functions)
 
 ## The Transformation
 
@@ -171,13 +171,13 @@ Our mapping function, whose derivative is (1), can be written $f(z) = F(z) + B$,
 ^thm-128-4
 
 > [!proof]- Proof
-> **(a)** By Lemmas §128.1 and §128.3, $f = F + B$ is continuous on $y \ge 0$ and has the limit $W_n + B$ at infinity. Away from the $x_j$, $f$ is analytic and $f'(z) \ne 0$, since each factor of (1) is a nonzero exponential; so $f$ is conformal there ([[§112★ Preservation of Angles and Scale Factors|§112★]]).
+> **(a)** By Lemmas §128.1 and §128.3, $f = F + B$ is continuous on $y \ge 0$ and has the limit $W_n + B$ at infinity. Away from the $x_j$, $f$ is analytic and $f'(z) \ne 0$, since each factor of (1) is a nonzero exponential; so $f$ is conformal there ([[§112★ Preservation of Angles and Scale Factors#^def-112-2|Definition §112.2]]).
 >
 > **(b)** By [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-2|Proposition §127.2]], $\arg f'(x)$ is constant on each interval between consecutive points of $x_1, \ldots, x_{n-1}$ (and on $x < x_1$, $x > x_{n-1}$). By [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-1|Proposition §127.1]] each finite interval is mapped onto a segment, traced once in a fixed direction; for the two infinite intervals apply it on $[x_{n-1}, X]$ and $[-X, x_1]$ and let $X \to \infty$, using the continuity of $f$ at $\infty$. At $w_j$ the direction turns by $k_j\pi$. The path closes up at $w_n$ because $f(x)$ has the same limit $w_n$ as $x \to +\infty$ and as $x \to -\infty$ (Lemma §128.3); there the direction turns from $\arg A$ (on $x > x_{n-1}$) to $\arg A - (k_1 + \cdots + k_{n-1})\pi = \arg A + k_n\pi - 2\pi$ (on $x < x_1$), by (5) of §127, a turn by $k_n\pi$. So $P$ is a closed polygon with these exterior angles.
 >
 > **(c)** *The boundary.* Each side is traced once and the sides of a simple polygon meet only at consecutive vertices, so distinct points of the axis (or $\infty$) have distinct images on $P$. (B&C takes the positive orientation of $P$ from §127; it also comes out of the count below.)
 >
-> *The interior: counting solutions.* (B&C argues that the images of interior points lie to the left of the sides, since the angle at $x_0$ between the axis and a segment into the half plane is between $0$ and $\pi$ and is preserved; the one-to-one property is its Exercise 3, carried out here.) Let $w_0$ be a point not on $P$ and $d > 0$ its distance from $P$. Let $C$ be the contour consisting of the upper half of the circle $|z| = R$ and the segment $-R \le x \le R$ of the axis, except that a small segment about each $x_j$ is replaced by the upper half of the circle $|z - x_j| = \rho_j$ (figure below). $C$ is a positively oriented simple closed contour in the simply connected domain $D$, where $f$ is analytic with $f' \ne 0$. For $R$ large and the $\rho_j$ small, $f(z) \ne w_0$ on $C$: on the axis $f(x) \in P$; near $x_j$, $|f(z) - w_0| \ge d/2$ by continuity, since $f(x_j) = w_j$ is at distance $\ge d$ from $w_0$; and for $|z|$ large $|f(z) - w_0| \ge d/2$ by (6), since $w_n \in P$. By the argument principle ([[§93 Argument Principle|§93]]), the number of points interior to $C$ with $f(z) = w_0$ is
+> *The interior: counting solutions.* (B&C argues that the images of interior points lie to the left of the sides, since the angle at $x_0$ between the axis and a segment into the half plane is between $0$ and $\pi$ and is preserved; the one-to-one property is its Exercise 3, carried out here.) Let $w_0$ be a point not on $P$ and $d > 0$ its distance from $P$. Let $C$ be the contour consisting of the upper half of the circle $|z| = R$ and the segment $-R \le x \le R$ of the axis, except that a small segment about each $x_j$ is replaced by the upper half of the circle $|z - x_j| = \rho_j$ (figure below). $C$ is a positively oriented simple closed contour in the simply connected domain $D$, where $f$ is analytic with $f' \ne 0$. For $R$ large and the $\rho_j$ small, $f(z) \ne w_0$ on $C$: on the axis $f(x) \in P$; near $x_j$, $|f(z) - w_0| \ge d/2$ by continuity, since $f(x_j) = w_j$ is at distance $\ge d$ from $w_0$; and for $|z|$ large $|f(z) - w_0| \ge d/2$ by (6), since $w_n \in P$. By the argument principle ([[§93 Argument Principle#^thm-93-4|Theorem §93.4]]), the number of points interior to $C$ with $f(z) = w_0$ is
 >
 > $$
 > N_C = \frac{1}{2\pi i}\int_C\frac{f'(z)}{f(z) - w_0}\,dz .
@@ -197,11 +197,11 @@ Our mapping function, whose derivative is (1), can be written $f(z) = F(z) + B$,
 >
 > The count $N_C$ is a nonnegative integer that converges to $N$, so it equals $N$ once $R$ is large and the $\rho_j$ are small; it can only increase as $R$ grows and the $\rho_j$ shrink, and every point of the open half plane lies inside $C$ once $R$ is large and the $\rho_j$ are small. Hence the number of points $z$ with $\operatorname{Im} z > 0$ and $f(z) = w_0$ is exactly $1$ if $w_0$ is interior to $P$ and $0$ if it is exterior.
 >
-> *No interior point goes to $P$.* (B&C does not treat this.) If $f(z_1) = w_1 \in P$ with $\operatorname{Im} z_1 > 0$, then, since $f'(z_1) \ne 0$, $f$ maps a neighborhood of $z_1$ in the half plane onto a neighborhood of $w_1$ ([[§114★ Local Inverses|§114★]]). Every neighborhood of a point of $P$ contains points exterior to $P$, and these would have preimages in $y > 0$, contradicting $N = 0$. So $f$ maps $y > 0$ one to one onto the interior of $P$.
+> *No interior point goes to $P$.* (B&C does not treat this.) If $f(z_1) = w_1 \in P$ with $\operatorname{Im} z_1 > 0$, then, since $f'(z_1) \ne 0$, $f$ maps a neighborhood of $z_1$ in the half plane onto a neighborhood of $w_1$ ([[§114★ Local Inverses#^thm-114-1|Theorem §114.1]]). Every neighborhood of a point of $P$ contains points exterior to $P$, and these would have preimages in $y > 0$, contradicting $N = 0$. So $f$ maps $y > 0$ one to one onto the interior of $P$.
 
 ^pf-128-4
 
-*Uses:* [[§128★ Schwarz–Christoffel Transformation#^lem-128-1|§128.1]], [[§128★ Schwarz–Christoffel Transformation#^lem-128-2|§128.2]], [[§128★ Schwarz–Christoffel Transformation#^lem-128-3|§128.3]], [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-1|§127.1]], [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-2|§127.2]], [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-3|§127.3]], [[§93 Argument Principle|§93]] (argument principle), [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]] (Cauchy–Goursat), [[§53 Multiply Connected Domains#^cor-53-2|§53.2]] (deformation of paths), [[§114★ Local Inverses|§114★]], [[§112★ Preservation of Angles and Scale Factors|§112★]]
+*Uses:* [[§128★ Schwarz–Christoffel Transformation#^lem-128-1|§128.1]], [[§128★ Schwarz–Christoffel Transformation#^lem-128-2|§128.2]], [[§128★ Schwarz–Christoffel Transformation#^lem-128-3|§128.3]], [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-1|§127.1]], [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-2|§127.2]], [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-3|§127.3]], [[§93 Argument Principle#^thm-93-4|§93.4]] (argument principle), [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]] (Cauchy–Goursat), [[§53 Multiply Connected Domains#^cor-53-2|§53.2]] (deformation of paths), [[§114★ Local Inverses#^thm-114-1|§114.1]], [[§112★ Preservation of Angles and Scale Factors#^def-112-2|Def. §112.2]]
 
 ![[m342-128-1.svg]]
 *The contour $C$ of the proof: the segment $-R \le x \le R$ (blue), indented by small semicircles of radius $\rho_j$ over the prevertices $x_j$ (red), and closed by the semicircle $|z| = R$ (green). The red and green pieces contribute nothing in the limit, because $k_j < 1$ and $k_n < 1$; what is left is the integral of $dw/(w - w_0)$ once around the polygon.*

@@ -12,7 +12,7 @@ tags: [complex-variables, math342, extension]
 *Brown–Churchill, Section 133.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
-Two parallel grounded conducting planes with a semi-infinite plate at potential $1$ midway between them form a degenerate quadrilateral: a strip divided along half its length. The Schwarz–Christoffel transformation maps the upper half plane onto this divided strip; the three conductors become three intervals of the real axis, where the potential is the elementary harmonic function $\frac1\pi(\theta_1 - \theta_2)$ of [[§119★ Steady Temperatures in a Half Plane|§119★]]. Mapping back gives the potential around the edge of the plate in closed form. The same technique gives the potential for a plate at any height ($h\pi$ instead of $\pi/2$) and the temperatures near a step, both from B&C's exercises.
+Two parallel grounded conducting planes with a semi-infinite plate at potential $1$ midway between them form a degenerate quadrilateral: a strip divided along half its length. The Schwarz–Christoffel transformation maps the upper half plane onto this divided strip; the three conductors become three intervals of the real axis, where the potential is the elementary harmonic function $\frac1\pi(\theta_1 - \theta_2)$ of [[§119★ Steady Temperatures in a Half Plane#^ex-119-1|Example §119.1]]. Mapping back gives the potential around the edge of the plate in closed form. The same technique gives the potential for a plate at any height ($h\pi$ instead of $\pi/2$) and the temperatures near a step, both from B&C's exercises.
 
 > [!example] Example §133.1: Mapping the Upper Half Plane onto the Divided Strip
 > Two parallel conducting plates of infinite extent are kept at potential $V = 0$, and a parallel semi-infinite plate placed midway between them is kept at $V = 1$. The coordinate system and unit of length are chosen so that the plates lie in the planes $v = 0$, $v = \pi$ and $v = \pi/2$ ($u \ge 0$). Find a conformal map of the upper half plane onto the region between the plates.
@@ -76,7 +76,7 @@ Two parallel grounded conducting planes with a semi-infinite plate at potential 
 > [!example] Example §133.2: The Potential about the Edge
 > Find the potential $V(u, v)$ between the plates of Example §133.1.
 >
-> **In the $z$ plane.** Under (5) the required harmonic function $V(u, v)$ becomes a harmonic function of $x$ and $y$ in the half plane $y > 0$ ([[§116★ Transformations of Harmonic Functions|§116★]], [[§117★ Transformations of Boundary Conditions|§117★]]), with boundary values $V = 0$ for $x < -1$ (bottom plate), $V = 1$ for $-1 < x < 1$ (both sides of the middle plate, since $x_2 = 0$ now) and $V = 0$ for $x > 1$ (top plate). The harmonic function in the half plane with these boundary values is the imaginary component of
+> **In the $z$ plane.** Under (5) the required harmonic function $V(u, v)$ becomes a harmonic function of $x$ and $y$ in the half plane $y > 0$ ([[§116★ Transformations of Harmonic Functions#^thm-116-1|Theorem §116.1]], [[§117★ Transformations of Boundary Conditions#^thm-117-2|Theorem §117.2]]), with boundary values $V = 0$ for $x < -1$ (bottom plate), $V = 1$ for $-1 < x < 1$ (both sides of the middle plate, since $x_2 = 0$ now) and $V = 0$ for $x > 1$ (top plate). The harmonic function in the half plane with these boundary values is the imaginary component of
 >
 > $$
 > \frac1\pi\operatorname{Log}\frac{z - 1}{z + 1} = \frac1\pi\ln\frac{r_1}{r_2} + \frac i\pi(\theta_1 - \theta_2) ,

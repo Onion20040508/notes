@@ -16,7 +16,7 @@ Chapter 11 constructs the Schwarz–Christoffel transformation, which maps the $
 
 ## Direction of the Image of the Real Axis
 
-Let $t$ be the unit tangent vector to a smooth arc $C$ at $z_0$ and $\tau$ the unit tangent to the image of $C$ at $w_0 = f(z_0)$. If $f$ is analytic at $z_0$ and $f'(z_0) \ne 0$, then by [[§112★ Preservation of Angles and Scale Factors|§112★]]
+Let $t$ be the unit tangent vector to a smooth arc $C$ at $z_0$ and $\tau$ the unit tangent to the image of $C$ at $w_0 = f(z_0)$. If $f$ is analytic at $z_0$ and $f'(z_0) \ne 0$, then by [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|Theorem §112.1]]
 
 $$
 \arg\tau = \arg f'(z_0) + \arg t . \qquad (1)
@@ -46,7 +46,7 @@ $$
 
 ^pf-127-1
 
-*Uses:* [[§42 Definite Integrals of Functions w(t)|§42]] (fundamental theorem of calculus for $w(t)$), [[§112★ Preservation of Angles and Scale Factors|§112★]]
+*Uses:* [[§42 Definite Integrals of Functions w(t)#^thm-42-2|§42.2]] (fundamental theorem of calculus for $w(t)$), [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|§112.1]]
 
 ## The Derivative of the Mapping Function
 
@@ -178,7 +178,7 @@ The existence of a mapping function $f$ whose derivative is (3), and the fact th
 > [!example] Example §127.3: The Image of Infinity Need Not Be a Vertex
 > Let $f'(z) = (z + 1)^{-2/3}z^{-2/3}(z - 1)^{-2/3}$. Show that the image of the axis has only three vertices.
 >
-> Here $k_1 + k_2 + k_3 = 3 \cdot \frac23 = 2$, which is (6), so $k_4 = 0$. Directly from (4) with $A = 1$: for $x > 1$, $\arg f'(x) = 0$; for $x < -1$, $\arg f'(x) = -\frac23\pi \cdot 3 = -2\pi$, the same direction. The half lines $x < -1$ and $x > 1$ therefore go to two collinear pieces of one side, joined at $f(\infty)$, which is an ordinary point of that side. The jumps $\frac23\pi$ at $-1$, $0$, $1$ are the exterior angles of an equilateral triangle. This is the form (1) of [[§129★ Triangles and Rectangles|§129★]] with all three prevertices finite.
+> Here $k_1 + k_2 + k_3 = 3 \cdot \frac23 = 2$, which is (6), so $k_4 = 0$. Directly from (4) with $A = 1$: for $x > 1$, $\arg f'(x) = 0$; for $x < -1$, $\arg f'(x) = -\frac23\pi \cdot 3 = -2\pi$, the same direction. The half lines $x < -1$ and $x > 1$ therefore go to two collinear pieces of one side, joined at $f(\infty)$, which is an ordinary point of that side. The jumps $\frac23\pi$ at $-1$, $0$, $1$ are the exterior angles of an equilateral triangle. This is the form (1) of [[§129★ Triangles and Rectangles#^cor-129-1|Corollary §129.1]] with all three prevertices finite.
 >
 > *B&C: Sec. 127, equation (6); Sec. 129, equation (1)*
 

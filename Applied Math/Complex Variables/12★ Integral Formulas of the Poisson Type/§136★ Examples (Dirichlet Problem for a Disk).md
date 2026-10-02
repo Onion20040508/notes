@@ -12,7 +12,7 @@ tags: [complex-variables, math342, extension]
 *Brown–Churchill, Section 136.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
-These examples use the two forms of the solution of the Dirichlet problem for a disk from [[§135★ Dirichlet Problem for a Disk|§135★]]. For boundary values that are constant on arcs, the Poisson integral can be evaluated with an explicit antiderivative of the kernel, and the answer comes out as an arctangent whose level curves are circular arcs through the ends of the arcs; this reproduces by integration what [[§123★ Examples (Electrostatic Potential)|§123★]] found by conformal mapping. For a boundary value like $A\cos\theta$ the series form gives the answer at once. Physically: the potential inside a split cylinder, and steady temperatures in a cylinder or a plate heated along an arc.
+These examples use the two forms of the solution of the Dirichlet problem for a disk from [[§135★ Dirichlet Problem for a Disk|§135★]]. For boundary values that are constant on arcs, the Poisson integral can be evaluated with an explicit antiderivative of the kernel, and the answer comes out as an arctangent whose level curves are circular arcs through the ends of the arcs; this reproduces by integration what [[§123★ Examples (Electrostatic Potential)#^ex-123-1|Example §123.1]] found by conformal mapping. For a boundary value like $A\cos\theta$ the series form gives the answer at once. Physically: the potential inside a split cylinder, and steady temperatures in a cylinder or a plate heated along an arc.
 
 > [!theorem] Lemma §136.1: An Antiderivative of the Poisson Kernel
 > For $0 \le r < 1$,
@@ -83,7 +83,7 @@ These examples use the two forms of the solution of the Dirichlet problem for a 
 >
 > B&C calls the restriction on the arctangent "physically evident"; the bounds $0 < V < 1$ make it a consequence of the kernel's properties. In the upper half, $\sin\theta > 0$ and $V < \frac12$; in the lower half $V > \frac12$; on the horizontal diameter $V = \frac12$ (with $\arctan(\pm\infty) = \pi/2$), as in [[§135★ Dirichlet Problem for a Disk#^ex-135-2|Example §135.2]].
 >
-> **Rectangular coordinates.** $\dfrac{1 - r^2}{2r\sin\theta} = \dfrac{1 - x^2 - y^2}{2y}$, so $V = \frac1\pi\arctan\dfrac{1 - x^2 - y^2}{2y}$, the solution (5) found by conformal mapping in [[§123★ Examples (Electrostatic Potential)|§123★]], Example 1.
+> **Rectangular coordinates.** $\dfrac{1 - r^2}{2r\sin\theta} = \dfrac{1 - x^2 - y^2}{2y}$, so $V = \frac1\pi\arctan\dfrac{1 - x^2 - y^2}{2y}$, the solution (5) found by conformal mapping in [[§123★ Examples (Electrostatic Potential)#^ex-123-1|Example §123.1]].
 >
 > *Check:* at $r = 0.5$, $\theta = 1$, quadrature of (1) and formula (3) both give $V = 0.231725$; at $r = 0.3$, $\theta = 4$, both give $0.647326$.
 >
@@ -117,7 +117,7 @@ These examples use the two forms of the solution of the Dirichlet problem for a 
 > T(r, \theta) = \frac{A}{r_0}(r\cos\theta) = \frac{A}{r_0}x . \qquad (5)
 > $$
 >
-> It is harmonic (linear), equals $A\cos\theta$ on $r = r_0$, and has mean $0$ at the center. Since $\partial T/\partial y = 0$, no heat flows across the plane $y = 0$ ([[§118★ Steady Temperatures|§118★]]).
+> It is harmonic (linear), equals $A\cos\theta$ on $r = r_0$, and has mean $0$ at the center. Since $\partial T/\partial y = 0$, no heat flows across the plane $y = 0$ ([[§118★ Steady Temperatures#^def-118-1|Definition §118.1]]).
 >
 > *B&C: Sec. 136, Example 2; Exercise 8*
 

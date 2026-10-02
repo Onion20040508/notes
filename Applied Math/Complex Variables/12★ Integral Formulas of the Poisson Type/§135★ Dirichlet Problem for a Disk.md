@@ -17,7 +17,7 @@ In [[§134★ Poisson Integral Formula|§134★]] the Poisson formula reproduced
 ## The Poisson Integral Transform
 
 > [!definition] Definition §135.1: Poisson Integral Transform
-> Let $F$ be a piecewise continuous function ([[§42 Definite Integrals of Functions w(t)|§42]]) of $\theta$ on $0 \le \theta \le 2\pi$. The **Poisson integral transform** of $F$ is
+> Let $F$ be a piecewise continuous function ([[§42 Definite Integrals of Functions w(t)#^def-42-2|Definition §42.2]]) of $\theta$ on $0 \le \theta \le 2\pi$. The **Poisson integral transform** of $F$ is
 >
 > $$
 > U(r, \theta) = \frac{1}{2\pi}\int_0^{2\pi}P(r_0, r, \phi - \theta)\,F(\phi)\,d\phi \qquad (r < r_0) , \qquad (1)
@@ -61,7 +61,7 @@ In [[§134★ Poisson Integral Formula|§134★]] the Poisson formula reproduced
 > \frac{G(z + h) - G(z)}{h} - \frac{1}{2\pi}\int_0^{2\pi}\frac{2s\,F(\phi)}{(s - z)^2}\,d\phi = \frac{1}{2\pi}\int_0^{2\pi}\frac{2s\,h\,F(\phi)}{(s - z - h)(s - z)^2}\,d\phi ,
 > $$
 >
-> whose modulus is at most $2r_0|h|\,\max|F|\big/\big(\frac12(r_0 - |z|)^3\big) \to 0$. So $G$ is analytic in the disk and $U = \operatorname{Re} G$ is harmonic ([[§27★ Harmonic Functions|§27★]]).
+> whose modulus is at most $2r_0|h|\,\max|F|\big/\big(\frac12(r_0 - |z|)^3\big) \to 0$. So $G$ is analytic in the disk and $U = \operatorname{Re} G$ is harmonic ([[§27★ Harmonic Functions#^thm-27-1|Theorem §27.1]]).
 >
 > **The boundary limit.** Let $F$ be continuous at $\theta$, and let $\varepsilon > 0$. We need $\delta > 0$ with
 >
@@ -119,7 +119,7 @@ In [[§134★ Poisson Integral Formula|§134★]] the Poisson formula reproduced
 
 ^pf-135-1
 
-*Uses:* [[§135★ Dirichlet Problem for a Disk#^def-135-1|Def. §135.1]], [[§134★ Poisson Integral Formula#^prop-134-2|§134.2]], [[§27★ Harmonic Functions|§27★]]
+*Uses:* [[§135★ Dirichlet Problem for a Disk#^def-135-1|Def. §135.1]], [[§134★ Poisson Integral Formula#^prop-134-2|§134.2]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]]
 
 > [!remark]- Connections
 > - [[§39 Potential in a Disk#^thm-39-2|341 Thm. §39.2]] solves the same problem by separation of variables, and [[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]] sums the series into the Poisson integral; it checks the boundary values through uniform convergence of the series, which needs $f$ continuous and sectionally smooth. The proof above needs only piecewise continuity: it uses that the kernel is a positive weight of mass one concentrating at $\phi = \theta$ ([[§39 Potential in a Disk#^rem-39-2|341 Remark: The Poisson Kernel Is a Weight]]).

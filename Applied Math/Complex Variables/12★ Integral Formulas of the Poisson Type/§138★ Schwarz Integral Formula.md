@@ -34,7 +34,7 @@ This is the half-plane analog of [[§134★ Poisson Integral Formula|§134★]].
 ^thm-138-1
 
 > [!proof]+ Proof
-> Fix $z$ above the real axis, and let $C_R$ be the upper half of the positively oriented circle of radius $R > |z|$ centered at the origin. By the Cauchy integral formula ([[§54 Cauchy Integral Formula|§54]]) applied to the closed contour formed by $C_R$ and the segment $-R \le t \le R$,
+> Fix $z$ above the real axis, and let $C_R$ be the upper half of the positively oriented circle of radius $R > |z|$ centered at the origin. By the Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]]) applied to the closed contour formed by $C_R$ and the segment $-R \le t \le R$,
 >
 > $$
 > f(z) = \frac{1}{2\pi i}\int_{C_R}\frac{f(s)\,ds}{s - z} + \frac{1}{2\pi i}\int_{-R}^{R}\frac{f(t)\,dt}{t - z} . \qquad (2)
@@ -46,13 +46,13 @@ This is the half-plane analog of [[§134★ Poisson Integral Formula|§134★]].
 > \Big|\int_{C_R}\frac{f(s)\,ds}{s - z}\Big| < \frac{M}{R^a(R - |z|)}\pi R = \frac{\pi M}{R^a(1 - |z|/R)} \longrightarrow 0 \qquad (R \to \infty) .
 > $$
 >
-> So the second integral in (2) tends to $f(z)$ as $R \to \infty$. (B&C cites a calculus text for the convergence of the improper integral; here is why.) For $|t| \ge 2|z|$, $|t - z| \ge |t|/2$, so $|f(t)/(t - z)| < 2M/|t|^{1 + a}$, which is integrable at $\pm\infty$ since $a > 0$; so the real and imaginary parts of the integrand are absolutely integrable over the line, the improper integral converges, and its value is the limit of the symmetric integrals, its Cauchy principal value ([[§85 Evaluation of Improper Integrals|§85]]). This gives (3), a **Cauchy integral formula for the half plane** $\operatorname{Im} z > 0$.
+> So the second integral in (2) tends to $f(z)$ as $R \to \infty$. (B&C cites a calculus text for the convergence of the improper integral; here is why.) For $|t| \ge 2|z|$, $|t - z| \ge |t|/2$, so $|f(t)/(t - z)| < 2M/|t|^{1 + a}$, which is integrable at $\pm\infty$ since $a > 0$; so the real and imaginary parts of the integrand are absolutely integrable over the line, the improper integral converges, and its value is the limit of the symmetric integrals, its Cauchy principal value ([[§85 Evaluation of Improper Integrals#^prop-85-1|Proposition §85.1]]). This gives (3), a **Cauchy integral formula for the half plane** $\operatorname{Im} z > 0$.
 >
-> If $z$ lies below the real axis, $f(s)/(s - z)$ is analytic inside and on the closed contour of (2), so by the Cauchy–Goursat theorem ([[§50 Cauchy–Goursat Theorem|§50]]) the right side of (2) is zero for every $R$; the same limit shows that the integral in (3) is zero.
+> If $z$ lies below the real axis, $f(s)/(s - z)$ is analytic inside and on the closed contour of (2), so by the Cauchy–Goursat theorem ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]) the right side of (2) is zero for every $R$; the same limit shows that the integral in (3) is zero.
 
 ^pf-138-1
 
-*Uses:* [[§54 Cauchy Integral Formula|§54]] (Cauchy integral formula), [[§50 Cauchy–Goursat Theorem|§50]], [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (ML-inequality), [[§85 Evaluation of Improper Integrals|§85]] (principal value), [[§36 Improper Integrals#^thm-36-1|451 Thm. §36.1]] (comparison for improper integrals)
+*Uses:* [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]] (Cauchy integral formula), [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]] (principal value), [[§36 Improper Integrals#^thm-36-1|451 Thm. §36.1]] (comparison for improper integrals)
 
 > [!theorem] Theorem §138.2: Schwarz Integral Formula
 > Let $f = u + iv$ satisfy the hypotheses of Theorem §138.1, and let $z = x + iy$ with $y > 0$. For every complex constant $c$,
@@ -143,7 +143,7 @@ In [[§139★ Dirichlet Problem for a Half Plane|§139★]] the conditions for t
 > [!example] Example §138.2: Formula (3) by Residues
 > For $f(z) = i/(z + i)$, evaluate the integral in (3) by residues, above and below the axis.
 >
-> The integrand $\dfrac{i}{(t + i)(t - z)}$ is $O(|t|^{-2})$, so by the method of [[§85 Evaluation of Improper Integrals|§85]] its integral over the real line equals $2\pi i$ times the sum of the residues in the upper half plane ([[§76 Cauchy's Residue Theorem|§76]]); the integral over the large semicircle tends to $0$.
+> The integrand $\dfrac{i}{(t + i)(t - z)}$ is $O(|t|^{-2})$, so by the method of [[§85 Evaluation of Improper Integrals|§85]] its integral over the real line equals $2\pi i$ times the sum of the residues in the upper half plane ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]); the integral over the large semicircle tends to $0$.
 >
 > - If $\operatorname{Im} z > 0$, the only pole above the axis is $t = z$, with residue $\dfrac{i}{z + i}$; so $\dfrac{1}{2\pi i}\displaystyle\int_{-\infty}^{\infty}\frac{f(t)\,dt}{t - z} = \frac{i}{z + i} = f(z)$, which is (3).
 > - If $\operatorname{Im} z < 0$, both poles $t = -i$ and $t = z$ lie below the axis, so the integral is $0$, as Theorem §138.1 asserts. This vanishing is what makes (4) hold for every $c$.
@@ -155,7 +155,7 @@ In [[§139★ Dirichlet Problem for a Half Plane|§139★]] the conditions for t
 > [!example] Example §138.3: Constants and the Order Property
 > Test (3), (7) and (8) on the constants $f \equiv 1$ and $f \equiv i$, which do not satisfy (1).
 >
-> **$f \equiv 1$.** Formula (3) fails: for $y > 0$ the improper integral $\int_{-\infty}^\infty dt/(t - z)$ diverges (its integrand is not $O(|t|^{-1-a})$), and its principal value is $\lim_{R\to\infty}\big[\log(t - z)\big]_{t=-R}^{t=R} = i\pi$ (the argument of $t - z$ runs from $-\pi$ to $0$), so the right side of (3) would be $\frac12$, not $1$. Formula (7), however, gives $u = \frac1\pi\int y\,dt/\big((t - x)^2 + y^2\big) = \frac1\pi\big[\arctan\frac{t - x}{y}\big]_{-\infty}^{\infty} = 1$, correctly.
+> **$f \equiv 1$.** Formula (3) fails: for $y > 0$ the improper integral $\int_{-\infty}^\infty dt/(t - z)$ diverges (its real part $(t - x)/|t - z|^2$ behaves like $1/t$ at $\pm\infty$), and its principal value is $\lim_{R\to\infty}\big[\log(t - z)\big]_{t=-R}^{t=R} = i\pi$ (the argument of $t - z$ runs from $-\pi$ to $0$), so the right side of (3) would be $\frac12$, not $1$. Formula (7), however, gives $u = \frac1\pi\int y\,dt/\big((t - x)^2 + y^2\big) = \frac1\pi\big[\arctan\frac{t - x}{y}\big]_{-\infty}^{\infty} = 1$, correctly.
 >
 > **$f \equiv i$.** Here $u = 0$ and $v = 1$. Formula (7) gives $0$, correctly, but (8) gives $v = 0$, not $1$: (8) determines the conjugate only up to an additive constant, and the order property is what pins the constant down (it forces $v \to 0$ at infinity).
 >

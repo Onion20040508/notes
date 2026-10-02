@@ -52,7 +52,7 @@ A degenerate polygon has one or more vertices at infinity: a half strip, a strip
 > z = \sin w .
 > $$
 >
-> **Verification.** With the $z$ and $w$ planes interchanged, this is the map of [[§104★ Mapping Vertical Line Segments by w = sin z|§104★]], which takes the half strip $-\pi/2 \le x \le \pi/2$, $y \ge 0$ one to one onto the half plane $v \ge 0$.
+> **Verification.** With the $z$ and $w$ planes interchanged, this is the map of [[§104★ Mapping Vertical Line Segments by w = sin z#^ex-104-1|Example §104.1]], which takes the half strip $-\pi/2 \le x \le \pi/2$, $y \ge 0$ one to one onto the half plane $v \ge 0$.
 >
 > *B&C: Sec. 130, Example 1*
 
@@ -81,7 +81,7 @@ A degenerate polygon has one or more vertices at infinity: a half strip, a strip
 >
 > Identifying real and imaginary parts, $|x_1| = 1$ and $A = 1$. So $w = \operatorname{Log}z$, and $x_1 = -1$.
 >
-> **Verification.** By Example 3 of [[§102★ Examples (Mappings of the Upper Half Plane)|§102★]], $w = \operatorname{Log}z$ maps the half plane $y > 0$ one to one onto the strip $0 < v < \pi$.
+> **Verification.** By [[§102★ Examples (Mappings of the Upper Half Plane)#^ex-102-3|Example §102.3]] (B&C's Example 3 of Sec. 102), $w = \operatorname{Log}z$ maps the half plane $y > 0$ one to one onto the strip $0 < v < \pi$.
 >
 > *B&C: Sec. 130, Example 2*
 
