@@ -152,7 +152,7 @@ Microcausality:
 
 - $E_{\mathbf p}$ here is the lectures' $\omega_{\mathbf p}$, and $\pi$ their $\Pi$ — [[§C2.1 Canonical Quantization of Fields#^cau-c2-1-1|Caution §C2.1]]
 - $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$: the slides drop the $(2\pi)^3$ — [[§C2.4 Particles and Relativistic Normalization#^cau-c2-4-2|Caution §C2.4]]
-- Charge: $\frac12(N_a - N_b)$ here, PS and Problem Set 3; Noether current with $\Delta\phi = +i\phi$ gives $N_b - N_a$; Yu $q(N_a - N_b)$ — [[§C2.5 The Complex Scalar Field and Its Charge#^cau-c2-5-1|Caution §C2.5]]
+- Charge: $\frac12(N_a - N_b)$ here, PS and Problem Set 3; Noether current with $\Delta\phi = +i\phi$ gives $N_b - N_a$; Yu $q(N_a - N_b)$ — [[§C2.5 The Complex Scalar Field and Its Charge#^cau-c2-5-1|Caution §C2.5]], [[§C1.11 Noether's Theorem#^cau-c1-11-3|Caution §C1.11]]
 - $D_F(x - y) = D_R(x - y) + D_W(y - x)$ (arguments exchanged); $(\partial^2 + m^2)e^{-ip\cdot x} = (m^2 - p^2)e^{-ip\cdot x}$; closing up is counterclockwise, down clockwise — [[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2-12-2|Caution §C2.12]]
 - $(2\pi)^3\delta^3(\mathbf 0) = V$, i.e. $\delta^3(\mathbf 0) = V/(2\pi)^3$; a $\delta^3(\mathbf 0)$ from two different momenta signals a dropped sign — [[§C2.3 Energy, Momentum and the Zero-Point Energy#^thm-c2-3-3|Theorem §C2.3.3]], [[§C2.2 Mode Expansion and the Mode Algebra#^rem-c2-2-1|Remark §C2.2]]
 - PS's $D$ is $D_W$ here; Yu's $D_{\mathrm{PJ}} = iD$ — [[§C2.10 Microcausality and the Commutator Function#^cau-c2-10-1|Caution §C2.10]]

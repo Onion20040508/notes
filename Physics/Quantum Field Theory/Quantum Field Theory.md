@@ -24,6 +24,8 @@ graph TD
   C1["C1 Preliminaries"]
   C2["C2 The Quantum Scalar Field"]
   CA["CA Mathematical Methods"]
+  C1 -->|13| C2
+  C1 -->|5| CA
   C2 -->|50| CA
   C2 -.->|62| C1
   CA -.->|105| C1

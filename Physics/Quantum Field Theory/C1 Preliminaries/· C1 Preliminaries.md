@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ↑ [[Quantum Field Theory]] · [[· C2 The Quantum Scalar Field]] →
 
 **Builds on:** [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (62), [[· CA Mathematical Methods|CA Mathematical Methods]] (105)
-**Used by:** —
+**Used by:** [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (13), [[· CA Mathematical Methods|CA Mathematical Methods]] (5)
 
 ## Sections
 - [[§C1.1 Why Quantum Field Theory]] — 

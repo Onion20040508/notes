@@ -67,6 +67,7 @@ Throughout, identify $\operatorname{Mat}(n,\mathbb{R}) = \mathbb{R}^{n^2}$ via [
 > [!remark]- Connections
 > - The same computation without coordinates, as the differential of $\det$: [[§18 The Differential of a Map Between Vector Spaces#^thm-18-3|§18.3]].
 > - Used in ODEs: along a solution matrix $\mathbf{X}(t)$ of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ it gives $W' = (\operatorname{tr}\mathbf{P})\,W$ for the Wronskian $W = \det\mathbf{X}$, Abel's (Liouville's) formula, [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3|331 Thm. §30.3]].
+> - Used in Quantum Field Theory: at $g = I$, $\det(I + A) = 1 + \operatorname{tr}A$ to first order gives the Jacobian of an infinitesimal change of spacetime coordinates, $d^4x' = [1 + \partial_\mu(\delta x^\mu)]\,d^4x$, which is $1$ for translations and Lorentz transformations — [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1-12-2|QFT Theorem §C1.12.2]].
 
 In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$, where $\det(g) = 1$ and the factor disappears; the general-$g$ statement (Jacobi's formula) is the same computation with the constant $\det(g)$ carried along.
 
