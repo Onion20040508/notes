@@ -108,6 +108,7 @@ plugins:
         "\\bra": "\\langle #1 \\rvert"
         "\\ket": "\\lvert #1 \\rangle"
         "\\braket": "\\langle #1 \\vert #2 \\rangle"
+        "\\slashed": "\\cancel{#1}"
     order: 80
   - source: "@quartz-community/citations"
     enabled: false
