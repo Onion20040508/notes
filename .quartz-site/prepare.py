@@ -140,6 +140,11 @@ for root, _, files in os.walk(content):
 
 home = os.path.join(content, 'Home.md')
 if os.path.exists(home):
-    shutil.copy2(home, os.path.join(content, 'index.md'))
+    # Without a title Quartz names the page after its file ("index"); the page shows the title
+    # above the text, so the note's own "# Home" heading is dropped to avoid showing it twice.
+    s = open(home, encoding='utf-8').read()
+    if not s.startswith('---\n'):
+        s = '---\ntitle: Home\n---\n' + re.sub(r'\A# Home\n+', '', s)
+    open(os.path.join(content, 'index.md'), 'w', encoding='utf-8').write(s)
 print('copied vault; rewrote {figures} figure embeds ({missing} not found), {folder_links} folder-note links, '
       '{fences} $$ blocks with formula text on the $$ lines, {dollars} \\$ inside math'.format(**counts))
