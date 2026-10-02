@@ -1,0 +1,18 @@
+% Figure for Complex Variables §83.
+\begin{tikzpicture}[x=0.3cm, y=0.3cm, line cap=round, line join=round,
+    arr/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{stealth}}}}]
+  \draw[-stealth, thin] (-11.2,0) -- (11.6,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,-9.6) -- (0,10.0) node[above, font=\scriptsize] {$y$};
+  \draw[figB, line width=0.9pt, arr=0.07, arr=0.32, arr=0.57, arr=0.82] (7.854,-7.854) -- (7.854,7.854) -- (-7.854,7.854) -- (-7.854,-7.854) -- cycle;
+  \node[figB, font=\scriptsize, above left] at (7.854,7.854) {$C_N$};
+  \foreach \n in {-2,-1,0,1,2} \fill[figR] ({\n*3.14159},0) circle (0.28);
+  \foreach \n in {-3,3} \draw[figR, fill=white] ({\n*3.14159},0) circle (0.28);
+  \node[font=\scriptsize, below] at (3.14159,-0.2) {$\pi$};
+  \node[font=\scriptsize, below] at (6.28319,-0.2) {$2\pi$};
+  \node[font=\scriptsize, below] at (-3.14159,-0.2) {$-\pi$};
+  \node[font=\scriptsize, below] at (-6.28319,-0.2) {$-2\pi$};
+  \node[font=\scriptsize, below] at (9.42478,-0.2) {$3\pi$};
+  \node[font=\scriptsize, below] at (-9.42478,-0.2) {$-3\pi$};
+  \node[font=\scriptsize, right] at (7.854,-6.4) {$x = (N + \frac12)\pi$};
+  \node[font=\scriptsize, above] at (-3.9,7.854) {$y = (N + \frac12)\pi$};
+\end{tikzpicture}

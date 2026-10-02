@@ -1,0 +1,21 @@
+% Figure for Complex Variables §86.
+\begin{tikzpicture}[line cap=round, line join=round,
+    arr/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
+  \draw[-stealth, thin] (-3.0,0) -- (3.8,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,-1.6) -- (0,3.4) node[above, font=\scriptsize] {$y$};
+  \fill[figB!7] (0,0) -- (3,0) arc (0:120:3) -- cycle;
+  \draw[figB, line width=1.0pt, arr=0.55] (0,0) -- (3,0);
+  \draw[figB, line width=1.0pt, arr=0.5] (3,0) arc (0:120:3);
+  \draw[figB, line width=1.0pt, arr=0.5] (120:3) -- (0,0);
+  \node[figB, font=\small] at (2.65,1.85) {$C_R$};
+  \node[font=\scriptsize, below] at (3,0) {$R$};
+  \node[font=\scriptsize, above left] at (120:3) {$Re^{i2\pi/3}$};
+  \node[font=\scriptsize, below left] at (0,0) {$O$};
+  \draw[black!40, dashed] (0,0) circle (1);
+  % zeros of z^3+1
+  \fill[figR] (60:1) circle (0.06) node[right, font=\scriptsize] {$e^{i\pi/3}$};
+  \draw[black!55] (-1,0) circle (0.06) node[below left, font=\scriptsize] {$-1$};
+  \draw[black!55] (-60:1) circle (0.06) node[right, font=\scriptsize] {$e^{-i\pi/3}$};
+  \draw[black!50, thin] (0.4,0) arc (0:120:0.4);
+  \node[font=\scriptsize, black!60] at (100:0.68) {$\tfrac{2\pi}{3}$};
+\end{tikzpicture}

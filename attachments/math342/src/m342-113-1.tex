@@ -1,0 +1,26 @@
+% Figure for Complex Variables §113.
+\begin{tikzpicture}[line cap=round, line join=round]
+  \draw[-stealth, thin] (-0.3,0) -- (2.3,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,-0.3) -- (0,2.4) node[above, font=\scriptsize] {$y$};
+  \draw[figB, line width=0.9pt, -stealth] (0.000,0.000) -- (2.040,2.040);
+  \draw[figR, line width=0.9pt, -stealth] (1.200,0.000) -- (1.200,2.160);
+  \draw[figG, line width=1.1pt, -stealth] (0.000,0.000) -- (2.160,0.000);
+  \fill (1.2,1.2) circle (1.3pt) node[right, font=\scriptsize] {$1+i$};
+  \fill (1.2,0) circle (1.3pt) node[below, font=\scriptsize] {$1$};
+  \node[figB, font=\scriptsize] at (2.3000000000000003,2.1) {$C_1$};
+  \node[figR, font=\scriptsize] at (1.45,2.16) {$C_2$};
+  \node[figG, font=\scriptsize] at (2.16,0.2) {$C_3$};
+  \node[font=\small] at (1.1,-0.6) {$z$ plane};
+  \draw[-stealth, thick] (2.6,1.2) to[bend left=20] node[above, font=\scriptsize] {$w = z^2$} (3.6,1.2);
+  \draw[-stealth, thin] (4.730,0) -- (8.580,0) node[right, font=\scriptsize] {$u$};
+  \draw[-stealth, thin] (6.6,-0.3) -- (6.6,2.420) node[above, font=\scriptsize] {$v$};
+  \draw[figB, line width=0.9pt, -stealth] (6.600,0.000) -- (6.600,2.200);
+  \draw[figR, line width=0.9pt, -stealth] (7.150,0.000) -- (7.149,0.035) -- (7.148,0.071) -- (7.145,0.106) -- (7.141,0.142) -- (7.136,0.177) -- (7.129,0.213) -- (7.122,0.248) -- (7.113,0.283) -- (7.104,0.319) -- (7.093,0.354) -- (7.081,0.390) -- (7.068,0.425) -- (7.054,0.461) -- (7.038,0.496) -- (7.022,0.531) -- (7.004,0.567) -- (6.985,0.602) -- (6.965,0.638) -- (6.944,0.673) -- (6.922,0.708) -- (6.898,0.744) -- (6.874,0.779) -- (6.848,0.815) -- (6.821,0.850) -- (6.794,0.886) -- (6.764,0.921) -- (6.734,0.956) -- (6.703,0.992) -- (6.670,1.027) -- (6.637,1.063) -- (6.602,1.098) -- (6.566,1.134) -- (6.529,1.169) -- (6.491,1.204) -- (6.451,1.240) -- (6.411,1.275) -- (6.369,1.311) -- (6.326,1.346) -- (6.282,1.382) -- (6.237,1.417) -- (6.191,1.452) -- (6.144,1.488) -- (6.095,1.523) -- (6.046,1.559) -- (5.995,1.594) -- (5.943,1.629) -- (5.890,1.665) -- (5.836,1.700) -- (5.781,1.736) -- (5.724,1.771) -- (5.666,1.807) -- (5.608,1.842) -- (5.548,1.877) -- (5.487,1.913) -- (5.425,1.948) -- (5.361,1.984) -- (5.297,2.019) -- (5.231,2.055) -- (5.164,2.090);
+  \draw[figG, line width=1.1pt, -stealth] (6.600,0.000) -- (8.470,0.000);
+  \fill (6.6,1.1) circle (1.3pt) node[right, font=\scriptsize] {$2i$};
+  \fill (7.1499999999999995,0) circle (1.3pt) node[below, font=\scriptsize] {$1$};
+  \node[figB, font=\scriptsize] at (6.8999999999999995,2.2) {$\Gamma_1$};
+  \node[figR, font=\scriptsize] at (5.0645,2.34) {$\Gamma_2$};
+  \node[figG, font=\scriptsize] at (8.469999999999999,0.2) {$\Gamma_3$};
+  \node[font=\small] at (6.6,-0.6) {$w$ plane};
+\end{tikzpicture}

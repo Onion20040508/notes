@@ -1,0 +1,26 @@
+% Figure for Complex Variables §22.
+\begin{tikzpicture}[line cap=round, line join=round, >=Stealth]
+  \draw[->, thin] (-2.6,0) -- (2.8,0) node[right, font=\small] {$\Delta x$};
+  \draw[->, thin] (0,-2.6) -- (0,2.8) node[above, font=\small] {$\Delta y$};
+  \draw[figB, line width=1pt] (2.300,0.000) -- (0,0);
+  \draw[figB, line width=1pt, ->] (2.300,0.000) -- (1.200,0.000);
+  \draw[figB, line width=1pt] (0.000,2.300) -- (0,0);
+  \draw[figB, line width=1pt, ->] (0.000,2.300) -- (0.000,1.200);
+  \draw[figB, line width=1pt] (-2.300,0.000) -- (0,0);
+  \draw[figB, line width=1pt, ->] (-2.300,0.000) -- (-1.200,0.000);
+  \draw[figB, line width=1pt] (-0.000,-2.300) -- (0,0);
+  \draw[figB, line width=1pt, ->] (-0.000,-2.300) -- (-0.000,-1.200);
+  \draw[figR, line width=1pt] (1.626,1.626) -- (0,0);
+  \draw[figR, line width=1pt, ->] (1.626,1.626) -- (0.849,0.849);
+  \draw[figR, line width=1pt] (-1.626,1.626) -- (0,0);
+  \draw[figR, line width=1pt, ->] (-1.626,1.626) -- (-0.849,0.849);
+  \draw[figR, line width=1pt] (-1.626,-1.626) -- (0,0);
+  \draw[figR, line width=1pt, ->] (-1.626,-1.626) -- (-0.849,-0.849);
+  \draw[figR, line width=1pt] (1.626,-1.626) -- (0,0);
+  \draw[figR, line width=1pt, ->] (1.626,-1.626) -- (0.849,-0.849);
+  \fill (0,0) circle (1.3pt);
+  \node[figB, font=\scriptsize, above] at (1.75,0) {$\dfrac{\Delta w}{\Delta z} = 1$};
+  \node[figB, font=\scriptsize, right] at (0,1.9) {$1$};
+  \node[figR, font=\scriptsize, right] at (1.65,1.75) {$\dfrac{\Delta w}{\Delta z} = -1$};
+  \node[figR, font=\scriptsize, left] at (-1.65,1.75) {$-1$};
+\end{tikzpicture}

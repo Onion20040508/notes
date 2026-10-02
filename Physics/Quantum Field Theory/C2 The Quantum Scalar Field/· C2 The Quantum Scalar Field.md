@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
 **Builds on:** [[· CA Mathematical Methods|CA Mathematical Methods]] (121)
-**Used by:** [[· CA Mathematical Methods|CA Mathematical Methods]] (23)
+**Used by:** [[· CA Mathematical Methods|CA Mathematical Methods]] (49)
 
 ## Sections
 - [[§C2.1 Canonical Quantization of Fields]] — PS 2.3; Yu 2.1–2.2; 513 notes Ch. 4

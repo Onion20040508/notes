@@ -83,11 +83,11 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 ^thm-ca-3-2
 
 > [!derivation]- Derivation
-> **Step 1** (part 1: tempered). $\varphi \mapsto \tilde\varphi$ is linear and continuous on $\mathcal S$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], 1), so $\tilde T = T\circ(\,\tilde{}\,)$ is a continuous linear map on $\mathcal S$.
+> **Step 1** (part 1: tempered). Write $\mathcal F\varphi = \tilde\varphi$ and $\mathcal F^{-1}\varphi = \check\varphi$ for the transform and its inverse. $\varphi \mapsto \tilde\varphi$ is linear and continuous on $\mathcal S$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], 1), so $\tilde T = T\circ\mathcal F$ is a continuous linear map on $\mathcal S$.
 >
 > **Step 2** (part 1: consistent). For $\psi \in L^1$ and $\varphi \in \mathcal S$, Fubini gives the multiplication formula of Theorem §CA.3.1, 2: $T_{\tilde\psi}[\varphi] = \int\tilde\psi\,\varphi = \int\psi\,\tilde\varphi = T_\psi[\tilde\varphi] = \widetilde{T_\psi}[\varphi]$. The definition is the only one consistent with functions.
 >
-> **Step 3** (part 2: inverse). With $\check\varphi$ the inverse transform, Theorem §CA.3.1 gives $(\check\varphi)\tilde{} = \varphi = (\tilde\varphi)\check{}$. Define $\check T[\varphi] = T[\check\varphi]$. Then $(\tilde T)\check{}[\varphi] = \tilde T[\check\varphi] = T[(\check\varphi)\tilde{}] = T[\varphi]$, and likewise in the other order.
+> **Step 3** (part 2: inverse). With $\check\varphi$ the inverse transform, Theorem §CA.3.1 gives $\mathcal F\check\varphi = \varphi = \mathcal F^{-1}\tilde\varphi$. Define $\check T[\varphi] = T[\check\varphi]$. Then $\mathcal F^{-1}\tilde T[\varphi] = \tilde T[\check\varphi] = T[\mathcal F\check\varphi] = T[\varphi]$, and likewise in the other order.
 >
 > **Step 4** (part 2: limits). $\tilde T_\varepsilon[\varphi] = T_\varepsilon[\tilde\varphi] \to T[\tilde\varphi] = \tilde T[\varphi]$, because $\tilde\varphi$ is one fixed test function.
 >
@@ -204,10 +204,10 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 >
 > **Step 2** (part 2). $\int d^4x\,e^{-iq\cdot x}f(x)e^{ip\cdot x} = \int d^4x\,f(x)e^{i(p - q)\cdot x} = \tilde f(p - q)$.
 >
-> **Step 3** (derivative rule in $\mathcal S'$). Here the transform of a test function $\varphi(p)$ is $\tilde\varphi(x) = \int d^4p\,\varphi(p)e^{ip\cdot x}$, so $\partial_\mu\tilde\varphi(x) = \int d^4p\,\varphi(p)\,ip_\mu e^{ip\cdot x} = (ip_\mu\varphi)\tilde{}(x)$. Then, by [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]],
+> **Step 3** (derivative rule in $\mathcal S'$). Here the transform of a test function $\varphi(p)$ is $\tilde\varphi(x) = \int d^4p\,\varphi(p)e^{ip\cdot x}$, so $\partial_\mu\tilde\varphi(x) = \int d^4p\,\varphi(p)\,ip_\mu e^{ip\cdot x} = \mathcal F(ip_\mu\varphi)(x)$. Then, by [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]],
 >
 > $$
-> \widetilde{\partial_\mu T}[\varphi] = (\partial_\mu T)[\tilde\varphi] = -T[\partial_\mu\tilde\varphi] = -T\bigl[(ip_\mu\varphi)\tilde{}\,\bigr] = -\tilde T[ip_\mu\varphi] = (-ip_\mu\tilde T)[\varphi] .
+> \widetilde{\partial_\mu T}[\varphi] = (\partial_\mu T)[\tilde\varphi] = -T[\partial_\mu\tilde\varphi] = -T\bigl[\mathcal F(ip_\mu\varphi)\,\bigr] = -\tilde T[ip_\mu\varphi] = (-ip_\mu\tilde T)[\varphi] .
 > $$
 >
 > **Step 4** (convolution rule in $\mathcal S'$). With $(D * j)(x) = D[j(x - \cdot)]$, a smooth polynomially bounded function,
@@ -216,7 +216,7 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 > \widetilde{D * j}[\varphi] = \int d^4x\,D\bigl[j(x - \cdot)\bigr]\tilde\varphi(x) = D\Bigl[\int d^4x\,j(x - \cdot)\,\tilde\varphi(x)\Bigr] ,
 > $$
 >
-> the exchange of $D$ with the $x$-integral holding because the Riemann sums of the $x$-integral converge in $\mathcal S$ (sketch). The function in brackets is, at the point $y$, $\int d^4x\,j(x - y)\int d^4p\,\varphi(p)e^{ip\cdot x} = \int d^4p\,\varphi(p)e^{ip\cdot y}\int d^4u\,j(u)e^{ip\cdot u} = (\tilde j\varphi)\tilde{}(y)$, with $x = u + y$ and Fubini. So $\widetilde{D * j}[\varphi] = D[(\tilde j\varphi)\tilde{}\,] = \tilde D[\tilde j\varphi] = (\tilde j\tilde D)[\varphi]$.
+> the exchange of $D$ with the $x$-integral holding because the Riemann sums of the $x$-integral converge in $\mathcal S$ (sketch). The function in brackets is, at the point $y$, $\int d^4x\,j(x - y)\int d^4p\,\varphi(p)e^{ip\cdot x} = \int d^4p\,\varphi(p)e^{ip\cdot y}\int d^4u\,j(u)e^{ip\cdot u} = \mathcal F(\tilde j\varphi)(y)$, with $x = u + y$ and Fubini. So $\widetilde{D * j}[\varphi] = D[\mathcal F(\tilde j\varphi)\,] = \tilde D[\tilde j\varphi] = (\tilde j\tilde D)[\varphi]$.
 >
 > **What the derivation shows.**
 > - These are the precise conditions behind the rules of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]: the derivative rule always holds, the convolution rule whenever one factor is a test function, as every physical source is.
@@ -466,7 +466,7 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 ^thm-ca-3-12
 
 > [!derivation]- Derivation
-> **Step 1** (part 1: invariance passes to the transform). With $\check\varphi(p) = \int\frac{d^4x}{(2\pi)^4}\varphi(x)e^{ip\cdot x}$, the substitution $x = \Lambda y$ ($|\det\Lambda| = 1$, $p\cdot\Lambda y = \Lambda^{-1}p\cdot y$) gives $(\varphi\circ\Lambda^{-1})\check{} = \check\varphi\circ\Lambda^{-1}$. Then $f[\varphi\circ\Lambda^{-1}] = \tilde f[\check\varphi\circ\Lambda^{-1}] = \tilde f[\check\varphi] = f[\varphi]$ (Theorem §CA.3.2 and [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]). This is rule 4 of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] for distributions.
+> **Step 1** (part 1: invariance passes to the transform). With $\check\varphi(p) = \int\frac{d^4x}{(2\pi)^4}\varphi(x)e^{ip\cdot x}$, the substitution $x = \Lambda y$ ($|\det\Lambda| = 1$, $p\cdot\Lambda y = \Lambda^{-1}p\cdot y$) gives $\mathcal F^{-1}(\varphi\circ\Lambda^{-1}) = \check\varphi\circ\Lambda^{-1}$. Then $f[\varphi\circ\Lambda^{-1}] = \tilde f[\check\varphi\circ\Lambda^{-1}] = \tilde f[\check\varphi] = f[\varphi]$ (Theorem §CA.3.2 and [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]). This is rule 4 of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] for distributions.
 >
 > **Step 2** (part 1: the orbits). Rotate $\mathbf x$ onto the $x^1$-axis: $x = (t, r, 0, 0)$. If $t^2 - r^2 = c > 0$ and $t > 0$, boost along $x^1$ with $v = r/t$: $\gamma = t/\sqrt c$, $t' = \gamma(t - vr) = \frac{t}{\sqrt c}\cdot\frac{c}{t} = \sqrt c$, $x'^1 = \gamma(r - vt) = 0$. If $c < 0$, boost with $v = t/r$: $t' = 0$, $x'^1 = \frac{r}{\sqrt{-c}}\cdot\frac{r^2 - t^2}{r} = \sqrt{-c}$. So every point with $x^2 = c$ is carried to $(\pm\sqrt c, \mathbf 0)$ ($c > 0$, sign of $x^0$ kept) or $(0, \sqrt{-c}, 0, 0)$ ($c < 0$), and an invariant function is constant on each such set.
 >
@@ -492,7 +492,8 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 > - The angular integral is the first step of every position-space propagator: the Wightman function ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]]), the scattering Green's function $-e^{ik\rho}/4\pi\rho$ ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]]) and the Yukawa potential ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]).
 > - Integration by parts with a delta function is how $[\pi, H]$ acquires $\nabla^2\phi$ ([[§C2.7 Heisenberg Fields#^thm-c2-7-2|Theorem §C2.7.2]]); the divergence theorem behind it is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]], and the four-dimensional version is the step in every Euler–Lagrange and Noether derivation (QFT C1, planned).
 > - Plancherel with $(2\pi)^{-3}$ on the momentum side is why the norm of a one-particle wave packet is $\int\frac{d^3p}{(2\pi)^32E_{\mathbf p}}|g|^2$, and why the number of particles radiated by a source is finite when $\tilde j$ is a Schwartz function ([[§C2.14 Particle Production by a Classical Source|§C2.14]]).
-> - The damping factor of Theorem §CA.3.10 is the impulse response of a damped oscillator seen from the frequency side ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]]) and the adiabatic switching $e^{-\varepsilon|t|}$ of time-dependent perturbation theory ([[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]]).
+> - The damping factor of Theorem §CA.3.10 is the impulse response of a damped oscillator seen from the frequency side ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]]) and the adiabatic switching $e^{\eta t}$, $\eta \to 0^+$, of time-dependent perturbation theory ([[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]]).
+> - Inversion for functions that are only piecewise smooth and integrable, with the midpoint value at jumps, is the Fourier integral theorem of [[§14 Fourier Integral#^thm-14-1|341 Thm. §14.1]]; Theorem §CA.3.1 trades that generality for Schwartz functions, the class on which the transform extends to distributions.
 > - The Euclidean radial formula with $J_1$ is the four-dimensional analogue of the sine transform of Theorem §CA.3.9: in $n$ dimensions the kernel is $J_{n/2 - 1}(pR)/(pR)^{n/2 - 1}$, which for $n = 3$ is proportional to $\sin(pR)/pR$.
 > - **Used in**, statement by statement (C2 places; to be refined to items):
 >   - Theorem §CA.3.1 (inversion, Plancherel): mode extraction and wave-packet norms — [[§C2.2 Mode Expansion and the Mode Algebra|§C2.2]], [[§C2.4 Particles and Relativistic Normalization|§C2.4]], [[§C2.14 Particle Production by a Classical Source|§C2.14]].
