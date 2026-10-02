@@ -1,0 +1,16 @@
+% Figure for Complex Variables §83.
+\begin{tikzpicture}[x=1.4cm, y=1.4cm, line cap=round, line join=round,
+    arr/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{stealth}}}}]
+  \draw[-stealth, thin] (-2.6,0) -- (2.7,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,-1.15) -- (0,1.5) node[above, font=\scriptsize] {$y$};
+  \draw[figB, line width=0.9pt, arr=0.2, arr=0.45, arr=0.7, arr=0.95] (-2,0) -- (2,0) -- (2,1) -- (-2,1) -- cycle;
+  \node[figB, font=\scriptsize, above right] at (2,1) {$C$};
+  \fill[figR] (1.2247,0.7071) circle (0.04) node[right, font=\scriptsize] {$z_0$};
+  \fill[figR] (-1.2247,0.7071) circle (0.04) node[left, font=\scriptsize] {$-\bar z_0$};
+  \draw[figR, fill=white] (1.2247,-0.7071) circle (0.04) node[right, font=\scriptsize] {$\bar z_0$};
+  \draw[figR, fill=white] (-1.2247,-0.7071) circle (0.04) node[left, font=\scriptsize] {$-z_0$};
+  \draw[figO, thin, dashed] (0,0) -- (1.2247,0.7071);
+  \draw[figO, thin] (0.45,0) arc (0:30:0.45) node[pos=0.6, right, font=\scriptsize] {$\frac{\pi}{6}$};
+  \foreach \x in {-2,-1,1,2} \node[font=\scriptsize, below] at (\x,0) {$\x$};
+  \node[font=\scriptsize, above left] at (0,1) {$1$};
+\end{tikzpicture}

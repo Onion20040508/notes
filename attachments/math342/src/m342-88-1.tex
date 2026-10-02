@@ -1,0 +1,13 @@
+% Figure for Complex Variables §88.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.4cm, height=5cm, xmin=0, xmax=3.45, ymin=0, ymax=1.25,
+      xtick={0,1.5708,3.1416}, xticklabels={$0$,$\frac{\pi}{2}$,$\pi$}, ytick={0,1}, 
+      xlabel={$\theta$}, xlabel style={at={(axis description cs:1,0)}, anchor=north west}, clip=false]
+    \addplot[figB, domain=0:3.1416, samples=120] {sin(deg(x))};
+    \addplot[figR, domain=0:1.5708, samples=2] {2*x/pi};
+    \addplot[figR, dashed, domain=1.5708:3.1416, samples=2] {2*(pi-x)/pi};
+    \addplot[black!40, dashed, thin] coordinates {(1.5708,0) (1.5708,1)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:2.45,0.95) {$y = \sin\theta$};
+    \node[figR, font=\scriptsize, anchor=north west] at (axis cs:0.75,0.42) {$y = 2\theta/\pi$};
+  \end{axis}
+\end{tikzpicture}

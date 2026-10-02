@@ -1,0 +1,22 @@
+% Figure for Complex Variables §85.
+\begin{tikzpicture}[line cap=round, line join=round,
+    arr/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
+  \draw[-stealth, thin] (-3.7,0) -- (3.9,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,-2.4) -- (0,3.6) node[above, font=\scriptsize] {$y$};
+  % closed semicircular contour
+  \draw[figB, line width=1.0pt, arr=0.3, arr=0.78] (-3,0) -- (3,0);
+  \draw[figB, line width=1.0pt, arr=0.25, arr=0.75] (3,0) arc (0:180:3);
+  \node[figB, font=\small] at (2.45,2.35) {$C_R$};
+  \fill (-3,0) circle (0.04) node[below, font=\scriptsize] {$-R$};
+  \fill (3,0) circle (0.04) node[below, font=\scriptsize] {$R$};
+  \node[font=\scriptsize, below left] at (0,0) {$O$};
+  % zeros of q above the axis (inside) and their conjugates below
+  \foreach \x/\y/\k in {-1.7/0.9/1, -0.8/1.9/2, 0.9/1.2/{}, 1.6/2.2/n} {
+    \fill[figR] (\x,\y) circle (0.06);
+    \draw[black!45] (\x,-\y) circle (0.06);
+  }
+  \node[figR, font=\scriptsize, below] at (-1.7,0.85) {$z_1$};
+  \node[figR, font=\scriptsize, below] at (-0.8,1.85) {$z_2$};
+  \node[figR, font=\scriptsize, below] at (1.6,2.15) {$z_n$};
+  \node[black!55, font=\scriptsize, right] at (1.75,-1.6) {$\bar z_k$};
+\end{tikzpicture}

@@ -1,0 +1,20 @@
+% Figure for Complex Variables §17.
+\begin{tikzpicture}[line cap=round, line join=round]
+  \draw[thin] (-4.620,0) -- (4.760,0) node[right, font=\scriptsize] {plane};
+  \draw[line width=0.8pt] (0,0) circle (1.400);
+  \draw[thin, dashed] (0,-1.400) -- (0,1.400);
+  \draw[figR, line width=0.8pt] (0,1.400) -- (3.640,0);
+  \fill[figR] (3.640,0) circle (1.6pt) node[below, font=\scriptsize] {$z$};
+  \fill[figR] (0.938,1.039) circle (1.6pt) node[above right, font=\scriptsize] {$P$};
+  \draw[figB, line width=0.8pt] (0,1.400) -- (0.630,0);
+  \draw[figB, line width=0.8pt, dashed] (0.630,0) -- (1.048,-0.928);
+  \fill[figB] (0.630,0) circle (1.6pt) node[below, font=\scriptsize] {$z'$};
+  \fill[figB] (1.048,-0.928) circle (1.6pt) node[below right, font=\scriptsize] {$P'$};
+  \fill (0,1.400) circle (1.6pt) node[above, font=\scriptsize] {$N$};
+  \fill (0,0) circle (1.2pt) node[below left, font=\scriptsize] {$O$};
+  \draw[figO, line width=2.2pt, opacity=0.6] (2.800,0) -- (4.620,0);
+  \draw[figO, line width=2.2pt, opacity=0.6] (-2.800,0) -- (-4.620,0);
+  \draw[figO, line width=2.2pt, opacity=0.6] (1.120,0.840) -- (1.079,0.892) -- (1.035,0.943) -- (0.989,0.991) -- (0.941,1.037) -- (0.891,1.080) -- (0.838,1.121) -- (0.784,1.160) -- (0.728,1.196) -- (0.670,1.229) -- (0.611,1.260) -- (0.551,1.287) -- (0.489,1.312) -- (0.426,1.334) -- (0.362,1.352) -- (0.297,1.368) -- (0.232,1.381) -- (0.166,1.390) -- (0.100,1.396) -- (0.033,1.400) -- (-0.033,1.400) -- (-0.100,1.396) -- (-0.166,1.390) -- (-0.232,1.381) -- (-0.297,1.368) -- (-0.362,1.352) -- (-0.426,1.334) -- (-0.489,1.312) -- (-0.551,1.287) -- (-0.611,1.260) -- (-0.670,1.229) -- (-0.728,1.196) -- (-0.784,1.160) -- (-0.838,1.121) -- (-0.891,1.080) -- (-0.941,1.037) -- (-0.989,0.991) -- (-1.035,0.943) -- (-1.079,0.892) -- (-1.120,0.840);
+  \draw[thin] (2.800,0.06) -- (2.800,-0.06) node[below, font=\scriptsize] {$1/\varepsilon$};
+  \draw[thin] (-2.800,0.06) -- (-2.800,-0.06) node[below, font=\scriptsize] {$-1/\varepsilon$};
+\end{tikzpicture}

@@ -1,0 +1,40 @@
+% Figure for Complex Variables §51.
+\begin{tikzpicture}[line cap=round, line join=round, scale=1.0]
+  % left panel: nested squares shrinking to z0
+  \begin{scope}[scale=1.45]
+    \draw[figB, line width=0.8pt] (0,0) rectangle (3.2,3.2);
+    \draw[figB, line width=0.8pt] (1.6,1.6) rectangle (3.2,3.2);
+    \draw[figB, line width=0.8pt] (1.6,1.6) rectangle (2.4,2.4);
+    \draw[figB, line width=0.8pt] (2.0,1.6) rectangle (2.4,2.0);
+    \draw[figB, line width=0.7pt] (2.0,1.8) rectangle (2.2,2.0);
+    \node[figB, font=\scriptsize] at (0.3,0.25) {$\sigma_0$};
+    \node[figB, font=\scriptsize] at (2.95,2.95) {$\sigma_1$};
+    \node[figB, font=\scriptsize, anchor=east] (s2) at (1.3,2.75) {$\sigma_2$};
+    \draw[figB, line width=0.4pt] (s2.east) -- (1.68,2.32);
+    \node[figB, font=\scriptsize, anchor=west] (s3) at (2.75,1.25) {$\sigma_3$};
+    \draw[figB, line width=0.4pt] (s3.west) -- (2.36,1.66);
+    \draw[figR, dashed, line width=0.6pt] (2.13,1.88) circle (0.42);
+    \draw[figR, line width=0.5pt] (2.13,1.88) -- ++(200:0.42);
+    \node[figR, font=\scriptsize] at (1.55,1.68) {$\delta$};
+    \fill[figR] (2.13,1.88) circle (0.9pt);
+    \node[figR, font=\scriptsize, anchor=north] (z0) at (1.95,1.0) {$z_0$};
+    \draw[figR, line width=0.4pt] (z0.north) -- (2.11,1.84);
+    \node[font=\small] at (1.6,-0.35) {(a)};
+  \end{scope}
+  % right panel: two adjacent squares, cancellation on the common side
+  \begin{scope}[xshift=5.6cm, yshift=1.5cm]
+    \tikzset{edge/.style={line width=0.8pt, postaction={decorate}, decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=5pt]}}}}}
+    \def\e{0.07}
+    \draw[edge, figB] (\e,\e) -- (1.6-\e,\e);
+    \draw[edge, figR] (1.6-\e,\e) -- (1.6-\e,1.6-\e);
+    \draw[edge, figB] (1.6-\e,1.6-\e) -- (\e,1.6-\e);
+    \draw[edge, figB] (\e,1.6-\e) -- (\e,\e);
+    \draw[edge, figB] (1.6+\e,\e) -- (3.2-\e,\e);
+    \draw[edge, figB] (3.2-\e,\e) -- (3.2-\e,1.6-\e);
+    \draw[edge, figB] (3.2-\e,1.6-\e) -- (1.6+\e,1.6-\e);
+    \draw[edge, figR] (1.6+\e,1.6-\e) -- (1.6+\e,\e);
+    \node[font=\scriptsize] at (0.8,0.8) {$C_j$};
+    \node[font=\scriptsize] at (2.4,0.8) {$C_k$};
+    \node[font=\small] at (1.6,-2.0) {(b)};
+  \end{scope}
+\end{tikzpicture}

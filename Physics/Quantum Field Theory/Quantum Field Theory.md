@@ -22,7 +22,7 @@ Arrows point from a chapter to the chapters that use it; labels count the citati
 graph TD
   C2["C2 The Quantum Scalar Field"]
   CA["CA Mathematical Methods"]
-  C2 -->|23| CA
+  C2 -->|49| CA
   CA -.->|121| C2
 ```
 

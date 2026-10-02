@@ -1,0 +1,12 @@
+% Figure for Complex Variables §62.
+\begin{tikzpicture}[line cap=round, line join=round]
+  \fill[figB!8] (2,0) circle (2.2361);
+  \draw[-stealth, thin] (-1.2,0) -- (4.8,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,-2.6) -- (0,2.6) node[above, font=\scriptsize] {$y$};
+  \draw[figB, line width=0.9pt] (2,0) circle (2.2361);
+  \draw[figO, dashed, line width=0.7pt] (2,0) -- (0,-1) node[pos=0.5, below, font=\scriptsize, black, sloped] {$\sqrt5$};
+  \fill (2,0) circle (1.4pt) node[below right, font=\scriptsize] {$2$};
+  \fill[figR] (0,-1) circle (1.8pt) node[left, font=\scriptsize] {$-i$};
+  \node[font=\scriptsize, figB] at (3.3,1.2) {$|z - 2| < \sqrt5$};
+  \node[below left, font=\scriptsize] at (0,0) {$O$};
+\end{tikzpicture}

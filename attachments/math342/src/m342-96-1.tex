@@ -1,0 +1,43 @@
+% Figure for Complex Variables §96.
+\begin{tikzpicture}[line cap=round, line join=round]
+  \draw[-stealth, thin, black!70] (-0.450,0.000) -- (1.620,0.000) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin, black!70] (0.000,-0.450) -- (0.000,3.060) node[above, font=\scriptsize] {$y$};
+  \fill[figB!12] (0.000,0.000) -- (0.900,0.000) -- (0.900,1.800) -- (0.000,1.800) -- cycle;
+  \draw[figB, line width=0.9pt] (0.000,0.000) -- (0.900,0.000) -- (0.900,0.000) -- (0.900,1.800) -- (0.900,1.800) -- (0.000,1.800) -- (0.000,1.800) -- (0.000,0.000);
+  \fill[black] (0.000,0.000) circle (1.1pt);
+  \node[below left, font=\scriptsize, inner sep=1.5pt] at (0.000,0.000) {$O$};
+  \fill[black] (0.900,0.000) circle (1.1pt);
+  \node[below right, font=\scriptsize, inner sep=1.5pt] at (0.900,0.000) {$A$};
+  \fill[black] (0.900,1.800) circle (1.1pt);
+  \node[above, font=\scriptsize, inner sep=1.5pt] at (0.900,1.800) {$1+2i$};
+  \fill[black] (0.000,1.800) circle (1.1pt);
+  \node[left, font=\scriptsize, inner sep=1.5pt] at (0.000,1.800) {$B$};
+  \draw[-stealth, thin, black!70] (3.060,0.000) -- (7.020,0.000) node[right, font=\scriptsize] {$X$};
+  \draw[-stealth, thin, black!70] (5.400,-0.450) -- (5.400,3.060) node[above, font=\scriptsize] {$Y$};
+  \fill[figB!12] (5.400,0.000) -- (6.300,0.900) -- (4.500,2.700) -- (3.600,1.800) -- cycle;
+  \draw[figB, line width=0.9pt] (5.400,0.000) -- (6.300,0.900) -- (6.300,0.900) -- (4.500,2.700) -- (4.500,2.700) -- (3.600,1.800) -- (3.600,1.800) -- (5.400,0.000);
+  \fill[black] (5.400,0.000) circle (1.1pt);
+  \node[below left, font=\scriptsize, inner sep=1.5pt] at (5.400,0.000) {$O$};
+  \fill[black] (6.300,0.900) circle (1.1pt);
+  \node[right, font=\scriptsize, inner sep=1.5pt] at (6.300,0.900) {$A'$};
+  \fill[black] (4.500,2.700) circle (1.1pt);
+  \node[above, font=\scriptsize, inner sep=1.5pt] at (4.500,2.700) {$-1+3i$};
+  \fill[black] (3.600,1.800) circle (1.1pt);
+  \node[left, font=\scriptsize, inner sep=1.5pt] at (3.600,1.800) {$B'$};
+  \draw[figR, thin, -stealth] (6.120,0.000) arc (0:45:0.720);
+  \node[right, font=\scriptsize, inner sep=1.5pt, text=figR] at (6.255,0.315) {$\frac{\pi}{4}$};
+  \draw[-stealth, thin, black!70] (9.550,0.000) -- (13.240,0.000) node[right, font=\scriptsize] {$u$};
+  \draw[-stealth, thin, black!70] (10.000,-0.450) -- (10.000,3.060) node[above, font=\scriptsize] {$v$};
+  \fill[figB!12] (11.800,0.000) -- (12.700,0.900) -- (10.900,2.700) -- (10.000,1.800) -- cycle;
+  \draw[figB, line width=0.9pt] (11.800,0.000) -- (12.700,0.900) -- (12.700,0.900) -- (10.900,2.700) -- (10.900,2.700) -- (10.000,1.800) -- (10.000,1.800) -- (11.800,0.000);
+  \fill[black] (11.800,0.000) circle (1.1pt);
+  \node[below, font=\scriptsize, inner sep=1.5pt] at (11.800,0.000) {$2$};
+  \fill[black] (12.700,0.900) circle (1.1pt);
+  \node[right, font=\scriptsize, inner sep=1.5pt] at (12.700,0.900) {$A''$};
+  \fill[black] (10.900,2.700) circle (1.1pt);
+  \node[above, font=\scriptsize, inner sep=1.5pt] at (10.900,2.700) {$1+3i$};
+  \fill[black] (10.000,1.800) circle (1.1pt);
+  \node[left, font=\scriptsize, inner sep=1.5pt] at (10.000,1.800) {$B''$};
+  \draw[-stealth, thick, black!60] (1.87,1.20) -- node[above, font=\scriptsize] {$Z=(1+i)z$} (2.81,1.20);
+  \draw[-stealth, thick, black!60] (7.27,1.20) -- node[above, font=\scriptsize] {$w=Z+2$} (9.30,1.20);
+\end{tikzpicture}
