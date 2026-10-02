@@ -1,0 +1,22 @@
+% Wigner's construction on the mass hyperboloid: k -> p -> Lambda p -> k (written for QFT §C3.5★)
+\begin{tikzpicture}[>=Stealth, font=\small, scale=1.05]
+  \draw[->, thin, gray] (-3.4,0) -- (3.4,0) node[below] {$\mathbf p$};
+  \draw[->, thin, gray] (0,-0.2) -- (0,3.6) node[left] {$p^0$};
+  \draw[dashed, gray] (0,0) -- (3.2,3.2);
+  \draw[dashed, gray] (0,0) -- (-3.2,3.2);
+  \node[gray, anchor=south west] at (2.55,3.15) {\scriptsize light cone};
+  \draw[figB, line width=1.1pt, domain=-1.85:1.85, samples=80] plot ({sinh(\x)}, {cosh(\x)});
+  \node[figB, anchor=west] at ({sinh(1.85)+0.05}, {cosh(1.85)-0.25}) {\scriptsize $H^+_m$: $p^2=m^2$, $p^0>0$};
+  \coordinate (k) at (0,1);
+  \coordinate (p) at ({sinh(1.0)}, {cosh(1.0)});
+  \coordinate (Lp) at ({-sinh(1.45)}, {cosh(1.45)});
+  \fill[figR] (k) circle (2.3pt);
+  \node[figR, anchor=east] at (-0.55,0.5) {$k=(m,\mathbf 0)$};
+  \fill[black] (p) circle (2.1pt) node[right=3pt] {$p$};
+  \fill[black] (Lp) circle (2.1pt) node[left=3pt] {$\Lambda p$};
+  \draw[->, figG, thick] (0.12,1.08) to[bend left=28] node[pos=0.55, above left=-1pt] {$V(p)$} ($(p)+(-0.12,0.06)$);
+  \draw[->, thick] ($(p)+(-0.05,0.14)$) to[bend right=38] node[pos=0.5, above=1pt] {$\Lambda$} ($(Lp)+(0.1,0.12)$);
+  \draw[->, figO, thick] ($(Lp)+(0.14,-0.08)$) to[bend right=40] node[pos=0.45, below left=-1pt] {$V(\Lambda p)^{-1}$} (-0.12,1.06);
+  \draw[->, figR, thick] (0.1,0.86) arc[start angle=150, end angle=-170, radius=0.26];
+  \node[figR, anchor=west] at (0.66,0.5) {\scriptsize $W(\Lambda,p)=V(\Lambda p)^{-1}\Lambda V(p)\in G_k$};
+\end{tikzpicture}
