@@ -6,7 +6,7 @@
     \fill[black] (-1.5,0) circle (1.9pt); \node at (-1.5,-0.8) {\scriptsize$-E$};
 \fill[black] (1.5,0) circle (1.9pt); \node at (1.5,-0.8) {\scriptsize$E$};
     \draw[figB,thick,cmid] (-3,0)--(-1.85,0) arc (180:0:0.35)--(1.15,0) arc (180:0:0.35)--(3,0);
-    \node at (0,-1.55) {retarded $C_{R}$: above / above};
+    \node[align=center] at (0,-1.8){retarded $C_R$: above / above\\ $D_R=\theta(\xi^0)\,iD$};
   \end{scope}
   \begin{scope}[xshift=9.6cm,yshift=0cm]
     \draw[->,gray] (-3.4,0)--(3.4,0) node[right]{\scriptsize$\operatorname{Re}p^{0}$};
@@ -14,7 +14,7 @@
     \fill[black] (-1.5,0) circle (1.9pt); \node at (-1.5,-0.8) {\scriptsize$-E$};
 \fill[black] (1.5,0) circle (1.9pt); \node at (1.5,-0.8) {\scriptsize$E$};
     \draw[figB,thick,cmid] (-3,0)--(-1.85,0) arc (180:360:0.35)--(1.15,0) arc (180:360:0.35)--(3,0);
-    \node at (0,-1.55) {advanced $C_{A}$: below / below};
+    \node[align=center] at (0,-1.8){advanced $C_A$: below / below\\ $D_A=-\theta(-\xi^0)\,iD$};
   \end{scope}
   \begin{scope}[xshift=0cm,yshift=-4.3cm]
     \draw[->,gray] (-3.4,0)--(3.4,0) node[right]{\scriptsize$\operatorname{Re}p^{0}$};
@@ -22,7 +22,7 @@
     \fill[black] (-1.5,0) circle (1.9pt); \node at (-1.5,-0.8) {\scriptsize$-E$};
 \fill[black] (1.5,0) circle (1.9pt); \node at (1.5,-0.8) {\scriptsize$E$};
     \draw[figB,thick,cmid] (-3,0)--(-1.85,0) arc (180:360:0.35)--(1.15,0) arc (180:0:0.35)--(3,0);
-    \node at (0,-1.55) {Feynman $C_{F}$: below / above};
+    \node[align=center] at (0,-1.8){Feynman $C_F$: below / above\\ $D_F=\langle0|T\phi\phi|0\rangle$};
   \end{scope}
   \begin{scope}[xshift=9.6cm,yshift=-4.3cm]
     \draw[->,gray] (-3.4,0)--(3.4,0) node[right]{\scriptsize$\operatorname{Re}p^{0}$};
@@ -30,6 +30,6 @@
     \fill[black] (-1.5,0) circle (1.9pt); \node at (-1.5,-0.8) {\scriptsize$-E$};
 \fill[black] (1.5,0) circle (1.9pt); \node at (1.5,-0.8) {\scriptsize$E$};
     \draw[figB,thick,cmid] (-3,0)--(-1.85,0) arc (180:0:0.35)--(1.15,0) arc (180:360:0.35)--(3,0);
-    \node at (0,-1.55) {anti-Feynman $C_{\bar F}$: above / below};
+    \node[align=center] at (0,-1.8){anti-Feynman $C_{\bar F}$: above / below\\ $D_{\bar F}=-\langle0|\bar T\phi\phi|0\rangle$};
   \end{scope}
 \end{tikzpicture}

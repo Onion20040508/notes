@@ -1,0 +1,32 @@
+\begin{tikzpicture}[scale=0.62,>=Stealth,font=\small,
+  cmid/.style={postaction={decorate},decoration={markings,mark=at position 0.1 with {\arrow{>}},mark=at position 0.5 with {\arrow{>}},mark=at position 0.9 with {\arrow{>}}}}]
+  \begin{scope}[xshift=0cm]
+    \draw[->,gray] (-3.4,0)--(3.4,0) node[right]{\scriptsize$\operatorname{Re}p^{0}$};
+    \draw[->,gray] (0,-1.6)--(0,1.8) node[above]{\scriptsize$\operatorname{Im}p^{0}$};
+    \draw[figB,thick,cmid] (-3,0)--(3,0);
+    \fill[figR] (-1.5,0.45) circle (2.2pt); \node[anchor=south] at (-1.5,0.55) {\scriptsize$-E+i\epsilon$};
+    \fill[figR] (1.5,-0.45) circle (2.2pt); \node[anchor=north] at (1.5,-0.55) {\scriptsize$E-i\epsilon$};
+    \node[align=center,font=\footnotesize] at (0,-2.4) {(a) Feynman: $p^{2}-m^{2}+i\epsilon$};
+  \end{scope}
+  \begin{scope}[xshift=8.4cm]
+    \draw[->,gray] (-3.4,0)--(3.4,0) node[right]{\scriptsize$\operatorname{Re}p^{0}$};
+    \draw[->,gray] (0,-1.6)--(0,1.8) node[above]{\scriptsize$\operatorname{Im}p^{0}$};
+    \draw[figB,thick,cmid] (-3,0)--(3,0);
+    \fill[figR] (-1.5,-0.45) circle (2.2pt); \node[anchor=north] at (-1.5,-0.55) {\scriptsize$-E-i\epsilon$};
+    \fill[figR] (1.5,-0.45) circle (2.2pt); \node[anchor=north] at (1.5,-0.55) {\scriptsize$E-i\epsilon$};
+    \node[align=center,font=\footnotesize] at (0,-2.4) {(b) retarded: both poles below};
+  \end{scope}
+  \begin{scope}[xshift=16.8cm]
+    \draw[->,gray] (-3.4,0)--(3.4,0) node[right]{\scriptsize$\operatorname{Re}p^{0}$};
+    \draw[->,gray] (0,-3.0)--(0,3.2) node[above]{\scriptsize$\operatorname{Im}p^{0}$};
+    \fill[figR] (-1.5,0.3) circle (2.2pt);
+    \fill[figR] (1.5,-0.3) circle (2.2pt);
+    \draw[gray,thick,dashed] (-3,0)--(3,0);
+    \draw[figB,very thick,->] (0,-2.8)--(0,2.8);
+    \draw[figO,thick,->] (2.3,0.25) arc (6:78:2.3);
+    \draw[figO,thick,->] (-2.3,-0.25) arc (186:258:2.3);
+    \node[figO] at (2.6,1.7) {\scriptsize rotate};
+    \node[figB,right] at (0.1,2.5) {\scriptsize$p^{0}=ip_{4}$};
+    \node[align=center,font=\footnotesize] at (0,-3.6) {(c) Wick rotation: quadrants I, III free};
+  \end{scope}
+\end{tikzpicture}
