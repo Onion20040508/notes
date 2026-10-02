@@ -143,6 +143,7 @@ tags: [measure-theory, math551]
 > - Riemann counterpart for non-negative integrands in MATH 452: [[§15 Multivariable Integration#^thm-15-12|Fubini–Tonelli: Non-negative Functions]] (452 §15.12).
 > - Proved below ([[§17 Invariance Properties and Fubini's Theorem#^pf-17-3|Proof of Tonelli's Theorem]]) through the closure properties of the [[§17 Invariance Properties and Fubini's Theorem#^def-17-2|Tonelli class]].
 > - Computational version for continuous functions on boxes: [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] and [[§103 Triple Integrals#^thm-103-1|Calc Thm. §103.1]] (with worked examples).
+> - Used in ODEs: an absolute bound on the wedge $0 \le \tau \le t$ makes the order of integration reversible in the convolution theorem for Laplace transforms, [[§26★ The Convolution Integral#^thm-26-2|331 Thm. §26.2]].
 
 ## The Tonelli Class and Its Closure Properties
 
@@ -308,6 +309,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 > - MATH 452 Riemann version: [[Fubini's Theorem]] (452 §15.8), for continuous $f$ on a rectangle, extended to [[§15 Multivariable Integration#^thm-15-9|Type I regions]] (452 §15.9).
 > - Used for the volume of sheared rectangles in [[§18 Differentiation Theory#^thm-18-22|Linear Maps Preserve Null Sets]] (§18.22).
 > - Computational version for continuous functions on boxes: [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] and [[§103 Triple Integrals#^thm-103-1|Calc Thm. §103.1]] (with worked examples).
+> - Used in ODEs: reversing the order of integration proves the algebraic properties of convolution, [[§26★ The Convolution Integral#^prop-26-1|331 Prop. §26.1]], and the convolution theorem $\mathcal{L}\{f * g\} = F(s)G(s)$, [[§26★ The Convolution Integral#^thm-26-2|331 Thm. §26.2]].
 
 > [!remark] Remark: Why Integrability is Essential
 > The hypothesis $f \in L(\mathbb{R}^n)$ (equivalently $\iint |f| < \infty$) cannot be dropped. Without it, the subtraction $\int f^+\,dy - \int f^-\,dy$ can be $\infty - \infty$, and the iterated integrals can depend on the order of integration. A classical counterexample ([[§15 Multivariable Integration#^ex-15-2|452 Ex. §15.2]]): on $[0,1]^2$, define $f(x,y) = \frac{x^2 - y^2}{(x^2 + y^2)^2}$. Then $\int_0^1\!\left(\int_0^1 f\,dy\right)dx = \pi/4$ but $\int_0^1\!\left(\int_0^1 f\,dx\right)dy = -\pi/4$.

@@ -63,6 +63,7 @@ Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a fla
 
 > [!remark]- Connections
 > - Lebesgue version, with uniform convergence replaced by a.e. convergence and an integrable bound: [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]] (dominated convergence).
+> - Used in ODEs: passing to the limit in $\phi_{n+1}(t) = \int_0^t f(s, \phi_n(s))\,ds$ shows that the limit of the Picard iterates solves the integral equation, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
 
 > [!example] Example §25.2: Computing a limit of integrals
 > Compute $\displaystyle\lim_{n\to\infty} \int_0^1 \frac{n + \cos x}{2n + \sin^2 x}\,dx$.
@@ -127,6 +128,7 @@ Now we return toward power series — via general series of functions.
 
 > [!remark]- Connections
 > - Lebesgue analogue for term-by-term integration, assuming only $\sum \int |f_k| < \infty$ instead of uniform bounds: [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]].
+> - Used in ODEs: the M-test with $M_k = MK^kh^{k+1}/(k+1)!$ gives the uniform convergence of the Picard iterates in the existence and uniqueness theorem for $y' = f(t, y)$, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
 
 > [!example] Example §25.3: Three applications of the M-test
 > **(1)** $\displaystyle\sum_{n=1}^\infty \frac{\cos nx}{n^2}$ converges uniformly on $\mathbb{R}$ — take $M_k = \tfrac{1}{k^2}$ — and hence defines a continuous function on $\mathbb{R}$.

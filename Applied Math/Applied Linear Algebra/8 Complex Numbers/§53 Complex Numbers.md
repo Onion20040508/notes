@@ -327,6 +327,9 @@ $$
 
 ^rem-53-1
 
+> [!remark]- Connections
+> - ODE version: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] (the complex exponential $e^{(\lambda + i\mu)t} = e^{\lambda t}(\cos\mu t + i\sin\mu t)$, which BDP takes as a definition after the same series argument, [[§15 Complex Roots of the Characteristic Equation#^rem-15-1|331 §15, Remark: Where Euler's Formula Comes From]]); its law of exponents and derivative rule, [[§15 Complex Roots of the Characteristic Equation#^prop-15-1|331 Prop. §15.1]]; used to turn complex roots of $ay'' + by' + cy = 0$ into real solutions, [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|331 Thm. §15.2]].
+
 ## Complex Numbers and ℝ²
 
 > [!remark] Remark: ℂ Is More Than ℝ²

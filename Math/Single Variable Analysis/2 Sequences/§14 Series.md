@@ -267,6 +267,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 > [!remark]- Connections
 > - Computational version: [[§72 The Comparison Tests#^thm-72-1|Calc Thm. §72.1]] (with worked examples).
+> - Used in ODEs: comparison with $\sum_k (nK|t|)^k/k!$ shows that every entry of the matrix exponential $e^{\mathbf{A}t}$ converges, [[§33★ Fundamental Matrices#^thm-33-3|331 Thm. §33.3]].
 
 > [!theorem] Proposition §14.8: Bounded Multipliers Preserve Absolute Convergence (HW)
 > If $\sum |a_n|$ converges and $(b_n)$ is a bounded sequence, then $\sum a_n b_n$ converges — absolutely, in fact.

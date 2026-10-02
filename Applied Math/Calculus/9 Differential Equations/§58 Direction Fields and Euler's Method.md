@@ -36,6 +36,9 @@ without a formula for it. The equation says that the slope at any point $(x, y)$
 
 ^def-58-1
 
+> [!remark]- Connections
+> - ODE version: [[§1 Some Basic Mathematical Models; Direction Fields#^def-1-2|331 Def. §1.2]] (direction field of $dy/dt = f(t, y)$), with [[§1 Some Basic Mathematical Models; Direction Fields#^rem-1-1|331 Remark: Method — Reading a Direction Field]].
+
 > [!remark] Remark: Method — Sketching Solution Curves from a Direction Field
 > 1. Compute the slopes $F(x, y)$ at the points of a grid; a table organized by rows ($y$ fixed) is convenient. Look for curves along which the slope is constant (for example, where $F = 0$ the segments are horizontal).
 > 2. Draw a short segment with the computed slope at each grid point. The more segments, the clearer the picture; computers draw detailed fields.
@@ -127,6 +130,9 @@ In Example §58.2 the segments along any horizontal line are parallel, because t
 
 ^def-58-3
 
+> [!remark]- Connections
+> - ODE version: [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-1|331 Def. §8.1]] (autonomous equations, analysed there by equilibria, the phase line and stability).
+
 > [!theorem] Proposition §58.1: Shifting Solutions of an Autonomous Equation
 > If $y = g(t)$ is a solution of an autonomous equation $y' = f(y)$ and $c$ is a constant, then $y = g(t - c)$ is also a solution. So from one solution we obtain infinitely many others by shifting its graph to the right or left.
 >
@@ -187,6 +193,7 @@ In Example §58.2 the segments along any horizontal line are parallel, because t
 
 > [!remark]- Connections
 > - Why one step is accurate: by Taylor's theorem with $n = 2$, $y(x_0 + h) = y_0 + hy'(x_0) + \frac{h^2}{2}y''(\xi) = y_0 + hF(x_0, y_0) + \frac{h^2}{2}y''(\xi)$ for some $\xi$ between $x_0$ and $x_0 + h$ ([[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]]). So one step errs by at most a constant times $h^2$; over the $(b - x_0)/h$ steps needed to reach $x = b$ these errors add up to roughly a constant times $h$, which is the behaviour seen in the table of Remark: How Accurate Is Euler's Method? below.
+> - ODE version: [[§10 Numerical Approximations꞉ Euler's Method#^def-10-1|331 Def. §10.1]] (Euler's formula, also with unequal steps), and [[§10 Numerical Approximations꞉ Euler's Method#^prop-10-1|331 Prop. §10.1]], where for $y' = 1 - t + y$ the error is proved to be at most a constant times $h$.
 
 > [!example] Example §58.3: A Table of Euler Approximations
 > Use Euler's method with step size $0.1$ to construct a table of approximate values for the solution of the initial-value problem

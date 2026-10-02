@@ -43,6 +43,7 @@ More generally, given $F(x, y) = 0$, when can we solve for $y = f(x)$ near a poi
 > - Used twice to prove the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] (§13.2), and to derive [[Method of Lagrange Multipliers|Lagrange multipliers]] (§14.2).
 > - Reappears in the second proof of the [[§15 Multivariable Integration#^thm-15-14|change of variables formula]] (§15.14).
 > - Computational version: [[§94 The Chain Rule#^thm-94-6|Calc Thm. §94.6]] (a), with the implicit-differentiation formula $dy/dx = -F_x/F_y$ in [[§94 The Chain Rule#^thm-94-4|Calc Thm. §94.4]]; one-variable implicit functions: [[§18 Implicit Differentiation#^def-18-1|Calc Def. §18.1]].
+> - Used in ODEs: the implicit solutions $H_1(x) + H_2(y) = c$ of a separable equation, [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]], and $\psi(x, y) = c$ of an exact equation, [[§9 Exact Differential Equations and Integrating Factors#^prop-9-1|331 Prop. §9.1]], define $y$ as a function of $x$ where the $y$-derivative is nonzero.
 
 ## Proof of the Implicit Function Theorem
 

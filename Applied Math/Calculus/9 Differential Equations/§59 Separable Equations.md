@@ -84,6 +84,7 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 
 > [!remark]- Connections
 > - The step "zero derivative on an interval implies constant" is proved from the Mean Value Theorem in [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]]. The interval matters: on a domain made of two intervals, $F$ may take a different constant on each piece, which is why a solution is always considered on one interval.
+> - ODE version: [[§5 Separable Differential Equations#^def-5-1|331 Def. §5.1]] and [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]] (separable equations in the form $M(x) + N(y)\,y' = 0$, the same equivalence with an implicit solution, and examples that find the interval of validity).
 
 > [!remark] Remark: Method — Solving a Separable Equation
 > 1. Write the equation as $dy/dx = g(x)f(y)$ (Definition §59.1).
@@ -184,6 +185,9 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 
 ^rem-59-2
 
+> [!remark]- Connections
+> - ODE version: [[§11 The Existence and Uniqueness Theorem#^thm-11-8|331 Thm. §11.8]] (the uniqueness theorem quoted here, for $f$ and $\partial f/\partial y$ continuous on a rectangle, proved there by Picard iteration) and [[§7 Differences Between Linear and Nonlinear Differential Equations#^cor-7-3|331 Cor. §7.3]] (solution curves do not cross).
+
 Stewart's Example 4 solves the circuit equation of [[§58 Direction Fields and Euler's Method#^def-58-2|Definition §58.2]] (the circuit of [[§58 Direction Fields and Euler's Method#^ex-58-2|Example §58.2]]) in the same way. With $L = 4$ H, $R = 12\ \Omega$ and a constant voltage $E = 60$ V, $L\,dI/dt + RI = E(t)$ becomes $dI/dt = 15 - 3I$, $I(0) = 0$. Separating, $-\frac13\ln|15 - 3I| = t + C$, so $15 - 3I = Ae^{-3t}$, and $I(0) = 0$ gives $A = 15$: $I(t) = 5 - 5e^{-3t}$. The limiting current is $\lim_{t \to \infty} I(t) = 5$ A.
 
 ## Orthogonal Trajectories
@@ -260,6 +264,9 @@ This often leads to a first-order separable equation. The same reasoning models 
 > 4. Form Equation 5, solve it with the initial condition, and evaluate at the time asked for. Keep track of units: if amounts are in kg, volumes in L and time in min, all terms of (5) are in kg/min.
 
 ^rem-59-4
+
+> [!remark]- Connections
+> - ODE version: [[§6 Modeling with First-Order Differential Equations#^rem-6-2|331 Remark: Method — Mixing Problems]] (also with unequal inflow and outflow rates, where the volume changes and the equation is linear rather than separable), with [[§6 Modeling with First-Order Differential Equations#^ex-6-1|331 Ex. §6.1]] and [[§6 Modeling with First-Order Differential Equations#^ex-6-2|331 Ex. §6.2]].
 
 > [!example] Example §59.5: Salt in a Tank
 > A tank contains $20$ kg of salt dissolved in $5000$ L of water. Brine that contains $0.03$ kg of salt per liter of water enters the tank at a rate of $25$ L/min. The solution is kept thoroughly mixed and drains from the tank at the same rate. How much salt is in the tank after half an hour?

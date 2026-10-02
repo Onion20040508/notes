@@ -220,6 +220,7 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§34 Determinants#^ladr-9-50|LADR 9.50]], for operators on any finite-dimensional space, proved from multiplicativity ($1 = \det(TT^{-1})$) and, for the converse, from the fact that a nonzero alternating $n$-form does not vanish on a basis ([[§33 Alternating Multilinear Forms#^ladr-9-39|LADR 9.39]]), with no row reduction.
+> - See also: the determinant test in differential equations, where the determinant is the Wronskian. For $y'' + py' + qy = 0$, two solutions can be combined to meet every pair of initial conditions at $t_0$ if and only if their Wronskian is nonzero there, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-3|331 Thm. §14.3]]; for $n$ solutions of $\mathbf{x}' = P(t)\mathbf{x}$ with nonzero Wronskian, every solution is a unique combination of them, [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|331 Thm. §30.2]].
 
 > [!theorem] Theorem §21.4: The Invertible Matrix Theorem (Continued)
 > Let $A = [\mathbf{a}_1 \ \cdots \ \mathbf{a}_n]$ be an $n \times n$ matrix. The statement

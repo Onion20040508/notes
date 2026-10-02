@@ -150,6 +150,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§21 Properties of Determinants#^thm-21-3|235 Thm. §21.3]] (proved by row reduction).
+> - Computational version: [[§28 Matrices#^thm-28-3|331 Thm. §28.3]], with the cofactor formula for the inverse ([[§28 Matrices#^ex-28-3|331 Ex. §28.3]]).
 
 > [!theorem] Theorem 9.51: Eigenvalues and determinants
 > $\lambda$ is an eigenvalue of $T$ iff $\det(\lambda I-T)=0$.

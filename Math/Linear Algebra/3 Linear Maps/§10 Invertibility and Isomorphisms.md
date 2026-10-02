@@ -134,6 +134,7 @@ tags: [linear-algebra]
 > - Classified by dimension: [[Dimension shows whether vector spaces are isomorphic]]. First isomorphism theorem: [[First isomorphism theorem]].
 > - Group version: [[§16 Isomorphisms#^def-16-1|493 Def. §16.1]].
 > - Computational version: [[§26 Coordinate Systems#^def-26-3|235 Def. §26.3]].
+> - ODE example: $y \mapsto (y(t_0), y'(t_0))$ is an isomorphism from the solution space of $y'' + py' + qy = 0$ onto $\mathbb{R}^2$, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-14-2|331 Remark §14.2]]; for systems, $\mathbf{x} \mapsto \mathbf{x}(t_0)$, [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|331 Thm. §30.2]].
 
 > [!theorem] Theorem 3.70: Dimension shows whether vector spaces are isomorphic
 > Two finite-dimensional vector spaces over $\F$ are isomorphic if and only if they have the same dimension.
@@ -152,6 +153,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§26 Coordinate Systems#^thm-26-3|235 Thm. §26.3]] (a space with a basis of n vectors is isomorphic to ℝⁿ) and [[§27 The Dimension of a Vector Space#^prop-27-7|235 Prop. §27.7]] (isomorphic spaces have the same dimension).
+> - ODE example: so the solution space of $y'' + py' + qy = 0$ has dimension 2, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-14-2|331 Remark §14.2]], and that of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ has dimension $n$, [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|331 Def. §30.3]].
 
 > [!theorem] Theorem 3.72: Dim L(V, W) = (dim V)(dim W)
 > If $V,W$ are finite-dimensional, then $\Lin(V,W)$ is finite-dimensional and $\dim\Lin(V,W)=(\dim V)(\dim W)$.

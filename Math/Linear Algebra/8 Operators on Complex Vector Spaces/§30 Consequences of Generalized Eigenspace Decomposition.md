@@ -111,6 +111,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§35 Eigenvectors and Linear Transformations#^ex-35-3|235 Ex. §35.3]] (a non-diagonalizable $2\times2$ matrix put in Jordan form).
+> - Computational version: [[§34★ Repeated Eigenvalues#^def-34-3|331 Def. §34.3]], with the exponential of a Jordan block, [[§34★ Repeated Eigenvalues#^prop-34-3|331 Prop. §34.3]], which gives the $t^ke^{\lambda t}$ solutions of $\mathbf{x}' = \mathbf{A}\mathbf{x}$.
 
 %% ex:8.46-fig %%
 > [!example] Example: What a Jordan form looks like

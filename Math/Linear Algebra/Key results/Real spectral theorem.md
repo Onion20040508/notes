@@ -27,3 +27,4 @@ tags: [linear-algebra, hub]
 ## Connections
 - Complex version [[Complex spectral theorem|7.31]]. Applications: principal axes of quadratic forms ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-23|Diagonalization of quadratic form]]), normal modes of coupled oscillators (the stiffness matrix is symmetric), the inertia tensor.
 - **Also in [[Applied Linear Algebra]]:** [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]] (symmetric matrices, with worked orthogonal diagonalizations).
+- **Also in [[Ordinary Differential Equations]]:** [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]] (Hermitian matrices, including real symmetric ones, have n mutually orthogonal eigenvectors; used to solve x′ = Ax).

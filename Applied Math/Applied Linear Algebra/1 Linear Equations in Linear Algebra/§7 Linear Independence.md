@@ -36,6 +36,7 @@ The homogeneous equation $x_1\mathbf{v}_1 + \cdots + x_p\mathbf{v}_p = \mathbf{0
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§4 Span and Linear Independence#^ladr-2-15|LADR 2.15]] and [[§4 Span and Linear Independence#^ladr-2-17|LADR 2.17]], for lists in any vector space (the empty list counts as independent). Axler notes the equivalent form: the list is independent iff each vector in its span has exactly one representation as a linear combination of it.
+> - See also: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2|331 Def. §29.2]] (the same definition, with real or complex weights) and, for vector functions on an interval, [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-3|331 Def. §29.3]], the notion used for solutions of $\mathbf{x}' = A\mathbf{x}$.
 
 > [!theorem] Proposition §7.1: Independence of Matrix Columns
 > The columns of a matrix $A$ are linearly independent if and only if the equation $A\mathbf{x} = \mathbf{0}$ has *only* the trivial solution.

@@ -59,6 +59,7 @@ Under ideal conditions (unlimited environment, adequate nutrition, no predators,
 
 > [!remark]- Connections
 > - Uniqueness in one line: if $P' = kP$, then $\big(P(t)e^{-kt}\big)' = (P' - kP)e^{-kt} = 0$, so $P(t)e^{-kt}$ is constant by [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (vanishing derivative means constant). This is the argument of the proof of [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]]. The multiplier $e^{-kt}$ is the integrating factor of [[§29 The Mean Value Theorem#^rem-29-2|451 Remark after Ex. §29.4]] and of [[§61 Linear Equations#^def-61-2|Definition §61.2]].
+> - ODE version: [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-1|331 Prop. §8.1]] (the exponential growth model $y' = ry$, with $r$ the rate constant of [[§1 Some Basic Mathematical Models; Direction Fields#^def-1-4|331 Def. §1.4]]); that there are no other solutions is the case $b = 0$ of [[§2 Solutions of Some Differential Equations#^thm-2-1|331 Thm. §2.1]].
 
 > [!remark] Remark: The Family of Solutions
 > Letting $C$ vary through all the real numbers gives the *family* of solutions $P(t) = Ce^{kt}$. For $k > 0$ the graphs with $C > 0$ rise ever more steeply, those with $C < 0$ fall ever more steeply, and $C = 0$ gives the zero function. Populations have only positive values, so only the solutions with $C > 0$ are physically meaningful, and if we care only about times after the initial time $t = 0$, only their parts with $t \ge 0$.
@@ -120,6 +121,9 @@ $$
 ![[m233-57-1.svg]]
 *Solutions of the logistic equation. The equilibrium solutions $P = 0$ and $P = M$ (red) are horizontal lines. Solutions starting between them (blue) increase and level off at $M$: they look exponential at first, when $P$ is small, and flatten as $P \to M$. Solutions starting above $M$ (green) decrease toward $M$. (The curves are the explicit solutions found in Section 9.4, [[§60 Models for Population Growth#^thm-60-2|Theorem §60.2]].)*
 
+> [!remark]- Connections
+> - ODE version: [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-3|331 Def. §8.3]] (the logistic equation), its equilibrium solutions [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-4|331 Def. §8.4]] and its phase line [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-5|331 Def. §8.5]], which turn this sign analysis into a method for any autonomous equation.
+
 ## A Model for the Motion of a Spring
 
 Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$ be its displacement from the equilibrium position at time $t$. By Hooke's Law ([[§42 Work#^def-42-4|Definition §42.4]]), if the spring is stretched (or compressed) $x$ units from its natural length, it exerts the restoring force $-kx$, where $k > 0$ is the *spring constant*.
@@ -165,6 +169,9 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 
 *That there are no other solutions is stated by Stewart without proof ("it turns out that"); it belongs to the theory of second-order linear equations, and no note in the vault proves it.*
 
+> [!remark]- Connections
+> - ODE version: [[§19 Mechanical and Electrical Vibrations#^prop-19-2|331 Prop. §19.2]] (simple harmonic motion: the general solution of $mu'' + ku = 0$, also in amplitude–phase form), from the characteristic equation in [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|331 Thm. §15.2]]; that it contains every solution rests on the uniqueness theorem [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|331 Thm. §14.1]], stated there without proof.
+
 ## General Differential Equations
 
 > [!definition] Definition §57.5: Differential Equation and Order
@@ -205,6 +212,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 
 > [!remark]- Connections
 > - That $x^4/4 + C$ gives *all* solutions of $y' = x^3$ (on an interval) is the fact that two functions with the same derivative differ by a constant: [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]], proved from the Mean Value Theorem; in this course, [[§26 The Mean Value Theorem#^cor-26-4|Corollary §26.4]].
+> - ODE version: [[§3 Classification of Differential Equations#^def-3-6|331 Def. §3.6]] (solution of an $n$th-order equation on an interval) and [[§2 Solutions of Some Differential Equations#^def-2-2|331 Def. §2.2]] (general solution; integral curves).
 
 > [!remark] Remark: Method — Checking a Proposed Solution
 > 1. Compute the derivatives of the proposed function that occur in the equation.

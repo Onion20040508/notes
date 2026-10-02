@@ -196,6 +196,7 @@ How can we tell whether a field $\mathbf{F}$ is conservative, and if it is, how 
 
 > [!remark]- Connections
 > - In 452 this is "exact implies closed", [[§22 The Algebra of Differential Forms#^prop-22-10|452 Prop. §22.10]]; its three-dimensional form $\operatorname{curl}(\nabla f) = \mathbf{0}$ is [[§111 Curl and Divergence#^thm-111-1|Theorem §111.1]]. The field of [[§110 Green's Theorem#^ex-110-5|Example §110.5]] satisfies the condition without being conservative, so the converse needs a hypothesis on the region: [[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]].
+> - ODE version: the test for exact equations $M + Ny' = 0$, [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|331 Thm. §9.2]] ($M_y = N_x$ is necessary, and on a rectangle sufficient, for a function $\psi$ with $\psi_x = M$, $\psi_y = N$, that is, a potential of $M\,\mathbf{i} + N\,\mathbf{j}$).
 
 The converse of Theorem §109.4 holds only for a special type of region.
 
@@ -251,6 +252,9 @@ The test of Theorem §110.5 says that $\mathbf{F}$ is conservative but not how t
 > 5. **Check** that $\nabla f = \mathbf{F}$. Then line integrals of $\mathbf{F}$ are $f(\text{end}) - f(\text{start})$ by Theorem §109.1.
 
 ^rem-109-1
+
+> [!remark]- Connections
+> - ODE version: [[§9 Exact Differential Equations and Integrating Factors#^rem-9-1|331 Remark: Method — Solving an Exact Equation]] (the same construction of $\psi$, whose level curves $\psi(x, y) = c$ are the solutions), worked in [[§9 Exact Differential Equations and Integrating Factors#^ex-9-2|331 Ex. §9.2]].
 
 > [!example] Example §109.3: Finding a Potential and Using It
 > Let $\mathbf{F}(x, y) = (3 + 2xy)\,\mathbf{i} + (x^2 - 3y^2)\,\mathbf{j}$. (a) Find a function $f$ such that $\mathbf{F} = \nabla f$. (b) Evaluate $\int_C \mathbf{F} \cdot d\mathbf{r}$, where $C$ is the curve $\mathbf{r}(t) = e^t\sin t\,\mathbf{i} + e^t\cos t\,\mathbf{j}$, $0 \le t \le \pi$.

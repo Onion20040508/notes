@@ -278,6 +278,7 @@ The converse direction — that integrability passes *down* to subintervals — 
 
 > [!remark]- Connections
 > - Computational version: [[§43 Average Value of a Function#^thm-43-1|Calc Thm. §43.1]] (with worked examples).
+> - Used in ODEs: it proves the sifting property $\int f(t)\,\delta(t - t_0)\,dt = f(t_0)$ of the delta function, [[§25 Impulse Functions#^thm-25-3|331 Thm. §25.3]].
 
 What does it mean? The right side is the **mean value** of $f$ over $[a,b]$: the mean value is attained — it equals the value of $f$ at some point.
 

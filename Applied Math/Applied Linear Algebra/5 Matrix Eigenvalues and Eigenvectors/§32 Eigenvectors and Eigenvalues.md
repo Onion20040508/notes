@@ -49,6 +49,7 @@ A matrix transformation $\mathbf{x} \mapsto A\mathbf{x}$ may move vectors in all
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Invariant Subspaces#^ladr-5-5|LADR 5.5]] (eigenvalue), [[§14 Invariant Subspaces#^ladr-5-8|LADR 5.8]] (eigenvector) and [[§14 Invariant Subspaces#^ladr-5-7|LADR 5.7]] ($\lambda$ is an eigenvalue $\Leftrightarrow$ $T - \lambda I$ is not injective $\Leftrightarrow$ not invertible); there for an operator $T$ on any finite-dimensional $V$, where an eigenvector spans a one-dimensional invariant subspace.
+> - See also: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-4|331 Def. §29.4]] (the same definition for real or complex $\lambda$, together with the characteristic equation), whose eigenpairs give the solutions $\boldsymbol{\xi}e^{rt}$ of $\mathbf{x}' = A\mathbf{x}$, [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-1|331 Thm. §31.1]].
 
 > [!example] Example §32.1: Checking Eigenvectors and Eigenvalues
 > Let $A = \begin{bmatrix} 1 & 6 \\ 5 & 2 \end{bmatrix}$, $\mathbf{u} = \begin{bmatrix} 6 \\ -5 \end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} 3 \\ -2 \end{bmatrix}$.
@@ -236,6 +237,9 @@ The next theorem is needed throughout the chapter. Its proof is a typical calcul
 ^pf-32-3
 
 *Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§7 Linear Independence#^thm-7-4|§7.4]] (characterization of linearly dependent sets)
+
+> [!remark]- Connections
+> - See also: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|331 Thm. §29.4]] (the same theorem, for real or complex eigenvalues), the reason distinct eigenvalues of $A$ give a fundamental set of solutions of $\mathbf{x}' = A\mathbf{x}$, [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|331 Thm. §31.2]](a).
 
 > [!remark]- Remark: A Second Proof (Vandermonde)
 > The lecture proves the case $r = 3$ differently. Suppose $c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + c_3\mathbf{v}_3 = \mathbf{0}$ (1). Applying $A$ once and twice gives

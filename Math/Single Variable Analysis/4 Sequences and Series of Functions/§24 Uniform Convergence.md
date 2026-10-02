@@ -183,6 +183,7 @@ Continuity is not the only property that survives passage to a uniform limit:
 
 > [!remark]- Connections
 > - Restated in 551 for functions on a measurable set, where it is a step in the proof of Lusin's theorem: [[§12 Measurable Functions#^thm-12-16|551 Thm. §12.16]], [[§13 Egorov's and Lusin's Theorems#^thm-13-3|551 Thm. §13.3]].
+> - Used in ODEs: the Picard iterates for $y' = f(t, y)$ converge uniformly, so their limit is continuous, a step in the existence proof of [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
 
 > [!theorem] Proposition §24.3: Uniform Limits Preserve Boundedness (HW)
 > If every $f_n$ is bounded on $S$ and $f_n \to f$ uniformly on $S$, then $f$ is bounded on $S$.

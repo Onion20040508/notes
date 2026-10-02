@@ -71,6 +71,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Companion: [[§6 Dimension#^ladr-2-42|Spanning list of the right length is a basis]]. Consequence: [[§6 Dimension#^ladr-2-39|Subspace of full dimension equals the whole space]]. Orthonormal version: [[§20 Orthonormal Bases#^ladr-6-28|Orthonormal lists of the right length are orthonormal bases]].
 > - Computational version: [[§27 The Dimension of a Vector Space#^thm-27-5|235 Thm. §27.5]] (the Basis Theorem, first half).
+> - ODE example: two linearly independent solutions of $y'' + py' + qy = 0$ form a fundamental set, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|331 Def. §14.3]]; for $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$, $n$ independent solutions, [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|331 Def. §30.3]].
 
 > [!theorem] Theorem 2.39: Subspace of full dimension equals the whole space
 > If $V$ is finite-dimensional and $U$ is a subspace with $\dim U=\dim V$, then $U=V$.

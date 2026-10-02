@@ -100,6 +100,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Minimal-polynomial criterion: [[§17 Diagonalizable Operators#^ladr-5-62|5.62]]. Failure: [[§17 Diagonalizable Operators#^ladr-5-57|5.57]].
 > - Computational version: [[§34 Diagonalization#^thm-34-1|235 Thm. §34.1]] (diagonalizable iff there are $n$ independent eigenvectors) and [[§34 Diagonalization#^thm-34-3|235 Thm. §34.3]] (iff the eigenspace dimensions add up to $n$), with worked diagonalizations.
+> - Computational version: diagonalization $\mathbf{T}^{-1}\mathbf{A}\mathbf{T} = \mathbf{D}$ by a matrix of eigenvectors, used to uncouple $\mathbf{x}' = \mathbf{A}\mathbf{x}$, [[§33★ Fundamental Matrices#^thm-33-7|331 Thm. §33.7]].
 
 > [!example] Example 5.57: An operator that is not diagonalizable (p. 166)
 > $T(a,b,c)=(b,c,0)$ on $\F^3$, with $\mathcal{M}(T)=\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix}$ (upper triangular, not diagonal). Its only eigenvalue is $0$ ([[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]]), and $E(0,T)=\{(a,0,0)\}$ is $1$-dimensional $<3$. So (d) of [[§17 Diagonalizable Operators#^ladr-5-55|5.55]] fails and $T$ is not diagonalizable, over $\R$ and over $\C$.

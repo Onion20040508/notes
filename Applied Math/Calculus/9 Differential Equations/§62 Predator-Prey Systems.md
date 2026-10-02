@@ -32,6 +32,9 @@ Let $R(t)$ be the number of prey (rabbits) and $W(t)$ the number of predators (w
 
 ^def-62-1
 
+> [!remark]- Connections
+> - ODE version: [[§3 Classification of Differential Equations#^def-3-2|331 Def. §3.2]] (systems of differential equations, with the Lotka–Volterra equations as the example) and [[§27 Introduction to Systems of First-Order Linear Equations#^def-27-1|331 Def. §27.1]] (first-order systems, their solutions and initial value problems; a solution traces a trajectory).
+
 Usually it is impossible to find explicit formulas for $R$ and $W$ as functions of $t$, so the equations are analysed graphically. (Volterra proposed them to explain the variations in the shark and food-fish populations of the Adriatic Sea.)
 
 > [!definition] Definition §62.2: Equilibrium Solutions and Equilibrium Points
@@ -121,6 +124,9 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 > *Stewart: 9.6 (text)*
 
 ^def-62-3
+
+> [!remark]- Connections
+> - ODE version, for linear systems $\mathbf{x}' = A\mathbf{x}$: [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-2|331 Def. §31.2]] (phase plane, trajectory, phase portrait), with the possible portraits near the origin classified in [[§32 Complex-Valued Eigenvalues#^thm-32-3|331 Thm. §32.3]].
 
 > [!example] Example §62.2: Rabbits and Wolves — One Cycle
 > In the system of Example §62.1, suppose that at some time there are $1000$ rabbits and $40$ wolves. (d) Draw the corresponding solution curve and use it to describe the changes in both populations. (e) Sketch $R$ and $W$ as functions of $t$.

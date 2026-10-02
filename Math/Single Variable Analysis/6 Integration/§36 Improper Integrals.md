@@ -34,6 +34,7 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 > [!remark]- Connections
 > - The Lebesgue integral is absolute ([[§15 The General Lebesgue Integral#^rem-15-1|551 Rem. §15.1]]), so a conditionally convergent improper integral such as that of $\sin x / x$ on $[1, \infty)$ is not a Lebesgue integral; for integrable $f$ the tails vanish by [[§16 The L¹ Space and Density Theorems#^thm-16-3|551 Thm. §16.3]].
 > - Computational version: [[§51 Improper Integrals#^def-51-1|Calc Def. §51.1]], [[§51 Improper Integrals#^def-51-2|Calc Def. §51.2]] (with worked examples).
+> - Used in ODEs: the improper integral over $[a, \infty)$ that defines the Laplace transform, [[§21 Definition of the Laplace Transform#^def-21-1|331 Def. §21.1]] (with worked examples).
 
 > [!definition] Definition §36.2: Doubly Improper Integrals
 > If $f$ is defined on $(a, b)$ (each end finite or infinite) and integrable on every closed $[c, d] \subseteq (a,b)$, fix any $\alpha \in (a,b)$ and define
@@ -146,6 +147,7 @@ $$
 
 > [!remark]- Connections
 > - Computational version: the Comparison Theorem resting on this dichotomy, [[§51 Improper Integrals#^thm-51-2|Calc Thm. §51.2]] (with worked examples).
+> - ODE version: the comparison test for piecewise continuous integrands, [[§21 Definition of the Laplace Transform#^thm-21-1|331 Thm. §21.1]], used for the existence of the Laplace transform.
 
 > [!theorem] Theorem §36.2: Bounded Integrand against a Finite Total Weight
 > Suppose $-\infty < F(-\infty) \leq F(\infty) < \infty$ (finite total weight), and let $f$ be bounded on $\mathbb{R}$ and $F$-integrable on every $[a,b]$. Then $f$ is $F$-integrable on $\mathbb{R}$.

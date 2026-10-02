@@ -108,6 +108,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > [!remark]- Connections
 > - The differentiation half has a 551 analogue for series of absolutely continuous functions: [[§18 Differentiation Theory#^cor-18-14|551 Cor. §18.14]].
 > - Computational version: [[§77 Representations of Functions as Power Series#^thm-77-1|Calc Thm. §77.1]] (with worked examples).
+> - Used in ODEs: each entry of $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ is a power series in $t$ with infinite radius, differentiated term by term to get $\Phi' = \mathbf{A}\Phi$: [[§33★ Fundamental Matrices#^def-33-3|331 Def. §33.3]], [[§33★ Fundamental Matrices#^thm-33-3|331 Thm. §33.3]].
 
 ## Harvesting Closed Formulas
 

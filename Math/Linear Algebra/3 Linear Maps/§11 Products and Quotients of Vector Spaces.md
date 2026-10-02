@@ -131,6 +131,7 @@ tags: [linear-algebra]
 > - Group version: v + U is the coset of U in the abelian group (V, +), [[§26 Left and Right Cosets#^def-26-2|493 Def. §26.2]].
 > - In ℝ³: lines $\mathbf r = \mathbf r_0 + t\mathbf v$ and planes $\mathbf n \cdot (\mathbf r - \mathbf r_0) = 0$ are translates of subspaces, [[§84 Equations of Lines and Planes#^thm-84-1|Calc Thm. §84.1]] and [[§84 Equations of Lines and Planes#^thm-84-5|Calc Thm. §84.5]] (with worked examples).
 > - Computational version: [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]] (the solutions of Ax = b are a translate p + Nul A).
+> - ODE example: the general solution of a nonhomogeneous linear equation is a particular solution plus the solution space of the homogeneous equation, [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|331 Thm. §17.2]]; for systems, [[§35★ Nonhomogeneous Linear Systems#^thm-35-1|331 Thm. §35.1]].
 
 > [!example] Example 3.98: Translates (p. 99)
 > - For the line $U$ of [[§11 Products and Quotients of Vector Spaces#^ladr-3-96|3.96]], the translates of $U$ are all lines of slope $2$; for any line $U$ through $0$ in $\R^2$, they are all lines parallel to $U$.

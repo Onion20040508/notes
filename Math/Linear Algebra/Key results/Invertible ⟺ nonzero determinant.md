@@ -35,3 +35,4 @@ tags: [linear-algebra, hub]
 ## Connections
 - Characteristic polynomial: $\lambda$ is an eigenvalue iff $\det(\lambda I-T)=0$ ([[§34 Determinants#^ladr-9-51|9.51]]).
 - **Also in [[Applied Linear Algebra]]:** [[§21 Properties of Determinants#^thm-21-3|235 Thm. §21.3]] (matrix version, proved by row reduction).
+- **Also in [[Ordinary Differential Equations]]:** [[§28 Matrices#^thm-28-3|331 Thm. §28.3]] (matrix version, with the cofactor formula for the inverse and a worked example).

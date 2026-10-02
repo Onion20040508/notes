@@ -286,6 +286,7 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 
 > [!remark]- Connections
 > - Rigorous treatment: finite-dimensional spaces are isomorphic exactly when they have the same dimension, [[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]; here the isomorphism is "evaluate at $0, \ldots, n-1$". The same argument (an existence and uniqueness theorem for initial values) shows that the solutions of an $n$th-order linear homogeneous differential equation form an $n$-dimensional space.
+> - ODE version: for $y'' + p(t)y' + q(t)y = 0$ the isomorphism is $y \mapsto (y(t_0), y'(t_0))$ and the dimension is $2$, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-14-2|331 §14, Remark: The Solution Space Is a Two-Dimensional Vector Space]]; for a system $\mathbf{x}' = P(t)\mathbf{x}$ of $n$ equations it is $\mathbf{x} \mapsto \mathbf{x}(t_0)$, and a fundamental set is a basis of the $n$-dimensional solution space, [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|331 Thm. §30.2]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-4|331 Thm. §30.4]].
 
 > [!theorem] Proposition §30.6: The Casorati Test for Solutions
 > Let $n$ signals be solutions of the same $n$th-order homogeneous equation (10), and let $C(k)$ be their Casorati matrix. Then either $C(k)$ is invertible for all $k$ and the signals are linearly independent, or $C(k)$ is invertible for no $k$ and the signals are linearly dependent.
@@ -403,6 +404,9 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 ^pf-30-7
 
 *Uses:* [[§30 Applications to Difference Equations#^prop-30-3|§30.3]], [[§30 Applications to Difference Equations#^def-30-5|Def. §30.5]]
+
+> [!remark]- Connections
+> - See also: the first-order case $y_{k+1} = \rho y_k + b_k$, solved explicitly for any $y_0$: [[§12★ First-Order Difference Equations#^prop-12-2|331 Prop. §12.2]]; for constant $b$ and $\rho \ne 1$ the solution is the equilibrium $b/(1 - \rho)$ plus a multiple of $\rho^k$, particular plus homogeneous. The same structure for linear differential equations: [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|331 Thm. §17.2]].
 
 > [!example] Example §30.5: A Nonhomogeneous Equation
 > Verify that $y_k = k^2$ satisfies

@@ -59,6 +59,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 > [!remark]- Connections
 > - Rigorous treatment: [[§36 Improper Integrals#^def-36-1|451 Def. §36.1]] and [[§36 Improper Integrals#^def-36-2|451 Def. §36.2]], which treat Types 1 and 2 at once (an interval open at an end, finite or infinite) and also allow the values $\pm\infty$ ("diverges to $\infty$"). 451 [[§36 Improper Integrals#^ex-36-3|Ex. §36.3]] shows why (c) takes the two limits *independently*: $\int_{-t}^{t} \sin x\,dx = 0$ for every $t$, yet $\int_{-\infty}^\infty \sin x\,dx$ diverges.
 > - In the Lebesgue theory an integral over an infinite interval needs no limit, but it exists only if $\int |f| < \infty$: [[§15 The General Lebesgue Integral#^rem-15-1|551 Rem. §15.1]].
+> - ODE version: [[§21 Definition of the Laplace Transform#^def-21-1|331 Def. §21.1]] (the same definition, as the first step toward the Laplace transform), with three examples in [[§21 Definition of the Laplace Transform#^ex-21-1|331 Ex. §21.1]].
 
 > [!example] Example §51.1: The Reciprocal Diverges
 > Determine whether $\displaystyle\int_1^\infty \frac1x\,dx$ is convergent or divergent.
@@ -250,6 +251,9 @@ Sometimes the exact value of an improper integral cannot be found, yet it matter
 ^thm-51-2
 
 *Stewart omits the proof. It rests on the completeness of the real numbers: $t \mapsto \int_a^t g(x)\,dx$ is increasing (as $g \ge 0$) and bounded by $\int_a^\infty f(x)\,dx$, so it has a limit. The fact that an increasing function either converges or tends to $+\infty$ is [[§36 Improper Integrals#^thm-36-1|451 Thm. §36.1]].*
+
+> [!remark]- Connections
+> - ODE version: [[§21 Definition of the Laplace Transform#^thm-21-1|331 Thm. §21.1]] (the comparison test for piecewise continuous $f$ with $|f| \le g$), which shows that Laplace transforms exist, [[§21 Definition of the Laplace Transform#^thm-21-2|331 Thm. §21.2]].
 
 > [!remark] Remark: Why It Works
 > If the area under the upper curve $y = f(x)$ is finite, then so is the area under the lower curve $y = g(x)$. If the area under $y = g(x)$ is infinite, then so is the area under $y = f(x)$. The converses fail: if $\int_a^\infty g(x)\,dx$ converges, $\int_a^\infty f(x)\,dx$ may or may not converge, and if $\int_a^\infty f(x)\,dx$ diverges, $\int_a^\infty g(x)\,dx$ may or may not diverge. Comparison functions are typically $1/x^p$ (Theorem §51.1) or $e^{-x}$.

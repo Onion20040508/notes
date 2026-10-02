@@ -143,6 +143,9 @@ When $A$ is $2 \times 2$, the algebra can be supplemented by a picture of what h
 
 ^def-37-1
 
+> [!remark]- Connections
+> - ODE version: trajectories and phase portraits of $\mathbf{x}' = A\mathbf{x}$, [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-2|331 Def. §31.2]], and asymptotic stability of the equilibrium $\mathbf{0}$, [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-1|331 Def. §31.1]]. The last sentence in dimension one: an equilibrium $u^*$ of $u_{n+1} = g(u_n)$ is asymptotically stable if $|g'(u^*)| < 1$ and unstable if $|g'(u^*)| > 1$, [[§12★ First-Order Difference Equations#^lem-12-5|331 Lemma §12.5]].
+
 > [!theorem] Proposition §37.3: The Eigenvalues Classify the Origin
 > Let $A$ be a $2 \times 2$ matrix with eigenvalues $\lambda_1$, $\lambda_2$ and linearly independent eigenvectors $\mathbf{v}_1$, $\mathbf{v}_2$, with $|\lambda_1| \ge |\lambda_2|$.
 > 1. If $|\lambda_1| < 1$ (both eigenvalues less than $1$ in magnitude), the origin is an attractor. The direction of greatest attraction is the line through $\mathbf{0}$ and $\mathbf{v}_2$, the eigenvector for the eigenvalue of smaller magnitude.
@@ -162,6 +165,9 @@ When $A$ is $2 \times 2$, the algebra can be supplemented by a picture of what h
 ^pf-37-3
 
 *Uses:* [[§37 Discrete Dynamical Systems#^thm-37-1|§37.1]], [[§37 Discrete Dynamical Systems#^def-37-1|Def. §37.1]]
+
+> [!remark]- Connections
+> - ODE version: [[§32 Complex-Valued Eigenvalues#^thm-32-3|331 Thm. §32.3]], the classification of the origin for $\mathbf{x}' = A\mathbf{x}$ (saddle point, node, spiral point, center), where the sign of the real part of each eigenvalue plays the role of $|\lambda|$ compared with $1$. The $1 \times 1$ case $y_{k+1} = \rho y_k$: the solution $\rho^ky_0$ tends to $0$ for every $y_0$ exactly when $|\rho| < 1$, [[§12★ First-Order Difference Equations#^prop-12-1|331 Prop. §12.1]].
 
 > [!example] Example §37.2: Attractor, Repeller and Saddle Point for Diagonal Matrices
 > **(a) Attractor.** $A = \begin{bmatrix} .80 & 0 \\ 0 & .64 \end{bmatrix}$ has eigenvalues $.8$ and $.64$ with eigenvectors $\mathbf{v}_1 = (1, 0)$, $\mathbf{v}_2 = (0, 1)$. If $\mathbf{x}_0 = c_1\mathbf{v}_1 + c_2\mathbf{v}_2$, then
@@ -258,6 +264,9 @@ When a real $2 \times 2$ matrix $A$ has complex eigenvalues, it is not diagonali
 > *Lay: Example 5.6.6*
 
 ^ex-37-4
+
+> [!remark]- Connections
+> - ODE version: for $\mathbf{x}' = A\mathbf{x}$, complex eigenvalues $\lambda \pm i\mu$ make the origin a spiral point, attracting when $\lambda < 0$, or a center when $\lambda = 0$, [[§32 Complex-Valued Eigenvalues#^def-32-1|331 Def. §32.1]]; a worked spiral sink, [[§32 Complex-Valued Eigenvalues#^ex-32-1|331 Ex. §32.1]].
 
 ## Survival of the Spotted Owls
 

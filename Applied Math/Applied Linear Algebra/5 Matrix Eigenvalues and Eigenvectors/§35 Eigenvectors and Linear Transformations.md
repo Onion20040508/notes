@@ -228,6 +228,9 @@ Every square matrix is similar to a matrix in Jordan form, using a basis of eige
 
 *Uses:* [[§34 Diagonalization#^thm-34-2|§34.2]], [[§28 Rank#^thm-28-3|§28.3]] (the Rank Theorem), [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem)
 
+> [!remark]- Connections
+> - ODE version: the Jordan form, [[§34★ Repeated Eigenvalues#^def-34-3|331 Def. §34.3]], and the exponential of a Jordan block, $e^{Jt} = e^{\lambda t}\begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}$, [[§34★ Repeated Eigenvalues#^prop-34-3|331 Prop. §34.3]]. Case 2(b) is the double eigenvalue with one eigenvector, where $\mathbf{x}' = A\mathbf{x}$ needs the generalized eigenvector $\boldsymbol{\eta}$ with $(A - \lambda I)\boldsymbol{\eta} = \boldsymbol{\xi}$ (Lay's $\mathbf{b}_2$ in Example §35.3), [[§34★ Repeated Eigenvalues#^thm-34-2|331 Thm. §34.2]], [[§34★ Repeated Eigenvalues#^def-34-2|331 Def. §34.2]].
+
 In Example §35.3, $N = A + 2I$ and $N\mathbf{b}_2 = (12 - 9, 8 - 6) = (3, 2) = \mathbf{b}_1$: Lay's basis is exactly the one built in the proof.
 
 A diagonal $\mathcal{B}$-matrix makes the powers of a transformation easy to compute, also when $V$ is not $\mathbb{R}^n$: by (5), applied $N$ times, $[T^N(\mathbf{x})]_{\mathcal{B}} = [T]_{\mathcal{B}}^N[\mathbf{x}]_{\mathcal{B}}$.

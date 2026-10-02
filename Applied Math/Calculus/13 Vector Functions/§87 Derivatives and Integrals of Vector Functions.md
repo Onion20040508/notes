@@ -77,6 +77,7 @@ The calculus of vector functions is one-variable calculus done in each component
 
 > [!remark]- Connections
 > - For a plane curve this is the tangent vector $(x'(t), y'(t))$ of [[§16 Line Integrals and Green's Theorem#^def-16-3|452 Def. §16.3]]. In 452's language, $\mathbf{r}'(t)$ is the Jacobian (a $3 \times 1$ matrix) of $\mathbf{r}: \mathbb{R} \to \mathbb{R}^3$, and Theorem §87.1 says it is computed entry by entry.
+> - ODE version: [[§28 Matrices#^def-28-5|331 Def. §28.5]] (matrix functions, differentiated and integrated entry by entry; a vector function is the case of a single column).
 
 > [!definition] Definition §87.3: Second Derivative
 > The **second derivative** of a vector function $\mathbf{r}$ is the derivative of $\mathbf{r}'$: $\mathbf{r}'' = (\mathbf{r}')'$. In [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Definition §89.1]], $\mathbf{r}'(t)$ and $\mathbf{r}''(t)$ are the velocity and acceleration of a particle with position $\mathbf{r}(t)$ at time $t$.
@@ -181,6 +182,7 @@ The calculus of vector functions is one-variable calculus done in each component
 
 > [!remark]- Connections
 > - Componentwise, these are the sum, product and chain rules of [[§28 Basic Properties of the Derivative#^thm-28-2|451 Thm. §28.2]] and [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]]; Formula 6 is the special case of the multivariable chain rule [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]] for $\mathbb{R} \to \mathbb{R} \to \mathbb{R}^3$.
+> - ODE version: [[§28 Matrices#^prop-28-4|331 Prop. §28.4]] (sum and product rules for matrix functions, where the order of the factors must be kept).
 
 > [!theorem] Theorem §87.3: Constant Length Means r′ ⟂ r
 > If $|\mathbf{r}(t)| = c$ (a constant), then $\mathbf{r}'(t)$ is orthogonal to $\mathbf{r}(t)$ for all $t$.

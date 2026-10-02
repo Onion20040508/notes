@@ -63,6 +63,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]] (the spectral theorem for symmetric matrices) and [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|235 Thm. §48.2]] (orthogonally diagonalizable iff symmetric), with worked orthogonal diagonalizations.
+> - Matrix version: a Hermitian (in particular real symmetric) matrix has $n$ mutually orthogonal eigenvectors, [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]] (2), (4), used to solve $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with symmetric $\mathbf{A}$.
 
 %% ex:7.29-fig %%
 > [!example] Example: Self-adjoint versus merely diagonalizable
@@ -105,6 +106,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in Quantum Mechanics: a change of basis to the eigenbasis of an observable by diagonalizing its matrix, and unitarily equivalent observables with identical spectra — [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-3|QM Theorem §C1.4.3]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-4|QM Theorem §C1.4.4]].
+> - Matrix version for Hermitian matrices: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]] (2), (4), and $\mathbf{T}^{-1} = \mathbf{T}^*$ in [[§33★ Fundamental Matrices#^thm-33-7|331 Thm. §33.7]] (b).
 
 > [!example] Example 7.33: An orthonormal basis of eigenvectors for an operator (p. 247)
 > $T(w,z)=(2w-3z,\ 3w+2z)$ on $\C^2$ is normal ([[§22 Self-Adjoint and Normal Operators#^ladr-7-19|7.19]]). The orthonormal basis $\tfrac1{\sqrt2}(i,1)$, $\tfrac1{\sqrt2}(-i,1)$ consists of eigenvectors (e.g. $T(i,1)=(2i-3,\ 3i+2)=(2+3i)(i,1)$), and

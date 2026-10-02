@@ -158,6 +158,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Negation: [[§4 Span and Linear Independence#^ladr-2-17|Linearly dependent]]. Same 'uniqueness at $0$' pattern as [[Condition for a direct sum]]. Half of [[§5 Bases#^ladr-2-26|Basis]].
 > - Computational version: [[§7 Linear Independence#^def-7-1|235 Def. §7.1]] (in ℝⁿ), tested by row reduction through [[§7 Linear Independence#^prop-7-1|235 Prop. §7.1]]; in a general space, [[§25 Linearly Independent Sets; Bases#^def-25-1|235 Def. §25.1]].
+> - Computational version: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2|331 Def. §29.2]] (vectors in $\mathbb{C}^n$) and [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-3|331 Def. §29.3]] (vector functions), with worked examples.
 
 > [!example] Example 2.16: Linearly independent lists (p. 32)
 > - (a) $(1,0,0,0),(0,1,0,0),(0,0,1,0)$ is linearly independent in $\F^4$: $a_1(1,0,0,0)+a_2(0,1,0,0)+a_3(0,0,1,0)=(a_1,a_2,a_3,0)$, which is $0$ only if all $a_k=0$.

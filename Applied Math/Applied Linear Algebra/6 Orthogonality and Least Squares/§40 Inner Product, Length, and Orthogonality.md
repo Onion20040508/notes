@@ -31,6 +31,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > [!remark]- Connections
 > - In $\mathbb{R}^2$ and $\mathbb{R}^3$ this is Stewart's dot product, [[§82 The Dot Product#^def-82-1|Calc Def. §82.1]], with the same properties [[§82 The Dot Product#^thm-82-1|Calc Thm. §82.1]].
 > - Rigorous treatment: [[§19 Inner Products and Norms#^ladr-6-1|LADR 6.1]] (dot product on $\mathbb{R}^n$) and [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]], where the properties of Theorem §40.1 become the axioms of an inner product on any vector space, over $\mathbb{R}$ or $\mathbb{C}$ (here: [[§46 Inner Product Spaces#^def-46-1|Definition §46.1]]).
+> - See also: for vectors with complex entries BDP distinguishes $\mathbf{x}^T\mathbf{y}$ from the inner product $(\mathbf{x}, \mathbf{y}) = \mathbf{x}^T\overline{\mathbf{y}}$, which gives the length and orthogonality, [[§28 Matrices#^def-28-3|331 Def. §28.3]], [[§28 Matrices#^prop-28-2|331 Prop. §28.2]]; the two products compared on an example, [[§28 Matrices#^ex-28-2|331 Ex. §28.2]].
 
 > [!example] Example §40.1: Computing Inner Products
 > **(a)** For $\mathbf{v} = \begin{bmatrix} 5 \\ 3 \end{bmatrix}$ and $\mathbf{w} = \begin{bmatrix} -1 \\ 7 \end{bmatrix}$,

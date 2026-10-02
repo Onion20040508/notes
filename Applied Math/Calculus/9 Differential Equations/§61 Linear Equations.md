@@ -121,6 +121,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 > [!remark]- Connections
 > - The integrating factor appears in 451 in a Rolle's-theorem argument, where $(y e^{g})' = e^{g}(y' + y g')$ is used exactly as in (3): [[§29 The Mean Value Theorem#^ex-29-4|451 Ex. §29.4]] and [[§29 The Mean Value Theorem#^rem-29-2|451 Remark after Ex. §29.4]].
 > - The step "all solutions differ by a constant" is [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]], and the existence of an antiderivative of a continuous function is [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC II).
+> - ODE version: [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]] (the same integrating factor for $y' + p(t)y = g(t)$, [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-1|331 Def. §4.1]], [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|331 Def. §4.2]]), and [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|331 Thm. §7.1]] (an initial-value problem has exactly one solution on the whole interval where $p$ and $g$ are continuous).
 
 > [!remark] Remark: Method — Solving a Linear Equation
 > 1. **Standard form.** Divide by the coefficient of $y'$ to get $y' + P(x)y = Q(x)$. Note the interval on which that coefficient is not $0$; the solution lives there (Example §61.2).
@@ -233,6 +234,9 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 > *Stewart: Example 9.5.3*
 
 ^ex-61-3
+
+> [!remark]- Connections
+> - ODE version: [[§4 Linear Differential Equations; Method of Integrating Factors#^ex-4-4|331 Ex. §4.4]] ($2y' + ty = 2$, $y(0) = 1$, whose solution keeps the non-elementary integral of $e^{s^2/4}$ with lower limit at the initial point).
 
 ## Application to Electric Circuits
 

@@ -47,6 +47,7 @@ tags: [linear-algebra]
 > - Companion: [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]].
 > - Group version: kernel and image of a homomorphism are subgroups, [[§15 Homomorphisms#^prop-15-2|493 Prop. §15.2]].
 > - Computational version: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-1|235 Thm. §24.1]] (Nul A is a subspace; also [[§18 Subspaces of ℝⁿ#^thm-18-2|235 Thm. §18.2]]) and [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|235 Thm. §24.5]] (kernel and range).
+> - ODE example: the solutions of $L[y] = 0$ form the null space of the differential operator $L$, the principle of superposition, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-2|331 Thm. §14.2]].
 
 > [!definition] Definition 3.14: Injective
 > A function $T:V\to W$ is *injective* if $Tu=Tv$ implies $u=v$; equivalently, distinct inputs give distinct outputs.

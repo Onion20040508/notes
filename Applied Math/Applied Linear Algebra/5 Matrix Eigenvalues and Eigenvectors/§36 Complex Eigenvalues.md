@@ -169,6 +169,7 @@ Surprisingly, the matrix of Example §36.2 acts essentially as a rotation, which
 
 > [!remark]- Connections
 > - Rigorous treatment: the non-real zeros of a polynomial with real coefficients come in conjugate pairs, [[§13 Polynomials#^ladr-4-14|LADR 4.14]] (applied to the characteristic polynomial, this gives the eigenvalue half of Theorem §36.2); over $\mathbb{R}$ such a pair is an irreducible quadratic factor, [[§13 Polynomials#^ladr-4-16|LADR 4.16]].
+> - ODE version: [[§32 Complex-Valued Eigenvalues#^thm-32-1|331 Thm. §32.1]] (the same statement, and the resulting solutions $\boldsymbol{\xi}e^{rt}$ and $\overline{\boldsymbol{\xi}}e^{\bar rt}$ of $\mathbf{x}' = A\mathbf{x}$ are complex conjugates of each other).
 
 The next result is the basic "building block" for all real $2 \times 2$ matrices with complex eigenvalues.
 
@@ -287,6 +288,7 @@ Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C
 
 > [!remark]- Connections
 > - Rigorous treatment: on a real vector space, an irreducible quadratic factor $x^2 + bx + c$ ($b^2 < 4c$) of the minimal polynomial gives two-dimensional invariant subspaces without real eigenvectors, [[§15 The Minimal Polynomial#^ladr-5-33|LADR 5.33]] (and hence every operator on an odd-dimensional real space has an eigenvalue, [[§15 The Minimal Polynomial#^ladr-5-34|LADR 5.34]]). Theorem §36.4 is the explicit $2 \times 2$ form: on the plane spanned by $\operatorname{Re}\mathbf{v}$, $\operatorname{Im}\mathbf{v}$ the matrix acts as a rotation–scaling.
+> - See also: for $\mathbf{x}' = A\mathbf{x}$ the same two real vectors, the real and imaginary parts of a complex eigenvector, give two independent real solutions, [[§32 Complex-Valued Eigenvalues#^thm-32-2|331 Thm. §32.2]], whose independence proof re-proves the fact in Step 1 of the proof above.
 
 > [!remark] Remark: Signs and Conventions
 > Lay pairs the eigenvalue $a - bi$ with $C = \begin{bmatrix} a & -b \\ b & a \end{bmatrix}$. The lecture uses the eigenvalue $\lambda = a + bi$ with eigenvector $\mathbf{v}$; then $P = [\,\operatorname{Re}\mathbf{v} \;\; \operatorname{Im}\mathbf{v}\,]$ gives $AP = P\begin{bmatrix} a & b \\ -b & a \end{bmatrix}$, that is, $P^{-1}AP = M_{a - bi}$. Both are Theorem §36.4: the eigenvector of $a + bi$ is the conjugate of the eigenvector of $a - bi$ (Theorem §36.2), and conjugating $\mathbf{v}$ changes the sign of $\operatorname{Im}\mathbf{v}$, the second column of $P$, which changes the signs of the off-diagonal entries of $C$.

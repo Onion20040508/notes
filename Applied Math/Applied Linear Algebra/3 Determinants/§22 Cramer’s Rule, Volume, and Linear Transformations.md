@@ -56,6 +56,9 @@ This section turns the theory of [[§20 Introduction to Determinants|§20]]–[[
 
 *Uses:* [[§22 Cramer’s Rule, Volume, and Linear Transformations#^def-22-1|Def. §22.1]], [[§21 Properties of Determinants#^thm-21-3|§21.3]], [[§21 Properties of Determinants#^thm-21-9|§21.9]], [[§20 Introduction to Determinants#^thm-20-1|§20.1]], [[§11 Matrix Operations#^prop-11-3|§11.3]] (columns of a product)
 
+> [!remark]- Connections
+> - See also: Cramer's rule for $n = 2$ fits a combination $c_1y_1 + c_2y_2$ of two solutions of $y'' + py' + qy = 0$ to initial conditions, with the Wronskian as the common denominator, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-3|331 Thm. §14.3]] (formula (11) of its proof).
+
 > [!example] Example §22.1: Cramer's Rule, With and Without a Parameter
 > **(a)** Solve $\begin{cases} x_1 + 2x_2 = 5 \\ 3x_1 + 4x_2 = 7 \end{cases}$. Here
 >

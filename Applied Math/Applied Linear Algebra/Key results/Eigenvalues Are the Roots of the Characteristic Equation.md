@@ -23,3 +23,4 @@ tags: [applied-linear-algebra, hub]
 
 ## Connections
 - See [[§33 The Characteristic Equation]] for context and examples.
+- **Also in [[Ordinary Differential Equations]]:** [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-4|331 Def. §29.4]] (ODE version with worked examples: eigenvalues as roots of $\det(A - \lambda I) = 0$, for the systems $\mathbf{x}' = A\mathbf{x}$).

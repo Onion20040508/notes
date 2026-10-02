@@ -124,6 +124,9 @@ The construction of Lebesgue measure generalizes to abstract settings.
 
 ^ex-11-2
 
+> [!remark]- Connections
+> - Computational version: the Dirac measure is the delta function of ODEs, [[§25 Impulse Functions#^def-25-3|331 Def. §25.3]], and integrating against it is the sifting property, [[§25 Impulse Functions#^thm-25-3|331 Thm. §25.3]] (with worked examples).
+
 > [!theorem] Proposition §11.3
 > Given any outer measure $\mu^*$ on $\mathcal{P}(X)$, we can induce a measure $\mu$ on the $\sigma$-algebra of $\mu^*$-measurable sets by restriction.
 

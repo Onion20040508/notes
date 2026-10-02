@@ -323,3 +323,6 @@ In applications a subspace usually arises as the kernel or the range of a suitab
 > *Lay: Examples 4.2.8 and 4.2.9*
 
 ^ex-24-5
+
+> [!remark]- Connections
+> - ODE version: the solutions of a homogeneous linear equation $y'' + p(t)y' + q(t)y = 0$ are closed under linear combinations, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-2|331 Thm. §14.2]], and form a two-dimensional space, the null space of $L$, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-14-2|331 §14, Remark: The Solution Space Is a Two-Dimensional Vector Space]]. For (4), with characteristic roots $\pm i\omega$, it is spanned by $\cos\omega t$ and $\sin\omega t$, [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|331 Thm. §15.2]].

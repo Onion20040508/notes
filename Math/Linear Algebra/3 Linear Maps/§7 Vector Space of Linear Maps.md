@@ -26,6 +26,7 @@ tags: [linear-algebra]
 > - Physics: observables and time evolution in quantum mechanics are linear maps on the state space.
 > - Forgetting scalars, a linear map is a homomorphism of additive groups: [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]].
 > - Computational version: [[§8 Introduction to Linear Transformations#^def-8-3|235 Def. §8.3]] (for ℝⁿ → ℝᵐ) and [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4|235 Def. §24.4]] (between vector spaces).
+> - ODE example: the differential operator $L[y] = y'' + py' + qy$, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-1|331 Def. §14.1]], and the left side of any linear differential equation, [[§3 Classification of Differential Equations#^def-3-4|331 Def. §3.4]].
 
 > [!remark] Notation 3.2: L(V, W), L(V) (p. 52)
 

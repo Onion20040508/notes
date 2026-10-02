@@ -72,6 +72,7 @@ Why should a population grow at a rate proportional to its size? Suppose $1000$ 
 
 > [!remark]- Connections
 > - The uniqueness half, proved in [[§21 Exponential Growth and Decay#^pf-21-1|the proof of Theorem §21.1]], rests on [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (a vanishing derivative means constant), proved there from the Mean Value Theorem.
+> - ODE version: [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-1|331 Prop. §8.1]] (the exponential growth model), the case $b = 0$ of [[§2 Solutions of Some Differential Equations#^thm-2-1|331 Thm. §2.1]], which proves that every solution has this form.
 
 > [!remark] Remark: Emigration
 > Emigration (or "harvesting") at a constant rate $m$ changes Equation 1 into
@@ -83,6 +84,9 @@ Why should a population grow at a rate proportional to its size? Suppose $1000$ 
 > Stewart leaves its solution to the exercises (Exercise 17). It is again separable, and for $k \ne 0$ the same steps give $P(t) = \dfrac{m}{k} + \Big(P_0 - \dfrac{m}{k}\Big)e^{kt}$. With $k > 0$ the population grows exponentially if $m < kP_0$, stays constant if $m = kP_0$, and declines if $m > kP_0$.
 
 ^rem-60-1
+
+> [!remark]- Connections
+> - ODE version: [[§2 Solutions of Some Differential Equations#^thm-2-1|331 Thm. §2.1]] solves $y' = ay - b$, which is (3) with $a = k$, $b = m$, and shows that the formula gives every solution; BDP's example is field mice preyed on by owls, [[§2 Solutions of Some Differential Equations#^ex-2-1|331 Ex. §2.1]].
 
 ## The Logistic Model
 
@@ -201,6 +205,9 @@ The logistic equation is separable, so it can be solved explicitly with the meth
 
 *Uses:* [[§59 Separable Equations#^thm-59-1|§59.1]], [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|§47.3]] (partial fractions), [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-4|§11.4]] (limit of an exponential at infinity)
 
+> [!remark]- Connections
+> - ODE version: [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-3|331 Def. §8.3]] and [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-3|331 Prop. §8.3]] (the logistic equation $y' = r(1 - y/K)y$ and its solution), with the stability of the equilibria $0$ and $K$ read off the phase line.
+
 > [!theorem] Proposition §60.3: Inflection at Half the Carrying Capacity
 > If $P$ satisfies the logistic equation (4), then
 >
@@ -226,6 +233,9 @@ The logistic equation is separable, so it can be solved explicitly with the meth
 ^pf-60-3
 
 *Uses:* [[§60 Models for Population Growth#^thm-60-2|§60.2]], [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]] (Increasing/Decreasing Test, applied to $P'$), [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-3|§27.3]] (Concavity Test), [[§27 What Derivatives Tell Us About the Shape of a Graph#^def-27-2|Def. §27.2]] (inflection point)
+
+> [!remark]- Connections
+> - ODE version: [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-2|331 Prop. §8.2]] (for any autonomous equation $y' = f(y)$, $y'' = f'(y)f(y)$; here $f(P) = kP(1 - P/M)$, and $f'(P) = 0$ at $P = M/2$).
 
 The same formula shows that a solution starting at $M/2 \le P_0 < M$ is concave downward for all $t > 0$, and one starting above $M$ is concave upward (then $1 - P/M$ and $1 - 2P/M$ are both negative).
 

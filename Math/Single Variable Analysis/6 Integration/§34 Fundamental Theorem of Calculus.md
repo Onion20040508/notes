@@ -68,6 +68,7 @@ We all know this — but how to *prove* it? The integral $\int_a^b g'$ is define
 > [!remark]- Connections
 > - Lebesgue version: $f(x) - f(a) = \int_a^x f'$ holds exactly for absolutely continuous $f$, [[§18 Differentiation Theory#^thm-18-13|551 Thm. §18.13]].
 > - Computational version: [[§36 The Fundamental Theorem of Calculus#^thm-36-2|Calc Thm. §36.2]] (Stewart's Part 2 is this FTC I) and the Net Change Theorem, [[§37 Indefinite Integrals and the Net Change Theorem#^thm-37-2|Calc Thm. §37.2]] (with worked examples).
+> - Used in ODEs: the solution $\int_{x_0}^x M(s)\,ds + \int_{y_0}^y N(s)\,ds = 0$ of a separable initial value problem, [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]], and the equivalence of $y' = f(t, y)$, $y(0) = 0$ with an integral equation, [[§11 The Existence and Uniqueness Theorem#^lem-11-2|331 Lemma §11.2]].
 
 ## Integration by Parts
 
@@ -128,6 +129,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 > [!remark]- Connections
 > - Its several-variable form is Green's first identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]], which reduces to this for n = 1.
 > - Computational version: [[§44 Integration by Parts#^thm-44-2|Calc Thm. §44.2]] (with worked examples).
+> - Used in ODEs: integration by parts on each piece gives the transform of a derivative, $\mathcal{L}\{f'\} = s\mathcal{L}\{f\} - f(0)$, [[§22 Solution of Initial Value Problems#^thm-22-1|331 Thm. §22.1]].
 
 ## The Second Fundamental Theorem
 
@@ -185,6 +187,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 > - The substitution rule, which 451 never states, is proved in 452 from this theorem and the chain rule: [[§15 Multivariable Integration#^lem-15-13|452 Lemma §15.13]].
 > - Lebesgue version: for integrable $f$ the integral function is absolutely continuous ([[§18 Differentiation Theory#^thm-18-12|551 Thm. §18.12]]) and $F' = f$ almost everywhere without any continuity ([[§18 Differentiation Theory#^thm-18-26|551 Thm. §18.26]]).
 > - Computational version: [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (Stewart's Part 1 is this FTC II; with worked examples).
+> - Used in ODEs: the variable-limit integrals in the solution formula for $y' + p(t)y = g(t)$, [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]], in variation of parameters, [[§18★ Variation of Parameters#^thm-18-1|331 Thm. §18.1]], and in the integral equation of Picard iteration, [[§11 The Existence and Uniqueness Theorem#^lem-11-2|331 Lemma §11.2]].
 
 > [!example] Example §34.1: FTC I from FTC II when the derivative is continuous (HW)
 > The two halves of the FTC are not independent: if $g'$ is *continuous*, FTC I follows from FTC II in three lines. Set $G(x) = \int_a^x g'(t)\,dt$. By FTC II, $G$ is continuous on $[a,b]$ and $G' = g'$ on $(a,b)$; so $G - g$ has vanishing derivative on $(a,b)$ and is constant there (§29), and the constancy extends to the closed interval by continuity of $G - g$. Evaluating the constant at both ends,

@@ -135,6 +135,7 @@ tags: [functional-analysis, math556]
 > [!remark]- Connections
 > - Steps 2–3 re-prove the 451 results on uniform convergence: [[§24 Uniform Convergence#^thm-24-1|451 §24.1]] (supremum criterion), [[§24 Uniform Convergence#^thm-24-2|451 §24.2]] (uniform limits preserve continuity).
 > - The pattern of the proof: [[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]].
+> - Used in ODEs: the Picard iterates for $y' = f(t, y)$ form a Cauchy sequence in $C[-h, h]$ with the supremum norm, and their limit is the solution, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
 
 > [!remark] Remark
 > The proof is the “candidate, then close” pattern ([[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]]) in its simplest form, with one extra step that has no analogue in $\ell^p$ ([[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|§13.5]]): the candidate must be shown to lie in the space, and here that is a genuine theorem (a uniform limit of continuous functions is continuous), not a bookkeeping check. The $3\varepsilon$ argument in Step 3 is exactly where uniformity, not just pointwise convergence, is used.

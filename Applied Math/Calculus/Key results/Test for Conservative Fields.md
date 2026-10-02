@@ -23,3 +23,4 @@ tags: [calculus, hub]
 ## Connections
 - Rigorous treatment in the language of forms: on a star-shaped domain every closed form is exact, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]] ([[Poincaré Lemma]]). [[§110 Green's Theorem#^ex-110-5|Example §110.5]] shows that some hypothesis on the region is needed.
 - Topology's definition of simply connected (path-connected, every loop shrinks to a point): [[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]. Stewart's definition (every simple closed curve in $D$ encloses only points of $D$) agrees with it for open connected regions in the plane (a nontrivial fact of plane topology).
+- **Also in [[Ordinary Differential Equations]]:** [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|331 Thm. §9.2]] (the test for exact equations, the ODE version with worked examples).

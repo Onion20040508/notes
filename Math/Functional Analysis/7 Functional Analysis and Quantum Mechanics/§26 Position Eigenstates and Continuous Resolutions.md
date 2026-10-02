@@ -88,6 +88,9 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 ![[m556-24-3.svg]]
 *The tent functions $\varphi_1, \varphi_2, \varphi_4$ (blue) of the proof. All have $\varphi_n(x_0) = 1$ (red), but $\varphi_n$ lives on $[x_0 - \frac1n, x_0 + \frac1n]$ with $0 \le \varphi_n \le 1$, so $\|\varphi_n\|_2^2$ (for $n = 4$ the shaded area under $\varphi_4^2$) is at most the area $\frac2n$ of the dashed box. A bound $|\varphi(x_0)| \le C\|\varphi\|_2$ would force $\varphi_n(x_0) \to 0$.*
 
+> [!remark]- Connections
+> - The idealization this rules out is the delta function of ODEs, [[§25 Impulse Functions#^def-25-3|331 Def. §25.3]], defined there as a limit of unit pulses (with worked examples).
+
 > [!remark] Remark: What $|x_0\rangle$ Would Have to Be
 > In Dirac notation a position eigenstate is characterized by $\langle x_0 | \varphi \rangle = \varphi(x_0)$, i.e. $(\varphi, |x_0\rangle) = \varphi(x_0)$. Proposition [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-4|§26.4]] says no element of $L^2$ does this: the functional $\varphi \mapsto \varphi(x_0)$ is unbounded in the $L^2$ norm, so by the [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|Riesz theorem]] it is not a bra, and $|x_0\rangle$ is not a ket. (Point evaluation is not even well defined on $L^2$, whose elements are functions up to sets of measure zero.) The “wavefunction” of $|x_0\rangle$ would be $\delta(x - x_0)$, and the physicists' normalization $\langle x | x' \rangle = \delta(x - x')$ in place of $1$ is the symptom. Proposition [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-3|§26.3]] says the same thing from the operator side: multiplication by $x$ has no eigenvalues at all.
 

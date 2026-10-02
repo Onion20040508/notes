@@ -125,6 +125,7 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 > [!remark]- Connections
 > - Two-variable version, proved by applying this theorem along a segment: [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-2|452 Thm. §9.2]].
 > - Computational version: Taylor's Inequality, [[§78 Taylor and Maclaurin Series#^thm-78-4|Calc Thm. §78.4]] (with worked examples).
+> - Used in ODEs: the remainder bound $|e^x - 1 - x| \le \tfrac12 x^2e^{|x|}$ justifies differentiating a Laplace transform under the integral sign, [[§22 Solution of Initial Value Problems#^thm-22-6|331 Thm. §22.6]] (table entry 19).
 
 ## Two Instructive Examples
 

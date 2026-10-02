@@ -105,6 +105,7 @@ Powers of a diagonal matrix are trivial to compute, and so are powers of any mat
 > [!remark]- Connections
 > - Rigorous treatment: [[§17 Diagonalizable Operators#^ladr-5-50|LADR 5.50]] (an operator is diagonalizable if it has a diagonal matrix in *some* basis) and [[§17 Diagonalizable Operators#^ladr-5-55|LADR 5.55]] (equivalent: a basis of eigenvectors; $V$ is the direct sum of the eigenspaces; the eigenspace dimensions add up to $\dim V$). Axler's (a) $\Leftrightarrow$ (b) is the operator form of $AP = PD$; that $D = P^{-1}AP$ is the matrix of $\mathbf{x} \mapsto A\mathbf{x}$ in the basis of columns of $P$ is [[§35 Eigenvectors and Linear Transformations#^thm-35-2|Theorem §35.2]].
 > - A further criterion with no counterpart in Lay: diagonalizable $\Leftrightarrow$ the minimal polynomial has distinct linear factors, [[§17 Diagonalizable Operators#^ladr-5-62|LADR 5.62]].
+> - ODE version: [[§33★ Fundamental Matrices#^thm-33-7|331 Thm. §33.7]] (the same theorem, $\mathbf{T}^{-1}A\mathbf{T} = D$ with the eigenvectors as columns of $\mathbf{T}$). For $\mathbf{x}' = A\mathbf{x}$ it gives a fundamental set of eigenvector solutions, [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|331 Thm. §31.2]], and the matrix exponential $e^{At} = \mathbf{T}e^{Dt}\mathbf{T}^{-1}$, the continuous analogue of $A^k = PD^kP^{-1}$, [[§33★ Fundamental Matrices#^thm-33-8|331 Thm. §33.8]].
 
 ## Diagonalizing Matrices
 
@@ -247,6 +248,9 @@ If $A$ has $n$ distinct eigenvalues, any choice of eigenvectors gives an inverti
 ^pf-34-3
 
 *Uses:* [[§32 Eigenvectors and Eigenvalues#^thm-32-3|§32.3]], [[§34 Diagonalization#^thm-34-1|§34.1]], [[§33 The Characteristic Equation#^thm-33-6|§33.6]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]] (the Basis Theorem), [[§27 The Dimension of a Vector Space#^thm-27-3|§27.3]] (a linearly independent set extends to a basis), [[§20 Introduction to Determinants#^thm-20-1|§20.1]] (cofactor expansion), [[§33 The Characteristic Equation#^thm-33-4|§33.4]], [[§33 The Characteristic Equation#^thm-33-5|§33.5]], [[§7 Linear Independence#^thm-7-6|§7.6]]
+
+> [!remark]- Connections
+> - See also, for $\mathbf{x}' = A\mathbf{x}$: a repeated eigenvalue whose geometric multiplicity equals its algebraic multiplicity still gives independent eigenvector solutions, [[§34★ Repeated Eigenvalues#^prop-34-1|331 Prop. §34.1]]; when the geometric multiplicity is smaller, a generalized eigenvector supplies the missing solution, [[§34★ Repeated Eigenvalues#^thm-34-2|331 Thm. §34.2]].
 
 > [!remark] Remark: Reading Theorem §34.3
 > - Since the geometric multiplicity of an eigenvalue of algebraic multiplicity $1$ is squeezed between $1$ and $1$, an eigenvalue with algebraic multiplicity $1$ never causes trouble. This gives a second proof of Theorem §34.2 (lecture L20): $n$ distinct eigenvalues means all algebraic multiplicities are $1$, so all geometric multiplicities are $1$ and they add up to $n$.

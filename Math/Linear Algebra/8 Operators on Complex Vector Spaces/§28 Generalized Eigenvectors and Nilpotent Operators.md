@@ -87,6 +87,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Enough of them over $\C$: [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-9|8.9]]. Physics: in degenerate perturbation theory and in non-Hermitian (e.g. damped) systems, missing eigenvectors are replaced by generalized ones.
 > - Computational version: [[§35 Eigenvectors and Linear Transformations#^ex-35-3|235 Ex. §35.3]] (a $2\times2$ matrix with a generalized eigenvector: $(A+2I)\mathbf b_2=\mathbf b_1$).
+> - Computational version: [[§34★ Repeated Eigenvalues#^def-34-2|331 Def. §34.2]] (the case $k = 2$, used to solve $\mathbf{x}' = \mathbf{A}\mathbf{x}$ when an eigenvector is missing, [[§34★ Repeated Eigenvalues#^thm-34-2|331 Thm. §34.2]]).
 
 > [!theorem] Theorem 8.9: A basis of generalized eigenvectors
 > If $\F=\C$ and $T\in\Lin(V)$, then $V$ has a basis of generalized eigenvectors of $T$.

@@ -64,6 +64,7 @@ Many quantities change at a rate proportional to their size: a population under 
 > - The step "zero derivative implies constant" is [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]].
 > - Matrix version: [[§38 Applications to Differential Equations#^thm-38-2|235 Thm. §38.2]] ($\mathbf{x}' = A\mathbf{x}$ has the solutions $\mathbf{v}e^{\lambda t}$ for eigenpairs of $A$) and [[§38 Applications to Differential Equations#^thm-38-3|235 Thm. §38.3]] (diagonalizing $A$ decouples the system into equations $y_k' = \lambda_k y_k$, each solved by this theorem), with circuit examples.
 > - In Chapter 9 the same equation is the first example of a separable equation and of a population model: [[§59 Separable Equations#^thm-59-1|Theorem §59.1]], [[§60 Models for Population Growth#^thm-60-1|Theorem §60.1]]; [[§60 Models for Population Growth|§60]] then refines the model to the logistic equation ([[§60 Models for Population Growth#^thm-60-2|Theorem §60.2]]).
+> - ODE version: [[§2 Solutions of Some Differential Equations#^thm-2-1|331 Thm. §2.1]] (every solution of $y' = ay - b$, proved the same way; $b = 0$ is this theorem) and the population model [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-1|331 Prop. §8.1]].
 
 ## Population Growth
 
@@ -186,6 +187,9 @@ If $m(t)$ is the mass remaining from an initial mass $m_0$ of a radioactive subs
 
 *Uses:* [[§21 Exponential Growth and Decay#^thm-21-1|§21.1]]
 
+> [!remark]- Connections
+> - ODE version: [[§6 Modeling with First-Order Differential Equations#^ex-6-5|331 Ex. §6.5]] (Newton's law of cooling as the case $a = -k$, $b = -kT_m$ of $y' = ay - b$, with two worked problems).
+
 > [!example] Example §21.3: Cooling Iced Tea
 > A bottle of iced tea at room temperature ($72^\circ$F) is placed in a refrigerator where the temperature is $44^\circ$F. After half an hour the tea has cooled to $61^\circ$F. (a) What is its temperature after another half hour? (b) How long does it take to cool to $50^\circ$F?
 >
@@ -250,6 +254,9 @@ Letting $n \to \infty$ means compounding the interest **continuously**.
 ^pf-21-3
 
 *Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|§19.7]], [[§10 Continuity#^thm-10-7|§10.7]], [[§17 The Chain Rule#^cor-17-4|§17.4]]
+
+> [!remark]- Connections
+> - ODE version: [[§6 Modeling with First-Order Differential Equations#^prop-6-2|331 Prop. §6.2]] (the same limit, compounding $m$ times a year) and [[§6 Modeling with First-Order Differential Equations#^prop-6-1|331 Prop. §6.1]] (continuous compounding with deposits or withdrawals, $dS/dt = rS + k$).
 
 > [!example] Example §21.4: Compounding More and More Often
 > $\$5000$ is invested at $2\%$ interest for $3$ years. With annual compounding it is worth $\$5000(1.02) = \$5100.00$ after one year, $[\$5000(1.02)](1.02) = \$5202.00$ after two, and after three years:

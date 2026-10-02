@@ -56,6 +56,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Equivalent conditions: [[§14 Invariant Subspaces#^ladr-5-7|Equivalent conditions to be an eigenvalue]]. Existence over $\C$: [[Existence of eigenvalues]]. Zeros of the minimal polynomial: [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]].
 > - Computational version: [[§32 Eigenvectors and Eigenvalues#^def-32-1|235 Def. §32.1]] (eigenvalues and eigenvectors of an $n\times n$ matrix, with worked examples).
+> - Computational version: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-4|331 Def. §29.4]] (the eigenvalues of a matrix as the roots of $\det(\mathbf{A} - \lambda\mathbf{I}) = 0$, with worked examples).
 
 > [!example] Example 5.6: Eigenvalue (p. 134)
 > $T(x,y,z)=(7x+3z,\ 3x+6y+9z,\ -6y)$ on $\F^3$. Then
@@ -135,6 +136,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§32 Eigenvectors and Eigenvalues#^thm-32-3|235 Thm. §32.3]] (the same statement for an $n\times n$ matrix).
+> - Matrix version: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|331 Thm. §29.4]] (with worked examples).
 
 > [!theorem] Theorem 5.12: Operator cannot have more eigenvalues than dimension of vector space
 > If $V$ is finite-dimensional, each operator on $V$ has at most $\dim V$ distinct eigenvalues.

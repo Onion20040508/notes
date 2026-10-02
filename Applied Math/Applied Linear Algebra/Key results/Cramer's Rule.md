@@ -22,3 +22,4 @@ tags: [applied-linear-algebra, hub]
 
 ## Connections
 - See [[§22 Cramer’s Rule, Volume, and Linear Transformations]] for context and examples.
+- **Also in [[Ordinary Differential Equations]]:** [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-3|331 Thm. §14.3]] (the $2 \times 2$ case in an ODE setting: fitting initial conditions, with the Wronskian as denominator).

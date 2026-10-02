@@ -56,6 +56,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§46 Inner Product Spaces#^ex-46-1|235 Ex. §46.1]] (a weighted inner product on $\mathbb R^2$, as in (b)) and [[§46 Inner Product Spaces#^ex-46-4|235 Ex. §46.4]] (the integral inner product on $C[a,b]$, as in (c)).
+> - Computational version of (a) on $\mathbb{C}^n$: [[§28 Matrices#^def-28-3|331 Def. §28.3]], with [[§28 Matrices#^ex-28-2|331 Ex. §28.2]].
 
 > [!definition] Definition 6.4: Inner product space
 > An *inner product space* is a vector space $V$ together with an inner product on $V$. $\F^n$ always carries the Euclidean inner product ([[§19 Inner Products and Norms#^ladr-6-3|6.3]](a)) unless said otherwise.
@@ -87,6 +88,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - (a) is the functional that [[Riesz representation theorem|6.42]] shows is the only kind.
 > - Computational version: [[§46 Inner Product Spaces#^prop-46-1|235 Prop. §46.1]] (the same consequences of the axioms, real case).
+> - Computational version for the Euclidean inner product on $\mathbb{C}^n$: [[§28 Matrices#^prop-28-2|331 Prop. §28.2]].
 
 > [!definition] Definition 6.7: Norm, ‖v‖
 > The *norm* of $v\in V$ is $\|v\|=\sqrt{\langle v,v\rangle}$.

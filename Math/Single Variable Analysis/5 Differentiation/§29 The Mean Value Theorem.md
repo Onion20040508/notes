@@ -116,6 +116,7 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 > [!remark]- Connections
 > - If $f' = 0$ only almost everywhere, the conclusion needs absolute continuity: [[§18 Differentiation Theory#^thm-18-27|551 Thm. §18.27]], with the Cantor function as counterexample ([[§18 Differentiation Theory#^ex-18-4|551 Ex. §18.4]]).
 > - Computational version: [[§26 The Mean Value Theorem#^thm-26-3|Calc Thm. §26.3]]; used for the uniqueness of solutions of $y' = ky$ in [[§21 Exponential Growth and Decay#^thm-21-1|Calc Thm. §21.1]].
+> - Used in ODEs: every solution of $y' = ay - b$ has the form $b/a + ce^{at}$, [[§2 Solutions of Some Differential Equations#^thm-2-1|331 Thm. §2.1]], and the solutions of a separable equation are given implicitly by $H_1(x) + H_2(y) = c$, [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]]; both proofs show that some function has zero derivative.
 
 > [!theorem] Corollary §29.5: Equal Derivatives Differ by a Constant
 > If $f, g: (a,b) \to \mathbb{R}$ are differentiable with $f'(x) = g'(x)$ for all $x$, then $f = g + c$ for some constant $c$.
@@ -129,6 +130,7 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 
 > [!remark]- Connections
 > - Computational version: [[§26 The Mean Value Theorem#^cor-26-4|Calc Cor. §26.4]]; the most general antiderivative, [[§33 Antiderivatives#^thm-33-1|Calc Thm. §33.1]] (with worked examples).
+> - Used in ODEs: the solutions of $y' + p(t)y = g(t)$ are exactly $\frac{1}{\mu}\big(\int_{t_0}^t \mu g\,ds + c\big)$, because $\mu y$ and $\int_{t_0}^t \mu g\,ds$ have the same derivative: [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-1|331 Thm. §4.1]], [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]].
 
 > [!theorem] Proposition §29.6: Vanishing k-th Derivative Means Polynomial (HW)
 > Let $k \geq 1$ and let $f$ be $k$ times differentiable on an open interval $I$ with $f^{(k)} \equiv 0$ on $I$. Then $f$ is a polynomial of degree less than $k$; conversely, every such polynomial has vanishing $k$-th derivative.
@@ -244,6 +246,7 @@ For instance: if $f$ is differentiable on $\mathbb{R}$ with $1 \leq f' \leq 2$ e
 
 > [!remark]- Connections
 > - Worked examples: the integrating factor for linear equations, [[§61 Linear Equations#^thm-61-1|Calc Thm. §61.1]]; $y' = x^2 y$ solved in [[§59 Separable Equations#^ex-59-3|Calc Ex. §59.3]].
+> - The integrating factor in full: [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|331 Def. §4.2]] and the solution of $y' + p(t)y = g(t)$, [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]] (with worked examples).
 
 ## The Intermediate Value Theorem for Derivatives
 

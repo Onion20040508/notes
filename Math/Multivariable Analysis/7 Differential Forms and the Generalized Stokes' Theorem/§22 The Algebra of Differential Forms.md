@@ -716,6 +716,9 @@ At each level, $d$ measures the **obstruction to solving an equation**:
 
 ^def-22-8
 
+> [!remark]- Connections
+> - Computational version: the differential equation $M + Ny' = 0$ is exact, [[§9 Exact Differential Equations and Integrating Factors#^def-9-1|331 Def. §9.1]], when the 1-form $M\,dx + N\,dy$ is exact, $d\psi$ (with worked examples).
+
 > [!theorem] Proposition §22.10: Exact $\Rightarrow$ Closed
 > Every exact form is closed.
 
@@ -799,6 +802,7 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 > - Used in Electromagnetism: on a star-shaped region a curl-free field is a gradient and a divergence-free field is a curl, which gives the scalar and vector potentials — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-3|EM Theorem §B1.2.3]], with the hole case in [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^cau-b1-2-1|EM Caution: Curl-free is not enough on a region with a hole]].
 > - Used in Relativity: on a region without holes every field tensor obeying the homogeneous Maxwell pair comes from a four-potential — [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]], [[§B4.2 The Electromagnetic Field Tensor#^rem-b4-2-4|REL Remark: Layers, and what comes later]].
 > - Vector-field form: curl-free fields on ℝ³ are conservative, [[§114 Stokes' Theorem#^thm-114-4|Calc Thm. §114.4]], and the plane test on simply-connected regions, [[§110 Green's Theorem#^thm-110-5|Calc Thm. §110.5]] (with worked examples).
+> - Computational version: for 1-forms on a rectangle in $\mathbb{R}^2$ the lemma is the test for exactness $M_y = N_x$, proved there by building the potential $\psi$, [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|331 Thm. §9.2]] (with worked examples).
 
 The proof (constructing $\eta$ explicitly via a homotopy operator) is beyond the scope of this course; see Lee, Chapter 17. The key point is that the failure of exactness is a *topological* property of the domain — it detects holes.
 

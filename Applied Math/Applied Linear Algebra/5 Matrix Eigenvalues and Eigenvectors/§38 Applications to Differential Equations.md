@@ -56,6 +56,10 @@ This section is the continuous analogue of [[§37 Discrete Dynamical Systems|§3
 
 Standard texts on differential equations show that there is always a **fundamental set of solutions** of (1): $n$ linearly independent functions such that every solution is a unique linear combination of them. That is, the solution set is an $n$-dimensional vector space of functions, and a fundamental set is a basis for it; each initial value problem has exactly one solution. Lay does not prove this; for diagonalizable $A$ the fundamental set is constructed explicitly below (Theorem §38.3).
 
+> [!remark]- Connections
+> - ODE version: [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|331 Thm. §30.1]] (superposition for $\mathbf{x}' = P(t)\mathbf{x}$, where the coefficients may depend on $t$).
+> - The fact Lay cites from "standard texts": 331 derives it from existence and uniqueness for linear systems, [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|331 Thm. §27.3]] (which BDP also states without proof). The solutions with $\mathbf{x}(t_0) = \mathbf{e}_1, \ldots, \mathbf{e}_n$ form a fundamental set, [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-4|331 Thm. §30.4]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|331 Def. §30.3]], and every solution is a unique combination of a fundamental set, [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|331 Thm. §30.2]]. For constant $A$ and $t_0 = 0$ these solutions are the columns of the matrix exponential $e^{At}$, [[§33★ Fundamental Matrices#^thm-33-4|331 Thm. §33.4]].
+
 When $A$ is diagonal, the system can be solved by elementary calculus. For instance,
 
 $$
@@ -141,6 +145,9 @@ This suggests looking for solutions of the general equation $\mathbf{x}' = A\mat
 
 ^def-38-2
 
+> [!remark]- Connections
+> - ODE version: BDP's names for the real-eigenvalue cases, saddle point, [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-3|331 Def. §31.3]], and node (an attractor or repeller with distinct real eigenvalues), [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-4|331 Def. §31.4]]; the full $2 \times 2$ classification, with spiral points and centers, [[§32 Complex-Valued Eigenvalues#^thm-32-3|331 Thm. §32.3]].
+
 > [!example] Example §38.2: A Particle in a Force Field (Saddle Point)
 > A particle moves in a planar force field, and its position vector $\mathbf{x}$ satisfies $\mathbf{x}' = A\mathbf{x}$, $\mathbf{x}(0) = \mathbf{x}_0$, where
 >
@@ -216,6 +223,9 @@ This suggests looking for solutions of the general equation $\mathbf{x}' = A\mat
 
 *Uses:* [[§34 Diagonalization#^thm-34-1|§34.1]], [[§21 Exponential Growth and Decay#^thm-21-1|Calc Thm. §21.1]], [[§38 Applications to Differential Equations#^thm-38-2|§38.2]]
 
+> [!remark]- Connections
+> - ODE version: [[§33★ Fundamental Matrices#^thm-33-8|331 Thm. §33.8]] (the same decoupling $\mathbf{x} = \mathbf{T}\mathbf{y}$, $\mathbf{y}' = D\mathbf{y}$, which also gives $e^{At} = \mathbf{T}e^{Dt}\mathbf{T}^{-1}$) and [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|331 Thm. §31.2]] (the eigenfunctions form a fundamental set). The same substitution uncouples the nonhomogeneous system $\mathbf{x}' = A\mathbf{x} + \mathbf{g}(t)$, [[§35★ Nonhomogeneous Linear Systems#^thm-35-2|331 Thm. §35.2]].
+
 This is the same change of variable as [[§37 Discrete Dynamical Systems#^thm-37-4|Theorem §37.4]] for difference equations, with $\lambda^k$ replaced by $e^{\lambda t}$. In particular the origin is an attractor when all $\lambda_k < 0$ ($e^{\lambda_kt} \to 0$) and a repeller when all $\lambda_k > 0$, where for $\mathbf{x}_{k+1} = A\mathbf{x}_k$ the dividing line was $|\lambda_k| = 1$.
 
 ## Complex Eigenvalues
@@ -279,6 +289,9 @@ Let the real matrix $A$ have a pair of complex eigenvalues $\lambda$ and $\bar\l
 ^pf-38-4
 
 *Uses:* [[§38 Applications to Differential Equations#^def-38-3|Def. §38.3]], [[§38 Applications to Differential Equations#^thm-38-2|§38.2]], [[§36 Complex Eigenvalues#^prop-36-1|§36.1]], [[§36 Complex Eigenvalues#^thm-36-4|§36.4]] (Step 1)
+
+> [!remark]- Connections
+> - ODE version: [[§32 Complex-Valued Eigenvalues#^thm-32-2|331 Thm. §32.2]] (the same real solutions, with $\mathbf{a} + i\mathbf{b}$ for $\operatorname{Re}\mathbf{v} + i\operatorname{Im}\mathbf{v}$), worked in [[§32 Complex-Valued Eigenvalues#^ex-32-1|331 Ex. §32.1]]. The rule $\frac{d}{dt}e^{\lambda t} = \lambda e^{\lambda t}$ for complex $\lambda$, used in the first step: [[§15 Complex Roots of the Characteristic Equation#^prop-15-1|331 Prop. §15.1]].
 
 Since $\mathbf{x}_2 = \overline{\mathbf{x}_1}$ has real and imaginary parts $\mathbf{y}_1$ and $-\mathbf{y}_2$, one can use either $\mathbf{x}_1$ or $\mathbf{x}_2$, but not both, to produce two real linearly independent solutions.
 

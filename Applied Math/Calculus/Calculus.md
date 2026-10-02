@@ -171,4 +171,4 @@ graph TD
 Prerequisite: MATH 132 (Calculus II); Chapters 1–11 are included as the single-variable foundation.
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each Math subject: [[Single Variable Analysis]] (192), [[Multivariable Analysis]] (161), [[Applied Linear Algebra]] (43), [[Linear Algebra]] (27), [[Logic and Proofs]] (19), [[Measure Theory]] (13), [[Topology]] (6), [[Differentiable Manifolds]] (2).
+Number of *Connections* links from these notes to each Math subject: [[Single Variable Analysis]] (192), [[Multivariable Analysis]] (161), [[Ordinary Differential Equations]] (62), [[Applied Linear Algebra]] (43), [[Linear Algebra]] (27), [[Logic and Proofs]] (19), [[Measure Theory]] (13), [[Topology]] (6), [[Differentiable Manifolds]] (2).

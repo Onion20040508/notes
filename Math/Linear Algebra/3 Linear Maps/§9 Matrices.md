@@ -161,6 +161,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Other ways to read the product: [[§9 Matrices#^ladr-3-46|Entry of matrix product equals row times column]], [[§9 Matrices#^ladr-3-48|Column of matrix product equals matrix times column]], [[§9 Matrices#^ladr-3-50|Linear combination of columns]], [[§9 Matrices#^ladr-3-51|Matrix multiplication as linear combinations of columns]].
 > - Computational version: [[§11 Matrix Operations#^def-11-3|235 Def. §11.3]] (columns Ab₁, …, Ab_p), computed entrywise by [[§11 Matrix Operations#^prop-11-4|235 Prop. §11.4]].
+> - Computational version: the row–column rule, [[§28 Matrices#^def-28-2|331 Def. §28.2]], and the laws of matrix algebra, [[§28 Matrices#^prop-28-1|331 Prop. §28.1]] (not commutative: [[§28 Matrices#^ex-28-1|331 Ex. §28.1]]).
 
 > [!example] Example 3.42: Matrix multiplication (p. 73)
 > A $3$-by-$2$ times a $2$-by-$4$ matrix is $3$-by-$4$:

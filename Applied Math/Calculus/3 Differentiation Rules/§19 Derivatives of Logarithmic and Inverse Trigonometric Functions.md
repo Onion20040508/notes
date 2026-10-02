@@ -341,6 +341,9 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 
 *The same proof from the integral definition of $\ln$: [[§121 The Logarithm Defined as an Integral#^thm-121-12|Theorem §121.12]].*
 
+> [!remark]- Connections
+> - See also: [[§6 Modeling with First-Order Differential Equations#^prop-6-2|331 Prop. §6.2]] (the limit in the form $(1 + r/m)^{mt} \to e^{rt}$, for compound interest) and [[§10 Numerical Approximations꞉ Euler's Method#^prop-10-1|331 Prop. §10.1]], where the Euler approximation after $n$ steps contains the factor $(1 + a/n)^n$ and converges to the exact solution because $(1 + a/n)^n \to e^a$ (for $y' = y$, $y(0) = 1$ this is Euler's own approximation to $e^t$).
+
 ## Derivatives of Inverse Trigonometric Functions
 
 The inverse trigonometric functions were defined in [[§5 Inverse Functions and Logarithms#^def-5-5|Definitions §5.5]]–[[§5 Inverse Functions and Logarithms#^def-5-8|§5.8]]. The trigonometric functions, restricted to the intervals used to define their inverses, are one-to-one and differentiable, so by Theorem §19.1 the inverse trigonometric functions are differentiable (except where the tangents are vertical, at $x = \pm 1$ for $\sin^{-1}$ and $\cos^{-1}$). Implicit differentiation finds the derivatives.

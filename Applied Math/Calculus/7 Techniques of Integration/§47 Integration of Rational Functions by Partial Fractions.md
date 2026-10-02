@@ -97,6 +97,9 @@ $$
 \frac{x}{(x - 2)(x^2 + 1)(x^2 + 4)} = \frac{A}{x - 2} + \frac{Bx + C}{x^2 + 1} + \frac{Dx + E}{x^2 + 4} .
 $$
 
+> [!remark]- Connections
+> - See also: [[§22 Solution of Initial Value Problems#^rem-22-4|331 Remark: Method — Inverting a Rational Transform]] (the same decomposition in the variable $s$, used to invert Laplace transforms), worked in [[§22 Solution of Initial Value Problems#^ex-22-2|331 Ex. §22.2]].
+
 > [!remark] Remark: Method — Partial Fractions
 > To find $\int P(x)/Q(x)\,dx$:
 > 1. **Divide** if $\deg P \ge \deg Q$, to get $S(x) + R(x)/Q(x)$ (Theorem §47.1). Integrate the polynomial $S$ term by term.
