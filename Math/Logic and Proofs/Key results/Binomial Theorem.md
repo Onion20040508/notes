@@ -21,3 +21,4 @@ tags: [logic-and-proofs, hub]
 
 ## Connections
 - See [[§12★ Counting Functions and Subsets]] for context and examples.
+- **Also in [[Complex Variables]]:** [[§3 Further Algebraic Properties#^thm-3-4|342 Thm. §3.4]] (the binomial formula for complex numbers, by the same induction; complex-variables version).

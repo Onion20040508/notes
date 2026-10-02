@@ -27,6 +27,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Properties: [[§13 Polynomials#^ladr-4-4|Properties of complex numbers]]. The conjugate is why complex inner products are conjugate-symmetric ([[§19 Inner Products and Norms#^ladr-6-2|Inner product]]) and why adjoints involve conjugate transposes ([[§22 Self-Adjoint and Normal Operators#^ladr-7-7|Conjugate transpose, A∗]]).
 > - Computational version: [[§53 Complex Numbers#^def-53-3|235 Def. §53.3]] and [[§53 Complex Numbers#^def-53-4|235 Def. §53.4]], with worked examples in [[§53 Complex Numbers#^ex-53-2|235 Ex. §53.2]].
+> - Computational version: [[§4 Vectors and Moduli#^def-4-1|342 Def. §4.1]] (modulus) and [[§6 Complex Conjugates#^def-6-1|342 Def. §6.1]] (conjugate), with their geometry in the complex plane.
 
 > [!example] Example 4.3: Real and imaginary part, complex conjugate, absolute value (p. 120)
 > For $z=3+2i$: $\operatorname{Re}z=3$, $\operatorname{Im}z=2$, $\bar z=3-2i$, $|z|=\sqrt{3^2+2^2}=\sqrt{13}$.
@@ -69,6 +70,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The same proof pattern gives the triangle inequality for norms: [[Triangle inequality]], via [[Cauchy–Schwarz inequality]].
 > - Computational version: [[§53 Complex Numbers#^thm-53-3|235 Thm. §53.3]] (stated without proof) and [[§53 Complex Numbers#^prop-53-2|235 Prop. §53.2]] (z z̄ = a² + b²).
+> - Computational version: [[§6 Complex Conjugates#^thm-6-1|342 Thm. §6.1]], [[§6 Complex Conjugates#^prop-6-2|342 Prop. §6.2]], [[§6 Complex Conjugates#^prop-6-3|342 Prop. §6.3]] and [[§6 Complex Conjugates#^thm-6-4|342 Thm. §6.4]] (the conjugate and modulus identities), and [[§5 Triangle Inequality#^thm-5-1|342 Thm. §5.1]] with the reverse form [[§5 Triangle Inequality#^cor-5-2|342 Cor. §5.2]] (triangle inequality, proved in coordinates, with worked bounds).
 
 > [!definition] Definition 4.5: Zero of a polynomial
 > $\lambda\in\F$ is a *zero* (or *root*) of $p\in\Poly(\F)$ if $p(\lambda)=0$.
@@ -97,6 +99,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Gives [[§13 Polynomials#^ladr-4-8|Degree m implies at most m zeros]], and the step $p(z)=(z-\lambda)q(z)$ in [[Existence of eigenvalues]] and [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]].
+> - Computational version: [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^lem-58-3|342 Lemma §58.3]] (factor theorem over ℂ, the step from one zero to complete factorization).
 
 > [!theorem] Theorem 4.8: Degree m implies at most m zeros
 > A polynomial $p\in\Poly(\F)$ of degree $m\ge1$ has at most $m$ zeros in $\F$.
@@ -114,6 +117,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Alternative bound on the number of eigenvalues: via [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]] and [[Existence, uniqueness, and degree of minimal polynomial]] (compare [[§14 Invariant Subspaces#^ladr-5-12|Operator cannot have more eigenvalues than dimension of vector space]]).
 > - In 235: [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (via p(λ) = (λ − r)q(λ), for characteristic polynomials).
+> - Concrete case where the bound is attained: [[§10 Roots of Complex Numbers#^thm-10-2|342 Thm. §10.2]] (zⁿ = z₀ has exactly n distinct nth roots, computed in exponential form, with worked examples).
 
 > [!theorem] Theorem 4.9: Division algorithm for polynomials
 > Let $p,s\in\Poly(\F)$ with $s\neq0$. Then there are unique $q,r\in\Poly(\F)$ with
@@ -171,6 +175,8 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - In 235: stated without proof, in factored form, in [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (an n × n matrix has n complex eigenvalues, counting multiplicities).
+> - Computational version: [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|342 Thm. §58.2]] (proof by Liouville's theorem) and [[§94 Rouché's Theorem#^ex-94-2|342 Ex. §94.2]] (proof by Rouché's theorem, giving exactly n zeros in a large disk). The minimum argument here is the polynomial case of the minimum modulus principle, [[§59 Maximum Modulus Principle#^ex-59-2|342 Ex. §59.2]].
+> - The k-th roots step, in exponential form: [[§10 Roots of Complex Numbers#^thm-10-2|342 Thm. §10.2]].
 
 > [!theorem] Theorem 4.13: Fundamental theorem of algebra, second version
 > A nonconstant $p\in\Poly(\C)$ has a factorization, unique up to the order of the factors,
@@ -196,6 +202,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Complex minimal polynomials split: [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]](b). Real version: [[§13 Polynomials#^ladr-4-16|Factorization of a polynomial over R]].
 > - In 235: [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (the characteristic polynomial of an n × n matrix has n complex roots, counting multiplicities).
+> - Computational version: [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^cor-58-4|342 Cor. §58.4]] (factorization into linear factors, deduced from the Liouville proof).
 
 > [!theorem] Theorem 4.14: Polynomials with real coefficients have nonreal zeros in pairs
 > If $p\in\Poly(\C)$ has real coefficients and $\lambda\in\C$ is a zero of $p$, then so is $\bar\lambda$.
@@ -211,6 +218,7 @@ tags: [linear-algebra]
 > - Pairs $(z-\lambda)(z-\bar\lambda)=z^2-2(\operatorname{Re}\lambda)z+|\lambda|^2$: the real quadratic factors of [[§13 Polynomials#^ladr-4-16|Factorization of a polynomial over R]].
 > - Physics: for real (e.g. time-reversal symmetric) problems, complex eigenvalues come in conjugate pairs.
 > - Matrix version: [[§36 Complex Eigenvalues#^thm-36-2|235 Thm. §36.2]] (complex eigenvalues of a real matrix come in conjugate pairs).
+> - Worked example: [[§11 Examples (Roots of Complex Numbers)#^ex-11-5|342 Ex. §11.5]] (the zeros of z⁴ + 4 come in conjugate pairs and give its real quadratic factors).
 
 > [!theorem] Theorem 4.15: Factorization of a quadratic polynomial
 > For $b,c\in\R$: $x^2+bx+c=(x-\lambda_1)(x-\lambda_2)$ with $\lambda_1,\lambda_2\in\R$ if and only if $b^2\ge4c$.
@@ -257,3 +265,4 @@ tags: [linear-algebra]
 > - Used in [[§15 The Minimal Polynomial#^ladr-5-34|Operators on odd-dimensional vector spaces have eigenvalues]] to find an irreducible quadratic factor of a real minimal polynomial.
 > - Integer analogue: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|493 Thm. §9.2]] (unique prime factorization), with linear factors and irreducible quadratics in the role of primes.
 > - Computational version: [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-2|Calc Thm. §47.2]], the factorization used for partial fractions (with worked examples).
+> - Worked example: [[§11 Examples (Roots of Complex Numbers)#^ex-11-5|342 Ex. §11.5]] (z⁴ + 4 factored into two real quadratics by pairing conjugate zeros).

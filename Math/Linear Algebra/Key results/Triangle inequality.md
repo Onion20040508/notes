@@ -29,3 +29,4 @@ tags: [linear-algebra, hub]
 - For a general norm this is an axiom ([[§8 Normed Linear Spaces#^def-8-1|556 Def. §8.1]]); for the ℓᵖ norms it is Minkowski's inequality, [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-1|556 Thm. §13.1]].
 - **Also in [[Calculus]]:** [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|Calc Thm. §116.6]] (the case V = ℝ, computational treatment with worked examples).
 - **Also in [[Applied Linear Algebra]]:** [[§46 Inner Product Spaces#^thm-46-5|235 Thm. §46.5]] (real inner product spaces, with the Cauchy–Schwarz proof).
+- **Also in [[Complex Variables]]:** [[§5 Triangle Inequality#^thm-5-1|342 Thm. §5.1]] (the case V = ℂ, |z₁ + z₂| ≤ |z₁| + |z₂|, complex-variables version with worked examples).

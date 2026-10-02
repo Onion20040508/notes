@@ -24,6 +24,7 @@ tags: [linear-algebra]
 > - Its arithmetic: [[§1 Rⁿ and Cⁿ#^ladr-1-3|Properties of complex arithmetic]]. Conjugate and absolute value come later in [[§13 Polynomials#^ladr-4-2|Complex conjugate, z, absolute value, ∣z∣]] and [[§13 Polynomials#^ladr-4-4|Properties of complex numbers]].
 > - Physics: quantum state spaces are complex vector spaces, which is one reason the whole theory is developed over $\F=\R$ or $\C$.
 > - Computational version: [[§53 Complex Numbers#^def-53-1|235 Def. §53.1]] (a + bi with i² = −1, real and imaginary parts), with products worked in [[§53 Complex Numbers#^ex-53-1|235 Ex. §53.1]].
+> - Computational version: [[§1 Sums and Products#^def-1-1|342 Def. §1.1]] (complex numbers as ordered pairs, the points of the complex plane) and [[§1 Sums and Products#^prop-1-2|342 Prop. §1.2]] (the rectangular form x + iy, with i² = −1).
 
 > [!example] Example 1.2: Complex arithmetic (p. 2)
 > Using the distributive and commutative properties of [[§1 Rⁿ and Cⁿ#^ladr-1-3|1.3]]:
@@ -58,6 +59,7 @@ tags: [linear-algebra]
 > - These are the field axioms; $\R$ and $\C$ are fields. The vector-space axioms [[§2 Definition of Vector Space#^ladr-1-20|Vector space]] copy this list with scalars acting on vectors.
 > - Uniqueness of inverses is what makes [[§1 Rⁿ and Cⁿ#^ladr-1-5|−α, subtraction, 1∕α, division]] well defined.
 > - Computational version: [[§53 Complex Numbers#^thm-53-1|235 Thm. §53.1]] (the same laws, stated without proof), with the inverse 1/z = z̄/|z|² in [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]].
+> - Computational version: [[§2 Basic Algebraic Properties#^thm-2-1|342 Thm. §2.1]] (commutative, associative and distributive laws) and [[§2 Basic Algebraic Properties#^thm-2-4|342 Thm. §2.4]] (multiplicative inverse), proved from the pair definition, with worked examples.
 
 > [!example] Example 1.4: Commutativity of complex multiplication (p. 2)
 > For $\alpha=a+bi$, $\beta=c+di$:

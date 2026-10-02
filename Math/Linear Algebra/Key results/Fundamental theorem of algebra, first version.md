@@ -17,3 +17,4 @@ tags: [linear-algebra, hub]
 ## Connections
 - Second version: [[§13 Polynomials#^ladr-4-13|Fundamental theorem of algebra, second version]]. The reason complex operators have eigenvalues: [[Existence of eigenvalues]].
 - **Also in [[Applied Linear Algebra]]:** [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (stated without proof, in factored form, to count the complex eigenvalues of an n × n matrix).
+- **Also in [[Complex Variables]]:** [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|342 Thm. §58.2]] (proof by Liouville's theorem) and [[§94 Rouché's Theorem#^ex-94-2|342 Ex. §94.2]] (proof by Rouché's theorem, with exactly n zeros in a large disk); complex-variables versions with worked examples.

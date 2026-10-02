@@ -398,6 +398,9 @@ A **binomial** is a sum of two terms, such as $a + b$. The binomial coefficients
 
 *Uses:* [[§12★ Counting Functions and Subsets#^prop-12-8|§12.8]], [[§12★ Counting Functions and Subsets#^prop-12-6|§12.6]], [[§5 The Induction Principle#^thm-5-3|§5.3]] (induction from $0$), [[§5 The Induction Principle#^def-5-3|Def. §5.3]]
 
+> [!remark]- Connections
+> - Computational version: [[§3 Further Algebraic Properties#^thm-3-4|342 Thm. §3.4]] (the binomial formula for complex numbers, proved by the same induction).
+
 The same proof works for complex $a$ and $b$. For negative or non-integer exponents there are versions in which the finite sum becomes an infinite series (Newton).
 
 > [!example] Example §12.4: Reading Expansions off Pascal's Triangle
