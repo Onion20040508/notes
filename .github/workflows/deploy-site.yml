@@ -1,0 +1,71 @@
+# Builds the vault into a website with Quartz and publishes it on GitHub Pages.
+# Runs on every push to main (i.e. every Obsidian Git sync) and can be started by hand
+# from the Actions tab. Site: https://onion20040508.github.io/notes/
+name: Deploy notes site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Obsidian Git pushes every 10 minutes; only the newest build matters.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the vault
+        uses: actions/checkout@v4
+        with:
+          path: vault
+
+      - name: Check out Quartz (pinned version)
+        uses: actions/checkout@v4
+        with:
+          repository: jackyzha0/quartz
+          ref: 97a2d05f80c4c50534959b1d0d41cc4b3895625e
+          path: quartz
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: quartz/package-lock.json
+
+      - name: Install Quartz
+        working-directory: quartz
+        run: npm ci
+
+      - name: Apply site configuration
+        run: |
+          cp vault/.quartz-site/quartz.config.yaml quartz/quartz.config.yaml
+          cp vault/.quartz-site/custom.scss quartz/quartz/styles/custom.scss
+          python3 vault/.quartz-site/prepare.py vault quartz/content
+
+      - name: Build
+        working-directory: quartz
+        run: |
+          npx quartz plugin install --from-config
+          npx quartz build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

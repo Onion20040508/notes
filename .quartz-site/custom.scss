@@ -1,0 +1,38 @@
+@use "./variables.scss" as *;
+
+// ---- Callout colours, matching .obsidian/snippets/boxes.css ----
+@mixin box($r, $g, $b, $icon) {
+  --color: rgb(#{$r}, #{$g}, #{$b});
+  --border: rgb(#{$r}, #{$g}, #{$b});
+  --bg: rgba(#{$r}, #{$g}, #{$b}, 0.12);
+  --callout-icon: var(#{$icon});
+}
+.callout {
+  &[data-callout="definition"] { @include box(200, 170, 60, --callout-icon-abstract); }
+  &[data-callout="theorem"]    { @include box(100, 140, 180, --callout-icon-info); }
+  &[data-callout="example"]    { @include box(100, 160, 100, --callout-icon-example); }
+  &[data-callout="remark"]     { @include box(140, 100, 180, --callout-icon-note); }
+  &[data-callout="principle"]  { @include box(90, 90, 190, --callout-icon-tip); }
+  &[data-callout="caution"]    { @include box(200, 90, 60, --callout-icon-warning); }
+  &[data-callout="law"]        { @include box(40, 140, 140, --callout-icon-info); }
+  &[data-callout="model"]      { @include box(150, 115, 75, --callout-icon-abstract); }
+  &[data-callout="proof"]      { @include box(120, 120, 120, --callout-icon-success); }
+  &[data-callout="derivation"] { @include box(90, 130, 150, --callout-icon-quote); }
+
+  // tcolorbox look: coloured frame
+  &[data-callout] { border: 1.5px solid var(--border); border-radius: 4px; }
+
+  // proofs and derivations stay quiet: only a grey rule on the left
+  &[data-callout="proof"], &[data-callout="derivation"] {
+    border: none;
+    border-left: 3px solid var(--border);
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+
+// ---- Figures (attachments/**/*.svg), matching figure-size.css and figures-dark.css ----
+img[src*="attachments/"][src$=".svg"] { max-width: 100%; height: auto; }
+:root[saved-theme="dark"] img[src*="attachments/"][src$=".svg"] {
+  filter: invert(0.88) hue-rotate(180deg);
+}
