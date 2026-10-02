@@ -10,7 +10,8 @@ Run by the GitHub Actions workflow:  python3 prepare.py <vault dir> <quartz cont
   ([[Math/Topology/|Topology]]): Quartz turns a folder note into the folder's page but then
   resolves [[Topology]] to a page that does not exist,
 - rewrites two math spellings that Obsidian (MathJax) accepts but Quartz's math parser does not:
-  $...$ inside \\text{...} in a $$ block becomes }...\\text{, and \\$ inside math becomes {\\char36}.
+  a multi-line $$ block with formula text on its $$ lines gets each $$ on a line of its own,
+  and \\$ inside math becomes {\\char36}.
 Only the copy in content/ is changed; the vault itself is never touched.
 """
 import os, re, shutil, sys
@@ -39,7 +40,7 @@ for root, dirs, files in os.walk(vault):
         if f.endswith('.md') and f[:-3] == os.path.basename(root):
             folder_notes[f[:-3].lower()] = os.path.dirname(rel).replace(os.sep, '/')
 
-counts = dict(figures=0, missing=0, folder_links=0, text_math=0, dollars=0)
+counts = dict(figures=0, missing=0, folder_links=0, fences=0, dollars=0)
 
 
 def fix_figure(m):
@@ -69,9 +70,15 @@ def fix_display(prefix, body):
     if '\\$' in body:
         counts['dollars'] += body.count('\\$')
         body = body.replace('\\$', DOLLAR)
-    if '$' in body and '\\text' in body:
-        body, n = re.subn(r'\$([^$]*)\$', r'}\1\\text{', body)
-        counts['text_math'] += n
+    lines = body.split('\n')
+    if len(lines) > 1:
+        # Quartz reads a $$ line like a code fence: text after the opening $$ is dropped and the
+        # block only ends at a $$ on a line of its own.
+        if lines[0].strip():
+            body = '\n' + prefix + body
+            counts['fences'] += 1
+        if lines[-1].lstrip(' \t>').strip():
+            body = body + '\n' + prefix
     return f'{prefix}$${body}$$'
 
 
@@ -135,4 +142,4 @@ home = os.path.join(content, 'Home.md')
 if os.path.exists(home):
     shutil.copy2(home, os.path.join(content, 'index.md'))
 print('copied vault; rewrote {figures} figure embeds ({missing} not found), {folder_links} folder-note links, '
-      '{text_math} $...$ inside \\text, {dollars} \\$ inside math'.format(**counts))
+      '{fences} $$ blocks with formula text on the $$ lines, {dollars} \\$ inside math'.format(**counts))
