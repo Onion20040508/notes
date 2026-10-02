@@ -11,7 +11,7 @@ tags: [chapter, applied-linear-algebra]
 
 **Builds on:** —
 **Used by:** [[· 2 Matrix Algebra|2 Matrix Algebra]] (1), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (2), [[· 7★ Symmetric Matrices and Quadratic Forms|7★ Symmetric Matrices and Quadratic Forms]] (1)
-**Developed further in (other subjects):** [[Linear Algebra]] (6), [[Linear Algebra]] (6)
+**Developed further in (other subjects):** [[Linear Algebra]] (6)
 
 ## Sections
 - [[§53 Complex Numbers]] — Lay Appendix B

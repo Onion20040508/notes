@@ -144,4 +144,4 @@ graph TD
 Chapters without notes yet; sources in brackets (∅ = no typed source).
 
 **Level C — graduate** (levels A and B are written, above)
-C1 Foundations: Liouville, ergodicity [Schwartz, brief] · C2 Ising model, mean field, Landau theory [∅] · C3 Critical phenomena and the renormalization group [∅] · C4 Fluctuations and linear response [∅] · C5 Non-equilibrium: Boltzmann, Langevin, Onsager [∅] · C6 Density matrix [∅]
+C1 Foundations: Liouville, ergodicity [Schwartz, brief] · C2 Ising model, mean field, Landau theory [∅] · C3 Critical phenomena and the renormalization group [∅] · C4 Fluctuations and linear response [∅] · C5 Non-equilibrium: Boltzmann, Langevin, Onsager [∅] · C6 Density matrix [∅] (the density operator and quantum statistical mechanics are developed in [[· C11 Density Matrices and Entanglement|QM C11]])

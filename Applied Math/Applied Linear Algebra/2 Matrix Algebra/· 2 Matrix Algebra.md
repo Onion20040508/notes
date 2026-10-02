@@ -11,7 +11,7 @@ tags: [chapter, applied-linear-algebra]
 
 **Builds on:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (29), [[· 3 Determinants|3 Determinants]] (3), [[· 4 Vector Spaces|4 Vector Spaces]] (2), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (1), [[· 8 Complex Numbers|8 Complex Numbers]] (1)
 **Used by:** [[· 3 Determinants|3 Determinants]] (10), [[· 4 Vector Spaces|4 Vector Spaces]] (11), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (11), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (10), [[· 7★ Symmetric Matrices and Quadratic Forms|7★ Symmetric Matrices and Quadratic Forms]] (10)
-**Developed further in (other subjects):** [[Linear Algebra]] (24), [[Group Theory]] (3), [[Logic and Proofs]] (4), [[Calculus]] (1), [[Linear Algebra]] (24), [[Group Theory]] (3), [[Multivariable Analysis]] (1)
+**Developed further in (other subjects):** [[Linear Algebra]] (24), [[Group Theory]] (3), [[Logic and Proofs]] (4), [[Multivariable Analysis]] (1), [[Calculus]] (1)
 
 ## Sections
 - [[§11 Matrix Operations]] — Lay 2.1

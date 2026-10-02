@@ -11,7 +11,7 @@ tags: [chapter, applied-linear-algebra]
 
 **Builds on:** [[· 4 Vector Spaces|4 Vector Spaces]] (4), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (1)
 **Used by:** [[· 2 Matrix Algebra|2 Matrix Algebra]] (29), [[· 3 Determinants|3 Determinants]] (1), [[· 4 Vector Spaces|4 Vector Spaces]] (16), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (5), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (5)
-**Developed further in (other subjects):** [[Linear Algebra]] (28), [[Group Theory]] (1), [[Logic and Proofs]] (3), [[Calculus]] (2), [[Linear Algebra]] (28), [[Group Theory]] (1), [[Multivariable Analysis]] (1)
+**Developed further in (other subjects):** [[Linear Algebra]] (28), [[Group Theory]] (1), [[Logic and Proofs]] (3), [[Multivariable Analysis]] (1), [[Calculus]] (2)
 
 ## Sections
 - [[§1 Systems of Linear Equations]] — Lay 1.1

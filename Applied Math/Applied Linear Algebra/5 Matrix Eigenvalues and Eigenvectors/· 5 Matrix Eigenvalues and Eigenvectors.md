@@ -11,7 +11,7 @@ tags: [chapter, applied-linear-algebra]
 
 **Builds on:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (5), [[· 2 Matrix Algebra|2 Matrix Algebra]] (11), [[· 3 Determinants|3 Determinants]] (3), [[· 4 Vector Spaces|4 Vector Spaces]] (16), [[· 7★ Symmetric Matrices and Quadratic Forms|7★ Symmetric Matrices and Quadratic Forms]] (1), [[· 8 Complex Numbers|8 Complex Numbers]] (2)
 **Used by:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (1), [[· 3 Determinants|3 Determinants]] (1), [[· 4 Vector Spaces|4 Vector Spaces]] (3), [[· 7★ Symmetric Matrices and Quadratic Forms|7★ Symmetric Matrices and Quadratic Forms]] (6)
-**Developed further in (other subjects):** [[Linear Algebra]] (23), [[Linear Algebra]] (23)
+**Developed further in (other subjects):** [[Linear Algebra]] (23)
 
 ## Sections
 - [[§32 Eigenvectors and Eigenvalues]] — Lay 5.1

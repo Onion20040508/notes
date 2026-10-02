@@ -42,6 +42,7 @@ graph TD
   X2["Multivariable Analysis (452)"]
   X3["Linear Algebra (LADR)"]
   X4["Measure Theory (551)"]
+  X6["Applied Linear Algebra (235)"]
   C1 --> C2
   C2 --> C3
   C3 --> C4
@@ -83,6 +84,7 @@ graph TD
   C17 -.->|on credit| C10
   C17 -.->|on credit| C11
   C17 -.->|on credit| C12
+  C1 -.->|5| X6
   C1 -.->|3| X3
   C1 -.->|12| X0
   C1 -.->|12| X1
@@ -99,16 +101,21 @@ graph TD
   C8 -.->|10| X1
   C9 -.->|12| X1
   C10 -.->|6| X2
+  C11 -.->|5| X6
   C11 -.->|43| X1
+  C12 -.->|20| X6
   C12 -.->|15| X3
   C12 -.->|3| X2
   C13 -.->|6| X2
   C13 -.->|3| X1
+  C14 -.->|4| X6
   C14 -.->|41| X2
   C14 -.->|3| X1
+  C15 -.->|3| X6
   C15 -.->|8| X4
   C15 -.->|26| X2
   C16 -.->|56| X2
+  C17 -.->|4| X6
   C17 -.->|4| X3
   C17 -.->|7| X0
   C17 -.->|13| X1
@@ -164,4 +171,4 @@ graph TD
 Prerequisite: MATH 132 (Calculus II); Chapters 1–11 are included as the single-variable foundation.
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each Math subject: [[Single Variable Analysis]] (192), [[Multivariable Analysis]] (161), [[Linear Algebra]] (27), [[Logic and Proofs]] (19), [[Measure Theory]] (13), [[Topology]] (6), [[Differentiable Manifolds]] (2).
+Number of *Connections* links from these notes to each Math subject: [[Single Variable Analysis]] (192), [[Multivariable Analysis]] (161), [[Applied Linear Algebra]] (43), [[Linear Algebra]] (27), [[Logic and Proofs]] (19), [[Measure Theory]] (13), [[Topology]] (6), [[Differentiable Manifolds]] (2).

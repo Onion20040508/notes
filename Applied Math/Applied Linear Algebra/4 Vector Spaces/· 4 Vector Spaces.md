@@ -11,7 +11,7 @@ tags: [chapter, applied-linear-algebra]
 
 **Builds on:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (16), [[· 2 Matrix Algebra|2 Matrix Algebra]] (11), [[· 3 Determinants|3 Determinants]] (3), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (3), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (1)
 **Used by:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (4), [[· 2 Matrix Algebra|2 Matrix Algebra]] (2), [[· 3 Determinants|3 Determinants]] (1), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (16), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (7), [[· 7★ Symmetric Matrices and Quadratic Forms|7★ Symmetric Matrices and Quadratic Forms]] (6)
-**Developed further in (other subjects):** [[Linear Algebra]] (41), [[Logic and Proofs]] (5), [[Functional Analysis]] (4), [[Calculus]] (4), [[Linear Algebra]] (41), [[Functional Analysis]] (4)
+**Developed further in (other subjects):** [[Linear Algebra]] (41), [[Logic and Proofs]] (5), [[Functional Analysis]] (4), [[Calculus]] (4)
 
 ## Sections
 - [[§23 Vector Spaces and Subspaces]] — Lay 4.1

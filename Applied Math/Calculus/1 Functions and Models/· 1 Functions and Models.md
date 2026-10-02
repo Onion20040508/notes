@@ -11,7 +11,7 @@ tags: [chapter, calculus]
 
 **Builds on:** [[· 2 Limits and Derivatives|2 Limits and Derivatives]] (3), [[· 17 Background from the Appendices|17 Background from the Appendices]] (3)
 **Used by:** [[· 2 Limits and Derivatives|2 Limits and Derivatives]] (9), [[· 3 Differentiation Rules|3 Differentiation Rules]] (5), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (1), [[· 11 Sequences, Series, and Power Series|11 Sequences, Series, and Power Series]] (1), [[· 17 Background from the Appendices|17 Background from the Appendices]] (3)
-**Developed further in (other subjects):** [[Logic and Proofs]] (12), [[Single Variable Analysis]] (12), [[Linear Algebra]] (3)
+**Developed further in (other subjects):** [[Logic and Proofs]] (12), [[Single Variable Analysis]] (12), [[Linear Algebra]] (3), [[Applied Linear Algebra]] (5)
 
 ## Sections
 - [[§1 Four Ways to Represent a Function]] — Stewart 1.1

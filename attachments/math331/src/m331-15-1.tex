@@ -1,0 +1,24 @@
+% Figure for Ordinary Differential Equations §15.
+\begin{tikzpicture}
+\begin{axis}[nfig, name=a, width=5.6cm, height=5cm, xmin=0, xmax=10.3, ymin=-4, ymax=4,
+  axis lines=middle, xlabel={$t$}, xtick={2,4,6,8,10}, ytick={-3,-2,-1,1,2,3},
+  xlabel style={anchor=west}, title={\small (a) $\lambda=-\frac12$: decaying}, title style={yshift=2pt}]
+  \addplot[black!45, dashed, thin, samples=100, domain=0:10] {sqrt(13)*exp(-x/2)};
+  \addplot[black!45, dashed, thin, samples=100, domain=0:10] {-sqrt(13)*exp(-x/2)};
+  \addplot[figB, samples=400, domain=0:10] {exp(-x/2)*(2*cos(deg(3*x)) + 3*sin(deg(3*x)))};
+\end{axis}
+\begin{axis}[nfig, at={(a.east)}, anchor=west, xshift=0.9cm, name=b, width=5.6cm, height=5cm, xmin=0, xmax=8.3, ymin=-12, ymax=12,
+  axis lines=middle, xlabel={$t$}, xtick={2,4,6,8}, ytick={-10,-5,5,10},
+  xlabel style={anchor=west}, title={\small (b) $\lambda=\frac14$: growing}, title style={yshift=2pt}]
+  \addplot[black!45, dashed, thin, samples=100, domain=0:8] {sqrt(4.25)*exp(x/4)};
+  \addplot[black!45, dashed, thin, samples=100, domain=0:8] {-sqrt(4.25)*exp(x/4)};
+  \addplot[figR, samples=400, domain=0:8] {exp(x/4)*(-2*cos(deg(3*x)) + 0.5*sin(deg(3*x)))};
+\end{axis}
+\begin{axis}[nfig, at={(b.east)}, anchor=west, xshift=0.9cm, width=5.6cm, height=5cm, xmin=0, xmax=8.3, ymin=-4, ymax=4,
+  axis lines=middle, xlabel={$t$}, xtick={2,4,6,8}, ytick={-3,-2,-1,1,2,3},
+  xlabel style={anchor=west}, title={\small (c) $\lambda=0$: constant amplitude}, title style={yshift=2pt}]
+  \addplot[black!45, dashed, thin, domain=0:8] {10/3};
+  \addplot[black!45, dashed, thin, domain=0:8] {-10/3};
+  \addplot[figG, samples=400, domain=0:8] {2*cos(deg(3*x)) + 8/3*sin(deg(3*x))};
+\end{axis}
+\end{tikzpicture}

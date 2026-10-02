@@ -11,7 +11,7 @@ tags: [chapter, applied-linear-algebra]
 
 **Builds on:** [[· 2 Matrix Algebra|2 Matrix Algebra]] (10), [[· 3 Determinants|3 Determinants]] (3), [[· 4 Vector Spaces|4 Vector Spaces]] (6), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (6), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (27), [[· 8 Complex Numbers|8 Complex Numbers]] (1)
 **Used by:** [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (1)
-**Developed further in (other subjects):** [[Linear Algebra]] (33), [[Calculus]] (3), [[Linear Algebra]] (33), [[Multivariable Analysis]] (5)
+**Developed further in (other subjects):** [[Linear Algebra]] (33), [[Multivariable Analysis]] (5), [[Calculus]] (3)
 
 ## Sections
 - [[§48★ Diagonalization of Symmetric Matrices]] — Lay 7.1

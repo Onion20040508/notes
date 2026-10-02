@@ -1,0 +1,32 @@
+% Figure for Ordinary Differential Equations §2.
+\begin{tikzpicture}[font=\scriptsize]
+  \begin{axis}[nfig, name=A, width=6.6cm, height=5.4cm, xmin=0, xmax=13.5, ymin=0, ymax=60,
+      xtick={0,5,10}, ytick={0,10,20,30,40,49}, xlabel={$t$}, ylabel={$v$}, clip=false,
+      xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south, rotate=-90},
+      title={(a) velocity}]
+    \addplot[figR, dashed, thin, domain=0:13] {49};
+    \addplot[figB, domain=0:10.5116, samples=80] {49*(1-exp(-x/5))};
+    \addplot[figB, densely dotted, domain=10.5116:13, samples=30] {49*(1-exp(-x/5))};
+    \addplot[only marks, mark=*, mark size=1.5pt, black] coordinates {(10.5116,43.0135)};
+    \draw[black!50, thin, dashed] (axis cs:10.5116,0) -- (axis cs:10.5116,43.0135);
+    \node[anchor=north east] at (axis cs:10.4,42) {$(10.51,\ 43.01)$};
+    \node[figB, anchor=west] at (axis cs:2.2,14) {$v = 49(1 - e^{-t/5})$};
+    \node[figR, anchor=south] at (axis cs:4,49) {terminal velocity $49$};
+  \end{axis}
+  \begin{axis}[nfig, at={(A.east)}, anchor=west, xshift=1.4cm, width=6.6cm, height=5.4cm,
+      xmin=0, xmax=13.5, ymin=0, ymax=420, xtick={0,5,10}, ytick={0,100,200,300,400},
+      xlabel={$t$}, ylabel={$x$}, clip=false,
+      xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south, rotate=-90},
+      title={(b) distance fallen}]
+    \addplot[black!50, thin, dashed, domain=0:13] {300};
+    \addplot[figB, domain=0:10.5116, samples=80] {49*x+245*exp(-x/5)-245};
+    \addplot[figB, densely dotted, domain=10.5116:13, samples=30] {49*x+245*exp(-x/5)-245};
+    \addplot[only marks, mark=*, mark size=1.5pt, black] coordinates {(10.5116,300)};
+    \draw[black!50, thin, dashed] (axis cs:10.5116,0) -- (axis cs:10.5116,300);
+    \node[anchor=south east] at (axis cs:10.4,302) {ground: $x = 300$};
+    \node[anchor=north west] at (axis cs:10.6,0) {$T$};
+    \node[figB, anchor=west] at (axis cs:0.3,375) {$x = 49t + 245e^{-t/5} - 245$};
+  \end{axis}
+\end{tikzpicture}

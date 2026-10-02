@@ -11,7 +11,7 @@ tags: [chapter, applied-linear-algebra]
 
 **Builds on:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (5), [[· 2 Matrix Algebra|2 Matrix Algebra]] (10), [[· 3 Determinants|3 Determinants]] (6), [[· 4 Vector Spaces|4 Vector Spaces]] (7)
 **Used by:** [[· 2 Matrix Algebra|2 Matrix Algebra]] (1), [[· 4 Vector Spaces|4 Vector Spaces]] (1), [[· 7★ Symmetric Matrices and Quadratic Forms|7★ Symmetric Matrices and Quadratic Forms]] (27)
-**Developed further in (other subjects):** [[Linear Algebra]] (29), [[Group Theory]] (1), [[Functional Analysis]] (16), [[Calculus]] (10), [[Linear Algebra]] (29), [[Group Theory]] (1), [[Functional Analysis]] (16)
+**Developed further in (other subjects):** [[Linear Algebra]] (29), [[Group Theory]] (1), [[Functional Analysis]] (16), [[Calculus]] (10)
 
 ## Sections
 - [[§40 Inner Product, Length, and Orthogonality]] — Lay 6.1

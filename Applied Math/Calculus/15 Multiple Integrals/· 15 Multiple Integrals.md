@@ -11,7 +11,7 @@ tags: [chapter, calculus]
 
 **Builds on:** [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (1), [[· 5 Integrals|5 Integrals]] (4), [[· 6 Applications of Integration|6 Applications of Integration]] (4), [[· 7 Techniques of Integration|7 Techniques of Integration]] (3), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (4), [[· 10 Parametric Equations and Polar Coordinates|10 Parametric Equations and Polar Coordinates]] (2), [[· 12 Vectors and the Geometry of Space|12 Vectors and the Geometry of Space]] (2), [[· 14 Partial Derivatives|14 Partial Derivatives]] (1)
 **Used by:** [[· 7 Techniques of Integration|7 Techniques of Integration]] (3), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (2), [[· 16 Vector Calculus|16 Vector Calculus]] (11)
-**Developed further in (other subjects):** [[Linear Algebra]] (1), [[Measure Theory]] (8), [[Multivariable Analysis]] (26)
+**Developed further in (other subjects):** [[Linear Algebra]] (1), [[Measure Theory]] (8), [[Multivariable Analysis]] (26), [[Applied Linear Algebra]] (3)
 
 ## Sections
 - [[§98 Double Integrals Over Rectangles]] — Stewart 15.1

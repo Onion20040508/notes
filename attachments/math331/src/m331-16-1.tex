@@ -1,0 +1,18 @@
+% Figure for Ordinary Differential Equations §16.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=10cm, height=6.5cm, xmin=0, xmax=4.3, ymin=-2.2, ymax=8.5,
+  axis lines=middle, xlabel={$t$}, ylabel={$y$}, xtick={1,2,3,4}, ytick={-2,2,4,6,8},
+  xlabel style={anchor=west}, ylabel style={anchor=south}, clip mode=individual]
+  % y = (2 + (b - 1) t) e^{t/2}
+  \addplot[figR, samples=200, domain=0:4] {(2 + 1*x)*exp(x/2)};
+  \addplot[figG, samples=200, domain=0:4] {2*exp(x/2)};
+  \addplot[figO, samples=200, domain=0:4] {(2 - 0.2*x)*exp(x/2)};
+  \addplot[figB, samples=200, domain=0:4] {(2 - 2/3*x)*exp(x/2)};
+  \fill[black] (axis cs:0,2) circle (1.6pt);
+  \fill[figB] (axis cs:3,0) circle (1.6pt);
+  \node[figR, font=\scriptsize, anchor=east] at (axis cs:1.45,7.6) {$b=2$};
+  \node[figG, font=\scriptsize, anchor=east] at (axis cs:2.75,8.1) {$b=1$ (critical)};
+  \node[figO, font=\scriptsize, anchor=west] at (axis cs:3.75,6.0) {$b=0.8$};
+  \node[figB, font=\scriptsize, anchor=east] at (axis cs:3.2,-1.5) {$b=\frac13$};
+\end{axis}
+\end{tikzpicture}
