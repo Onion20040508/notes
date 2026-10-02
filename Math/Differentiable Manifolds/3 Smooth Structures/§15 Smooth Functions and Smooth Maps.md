@@ -322,7 +322,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ## Product Manifolds
 
-*Lecture 11 (Fri Sep 25). The product of two smooth manifolds is a smooth manifold, with the products of charts as an atlas; its tangent spaces are treated in [[§22 Tangent Spaces II꞉ Germs|§22]].*
+*Lecture 11 (Fri Sep 25). The product of two smooth manifolds is a smooth manifold, with the products of charts as an atlas; its tangent spaces are treated in [[§26 Tangent Vectors as Velocities of Curves|§26]].*
 
 > [!theorem] Proposition §15.8: The Product Smooth Structure
 > Let $M_1$, $M_2$ be smooth manifolds of dimensions $m_1$, $m_2$. The product space $M_1 \times M_2$ is a topological manifold of dimension $m_1 + m_2$, and the **product charts**

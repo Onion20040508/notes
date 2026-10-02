@@ -212,7 +212,7 @@ Lecture 11 supplied it (Theorem [[§26 Tangent Vectors as Velocities of Curves#^
 *Uses:* [[§26 Tangent Vectors as Velocities of Curves#^thm-26-4|§26.4]], [[§28 Local Diffeomorphisms and Submersions#^def-28-2|Def. §28.2]]
 
 > [!example] Example §28.5: The Projection $S^{2n+1} \to \mathbb{CP}^n$
-> The projection $S^{2n+1} \to \mathbb{CP}^n$ of [[§3 Subspaces and Products|§3]] is a submersion.
+> The projection $S^{2n+1} \to \mathbb{CP}^n$ of [[§6 Open Quotients and Complex Projective Space#Application: Complex Projective Space|§6]] is a submersion.
 >
 > *Lee: Problem 4-5(a)*
 

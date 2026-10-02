@@ -64,6 +64,7 @@ Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a fla
 > [!remark]- Connections
 > - Lebesgue version, with uniform convergence replaced by a.e. convergence and an integrable bound: [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]] (dominated convergence).
 > - Used in ODEs: passing to the limit in $\phi_{n+1}(t) = \int_0^t f(s, \phi_n(s))\,ds$ shows that the limit of the Picard iterates solves the integral equation, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
+> - Used in PDEs: [[§24 Expansion in Series of Eigenfunctions#^prop-24-1|341 Prop. §24.1]] (multiplying a uniformly convergent eigenfunction expansion by $\phi_m p$ and integrating term by term gives the coefficient formula).
 
 > [!example] Example §25.2: Computing a limit of integrals
 > Compute $\displaystyle\lim_{n\to\infty} \int_0^1 \frac{n + \cos x}{2n + \sin^2 x}\,dx$.
@@ -110,6 +111,9 @@ Now we return toward power series — via general series of functions.
 
 ^pf-25-2
 
+> [!remark]- Connections
+> - Computational version: [[§9 Uniform Convergence#^thm-9-1|341 Thm. §9.1]] (a uniformly convergent Fourier series has a continuous sum, so a function with a jump has no uniformly convergent Fourier series).
+
 > [!theorem] Theorem §25.3: Weierstrass M-Test
 > Let $(M_k)$ be a sequence of positive numbers with $\sum_{k=1}^\infty M_k < +\infty$. If $|g_k(x)| \leq M_k$ for all $x \in S$ and all $k$, then $\sum_k g_k(x)$ converges uniformly on $S$.
 
@@ -129,6 +133,8 @@ Now we return toward power series — via general series of functions.
 > [!remark]- Connections
 > - Lebesgue analogue for term-by-term integration, assuming only $\sum \int |f_k| < \infty$ instead of uniform bounds: [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]].
 > - Used in ODEs: the M-test with $M_k = MK^kh^{k+1}/(k+1)!$ gives the uniform convergence of the Picard iterates in the existence and uniqueness theorem for $y' = f(t, y)$, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
+> - Computational version: [[§9 Uniform Convergence#^thm-9-2|341 Thm. §9.2]] (a Fourier series with $\sum(|a_n|+|b_n|)<\infty$ converges uniformly, with worked examples).
+> - Used in PDEs: the series solutions of the heat equation, [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|341 Thm. §19.5]] and [[§25 Generalities on the Heat Conduction Problem#^thm-25-4|341 Thm. §25.4]], and the Poisson integral, [[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]], where the factor $e^{-\lambda_n^2kt}$ or $r^n$ supplies the summable bound.
 
 > [!example] Example §25.3: Three applications of the M-test
 > **(1)** $\displaystyle\sum_{n=1}^\infty \frac{\cos nx}{n^2}$ converges uniformly on $\mathbb{R}$ — take $M_k = \tfrac{1}{k^2}$ — and hence defines a continuous function on $\mathbb{R}$.
@@ -142,6 +148,9 @@ Now we return toward power series — via general series of functions.
 > $$
 
 ^ex-25-3
+
+> [!remark]- Connections
+> - Computational version: [[§9 Uniform Convergence#^ex-9-5|341 Ex. §9.5]] (the shifted series $\sum(-1)^n\cos(nx)/n^2$, uniformly convergent by the same bound, summed in closed form as $x^2/4-\pi^2/12$).
 
 > [!example] Example §25.4: When the M-test has no chance
 > Show $\displaystyle\sum_{n=1}^\infty \frac{x^n}{1+x^n}$ converges pointwise on $(0,1)$. Does it converge uniformly there?

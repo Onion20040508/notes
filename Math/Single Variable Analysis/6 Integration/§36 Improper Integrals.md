@@ -26,6 +26,9 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 
 ^def-36-1
 
+> [!remark]- Connections
+> - Used in PDEs: the Fourier integral, [[§14 Fourier Integral#^def-14-1|341 Def. §14.1]], and the solution of the semi-infinite rod, [[§26 Semi-Infinite Rod#^thm-26-2|341 Thm. §26.2]], are improper integrals in this sense.
+
 > [!remark] Remark: The new definition extends the old one
 > If $b$ is finite and $f$ *is* integrable on $[a,b]$, no conflict arises [Ross Ex. 36.1]: the function $d \mapsto \int_a^d f\,dx$ is Lipschitz, hence continuous, on $[a,b]$ (the continuity clause of [[Fundamental Theorem of Calculus|FTC]] II, §34), so its limit as $d \to b^-$ is its value at $b$ — the ordinary integral. The limit definition extends the old one; it never overwrites it.
 
@@ -166,6 +169,9 @@ $$
 > so the $+\infty$ branch is excluded. Finally $f = (f + B) + (-B)$: linearity of the Stieltjes integral on each interval passes through the defining limits [Ross Ex. 36.10], so $f$ is $F$-integrable on $\mathbb{R}$.
 
 ^pf-36-2
+
+> [!remark]- Connections
+> - Used in PDEs: the coefficient integrals of the Fourier integral converge absolutely, since $|f(x)\cos\lambda x|\le|f(x)|$, [[§14 Fourier Integral#^thm-14-1|341 Thm. §14.1]].
 
 > [!remark] Remark: Distribution functions
 > An increasing $F: \mathbb{R} \to \mathbb{R}$ with $F(-\infty) = 0$ and $F(\infty) = 1$ is called a **distribution function**: in probability, $F(t)$ is the probability that a numerical outcome is $\leq t$. (The Riemann weight $F(t) = t$ is *not* one — infinite total weight.) The theorem above then says: every bounded, interval-wise $F$-integrable $f$ — every bounded continuous $f$, in particular — can be averaged against a distribution, total weight $1$. Frequently $F$ has a **density**: a function $g \geq 0$ with

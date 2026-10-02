@@ -25,7 +25,7 @@ tags: [topology, math590]
 ^def-24-2
 
 > [!remark]- Connections
-> - In 591 the smooth analogue with a discrete fibre is a fibration, [[§30 Fibrations#^def-30-1|591 Def. §30.1]], and smooth covering maps such as ℝ → S¹ are local diffeomorphisms, [[§28 Local Diffeomorphisms and Submersions#^rem-28-2|591 §14, Remark: Covering Maps]].
+> - In 591 the smooth analogue with a discrete fibre is a fibration, [[§30 Fibrations#^def-30-1|591 Def. §30.1]], and smooth covering maps such as ℝ → S¹ are local diffeomorphisms, [[§28 Local Diffeomorphisms and Submersions#^rem-28-2|591 §28, Remark: Covering Maps]].
 
 > [!definition] Definition §24.3: Covering Space
 > If $p: E \to B$ is a covering map, the space $E$ is called a **covering space** of $B$. The space $B$ is called the **base space**. The triple $(E, p, B)$ is called a **covering**.

@@ -7,11 +7,9 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§16 Manifolds in Euclidean Space]] · ↑ [[· 3 Smooth Structures]] · [[§18 The Differential of a Map Between Vector Spaces]] →
 
-*Stage: linear — The tool both tangent spaces will need: linear algebra, and the differential of a map between vector spaces. The matrix groups become smooth level sets.*
+*Stage: linear — The tool both tangent spaces will need: the linear algebra used from here on. The differential of a map between vector spaces ([[§18 The Differential of a Map Between Vector Spaces|§18]]) and the smooth matrix groups ([[§19 The Orthogonal and Unitary Groups as Smooth Manifolds|§19]]) follow.*
 
-## Linear Algebra Toolkit
-
-*Not from lecture. From here on the course runs on linear algebra — differentials, bases of tangent spaces, dual spaces — and this subsection records, once, the facts used. The first box is imported from linear algebra without proof, as the point-set facts of [[§1 Point-Set Topology Review|§1]] were imported from 590; everything after it is proved.* Throughout, vector spaces are real.
+*Not from lecture. From here on the course runs on linear algebra — differentials, bases of tangent spaces, dual spaces — and this section records, once, the facts used. The first box is imported from linear algebra without proof, as the point-set facts of [[§1 Point-Set Topology Review|§1]] were imported from 590; everything after it is proved.* Throughout, vector spaces are real.
 
 > [!theorem] Proposition §17.1: Standing Facts from Linear Algebra
 > Let $A : V \to W$ be linear, with $V$ and $W$ finite-dimensional.

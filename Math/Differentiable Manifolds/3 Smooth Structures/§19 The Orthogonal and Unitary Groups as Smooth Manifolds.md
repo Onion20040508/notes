@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§18 The Differential of a Map Between Vector Spaces]] · ↑ [[· 3 Smooth Structures]] · [[§20 Tangent Spaces I꞉ The Geometric Picture]] →
 
-*Stage: linear — The matrix groups become smooth level sets: $\Ogp(n)$ and $\Ugp(n)$ by the regular value theorem, with the differential computed along straight lines.*
+*Stage: linear — The matrix groups become smooth level sets: $\mathrm{O}(n)$ and $\mathrm{U}(n)$ by the regular value theorem, with the differential computed along straight lines.*
 
 The promise of [[§9 The Classical Groups Are Topological Manifolds|§9, The Classical Groups Are Topological Manifolds]] can now be kept, with [[§18 The Differential of a Map Between Vector Spaces|The Differential of a Map Between Vector Spaces]] supplying the meaning of every step.
 

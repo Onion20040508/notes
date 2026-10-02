@@ -616,7 +616,7 @@ Recall from [[§6 Differentiability#^def-6-1|§6]]: $f$ is differentiable at $\m
 
 > [!remark]- Connections
 > - $Df_{\mathbf{p}}$ is a linear functional on $\mathbb{R}^n$ ([[§12 Duality#^ladr-3-108|LADR 3.108]]); the gradient is the vector that represents it via the dot product, by the [[Riesz representation theorem|Riesz representation theorem (LADR 6.42)]].
-> - On a manifold with no inner product only the differential survives, not the gradient vector: [[§27 Tangent Spaces III꞉ The Cotangent Space#^rem-27-2|591 §13, Differential — Not Gradient]].
+> - On a manifold with no inner product only the differential survives, not the gradient vector: [[§27 Tangent Spaces III꞉ The Cotangent Space#^rem-27-2|591 §27, Differential — Not Gradient]].
 
 > [!definition] Definition §22.7: Second Total Derivative
 > For $f: \mathbb{R}^n \to \mathbb{R}$ of class $C^2$ at $\mathbf{p}$, the **second total derivative** $D^2f_{\mathbf{p}}: \mathbb{R}^n \times \mathbb{R}^n \to \mathbb{R}$ is the bilinear form ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]]):

@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, App. A §§A.1–A.4 and the Sokhotski–Plemelj part of §A.5, Ch. 4 §4.4 (the six rules), Ch. 6 §§6.2–6.3 · PHY 513, Problem Set 4, Problem 0 (generalized functions) and eq. (11).*
 
-Quantum field theory writes integrals that converge for no real value of their arguments, delta functions of four-vectors, and infinitesimals $i\varepsilon$, and it exchanges limits, derivatives and integrals freely. This section says what each of these means and when each exchange is allowed. It starts from the working delta function and Fourier transform of [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-2|WO Def. §B4.4.2]] and [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], from dominated convergence ([[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]) and from the δ-normalized kets of [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-3|556 Prop. §26.3]]. New here: the field-theory conventions for the transform in space and spacetime with their rules, the angular integral, generalized functions as linear maps on test functions, and the Sokhotski–Plemelj formula, which is how every $i\varepsilon$ of [[§C2.6 Green's Functions and the Feynman Propagator|§C2.6]] is read. This chapter is the interim home of these tools until a math-side Mathematical Methods subject exists (planned).
+Quantum field theory writes integrals that converge for no real value of their arguments, delta functions of four-vectors, and infinitesimals $i\varepsilon$, and it exchanges limits, derivatives and integrals freely. This section says what each of these means and when each exchange is allowed. It starts from the working delta function and Fourier transform of [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-2|WO Def. §B4.4.2]] and [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], from dominated convergence ([[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]) and from the δ-normalized kets of [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-3|556 Prop. §26.3]]. New here: the field-theory conventions for the transform in space and spacetime with their rules, the angular integral, generalized functions as linear maps on test functions, and the Sokhotski–Plemelj formula, which is how every $i\varepsilon$ of [[§C2.11 Green's Functions and Contours|§C2.11]]–[[§C2.13 Wick Rotation and the Two-Point Family|§C2.13]] is read. This chapter is the interim home of these tools until a math-side Mathematical Methods subject exists (planned).
 
 ## Exchanging limits, derivatives and integrals
 
@@ -34,7 +34,7 @@ Quantum field theory writes integrals that converge for no real value of their a
 >
 > **What the derivation shows.**
 > - The whole content is that the dominating function does not depend on $n$ (or $h$); a bound that worsens as $\varepsilon \to 0$ is not enough.
-> - Used in: analyticity of the Wightman function in the lower half-plane ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-7|Theorem §C2.5.7]]), its third evaluation ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]]), and Sokhotski–Plemelj (Theorem §CA.1.8).
+> - Used in: analyticity of the Wightman function in the lower half-plane ([[§C2.8 The Wightman Function#^thm-c2-8-4|Theorem §C2.8.4]]), its third evaluation ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]]), and Sokhotski–Plemelj (Theorem §CA.1.8).
 
 ^der-ca-1-1
 
@@ -94,7 +94,7 @@ Quantum field theory writes integrals that converge for no real value of their a
 > **Step 4** (why uniformity matters). $F_n = \sin(nr)/\sqrt n$ tends to $0$ uniformly, yet $F_n'(0) = \sqrt n$ diverges: convergence of functions says nothing about convergence of derivatives.
 >
 > **What the derivation shows.**
-> - This is the step that needs care in the real-variable evaluation of the Wightman function ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], third route, Step 4).
+> - This is the step that needs care in the real-variable evaluation of the Wightman function ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]], third route, Step 4).
 
 ^der-ca-1-3
 
@@ -156,14 +156,14 @@ Quantum field theory writes integrals that converge for no real value of their a
 >
 > **What the derivation shows.**
 > - Every rule is a substitution or a factorization; the only analysis is in rule 1, which is a statement about generalized functions.
-> - Used in: the Green's function as division by $m^2 - p^2$ ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-2|Theorem §C2.6.2]]), the canonical relations recovered from mode integrals ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-19|Theorem §C2.5.19]]), the source transform $\tilde j$ ([[§C2.7 Particle Production by a Classical Source#^thm-c2-7-1|Theorem §C2.7.1]]).
+> - Used in: the Green's function as division by $m^2 - p^2$ ([[§C2.11 Green's Functions and Contours#^thm-c2-11-2|Theorem §C2.11.2]]), the canonical relations recovered from mode integrals ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-7|Theorem §C2.10.7]]), the source transform $\tilde j$ ([[§C2.14 Particle Production by a Classical Source#^thm-c2-14-1|Theorem §C2.14.1]]).
 
 ^der-ca-1-4
 
 *Uses:* [[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-3|WO Theorem §B4.4.3]], [[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-7|Theorem §CA.1.7]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-2|REL Theorem §B1.2.2]]
 
 > [!remark] Remark: A linear equation becomes algebra
-> By rule 2 a linear differential equation with constant coefficients becomes multiplication: the Klein–Gordon operator is multiplication by $m^2 - p^2$, which vanishes exactly on the mass shell. By rule 3 the Green's-function solution of a sourced equation is division by that factor. Both facts, and the trouble that the factor has zeros, are the subject of [[§C2.6 Green's Functions and the Feynman Propagator|§C2.6]]; a free field is a transform supported on the shell ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-2|Theorem §C2.6.2]]).
+> By rule 2 a linear differential equation with constant coefficients becomes multiplication: the Klein–Gordon operator is multiplication by $m^2 - p^2$, which vanishes exactly on the mass shell. By rule 3 the Green's-function solution of a sourced equation is division by that factor. Both facts, and the trouble that the factor has zeros, are the subject of [[§C2.11 Green's Functions and Contours|§C2.11]]; a free field is a transform supported on the shell ([[§C2.11 Green's Functions and Contours#^thm-c2-11-2|Theorem §C2.11.2]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.3*
 
@@ -189,7 +189,7 @@ Quantum field theory writes integrals that converge for no real value of their a
 >
 > **Step 3** (gradients). Take $g \to \partial_ig$ and sum over $i$: $\int_V\nabla f\cdot\nabla g = \oint_{\partial V}f\,\hat n\cdot\nabla g - \int_Vf\nabla^2g$. With $V$ a ball of radius $L \to \infty$, the surface term is dropped when $f\,\partial_rg$ falls off faster than $1/L^2$.
 >
-> ⚑ By-product: "fields fall off at infinity" is an assumption about the states in which the operators are evaluated (wave packets, not plane waves); it is made every time a surface term is dropped → [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-2|§C2.5, Theorem §C2.5.2, Step 5]].
+> ⚑ By-product: "fields fall off at infinity" is an assumption about the states in which the operators are evaluated (wave packets, not plane waves); it is made every time a surface term is dropped → [[§C2.7 Heisenberg Fields#^thm-c2-7-2|§C2.7, Theorem §C2.7.2, Step 5]].
 >
 > **Step 4** (delta function). With $f = \delta^3(\mathbf x - \mathbf y)$ as a function of $\mathbf y$, the surface term vanishes because the delta function is zero on $\partial V$ (its support, the point $\mathbf x$, lies inside); so $\int d^3y\,\delta^3(\mathbf x - \mathbf y)\,\partial_ig(\mathbf y) = -\int d^3y\,\partial_{y^i}\delta^3(\mathbf x - \mathbf y)\,g(\mathbf y)$, i.e. $\int d^3y\,g\,\nabla_{\mathbf y}\delta^3 = -\nabla g(\mathbf x)$. This is also the *definition* of the derivative of $\delta$ ([[§CA.1 Generalized Functions and Fourier Transforms#^def-ca-1-3|Def. §CA.1.3]]).
 >
@@ -229,7 +229,7 @@ Quantum field theory writes integrals that converge for no real value of their a
 >
 > **What the derivation shows.**
 > - A three-dimensional transform of a radial function is a one-dimensional sine transform; the result depends on $\mathbf r$ only through $r$, as rotation invariance requires.
-> - The four-dimensional version of the idea is a choice of frame: $\mathbf x = \mathbf y$ for timelike separation, $x^0 = y^0$ for spacelike ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], second route; [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-11|Theorem §C2.5.11]], Step 5).
+> - The four-dimensional version of the idea is a choice of frame: $\mathbf x = \mathbf y$ for timelike separation, $x^0 = y^0$ for spacelike ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]], second route; [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-4|Theorem §C2.9.4]], Step 5).
 
 ^der-ca-1-6
 
@@ -276,7 +276,7 @@ Quantum field theory writes integrals that converge for no real value of their a
 >
 > **Step 2** ($\theta' = \delta$). $\theta'[\varphi] = -\int_{-\infty}^\infty\theta\varphi' = -\int_0^\infty\varphi' = -[\varphi]_0^\infty = \varphi(0) = \delta[\varphi]$.
 >
-> ⚑ By-product: the jump of a step function is a delta function; this is the jump that makes the retarded function a Green's function ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-4|Theorem §C2.6.4]], Step 6) and the contact term of time ordering ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-5|Theorem §C2.6.5]], 4).
+> ⚑ By-product: the jump of a step function is a delta function; this is the jump that makes the retarded function a Green's function ([[§C2.11 Green's Functions and Contours#^thm-c2-11-4|Theorem §C2.11.4]], Step 6) and the contact term of time ordering ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-1|Theorem §C2.12.1]], 4).
 >
 > **Step 3** ($\delta'$). $\delta'[\varphi] = -\delta[\varphi'] = -\varphi'(0)$, which is the rule of [[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-5|Theorem §CA.1.5]], Step 4, seen as a definition.
 >
@@ -290,9 +290,9 @@ Quantum field theory writes integrals that converge for no real value of their a
 *Uses:* [[§CA.1 Generalized Functions and Fourier Transforms#^def-ca-1-3|Def. §CA.1.3]], [[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-1|WO Theorem §B4.4.1]], [[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-3|WO Theorem §B4.4.3]]
 
 > [!remark] Remark: What the language buys in field theory
-> - *A Green's function is a linear map.* The sources of physics, smooth and of finite duration, are test functions, and $\phi = i\int D_C\,j$ defines the map $j \mapsto \phi$; "$D_C(x - y)$" is the kernel through which it is written, not a function with values. There is one such map per boundary condition ([[§C2.6 Green's Functions and the Feynman Propagator#^def-c2-6-1|Def. §C2.6.1]]).
-> - *Integrals that converge nowhere still define objects.* $\int d^3p\,e^{-ip\cdot\xi}/2E_{\mathbf p}$ converges for no real $\xi$, yet it is a tempered distribution, the boundary value of an analytic function ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-7|Theorem §C2.5.7]]).
-> - *Products at a point are undefined.* The field is an operator-valued distribution, $\phi[f] = \int d^4x\,f(x)\phi(x)$, and $\phi(x)^2$ is a product of distributions at one point. That is the origin of the $\delta^3(0)$ in the zero-point energy and of normal ordering ([[§C2.2 The Real Scalar Field#^def-c2-2-2|Def. §C2.2.2]]), and later of every ultraviolet divergence.
+> - *A Green's function is a linear map.* The sources of physics, smooth and of finite duration, are test functions, and $\phi = i\int D_C\,j$ defines the map $j \mapsto \phi$; "$D_C(x - y)$" is the kernel through which it is written, not a function with values. There is one such map per boundary condition ([[§C2.11 Green's Functions and Contours#^def-c2-11-1|Def. §C2.11.1]]).
+> - *Integrals that converge nowhere still define objects.* $\int d^3p\,e^{-ip\cdot\xi}/2E_{\mathbf p}$ converges for no real $\xi$, yet it is a tempered distribution, the boundary value of an analytic function ([[§C2.8 The Wightman Function#^thm-c2-8-4|Theorem §C2.8.4]]).
+> - *Products at a point are undefined.* The field is an operator-valued distribution, $\phi[f] = \int d^4x\,f(x)\phi(x)$, and $\phi(x)^2$ is a product of distributions at one point. That is the origin of the $\delta^3(0)$ in the zero-point energy and of normal ordering ([[§C2.3 Energy, Momentum and the Zero-Point Energy#^def-c2-3-1|Def. §C2.3.1]]), and later of every ultraviolet divergence.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.2, App. A §A.4 · PHY 513, Problem Set 4, Problem 0*
 
@@ -356,7 +356,7 @@ Quantum field theory writes integrals that converge for no real value of their a
 > **What the derivation shows.**
 > - The real part is the principal value and the imaginary part the delta function, and nothing else enters; a smooth symmetric cutoff gives the same answer as the sharp one in the definition.
 > - The factor $\pi$ is the area of the Lorentzian, the same $\pi$ that $\int du/(1 + u^2)$ gives by residues.
-> - Used in: the massless commutator ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-17|Theorem §C2.5.17]]), the differences of Green's functions on the shell ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-10|Theorem §C2.6.10]]), the principal function ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-15|Theorem §C2.6.15]]).
+> - Used in: the massless commutator ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-5|Theorem §C2.10.5]]), the differences of Green's functions on the shell ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-6|Theorem §C2.12.6]]), the principal function ([[§C2.13 Wick Rotation and the Two-Point Family#^thm-c2-13-5|Theorem §C2.13.5]]).
 
 ^der-ca-1-8
 
@@ -383,8 +383,8 @@ Quantum field theory writes integrals that converge for no real value of their a
 
 > [!remark]- Connections
 > - The imaginary part of Sokhotski–Plemelj is the Lorentzian nascent delta function of [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-2|WO Def. §B4.4.2]]; the same Lorentzian is the line shape of a ringing oscillator ([[§B4.4 Fourier Transforms and the Delta Function#^ex-b4-4-1|WO Example §B4.4.1]]), whose width is the $\varepsilon$ that a damped mode carries.
-> - Sokhotski–Plemelj was used inline before it had a home: the level shift (principal value) and decay rate ($-i\pi\delta$, Fermi's golden rule) of [[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]], and the imaginary part of the resolvent behind the optical theorem in [[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]. In field theory it gives the differences of Green's functions on the mass shell ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-10|Theorem §C2.6.10]]) and the massless commutator function ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-17|Theorem §C2.5.17]]).
+> - Sokhotski–Plemelj was used inline before it had a home: the level shift (principal value) and decay rate ($-i\pi\delta$, Fermi's golden rule) of [[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]], and the imaginary part of the resolvent behind the optical theorem in [[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]. In field theory it gives the differences of Green's functions on the mass shell ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-6|Theorem §C2.12.6]]) and the massless commutator function ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-5|Theorem §C2.10.5]]).
 > - Distributions as linear maps on test functions are a dual space: the generalized functions sit in the dual of the test functions as kets sit in the dual of bras; the position "eigenket" that is not a vector is the same phenomenon ([[§26 Position Eigenstates and Continuous Resolutions#^prop-26-3|556 Prop. §26.3]]).
-> - The composition rule $\delta(f(x)) = \sum_i\delta(x - x_i)/|f'(x_i)|$ ([[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]]) is what turns $\theta(p^0)\delta(p^2 - m^2)$ into the invariant measure $d^3p/2E_{\mathbf p}$ ([[§C2.2 The Real Scalar Field#^def-c2-2-4|Def. §C2.2.4]]) and $\delta(t^2 - r^2)$ into the light-cone deltas of the massless commutator.
-> - The angular integral is the first step of every position-space propagator: the Wightman function ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]]), the scattering Green's function $-e^{ik\rho}/4\pi\rho$ ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]]) and the Yukawa potential ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]).
-> - Integration by parts with a delta function is how $[\pi, H]$ acquires $\nabla^2\phi$ ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-2|Theorem §C2.5.2]]); the divergence theorem behind it is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]], and the four-dimensional version is the step in every Euler–Lagrange and Noether derivation (QFT C1, planned).
+> - The composition rule $\delta(f(x)) = \sum_i\delta(x - x_i)/|f'(x_i)|$ ([[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]]) is what turns $\theta(p^0)\delta(p^2 - m^2)$ into the invariant measure $d^3p/2E_{\mathbf p}$ ([[§C2.4 Particles and Relativistic Normalization#^def-c2-4-2|Def. §C2.4.2]]) and $\delta(t^2 - r^2)$ into the light-cone deltas of the massless commutator.
+> - The angular integral is the first step of every position-space propagator: the Wightman function ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]]), the scattering Green's function $-e^{ik\rho}/4\pi\rho$ ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]]) and the Yukawa potential ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]).
+> - Integration by parts with a delta function is how $[\pi, H]$ acquires $\nabla^2\phi$ ([[§C2.7 Heisenberg Fields#^thm-c2-7-2|Theorem §C2.7.2]]); the divergence theorem behind it is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]], and the four-dimensional version is the step in every Euler–Lagrange and Noether derivation (QFT C1, planned).

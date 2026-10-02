@@ -200,7 +200,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 ^rem-21-3
 
 > [!remark] Remark: Looking Ahead: Transversality Is Generic
-> Two points of [[§21 Transversality#^rem-21-3|the remark above]] will be taken up once abstract manifolds and submanifolds are in place. First, the definition makes sense verbatim for a smooth map $F : X \to Y$ between abstract manifolds and a submanifold $S \subseteq Y$, with *abstract* tangent spaces and the differential of [[§22 Tangent Spaces II꞉ Germs|§22]] in place of $T^{\mathrm{geo}}$ and the Jacobian:
+> Two points of [[§21 Transversality#^rem-21-3|the remark above]] will be taken up once abstract manifolds and submanifolds are in place. First, the definition makes sense verbatim for a smooth map $F : X \to Y$ between abstract manifolds and a submanifold $S \subseteq Y$, with *abstract* tangent spaces and the differential of [[§23 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§23]] in place of $T^{\mathrm{geo}}$ and the Jacobian:
 >
 > $$
 > dF_p(T_pX) + T_{F(p)}S = T_{F(p)}Y \qquad \text{for all } p \in F^{-1}(S),
@@ -211,6 +211,6 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 ^rem-21-4
 
 > [!remark] Remark: What Is Still Missing
-> Everything above presupposes an ambient $\mathbb{R}^{n+k}$: [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Definition §20.1]] of the geometric tangent space $T^{\mathrm{geo}}_pM$ uses its vector space structure to differentiate $\gamma$, and [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|Theorem §20.3]] uses the Jacobian of the defining map $F$. For an abstract smooth manifold neither is available — “if you have a sphere you can think of the tangent plane, but that is a subspace of $\mathbb{R}^3$. If you do not have $\mathbb{R}^3$, then what do you do? You do not have room to put your vectors.” [[§22 Tangent Spaces II꞉ Germs|The rest of this section]] builds the *abstract* tangent space $T_pM$ from the charts alone.
+> Everything above presupposes an ambient $\mathbb{R}^{n+k}$: [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Definition §20.1]] of the geometric tangent space $T^{\mathrm{geo}}_pM$ uses its vector space structure to differentiate $\gamma$, and [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|Theorem §20.3]] uses the Jacobian of the defining map $F$. For an abstract smooth manifold neither is available — “if you have a sphere you can think of the tangent plane, but that is a subspace of $\mathbb{R}^3$. If you do not have $\mathbb{R}^3$, then what do you do? You do not have room to put your vectors.” [[§22 Tangent Spaces II꞉ Germs|The next sections]] build the *abstract* tangent space $T_pM$ from the charts alone.
 
 ^rem-21-5

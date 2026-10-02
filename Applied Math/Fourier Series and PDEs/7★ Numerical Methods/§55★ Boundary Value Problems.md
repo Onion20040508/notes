@@ -91,7 +91,7 @@ Most boundary value problems that arise in practice cannot be solved in closed f
 > \end{aligned} \qquad (7)
 > $$
 >
-> Elimination gives the first row of the table below. Powers' Table 1 was computed in the same way with $n = 100$; a high-accuracy computation of the exact solution agrees with it to the digits shown.
+> Elimination gives the first row of the table below. Powers' Table 1 was computed in the same way with $n = 100$; the row $n = 100$ agrees with a high-accuracy computation of the exact solution to the digits shown.
 >
 > | $x$ | $0$ | $0.2$ | $0.4$ | $0.6$ | $0.8$ | $1$ |
 > |---|---|---|---|---|---|---|
@@ -99,8 +99,6 @@ Most boundary value problems that arise in practice cannot be solved in closed f
 > | $u_i$, $n = 100$ | $1$ | $0.643$ | $0.302$ | $-0.026$ | $-0.408$ | $-1$ |
 >
 > Already the coarse mesh is within about $0.013$ of the fine one.
->
-> *Powers prints $-0.406$ at $x = 0.8$ in Table 1; the recomputed value is $-0.408$ (exact value $-0.4076$).*
 >
 > *Powers: 7.1, Example 1 and Table 1*
 

@@ -76,6 +76,9 @@ The problem is now to *estimate* $R_n(x)$. Taylor proved the basic theorem — w
 
 ^thm-31-2
 
+> [!remark]- Connections
+> - Used in PDEs: the $O((\Delta x)^2)$ errors of the central difference quotients, [[§55★ Boundary Value Problems#^prop-55-1|341 Prop. §55.1]].
+
 This is quite important and useful: to prove convergence of the Taylor series, we only need to *bound the derivatives* $f^{(n)}$.
 
 > [!proof]+ Proof

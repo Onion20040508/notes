@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§7 The Regular Value Theorem]] · ↑ [[· 2 Topological Groups and Homogeneous Spaces]] · [[§9 The Classical Groups Are Topological Manifolds]] →
 
-*Thread: equations — The classical groups are level sets of polynomial maps ([[§7 The Regular Value Theorem|§7]]). Acting on spaces, they then feed the quotient thread.*
+*Thread: equations — Topological groups and the classical matrix groups. That the classical groups are manifolds, as level sets of polynomial maps ([[§7 The Regular Value Theorem|§7]]), is [[§9 The Classical Groups Are Topological Manifolds|§9]]; acting on spaces, they then feed the quotient thread.*
 
 *Reference: Lee Ch. 7 (“Lie Groups”). For the calculus: MATH 452 notes ([[§12 The Implicit Function Theorem|Implicit Function Theorem]]).*
 

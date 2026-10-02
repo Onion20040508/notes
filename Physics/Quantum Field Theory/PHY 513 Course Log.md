@@ -11,11 +11,11 @@ The notes of [[Quantum Field Theory]] follow Yu's chapter order; this log follow
 | L | Date | Title | PS | 513 notes | Home in these notes |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Aug 31 | Motivation and the theory of relativity | Ch. 1; Tong Prelim. | Ch. 1 | QFT C1 (planned); [[Relativity]] level B |
-| 2 | Sep 2 | Causality and locality | §2.1 | Ch. 2 | QFT C1 (planned); two-point computations in [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality\|§C2.5]] |
+| 2 | Sep 2 | Causality and locality | §2.1 | Ch. 2 | QFT C1 (planned); two-point computations in [[§C2.8 The Wightman Function\|§C2.8]]–[[§C2.10 Microcausality and the Commutator Function\|§C2.10]] |
 | 3 | Sep 9 | Classical field theory | §2.2 | Ch. 3 | QFT C1 (planned) |
-| 4 | Sep 14 | The quantum field | §2.3 | Ch. 4 | [[§C2.1 Canonical Quantization of Fields\|§C2.1]], [[§C2.2 The Real Scalar Field\|§C2.2]], [[§C2.3 The Complex Scalar Field and Its Charge\|§C2.3]], [[§C2.4 Coherent States and the Classical Field\|§C2.4]]; [[P1 Canonical Quantization\|P1]] |
-| 5 | Sep 16 | Spacetime interpretation of quantum fields | §2.4, pp. 25–29 | Ch. 5 (no slides; from transcripts and handwritten notes) | [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality\|§C2.5]] |
-| 6 | Sep 21 | Green's functions | §2.4, pp. 29–33 | Ch. 6 | [[§C2.6 Green's Functions and the Feynman Propagator\|§C2.6]], [[§C2.7 Particle Production by a Classical Source\|§C2.7]]; [[P2 Green's Functions by Contour Integration\|P2]]; tools in [[· CA Mathematical Methods\|CA]] |
+| 4 | Sep 14 | The quantum field | §2.3 | Ch. 4 | [[§C2.1 Canonical Quantization of Fields\|§C2.1]], [[§C2.2 Mode Expansion and the Mode Algebra\|§C2.2]], [[§C2.3 Energy, Momentum and the Zero-Point Energy\|§C2.3]], [[§C2.4 Particles and Relativistic Normalization\|§C2.4]], [[§C2.5 The Complex Scalar Field and Its Charge\|§C2.5]], [[§C2.6 Coherent States and the Classical Field\|§C2.6]]; [[P1 Canonical Quantization\|P1]] |
+| 5 | Sep 16 | Spacetime interpretation of quantum fields | §2.4, pp. 25–29 | Ch. 5 (no slides; from transcripts and handwritten notes) | [[§C2.7 Heisenberg Fields\|§C2.7]], [[§C2.8 The Wightman Function\|§C2.8]], [[§C2.9 Explicit Forms of the Wightman Function\|§C2.9]], [[§C2.10 Microcausality and the Commutator Function\|§C2.10]] |
+| 6 | Sep 21 | Green's functions | §2.4, pp. 29–33 | Ch. 6 | [[§C2.11 Green's Functions and Contours\|§C2.11]], [[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription\|§C2.12]], [[§C2.13 Wick Rotation and the Two-Point Family\|§C2.13]], [[§C2.14 Particle Production by a Classical Source\|§C2.14]]; [[P2 Green's Functions by Contour Integration\|P2]]; tools in [[· CA Mathematical Methods\|CA]] |
 | 7 | Sep 23 | The Lorentz group | §3.1, pp. 40–41 | Ch. 7, Ch. 8 (first part) | QFT C3 (planned); spinor representation in QFT C5 (planned) |
 | 8 | Sep 28 | The Dirac equation | §3.2 | Ch. 8 | QFT C5 (planned) |
 | 9 | Sep 30 | Solutions to the Dirac equation | §3.3 | Ch. 9 | QFT C5 (planned) |
@@ -46,8 +46,8 @@ Statements are not reproduced; only submitted sets are linked (the syllabus forb
 | --- | --- | --- | --- |
 | 1 | Sep 4 | Relativistic invariance | QFT C1 (planned) |
 | 2 | Sep 11 | Relativistic field theory | QFT C1 (planned) |
-| 3 | Sep 18 | The quantum field | [[§C2.2 The Real Scalar Field\|§C2.2]] (Problems 1, 3), [[§C2.3 The Complex Scalar Field and Its Charge\|§C2.3]] (Problem 2), [[§C2.4 Coherent States and the Classical Field\|§C2.4]] (Problem 4) |
-| 4 | Sep 25 | Green's functions | [[§CA.1 Generalized Functions and Fourier Transforms\|§CA.1]] (Problem 0), [[§CA.2 Contour Integration\|§CA.2]] (Problem 1), [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality\|§C2.5]] (Problem 3), [[§C2.6 Green's Functions and the Feynman Propagator\|§C2.6]] (Problems 2, 4); Problem 5 (Lorentz algebra): QFT C3 (planned) |
+| 3 | Sep 18 | The quantum field | [[§C2.2 Mode Expansion and the Mode Algebra\|§C2.2]] (Problem 3), [[§C2.3 Energy, Momentum and the Zero-Point Energy\|§C2.3]] (Problem 2(b)), [[§C2.4 Particles and Relativistic Normalization\|§C2.4]] (Problem 1), [[§C2.5 The Complex Scalar Field and Its Charge\|§C2.5]] (Problem 2), [[§C2.6 Coherent States and the Classical Field\|§C2.6]] (Problem 4) |
+| 4 | Sep 25 | Green's functions | [[§CA.1 Generalized Functions and Fourier Transforms\|§CA.1]] (Problem 0), [[§CA.2 Contour Integration\|§CA.2]] (Problem 1), [[§C2.8 The Wightman Function\|§C2.8]] (Problems 2(a), 4(a)–(b)), [[§C2.9 Explicit Forms of the Wightman Function\|§C2.9]] (Problems 2(a), 3(a)), [[§C2.10 Microcausality and the Commutator Function\|§C2.10]] (Problems 2, 3(b)), [[§C2.11 Green's Functions and Contours\|§C2.11]] (Problem 0), [[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription\|§C2.12]] (Problem 4); Problem 5 (Lorentz algebra): QFT C3 (planned) |
 | 5 | Oct 2 | Spin ½ particles | open — not linked |
 | 6 | Oct 13 | Discrete transformations and fermions | — |
 | 7–13 | | Towards amplitudes … path integrals | — |

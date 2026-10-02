@@ -143,7 +143,7 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 > 2. the $\Phi$ are local trivializations, so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and each $\Phi$ restricts on the fibre $T_pM$ to a linear isomorphism $T_pM \to \{p\} \times \mathbb{R}^m$;
 > 3. the image $\zeta(M)$ of the zero section is a submanifold of $TM$ of codimension $m$.
 >
-> With [[§31 The Tangent Bundle#^prop-31-1|Proposition §31.1]], this proves [[§31 The Tangent Bundle#^prop-31-4|Proposition §31.4]] in full.
+> With [[§31 The Tangent Bundle#^prop-31-1|Proposition §31.1]], this proves [[§31 The Tangent Bundle#^prop-31-4|Proposition §31.4]] below in full.
 
 ^cor-31-3
 

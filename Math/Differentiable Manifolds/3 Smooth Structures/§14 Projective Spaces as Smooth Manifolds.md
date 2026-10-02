@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: foundations — The quotient-built manifolds get their smooth structures from atlases written down by hand: $\mathbb{CP}^n$, with holomorphic transition functions.*
 
-*Assignment 2, Problem 2(b)–(c). This completes the construction begun in [[§3 Subspaces and Products|§3, Application: Complex Projective Space]]: there $\mathbb{CP}^n$ was shown to be compact, Hausdorff and second countable; here it acquires charts, and the charts turn out to be smoothly — indeed holomorphically — compatible.*
+*Assignment 2, Problem 2(b)–(c). This completes the construction begun in [[§6 Open Quotients and Complex Projective Space#Application: Complex Projective Space|§6, Application: Complex Projective Space]]: there $\mathbb{CP}^n$ was shown to be compact, Hausdorff and second countable; here it acquires charts, and the charts turn out to be smoothly — indeed holomorphically — compatible.*
 
 > [!definition] Definition §14.1: Homogeneous Coordinates
 > For $\vec z = (z_0, \ldots, z_n) \in \mathbb{C}^{n+1} \setminus \{0\}$, write $[z_0 : z_1 : \cdots : z_n] \in \mathbb{CP}^n$ for the complex line through $\vec z$ ([[§6 Open Quotients and Complex Projective Space#^prop-6-6|§6.6]]). The $z_i$ are **homogeneous coordinates** of that point; they are determined only up to a common nonzero factor, $[\vec z] = [\lambda\vec z]$ for every $\lambda \in \mathbb{C}^\times$.
@@ -158,7 +158,7 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 ^cor-14-5
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Every argument of [[§3 Subspaces and Products|§3, Application: Complex Projective Space]] and of this section goes through verbatim with $\mathbb{R}$, $\mathbb{R}^\times$, $\{\pm1\}$ and $S^n$ in place of $\mathbb{C}$, $\mathbb{C}^\times$, $S^1$ and $S^{2n+1}$: the group $\{\pm 1\}$ is finite, hence compact, and acts on $S^n$ by isometries; the transition maps are the real rational functions $x_k/x_i$. Hausdorffness can alternatively be read off from [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]].
+> *(Not from lecture; filled in.)* Every argument of [[§6 Open Quotients and Complex Projective Space#Application: Complex Projective Space|§6, Application: Complex Projective Space]] and of this section goes through verbatim with $\mathbb{R}$, $\mathbb{R}^\times$, $\{\pm1\}$ and $S^n$ in place of $\mathbb{C}$, $\mathbb{C}^\times$, $S^1$ and $S^{2n+1}$: the group $\{\pm 1\}$ is finite, hence compact, and acts on $S^n$ by isometries; the transition maps are the real rational functions $x_k/x_i$. Hausdorffness can alternatively be read off from [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]].
 
 ^pf-14-5
 

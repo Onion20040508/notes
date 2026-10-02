@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Reference: Lee Appendix C (Inverse and Implicit Function Theorems); MATH 452. The theorem itself is PSet 1, Problem 6.*
 
 > [!remark] Remark: Why This Section
-> [[§3 Subspaces and Products|§3]] built manifolds out of manifolds. This section builds them out of *equations*: given a smooth map $F$ on an open subset of $\mathbb{R}^{n+k}$, when is the solution set $\{F = c\}$ a topological manifold, and of what dimension? The answer — whenever the $k$ equations are independent at every solution — is the single most productive source of examples in the course. It produces the spheres, every classical matrix group ([[§8 Topological Groups and Classical Matrix Groups|§8]]), and in its smooth form every example of [[· 3 Smooth Structures|Chapter 3]]. The machinery is multivariable calculus, and the one theorem taken on faith is the [[§7 The Regular Value Theorem#^thm-7-1|implicit function theorem]].
+> [[§3 Subspaces and Products|§3]]–[[§6 Open Quotients and Complex Projective Space|§6]] built manifolds out of manifolds. This section builds them out of *equations*: given a smooth map $F$ on an open subset of $\mathbb{R}^{n+k}$, when is the solution set $\{F = c\}$ a topological manifold, and of what dimension? The answer — whenever the $k$ equations are independent at every solution — is the single most productive source of examples in the course. It produces the spheres, every classical matrix group ([[§8 Topological Groups and Classical Matrix Groups|§8]]), and in its smooth form every example of [[· 3 Smooth Structures|Chapter 3]]. The machinery is multivariable calculus, and the one theorem taken on faith is the [[§7 The Regular Value Theorem#^thm-7-1|implicit function theorem]].
 
 ^rem-7-1
 

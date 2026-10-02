@@ -74,6 +74,7 @@ The notation $\lim_{x\to a^S}$ is a bit inconvenient; in common situations we si
 
 > [!remark]- Connections
 > - Computational version: one-sided limits [[§7 The Limit of a Function#^def-7-2|Calc Def. §7.2]], limits at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-1|Calc Def. §11.1]] (with worked examples).
+> - Computational version: [[§8 Convergence of Fourier Series#^def-8-1|341 Def. §8.1]] (the one-sided limits $f(x+)$, $f(x-)$, whose average a Fourier series converges to at a jump).
 
 Why do we need one-sided limits?
 
@@ -172,6 +173,9 @@ These notions can be used to *produce* continuous functions: extend a function t
 
 ![[m451-20-1.svg]]
 *Removable versus non-removable. Left: $f$ is undefined at $0$, but both sides approach the same height, so the hole (hollow) is filled by $f(0) = \lim_{x\to0} f(x) = 1$. Right: $g$ approaches $1$ from the right and $-1$ from the left (both hollow); a single value $g(0)$ cannot sit at both ends of the jump.*
+
+> [!remark]- Connections
+> - Computational version: [[§8 Convergence of Fourier Series#^def-8-2|341 Def. §8.2]] (jump, removable and worse discontinuities, classified in worked examples); at a jump a Fourier series converges to the midpoint, [[§8 Convergence of Fourier Series#^thm-8-1|341 Thm. §8.1]].
 
 > [!remark] Remark: Worse than a jump
 > For $f(x) = \sin\tfrac1x$, $x \neq 0$: not only does $\lim_{x\to0} f(x)$ not exist — the left and right limits do not exist either (the oscillation argument of §17 works from each side). This is much worse than the previous example: the existence of one-sided limits is already a good property of a function.

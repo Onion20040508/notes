@@ -638,7 +638,7 @@ Proved in MATH 590 (\S15; see the Topology notes); to be filled.
 % ============================================================================
 \section{Topological Manifolds}\label{sec:manifolds}
 
-\roadmark{Foundations}{The definition of a topological manifold and the role of each axiom. The two ways of building examples begin next: by quotients (\ref{sec:new-spaces}) and by equations (\ref{sec:rvt}).}
+\roadmark{Foundations}{The definition of a topological manifold and the role of each axiom. The two ways of building examples begin next: by quotients (\ref{sec:quotient-spaces}--\ref{sec:open-quotients}) and by equations (\ref{sec:rvt}).}
 
 \textit{Reference: Lee Ch.\ 1, ``Topological Manifolds.''}
 
@@ -1905,7 +1905,7 @@ $\mathbb{CP}^n$ is ``one of the main examples of manifolds'' and will recur thro
 \textit{Reference: Lee Appendix C (Inverse and Implicit Function Theorems); MATH 452. The theorem itself is PSet 1, Problem 6.}
 
 \begin{rembox}[Why This Section]\label{rem:why-this-section-2}
-\ref{sec:new-spaces} built manifolds out of manifolds. This section builds them out of \emph{equations}: given a smooth map $F$ on an open subset of $\mathbb{R}^{n+k}$, when is the solution set $\{F = c\}$ a topological manifold, and of what dimension? The answer --- whenever the $k$ equations are independent at every solution --- is the single most productive source of examples in the course. It produces the spheres, every classical matrix group (\ref{sec:topgroups}), and in its smooth form every example of Chapter~3. The machinery is multivariable calculus, and the one theorem taken on faith is the implicit function theorem.
+\ref{sec:new-spaces}--\ref{sec:open-quotients} built manifolds out of manifolds. This section builds them out of \emph{equations}: given a smooth map $F$ on an open subset of $\mathbb{R}^{n+k}$, when is the solution set $\{F = c\}$ a topological manifold, and of what dimension? The answer --- whenever the $k$ equations are independent at every solution --- is the single most productive source of examples in the course. It produces the spheres, every classical matrix group (\ref{sec:topgroups}), and in its smooth form every example of Chapter~3. The machinery is multivariable calculus, and the one theorem taken on faith is the implicit function theorem.
 \end{rembox}
 
 \subsection{The Jacobian and the Rank Condition}\label{sub:jacobian}
@@ -2255,7 +2255,7 @@ $M$ upstairs in $\mathbb{C}^2$, the parameter $s$ downstairs in $\mathbb{C}^\tim
 % ============================================================================
 \section{Topological Groups and Classical Matrix Groups}\label{sec:topgroups}
 
-\roadmark{Thread: equations}{The classical groups are level sets of polynomial maps (\ref{sec:rvt}). Acting on spaces, they then feed the quotient thread.}
+\roadmark{Thread: equations}{Topological groups and the classical matrix groups. That the classical groups are manifolds, as level sets of polynomial maps (\ref{sec:rvt}), is \ref{sec:classical-manifolds}; acting on spaces, they then feed the quotient thread.}
 
 \textit{Reference: Lee Ch.\ 7 (``Lie Groups''). For the calculus: MATH 452 notes (Implicit Function Theorem).}
 
@@ -2599,12 +2599,12 @@ The proof has two parts of very different difficulty. The point-set part is free
 % ============================================================================
 \section{Group Actions and Orbit Spaces}\label{sec:actions}
 
-\roadmark{Thread: quotients}{Orbit spaces generalize the quotients of \ref{sec:new-spaces} --- $\mathbb{CP}^n = S^{2n+1}/\Ugp(1)$ --- and the Hausdorff question returns (Corollary~\ref{cor:orbit-T2}).}
+\roadmark{Thread: quotients}{Orbit spaces generalize the quotients of \ref{sec:quotient-spaces}--\ref{sec:open-quotients} --- $\mathbb{CP}^n = S^{2n+1}/\Ugp(1)$ --- and the Hausdorff question returns (Corollary~\ref{cor:orbit-T2}).}
 
 \textit{Reference: Lee Ch.\ 21 (``Quotient Manifolds''), the sections on group actions and quotients by group actions.}
 
 \begin{rembox}[Why This Section]\label{rem:why-this-section-4}
-This returns to the quotient thread of \ref{sec:new-spaces}: a great many interesting manifolds are quotients, and among those, most are \emph{orbit spaces} of group actions. \ref{sec:new-spaces} gave a criterion (Theorem~\ref{thm:hausdorff-criterion}) for a quotient by an \emph{open} relation to be Hausdorff. The main result here is that orbit relations of continuous actions are \emph{always} open, so the criterion applies to every orbit space---``this is one of the main uses of our theorem''---and the payoff is a clean sufficient condition (Corollary~\ref{cor:orbit-T2}) for an orbit space to be Hausdorff.
+This returns to the quotient thread of \ref{sec:quotient-spaces}--\ref{sec:open-quotients}: a great many interesting manifolds are quotients, and among those, most are \emph{orbit spaces} of group actions. \ref{sec:open-quotients} gave a criterion (Theorem~\ref{thm:hausdorff-criterion}) for a quotient by an \emph{open} relation to be Hausdorff. The main result here is that orbit relations of continuous actions are \emph{always} open, so the criterion applies to every orbit space---``this is one of the main uses of our theorem''---and the payoff is a clean sufficient condition (Corollary~\ref{cor:orbit-T2}) for an orbit space to be Hausdorff.
 \end{rembox}
 
 \subsection{Actions and Orbits}
@@ -2891,7 +2891,7 @@ Proposition~\ref{prop:cpn} is a special case: $\Ugp(1) = S^1$ is compact, $S^{2n
 % ============================================================================
 \section{Homogeneous Spaces}\label{sec:homogeneous}
 
-\roadmark{Thread: quotients}{A transitive action identifies a space with a coset space $G/H$; the Grassmannians are the payoff. The two threads meet in the next chapter.}
+\roadmark{Thread: quotients}{A transitive action identifies a space with a coset space $G/H$, here as a set; its topology and the Grassmannians follow in \ref{sec:GH-topology}.}
 
 \textit{Reference: Lee Ch.\ 21, the section on homogeneous spaces; Lee Example 1.36 (Grassmannians). Logistics: a substitute lectures on Friday Sep 11; smooth structures are scheduled to begin then.}
 
@@ -2973,7 +2973,7 @@ H_{x_0} = \left\{ \begin{pmatrix} A & 0 \\ 0 & 1 \end{pmatrix} \;\middle|\; A \i
 \subsection{The Coset Space $G/H$}
 
 \begin{rembox}[The Organizing Fact]\label{rem:organizing-fact}
-Everything in this subsection and the next is a special case of \ref{sec:actions}. The coset space $G/H$ is not merely \emph{like} an orbit space: it \emph{is} one, for a suitable action of $H$ on $G$ (Proposition~\ref{prop:GH-orbit-space}), with the same underlying set and the same projection map --- so the quotient topology of \S\ref{sub:GH-topology} and the orbit-space topology of Definition~\ref{def:orbit-space} are equal by construction, not merely homeomorphic. Consequently every result of \ref{sec:actions} applies to $G/H$ with no further work, and three facts below are obtained that way: $\pi$ is an open map (Lemma~\ref{lem:orbit-open}), $G/H$ is Hausdorff under a compactness hypothesis (Corollary~\ref{cor:orbit-T2}), and it is second countable (Theorem~\ref{thm:2c-quotient}).
+Everything in this section and the next is a special case of \ref{sec:actions}. The coset space $G/H$ is not merely \emph{like} an orbit space: it \emph{is} one, for a suitable action of $H$ on $G$ (Proposition~\ref{prop:GH-orbit-space}), with the same underlying set and the same projection map --- so the quotient topology of \S\ref{sub:GH-topology} and the orbit-space topology of Definition~\ref{def:orbit-space} are equal by construction, not merely homeomorphic. Consequently every result of \ref{sec:actions} applies to $G/H$ with no further work, and three facts below are obtained that way: $\pi$ is an open map (Lemma~\ref{lem:orbit-open}), $G/H$ is Hausdorff under a compactness hypothesis (Corollary~\ref{cor:orbit-T2}), and it is second countable (Theorem~\ref{thm:2c-quotient}).
 \end{rembox}
 
 \begin{defbox}[Left Cosets and the Coset Space]\deflabel{def:cosets}
@@ -3292,7 +3292,7 @@ This is correct, but nothing proved so far shows $\Gr_k(\mathbb{R}^n)$ is locall
 % ============================================================================
 \section{Differentiable Structures}\label{sec:smooth-structures}
 
-\roadmark{Stage: foundations}{Charts, atlases and smooth maps, for every smooth manifold. The quotient-built manifolds get their smooth structures here, from atlases written down by hand (\S\ref{sub:projective-atlas}).}
+\roadmark{Stage: foundations}{Charts, compatibility, atlases and maximal atlases: what a smooth structure is, for every manifold. The projective spaces get theirs next (\ref{sec:projective-smooth}), then smooth maps (\ref{sec:smooth-maps}).}
 
 \textit{Reference: Lee Ch.\ 1, ``Smooth Structures.'' Lecture 5 was given by a substitute; the transcript is poor, so several steps below are reconstructions and are flagged as such.}
 
@@ -4066,7 +4066,7 @@ Example~\ref{ex:two-structures-R} shows that one topological manifold can carry 
 
 \subsection{Product Manifolds}\label{sub:product-manifolds}
 
-\textit{Lecture 11 (Fri Sep 25). The product of two smooth manifolds is a smooth manifold, with the products of charts as an atlas; its tangent spaces are treated in \ref{sec:abstract-tangent}.}
+\textit{Lecture 11 (Fri Sep 25). The product of two smooth manifolds is a smooth manifold, with the products of charts as an atlas; its tangent spaces are treated in \ref{sub:tangent-products}.}
 
 \begin{propbox}[The Product Smooth Structure]\thmlabel{prop:product-manifold}
 Let $M_1$, $M_2$ be smooth manifolds of dimensions $m_1$, $m_2$. The product space $M_1 \times M_2$ is a topological manifold of dimension $m_1 + m_2$, and the \textbf{product charts}
@@ -4322,11 +4322,11 @@ On the overlap, $\varphi \circ \chi^{-1} = \pi \circ \chi^{-1}$ with $\pi$ a lin
 
 \section{Linear Algebra Toolkit}\label{sec:vector-spaces}
 
-\roadmark{Stage: linear}{The tool both tangent spaces will need: linear algebra, and the differential of a map between vector spaces. The matrix groups become smooth level sets.}
+\roadmark{Stage: linear}{The tool both tangent spaces will need: the linear algebra used from here on. The differential of a map between vector spaces (\ref{sec:vs-differential}) and the smooth matrix groups (\ref{sec:on-un-smooth}) follow.}
 
-\subsection{Linear Algebra Toolkit}\label{sub:linalg-toolkit}
+\label{sub:linalg-toolkit}
 
-\textit{Not from lecture. From here on the course runs on linear algebra --- differentials, bases of tangent spaces, dual spaces --- and this subsection records, once, the facts used. The first box is imported from linear algebra without proof, as the point-set facts of \ref{sec:review} were imported from 590; everything after it is proved.} Throughout, vector spaces are real.
+\textit{Not from lecture. From here on the course runs on linear algebra --- differentials, bases of tangent spaces, dual spaces --- and this section records, once, the facts used. The first box is imported from linear algebra without proof, as the point-set facts of \ref{sec:review} were imported from 590; everything after it is proved.} Throughout, vector spaces are real.
 
 \begin{propbox}[Standing Facts from Linear Algebra]\thmlabel{fact:linalg}
 Let $A : V \to W$ be linear, with $V$ and $W$ finite-dimensional.
@@ -5101,7 +5101,7 @@ In every homogeneous space met so far, $\dim G/H = \dim G - \dim H$:
     \item $S^{2n+1} = \Ugp(n+1)/\Ugp(n)$: \ $(n+1)^2 - n^2 = 2n+1$;
     \item $\mathbb{CP}^n = \Ugp(n+1)/\big(\Ugp(1)\times\Ugp(n)\big)$: \ $(n+1)^2 - 1 - n^2 = 2n$, the real dimension found from charts in Theorem~\ref{thm:cpn-atlas}.
 \end{itemize}
-The first two identifications are proved in \ref{sec:homogeneous}; the last two are their complex analogues --- $\Ugp(n+1)$ acts transitively on unit vectors of $\mathbb{C}^{n+1}$ and on complex lines --- and are not proved here. The formula itself is heuristic until quotient manifolds are available, when it becomes a theorem; for now it is a consistency check linking four separate computations.
+The first two identifications are proved in \ref{sec:homogeneous}--\ref{sec:GH-topology}; the last two are their complex analogues --- $\Ugp(n+1)$ acts transitively on unit vectors of $\mathbb{C}^{n+1}$ and on complex lines --- and are not proved here. The formula itself is heuristic until quotient manifolds are available, when it becomes a theorem; for now it is a consistency check linking four separate computations.
 \end{rembox}
 
 % ============================================================================
@@ -5300,7 +5300,7 @@ and Theorem~\ref{thm:transverse-preimage} becomes the statement that \emph{the p
 \end{rembox}
 
 \begin{rembox}[What Is Still Missing]\label{rem:what-still-missing}
-Everything above presupposes an ambient $\mathbb{R}^{n+k}$: Definition~\ref{def:geometric-tangent} of the geometric tangent space $T^{\geo}_pM$ uses its vector space structure to differentiate $\gamma$, and Theorem~\ref{thm:tangent-kernel} uses the Jacobian of the defining map $F$. For an abstract smooth manifold neither is available --- ``if you have a sphere you can think of the tangent plane, but that is a subspace of $\mathbb{R}^3$. If you do not have $\mathbb{R}^3$, then what do you do? You do not have room to put your vectors.'' The rest of this section builds the \emph{abstract} tangent space $T_pM$ from the charts alone.
+Everything above presupposes an ambient $\mathbb{R}^{n+k}$: Definition~\ref{def:geometric-tangent} of the geometric tangent space $T^{\geo}_pM$ uses its vector space structure to differentiate $\gamma$, and Theorem~\ref{thm:tangent-kernel} uses the Jacobian of the defining map $F$. For an abstract smooth manifold neither is available --- ``if you have a sphere you can think of the tangent plane, but that is a subspace of $\mathbb{R}^3$. If you do not have $\mathbb{R}^3$, then what do you do? You do not have room to put your vectors.'' The next sections build the \emph{abstract} tangent space $T_pM$ from the charts alone.
 \end{rembox}
 
 \section{Tangent Spaces II: Germs}\label{sec:abstract-tangent}
@@ -7700,7 +7700,7 @@ With the smooth structure of Proposition~\ref{prop:tb-atlas}:
     \item the $\Phi$ are local trivializations, so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and each $\Phi$ restricts on the fibre $T_pM$ to a linear isomorphism $T_pM \to \{p\} \times \mathbb{R}^m$;
     \item the image $\zeta(M)$ of the zero section is a submanifold of $TM$ of codimension $m$.
 \end{enumerate}
-With Proposition~\ref{prop:tb-topology}, this proves Proposition~\ref{prop:tangent-bundle-claim} in full.
+With Proposition~\ref{prop:tb-topology}, this proves Proposition~\ref{prop:tangent-bundle-claim} below in full.
 \end{corbox}
 
 \begin{proof}
@@ -7972,7 +7972,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \textbf{These notes} & \textbf{Lee} \\ \midrule \endhead
 \ref{sec:review}\ Point-set review & Appendix A, \emph{Topological Spaces} and \emph{Connectedness and Compactness} \\
 \ref{sec:manifolds}\ Topological manifolds & Chapter 1, \emph{Topological Manifolds}; Problems 1-1 and 1-2 \\
-\ref{sec:new-spaces}\ Subspaces, products, quotients & Appendix A, \emph{Subspaces, Products, Disjoint Unions, and Quotients}; Problem 1-9 \\
+\ref{sec:new-spaces}--\ref{sec:open-quotients}\ Subspaces, products, quotients & Appendix A, \emph{Subspaces, Products, Disjoint Unions, and Quotients}; Problem 1-9 \\
 \ref{sec:rvt}\ Regular value theorem & Appendix C (Theorem C.40); Example 1.32; Corollary 5.14 \\
 \ref{sec:topgroups}\ Topological and matrix groups & Chapter 7, Examples 7.27--7.30; Propositions 21.34 and 21.35; Problem 7-4 \\
 \ref{sec:actions}\ Actions and orbit spaces & Chapter 7, \emph{Group Actions and Equivariant Maps}; Lemma 21.1, Proposition 21.4 \\

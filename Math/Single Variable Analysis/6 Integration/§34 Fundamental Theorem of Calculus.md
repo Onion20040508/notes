@@ -130,6 +130,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 > - Its several-variable form is Green's first identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]], which reduces to this for n = 1.
 > - Computational version: [[§44 Integration by Parts#^thm-44-2|Calc Thm. §44.2]] (with worked examples).
 > - Used in ODEs: integration by parts on each piece gives the transform of a derivative, $\mathcal{L}\{f'\} = s\mathcal{L}\{f\} - f(0)$, [[§22 Solution of Initial Value Problems#^thm-22-1|331 Thm. §22.1]].
+> - Used in PDEs: the Fourier series of $f'$ is the differentiated series of $f$, [[§10 Operations on Fourier Series#^thm-10-6|341 Thm. §10.6]]; most Fourier coefficients are computed this way, as in [[§6 Periodic Functions and Fourier Series#^ex-6-1|341 Ex. §6.1]].
 
 ## The Second Fundamental Theorem
 
@@ -149,6 +150,9 @@ Integration by parts needs a preliminary: products of integrable functions are i
 > Likewise, $G(x) = \int_x^b f(t)\,dt$ satisfies $G'(x_0) = -f(x_0)$ (since $G = \int_a^b f - F$).
 
 ^thm-34-4
+
+> [!remark]- Connections
+> - Used in PDEs: the integral of a periodic function is the same over every period, [[§6 Periodic Functions and Fourier Series#^prop-6-2|341 Prop. §6.2]] (differentiate in the endpoint).
 
 > [!remark] Remark: Orientation convention
 > For $x < y$ we set $\int_y^x f = -\int_x^y f$; then additivity $\int_a^x = \int_a^y + \int_y^x$ holds for any order of the points, and the estimates below are valid regardless of the side from which $x$ approaches $x_0$.

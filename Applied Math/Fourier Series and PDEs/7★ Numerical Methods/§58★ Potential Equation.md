@@ -190,7 +190,7 @@ On more complicated regions the replacement for the Laplacian has exactly the sa
 > u_1 = \tfrac{44}{67} \approx 0.657, \quad u_2 = u_4 = \tfrac{109}{134} \approx 0.813, \quad u_3 = u_7 = \tfrac{165}{268} \approx 0.616, \quad u_5 = \tfrac{263}{268} \approx 0.981, \quad u_6 = u_8 = \tfrac{87}{134} \approx 0.649 . \qquad (19)
 > $$
 >
-> (Powers prints $u_1 = 0.656$, the truncated value.) The largest value is at the center, $u_5$, and the points next to the missing corner ($u_6$, $u_8$) are lower than their mirror images across the other diagonal ($u_2$, $u_4$). Physically, $u$ is the deflection of an L-shaped membrane under a uniform load, or the stress function of an L-shaped bar in torsion.
+> The largest value is at the center, $u_5$, and the points next to the missing corner ($u_6$, $u_8$) are lower than their mirror images across the other diagonal ($u_2$, $u_4$). Physically, $u$ is the deflection of an L-shaped membrane under a uniform load, or the stress function of an L-shaped bar in torsion.
 >
 > *Powers: 7.4, Example 3 and Figure 4*
 

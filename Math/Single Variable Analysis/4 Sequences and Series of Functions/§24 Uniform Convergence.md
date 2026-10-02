@@ -32,6 +32,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 
 > [!remark]- Connections
 > - Restated in 551 as [[§12 Measurable Functions#^def-12-9|551 Def. §12.9]]; on a set of finite measure, a.e. convergence is uniform off a set of arbitrarily small measure by [[§13 Egorov's and Lusin's Theorems#^thm-13-1|551 Thm. §13.1]] (Egorov).
+> - Computational version: [[§9 Uniform Convergence#^def-9-1|341 Def. §9.1]] (pointwise versus uniform convergence, with worked examples for Fourier series).
 
 ## Examples and Non-Examples
 
@@ -60,6 +61,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 
 > [!remark]- Connections
 > - Same sequence in 551, where it converges uniformly on every $[0, 1-\delta]$, illustrating Egorov's theorem: [[§13 Egorov's and Lusin's Theorems#^ex-13-1|551 Ex. §13.1]].
+> - Computational version: [[§9 Uniform Convergence#^ex-9-1|341 Ex. §9.1]] (continuous functions converging pointwise, not uniformly, to a step).
 
 > [!example] Example §24.3: A uniform example
 > $f_n(x) = \tfrac1n \sin x$ converges uniformly to $f \equiv 0$ on $\mathbb{R}$: given $\varepsilon > 0$, take $N > \tfrac1\varepsilon$; then for all $n \geq N$ and *all* $x \in \mathbb{R}$,
@@ -134,6 +136,9 @@ The last example generalizes:
 > ($\Rightarrow$) If $f_n \to f$ uniformly: for every $\varepsilon > 0$ there is $N$ such that $|f_n(x) - f(x)| < \varepsilon$ for all $n \geq N$ and all $x \in S$; taking the supremum over $x$, $M_n \leq \varepsilon$ for $n \geq N$. Hence $M_n \to 0$.
 
 ^pf-24-1
+
+> [!remark]- Connections
+> - Computational version: [[§9 Uniform Convergence#^def-9-2|341 Def. §9.2]] (uniform convergence of a Fourier series defined by this criterion: the maximum deviation $\delta_N$ tends to 0).
 
 The two proof strategies, summarized: to prove uniform convergence, bound $|f_n(x) - f(x)|$ *independently of $x$* by something $\to 0$; to disprove it, find points $x_n$ (usually depending on $n$) where $|f_n(x_n) - f(x_n)|$ stays above a fixed $\varepsilon_0$.
 

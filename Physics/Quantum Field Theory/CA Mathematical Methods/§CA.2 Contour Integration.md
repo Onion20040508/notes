@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, App. A §A.5 and Ch. 6 §6.5 (the working rules, stated twice there) · PHY 513 Lecture 6 (Larsen, 21 Sep 2026), "Complex Analysis: a Survival Guide" · PHY 513, Problem Set 4, Problem 1 · Stein & Shakarchi, Complex Analysis, Ch. 1–3 (cited in the user's notes).*
 
-Every propagator, every loop integral and the Wightman function of [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality|§C2.5]] are evaluated by moving contours in the complex plane. Lecture 6 compressed the subject into three facts: an integral needs a path; the one entry in the table, $\oint_{|z| = 1}\frac{dz}{2\pi iz} = 1$; and the integral does not change when the path is deformed without crossing a singularity. This section states them with proofs, adds what the course uses (residues, closing a real-line integral, poles on the path, branch cuts, the identity theorem), and ends with the sheet of working rules ([[§CA.2 Contour Integration#^thm-ca-2-9|Theorem §CA.2.9]]) that [[P2 Green's Functions by Contour Integration|P2]] and [[§C2.6 Green's Functions and the Feynman Propagator|§C2.6]] cite. Line integrals in the plane and Green's theorem are [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]]; the vault has no complex-analysis subject yet, so this is the interim home.
+Every propagator, every loop integral and the Wightman function of [[§C2.9 Explicit Forms of the Wightman Function|§C2.9]] are evaluated by moving contours in the complex plane. Lecture 6 compressed the subject into three facts: an integral needs a path; the one entry in the table, $\oint_{|z| = 1}\frac{dz}{2\pi iz} = 1$; and the integral does not change when the path is deformed without crossing a singularity. This section states them with proofs, adds what the course uses (residues, closing a real-line integral, poles on the path, branch cuts, the identity theorem), and ends with the sheet of working rules ([[§CA.2 Contour Integration#^thm-ca-2-9|Theorem §CA.2.9]]) that [[P2 Green's Functions by Contour Integration|P2]] and [[§C2.11 Green's Functions and Contours|§C2.11]]–[[§C2.13 Wick Rotation and the Two-Point Family|§C2.13]] cite. Line integrals in the plane and Green's theorem are [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]]; the vault has no complex-analysis subject yet, so this is the interim home.
 
 ## Contours and analytic functions
 
@@ -106,7 +106,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 >
 > **What the derivation shows.**
 > - Connectedness is essential: on two disjoint discs an analytic function can be $0$ on one and $1$ on the other.
-> - Used to continue one Euclidean evaluation to the Wightman function everywhere ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-9|Theorem §C2.5.9]]) and the Gaussian integral to complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]).
+> - Used to continue one Euclidean evaluation to the Wightman function everywhere ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-2|Theorem §C2.9.2]]) and the Gaussian integral to complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]).
 
 ^der-ca-2-3
 
@@ -149,7 +149,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 > **Step 3** (the propagator). $g = e^{-ip^0t}$, $h = (p^0)^2 - E^2$, $h'(p^0) = 2p^0$: at $p^0 = E$, $\frac{e^{-iEt}}{2E}$; at $p^0 = -E$, $\frac{e^{iEt}}{-2E}$. Equivalently, the partial fractions $\frac{1}{(p^0)^2 - E^2} = \frac{1}{2E}\bigl(\frac{1}{p^0 - E} - \frac{1}{p^0 + E}\bigr)$ (check: the numerator is $(p^0 + E) - (p^0 - E) = 2E$) display both residues at once.
 >
 > **What the derivation shows.**
-> - Same function, two poles, two different numbers: the residue at $+E$ carries the positive-energy wave, the one at $-E$ the negative-frequency wave that becomes the reversed Wightman function ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-4|Theorem §C2.6.4]]).
+> - Same function, two poles, two different numbers: the residue at $+E$ carries the positive-energy wave, the one at $-E$ the negative-frequency wave that becomes the reversed Wightman function ([[§C2.11 Green's Functions and Contours#^thm-c2-11-4|Theorem §C2.11.4]]).
 
 ^der-ca-2-4
 
@@ -212,14 +212,14 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 >
 > **What the derivation shows.**
 > - The sign of the time difference, causal order, decides the contour.
-> - Jordan needs no rate of decay of $g$ but needs $g \to 0$; for the propagator integrand the faster ML estimate suffices ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-4|Theorem §C2.6.4]], Step 2).
+> - Jordan needs no rate of decay of $g$ but needs $g \to 0$; for the propagator integrand the faster ML estimate suffices ([[§C2.11 Green's Functions and Contours#^thm-c2-11-4|Theorem §C2.11.4]], Step 2).
 
 ^der-ca-2-6
 
 *Uses:* [[§CA.2 Contour Integration#^thm-ca-2-1|Theorem §CA.2.1]]
 
 > [!caution] Caution: Jordan's lemma needs $g \to 0$
-> No rate of decay is required, but $g$ must tend to zero. For the equal-time Wightman integrand $p\,e^{ipr}/\sqrt{p^2 + m^2}$ the kernel tends to $1$ and the lemma fails; the cure there is to write $p\,e^{ipr} = -i\partial_re^{ipr}$ first ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], second route). Nor may a regulator such as $e^{-\varepsilon p}$ be kept on the arc: near $\arg p = \pi$ it grows like $e^{\varepsilon R}$.
+> No rate of decay is required, but $g$ must tend to zero. For the equal-time Wightman integrand $p\,e^{ipr}/\sqrt{p^2 + m^2}$ the kernel tends to $1$ and the lemma fails; the cure there is to write $p\,e^{ipr} = -i\partial_re^{ipr}$ first ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]], second route). Nor may a regulator such as $e^{-\varepsilon p}$ be kept on the arc: near $\arg p = \pi$ it grows like $e^{\varepsilon R}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4*
 
@@ -283,7 +283,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 > [!example] Example §CA.2.2: A Step Function from a Pole
 > Show that $\displaystyle\lim_{\varepsilon\to0^+}\int_{-\infty}^{\infty}\frac{dx}{2\pi i}\,\frac{e^{ikx}}{x - i\varepsilon} = \theta(k)$.
 >
-> The pole sits at $i\varepsilon$, just above the axis. For $k > 0$ close upward (Jordan): the pole is enclosed counterclockwise, and the result is $e^{-k\varepsilon} \to 1$. For $k < 0$ close downward: nothing is enclosed, and the result is $0$. A single pole infinitesimally off the axis produces a step function, and the side it sits on decides which sign of $k$ survives. With $k$ a time, this is causality in its most compact form, the mechanism of the retarded Green's function ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-4|Theorem §C2.6.4]]).
+> The pole sits at $i\varepsilon$, just above the axis. For $k > 0$ close upward (Jordan): the pole is enclosed counterclockwise, and the result is $e^{-k\varepsilon} \to 1$. For $k < 0$ close downward: nothing is enclosed, and the result is $0$. A single pole infinitesimally off the axis produces a step function, and the side it sits on decides which sign of $k$ survives. With $k$ a time, this is causality in its most compact form, the mechanism of the retarded Green's function ([[§C2.11 Green's Functions and Contours#^thm-c2-11-4|Theorem §C2.11.4]]).
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (worked example (iii))*
 
@@ -305,7 +305,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 >
 > **What the derivation shows.**
 > - The values on the lips depend on the choice of branch; the total does not.
-> - Worked case: the equal-time Wightman function, where the two lips *add* ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], second route).
+> - Worked case: the equal-time Wightman function, where the two lips *add* ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]], second route).
 
 ^der-ca-2-8
 
@@ -348,8 +348,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 
 > [!remark]- Connections
 > - Example §CA.2.1 is the one-dimensional cousin of the Yukawa potential ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]) and of the free scattering Green's function $-e^{ik\rho}/4\pi\rho$, whose $k'$-plane integral closes the two exponentials on opposite sides exactly as here ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]]).
-> - Example §CA.2.2 is the transform behind every causal response: the energy transform of a retarded propagator is analytic in the upper half-plane ([[§C4.1 Propagators#^thm-c4-1-7|QM Theorem §C4.1.7]]), the impulse response of a damped oscillator vanishes before the kick ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]], whose transform $\chi(\omega)$ has its poles in one half-plane), and the retarded Green's function of the Klein–Gordon field passes above both poles ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-4|Theorem §C2.6.4]]).
+> - Example §CA.2.2 is the transform behind every causal response: the energy transform of a retarded propagator is analytic in the upper half-plane ([[§C4.1 Propagators#^thm-c4-1-7|QM Theorem §C4.1.7]]), the impulse response of a damped oscillator vanishes before the kick ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]], whose transform $\chi(\omega)$ has its poles in one half-plane), and the retarded Green's function of the Klein–Gordon field passes above both poles ([[§C2.11 Green's Functions and Contours#^thm-c2-11-4|Theorem §C2.11.4]]).
 > - The half-residue lemma is what QM uses for the imaginary part of the resolvent in the optical theorem ([[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]); its distribution form is [[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-8|Theorem §CA.1.8]].
-> - The identity theorem makes analytic continuation unique; it is what turns one Euclidean evaluation into the Wightman function everywhere ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-9|Theorem §C2.5.9]]) and what extends the Gaussian integral to complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]).
+> - The identity theorem makes analytic continuation unique; it is what turns one Euclidean evaluation into the Wightman function everywhere ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-2|Theorem §C2.9.2]]) and what extends the Gaussian integral to complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]).
 > - Green's theorem in the plane ([[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]]) is the whole proof of Cauchy's theorem for smooth $u$, $v$; Cauchy–Riemann says that $u\,dx - v\,dy$ and $v\,dx + u\,dy$ are closed forms.
 > - Loop integrals (QFT C7, planned) bring branch cuts back, and the spinor and vector propagators (QFT C4–C5, planned) have numerators that are analytic in $p^0$, so the same residues give them the same $i\varepsilon$ (Yu eq. (6.262)).

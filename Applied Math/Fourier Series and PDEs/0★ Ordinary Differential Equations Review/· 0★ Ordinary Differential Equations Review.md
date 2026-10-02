@@ -1,0 +1,31 @@
+---
+type: chapter
+subject: "[[Fourier Series and PDEs]]"
+chapter: 0
+tags: [chapter, fourier-series-and-pdes]
+---
+# 0★ Ordinary Differential Equations Review
+↑ [[Fourier Series and PDEs]]
+
+*Powers, Chapter 0 · ★ beyond MAT 341.*
+
+**Builds on:** [[· 2 The Heat Equation|2 The Heat Equation]] (2), [[· 4 The Potential Equation|4 The Potential Equation]] (1), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (1)
+**Used by:** [[· 2 The Heat Equation|2 The Heat Equation]] (1), [[· 4 The Potential Equation|4 The Potential Equation]] (5), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (2)
+**Developed further in (other subjects):** [[Multivariable Analysis]] (7), [[Linear Algebra]] (4), [[Applied Linear Algebra]] (2), [[Ordinary Differential Equations]] (1)
+
+## Sections
+- [[§1★ Homogeneous Linear Equations]] — Powers 0.1 ★
+- [[§2★ Nonhomogeneous Linear Equations]] — Powers 0.2 ★
+- [[§3★ Boundary Value Problems]] — Powers 0.3 ★
+- [[§4★ Singular Boundary Value Problems]] — Powers 0.4 ★
+- [[§5★ Green's Functions]] — Powers 0.5 ★
+
+## Central results
+- [[Green's Function for Boundary Value Problems]] (§5.1)
+
+## Load-bearing results
+Ranked by how many later results depend on them (through the proofs' citations).
+- [[§3★ Boundary Value Problems#^prop-3-2|Proposition §3.2: Steady-State Heat Equation in a Rod]]: 14 later results
+- [[§1★ Homogeneous Linear Equations#^thm-1-3|Theorem §1.3: The Wronskian Test and the General Solution]]: 13 later results
+- [[§1★ Homogeneous Linear Equations#^thm-1-4|Theorem §1.4: Solutions of the Constant-Coefficient Equation]]: 8 later results
+- [[§1★ Homogeneous Linear Equations#^thm-1-5|Theorem §1.5: Solutions of the Cauchy–Euler Equation]]: 7 later results

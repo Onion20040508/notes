@@ -7,12 +7,12 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§9 The Classical Groups Are Topological Manifolds]] · ↑ [[· 2 Topological Groups and Homogeneous Spaces]] · [[§11 Homogeneous Spaces]] →
 
-*Thread: quotients — Orbit spaces generalize the quotients of [[§3 Subspaces and Products|§3]] — $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ — and the Hausdorff question returns (Corollary [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]]).*
+*Thread: quotients — Orbit spaces generalize the quotients of [[§4 Quotient Spaces and Open Maps|§4]]–[[§6 Open Quotients and Complex Projective Space|§6]] — $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ — and the Hausdorff question returns (Corollary [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]]).*
 
 *Reference: Lee Ch. 21 (“Quotient Manifolds”), the sections on group actions and quotients by group actions.*
 
 > [!remark] Remark: Why This Section
-> This returns to the quotient thread of [[§3 Subspaces and Products|§3]]: a great many interesting manifolds are quotients, and among those, most are *orbit spaces* of group actions. [[§3 Subspaces and Products|§3]] gave a criterion (Theorem [[§6 Open Quotients and Complex Projective Space#^thm-6-1|§6.1]]) for a quotient by an *open* relation to be Hausdorff. The main result here is that orbit relations of continuous actions are *always* open, so the criterion applies to every orbit space—“this is one of the main uses of our theorem”—and the payoff is a clean sufficient condition (Corollary [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]]) for an orbit space to be Hausdorff.
+> This returns to the quotient thread of [[§4 Quotient Spaces and Open Maps|§4]]–[[§6 Open Quotients and Complex Projective Space|§6]]: a great many interesting manifolds are quotients, and among those, most are *orbit spaces* of group actions. [[§6 Open Quotients and Complex Projective Space|§6]] gave a criterion (Theorem [[§6 Open Quotients and Complex Projective Space#^thm-6-1|§6.1]]) for a quotient by an *open* relation to be Hausdorff. The main result here is that orbit relations of continuous actions are *always* open, so the criterion applies to every orbit space—“this is one of the main uses of our theorem”—and the payoff is a clean sufficient condition (Corollary [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]]) for an orbit space to be Hausdorff.
 
 ^rem-10-1
 
@@ -112,7 +112,7 @@ tags: [differentiable-manifolds, math591]
 > - Home of this result: [[§25 Orbits#^prop-25-2|493 §25.2 (The Orbit Relation)]], with a direct proof in [[§25 Orbits#^prop-25-1|493 §25.1 (Orbits Partition X)]].
 
 > [!remark] Remark: “Reachable” Is the Equivalence Relation
-> In words: *$x \sim y$ iff $y$ can be reached from $x$ by the action*, and the orbit of $x$ is its equivalence class. The point of the proof is that “reachable” is automatically symmetric and transitive *because $G$ is a group*: if $g$ takes $x$ to $y$ then $g^{-1}$ takes $y$ back to $x$, and if $g$ takes $x$ to $y$ and $h$ takes $y$ to $z$ then $hg$ takes $x$ to $z$. Nothing had to be added by hand. Contrast Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]] in [[§3 Subspaces and Products|§3]], where the relation on $\mathbb{R}$ had to be *generated* by the single identification $0 \sim 1$ to become an equivalence relation. So the mental sequence for any orbit space is:
+> In words: *$x \sim y$ iff $y$ can be reached from $x$ by the action*, and the orbit of $x$ is its equivalence class. The point of the proof is that “reachable” is automatically symmetric and transitive *because $G$ is a group*: if $g$ takes $x$ to $y$ then $g^{-1}$ takes $y$ back to $x$, and if $g$ takes $x$ to $y$ and $h$ takes $y$ to $z$ then $hg$ takes $x$ to $z$. Nothing had to be added by hand. Contrast Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]] in [[§4 Quotient Spaces and Open Maps#Open Maps and Open Relations|§4]], where the relation on $\mathbb{R}$ had to be *generated* by the single identification $0 \sim 1$ to become an equivalence relation. So the mental sequence for any orbit space is:
 > 1. the group moves points around;
 > 2. two points are declared equivalent if one can be moved to the other;
 > 3. the classes are the orbits, and the orbit space is the set of orbits with the quotient topology.

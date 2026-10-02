@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§12 The Topology of G∕H and Real Grassmannians]] · ↑ [[· 3 Smooth Structures]] · [[§14 Projective Spaces as Smooth Manifolds]] →
 
-*Stage: foundations — Charts, atlases and smooth maps, for every smooth manifold. The quotient-built manifolds get their smooth structures here, from atlases written down by hand ([[§14 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]).*
+*Stage: foundations — Charts, compatibility, atlases and maximal atlases: what a smooth structure is, for every manifold. The projective spaces get theirs next ([[§14 Projective Spaces as Smooth Manifolds|§14]]), then smooth maps ([[§15 Smooth Functions and Smooth Maps|§15]]).*
 
 *Reference: Lee Ch. 1, “Smooth Structures.” Lecture 5 was given by a substitute; the transcript is poor, so several steps below are reconstructions and are flagged as such.*
 

@@ -9,7 +9,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 ---
 ← [[§51★ Definition and Elementary Properties]] · ↑ [[· 6★ Laplace Transform]] · [[§53★ Partial Differential Equations]] →
 
-*Powers, Section 6.2.*
+*Powers, Section 6.2 · MAT 341 Practice Midterm 1.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
 Transforming a linear differential equation with constant coefficients removes the derivatives and builds in the initial conditions, so the transformed problem is solved by algebra. The real work is inverting the answer. This section gives Powers' two inversion tools. For a rational transform $q(s)/p(s)$ whose denominator has simple roots, **Heaviside's formula** $\mathcal{L}^{-1}(q/p) = \sum q(r_i)e^{r_it}/p'(r_i)$ needs no algebraic partial-fraction work; in [[§53★ Partial Differential Equations|§53★]] it is extended to transcendental $p$, and that extension is how heat and wave problems are solved by transform. The **convolution theorem** inverts a product of transforms and gives solution formulas valid for every forcing function. Both tools, and the IVP method itself, are developed in [[Ordinary Differential Equations]]: [[§22 Solution of Initial Value Problems|§22]] and [[§26★ The Convolution Integral|§26★]]. Here they are stated in Powers' form and linked there; Heaviside's formula is not in that subject and is proved here.
@@ -329,6 +329,20 @@ found by matching numerators: $c = A_1 + A_2$, $d = -A_1r_2 - A_2r_1$. Then $\ma
 >
 > After the force stops, $\cos(\omega(t - t_1)) - \cos(\omega(t - t_0)) = 2\sin\big(\tfrac12\omega(t_1 - t_0)\big)\sin\big(\omega(t - \tfrac12(t_0 + t_1))\big)$. The blow adds a free oscillation of amplitude $\frac{2F_0}{\omega^2}\big|\sin\big(\tfrac12\omega(t_1 - t_0)\big)\big|$, which vanishes when the force acts for a whole number of periods $2\pi/\omega$.
 >
-> *Powers: 6.2 (text)*
+> **(c) The course version.** With $\omega = 1$ and $u_0 = u_1 = 0$, part (b) is the bonus problem of the 341 Practice Midterm 1: solve $u'' + u = f$, $u(0) = u'(0) = 0$, for a bounded $f$. Integrating by parts twice, the boundary terms vanish because $u(0) = u'(0) = 0$, so $\mathcal{L}(u'') = s^2U$ ([[§51★ Definition and Elementary Properties#^thm-51-4|Theorem §51.4]]). The transformed equation is $(s^2 + 1)U = F$, that is,
+>
+> $$
+> U(s) = F(s)\cdot\frac{1}{s^2 + 1} = \mathcal{L}(f)\,\mathcal{L}(\sin t) ,
+> $$
+>
+> and the convolution theorem gives
+>
+> $$
+> u(t) = \int_0^t f(t - t')\sin(t')\,dt' ,
+> $$
+>
+> which is the formula of (b) with $\omega = 1$, by the rule $g * f = f * g$ (4a).
+>
+> *Powers: 6.2 (text); Source: 341 Practice Midterm 1, Q9*
 
 ^ex-52-5

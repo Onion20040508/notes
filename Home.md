@@ -16,6 +16,7 @@
 - [[Calculus]]
 - [[Applied Linear Algebra]]
 - [[Ordinary Differential Equations]]
+- [[Fourier Series and PDEs]]
 
 **Physics**
 - [[Classical Mechanics]]

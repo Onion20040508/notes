@@ -265,6 +265,9 @@ The converse direction — that integrability passes *down* to subintervals — 
 
 ^rem-33-3
 
+> [!remark]- Connections
+> - Computational version: sines and cosines are orthogonal in this inner product, [[§6 Periodic Functions and Fourier Series#^prop-6-3|341 Prop. §6.3]], which gives the formulas for the Fourier coefficients, [[§6 Periodic Functions and Fourier Series#^prop-6-4|341 Prop. §6.4]].
+
 ## Mean Value Theorems for Integrals
 
 > [!theorem] Theorem §33.9: Intermediate Value Theorem for Integrals

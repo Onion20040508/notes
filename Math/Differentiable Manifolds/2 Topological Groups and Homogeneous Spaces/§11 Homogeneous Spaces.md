@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§10 Group Actions and Orbit Spaces]] · ↑ [[· 2 Topological Groups and Homogeneous Spaces]] · [[§12 The Topology of G∕H and Real Grassmannians]] →
 
-*Thread: quotients — A transitive action identifies a space with a coset space $G/H$; the Grassmannians are the payoff. The two threads meet in the [[· 3 Smooth Structures|next chapter]].*
+*Thread: quotients — A transitive action identifies a space with a coset space $G/H$, here as a set; its topology and the Grassmannians follow in [[§12 The Topology of G∕H and Real Grassmannians|§12]].*
 
 *Reference: Lee Ch. 21, the section on homogeneous spaces; Lee Example 1.36 (Grassmannians). Logistics: a substitute lectures on Friday Sep 11; smooth structures are scheduled to begin then.*
 
@@ -138,7 +138,7 @@ tags: [differentiable-manifolds, math591]
 ## The Coset Space $G/H$
 
 > [!remark] Remark: The Organizing Fact
-> Everything in this subsection and the next is a special case of [[§10 Group Actions and Orbit Spaces|§10]]. The coset space $G/H$ is not merely *like* an orbit space: it *is* one, for a suitable action of $H$ on $G$ (Proposition [[§11 Homogeneous Spaces#^prop-11-4|§11.4]]), with the same underlying set and the same projection map — so the quotient topology of [[§12 The Topology of G∕H and Real Grassmannians#^def-12-1|Def. §12.1]] and the orbit-space topology of Definition [[§10 Group Actions and Orbit Spaces#^def-10-5|§10.5]] are equal by construction, not merely homeomorphic. Consequently every result of [[§10 Group Actions and Orbit Spaces|§10]] applies to $G/H$ with no further work, and three facts below are obtained that way: $\pi$ is an open map (Lemma [[§10 Group Actions and Orbit Spaces#^lem-10-3|§10.3]]), $G/H$ is Hausdorff under a compactness hypothesis (Corollary [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]]), and it is second countable (Theorem [[§6 Open Quotients and Complex Projective Space#^thm-6-3|§6.3]]).
+> Everything in this section and the next is a special case of [[§10 Group Actions and Orbit Spaces|§10]]. The coset space $G/H$ is not merely *like* an orbit space: it *is* one, for a suitable action of $H$ on $G$ (Proposition [[§11 Homogeneous Spaces#^prop-11-4|§11.4]]), with the same underlying set and the same projection map — so the quotient topology of [[§12 The Topology of G∕H and Real Grassmannians#^def-12-1|Def. §12.1]] and the orbit-space topology of Definition [[§10 Group Actions and Orbit Spaces#^def-10-5|§10.5]] are equal by construction, not merely homeomorphic. Consequently every result of [[§10 Group Actions and Orbit Spaces|§10]] applies to $G/H$ with no further work, and three facts below are obtained that way: $\pi$ is an open map (Lemma [[§10 Group Actions and Orbit Spaces#^lem-10-3|§10.3]]), $G/H$ is Hausdorff under a compactness hypothesis (Corollary [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]]), and it is second countable (Theorem [[§6 Open Quotients and Complex Projective Space#^thm-6-3|§6.3]]).
 
 ^rem-11-3
 
@@ -195,7 +195,7 @@ tags: [differentiable-manifolds, math591]
 ^def-11-5
 
 > [!remark] Remark
-> A point of $G/H$ is a *subset* of $G$, and $\pi$ is the map that forgets which element of that subset one started from. The two roles of the symbol $gH$ — a subset of $G$, and a single point of $G/H$ — are the usual source of confusion with quotients ([[§3 Subspaces and Products|§3]]); the identity $\pi^{-1}(gH) = gH$ is that ambiguity made harmless, the left side reading $gH$ as a point and the right side as a set.
+> A point of $G/H$ is a *subset* of $G$, and $\pi$ is the map that forgets which element of that subset one started from. The two roles of the symbol $gH$ — a subset of $G$, and a single point of $G/H$ — are the usual source of confusion with quotients ([[§4 Quotient Spaces and Open Maps|§4]]); the identity $\pi^{-1}(gH) = gH$ is that ambiguity made harmless, the left side reading $gH$ as a point and the right side as a set.
 
 ^rem-11-4
 

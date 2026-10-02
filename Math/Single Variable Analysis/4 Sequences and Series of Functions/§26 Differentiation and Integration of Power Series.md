@@ -62,6 +62,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 > [!remark]- Connections
 > - In 551 term-by-term integration needs no uniform convergence: for non-negative terms it is [[§14 The Lebesgue Integral for Simple Functions#^thm-14-12|551 Thm. §14.12]] (MCT II), and for absolutely integrable series [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]].
+> - Fourier-series version: [[§10 Operations on Fourier Series#^thm-10-3|341 Thm. §10.3]] (a Fourier series may be integrated term by term even when it does not converge uniformly), with worked examples.
 
 > [!theorem] Theorem §26.4: Term-by-Term Calculus for Power Series
 > Let $f(x) = \sum_{n=0}^\infty a_n x^n$ have radius of convergence $R > 0$. Then:
@@ -109,6 +110,8 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > - The differentiation half has a 551 analogue for series of absolutely continuous functions: [[§18 Differentiation Theory#^cor-18-14|551 Cor. §18.14]].
 > - Computational version: [[§77 Representations of Functions as Power Series#^thm-77-1|Calc Thm. §77.1]] (with worked examples).
 > - Used in ODEs: each entry of $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ is a power series in $t$ with infinite radius, differentiated term by term to get $\Phi' = \mathbf{A}\Phi$: [[§33★ Fundamental Matrices#^def-33-3|331 Def. §33.3]], [[§33★ Fundamental Matrices#^thm-33-3|331 Thm. §33.3]].
+> - Fourier-series counterpart: [[§10 Operations on Fourier Series#^thm-10-6|341 Thm. §10.6]] and [[§10 Operations on Fourier Series#^thm-10-7|341 Thm. §10.7]] (differentiation multiplies the $n$th coefficient by $n$, so it needs a continuous periodic extension or fast-decaying coefficients).
+> - Used in PDEs: the Bessel series is differentiated term by term to show that $J_\mu$ solves Bessel's equation, [[§45★ Bessel's Equation#^thm-45-2|341 Thm. §45.2]], and to get the derivative formulas, [[§45★ Bessel's Equation#^thm-45-7|341 Thm. §45.7]].
 
 ## Harvesting Closed Formulas
 
@@ -240,6 +243,9 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > (Up to normalization this is the Gaussian error function of probability theory.) Power series thus genuinely *extend* the toolkit of named functions: what the elementary closed forms cannot express, a series can.
 
 ^ex-26-7
+
+> [!remark]- Connections
+> - Computational version: the same integral normalized as the error function, $\operatorname{erf}(x)=\frac{2}{\sqrt\pi}\int_0^xe^{-y^2}\,dy$, [[§28★ The Error Function#^def-28-1|341 Def. §28.1]], used for heat flow in a long rod.
 
 > [!example] Example §26.8: Sine and cosine from scratch (HW)
 > The trigonometric functions have run on credit since §17. Here is the first installment of repayment: *define*

@@ -62,6 +62,7 @@ Note the interval is *open*: it has no boundary points, so $x_0$ is automaticall
 
 > [!remark]- Connections
 > - Computational version: [[§26 The Mean Value Theorem#^thm-26-1|Calc Thm. §26.1]] (with worked examples).
+> - Used in PDEs: between consecutive zeros of $J_0$ lies a zero of $J_1=-J_0'$, [[§45★ Bessel's Equation#^cor-45-9|341 Cor. §45.9]].
 
 ## The Mean Value Theorem and Its Corollaries
 
