@@ -1,0 +1,32 @@
+% EM §C1.5: block structure of the electromagnetic energy-momentum tensor
+\begin{tikzpicture}[font=\small, scale=1.05]
+  \def\s{1.25}
+  % cells
+  \fill[figO!25] (0,0) rectangle (\s,-\s);
+  \fill[figB!15] (\s,0) rectangle (4*\s,-\s);
+  \fill[figB!15] (0,-\s) rectangle (\s,-4*\s);
+  \fill[figG!15] (\s,-\s) rectangle (4*\s,-4*\s);
+  \draw[step=\s, black!40, thin] (0,-4*\s) grid (4*\s,0);
+  \draw[thick] (0,0) rectangle (4*\s,-4*\s);
+  \draw[thick] (\s,0) -- (\s,-4*\s); \draw[thick] (0,-\s) -- (4*\s,-\s);
+  % entries
+  \node at (0.5*\s,-0.5*\s) {$u$};
+  \foreach \j/\c in {1/x,2/y,3/z} {
+    \node at ({(\j+0.5)*\s},-0.5*\s) {$S_\c/c$};
+    \node at (0.5*\s,{-(\j+0.5)*\s}) {$S_\c/c$};
+  }
+  \foreach \i/\a in {1/x,2/y,3/z} { \foreach \j/\b in {1/x,2/y,3/z} {
+    \node[font=\footnotesize] at ({(\j+0.5)*\s},{-(\i+0.5)*\s}) {$-\sigma_{\a\b}$};
+  } }
+  % index labels
+  \foreach \k in {0,1,2,3} {
+    \node[black!55, font=\footnotesize] at ({(\k+0.5)*\s},0.3) {$\nu=\k$};
+    \node[black!55, font=\footnotesize, anchor=east] at (-0.05,{-(\k+0.5)*\s}) {$\mu=\k$};
+  }
+  % annotations
+  \draw[decorate, decoration={brace, amplitude=5pt}, figO!80!black] (4*\s+0.15,-0.05) -- (4*\s+0.15,-\s+0.05);
+  \node[anchor=west, align=left, font=\footnotesize] at (4*\s+0.4,-0.5*\s) {row $\mu=0$: densities $T^{0\nu}$\\ (energy $u$, momentum $c\,\vec g$);\\ $P^\nu = \frac1c\int T^{0\nu}\,d^3x$};
+  \draw[decorate, decoration={brace, amplitude=5pt}, figG!70!black] (4*\s+0.15,-\s-0.05) -- (4*\s+0.15,-4*\s+0.05);
+  \node[anchor=west, align=left, font=\footnotesize] at (4*\s+0.4,-2.5*\s) {rows $\mu=i$: fluxes $T^{i\nu}$\\ energy flux $S_i/c$;\\ momentum flux $T^{ij}=-\sigma_{ij}$\\ (minus Maxwell stress)};
+  \node[align=center, font=\footnotesize] at (2*\s,-4*\s-0.55) {column $\nu$: one conserved current, $\partial_\mu T^{\mu\nu} = -f^\nu$;\quad symmetric: $\vec S/c = c\,\vec g$};
+\end{tikzpicture}
