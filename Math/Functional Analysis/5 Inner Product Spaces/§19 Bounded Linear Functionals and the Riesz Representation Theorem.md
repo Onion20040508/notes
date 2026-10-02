@@ -182,3 +182,47 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 > Lax proves the representation theorem through his Lemma 5: the null space of a nonzero functional has codimension one, and two functionals with the same null space are proportional. He takes $z \neq 0$ in $N^\perp$ and observes that $\ell$ and $x \mapsto (x, z)$ have the same null space, so $\ell$ is a multiple of $(\cdot, z)$. Wu's proof (Lemma [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-4|§19.4]] and the explicit decomposition $x = kx_0 + y$) is the same argument with the proportionality constant computed by hand.
 
 ^rem-19-5
+
+> [!theorem] Proposition §19.5: Minimizing a Quadratic Functional over a Closed Convex Set
+> Let $H$ be a [[§17 Cauchy–Schwarz and the Induced Norm#^def-17-1|Hilbert space]] over $\mathbb{R}$, $\ell \in H'$ ([[§22 Dual Spaces#^def-22-1|dual space]]), $K$ a nonempty [[§8 Normed Linear Spaces#^def-8-6|closed]] [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3|convex]] subset of $H$, and
+>
+> $$
+> f(v) = \frac12 \|v\|^2 - \ell(v) \qquad (v \in K).
+> $$
+>
+> - (a) There is $u^* \in H$ with $f(v) = \frac12 \|u^* - v\|^2 - \frac12 \|u^*\|^2$ for all $v \in K$.
+> - (b) There is a unique $u_0 \in K$ with $f(u_0) = \inf_{v \in K} f(v)$: the point of $K$ closest to $u^*$ ([[§18 Projection and Orthogonal Decomposition#^thm-18-2|Theorem §18.2]]).
+>
+> *Source: HW5, Problem 3*
+
+^prop-19-5
+
+> [!proof]+ Proof
+> (HW5, Problem 3.) **(a)** By the Riesz representation theorem (Theorem [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|§19.2]]) there is $u^* \in H$ with $\ell(v) = (v, u^*)$ for all $v \in H$. Since $H$ is real, $(u^*, v) = (v, u^*)$, and for every $v \in K$
+>
+> $$
+> \frac12 \|u^* - v\|^2 - \frac12 \|u^*\|^2 = \frac12 \bigl( \|u^*\|^2 - 2(v, u^*) + \|v\|^2 \bigr) - \frac12 \|u^*\|^2 = \frac12 \|v\|^2 - (v, u^*) = f(v).
+> $$
+>
+> **(b)** *Existence.* Let $d = \inf_{v \in K} \|u^* - v\|$. By Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]] there is a unique $u_0 \in K$ with $\|u^* - u_0\| = d$. For every $v \in K$, $\|u^* - v\| \ge d \ge 0$, so $\|u^* - v\|^2 \ge \|u^* - u_0\|^2$, and by (a)
+>
+> $$
+> f(v) = \frac12 \|u^* - v\|^2 - \frac12 \|u^*\|^2 \ge \frac12 \|u^* - u_0\|^2 - \frac12 \|u^*\|^2 = f(u_0).
+> $$
+>
+> Since $u_0 \in K$, $f(u_0) = \inf_{v \in K} f(v)$.
+>
+> *Uniqueness.* Let $u_1 \in K$ with $f(u_1) = f(u_0)$. By (a), $\|u^* - u_1\|^2 = \|u^* - u_0\|^2 = d^2$, so $\|u^* - u_1\| = d$: $u_1$ is also a point of $K$ closest to $u^*$, and $u_1 = u_0$ by the uniqueness in Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]].
+
+^pf-19-5
+
+*Uses:* [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|§19.2]], [[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]], [[§16 Definition and Examples#^def-16-1|Def. §16.1]], [[§17 Cauchy–Schwarz and the Induced Norm#^def-17-1|Def. §17.1]]
+
+> [!remark]- Connections
+> - Finite-dimensional counterpart, minimizing the distance to a subspace: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
+> - The pattern as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t17|Technique 17]].
+
+> [!remark] Remark
+> The proof is “complete the square”: adding and subtracting $\frac12\|u^*\|^2$ turns the minimization of $f$ into the minimization of a distance, which is the [[§18 Projection and Orthogonal Decomposition#^thm-18-2|projection theorem]]. For $K = H$ the minimizer is $u^*$ itself, so minimizing $\frac12\|v\|^2 - \ell(v)$ over $H$ produces the Riesz representer of $\ell$ — the variational form of the [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|Riesz representation theorem]], and the prototype of Dirichlet's principle. For a proper $K$ the minimizer is the projection of $u^*$ onto $K$, the starting point of variational inequalities (obstacle problems).
+
+^rem-19-6

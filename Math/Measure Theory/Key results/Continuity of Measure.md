@@ -22,6 +22,9 @@ tags: [measure-theory, hub]
 - [[§17 Invariance Properties and Fubini's Theorem#^thm-17-11|Theorem §17.11: The Subgraph Theorem]]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|Theorem §19.21: L^∞ is Not Separable]]
 
+## Used in (Functional Analysis)
+- [[§20 Orthonormal Sets and Bases#^prop-20-17|Proposition §20.17: L^∞(E) is Not Separable]]
+
 ## Connections
 - **Proof idea.** Write ⋃Eₙ as the disjoint union of the increments E₁, E₂ ∖ E₁, E₃ ∖ E₂, … . Countable additivity ([[Lebesgue Measurable Sets Form a σ-Algebra]]) turns m(⋃Eₙ) into a limit of partial sums, and [[§10 Lebesgue Measurable Sets#^lem-10-2|finite additivity]] identifies the N-th partial sum with m(E_N).
 - **From above.** [[§11 Borel Sets and Measure Spaces#^prop-11-13|Continuity from above]] (§11.13) follows by taking complements inside E₁, so it needs m(E₁) < ∞. Eₙ = [n, ∞) decreases to ∅ with every m(Eₙ) = ∞ ([[§11 Borel Sets and Measure Spaces#^rem-11-5|Rem. §11.5]]). This form drives [[Egorov's Theorem]].

@@ -31,7 +31,7 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ ([[§2 Linear
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Zorn's Lemma|Theorem §4.2: Zorn's Lemma]]: 10 later results
+- [[Zorn's Lemma|Theorem §4.2: Zorn's Lemma]]: 11 later results
 - [[Hahn–Banach Theorem|Theorem §3.2: Hahn–Banach]]: 7 later results
 - [[One-Step Extension Lemma|Lemma §4.1: One-Step Extension]]: 7 later results
 - [[§5 Convex Sets and the Gauge#^prop-5-3|Proposition §5.3: The Gauge is Finite]]: 6 later results

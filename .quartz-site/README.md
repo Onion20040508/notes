@@ -7,6 +7,7 @@ built from this vault by `.github/workflows/deploy-site.yml`.
 |---|---|
 | `quartz.config.yaml` | Quartz settings: site title, base URL, ignored folders, LaTeX macros (copied from `preamble.sty`) |
 | `custom.scss` | Callout colours and figure styling, matching `.obsidian/snippets/` |
+| `looks.js`, `postbuild.py` | Page-style switcher (palette button next to dark mode); `postbuild.py` adds it to every built page, the looks are in `custom.scss` |
 | `prepare.py` | Copies the vault into Quartz and rewrites figure embeds so Quartz can find them |
 
 If you add a macro to `preamble.sty`, add the same macro under `customMacros` in `quartz.config.yaml`.

@@ -27,7 +27,7 @@ tags: [measure-theory, hub]
 ## Used in (Functional Analysis)
 - [[§14 The Function Spaces Lᵖ(Ω)#^rem-14-2|Remark: What “Integrable” Means Here]]
 - [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-2|Theorem §14.2: Minkowski's Inequality for Functions]]
-- [[§20 Orthonormal Sets and Bases#^prop-20-15|Proposition §20.15: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
+- [[§20 Orthonormal Sets and Bases#^prop-20-16|Proposition §20.16: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
 
 ## Connections
 - **Proof idea.** For 1 < p < ∞, write |f + g|ᵖ ≤ |f|·|f + g|^(p−1) + |g|·|f + g|^(p−1). Apply [[Hölder's Inequality]] with exponents p and p′ = p/(p − 1) to each term, then divide by the Lᵖ norm of f + g raised to the power p − 1. p = 1 is [[§15 The General Lebesgue Integral#^prop-15-3|Proposition §15.3]], and p = ∞ is pointwise.

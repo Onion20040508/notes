@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 23.1", "B(x,y) = (x, Ay)"]
+aliases: ["MATH 556 23.1", "B(x,y) = (x, Ay)", "Lax cf.\ Ch. 31, Thm 1"]
 tags: [functional-analysis, hub]
 ---
 ![[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-23-1]]

@@ -18,6 +18,9 @@ tags: [measure-theory, hub]
 ## Used in (Measure Theory)
 - (not cited later in the course)
 
+## Used in (Functional Analysis)
+- [[§20 Orthonormal Sets and Bases#^prop-20-15|Proposition §20.15: ℓ^∞ is Not Separable]]
+
 ## Connections
 - **Proof idea.** The diagonal set A = {x : x ∉ f(x)} differs from every f(y), so no map X → 𝒫(X) is onto. It is the same diagonal trick that shows the [[§4 Uncountability#^ex-4-1|binary sequences are uncountable]] (Ex. §4.1).
 - **Size of ℝ.** For X = ℕ, subsets of ℕ correspond to binary sequences via indicator functions, so 𝒫(ℕ) is uncountable. Binary expansion then gives [[§4 Uncountability#^ex-4-2|Ex. §4.2]]: [0, 1] is uncountable. MATH 451 uses this for the [[§2 The Set ℚ of Rational Numbers#^thm-2-7|existence of transcendental numbers]] (451 §2.7).

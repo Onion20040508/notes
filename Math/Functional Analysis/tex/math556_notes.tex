@@ -4188,6 +4188,39 @@ Wu on method: ``when we try to prove a big theorem, very often the simple exampl
 Lax proves the representation theorem through his Lemma~5: the null space of a nonzero functional has codimension one, and two functionals with the same null space are proportional. He takes $z \neq 0$ in $N^\perp$ and observes that $\ell$ and $x \mapsto (x, z)$ have the same null space, so $\ell$ is a multiple of $(\cdot, z)$. Wu's proof (Lemma~\ref{lem:ker-codim1} and the explicit decomposition $x = kx_0 + y$) is the same argument with the proportionality constant computed by hand.
 \end{rembox}
 
+%% >>> ADDED: result (from HW5, Problem 3)
+\begin{propbox}[Minimizing a Quadratic Functional over a Closed Convex Set]\boxlabel{prop:quad-min}
+Let $H$ be a Hilbert space over $\mathbb{R}$, $\ell \in H'$, $K$ a nonempty closed convex subset of $H$, and
+\[
+f(v) = \frac12 \|v\|^2 - \ell(v) \qquad (v \in K).
+\]
+\begin{enumerate}[label=(\alph*)]
+    \item There is $u^* \in H$ with $f(v) = \frac12 \|u^* - v\|^2 - \frac12 \|u^*\|^2$ for all $v \in K$.
+    \item There is a unique $u_0 \in K$ with $f(u_0) = \inf_{v \in K} f(v)$: the point of $K$ closest to $u^*$.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+(HW5, Problem 3.) \textbf{(a)} By the Riesz representation theorem (Theorem~\ref{thm:riesz-rep}) there is $u^* \in H$ with $\ell(v) = (v, u^*)$ for all $v \in H$. Since $H$ is real, $(u^*, v) = (v, u^*)$, and for every $v \in K$
+\[
+\frac12 \|u^* - v\|^2 - \frac12 \|u^*\|^2 = \frac12 \bigl( \|u^*\|^2 - 2(v, u^*) + \|v\|^2 \bigr) - \frac12 \|u^*\|^2 = \frac12 \|v\|^2 - (v, u^*) = f(v).
+\]
+
+\textbf{(b)} \emph{Existence.} Let $d = \inf_{v \in K} \|u^* - v\|$. By Theorem~\ref{thm:projection} there is a unique $u_0 \in K$ with $\|u^* - u_0\| = d$. For every $v \in K$, $\|u^* - v\| \ge d \ge 0$, so $\|u^* - v\|^2 \ge \|u^* - u_0\|^2$, and by (a)
+\[
+f(v) = \frac12 \|u^* - v\|^2 - \frac12 \|u^*\|^2 \ge \frac12 \|u^* - u_0\|^2 - \frac12 \|u^*\|^2 = f(u_0).
+\]
+Since $u_0 \in K$, $f(u_0) = \inf_{v \in K} f(v)$.
+
+\emph{Uniqueness.} Let $u_1 \in K$ with $f(u_1) = f(u_0)$. By (a), $\|u^* - u_1\|^2 = \|u^* - u_0\|^2 = d^2$, so $\|u^* - u_1\| = d$: $u_1$ is also a point of $K$ closest to $u^*$, and $u_1 = u_0$ by the uniqueness in Theorem~\ref{thm:projection}.
+\end{proof}
+
+\begin{rembox}\label{rem:riesz-rep-3}
+The proof is ``complete the square'': adding and subtracting $\frac12\|u^*\|^2$ turns the minimization of $f$ into the minimization of a distance, which is the projection theorem. For $K = H$ the minimizer is $u^*$ itself, so minimizing $\frac12\|v\|^2 - \ell(v)$ over $H$ produces the Riesz representer of $\ell$ --- the variational form of the Riesz representation theorem, and the prototype of Dirichlet's principle. For a proper $K$ the minimizer is the projection of $u^*$ onto $K$, the starting point of variational inequalities (obstacle problems).
+\end{rembox}
+%% <<< END ADDED
+
+
 % ============================================================================
 % SECTION 20: ORTHONORMAL SETS AND BASES
 % ============================================================================
@@ -4562,13 +4595,58 @@ so $\|a - d\|_p < \varepsilon$.
 \end{center}
 The two moves of the proof: cut off the tail, which is small because the series converges, and replace the finitely many remaining coordinates by nearby rationals. Both need $p < \infty$: the tail of a convergent series is small, but a bounded sequence need not have a small tail in the supremum norm.
 
+%% >>> ADDED: result (from HW5, Problem 1(a))
+\begin{propbox}[{{$c_0$ is a Separable Banach Space}}]\boxlabel{prop:c0}
+Let $c_0 = \ell^\infty_0 = \{ a = \{a_n\}_{n \in \mathbb{N}} : a_n \in \mathbb{F},\ \lim_{n \to \infty} a_n = 0 \}$ with $|a| = \max_n |a_n|$. Then $(c_0, |\cdot|)$ is a Banach space, and it is separable.
+\end{propbox}
+
+\begin{proof}
+(HW5, Problem 1(a).) \textbf{Step 1: the maximum exists.} Let $a \in c_0$. If $a_n = 0$ for all $n$, then $\max_n |a_n| = 0$. Otherwise choose $m$ with $\delta = |a_m| > 0$. Since $a_n \to 0$, there is $N$ with $|a_n| < \delta$ for all $n > N$. The finite set $\{|a_1|, \ldots, |a_N|\}$ contains $|a_m| = \delta$ (as $m \le N$), so it has a maximum $M \ge \delta$, and $|a_n| < \delta \le M$ for $n > N$. Hence $\max_n |a_n| = M$ exists, and $|a_n| \le |a|$ for every $n$.
+
+\textbf{Step 2: $c_0$ is a linear space.} The set of all sequences in $\mathbb{F}$ with termwise operations is a linear space: each axiom, evaluated at an index $n$, is the corresponding axiom of $\mathbb{F}$. $c_0$ is a linear subspace of it: the zero sequence tends to $0$, and if $a_n \to 0$, $b_n \to 0$ and $\alpha, \beta \in \mathbb{F}$, then $|\alpha a_n + \beta b_n| \le |\alpha|\,|a_n| + |\beta|\,|b_n| \to 0$.
+
+\textbf{Step 3: $|\cdot|$ is a norm.} \emph{Positivity:} $|a| \ge 0$, and if $|a| = 0$ then $0 \le |a_n| \le |a| = 0$ for all $n$, so $a = 0$. \emph{Homogeneity:} for $\alpha \in \mathbb{F}$, $|\alpha a_n| = |\alpha|\,|a_n| \le |\alpha|\,|a|$ for all $n$, with equality at an index where $|a_n| = |a|$; so $|\alpha a| = |\alpha|\,|a|$. \emph{Triangle inequality:} for every $n$, $|a_n + b_n| \le |a_n| + |b_n| \le |a| + |b|$; taking the maximum over $n$, $|a + b| \le |a| + |b|$.
+
+\textbf{Step 4: completeness.} Let $\{a^{(k)}\}_{k \ge 1}$ be a Cauchy sequence in $c_0$, $a^{(k)} = \{a^{(k)}_n\}_n$. For each $n$ and all $k, m$, $|a^{(k)}_n - a^{(m)}_n| \le |a^{(k)} - a^{(m)}|$, so $\{a^{(k)}_n\}_k$ is a Cauchy sequence in $\mathbb{F}$; since $\mathbb{F}$ is complete it converges, and we put $a_n = \lim_{k \to \infty} a^{(k)}_n$ and $a = \{a_n\}$.
+
+\emph{A uniform estimate.} Let $\varepsilon > 0$ and choose $N$ with $|a^{(k)} - a^{(m)}| < \varepsilon$ for all $k, m \ge N$. Then $|a^{(k)}_n - a^{(m)}_n| < \varepsilon$ for all $n$ and all $k, m \ge N$. Fix $n$ and $k \ge N$ and let $m \to \infty$; since $a^{(m)}_n \to a_n$ and non-strict inequalities survive limits,
+\begin{equation}\label{eq:c0-unif}
+|a^{(k)}_n - a_n| \le \varepsilon \qquad \text{for all } n \text{ and all } k \ge N.
+\end{equation}
+
+\emph{$a \in c_0$.} With $\varepsilon$ and $N$ as above, $a^{(N)} \in c_0$, so there is $n_0$ with $|a^{(N)}_n| < \varepsilon$ for $n > n_0$. By \eqref{eq:c0-unif}, for $n > n_0$,
+\[
+|a_n| \le |a_n - a^{(N)}_n| + |a^{(N)}_n| < \varepsilon + \varepsilon = 2\varepsilon .
+\]
+As $\varepsilon > 0$ was arbitrary, $a_n \to 0$, i.e.\ $a \in c_0$.
+
+\emph{Convergence.} For $k \ge N$, $a^{(k)} - a \in c_0$ by Step 2, and by \eqref{eq:c0-unif} every term of it has modulus at most $\varepsilon$; so $|a^{(k)} - a| \le \varepsilon$. Hence $a^{(k)} \to a$ in $c_0$, and $(c_0, |\cdot|)$ is a Banach space.
+
+\textbf{Step 5: $c_0$ is separable.} Let
+\[
+D = \bigcup_{J=1}^\infty \bigl\{ (q_1, \ldots, q_J, 0, 0, \ldots) : q_j \in \mathbb{Q}_{\mathbb{F}} \bigr\}.
+\]
+Each element of $D$ is eventually $0$, so $D \subset c_0$. For fixed $J$ the $J$-th set is in bijection with $\mathbb{Q}_{\mathbb{F}}^J$, which is countable, and a countable union of countable sets is countable; so $D$ is countable.
+
+Let $a \in c_0$ and $\varepsilon > 0$. Choose $J$ with $|a_n| < \varepsilon$ for all $n > J$, and, since $\mathbb{Q}_{\mathbb{F}}$ is dense in $\mathbb{F}$, choose $q_j \in \mathbb{Q}_{\mathbb{F}}$ with $|a_j - q_j| < \varepsilon$ for $j = 1, \ldots, J$. For $d = (q_1, \ldots, q_J, 0, \ldots) \in D$, every term of $a - d$ has modulus $< \varepsilon$: $|a_j - q_j| < \varepsilon$ for $j \le J$ and $|a_n - 0| < \varepsilon$ for $n > J$. Since the maximum in Step 1 is attained at some index, $|a - d| < \varepsilon$. Hence $D$ is dense, and $c_0$ is separable.
+\end{proof}
+
+\begin{rembox}\label{rem:onb-10}
+$c_0$ sits inside $\ell^\infty$ with the same norm (on $c_0$ the supremum is a maximum), and it is closed there: Step 4 is exactly the statement that a uniform limit of sequences tending to $0$ tends to $0$. The truncation argument of Technique~15 works for $c_0$ because the tail of an element of $c_0$ is small in the supremum norm --- which is precisely what fails for a general bounded sequence.
+\end{rembox}
+%% <<< END ADDED
+
+
 \begin{propbox}[{{$\ell^\infty$ is Not Separable}}]\boxlabel{prop:linfty-nonsep}
 $\ell^\infty$ is not separable.
 \end{propbox}
 
 \begin{proof}
-Homework (HW5); to be added after submission.
+%% >>> ADDED: proof not covered in lecture (the argument of HW5, Problem 1(b), transplanted to sequences)
+(Not covered in lecture; the argument of HW5, Problem 1(b).) For a subset $S \subset \mathbb{N}$ let $\chi_S \in \ell^\infty$ be the sequence with $n$-th term $1$ if $n \in S$ and $0$ otherwise. If $S \neq T$, some $n$ lies in exactly one of them, so $|(\chi_S)_n - (\chi_T)_n| = 1$, while every term of $\chi_S - \chi_T$ has modulus at most $1$; hence $\|\chi_S - \chi_T\|_\infty = 1$. The set of subsets of $\mathbb{N}$ is uncountable (Cantor). If $D$ were a countable dense subset of $\ell^\infty$, choose for each $S$ some $d_S \in D$ with $\|\chi_S - d_S\|_\infty < \frac12$. For $S \neq T$, $d_S = d_T$ would give $1 = \|\chi_S - \chi_T\|_\infty < \frac12 + \frac12$, which is impossible; so $S \mapsto d_S$ would map an uncountable set one-to-one into the countable set $D$. Hence $\ell^\infty$ is not separable.
+%% <<< END ADDED
 \end{proof}
+
 
 \begin{propbox}[{{$L^p(E)$ is Separable for $1 \le p < \infty$}}]\boxlabel{prop:Lp-separable}
 Let $E \subset \mathbb{R}^n$ be measurable and $1 \le p < \infty$. Let $D$ be the set of functions on $E$ of the form
@@ -4626,8 +4704,46 @@ If $E \subset \mathbb{R}^n$ is measurable with $m(E) > 0$, then $L^\infty(E)$ is
 \end{propbox}
 
 \begin{proof}
-Stated in lecture without proof; the argument is close to the homework on $\ell^\infty$ (Proposition~\ref{prop:linfty-nonsep}) and will be added after that is submitted.
+(Stated in lecture without proof. HW5, Problem 1(b) is the case $E = [0,1]$; the general case below is Claude's.) Here $\|f\|_\infty = \inf\{M \ge 0 : |f| \le M \text{ a.e.}\}$, functions equal almost everywhere being identified.
+
+\textbf{Step 1: the case $E = [0,1]$ (HW5).} For $t \in (0,1]$ let $f_t = \chi_{[0,t]}$. Let $0 < s < t \le 1$. Then $|f_t - f_s| = \chi_{(s,t]}$, which is at most $1$ everywhere, so $\|f_t - f_s\|_\infty \le 1$. It equals $1$ on $(s,t]$, a set of measure $t - s > 0$; so for any $M < 1$ the inequality $|f_t - f_s| \le M$ fails on a set of positive measure, and $\|f_t - f_s\|_\infty \ge 1$. Hence $\|f_t - f_s\|_\infty = 1$ for $s \neq t$.
+
+Suppose $D$ is dense. For each $t \in (0,1]$ choose $d_t \in D$ with $\|f_t - d_t\|_\infty < \frac12$. If $s \neq t$ and $d_s = d_t$, then
+\[
+1 = \|f_s - f_t\|_\infty \le \|f_s - d_s\|_\infty + \|d_t - f_t\|_\infty < \tfrac12 + \tfrac12 = 1,
+\]
+a contradiction. So $t \mapsto d_t$ is one-to-one from the uncountable set $(0,1]$ into $D$, and $D$ is uncountable.
+
+%% >>> ADDED: general measurable E (Claude; not part of the homework)
+\textbf{Step 2: general $E$ with $m(E) > 0$.} (Not part of the homework.) Let $Q_t = [-t,t]^n$ and $\varphi(t) = m(E \cap Q_t)$ for $t \ge 0$. $\varphi$ is non-decreasing and finite. It is continuous: if $t_k \uparrow t$, then $\bigcup_k Q_{t_k} = (-t,t)^n$, which differs from $Q_t$ by a null set, so $\varphi(t_k) \to \varphi(t)$ by continuity of measure from below; if $t_k \downarrow t$, then $\bigcap_k Q_{t_k} = Q_t$ and the measures are finite, so $\varphi(t_k) \to \varphi(t)$ from above. Also $\varphi(0) = 0$ and $\varphi(t) \to m(E) > 0$ as $t \to \infty$. Let $\gamma = m(E)$ if $m(E) < \infty$ and $\gamma = 1$ otherwise. By the intermediate value theorem, for each $c \in (0, \gamma)$ there is $t_c$ with $\varphi(t_c) = c$; let $f_c = \chi_{E \cap Q_{t_c}}$. For $c < c'$, $\varphi(t_c) < \varphi(t_{c'})$ forces $t_c < t_{c'}$, so $f_{c'} - f_c = \chi_{E \cap (Q_{t_{c'}} \setminus Q_{t_c})}$, the indicator of a set of measure $c' - c > 0$. As in Step 1, $\|f_{c'} - f_c\|_\infty = 1$, and the argument of Step 1, with the uncountable index set $(0, \gamma)$, shows that no countable set is dense in $L^\infty(E)$.
+%% <<< END ADDED
+
+With the working definition of $L^\infty$ in Definition~\ref{def:Lp} (bounded functions with the supremum norm) the same families work verbatim, since then $\|\chi_A\| = 1$ for every nonempty $A$.
 \end{proof}
+
+
+%% >>> ADDED: figure (not drawn in lecture)
+\begin{center}
+\begin{tikzpicture}[x=8cm, y=1.8cm, >=stealth]
+    \draw[->] (-0.03,0) -- (1.1,0) node[right] {$x$};
+    \draw[->] (0,-0.05) -- (0,1.35);
+    \node[left] at (0,1) {$1$};
+    \fill[red!15] (0.45,0) rectangle (0.7,1);
+    \draw[thick, blue!70!black] (0,1.03) -- (0.45,1.03);
+    \draw[thick, blue!70!black] (0.45,0.02) -- (1,0.02);
+    \draw[thick] (0,0.97) -- (0.7,0.97);
+    \draw[thick] (0.7,0) -- (1,0);
+    \draw[dotted] (0.45,0) -- (0.45,1); \draw[dotted] (0.7,0) -- (0.7,1);
+    \node[below] at (0.45,0) {$s$}; \node[below] at (0.7,0) {$t$}; \node[below] at (1,0) {$1$};
+    \node[blue!70!black, anchor=south] at (0.2,1.05) {$f_s = \chi_{[0,s]}$};
+    \node[anchor=south] at (0.62,1.1) {$f_t = \chi_{[0,t]}$};
+    \draw[->, red!75!black] (0.86,0.55) -- (0.6,0.5);
+    \node[red!75!black, anchor=west] at (0.86,0.55) {$|f_t - f_s| = 1$ on $(s,t]$};
+\end{tikzpicture}
+\end{center}
+Any two of the functions $f_t = \chi_{[0,t]}$ differ by $1$ on an interval of positive length, so they are at $L^\infty$-distance $1$: uncountably many points, pairwise $1$ apart. Balls of radius $\frac12$ about them are disjoint, and a dense set would need a point in each. In $L^p$, $p < \infty$, the same two functions are at distance $(t-s)^{1/p}$, which is small when $t$ is close to $s$.
+%% <<< END ADDED
+
 
 \begin{rembox}\label{rem:onb-7}
 The hypothesis $m(E) > 0$ is added here: if $m(E) = 0$, then $L^\infty(E) = \{0\}$, which is separable. Wu stressed that measure theory supplies the examples of functional analysis (``I would suggest you really study real methods \ldots\ measure theory is becoming very useful now''): without $L^p$ the course has few examples beyond sequence spaces.
@@ -4733,8 +4849,31 @@ Every separable Hilbert space $H$ over $\mathbb{F}$ is isomorphic either to $\ma
 \end{thmbox}
 
 \begin{proof}
-Homework (HW5); to be added after submission.
+(HW5, Problem 2, for infinite-dimensional $H$; the finite-dimensional case is Claude's.) By Theorem~\ref{thm:sep-countable-onb}, $H$ has a countable orthonormal basis.
+
+\textbf{Step 1: the size of the basis.} If the basis is finite, $\{e_1, \ldots, e_n\}$ ($n = 0$ meaning the empty set, $H = \{0\}$), every $x = \sum_{j=1}^n (x, e_j)\, e_j$ lies in $\operatorname{span}\{e_1, \ldots, e_n\}$. If $H$ is infinite-dimensional, the basis is therefore infinite, and we index it as $\{e_j\}_{j \in \mathbb{N}}$. Let $\mathcal{M}$ denote $\mathbb{F}^n$ in the finite case and $\ell^2$ in the infinite case, with $(a, b) = \sum_j a_j \overline{b_j}$.
+
+\textbf{Step 2: the map.} Define $T : H \to \mathcal{M}$ by $Tx = \bigl( (x, e_j) \bigr)_j$. By Parseval (Theorem~\ref{thm:onbasis-equiv}), $\sum_j |(x, e_j)|^2 = \|x\|^2 < \infty$, so $Tx \in \mathcal{M}$ and $\|Tx\| = \|x\|$. $T$ is linear because each $x \mapsto (x, e_j)$ is linear.
+
+\textbf{Step 3: $T$ preserves the inner product.} Let $x, y \in H$ and $s_N = \sum_{j \le N} (x, e_j)\, e_j$. Then $s_N \to x$, so by continuity of the inner product (Lemma~\ref{lem:ip-continuous})
+\[
+(x, y) = \lim_{N \to \infty} (s_N, y) = \lim_{N \to \infty} \sum_{j \le N} (x, e_j)\,(e_j, y) = \sum_{j} (x, e_j)\, \overline{(y, e_j)} = (Tx, Ty),
+\]
+the last series converging absolutely by Cauchy--Schwarz in $\ell^2$, since $Tx, Ty \in \ell^2$. (In the finite case all sums are finite.)
+
+\textbf{Step 4: $T$ is one-to-one.} If $Tx = 0$, then $\|x\| = \|Tx\| = 0$, so $x = 0$.
+
+\textbf{Step 5: $T$ is onto.} Let $b \in \mathcal{M}$ and $t_N = \sum_{j \le N} b_j e_j$. For $M < N$, by Pythagoras (Lemma~\ref{lem:pythagoras}), $\|t_N - t_M\|^2 = \sum_{j = M+1}^N |b_j|^2 \to 0$ as $M, N \to \infty$, so $\{t_N\}$ is Cauchy and, $H$ being complete, converges to some $x \in H$ (in the finite case simply $x = \sum_{j=1}^n b_j e_j$). For each $k$ and $N \ge k$, $(t_N, e_k) = b_k$; by continuity of the inner product, $(x, e_k) = b_k$. Hence $Tx = b$.
+
+So $T$ is linear, one-to-one, onto, and preserves the inner product: $H$ is isomorphic to $\mathbb{F}^n$ or to $\ell^2$.
 \end{proof}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}\label{rem:onb-11}
+The isomorphism is ``take coordinates'': $x \mapsto ((x, e_j))_j$. Every result about a separable Hilbert space can therefore be checked on $\ell^2$, and the earlier remark that $L^2[0, 2\pi]$ with the Fourier basis is ``the same'' as $\ell^2(\mathbb{Z})$ is the special case $e_n = e^{inx}/\sqrt{2\pi}$. The isomorphism depends on the choice of basis, as in finite dimensions.
+\end{rembox}
+%% <<< END ADDED
+
 
 \begin{rembox}\label{rem:onb-9}
 On the board: ``isomorphic either to $\mathbb{R}^n$, $n \in \mathbb{N}$, or $\ell^2$'' --- the real case. Over $\mathbb{C}$ the finite-dimensional models are $\mathbb{C}^n$, and $n = 0$ covers $H = \{0\}$. By Theorem~\ref{thm:sep-countable-onb} a separable $H$ has a countable orthonormal basis; the finite case gives $\mathbb{F}^n$ and the infinite case $\ell^2$.
@@ -5088,6 +5227,60 @@ Next lecture.
 On the board: $(L^p)' = L^{p'}$ with no range for $p$. The range $1 \le p < \infty$ is added here: for $p = \infty$ the statement fails (the dual of $L^\infty$ is larger than $L^1$), which was not covered.
 \end{rembox}
 %% <<< END ADDED
+
+%% >>> ADDED: subsection from HW5 (Problems 4 and 5)
+\subsection{Null Spaces of Linear Functionals}
+
+Lemmas~\ref{lem:kernel-closed} and~\ref{lem:ker-codim1} described the null space of a bounded functional on a Hilbert space. Both facts hold in any normed space, and the first has a converse.
+
+\begin{propbox}[The Null Space Has Codimension One]\boxlabel{prop:ker-codim1-general}
+Let $X$ be a linear space over $\mathbb{F}$ and $\ell : X \to \mathbb{F}$ a nonzero linear functional, $N_\ell = \{x \in X : \ell(x) = 0\}$. Then $\dim X/N_\ell = 1$. More precisely, for any $x_0$ with $\ell(x_0) \neq 0$, $X = N_\ell \oplus \operatorname{span}\{x_0\}$, with $x = \bigl( x - \frac{\ell(x)}{\ell(x_0)}\, x_0 \bigr) + \frac{\ell(x)}{\ell(x_0)}\, x_0$.
+\laxref{\S6.3, Lemma~5(i)}
+\end{propbox}
+
+\begin{proof}
+(HW5, Problem 4.) Write $N = N_\ell$.
+
+\textbf{Step 1: a vector outside $N$.} Since $\ell$ is nontrivial, there is $x_0 \in X$ with $\ell(x_0) \neq 0$. In particular $x_0 \notin N$, so $[x_0] \neq [0]$ in $X/N$.
+
+\textbf{Step 2: every class is a multiple of $[x_0]$.} Let $x \in X$ and $k = \ell(x)/\ell(x_0) \in \mathbb{F}$. By linearity, $\ell(x - k x_0) = \ell(x) - \frac{\ell(x)}{\ell(x_0)}\, \ell(x_0) = 0$, so $y := x - k x_0 \in N$. Hence $[x] = [k x_0] = k [x_0]$.
+
+\textbf{Step 3: conclusion.} By Step 2, $X/N = \operatorname{span}\{[x_0]\}$, and by Step 1, $[x_0] \neq [0]$, so $\{[x_0]\}$ is a basis of $X/N$ and $\dim X/N = 1$. Equivalently, $X = N \oplus \operatorname{span}\{x_0\}$: by Step 2 every $x$ is $x = y + k x_0$ with $y \in N$; and $N \cap \operatorname{span}\{x_0\} = \{0\}$, since $\ell(c x_0) = c\,\ell(x_0) = 0$ forces $c = 0$.
+\end{proof}
+
+\begin{propbox}[Bounded if and only if the Null Space is Closed]\boxlabel{prop:bounded-iff-closed}
+Let $X$ be a normed linear space over $\mathbb{F}$ and $\ell : X \to \mathbb{F}$ a linear functional. Then $\ell \in X'$ if and only if $N_\ell$ is closed.
+\laxref{\S6.3, Lemma~5(iii)}
+\end{propbox}
+
+\begin{proof}
+(HW5, Problem 5.) \textbf{($\Rightarrow$)} Let $\ell \in X'$, and let $x_n \in N_\ell$ with $x_n \to x$ in $X$. Since $\ell$ is bounded, it is continuous (Proposition~\ref{prop:bounded-continuous}), so $\ell(x) = \lim_n \ell(x_n) = 0$, i.e.\ $x \in N_\ell$.
+
+\textbf{($\Leftarrow$)} Assume $N_\ell$ is closed. If $\ell = 0$, then $\ell \in X'$. So assume $\ell \neq 0$, and choose $x_0$ with $\ell(x_0) \neq 0$; replacing $x_0$ by $x_0/\ell(x_0)$, we may assume $\ell(x_0) = 1$. Suppose, for contradiction, that $\ell$ is not bounded. Then for each $n \in \mathbb{N}$ there is $x_n \in X$ with $|\ell(x_n)| > n\,\|x_n\|$; in particular $\ell(x_n) \neq 0$. Let
+\[
+y_n = x_0 - \frac{x_n}{\ell(x_n)} .
+\]
+Then $\ell(y_n) = 1 - 1 = 0$, so $y_n \in N_\ell$, and $\|y_n - x_0\| = \|x_n\|/|\ell(x_n)| < 1/n \to 0$. So $y_n \to x_0$ with every $y_n \in N_\ell$; since $N_\ell$ is closed, $x_0 \in N_\ell$, contradicting $\ell(x_0) = 1$. Hence $\ell$ is bounded.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=2.2, >=stealth]
+    \draw[thick] (-0.8,0) -- (3.2,0) node[right] {$N_\ell$};
+    \fill (1.2,1) circle (1.4pt) node[above right] {$x_0$, $\ell(x_0) = 1$};
+    \foreach \n/\x in {1/2.7,2/2.0,3/1.65,4/1.45,5/1.34} {\fill[blue!70!black] (\x,0) circle (1.2pt);}
+    \node[blue!70!black, below] at (2.7,0) {$y_1$}; \node[blue!70!black, below] at (2.0,0) {$y_2$}; \node[blue!70!black, below] at (1.55,0) {$\cdots$};
+    \draw[->, dashed, red!75!black] (2.7,0) -- (1.25,0.97);
+    \draw[->, dashed, red!75!black] (2.0,0) -- (1.23,0.96);
+    \node[red!75!black, right] at (2.1,0.6) {$\|y_n - x_0\| < \frac1n$};
+\end{tikzpicture}
+\end{center}
+The picture behind ($\Leftarrow$): if $\ell$ were unbounded, points $y_n$ of the null space would approach a point $x_0$ off it, so the null space could not be closed. (The picture is schematic: in finite dimensions every functional is bounded, and an unbounded $\ell$ has a \emph{dense} null space.)
+
+\begin{rembox}\label{rem:dual-3}
+Proposition~\ref{prop:ker-codim1-general} is pure algebra; Proposition~\ref{prop:bounded-iff-closed} is where the norm enters. Together they say that the null space of a nonzero functional is a ``hyperplane through $0$'' that is either closed (bounded $\ell$) or not (unbounded $\ell$). Both proofs use the same move: subtract from $x$ the multiple of $x_0$ that lands it in the null space.
+\end{rembox}
+%% <<< END ADDED
+
 
 % ============================================================================
 % SECTION: SESQUILINEAR FORMS AND LAX-MILGRAM (Lecture 10)
@@ -5781,6 +5974,50 @@ To show a space is separable, write down a countable set built from finitely man
 \item A Hilbert space with a countable orthonormal basis (Theorem~\ref{thm:sep-countable-onb}, $\Rightarrow$).
 \end{itemize}
 \end{exbox}
+
+
+% --------------------------------------------------------------------------
+\subsection{Technique 16: Non-Separability from an Uncountable Separated Family}
+
+\begin{rembox}[Strategy]\label{rem:tech16}
+To show a space is not separable, find uncountably many elements at mutual distance at least $\delta > 0$. The balls of radius $\delta/2$ about them are disjoint, a dense set must meet each of them, and choosing one point of the dense set in each ball gives a one-to-one map from an uncountable set into the dense set. Indicator functions (or indicator sequences) are the usual source: in a supremum norm two different indicators are at distance $1$.
+\end{rembox}
+
+\begin{exbox}[Applications (HW5)]\boxlabel{ex:tech16}
+\begin{itemize}
+\item $L^\infty([0,1])$ (P1(b), Proposition~\ref{prop:Linfty-nonsep}): $\chi_{[0,t]}$, $t \in (0,1]$.
+\item $\ell^\infty$ (Proposition~\ref{prop:linfty-nonsep}): $\chi_S$, $S \subset \mathbb{N}$.
+\end{itemize}
+\end{exbox}
+
+% --------------------------------------------------------------------------
+\subsection{Technique 17: Complete the Square to Reach a Distance}
+
+\begin{rembox}[Strategy]\label{rem:tech17}
+A quadratic functional $\frac12\|v\|^2 - \ell(v)$ on a Hilbert space becomes, after writing $\ell = (\cdot, u^*)$ by Riesz and adding and subtracting $\frac12\|u^*\|^2$, the function $\frac12\|u^* - v\|^2 - \frac12\|u^*\|^2$. Minimizing it is minimizing a distance, and the projection theorem gives existence and uniqueness of the minimizer.
+\end{rembox}
+
+\begin{exbox}[Applications (HW5)]\boxlabel{ex:tech17}
+\begin{itemize}
+\item Quadratic minimization over a closed convex set (P3, Proposition~\ref{prop:quad-min}).
+\end{itemize}
+\end{exbox}
+
+% --------------------------------------------------------------------------
+\subsection{Technique 18: Subtract a Multiple of $x_0$ to Land in the Null Space}
+
+\begin{rembox}[Strategy]\label{rem:tech18}
+For a linear functional $\ell$ and a fixed $x_0$ with $\ell(x_0) \neq 0$, the vector $x - \frac{\ell(x)}{\ell(x_0)} x_0$ lies in the null space of $\ell$ for every $x$. This one formula splits $X$ as null space plus a line, and, applied to a sequence, produces points of the null space near a given point off it.
+\end{rembox}
+
+\begin{exbox}[Applications (HW5)]\boxlabel{ex:tech18}
+\begin{itemize}
+\item Codimension one (P4, Proposition~\ref{prop:ker-codim1-general}).
+\item Closed null space implies bounded (P5, Proposition~\ref{prop:bounded-iff-closed}): $y_n = x_0 - x_n/\ell(x_n)$.
+\item The Riesz representation theorem, part (2) (Lemma~\ref{lem:ker-codim1}(c)).
+\end{itemize}
+\end{exbox}
+
 
 % ============================================================================
 % CONCORDANCE WITH LAX

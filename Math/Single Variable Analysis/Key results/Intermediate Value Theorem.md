@@ -33,6 +33,7 @@ tags: [real-analysis, hub]
 - [[§18 Differentiation Theory#^lem-18-18|Lemma §18.18: Image Measure Bounded by Total Variation]]
 
 ## Used in (Functional Analysis)
+- [[§20 Orthonormal Sets and Bases#^prop-20-17|Proposition §20.17: L^∞(E) is Not Separable]]
 - [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-23-3|Lemma §23.3: A Symmetric Coercive Form Has a Sign]]
 
 ## Connections

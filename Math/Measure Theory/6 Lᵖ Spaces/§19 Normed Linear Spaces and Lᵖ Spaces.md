@@ -747,7 +747,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 *Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Countable Union of Countable Sets is Countable|§3.1]], [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|§19.19]]
 
 > [!remark]- Connections
-> - Same result in 556, proved with rational rectangles in ℝⁿ: [[§20 Orthonormal Sets and Bases#^prop-20-15|556 Prop. §20.15]]; the case $L^2(\mathbb{R}^n)$ is [[§26 Position Eigenstates and Continuous Resolutions#^thm-26-2|556 Thm. §26.2]].
+> - Same result in 556, proved with rational rectangles in ℝⁿ: [[§20 Orthonormal Sets and Bases#^prop-20-16|556 Prop. §20.16]]; the case $L^2(\mathbb{R}^n)$ is [[§26 Position Eigenstates and Continuous Resolutions#^thm-26-2|556 Thm. §26.2]].
 
 > [!theorem] Theorem §19.21: $L^\infty$ is Not Separable
 > $L^\infty(E)$ is not separable (when $E$ has positive measure).

@@ -29,7 +29,7 @@ Physics also writes $\int |x\rangle\langle x|\,dx = \mathbf{1}$, with an uncount
 *Two orthonormal vectors $e_\alpha$, $e_\beta$ at distance $\sqrt{2}$ (red), the disjoint balls of radius $\sqrt{2}/2$ around them (dashed), and a point $d_\alpha$, $d_\beta$ of the dense set (blue) in each.*
 
 > [!remark]- Connections
-> - The countable-basis half of the separability theorem of Chapter 5: [[§20 Orthonormal Sets and Bases#^thm-20-17|§20.17]].
+> - The countable-basis half of the separability theorem of Chapter 5: [[§20 Orthonormal Sets and Bases#^thm-20-18|§20.18]].
 > - The same count in topology: a space with a countable basis has no uncountable discrete subspace ([[§18 Countability Axioms#^lem-18-2|590 Lemma §18.2]]), and a separable metric space has a countable basis ([[§18 Countability Axioms#^prop-18-4|590 Prop. §18.4]]).
 
 Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of radius $\sqrt{2}/2$ around them are disjoint, and each must catch its own point of the dense set. The same argument shows that $L^\infty$ is not separable (MATH 551 notes, Chapter *$L^p$ Spaces*, subsection [[§19 Normed Linear Spaces and Lᵖ Spaces#Density and Separability|Density and Separability]]).
@@ -40,14 +40,14 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 ^thm-26-2
 
 > [!proof]+ Proof
-> Separability is now also the case $p = 2$, $E = \mathbb{R}^n$ of Proposition [[§20 Orthonormal Sets and Bases#^prop-20-15|§20.15]] (Lecture 9). It is proved in the MATH 551 notes (Chapter *$L^p$ Spaces*, subsection [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|Density and Separability]]): finite linear combinations of indicator functions of boxes with rational endpoints, with rational coefficients (with coefficients in $\mathbb{Q} + i\mathbb{Q}$ in the complex case), form a countable dense set. By Proposition [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-1|§26.1]] every orthonormal basis is countable. It is not finite: the normalized indicators of disjoint unit cubes form an infinite orthonormal set, and a finite orthonormal basis $\{e_1, \ldots, e_N\}$ would make every $x$ a finite combination $\sum_{j \le N} (x, e_j) e_j$, so $L^2(\mathbb{R}^n)$ would have dimension at most $N$ and could not contain $N+1$ orthonormal (hence linearly independent) vectors.
+> Separability is now also the case $p = 2$, $E = \mathbb{R}^n$ of Proposition [[§20 Orthonormal Sets and Bases#^prop-20-16|§20.16]] (Lecture 9). It is proved in the MATH 551 notes (Chapter *$L^p$ Spaces*, subsection [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|Density and Separability]]): finite linear combinations of indicator functions of boxes with rational endpoints, with rational coefficients (with coefficients in $\mathbb{Q} + i\mathbb{Q}$ in the complex case), form a countable dense set. By Proposition [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-1|§26.1]] every orthonormal basis is countable. It is not finite: the normalized indicators of disjoint unit cubes form an infinite orthonormal set, and a finite orthonormal basis $\{e_1, \ldots, e_N\}$ would make every $x$ a finite combination $\sum_{j \le N} (x, e_j) e_j$, so $L^2(\mathbb{R}^n)$ would have dimension at most $N$ and could not contain $N+1$ orthonormal (hence linearly independent) vectors.
 
 ^pf-26-2
 
-*Uses:* [[§20 Orthonormal Sets and Bases#^prop-20-15|§20.15]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 §19.20]], [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-1|§26.1]], [[§20 Orthonormal Sets and Bases#^def-20-4|Def. §20.4]], [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]], [[§4 Span and Linear Independence#^ladr-2-22|LADR 2.22]]
+*Uses:* [[§20 Orthonormal Sets and Bases#^prop-20-16|§20.16]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 §19.20]], [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-1|§26.1]], [[§20 Orthonormal Sets and Bases#^def-20-4|Def. §20.4]], [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]], [[§4 Span and Linear Independence#^ladr-2-22|LADR 2.22]]
 
 > [!remark]- Connections
-> - Separability of $L^p(E)$, proved in Chapter 5: [[§20 Orthonormal Sets and Bases#^prop-20-15|§20.15]]; its home in measure theory: [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 §19.20]].
+> - Separability of $L^p(E)$, proved in Chapter 5: [[§20 Orthonormal Sets and Bases#^prop-20-16|§20.16]]; its home in measure theory: [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 §19.20]].
 
 > [!remark] Remark: There is No Dimension Mismatch
 > The *Hilbert dimension* of $H$ is the cardinality of an orthonormal basis; in $L^2(\mathbb{R}^n)$ it is countable, and by [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-1|the theorem]] every orthonormal set, let alone basis, in $L^2(\mathbb{R}^n)$ is countable. So the uncountable family $\{|x\rangle\}$ cannot be an orthonormal set of $L^2$ — and indeed its elements are not in $L^2$ at all, as the next two propositions show. The correct comparison is not “countable basis versus uncountable basis” but “orthonormal basis versus a different kind of object.”

@@ -21,6 +21,7 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§18 Projection and Orthogonal Decomposition#^thm-18-4|Theorem §18.4: Orthogonal Decomposition]]
+- [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-19-5|Proposition §19.5: Minimizing a Quadratic Functional over a Closed Convex Set]]
 
 ## Connections
 - **How.** Take a minimizing sequence and apply the parallelogram law to x₀ − y_m and x₀ − y_n. Convexity puts the midpoint in K, which forces ‖y_n − y_m‖² < 2/m + 2/n. Completeness gives a limit, and closedness keeps it in K. The same midpoint argument proves uniqueness. This is step (i) of [[Functional Analysis Problem-Solving Techniques#^rem-t11|Technique 11]].

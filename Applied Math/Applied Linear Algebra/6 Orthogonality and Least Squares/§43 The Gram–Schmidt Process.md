@@ -120,7 +120,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§20 Orthonormal Bases#^ladr-6-32|LADR 6.32]] (Gram–Schmidt for a linearly independent list in any inner product space; Axler normalizes at every step, $e_k = f_k / \|f_k\|$, and proves the same span property (1)).
-> - For a countable linearly independent sequence in a Hilbert space the process runs forever and produces an orthonormal sequence with the same spans: [[§20 Orthonormal Sets and Bases#^lem-20-18|556 Lem. §20.18]].
+> - For a countable linearly independent sequence in a Hilbert space the process runs forever and produces an orthonormal sequence with the same spans: [[§20 Orthonormal Sets and Bases#^lem-20-19|556 Lem. §20.19]].
 
 > [!theorem] Corollary §43.2: Existence of Orthogonal and Orthonormal Bases
 > Every nonzero subspace $W$ of $\mathbb{R}^n$ has an orthogonal basis, and an orthonormal basis.

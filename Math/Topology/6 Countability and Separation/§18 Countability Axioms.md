@@ -182,7 +182,7 @@ tags: [topology, math590]
 ^def-18-5
 
 > [!remark]- Connections
-> - Separability of sequence and function spaces: [[§20 Orthonormal Sets and Bases#^def-20-5|556 Def. §20.5]], with ℓᵖ and Lᵖ separable for p < ∞ and ℓ^∞, L^∞ not ([[§20 Orthonormal Sets and Bases#^prop-20-13|556 Prop. §20.13]]–[[§20 Orthonormal Sets and Bases#^prop-20-16|556 Prop. §20.16]]).
+> - Separability of sequence and function spaces: [[§20 Orthonormal Sets and Bases#^def-20-5|556 Def. §20.5]], with ℓᵖ and Lᵖ separable for p < ∞ and ℓ^∞, L^∞ not ([[§20 Orthonormal Sets and Bases#^prop-20-13|556 Prop. §20.13]]–[[§20 Orthonormal Sets and Bases#^prop-20-17|556 Prop. §20.17]]).
 > - The metric-space form, with density by sequences: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|551 Def. §19.9]]; Lᵖ is separable for p < ∞ ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 Cor. §19.20]]) and L^∞ is not ([[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 Thm. §19.21]]).
 
 > [!example] Example §18.8: Standard Examples

@@ -53,14 +53,16 @@ graph TD
   C3 -.->|on credit| C2
   C4 -.->|on credit| C3
   C5 -.->|on credit| C1
+  C6 -.->|on credit| C5
+  X1 -.->|2| C6
   X2 -.->|13| C4
-  X2 -.->|7| C5
+  X2 -.->|13| C5
   X2 -.->|3| C6
   X2 -.->|3| C7
   X4 -.->|2| C2
   X4 -.->|10| C3
   X4 -.->|11| C4
-  X4 -.->|3| C5
+  X4 -.->|6| C5
   X4 -.->|2| C6
 ```
 
@@ -98,7 +100,7 @@ graph TD
 - [[Bessel's Inequality]] (§20.5)
 - [[Characterizations of an Orthonormal Basis]] (§20.8)
 - [[Existence of Orthonormal Bases]] (§20.12)
-- [[Separable Hilbert Spaces Have Countable Orthonormal Bases]] (§20.17)
+- [[Separable Hilbert Spaces Have Countable Orthonormal Bases]] (§20.18)
 - [[Bounded Linear Maps Are Continuous]] (§21.2)
 - [[Bounded Linear Maps into a Banach Space Form a Banach Space]] (§21.5)
 - [[Bounded Sesquilinear Forms Are Bounded Operators]] (§23.1)
@@ -114,30 +116,32 @@ The results from other subjects that this course's proofs and definitions cite m
 
 **[[Linear Algebra]]**
 - [[Triangle inequality]] (1)
+- [[§5 Bases#^ladr-2-26|Definition 2.26: Basis]] (1)
+- [[§6 Dimension#^ladr-2-35|Definition 2.35: Dimension, dim V]] (1)
 - [[§4 Span and Linear Independence#^ladr-2-22|Theorem 2.22: Length of linearly independent list ≤ length of spanning list]] (1)
 
 **[[Measure Theory]]**
-- [[Countable Union of Countable Sets is Countable]] (4)
+- [[Countable Union of Countable Sets is Countable]] (5)
 - [[Dominated Convergence Theorem]] (3)
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|Theorem §19.19: Density in Lᵖ]] (3)
 - [[Hölder's Inequality]] (2)
 - [[Minkowski's Inequality]] (2)
 - [[Riesz–Fischer Theorem]] (2)
+- [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2: ℚ is countable]] (2)
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|Lemma §19.4: Young's Inequality]] (1)
-- [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-11|Corollary §19.11: Minkowski for Finite Sums]] (1)
 
 **[[Topology]]**
 - [[§16 Limit Point Compactness#^thm-16-2|Theorem §16.2: Equivalence for Metrizable Spaces]] (1)
 
 **[[Single Variable Analysis]]**
-- [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8: Cauchy Implies Convergent]] (6)
+- [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8: Cauchy Implies Convergent]] (7)
 - [[§33 Properties of the Riemann Integral#^thm-33-3|Theorem §33.3: Monotonicity of the Integral]] (3)
 - [[Bolzano–Weierstrass Theorem]] (2)
 - [[Fundamental Theorem of Calculus]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-4|Theorem §33.4: Absolute Values]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-5|Theorem §33.5: Additivity over Subintervals]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-2|Theorem §33.2: Linearity]] (2)
-- [[Completeness Axiom]] (1)
+- [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7: Density of ℚ in ℝ]] (2)
 
 ## Workhorse examples
 - [[Norms on ℝⁿ and their unit balls]]: the 1-, 2- and max norms; disk, square and diamond as unit balls and gauges

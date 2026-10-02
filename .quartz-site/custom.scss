@@ -36,3 +36,155 @@ img[src*="attachments/"][src$=".svg"] { max-width: 100%; height: auto; }
 :root[saved-theme="dark"] img[src*="attachments/"][src$=".svg"] {
   filter: invert(0.88) hue-rotate(180deg);
 }
+
+// ---- Page styles, picked with the palette button next to dark mode (looks.js) ----
+// Each look sets the theme colours and fonts for light and dark mode, then restyles the boxes.
+// Without a choice (no data-look) the site keeps the styles above.
+
+// Course notes: serif text, tcolorbox-style boxes with a coloured title bar, like the LaTeX notes
+:root[data-look="notes"] {
+  --bodyFont: "Source Serif 4", Georgia, serif;
+  --headerFont: "Source Sans Pro", system-ui, sans-serif;
+  --titleFont: "Source Sans Pro", system-ui, sans-serif;
+  --light: #fcfcfa; --lightgray: #e3e3de; --gray: #a9a9a2; --darkgray: #33373c; --dark: #1f2328;
+  --secondary: #1f5f99; --tertiary: #4f8a7d;
+  &[saved-theme="dark"] {
+    --light: #17191c; --lightgray: #30333a; --gray: #6c6f75; --darkgray: #d6d4cf; --dark: #ecebe6;
+    --secondary: #8fbbe6; --tertiary: #84a59d;
+  }
+  article { font-size: 1.04rem; }
+  .callout[data-callout] {
+    padding: 0;
+    border-radius: 5px;
+    > .callout-title { background-color: var(--color); padding: 0.4rem 1rem; align-items: center; }
+    > .callout-title > .callout-title-inner > p { color: #fff; font-family: var(--headerFont); font-size: 0.95rem; }
+    > .callout-title .callout-icon { display: none; }
+    > .callout-title .fold-callout-icon { background-color: #fff; }
+    > .callout-content { padding: 0 1rem; }
+  }
+  .callout[data-callout="remark"] { background-color: transparent; }
+  .callout[data-callout="proof"], .callout[data-callout="derivation"] {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    > .callout-title { background: none; padding: 0.3rem 0; }
+    > .callout-title > .callout-title-inner > p { color: var(--dark); font-family: var(--bodyFont); font-style: italic; font-weight: 400; font-size: 1em; }
+    > .callout-title .fold-callout-icon { background-color: var(--darkgray); }
+    > .callout-content { padding: 0; }
+  }
+}
+
+// Quiet modern: one sans-serif face, no filled boxes, a thin coloured rule and a small label
+:root[data-look="modern"] {
+  --bodyFont: "IBM Plex Sans", system-ui, sans-serif;
+  --headerFont: "IBM Plex Sans", system-ui, sans-serif;
+  --titleFont: "IBM Plex Sans", system-ui, sans-serif;
+  --light: #ffffff; --lightgray: #e8eaed; --gray: #a3a8b0; --darkgray: #2f343b; --dark: #1d2127;
+  --secondary: #2758c7; --tertiary: #5a8f84;
+  &[saved-theme="dark"] {
+    --light: #121418; --lightgray: #262a31; --gray: #5f6570; --darkgray: #d4d8de; --dark: #e9ecf0;
+    --secondary: #8aaeff; --tertiary: #84a59d;
+  }
+  .callout[data-callout] {
+    border: none;
+    border-left: 2px solid var(--border);
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0 0 0 1rem;
+    > .callout-title { --icon-size: 13px; padding: 0.5rem 0 0.15rem; align-items: center; }
+    > .callout-title > .callout-title-inner > p {
+      font-family: var(--codeFont); font-size: 0.74rem; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+  }
+  .callout[data-callout="proof"], .callout[data-callout="derivation"] { border-left-style: dotted; }
+}
+
+// Printed book: EB Garamond at book size, no boxes, amsthm-style run-in headings
+:root[data-look="book"] {
+  --bodyFont: "EB Garamond", Georgia, serif;
+  --headerFont: "EB Garamond", Georgia, serif;
+  --titleFont: "EB Garamond", Georgia, serif;
+  --light: #fbfaf7; --lightgray: #dedad1; --gray: #a8a297; --darkgray: #2a2825; --dark: #1e1d1b;
+  --secondary: #7a2e1f; --tertiary: #8a6a3a;
+  &[saved-theme="dark"] {
+    --light: #1a1917; --lightgray: #36332e; --gray: #6f6a61; --darkgray: #ddd8ce; --dark: #efebe2;
+    --secondary: #e3a08e; --tertiary: #c9a46a;
+  }
+  article { font-size: 1.17rem; line-height: 1.5; }
+  h2 { font-variant: small-caps; letter-spacing: 0.03em; font-weight: 500; }
+  .callout[data-callout] {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    > .callout-title { padding: 0.2rem 0; }
+    > .callout-title .callout-icon { display: none; }
+    > .callout-title .fold-callout-icon { background-color: var(--darkgray); }
+    > .callout-title > .callout-title-inner > p { color: var(--dark); font-weight: 600; }
+  }
+  // run-in heading: "Lemma §23.1: … In a simply connected space …" on one line (not for foldable boxes)
+  .callout[data-callout]:not(.is-collapsible) {
+    > .callout-title, > .callout-title > .callout-title-inner, > .callout-title > .callout-title-inner > p { display: inline; }
+    > .callout-title > .callout-title-inner { margin-right: 0.35em; }
+    > .callout-content { display: inline; }
+    > .callout-content > p:first-child { display: inline; }
+  }
+  .callout[data-callout="theorem"], .callout[data-callout="principle"], .callout[data-callout="law"] {
+    > .callout-content { font-style: italic; }
+  }
+  .callout[data-callout="remark"], .callout[data-callout="proof"], .callout[data-callout="derivation"], .callout[data-callout="caution"] {
+    > .callout-title > .callout-title-inner > p { font-style: italic; font-weight: 400; }
+  }
+}
+
+// proofs end with a tombstone in all three looks
+:root[data-look] .callout[data-callout="proof"]:not(.is-collapsed) > .callout-content::after {
+  content: "∎";
+  text-align: right;
+  line-height: 1;
+  padding-bottom: 0.4rem;
+}
+
+// the palette button and its menu
+.look-switch { position: relative; }
+.look-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  & svg { width: 20px; height: 20px; stroke: var(--darkgray); display: block; }
+}
+.look-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 999;
+  min-width: 11rem;
+  display: grid;
+  padding: 0.3rem;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+  &[hidden] { display: none; }
+  & button {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: left;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.95rem;
+    color: var(--darkgray);
+    cursor: pointer;
+    &:hover, &:focus-visible { background: var(--highlight); }
+    &[aria-checked="true"]::after { content: "✓"; color: var(--secondary); }
+  }
+}

@@ -21,9 +21,9 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 - In $\ell^1$ closest points need not be unique ([[§18 Projection and Orthogonal Decomposition#^rem-18-2|§18]])
 - The standard basis of $\ell^2$ is an orthonormal basis ([[§20 Orthonormal Sets and Bases#^ex-20-1|§20]])
 - $\ell^p$ is separable for $1 \le p < \infty$ ([[§20 Orthonormal Sets and Bases#^prop-20-13|§20]])
-- $\ell^\infty$ is not separable ([[§20 Orthonormal Sets and Bases#^prop-20-14|§20]])
+- $\ell^\infty$ is not separable ([[§20 Orthonormal Sets and Bases#^prop-20-15|§20]])
 - The shift $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ on $\ell^2$: an isometry that is not an isomorphism ([[§20 Orthonormal Sets and Bases#^ex-20-2|§20]])
-- Classification of separable Hilbert spaces ([[§20 Orthonormal Sets and Bases#^thm-20-19|§20]])
+- Classification of separable Hilbert spaces ([[§20 Orthonormal Sets and Bases#^thm-20-20|§20]])
 
 ## The completion is complete by the plan of the $\ell^p$ proof, with a diagonal candidate
 ![[§9 Completeness#^rem-9-5]]
@@ -71,10 +71,10 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 ![[§20 Orthonormal Sets and Bases#^prop-20-13]]
 
 ## $\ell^\infty$ is not separable
-![[§20 Orthonormal Sets and Bases#^prop-20-14]]
+![[§20 Orthonormal Sets and Bases#^prop-20-15]]
 
 ## The shift $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ on $\ell^2$: an isometry that is not an isomorphism
 ![[§20 Orthonormal Sets and Bases#^ex-20-2]]
 
 ## Classification of separable Hilbert spaces
-![[§20 Orthonormal Sets and Bases#^thm-20-19]]
+![[§20 Orthonormal Sets and Bases#^thm-20-20]]

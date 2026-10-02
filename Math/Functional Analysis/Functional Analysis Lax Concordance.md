@@ -150,18 +150,20 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §6.3, Thm 4; cf. §8.3, Thm 9 | Corollary [[§22 Dual Spaces#^cor-22-3\|§22.3]] | The Riesz Map: $H' \cong H$ |
 | §6.3, Thm 4 with §6.1, Examples 2–3 | Example [[§22 Dual Spaces#^ex-22-1\|§22.1]] | $(L^2)' = L^2$ and $(\ell^2)' = \ell^2$ |
 | §6.3, Lemma 5(i) | Lemma [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-4\|§19.4]] | The Kernel Has Codimension One |
+| §6.3, Lemma 5(i) | Proposition [[§22 Dual Spaces#^prop-22-5\|§22.5]] | The Null Space Has Codimension One |
+| §6.3, Lemma 5(iii) | Proposition [[§22 Dual Spaces#^prop-22-6\|§22.6]] | Bounded if and only if the Null Space is Closed |
 | §6.3, conditions (i)–(ii) of Thm 6 | Definition [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^def-23-1\|§23.1]] | Sesquilinear Form; Bounded Form |
 | §6.3, Thm 6 | Theorem [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-23-2\|§23.2]] | Lax–Milgram |
 | §6.4, closed linear span | Definition [[§8 Normed Linear Spaces#^def-8-8\|§8.8]] | Closed Linear Span |
 | §6.4, definition of orthonormal set | Definition [[§20 Orthonormal Sets and Bases#^def-20-1\|§20.1]] | Orthogonal and Orthonormal Sets |
 | §6.4, definition of orthonormal base (via closed linear span; see Proposition [[§20 Orthonormal Sets and Bases#^prop-20-9\|§20.9]]) | Definition [[§20 Orthonormal Sets and Bases#^def-20-4\|§20.4]] | Orthonormal Basis |
-| §6.4, Thm $9'$ | Theorem [[§20 Orthonormal Sets and Bases#^thm-20-17\|§20.17]] | Separable Hilbert Spaces and Countable Bases |
-| §6.4, Thm $9'$ | Lemma [[§20 Orthonormal Sets and Bases#^lem-20-18\|§20.18]] | Gram–Schmidt |
+| §6.4, Thm $9'$ | Theorem [[§20 Orthonormal Sets and Bases#^thm-20-18\|§20.18]] | Separable Hilbert Spaces and Countable Bases |
+| §6.4, Thm $9'$ | Lemma [[§20 Orthonormal Sets and Bases#^lem-20-19\|§20.19]] | Gram–Schmidt |
 | §6.4, Thm 7 | Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-6\|§18.6]] | The Double Complement |
 | §6.4, definition of orthonormal base and Thm 7 | Proposition [[§20 Orthonormal Sets and Bases#^prop-20-9\|§20.9]] | Lax's Definition of Orthonormal Base Agrees |
 | §6.4, Lemma 8 | Theorem [[§20 Orthonormal Sets and Bases#^thm-20-8\|§20.8]] | Characterizations of an Orthonormal Basis |
 | §6.4, Thm 9 | Theorem [[§20 Orthonormal Sets and Bases#^thm-20-12\|§20.12]] | Existence of Orthonormal Bases |
-| §6.4, Exercise 10 | Theorem [[§20 Orthonormal Sets and Bases#^thm-20-19\|§20.19]] | Classification of Separable Hilbert Spaces |
+| §6.4, Exercise 10 | Theorem [[§20 Orthonormal Sets and Bases#^thm-20-20\|§20.20]] | Classification of Separable Hilbert Spaces |
 | §8.1, dual space | Definition [[§22 Dual Spaces#^def-22-1\|§22.1]] | Dual Space |
 | §8.1, Thm 3 | Corollary [[§22 Dual Spaces#^cor-22-1\|§22.1]] | The Dual is Always a Banach Space |
 | §8.3, Thm 11 | Theorem [[§22 Dual Spaces#^thm-22-4\|§22.4]] | The Dual of $L^p$ |

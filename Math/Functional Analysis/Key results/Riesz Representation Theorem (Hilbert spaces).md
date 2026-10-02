@@ -18,6 +18,7 @@ tags: [functional-analysis, hub]
 - [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-4|Lemma §19.4: The Kernel Has Codimension One]]
 
 ## Used in (Functional Analysis)
+- [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-19-5|Proposition §19.5: Minimizing a Quadratic Functional over a Closed Convex Set]]
 - [[§22 Dual Spaces#^thm-22-2|Theorem §22.2: Riesz Representation Theorem, with Norms]]
 - [[§24 Bras, Kets, and the Riesz Map#^thm-24-2|Theorem §24.2: The Riesz Map]]
 

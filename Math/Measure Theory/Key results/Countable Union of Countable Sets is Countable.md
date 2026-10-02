@@ -27,8 +27,9 @@ tags: [measure-theory, hub]
 ## Used in (Functional Analysis)
 - [[§20 Orthonormal Sets and Bases#^prop-20-4|Proposition §20.4: Only Countably Many Coefficients are Nonzero]]
 - [[§20 Orthonormal Sets and Bases#^prop-20-13|Proposition §20.13: ℓ^p is Separable for 1 ≤ p < ∞]]
-- [[§20 Orthonormal Sets and Bases#^prop-20-15|Proposition §20.15: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
-- [[§20 Orthonormal Sets and Bases#^thm-20-17|Theorem §20.17: Separable Hilbert Spaces and Countable Bases]]
+- [[§20 Orthonormal Sets and Bases#^prop-20-14|Proposition §20.14: c_0 is a Separable Banach Space]]
+- [[§20 Orthonormal Sets and Bases#^prop-20-16|Proposition §20.16: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
+- [[§20 Orthonormal Sets and Bases#^thm-20-18|Theorem §20.18: Separable Hilbert Spaces and Countable Bases]]
 
 ## Connections
 - **Proof idea.** List the n-th set as aₙ,₁, aₙ,₂, … and send aₙ,ₘ to (n, m). This puts the union in bijection with a subset of ℕ × ℕ, which is countable by the diagonal listing of [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]].

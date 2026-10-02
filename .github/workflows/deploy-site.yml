@@ -60,6 +60,9 @@ jobs:
           npx quartz plugin install --from-config
           npx quartz build
 
+      - name: Add page-style switcher
+        run: python3 vault/.quartz-site/postbuild.py quartz/public vault/.quartz-site/looks.js
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: quartz/public

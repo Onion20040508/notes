@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+"""Add the page-style switcher to every page Quartz built.
+
+Run by the GitHub Actions workflow after the build:  python3 postbuild.py <site dir> <looks.js>
+- copies looks.js to <site>/static/looks.js,
+- adds to each page's <head>: an inline script that applies the saved look before the page is drawn,
+  the extra Google Fonts the looks use, and looks.js itself.
+The tags carry data-persist, so Quartz keeps them when it swaps pages without a reload.
+"""
+import os, re, shutil, sys
+
+site, js = (os.path.abspath(p) for p in sys.argv[1:3])
+os.makedirs(os.path.join(site, 'static'), exist_ok=True)
+shutil.copy2(js, os.path.join(site, 'static', 'looks.js'))
+
+FONTS = ('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500'
+         '&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400'
+         '&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap')
+HEAD = re.compile(r'<head[^>]*>')
+
+pages = 0
+for root, _, files in os.walk(site):
+    for f in files:
+        if not f.endswith('.html'):
+            continue
+        p = os.path.join(root, f)
+        s = open(p, encoding='utf-8').read()
+        m = HEAD.search(s)
+        if not m or 'static/looks.js' in s:
+            continue
+        # absolute path, so it also works on 404.html, which GitHub serves at any address
+        base = re.search(r'data-basepath="([^"]*)"', s)
+        src = (base.group(1) if base else '') + '/static/looks.js'
+        tags = ('<script data-persist>try{var l=localStorage.getItem("site-look");'
+                'if(l)document.documentElement.setAttribute("data-look",l)}catch(e){}</script>'
+                f'<link data-persist rel="stylesheet" href="{FONTS}">'
+                f'<script data-persist defer src="{src}"></script>')
+        open(p, 'w', encoding='utf-8').write(s[:m.end()] + tags + s[m.end():])
+        pages += 1
+print(f'added the page-style switcher to {pages} pages')

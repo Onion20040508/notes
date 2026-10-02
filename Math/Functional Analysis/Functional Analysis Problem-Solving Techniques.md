@@ -227,7 +227,46 @@ The pattern of the [[§3 Statement and Motivation#^thm-3-2|Hahn–Banach]] proof
 
 > [!example] Example T15: Applications (Lecture 9)
 > - $\ell^p$, $1 \le p < \infty$ (Proposition [[§20 Orthonormal Sets and Bases#^prop-20-13|§20.13]]).
-> - $L^p(E)$, $1 \le p < \infty$ (Proposition [[§20 Orthonormal Sets and Bases#^prop-20-15|§20.15]]), after reducing to continuous functions.
-> - A Hilbert space with a countable orthonormal basis (Theorem [[§20 Orthonormal Sets and Bases#^thm-20-17|§20.17]], $\Rightarrow$).
+> - $L^p(E)$, $1 \le p < \infty$ (Proposition [[§20 Orthonormal Sets and Bases#^prop-20-16|§20.16]]), after reducing to continuous functions.
+> - A Hilbert space with a countable orthonormal basis (Theorem [[§20 Orthonormal Sets and Bases#^thm-20-18|§20.18]], $\Rightarrow$).
 
 ^ex-t15
+
+## Technique 16: Non-Separability from an Uncountable Separated Family
+
+> [!remark] Remark: Strategy
+> To show a space is not [[§20 Orthonormal Sets and Bases#^def-20-5|separable]], find uncountably many elements at mutual distance at least $\delta > 0$. The balls of radius $\delta/2$ about them are disjoint, a [[§8 Normed Linear Spaces#^def-8-7|dense]] set must meet each of them, and choosing one point of the dense set in each ball gives a one-to-one map from an uncountable set into the dense set. Indicator functions (or indicator sequences) are the usual source: in a supremum norm two different indicators are at distance $1$.
+
+^rem-t16
+
+> [!example] Example T16: Applications (HW5)
+> - $L^\infty([0,1])$ (P1(b), Proposition [[§20 Orthonormal Sets and Bases#^prop-20-17|§20.17]]): $\chi_{[0,t]}$, $t \in (0,1]$.
+> - $\ell^\infty$ (Proposition [[§20 Orthonormal Sets and Bases#^prop-20-15|§20.15]]): $\chi_S$, $S \subset \mathbb{N}$.
+
+^ex-t16
+
+## Technique 17: Complete the Square to Reach a Distance
+
+> [!remark] Remark: Strategy
+> A quadratic functional $\frac12\|v\|^2 - \ell(v)$ on a Hilbert space becomes, after writing $\ell = (\cdot, u^*)$ by [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|Riesz]] and adding and subtracting $\frac12\|u^*\|^2$, the function $\frac12\|u^* - v\|^2 - \frac12\|u^*\|^2$. Minimizing it is minimizing a distance, and the [[§18 Projection and Orthogonal Decomposition#^thm-18-2|projection theorem]] gives existence and uniqueness of the minimizer.
+
+^rem-t17
+
+> [!example] Example T17: Applications (HW5)
+> - Quadratic minimization over a closed convex set (P3, Proposition [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-19-5|§19.5]]).
+
+^ex-t17
+
+## Technique 18: Subtract a Multiple of $x_0$ to Land in the Null Space
+
+> [!remark] Remark: Strategy
+> For a [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5|linear functional]] $\ell$ and a fixed $x_0$ with $\ell(x_0) \neq 0$, the vector $x - \frac{\ell(x)}{\ell(x_0)} x_0$ lies in the [[§22 Dual Spaces#^prop-22-5|null space]] of $\ell$ for every $x$. This one formula splits $X$ as null space plus a line, and, applied to a sequence, produces points of the null space near a given point off it.
+
+^rem-t18
+
+> [!example] Example T18: Applications (HW5)
+> - Codimension one (P4, Proposition [[§22 Dual Spaces#^prop-22-5|§22.5]]).
+> - Closed null space implies bounded (P5, Proposition [[§22 Dual Spaces#^prop-22-6|§22.6]]): $y_n = x_0 - x_n/\ell(x_n)$.
+> - The [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|Riesz representation theorem]], part (2) (Lemma [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-19-4|§19.4]](c)).
+
+^ex-t18
