@@ -1,0 +1,23 @@
+% Figure for Complex Variables §128.
+\begin{tikzpicture}[line cap=round, line join=round, decoration={markings, mark=at position 0.5 with {\arrow{Stealth[length=5pt]}}}]
+  \draw[->, thin] (-4.4,0) -- (4.6,0) node[right, font=\scriptsize] {$x$};
+  
+  \def\R{3.8}
+  % pieces of the real axis
+  \draw[figB, very thick, postaction={decorate}] (-\R,0) -- (-2.3,0);
+  \draw[figB, very thick, postaction={decorate}] (-1.7,0) -- (-0.2,0);
+  \draw[figB, very thick, postaction={decorate}] (0.2,0) -- (1.5,0);
+  \draw[figB, very thick, postaction={decorate}] (2.1,0) -- (\R,0);
+  % small semicircles (clockwise over each x_j)
+  \draw[figR, very thick] (-2.3,0) arc (180:0:0.3);
+  \draw[figR, very thick] (-0.2,0) arc (180:0:0.2);
+  \draw[figR, very thick] (1.5,0) arc (180:0:0.3);
+  % big semicircle
+  \draw[figG, very thick, postaction={decorate}] (\R,0) arc (0:180:\R);
+  \foreach \x/\l in {-2/x_1, 0/x_2, 1.8/x_3} \fill (\x,0) circle (1.2pt) node[below, font=\scriptsize] {$\l$};
+  \node[font=\scriptsize] at (-\R,-0.3) {$-R$};
+  \node[font=\scriptsize] at (\R,-0.3) {$R$};
+  \node[font=\scriptsize, figR] at (1.8,0.62) {$\rho_j$};
+  \node[font=\scriptsize, figG] at (2.95,2.9) {$|z| = R$};
+  \node[font=\scriptsize] at (-1.0,1.6) {$C$};
+\end{tikzpicture}

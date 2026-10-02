@@ -1,0 +1,23 @@
+% Figure for Complex Variables §91.
+\begin{tikzpicture}[line cap=round, line join=round,
+    arr/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
+  \draw[-stealth, thin] (-3.6,0) -- (3.9,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,-3.4) -- (0,3.6) node[above, font=\scriptsize] {$y$};
+  \pgfmathsetmacro{\e}{4}   % half-opening angle in degrees (drawing only)
+  \pgfmathsetmacro{\eb}{25}
+  % outer circle C_R, counterclockwise
+  \draw[figB, line width=1.0pt, arr=0.3, arr=0.7] (\e:3) arc (\e:360-\e:3);
+  % inner circle C_rho, clockwise
+  \draw[figR, line width=1.0pt, arr=0.5] (-\eb:0.55) arc (360-\eb:\eb:0.55);
+  % upper edge of the cut, from rho to R
+  \draw[figB, line width=1.0pt, arr=0.55] (\eb:0.55) -- (\e:3);
+  % lower edge, from R to rho
+  \draw[figB, line width=1.0pt, arr=0.55] (-\e:3) -- (-\eb:0.55);
+  \draw[figO, line width=0.8pt, dashed] (0,0) -- (3.4,0);
+  \node[figB, font=\small] at (2.45,2.35) {$C_R$};
+  \node[figR, font=\small] at (-0.85,0.45) {$C_\rho$};
+  \node[figB, font=\scriptsize, above] at (2.45,0.1) {$\theta = 0$};
+  \node[figB, font=\scriptsize, below] at (2.45,-0.1) {$\theta = 2\pi$};
+  \node[font=\scriptsize, below right] at (3,0) {$R$};
+  \fill[figG] (-1.5,0) circle (0.06) node[below, font=\scriptsize] {$-1$};
+\end{tikzpicture}

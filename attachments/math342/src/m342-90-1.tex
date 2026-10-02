@@ -1,0 +1,21 @@
+% Figure for Complex Variables §90.
+\begin{tikzpicture}[line cap=round, line join=round,
+    arr/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
+  \draw[-stealth, thin] (-3.7,0) -- (3.9,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,0.65) -- (0,3.6) node[above, font=\scriptsize] {$y$};
+  % branch cut: origin and negative imaginary axis
+  \draw[figO, line width=1.0pt, dashed] (0,0) -- (0,-2.0);
+  \draw[figO, fill=white] (0,0) circle (0.07);
+  \node[figO, font=\scriptsize, right] at (0.05,-1.4) {branch cut};
+  \draw[figB, line width=1.0pt, arr=0.55] (0.6,0) -- (3,0);
+  \draw[figB, line width=1.0pt, arr=0.25, arr=0.75] (3,0) arc (0:180:3);
+  \draw[figB, line width=1.0pt, arr=0.55] (-3,0) -- (-0.6,0);
+  \draw[figR, line width=1.0pt, arr=0.55] (-0.6,0) arc (180:0:0.6);
+  \node[figB, font=\small] at (2.45,2.35) {$C_R$};
+  \node[figR, font=\small] at (0.85,0.65) {$C_\rho$};
+  \node[figB, font=\scriptsize, below] at (1.8,0) {$L_1$};
+  \node[figB, font=\scriptsize, below] at (-1.8,0) {$L_2$};
+  \node[font=\scriptsize, below] at (3,0) {$R$};
+  \node[font=\scriptsize, below] at (-3,0) {$-R$};
+  \fill[figG] (0,1.2) circle (0.06) node[right, font=\scriptsize] {$i$};
+\end{tikzpicture}

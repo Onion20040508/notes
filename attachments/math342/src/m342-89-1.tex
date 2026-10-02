@@ -1,0 +1,19 @@
+% Figure for Complex Variables §89.
+\begin{tikzpicture}[line cap=round, line join=round,
+    arr/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{Stealth[length=5pt]}}}}]
+  \draw[-stealth, thin] (-3.7,0) -- (3.9,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,-0.5) -- (0,3.6) node[above, font=\scriptsize] {$y$};
+  \draw[figB, line width=1.0pt, arr=0.55] (0.6,0) -- (3,0);
+  \draw[figB, line width=1.0pt, arr=0.25, arr=0.75] (3,0) arc (0:180:3);
+  \draw[figB, line width=1.0pt, arr=0.55] (-3,0) -- (-0.6,0);
+  \draw[figR, line width=1.0pt, arr=0.55] (-0.6,0) arc (180:0:0.6);
+  \node[figB, font=\small] at (2.45,2.35) {$C_R$};
+  \node[figR, font=\small] at (0.75,0.65) {$C_\rho$};
+  \node[figB, font=\scriptsize, below] at (1.8,0) {$L_1$};
+  \node[figB, font=\scriptsize, below] at (-1.8,0) {$L_2$};
+  \node[font=\scriptsize, below] at (3,0) {$R$};
+  \node[font=\scriptsize, below] at (-3,0) {$-R$};
+  \node[font=\scriptsize, below] at (0.62,0) {$\rho$};
+  \node[font=\scriptsize, below] at (-0.62,0) {$-\rho$};
+  \draw[figR] (0,0) circle (0.06);
+\end{tikzpicture}

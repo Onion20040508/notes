@@ -105,7 +105,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 ^rem-ca-5-2
 
 > [!example] Example §CA.5.1: The Exponent of the Wightman Function Outside the Light Cone
-> For $0 < t < r$ write $\rho = \sqrt{r^2 - t^2}$. Find the saddle point, the exponent and the leading prefactor of $D_W(t, r)$ for $m\rho \gg 1$. (For $t < 0$ nothing new: at spacelike separation $D_W(-\xi) = D_W(\xi)$ ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-4|Theorem §C2.10.4]]) and $D_W$ depends on $\boldsymbol\xi$ only through $r$, so $D_W(-t, r) = D_W(t, r)$.)
+> For $0 < t < r$ write $\rho = \sqrt{r^2 - t^2}$. Find the saddle point, the exponent and the leading prefactor of $D_W(t, r)$ for $m\rho \gg 1$. (For $t < 0$ nothing new: at spacelike separation $D_W(-\xi) = D_W(\xi)$ ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-5|Theorem §C2.10.5]]) and $D_W$ depends on $\boldsymbol\xi$ only through $r$, so $D_W(-t, r) = D_W(t, r)$.)
 >
 > **Step 1** (one-dimensional form). As in Steps 2–3 of the second route of [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]], now with the factor $e^{-iE_{\mathbf p}t}$ kept (angular integral, then folding onto the whole line),
 >

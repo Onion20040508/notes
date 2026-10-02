@@ -146,7 +146,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 >
 > **Step 2** ($\theta' = \delta$). $\theta'[\varphi] = -\int_{-\infty}^\infty\theta\varphi' = -\int_0^\infty\varphi' = -[\varphi]_0^\infty = \varphi(0) = \delta[\varphi]$.
 >
-> ⚑ By-product: the jump of a step function is a delta function; this is the jump that makes the retarded function a Green's function ([[§C2.11 Green's Functions and Contours#^thm-c2-11-4|Theorem §C2.11.4]], Step 6) and the contact term of time ordering ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-1|Theorem §C2.12.1]], 4).
+> ⚑ By-product: the jump of a step function is a delta function; this is the jump that makes the retarded function a Green's function ([[§C2.11 Green's Functions and Contours#^thm-c2-11-5|Theorem §C2.11.5]], Step 6) and the contact term of time ordering ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-1|Theorem §C2.12.1]], 4).
 >
 > **Step 3** ($\delta'$). $\delta'[\varphi] = -\delta[\varphi'] = -\varphi'(0)$, which is the rule of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], Step 4, seen as a definition.
 >
@@ -298,7 +298,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 > **What the derivation shows.**
 > - The invariant measure $d^3p/2E_{\mathbf p}$ is the action of an invariant distribution; $1/2E_{\mathbf p}$ is the Jacobian of Theorem §CA.2.5.
 > - Assumptions: $m > 0$ for the shell (so the zeros are simple and $1/2E_{\mathbf p}$ is bounded), proper orthochronous $\Lambda$.
-> - The light-cone distribution $\operatorname{sgn}(x^0)\delta(x^2)$ is the massless commutator function ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-5|Theorem §C2.10.5]]).
+> - The light-cone distribution $\operatorname{sgn}(x^0)\delta(x^2)$ is the massless commutator function ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-7|Theorem §C2.10.7]]).
 
 ^der-ca-2-6
 
@@ -369,7 +369,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 >
 > **What the derivation shows.**
 > - At a common singular point the answer depends on how the factors were smoothed: the hallmark of an undefined product.
-> - Where C2 meets each case: $\theta\cdot\delta$ in the time derivative of a time-ordered product, where it multiplies an equal-time commutator ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-1|Theorem §C2.12.1]]); $\delta^3(\mathbf 0)$ in the zero-point energy ([[§C2.3 Energy, Momentum and the Zero-Point Energy#^thm-c2-3-2|Theorem §C2.3.2]]); $\phi(x)^2$ at one point, whose vacuum part is the Wightman function at coincident points ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2-12-3|Remark: The zero-point energy is the Wightman function at coincident points]]).
+> - Where C2 meets each case: $\theta\cdot\delta$ in the time derivative of a time-ordered product, where it multiplies an equal-time commutator ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-1|Theorem §C2.12.1]]); $\delta^3(\mathbf 0)$ in the zero-point energy ([[§C2.3 Energy, Momentum and the Zero-Point Energy#^thm-c2-3-3|Theorem §C2.3.3]]); $\phi(x)^2$ at one point, whose vacuum part is the Wightman function at coincident points ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2-12-3|Remark: The zero-point energy is the Wightman function at coincident points]]).
 
 ^der-ca-2-8
 
@@ -405,7 +405,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 >
 > **Step 5** (the coincident value). At $\mathbf k = \mathbf k'$ the box gives $V\delta_{\mathbf k\mathbf k} = V$, where $(2\pi)^3\delta^3(\mathbf 0)$ itself has no value ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 3). Equivalently, $\int_Vd^3x\,e^{i\mathbf 0\cdot\mathbf x} = V$.
 >
-> ⚑ By-product: the zero-point energy $\frac12(2\pi)^3\delta^3(\mathbf 0)\int\frac{d^3k}{(2\pi)^3}E_{\mathbf k}$ becomes $V\int\frac{d^3k}{(2\pi)^3}\frac{E_{\mathbf k}}2$, a volume times an energy density, and the density is still divergent at large $\mathbf k$ → [[§C2.3 Energy, Momentum and the Zero-Point Energy#^thm-c2-3-2|Theorem §C2.3.2]].
+> ⚑ By-product: the zero-point energy $\frac12(2\pi)^3\delta^3(\mathbf 0)\int\frac{d^3k}{(2\pi)^3}E_{\mathbf k}$ becomes $V\int\frac{d^3k}{(2\pi)^3}\frac{E_{\mathbf k}}2$, a volume times an energy density, and the density is still divergent at large $\mathbf k$ → [[§C2.3 Energy, Momentum and the Zero-Point Energy#^thm-c2-3-3|Theorem §C2.3.3]].
 >
 > **What the derivation shows.**
 > - $\delta^3(\mathbf 0)$ is an infrared divergence, the volume of space; it is a different divergence from the ultraviolet one of $\int d^3k\,E_{\mathbf k}$.
@@ -468,7 +468,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 >
 > **What the derivation shows.**
 > - The "$+i0$" of a boundary value is a limit in $\mathcal S'$; nothing is assigned a value at $\varepsilon = 0$. Analyticity and a polynomial bound are all that is needed.
-> - Instances in C2: the Wightman function from the lower half $\xi^0$-plane ([[§C2.8 The Wightman Function#^thm-c2-8-4|Theorem §C2.8.4]]), $1/(x \pm i0)$, and the Feynman propagator, analytic in $p^0$ off the two shifted poles.
+> - Instances in C2: the Wightman function from the lower half $\xi^0$-plane ([[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]]), $1/(x \pm i0)$, and the Feynman propagator, analytic in $p^0$ off the two shifted poles.
 
 ^der-ca-2-10
 
@@ -517,7 +517,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 > **What the derivation shows.**
 > - The real part is the principal value and the imaginary part the delta function, and nothing else enters; a smooth symmetric cutoff gives the same answer as the sharp one in the definition.
 > - The factor $\pi$ is the area of the Lorentzian, the same $\pi$ that $\int du/(1 + u^2)$ gives by residues.
-> - Used in: the massless commutator ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-5|Theorem §C2.10.5]]), the differences of Green's functions on the shell ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-6|Theorem §C2.12.6]]), the principal function ([[§C2.13 Wick Rotation and the Two-Point Family#^thm-c2-13-5|Theorem §C2.13.5]]).
+> - Used in: the massless commutator ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-7|Theorem §C2.10.7]]), the differences of Green's functions on the shell ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-9|Theorem §C2.12.9]]), the principal function ([[§C2.13 Wick Rotation and the Two-Point Family#^thm-c2-13-6|Theorem §C2.13.6]]).
 
 ^der-ca-2-11
 
@@ -619,7 +619,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 > **Step 7** (part 3; invariance sketch). Off the cone, $F_\varepsilon \to -1/x^2$ uniformly with all derivatives on compact sets, so the limit is smooth there; on the cone the delta term of part 2 is not smooth. For invariance: $1/(-z\cdot z)$, $z = x - i\eta$, is analytic on the tube $\eta \in V_+$ (the open forward cone), because $\operatorname{Im}(z\cdot z) = -2x\cdot\eta$ and $\operatorname{Re}(z\cdot z) = x^2 - \eta^2$ cannot both vanish there: $x\cdot\eta = 0$ with $\eta$ timelike forces $x^2 \le 0$, so $\operatorname{Re} < 0$. A proper orthochronous $\Lambda$ maps the tube to itself and leaves $z\cdot z$ unchanged; the boundary value does not depend on the direction of approach within $V_+$ ([[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], 2), so approaching along $(\varepsilon, \mathbf 0)$ or along $\Lambda(\varepsilon, \mathbf 0)$ gives the same distribution.
 >
 > **What the derivation shows.**
-> - $\frac{1}{4\pi^2}\cdot\frac{1}{-x^2 + i0\,x^0}$ is the massless Wightman function; its imaginary part, $-\frac{1}{4\pi}\operatorname{sgn}(x^0)\delta(x^2)$, is half the massless commutator function, and its real part gives the Hadamard function ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-5|Theorem §C2.10.5]]).
+> - $\frac{1}{4\pi^2}\cdot\frac{1}{-x^2 + i0\,x^0}$ is the massless Wightman function; its imaginary part, $-\frac{1}{4\pi}\operatorname{sgn}(x^0)\delta(x^2)$, is half the massless commutator function, and its real part gives the Hadamard function ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-7|Theorem §C2.10.7]]).
 > - The "$-i\varepsilon x^0$" prescription is a boundary value from the forward tube, which is why it is Lorentz invariant although it singles out $x^0$.
 
 ^der-ca-2-13
@@ -663,7 +663,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 >
 > **What the derivation shows.**
 > - Choosing a Green's function is choosing which homogeneous solution, built on the mass shell, to add; contours are this choice in momentum space ([[§C2.11 Green's Functions and Contours#^thm-c2-11-3|Theorem §C2.11.3]]).
-> - The differences $\tilde D_F - \tilde D_{\bar F}$ and $\tilde D_R - \tilde D_A$ are supported on the shell for this reason ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-6|Theorem §C2.12.6]]).
+> - The differences $\tilde D_F - \tilde D_{\bar F}$ and $\tilde D_R - \tilde D_A$ are supported on the shell for this reason ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-9|Theorem §C2.12.9]]).
 > - Part 3 removes the δ-ambiguity in extending $\theta(x^0)D(x)$ across $x = 0$ ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]).
 
 ^der-ca-2-14
@@ -719,7 +719,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 > [!derivation]- Derivation (stated; an example worked)
 > **Step 1** (the theorem). Not proved here: it rests on the nuclearity of $\mathcal S$ (Reed & Simon I, Ch. V).
 >
-> **Step 2** (example: the mode algebra, smeared). With $a(f) = \int\frac{d^3p}{(2\pi)^3}\overline{f(\mathbf p)}\,a_{\mathbf p}$ and $a^\dagger(g) = \int\frac{d^3q}{(2\pi)^3}g(\mathbf q)\,a^\dagger_{\mathbf q}$ for $f, g \in \mathcal S(\mathbb R^3)$, the commutator of [[§C2.2 Mode Expansion and the Mode Algebra#^thm-c2-2-5|Theorem §C2.2.5]] gives
+> **Step 2** (example: the mode algebra, smeared). With $a(f) = \int\frac{d^3p}{(2\pi)^3}\overline{f(\mathbf p)}\,a_{\mathbf p}$ and $a^\dagger(g) = \int\frac{d^3q}{(2\pi)^3}g(\mathbf q)\,a^\dagger_{\mathbf q}$ for $f, g \in \mathcal S(\mathbb R^3)$, the commutator of [[§C2.2 Mode Expansion and the Mode Algebra#^thm-c2-2-6|Theorem §C2.2.6]] gives
 >
 > $$
 > [a(f), a^\dagger(g)] = \int\frac{d^3p}{(2\pi)^3}\overline{f(\mathbf p)}\,g(\mathbf p) ,
@@ -732,11 +732,11 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 
 ^der-ca-2-16
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§C2.2 Mode Expansion and the Mode Algebra#^thm-c2-2-5|Theorem §C2.2.5]]
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§C2.2 Mode Expansion and the Mode Algebra#^thm-c2-2-6|Theorem §C2.2.6]]
 
 > [!remark] Remark: What the language buys in field theory
 > - *A Green's function is a linear map.* The sources of physics, smooth and of finite duration, are test functions, and $\phi = i\int D_C\,j$ defines the map $j \mapsto \phi$; "$D_C(x - y)$" is the kernel through which it is written, not a function with values. There is one such map per boundary condition ([[§C2.11 Green's Functions and Contours#^def-c2-11-1|Def. §C2.11.1]]).
-> - *Integrals that converge nowhere still define objects.* $\int d^3p\,e^{-ip\cdot\xi}/2E_{\mathbf p}$ converges for no real $\xi$, yet it is a tempered distribution, the boundary value of an analytic function ([[§C2.8 The Wightman Function#^thm-c2-8-4|Theorem §C2.8.4]]).
+> - *Integrals that converge nowhere still define objects.* $\int d^3p\,e^{-ip\cdot\xi}/2E_{\mathbf p}$ converges for no real $\xi$, yet it is a tempered distribution, the boundary value of an analytic function ([[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]]).
 > - *Products at a point are undefined.* The field is an operator-valued distribution, $\phi[f] = \int d^4x\,f(x)\phi(x)$, and $\phi(x)^2$ is a product of distributions at one point. That is the origin of the $\delta^3(0)$ in the zero-point energy and of normal ordering ([[§C2.3 Energy, Momentum and the Zero-Point Energy#^def-c2-3-1|Def. §C2.3.1]]), and later of every ultraviolet divergence.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.2, App. A §A.4 · PHY 513, Problem Set 4, Problem 0*
@@ -745,7 +745,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 
 > [!remark]- Connections
 > - The imaginary part of Sokhotski–Plemelj is the Lorentzian nascent delta function of [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-2|WO Def. §B4.4.2]]; the same Lorentzian is the line shape of a ringing oscillator ([[§B4.4 Fourier Transforms and the Delta Function#^ex-b4-4-1|WO Example §B4.4.1]]), whose width is the $\varepsilon$ that a damped mode carries ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]).
-> - Sokhotski–Plemelj was used inline before it had a home: the level shift (principal value) and decay rate ($-i\pi\delta$, Fermi's golden rule) of [[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]], and the imaginary part of the resolvent behind the optical theorem in [[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]. In field theory it gives the differences of Green's functions on the mass shell ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-6|Theorem §C2.12.6]]) and the massless commutator function ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-5|Theorem §C2.10.5]]).
+> - Sokhotski–Plemelj was used inline before it had a home: the level shift (principal value) and decay rate ($-i\pi\delta$, Fermi's golden rule) of [[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]], and the imaginary part of the resolvent behind the optical theorem in [[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]. In field theory it gives the differences of Green's functions on the mass shell ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-9|Theorem §C2.12.9]]) and the massless commutator function ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-7|Theorem §C2.10.7]]).
 > - Distributions as linear maps on test functions are a dual space: the generalized functions sit in the dual of the test functions as kets sit in the dual of bras; the position "eigenket" that is not a vector is the same phenomenon ([[§26 Position Eigenstates and Continuous Resolutions#^prop-26-3|556 Prop. §26.3]]). Operator-valued distributions (Def. §CA.2.8) carry the same idea one level up: $\phi(x)$ is no more an operator than $|x\rangle$ is a vector.
 > - The composition rule $\delta(f(x)) = \sum_i\delta(x - x_i)/|f'(x_i)|$ ([[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], justified as a limit in Theorem §CA.2.5) is what turns $\theta(p^0)\delta(p^2 - m^2)$ into the invariant measure $d^3p/2E_{\mathbf p}$ ([[§C2.4 Particles and Relativistic Normalization#^def-c2-4-2|Def. §C2.4.2]]) and $\delta(t^2 - r^2)$ into the light-cone deltas of the massless commutator.
 > - Limits commute with derivatives for distributions (Theorem §CA.2.4, 2) but not for functions ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]]); C2 needs the function version only where it wants a pointwise formula, as in the real-variable evaluation of the Wightman function ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]]).

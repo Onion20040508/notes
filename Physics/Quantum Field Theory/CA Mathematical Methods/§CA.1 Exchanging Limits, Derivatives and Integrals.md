@@ -32,7 +32,7 @@ Quantum field theory differentiates under integrals, lets regulators $e^{-\varep
 >
 > **What the derivation shows.**
 > - The whole content is that the dominating function does not depend on $n$ (or $h$); a bound that worsens as $\varepsilon \to 0$ is not enough.
-> - Used in: analyticity of the Wightman function in the lower half-plane ([[§C2.8 The Wightman Function#^thm-c2-8-4|Theorem §C2.8.4]]), its third evaluation ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]]), and Sokhotski–Plemelj ([[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]]).
+> - Used in: analyticity of the Wightman function in the lower half-plane ([[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]]), its third evaluation ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]]), and Sokhotski–Plemelj ([[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]]).
 
 ^der-ca-1-1
 
@@ -107,6 +107,6 @@ Quantum field theory differentiates under integrals, lets regulators $e^{-\varep
 
 > [!remark]- Connections
 > - Dominated convergence is [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]; the whole content of Theorem §CA.1.1 is that the dominating function does not depend on the parameter, and the same check recurs in Sokhotski–Plemelj ([[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]]), in nascent delta functions ([[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], 3) and in every boundary value ([[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]).
-> - Abel's theorem says that a regulator $e^{-\varepsilon p}$ is harmless when the integral exists; the equal-time Wightman function shows the other case, where $e^{-\varepsilon E_{\mathbf p}}$ is not a regulator to be removed but the definition of a boundary value ([[§C2.8 The Wightman Function#^thm-c2-8-4|Theorem §C2.8.4]], Step 5).
+> - Abel's theorem says that a regulator $e^{-\varepsilon p}$ is harmless when the integral exists; the equal-time Wightman function shows the other case, where $e^{-\varepsilon E_{\mathbf p}}$ is not a regulator to be removed but the definition of a boundary value ([[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]], Step 5).
 > - Theorem §CA.1.3 fails for distributions in the most useful way: there, limits and derivatives always commute ([[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], 2); C2 needs the function version only for pointwise formulas such as the real-variable evaluation of the Wightman function ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]]).
 > - **Used in** (C2 places): Theorem §CA.1.1 — analyticity of the Wightman function and its Euclidean and real-variable evaluations ([[§C2.8 The Wightman Function|§C2.8]], [[§C2.9 Explicit Forms of the Wightman Function|§C2.9]]), exchanges of integrals in the source problem ([[§C2.14 Particle Production by a Classical Source|§C2.14]]), the zero-point energy ([[§C2.3 Energy, Momentum and the Zero-Point Energy|§C2.3]]); Theorem §CA.1.2 — the spacelike Wightman function ([[§C2.9 Explicit Forms of the Wightman Function|§C2.9]]); Theorem §CA.1.3 — the third route to it ([[§C2.9 Explicit Forms of the Wightman Function|§C2.9]]).

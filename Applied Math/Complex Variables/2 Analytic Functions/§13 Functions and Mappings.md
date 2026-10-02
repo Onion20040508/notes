@@ -96,7 +96,7 @@ Suppose that $u + iv$ is the value of $f$ at $z = x + iy$, that is, $u + iv = f(
 
 ^def-13-3
 
-B&C states the definition for positive $n$; constants $a_0 \ne 0$ are the polynomials of degree $0$, which Exercise 10 of Section 20 uses. Polynomials and rational functions are elementary, but important, classes of functions of a complex variable; their limits, continuity and derivatives are found in [[§16 Theorems on Limits#^cor-16-3|Corollary §16.3]], [[§18 Continuity#^prop-18-1|Proposition §18.1]] and [[§20 Rules for Differentiation#^ex-20-3|Example §20.3]].
+B&C states the definition for positive $n$; constants $a_0 \ne 0$ are the polynomials of degree $0$, which Exercise 10 of Section 20 uses. Polynomials and rational functions are elementary, but important, classes of functions of a complex variable; their limits, continuity and derivatives are found in [[§16 Theorems on Limits#^cor-16-3|Corollary §16.3]], [[§18 Continuity#^prop-18-1|Proposition §18.1]] and [[§20 Rules for Differentiation#^ex-20-2|Example §20.2]].
 
 ## Multiple-Valued Functions
 

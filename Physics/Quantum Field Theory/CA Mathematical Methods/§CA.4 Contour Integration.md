@@ -149,7 +149,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2.9 Expl
 > **Step 3** (the propagator). $g = e^{-ip^0t}$, $h = (p^0)^2 - E^2$, $h'(p^0) = 2p^0$: at $p^0 = E$, $\frac{e^{-iEt}}{2E}$; at $p^0 = -E$, $\frac{e^{iEt}}{-2E}$. Equivalently, the partial fractions $\frac{1}{(p^0)^2 - E^2} = \frac{1}{2E}\bigl(\frac{1}{p^0 - E} - \frac{1}{p^0 + E}\bigr)$ (check: the numerator is $(p^0 + E) - (p^0 - E) = 2E$) display both residues at once.
 >
 > **What the derivation shows.**
-> - Same function, two poles, two different numbers: the residue at $+E$ carries the positive-energy wave, the one at $-E$ the negative-frequency wave that becomes the reversed Wightman function ([[§C2.11 Green's Functions and Contours#^thm-c2-11-4|Theorem §C2.11.4]]).
+> - Same function, two poles, two different numbers: the residue at $+E$ carries the positive-energy wave, the one at $-E$ the negative-frequency wave that becomes the reversed Wightman function ([[§C2.11 Green's Functions and Contours#^thm-c2-11-5|Theorem §C2.11.5]]).
 
 ^der-ca-4-4
 
@@ -212,7 +212,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2.9 Expl
 >
 > **What the derivation shows.**
 > - The sign of the time difference, causal order, decides the contour.
-> - Jordan needs no rate of decay of $g$ but needs $g \to 0$; for the propagator integrand the faster ML estimate suffices ([[§C2.11 Green's Functions and Contours#^thm-c2-11-4|Theorem §C2.11.4]], Step 2).
+> - Jordan needs no rate of decay of $g$ but needs $g \to 0$; for the propagator integrand the faster ML estimate suffices ([[§C2.11 Green's Functions and Contours#^thm-c2-11-5|Theorem §C2.11.5]], Step 2).
 
 ^der-ca-4-6
 
@@ -283,7 +283,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2.9 Expl
 > [!example] Example §CA.4.2: A Step Function from a Pole
 > Show that $\displaystyle\lim_{\varepsilon\to0^+}\int_{-\infty}^{\infty}\frac{dx}{2\pi i}\,\frac{e^{ikx}}{x - i\varepsilon} = \theta(k)$.
 >
-> The pole sits at $i\varepsilon$, just above the axis. For $k > 0$ close upward (Jordan): the pole is enclosed counterclockwise, and the result is $e^{-k\varepsilon} \to 1$. For $k < 0$ close downward: nothing is enclosed, and the result is $0$. A single pole infinitesimally off the axis produces a step function, and the side it sits on decides which sign of $k$ survives. With $k$ a time, this is causality in its most compact form, the mechanism of the retarded Green's function ([[§C2.11 Green's Functions and Contours#^thm-c2-11-4|Theorem §C2.11.4]]).
+> The pole sits at $i\varepsilon$, just above the axis. For $k > 0$ close upward (Jordan): the pole is enclosed counterclockwise, and the result is $e^{-k\varepsilon} \to 1$. For $k < 0$ close downward: nothing is enclosed, and the result is $0$. A single pole infinitesimally off the axis produces a step function, and the side it sits on decides which sign of $k$ survives. With $k$ a time, this is causality in its most compact form, the mechanism of the retarded Green's function ([[§C2.11 Green's Functions and Contours#^thm-c2-11-5|Theorem §C2.11.5]]).
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (worked example (iii))*
 
@@ -348,7 +348,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2.9 Expl
 
 > [!remark]- Connections
 > - Example §CA.4.1 is the one-dimensional cousin of the Yukawa potential ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]) and of the free scattering Green's function $-e^{ik\rho}/4\pi\rho$, whose $k'$-plane integral closes the two exponentials on opposite sides exactly as here ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]]).
-> - Example §CA.4.2 is the transform behind every causal response: the energy transform of a retarded propagator is analytic in the upper half-plane ([[§C4.1 Propagators#^thm-c4-1-7|QM Theorem §C4.1.7]]), the impulse response of a damped oscillator vanishes before the kick ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]], whose transform $\chi(\omega)$ has its poles in one half-plane), and the retarded Green's function of the Klein–Gordon field passes above both poles ([[§C2.11 Green's Functions and Contours#^thm-c2-11-4|Theorem §C2.11.4]]).
+> - Example §CA.4.2 is the transform behind every causal response: the energy transform of a retarded propagator is analytic in the upper half-plane ([[§C4.1 Propagators#^thm-c4-1-7|QM Theorem §C4.1.7]]), the impulse response of a damped oscillator vanishes before the kick ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]], whose transform $\chi(\omega)$ has its poles in one half-plane), and the retarded Green's function of the Klein–Gordon field passes above both poles ([[§C2.11 Green's Functions and Contours#^thm-c2-11-5|Theorem §C2.11.5]]).
 > - The half-residue lemma is what QM uses for the imaginary part of the resolvent in the optical theorem ([[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]); its distribution form is [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]].
 > - The identity theorem makes analytic continuation unique; it is what turns one Euclidean evaluation into the Wightman function everywhere ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-2|Theorem §C2.9.2]]) and what extends the Gaussian integral to complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]).
 > - Green's theorem in the plane ([[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]]) is the whole proof of Cauchy's theorem for smooth $u$, $v$; Cauchy–Riemann says that $u\,dx - v\,dy$ and $v\,dx + u\,dy$ are closed forms.

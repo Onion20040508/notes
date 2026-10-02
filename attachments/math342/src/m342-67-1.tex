@@ -1,0 +1,21 @@
+% Figure for Complex Variables §67.
+\begin{tikzpicture}[line cap=round, line join=round]
+  \draw[-stealth, thin] (-3.0,0) -- (3.2,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,-2.9) -- (0,3.0) node[above, font=\scriptsize] {$y$};
+  \draw[gray, dashed, line width=0.6pt] (0,0) circle (0.7);
+  \draw[gray, dashed, line width=0.6pt] (0,0) circle (2.6);
+  \draw[figB, line width=0.9pt, postaction={decorate}, decoration={markings, mark=at position 0.62 with {\arrow{stealth}}}] (0,0) circle (2.35);
+  \draw[figB, line width=0.9pt, postaction={decorate}, decoration={markings, mark=at position 0.62 with {\arrow{stealth}}}] (0,0) circle (0.95);
+  \draw[figG, line width=0.8pt] plot[smooth cycle] coordinates {(1.720,0.000) (1.757,0.231) (1.752,0.469) (1.700,0.704) (1.602,0.925) (1.462,1.122) (1.287,1.287) (1.084,1.413) (0.865,1.498) (0.639,1.543) (0.416,1.551) (0.201,1.528) (0.000,1.480) (-0.186,1.415) (-0.359,1.339) (-0.520,1.257) (-0.675,1.169) (-0.826,1.077) (-0.976,0.976) (-1.126,0.864) (-1.273,0.735) (-1.413,0.585) (-1.540,0.413) (-1.645,0.217) (-1.720,0.000) (-1.757,-0.231) (-1.752,-0.469) (-1.700,-0.704) (-1.602,-0.925) (-1.462,-1.122) (-1.287,-1.287) (-1.084,-1.413) (-0.865,-1.498) (-0.639,-1.543) (-0.416,-1.551) (-0.201,-1.528) (-0.000,-1.480) (0.186,-1.415) (0.359,-1.339) (0.520,-1.257) (0.675,-1.169) (0.826,-1.077) (0.976,-0.976) (1.126,-0.864) (1.273,-0.735) (1.413,-0.585) (1.540,-0.413) (1.645,-0.217)};
+  \draw[figG, line width=0.8pt, -{Stealth[length=5pt]}] (0.675,-1.169) -- (0.733,-1.135);
+  \draw[figR, line width=0.8pt, postaction={decorate}, decoration={markings, mark=at position 0.30 with {\arrow{stealth}}}] (-1.000,1.732) circle (0.28);
+  \fill[figR] (-1.000,1.732) circle (1.4pt);
+  \node[font=\scriptsize, figR] at (-0.880,1.612) {$z$};
+  \node[font=\scriptsize, figR] at (-1.370,2.082) {$\gamma$};
+  \node[font=\scriptsize, figB] at (0.8,-0.8) {$C_1$};
+  \node[font=\scriptsize, figB] at (-1.85,-1.85) {$C_2$};
+  \node[font=\scriptsize, figG] at (1.05,-1.5) {$C$};
+  \node[font=\scriptsize, gray] at (0.42,0.17) {$R_1$};
+  \node[font=\scriptsize, gray] at (2.82,0.2) {$R_2$};
+  \node[below left, font=\scriptsize] at (0,0) {$O$};
+\end{tikzpicture}

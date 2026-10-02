@@ -1,0 +1,16 @@
+% Figure for Complex Variables §134.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=10cm, height=6.2cm, xmin=-3.3, xmax=3.6, ymin=0, ymax=9.6,
+      axis lines=middle, xtick={-3.14159,-1.5708,1.5708,3.14159}, xticklabels={$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$},
+      ytick={1,3,9}, yticklabels={$1$,$3$,$9$},
+      xlabel={$\phi - \theta$}, ylabel={$P(1, r, \phi - \theta)$}, xlabel style={anchor=west}, ylabel style={anchor=south}]
+    \addplot[figO, domain=-3.14159:3.14159, samples=200] {1};
+    \addplot[figG, domain=-3.14159:3.14159, samples=300] {(1-0.5^2)/(1-2*0.5*cos(deg(x))+0.5^2)};
+    \addplot[figB, domain=-3.14159:3.14159, samples=400] {(1-0.8^2)/(1-2*0.8*cos(deg(x))+0.8^2)};
+  \end{axis}
+  \begin{scope}[font=\scriptsize, shift={(7.0cm,4.1cm)}]
+    \draw[figO, line width=0.9pt] (0,0) -- (0.5,0) node[right, black] {$r = 0$};
+    \draw[figG, line width=0.9pt] (0,-0.4) -- (0.5,-0.4) node[right, black] {$r = 0.5$};
+    \draw[figB, line width=0.9pt] (0,-0.8) -- (0.5,-0.8) node[right, black] {$r = 0.8$};
+  \end{scope}
+\end{tikzpicture}

@@ -1,0 +1,31 @@
+% Figure for Complex Variables §127.
+\begin{tikzpicture}[line cap=round, line join=round, >=Stealth]
+  % z plane
+  \begin{scope}
+    \draw[->, thin] (-2.6,0) -- (2.7,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, thin] (0,-0.3) -- (0,1.6) node[above, font=\scriptsize] {$y$};
+    \draw[figR, very thick, ->] (-2.5,0) -- (-1.8,0);
+    \draw[figB, very thick, ->] (-1,0) -- (-0.45,0);
+    \draw[figG, very thick, ->] (0,0) -- (0.55,0);
+    \draw[figO, very thick, ->] (1,0) -- (1.8,0);
+    \foreach \x/\l in {-1/{-1}, 0/{0}, 1/{1}} \fill (\x,0) circle (1.3pt) node[below, font=\scriptsize] {$\l$};
+    \node[font=\scriptsize] at (1.6,1.2) {$z$ plane};
+  \end{scope}
+  % w plane, square of side b = 1.311 scaled by 1.6
+  \begin{scope}[shift={(4.6,-0.2)}]
+    \draw[->, thin] (-0.4,0) -- (2.8,0) node[right, font=\scriptsize] {$u$};
+    \draw[->, thin] (0,-0.3) -- (0,2.7) node[above, font=\scriptsize] {$v$};
+    \draw[figR, very thick] (2.098,2.098) -- (0,2.098);
+    \draw[figB, very thick] (0,2.098) -- (0,0);
+    \draw[figG, very thick] (0,0) -- (2.098,0);
+    \draw[figO, very thick] (2.098,0) -- (2.098,2.098);
+    \draw[figR, very thick, ->] (1.5,2.098) -- (0.9,2.098);
+    \draw[figB, very thick, ->] (0,1.5) -- (0,0.9);
+    \draw[figG, very thick, ->] (0.6,0) -- (1.2,0);
+    \draw[figO, very thick, ->] (2.098,0.6) -- (2.098,1.2);
+    \fill (0,2.098) circle (1.3pt) node[left, font=\scriptsize] {$w_1 = bi$};
+    \fill (0,0) circle (1.3pt) node[below left, font=\scriptsize] {$w_2 = 0$};
+    \fill (2.098,0) circle (1.3pt) node[below, font=\scriptsize] {$w_3 = b$};
+    \fill (2.098,2.098) circle (1.3pt) node[above right, font=\scriptsize] {$w_4 = b + ib$};
+  \end{scope}
+\end{tikzpicture}

@@ -1,0 +1,14 @@
+% Figure for Complex Variables §63.
+\begin{tikzpicture}[line cap=round, line join=round]
+  \draw[-stealth, thin] (-2.9,0) -- (3.1,0) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin] (0,-2.8) -- (0,2.9) node[above, font=\scriptsize] {$y$};
+  \draw[gray, dashed, line width=0.6pt] (0,0) circle (2.4);
+  \draw[figB, line width=0.9pt, postaction={decorate}, decoration={markings, mark=at position 0.62 with {\arrow{stealth}}}] (0,0) circle (1.8);
+  \draw[figO, line width=0.6pt] (0,0) -- (150:1.1) node[pos=0.55, above, font=\scriptsize, black] {$r$};
+  \draw[figO, line width=0.6pt] (0,0) -- (50:1.8) node[pos=0.55, right, font=\scriptsize, black] {$r_0$};
+  \fill[figR] (150:1.1) circle (1.6pt) node[above left, font=\scriptsize] {$z$};
+  \fill (50:1.8) circle (1.4pt) node[above right, font=\scriptsize] {$s$};
+  \node[font=\scriptsize, figB] at (-1.15,-1.75) {$C_0$};
+  \node[font=\scriptsize, gray] at (2.62,-0.22) {$R_0$};
+  \node[below left, font=\scriptsize] at (0,0) {$O$};
+\end{tikzpicture}

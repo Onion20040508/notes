@@ -89,7 +89,7 @@ This section tests the theorem of [[§21 Cauchy–Riemann Equations|§21]] (Theo
 > \frac{\Delta w}{\Delta z} = \Big(\frac{1 - i}{1 + i}\Big)^2 = (-i)^2 = -1 .
 > $$
 >
-> So $\Delta w/\Delta z$ tends to $1$ as $\Delta z \to 0$ along the axes and to $-1$ along the diagonal. A limit is unique ([[§15 Limits|§15]]), so $\lim_{\Delta z\to0}\Delta w/\Delta z$ does not exist. Horizontal and vertical approaches alone, which are all that the Cauchy–Riemann equations see, could not have detected this.
+> So $\Delta w/\Delta z$ tends to $1$ as $\Delta z \to 0$ along the axes and to $-1$ along the diagonal. A limit is unique ([[§15 Limits#^thm-15-1|Theorem §15.1]]), so $\lim_{\Delta z\to0}\Delta w/\Delta z$ does not exist (the two-path test, [[§15 Limits#^cor-15-2|Corollary §15.2]]). Horizontal and vertical approaches alone, which are all that the Cauchy–Riemann equations see, could not have detected this.
 >
 > *B&C: Sec. 22, Example 3; Sec. 20, Exercise 9*
 
@@ -124,7 +124,7 @@ This section tests the theorem of [[§21 Cauchy–Riemann Equations|§21]] (Theo
 > \frac{e^{-iy} - 1}{iy} \;\longrightarrow\; \frac{1}{i}\,\frac{d}{dy}e^{-iy}\Big|_{y=0} = \frac{-i}{i} = -1 .
 > $$
 >
-> Two approaches give different limits, so there is no limit. (These two numbers are $u_x + iv_x = 1$ and $-i(u_y + iv_y) = -1$ at the origin, the two expressions for $f'(0)$ in §21; they disagree because $u_x \ne v_y$ there.)
+> Two approaches give different limits, so there is no limit ([[§15 Limits#^cor-15-2|Corollary §15.2]]). (These two numbers are $u_x + iv_x = 1$ and $-i(u_y + iv_y) = -1$ at the origin, the two expressions for $f'(0)$ in §21; they disagree because $u_x \ne v_y$ there.)
 >
 > *B&C: Sec. 24, Exercise 1(d); Source: 342 HW 3, Q2(c); 342 practice final (Fall 1999), Q7a*
 

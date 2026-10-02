@@ -176,7 +176,7 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 >
 > **What the derivation shows.**
 > - Every rule is a substitution or a factorization; the only analysis is in rule 1, which is a statement about generalized functions.
-> - Used in: the Green's function as division by $m^2 - p^2$ ([[§C2.11 Green's Functions and Contours#^thm-c2-11-2|Theorem §C2.11.2]]), the canonical relations recovered from mode integrals ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-7|Theorem §C2.10.7]]), the source transform $\tilde j$ ([[§C2.14 Particle Production by a Classical Source#^thm-c2-14-1|Theorem §C2.14.1]]).
+> - Used in: the Green's function as division by $m^2 - p^2$ ([[§C2.11 Green's Functions and Contours#^thm-c2-11-2|Theorem §C2.11.2]]), the canonical relations recovered from mode integrals ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-9|Theorem §C2.10.9]]), the source transform $\tilde j$ ([[§C2.14 Particle Production by a Classical Source#^thm-c2-14-1|Theorem §C2.14.1]]).
 
 ^der-ca-3-4
 
@@ -322,7 +322,7 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 >
 > **Step 3** (gradients). Take $g \to \partial_ig$ and sum over $i$: $\int_V\nabla f\cdot\nabla g = \oint_{\partial V}f\,\hat n\cdot\nabla g - \int_Vf\nabla^2g$. With $V$ a ball of radius $L \to \infty$, the surface term is dropped when $f\,\partial_rg$ falls off faster than $1/L^2$.
 >
-> ⚑ By-product: "fields fall off at infinity" is an assumption about the states in which the operators are evaluated (wave packets, not plane waves); it is made every time a surface term is dropped → [[§C2.7 Heisenberg Fields#^thm-c2-7-2|§C2.7, Theorem §C2.7.2, Step 5]].
+> ⚑ By-product: "fields fall off at infinity" is an assumption about the states in which the operators are evaluated (wave packets, not plane waves); it is made every time a surface term is dropped → [[§C2.7 Heisenberg Fields#^thm-c2-7-3|§C2.7, Theorem §C2.7.3, Step 5]].
 >
 > **Step 4** (delta function). With $f = \delta^3(\mathbf x - \mathbf y)$ as a function of $\mathbf y$, the surface term vanishes because the delta function is zero on $\partial V$ (its support, the point $\mathbf x$, lies inside); so $\int d^3y\,\delta^3(\mathbf x - \mathbf y)\,\partial_ig(\mathbf y) = -\int d^3y\,\partial_{y^i}\delta^3(\mathbf x - \mathbf y)\,g(\mathbf y)$, i.e. $\int d^3y\,g\,\nabla_{\mathbf y}\delta^3 = -\nabla g(\mathbf x)$. This is also the *definition* of the derivative of $\delta$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]).
 >
@@ -443,7 +443,7 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 > **What the derivation shows.**
 > - The $i\varepsilon$ denominators are limits in $\mathcal S'$; they agree with $1/(p^2 - m^2)$ off the mass shell and differ only on it, by $\delta(p^2 - m^2)$ or $\operatorname{sgn}(p^0)\delta(p^2 - m^2)$: so $\varepsilon = 0$ may be set wherever $p^2 \ne m^2$ ([[§CA.2 Generalized Functions#^cau-ca-2-1|§CA.2, Caution: What the formula does and does not say]]).
 > - Both shell terms are Lorentz invariant ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]): the Feynman prescription is manifestly so, the retarded one under orthochronous transformations only.
-> - Used in: the Feynman propagator and the differences on the shell ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-5|Theorem §C2.12.5]], [[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-6|Theorem §C2.12.6]]), the family relations ([[§C2.13 Wick Rotation and the Two-Point Family#^thm-c2-13-5|Theorem §C2.13.5]]).
+> - Used in: the Feynman propagator and the differences on the shell ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-7|Theorem §C2.12.7]], [[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-9|Theorem §C2.12.9]]), the family relations ([[§C2.13 Wick Rotation and the Two-Point Family#^thm-c2-13-6|Theorem §C2.13.6]]).
 
 ^der-ca-3-11
 
@@ -482,7 +482,7 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 >
 > **What the derivation shows.**
 > - Lorentz invariance reduces a four-dimensional transform to a one-dimensional integral: $J_1$ (and then $K_1$) in Euclidean signature, a sine transform or a radial integral in Minkowski signature after a choice of frame.
-> - Used in: Lorentz invariance of $D_W$ as a distribution ([[§C2.8 The Wightman Function#^thm-c2-8-2|Theorem §C2.8.2]]), the frame choices of [[§C2.9 Explicit Forms of the Wightman Function|§C2.9]], and $D_E$ in position space ([[§C2.13 Wick Rotation and the Two-Point Family|§C2.13]]).
+> - Used in: Lorentz invariance of $D_W$ as a distribution ([[§C2.8 The Wightman Function#^thm-c2-8-3|Theorem §C2.8.3]]), the frame choices of [[§C2.9 Explicit Forms of the Wightman Function|§C2.9]], and $D_E$ in position space ([[§C2.13 Wick Rotation and the Two-Point Family|§C2.13]]).
 
 ^der-ca-3-12
 
@@ -490,7 +490,7 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 
 > [!remark]- Connections
 > - The angular integral is the first step of every position-space propagator: the Wightman function ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]]), the scattering Green's function $-e^{ik\rho}/4\pi\rho$ ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]]) and the Yukawa potential ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]).
-> - Integration by parts with a delta function is how $[\pi, H]$ acquires $\nabla^2\phi$ ([[§C2.7 Heisenberg Fields#^thm-c2-7-2|Theorem §C2.7.2]]); the divergence theorem behind it is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]], and the four-dimensional version is the step in every Euler–Lagrange and Noether derivation (QFT C1, planned).
+> - Integration by parts with a delta function is how $[\pi, H]$ acquires $\nabla^2\phi$ ([[§C2.7 Heisenberg Fields#^thm-c2-7-3|Theorem §C2.7.3]]); the divergence theorem behind it is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]], and the four-dimensional version is the step in every Euler–Lagrange and Noether derivation (QFT C1, planned).
 > - Plancherel with $(2\pi)^{-3}$ on the momentum side is why the norm of a one-particle wave packet is $\int\frac{d^3p}{(2\pi)^32E_{\mathbf p}}|g|^2$, and why the number of particles radiated by a source is finite when $\tilde j$ is a Schwartz function ([[§C2.14 Particle Production by a Classical Source|§C2.14]]).
 > - The damping factor of Theorem §CA.3.10 is the impulse response of a damped oscillator seen from the frequency side ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]]) and the adiabatic switching $e^{\eta t}$, $\eta \to 0^+$, of time-dependent perturbation theory ([[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]]).
 > - Inversion for functions that are only piecewise smooth and integrable, with the midpoint value at jumps, is the Fourier integral theorem of [[§14 Fourier Integral#^thm-14-1|341 Thm. §14.1]]; Theorem §CA.3.1 trades that generality for Schwartz functions, the class on which the transform extends to distributions.
