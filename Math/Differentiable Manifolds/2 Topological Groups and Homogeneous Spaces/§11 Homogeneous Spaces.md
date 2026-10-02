@@ -54,6 +54,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Home: [[§24 Stabilizers and Fixed Points#^def-24-1|493 Def. §24.1 (Stabilizer)]], written $\operatorname{Stab}(x_0)$ there.
+> - Used in Quantum Field Theory: the little group of a particle, the isotropy subgroup of its standard momentum in the Lorentz group — [[§C3.5★ Particle States and the Little Group#^def-c3-5-1|QFT Def. §C3.5.1]].
 
 > [!theorem] Proposition §11.1: The Isotropy Is a Subgroup
 > $H_{x_0}$ is a subgroup of $G$.
@@ -258,6 +259,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - Home of this bijection: [[§28 Orbit–Stabilizer#^prop-28-2|493 §28.2 (The Orbit Bijection)]], same proof, for any orbit; hub [[Orbit–Stabilizer Theorem]].
 > - Conversely every $G/H$ carries a transitive action with isotropy $H$ at $eH$: [[§29 G Acting on Coset Spaces#^prop-29-1|493 §29.1]].
+> - Used in Quantum Field Theory: the orbit of a particle's momentum as a coset space of the Lorentz group, the mass hyperboloid $SO^+(1,3)/SO(3)$ as the sphere is $SO(3)/SO(2)$ — [[§C3.5★ Particle States and the Little Group#^rem-c3-5-1|QFT Remark: What the definition fixes, and what it leaves free]].
 
 > [!example] Example §11.3: The Sphere as a Homogeneous Space
 > $\mathrm{SO}(3)$ acts transitively on $S^2$: the orbit of $e_3$ is the whole sphere (the argument of Example [[§10 Group Actions and Orbit Spaces#^ex-10-5|§10.5]] with $r = 1$). By Example [[§11 Homogeneous Spaces#^ex-11-2|§11.2]] the isotropy of $e_3$ is the copy $H$ of $\mathrm{SO}(2)$ in the upper-left block. Hence, as sets (and, by the [[§12 The Topology of G∕H and Real Grassmannians#^thm-12-3|theorem below]], as spaces),

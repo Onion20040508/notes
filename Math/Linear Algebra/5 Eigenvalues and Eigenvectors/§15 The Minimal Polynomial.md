@@ -27,6 +27,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (by the Fundamental Theorem of Algebra the characteristic equation of an $n\times n$ matrix has $n$ complex roots, counted with multiplicity; they are eigenvalues in the sense of [[§36 Complex Eigenvalues#^def-36-1|235 Def. §36.1]]).
+> - Used in Quantum Field Theory: an intertwiner of an irreducible complex representation with itself has an eigenvalue, hence is a multiple of the identity (Schur's lemma); $J^3$ on a finite-dimensional complex representation of the rotation algebra has an eigenvector, the start of the highest-weight construction — [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-3|QFT Theorem §C3.1.3]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-6|QFT Theorem §C3.1.6]].
 
 > [!example] Example 5.20: An operator on a complex vector space with no eigenvalues (p. 143)
 > $T\in\Lin(\Poly(\C))$, $(Tp)(z)=zp(z)$. For $p\ne0$, $\deg Tp=\deg p+1$, so $Tp$ is never a multiple of $p$: $T$ has **no eigenvalues**, even over $\C$. This does not contradict [[Existence of eigenvalues|5.19]] because $\Poly(\C)$ is infinite-dimensional. (Compare the position operator $\hat x$ in quantum mechanics, which has no eigenvectors in $L^2$.)

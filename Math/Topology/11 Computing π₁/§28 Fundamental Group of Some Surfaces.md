@@ -117,6 +117,9 @@ tags: [topology, math590]
 
 *Uses:* [[Sⁿ is Simply Connected for n ≥ 2|§27.3]], [[Properties of the Lifting Correspondence|§24.9]], [[§23 The Fundamental Group#^cor-23-6|§23.6]], [[Fundamental Group of the Circle|§24.10]]
 
+> [!remark]- Connections
+> - Used in Quantum Field Theory: for $n = 3$, $SO(3) \cong P^3$ has $\pi_1 \cong \mathbb{Z}/2\mathbb{Z}$: the loop of rotations from $0$ to $2\pi$ about an axis is not contractible and the $4\pi$ loop is, which is why a spin-½ state may change sign under a $2\pi$ rotation — [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|QFT Theorem §C3.1.8]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-9|QFT Theorem §C3.1.9]].
+
 ## The Wedge Sum
 
 > [!definition] Definition §28.3: Wedge Sum
