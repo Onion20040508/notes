@@ -138,25 +138,25 @@ around the positively oriented boundary of the half disk $|z| \le R$, $\operator
 > Let $f = p/q$ be as just described, and let $R > |z_k|$ for $k = 1, \ldots, n$. Then
 >
 > $$
-> \int_{-R}^{R} f(x)\,dx = 2\pi i\sum_{k=1}^{n}\operatorname*{Res}_{z=z_k} f(z) - \int_{C_R} f(z)\,dz . \qquad (9)
+> \int_{-R}^{R} f(x)\,dx = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k} f(z) - \int_{C_R} f(z)\,dz . \qquad (9)
 > $$
 >
 > If $\lim_{R\to\infty}\int_{C_R} f(z)\,dz = 0$, then
 >
 > $$
-> \text{P.V.}\int_{-\infty}^{\infty} f(x)\,dx = 2\pi i\sum_{k=1}^{n}\operatorname*{Res}_{z=z_k} f(z) ; \qquad (10)
+> \text{P.V.}\int_{-\infty}^{\infty} f(x)\,dx = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k} f(z) ; \qquad (10)
 > $$
 >
 > and if in addition $f$ is even,
 >
 > $$
-> \int_{-\infty}^{\infty} f(x)\,dx = 2\pi i\sum_{k=1}^{n}\operatorname*{Res}_{z=z_k} f(z) \qquad (11)
+> \int_{-\infty}^{\infty} f(x)\,dx = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k} f(z) \qquad (11)
 > $$
 >
 > and
 >
 > $$
-> \int_0^{\infty} f(x)\,dx = \pi i\sum_{k=1}^{n}\operatorname*{Res}_{z=z_k} f(z) . \qquad (12)
+> \int_0^{\infty} f(x)\,dx = \pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k} f(z) . \qquad (12)
 > $$
 >
 > *B&C: Sec. 85, equations (9)–(12)*
@@ -167,7 +167,7 @@ around the positively oriented boundary of the half disk $|z| \le R$, $\operator
 > As a quotient of polynomials, $f$ is analytic except at the zeros of $q$, which are isolated singular points. None lies on the closed contour $C$ formed by the segment and $C_R$: the segment is real and $q$ has no real zeros, and every zero of $q$ in the upper half plane has modulus less than $R$. Inside $C$ lie exactly $z_1, \ldots, z_n$ (the zeros of $q$ below the axis are outside). Cauchy's residue theorem ([[§76 Cauchy's Residue Theorem|§76]], Theorem) gives
 >
 > $$
-> \int_{\text{segment}} f(z)\,dz + \int_{C_R} f(z)\,dz = 2\pi i\sum_{k=1}^{n}\operatorname*{Res}_{z=z_k} f(z) .
+> \int_{\text{segment}} f(z)\,dz + \int_{C_R} f(z)\,dz = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k} f(z) .
 > $$
 >
 > With the parametrization $z = x$ $(-R \le x \le R)$ of the segment, $z'(x) = 1$, the first integral is $\int_{-R}^{R} f(x)\,dx$ ([[§44 Contour Integrals|§44]]), and (9) follows.
@@ -193,7 +193,7 @@ Whether the arc integral tends to zero depends only on the degrees. B&C checks i
 > Consequently $\lim_{R\to\infty}\int_{C_R} f(z)\,dz = 0$, the improper integral (2) converges (absolutely), and
 >
 > $$
-> \int_{-\infty}^{\infty} f(x)\,dx = 2\pi i\sum_{k=1}^{n}\operatorname*{Res}_{z=z_k} f(z) ,
+> \int_{-\infty}^{\infty} f(x)\,dx = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k} f(z) ,
 > $$
 >
 > whether or not $f$ is even.
@@ -268,7 +268,7 @@ Whether the arc integral tends to zero depends only on the degrees. B&C checks i
 > **(a)** $z^2 + 2z + 2 = (z + 1)^2 + 1$ has the zeros $-1 \pm i$; only $z_1 = -1 + i$ is above the axis, and it is a simple zero. By [[§83 Zeros and Poles|§83]] (Theorem 2),
 >
 > $$
-> \operatorname*{Res}_{z=-1+i}\frac{1}{z^2 + 2z + 2} = \frac{1}{2z + 2}\Big|_{z=-1+i} = \frac{1}{2i}, \qquad \text{P.V.}\int_{-\infty}^{\infty}\frac{dx}{x^2 + 2x + 2} = 2\pi i\cdot\frac{1}{2i} = \pi .
+> \operatorname{Res}_{z=-1+i}\frac{1}{z^2 + 2z + 2} = \frac{1}{2z + 2}\Big|_{z=-1+i} = \frac{1}{2i}, \qquad \text{P.V.}\int_{-\infty}^{\infty}\frac{dx}{x^2 + 2x + 2} = 2\pi i\cdot\frac{1}{2i} = \pi .
 > $$
 >
 > (Check: $\int\frac{dx}{(x + 1)^2 + 1} = \tan^{-1}(x + 1)$, which increases by $\pi$ over the line.)
@@ -276,13 +276,13 @@ Whether the arc integral tends to zero depends only on the degrees. B&C checks i
 > **(b)** Now $q(z) = (z^2 + 1)(z^2 + 2z + 2)$ has the simple zeros $i$ and $-1 + i$ above the axis. With $f(z) = z/q(z)$:
 >
 > $$
-> \operatorname*{Res}_{z=i} f(z) = \frac{i}{2i\,(i^2 + 2i + 2)} = \frac{1}{2(1 + 2i)} = \frac{1 - 2i}{10} ,
+> \operatorname{Res}_{z=i} f(z) = \frac{i}{2i\,(i^2 + 2i + 2)} = \frac{1}{2(1 + 2i)} = \frac{1 - 2i}{10} ,
 > $$
 >
 > and, using $(-1 + i)^2 = -2i$,
 >
 > $$
-> \operatorname*{Res}_{z=-1+i} f(z) = \frac{z}{(z^2 + 1)(2z + 2)}\Big|_{z=-1+i} = \frac{-1 + i}{(1 - 2i)(2i)} = \frac{-1 + i}{4 + 2i} = \frac{-1 + 3i}{10} .
+> \operatorname{Res}_{z=-1+i} f(z) = \frac{z}{(z^2 + 1)(2z + 2)}\Big|_{z=-1+i} = \frac{-1 + i}{(1 - 2i)(2i)} = \frac{-1 + i}{4 + 2i} = \frac{-1 + 3i}{10} .
 > $$
 >
 > The sum is $\frac{i}{10}$, so

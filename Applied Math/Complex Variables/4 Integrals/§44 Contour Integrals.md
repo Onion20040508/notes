@@ -205,9 +205,9 @@ The value does not depend on the parametrization used, for the changes of parame
 >
 > **(b)** In the same way, $\int_C \sin(\bar z)\,dz = \int_C \sin(1/z)\,dz$ when $C$ is $|z| = 1$ counterclockwise, since $\bar z = e^{-i\theta} = 1/z$ on $C$; both equal $\int_0^{2\pi}\sin(e^{-i\theta})\,ie^{i\theta}\,d\theta$.
 >
-> A contour integral sees only the values of the integrand on $C$. The functions $e^{\bar z}$ and $\sin\bar z$ are nowhere analytic, but on $C$ they coincide with $e^{4/z}$ and $\sin(1/z)$, which are analytic except at $0$; that is why the exams then evaluate the integrals by residues ([[§76 Cauchy's Residue Theorem|§76]]), as $2\pi i\operatorname{Res}_{z=0}e^{4/z} = 8\pi i$ and $2\pi i\operatorname{Res}_{z=0}\sin(1/z) = 2\pi i$.
+> A contour integral sees only the values of the integrand on $C$. The functions $e^{\bar z}$ and $\sin\bar z$ are nowhere analytic, but on $C$ they coincide with $e^{4/z}$ and $\sin(1/z)$, which are analytic except at $0$; that is why the exams then evaluate the integrals by residues ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]), as $2\pi i\operatorname{Res}_{z=0}e^{4/z} = 8\pi i$ and $2\pi i\operatorname{Res}_{z=0}\sin(1/z) = 2\pi i$.
 >
-> **(c)** The values also follow from the definition directly. With the series $e^w = \sum_{n \ge 0} w^n/n!$ ([[§64 Examples (Proof of Taylor's Theorem)|§64]]),
+> **(c)** The values also follow from the definition directly. With the series $e^w = \sum_{n \ge 0} w^n/n!$ ([[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|Proposition §64.1]]),
 >
 > $$
 > e^{2e^{-i\theta}}\,2ie^{i\theta} = \sum_{n=0}^{\infty}\frac{2^{n+1}i}{n!}\,e^{i\theta}e^{-in\theta} .

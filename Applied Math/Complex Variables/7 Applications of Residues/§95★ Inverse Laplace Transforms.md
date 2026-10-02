@@ -46,7 +46,7 @@ $$
 now for complex $s$. If $f$ is piecewise continuous on every finite interval and $|f(t)| \le Ke^{at}$ for $t \ge 0$, the integral converges absolutely for $\operatorname{Re}s > a$, since $|e^{-st}f(t)| \le Ke^{-(\operatorname{Re}s - a)t}$; this is the proof of [[§21 Definition of the Laplace Transform#^thm-21-2|331 Thm. §21.2]] with $\operatorname{Re}s$ in place of $s$. B&C states that "when fairly general conditions are imposed", the Bromwich integral (2) of the transform $F$ returns $f$; Theorem §95.4 below is such a statement. The computation rests on the residue theorem on the closed contour $L_R + C_R$:
 
 $$
-\int_{L_R} e^{st}F(s)\,ds = 2\pi i\sum_{n=1}^{N}\operatorname*{Res}_{s=s_n}\big[e^{st}F(s)\big] - \int_{C_R} e^{st}F(s)\,ds . \qquad (4)
+\int_{L_R} e^{st}F(s)\,ds = 2\pi i\sum_{n=1}^{N}\operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] - \int_{C_R} e^{st}F(s)\,ds . \qquad (4)
 $$
 
 ![[m342-95-1.svg]]
@@ -90,7 +90,7 @@ This is Jordan's lemma ([[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]]) tur
 > Let $F$ be analytic in the finite plane except for isolated singular points $s_1, \ldots, s_N$, all with $\operatorname{Re}s_n < \gamma$, and suppose that $|F(s)| \le M_R$ on $C_R$ with $M_R \to 0$ as $R \to \infty$. Then for every $t > 0$ the limit (1) exists, and
 >
 > $$
-> f(t) = \sum_{n=1}^{N}\operatorname*{Res}_{s=s_n}\big[e^{st}F(s)\big] \qquad (t > 0) . \qquad (6)
+> f(t) = \sum_{n=1}^{N}\operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] \qquad (t > 0) . \qquad (6)
 > $$
 >
 > *B&C: Sec. 95, equations (4)–(6)*
@@ -110,13 +110,13 @@ In heat conduction and vibration problems $F(s)$ typically has infinitely many i
 > Let $F$ be analytic in the finite plane except for isolated singular points $s_1, s_2, \ldots$, all with $\operatorname{Re}s_n < \gamma$. Suppose there are radii $R_1 < R_2 < \cdots \to \infty$ such that no $s_n$ lies on the semicircles $C_{R_N}$ and $|F(s)| \le M_N$ on $C_{R_N}$, with $M_N \to 0$. Then for every $t > 0$
 >
 > $$
-> \frac{1}{2\pi i}\lim_{N\to\infty}\int_{L_{R_N}} e^{st}F(s)\,ds = \lim_{N\to\infty}\sum_{|s_n - \gamma| < R_N}\operatorname*{Res}_{s=s_n}\big[e^{st}F(s)\big] ,
+> \frac{1}{2\pi i}\lim_{N\to\infty}\int_{L_{R_N}} e^{st}F(s)\,ds = \lim_{N\to\infty}\sum_{|s_n - \gamma| < R_N}\operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] ,
 > $$
 >
 > both limits existing. In this sense
 >
 > $$
-> f(t) = \sum_{n=1}^{\infty}\operatorname*{Res}_{s=s_n}\big[e^{st}F(s)\big] \qquad (t > 0), \qquad (7)
+> f(t) = \sum_{n=1}^{\infty}\operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] \qquad (t > 0), \qquad (7)
 > $$
 >
 > with the terms grouped by the semicircles.
@@ -131,7 +131,7 @@ In heat conduction and vibration problems $F(s)$ typically has infinitely many i
 > **The limit.** For each $N$ the singular points inside the closed contour $L_{R_N} + C_{R_N}$ are exactly those with $|s_n - \gamma| < R_N$ (all have $\operatorname{Re}s_n < \gamma$, and none lies on $C_{R_N}$). As in the proof of Theorem §95.2, the residue theorem gives
 >
 > $$
-> \frac{1}{2\pi i}\int_{L_{R_N}} e^{st}F(s)\,ds = \sum_{|s_n - \gamma| < R_N}\operatorname*{Res}_{s=s_n}\big[e^{st}F(s)\big] - \frac{1}{2\pi i}\int_{C_{R_N}} e^{st}F(s)\,ds ,
+> \frac{1}{2\pi i}\int_{L_{R_N}} e^{st}F(s)\,ds = \sum_{|s_n - \gamma| < R_N}\operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] - \frac{1}{2\pi i}\int_{C_{R_N}} e^{st}F(s)\,ds ,
 > $$
 >
 > and by Lemma §95.1 the last term is less than $M_Ne^{\gamma t}/(2t)$ in modulus, which tends to $0$. So the two limits exist together and are equal.
@@ -230,7 +230,7 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 > **(b)** For all real $t$,
 >
 > $$
-> f(t) := \sum_{n=1}^{N}\operatorname*{Res}_{s=s_n}\big[e^{st}F(s)\big] = \sum_{n=1}^{N}\sum_{k=1}^{m_n} c_{n,k}\,\frac{t^{k-1}}{(k - 1)!}\,e^{s_nt} .
+> f(t) := \sum_{n=1}^{N}\operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] = \sum_{n=1}^{N}\sum_{k=1}^{m_n} c_{n,k}\,\frac{t^{k-1}}{(k - 1)!}\,e^{s_nt} .
 > $$
 >
 > **(c)** The function $f$ is continuous and of exponential order, and its Laplace transform is $F(s)$ for $\operatorname{Re}s > \max_n\operatorname{Re}s_n$.
@@ -297,13 +297,13 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 > has isolated singularities at $s = \pm2i$. By (6),
 >
 > $$
-> f(t) = \operatorname*{Res}_{s=2i}\Big[\frac{e^{st}s}{(s + 2i)(s - 2i)}\Big] + \operatorname*{Res}_{s=-2i}\Big[\frac{e^{st}s}{(s + 2i)(s - 2i)}\Big] .
+> f(t) = \operatorname{Res}_{s=2i}\Big[\frac{e^{st}s}{(s + 2i)(s - 2i)}\Big] + \operatorname{Res}_{s=-2i}\Big[\frac{e^{st}s}{(s + 2i)(s - 2i)}\Big] .
 > $$
 >
 > Both singularities are simple poles: writing
 >
 > $$
-> f(t) = \operatorname*{Res}_{s=2i}\Big[\frac{\phi_1(s)}{s - 2i}\Big] + \operatorname*{Res}_{s=-2i}\Big[\frac{\phi_2(s)}{s + 2i}\Big], \qquad \phi_1(s) = \frac{e^{st}s}{s + 2i}, \quad \phi_2(s) = \frac{e^{st}s}{s - 2i} ,
+> f(t) = \operatorname{Res}_{s=2i}\Big[\frac{\phi_1(s)}{s - 2i}\Big] + \operatorname{Res}_{s=-2i}\Big[\frac{\phi_2(s)}{s + 2i}\Big], \qquad \phi_1(s) = \frac{e^{st}s}{s + 2i}, \quad \phi_2(s) = \frac{e^{st}s}{s - 2i} ,
 > $$
 >
 > we find
@@ -326,7 +326,7 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 > **Residues.** At $s = -2$: $\frac{12e^{-2t}}{3\cdot4} = e^{-2t}$. At $s_1 = 1 + \sqrt3\,i$, using $s_1^2 = -2 + 2\sqrt3\,i = 2(-1 + \sqrt3\,i)$:
 >
 > $$
-> \operatorname*{Res}_{s=s_1}\frac{12e^{st}}{s^3 + 8} = \frac{12e^{s_1t}}{3s_1^2} = \frac{2e^te^{i\sqrt3t}}{-1 + \sqrt3\,i} .
+> \operatorname{Res}_{s=s_1}\frac{12e^{st}}{s^3 + 8} = \frac{12e^{s_1t}}{3s_1^2} = \frac{2e^te^{i\sqrt3t}}{-1 + \sqrt3\,i} .
 > $$
 >
 > The residue at $\bar s_1$ is its conjugate, and by B&C's suggestion ($z + \bar z = 2\operatorname{Re}z$), with $\frac{1}{-1 + \sqrt3\,i} = \frac{-1 - \sqrt3\,i}{4}$,
@@ -361,7 +361,7 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 > **(b) The poles $\pm n\pi i$.** $e^{st}/s^2$ is analytic there. For $-e^{st}/(s\sinh s)$ use [[§83 Zeros and Poles|§83]] (Theorem 2) with $p = -e^{st}/s$ and $q = \sinh s$, $q'(\pm n\pi i) = \cosh(n\pi i) = \cos n\pi = (-1)^n \ne 0$:
 >
 > $$
-> \operatorname*{Res}_{s=s_n}\big[e^{st}F(s)\big] = \frac{-e^{in\pi t}}{n\pi i\,(-1)^n} = \frac{(-1)^ni\exp(in\pi t)}{n\pi}, \qquad \operatorname*{Res}_{s=\bar s_n}\big[e^{st}F(s)\big] = -\frac{(-1)^ni\exp(-in\pi t)}{n\pi} .
+> \operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] = \frac{-e^{in\pi t}}{n\pi i\,(-1)^n} = \frac{(-1)^ni\exp(in\pi t)}{n\pi}, \qquad \operatorname{Res}_{s=\bar s_n}\big[e^{st}F(s)\big] = -\frac{(-1)^ni\exp(-in\pi t)}{n\pi} .
 > $$
 >
 > Each pair adds up to $\frac{(-1)^ni}{n\pi}\big(e^{in\pi t} - e^{-in\pi t}\big) = \frac{(-1)^ni}{n\pi}\cdot2i\sin n\pi t = \frac2\pi\cdot\frac{(-1)^{n+1}}{n}\sin n\pi t$.
@@ -381,7 +381,7 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 > **(d) The series.** The singular points inside $C_{R_N}$ are $0$ and $\pm n\pi i$ for $n \le N$. By Theorem §95.3,
 >
 > $$
-> f(t) = \sum_{n=1}^{\infty}\Big\{\operatorname*{Res}_{s=s_n}\big[e^{st}F(s)\big] + \operatorname*{Res}_{s=\bar s_n}\big[e^{st}F(s)\big]\Big\} = \frac2\pi\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}\sin n\pi t \qquad (t > 0),
+> f(t) = \sum_{n=1}^{\infty}\Big\{\operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] + \operatorname{Res}_{s=\bar s_n}\big[e^{st}F(s)\big]\Big\} = \frac2\pi\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}\sin n\pi t \qquad (t > 0),
 > $$
 >
 > B&C's answer, where $f(t)$ is the Bromwich integral taken along the segments $L_{R_N}$.

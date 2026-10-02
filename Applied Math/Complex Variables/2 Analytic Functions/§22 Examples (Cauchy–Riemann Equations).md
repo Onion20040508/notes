@@ -11,12 +11,12 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 22 · MAT 342 HW 3, Practice Final (Fall 1999).*
 
-This section tests the theorem of [[§21 Cauchy–Riemann Equations|§21]] (Theorem) on examples. If $f'(z_0)$ exists, then $u_x = v_y$ and $u_y = -v_x$ at $z_0$ and $f'(z_0) = u_x + iv_x$. Since the equations are *necessary*, they confirm a derivative already known and, more usefully, they locate the points where a derivative *cannot* exist. They are not sufficient: Example §22.3 satisfies them at the origin and still has no derivative there. That gap is closed in [[§23 Sufficient Conditions for Differentiability|§23]], where continuity of the partial derivatives is added.
+This section tests [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]] on examples. If $f'(z_0)$ exists, then $u_x = v_y$ and $u_y = -v_x$ at $z_0$ and $f'(z_0) = u_x + iv_x$. Since the equations are *necessary*, they confirm a derivative already known and, more usefully, they locate the points where a derivative *cannot* exist. They are not sufficient: Example §22.3 satisfies them at the origin and still has no derivative there. That gap is closed in [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]], where continuity of the partial derivatives is added.
 
 ## The Necessary Condition at Work
 
 > [!example] Example §22.1: The Function z²
-> By [[§20 Rules for Differentiation|§20]] (Exercise 1), $f(z) = z^2$ is differentiable everywhere and $f'(z) = 2z$. Check the Cauchy–Riemann equations. Here
+> By [[§20 Rules for Differentiation#^ex-20-1|Example §20.1]], $f(z) = z^2$ is differentiable everywhere and $f'(z) = 2z$. Check the Cauchy–Riemann equations. Here
 >
 > $$
 > f(z) = (x + iy)^2 = x^2 - y^2 + i\,2xy, \qquad u(x, y) = x^2 - y^2, \qquad v(x, y) = 2xy ,
@@ -45,7 +45,7 @@ This section tests the theorem of [[§21 Cauchy–Riemann Equations|§21]] (Theo
 > u(x, y) = x^2 + y^2, \qquad v(x, y) = 0 .
 > $$
 >
-> If the Cauchy–Riemann equations hold at $(x, y)$, then $u_x = v_y$ gives $2x = 0$ and $u_y = -v_x$ gives $2y = 0$, so $x = y = 0$. Consequently $f'(z)$ **does not exist at any nonzero point**, as found directly in [[§19 Derivatives|§19]] (Example 3).
+> If the Cauchy–Riemann equations hold at $(x, y)$, then $u_x = v_y$ gives $2x = 0$ and $u_y = -v_x$ gives $2y = 0$, so $x = y = 0$. Consequently $f'(z)$ **does not exist at any nonzero point**, as found directly in [[§19 Derivatives#^ex-19-3|Example §19.3]].
 >
 > At the origin the equations do hold, but the theorem of §21 says nothing there: it gives conditions that a derivative must satisfy, not conditions that produce one. That $f'(0)$ exists (and equals $0$) follows from the theorem of §23, [[§23 Sufficient Conditions for Differentiability#^ex-23-2|Example §23.2]].
 >
@@ -60,7 +60,7 @@ This section tests the theorem of [[§21 Cauchy–Riemann Equations|§21]] (Theo
 > f(z) = \begin{cases} \bar z^{\,2}/z & \text{when } z \ne 0, \\ 0 & \text{when } z = 0. \end{cases}
 > $$
 >
-> **Components.** For $z \ne 0$, $\bar z^{\,2}/z = \bar z^{\,3}/|z|^2$, and $\bar z^{\,3} = (x - iy)^3 = x^3 - 3xy^2 + i(y^3 - 3x^2y)$, so ([[§14 The Mapping w = z²|§14]], Exercise 2(b))
+> **Components.** For $z \ne 0$, $\bar z^{\,2}/z = \bar z^{\,3}/|z|^2$, and $\bar z^{\,3} = (x - iy)^3 = x^3 - 3xy^2 + i(y^3 - 3x^2y)$, so (separating components as for $1/z$ in [[§13 Functions and Mappings#^ex-13-1|Example §13.1]])
 >
 > $$
 > u(x, y) = \frac{x^3 - 3xy^2}{x^2 + y^2}, \qquad v(x, y) = \frac{y^3 - 3x^2y}{x^2 + y^2} \qquad \big((x, y) \ne (0, 0)\big),
@@ -77,7 +77,7 @@ This section tests the theorem of [[§21 Cauchy–Riemann Equations|§21]] (Theo
 >
 > and in the same way $u_y(0, 0) = \lim 0/\Delta y = 0$ and $v_x(0, 0) = \lim 0/\Delta x = 0$. So $u_x = v_y$ and $u_y = 0 = -v_x$ at $z = 0$.
 >
-> **But $f'(0)$ does not exist** ([[§20 Rules for Differentiation|§20]], Exercise 9). At $z = 0$, with $\Delta z \ne 0$,
+> **But $f'(0)$ does not exist.** At $z = 0$, with $\Delta z \ne 0$,
 >
 > $$
 > \frac{\Delta w}{\Delta z} = \frac{f(\Delta z) - f(0)}{\Delta z} = \frac{\overline{\Delta z}^{\,2}}{(\Delta z)^2} = \Big(\frac{\overline{\Delta z}}{\Delta z}\Big)^2 .

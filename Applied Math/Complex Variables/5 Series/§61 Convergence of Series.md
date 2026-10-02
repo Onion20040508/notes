@@ -279,6 +279,6 @@ For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the
 >
 > each convergent by the alternating series test (the values are $-\frac12$ times the alternating harmonic series and Leibniz's series). By Theorem §61.1 the series converges, to $-\frac12\ln 2 + i\frac\pi4 \approx -0.346574 + 0.785398\,i$ (confirmed by direct summation). This value is $-\operatorname{Log}(1 - i) = -\big(\ln\sqrt2 - i\frac\pi4\big)$: the point $z = 1 - i$ lies on the circle of convergence of the logarithm series of [[§71★ Integration and Differentiation of Power Series#^ex-71-4|Example §71.4]], so that example does not prove it, but the numbers agree.
 >
-> *Illustration of B&C Sec. 61, Theorem and Corollary 2 (the series is not in B&C)*
+> *Source: illustration of B&C Sec. 61 added in these notes (not in B&C)*
 
 ^ex-61-3

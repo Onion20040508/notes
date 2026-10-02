@@ -12,7 +12,7 @@ tags: [complex-variables, math342, extension]
 *Brown–Churchill, Section 24 · MAT 342 HW 3 (optional problems).*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
-Functions such as $1/z^n$, branches of $z^{1/2}$ and of $\log z$ are given most naturally in terms of $r$ and $\theta$, where $z = re^{i\theta}$. This section rewrites the Cauchy–Riemann equations and the sufficient condition of [[§23 Sufficient Conditions for Differentiability|§23]] in polar coordinates: the equations become $ru_r = v_\theta$, $u_\theta = -rv_r$, and the derivative is $f'(z_0) = e^{-i\theta}(u_r + iv_r)$. The polar test is how B&C shows later that every branch of $\log z$ and of $z^c$ is analytic ([[§33 Branches and Derivatives of Logarithms|§33]], [[§35 The Power Function|§35]]). The section closes with the complex form $\partial f/\partial\bar z = 0$ of the Cauchy–Riemann equations.
+Functions such as $1/z^n$, branches of $z^{1/2}$ and of $\log z$ are given most naturally in terms of $r$ and $\theta$, where $z = re^{i\theta}$. This section rewrites the Cauchy–Riemann equations and the sufficient condition [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]] in polar coordinates: the equations become $ru_r = v_\theta$, $u_\theta = -rv_r$, and the derivative is $f'(z_0) = e^{-i\theta}(u_r + iv_r)$. The polar test is how B&C shows later that every branch of $\log z$ and of $z^c$ is analytic ([[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]], [[§35 The Power Function#^thm-35-2|Theorem §35.2]]). The section closes with the complex form $\partial f/\partial\bar z = 0$ of the Cauchy–Riemann equations.
 
 ## The Cauchy–Riemann Equations in Polar Form
 
@@ -93,7 +93,7 @@ Depending on whether we write $z = x + iy$ or $z = re^{i\theta}$ ($z \ne 0$), th
 *Uses:* [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]] (Step 1 of the proof), [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]] (chain rule)
 
 > [!remark]- Connections
-> - The same chain-rule computation, carried one order further, turns the Laplacian into polar form, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]]; with (6) it shows that the components of an analytic function satisfy $r^2u_{rr} + ru_r + u_{\theta\theta} = 0$ (B&C's Exercise 1 of [[§27★ Harmonic Functions|§27★]]).
+> - The same chain-rule computation, carried one order further, turns the Laplacian into polar form, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]]; with (6) it shows that the components of an analytic function satisfy $r^2u_{rr} + ru_r + u_{\theta\theta} = 0$ (B&C's Sec. 27, Exercise 1; see [[§27★ Harmonic Functions#^def-27-1|Definition §27.1]]).
 
 > [!theorem] Proposition §24.2: The Derivative in Polar Form
 > If $f = u + iv$ is differentiable at $z_0 = r_0e^{i\theta_0} \ne 0$, then at $(r_0, \theta_0)$
@@ -107,7 +107,7 @@ Depending on whether we write $z = x + iy$ or $z = re^{i\theta}$ ($z \ne 0$), th
 ^prop-24-2
 
 > [!proof]+ Proof
-> If $f'(z_0)$ exists, $u$ and $v$ are differentiable at $(x_0, y_0)$ (the remark after [[§23 Sufficient Conditions for Differentiability#^cor-23-2|Corollary §23.2]]) and satisfy the Cauchy–Riemann equations there ([[§21 Cauchy–Riemann Equations|§21]], Theorem), so Proposition §24.1 applies and (6) holds. By the inverse formulas and (6) ($u_\theta = -rv_r$, $v_\theta = ru_r$),
+> If $f'(z_0)$ exists, $u$ and $v$ are differentiable at $(x_0, y_0)$ (the remark after [[§23 Sufficient Conditions for Differentiability#^cor-23-2|Corollary §23.2]]) and satisfy the Cauchy–Riemann equations there ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]), so Proposition §24.1 applies and (6) holds. By the inverse formulas and (6) ($u_\theta = -rv_r$, $v_\theta = ru_r$),
 >
 > $$
 > f'(z_0) = u_x + iv_x = \Big(u_r\cos\theta - \frac{u_\theta}{r}\sin\theta\Big) + i\Big(v_r\cos\theta - \frac{v_\theta}{r}\sin\theta\Big) = (u_r\cos\theta + v_r\sin\theta) + i(v_r\cos\theta - u_r\sin\theta) .
@@ -117,7 +117,7 @@ Depending on whether we write $z = x + iy$ or $z = re^{i\theta}$ ($z \ne 0$), th
 
 ^pf-24-2
 
-*Uses:* [[§24★ Polar Coordinates#^prop-24-1|§24.1]], [[§23 Sufficient Conditions for Differentiability#^cor-23-2|§23.2]], [[§21 Cauchy–Riemann Equations|§21]] (Theorem)
+*Uses:* [[§24★ Polar Coordinates#^prop-24-1|§24.1]], [[§23 Sufficient Conditions for Differentiability#^cor-23-2|§23.2]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]]
 
 ## The Sufficient Condition in Polar Form
 
@@ -204,7 +204,7 @@ In view of (6) and Proposition §24.2, the theorem of §23 can be restated using
 > f'(z) = e^{-i\theta}\Big(-\frac{2\cos 2\theta}{r^3} + i\frac{2\sin 2\theta}{r^3}\Big) = -2e^{-i\theta}\frac{e^{-i2\theta}}{r^3} = -\frac{2}{(re^{i\theta})^3} = -\frac{2}{z^3} ,
 > $$
 >
-> in agreement with the power rule of [[§20 Rules for Differentiation|§20]].
+> in agreement with the power rule, [[§20 Rules for Differentiation#^thm-20-3|Theorem §20.3]].
 >
 > *B&C: Sec. 24, Example 1*
 
@@ -242,7 +242,7 @@ In view of (6) and Proposition §24.2, the theorem of §23 can be restated using
 ## The Complex Form of the Cauchy–Riemann Equations
 
 > [!example] Example §24.3: The Equation ∂f/∂z̄ = 0
-> **(a)** Since $z = x + iy$ and $\bar z = x - iy$ ([[§6 Complex Conjugates|§6]]),
+> **(a)** Since $z = x + iy$ and $\bar z = x - iy$ ([[§6 Complex Conjugates#^prop-6-2|Proposition §6.2]]),
 >
 > $$
 > x = \frac{z + \bar z}{2}, \qquad y = \frac{z - \bar z}{2i} .

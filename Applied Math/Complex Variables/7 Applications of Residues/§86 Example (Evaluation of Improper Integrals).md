@@ -70,7 +70,7 @@ B&C devotes this section to one worked instance of the method of [[§85 Evaluati
 > **Residues.** At each simple zero, with $z_k^4 = -1$,
 >
 > $$
-> \operatorname*{Res}_{z=z_k}\frac{1}{z^4 + 1} = \frac{1}{4z_k^3} = \frac{z_k}{4z_k^4} = -\frac{z_k}{4} .
+> \operatorname{Res}_{z=z_k}\frac{1}{z^4 + 1} = \frac{1}{4z_k^3} = \frac{z_k}{4z_k^4} = -\frac{z_k}{4} .
 > $$
 >
 > Since $e^{i\pi/4} + e^{i3\pi/4} = \frac{1 + i}{\sqrt2} + \frac{-1 + i}{\sqrt2} = i\sqrt2$, the sum of the residues is $-\frac{i\sqrt2}{4}$.
@@ -95,7 +95,7 @@ B&C devotes this section to one worked instance of the method of [[§85 Evaluati
 > **Residues.** With $p(z) = z^2$,
 >
 > $$
-> \operatorname*{Res}_{z=i}\frac{p}{q} = \frac{p(i)}{q'(i)} = \frac{-1}{-4i + 10i} = \frac{-1}{6i} = \frac i6, \qquad \operatorname*{Res}_{z=2i}\frac{p}{q} = \frac{-4}{-32i + 20i} = \frac{-4}{-12i} = -\frac i3 .
+> \operatorname{Res}_{z=i}\frac{p}{q} = \frac{p(i)}{q'(i)} = \frac{-1}{-4i + 10i} = \frac{-1}{6i} = \frac i6, \qquad \operatorname{Res}_{z=2i}\frac{p}{q} = \frac{-4}{-32i + 20i} = \frac{-4}{-12i} = -\frac i3 .
 > $$
 >
 > The sum is $-\frac i6$, and $2\pi i\cdot(-\frac i6) = \frac\pi3$.
@@ -128,7 +128,7 @@ B&C devotes this section to one worked instance of the method of [[§85 Evaluati
 > **(b) Residues.** Each $c_k$ is a simple zero of $q = z^{2n} + 1$ ($q'(c_k) = 2nc_k^{2n-1} \ne 0$), and $c_k^{2m} \ne 0$, so by [[§83 Zeros and Poles|§83]] (Theorem 2), with $c_k^{2n} = -1$ and $\alpha = \frac{2m + 1}{2n}\pi$,
 >
 > $$
-> \operatorname*{Res}_{z=c_k}\frac{z^{2m}}{z^{2n} + 1} = \frac{c_k^{2m}}{2nc_k^{2n-1}} = \frac{c_k^{2m+1}}{2nc_k^{2n}} = -\frac{1}{2n}e^{i(2k+1)\alpha} .
+> \operatorname{Res}_{z=c_k}\frac{z^{2m}}{z^{2n} + 1} = \frac{c_k^{2m}}{2nc_k^{2n-1}} = \frac{c_k^{2m+1}}{2nc_k^{2n}} = -\frac{1}{2n}e^{i(2k+1)\alpha} .
 > $$
 >
 > The sum is geometric with ratio $e^{i2\alpha} \ne 1$ ([[§9 Arguments of Products and Quotients|§9]], Exercise 9), and $e^{i2n\alpha} = e^{i(2m+1)\pi} = -1$:
@@ -163,7 +163,7 @@ B&C devotes this section to one worked instance of the method of [[§85 Evaluati
 > **The pole inside.** The zeros of $z^3 + 1$ are $-1$ and $e^{\pm i\pi/3}$. Only $e^{i\pi/3}$ has its argument in $(0, 2\pi/3)$; $-1$ (argument $\pi$) and $e^{-i\pi/3}$ are outside the sector. With $c = e^{i\pi/3}$, $c^3 = -1$:
 >
 > $$
-> \operatorname*{Res}_{z=c}\frac{1}{z^3 + 1} = \frac{1}{3c^2} = \frac{c}{3c^3} = -\frac{e^{i\pi/3}}{3} .
+> \operatorname{Res}_{z=c}\frac{1}{z^3 + 1} = \frac{1}{3c^2} = \frac{c}{3c^3} = -\frac{e^{i\pi/3}}{3} .
 > $$
 >
 > **The three sides.** On the segment $z = x$ $(0 \le x \le R)$ the integral is $\int_0^R dx/(x^3 + 1)$. On the returning ray, $z = re^{i2\pi/3}$ with $r$ from $R$ to $0$, $z^3 = r^3e^{i2\pi} = r^3$ and $dz = e^{i2\pi/3}\,dr$, so its integral is $-e^{i2\pi/3}\int_0^R dr/(r^3 + 1)$. By the residue theorem,

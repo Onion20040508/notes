@@ -12,7 +12,7 @@ tags: [complex-variables, math342, extension]
 *Brown–Churchill, Section 127.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
-Chapter 11 constructs the Schwarz–Christoffel transformation, which maps the $x$ axis and the upper half of the $z$ plane onto a given simple closed polygon and its interior in the $w$ plane. This section finds what its derivative must be. Along the real axis the image moves in the direction $\arg f'(x)$, so a polygon is traced exactly when $\arg f'(x)$ is constant between certain points $x_j$ and jumps there by the exterior angles of the polygon; a product of powers $(z - x_j)^{-k_j}$ does this. Since the exterior angles of a closed polygon add up to $2\pi$, the exponents must satisfy $k_1 + \cdots + k_n = 2$. Polygonal boundaries are what electrostatics and fluid flow present in practice (plates, channels, steps), which is why the construction matters for physics.
+Chapter 11 constructs the Schwarz–Christoffel transformation, which maps the $x$ axis and the upper half of the $z$ plane onto a given simple closed polygon and its interior, the kind of boundary that plates, channels and steps present in electrostatics and fluid flow; this section finds what its derivative must be. Along the real axis the image moves in the direction $\arg f'(x)$, so a polygon is traced exactly when $\arg f'(x)$ is constant between certain points $x_j$ and jumps there by the exterior angles of the polygon; a product of powers $(z - x_j)^{-k_j}$ does this. Since the exterior angles of a closed polygon add up to $2\pi$, the exponents must satisfy $k_1 + \cdots + k_n = 2$.
 
 ## Direction of the Image of the Real Axis
 

@@ -37,11 +37,11 @@ $$
 > Let $f = p/q$ and $a > 0$ be as above, let $z_1, \ldots, z_n$ be the zeros of $q$ above the real axis, and suppose $\deg q \ge \deg p + 2$. Then $\int_{-\infty}^{\infty} f(x)e^{iax}\,dx$ converges absolutely, and
 >
 > $$
-> \int_{-\infty}^{\infty} f(x)e^{iax}\,dx = 2\pi i\sum_{k=1}^{n}\operatorname*{Res}_{z=z_k}\big[f(z)e^{iaz}\big] ,
+> \int_{-\infty}^{\infty} f(x)e^{iax}\,dx = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k}\big[f(z)e^{iaz}\big] ,
 > $$
 >
 > $$
-> \int_{-\infty}^{\infty} f(x)\cos ax\,dx = \operatorname{Re}\Big(2\pi i\sum_{k=1}^{n}\operatorname*{Res}_{z=z_k}\big[f(z)e^{iaz}\big]\Big), \qquad \int_{-\infty}^{\infty} f(x)\sin ax\,dx = \operatorname{Im}\Big(2\pi i\sum_{k=1}^{n}\operatorname*{Res}_{z=z_k}\big[f(z)e^{iaz}\big]\Big) .
+> \int_{-\infty}^{\infty} f(x)\cos ax\,dx = \operatorname{Re}\Big(2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k}\big[f(z)e^{iaz}\big]\Big), \qquad \int_{-\infty}^{\infty} f(x)\sin ax\,dx = \operatorname{Im}\Big(2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k}\big[f(z)e^{iaz}\big]\Big) .
 > $$
 >
 > *B&C: Sec. 87 (text), with the estimate of its Example stated in general*
@@ -52,7 +52,7 @@ $$
 > $f(z)e^{iaz}$ is analytic except at the zeros of $q$, since $e^{iaz}$ is entire and never zero. For $R > \max|z_k|$, the residue theorem on the boundary of the half disk, exactly as in [[§85 Evaluation of Improper Integrals#^thm-85-3|Theorem §85.3]], gives
 >
 > $$
-> \int_{-R}^{R} f(x)e^{iax}\,dx = 2\pi i\sum_{k=1}^{n}\operatorname*{Res}_{z=z_k}\big[f(z)e^{iaz}\big] - \int_{C_R} f(z)e^{iaz}\,dz .
+> \int_{-R}^{R} f(x)e^{iax}\,dx = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k}\big[f(z)e^{iaz}\big] - \int_{C_R} f(z)e^{iaz}\,dz .
 > $$
 >
 > By [[§85 Evaluation of Improper Integrals#^prop-85-4|Proposition §85.4]], $|f(z)| \le K/|z|^2$ for $|z| \ge R_1$, and $|e^{iaz}| \le 1$ on $C_R$; so $\big|\int_{C_R} f(z)e^{iaz}\,dz\big| \le \pi K/R \to 0$ ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]]). On the real axis $|f(x)e^{iax}| = |f(x)| \le K/x^2$ for $|x| \ge R_1$, so the real and imaginary parts $f(x)\cos ax$ and $f(x)\sin ax$ have absolutely convergent improper integrals (comparison, as in the proof of Proposition §85.4). The integral therefore converges, equals its principal value, and that is the limit of the residue identity. Since $f(x)$ is real, taking real and imaginary parts gives the last two formulas.
@@ -87,7 +87,7 @@ When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argumen
 > Let $f(z) = 1/(z^2 + 4)^2$ (3). The product $f(z)e^{i2z}$ is analytic on and above the real axis except at $z = 2i$, which lies inside the half disk for $R > 2$; integrating around its boundary,
 >
 > $$
-> \int_{-R}^{R}\frac{e^{i2x}}{(x^2 + 4)^2}\,dx = 2\pi iB - \int_{C_R} f(z)e^{i2z}\,dz, \qquad B = \operatorname*{Res}_{z=2i}\big[f(z)e^{i2z}\big] . \qquad (4)
+> \int_{-R}^{R}\frac{e^{i2x}}{(x^2 + 4)^2}\,dx = 2\pi iB - \int_{C_R} f(z)e^{i2z}\,dz, \qquad B = \operatorname{Res}_{z=2i}\big[f(z)e^{i2z}\big] . \qquad (4)
 > $$
 >
 > **Residue.** $f(z)e^{i2z} = \phi(z)/(z - 2i)^2$ with $\phi(z) = e^{i2z}/(z + 2i)^2$, analytic and nonzero at $2i$, so $z = 2i$ is a pole of order $2$ and $B = \phi'(2i)$ ([[§80 Residues at Poles|§80]], Theorem). Since
@@ -120,7 +120,7 @@ When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argumen
 > The only zero of $z^2 + 1$ above the axis is $i$, a simple zero, so
 >
 > $$
-> \operatorname*{Res}_{z=i}\frac{e^{iaz}}{z^2 + 1} = \frac{e^{iaz}}{2z}\Big|_{z=i} = \frac{e^{-a}}{2i}, \qquad 2\pi i\cdot\frac{e^{-a}}{2i} = \pi e^{-a} .
+> \operatorname{Res}_{z=i}\frac{e^{iaz}}{z^2 + 1} = \frac{e^{iaz}}{2z}\Big|_{z=i} = \frac{e^{-a}}{2i}, \qquad 2\pi i\cdot\frac{e^{-a}}{2i} = \pi e^{-a} .
 > $$
 >
 > **The arc.** For $R > 1$ and $z$ on $C_R$: $|e^{iaz}| \le 1$ and $|z^2 + 1| \ge R^2 - 1$, so $\big|\int_{C_R}\frac{e^{iaz}}{z^2 + 1}dz\big| \le \frac{\pi R}{R^2 - 1} \to 0$. (The length factor $\pi R$ matters: $M_R = 1/(R^2 - 1) \to 0$ alone would not suffice for the bound of §47; it suffices only through Jordan's lemma, [[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]].)
@@ -144,7 +144,7 @@ When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argumen
 > **Residue.** The zeros of $(z^2 + b^2)^2$ are $\pm ib$, each of order $2$; only $ib$ is above the axis. With $\phi(z) = e^{iaz}/(z + ib)^2$,
 >
 > $$
-> \operatorname*{Res}_{z=ib}\frac{e^{iaz}}{(z^2 + b^2)^2} = \phi'(ib) = \frac{iae^{iaz}(z + ib) - 2e^{iaz}}{(z + ib)^3}\Big|_{z=ib} = e^{-ab}\,\frac{ia\cdot2ib - 2}{(2ib)^3} = e^{-ab}\,\frac{-2(1 + ab)}{-8ib^3} = \frac{(1 + ab)e^{-ab}}{4ib^3} .
+> \operatorname{Res}_{z=ib}\frac{e^{iaz}}{(z^2 + b^2)^2} = \phi'(ib) = \frac{iae^{iaz}(z + ib) - 2e^{iaz}}{(z + ib)^3}\Big|_{z=ib} = e^{-ab}\,\frac{ia\cdot2ib - 2}{(2ib)^3} = e^{-ab}\,\frac{-2(1 + ab)}{-8ib^3} = \frac{(1 + ab)e^{-ab}}{4ib^3} .
 > $$
 >
 > **Conclusion.** $\deg q = 4 \ge 0 + 2$, so Proposition §87.1 applies:
@@ -165,7 +165,7 @@ When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argumen
 > The integrand is not even, and the pole is not on the imaginary axis, so the residue is genuinely complex. $z^2 + 4z + 5 = (z + 2)^2 + 1$ has the simple zeros $-2 \pm i$; above the axis, $z_1 = -2 + i$:
 >
 > $$
-> \operatorname*{Res}_{z=-2+i}\frac{e^{iz}}{z^2 + 4z + 5} = \frac{e^{iz}}{2z + 4}\Big|_{z=-2+i} = \frac{e^{-1-2i}}{2i}, \qquad 2\pi i\cdot\frac{e^{-1-2i}}{2i} = \frac\pi e\big(\cos 2 - i\sin 2\big) .
+> \operatorname{Res}_{z=-2+i}\frac{e^{iz}}{z^2 + 4z + 5} = \frac{e^{iz}}{2z + 4}\Big|_{z=-2+i} = \frac{e^{-1-2i}}{2i}, \qquad 2\pi i\cdot\frac{e^{-1-2i}}{2i} = \frac\pi e\big(\cos 2 - i\sin 2\big) .
 > $$
 >
 > Since $\deg q = 2 \ge 0 + 2$, Proposition §87.1 gives

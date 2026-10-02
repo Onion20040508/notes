@@ -32,7 +32,7 @@ An indentation can also step around a **branch point**. To evaluate $\int_0^\inf
 > whose branch cut is the origin together with the negative imaginary axis ([[§33 Branches and Derivatives of Logarithms|§33]]), and the indented contour of the figure below: $L_1$ from $\rho$ to $R$, the semicircle $C_R$ counterclockwise, $L_2$ from $-R$ to $-\rho$, and the semicircle $C_\rho$ clockwise, with $\rho < 1 < R$. The function $f$ is analytic inside and on this contour except at $z = i$. By the residue theorem,
 >
 > $$
-> \int_{L_1} f(z)\,dz + \int_{L_2} f(z)\,dz = 2\pi i\operatorname*{Res}_{z=i} f(z) - \int_{C_\rho} f(z)\,dz - \int_{C_R} f(z)\,dz . \qquad (2)
+> \int_{L_1} f(z)\,dz + \int_{L_2} f(z)\,dz = 2\pi i\operatorname{Res}_{z=i} f(z) - \int_{C_\rho} f(z)\,dz - \int_{C_R} f(z)\,dz . \qquad (2)
 > $$
 >
 > **The legs.** $L_1$ and $-L_2$ have the parametrizations $z = re^{i0} = r$ and $z = re^{i\pi} = -r$ $(\rho \le r \le R)$. On $L_1$, $\log z = \ln r + i0$; on $-L_2$, $\log z = \ln r + i\pi$, and $dz = -dr$. Hence
@@ -56,7 +56,7 @@ An indentation can also step around a **branch point**. To evaluate $\int_0^\inf
 > At $z = i$: $\log i = i\pi/2$, so $e^{(a-1)\log i} = e^{ia\pi/2}e^{-i\pi/2} = -ie^{ia\pi/2}$, and $\frac{(a - 2)i + ai}{(2i)^3} = \frac{(2a - 2)i}{-8i} = \frac{1 - a}{4}$. Therefore
 >
 > $$
-> \operatorname*{Res}_{z=i} f(z) = -ie^{ia\pi/2}\Big(\frac{1 - a}{4}\Big) . \qquad (5)
+> \operatorname{Res}_{z=i} f(z) = -ie^{ia\pi/2}\Big(\frac{1 - a}{4}\Big) . \qquad (5)
 > $$
 >
 > Substituting (3) and (5) into (2),
@@ -125,7 +125,7 @@ An indentation can also step around a **branch point**. To evaluate $\int_0^\inf
 > **Residue.** $z = i$ is a simple pole, and with $i^{-1/2} = e^{-i\pi/4}$,
 >
 > $$
-> \operatorname*{Res}_{z=i} f(z) = \frac{z^{-1/2}}{2z}\Big|_{z=i} = \frac{e^{-i\pi/4}}{2i}, \qquad 2\pi i\operatorname*{Res}_{z=i} f(z) = \pi e^{-i\pi/4} = \frac{\pi(1 - i)}{\sqrt2} .
+> \operatorname{Res}_{z=i} f(z) = \frac{z^{-1/2}}{2z}\Big|_{z=i} = \frac{e^{-i\pi/4}}{2i}, \qquad 2\pi i\operatorname{Res}_{z=i} f(z) = \pi e^{-i\pi/4} = \frac{\pi(1 - i)}{\sqrt2} .
 > $$
 >
 > **Semicircles.** $\big|\int_{C_\rho} f\big| \le \frac{\rho^{-1/2}\pi\rho}{1 - \rho^2} = \frac{\pi\sqrt\rho}{1 - \rho^2} \to 0$ and $\big|\int_{C_R} f\big| \le \frac{R^{-1/2}\pi R}{R^2 - 1} \to 0$.

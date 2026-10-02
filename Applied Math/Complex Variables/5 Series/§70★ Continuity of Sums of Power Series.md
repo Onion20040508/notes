@@ -142,7 +142,7 @@ This uniformity is what allows a Laurent series to be integrated term by term al
 >
 > (This is also the derivative of $e^z$ at $0$; the point is that continuity of a power series gives such limits without differentiating. [[§71★ Integration and Differentiation of Power Series#^ex-71-1|Example §71.1]] goes further and shows that such a function is entire.)
 >
-> *Illustration of B&C Sec. 70, Theorem (compare Sec. 71, Example 1)*
+> *Source: illustration of B&C Sec. 70 added in these notes (not in B&C)*
 
 ^ex-70-1
 
@@ -151,7 +151,7 @@ This uniformity is what allows a Laurent series to be integrated term by term al
 >
 > **(b)** $e^{1/z} - 1 = \sum_{n=1}^{\infty}\frac{1}{n!\,z^n}$ converges at every $z_1 \ne 0$ ([[§68 Examples (Proof of Laurent's Theorem)#^ex-68-4|Example §68.4]]), so it converges absolutely in $|z| > |z_1|$ for every such $z_1$, that is, in the whole punctured plane $0 < |z| < \infty$, and its sum is continuous there, as it must be.
 >
-> *Illustration of B&C Sec. 70 (text on series (6)); not in B&C*
+> *Source: illustration of B&C Sec. 70 added in these notes (not in B&C)*
 
 ^ex-70-2
 
@@ -170,6 +170,6 @@ This uniformity is what allows a Laurent series to be integrated term by term al
 >
 > bounds independent of $z$ that tend to $0$: the convergence is uniform there, as Corollary §70.3 asserts. On the whole open annulus it is not: for real $z = x$ with $1 < x < 2$, the second remainder is $\sum_{n > N}x^{-n} = \frac{x^{-N}}{x - 1}$, which tends to $\infty$ as $x \to 1^+$ for each fixed $N$.
 >
-> *Illustration of B&C Sec. 70 (text on Laurent series); not in B&C*
+> *Source: illustration of B&C Sec. 70 added in these notes (not in B&C)*
 
 ^ex-70-3

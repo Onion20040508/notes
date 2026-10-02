@@ -40,7 +40,7 @@ On $C_R$ and $C_\rho$ the integrals of $f$ are taken with $0 < \theta < 2\pi$ (t
 > With $f$, $C_\rho$ and $C_R$ as above,
 >
 > $$
-> \int_\rho^R\frac{r^{-a}}{r + 1}\,dr + \int_{C_R} f(z)\,dz - \int_\rho^R\frac{r^{-a}e^{-i2a\pi}}{r + 1}\,dr + \int_{C_\rho} f(z)\,dz = 2\pi i\operatorname*{Res}_{z=-1} f(z) . \qquad (3)
+> \int_\rho^R\frac{r^{-a}}{r + 1}\,dr + \int_{C_R} f(z)\,dz - \int_\rho^R\frac{r^{-a}e^{-i2a\pi}}{r + 1}\,dr + \int_{C_\rho} f(z)\,dz = 2\pi i\operatorname{Res}_{z=-1} f(z) . \qquad (3)
 > $$
 >
 > *B&C: Sec. 91, Exercise 6 (equation (3) of the text, which B&C obtains formally there)*
@@ -59,7 +59,7 @@ On $C_R$ and $C_\rho$ the integrals of $f$ are taken with $0 < \theta < 2\pi$ (t
 > is analytic on and inside $\Gamma_1$ except at $-1$, since all points there have arguments in $[0, \theta_0] \subset (-\pi/2, 3\pi/2)$. On the positive real axis $f_1(r) = r^{-a}/(r + 1)$. Cauchy's residue theorem gives
 >
 > $$
-> \int_\rho^R\frac{r^{-a}}{r + 1}\,dr + \int_{\Gamma_R} f_1(z)\,dz + \int_L f_1(z)\,dz + \int_{\Gamma_\rho} f_1(z)\,dz = 2\pi i\operatorname*{Res}_{z=-1} f_1(z) .
+> \int_\rho^R\frac{r^{-a}}{r + 1}\,dr + \int_{\Gamma_R} f_1(z)\,dz + \int_L f_1(z)\,dz + \int_{\Gamma_\rho} f_1(z)\,dz = 2\pi i\operatorname{Res}_{z=-1} f_1(z) .
 > $$
 >
 > **(b) The right contour.** $\Gamma_2$ runs outward along the same ray (that is, along $-L$), along $C_R$ counterclockwise from $\theta_0$ to $2\pi$ (the arc $\gamma_R$), from $R$ to $\rho$ along the positive real axis approached from below, and along $C_\rho$ clockwise from $2\pi$ back to $\theta_0$ (the arc $\gamma_\rho$). It bounds the region $\rho < |z| < R$, $\theta_0 < \arg z < 2\pi$, which contains no singular point. The branch
@@ -152,7 +152,7 @@ On $C_R$ and $C_\rho$ the integrals of $f$ are taken with $0 < \theta < 2\pi$ (t
 > **Residues.** Both $i = e^{i\pi/2}$ and $-i = e^{i3\pi/2}$ lie inside, and with arguments in $(0, 2\pi)$, $i^{-1/2} = e^{-i\pi/4}$ and $(-i)^{-1/2} = e^{-i3\pi/4}$:
 >
 > $$
-> \operatorname*{Res}_{z=i} f = \frac{e^{-i\pi/4}}{2i}, \qquad \operatorname*{Res}_{z=-i} f = \frac{e^{-i3\pi/4}}{-2i}, \qquad 2\pi i\big(\operatorname{Res} + \operatorname{Res}\big) = \pi\big(e^{-i\pi/4} - e^{-i3\pi/4}\big) = \pi\Big(\frac{1 - i}{\sqrt2} - \frac{-1 - i}{\sqrt2}\Big) = \pi\sqrt2 .
+> \operatorname{Res}_{z=i} f = \frac{e^{-i\pi/4}}{2i}, \qquad \operatorname{Res}_{z=-i} f = \frac{e^{-i3\pi/4}}{-2i}, \qquad 2\pi i\big(\operatorname{Res} + \operatorname{Res}\big) = \pi\big(e^{-i\pi/4} - e^{-i3\pi/4}\big) = \pi\Big(\frac{1 - i}{\sqrt2} - \frac{-1 - i}{\sqrt2}\Big) = \pi\sqrt2 .
 > $$
 >
 > **Circles.** $\big|\int_{C_\rho}\big| \le \frac{\rho^{-1/2}2\pi\rho}{1 - \rho^2} \to 0$, $\big|\int_{C_R}\big| \le \frac{R^{-1/2}2\pi R}{R^2 - 1} \to 0$.
@@ -177,7 +177,7 @@ On $C_R$ and $C_\rho$ the integrals of $f$ are taken with $0 < \theta < 2\pi$ (t
 > **Residues.** Both poles $-a$, $-b$ have argument $\pi$, so $(-a)^{1/3} = \sqrt[3]{a}\,e^{i\pi/3}$ and $(-b)^{1/3} = \sqrt[3]{b}\,e^{i\pi/3}$:
 >
 > $$
-> \operatorname*{Res}_{z=-a} f + \operatorname*{Res}_{z=-b} f = \frac{\sqrt[3]{a}\,e^{i\pi/3}}{b - a} + \frac{\sqrt[3]{b}\,e^{i\pi/3}}{a - b} = -e^{i\pi/3}\,\frac{\sqrt[3]{a} - \sqrt[3]{b}}{a - b} .
+> \operatorname{Res}_{z=-a} f + \operatorname{Res}_{z=-b} f = \frac{\sqrt[3]{a}\,e^{i\pi/3}}{b - a} + \frac{\sqrt[3]{b}\,e^{i\pi/3}}{a - b} = -e^{i\pi/3}\,\frac{\sqrt[3]{a} - \sqrt[3]{b}}{a - b} .
 > $$
 >
 > **Circles.** $|f| \le \rho^{1/3}/((a - \rho)(b - \rho))$ on $C_\rho$ and $\le R^{1/3}/((R - a)(R - b))$ on $C_R$; times the lengths $2\pi\rho$, $2\pi R$, both tend to $0$.

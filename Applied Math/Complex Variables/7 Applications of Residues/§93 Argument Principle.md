@@ -274,7 +274,7 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 > **(a)** Let $k$ and $m$ be nonnegative integers, $\phi$ analytic at $z_0$ with $\phi(z_0) \ne 0$, and $g(z) = (z - z_0)^m\phi(z)$. Then
 >
 > $$
-> \operatorname*{Res}_{z=z_0}\Big(z^k\,\frac{g'(z)}{g(z)}\Big) = mz_0^k .
+> \operatorname{Res}_{z=z_0}\Big(z^k\,\frac{g'(z)}{g(z)}\Big) = mz_0^k .
 > $$
 >
 > Indeed, by (6), $z^kg'/g = \frac{mz^k}{z - z_0} + z^k\frac{\phi'}{\phi}$. The second term is analytic at $z_0$ and has residue $0$. The first is $m\frac{z^k - z_0^k}{z - z_0} + \frac{mz_0^k}{z - z_0}$, where the quotient $\frac{z^k - z_0^k}{z - z_0} = z^{k-1} + z^{k-2}z_0 + \cdots + z_0^{k-1}$ is a polynomial; so the residue is $mz_0^k$ (with $z_0^0 = 1$, also when $z_0 = 0$; for $m = 0$ both sides are $0$).

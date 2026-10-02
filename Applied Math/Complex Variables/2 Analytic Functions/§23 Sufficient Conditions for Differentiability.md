@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 23 · MAT 342 HW 3.*
 
-The Cauchy–Riemann equations at a point do not guarantee a derivative there ([[§22 Examples (Cauchy–Riemann Equations)#^ex-22-3|Example §22.3]]). This section shows that they do once the first-order partial derivatives of $u$ and $v$ exist near the point and are continuous at it; then $f'(z_0) = u_x + iv_x$. Together with the necessary condition of [[§21 Cauchy–Riemann Equations|§21]] this gives the working test for differentiability used throughout the course: solve the Cauchy–Riemann equations, check continuity of the partials, and read off the derivative. The proof is a two-variable linear approximation of $u$ and $v$, in which the Cauchy–Riemann equations make the linear part a complex multiple of $\Delta z$.
+The Cauchy–Riemann equations at a point do not guarantee a derivative there ([[§22 Examples (Cauchy–Riemann Equations)#^ex-22-3|Example §22.3]]). This section shows that they do once the first-order partial derivatives of $u$ and $v$ exist near the point and are continuous at it; then $f'(z_0) = u_x + iv_x$. Together with the necessary condition, [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]], this gives the working test for differentiability used throughout the course: solve the Cauchy–Riemann equations, check continuity of the partials, and read off the derivative. The proof is a two-variable linear approximation of $u$ and $v$, in which the Cauchy–Riemann equations make the linear part a complex multiple of $\Delta z$.
 
 ## The Theorem
 
@@ -105,7 +105,7 @@ The Cauchy–Riemann equations at a point do not guarantee a derivative there ([
 > \frac{\Delta w}{\Delta z} = u_x(x_0, y_0) + iv_x(x_0, y_0) + (\varepsilon_1 + i\varepsilon_3)\frac{\Delta x}{\Delta z} + (\varepsilon_2 + i\varepsilon_4)\frac{\Delta y}{\Delta z} . \qquad (5)
 > $$
 >
-> **Step 3: the error terms vanish.** By the inequalities $|\Delta x| \le |\Delta z|$ and $|\Delta y| \le |\Delta z|$ of [[§4 Vectors and Moduli|§4]] (inequalities (3)),
+> **Step 3: the error terms vanish.** By the inequalities $|\Delta x| \le |\Delta z|$ and $|\Delta y| \le |\Delta z|$ of [[§4 Vectors and Moduli#^prop-4-1|Proposition §4.1]] (inequalities (3)),
 >
 > $$
 > \Big|\frac{\Delta x}{\Delta z}\Big| \le 1 \qquad\text{and}\qquad \Big|\frac{\Delta y}{\Delta z}\Big| \le 1 .
@@ -123,13 +123,13 @@ The Cauchy–Riemann equations at a point do not guarantee a derivative there ([
 
 ^pf-23-1
 
-*Uses:* [[§4 Vectors and Moduli|§4]] (inequalities (3)), [[§19 Derivatives|§19]] (definition of $f'(z_0)$), [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem)
+*Uses:* [[§4 Vectors and Moduli#^prop-4-1|§4.1]], [[§19 Derivatives#^def-19-1|Def. §19.1]], [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem)
 
 > [!remark]- Connections
 > - Step 1 is the theorem that continuous partials imply differentiability, [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]] (stated there for partials continuous on an open set; the proof above needs continuity only at the point). Equations (2)–(3) say that $u$ and $v$ are differentiable at $(x_0, y_0)$ in the sense of [[§6 Differentiability#^def-6-1|452 Def. §6.1]].
 > - With $f'(z_0) = a + ib$, the Cauchy–Riemann equations say that the Jacobian matrix of $(u, v)$ at $(x_0, y_0)$ is $\begin{bmatrix} u_x & u_y \\ v_x & v_y \end{bmatrix} = \begin{bmatrix} a & -b \\ b & a \end{bmatrix}$, a rotation–scaling matrix, [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]: the linear part of $\Delta w$ is multiplication by $f'(z_0)$, a rotation through $\arg f'(z_0)$ followed by a stretch by $|f'(z_0)|$. This is the geometric content of complex differentiability, and the source of conformality in Ch. 9.
 
-The proof used hypotheses (a) and (b) only to obtain (2) and (3). So the conclusion holds whenever $u$ and $v$ admit such linear approximations at the point; this form is needed in [[§24★ Polar Coordinates|§24★]].
+The proof used hypotheses (a) and (b) only to obtain (2) and (3). So the conclusion holds whenever $u$ and $v$ admit such linear approximations at the point; this form is needed in [[§24★ Polar Coordinates#^thm-24-3|Theorem §24.3]].
 
 > [!theorem] Corollary §23.2: Real Differentiability Plus Cauchy–Riemann
 > Let $f(z) = u(x, y) + iv(x, y)$ be defined in a neighborhood of $z_0 = x_0 + iy_0$. If $u$ and $v$ are differentiable at $(x_0, y_0)$, that is,
@@ -159,7 +159,7 @@ Conversely, if $f'(z_0)$ exists, then $\Delta w = f'(z_0)\Delta z + \eta\,\Delta
 > To find where $f$ is differentiable and compute $f'$:
 > 1. **Components.** Substitute $z = x + iy$ and separate $f(z) = u(x, y) + iv(x, y)$.
 > 2. **Partials.** Compute $u_x, u_y, v_x, v_y$ and note where they are continuous (for polynomials, exponentials and trigonometric functions of $x$ and $y$: everywhere).
-> 3. **Candidates.** Solve $u_x = v_y$, $u_y = -v_x$ simultaneously. At points that fail, $f'$ does not exist ([[§21 Cauchy–Riemann Equations|§21]], Theorem).
+> 3. **Candidates.** Solve $u_x = v_y$, $u_y = -v_x$ simultaneously. At points that fail, $f'$ does not exist ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]).
 > 4. **Sufficiency.** At each solution $z_0$ where the partials exist nearby and are continuous at $z_0$, $f'(z_0)$ exists (Theorem §23.1).
 > 5. **Derivative.** Only now evaluate $f'(z_0) = u_x + iv_x$ at the point (or $v_y - iu_y$). Writing down $u_x + iv_x$ as a formula for $f'$ before step 3 is a mistake whenever the candidates are not the whole region (Example §23.3).
 >
@@ -184,7 +184,7 @@ Conversely, if $f'(z_0)$ exists, then $\Delta w = f'(z_0)\Delta z + \eta\,\Delta
 > f'(z) = u_x + iv_x = e^x\cos y + ie^x\sin y = f(z) \qquad\text{for all } z .
 > $$
 >
-> This is the function $e^z$ of [[§30 The Exponential Function|§30]].
+> This is the function $e^z$ of [[§30 The Exponential Function#^def-30-1|Definition §30.1]].
 >
 > *B&C: Sec. 23, Example 1*
 
@@ -282,7 +282,7 @@ Conversely, if $f'(z_0)$ exists, then $\Delta w = f'(z_0)\Delta z + \eta\,\Delta
 > f''(z) = U_x + iV_x = e^{-x}\cos y - ie^{-x}\sin y = f(z) .
 > $$
 >
-> (With [[§30 The Exponential Function|§30]], $f(z) = e^{-x - iy} = e^{-z}$, and the chain rule gives $f' = -e^{-z}$, $f'' = e^{-z}$.)
+> (With [[§30 The Exponential Function#^def-30-1|Definition §30.1]], $f(z) = e^{-x - iy} = e^{-z}$, and the chain rule gives $f' = -e^{-z}$, $f'' = e^{-z}$.)
 >
 > *B&C: Sec. 24, Exercise 2(b); Source: 342 HW 3, Q2(b)*
 

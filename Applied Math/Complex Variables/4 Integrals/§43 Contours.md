@@ -37,7 +37,7 @@ Integrals of functions of a complex variable are taken along curves in the plane
 The geometric nature of an arc often suggests a notation for the parameter other than $t$.
 
 > [!example] Example §43.1: A Polygonal Line
-> The polygonal line ([[§12★ Regions in the Complex Plane|§12]]) defined by
+> The polygonal line ([[§12★ Regions in the Complex Plane#^def-12-4|Definition §12.4]]) defined by
 >
 > $$
 > z = \begin{cases} x + ix & \text{when } 0 \le x \le 1, \\ x + i & \text{when } 1 \le x \le 2, \end{cases} \qquad (4)
@@ -62,7 +62,7 @@ The geometric nature of an arc often suggests a notation for the parameter other
 > z = z_0 + Re^{i\theta} \qquad (0 \le \theta \le 2\pi), \qquad (6)
 > $$
 >
-> centered at $z_0$ with radius $R$ ([[§7 Exponential Form|§7]]). Here $e^{i\theta_1} = e^{i\theta_2}$ with $0 \le \theta_1 < \theta_2 \le 2\pi$ only for $\theta_1 = 0$, $\theta_2 = 2\pi$, the endpoints.
+> centered at $z_0$ with radius $R$ ([[§7 Exponential Form#^prop-7-1|Proposition §7.1]]). Here $e^{i\theta_1} = e^{i\theta_2}$ with $0 \le \theta_1 < \theta_2 \le 2\pi$ only for $\theta_1 = 0$, $\theta_2 = 2\pi$, the endpoints.
 >
 > *B&C: Sec. 43, Example 2*
 
@@ -263,7 +263,7 @@ The polygonal line (4) is a contour; the circles (5) and (6) and the boundary of
 >
 > **(b)** $C$ is smooth. For continuity at $0$: $0 \le |x^3\sin(\pi/x)| \le x^3 \to 0$. For $y'(0)$: $\big|\frac{y(x) - y(0)}{x}\big| = |x^2\sin(\pi/x)| \le x^2 \to 0$, so $y'(0) = 0$. For $x > 0$, $y'(x) = 3x^2\sin(\pi/x) - \pi x\cos(\pi/x)$, and $|y'(x)| \le 3x^2 + \pi x \to 0$ as $x \to 0^+$; so $y'$ is continuous on $[0, 1]$. Then $z'(x) = 1 + iy'(x)$ is continuous and never zero.
 >
-> So a smooth arc can wiggle across a line infinitely often near a point; [[§52 Simply Connected Domains|§52]] uses this arc to build a closed contour with infinitely many self-intersections.
+> So a smooth arc can wiggle across a line infinitely often near a point; [[§52 Simply Connected Domains#^ex-52-2|Example §52.2]] uses this arc to build a closed contour with infinitely many self-intersections.
 >
 > *B&C: Sec. 43, Exercise 6*
 
@@ -278,14 +278,14 @@ The polygonal line (4) is a contour; the circles (5) and (6) and the boundary of
 
 *B&C omits the proof.*
 
-B&C accepts the statement as geometrically evident and remarks that the proof is not easy; it cites Newman and Thron for the general case and Hille (Vol. 1, pp. 281–285) for a simple closed polygon. The vault has no proof either. The theorem is what gives meaning to "the points interior to and on $C$" in the Cauchy–Goursat theorem ([[§50 Cauchy–Goursat Theorem|§50]]) and the Cauchy integral formula ([[§54 Cauchy Integral Formula|§54]]). For a positively oriented simple closed contour the interior lies to the left as $C$ is traversed.
+B&C accepts the statement as geometrically evident and remarks that the proof is not easy; it cites Newman and Thron for the general case and Hille (Vol. 1, pp. 281–285) for a simple closed polygon. The vault has no proof either. The theorem is what gives meaning to "the points interior to and on $C$" in the Cauchy–Goursat theorem ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]) and the Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]]). For a positively oriented simple closed contour the interior lies to the left as $C$ is traversed.
 
 ![[m342-43-1.svg]]
 *Left: the polygonal line (4), a contour made of two smooth arcs with a corner at $1 + i$. Right: a positively oriented simple closed contour made of three smooth arcs (a segment, a quarter circle, and a curved arc), with corners where they meet. By the Jordan curve theorem its points are the common boundary of a bounded interior (shaded), which lies to the left of the direction of travel, and an unbounded exterior.*
 
 ## The Chain Rule Along an Arc
 
-Later sections ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49]], and the angle-preservation of conformal maps in [[§112★ Preservation of Angles and Scale Factors|§112★]]) differentiate an analytic function along an arc.
+Later sections ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49]], and the angle-preservation of conformal maps in [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|Theorem §112.1]]) differentiate an analytic function along an arc.
 
 > [!theorem] Proposition §43.5: Chain Rule Along an Arc
 > Suppose that a function $f(z)$ is analytic at a point $z_0 = z(t_0)$ lying on a smooth arc $z = z(t)$ $(a \le t \le b)$. If $w(t) = f[z(t)]$, then
@@ -301,7 +301,7 @@ Later sections ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49]], 
 > [!proof]+ Proof
 > B&C suggests writing $w(t) = u[x(t), y(t)] + iv[x(t), y(t)]$ and using the two-variable chain rule with the Cauchy–Riemann equations; that route needs $u$ and $v$ to be differentiable as functions of $(x, y)$ at $(x_0, y_0)$, which is true but has not been shown. Here is a direct argument that uses only the existence of $f'(z_0)$ and of $z'(t_0)$.
 >
-> Define $\eta(z) = \dfrac{f(z) - f(z_0)}{z - z_0} - f'(z_0)$ for $z \ne z_0$ in a neighborhood of $z_0$ where $f$ is defined, and $\eta(z_0) = 0$. By the definition of $f'(z_0)$ ([[§19 Derivatives|§19]]), $\eta(z) \to 0 = \eta(z_0)$ as $z \to z_0$, so $\eta$ is continuous at $z_0$, and
+> Define $\eta(z) = \dfrac{f(z) - f(z_0)}{z - z_0} - f'(z_0)$ for $z \ne z_0$ in a neighborhood of $z_0$ where $f$ is defined, and $\eta(z_0) = 0$. By the definition of $f'(z_0)$ ([[§19 Derivatives#^def-19-1|Definition §19.1]]), $\eta(z) \to 0 = \eta(z_0)$ as $z \to z_0$, so $\eta$ is continuous at $z_0$, and
 >
 > $$
 > f(z) - f(z_0) = \big[f'(z_0) + \eta(z)\big](z - z_0)
@@ -315,11 +315,11 @@ Later sections ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49]], 
 >
 > As $t \to t_0$, $\eta(z(t)) \to \eta(z_0) = 0$ (a continuous function of a continuous function), and the last quotient tends to $z'(t_0)$. Hence the left side tends to $f'(z_0)z'(t_0)$. A complex-valued function of $t$ has a limit exactly when its real and imaginary parts do ([[§16 Theorems on Limits#^thm-16-1|Theorem §16.1]]), so the difference quotients of $\operatorname{Re} w$ and $\operatorname{Im} w$ converge, and by [[§41 Derivatives of Functions w(t)#^def-41-1|Definition §41.1]] $w'(t_0) = f'(z_0)z'(t_0)$. (At an endpoint $t_0 = a$ or $b$ the limits are one-sided.)
 >
-> In the notation of B&C's suggestion the result reads $w' = (u_xx' + u_yy') + i(v_xx' + v_yy')$, which by $u_x = v_y$, $u_y = -v_x$ ([[§21 Cauchy–Riemann Equations|§21]]) equals $(u_x + iv_x)(x' + iy') = f'(z_0)z'(t_0)$.
+> In the notation of B&C's suggestion the result reads $w' = (u_xx' + u_yy') + i(v_xx' + v_yy')$, which by $u_x = v_y$, $u_y = -v_x$ ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]) equals $(u_x + iv_x)(x' + iy') = f'(z_0)z'(t_0)$.
 
 ^pf-43-5
 
-*Uses:* [[§41 Derivatives of Functions w(t)#^def-41-1|Def. §41.1]], [[§19 Derivatives|§19]] (definition of $f'(z_0)$), [[§16 Theorems on Limits#^thm-16-1|§16.1]], [[§21 Cauchy–Riemann Equations|§21]] (Cauchy–Riemann equations)
+*Uses:* [[§41 Derivatives of Functions w(t)#^def-41-1|Def. §41.1]], [[§19 Derivatives#^def-19-1|Def. §19.1]], [[§16 Theorems on Limits#^thm-16-1|§16.1]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]]
 
 > [!remark]- Connections
 > - B&C's route is the multivariable chain rule, [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]], applied to $(u, v)$ composed with $(x(t), y(t))$; complex differentiability at $z_0$ gives the real differentiability of $(u, v)$ that it needs, with Jacobian the rotation–scaling matrix of $f'(z_0)$.

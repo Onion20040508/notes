@@ -93,7 +93,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 > The bound of [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] gives $\big|\int_{C_R} fe^{iaz}\big| \le M_R\,\pi R$, which tends to zero only if $M_R = o(1/R)$; for $f = p/q$ that is $\deg q \ge \deg p + 2$. Jordan's lemma gives $M_R\pi/a$, which tends to zero as soon as $M_R \to 0$, that is, $\deg q \ge \deg p + 1$. So for rational $f$ with $\deg q = \deg p + 1$ and $a > 0$,
 >
 > $$
-> \text{P.V.}\int_{-\infty}^{\infty} f(x)e^{iax}\,dx = 2\pi i\sum_{k}\operatorname*{Res}_{z=z_k}\big[f(z)e^{iaz}\big]
+> \text{P.V.}\int_{-\infty}^{\infty} f(x)e^{iax}\,dx = 2\pi i\sum_{k}\operatorname{Res}_{z=z_k}\big[f(z)e^{iaz}\big]
 > $$
 >
 > (residues at the zeros of $q$ above the axis), by the argument of [[§87 Improper Integrals from Fourier Analysis#^prop-87-1|Proposition §87.1]]. Only the principal value is asserted: the integrals now converge conditionally, not absolutely. The factor $e^{iaz}$ with $a > 0$ is essential; Jordan's lemma says nothing about $\int_{C_R} f(z)\,dz$ itself, which for $f = 1/z$ is $\pi i$ for every $R$.
@@ -147,7 +147,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 > **Residues.** By [[§83 Zeros and Poles|§83]] (Theorem 2), at each such zero $z_k$,
 >
 > $$
-> \operatorname*{Res}_{z=z_k}\frac{z^3e^{iaz}}{z^4 + 4} = \frac{z_k^3e^{iaz_k}}{4z_k^3} = \frac{e^{iaz_k}}{4} .
+> \operatorname{Res}_{z=z_k}\frac{z^3e^{iaz}}{z^4 + 4} = \frac{z_k^3e^{iaz_k}}{4z_k^3} = \frac{e^{iaz_k}}{4} .
 > $$
 >
 > The sum is $\frac14\big(e^{ia(1+i)} + e^{ia(-1+i)}\big) = \frac{e^{-a}}{4}\big(e^{ia} + e^{-ia}\big) = \frac{e^{-a}\cos a}{2}$, and $2\pi i$ times it is $i\pi e^{-a}\cos a$.

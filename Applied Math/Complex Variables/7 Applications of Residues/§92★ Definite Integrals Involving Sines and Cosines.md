@@ -194,7 +194,7 @@ $$
 > **Residues.** At each of them, by [[§83 Zeros and Poles|§83]] (Theorem 2),
 >
 > $$
-> \operatorname*{Res}\frac{4iz}{z^4 - 6z^2 + 1} = \frac{4iz}{4z^3 - 12z} = \frac{i}{z^2 - 3} = \frac{i}{(3 - \sqrt8) - 3} = -\frac{i}{2\sqrt2} .
+> \operatorname{Res}\frac{4iz}{z^4 - 6z^2 + 1} = \frac{4iz}{4z^3 - 12z} = \frac{i}{z^2 - 3} = \frac{i}{(3 - \sqrt8) - 3} = -\frac{i}{2\sqrt2} .
 > $$
 >
 > **Conclusion.** $2\pi i\cdot\Big(-\frac{2i}{2\sqrt2}\Big) = \frac{2\pi}{\sqrt2} = \sqrt2\,\pi \approx 4.442883$, as quadrature confirms. The key is the same computation.

@@ -12,7 +12,7 @@ tags: [complex-variables, math342, extension]
 *Brown–Churchill, Section 129.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
-The Schwarz–Christoffel transformation is written in terms of the prevertices $x_j$, not the vertices, and at most three prevertices can be chosen freely; for a polygon with more than three sides the others must be solved for, which often takes ingenuity. The integral is a second limitation: it is rarely elementary. This section works out the two simplest nondegenerate cases. For a triangle all three prevertices are free; for a rectangle the symmetric choice $\pm1$, $\pm a$ leaves one parameter $a$, which fixes the shape. The vertices come out as beta-function and elliptic integrals.
+The Schwarz–Christoffel transformation is written in terms of the prevertices $x_j$, not the vertices, and at most three prevertices can be chosen freely; for a polygon with more than three sides the others must be solved for, which often takes ingenuity; and the integral is rarely elementary. This section works out the two simplest nondegenerate cases. For a triangle all three prevertices are free; for a rectangle the symmetric choice $\pm1$, $\pm a$ leaves one parameter $a$, which fixes the shape. The vertices come out as beta-function and elliptic integrals.
 
 ## Triangles
 

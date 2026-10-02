@@ -23,7 +23,7 @@ graph TD
   C2["C2 The Quantum Scalar Field"]
   CA["CA Mathematical Methods"]
   C2 -->|49| CA
-  CA -.->|419| C2
+  CA -.->|568| C2
 ```
 
 ## Planned

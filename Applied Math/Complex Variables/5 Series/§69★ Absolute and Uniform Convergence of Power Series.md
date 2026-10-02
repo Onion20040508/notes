@@ -192,7 +192,7 @@ In general $N_\varepsilon$ depends on $z$ as well as on $\varepsilon$.
 >
 > **Not uniform on the open disk $|z| < 1$.** Fix any $N$. For real $z = x$ with $0 < x < 1$, $\rho_N(x) = x^N/(1 - x) \to \infty$ as $x \to 1^-$. So for $\varepsilon = 1$ no single $N_\varepsilon$ works for all $z$ in $|z| < 1$. Theorem §69.3 cannot be improved to the whole open disk.
 >
-> *Illustration of B&C Sec. 69, Theorem 2 (not in B&C)*
+> *Source: illustration of B&C Sec. 69 added in these notes (not in B&C)*
 
 ^ex-69-1
 
@@ -204,7 +204,7 @@ In general $N_\varepsilon$ depends on $z$ as well as on $\varepsilon$.
 >
 > So the circle of convergence separates convergence from divergence only off the circle; on it, each series must be examined separately.
 >
-> *Illustration of B&C Sec. 69, Definition of the circle of convergence (not in B&C)*
+> *Source: illustration of B&C Sec. 69 added in these notes (not in B&C)*
 
 ^ex-69-2
 
@@ -213,6 +213,6 @@ In general $N_\varepsilon$ depends on $z$ as well as on $\varepsilon$.
 >
 > **$\sum_{n=0}^{\infty}z^n/n!$ converges at every point.** Here $R = \infty$ ([[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|Proposition §64.1]], the series of $e^z$), and Theorem §69.3, applied with $z_1$ of any modulus, gives uniform convergence on every closed disk $|z| \le R_1$. The convergence is not uniform on the whole plane: for real $z = x > 0$ the remainder $\rho_N(x) \ge x^N/N!$ is unbounded in $x$.
 >
-> *Illustration of B&C Sec. 69, Theorems 1 and 2 (not in B&C)*
+> *Source: illustration of B&C Sec. 69 added in these notes (not in B&C)*
 
 ^ex-69-3

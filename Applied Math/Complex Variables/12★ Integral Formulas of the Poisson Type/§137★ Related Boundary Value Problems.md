@@ -12,7 +12,7 @@ tags: [complex-variables, math342, extension]
 *Brown–Churchill, Section 137.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
-Symmetry and inversion extend the disk formula to three more regions. If the boundary values are extended oddly across the horizontal diameter, the Poisson integral vanishes on the diameter, which solves the Dirichlet problem for a half disk; an even extension makes the normal derivative vanish there instead (an insulated or flow-free diameter). The map $z = r_0^2/Z$, followed by the reflection $\theta \mapsto -\theta$, carries the disk to the exterior of the circle and turns the Poisson integral into the solution of the exterior Dirichlet problem, whose value at infinity is the mean of the boundary values. B&C leaves the details to exercises; they are written out here. Throughout, the boundary function $F$ is piecewise continuous.
+Symmetry and inversion extend the disk formula to three more regions. If the boundary values are extended oddly across the horizontal diameter, the Poisson integral vanishes on the diameter, which solves the Dirichlet problem for a half disk; an even extension makes the normal derivative vanish there instead (an insulated or flow-free diameter). The map $z = r_0^2/Z$, followed by the reflection $\theta \mapsto -\theta$, carries the disk to the exterior of the circle and turns the Poisson integral into the solution of the exterior Dirichlet problem, whose value at infinity is the mean of the boundary values. B&C leaves the details to exercises; they are written out here, for piecewise continuous boundary functions $F$.
 
 ## Half Disks
 

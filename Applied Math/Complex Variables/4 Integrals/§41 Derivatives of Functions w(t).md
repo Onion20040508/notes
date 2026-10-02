@@ -107,7 +107,7 @@ B&C notes that the rules of calculus for sums and products apply to $w(t)$ just 
 > \frac{d}{dt}e^{z_0t} = z_0e^{z_0t} . \qquad (4)
 > $$
 >
-> By the definition of the exponential function ([[§30 The Exponential Function|§30]]),
+> By the definition of the exponential function ([[§30 The Exponential Function#^def-30-1|Definition §30.1]]),
 >
 > $$
 > e^{z_0t} = e^{x_0t}e^{iy_0t} = e^{x_0t}\cos y_0t + ie^{x_0t}\sin y_0t .
