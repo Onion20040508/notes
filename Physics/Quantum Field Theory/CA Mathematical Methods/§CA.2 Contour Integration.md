@@ -41,9 +41,19 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 ^thm-ca-2-1
 
 > [!derivation]- Derivation
-> *1.* $\bigl|\int_a^bf(z(s))z'(s)\,ds\bigr| \le M\int_a^b|z'(s)|\,ds = ML$.
+> **Step 1** (ML). $\bigl|\int_a^bf(z(s))z'(s)\,ds\bigr| \le \int_a^b|f(z(s))|\,|z'(s)|\,ds \le M\int_a^b|z'(s)|\,ds = ML$.
 >
-> *2.* With $z = z_0 + re^{i\varphi}$, $dz = ire^{i\varphi}d\varphi$, the integral is $ir^{n+1}\int_0^{2\pi}e^{i(n+1)\varphi}d\varphi$, which is $2\pi i$ for $n = -1$ and $0$ otherwise. For $n \ne -1$ the integrand has the single-valued antiderivative $(z - z_0)^{n+1}/(n + 1)$; only $n = -1$ fails, because $\log(z - z_0)$ gains $2\pi i$ on the way round. The lecture's table entry is $n = -1$, $z_0 = 0$, divided by $2\pi i$.
+> **Step 2** (parametrize the circle). $z = z_0 + re^{i\varphi}$, $\varphi: 0 \to 2\pi$ (counterclockwise), $dz = ire^{i\varphi}d\varphi$, $(z - z_0)^n = r^ne^{in\varphi}$:
+>
+> $$
+> \oint(z - z_0)^n\,dz = ir^{n+1}\int_0^{2\pi}e^{i(n+1)\varphi}\,d\varphi .
+> $$
+>
+> **Step 3** (evaluate). For $n = -1$ the integrand is $1$ and the result is $2\pi i$, independent of $r$. For $n \ne -1$, $\int_0^{2\pi}e^{i(n+1)\varphi}d\varphi = \bigl[e^{i(n+1)\varphi}/i(n+1)\bigr]_0^{2\pi} = 0$.
+>
+> **What the derivation shows.**
+> - For $n \ne -1$ the integrand has the single-valued antiderivative $(z - z_0)^{n+1}/(n + 1)$, which returns to its starting value; only $n = -1$ fails, because $\log(z - z_0)$ gains $2\pi i$ on the way round.
+> - The lecture's table entry is $n = -1$, $z_0 = 0$, divided by $2\pi i$; the independence of $r$ is the first instance of contour deformation (Theorem §CA.2.2).
 
 ^der-ca-2-1
 
@@ -62,7 +72,19 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 ^thm-ca-2-2
 
 > [!derivation]- Derivation
-> For $u$, $v$ with continuous partial derivatives: $\oint f\,dz = \oint(u\,dx - v\,dy) + i\oint(v\,dx + u\,dy)$. Green's theorem ([[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]]) turns the two pieces into $\iint(-\partial_xv - \partial_yu)$ and $\iint(\partial_xu - \partial_yv)$, both zero by Cauchy–Riemann. Goursat's proof removes the continuity assumption. The deformation statement follows by applying the theorem to the closed contour made of one path and the reverse of the other. The Taylor expansion follows from Cauchy's integral formula (Stein & Shakarchi, Ch. 2, Theorem 4.4), which is not reproduced here.
+> **Step 1** (real form). With $f = u + iv$ and $dz = dx + i\,dy$: $\oint f\,dz = \oint(u\,dx - v\,dy) + i\oint(v\,dx + u\,dy)$.
+>
+> **Step 2** (Green's theorem). For $u$, $v$ with continuous partial derivatives, [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]], $\oint(P\,dx + Q\,dy) = \iint(\partial_xQ - \partial_yP)\,dx\,dy$, turns the two pieces into $\iint(-\partial_xv - \partial_yu)$ and $\iint(\partial_xu - \partial_yv)$.
+>
+> **Step 3** (Cauchy–Riemann). Both integrands vanish ([[§CA.2 Contour Integration#^def-ca-2-2|Def. §CA.2.2]]), so $\oint f\,dz = 0$. Goursat's proof removes the continuity assumption.
+>
+> **Step 4** (deformation). Two paths from $z_1$ to $z_2$ that can be deformed into each other through a region of analyticity form, with one reversed, a closed contour with $f$ analytic inside; by Step 3 its integral is zero, so the two path integrals are equal.
+>
+> **Step 5** (Taylor series). Follows from Cauchy's integral formula (Stein & Shakarchi, Ch. 2, Theorem 4.4), not reproduced here.
+>
+> **What the derivation shows.**
+> - Cauchy–Riemann says that $u\,dx - v\,dy$ and $v\,dx + u\,dy$ are closed forms; Cauchy's theorem is Green's theorem for them.
+> - Used everywhere a contour is moved: closing contours, moving poles by $i\varepsilon$, Wick rotation.
 
 ^der-ca-2-2
 
@@ -76,7 +98,13 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 ^thm-ca-2-3
 
 > [!derivation]- Derivation
-> Let $h = f - g$, zero on a set accumulating at $z_0 \in U$. Expand $h$ in its Taylor series at $z_0$ ([[§CA.2 Contour Integration#^thm-ca-2-2|Theorem §CA.2.2]]). If some coefficient were nonzero, then $h = (z - z_0)^ku(z)$ with $u$ analytic and $u(z_0) \ne 0$, so $h \ne 0$ on a punctured disc around $z_0$, contradicting the accumulation. So $h \equiv 0$ near $z_0$. The set of points of $U$ near which $h$ vanishes identically is therefore nonempty and open, and by the same argument applied at its limit points it is closed in $U$; $U$ being connected, it is all of $U$.
+> **Step 1** (local). Let $h = f - g$, zero on a set accumulating at $z_0 \in U$. Expand $h = \sum_na_n(z - z_0)^n$ in a disc around $z_0$ ([[§CA.2 Contour Integration#^thm-ca-2-2|Theorem §CA.2.2]]). If some $a_n \ne 0$, let $k$ be the first: $h = (z - z_0)^ku(z)$ with $u$ analytic and $u(z_0) = a_k \ne 0$, so by continuity $u \ne 0$ near $z_0$ and $h \ne 0$ on a punctured disc around $z_0$, contradicting the accumulation of zeros. So all $a_n = 0$: $h \equiv 0$ near $z_0$.
+>
+> **Step 2** (global). Let $A$ be the set of points of $U$ near which $h$ vanishes identically. $A$ is open by definition and nonempty by Step 1. If $w \in U$ is a limit of points of $A$, then $w$ is an accumulation point of zeros of $h$, and Step 1 at $w$ gives $w \in A$: $A$ is closed in $U$. $U$ is connected, so $A = U$.
+>
+> **What the derivation shows.**
+> - Connectedness is essential: on two disjoint discs an analytic function can be $0$ on one and $1$ on the other.
+> - Used to continue one Euclidean evaluation to the Wightman function everywhere ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-9|Theorem §C2.5.9]]) and the Gaussian integral to complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]).
 
 ^der-ca-2-3
 
@@ -112,7 +140,14 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 ^thm-ca-2-4
 
 > [!derivation]- Derivation
-> *1.* $f = a_{-1}/(z - z_0) + (\text{analytic})$; and $h(z) = h'(z_0)(z - z_0) + O\bigl((z - z_0)^2\bigr)$. *2.* $(z - z_0)^kf$ is analytic, and $a_{-1}$ is its $(k - 1)$-th Taylor coefficient. Example: $e^z/z^2 = z^{-2} + z^{-1} + \tfrac12 + \cdots$ has residue $1$, the coefficient of $z^{-1}$, not of $z^{-2}$. *3.* $g = e^{-ip^0t}$, $h = (p^0)^2 - E^2$, $h' = 2p^0$; equivalently the partial fractions $\frac{1}{(p^0)^2 - E^2} = \frac{1}{2E}\bigl(\frac{1}{p^0 - E} - \frac{1}{p^0 + E}\bigr)$.
+> **Step 1** (simple pole). Near $z_0$, $f = \frac{a_{-1}}{z - z_0} + (\text{analytic})$, so $(z - z_0)f \to a_{-1}$. For $f = g/h$: $h(z) = h'(z_0)(z - z_0) + O\bigl((z - z_0)^2\bigr)$ with $h'(z_0) \ne 0$, so $(z - z_0)\frac{g}{h} \to \frac{g(z_0)}{h'(z_0)}$.
+>
+> **Step 2** (order $k$). $(z - z_0)^kf = a_{-k} + \cdots + a_{-1}(z - z_0)^{k-1} + \cdots$ is analytic, and $a_{-1}$ is its $(k - 1)$-th Taylor coefficient, $\frac{1}{(k - 1)!}\frac{d^{k-1}}{dz^{k-1}}$ at $z_0$. Example: $e^z/z^2 = z^{-2} + z^{-1} + \tfrac12 + \cdots$ has residue $1$, the coefficient of $z^{-1}$, not of $z^{-2}$.
+>
+> **Step 3** (the propagator). $g = e^{-ip^0t}$, $h = (p^0)^2 - E^2$, $h'(p^0) = 2p^0$: at $p^0 = E$, $\frac{e^{-iEt}}{2E}$; at $p^0 = -E$, $\frac{e^{iEt}}{-2E}$. Equivalently, the partial fractions $\frac{1}{(p^0)^2 - E^2} = \frac{1}{2E}\bigl(\frac{1}{p^0 - E} - \frac{1}{p^0 + E}\bigr)$ (check: the numerator is $(p^0 + E) - (p^0 - E) = 2E$) display both residues at once.
+>
+> **What the derivation shows.**
+> - Same function, two poles, two different numbers: the residue at $+E$ carries the positive-energy wave, the one at $-E$ the negative-frequency wave that becomes the reversed Wightman function ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-4|Theorem §C2.6.4]]).
 
 ^der-ca-2-4
 
@@ -130,7 +165,14 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 ^thm-ca-2-5
 
 > [!derivation]- Derivation
-> By Cauchy's theorem ([[§CA.2 Contour Integration#^thm-ca-2-2|Theorem §CA.2.2]]) deform $\Gamma$, without changing the integral, into small circles around each $z_k$ joined by pairs of segments traversed in both directions, which cancel. On each circle the integral is $2\pi i\operatorname{Res}_{z_k}f$ ([[§CA.2 Contour Integration#^def-ca-2-3|Def. §CA.2.3]]); reversing the orientation reverses the sign.
+> **Step 1** (deform). By Cauchy's theorem ([[§CA.2 Contour Integration#^thm-ca-2-2|Theorem §CA.2.2]]) deform $\Gamma$, without changing the integral, into small circles around each $z_k$ joined to the outer path by pairs of segments traversed in opposite directions.
+>
+> **Step 2** (cancel). The two traversals of each segment cancel.
+>
+> **Step 3** (circles). On a counterclockwise circle around $z_k$ the integral is $2\pi i\operatorname{Res}_{z_k}f$ ([[§CA.2 Contour Integration#^def-ca-2-3|Def. §CA.2.3]]); reversing the orientation reverses the sign.
+>
+> **What the derivation shows.**
+> - Singularities outside $\Gamma$ never enter; those on $\Gamma$ are excluded by hypothesis and need Theorem §CA.2.7.
 
 ^der-ca-2-5
 
@@ -150,16 +192,28 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 ^thm-ca-2-6
 
 > [!derivation]- Derivation
-> *1.* ML: $\pi R\cdot C/R^{1+\delta} \to 0$. A rational function whose denominator has degree at least two more than its numerator qualifies.
+> **Step 1** (algebraic decay). The semicircle has length $\pi R$, so by ML ([[§CA.2 Contour Integration#^thm-ca-2-1|Theorem §CA.2.1]]) the arc is at most $\pi R\cdot C/R^{1+\delta} = \pi C/R^\delta \to 0$. A rational function whose denominator has degree at least two more than its numerator qualifies.
 >
-> *2.* On $C_R$, $|e^{i\lambda z}| = e^{-\lambda R\sin\theta}$, and $\sin\theta \ge 2\theta/\pi$ on $[0, \pi/2]$, so $\int_0^\pi e^{-\lambda R\sin\theta}R\,d\theta \le 2\int_0^{\pi/2}e^{-2\lambda R\theta/\pi}R\,d\theta < \pi/\lambda$. The arc is at most $(\pi/\lambda)\max_{C_R}|g| \to 0$.
+> **Step 2** (Jordan: the exponential on the arc). On $z = Re^{i\theta}$, $0 \le \theta \le \pi$: $|e^{i\lambda z}| = |e^{i\lambda R\cos\theta}|\,e^{-\lambda R\sin\theta} = e^{-\lambda R\sin\theta}$ and $|dz| = R\,d\theta$.
 >
-> *Which side.* $|e^{ikz}| = e^{-k\operatorname{Im}z}$ decays in the upper half-plane for $k > 0$; $|e^{-ip^0t}| = e^{t\operatorname{Im}p^0}$ decays in the upper half-plane for $t < 0$. The sign of the time difference, causal order, decides the contour.
+> **Step 3** (Jordan: the estimate). By symmetry about $\theta = \pi/2$ and $\sin\theta \ge 2\theta/\pi$ on $[0, \pi/2]$ (concavity),
+>
+> $$
+> \int_0^\pi e^{-\lambda R\sin\theta}R\,d\theta = 2\int_0^{\pi/2}e^{-\lambda R\sin\theta}R\,d\theta \le 2\int_0^{\pi/2}e^{-2\lambda R\theta/\pi}R\,d\theta = \frac{\pi}{\lambda}\bigl(1 - e^{-\lambda R}\bigr) < \frac\pi\lambda .
+> $$
+>
+> So $\bigl|\int_{C_R}g\,e^{i\lambda z}dz\bigr| \le \frac\pi\lambda\max_{C_R}|g| \to 0$.
+>
+> **Step 4** (which side). $|e^{ikz}| = e^{-k\operatorname{Im}z}$ decays in the upper half-plane for $k > 0$; $|e^{-ip^0t}| = e^{t\operatorname{Im}p^0}$ decays in the upper half-plane for $t < 0$ and the lower for $t > 0$.
+>
+> **What the derivation shows.**
+> - The sign of the time difference, causal order, decides the contour.
+> - Jordan needs no rate of decay of $g$ but needs $g \to 0$; for the propagator integrand the faster ML estimate suffices ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-4|Theorem §C2.6.4]], Step 2).
 
 ^der-ca-2-6
 
 > [!caution] Caution: Jordan's lemma needs $g \to 0$
-> No rate of decay is required, but $g$ must tend to zero. For the equal-time Wightman integrand $p\,e^{ipr}/\sqrt{p^2 + m^2}$ the kernel tends to $1$ and the lemma fails; the cure there is to write $p\,e^{ipr} = -i\partial_re^{ipr}$ first ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-7|Theorem §C2.5.7]], second route). Nor may a regulator such as $e^{-\varepsilon p}$ be kept on the arc: near $\arg p = \pi$ it grows like $e^{\varepsilon R}$.
+> No rate of decay is required, but $g$ must tend to zero. For the equal-time Wightman integrand $p\,e^{ipr}/\sqrt{p^2 + m^2}$ the kernel tends to $1$ and the lemma fails; the cure there is to write $p\,e^{ipr} = -i\partial_re^{ipr}$ first ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], second route). Nor may a regulator such as $e^{-\varepsilon p}$ be kept on the arc: near $\arg p = \pi$ it grows like $e^{\varepsilon R}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4*
 
@@ -198,7 +252,23 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 ^thm-ca-2-7
 
 > [!derivation]- Derivation
-> On $z = x_0 + re^{i\varphi}$ with $\varphi$ from $\pi$ to $0$ (above, clockwise), $\int f\,dz = \int_\pi^0\frac{g(x_0 + re^{i\varphi})}{re^{i\varphi}}\,ire^{i\varphi}\,d\varphi \to -i\pi g(x_0)$ as $r \to 0$; below, $\varphi$ runs from $\pi$ to $2\pi$ and gives $+i\pi g(x_0)$. The straight pieces outside $|x - x_0| < r$ tend to the principal value ([[§CA.1 Generalized Functions and Fourier Transforms#^def-ca-1-4|Def. §CA.1.4]]). Moving the pole instead of the path: by Cauchy's theorem the real axis with the pole at $x_0 - i\varepsilon$ may be deformed to pass above $x_0$, and as $\varepsilon \to 0$ this is the contour above the pole. As an identity of generalized functions this is the Sokhotski–Plemelj formula ([[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-8|Theorem §CA.1.8]]).
+> **Step 1** (above). On $z = x_0 + re^{i\varphi}$ with $\varphi$ from $\pi$ to $0$ (above the pole, clockwise), $dz = ire^{i\varphi}d\varphi$ and
+>
+> $$
+> \int f\,dz = \int_\pi^0\frac{g(x_0 + re^{i\varphi})}{re^{i\varphi}}\,ire^{i\varphi}\,d\varphi = i\int_\pi^0g(x_0 + re^{i\varphi})\,d\varphi \;\xrightarrow{r\to0}\; -i\pi\,g(x_0),
+> $$
+>
+> by continuity of $g$.
+>
+> **Step 2** (below). $\varphi$ runs from $\pi$ to $2\pi$ (counterclockwise): the same computation gives $+i\pi g(x_0)$.
+>
+> **Step 3** (the straight pieces). Outside $|x - x_0| < r$ they tend, as $r \to 0$, to the principal value ([[§CA.1 Generalized Functions and Fourier Transforms#^def-ca-1-4|Def. §CA.1.4]]).
+>
+> **Step 4** (moving the pole instead). The real axis with the pole at $x_0 - i\varepsilon$ can be deformed, by Cauchy's theorem, into a path that passes above $x_0$ without crossing the pole; as $\varepsilon \to 0$ this is the contour of Step 1.
+>
+> **What the derivation shows.**
+> - The two passings differ by a full loop, $2\pi i\operatorname{Res}$; the principal value is their average.
+> - As an identity of generalized functions this is the Sokhotski–Plemelj formula ([[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-8|Theorem §CA.1.8]]).
 
 ^der-ca-2-7
 
@@ -221,7 +291,15 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 ^thm-ca-2-8
 
 > [!derivation]- Derivation
-> On the cut-plane the function is analytic, so Cauchy's theorem applies to any closed contour that does not cross the cut: the real line, the large arc, the two lips of the cut traversed in opposite directions, and a small circle round the branch point. The lips carry the two boundary values of the function, so together they give $\int(f_{\text{one side}} - f_{\text{other side}})$, the discontinuity. The small circle contributes at most $2\pi\delta\cdot O(\delta^{-1/2}) = O(\delta^{1/2})$ (ML, [[§CA.2 Contour Integration#^thm-ca-2-1|Theorem §CA.2.1]]). The worked case is the equal-time Wightman function, where the two lips *add* ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-7|Theorem §C2.5.7]], second route).
+> **Step 1** (a closed contour avoiding the cut). On the plane cut along, say, $[ia, i\infty)$, the function is analytic. Take the real line, the large arc, the two lips of the cut (one traversed downward, the other upward) and a small circle round the branch point; Cauchy's theorem ([[§CA.2 Contour Integration#^thm-ca-2-2|Theorem §CA.2.2]]) gives total zero.
+>
+> **Step 2** (the lips). They carry the two boundary values $f_\pm$ of the function and are traversed in opposite directions, so together they give $\pm\int(f_+ - f_-)$, the integral of the discontinuity.
+>
+> **Step 3** (the small circle). If $|f| = O(\delta^{-1/2})$ on the circle of radius $\delta$, its contribution is at most $2\pi\delta\cdot O(\delta^{-1/2}) = O(\delta^{1/2}) \to 0$ (ML, [[§CA.2 Contour Integration#^thm-ca-2-1|Theorem §CA.2.1]]).
+>
+> **What the derivation shows.**
+> - The values on the lips depend on the choice of branch; the total does not.
+> - Worked case: the equal-time Wightman function, where the two lips *add* ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], second route).
 
 ^der-ca-2-8
 
@@ -246,7 +324,10 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 ^thm-ca-2-9
 
 > [!derivation]- Derivation
-> Rule 1 is [[§CA.2 Contour Integration#^thm-ca-2-5|Theorem §CA.2.5]]; rules 2–3 are [[§CA.2 Contour Integration#^thm-ca-2-6|Theorem §CA.2.6]]; rule 4 is [[§CA.2 Contour Integration#^thm-ca-2-2|Theorem §CA.2.2]] with the residue theorem applied to the loop between the two contours; rule 5 is [[§CA.2 Contour Integration#^thm-ca-2-4|Theorem §CA.2.4]]; rule 6 is [[§CA.2 Contour Integration#^thm-ca-2-7|Theorem §CA.2.7]] and [[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-8|Theorem §CA.1.8]]; rule 7 is [[§CA.2 Contour Integration#^thm-ca-2-8|Theorem §CA.2.8]].
+> Each rule is one of the theorems above. **Rule 1:** [[§CA.2 Contour Integration#^thm-ca-2-5|Theorem §CA.2.5]]. **Rules 2–3:** [[§CA.2 Contour Integration#^thm-ca-2-6|Theorem §CA.2.6]]. **Rule 4:** [[§CA.2 Contour Integration#^thm-ca-2-2|Theorem §CA.2.2]], with the residue theorem applied to the loop between the two contours. **Rule 5:** [[§CA.2 Contour Integration#^thm-ca-2-4|Theorem §CA.2.4]]. **Rule 6:** [[§CA.2 Contour Integration#^thm-ca-2-7|Theorem §CA.2.7]] and [[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-8|Theorem §CA.1.8]]. **Rule 7:** [[§CA.2 Contour Integration#^thm-ca-2-8|Theorem §CA.2.8]].
+>
+> **What the derivation shows.**
+> - The procedure that strings these rules together for Green's functions is [[P2 Green's Functions by Contour Integration|P2]].
 
 ^der-ca-2-9
 
@@ -263,6 +344,6 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 > - Example §CA.2.1 is the one-dimensional cousin of the Yukawa potential ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]) and of the free scattering Green's function $-e^{ik\rho}/4\pi\rho$, whose $k'$-plane integral closes the two exponentials on opposite sides exactly as here ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]]).
 > - Example §CA.2.2 is the transform behind every causal response: the energy transform of a retarded propagator is analytic in the upper half-plane ([[§C4.1 Propagators#^thm-c4-1-7|QM Theorem §C4.1.7]]), the impulse response of a damped oscillator vanishes before the kick ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]], whose transform $\chi(\omega)$ has its poles in one half-plane), and the retarded Green's function of the Klein–Gordon field passes above both poles ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-4|Theorem §C2.6.4]]).
 > - The half-residue lemma is what QM uses for the imaginary part of the resolvent in the optical theorem ([[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]); its distribution form is [[§CA.1 Generalized Functions and Fourier Transforms#^thm-ca-1-8|Theorem §CA.1.8]].
-> - The identity theorem makes analytic continuation unique; it is what turns one Euclidean evaluation into the Wightman function everywhere ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-7|Theorem §C2.5.7]]) and what extends the Gaussian integral to complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]).
+> - The identity theorem makes analytic continuation unique; it is what turns one Euclidean evaluation into the Wightman function everywhere ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-9|Theorem §C2.5.9]]) and what extends the Gaussian integral to complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]).
 > - Green's theorem in the plane ([[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]]) is the whole proof of Cauchy's theorem for smooth $u$, $v$; Cauchy–Riemann says that $u\,dx - v\,dy$ and $v\,dx + u\,dy$ are closed forms.
 > - Loop integrals (QFT C7, planned) bring branch cuts back, and the spinor and vector propagators (QFT C4–C5, planned) have numerators that are analytic in $p^0$, so the same residues give them the same $i\varepsilon$ (Yu eq. (6.262)).
