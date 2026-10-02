@@ -80,7 +80,7 @@ As for functionals (Lemma [[§24 Bras, Kets, and the Riesz Map#^lem-24-1|§24.1]
 
 > [!remark]- Connections
 > - The same theorem in the notation of Chapter 5: [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]] ((1) ⇔ (2)).
-> - Used in Electromagnetism: closure relations of separated eigenfunctions, read as identities of distributions, and the eigenfunction expansion of a Green function — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]], [[§C7.2 Green Functions for Poisson’s Equation#^thm-c7-2-10|EM Theorem §C7.2.10]].
+> - Used in Electromagnetism: closure relations of separated eigenfunctions, read as identities of distributions, and the eigenfunction expansion of a Green function — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]], [[§C7.4 Constructing Green Functions#^thm-c7-4-1|EM Theorem §C7.4.1]].
 
 > [!theorem] Proposition §25.3: The Completeness Relation Does Not Hold in Norm
 > If $\{e_n\}_{n \ge 1}$ is an infinite orthonormal set, then $\|\mathbf{1} - P_N\| = 1$ for every $N$. In particular $P_N \not\to \mathbf{1}$ in operator norm, even when $\{e_n\}$ is complete.

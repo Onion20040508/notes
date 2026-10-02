@@ -148,7 +148,7 @@ The theorem can also be proved directly by the chain rule for partial derivative
 > [!remark]- Connections
 > - The polar form of the Laplacian is a special case. With $s = \ln r$, the map $w = \operatorname{Log} z = s + i\theta$ has $|f'(z)|^2 = 1/r^2$, so $H_{xx} + H_{yy} = r^{-2}(h_{ss} + h_{\theta\theta})$, and $r\partial_r = \partial_s$ turns $h_{ss}$ into $r^2h_{rr} + rh_r$: this is $h_{rr} + \frac1rh_r + \frac1{r^2}h_{\theta\theta}$, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]].
 > - The general rule behind the factor $|f'|^2$: the Laplacian depends on the metric, and a conformal map multiplies the metric by $|f'|^2$; in two dimensions this rescales $\nabla^2$ but keeps the equation $\nabla^2 h = 0$. Chain rule: [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]].
-> - Used in Electromagnetism: analytic maps carry electrostatic solutions, and line charges with their strength (Corollary §116.3), to solutions — [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-2|EM Theorem §C6.4.2]], [[§C7.3★ Logarithmic Potentials and the Poisson–Boltzmann Equation#^thm-c7-3-1|EM Theorem §C7.3.1]].
+> - Used in Electromagnetism: analytic maps carry electrostatic solutions, and line charges with their strength (Corollary §116.3), to solutions — [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-2|EM Theorem §C6.4.2]], [[§C7.5★ Logarithmic Potentials and the Poisson–Boltzmann Equation#^thm-c7-5-1|EM Theorem §C7.5.1]].
 
 > [!theorem] Corollary §116.3: Poisson's Equation Under an Analytic Map
 > Let $p(u, v)$ have continuous partial derivatives of the first and second order and satisfy **Poisson's equation**

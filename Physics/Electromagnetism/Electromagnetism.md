@@ -45,7 +45,7 @@ Electric and magnetic fields, their sources, circuits, induction and electromagn
 - [[· C4 Conductors and Capacitance]]
 - [[· C5 Dielectric Matter]]
 - [[· C6 Laplace's Equation]] (★ §C6.4)
-- [[· C7 Poisson's Equation]] (★ §C7.3)
+- [[· C7 Poisson's Equation]] (★ §C7.5)
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -244,7 +244,6 @@ graph TD
   C2 -->|5| C7
   C3 -->|5| C7
   C4 -->|2| C7
-  C5 -->|5| C7
   C6 -->|47| C7
   A2 -.->|2| A1
   A4 -.->|1| A1

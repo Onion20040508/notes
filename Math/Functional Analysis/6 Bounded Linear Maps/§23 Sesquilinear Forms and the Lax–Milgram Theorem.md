@@ -121,7 +121,7 @@ The theorem below is the infinite-dimensional version. Wu warned against the nai
 ^rem-23-2
 
 > [!remark]- Connections
-> - Used in Electromagnetism: existence of the Dirichlet Green function of a bounded region — [[§C7.2 Green Functions for Poisson’s Equation#^rem-c7-2-1|EM ★ Remark: Existence of the Dirichlet Green function]].
+> - Used in Electromagnetism: existence of the Dirichlet Green function of a bounded region — [[§C7.3 Green Functions for Poisson’s Equation#^rem-c7-3-1|EM ★ Remark: Existence of the Dirichlet Green function]].
 
 > [!theorem] Lemma §23.3: A Symmetric Coercive Form Has a Sign
 > Let $B$ satisfy (1)–(4) of Theorem [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-23-2|§23.2]] and $B(x, y) = \overline{B(y, x)}$ for all $x, y$. Then either $B(x, x) \ge \beta\|x\|^2$ for all $x$, or $B(x, x) \le -\beta\|x\|^2$ for all $x$.
