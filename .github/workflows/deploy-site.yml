@@ -13,10 +13,11 @@ permissions:
   pages: write
   id-token: write
 
-# Obsidian Git pushes every 10 minutes; only the newest build matters.
+# Obsidian Git pushes every few minutes, faster than a build takes. Let a running build
+# finish; GitHub keeps only the newest waiting run, so older pushes are skipped, not queued.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
