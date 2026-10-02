@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ← [[· C4 Conductors and Capacitance]] · ↑ [[Electromagnetism]] · [[· C6 Laplace's Equation]] →
 
 **Builds on:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (19), [[· B2 Electrostatics|B2 Electrostatics]] (11), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (6), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (11), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (25), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (1), [[· B9 Conservation Laws|B9 Conservation Laws]] (2), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (6), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (5), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (2), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (2)
-**Used by:** [[· C1 Electrodynamics from an Action|C1 Electrodynamics from an Action]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (1), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (6), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (5)
+**Used by:** [[· C1 Electrodynamics from an Action|C1 Electrodynamics from an Action]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (1), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (7), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (5)
 
 ## Sections
 - [[§C5.1 The Field of Polarized Matter]] — Zangwill §6.2–6.4; HW10

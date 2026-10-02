@@ -8,7 +8,7 @@ tags: [chapter, electromagnetism]
 # C3 Electric Multipoles
 ← [[· C2 Foundations of Electrostatics]] · ↑ [[Electromagnetism]] · [[· C4 Conductors and Capacitance]] →
 
-**Builds on:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (6), [[· B2 Electrostatics|B2 Electrostatics]] (5), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (7), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (7), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (17), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (6), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (6)
+**Builds on:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (6), [[· B2 Electrostatics|B2 Electrostatics]] (5), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (7), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (7), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (17), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (7), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (6)
 **Used by:** [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (1), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (2), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (5), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (3), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (5)
 
 ## Sections

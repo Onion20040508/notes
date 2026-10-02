@@ -4,12 +4,12 @@ discipline: physics
 courses: ["PHY 182 (UMass, S. Hertel)", "PHY 422 (UMass, A. Thamm, Spring 2024)", "PHY 505 (UMich, J. Wells, Fall 2025)"]
 textbooks: ["OpenStax, University Physics Vol. 2", "Griffiths, Introduction to Electrodynamics (4th ed.)", "Nelson, PHYS 5516 notes (EMP)", "Zangwill, Modern Electrodynamics", "Likharev, Essential Graduate Physics — Classical Electrodynamics (supplement)"]
 conventions: "[[University Physics]]"
-status: levels A and B done
+status: levels A, B and C (C1–C7) done
 tags: [subject, electromagnetism]
 ---
 # Electromagnetism
 
-Electric and magnetic fields, their sources, circuits, induction and electromagnetic waves, in three levels: **A** introductory (University Physics Vol. 2; PHY 182), **B** upper-level (Griffiths; PHY 422; Nelson's PHYS 5516 notes, Schwartz's Physics 15c lectures and McDonald's note as supplements), **C** graduate (PHY 505; Zangwill; the user's PHY 505 notes, the PHY 505 typed notes (2023 offering) and the series Part III; Likharev as a supplement), which starts from the Maxwell action and then rebuilds electrostatics at graduate depth. Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). The mechanics it uses is in [[Classical Mechanics]]; optics is in [[Oscillations, Waves and Optics]], which also owns plane waves in media, the Fresnel equations, dispersion and skin depth; the covariant formulation and relativistic electrodynamics are at level C here. At level B, ★ marks material beyond the course (PHY 422: Griffiths ch. 1–9, its homework and exams): whole sections are starred in the lists below, and folded ★ callouts inside a section are side topics.
+Electric and magnetic fields, their sources, circuits, induction and electromagnetic waves, in three levels: **A** introductory (University Physics Vol. 2; PHY 182), **B** upper-level (Griffiths; PHY 422; Nelson's PHYS 5516 notes, Schwartz's Physics 15c lectures and McDonald's note as supplements), **C** graduate (PHY 505; Zangwill; the user's PHY 505 notes, the PHY 505 typed notes (earlier offering) and the series Part III; Likharev as a supplement), which starts from the Maxwell action and then rebuilds electrostatics at graduate depth. Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). The mechanics it uses is in [[Classical Mechanics]]; optics is in [[Oscillations, Waves and Optics]], which also owns plane waves in media, the Fresnel equations, dispersion and skin depth; the covariant formulation and relativistic electrodynamics are at level C here. At level B, ★ marks material beyond the course (PHY 422: Griffiths ch. 1–9, its homework and exams): whole sections are starred in the lists below, and folded ★ callouts inside a section are side topics.
 
 ## Level A — introductory
 - [[· A1 Electric Charges and Fields]]
@@ -284,7 +284,7 @@ graph TD
   C5 -.->|1| C2
   C6 -.->|3| C2
   C7 -.->|2| C2
-  C5 -.->|6| C3
+  C5 -.->|7| C3
   C6 -.->|6| C3
   C6 -.->|9| C4
   C7 -.->|1| C4
@@ -295,5 +295,5 @@ graph TD
 ## Planned
 Chapters without notes yet; sources in brackets (∅ = no typed source).
 
-**Level C — graduate (PHY 505)**
-C1 Electrostatics II: Green's functions, capacitance matrix [PHY 505 HW; Zangwill] · C2 Multipoles II [PHY 505 HW8; the user's multipole-lattice paper] · C3 Covariant electrodynamics [series Part III; PHY 505 typed notes; Griffiths ch. 12; Nelson ch. 32–38] · C4 Media from the action, monopoles, Chern–Simons [PHY 505 typed notes; Nelson ch. 39] · C5 Radiation from moving charges beyond Griffiths: general multipole radiation, Abraham–Lorentz–Dirac [Nelson ch. 41–44] · C6 Waveguides and cavities beyond Griffiths 9.5 [∅]
+**Level C — beyond PHY 505 (★)**
+C8★ Gauge fields beyond the vacuum: media from the action, monopoles and Dirac quantization, Chern–Simons [PHY 505 typed notes ch. 8; Jackson §6.11–6.12] · C9★ Radiation from moving charges beyond Griffiths: retarded Green function, covariant Liénard–Wiechert, multipole radiation, synchrotron and Cherenkov radiation, Abraham–Lorentz–Dirac [Zangwill ch. 20, 23; Likharev ch. 8, 10; Nelson ch. 41–44] · C10★ Guided waves and cavities [Zangwill ch. 19; Likharev §7.5–7.8] · magnetostatics II and quasistatics [Zangwill ch. 9–14] (optional)
