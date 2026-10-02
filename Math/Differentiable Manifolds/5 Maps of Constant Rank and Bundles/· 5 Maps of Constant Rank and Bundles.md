@@ -13,6 +13,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Sections
 - [[§28 Local Diffeomorphisms]]
+- [[§29 Submersions]]
 - [[§30 Submanifolds]]
 - [[§31 Fibrations]]
 - [[§32 The Tangent Bundle]]
@@ -21,12 +22,12 @@ tags: [chapter, differentiable-manifolds]
 
 ## Central results
 - [[Local Diffeomorphism Criterion]] (§28.2)
-- [[Submersion Normal Form]] (§28.7)
-- [[Regular Value Theorem for Manifolds]] (§29.6)
-- [[Tangent Bundle Is a Smooth Manifold]] (§31.2)
-- [[Immersion Normal Form]] (§32.1)
-- [[Images of Embeddings Are Submanifolds]] (§33.1)
-- [[Injective Proper Immersions Are Embeddings]] (§33.5)
+- [[Submersion Normal Form]] (§29.4)
+- [[Regular Value Theorem for Manifolds]] (§30.6)
+- [[Tangent Bundle Is a Smooth Manifold]] (§32.2)
+- [[Immersion Normal Form]] (§33.1)
+- [[Images of Embeddings Are Submanifolds]] (§34.1)
+- [[Injective Proper Immersions Are Embeddings]] (§34.5)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

@@ -223,7 +223,7 @@
 \chapter*{Roadmap}
 \addcontentsline{toc}{chapter}{Roadmap}
 
-These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the \emph{equations} thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\Ugp(n)$. Along the \emph{quotients} thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters~1 and~2 develop the two threads side by side, and in Chapters~3 and~4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the \emph{geometric} stage). A manifold built by quotients has none, and needs the \emph{abstract} tangent space of derivations. Between them sits a \emph{linear} stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first (\ref{sec:special-maps}): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds (\ref{sec:submanifolds}); the submersions that are locally products are the fibrations (\ref{sec:fibrations}); and the tangent spaces themselves assemble into one, the tangent bundle (\ref{sec:tangent-bundle}). Immersions, the maps dual to submersions, begin a new arc (\ref{sec:immersions}), which leads to embeddings, the immersions whose images are submanifolds (\ref{sec:embeddings}).
+These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the \emph{equations} thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\Ugp(n)$. Along the \emph{quotients} thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters~1 and~2 develop the two threads side by side, and in Chapters~3 and~4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the \emph{geometric} stage). A manifold built by quotients has none, and needs the \emph{abstract} tangent space of derivations. Between them sits a \emph{linear} stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first (\ref{sec:submersions}): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds (\ref{sec:submanifolds}); the submersions that are locally products are the fibrations (\ref{sec:fibrations}); and the tangent spaces themselves assemble into one, the tangent bundle (\ref{sec:tangent-bundle}). Immersions, the maps dual to submersions, begin a new arc (\ref{sec:immersions}), which leads to embeddings, the immersions whose images are submanifolds (\ref{sec:embeddings}).
 
 \begin{center}
 \begin{tikzpicture}[scale=0.92, transform shape]
@@ -238,7 +238,7 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (T1) at (0,-9.9) {\textbf{Geometric} \ref*{sec:tangent}--\ref*{sec:transversality}\\ $T^{\geo}_pM = \ker F'(p)$};
 \node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (T2) at (9.2,-9.9) {\textbf{Abstract} \ref*{sec:abstract-tangent}--\ref*{sec:velocities}\\ $T_pM$: derivations of germs};
 \node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (C) at (4.6,-11.9) {\ref*{sec:cotangent}\\ cotangent space};
-\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (M) at (9.2,-13.6) {\ref*{sec:special-maps}\\ local diffeomorphisms, submersions};
+\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (M) at (9.2,-13.6) {\ref*{sec:special-maps}--\ref*{sec:submersions}\\ local diffeomorphisms, submersions};
 \draw[->, thick, gray!70, ] (F) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {} (E1);
 \draw[->, thick, gray!70, ] (F) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {} (Q1);
 \draw[->, thick, gray!70, ] (E1) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {$\SL$, $\Ogp$, $\Ugp$} (E2);
@@ -6652,13 +6652,13 @@ The three spaces and their three bases. $\Phi$ sends the class of a germ to its 
 \chapter{Maps of Constant Rank and Bundles}
 
 % ============================================================================
-\section{Local Diffeomorphisms and Submersions}\label{sec:special-maps}
+\section{Local Diffeomorphisms}\label{sec:special-maps}
 
 \roadmark{Stage: maps}{Properties of the linear maps $F_{*p}$ control the local behaviour of $F$ itself.}
 
 \textit{References: Lee Ch.\ 4. Lecture 10.} Three special types of smooth maps $F : M \to N$ are singled out by the linear algebra of their differentials: \emph{local diffeomorphisms}, whose differentials are bijective; \emph{submersions}, whose differentials are surjective; and \emph{immersions}, whose differentials are injective. The theme of the section is that in each case a property of the linear maps $F_{*p}$ --- computable from a Jacobian --- controls the behaviour of $F$ itself near $p$. Immersions, listed with the others in Lecture~10, were treated only in Lecture~13, after the tangent bundle, and have their own section, \ref{sec:immersions}; everything up to the tangent bundle is the theory of submersions. ``That's why we're discussing them in this context.''
 
-\subsection{Local Diffeomorphisms}\label{sub:local-diffeo}
+\label{sub:local-diffeo}
 
 \begin{defbox}[Local Diffeomorphism]\deflabel{def:local-diffeo}
 A smooth map $F : M \to N$ is a \textbf{local diffeomorphism} if for every $p \in M$ there are neighbourhoods $U$ of $p$ and $V$ of $F(p)$ with $F(U) = V$ such that $F|_U^V : U \to V$ --- the restriction of $F$ to $U$, regarded as a map onto $V$ --- has a smooth inverse. Such an inverse $G : V \to U$ is a \textbf{local inverse} of $F$ at $p$.
@@ -6782,7 +6782,13 @@ A diffeomorphism is a local diffeomorphism with $U = M$ and $V = N$. Conversely,
 Not stated in lecture. Injectivity is the entire difference between the two notions, as the helix of Example~\ref{ex:line-circle} shows: there every local inverse exists, but they cannot be assembled into a global one, because the second preimage of $q$ lies outside the domain of the local inverse. The same argument shows that a bijective local homeomorphism is a homeomorphism.
 \end{rembox}
 
-\subsection{Submersions}\label{sub:submersions}
+% ============================================================================
+% SECTION: SUBMERSIONS
+% ============================================================================
+
+\section{Submersions}\label{sec:submersions}\label{sub:submersions}
+
+\roadmark{Stage: maps}{Maps with surjective differentials: locally projections, by the normal form --- the tool that makes the regular value theorem work on any manifold (\ref{sec:submanifolds}).}
 
 \begin{defbox}[Submersion and Immersion]\deflabel{def:submersion}
 Let $F : M \to N$ be smooth and $p \in M$. $F$ is a \textbf{submersion at $p$} if $F_{*p}$ is onto, and a \textbf{submersion} if it is a submersion at every point. $F$ is an \textbf{immersion at $p$} if $F_{*p}$ is injective, and an \textbf{immersion} if it is one at every point.
@@ -7031,7 +7037,7 @@ Let $q = F(p)$ with $p \in W$, and take the charts of the theorem at $p$, shrink
 
 \roadmark{Stage: submanifolds}{Subsets of a manifold that are locally coordinate slices --- the equations thread, completed.}
 
-\textit{References: Lee Ch.~5. Lecture 12.} The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \mathbb{R}^m$. The regular value theorem for manifolds, proved from the submersion normal form of \ref{sec:special-maps}, produces them as level sets --- the end of the equations thread that began in \ref{sec:rvt}.
+\textit{References: Lee Ch.~5. Lecture 12.} The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \mathbb{R}^m$. The regular value theorem for manifolds, proved from the submersion normal form of \ref{sec:submersions}, produces them as level sets --- the end of the equations thread that began in \ref{sec:rvt}.
 
 % ============================================================
 % Lecture 12 (Mon Sep 28, 2026)
@@ -7815,7 +7821,7 @@ So the covector components transform by the transpose of the inverse of the matr
 
 \roadmark{Stage: maps}{The maps with injective differentials: locally inclusions, globally more subtle.}
 
-\textit{References: Lee Ch.~4. Lecture 13.} The third special type of map, dual to the submersions of \ref{sec:special-maps}: the differential is injective instead of surjective, and the local model is an inclusion instead of a projection.
+\textit{References: Lee Ch.~4. Lecture 13.} The third special type of map, dual to the submersions of \ref{sec:submersions}: the differential is injective instead of surjective, and the local model is an inclusion instead of a projection.
 
 \subsection{Immersions}\label{sub:immersions}
 
@@ -8282,7 +8288,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:tangent}\ Tangent spaces I: geometric & Propositions 3.2, 5.37 and 5.38; Theorem 6.30 \\
 \ref{sec:abstract-tangent}\ Tangent spaces II: abstract & Chapter 3 throughout, including Proposition 3.14 (products) \\
 \ref{sec:cotangent}\ Tangent spaces III: cotangent & Chapter 11, \emph{Covectors}; Problem 11-4 for $I_p/I_p^2$ \\
-\ref{sec:special-maps}\ Local diffeomorphisms, submersions & Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 \\
+\ref{sec:special-maps}--\ref{sec:submersions}\ Local diffeomorphisms, submersions & Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 \\
 \ref{sec:submanifolds}\ Submanifolds & Chapter 5, \emph{Embedded Submanifolds} (Theorem 5.8, Corollary 5.14, Propositions 5.35--5.38) \\
 \ref{sec:fibrations}\ Fibrations & smooth fiber bundles (Chapter 10); Ehresmann's theorem is not in Lee \\
 \ref{sec:tangent-bundle}\ The tangent bundle & Chapter 3, \emph{The Tangent Bundle} (Lemma 1.35, Proposition 3.18); Proposition 11.9 (cotangent bundle); Chapter 8 (vector fields); Chapter 10 (sections) \\

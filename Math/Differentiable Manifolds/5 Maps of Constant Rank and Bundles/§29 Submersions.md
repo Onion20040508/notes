@@ -79,7 +79,7 @@ Lecture 11 supplied it (Theorem [[§26 Tangent Vectors as Velocities of Curves#^
 *Uses:* [[§31 Fibrations#^ex-31-1|Ex. §31.1]], [[§31 Fibrations#^prop-31-1|§31.1]]
 
 > [!remark]- Connections
-> - Proved in §30, as a consequence of the local triviality of the Hopf fibration: [[§31 Fibrations#^ex-31-1|Ex. §31.1]] with [[§31 Fibrations#^prop-31-1|§31.1]](2).
+> - Proved in §31, as a consequence of the local triviality of the Hopf fibration: [[§31 Fibrations#^ex-31-1|Ex. §31.1]] with [[§31 Fibrations#^prop-31-1|§31.1]](2).
 
 Stated in lecture as an example (“the projection you worked with from a sphere to complex projective space”); not yet proved. The dimensions are consistent, $2n \le 2n+1$. A proof needs the differential of a map *out of* a level set in terms of the ambient Jacobian, which Lemma [[§16 Manifolds in Euclidean Space#^lem-16-3|§16.3]] makes available for smoothness but not yet for differentials.
 

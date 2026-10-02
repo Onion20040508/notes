@@ -2,13 +2,13 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 28.7", "local normal form for submersions", "Lee Theorem 4.12"]
+aliases: ["MATH 591 29.4", "local normal form for submersions", "Lee Theorem 4.12"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§29 Submersions#^thm-29-4]]
 
 ## Treated in
-- [[§29 Submersions#^thm-29-4|Theorem §29.4: Local Normal Form for Submersions]], in [[§28 Local Diffeomorphisms]]
+- [[§29 Submersions#^thm-29-4|Theorem §29.4: Local Normal Form for Submersions]], in [[§29 Submersions]]
 
 ## Its proof uses
 - [[§2 Topological Manifolds#^lem-2-11|Lemma §2.11: Restricting and Recomposing Charts]]
@@ -17,8 +17,8 @@ tags: [differentiable-manifolds, hub]
 - [[§25 The Differential in Coordinates#^prop-25-1|Proposition §25.1: Partial Derivatives Upstairs and Downstairs]]
 - [[§25 The Differential in Coordinates#^thm-25-2|Theorem §25.2: The Matrix of the Differential]]
 - [[§28 Local Diffeomorphisms#^thm-28-1|Theorem §28.1: Inverse Function Theorem]]
-- [[§29 Submersions#^def-29-1|Definition §29.1: Submersion and Immersion]]
 - [[§29 Submersions#^prop-29-1|Proposition §29.1: Dimension Constraints]]
+- [[§29 Submersions#^def-29-1|Definition §29.1: Submersion and Immersion]]
 - [[§29 Submersions#^lem-29-3|Lemma §29.3: Diffeomorphisms onto Open Sets Are Charts]]
 
 ## Its proof uses (other subjects)

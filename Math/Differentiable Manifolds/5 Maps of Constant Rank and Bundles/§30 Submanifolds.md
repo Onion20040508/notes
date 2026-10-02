@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, math591]
 
 *References: Lee Ch. 5. Lecture 12.*
 
-The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \mathbb{R}^m$. The regular value theorem for manifolds, proved from the submersion normal form of [[§28 Local Diffeomorphisms|§28]], produces them as level sets — the end of the equations thread that began in [[§7 The Regular Value Theorem|§7]].
+The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \mathbb{R}^m$. The regular value theorem for manifolds, proved from the submersion normal form of [[§29 Submersions|§29]], produces them as level sets — the end of the equations thread that began in [[§7 The Regular Value Theorem|§7]].
 
 ## Submanifolds
 

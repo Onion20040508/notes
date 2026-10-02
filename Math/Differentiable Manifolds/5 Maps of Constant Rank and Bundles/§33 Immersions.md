@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, math591]
 
 *References: Lee Ch. 4. Lecture 13.*
 
-The third special type of map, dual to the submersions of [[§28 Local Diffeomorphisms|§28]]: the differential is injective instead of surjective, and the local model is an inclusion instead of a projection.
+The third special type of map, dual to the submersions of [[§29 Submersions|§29]]: the differential is injective instead of surjective, and the local model is an inclusion instead of a projection.
 
 ## Immersions
 

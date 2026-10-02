@@ -62,7 +62,7 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§20 Tangent Spaces I꞉ The Geometric Picture\|§20]]–[[§21 Transversality\|§21]] Tangent spaces I: geometric | Propositions 3.2, 5.37 and 5.38; Theorem 6.30 |
 | [[§22 Tangent Spaces II꞉ Germs\|§22]]–[[§26 Tangent Vectors as Velocities of Curves\|§26]] Tangent spaces II: abstract | Chapter 3 throughout, including Proposition 3.14 (products) |
 | [[§27 Tangent Spaces III꞉ The Cotangent Space\|§27]] Tangent spaces III: cotangent | Chapter 11, *Covectors*; Problem 11-4 for $I_p/I_p^2$ |
-| [[§28 Local Diffeomorphisms\|§28]] Local diffeomorphisms, submersions | Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 |
+| [[§28 Local Diffeomorphisms\|§28]]–[[§29 Submersions\|§29]] Local diffeomorphisms, submersions | Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 |
 | [[§30 Submanifolds\|§30]] Submanifolds | Chapter 5, *Embedded Submanifolds* (Theorem 5.8, Corollary 5.14, Propositions 5.35–5.38) |
 | [[§31 Fibrations\|§31]] Fibrations | smooth fiber bundles (Chapter 10); Ehresmann's theorem is not in Lee |
 | [[§32 The Tangent Bundle\|§32]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18); Proposition 11.9 (cotangent bundle); Chapter 8 (vector fields); Chapter 10 (sections) |

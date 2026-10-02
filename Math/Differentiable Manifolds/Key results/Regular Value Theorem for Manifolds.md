@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 29.6", "Lee Corollary 5.14", "Lee Proposition 5.38"]
+aliases: ["MATH 591 30.6", "Lee Corollary 5.14", "Lee Proposition 5.38"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§30 Submanifolds#^thm-30-6]]
@@ -17,8 +17,8 @@ tags: [differentiable-manifolds, hub]
 - [[§26 Tangent Vectors as Velocities of Curves#^thm-26-4|Theorem §26.4: The Tangent Space of a Product]]
 - [[§29 Submersions#^def-29-2|Definition §29.2: Regular Points and Critical Points]]
 - [[§29 Submersions#^thm-29-4|Theorem §29.4: Local Normal Form for Submersions]]
-- [[§30 Submanifolds#^def-30-1|Definition §30.1: Submanifold and Adapted Charts]]
 - [[§30 Submanifolds#^prop-30-1|Proposition §30.1: Two Observations on Adapted Charts]]
+- [[§30 Submanifolds#^def-30-1|Definition §30.1: Submanifold and Adapted Charts]]
 - [[§30 Submanifolds#^prop-30-4|Proposition §30.4: Tangent Spaces of a Submanifold]]
 
 ## Its proof uses (other subjects)

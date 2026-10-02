@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 33.1", "embedded submanifold", "Lee Proposition 5.2"]
+aliases: ["MATH 591 34.1", "embedded submanifold", "Lee Proposition 5.2"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§34 Embeddings#^thm-34-1]]
