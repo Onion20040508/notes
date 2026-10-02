@@ -150,8 +150,6 @@ This section works the [[§10 Roots of Complex Numbers#^rem-10-1|method of §10]
 > [!example] Example §11.5: Factoring z⁴ + 4
 > Find the four zeros of $z^4 + 4$, one of them being $z_0 = \sqrt2\,e^{i\pi/4} = 1 + i$, and use them to factor $z^4 + 4$ into quadratic factors with real coefficients.
 >
-> *B&C's exercise asks to factor "$z^2 + 4$"; it means $z^4 + 4$, as its answer shows.*
->
 > **Zeros.** $z^4 = -4 = 4\exp[i(\pi + 2k\pi)]$, so the zeros are the fourth roots $\sqrt2\exp\big[i\big(\frac\pi4 + \frac{k\pi}{2}\big)\big]$, $k = 0, 1, 2, 3$, exactly as in Example §11.1 with $\sqrt2$ in place of $2$:
 >
 > $$

@@ -85,7 +85,7 @@ The Cauchy integral formula expresses the value of an analytic function at any p
 > For $\int_C g(z)\,dz$, $C$ a simple closed contour:
 > 1. **Find the singular points** of $g$ (factor the denominator) and decide which lie inside $C$. None inside: the integral is $0$ (Cauchy–Goursat).
 > 2. **One singular point $z_0$ inside, a simple factor:** write $g(z) = \dfrac{f(z)}{z - z_0}$, putting into $f$ everything except $z - z_0$, and check that $f$ is analytic inside and on $C$ (its own singular points lie outside $C$). Then $\int_C g(z)\,dz = 2\pi i\,f(z_0)$.
-> 3. **A repeated factor $(z - z_0)^{n+1}$:** write $g(z) = f(z)/(z - z_0)^{n+1}$ and use the extension, $\int_C g(z)\,dz = \dfrac{2\pi i}{n!}f^{(n)}(z_0)$ ([[§55 An Extension of the Cauchy Integral Formula|§55]]).
+> 3. **A repeated factor $(z - z_0)^{n+1}$:** write $g(z) = f(z)/(z - z_0)^{n+1}$ and use the extension, $\int_C g(z)\,dz = \dfrac{2\pi i}{n!}f^{(n)}(z_0)$ ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|§56.1]], stated in [[§55 An Extension of the Cauchy Integral Formula|§55]]).
 > 4. **Several singular points inside:** surround them by small disjoint circles and add the contributions ([[§53 Multiply Connected Domains#^rem-53-1|Remark: Method — Deforming a Contour]]), or split $g$ by partial fractions.
 > 5. **Orientation:** the formulas are for $C$ in the positive sense; for the clockwise direction change the sign.
 

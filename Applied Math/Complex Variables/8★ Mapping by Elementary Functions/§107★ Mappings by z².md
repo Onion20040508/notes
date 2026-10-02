@@ -63,7 +63,7 @@ Eliminating one of the variables from (1) shows what the coordinate lines become
 ^ex-107-1
 
 ![[m342-107-1.svg]]
-*The half strip $0 \le x \le 1$, $y \ge 0$ under $w = z^2$. Vertical half lines $x = 0.25, 0.5, 0.75, 1$ (blue) go onto upper halves of parabolas $v^2 = -4x_1^2(u - x_1^2)$ with focus at the origin; the segments $y = 0.5, 1, 1.5$ (red) onto arcs of the confocal parabolas opening the other way. The edge $CD$ (green) is folded onto the negative $u$ axis and the base $CB$ (black) onto $[0, 1]$.*
+*The half strip $0 \le x \le 1$, $y \ge 0$ under $w = z^2$. Vertical half lines $x = 0.25, 0.5, 0.75, 1$ (blue) go onto upper halves of parabolas $v^2 = -4x_1^2(u - x_1^2)$ with focus at the origin; the segments $y = 0.5, 1, 1.5$ (red) onto arcs of the confocal parabolas opening the other way. The edge $CD$ (green) goes onto the negative $u$ axis and the base $CB$ (black) onto $[0, 1]$.*
 
 > [!example] Example §107.2: sin² z Maps a Half Strip onto a Half Plane
 > Show that $w = \sin^2 z$ maps the semi-infinite vertical strip $0 \le x \le \pi/2$, $y \ge 0$ onto the upper half plane $v \ge 0$.

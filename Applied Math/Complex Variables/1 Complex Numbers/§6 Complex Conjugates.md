@@ -224,7 +224,7 @@ Identity (7) explains the [[§3 Further Algebraic Properties#^rem-3-1|Method —
 > |\operatorname{Re}(2 + \bar z + z^3)| \le |2 + \bar z + z^3| \le 2 + |\bar z| + |z^3| = 2 + |z| + |z|^3 \le 2 + 1 + 1 = 4 .
 > $$
 >
-> The bound in (b) is sharp: at $z = 1$, $\operatorname{Re}(2 + 1 + 1) = 4$. The bound $25$ in (a) is not: on $|z| < 2$ the modulus stays below $17$, its value at $z = 2$ (by the maximum modulus principle, [[§59 Maximum Modulus Principle|§59]], the largest value over $|z| \le 2$ is taken on the circle $|z| = 2$, and a numerical search of the circle gives $17$, at $z = 2$).
+> The bound in (b) is sharp: at $z = 1$, $\operatorname{Re}(2 + 1 + 1) = 4$. The bound $25$ in (a) is not: on $|z| < 2$ the modulus stays below $17$, its value at $z = 2$ (by the maximum modulus principle, [[§59 Maximum Modulus Principle#^cor-59-4|Corollary §59.4]], the largest value over $|z| \le 2$ is taken on the circle $|z| = 2$, and a numerical search of the circle gives $17$, at $z = 2$).
 >
 > *B&C: Sec. 6, Example 2 and Exercise 7; Source: 342 HW 1 (part (b))*
 

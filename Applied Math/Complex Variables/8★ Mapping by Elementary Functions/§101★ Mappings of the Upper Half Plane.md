@@ -18,7 +18,7 @@ Which linear fractional transformations carry the upper half plane onto the unit
 
 > [!theorem] Theorem §101.1: Linear Fractional Maps of the Upper Half Plane onto the Unit Disk
 > For a linear fractional transformation $w = T(z)$ the following are equivalent:
-> - **(a)** it maps the upper half plane $\operatorname{Im} z > 0$ onto the open disk $|w| < 1$, and the boundary $\operatorname{Im} z = 0$ of the half plane onto the boundary $|w| = 1$ of the disk;
+> - **(a)** it maps the upper half plane $\operatorname{Im} z > 0$ onto the open disk $|w| < 1$, and the boundary $\operatorname{Im} z = 0$ of the half plane, together with the point at infinity, onto the boundary $|w| = 1$ of the disk;
 > - **(b)** it has the form
 >
 >   $$
@@ -38,7 +38,7 @@ Which linear fractional transformations carry the upper half plane onto the unit
 > w = \frac{az + b}{cz + d} \qquad (ad - bc \ne 0) \qquad (1)
 > $$
 >
-> and use that the three points $z = 0$, $z = 1$, $z = \infty$ of the real axis (with $\infty$ included as the boundary point of the extended half plane) must have images of modulus $1$.
+> and use that the three points $z = 0$, $z = 1$, $z = \infty$ of the extended real axis must have images of modulus $1$. (The point at infinity has to be included: $T$ is one to one on the extended plane, so if the finite real axis alone covered the circle, $T(\infty)$ could not lie on it; yet $T(\infty)$ is the limit of $T(x)$ as $x \to \infty$ along the real axis, a point of the circle. B&C's "boundary" means the extended real axis.)
 >
 > At $z = 0$: $T(0)$ must be finite, so $d \ne 0$ (if $d = 0$ then $T(0) = \infty$), and $|T(0)| = |b/d| = 1$ gives
 >

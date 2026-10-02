@@ -28,7 +28,7 @@ Once the sine mapping is known, the cosine and the hyperbolic functions come for
 > Z = z + \frac\pi2, \qquad w = \sin Z .
 > $$
 >
-> So the cosine transformation is the sine transformation preceded by a translation to the right through $\pi/2$. For example, $\cos z$ maps the half strip $0 \le x \le \pi$, $y \ge 0$ (which the translation carries onto $\pi/2 \le X \le 3\pi/2$, $Y \ge 0$) the way $\sin Z$ maps that shifted strip.
+> So the cosine transformation is the sine transformation preceded by a translation to the right through $\pi/2$. For example, $\cos z$ maps the half strip $0 \le x \le \pi$, $y \ge 0$ one to one onto the lower half plane $v \le 0$: since $-\cos z = \sin(z - \pi/2)$, the translation $z \mapsto z - \pi/2$ carries this half strip onto the half strip $-\pi/2 \le x \le \pi/2$, $y \ge 0$ of [[§104★ Mapping Vertical Line Segments by w = sin z#^ex-104-1|Example §104.1]], which $\sin$ maps one to one onto $v \ge 0$, and the rotation $w \mapsto -w$ turns this into $v \le 0$.
 >
 > *B&C: Sec. 106, Example 1*
 

@@ -36,9 +36,9 @@ The method is [[§31 The Logarithmic Function#^rem-31-1|Remark: Method — Compu
 > \log(-1 - i) = \frac12\ln 2 + i\Big(-\frac{3\pi}{4} + 2n\pi\Big) \quad (n = 0, \pm1, \pm2, \ldots), \qquad \operatorname{Log}(-1 - i) = \frac12\ln 2 - \frac{3\pi}{4} i .
 > $$
 >
-> In (c) the angle $5\pi/4$ is also an argument of $-1 - i$ and gives a value of $\log(-1 - i)$ (the one with $n = 1$), but not the principal value, since $5\pi/4 > \pi$.
+> In (c) the angle $5\pi/4$ is also an argument of $-1 - i$ and gives a value of $\log(-1 - i)$ (the one with $n = 1$), but not the principal value, since $5\pi/4 > \pi$. It is the value of the branch with $0 < \theta < 2\pi$, [[§33 Branches and Derivatives of Logarithms#^ex-33-2|Example §33.2]].
 >
-> *B&C: Sec. 32, Example 1; Source: 342 HW 4, Problem 1(a), (b)*
+> *B&C: Sec. 32, Example 1; Source: 342 HW 4, Problem 1(a) and first part of 1(b)*
 
 ^ex-32-1
 
@@ -111,7 +111,7 @@ Special care must be taken in expecting familiar properties of $\ln x$ to carry 
 For the multiple-valued $\log$, an identity between two multiple-valued expressions means that the two *sets* of values are the same.
 
 > [!example] Example §32.4: log(i^1/2) = ½ log i, but log(i²) ≠ 2 log i
-> **(a)** The two square roots of $i = e^{i\pi/2}$ are $e^{i\pi/4}$ and $e^{i5\pi/4}$ ([[§10 Roots of Complex Numbers|§10]]: $e^{i(\pi/2 + 2k\pi)/2}$, $k = 0, 1$). Their logarithms are
+> **(a)** The two square roots of $i = e^{i\pi/2}$ are $e^{i\pi/4}$ and $e^{i5\pi/4}$ ([[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]]: $e^{i(\pi/2 + 2k\pi)/2}$, $k = 0, 1$). Their logarithms are
 >
 > $$
 > \log(e^{i\pi/4}) = \ln 1 + i\Big(\frac\pi4 + 2n\pi\Big) = \Big(2n + \frac14\Big)\pi i, \qquad \log(e^{i5\pi/4}) = \ln 1 + i\Big(\frac{5\pi}{4} + 2n\pi\Big) = \Big((2n + 1) + \frac14\Big)\pi i ,

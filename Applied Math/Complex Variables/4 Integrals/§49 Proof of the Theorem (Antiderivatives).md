@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 49 · MAT 342 HW 5, HW 6.*
 
-This section proves the theorem on antiderivatives stated in [[§48 Antiderivatives|§48]]: for a continuous function on a domain, having an antiderivative, having path-independent integrals, and having zero integrals around closed contours are equivalent. The proof runs around the cycle (a) $\Rightarrow$ (b) $\Rightarrow$ (c) $\Rightarrow$ (a). The first step is the fundamental theorem of calculus carried along a contour by the chain rule; the second is bookkeeping with sums of contours; the third builds the antiderivative as $F(z) = \int_{z_0}^{z} f(s)\,ds$ and differentiates it with the ML-inequality. That last construction reappears whenever the course needs an antiderivative that no formula provides, for instance on simply connected domains ([[§52 Simply Connected Domains|§52]]) and in Morera's theorem ([[§57 Some Consequences of the Extension|§57]]).
+This section proves the theorem on antiderivatives stated in [[§48 Antiderivatives|§48]]: for a continuous function on a domain, having an antiderivative, having path-independent integrals, and having zero integrals around closed contours are equivalent. The proof runs around the cycle (a) $\Rightarrow$ (b) $\Rightarrow$ (c) $\Rightarrow$ (a). The first step is the fundamental theorem of calculus carried along a contour by the chain rule; the second is bookkeeping with sums of contours; the third builds the antiderivative as $F(z) = \int_{z_0}^{z} f(s)\,ds$ and differentiates it with the ML-inequality. That last construction reappears whenever the course needs an antiderivative that no formula provides, for instance on simply connected domains ([[§52 Simply Connected Domains#^cor-52-2|Corollary §52.2]]) and in Morera's theorem ([[§57 Some Consequences of the Extension#^thm-57-3|Theorem §57.3]]).
 
 ## The Theorem and Its Proof
 
@@ -88,7 +88,7 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 >
 > *Independence of path.* Let $C_1$ and $C_2$ be any two contours in $D$ from a point $z_1$ to a point $z_2$. Then $C_1 - C_2$ is a closed contour in $D$, so by (c) and properties (6)–(7) equation (3) holds, and hence (2) holds. Integration is therefore independent of path in $D$.
 >
-> *Definition of $F$.* Fix a point $z_0$ in $D$. Since $D$ is a domain, every point $z$ of $D$ can be joined to $z_0$ by a polygonal line lying in $D$ ([[§12★ Regions in the Complex Plane|§12]], definition of a connected open set), and a polygonal line is a contour. (B&C uses this without comment.) So we can define
+> *Definition of $F$.* Fix a point $z_0$ in $D$. Since $D$ is a domain, every point $z$ of $D$ can be joined to $z_0$ by a polygonal line lying in $D$ ([[§12★ Regions in the Complex Plane#^def-12-4|Definition §12.4]], connected open sets), and a polygonal line is a contour. (B&C uses this without comment.) So we can define
 >
 > $$
 > F(z) = \int_{z_0}^{z} f(s)\,ds \qquad (z \in D) ,
@@ -136,7 +136,7 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 
 ^pf-49-1
 
-*Uses:* [[§43 Contours#^prop-43-5|§43.5]] (chain rule along an arc), [[§42 Definite Integrals of Functions w(t)#^thm-42-2|§42.2]] (fundamental theorem for $w(t)$), [[§44 Contour Integrals#^thm-44-2|§44.2]] (properties (5)–(7)), [[§44 Contour Integrals#^def-44-2|Def. §44.2]], [[§45 Some Examples (Contour Integrals)#^prop-45-1|§45.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§48 Antiderivatives#^def-48-1|Def. §48.1]], [[§48 Antiderivatives#^def-48-2|Def. §48.2]], [[§12★ Regions in the Complex Plane|§12]] (domains are polygonally connected)
+*Uses:* [[§43 Contours#^prop-43-5|§43.5]] (chain rule along an arc), [[§42 Definite Integrals of Functions w(t)#^thm-42-2|§42.2]] (fundamental theorem for $w(t)$), [[§44 Contour Integrals#^thm-44-2|§44.2]] (properties (5)–(7)), [[§44 Contour Integrals#^def-44-2|Def. §44.2]], [[§45 Some Examples (Contour Integrals)#^prop-45-1|§45.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§48 Antiderivatives#^def-48-1|Def. §48.1]], [[§48 Antiderivatives#^def-48-2|Def. §48.2]], [[§12★ Regions in the Complex Plane#^def-12-4|Def. §12.4]] (domains are polygonally connected)
 
 ![[m342-49-1.svg]]
 *The construction in (c) $\Rightarrow$ (a). $F(z)$ is the integral from the base point $z_0$ to $z$ along any contour in $D$ (by (c), the choice does not matter). To differentiate at $z$, continue the contour by the short segment from $z$ to $z + \Delta z$ inside a disk about $z$ contained in $D$. Only the segment depends on $\Delta z$, and on it $f(s)$ is within $\varepsilon$ of $f(z)$, so the ML-inequality gives $\big|[F(z + \Delta z) - F(z)]/\Delta z - f(z)\big| \le \varepsilon$.*
@@ -147,8 +147,8 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 
 > [!remark] Remark: Using the Theorem Backwards
 > The implication (a) $\Rightarrow$ (c), read in reverse, proves that antiderivatives do *not* exist.
-> - $f(z) = 1/z$ is continuous in the domain $|z| > 0$, but its integral around the unit circle is $2\pi i \ne 0$ ([[§45 Some Examples (Contour Integrals)#^ex-45-1|Example §45.1]]). So $1/z$ has no antiderivative throughout $|z| > 0$; in particular no branch of $\log z$ can be analytic in the whole punctured plane, which is why every branch needs a cut ([[§33 Branches and Derivatives of Logarithms|§33]]). The same holds in every domain containing a circle about $0$.
-> - $f(z) = \bar z$ has $\int_{|z|=1}\bar z\,dz = 2\pi i$ ([[§44 Contour Integrals#^ex-44-2|Example §44.2]]), so it has no antiderivative in any domain containing the unit circle (consistent with $\bar z$ being nowhere analytic, while an antiderivative's derivative would be analytic, [[§57 Some Consequences of the Extension|§57]]).
+> - $f(z) = 1/z$ is continuous in the domain $|z| > 0$, but its integral around the unit circle is $2\pi i \ne 0$ ([[§45 Some Examples (Contour Integrals)#^ex-45-1|Example §45.1]]). So $1/z$ has no antiderivative throughout $|z| > 0$; in particular no branch of $\log z$ can be analytic in the whole punctured plane, which is why every branch needs a cut ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]). The same holds in every domain containing a circle about $0$.
+> - $f(z) = \bar z$ has $\int_{|z|=1}\bar z\,dz = 2\pi i$ ([[§44 Contour Integrals#^ex-44-2|Example §44.2]]), so it has no antiderivative in any domain containing the unit circle (consistent with $\bar z$ being nowhere analytic, while an antiderivative's derivative would be analytic, [[§57 Some Consequences of the Extension#^thm-57-1|Theorem §57.1]]).
 > - The function of [[§45 Some Examples (Contour Integrals)#^ex-45-3|Example §45.3]] has different integrals along two paths with the same endpoints, so it has no antiderivative in any domain containing them.
 
 ^rem-49-2

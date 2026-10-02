@@ -76,7 +76,7 @@ The proof of the lemma below subdivides squares again and again and needs the fa
 >
 > of squares, each a quarter of the one before, such that every $\sigma_k$ contains points of $R$ and its subregion is not good.
 >
-> **A common point in $R$.** By Lemma §51.1 there is a point $z_0$ common to every $\sigma_k$. If $s$ is the side of $\sigma_0$, the side of $\sigma_k$ is $s/2^k$ and its diagonal is $\sqrt2\,s/2^k$. Choose a point $w_k$ of $R$ in each $\sigma_k$; then $|w_k - z_0| \le \sqrt2\,s/2^k \to 0$. So every $\delta$ neighborhood $|z - z_0| < \delta$ contains points of $R$ (either $z_0$ itself or points of $R$ distinct from $z_0$, which makes $z_0$ an accumulation point of $R$). Since $R$ is a closed set, it contains its accumulation points ([[§12★ Regions in the Complex Plane#^thm-12-2|Theorem §12.2]]), $z_0$ is a point of $R$.
+> **A common point in $R$.** By Lemma §51.1 there is a point $z_0$ common to every $\sigma_k$. If $s$ is the side of $\sigma_0$, the side of $\sigma_k$ is $s/2^k$ and its diagonal is $\sqrt2\,s/2^k$. Choose a point $w_k$ of $R$ in each $\sigma_k$; then $|w_k - z_0| \le \sqrt2\,s/2^k \to 0$. So every $\delta$ neighborhood $|z - z_0| < \delta$ contains points of $R$ (either $z_0$ itself or points of $R$ distinct from $z_0$, which makes $z_0$ an accumulation point of $R$). Since $R$ is a closed set, it contains its accumulation points ([[§12★ Regions in the Complex Plane#^thm-12-2|Theorem §12.2]]); so in either case $z_0$ is a point of $R$.
 >
 > **The contradiction.** Since $f$ is analytic throughout $R$, it is analytic at $z_0$, and $f'(z_0)$ exists. By the definition of derivative ([[§19 Derivatives#^def-19-1|Definition §19.1]]), for our $\varepsilon$ there is a $\delta$ neighborhood $|z - z_0| < \delta$ such that
 >

@@ -11,11 +11,11 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 33 · MAT 342 HW 4.*
 
-The multiple-valued $\log z = \ln r + i\theta$ becomes an honest analytic function once $\theta$ is confined to an open interval $\alpha < \theta < \alpha + 2\pi$. The price is a ray, the branch cut $\theta = \alpha$, which is removed from the domain: across it the imaginary part jumps by $2\pi$. On the cut plane the branch is analytic with $\frac{d}{dz}\log z = \frac1z$, exactly as in calculus. The section introduces the general vocabulary of branches, branch cuts and branch points, which returns with every multiple-valued function: powers $z^c$ ([[§35 The Power Function|§35]]), inverse trigonometric functions ([[§40★ Inverse Trigonometric and Hyperbolic Functions|§40★]]), and contour integrals along branch cuts ([[§46 Examples Involving Branch Cuts|§46]], [[§91★ Integration Along a Branch Cut|§91★]]).
+The multiple-valued $\log z = \ln r + i\theta$ becomes an honest analytic function once $\theta$ is confined to an open interval $\alpha < \theta < \alpha + 2\pi$. The price is a ray, the branch cut $\theta = \alpha$, which is removed from the domain: across it the imaginary part jumps by $2\pi$. On the cut plane the branch is analytic with $\frac{d}{dz}\log z = \frac1z$, exactly as in calculus. The section introduces the general vocabulary of branches, branch cuts and branch points, which returns with every multiple-valued function: powers $z^c$ ([[§35 The Power Function#^def-35-1|Definition §35.1]]), inverse trigonometric functions ([[§40★ Inverse Trigonometric and Hyperbolic Functions#^def-40-1|Definition §40.1]]), and contour integrals along branch cuts ([[§46 Examples Involving Branch Cuts|§46]], [[§91★ Integration Along a Branch Cut|§91★]]).
 
 ## Branches of log z
 
-If $z = re^{i\theta}$ is nonzero, the argument $\theta$ has any one of the values $\theta = \Theta + 2n\pi$ $(n = 0, \pm1, \pm2, \ldots)$, where $\Theta = \operatorname{Arg} z$. Hence the definition of [[§31 The Logarithmic Function#^def-31-1|§31]] can be written
+If $z = re^{i\theta}$ is nonzero, the argument $\theta$ has any one of the values $\theta = \Theta + 2n\pi$ $(n = 0, \pm1, \pm2, \ldots)$, where $\Theta = \operatorname{Arg} z$. Hence [[§31 The Logarithmic Function#^def-31-1|Definition §31.1]] can be written
 
 $$
 \log z = \ln r + i\theta . \qquad (1)
@@ -80,7 +80,7 @@ $$
 > ru_r = v_\theta, \qquad u_\theta = -rv_r
 > $$
 >
-> at every point. By the theorem of [[§24★ Polar Coordinates|§24★]], the derivative exists at every point of the domain (so the function is analytic there) and equals
+> at every point. By [[§24★ Polar Coordinates#^thm-24-3|Theorem §24.3]], the derivative exists at every point of the domain (so the function is analytic there) and equals
 >
 > $$
 > \frac{d}{dz}\log z = e^{-i\theta}(u_r + iv_r) = e^{-i\theta}\Big(\frac1r + i0\Big) = \frac{1}{re^{i\theta}} = \frac1z .
@@ -92,7 +92,7 @@ $$
 
 ^pf-33-1
 
-*Uses:* [[§33 Branches and Derivatives of Logarithms#^def-33-1|Def. §33.1]], [[§24★ Polar Coordinates|§24★]] (Theorem: polar Cauchy–Riemann conditions), [[§18 Continuity|§18]] (compositions of continuous functions)
+*Uses:* [[§33 Branches and Derivatives of Logarithms#^def-33-1|Def. §33.1]], [[§24★ Polar Coordinates#^thm-24-3|§24.3]], [[§18 Continuity#^thm-18-2|§18.2]]
 
 ![[m342-33-1.svg]]
 *The branch (2) of $\log z$ lives on the plane cut along the ray $\theta = \alpha$ (red, dashed; the origin is removed too). Going once around the origin counterclockwise from the cut, $v = \theta$ increases continuously from $\alpha$ to $\alpha + 2\pi$. At a point of the cut (red dot) two nearby points (green) on opposite sides have values of $v$ near $\alpha$ and near $\alpha + 2\pi$: this jump of $2\pi$ is why the cut must be removed.*
@@ -119,7 +119,7 @@ $$
 ^def-33-2
 
 > [!definition] Definition §33.3: Branch Cut; Branch Point
-> A **branch cut** is a portion of a line or curve that is introduced in order to define a branch $F$ of a multiple-valued function $f$. Points on the branch cut for $F$ are singular points ([[§25 Analytic Functions|§25]]) of $F$. Any point that is common to all branch cuts of $f$ is called a **branch point**.
+> A **branch cut** is a portion of a line or curve that is introduced in order to define a branch $F$ of a multiple-valued function $f$. Points on the branch cut for $F$ are singular points ([[§25 Analytic Functions#^def-25-3|Definition §25.3]]) of $F$. Any point that is common to all branch cuts of $f$ is called a **branch point**.
 >
 > For the branch (2) of the logarithm, the branch cut is the origin together with the ray $\theta = \alpha$; for the principal branch (6) it is the origin together with the ray $\Theta = \pi$, the nonpositive real axis. The origin is a branch point of $\log z$.
 >
@@ -184,7 +184,7 @@ $$
 >
 > Similarly $-1 = e^{i\pi}$ with $\pi \in (0, 2\pi)$, so $\log(-1) = \ln 1 + i\pi = \pi i$. A branch takes a single value at each point: here the answer is one number, not the list $\frac12\ln 2 + i\big(\frac{5\pi}{4} + 2n\pi\big)$. Compare $\operatorname{Log}(-1 - i) = \frac12\ln 2 - \frac{3\pi}{4}i$ ([[§32 Examples (The Logarithmic Function)#^ex-32-1|Example §32.1]]): the two branches differ by $2\pi i$ in the lower half plane and agree in the upper half plane, where $0 < \theta < \pi$ for both.
 >
-> *Source: 342 HW 4, Problem 1(b)*
+> *Source: 342 HW 4, Problem 1(b), second part*
 
 ^ex-33-2
 
@@ -195,7 +195,7 @@ $$
 > e^{\log z} = z \qquad (|z| > 0,\ \alpha < \arg z < \alpha + 2\pi)
 > $$
 >
-> of [[§31 The Logarithmic Function#^prop-31-2|Proposition §31.2]]. Differentiate both sides, using the chain rule ([[§20 Rules for Differentiation|§20]]) and $\frac{d}{dw}e^w = e^w$ ([[§30 The Exponential Function#^thm-30-3|Theorem §30.3]]):
+> of [[§31 The Logarithmic Function#^prop-31-2|Proposition §31.2]]. Differentiate both sides, using the chain rule ([[§20 Rules for Differentiation#^thm-20-4|Theorem §20.4]]) and $\frac{d}{dw}e^w = e^w$ ([[§30 The Exponential Function#^thm-30-3|Theorem §30.3]]):
 >
 > $$
 > e^{\log z}\,\frac{d}{dz}\log z = 1 , \qquad\text{so}\qquad \frac{d}{dz}\log z = \frac{1}{e^{\log z}} = \frac1z .
@@ -210,7 +210,7 @@ $$
 > [!example] Example §33.4: Where Is a Principal Logarithm Analytic?
 > **(a)** $f(z) = \operatorname{Log}(z - i)$ is analytic everywhere except on the portion $x \le 0$ of the line $y = 1$. Indeed $\operatorname{Log} w$ is analytic except where $w$ is real and $w \le 0$ (Theorem §33.1 and the Method), and $w = z - i = x + i(y - 1)$ is real and $\le 0$ exactly when $y = 1$ and $x \le 0$. Elsewhere $f$ is a composition of analytic functions, analytic by the chain rule.
 >
-> **(b)** $f(z) = \dfrac{\operatorname{Log}(z + 4)}{z^2 + i}$ is analytic everywhere except at $\pm(1 - i)/\sqrt2$ and on the portion $x \le -4$ of the real axis. The numerator is analytic except where $z + 4$ is real and $\le 0$, that is, $y = 0$ and $x \le -4$. The denominator is entire and vanishes where $z^2 = -i = e^{-i\pi/2}$, that is, at the square roots $z = \pm e^{-i\pi/4} = \pm\frac{1 - i}{\sqrt2}$ ([[§10 Roots of Complex Numbers|§10]]). A quotient of analytic functions is analytic where the denominator is nonzero ([[§25 Analytic Functions|§25]]).
+> **(b)** $f(z) = \dfrac{\operatorname{Log}(z + 4)}{z^2 + i}$ is analytic everywhere except at $\pm(1 - i)/\sqrt2$ and on the portion $x \le -4$ of the real axis. The numerator is analytic except where $z + 4$ is real and $\le 0$, that is, $y = 0$ and $x \le -4$. The denominator is entire and vanishes where $z^2 = -i = e^{-i\pi/2}$, that is, at the square roots $z = \pm e^{-i\pi/4} = \pm\frac{1 - i}{\sqrt2}$ ([[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]]). A quotient of analytic functions is analytic where the denominator is nonzero ([[§25 Analytic Functions#^prop-25-1|Proposition §25.1]]).
 >
 > *B&C: Sec. 33, Exercise 10*
 

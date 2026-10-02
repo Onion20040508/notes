@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 78 · MAT 342 Practice Final (Spring 2005), Sample Final (Fall 1999).*
 
-The negative powers in the Laurent series of $f$ at an isolated singular point form its **principal part**, and the principal part sorts isolated singular points into three types. If it is zero, the singular point is **removable**: redefining $f$ at one point makes it analytic there. If it has infinitely many nonzero terms, the point is an **essential singular point**. In between, a principal part with finitely many terms, the last of them $b_m/(z - z_0)^m$, makes $z_0$ a **pole of order $m$**. The classification organizes the rest of the chapter: residues at poles have convenient formulas ([[§80 Residues at Poles|§80]]), and the three types behave very differently near the point ([[§84 Behavior of Functions Near Isolated Singular Points|§84]]).
+The negative powers in the Laurent series of $f$ at an isolated singular point form its **principal part**, and the principal part sorts isolated singular points into three types. If it is zero, the singular point is **removable**: redefining $f$ at one point makes it analytic there. If it has infinitely many nonzero terms, the point is an **essential singular point**. In between, a principal part with finitely many terms, the last of them $b_m/(z - z_0)^m$, makes $z_0$ a **pole of order $m$**. The classification organizes the rest of the chapter: residues at poles have convenient formulas ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]), and the three types behave very differently near the point ([[§84 Behavior of Functions Near Isolated Singular Points|§84]]).
 
 ## The Principal Part
 
@@ -37,7 +37,7 @@ in a punctured disk $0 < |z - z_0| < R_2$.
 ^def-78-1
 
 > [!remark]- Connections
-> - For a rational function $f = P/Q$ with $\deg P < \deg Q$, the principal part at each zero of $Q$ is a finite sum $\sum_{k \le m} b_k/(z - z_0)^k$. Subtracting the principal parts at all the zeros of $Q$ leaves an entire function that tends to $0$ as $z \to \infty$, hence is bounded and so identically $0$ ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]], Liouville's theorem): $f$ is the sum of its principal parts. This is the partial-fraction decomposition, which [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|Calc Thm. §47.3]] states without proof. The coefficients $b_k$ are the partial-fraction coefficients, and $b_1$ is the residue; compare [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]] (Heaviside's formula).
+> - For a rational function $f = P/Q$ with $\deg P < \deg Q$, the principal part at each zero of $Q$ is a finite sum $\sum_{k \le m} b_k/(z - z_0)^k$. Subtracting the principal parts at all the zeros of $Q$ leaves an entire function that tends to $0$ as $z \to \infty$, hence is bounded and so identically $0$ ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Theorem §58.1]], Liouville's theorem): $f$ is the sum of its principal parts. This is the partial-fraction decomposition, which [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|Calc Thm. §47.3]] states without proof. The coefficients $b_k$ are the partial-fraction coefficients, and $b_1$ is the residue; compare [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]] (Heaviside's formula).
 
 There are two extremes: the case in which every coefficient in the principal part (2) is zero, and the case in which infinitely many of them are nonzero.
 
@@ -70,11 +70,11 @@ There are two extremes: the case in which every coefficient in the principal par
 > [!proof]+ Proof
 > **(a)** The residue is the coefficient $b_1$, which is $0$.
 >
-> **(b)** At $z = z_0$ the power series $\sum a_n(z - z_0)^n$ has the sum $a_0$, which is now also the value of $f$; for $0 < |z - z_0| < R_2$ the series equals $f(z)$ by (3). So (3) holds for $|z - z_0| < R_2$, and the power series converges throughout this disk; its circle of convergence therefore has radius at least $R_2$. Since a power series represents an analytic function at each point interior to its circle of convergence ([[§71★ Integration and Differentiation of Power Series|§71★]], Corollary), $f$ is analytic at every point of $|z - z_0| < R_2$, in particular at $z_0$.
+> **(b)** At $z = z_0$ the power series $\sum a_n(z - z_0)^n$ has the sum $a_0$, which is now also the value of $f$; for $0 < |z - z_0| < R_2$ the series equals $f(z)$ by (3). So (3) holds for $|z - z_0| < R_2$, and the power series converges throughout this disk; its circle of convergence therefore has radius at least $R_2$. Since a power series represents an analytic function at each point interior to its circle of convergence ([[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]), $f$ is analytic at every point of $|z - z_0| < R_2$, in particular at $z_0$.
 
 ^pf-78-1
 
-*Uses:* [[§78 The Three Types of Isolated Singular Points#^def-78-2|Def. §78.2]], [[§75 Residues#^def-75-1|Def. §75.1]], [[§71★ Integration and Differentiation of Power Series|§71★]] (Corollary)
+*Uses:* [[§78 The Three Types of Isolated Singular Points#^def-78-2|Def. §78.2]], [[§75 Residues#^def-75-1|Def. §75.1]], [[§71★ Integration and Differentiation of Power Series#^cor-71-2|§71.2]] (power series are analytic)
 
 > [!definition] Definition §78.3: Essential Singular Point
 > If an infinite number of the coefficients $b_n$ in the principal part (2) are nonzero, $z_0$ is said to be an **essential singular point** of $f$.
@@ -102,58 +102,23 @@ There are two extremes: the case in which every coefficient in the principal par
 
 ^def-78-4
 
-Every isolated singular point is of exactly one of the three types: the number of nonzero $b_n$ is either zero, finite and positive, or infinite. The type is well defined because the Laurent series in a punctured disk is unique ([[§72★ Uniqueness of Series Representations|§72★]], Theorem 2). (On the name *pole*: B&C refers to books by Wunsch and by Boas. The reason is [[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-4|Theorem §84.4]]: near a pole $|f(z)|$ increases without bound, so the graph of $|f|$ over the plane rises above $z_0$ like a pole in the everyday sense.)
+Every isolated singular point is of exactly one of the three types: the number of nonzero $b_n$ is either zero, finite and positive, or infinite. The type is well defined because the Laurent series in a punctured disk is unique ([[§72★ Uniqueness of Series Representations#^thm-72-4|Theorem §72.4]]). (On the name *pole*: B&C refers to books by Wunsch and by Boas. The reason is [[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-4|Theorem §84.4]]: near a pole $|f(z)|$ increases without bound, so the graph of $|f|$ over the plane rises above $z_0$ like a pole in the everyday sense.)
 
 > [!remark] Remark: Method — Classifying an Isolated Singular Point
 > 1. **Laurent series.** Write the principal part at $z_0$ and count its nonzero terms: none, removable; finitely many with the last one $b_m/(z - z_0)^m$, pole of order $m$; infinitely many, essential. This always works, and is the only method that recognizes an essential singular point directly ([[§79 Examples (The Three Types of Isolated Singular Points)|§79]]).
-> 2. **Factor out a power.** If $f(z) = \phi(z)/(z - z_0)^m$ with $\phi$ analytic and nonzero at $z_0$, then $z_0$ is a pole of order $m$ ([[§80 Residues at Poles|§80]]). Beware: $\phi(z_0) = 0$ or $\phi$ not analytic at $z_0$ invalidates the conclusion ([[§81 Examples (Residues at Poles)|§81]]).
+> 2. **Factor out a power.** If $f(z) = \phi(z)/(z - z_0)^m$ with $\phi$ analytic and nonzero at $z_0$, then $z_0$ is a pole of order $m$ ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]). Beware: $\phi(z_0) = 0$ or $\phi$ not analytic at $z_0$ invalidates the conclusion ([[§81 Examples (Residues at Poles)#^ex-81-3|Example §81.3]]).
 > 3. **Zeros of a denominator.** If $f = p/q$ with $p(z_0) \ne 0$ and $q$ having a zero of order $m$ at $z_0$, the pole has order $m$ ([[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]]). If $p$ also vanishes at $z_0$, compare the orders of the two zeros.
-> 4. **Behavior.** Bounded near $z_0$: removable. $|f(z)| \to \infty$: pole. Neither: essential ([[§84 Behavior of Functions Near Isolated Singular Points|§84]]).
+> 4. **Behavior.** Bounded near $z_0$: removable. $|f(z)| \to \infty$: pole. Neither: essential ([[§84 Behavior of Functions Near Isolated Singular Points#^rem-84-1|Remark: Telling the Three Types Apart by Behavior]]).
 >
-> A residue of $0$ does not mean the point is removable ([[§78 The Three Types of Isolated Singular Points#^ex-78-2|Example §78.2]]).
+> A residue of $0$ does not mean the point is removable ([[§78 The Three Types of Isolated Singular Points#^ex-78-1|Example §78.1]]).
 
 ^rem-78-1
 
 ## Examples
 
-> [!example] Example §78.1: The Integral of sin(z̄) Around the Unit Circle
-> Let $C$ be the circle $|z| = 1$, traversed counterclockwise.
->
-> **(a)** Use the definition of contour integrals to prove that
->
-> $$
-> \int_C \sin(\bar z)\,dz = \int_C \sin\Big(\frac1z\Big)\,dz . \qquad (\ast)
-> $$
->
-> **(b)** Find the Laurent series of $\sin(1/z)$ centered at zero and classify the singularity at $z = 0$. **(c)** Use $(\ast)$ to evaluate $\int_C \sin(\bar z)\,dz$.
->
-> **(a)** Parametrize $C$ by $z(\theta) = e^{i\theta}$, $0 \le \theta \le 2\pi$, so $z'(\theta) = ie^{i\theta}$ ([[§44 Contour Integrals|§44]]). On the unit circle $\overline{e^{i\theta}} = e^{-i\theta} = 1/e^{i\theta}$, so the two integrands agree at every point of $C$:
->
-> $$
-> \int_C \sin(\bar z)\,dz = \int_0^{2\pi}\sin\big(e^{-i\theta}\big)\,ie^{i\theta}\,d\theta = \int_0^{2\pi}\sin\Big(\frac{1}{e^{i\theta}}\Big)\,ie^{i\theta}\,d\theta = \int_C \sin\Big(\frac1z\Big)\,dz .
-> $$
->
-> **(b)** With $\sin w = \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n+1)!}w^{2n+1}$ and $w = 1/z$,
->
-> $$
-> \sin\Big(\frac1z\Big) = \frac1z - \frac{1}{3!}\cdot\frac{1}{z^3} + \frac{1}{5!}\cdot\frac{1}{z^5} - \cdots = \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n+1)!}\,\frac{1}{z^{2n+1}} \qquad (0 < |z| < \infty) .
-> $$
->
-> The whole series is the principal part, with infinitely many nonzero terms: $z = 0$ is an **essential singular point**, and the residue is the coefficient of $1/z$, namely $1$.
->
-> **(c)** $\sin(1/z)$ is analytic for $z \ne 0$, so by [[§75 Residues#^thm-75-1|Theorem §75.1]]
->
-> $$
-> \int_C \sin(\bar z)\,dz = \int_C \sin\Big(\frac1z\Big)\,dz = 2\pi i\operatorname{Res}_{z=0}\sin\Big(\frac1z\Big) = 2\pi i .
-> $$
->
-> Note that $\sin(\bar z)$ is analytic nowhere, so the residue theorem cannot be applied to it directly; the identity $(\ast)$ replaces it on the contour by an analytic function.
->
-> *Source: 342 practice final (Spring 2005), Q5*
+The essential singular point of $\sin(1/z)$ at the origin, with residue $1$, is the key to a final-exam integral: on the unit circle $\bar z = 1/z$, so $\int_{|z|=1}\sin(\bar z)\,dz = \int_{|z|=1}\sin(1/z)\,dz = 2\pi i$, although $\sin(\bar z)$ is analytic nowhere. It is worked in [[§68 Examples (Proof of Laurent's Theorem)#^ex-68-4|Example §68.4]](c).
 
-^ex-78-1
-
-> [!example] Example §78.2: A Zero Residue Does Not Make a Point Removable
+> [!example] Example §78.1: A Zero Residue Does Not Make a Point Removable
 > True or false: if $f$ has an isolated singularity at $z_0$ and $\operatorname{Res}_{z=z_0} f = 0$, then $z_0$ is a removable singularity.
 >
 > **False.** The residue is only the coefficient $b_1$; removability requires *all* $b_n$ to vanish. Counterexamples:
@@ -164,9 +129,9 @@ Every isolated singular point is of exactly one of the three types: the number o
 >
 > *Source: 342 sample final (Fall 1999), Q7c*
 
-^ex-78-2
+^ex-78-1
 
-> [!example] Example §78.3: Vanishing Moments Make a Singularity Removable
+> [!example] Example §78.2: Vanishing Moments Make a Singularity Removable
 > Let $C$ be the circle $|z| = 1$, oriented counterclockwise. Assume that $f$ is analytic in the punctured disk $0 < |z| < 2$ and that $\int_C z^nf(z)\,dz = 0$ for all integers $n \ge 0$. True or false: $0$ is a removable singularity of $f$.
 >
 > **True.** $f$ has a Laurent series $\sum_{k=-\infty}^{\infty} c_kz^k$ in $0 < |z| < 2$, and $C$ is a positively oriented simple closed contour around $0$ in that annulus, so by Laurent's theorem ([[§67 Proof of Laurent's Theorem#^thm-67-1|Theorem §67.1]])
@@ -179,4 +144,4 @@ Every isolated singular point is of exactly one of the three types: the number o
 >
 > *Source: 342 practice final (Spring 2005), Q8a*
 
-^ex-78-3
+^ex-78-2

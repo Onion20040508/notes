@@ -32,15 +32,15 @@ A function differentiable at a single point, or along a curve, has no useful str
 ^def-25-2
 
 > [!example] Example §25.1: 1/z, |z|² and Polynomials
-> - $f(z) = 1/z$ is analytic at each nonzero point in the finite plane, since its derivative $f'(z) = -1/z^2$ exists at such a point ([[§20 Rules for Differentiation|§20]]), and the set $z \ne 0$ is open.
-> - $f(z) = |z|^2$ is not analytic anywhere: its derivative exists only at $z = 0$ ([[§19 Derivatives|§19]], Example 3; [[§23 Sufficient Conditions for Differentiability#^ex-23-2|Example §23.2]]), and not throughout any neighborhood.
-> - Since the derivative of a polynomial exists everywhere ([[§20 Rules for Differentiation|§20]]), **every polynomial is an entire function**.
+> - $f(z) = 1/z$ is analytic at each nonzero point in the finite plane, since its derivative $f'(z) = -1/z^2$ exists at such a point ([[§19 Derivatives#^ex-19-1|Example §19.1]]), and the set $z \ne 0$ is open.
+> - $f(z) = |z|^2$ is not analytic anywhere: its derivative exists only at $z = 0$ ([[§19 Derivatives#^ex-19-3|Example §19.3]]; [[§23 Sufficient Conditions for Differentiability#^ex-23-2|Example §23.2]]), and not throughout any neighborhood.
+> - Since the derivative of a polynomial exists everywhere ([[§20 Rules for Differentiation#^ex-20-2|Example §20.2]]), **every polynomial is an entire function**.
 >
 > *B&C: Sec. 25, Examples*
 
 ^ex-25-1
 
-**Necessary and sufficient conditions.** A necessary, but by no means sufficient, condition for $f$ to be analytic in a domain $D$ is the continuity of $f$ throughout $D$, since a function is continuous wherever it is differentiable ([[§19 Derivatives|§19]]). Satisfaction of the Cauchy–Riemann equations throughout $D$ is also necessary ([[§21 Cauchy–Riemann Equations|§21]]), but not sufficient. Sufficient conditions for analyticity in $D$ are provided by [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]] and [[§24★ Polar Coordinates#^thm-24-3|Theorem §24.3]], applied at every point of $D$. Other useful sufficient conditions come from the rules for differentiation.
+**Necessary and sufficient conditions.** A necessary, but by no means sufficient, condition for $f$ to be analytic in a domain $D$ is the continuity of $f$ throughout $D$, since a function is continuous wherever it is differentiable ([[§19 Derivatives#^thm-19-1|Theorem §19.1]]). Satisfaction of the Cauchy–Riemann equations throughout $D$ is also necessary ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]), but not sufficient. Sufficient conditions for analyticity in $D$ are provided by [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]] and [[§24★ Polar Coordinates#^thm-24-3|Theorem §24.3]], applied at every point of $D$. Other useful sufficient conditions come from the rules for differentiation.
 
 > [!theorem] Proposition §25.1: Sums, Products and Quotients
 > If two functions are analytic in a domain $D$, their sum and their product are both analytic in $D$. Their quotient is analytic in $D$ provided the function in the denominator does not vanish at any point in $D$. In particular, the quotient $P(z)/Q(z)$ of two polynomials is analytic in any domain throughout which $Q(z) \ne 0$.
@@ -50,13 +50,13 @@ A function differentiable at a single point, or along a curve, has no useful str
 ^prop-25-1
 
 > [!proof]+ Proof
-> Let $f$ and $g$ be analytic in $D$ and let $z \in D$. Both have derivatives at $z$, so by the rules of [[§20 Rules for Differentiation|§20]] $f + g$ and $fg$ have derivatives at $z$:
+> Let $f$ and $g$ be analytic in $D$ and let $z \in D$. Both have derivatives at $z$, so by [[§20 Rules for Differentiation#^thm-20-2|Theorem §20.2]] $f + g$ and $fg$ have derivatives at $z$:
 >
 > $$
 > (f + g)'(z) = f'(z) + g'(z), \qquad (fg)'(z) = f(z)g'(z) + f'(z)g(z) .
 > $$
 >
-> If moreover $g(z) \ne 0$, the quotient rule of §20 gives
+> If moreover $g(z) \ne 0$, the quotient rule of Theorem §20.2 gives
 >
 > $$
 > \Big(\frac fg\Big)'(z) = \frac{g(z)f'(z) - f(z)g'(z)}{[g(z)]^2} .
@@ -66,7 +66,7 @@ A function differentiable at a single point, or along a curve, has no useful str
 
 ^pf-25-1
 
-*Uses:* [[§20 Rules for Differentiation|§20]] (formulas for the derivatives of sums, products and quotients), [[§25 Analytic Functions#^ex-25-1|Ex. §25.1]]
+*Uses:* [[§20 Rules for Differentiation#^thm-20-2|§20.2]], [[§25 Analytic Functions#^ex-25-1|Ex. §25.1]]
 
 > [!theorem] Proposition §25.2: Compositions
 > A composition of two analytic functions is analytic. More precisely, suppose that $f(z)$ is analytic in a domain $D$ and that the image ([[§13 Functions and Mappings#^def-13-5|Definition §13.5]]) of $D$ under the transformation $w = f(z)$ is contained in the domain of definition of a function $g(w)$ that is analytic there. Then the composition $g[f(z)]$ is analytic in $D$, with derivative
@@ -80,11 +80,11 @@ A function differentiable at a single point, or along a curve, has no useful str
 ^prop-25-2
 
 > [!proof]+ Proof
-> Let $z \in D$. Then $f$ has a derivative at $z$, and $g$ has a derivative at $f(z)$, a point of the open set on which $g$ is analytic. By the chain rule of [[§20 Rules for Differentiation|§20]], $g \circ f$ has a derivative at $z$ equal to $g'[f(z)]f'(z)$. This holds at every point of $D$.
+> Let $z \in D$. Then $f$ has a derivative at $z$, and $g$ has a derivative at $f(z)$, a point of the open set on which $g$ is analytic. By the chain rule, [[§20 Rules for Differentiation#^thm-20-4|Theorem §20.4]], $g \circ f$ has a derivative at $z$ equal to $g'[f(z)]f'(z)$. This holds at every point of $D$.
 
 ^pf-25-2
 
-*Uses:* [[§20 Rules for Differentiation|§20]] (chain rule)
+*Uses:* [[§20 Rules for Differentiation#^thm-20-4|§20.4]]
 
 ## Zero Derivative Means Constant
 
@@ -100,7 +100,7 @@ The following property of analytic functions is especially useful, in addition t
 > [!proof]+ Proof
 > Write $f(z) = u(x, y) + iv(x, y)$.
 >
-> **All partial derivatives vanish.** Since $f'(z) = 0$ in $D$, the formula $f'(z) = u_x + iv_x$ of [[§21 Cauchy–Riemann Equations|§21]] gives $u_x + iv_x = 0$; and, in view of the Cauchy–Riemann equations, $v_y - iu_y = 0$ (this is the formula $f'(z_0) = v_y - iu_y$ of §21). Consequently
+> **All partial derivatives vanish.** Since $f'(z) = 0$ in $D$, the formula $f'(z) = u_x + iv_x$ of [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]] gives $u_x + iv_x = 0$; and, in view of the Cauchy–Riemann equations, $v_y - iu_y = 0$ (this is the formula $f'(z_0) = v_y - iu_y$ of Theorem §21.1). Consequently
 >
 > $$
 > u_x = u_y = 0 \qquad\text{and}\qquad v_x = v_y = 0
@@ -116,11 +116,11 @@ The following property of analytic functions is especially useful, in addition t
 >
 > where $\operatorname{grad} u = u_x\mathbf i + u_y\mathbf j$ is the gradient vector (2). (Formula (1) requires $u$ to be differentiable; it is, because its partial derivatives exist and are continuous, being identically zero, throughout the open set $D$.) Because $u_x$ and $u_y$ are zero everywhere in $D$, $\operatorname{grad} u$ is the zero vector at all points of $L$, and $du/ds = 0$ along $L$. A function of the single variable $s$ with zero derivative on an interval is constant there, so $u$ is constant on $L$: $u(P) = u(P')$.
 >
-> **$u$ is constant in $D$.** Any two points $P$ and $Q$ in $D$ are connected by a polygonal line in $D$, a finite number of line segments joined end to end, since $D$ is a domain ([[§12★ Regions in the Complex Plane|§12★]]). Applying the previous step to each segment in turn, the values of $u$ at $P$ and $Q$ are the same. So there is a real constant $a$ such that $u(x, y) = a$ throughout $D$. Similarly, $v(x, y) = b$, and $f(z) = a + bi$ at each point of $D$: $f(z) = c$ where $c = a + bi$.
+> **$u$ is constant in $D$.** Any two points $P$ and $Q$ in $D$ are connected by a polygonal line in $D$, a finite number of line segments joined end to end, since $D$ is a domain ([[§12★ Regions in the Complex Plane#^def-12-4|Definition §12.4]]). Applying the previous step to each segment in turn, the values of $u$ at $P$ and $Q$ are the same. So there is a real constant $a$ such that $u(x, y) = a$ throughout $D$. Similarly, $v(x, y) = b$, and $f(z) = a + bi$ at each point of $D$: $f(z) = c$ where $c = a + bi$.
 
 ^pf-25-3
 
-*Uses:* [[§21 Cauchy–Riemann Equations|§21]] (Theorem and equation (4)), [[§12★ Regions in the Complex Plane|§12★]] (domains), [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]], [[§7 Directional Derivatives#^thm-7-1|452 Thm. §7.1]] (directional derivative formula), [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (vanishing derivative)
+*Uses:* [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§12★ Regions in the Complex Plane#^def-12-4|Def. §12.4]], [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]], [[§7 Directional Derivatives#^thm-7-1|452 Thm. §7.1]] (directional derivative formula), [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (vanishing derivative)
 
 > [!remark]- Connections
 > - The one-variable case is [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]]; the proof above reduces to it along each segment. Connectedness is essential: on the open set $|z| < 1$ or $|z - 3| < 1$, the function equal to $0$ on the first disk and $1$ on the second has $f' = 0$ but is not constant. B&C's polygonal connectedness implies connectedness in the topological sense, [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]].
@@ -135,7 +135,7 @@ The following property of analytic functions is especially useful, in addition t
 ^def-25-3
 
 > [!example] Example §25.2: Singular Points of 1/z and |z|²
-> The point $z = 0$ is a singular point of $f(z) = 1/z$: $f$ is not analytic at $0$ (it is not even defined there), but every neighborhood of $0$ contains nonzero points, where $f$ is analytic (Example §25.1). The function $f(z) = |z|^2$, on the other hand, has **no** singular points: it is nowhere analytic, so the second condition of Definition §25.3 fails at every point. Singular points play an important role from Ch. 6 on, where they are classified ([[§74 Isolated Singular Points|§74]], [[§78 The Three Types of Isolated Singular Points|§78]]).
+> The point $z = 0$ is a singular point of $f(z) = 1/z$: $f$ is not analytic at $0$ (it is not even defined there), but every neighborhood of $0$ contains nonzero points, where $f$ is analytic (Example §25.1). The function $f(z) = |z|^2$, on the other hand, has **no** singular points: it is nowhere analytic, so the second condition of Definition §25.3 fails at every point. Singular points play an important role from Ch. 6 on, where they are classified ([[§74 Isolated Singular Points#^def-74-1|Definition §74.1]], [[§78 The Three Types of Isolated Singular Points|§78]]).
 >
 > *B&C: Sec. 25 (text)*
 

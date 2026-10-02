@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 47 · MAT 342 HW 5, HW 6, Practice Finals (Fall 1999, Fall 2002, Spring 2005, Fall 2009, Spring 2012).*
 
-Most contour integrals are never evaluated exactly; what is needed is an estimate. The **ML-inequality** says that if $|f(z)| \le M$ on a contour $C$ of length $L$, then $\big|\int_C f(z)\,dz\big| \le ML$. It rests on the inequality $\big|\int_a^b w(t)\,dt\big| \le \int_a^b |w(t)|\,dt$, whose proof has to get around the fact that complex numbers cannot be compared: rotate the integral onto the positive real axis first. The ML-inequality is used to show that integrals over large semicircles tend to zero (evaluating improper integrals, [[§85 Evaluation of Improper Integrals|§85]]) and integrals over small circles too; it is also the analytic step in the proofs of [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49]], of the Cauchy–Goursat theorem and of the Cauchy integral formula.
+Most contour integrals are never evaluated exactly; what is needed is an estimate. The **ML-inequality** says that if $|f(z)| \le M$ on a contour $C$ of length $L$, then $\big|\int_C f(z)\,dz\big| \le ML$. It rests on the inequality $\big|\int_a^b w(t)\,dt\big| \le \int_a^b |w(t)|\,dt$, whose proof has to get around the fact that complex numbers cannot be compared: rotate the integral onto the positive real axis first. The ML-inequality is used to show that integrals over large semicircles tend to zero (evaluating improper integrals, [[§85 Evaluation of Improper Integrals#^thm-85-3|Theorem §85.3]]) and integrals over small circles too; it is also the analytic step in the proofs of [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49]], of the Cauchy–Goursat theorem and of the Cauchy integral formula.
 
 ## The Lemma and the Theorem
 
@@ -94,7 +94,7 @@ Most contour integrals are never evaluated exactly; what is needed is an estimat
 >
 > the last integral being the length of $C$ ([[§43 Contours#^def-43-3|Definition §43.3]], summed over the smooth arcs of $C$).
 >
-> **Strictness** (B&C: "of course"; here is why). Suppose $|f(z)| < M$ wherever $f$ is defined on $C$, and $L > 0$. Some smooth arc of $C$, say on $[t_{k-1}, t_k]$, has positive length. On it, the function $g(t) = \big(M - |f[z(t)]|\big)|z'(t)|$, made continuous at the endpoints by one-sided limits, is nonnegative, and it is positive at every interior point where $f[z(t)]$ is continuous, since $z'(t) \ne 0$ inside a smooth arc. A continuous nonnegative function that is positive somewhere has positive integral, so $\int_a^b |f[z(t)]|\,|z'(t)|\,dt < M\int_a^b |z'(t)|\,dt = ML$.
+> **Strictness** (B&C: "of course"; here is why). Suppose $|f(z)| < M$ wherever $f$ is defined on $C$, and $L > 0$. Some smooth arc of $C$, say on $[t_{k-1}, t_k]$, has positive length, so $t_{k-1} < t_k$. Inside $[t_{k-1}, t_k]$ choose a subinterval $[c, d]$, $c < d$, containing no point where $f[z(t)]$ is discontinuous (there are only finitely many). The function $g(t) = \big(M - |f[z(t)]|\big)|z'(t)|$ is nonnegative wherever $f[z(t)]$ is defined; on $[c, d]$, made continuous at $c$ and $d$ by one-sided limits, it is continuous, and it is positive on $(c, d)$, because $|f| < M$ there and $z'(t) \ne 0$ inside a smooth arc. A continuous nonnegative function that is positive somewhere has positive integral, so $\int_c^d g\,dt > 0$, while $\int g\,dt \ge 0$ over the rest of $[a, b]$. Hence $\int_a^b g\,dt > 0$, that is, $\int_a^b |f[z(t)]|\,|z'(t)|\,dt < M\int_a^b |z'(t)|\,dt = ML$.
 
 ^pf-47-2
 
@@ -106,7 +106,7 @@ Most contour integrals are never evaluated exactly; what is needed is an estimat
 ^rem-47-1
 
 > [!remark]- Connections
-> - The existence of $M$ is the extreme value theorem, [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]] (and [[§18 Continuity|§18]] for continuous functions of $z$ on a closed bounded region).
+> - The existence of $M$ is the extreme value theorem, [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]] (and [[§18 Continuity#^thm-18-6|Theorem §18.6]] for continuous functions of $z$ on a closed bounded region).
 
 > [!remark] Remark: Method — Bounding a Contour Integral
 > 1. **$L$.** Find the length of $C$: $|z_2 - z_1|$ for a segment, $R\,\Delta\theta$ for an arc of a circle of radius $R$, $\pi R$ for a semicircle.
@@ -241,17 +241,19 @@ Most contour integrals are never evaluated exactly; what is needed is an estimat
 >
 > On $S_R$, $|z^2| = R^2$ and $|1 + z^4| \ge |z|^4 - 1 = R^4 - 1$, and $L = \pi R$, so the modulus of the integral is at most $\pi R^3/(R^4 - 1) = \pi\big(1/R\big)/\big(1 - 1/R^4\big) \to 0$.
 >
-> *The key writes the lower bound for $|1 + z^4|$ as $|z^4 - 1|$; it should be $|z|^4 - 1$. The resulting bound $R^2/(R^4 - 1)$ is the same.*
->
 > **(c)** Prove that $\Big|\displaystyle\int_C e^{iz^2}\,dz\Big| < 5$, where $C$ is the arc of the circle $|z| = 2$ from $2$ to $2i$, counterclockwise.
 >
 > On $C$, $z = 2e^{i\theta}$ $(0 \le \theta \le \frac\pi2)$, so $iz^2 = 4ie^{2i\theta}$ has real part $-4\sin 2\theta \le 0$, and $|e^{iz^2}| = e^{-4\sin 2\theta} \le 1$. With $M = 1$ and $L = \pi$, the modulus is at most $\pi < 5$. (Numerically it is $0.486$.)
 >
 > **(d)** Let $S_r$ be the upper half of the circle of radius $r$ centered at $0$, $z = re^{i\theta}$ $(0 \le \theta \le \pi)$, and let $g$ be analytic in some open disk $|z| < R_0$. Prove that $\displaystyle\lim_{r\to0}\int_{S_r} g(z)\,dz = 0$.
 >
-> Fix $R$ with $0 < R < R_0$. Since $g$ is analytic, it is continuous on the closed disk $|z| \le R$, which is closed and bounded, so $|g| \le M$ there for some $M$ ([[§18 Continuity|§18]]). For $r \le R$, Theorem §47.2 gives $\big|\int_{S_r} g\,dz\big| \le M\pi r \to 0$.
+> Fix $R$ with $0 < R < R_0$. Since $g$ is analytic, it is continuous on the closed disk $|z| \le R$, which is closed and bounded, so $|g| \le M$ there for some $M$ ([[§18 Continuity#^thm-18-6|Theorem §18.6]]). For $r \le R$, Theorem §47.2 gives $\big|\int_{S_r} g\,dz\big| \le M\pi r \to 0$.
 >
-> *The key writes the length of $S_r$ as $2\pi r$; it is $\pi r$. The conclusion is unaffected.* The second part of that problem, $\int_{S_r} f\,dz \to \pi i\operatorname{Res}_{z=0} f$ for a simple pole, is B&C's indentation lemma, [[§89★ An Indented Path|§89★]].
+> The second part of that problem, $\int_{S_r} f\,dz \to \pi i\operatorname{Res}_{z=0} f$ for a simple pole, is B&C's indentation lemma, [[§89★ An Indented Path#^thm-89-1|Theorem §89.1]].
+>
+> These bounds are used in context later: (a) is the top side of a rectangle for Fourier-type integrals, [[§87 Improper Integrals from Fourier Analysis#^ex-87-5|Example §87.5]]; (b) is the arc estimate for improper integrals of rational functions, [[§85 Evaluation of Improper Integrals#^ex-85-2|Example §85.2]]; (d) and the second part of that problem are [[§84 Behavior of Functions Near Isolated Singular Points#^ex-84-3|Example §84.3]].
+>
+> *In (d) the Spring 2012 key writes the length of $S_r$ as $2\pi r$; it is $\pi r$. The conclusion is unaffected.*
 >
 > *Source: (a) 342 practice final (Fall 2002), Q7, and (Fall 2009), Q7; (b) 342 practice final (Spring 2005), Q7; (c) 342 practice final (Fall 1999), Q9; (d) 342 practice final (Spring 2012), Q7(a)*
 

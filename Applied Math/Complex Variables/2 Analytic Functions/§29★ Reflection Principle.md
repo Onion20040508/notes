@@ -12,7 +12,7 @@ tags: [complex-variables, math342, extension]
 *Brown–Churchill, Section 29.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
-Some analytic functions satisfy $\overline{f(z)} = f(\bar z)$ for all $z$ in a domain, others do not: $z + 1$ and $z^2$ do, throughout the plane, while $z + i$ and $iz^2$ do not. The reflection principle predicts which: for a function analytic in a domain symmetric about the real axis, the identity holds exactly when $f$ is real on the real axis. The proof combines the Cauchy–Riemann equations with the uniqueness theorem of [[§28★ Uniquely Determined Analytic Functions|§28★]]. One consequence: the nonreal zeros of a function that is analytic in such a domain and real on the axis, a polynomial with real coefficients for instance, come in conjugate pairs, since $f(z) = 0$ gives $f(\bar z) = \overline{f(z)} = 0$.
+Some analytic functions satisfy $\overline{f(z)} = f(\bar z)$ for all $z$ in a domain, others do not: $z + 1$ and $z^2$ do, throughout the plane, while $z + i$ and $iz^2$ do not. The reflection principle predicts which: for a function analytic in a domain symmetric about the real axis, the identity holds exactly when $f$ is real on the real axis. The proof combines the Cauchy–Riemann equations with the uniqueness theorem, [[§28★ Uniquely Determined Analytic Functions#^thm-28-2|Theorem §28.2]]. One consequence: the nonreal zeros of a function that is analytic in such a domain and real on the axis, a polynomial with real coefficients for instance, come in conjugate pairs, since $f(z) = 0$ gives $f(\bar z) = \overline{f(z)} = 0$.
 
 ## The Theorem
 
@@ -56,7 +56,7 @@ Some analytic functions satisfy $\overline{f(z)} = f(\bar z)$ for all $z$ in a d
 > U(x, y) = u(x, t) \qquad\text{and}\qquad V(x, y) = -v(x, t), \qquad\text{where } t = -y . \qquad (4)
 > $$
 >
-> Now, because $f(x + it)$ is an analytic function of $x + it$, the first-order partial derivatives of $u(x, t)$ and $v(x, t)$ are continuous throughout $D$ ([[§57 Some Consequences of the Extension|§57]], Corollary) and satisfy the Cauchy–Riemann equations
+> Now, because $f(x + it)$ is an analytic function of $x + it$, the first-order partial derivatives of $u(x, t)$ and $v(x, t)$ are continuous throughout $D$ ([[§57 Some Consequences of the Extension#^cor-57-2|Corollary §57.2]]) and satisfy the Cauchy–Riemann equations
 >
 > $$
 > u_x = v_t, \qquad u_t = -v_x . \qquad (5)
@@ -120,7 +120,7 @@ Some analytic functions satisfy $\overline{f(z)} = f(\bar z)$ for all $z$ in a d
 
 ^pf-29-1
 
-*Uses:* [[§57 Some Consequences of the Extension|§57]] (Corollary), [[§21 Cauchy–Riemann Equations|§21]] (Theorem), [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]], [[§28★ Uniquely Determined Analytic Functions#^thm-28-2|§28.2]]
+*Uses:* [[§57 Some Consequences of the Extension#^cor-57-2|§57.2]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]], [[§28★ Uniquely Determined Analytic Functions#^thm-28-2|§28.2]]
 
 ![[m342-29-1.svg]]
 *The setting of the reflection principle: a domain $D$ symmetric about the $x$ axis, containing a segment of it (red) on which $f$ is real. The function $F(z) = \overline{f(\bar z)}$ evaluates $f$ at the mirror point $\bar z$ and conjugates the value; it is analytic, agrees with $f$ on the segment, and so equals $f$ throughout $D$.*

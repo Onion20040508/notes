@@ -46,7 +46,7 @@ This section proves Taylor's theorem, stated in [[§62 Taylor Series|§62]]. The
 > f(z) = \sum_{n=0}^{\infty}\frac{f^{(n)}(0)}{n!}z^n \qquad (|z| < R_0) .
 > $$
 >
-> Fix $z$ with $|z| = r < R_0$, choose $r_0$ with $r < r_0 < R_0$, and let $C_0$ be the positively oriented circle $|s| = r_0$. Since $f$ is analytic inside and on $C_0$ (the closed disk $|s| \le r_0$ lies in $|s| < R_0$) and $z$ is interior to $C_0$, the Cauchy integral formula ([[§54 Cauchy Integral Formula|§54]]) applies:
+> Fix $z$ with $|z| = r < R_0$, choose $r_0$ with $r < r_0 < R_0$, and let $C_0$ be the positively oriented circle $|s| = r_0$. Since $f$ is analytic inside and on $C_0$ (the closed disk $|s| \le r_0$ lies in $|s| < R_0$) and $z$ is interior to $C_0$, the Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]]) applies:
 >
 > $$
 > f(z) = \frac{1}{2\pi i}\int_{C_0}\frac{f(s)\,ds}{s - z} . \qquad (1)
@@ -72,13 +72,13 @@ This section proves Taylor's theorem, stated in [[§62 Taylor Series|§62]]. The
 >
 > (The last term is $\frac1s\cdot\frac{(z/s)^N}{1 - z/s} = \frac{z^N}{s^N(s - z)}$.)
 >
-> *Integrating.* Multiply (4) by $f(s)$ and integrate each side around $C_0$. All the integrands are continuous on $C_0$, and the sum is finite, so the integral of the sum is the sum of the integrals ([[§44 Contour Integrals|§44]]):
+> *Integrating.* Multiply (4) by $f(s)$ and integrate each side around $C_0$. All the integrands are continuous on $C_0$, and the sum is finite, so the integral of the sum is the sum of the integrals ([[§44 Contour Integrals#^thm-44-2|Theorem §44.2]]):
 >
 > $$
 > \int_{C_0}\frac{f(s)\,ds}{s - z} = \sum_{n=0}^{N-1}\Big(\int_{C_0}\frac{f(s)\,ds}{s^{n+1}}\Big)z^n + z^N\int_{C_0}\frac{f(s)\,ds}{(s - z)s^N} .
 > $$
 >
-> By the extension of the Cauchy integral formula ([[§55 An Extension of the Cauchy Integral Formula|§55]]), applied at the point $0$ interior to $C_0$,
+> By the extension of the Cauchy integral formula ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]]), applied at the point $0$ interior to $C_0$,
 >
 > $$
 > \frac{1}{2\pi i}\int_{C_0}\frac{f(s)\,ds}{s^{n+1}} = \frac{f^{(n)}(0)}{n!} \qquad (n = 0, 1, 2, \ldots) .
@@ -108,13 +108,13 @@ This section proves Taylor's theorem, stated in [[§62 Taylor Series|§62]]. The
 > |s - z| \ge \big||s| - |z|\big| = r_0 - r > 0 .
 > $$
 >
-> The function $|f(s)|$ is continuous on the circle $C_0$, a closed and bounded set, so it has a maximum value $M$ there. On $C_0$ the integrand of (6) therefore satisfies
+> The function $f$ is continuous on the circle $C_0$, a closed and bounded set, so $|f(s)|$ has a maximum value $M$ there ([[§18 Continuity#^thm-18-6|Theorem §18.6]]). On $C_0$ the integrand of (6) therefore satisfies
 >
 > $$
 > \Big|\frac{f(s)}{(s - z)s^N}\Big| \le \frac{M}{(r_0 - r)r_0^N} ,
 > $$
 >
-> and $C_0$ has length $2\pi r_0$. By the ML-inequality ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]]),
+> and $C_0$ has length $2\pi r_0$. By the ML-inequality ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]),
 >
 > $$
 > |\rho_N(z)| \le \frac{r^N}{2\pi}\cdot\frac{M}{(r_0 - r)r_0^N}\cdot 2\pi r_0 = \frac{Mr_0}{r_0 - r}\Big(\frac{r}{r_0}\Big)^N .
@@ -122,7 +122,7 @@ This section proves Taylor's theorem, stated in [[§62 Taylor Series|§62]]. The
 >
 > The factor $Mr_0/(r_0 - r)$ does not depend on $N$, and $(r/r_0)^N \to 0$ because $0 \le r/r_0 < 1$. So limit (7) holds, and the case $z_0 = 0$ is proved.
 >
-> **The case $z_0 \ne 0$.** Suppose that $f$ is analytic when $|z - z_0| < R_0$, and let $g(z) = f(z + z_0)$. If $|z| < R_0$, then $|(z + z_0) - z_0| < R_0$, so $g$ is defined there, and it is analytic there as the composition of $f$ with the entire function $z + z_0$; by the chain rule ([[§20 Rules for Differentiation|§20]]) $g'(z) = f'(z + z_0)$, and by induction $g^{(n)}(z) = f^{(n)}(z + z_0)$, so
+> **The case $z_0 \ne 0$.** Suppose that $f$ is analytic when $|z - z_0| < R_0$, and let $g(z) = f(z + z_0)$. If $|z| < R_0$, then $|(z + z_0) - z_0| < R_0$, so $g$ is defined there, and it is analytic there as the composition of $f$ with the entire function $z + z_0$; by the chain rule ([[§20 Rules for Differentiation#^thm-20-4|Theorem §20.4]]) $g'(z) = f'(z + z_0)$, and by induction $g^{(n)}(z) = f^{(n)}(z + z_0)$, so
 >
 > $$
 > g^{(n)}(0) = f^{(n)}(z_0) \qquad (n = 0, 1, 2, \ldots) .
@@ -141,18 +141,16 @@ This section proves Taylor's theorem, stated in [[§62 Taylor Series|§62]]. The
 > $$
 >
 > which is the theorem.
->
-> *(B&C refers to "the example in Sec. 56" for identity (3); the identity is the example of Sec. 61.)*
 
 ^pf-63-1
 
-*Uses:* [[§62 Taylor Series#^def-62-1|Def. §62.1]], [[§61 Convergence of Series#^ex-61-1|Ex. §61.1]], [[§61 Convergence of Series#^def-61-3|Def. §61.3]], [[§54 Cauchy Integral Formula|§54]] (Cauchy integral formula), [[§55 An Extension of the Cauchy Integral Formula|§55]] (extended formula), [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (ML-inequality), [[§44 Contour Integrals|§44]] (linearity of contour integrals), [[§5 Triangle Inequality|§5]], [[§20 Rules for Differentiation|§20]] (chain rule), [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (extreme value theorem)
+*Uses:* [[§62 Taylor Series#^def-62-1|Def. §62.1]], [[§61 Convergence of Series#^ex-61-1|Ex. §61.1]], [[§61 Convergence of Series#^def-61-3|Def. §61.3]], [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]] (Cauchy integral formula), [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|§56.1]] (extended formula), [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§44 Contour Integrals#^thm-44-2|§44.2]] (linearity of contour integrals), [[§5 Triangle Inequality#^cor-5-2|§5.2]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]] (chain rule), [[§18 Continuity#^thm-18-6|§18.6]] (maximum of a continuous function)
 
 ![[m342-63-1.svg]]
 *The proof for $z_0 = 0$. The point $z$ ($|z| = r$) lies inside the circle $C_0$ of radius $r_0$, which lies inside the disk of analyticity $|z| < R_0$ (dashed). For every $s$ on $C_0$ the ratio $|z/s| = r/r_0$ is the same number less than $1$, which is why the geometric series for $1/(s - z)$ converges at the same rate everywhere on $C_0$.*
 
 > [!remark]- Connections
-> - In real analysis, convergence of a Taylor series to $f$ is proved from a remainder estimate that needs bounds on all derivatives ([[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]]), and it can fail for a function with derivatives of all orders ([[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]). Here the Cauchy integral formula supplies the bounds automatically: Cauchy's inequality $|f^{(n)}(0)| \le n!M/r_0^n$ ([[§57 Some Consequences of the Extension|§57]], Theorem 3) gives $|a_nz^n| \le M(r/r_0)^n$, and summing the tail of this geometric bound from $n = N$ reproduces exactly the estimate $\frac{Mr_0}{r_0 - r}(r/r_0)^N$ of the proof.
+> - In real analysis, convergence of a Taylor series to $f$ is proved from a remainder estimate that needs bounds on all derivatives ([[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]]), and it can fail for a function with derivatives of all orders ([[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]). Here the Cauchy integral formula supplies the bounds automatically: Cauchy's inequality $|f^{(n)}(0)| \le n!M/r_0^n$ ([[§57 Some Consequences of the Extension#^thm-57-4|Theorem §57.4]]) gives $|a_nz^n| \le M(r/r_0)^n$, and summing the tail of this geometric bound from $n = N$ reproduces exactly the estimate $\frac{Mr_0}{r_0 - r}(r/r_0)^N$ of the proof.
 > - The calculus statement "a power series equals the Taylor series of its sum" ([[§78 Taylor and Maclaurin Series#^thm-78-1|Calc Thm. §78.1]]) is the converse direction; in this subject it is [[§72★ Uniqueness of Series Representations#^thm-72-1|Theorem §72.1]].
 
 ## Examples
@@ -222,6 +220,6 @@ This section proves Taylor's theorem, stated in [[§62 Taylor Series|§62]]. The
 >
 > With a fixed $r_0$ the bound decays only geometrically, like $2^{-N}$, while the true remainder decays like $1/N!$. Because $f$ is entire, $r_0$ may grow with $N$; the choice $r_0 = N$ gives $\frac{N}{N - 1}e^NN^{-N}$, which by Stirling's formula is within a factor of order $\sqrt N$ of $1/N!$. For a function analytic only in $|z| < R_0$, the estimate gives the geometric rate $(r/r_0)^N$ for every $r_0 < R_0$, and no better.
 >
-> *B&C: Sec. 63, estimate of $\rho_N(z)$; the numerical illustration is added*
+> *B&C: Sec. 63 (text), remainder estimate; numerical illustration added in these notes*
 
 ^ex-63-3

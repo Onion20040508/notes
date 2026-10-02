@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 18 · MAT 342 HW 2.*
 
-A function is continuous at $z_0$ when its limit there exists and equals its value. The limit theorems of [[§16 Theorems on Limits|§16]] make sums, products, quotients and polynomials continuous at once; this section adds the two properties that need an ε–δ argument (compositions are continuous, and a continuous function that is nonzero at a point stays nonzero nearby), reduces continuity of $f = u + iv$ to that of $u$ and $v$, and proves that a continuous function on a closed bounded region is bounded and attains its maximum modulus. That last theorem is used again and again: in the ML-inequality estimates of Chapter 4, in the proof of Liouville's theorem and the fundamental theorem of algebra ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]]), and in the maximum modulus principle ([[§59 Maximum Modulus Principle|§59]]).
+A function is continuous at $z_0$ when its limit there exists and equals its value. The limit theorems of [[§16 Theorems on Limits|§16]] make sums, products, quotients and polynomials continuous at once; this section adds the two properties that need an ε–δ argument (compositions are continuous, and a continuous function that is nonzero at a point stays nonzero nearby), reduces continuity of $f = u + iv$ to that of $u$ and $v$, and proves that a continuous function on a closed bounded region is bounded and attains its maximum modulus. That last theorem is used again and again: in the ML-inequality estimates of Chapter 4, in the proof of Liouville's theorem and the fundamental theorem of algebra ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Theorems §58.1]] and [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|§58.2]]), and in the maximum modulus principle ([[§59 Maximum Modulus Principle#^cor-59-4|Corollary §59.4]]).
 
 ## Continuity
 
@@ -192,7 +192,7 @@ The modulus of a continuous function is continuous. B&C leaves this as an exerci
 > \big|\,|f(z)| - |w_0|\,\big| \le |f(z) - w_0| .
 > $$
 >
-> Given $\varepsilon > 0$, choose $\delta$ for $f$ as in definition (2) of [[§15 Limits|§15]]; then $\big|\,|f(z)| - |w_0|\,\big| \le |f(z) - w_0| < \varepsilon$ whenever $0 < |z - z_0| < \delta$, and the same $\delta$ works for $|f|$. The second statement is the case $w_0 = f(z_0)$.
+> Given $\varepsilon > 0$, choose $\delta$ for $f$ as in [[§15 Limits#^def-15-1|Definition §15.1]]; then $\big|\,|f(z)| - |w_0|\,\big| \le |f(z) - w_0| < \varepsilon$ whenever $0 < |z - z_0| < \delta$, and the same $\delta$ works for $|f|$. The second statement is the case $w_0 = f(z_0)$.
 
 ^pf-18-5
 

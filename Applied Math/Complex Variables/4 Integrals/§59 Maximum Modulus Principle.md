@@ -154,7 +154,7 @@ If a function $f$ that is analytic at each point in the interior of a closed bou
 ^cor-59-4
 
 > [!proof]+ Proof
-> The function $|f(z)|$ is continuous on the closed bounded set $R$, so it attains a maximum value $M$ at some point of $R$ ([[§18 Continuity#^thm-18-6|Theorem §18.6]]). The interior of $R$ is a domain on which $f$ is analytic and not constant, so by Theorem §59.3 there is no point $z_0$ of the interior at which $|f(z)| \le |f(z_0)|$ for all $z$ in the interior; in particular $|f(z_0)| \ne M$ for interior points $z_0$. Hence every point where the maximum $M$ is reached lies on the boundary of $R$.
+> The function $|f(z)|$ is continuous on the closed bounded set $R$, so it attains a maximum value $M$ at some point of $R$ ([[§18 Continuity#^thm-18-6|Theorem §18.6]]). The interior of $R$ is a domain on which $f$ is analytic and not constant (it is open; and it is connected, for $R$ is the closure of a domain $D \subset \operatorname{int} R$, and if $\operatorname{int} R$ were the union of two disjoint nonempty open sets, the connected set $D$ would lie in one of them, while the other, a nonempty open set inside the closure of $D$, would contain points of $D$), so by Theorem §59.3 there is no point $z_0$ of the interior at which $|f(z)| \le |f(z_0)|$ for all $z$ in the interior; in particular $|f(z_0)| \ne M$ for interior points $z_0$. Hence every point where the maximum $M$ is reached lies on the boundary of $R$.
 
 ^pf-59-4
 

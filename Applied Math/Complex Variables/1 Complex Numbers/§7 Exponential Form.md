@@ -60,7 +60,7 @@ Equation (2) also shows that $\operatorname{Arg} z$ may be replaced by any parti
 ^def-7-2
 
 > [!remark]- Connections
-> - Ordinary Differential Equations also takes Euler's formula as a definition, motivated by the power series of $e^x$, $\cos x$, $\sin x$: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]]; see also [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]]. In this subject the choice of the symbol is justified in [[§30 The Exponential Function|§30]], where $e^z$ is defined for all complex $z$ and (3) becomes a special case.
+> - Ordinary Differential Equations also takes Euler's formula as a definition, motivated by the power series of $e^x$, $\cos x$, $\sin x$: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]]; see also [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]]. In this subject the choice of the symbol is justified in [[§30 The Exponential Function#^def-30-1|Definition §30.1]], where $e^z$ is defined for all complex $z$ and (3) becomes a special case.
 
 With $r = 1$, (4) says that the numbers $e^{i\theta}$ lie on the circle centered at the origin with radius $1$, at the point reached by turning through the angle $\theta$ from the positive real axis. Their values can therefore be read off that circle without reference to Euler's formula ([[§7 Exponential Form#^ex-7-3|Example §7.3]]).
 
@@ -101,7 +101,7 @@ With $r = 1$, (4) says that the numbers $e^{i\theta}$ lie on the circle centered
 
 *Uses:* [[§7 Exponential Form#^def-7-1|Def. §7.1]], [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§4 Vectors and Moduli#^def-4-2|Def. §4.2]], [[§119 Trigonometry#^thm-119-4|Calc Thm. §119.4]] ($\cos^2\theta + \sin^2\theta = 1$)
 
-This parametrization is the standard contour of the subject: the circle in Cauchy's integral formula ([[§54 Cauchy Integral Formula|§54]]) and in the residue theorem is traversed as $z = z_0 + Re^{i\theta}$.
+This parametrization is the standard contour of the subject: the circle in Cauchy's integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]]) and in the residue theorem is traversed as $z = z_0 + Re^{i\theta}$.
 
 ## Examples
 

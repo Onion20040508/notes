@@ -77,7 +77,7 @@ The value does not depend on the choice of $R_0 > R_1$: two such circles bound a
 > \frac{1}{z^2}f\Big(\frac1z\Big) = \sum_{n=-\infty}^{\infty}\frac{c_n}{z^{n+2}} = \sum_{n=-\infty}^{\infty}\frac{c_{n-2}}{z^n} \qquad \Big(0 < |z| < \frac{1}{R_1}\Big) .
 > $$
 >
-> This series converges to $\frac{1}{z^2}f(\frac1z)$ in the punctured disk, so it is the Laurent series of that function about $0$ ([[§72★ Uniqueness of Series Representations|§72★]], Theorem 2; B&C uses this tacitly). Its coefficient of $1/z$ is the one with $n = 1$, namely $c_{-1}$:
+> This series converges to $\frac{1}{z^2}f(\frac1z)$ in the punctured disk, so it is the Laurent series of that function about $0$ ([[§72★ Uniqueness of Series Representations#^thm-72-4|Theorem §72.4]]; B&C uses this tacitly). Its coefficient of $1/z$ is the one with $n = 1$, namely $c_{-1}$:
 >
 > $$
 > c_{-1} = \operatorname{Res}_{z=0}\Big[\frac{1}{z^2}f\Big(\frac1z\Big)\Big] .
@@ -93,7 +93,7 @@ The value does not depend on the choice of $R_0 > R_1$: two such circles bound a
 
 ^pf-77-1
 
-*Uses:* [[§77★ Residue at Infinity#^def-77-1|Def. §77.1]], [[§53 Multiply Connected Domains#^cor-53-2|§53.2]] (deformation of paths), [[§67 Proof of Laurent's Theorem#^thm-67-1|§67.1]] (Laurent's theorem), [[§72★ Uniqueness of Series Representations|§72★]] (Theorem 2), [[§75 Residues#^def-75-1|Def. §75.1]]
+*Uses:* [[§77★ Residue at Infinity#^def-77-1|Def. §77.1]], [[§53 Multiply Connected Domains#^cor-53-2|§53.2]] (deformation of paths), [[§67 Proof of Laurent's Theorem#^thm-67-1|§67.1]] (Laurent's theorem), [[§72★ Uniqueness of Series Representations#^thm-72-4|§72.4]] (uniqueness of Laurent series), [[§75 Residues#^def-75-1|Def. §75.1]]
 
 ![[m342-77-1.svg]]
 *The residue at infinity. All singular points of $f$ (black dots) lie inside $C$ (blue), which lies inside the circle $|z| = R_1$ (dashed). The circle $C_0$, $|z| = R_0 > R_1$ (red), is traversed clockwise, so that the region "outside", which contains $\infty$, is on its left. Between $C$ and $C_0$ the function is analytic, which is why $\int_C f\,dz = -\int_{C_0} f\,dz$.*

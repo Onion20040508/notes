@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 19 · MAT 342 HW 3.*
 
-The derivative of a complex function is defined by the same difference quotient as in calculus, but the increment $\Delta z$ now tends to $0$ through the plane, from every direction at once. This makes complex differentiability a far stronger condition than it looks. The function $\bar z$, whose real and imaginary parts are as smooth as can be, has a derivative nowhere, and $|z|^2$ has one at the single point $0$. The examples of this section show how to detect such failures by comparing horizontal and vertical approaches, and the one general fact proved is that a derivative forces continuity. Systematizing the horizontal and vertical comparison gives the Cauchy–Riemann equations of [[§21 Cauchy–Riemann Equations|§21]].
+The derivative of a complex function is defined by the same difference quotient as in calculus, but the increment $\Delta z$ now tends to $0$ through the plane, from every direction at once. This makes complex differentiability a far stronger condition than it looks. The function $\bar z$, whose real and imaginary parts are as smooth as can be, has a derivative nowhere, and $|z|^2$ has one at the single point $0$. The examples of this section show how to detect such failures by comparing horizontal and vertical approaches, and the one general fact proved is that a derivative forces continuity. Systematizing the horizontal and vertical comparison gives the Cauchy–Riemann equations of [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]].
 
 ## The Derivative
 
@@ -154,7 +154,7 @@ The converse does hold.
 > 2. Let $\Delta z \to 0$ **horizontally** ($\Delta z = \Delta x$, so $\overline{\Delta z} = \Delta z$) and **vertically** ($\Delta z = i\Delta y$, so $\overline{\Delta z} = -\Delta z$). If the two limits differ, $f'(z_0)$ does not exist, by uniqueness of limits.
 > 3. If they agree, this proves nothing: also try other directions $\Delta z = te^{i\theta}$, such as the diagonal ([[§22 Examples (Cauchy–Riemann Equations)#^ex-22-3|Example §22.3]]). To prove that $f'(z_0)$ *does* exist, simplify $\Delta w/\Delta z$ into a form whose limit follows from the limit theorems, as in Example §19.1 and at $z = 0$ in Example §19.3.
 >
-> Step 2 done once and for all, at every point, gives the Cauchy–Riemann equations ([[§21 Cauchy–Riemann Equations|§21]]).
+> Step 2 done once and for all, at every point, gives the Cauchy–Riemann equations ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]).
 
 ^rem-19-2
 
@@ -183,4 +183,4 @@ The converse does hold.
 
 ^ex-19-4
 
-Geometric interpretations of derivatives of functions of a complex variable are not as immediate as for functions of a real variable; B&C defers them to Chapter 9, where $f'(z_0) \ne 0$ is shown to mean that $f$ rotates all directions at $z_0$ by $\arg f'(z_0)$ and stretches all short segments by $|f'(z_0)|$ ([[§112★ Preservation of Angles and Scale Factors|§112★]]).
+Geometric interpretations of derivatives of functions of a complex variable are not as immediate as for functions of a real variable; B&C defers them to Chapter 9, where $f'(z_0) \ne 0$ is shown to mean that $f$ rotates all directions at $z_0$ by $\arg f'(z_0)$ and stretches all short segments by $|f'(z_0)|$ ([[§112★ Preservation of Angles and Scale Factors#^thm-112-1|Theorem §112.1]], [[§112★ Preservation of Angles and Scale Factors#^prop-112-4|Proposition §112.4]]).

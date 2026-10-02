@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 15 · MAT 342 HW 2.*
 
-The limit of a function of a complex variable is defined exactly as for a real function of two variables: $f(z)$ must be within $\varepsilon$ of $w_0$ for every $z$ in a small enough *deleted disk* around $z_0$. The decisive word is "every": $z$ may approach $z_0$ from any direction and along any path, and the limit, if it exists, is unique. Together these give the standard test for non-existence: two paths of approach with different limiting values. That test is what later shows that $\bar z$ and $|z|^2$ have no derivatives ([[§19 Derivatives|§19]]) and what produces the Cauchy–Riemann equations, which compare a horizontal with a vertical approach ([[§21 Cauchy–Riemann Equations|§21]]).
+The limit of a function of a complex variable is defined exactly as for a real function of two variables: $f(z)$ must be within $\varepsilon$ of $w_0$ for every $z$ in a small enough *deleted disk* around $z_0$. The decisive word is "every": $z$ may approach $z_0$ from any direction and along any path, and the limit, if it exists, is unique. Together these give the standard test for non-existence: two paths of approach with different limiting values. That test is what later shows that $\bar z$ and $|z|^2$ have no derivatives ([[§19 Derivatives#^ex-19-2|Examples §19.2]] and [[§19 Derivatives#^ex-19-3|§19.3]]) and what produces the Cauchy–Riemann equations, which compare a horizontal with a vertical approach ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]).
 
 ## The Definition
 
@@ -249,7 +249,7 @@ Limits at a point $z_0 \ne 0$ can be moved to the origin by the substitution $\D
 ^ex-15-4
 
 > [!remark] Remark: Method — Deciding Whether a Limit Exists
-> 1. **Try the limit laws first** ([[§16 Theorems on Limits|§16]]): if $f$ is built from continuous pieces and no denominator tends to $0$, the limit is the value. If a factor cancels, cancel it first ([[§16 Theorems on Limits#^ex-16-1|Example §16.1]]).
+> 1. **Try the limit laws first** ([[§16 Theorems on Limits#^thm-16-2|Theorem §16.2]]): if $f$ is built from continuous pieces and no denominator tends to $0$, the limit is the value. If a factor cancels, cancel it first ([[§16 Theorems on Limits#^ex-16-1|Example §16.1]]).
 > 2. **If a $0/0$ form involving $\bar z$, $\operatorname{Re} z$, $\operatorname{Im} z$ or $|z|$ remains,** suspect non-existence. Shift the point to $0$ (Proposition §15.3) and compute $f$ along rays $z_0 + te^{i\theta}$, $t \to 0^+$; quotients such as $\overline{\Delta z}/\Delta z = e^{-2i\theta}$ depend only on the direction. Two directions with different limits settle the matter (Corollary §15.2). Check the axes **and** the diagonals (Example §15.3).
 > 3. **If all directions agree,** the limit may still fail along curves; to prove that a limit exists, estimate $|f(z) - w_0|$ by a multiple of $|z - z_0|$ or another quantity tending to $0$, as in Example §15.1 and [[§18 Continuity#^ex-18-1|Example §18.1]].
 

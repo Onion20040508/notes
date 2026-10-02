@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 26 · MAT 342 HW 3.*
 
-There are two ways to decide where a function is analytic. A function given by a formula in $z$ is handled by the differentiation rules of [[§20 Rules for Differentiation|§20]] and [[§25 Analytic Functions|§25]]: it is analytic except at the zeros of denominators. A function given by its components $u$ and $v$ is handled by the Cauchy–Riemann equations together with [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]]. The second half of the section uses the Cauchy–Riemann equations to prove structural facts: an analytic function whose conjugate is also analytic, or whose modulus is constant, or whose values are real, must be constant. The constant-modulus result is a key step in the maximum modulus principle ([[§59 Maximum Modulus Principle|§59]]).
+There are two ways to decide where a function is analytic. A function given by a formula in $z$ is handled by the differentiation rules, [[§20 Rules for Differentiation#^thm-20-2|Theorem §20.2]] and [[§25 Analytic Functions#^prop-25-1|Proposition §25.1]]: it is analytic except at the zeros of denominators. A function given by its components $u$ and $v$ is handled by the Cauchy–Riemann equations together with [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]]. The second half of the section uses the Cauchy–Riemann equations to prove structural facts: an analytic function whose conjugate is also analytic, or whose modulus is constant, or whose values are real, must be constant. The constant-modulus result is a key step in the maximum modulus principle ([[§59 Maximum Modulus Principle#^lem-59-2|Lemma §59.2]]).
 
 ## Deciding Where a Function Is Analytic
 
@@ -72,7 +72,7 @@ There are two ways to decide where a function is analytic. A function given by a
 > f''(z) = U_x + iV_x = -(\sin x\cosh y + i\cos x\sinh y) = -f(z) .
 > $$
 >
-> (This $f$ is $\sin z$, [[§37 The Trigonometric Functions sin z and cos z|§37]], and $f'$ is $\cos z$.)
+> (This $f$ is $\sin z$, [[§37 The Trigonometric Functions sin z and cos z#^prop-37-5|Proposition §37.5]], and $f'$ is $\cos z$.)
 >
 > *B&C: Sec. 26, Example 2*
 
@@ -107,7 +107,7 @@ There are two ways to decide where a function is analytic. A function given by a
 > u_x = -v_y, \qquad u_y = v_x . \qquad (5)
 > $$
 >
-> Adding corresponding sides of the first equations in (3) and (5) gives $2u_x = 0$, so $u_x = 0$ in $D$. Subtracting the second equation in (5) from the second in (3) gives $0 = -2v_x$, so $v_x = 0$. According to the formula of [[§21 Cauchy–Riemann Equations|§21]], then,
+> Adding corresponding sides of the first equations in (3) and (5) gives $2u_x = 0$, so $u_x = 0$ in $D$. Subtracting the second equation in (5) from the second in (3) gives $0 = -2v_x$, so $v_x = 0$. According to the formula of [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]], then,
 >
 > $$
 > f'(z) = u_x + iv_x = 0 + i0 = 0 ,
@@ -128,7 +128,7 @@ There are two ways to decide where a function is analytic. A function given by a
 > |f(z)| = c \qquad\text{for all } z \text{ in } D , \qquad (6)
 > $$
 >
-> where $c$ is a real constant. If $c = 0$, then $f(z) = 0$ everywhere in $D$. If $c \ne 0$, the property $z\bar z = |z|^2$ of complex numbers ([[§6 Complex Conjugates|§6]]) tells us that
+> where $c$ is a real constant. If $c = 0$, then $f(z) = 0$ everywhere in $D$. If $c \ne 0$, the property $z\bar z = |z|^2$ of complex numbers ([[§6 Complex Conjugates#^prop-6-3|Proposition §6.3]]) tells us that
 >
 > $$
 > f(z)\overline{f(z)} = c^2 \ne 0 ,
@@ -142,7 +142,7 @@ There are two ways to decide where a function is analytic. A function given by a
 >
 > and it follows from this that $\overline{f(z)}$ is analytic everywhere in $D$ (a quotient whose denominator does not vanish, [[§25 Analytic Functions#^prop-25-1|Proposition §25.1]]). The main result of Example §26.3 thus ensures that $f(z)$ is constant throughout $D$.
 >
-> This result is needed later, for the maximum modulus principle ([[§59 Maximum Modulus Principle|§59]]).
+> This result is needed later, for the maximum modulus principle ([[§59 Maximum Modulus Principle#^lem-59-2|Lemma §59.2]]).
 >
 > *B&C: Sec. 26, Example 4*
 
@@ -151,7 +151,7 @@ There are two ways to decide where a function is analytic. A function given by a
 > [!example] Example §26.5: Real-Valued Analytic Functions Are Constant
 > **(a)** Suppose that $f'(z)$ exists for all $z$ and that $f$ takes only real values, $f(z) \in \mathbb{R}$ for all $z$. Find $f'(z)$. **(b)** What can be said about $f$?
 >
-> **(a)** Write $f = u + iv$. Since $f$ is real-valued, $v(x, y) = 0$ for all $(x, y)$, so $v_x = v_y = 0$ everywhere. Since $f'(z)$ exists at every $z$, the Cauchy–Riemann equations hold everywhere ([[§21 Cauchy–Riemann Equations|§21]]):
+> **(a)** Write $f = u + iv$. Since $f$ is real-valued, $v(x, y) = 0$ for all $(x, y)$, so $v_x = v_y = 0$ everywhere. Since $f'(z)$ exists at every $z$, the Cauchy–Riemann equations hold everywhere ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]):
 >
 > $$
 > u_x = v_y = 0, \qquad u_y = -v_x = 0 .

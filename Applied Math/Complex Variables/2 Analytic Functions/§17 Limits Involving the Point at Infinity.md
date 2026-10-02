@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 17 · MAT 342 HW 2.*
 
-Adding a single point $\infty$ to the complex plane makes statements such as "$1/z$ becomes large near $0$" and "$(2z + i)/(z + 1)$ settles down to $2$ far out" into ordinary limit statements. The extended plane is pictured as a sphere through stereographic projection, on which $\infty$ is the north pole and its neighborhoods are the exteriors of large circles. The theorem of this section reduces every limit involving $\infty$ to a limit at a finite point, by replacing $f$ with $1/f$ or $z$ with $1/z$. The point at infinity returns as an isolated singular point in [[§74 Isolated Singular Points|§74]] and [[§77★ Residue at Infinity|§77★]], and it is essential for linear fractional transformations ([[§99★ Linear Fractional Transformations|§99★]]), which map the extended plane one to one onto itself.
+Adding a single point $\infty$ to the complex plane makes statements such as "$1/z$ becomes large near $0$" and "$(2z + i)/(z + 1)$ settles down to $2$ far out" into ordinary limit statements. The extended plane is pictured as a sphere through stereographic projection, on which $\infty$ is the north pole and its neighborhoods are the exteriors of large circles. The theorem of this section reduces every limit involving $\infty$ to a limit at a finite point, by replacing $f$ with $1/f$ or $z$ with $1/z$. The point at infinity returns as an isolated singular point in [[§74 Isolated Singular Points#^def-74-2|Definition §74.2]] and [[§77★ Residue at Infinity|§77★]], and it is essential for linear fractional transformations ([[§99★ Linear Fractional Transformations#^thm-99-4|Theorem §99.4]]), which map the extended plane one to one onto itself.
 
 ## The Extended Plane and the Riemann Sphere
 
@@ -174,7 +174,7 @@ Limits involving $\infty$ are unique, as B&C's Exercise 12 asks one to observe: 
 
 ^ex-17-2
 
-The next consequence is used for linear fractional transformations in [[§99★ Linear Fractional Transformations|§99★]], to make them continuous on the extended plane.
+The next consequence is used for linear fractional transformations in [[§99★ Linear Fractional Transformations#^thm-99-4|Theorem §99.4]], to make them continuous on the extended plane.
 
 > [!theorem] Proposition §17.2: Limits of a Linear Fractional Transformation
 > Let

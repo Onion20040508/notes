@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 20 · MAT 342 HW 3.*
 
-The definition of the derivative in [[§19 Derivatives|§19]] is formally the same as in calculus, with $z$ in place of $x$, so the basic differentiation rules carry over with the same proofs: constants, sums, products, quotients, integer powers and the chain rule. Only the limit theorems of [[§16 Theorems on Limits|§16]] and the fact that differentiable functions are continuous are needed. With these rules every polynomial is differentiable everywhere and every rational function wherever its denominator is not zero, which makes them the first examples of the analytic functions of [[§25 Analytic Functions|§25]]. The chain rule is proved by B&C's device of an auxiliary function $\Phi$, which avoids dividing by $f(z) - f(z_0)$.
+The definition of the derivative in [[§19 Derivatives#^def-19-1|Definition §19.1]] is formally the same as in calculus, with $z$ in place of $x$, so the basic differentiation rules carry over with the same proofs: constants, sums, products, quotients, integer powers and the chain rule. Only the limit theorems of [[§16 Theorems on Limits#^thm-16-2|Theorem §16.2]] and the fact that differentiable functions are continuous are needed. With these rules every polynomial is differentiable everywhere and every rational function wherever its denominator is not zero, which makes them the first examples of the analytic functions of [[§25 Analytic Functions#^def-25-1|Definition §25.1]]. The chain rule is proved by B&C's device of an auxiliary function $\Phi$, which avoids dividing by $f(z) - f(z_0)$.
 
 ## The Basic Rules
 

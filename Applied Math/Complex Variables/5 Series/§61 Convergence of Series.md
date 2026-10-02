@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 61 · MAT 342 HW 9 (optional reading).*
 
-A series of complex numbers converges when its sequence of partial sums does, and by [[§60 Convergence of Sequences#^thm-60-2|Theorem §60.2]] this happens exactly when the real and imaginary parts converge separately. Familiar facts from calculus therefore carry over: the terms of a convergent series tend to zero, and absolute convergence implies convergence. The section also introduces the remainder $\rho_N = S - S_N$, the tool for every convergence proof in the chapter, and power series. Its one example, the geometric series $\sum z^n = 1/(1 - z)$ for $|z| < 1$, is the series from which the proofs of Taylor's and Laurent's theorems ([[§63 Proof of Taylor's Theorem|§63]], [[§67 Proof of Laurent's Theorem|§67]]) and most of the expansions in this chapter are built.
+A series of complex numbers converges when its sequence of partial sums does, and by [[§60 Convergence of Sequences#^thm-60-2|Theorem §60.2]] this happens exactly when the real and imaginary parts converge separately. Familiar facts from calculus therefore carry over: the terms of a convergent series tend to zero, and absolute convergence implies convergence. The section also introduces the remainder $\rho_N = S - S_N$, the tool for every convergence proof in the chapter, and power series. Its one example, the geometric series $\sum z^n = 1/(1 - z)$ for $|z| < 1$, is the series from which the proofs of Taylor's and Laurent's theorems ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]], [[§67 Proof of Laurent's Theorem#^thm-67-1|Theorem §67.1]]) and most of the expansions in this chapter are built.
 
 ## Series and Their Sums
 
@@ -166,7 +166,7 @@ The algebra of convergent series is inherited the same way; B&C leaves it to the
 
 ^pf-61-4
 
-*Uses:* [[§61 Convergence of Series#^thm-61-1|§61.1]], [[§14 Series#^prop-14-3|451 Prop. §14.3]], [[§6 Complex Conjugates|§6]] ($|\bar z| = |z|$)
+*Uses:* [[§61 Convergence of Series#^thm-61-1|§61.1]], [[§14 Series#^prop-14-3|451 Prop. §14.3]], [[§6 Complex Conjugates#^def-6-1|Def. §6.1]] ($|\bar z| = |z|$)
 
 ## Remainders and Power Series
 
@@ -202,7 +202,7 @@ For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the
 >
 > and the series diverges when $|z| \ge 1$.
 >
-> **Partial sums.** Recall the identity ([[§9 Arguments of Products and Quotients|§9]], Exercise 9)
+> **Partial sums.** Recall the identity
 >
 > $$
 > 1 + z + z^2 + \cdots + z^n = \frac{1 - z^{n+1}}{1 - z} \qquad (z \ne 1) ,
@@ -230,7 +230,7 @@ For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the
 > \frac{1}{1 - z} = \sum_{n=0}^{N-1} z^n + \frac{z^N}{1 - z} \qquad (z \ne 1) , \qquad (11)
 > $$
 >
-> which is the starting point of the proofs in [[§63 Proof of Taylor's Theorem|§63]] and [[§67 Proof of Laurent's Theorem|§67]], and the fact that the convergence in (10) is absolute ($\sum|z|^n$ is a real geometric series).
+> which is the starting point of the proofs of [[§63 Proof of Taylor's Theorem#^pf-63-1|Theorem §63.1]] and [[§67 Proof of Laurent's Theorem#^pf-67-1|Theorem §67.1]], and the fact that the convergence in (10) is absolute ($\sum|z|^n$ is a real geometric series).
 >
 > *B&C: Sec. 61, Example*
 

@@ -41,7 +41,7 @@ The logarithm is defined by solving $e^w = z$. Because $e^w$ has period $2\pi i$
 > e^ue^{iv} = re^{i\Theta} .
 > $$
 >
-> Both sides are exponential forms of nonzero numbers, with moduli $e^u$ and $r$. By the statement of [[§10 Roots of Complex Numbers|§10]] on the equality of two nonzero complex numbers in exponential form, this holds if and only if
+> Both sides are exponential forms of nonzero numbers, with moduli $e^u$ and $r$. By [[§10 Roots of Complex Numbers#^prop-10-1|Proposition §10.1]] on the equality of two nonzero complex numbers in exponential form, this holds if and only if
 >
 > $$
 > e^u = r \qquad\text{and}\qquad v = \Theta + 2n\pi
@@ -51,7 +51,7 @@ The logarithm is defined by solving $e^w = z$. Because $e^w$ has period $2\pi i$
 
 ^pf-31-1
 
-*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§30 The Exponential Function#^prop-30-1|§30.1]], [[§10 Roots of Complex Numbers|§10]] (equality of exponential forms), [[§5 Inverse Functions and Logarithms#^cor-5-6|Calc Cor. §5.6]] ($e^u = r \iff u = \ln r$)
+*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§30 The Exponential Function#^prop-30-1|§30.1]], [[§10 Roots of Complex Numbers#^prop-10-1|§10.1]], [[§5 Inverse Functions and Logarithms#^cor-5-6|Calc Cor. §5.6]] ($e^u = r \iff u = \ln r$)
 
 ## The Logarithm and Its Principal Value
 

@@ -44,7 +44,7 @@ Harmonic functions play an important role in applied mathematics. For example, t
 ^thm-27-1
 
 > [!proof]+ Proof
-> We need a result that is proved in Ch. 4 ([[§57 Some Consequences of the Extension|§57]], Corollary): if a function of a complex variable is analytic at a point, then its real and imaginary components have continuous partial derivatives of all orders at that point. In particular $u$ and $v$ have continuous first- and second-order partial derivatives throughout $D$. (§57 does not depend on this section, so there is no circularity.)
+> We need a result that is proved in Ch. 4, [[§57 Some Consequences of the Extension#^cor-57-2|Corollary §57.2]]: if a function of a complex variable is analytic at a point, then its real and imaginary components have continuous partial derivatives of all orders at that point. In particular $u$ and $v$ have continuous first- and second-order partial derivatives throughout $D$. (§57 does not depend on this section, so there is no circularity.)
 >
 > Since $f$ is analytic in $D$, the first-order partial derivatives of its component functions satisfy the Cauchy–Riemann equations throughout $D$:
 >
@@ -74,10 +74,10 @@ Harmonic functions play an important role in applied mathematics. For example, t
 
 ^pf-27-1
 
-*Uses:* [[§21 Cauchy–Riemann Equations|§21]] (Theorem), [[§57 Some Consequences of the Extension|§57]] (Corollary), [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]], [[§5 Equality of Mixed Partials#^thm-5-1|452 Thm. §5.1]] (Schwarz–Clairaut)
+*Uses:* [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§57 Some Consequences of the Extension#^cor-57-2|§57.2]], [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]], [[§5 Equality of Mixed Partials#^thm-5-1|452 Thm. §5.1]] (Schwarz–Clairaut)
 
 > [!remark]- Connections
-> - Theorem §27.1 is the source of the closed-form solutions of potential problems; the converse direction (every harmonic function on a simply connected domain is the real part of an analytic function, its **harmonic conjugate** being the imaginary part) is [[§115★ Harmonic Conjugates|§115★]]. The separation-of-variables solutions of [[§38 Potential in Unbounded Regions#^thm-38-1|341 Thm. §38.1]] are sums of real parts of analytic functions such as $-ie^{in\pi z/a}$; Example §27.1 is the term $n = 1$, $a = \pi$.
+> - Theorem §27.1 is the source of the closed-form solutions of potential problems; the converse direction (every harmonic function on a simply connected domain is the real part of an analytic function, its **harmonic conjugate** being the imaginary part) is [[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]. The separation-of-variables solutions of [[§38 Potential in Unbounded Regions#^thm-38-1|341 Thm. §38.1]] are sums of real parts of analytic functions such as $-ie^{in\pi z/a}$; Example §27.1 is the term $n = 1$, $a = \pi$.
 
 > [!example] Example §27.1: Steady Temperatures in a Semi-Infinite Strip
 > The function $T(x, y) = e^{-y}\sin x$ is harmonic in any domain of the $xy$ plane and, in particular, in the semi-infinite vertical strip $0 < x < \pi$, $y > 0$. It also assumes the values indicated on the edges of the strip. More precisely, it satisfies all of the conditions
@@ -98,7 +98,7 @@ Harmonic functions play an important role in applied mathematics. For example, t
 >
 > **Directly.** $T_{xx} = -e^{-y}\sin x$ and $T_{yy} = e^{-y}\sin x$, both continuous, so $T_{xx} + T_{yy} = 0$ everywhere. On the edges, $\sin 0 = \sin\pi = 0$, $e^{0} = 1$, and $|T(x, y)| \le e^{-y} \to 0$ as $y \to \infty$.
 >
-> **From Theorem §27.1.** The function $f(z) = e^{-y}\sin x - ie^{-y}\cos x$ is entire: its components $u = e^{-y}\sin x$, $v = -e^{-y}\cos x$ satisfy $u_x = e^{-y}\cos x = v_y$ and $u_y = -e^{-y}\sin x = -v_x$ everywhere, with continuous partials (B&C's Exercise 1(c) of Sec. 26). Hence its real component, the temperature function $T(x, y) = e^{-y}\sin x$, must be harmonic in every domain of the $xy$ plane. (With [[§30 The Exponential Function|§30]], $f(z) = -ie^{-y}e^{ix} = -ie^{iz}$.)
+> **From Theorem §27.1.** The function $f(z) = e^{-y}\sin x - ie^{-y}\cos x$ is entire: its components $u = e^{-y}\sin x$, $v = -e^{-y}\cos x$ satisfy $u_x = e^{-y}\cos x = v_y$ and $u_y = -e^{-y}\sin x = -v_x$ everywhere, with continuous partials (B&C's Exercise 1(c) of Sec. 26). Hence its real component, the temperature function $T(x, y) = e^{-y}\sin x$, must be harmonic in every domain of the $xy$ plane. (With [[§30 The Exponential Function#^def-30-1|Definition §30.1]], $f(z) = -ie^{-y}e^{ix} = -ie^{iz}$.)
 >
 > *B&C: Sec. 27, Examples 1 and 2*
 
@@ -190,7 +190,7 @@ Harmonic functions play an important role in applied mathematics. For example, t
 > [!example] Example §27.5: No Analytic f with |f|² = 4 − |z|²
 > True or false: there is a function $f(z)$, analytic in the disk $D = \{|z| < 1\}$, such that $|f(z)|^2 = 4 - |z|^2$ for all $z$ in $D$.
 >
-> **False.** Suppose $f = u + iv$ were such a function. By Theorem §27.1 (and [[§57 Some Consequences of the Extension|§57]], Corollary) $u$ and $v$ have continuous second partials and are harmonic. For any such function, $(u^2)_{xx} = 2u_x^2 + 2uu_{xx}$, so
+> **False.** Suppose $f = u + iv$ were such a function. By Theorem §27.1 (and [[§57 Some Consequences of the Extension#^cor-57-2|Corollary §57.2]]) $u$ and $v$ have continuous second partials and are harmonic. For any such function, $(u^2)_{xx} = 2u_x^2 + 2uu_{xx}$, so
 >
 > $$
 > \Delta(u^2) = 2(u_x^2 + u_y^2) + 2u\,\Delta u = 2(u_x^2 + u_y^2), \qquad \Delta(v^2) = 2(v_x^2 + v_y^2) ,
@@ -204,7 +204,7 @@ Harmonic functions play an important role in applied mathematics. For example, t
 >
 > But $\Delta(4 - x^2 - y^2) = -2 - 2 = -4 < 0$. So no such $f$ exists.
 >
-> (Alternatively: $|f(0)| = 2$ while $|f(z)| < 2$ for $z \ne 0$, so $|f|$ has a maximum at an interior point; by the maximum modulus principle, [[§59 Maximum Modulus Principle|§59]], $f$ would be constant, and then $|f|^2$ could not equal the nonconstant $4 - |z|^2$.)
+> (Alternatively: $|f(0)| = 2$ while $|f(z)| < 2$ for $z \ne 0$, so $|f|$ has a maximum at an interior point; by the maximum modulus principle, [[§59 Maximum Modulus Principle#^thm-59-3|Theorem §59.3]], $f$ would be constant, and then $|f|^2$ could not equal the nonconstant $4 - |z|^2$.)
 >
 > *Source: 342 practice final (Fall 1999), Q7b*
 

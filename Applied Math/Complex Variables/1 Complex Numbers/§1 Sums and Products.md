@@ -178,7 +178,7 @@ The sum is the familiar addition of vectors in $\mathbb{R}^2$. The product is ne
 > iz = (0, 1)(x, y) = (0 \cdot x - 1 \cdot y,\ 1 \cdot x + 0 \cdot y) = (-y, x) .
 > $$
 >
-> So $\operatorname{Re}(iz) = -y = -\operatorname{Im} z$ and $\operatorname{Im}(iz) = x = \operatorname{Re} z$. Geometrically, $(x, y) \mapsto (-y, x)$ is the rotation of the plane through $90°$ counterclockwise; [[§8 Products and Powers in Exponential Form|§8]] explains why multiplication by $i$ must be this rotation.
+> So $\operatorname{Re}(iz) = -y = -\operatorname{Im} z$ and $\operatorname{Im}(iz) = x = \operatorname{Re} z$. Geometrically, $(x, y) \mapsto (-y, x)$ is the rotation of the plane through $90°$ counterclockwise; [[§8 Products and Powers in Exponential Form#^thm-8-1|Theorem §8.1]] explains why multiplication by $i$ must be this rotation.
 >
 > *B&C: Sec. 2, Exercise 2*
 

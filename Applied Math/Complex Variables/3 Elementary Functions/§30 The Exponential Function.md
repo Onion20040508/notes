@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 30.*
 
-Chapter 3 defines analytic functions of $z$ that reduce to the elementary functions of calculus when $z = x + i0$, and every one of them is built from the exponential. This section defines $e^z = e^xe^{iy}$ by Euler's formula and checks which properties of $e^x$ survive: the law of exponents, $e^z \ne 0$, and $\frac{d}{dz}e^z = e^z$, so $e^z$ is entire. Two properties are new and drive the rest of the chapter: $e^z$ is periodic with period $2\pi i$, and it takes every nonzero complex value, infinitely often. Solving $e^w = z$ is what defines the logarithm in [[§31 The Logarithmic Function|§31]].
+Chapter 3 defines analytic functions of $z$ that reduce to the elementary functions of calculus when $z = x + i0$, and every one of them is built from the exponential. This section defines $e^z = e^xe^{iy}$ by Euler's formula and checks which properties of $e^x$ survive: the law of exponents, $e^z \ne 0$, and $\frac{d}{dz}e^z = e^z$, so $e^z$ is entire. Two properties are new and drive the rest of the chapter: $e^z$ is periodic with period $2\pi i$, and it takes every nonzero complex value, infinitely often. Solving $e^w = z$ is what defines the logarithm, [[§31 The Logarithmic Function#^def-31-1|Definition §31.1]].
 
 ## Definition and First Properties
 
@@ -22,7 +22,7 @@ Chapter 3 defines analytic functions of $z$ that reduce to the elementary functi
 > e^z = e^xe^{iy} \qquad (z = x + iy), \qquad (1)
 > $$
 >
-> where $e^{iy}$ is given by Euler's formula ([[§7 Exponential Form|§7]])
+> where $e^{iy}$ is given by Euler's formula ([[§7 Exponential Form#^def-7-2|Definition §7.2]])
 >
 > $$
 > e^{iy} = \cos y + i\sin y , \qquad (2)
@@ -36,9 +36,9 @@ Chapter 3 defines analytic functions of $z$ that reduce to the elementary functi
 
 > [!remark]- Connections
 > - [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] defines $e^{(\lambda + i\mu)t} = e^{\lambda t}(\cos\mu t + i\sin\mu t)$ in exactly the same way, motivated by substituting $it$ into the series $e^t = \sum t^n/n!$ ([[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]]) and splitting off the series of $\cos t$ and $\sin t$ ([[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]]); the same computation from the complex-numbers side is [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]].
-> - Here the series is a theorem, not a motivation: $e^z = \sum_{n=0}^{\infty} z^n/n!$ for every $z$ is the Maclaurin series of the entire function $e^z$, [[§64 Examples (Proof of Taylor's Theorem)|§64]] (Example 1).
+> - Here the series is a theorem, not a motivation: $e^z = \sum_{n=0}^{\infty} z^n/n!$ for every $z$ is the Maclaurin series of the entire function $e^z$, [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]].
 
-Since the *positive* $n$th root $\sqrt[n]{e}$ is assigned to $e^x$ when $x = 1/n$ $(n = 2, 3, \ldots)$, definition (1) says that $e^{1/n} = \sqrt[n]{e}$. This is an exception to the convention of [[§10 Roots of Complex Numbers|§10]], which would read $e^{1/n}$ as the *set* of $n$th roots of $e$: the symbol $e^z$ always means the single number (1). (The power $c^z$ of [[§35 The Power Function#^def-35-3|Definition §35.3]] is in general multiple-valued, and $e^z$ is the value given by the principal logarithm of $e$.)
+Since the *positive* $n$th root $\sqrt[n]{e}$ is assigned to $e^x$ when $x = 1/n$ $(n = 2, 3, \ldots)$, definition (1) says that $e^{1/n} = \sqrt[n]{e}$. This is an exception to the convention of [[§10 Roots of Complex Numbers#^def-10-1|Definition §10.1]], which would read $e^{1/n}$ as the *set* of $n$th roots of $e$: the symbol $e^z$ always means the single number (1). (The power $c^z$ of [[§35 The Power Function#^def-35-3|Definition §35.3]] is in general multiple-valued, and $e^z$ is the value given by the principal logarithm of $e$.)
 
 Writing (1) as $e^z = \rho e^{i\phi}$ with $\rho = e^x$ and $\phi = y$ displays the modulus and an argument of $e^z$ at once.
 
@@ -60,11 +60,11 @@ Writing (1) as $e^z = \rho e^{i\phi}$ with $\rho = e^x$ and $\phi = y$ displays 
 ^prop-30-1
 
 > [!proof]+ Proof
-> By (1), $e^z = e^x e^{iy}$ is the exponential form $\rho e^{i\phi}$ of a complex number with $\rho = e^x > 0$ and $\phi = y$. The modulus of $\rho e^{i\phi}$ is $\rho$ and its arguments are $\phi + 2n\pi$ ([[§7 Exponential Form|§7]]), which is (3). Since $e^x$ is never zero, $|e^z| = e^x > 0$, which is (4).
+> By (1), $e^z = e^x e^{iy}$ is the exponential form $\rho e^{i\phi}$ of a complex number with $\rho = e^x > 0$ and $\phi = y$. The modulus of $\rho e^{i\phi}$ is $\rho$ and its arguments are $\phi + 2n\pi$ ([[§7 Exponential Form#^def-7-2|Definition §7.2]]), which is (3). Since $e^x$ is never zero, $|e^z| = e^x > 0$, which is (4).
 
 ^pf-30-1
 
-*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§7 Exponential Form|§7]] (exponential form)
+*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§7 Exponential Form#^def-7-2|Def. §7.2]]
 
 > [!theorem] Theorem §30.2: The Law of Exponents
 > For all complex numbers $z_1$, $z_2$,
@@ -92,7 +92,7 @@ Writing (1) as $e^z = \rho e^{i\phi}$ with $\rho = e^x$ and $\phi = y$ displays 
 > e^{z_1}e^{z_2} = (e^{x_1}e^{iy_1})(e^{x_2}e^{iy_2}) = (e^{x_1}e^{x_2})(e^{iy_1}e^{iy_2}) .
 > $$
 >
-> Here $x_1$, $x_2$ are real, so $e^{x_1}e^{x_2} = e^{x_1 + x_2}$ by the law of exponents of calculus, and $e^{iy_1}e^{iy_2} = e^{i(y_1 + y_2)}$ by [[§8 Products and Powers in Exponential Form|§8]]. Hence
+> Here $x_1$, $x_2$ are real, so $e^{x_1}e^{x_2} = e^{x_1 + x_2}$ by the law of exponents of calculus, and $e^{iy_1}e^{iy_2} = e^{i(y_1 + y_2)}$ by [[§8 Products and Powers in Exponential Form#^thm-8-1|Theorem §8.1]]. Hence
 >
 > $$
 > e^{z_1}e^{z_2} = e^{x_1 + x_2}e^{i(y_1 + y_2)} ,
@@ -104,7 +104,7 @@ Writing (1) as $e^z = \rho e^{i\phi}$ with $\rho = e^x$ and $\phi = y$ displays 
 
 ^pf-30-2
 
-*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§30 The Exponential Function#^prop-30-1|§30.1]], [[§8 Products and Powers in Exponential Form|§8]] ($e^{i\theta_1}e^{i\theta_2} = e^{i(\theta_1 + \theta_2)}$), [[§121 The Logarithm Defined as an Integral#^thm-121-6|Calc Thm. §121.6]] (laws of exponents for real $e^x$)
+*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§30 The Exponential Function#^prop-30-1|§30.1]], [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§121 The Logarithm Defined as an Integral#^thm-121-6|Calc Thm. §121.6]] (laws of exponents for real $e^x$)
 
 > [!theorem] Theorem §30.3: e^z Is Entire
 > The function $e^z$ is differentiable at every point of the $z$ plane, with
@@ -113,7 +113,7 @@ Writing (1) as $e^z = \rho e^{i\phi}$ with $\rho = e^x$ and $\phi = y$ displays 
 > \frac{d}{dz}e^z = e^z . \qquad (7)
 > $$
 >
-> So $e^z$ is entire ([[§25 Analytic Functions|§25]]).
+> So $e^z$ is entire ([[§25 Analytic Functions#^def-25-2|Definition §25.2]]).
 >
 > *B&C: Sec. 30, Equation (7) (proved in Sec. 23, Example 1)*
 
@@ -132,7 +132,7 @@ Writing (1) as $e^z = \rho e^{i\phi}$ with $\rho = e^x$ and $\phi = y$ displays 
 > u_x = e^x\cos y, \quad u_y = -e^x\sin y, \qquad v_x = e^x\sin y, \quad v_y = e^x\cos y
 > $$
 >
-> exist and are continuous everywhere, and they satisfy the Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$ everywhere. By the sufficient conditions of [[§23 Sufficient Conditions for Differentiability|§23]] (Theorem), $e^z$ is differentiable at every point $z$, and
+> exist and are continuous everywhere, and they satisfy the Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$ everywhere. By the sufficient conditions, [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]], $e^z$ is differentiable at every point $z$, and
 >
 > $$
 > \frac{d}{dz}e^z = u_x + iv_x = e^x\cos y + ie^x\sin y = e^z .
@@ -142,7 +142,7 @@ Writing (1) as $e^z = \rho e^{i\phi}$ with $\rho = e^x$ and $\phi = y$ displays 
 
 ^pf-30-3
 
-*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§23 Sufficient Conditions for Differentiability|§23]] (Theorem), [[§25 Analytic Functions|§25]] (entire functions)
+*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]], [[§25 Analytic Functions#^def-25-2|Def. §25.2]]
 
 ## Properties That e^x Does Not Have
 
@@ -171,7 +171,7 @@ Periodicity means that $e^z$ is completely described by its values on one horizo
 ![[m342-30-1.svg]]
 *The map $w = e^z$ on the strip $-\pi < y \le \pi$. Vertical segments $x = -1, -\frac12, 0, \frac12, 1$ (blue) go to circles of radius $e^x$; horizontal lines $y = k\pi/4$ (red) go to rays at angle $y$ (the lines $y = \pm\frac\pi2$ go to the imaginary axis, $y = 0$ to the positive real axis, and $y = \pi$ to the negative real axis). The strip is carried one to one onto the punctured plane $w \ne 0$, and each further strip of height $2\pi$ covers it again.*
 
-The figure already shows that $e^z$ takes every nonzero value $w$: once in each strip. This is proved in [[§31 The Logarithmic Function#^thm-31-1|Theorem §31.1]]. In practice an equation $e^z = w_0$ is solved by comparing exponential forms, using the statement of [[§10 Roots of Complex Numbers|§10]]: *two nonzero complex numbers $r_1e^{i\theta_1}$ and $r_2e^{i\theta_2}$ are equal if and only if $r_1 = r_2$ and $\theta_1 = \theta_2 + 2k\pi$ for some integer $k$.*
+The figure already shows that $e^z$ takes every nonzero value $w$: once in each strip. This is proved in [[§31 The Logarithmic Function#^thm-31-1|Theorem §31.1]]. In practice an equation $e^z = w_0$ is solved by comparing exponential forms, using [[§10 Roots of Complex Numbers#^prop-10-1|Proposition §10.1]]: *two nonzero complex numbers $r_1e^{i\theta_1}$ and $r_2e^{i\theta_2}$ are equal if and only if $r_1 = r_2$ and $\theta_1 = \theta_2 + 2k\pi$ for some integer $k$.*
 
 > [!remark] Remark: Method — Solving e^g(z) = w₀
 > To find all $z$ with $e^{g(z)} = w_0$, where $w_0 \ne 0$ (for $w_0 = 0$ there are none, by (4)):
@@ -180,7 +180,7 @@ The figure already shows that $e^z$ takes every nonzero value $w$: once in each 
 > 3. Equate moduli and arguments: $e^X = \rho$ and $Y = \phi + 2n\pi$, that is, $X = \ln\rho$ and $Y = \phi + 2n\pi$ $(n = 0, \pm1, \pm2, \ldots)$.
 > 4. Solve $g(z) = \ln\rho + i(\phi + 2n\pi)$ for $z$. There are infinitely many solutions, one for each $n$; when $g(z) = z$ they are spaced $2\pi$ apart on a vertical line.
 >
-> In the language of [[§31 The Logarithmic Function|§31]]: step 3 says $g(z) = \log w_0$.
+> In the language of [[§31 The Logarithmic Function#^def-31-1|Definition §31.1]]: step 3 says $g(z) = \log w_0$.
 
 ^rem-30-1
 
@@ -199,7 +199,7 @@ The figure already shows that $e^z$ takes every nonzero value $w$: once in each 
 > e^xe^{iy} = 2e^{i\pi/3} .
 > $$
 >
-> By the statement of [[§10 Roots of Complex Numbers|§10]] about equal exponential forms,
+> By [[§10 Roots of Complex Numbers#^prop-10-1|Proposition §10.1]] on equal exponential forms,
 >
 > $$
 > e^x = 2 \qquad\text{and}\qquad y = \frac\pi3 + 2n\pi \quad (n = 0, \pm1, \pm2, \ldots) .
@@ -250,21 +250,15 @@ The figure already shows that $e^z$ takes every nonzero value $w$: once in each 
 ^ex-30-3
 
 > [!example] Example §30.4: exp z̄ Is Nowhere Analytic, exp(z²) Is Entire
-> **(a)** Let $f(z) = \exp\bar z = e^{x - iy} = e^x\cos y - ie^x\sin y$. Then $u = e^x\cos y$, $v = -e^x\sin y$, and
+> **(a)** Let $f(z) = \exp\bar z = e^{x - iy} = e^x\cos y - ie^x\sin y$. Its Cauchy–Riemann equations require $2e^x\cos y = 0$ and $2e^x\sin y = 0$, which never hold together; the computation is [[§22 Examples (Cauchy–Riemann Equations)#^ex-22-4|Example §22.4]](a). By [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]], $f'(z)$ exists at no point, so $f$ is analytic nowhere.
 >
-> $$
-> u_x = e^x\cos y, \qquad v_y = -e^x\cos y; \qquad u_y = -e^x\sin y, \qquad -v_x = e^x\sin y .
-> $$
->
-> The Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$ require $2e^x\cos y = 0$ and $2e^x\sin y = 0$, that is, $\cos y = \sin y = 0$, which never happens. By the theorem of [[§21 Cauchy–Riemann Equations|§21]], $f'(z)$ exists at no point, so $f$ is analytic nowhere.
->
-> **(b)** $f(z) = \exp(z^2)$ is entire, for two reasons. *Composition:* $z^2$ and $e^z$ are entire (Theorem §30.3), so their composition is entire by the chain rule ([[§20 Rules for Differentiation|§20]]), with $f'(z) = e^{z^2}\cdot 2z = 2z\exp(z^2)$. *Cauchy–Riemann:* $z^2 = (x^2 - y^2) + i2xy$, so $u = e^{x^2 - y^2}\cos 2xy$, $v = e^{x^2 - y^2}\sin 2xy$, and
+> **(b)** $f(z) = \exp(z^2)$ is entire, for two reasons. *Composition:* $z^2$ and $e^z$ are entire (Theorem §30.3), so their composition is entire by the chain rule ([[§20 Rules for Differentiation#^thm-20-4|Theorem §20.4]]), with $f'(z) = e^{z^2}\cdot 2z = 2z\exp(z^2)$. *Cauchy–Riemann:* $z^2 = (x^2 - y^2) + i2xy$, so $u = e^{x^2 - y^2}\cos 2xy$, $v = e^{x^2 - y^2}\sin 2xy$, and
 >
 > $$
 > u_x = e^{x^2 - y^2}(2x\cos 2xy - 2y\sin 2xy) = v_y, \qquad u_y = e^{x^2 - y^2}(-2y\cos 2xy - 2x\sin 2xy) = -v_x ,
 > $$
 >
-> with all four partial derivatives continuous everywhere; by [[§23 Sufficient Conditions for Differentiability|§23]] $f$ is differentiable everywhere, and $f'(z) = u_x + iv_x = e^{x^2 - y^2}\big[(2x\cos 2xy - 2y\sin 2xy) + i(2y\cos 2xy + 2x\sin 2xy)\big] = 2z\exp(z^2)$.
+> with all four partial derivatives continuous everywhere; by [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]] $f$ is differentiable everywhere, and $f'(z) = u_x + iv_x = e^{x^2 - y^2}\big[(2x\cos 2xy - 2y\sin 2xy) + i(2y\cos 2xy + 2x\sin 2xy)\big] = 2z\exp(z^2)$.
 >
 > *B&C: Sec. 30, Exercises 3 and 4*
 

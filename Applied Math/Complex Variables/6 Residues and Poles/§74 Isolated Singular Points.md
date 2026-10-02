@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 74.*
 
-The Cauchy–Goursat theorem ([[§50 Cauchy–Goursat Theorem|§50]]) says that the integral of a function analytic inside and on a simple closed contour $C$ is zero. This chapter treats the case where the function fails to be analytic at finitely many points inside $C$: each such point contributes a specific number, its residue, to the integral. The theory needs singular points that have a whole punctured disk of analyticity around them, so that a Laurent series is available there; this section defines these **isolated** singular points and shows, with the logarithm and with $1/\sin(\pi/z)$, that not every singular point is isolated.
+The Cauchy–Goursat theorem ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]) says that the integral of a function analytic inside and on a simple closed contour $C$ is zero. This chapter treats the case where the function fails to be analytic at finitely many points inside $C$: each such point contributes a specific number, its residue, to the integral. The theory needs singular points that have a whole punctured disk of analyticity around them, so that a Laurent series is available there; this section defines these **isolated** singular points and shows, with the logarithm and with $1/\sin(\pi/z)$, that not every singular point is isolated.
 
 ## Isolated Singular Points
 
@@ -44,14 +44,14 @@ Recall ([[§25 Analytic Functions#^def-25-1|Definition §25.1]], [[§25 Analytic
 >
 > **Why.** $f$ is a quotient of polynomials, so it is analytic wherever the denominator $z^5(z^2 + 9)$ is nonzero, that is, everywhere except at $0$ and $\pm 3i$ ([[§25 Analytic Functions#^prop-25-1|Proposition §25.1]]). At those three points $f$ is not even defined, and every neighborhood of each of them contains points where $f$ is analytic; so they are singular points. Around $z = 0$ the deleted disk $0 < |z| < 3$ contains no other zero of the denominator, so $f$ is analytic there; around $\pm 3i$ the deleted disks of radius $3$ work in the same way (the distance from $3i$ to $0$ is $3$, to $-3i$ it is $6$).
 >
-> **In general**, the singular points of a rational function are always isolated, because the zeros of the polynomial in the denominator are finite in number ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]], Theorem 2: a polynomial of degree $n \ge 1$ has exactly $n$ zeros counted with multiplicity). Around each zero, take $\varepsilon$ smaller than its distance to the nearest other zero.
+> **In general**, the singular points of a rational function are always isolated, because the zeros of the polynomial in the denominator are finite in number ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^cor-58-4|Corollary §58.4]]: a polynomial of degree $n \ge 1$ has exactly $n$ zeros counted with multiplicity). Around each zero, take $\varepsilon$ smaller than its distance to the nearest other zero.
 >
 > *B&C: Sec. 74, Example 1*
 
 ^ex-74-1
 
 > [!example] Example §74.2: The Origin Is Not an Isolated Singular Point of Log z
-> The origin is a singular point of the principal branch ([[§33 Branches and Derivatives of Logarithms|§33]])
+> The origin is a singular point of the principal branch ([[§33 Branches and Derivatives of Logarithms#^def-33-2|Definition §33.2]])
 >
 > $$
 > F(z) = \operatorname{Log} z = \ln r + i\Theta \qquad (r > 0,\ -\pi < \Theta < \pi)
@@ -76,7 +76,7 @@ Recall ([[§25 Analytic Functions#^def-25-1|Definition §25.1]], [[§25 Analytic
 > f(z) = \frac{1}{\sin(\pi/z)} .
 > $$
 >
-> **The singular points.** $f$ has no derivative at $z = 0$, where it is not defined. Since the zeros of $\sin w$ are $w = n\pi$ ($n = 0, \pm1, \pm2, \ldots$) ([[§38 Zeros and Singularities of Trigonometric Functions|§38]]), $\sin(\pi/z) = 0$ exactly when $\pi/z = n\pi$ with $n \ne 0$, that is, at $z = 1/n$; at these points $f$ is not defined either. At every other point $f$ is a quotient of analytic functions with nonzero denominator, hence analytic; in particular $f$ is analytic at every point off the real axis. So every neighborhood of each of the points
+> **The singular points.** $f$ has no derivative at $z = 0$, where it is not defined. Since the zeros of $\sin w$ are $w = n\pi$ ($n = 0, \pm1, \pm2, \ldots$) ([[§38 Zeros and Singularities of Trigonometric Functions#^thm-38-1|Theorem §38.1]]), $\sin(\pi/z) = 0$ exactly when $\pi/z = n\pi$ with $n \ne 0$, that is, at $z = 1/n$; at these points $f$ is not defined either. At every other point $f$ is a quotient of analytic functions with nonzero denominator, hence analytic; in particular $f$ is analytic at every point off the real axis. So every neighborhood of each of the points
 >
 > $$
 > z = 0 \qquad\text{and}\qquad z = \frac1n \quad (n = \pm1, \pm2, \ldots) \qquad (1)
@@ -138,4 +138,4 @@ It is sometimes convenient to treat the point at infinity ([[§17 Limits Involvi
 
 ^def-74-2
 
-For example, a function that is analytic in the finite plane except at finitely many points has an isolated singular point at $\infty$: take $R_1$ larger than the moduli of all the singular points. This kind of singular point is used to define the residue at infinity in [[§77★ Residue at Infinity|§77★]].
+For example, a function that is analytic in the finite plane except at finitely many points has an isolated singular point at $\infty$: take $R_1$ larger than the moduli of all the singular points. This kind of singular point is used to define the residue at infinity ([[§77★ Residue at Infinity#^def-77-1|Definition §77.1]]).

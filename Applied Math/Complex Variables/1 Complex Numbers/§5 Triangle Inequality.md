@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 5 · MAT 342 HW 1.*
 
-The triangle inequality $|z_1 + z_2| \le |z_1| + |z_2|$ is the basic tool for estimating complex quantities: it bounds the modulus of a sum by the sum of the moduli. Together with its reverse form $|z_1 + z_2| \ge \big||z_1| - |z_2|\big|$ and the rule $|z_1z_2| = |z_1||z_2|$, it gives upper and lower bounds for polynomials and quotients on circles and disks. Such estimates run through the whole subject: the ML-inequality for contour integrals ([[§47 Upper Bounds for Moduli of Contour Integrals|§47]]), Liouville's theorem and the fundamental theorem of algebra ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]]), which uses Example §5.3 below, and every estimate that makes an integral over a large arc tend to zero.
+The triangle inequality $|z_1 + z_2| \le |z_1| + |z_2|$ is the basic tool for estimating complex quantities: it bounds the modulus of a sum by the sum of the moduli. Together with its reverse form $|z_1 + z_2| \ge \big||z_1| - |z_2|\big|$ and the rule $|z_1z_2| = |z_1||z_2|$, it gives upper and lower bounds for polynomials and quotients on circles and disks. Such estimates run through the whole subject: the ML-inequality for contour integrals ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]), Liouville's theorem and the fundamental theorem of algebra ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Theorems §58.1]] and [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|§58.2]]), which uses Example §5.3 below, and every estimate that makes an integral over a large arc tend to zero.
 
 ## The Triangle Inequality
 
@@ -191,7 +191,7 @@ The examples use one more pair of identities, which B&C leave to the exercises h
 >
 > and that for $R$ sufficiently large, $|P(z)| < 2|a_n||z|^n$ whenever $|z| > R$.
 >
-> So the modulus of $1/P(z)$ is bounded from above outside a large circle; this is the property of polynomials used in [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra|§58]] to prove the fundamental theorem of algebra.
+> So the modulus of $1/P(z)$ is bounded from above outside a large circle; this is the property of polynomials used in [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|Theorem §58.2]] to prove the fundamental theorem of algebra.
 >
 > **Factor out $z^n$.** For $z \ne 0$ put
 >

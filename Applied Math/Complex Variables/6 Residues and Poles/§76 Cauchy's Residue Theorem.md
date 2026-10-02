@@ -58,9 +58,9 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 
 > [!remark] Remark: Method — Evaluating a Contour Integral by Residues
 > 1. **Draw the contour** and find all singular points of $f$; decide which lie inside $C$. Singular points outside $C$ play no role.
-> 2. **Compute the residue** at each singular point inside $C$: from a Laurent series ([[§75 Residues#^rem-75-1|Remark: Method — Computing a Residue from a Laurent Series]]), or, at a pole, by the formulas of [[§80 Residues at Poles|§80]] and [[§83 Zeros and Poles|§83]].
+> 2. **Compute the residue** at each singular point inside $C$: from a Laurent series ([[§75 Residues#^rem-75-1|Remark: Method — Computing a Residue from a Laurent Series]]), or, at a pole, by the formulas of [[§80 Residues at Poles#^thm-80-1|Theorem §80.1]] and [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]].
 > 3. **Add and multiply by $2\pi i$**, checking that $C$ is positively oriented (for a clockwise contour the sign changes).
-> 4. **Alternatives.** If $f = g(z)/(z - z_0)^{m}$ with $g$ analytic inside and on $C$ and $z_0$ the only singular point, the (extended) Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]], [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]]) gives the same value; it is the residue theorem for a pole. If *all* the singular points of $f$ lie inside $C$ and there are many of them, the single residue of [[§77★ Residue at Infinity|§77★]] may be quicker.
+> 4. **Alternatives.** If $f = g(z)/(z - z_0)^{m}$ with $g$ analytic inside and on $C$ and $z_0$ the only singular point, the (extended) Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]], [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]]) gives the same value; it is the residue theorem for a pole. If *all* the singular points of $f$ lie inside $C$ and there are many of them, the single residue of [[§77★ Residue at Infinity#^thm-77-2|Theorem §77.2]] may be quicker.
 
 ^rem-76-1
 
@@ -132,7 +132,7 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 > \frac{e^{-z^2}}{(z - 1)^2} = \frac{g(1)}{(z - 1)^2} + \frac{g'(1)}{z - 1} + \frac{g''(1)}{2!} + \cdots \qquad (0 < |z - 1| < \infty) ,
 > $$
 >
-> with $g(1) = e^{-1} \ne 0$: the principal part has exactly two terms, so $z = 1$ is a **pole of order 2** ([[§78 The Three Types of Isolated Singular Points|§78]]). The residue is
+> with $g(1) = e^{-1} \ne 0$: the principal part has exactly two terms, so $z = 1$ is a **pole of order 2** ([[§78 The Three Types of Isolated Singular Points#^def-78-4|Definition §78.4]]). The residue is
 >
 > $$
 > \operatorname{Res}_{z=1}\frac{e^{-z^2}}{(z - 1)^2} = g'(1) = \big[-2ze^{-z^2}\big]_{z=1} = -\frac{2}{e} ,
@@ -152,7 +152,7 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 > z^3e^{1/z} = z^3\sum_{n=0}^{\infty}\frac{1}{n!\,z^n} = \sum_{n=0}^{\infty}\frac{z^{3-n}}{n!} = z^3 + z^2 + \frac{z}{2!} + \frac{1}{3!} + \frac{1}{4!\,z} + \frac{1}{5!\,z^2} + \cdots \qquad (0 < |z| < \infty) .
 > $$
 >
-> Infinitely many negative powers occur, so $z = 0$ is an **essential singular point** ([[§78 The Three Types of Isolated Singular Points|§78]]). The term $z^{-1}$ has $3 - n = -1$, $n = 4$, so
+> Infinitely many negative powers occur, so $z = 0$ is an **essential singular point** ([[§78 The Three Types of Isolated Singular Points#^def-78-3|Definition §78.3]]). The term $z^{-1}$ has $3 - n = -1$, $n = 4$, so
 >
 > $$
 > \operatorname{Res}_{z=0} z^3e^{1/z} = \frac{1}{4!} = \frac{1}{24}, \qquad \int_C z^3e^{1/z}\,dz = 2\pi i\cdot\frac{1}{24} = \frac{\pi i}{12} .
@@ -164,39 +164,16 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 
 ^ex-76-2
 
-> [!example] Example §76.3: A Simple and a Double Pole
-> Evaluate $\displaystyle\int_C \frac{e^z}{z^3 - 2z^2}\,dz$, where $C$ is the circle $|z| = 3$ traversed counterclockwise.
->
-> **Singular points.** $z^3 - 2z^2 = z^2(z - 2)$, so the singular points are $z = 0$ and $z = 2$, both inside $C$.
->
-> **At $z = 2$.** Near $2$, $f(z) = \dfrac{e^z/z^2}{z - 2}$ with $e^z/z^2$ analytic at $2$; its Taylor series about $2$ starts with the value $e^2/4$, so the coefficient of $1/(z - 2)$ is $\operatorname{Res}_{z=2} f = \dfrac{e^2}{4}$.
->
-> **At $z = 0$.** Near $0$, $f(z) = \dfrac{h(z)}{z^2}$ with $h(z) = \dfrac{e^z}{z - 2}$ analytic at $0$. If $h(z) = h(0) + h'(0)z + \cdots$, the coefficient of $1/z$ is $h'(0)$:
->
-> $$
-> h'(z) = \frac{e^z(z - 2) - e^z}{(z - 2)^2} = \frac{e^z(z - 3)}{(z - 2)^2}, \qquad \operatorname{Res}_{z=0} f = h'(0) = \frac{-3}{4} .
-> $$
->
-> **The integral.**
->
-> $$
-> \int_C \frac{e^z}{z^3 - 2z^2}\,dz = 2\pi i\Big(\frac{e^2}{4} - \frac34\Big) = \frac{\pi i\,(e^2 - 3)}{2} .
-> $$
->
-> (These are the residue formulas of [[§80 Residues at Poles|§80]] with $m = 1$ and $m = 2$; here they are read off from Taylor series directly.)
->
-> *Source: 342 practice final (Fall 2009), Q4a*
+A simple and a double pole together occur in a final-exam integral, $\int_C \frac{e^z}{z^3 - 2z^2}\,dz$ over the counterclockwise circle $|z| = 3$, which is worked with the Cauchy integral formula in [[§55 An Extension of the Cauchy Integral Formula#^ex-55-5|Example §55.5]](b). In the language of residues the two pieces there are $\operatorname{Res}_{z=2} = \phi(2) = \frac{e^2}{4}$ with $\phi(z) = e^z/z^2$, and $\operatorname{Res}_{z=0} = h'(0) = -\frac34$ with $h(z) = e^z/(z - 2)$ (the residue formulas of [[§80 Residues at Poles#^thm-80-1|Theorem §80.1]] with $m = 1$ and $m = 2$), so the integral is $2\pi i\big(\frac{e^2}{4} - \frac34\big) = \frac{\pi i}{2}(e^2 - 3)$.
 
-^ex-76-3
-
-> [!example] Example §76.4: Exponential Denominators
+> [!example] Example §76.3: Exponential Denominators
 > Evaluate, with all circles traversed counterclockwise,
 >
 > $$
 > \text{(a)}\ \int_{|z| = 1}\frac{\sin z + 1}{e^{3z} - e^z}\,dz; \qquad \text{(b)}\ \int_{|z| = 1}\frac{\cos z + 1}{e^{2z} - e^z}\,dz; \qquad \text{(c)}\ \int_{|z| = 2}\frac{\cos z}{e^{iz} - 1}\,dz .
 > $$
 >
-> **Where the denominators vanish.** $e^w = 1$ exactly when $w = 2k\pi i$, $k \in \mathbb{Z}$ ([[§30 The Exponential Function|§30]]). (a) $e^{3z} - e^z = e^z(e^{2z} - 1)$ vanishes when $2z = 2k\pi i$, $z = k\pi i$; inside $|z| = 1$ only $z = 0$. (b) $e^{2z} - e^z = e^z(e^z - 1)$ vanishes at $z = 2k\pi i$; inside $|z| = 1$ only $z = 0$. (c) $e^{iz} = 1$ when $iz = 2k\pi i$, $z = 2k\pi$; inside $|z| = 2$ only $z = 0$. In each case the numerator is entire, so the only singular point inside the contour is $z = 0$.
+> **Where the denominators vanish.** $e^w = 1$ exactly when $w = 2k\pi i$, $k \in \mathbb{Z}$ ([[§31 The Logarithmic Function#^thm-31-1|Theorem §31.1]]). (a) $e^{3z} - e^z = e^z(e^{2z} - 1)$ vanishes when $2z = 2k\pi i$, $z = k\pi i$; inside $|z| = 1$ only $z = 0$. (b) $e^{2z} - e^z = e^z(e^z - 1)$ vanishes at $z = 2k\pi i$; inside $|z| = 1$ only $z = 0$. (c) $e^{iz} = 1$ when $iz = 2k\pi i$, $z = 2k\pi$; inside $|z| = 2$ only $z = 0$. In each case the numerator is entire, so the only singular point inside the contour is $z = 0$.
 >
 > **The residue at $0$.** Each integrand has the form $p(z)/q(z)$ with $p, q$ entire, $q(0) = 0$ and $q'(0) \ne 0$. Write $q(z) = q'(0)z + \frac{q''(0)}{2}z^2 + \cdots = z\,g(z)$ with $g$ entire and $g(0) = q'(0) \ne 0$; then $p/q = (p/g)/z$ with $p/g$ analytic at $0$, so the coefficient of $1/z$ is $p(0)/g(0) = p(0)/q'(0)$. (This is [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]].)
 > - (a) $p(0) = \sin 0 + 1 = 1$, $q'(z) = 3e^{3z} - e^z$, $q'(0) = 2$: residue $\frac12$, integral $2\pi i\cdot\frac12 = \pi i$.
@@ -205,4 +182,4 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 >
 > *Source: 342 practice final (Fall 2002), Q3; 342 practice final (Fall 2009), Q4b; 342 sample final (Fall 1999), Q2*
 
-^ex-76-4
+^ex-76-3

@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 9.*
 
-The product formula of [[§8 Products and Powers in Exponential Form|§8]] says that arguments add under multiplication: $\arg(z_1z_2) = \arg z_1 + \arg z_2$. Since $\arg$ is multiple-valued, this is an identity between sets of numbers, not between single values, and it must be read with care: choose values of any two of the three arguments, and some value of the third makes the equation true. The principal argument does not behave as well. $\operatorname{Arg}(z_1z_2)$ can differ from $\operatorname{Arg} z_1 + \operatorname{Arg} z_2$ by $\pm 2\pi$, because the sum can leave the interval $(-\pi, \pi]$. The same bookkeeping reappears for logarithms ([[§34 Some Identities Involving Logarithms|§34]]), where $\log(z_1z_2) = \log z_1 + \log z_2$ holds in the same set sense and fails for $\operatorname{Log}$.
+The product formula of [[§8 Products and Powers in Exponential Form|§8]] says that arguments add under multiplication: $\arg(z_1z_2) = \arg z_1 + \arg z_2$. Since $\arg$ is multiple-valued, this is an identity between sets of numbers, not between single values, and it must be read with care: choose values of any two of the three arguments, and some value of the third makes the equation true. The principal argument does not behave as well. $\operatorname{Arg}(z_1z_2)$ can differ from $\operatorname{Arg} z_1 + \operatorname{Arg} z_2$ by $\pm 2\pi$, because the sum can leave the interval $(-\pi, \pi]$. The same bookkeeping reappears for logarithms ([[§34 Some Identities Involving Logarithms#^thm-34-1|Theorem §34.1]]), where $\log(z_1z_2) = \log z_1 + \log z_2$ holds in the same set sense and fails for $\operatorname{Log}$.
 
 ## Arguments of Products
 

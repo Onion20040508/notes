@@ -163,7 +163,7 @@ By the commutative law for multiplication, $iy = yi$, so one may write $z = x + 
 
 *Uses:* [[§1 Sums and Products#^def-1-3|Def. §1.3]], [[§1 Sums and Products#^rem-1-1|§1 Remark]] ($z \cdot 0 = 0$)
 
-In conjugate form the inverse is $z^{-1} = \bar z/|z|^2$ ([[§6 Complex Conjugates|§6]]); compare [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]].
+In conjugate form the inverse is $z^{-1} = \bar z/|z|^2$ ([[§6 Complex Conjugates#^prop-6-3|Proposition §6.3]]); compare [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]].
 
 ## Examples
 

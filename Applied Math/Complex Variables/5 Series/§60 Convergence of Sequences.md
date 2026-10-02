@@ -54,7 +54,7 @@ Geometrically, (1) says that for large $n$ the points $z_n$ lie in any prescribe
 
 ^pf-60-1
 
-*Uses:* [[§60 Convergence of Sequences#^def-60-1|Def. §60.1]], [[§5 Triangle Inequality|§5]] (triangle inequality)
+*Uses:* [[§60 Convergence of Sequences#^def-60-1|Def. §60.1]], [[§5 Triangle Inequality#^thm-5-1|§5.1]] (triangle inequality)
 
 > [!theorem] Theorem §60.2: Convergence by Real and Imaginary Parts
 > Suppose that $z_n = x_n + iy_n$ $(n = 1, 2, \ldots)$ and $z = x + iy$. Then
@@ -98,7 +98,7 @@ Geometrically, (1) says that for large $n$ the points $z_n$ lie in any prescribe
 
 ^pf-60-2
 
-*Uses:* [[§60 Convergence of Sequences#^def-60-1|Def. §60.1]], [[§5 Triangle Inequality|§5]] (triangle inequality), [[§4 Vectors and Moduli|§4]] ($|\operatorname{Re} z|, |\operatorname{Im} z| \le |z|$)
+*Uses:* [[§60 Convergence of Sequences#^def-60-1|Def. §60.1]], [[§5 Triangle Inequality#^thm-5-1|§5.1]] (triangle inequality), [[§4 Vectors and Moduli#^prop-4-1|§4.1]] ($|\operatorname{Re} z|, |\operatorname{Im} z| \le |z|$)
 
 > [!remark]- Connections
 > - The real-variable definitions and facts that this theorem imports: [[§7 Limits of Sequences#^def-7-2|451 Def. §7.2]] (convergence), [[§7 Limits of Sequences#^thm-7-1|451 Thm. §7.1]] (uniqueness).
@@ -120,11 +120,11 @@ whenever both limits on the right exist or the one on the left exists. Two furth
 ^prop-60-3
 
 > [!proof]+ Proof
-> By the reverse triangle inequality ([[§5 Triangle Inequality|§5]]), $\big||z_n| - |z|\big| \le |z_n - z|$. Given $\varepsilon > 0$, choose $n_0$ with $|z_n - z| < \varepsilon$ for $n > n_0$; then $\big||z_n| - |z|\big| < \varepsilon$ for $n > n_0$, which is the statement for the real sequence $|z_n|$.
+> By the reverse triangle inequality ([[§5 Triangle Inequality#^cor-5-2|Corollary §5.2]]), $\big||z_n| - |z|\big| \le |z_n - z|$. Given $\varepsilon > 0$, choose $n_0$ with $|z_n - z| < \varepsilon$ for $n > n_0$; then $\big||z_n| - |z|\big| < \varepsilon$ for $n > n_0$, which is the statement for the real sequence $|z_n|$.
 
 ^pf-60-3
 
-*Uses:* [[§60 Convergence of Sequences#^def-60-1|Def. §60.1]], [[§5 Triangle Inequality|§5]]
+*Uses:* [[§60 Convergence of Sequences#^def-60-1|Def. §60.1]], [[§5 Triangle Inequality#^cor-5-2|§5.2]]
 
 The converse fails: $z_n = (-1)^n$ has $|z_n| = 1$ for all $n$ but does not converge.
 
@@ -148,7 +148,7 @@ The converse fails: $z_n = (-1)^n$ has $|z_n| = 1$ for all $n$ but does not conv
 
 ^pf-60-4
 
-*Uses:* [[§60 Convergence of Sequences#^def-60-1|Def. §60.1]], [[§60 Convergence of Sequences#^thm-60-2|§60.2]], [[§5 Triangle Inequality|§5]], [[§9 Limit Theorems for Sequences#^thm-9-1|451 Thm. §9.1]]
+*Uses:* [[§60 Convergence of Sequences#^def-60-1|Def. §60.1]], [[§60 Convergence of Sequences#^thm-60-2|§60.2]], [[§5 Triangle Inequality#^thm-5-1|§5.1]], [[§9 Limit Theorems for Sequences#^thm-9-1|451 Thm. §9.1]]
 
 ## Examples
 

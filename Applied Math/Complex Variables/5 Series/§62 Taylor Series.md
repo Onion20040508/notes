@@ -29,7 +29,7 @@ $$
 
 *That is, series (1) converges to $f(z)$ when $z$ lies in the stated open disk.*
 
-The derivatives $f^{(n)}(z_0)$ all exist because an analytic function has derivatives of all orders ([[§57 Some Consequences of the Extension|§57]], Theorem 1).
+The derivatives $f^{(n)}(z_0)$ all exist because an analytic function has derivatives of all orders ([[§57 Some Consequences of the Extension#^thm-57-1|Theorem §57.1]]).
 
 > [!definition] Definition §62.1: Taylor Series; Maclaurin Series
 > Let $f$ be analytic at $z_0$. The **Taylor series** of $f$ about $z_0$ is the power series
@@ -53,7 +53,7 @@ The derivatives $f^{(n)}(z_0)$ all exist because an analytic function has deriva
 
 > [!remark] Remark: Where the Taylor Series Converges to f
 > Taylor's theorem needs no test for convergence; it only asks where $f$ is analytic.
-> 1. **Every function analytic at $z_0$ has a Taylor series about $z_0$ that represents it near $z_0$.** By definition ([[§25 Analytic Functions|§25]]), $f$ is analytic throughout some neighborhood $|z - z_0| < \varepsilon$, and $\varepsilon$ may serve as $R_0$.
+> 1. **Every function analytic at $z_0$ has a Taylor series about $z_0$ that represents it near $z_0$.** By definition ([[§25 Analytic Functions#^def-25-1|Definition §25.1]]), $f$ is analytic throughout some neighborhood $|z - z_0| < \varepsilon$, and $\varepsilon$ may serve as $R_0$.
 > 2. **Entire functions.** If $f$ is entire, $R_0$ can be chosen arbitrarily large, and the condition of validity becomes $|z - z_0| < \infty$: the series converges to $f(z)$ at every point of the finite plane.
 > 3. **The disk reaches the nearest singular point.** If $z_1$ is the point nearest to $z_0$ at which $f$ fails to be analytic, then $f$ is analytic in $|z - z_0| < |z_1 - z_0|$, so the Taylor series converges to $f(z)$ in that disk. By [[§71★ Integration and Differentiation of Power Series#^cor-71-3|Corollary §71.3]] this is the largest circle centered at $z_0$ with that property.
 >
@@ -72,7 +72,7 @@ The examples compute $a_n = f^{(n)}(z_0)/n!$ directly. The more efficient method
 > \sin z = \sum_{n=0}^{\infty}(-1)^n\frac{z^{2n+1}}{(2n + 1)!}, \qquad \cos z = \sum_{n=0}^{\infty}(-1)^n\frac{z^{2n}}{(2n)!} \qquad (|z| < \infty) .
 > $$
 >
-> **Derivatives.** By [[§37 The Trigonometric Functions sin z and cos z|§37]], $\frac{d}{dz}\sin z = \cos z$ and $\frac{d}{dz}\cos z = -\sin z$, so the derivatives of $\sin z$ cycle through $\sin z, \cos z, -\sin z, -\cos z$. By induction on $n$,
+> **Derivatives.** By [[§37 The Trigonometric Functions sin z and cos z#^thm-37-1|Theorem §37.1]], $\frac{d}{dz}\sin z = \cos z$ and $\frac{d}{dz}\cos z = -\sin z$, so the derivatives of $\sin z$ cycle through $\sin z, \cos z, -\sin z, -\cos z$. By induction on $n$,
 >
 > $$
 > \frac{d^{2n}}{dz^{2n}}\sin z = (-1)^n\sin z, \qquad \frac{d^{2n+1}}{dz^{2n+1}}\sin z = (-1)^n\cos z :
@@ -89,7 +89,7 @@ The examples compute $a_n = f^{(n)}(z_0)/n!$ directly. The more efficient method
 > [!example] Example §62.2: The Largest Disk for tanh z
 > **Problem.** What is the largest circle within which the Maclaurin series of $\tanh z$ converges to $\tanh z$? Write the first two nonzero terms of the series.
 >
-> **The disk.** $\tanh z = \sinh z/\cosh z$ is analytic except where $\cosh z = 0$, that is, at $z = \big(\frac\pi2 + n\pi\big)i$ $(n = 0, \pm1, \pm2, \ldots)$ ([[§39★ Hyperbolic Functions|§39]]). The nearest of these to the origin are $\pm\frac\pi2 i$, at distance $\frac\pi2$. So the Maclaurin series converges to $\tanh z$ in $|z| < \pi/2$ (Remark: Where the Taylor Series Converges to f, item 3), and this is the largest such circle, since $\tanh z$ is not even defined at $\pm\frac\pi2 i$.
+> **The disk.** $\tanh z = \sinh z/\cosh z$ is analytic except where $\cosh z = 0$, that is, at $z = \big(\frac\pi2 + n\pi\big)i$ $(n = 0, \pm1, \pm2, \ldots)$ ([[§39★ Hyperbolic Functions#^thm-39-4|Theorem §39.4]]). The nearest of these to the origin are $\pm\frac\pi2 i$, at distance $\frac\pi2$. So the Maclaurin series converges to $\tanh z$ in $|z| < \pi/2$ (Remark: Where the Taylor Series Converges to f, item 3), and this is the largest such circle, since $\tanh z$ is not even defined at $\pm\frac\pi2 i$.
 >
 > **The terms.** Let $f(z) = \tanh z$. Then $f' = \operatorname{sech}^2 z = 1 - f^2$, and differentiating this identity,
 >

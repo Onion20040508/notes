@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 46 · MAT 342 HW 5.*
 
-The integrand of a contour integral is often a branch of a multiple-valued function such as $z^{1/2}$, $z^{-1+i}$ or $z^i$ ([[§35 The Power Function|§35]]), and the contour may contain points of the branch cut, where the branch is not even defined. The integral still exists as long as $f[z(t)]z'(t)$ is piecewise continuous, which only requires one-sided limits at those points. On the contour, the branch is written in terms of the parameter, $\log z = \ln R + i\theta$ with $\theta$ in the branch's range, and the integral becomes an integral of exponentials in $\theta$. The examples also show that the value depends on the branch chosen.
+The integrand of a contour integral is often a branch of a multiple-valued function such as $z^{1/2}$, $z^{-1+i}$ or $z^i$ ([[§35 The Power Function#^def-35-1|Definition §35.1]]), and the contour may contain points of the branch cut, where the branch is not even defined. The integral still exists as long as $f[z(t)]z'(t)$ is piecewise continuous, which only requires one-sided limits at those points. On the contour, the branch is written in terms of the parameter, $\log z = \ln R + i\theta$ with $\theta$ in the branch's range, and the integral becomes an integral of exponentials in $\theta$. The examples also show that the value depends on the branch chosen.
 
 ## Two Examples
 

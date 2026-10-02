@@ -69,7 +69,7 @@ The theorem does *not* claim that any of these statements is true for a given fu
 ## Examples
 
 > [!example] Example §48.1: An Entire Integrand
-> The continuous function $f(z) = e^{\pi z}$ evidently has an antiderivative $F(z) = e^{\pi z}/\pi$ throughout the finite plane ([[§30 The Exponential Function|§30]]). Hence, along any contour,
+> The continuous function $f(z) = e^{\pi z}$ evidently has an antiderivative $F(z) = e^{\pi z}/\pi$ throughout the finite plane ([[§30 The Exponential Function#^thm-30-3|Theorem §30.3]]). Hence, along any contour,
 >
 > $$
 > \int_i^{i/2} e^{\pi z}\,dz = \frac{e^{\pi z}}{\pi}\bigg]_i^{i/2} = \frac1\pi\big(e^{i\pi/2} - e^{i\pi}\big) = \frac1\pi(i + 1) = \frac1\pi(1 + i) .
@@ -195,7 +195,7 @@ But a combination of *two* different antiderivatives can be used to evaluate the
 > [!example] Example §48.5: Two Integrals by Antiderivatives
 > Find antiderivatives and compute the integrals along paths that connect the limits of integration; in (b) the path lies in the right half-plane $\operatorname{Re} z \ge 0$. Explain why the answers depend only on the endpoints.
 >
-> **(a)** $\displaystyle\int_0^{\pi+i}\sin(2z)\,dz$. An antiderivative of $\sin 2z$ in the whole plane is $F(z) = -\frac12\cos 2z$ ([[§37 The Trigonometric Functions sin z and cos z|§37]]). Since $\cos(2\pi + 2i) = \cos 2i = \cosh 2$,
+> **(a)** $\displaystyle\int_0^{\pi+i}\sin(2z)\,dz$. An antiderivative of $\sin 2z$ in the whole plane is $F(z) = -\frac12\cos 2z$ ([[§37 The Trigonometric Functions sin z and cos z#^thm-37-1|Theorem §37.1]]). Since $\cos(2\pi + 2i) = \cos 2i = \cosh 2$,
 >
 > $$
 > \int_0^{\pi+i}\sin(2z)\,dz = -\frac12\cos(2\pi + 2i) + \frac12\cos 0 = \frac{1 - \cosh 2}{2} = -\sinh^2 1 \approx -1.3811 .
