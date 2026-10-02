@@ -1,0 +1,35 @@
+\begin{tikzpicture}[scale=0.62,>=Stealth,font=\small,
+  cmid/.style={postaction={decorate},decoration={markings,mark=at position 0.1 with {\arrow{>}},mark=at position 0.5 with {\arrow{>}},mark=at position 0.9 with {\arrow{>}}}}]
+  \begin{scope}[xshift=0cm,yshift=0cm]
+    \draw[->,gray] (-3.4,0)--(3.4,0) node[right]{\scriptsize$\operatorname{Re}p^{0}$};
+\draw[->,gray] (0,-0.9)--(0,1.0) node[above]{\scriptsize$\operatorname{Im}p^{0}$};
+    \fill[black] (-1.5,0) circle (1.9pt); \node at (-1.5,-0.8) {\scriptsize$-E$};
+\fill[black] (1.5,0) circle (1.9pt); \node at (1.5,-0.8) {\scriptsize$E$};
+    \draw[figB,thick,cmid] (-3,0)--(-1.85,0) arc (180:0:0.35)--(1.15,0) arc (180:0:0.35)--(3,0);
+    \node at (0,-1.55) {retarded $C_{R}$: above / above};
+  \end{scope}
+  \begin{scope}[xshift=9.6cm,yshift=0cm]
+    \draw[->,gray] (-3.4,0)--(3.4,0) node[right]{\scriptsize$\operatorname{Re}p^{0}$};
+\draw[->,gray] (0,-0.9)--(0,1.0) node[above]{\scriptsize$\operatorname{Im}p^{0}$};
+    \fill[black] (-1.5,0) circle (1.9pt); \node at (-1.5,-0.8) {\scriptsize$-E$};
+\fill[black] (1.5,0) circle (1.9pt); \node at (1.5,-0.8) {\scriptsize$E$};
+    \draw[figB,thick,cmid] (-3,0)--(-1.85,0) arc (180:360:0.35)--(1.15,0) arc (180:360:0.35)--(3,0);
+    \node at (0,-1.55) {advanced $C_{A}$: below / below};
+  \end{scope}
+  \begin{scope}[xshift=0cm,yshift=-4.3cm]
+    \draw[->,gray] (-3.4,0)--(3.4,0) node[right]{\scriptsize$\operatorname{Re}p^{0}$};
+\draw[->,gray] (0,-0.9)--(0,1.0) node[above]{\scriptsize$\operatorname{Im}p^{0}$};
+    \fill[black] (-1.5,0) circle (1.9pt); \node at (-1.5,-0.8) {\scriptsize$-E$};
+\fill[black] (1.5,0) circle (1.9pt); \node at (1.5,-0.8) {\scriptsize$E$};
+    \draw[figB,thick,cmid] (-3,0)--(-1.85,0) arc (180:360:0.35)--(1.15,0) arc (180:0:0.35)--(3,0);
+    \node at (0,-1.55) {Feynman $C_{F}$: below / above};
+  \end{scope}
+  \begin{scope}[xshift=9.6cm,yshift=-4.3cm]
+    \draw[->,gray] (-3.4,0)--(3.4,0) node[right]{\scriptsize$\operatorname{Re}p^{0}$};
+\draw[->,gray] (0,-0.9)--(0,1.0) node[above]{\scriptsize$\operatorname{Im}p^{0}$};
+    \fill[black] (-1.5,0) circle (1.9pt); \node at (-1.5,-0.8) {\scriptsize$-E$};
+\fill[black] (1.5,0) circle (1.9pt); \node at (1.5,-0.8) {\scriptsize$E$};
+    \draw[figB,thick,cmid] (-3,0)--(-1.85,0) arc (180:0:0.35)--(1.15,0) arc (180:360:0.35)--(3,0);
+    \node at (0,-1.55) {anti-Feynman $C_{\bar F}$: above / below};
+  \end{scope}
+\end{tikzpicture}

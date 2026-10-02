@@ -1,0 +1,17 @@
+\begin{tikzpicture}[>=Stealth, font=\small, scale=0.9,
+  cmid/.style={postaction={decorate},decoration={markings,mark=at position 0.3 with {\arrow{>}},mark=at position 0.8 with {\arrow{>}}}}]
+  \draw[->,gray] (-4.2,0)--(4.3,0) node[right]{\scriptsize$\operatorname{Re}p$};
+  \draw[->,gray] (0,-2.4)--(0,4.4) node[above]{\scriptsize$\operatorname{Im}p$};
+  \draw[gray, decorate, decoration={zigzag, amplitude=1.3pt, segment length=4pt}] (0,1)--(0,4.0);
+  \draw[gray, decorate, decoration={zigzag, amplitude=1.3pt, segment length=4pt}] (0,-1)--(0,-2.3);
+  \fill (0,1) circle (1.7pt); \node[anchor=west] at (0.3,0.85) {\scriptsize$im$};
+  \fill (0,-1) circle (1.7pt); \node[anchor=west] at (0.3,-1.0) {\scriptsize$-im$};
+  \draw[figB, thick, cmid] (-3.7,0)--(3.7,0);
+  \draw[figB, thick, dashed, cmid] (3.7,0) arc (0:180:3.7);
+  \draw[figR, thick, cmid] (0.2,3.4)--(0.2,1) arc (0:-180:0.2)--(-0.2,3.4);
+  \node[figR] at (0,2.3) {\large$\times$};
+  \node[anchor=west, figR] at (0.5,2.3) {\scriptsize saddle $p_{0}=imr/\rho$};
+  \node[anchor=west, figB] at (2.5,-0.35) {\scriptsize real line};
+  \node[anchor=south west, figB] at (2.7,3.0) {\scriptsize arc: $\to0$ for $r>|t|$};
+  \node[anchor=east, figR] at (-0.5,3.1) {\scriptsize around the cut};
+\end{tikzpicture}
