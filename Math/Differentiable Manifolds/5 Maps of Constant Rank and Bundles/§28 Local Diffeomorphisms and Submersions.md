@@ -86,14 +86,14 @@ The converse direction of the main theorem rests on one theorem from analysis �
 
 ^thm-28-1
 
-> [!remark]- Connections
-> - Home in analysis (the two-variable version): [[Inverse Function Theorem (several variables)|452 §13.2]].
-> - The implicit function theorem it should not be confused with: [[§7 The Regular Value Theorem#^thm-7-1|§7.1]].
-
 > [!proof]+ Proof (to be filled)
 > Taken from analysis, not proved in this course (Lee, Theorem C.34; [[Inverse Function Theorem (several variables)|452 §13.2]] proves the two-variable case). To be filled.
 
 ^pf-28-1
+
+> [!remark]- Connections
+> - Home in analysis (the two-variable version): [[Inverse Function Theorem (several variables)|452 §13.2]].
+> - The implicit function theorem it should not be confused with: [[§7 The Regular Value Theorem#^thm-7-1|§7.1]].
 
 Lee, Theorem C.34; taken from analysis, not proved in the course. It should not be confused with the *implicit* function theorem of [[§7 The Regular Value Theorem|§7]] — the board's “IFT” now means the inverse one. Each theorem can be derived from the other.
 

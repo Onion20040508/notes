@@ -161,12 +161,12 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 
 ^prop-31-4
 
-*Uses:* [[§31 The Tangent Bundle#^prop-31-1|§31.1]], [[§31 The Tangent Bundle#^prop-31-2|§31.2]], [[§31 The Tangent Bundle#^cor-31-3|§31.3]]
-
 > [!proof]+ Proof
 > [[§31 The Tangent Bundle#^prop-31-1|Proposition §31.1]] gives the topology, and [[§31 The Tangent Bundle#^cor-31-3|Corollary §31.3]] the smooth structure, the fibration with fibre $\mathbb{R}^m$, and the zero section as a submanifold.
 
 ^pf-31-4
+
+*Uses:* [[§31 The Tangent Bundle#^prop-31-1|§31.1]], [[§31 The Tangent Bundle#^prop-31-2|§31.2]], [[§31 The Tangent Bundle#^cor-31-3|§31.3]]
 
 > [!remark] Remark: Vector Bundles
 > $TM$ is in fact a *vector bundle*: a fibration whose fibres are vector spaces, with trivializations that are linear isomorphisms on each fibre. Uribe postponed the general definition — “it takes another 10 minutes of axioms” — but these are the two features: “the fibres are abstract vector spaces, and you can find trivializations which restrict to linear isomorphisms fibrewise.” Vector bundles are “fun objects” in their own right; K-theory is built from them.

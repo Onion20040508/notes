@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: abstract — The other face of a tangent vector: every derivation is the velocity of a curve, on every manifold. Tangent spaces of products split.*
 
-*Assignment 3, Problem 2.* Tangent vectors were introduced with two faces: velocities of curves, and derivations (the [[§23 Derivations and the Abstract Tangent Space#^rem-23-1|remark]] at the start of [[§23 Derivations and the Abstract Tangent Space|§12, Derivations and the Abstract Tangent Space]]). For regular level sets the two were identified by Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|§24.6]], through the ambient space. This section identifies them on *every* smooth manifold, with no ambient space at all.
+*Assignment 3, Problem 2.* Tangent vectors were introduced with two faces: velocities of curves, and derivations (the [[§23 Derivations and the Abstract Tangent Space#^rem-23-1|remark]] at the start of [[§23 Derivations and the Abstract Tangent Space|§23, Derivations and the Abstract Tangent Space]]). For regular level sets the two were identified by Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|§24.6]], through the ambient space. This section identifies them on *every* smooth manifold, with no ambient space at all.
 
 > [!definition] Definition §26.1: Smooth Curve and Its Velocity
 > Let $J \subseteq \mathbb{R}$ be an open interval containing $0$, with its standard smooth structure and coordinate $t$. A **smooth curve** in $M$ is a smooth map $\gamma : J \to M$. If $\gamma(0) = p$, the **velocity** of $\gamma$ at $0$ is the abstract tangent vector
@@ -199,4 +199,4 @@ to push $v$ forward, restrict $f$ to the slice $M_1 \times \{p_2\}$ and differen
 
 *Uses:* [[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|§26.3]], [[§26 Tangent Vectors as Velocities of Curves#^thm-26-4|§26.4]], [[§26 Tangent Vectors as Velocities of Curves#^def-26-1|Def. §26.1]]
 
-This is the second of Uribe's three views, and it uses the velocities of Assignment 3, Problem 2 ([[§26 Tangent Vectors as Velocities of Curves|§12, Tangent Vectors as Velocities of Curves]]).
+This is the second of Uribe's three views, and it uses the velocities of Assignment 3, Problem 2 ([[§26 Tangent Vectors as Velocities of Curves|§26, Tangent Vectors as Velocities of Curves]]).

@@ -126,7 +126,7 @@ tags: [differentiable-manifolds, math591]
 > X/G \;:=\; X/{\sim}
 > $$
 >
-> of $X$ by the orbit relation, with the quotient topology ([[§4 Quotient Spaces and Open Maps|§3, Quotient Spaces]]). Explicitly: a point of $X/G$ is an orbit $\mathcal{O}_x \subseteq X$; the quotient map is $\pi(x) = \mathcal{O}_x$; and $W \subseteq X/G$ is open iff $\bigcup_{\mathcal{O} \in W} \mathcal{O}$ (the union in $X$ of the orbits belonging to $W$) is open in $X$.
+> of $X$ by the orbit relation, with the quotient topology ([[§4 Quotient Spaces and Open Maps|§4, Quotient Spaces]]). Explicitly: a point of $X/G$ is an orbit $\mathcal{O}_x \subseteq X$; the quotient map is $\pi(x) = \mathcal{O}_x$; and $W \subseteq X/G$ is open iff $\bigcup_{\mathcal{O} \in W} \mathcal{O}$ (the union in $X$ of the orbits belonging to $W$) is open in $X$.
 >
 > *Lee: Ch. 21, Quotients of Manifolds by Group Actions*
 
@@ -233,7 +233,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 ^rem-10-6
 
 > [!theorem] Lemma §10.3: Orbit Relations Are Open
-> For a continuous action of $G$ on $X$, the orbit relation is an open equivalence relation (Definition of open relation in [[§4 Quotient Spaces and Open Maps#Open Maps and Open Relations|§3, Open Maps and Open Relations]]). Equivalently: for every open $U \subseteq X$, its saturation $\tilde U = \pi^{-1}(\pi(U))$ is open.
+> For a continuous action of $G$ on $X$, the orbit relation is an open equivalence relation (Definition of open relation in [[§4 Quotient Spaces and Open Maps#Open Maps and Open Relations|§4, Open Maps and Open Relations]]). Equivalently: for every open $U \subseteq X$, its saturation $\tilde U = \pi^{-1}(\pi(U))$ is open.
 >
 > *Lee: Lemma 21.1, the same statement and proof*
 
@@ -253,7 +253,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§10 Group Actions and Orbit Spaces#^def-10-4|Def. §10.4]], [[§10 Group Actions and Orbit Spaces#^prop-10-1|§10.1]], [[§10 Group Actions and Orbit Spaces#^lem-10-2|§10.2]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
 
 > [!remark]- Connections
-> - For $G/H$ this is the openness of the projection: [[§12 The Topology of G∕H and Real Grassmannians#^prop-12-1|§12.1]] and [[§12 The Topology of G∕H and Real Grassmannians#^rem-12-1|the remark after §7.7]].
+> - For $G/H$ this is the openness of the projection: [[§12 The Topology of G∕H and Real Grassmannians#^prop-12-1|§12.1]] and [[§12 The Topology of G∕H and Real Grassmannians#^rem-12-1|the remark after §12.2]].
 
 ## Hausdorff Orbit Spaces
 
@@ -337,7 +337,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 **Not proved in this course.** Stated in lecture as a strengthening of Corollary [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]], with the proof declined: “another ten minutes of point-set topology which we will not take.” The gap is exactly the step where compactness of $X$ was used — in Corollary [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]] it made $\Psi(G \times X) = \Gamma$ compact, hence closed; without it one shows directly that $\Gamma$ is closed, using compactness of $G$ alone (a tube-lemma argument). Corollary [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]] is the version proved in lecture, and it suffices for every application below, since all the groups met are compact and all the spaces are compact Hausdorff. For completeness, the tube-lemma argument is short enough to give here.
 
-> [!proof]+ Proof of Theorem §6.5 (filled in; not from lecture)
+> [!proof]+ Proof of Theorem §10.5 (filled in; not from lecture)
 > *(Stated in Lecture 4 — “compactness of $X$ is not strictly necessary”; filled in.)* By Lemma [[§10 Group Actions and Orbit Spaces#^lem-10-3|§10.3]] the orbit relation is open, so by Theorem [[§6 Open Quotients and Complex Projective Space#^thm-6-1|§6.1]] it suffices to show that $\Gamma = \{(x, g\cdot x)\}$ is closed in $X \times X$. Let $(x, y) \notin \Gamma$, so that $g \cdot x \ne y$ for every $g \in G$. For each $g$, choose disjoint open sets $U_g \ni g \cdot x$ and $V_g \ni y$, using that $X$ is Hausdorff. By continuity of the action at $(g, x)$, choose open $A_g \ni g$ and $B_g \ni x$ with $a \cdot x' \in U_g$ for all $a \in A_g$ and $x' \in B_g$. The sets $A_g$ cover the compact $G$, so finitely many, $A_{g_1}, \ldots, A_{g_m}$, suffice; put $B = \bigcap_i B_{g_i}$ and $V = \bigcap_i V_{g_i}$, open neighbourhoods of $x$ and $y$. If some $(x', y') \in B \times V$ had $y' = a \cdot x'$, then $a \in A_{g_i}$ for some $i$, whence $y' \in U_{g_i}$; but also $y' \in V \subseteq V_{g_i}$, which is disjoint from $U_{g_i}$. So $B \times V$ misses $\Gamma$, and $\Gamma$ is closed.
 
 ^pf-10-5

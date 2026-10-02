@@ -194,7 +194,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 *Uses:* [[§6 Open Quotients and Complex Projective Space#^def-6-2|Def. §6.2]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients and Complex Projective Space#^def-6-1|Def. §6.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§6 Open Quotients and Complex Projective Space#^thm-6-1|§6.1]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§6 Open Quotients and Complex Projective Space#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§1 Point-Set Topology Review#^ex-1-1|Ex. §1.1]], [[Heine–Borel Theorem]], [[§15 Compact Spaces#^thm-15-8|590 §15.8]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§11 Metric Topology#^thm-11-4|590 §11.4]]
 
 > [!remark]- Connections
-> - The general form for compact groups acting on compact Hausdorff spaces: [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]], of which this is a special case ([[§10 Group Actions and Orbit Spaces#^rem-10-9|§6, Remark]]).
+> - The general form for compact groups acting on compact Hausdorff spaces: [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]], of which this is a special case ([[§10 Group Actions and Orbit Spaces#^rem-10-9|§10, Remark]]).
 
 **Transcription note.** Page 7 of the handwritten notes writes the map in this argument as $S^1 \times S^{2n+1} \to S^{2n+2} \times S^{2n+2}$; the target is $S^{2n+1} \times S^{2n+1}$, where the graph of the relation lives.
 
@@ -296,6 +296,6 @@ The following was set up in the last four minutes of lecture; the proof of the c
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]]
 
 > [!remark] Remark: Where This Is Going
-> $\mathbb{CP}^n$ is “one of the main examples of manifolds” and will recur throughout the course. With $T_2$ and second countability now secured, what is missing from manifold status is the locally Euclidean condition — charts on $\mathbb{CP}^n$ — which is supplied in [[§14 Projective Spaces as Smooth Manifolds|§8, Projective Spaces as Smooth Manifolds]], together with the smooth structure. The same two-step pattern ($\sim$ open via a group acting by homeomorphisms + graph closed via compactness) is the template for many quotient constructions to come: real projective space $\mathbb{RP}^n$ (Lee Example 1.5), Grassmannians, tori, and lens spaces all fit it.
+> $\mathbb{CP}^n$ is “one of the main examples of manifolds” and will recur throughout the course. With $T_2$ and second countability now secured, what is missing from manifold status is the locally Euclidean condition — charts on $\mathbb{CP}^n$ — which is supplied in [[§14 Projective Spaces as Smooth Manifolds|§14, Projective Spaces as Smooth Manifolds]], together with the smooth structure. The same two-step pattern ($\sim$ open via a group acting by homeomorphisms + graph closed via compactness) is the template for many quotient constructions to come: real projective space $\mathbb{RP}^n$ (Lee Example 1.5), Grassmannians, tori, and lens spaces all fit it.
 
 ^rem-6-5

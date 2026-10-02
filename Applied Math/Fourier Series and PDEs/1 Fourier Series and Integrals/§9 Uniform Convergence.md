@@ -124,7 +124,7 @@ On the other hand, for the triangle wave $f(x) = |x|$ (Powers calls it a sawtoot
 >
 > **By the function.** The periodic extension is continuous, because $f(-\pi+) = \pi = f(\pi-)$, and $f$ is sectionally smooth (Theorem §9.3 below).
 >
-> **The maximum deviation.** $f(x) - S_N(x) = \frac4\pi\sum_{n\ \text{odd},\ n > N}\frac{\cos nx}{n^2}$ has positive coefficients, so its largest absolute value is at $x = 0$, where all the cosines equal $1$: $\delta_N = \frac4\pi\sum_{n\ \text{odd},\ n > N}\frac{1}{n^2}$. For instance $\delta_1 = \delta_2 = \frac\pi2 - \frac4\pi \approx 0.298$ and $\delta_3 = \delta_4 \approx 0.156$; $\delta_N \to 0$ because it is the tail of a convergent series.
+> **The maximum deviation.** $f(x) - S_N(x) = -\frac4\pi\sum_{n\ \text{odd},\ n > N}\frac{\cos nx}{n^2}$ has coefficients of one sign, so its absolute value is at most $\frac4\pi\sum_{n\ \text{odd},\ n > N}\frac{1}{n^2}$, with equality at $x = 0$, where all the cosines equal $1$ (there $S_N(0) > 0 = f(0)$): $\delta_N = \frac4\pi\sum_{n\ \text{odd},\ n > N}\frac{1}{n^2}$. For instance $\delta_1 = \delta_2 = \frac\pi2 - \frac4\pi \approx 0.298$ and $\delta_3 = \delta_4 \approx 0.156$; $\delta_N \to 0$ because it is the tail of a convergent series.
 >
 > *Powers: 1.4, first Example; Figure 10; Source: 341 lecture 9.10, Example 1*
 
@@ -142,7 +142,7 @@ Another way of proving uniform convergence of a Fourier series is by examining t
 
 ^thm-9-3
 
-*Powers omits the proof; no other subject in the vault proves it. The remark below shows how it follows from Theorem §9.2 and two later results of this chapter.*
+*Powers omits the proof; no other subject in the vault proves it. The remark below, which is not from Powers, shows how it follows from Theorem §9.2 and two later results of this chapter.*
 
 > [!remark]- Remark: Where Theorem §9.3 Comes From
 > Take period $2\pi$. Since $f$ is continuous and $f'$ is sectionally continuous, the Fourier coefficients of $f'$ are $nb_n$ and $-na_n$ ([[§10 Operations on Fourier Series#^thm-10-6|Theorem §10.6]], proof of (8)). Bessel's inequality for $f'$ ([[§11★ Mean Error and Convergence in Mean#^thm-11-3|Theorem §11.3]]) gives $\sum n^2(a_n^2 + b_n^2) \le \frac1\pi\int_{-\pi}^{\pi}(f')^2 < \infty$. By the Cauchy–Schwarz inequality for sums and $(|a_n| + |b_n|)^2 \le 2(a_n^2 + b_n^2)$,
@@ -151,7 +151,9 @@ Another way of proving uniform convergence of a Fourier series is by examining t
 > \sum_{n=1}^{\infty}\big(|a_n| + |b_n|\big) = \sum_{n=1}^{\infty}\frac1n\cdot n\big(|a_n| + |b_n|\big) \le \Big(\sum_{n=1}^{\infty}\frac{1}{n^2}\Big)^{1/2}\Big(\sum_{n=1}^{\infty} 2n^2\big(a_n^2 + b_n^2\big)\Big)^{1/2} < \infty .
 > $$
 >
-> So the series converges uniformly by Theorem §9.2, and since $f$ is continuous and sectionally smooth its sum is $f(x)$ by [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]].
+> So the series converges uniformly by Theorem §9.2, and since $f$ is continuous and sectionally smooth its sum is $f(x)$ by [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]. Neither later result depends on Theorem §9.3, so the argument is not circular.
+>
+> *Source: an argument added in these notes (Bessel's inequality for $f'$ and the Cauchy–Schwarz inequality); not in Powers.*
 
 ^rem-9-2
 

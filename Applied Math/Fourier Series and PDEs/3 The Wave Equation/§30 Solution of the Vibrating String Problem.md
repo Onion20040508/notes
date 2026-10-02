@@ -152,7 +152,7 @@ By the principle of superposition ([[§19 Example꞉ Fixed End Temperatures#^thm
 
 *Uses:* [[§30 Solution of the Vibrating String Problem#^prop-30-1|§30.1]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (sine series), [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]] (convergence theorem)
 
-By the nature of the problem one expects $f$, at least, to be continuous, with $f(0) = f(a) = 0$ (the string is attached at the ends). Then the sine series of $f$ converges uniformly ([[§9 Uniform Convergence#^thm-9-5|Theorem §9.5]]). That the formal series (9) really is a solution is best seen from its d'Alembert form, [[§31 d'Alembert's Solution|§31]].
+By the nature of the problem one expects $f$, at least, to be continuous, with $f(0) = f(a) = 0$ (the string is attached at the ends). Then the sine series of $f$ converges uniformly ([[§9 Uniform Convergence#^thm-9-5|Theorem §9.5]]). That the formal series (9) really is a solution is best seen from its d'Alembert form, [[§31 d'Alembert's Solution#^thm-31-3|Theorem §31.3]] (see [[§31 d'Alembert's Solution#^rem-31-2|Remark: When Formula (13) Is a Classical Solution]]).
 
 > [!remark]- Connections
 > - The coefficients $\lambda_n = n\pi/a$, $\phi_n = \sin(\lambda_nx)$ are the eigenvalues and eigenfunctions of the regular Sturm–Liouville problem (6)–(7), and the sine coefficients (10), (11) are orthogonal projections onto them: [[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]], [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2]]. The finite-dimensional picture is the expansion of a vector in an orthogonal basis of eigenvectors of a symmetric matrix, [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]].
@@ -164,7 +164,7 @@ By the nature of the problem one expects $f$, at least, to be continuous, with $
 > 2. Solve the eigenvalue problem for $\phi$ in the three cases $p > 0$, $p = 0$, $p < 0$ (write $p = -\lambda^2$), keeping only the cases with nonzero solutions.
 > 3. For each eigenvalue, solve for $T$: $T_n = a_n\cos(\lambda_nct) + b_n\sin(\lambda_nct)$ for $p = -\lambda_n^2 < 0$, and $T_0 = a_0 + b_0t$ if $p = 0$ is an eigenvalue. Write down the basic solutions $u_n = \phi_nT_n$.
 > 4. Superpose, $u = \sum_n u_n$, and impose $u(x, 0) = f$ and $u_t(x, 0) = g$: both are eigenfunction expansions. Compute $a_n$ from $f$ and $b_n$ from $g$, remembering the factor $\lambda_nc$ in the $b_n$.
-> 5. If the boundary conditions are not homogeneous, first subtract an equilibrium solution ([[§32 One-Dimensional Wave Equation꞉ Generalities|§32]]).
+> 5. If the boundary conditions are not homogeneous, first subtract an equilibrium solution ([[§32 One-Dimensional Wave Equation꞉ Generalities#^def-32-2|Definition §32.2]]).
 
 ^rem-30-1
 

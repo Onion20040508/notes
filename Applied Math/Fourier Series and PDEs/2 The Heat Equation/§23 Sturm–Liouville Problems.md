@@ -11,7 +11,7 @@ tags: [fourier-series-and-pdes, math341]
 
 *Powers, Section 2.7 · MAT 341 lectures 10.10, 10.17 · HW 7, HW 8.*
 
-Every heat problem so far has ended in an eigenvalue problem $\phi'' + \lambda^2\phi = 0$ with two boundary conditions, and every solution has relied on the orthogonality of the eigenfunctions. For the convection problem of [[§22 Example꞉ Convection|§22]] the eigenvalues are roots of a transcendental equation, and checking orthogonality by direct integration is already laborious. This section shows that orthogonality comes from the structure of the problem, through one integration by parts, for the whole class of regular Sturm–Liouville problems $(s\phi')' - q\phi + \lambda^2 p\phi = 0$; these are the eigenvalue problems of a rod whose conductivity, density and specific heat vary along its length ([[§25 Generalities on the Heat Conduction Problem|§25]]). It also collects what is known about their eigenvalues: they are real, simple and increase to infinity, and the $n$th eigenfunction has $n - 1$ zeros. In the language of linear algebra, the Sturm–Liouville operator is symmetric for a weighted inner product, and these facts are the infinite-dimensional counterpart of the spectral theorem for symmetric matrices.
+Every heat problem so far has ended in an eigenvalue problem $\phi'' + \lambda^2\phi = 0$ with two boundary conditions, and every solution has relied on the orthogonality of the eigenfunctions. For the convection problem ([[§22 Example꞉ Convection#^thm-22-1|Theorem §22.1]]) the eigenvalues are roots of a transcendental equation, and checking orthogonality by direct integration is already laborious. This section shows that orthogonality comes from the structure of the problem, through one integration by parts, for the whole class of regular Sturm–Liouville problems $(s\phi')' - q\phi + \lambda^2 p\phi = 0$; these are the eigenvalue problems of a rod whose conductivity, density and specific heat vary along its length ([[§25 Generalities on the Heat Conduction Problem|§25]]). It also collects what is known about their eigenvalues: they are real, simple and increase to infinity, and the $n$th eigenfunction has $n - 1$ zeros. In the language of linear algebra, the Sturm–Liouville operator is symmetric for a weighted inner product, and these facts are the infinite-dimensional counterpart of the spectral theorem for symmetric matrices.
 
 ## A Model Problem
 
@@ -125,7 +125,7 @@ To guarantee that eigenfunctions exist and that the integrations by parts are le
 > so $q = -cs/a$ and the weight is $p = ws/a$ (and $\mu = \lambda^2$).
 > 3. Check conditions (a)–(d) of Definition §23.1 on the closed interval.
 >
-> For instance, $x(x\phi')' = \mu\phi$ ([[§23 Sturm–Liouville Problems#^ex-23-4|Example §23.4]]) is $x^2\phi'' + x\phi' - \mu\phi = 0$; here $b/a = 1/x$, $s = x$, and dividing by $x$ gives $(x\phi')' - \mu\,\frac1x\,\phi = 0$, weight $p = 1/x$.
+> For instance, $x(x\phi')' = \mu\phi$ ([[§23 Sturm–Liouville Problems#^ex-23-4|Example §23.4]]) is $x^2\phi'' + x\phi' - \mu\phi = 0$; here $b/a = 1/x$, $s = x$, and dividing by $x$ gives $(x\phi')' - \mu\,\frac1x\,\phi = 0$. Since the term in $\mu$ has $w = -1$, this is (5) with $\lambda^2 = -\mu$ and positive weight $p = 1/x$.
 >
 > *Source: 341 lecture 10.10*
 
@@ -192,7 +192,7 @@ To guarantee that eigenfunctions exist and that the integrations by parts are le
 > \int_l^r L[\phi]\,\psi\,dx - \int_l^r \phi\,L[\psi]\,dx = \Big[s(\phi'\psi - \phi\psi')\Big]_l^r = 0 .
 > $$
 >
-> So the operator $\mathcal{L} = -\frac1p L$ satisfies $\langle \mathcal{L}\phi, \psi\rangle_p = \langle \phi, \mathcal{L}\psi\rangle_p$ for the weighted inner product, and the Sturm–Liouville problem is the eigenvalue problem $\mathcal{L}\phi = \lambda^2\phi$. This is the analogue of $(A\mathbf{x}) \cdot \mathbf{y} = \mathbf{x} \cdot (A\mathbf{y})$ for a symmetric matrix $A$: the boundary conditions are part of the operator, and they are exactly what makes the boundary terms vanish. Theorem §23.2, [[§23 Sturm–Liouville Problems#^prop-23-3|Proposition §23.3]] and the expansion theorem of [[§24 Expansion in Series of Eigenfunctions|§24]] are then the statements "eigenvectors for different eigenvalues are orthogonal", "the eigenvalues are real" and "the eigenvectors form a basis".
+> So the operator $\mathcal{L} = -\frac1p L$ satisfies $\langle \mathcal{L}\phi, \psi\rangle_p = \langle \phi, \mathcal{L}\psi\rangle_p$ for the weighted inner product, and the Sturm–Liouville problem is the eigenvalue problem $\mathcal{L}\phi = \lambda^2\phi$. This is the analogue of $(A\mathbf{x}) \cdot \mathbf{y} = \mathbf{x} \cdot (A\mathbf{y})$ for a symmetric matrix $A$: the boundary conditions are part of the operator, and they are exactly what makes the boundary terms vanish. Theorem §23.2, [[§23 Sturm–Liouville Problems#^prop-23-3|Proposition §23.3]] and the expansion theorem, [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2]], are then the statements "eigenvectors for different eigenvalues are orthogonal", "the eigenvalues are real" and "the eigenvectors form a basis".
 >
 > *Source: 341 lecture 10.10*
 
@@ -262,7 +262,7 @@ Powers also notes that any constant multiple of an eigenfunction is an eigenfunc
 
 ^thm-23-5
 
-*Powers omits the proof. For Dirichlet conditions, part (c) follows from the Rayleigh quotient of [[§33★ Estimation of Eigenvalues|§33★]] (Eq. (3)); the remark below extends that argument to all the boundary conditions of Definition §23.1. Parts (a) and (b) (Sturm's oscillation theory) are not proved anywhere in the vault.*
+*Powers omits the proof. For Dirichlet conditions, part (c) follows from the Rayleigh quotient of [[§33★ Estimation of Eigenvalues#^prop-33-1|Proposition §33.1]] (Eq. (3)); the remark below extends that argument to all the boundary conditions of Definition §23.1. Parts (a) and (b) (Sturm's oscillation theory) are not proved anywhere in the vault.*
 
 > [!remark] Remark: Why the Eigenvalues Are Nonnegative
 > Let $\phi$ be a real eigenfunction for $\lambda^2$ ([[§23 Sturm–Liouville Problems#^prop-23-3|Proposition §23.3]]). Multiply (5) by $\phi$, integrate from $l$ to $r$, and integrate $\int (s\phi')'\phi\,dx$ by parts:
@@ -318,8 +318,8 @@ Powers also notes that any constant multiple of an eigenfunction is an eigenfunc
 > [!example] Example §23.2: Bessel's and Legendre's Equations
 > The lecture lists three choices of coefficients in (5):
 > - $s = 1$, $q = 0$, $p = 1$: $\phi'' + \lambda^2\phi = 0$, the equation of the standard heat problems.
-> - $s = x$, $q = \nu^2/x$, $p = x$: $(x\phi')' - \frac{\nu^2}{x}\phi + \lambda^2x\phi = 0$. Multiplying by $x$ gives $x^2\phi'' + x\phi' + (\lambda^2x^2 - \nu^2)\phi = 0$, **Bessel's equation** of order $\nu$ ([[§45★ Bessel's Equation|§45★]]).
-> - $s = 1 - x^2$, $q = 0$, $p = 1$: $\big((1 - x^2)\phi'\big)' + \lambda^2\phi = 0$, **Legendre's equation** ([[§49★ Spherical Coordinates; Legendre Polynomials|§49★]]).
+> - $s = x$, $q = \nu^2/x$, $p = x$: $(x\phi')' - \frac{\nu^2}{x}\phi + \lambda^2x\phi = 0$. Multiplying by $x$ gives $x^2\phi'' + x\phi' + (\lambda^2x^2 - \nu^2)\phi = 0$, **Bessel's equation** of order $\nu$ ([[§45★ Bessel's Equation#^def-45-1|Definition §45.1]]).
+> - $s = 1 - x^2$, $q = 0$, $p = 1$: $\big((1 - x^2)\phi'\big)' + \lambda^2\phi = 0$, **Legendre's equation** ([[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-2|Definition §49.2]]).
 >
 > Are they regular? The first is, on any interval with the boundary conditions (6), (7). Bessel's equation on $0 < x < a$ (the radius of a disk or cylinder) is not: $s(0) = 0$ violates (b), and for $\nu \ne 0$, $q = \nu^2/x$ is not continuous at $0$. On $c < x < a$ with $c > 0$ (an annulus) it is regular. Legendre's equation on $-1 < x < 1$ is not regular either, since $s(\pm1) = 0$. These are **singular** Sturm–Liouville problems; the boundary condition at a singular end is replaced by a boundedness condition, and orthogonality survives because the factor $s$ kills the boundary term there (Powers' Exercise 2.7.6). Their eigenfunctions are the Bessel functions and Legendre polynomials of Chapter 5.
 >
@@ -328,7 +328,7 @@ Powers also notes that any constant multiple of an eigenfunction is an eigenfunc
 ^ex-23-2
 
 > [!example] Example §23.3: The Convection Eigenfunctions by Direct Integration
-> Let $\lambda_n$ be the $n$th positive solution of the equation $\tan(a\lambda) = -\kappa\lambda/h$, so that $\phi_n = \sin(\lambda_n x)$ are the eigenfunctions of Example §23.1(a) ([[§22 Example꞉ Convection|§22]]). **(a)** Verify that
+> Let $\lambda_n$ be the $n$th positive solution of the equation $\tan(a\lambda) = -\kappa\lambda/h$, so that $\phi_n = \sin(\lambda_n x)$ are the eigenfunctions of Example §23.1(a) ([[§22 Example꞉ Convection#^thm-22-1|Theorem §22.1]]). **(a)** Verify that
 >
 > $$
 > \int_0^a \sin^2(\lambda_n x)\,dx = \frac a2 + \frac{\kappa}{h}\,\frac{\cos^2(\lambda_n a)}{2} .
@@ -368,7 +368,7 @@ Powers also notes that any constant multiple of an eigenfunction is an eigenfunc
 > \frac{S_nC_m - C_nS_m}{2(\lambda_n - \lambda_m)} - \frac{S_nC_m + C_nS_m}{2(\lambda_n + \lambda_m)} = -\frac{\kappa}{h}\,\frac{C_nC_m}{2} + \frac{\kappa}{h}\,\frac{C_nC_m}{2} = 0 .
 > $$
 >
-> Part (b) is Proposition §23.1 checked by hand: the direct route needs the eigenvalue equation in a specific algebraic form, while the Sturm–Liouville argument needs only that both functions satisfy the same boundary conditions (the grader also gave full credit for that argument). Part (a) shows that the eigenfunctions are *not* normalized like $\sin(n\pi x/a)$: $\int_0^a \sin^2 \ne a/2$ in general, which matters for the coefficients in [[§24 Expansion in Series of Eigenfunctions#^ex-24-1|Example §24.1]].
+> Part (b) is Proposition §23.1 checked by hand: the direct route needs the eigenvalue equation in a specific algebraic form, while the Sturm–Liouville argument needs only that both functions satisfy the same boundary conditions (the answer key accepts that argument for half of the credit). Part (a) shows that the eigenfunctions are *not* normalized like $\sin(n\pi x/a)$: $\int_0^a \sin^2 \ne a/2$ in general, which matters for the coefficients in [[§24 Expansion in Series of Eigenfunctions#^ex-24-1|Example §24.1]].
 >
 > *Source: 341 HW 7, Problem 1; Powers: Exercise 2.6.10*
 

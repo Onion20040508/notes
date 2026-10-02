@@ -102,7 +102,7 @@ where $N$, $S$, $E$, $W$ are the indices of the four mesh points adjacent to poi
 > | $3$ | $\frac{17}{64}$ | $\frac7{16}$ | $\frac{25}{64}$ | $\frac{39}{64}$ |
 > | $4$ | $\frac{53}{256}$ | $\frac{21}{64}$ | $\frac{73}{256}$ | $\frac{15}{32}$ |
 >
-> **Comparison.** By [[§43 Two-Dimensional Heat Equation꞉ Solution|§43]], the exact solution is
+> **Comparison.** By [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-4|Theorem §43.4]], the exact solution is
 >
 > $$
 > u(x, y, t) = \sum_{j, k\ \mathrm{odd}}\frac{16}{\pi^2jk}\sin\frac{j\pi x}{1.25}\sin(k\pi y)\exp\Big(-\pi^2\Big(\frac{j^2}{1.25^2} + k^2\Big)t\Big) .
@@ -293,7 +293,7 @@ where $N$, $S$, $E$, $W$ are the indices of the four mesh points adjacent to poi
 > | edges | $0$ | $0$ | $\frac12$ | $0$ | $0$ | $0$ | $-\frac12$ | $0$ | $0$ | $0$ |
 > | center | $0$ | $1$ | $0$ | $0$ | $0$ | $0$ | $0$ | $-1$ | $0$ | $1$ |
 >
-> For instance $u_1(3) = \frac12\big(u_2(2) + u_4(2)\big) - u_1(1) = \frac12$ and $u_5(3) = \frac12 \cdot 4 \cdot u_2(2) - u_5(1) = 1 - 1 = 0$. The pulse runs from the center to the edges and the corners, and returns inverted; the computed motion is exactly periodic with period $8\,\Delta t = \sqrt2$. That is the period $2\pi/(\sqrt2\,\pi)$ of the fundamental mode $\sin(\pi x)\sin(\pi y)\cos(\sqrt2\,\pi t)$ of the square membrane (substitute in $\nabla^2u = u_{tt}$; compare [[§41★ Two-Dimensional Wave Equation꞉ Derivation|§41★]]).
+> For instance $u_1(3) = \frac12\big(u_2(2) + u_4(2)\big) - u_1(1) = \frac12$ and $u_5(3) = \frac12 \cdot 4 \cdot u_2(2) - u_5(1) = 1 - 1 = 0$. The pulse runs from the center to the edges and the corners, and returns inverted; the computed motion is exactly periodic with period $8\,\Delta t = \sqrt2$. That is the period $2\pi/(\sqrt2\,\pi)$ of the fundamental mode $\sin(\pi x)\sin(\pi y)\cos(\sqrt2\,\pi t)$ of the square membrane (substitute in $\nabla^2u = u_{tt}$; compare [[§43 Two-Dimensional Heat Equation꞉ Solution#^rem-43-3|§43]], Remark: The Rectangular Membrane).
 >
 > *Powers: Exercise 7.5.7*
 

@@ -195,7 +195,7 @@ The same triangle with $G = \mathbb{R}$. The exponential wraps the line around t
 
 ^pf-12-5
 
-*Uses:* [[§11 Homogeneous Spaces#^prop-11-4|§11.4]], [[§12 The Topology of G∕H and Real Grassmannians#^rem-12-1|Remark after §7.7]], [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]], [[§10 Group Actions and Orbit Spaces#^lem-10-3|§10.3]], [[§6 Open Quotients and Complex Projective Space#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]
+*Uses:* [[§11 Homogeneous Spaces#^prop-11-4|§11.4]], [[§12 The Topology of G∕H and Real Grassmannians#^rem-12-1|Remark after §12.2]], [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]], [[§10 Group Actions and Orbit Spaces#^lem-10-3|§10.3]], [[§6 Open Quotients and Complex Projective Space#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]
 
 ## Real Grassmannians
 
@@ -295,7 +295,7 @@ The same triangle with $G = \mathbb{R}$. The exponential wraps the line around t
 > - For $k = 1$ the transported topology agrees with the quotient topology of $\mathbb{RP}^{n-1}$: [[§14 Projective Spaces as Smooth Manifolds#^prop-14-6|§14.6]]; $\mathrm{O}(n)$ becomes a smooth manifold in [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-19-1|Ex. §19.1]].
 
 > [!remark] Remark: Dimension Count and What Is Still Missing
-> Heuristically, $\dim G/H = \dim G - \dim H$, which with $\dim \mathrm{O}(m) = \tfrac{m(m-1)}{2}$ ([[§9 The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]]) gives
+> Heuristically, $\dim G/H = \dim G - \dim H$, which with $\dim \mathrm{O}(m) = \tfrac{m(m-1)}{2}$ ([[§9 The Classical Groups Are Topological Manifolds|§9, The Classical Groups Are Topological Manifolds]]) gives
 >
 > $$
 > \dim \mathrm{Gr}_k(\mathbb{R}^n) = \frac{n(n-1)}{2} - \frac{k(k-1)}{2} - \frac{(n-k)(n-k-1)}{2} = k(n-k).

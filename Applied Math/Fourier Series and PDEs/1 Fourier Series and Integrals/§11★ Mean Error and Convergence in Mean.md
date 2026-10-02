@@ -279,7 +279,7 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 > \ln\Big|2\cos\Big(\frac x2\Big)\Big| = \sum_{n=1}^{\infty}\frac{(-1)^{n + 1}}{n}\cos nx
 > $$
 >
-> is valid except when $x$ is an odd multiple of $\pi$ (Powers Exercise 1.5.7; it comes from the complex methods of [[§15★ Complex Methods|§15★]]). So $a_0 = 0$, $a_n = \frac{(-1)^{n + 1}}{n}$, $b_n = 0$. The function has logarithmic singularities at $\pm\pi$ but its square is integrable, so Parseval's equality applies:
+> is valid except when $x$ is an odd multiple of $\pi$ (Powers Exercise 1.5.7; it is derived by complex methods in [[§15★ Complex Methods#^ex-15-1|Example §15.1]]). So $a_0 = 0$, $a_n = \frac{(-1)^{n + 1}}{n}$, $b_n = 0$. The function has logarithmic singularities at $\pm\pi$ but its square is integrable, so Parseval's equality applies:
 >
 > $$
 > \frac1\pi\int_{-\pi}^{\pi}\Big(\ln\Big|2\cos\frac x2\Big|\Big)^2dx = \sum_{n=1}^{\infty}\frac{1}{n^2} = \frac{\pi^2}{6} ,

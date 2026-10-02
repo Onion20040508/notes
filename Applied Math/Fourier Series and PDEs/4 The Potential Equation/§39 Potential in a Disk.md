@@ -21,7 +21,7 @@ $$
 \frac1r\frac{\partial}{\partial r}\Big(r\frac{\partial v}{\partial r}\Big) + \frac{1}{r^2}\frac{\partial^2v}{\partial\theta^2} = 0 .
 $$
 
-Two features of this coordinate system matter. Some coefficients of the Laplacian are negative powers of $r$, so a boundedness condition must be enforced at $r = 0$. And $\theta$ and $\theta + 2\pi$ refer to the same angle, so $v(r, \theta)$ must be periodic with period $2\pi$ in $\theta$. **Dirichlet's problem on a disk** is therefore
+Two features of this coordinate system matter. Some coefficients of the Laplacian are negative powers of $r$, so a boundedness condition must be enforced at $r = 0$ ([[§4★ Singular Boundary Value Problems#^def-4-2|Definition §4.2]]). And $\theta$ and $\theta + 2\pi$ refer to the same angle, so $v(r, \theta)$ must be periodic with period $2\pi$ in $\theta$. **Dirichlet's problem on a disk** is therefore
 
 $$
 \begin{aligned}
@@ -38,7 +38,7 @@ $$
 \frac{r\big(rR'(r)\big)'}{R(r)} + \frac{Q''(\theta)}{Q(\theta)} = 0 .
 $$
 
-Both terms must be constant. If $Q''/Q$ were a positive constant $\mu^2$, then $Q = Ae^{\mu\theta} + Be^{-\mu\theta}$ would be exponential, not periodic: $Q(\theta + 2\pi) = Q(\theta)$ for all $\theta$ means $A(e^{2\pi\mu} - 1)e^{\mu\theta} + B(e^{-2\pi\mu} - 1)e^{-\mu\theta} = 0$, which forces $A = B = 0$. So $Q''/Q = -\lambda^2$, and we obtain a **singular eigenvalue problem** (the periodicity condition replaces boundary conditions; compare [[§4★ Singular Boundary Value Problems|§4★]]):
+Both terms must be constant. If $Q''/Q$ were a positive constant $\mu^2$, then $Q = Ae^{\mu\theta} + Be^{-\mu\theta}$ would be exponential, not periodic: $Q(\theta + 2\pi) = Q(\theta)$ for all $\theta$ means $A(e^{2\pi\mu} - 1)e^{\mu\theta} + B(e^{-2\pi\mu} - 1)e^{-\mu\theta} = 0$, which forces $A = B = 0$. So $Q''/Q = -\lambda^2$, and we obtain a **singular eigenvalue problem** (the periodicity condition replaces boundary conditions; compare [[§4★ Singular Boundary Value Problems#^def-4-1|Definition §4.1]], and for the boundedness condition (8) [[§4★ Singular Boundary Value Problems#^def-4-2|Definition §4.2]]):
 
 $$
 Q'' + \lambda^2Q = 0, \quad (5) \qquad Q(\theta + 2\pi) = Q(\theta), \quad (6)
@@ -126,13 +126,13 @@ $$
 > v(c, \theta) = a_0 + \sum_{n=1}^{\infty}c^n\big(a_n\cos(n\theta) + b_n\sin(n\theta)\big) = f(\theta), \qquad -\pi < \theta \le \pi .
 > $$
 >
-> This is a Fourier series problem for the $2\pi$-periodic function $f$ ([[§6 Periodic Functions and Fourier Series|§6]]): $a_0$ is the constant term of the Fourier series of $f$, and $c^na_n$, $c^nb_n$ are its $n$th cosine and sine coefficients. Dividing by $c^n$ gives (11).
+> This is a Fourier series problem for the $2\pi$-periodic function $f$ ([[§6 Periodic Functions and Fourier Series#^def-6-2|Definition §6.2]]): $a_0$ is the constant term of the Fourier series of $f$, and $c^na_n$, $c^nb_n$ are its $n$th cosine and sine coefficients. Dividing by $c^n$ gives (11).
 
 ^pf-39-2
 
-*Uses:* [[§39 Potential in a Disk#^prop-39-1|§39.1]], [[§1★ Homogeneous Linear Equations#^thm-1-5|§1.5]] (Cauchy–Euler), [[§35 Potential Equation#^ex-35-3|Ex. §35.3]], [[§6 Periodic Functions and Fourier Series|§6]] (Fourier coefficients)
+*Uses:* [[§39 Potential in a Disk#^prop-39-1|§39.1]], [[§1★ Homogeneous Linear Equations#^thm-1-5|§1.5]] (Cauchy–Euler), [[§35 Potential Equation#^ex-35-3|Ex. §35.3]], [[§6 Periodic Functions and Fourier Series#^def-6-2|Def. §6.2]] (Fourier coefficients)
 
-If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of the absolute values of its Fourier coefficients is finite ([[§9 Uniform Convergence|§9]]); since $|a_nr^n| \le |a_nc^n|$ and $|b_nr^n| \le |b_nc^n|$, the M-test then shows that (10) converges uniformly on the closed disk $r \le c$, so $v$ is continuous up to the boundary and takes the values $f$ there. Inside the disk no smoothness of $f$ is needed: since $|c^na_n|, |c^nb_n| \le \frac1\pi\int_{-\pi}^{\pi}|f|$, the terms of (10) are bounded by a constant times $(r/c)^n$, and the series converges uniformly on every smaller disk $r \le r_0 < c$, together with all its term-by-term derivatives.
+If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of the absolute values of its Fourier coefficients is finite ([[§9 Uniform Convergence#^rem-9-2|§9]], the remark after Theorem §9.3); since $|a_nr^n| \le |a_nc^n|$ and $|b_nr^n| \le |b_nc^n|$, the M-test then shows that (10) converges uniformly on the closed disk $r \le c$, so $v$ is continuous up to the boundary and takes the values $f$ there. Inside the disk no smoothness of $f$ is needed: since $|c^na_n|, |c^nb_n| \le \frac1\pi\int_{-\pi}^{\pi}|f|$, the terms of (10) are bounded by a constant times $(r/c)^n$, and the series converges uniformly on every smaller disk $r \le r_0 < c$, together with all its term-by-term derivatives.
 
 > [!remark] Remark: Method — The Potential Equation in a Disk
 > Lecture 11.26 organizes the work as follows.
@@ -172,7 +172,7 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 > v = \frac12 + \frac2\pi\tan^{-1}\Big(\frac xc\Big) .
 > $$
 >
-> **Level curves.** The level curves of $v$ are all arcs of circles that pass through the boundary points $r = c$, $\theta = \pm\pi/2$, where $f$ jumps between $0$ and $1$. (Powers asserts this; here is why.) With $z = x + iy$, the same computation in complex form ([[§15★ Complex Methods|§15★]]) gives $v = \frac12 + \frac2\pi\operatorname{Re}\tan^{-1}(z/c)$, and $\tan^{-1}w = \frac{1}{2i}\ln\frac{1 + iw}{1 - iw}$, so
+> **Level curves.** The level curves of $v$ are all arcs of circles that pass through the boundary points $r = c$, $\theta = \pm\pi/2$, where $f$ jumps between $0$ and $1$. (Powers asserts this; here is why.) With $z = x + iy$, the same computation in complex form (as in [[§15★ Complex Methods#^ex-15-1|Example §15.1]]) gives $v = \frac12 + \frac2\pi\operatorname{Re}\tan^{-1}(z/c)$, and $\tan^{-1}w = \frac{1}{2i}\ln\frac{1 + iw}{1 - iw}$, so
 >
 > $$
 > v = \frac12 + \frac1\pi\arg\frac{c + iz}{c - iz} .
@@ -258,7 +258,13 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 > v(r, \theta) = \frac{1}{2\pi}\int_{-\pi}^{\pi}f(\phi)\Big(1 + 2\sum_{n=1}^{\infty}\rho^n\cos\big(n(\theta - \phi)\big)\Big)\,d\phi .
 > $$
 >
-> (Powers does not justify this; here is why it is allowed.) As functions of $\phi$, the terms $f(\phi)\rho^n\cos(n(\theta - \phi))$ are bounded by $M\rho^n$, where $M$ bounds $|f|$, and $\sum M\rho^n < \infty$. By the Weierstrass M-test the series converges uniformly in $\phi$, and a uniformly convergent series may be integrated term by term.
+> (Powers does not justify this; here is why it is allowed.) Let $K(\psi) = 1 + 2\sum_{n=1}^{\infty}\rho^n\cos(n\psi)$ and let $K_N$ be its $N$th partial sum. The terms satisfy $|2\rho^n\cos(n\psi)| \le 2\rho^n$ and $\sum 2\rho^n < \infty$, so by the Weierstrass M-test $K_N \to K$ uniformly in $\psi$. Hence
+>
+> $$
+> \Big|\int_{-\pi}^{\pi}f(\phi)K(\theta - \phi)\,d\phi - \int_{-\pi}^{\pi}f(\phi)K_N(\theta - \phi)\,d\phi\Big| \le \sup_\psi|K(\psi) - K_N(\psi)|\int_{-\pi}^{\pi}|f(\phi)|\,d\phi \to 0 ,
+> $$
+>
+> and the second integral is the $N$th partial sum of the series in (c). So the series in (c) converges to the integral in (d), for any $f$ with $\int|f| < \infty$ (bounded or not).
 >
 > **(e)** Sum the series ([[§15★ Complex Methods|§15★]], Powers' Exercise 1.10.5a). With $\psi = \theta - \phi$ and $w = \rho e^{i\psi}$, $|w| = \rho < 1$, the geometric series gives
 >
@@ -276,7 +282,7 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 
 ^pf-39-3
 
-*Uses:* [[§39 Potential in a Disk#^thm-39-2|§39.2]], [[§15★ Complex Methods|§15★]] (Exercise 1.10.5a), [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]] (M-test), [[§25 More on Uniform Convergence#^thm-25-1|451 Thm. §25.1]] (limit and integral)
+*Uses:* [[§39 Potential in a Disk#^thm-39-2|§39.2]], [[§15★ Complex Methods|§15★]] (Exercise 1.10.5a), [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]] (M-test)
 
 > [!remark]- Connections
 > - The kernel $\frac{c^2 - r^2}{c^2 + r^2 - 2rc\cos(\theta - \phi)}$ is, up to the factor $\frac{1}{2\pi c}$, the normal derivative on the circle of the Green's function of the disk. The general representation of a harmonic function by its boundary values comes from Green's second identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|452 Thm. §17.3]], applied with the fundamental solution $\ln r$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]]; 452 develops these tools but does not compute the kernel of the disk. The half-plane counterpart is [[§38 Potential in Unbounded Regions#^rem-38-2|Remark: The Half-Plane and Its Poisson Formula]].
@@ -365,7 +371,7 @@ This characteristic of solutions of the potential equation is called the **mean 
 ^cor-39-6
 
 > [!proof]+ Proof
-> Their difference $w = u - v$ is also a solution of the potential equation in $R$ (the equation is linear and homogeneous), and it has value $0$ all along the boundary of $R$. By the maximum principle, the maximum and minimum values of $w$ are attained on the boundary, so both are $0$. Therefore $w$ is identically $0$ throughout $R$; in other words, $u$ and $v$ are identical. (If $R$ is not connected, apply this on each connected piece.)
+> Their difference $w = u - v$ is also a solution of the potential equation in $R$ (the equation is linear and homogeneous), and it has value $0$ all along the boundary of $R$. By the maximum principle, the maximum and minimum values of $w$ are attained on the boundary, so both are $0$. Therefore $w$ is identically $0$ throughout $R$; in other words, $u$ and $v$ are identical. (The maximum principle was proved for connected $R$. If $R$ is not connected, apply it on each connected component $R_i$: $R_i$ is a bounded connected open set, and its boundary lies in the boundary of $R$, because a point of $R$ lies in some open component, which is either $R_i$ itself or disjoint from it; so $w = 0$ on the boundary of $R_i$ as well.)
 
 ^pf-39-6
 

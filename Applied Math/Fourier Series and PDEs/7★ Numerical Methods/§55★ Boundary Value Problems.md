@@ -158,7 +158,7 @@ Most boundary value problems that arise in practice cannot be solved in closed f
 ^ex-55-2
 
 > [!remark] Remark: Iterative Solution
-> Elimination is not the only way to solve systems like (7) or (14). Solve the $i$th equation for the $i$th unknown; the resulting formulas refer to one another (the formula for $u_2$ uses $u_1$ and $u_3$, whose formulas use $u_2$). Start from guessed values, feed them through the formulas to get improved values, and repeat until the values settle down. This needs a lot of arithmetic but no strategy, while elimination is the reverse; and it may also work for nonlinear equations, where elimination does not. The Gauss–Seidel version of this idea is the standard method for the large systems of [[§58★ Potential Equation|§58]].
+> Elimination is not the only way to solve systems like (7) or (14). Solve the $i$th equation for the $i$th unknown; the resulting formulas refer to one another (the formula for $u_2$ uses $u_1$ and $u_3$, whose formulas use $u_2$). Start from guessed values, feed them through the formulas to get improved values, and repeat until the values settle down. This needs a lot of arithmetic but no strategy, while elimination is the reverse; and it may also work for nonlinear equations, where elimination does not. The Gauss–Seidel version of this idea is the standard method for the large systems of [[§58★ Potential Equation#^def-58-2|Definition §58.2]].
 
 ^rem-55-2
 
@@ -254,7 +254,7 @@ Since $\delta_i$ is proportional to $(\Delta x)^2$, the exact values $u(x_i)$ ne
 *Powers omits the proof.*
 
 > [!remark] Remark: Why It Works
-> "Nearly satisfying" is not yet "nearly equal". Subtract (20) from (19): the errors $e_i = u(x_i) - u_i$ satisfy the replacement equations with right-hand sides $\delta_i$ and zero boundary data, so $e = A^{-1}\delta$, where $A$ is the matrix of the system. Small $\delta_i$ (consistency) give small $e_i$ only if $A^{-1}$ stays bounded as $n$ grows (stability); the "further conditions" of the theorem are what guarantee this. For example, when $k = 0$ and $p \le 0$ with Dirichlet conditions one can show $|e_i| \le \frac18\max_j|\delta_j|$, so the error is proportional to $(\Delta x)^2$. When $p$ is positive and close to an eigenvalue, $A$ is nearly singular and coarse meshes fail badly; [[§55★ Boundary Value Problems#^ex-55-4|Example §55.4]] shows this. Consistency plus stability is the pattern of the whole chapter; for time-dependent problems stability becomes a condition on the time step ([[§56★ Heat Problems|§56]]).
+> "Nearly satisfying" is not yet "nearly equal". Subtract (20) from (19): the errors $e_i = u(x_i) - u_i$ satisfy the replacement equations with right-hand sides $\delta_i$ and zero boundary data, so $e = A^{-1}\delta$, where $A$ is the matrix of the system. Small $\delta_i$ (consistency) give small $e_i$ only if $A^{-1}$ stays bounded as $n$ grows (stability); the "further conditions" of the theorem are what guarantee this. For example, when $k = 0$ and $p \le 0$ with Dirichlet conditions one can show $|e_i| \le \frac18\max_j|\delta_j|$, so the error is proportional to $(\Delta x)^2$. When $p$ is positive and close to an eigenvalue, $A$ is nearly singular and coarse meshes fail badly; [[§55★ Boundary Value Problems#^ex-55-4|Example §55.4]] shows this. Consistency plus stability is the pattern of the whole chapter; for time-dependent problems stability becomes a condition on the time step ([[§56★ Heat Problems#^cor-56-2|Corollary §56.2]]).
 
 ^rem-55-4
 

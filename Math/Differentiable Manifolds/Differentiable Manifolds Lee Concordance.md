@@ -51,16 +51,16 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 |---|---|
 | [[§1 Point-Set Topology Review\|§1]] Point-set review | Appendix A, *Topological Spaces* and *Connectedness and Compactness* |
 | [[§2 Topological Manifolds\|§2]] Topological manifolds | Chapter 1, *Topological Manifolds*; Problems 1-1 and 1-2 |
-| [[§3 Subspaces and Products\|§3]] Subspaces, products, quotients | Appendix A, *Subspaces, Products, Disjoint Unions, and Quotients*; Problem 1-9 |
+| [[§3 Subspaces and Products\|§3]]–[[§6 Open Quotients and Complex Projective Space\|§6]] Subspaces, products, quotients | Appendix A, *Subspaces, Products, Disjoint Unions, and Quotients*; Problem 1-9 |
 | [[§7 The Regular Value Theorem\|§7]] Regular value theorem | Appendix C (Theorem C.40); Example 1.32; Corollary 5.14 |
-| [[§8 Topological Groups and Classical Matrix Groups\|§8]] Topological and matrix groups | Chapter 7, Examples 7.27–7.30; Propositions 21.34 and 21.35; Problem 7-4 |
+| [[§8 Topological Groups and Classical Matrix Groups\|§8]]–[[§9 The Classical Groups Are Topological Manifolds\|§9]] Topological and matrix groups | Chapter 7, Examples 7.27–7.30; Propositions 21.34 and 21.35; Problem 7-4 |
 | [[§10 Group Actions and Orbit Spaces\|§10]] Actions and orbit spaces | Chapter 7, *Group Actions and Equivariant Maps*; Lemma 21.1, Proposition 21.4 |
-| [[§11 Homogeneous Spaces\|§11]] Homogeneous spaces | Theorems 21.17–21.20; Examples 1.36 and 21.21 |
-| [[§13 Differentiable Structures\|§13]] Differentiable structures | Chapter 1, *Smooth Structures*, Examples 1.22–1.34; Chapter 2 |
+| [[§11 Homogeneous Spaces\|§11]]–[[§12 The Topology of G∕H and Real Grassmannians\|§12]] Homogeneous spaces | Theorems 21.17–21.20; Examples 1.36 and 21.21 |
+| [[§13 Differentiable Structures\|§13]]–[[§15 Smooth Functions and Smooth Maps\|§15]] Differentiable structures | Chapter 1, *Smooth Structures*, Examples 1.22–1.34; Chapter 2 |
 | [[§16 Manifolds in Euclidean Space\|§16]] Manifolds in Euclidean space | Example 1.32; Chapter 5 |
-| [[§17 Linear Algebra Toolkit\|§17]] Vector spaces and matrix groups | Appendix B; Chapter 11 (dual spaces); Example 1.24; Examples 7.27 and 7.29 |
-| [[§20 Tangent Spaces I꞉ The Geometric Picture\|§20]] Tangent spaces I: geometric | Propositions 3.2, 5.37 and 5.38; Theorem 6.30 |
-| [[§22 Tangent Spaces II꞉ Germs\|§22]] Tangent spaces II: abstract | Chapter 3 throughout, including Proposition 3.14 (products) |
+| [[§17 Linear Algebra Toolkit\|§17]]–[[§19 The Orthogonal and Unitary Groups as Smooth Manifolds\|§19]] Vector spaces and matrix groups | Appendix B; Chapter 11 (dual spaces); Example 1.24; Examples 7.27 and 7.29 |
+| [[§20 Tangent Spaces I꞉ The Geometric Picture\|§20]]–[[§21 Transversality\|§21]] Tangent spaces I: geometric | Propositions 3.2, 5.37 and 5.38; Theorem 6.30 |
+| [[§22 Tangent Spaces II꞉ Germs\|§22]]–[[§26 Tangent Vectors as Velocities of Curves\|§26]] Tangent spaces II: abstract | Chapter 3 throughout, including Proposition 3.14 (products) |
 | [[§27 Tangent Spaces III꞉ The Cotangent Space\|§27]] Tangent spaces III: cotangent | Chapter 11, *Covectors*; Problem 11-4 for $I_p/I_p^2$ |
 | [[§28 Local Diffeomorphisms and Submersions\|§28]] Local diffeomorphisms, submersions | Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 |
 | [[§29 Submanifolds\|§29]] Submanifolds | Chapter 5, *Embedded Submanifolds* (Theorem 5.8, Corollary 5.14, Propositions 5.35–5.38) |

@@ -110,7 +110,7 @@ $$
 
 ^thm-24-2
 
-*Powers omits the proof. For $s = p = 1$, $q = 0$ the theorem contains the convergence of Fourier sine and cosine series, [[§8 Convergence of Fourier Series|§8]] (Theorem), proved in [[§12★ Proof of Convergence|§12★]]; the general case is not proved in the vault.*
+*Powers omits the proof. For $s = p = 1$, $q = 0$ the theorem contains the convergence of Fourier sine and cosine series, [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]], proved in [[§12★ Proof of Convergence#^thm-12-4|Theorem §12.4]] and [[§12★ Proof of Convergence#^cor-12-5|Corollary §12.5]]; the general case is not proved in the vault.*
 
 > [!remark]- Connections
 > - The mean-square counterpart: the normalized eigenfunctions (remark below) form an orthonormal basis of the weighted $L^2$ space in the sense of [[§20 Orthonormal Sets and Bases#^def-20-4|556 Def. §20.4]], characterized by Parseval's equality in [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]]; the case $\phi'' + \lambda^2\phi = 0$ with periodic conditions is the Fourier basis, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]].
@@ -136,14 +136,14 @@ Notice the similarity to the Fourier series convergence theorem: at a jump the s
 ^rem-24-1
 
 > [!remark] Remark: Fourier Series as Eigenfunction Expansions
-> For $\phi'' + \lambda^2\phi = 0$ on $0 < x < a$ with $\phi(0) = \phi(a) = 0$, the eigenfunctions are $\sin(n\pi x/a)$, $\int_0^a \sin^2(n\pi x/a)\,dx = a/2$, and the coefficient formula gives $c_n = \frac2a\int_0^a f(x)\sin(n\pi x/a)\,dx$: the Fourier sine series of [[§7 Arbitrary Period and Half-Range Expansions|§7]]. With $\phi'(0) = \phi'(a) = 0$ the eigenfunctions are $1$ (norm $a$) and $\cos(n\pi x/a)$ (norm $a/2$), giving the cosine series with $a_0 = \frac1a\int_0^a f\,dx$. What is new in general is only that the normalizing integrals differ from one eigenfunction to the next and have to be computed.
+> For $\phi'' + \lambda^2\phi = 0$ on $0 < x < a$ with $\phi(0) = \phi(a) = 0$, the eigenfunctions are $\sin(n\pi x/a)$, $\int_0^a \sin^2(n\pi x/a)\,dx = a/2$, and the coefficient formula gives $c_n = \frac2a\int_0^a f(x)\sin(n\pi x/a)\,dx$: the Fourier sine series of [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]. With $\phi'(0) = \phi'(a) = 0$ the eigenfunctions are $1$ (norm $a$) and $\cos(n\pi x/a)$ (norm $a/2$), giving the cosine series with $a_0 = \frac1a\int_0^a f\,dx$. What is new in general is only that the normalizing integrals differ from one eigenfunction to the next and have to be computed.
 
 ^rem-24-2
 
 ## Examples
 
 > [!example] Example §24.1: Coefficients for the Convection Eigenfunctions
-> The transient $w = u - v$ of the convection problem of [[§22 Example꞉ Convection|§22]] satisfies $w_{xx} = \frac1kw_t$ on $0 < x < a$ with $w(0, t) = 0$, $hw(a, t) + \kappa w_x(a, t) = 0$ and $w(x, 0) = g(x)$. Its basic solutions are $\sin(\lambda_nx)e^{-\lambda_n^2kt}$, where $\tan(\lambda_na) = -\kappa\lambda_n/h$, and
+> The transient $w = u - v$ of the convection problem of [[§22 Example꞉ Convection#^thm-22-3|Theorem §22.3]] satisfies $w_{xx} = \frac1kw_t$ on $0 < x < a$ with $w(0, t) = 0$, $hw(a, t) + \kappa w_x(a, t) = 0$ and $w(x, 0) = g(x)$. Its basic solutions are $\sin(\lambda_nx)e^{-\lambda_n^2kt}$, where $\tan(\lambda_na) = -\kappa\lambda_n/h$, and
 >
 > $$
 > w(x, t) = \sum_{n=1}^\infty c_n\sin(\lambda_nx)e^{-\lambda_n^2kt}, \qquad g(x) = w(x, 0) = \sum_{n=1}^\infty c_n\sin(\lambda_nx) .

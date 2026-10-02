@@ -32,7 +32,7 @@ The submersions that look locally like the projection $U \times F \to U$. Their 
 
 > [!remark]- Connections
 > - The first major example: [[§31 The Tangent Bundle#^cor-31-3|the tangent bundle, §31.3]]; sections of a fibration: [[§31 The Tangent Bundle#^def-31-3|Def. §31.3]].
-> - The topological analogue with discrete fibre: [[§24 Covering Spaces#^def-24-2|covering maps, 590 Def. §24.2]]; in 591, [[§28 Local Diffeomorphisms and Submersions#^rem-28-2|Remark: Covering Maps (§14)]].
+> - The topological analogue with discrete fibre: [[§24 Covering Spaces#^def-24-2|covering maps, 590 Def. §24.2]]; in 591, [[§28 Local Diffeomorphisms and Submersions#^rem-28-2|Remark: Covering Maps (§28)]].
 
 ![[m591-16-1.svg]]
 *The local trivialization $\phi_\alpha$ over $U_\alpha$: the triangle commutes, $\mathrm{pr}_1 \circ \phi_\alpha = \pi|$.*
@@ -81,7 +81,7 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 *The fibres of the Hopf fibration for $n = 1$, $S^3 \to \mathbb{CP}^1$, made visible in $\mathbb{R}^3$ by stereographic projection of $S^3$ from the point $(0, 1)$. Blue: the fibre through $(1, 0)$, which projects to the unit circle, and the fibre through $(0, 1)$ itself, which projects to the vertical axis closed up at infinity. Red: two more fibres, through points with $|z_1| = |z_2|$. Each fibre is a circle $\{\lambda z : |\lambda| = 1\}$, no two meet, and any two are linked: over each $U_j$ the circles sit side by side as in $U_j \times S^1$, but globally they are woven together.*
 
 > [!remark]- Connections
-> - $\mathbb{CP}^n$ as the orbit space $S^{2n+1}/\mathrm{U}(1)$: [[§10 Group Actions and Orbit Spaces#^ex-10-3|Ex. §10.3]]. The Hopf fibration has no section: [[§31 The Tangent Bundle#^rem-31-3|Remark: Sections Need Not Exist (§17)]].
+> - $\mathbb{CP}^n$ as the orbit space $S^{2n+1}/\mathrm{U}(1)$: [[§10 Group Actions and Orbit Spaces#^ex-10-3|Ex. §10.3]]. The Hopf fibration has no section: [[§31 The Tangent Bundle#^rem-31-3|Remark: Sections Need Not Exist (§31)]].
 
 With [[§30 Fibrations#^prop-30-1|Proposition §30.1]](2), this also proves [[§28 Local Diffeomorphisms and Submersions#^ex-28-5|Example §28.5]], which Lecture 10 stated without proof: the projection $S^{2n+1} \to \mathbb{CP}^n$ is a submersion. Its fibres are the circles $\{\lambda z : |\lambda| = 1\}$.
 
@@ -91,7 +91,7 @@ With [[§30 Fibrations#^prop-30-1|Proposition §30.1]](2), this also proves [[§
 ^rem-30-1
 
 > [!remark]- Connections
-> - [[§31 The Tangent Bundle#^cor-31-3|The tangent bundle is a fibration, §31.3]]; [[§31 The Tangent Bundle#^def-31-5|the cotangent bundle, Def. §31.5]]; [[§31 The Tangent Bundle#^rem-31-2|Remark: Vector Bundles (§17)]].
+> - [[§31 The Tangent Bundle#^cor-31-3|The tangent bundle is a fibration, §31.3]]; [[§31 The Tangent Bundle#^def-31-5|the cotangent bundle, Def. §31.5]]; [[§31 The Tangent Bundle#^rem-31-2|Remark: Vector Bundles (§31)]].
 
 **Transcription note.** Stating the idea of a fibration, Uribe first said “$U$ open in $M$”; a student corrected it to open in $B$, as in the definition.
 

@@ -16,7 +16,7 @@ The plain vibrating string seldom needs numerical methods, since d'Alembert's so
 
 ## The Scheme
 
-The vibrating string problem of [[§29 The Vibrating String|§29]], with $c = 1$, is
+The vibrating string problem of [[§29 The Vibrating String#^def-29-3|Definition §29.3]], with $c = 1$, is
 
 $$
 \frac{\partial^2u}{\partial x^2} = \frac{\partial^2u}{\partial t^2}, \quad 0 < x < 1, \ 0 < t; \qquad u(0, t) = 0, \quad u(1, t) = 0; \qquad u(x, 0) = f(x), \quad \frac{\partial u}{\partial t}(x, 0) = g(x) . \qquad (1)\text{–}(3)
@@ -135,7 +135,7 @@ The running equation needs levels $m$ and $m - 1$ to produce level $m + 1$. For 
 ^prop-57-2
 
 > [!proof]+ Proof
-> Powers asserts this for Example §57.1 ("easy to check"); here is why it holds in general. Let $\bar f$ be the odd, $2$-periodic extension of $f$, and let $h = \Delta x = \Delta t$. By d'Alembert's formula ([[§31 d'Alembert's Solution|§31]]) the solution is $u(x, t) = \frac12\big[\bar f(x - t) + \bar f(x + t)\big]$.
+> Powers asserts this for Example §57.1 ("easy to check"); here is why it holds in general. Let $\bar f$ be the odd, $2$-periodic extension of $f$, and let $h = \Delta x = \Delta t$. By d'Alembert's formula ([[§31 d'Alembert's Solution#^thm-31-3|Theorem §31.3]]) the solution is $u(x, t) = \frac12\big[\bar f(x - t) + \bar f(x + t)\big]$.
 >
 > **Running equation.** Every function of the form $\phi(x + t) + \psi(x - t)$ satisfies the running equation with $\rho = 1$ exactly. Indeed, at $x = x_i$, $t = t_m$,
 >
@@ -157,7 +157,7 @@ The running equation needs levels $m$ and $m - 1$ to produce level $m + 1$. For 
 
 ^pf-57-2
 
-*Uses:* [[§57★ Wave Equation#^def-57-1|Def. §57.1]], [[§57★ Wave Equation#^prop-57-1|§57.1]], [[§31 d'Alembert's Solution|§31]] (d'Alembert's formula)
+*Uses:* [[§57★ Wave Equation#^def-57-1|Def. §57.1]], [[§57★ Wave Equation#^prop-57-1|§57.1]], [[§31 d'Alembert's Solution#^thm-31-3|§31.3]] (d'Alembert's formula)
 
 > [!remark] Remark: When the Scheme Is Only Approximate
 > The proof uses two special features: $\rho = 1$, and an initial velocity that is zero. With $g \ne 0$ the running equation is still exact, but the starting value $\Delta t\,g(x_i)$ only approximates the exact contribution $\frac12\int_{x_i - \Delta t}^{x_i + \Delta t}\bar g(s)\,ds$, and that error is carried along ([[§57★ Wave Equation#^ex-57-4|Example §57.4]]). With $\rho < 1$ the running equation is no longer exact either.
@@ -215,7 +215,7 @@ The running equation needs levels $m$ and $m - 1$ to produce level $m + 1$. For 
 > \mu^2 - 2\big(1 - 2\rho^2s^2\big)\mu + 1 = 0, \qquad s = \sin\frac{k\pi\Delta x}{2} .
 > $$
 >
-> The two roots have product $1$. If $|1 - 2\rho^2s^2| \le 1$ they are complex conjugates of absolute value $1$ (or a double root $\pm1$), and the mode oscillates without growing, like the true mode $\cos(k\pi t)$. If $1 - 2\rho^2s^2 < -1$, that is $\rho s > 1$, the roots are real and one of them is less than $-1$: the mode grows and alternates in sign. Since $s^2$ comes close to $1$ for the highest mode, no growth for any mode means $\rho \le 1$, which is what the rule gives. In Example §57.2 ($\rho^2 = 2$, $k = 3$, $s^2 \approx 0.854$) the roots are about $-4.6$ and $-0.22$, matching the growth in the table.
+> The two roots have product $1$. If $|1 - 2\rho^2s^2| \le 1$ they are complex conjugates of absolute value $1$ (or a double root $\pm1$), and the mode oscillates without growing, like the true mode $\cos(k\pi t)$. If $1 - 2\rho^2s^2 < -1$, that is $\rho s > 1$, the roots are real and one of them is less than $-1$: the mode grows and alternates in sign. For the highest mode $s^2 = \cos^2\frac{\pi\Delta x}{2}$, which tends to $1$ as the mesh is refined; so no growth for any mode on every mesh means $\rho \le 1$, which is what the rule gives. In Example §57.2 ($\rho^2 = 2$, $k = 3$, $s^2 \approx 0.854$) the roots are about $-4.6$ and $-0.22$, matching the growth in the table.
 
 ^rem-57-3
 
@@ -282,7 +282,7 @@ The running equation needs levels $m$ and $m - 1$ to produce level $m + 1$. For 
 > | $6$ | $-3.6213$ | $-5.1213$ | $-3.6213$ |
 > | $7$ | $-2.9142$ | $-4.3284$ | $-2.9142$ |
 >
-> **Exact solution.** Expand the forcing in the eigenfunctions of [[§30 Solution of the Vibrating String Problem|§30]]: $16 = \sum_{n\ \mathrm{odd}}\frac{64}{n\pi}\sin(n\pi x)$. The coefficient $a_n(t)$ of $\sin(n\pi x)$ then satisfies $a_n'' + n^2\pi^2a_n = \frac{64}{n\pi}\cos(\pi t)$, $a_n(0) = a_n'(0) = 0$. For $n = 1$ the forcing frequency equals the natural frequency $\pi$ (resonance), and $a_1 = \frac{32}{\pi^2}t\sin(\pi t)$; for odd $n \ge 3$, $a_n = \frac{64}{\pi^3n(n^2 - 1)}\big(\cos\pi t - \cos n\pi t\big)$. So
+> **Exact solution.** Expand the forcing in the eigenfunctions $\sin(n\pi x)$ of [[§30 Solution of the Vibrating String Problem#^thm-30-2|Theorem §30.2]]: $16 = \sum_{n\ \mathrm{odd}}\frac{64}{n\pi}\sin(n\pi x)$. The coefficient $a_n(t)$ of $\sin(n\pi x)$ then satisfies $a_n'' + n^2\pi^2a_n = \frac{64}{n\pi}\cos(\pi t)$, $a_n(0) = a_n'(0) = 0$. For $n = 1$ the forcing frequency equals the natural frequency $\pi$ (resonance), and $a_1 = \frac{32}{\pi^2}t\sin(\pi t)$; for odd $n \ge 3$, $a_n = \frac{64}{\pi^3n(n^2 - 1)}\big(\cos\pi t - \cos n\pi t\big)$. So
 >
 > $$
 > u(x, t) = \frac{32}{\pi^2}t\sin(\pi t)\sin(\pi x) + \frac{32}{\pi^3}\sum_{n = 3}^\infty\frac{1 - \cos(n\pi)}{n(n^2 - 1)}\big(\cos(\pi t) - \cos(n\pi t)\big)\sin(n\pi x) .

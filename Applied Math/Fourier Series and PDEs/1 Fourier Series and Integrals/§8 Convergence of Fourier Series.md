@@ -124,7 +124,7 @@ Most functions useful in mathematical modeling are sectionally smooth. Fortunate
 
 ^thm-8-1
 
-*Powers states the theorem here without proof and proves it in Section 1.7: [[§12★ Proof of Convergence#^thm-12-4|Theorem §12.4]]. The rigorous subjects of the vault treat Fourier series only in the mean (see Connections), so §12★ is the home of this proof.*
+*Powers states the theorem here without proof and proves it in Section 1.7: [[§12★ Proof of Convergence#^thm-12-4|Theorem §12.4]] (period $2\pi$), extended to period $2a$ in [[§12★ Proof of Convergence#^cor-12-5|Corollary §12.5]]. The rigorous subjects of the vault treat Fourier series only in the mean (see Connections), so §12★ is the home of this proof.*
 
 > [!remark]- Connections
 > - In Functional Analysis the trigonometric functions form an orthonormal basis of $L^2$, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]], so every square-integrable $f$ is the sum of its Fourier series in the $L^2$ norm, "not necessarily pointwise" ([[§20 Orthonormal Sets and Bases#^rem-20-9|556 Remark: Fourier Series]]); Lay's version for continuous $f$ is [[§47 Applications of Inner Product Spaces#^thm-47-4|235 Thm. §47.4]]. Theorem §8.1 is the pointwise statement, at the price of the smoothness hypothesis; convergence in the mean is [[§11★ Mean Error and Convergence in Mean#^thm-11-6|Theorem §11.6]].

@@ -11,7 +11,7 @@ tags: [fourier-series-and-pdes, math341]
 
 *Powers, Section 3.1 · MAT 341 lecture 10.29 · HW 10.*
 
-This section derives the equation of motion of a taut string, like a guitar or violin string, from Newton's second law applied to a short piece of it. The result is the one-dimensional **wave equation** $u_{xx} = u_{tt}/c^2$, where $u(x, t)$ is the transverse displacement and $c^2 = T/\rho$ is tension over linear density; $c$ turns out to be the speed at which waves travel along the string ([[§31 d'Alembert's Solution|§31]]). Because Newton's law is second order in time, the problem needs two initial conditions, the initial shape and the initial velocity, where the heat equation needed one. The same derivation with extra forces gives the forced and the damped string, which reappear in the course problems of [[§32 One-Dimensional Wave Equation꞉ Generalities|§32]].
+This section derives the equation of motion of a taut string, like a guitar or violin string, from Newton's second law applied to a short piece of it. The result is the one-dimensional **wave equation** $u_{xx} = u_{tt}/c^2$, where $u(x, t)$ is the transverse displacement and $c^2 = T/\rho$ is tension over linear density; $c$ turns out to be the speed at which waves travel along the string ([[§31 d'Alembert's Solution#^def-31-1|Definition §31.1]]). Because Newton's law is second order in time, the problem needs two initial conditions, the initial shape and the initial velocity, where the heat equation needed one. The same derivation with extra forces gives the forced and the damped string, which reappear in the course problems [[§32 One-Dimensional Wave Equation꞉ Generalities#^ex-32-2|Example §32.2]] and [[§32 One-Dimensional Wave Equation꞉ Generalities#^ex-32-3|Example §32.3]].
 
 ## Derivation of the Equation of Motion
 
@@ -112,7 +112,7 @@ If $c^2$ is very large (usually on the order of $10^5\ \mathrm{m^2/s^2}$), the l
 
 > [!remark]- Connections
 > - Stewart's version, with $a$ in place of $c$, and the check that $\sin(x - at)$ solves it: [[§92 Partial Derivatives#^def-92-5|Calc Def. §92.5]].
-> - The derivation is Newton's law for a continuum of masses coupled by tension; for a single mass on a spring it gives the oscillator equation $mu'' + ku = 0$, [[§19 Mechanical and Electrical Vibrations#^prop-19-1|331 Prop. §19.1]]. Each mode of the string in [[§30 Solution of the Vibrating String Problem|§30]] is exactly such an oscillator.
+> - The derivation is Newton's law for a continuum of masses coupled by tension; for a single mass on a spring it gives the oscillator equation $mu'' + ku = 0$, [[§19 Mechanical and Electrical Vibrations#^prop-19-1|331 Prop. §19.1]]. Each mode of the string, [[§30 Solution of the Vibrating String Problem#^def-30-1|Definition §30.1]], is exactly such an oscillator.
 
 ## The Vibrating String Problem
 
@@ -170,7 +170,7 @@ To describe the motion of an object, one must specify both its equation of motio
 > v(x) = \frac{g}{2c^2}\big(x^2 - ax\big) = -\frac{g}{2c^2}\,x(a - x) ,
 > $$
 >
-> a parabola sagging below the axis, deepest at the middle with $v(a/2) = -ga^2/(8c^2)$. For $a = 1\ \mathrm{m}$ and $c^2 = 10^5\ \mathrm{m^2/s^2}$ the sag is $9.8/(8 \cdot 10^5) \approx 1.2 \times 10^{-5}\ \mathrm{m}$, about a hundredth of a millimetre: this is why gravity is neglected in (6). Powers calls $v$ an **equilibrium solution**; "steady state" is not appropriate, because, as [[§32 One-Dimensional Wave Equation꞉ Generalities|§32]] shows, $u$ does not tend to $v$.
+> a parabola sagging below the axis, deepest at the middle with $v(a/2) = -ga^2/(8c^2)$. For $a = 1\ \mathrm{m}$ and $c^2 = 10^5\ \mathrm{m^2/s^2}$ the sag is $9.8/(8 \cdot 10^5) \approx 1.2 \times 10^{-5}\ \mathrm{m}$, about a hundredth of a millimetre: this is why gravity is neglected in (6). Powers calls $v$ an **equilibrium solution**; "steady state" is not appropriate, because, as [[§32 One-Dimensional Wave Equation꞉ Generalities#^rem-32-1|§32]] shows, $u$ does not tend to $v$.
 >
 > HW 10 asks the same for $u_{tt} = u_{xx} - F$ (that is, $c = 1$ and a constant downward force, as with $F = g$): the equilibrium problem $0 = v'' - F$, $v(0) = v(a) = 0$ has the solution $v(x) = \frac{F}{2}(x^2 - ax)$. The full problem is solved in [[§32 One-Dimensional Wave Equation꞉ Generalities#^ex-32-2|Example §32.2]].
 >

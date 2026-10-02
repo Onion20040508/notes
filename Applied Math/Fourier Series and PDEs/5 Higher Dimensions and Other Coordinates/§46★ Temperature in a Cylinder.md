@@ -12,11 +12,11 @@ tags: [fourier-series-and-pdes, math341, extension]
 *Powers, Section 5.6.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
-This section solves the heat equation in a long cylinder whose temperature depends only on the distance $r$ from the axis, the first full use of Bessel functions. A problem that is two-dimensional in rectangular coordinates becomes one-dimensional in polar coordinates, and separation of variables leads to Bessel's equation of order $0$; the eigenfunctions are $J_0(\lambda_n r)$, where $\lambda_n a$ runs through the zeros of $J_0$, and they play the role that $\sin(n\pi x/a)$ played for the rod in [[§19 Example꞉ Fixed End Temperatures|§19]]. The new tool is the **Fourier–Bessel series**: the eigenfunctions are orthogonal with weight $r$, which gives the coefficient formula, and a convergence theorem like the one for Fourier series guarantees that the initial condition can be met. Physically this is the cooling of a cylinder (or the diffusion of a substance in one) whose surface is held at temperature zero; the same eigenvalue problem gives the radially symmetric vibrations of a drum in [[§47★ Vibrations of a Circular Membrane|§47]].
+This section solves the heat equation in a long cylinder whose temperature depends only on the distance $r$ from the axis, the first full use of Bessel functions. A problem that is two-dimensional in rectangular coordinates becomes one-dimensional in polar coordinates, and separation of variables leads to Bessel's equation of order $0$; the eigenfunctions are $J_0(\lambda_n r)$, where $\lambda_n a$ runs through the zeros of $J_0$, and they play the role that $\sin(n\pi x/a)$ played for the rod in [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|Theorem §19.2]]. The new tool is the **Fourier–Bessel series**: the eigenfunctions are orthogonal with weight $r$, which gives the coefficient formula, and a convergence theorem like the one for Fourier series guarantees that the initial condition can be met. Physically this is the cooling of a cylinder (or the diffusion of a substance in one) whose surface is held at temperature zero; the same eigenvalue problem gives the radially symmetric vibrations of a drum in [[§47★ Vibrations of a Circular Membrane#^prop-47-1|Proposition §47.1]].
 
 ## The Problem and Separation of Variables
 
-If the unknown function $v(r, \theta, t)$ does not depend on the angle $\theta$ (write $v(r, t)$), the polar form of the two-dimensional Laplacian ([[§44★ Problems in Polar Coordinates|§44]]) loses its $\theta$-term:
+If the unknown function $v(r, \theta, t)$ does not depend on the angle $\theta$ (write $v(r, t)$), the polar form of the two-dimensional Laplacian ([[§44★ Problems in Polar Coordinates#^def-44-1|Definition §44.1]]) loses its $\theta$-term:
 
 $$
 \nabla^2 v = \frac{1}{r}\frac{\partial}{\partial r}\Big(r\frac{\partial v}{\partial r}\Big) .
@@ -50,7 +50,7 @@ $$
 \phi(a) = 0 . \qquad (7)
 $$
 
-Equation (6) is Bessel's equation with $\mu = 0$ ([[§45★ Bessel's Equation|§45]], Summary), whose general solution is $AJ_0(\lambda r) + BY_0(\lambda r)$. Since $Y_0$ becomes infinite as $r \to 0$ and an infinite temperature on the axis is physically unacceptable, we add the **boundedness condition**
+Equation (6) is Bessel's equation with $\mu = 0$ ([[§45★ Bessel's Equation#^thm-45-5|Theorem §45.5]], Powers' Summary), whose general solution is $AJ_0(\lambda r) + BY_0(\lambda r)$. Since $Y_0$ becomes infinite as $r \to 0$ and an infinite temperature on the axis is physically unacceptable, we add the **boundedness condition**
 
 $$
 |v(r, t)| \ \text{bounded at } r = 0 , \qquad (8)
@@ -80,21 +80,23 @@ which will be used again and again: at the singular point $r = 0$ of (6) it take
 ^prop-46-1
 
 > [!proof]+ Proof
-> **The separation constant is negative.** (Powers names the constant $-\lambda^2$ without discussing the other signs; here is why they give nothing.) If the constant is $0$, then $(r\phi')' = 0$, so $r\phi' = B$ and $\phi = A + B\ln r$; boundedness at $0$ forces $B = 0$, and $\phi(a) = A = 0$. If the constant is positive, $+\mu^2$ with $\mu > 0$, then $(r\phi')' - \mu^2r\phi = 0$ is the modified Bessel equation of order $0$ ([[§45★ Bessel's Equation|§45]], Eq. (7)), whose solution bounded at $r = 0$ is $AI_0(\mu r)$ with
+> **The separation constant is negative.** (Powers names the constant $-\lambda^2$ without discussing the other signs; here is why they give nothing.) If the constant is $0$, then $(r\phi')' = 0$, so $r\phi' = B$ and $\phi = A + B\ln r$; boundedness at $0$ forces $B = 0$, and $\phi(a) = A = 0$. If the constant is positive, $+\mu^2$ with $\mu > 0$, then $(r\phi')' - \mu^2r\phi = 0$ is the modified Bessel equation of order $0$ ([[§45★ Bessel's Equation#^def-45-4|Definition §45.4]]), whose solution bounded at $r = 0$ is $AI_0(\mu r)$ with
 >
 > $$
-> I_0(\mu r) = \sum_{m=0}^{\infty} \frac{1}{(m!)^2}\Big(\frac{\mu r}{2}\Big)^{2m} \ge 1 ;
+> I_0(\mu r) = \sum_{m=0}^{\infty} \frac{1}{(m!)^2}\Big(\frac{\mu r}{2}\Big)^{2m} \ge 1
 > $$
 >
-> so $\phi(a) = AI_0(\mu a) = 0$ forces $A = 0$.
+> ([[§45★ Bessel's Equation#^thm-45-10|Theorem §45.10]]); so $\phi(a) = AI_0(\mu a) = 0$ forces $A = 0$.
 >
 > **The constant $-\lambda^2$, $\lambda > 0$.** The general solution of (6) is $\phi = AJ_0(\lambda r) + BY_0(\lambda r)$. Since $|Y_0(\lambda r)| \to \infty$ as $r \to 0$ while $J_0(0) = 1$, boundedness at $r = 0$ requires $B = 0$. Then (7) reads $AJ_0(\lambda a) = 0$, and a nonzero solution needs $A \ne 0$, so $J_0(\lambda a) = 0$: $\lambda a$ must be one of the zeros $\alpha_n$, giving (9). Conversely each $\phi_n = J_0(\lambda_n r)$ solves the problem. ($J_0$ is even, so negative values of $\lambda$ give nothing new.)
 >
 > **Zeros.** $J_0(\lambda_n r) = 0$ for $0 < r < a$ exactly when $\lambda_n r = \alpha_k$ for some $\alpha_k < \alpha_n$, that is, $r = \alpha_k/\lambda_n = (\alpha_k/\alpha_n)a$ with $k < n$.
+>
+> (The same problem, in Powers' Exercises 5.5.1–5.5.2, is [[§45★ Bessel's Equation#^ex-45-2|Example §45.2]].)
 
 ^pf-46-1
 
-*Uses:* [[§45★ Bessel's Equation|§45]] (Summary; series (5); Table 1; modified Bessel function $I_0$)
+*Uses:* [[§45★ Bessel's Equation#^thm-45-5|§45.5]], [[§45★ Bessel's Equation#^thm-45-6|§45.6]] (the zeros $\alpha_n$), [[§45★ Bessel's Equation#^def-45-4|Def. §45.4]], [[§45★ Bessel's Equation#^thm-45-10|§45.10]]
 
 ![[m341-46-2.svg]]
 *The first three eigenfunctions $J_0(\lambda_n r)$, $\lambda_n = \alpha_n/a$, of Proposition §46.1. All equal $1$ on the axis and $0$ at the wall; $J_0(\lambda_n r)$ has $n - 1$ interior zeros, like $\sin(n\pi x/a)$, but its oscillations are not equally spaced and their amplitude decreases away from the axis.*
@@ -113,7 +115,7 @@ $$
 
 ## Fourier–Bessel Series
 
-The eigenvalue problem of Proposition §46.1 is not a regular Sturm–Liouville problem ([[§23 Sturm–Liouville Problems|§23]]): in the form $(s\phi')' - q\phi + \lambda^2p\phi = 0$ it has $s(r) = p(r) = r$, which vanish at the endpoint $r = 0$. Its eigenfunctions are nevertheless orthogonal, with the weight $p(r) = r$.
+The eigenvalue problem of Proposition §46.1 is not a regular Sturm–Liouville problem ([[§23 Sturm–Liouville Problems#^def-23-1|Definition §23.1]]): in the form $(s\phi')' - q\phi + \lambda^2p\phi = 0$ it has $s(r) = p(r) = r$, which vanish at the endpoint $r = 0$. Its eigenfunctions are nevertheless orthogonal, with the weight $p(r) = r$.
 
 > [!theorem] Proposition §46.2: Orthogonality of the Functions J₀(λₙr)
 > If $\lambda_n = \alpha_n/a$ as in Proposition §46.1, then
@@ -127,7 +129,7 @@ The eigenvalue problem of Proposition §46.1 is not a regular Sturm–Liouville 
 ^prop-46-2
 
 > [!proof]+ Proof
-> Powers refers to the Sturm–Liouville argument of [[§23 Sturm–Liouville Problems|§23]] (Theorem 1) and its singular version, Exercise 2.7.6; here it is for this problem. The eigenfunctions satisfy
+> Powers refers to the Sturm–Liouville argument of [[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]] and its singular version, Exercise 2.7.6; here it is for this problem. The eigenfunctions satisfy
 >
 > $$
 > (r\phi_n')' = -\lambda_n^2r\phi_n, \qquad (r\phi_m')' = -\lambda_m^2r\phi_m .
@@ -149,7 +151,7 @@ The eigenvalue problem of Proposition §46.1 is not a regular Sturm–Liouville 
 
 ^pf-46-2
 
-*Uses:* [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]], [[§23 Sturm–Liouville Problems|§23]] (Theorem 1)
+*Uses:* [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]], [[§23 Sturm–Liouville Problems#^thm-23-2|§23.2]] (the same computation)
 
 > [!remark]- Connections
 > - Finite-dimensional analogue: eigenvectors of a self-adjoint (indeed of any normal) operator for distinct eigenvalues are orthogonal, [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]. Here the operator is $\phi \mapsto -\frac{1}{r}(r\phi')'$ on functions with $\phi(a) = 0$, bounded at $0$, and the computation above shows that it is symmetric for the weighted inner product $\langle f, g\rangle = \int_0^a f(r)g(r)\,r\,dr$.
@@ -183,10 +185,10 @@ The orthogonality relation tells how to choose the coefficients in (11): multipl
 
 ^thm-46-3
 
-*Powers omits the proof.* It is the analogue of the Fourier convergence theorem, [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]], and of the eigenfunction expansion theorem of [[§24 Expansion in Series of Eigenfunctions|§24]] (Theorem), which Powers states for regular Sturm–Liouville problems only.
+*Powers omits the proof.* It is the analogue of the Fourier convergence theorem, [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]], and of the eigenfunction expansion theorem, [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2]], which Powers states for regular Sturm–Liouville problems only.
 
 > [!remark]- Connections
-> - In the language of Hilbert spaces, the theorem implies that the normalized functions $J_0(\lambda_n r)/\|J_0(\lambda_n r)\|$ form an orthonormal basis of $L^2\big((0, a), r\,dr\big)$: every function orthogonal to all of them is $0$, and then Parseval's equality holds, [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]]. The completeness itself is not proved in the vault.
+> - The Hilbert-space counterpart of the theorem is that the normalized functions $J_0(\lambda_n r)/\|J_0(\lambda_n r)\|$ form an orthonormal basis of $L^2\big((0, a), r\,dr\big)$: every function orthogonal to all of them is $0$, equivalently Parseval's equality holds, [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]]. This completeness is not proved in the vault.
 
 ## Solution of the Heat Problem
 
@@ -204,7 +206,7 @@ The orthogonality relation tells how to choose the coefficients in (11): multipl
 ^prop-46-4
 
 > [!proof]+ Proof
-> Each term $J_0(\lambda_n r)\exp(-\lambda_n^2kt)$ is a product $\phi_n(r)T_n(t)$ with $\phi_n$ an eigenfunction of [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]] and $T_n$ a solution of (5), so it satisfies (1), (2) and (8) by the separation of variables above; hence so does the sum (10). At $t = 0$ the series is the Fourier–Bessel series of $f$, which by [[§46★ Temperature in a Cylinder#^thm-46-3|Theorem §46.3]] converges to $f(r)$ wherever $f$ is continuous, and to the average of the one-sided limits at jumps: this is (3), as nearly as possible. (As for the rod in [[§19 Example꞉ Fixed End Temperatures|§19]], the factors $\exp(-\lambda_n^2kt)$ with $\lambda_n \to \infty$ make the series converge very rapidly for $t > 0$; Powers does not discuss the term-by-term differentiation.)
+> Each term $J_0(\lambda_n r)\exp(-\lambda_n^2kt)$ is a product $\phi_n(r)T_n(t)$ with $\phi_n$ an eigenfunction of [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]] and $T_n$ a solution of (5), so it satisfies (1), (2) and (8) by the separation of variables above; hence so does the sum (10). At $t = 0$ the series is the Fourier–Bessel series of $f$, which by [[§46★ Temperature in a Cylinder#^thm-46-3|Theorem §46.3]] converges to $f(r)$ wherever $f$ is continuous, and to the average of the one-sided limits at jumps: this is (3), as nearly as possible. (As for the rod in [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|Theorem §19.5]], the factors $\exp(-\lambda_n^2kt)$ with $\lambda_n \to \infty$ make the series converge very rapidly for $t > 0$; Powers does not discuss the term-by-term differentiation.)
 
 ^pf-46-4
 
@@ -214,10 +216,10 @@ The orthogonality relation tells how to choose the coefficients in (11): multipl
 > To solve a heat or wave problem in a disk or cylinder, $0 < r < a$, whose data do not depend on $\theta$:
 > 1. Write the Laplacian as $\frac{1}{r}(rv_r)_r$, separate $v = \phi(r)T(t)$, and call the separation constant $-\lambda^2$. The radial equation is Bessel's equation of order $0$, $(r\phi')' + \lambda^2r\phi = 0$.
 > 2. Add the boundedness condition at $r = 0$. It removes $Y_0$ and leaves $\phi = J_0(\lambda r)$.
-> 3. Impose the condition at $r = a$. For $\phi(a) = 0$ it gives $\lambda_n = \alpha_n/a$ with $J_0(\alpha_n) = 0$; for $\phi'(a) = 0$, see [[§48★ Some Applications of Bessel Functions|§48]], Part A.
+> 3. Impose the condition at $r = a$. For $\phi(a) = 0$ it gives $\lambda_n = \alpha_n/a$ with $J_0(\alpha_n) = 0$; for $\phi'(a) = 0$, see [[§48★ Some Applications of Bessel Functions#^prop-48-2|Proposition §48.2]].
 > 4. Solve for the time factors ($\exp(-\lambda_n^2kt)$ for heat, $\cos$ and $\sin(\lambda_nct)$ for waves) and superpose.
 > 5. Find the coefficients from the initial conditions with the weighted orthogonality of Proposition §46.2: formula (12), with the norm of Proposition §46.6.
-> 6. Evaluate the integrals with $\frac{d}{dx}\big(xJ_1(x)\big) = xJ_0(x)$ ([[§46★ Temperature in a Cylinder#^lem-46-5|Lemma §46.5]]) and the values in Table 1 of [[§45★ Bessel's Equation|§45]].
+> 6. Evaluate the integrals with $\frac{d}{dx}\big(xJ_1(x)\big) = xJ_0(x)$ ([[§46★ Temperature in a Cylinder#^lem-46-5|Lemma §46.5]]) and the zeros tabulated in [[§45★ Bessel's Equation#^thm-45-6|Theorem §45.6]].
 
 ^rem-46-1
 
@@ -239,29 +241,11 @@ Two facts about Bessel functions evaluate the integrals in (12) for simple $f$.
 ^lem-46-5
 
 > [!proof]+ Proof
-> By the series (5) of [[§45★ Bessel's Equation|§45]] with $\lambda = 1$,
->
-> $$
-> J_0(x) = \sum_{m=0}^{\infty} \frac{(-1)^m}{(m!)^2}\Big(\frac{x}{2}\Big)^{2m}, \qquad J_1(x) = \sum_{m=0}^{\infty} \frac{(-1)^m}{m!\,(m+1)!}\Big(\frac{x}{2}\Big)^{2m+1} .
-> $$
->
-> Both converge for all $x$ and may be differentiated term by term. The $m = 0$ term of $J_0$ is constant, so
->
-> $$
-> J_0'(x) = \sum_{m=1}^{\infty} \frac{(-1)^m\,2m}{(m!)^2}\frac{x^{2m-1}}{2^{2m}} = \sum_{j=0}^{\infty} \frac{(-1)^{j+1}}{j!\,(j+1)!}\frac{x^{2j+1}}{2^{2j+1}} = -J_1(x) ,
-> $$
->
-> where $m = j + 1$ and $2m/(m!)^2 = 2/\big((m-1)!\,m!\big)$. Next, $xJ_1(x) = \sum_m \frac{(-1)^m}{m!\,(m+1)!}\frac{x^{2m+2}}{2^{2m+1}}$, and
->
-> $$
-> \frac{d}{dx}\big(xJ_1(x)\big) = \sum_{m=0}^{\infty} \frac{(-1)^m\,(2m+2)}{m!\,(m+1)!}\frac{x^{2m+1}}{2^{2m+1}} = x\sum_{m=0}^{\infty} \frac{(-1)^m}{(m!)^2}\frac{x^{2m}}{2^{2m}} = xJ_0(x) ,
-> $$
->
-> since $(2m+2)/(m+1)! = 2/m!$. Integrating the second identity from $0$ to $b$ gives $\int_0^b xJ_0(x)\,dx = bJ_1(b) - 0$, and the chain rule gives $\frac{d}{dr}J_0(\lambda r) = \lambda J_0'(\lambda r) = -\lambda J_1(\lambda r)$.
+> Both identities are proved from the series in [[§45★ Bessel's Equation#^thm-45-7|Theorem §45.7]]: $J_0' = -J_1$ is part (b), and $\frac{d}{dx}\big(xJ_1(x)\big) = xJ_0(x)$ is part (d) with $\mu = 1$. Integrating the second identity from $0$ to $b$ gives $\int_0^b xJ_0(x)\,dx = bJ_1(b) - 0\cdot J_1(0) = bJ_1(b)$ ([[§45★ Bessel's Equation#^cor-45-8|Corollary §45.8]] with $\mu = 0$), and the chain rule gives $\frac{d}{dr}J_0(\lambda r) = \lambda J_0'(\lambda r) = -\lambda J_1(\lambda r)$.
 
 ^pf-46-5
 
-*Uses:* [[§45★ Bessel's Equation|§45]] (series (5)), [[§77 Representations of Functions as Power Series#^ex-77-5|Calc Ex. §77.5]] (term-by-term differentiation of the series of $J_0$)
+*Uses:* [[§45★ Bessel's Equation#^thm-45-7|§45.7]], [[§45★ Bessel's Equation#^cor-45-8|§45.8]]
 
 > [!theorem] Proposition §46.6: The Norm of J₀(λₙr)
 > If $\phi(r) = J_0(\lambda r)$ and $\lambda$ is chosen so that $\phi(a) = 0$, then
@@ -361,6 +345,46 @@ Two facts about Bessel functions evaluate the integrals in (12) for simple $f$.
 >
 > **For small times** many terms are needed. At $kt/a^2 = 0.01$ the first two terms give $0.727$, which is wrong; the full series gives $1.0000$, since the axis has not yet felt the cold wall. At $t = 0$ the series becomes $\sum_n 2/(\alpha_nJ_1(\alpha_n))$, the Fourier–Bessel series of the constant $1$ evaluated at $r = 0$. [[§46★ Temperature in a Cylinder#^thm-46-3|Theorem §46.3]] covers only $0 < r < a$, but this alternating series also converges to $1$, very slowly: the partial sums are $0.78$ after $10$ terms and $0.93$ after $100$.
 >
-> *Powers: 5.6, Table 2 and Figure 8*
+> *Powers: 5.6, Table 2 and Figure 8; Exercise 5.6.1*
 
 ^ex-46-2
+
+> [!example] Example §46.3: Only the Inner Half Initially Hot
+> Solve the heat problem (1)–(3), with (8), if
+>
+> $$
+> f(r) = \begin{cases} T_0, & 0 < r < a/2, \\ 0, & a/2 < r < a. \end{cases}
+> $$
+>
+> **Numerator of (12).** Only $0 < r < a/2$ contributes. Substitute $x = \lambda_n r$, so that $r = a/2$ becomes $x = \alpha_n/2$, and use [[§46★ Temperature in a Cylinder#^lem-46-5|Lemma §46.5]]:
+>
+> $$
+> \int_0^{a/2} T_0J_0(\lambda_n r)\,r\,dr = \frac{T_0}{\lambda_n^2}\int_0^{\alpha_n/2} xJ_0(x)\,dx = \frac{T_0}{\lambda_n^2}\,\frac{\alpha_n}{2}J_1\Big(\frac{\alpha_n}{2}\Big) = T_0\frac{a^2}{2\alpha_n}J_1\Big(\frac{\alpha_n}{2}\Big) .
+> $$
+>
+> **Denominator.** As before, $\frac{a^2}{2}J_1^2(\alpha_n)$ by [[§46★ Temperature in a Cylinder#^prop-46-6|Proposition §46.6]]. Dividing,
+>
+> $$
+> a_n = T_0\,\frac{J_1(\alpha_n/2)}{\alpha_nJ_1^2(\alpha_n)} ,
+> \qquad
+> v(r, t) = T_0\sum_{n=1}^{\infty} \frac{J_1(\alpha_n/2)}{\alpha_nJ_1^2(\alpha_n)}\,J_0(\lambda_n r)\exp(-\lambda_n^2kt) .
+> $$
+>
+> By [[§46★ Temperature in a Cylinder#^prop-46-4|Proposition §46.4]] this solves the problem. The first coefficients (computed with SciPy, and checked by numerical integration of (12)):
+>
+> | $n$ | $\alpha_n$ | $J_1(\alpha_n/2)$ | $J_1^2(\alpha_n)$ | $a_n/T_0$ |
+> |---|---|---|---|---|
+> | 1 | 2.4048 | $+0.4989$ | $0.2695$ | $+0.7698$ |
+> | 2 | 5.5201 | $+0.4228$ | $0.1158$ | $+0.6615$ |
+> | 3 | 8.6537 | $-0.1804$ | $0.0737$ | $-0.2830$ |
+> | 4 | 11.7915 | $-0.2959$ | $0.0540$ | $-0.4643$ |
+>
+> Unlike Example §46.1, the signs do not simply alternate: they follow the sign of $J_1$ at $\alpha_n/2$, which is wherever the jump of $f$ lands on the graph of $J_1$.
+>
+> **The jump.** At $r = a/2$, $f$ jumps from $T_0$ to $0$, so by [[§46★ Temperature in a Cylinder#^thm-46-3|Theorem §46.3]] the series at $t = 0$ converges there to $\frac12(T_0 + 0) = T_0/2$. Numerically, $500$ terms give $0.4996\,T_0$ at $r = a/2$, $1.0014\,T_0$ at $r = a/4$ and $-0.0004\,T_0$ at $r = 3a/4$.
+>
+> **Large times.** Only the first term survives: $v \approx 0.770\,T_0\,J_0(2.405\,r/a)\exp(-5.783\,kt/a^2)$. At $kt/a^2 = 0.2$ this gives $0.242\,T_0$ on the axis (the full series: $0.244\,T_0$). The hot core covers only a quarter of the cross-section, yet the first coefficient is $0.48$ times that of the uniformly hot cylinder ($1.602\,T_0$), not $0.25$ times: the coefficient weighs $f$ against $J_0(\lambda_1 r)$, which is largest near the axis, where the heat sits.
+>
+> *Powers: Exercise 5.6.3*
+
+^ex-46-3

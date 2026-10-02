@@ -51,7 +51,7 @@ tags: [differentiable-manifolds, math591]
 > A quotient space is easy to define and easy to lose track of. Whenever a quotient $X/{\sim}$ appears in these notes, four things are made explicit, and it is worth demanding them of every quotient you meet:
 > 1. **What a point is.** A point of $X/{\sim}$ is an equivalence class $[x]$, i.e. a *subset* of $X$. Say which subset.
 > 2. **What $\pi$ does.** $\pi(x) = [x]$: it sends a point of $X$ to the class containing it.
-> 3. **What the open sets are.** $W \subseteq X/{\sim}$ is open iff $\pi^{-1}(W) = \bigcup_{[x] \in W} [x]$—the union in $X$ of all the classes belonging to $W$—is open in $X$. So the open sets of $X/{\sim}$ correspond exactly to the open subsets of $X$ that are *unions of classes* (the *saturated* open sets, [[§4 Quotient Spaces and Open Maps#Open Maps and Open Relations|§3, Open Maps and Open Relations]]).
+> 3. **What the open sets are.** $W \subseteq X/{\sim}$ is open iff $\pi^{-1}(W) = \bigcup_{[x] \in W} [x]$—the union in $X$ of all the classes belonging to $W$—is open in $X$. So the open sets of $X/{\sim}$ correspond exactly to the open subsets of $X$ that are *unions of classes* (the *saturated* open sets, [[§4 Quotient Spaces and Open Maps#Open Maps and Open Relations|§4, Open Maps and Open Relations]]).
 > 4. **What an identification does.** When $X/{\sim}$ is identified with a concrete space $Y$ via a bijection $\Phi$, say what $\Phi$ does to a class, and what its inverse does to a point of $Y$.
 >
 > For the line with two origins ([[§4 Quotient Spaces and Open Maps#^ex-4-1|Example §4.1]]): a point is a pair $\{(x,1), (x,2)\}$ for $x \neq 0$ or a singleton $\{(0,i)\}$; $\pi$ forgets the label except at $0$; a set is open iff its preimage, a union of such pairs and singletons, is open in the two lines; the identification with [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]] sends $\{(x,1),(x,2)\} \mapsto x$ and $\{(0,i)\} \mapsto 0_i$.
@@ -95,7 +95,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-4-2
 
-The single most useful fact about the quotient topology — that a map *out* of a quotient is continuous as soon as its composite with $\pi$ is, and that a map on $X$ constant on the classes descends to one on $X/{\sim}$ — is [[§5 Quotient Maps#^thm-5-1|Theorem §5.1]] below. It is stated in [[§5 Quotient Maps|§3, Quotient Maps]] because its natural generality is quotient maps rather than quotient spaces.
+The single most useful fact about the quotient topology — that a map *out* of a quotient is continuous as soon as its composite with $\pi$ is, and that a map on $X$ constant on the classes descends to one on $X/{\sim}$ — is [[§5 Quotient Maps#^thm-5-1|Theorem §5.1]] below. It is stated in [[§5 Quotient Maps|§5, Quotient Maps]] because its natural generality is quotient maps rather than quotient spaces.
 
 ## Open Maps and Open Relations
 

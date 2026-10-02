@@ -68,10 +68,10 @@ $$
 
 ^def-20-1
 
-The problem $\phi'' + \lambda^2\phi = 0$, $\phi(0) = \phi(a) = 0$ of [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|Theorem §19.2]] was already an eigenvalue problem (with eigenvalues $(n\pi/a)^2$), and so is the Euler buckling problem of [[§3★ Boundary Value Problems|§3★]] (Powers 0.3).
+The problem $\phi'' + \lambda^2\phi = 0$, $\phi(0) = \phi(a) = 0$ of [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|Theorem §19.2]] was already an eigenvalue problem (with eigenvalues $(n\pi/a)^2$), and so is the Euler buckling problem of [[§3★ Boundary Value Problems#^ex-3-4|Example §3.4]], whose eigenvalues are those of [[§3★ Boundary Value Problems#^prop-3-3|Proposition §3.3]]. The term itself was introduced in [[§3★ Boundary Value Problems#^def-3-3|Definition §3.3]].
 
 > [!remark]- Connections
-> - The analogy is exact: $\phi \mapsto \phi''$ is a linear operator on functions satisfying (7), and (6) says $\phi'' = -\lambda^2\phi$, an eigenvector equation $A\phi = \mu\phi$ with eigenvalue $\mu = -\lambda^2$: [[§32 Eigenvectors and Eigenvalues#^def-32-1|235 Def. §32.1]], [[§14 Invariant Subspaces#^ladr-5-5|LADR 5.5]]. Unlike a matrix it has infinitely many eigenvalues; that the eigenfunctions are orthogonal and complete is the infinite-dimensional analogue of the spectral theorem, [[§23 Sturm–Liouville Problems|§23]] (Powers 2.7).
+> - The analogy is exact: $\phi \mapsto \phi''$ is a linear operator on functions satisfying (7), and (6) says $\phi'' = -\lambda^2\phi$, an eigenvector equation $A\phi = \mu\phi$ with eigenvalue $\mu = -\lambda^2$: [[§32 Eigenvectors and Eigenvalues#^def-32-1|235 Def. §32.1]], [[§14 Invariant Subspaces#^ladr-5-5|LADR 5.5]]. Unlike a matrix it has infinitely many eigenvalues; that the eigenfunctions are orthogonal and complete is the infinite-dimensional analogue of the spectral theorem, [[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]] and [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2]].
 
 > [!theorem] Theorem §20.1: Eigenvalues for Insulated Ends
 > The eigenvalue problem (6)–(7) has the solution
@@ -140,7 +140,7 @@ $$
 > u(x, 0) = a_0 + \sum_{n=1}^\infty a_n\cos(\lambda_nx) = f(x), \qquad 0 < x < a .
 > $$
 >
-> Because $\lambda_n = n\pi/a$, this is a Fourier cosine series problem (the Fourier series of the even periodic extension of $f$, [[§7 Arbitrary Period and Half-Range Expansions|§7]], half-range expansions), and the coefficients are given by (10). For sectionally smooth $f$ the series converges to $f(x)$ wherever $f$ is continuous ([[§8 Convergence of Fourier Series|§8]], Theorem).
+> Because $\lambda_n = n\pi/a$, this is a Fourier cosine series problem (the Fourier series of the even periodic extension of $f$, [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]), and the coefficients are given by (10). For sectionally smooth $f$ the series converges to $f(x)$ wherever $f$ is continuous ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]).
 >
 > Finally, let $M$ bound the $|a_n|$ and fix $t_0 > 0$. For $t \ge t_0$, since $\lambda_n^2 \ge \lambda_1^2$, $e^{-\lambda_n^2kt} \le e^{-\lambda_n^2kt_0}e^{-\lambda_1^2k(t - t_0)}$, so
 >
@@ -152,7 +152,7 @@ $$
 
 ^pf-20-2
 
-*Uses:* [[§20 Example꞉ Insulated Bar#^thm-20-1|§20.1]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-4|§19.4]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|§19.5]], [[§7 Arbitrary Period and Half-Range Expansions|§7]], [[§8 Convergence of Fourier Series|§8]]
+*Uses:* [[§20 Example꞉ Insulated Bar#^thm-20-1|§20.1]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-4|§19.4]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|§19.5]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]], [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]]
 
 > [!remark] Remark: Why the Limit Is the Average
 > The limit $a_0$ is the average of the initial temperature, and the reason is conservation of heat. The total heat in the rod is $\rho cA\int_0^au(x, t)\,dx$, and by the heat equation and the boundary conditions

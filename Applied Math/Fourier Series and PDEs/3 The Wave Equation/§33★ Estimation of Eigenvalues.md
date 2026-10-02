@@ -12,7 +12,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 *Powers, Section 3.5.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
-Often one wants not the full solution of a wave problem but only the frequencies at which a structure can vibrate: bridges, airplane wings and other structures must not be driven at them. By [[§32 One-Dimensional Wave Equation꞉ Generalities|§32]] these frequencies are $\lambda_nc/2\pi$, so the eigenvalues $\lambda_n^2$ of a Sturm–Liouville problem must be found, and for nonuniform coefficients they usually cannot be found exactly. **Rayleigh's method** gives an upper bound for the lowest eigenvalue from any reasonable guess $y$ of the eigenfunction: $\lambda_1^2$ is the minimum of the **Rayleigh quotient** $N(y)/D(y)$, a ratio of two integrals, and a good guess gives a good estimate. In mechanical terms the quotient compares potential and kinetic energy.
+Often one wants not the full solution of a wave problem but only the frequencies at which a structure can vibrate: bridges, airplane wings and other structures must not be driven at them. By [[§32 One-Dimensional Wave Equation꞉ Generalities#^thm-32-2|Theorem §32.2]] these frequencies are $\lambda_nc/2\pi$, so the eigenvalues $\lambda_n^2$ of a Sturm–Liouville problem must be found, and for nonuniform coefficients they usually cannot be found exactly. **Rayleigh's method** gives an upper bound for the lowest eigenvalue from any reasonable guess $y$ of the eigenfunction: $\lambda_1^2$ is the minimum of the **Rayleigh quotient** $N(y)/D(y)$, a ratio of two integrals, and a good guess gives a good estimate. In mechanical terms the quotient compares potential and kinetic energy.
 
 ## The Rayleigh Quotient
 

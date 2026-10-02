@@ -94,7 +94,7 @@ $$
 > | $4$ | $0$ | $0.125$ | $0.25$ | $0.125$ | $0$ |
 > | $5$ | $0$ | $0.125$ | $0.125$ | $0.125$ | $0$ |
 >
-> **Comparison with the exact solution.** By [[§19 Example꞉ Fixed End Temperatures|§19]], the solution is $u(x, t) = \sum_{n \ge 1} \frac{2(-1)^{n+1}}{n\pi}\sin(n\pi x)\,e^{-n^2\pi^2t}$ (here $b_n = 2\int_0^1x\sin(n\pi x)\,dx = \frac{2(-1)^{n+1}}{n\pi}$). At $x = \frac14, \frac12, \frac34$:
+> **Comparison with the exact solution.** By [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|Theorem §19.5]], the solution is $u(x, t) = \sum_{n \ge 1} \frac{2(-1)^{n+1}}{n\pi}\sin(n\pi x)\,e^{-n^2\pi^2t}$ (here $b_n = 2\int_0^1x\sin(n\pi x)\,dx = \frac{2(-1)^{n+1}}{n\pi}$). At $x = \frac14, \frac12, \frac34$:
 >
 > | $t$ | numerical | exact |
 > |---|---|---|
@@ -102,7 +102,7 @@ $$
 > | $\frac4{32}$ ($m = 4$) | $0.125,\ 0.25,\ 0.125$ | $0.129,\ 0.185,\ 0.133$ |
 > | $\frac5{32}$ ($m = 5$) | $0.125,\ 0.125,\ 0.125$ | $0.096,\ 0.136,\ 0.097$ |
 >
-> Four intervals are a very coarse mesh, and the jump of the initial data at $x = 1$ hurts at early times; but the computed temperatures decay at the right rate on average. With $\Delta x = \frac1{40}$, $r = \frac12$ the values at $t = \frac5{32}$ are $0.095$, $0.136$, $0.097$, in agreement with the series.
+> Four intervals are a very coarse mesh, and the jump of the initial data at $x = 1$ hurts at early times; but the computed temperatures decay at the right rate on average. With $\Delta x = \frac1{40}$, $r = \frac12$ (and the same corner value $1$) the values at $t = \frac5{32}$ are $0.096$, $0.137$, $0.097$, within $0.001$ of the series.
 >
 > *Powers: 7.2, Example 1 and Table 4*
 
@@ -174,7 +174,7 @@ The choice $r = \frac12$ simplified the arithmetic. A larger $r$, that is, a lon
 >
 > so the largest difference never grows: the scheme is stable in the sense of Definition §56.2. The same estimate shows that each new value lies between the smallest and largest neighbouring old values (when the sum is $1$), a discrete maximum principle, just as the true temperature never exceeds its initial and boundary values.
 >
-> A negative coefficient breaks this, and the sampled sines show how. For (8), $u_i(m) = \mu^m\sin(k\pi x_i)$ is a solution if $\mu = 1 - 4r\sin^2\frac{k\pi\Delta x}{2}$. The exact solution multiplies the same mode by $e^{-k^2\pi^2\Delta t}$ per step, a number between $0$ and $1$. If $r > \frac12$, then for the highest mode ($k = n - 1$, $\sin^2$ close to $1$) $\mu < -1$, and the mode is amplified and changes sign at every step. In Example §56.2 ($r = 1$, $\Delta x = \frac14$, $k = 3$) the factor is $\mu = 1 - 4\sin^2\frac{3\pi}{8} \approx -2.41$, which is the growth and alternation seen in the table.
+> A negative coefficient breaks this, and the sampled sines show how. For (8), $u_i(m) = \mu^m\sin(k\pi x_i)$ is a solution if $\mu = 1 - 4r\sin^2\frac{k\pi\Delta x}{2}$. The exact solution multiplies the same mode by $e^{-k^2\pi^2\Delta t}$ per step, a number between $0$ and $1$. If $r > \frac12$, then for the highest mode ($k = n - 1$, with $\sin^2\frac{k\pi\Delta x}{2} = \cos^2\frac{\pi\Delta x}{2}$ close to $1$ once $\Delta x$ is small) $\mu < -1$, and the mode is amplified and changes sign at every step. In Example §56.2 ($r = 1$, $\Delta x = \frac14$, $k = 3$) the factor is $\mu = 1 - 4\sin^2\frac{3\pi}{8} \approx -2.41$, which is the growth and alternation seen in the table.
 
 ^rem-56-3
 
@@ -199,7 +199,7 @@ The choice $r = \frac12$ simplified the arithmetic. A larger $r$, that is, a lon
 *Uses:* [[§56★ Heat Problems#^thm-56-1|§56.1]], [[§56★ Heat Problems#^def-56-1|Def. §56.1]]
 
 > [!remark]- Connections
-> - The same condition from the ODE point of view: Euler's method for $y' = \lambda y$ gives $y_{m+1} = (1 + \lambda\Delta t)y_m$, which decays only if $|1 + \lambda\Delta t| \le 1$. The semi-discrete system of Definition §56.1 has eigenvalues $\lambda_k = -\frac{4}{(\Delta x)^2}\sin^2\frac{k\pi\Delta x}{2}$, down to almost $-4/(\Delta x)^2$, and $|1 + \lambda_k\Delta t| \le 1$ for all $k$ is $\Delta t \le \frac12(\Delta x)^2$. The fastest-decaying modes, which matter least physically, decide the step size; compare the analysis of a fixed-point iteration $u_{n+1} = g(u_n)$, stable when $|g'| < 1$, [[§12★ First-Order Difference Equations#^lem-12-5|331 Lem. §12.5]].
+> - The same condition from the ODE point of view: Euler's method for $y' = \lambda y$ gives $y_{m+1} = (1 + \lambda\Delta t)y_m$, which decays only if $|1 + \lambda\Delta t| \le 1$. The semi-discrete system of Definition §56.1 has eigenvalues $\lambda_k = -\frac{4}{(\Delta x)^2}\sin^2\frac{k\pi\Delta x}{2}$, down to almost $-4/(\Delta x)^2$, and $|1 + \lambda_k\Delta t| \le 1$ for all $k$ means $\Delta t \le \frac{(\Delta x)^2}{2\cos^2(\pi\Delta x/2)}$, which tends to $\Delta t \le \frac12(\Delta x)^2$ as the mesh is refined. The fastest-decaying modes, which matter least physically, decide the step size; compare the analysis of a fixed-point iteration $u_{n+1} = g(u_n)$, stable when $|g'| < 1$, [[§12★ First-Order Difference Equations#^lem-12-5|331 Lem. §12.5]].
 
 The time step is tied to the square of the space step: halving $\Delta x$ forces $\Delta t$ to be divided by $4$.
 

@@ -148,13 +148,13 @@ A routine Fourier sine series on $0 < x < a$ would involve the functions $\sin(n
 > G(x) = g(x), \quad 0 < x < a; \qquad G(x) = g(2a - x), \quad a < x < 2a .
 > $$
 >
-> $G$ is sectionally smooth on $0 < x < 2a$, so its Fourier sine series on that interval, with period $4a$ and half-period $2a$ ([[§7 Arbitrary Period and Half-Range Expansions|§7]], half-range expansions),
+> $G$ is sectionally smooth on $0 < x < 2a$, so its Fourier sine series on that interval, with period $4a$ and half-period $2a$ ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]),
 >
 > $$
 > G(x) \sim \sum_{N=1}^\infty B_N\sin\Big(\frac{N\pi x}{2a}\Big), \qquad B_N = \frac2{2a}\int_0^{2a}G(x)\sin\Big(\frac{N\pi x}{2a}\Big)dx ,
 > $$
 >
-> converges to $G(x)$ at each continuity point and to the midpoint of the jump otherwise ([[§8 Convergence of Fourier Series|§8]], Theorem). Split the integral at $a$ and substitute $x = 2a - y$ in the second half. Since $\sin\big(N\pi - \frac{N\pi y}{2a}\big) = -(-1)^N\sin\frac{N\pi y}{2a}$,
+> converges to $G(x)$ at each continuity point and to the midpoint of the jump otherwise ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]). Split the integral at $a$ and substitute $x = 2a - y$ in the second half. Since $\sin\big(N\pi - \frac{N\pi y}{2a}\big) = -(-1)^N\sin\frac{N\pi y}{2a}$,
 >
 > $$
 > \int_a^{2a}g(2a - x)\sin\Big(\frac{N\pi x}{2a}\Big)dx = -(-1)^N\int_0^ag(y)\sin\Big(\frac{N\pi y}{2a}\Big)dy ,
@@ -170,10 +170,10 @@ A routine Fourier sine series on $0 < x < a$ would involve the functions $\sin(n
 
 ^pf-21-3
 
-*Uses:* [[§21 Example꞉ Different Boundary Conditions#^prop-21-2|§21.2]], [[§7 Arbitrary Period and Half-Range Expansions|§7]], [[§8 Convergence of Fourier Series|§8]]
+*Uses:* [[§21 Example꞉ Different Boundary Conditions#^prop-21-2|§21.2]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]], [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]]
 
 > [!remark]- Connections
-> - Proposition §21.2 and formula (18) say that $\{\sin\lambda_nx\}$ is an orthogonal set in the inner product $\langle f, g\rangle = \int_0^af g\,dx$ and that $b_n = \langle g, \phi_n\rangle/\langle\phi_n, \phi_n\rangle$ is the coordinate of $g$ along $\phi_n$: [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]]. Theorem §21.3 adds that these coordinates reconstruct $g$, a completeness statement; the general version for Sturm–Liouville eigenfunctions is [[§24 Expansion in Series of Eigenfunctions|§24]] (Powers 2.8).
+> - Proposition §21.2 and formula (18) say that $\{\sin\lambda_nx\}$ is an orthogonal set in the inner product $\langle f, g\rangle = \int_0^af g\,dx$ and that $b_n = \langle g, \phi_n\rangle/\langle\phi_n, \phi_n\rangle$ is the coordinate of $g$ along $\phi_n$: [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]]. Theorem §21.3 adds that these coordinates reconstruct $g$, a completeness statement; the general version for Sturm–Liouville eigenfunctions is [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2]].
 
 > [!theorem] Theorem §21.4: Solution of the Fixed–Insulated Problem
 > If $f$ is sectionally smooth, the solution of (1)–(4) is
@@ -210,7 +210,7 @@ A routine Fourier sine series on $0 < x < a$ would involve the functions $\sin(n
 > u(x, t) = T_0 + (T_1 - T_0)\frac4\pi\sum_{n=1}^\infty\frac1{2n - 1}\sin(\lambda_nx)\exp(-\lambda_n^2kt) . \qquad (20)
 > $$
 >
-> The rod, initially at $T_1$ throughout, cools (or warms) through its left end toward $T_0$. For large $t$ the first term dominates: $u - T_0 \approx (T_1 - T_0)\frac4\pi\sin\frac{\pi x}{2a}e^{-\pi^2kt/4a^2}$, which decays more slowly than the slowest mode $e^{-\pi^2kt/a^2}$ of [[§19 Example꞉ Fixed End Temperatures|§19]]: with only one end open to the reservoir, heat has twice as far to travel.
+> The rod, initially at $T_1$ throughout, cools (or warms) through its left end toward $T_0$. For large $t$ the first term dominates: $u - T_0 \approx (T_1 - T_0)\frac4\pi\sin\frac{\pi x}{2a}e^{-\pi^2kt/4a^2}$, which decays more slowly than the slowest mode $e^{-\pi^2kt/a^2}$ of [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|Theorem §19.5]]: with only one end open to the reservoir, heat has twice as far to travel.
 >
 > *Powers: 2.5, Example*
 
@@ -227,7 +227,7 @@ After three major examples the method used to solve linear boundary value–init
 > 1. **Prepare.** If the partial differential equation or a boundary condition or both are not homogeneous, first find a function $v(x)$, independent of $t$, that satisfies the partial differential equation and the boundary conditions. Since $v$ does not depend on $t$, the partial differential equation applied to $v$ becomes an ordinary differential equation, and finding $v$ is a two-point boundary value problem. Determine the initial value–boundary value problem satisfied by the "transient solution" $w(x, t) = u(x, t) - v(x)$. It must be a **homogeneous problem**: the partial differential equation and the boundary conditions (but not usually the initial condition) are satisfied by the constant function $0$.
 > 2. **Separate.** Assuming that $w(x, t) = \phi(x)T(t)$, with neither factor $0$, separate the partial differential equation into two ordinary differential equations, one for $\phi(x)$ and one for $T(t)$, linked by the separation constant $-\lambda^2$. Reduce the boundary conditions to conditions on $\phi$ alone.
 > 3. **Solve.** Solve the eigenvalue problem for $\phi$: find the values of $\lambda^2$ for which it has nonzero solutions, and label the eigenfunctions and eigenvalues $\phi_n(x)$ and $\lambda_n^2$. Solve the ordinary differential equation for the time factors $T_n(t)$.
-> 4. **Combine and satisfy the remaining condition.** Form the general solution of the homogeneous problem as a sum of constant multiples of the product solutions, $w(x, t) = \sum c_n\phi_n(x)T_n(t)$. Choose the $c_n$ so that the initial condition is satisfied. This may or may not be a routine Fourier series problem; if not, an orthogonality principle must be used to determine the coefficients ([[§23 Sturm–Liouville Problems|§23]], [[§24 Expansion in Series of Eigenfunctions|§24]]).
+> 4. **Combine and satisfy the remaining condition.** Form the general solution of the homogeneous problem as a sum of constant multiples of the product solutions, $w(x, t) = \sum c_n\phi_n(x)T_n(t)$. Choose the $c_n$ so that the initial condition is satisfied. This may or may not be a routine Fourier series problem; if not, an orthogonality principle must be used to determine the coefficients ([[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]], [[§24 Expansion in Series of Eigenfunctions#^prop-24-1|Proposition §24.1]]).
 > 5. **Check.** Form the solution of the original problem, $u(x, t) = v(x) + w(x, t)$, and check that all conditions are satisfied.
 >
 > The same steps, with more detail on each, are [[§19 Example꞉ Fixed End Temperatures#^rem-19-1|Remark: Method — The Steady-State/Transient Split]] and [[§19 Example꞉ Fixed End Temperatures#^rem-19-2|Remark: Method — Separation of Variables, Step by Step]].
@@ -241,7 +241,7 @@ After three major examples the method used to solve linear boundary value–init
 >
 > **Step 1, steady state.** $v'' = 0$, $v(0) = T$, $v'(a) = A$: $v(x) = Ax + T$.
 >
-> **Step 2, transient.** $w = u - v$ satisfies $w_{xx} = \frac1kw_t$, $w(0, t) = 0$, $w_x(a, t) = 0$, $w(x, 0) = f(x) - Ax - T = g(x)$: the problem (5)–(7) again. (The flux $A$ is absorbed by the sloped steady state; heat flows steadily in at $x = a$ and out at $x = 0$.)
+> **Step 2, transient.** $w = u - v$ satisfies $w_{xx} = \frac1kw_t$, $w(0, t) = 0$, $w_x(a, t) = 0$, $w(x, 0) = f(x) - Ax - T = g(x)$: the problem (5)–(7) again. (The flux $A$ is absorbed by the sloped steady state; for $A > 0$, heat flows steadily in at $x = a$ and out at $x = 0$.)
 >
 > **Step 3, separation.** $w = \phi(x)T(t)$ gives $\frac{\phi''}\phi = \frac{T'}{kT} = p$, with $\phi(0) = 0$, $\phi'(a) = 0$. By Theorem §21.1, $p_n = -\lambda_n^2$, $\lambda_n = (2n - 1)\pi/2a$, $\phi_n = \sin(\lambda_nx)$, and $w_n(x, t) = \sin(\lambda_nx)e^{-\lambda_n^2kt}$.
 >

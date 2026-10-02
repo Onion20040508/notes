@@ -113,7 +113,7 @@ tags: [differentiable-manifolds, math591]
 ![[m591-10-1.svg]]
 *A linear map $A : V \to W$ carries vectors forward; its dual map $A^* : W^* \to V^*$ carries covectors backward.*
 
-A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual map runs backwards. This is the linear-algebra shadow of the directions in [[§23 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§12, Pushing Derivations Forward]], where germs were pulled back and derivations pushed forward.
+A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual map runs backwards. This is the linear-algebra shadow of the directions in [[§23 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§23, Pushing Derivations Forward]], where germs were pulled back and derivations pushed forward.
 
 > [!theorem] Proposition §17.4: Properties of the Dual Map
 > Let $A : V \to W$ and $B : W \to Z$ be linear.

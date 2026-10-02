@@ -22,7 +22,7 @@ $$
 \ddot y + \alpha\dot y + \beta y = f(t) .
 $$
 
-The function $f(t)$ is the forcing function, $\beta y$ the restoring term and $\alpha\dot y$ the damping term. By [[§2★ Nonhomogeneous Linear Equations|§2★]], a sine or cosine in $f(t)$ causes a response of the same period in $y(t)$, and if $f(t)$ is a sum of simpler functions, $y(t)$ is the corresponding sum. Suppose that $f(t)$ is periodic with period $2\pi$, with Fourier series
+The function $f(t)$ is the forcing function, $\beta y$ the restoring term and $\alpha\dot y$ the damping term. By [[§2★ Nonhomogeneous Linear Equations#^thm-2-4|Theorem §2.4]], a sine or cosine in $f(t)$ causes a response of the same period in $y(t)$, and by [[§2★ Nonhomogeneous Linear Equations#^thm-2-3|Theorem §2.3]], if $f(t)$ is a sum of simpler functions, $y(t)$ is the corresponding sum. Suppose that $f(t)$ is periodic with period $2\pi$, with Fourier series
 
 $$
 f(t) = a_0 + \sum_{n=1}^{\infty} a_n\cos(nt) + b_n\sin(nt) .
@@ -80,7 +80,7 @@ $$
 
 ^pf-16-1
 
-*Uses:* [[§6 Periodic Functions and Fourier Series|§6]] (Fourier coefficients), [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] (integration by parts), [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1|235 Thm. §22.1]] (Cramer's rule)
+*Uses:* [[§6 Periodic Functions and Fourier Series#^def-6-2|Def. §6.2]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] (integration by parts), [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1|235 Thm. §22.1]] (Cramer's rule)
 
 > [!remark]- Connections
 > - For a single harmonic this is the steady-state response of the forced spring–mass system, [[§20 Forced Periodic Vibrations#^thm-20-1|331 Thm. §20.1]] (with $m = 1$, $\gamma = \alpha$, $k = \beta$, $\omega = n$, and $\Delta_n$ the square of BDP's $\Delta$), and the amplitude $\sqrt{A_n^2 + B_n^2} = \sqrt{a_n^2 + b_n^2}/\sqrt{\Delta_n}$ is BDP's resonance curve, [[§20 Forced Periodic Vibrations#^prop-20-2|331 Prop. §20.2]]. The Fourier series superposes these responses over all harmonics of the force.
@@ -176,9 +176,9 @@ $$
 
 ^pf-16-2
 
-*Uses:* [[§7 Arbitrary Period and Half-Range Expansions|§7]] (sine series), [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] (integration by parts)
+*Uses:* [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] (integration by parts)
 
-The exceptional values $p = n^2\pi^2/a^2$ are the eigenvalues of $u'' + \lambda u = 0$, $u(0) = u(a) = 0$, with eigenfunctions $\sin(n\pi x/a)$ ([[§3★ Boundary Value Problems|§3★]]). That the sine functions turn $d^2/dx^2$ into multiplication by $-n^2\pi^2/a^2$ is the reason they appear in heat and wave problems with these boundary conditions, and the solvability condition $b_m = 0$ is the prototype of the Sturm–Liouville alternative ([[§24 Expansion in Series of Eigenfunctions|§24]]).
+The exceptional values $p = n^2\pi^2/a^2$ are the eigenvalues of $u'' + \lambda u = 0$, $u(0) = u(a) = 0$, with eigenfunctions $\sin(n\pi x/a)$ ([[§3★ Boundary Value Problems#^prop-3-3|Proposition §3.3]]). That the sine functions turn $d^2/dx^2$ into multiplication by $-n^2\pi^2/a^2$ is the reason they appear in heat and wave problems with these boundary conditions, and the solvability condition $b_m = 0$ is the prototype of the Sturm–Liouville alternative ([[§24 Expansion in Series of Eigenfunctions|§24]]).
 
 > [!example] Example §16.2: A Sine-Series Solution
 > Consider the boundary value problem
@@ -285,7 +285,7 @@ $$
 >
 > using $\sin\theta = (e^{i\theta} - e^{-i\theta})/(2i)$. Multiplying by $\frac{1}{2\Omega}f(n\pi/\Omega)$ and summing gives the first form of (3). Since $\sin(\Omega t - n\pi) = (-1)^n\sin(\Omega t)$, the second form follows.
 >
-> **Term-by-term integration.** (Powers integrates the series term by term without comment; here is why it is allowed.) Let $C_N$ be the symmetric partial sum $\sum_{-N}^{N}$ of the series for $C$. Applying [[§11★ Mean Error and Convergence in Mean|§11★]] (convergence in mean) to the real and imaginary parts of the sectionally continuous function $C$ gives $\int_{-\Omega}^{\Omega}|C - C_N|^2\,d\omega \to 0$. By the Cauchy–Schwarz inequality,
+> **Term-by-term integration.** (Powers integrates the series term by term without comment; here is why it is allowed.) Let $C_N$ be the symmetric partial sum $\sum_{-N}^{N}$ of the series for $C$. Applying [[§11★ Mean Error and Convergence in Mean#^thm-11-6|Theorem §11.6]] (convergence in mean) to the real and imaginary parts of the sectionally continuous function $C$ gives $\int_{-\Omega}^{\Omega}|C - C_N|^2\,d\omega \to 0$. By the Cauchy–Schwarz inequality,
 >
 > $$
 > \Big|\int_{-\Omega}^{\Omega}\big(C(\omega) - C_N(\omega)\big)e^{i\omega t}\,d\omega\Big| \le \Big(\int_{-\Omega}^{\Omega}|C - C_N|^2\,d\omega\Big)^{1/2}\Big(\int_{-\Omega}^{\Omega} 1\,d\omega\Big)^{1/2} \to 0 .
@@ -295,7 +295,7 @@ $$
 
 ^pf-16-3
 
-*Uses:* [[§16★ Applications of Fourier Series and Integrals#^def-16-1|Def. §16.1]], [[§15★ Complex Methods#^thm-15-1|§15.1]], [[§15★ Complex Methods#^def-15-2|Def. §15.2]], [[§11★ Mean Error and Convergence in Mean|§11★]] (convergence in mean), [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|556 Thm. §17.1]] (Cauchy–Schwarz in the complex $L^2(-\Omega, \Omega)$)
+*Uses:* [[§16★ Applications of Fourier Series and Integrals#^def-16-1|Def. §16.1]], [[§15★ Complex Methods#^thm-15-1|§15.1]], [[§15★ Complex Methods#^def-15-2|Def. §15.2]], [[§11★ Mean Error and Convergence in Mean#^thm-11-6|§11.6]], [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|556 Thm. §17.1]] (Cauchy–Schwarz in the complex $L^2(-\Omega, \Omega)$)
 
 > [!remark]- Connections
 > - The proof is Hilbert-space geometry: $e^{-in\pi\omega/\Omega}/\sqrt{2\Omega}$ is an orthonormal basis of $L^2(-\Omega, \Omega)$ (the Fourier basis of [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]], rescaled), the inverse transform carries it to the functions $\frac{\sin(\Omega t - n\pi)}{\Omega t - n\pi}$, and (3) is the expansion of $f$ in this basis of band-limited signals, with the samples as coordinates.

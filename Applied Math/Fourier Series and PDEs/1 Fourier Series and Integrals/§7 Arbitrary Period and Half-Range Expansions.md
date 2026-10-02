@@ -89,7 +89,7 @@ $$
 > |\sin(\pi x)| \sim \frac2\pi - \frac4\pi\sum_{n=1}^{\infty}\frac{1}{4n^2 - 1}\cos(2n\pi x) .
 > $$
 >
-> We will see in [[§9 Uniform Convergence|§9]] that $|\sin(\pi x)|$ is equal to its series, and the series converges uniformly.
+> We will see in [[§9 Uniform Convergence#^ex-9-4|Example §9.4]] that $|\sin(\pi x)|$ is equal to its series, and the series converges uniformly.
 >
 > *Powers: 1.2, first Example*
 
@@ -349,7 +349,7 @@ If the series converge, they represent periodic functions of period $2a$: the co
 > a_0 = \int_0^1 x\,dx = \frac12, \qquad a_n = 2\int_0^1 x\cos(n\pi x)\,dx = 2\Big[\frac{x\sin n\pi x}{n\pi} + \frac{\cos n\pi x}{n^2\pi^2}\Big]_0^1 = -\frac{2}{n^2\pi^2}\big(1 - \cos n\pi\big) .
 > $$
 >
-> So there are six correspondences (shown in [[§8 Convergence of Fourier Series|§8]]–[[§9 Uniform Convergence|§9]] to be equalities, except at the jumps of $\bar f_o$); the ranges of $x$ are crucial:
+> So there are six correspondences (equalities by [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]], except at the jumps of $\bar f_o$); the ranges of $x$ are crucial:
 >
 > $$
 > \sum_{n=1}^{\infty}\frac{-2\cos n\pi}{n\pi}\sin(n\pi x) \sim \begin{cases} f(x) = x, & 0 < x < 1, \\ f_o(x) = x, & -1 < x < 1, \\ \bar f_o(x), & -\infty < x < \infty, \end{cases}
@@ -381,7 +381,7 @@ If the series converge, they represent periodic functions of period $2a$: the co
 > a_0 = \frac11\int_0^1 x^2\,dx = \frac13, \qquad a_n = 2\int_0^1 x^2\cos(n\pi x)\,dx = \frac{2}{n\pi}\Big[x^2\sin(n\pi x)\Big]_0^1 - \frac{2}{n\pi}\int_0^1 2x\sin(n\pi x)\,dx = \frac{4}{(n\pi)^2}\Big[x\cos(n\pi x)\Big]_0^1 - \frac{4}{(n\pi)^2}\int_0^1\cos(n\pi x)\,dx = \frac{4(-1)^n}{(n\pi)^2} .
 > $$
 >
-> So $f_e(x) \sim \frac13 + \sum_{n=1}^{\infty}\frac{4(-1)^n}{(n\pi)^2}\cos(n\pi x)$. The cosine coefficients decay like $1/n^2$, the sine coefficients only like $1/n$: the even extension is continuous, the odd one is not. [[§9 Uniform Convergence|§9]] makes this observation precise.
+> So $f_e(x) \sim \frac13 + \sum_{n=1}^{\infty}\frac{4(-1)^n}{(n\pi)^2}\cos(n\pi x)$. The cosine coefficients decay like $1/n^2$, the sine coefficients only like $1/n$: the even extension is continuous, the odd one is not. [[§9 Uniform Convergence#^thm-9-1|Theorem §9.1]] and [[§9 Uniform Convergence#^thm-9-3|Theorem §9.3]] make this observation precise.
 >
 > *Source: 341 lecture 9.3, Example 2*
 

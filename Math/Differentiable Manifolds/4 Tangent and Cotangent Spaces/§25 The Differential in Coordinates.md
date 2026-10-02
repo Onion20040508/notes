@@ -26,7 +26,7 @@ $$
 ![[m591-12-9.svg]]
 
 ![[m591-12-10.svg]]
-*Left, the maps: upstairs $F$ between manifolds, downstairs its coordinate representation $\tilde F$ between open sets of Euclidean space. Right, their linearizations: upstairs the differential, intrinsic; downstairs the Jacobian matrix, and the vertical isomorphisms send $\partial/\partial x^i|_p \mapsto e_i$ and $\partial/\partial y^j|_{F(p)} \mapsto e_j$. Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]] below says the right-hand square commutes. It is the square of [[§18 The Differential of a Map Between Vector Spaces|§10, The Differential of a Map Between Vector Spaces]] again, with abstract tangent spaces in place of abstract vector spaces and coordinate bases in place of linear coordinates.*
+*Left, the maps: upstairs $F$ between manifolds, downstairs its coordinate representation $\tilde F$ between open sets of Euclidean space. Right, their linearizations: upstairs the differential, intrinsic; downstairs the Jacobian matrix, and the vertical isomorphisms send $\partial/\partial x^i|_p \mapsto e_i$ and $\partial/\partial y^j|_{F(p)} \mapsto e_j$. Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]] below says the right-hand square commutes. It is the square of [[§18 The Differential of a Map Between Vector Spaces|§18, The Differential of a Map Between Vector Spaces]] again, with abstract tangent spaces in place of abstract vector spaces and coordinate bases in place of linear coordinates.*
 
 > [!theorem] Proposition §25.1: Partial Derivatives Upstairs and Downstairs
 > Let $F : M \to N$ be smooth, with smooth charts $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ and $(V, \psi = (y^1, \ldots, y^n))$ of $N$ such that $F(U) \subseteq V$. Let $F^j = y^j \circ F : U \to \mathbb{R}$ be the components of $F$, functions on the manifold, and $\tilde F = \psi \circ F \circ \varphi^{-1} : \varphi(U) \to \mathbb{R}^n$ the coordinate representation, with components $\tilde F^j = r^j \circ \tilde F$, functions on Euclidean space. Then $F^j \circ \varphi^{-1} = \tilde F^j$, and therefore, for every $p \in U$,
@@ -169,13 +169,13 @@ $$
 > - Polar coordinates in multivariable calculus (Jacobians, change of variables): [[Polar and spherical coordinates]].
 
 > [!theorem] Proposition §25.5: Agreement with the Vector-Space Differential
-> Let $W \subseteq \mathbb{R}^m$ be open, $F : W \to \mathbb{R}^n$ smooth, and $a \in W$, and identify the abstract tangent spaces $T_aW \cong \mathbb{R}^m$ and $T_{F(a)}\mathbb{R}^n \cong \mathbb{R}^n$ by $\partial/\partial r^i \mapsto e_i$ — that is, with the geometric tangent spaces $T^{\mathrm{geo}}_aW = \mathbb{R}^m$ and $T^{\mathrm{geo}}_{F(a)}\mathbb{R}^n = \mathbb{R}^n$. Then $F_{*a}$ corresponds to the Jacobian $F'(a)$, i.e. to the differential $dF_a$ of [[§18 The Differential of a Map Between Vector Spaces|§10, The Differential of a Map Between Vector Spaces]]. Under the same identification, $v = \sum_i v^i e_i$ corresponds to the derivation
+> Let $W \subseteq \mathbb{R}^m$ be open, $F : W \to \mathbb{R}^n$ smooth, and $a \in W$, and identify the abstract tangent spaces $T_aW \cong \mathbb{R}^m$ and $T_{F(a)}\mathbb{R}^n \cong \mathbb{R}^n$ by $\partial/\partial r^i \mapsto e_i$ — that is, with the geometric tangent spaces $T^{\mathrm{geo}}_aW = \mathbb{R}^m$ and $T^{\mathrm{geo}}_{F(a)}\mathbb{R}^n = \mathbb{R}^n$. Then $F_{*a}$ corresponds to the Jacobian $F'(a)$, i.e. to the differential $dF_a$ of [[§18 The Differential of a Map Between Vector Spaces|§18, The Differential of a Map Between Vector Spaces]]. Under the same identification, $v = \sum_i v^i e_i$ corresponds to the derivation
 >
 > $$
 > [g] \longmapsto \sum_i v^i\, \frac{\partial g}{\partial r^i}(a) = \frac{d}{dt}\Big|_{t=0} g(a + tv),
 > $$
 >
-> the directional derivative $D_v$ of [[§22 Tangent Spaces II꞉ Germs#From Tangent Vectors to Derivations|§12, From Tangent Vectors to Derivations]].
+> the directional derivative $D_v$ of [[§22 Tangent Spaces II꞉ Germs#From Tangent Vectors to Derivations|§22, From Tangent Vectors to Derivations]].
 >
 > *Lee: Proposition 3.13 and Corollary 3.3*
 
@@ -212,7 +212,7 @@ $$
 *Uses:* [[§23 Derivations and the Abstract Tangent Space#^def-23-5|Def. §23.5]], [[§23 Derivations and the Abstract Tangent Space#^prop-23-9|§23.9]], [[§25 The Differential in Coordinates#^prop-25-5|§25.5]], [[§18 The Differential of a Map Between Vector Spaces#^def-18-1|Def. §18.1]], [[§18 The Differential of a Map Between Vector Spaces#^def-18-3|Def. §18.3]]
 
 > [!remark] Remark
-> This is what licenses the shared notation $dF_p$: on open subsets of Euclidean spaces the abstract differential *is* the Jacobian, and between vector spaces it is the map of Theorem [[§18 The Differential of a Map Between Vector Spaces#^thm-18-3|§18.3]]. It also closes a loop opened in [[§22 Tangent Spaces II꞉ Germs#From Tangent Vectors to Derivations|§12, From Tangent Vectors to Derivations]], where a tangent vector $v$ was traded for the operator $D_v$; in $\mathbb{R}^n$ that trade is exactly the identification $e_i \leftrightarrow \partial/\partial r^i$.
+> This is what licenses the shared notation $dF_p$: on open subsets of Euclidean spaces the abstract differential *is* the Jacobian, and between vector spaces it is the map of Theorem [[§18 The Differential of a Map Between Vector Spaces#^thm-18-3|§18.3]]. It also closes a loop opened in [[§22 Tangent Spaces II꞉ Germs#From Tangent Vectors to Derivations|§22, From Tangent Vectors to Derivations]], where a tangent vector $v$ was traded for the operator $D_v$; in $\mathbb{R}^n$ that trade is exactly the identification $e_i \leftrightarrow \partial/\partial r^i$.
 
 ^rem-25-3
 

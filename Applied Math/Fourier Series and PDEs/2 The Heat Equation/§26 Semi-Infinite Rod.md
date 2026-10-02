@@ -11,7 +11,7 @@ tags: [fourier-series-and-pdes, math341]
 
 *Powers, Section 2.10 · MAT 341 lectures 10.17, 10.22, 10.24 · HW 9 · Practice Midterm 2.*
 
-A very long rod can be treated as semi-infinite, extending from $0$ to $\infty$; this is also how one suppresses the influence of a far boundary condition that is complicated or unknown. The right-hand boundary condition is then replaced by the requirement that the temperature stay bounded. Separation of variables still works, but it leads to a *singular* eigenvalue problem in which every $\lambda > 0$ is allowed, so the sum over eigenvalues becomes an integral over $\lambda$, and the initial condition is met by the Fourier sine integral of [[§14 Fourier Integral|§14]]. Physically the model describes a long bar whose end is held at a fixed temperature, or diffusion from a surface into a deep medium; it is a valid approximation for $x$ much smaller than the true length.
+A very long rod can be treated as semi-infinite, extending from $0$ to $\infty$; this is also how one suppresses the influence of a far boundary condition that is complicated or unknown. The right-hand boundary condition is then replaced by the requirement that the temperature stay bounded. Separation of variables still works, but it leads to a *singular* eigenvalue problem in which every $\lambda > 0$ is allowed, so the sum over eigenvalues becomes an integral over $\lambda$, and the initial condition is met by the Fourier sine integral ([[§14 Fourier Integral#^def-14-2|Definition §14.2]]). Physically the model describes a long bar whose end is held at a fixed temperature, or diffusion from a surface into a deep medium; it is a valid approximation for $x$ much smaller than the true length.
 
 ## The Singular Eigenvalue Problem
 
@@ -61,7 +61,7 @@ The boundary condition requires $\phi(0) = 0$, and boundedness requires $\phi(x)
 ^prop-26-1
 
 > [!proof]+ Proof
-> Consider the sign of the separation constant $\mu$ (Powers leaves the first two cases to his Exercise 2.10.8; the 10.24 lecture works all three).
+> Consider the sign of the separation constant $\mu$ (Powers leaves the positive case to his Exercise 2.10.8 and does not discuss the zero case; the 10.24 lecture works all three).
 > - $\mu = \nu^2 > 0$: $\phi = Ae^{\nu x} + Be^{-\nu x}$. Boundedness as $x \to \infty$ forces $A = 0$, and then $\phi(0) = B = 0$. So any nonzero bounded solution is not $0$ at $x = 0$, and any solution that is $0$ at $x = 0$ is not bounded.
 > - $\mu = 0$: $\phi = Ax + B$. Boundedness forces $A = 0$, and $\phi(0) = B = 0$.
 > - $\mu = -\lambda^2 < 0$: the general solution $\phi = c_1\cos(\lambda x) + c_2\sin(\lambda x)$ is bounded for any choice of the constants and any $\lambda$, so the boundedness condition contributes nothing further. The boundary condition gives $\phi(0) = c_1 = 0$, leaving $\phi = c_2\sin(\lambda x)$, a nonzero solution for every $\lambda > 0$; take $c_2 = 1$. Since $\sin(-\lambda x) = -\sin(\lambda x)$, negative $\lambda$ give only multiples of the same functions.
@@ -94,7 +94,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 ^thm-26-2
 
 > [!proof]+ Proof
-> **The coefficient.** Powers chooses $B$ so that the initial condition holds: at $t = 0$, (9) becomes $\int_0^\infty B(\lambda)\sin(\lambda x)\,d\lambda = f(x)$, which is the Fourier sine integral representation of $f$, [[§14 Fourier Integral|§14]] (Fourier sine integral representation), with exactly the coefficient (10). Under the hypotheses on $f$, that theorem gives the value $\frac12(f(x+) + f(x-))$. (Negative values of $\lambda$ need not be included; they give no new solutions.)
+> **The coefficient.** Powers chooses $B$ so that the initial condition holds: at $t = 0$, (9) becomes $\int_0^\infty B(\lambda)\sin(\lambda x)\,d\lambda = f(x)$, which is the Fourier sine integral representation of $f$ ([[§14 Fourier Integral#^def-14-2|Definition §14.2]]), with exactly the coefficient (10). Under the hypotheses on $f$, [[§14 Fourier Integral#^cor-14-2|Corollary §14.2]] gives the value $\frac12(f(x+) + f(x-))$. (Negative values of $\lambda$ need not be included; they give no new solutions.)
 >
 > **The differential equation.** (Powers asserts that (9) is then the solution; here is why the integral may be differentiated.) The coefficient is bounded: $|B(\lambda)| \le \frac2\pi\int_0^\infty |f|\,dx =: M$. Fix $t_1 > 0$. For $t \ge t_1$ the integrand of (9) and its partial derivatives in $x$ and $t$ are bounded by
 >
@@ -118,7 +118,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 
 ^pf-26-2
 
-*Uses:* [[§26 Semi-Infinite Rod#^prop-26-1|§26.1]], [[§14 Fourier Integral|§14]] (Fourier sine integral representation), [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]
+*Uses:* [[§26 Semi-Infinite Rod#^prop-26-1|§26.1]], [[§14 Fourier Integral#^def-14-2|Def. §14.2]], [[§14 Fourier Integral#^cor-14-2|§14.2]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]
 
 > [!remark]- Connections
 > - Differentiation under the integral sign by dominated convergence: [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]. The integrals (9) and (10) are improper Riemann integrals in the sense of [[§36 Improper Integrals#^def-36-1|451 Def. §36.1]]; for $t > 0$ the exponential factor makes (9) converge absolutely and very rapidly.
@@ -133,7 +133,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 > 2. **Separate variables** and discuss the separation constant: positive and zero give no nonzero bounded solution satisfying the condition at $x = 0$; negative, $-\lambda^2$, gives one for every $\lambda > 0$.
 > 3. **Superpose with an integral**, $u = \int_0^\infty C(\lambda)\phi(x; \lambda)e^{-\lambda^2kt}\,d\lambda$.
 > 4. **Coefficient.** If the basis is $\sin(\lambda x)$ (end held at $0$), $C(\lambda)$ is the Fourier sine integral coefficient $\frac2\pi\int_0^\infty f\sin(\lambda x)\,dx$, i.e. that of the odd extension of $f$. If the end is insulated, $u_x(0, t) = 0$, the basis is $\cos(\lambda x)$ (including the constant, $\lambda = 0$) and $C(\lambda) = \frac2\pi\int_0^\infty f\cos(\lambda x)\,dx$, the coefficient of the even extension ([[§26 Semi-Infinite Rod#^ex-26-3|Example §26.3]]).
-> 5. Compute the coefficient explicitly when possible; the remaining integral over $\lambda$ usually cannot be evaluated in closed form, but see [[§28★ The Error Function|§28★]].
+> 5. Compute the coefficient explicitly when possible; the remaining integral over $\lambda$ usually cannot be evaluated in closed form, but see [[§28★ The Error Function#^ex-28-1|Example §28.1]].
 >
 > *Source: 341 lectures 10.17, 10.22, 10.24*
 
@@ -216,7 +216,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 >
 > **(c)** The basic solutions are $w_\lambda = \cos(\lambda x)e^{-k\lambda^2t}$, $\lambda \ge 0$.
 >
-> **(d)** $u = \int_0^\infty A(\lambda)\cos(\lambda x)e^{-k\lambda^2t}\,d\lambda$, and at $t = 0$, $e^{-x} = \int_0^\infty A(\lambda)\cos(\lambda x)\,d\lambda$ for $x > 0$: the Fourier cosine integral, [[§14 Fourier Integral|§14]] (Fourier cosine integral representation), of $e^{-x}$, i.e. the Fourier integral of the even extension $e^{-|x|}$. Integrating by parts twice, with $I = \int_0^\infty e^{-x}\cos(\lambda x)\,dx$,
+> **(d)** $u = \int_0^\infty A(\lambda)\cos(\lambda x)e^{-k\lambda^2t}\,d\lambda$, and at $t = 0$, $e^{-x} = \int_0^\infty A(\lambda)\cos(\lambda x)\,d\lambda$ for $x > 0$: the Fourier cosine integral ([[§14 Fourier Integral#^def-14-2|Definition §14.2]], [[§14 Fourier Integral#^cor-14-2|Corollary §14.2]]) of $e^{-x}$, i.e. the Fourier integral of the even extension $e^{-|x|}$. Integrating by parts twice, with $I = \int_0^\infty e^{-x}\cos(\lambda x)\,dx$,
 >
 > $$
 > I = \Big[-e^{-x}\cos(\lambda x)\Big]_0^\infty - \lambda\int_0^\infty e^{-x}\sin(\lambda x)\,dx = 1 - \lambda\Big(\Big[-e^{-x}\sin(\lambda x)\Big]_0^\infty + \lambda I\Big) = 1 - \lambda^2I ,

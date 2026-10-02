@@ -62,7 +62,7 @@ These two theorems are so natural that one uses them without thinking about it (
 
 ^thm-10-3
 
-*Powers omits the proof ("much more difficult to prove"); see Remark: Why Theorems §10.3 and §10.4 Hold.*
+*Powers omits the proof ("much more difficult to prove"); see Remark: Why Theorems §10.3 and §10.4 Hold, an argument that is not from Powers.*
 
 > [!remark]- Connections
 > - For a uniformly convergent series of continuous functions term-by-term integration is [[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]] (from [[§25 More on Uniform Convergence#^thm-25-1|451 Thm. §25.1]]). Theorem §10.3 is stronger: the Fourier series need not converge at all, let alone uniformly.
@@ -79,7 +79,7 @@ These two theorems are so natural that one uses them without thinking about it (
 
 ^thm-10-4
 
-*Powers omits the proof.*
+*Powers omits the proof; see the remark below, an argument that is not from Powers.*
 
 In Theorems §10.3 and §10.4, $f$ is only required to be sectionally continuous. It is not necessary that the Fourier series of $f$ converge at all. Nevertheless the theorems guarantee that the series on the right converges and equals the integral on the left. One important application of Theorem §10.4 is the derivation of the coefficient formulas in [[§6 Periodic Functions and Fourier Series#^prop-6-4|Proposition §6.4]]: with $g = 1$, $\cos mx$, $\sin mx$ on $[-\pi, \pi]$ it justifies exactly the term-by-term integrations made there.
 
@@ -91,6 +91,8 @@ In Theorems §10.3 and §10.4, $f$ is only required to be sectionally continuous
 > $$
 >
 > since the mean error over a period tends to zero. But $\int_a^b S_Ng$ is the $N$th partial sum of the series in (3), so the series converges to $\int_a^b fg$. A longer interval is a finite union of such pieces. Theorem §10.3 is the case $g = 1$. (For Theorem §10.3 there is also a route inside this chapter: $F(x) = \int_0^x(f - a_0)$ is periodic, continuous and sectionally smooth, so its Fourier series converges uniformly by [[§9 Uniform Convergence#^thm-9-3|Theorem §9.3]], and computing its coefficients by parts gives (2).)
+>
+> *Source: an argument added in these notes (convergence in the mean and the Cauchy–Schwarz inequality); not in Powers.*
 
 ^rem-10-1
 
@@ -214,7 +216,7 @@ The last operation is differentiation, which plays a principal role in applicati
 
 ^pf-10-6
 
-*Uses:* [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]], [[§8 Convergence of Fourier Series#^def-8-4|Def. §8.4]], [[§6 Periodic Functions and Fourier Series#^def-6-2|Def. §6.2]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] (integration by parts)
+*Uses:* [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]], [[§12★ Proof of Convergence#^thm-12-4|§12.4]], [[§8 Convergence of Fourier Series#^def-8-4|Def. §8.4]], [[§6 Periodic Functions and Fourier Series#^def-6-2|Def. §6.2]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] (integration by parts)
 
 > [!remark]- Connections
 > - For power series, term-by-term differentiation always works inside the interval of convergence, [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]]; for Fourier series it needs the continuity of the periodic extension, because differentiation multiplies the $n$th coefficient by $n$ and so makes convergence worse.
@@ -335,10 +337,12 @@ Later on it will frequently happen that a function is known only through its Fou
 
 ^thm-10-7
 
-*Powers omits the proof; see Remark: Why Theorem §10.7 Holds.*
+*Powers omits the proof; see Remark: Why Theorem §10.7 Holds, an argument that is not from Powers.*
 
 > [!remark]- Remark: Why Theorem §10.7 Holds
-> For $j \le k$, the $j$-times differentiated series has terms bounded by $n^j(|a_n| + |b_n|) \le n^k(|a_n| + |b_n|)$, so by the M-test ([[§9 Uniform Convergence#^thm-9-2|Theorem §9.2]]) it converges uniformly to a continuous function $g_j$; for $j = 0$ the limit is $f$ (at least after correcting $f$ at finitely many points, by [[§9 Uniform Convergence#^thm-9-1|Theorem §9.1]]). Integrating the uniformly convergent series for $g_1$ term by term from $0$ to $x$ ([[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]]) gives back the series of $f$, minus its value at $0$: $\int_0^x g_1 = f(x) - f(0)$. By the fundamental theorem of calculus $f' = g_1$, continuous. Repeat for $g_2, \ldots, g_k$. This is the argument of [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]](2) for power series.
+> For $j \le k$, the $j$-times differentiated series has terms bounded by $n^j(|a_n| + |b_n|) \le n^k(|a_n| + |b_n|)$, so by the M-test ([[§9 Uniform Convergence#^thm-9-2|Theorem §9.2]]) it converges uniformly to a continuous function $g_j$; for $j = 0$ the limit is $f$ (at least after correcting $f$ at finitely many points, by [[§9 Uniform Convergence#^thm-9-1|Theorem §9.1]]). Integrating the uniformly convergent series for $g_1$ term by term from $0$ to $x$ ([[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]]) gives back the series of $f$, minus its value at $0$: $\int_0^x g_1 = f(x) - f(0)$. By the fundamental theorem of calculus $f' = g_1$, continuous. Repeat for $g_2, \ldots, g_k$. Finally, a uniformly convergent trigonometric series is the Fourier series of its sum (multiply by $\cos mx$ or $\sin mx$, integrate term by term and use the orthogonality relations), so the differentiated series are the Fourier series of $f', \ldots, f^{(k)}$. This is the argument of [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]](2) for power series.
+>
+> *Source: an argument added in these notes (the M-test and term-by-term integration of uniformly convergent series); not in Powers.*
 
 ^rem-10-3
 
@@ -399,7 +403,7 @@ The lecture adds a simple bound that makes Theorem §10.7 easy to apply.
 >
 > (iv) Fix $t_0 > 0$. For $t \ge t_0$ and all $x$, $\big|-n^2b_ne^{-n^2t}\sin nx\big| \le Mn^2e^{-n^2t_0}$, a convergent series of constants, so the $t$-differentiated series converges uniformly on $t \ge t_0$. The argument of Remark: Why Theorem §10.7 Holds, now in the variable $t$, shows that it is $\partial u/\partial t$. Comparing with (i), $u_t = u_{xx}$ for $t > 0$.
 >
-> So $u$ solves the heat equation $u_t = u_{xx}$ on $0 < x < \pi$ with $u = 0$ at both ends and initial values $f$: this is the solution of [[§19 Example꞉ Fixed End Temperatures|§19]], and the verification is the model for all series solutions.
+> So $u$ solves the heat equation $u_t = u_{xx}$ on $0 < x < \pi$ with $u = 0$ at both ends and initial values $f$: this is the solution of [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|Theorem §19.5]], and the verification is the model for all series solutions.
 >
 > *Powers: 1.5, third Example; Exercise 1.5.9; Source: 341 lecture 9.12, Example 4; 341 HW 3, Problem 3*
 

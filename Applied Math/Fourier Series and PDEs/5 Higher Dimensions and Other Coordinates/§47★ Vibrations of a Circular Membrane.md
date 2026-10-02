@@ -12,7 +12,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 *Powers, Section 5.7.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
-This section solves the wave equation for a circular membrane fixed at its edge: a drumhead. When the initial data do not depend on the angle, the problem uses exactly the eigenfunctions $J_0(\lambda_n r)$ of [[§46★ Temperature in a Cylinder|§46]], with $\cos$ and $\sin(\lambda_nct)$ in place of the decaying exponentials. In general, separating $u = R(r)Q(\theta)T(t)$ gives periodic factors $\cos(m\theta)$, $\sin(m\theta)$ and Bessel functions $J_m$ of every integer order, with eigenvalues $\lambda_{mn} = \alpha_{mn}/a$ from the zeros of $J_m$. Physically, these are the standing waves (modes) of a drum: their nodal curves are circles and diameters, and since the $\alpha_{mn}$ are not integer multiples of $\alpha_{01}$, a drum, unlike a string, does not produce a musical tone.
+This section solves the wave equation for a circular membrane fixed at its edge: a drumhead. When the initial data do not depend on the angle, the problem uses exactly the eigenfunctions $J_0(\lambda_n r)$ of [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]], with $\cos$ and $\sin(\lambda_nct)$ in place of the decaying exponentials. In general, separating $u = R(r)Q(\theta)T(t)$ gives periodic factors $\cos(m\theta)$, $\sin(m\theta)$ and Bessel functions $J_m$ of every integer order, with eigenvalues $\lambda_{mn} = \alpha_{mn}/a$ from the zeros of $J_m$. Physically, these are the standing waves (modes) of a drum: their nodal curves are circles and diameters, and since the $\alpha_{mn}$ are not integer multiples of $\alpha_{01}$, a drum, unlike a string, does not produce a musical tone.
 
 ## Symmetric Vibrations
 
@@ -71,7 +71,7 @@ The boundary condition (2) is satisfied if $\phi(a) = 0$ (7), and because $r = 0
 
 *Uses:* [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]], [[§46★ Temperature in a Cylinder#^def-46-1|Def. §46.1]], [[§46★ Temperature in a Cylinder#^thm-46-3|§46.3]], [[§46★ Temperature in a Cylinder#^prop-46-6|§46.6]]
 
-The heat problem of [[§46★ Temperature in a Cylinder|§46]] and this wave problem share the equilibrium solution ($0$), the eigenvalue problem and the coefficient formulas; only the time factors differ, as for the rod and the string in [[§30 Solution of the Vibrating String Problem|§30]].
+The heat problem of [[§46★ Temperature in a Cylinder#^prop-46-4|Proposition §46.4]] and this wave problem share the equilibrium solution ($0$), the eigenvalue problem and the coefficient formulas; only the time factors differ, as for the rod and the string in [[§30 Solution of the Vibrating String Problem#^thm-30-2|Theorem §30.2]].
 
 ## General Vibrations
 
@@ -88,7 +88,7 @@ u(r, \theta, 0) &= f(r, \theta), && 0 < r < a, && (15)\\
 \end{aligned}
 $$
 
-Following [[§44★ Problems in Polar Coordinates|§44]], assume $u = \phi(r, \theta)T(t)$. Equation (11) separates into
+Following [[§44★ Problems in Polar Coordinates#^thm-44-1|Theorem §44.1]], assume $u = \phi(r, \theta)T(t)$. Equation (11) separates into
 
 $$
 T'' + \lambda^2c^2T = 0, \quad 0 < t, \qquad (17) \qquad\qquad \frac{1}{r}\frac{\partial}{\partial r}\Big(r\frac{\partial\phi}{\partial r}\Big) + \frac{1}{r^2}\frac{\partial^2\phi}{\partial\theta^2} = -\lambda^2\phi, \quad 0 < r < a . \qquad (18)
@@ -111,7 +111,7 @@ $$
 $$
 
 > [!theorem] Proposition §47.2: Eigenfunctions of the Disk
-> Let $\alpha_{mn}$ denote the $n$th positive zero of $J_m$, so that $J_m(\alpha_{mn}) = 0$ ([[§45★ Bessel's Equation|§45]], Table 1), and let
+> Let $\alpha_{mn}$ denote the $n$th positive zero of $J_m$, so that $J_m(\alpha_{mn}) = 0$ (table in [[§45★ Bessel's Equation#^thm-45-6|Theorem §45.6]]), and let
 >
 > $$
 > \lambda_{mn} = \frac{\alpha_{mn}}{a}, \qquad m = 0, 1, 2, \ldots, \quad n = 1, 2, 3, \ldots .
@@ -136,13 +136,13 @@ $$
 ^prop-47-2
 
 > [!proof]+ Proof
-> **The angular problem (19).** As observed in [[§39 Potential in a Disk|§39]] and [[§44★ Problems in Polar Coordinates|§44]], the periodic problem has the solutions $\mu_0^2 = 0$, $Q_0 = 1$, and $\mu_m^2 = m^2$, $Q_m = \cos(m\theta)$ and $\sin(m\theta)$, $m = 1, 2, 3, \ldots$; a periodic solution of $Q'' + \mu^2Q = 0$ needs $\mu$ to be an integer.
+> **The angular problem (19).** As observed in [[§39 Potential in a Disk#^prop-39-1|Proposition §39.1]] and [[§44★ Problems in Polar Coordinates#^thm-44-2|Theorem §44.2]], the periodic problem has the solutions $\mu_0^2 = 0$, $Q_0 = 1$, and $\mu_m^2 = m^2$, $Q_m = \cos(m\theta)$ and $\sin(m\theta)$, $m = 1, 2, 3, \ldots$; a periodic solution of $Q'' + \mu^2Q = 0$ needs $\mu$ to be an integer.
 >
-> **The radial problem (20).** With $\mu = m$, (20) is Bessel's equation of order $m$, with general solution $R(r) = CJ_m(\lambda r) + DY_m(\lambda r)$ ([[§45★ Bessel's Equation|§45]], Summary). Since $Y_m(\lambda r)$ is unbounded at $r = 0$, boundedness forces $D = 0$, and the constant $C$ can be dropped, since any multiple of a solution is a solution: $R(r) = J_m(\lambda r)$. The boundary condition becomes $R(a) = J_m(\lambda a) = 0$, so $\lambda a$ must be a root of $J_m(\alpha) = 0$: $\lambda = \alpha_{mn}/a$. Multiplying $R$ and $Q$ gives (21) and (22). (As in [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]], a separation constant $-\lambda^2 \ge 0$ produces no nonzero solutions.)
+> **The radial problem (20).** With $\mu = m$, (20) is Bessel's equation of order $m$, with general solution $R(r) = CJ_m(\lambda r) + DY_m(\lambda r)$ ([[§45★ Bessel's Equation#^thm-45-5|Theorem §45.5]]). Since $Y_m(\lambda r)$ is unbounded at $r = 0$, boundedness forces $D = 0$, and the constant $C$ can be dropped, since any multiple of a solution is a solution: $R(r) = J_m(\lambda r)$. The boundary condition becomes $R(a) = J_m(\lambda a) = 0$, so $\lambda a$ must be a root of $J_m(\alpha) = 0$: $\lambda = \alpha_{mn}/a$. Multiplying $R$ and $Q$ gives (21) and (22). (As in [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]], a separation constant $-\lambda^2 \ge 0$ produces no nonzero solutions: for $\lambda = 0$ the bounded solutions of $(rR')' - \frac{m^2}{r}R = 0$ are the multiples of $r^m$, which do not vanish at $r = a$, and a positive constant leads to the modified Bessel function $I_m$, which has no positive zeros, [[§45★ Bessel's Equation#^thm-45-10|Theorem §45.10]]. See also [[§44★ Problems in Polar Coordinates#^rem-44-2|the remark on positive eigenvalues in §44]].)
 
 ^pf-47-2
 
-*Uses:* [[§45★ Bessel's Equation|§45]] (Summary; Table 1), [[§44★ Problems in Polar Coordinates|§44]] (Eq. (19)), [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]]
+*Uses:* [[§45★ Bessel's Equation#^thm-45-5|§45.5]], [[§45★ Bessel's Equation#^thm-45-6|§45.6]], [[§45★ Bessel's Equation#^thm-45-10|§45.10]], [[§44★ Problems in Polar Coordinates#^thm-44-2|§44.2]], [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]]
 
 > [!definition] Definition §47.1: Standing Waves of the Membrane; Frequencies
 > The product solutions of (11)–(14),
@@ -211,9 +211,9 @@ The coefficients come from an orthogonality principle.
 > [!proof]+ Proof
 > *Powers gives this as a sketch.* In polar coordinates $dA = r\,dr\,d\theta$, and each eigenfunction is a product $R(r)Q(\theta)$, so every integral over the disk splits into a $\theta$-integral times an $r$-integral.
 >
-> **Different angular factors.** If the angular factors are different members of $1, \cos(m\theta), \sin(m\theta)$ ($m \ge 1$), their $\theta$-integral over $-\pi < \theta \le \pi$ is $0$ by the orthogonality of the trigonometric functions ([[§6 Periodic Functions and Fourier Series|§6]]). This covers (27), all pairs from two different series in (25), and (28) when $m \ne p$.
+> **Different angular factors.** If the angular factors are different members of $1, \cos(m\theta), \sin(m\theta)$ ($m \ge 1$), their $\theta$-integral over $-\pi < \theta \le \pi$ is $0$ by the orthogonality of the trigonometric functions ([[§6 Periodic Functions and Fourier Series#^prop-6-3|Proposition §6.3]]). This covers (27), all pairs from two different series in (25), and (28) when $m \ne p$.
 >
-> **Same angular factor.** If $m = p$ and the angular factors agree, the $\theta$-integral is $2\pi$ (for $m = 0$) or $\pi$ (for $m \ge 1$), and the integral reduces to $\pi\int_0^a J_m(\lambda_{mn}r)J_m(\lambda_{mq}r)\,r\,dr$ (or $2\pi$ times it). For $n \ne q$ this is $0$ by the usual Sturm–Liouville argument ([[§23 Sturm–Liouville Problems|§23]]), as in [[§46★ Temperature in a Cylinder#^prop-46-2|Proposition §46.2]]: $R_n = J_m(\lambda_{mn}r)$ and $R_q = J_m(\lambda_{mq}r)$ satisfy
+> **Same angular factor.** If $m = p$ and the angular factors agree, the $\theta$-integral is $2\pi$ (for $m = 0$) or $\pi$ (for $m \ge 1$), and the integral reduces to $\pi\int_0^a J_m(\lambda_{mn}r)J_m(\lambda_{mq}r)\,r\,dr$ (or $2\pi$ times it). For $n \ne q$ this is $0$ by the usual Sturm–Liouville argument ([[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]]), as in [[§46★ Temperature in a Cylinder#^prop-46-2|Proposition §46.2]]: $R_n = J_m(\lambda_{mn}r)$ and $R_q = J_m(\lambda_{mq}r)$ satisfy
 >
 > $$
 > (rR_n')' - \frac{m^2}{r}R_n = -\lambda_{mn}^2rR_n, \qquad (rR_q')' - \frac{m^2}{r}R_q = -\lambda_{mq}^2rR_q .
@@ -229,10 +229,10 @@ The coefficients come from an orthogonality principle.
 
 ^pf-47-3
 
-*Uses:* [[§47★ Vibrations of a Circular Membrane#^prop-47-2|§47.2]], [[§46★ Temperature in a Cylinder#^prop-46-2|§46.2]], [[§23 Sturm–Liouville Problems|§23]] (Theorem 1), [[§6 Periodic Functions and Fourier Series|§6]] (orthogonality of the trigonometric functions), [[§100 Double Integrals in Polar Coordinates#^thm-100-1|Calc Thm. §100.1]] ($dA = r\,dr\,d\theta$)
+*Uses:* [[§47★ Vibrations of a Circular Membrane#^prop-47-2|§47.2]], [[§46★ Temperature in a Cylinder#^prop-46-2|§46.2]], [[§23 Sturm–Liouville Problems#^thm-23-2|§23.2]], [[§6 Periodic Functions and Fourier Series#^prop-6-3|§6.3]], [[§100 Double Integrals in Polar Coordinates#^thm-100-1|Calc Thm. §100.1]] ($dA = r\,dr\,d\theta$)
 
 > [!remark]- Connections
-> - All eigenfunctions of $\nabla^2\phi = -\lambda^2\phi$ with $\phi = 0$ on the boundary, for any region, are orthogonal when their eigenvalues differ; that is Exercise 5.4.7 of [[§44★ Problems in Polar Coordinates|§44]], a consequence of Green's second identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|452 Thm. §17.3]]. The proof above does the disk by hand, and also handles the pairs with the same eigenvalue ($\cos(m\theta)$ against $\sin(m\theta)$), which Green's identity does not separate.
+> - All eigenfunctions of $\nabla^2\phi = -\lambda^2\phi$ with $\phi = 0$ on the boundary, for any region, are orthogonal when their eigenvalues differ; that is [[§44★ Problems in Polar Coordinates#^thm-44-3|Theorem §44.3]] (Powers' Exercise 5.4.7), a consequence of Green's second identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|452 Thm. §17.3]]. The proof above does the disk by hand, and also handles the pairs with the same eigenvalue ($\cos(m\theta)$ against $\sin(m\theta)$), which Green's identity does not separate.
 > - Finite-dimensional analogue: [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]].
 
 > [!theorem] Proposition §47.4: General Vibrations of a Circular Membrane
@@ -277,7 +277,7 @@ The coefficients come from an orthogonality principle.
 > [!example] Example §47.1: The Overtones of a Drum Are Not Harmonic
 > List the lowest frequencies of a circular membrane as multiples of the lowest one, and compare with a string.
 >
-> The frequencies are $\alpha_{mn}c/a$. From the zeros of $J_0, \ldots, J_5$ (Table 1 of [[§45★ Bessel's Equation|§45]], with $\alpha_{41} = 7.588$ and $\alpha_{51} = 8.771$ added), in increasing order:
+> The frequencies are $\alpha_{mn}c/a$. From the zeros of $J_0, \ldots, J_5$ (the table in [[§45★ Bessel's Equation#^thm-45-6|Theorem §45.6]], with $\alpha_{41} = 7.588$ and $\alpha_{51} = 8.771$ added), in increasing order:
 >
 > | mode $(m, n)$ | $(0,1)$ | $(1,1)$ | $(2,1)$ | $(0,2)$ | $(3,1)$ | $(1,2)$ | $(4,1)$ | $(2,2)$ | $(0,3)$ | $(5,1)$ |
 > |---|---|---|---|---|---|---|---|---|---|---|
@@ -313,4 +313,31 @@ The coefficients come from an orthogonality principle.
 ^ex-47-2
 
 ![[m341-47-1.svg]]
-*Six eigenfunctions $\phi_{mn} = J_m(\alpha_{mn}r/a)\cos(m\theta)$ of the disk (blue positive, red negative, white zero), with their nodal circles and diameters in black; above each, the frequency of the mode relative to the fundamental. Each picture is a snapshot of the corresponding standing wave; half a period later the colours are exchanged.*
+*Six eigenfunctions $\phi_{mn} = J_m(\alpha_{mn}r/a)\cos(m\theta)$ of the disk, with their nodal circles and diameters in black; between them $\phi_{mn} > 0$ (blue, $+$) or $\phi_{mn} < 0$ (red, $-$), the shade darker where the largest value of $|\phi_{mn}|$ in the region is larger. Above each, the frequency of the mode relative to the fundamental. Each picture is a snapshot of the corresponding standing wave; half a period later the signs are exchanged.*
+
+> [!example] Example §47.3: Identifying a Mode from Its Nodal Curves
+> The nodal curves of an eigenfunction $\phi_{mn}(r, \theta)$ of the disk of radius $a$ are the boundary circle, one interior circle of radius about $0.65a$, and three diameters, at $\theta = 0$, $\pi/3$ and $2\pi/3$ (Powers' Figure 10). (a) Find $m$ and $n$. (b) Find the eigenvalue $\lambda_{mn}$. (c) Find $\phi_{mn}$. (d) Find the frequency of the drumhead vibrating in this mode.
+>
+> **(a)** By [[§47★ Vibrations of a Circular Membrane#^ex-47-2|Example §47.2]], the nodal curves of $\phi_{mn}$ are $m$ diameters and $n - 1$ interior circles. Three diameters give $m = 3$, and one interior circle gives $n = 2$.
+>
+> **(b)** $\lambda_{32} = \alpha_{32}/a$, where $\alpha_{32}$ is the second positive zero of $J_3$: $\alpha_{31} = 6.380$, $\alpha_{32} = 9.761$, so $\lambda_{32} = 9.761/a$ and the eigenvalue is $\lambda_{32}^2 = 95.28/a^2$. Check: the interior nodal circle is at $r = (\alpha_{31}/\alpha_{32})a = (6.380/9.761)a = 0.654a$, as in the figure.
+>
+> **(c)** The eigenfunctions for $\lambda_{32}^2$ are $J_3(\lambda_{32}r)\big(A\cos(3\theta) + B\sin(3\theta)\big)$, by [[§47★ Vibrations of a Circular Membrane#^prop-47-2|Proposition §47.2]]. The angular factor must vanish at $\theta = 0$, $\pi/3$, $2\pi/3$ (and at the opposite ends of these diameters). At $\theta = 0$ this forces $A = 0$, and $\sin(3\theta) = 0$ exactly at $\theta = k\pi/3$. So, up to a constant factor,
+>
+> $$
+> \phi_{32}(r, \theta) = J_3\Big(9.761\,\frac{r}{a}\Big)\sin(3\theta) .
+> $$
+>
+> It changes sign across each nodal curve, so the $12$ regions bulge alternately up and down.
+>
+> **(d)** By [[§47★ Vibrations of a Circular Membrane#^def-47-1|Definition §47.1]], the displacement $u = \phi_{32}(r, \theta)\big(C\cos(\lambda_{32}ct) + D\sin(\lambda_{32}ct)\big)$ has the frequency
+>
+> $$
+> \lambda_{32}c = 9.761\,\frac{c}{a} \ \text{radians per unit time}, \qquad\text{that is,}\qquad \frac{9.761}{2\pi}\,\frac{c}{a} = 1.554\,\frac{c}{a} \ \text{cycles per unit time},
+> $$
+>
+> $\alpha_{32}/\alpha_{01} = 4.059$ times the fundamental frequency, again not an integer multiple (compare [[§47★ Vibrations of a Circular Membrane#^ex-47-1|Example §47.1]]).
+>
+> *Powers: Exercise 5.7.10*
+
+^ex-47-3

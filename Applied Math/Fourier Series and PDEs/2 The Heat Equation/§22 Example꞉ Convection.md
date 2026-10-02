@@ -88,7 +88,7 @@ Either $T(t) \equiv 0$ (which would make $w \equiv 0$) or $\phi(0) = 0$ and $\ka
 > \kappa\phi'(a) + h\phi(a) = c_2\big(\kappa\lambda\cos(\lambda a) + h\sin(\lambda a)\big) = 0 .
 > $$
 >
-> Discarding the possibilities $c_2 = 0$ and $\lambda = 0$, which both lead to the trivial solution, leaves the equation (11). (Dividing by $h\cos(\lambda a)$ is allowed: if $\cos(\lambda a) = 0$, then (11) would force $\sin(\lambda a) = 0$ as well, which is impossible.)
+> Discarding the possibilities $c_2 = 0$ and $\lambda = 0$, which both lead to the trivial solution, leaves the equation (11). (For $\lambda = 0$, Powers asserts this; here is why: the general solution is then $\phi = c_1 + c_2x$, not the form above; $\phi(0) = 0$ gives $c_1 = 0$, and $\kappa\phi'(a) + h\phi(a) = c_2(\kappa + ha) = 0$ gives $c_2 = 0$.) (Dividing by $h\cos(\lambda a)$ is allowed: if $\cos(\lambda a) = 0$, then (11) would force $\sin(\lambda a) = 0$ as well, which is impossible.)
 >
 > **Positive separation constant.** (Powers does not treat it; here is the check.) If $\phi'' = p^2\phi$ with $p > 0$, then $\phi(0) = 0$ gives $\phi = c_2\sinh(px)$, and $\kappa\phi'(a) + h\phi(a) = c_2\big(\kappa p\cosh(pa) + h\sinh(pa)\big)$. Both terms in the parentheses are positive, so $c_2 = 0$.
 >
@@ -159,7 +159,7 @@ Although (12) looks like a Fourier series problem, it is not, because $\lambda_2
 ^prop-22-2
 
 > [!proof]+ Proof
-> (Powers states (13) "by direct computation" and leaves the computations to Exercises 2.6.10 and 2.6.6; here they are. The general reason, valid for every problem of this type, is [[§23 Sturm–Liouville Problems|§23]] (Powers 2.7).) Write $s_n = \sin(\lambda_na)$, $c_n = \cos(\lambda_na)$. The defining equation (11) says $hs_n = -\kappa\lambda_nc_n$.
+> (Powers states (13) "by direct computation" and leaves the computations to Exercises 2.6.10 and 2.6.6; here they are. The general reason, valid for every problem of this type, is [[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]]; the same direct computation is [[§23 Sturm–Liouville Problems#^ex-23-3|Example §23.3]].) Write $s_n = \sin(\lambda_na)$, $c_n = \cos(\lambda_na)$. The defining equation (11) says $hs_n = -\kappa\lambda_nc_n$.
 >
 > **Orthogonality.** For $n \ne m$ we have $\lambda_n \ne \lambda_m$, both positive. By the product-to-sum identity,
 >
@@ -209,13 +209,13 @@ Although (12) looks like a Fourier series problem, it is not, because $\lambda_2
 
 *Uses:* [[§22 Example꞉ Convection#^prop-22-2|§22.2]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-4|§19.4]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|§19.5]], [[§18 Steady-State Temperatures#^ex-18-2|Ex. §18.2]]
 
-*That every sectionally smooth $g$ does have an expansion (12), so that the hypothesis of Theorem §22.3 is met, is not shown here; it is the expansion theorem for Sturm–Liouville eigenfunctions, [[§24 Expansion in Series of Eigenfunctions|§24]] (Powers 2.8).*
+*That every sectionally smooth $g$ does have an expansion (12), so that the hypothesis of Theorem §22.3 is met, is not shown here; it is the expansion theorem for Sturm–Liouville eigenfunctions, [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2]].*
 
 > [!remark]- Connections
 > - (14) is the coordinate formula $b_m = \langle g, \phi_m\rangle/\langle\phi_m, \phi_m\rangle$ for an orthogonal set in the inner product $\int_0^af g\,dx$: [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]]. In finite dimensions orthogonality and a basis suffice; here "basis" means completeness, the property that the expansion reconstructs $g$: [[§20 Orthonormal Sets and Bases#^def-20-2|556 Def. §20.2]], [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]].
 
 > [!remark] Remark: A Generalized Fourier Basis
-> The lectures name the property used here. A sequence of functions $\phi_1, \phi_2, \ldots$ on an interval $I$ is a **generalized Fourier basis** if (i) it is orthogonal, $\int_I\phi_i\phi_j\,dx = 0$ for $i \ne j$, and (ii) it is complete: every sectionally continuous $f$ has an expansion $f(x) \sim \sum c_n\phi_n(x)$, with $c_n = \int_If\phi_n\,dx\big/\int_I\phi_n^2\,dx$. The eigenfunctions $\sin(\lambda_nx)$ of (9)–(10) are such a basis, as are those of [[§19 Example꞉ Fixed End Temperatures|§19]]–[[§21 Example꞉ Different Boundary Conditions|§21]]. The eigenvalue problems of this chapter, $\phi'' = p\phi$ with a condition $\alpha_1\phi - \alpha_2\phi' = 0$ at each end, are special cases of the Sturm–Liouville problem, whose theorem guarantees both properties: [[§23 Sturm–Liouville Problems|§23]], [[§24 Expansion in Series of Eigenfunctions|§24]].
+> The lectures name the property used here. A sequence of functions $\phi_1, \phi_2, \ldots$ on an interval $I$ is a **generalized Fourier basis** if (i) it is orthogonal, $\int_I\phi_i\phi_j\,dx = 0$ for $i \ne j$, and (ii) it is complete: every sectionally continuous $f$ has an expansion $f(x) \sim \sum c_n\phi_n(x)$, with $c_n = \int_If\phi_n\,dx\big/\int_I\phi_n^2\,dx$. The eigenfunctions $\sin(\lambda_nx)$ of (9)–(10) are such a basis, as are those of [[§19 Example꞉ Fixed End Temperatures|§19]]–[[§21 Example꞉ Different Boundary Conditions|§21]]. The eigenvalue problems of this chapter, $\phi'' = p\phi$ with conditions $\alpha_1\phi(0) - \alpha_2\phi'(0) = 0$ and $\beta_1\phi(a) + \beta_2\phi'(a) = 0$, are special cases of the Sturm–Liouville problem, whose theorems guarantee both properties: [[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]], [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2]].
 >
 > *Source: 341 lectures 10.1, 10.10*
 

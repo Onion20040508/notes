@@ -24,7 +24,7 @@ So far we have concentrated on three homogeneous equations and found these quali
 | Wave | Oscillatory (not always periodic) behavior in time. Retention of discontinuities for $t > 0$. |
 | Potential | Smooth surface. Maximum principle. Mean value property. |
 
-The heat features are those of [[§19 Example꞉ Fixed End Temperatures|§19]] and [[§25 Generalities on the Heat Conduction Problem|§25]] (terms $e^{-\lambda_n^2kt}$ that smooth out any initial jump), the wave features those of [[§30 Solution of the Vibrating String Problem|§30]] and [[§31 d'Alembert's Solution|§31]] (traveling waves that carry corners and jumps along unchanged), and the potential features those of [[§39 Potential in a Disk|§39]] ([[§39 Potential in a Disk#^thm-39-4|Theorem §39.4]], [[§39 Potential in a Disk#^thm-39-5|Theorem §39.5]]).
+The heat features are those of [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|Theorem §19.5]] and [[§25 Generalities on the Heat Conduction Problem#^thm-25-4|Theorem §25.4]] (terms $e^{-\lambda_n^2kt}$ that smooth out any initial jump), the wave features those of [[§30 Solution of the Vibrating String Problem#^thm-30-2|Theorem §30.2]] and [[§31 d'Alembert's Solution#^thm-31-3|Theorem §31.3]] (traveling waves that carry corners and jumps along unchanged), and the potential features those of [[§39 Potential in a Disk|§39]] ([[§39 Potential in a Disk#^thm-39-4|Theorem §39.4]], [[§39 Potential in a Disk#^thm-39-5|Theorem §39.5]]).
 
 ## Classification
 
@@ -59,7 +59,7 @@ The classification determines important features of the solution, and also dicta
 >
 > **Potential.** $u_{xx} + u_{yy} = 0$: $A = C = 1$, $B = 0$, so $B^2 - 4AC = -4 < 0$: **elliptic**.
 >
-> The lower-order terms play no role: the heat equation with convection ([[§22 Example꞉ Convection|§22]]) is still parabolic, and the Poisson equation ([[§37 Further Examples for a Rectangle#^def-37-1|Definition §37.1]]) is still elliptic.
+> The lower-order terms play no role: the heat equation with lateral convection, $u_t = u_{xx} - \gamma^2(u - T)$ ([[§18 Steady-State Temperatures#^ex-18-5|Example §18.5]]), is still parabolic, and the Poisson equation ([[§37 Further Examples for a Rectangle#^def-37-1|Definition §37.1]]) is still elliptic.
 >
 > *Powers: 4.6 (text)*
 
@@ -120,7 +120,7 @@ The region in which the solution is to be found also limits the applicability of
 > |---|---|
 > | $0 < x < a$, $\ 0 < t$ | finite rod or string ([[§19 Example꞉ Fixed End Temperatures\|§19]], [[§30 Solution of the Vibrating String Problem\|§30]]) |
 > | $0 < x$, $\ 0 < t$ | semi-infinite rod ([[§26 Semi-Infinite Rod\|§26]]) |
-> | $-\infty < x < \infty$, $\ 0 < t$ | infinite rod or string ([[§27 Infinite Rod\|§27★]], [[§31 d'Alembert's Solution\|§31]]) |
+> | $-\infty < x < \infty$, $\ 0 < t$ | infinite rod or string ([[§27 Infinite Rod\|§27]], [[§31 d'Alembert's Solution\|§31]]) |
 > | $0 < x < a$, $\ 0 < y < b$ | rectangle ([[§36 Potential in a Rectangle\|§36]]) |
 > | $0 < r < c$, $\ -\pi < \theta \le \pi$ | disk ([[§39 Potential in a Disk\|§39]]) |
 >
@@ -133,7 +133,7 @@ The region in which the solution is to be found also limits the applicability of
 Finally, there are restrictions on the kinds of boundary conditions that can be handled. From the examples in this chapter it is clear that we need homogeneous or "homogeneous-like" conditions on opposite sides of a generalized rectangle.
 
 > [!remark] Remark: Homogeneous-Like Conditions
-> Examples of homogeneous-like conditions are the requirement that a function remain bounded as some variable tends to infinity ([[§38 Potential in Unbounded Regions|§38]]), and the periodic conditions at $\theta = \pm\pi$ ([[§39 Potential in a Disk|§39]]). The point is that if two or more functions satisfy the conditions, so does a sum of those functions. For instance, if $f_1, f_2, \ldots$ all satisfy $f(-\pi) = f(\pi)$, $f'(-\pi) = f'(\pi)$, then so does $c_1f_1 + c_2f_2$, because evaluation and differentiation are linear; and a sum of finitely many bounded functions is bounded. This closure under sums is exactly what superposition of product solutions needs. A condition like $u(0, y) = g(y)$ with $g \ne 0$ does not have it, which is why such conditions are split off ([[§37 Further Examples for a Rectangle#^rem-37-1|Remark: Method — Splitting a Rectangle Problem]]).
+> Examples of homogeneous-like conditions are the requirement that a function remain bounded as some variable tends to infinity ([[§38 Potential in Unbounded Regions#^rem-38-1|§38]]), and the periodic conditions at $\theta = \pm\pi$ ([[§39 Potential in a Disk#^prop-39-1|Proposition §39.1]]). The point is that if two or more functions satisfy the conditions, so does a sum of those functions. For instance, if $f_1, f_2, \ldots$ all satisfy $f(-\pi) = f(\pi)$, $f'(-\pi) = f'(\pi)$, then so does $c_1f_1 + c_2f_2$, because evaluation and differentiation are linear; and a sum of finitely many bounded functions is bounded. This closure under sums is exactly what superposition of product solutions needs. A condition like $u(0, y) = g(y)$ with $g \ne 0$ does not have it, which is why such conditions are split off ([[§37 Further Examples for a Rectangle#^rem-37-1|Remark: Method — Splitting a Rectangle Problem]]).
 
 ^rem-40-2
 

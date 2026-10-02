@@ -11,7 +11,7 @@ tags: [fourier-series-and-pdes, math341]
 
 *Powers, Section 1.9 · MAT 341 lectures 10.3, 10.22 · HW 9 · Midterm 2 · Practice Midterm 2.*
 
-Fourier series represent periodic functions, and through periodic extension functions on a finite interval. A nonperiodic function on $-\infty < x < \infty$ has no period to expand over, but letting the period $2a$ tend to infinity turns the sum over the frequencies $n\pi/a$ into an integral over all frequencies $\lambda \ge 0$: $f$ becomes a continuous superposition of $\cos(\lambda x)$ and $\sin(\lambda x)$ with weights $A(\lambda)$ and $B(\lambda)$. The Fourier integral theorem makes this precise for sectionally smooth, absolutely integrable functions, and for functions on $0 < x < \infty$ it gives the Fourier cosine and sine integrals. These are the tool for heat conduction in a semi-infinite or infinite rod ([[§26 Semi-Infinite Rod|§26]], [[§27 Infinite Rod|§27★]]), and more generally for any problem on an unbounded interval where separation of variables produces a continuum of modes instead of a sequence.
+Fourier series represent periodic functions, and through periodic extension functions on a finite interval. A nonperiodic function on $-\infty < x < \infty$ has no period to expand over, but letting the period $2a$ tend to infinity turns the sum over the frequencies $n\pi/a$ into an integral over all frequencies $\lambda \ge 0$: $f$ becomes a continuous superposition of $\cos(\lambda x)$ and $\sin(\lambda x)$ with weights $A(\lambda)$ and $B(\lambda)$. The Fourier integral theorem makes this precise for sectionally smooth, absolutely integrable functions, and for functions on $0 < x < \infty$ it gives the Fourier cosine and sine integrals. These are the tool for heat conduction in a semi-infinite or infinite rod ([[§26 Semi-Infinite Rod|§26]], [[§27 Infinite Rod|§27]]), and more generally for any problem on an unbounded interval where separation of variables produces a continuum of modes instead of a sequence.
 
 ## From Fourier Series to Fourier Integral
 
@@ -140,7 +140,7 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 >
 > At $x = 0$ this can be checked directly: $\int_0^{\infty}\frac{d\lambda}{\pi(1 + \lambda^2)} = \frac1\pi\cdot\frac\pi2 = \frac12$.
 >
-> On Midterm 2 these coefficients gave the temperature in an infinite rod ($u_t = u_{xx}$, $u(x, 0) = f(x)$): each mode $\cos\lambda x$, $\sin\lambda x$ decays like $e^{-\lambda^2 t}$, so $u(x, t) = \int_0^{\infty} e^{-\lambda^2 t}\Big(\frac{\cos\lambda x}{\pi(1 + \lambda^2)} + \frac{\lambda\sin\lambda x}{\pi(1 + \lambda^2)}\Big)d\lambda$ ([[§27 Infinite Rod|§27★]]).
+> On Midterm 2 these coefficients gave the temperature in an infinite rod ($u_t = u_{xx}$, $u(x, 0) = f(x)$): each mode $\cos\lambda x$, $\sin\lambda x$ decays like $e^{-\lambda^2 t}$, so $u(x, t) = \int_0^{\infty} e^{-\lambda^2 t}\Big(\frac{\cos\lambda x}{\pi(1 + \lambda^2)} + \frac{\lambda\sin\lambda x}{\pi(1 + \lambda^2)}\Big)d\lambda$ ([[§27 Infinite Rod#^thm-27-2|Theorem §27.2]]).
 >
 > *Powers: 1.9, Example 1 · Source: 341 Midterm 2, Q2(c)*
 
@@ -189,7 +189,7 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 > f(x) = \int_0^{\infty}\frac{2(1 - \cos\lambda)}{\pi\lambda^2}\cos(\lambda x)\,d\lambda .
 > $$
 >
-> Compared with the pulse of Example §14.2, $A(\lambda) = \frac{4\sin^2(\lambda/2)}{\pi\lambda^2}$ decays like $1/\lambda^2$: removing the jumps makes the integral converge absolutely, as removing jumps speeds up Fourier series ([[§9 Uniform Convergence|§9]]). At $x = 0$: $\frac2\pi\int_0^{\infty}\frac{1 - \cos\lambda}{\lambda^2}\,d\lambda = \frac2\pi\cdot\frac\pi2 = 1 = f(0)$.
+> Compared with the pulse of Example §14.2, $A(\lambda) = \frac{4\sin^2(\lambda/2)}{\pi\lambda^2}$ decays like $1/\lambda^2$: removing the jumps makes the integral converge absolutely, as removing jumps speeds up Fourier series ([[§9 Uniform Convergence#^thm-9-3|Theorem §9.3]]). At $x = 0$: $\frac2\pi\int_0^{\infty}\frac{1 - \cos\lambda}{\lambda^2}\,d\lambda = \frac2\pi\cdot\frac\pi2 = 1 = f(0)$.
 >
 > *Source: 341 HW 9, Problem 1*
 

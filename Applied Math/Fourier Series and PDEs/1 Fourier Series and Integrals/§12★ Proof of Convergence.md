@@ -12,7 +12,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 *Powers, Section 1.7.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
-This section proves the Fourier convergence theorem that [[§8 Convergence of Fourier Series|§8]] states without proof: the Fourier series of a sectionally smooth periodic function converges at every point, to the average of the one-sided limits. The partial sum $S_N(x)$ is rewritten as an integral of $f$ against the Dirichlet kernel, the difference $S_N(x) - f(x)$ then turns out to be a Fourier coefficient of an auxiliary function, and the fact that Fourier coefficients tend to zero (the Riemann–Lebesgue lemma) finishes the proof. The one delicate point is that the auxiliary function has no bad discontinuity at $y = 0$, and this is exactly where sectional smoothness is used. No other subject in the vault proves pointwise convergence of Fourier series, so the proof is written out completely here, including the jump case that Powers leaves as an exercise; every later "$f$ equals its Fourier series" in the heat, wave and potential problems rests on it.
+This section proves the Fourier convergence theorem that [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]] states without proof: the Fourier series of a sectionally smooth periodic function converges at every point, to the average of the one-sided limits. The partial sum $S_N(x)$ is rewritten as an integral of $f$ against the Dirichlet kernel, the difference $S_N(x) - f(x)$ then turns out to be a Fourier coefficient of an auxiliary function, and the fact that Fourier coefficients tend to zero (the Riemann–Lebesgue lemma) finishes the proof. The one delicate point is that the auxiliary function has no bad discontinuity at $y = 0$, and this is exactly where sectional smoothness is used. No other subject in the vault proves pointwise convergence of Fourier series, so the proof is written out completely here, including the jump case that Powers leaves as an exercise; every later "$f$ equals its Fourier series" in the heat, wave and potential problems rests on it.
 
 ## Three Lemmas
 
@@ -102,7 +102,7 @@ Throughout, the period is $2\pi$; any other period follows by a change of variab
 ^lem-12-3
 
 > [!proof]+ Proof
-> Powers proved this in Section 1.6 ([[§11★ Mean Error and Convergence in Mean|§11★]]) as a consequence of Bessel's inequality; here is the argument. Let $a_n$, $b_n$ be the two integrals in the statement and $a_0 = \frac{1}{2\pi}\int_{-\pi}^{\pi}\phi$; these are the Fourier coefficients of $\phi$ (period $2\pi$). Since $\phi$ is sectionally continuous, so is $\phi^2$, and $\int_{-\pi}^{\pi}\phi^2$ is finite. Bessel's inequality (with $a = \pi$) says
+> Powers proved this in Section 1.6 ([[§11★ Mean Error and Convergence in Mean#^cor-11-5|Corollary §11.5]], with $a = \pi$) as a consequence of Bessel's inequality; here is the argument. Let $a_n$, $b_n$ be the two integrals in the statement and $a_0 = \frac{1}{2\pi}\int_{-\pi}^{\pi}\phi$; these are the Fourier coefficients of $\phi$ (period $2\pi$). Since $\phi$ is sectionally continuous, so is $\phi^2$, and $\int_{-\pi}^{\pi}\phi^2$ is finite. Bessel's inequality (with $a = \pi$) says
 >
 > $$
 > 2a_0^2 + \sum_{n=1}^{N}\big(a_n^2 + b_n^2\big) \le \frac1\pi\int_{-\pi}^{\pi}\phi^2(y)\,dy \qquad\text{for every } N .
@@ -112,7 +112,7 @@ Throughout, the period is $2\pi$; any other period follows by a change of variab
 
 ^pf-12-3
 
-*Uses:* [[§11★ Mean Error and Convergence in Mean|§11★]] (Bessel's inequality)
+*Uses:* [[§11★ Mean Error and Convergence in Mean#^thm-11-3|§11.3]] (Bessel's inequality), [[§11★ Mean Error and Convergence in Mean#^cor-11-5|§11.5]]
 
 > [!remark]- Connections
 > - Bessel's inequality in any inner product space: [[§20 Orthonormal Sets and Bases#^thm-20-5|556 Thm. §20.5]]. The proof above is that inequality for the orthonormal functions $\frac{1}{\sqrt{2\pi}}, \frac{\cos ny}{\sqrt\pi}, \frac{\sin ny}{\sqrt\pi}$ in $L^2(-\pi, \pi)$, together with the fact that the terms of a convergent series tend to $0$.
@@ -120,7 +120,7 @@ Throughout, the period is $2\pi$; any other period follows by a change of variab
 
 ## The Convergence Theorem
 
-The theorem is the one stated in Section 1.3, restated for period $2\pi$. Recall from [[§8 Convergence of Fourier Series|§8]] that $f$ is **sectionally smooth** if $f$ is sectionally continuous, $f'$ exists except at finitely many points of each finite interval, and $f'$ is sectionally continuous. In particular the one-sided limits $f(x\pm)$ and $f'(x\pm) = \lim_{t \to x\pm} f'(t)$ exist at every $x$.
+The theorem is [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]] (Powers 1.3), restated for period $2\pi$; [[§12★ Proof of Convergence#^cor-12-5|Corollary §12.5]] returns to period $2a$. Recall ([[§8 Convergence of Fourier Series#^def-8-4|Definition §8.4]]) that $f$ is **sectionally smooth** if $f$ is sectionally continuous, $f'$ exists except at finitely many points of each finite interval, and $f'$ is sectionally continuous. In particular the one-sided limits $f(x\pm)$ and $f'(x\pm) = \lim_{t \to x\pm} f'(t)$ exist at every $x$.
 
 > [!theorem] Theorem §12.4: Fourier Convergence Theorem
 > If $f(x)$ is sectionally smooth and periodic with period $2\pi$, then the Fourier series corresponding to $f$ converges at every $x$, and the sum of the series is
@@ -177,7 +177,7 @@ The theorem is the one stated in Section 1.3, restated for period $2\pi$. Recall
 > S_N(x) = \frac1\pi\int_{-\pi - x}^{\pi - x} f(x + y)\,D_N(y)\,dy . \qquad (9)
 > $$
 >
-> Both factors of the integrand $g(y) = f(x + y)D_N(y)$ are periodic in $y$ with period $2\pi$, and the integral of a $2\pi$-periodic function over any interval $[c, c + 2\pi]$ is the same (Powers' Exercise 1.1.5, [[§6 Periodic Functions and Fourier Series|§6]]). (Here is why: let $m = \pi + 2k\pi$ be the point of $[c, c + 2\pi]$ congruent to $\pi$; then $c - 2k\pi \in [-\pi, \pi]$, and shifting $\int_c^m g$ by $-2k\pi$ and $\int_m^{c + 2\pi} g$ by $-2k\pi - 2\pi$ turns them into $\int_{c - 2k\pi}^{\pi} g$ and $\int_{-\pi}^{c - 2k\pi} g$, which add up to $\int_{-\pi}^{\pi} g$.) Therefore
+> Both factors of the integrand $g(y) = f(x + y)D_N(y)$ are periodic in $y$ with period $2\pi$, and the integral of a $2\pi$-periodic function over any interval $[c, c + 2\pi]$ is the same (Powers' Exercise 1.1.5, [[§6 Periodic Functions and Fourier Series#^prop-6-2|Proposition §6.2]]). (Here is why: let $m = \pi + 2k\pi$ be the point of $[c, c + 2\pi]$ congruent to $\pi$; then $c - 2k\pi \in [-\pi, \pi]$, and shifting $\int_c^m g$ by $-2k\pi$ and $\int_m^{c + 2\pi} g$ by $-2k\pi - 2\pi$ turns them into $\int_{c - 2k\pi}^{\pi} g$ and $\int_{-\pi}^{c - 2k\pi} g$, which add up to $\int_{-\pi}^{\pi} g$.) Therefore
 >
 > $$
 > S_N(x) = \frac1\pi\int_{-\pi}^{\pi} f(x + y)\Big(\frac12 + \sum_{n=1}^{N}\cos(ny)\Big)\,dy = \frac1\pi\int_{-\pi}^{\pi} f(x + y)\,D_N(y)\,dy . \qquad (10)
@@ -274,11 +274,11 @@ The theorem is the one stated in Section 1.3, restated for period $2\pi$. Recall
 
 ^pf-12-4
 
-*Uses:* [[§12★ Proof of Convergence#^def-12-1|Def. §12.1]], [[§12★ Proof of Convergence#^lem-12-1|§12.1]], [[§12★ Proof of Convergence#^lem-12-2|§12.2]], [[§12★ Proof of Convergence#^lem-12-3|§12.3]], [[§6 Periodic Functions and Fourier Series|§6]] (Fourier coefficients; integrals over a period), [[§8 Convergence of Fourier Series|§8]] (sectionally smooth functions), [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]] (one-sided l'Hôpital's rule), [[§33 Properties of the Riemann Integral#^thm-33-2|451 Thm. §33.2]], [[§33 Properties of the Riemann Integral#^thm-33-5|451 Thm. §33.5]]
+*Uses:* [[§12★ Proof of Convergence#^def-12-1|Def. §12.1]], [[§12★ Proof of Convergence#^lem-12-1|§12.1]], [[§12★ Proof of Convergence#^lem-12-2|§12.2]], [[§12★ Proof of Convergence#^lem-12-3|§12.3]], [[§6 Periodic Functions and Fourier Series#^def-6-2|Def. §6.2]], [[§6 Periodic Functions and Fourier Series#^prop-6-2|§6.2]], [[§8 Convergence of Fourier Series#^def-8-4|Def. §8.4]], [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]] (one-sided l'Hôpital's rule), [[§33 Properties of the Riemann Integral#^thm-33-2|451 Thm. §33.2]], [[§33 Properties of the Riemann Integral#^thm-33-5|451 Thm. §33.5]]
 
 > [!remark]- Connections
-> - Convergence of Fourier series in the mean-square sense holds for every $f \in L^2$, with no smoothness at all: [[§20 Orthonormal Sets and Bases#^rem-20-9|556 Rem. §20.9]] (the Fourier basis, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]]); Powers' version is [[§11★ Mean Error and Convergence in Mean|§11★]], and the computational one [[§47 Applications of Inner Product Spaces#^thm-47-4|235 Thm. §47.4]]. Pointwise convergence, proved here, needs a local condition at the point $x$, which sectional smoothness provides.
-> - The tools are those of Single Variable Analysis: the Riemann integral of sectionally continuous functions and one-sided l'Hôpital's rule, [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]]. For uniform convergence (continuous $f$ with sectionally continuous $f'$) see [[§9 Uniform Convergence|§9]] (Theorem 2).
+> - Convergence of Fourier series in the mean-square sense holds for every $f \in L^2$, with no smoothness at all: [[§20 Orthonormal Sets and Bases#^rem-20-9|556 Rem. §20.9]] (the Fourier basis, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]]); Powers' version is [[§11★ Mean Error and Convergence in Mean#^thm-11-6|Theorem §11.6]], and the computational one [[§47 Applications of Inner Product Spaces#^thm-47-4|235 Thm. §47.4]]. Pointwise convergence, proved here, needs a local condition at the point $x$, which sectional smoothness provides.
+> - The tools are those of Single Variable Analysis: the Riemann integral of sectionally continuous functions and one-sided l'Hôpital's rule, [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]]. For uniform convergence (continuous $f$ with sectionally continuous $f'$) see [[§9 Uniform Convergence#^thm-9-3|Theorem §9.3]].
 
 Section 1.3 states the theorem for period $2a$; it follows by stretching the variable.
 
@@ -306,7 +306,7 @@ Section 1.3 states the theorem for period $2a$; it follows by stretching the var
 
 ^pf-12-5
 
-*Uses:* [[§12★ Proof of Convergence#^thm-12-4|§12.4]], [[§7 Arbitrary Period and Half-Range Expansions|§7]] (coefficients for period 2a)
+*Uses:* [[§12★ Proof of Convergence#^thm-12-4|§12.4]], [[§7 Arbitrary Period and Half-Range Expansions#^prop-7-1|§7.1]]
 
 > [!remark] Remark: What the Hypothesis Does
 > Sectional smoothness was used only in Part 3 and Part 4, and only near $y = 0$, to keep the quotient $\big(f(x + y) - f(x\pm)\big)/y$ bounded. So the proof gives convergence at a point $x$ whenever $f$ is sectionally continuous and has finite one-sided difference-quotient limits at $x$, whatever $f$ does elsewhere. The hypothesis is sufficient but not necessary: in [[§12★ Proof of Convergence#^ex-12-3|Example §12.3]] the quotient is unbounded and the series still converges. Some local condition is needed, though: there are continuous periodic functions whose Fourier series diverge at a point (a classical construction of du Bois-Reymond, not given in the vault).

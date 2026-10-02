@@ -58,15 +58,15 @@ $$
 > X'' + \lambda^2X = 0 \qquad (6)
 > $$
 >
-> this is the eigenvalue problem of [[§19 Example꞉ Fixed End Temperatures|§19]], whose solution is $X_n(x) = \sin(n\pi x/a)$, $\lambda_n^2 = (n\pi/a)^2$, $n = 1, 2, 3, \ldots$
+> this is the eigenvalue problem of [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|Theorem §19.2]], whose solution is $X_n(x) = \sin(n\pi x/a)$, $\lambda_n^2 = (n\pi/a)^2$, $n = 1, 2, 3, \ldots$
 >
 > **The factor $Y$.** It satisfies $Y'' - \lambda_n^2Y = 0$ for $0 < y$ and must remain bounded as $y \to \infty$. The solutions of the equation are combinations of $e^{\lambda_ny}$ and $e^{-\lambda_ny}$; the first is unbounded, so its coefficient must be $0$ and $Y_n(y) = \exp(-\lambda_ny)$. (This is why the exponential form is chosen here rather than $\cosh$ and $\sinh$, both of which are unbounded.)
 >
-> **Superposition.** Each $X_nY_n$ is harmonic, vanishes on the walls and is bounded, so the series (7) has the same properties when it converges (for $y \ge \delta > 0$ its terms are dominated by $|a_n|e^{-n\pi\delta/a}$). At $y = 0$ it becomes $\sum a_n\sin(n\pi x/a) = f(x)$, a Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions|§7]]), which determines the $a_n$ as stated.
+> **Superposition.** Each $X_nY_n$ is harmonic, vanishes on the walls and is bounded, so the series (7) has the same properties when it converges (for $y \ge \delta > 0$ its terms are dominated by $|a_n|e^{-n\pi\delta/a}$). At $y = 0$ it becomes $\sum a_n\sin(n\pi x/a) = f(x)$, a Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]), which determines the $a_n$ as stated.
 
 ^pf-38-1
 
-*Uses:* [[§19 Example꞉ Fixed End Temperatures|§19]] (the eigenvalue problem), [[§7 Arbitrary Period and Half-Range Expansions|§7]] (sine series)
+*Uses:* [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (sine series)
 
 > [!theorem] Theorem §38.2: Slot with Data on the Walls
 > Let $g_1$ and $g_2$ be sectionally smooth on $0 < y < \infty$ with $\int_0^\infty|g_i(y)|\,dy < \infty$. The bounded solution $u_2$ of the potential equation in the slot $0 < x < a$, $0 < y$, with $u_2(x, 0) = 0$, $u_2(0, y) = g_1(y)$, $u_2(a, y) = g_2(y)$, is
@@ -120,14 +120,14 @@ $$
 > u_2(0, y) = \int_0^\infty B(\mu)\sin(\mu y)\,d\mu = g_1(y), \qquad u_2(a, y) = \int_0^\infty A(\mu)\sin(\mu y)\,d\mu = g_2(y), \qquad 0 < y .
 > $$
 >
-> These are Fourier sine integral representations of $g_1$ and $g_2$ ([[§14 Fourier Integral|§14]]), so $B(\mu)$ and $A(\mu)$ are given by the sine-integral coefficient formula $\frac2\pi\int_0^\infty g(y)\sin(\mu y)\,dy$.
+> These are Fourier sine integral representations of $g_1$ and $g_2$ ([[§14 Fourier Integral#^def-14-2|Definition §14.2]]), so $B(\mu)$ and $A(\mu)$ are given by the sine-integral coefficient formula $\frac2\pi\int_0^\infty g(y)\sin(\mu y)\,dy$.
 
 ^pf-38-2
 
-*Uses:* [[§36 Potential in a Rectangle#^thm-36-2|§36.2]] (the $\sinh$ basis), [[§14 Fourier Integral|§14]] (Fourier sine integral)
+*Uses:* [[§36 Potential in a Rectangle#^thm-36-2|§36.2]] (the $\sinh$ basis), [[§14 Fourier Integral#^def-14-2|Def. §14.2]] (Fourier sine integral)
 
 > [!remark] Remark: Method — Unbounded Regions
-> 1. Impose boundedness ("$u$ remains bounded as $y \to \infty$") wherever the region is unbounded; it plays the role of a homogeneous boundary condition, because sums and integrals of bounded solutions are bounded.
+> 1. Impose boundedness ("$u$ remains bounded as $y \to \infty$", [[§4★ Singular Boundary Value Problems#^def-4-3|Definition §4.3]]) wherever the region is unbounded; it plays the role of a homogeneous boundary condition, because sums and integrals of bounded solutions are bounded.
 > 2. Split the problem so that each part has homogeneous (or homogeneous-like) conditions on a pair of facing boundaries.
 > 3. If the homogeneous pair is a pair of parallel walls a finite distance apart, the eigenvalues are discrete: use a Fourier **series**, and pick the decaying exponential $e^{-\lambda_n y}$ in the unbounded direction.
 > 4. If one of the pair is "at infinity" (boundedness), every $\mu > 0$ is allowed: combine the product solutions by a Fourier **integral** and determine $A(\mu)$, $B(\mu)$ from the Fourier integral formulas.
@@ -143,7 +143,7 @@ $$
 > u(x, y) = \frac4\pi\sum_{n \text{ odd}}\frac1n\sin\Big(\frac{n\pi x}{a}\Big)e^{-n\pi y/a} .
 > $$
 >
-> **Closed form.** Put $\rho = e^{-\pi y/a}$ and $\theta = \pi x/a$, so the sum is the imaginary part of $\sum_{n \text{ odd}}z^n/n$ with $z = \rho e^{i\theta}$, $|z| < 1$. Subtracting the series $\ln(1 - z) = -\sum z^n/n$ from $\ln(1 + z) = \sum(-1)^{n+1}z^n/n$ gives $\sum_{n \text{ odd}}z^n/n = \frac12\ln\frac{1 + z}{1 - z}$ ([[§15★ Complex Methods|§15★]]). Since
+> **Closed form.** Put $\rho = e^{-\pi y/a}$ and $\theta = \pi x/a$, so the sum is the imaginary part of $\sum_{n \text{ odd}}z^n/n$ with $z = \rho e^{i\theta}$, $|z| < 1$. Subtracting the series $\ln(1 - z) = -\sum z^n/n$ from $\ln(1 + z) = \sum(-1)^{n+1}z^n/n$ gives $\sum_{n \text{ odd}}z^n/n = \frac12\ln\frac{1 + z}{1 - z}$ (the method of [[§15★ Complex Methods#^ex-15-1|Example §15.1]]). Since
 >
 > $$
 > \frac{1 + z}{1 - z} = \frac{(1 + z)(1 - \bar z)}{|1 - z|^2} = \frac{1 - \rho^2 + 2i\rho\sin\theta}{|1 - z|^2}
@@ -219,7 +219,7 @@ $$
 The potential equation can also be solved in a strip ($0 < x < a$, $-\infty < y < \infty$), a quarter-plane ($0 < x$, $0 < y$) or a half-plane ($0 < x$, $-\infty < y < \infty$). Along each boundary line a boundary condition is imposed, and the solution is required to remain bounded in remote portions of the region. In general a Fourier integral is employed, because the separation constant is a continuous parameter, as for $u_2$ above.
 
 > [!remark] Remark: The Half-Plane and Its Poisson Formula
-> For the upper half-plane $y > 0$ with $u(x, 0) = f(x)$ and $u$ bounded, the product solutions are $e^{-\lambda y}\cos(\lambda x)$ and $e^{-\lambda y}\sin(\lambda x)$, $\lambda \ge 0$, and the Fourier integral solution can be summed under the integral sign (as for the infinite rod, [[§27 Infinite Rod|§27★]]). Powers' Exercises 4.4.15–16 lead to
+> For the upper half-plane $y > 0$ with $u(x, 0) = f(x)$ and $u$ bounded, the product solutions are $e^{-\lambda y}\cos(\lambda x)$ and $e^{-\lambda y}\sin(\lambda x)$, $\lambda \ge 0$, and the Fourier integral solution can be summed under the integral sign (as for the infinite rod, [[§27 Infinite Rod#^thm-27-3|Theorem §27.3]]). Powers' Exercises 4.4.15–16 lead to
 >
 > $$
 > u(x, y) = \frac1\pi\int_{-\infty}^{\infty}f(x')\,\frac{y}{y^2 + (x - x')^2}\,dx' ,

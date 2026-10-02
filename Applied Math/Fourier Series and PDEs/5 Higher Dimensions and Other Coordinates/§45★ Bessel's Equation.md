@@ -307,7 +307,7 @@ There must be a second, independent solution of Bessel's equation.
 *Powers omits the proof. (The table agrees with values recomputed with SciPy to all digits shown.)*
 
 ![[m341-45-1.svg]]
-*$J_0$ (blue) and $J_1$ (red), computed with SciPy. $J_0(0) = 1$ and $J_1(0) = 0$; both oscillate with slowly decreasing amplitude, like damped cosines. The dots mark the zeros of $J_0$ (2.405, 5.520, 8.654, 11.792) and the circles those of $J_1$ (3.832, 7.016, 10.173, 13.324): they alternate, as Corollary §45.9 shows, and consecutive zeros are about $\pi$ apart. $J_1$ has its maximum $0.582$ at $x = 1.841$, and $J_0$ its minimum $-0.403$ at the first zero of $J_1$, since $J_0' = -J_1$.*
+*$J_0$ (blue) and $J_1$ (red), computed with SciPy. $J_0(0) = 1$ and $J_1(0) = 0$; both oscillate with slowly decreasing amplitude, like damped cosines. The dots mark the zeros of $J_0$ (2.405, 5.520, 8.654, 11.792) and the circles those of $J_1$ (3.832, 7.016, 10.173, 13.324): they alternate (Corollary §45.9 puts a zero of $J_1$ between consecutive zeros of $J_0$; Rolle's theorem applied to $xJ_1(x)$, whose derivative is $xJ_0(x)$ by Theorem §45.7(d), puts a zero of $J_0$ between consecutive zeros of $J_1$), and consecutive zeros are about $\pi$ apart. $J_1$ has its maximum $0.582$ at $x = 1.841$, and $J_0$ its minimum $-0.403$ at the first zero of $J_1$, since $J_0' = -J_1$.*
 
 > [!remark] Remark: Why J₀ Oscillates
 > The substitution $y = \sqrt{x}\,J_0(x)$ turns Bessel's equation $x^2J_0'' + xJ_0' + x^2J_0 = 0$ into

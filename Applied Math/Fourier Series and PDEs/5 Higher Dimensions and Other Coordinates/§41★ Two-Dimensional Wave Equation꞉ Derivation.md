@@ -12,7 +12,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 *Powers, Section 5.1.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
-This section derives the equation of a vibrating membrane, such as a drumhead or a soap film stretched over a frame. Newton's second law for a small rectangle of membrane, pulled along its four edges by the surface tension, gives $u_{xx} + u_{yy} = u_{tt}/c^2$ with $c^2 = \sigma/\rho$. It is the two-dimensional version of the vibrating string of [[§29 The Vibrating String|§29]], and the derivation makes the same assumption of small slopes, so the equation describes small vibrations. The membrane problem is solved on a rectangle at the end of [[§43 Two-Dimensional Heat Equation꞉ Solution|§43]], and on a disk, where Bessel functions appear, in [[§47★ Vibrations of a Circular Membrane|§47]].
+This section derives the equation of a vibrating membrane, such as a drumhead or a soap film stretched over a frame. Newton's second law for a small rectangle of membrane, pulled along its four edges by the surface tension, gives $u_{xx} + u_{yy} = u_{tt}/c^2$ with $c^2 = \sigma/\rho$. It is the two-dimensional version of the vibrating string of [[§29 The Vibrating String|§29]], and the derivation makes the same assumption of small slopes, so the equation describes small vibrations. The membrane problem is solved on a rectangle at the end of [[§43 Two-Dimensional Heat Equation꞉ Solution|§43]], and on a disk, where Bessel functions appear, in [[§47★ Vibrations of a Circular Membrane#^prop-47-4|Proposition §47.4]].
 
 ## The Membrane
 
@@ -162,7 +162,7 @@ Cut out a small rectangle of membrane of dimensions $\Delta x$ by $\Delta y$, al
 > \end{aligned}
 > $$
 >
-> Only $r = a$ is a real boundary. The two extra conditions come from the coordinates, as for the potential in a disk ([[§39 Potential in a Disk|§39]]): $\theta$ and $\theta + 2\pi$ name the same point, so $v$ must be $2\pi$-periodic in $\theta$; and the coefficients $1/r$, $1/r^2$ blow up at the center, where the membrane is nevertheless an ordinary interior point, so $v$ is required to stay bounded there. This problem is taken up in [[§44★ Problems in Polar Coordinates#^def-44-1|Definition §44.1]] and solved in [[§47★ Vibrations of a Circular Membrane|§47]].
+> Only $r = a$ is a real boundary. The two extra conditions come from the coordinates, as for the potential in a disk ([[§39 Potential in a Disk|§39]]): $\theta$ and $\theta + 2\pi$ name the same point, so $v$ must be $2\pi$-periodic in $\theta$; and the coefficients $1/r$, $1/r^2$ blow up at the center, where the membrane is nevertheless an ordinary interior point, so $v$ is required to stay bounded there. This problem is taken up in [[§44★ Problems in Polar Coordinates#^def-44-1|Definition §44.1]] and solved in [[§47★ Vibrations of a Circular Membrane#^prop-47-4|Proposition §47.4]].
 >
 > *Powers: Exercise 5.1.2*
 

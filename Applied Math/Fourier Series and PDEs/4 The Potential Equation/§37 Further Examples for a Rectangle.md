@@ -11,7 +11,7 @@ tags: [fourier-series-and-pdes, math341]
 
 *Powers, Section 4.3 · MAT 341 lectures 11.19–11.21 · HW 12.*
 
-Separation of variables in a rectangle is not limited to Dirichlet problems. Insulated sides (zero normal derivative) or mixed conditions on a pair of facing sides lead to the other eigenvalue problems of Chapter 2, with cosine eigenfunctions, a constant eigenfunction for the eigenvalue $0$, or the eigenvalues $(n - \frac12)\pi/a$. The splitting principle of [[§36 Potential in a Rectangle|§36]] still applies: zero the conditions on two facing sides and copy the rest. Harmonic polynomials can absorb simple boundary data and save a series. The section ends with the Poisson equation $\nabla^2u = -H$, the potential equation with a source: the deflection of a loaded membrane, the temperature in a current-carrying wire, the stress function of a twisted bar.
+Separation of variables in a rectangle is not limited to Dirichlet problems. Insulated sides (zero normal derivative) or mixed conditions on a pair of facing sides lead to the other eigenvalue problems of Chapter 2, with cosine eigenfunctions, a constant eigenfunction for the eigenvalue $0$, or the eigenvalues $(n - \frac12)\pi/a$. The splitting principle of [[§36 Potential in a Rectangle#^thm-36-2|§36]] still applies: zero the conditions on two facing sides and copy the rest. Harmonic polynomials can absorb simple boundary data and save a series. The section ends with the Poisson equation $\nabla^2u = -H$, the potential equation with a source: the deflection of a loaded membrane, the temperature in a current-carrying wire, the stress function of a twisted bar.
 
 ## Insulated Sides
 
@@ -26,7 +26,7 @@ Separation of variables in a rectangle is not limited to Dirichlet problems. Ins
 > \end{aligned}
 > $$
 >
-> **Separation.** The conditions are homogeneous on the facing sides $x = 0$ and $x = a$. A product $u = X(x)Y(y)$ gives, as expected, $X''/X = -Y''/Y = $ constant, with $X'(0) = 0$, $X'(a) = 0$. With the constant $-\lambda^2$ this is the eigenvalue problem of the insulated bar ([[§20 Example꞉ Insulated Bar|§20]]):
+> **Separation.** The conditions are homogeneous on the facing sides $x = 0$ and $x = a$. A product $u = X(x)Y(y)$ gives, as expected, $X''/X = -Y''/Y = $ constant, with $X'(0) = 0$, $X'(a) = 0$. With the constant $-\lambda^2$ this is the eigenvalue problem of the insulated bar ([[§20 Example꞉ Insulated Bar#^thm-20-1|Theorem §20.1]]):
 >
 > $$
 > X_0(x) = 1, \quad \lambda_0 = 0; \qquad X_n(x) = \cos(\lambda_nx), \quad \lambda_n = \frac{n\pi}{a}, \quad n = 1, 2, \ldots
@@ -52,7 +52,7 @@ Separation of variables in a rectangle is not limited to Dirichlet problems. Ins
 > b_0b + \sum_{n=1}^{\infty}\big(b_n\sinh(\lambda_nb)\big)\cos(\lambda_nx) = \frac{V_0x}{a}, \qquad 0 < x < a ,
 > $$
 >
-> a slightly disguised cosine series ([[§7 Arbitrary Period and Half-Range Expansions|§7]]). Its coefficients are
+> a slightly disguised cosine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]). Its coefficients are
 >
 > $$
 > b_0b = \frac1a\int_0^a V_0\frac xa\,dx = \frac{V_0}{2}, \qquad b_n\sinh(\lambda_nb) = \frac2a\int_0^a V_0\frac xa\cos(\lambda_nx)\,dx = \frac{2V_0\big((-1)^n - 1\big)}{n^2\pi^2} ,
@@ -185,7 +185,7 @@ The success of separation of variables depends on having homogeneous boundary co
 > \end{aligned}
 > $$
 >
-> Then $u(a, y) = 0 + Sy$, $u(x, b) = Sbx/a + 0$, $u_x(0, y) = 0 + 0$, $u_y(x, 0) = S + 0$. For $u_1$ the factor $X$ satisfies $X'(0) = 0$, $X(a) = 0$, the mixed eigenvalue problem of [[§21 Example꞉ Different Boundary Conditions|§21]], and for $u_2$ the factor $Y$ satisfies $Y'(0) = 0$, $Y(b) = 0$. The product solutions are
+> Then $u(a, y) = 0 + Sy$, $u(x, b) = Sbx/a + 0$, $u_x(0, y) = 0 + 0$, $u_y(x, 0) = S + 0$. For $u_1$ the factor $X$ satisfies $X'(0) = 0$, $X(a) = 0$, the mixed eigenvalue problem of [[§21 Example꞉ Different Boundary Conditions#^thm-21-1|Theorem §21.1]], and for $u_2$ the factor $Y$ satisfies $Y'(0) = 0$, $Y(b) = 0$. The product solutions are
 >
 > $$
 > u_1: \ \cos(\lambda_nx)\big(a_n\cosh(\lambda_ny) + b_n\sinh(\lambda_ny)\big), \quad \lambda_n = \Big(n - \frac12\Big)\frac\pi a ; \qquad
@@ -212,7 +212,7 @@ The success of separation of variables depends on having homogeneous boundary co
 > w(x, y) = \sum_{n=1}^{\infty}c_n\frac{\cosh(\lambda_ny)}{\cosh(\lambda_nb)}\cos(\lambda_nx), \qquad \sum_{n=1}^{\infty}c_n\cos(\lambda_nx) = \frac{Sb(x - a)}{a}, \quad 0 < x < a .
 > $$
 >
-> The functions $\cos(\lambda_nx)$ are orthogonal on $0 < x < a$ with $\int_0^a\cos^2(\lambda_nx)\,dx = a/2$ ([[§23 Sturm–Liouville Problems|§23]]). Integrating by parts, and using $\cos(\lambda_na) = 0$,
+> The functions $\cos(\lambda_nx)$ are orthogonal on $0 < x < a$ with $\int_0^a\cos^2(\lambda_nx)\,dx = a/2$ ([[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]]). Integrating by parts, and using $\cos(\lambda_na) = 0$,
 >
 > $$
 > \int_0^a(x - a)\cos(\lambda_nx)\,dx = \Big[\frac{(x - a)\sin(\lambda_nx)}{\lambda_n}\Big]_0^a - \frac{1}{\lambda_n}\int_0^a\sin(\lambda_nx)\,dx = -\frac{1 - \cos(\lambda_na)}{\lambda_n^2} = -\frac{1}{\lambda_n^2} ,
@@ -241,7 +241,7 @@ The success of separation of variables depends on having homogeneous boundary co
 >
 > where $H$ is a given function (a source term). Three examples:
 > 1. $u$ is the deflection of a membrane that is fastened at its edges, so $u = 0$ on the boundary of $\mathcal R$; $H$ is proportional to the pressure difference across the membrane ([[§41★ Two-Dimensional Wave Equation꞉ Derivation|§41★]]).
-> 2. $u$ is the steady-state temperature in a cross section of a long cylindrical rod that is carrying an electrical current; $H$ is proportional to the power in resistance heating ([[§42 Three-Dimensional Heat Equation|§42]]).
+> 2. $u$ is the steady-state temperature in a cross section of a long cylindrical rod that is carrying an electrical current; $H$ is proportional to the power in resistance heating ([[§42 Three-Dimensional Heat Equation#^def-42-1|Definition §42.1]]).
 > 3. $u$ is the stress function on the cross section $\mathcal R$ of a cylindrical bar or rod in torsion (the shear stresses are proportional to the partial derivatives of $u$); $H$ is proportional to the rate of twist and to the shear modulus of the material; $u = 0$ on the boundary of $\mathcal R$.
 >
 > *Powers: 4.3 (text)*
@@ -271,7 +271,7 @@ The success of separation of variables depends on having homogeneous boundary co
 
 *Uses:* [[§37 Further Examples for a Rectangle#^def-37-1|Def. §37.1]]
 
-More generally, if $H$ is a polynomial in $x$ and $y$, a solution can be found in the form of a polynomial of total degree $2$ higher than $H$. If $H$ is a more general function, it may be expanded in a double Fourier series ([[§43 Two-Dimensional Heat Equation꞉ Solution|§43]]) and the equation solved term by term, following the idea of [[§16★ Applications of Fourier Series and Integrals|§16★]] (Powers 1.11B). In a disk the analogous idea is a Fourier series in $\theta$ alone: [[§39 Potential in a Disk#^ex-39-3|Example §39.3]].
+More generally, if $H$ is a polynomial in $x$ and $y$, a solution can be found in the form of a polynomial of total degree $2$ higher than $H$. If $H$ is a more general function, it may be expanded in a double Fourier series ([[§43 Two-Dimensional Heat Equation꞉ Solution|§43]]) and the equation solved term by term, following the idea of [[§16★ Applications of Fourier Series and Integrals#^thm-16-2|Theorem §16.2]] (Powers 1.11B). In a disk the analogous idea is a Fourier series in $\theta$ alone: [[§39 Potential in a Disk#^ex-39-3|Example §39.3]].
 
 > [!remark] Remark: Method — Poisson's Equation in a Rectangle
 > To solve $\nabla^2u = -H$ ($H$ constant) in a rectangle with given boundary values:

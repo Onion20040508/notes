@@ -9,8 +9,8 @@ tags: [fourier-series-and-pdes, math341, extension]
 ---
 ↑ [[· 0★ Ordinary Differential Equations Review]] · [[§2★ Nonhomogeneous Linear Equations]] →
 
-*Powers, Section 0.1.*
-★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
+*Powers, Section 0.1 · MAT 341 lecture 8.27 · HW 1.*
+★ *Beyond MAT 341: the course only reviewed parts of this section (lecture 8.27, HW 1 Q1); it is included in full from Powers.*
 
 Separation of variables turns every partial differential equation in this subject into ordinary differential equations, almost always linear, homogeneous and of first or second order. This section collects the ones that will be needed: $u' = ku$, the constant-coefficient equations, above all $u'' + \lambda^2u = 0$ and $u'' - \lambda^2u = 0$, and the Cauchy–Euler equation $t^2u'' + ktu' + pu = 0$, which reappears in polar and spherical coordinates. The general theory (superposition, the Wronskian, reduction of order) is developed and proved in [[Ordinary Differential Equations]], and each item below links to its home there; the Cauchy–Euler equation and equations of order higher than two are not treated there and are worked out here.
 
@@ -62,7 +62,7 @@ This is [[§13 Homogeneous Differential Equations with Constant Coefficients#^de
 
 *Powers derives (4) by separating variables, $\frac1u\frac{du}{dt} = k(t)$, $\ln|u| = \int k\,dt + C$, $u = \pm e^Ce^{\int k\,dt}$. Proved in ODE: [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]] (separable equations) and [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]] (linear equations, which also shows that $u \equiv 0$, lost by dividing by $u$, belongs to the family with $c = 0$).*
 
-For example, $du/dt = -tu$ has the general solution $u(t) = ce^{-t^2/2}$, and the initial condition $u(0) = 5$ forces $c = 5$ (Powers' example).
+For example, $du/dt = -tu$ has the general solution $u(t) = ce^{-t^2/2}$, and the initial condition $u(0) = 5$ forces $c = 5$ (Powers' example). MAT 341's HW 1, Problem 1(a), asked for $du/dt = tu$: the same steps give $u(t) = ce^{t^2/2}$.
 
 ## Second-Order Equations
 
@@ -113,6 +113,8 @@ The Wronskian is [[§14 Solutions of Linear Homogeneous Equations; the Wronskian
 ^thm-1-3
 
 *Proved in ODE: [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-3|331 Thm. §14.3]] (solving for $c_1$, $c_2$), [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|331 Thm. §14.4]] (every solution is of this form), and [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|331 Thm. §14.8]] (Abel: the Wronskian of two solutions is either never zero or identically zero, which is why "nonzero at one point" and "nonzero on the interval" agree). The equivalence with linear independence is item 4 of [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-14-2|331 Remark: The Solution Space Is a Two-Dimensional Vector Space]].*
+
+The first MAT 341 lecture put the contrast this way: the solutions of the first-order equation (3) form a one-dimensional space, fixed by one initial value; those of (6) a two-dimensional space, fixed by $u(0)$ and $u'(0)$; but the heat equation $u_t = u_{xx}$ has an infinite-dimensional space of solutions ($c_1x + c_2$, $e^{-\lambda^2t}\cos\lambda x$, $e^{-\lambda^2t}\sin\lambda x$ for every $\lambda$, $t^{-1/2}e^{-x^2/4t}$, …), so a partial differential equation is always posed together with boundary and initial conditions.
 
 ### Constant Coefficients
 

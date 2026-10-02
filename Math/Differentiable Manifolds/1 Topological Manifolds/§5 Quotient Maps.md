@@ -126,7 +126,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > - $\rho : \mathbb{R}^3/\mathrm{SO}(3) \to [0,\infty)$, $[x] \mapsto |x|$, from the norm on $\mathbb{R}^3$ ([[§10 Group Actions and Orbit Spaces#^ex-10-5|Example §10.5]]);
 > - $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$, from the orbit map on $G$ ([[§12 The Topology of G∕H and Real Grassmannians#^thm-12-3|Theorem §12.3]]);
 > - $\overline{F} : X/{\sim} \to Y$ recognizing a quotient map ([[§5 Quotient Maps#^prop-5-4|Proposition §5.4]]);
-> - continuity of the charts on $\mathbb{CP}^n$ and $\mathbb{RP}^n$ ([[§14 Projective Spaces as Smooth Manifolds|§8, Projective Spaces as Smooth Manifolds]]), applied locally via [[§5 Quotient Maps#^lem-5-7|Lemma §5.7]].
+> - continuity of the charts on $\mathbb{CP}^n$ and $\mathbb{RP}^n$ ([[§14 Projective Spaces as Smooth Manifolds|§14, Projective Spaces as Smooth Manifolds]]), applied locally via [[§5 Quotient Maps#^lem-5-7|Lemma §5.7]].
 >
 > Part (2) of [[§5 Quotient Maps#^thm-5-1|Theorem §5.1]] is what makes the recipe self-improving: if the map upstairs is itself a quotient map, the induced map downstairs is not merely continuous but a homeomorphism when injective, since a bijective quotient map is a homeomorphism.
 
@@ -263,6 +263,6 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 *Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^lem-5-7|§5.7]], [[§6 Closed Sets and Limit Points#^thm-6-2|590 §6.2]], [[§6 Closed Sets and Limit Points#^thm-6-3|590 §6.3]]
 
 > [!remark] Remark
-> Both hypotheses are used, at different steps: that $W$ is a full preimage gives $q^{-1}(A) = p^{-1}(A)$, and that $V$ is open makes a set open in $W$ open in $X$. Without them the restriction of a quotient map need not be a quotient map. The lemma is what allows the universal property ([[§5 Quotient Maps#^thm-5-1|Theorem §5.1]]) to be applied *locally*, on an open piece of a quotient — which is exactly the situation of a chart on a quotient space ([[§14 Projective Spaces as Smooth Manifolds|§8, Projective Spaces as Smooth Manifolds]]). Both lemmas are from Assignment 2, Problem 2.
+> Both hypotheses are used, at different steps: that $W$ is a full preimage gives $q^{-1}(A) = p^{-1}(A)$, and that $V$ is open makes a set open in $W$ open in $X$. Without them the restriction of a quotient map need not be a quotient map. The lemma is what allows the universal property ([[§5 Quotient Maps#^thm-5-1|Theorem §5.1]]) to be applied *locally*, on an open piece of a quotient — which is exactly the situation of a chart on a quotient space ([[§14 Projective Spaces as Smooth Manifolds|§14, Projective Spaces as Smooth Manifolds]]). Both lemmas are from Assignment 2, Problem 2.
 
 ^rem-5-4

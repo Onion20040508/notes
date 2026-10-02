@@ -91,7 +91,7 @@ $$
 
 ^pf-15-1
 
-*Uses:* [[§15★ Complex Methods#^def-15-1|Def. §15.1]], [[§12★ Proof of Convergence#^thm-12-4|§12.4]], [[§12★ Proof of Convergence#^cor-12-5|§12.5]], [[§6 Periodic Functions and Fourier Series|§6]] (Fourier coefficients), [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] (the complex exponential and Euler's formula)
+*Uses:* [[§15★ Complex Methods#^def-15-1|Def. §15.1]], [[§12★ Proof of Convergence#^thm-12-4|§12.4]], [[§12★ Proof of Convergence#^cor-12-5|§12.5]], [[§6 Periodic Functions and Fourier Series#^def-6-2|Def. §6.2]], [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] (the complex exponential and Euler's formula)
 
 > [!remark]- Connections
 > - The normalized exponentials $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of the complex space $L^2[0, 2\pi]$, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]]: (2) says $c_n\sqrt{2\pi}$ is the inner product of $f$ with the $n$th basis vector, and Parseval's equality reads $\frac{1}{2\pi}\int|f|^2 = \sum|c_n|^2$ ([[§20 Orthonormal Sets and Bases#^rem-20-9|556 Rem. §20.9]]). In quantum mechanics they are the momentum eigenstates of a particle on a ring.
@@ -155,7 +155,7 @@ The Fourier integral of a function $f(x)$ defined on the entire line $-\infty < 
 > [!remark]- Connections
 > - Normalizations differ between books. Powers puts $\frac{1}{2\pi}$ in the transform; Lax's (and 556's) $\mathcal{F}(f)(x) = \int e^{-ix\cdot\xi}f(\xi)\,d\xi$ is $2\pi C$, and many physics texts split the factor as $\frac{1}{\sqrt{2\pi}}$ in both directions. In any normalization, $|C(\lambda)| \le \frac{1}{2\pi}\int|f|$: the transform is a bounded linear map from $L^1$ to $L^\infty$, [[§21 Boundedness and Continuity#^ex-21-2|556 Ex. §21.2]].
 
-The lecture reached (5) and (6) as Powers reached (7) of [[§14 Fourier Integral|§14]]: on $-a < x < a$ the complex series of Theorem §15.1 reads $f(x) = \sum_n \frac\pi a C_a\big(\frac{n\pi}a\big)e^{in\pi x/a}$ with $C_a(\lambda) = \frac{1}{2\pi}\int_{-a}^{a} f(x)e^{-i\lambda x}\,dx$, a Riemann sum with spacing $\Delta\lambda = \pi/a$, which suggests (5) as $a \to \infty$. The real theorem makes this precise.
+The lecture reached (5) and (6) as Powers reached (7) of §14 ([[§14 Fourier Integral#^rem-14-1|Remark: Why It Works]]): on $-a < x < a$ the complex series of Theorem §15.1 reads $f(x) = \sum_n \frac\pi a C_a\big(\frac{n\pi}a\big)e^{in\pi x/a}$ with $C_a(\lambda) = \frac{1}{2\pi}\int_{-a}^{a} f(x)e^{-i\lambda x}\,dx$, a Riemann sum with spacing $\Delta\lambda = \pi/a$, which suggests (5) as $a \to \infty$. The real theorem makes this precise.
 
 > [!theorem] Theorem §15.2: Complex Form of the Fourier Integral
 > Let $f$ satisfy the hypotheses of [[§14 Fourier Integral#^thm-14-1|Theorem §14.1]], with Fourier integral coefficient functions $A(\lambda)$, $B(\lambda)$.
@@ -246,9 +246,9 @@ The lecture reached (5) and (6) as Powers reached (7) of [[§14 Fourier Integral
 > C(\lambda) = \frac{1}{2\pi}\cdot\frac{1}{\sqrt{2\pi\sigma^2}}\,e^{-\sigma^2\lambda^2/2}\int_{-\infty}^{\infty} e^{-(x + i\sigma^2\lambda)^2/(2\sigma^2)}\,dx = \frac{1}{2\pi}\cdot\frac{\sqrt2\,\sigma\sqrt\pi}{\sqrt{2\pi\sigma^2}}\,e^{-\sigma^2\lambda^2/2} = \frac{1}{2\pi}e^{-\sigma^2\lambda^2/2} .
 > $$
 >
-> (The shifted Gaussian integral is a fact from complex analysis, a shift of the path of integration. A real-variable check: $I(\lambda) = \int e^{-x^2}\cos\lambda x\,dx$ satisfies $I'(\lambda) = -\int xe^{-x^2}\sin\lambda x\,dx = -\frac\lambda2 I(\lambda)$, differentiating under the integral sign and integrating by parts, and $I(0) = \sqrt\pi$ ([[§100 Double Integrals in Polar Coordinates|Calc §100]]); so $I(\lambda) = \sqrt\pi e^{-\lambda^2/4}$, which is the case $\sigma^2 = \frac12$ after scaling.) In particular, for $f(x) = e^{-x^2} = \sqrt\pi f_{1/\sqrt2}(x)$, $C(\lambda) = \sqrt\pi\cdot\frac{1}{2\pi}e^{-\lambda^2/4} = \dfrac{e^{-\lambda^2/4}}{2\sqrt\pi}$ (Powers' Exercise 1.10.8). By Theorem §15.2, the real coefficient functions are $A(\lambda) = 2C(\lambda) = \frac1\pi e^{-\sigma^2\lambda^2/2}$ and $B = 0$.
+> (The shifted Gaussian integral is a fact from complex analysis, a shift of the path of integration. A real-variable check: $I(\lambda) = \int e^{-x^2}\cos\lambda x\,dx$ satisfies $I'(\lambda) = -\int xe^{-x^2}\sin\lambda x\,dx = -\frac\lambda2 I(\lambda)$, differentiating under the integral sign and integrating by parts, and $I(0) = \sqrt\pi$ ([[§28★ The Error Function#^prop-28-1|Proposition §28.1]](d)); so $I(\lambda) = \sqrt\pi e^{-\lambda^2/4}$, which is the case $\sigma^2 = \frac12$ after scaling.) In particular, for $f(x) = e^{-x^2} = \sqrt\pi f_{1/\sqrt2}(x)$, $C(\lambda) = \sqrt\pi\cdot\frac{1}{2\pi}e^{-\lambda^2/4} = \dfrac{e^{-\lambda^2/4}}{2\sqrt\pi}$ (Powers' Exercise 1.10.8). By Theorem §15.2, the real coefficient functions are $A(\lambda) = 2C(\lambda) = \frac1\pi e^{-\sigma^2\lambda^2/2}$ and $B = 0$.
 >
-> **(b) A heat flow (Midterm 2).** Let $u_t = u_{xx}$ on $-\infty < x < \infty$, $u$ bounded, $u(x, 0) = f_2(x)$ (the Gaussian with $\sigma = 2$). Separation of variables gives the basic solutions $e^{-\lambda^2 t}\big(A(\lambda)\cos\lambda x + B(\lambda)\sin\lambda x\big)$ ([[§27 Infinite Rod|§27★]]), and by (a) $B = 0$, $A(\lambda) = \frac1\pi e^{-2\lambda^2}$. So
+> **(b) A heat flow (Midterm 2).** Let $u_t = u_{xx}$ on $-\infty < x < \infty$, $u$ bounded, $u(x, 0) = f_2(x)$ (the Gaussian with $\sigma = 2$). Separation of variables gives the basic solutions $e^{-\lambda^2 t}\big(A(\lambda)\cos\lambda x + B(\lambda)\sin\lambda x\big)$ ([[§27 Infinite Rod#^prop-27-1|Proposition §27.1]]), and by (a) $B = 0$, $A(\lambda) = \frac1\pi e^{-2\lambda^2}$. So
 >
 > $$
 > u(x, t) = \frac1\pi\int_0^{\infty} e^{-\lambda^2 t}e^{-2\lambda^2}\cos\lambda x\,d\lambda = \frac{1}{2\pi}\int_{-\infty}^{\infty} e^{-(t + 2)\lambda^2 + i\lambda x}\,d\lambda = \frac{1}{2\pi}\sqrt{\frac{\pi}{t + 2}}\,e^{-x^2/(4(t + 2))} = \frac{1}{\sqrt{2\pi(2t + 4)}}\,e^{-x^2/(2(2t + 4))} ,
@@ -312,9 +312,9 @@ The Fourier integral or transform may be used to solve differential equations on
 > u(x, t) = \frac{1}{2\pi}\int_{-\infty}^{\infty} f(x - y)\sqrt{\frac\pi t}\,e^{-y^2/(4t)}\,dy = \int_{-\infty}^{\infty} f(x - y)\,\frac{e^{-y^2/(4t)}}{\sqrt{4\pi t}}\,dy .
 > $$
 >
-> The kernel $e^{-y^2/(4t)}/\sqrt{4\pi t}$ has integral $1$ and concentrates at $y = 0$ as $t \to 0+$, so $u(x, t) \to f(x)$; this is the heat kernel of [[§27 Infinite Rod|§27★]].
+> The kernel $e^{-y^2/(4t)}/\sqrt{4\pi t}$ has integral $1$ and concentrates at $y = 0$ as $t \to 0+$, so $u(x, t) \to f(x)$; this is the heat kernel of [[§27 Infinite Rod#^thm-27-3|Theorem §27.3]].
 >
-> *The exam states the convolution fact as $(\hat g_1\hat g_2)^\vee = g_1 * g_2$, without the factor $\frac{1}{2\pi}$ that this normalization requires; the key follows the exam's statement, so its final answer $\int f(x - y)\sqrt{\pi/t}\,e^{-y^2/(4t)}\,dy$ is $2\pi$ times the solution above and does not reduce to $f$ at $t = 0$.*
+> *The exam states the convolution fact as $(\hat g_1\hat g_2)^\vee = g_1 * g_2$, without the factor $\frac{1}{2\pi}$ that this normalization requires; the key follows the exam's statement, so its final answer $\int f(x - y)\sqrt{\pi/t}\,e^{-y^2/(4t)}\,dy$ is $2\pi$ times the solution above and tends to $2\pi f(x)$, not $f(x)$, as $t \to 0+$.*
 >
 > *Source: 341 Midterm 1, Q3 (bonus)*
 

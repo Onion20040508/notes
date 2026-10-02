@@ -12,7 +12,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 *Powers, Section 3.6 · MAT 341 Practice Midterm 2.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
-On a semi-infinite string $0 < x < \infty$ the wave equation can be solved as the heat equation was on the semi-infinite rod ([[§26 Semi-Infinite Rod|§26]]): separate variables and combine the product solutions in a Fourier integral instead of a series. The integral, however, gives no idea of what $u$ looks like, and d'Alembert's method again does better: the fixed end acts as a mirror, and a pulse travelling toward it comes back inverted. The same method solves the string driven by a moving end, where the disturbance travels into the string with speed $c$, and the infinite string, where it gives d'Alembert's formula $u = \frac12[f(x + ct) + f(x - ct)] + \frac{1}{2c}\int_{x-ct}^{x+ct}g$. In contrast with the heat equation, a disturbance needs time $|x - x_0|/c$ to reach the point $x$.
+On a semi-infinite string $0 < x < \infty$ the wave equation can be solved as the heat equation was on the semi-infinite rod ([[§26 Semi-Infinite Rod#^thm-26-2|Theorem §26.2]]): separate variables and combine the product solutions in a Fourier integral instead of a series. The integral, however, gives no idea of what $u$ looks like, and d'Alembert's method again does better: the fixed end acts as a mirror, and a pulse travelling toward it comes back inverted. The same method solves the string driven by a moving end, where the disturbance travels into the string with speed $c$, and the infinite string, where it gives d'Alembert's formula $u = \frac12[f(x + ct) + f(x - ct)] + \frac{1}{2c}\int_{x-ct}^{x+ct}g$. In contrast with the heat equation, a disturbance needs time $|x - x_0|/c$ to reach the point $x$.
 
 ## The Semi-Infinite String
 
@@ -74,7 +74,7 @@ On a semi-infinite string $0 < x < \infty$ the wave equation can be solved as th
 
 ^pf-34-1
 
-*Uses:* [[§14 Fourier Integral#^def-14-2|Def. §14.2]] (Fourier sine integral), [[§26 Semi-Infinite Rod|§26]] (the same method for heat)
+*Uses:* [[§14 Fourier Integral#^def-14-2|Def. §14.2]] (Fourier sine integral), [[§26 Semi-Infinite Rod#^thm-26-2|§26.2]] (the same method for heat)
 
 The deficiency of the Fourier integral form (5) is that it gives no idea of what $u(x, t)$ looks like. The d'Alembert solution comes to the aid again.
 
@@ -258,7 +258,7 @@ The graph of $\phi$ for negative arguments is that of $h$, reflected and rescale
 *Uses:* [[§31 d'Alembert's Solution#^thm-31-2|§31.2]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC), [[§94 The Chain Rule#^thm-94-2|Calc Thm. §94.2]]
 
 > [!remark] Remark: Finite Speed of Propagation
-> By Theorem §34.4, $u(x, t)$ depends only on the initial data on the interval $[x - ct, x + ct]$: a disturbance at $x_0$ cannot be felt at $x$ before the time $|x - x_0|/c$. This is the opposite of the heat equation on the infinite rod ([[§27 Infinite Rod|§27★]]), where an initial temperature concentrated near one point makes the temperature positive everywhere at every $t > 0$. The semi-infinite string of Theorem §34.2 is the infinite string with odd data: if $f$ and $g$ are extended as odd functions, $G$ is even, and d'Alembert's formula gives $u(0, t) = 0$ automatically.
+> By Theorem §34.4, $u(x, t)$ depends only on the initial data on the interval $[x - ct, x + ct]$: a disturbance at $x_0$ cannot be felt at $x$ before the time $|x - x_0|/c$. This is the opposite of the heat equation on the infinite rod ([[§27 Infinite Rod#^rem-27-1|§27]]), where an initial temperature concentrated near one point makes the temperature positive everywhere at every $t > 0$. The semi-infinite string of Theorem §34.2 is the infinite string with odd data: if $f$ and $g$ are extended as odd functions, $G$ is even, and d'Alembert's formula gives $u(0, t) = 0$ automatically.
 
 ^rem-34-1
 
@@ -304,6 +304,6 @@ The graph of $\phi$ for negative arguments is that of $h$, reflected and rescale
 >
 > For $x > ct$ both terms are the travelling halves of the initial bump; for $x < ct$ the second term $(x - ct)e^{x - ct}$ is negative, the reflection coming back from the end. The two forms agree (numerically, for instance, both give $u = 0.28493$ at $x = 0.5$, $ct = 0.2$ and $u = -0.10926$ at $x = 1$, $ct = 2$), as they must: by the product formula $\cos(\lambda ct)\sin(\lambda x) = \frac12[\sin\lambda(x + ct) + \sin\lambda(x - ct)]$, the integral is $\frac12$ times the sum of the Fourier sine integrals of $f$ evaluated at $x + ct$ and $x - ct$, and the sine integral represents the odd extension $f_o$ ([[§14 Fourier Integral#^cor-14-2|Corollary §14.2]]). This is Powers' Exercise 3.6.2 in a concrete case.
 >
-> *Powers: 3.6, Equations (5) and (6), applied to this $f$*
+> *Powers: 3.6, Equations (5) and (6); Exercise 3.6.2*
 
 ^ex-34-4

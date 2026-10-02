@@ -71,13 +71,13 @@ The **law of conservation of energy** says that the heat entering a region plus 
 > \frac{d}{dt}\int_{x_1}^{x_2} \rho cA\,u\,dx = Aq(x_1, t) - Aq(x_2, t) + \int_{x_1}^{x_2} A\,g\,dx .
 > $$
 >
-> By the fundamental theorem of calculus the flux difference is a volume integral, $q(x_1, t) - q(x_2, t) = -\int_{x_1}^{x_2} q_x\,dx$, so $\int_{x_1}^{x_2} (\rho c\,u_t + q_x - g)\,dx = 0$ for every segment. A continuous function whose integral over every interval is zero vanishes identically, which is (2) again. In a three-dimensional body $V$ the heat leaving through the boundary is the flux integral $\iint_{\partial V} \mathbf{q}\cdot\mathbf{n}\,dS$, and the divergence theorem turns it into $\iiint_V \nabla\cdot\mathbf{q}\,dV$. The same argument then gives $\rho c\,u_t = -\nabla\cdot\mathbf{q} + g$, and with $\mathbf{q} = -\kappa\nabla u$ the three-dimensional heat equation of [[§42 Three-Dimensional Heat Equation|§42]] (Powers 5.2). In one dimension the divergence theorem is just the fundamental theorem of calculus.
+> By the fundamental theorem of calculus the flux difference is a volume integral, $q(x_1, t) - q(x_2, t) = -\int_{x_1}^{x_2} q_x\,dx$, so $\int_{x_1}^{x_2} (\rho c\,u_t + q_x - g)\,dx = 0$ for every segment. A continuous function whose integral over every interval is zero vanishes identically (the one-dimensional case of [[§42 Three-Dimensional Heat Equation#^lem-42-1|Lemma §42.1]]), which is (2) again. In a three-dimensional body $V$ the heat leaving through the boundary is the flux integral $\iint_{\partial V} \mathbf{q}\cdot\mathbf{n}\,dS$, and the divergence theorem turns it into $\iiint_V \nabla\cdot\mathbf{q}\,dV$. The same argument then gives $\rho c\,u_t = -\nabla\cdot\mathbf{q} + g$, and with $\mathbf{q} = -\kappa\nabla u$ the three-dimensional heat equation, [[§42 Three-Dimensional Heat Equation#^thm-42-3|Theorem §42.3]]. In one dimension the divergence theorem is just the fundamental theorem of calculus.
 
 ^rem-17-1
 
 > [!remark]- Connections
 > - The divergence theorem $\int_{\partial D} \mathbf{u}\cdot\hat n\,dS = \int_D \nabla\cdot\mathbf{u}\,dV$ for bounded domains with piecewise smooth boundary, proved in $\mathbb{R}^n$: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]]; Stewart's version in $\mathbb{R}^3$: [[§115 The Divergence Theorem#^thm-115-1|Calc Thm. §115.1]].
-> - The one-dimensional case, $\int_{x_1}^{x_2} q_x\,dx = q(x_2) - q(x_1)$: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]].
+> - The one-dimensional case, $\int_{x_1}^{x_2} q_x\,dx = q(x_2) - q(x_1)$: [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]].
 
 There are two unknowns, $q$ and $u$, in (2). A second relation between them is needed.
 
@@ -288,7 +288,7 @@ The **boundary conditions** describe what happens at the ends. Let $x_0$ denote 
 
 ^def-17-8
 
-Many other kinds of boundary conditions exist and are even realizable, but these four are the most common. All four involve a **linear** operation on the function $u$; this is what the method of [[§19 Example꞉ Fixed End Temperatures|§19]] relies on.
+Many other kinds of boundary conditions exist and are even realizable, but these four are the most common. All four involve a **linear** operation on the function $u$; this is what the method of [[§19 Example꞉ Fixed End Temperatures|§19]] relies on, through the principle of superposition ([[§19 Example꞉ Fixed End Temperatures#^thm-19-4|Theorem §19.4]]).
 
 > [!definition] Definition §17.9: Initial Value–Boundary Value Problem
 > The heat equation, an initial condition and a boundary condition for each end form an **initial value–boundary value problem**. For instance:
@@ -318,7 +318,7 @@ Many other kinds of boundary conditions exist and are even realizable, but these
 *Powers omits the proof.*
 
 > [!remark] Remark: Rods and Slabs
-> The heat equation was derived for a "rod", an object much longer than it is wide. It applies equally to a "slab", an object much wider than it is thick. What matters is that the temperature varies in only one space direction (along the rod, or through the thickness of the slab). The multidimensional heat equation is derived in [[§42 Three-Dimensional Heat Equation|§42]] (Powers 5.2).
+> The heat equation was derived for a "rod", an object much longer than it is wide. It applies equally to a "slab", an object much wider than it is thick. What matters is that the temperature varies in only one space direction (along the rod, or through the thickness of the slab). The multidimensional heat equation is derived in [[§42 Three-Dimensional Heat Equation#^thm-42-3|Theorem §42.3]].
 
 ^rem-17-3
 

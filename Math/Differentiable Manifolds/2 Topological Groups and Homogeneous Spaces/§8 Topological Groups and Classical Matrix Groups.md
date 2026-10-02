@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Reference: Lee Ch. 7 (“Lie Groups”). For the calculus: MATH 452 notes ([[§12 The Implicit Function Theorem|Implicit Function Theorem]]).*
 
 > [!remark] Remark: Why This Section
-> Topological groups are the precursor of *Lie groups*, one of the main topics later in the course; and the classical matrix groups introduced here “are going to be our friends for the semester, and hopefully for later on in life.” Besides being examples of manifolds in their own right ([[§9 The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]]), they are the groups whose *actions* produce the quotient manifolds of [[§10 Group Actions and Orbit Spaces|§10]]–[[§11 Homogeneous Spaces|§11]]: spheres, projective spaces, Grassmannians.
+> Topological groups are the precursor of *Lie groups*, one of the main topics later in the course; and the classical matrix groups introduced here “are going to be our friends for the semester, and hopefully for later on in life.” Besides being examples of manifolds in their own right ([[§9 The Classical Groups Are Topological Manifolds|§9, The Classical Groups Are Topological Manifolds]]), they are the groups whose *actions* produce the quotient manifolds of [[§10 Group Actions and Orbit Spaces|§10]]–[[§11 Homogeneous Spaces|§11]]: spheres, projective spaces, Grassmannians.
 
 ^rem-8-1
 
@@ -278,7 +278,7 @@ $\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}
 > (z_1, \ldots, z_n) \longmapsto (x_1, y_1, x_2, y_2, \ldots, x_n, y_n).
 > $$
 >
-> (Any other ordering of the real coordinates, e.g. all $x$'s first, differs by a linear homeomorphism and changes nothing topologically; the choice made in [[§6 Open Quotients and Complex Projective Space#Application: Complex Projective Space|§3, Application: Complex Projective Space]] was of the latter kind.) Applying this to each entry of a complex matrix, in the row-by-row order of [[§8 Topological Groups and Classical Matrix Groups#^def-8-2|Definition §8.2]], gives the coordinate map
+> (Any other ordering of the real coordinates, e.g. all $x$'s first, differs by a linear homeomorphism and changes nothing topologically; the choice made in [[§6 Open Quotients and Complex Projective Space#Application: Complex Projective Space|§6, Application: Complex Projective Space]] was of the latter kind.) Applying this to each entry of a complex matrix, in the row-by-row order of [[§8 Topological Groups and Classical Matrix Groups#^def-8-2|Definition §8.2]], gives the coordinate map
 >
 > $$
 > \operatorname{Mat}(n,\mathbb{C}) \longrightarrow \mathbb{R}^{2n^2}, \qquad g \longmapsto \big(\operatorname{Re} g_{11}, \operatorname{Im} g_{11},\ \operatorname{Re} g_{12}, \operatorname{Im} g_{12},\ \ldots,\ \operatorname{Re} g_{nn}, \operatorname{Im} g_{nn}\big),
@@ -316,7 +316,7 @@ $\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}
 > \mathrm{U}(1) = \{\, \xi \in \mathbb{C} \setminus \{0\} \mid |\xi| = 1 \,\} = S^1,
 > $$
 >
-> the unit circle, which is the notation “everybody uses.” This is the group acting in the construction of $\mathbb{CP}^n$ ([[§6 Open Quotients and Complex Projective Space#Application: Complex Projective Space|§3, Application: Complex Projective Space]]).
+> the unit circle, which is the notation “everybody uses.” This is the group acting in the construction of $\mathbb{CP}^n$ ([[§6 Open Quotients and Complex Projective Space#Application: Complex Projective Space|§6, Application: Complex Projective Space]]).
 
 ^ex-8-4
 

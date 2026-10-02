@@ -81,7 +81,7 @@ Consider a region $R$ of the $xy$-plane whose boundary can be made to coincide w
 > a = \tfrac5{16}, \qquad b = \tfrac12, \qquad c = \tfrac14, \qquad d = \tfrac38 .
 > $$
 >
-> **Comparison.** The exact solution is the sum of two rectangle problems of [[§36 Potential in a Rectangle|§36]], one for each nonzero side:
+> **Comparison.** The exact solution is that of [[§36 Potential in a Rectangle#^thm-36-1|Theorem §36.1]] (two nonzero sides) with the same data $f$ on the bottom and top, written symmetrically:
 >
 > $$
 > u(x, y) = \sum_{n = 1}^\infty b_n\sin(n\pi x)\,\frac{\sinh(n\pi(1 - y)) + \sinh(n\pi y)}{\sinh(n\pi)}, \qquad b_n = 2\int_0^1f(x)\sin(n\pi x)\,dx = \frac{8\sin(n\pi/2)}{n^2\pi^2} .
@@ -107,7 +107,7 @@ Consider a region $R$ of the $xy$-plane whose boundary can be made to coincide w
 *Example §58.1 along the lines $y = \frac14$ and $y = \frac12$: the series solution (blue), the mesh solution with $\Delta x = \frac14$ (red) and with $\Delta x = \frac18$ (green). The largest error, at the peak of the boundary data, falls by a factor of about $4$ when the mesh is halved.*
 
 > [!remark] Remark: A Discrete Mean-Value Property
-> With zero right side, the replacement equation (7) says $u_i = \frac14(u_N + u_S + u_E + u_W)$: each value is the average of its four neighbours, a discrete analogue of the mean-value property of harmonic functions ([[§39 Potential in a Disk|§39]]). It has the same consequence: an interior value cannot be larger than all of its neighbours, so the largest and smallest values of the mesh solution occur on the boundary (a discrete maximum principle). In Example §58.1 all values lie between $0$ and $1$, the extremes of the boundary data. This also shows that the system has only one solution: the difference of two solutions has zero boundary values, so its maximum and minimum are both $0$.
+> With zero right side, the replacement equation (7) says $u_i = \frac14(u_N + u_S + u_E + u_W)$: each value is the average of its four neighbours, a discrete analogue of the mean-value property of harmonic functions ([[§39 Potential in a Disk#^thm-39-4|Theorem §39.4]]). It has the same consequence: an interior value cannot be larger than all of its neighbours, so the largest and smallest values of the mesh solution occur on the boundary (a discrete maximum principle; compare [[§39 Potential in a Disk#^thm-39-5|Theorem §39.5]]). In Example §58.1 all values lie between $0$ and $1$, the extremes of the boundary data. This also shows that the system has only one solution: the difference of two solutions has zero boundary values, so its maximum and minimum are both $0$.
 
 ^rem-58-2
 
@@ -190,7 +190,7 @@ On more complicated regions the replacement for the Laplacian has exactly the sa
 > u_1 = \tfrac{44}{67} \approx 0.657, \quad u_2 = u_4 = \tfrac{109}{134} \approx 0.813, \quad u_3 = u_7 = \tfrac{165}{268} \approx 0.616, \quad u_5 = \tfrac{263}{268} \approx 0.981, \quad u_6 = u_8 = \tfrac{87}{134} \approx 0.649 . \qquad (19)
 > $$
 >
-> (Powers prints $u_1 = 0.656$, the truncated value.) The largest value is at the center, $u_5$, and the points next to the missing corner ($u_6$, $u_8$) are lower than their mirror images across the other diagonal ($u_4$, $u_2$). Physically, $u$ is the deflection of an L-shaped membrane under a uniform load, or the stress function of an L-shaped bar in torsion.
+> (Powers prints $u_1 = 0.656$, the truncated value.) The largest value is at the center, $u_5$, and the points next to the missing corner ($u_6$, $u_8$) are lower than their mirror images across the other diagonal ($u_2$, $u_4$). Physically, $u$ is the deflection of an L-shaped membrane under a uniform load, or the stress function of an L-shaped bar in torsion.
 >
 > *Powers: 7.4, Example 3 and Figure 4*
 

@@ -50,7 +50,7 @@ From the cases seen so far, the problems we can expect to solve in spherical coo
 - **Problem 1.** $\nabla^2u = -\lambda^2u$ in $\mathcal{R}$, plus homogeneous boundary conditions. It comes from a heat or wave equation after the time variable is separated out.
 - **Problem 2.** $\nabla^2u = 0$ in $\mathcal{R}$, plus homogeneous boundary conditions on facing sides of $\mathcal{R}$, a generalized rectangle in spherical coordinates. It is part of a potential problem.
 
-The complete solution of either problem is very complicated, but some special cases are simple and important. Problem 1 with $u$ a function of $\rho$ only was solved in [[§48★ Some Applications of Bessel Functions|§48]], Part B. The next case is Problem 2 when $u$ does not depend on $\theta$:
+The complete solution of either problem is very complicated, but some special cases are simple and important. Problem 1 with $u$ a function of $\rho$ only was solved in [[§48★ Some Applications of Bessel Functions#^prop-48-4|Proposition §48.4]]. The next case is Problem 2 when $u$ does not depend on $\theta$:
 
 $$
 \frac{1}{\rho^2}\bigg\{\frac{\partial}{\partial\rho}\Big(\rho^2\frac{\partial u}{\partial\rho}\Big) + \frac{1}{\sin\phi}\frac{\partial}{\partial\phi}\Big(\sin\phi\,\frac{\partial u}{\partial\phi}\Big)\bigg\} = 0, \quad 0 < \rho < c, \quad 0 < \phi < \pi, \qquad (1) \qquad\qquad u(c, \phi) = f(\phi), \quad 0 < \phi < \pi . \qquad (2)
@@ -163,18 +163,20 @@ Solutions are found by the power series method: assume $y(x) = a_0 + a_1x + \cdo
 > [!theorem] Theorem §49.4: Polynomial Solutions of Legendre's Equation
 > **(a)** If $\mu^2 = n(n+1)$ for an integer $n \ge 0$, then Legendre's equation has a polynomial solution of degree exactly $n$, which is even if $n$ is even and odd if $n$ is odd. Every polynomial solution is a constant multiple of it.
 >
-> **(b)** For other values of $\mu^2$, the even and odd series both diverge at $x = \pm1$; when $\mu^2 = n(n+1)$, the series that does not terminate diverges at $x = \pm1$. Hence Legendre's equation has a solution bounded at both $x = 1$ and $x = -1$ only if $\mu^2$ is one of the numbers $0, 2, 6, \ldots, n(n+1), \ldots$, and then that solution is the polynomial of (a), up to a constant multiple.
+> **(b)** For other values of $\mu^2$, the even and odd series both diverge at $x = \pm1$, and the solutions they define are unbounded as $x \to 1$ and as $x \to -1$; when $\mu^2 = n(n+1)$, the same holds for the series that does not terminate. Hence Legendre's equation has a solution bounded at both $x = 1$ and $x = -1$ only if $\mu^2$ is one of the numbers $0, 2, 6, \ldots, n(n+1), \ldots$, and then that solution is the polynomial of (a), up to a constant multiple.
 >
 > *Powers: 5.9 (text)*
 
 ^thm-49-4
 
-*Powers omits the proof of (b) ("it is not difficult to prove"). The proof below is of (a); Powers gives the termination argument and illustrates it with $\mu^2 = 3 \cdot 4$.*
-
 > [!proof]+ Proof
+> Powers gives the termination argument of (a) and illustrates it with $\mu^2 = 3 \cdot 4$. He omits the proof of the divergence and unboundedness in (b) ("it is not difficult to prove"); that part is assumed below, and only the final deduction of (b) is proved.
+>
 > **Existence.** Let $\mu^2 = n(n+1)$, and take $a_1 = 0$ if $n$ is even, $a_0 = 0$ if $n$ is odd. By [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-3|Proposition §49.3]], $a_{n+2} = \frac{n(n+1) - n(n+1)}{(n+2)(n+1)}a_n = 0$, so all later coefficients of the parity of $n$ vanish, while those of the other parity are $0$ by the choice made. The solution is a polynomial of degree at most $n$, of the parity of $n$. Its coefficient $a_n$ is not $0$ (if the starting coefficient is not $0$), because the factors $k(k+1) - n(n+1)$ with $k < n$ are not $0$.
 >
-> **Uniqueness.** Let $y$ be any polynomial solution, of degree $d$ with leading coefficient $a_d \ne 0$. The coefficient of $x^d$ in $(1 - x^2)y'' - 2xy' + n(n+1)y$ is $\big(-d(d-1) - 2d + n(n+1)\big)a_d = \big(n(n+1) - d(d+1)\big)a_d$, which must be $0$, so $d = n$. If $y$ had a nonzero coefficient of the parity opposite to $n$, then by the recurrence its series of that parity would have to terminate as well, which needs $k(k+1) = n(n+1)$ for some $k$ of that parity, impossible since $k \ne n$. So $y$ has the parity of $n$, its coefficients are determined by the recurrence from $a_0$ (or $a_1$), and it is a multiple of the polynomial constructed above.
+> **Uniqueness.** (Powers asserts this when he calls the polynomial solution $P_n$, and again in Rodrigues' formula below; here is why.) Let $y$ be any polynomial solution, of degree $d$ with leading coefficient $a_d \ne 0$. The coefficient of $x^d$ in $(1 - x^2)y'' - 2xy' + n(n+1)y$ is $\big(-d(d-1) - 2d + n(n+1)\big)a_d = \big(n(n+1) - d(d+1)\big)a_d$, which must be $0$, so $d = n$. If $y$ had a nonzero coefficient of the parity opposite to $n$, then by the recurrence its series of that parity would have to terminate as well, which needs $k(k+1) = n(n+1)$ for some $k$ of that parity, impossible since $k \ne n$. So $y$ has the parity of $n$, its coefficients are determined by the recurrence from $a_0$ (or $a_1$), and it is a multiple of the polynomial constructed above.
+>
+> **The deduction in (b).** Let $E$ and $O$ be the even and odd series solutions ($a_0 = 1, a_1 = 0$ and $a_0 = 0, a_1 = 1$). When a series does not terminate, $|a_{k+2}/a_k| \to 1$, so it converges for $|x| < 1$; $E$ and $O$ are independent (their values and derivatives at $0$ are $1, 0$ and $0, 1$), so every solution on $-1 < x < 1$ is $y = AE + BO$. Suppose $y$ is bounded near $x = 1$ and near $x = -1$. Then so is $y(-x) = AE(x) - BO(x)$, and hence so are $AE = \frac12\big(y(x) + y(-x)\big)$ and $BO = \frac12\big(y(x) - y(-x)\big)$. If $\mu^2$ is not of the form $n(n+1)$, $E$ and $O$ are both unbounded, so $A = B = 0$. If $\mu^2 = n(n+1)$, the coefficient of the non-terminating series is $0$, and $y$ is a multiple of the polynomial of (a).
 
 ^pf-49-4
 
@@ -225,7 +227,7 @@ Solutions are found by the power series method: assume $y(x) = a_0 + a_1x + \cdo
 ^prop-49-5
 
 > [!proof]+ Proof
-> **(a)** Powers calls this routine, from the self-adjoint form $\big((1 - x^2)y'\big)' + \mu^2y = 0$. Here are the details, as in [[§23 Sturm–Liouville Problems|§23]]. Write $s(x) = 1 - x^2$. Then $(sP_n')' = -n(n+1)P_n$ and $(sP_m')' = -m(m+1)P_m$. Multiplying the first by $P_m$ and the second by $P_n$ and subtracting,
+> **(a)** Powers calls this routine, from the self-adjoint form $\big((1 - x^2)y'\big)' + \mu^2y = 0$. Here are the details, the argument of the proof of [[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]] for this singular problem ([[§23 Sturm–Liouville Problems#^ex-23-2|Example §23.2]]). Write $s(x) = 1 - x^2$. Then $(sP_n')' = -n(n+1)P_n$ and $(sP_m')' = -m(m+1)P_m$. Multiplying the first by $P_m$ and the second by $P_n$ and subtracting,
 >
 > $$
 > \big[s(P_n'P_m - P_m'P_n)\big]' = \big(m(m+1) - n(n+1)\big)P_nP_m .
@@ -237,7 +239,7 @@ Solutions are found by the power series method: assume $y(x) = a_0 + a_1x + \cdo
 
 ^pf-49-5
 
-*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Def. §49.3]], [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-4|§49.4]], [[§23 Sturm–Liouville Problems|§23]] (Theorem 1)
+*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Def. §49.3]], [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-4|§49.4]], [[§23 Sturm–Liouville Problems#^thm-23-2|§23.2]] (its argument)
 
 > [!remark]- Connections
 > - Gram–Schmidt applied to $1, x, x^2, \ldots$ in the inner product $\int_{-1}^{1} fg\,dx$ produces multiples of $P_0, P_1, P_2, \ldots$, by part (b) and uniqueness of the orthogonalization: [[§20 Orthonormal Bases#^ladr-6-34|LADR 6.34]] (worked to degree $2$), [[§46 Inner Product Spaces#^ex-46-5|235 Ex. §46.5]] (the same polynomials moved to $[0, 1]$), and in Hilbert space [[§20 Orthonormal Sets and Bases#^lem-20-18|556 Lem. §20.18]].
@@ -296,18 +298,10 @@ Solutions are found by the power series method: assume $y(x) = a_0 + a_1x + \cdo
 
 ^prop-49-7
 
-*Powers omits the proof ("through Rodrigues' formula or otherwise, it is possible to prove"); here is one through Rodrigues' formula.*
-
 > [!proof]- Proof
-> Write $D = d/dx$ and $F_n = (x^2 - 1)^n$, so that $P_n = D^nF_n/(2^nn!)$ by [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-6|Theorem §49.6]].
+> Powers states (8) and (9) without proof ("through Rodrigues' formula or otherwise, it is possible to prove"); here they are proved through Rodrigues' formula. The third relation is then derived from (8) and (9), as Powers says and as Exercise 5.9.7 outlines.
 >
-> **The relation $P_{n+1}' = (n+1)P_n + xP_n'$.** Since $DF_{n+1} = 2(n+1)xF_n$,
->
-> $$
-> P_{n+1}' = \frac{D^{n+1}(DF_{n+1})}{2^{n+1}(n+1)!} = \frac{D^{n+1}(xF_n)}{2^nn!} = \frac{xD^{n+1}F_n + (n+1)D^nF_n}{2^nn!} = xP_n' + (n+1)P_n ,
-> $$
->
-> by Leibniz's rule ($D^{n+1}(xF_n) = xD^{n+1}F_n + (n+1)D^nF_n$). Replacing $n$ by $n - 1$ and putting $x = 0$ gives $P_n'(0) = nP_{n-1}(0)$, which is (16).
+> Write $D = d/dx$ and $F_n = (x^2 - 1)^n$, so that $P_n = D^nF_n/(2^nn!)$ by [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-6|Theorem §49.6]]. Let $n \ge 1$. Note that $DF_{n+1} = 2(n+1)xF_n$.
 >
 > **(8).** Differentiate once more: $D^2F_{n+1} = 2(n+1)\big(F_n + xDF_n\big) = 2(n+1)\big(F_n + 2nx^2F_{n-1}\big)$. Since $x^2 = (x^2 - 1) + 1$, $x^2F_{n-1} = F_n + F_{n-1}$, so
 >
@@ -321,23 +315,29 @@ Solutions are found by the power series method: assume $y(x) = a_0 + a_1x + \cdo
 > P_{n+1}' = \frac{(2n+1)D^nF_n}{2^nn!} + \frac{2n\,D^nF_{n-1}}{2^nn!} = (2n+1)P_n + \frac{D^n F_{n-1}}{2^{n-1}(n-1)!} = (2n+1)P_n + P_{n-1}' .
 > $$
 >
-> **(9).** From (8) and the first relation, $P_{n-1}' = P_{n+1}' - (2n+1)P_n = xP_n' - nP_n$. Let $Q = (n+1)P_{n+1} + nP_{n-1} - (2n+1)xP_n$. Then, using (8) for $(2n+1)P_n$,
+> **(9).** Apply $D^n$ to $DF_{n+1} = 2(n+1)xF_n$ and use Leibniz's rule, $D^n(xF_n) = xD^nF_n + nD^{n-1}F_n$:
 >
 > $$
-> Q' = (n+1)P_{n+1}' + nP_{n-1}' - (2n+1)P_n - (2n+1)xP_n' = nP_{n+1}' + (n+1)P_{n-1}' - (2n+1)xP_n' ,
+> 2^{n+1}(n+1)!\,P_{n+1} = 2(n+1)\big(2^nn!\,xP_n + nD^{n-1}F_n\big), \qquad\text{so}\qquad P_{n+1} = xP_n + n\,G, \quad G = \frac{D^{n-1}F_n}{2^nn!} .
 > $$
 >
-> and substituting $P_{n+1}' = xP_n' + (n+1)P_n$ and $P_{n-1}' = xP_n' - nP_n$,
+> Now $G' = P_n$. Also $G(\pm1) = 0$: in the Leibniz expansion of $D^{n-1}\big[(x - 1)^n(x + 1)^n\big]$ each term differentiates the two factors at most $n - 1$ times in total, so it keeps a factor $x - 1$ and a factor $x + 1$. By (8), $H = (P_{n+1} - P_{n-1})/(2n+1)$ also has $H' = P_n$, and $H(1) = 0$ since every $P_k(1) = 1$. Two antiderivatives of $P_n$ that agree at $x = 1$ are equal, so $G = H$ and
 >
 > $$
-> Q' = \big(n + (n+1) - (2n+1)\big)xP_n' + \big(n(n+1) - (n+1)n\big)P_n = 0 .
+> P_{n+1} = xP_n + \frac{n}{2n+1}\big(P_{n+1} - P_{n-1}\big), \qquad\text{that is,}\qquad (n+1)P_{n+1} + nP_{n-1} = (2n+1)xP_n .
 > $$
 >
-> So $Q$ is constant, and $Q(1) = (n+1) + n - (2n+1) = 0$ since every $P_k(1) = 1$. Hence $Q = 0$, which is (9).
+> **The relation $P_{n+1}' = (n+1)P_n + xP_n'$** (Exercise 5.9.7). Differentiate (9): $(n+1)P_{n+1}' + nP_{n-1}' = (2n+1)P_n + (2n+1)xP_n'$. Eliminate $P_{n-1}' = P_{n+1}' - (2n+1)P_n$ by (8):
+>
+> $$
+> (2n+1)P_{n+1}' - n(2n+1)P_n = (2n+1)P_n + (2n+1)xP_n' ,
+> $$
+>
+> and divide by $2n + 1$: $P_{n+1}' = (n+1)P_n + xP_n'$ for $n \ge 1$. For $n = 0$ it reads $P_1' = P_0$, which is true. Replacing $n$ by $n - 1$ and putting $x = 0$ gives $P_n'(0) = nP_{n-1}(0)$ for $n \ge 1$, which is (16).
 
 ^pf-49-7
 
-*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-6|§49.6]]
+*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-6|§49.6]], [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Def. §49.3]]
 
 > [!theorem] Proposition §49.8: The Norm of Pₙ
 > For $n = 0, 1, 2, \ldots$,
@@ -361,7 +361,7 @@ Solutions are found by the power series method: assume $y(x) = a_0 + a_1x + \cdo
 >
 > **(b)** Replace $(2n+1)P_n$ by $P_{n+1}' - P_{n-1}'$, using (8): the right side becomes $\int_{-1}^{1} x\big(P_{n+1}' - P_{n-1}'\big)P_{n+1}\,dx$.
 >
-> **(c)** $xP_{n-1}'$ is a polynomial of degree $n - 1$, so $\int_{-1}^{1} xP_{n-1}'P_{n+1}\,dx = 0$ by Proposition §49.5(b).
+> **(c)** $xP_{n-1}'$ is a polynomial of degree at most $n - 1$, so $\int_{-1}^{1} xP_{n-1}'P_{n+1}\,dx = 0$ by Proposition §49.5(b).
 >
 > **(d)** What remains is integrated by parts, with $P_{n+1}'P_{n+1} = \frac12\big(P_{n+1}^2\big)'$ and $P_{n+1}^2(\pm1) = 1$:
 >
@@ -373,7 +373,7 @@ Solutions are found by the power series method: assume $y(x) = a_0 + a_1x + \cdo
 
 ^pf-49-8
 
-*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-5|§49.5]], [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-7|§49.7]]
+*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Def. §49.3]], [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-5|§49.5]], [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-7|§49.7]]
 
 ## Legendre Series
 
@@ -404,7 +404,7 @@ To use Legendre polynomials in boundary value problems, a given function $f(x)$ 
 *Powers omits the proof.* It is the analogue of the Fourier convergence theorem, [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]].
 
 > [!remark]- Connections
-> - Convergence in the mean (in $L^2[-1, 1]$) has a short proof from results in the vault. The normalized polynomials $\sqrt{(2n+1)/2}\,P_n$ are an orthonormal set (Propositions §49.5 and §49.8) whose span is all polynomials. Polynomials are dense in $C[-1, 1]$ for the maximum norm by Weierstrass's approximation theorem ([[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27]], stated there without proof), and continuous functions are dense in $L^2[-1, 1]$. So the set is complete, hence an orthonormal basis with Parseval's equality: [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]]. The pointwise statement of the theorem needs more.
+> - Convergence in the mean (in $L^2[-1, 1]$) has a short proof from results in the vault. The normalized polynomials $\sqrt{(2n+1)/2}\,P_n$ are an orthonormal set (Propositions §49.5 and §49.8) whose span is all polynomials. Polynomials are dense in $C[-1, 1]$ for the maximum norm by Weierstrass's approximation theorem ([[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27]], a heading only: the theorem was not covered), and continuous functions are dense in $L^2[-1, 1]$ ([[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 Thm. §19.19]](iii)). So the set is complete, hence an orthonormal basis with Parseval's equality: [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]]. The pointwise statement of the theorem needs more.
 
 > [!theorem] Proposition §49.10: Legendre Series of Odd, Even and Half-Range Functions
 > If $f$ is odd on $-1 < x < 1$, only the odd-indexed coefficients $b_n$ can be nonzero; if $f$ is even, only the even-indexed ones. Consequently a function $f$ given on $0 < x < 1$ is represented there both by
@@ -565,7 +565,7 @@ These formulas are useful if $P_n(x)$ and $P_n'(x)$ can be evaluated easily, and
 ^thm-49-13
 
 > [!proof]+ Proof
-> The first statement is [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-4|Theorem §49.4]] with the normalization of [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Definition §49.3]]; it rests on part (b) of that theorem, which Powers does not prove. The second follows by the change of variables $x = \cos\phi$ of [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-2|Proposition §49.2]]. For the orthogonality, the same substitution, with $dx = -\sin\phi\,d\phi$, gives
+> The first statement is [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-4|Theorem §49.4]] with the normalization of [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Definition §49.3]]; it rests on the unboundedness assumed in part (b) of that theorem, which Powers does not prove. The second follows by the change of variables $x = \cos\phi$ of [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-2|Proposition §49.2]]. For the orthogonality, the same substitution, with $dx = -\sin\phi\,d\phi$, gives
 >
 > $$
 > \int_0^{\pi} P_n(\cos\phi)P_m(\cos\phi)\sin\phi\,d\phi = \int_{-1}^{1} P_n(x)P_m(x)\,dx = 0 \qquad (n \ne m)

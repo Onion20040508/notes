@@ -364,13 +364,13 @@ tags: [differentiable-manifolds, math591]
 
 *Uses:* [[§1 Point-Set Topology Review#^prop-1-1|§1.1]], [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]
 
-> [!remark]- Connections
-> - Part (1) is also proved in 590, right after [[§9 Continuous Functions#^pf-def-9-1|the definition of continuity, 590 §9.1]]; part (4) is [[§10 Product Topology on Arbitrary Products#^thm-10-1|Continuity into Product Spaces, 590 §10.1]].
-
 > [!proof]+ Proof (to be filled)
 > Parts (2)–(4) are proved in MATH 590 ([[§9 Continuous Functions|590 §9]]); to be filled.
 
 ^pf-1-5-2
+
+> [!remark]- Connections
+> - Part (1) is also proved in 590, right after [[§9 Continuous Functions#^pf-def-9-1|the definition of continuity, 590 §9.1]]; part (4) is [[§10 Product Topology on Arbitrary Products#^thm-10-1|Continuity into Product Spaces, 590 §10.1]].
 
 > [!theorem] Proposition §1.6: Metric Spaces
 > Let $(X, d)$ be a metric space with the metric topology.

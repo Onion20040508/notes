@@ -123,7 +123,7 @@ Equations (6)–(8) form a new problem, a two-dimensional eigenvalue problem. Bu
 > \lambda^2 = \mu^2 + \nu^2 . \qquad (13)
 > $$
 >
-> **Two independent eigenvalue problems.** Equations (10) and (11) form one problem, (9) and (12) the other, each of the familiar form solved for the rod with fixed end temperatures ([[§19 Example꞉ Fixed End Temperatures|§19]]): $X = A\cos\mu x + B\sin\mu x$, $X(0) = 0$ gives $A = 0$, and $X(a) = B\sin\mu a = 0$ with $B \ne 0$ requires $\mu a = m\pi$. Hence
+> **Two independent eigenvalue problems.** Equations (10) and (11) form one problem, (9) and (12) the other, each of the familiar form solved for the rod with fixed end temperatures ([[§19 Example꞉ Fixed End Temperatures#^thm-19-2|Theorem §19.2]]): $X = A\cos\mu x + B\sin\mu x$, $X(0) = 0$ gives $A = 0$, and $X(a) = B\sin\mu a = 0$ with $B \ne 0$ requires $\mu a = m\pi$. Hence
 >
 > $$
 > X_m(x) = \sin\Big(\frac{m\pi x}{a}\Big), \quad \mu_m^2 = \Big(\frac{m\pi}{a}\Big)^2, \qquad Y_n(y) = \sin\Big(\frac{n\pi y}{b}\Big), \quad \nu_n^2 = \Big(\frac{n\pi}{b}\Big)^2 ,
@@ -133,7 +133,7 @@ Equations (6)–(8) form a new problem, a two-dimensional eigenvalue problem. Bu
 
 ^pf-43-2
 
-*Uses:* [[§43 Two-Dimensional Heat Equation꞉ Solution#^def-43-1|Def. §43.1]], [[§19 Example꞉ Fixed End Temperatures|§19]] (the one-dimensional problem)
+*Uses:* [[§43 Two-Dimensional Heat Equation꞉ Solution#^def-43-1|Def. §43.1]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the one-dimensional problem)
 
 The theorem finds the product eigenfunctions. That there are no others (every eigenfunction is a finite combination of $\phi_{mn}$ with the same eigenvalue) follows from the completeness of the double sine series below, by the orthogonality argument of [[§44★ Problems in Polar Coordinates#^thm-44-3|Theorem §44.3]]. With $\lambda^2 = \lambda_{mn}^2$, the time factor solving (5) is
 
@@ -213,7 +213,13 @@ $$
 >
 > and $u_{mn}$ vanishes on the four edges because $\sin 0 = \sin m\pi = \sin n\pi = 0$.
 >
-> **Superposition.** The equation and the boundary conditions are linear and homogeneous, so every finite linear combination of the $u_{mn}$ satisfies them, and so does the series (14) whenever it can be differentiated term by term. For $t > 0$ this is the case for bounded coefficients: the factors $\exp(-\lambda_{mn}^2kt)$ make the differentiated series converge uniformly for $t \ge t_0 > 0$.
+> **Superposition.** The equation and the boundary conditions are linear and homogeneous, so every finite linear combination of the $u_{mn}$ satisfies them ([[§19 Example꞉ Fixed End Temperatures#^thm-19-4|Theorem §19.4]]), and so does the series (14) whenever it can be differentiated term by term. (Powers sets the convergence aside; here is why this holds for $t > 0$.) By (17), $|a_{mn}| \le M := \frac{4}{ab}\iint|f|\,dx\,dy$. Fix $t_0 > 0$. For $t \ge t_0$ the terms of (14) and of the series for $u_x$, $u_{xx}$, $u_y$, $u_{yy}$, $u_t$ are bounded in absolute value by
+>
+> $$
+> M(1 + k)(1 + \mu_m^2)(1 + \nu_n^2)\,e^{-\mu_m^2kt_0}e^{-\nu_n^2kt_0} ,
+> $$
+>
+> since $\lambda_{mn}^2 = \mu_m^2 + \nu_n^2$ and $\mu_m, \mu_m^2, \nu_n, \nu_n^2, \lambda_{mn}^2 \le (1 + \mu_m^2)(1 + \nu_n^2)$. The double sum of these bounds is $M(1 + k)\sum_m(1 + \mu_m^2)e^{-\mu_m^2kt_0}\cdot\sum_n(1 + \nu_n^2)e^{-\nu_n^2kt_0}$, a product of two series that converge by the ratio test. By the Weierstrass M-test the six series converge absolutely (so in any order of summation) and uniformly on $0 \le x \le a$, $0 \le y \le b$, $t \ge t_0$. Their sums are continuous, and term-by-term differentiation is justified one variable at a time exactly as in the proof of [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|Theorem §19.5]]: integrate the uniformly convergent differentiated series term by term and apply the fundamental theorem of calculus. Since each term vanishes on the edges, so does the sum.
 >
 > **The coefficients.** At $t = 0$, (14) becomes (15). Multiply (15) by $\phi_{pq}$ and integrate over the rectangle. Integrating term by term (legitimate if the series converges uniformly, and in general in the mean-square sense) and using the orthogonality (16), every term vanishes except the one with $(m, n) = (p, q)$:
 >
@@ -225,18 +231,18 @@ $$
 
 ^pf-43-4
 
-*Uses:* [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-1|§43.1]], [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-2|§43.2]], [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-3|§43.3]]
+*Uses:* [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-1|§43.1]], [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-2|§43.2]], [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-3|§43.3]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-4|§19.4]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|§19.5]], [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]] (M-test), [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]], [[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]
 
 *Powers omits the proof that the double series (15) converges to $f$. In the mean-square sense it follows from the completeness of the one-dimensional sine systems on $(0, a)$ and $(0, b)$ (for the exponential form on an interval, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]]): products of orthonormal bases of the two intervals form an orthonormal basis of the rectangle, a fact the vault does not prove.*
 
 > [!remark]- Connections
 > - The normalized functions $\frac{2}{\sqrt{ab}}\phi_{mn}$ form an orthonormal set by (16), and (17) gives the coefficients of $f$ with respect to it. Completeness of this set is the statement that (15) holds in mean square, and is equivalent to Parseval's equality $\frac{4}{ab}\iint f^2 = \sum\sum a_{mn}^2$: [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]].
-> - The two-dimensional analogue of the half-range sine series ([[§7 Arbitrary Period and Half-Range Expansions|§7]]). The $\phi_{mn}$ are eigenvectors of the symmetric operator $-\nabla^2$ with zero boundary values, and orthogonality for distinct eigenvalues is the infinite-dimensional analogue of [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]; for a general region it is proved with Green's identity in [[§44★ Problems in Polar Coordinates#^thm-44-3|Theorem §44.3]].
+> - The two-dimensional analogue of the half-range sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]). The $\phi_{mn}$ are eigenvectors of the symmetric operator $-\nabla^2$ with zero boundary values, and orthogonality for distinct eigenvalues is the infinite-dimensional analogue of [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]; for a general region it is proved with Green's identity in [[§44★ Problems in Polar Coordinates#^thm-44-3|Theorem §44.3]].
 
 > [!remark] Remark: Method — Heat Problems in a Rectangle
 > To solve $u_t = k(u_{xx} + u_{yy})$ in $0 < x < a$, $0 < y < b$ with given edge temperatures and initial temperature $h(x, y)$:
-> 1. **Steady state.** Find $v(x, y) = \lim_{t\to\infty} u(x, y, t)$: it solves Laplace's equation $\nabla^2v = 0$ with the given edge temperatures, a potential problem in a rectangle, solved by superposition of rectangle problems with one nonzero side each ([[§36 Potential in a Rectangle|§36]], [[§37 Further Examples for a Rectangle|§37]]). If the edge temperatures are zero, $v = 0$.
-> 2. **Transient problem.** $w = u - v$ satisfies the heat equation with zero edge temperatures and initial condition $w(x, y, 0) = h(x, y) - v(x, y)$: the problem (1)–(4) with $f = h - v$.
+> 1. **Steady state.** Find $v(x, y) = \lim_{t\to\infty} u(x, y, t)$: it solves Laplace's equation $\nabla^2v = 0$ with the given edge temperatures, a potential problem in a rectangle, solved by superposition of rectangle problems with one nonzero side each ([[§36 Potential in a Rectangle#^thm-36-2|Theorem §36.2]]; [[§37 Further Examples for a Rectangle#^rem-37-1|Remark: Method — Splitting a Rectangle Problem]]). If the edge temperatures are zero, $v = 0$.
+> 2. **Transient problem** (as for the rod, [[§19 Example꞉ Fixed End Temperatures#^rem-19-1|Remark: Method — The Steady-State/Transient Split]]). $w = u - v$ satisfies the heat equation with zero edge temperatures and initial condition $w(x, y, 0) = h(x, y) - v(x, y)$: the problem (1)–(4) with $f = h - v$.
 > 3. **Separate** $w = \phi(x, y)T(t)$: $T' = -\lambda^2kT$ and the eigenvalue problem (6)–(8) (Theorem §43.1).
 > 4. **Separate again**, $\phi = X(x)Y(y)$: two one-dimensional eigenvalue problems, $\phi_{mn} = \sin(m\pi x/a)\sin(n\pi y/b)$, $\lambda_{mn}^2 = (m\pi/a)^2 + (n\pi/b)^2$ (Theorem §43.2). Basic solutions $w_{mn} = \phi_{mn}e^{-\lambda_{mn}^2kt}$.
 > 5. **Double series** $w = \sum\sum a_{mn}w_{mn}$, with $a_{mn}$ from (17) applied to $f = h - v$; if $f$ is already a finite combination of the $\phi_{mn}$, read the coefficients off by matching terms.
@@ -382,7 +388,7 @@ $$
 >
 > (The same computation with $q = 0$ gives $4/(n\pi)$ for odd $n$, the familiar sine series of the constant $1$.)
 >
-> *The review sheet prints the initial condition as $\sin(n\pi x)\cos(m\pi y)$, and $b$, $a$ in the boundary conditions for $2$, $1$; the key solves it with $\sin(m\pi y)$, as in (a). Part (b) is the problem as printed.*
+> *The practice-final sheet prints the initial condition as $\sin(n\pi x)\cos(m\pi y)$ and writes $b$, $a$ in the boundary conditions for $2$, $1$; the key solves it with $\sin(m\pi y)$, as in (a). Part (b) is the problem as printed.*
 >
 > *Source: 341 Practice Final, Q10*
 
@@ -399,7 +405,7 @@ $$
 >
 > satisfies $u_{xx} + u_{yy} = u_{tt}/c^2$ on the rectangle with $u = 0$ on the boundary, since $\nabla^2u_{mn} = -\lambda_{mn}^2u_{mn}$ and $\partial^2u_{mn}/\partial t^2 = -\lambda_{mn}^2c^2u_{mn}$ (Powers' Exercise 5.3.10; adding $\sin(\lambda_{mn}ct)$ terms accommodates an initial velocity).
 > - **Frequencies.** The mode $(m, n)$ vibrates with angular frequency $\omega_{mn} = c\lambda_{mn} = c\pi\sqrt{m^2/a^2 + n^2/b^2}$. Unlike the overtones of a string, these are not integer multiples of the fundamental $\omega_{11}$: for a square, $\omega_{mn}/\omega_{11} = \sqrt{(m^2 + n^2)/2} = 1,\ 1.581,\ 2,\ 2.236,\ 2.550,\ \ldots$, which is why a drum has a less definite pitch than a string.
-> - **Equal frequencies.** If $a = b$, the pairs $(m, n)$ and $(n, m)$ have the same frequency, and occasionally more pairs share one: $1^2 + 7^2 = 5^2 + 5^2 = 50$, so $(1, 7)$, $(7, 1)$ and $(5, 5)$ all vibrate at $\omega_{11}\sqrt{25}$.
+> - **Equal frequencies.** If $a = b$, the pairs $(m, n)$ and $(n, m)$ have the same frequency, and occasionally more pairs share one: $1^2 + 7^2 = 5^2 + 5^2 = 50$, so $(1, 7)$, $(7, 1)$ and $(5, 5)$ all vibrate at $5\omega_{11}$.
 > - **Nodal lines**, where $u_{mn} = 0$ for all $t$, are the lines $x = ja/m$ ($0 < j < m$) and $y = jb/n$ ($0 < j < n$): for $(1, 2)$ the line $y = b/2$; for $(2, 3)$ the lines $x = a/2$, $y = b/3$, $y = 2b/3$; for $(3, 2)$ the lines $x = a/3$, $x = 2a/3$, $y = b/2$; for $(3, 3)$ the lines $x = a/3$, $2a/3$ and $y = b/3$, $2b/3$ (Exercise 5.3.11). When frequencies coincide, combinations vibrate too, with other nodal lines: on a square, $\phi_{12} + \phi_{21} = 2\sin\frac{\pi x}{a}\sin\frac{\pi y}{a}\big(\cos\frac{\pi y}{a} + \cos\frac{\pi x}{a}\big)$ vanishes along the diagonal $x + y = a$.
 
 ^rem-43-3

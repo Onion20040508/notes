@@ -52,7 +52,7 @@ In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat
 
 ^pf-42-1
 
-*Uses:* [[§15 Multivariable Integration#^thm-15-5|452 Thm. §15.5]] (comparison theorem)
+*Uses:* [[§15 Multivariable Integration#^thm-15-5|452 Thm. §15.5]] (comparison theorem; stated there for double integrals, the same for triple integrals)
 
 > [!theorem] Theorem §42.2: The Local Heat Balance
 > If $\mathbf{q}$ is continuously differentiable and $u_t$ and $g$ are continuous, the heat balance (1) for every subregion $\mathcal{V}$ implies
@@ -122,7 +122,7 @@ In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat
 *Uses:* [[§42 Three-Dimensional Heat Equation#^thm-42-2|§42.2]], [[§42 Three-Dimensional Heat Equation#^def-42-2|Def. §42.2]], [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]] ($\nabla^2 = \nabla\cdot\nabla$)
 
 > [!remark]- Connections
-> - The one-dimensional case, derived for a rod with $q$ a scalar and Fourier's law $q = -\kappa u_x$: [[§17 Derivation and Boundary Conditions|§17]] (Powers 2.1). In a rod $\nabla^2u = u_{xx}$ and (6) reduces to the heat equation there.
+> - The one-dimensional case, derived for a rod with $q$ a scalar and Fourier's law $q = -\kappa u_x$ ([[§17 Derivation and Boundary Conditions#^def-17-2|Definition §17.2]]): [[§17 Derivation and Boundary Conditions#^thm-17-2|Theorem §17.2]]. In a rod $\nabla^2u = u_{xx}$ and (6) reduces to the heat equation there.
 > - The Laplacian $\nabla^2 = \nabla\cdot\nabla$: [[§111 Curl and Divergence#^def-111-5|Calc Def. §111.5]]; that the gradient points in the direction of fastest increase, which the minus sign in (5) reverses: [[§95 Directional Derivatives and the Gradient Vector#^thm-95-4|Calc Thm. §95.4]].
 
 > [!remark] Remark: Units
@@ -158,7 +158,7 @@ In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat
 
 ^def-42-3
 
-These are the three-dimensional forms of the conditions of the first, second and third kinds for the rod ([[§17 Derivation and Boundary Conditions|§17]]). The normal derivative is $\partial u/\partial n = \nabla u\cdot\hat{\mathbf{n}}$, the directional derivative as a dot product ([[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|Calc Cor. §95.2]]). On a face where the outward normal is $-\mathbf{k}$, for instance, $\partial u/\partial n = -\partial u/\partial z$.
+These are the three-dimensional forms of the conditions of the first, second and third kinds for the rod ([[§17 Derivation and Boundary Conditions#^def-17-5|Definition §17.5]], [[§17 Derivation and Boundary Conditions#^def-17-6|Definition §17.6]], [[§17 Derivation and Boundary Conditions#^def-17-7|Definition §17.7]]). The normal derivative is $\partial u/\partial n = \nabla u\cdot\hat{\mathbf{n}}$, the directional derivative as a dot product ([[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|Calc Cor. §95.2]]). On a face where the outward normal is $-\mathbf{k}$, for instance, $\partial u/\partial n = -\partial u/\partial z$.
 
 ## Examples: A Rectangular Block and Its Reductions
 
@@ -243,7 +243,7 @@ A full three-dimensional problem is complicated to solve, so one looks for ways 
 > \end{aligned}
 > $$
 >
-> The conditions are linear with coefficients independent of $z$, so averaging passes through them exactly: no approximation is made. The averaged problem is a two-dimensional heat problem of the kind solved in [[§43 Two-Dimensional Heat Equation꞉ Solution|§43]].
+> The conditions are linear with coefficients independent of $z$, so averaging passes through them exactly: no approximation is made. The averaged problem is a two-dimensional heat problem in a rectangle; with fixed edge temperatures such a problem is solved in [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-4|Theorem §43.4]] and [[§43 Two-Dimensional Heat Equation꞉ Solution#^rem-43-1|the method remark of §43]].
 >
 > *Powers: 5.2 (text); Exercises 5.2.1 and 5.2.2*
 
@@ -279,7 +279,7 @@ A full three-dimensional problem is complicated to solve, so one looks for ways 
 > \end{aligned}
 > $$
 >
-> The convection through the faces has become a heat loss term $\frac{2h}{b\kappa}(T_2 - w)$ in the equation, the same kind of term as for a rod losing heat through its lateral surface, $u_{xx} - \gamma^2(u - U) = u_t/k$ ([[§18 Steady-State Temperatures|§18]], Powers' Exercise 2.2.1).
+> The convection through the faces has become a heat loss term $\frac{2h}{b\kappa}(T_2 - w)$ in the equation, the same kind of term as for a rod losing heat through its lateral surface, $u_{xx} - \gamma^2(u - U) = u_t/k$ ([[§17 Derivation and Boundary Conditions#^ex-17-4|Example §17.4]]).
 >
 > **Steady state.** Suppose $w(x, z, t) \to W(x, z)$ as $t \to \infty$. Then $W$ satisfies (15)–(17) with $\partial w/\partial t = 0$. Nothing in that problem depends on $z$, so look for $W = W(x)$; (17) then holds automatically, and with $\gamma^2 = 2h/(b\kappa)$
 >
@@ -293,7 +293,7 @@ A full three-dimensional problem is complicated to solve, so one looks for ways 
 > W(x) = T_2 + \frac{(T_0 - T_2)\sinh\gamma(a - x) + (T_1 - T_2)\sinh\gamma x}{\sinh\gamma a} .
 > $$
 >
-> Check: at $x = 0$ the fraction is $T_0 - T_2$, so $W(0) = T_0$; at $x = a$ it is $T_1 - T_2$, so $W(a) = T_1$. This is a cooling fin: between the held ends the plate's temperature sags toward the fluid temperature $T_2$, the more so the larger $\gamma a$ (thin plate, good convection, poor conduction).
+> Check: at $x = 0$ the fraction is $T_0 - T_2$, so $W(0) = T_0$; at $x = a$ it is $T_1 - T_2$, so $W(a) = T_1$. This is the steady state of the rod with lateral convection ([[§18 Steady-State Temperatures#^ex-18-5|Example §18.5]]), with $U = T_2$. It is a cooling fin: between the held ends the plate's temperature sags toward the fluid temperature $T_2$, the more so the larger $\gamma a$ (thin plate, good convection, poor conduction).
 >
 > *Powers: 5.2 (text), Equations (15)–(18); Exercise 5.2.3*
 

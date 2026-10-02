@@ -89,7 +89,7 @@ $$
 >
 > Only odd powers of $\rho\cos\phi$ appear, so $u$ is odd in $z$ and vanishes on the equatorial plane. Near the center the first term dominates: $u \approx \frac{3V}{2c}\rho\cos\phi = \frac{3V}{2c}z$, so the field $-\nabla u$ there is uniform, of magnitude $3V/(2c)$, pointing from the positive toward the negative hemisphere. On the positive $z$-axis ($\phi = 0$, $P_n(1) = 1$) the series gives $u = 0.362V$, $0.658V$, $0.867V$ at $z = c/4$, $c/2$, $3c/4$.
 >
-> *Powers: 5.10, Part A, with the coefficients of Part B*
+> *Powers: 5.10, Part A, with the boundary data and coefficients of the Part B example*
 
 ^ex-50-1
 
@@ -153,7 +153,7 @@ The term with $n = 0$ does not decay: $b_0 = \frac12\int_0^{\pi} f\sin\phi\,d\ph
 > u(\phi, t) = T_0\bigg[\frac32\cos\phi\,e^{-2kt/R^2} - \frac78P_3(\cos\phi)\,e^{-12kt/R^2} + \frac{11}{16}P_5(\cos\phi)\,e^{-30kt/R^2} - \cdots\bigg] .
 > $$
 >
-> The average temperature is $b_0 = 0$ for all time. The higher terms die out quickly: already at $kt/R^2 = 1$ the second term is about $e^{-10} \approx 5 \times 10^{-5}$ times the first, and $u \approx \frac32T_0\cos\phi\,e^{-2kt/R^2}$; at the north pole this is $0.203T_0$ (the full series gives $0.2030T_0$ too).
+> The average temperature is $b_0 = 0$ for all time. The higher terms die out quickly: already at $kt/R^2 = 1$ the exponential factor of the second term is $e^{-10} \approx 4.5 \times 10^{-5}$ times that of the first, and $u \approx \frac32T_0\cos\phi\,e^{-2kt/R^2}$; at the north pole this is $0.203T_0$ (the full series gives $0.2030T_0$ too).
 >
 > *Powers: 5.10, Part B, Example, Figure 15*
 
@@ -164,7 +164,7 @@ The term with $n = 0$ does not decay: $b_0 = \frac12\int_0^{\pi} f\sin\phi\,d\ph
 
 ## C. Spherical Waves
 
-In [[§48★ Some Applications of Bessel Functions|§48]], Part B, the wave equation in a sphere was solved when the initial conditions depend only on $\rho$. Now the variable $\phi$ is also present:
+In [[§48★ Some Applications of Bessel Functions#^prop-48-4|Proposition §48.4]] the wave equation in a sphere was solved when the initial conditions depend only on $\rho$. Now the variable $\phi$ is also present:
 
 $$
 \begin{aligned}
@@ -218,11 +218,11 @@ The first is solved by [[§49★ Spherical Coordinates; Legendre Polynomials#^th
 > R_n(\rho) = \rho^{-1/2}\big[AJ_{n+1/2}(\lambda\rho) + BY_{n+1/2}(\lambda\rho)\big] .
 > $$
 >
-> The Bessel functions of the second kind $Y_p(\lambda\rho)$ are unbounded at $\rho = 0$ ([[§45★ Bessel's Equation|§45]]), so $B = 0$ and $R_n = \rho^{-1/2}J_{n+1/2}(\lambda\rho)$, which behaves like $\rho^n$ near $0$. (For $n = 0$ this is $\sqrt{2/(\pi\lambda)}\sin(\lambda\rho)/\rho$, the solution of [[§48★ Some Applications of Bessel Functions#^prop-48-4|Proposition §48.4]].) The boundary condition $R_n(a) = 0$ requires $J_{n+1/2}(\lambda a) = 0$. Finally $T'' + \lambda_{nm}^2c^2T = 0$ gives the sine and cosine of $\lambda_{nm}ct$.
+> The Bessel functions of the second kind $Y_p(\lambda\rho)$ are unbounded at $\rho = 0$, so $B = 0$ and $R_n = \rho^{-1/2}J_{n+1/2}(\lambda\rho)$, which behaves like $\rho^n$ near $0$. (Powers asserts the unboundedness for every order; here is why it holds for $p = n + \frac12$. [[§45★ Bessel's Equation#^thm-45-4|Theorem §45.4]] proves it for integer order, and its argument for $\mu > 0$ goes through unchanged for $\mu = n + \frac12$ once $\mu!$ in the series for $J_\mu$ is replaced by $\Gamma(\mu + 1)$. Then, as in the proof of [[§45★ Bessel's Equation#^thm-45-5|Theorem §45.5]], a solution with $B \ne 0$ is unbounded.) (For $n = 0$ this is $\sqrt{2/(\pi\lambda)}\sin(\lambda\rho)/\rho$, the solution of [[§48★ Some Applications of Bessel Functions#^prop-48-4|Proposition §48.4]].) The boundary condition $R_n(a) = 0$ requires $J_{n+1/2}(\lambda a) = 0$. Finally $T'' + \lambda_{nm}^2c^2T = 0$ gives the sine and cosine of $\lambda_{nm}ct$.
 
 ^pf-50-3
 
-*Uses:* [[§48★ Some Applications of Bessel Functions#^ex-48-1|Ex. §48.1]], [[§48★ Some Applications of Bessel Functions#^thm-48-1|§48.1]], [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-13|§49.13]], [[§45★ Bessel's Equation|§45]] (Summary)
+*Uses:* [[§48★ Some Applications of Bessel Functions#^ex-48-1|Ex. §48.1]], [[§48★ Some Applications of Bessel Functions#^thm-48-1|§48.1]], [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-13|§49.13]], [[§45★ Bessel's Equation#^thm-45-4|§45.4]], [[§45★ Bessel's Equation#^thm-45-5|§45.5]]
 
 The solution $u(\rho, \phi, t)$ is an infinite series of constant multiples of these functions; Powers does not write it out. The radial functions occur so often that they have their own name.
 
@@ -250,7 +250,7 @@ Powers lists $j_0$, $j_1$, $j_2$ without derivation. Each can be checked by subs
 > [!example] Example §50.3: The Lowest Frequencies of a Sphere
 > Find the eigenvalues $\lambda_{nm}$ for $n = 0$ and $n = 1$.
 >
-> **$n = 0$.** $R_0(a) = 0$ comes down to $\sin(\lambda a)/(\lambda a) = 0$, so $\lambda_{0m} = m\pi/a$, $m = 1, 2, \ldots$, as in [[§48★ Some Applications of Bessel Functions#^prop-48-4|Proposition §48.4]]. Since $P_0(\cos\phi) = 1$, the product solutions with $n = 0$ are exactly the radial waves of [[§48★ Some Applications of Bessel Functions|§48]], Part B.
+> **$n = 0$.** $R_0(a) = 0$ comes down to $\sin(\lambda a)/(\lambda a) = 0$, so $\lambda_{0m} = m\pi/a$, $m = 1, 2, \ldots$, as in [[§48★ Some Applications of Bessel Functions#^prop-48-4|Proposition §48.4]]. Since $P_0(\cos\phi) = 1$, the product solutions with $n = 0$ are exactly the radial waves of [[§48★ Some Applications of Bessel Functions#^prop-48-4|Proposition §48.4]].
 >
 > **$n = 1$.** For other $n$ the solutions of $J_{n+1/2}(\lambda a) = 0$ must be found numerically. For $n = 1$, $j_1(\lambda a) = 0$ is the equation
 >

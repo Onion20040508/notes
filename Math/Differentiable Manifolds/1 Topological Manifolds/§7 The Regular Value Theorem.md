@@ -107,14 +107,17 @@ has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the
 
 ^thm-7-1
 
-> [!remark]- Connections
-> - The one-equation version is proved in 452: [[§12 The Implicit Function Theorem#^thm-12-2|452 §12.2]] (hub: [[Implicit Function Theorem]]); this vector-valued version has its home here.
-> - Deduced from the inverse function theorem: [[§28 Local Diffeomorphisms and Submersions#^thm-28-1|§28.1]] in this course (452 proves only the two-variable case, [[Inverse Function Theorem (several variables)]]).
-
 > [!proof]+ Proof (sketch)
 > Lee deduces this from the Inverse Function Theorem ([[§28 Local Diffeomorphisms and Submersions#^thm-28-1|Theorem §28.1]]; Lee, Theorem C.34), applied to the auxiliary map $(x,y) \mapsto (x, \Phi(x,y))$, whose total derivative is block lower triangular with nonsingular diagonal blocks $I_n$ and $(\partial\Phi^i/\partial y^j)$. Special cases are proved in MATH 452 (one equation: [[Implicit Function Theorem|452 §12]]; two variables: [[Inverse Function Theorem (several variables)|452 §13]]); Lee's proofs are in Appendix C.
 
 ^pf-7-1
+
+*Uses:* [[§28 Local Diffeomorphisms and Submersions#^thm-28-1|§28.1]], [[Inverse Function Theorem (several variables)|452 §13.2]]
+
+> [!remark]- Connections
+> - The one-equation version is proved in 452: [[§12 The Implicit Function Theorem#^thm-12-2|452 §12.2]] (hub: [[Implicit Function Theorem]]); this vector-valued version has its home here.
+> - Deduced from the inverse function theorem: [[§28 Local Diffeomorphisms and Submersions#^thm-28-1|§28.1]] in this course (452 proves only the two-variable case, [[Inverse Function Theorem (several variables)]]).
+
 > [!remark] Remark: Which Variables Are Solved For
 > The theorem does not say the level set is a graph over some canonical set of coordinates: it says that *if* the $k$ coordinates $y$ are ones for which the square block $(\partial\Phi^i/\partial y^j)$ is invertible, *then* those $y$ can be solved for in terms of the remaining $n$. Since $D\Phi_{(a,b)}$ has rank $k$ exactly when *some* $k$ of its $n + k$ columns are independent, a regular point always admits such a splitting—after permuting coordinates. That permutation is the “WLOG” step in the proof of Proposition [[§9 The Classical Groups Are Topological Manifolds#^cor-9-5|§9.5]] below.
 
@@ -209,7 +212,7 @@ This is the form needed on manifolds, where a chart has an open subset of Euclid
 The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at once. *Left:* $F = x^2+y^2-1$; at a point off the horizontal axis $\partial F/\partial y \neq 0$, so the implicit function theorem solves $y = h(x) = \sqrt{1-x^2}$ and the thick arc is the graph over the $x$-interval beneath it — the chart is “project to $x$,” which is exactly $\varphi_2$ of [[§13 Differentiable Structures#^ex-13-2|Example §13.2]]. *Middle:* at $(1,0)$ that partial vanishes and the curve is vertical, so no interval of $x$ works; but $\partial F/\partial x \neq 0$, so one solves $x = h(y)$ and projects to $y$ instead. That switch is the permutation-of-coordinates step in the proof, and the picture shows it is not a technicality: which coordinate can be solved for changes from point to point. *Right:* at a critical point the conclusion fails — near the origin $\{x^2 = y^2\}$ is two crossing lines, a graph over neither axis.
 
 > [!remark] Remark: Reading the Dimension
-> The level set of $k$ independent equations in $\mathbb{R}^{n+k}$ has dimension $(n+k) - k = n$: each independent constraint costs one dimension. The independence is exactly the rank condition, and it is needed at every point of the level set, not just at one — that is what “regular *value*” means ([[§7 The Regular Value Theorem#^def-7-2|Definition §7.2]]). The theorem is the general form of the computation carried out for $\mathrm{SL}(n,\mathbb{R})$ in [[§9 The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]], the case $k = 1$, $n + k = n^2$; the smooth version, giving $X$ a smooth structure rather than just a topology, comes in [[· 3 Smooth Structures|Chapter 3]].
+> The level set of $k$ independent equations in $\mathbb{R}^{n+k}$ has dimension $(n+k) - k = n$: each independent constraint costs one dimension. The independence is exactly the rank condition, and it is needed at every point of the level set, not just at one — that is what “regular *value*” means ([[§7 The Regular Value Theorem#^def-7-2|Definition §7.2]]). The theorem is the general form of the computation carried out for $\mathrm{SL}(n,\mathbb{R})$ in [[§9 The Classical Groups Are Topological Manifolds|§9, The Classical Groups Are Topological Manifolds]], the case $k = 1$, $n + k = n^2$; the smooth version, giving $X$ a smooth structure rather than just a topology, comes in [[· 3 Smooth Structures|Chapter 3]].
 
 ^rem-7-5
 

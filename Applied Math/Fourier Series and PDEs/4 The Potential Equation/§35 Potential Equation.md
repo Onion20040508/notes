@@ -39,8 +39,8 @@ Chapter 4 studies the potential equation, or Laplace's equation, $\nabla^2u = 0$
 > - The Laplacian in $\mathbb{R}^n$ and the normal derivative, the setting of Green's identities: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]].
 
 Where the equation comes from:
-- **Heat.** The two-dimensional heat equation is $u_t = k\nabla^2u$ ([[§42 Three-Dimensional Heat Equation|§42]]). A steady-state (time-independent) temperature has $u_t = 0$, hence $\nabla^2u = 0$. This is the two-dimensional version of the steady-state problems of [[§18 Steady-State Temperatures|§18]], where $\nabla^2u = 0$ reduced to $u'' = 0$.
-- **Membranes.** The two-dimensional wave equation is $u_{tt} = c^2\nabla^2u$ ([[§41★ Two-Dimensional Wave Equation꞉ Derivation|§41★]]). An equilibrium displacement of a membrane has $u_{tt} = 0$, hence $\nabla^2u = 0$.
+- **Heat.** The two-dimensional heat equation is $u_t = k\nabla^2u$ ([[§42 Three-Dimensional Heat Equation#^thm-42-3|Theorem §42.3]]). A steady-state (time-independent) temperature has $u_t = 0$, hence $\nabla^2u = 0$. This is the two-dimensional version of the steady-state problems of [[§18 Steady-State Temperatures#^def-18-1|§18]], where $\nabla^2u = 0$ reduced to $u'' = 0$.
+- **Membranes.** The two-dimensional wave equation is $u_{tt} = c^2\nabla^2u$ ([[§41★ Two-Dimensional Wave Equation꞉ Derivation#^thm-41-1|Theorem §41.1]]). An equilibrium displacement of a membrane has $u_{tt} = 0$, hence $\nabla^2u = 0$.
 - **Potentials.** The gravitational potential in empty space and the electrostatic potential in a charge-free region satisfy $\nabla^2u = 0$; hence the name.
 - **Ideal flow.** The velocity potential of an incompressible, irrotational flow is harmonic (Example §35.1).
 
@@ -159,7 +159,7 @@ The simplest harmonic functions are polynomials. They are useful for satisfying 
 > | $y = 0$ | $x^2$ | $0$ |
 > | $y = b$ | $x^2 - b^2$ | $bx$ |
 >
-> So $u = xy$ is the solution of the Dirichlet problem in the rectangle with $u(x, b) = bx$, $u(a, y) = ay$ and $u = 0$ on the other two sides (Powers' Exercise 4.2.7c), found without any series. By the uniqueness of Dirichlet solutions ([[§39 Potential in a Disk#^cor-39-6|Corollary §39.6]]), the series method of [[§36 Potential in a Rectangle|§36]] must produce the same function.
+> So $u = xy$ is the solution of the Dirichlet problem in the rectangle with $u(x, b) = bx$, $u(a, y) = ay$ and $u = 0$ on the other two sides (Powers' Exercise 4.2.7c), found without any series. By the uniqueness of Dirichlet solutions ([[§39 Potential in a Disk#^cor-39-6|Corollary §39.6]]), the series method of [[§36 Potential in a Rectangle#^thm-36-2|Theorem §36.2]] must produce the same function.
 >
 > *Powers: Exercise 4.1.2*
 

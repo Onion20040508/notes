@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: linear — The matrix groups become smooth level sets: $\Ogp(n)$ and $\Ugp(n)$ by the regular value theorem, with the differential computed along straight lines.*
 
-The promise of [[§9 The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]] can now be kept, with [[§18 The Differential of a Map Between Vector Spaces|The Differential of a Map Between Vector Spaces]] supplying the meaning of every step.
+The promise of [[§9 The Classical Groups Are Topological Manifolds|§9, The Classical Groups Are Topological Manifolds]] can now be kept, with [[§18 The Differential of a Map Between Vector Spaces|The Differential of a Map Between Vector Spaces]] supplying the meaning of every step.
 
 > [!definition] Definition §19.1: Symmetric Matrices as a Euclidean Space
 > Let $\operatorname{Sym}(n,\mathbb{R}) = \{\, S \in \operatorname{Mat}(n,\mathbb{R}) \mid S^{\mathsf T} = S \,\}$. It is a linear subspace of $\operatorname{Mat}(n,\mathbb{R})$, and the entries on and above the diagonal are free while those below are determined, so
@@ -250,7 +250,7 @@ The vertical arrows are the real-linear identifications of [[§8 Topological Gro
 > - Its tangent spaces: [[§20 Tangent Spaces I꞉ The Geometric Picture#^ex-20-3|Ex. §20.3]].
 
 > [!remark] Remark
-> **Why over $\mathbb{R}$.** The derivative $h \mapsto hg^* + gh^*$ is real-linear but not complex-linear: $dF_g(ih) = i\,hg^* - i\,gh^*$, which differs from $i\,dF_g(h)$ unless $gh^* = 0$. This is the conjugation in $g^*$ at work, and it is why Problem 4 insists that both spaces be regarded as real vector spaces. It is also why the holomorphic regular value theorem of [[§7 The Regular Value Theorem#Holomorphic Level Sets|§4, Holomorphic Level Sets]] does not apply, and why $\dim \mathrm{U}(n) = n^2$ can be odd, which no holomorphic level set can.
+> **Why over $\mathbb{R}$.** The derivative $h \mapsto hg^* + gh^*$ is real-linear but not complex-linear: $dF_g(ih) = i\,hg^* - i\,gh^*$, which differs from $i\,dF_g(h)$ unless $gh^* = 0$. This is the conjugation in $g^*$ at work, and it is why Problem 4 insists that both spaces be regarded as real vector spaces. It is also why the holomorphic regular value theorem of [[§7 The Regular Value Theorem#Holomorphic Level Sets|§7, Holomorphic Level Sets]] does not apply, and why $\dim \mathrm{U}(n) = n^2$ can be odd, which no holomorphic level set can.
 
 ^rem-19-5
 

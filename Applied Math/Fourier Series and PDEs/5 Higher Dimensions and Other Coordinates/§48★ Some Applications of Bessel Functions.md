@@ -50,7 +50,7 @@ After the elementary functions, the Bessel functions are among the most useful i
 >    $$
 >
 >    since $x^2\psi'' + x\psi' = x\frac{d}{dx}\big(x\frac{d\psi}{dx}\big)$.
-> 2. **Change the independent variable** to $s = \lambda x^{\gamma}$. Then $x\frac{d}{dx} = \gamma s\frac{d}{ds}$, and the equation becomes $\gamma^2\big[(s\frac{d}{ds})^2\psi + (s^2 - p^2)\psi\big] = 0$, that is, $s^2\psi'' + s\psi' + (s^2 - p^2)\psi = 0$: Bessel's equation of order $p$ in the variable $s$ ([[§45★ Bessel's Equation|§45]], with $\lambda = 1$). Its general solution is $AJ_p(s) + BY_p(s)$.
+> 2. **Change the independent variable** to $s = \lambda x^{\gamma}$. Then $x\frac{d}{dx} = \gamma s\frac{d}{ds}$, and the equation becomes $\gamma^2\big[(s\frac{d}{ds})^2\psi + (s^2 - p^2)\psi\big] = 0$, that is, $s^2\psi'' + s\psi' + (s^2 - p^2)\psi = 0$: Bessel's equation of order $p$ in the variable $s$ ([[§45★ Bessel's Equation#^def-45-1|Definition §45.1]], with $\lambda = 1$). Its general solution is $AJ_p(s) + BY_p(s)$ ([[§45★ Bessel's Equation#^thm-45-5|Theorem §45.5]]).
 >
 > Hence $\phi = x^{\alpha}\psi = x^{\alpha}\big[AJ_p(\lambda x^{\gamma}) + BY_p(\lambda x^{\gamma})\big]$. Bessel's equation itself is the case $\alpha = 0$, $\gamma = 1$, $p = \mu$.
 
@@ -63,7 +63,7 @@ After the elementary functions, the Bessel functions are among the most useful i
 >
 > **(b)** $X'' + \frac{3}{x}X' + \lambda^2X = 0$ (the bearing, Part C). Now $1 - 2\alpha = 3$, so $\alpha = -1$, again $\gamma = 1$, and $p^2 - 1 = 0$ gives $p = 1$: $X = x^{-1}\big[AJ_1(\lambda x) + BY_1(\lambda x)\big]$.
 >
-> **(c)** $R'' + \frac{2}{\rho}R' - \frac{\mu^2}{\rho^2}R + \lambda^2R = 0$ (spherical waves with angular dependence, [[§50★ Some Applications of Legendre Polynomials|§50]], Part C). As in (a), $\alpha = -\frac12$, $\gamma = 1$, and now $p^2 - \frac14 = \mu^2$; with $\mu^2 = n(n+1)$ this is $p^2 = n^2 + n + \frac14 = \big(n + \frac12\big)^2$, so $p = n + \frac12$.
+> **(c)** $R'' + \frac{2}{\rho}R' - \frac{\mu^2}{\rho^2}R + \lambda^2R = 0$ (spherical waves with angular dependence, [[§50★ Some Applications of Legendre Polynomials#^prop-50-3|Proposition §50.3]]). As in (a), $\alpha = -\frac12$, $\gamma = 1$, and now $p^2 - \frac14 = \mu^2$; with $\mu^2 = n(n+1)$ this is $p^2 = n^2 + n + \frac14 = \big(n + \frac12\big)^2$, so $p = n + \frac12$.
 >
 > *Powers: 5.8, Parts B and C; 5.10, Part C*
 
@@ -108,7 +108,7 @@ Condition (8) is added because $r = 0$ is a singular point.
 ^prop-48-2
 
 > [!proof]+ Proof
-> **Eigenvalues.** For $\lambda > 0$ the bounded solution of (6) is $R = J_0(\lambda r)$, as in [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]]. By [[§46★ Temperature in a Cylinder#^lem-46-5|Lemma §46.5]], $R'(a) = \lambda J_0'(\lambda a) = -\lambda J_1(\lambda a)$, so (7) holds exactly when $J_1(\lambda a) = 0$ (11): $\lambda a = \beta_n$. (Powers lists $0$ as the first eigenvalue; here is why.) For $\lambda = 0$, (6) is $(rR')' = 0$, with bounded solutions $R = $ constant, and these satisfy (7). Note $R_0(0) = J_0(0) = 1$, so $R_0 = 1$ is also "$J_0(0 \cdot r)$". A positive separation constant $+\mu^2$ gives the modified Bessel function $I_0(\mu r) = \sum_m (\mu r/2)^{2m}/(m!)^2$, a series of positive terms that is strictly increasing for $r > 0$; its derivative at $r = a$ is positive, so there are no other eigenvalues.
+> **Eigenvalues.** For $\lambda > 0$ the bounded solution of (6) is $R = J_0(\lambda r)$, as in [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]]. By [[§46★ Temperature in a Cylinder#^lem-46-5|Lemma §46.5]], $R'(a) = \lambda J_0'(\lambda a) = -\lambda J_1(\lambda a)$, so (7) holds exactly when $J_1(\lambda a) = 0$ (11): $\lambda a = \beta_n$. (Powers lists $0$ as the first eigenvalue; here is why.) For $\lambda = 0$, (6) is $(rR')' = 0$, with bounded solutions $R = $ constant, and these satisfy (7). Note $R_0(0) = J_0(0) = 1$, so $R_0 = 1$ is also "$J_0(0 \cdot r)$". A positive separation constant $+\mu^2$ gives the modified Bessel function $I_0(\mu r) = \sum_m (\mu r/2)^{2m}/(m!)^2$, a series of positive terms that is strictly increasing for $r > 0$ ([[§45★ Bessel's Equation#^thm-45-10|Theorem §45.10]]); its derivative at $r = a$ is positive, so there are no other eigenvalues. (The same eigenvalue problem, Powers' Exercise 5.5.10, is [[§45★ Bessel's Equation#^ex-45-3|Example §45.3]].)
 >
 > **Orthogonality.** The argument of [[§46★ Temperature in a Cylinder#^prop-46-2|Proposition §46.2]] applies verbatim: the boundary term $r(R_n'R_m - R_m'R_n)$ vanishes at $r = a$ because now $R_n'(a) = R_m'(a) = 0$, and at $r = 0$ because of the factor $r$. This includes $R_0 = 1$, so $\int_0^a J_0(\lambda_n r)\,r\,dr = 0$ for $n \ge 1$; directly, it equals $\frac{a}{\lambda_n}J_1(\beta_n) = 0$.
 >
@@ -122,7 +122,7 @@ Condition (8) is added because $r = 0$ is a singular point.
 
 ^pf-48-2
 
-*Uses:* [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]], [[§46★ Temperature in a Cylinder#^lem-46-5|§46.5]], [[§46★ Temperature in a Cylinder#^prop-46-2|§46.2]], [[§46★ Temperature in a Cylinder#^prop-46-6|§46.6]], [[§45★ Bessel's Equation|§45]] (modified Bessel functions)
+*Uses:* [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]], [[§46★ Temperature in a Cylinder#^lem-46-5|§46.5]], [[§46★ Temperature in a Cylinder#^prop-46-2|§46.2]], [[§46★ Temperature in a Cylinder#^prop-46-6|§46.6]], [[§45★ Bessel's Equation#^thm-45-10|§45.10]]
 
 > [!theorem] Proposition §48.3: Potential in a Cylinder with Insulated Side
 > The solution of (2)–(5) is
@@ -165,7 +165,7 @@ The constant term $a_0$ is the mean value of $f$ over the disk (the integral $\f
 
 ## B. Spherical Waves
 
-In spherical coordinates $(\rho, \theta, \phi)$ ([[§49★ Spherical Coordinates; Legendre Polynomials|§49]]) the Laplacian is
+In spherical coordinates $(\rho, \theta, \phi)$ ([[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-1|Definition §49.1]]) the Laplacian is, by [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-1|Proposition §49.1]],
 
 $$
 \nabla^2u = \frac{1}{\rho^2}\frac{\partial}{\partial\rho}\Big(\rho^2\frac{\partial u}{\partial\rho}\Big) + \frac{1}{\rho^2\sin\phi}\frac{\partial}{\partial\phi}\Big(\sin\phi\,\frac{\partial u}{\partial\phi}\Big) + \frac{1}{\rho^2\sin^2\phi}\frac{\partial^2u}{\partial\theta^2} .
@@ -194,7 +194,7 @@ $$
 J_{1/2}(x) = \sqrt{\frac{2}{\pi}}\,\frac{\sin x}{\sqrt{x}}, \qquad Y_{1/2}(x) = -\sqrt{\frac{2}{\pi}}\,\frac{\cos x}{\sqrt{x}} .
 $$
 
-*Powers prints the factor as $\frac{2}{\pi}$ instead of $\sqrt{2/\pi}$; the constant does not affect the solution below.*
+*Powers prints the constant factor in both formulas as $2/\pi$; it is $\sqrt{2/\pi}$. Only the shape $\sin(\lambda\rho)/\rho$ matters below.*
 
 > [!theorem] Proposition §48.4: Radial Waves in a Sphere
 > The eigenvalue problem (18)–(20) has the eigenvalues $\lambda_n^2 = (n\pi/a)^2$ and eigenfunctions
@@ -228,14 +228,14 @@ $$
 > \int_0^a R_nR_m\,\rho^2\,d\rho = \int_0^a \sin(\lambda_n\rho)\sin(\lambda_m\rho)\,d\rho = \begin{cases} 0, & n \ne m, \\ a/2, & n = m, \end{cases}
 > $$
 >
-> the orthogonality of the sine functions on $0 < \rho < a$. The initial conditions read $\sum a_n\sin(\lambda_n\rho)/\rho = f(\rho)$ and $\sum b_n\lambda_nc\sin(\lambda_n\rho)/\rho = g(\rho)$, that is, $\sum a_n\sin(n\pi\rho/a) = \rho f(\rho)$ and $\sum b_n\lambda_nc\sin(n\pi\rho/a) = \rho g(\rho)$. These are Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions|§7]]), whose coefficients are the formulas stated. (Powers says only that the coefficients are chosen "as usual"; the details are Exercise 5.8.7.) Each term of (22) satisfies (13), (14) and boundedness by construction.
+> the orthogonality of the sine functions on $0 < \rho < a$. The initial conditions read $\sum a_n\sin(\lambda_n\rho)/\rho = f(\rho)$ and $\sum b_n\lambda_nc\sin(\lambda_n\rho)/\rho = g(\rho)$, that is, $\sum a_n\sin(n\pi\rho/a) = \rho f(\rho)$ and $\sum b_n\lambda_nc\sin(n\pi\rho/a) = \rho g(\rho)$. These are Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]), whose coefficients are the formulas stated. (Powers says only that the coefficients are chosen "as usual"; the details are Exercise 5.8.7.) Each term of (22) satisfies (13), (14) and boundedness by construction.
 
 ^pf-48-4
 
-*Uses:* [[§48★ Some Applications of Bessel Functions#^ex-48-1|Ex. §48.1]], [[§4★ Singular Boundary Value Problems#^lem-4-2|§4.2]], [[§7 Arbitrary Period and Half-Range Expansions|§7]] (Fourier sine series)
+*Uses:* [[§48★ Some Applications of Bessel Functions#^ex-48-1|Ex. §48.1]], [[§4★ Singular Boundary Value Problems#^lem-4-2|§4.2]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (Fourier sine series)
 
 > [!remark] Remark: Spherical Waves Are Strings in Disguise
-> The substitution in the proof says more: if $u(\rho, t)$ solves (13), then $w = \rho u$ solves the one-dimensional wave equation $w_{\rho\rho} = w_{tt}/c^2$, with $w(0, t) = 0$ and $w(a, t) = 0$, a vibrating string on $0 < \rho < a$ ([[§30 Solution of the Vibrating String Problem|§30]]). Hence every solution of (13) has the form $u = \frac{1}{\rho}\big(\psi_1(\rho + ct) + \psi_2(\rho - ct)\big)$, d'Alembert's form ([[§31 d'Alembert's Solution#^thm-31-2|Theorem §31.2]]) divided by $\rho$: spherical waves travel outward and inward with speed $c$ and amplitude decreasing like $1/\rho$ (Exercise 5.8.4). In particular the radial frequencies $n\pi c/a$ are harmonic, unlike those of the drum in [[§47★ Vibrations of a Circular Membrane#^ex-47-1|Example §47.1]].
+> The substitution in the proof says more: if $u(\rho, t)$ solves (13), then $w = \rho u$ solves the one-dimensional wave equation $w_{\rho\rho} = w_{tt}/c^2$, with $w(0, t) = 0$ and $w(a, t) = 0$, a vibrating string on $0 < \rho < a$ ([[§30 Solution of the Vibrating String Problem#^thm-30-2|Theorem §30.2]]). Hence every solution of (13) has the form $u = \frac{1}{\rho}\big(\psi_1(\rho + ct) + \psi_2(\rho - ct)\big)$, d'Alembert's form ([[§31 d'Alembert's Solution#^thm-31-2|Theorem §31.2]]) divided by $\rho$: spherical waves travel outward and inward with speed $c$ and amplitude decreasing like $1/\rho$ (Exercise 5.8.4). In particular the radial frequencies $n\pi c/a$ are harmonic, unlike those of the drum in [[§47★ Vibrations of a Circular Membrane#^ex-47-1|Example §47.1]].
 
 ^rem-48-2
 
@@ -280,7 +280,7 @@ where $a$ and $c$ are positive constants and $b = a + 1$. Equation (23) is ellip
 > (x^3X')' + \lambda^2x^3X = 0, \quad a < x < b, \qquad X(a) = 0, \quad X(b) = 0, \qquad Y'' - \lambda^2Y = 0 . \qquad (31)\text{–}(33)
 > $$
 >
-> This is a regular Sturm–Liouville problem ([[§23 Sturm–Liouville Problems|§23]]) with $s(x) = p(x) = x^3 > 0$ on $a \le x \le b$; there is no singular point, so no boundedness condition is needed.
+> This is a regular Sturm–Liouville problem ([[§23 Sturm–Liouville Problems#^def-23-1|Definition §23.1]]) with $s(x) = p(x) = x^3 > 0$ on $a \le x \le b$; there is no singular point, so no boundedness condition is needed.
 >
 > **Solve the eigenvalue problem.** Equation (31) is $X'' + \frac{3}{x}X' + \lambda^2X = 0$, so by [[§48★ Some Applications of Bessel Functions#^ex-48-1|Example §48.1]](b), $X = \frac{1}{x}\big(AJ_1(\lambda x) + BY_1(\lambda x)\big)$. The boundary conditions (32) become
 >
@@ -314,7 +314,7 @@ where $a$ and $c$ are positive constants and $b = a + 1$. Equation (23) is ellip
 > u(x, y) = \sum_{n=1}^{\infty} a_nX_n(x)\frac{\cosh(\lambda_n y)}{\cosh(\lambda_n c)} . \qquad (35)
 > $$
 >
-> At $y = \pm c$ this is $\sum a_nX_n(x) = -v(x)$. By the orthogonality of the eigenfunctions of a regular Sturm–Liouville problem with weight $x^3$,
+> At $y = \pm c$ this is $\sum a_nX_n(x) = -v(x)$. By the orthogonality of the eigenfunctions of a regular Sturm–Liouville problem with weight $x^3$ ([[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]]),
 >
 > $$
 > \int_a^b X_n(x)X_m(x)\,x^3\,dx = 0, \quad n \ne m, \qquad\text{so}\qquad a_n = -\frac{\int_a^b v(x)X_n(x)\,x^3\,dx}{\int_a^b X_n^2(x)\,x^3\,dx} ,
@@ -325,3 +325,54 @@ where $a$ and $c$ are positive constants and $b = a + 1$. Equation (23) is ellip
 > *Powers: 5.8, Part C, Equations (23)–(35)*
 
 ^ex-48-2
+
+> [!example] Example §48.3: Spherical Waves by d'Alembert's Method
+> Find functions $\psi_1$, $\psi_2$ such that $u(\rho, t) = \frac{1}{\rho}\big(\psi_1(\rho + ct) + \psi_2(\rho - ct)\big)$ satisfies (13)–(16) and is bounded at $\rho = 0$. (Powers calls the two functions $\phi$ and $\psi$; here $\phi$ is the polar angle.)
+>
+> **Reduce to a string.** By [[§48★ Some Applications of Bessel Functions#^rem-48-2|Remark: Spherical Waves Are Strings in Disguise]], $w = \rho u = \psi_1(\rho + ct) + \psi_2(\rho - ct)$ solves $w_{\rho\rho} = w_{tt}/c^2$, and every such $u$ solves (13). The conditions on $u$ become conditions on $w$: $w(a, t) = 0$ by (14); $w(0, t) = 0$, because $u$ is bounded at $\rho = 0$; and, for $0 < \rho < a$,
+>
+> $$
+> w(\rho, 0) = F(\rho) := \rho f(\rho), \qquad w_t(\rho, 0) = G(\rho) := \rho g(\rho) .
+> $$
+>
+> **Initial conditions.** They read $\psi_1(\rho) + \psi_2(\rho) = F(\rho)$ and $c\big(\psi_1'(\rho) - \psi_2'(\rho)\big) = G(\rho)$ on $0 < \rho < a$. Integrating the second, $\psi_1 - \psi_2 = \frac{1}{c}H$ with $H(\rho) = \int_0^{\rho} G(s)\,ds$; a constant of integration may be dropped, because adding $K$ to $\psi_1$ and subtracting it from $\psi_2$ does not change $u$. Hence, on $0 < \rho < a$,
+>
+> $$
+> \psi_1 = \tfrac12F + \tfrac{1}{2c}H, \qquad \psi_2 = \tfrac12F - \tfrac{1}{2c}H .
+> $$
+>
+> **Boundary conditions.** For $t > 0$ the arguments $\rho \pm ct$ leave $(0, a)$, so $\psi_1$ and $\psi_2$ are needed on the whole line. The conditions $w(0, t) = 0$ and $w(a, t) = 0$ say that, for all $s > 0$,
+>
+> $$
+> \psi_2(-s) = -\psi_1(s), \qquad \psi_1(a + s) = -\psi_2(a - s) .
+> $$
+>
+> Both hold if $F$ and $G$ are replaced in the formulas above by their odd periodic extensions $\tilde F$, $\tilde G$ of period $2a$ ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|Definition §7.3]]) and $H(s) = \int_0^s \tilde G$. Indeed, $H$ is even because $\tilde G$ is odd, and $H$ has period $2a$ because the integral of the odd function $\tilde G$ over a period is $0$. Hence
+>
+> $$
+> \psi_2(-s) = -\tfrac12\tilde F(s) - \tfrac{1}{2c}H(s) = -\psi_1(s), \qquad \psi_1(a + s) = -\tfrac12\tilde F(a - s) + \tfrac{1}{2c}H(a - s) = -\psi_2(a - s) ,
+> $$
+>
+> using $\tilde F(a + s) = \tilde F(s - a) = -\tilde F(a - s)$ and $H(a + s) = H(s - a) = H(a - s)$.
+>
+> **The solution.**
+>
+> $$
+> u(\rho, t) = \frac{1}{2\rho}\Big[\tilde F(\rho + ct) + \tilde F(\rho - ct)\Big] + \frac{1}{2c\rho}\int_{\rho - ct}^{\rho + ct} \tilde G(s)\,ds ,
+> $$
+>
+> which is d'Alembert's solution of the string problem for $w$ ([[§31 d'Alembert's Solution#^thm-31-3|Theorem §31.3]]) divided by $\rho$. It is bounded at the center: since $\tilde F$ is odd and $H$ even, as $\rho \to 0$,
+>
+> $$
+> \frac{\tilde F(ct + \rho) - \tilde F(ct - \rho)}{2\rho} \to \tilde F'(ct), \qquad \frac{H(ct + \rho) - H(ct - \rho)}{2c\rho} \to \frac{1}{c}\tilde G(ct) ,
+> $$
+>
+> so $u(0, t) = \tilde F'(ct) + \tilde G(ct)/c$ wherever $\tilde F$ is differentiable and $\tilde G$ continuous.
+>
+> **What it says.** With $g = 0$, half of $w$ travels inward and half outward. The inward half is focused: $u = w/\rho$ grows as it approaches the center, and after passing through the center it travels outward with its sign reversed (the odd extension). At the wall both halves are reflected with a change of sign, as for the string.
+>
+> **A check.** Take $a = c = 1$, $f(\rho) = 1 - \rho^2$, $g = 0$. Then $F(s) = s - s^3$ is already odd, $\tilde F$ is its $2$-periodic continuation, and $u(\rho, t) = \frac{1}{2\rho}\big[\tilde F(\rho + t) + \tilde F(\rho - t)\big]$. For example, $u(0.5, 0.3) = F(0.8) + F(0.2) = 0.288 + 0.192 = 0.48$, $u(0, 0.3) = F'(0.3) = 1 - 3(0.3)^2 = 0.73$, and $u(0.2, 0.9) = \frac{1}{0.4}\big[F(1.1) + F(-0.7)\big] = \frac{1}{0.4}\big[{-0.171} - 0.357\big] = -1.32$, where $F(1.1) = F(-0.9) = -0.171$. The series of [[§48★ Some Applications of Bessel Functions#^prop-48-4|Proposition §48.4]], with $a_n = 2\int_0^1 \rho(1 - \rho^2)\sin(n\pi\rho)\,d\rho = \dfrac{12(-1)^{n+1}}{n^3\pi^3}$ and $b_n = 0$, gives the same three values.
+>
+> *Powers: Exercise 5.8.5*
+
+^ex-48-3

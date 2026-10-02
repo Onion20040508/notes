@@ -181,7 +181,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 
 ^pf-6-4
 
-*Uses:* [[§6 Periodic Functions and Fourier Series#^prop-6-3|§6.3]], [[§10 Operations on Fourier Series#^thm-10-4|§10.4]] (term-by-term integration)
+*Uses:* [[§6 Periodic Functions and Fourier Series#^prop-6-3|§6.3]]
 
 > [!definition] Definition §6.2: Fourier Series; Fourier Coefficients
 > Let $f$ be periodic with period $2\pi$ (and integrable over a period). The numbers $a_0$, $a_n$, $b_n$ given by (3)–(5) are the **Fourier coefficients** of $f$, and the series
@@ -190,7 +190,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 > f(x) \sim a_0 + \sum_{n=1}^{\infty}\big(a_n\cos nx + b_n\sin nx\big)
 > $$
 >
-> is the **Fourier series** of $f$. The sign $\sim$ means that the series *corresponds to* $f$: question (b), whether it equals $f$, has not been answered yet ([[§8 Convergence of Fourier Series|§8]]). In words, $a_0$ is the **mean value** of $f$ over one period.
+> is the **Fourier series** of $f$. The sign $\sim$ means that the series *corresponds to* $f$: question (b), whether it equals $f$, has not been answered yet ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]). In words, $a_0$ is the **mean value** of $f$ over one period.
 >
 > *Powers: 1.1 (text)*
 
@@ -280,6 +280,8 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 >
 > So $f(x) \sim \pi - \sum_{n=1}^{\infty}\frac2n\sin nx$. Over $(-\pi, \pi)$ instead, $f(x) = 2\pi + x$ on $(-\pi, 0)$ and $x$ on $(0, \pi)$, and splitting the integrals there gives the same coefficients. Check: $f(x) - \pi = x - \pi$ on $(0, 2\pi)$ is the sawtooth of Example §6.1 shifted right by $\pi$, and $\sin n(x - \pi) = (-1)^n\sin nx$ turns $\sum\frac{2(-1)^{n + 1}}{n}\sin n(x - \pi)$ into $-\sum\frac2n\sin nx$.
 >
+> *The key writes the integrand of $b_n$ in (a) as $3x\sin x$; its result $6(-1)^{n - 1}/n$ is the one above.*
+>
 > *Source: 341 HW 1, Problem 4*
 
 ^ex-6-2
@@ -299,7 +301,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 > \int_0^1 g(x)f_j(x)\,dx = \sum_{i=1}^{\infty} a_i\int_0^1 f_i(x)f_j(x)\,dx = \sum_{i=1}^{\infty} a_i\delta_{ij} = a_j ,
 > $$
 >
-> where $\delta_{ij} = 1$ if $i = j$ and $0$ otherwise. So $a_j = \int_0^1 g(x)f_j(x)\,dx$. Proposition §6.4 is the case of the system $1, \cos nx, \sin nx$ on $(-\pi, \pi)$, which is orthogonal but not normalized; the factors $\frac{1}{2\pi}$ and $\frac1\pi$ in (3)–(5) are $1/\int\phi^2$ for $\phi = 1$ and $\phi = \cos nx, \sin nx$. In the language of inner products, $\{f_i\}$ is an orthonormal set ([[§20 Orthonormal Sets and Bases#^def-20-1|556 Def. §20.1]]) and $a_j = \langle g, f_j\rangle$. The same computation recurs for every eigenfunction expansion in this subject ([[§24 Expansion in Series of Eigenfunctions|§24]]).
+> where $\delta_{ij} = 1$ if $i = j$ and $0$ otherwise. So $a_j = \int_0^1 g(x)f_j(x)\,dx$. Proposition §6.4 is the case of the system $1, \cos nx, \sin nx$ on $(-\pi, \pi)$, which is orthogonal but not normalized; the factors $\frac{1}{2\pi}$ and $\frac1\pi$ in (3)–(5) are $1/\int\phi^2$ for $\phi = 1$ and $\phi = \cos nx, \sin nx$. In the language of inner products, $\{f_i\}$ is an orthonormal set ([[§20 Orthonormal Sets and Bases#^def-20-1|556 Def. §20.1]]) and $a_j = \langle g, f_j\rangle$. The same computation recurs for every eigenfunction expansion in this subject ([[§24 Expansion in Series of Eigenfunctions#^prop-24-1|Proposition §24.1]]).
 >
 > *Source: 341 HW 1, Problem 3*
 

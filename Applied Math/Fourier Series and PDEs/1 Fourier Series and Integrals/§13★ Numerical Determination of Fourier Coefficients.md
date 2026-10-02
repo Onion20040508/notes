@@ -16,7 +16,7 @@ Many Fourier coefficient integrals cannot be done in closed form, and often a fu
 
 ## Preparing the Function
 
-The approximation works best when the coefficients being approximated decay quickly, that is, when the function is continuous and periodic ([[§9 Uniform Convergence|§9]], [[§10 Operations on Fourier Series|§10]]). Jumps can be removed first.
+The approximation works best when the coefficients being approximated decay quickly, that is, when the function is continuous and periodic ([[§9 Uniform Convergence#^thm-9-3|Theorem §9.3]], [[§10 Operations on Fourier Series#^thm-10-6|Theorem §10.6]]). Jumps can be removed first.
 
 > [!remark] Remark: Method — Removing Jumps Before Numerical Integration
 > Let $f$ be sectionally smooth on $-a < x < a$, extended periodically with period $2a$.
@@ -228,7 +228,7 @@ Example §13.1 shows the theorem at work with $r = 4$. In the next example the h
 >
 > against $3.290$, $-4$, $1$, $-0.444$; the $\hat b_n$ of the even function $x^2$ vanish. Adding the exact coefficients of $f_2$: $f$ has $a_n \approx \hat a_n$ as listed and $b_n = 2, -1, \frac23, \dots$ exactly.
 >
-> **Naive.** Applying (3) and (4) to $f$ itself, with the one-sided value $f(x_8) = f(\pi-) = \pi + \pi^2$, adds $\frac28\pi\cos(n\pi) = \pm\frac\pi4$ to each $\hat a_n$: $\hat a_1 \approx -4.998$, $\hat a_2 \approx 2.019$, $\hat a_3 \approx -1.508$, errors of about $1$ instead of about $0.2$. The sine coefficients come from the samples of $x$ alone:
+> **Naive.** Applying (3) and (4) to $f$ itself, with the one-sided value $f(x_8) = f(\pi-) = \pi + \pi^2$, adds $\frac28\pi\cos(n\pi) = \pm\frac\pi4$ to each $\hat a_n$: $\hat a_1 \approx -4.998$, $\hat a_2 \approx 2.019$, $\hat a_3 \approx -1.508$, errors of about $1$ instead of about $0.2$. (Had the average $\frac12\big(f(\pi-) + f(-\pi+)\big) = \pi^2$ been used at the jump instead, these extra terms would vanish and the $\hat a_n$ would agree with the prepared ones; the sine coefficients below are poor either way.) The sine coefficients come from the samples of $x$ alone:
 >
 > $$
 > \hat b_1 = \frac{\pi(1 + \sqrt2)}{4} \approx 1.896, \qquad \hat b_2 = -\frac\pi4 \approx -0.785, \qquad \hat b_3 = \frac{\pi(\sqrt2 - 1)}{4} \approx 0.325 ,

@@ -195,7 +195,7 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 ^thm-24-5
 
 > [!proof]+ Proof
-> *(Lecture 9. In lecture the derivation $\tilde D$ was introduced inside this proof — “this is how you push forward derivations … we'll come back to this construction immediately after” — and Uribe remarked that “the order of my presentation is not ideal.” The notes define the pushforward first, in [[§23 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§12, Pushing Derivations Forward]], so that the proof can cite it.)* Let $D \in T_pM$ and put $a = \varphi(p) = (r_0^1, \ldots, r_0^n)$.
+> *(Lecture 9. In lecture the derivation $\tilde D$ was introduced inside this proof — “this is how you push forward derivations … we'll come back to this construction immediately after” — and Uribe remarked that “the order of my presentation is not ideal.” The notes define the pushforward first, in [[§23 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§23, Pushing Derivations Forward]], so that the proof can cite it.)* Let $D \in T_pM$ and put $a = \varphi(p) = (r_0^1, \ldots, r_0^n)$.
 >
 > *Step 1: push $D$ down.* Let $\tilde D = \varphi_{*p}D \in T_a\,\varphi(U)$, the chart pushforward of Proposition [[§23 Derivations and the Abstract Tangent Space#^prop-23-9|§23.9]]; so $\tilde D[g] = D[g \circ \varphi]$ for germs $g$ at $a$.
 >
@@ -248,16 +248,16 @@ $$
 
 ^thm-24-6
 
+> [!proof]+ Proof
+> **Announced in lecture.** Stated in lecture in answer to a student's question — “are the ambient and the abstract tangent spaces the same, just defined differently?” — with the answer that they are, but that it has to be proved. Injectivity is Proposition [[§22 Tangent Spaces II꞉ Germs#^prop-22-2|§22.2]]; that $D_v$ really is a derivation is Proposition [[§22 Tangent Spaces II꞉ Germs#^prop-22-1|§22.1]]; surjectivity follows from the [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|basis theorem]], both spaces having dimension $n$. Even once it is proved, the notes keep the notations apart: $T^{\mathrm{geo}}_pM$ is the geometric tangent space, $T_pM$ the abstract one.
+
+^pf-24-6
+
 *Uses:* [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Def. §20.1]], [[§22 Tangent Spaces II꞉ Germs#^def-22-1|Def. §22.1]], [[§22 Tangent Spaces II꞉ Germs#^prop-22-1|§22.1]], [[§22 Tangent Spaces II꞉ Germs#^prop-22-2|§22.2]], [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|§24.5]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]]
 
 > [!remark]- Connections
 > - Proved in detail in [[§24 Coordinate Derivations and the Basis Theorem#^cor-24-7|Consequences, §24.7]], once the basis theorem gives $\dim T_pM = n$.
 > - The same identification read through velocities of curves: [[§26 Tangent Vectors as Velocities of Curves#^rem-26-1|The Two Faces Reconciled]].
-
-> [!proof]+ Proof
-> **Announced in lecture.** Stated in lecture in answer to a student's question — “are the ambient and the abstract tangent spaces the same, just defined differently?” — with the answer that they are, but that it has to be proved. Injectivity is Proposition [[§22 Tangent Spaces II꞉ Germs#^prop-22-2|§22.2]]; that $D_v$ really is a derivation is Proposition [[§22 Tangent Spaces II꞉ Germs#^prop-22-1|§22.1]]; surjectivity follows from the [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|basis theorem]], both spaces having dimension $n$. Even once it is proved, the notes keep the notations apart: $T^{\mathrm{geo}}_pM$ is the geometric tangent space, $T_pM$ the abstract one.
-
-^pf-24-6
 
 > [!theorem] Corollary §24.7: Consequences
 > Let $M$ be a smooth $n$-manifold and $p \in M$. Then the abstract tangent space has $\dim T_pM = n$, and for a regular level set $M = F^{-1}(c)$ the map $v \mapsto D_v$ of Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|§24.6]], from $T^{\mathrm{geo}}_pM$ to $T_pM$, is an isomorphism.
@@ -274,11 +274,11 @@ $$
 *Uses:* [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|§24.5]], [[§22 Tangent Spaces II꞉ Germs#^prop-22-2|§22.2]], [[§22 Tangent Spaces II꞉ Germs#^prop-22-1|§22.1]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
 
 > [!remark]- Connections
-> - This is the proof of [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|Ambient and Abstract Agree, §24.6]], announced before the basis theorem.
+> - This is the detailed proof of [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|Ambient and Abstract Agree, §24.6]], stated just above.
 
 **Comparison with Lee.** Lee meets the two kinds of tangent vector in the opposite order. He defines $T_pM$ by derivations first, identifies geometric and abstract tangent vectors in $\mathbb{R}^n$ (Proposition 3.2), and only later, for embedded submanifolds, shows $T_pS = \ker d\Phi_p$ (Proposition 5.38). The course starts geometrically, with $T^{\mathrm{geo}}_pM = \ker F'(p)$ inside the ambient space (Theorem [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]]), and reaches derivations afterwards. The consequence above is where the two orders meet.
 
 > [!remark] Remark: A Derivation Sees Only the First Derivatives
-> The basis theorem showed that, of the whole Taylor expansion of a germ, a derivation sees only the *linear* term — “of the entire Taylor series of the germ, all I care about are the first partials.” [[§27 Tangent Spaces III꞉ The Cotangent Space#The Cotangent Space from Germs|§13, The Cotangent Space from Germs]] says this algebraically: $I_p$ is a maximal ideal, being the kernel of evaluation; $I_p^2$ consists exactly of the germs vanishing to *second* order (Proposition [[§27 Tangent Spaces III꞉ The Cotangent Space#^prop-27-4|§27.4]]); and $I_p/I_p^2$ is canonically the *cotangent space* $T_p^*M$ of Definition [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|§27.1]], built with no dualizing at all (Theorem [[§27 Tangent Spaces III꞉ The Cotangent Space#^thm-27-7|§27.7]]). This is the sense in which, as Uribe remarked when he first set out to define the abstract tangent space, “it is more natural to define the dual”: the cotangent space comes first, and the abstract tangent space is its dual. We follow Lee and do not take that route.
+> The basis theorem showed that, of the whole Taylor expansion of a germ, a derivation sees only the *linear* term — “of the entire Taylor series of the germ, all I care about are the first partials.” [[§27 Tangent Spaces III꞉ The Cotangent Space#The Cotangent Space from Germs|§27, The Cotangent Space from Germs]] says this algebraically: $I_p$ is a maximal ideal, being the kernel of evaluation; $I_p^2$ consists exactly of the germs vanishing to *second* order (Proposition [[§27 Tangent Spaces III꞉ The Cotangent Space#^prop-27-4|§27.4]]); and $I_p/I_p^2$ is canonically the *cotangent space* $T_p^*M$ of Definition [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|§27.1]], built with no dualizing at all (Theorem [[§27 Tangent Spaces III꞉ The Cotangent Space#^thm-27-7|§27.7]]). This is the sense in which, as Uribe remarked when he first set out to define the abstract tangent space, “it is more natural to define the dual”: the cotangent space comes first, and the abstract tangent space is its dual. We follow Lee and do not take that route.
 
 ^rem-24-3

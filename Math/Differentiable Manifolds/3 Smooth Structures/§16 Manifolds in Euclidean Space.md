@@ -73,7 +73,7 @@ tags: [differentiable-manifolds, math591]
 > - The same circle in 452: [[Unit circle and unit sphere]], solved for $y$ near $(0,1)$ by the implicit function theorem in [[§12 The Implicit Function Theorem#^ex-12-1|452 Ex. §12.1]].
 
 > [!remark] Remark: A Parametrization Is an Inverse Chart
-> “A parametrization is just another name for my inverse” — if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[· 1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§9 The Classical Groups Are Topological Manifolds|§5, The Classical Groups Are Topological Manifolds]]. Theorem [[§16 Manifolds in Euclidean Space#^thm-16-1|§16.1]] says the two carry the same information locally, which is why one may pass freely between “solve the equations” and “draw the parametrization” — “the same thing.”
+> “A parametrization is just another name for my inverse” — if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[· 1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§9 The Classical Groups Are Topological Manifolds|§9, The Classical Groups Are Topological Manifolds]]. Theorem [[§16 Manifolds in Euclidean Space#^thm-16-1|§16.1]] says the two carry the same information locally, which is why one may pass freely between “solve the equations” and “draw the parametrization” — “the same thing.”
 
 ^rem-16-2
 
@@ -137,6 +137,7 @@ The proof in one picture. The transition function between two graph charts facto
 > [!remark]- Connections
 > - Regular values are defined three times in 591: [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]] (Euclidean), [[§25 The Differential in Coordinates#^def-25-1|Def. §25.1]] and [[§28 Local Diffeomorphisms and Submersions#^def-28-3|Def. §28.3]] (manifolds).
 > - Generalized to level sets in manifolds: [[§29 Submanifolds#^thm-29-6|§29.6]]; the two structures agree by [[§29 Submanifolds#^prop-29-8|§29.8]].
+
 > [!example] Example §16.2: A Surface in $\mathbb{R}^3$
 > The case $n = 2$, $k = 1$, where the indices can be written out. Let $F : W \subseteq \mathbb{R}^3 \to \mathbb{R}$ be smooth with regular value $c$, so $M = F^{-1}(c)$ is a surface and $F'(p) = \nabla F(p) \neq 0$ for $p \in M$. Suppose that at $p$ *two* partial derivatives are nonzero, say $\partial F/\partial z(p) \neq 0$ and $\partial F/\partial y(p) \neq 0$. Then $p$ lies in the domains of two charts built from different solved-for variables:
 >
@@ -194,7 +195,7 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 > [!remark]- Connections
 > - The same statement for embedded submanifolds of any manifold: [[§29 Submanifolds#^lem-29-3|§29.3]].
 
-Not stated in lecture; filled in because it is used repeatedly — tacitly in the next proof, and explicitly for $S^n \to \mathbb{RP}^n$ in [[§28 Local Diffeomorphisms and Submersions#^ex-28-2|§14]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
+Not stated in lecture; filled in because it is used repeatedly — tacitly in the next proof, and explicitly for $S^n \to \mathbb{RP}^n$ in [[§28 Local Diffeomorphisms and Submersions#^ex-28-2|§28]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
 
 > [!theorem] Proposition §16.4: The Three Circle Atlases Define One Smooth Structure
 > The four-chart atlas ([[§13 Differentiable Structures#^ex-13-2|Ex. §13.2]]), the angle atlas ([[§13 Differentiable Structures#^ex-13-4|Ex. §13.4]]) and the stereographic atlas ([[§13 Differentiable Structures#^ex-13-3|Ex. §13.3]]) on $S^1$ are pairwise compatible. All three generate the smooth structure that Proposition [[§16 Manifolds in Euclidean Space#^prop-16-2|§16.2]] gives $S^1 = F^{-1}(1)$, $F(x,y) = x^2 + y^2$.

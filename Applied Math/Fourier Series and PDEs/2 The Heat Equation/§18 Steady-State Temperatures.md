@@ -70,7 +70,7 @@ the temperature in a cylindrical rod with insulated lateral surface whose ends a
 > v(x) = T_0 + (T_1 - T_0)\frac xa . \qquad (7)
 > $$
 >
-> Equations (5)–(6) could have been set up from scratch as a boundary value problem, as in [[§3★ Boundary Value Problems|§3★]] (Powers 0.3); here they appear as part of a more comprehensive problem. The same steady state appears with $u_t = 2u_{xx}$ on $0 < x < 1$, $u(0, t) = 0$, $u(1, t) = 3$: $0 = 2v''$, $v(0) = 0$, $v(1) = 3$, so $v(x) = 3x$ (the diffusivity drops out).
+> Equations (5)–(6) could have been set up from scratch as a boundary value problem, as in [[§3★ Boundary Value Problems#^prop-3-2|Proposition §3.2]]; here they appear as part of a more comprehensive problem. The same steady state appears with $u_t = 2u_{xx}$ on $0 < x < 1$, $u(0, t) = 0$, $u(1, t) = 3$: $0 = 2v''$, $v(0) = 0$, $v(1) = 3$, so $v(x) = 3x$ (the diffusivity drops out).
 >
 > *Powers: 2.2, Example; Source: 341 Practice Midterm 1, Q7(a)*
 
@@ -147,7 +147,7 @@ In both examples the steady-state distribution has been uniquely determined by t
 > \frac{d^2v}{dx^2} = 0, \quad 0 < x < a; \qquad \frac{dv}{dx}(0) = 0, \qquad \frac{dv}{dx}(a) = 0 .
 > $$
 >
-> With $v = Ax + B$, both conditions say $A = 0$, and $B$ is free: $v(x) = T$ is a solution for any constant $T$. There is no information in the steady-state problem to tell what value $T$ should take, so this boundary value problem has infinitely many solutions. ([[§20 Example꞉ Insulated Bar|§20]] finds $T$ from the initial condition: it is the average of $f$.)
+> With $v = Ax + B$, both conditions say $A = 0$, and $B$ is free: $v(x) = T$ is a solution for any constant $T$. There is no information in the steady-state problem to tell what value $T$ should take, so this boundary value problem has infinitely many solutions. ([[§20 Example꞉ Insulated Bar#^thm-20-2|Theorem §20.2]] finds $T$ from the initial condition: it is the average of $f$.)
 >
 > *Powers: 2.2, Example*
 

@@ -43,7 +43,7 @@ To obtain homogeneous boundary conditions, write $u(x, t) = v(x) + w(x, t)$ as f
 > (sv')' = 0, \quad l < x < r, \qquad \alpha_1v(l) - \alpha_2v'(l) = c_1, \qquad \beta_1v(r) + \beta_2v'(r) = c_2 .
 > $$
 >
-> It is exactly the steady-state solution of the corresponding heat conduction problem ([[§25 Generalities on the Heat Conduction Problem|§25]], Powers 2.9; Powers' Exercise 3.4.2): setting $u_{tt} = 0$ in (1) or $u_t = 0$ in the heat equation $(su_x)_x = pu_t/k$ gives the same problem.
+> It is exactly the steady-state solution of the corresponding heat conduction problem ([[§25 Generalities on the Heat Conduction Problem#^prop-25-1|Proposition §25.1]], Powers 2.9; Powers' Exercise 3.4.2): setting $u_{tt} = 0$ in (1) or $u_t = 0$ in the heat equation $(su_x)_x = pu_t/k$ gives the same problem.
 >
 > *Powers: 3.4 (text)*
 

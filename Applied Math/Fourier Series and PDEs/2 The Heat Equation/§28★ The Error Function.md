@@ -12,11 +12,11 @@ tags: [fourier-series-and-pdes, math341, extension]
 *Powers, Section 2.12 · MAT 341 HW 9 · Midterm 2, Practice Midterm 2.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
-The heat-kernel solution of [[§27 Infinite Rod|§27★]] is a single integral of the initial temperature against a Gaussian, but even for the simplest initial temperatures it cannot be carried out in closed form, because $\int e^{-x^2}dx$ is not an elementary function. This section names that integral, the error function, records its properties (including the value $\int_{-\infty}^\infty e^{-y^2}dy = \sqrt\pi$, proved with polar coordinates), and shows that it is itself a solution of the heat equation: $\operatorname{erf}(x/\sqrt{4kt})$ is the temperature in an infinite rod that starts at $-1$ on the left and $+1$ on the right, and its complement $\operatorname{erfc}(x/\sqrt{4kt})$ describes a semi-infinite body whose surface temperature is suddenly changed. Every piecewise constant initial temperature, and several of the course's Fourier-integral answers, then have closed forms. The combination $x/\sqrt{4kt}$ also explains the $\sqrt t$ law of heat penetration.
+The heat-kernel solution of [[§27 Infinite Rod#^thm-27-3|Theorem §27.3]] is a single integral of the initial temperature against a Gaussian, but even for the simplest initial temperatures it cannot be carried out in closed form, because $\int e^{-x^2}dx$ is not an elementary function. This section names that integral, the error function, records its properties (including the value $\int_{-\infty}^\infty e^{-y^2}dy = \sqrt\pi$, proved with polar coordinates), and shows that it is itself a solution of the heat equation: $\operatorname{erf}(x/\sqrt{4kt})$ is the temperature in an infinite rod that starts at $-1$ on the left and $+1$ on the right, and its complement $\operatorname{erfc}(x/\sqrt{4kt})$ describes a semi-infinite body whose surface temperature is suddenly changed. Every piecewise constant initial temperature, and several of the course's Fourier-integral answers, then have closed forms. The combination $x/\sqrt{4kt}$ also explains the $\sqrt t$ law of heat penetration.
 
 ## The Error Function
 
-In [[§27 Infinite Rod|§27★]] the solution of the heat problem
+In [[§27 Infinite Rod#^thm-27-3|Theorem §27.3]] the solution of the heat problem
 
 $$
 \frac{\partial^2u}{\partial x^2} = \frac1k\frac{\partial u}{\partial t}, \quad -\infty < x < \infty, \ 0 < t, \qquad u(x, 0) = f(x) \qquad (1)\text{–}(2)
@@ -128,7 +128,7 @@ $$
 ^thm-28-2
 
 > [!proof]+ Proof
-> Start from (3), which applies to bounded $f$ even though $\int|\operatorname{sgn}| = \infty$ ([[§27 Infinite Rod#^rem-27-1|Remark in §27★]]):
+> Start from (3), which applies to bounded $f$ even though $\int|\operatorname{sgn}| = \infty$ ([[§27 Infinite Rod#^rem-27-1|Remark in §27]]):
 >
 > $$
 > u(x, t) = \frac{1}{\sqrt{4\pi kt}}\int_{-\infty}^\infty \operatorname{sgn}(x')e^{-(x - x')^2/4kt}\,dx' . \qquad (13)
@@ -192,7 +192,7 @@ $$
 > u(x, t) = \frac{T_0}{\sqrt{4\pi kt}}\int_c^d e^{-(x' - x)^2/4kt}\,dx' = \frac{T_0}{\sqrt\pi}\int_{(c - x)/\sqrt{4kt}}^{(d - x)/\sqrt{4kt}}e^{-y^2}dy = \frac{T_0}{2}\Big[\operatorname{erf}\frac{d - x}{\sqrt{4kt}} - \operatorname{erf}\frac{c - x}{\sqrt{4kt}}\Big]
 > $$
 >
-> by (6). For the hot center section of [[§27 Infinite Rod#^ex-27-1|Example §27.1]] ($c = -a$, $d = a$), formula (8) of §27★ becomes, by oddness,
+> by (6). For the hot center section of [[§27 Infinite Rod#^ex-27-1|Example §27.1]] ($c = -a$, $d = a$), formula (8) of [[§27 Infinite Rod#^rem-27-1|§27]] becomes, by oddness,
 >
 > $$
 > u(x, t) = \frac{T_0}{2}\Big[\operatorname{erf}\frac{a - x}{\sqrt{4kt}} + \operatorname{erf}\frac{a + x}{\sqrt{4kt}}\Big] .
@@ -206,7 +206,7 @@ $$
 > u = \frac{T_0}{2}\Big[\operatorname{erf}\frac{b - x}{s} + \operatorname{erf}\frac{x}{s}\Big] - \frac{T_0}{2}\Big[\operatorname{erf}\frac{x + b}{s} - \operatorname{erf}\frac{x}{s}\Big] = T_0\Big[\operatorname{erf}\frac{x}{s} - \frac12\operatorname{erf}\frac{x - b}{s} - \frac12\operatorname{erf}\frac{x + b}{s}\Big] .
 > $$
 >
-> This closed form agrees numerically with the Fourier sine integral of Example §26.1 (for instance both give $0.1310T_0$ at $x = 1.5b$, $kt = 0.1b^2$), and it was used to draw the figures there and in §27★.
+> This closed form agrees numerically with the Fourier sine integral of Example §26.1 (for instance both give $0.1310T_0$ at $x = 1.5b$, $kt = 0.1b^2$), and it was used to draw the figures there and in §27.
 >
 > *Powers: 2.11, Example and Eq. (8); 2.10, Example*
 
