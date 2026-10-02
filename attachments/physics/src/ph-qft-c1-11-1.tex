@@ -1,0 +1,22 @@
+\begin{tikzpicture}[>=Stealth, font=\small,
+  st/.style={draw=figB, fill=figB!8, thick, rounded corners=3pt, align=center, text width=2.6cm, minimum height=1.25cm, inner sep=3pt},
+  eom/.style={draw=figO, fill=figO!10, thick, rounded corners=3pt, align=center, text width=2.6cm, minimum height=1.25cm, inner sep=3pt},
+  no/.style={draw=gray, dashed, rounded corners=3pt, align=center, text width=2.8cm, minimum height=1.0cm, inner sep=3pt},
+  lab/.style={font=\scriptsize\itshape, align=center, inner sep=1pt},
+  arr/.style={->, thick, figB!80!black}]
+  \node[st] (t) at (0,0) {transformation\\ $\phi\mapsto\phi'_{\alpha}$};
+  \node[st] (g) at (4.2,0) {1.\ generator\\ $\Delta\phi=\partial_{\alpha}\phi'\big|_{\alpha=0}$};
+  \node[st] (d) at (8.4,0) {2.\ substitute\\ $\delta\mathcal L$ to first order};
+  \node[st] (j) at (12.6,0) {3.\ test:\\ $\delta\mathcal L=\alpha\,\partial_{\mu}\mathcal J^{\mu}$\,?};
+  \node[st] (c) at (12.6,-3.0) {4.\ current\\ $j^{\mu}=\pi^{\mu}\Delta\phi-\mathcal J^{\mu}$\\ \scriptsize $\pi^{\mu}\equiv\partial\mathcal L/\partial(\partial_{\mu}\phi)$};
+  \node[eom] (k) at (8.4,-3.0) {5.\ check\\ $\partial_{\mu}j^{\mu}=0$ on shell};
+  \node[st] (q) at (4.2,-3.0) {6.\ charge\\ $Q=\int d^{3}x\,j^{0}$,\ $\dot Q=0$};
+  \node[no] (n) at (12.6,2.3) {not a divergence:\\ no symmetry,\\ no current};
+  \draw[arr] (t) -- node[lab, above=2pt]{needs the\\ family only} (g);
+  \draw[arr] (g) -- node[lab, above=2pt]{needs $\mathcal L$;\\ no equations} (d);
+  \draw[arr] (d) -- node[lab, above=2pt]{algebra} (j);
+  \draw[arr] (j) -- node[lab, left=4pt]{$\delta\mathcal L=0$: $\mathcal J=0$\\ divergence: read off $\mathcal J$} (c);
+  \draw[->, thick, gray, dashed] (j) -- (n);
+  \draw[->, thick, figO!90!black] (c) -- node[lab, below=3pt, text=figO!90!black]{equations\\ of motion} (k);
+  \draw[arr] (k) -- node[lab, below=3pt]{boundary\\ conditions} (q);
+\end{tikzpicture}
