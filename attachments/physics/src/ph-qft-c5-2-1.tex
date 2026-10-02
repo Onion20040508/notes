@@ -1,0 +1,13 @@
+% QFT §C5.2: the Dirac spinor in the chiral basis as two Weyl slots
+\begin{tikzpicture}[>=Stealth, font=\small]
+  \tikzset{slot/.style={draw, thick, rounded corners=3pt, minimum width=4.6cm, minimum height=1.25cm, align=center, fill=white}}
+  \node[slot, draw=figB] (L) at (0,1.6) {$\psi_L = (\psi_a)$, \ $(\tfrac12, 0)$\\[1pt] $\Lambda_L = e^{-i\boldsymbol\theta\cdot\boldsymbol\sigma/2 - \boldsymbol\eta\cdot\boldsymbol\sigma/2}$, \ $\gamma^5 = -1$};
+  \node[slot, draw=figR] (R) at (0,-1.6) {$\psi_R = (\psi^{\dot a})$, \ $(0, \tfrac12)$\\[1pt] $\Lambda_R = e^{-i\boldsymbol\theta\cdot\boldsymbol\sigma/2 + \boldsymbol\eta\cdot\boldsymbol\sigma/2}$, \ $\gamma^5 = +1$};
+  % gamma maps between slots
+  \draw[->, thick, figG] ([xshift=-0.9cm]R.north) -- node[left, font=\footnotesize, text=figG]{$\gamma^\mu$: $(\sigma^\mu)_{a\dot b}$} ([xshift=-0.9cm]L.south);
+  \draw[->, thick, figG] ([xshift=0.9cm]L.south) -- node[right, font=\footnotesize, text=figG]{$\gamma^\mu$: $(\bar\sigma^\mu)^{\dot a b}$} ([xshift=0.9cm]R.north);
+  % loops: within-slot action
+  \path (L) edge[->, thick, figB, loop right, min distance=1.1cm] node[right, font=\footnotesize, align=left]{$S^{\mu\nu}$, $\Lambda_{1/2}$, $\gamma^5$:\\ stay in the slot} (L);
+  \path (R) edge[->, thick, figR, loop right, min distance=1.1cm] node[right, font=\footnotesize, align=left]{$S^{\mu\nu}$, $\Lambda_{1/2}$, $\gamma^5$:\\ stay in the slot} (R);
+  \node[font=\footnotesize, align=center] at (0,3.0) {Dirac spinor $\psi = \binom{\psi_L}{\psi_R}$: \ $(\tfrac12, 0)\oplus(0, \tfrac12)$};
+\end{tikzpicture}
