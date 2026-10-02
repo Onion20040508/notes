@@ -92,7 +92,7 @@ The theory of a system of $n$ first-order linear equations $\mathbf{x}' = \mathb
 > W[\mathbf{x}^{(1)}, \mathbf{x}^{(2)}](t) = \begin{vmatrix} e^{3t} & e^{-t} \\ 2e^{3t} & -2e^{-t} \end{vmatrix} = -2e^{2t} - 2e^{2t} = -4e^{2t} ,
 > $$
 >
-> which is never zero. So the two solutions are independent at every $t$ (Theorem §29.2), they form a fundamental set (Definition §30.3), and by Theorem §30.2 every solution of (6) is of the form (7).
+> which is never zero. So the two solutions are independent at every $t$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|Theorem §29.2]]), they form a fundamental set (Definition §30.3), and by Theorem §30.2 every solution of (6) is of the form (7).
 >
 > **Abel's formula.** Here $p_{11} + p_{22} = 1 + 1 = 2$, and indeed $W = c\,e^{\int 2\,dt} = c\,e^{2t}$ with $c = -4$, as Theorem §30.3 predicts.
 >
@@ -241,7 +241,7 @@ The theory of a system of $n$ first-order linear equations $\mathbf{x}' = \mathb
 >
 > For $m \ne k$, the matrix in the $m$th term has two equal rows, so its determinant is $0$ ([[§21 Properties of Determinants#^cor-21-5|235 Cor. §21.5]]). Only $m = k$ survives, and $\det\mathbf{X}_k = p_{kk}\det\mathbf{X} = p_{kk}W$. Summing over $k$ gives (14).
 >
-> **Step 3: solve (14).** Equation (14) is the first-order linear equation $W' - \operatorname{tr}\mathbf{P}(t)\,W = 0$ with continuous coefficient. With the integrating factor $\mu(t) = \exp\big(-\int_{t_0}^t \operatorname{tr}\mathbf{P}(s)\,ds\big)$ ([[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2]]), $(\mu W)' = \mu(W' - \operatorname{tr}\mathbf{P}\,W) = 0$, so $\mu W$ is constant, equal to its value $W(t_0)$ at $t_0$:
+> **Step 3: solve (14).** Equation (14) is the first-order linear equation $W' - \operatorname{tr}\mathbf{P}(t)\,W = 0$ with continuous coefficient. With the integrating factor $\mu(t) = \exp\big(-\int_{t_0}^t \operatorname{tr}\mathbf{P}(s)\,ds\big)$ ([[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2]]), $(\mu W)' = \mu(W' - \operatorname{tr}\mathbf{P}\,W) = 0$, so $\mu W$ is constant (if the solutions are complex-valued, apply this to the real and imaginary parts of $\mu W$), equal to its value $W(t_0)$ at $t_0$:
 >
 > $$
 > W(t) = W(t_0)\exp\Big(\int_{t_0}^t \operatorname{tr}\mathbf{P}(s)\,ds\Big) .
