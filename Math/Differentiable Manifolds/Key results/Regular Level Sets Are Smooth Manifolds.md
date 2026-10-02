@@ -12,16 +12,17 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1: Implicit Function Theorem — Lee Theorem C.40]]
-- [[§7 The Regular Value Theorem#^def-7-2|Definition §7.2: Regular Point and Regular Value]]
 - [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3: Regular Value Theorem]]
 - [[§13 Differentiable Structures#^def-13-4|Definition §13.4: Smoothly Compatible Charts]]
 - [[§13 Differentiable Structures#^thm-13-5|Theorem §13.5: Every Atlas Lies in a Unique Maximal Atlas]]
+- [[§16 Manifolds in Euclidean Space#^ex-16-2|Example §16.2: A Surface in ℝ³]]
 - [[§16 Manifolds in Euclidean Space#^def-16-2|Definition §16.2: Parametrization]]
 
 ## Its proof uses (other subjects)
 - [[Multivariable Chain Rule]] (Multivariable Analysis)
 
 ## Used in (Differentiable Manifolds)
+- [[§16 Manifolds in Euclidean Space#^ex-16-2|Example §16.2: A Surface in ℝ³]]
 - [[§16 Manifolds in Euclidean Space#^lem-16-3|Lemma §16.3: Smooth Maps into and out of Regular Level Sets]]
 - [[§16 Manifolds in Euclidean Space#^prop-16-4|Proposition §16.4: The Three Circle Atlases Define One Smooth Structure]]
 - [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-19-1|Example §19.1: O(n) Is a Smooth Manifold of Dimension n(n-1)/2]]

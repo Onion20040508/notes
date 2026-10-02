@@ -23,6 +23,7 @@ tags: [topology, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
+- [[§2 Topological Manifolds#^prop-2-13|Proposition §2.13: Manifolds Are Locally Compact]]
 - [[§6 Open Quotients and Complex Projective Space#^prop-6-4|Proposition §6.4: ℂPⁿ is Hausdorff and Second Countable]]
 - [[§6 Open Quotients and Complex Projective Space#^prop-6-5|Proposition §6.5: ℂPⁿ Is Compact]]
 - [[§12 The Topology of G∕H and Real Grassmannians#^cor-12-8|Corollary §12.8: Grassmannians as Homogeneous Spaces]]

@@ -14,8 +14,8 @@ tags: [differentiable-manifolds, hub]
 - [[§15 Smooth Functions and Smooth Maps#^def-15-3|Definition §15.3: Smooth Map and Diffeomorphism]]
 - [[§24 Coordinate Derivations and the Basis Theorem#^def-24-1|Definition §24.1: Coordinate Functions of a Chart]]
 - [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|Theorem §24.5: Basis Theorem]]
-- [[§26 Tangent Vectors as Velocities of Curves#^prop-26-1|Proposition §26.1: Velocity in Coordinates]]
 - [[§26 Tangent Vectors as Velocities of Curves#^def-26-1|Definition §26.1: Smooth Curve and Its Velocity]]
+- [[§26 Tangent Vectors as Velocities of Curves#^prop-26-1|Proposition §26.1: Velocity in Coordinates]]
 
 ## Used in (Differentiable Manifolds)
 - [[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|Corollary §26.3: Velocity of a Composite — Computing Differentials by Curves]]

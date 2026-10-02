@@ -30,6 +30,7 @@ tags: [linear-algebra, hub]
 - [[§8 Topological Groups and Classical Matrix Groups#^def-8-8|Definition §8.8: Complex Matrix Groups]]
 - [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-19-3|Lemma §19.3: A One-Sided Inverse Suffices]]
 - [[§28 Local Diffeomorphisms and Submersions#^thm-28-7|Theorem §28.7: Local Normal Form for Submersions]]
+- [[§32 Immersions#^thm-32-1|Theorem §32.1: Local Normal Form for Immersions]]
 
 ## Connections
 - Characteristic polynomial: $\lambda$ is an eigenvalue iff $\det(\lambda I-T)=0$ ([[§34 Determinants#^ladr-9-51|9.51]]).

@@ -20,6 +20,9 @@ tags: [topology, hub]
 - [[§18 Countability Axioms#^thm-18-6|Theorem §18.6: Second-Countable Implies Dense Subset and Lindelöf]]
 - [[§19 Separation Axioms#^lem-19-2|Lemma §19.2: Closure Characterization]]
 
+## Used in (Differentiable Manifolds)
+- [[§33 Embeddings#^prop-33-4|Proposition §33.4: Proper Maps into Manifolds Are Closed]]
+
 ## Connections
 - **Intuition.** It makes precise the idea that the closure consists of the points reachable by limits from A ([[§7 Interior and Closure#^rem-7-2|Room to Wiggle and Reachable by Limits]]).
 - **Immediate consequences.** [[§7 Interior and Closure#^thm-7-4|Closure and Limit Points]] (§7.4) gives closure = A ∪ A′, and [[§7 Interior and Closure#^cor-7-5|Corollary §7.5]] says A is closed iff it contains its limit points. It also drives (1) ⇒ (2) in [[Equivalent Conditions for Continuity]].

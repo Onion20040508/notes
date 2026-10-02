@@ -28,9 +28,12 @@ tags: [topology, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
+- [[§2 Topological Manifolds#^prop-2-13|Proposition §2.13: Manifolds Are Locally Compact]]
 - [[§6 Open Quotients and Complex Projective Space#^prop-6-4|Proposition §6.4: ℂPⁿ is Hausdorff and Second Countable]]
 - [[§10 Group Actions and Orbit Spaces#^cor-10-4|Corollary §10.4: Compact Group and Compact Hausdorff Space]]
 - [[§13 Differentiable Structures#^prop-13-3|Proposition §13.3: The Circle Needs More Than One Chart]]
+- [[§33 Embeddings#^prop-33-4|Proposition §33.4: Proper Maps into Manifolds Are Closed]]
+- [[§33 Embeddings#^cor-33-6|Corollary §33.6: Injective Immersions of Compact Manifolds]]
 
 ## Connections
 - **Technique.** First separate x from each point of Y, then pass to a finite subcover. The same local-then-global argument, applied twice, proves [[§20 Normal Spaces#^thm-20-2|Every Compact Hausdorff Space is Normal]] ([[§20 Normal Spaces#^rem-20-4|The Two-Stage Pattern]]).

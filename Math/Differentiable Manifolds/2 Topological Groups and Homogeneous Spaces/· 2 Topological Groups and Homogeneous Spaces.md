@@ -28,7 +28,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§10 Group Actions and Orbit Spaces#^lem-10-2|Lemma §10.2: Left Translations Are Homeomorphisms]]: 18 later results
-- [[§8 Topological Groups and Classical Matrix Groups#^prop-8-3|Proposition §8.3: Determinant Is Continuous]]: 18 later results
-- [[§8 Topological Groups and Classical Matrix Groups#^prop-8-7|Proposition §8.7: Equivalent Description of O(n,ℝ)]]: 16 later results
-- [[§10 Group Actions and Orbit Spaces#^prop-10-1|Proposition §10.1: Orbits Partition X]]: 15 later results
+- [[§10 Group Actions and Orbit Spaces#^lem-10-2|Lemma §10.2: Left Translations Are Homeomorphisms]]: 21 later results
+- [[§8 Topological Groups and Classical Matrix Groups#^prop-8-3|Proposition §8.3: Determinant Is Continuous]]: 21 later results
+- [[§8 Topological Groups and Classical Matrix Groups#^prop-8-7|Proposition §8.7: Equivalent Description of O(n,ℝ)]]: 19 later results
+- [[§10 Group Actions and Orbit Spaces#^prop-10-1|Proposition §10.1: Orbits Partition X]]: 18 later results

@@ -21,6 +21,7 @@ tags: [multivariable-analysis, hub]
 ## Used in (Differentiable Manifolds)
 - [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1: Implicit Function Theorem — Lee Theorem C.40]]
 - [[§28 Local Diffeomorphisms and Submersions#^thm-28-1|Theorem §28.1: Inverse Function Theorem]]
+- [[§32 Immersions#^thm-32-1|Theorem §32.1: Local Normal Form for Immersions]]
 
 ## Connections
 - **Proof idea.** Apply the [[§12 The Implicit Function Theorem#^thm-12-2|Implicit Function Theorem]] twice: first solve φ(x, y) = ũ for x, then solve ψ(X(y, ũ), y) = ṽ for y. The second step needs det J / φ_x ≠ 0 ([[§13 The Inverse Function Theorem#^rem-13-4|Tracking IFT Hypotheses]]). The [[Multivariable Chain Rule]] gives the Jacobian of the inverse.

@@ -11,8 +11,8 @@ tags: [differentiable-manifolds, hub]
 - [[§25 The Differential in Coordinates#^thm-25-2|Theorem §25.2: The Matrix of the Differential]], in [[§25 The Differential in Coordinates]]
 
 ## Its proof uses
-- [[§23 Derivations and the Abstract Tangent Space#^def-23-5|Definition §23.5: Pushforward — the Differential]]
 - [[§23 Derivations and the Abstract Tangent Space#^prop-23-5|Proposition §23.5: The Differential Is a Linear Map of Abstract Tangent Spaces]]
+- [[§23 Derivations and the Abstract Tangent Space#^def-23-5|Definition §23.5: Pushforward — the Differential]]
 - [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|Theorem §24.5: Basis Theorem]]
 - [[§25 The Differential in Coordinates#^prop-25-1|Proposition §25.1: Partial Derivatives Upstairs and Downstairs]]
 
@@ -31,6 +31,7 @@ tags: [differentiable-manifolds, hub]
 - [[§28 Local Diffeomorphisms and Submersions#^cor-28-8|Corollary §28.8: Being a Submersion Is an Open Condition]]
 - [[§29 Submanifolds#^prop-29-4|Proposition §29.4: Tangent Spaces of a Submanifold]]
 - [[§29 Submanifolds#^prop-29-8|Proposition §29.8: The Old and New Versions Agree]]
+- [[§32 Immersions#^thm-32-1|Theorem §32.1: Local Normal Form for Immersions]]
 
 ## Connections
 - **Used for.** Every local computation with differentials: the chain rule and change of coordinates in matrices ([[§25 The Differential in Coordinates#^cor-25-3|§25.3]], [[§25 The Differential in Coordinates#^cor-25-4|§25.4]]), agreement with the Jacobian on ℝⁿ ([[§25 The Differential in Coordinates#^prop-25-5|§25.5]]), regular values inside one chart ([[§25 The Differential in Coordinates#^prop-25-7|§25.7]]), the [[Local Diffeomorphism Criterion]], the [[Submersion Normal Form]] and the transition maps of TM ([[Tangent Bundle Is a Smooth Manifold]]).

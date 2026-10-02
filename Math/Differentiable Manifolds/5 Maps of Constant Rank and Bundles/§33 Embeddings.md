@@ -16,7 +16,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ## Embeddings and Their Images
 
 > [!definition] Definition §33.1: Embedding
-> A [[§15 Smooth Functions and Smooth Maps#^def-15-3|smooth map]] $F : M \to N$ is an **embedding** if it is an [[§32 Immersions#^def-32-1|immersion]] (Def. §32.1) and, as a map onto its image, $F : M \to F(M)$ is a [[§9 Continuous Functions#^def-9-2|homeomorphism]] (590 Def. §9.2), $F(M)$ carrying the [[§3 Subspaces and Products#^def-3-1|subspace topology]] of $N$ (Def. §3.1). Injectivity is part of being a homeomorphism; Uribe wrote “(injective) immersion” and called the word redundant.
+> A smooth map ([[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]]) $F : M \to N$ is an **embedding** if it is an immersion ([[§32 Immersions#^def-32-1|Def. §32.1]]) and, as a map onto its image, $F : M \to F(M)$ is a homeomorphism ([[§9 Continuous Functions#^def-9-2|590 Def. §9.2]]), $F(M)$ carrying the subspace topology ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]]) of $N$. Injectivity is part of being a homeomorphism; Uribe wrote “(injective) immersion” and called the word redundant.
 >
 > *Lee: Ch. 4, Embeddings*
 
@@ -32,14 +32,14 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 An embedding factors through its image as a homeomorphism followed by the inclusion — “you're taking the manifold $M$ and you're putting it inside $N$.” The figure-eight of Lee's Example 4.19 ([[§32 Immersions#^ex-32-2|§32]]) is an injective immersion for which the top arrow is not a homeomorphism.
 
 > [!example] Example §33.1: The Irrational Line on the Torus
-> For $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$, $F(t) = [t, \alpha t]$, is an injective [[§32 Immersions#^def-32-1|immersion]] (Def. §32.1) whose image is dense in $T^2$. Its image is not a regular [[§29 Submanifolds#^def-29-1|submanifold]] of $T^2$ (Def. §29.1), so $F$ is not an [[§33 Embeddings#^def-33-1|embedding]] (Def. §33.1).
+> For $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$, $F(t) = [t, \alpha t]$, is an injective immersion ([[§32 Immersions#^def-32-1|Def. §32.1]]) whose image is dense in $T^2$. Its image is not a regular submanifold ([[§29 Submanifolds#^def-29-1|Def. §29.1]]) of $T^2$, so $F$ is not an embedding ([[§33 Embeddings#^def-33-1|Def. §33.1]]).
 >
 > *Lee: Example 4.20*
 
 ^ex-33-1
 
 > [!remark]- Connections
-> - The torus as a quotient of the square in 590: [[§12 Quotient Topology#^ex-12-3|590 Ex. §12.3]]; the covering $\mathbb{R}^2 \to T^2$ that $F$ is the image of a line under: [[§24 Covering Spaces#^ex-24-3|590 Ex. §24.3]]; all the torus's uses: [[Torus|590 Torus]].
+> - The torus as a quotient of the square in 590: [[§12 Quotient Topology#^ex-12-3|590 Ex. §12.3]]; the covering $\mathbb{R}^2 \to T^2$, through which $F$ factors: [[§24 Covering Spaces#^ex-24-3|590 Ex. §24.3]]; all the torus's uses: [[Torus|590 Torus]].
 > - Locally the image is still a submanifold: [[§32 Immersions#^cor-32-2|§32.2]].
 
 *Status.* From the homework, where these properties are proved; given in lecture as “a very important category: non-examples.” “You're wrapping a line, but the slope of the line is irrational, so it never closes … like one of those spirographs.” The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is “a very nice submanifold.” But “it's local in the domain”, while being a submanifold is a statement about the whole image. Points outside $U$ “contribute segments like this, and they're going to be dense. No matter how you shrink this $V$, you won't be able to isolate only the yellow guy.”
@@ -48,7 +48,7 @@ An embedding factors through its image as a homeomorphism followed by the inclus
 *The irrational line, drawn here with $\alpha = (\sqrt5 - 1)/2$. Left: nine turns of $F(\mathbb{R})$ in the square, whose opposite sides are identified; the orange piece is $F(U)$, and two other strands already cross the neighbourhood $V$. Right: a disc around $F(p)$ about $4.6$ times smaller, and the first 400 turns of the curve, which cross it in 34 strands. Shrinking further only takes more turns: every neighbourhood of $F(p)$ meets infinitely many strands.*
 
 > [!theorem] Theorem §33.1: The Image of an Embedding Is a Submanifold
-> If $F : M \to N$ is an [[§33 Embeddings#^def-33-1|embedding]] (Def. §33.1), with $\dim M = m$ and $\dim N = n$, then $F(M)$ is a regular [[§29 Submanifolds#^def-29-1|submanifold]] of $N$ of codimension $n - m$ (Def. §29.1).
+> If $F : M \to N$ is an embedding ([[§33 Embeddings#^def-33-1|Def. §33.1]]), with $\dim M = m$ and $\dim N = n$, then $F(M)$ is a regular submanifold ([[§29 Submanifolds#^def-29-1|Def. §29.1]]) of $N$ of codimension $n - m$.
 >
 > *Lee: Proposition 5.2*
 
@@ -99,14 +99,14 @@ An embedding factors through its image as a homeomorphism followed by the inclus
 **Transcription note.** Page 39 of the handwritten notes writes the target as $F(M) \cap V = \{0 = y^{n-m+1} = \cdots = y^m\}$; the vanishing coordinates are the last $n - m$ of them, $y^{m+1}, \ldots, y^n$, as the lecture said.
 
 > [!remark] Remark: Where Is Injectivity Used?
-> In lecture the last equality caused trouble, and a discussion. Uribe first located the use of injectivity there; a student pointed out that $(*)$ concerns only $F(U)$, and that the proof seems to need only that $F$ be an [[§32 Immersions#^def-32-1|immersion]] which is [[§4 Quotient Spaces and Open Maps#^def-4-2|open]] onto its image. Another student added covering-type examples: maps that are not injective but whose images are manifolds, such as $\mathbb{R} \to S^1$, $t \mapsto (\cos t, \sin t)$ ([[§28 Local Diffeomorphisms and Submersions#^ex-28-1|Ex. §28.1]]), or the two-to-one map $S^2 \to \mathbb{RP}^2$ ([[§28 Local Diffeomorphisms and Submersions#^ex-28-2|Ex. §28.2]]). Uribe agreed — “I don't think we're using injectivity” — and promised “a definite conclusion by email.”
+> In lecture the last equality caused trouble, and a discussion. Uribe first located the use of injectivity there; a student pointed out that $(*)$ concerns only $F(U)$, and that the proof seems to need only that $F$ be an immersion ([[§32 Immersions#^def-32-1|Def. §32.1]]) which is open ([[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]]) onto its image. Another student added covering-type examples: maps that are not injective but whose images are manifolds, such as $\mathbb{R} \to S^1$, $t \mapsto (\cos t, \sin t)$ ([[§28 Local Diffeomorphisms and Submersions#^ex-28-1|Ex. §28.1]]), or the two-to-one map $S^2 \to \mathbb{RP}^2$ ([[§28 Local Diffeomorphisms and Submersions#^ex-28-2|Ex. §28.2]]). Uribe agreed — “I don't think we're using injectivity” — and promised “a definite conclusion by email.”
 >
 > *The notes' reading, pending that email.* The students are right. The proof above uses exactly two things: the normal form (the immersion hypothesis), and that $F(U)$ is open in $F(M)$ for the $U$ of the normal form. With the completion via [[§32 Immersions#^cor-32-2|Corollary §32.2]] nothing else enters, and injectivity in particular is never used. So the proof gives the next proposition.
 
 ^rem-33-1
 
 > [!theorem] Proposition §33.2: Immersions That Are Open onto Their Images
-> Let $F : M \to N$ be an [[§32 Immersions#^def-32-1|immersion]] (Def. §32.1) such that $F : M \to F(M)$ is an [[§4 Quotient Spaces and Open Maps#^def-4-2|open map]] (Def. §4.2), $F(M)$ carrying the [[§3 Subspaces and Products#^def-3-1|subspace topology]] (Def. §3.1). Then $F(M)$ is a regular [[§29 Submanifolds#^def-29-1|submanifold]] of $N$ of codimension $n - m$ (Def. §29.1).
+> Let $F : M \to N$ be an immersion ([[§32 Immersions#^def-32-1|Def. §32.1]]) such that $F : M \to F(M)$ is an open map ([[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]]), $F(M)$ carrying the subspace topology ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]]). Then $F(M)$ is a regular submanifold ([[§29 Submanifolds#^def-29-1|Def. §29.1]]) of $N$ of codimension $n - m$.
 
 ^prop-33-2
 
@@ -118,7 +118,7 @@ An embedding factors through its image as a homeomorphism followed by the inclus
 *Uses:* [[§33 Embeddings#^pf-33-1|proof of §33.1]], [[§32 Immersions#^thm-32-1|§32.1]], [[§32 Immersions#^cor-32-2|§32.2]], [[§29 Submanifolds#^def-29-1|Def. §29.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§28 Local Diffeomorphisms and Submersions#^ex-28-1|Ex. §28.1]], [[§28 Local Diffeomorphisms and Submersions#^cor-28-9|§28.9]], [[§32 Immersions#^ex-32-2|Ex. §32.2]]
 
 > [!theorem] Corollary §33.3: An Embedding Is a Diffeomorphism onto Its Image
-> If $F : M \to N$ is an [[§33 Embeddings#^def-33-1|embedding]] (Def. §33.1), then $F : M \to F(M)$ is a [[§15 Smooth Functions and Smooth Maps#^def-15-3|diffeomorphism]] (Def. §15.3), $F(M)$ carrying its [[§29 Submanifolds#^prop-29-2|induced smooth structure]] as a submanifold (§29.2).
+> If $F : M \to N$ is an embedding ([[§33 Embeddings#^def-33-1|Def. §33.1]]), then $F : M \to F(M)$ is a diffeomorphism ([[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]]), $F(M)$ carrying its induced smooth structure as a submanifold ([[§29 Submanifolds#^prop-29-2|§29.2]]).
 
 ^cor-33-3
 
@@ -134,7 +134,7 @@ An embedding factors through its image as a homeomorphism followed by the inclus
 *Lecture 14. When is an injective immersion an embedding? The homeomorphism condition is point-set topology, and a convenient sufficient condition is properness — the same hypothesis as in Ehresmann's theorem ([[§30 Fibrations#^thm-30-3|Theorem §30.3]]).*
 
 > [!definition] Definition §33.2: Proper Map
-> A continuous map $F : X \to Y$ is **proper** if $F^{-1}(K)$ is [[§15 Compact Spaces#^def-15-2|compact]] (590 Def. §15.2) for every compact $K \subseteq Y$.
+> A continuous map $F : X \to Y$ is **proper** if $F^{-1}(K)$ is compact ([[§15 Compact Spaces#^def-15-2|590 Def. §15.2]]) for every compact $K \subseteq Y$.
 >
 > *Lee: App. A, Proper Maps*
 
@@ -145,7 +145,7 @@ An embedding factors through its image as a homeomorphism followed by the inclus
 > - The properness hypothesis of [[§30 Fibrations#^thm-30-3|Ehresmann's theorem, §30.3]].
 
 > [!theorem] Proposition §33.4: Proper Maps into Manifolds Are Closed
-> Let $F : M \to N$ be a continuous [[§33 Embeddings#^def-33-2|proper]] map (Def. §33.2), $N$ a [[§2 Topological Manifolds#^def-2-2|topological manifold]] (Def. §2.2). Then $F$ is [[§12 Quotient Topology#^def-12-4|closed]] (590 Def. §12.4): $F(C)$ is closed in $N$ for every closed $C \subseteq M$.
+> Let $F : M \to N$ be a continuous proper map ([[§33 Embeddings#^def-33-2|Def. §33.2]]), $N$ a topological manifold ([[§2 Topological Manifolds#^def-2-2|Def. §2.2]]). Then $F$ is closed ([[§12 Quotient Topology#^def-12-4|590 Def. §12.4]]): $F(C)$ is closed in $N$ for every closed $C \subseteq M$.
 >
 > *Lee: Theorem A.57*
 
@@ -169,7 +169,7 @@ An embedding factors through its image as a homeomorphism followed by the inclus
 > - Local compactness in 590: [[§17 Local Compactness#^def-17-1|590 Def. §17.1]], [[§17 Local Compactness#^thm-17-6|590 §17.6]].
 
 > [!theorem] Theorem §33.5: Injective Proper Immersions Are Embeddings
-> An injective [[§33 Embeddings#^def-33-2|proper]] (Def. §33.2) [[§32 Immersions#^def-32-1|immersion]] (Def. §32.1) $F : M \to N$ is an [[§33 Embeddings#^def-33-1|embedding]] (Def. §33.1).
+> An injective proper ([[§33 Embeddings#^def-33-2|Def. §33.2]]) immersion ([[§32 Immersions#^def-32-1|Def. §32.1]]) $F : M \to N$ is an embedding ([[§33 Embeddings#^def-33-1|Def. §33.1]]).
 >
 > *Lee: Proposition 4.22*
 
@@ -183,7 +183,7 @@ An embedding factors through its image as a homeomorphism followed by the inclus
 *Uses:* [[§33 Embeddings#^def-33-1|Def. §33.1]], [[§33 Embeddings#^prop-33-4|§33.4]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§6 Closed Sets and Limit Points#^thm-6-2|590 §6.2]], [[§9 Continuous Functions#^thm-9-1|590 §9.1]]
 
 > [!theorem] Corollary §33.6: Injective Immersions of Compact Manifolds
-> If $M$ is [[§15 Compact Spaces#^def-15-2|compact]] (590 Def. §15.2), every injective [[§32 Immersions#^def-32-1|immersion]] (Def. §32.1) $F : M \to N$ is an [[§33 Embeddings#^def-33-1|embedding]] (Def. §33.1).
+> If $M$ is compact ([[§15 Compact Spaces#^def-15-2|590 Def. §15.2]]), every injective immersion ([[§32 Immersions#^def-32-1|Def. §32.1]]) $F : M \to N$ is an embedding ([[§33 Embeddings#^def-33-1|Def. §33.1]]).
 >
 > *Lee: Proposition 4.22*
 

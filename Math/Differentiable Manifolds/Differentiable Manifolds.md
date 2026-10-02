@@ -11,15 +11,15 @@ tags: [subject, differentiable-manifolds]
 ---
 # Differentiable Manifolds
 
-MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§32 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
+MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§33 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
 
 ## Roadmap
-These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the *equations* thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{U}(n)$. Along the *quotients* thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters 1 and 2 develop the two threads side by side, and in Chapters 3 and 4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the *geometric* stage). A manifold built by quotients has none, and needs the *abstract* tangent space of derivations. Between them sits a *linear* stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first ([[§28 Local Diffeomorphisms and Submersions|§28]]): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds ([[§29 Submanifolds|§29]]); the submersions that are locally products are the fibrations ([[§30 Fibrations|§30]]); and the tangent spaces themselves assemble into one, the tangent bundle ([[§31 The Tangent Bundle|§31]]). Immersions, the maps dual to submersions, begin a new arc ([[§32 Immersions|§32]]).
+These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the *equations* thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{U}(n)$. Along the *quotients* thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters 1 and 2 develop the two threads side by side, and in Chapters 3 and 4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the *geometric* stage). A manifold built by quotients has none, and needs the *abstract* tangent space of derivations. Between them sits a *linear* stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first ([[§28 Local Diffeomorphisms and Submersions|§28]]): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds ([[§29 Submanifolds|§29]]); the submersions that are locally products are the fibrations ([[§30 Fibrations|§30]]); and the tangent spaces themselves assemble into one, the tangent bundle ([[§31 The Tangent Bundle|§31]]). Immersions, the maps dual to submersions, begin a new arc ([[§32 Immersions|§32]]), which leads to embeddings, the immersions whose images are submanifolds ([[§33 Embeddings|§33]]).
 
 ![[m591-0-1.svg]]
 *The roadmap: the equations thread (teal), the quotients thread (violet), the linear stage (orange), and the bundles (blue); arrow labels are the bridges.*
 
-The labels on the arrows are the bridges. The regular value theorem ([[§7 The Regular Value Theorem|§7]]) turns equations into manifolds, and graph charts ([[Regular Level Sets Are Smooth Manifolds|§16.2]]) make them smooth. The differential between vector spaces ([[§18 The Differential of a Map Between Vector Spaces|§18]]) gives $T^{\mathrm{geo}}_pM = \ker F'(p)$ ([[Geometric Tangent Space Is the Kernel of the Jacobian|§20.3]]). For the quotient-built manifolds, atlases are written down by hand ([[§14 Projective Spaces as Smooth Manifolds|§14]]), and only the abstract tangent space reaches them. The two tangent spaces are identified by $v \mapsto D_v$ ([[Ambient and Abstract Tangent Spaces Agree|§24.6]]); the abstract differential agrees with the Jacobian ([[§25 The Differential in Coordinates#^prop-25-5|§25.5]]), and on any manifold the matrix of $F_{*p}$ in coordinates *is* the Jacobian of the coordinate representation ([[Matrix of the Differential|§25.2]]), because partial derivatives upstairs are defined downstairs ([[§25 The Differential in Coordinates#^prop-25-1|§25.1]]); and every abstract tangent vector is a velocity after all ([[Every Tangent Vector Is a Velocity|§26.2]]). At the bottom, the submersion normal form ([[Submersion Normal Form|§28.7]]) proves the regular value theorem for manifolds ([[Regular Value Theorem for Manifolds|§29.6]]), where the equations thread ends; fibrations and the tangent and cotangent spaces follow as bundles ([[§30 Fibrations|§30]]–[[§31 The Tangent Bundle|§31]]); and immersions, whose normal form is the twin of the submersion normal form, have images that are locally submanifolds ([[§32 Immersions|§32]]). Each section opens with a line placing it on this map.
+The labels on the arrows are the bridges. The regular value theorem ([[§7 The Regular Value Theorem|§7]]) turns equations into manifolds, and graph charts ([[Regular Level Sets Are Smooth Manifolds|§16.2]]) make them smooth. The differential between vector spaces ([[§18 The Differential of a Map Between Vector Spaces|§18]]) gives $T^{\mathrm{geo}}_pM = \ker F'(p)$ ([[Geometric Tangent Space Is the Kernel of the Jacobian|§20.3]]). For the quotient-built manifolds, atlases are written down by hand ([[§14 Projective Spaces as Smooth Manifolds|§14]]), and only the abstract tangent space reaches them. The two tangent spaces are identified by $v \mapsto D_v$ ([[Ambient and Abstract Tangent Spaces Agree|§24.6]]); the abstract differential agrees with the Jacobian ([[§25 The Differential in Coordinates#^prop-25-5|§25.5]]), and on any manifold the matrix of $F_{*p}$ in coordinates *is* the Jacobian of the coordinate representation ([[Matrix of the Differential|§25.2]]), because partial derivatives upstairs are defined downstairs ([[§25 The Differential in Coordinates#^prop-25-1|§25.1]]); and every abstract tangent vector is a velocity after all ([[Every Tangent Vector Is a Velocity|§26.2]]). At the bottom, the submersion normal form ([[Submersion Normal Form|§28.7]]) proves the regular value theorem for manifolds ([[Regular Value Theorem for Manifolds|§29.6]]), where the equations thread ends; fibrations and the tangent and cotangent spaces follow as bundles ([[§30 Fibrations|§30]]–[[§31 The Tangent Bundle|§31]]); and immersions, whose normal form is the twin of the submersion normal form, have images that are locally submanifolds ([[§32 Immersions|§32]]), and globally so when they are embeddings ([[§33 Embeddings|§33]]). Each section opens with a line placing it on this map.
 
 ## How the chapters build on each other
 Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved (forward references in the notes). Dashed arrows from other subjects: citations of their results, labelled with the number (only arrows with 2 or more citations are drawn).
@@ -52,18 +52,18 @@ graph TD
   X3 -.->|18| C2
   X3 -.->|10| C3
   X3 -.->|14| C4
-  X3 -.->|7| C5
+  X3 -.->|9| C5
   X2 -.->|5| C1
   X2 -.->|6| C2
   X2 -.->|14| C3
   X2 -.->|11| C4
-  X2 -.->|4| C5
+  X2 -.->|5| C5
   X5 -.->|2| C4
-  X1 -.->|59| C1
+  X1 -.->|65| C1
   X1 -.->|16| C2
   X1 -.->|21| C3
   X1 -.->|3| C4
-  X1 -.->|10| C5
+  X1 -.->|23| C5
 ```
 
 ## Chapters
@@ -106,6 +106,8 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields (defined,
 - [[Regular Value Theorem for Manifolds]] (§29.6)
 - [[Tangent Bundle Is a Smooth Manifold]] (§31.2)
 - [[Immersion Normal Form]] (§32.1)
+- [[Images of Embeddings Are Submanifolds]] (§33.1)
+- [[Injective Proper Immersions Are Embeddings]] (§33.5)
 
 ## Summaries
 - [[Differentiable Manifolds Lee Concordance]]: notation, where the course's route differs from Lee's, the chapter map, and every Lee result cited in these notes with its counterpart here.
@@ -116,17 +118,17 @@ The results from other subjects that this course's proofs and definitions cite m
 
 **[[Topology]]**
 - [[§9 Continuous Functions#^thm-9-4|Theorem §9.4: Rules for Continuous Functions]] (10)
-- [[Heine–Borel Theorem]] (8)
-- [[Continuous Image of a Compact Space is Compact]] (6)
+- [[Heine–Borel Theorem]] (9)
+- [[Continuous Image of a Compact Space is Compact]] (7)
+- [[Compact Subspace of a Hausdorff Space is Closed]] (5)
 - [[§10 Product Topology on Arbitrary Products#^thm-10-1|Theorem §10.1: Continuity into Product Spaces]] (5)
 - [[§9 Continuous Functions#^def-9-1|Definition §9.1: Continuous Function]] (4)
 - [[§9 Continuous Functions#^prop-9-3|Proposition §9.3: Homeomorphisms Restrict to Subspaces]] (4)
 - [[Bijection from Compact to Hausdorff is a Homeomorphism]] (4)
-- [[Compact Subspace of a Hausdorff Space is Closed]] (4)
 
 **[[Multivariable Analysis]]**
 - [[Multivariable Chain Rule]] (28)
-- [[Inverse Function Theorem (several variables)]] (2)
+- [[Inverse Function Theorem (several variables)]] (3)
 - [[§3 Continuity and Limits of Functions#^thm-3-2|Theorem §3.2: Product of Continuous Functions]] (2)
 - [[§6 Differentiability#^thm-6-4|Theorem §6.4: Product Rule for Partial Derivatives]] (2)
 - [[Implicit Function Theorem]] (1)
@@ -137,9 +139,9 @@ The results from other subjects that this course's proofs and definitions cite m
 **[[Linear Algebra]]**
 - [[Fundamental theorem of linear maps]] (7)
 - [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (6)
-- [[Invertible ⟺ nonzero determinant]] (5)
+- [[Invertible ⟺ nonzero determinant]] (6)
+- [[§9 Matrices#^ladr-3-57|Theorem 3.57: Column rank equals row rank]] (4)
 - [[§34 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (4)
-- [[§9 Matrices#^ladr-3-57|Theorem 3.57: Column rank equals row rank]] (3)
 - [[Linear map lemma]] (3)
 - [[§34 Determinants#^ladr-9-46|Theorem 9.46: Formula for determinant of a matrix]] (2)
 - [[§34 Determinants#^ladr-9-56|Theorem 9.56: Determinant of transpose, dual, or adjoint]] (2)

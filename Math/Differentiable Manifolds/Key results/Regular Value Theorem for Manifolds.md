@@ -17,8 +17,8 @@ tags: [differentiable-manifolds, hub]
 - [[§26 Tangent Vectors as Velocities of Curves#^thm-26-4|Theorem §26.4: The Tangent Space of a Product]]
 - [[§28 Local Diffeomorphisms and Submersions#^def-28-3|Definition §28.3: Regular Points and Critical Points]]
 - [[§28 Local Diffeomorphisms and Submersions#^thm-28-7|Theorem §28.7: Local Normal Form for Submersions]]
-- [[§29 Submanifolds#^def-29-1|Definition §29.1: Submanifold and Adapted Charts]]
 - [[§29 Submanifolds#^prop-29-1|Proposition §29.1: Two Observations on Adapted Charts]]
+- [[§29 Submanifolds#^def-29-1|Definition §29.1: Submanifold and Adapted Charts]]
 - [[§29 Submanifolds#^prop-29-4|Proposition §29.4: Tangent Spaces of a Submanifold]]
 
 ## Its proof uses (other subjects)

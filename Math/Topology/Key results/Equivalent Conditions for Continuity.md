@@ -20,6 +20,7 @@ tags: [topology, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§8 Topological Groups and Classical Matrix Groups#^def-8-5|Definition §8.5: Special Linear Group]]
+- [[§33 Embeddings#^thm-33-5|Theorem §33.5: Injective Proper Immersions Are Embeddings]]
 
 ## Connections
 - **Generalizes ε-δ.** Condition (4) is the topological form of the ε-δ definition ([[§9 Continuous Functions#^ex-9-1|Example §9.1]]; MATH 451: [[§17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]]). It is recovered for metric spaces in [[§11 Metric Topology#^thm-11-7|ε-δ Characterization of Continuity]] (§11.7).

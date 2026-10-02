@@ -28,6 +28,7 @@ tags: [differentiable-manifolds, hub]
 - [[§28 Local Diffeomorphisms and Submersions#^cor-28-8|Corollary §28.8: Being a Submersion Is an Open Condition]]
 - [[§28 Local Diffeomorphisms and Submersions#^cor-28-9|Corollary §28.9: Submersions Are Open Maps]]
 - [[§29 Submanifolds#^thm-29-6|Theorem §29.6: The Regular Value Theorem for Manifolds]]
+- [[§32 Immersions#^thm-32-1|Theorem §32.1: Local Normal Form for Immersions]]
 
 ## Connections
 - **Used for.** Being a submersion is an open condition ([[§28 Local Diffeomorphisms and Submersions#^cor-28-8|§28.8]]), and submersions are open maps ([[§28 Local Diffeomorphisms and Submersions#^cor-28-9|§28.9]]), hence so are fibrations ([[§30 Fibrations#^prop-30-1|§30.1]]). It proves the [[Regular Value Theorem for Manifolds]]: near a point of the level set F is a projection, so the level set is a coordinate slice.

@@ -10,8 +10,8 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (1)
-**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (53), [[· 3 Smooth Structures|3 Smooth Structures]] (40), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (15), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (14)
-**Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (59), [[Multivariable Analysis]] (5)
+**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (53), [[· 3 Smooth Structures|3 Smooth Structures]] (41), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (15), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (26)
+**Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (65), [[Multivariable Analysis]] (5)
 
 ## Sections
 - [[§1 Point-Set Topology Review]]
@@ -33,7 +33,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 111 later results
-- [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]: 107 later results
-- [[§3 Subspaces and Products#^prop-3-9|Proposition §3.9: Coarsest Topology with Continuous Projections]]: 107 later results
-- [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10: Universal Property of the Product]]: 107 later results
+- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 115 later results
+- [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]: 111 later results
+- [[§3 Subspaces and Products#^prop-3-9|Proposition §3.9: Coarsest Topology with Continuous Projections]]: 111 later results
+- [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10: Universal Property of the Product]]: 111 later results

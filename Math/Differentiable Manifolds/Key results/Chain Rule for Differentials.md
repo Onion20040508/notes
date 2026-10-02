@@ -23,6 +23,7 @@ tags: [differentiable-manifolds, hub]
 - [[§28 Local Diffeomorphisms and Submersions#^thm-28-2|Theorem §28.2: Local Diffeomorphisms Are Detected by the Differential]]
 - [[§29 Submanifolds#^thm-29-6|Theorem §29.6: The Regular Value Theorem for Manifolds]]
 - [[§30 Fibrations#^prop-30-1|Proposition §30.1: Fibres and Fibrations]]
+- [[§33 Embeddings#^cor-33-3|Corollary §33.3: An Embedding Is a Diffeomorphism onto Its Image]]
 
 ## Connections
 - **Used for.** Diffeomorphisms induce isomorphisms of tangent spaces ([[§23 Derivations and the Abstract Tangent Space#^cor-23-7|§23.7]]), so a chart identifies T_pM with a tangent space of an open subset of ℝⁿ ([[§23 Derivations and the Abstract Tangent Space#^prop-23-9|§23.9]]); this is how the [[Basis Theorem for Tangent Spaces]] is proved. It also gives the chain rule and the change of coordinates in matrices ([[§25 The Differential in Coordinates#^cor-25-3|§25.3]], [[§25 The Differential in Coordinates#^cor-25-4|§25.4]]), differentials computed by curves ([[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|§26.3]]) and the [[Local Diffeomorphism Criterion]].

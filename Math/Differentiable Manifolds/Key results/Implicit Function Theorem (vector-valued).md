@@ -23,6 +23,7 @@ tags: [differentiable-manifolds, hub]
 - [[§7 The Regular Value Theorem#^cor-7-4|Corollary §7.4: Open Domains and Arbitrary Values]]
 - [[§16 Manifolds in Euclidean Space#^ex-16-1|Example §16.1: The Circle in Three Descriptions]]
 - [[§16 Manifolds in Euclidean Space#^thm-16-1|Theorem §16.1: The Two Descriptions Agree]]
+- [[§16 Manifolds in Euclidean Space#^ex-16-2|Example §16.2: A Surface in ℝ³]]
 - [[§16 Manifolds in Euclidean Space#^prop-16-2|Proposition §16.2: Regular Level Sets Are Smooth Manifolds]]
 
 ## Connections
