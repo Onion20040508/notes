@@ -283,4 +283,4 @@ graph TD
 ```
 
 ## Planned
-No chapters planned. Not covered at level C: the general (Racah) formula for Clebsch–Gordan coefficients, Young tableaux, generalized measurements (POVMs) and a proof of spin–statistics; quantized fields continue in [[Quantum Field Theory I]].
+No chapters planned. Not covered at level C: the general (Racah) formula for Clebsch–Gordan coefficients, Young tableaux, generalized measurements (POVMs) and a proof of spin–statistics; quantized fields continue in [[Quantum Field Theory]].

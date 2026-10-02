@@ -44,7 +44,7 @@ Physics subjects are built in levels: **A** introductory, **B** upper-level, **C
 | [Thermal and Statistical Physics](Physics/Thermal%20and%20Statistical%20Physics) | OpenStax Vol. 2 · Blundell & Blundell | level A in progress |
 | [Relativity](Physics/Relativity) | Morin · Hartle | level A in progress |
 | [Quantum Mechanics](Physics/Quantum%20Mechanics) | Griffiths · Sakurai | level A in progress |
-| [Quantum Field Theory I](Physics/Quantum%20Field%20Theory%20I) | PHY 513 · Schwartz | in progress |
+| [Quantum Field Theory](Physics/Quantum%20Field%20Theory) | PHY 513 · Peskin & Schroeder · Yu | level C in progress |
 
 Sign, unit and Fourier conventions are recorded in [`Physics/Conventions`](Physics/Conventions), and each physics note names the convention it follows.
 

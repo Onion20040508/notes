@@ -24,7 +24,7 @@
 - [[Thermal and Statistical Physics]]
 - [[Relativity]]
 - [[Quantum Mechanics]]
-- [[Quantum Field Theory I]]
+- [[Quantum Field Theory]]
 - Conventions: [[University Physics]] (introductory level), [[Larsen PHY 513]]
 
 ## Layout
