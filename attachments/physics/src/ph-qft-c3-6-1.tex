@@ -1,0 +1,17 @@
+% Eigenvalues of the little-group translation generators (A, B) at the standard momentum k (written for QFT §C3.6★)
+\begin{tikzpicture}[>=Stealth, font=\small, scale=1.0]
+  \draw[->, thin, gray] (-2.6,0) -- (2.8,0) node[right] {$a$};
+  \draw[->, thin, gray] (0,-2.4) -- (0,2.6) node[left] {$b$};
+  \draw[figB, line width=1.1pt] (0,0) circle (1.8);
+  \coordinate (P) at ({1.8*cos(20)}, {1.8*sin(20)});
+  \coordinate (Q) at ({1.8*cos(75)}, {1.8*sin(75)});
+  \draw[gray, thin] (0,0) -- (P);
+  \draw[gray, thin] (0,0) -- (Q);
+  \fill[figB] (P) circle (2.2pt) node[right=3pt] {$(a,b)$};
+  \fill[figB] (Q) circle (2.2pt) node[above right=1pt] {\scriptsize $(a\cos\theta-b\sin\theta,\ a\sin\theta+b\cos\theta)$};
+  \draw[->, figR, thick] ({0.75*cos(20)}, {0.75*sin(20)}) arc[start angle=20, end angle=75, radius=0.75];
+  \node[figR] at ({0.98*cos(47)}, {0.98*sin(47)}) {$\theta$};
+  \node[figB, anchor=north west] at ({1.8*cos(-40)+0.05}, {1.8*sin(-40)}) {\scriptsize continuous spin: radius $\rho$, $W^2=-\kappa^2\rho^2$};
+  \fill[figG] (0,0) circle (2.6pt);
+  \node[figG, anchor=north, align=center] at (0.05,-0.15) {\scriptsize helicity states:\\[-1pt] \scriptsize $a=b=0$, $W^2=0$};
+\end{tikzpicture}

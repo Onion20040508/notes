@@ -1,0 +1,40 @@
+% QFT §C3.3: active rotation of a scalar and of a vector field (after PS Fig. 3.1)
+\begin{tikzpicture}[>=Stealth, font=\small, scale=1.25]
+  \def\ang{55}
+  % ---------- left panel: scalar ----------
+  \begin{scope}
+    \draw[->, thin] (-0.3,0) -- (3.0,0) node[right]{$x$};
+    \draw[->, thin] (0,-0.3) -- (0,3.0) node[above]{$y$};
+    \fill[black] (0,0) circle (0.8pt);
+    % original blob
+    \foreach \r/\s/\c in {0.55/0.32/figB!25, 0.37/0.21/figB!50, 0.18/0.1/figB!85}
+      \draw[thick, draw=figB, fill=\c] (2.1,0.7) ellipse ({\r} and {\s});
+    % rotated blob
+    \begin{scope}[rotate=\ang]
+      \foreach \r/\s/\c in {0.55/0.32/figB!25, 0.37/0.21/figB!50, 0.18/0.1/figB!85}
+        \draw[thick, draw=figB, fill=\c] (2.1,0.7) ellipse ({\r} and {\s});
+    \end{scope}
+    \draw[->, figR, thick] (22:3.0) arc (22:52:3.0);
+    \node[figR, font=\footnotesize] at (37:3.3) {$R$};
+    \node[font=\footnotesize, align=center] at (1.35,-0.65) {scalar: $\phi'(x) = \phi(R^{-1}x)$};
+  \end{scope}
+  % ---------- right panel: vector ----------
+  \begin{scope}[xshift=4.9cm]
+    \draw[->, thin] (-0.3,0) -- (3.0,0) node[right]{$x$};
+    \draw[->, thin] (0,-0.3) -- (0,3.0) node[above]{$y$};
+    \fill[black] (0,0) circle (0.8pt);
+    % original region with arrows pointing along +x
+    \draw[thick, draw=figB, fill=figB!12] (2.1,0.7) ellipse (0.62 and 0.38);
+    \foreach \dx/\dy in {-0.3/0.12, 0.05/0.12, -0.3/-0.14, 0.05/-0.14}
+      \draw[->, thick, figO] (2.1+\dx,0.7+\dy) -- ++(0.32,0);
+    % rotated region: arrows rotated as well
+    \begin{scope}[rotate=\ang]
+      \draw[thick, draw=figB, fill=figB!12] (2.1,0.7) ellipse (0.62 and 0.38);
+      \foreach \dx/\dy in {-0.3/0.12, 0.05/0.12, -0.3/-0.14, 0.05/-0.14}
+        \draw[->, thick, figO] (2.1+\dx,0.7+\dy) -- ++(0.32,0);
+    \end{scope}
+    \draw[->, figR, thick] (22:3.0) arc (22:52:3.0);
+    \node[figR, font=\footnotesize] at (37:3.3) {$R$};
+    \node[font=\footnotesize, align=center] at (1.35,-0.65) {vector: $\mathbf V'(x) = R\,\mathbf V(R^{-1}x)$};
+  \end{scope}
+\end{tikzpicture}
