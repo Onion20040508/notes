@@ -53,6 +53,9 @@ jobs:
 
       - name: Build
         working-directory: quartz
+        # KaTeX output for the whole vault does not fit in Node's default 4 GB heap (runner has 16 GB).
+        env:
+          NODE_OPTIONS: --max-old-space-size=12288
         run: |
           npx quartz plugin install --from-config
           npx quartz build
