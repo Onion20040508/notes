@@ -206,6 +206,7 @@ Adding the results:
 > - Why the region must have no holes for "curl-free ⇒ conservative": [[§22 The Algebra of Differential Forms#^prop-22-11|A Closed Form That Is Not Exact (§22.11)]]; the topological notion is [[§23 The Fundamental Group#^def-23-3|simply connected]] (590 §23.3).
 > - Computational version: [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]] (with worked examples).
 > - Computational version: [[§50 Cauchy–Goursat Theorem#^thm-50-2|342 Thm. §50.2]] (Cauchy's theorem for f′ continuous, proved by this theorem and the Cauchy–Riemann equations) and [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|342 Thm. §51.3]] (Goursat's proof, which drops the continuity of f′).
+> - Used in Quantum Field Theory: with the Cauchy–Riemann equations, Theorem §16.1 proves Cauchy's theorem and the deformation of contours behind every propagator contour — [[§CA.4 Contour Integration#^thm-ca-4-2|QFT Theorem §CA.4.2]].
 
 > [!remark] Remark: Why the Signs Work Out
 > The sign pattern $g_x - f_y$ is not arbitrary. It comes from:

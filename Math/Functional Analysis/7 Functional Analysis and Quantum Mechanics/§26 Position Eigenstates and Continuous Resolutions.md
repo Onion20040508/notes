@@ -68,6 +68,7 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 
 > [!remark]- Connections
 > - Contrast with finite dimensions, where every self-adjoint operator has an eigenvalue: [[§23 Spectral Theorem#^ladr-7-27|LADR 7.27]].
+> - Used in Quantum Field Theory: what $\delta(x - x_0)$ is instead, a generalized function acting on test functions, and one level up, field operators at a point as operator-valued distributions — [[§CA.2 Generalized Functions#^def-ca-2-2|QFT Def. §CA.2.2]], [[§CA.2 Generalized Functions#^rem-ca-2-1|QFT Remark: What changes from the working delta function]], [[§CA.2 Generalized Functions#^def-ca-2-8|QFT Def. §CA.2.8]].
 
 > [!theorem] Proposition §26.4: Point Evaluation is Not Bounded
 > Let $x_0 \in \mathbb{R}$. There is no $\psi \in L^2(\mathbb{R})$ with
@@ -90,6 +91,7 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 
 > [!remark]- Connections
 > - The idealization this rules out is the delta function of ODEs, [[§25 Impulse Functions#^def-25-3|331 Def. §25.3]], defined there as a limit of unit pulses (with worked examples).
+> - Used in Quantum Field Theory: the same obstruction for a one-particle state of sharp momentum, which is not normalizable, and the wave packets and smeared fields that replace it — [[§C2.4 Particles and Relativistic Normalization#^cau-c2-4-1|QFT Caution: Plane-wave states are not normalizable]], [[§C2.4 Particles and Relativistic Normalization#^thm-c2-4-6|QFT Theorem §C2.4.6]], [[§C2.4 Particles and Relativistic Normalization#^thm-c2-4-8|QFT Theorem §C2.4.8]].
 
 > [!remark] Remark: What $|x_0\rangle$ Would Have to Be
 > In Dirac notation a position eigenstate is characterized by $\langle x_0 | \varphi \rangle = \varphi(x_0)$, i.e. $(\varphi, |x_0\rangle) = \varphi(x_0)$. Proposition [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-4|§26.4]] says no element of $L^2$ does this: the functional $\varphi \mapsto \varphi(x_0)$ is unbounded in the $L^2$ norm, so by the [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|Riesz theorem]] it is not a bra, and $|x_0\rangle$ is not a ket. (Point evaluation is not even well defined on $L^2$, whose elements are functions up to sets of measure zero.) The “wavefunction” of $|x_0\rangle$ would be $\delta(x - x_0)$, and the physicists' normalization $\langle x | x' \rangle = \delta(x - x')$ in place of $1$ is the symptom. Proposition [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-3|§26.3]] says the same thing from the operator side: multiplication by $x$ has no eigenvalues at all.

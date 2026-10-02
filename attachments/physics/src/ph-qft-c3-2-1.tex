@@ -1,0 +1,39 @@
+% QFT §C3.2: the (j+, j-) lattice of finite-dimensional Lorentz representations
+\begin{tikzpicture}[>=Stealth, font=\small, scale=1.55]
+  % axes
+  \draw[->, thin] (-0.15,0) -- (2.35,0) node[right]{$j_+$};
+  \draw[->, thin] (0,-0.15) -- (0,2.35) node[above]{$j_-$};
+  \foreach \t/\l in {0.5/{\tfrac12},1/{1},1.5/{\tfrac32},2/{2}} {
+    \draw (\t,0) -- (\t,-0.04) node[below, font=\scriptsize]{$\l$};
+    \draw (0,\t) -- (-0.04,\t) node[left, font=\scriptsize]{$\l$};
+  }
+  \node[below left, font=\scriptsize] at (0,0) {$0$};
+  % parity mirror
+  \draw[figG, dashed, thick] (0,0) -- (2.2,2.2) node[above right, font=\footnotesize, text=figG, align=left]{parity and complex\\conjugation: mirror};
+  % lattice points: filled = j+ + j- integer (sign +1 under 2pi), open = half-integer (sign -1)
+  \foreach \a in {0,1,2,3,4} {
+    \foreach \b in {0,1,2,3,4} {
+      \pgfmathtruncatemacro{\s}{mod(\a+\b,2)}
+      \ifnum\s=0
+        \fill[figB] (\a/2,\b/2) circle (1.6pt);
+      \else
+        \draw[figR, thick, fill=white] (\a/2,\b/2) circle (1.6pt);
+      \fi
+    }
+  }
+  % labels of the course's representations
+  \tikzset{lab/.style={font=\scriptsize, fill=white, inner sep=1pt}}
+  \node[lab, above right=1pt] at (0,0) {scalar};
+  \node[lab, above right=1pt, text=figR] at (0.5,0) {$\psi_L$};
+  \node[lab, right=2pt, text=figR] at (0,0.5) {$\psi_R$};
+  \node[lab, below right=1pt] at (0.5,0.5) {$A^\mu$};
+  \node[lab, above right=1pt] at (1,0) {$\mathbf E - i\mathbf B$};
+  \node[lab, right=2pt] at (0,1) {$\mathbf E + i\mathbf B$};
+  \node[lab, below right=1pt] at (1,1) {traceless $T^{(\mu\nu)}$};
+  % legend
+  \begin{scope}[shift={(2.75,1.35)}]
+    \fill[figB] (0,0.3) circle (1.6pt); \node[right, font=\footnotesize] at (0.1,0.3) {$j_+ + j_-$ integer: $2\pi$ rotation $= +1$};
+    \draw[figR, thick, fill=white] (0,0) circle (1.6pt); \node[right, font=\footnotesize] at (0.1,0) {$j_+ + j_-$ half-integer: $2\pi$ rotation $= -1$};
+    \node[right, font=\footnotesize, align=left] at (-0.1,-0.45) {dimension $(2j_+ + 1)(2j_- + 1)$;\\ rotation content $|j_+ - j_-|, \dots, j_+ + j_-$};
+  \end{scope}
+\end{tikzpicture}
