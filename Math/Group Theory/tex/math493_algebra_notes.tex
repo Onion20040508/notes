@@ -299,6 +299,9 @@ $G\backslash X$, \ $X/G$ & Orbit spaces of a left and a right action (\ref{sec:o
 $H \trianglelefteq G$, \ $[G, G]$ & Normal subgroup (\ref{sec:normal}); commutator subgroup (\ref{sec:commutators}). \\
 $G/N$, \ $\pi$ & Quotient group by a normal subgroup; canonical projection $g \mapsto gN$ (\ref{sec:quotient}). \\
 $PSL_n(F)$ & Projective special linear group $SL_n(F)/Z$ (\ref{sec:simple}). \\
+$HN$ & Product set $\{hn : h \in H,\ n \in N\}$ (38.1). \\
+$X \sqcup Y$ & Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$ (37.1). \\
+$\hookrightarrow$, \ $\twoheadrightarrow$ & An injective map; a surjective map. \\
 \textit{WS $k.m$}, \textit{PS $k.m$} & Provenance tags: Worksheet $k$ / Problem Set $k$, Problem $m$. \\
 \end{longtable}}
 
@@ -3388,9 +3391,9 @@ In the class equation $|G| = |Z(G)| + \sum_i [G : C_G(g_i)]$ over representative
 
 \chapter{Normal Subgroups and Quotient Groups}\label{ch:normal}
 
-\textit{Source: Lecture (Mon Sept 21); Worksheet 6 (Wed Sept 23); Lecture (Fri Sept 25); Lecture and Worksheet 7 (Mon Sept 28); Lecture (Wed Sept 30).}
+\textit{Source: Lecture (Mon Sept 21); Worksheet 6 (Wed Sept 23); Lecture (Fri Sept 25); Lecture and Worksheet 7 (Mon Sept 28); Lecture (Wed Sept 30); Lecture (Fri Oct 2).}
 
-Normal subgroups are exactly the subgroups for which multiplication of cosets is well defined, so that the cosets $G/N$ form a group. This chapter gives the equivalent characterizations of normality, the main sources of normal subgroups (index two, kernels, unions of conjugacy classes). It then constructs the quotient group $G/N$ and proves the converse of ``kernels are normal'': every normal subgroup is a kernel, namely of the projection $G \to G/N$. The First Isomorphism Theorem shows that every homomorphic image of $G$ is, up to isomorphism, a quotient of $G$, and it yields the counting formula $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$, the group-theoretic counterpart of rank--nullity. It ends with simple groups, which cannot be broken into a normal subgroup and a quotient: the cyclic groups of prime order, the alternating groups $A_n$ for $n \geq 5$, and the projective special linear groups.
+Normal subgroups are exactly the subgroups for which multiplication of cosets is well defined, so that the cosets $G/N$ form a group. This chapter gives the equivalent characterizations of normality, the main sources of normal subgroups (index two, kernels, unions of conjugacy classes). It then constructs the quotient group $G/N$ and proves the converse of ``kernels are normal'': every normal subgroup is a kernel, namely of the projection $G \to G/N$. The First Isomorphism Theorem shows that every homomorphic image of $G$ is, up to isomorphism, a quotient of $G$, and it yields the counting formula $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$, the group-theoretic counterpart of rank--nullity; computing in $G/N$ with a set of representatives leads to the Second Isomorphism Theorem, $H/(H \cap N) \cong HN/N$. It ends with simple groups, which cannot be broken into a normal subgroup and a quotient: the cyclic groups of prime order, the alternating groups $A_n$ for $n \geq 5$, and the projective special linear groups.
 
 \section{Multiplying Cosets}\label{sec:multiplying-cosets}
 
@@ -3673,6 +3676,47 @@ Together with Kernels Are Normal, the proposition says: the normal subgroups of 
 \end{enumerate}
 \end{exbox}
 
+\subsection{Computing with Representatives}\label{sec:representatives}
+
+\textit{Source: Lecture (Fri Oct 2).}
+
+\begin{defbox}[{Set of Representatives (lecture 10/2)}]\label{def:set-representatives}
+Let $N \trianglelefteq G$. A \textbf{set of representatives} for $G/N$ is a subset $S \subseteq G$ such that every coset $C \in G/N$ contains exactly one $s \in S$, i.e.\ $C = sN$ for a unique $s \in S$. Equivalently, $G = \bigsqcup_{s \in S} sN$, where $Z = X \sqcup Y$ means $Z = X \cup Y$ and $X \cap Y = \varnothing$. Then $s \mapsto sN$ is a bijection $S \to G/N$, so the elements of $G/N$ can be named by the elements of $S$.
+\end{defbox}
+
+\begin{propbox}[{Multiplying Through Representatives (lecture 10/2)}]\label{prop:multiplying-through-representatives}
+Let $S$ be a set of representatives for $G/N$. For $s_1, s_2 \in S$, write $s_1s_2 = s_3\,n$ with $s_3 \in S$ and $n \in N$; such $s_3$ and $n$ exist and are unique. Then $(s_1N)(s_2N) = s_3N$. In words: to multiply two representatives in $G/N$, multiply them in $G$ and replace the result by the representative of its coset.
+\end{propbox}
+
+\begin{proof}
+The coset $s_1s_2N$ contains exactly one $s_3 \in S$, and $s_3 \in s_1s_2N$ means $s_1s_2N = s_3N$, i.e.\ $n := s_3^{-1}s_1s_2 \in N$ and $s_1s_2 = s_3n$. Then $(s_1N)(s_2N) = s_1s_2N = s_3nN = s_3N$.
+\end{proof}
+
+\begin{exbox}[{$(\mathbb{Z}/4\mathbb{Z})/(2\mathbb{Z}/4\mathbb{Z})$ (lecture 10/2)}]\label{ex:z-4z-2z-4z}
+Let $G = \mathbb{Z}/4\mathbb{Z} = \{0, 1, 2, 3\}$ and $N = 2\mathbb{Z}/4\mathbb{Z} = \{0, 2\}$, so $G = \{0, 2\} \sqcup \{1, 3\}$, with representatives $S = \{0, 1\}$. The only sum that leaves $S$ is $1 + 1 = 2$, which lies in the coset of $0$:
+\[ \begin{array}{c|cc} + & 0 & 1 \\ \hline 0 & 0 & 1 \\ 1 & 1 & 0 \end{array} \]
+So the quotient is cyclic of order $2$. Here $S$ is not a subgroup ($1 + 1 \notin S$).
+\end{exbox}
+
+\begin{exbox}[{$S_3/A_3$ (lecture 10/2)}]\label{ex:s3-a3}
+$S_3 = \{e, (1\,2\,3), (1\,3\,2)\} \sqcup \{(1\,2), (1\,3), (2\,3)\} = A_3 \sqcup (2\,3)A_3$. With representatives $S = \{e, (2\,3)\}$, and $(2\,3)(2\,3) = e$,
+\[ \begin{array}{c|cc} \cdot & e & (2\,3) \\ \hline e & e & (2\,3) \\ (2\,3) & (2\,3) & e \end{array} \]
+This time no product leaves $S$, because $S$ is a subgroup.
+\end{exbox}
+
+\begin{propbox}[{Representatives Forming a Subgroup (lecture 10/2)}]\label{prop:representatives-forming-subgroup}
+Let $S$ be a set of representatives for $G/N$ that is also a subgroup of $G$. Then $S \cap N = \{e\}$, and the composite $S \hookrightarrow G \twoheadrightarrow G/N$, $s \mapsto sN$, is an isomorphism. So $G/N \cong S$, and products in $G/N$ can be computed inside $S$.
+\end{propbox}
+
+\begin{proof}
+The composite is the restriction of the projection $\pi$ to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the Second Isomorphism Theorem, 38.1.)
+\end{proof}
+
+\begin{rembox}[{Life Is Especially Nice When $S$ Is a Subgroup}]\label{rem:life-especially-nice-when-s-subgroup}
+In $S_3/A_3$ the representatives $\{e, (2\,3)\}$ form a subgroup, so $S_3/A_3 \cong \langle (2\,3) \rangle$. In $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\}$ no choice works: a subgroup set of representatives would have order $2$, and the only subgroup of order $2$ is $\{0, 2\} = N$ itself, which lies in a single coset. The quotient is still $\cong \mathbb{Z}/2\mathbb{Z}$; it just is not realized by a subgroup of $\mathbb{Z}/4\mathbb{Z}$.
+\end{rembox}
+
+
 
 
 \section{The First Isomorphism Theorem}\label{sec:first-iso}
@@ -3738,6 +3782,71 @@ an injective homomorphism is an isomorphism onto its image, which is exactly the
 
 \textbf{PS 3.2 (a normal subgroup inside $H$).} The proof defines $\bar\varphi: G/N \to S_{G/H}$, $\bar\varphi(gN) = \varphi(g)$, for $N = \operatorname{Ker}\varphi$, and checks that it is well defined ($g' = gk$ with $k \in N$ gives $\varphi(g') = \varphi(g)$) and injective ($\varphi(g) = \varphi(g')$ gives $g^{-1}g' \in N$). These are the first two steps of the proof of the First Isomorphism Theorem, carried out before the theorem was available, when $G/N$ was only a set of cosets and injectivity gave $[G:N] \leq n!$ by counting. Now that $G/N$ is a group, $\bar\varphi$ is the isomorphism $\beta$ of the theorem onto $\varphi(G) \leq S_{G/H}$, so $[G:N] = |\varphi(G)|$ divides $n!$ by Lagrange.
 \end{rembox}
+
+\subsection{The Second Isomorphism Theorem}\label{sec:second-iso}
+
+\textit{Source: Lecture (Fri Oct 2).}
+
+\begin{defbox}[{The Product Set $HN$}]\label{def:product-set-hn}
+For subgroups $H, N$ of $G$, write $HN := \{hn : h \in H,\ n \in N\}$.
+\end{defbox}
+
+\begin{lembox}[{$HN$ Is a Subgroup When $N$ Is Normal (lecture 10/2)}]\label{lem:hn-subgroup-when-n-normal}
+If $H \leq G$ and $N \trianglelefteq G$, then $HN$ is a subgroup of $G$, and it contains both $H$ and $N$.
+\end{lembox}
+
+\begin{proof}
+\emph{Closure (lecture).} Let $h_1, h_2 \in H$ and $n_1, n_2 \in N$. Since $N$ is normal, $n_1h_2 = h_2n'$ for some $n' \in N$ ($n' = h_2^{-1}n_1h_2$). So $h_1n_1 \cdot h_2n_2 = h_1h_2 \cdot n'n_2 \in HN$. \emph{Containment:} $h = he$ and $n = en$.
+
+\emph{Identity and inverses:} \textcolor{gray}{[To be proved; assigned as homework.]}
+\end{proof}
+
+\begin{thmbox}[{Second Isomorphism Theorem (lecture 10/2)}]\label{thm:second-isomorphism-theorem}
+Let $G$ be a group, $N \trianglelefteq G$, $H \leq G$, and $\pi: G \to G/N$ the projection. Then $H \cap N \trianglelefteq H$, $N \trianglelefteq HN$, $\pi(H) = \pi(HN)$, and
+\[ H/(H \cap N) \;\cong\; \pi(H) \;=\; \pi(HN) \;\cong\; HN/N. \]
+In particular $H/(H \cap N) \cong HN/N$.
+\end{thmbox}
+
+\begin{proof}
+\emph{$\pi(H) = \pi(HN)$.} For $h \in H$, $\pi(h) = \pi(he) \in \pi(HN)$. For $hn \in HN$, $\pi(hn) = \pi(h)\pi(n) = \pi(h) \in \pi(H)$, since $n \in N = \operatorname{Ker}\pi$.
+
+\emph{Two applications of the First Isomorphism Theorem} (\S 38). Restrict $\pi$ to $H$: the kernel is $\{h \in H : hN = N\} = H \cap N$, so $H \cap N$ is normal in $H$ (Kernels Are Normal) and $H/(H \cap N) \cong \pi(H)$. Restrict $\pi$ to $HN$: the kernel is $HN \cap N = N$, since $N \subseteq HN$, so $N \trianglelefteq HN$ and $HN/N \cong \pi(HN)$. Combining with $\pi(H) = \pi(HN)$ gives the chain.
+\end{proof}
+
+\begin{center}
+\begin{tikzcd}[column sep=small, row sep=small]
+ & HN \arrow[dl, dash] \arrow[dr, dash] & \\
+H \arrow[dr, dash] & & N \arrow[dl, dash] \\
+ & H \cap N &
+\end{tikzcd}
+\captionof{figure}{The ``diamond'' picture of the Second Isomorphism Theorem: lines denote inclusion, and the two marked quotients on opposite sides agree, $HN/N \cong H/(H \cap N)$.}
+\end{center}
+
+\begin{corbox}[{Subgroup Representatives, Again (lecture 10/2)}]\label{cor:subgroup-representatives-again}
+If a set of representatives $S$ for $G/N$ is a subgroup, then $S \cong G/N$.
+\end{corbox}
+
+\begin{proof}
+Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ (Representatives Forming a Subgroup, 37.1). The theorem gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
+\end{proof}
+
+\begin{exbox}[{The Second Isomorphism Theorem in Action}]\label{ex:second-isomorphism-theorem-action}
+\begin{enumerate}[nosep]
+    \item $G = S_3$, $N = A_3$, $H = \langle (1\,2) \rangle$: $H \cap N = \{e\}$ and $HN = S_3$, so $\langle (1\,2) \rangle \cong S_3/A_3$.
+    \item $G = S_4$, $N = V$, $H = \operatorname{Stab}(4) \cong S_3$: every non-identity element of $V$ moves $4$, so $H \cap V = \{e\}$, and $HV/V \cong H$ has $6 = 24/4 = |S_4/V|$ elements, so $HV/V = S_4/V$. Hence $S_4/V \cong S_3$, recovering The Pair-Partition Homomorphism (\S 39) by a second route.
+\end{enumerate}
+\end{exbox}
+
+\begin{thmbox}[{Third Isomorphism Theorem (named in lecture 10/2; not covered)}]\label{thm:third-isomorphism-theorem}
+Let $N \subseteq K$ be normal subgroups of $G$. Then $K/N$ is a normal subgroup of $G/N$, and $(G/N)/(K/N) \cong G/K$.
+\end{thmbox}
+
+\proofpending
+
+\begin{rembox}[{The Isomorphism Theorems}]\label{rem:isomorphism-theorems}
+The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The first identifies $G/N$ with an image; the second and third compare quotients of subgroups and quotients of quotients. A worksheet on the second and third theorems is on the course Canvas site; the lecture recommended experimenting with small groups to make them intuitive.
+\end{rembox}
+
 
 \section{Simple Groups}\label{sec:simple}
 
@@ -4130,6 +4239,7 @@ For $n \geq 2$, $S_n/[S_n, S_n] = S_n/A_n \cong \{\pm 1\}$: by The Commutator Su
     \item \textbf{To count.} Lagrange, $|G| = |H|\,[G:H]$ (\ref{sec:lagrange}); orbit--stabilizer, $|Gx| = [G : \operatorname{Stab}(x)]$ (\ref{sec:orbit-stabilizer}); Burnside, the number of orbits is the average number of fixed points; the class equation, $|G| = |Z(G)| + \sum_i [G : C_G(g_i)]$ over representatives of the non-central classes (\ref{sec:conjugation-action}).
     \item \textbf{To show $N \trianglelefteq G$.} Any of: $gNg^{-1} \subseteq N$ for all $g$; $[G : N] = 2$; $N$ is a kernel; $N$ is a union of conjugacy classes (in particular any subgroup of $Z(G)$, and any subgroup when $G$ is abelian) (\ref{sec:normal}, \ref{sec:normal-sources}). \emph{Not} normal: find $g$ and $n \in N$ with $gng^{-1} \notin N$, or $g$ with $gN \neq Ng$.
     \item \textbf{To identify a quotient $G/N$.} Find a surjective homomorphism out of $G$ whose kernel is $N$; then $G/N$ is isomorphic to its target (First Isomorphism Theorem, \ref{sec:first-iso}). For finite $G$, $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$.
+    \item \textbf{To compute in $G/N$.} Choose one representative per coset; to multiply, multiply in $G$ and replace the product by its representative. If the representatives form a subgroup $S$, then $G/N \cong S$ (37.1). More generally $H/(H \cap N) \cong HN/N$ (Second Isomorphism Theorem, 38.1).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
     \item \textbf{To show $h$ is not a commutator.} Find a character $\chi$ with $\chi(h) \neq e_A$ (\ref{sec:commutators}); in $S_n$, use $\sgn$.
@@ -4201,6 +4311,7 @@ Thu Sept 24 \newline Problem Set 3 & Cayley's theorem; normal core; Burnside's l
 Fri Sept 25 \newline lecture & Quotient groups; canonical projection; First Isomorphism Theorem; $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$ & \ref{sec:quotient}, \ref{sec:first-iso}; WS 6.5 proved (\ref{sec:normal-sources}) \\
 Mon Sept 28 \newline lecture; Worksheet 7 & The picture so far; simple groups; homomorphisms out of and into simple groups; $C_p$, $A_5$, $A_n$ ($n \geq 5$), $PSL_n(F)$ & \ref{sec:simple} (7.1--7.5) \\
 Wed Sept 30 \newline lecture & Finite fields; WS 7.4 and 7.5 completed; $3$-cycles conjugate in $A_n$; $S_4 \to S_3$ with kernel $V$; why $n \geq 5$ & \ref{sec:simple} \\
+Fri Oct 2 \newline lecture & Computing in $G/N$ with representatives; Second Isomorphism Theorem; Third named & 37.1, 38.1 \\
 \end{longtable}}
 
 \textbf{Material not from class.} A few results were added to fill gaps and are tagged in their titles: those marked \emph{cf.\ Pinter} or \emph{cf.\ MATH 412} come from the textbook or from the MATH 412 worksheets, not from MATH 493, and are not part of the examinable content unless Speyer covers them. Everything tagged with a worksheet number, a problem-set number, or a lecture date is course material.

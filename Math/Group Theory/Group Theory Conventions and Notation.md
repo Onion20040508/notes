@@ -29,4 +29,7 @@ tags: [group-theory, math493]
 | $H \trianglelefteq G$, $[G, G]$ | Normal subgroup; commutator subgroup. | [[§35 Normal Subgroups#^def-35-1\|Def. §35.1]]; [[§41 Commutators#^def-41-2\|Def. §41.2]] |
 | $G/N$, $\pi$ | Quotient group by a normal subgroup; canonical projection $g \mapsto gN$. | [[§37 Quotient Groups#^def-37-1\|Def. §37.1]] |
 | $PSL_n(F)$ | Projective special linear group $SL_n(F)/Z$. | [[§39 Simple Groups#^def-39-2\|Def. §39.2]] |
+| $HN$ | Product set $\{hn : h \in H,\ n \in N\}$. | [[§38 The First Isomorphism Theorem#^def-38-1\|Def. §38.1]] |
+| $X \sqcup Y$ | Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$. | [[§37 Quotient Groups#^def-37-2\|Def. §37.2]] |
+| $\hookrightarrow$, $\twoheadrightarrow$ | An injective map; a surjective map. | [[§37 Quotient Groups#^prop-37-4\|§37.4]] |
 | *WS $k.m$*, *PS $k.m$* | Provenance tags: Worksheet $k$ / Problem Set $k$, Problem $m$. | [[493 Problem Set 1\|PS 1]], [[493 Problem Set 2\|PS 2]], [[493 Problem Set 3\|PS 3]] |

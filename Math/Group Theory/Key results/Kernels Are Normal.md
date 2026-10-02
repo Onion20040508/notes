@@ -18,6 +18,7 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§36 Sources of Normal Subgroups#^thm-36-5|Theorem §36.5: A Normal Subgroup Inside a Subgroup of Finite Index]]
 - [[§38 The First Isomorphism Theorem#^thm-38-1|Theorem §38.1: First Isomorphism Theorem]]
+- [[§38 The First Isomorphism Theorem#^thm-38-4|Theorem §38.4: Second Isomorphism Theorem]]
 - [[§39 Simple Groups#^prop-39-3|Proposition §39.3: Homomorphisms out of a Simple Group]]
 - [[§39 Simple Groups#^prop-39-10|Proposition §39.10: The Pair-Partition Homomorphism S_4 → S_3]]
 

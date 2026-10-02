@@ -77,7 +77,7 @@ graph TD
 - [[· 9 Characters and Commutators]]
 
 ## Planned topics (syllabus)
-First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓); the Sylow theorems; composition series and the Jordan–Hölder theorem; simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups (maybe up to order 168); solvable and nilpotent groups; semidirect products; central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups.
+First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems; composition series and the Jordan–Hölder theorem; simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups (maybe up to order 168); solvable and nilpotent groups; semidirect products; central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups.
 
 ## Central results
 - [[Cancellation Laws in Groups]] (§2.1)
@@ -110,6 +110,7 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Kernels Are Normal]] (§36.2)
 - [[Quotient Groups]] (§37.1)
 - [[First Isomorphism Theorem for Groups]] (§38.1)
+- [[Second Isomorphism Theorem for Groups]] (§38.4)
 - [[Aₙ Is Simple for n ≥ 5]] (§39.9)
 
 ## Summaries

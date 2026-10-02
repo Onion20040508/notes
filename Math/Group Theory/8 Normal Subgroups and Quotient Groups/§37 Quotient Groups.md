@@ -84,3 +84,77 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§35 No
 
 > [!remark]- Connections
 > - 590 version of (1): [[§21 Algebra Prerequisites꞉ Groups#^ex-21-7|Example §21.7]].
+
+## Computing with Representatives
+
+*Source: Lecture (Fri Oct 2).*
+
+> [!definition] Definition §37.2: Set of Representatives
+> Let $N \trianglelefteq G$ ([[§35 Normal Subgroups#^def-35-1|Def. §35.1]]). A **set of representatives** for $G/N$ ([[§37 Quotient Groups#^def-37-1|Def. §37.1]]) is a subset $S \subseteq G$ such that every [[§26 Left and Right Cosets#^def-26-2|coset]] $C \in G/N$ contains exactly one $s \in S$, i.e. $C = sN$ for a unique $s \in S$. Equivalently, $G = \bigsqcup_{s \in S} sN$, where $Z = X \sqcup Y$ means $Z = X \cup Y$ and $X \cap Y = \varnothing$. Then $s \mapsto sN$ is a bijection $S \to G/N$, so the elements of $G/N$ can be named by the elements of $S$.
+>
+> *Source: lecture 10/2*
+
+^def-37-2
+
+> [!theorem] Proposition §37.3: Multiplying Through Representatives
+> Let $S$ be a [[§37 Quotient Groups#^def-37-2|set of representatives]] for $G/N$. For $s_1, s_2 \in S$, write $s_1s_2 = s_3\,n$ with $s_3 \in S$ and $n \in N$; such $s_3$ and $n$ exist and are unique. Then $(s_1N)(s_2N) = s_3N$. In words: to multiply two representatives in $G/N$, multiply them in $G$ and replace the result by the representative of its coset.
+>
+> *Source: lecture 10/2*
+
+^prop-37-3
+
+> [!proof]+ Proof
+> The coset $s_1s_2N$ contains exactly one $s_3 \in S$, and $s_3 \in s_1s_2N$ means $s_1s_2N = s_3N$, i.e. $n := s_3^{-1}s_1s_2 \in N$ and $s_1s_2 = s_3n$. Then $(s_1N)(s_2N) = s_1s_2N = s_3nN = s_3N$.
+
+^pf-37-3
+
+*Uses:* [[§37 Quotient Groups#^def-37-2|Def. §37.2]], [[§26 Left and Right Cosets#^prop-26-2|§26.2]], [[§37 Quotient Groups#^def-37-1|Def. §37.1]]
+
+> [!remark]- Connections
+> - 590 version: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-19|multiply representatives, take the coset]] (590 §21).
+> - Vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|Addition and scalar multiplication on V∕U]] (LADR 3.102).
+
+> [!example] Example §37.2: $(\mathbb{Z}/4\mathbb{Z})/(2\mathbb{Z}/4\mathbb{Z})$
+> Let $G = \mathbb{Z}/4\mathbb{Z} = \{0, 1, 2, 3\}$ and $N = 2\mathbb{Z}/4\mathbb{Z} = \{0, 2\}$, so $G = \{0, 2\} \sqcup \{1, 3\}$, with [[§37 Quotient Groups#^def-37-2|representatives]] $S = \{0, 1\}$. The only sum that leaves $S$ is $1 + 1 = 2$, which lies in the coset of $0$:
+>
+> $$ \begin{array}{c|cc} + & 0 & 1 \\ \hline 0 & 0 & 1 \\ 1 & 1 & 0 \end{array} $$
+>
+> So the quotient is [[§4 Subgroups#^def-4-5|cyclic]] of order $2$. Here $S$ is not a [[§4 Subgroups#^def-4-1|subgroup]] ($1 + 1 \notin S$).
+>
+> *Source: lecture 10/2*
+
+^ex-37-2
+
+> [!example] Example §37.3: $S_3/A_3$
+> $S_3 = \{e, (1\,2\,3), (1\,3\,2)\} \sqcup \{(1\,2), (1\,3), (2\,3)\} = A_3 \sqcup (2\,3)A_3$. With [[§37 Quotient Groups#^def-37-2|representatives]] $S = \{e, (2\,3)\}$, and $(2\,3)(2\,3) = e$,
+>
+> $$ \begin{array}{c|cc} \cdot & e & (2\,3) \\ \hline e & e & (2\,3) \\ (2\,3) & (2\,3) & e \end{array} $$
+>
+> This time no product leaves $S$, because $S$ is a [[§4 Subgroups#^def-4-1|subgroup]].
+>
+> *Source: lecture 10/2*
+
+^ex-37-3
+
+> [!theorem] Proposition §37.4: Representatives Forming a Subgroup
+> Let $S$ be a [[§37 Quotient Groups#^def-37-2|set of representatives]] for $G/N$ that is also a [[§4 Subgroups#^def-4-1|subgroup]] of $G$. Then $S \cap N = \{e\}$, and the composite $S \hookrightarrow G \twoheadrightarrow G/N$, $s \mapsto sN$, is an [[§16 Isomorphisms#^def-16-1|isomorphism]]. So $G/N \cong S$, and products in $G/N$ can be computed inside $S$.
+>
+> *Source: lecture 10/2*
+
+^prop-37-4
+
+> [!proof]+ Proof
+> The composite is the restriction of the projection $\pi$ ([[§37 Quotient Groups#^prop-37-2|§37.2]]) to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the [[§38 The First Isomorphism Theorem#^thm-38-4|Second Isomorphism Theorem]], §38.)
+
+^pf-37-4
+
+*Uses:* [[§37 Quotient Groups#^prop-37-2|§37.2]], [[§37 Quotient Groups#^def-37-2|Def. §37.2]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
+
+> [!remark]- Connections
+> - Re-proved from the Second Isomorphism Theorem: [[§38 The First Isomorphism Theorem#^cor-38-5|Subgroup Representatives, Again]] (§38.5).
+> - Vector-space analogue: a complement $W$ of $U$ ([[§5 Bases#^ladr-2-33|LADR 2.33]]) plays the role of $S$, with $V/U \cong W$; for groups such a subgroup need not exist ([[§37 Quotient Groups#^rem-37-3|Remark]] below).
+
+> [!remark] Remark: Life Is Especially Nice When $S$ Is a Subgroup
+> In $S_3/A_3$ ([[§37 Quotient Groups#^ex-37-3|Ex. §37.3]]) the representatives $\{e, (2\,3)\}$ form a subgroup, so $S_3/A_3 \cong \langle (2\,3) \rangle$ ([[§37 Quotient Groups#^prop-37-4|§37.4]]). In $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\}$ ([[§37 Quotient Groups#^ex-37-2|Ex. §37.2]]) no choice works: a subgroup set of representatives would have order $2$, and the only subgroup of order $2$ is $\{0, 2\} = N$ itself, which lies in a single coset. The quotient is still $\cong \mathbb{Z}/2\mathbb{Z}$; it just is not realized by a subgroup of $\mathbb{Z}/4\mathbb{Z}$.
+
+^rem-37-3

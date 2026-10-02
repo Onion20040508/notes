@@ -20,6 +20,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§38 The First Isomorphism Theorem#^cor-38-2|Corollary §38.2: ∣G∣ = ∣Keralpha∣ · ∣Imalpha∣]]
+- [[§38 The First Isomorphism Theorem#^thm-38-4|Theorem §38.4: Second Isomorphism Theorem]]
 - [[§39 Simple Groups#^prop-39-10|Proposition §39.10: The Pair-Partition Homomorphism S_4 → S_3]]
 - [[§41 Commutators#^ex-41-1|Example §41.1: The Abelianization of Sₙ]]
 

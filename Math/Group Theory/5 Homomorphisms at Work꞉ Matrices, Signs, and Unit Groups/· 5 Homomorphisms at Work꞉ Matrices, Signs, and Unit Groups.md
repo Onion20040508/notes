@@ -12,7 +12,7 @@ tags: [chapter, group-theory]
 Three substantial applications of the homomorphism language, mostly from Problem Set 1: permutation matrices and the [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|permutation representation]] $S_n \to GL_n(k)$; the [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|sign homomorphism]], its kernel $A_n$, and generators for $S_n$ and $A_n$ ([[§20 The Sign Homomorphism and the Alternating Group#^thm-20-7|§20.7]], [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-9|§20.9]]); and the [[§21 The Structure of Uₙ#^thm-21-2|decomposition]] of $U_n$ into prime-power pieces by the [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|Chinese remainder theorem]].
 
 **Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (10), [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (9), [[· 3 Permutations|3 Permutations]] (6), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (6)
-**Used by:** [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (7), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (9), [[· 9 Characters and Commutators|9 Characters and Commutators]] (10)
+**Used by:** [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (7), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (10), [[· 9 Characters and Commutators|9 Characters and Commutators]] (10)
 **Builds on (other subjects):** [[Linear Algebra]] (17), [[Single Variable Analysis]] (1)
 
 ## Sections
