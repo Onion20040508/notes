@@ -17,6 +17,7 @@
 - [[Applied Linear Algebra]]
 - [[Ordinary Differential Equations]]
 - [[Fourier Series and PDEs]]
+- [[Complex Variables]]
 
 **Physics**
 - [[Classical Mechanics]]

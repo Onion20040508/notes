@@ -32,6 +32,7 @@ Computational courses, each linked to the rigorous treatment of the same results
 | [Applied Linear Algebra](Applied%20Math/Applied%20Linear%20Algebra) | MATH 235 (UMass) · Lay, Lay & McDonald, *Linear Algebra and Its Applications*, 5th ed. | complete (Ch. 1–7; Ch. 7 beyond the course) |
 | [Ordinary Differential Equations](Applied%20Math/Ordinary%20Differential%20Equations) | MATH 331 (UMass) · Boyce, DiPrima & Meade, *Elementary Differential Equations and Boundary Value Problems*, 11th ed. | complete (Ch. 1–3, 6, 7) |
 | [Fourier Series and PDEs](Applied%20Math/Fourier%20Series%20and%20PDEs) | MAT 341 (Stony Brook) · Powers, *Boundary Value Problems and Partial Differential Equations*, 5th ed. | complete (Ch. 0–7; ★ beyond the course) |
+| [Complex Variables](Applied%20Math/Complex%20Variables) | MAT 342 (Stony Brook) · Brown & Churchill, *Complex Variables and Applications*, 9th ed. | complete (Ch. 1–12; ★ beyond the course) |
 
 ### Physics
 
