@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # CA Mathematical Methods
 ← [[· C2 The Quantum Scalar Field]] · ↑ [[Quantum Field Theory]]
 
-**Builds on:** [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (49)
-**Used by:** [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (568)
+**Builds on:** [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (50)
+**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (105), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (572)
 
 ## Sections
 - [[§CA.1 Exchanging Limits, Derivatives and Integrals]] — 513 notes App. A §A.1

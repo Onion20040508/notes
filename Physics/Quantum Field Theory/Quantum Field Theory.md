@@ -12,6 +12,7 @@ tags: [subject, quantum-field-theory]
 Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen, Fall 2026; textbook Peskin & Schroeder). Chapters follow Yu Zhao-Huan's lecture notes (余钊焕《量子场论讲义》), whose chapter numbers they keep: fields are organized by spin after the Poincaré group, and interactions are treated once for all fields. Each concept has one home: statements are short boxes, derivations are folded under them, explanations are titled remarks, and hidden connections are collected in each note's Connections. Multi-step procedures have their own notes in Procedures/, linked from every place they are carried out. Statements are marked by layer: *principles* (postulated), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealized systems). ★ marks material beyond the PHY 513 syllabus; a *draft* banner marks syllabus topics written ahead of the lectures. Relativity is in [[Relativity]], one-particle quantum mechanics in [[Quantum Mechanics]]. Procedures: [[P1 Canonical Quantization]], [[P2 Green's Functions by Contour Integration]]. Reference card: [[Scalar Field Card]]. The course order, lecture by lecture, is in [[PHY 513 Course Log]]; conventions in [[Larsen PHY 513]].
 
 ## Level C — graduate
+- [[· C1 Preliminaries]]
 - [[· C2 The Quantum Scalar Field]]
 - [[· CA Mathematical Methods]]
 
@@ -20,10 +21,13 @@ Arrows point from a chapter to the chapters that use it; labels count the citati
 
 ```mermaid
 graph TD
+  C1["C1 Preliminaries"]
   C2["C2 The Quantum Scalar Field"]
   CA["CA Mathematical Methods"]
-  C2 -->|49| CA
-  CA -.->|568| C2
+  C2 -->|50| CA
+  C2 -.->|62| C1
+  CA -.->|105| C1
+  CA -.->|572| C2
 ```
 
 ## Planned
