@@ -1,0 +1,18 @@
+% QFT §C1.9: region R, support of the variation, boundary terms
+\begin{tikzpicture}[>=Stealth, font=\small, scale=1.25]
+  % axes
+  \draw[->, thin] (-0.4,0) -- (6.6,0) node[right]{$\mathbf x$};
+  \draw[->, thin] (0,-0.2) -- (0,4.3) node[above]{$t$};
+  % slab region R
+  \fill[figB!6] (0.6,0.8) rectangle (6.0,3.4);
+  \draw[thick, figB] (0.6,0.8) rectangle (6.0,3.4);
+  \node[figB] at (5.6,3.1) {$R$};
+  \draw[dashed, gray] (-0.1,0.8) node[left, text=black]{$t_1$} -- (0.6,0.8);
+  \draw[dashed, gray] (-0.1,3.4) node[left, text=black]{$t_2$} -- (0.6,3.4);
+  % support of eta
+  \draw[thick, figO, fill=figO!25] plot[smooth cycle, tension=0.8] coordinates {(2.0,1.5) (3.0,1.25) (4.2,1.6) (4.4,2.4) (3.4,2.85) (2.3,2.6) (1.8,2.1)};
+  \node[align=center, font=\footnotesize] at (3.15,2.05) {$\operatorname{supp}\eta$\\ $\delta\phi=\varepsilon\eta$};
+  % annotations
+  \node[align=left, font=\footnotesize, anchor=west] at (6.15,2.1) {$\partial R$: $\delta\phi=0$,\\ so $\displaystyle\oint_{\partial R}d\sigma_\mu\,\Pi^\mu\delta\phi=0$};
+  \node[align=center, font=\footnotesize, anchor=south] at (3.3,3.45) {if $\delta\phi\neq0$ at $t_2$: surface term $\displaystyle\int d^3x\,\pi\,\delta\phi$};
+\end{tikzpicture}
