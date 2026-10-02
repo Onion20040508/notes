@@ -6,10 +6,10 @@ chapter: C2
 tags: [chapter, quantum-field-theory]
 ---
 # C2 The Quantum Scalar Field
-← [[· C1 Preliminaries]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
+← [[· C1 Preliminaries]] · ↑ [[Quantum Field Theory]] · [[· C3 Poincaré Symmetry and Particle States]] →
 
 **Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (13), [[· CA Mathematical Methods|CA Mathematical Methods]] (572)
-**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (62), [[· CA Mathematical Methods|CA Mathematical Methods]] (50)
+**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (62), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (48), [[· CA Mathematical Methods|CA Mathematical Methods]] (50)
 
 ## Sections
 - [[§C2.1 Canonical Quantization of Fields]] — PS 2.3; Yu 2.1–2.2; 513 notes Ch. 4

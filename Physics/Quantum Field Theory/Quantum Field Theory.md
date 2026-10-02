@@ -14,6 +14,7 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 ## Level C — graduate
 - [[· C1 Preliminaries]]
 - [[· C2 The Quantum Scalar Field]]
+- [[· C3 Poincaré Symmetry and Particle States]] (★ §C3.5, §C3.6)
 - [[· CA Mathematical Methods]]
 
 ### How the chapters build on each other
@@ -23,13 +24,18 @@ Arrows point from a chapter to the chapters that use it; labels count the citati
 graph TD
   C1["C1 Preliminaries"]
   C2["C2 The Quantum Scalar Field"]
+  C3["C3 Poincaré Symmetry and Particle States"]
   CA["CA Mathematical Methods"]
   C1 -->|13| C2
+  C1 -->|103| C3
+  C2 -->|48| C3
   C1 -->|5| CA
   C2 -->|50| CA
   C2 -.->|62| C1
+  C3 -.->|12| C1
   CA -.->|105| C1
   CA -.->|572| C2
+  CA -.->|11| C3
 ```
 
 ## Planned
