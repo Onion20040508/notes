@@ -9,13 +9,13 @@ tags: [chapter, electromagnetism]
 ← [[· C1 Electrodynamics from an Action]] · ↑ [[Electromagnetism]] · [[· C3 Electric Multipoles]] →
 
 **Builds on:** [[· A2 Gauss's Law|A2 Gauss's Law]] (3), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (16), [[· B2 Electrostatics|B2 Electrostatics]] (13), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (6), [[· B6 Magnetostatics|B6 Magnetostatics]] (3), [[· B8 Electrodynamics|B8 Electrodynamics]] (2), [[· B9 Conservation Laws|B9 Conservation Laws]] (1), [[· B11★ Potentials and Radiation|B11 Potentials and Radiation]] (2), [[· C1 Electrodynamics from an Action|C1 Electrodynamics from an Action]] (12), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (1), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (5), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (1), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (3), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (2)
-**Used by:** [[· C1 Electrodynamics from an Action|C1 Electrodynamics from an Action]] (2), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (17), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (22), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (6), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (7), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (5)
+**Used by:** [[· C1 Electrodynamics from an Action|C1 Electrodynamics from an Action]] (2), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (17), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (25), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (6), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (7), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (5)
 
 ## Sections
-- [[§C2.1 The Static Limit and the Field of a Charge Distribution]] — 
-- [[§C2.2 Gauss's Law and the Solid Angle]] — 
-- [[§C2.3 Electrostatic Energy and Self-Energy]] — 
-- [[§C2.4 The Electric Stress Tensor]] — 
+- [[§C2.1 The Static Limit and the Field of a Charge Distribution]] — Zangwill §3.1–3.3; PHY 505 notes Part IV
+- [[§C2.2 Gauss's Law and the Solid Angle]] — Zangwill §3.4; HW7
+- [[§C2.3 Electrostatic Energy and Self-Energy]] — Zangwill §3.5–3.6; PHY 505 notes Part IV
+- [[§C2.4 The Electric Stress Tensor]] — Zangwill §3.7
 
 ## Theorems
 - [[§C2.1 The Static Limit and the Field of a Charge Distribution#^thm-c2-1-1|§C2.1.1]] The Static Limit of Maxwell's Equations

@@ -8,14 +8,14 @@ tags: [chapter, electromagnetism]
 # C4 Conductors and Capacitance
 ← [[· C3 Electric Multipoles]] · ↑ [[Electromagnetism]] · [[· C5 Dielectric Matter]] →
 
-**Builds on:** [[· A2 Gauss's Law|A2 Gauss's Law]] (1), [[· A4 Capacitance|A4 Capacitance]] (4), [[· B2 Electrostatics|B2 Electrostatics]] (11), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (8), [[· B9 Conservation Laws|B9 Conservation Laws]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (22), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (2), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (9), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (1)
+**Builds on:** [[· A2 Gauss's Law|A2 Gauss's Law]] (1), [[· A4 Capacitance|A4 Capacitance]] (4), [[· B2 Electrostatics|B2 Electrostatics]] (11), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (8), [[· B9 Conservation Laws|B9 Conservation Laws]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (25), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (2), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (9), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (1)
 **Used by:** [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (5), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (2), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (6), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (2)
 
 ## Sections
-- [[§C4.1 Induced Charge, Screening and Thomson's Theorem]] — 
-- [[§C4.2 Self-Capacitance and Capacitors]] — 
-- [[§C4.3 The Capacitance Matrix]] — 
-- [[§C4.4 Forces on Conductors]] — 
+- [[§C4.1 Induced Charge, Screening and Thomson's Theorem]] — Zangwill §5.2–5.3; HW9
+- [[§C4.2 Self-Capacitance and Capacitors]] — Zangwill §5.4; HW9
+- [[§C4.3 The Capacitance Matrix]] — Zangwill §5.4–5.5; HW9; Likharev §2.2
+- [[§C4.4 Forces on Conductors]] — Zangwill §5.6
 
 ## Theorems
 - [[§C4.1 Induced Charge, Screening and Thomson's Theorem#^thm-c4-1-2|§C4.1.2]] Induction as a Self-Consistency Condition

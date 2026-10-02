@@ -9,13 +9,13 @@ tags: [chapter, electromagnetism]
 ← [[· C2 Foundations of Electrostatics]] · ↑ [[Electromagnetism]] · [[· C4 Conductors and Capacitance]] →
 
 **Builds on:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (6), [[· B2 Electrostatics|B2 Electrostatics]] (5), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (7), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (7), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (17), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (6), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (6)
-**Used by:** [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (1), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (2), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (5), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (2), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (5)
+**Used by:** [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (1), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (2), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (5), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (3), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (5)
 
 ## Sections
-- [[§C3.1 Cartesian Multipole Moments and Dipole Layers]] — 
-- [[§C3.2 Spherical Multipole Expansions]] — 
-- [[§C3.3 Primitive and Traceless Moments]] — 
-- [[§C3.4 Multipole Interaction Energies and Molecules on a Lattice]] — 
+- [[§C3.1 Cartesian Multipole Moments and Dipole Layers]] — Zangwill §4.2–4.4; HW8
+- [[§C3.2 Spherical Multipole Expansions]] — Zangwill §4.5–4.6; HW8
+- [[§C3.3 Primitive and Traceless Moments]] — Zangwill §4.7; HW8
+- [[§C3.4 Multipole Interaction Energies and Molecules on a Lattice]] — HW8.3; the user's paper (2025)
 
 ## Theorems
 - [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-1|§C3.1.1]] The Primitive Cartesian Multipole Expansion

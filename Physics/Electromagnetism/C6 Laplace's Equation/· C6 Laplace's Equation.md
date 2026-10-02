@@ -8,14 +8,14 @@ tags: [chapter, electromagnetism]
 # C6 Laplace's Equation
 ← [[· C5 Dielectric Matter]] · ↑ [[Electromagnetism]] · [[· C7 Poisson's Equation]] →
 
-**Builds on:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (4), [[· B2 Electrostatics|B2 Electrostatics]] (2), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (12), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (1), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (7), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (2), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (6), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (5)
-**Used by:** [[· C1 Electrodynamics from an Action|C1 Electrodynamics from an Action]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (3), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (6), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (9), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (2), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (43)
+**Builds on:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (4), [[· B2 Electrostatics|B2 Electrostatics]] (2), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (12), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (1), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (7), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (3), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (6), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (5)
+**Used by:** [[· C1 Electrodynamics from an Action|C1 Electrodynamics from an Action]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (3), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (6), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (9), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (2), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (47)
 
 ## Sections
-- [[§C6.1 Potential Theory and Uniqueness]] — 
-- [[§C6.2 Separation in Cartesian and Spherical Coordinates]] — 
-- [[§C6.3 Separation in Cylindrical and Polar Coordinates]] — 
-- [[§C6.4★ The Complex Potential and the Variational Principle]] — 
+- [[§C6.1 Potential Theory and Uniqueness]] — Zangwill §7.2–7.3
+- [[§C6.2 Separation in Cartesian and Spherical Coordinates]] — Zangwill §7.4–7.7; HW10–11
+- [[§C6.3 Separation in Cylindrical and Polar Coordinates]] — Zangwill §7.8–7.9; HW11
+- [[§C6.4★ The Complex Potential and the Variational Principle]] — Zangwill §7.10–7.11
 
 ## Theorems
 - [[§C6.1 Potential Theory and Uniqueness#^thm-c6-1-1|§C6.1.1]] Uniqueness with Conductors and Linear Dielectrics

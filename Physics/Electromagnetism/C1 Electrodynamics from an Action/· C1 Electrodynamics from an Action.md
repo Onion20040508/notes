@@ -12,11 +12,11 @@ tags: [chapter, electromagnetism]
 **Used by:** [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (12)
 
 ## Sections
-- [[§C1.1 Building the Maxwell Action]] — 
-- [[§C1.2 The Field Equations and the Bianchi Identity]] — 
-- [[§C1.3 Gauge Symmetry and Charge Conservation]] — 
-- [[§C1.4 Gauge Fixing and the Two Polarizations]] — 
-- [[§C1.5 The Electromagnetic Energy–Momentum Tensor]] — 
+- [[§C1.1 Building the Maxwell Action]] — PHY 505 notes Part III; typed notes §7.1–7.2; series III; Zangwill ch. 24
+- [[§C1.2 The Field Equations and the Bianchi Identity]] — PHY 505 notes Part III; HW6; Zangwill ch. 24
+- [[§C1.3 Gauge Symmetry and Charge Conservation]] — typed notes §7.2, §7.5; PHY 505 notes
+- [[§C1.4 Gauge Fixing and the Two Polarizations]] — PHY 505 notes; HW6; series III
+- [[§C1.5 The Electromagnetic Energy–Momentum Tensor]] — typed notes §7.5; series III
 
 ## Principles
 - [[§C1.1 Building the Maxwell Action#^pr-c1-1-1|§C1.1.1]] Requirements on the Electromagnetic Action

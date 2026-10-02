@@ -8,13 +8,13 @@ tags: [chapter, electromagnetism]
 # C7 Poisson's Equation
 ← [[· C6 Laplace's Equation]] · ↑ [[Electromagnetism]]
 
-**Builds on:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (7), [[· B2 Electrostatics|B2 Electrostatics]] (2), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (14), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (1), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (5), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (5), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (2), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (5), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (43)
+**Builds on:** [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (7), [[· B2 Electrostatics|B2 Electrostatics]] (2), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (15), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (1), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (1), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (5), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (5), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (2), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (5), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (47)
 **Used by:** [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (2), [[· C4 Conductors and Capacitance|C4 Conductors and Capacitance]] (1), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (5)
 
 ## Sections
-- [[§C7.1 The Method of Images]] — 
-- [[§C7.2 Green Functions for Poisson’s Equation]] — 
-- [[§C7.3★ Logarithmic Potentials and the Poisson–Boltzmann Equation]] — 
+- [[§C7.1 The Method of Images]] — Zangwill §8.3; HW11
+- [[§C7.2 Green Functions for Poisson’s Equation]] — Zangwill §8.4–8.5; Likharev §2.10
+- [[§C7.3★ Logarithmic Potentials and the Poisson–Boltzmann Equation]] — Zangwill §8.6–8.7
 
 ## Theorems
 - [[§C7.1 The Method of Images#^thm-c7-1-1|§C7.1.1]] A Point Charge in a Region with Given Boundary Values
