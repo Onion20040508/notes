@@ -52,6 +52,7 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 
 > [!remark]- Connections
 > - Computational version: [[§51 Improper Integrals#^def-51-1|Calc Def. §51.1]] (with worked examples).
+> - Computational version: [[§85 Evaluation of Improper Integrals#^def-85-2|342 Def. §85.2]] (the Cauchy principal value, the symmetric limit used in residue calculations).
 
 The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replacing $\alpha$ by $\alpha' \in (a,b)$ changes the two summands by $\mp \int_\alpha^{\alpha'} f\,dx$ — a *finite* proper integral, since additivity over subintervals passes through the defining limits — and the two changes cancel in the sum, also in the extended arithmetic above.
 
@@ -102,6 +103,9 @@ The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replac
 
 ![[m451-36-3.svg]]
 *The running integral $\int_0^d \sin x\,dx = 1 - \cos d$ (blue) swings between $0$ and $2$ forever, driven by the alternating lobes of $\sin x$ (gray): no limit as $d \to \infty$, not even $\pm\infty$ — the symbol $\int_0^\infty \sin x\,dx$ has no meaning.*
+
+> [!remark]- Connections
+> - Computational version: [[§85 Evaluation of Improper Integrals#^ex-85-1|342 Ex. §85.1]] (a principal value that exists although the improper integral does not).
 
 ## Improper Stieltjes Integrals and Distribution Functions
 

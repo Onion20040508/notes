@@ -34,6 +34,7 @@ Recall: $f$ is continuous at $x_0$ if $x_n \to x_0$ implies $f(x_n) \to f(x_0)$.
 > - Limits of functions of two variables (punctured δ-ball): [[§3 Continuity and Limits of Functions#^def-3-2|452 Def. §3.2]].
 > - Computational version: [[§7 The Limit of a Function#^def-7-1|Calc Def. §7.1]], made precise in [[§9 The Precise Definition of a Limit#^def-9-1|Calc Def. §9.1]] (with worked examples).
 > - Computational version: [[§9 The Precise Definition of a Limit#^def-9-1|Calc Def. §9.1]]; at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Calc Def. §11.4]]; infinite limits [[§9 The Precise Definition of a Limit#^def-9-3|Calc Def. §9.3]] (with worked examples).
+> - Computational version: [[§15 Limits#^def-15-1|342 Def. §15.1]] (the same ε–δ definition for functions of a complex variable, where the deleted neighborhood is a punctured disk, with worked examples).
 
 > [!example] Example §20.1: First computations
 > $S = (0,1)$, $f(x) = \tfrac1x$: then $\lim_{x\to 0^S} f(x) = +\infty$ and $\lim_{x \to 1^S} f(x) = 1$.

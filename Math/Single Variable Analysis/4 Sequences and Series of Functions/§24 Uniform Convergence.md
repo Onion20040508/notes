@@ -33,6 +33,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 > [!remark]- Connections
 > - Restated in 551 as [[§12 Measurable Functions#^def-12-9|551 Def. §12.9]]; on a set of finite measure, a.e. convergence is uniform off a set of arbitrarily small measure by [[§13 Egorov's and Lusin's Theorems#^thm-13-1|551 Thm. §13.1]] (Egorov).
 > - Computational version: [[§9 Uniform Convergence#^def-9-1|341 Def. §9.1]] (pointwise versus uniform convergence, with worked examples for Fourier series).
+> - Computational version: [[§69★ Absolute and Uniform Convergence of Power Series#^def-69-2|342 Def. §69.2]] (uniform convergence of complex series, in remainder form).
 
 ## Examples and Non-Examples
 
@@ -178,6 +179,9 @@ Now we reap the applications.
 
 ![[m451-24-3.svg]]
 *The $\tfrac\varepsilon3$ argument. Uniform convergence puts the graph of one $f_N$ (blue) inside the band $f \pm \tfrac\varepsilon3$ (gray) at every point at once — in particular at $x_0$ and at $x$ (red gaps). Continuity of $f_N$ bounds the middle step from $f_N(x_0)$ to $f_N(x)$ (orange). Chaining the three steps gets from $f(x_0)$ to $f(x)$ with total change $< \varepsilon$.*
+
+> [!remark]- Connections
+> - Special case for complex power series: [[§70★ Continuity of Sums of Power Series#^thm-70-1|342 Thm. §70.1]] (the sum of a power series is continuous inside its circle of convergence).
 
 > [!remark] Remark
 > This retroactively explains several examples: $x^n$ on $[0,1]$ and $\tfrac{x^n}{n+x^n}$ on $[0,\infty)$ could not converge uniformly, because their limit functions are discontinuous while every $f_n$ is continuous. The contrapositive of the theorem is a quick non-uniformity test.

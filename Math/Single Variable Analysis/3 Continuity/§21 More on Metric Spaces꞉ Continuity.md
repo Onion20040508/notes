@@ -22,3 +22,4 @@ Taking $X = \mathbb{R}$ (or $\Omega \subseteq \mathbb{R}$) and $Y = \mathbb{R}$ 
 > [!remark]- Connections
 > - The case X = ℝ², Y = ℝ with Euclidean distance is 452's continuity, [[§3 Continuity and Limits of Functions#^def-3-1|452 Def. §3.1]].
 > - Continuity between topological spaces (preimages of open sets are open), [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]], agrees with this for metric spaces by [[§11 Metric Topology#^thm-11-7|590 Thm. §11.7]].
+> - The case X = Y = ℂ with d(z, w) = |z − w|: [[§18 Continuity#^def-18-1|342 Def. §18.1]] (continuity of complex functions, with worked examples).

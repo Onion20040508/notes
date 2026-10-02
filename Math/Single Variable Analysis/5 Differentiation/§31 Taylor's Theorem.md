@@ -37,6 +37,7 @@ So a convergent power series is forced to be $\sum \tfrac{f^{(n)}(0)}{n!} x^n$. 
 
 > [!remark]- Connections
 > - Computational version: [[§78 Taylor and Maclaurin Series#^def-78-1|Calc Def. §78.1]] (with worked examples).
+> - Computational version: [[§62 Taylor Series#^def-62-1|342 Def. §62.1]] (Taylor and Maclaurin series of complex functions, with worked examples).
 
 **Question: is $f(x) = \sum_n \tfrac{f^{(n)}(0)}{n!}x^n$ for every $f$ with all derivatives?** No — two distinct problems:
 
@@ -119,6 +120,7 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 
 > [!remark]- Connections
 > - Used in PDEs: the $O((\Delta x)^2)$ errors of the central difference quotients, [[§55★ Boundary Value Problems#^prop-55-1|341 Prop. §55.1]].
+> - Complex counterpart: [[§63 Proof of Taylor's Theorem#^thm-63-1|342 Thm. §63.1]] (an analytic function equals its Taylor series on every disk of analyticity, with no remainder estimate needed).
 
 > [!remark] Remark
 > If we can show $R_n(x) \to 0$, we solve both problems at one stroke: the Taylor series converges, *and* it converges to $f(x)$.
@@ -219,3 +221,4 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 
 > [!remark]- Connections
 > - Computational version: Stewart's remark on $e^{-1/x^2}$, [[§78 Taylor and Maclaurin Series#^rem-78-1|Calc Remark §78.1]].
+> - Impossible for analytic functions: [[§63 Proof of Taylor's Theorem#^thm-63-1|342 Thm. §63.1]] (an analytic function is the sum of its Taylor series) and [[§82 Zeros of Analytic Functions#^thm-82-2|342 Thm. §82.2]] (a zero of infinite order forces f ≡ 0 near the point).

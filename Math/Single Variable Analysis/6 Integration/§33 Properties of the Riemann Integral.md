@@ -128,6 +128,9 @@ It is often not easy to check integrability from the definitions — we need pro
 
 ^pf-33-4
 
+> [!remark]- Connections
+> - Computational version: [[§47 Upper Bounds for Moduli of Contour Integrals#^lem-47-1|342 Lemma §47.1]] (the same inequality for complex-valued w(t)) and its contour form, the ML-inequality [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|342 Thm. §47.2]] (with worked bounds).
+
 > [!remark] Remark: Warning
 > The converse fails: for $f = 1$ on $\mathbb{Q}$ and $f = -1$ off $\mathbb{Q}$, the function $|f| \equiv 1$ is integrable on $[0,1]$, but $f$ is not (the Dirichlet argument verbatim: $U(f,P) = 1$, $L(f,P) = -1$ always).
 

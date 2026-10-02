@@ -53,6 +53,9 @@ We have discussed the properties of $\mathbb{R}$, including the [[Completeness A
 ![[m451-7-1.svg]]
 *The $(\varepsilon, N)$ picture: however narrow the band $s \pm \varepsilon$, some stage $N$ exists beyond which every dot (blue) lies inside; the early terms (gray) may wander freely — convergence is a statement about tails. (Compare §24: uniform convergence of functions is this same picture with dots replaced by whole graphs.)*
 
+> [!remark]- Connections
+> - Computational version: [[§60 Convergence of Sequences#^def-60-1|342 Def. §60.1]] (convergence of complex sequences, with the modulus in place of the absolute value).
+
 > [!remark] Remark: What does the definition catch?
 > The condition $|s_n - s| < \varepsilon$ says $s_n$ approximates $s$ with error less than $\varepsilon$. The definition demands: *no matter how small an error tolerance $\varepsilon$ is prescribed, from some stage $N$ onward, every term of the sequence meets that tolerance.* The order of quantifiers is essential: $\varepsilon$ is given first (arbitrarily), and $N$ is allowed to depend on $\varepsilon$.
 
@@ -141,6 +144,9 @@ The first property of limits — and our first theorem with a real proof about t
 
 ![[m451-7-2.svg]]
 *Why limits are unique: with $\varepsilon < \tfrac12|s-t|$ the bands $(s-\varepsilon, s+\varepsilon)$ (blue) and $(t-\varepsilon, t+\varepsilon)$ (red) are disjoint. From $N = \max\{N_1, N_2\}$ on, every $s_n$ would have to lie in both — impossible.*
+
+> [!remark]- Connections
+> - Computational version: [[§60 Convergence of Sequences#^prop-60-1|342 Prop. §60.1]] (uniqueness for complex sequences); the same argument for limits of complex functions is [[§15 Limits#^thm-15-1|342 Thm. §15.1]].
 
 > [!remark] Remark: Summary of the method
 > To determine whether $(s_n)$ is convergent, we determine whether it has a limit, in two steps:

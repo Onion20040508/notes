@@ -135,6 +135,7 @@ Now we return toward power series — via general series of functions.
 > - Used in ODEs: the M-test with $M_k = MK^kh^{k+1}/(k+1)!$ gives the uniform convergence of the Picard iterates in the existence and uniqueness theorem for $y' = f(t, y)$, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
 > - Computational version: [[§9 Uniform Convergence#^thm-9-2|341 Thm. §9.2]] (a Fourier series with $\sum(|a_n|+|b_n|)<\infty$ converges uniformly, with worked examples).
 > - Used in PDEs: the series solutions of the heat equation, [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|341 Thm. §19.5]] and [[§25 Generalities on the Heat Conduction Problem#^thm-25-4|341 Thm. §25.4]], and the Poisson integral, [[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]], where the factor $e^{-\lambda_n^2kt}$ or $r^n$ supplies the summable bound.
+> - Applied to complex power series: [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|342 Thm. §69.3]] (uniform convergence on closed disks inside the circle of convergence, by this test).
 
 > [!example] Example §25.3: Three applications of the M-test
 > **(1)** $\displaystyle\sum_{n=1}^\infty \frac{\cos nx}{n^2}$ converges uniformly on $\mathbb{R}$ — take $M_k = \tfrac{1}{k^2}$ — and hence defines a continuous function on $\mathbb{R}$.

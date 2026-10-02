@@ -69,6 +69,7 @@ We all know this — but how to *prove* it? The integral $\int_a^b g'$ is define
 > - Lebesgue version: $f(x) - f(a) = \int_a^x f'$ holds exactly for absolutely continuous $f$, [[§18 Differentiation Theory#^thm-18-13|551 Thm. §18.13]].
 > - Computational version: [[§36 The Fundamental Theorem of Calculus#^thm-36-2|Calc Thm. §36.2]] (Stewart's Part 2 is this FTC I) and the Net Change Theorem, [[§37 Indefinite Integrals and the Net Change Theorem#^thm-37-2|Calc Thm. §37.2]] (with worked examples).
 > - Used in ODEs: the solution $\int_{x_0}^x M(s)\,ds + \int_{y_0}^y N(s)\,ds = 0$ of a separable initial value problem, [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]], and the equivalence of $y' = f(t, y)$, $y(0) = 0$ with an integral equation, [[§11 The Existence and Uniqueness Theorem#^lem-11-2|331 Lemma §11.2]].
+> - Computational version: [[§42 Definite Integrals of Functions w(t)#^thm-42-2|342 Thm. §42.2]] (the same theorem for complex-valued w(t) = u(t) + iv(t), with worked examples).
 
 ## Integration by Parts
 
@@ -131,6 +132,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 > - Computational version: [[§44 Integration by Parts#^thm-44-2|Calc Thm. §44.2]] (with worked examples).
 > - Used in ODEs: integration by parts on each piece gives the transform of a derivative, $\mathcal{L}\{f'\} = s\mathcal{L}\{f\} - f(0)$, [[§22 Solution of Initial Value Problems#^thm-22-1|331 Thm. §22.1]].
 > - Used in PDEs: the Fourier series of $f'$ is the differentiated series of $f$, [[§10 Operations on Fourier Series#^thm-10-6|341 Thm. §10.6]]; most Fourier coefficients are computed this way, as in [[§6 Periodic Functions and Fourier Series#^ex-6-1|341 Ex. §6.1]].
+> - Complex form around a closed contour, where the boundary term vanishes: Steps 4–5 of the proof of [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|342 Thm. §56.1]] (the Cauchy integral formula for derivatives).
 
 ## The Second Fundamental Theorem
 

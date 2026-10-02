@@ -34,6 +34,7 @@ $$
 > [!remark]- Connections
 > - Computational version: [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Calc Thm. §28.2]] (with worked examples).
 > - Used in PDEs: the one-sided rule handles the difference quotients at $y=0$ in the proof of the Fourier convergence theorem, [[§12★ Proof of Convergence#^thm-12-4|341 Thm. §12.4]].
+> - Computational version: [[§20 Rules for Differentiation#^prop-20-5|342 Prop. §20.5]] (the simple complex form, with f′ and g′ evaluated at the point itself; no mean value theorem needed).
 
 The idea: differentiating can *simplify* $f$ and $g$, letting us escape the indeterminate forms. We use the rule first, then prove it.
 

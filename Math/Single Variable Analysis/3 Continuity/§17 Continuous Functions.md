@@ -189,6 +189,7 @@ For some functions the sequential definition is not so easy to check directly �
 > [!remark]- Connections
 > - Same rules for functions of two variables: [[§3 Continuity and Limits of Functions#^thm-3-1|452 Thm. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 Thm. §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 Thm. §3.3]] (sum, product, quotient).
 > - Computational version: [[§10 Continuity#^thm-10-1|Calc Thm. §10.1]] (with worked examples).
+> - Computational version: [[§18 Continuity#^prop-18-1|342 Prop. §18.1]] (sums, products, quotients and polynomials of continuous complex functions).
 
 > [!example] Example §17.6: Polynomials and rational functions
 > (1) All polynomial functions are continuous — we knew this already; it also follows from (1)–(2) starting with constants and $f(x)=x$. (2) Every rational function $\tfrac{P(x)}{Q(x)}$ is continuous at every point where the polynomial $Q$ does not vanish.
@@ -214,6 +215,7 @@ The most important and useful theorem in this section:
 > - Several-variable versions: [[§3 Continuity and Limits of Functions#^thm-3-4|452 Thm. §3.4]] and [[§10 Composition of Functions and the Chain Rule#^thm-10-1|452 Thm. §10.1]].
 > - Composition rule for continuous maps of topological spaces: [[§9 Continuous Functions#^thm-9-4|590 Thm. §9.4]].
 > - Computational version: [[§10 Continuity#^thm-10-9|Calc Thm. §10.9]], with limits of composites in [[§10 Continuity#^thm-10-7|Calc Thm. §10.7]] (with worked examples).
+> - Computational version: [[§18 Continuity#^thm-18-2|342 Thm. §18.2]] (composition of continuous complex functions, same proof).
 
 > [!example] Example §17.7: Compositions and domains
 > When applying the composition theorem, *check the domains*. (1) $f(x) = \tfrac1x$ is continuous at every $x \neq 0$, and $g(x) = \sin x$ is continuous (later); so $\sin\tfrac1x$ is continuous at every $x \neq 0$ — as claimed above. (2) $f(x) = \sqrt{|x|}: \mathbb{R} \to \mathbb{R}$ is continuous everywhere: it is the composition of $|x|: \mathbb{R} \to [0,\infty)$ and $\sqrt{x}: [0,\infty) \to \mathbb{R}$, and the domain condition is satisfied since $|x|$ takes values exactly in $\operatorname{dom}(\sqrt{\ })$.

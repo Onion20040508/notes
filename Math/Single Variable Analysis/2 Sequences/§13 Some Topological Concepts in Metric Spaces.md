@@ -47,6 +47,9 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 
 ^ex-13-2
 
+> [!remark]- Connections
+> - Computational version: [[§4 Vectors and Moduli#^def-4-1|342 Def. §4.1]] (the modulus as distance in the complex plane) and [[§60 Convergence of Sequences#^thm-60-2|342 Thm. §60.2]] (convergence in ℂ is convergence of real and imaginary parts).
+
 > [!remark] Remark: Proof of the complex triangle inequality
 > Note $\operatorname{Re} w \leq |w|$ for any $w \in \mathbb{C}$, and $|z \overline{w}| = |z||w|$ (from $|zw|^2 = zw \cdot \overline{zw} = |z|^2 |w|^2$). Then
 >
@@ -132,6 +135,7 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 > [!remark]- Connections
 > - In 452 the same inequality makes balls and square neighborhoods interchangeable: [[§2 Open and Closed Sets#^def-2-2|452 Def. §2.2]].
 > - In 590 the same comparison shows that the Euclidean and square metrics give the same topology: [[§11 Metric Topology#^thm-11-2|590 Thm. §11.2]].
+> - The case n = 2, read in ℂ: [[§60 Convergence of Sequences#^thm-60-2|342 Thm. §60.2]] (a complex sequence converges iff its real and imaginary parts converge, from the same two-sided bound on distances).
 
 > [!definition] Definition §13.3: Complete Metric Space
 > A metric space $(X,d)$ is called **complete** if every Cauchy sequence in $X$ is convergent (to a point of $X$).

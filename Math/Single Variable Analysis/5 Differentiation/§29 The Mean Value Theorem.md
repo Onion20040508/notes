@@ -97,6 +97,7 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 
 > [!remark]- Connections
 > - Computational version: [[§26 The Mean Value Theorem#^thm-26-2|Calc Thm. §26.2]] (with worked examples).
+> - Fails for complex-valued functions: [[§41 Derivatives of Functions w(t)#^ex-41-3|342 Ex. §41.3]] (w(t) = eⁱᵗ on [0, 2π] has w′ never zero although w(2π) = w(0)).
 
 > [!theorem] Corollary §29.4: Vanishing Derivative Means Constant
 > If $f: (a,b) \to \mathbb{R}$ is differentiable and $f'(x) = 0$ for all $x \in (a,b)$, then $f$ is constant.
@@ -118,6 +119,7 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 > - If $f' = 0$ only almost everywhere, the conclusion needs absolute continuity: [[§18 Differentiation Theory#^thm-18-27|551 Thm. §18.27]], with the Cantor function as counterexample ([[§18 Differentiation Theory#^ex-18-4|551 Ex. §18.4]]).
 > - Computational version: [[§26 The Mean Value Theorem#^thm-26-3|Calc Thm. §26.3]]; used for the uniqueness of solutions of $y' = ky$ in [[§21 Exponential Growth and Decay#^thm-21-1|Calc Thm. §21.1]].
 > - Used in ODEs: every solution of $y' = ay - b$ has the form $b/a + ce^{at}$, [[§2 Solutions of Some Differential Equations#^thm-2-1|331 Thm. §2.1]], and the solutions of a separable equation are given implicitly by $H_1(x) + H_2(y) = c$, [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]]; both proofs show that some function has zero derivative.
+> - Computational version: [[§25 Analytic Functions#^thm-25-3|342 Thm. §25.3]] (f′ = 0 on a domain of ℂ forces f constant, reduced to this corollary along segments).
 
 > [!theorem] Corollary §29.5: Equal Derivatives Differ by a Constant
 > If $f, g: (a,b) \to \mathbb{R}$ are differentiable with $f'(x) = g'(x)$ for all $x$, then $f = g + c$ for some constant $c$.
@@ -333,6 +335,9 @@ This computation finds the *formula* but presupposes the differentiability of $f
 > Since the sequence $(y_n)$ was arbitrary, $g'(y_0)$ exists and equals $\tfrac{1}{f'(x_0)}$.
 
 ^pf-29-10
+
+> [!remark]- Connections
+> - Complex counterpart: [[§114★ Local Inverses#^thm-114-1|342 Thm. §114.1]] (an analytic f with f′(z₀) ≠ 0 has an analytic local inverse with g′ = 1/f′).
 
 > [!remark] Remark
 > The assumption $f'(x_0) \neq 0$ is important: think of $f(x) = x^3$ at $x_0 = 0$ — the inverse $y \mapsto y^{1/3}$ exists but is not differentiable at $0$ (vertical tangent). Behind the theorem: $f'(x_0) \neq 0$ makes $f$ strictly monotone near $x_0$, so an inverse exists locally — a principle that generalizes far beyond calculus (the *inverse function theorem* of advanced analysis).

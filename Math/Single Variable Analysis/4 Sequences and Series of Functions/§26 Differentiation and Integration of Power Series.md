@@ -30,6 +30,9 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 ^pf-26-1
 
+> [!remark]- Connections
+> - Computational version: [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|342 Thm. §69.3]] (uniform convergence on closed disks inside the circle of convergence).
+
 > [!theorem] Corollary §26.2: Power Series Are Continuous
 > $f(x) = \sum_n a_n x^n$ is a continuous function on $(-R, R)$.
 
@@ -39,6 +42,9 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > Let $x_0 \in (-R, R)$; choose $R_1$ with $|x_0| < R_1 < R$. On $[-R_1, R_1]$ the series converges uniformly (theorem above), and the partial sums are polynomials, hence continuous — so the sum is continuous on $[-R_1, R_1]$ (§25), in particular at $x_0$. Since $x_0$ was arbitrary and continuity is a pointwise property, $f$ is continuous on $(-R,R)$. (Note: uniformity on all of $(-R,R)$ may fail — §25's geometric example — but is not needed.)
 
 ^pf-26-2
+
+> [!remark]- Connections
+> - Computational version: [[§70★ Continuity of Sums of Power Series#^thm-70-1|342 Thm. §70.1]] (continuity of the sum of a complex power series).
 
 ## Term-by-Term Integration
 
@@ -63,6 +69,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > [!remark]- Connections
 > - In 551 term-by-term integration needs no uniform convergence: for non-negative terms it is [[§14 The Lebesgue Integral for Simple Functions#^thm-14-12|551 Thm. §14.12]] (MCT II), and for absolutely integrable series [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]].
 > - Fourier-series version: [[§10 Operations on Fourier Series#^thm-10-3|341 Thm. §10.3]] (a Fourier series may be integrated term by term even when it does not converge uniformly), with worked examples.
+> - Computational version for power series along contours: [[§71★ Integration and Differentiation of Power Series#^thm-71-1|342 Thm. §71.1]] (term-by-term integration, with worked examples).
 
 > [!theorem] Theorem §26.4: Term-by-Term Calculus for Power Series
 > Let $f(x) = \sum_{n=0}^\infty a_n x^n$ have radius of convergence $R > 0$. Then:
@@ -112,6 +119,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > - Used in ODEs: each entry of $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ is a power series in $t$ with infinite radius, differentiated term by term to get $\Phi' = \mathbf{A}\Phi$: [[§33★ Fundamental Matrices#^def-33-3|331 Def. §33.3]], [[§33★ Fundamental Matrices#^thm-33-3|331 Thm. §33.3]].
 > - Fourier-series counterpart: [[§10 Operations on Fourier Series#^thm-10-6|341 Thm. §10.6]] and [[§10 Operations on Fourier Series#^thm-10-7|341 Thm. §10.7]] (differentiation multiplies the $n$th coefficient by $n$, so it needs a continuous periodic extension or fast-decaying coefficients).
 > - Used in PDEs: the Bessel series is differentiated term by term to show that $J_\mu$ solves Bessel's equation, [[§45★ Bessel's Equation#^thm-45-2|341 Thm. §45.2]], and to get the derivative formulas, [[§45★ Bessel's Equation#^thm-45-7|341 Thm. §45.7]].
+> - Computational version: [[§71★ Integration and Differentiation of Power Series#^thm-71-4|342 Thm. §71.4]] (term-by-term differentiation) and [[§71★ Integration and Differentiation of Power Series#^thm-71-1|342 Thm. §71.1]] (term-by-term integration) for complex power series.
 
 ## Harvesting Closed Formulas
 
@@ -287,6 +295,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 > [!remark]- Connections
 > - Computational version: the derivative of sine, [[§16 Derivatives of Trigonometric Functions#^thm-16-1|Calc Thm. §16.1]]; the Maclaurin series of sine and cosine, [[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]].
+> - Computational version: [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]] (the Maclaurin series of eᶻ, sin z, cos z and others, derived from the complex definitions).
 
 > [!remark] Remark: Repaying the trigonometric debt
 > Of course $s = \sin$ and $c = \cos$ — but the point is that the computation above never used that. Ross §37 carries this program to completion: starting from the two series one derives the addition formulas, the existence of $\pi$ (as twice the first positive zero of $c$), and periodicity, so that *every* property of $\sin$ and $\cos$ used on credit in these notes is ultimately redeemable. The same holds for $e^x$ and $\log$ via their series and inverses. The ledger of §34 records what remains outstanding.

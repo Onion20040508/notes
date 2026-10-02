@@ -46,6 +46,9 @@ Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; i
 
 ^def-14-2
 
+> [!remark]- Connections
+> - Computational version: [[§61 Convergence of Series#^def-61-1|342 Def. §61.1]] (series of complex numbers), reduced to real series by [[§61 Convergence of Series#^thm-61-1|342 Thm. §61.1]].
+
 > [!remark] Remark: Why is this definition reasonable?
 > Only *finite* sums are defined by the field operations of $\mathbb{R}$. An infinite sum must therefore be *defined* in terms of finite ones — and the natural way is as the limit of the finite approximations $s_n$, using the machinery of Chapter 2. This is also why series appear as a section of the chapter on sequences: a series *is* a sequence, namely its sequence of partial sums.
 
@@ -123,6 +126,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 > [!remark]- Connections
 > - Its logic in 250: [[§2 Implications#^ex-2-10|250 Ex. §2.10]] (a necessary condition; the contrapositive is the divergence test; the converse fails).
 > - Computational version: [[§70 Series#^thm-70-4|Calc Thm. §70.4]] and the Test for Divergence, [[§70 Series#^cor-70-5|Calc Cor. §70.5]] (with worked examples).
+> - Computational version: [[§61 Convergence of Series#^cor-61-2|342 Cor. §61.2]] (the same statement for complex series).
 
 > [!theorem] Proposition §14.3: Linearity of Series
 > If $\sum a_n$ and $\sum b_n$ converge and $c \in \mathbb{R}$, then
@@ -211,6 +215,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 > [!remark]- Connections
 > - Computational version: [[§73 Alternating Series and Absolute Convergence#^def-73-2|Calc Def. §73.2]] (with worked examples).
+> - Computational version: [[§61 Convergence of Series#^def-61-2|342 Def. §61.2]] (absolute convergence of complex series).
 
 > [!theorem] Proposition §14.6: Absolute Convergence Implies Convergence
 > If $\sum a_n$ converges absolutely, then it converges.
@@ -233,6 +238,9 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 > Hence $\sum a_n$ converges.
 
 ^pf-14-6
+
+> [!remark]- Connections
+> - Computational version: [[§61 Convergence of Series#^cor-61-3|342 Cor. §61.3]] (complex series, via real and imaginary parts).
 
 > [!remark] Remark: Warning
 > The converse is not true. The example to keep in mind: $a_n = (-1)^n \tfrac1n$. This series does *not* converge absolutely — $\sum |(-1)^n \tfrac1n| = \sum \tfrac1n$ diverges — but we will show in §15 that $\sum (-1)^n \tfrac1n$ *does* converge.

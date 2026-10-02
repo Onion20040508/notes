@@ -23,6 +23,7 @@ tags: [real-analysis, math451]
 > [!remark]- Connections
 > - In several variables it splits into partial derivatives, [[§4 Partial Derivatives#^def-4-1|452 Def. §4.1]], directional derivatives, [[§7 Directional Derivatives#^def-7-1|452 Def. §7.1]], and differentiability as linear approximation, [[§6 Differentiability#^def-6-1|452 Def. §6.1]].
 > - Computational version: [[§12 Derivatives and Rates of Change#^def-12-3|Calc Def. §12.3]], [[§13 The Derivative as a Function#^def-13-3|Calc Def. §13.3]] (with worked examples).
+> - Computational version: [[§19 Derivatives#^def-19-1|342 Def. §19.1]] (the complex derivative, the same difference quotient with z in place of x, with worked examples).
 
 > [!example] Example §28.1: Square root of the absolute value
 > Show $f(x) = \sqrt{|x|}: \mathbb{R} \to \mathbb{R}$ is differentiable at every $a \neq 0$ but not at $a = 0$.
@@ -84,6 +85,7 @@ tags: [real-analysis, math451]
 
 > [!remark]- Connections
 > - Computational version: [[§13 The Derivative as a Function#^thm-13-1|Calc Thm. §13.1]].
+> - Computational version: [[§19 Derivatives#^thm-19-1|342 Thm. §19.1]] (the same statement and proof for complex functions).
 
 > [!remark] Remark: The converse fails
 > Two counterexamples: $\sqrt{|x|}$ (continuous everywhere, not differentiable at $0$, as above — the difference quotients blow up); and $|x|$, where the one-sided limits of $\tfrac{f(x) - f(0)}{x - 0} = \tfrac{|x|}{x}$ are $+1$ and $-1$ and disagree. Using $|x|$, one can build continuous functions non-differentiable at finitely many prescribed points, e.g.
@@ -129,6 +131,7 @@ tags: [real-analysis, math451]
 > [!remark]- Connections
 > - Two-variable versions for partial derivatives and for differentiability: [[§6 Differentiability#^thm-6-3|452 Thm. §6.3]] to [[§6 Differentiability#^thm-6-5|452 Thm. §6.5]], and [[§6 Differentiability#^thm-6-6|452 Thm. §6.6]] to [[§6 Differentiability#^thm-6-8|452 Thm. §6.8]].
 > - Computational version: [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|Calc Thm. §14.4]], [[§15 The Product and Quotient Rules#^thm-15-1|Calc Thm. §15.1]], [[§15 The Product and Quotient Rules#^thm-15-2|Calc Thm. §15.2]] (with worked examples).
+> - Computational version: [[§20 Rules for Differentiation#^thm-20-2|342 Thm. §20.2]] (sum, product and quotient rules for complex derivatives, with worked examples).
 
 ## The Chain Rule and a Gap
 
@@ -186,6 +189,9 @@ The most useful theorem:
 > As $x \to a$: $f(x) \to f(a)$ ($f$ continuous at $a$), and $h$ is continuous at $f(a)$, so $h(f(x)) \to h(f(a)) = g'(f(a))$; and the second factor tends to $f'(a)$. Hence the limit exists and equals $g'(f(a))\, f'(a)$. Done!
 
 ^pf-28-3-2
+
+> [!remark]- Connections
+> - Computational version: [[§20 Rules for Differentiation#^thm-20-4|342 Thm. §20.4]] (the complex chain rule, with the same repair of the naive proof).
 
 > [!remark] Remark: The classical notation
 > If $y = y(x)$ and $z = z(y)$, then $z = z(y(x))$ is a function of $x$, and the chain rule reads
