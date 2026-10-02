@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Finish the site Quartz built: add the page-style switcher and slim the search index.
+"""Finish the site Quartz built: add the page-style switcher, slim the search index, calm the graph.
 
 Run by the GitHub Actions workflow after the build:  python3 postbuild.py <site dir> <looks.js>
 - copies looks.js to <site>/static/looks.js,
@@ -10,6 +10,10 @@ Run by the GitHub Actions workflow after the build:  python3 postbuild.py <site 
   and indexes every word in the browser, which made each load lag (27 MB, 3.3 million words for this
   vault). Each page keeps its opening text and its box titles ("Definition §23.2: Fundamental Group"),
   which is what search needs to find a definition or a theorem.
+- patches the graph script so it stops redrawing once the layout has settled: as built, it redraws
+  every node and line about 60 times a second for as long as a page is open. Redrawing resumes
+  whenever the layout moves again (dragging a node). If Quartz's code changes, the patch is skipped
+  and reported, and the graph keeps working as before.
 """
 import json, os, re, shutil, sys
 
@@ -56,3 +60,21 @@ if os.path.exists(index):
     with open(index, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
     print(f'search index: {before / 2**20:.1f} MB -> {os.path.getsize(index) / 2**20:.1f} MB')
+
+# animate() ends with requestAnimationFrame(animate) unconditionally; reschedule only while the d3
+# simulation is still moving, and let the simulation's tick restart the loop when it moves again.
+LOOP = re.compile(r'requestAnimationFrame\(([\w$]+)\)\}\}return ([\w$]+)\.on\("tick",function\(\)\{\}\),\2\.restart\(\),')
+patched = 0
+scripts = os.path.join(site, 'static', 'scripts')
+for f in sorted(os.listdir(scripts)) if os.path.isdir(scripts) else []:
+    p = os.path.join(scripts, f)
+    s = open(p, encoding='utf-8').read()
+    if 'Stale render' not in s:
+        continue
+    t, n = LOOP.subn(lambda m: (f'({m[2]}.alpha()>{m[2]}.alphaMin()?requestAnimationFrame({m[1]}):({m[1]}.idle=1))}}}}'
+                                f'return {m[2]}.on("tick",function(){{{m[1]}.idle&&({m[1]}.idle=0,requestAnimationFrame({m[1]}))}}),'
+                                f'{m[2]}.restart(),'), s)
+    if n:
+        open(p, 'w', encoding='utf-8').write(t)
+        patched += n
+print(f'graph: stopped idle redrawing in {patched} place(s)' if patched else 'graph: animation loop not found, left unpatched')
