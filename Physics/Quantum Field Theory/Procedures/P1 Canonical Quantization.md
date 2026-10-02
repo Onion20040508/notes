@@ -1,0 +1,46 @@
+---
+type: procedure
+subject: "[[Quantum Field Theory]]"
+level: C
+tags: [quantum-field-theory, procedure]
+---
+# P1 Canonical Quantization
+
+Turns a free classical field theory, given by its Lagrangian, into a quantum theory: operators with a mode algebra, a Hamiltonian and charges in mode form, a vacuum, a Fock space, and the particle content with its masses, charges and statistics. Derivations are in the sections linked at each step; conventions in [[Larsen PHY 513]].
+
+## Steps
+
+1. **Canonical pairs and the Hamiltonian.** List the independent field components ($\phi$ and $\phi^\dagger$ count separately for a complex field). For each, the conjugate momentum density is $\pi_a = \partial\mathcal L/\partial\dot\phi_a$, taken with the other velocities fixed, and $H = \int d^3x\,\bigl(\sum_a\pi_a\dot\phi_a - \mathcal L\bigr)$ with every velocity eliminated in favour of the $\pi$'s (QFT C1, planned; recalled in [[§C2.1 Canonical Quantization of Fields|§C2.1]]). For a complex field the pairing crosses over, $\pi = \dot\phi^\dagger$ ([[§C2.3 The Complex Scalar Field and Its Charge#^mod-c2-3-1|Model §C2.3.1]]). ^p1-1
+
+2. **Impose the equal-time commutation relations.** Promote $\phi_a$, $\pi_a$ on a time slice to operators with $[\phi_a(\mathbf x), \pi_b(\mathbf y)] = i\delta_{ab}\delta^3(\mathbf x - \mathbf y)$ and all other equal-time commutators zero ([[§C2.1 Canonical Quantization of Fields#^pr-c2-1-1|Principle §C2.1.1]]); real fields become Hermitian. Fermion fields take anticommutators (QFT C5, planned). ^p1-2
+
+3. **Expand in modes.** Solve the free field equation by plane waves $e^{\mp ip\cdot x}$ on the mass shell, one coefficient per frequency sign and momentum, with the factor $1/\sqrt{2E_{\mathbf p}}$; for a complex field the two coefficients are independent ($a_{\mathbf p}$, $b^\dagger_{\mathbf p}$), and a reality condition identifies them ($b = a$). Then quantize the coefficients ([[§C2.2 The Real Scalar Field#^thm-c2-2-2|Theorem §C2.2.2]], [[§C2.3 The Complex Scalar Field and Its Charge#^thm-c2-3-2|Theorem §C2.3.2]]). The classical decoupling into oscillators guarantees this works ([[§C2.1 Canonical Quantization of Fields#^thm-c2-1-2|Theorem §C2.1.2]]). ^p1-3
+
+4. **Extract the modes and derive their algebra.** Invert the expansion with the Klein–Gordon inner product, $a_{\mathbf p} = (f_{\mathbf p}, \phi)$, $a^\dagger_{\mathbf p} = -(f^*_{\mathbf p}, \phi)$ ([[§C2.2 The Real Scalar Field#^def-c2-2-1|Def. §C2.2.1]], [[§C2.2 The Real Scalar Field#^thm-c2-2-3|Theorem §C2.2.3]]), and turn the field commutators into $[a_{\mathbf p}, a^\dagger_{\mathbf q}] = (f_{\mathbf p}, f_{\mathbf q}) = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, all others zero ([[§C2.2 The Real Scalar Field#^thm-c2-2-4|Theorem §C2.2.4]]). Mixed commutators between species must come out zero, not be assumed. ^p1-4
+
+5. **Write $H$, $\mathbf P$ and the charges in modes; normal order.** Substitute the expansion, do the $d^3x$ integral, check that the number-changing terms vanish, and reorder ([[§C2.2 The Real Scalar Field#^rem-c2-2-1|Remark: Two bookkeeping rules]], [[§C2.2 The Real Scalar Field#^thm-c2-2-5|Theorem §C2.2.5]], [[§C2.3 The Complex Scalar Field and Its Charge#^thm-c2-3-3|Theorem §C2.3.3]]). Fix the ordering by normal ordering ([[§C2.2 The Real Scalar Field#^def-c2-2-2|Def. §C2.2.2]]); for conserved charges such as $Q$ the vacuum must come out neutral ([[§C2.3 The Complex Scalar Field and Its Charge#^def-c2-3-1|Def. §C2.3.1]], [[§C2.3 The Complex Scalar Field and Its Charge#^thm-c2-3-4|Theorem §C2.3.4]]). ^p1-5
+
+6. **Vacuum, Fock space, particles.** Define $|0\rangle$ by $a_{\mathbf p}|0\rangle = 0$ for every species and generate the Fock space ([[§C2.2 The Real Scalar Field#^pr-c2-2-7|Principle §C2.2.7]]). Read off the particle content from the ladder relations of $H$, $\mathbf P$ and the charges with the creation operators: mass from $E_{\mathbf p}$, charges from $[Q, a^\dagger]$, statistics from $[a^\dagger, a^\dagger] = 0$ ([[§C2.2 The Real Scalar Field#^thm-c2-2-6|Theorem §C2.2.6]], [[§C2.2 The Real Scalar Field#^thm-c2-2-8|Theorem §C2.2.8]], [[§C2.3 The Complex Scalar Field and Its Charge#^thm-c2-3-5|Theorem §C2.3.5]]). ^p1-6
+
+7. **Normalize relativistically.** Use $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,a^\dagger_{\mathbf p}|0\rangle$, $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ and the measure $d^3p/(2\pi)^32E_{\mathbf p}$ ([[§C2.2 The Real Scalar Field#^def-c2-2-3|Def. §C2.2.3]], [[§C2.2 The Real Scalar Field#^thm-c2-2-9|Theorem §C2.2.9]]); then $\langle0|\phi|\mathbf p\rangle$ is a plane wave ([[§C2.2 The Real Scalar Field#^thm-c2-2-10|Theorem §C2.2.10]]). Time dependence and covariance are recovered in the Heisenberg picture ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-1|Theorem §C2.5.1]]). ^p1-7
+
+## Instances
+
+| System | Steps 1–2 | Step 3 | Step 4 | Step 5 | Steps 6–7 |
+| --- | --- | --- | --- | --- | --- |
+| One oscillator (a single mode) | [[§C2.1 Canonical Quantization of Fields#^rem-c2-1-1\|Remark: The oscillator, recalled]] | — | [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-1\|QM Theorem §C3.4.1]] | [[§B4.1 Ladder Operators and the Spectrum#^thm-b4-1-4\|QM Theorem §B4.1.4]] | [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-1\|QM Theorem §C3.4.1]] |
+| Real scalar field | [[§C2.2 The Real Scalar Field#^mod-c2-2-1\|Model §C2.2.1]] | [[§C2.2 The Real Scalar Field#^thm-c2-2-2\|Theorem §C2.2.2]] | [[§C2.2 The Real Scalar Field#^thm-c2-2-4\|Theorem §C2.2.4]] | [[§C2.2 The Real Scalar Field#^thm-c2-2-5\|Theorem §C2.2.5]] | [[§C2.2 The Real Scalar Field#^thm-c2-2-8\|Theorem §C2.2.8]], [[§C2.2 The Real Scalar Field#^def-c2-2-3\|Def. §C2.2.3]] |
+| Complex scalar field | [[§C2.3 The Complex Scalar Field and Its Charge#^mod-c2-3-1\|Model §C2.3.1]] | [[§C2.3 The Complex Scalar Field and Its Charge#^thm-c2-3-2\|Theorem §C2.3.2]] | [[§C2.3 The Complex Scalar Field and Its Charge#^thm-c2-3-2\|Theorem §C2.3.2]] | [[§C2.3 The Complex Scalar Field and Its Charge#^thm-c2-3-3\|Theorem §C2.3.3]], [[§C2.3 The Complex Scalar Field and Its Charge#^thm-c2-3-4\|Theorem §C2.3.4]] | [[§C2.3 The Complex Scalar Field and Its Charge#^thm-c2-3-5\|Theorem §C2.3.5]] |
+| Klein–Gordon field in a box (Sakurai's normalization) | [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^def-c13-1-1\|QM Def. §C13.1.1]] | [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^def-c13-1-1\|QM Def. §C13.1.1]] | [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-6\|QM Theorem §C13.1.6]] | [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-6\|QM Theorem §C13.1.6]] | [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-7\|QM Theorem §C13.1.7]] |
+| Vector field | QFT C4 (planned) | | | | |
+| Dirac field | QFT C5 (planned) | | | | |
+
+## Pitfalls
+
+- **Distinct names.** In a product of two fields give the integration variables different names ($\mathbf p$, $\mathbf q$) and different exponentials; keep the index $-\mathbf p$ on creation operators until the delta function has been used ([[§C2.2 The Real Scalar Field#^rem-c2-2-1|Remark: Two bookkeeping rules]]).
+- **Order before you square.** $a$ and $a^\dagger$ do not commute: there is no "twice the cross term", and the two orderings must add, not cancel ([[§C2.1 Canonical Quantization of Fields#^rem-c2-1-1|Remark: The oscillator, recalled]]).
+- **The crossover.** For a complex field the momentum conjugate to $\phi$ is $\dot\phi^\dagger$, and $\phi$ fails to commute with $\pi$, not with $\pi^\dagger$; the extraction of $a_{\mathbf p}$ pairs $\phi$ with $\pi^\dagger$ ([[§C2.3 The Complex Scalar Field and Its Charge#^thm-c2-3-2|Theorem §C2.3.2]]).
+- **Real from complex.** Setting $b = a$ in a complex-field Hamiltonian overcounts by 2; the real field is one real component, not the complex field constrained to be real ([[§C2.3 The Complex Scalar Field and Its Charge#^rem-c2-3-1|Remark: The real field is a constrained complex field]]).
+- **$\delta^3(\mathbf 0)$ is a volume.** $(2\pi)^3\delta^3(\mathbf 0) = V$; a $\delta^3(\mathbf 0)$ in a commutator of two different momenta signals a dropped sign. Ordering constants are harmless in $H$ but not in $Q$ ([[§C2.3 The Complex Scalar Field and Its Charge#^rem-c2-3-2|Remark: Why the vacuum must be neutral]]).
+- **Conventions.** $E_{\mathbf p}$ is the lectures' $\omega_{\mathbf p}$ and $\pi$ their $\Pi$ ([[§C2.1 Canonical Quantization of Fields#^cau-c2-1-1|Caution: E_p, not ω_p]]); the slides' $\langle\mathbf p|\mathbf q\rangle$ lacks a $(2\pi)^3$ ([[§C2.2 The Real Scalar Field#^cau-c2-2-2|Caution: The slides' normalization]]); the overall sign and factor of a U(1) charge are conventions ([[§C2.3 The Complex Scalar Field and Its Charge#^cau-c2-3-1|Caution: Normalization and sign of the charge]]).
+- **Plane waves are not states.** $|\mathbf p\rangle$ has infinite norm; physical states are wave packets ([[§C2.2 The Real Scalar Field#^cau-c2-2-1|Caution: Plane-wave states are not normalizable]]).
