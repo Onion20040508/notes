@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # C2 The Quantum Scalar Field
 ← [[· C1 Preliminaries]] · ↑ [[Quantum Field Theory]] · [[· C3 Poincaré Symmetry and Particle States]] →
 
-**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (13), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (572)
+**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (13), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (1), [[· C5 The Quantum Spinor Field|C5 The Quantum Spinor Field]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (572)
 **Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (62), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (48), [[· C5 The Quantum Spinor Field|C5 The Quantum Spinor Field]] (138), [[· CA Mathematical Methods|CA Mathematical Methods]] (50)
 
 ## Sections

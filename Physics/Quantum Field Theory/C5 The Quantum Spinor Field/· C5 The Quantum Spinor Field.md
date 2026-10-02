@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C5 The Quantum Spinor Field
 ← [[· C3 Poincaré Symmetry and Particle States]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (110), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (138), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (88), [[· CA Mathematical Methods|CA Mathematical Methods]] (95)
-**Used by:** —
+**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (116), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (138), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (91), [[· CA Mathematical Methods|CA Mathematical Methods]] (96)
+**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (7), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (17)
 
 ## Sections
 - [[§C5.1 Weyl Spinors and SL(2,C)]] — 
