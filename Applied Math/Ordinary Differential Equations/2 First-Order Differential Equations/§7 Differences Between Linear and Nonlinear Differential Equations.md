@@ -37,7 +37,7 @@ So far every initial value problem had exactly one solution, given by a formula.
 The theorem asserts both the *existence* and the *uniqueness* of the solution, and it says where the solution lives: throughout any interval containing $t_0$ on which $p$ and $g$ are continuous. So a solution can be discontinuous, or fail to exist, only at points where $p$ or $g$ is discontinuous, and such points can usually be seen at a glance.
 
 > [!proof]+ Proof
-> The proof is contained in the derivation of the integrating factor in [[§4 Linear Differential Equations; Method of Integrating Factors|§4]] (BDP 2.1, equations (30) and (32)), looked at a little more closely. Let
+> The proof is contained in the derivation of the integrating factor, [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2]] (BDP 2.1, equations (30) and (32)), looked at a little more closely. Let
 >
 > $$
 > \mu(t) = \exp \int p(t)\,dt , \qquad (4)
@@ -63,7 +63,7 @@ The theorem asserts both the *existence* and the *uniqueness* of the solution, a
 
 ^pf-7-1
 
-*Uses:* [[§4 Linear Differential Equations; Method of Integrating Factors|§4]] (the integrating factor, BDP 2.1), [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (a continuous function has a differentiable antiderivative), [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]] (antiderivatives differ by a constant)
+*Uses:* [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|§4.2]] (the integrating factor), [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (a continuous function has a differentiable antiderivative), [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]] (antiderivatives differ by a constant)
 
 > [!remark]- Connections
 > - See also: [[§61 Linear Equations#^thm-61-1|Calc Thm. §61.1]] (Stewart's treatment of the integrating factor, without the interval of existence).
@@ -185,7 +185,7 @@ $$
 >
 > Both are continuous everywhere except on the line $y = 1$.
 >
-> **$y(0) = -1$.** A rectangle can be drawn about $(0, -1)$ that stays below $y = 1$, so on it $f$ and $\partial f/\partial y$ are continuous, and Theorem 2.4.2 gives a unique solution on some interval about $x = 0$. The rectangle can be stretched infinitely far in both $x$ directions, but that does not mean the solution exists for all $x$. Separating the variables ([[§5 Separable Differential Equations|§5]], BDP Example 2.2.2), $2(y - 1)\,dy = (3x^2 + 4x + 2)\,dx$ integrates to
+> **$y(0) = -1$.** A rectangle can be drawn about $(0, -1)$ that stays below $y = 1$, so on it $f$ and $\partial f/\partial y$ are continuous, and Theorem 2.4.2 gives a unique solution on some interval about $x = 0$. The rectangle can be stretched infinitely far in both $x$ directions, but that does not mean the solution exists for all $x$. Separating the variables ([[§5 Separable Differential Equations#^ex-5-1|Example §5.1]], BDP Example 2.2.2), $2(y - 1)\,dy = (3x^2 + 4x + 2)\,dx$ integrates to
 >
 > $$
 > y^2 - 2y = x^3 + 2x^2 + 2x + c ,
@@ -286,35 +286,19 @@ For a nonlinear problem satisfying the hypotheses of Theorem 2.4.2, the interval
 >
 > This becomes unbounded as $t \to 1/y_0$: the interval of existence is $-\infty < t < 1/y_0$ if $y_0 > 0$, and $1/y_0 < t < \infty$ if $y_0 < 0$ (for $y_0 = 0$ the solution is $y = 0$ for all $t$). The singularities of the solution of a nonlinear problem depend in an essential way on the initial condition, not only on the equation.
 >
-> **(b)** Find the explicit solution of
+> **(b)** The exam problem $\dfrac{dy}{dx} = -6e^{3x}y^2$, $y(0) = 3$, solved in [[§5 Separable Differential Equations#^ex-5-4|Example §5.4]](a), behaves the same way. Theorem 2.4.2 applies everywhere ($f = -6e^{3x}y^2$ and $\partial f/\partial y = -12e^{3x}y$ are continuous in the whole plane), and the solution
 >
 > $$
-> \frac{dy}{dx} = -6e^{3x} y^2, \qquad y(0) = 3,
+> y = \frac{3}{6e^{3x} - 5}
 > $$
 >
-> and the interval on which it exists.
->
-> Again $f = -6e^{3x}y^2$ and $\partial f/\partial y = -12e^{3x}y$ are continuous everywhere, so there is a unique solution near $x = 0$. Separating, $y^{-2}\,dy = -6e^{3x}\,dx$, and integrating,
+> exists only for $\frac13 \ln \frac56 < x < \infty$, blowing up as $x$ decreases to $\frac13 \ln\frac56 \approx -0.061$. With $y(0) = y_0 > 0$ instead, separating gives $-1/y = -2e^{3x} + 2 - 1/y_0$, that is,
 >
 > $$
-> -\frac1y = -2e^{3x} + C .
+> y = \frac{1}{2e^{3x} - 2 + 1/y_0} ,
 > $$
 >
-> At $x = 0$: $-\frac13 = -2 + C$, so $C = \frac53$. Then $\frac1y = 2e^{3x} - \frac53 = \frac{6e^{3x} - 5}{3}$, and
->
-> $$
-> y = \frac{3}{6e^{3x} - 5} .
-> $$
->
-> (Check: $y(0) = 3/1 = 3$, and $y' = -\dfrac{3 \cdot 18e^{3x}}{(6e^{3x} - 5)^2} = -6e^{3x} \Big(\dfrac{3}{6e^{3x} - 5}\Big)^2 = -6e^{3x}y^2$.) The denominator vanishes where $e^{3x} = \frac56$, that is, at $x = \frac13 \ln \frac56 \approx -0.061$, and it is positive to the right of that point. So the solution exists on
->
-> $$
-> \tfrac13 \ln \tfrac56 < x < \infty ,
-> $$
->
-> and $y \to +\infty$ as $x$ decreases to $\frac13 \ln \frac56$. As in part (a), the blow-up point depends on the initial value: with $y(0) = y_0 > 0$ the same steps give $y = 1/(2e^{3x} - 2 + 1/y_0)$, which blows up at $x = \frac13 \ln\big(1 - \frac{1}{2y_0}\big)$ when $y_0 > \frac12$ and exists for all $x$ when $0 < y_0 \le \frac12$.
->
-> *(The exam asks only for the explicit solution; the interval is added here.)*
+> whose denominator vanishes at $x = \frac13 \ln\big(1 - \frac{1}{2y_0}\big)$ when $y_0 > \frac12$, and never when $0 < y_0 \le \frac12$ (it decreases to $1/y_0 - 2 \ge 0$ as $x \to -\infty$ without reaching it). So the solution exists for all $x$ if $y_0 \le \frac12$, and only to the right of a point that moves toward $0$ as $y_0$ grows if $y_0 > \frac12$.
 >
 > *BDP: Example 2.4.4*
 > *Source: 331 Midterm (Fall 2021), Q2*
@@ -329,7 +313,7 @@ For a nonlinear problem satisfying the hypotheses of Theorem 2.4.2, the interval
 For a first-order linear equation a solution containing one arbitrary constant contains all solutions ((7), by Theorem §7.1). For nonlinear equations this may fail: a formula with an arbitrary constant may miss some solutions.
 
 > [!definition] Definition §7.1: General Solution
-> A **general solution** of a first-order differential equation is an expression containing one arbitrary constant from which *all* solutions follow by specifying the constant. BDP uses the term only for linear equations, where (7) is a general solution.
+> A **general solution** of a first-order differential equation is an expression containing one arbitrary constant from which *all* solutions follow by specifying the constant (as for $y' = ay - b$ in [[§2 Solutions of Some Differential Equations#^def-2-2|Definition §2.2]]). BDP uses the term only for linear equations, where (7) is a general solution.
 >
 > For nonlinear equations a one-parameter family of solutions need not be a general solution. For $y' = y^2$ (Example §7.4), the expression (22), $y = -1/(t + c)$, contains an arbitrary constant, but $y = 0$ for all $t$ is also a solution and is not obtained from (22) for any value of $c$. This could be anticipated: rewriting the equation in the form (21) required $y \ne 0$. Such "additional" solutions are common for nonlinear equations.
 >
@@ -354,11 +338,11 @@ For a linear problem, (8) gives the solution $y = \phi(t)$ explicitly: the value
 
 ^def-7-2
 
-If (26) is simple enough, for instance quadratic in $y$ as in Example §7.2, it can be solved for $y$ analytically. More often it cannot, and the value of $y$ for a given $t$ must be computed numerically; plotting several such pairs $(t, y)$ sketches the integral curve. Examples §7.2–§7.4 are nonlinear problems whose explicit solution is easy to find; Examples 1 and 3 of BDP 2.2 ([[§5 Separable Differential Equations|§5]]) are better left in implicit form, which is the more typical situation. More often than not it is impossible even to find an implicit expression for the solution of a first-order nonlinear equation.
+If (26) is simple enough, for instance quadratic in $y$ as in Example §7.2, it can be solved for $y$ analytically. More often it cannot, and the value of $y$ for a given $t$ must be computed numerically; plotting several such pairs $(t, y)$ sketches the integral curve. Examples §7.2–§7.4 are nonlinear problems whose explicit solution is easy to find; BDP's Examples 2.2.1 and 2.2.3 ([[§5 Separable Differential Equations#^ex-5-2|Example §5.2]]) are better left in implicit form, which is the more typical situation. More often than not it is impossible even to find an implicit expression for the solution of a first-order nonlinear equation.
 
 ## Graphical or Numerical Construction of Integral Curves
 
-Because exact solutions of nonlinear equations are so rarely available, methods that give approximate solutions or qualitative information are correspondingly important. A direction field ([[§1 Some Basic Mathematical Models; Direction Fields|§1]]) shows the qualitative form of the solutions and the regions of the $ty$-plane where they do something interesting. Graphical methods for autonomous equations follow in [[§8 Autonomous Differential Equations and Population Dynamics|§8]], and the simplest numerical method, Euler's, in [[§10 Numerical Approximations꞉ Euler's Method|§10]]. It is not necessary to study numerical algorithms in order to use the many software packages that plot approximate solutions of initial value problems.
+Because exact solutions of nonlinear equations are so rarely available, methods that give approximate solutions or qualitative information are correspondingly important. A direction field ([[§1 Some Basic Mathematical Models; Direction Fields#^def-1-2|Definition §1.2]]) shows the qualitative form of the solutions and the regions of the $ty$-plane where they do something interesting. Graphical methods for autonomous equations follow in [[§8 Autonomous Differential Equations and Population Dynamics|§8]], and the simplest numerical method, Euler's, in [[§10 Numerical Approximations꞉ Euler's Method|§10]]. It is not necessary to study numerical algorithms in order to use the many software packages that plot approximate solutions of initial value problems.
 
 ## Summary
 

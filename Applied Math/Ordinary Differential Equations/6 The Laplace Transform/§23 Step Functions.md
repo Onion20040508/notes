@@ -154,7 +154,7 @@ Throughout, functions are piecewise continuous and of exponential order, so thei
 
 ^pf-23-2
 
-*Uses:* [[§23 Step Functions#^def-23-1|Def. §23.1]], [[§23 Step Functions#^def-23-2|Def. §23.2]], [[§21 Definition of the Laplace Transform#^def-21-4|Def. §21.4]], [[§22 Solution of Initial Value Problems|§22]] (the inverse transform)
+*Uses:* [[§23 Step Functions#^def-23-1|Def. §23.1]], [[§23 Step Functions#^def-23-2|Def. §23.2]], [[§21 Definition of the Laplace Transform#^def-21-4|Def. §21.4]], [[§22 Solution of Initial Value Problems#^def-22-1|Def. §22.1]] (the inverse transform)
 
 With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^{-cs}/s$ again, in agreement with Theorem §23.1.
 
@@ -165,7 +165,7 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 > f(t) = \begin{cases} \sin t, & 0 \le t < \frac{\pi}{4}, \\[2pt] \sin t + \cos\big(t - \frac{\pi}{4}\big), & t \ge \frac{\pi}{4}. \end{cases}
 > $$
 >
-> Here $f(t) = \sin t + u_{\pi/4}(t)\cos\big(t - \frac{\pi}{4}\big)$, and the second term is the translation of $\cos t$ by $\pi/4$. By Theorem §23.2 and the table ([[§22 Solution of Initial Value Problems|§22]], Table 6.2.1),
+> Here $f(t) = \sin t + u_{\pi/4}(t)\cos\big(t - \frac{\pi}{4}\big)$, and the second term is the translation of $\cos t$ by $\pi/4$. By Theorem §23.2 and the table ([[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6]], Table 6.2.1),
 >
 > $$
 > \mathcal{L}\{f(t)\} = \mathcal{L}\{\sin t\} + e^{-\pi s/4}\mathcal{L}\{\cos t\} = \frac{1}{s^2 + 1} + e^{-\pi s/4}\frac{s}{s^2 + 1} = \frac{1 + s e^{-\pi s/4}}{s^2 + 1} .
@@ -205,7 +205,7 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 > [!remark] Remark: Method — Inverse Transforms Containing $e^{-cs}$
 > To find $\mathcal{L}^{-1}\{e^{-cs}G(s)\}$:
 > 1. Group the terms of $F(s)$ by their exponential factor, and handle each group separately (linearity).
-> 2. Ignore $e^{-cs}$ and find $g(t) = \mathcal{L}^{-1}\{G(s)\}$: partial fractions ([[§22 Solution of Initial Value Problems|§22]]), or completing the square (Theorem §23.3).
+> 2. Ignore $e^{-cs}$ and find $g(t) = \mathcal{L}^{-1}\{G(s)\}$: partial fractions ([[§22 Solution of Initial Value Problems#^rem-22-4|Method of §22]]), or completing the square (Theorem §23.3).
 > 3. Replace $t$ by $t - c$ *everywhere* in $g$, including inside exponentials, and multiply by $u_c(t)$: $\mathcal{L}^{-1}\{e^{-cs}G(s)\} = u_c(t)\,g(t - c)$ (Theorem §23.2).
 > 4. If a graph or a formula on each interval is wanted, write the answer piecewise.
 

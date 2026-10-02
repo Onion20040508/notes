@@ -28,7 +28,7 @@ The theory of a system of $n$ first-order linear equations $\mathbf{x}' = \mathb
 > \mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t) . \qquad (2)
 > $$
 >
-> A vector function $\mathbf{x} = \mathbf{x}(t)$ is a **solution** of (2) if its components satisfy (1). Throughout, $\mathbf{P}$ and $\mathbf{g}$ are continuous on an interval $\alpha < t < \beta$ (each $p_{ij}$ and $g_i$ is continuous there); by Theorem 7.1.2 ([[§27 Introduction to Systems of First-Order Linear Equations|§27]]) this guarantees solutions on that interval. Setting $\mathbf{g}(t) = \mathbf{0}$ gives the **homogeneous** system
+> A vector function $\mathbf{x} = \mathbf{x}(t)$ is a **solution** of (2) if its components satisfy (1). Throughout, $\mathbf{P}$ and $\mathbf{g}$ are continuous on an interval $\alpha < t < \beta$ (each $p_{ij}$ and $g_i$ is continuous there); by [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2) this guarantees solutions on that interval. Setting $\mathbf{g}(t) = \mathbf{0}$ gives the **homogeneous** system
 >
 > $$
 > \mathbf{x}' = \mathbf{P}(t)\mathbf{x} . \qquad (3)
@@ -179,13 +179,13 @@ The theory of a system of $n$ first-order linear equations $\mathbf{x}' = \mathb
 >
 > This is the linear system $\mathbf{X}(t_0)\mathbf{c} = \mathbf{y}$. Its determinant of coefficients is $W[\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}](t_0)$, which is nonzero because the solutions are independent at $t_0$ (Definition §30.2). So (13) has a unique solution $c_1, \ldots, c_n$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|Theorem §29.1]](a)).
 >
-> With these constants, $\mathbf{z}(t) = c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t)$ is a solution of (3) (Theorem §30.1) with $\mathbf{z}(t_0) = \mathbf{y} = \mathbf{x}(t_0)$. Both $\mathbf{z}$ and $\mathbf{x}$ solve the initial value problem $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$, $\mathbf{x}(t_0) = \mathbf{y}$, so by the uniqueness part of Theorem 7.1.2 ([[§27 Introduction to Systems of First-Order Linear Equations|§27]]), $\mathbf{x}(t) = \mathbf{z}(t)$ on $\alpha < t < \beta$. This is (11).
+> With these constants, $\mathbf{z}(t) = c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t)$ is a solution of (3) (Theorem §30.1) with $\mathbf{z}(t_0) = \mathbf{y} = \mathbf{x}(t_0)$. Both $\mathbf{z}$ and $\mathbf{x}$ solve the initial value problem $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$, $\mathbf{x}(t_0) = \mathbf{y}$, so by the uniqueness part of [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2), $\mathbf{x}(t) = \mathbf{z}(t)$ on $\alpha < t < \beta$. This is (11).
 >
 > **Exactly one way.** (BDP asserts this; here is why, as in Problem 15b.) If also $\mathbf{x}(t) = k_1\mathbf{x}^{(1)}(t) + \cdots + k_n\mathbf{x}^{(n)}(t)$, then evaluating at $t_0$ shows that $k_1, \ldots, k_n$ also solve (13), whose solution is unique; so $k_j = c_j$ for all $j$.
 
 ^pf-30-2
 
-*Uses:* [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|§30.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-2|Def. §30.2]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|§29.1]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|§29.2]], [[§27 Introduction to Systems of First-Order Linear Equations|§27]] (Theorem 7.1.2, existence and uniqueness)
+*Uses:* [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|§30.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-2|Def. §30.2]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|§29.1]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|§29.2]], [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]] (existence and uniqueness)
 
 > [!definition] Definition §30.3: Fundamental Set of Solutions; General Solution
 > Any set of solutions $\{\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}\}$ of (3) that is linearly independent at each point of $\alpha < t < \beta$ is a **fundamental set of solutions** on that interval. For a fundamental set, the expression (11) with arbitrary constants $c_1, \ldots, c_n$ contains every solution of (3) (Theorem §30.2), and only solutions (Theorem §30.1); it is called the **general solution** of (3).
@@ -241,7 +241,7 @@ The theory of a system of $n$ first-order linear equations $\mathbf{x}' = \mathb
 >
 > For $m \ne k$, the matrix in the $m$th term has two equal rows, so its determinant is $0$ ([[§21 Properties of Determinants#^cor-21-5|235 Cor. §21.5]]). Only $m = k$ survives, and $\det\mathbf{X}_k = p_{kk}\det\mathbf{X} = p_{kk}W$. Summing over $k$ gives (14).
 >
-> **Step 3: solve (14).** Equation (14) is the first-order linear equation $W' - \operatorname{tr}\mathbf{P}(t)\,W = 0$ with continuous coefficient. With the integrating factor $\mu(t) = \exp\big(-\int_{t_0}^t \operatorname{tr}\mathbf{P}(s)\,ds\big)$ ([[§4 Linear Differential Equations; Method of Integrating Factors|§4]]), $(\mu W)' = \mu(W' - \operatorname{tr}\mathbf{P}\,W) = 0$, so $\mu W$ is constant, equal to its value $W(t_0)$ at $t_0$:
+> **Step 3: solve (14).** Equation (14) is the first-order linear equation $W' - \operatorname{tr}\mathbf{P}(t)\,W = 0$ with continuous coefficient. With the integrating factor $\mu(t) = \exp\big(-\int_{t_0}^t \operatorname{tr}\mathbf{P}(s)\,ds\big)$ ([[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2]]), $(\mu W)' = \mu(W' - \operatorname{tr}\mathbf{P}\,W) = 0$, so $\mu W$ is constant, equal to its value $W(t_0)$ at $t_0$:
 >
 > $$
 > W(t) = W(t_0)\exp\Big(\int_{t_0}^t \operatorname{tr}\mathbf{P}(s)\,ds\Big) .
@@ -249,16 +249,16 @@ The theory of a system of $n$ first-order linear equations $\mathbf{x}' = \mathb
 >
 > This is (15). The exponential is never zero, so $W(t) = 0$ for all $t$ if $W(t_0) = 0$, and $W(t) \ne 0$ for all $t$ if $W(t_0) \ne 0$.
 >
-> **Second proof** (BDP's alternative, Problem 14). Suppose the solutions are linearly dependent at one point $t_0$: there are constants $c_1, \ldots, c_n$, not all zero, with $c_1\mathbf{x}^{(1)}(t_0) + \cdots + c_n\mathbf{x}^{(n)}(t_0) = \mathbf{0}$. Then $\mathbf{z}(t) = c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t)$ solves (3) with $\mathbf{z}(t_0) = \mathbf{0}$. So does the zero function, and by the uniqueness part of Theorem 7.1.2, $\mathbf{z}(t) = \mathbf{0}$ for every $t$ in $\alpha < t < \beta$: the same constants make the solutions dependent at every point. So if $W$ vanishes at one point, it vanishes everywhere.
+> **Second proof** (BDP's alternative, Problem 14). Suppose the solutions are linearly dependent at one point $t_0$: there are constants $c_1, \ldots, c_n$, not all zero, with $c_1\mathbf{x}^{(1)}(t_0) + \cdots + c_n\mathbf{x}^{(n)}(t_0) = \mathbf{0}$. Then $\mathbf{z}(t) = c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t)$ solves (3) with $\mathbf{z}(t_0) = \mathbf{0}$. So does the zero function, and by the uniqueness part of [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]], $\mathbf{z}(t) = \mathbf{0}$ for every $t$ in $\alpha < t < \beta$: the same constants make the solutions dependent at every point. So if $W$ vanishes at one point, it vanishes everywhere.
 
 ^pf-30-3
 
-*Uses:* [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-1|Def. §30.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-2|Def. §30.2]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|§30.1]], [[§4 Linear Differential Equations; Method of Integrating Factors|§4]] (integrating factor), [[§27 Introduction to Systems of First-Order Linear Equations|§27]] (Theorem 7.1.2, uniqueness), [[§34 Determinants#^ladr-9-46|LADR 9.46]] (Leibniz formula), [[§21 Properties of Determinants#^thm-21-11|235 Thm. §21.11]], [[§21 Properties of Determinants#^thm-21-6|235 Thm. §21.6]], [[§21 Properties of Determinants#^cor-21-5|235 Cor. §21.5]]
+*Uses:* [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-1|Def. §30.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-2|Def. §30.2]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|§30.1]], [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|§4.2]] (integrating factor), [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]] (uniqueness), [[§34 Determinants#^ladr-9-46|LADR 9.46]] (Leibniz formula), [[§21 Properties of Determinants#^thm-21-11|235 Thm. §21.11]], [[§21 Properties of Determinants#^thm-21-6|235 Thm. §21.6]], [[§21 Properties of Determinants#^cor-21-5|235 Cor. §21.5]]
 
 > [!remark]- Connections
 > - Steps 1–2 are Jacobi's formula for the derivative of the determinant, [[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|591 Prop. §5.9]] ([[Jacobi's Formula]]), applied along the curve $t \mapsto \mathbf{X}(t)$: where $\mathbf{X}$ is invertible, $\frac{d}{dt}\det\mathbf{X} = \det\mathbf{X}\,\operatorname{tr}(\mathbf{X}^{-1}\mathbf{X}') = \det\mathbf{X}\,\operatorname{tr}(\mathbf{X}^{-1}\mathbf{P}\mathbf{X}) = \operatorname{tr}\mathbf{P}\,\det\mathbf{X}$, by [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]] ($\operatorname{tr}AB = \operatorname{tr}BA$).
 
-The theorem means that to decide whether $n$ solutions form a fundamental set, it suffices to evaluate their Wronskian at one convenient point. Compare Abel's theorem for second-order equations, Theorem 3.2.7 ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian|§14]]); it is the case $n = 2$, $\mathbf{P} = \begin{pmatrix} 0 & 1 \\ -q & -p \end{pmatrix}$, where $\operatorname{tr}\mathbf{P} = -p$.
+The theorem means that to decide whether $n$ solutions form a fundamental set, it suffices to evaluate their Wronskian at one convenient point. Compare Abel's theorem for second-order equations, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|Theorem §14.8]] (BDP Theorem 3.2.7); it is the case $n = 2$, $\mathbf{P} = \begin{pmatrix} 0 & 1 \\ -q & -p \end{pmatrix}$, where $\operatorname{tr}\mathbf{P} = -p$.
 
 > [!theorem] Theorem §30.4: Existence of a Fundamental Set
 > Let $\mathbf{e}^{(1)} = (1, 0, \ldots, 0)^T$, $\mathbf{e}^{(2)} = (0, 1, 0, \ldots, 0)^T$, …, $\mathbf{e}^{(n)} = (0, \ldots, 0, 1)^T$, and let $\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}$ be the solutions of the system (3) that satisfy the initial conditions
@@ -274,13 +274,13 @@ The theorem means that to decide whether $n$ solutions form a fundamental set, i
 ^thm-30-4
 
 > [!proof]+ Proof
-> Theorem 7.1.2 ([[§27 Introduction to Systems of First-Order Linear Equations|§27]]) guarantees that each initial value problem in (16) has a unique solution on $\alpha < t < \beta$. At $t_0$ the matrix $\mathbf{X}(t_0)$ has columns $\mathbf{e}^{(1)}, \ldots, \mathbf{e}^{(n)}$, so it is the identity matrix and $W(t_0) = \det\mathbf{I} = 1 \ne 0$. By Abel's theorem (Theorem §30.3), $W(t) \ne 0$ for every $t$ in the interval, so the solutions are linearly independent at each point (Definition §30.2): they form a fundamental set (Definition §30.3).
+> [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2) guarantees that each initial value problem in (16) has a unique solution on $\alpha < t < \beta$. At $t_0$ the matrix $\mathbf{X}(t_0)$ has columns $\mathbf{e}^{(1)}, \ldots, \mathbf{e}^{(n)}$, so it is the identity matrix and $W(t_0) = \det\mathbf{I} = 1 \ne 0$. By Abel's theorem (Theorem §30.3), $W(t) \ne 0$ for every $t$ in the interval, so the solutions are linearly independent at each point (Definition §30.2): they form a fundamental set (Definition §30.3).
 
 ^pf-30-4
 
-*Uses:* [[§27 Introduction to Systems of First-Order Linear Equations|§27]] (Theorem 7.1.2), [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-2|Def. §30.2]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3|§30.3]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Def. §30.3]]
+*Uses:* [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-2|Def. §30.2]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3|§30.3]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Def. §30.3]]
 
-Once one fundamental set is known, others are obtained as independent linear combinations of it. For theoretical purposes the set of Theorem §30.4 is usually the simplest; as a matrix it reappears as the fundamental matrix $\mathbf{\Phi}(t)$ with $\mathbf{\Phi}(t_0) = \mathbf{I}$ in [[§33★ Fundamental Matrices|§33★]].
+Once one fundamental set is known, others are obtained as independent linear combinations of it. For theoretical purposes the set of Theorem §30.4 is usually the simplest; as a matrix it reappears as the fundamental matrix $\mathbf{\Phi}(t)$ with $\mathbf{\Phi}(t_0) = \mathbf{I}$ in [[§33★ Fundamental Matrices#^def-33-2|Definition §33.2]].
 
 > [!example] Example §30.3: The Fundamental Set Normalized at t = 0
 > For the system (6) of Example §30.1, find the fundamental set of Theorem §30.4 with $t_0 = 0$.
@@ -304,7 +304,7 @@ Once one fundamental set is known, others are obtained as independent linear com
 
 ## Real-Valued Solutions
 
-Just as for second-order linear equations (Theorem 3.2.6, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian|§14]]), a system with real coefficients may have complex-valued solutions, and then real solutions can be extracted from them.
+Just as for second-order linear equations ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-6|Theorem §14.6]], BDP Theorem 3.2.6), a system with real coefficients may have complex-valued solutions, and then real solutions can be extracted from them.
 
 > [!theorem] Theorem §30.5: Real and Imaginary Parts of a Complex Solution
 > Consider the system (3), $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$, where each element of $\mathbf{P}$ is a real-valued continuous function. If $\mathbf{x} = \mathbf{u}(t) + i\mathbf{v}(t)$ is a complex-valued solution of (3), with $\mathbf{u}$ and $\mathbf{v}$ real, then its real part $\mathbf{u}(t)$ and its imaginary part $\mathbf{v}(t)$ are also solutions of this equation.

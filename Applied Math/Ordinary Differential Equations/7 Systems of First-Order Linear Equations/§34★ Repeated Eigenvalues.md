@@ -321,7 +321,7 @@ A matrix can be diagonalized as in [[§33★ Fundamental Matrices#^thm-33-7|Theo
 > \hat{\mathbf{\Psi}}(t) = \begin{pmatrix} e^{2t} & te^{2t} \\ 0 & e^{2t} \end{pmatrix} . \qquad (34)
 > $$
 >
-> Since $\hat{\mathbf{\Psi}}(0) = \mathbf{I}$, this is $e^{\mathbf{J}t}$ ([[§33★ Fundamental Matrices#^thm-33-4|Theorem §33.4]]), in agreement with Proposition §34.4 below.
+> Since $\hat{\mathbf{\Psi}}(0) = \mathbf{I}$, this is $e^{\mathbf{J}t}$ ([[§33★ Fundamental Matrices#^thm-33-4|Theorem §33.4]]), in agreement with Proposition §34.3 below.
 >
 > **Back to $\mathbf{x}$.**
 >
@@ -335,7 +335,7 @@ A matrix can be diagonalized as in [[§33★ Fundamental Matrices#^thm-33-7|Theo
 
 ^ex-34-3
 
-> [!theorem] Proposition §34.4: Exponentials of Jordan Blocks
+> [!theorem] Proposition §34.3: Exponentials of Jordan Blocks
 > Let $\lambda$ be a real number.
 >
 > (a) If $\mathbf{J} = \begin{pmatrix} \lambda & 1 \\ 0 & \lambda \end{pmatrix}$, then
@@ -352,7 +352,7 @@ A matrix can be diagonalized as in [[§33★ Fundamental Matrices#^thm-33-7|Theo
 >
 > *BDP: Problems 7.8.19 and 7.8.21*
 
-^prop-34-4
+^prop-34-3
 
 > [!proof]+ Proof
 > **Powers**, by induction on $k$; at $k = 1$ the formulas give $\mathbf{J}$ (read $\frac12k(k-1)\lambda^{k-2} = 0$ for $k = 1$). In (a), $\mathbf{J}^{k+1} = \mathbf{J}^k\mathbf{J}$ has $(1, 2)$ entry $\lambda^k \cdot 1 + k\lambda^{k-1} \cdot \lambda = (k+1)\lambda^k$, and its other entries are clearly $\lambda^{k+1}$, $0$, $\lambda^{k+1}$. In (b) the diagonal and the first superdiagonal work the same way, and the $(1, 3)$ entry of $\mathbf{J}^k\mathbf{J}$ is
@@ -375,7 +375,7 @@ A matrix can be diagonalized as in [[§33★ Fundamental Matrices#^thm-33-7|Theo
 >
 > ([[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]]). The entries below the diagonal are $0$ in every power.
 
-^pf-34-4
+^pf-34-3
 
 *Uses:* [[§33★ Fundamental Matrices#^def-33-3|Def. §33.3]], [[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]]
 
@@ -399,7 +399,7 @@ A matrix can be diagonalized as in [[§33★ Fundamental Matrices#^thm-33-7|Theo
 >   \boldsymbol{\xi}e^{\rho t}, \qquad \boldsymbol{\xi}te^{\rho t} + \boldsymbol{\eta}e^{\rho t}, \qquad \boldsymbol{\xi}\frac{t^2}{2}e^{\rho t} + \boldsymbol{\eta}te^{\rho t} + \boldsymbol{\zeta}e^{\rho t},
 >   $$
 >
->   where $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\xi} = \mathbf{0}$, $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\eta} = \boldsymbol{\xi}$, $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\zeta} = \boldsymbol{\eta}$: a chain of generalized eigenvectors. (Substituting the third: its derivative is $\rho$ times itself plus $\boldsymbol{\xi}te^{\rho t} + \boldsymbol{\eta}e^{\rho t}$, and so is $\mathbf{A}$ times it, by the three equations.) The Jordan form is the $3 \times 3$ block of Proposition §34.4(b).
+>   where $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\xi} = \mathbf{0}$, $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\eta} = \boldsymbol{\xi}$, $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\zeta} = \boldsymbol{\eta}$: a chain of generalized eigenvectors. (Substituting the third: its derivative is $\rho$ times itself plus $\boldsymbol{\xi}te^{\rho t} + \boldsymbol{\eta}e^{\rho t}$, and so is $\mathbf{A}$ times it, by the three equations.) The Jordan form is the $3 \times 3$ block of Proposition §34.3(b).
 > - **Two eigenvectors $\boldsymbol{\xi}^{(1)}, \boldsymbol{\xi}^{(2)}$:** two solutions $\boldsymbol{\xi}^{(i)}e^{\rho t}$, and a third $\boldsymbol{\xi}te^{\rho t} + \boldsymbol{\eta}e^{\rho t}$, where now $\boldsymbol{\xi}$ must be a suitable linear combination of $\boldsymbol{\xi}^{(1)}$ and $\boldsymbol{\xi}^{(2)}$ for $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\eta} = \boldsymbol{\xi}$ to be solvable. Alternatively choose $\boldsymbol{\eta}$ with $(\mathbf{A} - \rho\mathbf{I})^2\boldsymbol{\eta} = \mathbf{0}$, independent of the eigenvectors, and set $\boldsymbol{\xi} = (\mathbf{A} - \rho\mathbf{I})\boldsymbol{\eta}$. The Jordan form has one $2 \times 2$ block and one $1 \times 1$ block for $\rho$.
 >
 > For large $n$ there may be eigenvalues of high algebraic multiplicity $m$ and much lower geometric multiplicity $q$, giving $m - q$ generalized eigenvectors, and repeated complex eigenvalues when $n \ge 4$. The arithmetic is prohibitive by hand even for $n = 3$ or $4$, so software is used routinely. And when the entries of $\mathbf{A}$ come from measurements, it may not even be clear whether two eigenvalues are equal or merely close together.

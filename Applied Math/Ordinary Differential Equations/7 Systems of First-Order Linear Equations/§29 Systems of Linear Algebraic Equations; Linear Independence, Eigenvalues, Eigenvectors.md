@@ -11,7 +11,7 @@ tags: [ordinary-differential-equations, math331]
 
 *Boyce–DiPrima, Section 7.3.*
 
-This section collects the linear algebra that Chapter 7 runs on: when $\mathbf{A}\mathbf{x} = \mathbf{b}$ is solvable, when $n$ vectors are linearly independent (exactly when their determinant is nonzero), and how to find eigenvalues and eigenvectors. BDP states these facts as a summary and gives no proofs. Their home is [[Applied Linear Algebra]] (Lay), and each box below links there. What is new compared with Lay is the setting Chapter 7 needs: complex scalars and vectors, the inner product $(\mathbf{x}, \mathbf{y})$ with conjugation from [[§28 Matrices|§28]], linear independence of vector *functions* on an interval, and the special behavior of Hermitian matrices.
+This section collects the linear algebra that Chapter 7 runs on: when $\mathbf{A}\mathbf{x} = \mathbf{b}$ is solvable, when $n$ vectors are linearly independent (exactly when their determinant is nonzero), and how to find eigenvalues and eigenvectors. BDP states these facts as a summary and gives no proofs. Their home is [[Applied Linear Algebra]] (Lay), and each box below links there. What is new compared with Lay is the setting Chapter 7 needs: complex scalars and vectors, the inner product $(\mathbf{x}, \mathbf{y})$ with conjugation ([[§28 Matrices#^def-28-3|Definition §28.3]]), linear independence of vector *functions* on an interval, and the special behavior of Hermitian matrices.
 
 ## Systems of Linear Algebraic Equations
 
@@ -55,7 +55,7 @@ This section collects the linear algebra that Chapter 7 runs on: when $\mathbf{A
 > (\mathbf{b}, \mathbf{y}) = 0 \quad \text{for all vectors } \mathbf{y} \text{ with } \mathbf{A}^*\mathbf{y} = \mathbf{0}, \qquad (5)
 > $$
 >
-> where $\mathbf{A}^*$ is the adjoint of $\mathbf{A}$ ([[§28 Matrices|§28]]). If (5) holds, (2) has infinitely many solutions, all of the form
+> where $\mathbf{A}^*$ is the adjoint of $\mathbf{A}$ ([[§28 Matrices#^def-28-1|Definition §28.1]]). If (5) holds, (2) has infinitely many solutions, all of the form
 >
 > $$
 > \mathbf{x} = \mathbf{x}^{(0)} + \boldsymbol{\xi}, \qquad (6)
@@ -355,7 +355,7 @@ With a repeated eigenvalue there may be fewer than $n$ independent eigenvectors,
 ^thm-29-5
 
 > [!proof]- Proof
-> *BDP outlines 1 and 3 in Problems 7.3.27–28 and omits 2 and 4; see the Connections below.* Recall $(\mathbf{x}, \mathbf{y}) = \sum_i x_i\bar y_i$ ([[§28 Matrices|§28]]), which is linear in $\mathbf{x}$, satisfies $(\mathbf{x}, c\mathbf{y}) = \bar c\,(\mathbf{x}, \mathbf{y})$, and has $(\mathbf{x}, \mathbf{x}) = \sum_i |x_i|^2 > 0$ for $\mathbf{x} \ne \mathbf{0}$.
+> *BDP outlines 1 and 3 in Problems 7.3.27–28 and omits 2 and 4; see the Connections below.* Recall $(\mathbf{x}, \mathbf{y}) = \sum_i x_i\bar y_i$ ([[§28 Matrices#^def-28-3|Definition §28.3]]), which is linear in $\mathbf{x}$, satisfies $(\mathbf{x}, c\mathbf{y}) = \bar c\,(\mathbf{x}, \mathbf{y})$, and has $(\mathbf{x}, \mathbf{x}) = \sum_i |x_i|^2 > 0$ for $\mathbf{x} \ne \mathbf{0}$.
 >
 > **The adjoint identity** (Problem 21). For any $\mathbf{A}$,
 >
@@ -385,7 +385,7 @@ With a repeated eigenvalue there may be fewer than $n$ independent eigenvectors,
 
 ^pf-29-5
 
-*Uses:* [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-4|Def. §29.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-6|Def. §29.6]]
+*Uses:* [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-4|Def. §29.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-6|Def. §29.6]], [[§28 Matrices#^def-28-1|Def. §28.1]] (adjoint), [[§28 Matrices#^def-28-3|Def. §28.3]] (inner product)
 
 > [!remark]- Connections
 > - Rigorous treatment: real eigenvalues [[§22 Self-Adjoint and Normal Operators#^ladr-7-12|LADR 7.12]], orthogonal eigenvectors [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]], and statements 2 and 4, the spectral theorems [[§23 Spectral Theorem#^ladr-7-29|LADR 7.29]] (real symmetric) and [[§23 Spectral Theorem#^ladr-7-31|LADR 7.31]] (complex; Hermitian matrices are normal).

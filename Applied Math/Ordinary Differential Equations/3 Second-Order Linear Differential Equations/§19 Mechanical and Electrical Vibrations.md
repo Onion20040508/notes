@@ -75,13 +75,13 @@ A mass $m$ hangs at rest on a vertical spring of natural length $l$ and stretche
 > mu''(t) = mg - k\big(L + u(t)\big) - \gamma u'(t) + F(t) . \qquad (6)
 > $$
 >
-> By (2), $mg - kL = 0$, and what remains is (7). Dividing by $m$ puts (7) in the form $u'' + (\gamma/m)u' + (k/m)u = F/m$ with constant (hence continuous) coefficients, so the existence and uniqueness theorem ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian|§14]], Theorem 3.2.1) gives exactly one solution with the data (8), for all $t$.
+> By (2), $mg - kL = 0$, and what remains is (7). Dividing by $m$ puts (7) in the form $u'' + (\gamma/m)u' + (k/m)u = F/m$ with constant (hence continuous) coefficients, so the existence and uniqueness theorem ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]], Theorem 3.2.1) gives exactly one solution with the data (8), for all $t$.
 >
 > Equation (7) is only approximate: Hooke's law and (5) are approximations for small displacements and moderate speeds, and the mass of the spring has been neglected.
 
 ^pf-19-1
 
-*Uses:* [[§19 Mechanical and Electrical Vibrations#^def-19-1|Def. §19.1]], [[§19 Mechanical and Electrical Vibrations#^def-19-2|Def. §19.2]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian|§14]] (Theorem 3.2.1)
+*Uses:* [[§19 Mechanical and Electrical Vibrations#^def-19-1|Def. §19.1]], [[§19 Mechanical and Electrical Vibrations#^def-19-2|Def. §19.2]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|§14.1]] (Theorem 3.2.1)
 
 > [!remark] Remark: Method — Setting Up a Spring–Mass Problem
 > 1. **Units.** Fix one unit of length (feet *or* inches, metres *or* centimetres) and of time, and convert all data. In English units weights are given in pounds and $g = 32$ ft/s$^2$.
@@ -127,7 +127,7 @@ Its characteristic equation $mr^2 + k = 0$ has roots $r = \pm i\sqrt{k/m}$.
 ^prop-19-2
 
 > [!proof]+ Proof
-> The roots $r = \pm i\omega_0$ have real part $0$, so (12) is the general solution by the complex-root case ([[§15 Complex Roots of the Characteristic Equation|§15]]). If $A = B = 0$ take $R = 0$. Otherwise let $R = \sqrt{A^2 + B^2} > 0$. The point $(A/R, B/R)$ lies on the unit circle, so there is an angle $\delta$ with $\cos\delta = A/R$ and $\sin\delta = B/R$; that is (16), and then $\tan\delta = B/A$ when $A \neq 0$. By the addition formula for cosine,
+> The roots $r = \pm i\omega_0$ have real part $0$, so (12) is the general solution by the complex-root case ([[§15 Complex Roots of the Characteristic Equation#^thm-15-2|Theorem §15.2]]). If $A = B = 0$ take $R = 0$. Otherwise let $R = \sqrt{A^2 + B^2} > 0$. The point $(A/R, B/R)$ lies on the unit circle, so there is an angle $\delta$ with $\cos\delta = A/R$ and $\sin\delta = B/R$; that is (16), and then $\tan\delta = B/A$ when $A \neq 0$. By the addition formula for cosine,
 >
 > $$
 > R\cos(\omega_0 t - \delta) = R\cos\delta\cos(\omega_0 t) + R\sin\delta\sin(\omega_0 t) = A\cos(\omega_0 t) + B\sin(\omega_0 t) . \qquad (15)
@@ -135,7 +135,7 @@ Its characteristic equation $mr^2 + k = 0$ has roots $r = \pm i\sqrt{k/m}$.
 
 ^pf-19-2
 
-*Uses:* [[§15 Complex Roots of the Characteristic Equation|§15]] (general solution for complex roots), [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas)
+*Uses:* [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|§15.2]] (general solution for complex roots), [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas)
 
 > [!definition] Definition §19.3: Natural Frequency, Period, Amplitude, Phase
 > The motion (14) is **simple harmonic motion**: a displaced cosine wave. Its
@@ -228,7 +228,7 @@ $$
 ^thm-19-3
 
 > [!proof]+ Proof
-> **The general solutions.** These are the three root cases: distinct real roots ([[§13 Homogeneous Differential Equations with Constant Coefficients|§13]]), the repeated root $-\gamma/(2m)$ ([[§16 Repeated Roots; Reduction of Order|§16]]), and complex roots $-\gamma/(2m) \pm i\mu$ ([[§15 Complex Roots of the Characteristic Equation|§15]]).
+> **The general solutions.** These are the three root cases: distinct real roots ([[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|Theorem §13.2]]), the repeated root $-\gamma/(2m)$ ([[§16 Repeated Roots; Reduction of Order#^thm-16-1|Theorem §16.1]]), and complex roots $-\gamma/(2m) \pm i\mu$ ([[§15 Complex Roots of the Characteristic Equation#^thm-15-2|Theorem §15.2]]).
 >
 > **Decay.** Since $m, \gamma, k > 0$, we have $\gamma^2 - 4km < \gamma^2$. In case (23), $0 < \sqrt{\gamma^2 - 4km} < \gamma$, so both roots $\frac{-\gamma \pm \sqrt{\gamma^2 - 4km}}{2m}$ are negative and $e^{r_1t}, e^{r_2t} \to 0$. In case (24), $te^{-\gamma t/(2m)} \to 0$ because an exponential beats any power of $t$. In case (25), $|A\cos\mu t + B\sin\mu t| \le |A| + |B|$, and the factor $e^{-\gamma t/(2m)} \to 0$.
 >
@@ -238,7 +238,7 @@ $$
 
 ^pf-19-3
 
-*Uses:* [[§13 Homogeneous Differential Equations with Constant Coefficients|§13]], [[§15 Complex Roots of the Characteristic Equation|§15]], [[§16 Repeated Roots; Reduction of Order|§16]] (the three root cases), [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]]
+*Uses:* [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|§13.2]], [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|§15.2]], [[§16 Repeated Roots; Reduction of Order#^thm-16-1|§16.1]] (the three root cases), [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]]
 
 > [!definition] Definition §19.4: Underdamped, Critically Damped, Overdamped
 > For $mu'' + \gamma u' + ku = 0$:

@@ -273,7 +273,7 @@ is known.
 *Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-1|Def. §14.1]]
 
 > [!remark]- Connections
-> - Equation (32) is first-order linear and separable in $w = v'$, so it is solved by Stewart's integrating factor, [[§61 Linear Equations#^thm-61-1|Calc Thm. §61.1]], or by separation of variables, [[§59 Separable Equations#^thm-59-1|Calc Thm. §59.1]]. This subject's treatments: [[§4 Linear Differential Equations; Method of Integrating Factors|§4]] (BDP 2.1) and [[§5 Separable Differential Equations|§5]] (BDP 2.2).
+> - Equation (32) is first-order linear and separable in $w = v'$, so it is solved by Stewart's integrating factor, [[§61 Linear Equations#^thm-61-1|Calc Thm. §61.1]], or by separation of variables, [[§59 Separable Equations#^thm-59-1|Calc Thm. §59.1]]. This subject's treatments: [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2]] and [[§5 Separable Differential Equations#^thm-5-1|Theorem §5.1]].
 
 > [!remark] Remark: Method — Reduction of Order
 > To find a second solution of $y'' + p(t)y' + q(t)y = 0$ from a known solution $y_1$:

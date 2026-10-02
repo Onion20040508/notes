@@ -64,7 +64,7 @@ This section explains why two solutions are enough. The existence and uniqueness
 *BDP omits the proof ("fairly difficult"; it refers to Coddington, Chapter 6, Section 8). The first-order theorem is proved by Picard iteration in [[§11 The Existence and Uniqueness Theorem|§11]] (Theorem 2.8.1); the second-order linear equation is the case $n = 2$ of the existence and uniqueness theorem for linear systems stated in [[§27 Introduction to Systems of First-Order Linear Equations|§27]] (Theorem 7.1.2), which BDP does not prove either.*
 
 > [!remark] Remark: What the Theorem Says
-> Three things: the problem *has* a solution (existence); it has *only one* (uniqueness); and the solution is defined, and twice differentiable, *throughout* the interval $I$ where the coefficients are continuous. This is the second-order analog of Theorem 2.4.1 for first-order linear equations ([[§7 Differences Between Linear and Nonlinear Differential Equations|§7]]). Existence is sometimes visible directly: $y = \frac12e^t + \frac32e^{-t}$ solves $y'' - y = 0$, $y(0) = 2$, $y'(0) = -1$ on $(-\infty, \infty)$ ([[§13 Homogeneous Differential Equations with Constant Coefficients#^ex-13-1|Example §13.1]]). That it is the *only* solution is not obvious; the theorem guarantees it. Unlike first-order linear equations, second-order equations generally have no useful solution formula, so the proof has to work without one.
+> Three things: the problem *has* a solution (existence); it has *only one* (uniqueness); and the solution is defined, and twice differentiable, *throughout* the interval $I$ where the coefficients are continuous. This is the second-order analog of [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] (Theorem 2.4.1) for first-order linear equations. Existence is sometimes visible directly: $y = \frac12e^t + \frac32e^{-t}$ solves $y'' - y = 0$, $y(0) = 2$, $y'(0) = -1$ on $(-\infty, \infty)$ ([[§13 Homogeneous Differential Equations with Constant Coefficients#^ex-13-1|Example §13.1]]). That it is the *only* solution is not obvious; the theorem guarantees it. Unlike first-order linear equations, second-order equations generally have no useful solution formula, so the proof has to work without one.
 
 ^rem-14-1
 
@@ -450,7 +450,7 @@ $$
 > W' + p(t)W = 0 . \qquad (27)
 > $$
 >
-> This is a first-order equation that is both linear ([[§4 Linear Differential Equations; Method of Integrating Factors|§4]], BDP 2.1) and separable ([[§5 Separable Differential Equations|§5]], BDP 2.2). With the integrating factor $\mu(t) = \exp\big(\int p(t)\,dt\big)$ (an antiderivative of $p$ exists on $I$ because $p$ is continuous), (27) becomes $(\mu W)' = 0$, so $\mu W = c$ for a constant $c$ on the interval $I$, and
+> This is a first-order equation that is both linear ([[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2]]) and separable ([[§5 Separable Differential Equations#^thm-5-1|Theorem §5.1]]). With the integrating factor $\mu(t) = \exp\big(\int p(t)\,dt\big)$ (an antiderivative of $p$ exists on $I$ because $p$ is continuous), (27) becomes $(\mu W)' = 0$, so $\mu W = c$ for a constant $c$ on the interval $I$, and
 >
 > $$
 > W(t) = c\exp\Big(-\int p(t)\,dt\Big) . \qquad (28)
@@ -460,7 +460,7 @@ $$
 
 ^pf-14-8
 
-*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-2|Def. §14.2]], [[§4 Linear Differential Equations; Method of Integrating Factors|§4]] (integrating factor, BDP 2.1)
+*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-2|Def. §14.2]], [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|§4.2]]
 
 > [!remark] Remark: Consequences of Abel's Theorem
 > - The Wronskians of any two fundamental sets of the same equation differ only by a multiplicative constant, and the Wronskian of any fundamental set can be found, up to that constant, without solving the equation.

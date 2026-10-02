@@ -143,7 +143,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 > [!proof]+ Proof
 > The derivation above shows how (30) was found; here we check directly that it works.
 >
-> **The integrands are continuous.** $W = W[y_1, y_2]$ is continuous on $I$, and it is never zero there: since $y_1, y_2$ is a fundamental set, $W$ is not identically zero, and by Abel's theorem ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian|§14]], Theorem 3.2.7) a Wronskian of two solutions is either identically zero or never zero on $I$. So $y_2g/W$ and $y_1g/W$ are continuous on $I$.
+> **The integrands are continuous.** $W = W[y_1, y_2]$ is continuous on $I$, and it is never zero there: since $y_1, y_2$ is a fundamental set, $W$ is not identically zero, and by Abel's theorem ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|Theorem §14.8]], Theorem 3.2.7) a Wronskian of two solutions is either identically zero or never zero on $I$. So $y_2g/W$ and $y_1g/W$ are continuous on $I$.
 >
 > **The functions $u_1, u_2$.** Put
 >
@@ -168,7 +168,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 
 ^pf-18-1
 
-*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian|§14]] (Theorem 3.2.7, Abel's theorem; fundamental sets), [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]] (Theorem 3.5.2), [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (FTC, Part 1)
+*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|§14.8]] (Abel's theorem), [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Def. §14.3]] (fundamental set), [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]] (Theorem 3.5.2), [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (FTC, Part 1)
 
 > [!remark]- Connections
 > - The derivative of $\int_{t_0}^t h(s)\,ds$ for continuous $h$: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC II).
@@ -251,11 +251,11 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 >
 > using $Y' = u_1y_1' + u_2y_2'$ from the proof of Theorem §18.1.
 >
-> For the second statement, $u$ exists by the existence and uniqueness theorem ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian|§14]], Theorem 3.2.1). Then $L[u + Y] = L[u] + L[Y] = 0 + g$ by linearity of $L$, and $(u + Y)(t_0) = y_0 + 0$, $(u + Y)'(t_0) = y_0' + 0$. By the uniqueness part of Theorem 3.2.1, $u + Y$ is the solution.
+> For the second statement, $u$ exists by the existence and uniqueness theorem ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]], Theorem 3.2.1). Then $L[u + Y] = L[u] + L[Y] = 0 + g$ by linearity of $L$, and $(u + Y)(t_0) = y_0 + 0$, $(u + Y)'(t_0) = y_0' + 0$. By the uniqueness part of Theorem 3.2.1, $u + Y$ is the solution.
 
 ^pf-18-2
 
-*Uses:* [[§18★ Variation of Parameters#^thm-18-1|§18.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian|§14]] (Theorem 3.2.1)
+*Uses:* [[§18★ Variation of Parameters#^thm-18-1|§18.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|§14.1]] (Theorem 3.2.1)
 
 > [!example] Example §18.3: The Forced Equation y″ + y = g(t)
 > Show that the solution of $y'' + y = g(t)$, $y(t_0) = 0$, $y'(t_0) = 0$ is

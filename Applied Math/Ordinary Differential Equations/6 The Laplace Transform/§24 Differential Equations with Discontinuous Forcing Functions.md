@@ -24,7 +24,7 @@ This section puts the step functions of [[§23 Step Functions|§23]] to work: li
 
 > [!remark] Remark: Method — Initial Value Problems with Discontinuous Forcing
 > 1. Write $g(t)$ with step functions, every term in the form $u_c(t)\,k(t - c)$ ([[§23 Step Functions#^rem-23-1|Method of §23]]).
-> 2. Transform the equation, using $\mathcal{L}\{y'\} = sY - y(0)$ and $\mathcal{L}\{y''\} = s^2Y - sy(0) - y'(0)$ ([[§22 Solution of Initial Value Problems|§22]], Theorem 6.2.1) and $\mathcal{L}\{u_c(t)k(t - c)\} = e^{-cs}K(s)$ ([[§23 Step Functions#^thm-23-2|Theorem §23.2]]). Solve for $Y(s)$.
+> 2. Transform the equation, using $\mathcal{L}\{y'\} = sY - y(0)$ and $\mathcal{L}\{y''\} = s^2Y - sy(0) - y'(0)$ ([[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1]], [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]]) and $\mathcal{L}\{u_c(t)k(t - c)\} = e^{-cs}K(s)$ ([[§23 Step Functions#^thm-23-2|Theorem §23.2]]). Solve for $Y(s)$.
 > 3. Collect the terms of $Y(s)$ by exponential factor. Typically $Y(s) = \Phi(s) + \sum_c e^{-cs}H_c(s)$, where $\Phi$ comes from the initial conditions.
 > 4. Invert: find $h_c(t) = \mathcal{L}^{-1}\{H_c(s)\}$ by partial fractions or completing the square, then delay it, $u_c(t)\,h_c(t - c)$ ([[§23 Step Functions#^rem-23-2|Method of §23]]).
 > 5. Write $y$ piecewise on the intervals between break points, and read off the behavior on each: rest, response to the switched-on force, free motion after it is removed. Check that $y$ and $y'$ are continuous at the break points (Proposition §24.1).

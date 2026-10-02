@@ -9,7 +9,7 @@ tags: [ordinary-differential-equations, math331]
 ---
 ← [[§4 Linear Differential Equations; Method of Integrating Factors]] · ↑ [[· 2 First-Order Differential Equations]] · [[§6 Modeling with First-Order Differential Equations]] →
 
-*Boyce–DiPrima, Section 2.2 · MATH 331 Written HW 1 (Problems 1 and 3), Midterms Summer 2023 (Q2) and Spring 2020 (Q2).*
+*Boyce–DiPrima, Section 2.2 · MATH 331 Written HW 1 (Problems 1 and 3), Midterms Fall 2021 (Q2) and Spring 2020 (Q2).*
 
 The direct integration of [[§2 Solutions of Some Differential Equations|§2]] works for a much larger class of equations, most of them nonlinear: the separable equations $M(x) + N(y)\,dy/dx = 0$, in which the variables can be put on opposite sides. Integrating each side gives an equation $H_1(x) + H_2(y) = c$ that defines the solutions implicitly. Two new features appear that linear equations did not have. The solution is often only implicit, and solving for $y$ may be impossible. And the interval on which a solution exists depends on the initial value, not just on the coefficients; it ends where the integral curve has a vertical tangent or the solution blows up. A change of variable extends the method to homogeneous equations $dy/dx = F(y/x)$. In this section the independent variable is $x$.
 
@@ -94,7 +94,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 
 ^pf-5-1
 
-*Uses:* [[§5 Separable Differential Equations#^def-5-1|Def. §5.1]], [[§29 The Mean Value Theorem#^cor-29-4|451 §29.4]] (zero derivative on an interval)
+*Uses:* [[§5 Separable Differential Equations#^def-5-1|Def. §5.1]], [[§29 The Mean Value Theorem#^cor-29-4|451 §29.4]] (zero derivative on an interval), [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1]] (FTC I)
 
 > [!remark]- Connections
 > - See also: [[§59 Separable Equations#^thm-59-1|Calc Thm. §59.1]] (Stewart's treatment, in the form $h(y)\,dy/dx = g(x)$) and its [[§59 Separable Equations#^rem-59-1|Remark: Method]].
@@ -243,7 +243,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 >
 > Here the denominator has discriminant $4 - 12 < 0$, so it is never $0$: this solution exists for all $x$. The two problems look alike, but the interval of existence depends on the data, not on the form of the equation.
 >
-> *Source: 331 Midterm (Summer 2023), Q2*
+> *Source: 331 Midterm (Fall 2021), Q2*
 > *Source: 331 Midterm (Spring 2020), Q2*
 
 ^ex-5-4
@@ -263,7 +263,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 
 ^def-5-2
 
-> [!theorem] Proposition §5.1: Homogeneous Equations Become Separable
+> [!theorem] Proposition §5.2: Homogeneous Equations Become Separable
 > If $\dfrac{dy}{dx} = F\Big(\dfrac yx\Big)$, then the new dependent variable $v = y/x$, that is, $y = x\,v(x)$, satisfies the separable equation
 >
 > $$
@@ -272,12 +272,12 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 >
 > *BDP: Problem 2.2.25*
 
-^prop-5-1
+^prop-5-2
 
 > [!proof]+ Proof
 > On an interval where $x \ne 0$, $y = xv$ by the product rule gives $\dfrac{dy}{dx} = v + x\,\dfrac{dv}{dx}$. Substituting this and $y/x = v$ into the equation gives $v + x\,\dfrac{dv}{dx} = F(v)$, that is, $x\,\dfrac{dv}{dx} = F(v) - v$. In the form $\dfrac{dv}{F(v) - v} = \dfrac{dx}{x}$ (where $F(v) \ne v$) it is separable (Definition §5.1). For the example above, $F(v) - v = \dfrac{v - 4}{1 - v} - v = \dfrac{v^2 - 4}{1 - v}$.
 
-^pf-5-1
+^pf-5-2
 
 *Uses:* [[§5 Separable Differential Equations#^def-5-1|Def. §5.1]], [[§5 Separable Differential Equations#^def-5-2|Def. §5.2]]
 
@@ -286,7 +286,7 @@ Because $f$ depends only on $y/x$, integral curves have the same slope at all po
 > [!example] Example §5.5: A Homogeneous Equation
 > Find the general solution of $y' = \dfrac yx - 2e^{5y/x}$.
 >
-> **Substitute.** The right side is $F(y/x)$ with $F(v) = v - 2e^{5v}$, so the equation is homogeneous. With $y = xv$, Proposition §5.1 gives
+> **Substitute.** The right side is $F(y/x)$ with $F(v) = v - 2e^{5v}$, so the equation is homogeneous. With $y = xv$, Proposition §5.2 gives
 >
 > $$
 > v + x\,\frac{dv}{dx} = v - 2e^{5v} , \qquad x\,\frac{dv}{dx} = -2e^{5v} .

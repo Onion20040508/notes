@@ -189,6 +189,9 @@ The transient lets the solution satisfy any initial conditions. As time goes on,
 
 *Uses:* [[§20 Forced Periodic Vibrations#^thm-20-1|§20.1]]
 
+![[m331-20-2.svg]]
+*The amplitude response (13) against $\omega/\omega_0$ for several damping parameters $\Gamma = \gamma^2/(mk)$. Every curve starts at $1$ (the static displacement $F_0/k$) and tends to $0$. For $\Gamma = 1/64$ (Example §20.2) the peak is $\approx 8.03$, just below $\omega/\omega_0 = 1$; for $\Gamma = 2$ there is no peak. The dashed curve $1/|1 - \omega^2/\omega_0^2|$ is the undamped limit $\Gamma \to 0$.*
+
 > [!definition] Definition §20.2: Resonance
 > For a lightly damped system, the amplitude $R$ of the forced response is large when $\omega$ is near $\omega_0$, even for small forces: by (15), $R_{\max} \approx F_0/(\gamma\omega_0)$, and the smaller $\gamma$, the more pronounced the peak. This phenomenon is called **resonance**.
 >
@@ -197,9 +200,6 @@ The transient lets the solution satisfy any initial conditions. As time goes on,
 ^def-20-2
 
 Resonance can be harmful (structures such as buildings and bridges can fail catastrophically) or useful (instruments such as seismographs are designed to resonate with weak incoming signals). The three quantities $Rk/F_0$, $\omega/\omega_0$ and $\Gamma$ are dimensionless (BDP, Problem 3.8.9d), so (13) reduces the five parameters $m, \gamma, k, F_0, \omega$ of (8) to three, and one family of curves describes the response of every system (8). The value $\Gamma = 2$ separates the curves with a peak from the monotone ones; critical damping is $\Gamma = 4$.
-
-![[m331-20-2.svg]]
-*The amplitude response (13) against $\omega/\omega_0$ for several damping parameters $\Gamma = \gamma^2/(mk)$. Every curve starts at $1$ (the static displacement $F_0/k$) and tends to $0$. For $\Gamma = 1/64$ (Example §20.2) the peak is $\approx 8.03$, just below $\omega/\omega_0 = 1$; for $\Gamma = 2$ there is no peak. The dashed curve $1/|1 - \omega^2/\omega_0^2|$ is the undamped limit $\Gamma \to 0$.*
 
 > [!remark] Remark: The Phase of the Response
 > By (11), the phase $\delta$ also depends on $\omega$. For $\omega$ near $0$, $\cos\delta \approx 1$ and $\sin\delta \approx 0$: $\delta \approx 0$, and the response is nearly in phase with the force (their maxima and minima occur nearly together). At $\omega = \omega_0$, $\cos\delta = 0$ and $\sin\delta = 1$: $\delta = \pi/2$, so the peaks of the response come a quarter period after the peaks of the force. For $\omega$ very large, $\cos\delta \approx -1$, $\sin\delta \approx 0$: $\delta \approx \pi$, and the response is nearly out of phase (minimal when the force is maximal). For small damping the transition from $\delta \approx 0$ to $\delta \approx \pi$ is abrupt near $\omega_0$; for larger damping it is gradual.
