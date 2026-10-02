@@ -1,0 +1,30 @@
+% Figure for Quantum Field Theory §C2.4 (Theorems §C2.4.1, §C2.4.3, §C2.4.4). One mode of the field, x = (a + a^dagger)/sqrt2 (vacuum spread 1/sqrt2). Two states with the same mean occupation 4: the coherent state with alpha = eta/sqrt(2E) = 2 (real at t = 0) and the number state |4>. Left: occupation probabilities, Poisson e^{-4} 4^n/n! versus a single bar at n = 4. Right: <x> +- Delta x against omega t; coherent: <x> = 2 sqrt2 cos(omega t), Delta x = 1/sqrt2; number state: <x> = 0, Delta x = sqrt(4 + 1/2). Computed; right panel adapted from the user's PHY 513 notes, Ch. 4 (fig:coherent).
+\begin{tikzpicture}[font=\small]
+  % left panel: occupation probabilities
+  \begin{scope}[xscale=0.42, yscale=12]
+    \draw[->, thin] (-0.8,0) -- (13,0) node[right, font=\scriptsize] {$n$};
+    \draw[->, thin] (-0.8,0) -- (-0.8,0.32) node[above, font=\scriptsize] {$P(n)$};
+    \foreach \n/\p in {0/0.0183,1/0.0733,2/0.1465,3/0.1954,4/0.1954,5/0.1563,6/0.1042,7/0.0595,8/0.0298,9/0.0132,10/0.0053,11/0.0019,12/0.0006} {
+      \fill[figB, opacity=0.75] (\n-0.32,0) rectangle (\n+0.32,\p);
+    }
+    \draw[figR, thick] (3.55,0) -- (3.55,0.29) (4.45,0) -- (4.45,0.29);
+    \draw[figR, thick, -{Stealth[length=4pt]}] (4,0.25) -- (4,0.31);
+    \node[figR, font=\scriptsize, anchor=west] at (4.6,0.285) {$|4\rangle$: $P(4) = 1$ (off scale)};
+    \node[figB, font=\scriptsize, anchor=west] at (6.2,0.17) {coherent, $\bar N = 4$};
+    \foreach \n in {0,4,8,12} \draw (\n,0) -- (\n,-0.006) node[below, font=\scriptsize] {$\n$};
+    \foreach \y in {0.1,0.2} \draw (-0.8,\y) -- (-1.0,\y) node[left, font=\scriptsize] {$\y$};
+  \end{scope}
+  % right panel: mean field and spread
+  \begin{scope}[xshift=7.6cm, yshift=2.31cm, xscale=0.5, yscale=0.55]
+    \fill[figO, opacity=0.22] (0,-2.1213) rectangle (12.566,2.1213);
+    \fill[figB, opacity=0.25] plot[domain=0:12.566, samples=140] (\x,{2.8284*cos(\x r)+0.7071}) -- plot[domain=12.566:0, samples=140] (\x,{2.8284*cos(\x r)-0.7071}) -- cycle;
+    \draw[figB, thick] plot[domain=0:12.566, samples=140] (\x,{2.8284*cos(\x r)});
+    \draw[figO!85!black, thick] (0,0) -- (12.566,0);
+    \draw[->, thin] (0,-4.2) -- (13.3,-4.2) node[right, font=\scriptsize] {$\omega t$};
+    \draw[->, thin] (0,-4.2) -- (0,4.0) node[left, font=\scriptsize] {$x$};
+    \foreach \t/\l in {3.1416/\pi,6.2832/2\pi,9.4248/3\pi,12.566/4\pi} \draw (\t,-4.2) -- (\t,-4.4) node[below, font=\scriptsize] {$\l$};
+    \foreach \y in {-2,2} \draw (0,\y) -- (-0.2,\y) node[left, font=\scriptsize] {$\y$};
+    \node[figB, font=\scriptsize, anchor=south west] at (0.2,4.0) {coherent: $\langle x\rangle = 2\sqrt2\cos\omega t$, $\Delta x = 1/\sqrt2$};
+    \node[figO!85!black, font=\scriptsize, anchor=north west] at (0.2,-5.0) {$|4\rangle$: $\langle x\rangle = 0$, $\Delta x = \sqrt{4 + \tfrac12}$};
+  \end{scope}
+\end{tikzpicture}
