@@ -3152,6 +3152,24 @@ For $g \in G$, the \textbf{conjugacy class} of $g$ is the set
 the set of all conjugates of $g$ (\ref{sec:conjugation-products}: $hgh^{-1} = c_h(g)$).
 \end{defbox}
 
+\begin{lembox}[{Conjugation Relabels the Entries}]\label{lem:conjugation-relabels-entries}
+Let $\sigma \in S_n$. For any cycle,
+\[ \sigma\,(i\ j\ k\ \cdots)\,\sigma^{-1} = \big(\sigma(i)\ \sigma(j)\ \sigma(k)\ \cdots\big). \]
+More generally, for a permutation written in disjoint-cycle notation, conjugating by $\sigma$ applies $\sigma$ to every entry:
+\[ \sigma\,(a_{1,1}\ \cdots\ a_{1,r_1}) \cdots (a_{k,1}\ \cdots\ a_{k,r_k})\,\sigma^{-1} = \big(\sigma(a_{1,1})\ \cdots\ \sigma(a_{1,r_1})\big) \cdots \big(\sigma(a_{k,1})\ \cdots\ \sigma(a_{k,r_k})\big), \]
+and the cycles on the right are again disjoint. In particular a permutation and its conjugate have the same cycle type.
+\end{lembox}
+
+\begin{proof}
+\emph{One cycle.} This is Conjugation Relabels a Cycle (\S12): if $c = (a_1\ \cdots\ a_r)$, then $(\sigma c \sigma^{-1})(\sigma(a_i)) = \sigma(c(a_i)) = \sigma(a_{i+1})$ (indices mod $r$), while a point not of the form $\sigma(a_i)$ is fixed, because $\sigma^{-1}$ of it is not among the $a_i$.
+
+\emph{A product of disjoint cycles.} Let $c_i = (a_{i,1}\ a_{i,2}\ \cdots\ a_{i,r_i})$. Conjugating the product factor by factor,
+\[ \sigma\, c_1 c_2 \cdots c_k\, \sigma^{-1} = (\sigma c_1 \sigma^{-1})(\sigma c_2 \sigma^{-1}) \cdots (\sigma c_k \sigma^{-1}), \]
+since the $\sigma^{-1}\sigma$ inserted between consecutive factors cancels. By the one-cycle case,
+\[ \sigma c_i \sigma^{-1} = \big(\sigma(a_{i,1})\ \sigma(a_{i,2})\ \cdots\ \sigma(a_{i,r_i})\big), \]
+a cycle of the same length $r_i$. These relabeled cycles are again pairwise disjoint: the entries of $\sigma c_i \sigma^{-1}$ are $\sigma(\{a_{i,1}, \ldots, a_{i,r_i}\})$, and $\sigma$ is injective, so distinct $i$ give disjoint sets.
+\end{proof}
+
 \begin{propbox}[{Conjugacy Class of $(1\,2)$ in $S_n$ (WS 3.2)}]\label{prop:conjugacy-class-1-2-sn}
 Let $n \geq 2$, and let $(1\,2) \in S_n$ be the permutation $1 \mapsto 2$, $2 \mapsto 1$, $j \mapsto j$ for $j \geq 3$. The conjugacy class of $(1\,2)$ in $S_n$ is the set of all transpositions:
 \[ \operatorname{Conj}\big((1\,2)\big) = \{ (i\ j) : 1 \leq i < j \leq n \}, \]
@@ -3159,7 +3177,7 @@ a set of $\binom{n}{2}$ elements.
 \end{propbox}
 
 \begin{proof}
-By Conjugation Relabels a Cycle (\ref{sec:cycle-computation}), for any $\tau \in S_n$,
+By Conjugation Relabels the Entries, for any $\tau \in S_n$,
 \[ \tau\,(1\,2)\,\tau^{-1} = \big(\tau(1)\ \ \tau(2)\big), \]
 a transposition. So every conjugate of $(1\,2)$ is a transposition. Conversely, given a transposition $(i\ j)$, choose any $\tau \in S_n$ with $\tau(1) = i$ and $\tau(2) = j$ (possible since $i \neq j$; e.g.\ extend arbitrarily to a bijection); then $\tau(1\,2)\tau^{-1} = (i\ j)$. Hence $\operatorname{Conj}((1\,2))$ is exactly the set of transpositions, of which there are $\binom{n}{2}$, one for each $2$-element subset of $\{1, \ldots, n\}$.
 \end{proof}
@@ -3175,11 +3193,7 @@ For $\sigma, \sigma' \in S_n$: \ $\sigma$ and $\sigma'$ are conjugate in $S_n$ i
 \end{thmbox}
 
 \begin{proof}
-($\Rightarrow$) Let $\sigma = c_1 c_2 \cdots c_k$ with disjoint cycles $c_i = (a_{i,1}\ a_{i,2}\ \cdots\ a_{i,r_i})$, and let $\tau \in S_n$. Conjugating the product factor by factor,
-\[ \tau \sigma \tau^{-1} = \tau c_1 c_2 \cdots c_k \tau^{-1} = (\tau c_1 \tau^{-1})(\tau c_2 \tau^{-1}) \cdots (\tau c_k \tau^{-1}), \]
-since the $\tau^{-1}\tau$ inserted between consecutive factors cancels. By Conjugation Relabels a Cycle (\ref{sec:cycle-computation}),
-\[ \tau c_i \tau^{-1} = \tau\,(a_{i,1}\ a_{i,2}\ \cdots\ a_{i,r_i})\,\tau^{-1} = \big(\tau(a_{i,1})\ \tau(a_{i,2})\ \cdots\ \tau(a_{i,r_i})\big), \]
-a cycle of the same length $r_i$. These relabeled cycles are again pairwise disjoint: the entries of $\tau c_i \tau^{-1}$ are $\tau(\{a_{i,1}, \ldots, a_{i,r_i}\})$, and $\tau$ is injective, so distinct $i$ give disjoint sets. Hence $\tau\sigma\tau^{-1}$ has cycle lengths $r_1, \ldots, r_k$, i.e.\ $\lambda(\tau\sigma\tau^{-1}) = \lambda(\sigma)$.
+($\Rightarrow$) Let $\sigma = c_1 c_2 \cdots c_k$ with disjoint cycles of lengths $r_1, \ldots, r_k$, and let $\tau \in S_n$. By Conjugation Relabels the Entries, $\tau\sigma\tau^{-1} = (\tau c_1 \tau^{-1}) \cdots (\tau c_k \tau^{-1})$ is a product of disjoint cycles of the same lengths $r_1, \ldots, r_k$; i.e.\ $\lambda(\tau\sigma\tau^{-1}) = \lambda(\sigma)$.
 
 ($\Leftarrow$) Suppose $\lambda(\sigma) = \lambda(\sigma') = (r_1, \ldots, r_k)$. Write both decompositions with their cycles in the same length order:
 \[
@@ -3190,7 +3204,7 @@ a cycle of the same length $r_i$. These relabeled cycles are again pairwise disj
 \]
 Since the cycles of each decomposition are disjoint and together use every element once, the list $a_{1,1}, \ldots, a_{1,r_1}, a_{2,1}, \ldots, a_{k,r_k}$ is an enumeration of $\{1, \ldots, n\}$ without repetition, and likewise for the $b$'s. Define $\tau \in S_n$ by
 \[ \tau(a_{i,j}) = b_{i,j} \qquad (1 \leq i \leq k,\ 1 \leq j \leq r_i); \]
-this is a well-defined bijection, since it matches the two enumerations entry by entry. By the computation in ($\Rightarrow$),
+this is a well-defined bijection, since it matches the two enumerations entry by entry. By Conjugation Relabels the Entries,
 \[ \tau\sigma\tau^{-1} = \big(\tau(a_{1,1})\ \cdots\ \tau(a_{1,r_1})\big) \cdots \big(\tau(a_{k,1})\ \cdots\ \tau(a_{k,r_k})\big) = (b_{1,1}\ \cdots\ b_{1,r_1}) \cdots (b_{k,1}\ \cdots\ b_{k,r_k}) = \sigma'. \]
 \end{proof}
 

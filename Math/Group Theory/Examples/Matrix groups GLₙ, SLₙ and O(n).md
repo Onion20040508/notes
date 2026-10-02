@@ -21,7 +21,7 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 - $GL_3$ versus $O_3$: orbits and stabilizers compared ([[§30 Examples꞉ Linear Groups and the Cube#^rem-30-1|§30]])
 - $O_3(\mathbb{R})$ acting on $\mathbb{R}^3$: the orbits are spheres ([[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|§30]])
 - Conjugacy in $GL_n(\mathbb{C})$ is similarity ([[§31 Conjugacy Classes#^def-31-3|§31]])
-- The conjugacy class of $\operatorname{diag}(3, 4)$: trace $7$, determinant $12$ ([[§31 Conjugacy Classes#^prop-31-3|§31]])
+- The conjugacy class of $\operatorname{diag}(3, 4)$: trace $7$, determinant $12$ ([[§31 Conjugacy Classes#^prop-31-4|§31]])
 - Scalar matrices are central; Jordan form in general ([[§31 Conjugacy Classes#^rem-31-1|§31]])
 - Conjugacy classes of matrices as orbits of $GL_n(\mathbb{C})$ ([[§32 Conjugation as an Action and the Class Equation#^rem-32-2|§32]])
 - $SL_n(\mathbb{R}) = \operatorname{Ker}(\det)$ is normal ([[§36 Sources of Normal Subgroups#^ex-36-2|§36]])
@@ -79,7 +79,7 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 ![[§31 Conjugacy Classes#^def-31-3]]
 
 ## The conjugacy class of $\operatorname{diag}(3, 4)$: trace $7$, determinant $12$
-![[§31 Conjugacy Classes#^prop-31-3]]
+![[§31 Conjugacy Classes#^prop-31-4]]
 
 ## Scalar matrices are central; Jordan form in general
 ![[§31 Conjugacy Classes#^rem-31-1]]

@@ -19,13 +19,12 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§12 Multiplying and Conjugating Cycles#^ex-12-2|Example §12.2: The Mixed Hypothesis of WS 1.1, Revisited]]
 - [[§20 The Sign Homomorphism and the Alternating Group#^lem-20-6|Lemma §20.6: Adjacent Transpositions from (1 j)'s]]
-- [[§31 Conjugacy Classes#^prop-31-1|Proposition §31.1: Conjugacy Class of (1 2) in Sₙ]]
-- [[§31 Conjugacy Classes#^thm-31-2|Theorem §31.2: Conjugacy Classes in Sₙ Are Cycle Types]]
+- [[§31 Conjugacy Classes#^lem-31-1|Lemma §31.1: Conjugation Relabels the Entries]]
 - [[§35 Normal Subgroups#^ex-35-1|Example §35.1: A Non-Normal Subgroup of S_3]]
 - [[§39 Simple Groups#^lem-39-8|Lemma §39.8: 3-Cycles Are Conjugate in Aₙ for n ≥ 5]]
 - [[§39 Simple Groups#^thm-39-9|Theorem §39.9: Aₙ Is Simple for n ≥ 5]]
 
 ## Connections
-- **Used for.** Both directions of [[Conjugacy Classes of Sₙ Are Cycle Types]], and the class of (1 2) being all transpositions ([[§31 Conjugacy Classes#^prop-31-1|§31.1]]). It also shows ⟨(1 2)⟩ is not normal in S₃ ([[§35 Normal Subgroups#^ex-35-1|Ex. §35.1]]) and gives the conjugation step of [[Aₙ Is Simple for n ≥ 5]] via [[§39 Simple Groups#^lem-39-8|3-Cycles Are Conjugate in Aₙ]].
+- **Used for.** Both directions of [[Conjugacy Classes of Sₙ Are Cycle Types]], and the class of (1 2) being all transpositions ([[§31 Conjugacy Classes#^prop-31-2|§31.2]]). It also shows ⟨(1 2)⟩ is not normal in S₃ ([[§35 Normal Subgroups#^ex-35-1|Ex. §35.1]]) and gives the conjugation step of [[Aₙ Is Simple for n ≥ 5]] via [[§39 Simple Groups#^lem-39-8|3-Cycles Are Conjugate in Aₙ]].
 - **Reading it.** Conjugating by σ renames each point a as σ(a) and keeps the pattern of arrows. This explains the mixed hypothesis gh₁ = h₂g of WS 1.1 ([[§12 Multiplying and Conjugating Cycles#^ex-12-2|Ex. §12.2]], [[Cancellation Laws in Groups]]).
 - **Same idea elsewhere.** Conjugating a matrix is a change of basis: C⁻¹BC is the same operator in other coordinates ([[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula]], LADR 3.84). Relabeling the points of {1, …, n} is the permutation version of relabeling a basis.

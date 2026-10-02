@@ -45,7 +45,8 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Conjugation in general: [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Conjugation; Conjugate Elements; Inner Automorphism]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|Conjugation Is an Automorphism]].
-> - The converse (same cycle type ⇒ conjugate): [[§31 Conjugacy Classes#^thm-31-2|Conjugacy Classes in Sₙ Are Cycle Types]].
+> - For a whole permutation in disjoint-cycle notation: [[§31 Conjugacy Classes#^lem-31-1|Conjugation Relabels the Entries, §31.1]].
+> - The converse (same cycle type ⇒ conjugate): [[§31 Conjugacy Classes#^thm-31-3|Conjugacy Classes in Sₙ Are Cycle Types]].
 
 > [!example] Example §12.2: The Mixed Hypothesis of WS 1.1, Revisited
 > In [[§2 First Consequences of the Axioms#^ex-2-1|that example]], $g = (1\,2)$ and $h_1 = (2\,3)$ gave $g h_1 g^{-1} = (1\,3)$. By [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle]] this is immediate: apply $g$ to the entries of $(2\,3)$, sending $2 \mapsto 1$ and $3 \mapsto 3$, to get $(1\,3)$. No multiplication needed.

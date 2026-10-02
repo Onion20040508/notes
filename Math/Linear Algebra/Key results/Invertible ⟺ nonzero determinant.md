@@ -22,7 +22,7 @@ tags: [linear-algebra, hub]
 ## Used in (Group Theory)
 - [[§3 Basic Examples of Groups#^def-3-6|Definition §3.6: General Linear Groups GLₙ(k)]]
 - [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-1|Proposition §30.1: GL_3(ℝ) Acting on ℝ³]]
-- [[§31 Conjugacy Classes#^prop-31-3|Proposition §31.3: Conjugacy Class of a Diagonal Matrix]]
+- [[§31 Conjugacy Classes#^prop-31-4|Proposition §31.4: Conjugacy Class of a Diagonal Matrix]]
 
 ## Used in (Differentiable Manifolds)
 - [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5: Regular Points When N ≤ m]]

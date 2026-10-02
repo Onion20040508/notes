@@ -12,8 +12,8 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[§4 Subgroups#^def-4-1|Definition §4.1: Subgroup]]
-- [[§22 Equivalence Relations and Partitions#^prop-22-1|Proposition §22.1: Equivalence Classes Partition a Set]]
 - [[§22 Equivalence Relations and Partitions#^def-22-1|Definition §22.1: Equivalence Relation]]
+- [[§22 Equivalence Relations and Partitions#^prop-22-1|Proposition §22.1: Equivalence Classes Partition a Set]]
 - [[§22 Equivalence Relations and Partitions#^def-22-2|Definition §22.2: Equivalence Class]]
 - [[§26 Left and Right Cosets#^def-26-1|Definition §26.1: Congruence Modulo a Subgroup]]
 - [[§26 Left and Right Cosets#^def-26-2|Definition §26.2: Left and Right Cosets]]

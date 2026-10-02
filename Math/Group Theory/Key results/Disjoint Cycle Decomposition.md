@@ -20,7 +20,8 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Proposition §12.1: Conjugation Relabels a Cycle]]
 - [[§12 Multiplying and Conjugating Cycles#^prop-12-2|Proposition §12.2: Every Permutation Is a Product of Transpositions]]
-- [[§31 Conjugacy Classes#^thm-31-2|Theorem §31.2: Conjugacy Classes in Sₙ Are Cycle Types]]
+- [[§31 Conjugacy Classes#^lem-31-1|Lemma §31.1: Conjugation Relabels the Entries]]
+- [[§31 Conjugacy Classes#^thm-31-3|Theorem §31.3: Conjugacy Classes in Sₙ Are Cycle Types]]
 
 ## Connections
 - **Used for.** Computing with permutations: inverses, powers, and order = lcm of the cycle lengths ([[§11 Disjoint Cycle Decomposition#^prop-11-4|§11.4]]). Also every permutation is a product of transpositions ([[§12 Multiplying and Conjugating Cycles#^prop-12-2|§12.2]]), the input to [[The Sign Homomorphism]].

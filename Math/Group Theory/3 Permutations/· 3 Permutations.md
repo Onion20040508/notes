@@ -27,7 +27,7 @@ Symmetric groups are the other basic family, and by [[§23 Actions#^thm-23-5|Cay
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§11 Disjoint Cycle Decomposition#^lem-11-2|Lemma §11.2: Disjoint Cycles Commute]]: 20 later results
-- [[Disjoint Cycle Decomposition|Theorem §11.3: Disjoint Cycle Decomposition]]: 18 later results
-- [[Conjugation Relabels a Cycle|Proposition §12.1: Conjugation Relabels a Cycle]]: 11 later results
+- [[§11 Disjoint Cycle Decomposition#^lem-11-2|Lemma §11.2: Disjoint Cycles Commute]]: 21 later results
+- [[Disjoint Cycle Decomposition|Theorem §11.3: Disjoint Cycle Decomposition]]: 19 later results
+- [[Conjugation Relabels a Cycle|Proposition §12.1: Conjugation Relabels a Cycle]]: 12 later results
 - [[§12 Multiplying and Conjugating Cycles#^prop-12-2|Proposition §12.2: Every Permutation Is a Product of Transpositions]]: 10 later results

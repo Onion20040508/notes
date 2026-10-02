@@ -55,7 +55,7 @@ tags: [group-theory, math493]
 *Uses:* [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[§10 Cycle Notation and the Group S₃#^def-10-1|Def. §10.1]], [[§11 Disjoint Cycle Decomposition#^def-11-1|Def. §11.1]], [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§4 Subgroups#^lem-4-4|§4.4]]
 
 > [!remark]- Connections
-> - The multiset of cycle lengths is the [[§31 Conjugacy Classes#^def-31-2|Cycle Type]], which classifies conjugacy: [[§31 Conjugacy Classes#^thm-31-2|Conjugacy Classes in Sₙ Are Cycle Types]].
+> - The multiset of cycle lengths is the [[§31 Conjugacy Classes#^def-31-2|Cycle Type]], which classifies conjugacy: [[§31 Conjugacy Classes#^thm-31-3|Conjugacy Classes in Sₙ Are Cycle Types]].
 > - The loops are the orbits of $\langle \sigma \rangle$ acting on $\{1, \ldots, n\}$: [[§25 Orbits#^def-25-1|Orbit]].
 
 > [!example] Example §11.1: Decomposing a Permutation in $S_7$
