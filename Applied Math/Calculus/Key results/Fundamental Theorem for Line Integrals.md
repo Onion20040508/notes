@@ -23,3 +23,4 @@ tags: [calculus, hub]
 
 ## Connections
 - In the language of forms this is the generalized Stokes theorem for a 0-form on a curve, $\int_C df = f(B) - f(A)$: [[§23 The Generalized Stokes' Theorem#^thm-23-1|452 Thm. §23.1]] (hub [[Generalized Stokes' Theorem]]). It is the argument used in [[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]] to show that a form with a nonzero integral around a closed curve is not exact.
+- **Also in [[Complex Variables]]:** [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|342 Thm. §49.1]] (antiderivatives and independence of path for contour integrals).

@@ -87,7 +87,7 @@ For instance, $x^4 - 16 = (x^2 - 4)(x^2 + 4) = (x - 2)(x + 2)(x^2 + 4)$.
 
 ^thm-47-3
 
-*Stewart omits the proof ("a theorem in algebra guarantees that it is always possible"); it can be proved by induction on the number of factors of $Q$. Over $\mathbb{C}$ it is proved in [[§95★ Inverse Laplace Transforms#^thm-95-6|342 Thm. §95.6]](a), by principal parts and Liouville's theorem (see also the Connections of [[§78 The Three Types of Isolated Singular Points#^def-78-1|342 Def. §78.1]]); the real cases follow by combining the terms at conjugate roots.*
+*Stewart omits the proof ("a theorem in algebra guarantees that it is always possible"); it can be proved by induction on the number of factors of $Q$. Over $\mathbb{C}$ it is proved in [[§95★ Inverse Laplace Transforms#^thm-95-6|342 Thm. §95.6]](a), by principal parts and Liouville's theorem (see also the Connections of [[§78 The Three Types of Isolated Singular Points#^def-78-1|342 Def. §78.1]]); the real form follows by combining the terms at conjugate roots and expanding their numerators in powers of the quadratic factor.*
 
 For example,
 

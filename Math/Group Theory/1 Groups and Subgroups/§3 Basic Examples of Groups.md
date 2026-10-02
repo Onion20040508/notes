@@ -123,6 +123,7 @@ In each example, associativity is inherited from a known associative operation (
 > - $S_n$ sits inside $GL_n(k)$ via permutation matrices: [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19.5]].
 > - As a topological group: [[§8 Topological Groups and Classical Matrix Groups#^def-8-4|591 Def. §8.4]], [[§8 Topological Groups and Classical Matrix Groups#^prop-8-4|591 Prop. §8.4]]; over ℝ it has exactly two components, separated by the sign of det, [[§8 Topological Groups and Classical Matrix Groups#^thm-8-6|591 Thm. §8.6]].
 > - Computational version: invertible matrices and their inverses by row reduction, [[§12 The Inverse of a Matrix#^def-12-1|235 Def. §12.1]]; the determinant facts used, [[§21 Properties of Determinants#^thm-21-3|235 Thm. §21.3]] (invertible iff det ≠ 0) and [[§21 Properties of Determinants#^thm-21-9|235 Thm. §21.9]] (det is multiplicative).
+> - Concrete action of GL₂(ℂ): [[§99★ Linear Fractional Transformations#^prop-99-5|342 Prop. §99.5]] (composing linear fractional transformations multiplies their coefficient matrices, so they form a group, the image of GL₂(ℂ)).
 
 > [!definition] Definition §3.7: Special Linear, Orthogonal, and Special Orthogonal Groups
 > For a field $k$ and $n \geq 1$:

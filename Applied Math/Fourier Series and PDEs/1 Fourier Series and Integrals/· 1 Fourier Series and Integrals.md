@@ -11,7 +11,7 @@ tags: [chapter, fourier-series-and-pdes]
 
 **Builds on:** [[· 2 The Heat Equation|2 The Heat Equation]] (6)
 **Used by:** [[· 2 The Heat Equation|2 The Heat Equation]] (13), [[· 3 The Wave Equation|3 The Wave Equation]] (8), [[· 4 The Potential Equation|4 The Potential Equation]] (8), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (3)
-**Developed further in (other subjects):** [[Functional Analysis]] (15), [[Single Variable Analysis]] (17), [[Measure Theory]] (5), [[Linear Algebra]] (4), [[Applied Linear Algebra]] (8), [[Ordinary Differential Equations]] (2), [[Calculus]] (7)
+**Developed further in (other subjects):** [[Functional Analysis]] (15), [[Single Variable Analysis]] (17), [[Measure Theory]] (5), [[Linear Algebra]] (4), [[Applied Linear Algebra]] (8), [[Ordinary Differential Equations]] (2), [[Calculus]] (7), [[Complex Variables]] (13)
 
 ## Sections
 - [[§6 Periodic Functions and Fourier Series]] — Powers 1.1

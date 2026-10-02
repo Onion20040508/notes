@@ -11,7 +11,7 @@ tags: [chapter, calculus]
 
 **Builds on:** [[· 3 Differentiation Rules|3 Differentiation Rules]] (19), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (1), [[· 5 Integrals|5 Integrals]] (13), [[· 6 Applications of Integration|6 Applications of Integration]] (1), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (2), [[· 15 Multiple Integrals|15 Multiple Integrals]] (3), [[· 16 Vector Calculus|16 Vector Calculus]] (3), [[· 17 Background from the Appendices|17 Background from the Appendices]] (2)
 **Used by:** [[· 5 Integrals|5 Integrals]] (2), [[· 6 Applications of Integration|6 Applications of Integration]] (1), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (8), [[· 9 Differential Equations|9 Differential Equations]] (3), [[· 10 Parametric Equations and Polar Coordinates|10 Parametric Equations and Polar Coordinates]] (1), [[· 11 Sequences, Series, and Power Series|11 Sequences, Series, and Power Series]] (4), [[· 15 Multiple Integrals|15 Multiple Integrals]] (3), [[· 17 Background from the Appendices|17 Background from the Appendices]] (1)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (6), [[Linear Algebra]] (2), [[Measure Theory]] (1), [[Multivariable Analysis]] (2), [[Fourier Series and PDEs]] (4), [[Ordinary Differential Equations]] (6)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (6), [[Linear Algebra]] (2), [[Measure Theory]] (1), [[Multivariable Analysis]] (2), [[Fourier Series and PDEs]] (4), [[Ordinary Differential Equations]] (6), [[Complex Variables]] (3)
 
 ## Sections
 - [[§44 Integration by Parts]] — Stewart 7.1

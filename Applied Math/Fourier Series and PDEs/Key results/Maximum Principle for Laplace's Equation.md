@@ -18,3 +18,4 @@ tags: [fourier-series-and-pdes, hub]
 
 ## Connections
 - See [[§39 Potential in a Disk]] for context and examples.
+- **Also in [[Complex Variables]]:** [[§59 Maximum Modulus Principle#^thm-59-3|342 Thm. §59.3]] and [[§59 Maximum Modulus Principle#^cor-59-5|342 Cor. §59.5]] (the maximum modulus principle and its version for the real part, with worked examples).

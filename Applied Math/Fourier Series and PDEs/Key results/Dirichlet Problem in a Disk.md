@@ -25,3 +25,4 @@ tags: [fourier-series-and-pdes, hub]
 
 ## Connections
 - See [[§39 Potential in a Disk]] for context and examples.
+- **Also in [[Complex Variables]]:** [[§135★ Dirichlet Problem for a Disk#^thm-135-1|342 Thm. §135.1]] (the same problem solved by the Poisson integral, for piecewise continuous boundary values).

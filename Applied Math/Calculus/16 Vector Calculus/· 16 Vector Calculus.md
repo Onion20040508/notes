@@ -11,7 +11,7 @@ tags: [chapter, calculus]
 
 **Builds on:** [[· 5 Integrals|5 Integrals]] (6), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (1), [[· 12 Vectors and the Geometry of Space|12 Vectors and the Geometry of Space]] (4), [[· 13 Vector Functions|13 Vector Functions]] (4), [[· 14 Partial Derivatives|14 Partial Derivatives]] (11), [[· 15 Multiple Integrals|15 Multiple Integrals]] (11)
 **Used by:** [[· 7 Techniques of Integration|7 Techniques of Integration]] (3)
-**Developed further in (other subjects):** [[Topology]] (1), [[Multivariable Analysis]] (56), [[Fourier Series and PDEs]] (2), [[Ordinary Differential Equations]] (4)
+**Developed further in (other subjects):** [[Topology]] (1), [[Multivariable Analysis]] (56), [[Fourier Series and PDEs]] (2), [[Ordinary Differential Equations]] (4), [[Complex Variables]] (11)
 
 ## Sections
 - [[§107 Vector Fields]] — Stewart 16.1

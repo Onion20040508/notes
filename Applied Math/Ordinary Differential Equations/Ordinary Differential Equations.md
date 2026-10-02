@@ -32,6 +32,7 @@ graph TD
   X6["Measure Theory (551)"]
   X7["Functional Analysis (556)"]
   X9["Fourier Series and PDEs (341)"]
+  X10["Complex Variables (342)"]
   C1 --> C2
   C2 --> C3
   C3 --> C6
@@ -49,9 +50,11 @@ graph TD
   C2 -.->|11| X1
   C3 -.->|14| X4
   C3 -.->|5| X5
+  C3 -.->|5| X10
   C3 -.->|19| X9
   C3 -.->|5| X3
   C6 -.->|4| X5
+  C6 -.->|7| X10
   C6 -.->|11| X9
   C6 -.->|3| X6
   C6 -.->|3| X1
@@ -105,4 +108,4 @@ Asynchronous video lectures (no lecture notes in the course folder). Grading: fi
 Examples marked *Source: 331 …* come from the written homework, the Summer 2023 midterm and earlier UMass exams (Spring 2020 midterm, Fall 2021 and Fall 2022 finals).
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each other subject: [[Applied Linear Algebra]] (64), [[Calculus]] (57), [[Fourier Series and PDEs]] (40), [[Linear Algebra]] (36), [[Single Variable Analysis]] (19), [[Multivariable Analysis]] (7), [[Functional Analysis]] (5), [[Measure Theory]] (3), [[Differentiable Manifolds]] (2).
+Number of *Connections* links from these notes to each other subject: [[Applied Linear Algebra]] (64), [[Calculus]] (57), [[Fourier Series and PDEs]] (40), [[Linear Algebra]] (36), [[Single Variable Analysis]] (19), [[Complex Variables]] (12), [[Multivariable Analysis]] (7), [[Functional Analysis]] (5), [[Measure Theory]] (3), [[Differentiable Manifolds]] (2).

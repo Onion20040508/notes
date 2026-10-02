@@ -11,7 +11,7 @@ tags: [chapter, calculus]
 
 **Builds on:** [[· 2 Limits and Derivatives|2 Limits and Derivatives]] (3), [[· 3 Differentiation Rules|3 Differentiation Rules]] (5), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (1), [[· 5 Integrals|5 Integrals]] (5), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (1), [[· 10 Parametric Equations and Polar Coordinates|10 Parametric Equations and Polar Coordinates]] (3), [[· 12 Vectors and the Geometry of Space|12 Vectors and the Geometry of Space]] (20)
 **Used by:** [[· 14 Partial Derivatives|14 Partial Derivatives]] (2), [[· 16 Vector Calculus|16 Vector Calculus]] (4)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Multivariable Analysis]] (6), [[Ordinary Differential Equations]] (2)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Multivariable Analysis]] (6), [[Ordinary Differential Equations]] (2), [[Complex Variables]] (3)
 
 ## Sections
 - [[§86 Vector Functions and Space Curves]] — Stewart 13.1

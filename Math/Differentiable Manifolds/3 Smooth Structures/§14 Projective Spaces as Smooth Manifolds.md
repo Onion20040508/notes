@@ -149,6 +149,7 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 
 > [!remark]- Connections
 > - S² as the one-point compactification of ℝ² ≅ ℂ, by the same stereographic projection: [[§17 Local Compactness#^ex-17-7|590 Ex. §17.7]].
+> - Computational version: [[§17 Limits Involving the Point at Infinity#^def-17-1|342 Def. §17.1]] (the extended complex plane as the Riemann sphere, by stereographic projection); the chart at ∞ is z ↦ 1/z, which reduces limits at ∞ to limits at 0, [[§17 Limits Involving the Point at Infinity#^thm-17-1|342 Thm. §17.1]], and is continuous on the extended plane, [[§97★ The Transformation w = 1∕z#^thm-97-2|342 Thm. §97.2]].
 
 > [!theorem] Corollary §14.5: Real Projective Space
 > Let $\mathbb{RP}^n = S^n/\{\pm 1\} \cong (\mathbb{R}^{n+1}\setminus\{0\})/\mathbb{R}^\times$, the space of real lines through the origin in $\mathbb{R}^{n+1}$. With $U_i = \{[\vec x] \mid x_i \neq 0\}$ and $\varphi_i([\vec x]) = (x_k/x_i)_{k \neq i}$, the family $\{(U_i, \varphi_i)\}_{i=0}^n$ is a smooth atlas, and $\mathbb{RP}^n$ is a compact smooth manifold of dimension $n$.

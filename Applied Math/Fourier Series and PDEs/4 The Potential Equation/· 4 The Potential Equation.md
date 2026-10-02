@@ -11,7 +11,7 @@ tags: [chapter, fourier-series-and-pdes]
 
 **Builds on:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (5), [[· 1 Fourier Series and Integrals|1 Fourier Series and Integrals]] (8), [[· 2 The Heat Equation|2 The Heat Equation]] (6), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (1)
 **Used by:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (1), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (4), [[· 7★ Numerical Methods|7★ Numerical Methods]] (1)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (11), [[Applied Linear Algebra]] (2), [[Calculus]] (4)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (11), [[Applied Linear Algebra]] (2), [[Calculus]] (4), [[Complex Variables]] (28)
 
 ## Sections
 - [[§35 Potential Equation]] — Powers 4.1

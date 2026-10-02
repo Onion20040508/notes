@@ -11,7 +11,7 @@ tags: [chapter, calculus]
 
 **Builds on:** [[· 2 Limits and Derivatives|2 Limits and Derivatives]] (3), [[· 3 Differentiation Rules|3 Differentiation Rules]] (2), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (5), [[· 5 Integrals|5 Integrals]] (1), [[· 12 Vectors and the Geometry of Space|12 Vectors and the Geometry of Space]] (11), [[· 13 Vector Functions|13 Vector Functions]] (2)
 **Used by:** [[· 12 Vectors and the Geometry of Space|12 Vectors and the Geometry of Space]] (1), [[· 15 Multiple Integrals|15 Multiple Integrals]] (1), [[· 16 Vector Calculus|16 Vector Calculus]] (11)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Linear Algebra]] (2), [[Topology]] (1), [[Multivariable Analysis]] (41), [[Applied Linear Algebra]] (4), [[Fourier Series and PDEs]] (5)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Linear Algebra]] (2), [[Topology]] (1), [[Multivariable Analysis]] (41), [[Applied Linear Algebra]] (4), [[Fourier Series and PDEs]] (5), [[Complex Variables]] (4)
 
 ## Sections
 - [[§90 Functions of Several Variables]] — Stewart 14.1

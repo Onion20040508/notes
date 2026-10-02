@@ -33,3 +33,4 @@ tags: [ordinary-differential-equations, hub]
 ## Connections
 - See [[§22 Solution of Initial Value Problems]] for context and examples.
 - **Also in [[Fourier Series and PDEs]]:** [[§51★ Definition and Elementary Properties#^thm-51-8|341 Thm. §51.8]] (Powers' table, keyed to the entry numbers of the table here).
+- **Also in [[Complex Variables]]:** [[§95★ Inverse Laplace Transforms#^thm-95-6|342 Thm. §95.6]] (inverse transforms of rational functions by residues, with worked examples).

@@ -41,6 +41,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The three conditions: [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]]; the smooth version is [[§13 Differentiable Structures#^def-13-9|Smooth Manifold Structure, Def. §13.9]].
+> - Concrete example: [[§110★ Riemann Surfaces#^ex-110-1|342 Ex. §110.1]] (the Riemann surface of log z, a 2-manifold built from infinitely many cut planes glued along their slits, on which log z becomes single-valued).
 
 > [!remark] Remark: Why These Three Conditions?
 > Locally Euclidean is the substantive geometric condition: near every point the space looks like $\mathbb{R}^n$, so calculus can (eventually) be imported chart by chart. The other two are global point-set hygiene. Hausdorff rules out non-uniqueness of limits (and, later, guarantees that compact subsets are closed, that one-point sets are closed, etc.); second countability rules out spaces that are “uncountably large” and is the hypothesis behind partitions of unity. Neither of the two hygiene conditions is implied by local Euclideanness—this is the content of the [[§2 Topological Manifolds#^prop-2-4|independence remark]] and the examples preceding it.
