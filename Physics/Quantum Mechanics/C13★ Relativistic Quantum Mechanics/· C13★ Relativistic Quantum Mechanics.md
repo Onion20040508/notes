@@ -8,7 +8,7 @@ tags: [chapter, quantum-mechanics]
 # C13★ Relativistic Quantum Mechanics
 ← [[· C12★ Identical Particles and Second Quantization]] · ↑ [[Quantum Mechanics]]
 
-**Builds on:** [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B6 Spin|B6 Spin]] (7), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (3), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (1), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (6), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (6), [[· C6 Central Potentials|C6 Central Potentials]] (2), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (2), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (1), [[· C12★ Identical Particles and Second Quantization|C12 Identical Particles and Second Quantization]] (3)
+**Builds on:** [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B6 Spin|B6 Spin]] (7), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (3), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (1), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (7), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (6), [[· C6 Central Potentials|C6 Central Potentials]] (2), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (2), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (1), [[· C12★ Identical Particles and Second Quantization|C12 Identical Particles and Second Quantization]] (3)
 **Used by:** —
 
 ## Sections

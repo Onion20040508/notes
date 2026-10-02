@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· C7 Addition of Angular Momentum and Tensor Operators]] · ↑ [[Quantum Mechanics]] · [[· C9 Approximation Methods]] →
 
 **Builds on:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (4), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (2), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (8), [[· B7 Identical Particles|B7 Identical Particles]] (1), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (10), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (8), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (12), [[· C6 Central Potentials|C6 Central Potentials]] (6), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (8)
-**Used by:** [[· C9 Approximation Methods|C9 Approximation Methods]] (1), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (1)
+**Used by:** [[· C9 Approximation Methods|C9 Approximation Methods]] (4), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (1)
 
 ## Sections
 - [[§C8.1★ Symmetries, Conservation Laws and Degeneracies]] — Sakurai 4.1; Griffiths 6.1–6.3, 6.6; Likharev 4

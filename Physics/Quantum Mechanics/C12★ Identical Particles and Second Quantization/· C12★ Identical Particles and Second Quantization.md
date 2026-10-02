@@ -13,7 +13,7 @@ tags: [chapter, quantum-mechanics]
 
 ## Sections
 - [[§C12.1★ Permutation Symmetry and the Symmetrization Postulate]] — Sakurai 7.1–7.4; Likharev 8.1–8.3
-- [[§C12.2★ Second Quantization]] — Sakurai 7.5–7.6; Likharev 8.3
+- [[§C12.2★ Second Quantization]] — Sakurai 7.5–7.7; Likharev 8.3
 
 ## Principles
 - [[§C12.1★ Permutation Symmetry and the Symmetrization Postulate#^pr-c12-1-2|§C12.1.2]] Indistinguishability
