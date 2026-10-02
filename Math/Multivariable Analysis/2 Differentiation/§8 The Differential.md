@@ -57,7 +57,7 @@ The notation $df = f'(x) \, dx$ is familiar from single-variable calculus, but w
 > [!remark]- Connections
 > - For fixed $(x, y)$, $df$ is a [[§12 Duality#^ladr-3-108|linear functional]] on $\mathbb{R}^2$ — the total derivative [[§6 Differentiability#^def-6-2|Def. §6.2]].
 > - Reappears as a 1-form: [[§22 The Algebra of Differential Forms#^prop-22-6|Gradient = Differential = 1-Form]].
-> - On a manifold the differential of a function is a covector, $df_p \in T_p^*M$, [[§13 Tangent Spaces III꞉ The Cotangent Space#^def-13-1|591 Def. §13.1]], and $df = \sum_i \frac{\partial f}{\partial x^i}\,dx^i$ holds in every chart, with the $dx^i$ the dual basis, [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|591 Lemma §13.2]].
+> - On a manifold the differential of a function is a covector, $df_p \in T_p^*M$, [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|591 Def. §27.1]], and $df = \sum_i \frac{\partial f}{\partial x^i}\,dx^i$ holds in every chart, with the $dx^i$ the dual basis, [[§27 Tangent Spaces III꞉ The Cotangent Space#^lem-27-2|591 Lemma §27.2]].
 > - Computational version: the total differential $dz = f_x\,dx + f_y\,dy$, [[§93 Tangent Planes and Linear Approximations#^def-93-4|Calc Def. §93.4]] (with worked examples).
 
 > [!remark] Remark: Connection to Differentiability

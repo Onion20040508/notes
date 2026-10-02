@@ -137,7 +137,7 @@ We can now formalize the computation from [[§21 Introduction to Differential Fo
 > [!remark]- Connections
 > - The coefficients of $\Phi^*\omega$ are $k \times k$ minors of the Jacobian, i.e. determinants ([[§34 Determinants#^ladr-9-46|LADR 9.46]]); in the top-degree case $k = n$ this is the signed volume factor $\det J$, whose absolute value is the volume distortion ([[§34 Determinants#^ladr-9-61|LADR 9.61]], [[§15 Multivariable Integration#^prop-15-19|Proposition §15.19]]).
 > - Pulling back and then applying $d$ is how the classical theorems become one statement: [[Generalized Stokes' Theorem|Theorem §23.1]].
-> - On a manifold the same substitution, $dx^i = \sum_j \frac{\partial x^i}{\partial y^j}\,dy^j$, is how covectors change between charts: [[§17 The Tangent Bundle#^prop-17-5|591 Prop. §17.5]].
+> - On a manifold the same substitution, $dx^i = \sum_j \frac{\partial x^i}{\partial y^j}\,dy^j$, is how covectors change between charts: [[§31 The Tangent Bundle#^prop-31-5|591 Prop. §31.5]].
 
 > [!remark] Remark: Clarification of Terms
 > The ambient coordinates $(x_1, \ldots, x_n)$ are the standard coordinates on $\mathbb{R}^n$ — the space the form lives in. The parameter coordinates $(u_1, \ldots, u_k)$ are the coordinates on $D$ — the space we integrate over. The parametrization $\Phi$ is the bridge: it tells us, for each point in $D$, where it sits in $\mathbb{R}^n$. You have been using parametrizations all semester:
@@ -616,7 +616,7 @@ Recall from [[§6 Differentiability#^def-6-1|§6]]: $f$ is differentiable at $\m
 
 > [!remark]- Connections
 > - $Df_{\mathbf{p}}$ is a linear functional on $\mathbb{R}^n$ ([[§12 Duality#^ladr-3-108|LADR 3.108]]); the gradient is the vector that represents it via the dot product, by the [[Riesz representation theorem|Riesz representation theorem (LADR 6.42)]].
-> - On a manifold with no inner product only the differential survives, not the gradient vector: [[§13 Tangent Spaces III꞉ The Cotangent Space#^rem-13-2|591 §13, Differential — Not Gradient]].
+> - On a manifold with no inner product only the differential survives, not the gradient vector: [[§27 Tangent Spaces III꞉ The Cotangent Space#^rem-27-2|591 §13, Differential — Not Gradient]].
 
 > [!definition] Definition §22.7: Second Total Derivative
 > For $f: \mathbb{R}^n \to \mathbb{R}$ of class $C^2$ at $\mathbf{p}$, the **second total derivative** $D^2f_{\mathbf{p}}: \mathbb{R}^n \times \mathbb{R}^n \to \mathbb{R}$ is the bilinear form ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]]):

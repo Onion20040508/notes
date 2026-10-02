@@ -253,7 +253,7 @@ Working from the representation (16), Powers draws three conclusions about the s
 > \frac{\partial u}{\partial t} = 2\frac{\partial^2u}{\partial x^2}, \quad 0 < x < 2, \qquad \frac{\partial u}{\partial x}(0, t) = 1, \qquad -\frac{\partial u}{\partial x}(2, t) = u(2, t) - 2, \qquad u(x, 0) = x^2 + x - 1 .
 > $$
 >
-> Physically, heat is supplied at a constant rate through the left end, and the right end exchanges heat by convection with a medium at temperature $2$. In the notation of Definition §25.1, $\alpha_1 = 0$, $\alpha_2 = 1$, $c_1 = -1$, $\beta_1 = \beta_2 = 1$, $c_2 = 2$, and $s = p = 1$, $k = 2$.
+> Physically, heat is drawn out through the left end at a constant rate (the flux $-u_x$ there is $-1$, directed out of the rod), and the right end exchanges heat by convection with a medium at temperature $2$, from which heat flows in. In the notation of Definition §25.1, $\alpha_1 = 0$, $\alpha_2 = 1$, $c_1 = -1$, $\beta_1 = \beta_2 = 1$, $c_2 = 2$, and $s = p = 1$, $k = 2$.
 >
 > **(a) Steady state.** $0 = 2v''$, $v'(0) = 1$, $-v'(2) = v(2) - 2$. So $v = ax + b$ with $a = 1$, and $-1 = 2 + b - 2$ gives $b = -1$:
 >

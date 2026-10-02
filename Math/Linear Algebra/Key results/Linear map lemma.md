@@ -28,9 +28,9 @@ tags: [linear-algebra, hub]
 - [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-4|Proposition §30.4: The Cube Group Embeds in S_6]]
 
 ## Used in (Differentiable Manifolds)
-- [[§7 Homogeneous Spaces#^prop-7-11|Proposition §7.11: O(n) Acts Transitively on Gr_k(ℝⁿ)]]
-- [[§10 Vector Spaces and Matrix Groups#^prop-10-2|Proposition §10.2: The Dual Basis]]
-- [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|Lemma §13.2: The Differential in Coordinates]]
+- [[§12 The Topology of G∕H and Real Grassmannians#^prop-12-6|Proposition §12.6: O(n) Acts Transitively on Gr_k(ℝⁿ)]]
+- [[§17 Linear Algebra Toolkit#^prop-17-2|Proposition §17.2: The Dual Basis]]
+- [[§27 Tangent Spaces III꞉ The Cotangent Space#^lem-27-2|Lemma §27.2: The Differential in Coordinates]]
 
 ## Connections
 - The reason a linear map is the same data as its matrix: [[§9 Matrices#^ladr-3-31|Matrix of a linear map, M(T)]], and why $\mathcal{M}$ is bijective in [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]].

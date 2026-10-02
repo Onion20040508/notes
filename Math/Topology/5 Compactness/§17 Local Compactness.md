@@ -262,7 +262,7 @@ tags: [topology, math590]
 *The same picture one dimension up, $\mathbb{R}^2\cup\{\infty\}\cong S^2$: the ray from $N$ through $p$ hits the tangent plane at $w$. The compact disk $C$ of radius $2$ (blue) corresponds to the lower hemisphere, and its complement (red) corresponds to the upper cap around $N$. Neighborhoods of $\infty$ are complements of compact sets.*
 
 > [!remark]- Connections
-> - In 591, stereographic projection is a smooth chart on the circle, [[§8 Differentiable Structures#^ex-8-3|591 Ex. §8.3]], and identifies S² with ℂP¹, [[§8 Differentiable Structures#^prop-8-9|591 Prop. §8.9]].
+> - In 591, stereographic projection is a smooth chart on the circle, [[§13 Differentiable Structures#^ex-13-3|591 Ex. §13.3]], and identifies S² with ℂP¹, [[§14 Projective Spaces as Smooth Manifolds#^prop-14-4|591 Prop. §14.4]].
 
 ## Local Compactness in Hausdorff Spaces
 

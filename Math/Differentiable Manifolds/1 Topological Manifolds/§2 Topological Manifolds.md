@@ -5,9 +5,9 @@ chapter: 1
 section: 2
 tags: [differentiable-manifolds, math591]
 ---
-← [[§1 Point-Set Topology Review]] · ↑ [[· 1 Topological Manifolds]] · [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients]] →
+← [[§1 Point-Set Topology Review]] · ↑ [[· 1 Topological Manifolds]] · [[§3 Subspaces and Products]] →
 
-*Foundations — The definition of a topological manifold and the role of each axiom. The two ways of building examples begin next: by quotients ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients|§3]]) and by equations ([[§4 The Regular Value Theorem|§4]]).*
+*Foundations — The definition of a topological manifold and the role of each axiom. The two ways of building examples begin next: by quotients ([[§3 Subspaces and Products|§3]]) and by equations ([[§7 The Regular Value Theorem|§7]]).*
 
 *Reference: Lee Ch. 1, “Topological Manifolds.”*
 
@@ -40,10 +40,10 @@ tags: [differentiable-manifolds, math591]
 ^def-2-2
 
 > [!remark]- Connections
-> - The three conditions: [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]]; the smooth version is [[§8 Differentiable Structures#^def-8-9|Smooth Manifold Structure, Def. §8.9]].
+> - The three conditions: [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]]; the smooth version is [[§13 Differentiable Structures#^def-13-9|Smooth Manifold Structure, Def. §13.9]].
 
 > [!remark] Remark: Why These Three Conditions?
-> Locally Euclidean is the substantive geometric condition: near every point the space looks like $\mathbb{R}^n$, so calculus can (eventually) be imported chart by chart. The other two are global point-set hygiene. Hausdorff rules out non-uniqueness of limits (and, later, guarantees that compact subsets are closed, that one-point sets are closed, etc.); second countability rules out spaces that are “uncountably large” and is the hypothesis behind partitions of unity. Neither of the two hygiene conditions is implied by local Euclideanness—this is the content of the [[§2 Topological Manifolds#^prop-2-4|independence remark]] and the examples following it.
+> Locally Euclidean is the substantive geometric condition: near every point the space looks like $\mathbb{R}^n$, so calculus can (eventually) be imported chart by chart. The other two are global point-set hygiene. Hausdorff rules out non-uniqueness of limits (and, later, guarantees that compact subsets are closed, that one-point sets are closed, etc.); second countability rules out spaces that are “uncountably large” and is the hypothesis behind partitions of unity. Neither of the two hygiene conditions is implied by local Euclideanness—this is the content of the [[§2 Topological Manifolds#^prop-2-4|independence remark]] and the examples preceding it.
 
 ^rem-2-2
 
@@ -62,6 +62,11 @@ The fact that the dimension of a manifold is well-defined rests on the following
 > *Lee: Theorem 1.2 (proved as Theorem 17.26)*
 
 ^thm-2-1
+
+> [!proof]+ Proof (to be filled)
+> Not proved in this course (Lee proves it as Theorem 17.26). To be filled.
+
+^pf-2-1
 
 **Not proved in this course.** The theorem follows from Brouwer's *invariance of domain*; Lee proves it in Chapter 17 (Theorem 17.26) using de Rham cohomology. Note that the statement is purely about point-set topology—no differentiability is assumed—which is what makes it hard: the obvious linear-algebra argument ($\mathbb{R}^n \cong \mathbb{R}^m$ as vector spaces implies $n=m$) is unavailable, because homeomorphisms need not be linear or even differentiable. Compare: $\mathbb{R}$ and $\mathbb{R}^2$ are not homeomorphic by a connectedness argument (remove a point), but already $\mathbb{R}^2$ vs. $\mathbb{R}^3$ needs more.
 
@@ -129,20 +134,6 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ## Independence of the Three Conditions
 
-> [!theorem] Proposition §2.4: The Three Conditions Are Independent
-> Second countability, the Hausdorff property, and local Euclideanness are independent: for each of the three there is a space satisfying the other two but not it.
->
-> *Lee: Problems 1-1 and 1-2*
-
-^prop-2-4
-
-> [!proof]+ Proof
-> *(Lecture 1 gave the three examples, each with a one-line reason; the verifications are in the examples below.)* The examples that follow exhibit this, organized by the property that fails: $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$ fails only second countability ([[§2 Topological Manifolds#^ex-2-3|Example §2.3]]); the line with two origins fails only the Hausdorff property ([[§2 Topological Manifolds#^ex-2-1|Example §2.1]]); and $\mathbb{Q}$ fails only local Euclideanness ([[§2 Topological Manifolds#^ex-2-2|Example §2.2]]).
-
-^pf-2-4
-
-*Uses:* [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]], [[§2 Topological Manifolds#^ex-2-2|Ex. §2.2]], [[§2 Topological Manifolds#^ex-2-3|Ex. §2.3]], [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]]
-
 > [!remark] Remark: The Exam Trap: Locally Euclidean Does Not Imply Hausdorff
 > It is tempting to argue: “each point has a neighborhood homeomorphic to a disk, and points in Euclidean space can be separated, so a locally Euclidean space must be Hausdorff.” This is **false**. The argument only separates points lying in a *common* chart; two points may fail to share any chart, and then no Euclidean argument applies. The line with two origins is exactly this failure.
 
@@ -203,7 +194,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 *Uses:* [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§5 Subspace Topology#^lem-5-1|590 §5.1]]
 
 > [!remark]- Connections
-> - The same space as a quotient: [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^ex-3-1|Ex. §3.1]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^ex-3-7|Ex. §3.7]].
+> - The same space as a quotient: [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§6 Open Quotients and Complex Projective Space#^ex-6-1|Ex. §6.1]].
 
 > [!example] Example §2.2: Fails Locally Euclidean: $\mathbb{Q}$
 > $X = \mathbb{Q}$ with the subspace topology from $\mathbb{R}$ is second countable (subspace of a second countable space) and $T_2$ (metric space), but is not locally Euclidean of any dimension.
@@ -232,7 +223,21 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^ex-2-3
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|Def. §3.3]], [[§4 Product Topology#^def-4-1|590 Def. §4.1]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§4 Product Topology#^def-4-1|590 Def. §4.1]]
+
+> [!theorem] Proposition §2.4: The Three Conditions Are Independent
+> Second countability, the Hausdorff property, and local Euclideanness are independent: for each of the three there is a space satisfying the other two but not it.
+>
+> *Lee: Problems 1-1 and 1-2*
+
+^prop-2-4
+
+> [!proof]+ Proof
+> *(Lecture 1 gave the three examples, each with a one-line reason; the verifications are in the examples above.)* The examples above exhibit this, organized by the property that fails: $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$ fails only second countability ([[§2 Topological Manifolds#^ex-2-3|Example §2.3]]); the line with two origins fails only the Hausdorff property ([[§2 Topological Manifolds#^ex-2-1|Example §2.1]]); and $\mathbb{Q}$ fails only local Euclideanness ([[§2 Topological Manifolds#^ex-2-2|Example §2.2]]).
+
+^pf-2-4
+
+*Uses:* [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]], [[§2 Topological Manifolds#^ex-2-2|Ex. §2.2]], [[§2 Topological Manifolds#^ex-2-3|Ex. §2.3]], [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]]
 
 > [!remark] Remark: Dimension-Zero Version
 > A student observed that $\mathbb{R}_{\mathrm{disc}}$ alone already works: it is $T_2$ (discrete), locally Euclidean of dimension $0$ (each $\{x\}$ is an open neighborhood homeomorphic to $\mathbb{R}^0 = \{\text{pt}\}$), and not second countable ([[§1 Point-Set Topology Review#^ex-1-2|Example §1.2]]). The next proposition says exactly why: it is uncountable.
@@ -332,7 +337,7 @@ The failure of second countability in the last example is detected by counting c
 *Uses:* [[§2 Topological Manifolds#^ex-2-4|Ex. §2.4]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§18 Countability Axioms#^thm-18-3|590 §18.3]]
 
 > [!remark]- Connections
-> - The hemisphere charts as an atlas: [[§8 Differentiable Structures#^def-8-6|Def. §8.6]]; the circle case with its smooth atlases is [[§8 Differentiable Structures#^ex-8-2|Ex. §8.2]].
+> - The hemisphere charts as an atlas: [[§13 Differentiable Structures#^def-13-6|Def. §13.6]]; the circle case with its smooth atlases is [[§13 Differentiable Structures#^ex-13-2|Ex. §13.2]].
 
 > [!remark] Remark
 > This is the argument of [[§2 Topological Manifolds#^ex-2-4|Example §2.4]], for every $n$ (Lee, Example 1.4). The hemisphere charts will be our first example of an *atlas*, and the maps between overlapping charts ([[§2 Topological Manifolds#Charts and Transition Functions|§2, Charts and Transition Functions]]) will turn out to be smooth.
@@ -399,11 +404,11 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 ^cor-2-10
 
 > [!proof]+ Proof
-> A component $C$ is open: for $p \in C$ the connected set $U_p$ (homeomorphic to $\mathbb{R}^n$, connected by [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7]](4)) contains $p$, hence lies in $C$. Being open in $M$, $C$ is a manifold of the same dimension by the open-submanifold remark of [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-6|§3.6]], and it is connected, hence path connected by [[§2 Topological Manifolds#^thm-2-9|Theorem §2.9]]; so $C$ is contained in the path component of any of its points. Conversely a path-connected set is connected, so the path component of $p$ is contained in $C$.
+> A component $C$ is open: for $p \in C$ the connected set $U_p$ (homeomorphic to $\mathbb{R}^n$, connected by [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7]](4)) contains $p$, hence lies in $C$. Being open in $M$, $C$ is a manifold of the same dimension by the open-submanifold remark of [[§3 Subspaces and Products#^prop-3-6|§3.6]], and it is connected, hence path connected by [[§2 Topological Manifolds#^thm-2-9|Theorem §2.9]]; so $C$ is contained in the path component of any of its points. Conversely a path-connected set is connected, so the path component of $p$ is contained in $C$.
 
 ^pf-2-10
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^thm-2-9|§2.9]], [[§14 Connected Subspaces of ℝ#^thm-14-4|590 §14.4]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^thm-2-9|§2.9]], [[§14 Connected Subspaces of ℝ#^thm-14-4|590 §14.4]]
 
 > [!remark] Remark
 > This is the mechanism behind [[§2 Topological Manifolds#^prop-2-6|Proposition §2.6]]: openness of the components is what turns second countability into a bound on their number. It is also the reason [[§2 Topological Manifolds#^cor-2-2|Corollary §2.2]] can speak of the dimension being constant on components.
@@ -424,7 +429,7 @@ Suppose $X$ is a topological manifold of dimension $n$, and let $p \in X$. By de
 ^def-2-3
 
 > [!remark]- Connections
-> - Restated at the start of Chapter 3: [[§8 Differentiable Structures#^def-8-1|Def. §8.1]]; the smooth version is [[§8 Differentiable Structures#^def-8-12|Smooth Chart, Def. §8.12]].
+> - Restated at the start of Chapter 3: [[§13 Differentiable Structures#^def-13-1|Def. §13.1]]; the smooth version is [[§15 Smooth Functions and Smooth Maps#^def-15-1|Smooth Chart, Def. §15.1]].
 
 > [!theorem] Lemma §2.11: Restricting and Recomposing Charts
 > Let $(U, \varphi)$ be a chart on a topological $n$-manifold: $\varphi$ is a homeomorphism of the open set $U$ onto an open subset of $\mathbb{R}^n$.
@@ -440,7 +445,7 @@ Suppose $X$ is a topological manifold of dimension $n$, and let $p \in X$. By de
 
 ^pf-2-11
 
-*Uses:* [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-1|Def. §3.1]], [[§5 Subspace Topology#^lem-5-2|590 §5.2]]
+*Uses:* [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§5 Subspace Topology#^lem-5-2|590 §5.2]]
 
 > [!remark] Remark: Charts Are Not Unique
 > Nothing in the definition pins down $U$ or $\varphi$: by the lemma, a chart can be shrunk or recomposed at will. Consequently, the fundamental picture of the first weeks of the course is: *two* charts at the same point, and the map that compares them.
@@ -464,7 +469,7 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 ^def-2-4
 
 > [!remark]- Connections
-> - Chapter 3 asks these maps to be smooth: [[§8 Differentiable Structures#^def-8-4|Smoothly Compatible Charts, Def. §8.4]].
+> - Chapter 3 asks these maps to be smooth: [[§13 Differentiable Structures#^def-13-4|Smoothly Compatible Charts, Def. §13.4]].
 
 > [!theorem] Proposition §2.12: Transition Functions Are Homeomorphisms
 > For a topological manifold, $\varphi(U \cap V)$ and $\psi(U \cap V)$ are open subsets of $\mathbb{R}^n$, and $\psi \circ \varphi^{-1}$ is a homeomorphism between them, with inverse $\varphi \circ \psi^{-1}$.
@@ -490,7 +495,7 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 > \psi \circ \varphi^{-1}(x, y) = \psi\big(x, y, \sqrt{1 - x^2 - y^2}\big) = \big(y, \sqrt{1 - x^2 - y^2}\big).
 > $$
 >
-> Note that this map is not merely continuous but $C^\infty$ on its (open) domain, since $1 - x^2 - y^2 > 0$ there. This is no accident, and it is the point of the [[§8 Differentiable Structures#^def-8-4|next definition]].
+> Note that this map is not merely continuous but $C^\infty$ on its (open) domain, since $1 - x^2 - y^2 > 0$ there. This is no accident, and it is the point of the [[§13 Differentiable Structures#^def-13-4|next definition]].
 
 ^ex-2-5
 
@@ -499,9 +504,9 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 > [!remark] Remark: Preview: What Makes a Manifold *Differentiable*
 > For a topological manifold, transition functions are homeomorphisms between open subsets of $\mathbb{R}^n$—and that is all one can say. To speak of *differentiable* manifolds, we will **require** that all transition functions be differentiable (in fact $C^\infty$).
 >
-> Why is this the right move? Differentiability is not a topological notion: it makes no sense to ask whether a map $X \to \mathbb{R}$ on an abstract topological space is differentiable, because $X$ has no linear structure. What *does* make sense is to pull $f$ back to Euclidean space via a chart, $f \circ \varphi^{-1} : A \to \mathbb{R}$, and ask whether *that* is differentiable. For this to be independent of the chart chosen, one needs $f \circ \psi^{-1} = (f \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ to be differentiable whenever $f \circ \varphi^{-1}$ is—which is exactly the requirement that transition functions be differentiable. (He expected to begin this on Wednesday; in the event, Lecture 2 stayed with topology—see [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients|§3]].)
+> Why is this the right move? Differentiability is not a topological notion: it makes no sense to ask whether a map $X \to \mathbb{R}$ on an abstract topological space is differentiable, because $X$ has no linear structure. What *does* make sense is to pull $f$ back to Euclidean space via a chart, $f \circ \varphi^{-1} : A \to \mathbb{R}$, and ask whether *that* is differentiable. For this to be independent of the chart chosen, one needs $f \circ \psi^{-1} = (f \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ to be differentiable whenever $f \circ \varphi^{-1}$ is—which is exactly the requirement that transition functions be differentiable. (He expected to begin this on Wednesday; in the event, Lecture 2 stayed with topology—see [[§3 Subspaces and Products|§3]].)
 
 ^rem-2-12
 
 > [!remark]- Connections
-> - Carried out in [[§8 Differentiable Structures#^def-8-2|Def. §8.2]] (smooth in the sense of a chart), [[§8 Differentiable Structures#^rem-8-3|the problem this creates]] and [[§8 Differentiable Structures#^thm-8-1|§8.1]].
+> - Carried out in [[§13 Differentiable Structures#^def-13-2|Def. §13.2]] (smooth in the sense of a chart), [[§13 Differentiable Structures#^rem-13-3|the problem this creates]] and [[§13 Differentiable Structures#^thm-13-1|§13.1]].

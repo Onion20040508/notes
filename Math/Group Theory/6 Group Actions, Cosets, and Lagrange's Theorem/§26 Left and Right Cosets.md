@@ -36,7 +36,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|590 Def. §21.13 (Cosets and Quotient Group)]].
 > - Linear-algebra analogue of a coset $v + U$: [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97 (Translate)]].
-> - With a topology: the coset space G/H with the quotient topology from the projection, [[§7 Homogeneous Spaces#^def-7-6|591 Def. §7.6]] (cosets restated in [[§7 Homogeneous Spaces#^def-7-4|591 Def. §7.4]]).
+> - With a topology: the coset space G/H with the quotient topology from the projection, [[§12 The Topology of G∕H and Real Grassmannians#^def-12-1|591 Def. §12.1]] (cosets restated in [[§11 Homogeneous Spaces#^def-11-4|591 Def. §11.4]]).
 > - A coset in linear algebra: the solution set of Ax = b is the coset p + Nul A of the subgroup Nul A of ℝⁿ, [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]].
 
 > [!theorem] Proposition §26.1: Cosets Are Orbits
@@ -60,7 +60,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The other side of this picture, $G$ acting on the orbit space $G/H$: [[§29 G Acting on Coset Spaces#^prop-29-1|The Action of G on G∕H, §29.1]].
-> - Used in 591 to present G/H as an orbit space, of H acting on G by right translation, [[§7 Homogeneous Spaces#^prop-7-4|591 Prop. §7.4]].
+> - Used in 591 to present G/H as an orbit space, of H acting on G by right translation, [[§11 Homogeneous Spaces#^prop-11-4|591 Prop. §11.4]].
 
 > [!theorem] Proposition §26.2: Cosets Are the Equivalence Classes
 > Let $H$ be a subgroup of $G$.

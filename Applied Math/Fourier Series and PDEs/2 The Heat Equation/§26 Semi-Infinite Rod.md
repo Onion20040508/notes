@@ -7,7 +7,7 @@ powers: "2.10"
 aliases: ["Powers 2.10"]
 tags: [fourier-series-and-pdes, math341]
 ---
-← [[§25 Generalities on the Heat Conduction Problem]] · ↑ [[· 2 The Heat Equation]] · [[§27★ Infinite Rod]] →
+← [[§25 Generalities on the Heat Conduction Problem]] · ↑ [[· 2 The Heat Equation]] · [[§27 Infinite Rod]] →
 
 *Powers, Section 2.10 · MAT 341 lectures 10.17, 10.22, 10.24 · HW 9 · Practice Midterm 2.*
 
@@ -114,7 +114,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 > |u(x, t)| \le M\int_0^\infty e^{-\lambda^2kt}\,d\lambda = M\sqrt{\frac{\pi}{4kt}} ,
 > $$
 >
-> independently of $x$, so (3) holds. (That $u(x, t) \to f(x)$ as $t \to 0+$, at points of continuity, is a stronger statement than the value of (9) at $t = 0$; it is seen most easily from the kernel form of [[§27★ Infinite Rod#^prop-27-4|Proposition §27.4]], and Powers does not discuss it.)
+> independently of $x$, so (3) holds. (That $u(x, t) \to f(x)$ as $t \to 0+$, at points of continuity, is a stronger statement than the value of (9) at $t = 0$; it is seen most easily from the kernel form of [[§27 Infinite Rod#^prop-27-4|Proposition §27.4]], and Powers does not discuss it.)
 
 ^pf-26-2
 

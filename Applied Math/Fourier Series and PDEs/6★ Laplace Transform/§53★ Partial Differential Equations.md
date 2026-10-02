@@ -12,7 +12,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 *Powers, Section 6.3.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
-This section applies the Laplace transform in $t$ to a heat or wave problem on $0 < x < 1$, with $x$ held as a parameter. All time derivatives disappear: the partial differential equation becomes an ordinary differential equation in $x$ for $U(x, s)$, the boundary conditions are transformed with it, and the initial conditions enter through the derivative rule. Solving this boundary value problem is routine. Inverting the answer is not, because $U$ is usually a ratio of hyperbolic functions of $\sqrt s$ and is found in no table. Powers inverts it by an extension of Heaviside's formula: locate the values $r_n$ where $U$ becomes infinite and add up terms $A_n(x)e^{r_nt}$. For the heat equation the $r_n$ are the decay rates $-n^2\pi^2$, for the wave equation they are $\pm i\times$ the natural frequencies. The resulting series is the one separation of variables gives ([[§19 Example꞉ Fixed End Temperatures|§19]], [[§30 Solution of the Vibrating String Problem|§30]]), here produced without an eigenfunction expansion. [[§54★ More Difficult Examples|§54★]] shows the payoff when the boundary conditions depend on time.
+This section applies the Laplace transform in $t$ to a heat or wave problem on $0 < x < 1$, with $x$ held as a parameter. All time derivatives disappear: the partial differential equation becomes an ordinary differential equation in $x$ for $U(x, s)$, the boundary conditions are transformed with it, and the initial conditions enter through the derivative rule. Solving this boundary value problem is routine. Inverting the answer is not, because $U$ is usually a ratio of hyperbolic functions of $\sqrt s$ and is found in no table. Powers inverts it by an extension of Heaviside's formula: locate the values $r_n$ where $U$ becomes infinite and add up terms $A_n(x)e^{r_nt}$. For the heat equation the $r_n$ are the decay rates $-n^2\pi^2$, for the wave equation they are $\pm i\times$ the natural frequencies. The resulting series is the one separation of variables gives ([[§19 Example꞉ Fixed End Temperatures#^thm-19-5|Theorem §19.5]], [[§30 Solution of the Vibrating String Problem#^thm-30-2|Theorem §30.2]]), here produced without an eigenfunction expansion. [[§54★ More Difficult Examples|§54★]] shows the payoff when the boundary conditions depend on time.
 
 ## Transforming in t
 
@@ -187,7 +187,7 @@ a function that rarely appears in a table of transforms. Powers inverts it by ex
 > $$
 >
 > taken along a vertical line $\operatorname{Re}(s) = \sigma$ to the right of all singularities of $U$. Suppose $U$ is a single-valued function of $s$ whose only singularities are poles $r_n$, and that it is small enough on a suitable sequence of large arcs in the left half-plane that pass between the poles. Then the line can be closed to the left, and the residue theorem turns the integral into the sum of the residues of $e^{st}U$. At a simple pole that residue is $A_n(x)e^{r_nt}$ with $A_n$ as above (compare the Connections of [[§52★ Partial Fractions and Convolutions#^thm-52-2|Theorem §52.2]]); at a double pole it is the expression of [[§54★ More Difficult Examples#^prop-54-2|Proposition §54.2]]. Two cautions follow.
-> - **$U$ must be single-valued.** In Examples §53.3 and §53.4, $U$ is an even function of $\sqrt s$, hence a function of $s$ alone; that is why "only the value of $s$, not the value of $\sqrt s$, is significant". When $\sqrt s$ enters otherwise, as $e^{-\sqrt s\,x}$ in [[§54★ More Difficult Examples#^ex-54-2|Example §54.2]], $s = 0$ is a branch point, and the method can only be used with care.
+> - **$U$ must be single-valued.** In Example §53.3, $U$ is an even function of $\sqrt s$, hence a function of $s$ alone (in Example §53.4, $\sqrt s$ does not occur); that is why "only the value of $s$, not the value of $\sqrt s$, is significant". When $\sqrt s$ enters otherwise, as $e^{-\sqrt s\,x}$ in [[§54★ More Difficult Examples#^ex-54-2|Example §54.2]], $s = 0$ is a branch point, and the method can only be used with care.
 > - **The series must be checked.** The arcs condition can fail, and the formal series may then diverge or converge to the wrong function; Powers' instruction to check convergence (and the problem itself) is the practical safeguard.
 
 ^rem-53-3
@@ -290,7 +290,7 @@ a function that rarely appears in a table of transforms. Powers inverts it by ex
 > u(x, t) = 1 - \frac4\pi\sum_{n\ \text{odd}} \frac{\sin(n\pi x)}{n}\exp\big(-n^2\pi^2t\big) .
 > $$
 >
-> This is the separation-of-variables solution in the form of [[§19 Example꞉ Fixed End Temperatures|§19]]: the steady state $1$ plus a transient $v$ with $v(x, 0) = -1$, whose sine coefficients are $-2\int_0^1\sin(n\pi x)\,dx = -2(1 - (-1)^n)/(n\pi)$. For $t \ge t_0 > 0$ the terms are bounded by $\frac4\pi e^{-n^2\pi^2t_0}$, so the series converges uniformly, together with its derivatives, and $u$ satisfies the heat equation and the boundary conditions. At $t = 0$ it is the sine series of $1 - 1 = 0$ on $0 < x < 1$.
+> This is the separation-of-variables solution in the form of [[§19 Example꞉ Fixed End Temperatures#^rem-19-1|§19]] (Method — The Steady-State/Transient Split): the steady state $1$ plus a transient $v$ with $v(x, 0) = -1$, whose sine coefficients are $-2\int_0^1\sin(n\pi x)\,dx = -2(1 - (-1)^n)/(n\pi)$. For $t \ge t_0 > 0$ the terms are bounded by $\frac4\pi e^{-n^2\pi^2t_0}$, so the series converges uniformly, together with its derivatives, and $u$ satisfies the heat equation and the boundary conditions. At $t = 0$ it is the sine series of $1 - 1 = 0$ on $0 < x < 1$.
 >
 > *Powers: 6.3, Example 3*
 
@@ -350,7 +350,7 @@ a function that rarely appears in a table of transforms. Powers inverts it by ex
 > u(x, t) = 2\sum_{n=1}^\infty \frac{\sin(\rho_nx)\sin(\rho_nt)}{\rho_n^3\sin(\rho_n)}, \qquad \rho_n = \frac{(2n - 1)\pi}{2} .
 > $$
 >
-> Since $\sin\rho_n = (-1)^{n+1}$, this is $u = 2\sum(-1)^{n+1}\sin(\rho_nx)\sin(\rho_nt)/\rho_n^3$. Separation of variables gives the same: the eigenfunctions for $X(0) = 0$, $X'(1) = 0$ are $\sin(\rho_nx)$ ([[§21 Example꞉ Different Boundary Conditions|§21]]), and $u = \sum b_n\sin(\rho_nx)\sin(\rho_nt)$ with $\rho_nb_n = 2\int_0^1 x\sin(\rho_nx)\,dx = 2\sin(\rho_n)/\rho_n^2$. The terms are bounded by $2/\rho_n^3$, so the series converges uniformly.
+> Since $\sin\rho_n = (-1)^{n+1}$, this is $u = 2\sum(-1)^{n+1}\sin(\rho_nx)\sin(\rho_nt)/\rho_n^3$. Separation of variables gives the same: the eigenfunctions for $X(0) = 0$, $X'(1) = 0$ are $\sin(\rho_nx)$ ([[§21 Example꞉ Different Boundary Conditions#^thm-21-1|Theorem §21.1]]), and $u = \sum b_n\sin(\rho_nx)\sin(\rho_nt)$ with $\rho_nb_n = 2\int_0^1 x\sin(\rho_nx)\,dx = 2\sin(\rho_n)/\rho_n^2$. The terms are bounded by $2/\rho_n^3$, so the series converges uniformly.
 >
 > *Powers: 6.3, Example 4*
 

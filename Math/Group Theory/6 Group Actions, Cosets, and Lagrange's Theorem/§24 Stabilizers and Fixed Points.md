@@ -30,7 +30,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Stabilizers enter [[§28 Orbit–Stabilizer#^thm-28-3|Orbit–Stabilizer]]; fixed points enter [[§28 Orbit–Stabilizer#^thm-28-6|Burnside's Lemma]]; under conjugation the stabilizer is the [[§32 Conjugation as an Action and the Class Equation#^def-32-1|centralizer]].
-> - Called the isotropy subgroup in 591, [[§7 Homogeneous Spaces#^def-7-2|591 Def. §7.2]]; for a continuous action on a space whose points are closed it is a closed subgroup, [[§7 Homogeneous Spaces#^thm-7-2|591 Thm. §7.2]].
+> - Called the isotropy subgroup in 591, [[§11 Homogeneous Spaces#^def-11-2|591 Def. §11.2]]; for a continuous action on a space whose points are closed it is a closed subgroup, [[§11 Homogeneous Spaces#^thm-11-2|591 Thm. §11.2]].
 
 > [!theorem] Proposition §24.1: The Stabilizer Is a Subgroup
 > For every $x \in X$, $\operatorname{Stab}(x)$ is a subgroup of $G$. (The worksheet says “of $X$”; this is a typo — the stabilizer is a set of group elements.)
@@ -76,7 +76,7 @@ tags: [group-theory, math493]
 *The proposition in one picture: if $s$ fixes $x$ (red loop), then $gsg^{-1}$ fixes $y = g \star x$ — go back to $x$ by $g^{-1}$ (dashed), loop by $s$, and return by $g$ (read right to left, $g^{-1}$ acts first). Conversely every loop at $y$ arises this way, so $\operatorname{Stab}(y) = g\operatorname{Stab}(x)g^{-1}$.*
 
 > [!remark]- Connections
-> - Used in 591 to show that the topology of a homogeneous space does not depend on the base point: [[§7 Homogeneous Spaces#^prop-7-9|591 Prop. §7.9]].
+> - Used in 591 to show that the topology of a homogeneous space does not depend on the base point: [[§12 The Topology of G∕H and Real Grassmannians#^prop-12-4|591 Prop. §12.4]].
 
 > [!theorem] Corollary §24.3: Stabilizers Along an Orbit Are Conjugate
 > If $y = g \star x$ for some $g \in G$ (i.e. $y$ lies in the orbit of $x$, [[§25 Orbits#^def-25-1|Def. §25.1]]), then $\operatorname{Stab}(y) = g \operatorname{Stab}(x) g^{-1}$, and conjugation $c_g$ restricts to an isomorphism $\operatorname{Stab}(x) \to \operatorname{Stab}(y)$. In particular all stabilizers of points in one orbit are isomorphic and have the same order.

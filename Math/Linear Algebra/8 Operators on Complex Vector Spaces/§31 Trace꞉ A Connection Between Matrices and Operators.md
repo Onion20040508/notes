@@ -15,7 +15,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The trace of a permutation matrix counts fixed points; averaged over a group it counts orbits, [[§28 Orbit–Stabilizer#^thm-28-6|493 Thm. §28.6]] (hub [[Burnside's Lemma]]).
-> - The trace is the derivative of the determinant at the identity ([[§5 Topological Groups and Classical Matrix Groups#^prop-5-9|591 Prop. §5.9]], [[Jacobi's Formula]]), so the tangent space of SL(n, ℝ) at I consists of the trace-zero matrices, [[§11 Tangent Spaces I꞉ The Geometric Picture#^thm-11-5|591 Thm. §11.5]].
+> - The trace is the derivative of the determinant at the identity ([[§9 The Classical Groups Are Topological Manifolds#^prop-9-1|591 Prop. §9.1]], [[Jacobi's Formula]]), so the tangent space of SL(n, ℝ) at I consists of the trace-zero matrices, [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5|591 Thm. §20.5]].
 > - Computational version: [[§33 The Characteristic Equation#^thm-33-5|235 Thm. §33.5]] (the trace as a coefficient of the characteristic polynomial) and [[§52★ Applications to Image Processing and Statistics#^def-52-4|235 Def. §52.4]] (the trace as total variance).
 
 > [!example] Example 8.48: Trace of a 3-by-3 matrix (p. 326)

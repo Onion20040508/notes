@@ -25,12 +25,11 @@ tags: [linear-algebra, hub]
 - [[§31 Conjugacy Classes#^prop-31-3|Proposition §31.3: Conjugacy Class of a Diagonal Matrix]]
 
 ## Used in (Differentiable Manifolds)
-- [[§4 The Regular Value Theorem#^prop-4-5|Proposition §4.5: Regular Points When N ≤ m]]
-- [[§5 Topological Groups and Classical Matrix Groups#^def-5-4|Definition §5.4: General Linear Group]]
-- [[§5 Topological Groups and Classical Matrix Groups#^def-5-8|Definition §5.8: Complex Matrix Groups]]
-- [[§10 Vector Spaces and Matrix Groups#^lem-10-14|Lemma §10.14: A One-Sided Inverse Suffices]]
-- [[§14 Local Diffeomorphisms and Submersions#^thm-14-5|Theorem §14.5: Local Normal Form for Submersions]]
-- [[§14 Local Diffeomorphisms and Submersions#^lem-14-7|Lemma §14.7: Diffeomorphisms onto Open Sets Are Charts]]
+- [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5: Regular Points When N ≤ m]]
+- [[§8 Topological Groups and Classical Matrix Groups#^def-8-4|Definition §8.4: General Linear Group]]
+- [[§8 Topological Groups and Classical Matrix Groups#^def-8-8|Definition §8.8: Complex Matrix Groups]]
+- [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-19-3|Lemma §19.3: A One-Sided Inverse Suffices]]
+- [[§28 Local Diffeomorphisms and Submersions#^thm-28-7|Theorem §28.7: Local Normal Form for Submersions]]
 
 ## Connections
 - Characteristic polynomial: $\lambda$ is an eigenvalue iff $\det(\lambda I-T)=0$ ([[§34 Determinants#^ladr-9-51|9.51]]).

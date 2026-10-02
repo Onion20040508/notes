@@ -248,7 +248,7 @@ The lecture reached (5) and (6) as Powers reached (7) of [[§14 Fourier Integral
 >
 > (The shifted Gaussian integral is a fact from complex analysis, a shift of the path of integration. A real-variable check: $I(\lambda) = \int e^{-x^2}\cos\lambda x\,dx$ satisfies $I'(\lambda) = -\int xe^{-x^2}\sin\lambda x\,dx = -\frac\lambda2 I(\lambda)$, differentiating under the integral sign and integrating by parts, and $I(0) = \sqrt\pi$ ([[§100 Double Integrals in Polar Coordinates|Calc §100]]); so $I(\lambda) = \sqrt\pi e^{-\lambda^2/4}$, which is the case $\sigma^2 = \frac12$ after scaling.) In particular, for $f(x) = e^{-x^2} = \sqrt\pi f_{1/\sqrt2}(x)$, $C(\lambda) = \sqrt\pi\cdot\frac{1}{2\pi}e^{-\lambda^2/4} = \dfrac{e^{-\lambda^2/4}}{2\sqrt\pi}$ (Powers' Exercise 1.10.8). By Theorem §15.2, the real coefficient functions are $A(\lambda) = 2C(\lambda) = \frac1\pi e^{-\sigma^2\lambda^2/2}$ and $B = 0$.
 >
-> **(b) A heat flow (Midterm 2).** Let $u_t = u_{xx}$ on $-\infty < x < \infty$, $u$ bounded, $u(x, 0) = f_2(x)$ (the Gaussian with $\sigma = 2$). Separation of variables gives the basic solutions $e^{-\lambda^2 t}\big(A(\lambda)\cos\lambda x + B(\lambda)\sin\lambda x\big)$ ([[§27★ Infinite Rod|§27★]]), and by (a) $B = 0$, $A(\lambda) = \frac1\pi e^{-2\lambda^2}$. So
+> **(b) A heat flow (Midterm 2).** Let $u_t = u_{xx}$ on $-\infty < x < \infty$, $u$ bounded, $u(x, 0) = f_2(x)$ (the Gaussian with $\sigma = 2$). Separation of variables gives the basic solutions $e^{-\lambda^2 t}\big(A(\lambda)\cos\lambda x + B(\lambda)\sin\lambda x\big)$ ([[§27 Infinite Rod|§27★]]), and by (a) $B = 0$, $A(\lambda) = \frac1\pi e^{-2\lambda^2}$. So
 >
 > $$
 > u(x, t) = \frac1\pi\int_0^{\infty} e^{-\lambda^2 t}e^{-2\lambda^2}\cos\lambda x\,d\lambda = \frac{1}{2\pi}\int_{-\infty}^{\infty} e^{-(t + 2)\lambda^2 + i\lambda x}\,d\lambda = \frac{1}{2\pi}\sqrt{\frac{\pi}{t + 2}}\,e^{-x^2/(4(t + 2))} = \frac{1}{\sqrt{2\pi(2t + 4)}}\,e^{-x^2/(2(2t + 4))} ,
@@ -312,7 +312,7 @@ The Fourier integral or transform may be used to solve differential equations on
 > u(x, t) = \frac{1}{2\pi}\int_{-\infty}^{\infty} f(x - y)\sqrt{\frac\pi t}\,e^{-y^2/(4t)}\,dy = \int_{-\infty}^{\infty} f(x - y)\,\frac{e^{-y^2/(4t)}}{\sqrt{4\pi t}}\,dy .
 > $$
 >
-> The kernel $e^{-y^2/(4t)}/\sqrt{4\pi t}$ has integral $1$ and concentrates at $y = 0$ as $t \to 0+$, so $u(x, t) \to f(x)$; this is the heat kernel of [[§27★ Infinite Rod|§27★]].
+> The kernel $e^{-y^2/(4t)}/\sqrt{4\pi t}$ has integral $1$ and concentrates at $y = 0$ as $t \to 0+$, so $u(x, t) \to f(x)$; this is the heat kernel of [[§27 Infinite Rod|§27★]].
 >
 > *The exam states the convolution fact as $(\hat g_1\hat g_2)^\vee = g_1 * g_2$, without the factor $\frac{1}{2\pi}$ that this normalization requires; the key follows the exam's statement, so its final answer $\int f(x - y)\sqrt{\pi/t}\,e^{-y^2/(4t)}\,dy$ is $2\pi$ times the solution above and does not reduce to $f$ at $t = 0$.*
 >

@@ -136,7 +136,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 > [!remark]- Connections
 > - Equivalence relations, equivalence classes and the quotient set in 250: [[§22 Partitions and Equivalence Relations#^def-22-3|250 Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]]; the classes form a partition by [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]].
 > - Algebraic quotients built by the same recipe in 493: the orbit space of an action, [[§25 Orbits#^def-25-1|493 Def. §25.1]], and the quotient group G/N, [[§37 Quotient Groups#^def-37-1|493 Def. §37.1]].
-> - When a quotient by an open equivalence relation is Hausdorff or second countable is decided in 591: [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-26|591 Thm. §3.26]] (the graph of the relation is closed) and [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-28|591 Thm. §3.28]].
+> - When a quotient by an open equivalence relation is Hausdorff or second countable is decided in 591: [[§6 Open Quotients and Complex Projective Space#^thm-6-1|591 Thm. §6.1]] (the graph of the relation is closed) and [[§6 Open Quotients and Complex Projective Space#^thm-6-3|591 Thm. §6.3]].
 
 > [!example] Example §12.2: Circle as Quotient Space
 > $X = [0, 1]$. Let $\sim$ be defined by $0 \sim 1$ (i.e., glue the endpoints). Then $X/{\sim}$ is homeomorphic to a circle.
@@ -197,7 +197,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 ^def-12-4
 
 > [!remark]- Connections
-> - In 591, submersions are open maps, [[§14 Local Diffeomorphisms and Submersions#^cor-14-9|591 Cor. §14.9]], and open equivalence relations (open quotient maps) are where its quotient criteria apply, [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-6|591 Def. §3.6]].
+> - In 591, submersions are open maps, [[§28 Local Diffeomorphisms and Submersions#^cor-28-9|591 Cor. §28.9]], and open equivalence relations (open quotient maps) are where its quotient criteria apply, [[§4 Quotient Spaces and Open Maps#^def-4-3|591 Def. §4.3]].
 
 > [!theorem] Proposition §12.2
 > If $p: X \to Y$ is a surjective continuous map that is either open or closed, then $p$ is a quotient map.
@@ -262,7 +262,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 *Uses:* [[§9 Continuous Functions#^thm-9-4|§9.4]], [[§12 Quotient Topology#^ex-12-4|Ex. §12.4]]
 
 > [!remark]- Connections
-> - The same theorem in 591, where it is also shown to characterize the quotient topology: [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-18|591 Thm. §3.18]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^cor-3-20|591 Cor. §3.20]].
+> - The same theorem in 591, where it is also shown to characterize the quotient topology: [[§5 Quotient Maps#^thm-5-1|591 Thm. §5.1]], [[§5 Quotient Maps#^cor-5-3|591 Cor. §5.3]].
 
 > [!theorem] Corollary §12.4: Induced Bijection from Quotient
 > Let $p: X \to X^*$ be a quotient map, where $X^* = \{g^{-1}(\{z\}) \mid z \in Z\}$, where $g: X \to Z$ is surjective continuous. Then the map $g$ induces a bijection continuous map $f: X^* \to Z$.

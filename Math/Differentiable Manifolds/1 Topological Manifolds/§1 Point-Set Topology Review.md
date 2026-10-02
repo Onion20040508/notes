@@ -95,7 +95,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark] Remark: Which Definition to Use When
 > The proposition says “basis” has a single meaning; the two definitions are just the two directions of use.
 > - **Topology already given** (e.g. $\mathbb{R}^n$ with the usual topology, or a subspace of it): use [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]] to *verify* that a proposed family is a basis. This is what the second-countability examples below do.
-> - **Topology to be constructed** (e.g. the [[§1 Point-Set Topology Review#^ex-1-4|line with two origins]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-3|product]] and [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-4|quotient]] topologies): use [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] to *generate* it from a convenient family $\mathcal{B}$, after checking axiom 2. Uribe phrases this as “it suffices to give a basis of neighborhoods of each point,” which is [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] applied to the union of the local bases.
+> - **Topology to be constructed** (e.g. the [[§1 Point-Set Topology Review#^ex-1-4|line with two origins]], [[§3 Subspaces and Products#^def-3-3|product]] and [[§4 Quotient Spaces and Open Maps#^def-4-1|quotient]] topologies): use [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] to *generate* it from a convenient family $\mathcal{B}$, after checking axiom 2. Uribe phrases this as “it suffices to give a basis of neighborhoods of each point,” which is [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] applied to the union of the local bases.
 >
 > Uribe stated [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]] and the reformulation in [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1]]; [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] was not written in lecture but is the form used implicitly whenever a topology is specified by a basis.
 
@@ -230,7 +230,7 @@ tags: [differentiable-manifolds, math591]
 > - The same argument in 590: [[§18 Countability Axioms#^rem-18-2|590 §18, remark after Def. 18.3]]; it is part (1) of [[§1 Point-Set Topology Review#^prop-1-3|§1.3]] with a countable basis.
 
 > [!remark] Remark
-> The contrapositive is the useful direction: to prove a space is *not* second countable it suffices to exhibit one point at which it is not first countable. That is how [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^ex-3-2|Example §3.2]] below shows a quotient of $\mathbb{R}$ fails second countability. The converse of the proposition is false: $\mathbb{R}$ with the discrete topology ([[§1 Point-Set Topology Review#^ex-1-2|Example §1.2]]) is first countable—$\{\{x\}\}$ is a one-element basis of neighborhoods at $x$—but not second countable.
+> The contrapositive is the useful direction: to prove a space is *not* second countable it suffices to exhibit one point at which it is not first countable. That is how [[§4 Quotient Spaces and Open Maps#^ex-4-4|Example §4.4]] below shows a quotient of $\mathbb{R}$ fails second countability. The converse of the proposition is false: $\mathbb{R}$ with the discrete topology ([[§1 Point-Set Topology Review#^ex-1-2|Example §1.2]]) is first countable—$\{\{x\}\}$ is a one-element basis of neighborhoods at $x$—but not second countable.
 
 ^rem-1-7
 
@@ -249,7 +249,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Home in 590: [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]].
-> - For quotients, Hausdorffness is decided by the [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-26|Hausdorff criterion, §3.26]].
+> - For quotients, Hausdorffness is decided by the [[§6 Open Quotients and Complex Projective Space#^thm-6-1|Hausdorff criterion, §6.1]].
 
 > [!remark] Remark
 > There is a whole hierarchy of separation axioms ($T_0, T_1, T_{2\frac12}, T_3, T_{3\frac12}, \ldots$; see [[§19 Separation Axioms#^rem-19-2|590 §19]]). Uribe's editorial: learning all of them is mostly a waste of time. For manifolds, $T_2$ is the one that matters.
@@ -331,11 +331,11 @@ tags: [differentiable-manifolds, math591]
 *The basic neighbourhoods $N_1(\varepsilon)$ and $N_2(\varepsilon)$ of the two origins share the punctured interval $(-\varepsilon,0)\cup(0,\varepsilon)$, so no neighbourhoods of $0_1$ and $0_2$ are disjoint.*
 
 > [!remark]- Connections
-> - The other two manifold conditions are verified in [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; the quotient description is [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^ex-3-1|Ex. §3.1]], and non-Hausdorffness via the diagonal criterion is [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^ex-3-7|Ex. §3.7]].
+> - The other two manifold conditions are verified in [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; the quotient description is [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], and non-Hausdorffness via the diagonal criterion is [[§6 Open Quotients and Complex Projective Space#^ex-6-1|Ex. §6.1]].
 > - Limits are not unique here, since $1/n$ converges to both $0_1$ and $0_2$; Hausdorff spaces rule this out, [[§8 Hausdorff Spaces#^thm-8-3|590 Thm. §8.3]].
 
 > [!remark] Remark: The Line with Two Origins as a Quotient
-> Equivalently ([[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-14|Proposition §3.14]]), $X$ is the quotient of $\mathbb{R} \times \{1, 2\}$ (two disjoint copies of $\mathbb{R}$) by the equivalence relation $(x, 1) \sim (x, 2)$ for all $x \neq 0$: glue the two lines everywhere except at the origins. This is the standard example showing that *a quotient of a Hausdorff space need not be Hausdorff* (cf. [[§12 Quotient Topology|590 §12]]). We will meet this space again in [[§2 Topological Manifolds|§2]] as the reason the Hausdorff condition must be imposed *separately* on manifolds—it does not follow from being locally Euclidean.
+> Equivalently ([[§4 Quotient Spaces and Open Maps#^prop-4-2|Proposition §4.2]]), $X$ is the quotient of $\mathbb{R} \times \{1, 2\}$ (two disjoint copies of $\mathbb{R}$) by the equivalence relation $(x, 1) \sim (x, 2)$ for all $x \neq 0$: glue the two lines everywhere except at the origins. This is the standard example showing that *a quotient of a Hausdorff space need not be Hausdorff* (cf. [[§12 Quotient Topology|590 §12]]). We will meet this space again in [[§2 Topological Manifolds|§2]] as the reason the Hausdorff condition must be imposed *separately* on manifolds—it does not follow from being locally Euclidean.
 
 ^rem-1-9
 
@@ -351,7 +351,7 @@ tags: [differentiable-manifolds, math591]
 > 1. $(\ast)$ If $\mathcal{B}$ is a basis for $Y$, then $f : X \to Y$ is continuous if and only if $f^{-1}(B)$ is open in $X$ for every $B \in \mathcal{B}$.
 > 2. A bijection $f : X \to Y$ is a homeomorphism if and only if, for every $U \subseteq X$, $U$ is open in $X$ $\iff$ $f(U)$ is open in $Y$. In particular, homeomorphisms are open maps. ([[§9 Continuous Functions#^prop-9-2|590 §9]])
 > 3. If $f : X \to Y$ is a homeomorphism and $A \subseteq X$, then $f|_A : A \to f(A)$ is a homeomorphism for the subspace topologies; if moreover $A$ is open in $X$, then $f(A)$ is open in $Y$. ([[§9 Continuous Functions#^prop-9-3|590 §9]])
-> 4. A map $F : Z \to X \times Y$ is continuous if and only if $\pi_X \circ F$ and $\pi_Y \circ F$ are continuous. ([[§9 Continuous Functions|590 §9]]; also [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-10|Theorem §3.10]])
+> 4. A map $F : Z \to X \times Y$ is continuous if and only if $\pi_X \circ F$ and $\pi_Y \circ F$ are continuous. ([[§9 Continuous Functions|590 §9]]; also [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10]])
 >
 > *Lee: Lemma A.19 and App. A, “Topological Spaces”*
 
@@ -367,6 +367,11 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - Part (1) is also proved in 590, right after [[§9 Continuous Functions#^pf-def-9-1|the definition of continuity, 590 §9.1]]; part (4) is [[§10 Product Topology on Arbitrary Products#^thm-10-1|Continuity into Product Spaces, 590 §10.1]].
 
+> [!proof]+ Proof (to be filled)
+> Parts (2)–(4) are proved in MATH 590 ([[§9 Continuous Functions|590 §9]]); to be filled.
+
+^pf-1-5-2
+
 > [!theorem] Proposition §1.6: Metric Spaces
 > Let $(X, d)$ be a metric space with the metric topology.
 > 1. $X$ is Hausdorff. ([[§11 Metric Topology#^thm-11-4|590 §11]]; [[§1 Point-Set Topology Review#^ex-1-3|Example §1.3]])
@@ -376,6 +381,11 @@ tags: [differentiable-manifolds, math591]
 > *Lee: Example A.5*
 
 ^prop-1-6
+
+> [!proof]+ Proof (to be filled)
+> Proved in MATH 590 ([[§11 Metric Topology|590 §11]], [[§18 Countability Axioms|590 §18]]); to be filled.
+
+^pf-1-6
 
 > [!definition] Definition §1.8: Connected Component
 > Let $X$ be a topological space and $p \in X$. The **connected component** of $p$ is the union of all connected subsets of $X$ containing $p$.
@@ -402,6 +412,11 @@ tags: [differentiable-manifolds, math591]
 
 *Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]] (2), [[§13 Connected Spaces#^thm-13-5|590 §13.5]]
 
+> [!proof]+ Proof (to be filled)
+> Parts (1), (2) and (4) are proved in MATH 590 ([[§13 Connected Spaces|590 §13]], [[§14 Connected Subspaces of ℝ|590 §14]]); to be filled.
+
+^pf-1-7-2
+
 > [!theorem] Proposition §1.8: Compactness
 > 1. (Heine–Borel) A subset of $\mathbb{R}^n$ is compact if and only if it is closed and bounded. ([[Heine–Borel Theorem|590 §15]])
 > 2. The continuous image of a compact space is compact. ([[Continuous Image of a Compact Space is Compact|590 §15]])
@@ -413,3 +428,8 @@ tags: [differentiable-manifolds, math591]
 > *Lee: Propositions A.45 and A.50, Lemma A.52*
 
 ^prop-1-8
+
+> [!proof]+ Proof (to be filled)
+> Proved in MATH 590 ([[§15 Compact Spaces|590 §15]]); to be filled.
+
+^pf-1-8

@@ -39,7 +39,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Dimension: [[§12 Duality#^ladr-3-111|Dim V′ = dim V]]. Basis: [[§12 Duality#^ladr-3-112|Dual basis]], [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]]. Maps induce dual maps: [[§12 Duality#^ladr-3-118|Dual map, T′]].
 > - For a normed space 556 keeps only the bounded functionals and adds the dual norm: [[§24 Bras, Kets, and the Riesz Map#^def-24-1|556 Def. §24.1]].
-> - Same definition in 591 ([[§10 Vector Spaces and Matrix Groups#^def-10-1|591 Def. §10.1]]); the dual of a tangent space is the cotangent space, [[§13 Tangent Spaces III꞉ The Cotangent Space#^def-13-1|591 Def. §13.1]].
+> - Same definition in 591 ([[§17 Linear Algebra Toolkit#^def-17-1|591 Def. §17.1]]); the dual of a tangent space is the cotangent space, [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|591 Def. §27.1]].
 
 > [!theorem] Theorem 3.111: Dim V′ = dim V
 > If $V$ is finite-dimensional, then $V'$ is finite-dimensional and $\dim V'=\dim V$.
@@ -56,7 +56,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]], [[§12 Duality#^ladr-3-125|Dimension of the annihilator]], [[§12 Duality#^ladr-3-130|The range of T]].
-> - The isomorphism V ≅ V′ needs a basis, but V → V″ is canonical: [[§10 Vector Spaces and Matrix Groups#^prop-10-3|591 Prop. §10.3]]; more generally a non-degenerate pairing identifies one space with the dual of the other, [[§10 Vector Spaces and Matrix Groups#^thm-10-5|591 Thm. §10.5]].
+> - The isomorphism V ≅ V′ needs a basis, but V → V″ is canonical: [[§17 Linear Algebra Toolkit#^prop-17-3|591 Prop. §17.3]]; more generally a non-degenerate pairing identifies one space with the dual of the other, [[§17 Linear Algebra Toolkit#^thm-17-5|591 Thm. §17.5]].
 
 > [!definition] Definition 3.112: Dual basis
 > If $v_1,\dots,v_n$ is a basis of $V$, its *dual basis* is the list $\varphi_1,\dots,\varphi_n$ in $V'$ where
@@ -72,7 +72,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - $\varphi_j$ reads off the $j$-th coordinate: [[§12 Duality#^ladr-3-114|Dual basis gives coefficients for linear combination]]. It is a basis: [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]].
 > - Physics: $\langle e_j|$ against an orthonormal $|e_k\rangle$; index notation $e^j(e_k)=\delta^j_k$ for upper/lower indices.
-> - Same in 591: [[§10 Vector Spaces and Matrix Groups#^def-10-1|591 Def. §10.1]], a basis of the dual by [[§10 Vector Spaces and Matrix Groups#^prop-10-2|591 Prop. §10.2]]; the differentials of the coordinate functions form the dual basis of the coordinate derivations, [[§13 Tangent Spaces III꞉ The Cotangent Space#^lem-13-2|591 Lemma §13.2]].
+> - Same in 591: [[§17 Linear Algebra Toolkit#^def-17-1|591 Def. §17.1]], a basis of the dual by [[§17 Linear Algebra Toolkit#^prop-17-2|591 Prop. §17.2]]; the differentials of the coordinate functions form the dual basis of the coordinate derivations, [[§27 Tangent Spaces III꞉ The Cotangent Space#^lem-27-2|591 Lemma §27.2]].
 
 > [!example] Example 3.113: The dual basis of the standard basis of Fⁿ (p. 106)
 > On $\F^n$ let $\varphi_j(x_1,\dots,x_n)=x_j$ (select the $j$-th coordinate). Then $\varphi_j(e_k)=1$ if $k=j$ and $0$ otherwise, so $\varphi_1,\dots,\varphi_n$ is the dual basis of the standard basis ([[§12 Duality#^ladr-3-112|3.112]]). In index notation: $e^j(e_k)=\delta^j_k$.
@@ -126,7 +126,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Algebra: [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]]. Null space and range: [[§12 Duality#^ladr-3-128|The null space of T]], [[§12 Duality#^ladr-3-130|The range of T]]. Matrix is the transpose: [[§12 Duality#^ladr-3-132|Matrix of T (LADR 3.132)]].
 > - Not the adjoint $T^*$ of Chapter 7 ([[§22 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]), although both are represented by (conjugate) transposes.
-> - Same definition in 591, written with a star and called the transpose: [[§10 Vector Spaces and Matrix Groups#^def-10-2|591 Def. §10.2]], with its properties in [[§10 Vector Spaces and Matrix Groups#^prop-10-4|591 Prop. §10.4]].
+> - Same definition in 591, written with a star and called the transpose: [[§17 Linear Algebra Toolkit#^def-17-2|591 Def. §17.2]], with its properties in [[§17 Linear Algebra Toolkit#^prop-17-4|591 Prop. §17.4]].
 
 > [!example] Example 3.119: Dual map of the differentiation linear map (p. 108)
 > $D:\Poly(\R)\to\Poly(\R)$, $Dp=p'$. The dual map $D'$ pulls a functional back by precomposing with $D$:
@@ -171,7 +171,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - A subspace: [[§12 Duality#^ladr-3-124|The annihilator is a subspace]]. Dimension: [[§12 Duality#^ladr-3-125|Dimension of the annihilator]].
-> - The conormal space of a submanifold is the annihilator of its tangent space: [[§15 Submanifolds#^def-15-2|591 Def. §15.2]], of dimension the codimension by [[§15 Submanifolds#^prop-15-5|591 Prop. §15.5]].
+> - The conormal space of a submanifold is the annihilator of its tangent space: [[§29 Submanifolds#^def-29-2|591 Def. §29.2]], of dimension the codimension by [[§29 Submanifolds#^prop-29-5|591 Prop. §29.5]].
 
 > [!example] Example 3.122: Element of an annihilator (p. 109)
 > Let $U\subseteq\Poly(\R)$ be the polynomial multiples of $x^2$ and $\varphi(p)=p'(0)$. For $p=x^2q$, $p'(0)=\big(2xq+x^2q'\big)(0)=0$, so $\varphi\in U^0$.
@@ -316,7 +316,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Explains [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]](c) as $(AB)^t=B^tA^t$. Used in [[§12 Duality#^ladr-3-133|Column rank equals row rank (LADR 3.133)]].
 > - With respect to orthonormal bases the adjoint has the conjugate transpose: [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|Matrix of T (LADR 7.9)]].
-> - This is why covector components change by the transpose of the inverse Jacobian: [[§17 The Tangent Bundle#^prop-17-5|591 Prop. §17.5]].
+> - This is why covector components change by the transpose of the inverse Jacobian: [[§31 The Tangent Bundle#^prop-31-5|591 Prop. §31.5]].
 > - Used in Relativity: because the dual map has the transposed matrix, lower indices transform with the inverse transpose $\Lambda_\mu{}^\nu$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 
 > [!theorem] Theorem 3.133: Column rank equals row rank

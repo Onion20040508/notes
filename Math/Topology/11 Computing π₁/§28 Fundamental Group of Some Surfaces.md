@@ -51,7 +51,7 @@ tags: [topology, math590]
 *The evenly covered neighborhood from the proof: $U = B(x,\varepsilon)\cap S^2$ (dark red) and its antipodal copy $a(U)$ (light red, on the far side of the sphere) are disjoint because $\varepsilon < 1$ while $d(x,-x) = 2$ (dotted diameter). $p$ maps each of them homeomorphically onto the same set $p(U) \subseteq P^2$: two sheets over $p(U)$.*
 
 > [!remark]- Connections
-> - In every dimension the quotient Sⁿ → ℝPⁿ is a two-to-one local diffeomorphism: [[§14 Local Diffeomorphisms and Submersions#^ex-14-2|591 Ex. §14.2]].
+> - In every dimension the quotient Sⁿ → ℝPⁿ is a two-to-one local diffeomorphism: [[§28 Local Diffeomorphisms and Submersions#^ex-28-2|591 Ex. §28.2]].
 
 > [!theorem] Theorem §28.2: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$
 > The fundamental group of the projective plane is the cyclic group of order $2$.
@@ -99,7 +99,7 @@ tags: [topology, math590]
 [[§28 Fundamental Group of Some Surfaces#^pf-28-1|The same proof]] shows: $p: S^n \to P^n$ is a $2$-sheeted covering map (the antipodal map is a homeomorphism in any dimension, and the $\varepsilon$-ball argument is dimension-independent).
 
 > [!remark]- Connections
-> - In 591 ℝPⁿ gets a smooth atlas, [[§8 Differentiable Structures#^cor-8-10|591 Cor. §8.10]], and this quotient topology is shown to agree with its Grassmannian description, [[§8 Differentiable Structures#^prop-8-11|591 Prop. §8.11]]; the complex analogue ℂPⁿ is [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^def-3-11|591 Def. §3.11]].
+> - In 591 ℝPⁿ gets a smooth atlas, [[§14 Projective Spaces as Smooth Manifolds#^cor-14-5|591 Cor. §14.5]], and this quotient topology is shown to agree with its Grassmannian description, [[§14 Projective Spaces as Smooth Manifolds#^prop-14-6|591 Prop. §14.6]]; the complex analogue ℂPⁿ is [[§6 Open Quotients and Complex Projective Space#^def-6-2|591 Def. §6.2]].
 
 > [!theorem] Theorem §28.3: $\pi_1(P^n)$ for all $n$
 > $$

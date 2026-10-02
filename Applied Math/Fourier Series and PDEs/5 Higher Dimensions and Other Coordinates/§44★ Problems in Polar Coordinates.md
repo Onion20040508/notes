@@ -47,7 +47,7 @@ $$
 \nabla^2v = 0, \qquad v(a, \theta) = f(\theta)
 $$
 
-(periodic, bounded) is the rest state of the membrane, or the steady-state temperature of the plate. It is the potential in a disk, found in [[§39 Potential in a Disk|§39]], and it is needed in both problems to make the boundary condition at $r = a$ homogeneous. Suppose it has been found and subtracted, so that $f(\theta)$ is replaced by zero:
+(periodic, bounded) is the rest state of the membrane, or the steady-state temperature of the plate. It is the potential in a disk, found in [[§39 Potential in a Disk#^thm-39-2|Theorem §39.2]], and it is needed in both problems to make the boundary condition at $r = a$ homogeneous. Suppose it has been found and subtracted, so that $f(\theta)$ is replaced by zero:
 
 $$
 \nabla^2v = \frac{1}{c^2}\frac{\partial^2v}{\partial t^2} \quad\text{or}\quad \nabla^2v = \frac{1}{k}\frac{\partial v}{\partial t}, \qquad v(a, \theta, t) = 0 ,
@@ -94,7 +94,7 @@ plus the appropriate initial conditions.
 
 *Uses:* [[§44★ Problems in Polar Coordinates#^def-44-1|Def. §44.1]]
 
-The constant $-\lambda^2$ is indeed negative: see Remark: The Eigenvalues Are Positive below. The two-dimensional eigenvalue problem (1)–(4) can be separated again.
+The constant $-\lambda^2$ is indeed negative: see [[§44★ Problems in Polar Coordinates#^rem-44-2|Remark: The Eigenvalues Are Positive]] below. The two-dimensional eigenvalue problem (1)–(4) can be separated again.
 
 > [!theorem] Theorem §44.2: Separation of the Disk Eigenvalue Problem
 > A product $\phi(r, \theta) = R(r)Q(\theta)$, not identically zero, solves (1)–(4) if and only if $Q$ is a solution of the periodic eigenvalue problem
@@ -134,16 +134,16 @@ The constant $-\lambda^2$ is indeed negative: see Remark: The Eigenvalues Are Po
 >
 > The left side depends only on $r$ and the right side only on $\theta$, so $Q''/Q$ must be a constant, $-\mu^2$; otherwise $\lambda^2$ could not be constant. This gives (9)–(10), and multiplying $\frac{r(rR')'}{R} + \lambda^2r^2 = \mu^2$ by $R/r$ gives (12).
 >
-> **The periodic problem** (Powers' Exercise 5.4.4; it is the $\theta$-problem of the potential in a disk, [[§39 Potential in a Disk|§39]]). If $-\mu^2 > 0$, say $-\mu^2 = s^2$ with $s > 0$, then $Q = Ae^{s\theta} + Be^{-s\theta}$, and $Q(\theta + 2\pi) = Q(\theta)$ for all $\theta$ forces $A e^{2\pi s} = A$ and $Be^{-2\pi s} = B$, so $A = B = 0$. If $\mu = 0$, $Q = A + B\theta$ is periodic only if $B = 0$: $Q_0 = 1$. If $\mu > 0$, $Q = A\cos\mu\theta + B\sin\mu\theta$; periodicity with $(A, B) \ne (0, 0)$ means $Q$ and $Q'$ take the same values at $\theta = 0$ and $2\pi$, that is, $A\cos 2\pi\mu + B\sin 2\pi\mu = A$ and $\mu(-A\sin 2\pi\mu + B\cos 2\pi\mu) = \mu B$. This linear system for $(A, B)$ has a nonzero solution only if its determinant $(\cos 2\pi\mu - 1)^2 + \sin^2 2\pi\mu = 2(1 - \cos 2\pi\mu)$ vanishes, so $\cos 2\pi\mu = 1$ and $\mu = m$ is a positive integer; then both $\cos m\theta$ and $\sin m\theta$ are solutions. This is (11).
+> **The periodic problem** (Powers' Exercise 5.4.4). As Powers notes, (9)–(10) was solved in Chapter 4: it is the $\theta$-problem of the potential in a disk, with $\mu$ in place of $\lambda$. A positive ratio $Q''/Q = s^2$ gives $Q = Ae^{s\theta} + Be^{-s\theta}$, which is periodic only for $A = B = 0$ (shown just before [[§39 Potential in a Disk#^prop-39-1|Proposition §39.1]]); for $-\mu^2 \le 0$ the periodic solutions are exactly (11), by [[§39 Potential in a Disk#^prop-39-1|Proposition §39.1]] (periodicity forces $\cos 2\pi\mu = 1$, so $\mu = m$ is an integer).
 
 ^pf-44-2
 
-*Uses:* [[§44★ Problems in Polar Coordinates#^thm-44-1|§44.1]], [[§39 Potential in a Disk|§39]] (the periodic problem)
+*Uses:* [[§44★ Problems in Polar Coordinates#^thm-44-1|§44.1]], [[§39 Potential in a Disk#^prop-39-1|§39.1]] (the periodic problem)
 
-Equation (12) is **Bessel's equation** ([[§45★ Bessel's Equation#^def-45-1|Definition §45.1]]). Its bounded solutions are the Bessel functions $J_m(\lambda r)$ ([[§45★ Bessel's Equation#^thm-45-5|Theorem §45.5]]), and $R(a) = 0$ becomes $J_m(\lambda a) = 0$, which determines the eigenvalues $\lambda$ through the zeros of $J_m$. The problem is singular: the coefficient $\mu^2/r$ blows up at $r = 0$, where the boundedness condition replaces a boundary condition ([[§4★ Singular Boundary Value Problems|§4★]]).
+Equation (12) is **Bessel's equation** ([[§45★ Bessel's Equation#^def-45-1|Definition §45.1]]). Its bounded solutions are the Bessel functions $J_m(\lambda r)$ ([[§45★ Bessel's Equation#^thm-45-5|Theorem §45.5]]), and $R(a) = 0$ becomes $J_m(\lambda a) = 0$, which determines the eigenvalues $\lambda$ through the zeros of $J_m$. The problem is singular: the coefficient $\mu^2/r$ blows up at $r = 0$, where the boundedness condition replaces a boundary condition ([[§4★ Singular Boundary Value Problems#^def-4-2|Definition §4.2]]).
 
 > [!remark] Remark: Method — Heat and Wave Problems in a Disk
-> 1. **Steady state.** Solve the potential problem $\nabla^2v_\infty = 0$, $v_\infty(a, \theta) = f(\theta)$, periodic and bounded ([[§39 Potential in a Disk|§39]]), and subtract it, which makes the boundary condition homogeneous.
+> 1. **Steady state.** Solve the potential problem $\nabla^2v_\infty = 0$, $v_\infty(a, \theta) = f(\theta)$, periodic and bounded ([[§39 Potential in a Disk#^thm-39-2|Theorem §39.2]]), and subtract it, which makes the boundary condition homogeneous.
 > 2. **Separate time**, $v = \phi(r, \theta)T(t)$: the eigenvalue problem (1)–(4) and $T'' + \lambda^2c^2T = 0$ or $T' + \lambda^2kT = 0$ (Theorem §44.1).
 > 3. **Separate space**, $\phi = R(r)Q(\theta)$: $Q = 1$, $\cos m\theta$, $\sin m\theta$ with $\mu = m$ (Theorem §44.2).
 > 4. **Radial problem.** For each $m$, the bounded solutions of Bessel's equation (12) are $R = J_m(\lambda r)$; the boundary condition picks out the eigenvalues, $\lambda a = $ a zero of $J_m$ (or of $J_m'$ for an insulated edge).
@@ -166,7 +166,7 @@ Equation (12) is **Bessel's equation** ([[§45★ Bessel's Equation#^def-45-1|De
 >
 > with $w$ periodic in $\theta$ and bounded as $r \to 0$. The initial velocity is unchanged, because $v_\infty$ does not move. For a membrane, $v_\infty$ is the shape the membrane takes at rest when its frame is warped to the height $f(\theta)$, and $w$ is the vibration about that shape.
 >
-> For $f(\theta) = \cos\theta$, the potential in a disk ([[§39 Potential in a Disk|§39]]) is $v_\infty = (r/a)\cos\theta$: it is harmonic, since $\frac{1}{r}\big(r\cdot\frac{\cos\theta}{a}\big)_r - \frac{1}{r^2}\cdot\frac{r\cos\theta}{a} = \frac{\cos\theta}{ra} - \frac{\cos\theta}{ra} = 0$, bounded, periodic, and equal to $\cos\theta$ at $r = a$. The transient problem has initial condition $w(r, \theta, 0) = g(r, \theta) - (r/a)\cos\theta$.
+> For $f(\theta) = \cos\theta$, the potential in a disk ([[§39 Potential in a Disk#^thm-39-2|Theorem §39.2]], whose series has the single term $n = 1$) is $v_\infty = (r/a)\cos\theta$: it is harmonic, since $\frac{1}{r}\big(r\cdot\frac{\cos\theta}{a}\big)_r - \frac{1}{r^2}\cdot\frac{r\cos\theta}{a} = \frac{\cos\theta}{ra} - \frac{\cos\theta}{ra} = 0$, bounded, periodic, and equal to $\cos\theta$ at $r = a$. The transient problem has initial condition $w(r, \theta, 0) = g(r, \theta) - (r/a)\cos\theta$.
 >
 > *Powers: 5.4 (text); Exercise 5.4.1*
 
@@ -187,7 +187,7 @@ Equation (12) is **Bessel's equation** ([[§45★ Bessel's Equation#^def-45-1|De
 > Q'' + \mu^2Q = 0, \quad 0 < \theta < \pi, \qquad Q(0) = 0, \quad Q(\pi) = 0 .
 > $$
 >
-> This is the fixed-end problem of [[§19 Example꞉ Fixed End Temperatures|§19]] on an interval of length $\pi$: $\mu_m = m$, $Q_m(\theta) = \sin(m\theta)$, $m = 1, 2, 3, \ldots$. Compared with (11), the cosines and the constant $Q_0 = 1$ are gone. The radial problem is still Bessel's equation (12) with $\mu = m$, now only for $m \ge 1$.
+> This is the fixed-end problem of [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|Theorem §19.2]] on an interval of length $\pi$: $\mu_m = m$, $Q_m(\theta) = \sin(m\theta)$, $m = 1, 2, 3, \ldots$. Compared with (11), the cosines and the constant $Q_0 = 1$ are gone. The radial problem is still Bessel's equation (12) with $\mu = m$, now only for $m \ge 1$.
 >
 > *Powers: Exercise 5.4.5*
 
@@ -244,7 +244,7 @@ Equation (12) is **Bessel's equation** ([[§45★ Bessel's Equation#^def-45-1|De
 > \iint_{\mathcal{R}} \big(f\nabla^2g - g\nabla^2f\big)\,dA = \oint_{\mathcal{C}} \Big(f\frac{\partial g}{\partial n} - g\frac{\partial f}{\partial n}\Big)ds ,
 > $$
 >
-> where $\partial f/\partial n$ is the directional derivative in the direction normal to $\mathcal{C}$. Take $f = \phi_k$ and $g = \phi_m$. On the left, $\nabla^2\phi_m = -\lambda_m^2\phi_m$ and $\nabla^2\phi_k = -\lambda_k^2\phi_k$, so the integrand is $(\lambda_k^2 - \lambda_m^2)\phi_k\phi_m$.
+> where $\partial f/\partial n$ is the directional derivative in the direction normal to $\mathcal{C}$, valid for $f$, $g$ twice continuously differentiable up to $\mathcal{C}$ (as the eigenfunctions are assumed to be). Take $f = \phi_k$ and $g = \phi_m$. On the left, $\nabla^2\phi_m = -\lambda_m^2\phi_m$ and $\nabla^2\phi_k = -\lambda_k^2\phi_k$, so the integrand is $(\lambda_k^2 - \lambda_m^2)\phi_k\phi_m$.
 >
 > **Dirichlet condition.** On $\mathcal{C}$, $\phi_k = \phi_m = 0$, so the boundary integrand is $0$.
 >
@@ -262,7 +262,7 @@ Equation (12) is **Bessel's equation** ([[§45★ Bessel's Equation#^def-45-1|De
 
 > [!remark]- Connections
 > - Green's second identity $\int_D (u\Delta v - v\Delta u) = \int_{\partial D}(u\,\partial_nv - v\,\partial_nu)$ is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|452 Thm. §17.3]], proved there from the divergence theorem; it says that $\nabla^2$ is a symmetric operator on functions satisfying these boundary conditions, and the proof above is then the argument of [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]] (eigenvectors of a self-adjoint operator for distinct eigenvalues are orthogonal).
-> - The one-dimensional version is the orthogonality of Sturm–Liouville eigenfunctions, [[§23 Sturm–Liouville Problems|§23]] (Powers 2.7). For the rectangle the theorem gives (16) of [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-3|Theorem §43.3]] without computing integrals; for the circular membrane it gives the orthogonality of the modes $J_m(\lambda r)\cos m\theta$ used in [[§47★ Vibrations of a Circular Membrane|§47]].
+> - The one-dimensional version is the orthogonality of Sturm–Liouville eigenfunctions, [[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]] (Powers 2.7). For the rectangle the theorem gives (16) of [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-3|Theorem §43.3]] without computing integrals whenever the two eigenvalues differ; for the circular membrane it gives the orthogonality of modes with different frequencies in [[§47★ Vibrations of a Circular Membrane#^prop-47-3|Proposition §47.3]]. Eigenfunctions with the same eigenvalue (a square's $\phi_{12}$ and $\phi_{21}$, or $J_m(\lambda r)\cos m\theta$ and $J_m(\lambda r)\sin m\theta$) are not covered and need the direct computation.
 
 > [!remark] Remark: The Eigenvalues Are Positive
 > For the Dirichlet problem every eigenvalue $\lambda^2$ is positive, which justifies writing the separation constant as $-\lambda^2$. Green's first identity, $\iint_{\mathcal{R}} \big(\phi\nabla^2\phi + |\nabla\phi|^2\big)\,dA = \oint_{\mathcal{C}} \phi\,\frac{\partial\phi}{\partial n}\,ds$ ([[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]] with $u = v = \phi$), with $\phi = 0$ on $\mathcal{C}$ and $\nabla^2\phi = -\lambda^2\phi$, gives
@@ -273,6 +273,6 @@ Equation (12) is **Bessel's equation** ([[§45★ Bessel's Equation#^def-45-1|De
 >
 > because $\nabla\phi \equiv 0$ would make $\phi$ constant, hence $0$ by the boundary condition. For the rectangle this is Powers' Exercise 5.3.9, proved one variable at a time in [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-2|Theorem §43.2]]. With an insulated boundary ($\partial\phi/\partial n = 0$) the same identity gives $\lambda^2 \ge 0$, with $\lambda = 0$ exactly for the constants, as in Example §44.3.
 >
-> *Not in Powers: a standard consequence of Green's first identity.*
+> *Source: a standard consequence of Green's first identity; not in Powers.*
 
 ^rem-44-2

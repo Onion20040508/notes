@@ -92,7 +92,7 @@ which is nonzero because $u_1$ and $u_2$ are independent ([[§1★ Homogeneous L
 ^thm-5-1
 
 > [!proof]+ Proof
-> **The general solution.** By [[§2★ Nonhomogeneous Linear Equations#^thm-2-7|Theorem §2.7]] with $t_0 = l$, together with [[§2★ Nonhomogeneous Linear Equations#^thm-2-2|Theorem §2.2]] and [[§1★ Homogeneous Linear Equations#^thm-1-3|Theorem §1.3]], every solution of (1) has the form
+> **The general solution.** By [[§2★ Nonhomogeneous Linear Equations#^thm-2-7|Theorem §2.7]] with $t_0 = l$, together with [[§2★ Nonhomogeneous Linear Equations#^thm-2-2|Theorem §2.2]] and [[§1★ Homogeneous Linear Equations#^thm-1-3|Theorem §1.3]], the solutions of (1) are exactly the functions
 >
 > $$
 > u(x) = c_1u_1(x) + c_2u_2(x) + \int_l^x \big(u_1(z)u_2(x) - u_2(z)u_1(x)\big)\frac{f(z)}{W(z)}\,dz . \qquad (7)
@@ -218,7 +218,7 @@ in (7), (10) and (12). Powers states that all three are $0$ if any one of them i
 ^lem-5-2
 
 > [!proof]+ Proof
-> A solution of (4) that is not identically zero cannot have $u(x_0) = u'(x_0) = 0$ at any point $x_0$: the zero function solves (4) with these initial values, and by uniqueness ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|331 Thm. §14.1]]) it would be the only solution. So the vectors $U_j(x) = \big(u_j(x), u_j'(x)\big)$, $j = 1, 2$, are never $(0, 0)$.
+> A solution of (4) that is not identically zero cannot have $u(x_0) = u'(x_0) = 0$ at any point $x_0$: the zero function solves (4) with these initial values, and by uniqueness ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|331 Thm. §14.1]]) it would be the only solution. (At an endpoint $x_0 = l$ or $r$, extend $k$, $p$ continuously beyond $[l, r]$, constant beyond the ends; the solution of the extended equation with the same data at an interior point agrees with $u$ on $[l, r]$, so uniqueness applies at the endpoints too.) So the vectors $U_j(x) = \big(u_j(x), u_j'(x)\big)$, $j = 1, 2$, are never $(0, 0)$ on $[l, r]$.
 >
 > **$W$ vanishes somewhere if and only if $u_1$, $u_2$ are proportional.** If $u_2 = cu_1$, then $W \equiv 0$. Conversely, if $W(x_0) = 0$, the nonzero vectors $U_1(x_0)$, $U_2(x_0)$ are linearly dependent, so $U_2(x_0) = cU_1(x_0)$ for some $c$. Then $u_2 - cu_1$ solves (4) with zero value and derivative at $x_0$, so $u_2 - cu_1 \equiv 0$ by uniqueness. (Powers asserts this; it is also [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|331 Thm. §14.8]] together with [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|331 Thm. §14.4]].)
 >
@@ -357,7 +357,7 @@ This is the boundary-value version of resonance ([[§2★ Nonhomogeneous Linear 
 > \frac{u_1(z)u_2'(z) - u_2(z)u_1'(z)}{W(z)} = \frac{W(z)}{W(z)} = 1 .
 > $$
 >
-> **Conversely** (not in Powers), let $w$ have properties (i)–(iv). On $l < x < z$, $w$ solves (4) and satisfies (2), so $\big(w(l), w'(l)\big)$ and $\big(u_1(l), u_1'(l)\big)$ lie on the line $\alpha a - \alpha'b = 0$; as in the proof of [[§5★ Green's Functions#^lem-5-2|Lemma §5.2]], $w = Au_1$ there for a constant $A$. Likewise $w = Bu_2$ on $z < x < r$. Continuity and the jump condition at $z$ give
+> **Conversely** (not in Powers), let $w$ have properties (i)–(iv). On $l < x < z$, $w$ solves (4) and satisfies (2), so $\big(w(l), w'(l)\big)$ and $\big(u_1(l), u_1'(l)\big)$ lie on the line $\alpha a - \alpha'b = 0$. This line is spanned by the nonzero vector $\big(u_1(l), u_1'(l)\big)$, so $\big(w(l), w'(l)\big) = A\big(u_1(l), u_1'(l)\big)$ for a constant $A$, and $w - Au_1$ solves (4) with zero data at $l$; as in the proof of [[§5★ Green's Functions#^lem-5-2|Lemma §5.2]], uniqueness gives $w = Au_1$ there. Likewise $w = Bu_2$ on $z < x < r$. Continuity and the jump condition at $z$ give
 >
 > $$
 > Au_1(z) - Bu_2(z) = 0, \qquad Bu_2'(z) - Au_1'(z) = 1 ,

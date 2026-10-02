@@ -32,7 +32,7 @@ The Laplace transform $F(s) = \int_0^\infty e^{-st}f(t)\,dt$ trades a function o
 *This is [[§21 Definition of the Laplace Transform#^def-21-4|331 Def. §21.4]] ("sectionally continuous" is piecewise continuous, [[§21 Definition of the Laplace Transform#^def-21-2|331 Def. §21.2]]); there $s$ is real.*
 
 > [!remark]- Connections
-> - The Laplace and Fourier transforms are one transform: with $s = \sigma + i\omega$, $F(\sigma + i\omega) = \int_{-\infty}^{\infty} e^{-i\omega t}\big[e^{-\sigma t}f(t)H(t)\big]\,dt$ is the Fourier transform of $e^{-\sigma t}f(t)$, cut off to $t \ge 0$ ([[§14 Fourier Integral|§14]], [[§15★ Complex Methods|§15★]]). The factor $e^{-\sigma t}$ is what makes the integral converge for functions such as $e^{t}$ that have no Fourier transform.
+> - The Laplace and Fourier transforms are one transform: with $s = \sigma + i\omega$, $F(\sigma + i\omega) = \int_{-\infty}^{\infty} e^{-i\omega t}\big[e^{-\sigma t}f(t)H(t)\big]\,dt$ is $2\pi$ times the complex Fourier coefficient function $C(\omega)$ of $e^{-\sigma t}f(t)$, cut off to $t \ge 0$ ([[§15★ Complex Methods#^def-15-2|Def. §15.2]]; real form [[§14 Fourier Integral#^def-14-1|Def. §14.1]]). The factor $e^{-\sigma t}$ is what makes the integral converge for functions such as $e^{t}$ that have no Fourier transform.
 
 > [!definition] Definition §51.2: Exponential Order
 > A function $f(t)$, sectionally continuous on every finite interval $0 \le t < T$, is **of exponential order** if for some constant $k$

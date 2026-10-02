@@ -575,6 +575,10 @@ Let $X, Y$ be topological spaces.
 If $f$ is continuous, preimages of the (open) basis elements are open. Conversely, every open $V \subseteq Y$ is a union $V = \bigcup_i B_i$ of basis elements (Proposition~\ref{prop:basis-equiv}), and $f^{-1}(V) = \bigcup_i f^{-1}(B_i)$ is a union of open sets.
 \end{proof}
 
+\begin{proof}[Proof (to be filled)]
+Parts (2)--(4) are proved in MATH 590 (\S9; see the Topology notes); to be filled.
+\end{proof}
+
 \begin{propbox}[Metric Spaces]\thmlabel{fact:metric}
 Let $(X, d)$ be a metric space with the metric topology.
 \begin{enumerate}
@@ -584,6 +588,10 @@ Let $(X, d)$ be a metric space with the metric topology.
 \end{enumerate}
 \leeref{Example A.5}
 \end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+Proved in MATH 590 (\S11 and \S18; see the Topology notes); to be filled.
+\end{proof}
 
 \begin{defbox}[Connected Component]\deflabel{def:component}
 Let $X$ be a topological space and $p \in X$. The \textbf{connected component} of $p$ is the union of all connected subsets of $X$ containing $p$.
@@ -605,6 +613,10 @@ Let $X$ be a topological space, and components be as in Definition~\ref{def:comp
 Let $C_p$ be the component of $p$. Every connected set containing $p$ contains $p$, so by (2) their union $C_p$ is connected. Now suppose $C_p \cap C_q \neq \emptyset$. Then $C_p \cup C_q$ is a union of two connected sets with a common point, hence connected by (2); it contains $p$, so $C_p \cup C_q \subseteq C_p$, i.e.\ $C_q \subseteq C_p$. Symmetrically $C_p \subseteq C_q$. Since every $p$ lies in $C_p$, the components cover $X$.
 \end{proof}
 
+\begin{proof}[Proof (to be filled)]
+Parts (1), (2) and (4) are proved in MATH 590 (\S13--\S14; see the Topology notes); to be filled.
+\end{proof}
+
 \begin{propbox}[Compactness]\thmlabel{fact:compact}
 \begin{enumerate}
     \item (Heine--Borel) A subset of $\mathbb{R}^n$ is compact if and only if it is closed and bounded. \hfill (590 \S15)
@@ -616,6 +628,10 @@ Let $C_p$ be the component of $p$. Every connected set containing $p$ contains $
 \end{enumerate}
 \leeref{Propositions A.45 and A.50, Lemma A.52}
 \end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+Proved in MATH 590 (\S15; see the Topology notes); to be filled.
+\end{proof}
 
 % ============================================================================
 % SECTION 2: TOPOLOGICAL MANIFOLDS
@@ -651,7 +667,7 @@ A \textbf{topological manifold} (of dimension $n$) is a topological space $X$ th
 \end{defbox}
 
 \begin{rembox}[Why These Three Conditions?]\label{rem:why-these-three-conditions}
-Locally Euclidean is the substantive geometric condition: near every point the space looks like $\mathbb{R}^n$, so calculus can (eventually) be imported chart by chart. The other two are global point-set hygiene. Hausdorff rules out non-uniqueness of limits (and, later, guarantees that compact subsets are closed, that one-point sets are closed, etc.); second countability rules out spaces that are ``uncountably large'' and is the hypothesis behind partitions of unity. Neither of the two hygiene conditions is implied by local Euclideanness---this is the content of the independence remark and the examples following it.
+Locally Euclidean is the substantive geometric condition: near every point the space looks like $\mathbb{R}^n$, so calculus can (eventually) be imported chart by chart. The other two are global point-set hygiene. Hausdorff rules out non-uniqueness of limits (and, later, guarantees that compact subsets are closed, that one-point sets are closed, etc.); second countability rules out spaces that are ``uncountably large'' and is the hypothesis behind partitions of unity. Neither of the two hygiene conditions is implied by local Euclideanness---this is the content of the independence remark and the examples preceding it.
 \end{rembox}
 
 \subsection{Dimension}
@@ -666,6 +682,10 @@ The fact that the dimension of a manifold is well-defined rests on the following
 Let $A \subseteq \mathbb{R}^n$ and $B \subseteq \mathbb{R}^m$ be nonempty open sets. If $A$ and $B$ are homeomorphic, then $n = m$.
 \leeref{Theorem 1.2 (proved as Theorem 17.26)}
 \end{thmbox}
+
+\begin{proof}[Proof (to be filled)]
+Not proved in this course (Lee proves it as Theorem 17.26). To be filled.
+\end{proof}
 
 \textbf{Not proved in this course.} The theorem follows from Brouwer's \emph{invariance of domain}; Lee proves it in Chapter 17 (Theorem 17.26) using de Rham cohomology. Note that the statement is purely about point-set topology---no differentiability is assumed---which is what makes it hard: the obvious linear-algebra argument ($\mathbb{R}^n \cong \mathbb{R}^m$ as vector spaces implies $n=m$) is unavailable, because homeomorphisms need not be linear or even differentiable. Compare: $\mathbb{R}$ and $\mathbb{R}^2$ are not homeomorphic by a connectedness argument (remove a point), but already $\mathbb{R}^2$ vs.\ $\mathbb{R}^3$ needs more.
 
@@ -711,14 +731,6 @@ Lee takes the ``open subset'' version as the \emph{definition} of locally Euclid
 
 \subsection{Independence of the Three Conditions}
 
-\begin{propbox}[The Three Conditions Are Independent]\thmlabel{prop:conditions-independent}
-Second countability, the Hausdorff property, and local Euclideanness are independent: for each of the three there is a space satisfying the other two but not it.
-\leeref{Problems 1-1 and 1-2}
-\end{propbox}
-
-\begin{proof}
-\textit{(Lecture~1 gave the three examples, each with a one-line reason; the verifications are in the examples below.)} The examples that follow exhibit this, organized by the property that fails: $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$ fails only second countability (Example~\ref{ex:rdisc-times-r}); the line with two origins fails only the Hausdorff property (Example~\ref{ex:two-origins}); and $\mathbb{Q}$ fails only local Euclideanness (Example~\ref{ex:fails-loceuc}).
-\end{proof}
 
 \begin{rembox}[The Exam Trap: Locally Euclidean Does Not Imply Hausdorff]\label{rem:exam-trap-locally-euclidean-does-not-imply}
 It is tempting to argue: ``each point has a neighborhood homeomorphic to a disk, and points in Euclidean space can be separated, so a locally Euclidean space must be Hausdorff.'' This is \textbf{false}. The argument only separates points lying in a \emph{common} chart; two points may fail to share any chart, and then no Euclidean argument applies. The line with two origins is exactly this failure.
@@ -787,6 +799,14 @@ a disjoint union of uncountably many copies of $\mathbb{R}$ (``an enormous line'
 \end{itemize}
 \leeref{Problem 1-2, an uncountable disjoint union of lines}
 \end{exbox}
+\begin{propbox}[The Three Conditions Are Independent]\thmlabel{prop:conditions-independent}
+Second countability, the Hausdorff property, and local Euclideanness are independent: for each of the three there is a space satisfying the other two but not it.
+\leeref{Problems 1-1 and 1-2}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~1 gave the three examples, each with a one-line reason; the verifications are in the examples above.)} The examples above exhibit this, organized by the property that fails: $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$ fails only second countability (Example~\ref{ex:rdisc-times-r}); the line with two origins fails only the Hausdorff property (Example~\ref{ex:two-origins}); and $\mathbb{Q}$ fails only local Euclideanness (Example~\ref{ex:fails-loceuc}).
+\end{proof}
 
 \begin{rembox}[Dimension-Zero Version]\label{rem:dimension-zero-version}
 A student observed that $\mathbb{R}_{\mathrm{disc}}$ alone already works: it is $T_2$ (discrete), locally Euclidean of dimension $0$ (each $\{x\}$ is an open neighborhood homeomorphic to $\mathbb{R}^0 = \{\text{pt}\}$), and not second countable (Example~\ref{ex:r-discrete}). The next proposition says exactly why: it is uncountable.
@@ -1021,9 +1041,9 @@ Why is this the right move? Differentiability is not a topological notion: it ma
 % Lecture 2 (Wed Sep 2, 2026)
 % SECTION 4: NEW SPACES FROM OLD
 % ============================================================================
-\section{New Spaces from Old: Subspaces, Products, and Quotients}\label{sec:new-spaces}
+\section{Subspaces and Products}\label{sec:new-spaces}
 
-\roadmark{Thread: quotients}{Manifolds built by gluing and identifying points; $\mathbb{CP}^n$ is the first. The thread continues with orbit spaces (\ref{sec:actions}) and coset spaces (\ref{sec:homogeneous}), where the Hausdorff question answered here by Theorem~\ref{thm:hausdorff-criterion} returns.}
+\roadmark{Thread: quotients}{New spaces from old, first the easy constructions: subspaces and products, with the universal properties that make maps into them easy to check.}
 
 \textit{Reference: Lee Appendix A (``Subspaces, Products, Disjoint Unions, and Quotients''); MATH 590 notes \S5 (subspaces), \S4 (products), \S12 (quotients).}
 
@@ -1236,7 +1256,13 @@ The product topology has the property by Theorem~\ref{thm:univ-product}. Suppose
 Both statements extend to finite products by induction. For \emph{infinite} products the story is subtler (product vs.\ box topology, 590 \S10), but finite products are all we need: they are how product manifolds like the torus $T^n = S^1 \times \cdots \times S^1$ will get their point-set hygiene for free, leaving only local Euclideanness to check.
 \end{rembox}
 
-\subsection{Quotient Spaces}\label{sub:quotients}
+% ============================================================================
+% SECTION: QUOTIENT SPACES AND OPEN MAPS
+% ============================================================================
+
+\section{Quotient Spaces and Open Maps}\label{sec:quotient-spaces}\label{sub:quotients}
+
+\roadmark{Thread: quotients}{Manifolds built by gluing and identifying points. The quotient topology, and open maps and open relations --- the tool that keeps quotients second countable.}
 
 \begin{defbox}[Quotient Space and Quotient Topology]\deflabel{def:quotient}
 Let $X$ be a topological space and $\sim$ an equivalence relation on $X$. Form the \textbf{quotient space}
@@ -1291,57 +1317,6 @@ The bijection sending the class $\{(x,1),(x,2)\}$ to $x$ for $x \neq 0$ and the 
 \begin{proof}[Exercise]
 Set up the bijection as above and check that a subset downstairs is open for one topology iff it is open for the other; by Proposition~\ref{prop:GH-open-sets}-style reasoning it is enough to compare the two on the basic sets of Example~\ref{ex:two-origins}, pulling each back along $\pi$. Assigned in lecture and left here.
 \end{proof}
-
-\begin{exbox}[Failure of Second Countability]\exlabel{ex:not-2c-quotient}
-Let $X = \mathbb{R}/{\sim}$ with the quotient topology, where $x \sim y$ iff $x = y$ or both $x, y \in \mathbb{Z}$: all integers are collapsed to a single point $x_0$, and $X$ looks like $x_0$ with countably many loops attached. Then $\mathbb{R}$ is second countable but $X$ is not, because $X$ is not first countable at $x_0$.
-\end{exbox}
-\begin{center}
-\begin{tikzpicture}[scale=0.82]
-\foreach \x in {0,2,4,6} { \draw[gray!45] (\x,-0.15) -- (\x,2.75); }
-\draw[gray!60] (-0.8,0) -- (7,0);
-\foreach \x/\l in {0/0,2/1,4/2,6/3} { \node[font=\footnotesize,below] at (\x,-0.15) {$\l$}; }
-\foreach \i/\a in {0/0.5,2/0.45,4/0.4,6/0.35} { \draw[violet!75!black,very thick] (\i-\a,2.4) -- (\i+\a,2.4); }
-\foreach \i/\a in {0/0.3,2/0.6,4/0.5,6/0.4} { \draw[teal!60!black,very thick] (\i-\a,1.8) -- (\i+\a,1.8); }
-\foreach \i/\a in {0/0.45,2/0.35,4/0.7,6/0.3} { \draw[orange!85!black,very thick] (\i-\a,1.2) -- (\i+\a,1.2); }
-\foreach \i/\a in {0/0.2,2/0.225,4/0.25,6/0.15} { \draw[magenta!60!black,very thick] (\i-\a,0.45) -- (\i+\a,0.45); }
-\node[violet!75!black,font=\footnotesize,anchor=east] at (-0.85,2.4) {$A_1$};
-\node[teal!60!black,font=\footnotesize,anchor=east] at (-0.85,1.8) {$A_2$};
-\node[orange!85!black,font=\footnotesize,anchor=east] at (-0.85,1.2) {$A_3$};
-\node[magenta!60!black,font=\footnotesize,anchor=east] at (-0.85,0.45) {$W$};
-\fill[violet!75!black] (2.34,2.4) circle (1.7pt);
-\fill[teal!60!black] (4.375,1.8) circle (1.7pt);
-\fill[orange!85!black] (6.225,1.2) circle (1.7pt);
-\draw[dashed,gray!65] (2.34,2.4) -- (2.34,0.45);
-\draw[dashed,gray!65] (4.375,1.8) -- (4.375,0.45);
-\draw[dashed,gray!65] (6.225,1.2) -- (6.225,0.45);
-\node[fill=white, fill opacity=0.85, text opacity=1, font=\footnotesize,anchor=south] at (2.34,2.5) {$w_1$};
-\node[fill=white, fill opacity=0.85, text opacity=1, font=\footnotesize,anchor=south] at (4.375,1.9) {$w_2$};
-\node[fill=white, fill opacity=0.85, text opacity=1, font=\footnotesize,anchor=south] at (6.225,1.3) {$w_3$};
-\node[font=\footnotesize] at (3,-0.95) {$W$ is thinner than $A_j$ at the integer $j$, so each $w_j$ escapes it};
-\end{tikzpicture}
-\end{center}
-
-
-\begin{proof}[Proof (PSet 1, Problem 4)]
-Write $\pi : \mathbb{R} \to X$, so $\pi^{-1}(x_0) = \mathbb{Z}$ and $\pi^{-1}(\pi(x)) = \{x\}$ for $x \notin \mathbb{Z}$. Two preliminary facts. (i) If $V \subseteq X$ is a neighborhood of $x_0$, then $\pi^{-1}(V)$ is open in $\mathbb{R}$ and contains $\mathbb{Z}$. (ii) If $U \subseteq \mathbb{R}$ is open with $\mathbb{Z} \subseteq U$, then $U$ is saturated---each class is either $\mathbb{Z} \subseteq U$ or a singleton $\{x\} \subseteq U$---so $\pi^{-1}(\pi(U)) = U$ and $\pi(U)$ is a neighborhood of $x_0$ (Definition~\ref{def:saturation} and Lemma~\ref{lem:saturation}(4)).
-
-Suppose $X$ were first countable at $x_0$, with $\{\widetilde U_j\}_{j \in \mathbb{N}}$ a countable basis of neighborhoods of $x_0$, and set $U_j = \pi^{-1}(\widetilde U_j)$, open with $\mathbb{Z} \subseteq U_j$ by (i). For each $j \in \mathbb{N}$ and $n \in \mathbb{Z}$, openness gives a radius $a_{j,n} \in (0, \tfrac14]$ with $(n - a_{j,n}, n + a_{j,n}) \subseteq U_j$; write $A_j = \bigcup_{n \in \mathbb{Z}} (n - a_{j,n}, n + a_{j,n}) \subseteq U_j$. (Radii are capped at $\tfrac14$ so that arms around distinct integers are disjoint: two of them reach out at most $\tfrac12 < 1$.)
-
-\emph{The diagonal neighborhood.} Put
-\[
-b_n = \begin{cases} a_{n,n}/2, & n \in \mathbb{N}, \\ 1/8, & n \in \mathbb{Z} \setminus \mathbb{N}, \end{cases}
-\qquad W = \bigcup_{n \in \mathbb{Z}} (n - b_n,\, n + b_n).
-\]
-Then $W$ is open, $\mathbb{Z} \subseteq W$, and $b_n \le \tfrac18$ for all $n$.
-
-\emph{No $U_j$ is contained in $W$.} Fix $j \in \mathbb{N}$ and set $w_j = j + \tfrac34 a_{j,j}$. Then $w_j \in A_j \subseteq U_j$, since $|w_j - j| = \tfrac34 a_{j,j} < a_{j,j}$. But $w_j \notin W$: it is not in the arm at $j$, because $j + b_j = j + \tfrac12 a_{j,j} < w_j$; and it is in no other arm, since $|w_j - j| \le \tfrac34 \cdot \tfrac14 < \tfrac14$ while a point of the arm at $m$ is within $b_m \le \tfrac18$ of $m$, so $w_j$ in that arm would force $|j - m| < \tfrac14 + \tfrac18 < 1$, impossible for distinct integers.
-
-\emph{Conclusion.} By (ii), $\widetilde W = \pi(W)$ is a neighborhood of $x_0$. If $\widetilde U_j \subseteq \widetilde W$ for some $j$, taking preimages would give $U_j \subseteq \pi^{-1}(\widetilde W) = W$, contradicting the previous paragraph. So no member of the family sits inside $\widetilde W$, and $\{\widetilde U_j\}$ is not a basis of neighborhoods of $x_0$---a contradiction. Hence $X$ is not first countable at $x_0$, and by Proposition~\ref{prop:2c-implies-1c} it is not second countable.
-\end{proof}
-
-\begin{rembox}[Why the Diagonal]\label{rem:why-diagonal}
-The mechanism is Cantor's: each candidate $U_j$ is pinned down at the single integer $j$, and $W$ is built to be strictly thinner than $U_j$ exactly there. No countable family can control all of the infinitely many arms at once, because a neighborhood of $x_0$ must specify a radius at \emph{every} integer simultaneously---that is what collapsing infinitely many points to one costs. Theorem~\ref{thm:2c-quotient} is not contradicted, because its hypothesis fails: this relation is \emph{not} open. The saturation of the open set $(-\tfrac12, \tfrac12)$, which meets $\mathbb{Z}$ at $0$, is $(-\tfrac12,\tfrac12) \cup \mathbb{Z}$, and that is not open---no neighborhood of the point $1$ is contained in it.
-\end{rembox}
 
 The single most useful fact about the quotient topology --- that a map \emph{out} of a quotient is continuous as soon as its composite with $\pi$ is, and that a map on $X$ constant on the classes descends to one on $X/{\sim}$ --- is Theorem~\ref{thm:univ-quotient-full} below. It is stated in \S\ref{sub:quotient-maps} because its natural generality is quotient maps rather than quotient spaces.
 
@@ -1447,7 +1422,64 @@ In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi
 The saturation of $U$ is $U$ together with everything equivalent to something in $U$ --- ``you push forward and then take the preimage.'' Proposition~\ref{prop:saturation} then reads as a slogan: \emph{$\sim$ is open iff the saturation of every open set is open.} In the non-example above, saturating $\left(-\tfrac12,\tfrac12\right)$ adjoined the isolated point $1$ and destroyed openness. In the $\mathbb{CP}^n$ example below, saturating an open set means rotating it in every possible way, which \emph{preserves} openness --- that contrast is the whole point of the definition.
 \end{rembox}
 
-\subsection{Quotient Maps}\label{sub:quotient-maps}
+\begin{exbox}[Failure of Second Countability]\exlabel{ex:not-2c-quotient}
+Let $X = \mathbb{R}/{\sim}$ with the quotient topology, where $x \sim y$ iff $x = y$ or both $x, y \in \mathbb{Z}$: all integers are collapsed to a single point $x_0$, and $X$ looks like $x_0$ with countably many loops attached. Then $\mathbb{R}$ is second countable but $X$ is not, because $X$ is not first countable at $x_0$.
+\end{exbox}
+\begin{center}
+\begin{tikzpicture}[scale=0.82]
+\foreach \x in {0,2,4,6} { \draw[gray!45] (\x,-0.15) -- (\x,2.75); }
+\draw[gray!60] (-0.8,0) -- (7,0);
+\foreach \x/\l in {0/0,2/1,4/2,6/3} { \node[font=\footnotesize,below] at (\x,-0.15) {$\l$}; }
+\foreach \i/\a in {0/0.5,2/0.45,4/0.4,6/0.35} { \draw[violet!75!black,very thick] (\i-\a,2.4) -- (\i+\a,2.4); }
+\foreach \i/\a in {0/0.3,2/0.6,4/0.5,6/0.4} { \draw[teal!60!black,very thick] (\i-\a,1.8) -- (\i+\a,1.8); }
+\foreach \i/\a in {0/0.45,2/0.35,4/0.7,6/0.3} { \draw[orange!85!black,very thick] (\i-\a,1.2) -- (\i+\a,1.2); }
+\foreach \i/\a in {0/0.2,2/0.225,4/0.25,6/0.15} { \draw[magenta!60!black,very thick] (\i-\a,0.45) -- (\i+\a,0.45); }
+\node[violet!75!black,font=\footnotesize,anchor=east] at (-0.85,2.4) {$A_1$};
+\node[teal!60!black,font=\footnotesize,anchor=east] at (-0.85,1.8) {$A_2$};
+\node[orange!85!black,font=\footnotesize,anchor=east] at (-0.85,1.2) {$A_3$};
+\node[magenta!60!black,font=\footnotesize,anchor=east] at (-0.85,0.45) {$W$};
+\fill[violet!75!black] (2.34,2.4) circle (1.7pt);
+\fill[teal!60!black] (4.375,1.8) circle (1.7pt);
+\fill[orange!85!black] (6.225,1.2) circle (1.7pt);
+\draw[dashed,gray!65] (2.34,2.4) -- (2.34,0.45);
+\draw[dashed,gray!65] (4.375,1.8) -- (4.375,0.45);
+\draw[dashed,gray!65] (6.225,1.2) -- (6.225,0.45);
+\node[fill=white, fill opacity=0.85, text opacity=1, font=\footnotesize,anchor=south] at (2.34,2.5) {$w_1$};
+\node[fill=white, fill opacity=0.85, text opacity=1, font=\footnotesize,anchor=south] at (4.375,1.9) {$w_2$};
+\node[fill=white, fill opacity=0.85, text opacity=1, font=\footnotesize,anchor=south] at (6.225,1.3) {$w_3$};
+\node[font=\footnotesize] at (3,-0.95) {$W$ is thinner than $A_j$ at the integer $j$, so each $w_j$ escapes it};
+\end{tikzpicture}
+\end{center}
+
+
+\begin{proof}[Proof (PSet 1, Problem 4)]
+Write $\pi : \mathbb{R} \to X$, so $\pi^{-1}(x_0) = \mathbb{Z}$ and $\pi^{-1}(\pi(x)) = \{x\}$ for $x \notin \mathbb{Z}$. Two preliminary facts. (i) If $V \subseteq X$ is a neighborhood of $x_0$, then $\pi^{-1}(V)$ is open in $\mathbb{R}$ and contains $\mathbb{Z}$. (ii) If $U \subseteq \mathbb{R}$ is open with $\mathbb{Z} \subseteq U$, then $U$ is saturated---each class is either $\mathbb{Z} \subseteq U$ or a singleton $\{x\} \subseteq U$---so $\pi^{-1}(\pi(U)) = U$ and $\pi(U)$ is a neighborhood of $x_0$ (Definition~\ref{def:saturation} and Lemma~\ref{lem:saturation}(4)).
+
+Suppose $X$ were first countable at $x_0$, with $\{\widetilde U_j\}_{j \in \mathbb{N}}$ a countable basis of neighborhoods of $x_0$, and set $U_j = \pi^{-1}(\widetilde U_j)$, open with $\mathbb{Z} \subseteq U_j$ by (i). For each $j \in \mathbb{N}$ and $n \in \mathbb{Z}$, openness gives a radius $a_{j,n} \in (0, \tfrac14]$ with $(n - a_{j,n}, n + a_{j,n}) \subseteq U_j$; write $A_j = \bigcup_{n \in \mathbb{Z}} (n - a_{j,n}, n + a_{j,n}) \subseteq U_j$. (Radii are capped at $\tfrac14$ so that arms around distinct integers are disjoint: two of them reach out at most $\tfrac12 < 1$.)
+
+\emph{The diagonal neighborhood.} Put
+\[
+b_n = \begin{cases} a_{n,n}/2, & n \in \mathbb{N}, \\ 1/8, & n \in \mathbb{Z} \setminus \mathbb{N}, \end{cases}
+\qquad W = \bigcup_{n \in \mathbb{Z}} (n - b_n,\, n + b_n).
+\]
+Then $W$ is open, $\mathbb{Z} \subseteq W$, and $b_n \le \tfrac18$ for all $n$.
+
+\emph{No $U_j$ is contained in $W$.} Fix $j \in \mathbb{N}$ and set $w_j = j + \tfrac34 a_{j,j}$. Then $w_j \in A_j \subseteq U_j$, since $|w_j - j| = \tfrac34 a_{j,j} < a_{j,j}$. But $w_j \notin W$: it is not in the arm at $j$, because $j + b_j = j + \tfrac12 a_{j,j} < w_j$; and it is in no other arm, since $|w_j - j| \le \tfrac34 \cdot \tfrac14 < \tfrac14$ while a point of the arm at $m$ is within $b_m \le \tfrac18$ of $m$, so $w_j$ in that arm would force $|j - m| < \tfrac14 + \tfrac18 < 1$, impossible for distinct integers.
+
+\emph{Conclusion.} By (ii), $\widetilde W = \pi(W)$ is a neighborhood of $x_0$. If $\widetilde U_j \subseteq \widetilde W$ for some $j$, taking preimages would give $U_j \subseteq \pi^{-1}(\widetilde W) = W$, contradicting the previous paragraph. So no member of the family sits inside $\widetilde W$, and $\{\widetilde U_j\}$ is not a basis of neighborhoods of $x_0$---a contradiction. Hence $X$ is not first countable at $x_0$, and by Proposition~\ref{prop:2c-implies-1c} it is not second countable.
+\end{proof}
+
+\begin{rembox}[Why the Diagonal]\label{rem:why-diagonal}
+The mechanism is Cantor's: each candidate $U_j$ is pinned down at the single integer $j$, and $W$ is built to be strictly thinner than $U_j$ exactly there. No countable family can control all of the infinitely many arms at once, because a neighborhood of $x_0$ must specify a radius at \emph{every} integer simultaneously---that is what collapsing infinitely many points to one costs. Theorem~\ref{thm:2c-quotient} is not contradicted, because its hypothesis fails: this relation is \emph{not} open. The saturation of the open set $(-\tfrac12, \tfrac12)$, which meets $\mathbb{Z}$ at $0$, is $(-\tfrac12,\tfrac12) \cup \mathbb{Z}$, and that is not open---no neighborhood of the point $1$ is contained in it.
+\end{rembox}
+
+% ============================================================================
+% SECTION: QUOTIENT MAPS
+% ============================================================================
+
+\section{Quotient Maps}\label{sec:quotient-maps}\label{sub:quotient-maps}
+
+\roadmark{Thread: quotients}{The quotient topology as a property of a map: how quotients are recognized in practice, and how maps out of them are built.}
 
 So far ``quotient'' has named a topology on a set of equivalence classes. The same notion can be phrased as a property of a map, which is often how it is recognized in practice.
 
@@ -1634,7 +1666,13 @@ By taking complements, a continuous surjection is a quotient map exactly when a 
 Both hypotheses are used, at different steps: that $W$ is a full preimage gives $q^{-1}(A) = p^{-1}(A)$, and that $V$ is open makes a set open in $W$ open in $X$. Without them the restriction of a quotient map need not be a quotient map. The lemma is what allows the universal property (Theorem~\ref{thm:univ-quotient-full}) to be applied \emph{locally}, on an open piece of a quotient --- which is exactly the situation of a chart on a quotient space (\S\ref{sub:projective-atlas}). Both lemmas are from Assignment~2, Problem~2.
 \end{rembox}
 
-\subsection{The Hausdorff Criterion for Open Quotients}
+% ============================================================================
+% SECTION: OPEN QUOTIENTS AND COMPLEX PROJECTIVE SPACE
+% ============================================================================
+
+\section{Open Quotients and Complex Projective Space}\label{sec:open-quotients}
+
+\roadmark{Thread: quotients}{When is a quotient Hausdorff? For open relations, exactly when the graph is closed (Theorem~\ref{thm:hausdorff-criterion}); $\mathbb{CP}^n$ is the first manifold built this way. The question returns for orbit spaces (\ref{sec:actions}) and coset spaces (\ref{sec:homogeneous}).}
 
 \begin{defbox}[Graph of a Relation]\deflabel{def:graph-relation}
 The \textbf{graph} of a relation $\sim$ on a set $X$ is
@@ -1650,18 +1688,6 @@ X/{\sim} \text{ is } T_2 \iff \Gamma \text{ is closed in } X \times X.
 \]
 \leeref{no counterpart; a course result (see the comparison below Theorem~\ref{thm:2c-quotient})}
 \end{thmbox}
-
-\begin{rembox}[No Hausdorff Hypothesis on $X$]\label{rem:no-hausdorff-hypothesis-x}
-Mid-statement, Uribe began to add the hypothesis ``assume $X$ is Hausdorff''---then stopped: ``actually, I don't need that.'' The final statement is correct as it stands: no separation assumption on $X$ is required, only openness of the relation. (Openness, moreover, is used only in the direction $\Leftarrow$; the direction $\Rightarrow$ holds for arbitrary equivalence relations, as the proof shows.)
-\end{rembox}
-
-\begin{corbox}[The Diagonal Criterion]\thmlabel{cor:diagonal-criterion}
-A topological space $X$ is Hausdorff if and only if the diagonal $\Delta = \{(x,x) \mid x \in X\}$ is closed in $X \times X$.
-\end{corbox}
-
-\begin{proof}
-Apply Theorem~\ref{thm:hausdorff-criterion} to the trivial relation, $x \sim y \iff x = y$. It is open, since every set is its own saturation. Its graph is $\Gamma = \Delta$. And $\pi : X \to X/{\sim}$ is a continuous open bijection, hence a homeomorphism, so $X/{\sim}$ is Hausdorff iff $X$ is. This classical characterization is the special case of the theorem with nothing identified; the theorem is its generalization to quotients.
-\end{proof}
 
 \begin{proof}[Proof (given in full in lecture)]
 ($\Leftarrow$) Assume $\Gamma$ is closed. Let $[x] \neq [y]$ in $X/{\sim}$, i.e.\ $x \not\sim y$, i.e.\ $(x, y) \notin \Gamma$. Since $\Gamma$ is closed, its complement is an open set containing $(x,y)$, so by the box characterization (Proposition~\ref{prop:box}) there exist neighborhoods $U$ of $x$ and $V$ of $y$ such that
@@ -1698,6 +1724,18 @@ Hence every point of the complement of $\Gamma$ has a neighborhood inside the co
 \end{center}
 
 
+
+\begin{rembox}[No Hausdorff Hypothesis on $X$]\label{rem:no-hausdorff-hypothesis-x}
+Mid-statement, Uribe began to add the hypothesis ``assume $X$ is Hausdorff''---then stopped: ``actually, I don't need that.'' The final statement is correct as it stands: no separation assumption on $X$ is required, only openness of the relation. (Openness, moreover, is used only in the direction $\Leftarrow$; the direction $\Rightarrow$ holds for arbitrary equivalence relations, as the proof shows.)
+\end{rembox}
+
+\begin{corbox}[The Diagonal Criterion]\thmlabel{cor:diagonal-criterion}
+A topological space $X$ is Hausdorff if and only if the diagonal $\Delta = \{(x,x) \mid x \in X\}$ is closed in $X \times X$.
+\end{corbox}
+
+\begin{proof}
+Apply Theorem~\ref{thm:hausdorff-criterion} to the trivial relation, $x \sim y \iff x = y$. It is open, since every set is its own saturation. Its graph is $\Gamma = \Delta$. And $\pi : X \to X/{\sim}$ is a continuous open bijection, hence a homeomorphism, so $X/{\sim}$ is Hausdorff iff $X$ is. This classical characterization is the special case of the theorem with nothing identified; the theorem is its generalization to quotients.
+\end{proof}
 \begin{rembox}[This Is the Tool]\label{rem:this-tool}
 Uribe (emphasized): ``this is going to be our tool for figuring out whether a quotient space is $T_2$.'' The workflow it suggests, and which the $\mathbb{CP}^n$ example below executes: (i) show the relation is open --- usually via the saturation slogan; (ii) show the graph is closed --- often by exhibiting $\Gamma$ as a preimage of a closed set, or as a compact set inside a Hausdorff space.
 \end{rembox}
@@ -1959,7 +1997,9 @@ is nonsingular, then there exist neighborhoods $V_0 \subseteq \mathbb{R}^n$ of $
 \leeref{Theorem C.40}
 \end{thmbox}
 
+\begin{proof}[Proof (sketch)]
 Lee deduces this from the Inverse Function Theorem (Theorem~\ref{thm:inverse-function}; Lee, Theorem C.34), applied to the auxiliary map $(x,y) \mapsto (x, \Phi(x,y))$, whose total derivative is block lower triangular with nonsingular diagonal blocks $I_n$ and $(\partial\Phi^i/\partial y^j)$. Both theorems are proved in MATH 452; Lee's proofs are in Appendix C.
+\end{proof}
 
 \begin{rembox}[Which Variables Are Solved For]\label{rem:which-variables-solved}
 The theorem does not say the level set is a graph over some canonical set of coordinates: it says that \emph{if} the $k$ coordinates $y$ are ones for which the square block $(\partial\Phi^i/\partial y^j)$ is invertible, \emph{then} those $y$ can be solved for in terms of the remaining $n$. Since $D\Phi_{(a,b)}$ has rank $k$ exactly when \emph{some} $k$ of its $n + k$ columns are independent, a regular point always admits such a splitting---after permuting coordinates. That permutation is the ``WLOG'' step in the proof of Proposition~\ref{prop:SL-loc-euc} below.
@@ -2330,6 +2370,10 @@ Each of $\det^{-1}(0,\infty)$ and $\det^{-1}(-\infty,0)$ is connected, so $\GL(n
 \leeref{Proposition 21.35, via Proposition 21.34}
 \end{thmbox}
 
+\begin{proof}[Proof (to be filled)]
+Not proved here (stated in lecture; Lee, Proposition 21.35). To be filled.
+\end{proof}
+
 \textbf{Not proved here.} Stated in lecture with ``we'll say more about that.'' The usual argument reduces a matrix of positive determinant to the identity by a path, using Gaussian elimination or the polar decomposition together with connectedness of $\SO(n)$. Only Proposition~\ref{prop:GL-disconnected} is needed below.
 
 \begin{defbox}[Special Linear Group]\deflabel{def:special-linear-group}
@@ -2412,14 +2456,13 @@ A $1 \times 1$ complex matrix is a number $\xi \in \mathbb{C}$, all such matrice
 the unit circle, which is the notation ``everybody uses.'' This is the group acting in the construction of $\mathbb{CP}^n$ (\S\ref{sub:cpn}).
 \end{exbox}
 
-\subsection{The Classical Groups Are Topological Manifolds}\label{sub:classical-manifolds}
+% ============================================================================
+% SECTION: THE CLASSICAL GROUPS ARE TOPOLOGICAL MANIFOLDS
+% ============================================================================
 
-\begin{thmbox}[Classical Groups Are Manifolds]\thmlabel{thm:classical-manifolds}
-Each of $\GL(n,\mathbb{R})$, $\SL(n,\mathbb{R})$, $\Ogp(n,\mathbb{R})$, $\SO(n,\mathbb{R})$, $\GL(n,\mathbb{C})$, and $\Ugp(n)$, with the topology induced from the Euclidean space of matrices, is a topological manifold. (In fact they will turn out to be smooth manifolds, indeed Lie groups.)
-\leeref{Examples 1.27 and 7.27--7.30}
-\end{thmbox}
+\section{The Classical Groups Are Topological Manifolds}\label{sec:classical-manifolds}\label{sub:classical-manifolds}
 
-The proof has two parts of very different difficulty. The point-set part is free: each group is a subspace of $\mathbb{R}^{n^2}$ or $\mathbb{R}^{2n^2}$, hence $T_2$ and second countable by Theorem~\ref{thm:subspace-inherit}. Local Euclideanness is the real content, and it is established in stages. $\GL(n,\mathbb{R})$ and $\GL(n,\mathbb{C})$ are open subsets of Euclidean space and hence locally Euclidean of dimensions $n^2$ and $2n^2$ (Proposition~\ref{prop:open-submanifold}). $\SL(n,\mathbb{R})$ is done below, in this subsection. $\Ogp(n)$, $\SO(n)$ and $\Ugp(n)$ need the coordinate-free differential and are done in \S\ref{sub:on-smooth} and \S\ref{sub:un-smooth}; Theorem~\ref{thm:classical-summary} collects all six, with their dimensions and geometric tangent spaces.
+\roadmark{Thread: equations}{The classical groups as regular level sets of polynomial maps (\ref{sec:rvt}): each is a topological manifold.}
 
 \begin{rembox}[The Method: Level Sets and the Implicit Function Theorem]\label{rem:method-level-sets-implicit-function-theorem}
 ``For the first time, we're going to use some calculus.'' $\SL(n,\mathbb{R})$ is a \emph{level set}, $\det^{-1}(1)$, of a smooth function on $\mathbb{R}^{n^2}$. Multivariable calculus says that a level set of $F$ is locally a graph---hence locally Euclidean---near any point where $\nabla F \neq 0$. So the work is to compute $\nabla \det$ and show it does not vanish on $\SL(n,\mathbb{R})$. Uribe's methodological message: the Leibniz formula makes computing $\nabla\det$ directly ``a nightmare''; instead, \emph{differentiate along curves} and use the chain rule. ``It's nice to compute gradients or differentials using curves.'' This kind of computation ``will happen several times.''
@@ -2540,6 +2583,15 @@ which is continuous as a map into $\mathbb{R}^N$ (its components $x'$ and $h(x')
 \begin{rembox}[Dimension Count]\label{rem:dimension-count}
 $\SL(n,\mathbb{R})$ is cut out of $\mathbb{R}^{n^2}$ by one equation with nonvanishing gradient, and it loses exactly one dimension: $\dim \SL(n,\mathbb{R}) = n^2 - 1$. This is the pattern for all the classical groups: $\Ogp(n)$ is cut out by the $\tfrac{n(n+1)}{2}$ independent equations $g^T g = I$ (symmetric matrix), giving $\dim \Ogp(n) = n^2 - \tfrac{n(n+1)}{2} = \tfrac{n(n-1)}{2}$; checking that these equations have independent gradients is done in Example~\ref{ex:On-smooth}.
 \end{rembox}
+\begin{thmbox}[Classical Groups Are Manifolds]\thmlabel{thm:classical-manifolds}
+Each of $\GL(n,\mathbb{R})$, $\SL(n,\mathbb{R})$, $\Ogp(n,\mathbb{R})$, $\SO(n,\mathbb{R})$, $\GL(n,\mathbb{C})$, and $\Ugp(n)$, with the topology induced from the Euclidean space of matrices, is a topological manifold. (In fact they will turn out to be smooth manifolds, indeed Lie groups.)
+\leeref{Examples 1.27 and 7.27--7.30}
+\end{thmbox}
+
+\begin{proof}
+The proof has two parts of very different difficulty. The point-set part is free: each group is a subspace of $\mathbb{R}^{n^2}$ or $\mathbb{R}^{2n^2}$, hence $T_2$ and second countable by Theorem~\ref{thm:subspace-inherit}. Local Euclideanness is the real content, and it is established in stages. $\GL(n,\mathbb{R})$ and $\GL(n,\mathbb{C})$ are open subsets of Euclidean space and hence locally Euclidean of dimensions $n^2$ and $2n^2$ (Proposition~\ref{prop:open-submanifold}). $\SL(n,\mathbb{R})$ is done above, in this section. $\Ogp(n)$, $\SO(n)$ and $\Ugp(n)$ need the coordinate-free differential and are done in \S\ref{sub:on-smooth} and \S\ref{sub:un-smooth}; Theorem~\ref{thm:classical-summary} collects all six, with their dimensions and geometric tangent spaces.
+\end{proof}
+
 
 % ============================================================================
 % Lecture 3 (Fri Sep 4, 2026), last part, and Lecture 4 (Wed Sep 9, 2026), first part
@@ -3024,7 +3076,13 @@ and the cosets are indexed by unit vectors. The identification $\Phi(gH) = g \cd
 
 The picture behind Example~\ref{ex:s2-homogeneous}. The rotations about the vertical axis fix the north pole $N$; they form the isotropy group $H \cong \SO(2)$. A rotation $g$ carries $N$ to $g \cdot N$, and the rotations carrying $N$ to that same point are exactly the products $gh$ with $h \in H$: the fibre of the orbit map $\theta_N$ over $g \cdot N$ is the coset $gH$. Collapsing each fibre to a point is the passage from $\SO(3)$ to $\SO(3)/\SO(2)$, which is why the coset space is the sphere (Theorem~\ref{thm:GH-homeo}).
 
-\subsection{The Topology of $G/H$}\label{sub:GH-topology}
+% ============================================================================
+% SECTION: THE TOPOLOGY OF $G/H$ AND REAL GRASSMANNIANS
+% ============================================================================
+
+\section{The Topology of $G/H$ and Real Grassmannians}\label{sec:GH-topology}\label{sub:GH-topology}
+
+\roadmark{Thread: quotients}{The coset space $G/H$ as a topological space: open quotient, Hausdorff when $H$ is closed, and homeomorphic to a homogeneous space. The Grassmannians are the payoff. The two threads meet in the next chapter.}
 
 Definitions \ref{def:cosets} and \ref{def:coset-projection} are purely algebraic. If $G$ carries a topology, $G/H$ inherits one in the only reasonable way.
 
@@ -3433,14 +3491,6 @@ There is no atlas on $S^1$ consisting of a single chart; that is, $S^1$ is not h
 ``It is absolutely essential to break the circle into charts.'' The obstruction is global (compactness), not local: every point of $S^1$ has arbitrarily small neighborhoods that are perfectly good chart domains. A student asked which open sets can serve; the answer is the next proposition.
 \end{rembox}
 
-\begin{propbox}[Chart Domains on the Circle]\thmlabel{prop:circle-chart-domains}
-A connected open subset $V \subseteq S^1$ is the domain of a chart if and only if $V \ne S^1$. Every such $V$ is an open arc, homeomorphic to an open interval.
-\end{propbox}
-
-\begin{proof}
-\textit{(Not from lecture; filled in.)} If $V \ne S^1$, pick $q \notin V$ and a rotation $\rho$ of $S^1$ with $\rho(q) = N$. The stereographic projection $\sigma_N : S^1 \setminus \{N\} \to \mathbb{R}$ of Example~\ref{ex:circle-stereo} below is a homeomorphism, so $\sigma_N \circ \rho$ maps $V$ homeomorphically onto a connected open subset of $\mathbb{R}$, which is an open interval; this is a chart. Conversely, $S^1$ is not a chart domain, by Proposition~\ref{prop:circle-no-global-chart}.
-\end{proof}
-
 \begin{exbox}[Stereographic Atlas on the Circle]\exlabel{ex:circle-stereo}
 Let $N = (0,1)$ and $S = (0,-1)$ be the north and south poles. For $P \in S^1 \setminus \{N\}$, the line through $N$ and $P$ meets the $x$-axis in exactly one point; sending $P$ to that point defines
 \[
@@ -3495,6 +3545,14 @@ The hollow circle marks the pole each chart \emph{omits}: $\sigma_N$ is undefine
 
 The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axis at the origin, so $\sigma_N(S) = 0/(1-(-1)) = 0$, and by symmetry $\sigma_S(N) = 0$. The two charts are mirror images in this respect --- $\sigma_N$ compresses the \emph{lower} half-circle into $(-1,1)$ and throws the upper half outside it, while $\sigma_S$ does the reverse. On the overlap $S^1 \setminus \{N,S\}$ this exchange of inside and outside is exactly the transition function $u \mapsto 1/u$.
 
+
+\begin{propbox}[Chart Domains on the Circle]\thmlabel{prop:circle-chart-domains}
+A connected open subset $V \subseteq S^1$ is the domain of a chart if and only if $V \ne S^1$. Every such $V$ is an open arc, homeomorphic to an open interval.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} If $V \ne S^1$, pick $q \notin V$ and a rotation $\rho$ of $S^1$ with $\rho(q) = N$. The stereographic projection $\sigma_N : S^1 \setminus \{N\} \to \mathbb{R}$ of Example~\ref{ex:circle-stereo} above is a homeomorphism, so $\sigma_N \circ \rho$ maps $V$ homeomorphically onto a connected open subset of $\mathbb{R}$, which is an open interval; this is a chart. Conversely, $S^1$ is not a chart domain, by Proposition~\ref{prop:circle-no-global-chart}.
+\end{proof}
 \begin{exbox}[Angle Atlas on the Circle]\exlabel{ex:circle-angle}
 Parametrize by angle, which cannot be done globally --- the same meta-principle --- so use two overlapping ranges:
 \[
@@ -3558,7 +3616,13 @@ A \textbf{differentiable (smooth) structure} on a topological manifold $M$ is a 
 The board wrote ``let $M$ be a topological manifold (connected).'' Nothing in this section uses connectedness, and the definitions above are stated without it. It is a harmless convenience --- with $n$ fixed in advance (Definition~\ref{def:manifold}) the dimension is already constant --- and it can be dropped. It does matter under the convention where $n$ is allowed to vary with the point (Corollary~\ref{cor:dim-loc-const}).
 \end{rembox}
 
-\subsection{Projective Spaces as Smooth Manifolds}\label{sub:projective-atlas}
+% ============================================================================
+% SECTION: PROJECTIVE SPACES AS SMOOTH MANIFOLDS
+% ============================================================================
+
+\section{Projective Spaces as Smooth Manifolds}\label{sec:projective-smooth}\label{sub:projective-atlas}
+
+\roadmark{Stage: foundations}{The quotient-built manifolds get their smooth structures from atlases written down by hand: $\mathbb{CP}^n$, with holomorphic transition functions.}
 
 \textit{Assignment 2, Problem 2(b)--(c). This completes the construction begun in \S\ref{sub:cpn}: there $\mathbb{CP}^n$ was shown to be compact, Hausdorff and second countable; here it acquires charts, and the charts turn out to be smoothly --- indeed holomorphically --- compatible.}
 
@@ -3681,7 +3745,7 @@ Let $\mathbb{RP}^n = S^n/\{\pm 1\} \cong (\mathbb{R}^{n+1}\setminus\{0\})/\mathb
 \end{corbox}
 
 \begin{proof}
-\textit{(Not from lecture; filled in.)} Every argument of \S\ref{sub:cpn} and of this subsection goes through verbatim with $\mathbb{R}$, $\mathbb{R}^\times$, $\{\pm1\}$ and $S^n$ in place of $\mathbb{C}$, $\mathbb{C}^\times$, $S^1$ and $S^{2n+1}$: the group $\{\pm 1\}$ is finite, hence compact, and acts on $S^n$ by isometries; the transition maps are the real rational functions $x_k/x_i$. Hausdorffness can alternatively be read off from Corollary~\ref{cor:orbit-T2}.
+\textit{(Not from lecture; filled in.)} Every argument of \S\ref{sub:cpn} and of this section goes through verbatim with $\mathbb{R}$, $\mathbb{R}^\times$, $\{\pm1\}$ and $S^n$ in place of $\mathbb{C}$, $\mathbb{C}^\times$, $S^1$ and $S^{2n+1}$: the group $\{\pm 1\}$ is finite, hence compact, and acts on $S^n$ by isometries; the transition maps are the real rational functions $x_k/x_i$. Hausdorffness can alternatively be read off from Corollary~\ref{cor:orbit-T2}.
 \end{proof}
 
 \begin{center}
@@ -3741,7 +3805,13 @@ The chart $U_0$ of $\mathbb{RP}^1$, drawn in the plane of homogeneous coordinate
 
 The quotient $S^n \to \mathbb{RP}^n$ of Proposition~\ref{prop:rpn-topologies}, drawn for $n = 2$. A line through the origin meets the sphere in two antipodal points $p$ and $-p$, which $\pi$ identifies. Every line meets the closed upper hemisphere: once if it is not horizontal, and in a pair of antipodal points $q$, $-q$ of the equator if it is. So $\mathbb{RP}^2$ can be pictured as a closed disc with antipodal boundary points glued, as the arrows indicate. For $n = 1$ the same gluing closes a half-circle into a circle, which is $\mathbb{RP}^1 \cong S^1$.
 
-\subsection{Smooth Functions and Smooth Maps}\label{sub:smooth-maps}
+% ============================================================================
+% SECTION: SMOOTH FUNCTIONS AND SMOOTH MAPS
+% ============================================================================
+
+\section{Smooth Functions and Smooth Maps}\label{sec:smooth-maps}\label{sub:smooth-maps}
+
+\roadmark{Stage: foundations}{With a smooth structure in hand the chart drops out of the phrase ``smooth'': smooth functions, smooth maps, diffeomorphisms and product manifolds.}
 
 Definition~\ref{def:smooth-in-chart} explains what it means for a function to be smooth \emph{in the sense of one chart}. With a smooth structure in hand the chart can be dropped from the phrase. Throughout, $M$ is a smooth manifold with maximal atlas $\mathcal{A}$.
 
@@ -4151,6 +4221,19 @@ Let $W \subseteq \mathbb{R}^{n+k}$ be open, $F : W \to \mathbb{R}^k$ smooth, and
 The proof in one picture. The transition function between two graph charts factors through the ambient space: a parametrization up, followed by a linear projection down. Both legs are smooth in the Euclidean sense, so the composite is.
 
 
+
+\begin{proof}
+\textit{(Lecture 6 worked the surface of Example~\ref{ex:surface-transition} first, then gave this general argument: ``the general thing is just harder to write.'')} The domains cover $M$, since each $p \in M$ lies in some $U_J$. Let $(U_J, \varphi_J)$ and $(U_{J'}, \varphi_{J'})$ be two of the charts, with complementary index sets $I$ and $I'$. Two observations, each valid for every choice of $J$:
+\begin{enumerate}
+    \item $\varphi_J^{-1} : V_J \to \mathbb{R}^{n+k}$ is smooth \emph{in the Euclidean sense}: its components are either coordinates of $u$ or components of the smooth map $h_J$.
+    \item $\varphi_{J'}$ is the restriction of the linear map $\pi_{I'}$, which is smooth on all of $\mathbb{R}^{n+k}$.
+\end{enumerate}
+The transition function is the composite of the two. On the open set $\varphi_J(U_J \cap U_{J'}) \subseteq \mathbb{R}^I$,
+\[
+\varphi_{J'} \circ \varphi_J^{-1} = \pi_{I'} \circ \varphi_J^{-1},
+\]
+a composite of smooth maps between open subsets of Euclidean spaces, hence smooth. Exchanging the roles of $J$ and $J'$ shows $\varphi_J \circ \varphi_{J'}^{-1}$ is smooth as well, so the transition function is a diffeomorphism and the two charts are $C^\infty$-compatible (Definition~\ref{def:compatible}). By Theorem~\ref{thm:maximal-atlas} the atlas determines a smooth structure, of dimension $n$ by Theorem~\ref{thm:regular-value}.
+\end{proof}
 \begin{exbox}[A Surface in $\mathbb{R}^3$]\exlabel{ex:surface-transition}
 The case $n = 2$, $k = 1$, where the indices can be written out. Let $F : W \subseteq \mathbb{R}^3 \to \mathbb{R}$ be smooth with regular value $c$, so $M = F^{-1}(c)$ is a surface and $F'(p) = \nabla F(p) \neq 0$ for $p \in M$. Suppose that at $p$ \emph{two} partial derivatives are nonzero, say $\partial F/\partial z(p) \neq 0$ and $\partial F/\partial y(p) \neq 0$. Then $p$ lies in the domains of two charts built from different solved-for variables:
 \[
@@ -4165,19 +4248,6 @@ The parametrization inverse to $\varphi$ is $\varphi^{-1}(x,y) = (x,\,y,\,g(x,y)
 \]
 smooth because $g$ is. In the other direction $\varphi \circ \psi^{-1}(x,z) = \big(x,\, h(x,z)\big)$, smooth because $h$ is. So $(U,\varphi)$ and $(V,\psi)$ are compatible, and the same picture is what Proposition~\ref{prop:level-set-smooth} formalizes: the overlap of two charts is the part of the surface expressible as a graph over two different pairs of variables, and the transition function converts one graph into the other.
 \end{exbox}
-
-\begin{proof}
-\textit{(Lecture 6 worked the surface of Example~\ref{ex:surface-transition} first, then gave this general argument: ``the general thing is just harder to write.'')} The domains cover $M$, since each $p \in M$ lies in some $U_J$. Let $(U_J, \varphi_J)$ and $(U_{J'}, \varphi_{J'})$ be two of the charts, with complementary index sets $I$ and $I'$. Two observations, each valid for every choice of $J$:
-\begin{enumerate}
-    \item $\varphi_J^{-1} : V_J \to \mathbb{R}^{n+k}$ is smooth \emph{in the Euclidean sense}: its components are either coordinates of $u$ or components of the smooth map $h_J$.
-    \item $\varphi_{J'}$ is the restriction of the linear map $\pi_{I'}$, which is smooth on all of $\mathbb{R}^{n+k}$.
-\end{enumerate}
-The transition function is the composite of the two. On the open set $\varphi_J(U_J \cap U_{J'}) \subseteq \mathbb{R}^I$,
-\[
-\varphi_{J'} \circ \varphi_J^{-1} = \pi_{I'} \circ \varphi_J^{-1},
-\]
-a composite of smooth maps between open subsets of Euclidean spaces, hence smooth. Exchanging the roles of $J$ and $J'$ shows $\varphi_J \circ \varphi_{J'}^{-1}$ is smooth as well, so the transition function is a diffeomorphism and the two charts are $C^\infty$-compatible (Definition~\ref{def:compatible}). By Theorem~\ref{thm:maximal-atlas} the atlas determines a smooth structure, of dimension $n$ by Theorem~\ref{thm:regular-value}.
-\end{proof}
 
 The same level sets are submanifolds in the sense of Lecture~12, and their graph-chart structure is the induced one (Proposition~\ref{prop:rvt-agree}).
 
@@ -4250,7 +4320,7 @@ Each such $\chi$ has two properties.
 On the overlap, $\varphi \circ \chi^{-1} = \pi \circ \chi^{-1}$ with $\pi$ a linear projection, which is smooth by (a). And $\chi \circ \varphi^{-1} = \hat\chi \circ \varphi^{-1}$ is smooth by (b), $\varphi^{-1}$ being a smooth parametrization.
 \end{proof}
 
-\section{Vector Spaces and Matrix Groups}\label{sec:vector-spaces}
+\section{Linear Algebra Toolkit}\label{sec:vector-spaces}
 
 \roadmark{Stage: linear}{The tool both tangent spaces will need: linear algebra, and the differential of a map between vector spaces. The matrix groups become smooth level sets.}
 
@@ -4268,6 +4338,10 @@ Let $A : V \to W$ be linear, with $V$ and $W$ finite-dimensional.
 \end{enumerate}
 \leeref{Corollary B.21 and Proposition B.24}
 \end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+Imported from linear algebra without proof; proved in Axler, \emph{Linear Algebra Done Right} (see also Lee, Corollary~B.21 and Proposition~B.24). To be filled.
+\end{proof}
 
 \begin{defbox}[Dual Space and Dual Basis]\deflabel{def:dual}
 The \textbf{dual space} of $V$ is $V^* = \{\lambda : V \to \mathbb{R} \mid \lambda \text{ linear}\}$, a vector space under pointwise operations; its elements are \textbf{linear functionals}, or \textbf{covectors}. If $(e_1, \ldots, e_n)$ is a basis of $V$, the \textbf{dual basis} $(\varepsilon^1, \ldots, \varepsilon^n)$ consists of the covectors with
@@ -4418,9 +4492,15 @@ The \textbf{direct sum} of vector spaces $V$ and $W$ is $V \oplus W = V \times W
 For two summands, or finitely many, the direct sum \emph{is} the Cartesian product with componentwise operations --- the point Uribe said in Lecture~11 he had forgotten the reason for. The two notions differ only for infinitely many summands: the product $\prod_\alpha V_\alpha$ contains all families $(v_\alpha)$, while the direct sum $\bigoplus_\alpha V_\alpha$ contains only those with finitely many nonzero entries.
 \end{rembox}
 
-\subsection{The Differential of a Map Between Vector Spaces}\label{sub:vs-differential}
+% ============================================================================
+% SECTION: THE DIFFERENTIAL OF A MAP BETWEEN VECTOR SPACES
+% ============================================================================
 
-\textit{Lecture 7. ``A careful analysis of what we did last time --- last time I was rushing.'' The $\Ogp(n)$ argument computed a derivative by differentiating along straight lines and read off surjectivity from the result, without ever writing a Jacobian matrix. This subsection says exactly what that computes and why it is legitimate. ``For now it's all linear algebra,'' but it is also the template for the differential of a map between manifolds, to come.}
+\section{The Differential of a Map Between Vector Spaces}\label{sec:vs-differential}\label{sub:vs-differential}
+
+\roadmark{Stage: linear}{The derivative of a map between finite-dimensional vector spaces, without coordinates --- the model for the differential of a smooth map.}
+
+\textit{Lecture 7. ``A careful analysis of what we did last time --- last time I was rushing.'' The $\Ogp(n)$ argument computed a derivative by differentiating along straight lines and read off surjectivity from the result, without ever writing a Jacobian matrix. This section says exactly what that computes and why it is legitimate. ``For now it's all linear algebra,'' but it is also the template for the differential of a map between manifolds, to come.}
 
 Throughout, $X$ and $Y$ are finite-dimensional real vector spaces, of dimensions $m$ and $n$, and $F : X \to Y$ is a map of sets.
 
@@ -4530,7 +4610,13 @@ Since $m \ge n$, the maximal possible rank of an $n \times m$ matrix is $n$, and
 Read together, Theorem~\ref{thm:vs-differential-curves} and Corollary~\ref{cor:vs-regular} are the license for the computation in \S\ref{sub:on-smooth}. The board computation $\frac{d}{dt}\big|_0 F(g + tA)$ is not a shortcut around the Jacobian --- it \emph{is} the Jacobian, packaged as the linear map $A \mapsto dF_g(A)$ and read off without coordinates; and the surjectivity of that linear map \emph{is} the maximal-rank condition, likewise without coordinates. Written as a matrix, $dF_g$ for $\Ogp(n)$ would have $n(n+1)/2$ rows and $n^2$ columns of partial derivatives. None of it is needed. ``Using curves to compute differentials is a basic technique in this subject.''
 \end{rembox}
 
-\subsection{The Orthogonal Group as a Smooth Manifold}\label{sub:on-smooth}
+% ============================================================================
+% SECTION: THE ORTHOGONAL AND UNITARY GROUPS AS SMOOTH MANIFOLDS
+% ============================================================================
+
+\section{The Orthogonal and Unitary Groups as Smooth Manifolds}\label{sec:on-un-smooth}\label{sub:on-smooth}
+
+\roadmark{Stage: linear}{The matrix groups become smooth level sets: $\Ogp(n)$ and $\Ugp(n)$ by the regular value theorem, with the differential computed along straight lines.}
 
 The promise of \S\ref{sub:classical-manifolds} can now be kept, with \S\ref{sub:vs-differential} supplying the meaning of every step.
 
@@ -5018,11 +5104,17 @@ In every homogeneous space met so far, $\dim G/H = \dim G - \dim H$:
 The first two identifications are proved in \ref{sec:homogeneous}; the last two are their complex analogues --- $\Ugp(n+1)$ acts transitively on unit vectors of $\mathbb{C}^{n+1}$ and on complex lines --- and are not proved here. The formula itself is heuristic until quotient manifolds are available, when it becomes a theorem; for now it is a consistency check linking four separate computations.
 \end{rembox}
 
-\subsection{Transversality}\label{sub:transversality}
+% ============================================================================
+% SECTION: TRANSVERSALITY
+% ============================================================================
+
+\section{Transversality}\label{sec:transversality}\label{sub:transversality}
+
+\roadmark{Stage: geometric}{When is the preimage of a regular level set again a regular level set? A condition that does not mention the defining map.}
 
 \textit{Assignment 2, Problem 5. The problem ends with a parenthetical that is the point of the whole exercise: the transversality condition ``does not mention $G$ explicitly --- keep this in mind, for the future.''}
 
-Throughout this subsection $F : \mathbb{R}^N \to \mathbb{R}^k$ and $G : \mathbb{R}^k \to \mathbb{R}^\ell$ are smooth, $0$ is a regular value of $G$, and
+Throughout this section $F : \mathbb{R}^N \to \mathbb{R}^k$ and $G : \mathbb{R}^k \to \mathbb{R}^\ell$ are smooth, $0$ is a regular value of $G$, and
 \[
 S = G^{-1}(0) \subseteq \mathbb{R}^k ,
 \]
@@ -5211,9 +5303,9 @@ and Theorem~\ref{thm:transverse-preimage} becomes the statement that \emph{the p
 Everything above presupposes an ambient $\mathbb{R}^{n+k}$: Definition~\ref{def:geometric-tangent} of the geometric tangent space $T^{\geo}_pM$ uses its vector space structure to differentiate $\gamma$, and Theorem~\ref{thm:tangent-kernel} uses the Jacobian of the defining map $F$. For an abstract smooth manifold neither is available --- ``if you have a sphere you can think of the tangent plane, but that is a subspace of $\mathbb{R}^3$. If you do not have $\mathbb{R}^3$, then what do you do? You do not have room to put your vectors.'' The rest of this section builds the \emph{abstract} tangent space $T_pM$ from the charts alone.
 \end{rembox}
 
-\section{Tangent Spaces II: The Abstract Tangent Space}\label{sec:abstract-tangent}
+\section{Tangent Spaces II: Germs}\label{sec:abstract-tangent}
 
-\roadmark{Stage: abstract}{Tangent vectors as derivations of germs --- available for every manifold, including those built by quotients. The two notions agree wherever both exist (Theorem~\ref{thm:ambient-abstract}).}
+\roadmark{Stage: abstract}{Tangent vectors as derivations of germs --- available for every manifold, including those built by quotients. First the motivation, then germs, the objects derivations act on.}
 
 \subsection{From Tangent Vectors to Derivations}\label{sub:derivations-motivation}
 
@@ -5386,7 +5478,13 @@ A germ $[f] \in C_{x_0}^\infty(\mathbb{R}^n)$ is \textbf{flat} if all partial de
 The moral is that a germ carries strictly more information than its Taylor series --- ``one of the beauties of being in the $C^\infty$ category.'' This is the same phenomenon as the rigidity of $C^\omega$ noted after Definition~\ref{def:regularity-classes}: a real-analytic germ \emph{is} its Taylor series, which is why there are no analytic bump functions, whereas a $C^\infty$ germ has room to spare.
 \end{rembox}
 
-\subsection{Derivations and the Abstract Tangent Space}\label{sub:derivations}
+% ============================================================================
+% SECTION: DERIVATIONS AND THE ABSTRACT TANGENT SPACE
+% ============================================================================
+
+\section{Derivations and the Abstract Tangent Space}\label{sec:derivations}\label{sub:derivations}
+
+\roadmark{Stage: abstract}{The abstract tangent space $T_pM$ as the derivations at $p$, and the differential $F_{*p}$ that pushes them forward. The two notions of tangent space agree wherever both exist (Theorem~\ref{thm:ambient-abstract}).}
 
 \begin{rembox}[Two Faces of a Tangent Vector]\label{rem:two-faces-tangent-vector}
 Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces --- ``like Janus.'' It is a \emph{velocity}, the $\gamma'(0)$ of a curve --- an element of the geometric tangent space $T^{\geo}_pM$, which is how \S\ref{sub:derivations-motivation} met it; and it is a \emph{derivation}, an operator that eats germs and returns numbers --- an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem~\ref{thm:ambient-abstract}). The same split will reappear for vector fields: as velocities attached to every point they \emph{generate dynamics}, and as operators they lead to the \emph{Lie derivative}.
@@ -5475,16 +5573,6 @@ Taking germs is an algebra homomorphism $C^\infty(M) \to C_p^\infty(M)$ compatib
 
 \textbf{Comparison with Lee.} This is where the course's algebraic route and Lee's part company. Lee works with global functions and pays for locality with bump functions: Proposition~3.8 shows a derivation of $C^\infty(M)$ only sees a function near $p$, and Proposition~3.9 identifies $T_pU$ with $T_pM$. Germs build locality into the definition, so the course needs no bump functions at all --- Lemma~\ref{lem:germs-local} is pure algebra. The proposition above is the bridge. Since the two spaces are isomorphic, every result about $T_pM$ in these notes transfers to Lee's, and conversely.
 
-\begin{thmbox}[Ambient and Abstract Agree]\thmlabel{thm:ambient-abstract}
-Let $M = F^{-1}(c) \subseteq \mathbb{R}^{n+k}$ be a regular level set and $p \in M$. Then
-\[
-T^{\geo}_pM \longrightarrow T_pM, \qquad v \longmapsto D_v,
-\]
-from the geometric tangent space (a subspace of $\mathbb{R}^{n+k}$) to the abstract tangent space (derivations at $p$) is an isomorphism of vector spaces.
-\leeref{Propositions 3.2, 5.37 and 5.38}
-\end{thmbox}
-
-\textbf{Announced in lecture; proved below.} Stated in lecture in answer to a student's question --- ``are the ambient and the abstract tangent spaces the same, just defined differently?'' --- with the answer that they are, but that it has to be proved. Injectivity is Proposition~\ref{prop:Dv-determines-v}; that $D_v$ really is a derivation is Proposition~\ref{prop:Dv-properties}; surjectivity will follow from the basis theorem below, both spaces having dimension $n$. Even once it is proved, the notes keep the notations apart: $T^{\geo}_pM$ is the geometric tangent space, $T_pM$ the abstract one.
 
 \subsection{Pushing Derivations Forward}\label{sub:pushforward}
 
@@ -5563,7 +5651,7 @@ $F_{*p}D = D \circ F_p^*$ is linear, as a composite of linear maps. For the Leib
 using, in turn, that $F_p^*$ is multiplicative, the Leibniz rule for $D$ at $p$, and compatibility with evaluation. So $F_{*p}D$ is a derivation at $F(p)$. Linearity in $D$ holds because $(D + \lambda D')\circ F_p^* = D \circ F_p^* + \lambda\, D' \circ F_p^*$.
 \end{proof}
 
-Every object of this subsection, with what it is and where it lives. The rows go in order of the diagram above: germs travel backwards, from $N$ to $M$, and derivations forwards, from $M$ to $N$.
+Every object of this section, with what it is and where it lives. The rows go in order of the diagram above: germs travel backwards, from $N$ to $M$, and derivations forwards, from $M$ to $N$.
 
 \begin{center}
 \renewcommand{\arraystretch}{1.25}
@@ -5646,7 +5734,13 @@ In the charts $(U,\varphi)$ on $U$ and $(\varphi(U), \mathrm{id})$ on $\varphi(U
 This is the $\tilde D$ of the lecture: for $D \in T_pM$, $\tilde D = \varphi_{*p}D$ acts by $\tilde D[g] = D[g \circ \varphi]$, identifying tangent vectors on $M$ with derivations at a point of an open subset of $\mathbb{R}^n$. Everything about the abstract tangent space $T_pM$ can therefore be settled in $\mathbb{R}^n$, which is how the basis theorem is proved.
 \end{rembox}
 
-\subsection{Coordinate Derivations and the Basis Theorem}\label{sub:coordinate-derivations}
+% ============================================================================
+% SECTION: COORDINATE DERIVATIONS AND THE BASIS THEOREM
+% ============================================================================
+
+\section{Coordinate Derivations and the Basis Theorem}\label{sec:basis-theorem}\label{sub:coordinate-derivations}
+
+\roadmark{Stage: abstract}{Charts give derivations $\partial/\partial x^i|_p$, and they form a basis of $T_pM$: $\dim T_pM = \dim M$. The proof needs Taylor's theorem with a smooth remainder.}
 
 \begin{defbox}[Coordinate Functions of a Chart]\deflabel{def:coordinate-functions}
 Let $M$ be a smooth $n$-manifold.
@@ -5675,7 +5769,7 @@ Let $M$ be a smooth $n$-manifold.
 \end{tikzcd}
 \end{center}
 
-The board diagram for this subsection. Both triangles commute: the left one says $f = f_\varphi \circ \varphi$, which is what smoothness of $f$ means; the right one is the \emph{definition} $x^i = r^i \circ \varphi$ of the $i$-th coordinate function on $U$ (Definition~\ref{def:coordinate-functions}). Everything upstairs is expressed downstairs by composing with $\varphi$, and the derivation about to be defined does its differentiating entirely on the bottom row, where partial derivatives already make sense.
+The board diagram for this section. Both triangles commute: the left one says $f = f_\varphi \circ \varphi$, which is what smoothness of $f$ means; the right one is the \emph{definition} $x^i = r^i \circ \varphi$ of the $i$-th coordinate function on $U$ (Definition~\ref{def:coordinate-functions}). Everything upstairs is expressed downstairs by composing with $\varphi$, and the derivation about to be defined does its differentiating entirely on the bottom row, where partial derivatives already make sense.
 
 \begin{defbox}[Coordinate Derivations]\deflabel{def:coordinate-derivation}
 Let $(U,\varphi)$ be a smooth chart with $p \in U$, with coordinate functions $x^1, \ldots, x^n$ (Definition~\ref{def:coordinate-functions}), and let $i \in \{1,\ldots,n\}$. Define $\dfrac{\partial}{\partial x^i}\Big|_p : C_p^\infty(M) \to \mathbb{R}$ by
@@ -5706,19 +5800,7 @@ $\dfrac{\partial}{\partial x^i}\Big|_p$ is well defined on germs and is a deriva
 and $f_\varphi(\varphi(p)) = f(p)$, $g_\varphi(\varphi(p)) = g(p)$.
 \end{proof}
 
-\begin{thmbox}[Basis Theorem]\thmlabel{thm:tangent-basis}
-Let $M$ be a smooth $n$-manifold, $p \in M$, and $(U, \varphi)$ any smooth chart with $p \in U$. Then
-\[
-\left\{ \frac{\partial}{\partial x^1}\Big|_p, \ \ldots, \ \frac{\partial}{\partial x^n}\Big|_p \right\}
-\]
-is a basis of $T_pM$; in particular $\dim T_pM = n$. Explicitly, every derivation $D$ at $p$ satisfies the \textbf{universal formula}
-\[
-D \;=\; \sum_{i=1}^n D\big[x^i\big]\, \frac{\partial}{\partial x^i}\Big|_p .
-\]
-\leeref{Proposition 3.15 and Corollary 3.3}
-\end{thmbox}
-
-The proof needs a form of Taylor expansion whose remainder is not an estimate but an exact, \emph{smooth} term --- ``a theorem from calculus'' that is not usually taught there. It is built in two steps: first order, then the first-order statement applied again.
+The proof of the Basis Theorem below needs a form of Taylor expansion whose remainder is not an estimate but an exact, \emph{smooth} term --- ``a theorem from calculus'' that is not usually taught there. It is built in two steps: first order, then the first-order statement applied again.
 
 \begin{lembox}[Hadamard's Lemma]\thmlabel{lem:hadamard}
 Let $W \subseteq \mathbb{R}^n$ be open, $a = (a^1,\ldots,a^n) \in W$, $f : W \to \mathbb{R}$ smooth, and $B \subseteq W$ an open ball centred at $a$. Then there are smooth functions $f_1, \ldots, f_n$ on $B$ with
@@ -5815,7 +5897,19 @@ D[f] = D\big[\underline{f(a)}\big] + \sum_{i} \frac{\partial f}{\partial r^i}(a)
 The constant term vanishes by Lemma~\ref{lem:derivation-properties}(1). Each quadratic term is $D$ of a product of two germs in $I_a$ --- namely $r^i - a^i$ and $(r^j - a^j)f_{ij}$, both zero at $a$ --- so it vanishes by Lemma~\ref{lem:derivation-properties}(2). Finally $D[r^i - a^i] = D[r^i]$ by (1) again. So $D$ sees only the linear part of $f$: ``the ultimate formula in the Euclidean case.''
 \end{proof}
 
-\begin{proof}[Proof of Theorem~\ref{thm:tangent-basis}]
+\begin{thmbox}[Basis Theorem]\thmlabel{thm:tangent-basis}
+Let $M$ be a smooth $n$-manifold, $p \in M$, and $(U, \varphi)$ any smooth chart with $p \in U$. Then
+\[
+\left\{ \frac{\partial}{\partial x^1}\Big|_p, \ \ldots, \ \frac{\partial}{\partial x^n}\Big|_p \right\}
+\]
+is a basis of $T_pM$; in particular $\dim T_pM = n$. Explicitly, every derivation $D$ at $p$ satisfies the \textbf{universal formula}
+\[
+D \;=\; \sum_{i=1}^n D\big[x^i\big]\, \frac{\partial}{\partial x^i}\Big|_p .
+\]
+\leeref{Proposition 3.15 and Corollary 3.3}
+\end{thmbox}
+
+\begin{proof}
 \textit{(Lecture~9. In lecture the derivation $\tilde D$ was introduced inside this proof --- ``this is how you push forward derivations \ldots\ we'll come back to this construction immediately after'' --- and Uribe remarked that ``the order of my presentation is not ideal.'' The notes define the pushforward first, in \ref{sub:pushforward}, so that the proof can cite it.)} Let $D \in T_pM$ and put $a = \varphi(p) = (r_0^1, \ldots, r_0^n)$.
 
 \emph{Step 1: push $D$ down.} Let $\tilde D = \varphi_{*p}D \in T_a\,\varphi(U)$, the chart pushforward of Proposition~\ref{prop:chart-diffeo}; so $\tilde D[g] = D[g \circ \varphi]$ for germs $g$ at $a$.
@@ -5852,6 +5946,18 @@ The proof in one diagram --- the defining triangle of the pushforward, for the c
 
 \textbf{Transcription note (Lecture 8).} Page 16 of the handwritten notes states Taylor--Hadamard for ``$f : U \to \mathbb{R}^2$''; the target is $\mathbb{R}$.
 
+\begin{thmbox}[Ambient and Abstract Agree]\thmlabel{thm:ambient-abstract}
+Let $M = F^{-1}(c) \subseteq \mathbb{R}^{n+k}$ be a regular level set and $p \in M$. Then
+\[
+T^{\geo}_pM \longrightarrow T_pM, \qquad v \longmapsto D_v,
+\]
+from the geometric tangent space (a subspace of $\mathbb{R}^{n+k}$) to the abstract tangent space (derivations at $p$) is an isomorphism of vector spaces.
+\leeref{Propositions 3.2, 5.37 and 5.38}
+\end{thmbox}
+
+\begin{proof}[Proof]
+\textbf{Announced in lecture.} Stated in lecture in answer to a student's question --- ``are the ambient and the abstract tangent spaces the same, just defined differently?'' --- with the answer that they are, but that it has to be proved. Injectivity is Proposition~\ref{prop:Dv-determines-v}; that $D_v$ really is a derivation is Proposition~\ref{prop:Dv-properties}; surjectivity follows from the basis theorem (Theorem~\ref{thm:tangent-basis}), both spaces having dimension $n$. Even once it is proved, the notes keep the notations apart: $T^{\geo}_pM$ is the geometric tangent space, $T_pM$ the abstract one.
+\end{proof}
 \begin{corbox}[Consequences]\thmlabel{cor:tangent-basis-consequences}
 Let $M$ be a smooth $n$-manifold and $p \in M$. Then the abstract tangent space has $\dim T_pM = n$, and for a regular level set $M = F^{-1}(c)$ the map $v \mapsto D_v$ of Theorem~\ref{thm:ambient-abstract}, from $T^{\geo}_pM$ to $T_pM$, is an isomorphism.
 \leeref{Proposition 3.10}
@@ -5871,7 +5977,13 @@ The basis theorem showed that, of the whole Taylor expansion of a germ, a deriva
 % ============================================================================
 % Lecture 9 (Mon Sep 21, 2026), end
 % ============================================================================
-\subsection{The Differential in Coordinates}\label{sub:differential-coords}
+% ============================================================================
+% SECTION: THE DIFFERENTIAL IN COORDINATES
+% ============================================================================
+
+\section{The Differential in Coordinates}\label{sec:differential-coords}\label{sub:differential-coords}
+
+\roadmark{Stage: abstract}{In charts the differential $F_{*p}$ is the Jacobian of the coordinate representation, and the chain rule is matrix multiplication.}
 
 \textit{Lecture 9. The differential $F_{*p}$ is defined without coordinates; choosing charts on both sides turns it into a matrix, and the matrix is the Jacobian of the coordinate representation. ``This should be very much reminiscent of the things we said about vector spaces --- another instance of the same thing.''}
 
@@ -6105,9 +6217,15 @@ Hausdorffness and second countability are inherited from $M$ (Theorem~\ref{thm:s
 
 This is the topological half of the regular value theorem for manifolds, and it is \ref{sec:rvt} applied chart by chart. The smooth half --- that $F^{-1}(c)$ is a smooth \emph{submanifold} of $M$, with tangent space $\ker F_{*p}$ --- came in Lecture~12, as Theorem~\ref{thm:rvt-manifolds}, proved with the local normal form for submersions (Theorem~\ref{thm:submersion-normal-form}): near each point of the level set, $F$ is a projection, so the level set is a coordinate slice. It is Lee's Corollary~5.14 and Proposition~5.38. The corollary above is now a consequence of it, a submanifold being in particular a topological manifold, but its proof --- \ref{sec:rvt} applied chart by chart --- is more elementary.
 
-\subsection{Tangent Vectors as Velocities of Curves}\label{sub:velocities}
+% ============================================================================
+% SECTION: TANGENT VECTORS AS VELOCITIES OF CURVES
+% ============================================================================
 
-\textit{Assignment 3, Problem 2.} Tangent vectors were introduced with two faces: velocities of curves, and derivations (the remark at the start of \S\ref{sub:derivations}). For regular level sets the two were identified by Theorem~\ref{thm:ambient-abstract}, through the ambient space. This subsection identifies them on \emph{every} smooth manifold, with no ambient space at all.
+\section{Tangent Vectors as Velocities of Curves}\label{sec:velocities}\label{sub:velocities}
+
+\roadmark{Stage: abstract}{The other face of a tangent vector: every derivation is the velocity of a curve, on every manifold. Tangent spaces of products split.}
+
+\textit{Assignment 3, Problem 2.} Tangent vectors were introduced with two faces: velocities of curves, and derivations (the remark at the start of \S\ref{sub:derivations}). For regular level sets the two were identified by Theorem~\ref{thm:ambient-abstract}, through the ambient space. This section identifies them on \emph{every} smooth manifold, with no ambient space at all.
 
 \begin{defbox}[Smooth Curve and Its Velocity]\deflabel{def:velocity}
 Let $J \subseteq \mathbb{R}$ be an open interval containing $0$, with its standard smooth structure and coordinate $t$. A \textbf{smooth curve} in $M$ is a smooth map $\gamma : J \to M$. If $\gamma(0) = p$, the \textbf{velocity} of $\gamma$ at $0$ is the abstract tangent vector
@@ -6602,6 +6720,10 @@ Let $W \subseteq \mathbb{R}^n$ be open, $\Phi : W \to \mathbb{R}^n$ smooth, and 
 \leeref{Theorem C.34}
 \end{thmbox}
 
+\begin{proof}[Proof (to be filled)]
+Taken from analysis, not proved in this course (Lee, Theorem~C.34; MATH~452 proves the two-variable case). To be filled.
+\end{proof}
+
 Lee, Theorem C.34; taken from analysis, not proved in the course. It should not be confused with the \emph{implicit} function theorem of \S\ref{sub:ift} --- the board's ``IFT'' now means the inverse one. Each theorem can be derived from the other.
 
 \begin{thmbox}[Local Diffeomorphisms Are Detected by the Differential]\thmlabel{thm:local-diffeo-criterion}
@@ -6698,6 +6820,41 @@ The projection $S^{2n+1} \to \mathbb{CP}^n$ of \S\ref{sub:cpn} is a submersion.
 
 Stated in lecture as an example (``the projection you worked with from a sphere to complex projective space''); not yet proved. The dimensions are consistent, $2n \le 2n+1$. A proof needs the differential of a map \emph{out of} a level set in terms of the ambient Jacobian, which Lemma~\ref{lem:level-set-maps} makes available for smoothness but not yet for differentials.
 
+\begin{defbox}[Regular Points and Critical Points]\deflabel{def:regular-critical}
+Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$.
+\begin{enumerate}
+    \item $p \in M$ is a \textbf{regular point} of $F$ if $F$ is a submersion at $p$, i.e.\ $F_{*p}$ is onto --- which forces $n \le m$. Otherwise $p$ is a \textbf{critical point}, also called a \textbf{singular point}.
+    \item $q \in N$ is a \textbf{regular value} of $F$ if $F$ is a submersion at every $p \in F^{-1}(q)$, and a \textbf{critical value} otherwise.
+    \item In particular every $q \notin F(M)$ is a regular value: its preimage is empty, and ``everything is true for the empty set.''
+\end{enumerate}
+These are the notions of Definition~\ref{def:manifold-regular}, now with critical points and the empty-preimage convention made explicit; for maps between open subsets of Euclidean spaces they are those of Definition~\ref{def:regular-value}.
+\end{defbox}
+
+Uribe called (3) ``kind of a trivial way to be [regular], but important'': it matters in Sard's theorem, about the set of regular values, which is still to come. \textbf{Transcription note.} Page 29 of the handwritten notes has ``if $q \in \operatorname{Im} F$, then $q$ is regular''; the audio has ``if $q$ is not in the image of $F$'', as in (3). The same page writes the preimage in (2) as $F^{-1}(p)$ for $F^{-1}(q)$.
+
+\begin{propbox}[Critical Points of Real-Valued Functions]\thmlabel{prop:critical-functions}
+Let $f : M \to \mathbb{R}$ be smooth. Then $df_p$ is either onto or zero, so
+\[
+p \text{ is a critical point of } f \iff df_p = 0 \iff \frac{\partial f}{\partial x^i}(p) = 0 \text{ for all } i,
+\]
+in any chart at $p$.
+\leeref{Exercise 11.24}
+\end{propbox}
+
+\begin{proof}
+The image of the linear map $df_p$ is a subspace of the one-dimensional $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ (Definition~\ref{def:cotangent}), so it is $0$ or everything --- ``dimensions of images cannot be fractional.'' The second equivalence is Lemma~\ref{lem:df-coords}.
+\end{proof}
+
+This is the definition of critical point Uribe sent to the class by email, and it agrees with Definition~\ref{def:regular-value} for $m = 1$: there $p$ is regular iff $\nabla F(p) \ne 0$.
+
+\begin{lembox}[Diffeomorphisms onto Open Sets Are Charts]\thmlabel{lem:diffeo-chart}
+Let $U \subseteq M$ be open and $\hat\varphi : U \to \mathbb{R}^m$ smooth, with $\hat\varphi(U)$ open and $\hat\varphi : U \to \hat\varphi(U)$ a diffeomorphism. Then $(U, \hat\varphi)$ is a smooth chart of $M$.
+\leeref{cf.\ Ch.~2, \emph{Diffeomorphisms}}
+\end{lembox}
+
+\begin{proof}
+It is a homeomorphism onto an open subset of $\mathbb{R}^m$, so it is a chart. For any smooth chart $(W, \chi)$ of $M$, the transition maps $\hat\varphi \circ \chi^{-1}$ and $\chi \circ \hat\varphi^{-1}$ are coordinate representations of $\hat\varphi$ and $\hat\varphi^{-1}$, smooth because these maps are (Proposition~\ref{prop:smooth-map-charts}). So $(U, \hat\varphi)$ is compatible with every chart of the maximal atlas, and therefore belongs to it (Theorem~\ref{thm:maximal-atlas}).
+\end{proof}
 \begin{thmbox}[Local Normal Form for Submersions]\thmlabel{thm:submersion-normal-form}
 Let $F : M \to N$ be a submersion at $p$, with $\dim M = m$ and $\dim N = n$. Then there are charts $(U, \varphi)$ at $p$ and $(V, \psi)$ at $F(p)$ with $F(U) \subseteq V$ in which the coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1} : \varphi(U) \to \psi(V)$ is the projection onto the first $n$ coordinates:
 \[
@@ -6776,45 +6933,10 @@ What the normal form says, for $m = 2$ and $n = 1$. Left: near $p$ the fibres $F
 
 \textit{Lecture 11. ``Back to submersions.'' Uribe now made the vocabulary official, with the letters matched to the dimensions: $\dim M = m$ and $\dim N = n$. (In \ref{sec:rvt}, following the earlier lecture, $F : \mathbb{R}^N \to \mathbb{R}^m$ had $m$ as the dimension of the target.)}
 
-\begin{defbox}[Regular Points and Critical Points]\deflabel{def:regular-critical}
-Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$.
-\begin{enumerate}
-    \item $p \in M$ is a \textbf{regular point} of $F$ if $F$ is a submersion at $p$, i.e.\ $F_{*p}$ is onto --- which forces $n \le m$. Otherwise $p$ is a \textbf{critical point}, also called a \textbf{singular point}.
-    \item $q \in N$ is a \textbf{regular value} of $F$ if $F$ is a submersion at every $p \in F^{-1}(q)$, and a \textbf{critical value} otherwise.
-    \item In particular every $q \notin F(M)$ is a regular value: its preimage is empty, and ``everything is true for the empty set.''
-\end{enumerate}
-These are the notions of Definition~\ref{def:manifold-regular}, now with critical points and the empty-preimage convention made explicit; for maps between open subsets of Euclidean spaces they are those of Definition~\ref{def:regular-value}.
-\end{defbox}
 
-Uribe called (3) ``kind of a trivial way to be [regular], but important'': it matters in Sard's theorem, about the set of regular values, which is still to come. \textbf{Transcription note.} Page 29 of the handwritten notes has ``if $q \in \operatorname{Im} F$, then $q$ is regular''; the audio has ``if $q$ is not in the image of $F$'', as in (3). The same page writes the preimage in (2) as $F^{-1}(p)$ for $F^{-1}(q)$.
+Uribe singled out Lemma~\ref{lem:diffeo-chart} as ``an intellectual step that should not be overlooked'': in the proof below, a map is shown to be a local diffeomorphism, and this lemma is what makes it a coordinate system.
 
-\begin{propbox}[Critical Points of Real-Valued Functions]\thmlabel{prop:critical-functions}
-Let $f : M \to \mathbb{R}$ be smooth. Then $df_p$ is either onto or zero, so
-\[
-p \text{ is a critical point of } f \iff df_p = 0 \iff \frac{\partial f}{\partial x^i}(p) = 0 \text{ for all } i,
-\]
-in any chart at $p$.
-\leeref{Exercise 11.24}
-\end{propbox}
-
-\begin{proof}
-The image of the linear map $df_p$ is a subspace of the one-dimensional $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ (Definition~\ref{def:cotangent}), so it is $0$ or everything --- ``dimensions of images cannot be fractional.'' The second equivalence is Lemma~\ref{lem:df-coords}.
-\end{proof}
-
-This is the definition of critical point Uribe sent to the class by email, and it agrees with Definition~\ref{def:regular-value} for $m = 1$: there $p$ is regular iff $\nabla F(p) \ne 0$.
-
-\begin{lembox}[Diffeomorphisms onto Open Sets Are Charts]\thmlabel{lem:diffeo-chart}
-Let $U \subseteq M$ be open and $\hat\varphi : U \to \mathbb{R}^m$ smooth, with $\hat\varphi(U)$ open and $\hat\varphi : U \to \hat\varphi(U)$ a diffeomorphism. Then $(U, \hat\varphi)$ is a smooth chart of $M$.
-\leeref{cf.\ Ch.~2, \emph{Diffeomorphisms}}
-\end{lembox}
-
-\begin{proof}
-It is a homeomorphism onto an open subset of $\mathbb{R}^m$, so it is a chart. For any smooth chart $(W, \chi)$ of $M$, the transition maps $\hat\varphi \circ \chi^{-1}$ and $\chi \circ \hat\varphi^{-1}$ are coordinate representations of $\hat\varphi$ and $\hat\varphi^{-1}$, smooth because these maps are (Proposition~\ref{prop:smooth-map-charts}). So $(U, \hat\varphi)$ is compatible with every chart of the maximal atlas, and therefore belongs to it (Theorem~\ref{thm:maximal-atlas}).
-\end{proof}
-
-Uribe singled this out as ``an intellectual step that should not be overlooked'': in the proof below, a map is shown to be a local diffeomorphism, and this lemma is what makes it a coordinate system.
-
-\begin{proof}[Proof of Theorem~\ref{thm:submersion-normal-form} (Lecture 11)]
+\begin{proof}[Proof (Lecture 11)]
 The steps are the lecture's, in the lecture's order. Sentences marked \textit{(Completion.)} fill in details the lecture passed over.
 
 \emph{1. Start with any coordinates.} ``I start with any coordinates'': smooth charts $(U_0, \varphi_0 = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U_0) \subseteq V$. \textit{(Completion.)} Such charts exist: take any charts and replace $U_0$ by the open set $U_0 \cap F^{-1}(V)$.
@@ -7385,6 +7507,10 @@ Left: the strip $[0, 1] \times (-1, 1)$, ruled by its fibres, with the core circ
 Let $\pi : E \to B$ be a surjective submersion which is \emph{proper}: the preimage of every compact set is compact. If $B$ is connected, then $\pi$ is a fibration.
 \end{thmbox}
 
+\begin{proof}[Proof (to be filled)]
+Stated in Lecture~13, not proved: the proof uses connections, which the course does not cover. To be filled.
+\end{proof}
+
 \textit{Status.} Stated in Lecture~13, not proved: ``we don't have time to do the proof, and it uses material that we're not going to cover called connections.'' Uribe first recalled the case of a compact fibre, then the general statement for proper maps, which is the form given here. The intuition: a connection lets one lift a path from $b$ to $b'$ in the base to paths in $E$, and flow the fibre over $b$ onto the fibre over $b'$; properness is what lets the flow run for as long as needed, so that it identifies the fibres not just one at a time but over a whole neighbourhood --- a local trivialization. The transcript renders the name as ``Aristotle''; it is Ehresmann.
 
 \begin{exbox}[All Fibres Diffeomorphic but Not a Fibration]\exlabel{ex:ehresmann-counter}
@@ -7478,12 +7604,8 @@ all the tangent spaces ``put together in one big set.'' It comes with the \textb
 
 The tangent bundle as a fibration. Each fibre $\pi^{-1}(p) = T_pM$ is a vertical line over $p$ (in general a copy of $\mathbb{R}^m$); the point $(p, v)$ lies on it, and the zero section $\zeta$ lifts each $p$ straight up to $(p, 0)$, placing a copy of $M$ horizontally inside $TM$.
 
-\begin{propbox}[The Tangent Bundle Is a Manifold (Claim)]\thmlabel{prop:tangent-bundle-claim}
-$TM$ has a natural topology and smooth structure making it a smooth manifold of dimension $2m$, for which $\pi : TM \to M$ is a fibration with fibre $\mathbb{R}^m$, and the image $\zeta(M)$ of the zero section is a submanifold of $TM$.
-\leeref{Proposition 3.18}
-\end{propbox}
 
-\textit{Status.} Stated in Lecture~12 --- ``the claim, which takes a lot of detail to prove'' --- and made precise in Lecture~13 (\ref{sub:tb-charts}), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; ``putting all that together gives us a map'' $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
+\textit{Status.} Proposition~\ref{prop:tangent-bundle-claim}, below, was stated in Lecture~12 --- ``the claim, which takes a lot of detail to prove'' --- and made precise in Lecture~13 (\ref{sub:tb-charts}), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; ``putting all that together gives us a map'' $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
 
 \subsection{Trivializations and Charts}\label{sub:tb-charts}
 
@@ -7583,6 +7705,14 @@ With Proposition~\ref{prop:tb-topology}, this proves Proposition~\ref{prop:tange
 
 \begin{proof}
 \textit{((1) and (2) are the lecture's observations --- ``in these coordinates, the projection is just projection onto the first $m$ components \ldots\ so we get a beautiful fibration''; the details and (3) are filled in.)} (1) In the charts $\tilde\varphi$ and $\varphi$, $\pi$ is $(r, v) \mapsto r$, which is smooth. (2) $\Phi = (\varphi^{-1} \times \mathrm{id}) \circ \tilde\varphi$ is a composite of diffeomorphisms (Proposition~\ref{prop:chart-diffeo}), and $\mathrm{pr}_1 \circ \Phi = \pi$; the $TU$ cover $TM$, the $U$ cover $M$. On $T_pM$, $\Phi$ is $v \mapsto (p, v^1, \ldots, v^m)$, taking components in a basis, which is a linear isomorphism. (3) In the chart $\tilde\varphi$, $\zeta(M) \cap TU = \{v^1 = \cdots = v^m = 0\}$, so the charts $\tilde\varphi$ are adapted to $\zeta(M)$ (Definition~\ref{def:submanifold}).
+\end{proof}
+\begin{propbox}[The Tangent Bundle Is a Manifold (Claim)]\thmlabel{prop:tangent-bundle-claim}
+$TM$ has a natural topology and smooth structure making it a smooth manifold of dimension $2m$, for which $\pi : TM \to M$ is a fibration with fibre $\mathbb{R}^m$, and the image $\zeta(M)$ of the zero section is a submanifold of $TM$.
+\leeref{Proposition 3.18}
+\end{propbox}
+
+\begin{proof}[Proof]
+Proposition~\ref{prop:tb-topology} gives the topology, and Corollary~\ref{cor:tb-fibration} the smooth structure, the fibration with fibre $\mathbb{R}^m$, and the zero section as a submanifold.
 \end{proof}
 
 \begin{rembox}[Vector Bundles]\label{rem:vector-bundles}
@@ -7690,6 +7820,10 @@ Let $F : M \to N$ be an immersion at $p$, with $\dim M = m \le n = \dim N$. Then
 \]
 \leeref{Theorem 4.12, the rank theorem}
 \end{thmbox}
+
+\begin{proof}[Proof (to be filled)]
+Stated in Lecture~13; the proof is due in the next lecture. To be filled.
+\end{proof}
 
 \begin{center}
 \begin{tikzcd}[column sep=8em, row sep=3em]

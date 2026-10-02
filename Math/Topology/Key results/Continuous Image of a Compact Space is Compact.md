@@ -22,11 +22,11 @@ tags: [topology, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-29|Proposition §3.29: ℂPⁿ is Hausdorff and Second Countable]]
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-30|Proposition §3.30: ℂPⁿ Is Compact]]
-- [[§6 Group Actions and Orbit Spaces#^cor-6-4|Corollary §6.4: Compact Group and Compact Hausdorff Space]]
-- [[§7 Homogeneous Spaces#^thm-7-8|Theorem §7.8: Homogeneous Spaces Are Homeomorphic to Coset Spaces]]
-- [[§8 Differentiable Structures#^prop-8-3|Proposition §8.3: The Circle Needs More Than One Chart]]
+- [[§6 Open Quotients and Complex Projective Space#^prop-6-4|Proposition §6.4: ℂPⁿ is Hausdorff and Second Countable]]
+- [[§6 Open Quotients and Complex Projective Space#^prop-6-5|Proposition §6.5: ℂPⁿ Is Compact]]
+- [[§10 Group Actions and Orbit Spaces#^cor-10-4|Corollary §10.4: Compact Group and Compact Hausdorff Space]]
+- [[§12 The Topology of G∕H and Real Grassmannians#^thm-12-3|Theorem §12.3: Homogeneous Spaces Are Homeomorphic to Coset Spaces]]
+- [[§13 Differentiable Structures#^prop-13-3|Proposition §13.3: The Circle Needs More Than One Chart]]
 
 ## Used in (Multivariable Analysis)
 - [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14: Change of Variables Formula — Rectangular Case]]

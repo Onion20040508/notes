@@ -12,24 +12,29 @@ tags: [chapter, differentiable-manifolds]
 **Builds on (other subjects):** [[Linear Algebra]] (14), [[Topology]] (3), [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (11)
 
 ## Sections
-- [[§11 Tangent Spaces I꞉ The Geometric Picture]]
-- [[§12 Tangent Spaces II꞉ The Abstract Tangent Space]]
-- [[§13 Tangent Spaces III꞉ The Cotangent Space]]
+- [[§20 Tangent Spaces I꞉ The Geometric Picture]]
+- [[§21 Transversality]]
+- [[§22 Tangent Spaces II꞉ Germs]]
+- [[§23 Derivations and the Abstract Tangent Space]]
+- [[§24 Coordinate Derivations and the Basis Theorem]]
+- [[§25 The Differential in Coordinates]]
+- [[§26 Tangent Vectors as Velocities of Curves]]
+- [[§27 Tangent Spaces III꞉ The Cotangent Space]]
 
 ## Central results
-- [[Geometric Tangent Space Is the Kernel of the Jacobian]] (§11.3)
-- [[Transverse Preimage Theorem]] (§11.7)
-- [[Ambient and Abstract Tangent Spaces Agree]] (§12.8)
-- [[Chain Rule for Differentials]] (§12.11)
-- [[Basis Theorem for Tangent Spaces]] (§12.16)
-- [[Hadamard's Lemma]] (§12.17)
-- [[Matrix of the Differential]] (§12.22)
-- [[Every Tangent Vector Is a Velocity]] (§12.30)
-- [[Cotangent Space from Germs]] (§13.7)
+- [[Geometric Tangent Space Is the Kernel of the Jacobian]] (§20.3)
+- [[Transverse Preimage Theorem]] (§21.1)
+- [[Chain Rule for Differentials]] (§23.6)
+- [[Hadamard's Lemma]] (§24.2)
+- [[Basis Theorem for Tangent Spaces]] (§24.5)
+- [[Ambient and Abstract Tangent Spaces Agree]] (§24.6)
+- [[Matrix of the Differential]] (§25.2)
+- [[Every Tangent Vector Is a Velocity]] (§26.2)
+- [[Cotangent Space from Germs]] (§27.7)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-3|Proposition §12.3: Agreement Near a Point Is an Equivalence Relation]]: 54 later results
-- [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-4|Proposition §12.4: C_p^∞(M) Is an ℝ-Algebra]]: 54 later results
-- [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-7|Proposition §12.7: Germ Derivations and Global Derivations]]: 54 later results
-- [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^prop-12-9|Proposition §12.9: Properties of the Pullback]]: 48 later results
+- [[§22 Tangent Spaces II꞉ Germs#^prop-22-3|Proposition §22.3: Agreement Near a Point Is an Equivalence Relation]]: 54 later results
+- [[§22 Tangent Spaces II꞉ Germs#^prop-22-4|Proposition §22.4: C_p^∞(M) Is an ℝ-Algebra]]: 54 later results
+- [[§23 Derivations and the Abstract Tangent Space#^prop-23-3|Proposition §23.3: Germ Derivations and Global Derivations]]: 54 later results
+- [[§23 Derivations and the Abstract Tangent Space#^prop-23-4|Proposition §23.4: Properties of the Pullback]]: 48 later results

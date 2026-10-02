@@ -9,28 +9,31 @@ tags: [chapter, differentiable-manifolds]
 
 
 
-**Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2)
-**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (53), [[· 3 Smooth Structures|3 Smooth Structures]] (41), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (15), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (14)
-**Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (55), [[Multivariable Analysis]] (3)
+**Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (1)
+**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (53), [[· 3 Smooth Structures|3 Smooth Structures]] (40), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (15), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (14)
+**Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (59), [[Multivariable Analysis]] (5)
 
 ## Sections
 - [[§1 Point-Set Topology Review]]
 - [[§2 Topological Manifolds]]
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients]]
-- [[§4 The Regular Value Theorem]]
+- [[§3 Subspaces and Products]]
+- [[§4 Quotient Spaces and Open Maps]]
+- [[§5 Quotient Maps]]
+- [[§6 Open Quotients and Complex Projective Space]]
+- [[§7 The Regular Value Theorem]]
 
 ## Central results
 - [[Topological Invariance of Dimension]] (§2.1)
 - [[Connected Manifolds Are Path Connected]] (§2.9)
-- [[Hausdorff Criterion for Open Quotients]] (§3.26)
-- [[Second Countability of Open Quotients]] (§3.28)
-- [[ℂPⁿ Is Hausdorff and Second Countable]] (§3.29)
-- [[Implicit Function Theorem (vector-valued)]] (§4.1)
-- [[Regular Value Theorem (Euclidean)]] (§4.3)
+- [[Hausdorff Criterion for Open Quotients]] (§6.1)
+- [[Second Countability of Open Quotients]] (§6.3)
+- [[ℂPⁿ Is Hausdorff and Second Countable]] (§6.4)
+- [[Implicit Function Theorem (vector-valued)]] (§7.1)
+- [[Regular Value Theorem (Euclidean)]] (§7.3)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 111 later results
 - [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]: 107 later results
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-9|Proposition §3.9: Coarsest Topology with Continuous Projections]]: 107 later results
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^thm-3-10|Theorem §3.10: Universal Property of the Product]]: 107 later results
+- [[§3 Subspaces and Products#^prop-3-9|Proposition §3.9: Coarsest Topology with Continuous Projections]]: 107 later results
+- [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10: Universal Property of the Product]]: 107 later results

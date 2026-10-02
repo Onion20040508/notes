@@ -140,7 +140,7 @@ The series serves for evaluating $J_\mu$ and for obtaining its properties. From 
 > \left|\frac{(-1)^{m+1}s^{2m+2}}{(m+1)!\,(\mu + m + 1)!}\cdot\frac{m!\,(\mu + m)!}{(-1)^ms^{2m}}\right| = \frac{s^2}{(m + 1)(\mu + m + 1)} \to 0
 > $$
 >
-> as $m \to \infty$, for every $s$. By the ratio test the series converges for all $r$: it is a power series with infinite radius of convergence. Such a series may be differentiated term by term any number of times, so the computation in the proof of Theorem §45.1 is legitimate for $R = J_\mu(\lambda r) = \sum c_kr^{\mu + k}$, and since its coefficients satisfy (3) and (4), all coefficients of $r^2R'' + rR' + (\lambda^2r^2 - \mu^2)R$ vanish: $R$ solves (1). Being a convergent power series times $r^\mu$, $J_\mu(\lambda r)$ is continuous, hence bounded near $0$; at $r = 0$ only the term $m = 0$ of $(\lambda r/2)^{\mu}/\mu!$ survives, which is $1$ for $\mu = 0$ and $0$ for $\mu \ge 1$.
+> as $m \to \infty$, for every $s$. By the ratio test the series converges for all $r$: it is a power series with infinite radius of convergence. Such a series may be differentiated term by term any number of times, so the computation in the proof of Theorem §45.1 is legitimate for $R = J_\mu(\lambda r) = \sum c_kr^{\mu + k}$, and since its coefficients satisfy (3) and (4), all coefficients of $r^2R'' + rR' + (\lambda^2r^2 - \mu^2)R$ vanish: $R$ solves (1). Being a convergent power series times $r^\mu$, $J_\mu(\lambda r)$ is continuous, hence bounded near $0$; at $r = 0$ every term with a positive power of $r$ vanishes, so $J_\mu(0)$ is the $m = 0$ term $(\lambda r/2)^{\mu}/\mu!$ at $r = 0$, which is $1$ for $\mu = 0$ and $0$ for $\mu \ge 1$.
 
 ^pf-45-2
 
@@ -165,7 +165,7 @@ The series serves for evaluating $J_\mu$ and for obtaining its properties. From 
 > 1, \quad -0.44601, \quad 0.07673, \quad -0.00726, \quad 0.00033, \quad -0.00011, \quad -0.0000900, \quad -0.0000906, \quad \ldots
 > $$
 >
-> converging to $J_0(2.405) \approx -0.00009$. So $J_0$ changes sign just below $2.405$ (the zero is $2.40483$). For larger $x$ more terms are needed before the terms start to decrease, which is why tables, or the asymptotic form of Remark: Why J₀ Oscillates, are used there.
+> converging to $J_0(2.405) \approx -0.00009$. So $J_0$ changes sign just below $2.405$ (the zero is $2.40483$). For larger $x$ more terms are needed before the terms start to decrease, which is why tables, or the asymptotic form of [[§45★ Bessel's Equation#^rem-45-4|Remark: Why J₀ Oscillates]], are used there.
 >
 > *Powers: 5.5, Equation (5); Table 1*
 
@@ -241,7 +241,7 @@ There must be a second, independent solution of Bessel's equation.
 > \frac{1}{r\,J_\mu^2(\lambda r)} = K\,r^{-1-2\mu}\big(1 + F(r)\big), \qquad K = (\mu!)^2\Big(\frac{2}{\lambda}\Big)^{2\mu}, \qquad |F(r)| \le C'r^2 .
 > $$
 >
-> Take the antiderivative in (6) as $\int_r^{r_0}$ (another choice adds a multiple of $J_\mu$, which is bounded). If $\mu = 0$, $\int_r^{r_0} Ks^{-1}(1 + F)\,ds = K\ln(r_0/r) + O(1)$, and since $J_0(\lambda r) \to 1$, the solution (6) is $K\ln(1/r) + O(1) \to \infty$. If $\mu \ge 1$, $\int_r^{r_0} Ks^{-1-2\mu}(1 + F)\,ds = \frac{K}{2\mu}r^{-2\mu} + O(r^{2-2\mu}) + O(\ln(1/r)) + O(1)$, whose leading term is $\frac{K}{2\mu}r^{-2\mu}$; multiplied by $J_\mu(\lambda r) \sim (\lambda r/2)^\mu/\mu!$ it gives (6) $\sim \frac{(\mu - 1)!}{2}\big(\frac{2}{\lambda}\big)^\mu r^{-\mu} \to \infty$.
+> Take the antiderivative in (6) as $\int_r^{r_0}$ (another choice adds a multiple of $J_\mu$, which is bounded). If $\mu = 0$, $\int_r^{r_0} Ks^{-1}(1 + F)\,ds = K\ln(r_0/r) + O(1)$, and since $J_0(\lambda r) \to 1$, the solution (6) is $K\ln(1/r) + O(1) \to \infty$. If $\mu \ge 1$ (an integer, as in Definition §45.2; for non-integer $\mu > 0$ the same computation works with $\Gamma(\mu + 1)$ in place of $\mu!$), $\int_r^{r_0} Ks^{-1-2\mu}(1 + F)\,ds = \frac{K}{2\mu}r^{-2\mu} + O(r^{2-2\mu}) + O(\ln(1/r)) + O(1)$, whose leading term is $\frac{K}{2\mu}r^{-2\mu}$; multiplied by $J_\mu(\lambda r) \sim (\lambda r/2)^\mu/\mu!$ it gives (6) $\sim \frac{(\mu - 1)!}{2}\big(\frac{2}{\lambda}\big)^\mu r^{-\mu} \to \infty$.
 >
 > Finally $Y_\mu = AJ_\mu + B\cdot(6)$ for some constants with $B \ne 0$, since $Y_\mu$ is independent of $J_\mu$; as $J_\mu$ is bounded near $0$, $|Y_\mu(\lambda r)| \to \infty$.
 
@@ -277,7 +277,7 @@ There must be a second, independent solution of Bessel's equation.
 
 > [!remark]- Connections
 > - The general solution of a second-order linear equation from two independent solutions, and independence as a nonzero Wronskian: [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|331 Thm. §14.4]], with Abel's theorem [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|331 Thm. §14.8]] giving $W[J_\mu, Y_\mu] = C/r$ without computing either function.
-> - The same pattern in the potential problem of [[§39 Potential in a Disk|§39]]: the radial equation $r^2R'' + rR' - m^2R = 0$ (Bessel's equation with $\lambda = 0$) has solutions $r^m$ and $r^{-m}$ (or $1$ and $\ln r$), and boundedness at the center discards the second, just as it discards $Y_\mu$ here.
+> - The same pattern in the potential problem of [[§39 Potential in a Disk#^thm-39-2|Theorem §39.2]]: the radial equation $r^2R'' + rR' - m^2R = 0$ (Bessel's equation with $\lambda = 0$) has solutions $r^m$ and $r^{-m}$ (or $1$ and $\ln r$), and boundedness at the center discards the second, just as it discards $Y_\mu$ here.
 
 ![[m341-45-2.svg]]
 *The Bessel functions of the second kind $Y_0$ (blue) and $Y_1$ (red), computed with SciPy. Both tend to $-\infty$ at the origin, $Y_0$ like $\frac{2}{\pi}\ln x$ and $Y_1$ like $-\frac{2}{\pi x}$, which is why they are excluded from problems in a full disk. For large $x$ they oscillate within the envelope $\pm\sqrt{2/(\pi x)}$ (dashed), like $J_0$ and $J_1$ shifted by a quarter period.*
@@ -413,9 +413,9 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§46★ Temper
 > \lambda_n = \frac{\alpha_{0n}}{a} = \frac{2.405}{a},\ \frac{5.520}{a},\ \frac{8.654}{a},\ \ldots, \qquad \phi_n(r) = J_0\Big(\frac{\alpha_{0n}r}{a}\Big) .
 > $$
 >
-> **No other cases.** For $\lambda = 0$, $(r\phi')' = 0$ gives $\phi = A + B\ln r$; boundedness forces $B = 0$ and $\phi(a) = 0$ then forces $A = 0$. A negative $\lambda^2 = -\gamma^2$ gives the modified Bessel equation, whose bounded solutions $AI_0(\gamma r)$ never vanish for $r > 0$ (Theorem §45.10), so $\phi(a) = 0$ forces $A = 0$.
+> **No other cases.** For $\lambda = 0$, $(r\phi')' = 0$ gives $\phi = A + B\ln r$; boundedness forces $B = 0$ and $\phi(a) = 0$ then forces $A = 0$. A negative $\lambda^2 = -\gamma^2$ gives the modified Bessel equation, whose bounded solutions $AI_0(\gamma r)$ never vanish for $r > 0$ ([[§45★ Bessel's Equation#^thm-45-10|Theorem §45.10]]), so $\phi(a) = 0$ forces $A = 0$. (Every other solution is unbounded: since $I_0 > 0$ on $(0, \infty)$, reduction of order as in [[§45★ Bessel's Equation#^thm-45-3|Theorem §45.3]] gives the second solution $I_0(\gamma r)\int dr/(r\,I_0^2(\gamma r))$, and the proof of [[§45★ Bessel's Equation#^thm-45-4|Theorem §45.4]] for $\mu = 0$ applies word for word, because $I_0(\gamma r) = 1 + O(r^2)$ just as $J_0(\lambda r)$ is: it behaves like $\ln(1/r)$.)
 >
-> **The eigenfunctions.** $\phi_n$ starts at $\phi_n(0) = 1$ and vanishes at $r = a$; inside, it vanishes where $\alpha_{0n}r/a$ is an earlier zero of $J_0$, so it has $n - 1$ zeros in $0 < r < a$ (the nodal circles of a drum). $\phi_1$ decreases from $1$ to $0$ without changing sign; $\phi_2$ changes sign at $r = (2.405/5.520)a = 0.436a$; $\phi_3$ at $r = 0.278a$ and $0.638a$. Their graphs are the piece of the blue curve in the figure above from $0$ to the $n$th zero, compressed to the interval $[0, a]$.
+> **The eigenfunctions.** $\phi_n$ starts at $\phi_n(0) = 1$ and vanishes at $r = a$; inside, it vanishes where $\alpha_{0n}r/a$ is an earlier zero of $J_0$, so it has $n - 1$ zeros in $0 < r < a$ (the nodal circles of a drum). $\phi_1$ decreases from $1$ to $0$ without changing sign; $\phi_2$ changes sign at $r = (2.405/5.520)a = 0.436a$; $\phi_3$ at $r = 0.278a$ and $0.638a$. Their graphs are the piece of the blue curve in the figure above from $0$ to the $n$th zero, compressed to the interval $[0, a]$. This is the eigenvalue problem of the cylinder, [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]].
 >
 > *Powers: Exercises 5.5.1 and 5.5.2*
 
@@ -488,7 +488,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§46★ Temper
 >
 > with $u$ bounded at the center; here $T$ is the temperature of the surrounding fluid, $T_1$ that of the rim, and $\gamma^2 > 0$ measures the heat loss through the faces (compare the thin plate of [[§42 Three-Dimensional Heat Equation#^ex-42-3|Example §42.3]]).
 >
-> **Reduce to the modified Bessel equation.** Put $w = u - T$. Then $\frac{1}{r}(rw')' - \gamma^2w = 0$, or $(rw')' - \gamma^2rw = 0$: equation (7) with $\mu = 0$ and $\lambda = \gamma$. Its bounded solutions are $w = AI_0(\gamma r)$. (The second, unbounded solution, $K_0$, is excluded just as $Y_0$ is.)
+> **Reduce to the modified Bessel equation.** Put $w = u - T$. Then $\frac{1}{r}(rw')' - \gamma^2w = 0$, or $(rw')' - \gamma^2rw = 0$: equation (7) with $\mu = 0$ and $\lambda = \gamma$. Its bounded solutions are $w = AI_0(\gamma r)$: a second solution behaves like $\ln(1/r)$ at the center, as shown in [[§45★ Bessel's Equation#^ex-45-2|Example §45.2]], and is excluded just as $Y_0$ is (its standard form is called $K_0$).
 >
 > **Boundary condition.** $w(a) = T_1 - T = AI_0(\gamma a)$, and $I_0(\gamma a) \ne 0$ by Theorem §45.10, so
 >

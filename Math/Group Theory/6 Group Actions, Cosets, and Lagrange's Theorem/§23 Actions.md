@@ -30,7 +30,7 @@ tags: [group-theory, math493]
 ^def-23-1
 
 > [!remark]- Connections
-> - Same definition in 591, [[§6 Group Actions and Orbit Spaces#^def-6-1|591 Def. §6.1]]; for a topological group acting on a space one also asks that the action map be continuous, [[§6 Group Actions and Orbit Spaces#^def-6-2|591 Def. §6.2]].
+> - Same definition in 591, [[§10 Group Actions and Orbit Spaces#^def-10-1|591 Def. §10.1]]; for a topological group acting on a space one also asks that the action map be continuous, [[§10 Group Actions and Orbit Spaces#^def-10-2|591 Def. §10.2]].
 
 > [!definition] Definition §23.2: Arrow Notation
 > - $f: X \to Y$ denotes a **function** from the set $X$ to the set $Y$; the arrow $\to$ goes between *sets*.
@@ -167,7 +167,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Actions used to manufacture homomorphisms later: [[§29 G Acting on Coset Spaces#^prop-29-1|The Action of G on G/H]], [[§36 Sources of Normal Subgroups#^thm-36-5|§36.5]], [[§39 Simple Groups#^prop-39-10|The Pair-Partition Homomorphism]].
-> - Topological version: for a continuous action each translation is a homeomorphism with inverse the translation by the inverse, [[§6 Group Actions and Orbit Spaces#^lem-6-2|591 Lemma §6.2]], so the homomorphism lands in the homeomorphisms of X.
+> - Topological version: for a continuous action each translation is a homeomorphism with inverse the translation by the inverse, [[§10 Group Actions and Orbit Spaces#^lem-10-2|591 Lemma §10.2]], so the homomorphism lands in the homeomorphisms of X.
 
 > [!example] Example §23.3: Seeing the Permutations
 > **Rotating a triangle.** Let $G = \mathbb{Z}/3\mathbb{Z}$ act on the vertices $X = \{1, 2, 3\}$ of a triangle by rotation, $[k] \star i = $ the vertex $k$ steps further around (so $[1] \star 1 = 2$, $[1] \star 2 = 3$, $[1] \star 3 = 1$). Freezing $g$ and reading off where each vertex goes gives an element of $S_3$ in cycle notation:

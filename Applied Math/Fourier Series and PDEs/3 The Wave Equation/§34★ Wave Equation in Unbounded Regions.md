@@ -258,7 +258,7 @@ The graph of $\phi$ for negative arguments is that of $h$, reflected and rescale
 *Uses:* [[§31 d'Alembert's Solution#^thm-31-2|§31.2]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC), [[§94 The Chain Rule#^thm-94-2|Calc Thm. §94.2]]
 
 > [!remark] Remark: Finite Speed of Propagation
-> By Theorem §34.4, $u(x, t)$ depends only on the initial data on the interval $[x - ct, x + ct]$: a disturbance at $x_0$ cannot be felt at $x$ before the time $|x - x_0|/c$. This is the opposite of the heat equation on the infinite rod ([[§27★ Infinite Rod|§27★]]), where an initial temperature concentrated near one point makes the temperature positive everywhere at every $t > 0$. The semi-infinite string of Theorem §34.2 is the infinite string with odd data: if $f$ and $g$ are extended as odd functions, $G$ is even, and d'Alembert's formula gives $u(0, t) = 0$ automatically.
+> By Theorem §34.4, $u(x, t)$ depends only on the initial data on the interval $[x - ct, x + ct]$: a disturbance at $x_0$ cannot be felt at $x$ before the time $|x - x_0|/c$. This is the opposite of the heat equation on the infinite rod ([[§27 Infinite Rod|§27★]]), where an initial temperature concentrated near one point makes the temperature positive everywhere at every $t > 0$. The semi-infinite string of Theorem §34.2 is the infinite string with odd data: if $f$ and $g$ are extended as odd functions, $G$ is even, and d'Alembert's formula gives $u(0, t) = 0$ automatically.
 
 ^rem-34-1
 

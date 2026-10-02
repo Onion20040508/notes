@@ -141,7 +141,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: Hermitian operators = observables. Structure: [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]].
-> - The self-adjoint matrices form the real vector space of Hermitian matrices, [[§10 Vector Spaces and Matrix Groups#^def-10-11|591 Def. §10.11]], used to show that U(n) is a manifold.
+> - The self-adjoint matrices form the real vector space of Hermitian matrices, [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-19-2|591 Def. §19.2]], used to show that U(n) is a manifold.
 > - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^def-48-1|235 Def. §48.1]] (symmetric matrices: the real self-adjoint case in the standard basis).
 
 > [!example] Example 7.11: Determining whether T is self-adjoint from its matrix (p. 233)

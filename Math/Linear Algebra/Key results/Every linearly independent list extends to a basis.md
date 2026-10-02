@@ -24,7 +24,7 @@ tags: [linear-algebra, hub]
 - [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-1|Proposition §30.1: GL_3(ℝ) Acting on ℝ³]]
 
 ## Used in (Differentiable Manifolds)
-- [[§10 Vector Spaces and Matrix Groups#^prop-10-3|Proposition §10.3: The Double Dual]]
+- [[§17 Linear Algebra Toolkit#^prop-17-3|Proposition §17.3: The Double Dual]]
 
 ## Connections
 - The key step of [[Fundamental theorem of linear maps]], [[§5 Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]], [[§6 Dimension#^ladr-2-43|Dimension of a sum]], [[§6 Dimension#^ladr-2-38|Linearly independent list of the right length is a basis]].

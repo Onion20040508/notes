@@ -12,7 +12,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 *Powers, Section 0.3.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
-A boundary value problem prescribes conditions at the two ends of an interval instead of initial data at one point. The change is not cosmetic: an initial value problem for a linear equation always has exactly one solution, but even an innocent-looking boundary value problem may have one, none, or infinitely many. The section derives three physical boundary value problems: the shape of a hanging cable (a parabola under a uniform load, a catenary under its own weight), steady heat conduction in a rod, and the buckling of a column. The last is the first eigenvalue problem of the subject: the column buckles exactly at the loads for which a homogeneous problem has a nonzero solution. Separation of variables produces such eigenvalue problems for every heat, wave and potential problem from [[§19 Example꞉ Fixed End Temperatures|§19]] on.
+A boundary value problem prescribes conditions at the two ends of an interval instead of initial data at one point. The change is not cosmetic: an initial value problem for a linear equation always has exactly one solution, but even an innocent-looking boundary value problem may have one, none, or infinitely many. The section derives three physical boundary value problems: the shape of a hanging cable (a parabola under a uniform load, a catenary under its own weight), steady heat conduction in a rod, and the buckling of a column. The last is the first eigenvalue problem of the subject: the column buckles exactly at the loads for which a homogeneous problem has a nonzero solution. Separation of variables produces such eigenvalue problems for every heat, wave and potential problem from [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|Theorem §19.2]] on.
 
 ## Boundary Value Problems
 
@@ -218,7 +218,7 @@ A long rod of uniform material and cross section conducts heat along its axis, a
 *Uses:* [[§3★ Boundary Value Problems#^def-3-2|Def. §3.2]]
 
 > [!remark]- Connections
-> - The three-dimensional version of the heat balance replaces the two faces by the boundary of a region and uses the divergence theorem, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]]; the same balance law in fluid form is the continuity equation, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-4|452 Thm. §17.4]]. The time-dependent derivation is [[§17 Derivation and Boundary Conditions|§17]] (Powers 2.1), and (14) with $g = 0$ is its steady state, [[§18 Steady-State Temperatures|§18]] (Powers 2.2).
+> - The three-dimensional version of the heat balance replaces the two faces by the boundary of a region and uses the divergence theorem, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]]; the same balance law in fluid form is the continuity equation, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-4|452 Thm. §17.4]]. The time-dependent derivation is [[§17 Derivation and Boundary Conditions#^thm-17-2|Theorem §17.2]] (Powers 2.1), and (14) is its steady state, [[§18 Steady-State Temperatures#^def-18-1|Definition §18.1]] (Powers 2.2).
 
 > [!example] Example §3.3: A Rod Losing Heat to Its Surroundings
 > Solve
@@ -263,7 +263,7 @@ The next problem is different in spirit: instead of solving a boundary value pro
 
 ^def-3-3
 
-The nonzero solutions belonging to an eigenvalue are its eigenfunctions; Powers introduces the name with the general theory, [[§23 Sturm–Liouville Problems|§23]] (Powers 2.7).
+The nonzero solutions belonging to an eigenvalue are its eigenfunctions; Powers introduces the name in 2.4, [[§20 Example꞉ Insulated Bar#^def-20-1|Definition §20.1]], and the general theory in 2.7, [[§23 Sturm–Liouville Problems#^def-23-1|Definition §23.1]].
 
 > [!remark]- Connections
 > - The finite-dimensional model: $\lambda$ is an eigenvalue of an operator $T$ if $Tv = \lambda v$ for some $v \ne 0$, [[§14 Invariant Subspaces#^ladr-5-5|LADR 5.5]], [[§32 Eigenvectors and Eigenvalues#^def-32-1|235 Def. §32.1]]. Here the operator is $u \mapsto -u''$ on functions satisfying the homogeneous boundary conditions, and "nonzero solution of the homogeneous problem" is "nonzero vector in the null space of $T - \lambda I$".
@@ -342,7 +342,7 @@ The nonzero solutions belonging to an eigenvalue are its eigenfunctions; Powers 
 >
 > **$\lambda = 0$** must be checked separately, since then the general solution is $u = c_1 + c_2x$ ([[§1★ Homogeneous Linear Equations#^ex-1-1|Example §1.1]]). In (a), $c_1 = 0$ and $u'(a) = c_2 = 0$; in (b), $c_2 = 0$ and $u(a) = c_1 = 0$: only the zero solution. In (c), $c_2 = 0$ and $c_1$ is free: **$\lambda = 0$ is an eigenvalue of (c)**, with the constant solution $u = 1$.
 >
-> So (a) and (b) have the eigenvalues $\lambda = (2n - 1)\pi/2a$, $n = 1, 2, \ldots$, and (c) has $\lambda = n\pi/a$, $n = 0, 1, 2, \ldots$. (A negative $\lambda^2 = -\nu^2$ gives no eigenvalues: with $u = c_1\cosh\nu x + c_2\sinh\nu x$ the same steps force $c_1 = c_2 = 0$, because $\cosh$ never vanishes and $\sinh\nu a \ne 0$.) These are the eigenvalue problems of the heat equation with one end or both ends insulated, [[§20 Example꞉ Insulated Bar|§20]] and [[§21 Example꞉ Different Boundary Conditions|§21]] (Powers 2.4, 2.5).
+> So (a) and (b) have the eigenvalues $\lambda = (2n - 1)\pi/2a$, $n = 1, 2, \ldots$, and (c) has $\lambda = n\pi/a$, $n = 0, 1, 2, \ldots$. (A negative $\lambda^2 = -\nu^2$ gives no eigenvalues: with $u = c_1\cosh\nu x + c_2\sinh\nu x$ the same steps force $c_1 = c_2 = 0$, because $\cosh$ never vanishes and $\sinh\nu a \ne 0$.) These are the eigenvalue problems of the heat equation with one end or both ends insulated, [[§20 Example꞉ Insulated Bar#^thm-20-1|Theorem §20.1]] (both ends insulated, (c)) and [[§21 Example꞉ Different Boundary Conditions#^thm-21-1|Theorem §21.1]] (one end fixed, one insulated, (a)) (Powers 2.4, 2.5).
 >
 > *Powers: Exercise 0.3.3*
 

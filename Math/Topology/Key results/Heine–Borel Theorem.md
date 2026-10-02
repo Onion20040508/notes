@@ -23,13 +23,13 @@ tags: [topology, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-29|Proposition §3.29: ℂPⁿ is Hausdorff and Second Countable]]
-- [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-30|Proposition §3.30: ℂPⁿ Is Compact]]
-- [[§7 Homogeneous Spaces#^cor-7-13|Corollary §7.13: Grassmannians as Homogeneous Spaces]]
-- [[§8 Differentiable Structures#^prop-8-3|Proposition §8.3: The Circle Needs More Than One Chart]]
-- [[§8 Differentiable Structures#^prop-8-9|Proposition §8.9: ℂP¹ Is the Riemann Sphere]]
-- [[§10 Vector Spaces and Matrix Groups#^cor-10-13|Corollary §10.13: Consequences]]
-- [[§10 Vector Spaces and Matrix Groups#^cor-10-16|Corollary §10.16: U(n) Is Compact]]
+- [[§6 Open Quotients and Complex Projective Space#^prop-6-4|Proposition §6.4: ℂPⁿ is Hausdorff and Second Countable]]
+- [[§6 Open Quotients and Complex Projective Space#^prop-6-5|Proposition §6.5: ℂPⁿ Is Compact]]
+- [[§12 The Topology of G∕H and Real Grassmannians#^cor-12-8|Corollary §12.8: Grassmannians as Homogeneous Spaces]]
+- [[§13 Differentiable Structures#^prop-13-3|Proposition §13.3: The Circle Needs More Than One Chart]]
+- [[§14 Projective Spaces as Smooth Manifolds#^prop-14-4|Proposition §14.4: ℂP¹ Is the Riemann Sphere]]
+- [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-19-2|Corollary §19.2: Consequences]]
+- [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-19-5|Corollary §19.5: U(n) Is Compact]]
 
 ## Used in (Multivariable Analysis)
 - [[§15 Multivariable Integration#^prop-15-16|Proposition §15.16: C¹ Diffeomorphisms Preserve Jordan Measurability]]

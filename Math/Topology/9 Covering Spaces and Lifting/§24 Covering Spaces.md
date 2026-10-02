@@ -25,7 +25,7 @@ tags: [topology, math590]
 ^def-24-2
 
 > [!remark]- Connections
-> - In 591 the smooth analogue with a discrete fibre is a fibration, [[§16 Fibrations#^def-16-1|591 Def. §16.1]], and smooth covering maps such as ℝ → S¹ are local diffeomorphisms, [[§14 Local Diffeomorphisms and Submersions#^rem-14-2|591 §14, Remark: Covering Maps]].
+> - In 591 the smooth analogue with a discrete fibre is a fibration, [[§30 Fibrations#^def-30-1|591 Def. §30.1]], and smooth covering maps such as ℝ → S¹ are local diffeomorphisms, [[§28 Local Diffeomorphisms and Submersions#^rem-28-2|591 §14, Remark: Covering Maps]].
 
 > [!definition] Definition §24.3: Covering Space
 > If $p: E \to B$ is a covering map, the space $E$ is called a **covering space** of $B$. The space $B$ is called the **base space**. The triple $(E, p, B)$ is called a **covering**.
@@ -150,7 +150,7 @@ tags: [topology, math590]
 ^rem-24-3
 
 > [!remark]- Connections
-> - As a smooth map, $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism, and its restriction to $(0, 4\pi)$ is a local diffeomorphism that is not a covering map: [[§14 Local Diffeomorphisms and Submersions#^ex-14-1|591 Ex. §14.1]].
+> - As a smooth map, $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism, and its restriction to $(0, 4\pi)$ is a local diffeomorphism that is not a covering map: [[§28 Local Diffeomorphisms and Submersions#^ex-28-1|591 Ex. §28.1]].
 
 ## Non-Example: Local Homeomorphism $\neq$ Covering Map
 

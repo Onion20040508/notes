@@ -24,7 +24,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Closed sets of a subspace: [[§6 Closed Sets and Limit Points#^thm-6-2|Closed Sets in Subspaces]]; closures: [[§7 Interior and Closure#^thm-7-2|Closure in Subspace]].
 > - Metric version: [[§11 Metric Topology#^thm-11-6|Subspace of Metric Space]].
-> - Characterized by a universal property in 591: a map into a subspace is continuous exactly when it is continuous into the ambient space, [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^prop-3-3|591 Prop. §3.3]], [[§3 New Spaces from Old꞉ Subspaces, Products, and Quotients#^cor-3-4|591 Cor. §3.4]].
+> - Characterized by a universal property in 591: a map into a subspace is continuous exactly when it is continuous into the ambient space, [[§3 Subspaces and Products#^prop-3-3|591 Prop. §3.3]], [[§3 Subspaces and Products#^cor-3-4|591 Cor. §3.4]].
 
 > [!remark] Remark: Why the Subspace Topology?
 > The subspace topology is the *unique* topology on $Y$ that makes the [[§9 Continuous Functions#^thm-9-4|inclusion map]] $\iota: Y \hookrightarrow X$ continuous and satisfies a universal property: a function $f: Z \to Y$ is continuous if and only if $\iota \circ f: Z \to X$ is continuous. In other words, this is the coarsest topology on $Y$ such that “being a subset” respects the topological structure. The key subtlety is that open in $Y$ need not be open in $X$—$[0, \tfrac{1}{2})$ is open in $[0,1)$ but not in $\mathbb{R}$. Getting comfortable with this distinction is essential for working with compactness and connectedness in subspaces.

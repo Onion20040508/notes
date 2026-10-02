@@ -157,7 +157,7 @@ $$
 > - The 1D version in MATH 451: [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10), where the condition is $f'(x_0) \neq 0$.
 > - The linear-algebra fact behind the hypothesis: [[Invertible ⟺ nonzero determinant|LADR 9.50]], and [[§10 Invertibility and Isomorphisms#^ladr-3-86|matrix of inverse equals inverse of matrix]] (LADR 3.86) behind the formula for the inverse's Jacobian.
 > - The Jacobian determinant returns as the area factor in the [[§15 Multivariable Integration#^thm-15-14|change of variables formula]] (§15.14, §15.20).
-> - The n-variable theorem, of which this is the case n = 2, is quoted in 591 as [[§14 Local Diffeomorphisms and Submersions#^thm-14-1|591 Thm. §14.1]]; on manifolds it becomes the criterion that a map is a local diffeomorphism exactly where its differential is bijective, [[§14 Local Diffeomorphisms and Submersions#^thm-14-2|591 Thm. §14.2]].
+> - The n-variable theorem, of which this is the case n = 2, is quoted in 591 as [[§28 Local Diffeomorphisms and Submersions#^thm-28-1|591 Thm. §28.1]]; on manifolds it becomes the criterion that a map is a local diffeomorphism exactly where its differential is bijective, [[§28 Local Diffeomorphisms and Submersions#^thm-28-2|591 Thm. §28.2]].
 
 > [!proof]+ Proof via the Implicit Function Theorem
 > The strategy is to apply the [[§12 The Implicit Function Theorem#^thm-12-2|Implicit Function Theorem]] **twice** to “peel off” the variables one at a time: first solve for $x$, then solve for $y$.

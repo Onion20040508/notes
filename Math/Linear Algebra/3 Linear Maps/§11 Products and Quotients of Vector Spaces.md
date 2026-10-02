@@ -24,7 +24,7 @@ tags: [linear-algebra]
 > - A vector space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-89|Product of vector spaces is a vector space]]. Dimension: [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|Dimension of a product is the sum of dimensions]]. Relation to sums inside one space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|Products and direct sums]].
 > - Group version: the direct product, [[§3 Basic Examples of Groups#^def-3-2|493 Def. §3.2]], with its universal property in [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|493 Prop. §18.3]].
 > - 556 calls this product the (external) direct sum: [[§1 Linear Spaces#^def-1-4|556 Def. §1.4]]; norms on it in [[§10 New Normed Spaces from Old#^prop-10-7|556 Prop. §10.7]].
-> - 591 also calls this product the direct sum: [[§10 Vector Spaces and Matrix Groups#^def-10-5|591 Def. §10.5]]; the tangent space of a product manifold is such a direct sum, [[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^thm-12-32|591 Thm. §12.32]].
+> - 591 also calls this product the direct sum: [[§17 Linear Algebra Toolkit#^def-17-5|591 Def. §17.5]]; the tangent space of a product manifold is such a direct sum, [[§26 Tangent Vectors as Velocities of Curves#^thm-26-4|591 Thm. §26.4]].
 
 > [!theorem] Theorem 3.89: Product of vector spaces is a vector space
 > If $V_1,\dots,V_m$ are vector spaces over $\F$, then $V_1\times\dots\times V_m$ is a vector space over $\F$.
@@ -152,7 +152,7 @@ tags: [linear-algebra]
 > - Same construction as quotient groups and rings in abstract algebra ([[§37 Quotient Groups#^def-37-1|493 Def. §37.1]]): $U$ plays the role of the normal subgroup/ideal.
 > - Group version: the quotient group G/N, [[§37 Quotient Groups#^def-37-1|493 Def. §37.1]] (hub [[Quotient Groups]]), with U in the role of the normal subgroup N.
 > - Same construction in 556: [[§1 Linear Spaces#^def-1-7|556 Def. §1.7]] and [[§1 Linear Spaces#^prop-1-6|556 Prop. §1.6]]; a norm passes to the quotient only when the subspace is closed, [[§10 New Normed Spaces from Old#^thm-10-8|556 Thm. §10.8]].
-> - Same construction in 591, with its universal property: [[§10 Vector Spaces and Matrix Groups#^def-10-4|591 Def. §10.4]], [[§10 Vector Spaces and Matrix Groups#^prop-10-6|591 Prop. §10.6]]; it builds the cotangent space from germs in [[§13 Tangent Spaces III꞉ The Cotangent Space#^def-13-2|591 Def. §13.2]].
+> - Same construction in 591, with its universal property: [[§17 Linear Algebra Toolkit#^def-17-4|591 Def. §17.4]], [[§17 Linear Algebra Toolkit#^prop-17-6|591 Prop. §17.6]]; it builds the cotangent space from germs in [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-2|591 Def. §27.2]].
 
 > [!example] Example 3.100: Quotient spaces (p. 100)
 > - $U=\{(x,2x)\}$: $\R^2/U$ is the set of all lines of slope $2$. Each line is **one point** of the quotient.

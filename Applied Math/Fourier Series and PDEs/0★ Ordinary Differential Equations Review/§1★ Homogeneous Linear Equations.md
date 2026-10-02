@@ -315,7 +315,7 @@ One of the few equations with variable coefficients that can be solved in comple
 For $t < 0$ the same formulas hold with $t$ replaced by $|t|$: the substitution $t = -s$ leaves (17) unchanged in form. In this subject the variable is a radius $r > 0$, so this never matters.
 
 > [!example] Example §1.3: Cauchy–Euler Equations in Polar Coordinates
-> Separating variables in polar coordinates ([[§39 Potential in a Disk|§39]], Powers 4.5) produces Cauchy–Euler equations in the radius $r$. Solve, for $r > 0$ and a constant $\lambda > 0$:
+> Separating variables in polar coordinates ([[§39 Potential in a Disk#^thm-39-2|Theorem §39.2]], Powers 4.5) produces Cauchy–Euler equations in the radius $r$. Solve, for $r > 0$ and a constant $\lambda > 0$:
 >
 > **(a) $r^2u'' + ru' - \lambda^2u = 0$ (19).** Here $k = 1$, $p = -\lambda^2$, and the characteristic equation is $m(m - 1) + m - \lambda^2 = m^2 - \lambda^2 = 0$, with roots $m = \pm\lambda$. The first row of Theorem §1.5 gives
 >
@@ -362,7 +362,7 @@ For $t < 0$ the same formulas hold with $t$ replaced by $|t|$: the substitution 
 
 ^def-1-6
 
-The Cauchy–Euler equation is the model: in standard form, $u'' + \frac ktu' + \frac p{t^2}u = 0$, so $tk(t) = k$ and $t^2p(t) = p$ are constants, and $t_0 = 0$ is a regular singular point. Its solutions $t^m$, $(\ln t)t^m$ show the typical behavior near such a point, which provides a model for more general equations (Bessel's equation, [[§45★ Bessel's Equation|§45★]]; Legendre's equation, [[§49★ Spherical Coordinates; Legendre Polynomials|§49★]]). Singular points at the ends of an interval are the subject of [[§4★ Singular Boundary Value Problems|§4★]].
+The Cauchy–Euler equation is the model: in standard form, $u'' + \frac ktu' + \frac p{t^2}u = 0$, so $tk(t) = k$ and $t^2p(t) = p$ are constants, and $t_0 = 0$ is a regular singular point. Its solutions $t^m$, $(\ln t)t^m$ show the typical behavior near such a point, which provides a model for more general equations (Bessel's equation, [[§45★ Bessel's Equation#^def-45-1|Definition §45.1]]; Legendre's equation, [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-2|Definition §49.2]]). Singular points at the ends of an interval are the subject of [[§4★ Singular Boundary Value Problems|§4★]].
 
 > [!remark]- Remark: Solving by a Change of Variables
 > Other second-order equations may be solved by power series, by a change of variables to a kind already solved, or by sheer luck. Powers' example is the equation
@@ -446,7 +446,7 @@ It is not generally possible to solve a second-order linear homogeneous equation
 >
 > which is defined and solves the equation on the whole interval (direct substitution checks it). Its Wronskian with $u_1$ is $W(t, u_2) = tu_2' - u_2 = \frac{1}{1 - t^2} \ne 0$, so $u_1$, $u_2$ are independent.
 >
-> The equation is Legendre's equation $(1 - t^2)u'' - 2tu' + n(n + 1)u = 0$ with $n = 1$ ([[§49★ Spherical Coordinates; Legendre Polynomials|§49★]], Powers 5.9). The polynomial solution $u_1 = t$ is bounded on $[-1, 1]$, while $u_2$ is unbounded as $t \to \pm1$, the regular singular points of the equation.
+> The equation is Legendre's equation $(1 - t^2)u'' - 2tu' + n(n + 1)u = 0$ with $n = 1$ ([[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-2|Definition §49.2]] with $\mu^2 = 2$, Powers 5.9). The polynomial solution $u_1 = t$ is bounded on $[-1, 1]$, while $u_2$ is unbounded as $t \to \pm1$, the regular singular points of the equation.
 >
 > *Powers: 0.1, Example (reduction of order)*
 

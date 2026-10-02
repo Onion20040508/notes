@@ -269,7 +269,7 @@ found by matching numerators: $c = A_1 + A_2$, $d = -A_1r_2 - A_2r_1$. Then $\ma
 
 > [!remark]- Connections
 > - In Boyce–DiPrima's language, $1/p(s)$ is the transfer function of the system and its inverse transform is the impulse response; the response to any input $f$ is the impulse response convolved with $f$: [[§26★ The Convolution Integral#^thm-26-3|331 Thm. §26.3]]. Example §52.5 is this structure.
-> - The Fourier transform turns the convolution $\int_{-\infty}^{\infty} g(x - x')f(x')\,dx'$ on the whole line into a product in the same way. [[§27★ Infinite Rod|§27★]] (Powers 2.11) obtains the temperature in an infinite rod as such a convolution of the initial temperature with the heat kernel $e^{-x^2/4kt}/\sqrt{4\pi kt}$.
+> - The Fourier transform turns the convolution $\int_{-\infty}^{\infty} g(x - x')f(x')\,dx'$ on the whole line into a product in the same way. [[§27 Infinite Rod#^thm-27-3|Theorem §27.3]] (Powers 2.11) obtains the temperature in an infinite rod as such a convolution of the initial temperature with the heat kernel $e^{-x^2/4kt}/\sqrt{4\pi kt}$.
 
 > [!theorem] Proposition §52.4: Rules of Convolution
 > $$

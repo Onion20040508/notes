@@ -19,7 +19,7 @@ tags: [topology, hub]
 - [[§11 Metric Topology#^thm-11-9|Theorem §11.9: Continuity and Sequences]]
 
 ## Used in (Differentiable Manifolds)
-- [[§5 Topological Groups and Classical Matrix Groups#^def-5-5|Definition §5.5: Special Linear Group]]
+- [[§8 Topological Groups and Classical Matrix Groups#^def-8-5|Definition §8.5: Special Linear Group]]
 
 ## Connections
 - **Generalizes ε-δ.** Condition (4) is the topological form of the ε-δ definition ([[§9 Continuous Functions#^ex-9-1|Example §9.1]]; MATH 451: [[§17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]]). It is recovered for metric spaces in [[§11 Metric Topology#^thm-11-7|ε-δ Characterization of Continuity]] (§11.7).

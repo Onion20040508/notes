@@ -120,7 +120,7 @@ The region in which the solution is to be found also limits the applicability of
 > |---|---|
 > | $0 < x < a$, $\ 0 < t$ | finite rod or string ([[§19 Example꞉ Fixed End Temperatures\|§19]], [[§30 Solution of the Vibrating String Problem\|§30]]) |
 > | $0 < x$, $\ 0 < t$ | semi-infinite rod ([[§26 Semi-Infinite Rod\|§26]]) |
-> | $-\infty < x < \infty$, $\ 0 < t$ | infinite rod or string ([[§27★ Infinite Rod\|§27★]], [[§31 d'Alembert's Solution\|§31]]) |
+> | $-\infty < x < \infty$, $\ 0 < t$ | infinite rod or string ([[§27 Infinite Rod\|§27★]], [[§31 d'Alembert's Solution\|§31]]) |
 > | $0 < x < a$, $\ 0 < y < b$ | rectangle ([[§36 Potential in a Rectangle\|§36]]) |
 > | $0 < r < c$, $\ -\pi < \theta \le \pi$ | disk ([[§39 Potential in a Disk\|§39]]) |
 >

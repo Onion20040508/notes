@@ -5,12 +5,11 @@ chapter: 2
 section: 27
 powers: "2.11"
 aliases: ["Powers 2.11"]
-tags: [fourier-series-and-pdes, math341, extension]
+tags: [fourier-series-and-pdes, math341]
 ---
 ← [[§26 Semi-Infinite Rod]] · ↑ [[· 2 The Heat Equation]] · [[§28★ The Error Function]] →
 
 *Powers, Section 2.11 · MAT 341 lectures 10.22, 10.24 · HW 9 · Midterm 2, Practice Midterm 2.*
-★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
 To study heat conduction in the middle of a very long rod, one may assume that it extends from $-\infty$ to $\infty$. Then there are no boundary conditions at all, only boundedness, and separation of variables gives both $\cos(\lambda x)$ and $\sin(\lambda x)$ for every $\lambda \ge 0$: the solution is a full Fourier integral ([[§14 Fourier Integral|§14]]) with time-dependent factors. Reversing the order of integration turns it into a single integral of the initial temperature against a Gaussian, the heat kernel; this form shows that heat spreads with infinite speed, that every positive initial temperature makes the rod positive everywhere at once, and it explains the error function of [[§28★ The Error Function|§28★]]. The course did solve the infinite rod in the Fourier-integral form (4)–(5) (lectures 10.22 and 10.24, HW 9, Midterm 2); the heat-kernel form (7) and what follows from it go beyond it.
 
@@ -74,11 +73,11 @@ With $u = \phi(x)T(t)$ the heat equation separates as before, $\phi''/\phi = T'/
 >
 > This is a Fourier integral problem, so $A$ and $B$ must be the Fourier integral coefficient functions (5), and by the Fourier Integral Representation Theorem, [[§14 Fourier Integral|§14]], the left side equals $\frac12(f(x+) + f(x-))$.
 >
-> (Powers asserts that (4) then satisfies (1); here is why.) $|A(\lambda)|$, $|B(\lambda)| \le \frac1\pi\int|f| =: M$. For $t \ge t_1 > 0$, the integrand of (4) is bounded by $2Me^{-\lambda^2kt_1}$, and its derivatives $\partial^2/\partial x^2$ and $\frac1k\partial/\partial t$ by $2M\lambda^2e^{-\lambda^2kt_1}$, integrable over $0 < \lambda < \infty$. As in the proof of [[§26 Semi-Infinite Rod#^thm-26-2|Theorem §26.2]], differentiation under the integral sign is legitimate, and each $\big(A\cos(\lambda x) + B\sin(\lambda x)\big)e^{-\lambda^2kt}$ satisfies (1) by Proposition §27.1. The same bound gives $|u(x, t)| \le 2M\sqrt{\pi/(4kt)}$ for each $t > 0$. Powers adds that "it can be proved" that $u$ stays bounded if $f$ is; that follows from the kernel form, [[§27★ Infinite Rod#^thm-27-3|Theorem §27.3]]: $|u| \le \sup|f|\cdot\frac{1}{\sqrt{4\pi kt}}\int e^{-(x' - x)^2/4kt}dx' = \sup|f|$.
+> (Powers asserts that (4) then satisfies (1); here is why.) $|A(\lambda)|$, $|B(\lambda)| \le \frac1\pi\int|f| =: M$. For $t \ge t_1 > 0$, the integrand of (4) is bounded by $2Me^{-\lambda^2kt_1}$, and its derivatives $\partial^2/\partial x^2$ and $\frac1k\partial/\partial t$ by $2M\lambda^2e^{-\lambda^2kt_1}$, integrable over $0 < \lambda < \infty$. As in the proof of [[§26 Semi-Infinite Rod#^thm-26-2|Theorem §26.2]], differentiation under the integral sign is legitimate, and each $\big(A\cos(\lambda x) + B\sin(\lambda x)\big)e^{-\lambda^2kt}$ satisfies (1) by Proposition §27.1. The same bound gives $|u(x, t)| \le 2M\sqrt{\pi/(4kt)}$ for each $t > 0$. Powers adds that "it can be proved" that $u$ stays bounded if $f$ is; that follows from the kernel form, [[§27 Infinite Rod#^thm-27-3|Theorem §27.3]]: $|u| \le \sup|f|\cdot\frac{1}{\sqrt{4\pi kt}}\int e^{-(x' - x)^2/4kt}dx' = \sup|f|$.
 
 ^pf-27-2
 
-*Uses:* [[§27★ Infinite Rod#^prop-27-1|§27.1]], [[§14 Fourier Integral|§14]] (Fourier Integral Representation Theorem), [[§26 Semi-Infinite Rod#^thm-26-2|§26.2]], [[§27★ Infinite Rod#^thm-27-3|§27.3]]
+*Uses:* [[§27 Infinite Rod#^prop-27-1|§27.1]], [[§14 Fourier Integral|§14]] (Fourier Integral Representation Theorem), [[§26 Semi-Infinite Rod#^thm-26-2|§26.2]], [[§27 Infinite Rod#^thm-27-3|§27.3]]
 
 > [!example] Example §27.1: A Hot Center Section
 > Solve (1)–(3) with
@@ -164,7 +163,7 @@ Starting from the general form of the solution (4), Powers derives a second form
 
 ^pf-27-3
 
-*Uses:* [[§27★ Infinite Rod#^thm-27-2|§27.2]], [[§28★ The Error Function#^prop-28-1|§28.1]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]
+*Uses:* [[§27 Infinite Rod#^thm-27-2|§27.2]], [[§28★ The Error Function#^prop-28-1|§28.1]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]
 
 > [!remark]- Connections
 > - The reversal of the order of integration is Fubini's theorem, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]], whose integrability hypothesis is checked with Tonelli's theorem, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]].
@@ -216,7 +215,7 @@ The semi-infinite rod of [[§26 Semi-Infinite Rod|§26]] can be treated the same
 
 ^pf-27-4
 
-*Uses:* [[§27★ Infinite Rod#^thm-27-2|§27.2]], [[§27★ Infinite Rod#^thm-27-3|§27.3]], [[§26 Semi-Infinite Rod#^thm-26-2|§26.2]]
+*Uses:* [[§27 Infinite Rod#^thm-27-2|§27.2]], [[§27 Infinite Rod#^thm-27-3|§27.3]], [[§26 Semi-Infinite Rod#^thm-26-2|§26.2]]
 
 ## Examples
 

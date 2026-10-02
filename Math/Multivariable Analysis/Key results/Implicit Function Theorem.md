@@ -24,6 +24,9 @@ tags: [multivariable-analysis, hub]
 - [[§12 The Implicit Function Theorem#^ex-12-2|Example §12.2: Where IFT Fails]]
 - [[§14 Optimization and Lagrange Multipliers#^thm-14-2|Theorem §14.2: Method of Lagrange Multipliers]]
 
+## Used in (Differentiable Manifolds)
+- [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1: Implicit Function Theorem — Lee Theorem C.40]]
+
 ## Connections
 - **Proof idea.** F_y > 0 near the point makes F strictly increasing in y ([[§29 The Mean Value Theorem#^cor-29-7|451 §29.7]]). A sign change plus the [[Intermediate Value Theorem]] on each vertical slice gives a root, monotonicity makes it unique, and the [[Mean Value Theorem]] gives f′ = −F_x/F_y.
 - **One-variable relative.** This parallels the 451 [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (§29.10), where f′ ≠ 0 gives a local inverse. The derivative formula is what implicit differentiation with the [[Multivariable Chain Rule]] predicts ([[§12 The Implicit Function Theorem#^rem-12-2|The Derivative Formula]]).

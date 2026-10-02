@@ -219,7 +219,7 @@ $$
 The potential equation can also be solved in a strip ($0 < x < a$, $-\infty < y < \infty$), a quarter-plane ($0 < x$, $0 < y$) or a half-plane ($0 < x$, $-\infty < y < \infty$). Along each boundary line a boundary condition is imposed, and the solution is required to remain bounded in remote portions of the region. In general a Fourier integral is employed, because the separation constant is a continuous parameter, as for $u_2$ above.
 
 > [!remark] Remark: The Half-Plane and Its Poisson Formula
-> For the upper half-plane $y > 0$ with $u(x, 0) = f(x)$ and $u$ bounded, the product solutions are $e^{-\lambda y}\cos(\lambda x)$ and $e^{-\lambda y}\sin(\lambda x)$, $\lambda \ge 0$, and the Fourier integral solution can be summed under the integral sign (as for the infinite rod, [[§27★ Infinite Rod|§27★]]). Powers' Exercises 4.4.15–16 lead to
+> For the upper half-plane $y > 0$ with $u(x, 0) = f(x)$ and $u$ bounded, the product solutions are $e^{-\lambda y}\cos(\lambda x)$ and $e^{-\lambda y}\sin(\lambda x)$, $\lambda \ge 0$, and the Fourier integral solution can be summed under the integral sign (as for the infinite rod, [[§27 Infinite Rod|§27★]]). Powers' Exercises 4.4.15–16 lead to
 >
 > $$
 > u(x, y) = \frac1\pi\int_{-\infty}^{\infty}f(x')\,\frac{y}{y^2 + (x - x')^2}\,dx' ,

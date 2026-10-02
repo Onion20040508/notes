@@ -136,7 +136,7 @@ Its transform has the denominator $s\big(\cosh(\sqrt s) + \sqrt s\,\gamma\sinh(\
 ^ex-54-1
 
 > [!remark] Remark: Eigenfunctions That Are Not Orthogonal
-> Powers notes that separation of variables would find difficulties here, because the eigenfunctions are not orthogonal. With $u = X(x)T(t)$, $T' = -\lambda T$, the boundary condition at $x = 0$ becomes $X'(0) = -\lambda\gamma X(0)$. The eigenvalue appears in the boundary condition, so this is not a regular Sturm–Liouville problem ([[§23 Sturm–Liouville Problems|§23]]). The eigenfunctions $X_k = \cos(\eta_kx) - \eta_k\gamma\sin(\eta_kx)$, $\lambda_k = \eta_k^2$, are not orthogonal on $0 < x < 1$, and the usual coefficient formula fails. The transform gives the coefficients directly.
+> Powers notes that separation of variables would find difficulties here, because the eigenfunctions are not orthogonal. With $u = X(x)T(t)$, $T' = -\lambda T$, the boundary condition at $x = 0$ becomes $X'(0) = -\lambda\gamma X(0)$. The eigenvalue appears in the boundary condition, so this is not a regular Sturm–Liouville problem ([[§23 Sturm–Liouville Problems#^def-23-1|Def. §23.1]]). The eigenfunctions $X_k = \cos(\eta_kx) - \eta_k\gamma\sin(\eta_kx)$, $\lambda_k = \eta_k^2$, are not orthogonal on $0 < x < 1$, and the usual coefficient formula fails. The transform gives the coefficients directly.
 >
 > Orthogonality is in fact only hidden. Integrating $X_j''X_k - X_jX_k''$ over $(0, 1)$ and using $X(1) = 0$ and the condition at $0$ gives
 >
@@ -146,7 +146,7 @@ Its transform has the denominator $s\big(\cosh(\sqrt s) + \sqrt s\,\gamma\sinh(\
 >
 > So the $X_k$ are orthogonal for the inner product $\int_0^1 fg\,dx + \gamma f(0)g(0)$. The extra term is the fluid: a heat capacity $\gamma$ concentrated at the point $x = 0$.
 >
-> **Limiting cases.** As $\gamma \to 0$ the container disappears, the condition becomes $u_x(0, t) = 0$ (insulated end), and $\eta_k \to (2k - 1)\pi/2$, the eigenvalues of [[§21 Example꞉ Different Boundary Conditions|§21]]. As $\gamma \to \infty$ the fluid cannot change temperature quickly. Then $\eta_k \to (k - 1)\pi$ for $k \ge 2$, as for a rod with both ends fixed, while $\eta_1 \approx 1/\sqrt\gamma \to 0$: a very slow mode in which rod and fluid together creep up to $u = 1$.
+> **Limiting cases.** As $\gamma \to 0$ the container disappears, the condition becomes $u_x(0, t) = 0$ (insulated end), and $\eta_k \to (2k - 1)\pi/2$, the eigenvalues of [[§21 Example꞉ Different Boundary Conditions#^thm-21-1|Theorem §21.1]]. As $\gamma \to \infty$ the fluid cannot change temperature quickly. Then $\eta_k \to (k - 1)\pi$ for $k \ge 2$, as for a rod with both ends fixed, while $\eta_1 \approx 1/\sqrt\gamma \to 0$: a very slow mode in which rod and fluid together creep up to $u = 1$.
 
 ^rem-54-1
 
@@ -221,7 +221,7 @@ Sometimes only part of the solution is of interest. For heat conduction in a sem
 *The persistent part $u = 1 + \alpha e^{-\sqrt{\omega/2}\,x}\sin(\omega t - \sqrt{\omega/2}\,x)$ of Example §54.2, for $\alpha = \frac12$ and $\omega = 2\pi$, at four instants of one period. Each profile is a wave squeezed into the envelope $1 \pm \alpha e^{-\sqrt{\omega/2}\,x}$ (dashed): the surface oscillation dies out within a few depth units $\sqrt{2/\omega} \approx 0.56$, and deeper points reach their maxima later.*
 
 > [!remark]- Remark: The Branch Point at the Origin
-> Unlike the transforms of [[§53★ Partial Differential Equations|§53★]], $U = F(s)e^{-\sqrt s\,x}$ is not an even function of $\sqrt s$, and $s = 0$ is a branch point, not a pole. $A_0 = \lim_{s\to0}sU = 1$ still gives the correct long-time value, but the rest of the solution need not decay exponentially. For $f(t) = 1$, the solution is $u = \operatorname{erfc}\big(x/(2\sqrt t)\big)$ ([[§28★ The Error Function|§28★]]). It approaches the persistent value $1$ only like $1 - x/\sqrt{\pi t}$. The persistent part computed above is correct, but "transient" here can mean a slow algebraic decay. The points $\pm i\omega$ are ordinary simple poles, where the residue computation is valid.
+> Unlike the transforms of [[§53★ Partial Differential Equations|§53★]], $U = F(s)e^{-\sqrt s\,x}$ is not an even function of $\sqrt s$, and $s = 0$ is a branch point, not a pole. $A_0 = \lim_{s\to0}sU = 1$ still gives the correct long-time value, but the rest of the solution need not decay exponentially. For $f(t) = 1$, the solution is $u = \operatorname{erfc}\big(x/(2\sqrt t)\big)$ ([[§28★ The Error Function#^cor-28-3|Corollary §28.3]](b)). It approaches the persistent value $1$ only like $1 - x/\sqrt{\pi t}$. The persistent part computed above is correct, but "transient" here can mean a slow algebraic decay. The points $\pm i\omega$ are ordinary simple poles, where the residue computation is valid.
 
 ^rem-54-2
 

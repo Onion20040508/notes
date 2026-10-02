@@ -99,7 +99,7 @@ This situation typically arises when a boundary point is a mathematical boundary
 ^ex-4-2
 
 > [!remark] Remark: Boundedness Works Like a Boundary Condition
-> In Example §4.2 the "artificial" condition, boundedness of $u$ at the singular point $r = 0$, worked exactly as an ordinary boundary condition at a regular point does: it gave one condition on the unknown constants $c_1$, $c_2$, which were then completely determined by the second, physical boundary condition. The mechanism is that near a regular singular point one solution of the homogeneous equation is bounded ($1$ here) and the other is not ($\ln r$), so boundedness selects a one-dimensional family, just as a boundary condition does.
+> In Example §4.2 the "artificial" condition, boundedness of $u$ at the singular point $r = 0$, worked exactly as an ordinary boundary condition at a regular point does: it gave one condition on the unknown constants $c_1$, $c_2$, which were then completely determined by the second, physical boundary condition. The mechanism is that here one solution of the homogeneous equation is bounded near $r = 0$ ($1$) and the other is not ($\ln r$), so boundedness selects a one-dimensional family, just as a boundary condition does. This is the typical situation at the singular points met in this subject (Bessel's and Legendre's equations), but not a general law: both solutions $t$, $t^2$ of the Cauchy–Euler equation $t^2u'' - 2tu' + 2u = 0$ are bounded at $t = 0$.
 
 ^rem-4-1
 
@@ -126,37 +126,6 @@ The other type of singular boundary value problem has an infinite interval of in
 
 ^def-4-3
 
-> [!example] Example §4.3: A Long Cooling Fin
-> A long cooling fin has one end held at a constant temperature $T_0$ and exchanges heat by convection with a medium at temperature $T$. Its temperature satisfies
->
-> $$
-> \frac{d^2u}{dx^2} = \frac{hC}{\kappa A}(u - T), \quad 0 < x, \qquad u(0) = T_0 \qquad (5), (6)
-> $$
->
-> (the equation of [[§3★ Boundary Value Problems#^prop-3-2|Proposition §3.2]] with the convective source of [[§3★ Boundary Value Problems#^def-3-2|Definition §3.2]]). The problem is posed on a semi-infinite interval because the fin is very long, and perhaps to mask our ignorance of what happens at its other physical end; so we impose
->
-> $$
-> u(x), \quad u'(x) \quad \text{bounded as } x \to \infty . \qquad (7)
-> $$
->
-> **General solution.** With $\mu = \sqrt{hC/\kappa A}$, $w = u - T$ satisfies $w'' - \mu^2w = 0$, so
->
-> $$
-> u(x) = T + c_1\cosh(\mu x) + c_2\sinh(\mu x) .
-> $$
->
-> **Conditions.** $u(0) = T + c_1 = T_0$ gives $c_1 = T_0 - T$. Boundedness (7) requires $c_2 = -c_1$: of all linear combinations of $\cosh$ and $\sinh$, the only ones bounded as $x \to \infty$ are the multiples of $\cosh(\mu x) - \sinh(\mu x) = e^{-\mu x}$ (Proposition §4.1 below). So
->
-> $$
-> u(x) = T + (T_0 - T)\big(\cosh(\mu x) - \sinh(\mu x)\big) = T + (T_0 - T)e^{-\mu x} .
-> $$
->
-> The fin's temperature decays exponentially from $T_0$ to the surrounding temperature, over a length of order $1/\mu$.
->
-> *Powers: 0.4, Example (Cooling Fin)*
-
-^ex-4-3
-
 > [!theorem] Proposition §4.1: Bounded Solutions of u″ − μ²u = 0
 > Let $\mu > 0$. A solution $u(x) = c_1'e^{\mu x} + c_2'e^{-\mu x}$ of $u'' - \mu^2u = 0$ is bounded on $0 < x < \infty$ (together with $u'$) if and only if $c_1' = 0$, that is, $u$ is a constant multiple of $e^{-\mu x} = \cosh(\mu x) - \sinh(\mu x)$. On $-\infty < x < \infty$, only $u \equiv 0$ is bounded.
 >
@@ -176,6 +145,37 @@ The other type of singular boundary value problem has an infinite interval of in
 ^pf-4-1
 
 *Uses:* [[§1★ Homogeneous Linear Equations#^def-1-4|Def. §1.4]]
+
+> [!example] Example §4.3: A Long Cooling Fin
+> A long cooling fin has one end held at a constant temperature $T_0$ and exchanges heat by convection with a medium at temperature $T$. Its temperature satisfies
+>
+> $$
+> \frac{d^2u}{dx^2} = \frac{hC}{\kappa A}(u - T), \quad 0 < x, \qquad u(0) = T_0 \qquad (5), (6)
+> $$
+>
+> (the equation of [[§3★ Boundary Value Problems#^prop-3-2|Proposition §3.2]] with the convective source of [[§3★ Boundary Value Problems#^def-3-2|Definition §3.2]]). The problem is posed on a semi-infinite interval because the fin is very long, and perhaps to mask our ignorance of what happens at its other physical end; so we impose
+>
+> $$
+> u(x), \quad u'(x) \quad \text{bounded as } x \to \infty . \qquad (7)
+> $$
+>
+> **General solution.** With $\mu = \sqrt{hC/\kappa A}$, $w = u - T$ satisfies $w'' - \mu^2w = 0$, so
+>
+> $$
+> u(x) = T + c_1\cosh(\mu x) + c_2\sinh(\mu x) .
+> $$
+>
+> **Conditions.** $u(0) = T + c_1 = T_0$ gives $c_1 = T_0 - T$. Boundedness (7) requires $c_2 = -c_1$: of all linear combinations of $\cosh$ and $\sinh$, the only ones bounded as $x \to \infty$ are the multiples of $\cosh(\mu x) - \sinh(\mu x) = e^{-\mu x}$ ([[§4★ Singular Boundary Value Problems#^prop-4-1|Proposition §4.1]]). So
+>
+> $$
+> u(x) = T + (T_0 - T)\big(\cosh(\mu x) - \sinh(\mu x)\big) = T + (T_0 - T)e^{-\mu x} .
+> $$
+>
+> The fin's temperature decays exponentially from $T_0$ to the surrounding temperature, over a length of order $1/\mu$.
+>
+> *Powers: 0.4, Example (Cooling Fin)*
+
+^ex-4-3
 
 ![[m341-4-1.svg]]
 *Why boundedness fixes the second constant in Example §4.3: every solution $u = T + c_1\cosh\mu x + c_2\sinh\mu x$ with $u(0) = T_0$ starts at the same point, but unless $c_2 = -c_1$ exactly, the growing part $\frac{c_1 + c_2}2e^{\mu x}$ eventually takes over (blue: $c_2 = -0.8c_1, -0.9c_1, -0.97c_1$; orange: $c_2 = -1.03c_1, -1.1c_1, -1.2c_1$). Only the red curve $e^{-\mu x}$ stays bounded.*
@@ -199,7 +199,7 @@ The other type of singular boundary value problem has an infinite interval of in
 
 ## The Radial Operator in Spherical Coordinates
 
-Problems in a sphere lead to the operator $\frac1{\rho^2}\frac{d}{d\rho}\big(\rho^2\frac{du}{d\rho}\big)$ of Example §4.1(d). A substitution reduces it to a second derivative (Powers' Exercises 0.1.19 and 0.4.4). The radial solutions $\sin(\lambda\rho)/\rho$ it produces reappear for spherical waves, [[§48★ Some Applications of Bessel Functions|§48★]] (Powers 5.8), where Powers obtains them from Bessel functions of order $\frac12$.
+Problems in a sphere lead to the operator $\frac1{\rho^2}\frac{d}{d\rho}\big(\rho^2\frac{du}{d\rho}\big)$ of Example §4.1(d). A substitution reduces it to a second derivative (Powers' Exercises 0.1.19 and 0.4.4). The radial solutions $\sin(\lambda\rho)/\rho$ it produces reappear for spherical waves, [[§48★ Some Applications of Bessel Functions#^prop-48-4|Proposition §48.4]] (Powers 5.8), where Powers obtains them from Bessel functions of order $\frac12$.
 
 > [!theorem] Lemma §4.2: The Substitution u = v/ρ
 > For a twice differentiable function $v$ on $\rho > 0$ and $u = v/\rho$,
@@ -226,7 +226,7 @@ Problems in a sphere lead to the operator $\frac1{\rho^2}\frac{d}{d\rho}\big(\rh
 ^pf-4-2
 
 > [!remark]- Connections
-> - The operator of Lemma §4.2 is the Laplacian of a radial function in space, [[§19 The Laplacian in Spherical Coordinates#^rem-19-2|452 Remark: Verification: Radial Functions]]; with $\mu = 0$ the lemma gives $v = c_1 + c_2\rho$, so the radial harmonic functions are $c_2 + c_1/\rho$, the constants and the fundamental solution $C/r$. The planar counterpart $\frac1r\frac{d}{dr}\big(r\frac{du}{dr}\big)$ of Example §4.2, with homogeneous solutions $1$ and $\ln r$, is the fundamental solution $C\ln r$ of [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]].
+> - The operator of Lemma §4.2 is the Laplacian of a radial function in space, [[§19 The Laplacian in Spherical Coordinates#^rem-19-2|452 Remark: Verification: Radial Functions]]; with $\mu = 0$ the lemma gives $v = c_1 + c_2\rho$, so the radial harmonic functions are $c_2 + c_1/\rho$, the constants and the fundamental solution $C/r$. The planar counterpart $\frac1r\frac{d}{dr}\big(r\frac{du}{dr}\big)$ of Example §4.2 has the homogeneous solutions $1$ and $\ln r$; the second is, up to a constant factor, the fundamental solution of [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]].
 
 > [!example] Example §4.4: The Critical Radius of a Uranium Sphere
 > The neutron flux $u$ in a sphere of uranium of radius $a$ obeys

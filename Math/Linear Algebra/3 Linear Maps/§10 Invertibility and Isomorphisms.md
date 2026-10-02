@@ -119,7 +119,7 @@ tags: [linear-algebra]
 > - For square matrices: a one-sided inverse is automatically two-sided. Fails in infinite dimensions (shift operators).
 > - In a group a one-sided inverse is automatically two-sided, [[§2 First Consequences of the Axioms#^prop-2-6|493 Prop. §2.6]]; here the reason is dimension instead, since L(V) is not a group.
 > - The failure in infinite dimensions: the right shift on ℓ² has a left inverse but is not onto, [[§20 Orthonormal Sets and Bases#^ex-20-2|556 Ex. §20.2]].
-> - Used in 591 to define the unitary group by one equation: [[§10 Vector Spaces and Matrix Groups#^lem-10-14|591 Lemma §10.14]], proved there with determinants.
+> - Used in 591 to define the unitary group by one equation: [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-19-3|591 Lemma §19.3]], proved there with determinants.
 > - Matrix version: [[§13 Characterizations of Invertible Matrices#^cor-13-2|235 Cor. §13.2]] (a one-sided inverse of a square matrix is an inverse).
 
 > [!definition] Definition 3.69: Isomorphism, isomorphic
@@ -178,7 +178,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - How $T$ acts in coordinates: [[§10 Invertibility and Isomorphisms#^ladr-3-76|Linear maps act like matrix multiplication]].
-> - A basis read as the isomorphism v ↦ M(v) is what 591 calls a linear coordinate system: [[§10 Vector Spaces and Matrix Groups#^def-10-6|591 Def. §10.6]].
+> - A basis read as the isomorphism v ↦ M(v) is what 591 calls a linear coordinate system: [[§18 The Differential of a Map Between Vector Spaces#^def-18-1|591 Def. §18.1]].
 > - Computational version: [[§26 Coordinate Systems#^def-26-1|235 Def. §26.1]] (the coordinate vector [x]_B), an isomorphism onto ℝⁿ by [[§26 Coordinate Systems#^thm-26-3|235 Thm. §26.3]].
 
 > [!example] Example 3.74: Matrix of a vector (p. 88)
@@ -323,7 +323,7 @@ tags: [linear-algebra]
 > - Physics: with orthonormal bases $C$ is unitary and this is the familiar $A=U^\dagger BU$ change of representation.
 > - Bilinear-form version (different rule, $C^tBC$): [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-7|Change-of-basis formula (LADR 9.7)]].
 > - Similarity is conjugation by an invertible matrix; for invertible matrices, similar means conjugate in the general linear group: [[§31 Conjugacy Classes#^def-31-3|493 Def. §31.3]].
-> - On a manifold the change-of-basis matrix between coordinate bases is the Jacobian of the transition map ([[§12 Tangent Spaces II꞉ The Abstract Tangent Space#^cor-12-24|591 Cor. §12.24]]); it gives the transition maps of the tangent bundle, [[§17 The Tangent Bundle#^prop-17-3|591 Prop. §17.3]].
+> - On a manifold the change-of-basis matrix between coordinate bases is the Jacobian of the transition map ([[§25 The Differential in Coordinates#^cor-25-4|591 Cor. §25.4]]); it gives the transition maps of the tangent bundle, [[§31 The Tangent Bundle#^prop-31-2|591 Prop. §31.2]].
 > - Computational version: [[§35 Eigenvectors and Linear Transformations#^thm-35-2|235 Thm. §35.2]], [T]_B = P⁻¹AP, so the matrices of one operator are similar ([[§33 The Characteristic Equation#^def-33-3|235 Def. §33.3]]).
 
 %% ex:3.84-diagram %%
