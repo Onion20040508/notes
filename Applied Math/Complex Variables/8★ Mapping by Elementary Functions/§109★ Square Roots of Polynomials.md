@@ -168,9 +168,9 @@ $$
 >
 > In particular $w = z_1F\big((z - z_0)/z_1\big)$ is a branch of (7), analytic except on the segment joining the zeros $z_0 \pm z_1$, and it maps the complement of that segment one to one onto the $w$ plane minus the segment from $-iz_1$ to $iz_1$.
 >
-> *B&C: Sec. 109, Equations (7) and (8)*
->
 > *(B&C prints $B = z_0^2 = z_1^2$, p. 336; the correct relation is $B = z_0^2 - z_1^2$.)*
+>
+> *B&C: Sec. 109, Equations (7) and (8)*
 
 ^prop-109-4
 
@@ -186,7 +186,7 @@ $$
 > [!example] Example §109.2: The First Quadrant onto the First Quadrant
 > **(a)** In terms of $r_1, r_2, \theta_1, \theta_2$, the conditions $r_1 > 0$, $0 < \theta_1 + \theta_2 < \pi$ describe the first quadrant $x > 0$, $y > 0$, and $w = F(z)$ maps it onto the first quadrant $u > 0$, $v > 0$.
 >
-> In the upper half plane $\theta_1 + \theta_2$ is continuous with values in $(0, 2\pi)$. It equals $\pi$ exactly on the positive $y$ axis: $e^{i(\theta_1 + \theta_2)} = (z^2 - 1)/|z^2 - 1|$ is $-1$ only when $z^2$ is real and less than $1$, which for $y > 0$ means $z = iy$. Along a ray $\theta_2 = c$ ($0 < c < \pi/2$), $\theta_1 + \theta_2$ decreases as $z$ moves to the right, toward $0$. So by continuity $\theta_1 + \theta_2 < \pi$ on the whole (connected) first quadrant, and $> \pi$ on the second; also $\theta_1 + \theta_2 > 0$ wherever $y > 0$. Hence the first quadrant is $\{r_1 > 0,\ 0 < \theta_1 + \theta_2 < \pi\}$. On it $\arg F = \frac12(\theta_1 + \theta_2) \in (0, \pi/2)$, so $F$ maps it into the first quadrant. Conversely, if $u, v > 0$, then $z = H(w)$ lies in the upper half plane and $\arg F(z) = \arg w \in (0, \pi/2)$ forces $\theta_1 + \theta_2 < \pi$, so $z$ is in the first quadrant.
+> In the upper half plane $\theta_1 + \theta_2$ is continuous with values in $(0, 2\pi)$. It equals $\pi$ exactly on the positive $y$ axis: $e^{i(\theta_1 + \theta_2)} = (z^2 - 1)/|z^2 - 1|$ is $-1$ only when $z^2$ is real and less than $1$, which for $y > 0$ means $z = iy$. Along a ray $\theta_2 = c$ ($0 < c < \pi/2$), $\theta_1 + \theta_2$ decreases as $z$ moves to the right, tending to $2c < \pi$. So by continuity $\theta_1 + \theta_2 < \pi$ on the whole (connected) first quadrant, and $> \pi$ on the second; also $\theta_1 + \theta_2 > 0$ wherever $y > 0$. Hence the first quadrant is $\{r_1 > 0,\ 0 < \theta_1 + \theta_2 < \pi\}$. On it $\arg F = \frac12(\theta_1 + \theta_2) \in (0, \pi/2)$, so $F$ maps it into the first quadrant. Conversely, if $u, v > 0$, then $z = H(w)$ lies in the upper half plane and $\arg F(z) = \arg w \in (0, \pi/2)$ forces $\theta_1 + \theta_2 < \pi$, so $z$ is in the first quadrant.
 >
 > **(b)** For $z$ in the first quadrant, with $F(z) = u + iv$,
 >

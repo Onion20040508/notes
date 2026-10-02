@@ -96,6 +96,8 @@ B&C leaves the uniqueness to the exercises; it rests on counting fixed points.
 
 ^pf-100-2
 
+*Uses:* [[§99★ Linear Fractional Transformations#^def-99-2|Def. §99.2]]
+
 > [!theorem] Theorem §100.3: Uniqueness
 > There is only one linear fractional transformation that maps three given distinct points $z_1, z_2, z_3$ of the extended $z$ plane onto three specified distinct points $w_1, w_2, w_3$ of the extended $w$ plane.
 >

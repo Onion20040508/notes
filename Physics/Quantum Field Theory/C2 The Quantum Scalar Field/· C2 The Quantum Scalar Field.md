@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # C2 The Quantum Scalar Field
 ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· CA Mathematical Methods|CA Mathematical Methods]] (121)
+**Builds on:** [[· CA Mathematical Methods|CA Mathematical Methods]] (419)
 **Used by:** [[· CA Mathematical Methods|CA Mathematical Methods]] (49)
 
 ## Sections
@@ -33,20 +33,27 @@ tags: [chapter, quantum-field-theory]
 - [[§C2.10 Microcausality and the Commutator Function#^pr-c2-10-1|§C2.10.1]] Microcausality
 
 ## Theorems
+- [[§C2.1 Canonical Quantization of Fields#^thm-c2-1-2|§C2.1.2]] The Canonical Relations Are Identities after Smearing
 - [[§C2.1 Canonical Quantization of Fields#^thm-c2-1-3|§C2.1.3]] The Free Field Is a Set of Independent Oscillators
 - [[§C2.2 Mode Expansion and the Mode Algebra#^thm-c2-2-2|§C2.2.2]] Mode Expansion of the Real Field
 - [[§C2.2 Mode Expansion and the Mode Algebra#^thm-c2-2-3|§C2.2.3]] Conservation and Orthonormality of the Modes
+- [[§C2.2 Mode Expansion and the Mode Algebra#^thm-c2-2-4|§C2.2.4]] Orthonormality for Wave Packets
 - [[§C2.2 Mode Expansion and the Mode Algebra#^thm-c2-2-5|§C2.2.5]] Mode Extraction
 - [[§C2.2 Mode Expansion and the Mode Algebra#^thm-c2-2-6|§C2.2.6]] The Mode Algebra
+- [[§C2.2 Mode Expansion and the Mode Algebra#^thm-c2-2-7|§C2.2.7]] The Mode Algebra Smeared
 - [[§C2.3 Energy, Momentum and the Zero-Point Energy#^thm-c2-3-1|§C2.3.1]] Hamiltonian in Mode Form
+- [[§C2.3 Energy, Momentum and the Zero-Point Energy#^thm-c2-3-2|§C2.3.2]] δ³(0) Has No Value; in a Box It Is the Volume
 - [[§C2.3 Energy, Momentum and the Zero-Point Energy#^thm-c2-3-3|§C2.3.3]] The Zero-Point Energy
 - [[§C2.3 Energy, Momentum and the Zero-Point Energy#^thm-c2-3-4|§C2.3.4]] Momentum in Mode Form
+- [[§C2.3 Energy, Momentum and the Zero-Point Energy#^thm-c2-3-5|§C2.3.5]] The Normal-Ordered Hamiltonian Acts on Wave Packets
 - [[§C2.3 Energy, Momentum and the Zero-Point Energy#^thm-c2-3-6|§C2.3.6]] Ladder Relations
 - [[§C2.4 Particles and Relativistic Normalization#^thm-c2-4-2|§C2.4.2]] The Spectrum: Particles
 - [[§C2.4 Particles and Relativistic Normalization#^thm-c2-4-3|§C2.4.3]] Bose Symmetry and Multiple Occupation
 - [[§C2.4 Particles and Relativistic Normalization#^thm-c2-4-4|§C2.4.4]] The Invariant Measure
 - [[§C2.4 Particles and Relativistic Normalization#^thm-c2-4-5|§C2.4.5]] Invariance of the Relativistic Normalization
+- [[§C2.4 Particles and Relativistic Normalization#^thm-c2-4-6|§C2.4.6]] The Overlap of Momentum States Is a Distribution
 - [[§C2.4 Particles and Relativistic Normalization#^thm-c2-4-7|§C2.4.7]] The Field Creates a Particle at a Point
+- [[§C2.4 Particles and Relativistic Normalization#^thm-c2-4-8|§C2.4.8]] The Smeared Field Creates a State; the Field at a Point Does Not
 - [[§C2.5 The Complex Scalar Field and Its Charge#^thm-c2-5-2|§C2.5.2]] Mode Expansion of the Complex Field
 - [[§C2.5 The Complex Scalar Field and Its Charge#^thm-c2-5-3|§C2.5.3]] Mode Algebra of the Complex Field
 - [[§C2.5 The Complex Scalar Field and Its Charge#^thm-c2-5-4|§C2.5.4]] Hamiltonian of the Complex Field
@@ -60,10 +67,13 @@ tags: [chapter, quantum-field-theory]
 - [[§C2.6 Coherent States and the Classical Field#^thm-c2-6-5|§C2.6.5]] Coherent States Stay Coherent
 - [[§C2.6 Coherent States and the Classical Field#^thm-c2-6-6|§C2.6.6]] Poisson Number Statistics
 - [[§C2.6 Coherent States and the Classical Field#^thm-c2-6-7|§C2.6.7]] The Field Fluctuates Exactly as in the Vacuum
+- [[§C2.6 Coherent States and the Classical Field#^thm-c2-6-8|§C2.6.8]] Smeared Fluctuations Are Finite and Independent of the Amplitude
 - [[§C2.7 Heisenberg Fields#^thm-c2-7-1|§C2.7.1]] Time Dependence of the Modes; the Covariant Mode Expansion
+- [[§C2.7 Heisenberg Fields#^thm-c2-7-2|§C2.7.2]] The Heisenberg Field Is an Operator-Valued Distribution on Spacetime
 - [[§C2.7 Heisenberg Fields#^thm-c2-7-3|§C2.7.3]] The Heisenberg Equations Are the Klein–Gordon Equation
 - [[§C2.7 Heisenberg Fields#^thm-c2-7-4|§C2.7.4]] Positive and Negative Frequency
 - [[§C2.8 The Wightman Function#^thm-c2-8-1|§C2.8.1]] The Wightman Function as a Mode Integral
+- [[§C2.8 The Wightman Function#^thm-c2-8-2|§C2.8.2]] The Wightman Function Is a Tempered Distribution
 - [[§C2.8 The Wightman Function#^thm-c2-8-3|§C2.8.3]] Lorentz Invariance of the Wightman Function
 - [[§C2.8 The Wightman Function#^thm-c2-8-4|§C2.8.4]] The Wightman Function Is a Homogeneous Solution; Reversal Is Conjugation
 - [[§C2.8 The Wightman Function#^thm-c2-8-5|§C2.8.5]] The Wightman Function Is a Boundary Value
@@ -72,12 +82,16 @@ tags: [chapter, quantum-field-theory]
 - [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|§C2.9.3]] The Wightman Function at Spacelike Separation
 - [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-4|§C2.9.4]] The Wightman Function at Timelike Separation
 - [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-5|§C2.9.5]] The Wightman Function near the Light Cone
+- [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-6|§C2.9.6]] The Wightman Function as a Distribution: Off the Cone and on It
 - [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-2|§C2.10.2]] The Field Commutator Is a c-Number
 - [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-3|§C2.10.3]] The Commutator and Hadamard Functions Are the Parts of the Wightman Function
+- [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-4|§C2.10.4]] The Commutator and Hadamard Functions as Distributions
 - [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-5|§C2.10.5]] The Free Field Is Microcausal
+- [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-6|§C2.10.6]] Microcausality as a Support Statement
 - [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-7|§C2.10.7]] Commutator and Hadamard Functions of the Massless Field
 - [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-8|§C2.10.8]] Commutator and Hadamard Functions of the Massive Field
 - [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-9|§C2.10.9]] Commutators at Unequal Times
+- [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-10|§C2.10.10]] Commutators at Unequal Times as Distributions
 - [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-11|§C2.10.11]] Cauchy Data of the Commutator Function
 - [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-12|§C2.10.12]] The Commutator Function Propagates the Field
 - [[§C2.11 Green's Functions and Contours#^thm-c2-11-2|§C2.11.2]] Free Fields Live on the Mass Shell

@@ -1,0 +1,41 @@
+% Figure for Complex Variables §111.
+\begin{tikzpicture}[line cap=round, line join=round]
+  \draw[-stealth, thin, black!70] (-2.640,0.000) -- (2.880,0.000) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin, black!70] (0.000,-0.720) -- (0.000,2.400) node[above, font=\scriptsize] {$y$};
+  \draw[figO, line width=2pt] (-1.200,0.000) -- (1.200,0.000);
+  \draw[black!70, thin] (1.200,0.000) -- (0.720,1.560);
+  \node[right, font=\scriptsize, inner sep=1.5pt, text=black] at (0.960,0.780) {$r_1$};
+  \draw[black!70, thin] (-1.200,0.000) -- (0.720,1.560);
+  \node[left, font=\scriptsize, inner sep=1.5pt, text=black] at (-0.240,0.780) {$r_2$};
+  \draw[figB, thin, -{Stealth[length=3pt]}] (1.620,0.000) arc (0:107.1:0.420);
+  \node[right, font=\scriptsize, inner sep=1.5pt, text=figB] at (1.521,0.434) {$\theta_1$};
+  \draw[figR, thin, -{Stealth[length=3pt]}] (-0.780,0.000) arc (0:39.1:0.420);
+  \node[right, font=\scriptsize, inner sep=1.5pt, text=figR] at (-0.691,0.181) {$\theta_2$};
+  \fill[black] (0.720,1.560) circle (1.1pt);
+  \node[above, font=\scriptsize, inner sep=1.5pt] at (0.720,1.560) {$z$};
+  \fill[black] (1.200,0.000) circle (1.1pt);
+  \node[below, font=\scriptsize, inner sep=1.5pt] at (1.200,0.000) {$P_1$};
+  \fill[black] (-1.200,0.000) circle (1.1pt);
+  \node[below, font=\scriptsize, inner sep=1.5pt] at (-1.200,0.000) {$P_2$};
+  \node[below, font=\scriptsize, inner sep=1.5pt, text=figO] at (0.000,-0.060) {cut};
+  \draw[-stealth, thin, black!70] (3.960,0.000) -- (9.720,0.000) node[right, font=\scriptsize] {$x$};
+  \draw[-stealth, thin, black!70] (6.600,-0.720) -- (6.600,2.400) node[above, font=\scriptsize] {$y$};
+  \draw[figO, line width=2pt] (5.400,0.000) -- (6.600,0.000);
+  \draw[figO, line width=2pt] (7.800,0.000) -- (9.720,0.000);
+  \draw[black!70, thin] (7.800,0.000) -- (7.200,1.440);
+  \node[right, font=\scriptsize, inner sep=1.5pt, text=black] at (7.500,0.720) {$r_1$};
+  \draw[black!70, thin] (5.400,0.000) -- (7.200,1.440);
+  \node[left, font=\scriptsize, inner sep=1.5pt, text=black] at (6.300,0.720) {$r_2$};
+  \draw[black!70, thin] (6.600,0.000) -- (7.200,1.440);
+  \node[left, font=\scriptsize, inner sep=1.5pt, text=black] at (6.900,0.720) {$r$};
+  \fill[black] (7.200,1.440) circle (1.1pt);
+  \node[above, font=\scriptsize, inner sep=1.5pt] at (7.200,1.440) {$z$};
+  \fill[black] (7.800,0.000) circle (1.1pt);
+  \node[below, font=\scriptsize, inner sep=1.5pt] at (7.800,0.000) {$1$};
+  \fill[black] (5.400,0.000) circle (1.1pt);
+  \node[below, font=\scriptsize, inner sep=1.5pt] at (5.400,0.000) {$-1$};
+  \fill[black] (6.600,0.000) circle (1.1pt);
+  \node[below right, font=\scriptsize, inner sep=1.5pt] at (6.600,0.000) {$0$};
+  \node[below, font=\scriptsize, inner sep=1.5pt, text=figO] at (6.000,0.000) {$L_2$};
+  \node[below, font=\scriptsize, inner sep=1.5pt, text=figO] at (9.000,0.000) {$L_1$};
+\end{tikzpicture}
