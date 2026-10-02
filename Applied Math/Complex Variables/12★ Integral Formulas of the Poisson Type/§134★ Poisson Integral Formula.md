@@ -130,6 +130,9 @@ Formula (6) defines a linear integral transformation of $u(r_0, \phi)$ into $u(r
 
 ^def-134-2
 
+![[m342-134-1.svg]]
+*The Poisson kernel $P(1, r, \phi - \theta)$ for $r = 0, 0.5, 0.8$. Each curve has mean value $1$ over a period (property (f)); its peak $(1 + r)/(1 - r)$ at $\phi = \theta$ grows and narrows as $z = re^{i\theta}$ approaches the boundary, so that the average (9) is dominated more and more by the boundary values near $\phi = \theta$.*
+
 > [!theorem] Proposition §134.2: Properties of the Poisson Kernel
 > For $r < r_0$:
 >
@@ -178,9 +181,6 @@ u(r, \theta) = \frac{1}{2\pi}\int_0^{2\pi}P(r_0, r, \phi - \theta)\,u(r_0, \phi)
 $$
 
 So far $f$ has been assumed analytic on $C_0$ as well as inside, so that $u$ is harmonic in a domain including the circle and in particular continuous on it. These conditions are relaxed in [[§135★ Dirichlet Problem for a Disk|§135★]].
-
-![[m342-134-1.svg]]
-*The Poisson kernel $P(1, r, \phi - \theta)$ for $r = 0, 0.5, 0.8$. Each curve has mean value $1$ over a period (property (f)); its peak $(1 + r)/(1 - r)$ at $\phi = \theta$ grows and narrows as $z = re^{i\theta}$ approaches the boundary, so that the average (9) is dominated more and more by the boundary values near $\phi = \theta$.*
 
 ## Examples
 
