@@ -16,7 +16,7 @@ This section finishes the constant-coefficient system $\mathbf{x}' = \mathbf{A}\
 
 ## Repeated Eigenvalues
 
-Let $r = \rho$ be an $m$-fold root of the characteristic equation $\det(\mathbf{A} - r\mathbf{I}) = 0$ (7), so that $\rho$ is an eigenvalue of algebraic multiplicity $m$. Its geometric multiplicity, the number of linearly independent eigenvectors, may be less than $m$ (BDP 7.3, [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors|§29]]). There are two possibilities.
+Let $r = \rho$ be an $m$-fold root of the characteristic equation $\det(\mathbf{A} - r\mathbf{I}) = 0$ (7), so that $\rho$ is an eigenvalue of algebraic multiplicity $m$. Its geometric multiplicity, the number of linearly independent eigenvectors, may be less than $m$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-3|Theorem §29.3]]). There are two possibilities.
 
 > [!theorem] Proposition §34.1: A Repeated Eigenvalue with a Full Set of Eigenvectors
 > Let $\rho$ be an eigenvalue of $\mathbf{A}$ of algebraic multiplicity $m$ that has $m$ linearly independent eigenvectors $\boldsymbol{\xi}^{(1)}, \ldots, \boldsymbol{\xi}^{(m)}$. Then
@@ -34,7 +34,7 @@ Let $r = \rho$ be an $m$-fold root of the characteristic equation $\det(\mathbf{
 > [!proof]+ Proof
 > Each is a solution: $(\boldsymbol{\xi}^{(i)}e^{\rho t})' = \rho\boldsymbol{\xi}^{(i)}e^{\rho t} = \mathbf{A}\boldsymbol{\xi}^{(i)}e^{\rho t}$. If $\sum_i c_i\boldsymbol{\xi}^{(i)}e^{\rho t} = \mathbf{0}$ at some $t$, then dividing by $e^{\rho t} \ne 0$ gives $\sum_i c_i\boldsymbol{\xi}^{(i)} = \mathbf{0}$, so all $c_i = 0$: the solutions are linearly independent at every $t$.
 >
-> **The Hermitian case.** A Hermitian matrix has a full set of $n$ linearly independent eigenvectors, regardless of the multiplicities of its eigenvalues (BDP 7.3, [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors|§29]]). With them as the columns of $\mathbf{T}$, [[§33★ Fundamental Matrices#^thm-33-7|Theorem §33.7]] gives $\mathbf{T}^{-1}\mathbf{A}\mathbf{T} = \mathbf{D} = \operatorname{diag}(\lambda_1, \ldots, \lambda_n)$, and
+> **The Hermitian case.** A Hermitian matrix has a full set of $n$ linearly independent eigenvectors, regardless of the multiplicities of its eigenvalues ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|Theorem §29.5]]). With them as the columns of $\mathbf{T}$, [[§33★ Fundamental Matrices#^thm-33-7|Theorem §33.7]] gives $\mathbf{T}^{-1}\mathbf{A}\mathbf{T} = \mathbf{D} = \operatorname{diag}(\lambda_1, \ldots, \lambda_n)$, and
 >
 > $$
 > \det(\mathbf{A} - r\mathbf{I}) = \det\big(\mathbf{T}^{-1}(\mathbf{A} - r\mathbf{I})\mathbf{T}\big) = \det(\mathbf{D} - r\mathbf{I}) = (\lambda_1 - r)\cdots(\lambda_n - r) .
@@ -44,7 +44,7 @@ Let $r = \rho$ be an $m$-fold root of the characteristic equation $\det(\mathbf{
 
 ^pf-34-1
 
-*Uses:* [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors|§29]] (BDP 7.3: Hermitian matrices), [[§33★ Fundamental Matrices#^thm-33-7|§33.7]]
+*Uses:* [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|§29.5]] (Hermitian matrices), [[§33★ Fundamental Matrices#^thm-33-7|§33.7]]
 
 If $\mathbf{A}$ is not Hermitian, $\rho$ may have fewer than $m$ independent eigenvectors, and then fewer than $m$ solutions of the form $\boldsymbol{\xi}e^{\rho t}$; other solutions must be found.
 
@@ -77,7 +77,7 @@ If $\mathbf{A}$ is not Hermitian, $\rho$ may have fewer than $m$ independent eig
 >
 > and there is no second solution of the form $\boldsymbol{\xi}e^{rt}$.
 >
-> **The form $\boldsymbol{\xi}te^{2t}$ fails.** Imitating [[§16 Repeated Roots; Reduction of Order|§16]], try $\mathbf{x} = \boldsymbol{\xi}te^{2t}$ (10). Substituting into (8),
+> **The form $\boldsymbol{\xi}te^{2t}$ fails.** Imitating [[§16 Repeated Roots; Reduction of Order#^thm-16-1|Theorem §16.1]], try $\mathbf{x} = \boldsymbol{\xi}te^{2t}$ (10). Substituting into (8),
 >
 > $$
 > 2\boldsymbol{\xi}te^{2t} + \boldsymbol{\xi}e^{2t} = \mathbf{A}\boldsymbol{\xi}te^{2t} . \qquad (11)
@@ -309,7 +309,7 @@ A matrix can be diagonalized as in [[§33★ Fundamental Matrices#^thm-33-7|Theo
 > y_1' = 2y_1 + y_2, \qquad y_2' = 2y_2 . \qquad (31)
 > $$
 >
-> This is not uncoupled, but it can be solved in reverse order. First $y_2 = c_1e^{2t}$. Then $y_1' - 2y_1 = c_1e^{2t}$; with the integrating factor $e^{-2t}$ ([[§4 Linear Differential Equations; Method of Integrating Factors|§4]]), $(e^{-2t}y_1)' = c_1$, so $y_1 = c_1te^{2t} + c_2e^{2t}$ (32). Two independent solutions are
+> This is not uncoupled, but it can be solved in reverse order. First $y_2 = c_1e^{2t}$. Then $y_1' - 2y_1 = c_1e^{2t}$; with the integrating factor $e^{-2t}$ ([[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2]]), $(e^{-2t}y_1)' = c_1$, so $y_1 = c_1te^{2t} + c_2e^{2t}$ (32). Two independent solutions are
 >
 > $$
 > \mathbf{y}^{(1)}(t) = \begin{pmatrix} 1 \\ 0 \end{pmatrix}e^{2t}, \qquad \mathbf{y}^{(2)}(t) = \begin{pmatrix} t \\ 1 \end{pmatrix}e^{2t}, \qquad (33)

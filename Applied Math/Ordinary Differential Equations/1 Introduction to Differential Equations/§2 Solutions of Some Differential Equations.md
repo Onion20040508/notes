@@ -109,7 +109,7 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 > u'(t) = y'(t)e^{-at} - a\Big(y(t) - \frac{b}{a}\Big)e^{-at} = \big(ay - b - ay + b\big)e^{-at} = 0 .
 > $$
 >
-> A function with zero derivative on an interval is constant, so $u(t) = c$ and $y(t) = b/a + ce^{at}$ on $I$. In particular a solution that equals $b/a$ at one point has $c = 0$ and is the equilibrium solution. (The multiplier $e^{-at}$ is the integrating factor of [[§4 Linear Differential Equations; Method of Integrating Factors|§4]].)
+> A function with zero derivative on an interval is constant, so $u(t) = c$ and $y(t) = b/a + ce^{at}$ on $I$. In particular a solution that equals $b/a$ at one point has $c = 0$ and is the equilibrium solution. (The multiplier $e^{-at}$ is the integrating factor of [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-1|Theorem §4.1]], applied to $y' - ay = -b$.)
 >
 > **Each such function is a solution.** If $y = b/a + ce^{at}$, then $y' = ace^{at} = a\big(y - \tfrac{b}{a}\big) = ay - b$ for all $t$.
 >
@@ -123,7 +123,7 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 
 > [!remark]- Connections
 > - The step "zero derivative on an interval implies constant": [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]], from the Mean Value Theorem; equal derivatives differ by a constant, [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]].
-> - See also: [[§21 Exponential Growth and Decay#^thm-21-1|Calc Thm. §21.1]] (the case $b = 0$, proved the same way) and [[§60 Models for Population Growth#^thm-60-1|Calc Thm. §60.1]] (Stewart's separation-of-variables derivation).
+> - See also: [[§21 Exponential Growth and Decay#^thm-21-1|Calc Thm. §21.1]] (the case $b = 0$, proved the same way) and [[§60 Models for Population Growth#^thm-60-1|Calc Thm. §60.1]] (Stewart's separation-of-variables derivation). Stewart's [[§60 Models for Population Growth#^rem-60-1|Calc Remark: Emigration]], $dP/dt = kP - m$, is (3) with $a = k$, $b = m$: the mice and owls of [[§1 Some Basic Mathematical Models; Direction Fields#^ex-1-3|Example §1.3]].
 
 > [!definition] Definition §2.2: General Solution; Integral Curves
 > For $a \ne 0$, the expression (17), which contains all possible solutions of (3), is called the **general solution** of (3). Its geometric representation, the infinite family of graphs of (17), one for each value of $c$, is the family of **integral curves** of the equation. Satisfying an initial condition amounts to picking out the integral curve through the given initial point.
@@ -131,6 +131,9 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 > *BDP: 1.2 (text)*
 
 ^def-2-2
+
+> [!remark]- Connections
+> - See also: [[§57 Modeling with Differential Equations#^def-57-6|Calc Def. §57.6]] (solution and general solution) and [[§57 Modeling with Differential Equations#^def-57-7|Calc Def. §57.7]] (initial condition, initial-value problem), Stewart's versions of [[§2 Solutions of Some Differential Equations#^def-2-1|Definitions §2.1]] and [[§2 Solutions of Some Differential Equations#^def-2-2|§2.2]].
 
 > [!remark] Remark: What the Formula Says About the Two Models
 > **Field mice.** With $a = r > 0$ and $b = k > 0$, (18) becomes

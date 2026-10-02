@@ -47,8 +47,6 @@ because a translation of the coordinate axes takes any initial point to the orig
 
 ^pf-11-1
 
-*Uses:* none
-
 In this form, Theorem 2.4.2 becomes BDP's **Theorem 2.8.1**: *if $f$ and $\partial f/\partial y$ are continuous in a rectangle $R\colon |t| \le a$, $|y| \le b$, then there is some interval $|t| \le h \le a$ in which there exists a unique solution $y = \phi(t)$ of (2).* It is proved below as [[§11 The Existence and Uniqueness Theorem#^thm-11-7|Theorem §11.7]], after the steps of its proof.
 
 ## The Integral Equation
@@ -124,7 +122,7 @@ The uniqueness argument rests on an inequality that BDP proves inside Example 1;
 >
 > Then $w(t) = 0$ for $0 \le t \le c$.
 >
-> *BDP: 2.8, Example 1 (equations (17)–(22))*
+> *BDP: Example 2.8.1, equations (17)–(22)*
 
 ^lem-11-3
 
@@ -282,10 +280,10 @@ If $b/M < a$, a larger $h$ may be obtainable by finding a better (smaller) bound
 ![[m331-11-2.svg]]
 *The bow tie of Lemma §11.4 when $b/M < a$. Every iterate passes through the origin with slope at most $M$ in absolute value, so its graph (green) stays between the lines $y = \pm Mt$ (orange region). This region stays inside the rectangle $R$ only for $|t| \le b/M$, which is why the theorem gives a solution on $|t| \le h = \min(a, b/M)$ (red dashed lines) rather than on all of $|t| \le a$.*
 
-For the convergence (question 2), write $\phi_n$ as the $n$th partial sum of a series,
+For the convergence (question 2), write $\phi_n$ as a partial sum of a series:
 
 $$
-\phi_n(t) = \phi_1(t) + \big(\phi_2(t) - \phi_1(t)\big) + \cdots + \big(\phi_n(t) - \phi_{n-1}(t)\big), \qquad \phi_1(t) + \sum_{k=1}^{\infty} \big(\phi_{k+1}(t) - \phi_k(t)\big) , \qquad (24)
+\phi_n(t) = \phi_1(t) + \big(\phi_2(t) - \phi_1(t)\big) + \cdots + \big(\phi_n(t) - \phi_{n-1}(t)\big) \qquad\text{is the $n$th partial sum of}\qquad \phi_1(t) + \sum_{k=1}^{\infty} \big(\phi_{k+1}(t) - \phi_k(t)\big) , \qquad (24)
 $$
 
 and estimate the general term $|\phi_{k+1}(t) - \phi_k(t)|$. This is where $\partial f/\partial y$ enters, through the following condition.
@@ -413,7 +411,7 @@ Now all four questions can be answered.
 >
 > **4. Uniqueness.** Let $\psi$ be any solution of (2) on an interval $|t| \le h'$ with $h' \le h$.
 >
-> *Its graph stays in $D$.* (BDP's Problem 18 assumes this; here is why it holds.) Let $\tau$ be the supremum of the $t \in [0, h']$ such that $|\psi(s)| \le b$ for all $0 \le s \le t$; the set contains $0$, and by continuity $|\psi| \le b$ on $[0, \tau]$. On $[0, \tau]$ the points $(s, \psi(s))$ lie in $R$, so $|\psi'(s)| = |f(s, \psi(s))| \le M$, and by the mean value inequality $|\psi(t)| \le Mt$. If $\tau < h'$, then $|\psi(\tau)| \le M\tau < Mh \le b$, and by continuity $|\psi| < b$ on a slightly longer interval $[0, \tau + \varepsilon]$, contradicting the choice of $\tau$. So $|\psi(t)| \le b$ on $[0, h']$, and in the same way on $[-h', 0]$.
+> *Its graph stays in $D$.* (BDP's Problem 18 assumes this; here is why it holds.) Let $\tau$ be the supremum of the $t \in [0, h']$ such that $|\psi(s)| \le b$ for all $0 \le s \le t$; the set contains $0$, and by continuity $|\psi| \le b$ on $[0, \tau]$. On $[0, \tau]$ the points $(s, \psi(s))$ lie in $R$, so $|\psi'(s)| = |f(s, \psi(s))| \le M$, and by the mean value inequality $|\psi(t)| \le Mt$. If $\tau < h'$, then $|\psi(\tau)| \le M\tau < b$ (if $M > 0$, because $M\tau < Mh \le b$; if $M = 0$, because $b > 0$), and by continuity $|\psi| < b$ on a slightly longer interval $[0, \tau + \varepsilon]$, contradicting the choice of $\tau$. So $|\psi(t)| \le b$ on $[0, h']$, and in the same way on $[-h', 0]$.
 >
 > *The estimate.* Both $\phi$ and $\psi$ satisfy the integral equation (3) on $|t| \le h'$ (Lemma §11.2). Subtracting, for $0 \le t \le h'$ (Problem 18(a)–(c)),
 >

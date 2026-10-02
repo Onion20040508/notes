@@ -11,7 +11,7 @@ tags: [ordinary-differential-equations, math331]
 
 *Boyce–DiPrima, Section 7.6 · MATH 331 Written HW 6, Final Exam (Fall 2021), Final Exam (Fall 2022, alternate).*
 
-When the real matrix $\mathbf{A}$ has complex eigenvalues, they come in conjugate pairs $\lambda \pm i\mu$ with conjugate eigenvectors, and the exponential solutions $\boldsymbol{\xi}e^{rt}$ of [[§31 Homogeneous Linear Systems with Constant Coefficients|§31]] are complex-valued. Their real and imaginary parts are two independent real solutions, built from $e^{\lambda t}\cos\mu t$ and $e^{\lambda t}\sin\mu t$, exactly as for complex roots of the characteristic equation in [[§15 Complex Roots of the Characteristic Equation|§15]]. In the phase plane the factor $e^{\lambda t}$ makes trajectories spiral in or out while the trigonometric factors rotate them, so the origin is a spiral point, or a center when $\lambda = 0$. With the saddle points and nodes of §31 this completes the classification of $2 \times 2$ systems, and following the eigenvalues as a parameter varies shows where the phase portrait changes type. The linear-algebra side of complex eigenvalues is [[§36 Complex Eigenvalues|235 §36]].
+When the real matrix $\mathbf{A}$ has complex eigenvalues, they come in conjugate pairs $\lambda \pm i\mu$ with conjugate eigenvectors, and the exponential solutions $\boldsymbol{\xi}e^{rt}$ of [[§31 Homogeneous Linear Systems with Constant Coefficients|§31]] are complex-valued. Their real and imaginary parts are two independent real solutions, built from $e^{\lambda t}\cos\mu t$ and $e^{\lambda t}\sin\mu t$, exactly as for complex roots of the characteristic equation in [[§15 Complex Roots of the Characteristic Equation|§15]]. In the phase plane the factor $e^{\lambda t}$ makes trajectories spiral in or out while the trigonometric factors rotate them, so the origin is a spiral point, or a center when $\lambda = 0$. With the saddle points and nodes of [[§31 Homogeneous Linear Systems with Constant Coefficients|§31]] this completes the classification of $2 \times 2$ systems, and following the eigenvalues as a parameter varies shows where the phase portrait changes type. The linear-algebra side of complex eigenvalues is [[§36 Complex Eigenvalues|235 §36]].
 
 ## Complex Eigenvalues and Real Solutions
 
@@ -213,12 +213,14 @@ So the two complex solutions carry the same information, and either one yields t
 ^thm-32-3
 
 > [!proof]+ Proof
-> *BDP establishes the cases through Examples §31.1, §31.2 and §32.1, each "typical of all $2 \times 2$ systems" of its kind; here is the general argument.* In each case write the general solution in coordinates adapted to $\mathbf{A}$.
+> *BDP establishes the cases through [[§31 Homogeneous Linear Systems with Constant Coefficients#^ex-31-1|Example §31.1]], [[§31 Homogeneous Linear Systems with Constant Coefficients#^ex-31-2|Example §31.2]] and Example §32.1, each "typical of all $2 \times 2$ systems" of its kind; here is the general argument.* In each case write the general solution in coordinates adapted to $\mathbf{A}$.
 >
 > **Real eigenvalues** $r_1 \ne r_2$, with eigenvectors $\boldsymbol{\xi}^{(1)}$, $\boldsymbol{\xi}^{(2)}$. By [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|Theorem §31.2]], $\mathbf{x}(t) = c_1e^{r_1t}\boldsymbol{\xi}^{(1)} + c_2e^{r_2t}\boldsymbol{\xi}^{(2)} = \mathbf{T}\mathbf{y}(t)$, where $\mathbf{T}$ has columns $\boldsymbol{\xi}^{(1)}$, $\boldsymbol{\xi}^{(2)}$ (invertible, by [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|Theorem §29.2]]) and $\mathbf{y}(t) = (c_1e^{r_1t}, c_2e^{r_2t})^T$. Since $\mathbf{y} = \mathbf{T}^{-1}\mathbf{x}$, $\mathbf{x}(t) \to \mathbf{0}$ if and only if $\mathbf{y}(t) \to \mathbf{0}$, and $\mathbf{x}$ is unbounded if and only if $\mathbf{y}$ is.
-> - Both $r_i < 0$: $\mathbf{y}(t) \to \mathbf{0}$ for all $c_1, c_2$, so every solution tends to $\mathbf{0}$: asymptotically stable.
+> - Both $r_i < 0$: $\mathbf{y}(t) \to \mathbf{0}$ for all $c_1, c_2$, so every solution tends to $\mathbf{0}$; moreover $|\mathbf{y}(t)| \le |\mathbf{y}(0)|$ for $t \ge 0$, so $|\mathbf{x}(t)| \le \|\mathbf{T}\|\,\|\mathbf{T}^{-1}\|\,|\mathbf{x}(0)|$ and solutions that start near $\mathbf{0}$ stay near it: asymptotically stable.
 > - Both $r_i > 0$: if $(c_1, c_2) \ne (0, 0)$, some $|c_ie^{r_it}| \to \infty$: every nonzero solution is unbounded, unstable.
 > - $r_1 > 0 > r_2$: the solution tends to $\mathbf{0}$ if $c_1 = 0$ (the line of $\boldsymbol{\xi}^{(2)}$) and is unbounded if $c_1 \ne 0$: almost all trajectories depart, unstable.
+>
+> *The shape of the trajectories* (the descriptions in [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-3|Definition §31.3]] and [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-4|Definition §31.4]]). Let $c_1 \ne 0$. For a node with $r_2 < r_1 < 0$, $e^{-r_1t}\mathbf{x}(t) = c_1\boldsymbol{\xi}^{(1)} + c_2e^{(r_2 - r_1)t}\boldsymbol{\xi}^{(2)} \to c_1\boldsymbol{\xi}^{(1)}$ as $t \to \infty$, so the direction of $\mathbf{x}(t)$ tends to that of $\pm\boldsymbol{\xi}^{(1)}$: the trajectory enters the origin tangent to the eigenvector of the eigenvalue nearer to $0$. (If $c_1 = 0$ it runs along the line of $\boldsymbol{\xi}^{(2)}$.) For $0 < r_1 < r_2$ the same limit, taken as $t \to -\infty$, shows that trajectories leave the origin tangent to $\boldsymbol{\xi}^{(1)}$. For a saddle with $r_1 > 0 > r_2$ and $c_1c_2 \ne 0$, $e^{-r_1t}\mathbf{x}(t) \to c_1\boldsymbol{\xi}^{(1)}$ as $t \to \infty$ and $e^{-r_2t}\mathbf{x}(t) \to c_2\boldsymbol{\xi}^{(2)}$ as $t \to -\infty$, while $|\mathbf{x}(t)| \to \infty$ at both ends: the trajectory comes in along the line of $\boldsymbol{\xi}^{(2)}$, leaves along that of $\boldsymbol{\xi}^{(1)}$, and never approaches the origin. So the eigenvector lines ($c_1 = 0$ or $c_2 = 0$) are the only trajectories that tend to the origin.
 >
 > **Complex eigenvalues** $\lambda \pm i\mu$, $\mu \ne 0$, with eigenvector $\mathbf{a} + i\mathbf{b}$. By Theorem §32.2, $\mathbf{x} = c_1\mathbf{u} + c_2\mathbf{v}$, and collecting the coefficients of $\mathbf{a}$ and $\mathbf{b}$ in (17),
 >
@@ -228,7 +230,7 @@ So the two complex solutions carry the same information, and either one yields t
 > $$
 >
 > with $\mathbf{T} = [\,\mathbf{a}\ \ \mathbf{b}\,]$ invertible because $\mathbf{a}$, $\mathbf{b}$ are independent (proof of Theorem §32.2). The matrix in $\mathbf{y}(t)$ is a rotation, so $\mathbf{y}(t)$ is the vector $(c_1, c_2)$ rotated by the angle $-\mu t$ and scaled by $e^{\lambda t}$: in the coordinates $\mathbf{y}$ the trajectory is a spiral $|\mathbf{y}(t)| = e^{\lambda t}\sqrt{c_1^2 + c_2^2}$ turning at constant angular speed $|\mu|$.
-> - $\lambda < 0$: $\mathbf{y}(t) \to \mathbf{0}$, so $\mathbf{x}(t) \to \mathbf{0}$ while winding around the origin infinitely often: asymptotically stable spiral point.
+> - $\lambda < 0$: $\mathbf{y}(t) \to \mathbf{0}$, so $\mathbf{x}(t) \to \mathbf{0}$ while winding around the origin infinitely often (the invertible linear map $\mathbf{T}$ carries a curve winding around $\mathbf{0}$ to one winding around $\mathbf{0}$), and as in the node case $|\mathbf{x}(t)| \le \|\mathbf{T}\|\,\|\mathbf{T}^{-1}\|\,|\mathbf{x}(0)|$ for $t \ge 0$: asymptotically stable spiral point.
 > - $\lambda > 0$: $|\mathbf{y}(t)| \to \infty$ for $\mathbf{x} \ne \mathbf{0}$: unstable spiral point.
 > - $\lambda = 0$: $\mathbf{y}(t)$ runs around a circle with period $2\pi/|\mu|$, so $\mathbf{x}(t) = \mathbf{T}\mathbf{y}(t)$ runs around an ellipse, the image of the circle under $\mathbf{T}$: a closed curve, periodic in time. Solutions starting near $\mathbf{0}$ stay near it ($|\mathbf{x}(t)| \le \|\mathbf{T}\|\,|\mathbf{y}(0)|$ and $|\mathbf{y}(0)| \le \|\mathbf{T}^{-1}\|\,|\mathbf{x}(0)|$) but do not approach it: stable, not asymptotically stable.
 
@@ -252,9 +254,9 @@ So the two complex solutions carry the same information, and either one yields t
 > [!example] Example §32.2: Classifying Complex-Eigenvalue Systems
 > For each matrix, find the eigenvalues and an eigenvector, the type of the origin for $\mathbf{Y}' = \mathbf{A}\mathbf{Y}$, and (in (c)) the general solution.
 >
-> **(a)** $\mathbf{A} = \begin{pmatrix} 6 & -2 \\ 4 & 2 \end{pmatrix}$. $(6 - \lambda)(2 - \lambda) + 8 = \lambda^2 - 8\lambda + 20 = (\lambda - 4)^2 + 4$, so $\lambda = 4 \pm 2i$. For $\lambda = 4 + 2i$, the first row of $\mathbf{A} - \lambda\mathbf{I}$ is $(2 - 2i, -2)$, so $(2 - 2i)a = 2b$, $b = (1 - i)a$, and $\mathbf{v}_1 = (1, 1 - i)^T$; then $\mathbf{v}_2 = \overline{\mathbf{v}_1} = (1, 1 + i)^T$ for $4 - 2i$. Real part $4 > 0$: a **spiral source** (unstable spiral point). With $\mathbf{a} = (1, 1)^T$, $\mathbf{b} = (0, -1)^T$, (17) gives the real solutions $e^{4t}(\cos 2t,\ \cos 2t + \sin 2t)^T$ and $e^{4t}(\sin 2t,\ \sin 2t - \cos 2t)^T$.
+> **(a)** $\mathbf{A} = \begin{pmatrix} 6 & -2 \\ 4 & 2 \end{pmatrix}$. $(6 - r)(2 - r) + 8 = r^2 - 8r + 20 = (r - 4)^2 + 4$, so $r = 4 \pm 2i$. For $r = 4 + 2i$, the first row of $\mathbf{A} - r\mathbf{I}$ is $(2 - 2i, -2)$, so $(2 - 2i)a = 2b$, $b = (1 - i)a$, and $\boldsymbol{\xi}^{(1)} = (1, 1 - i)^T$; then $\boldsymbol{\xi}^{(2)} = \overline{\boldsymbol{\xi}^{(1)}} = (1, 1 + i)^T$ for $4 - 2i$. Real part $4 > 0$: a **spiral source** (unstable spiral point). With $\mathbf{a} = (1, 1)^T$, $\mathbf{b} = (0, -1)^T$, (17) gives the real solutions $e^{4t}(\cos 2t,\ \cos 2t + \sin 2t)^T$ and $e^{4t}(\sin 2t,\ \sin 2t - \cos 2t)^T$.
 >
-> **(b)** $\mathbf{A} = \begin{pmatrix} -4 & 5 \\ -5 & 4 \end{pmatrix}$. $(-4 - \lambda)(4 - \lambda) + 25 = \lambda^2 + 9$, so $\lambda = \pm 3i$: a **center**. For $\lambda = 3i$, the first row of $\mathbf{A} - 3i\mathbf{I}$ gives $(-4 - 3i)a + 5b = 0$, so $\mathbf{v}_1 = (5, 4 + 3i)^T$ and $\mathbf{v}_2 = (5, 4 - 3i)^T$. With $\mathbf{a} = (5, 4)^T$, $\mathbf{b} = (0, 3)^T$, $\lambda = 0$, $\mu = 3$:
+> **(b)** $\mathbf{A} = \begin{pmatrix} -4 & 5 \\ -5 & 4 \end{pmatrix}$. $(-4 - r)(4 - r) + 25 = r^2 + 9$, so $r = \pm 3i$: a **center**. For $r = 3i$, the first row of $\mathbf{A} - 3i\mathbf{I}$ gives $(-4 - 3i)a + 5b = 0$, so $\boldsymbol{\xi}^{(1)} = (5, 4 + 3i)^T$ and $\boldsymbol{\xi}^{(2)} = (5, 4 - 3i)^T$. With $\mathbf{a} = (5, 4)^T$, $\mathbf{b} = (0, 3)^T$, $\lambda = 0$, $\mu = 3$:
 >
 > $$
 > \mathbf{u}(t) = \begin{pmatrix} 5\cos 3t \\ 4\cos 3t - 3\sin 3t \end{pmatrix}, \qquad \mathbf{v}(t) = \begin{pmatrix} 5\sin 3t \\ 4\sin 3t + 3\cos 3t \end{pmatrix},
@@ -262,9 +264,9 @@ So the two complex solutions carry the same information, and either one yields t
 >
 > periodic with period $2\pi/3$: the trajectories are ellipses (panel (b) of the figure above). At $(1, 0)^T$, $\mathbf{A}\mathbf{x} = (-4, -5)^T$ points down, so the motion is clockwise.
 >
-> **(c)** $\mathbf{A} = \begin{pmatrix} -1 & 4 \\ -5 & -5 \end{pmatrix}$. $(-1 - \lambda)(-5 - \lambda) + 20 = \lambda^2 + 6\lambda + 25 = (\lambda + 3)^2 + 16$, so $\lambda = -3 \pm 4i$: a **spiral sink** (asymptotically stable spiral point). Direction: at $(1, 0)^T$, $\mathbf{A}\mathbf{x} = (-1, -5)^T$ points down, so clockwise.
+> **(c)** $\mathbf{A} = \begin{pmatrix} -1 & 4 \\ -5 & -5 \end{pmatrix}$. $(-1 - r)(-5 - r) + 20 = r^2 + 6r + 25 = (r + 3)^2 + 16$, so $r = -3 \pm 4i$: a **spiral sink** (asymptotically stable spiral point). Direction: at $(1, 0)^T$, $\mathbf{A}\mathbf{x} = (-1, -5)^T$ points down, so clockwise.
 >
-> **Eigenvector.** For $\lambda = -3 + 4i$, the first row of $\mathbf{A} - \lambda\mathbf{I}$ is $(2 - 4i, 4)$: $(2 - 4i)y_1 + 4y_2 = 0$, so $4y_2 = (-2 + 4i)y_1$ and $\mathbf{v}_1 = (2, -1 + 2i)^T = \mathbf{a} + i\mathbf{b}$ with $\mathbf{a} = (2, -1)^T$, $\mathbf{b} = (0, 2)^T$.
+> **Eigenvector.** For $r = -3 + 4i$, the first row of $\mathbf{A} - r\mathbf{I}$ is $(2 - 4i, 4)$: $(2 - 4i)\xi_1 + 4\xi_2 = 0$, so $4\xi_2 = (-2 + 4i)\xi_1$ and $\boldsymbol{\xi}^{(1)} = (2, -1 + 2i)^T = \mathbf{a} + i\mathbf{b}$ with $\mathbf{a} = (2, -1)^T$, $\mathbf{b} = (0, 2)^T$.
 >
 > **General solution.** By (17) with $\lambda = -3$, $\mu = 4$,
 >
@@ -281,12 +283,12 @@ So the two complex solutions carry the same information, and either one yields t
 > [!example] Example §32.3: Two Spiral Sinks from Final Exams
 > **(a)** For $\mathbf{Y}' = \mathbf{A}\mathbf{Y}$ with $\mathbf{A} = \begin{pmatrix} -2 & 5 \\ -2 & 0 \end{pmatrix}$, find the eigenvalues and an eigenvector for one of them, sketch the phase portrait, and classify the origin.
 >
-> **Eigenvalues.** $\det(\mathbf{A} - \lambda\mathbf{I}) = (-2 - \lambda)(-\lambda) + 10 = \lambda^2 + 2\lambda + 10 = (\lambda + 1)^2 + 9$, so $\lambda_{1,2} = -1 \pm 3i$.
+> **Eigenvalues.** $\det(\mathbf{A} - r\mathbf{I}) = (-2 - r)(-r) + 10 = r^2 + 2r + 10 = (r + 1)^2 + 9$, so $r_{1,2} = -1 \pm 3i$.
 >
 > **Eigenvector.** $\mathbf{A}(a, b)^T = (-1 + 3i)(a, b)^T$ reads $-2a + 5b = (-1 + 3i)a$ and $-2a = (-1 + 3i)b$. The second (simpler) equation is satisfied by $b = -2$, $a = -1 + 3i$:
 >
 > $$
-> \mathbf{v}_1 = \begin{pmatrix} -1 + 3i \\ -2 \end{pmatrix} .
+> \boldsymbol{\xi}^{(1)} = \begin{pmatrix} -1 + 3i \\ -2 \end{pmatrix} .
 > $$
 >
 > (Check with the first equation: $-2(-1 + 3i) - 10 = -8 - 6i = (-1 + 3i)^2$.)
@@ -295,12 +297,12 @@ So the two complex solutions carry the same information, and either one yields t
 >
 > **(b)** Find the general solution of $\mathbf{Y}' = \mathbf{A}\mathbf{Y}$ with $\mathbf{A} = \begin{pmatrix} -3 & 4 \\ -2 & 1 \end{pmatrix}$, sketch the phase portrait, and classify the origin.
 >
-> **Eigenvalues.** $(-3 - \lambda)(1 - \lambda) + 8 = \lambda^2 + 2\lambda + 5 = (\lambda + 1)^2 + 4$, so $\lambda = -1 \pm 2i$.
+> **Eigenvalues.** $(-3 - r)(1 - r) + 8 = r^2 + 2r + 5 = (r + 1)^2 + 4$, so $r = -1 \pm 2i$.
 >
-> **Eigenvector.** For $\lambda = -1 + 2i$ the second row of $\mathbf{A} - \lambda\mathbf{I}$ is $(-2, 2 - 2i)$: $-2a + (2 - 2i)b = 0$, so $a = (1 - i)b$ and
+> **Eigenvector.** For $r = -1 + 2i$ the second row of $\mathbf{A} - r\mathbf{I}$ is $(-2, 2 - 2i)$: $-2a + (2 - 2i)b = 0$, so $a = (1 - i)b$ and
 >
 > $$
-> \mathbf{v}_1 = \begin{pmatrix} 1 - i \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \end{pmatrix} + i\begin{pmatrix} -1 \\ 0 \end{pmatrix} .
+> \boldsymbol{\xi}^{(1)} = \begin{pmatrix} 1 - i \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \end{pmatrix} + i\begin{pmatrix} -1 \\ 0 \end{pmatrix} .
 > $$
 >
 > **General solution.** By (17) with $\mathbf{a} = (1, 1)^T$, $\mathbf{b} = (-1, 0)^T$, $\lambda = -1$, $\mu = 2$:

@@ -210,14 +210,14 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 > W[u, v] = uv' - u'v = e^{2\lambda t}\big[\cos\mu t\,(\lambda\sin\mu t + \mu\cos\mu t) - \sin\mu t\,(\lambda\cos\mu t - \mu\sin\mu t)\big] = \mu e^{2\lambda t}\big(\cos^2\mu t + \sin^2\mu t\big) = \mu e^{2\lambda t} .
 > $$
 >
-> Since $\mu \ne 0$, $W \ne 0$, so $u$, $v$ form a fundamental set and (25) is the general solution by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]]. (If $\mu = 0$, the roots are real and equal, the case of [[§16 Repeated Roots; Reduction of Order|§16]].)
+> Since $\mu \ne 0$, $W \ne 0$, so $u$, $v$ form a fundamental set and (25) is the general solution by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]]. (If $\mu = 0$, the roots are real and equal, the case of [[§16 Repeated Roots; Reduction of Order#^thm-16-1|Theorem §16.1]].)
 
 ^pf-15-2
 
 *Uses:* [[§15 Complex Roots of the Characteristic Equation#^prop-15-1|§15.1]], [[§15 Complex Roots of the Characteristic Equation#^def-15-1|Def. §15.1]], [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-1|§13.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-6|§14.6]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|§14.4]]
 
 > [!remark]- Connections
-> - The systems version: for a real matrix with complex eigenvalue $a + bi$ and eigenvector $\mathbf{v}$, the real and imaginary parts of $\mathbf{v}e^{(a+bi)t}$ are two real solutions of $\mathbf{x}' = A\mathbf{x}$, [[§38 Applications to Differential Equations#^thm-38-4|235 Thm. §38.4]]; in this subject [[§32 Complex-Valued Eigenvalues|§32]] (BDP 7.6).
+> - The systems version: for a real matrix with complex eigenvalue $a + bi$ and eigenvector $\mathbf{v}$, the real and imaginary parts of $\mathbf{v}e^{(a+bi)t}$ are two real solutions of $\mathbf{x}' = A\mathbf{x}$, [[§38 Applications to Differential Equations#^thm-38-4|235 Thm. §38.4]]; in this subject [[§32 Complex-Valued Eigenvalues#^thm-32-2|Theorem §32.2]] (BDP 7.6).
 
 The solution (25) can be written down as soon as $\lambda$ and $\mu$ are known; by the quadratic formula (with $a > 0$), $\lambda = -\frac{b}{2a}$ and $\mu = \frac{\sqrt{4ac - b^2}}{2a}$.
 
@@ -251,8 +251,7 @@ The solution (25) can be written down as soon as $\lambda$ and $\mu$ are known; 
 >
 > Both solutions decay in an oscillating way, since $\lambda = -3 < 0$.
 >
-> *Source: 331 Written HW 3, Problem 2*
-> *Source: 331 Midterm (Fall 2021), Q4*
+> *Source: 331 Written HW 3, Problem 2; 331 Midterm (Fall 2021), Q4*
 
 ^ex-15-2
 

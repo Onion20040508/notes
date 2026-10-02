@@ -11,7 +11,7 @@ tags: [ordinary-differential-equations, math331]
 
 *Boyce–DiPrima, Section 7.5 · MATH 331 Written HW 6, Final Exam (Fall 2021), Final Exam (Fall 2022, alternate).*
 
-For a system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with a constant matrix $\mathbf{A}$, the natural guess $\mathbf{x} = \boldsymbol{\xi}e^{rt}$ works exactly when $r$ is an eigenvalue of $\mathbf{A}$ and $\boldsymbol{\xi}$ an eigenvector, so solving the differential equation becomes the algebra of [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors|§29]]. When the eigenvalues are real and distinct, or $\mathbf{A}$ is symmetric, this gives a fundamental set and the general solution. For $2 \times 2$ systems the solutions are drawn as trajectories in the phase plane, and the signs of the two real eigenvalues decide the picture: a saddle point when they are opposite, a node when they agree. The same material appears in [[§38 Applications to Differential Equations|235 §38]] from the linear-algebra side; this section is the fuller treatment and the basis of the classification completed in [[§32 Complex-Valued Eigenvalues|§32]].
+For a system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with a constant matrix $\mathbf{A}$, the natural guess $\mathbf{x} = \boldsymbol{\xi}e^{rt}$ works exactly when $r$ is an eigenvalue of $\mathbf{A}$ and $\boldsymbol{\xi}$ an eigenvector, so solving the differential equation becomes the algebra of [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors|§29]]. When the eigenvalues are real and distinct, or $\mathbf{A}$ is symmetric, this gives a fundamental set and the general solution. For $2 \times 2$ systems the solutions are drawn as trajectories in the phase plane, and the signs of the two real eigenvalues decide the picture: a saddle point when they are opposite, a node when they agree. The same material appears in [[§38 Applications to Differential Equations|235 §38]] from the linear-algebra side; this section is the fuller treatment and the basis of the classification completed in [[§32 Complex-Valued Eigenvalues#^thm-32-3|Theorem §32.3]].
 
 ## Equilibrium Solutions and the Phase Plane
 
@@ -65,7 +65,7 @@ The Wronskian of the two solutions is $e^{2t}e^{-3t} = e^{-t} \ne 0$, so they fo
 
 ^pf-31-1
 
-*Uses:* [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-4|Def. §29.4]]
+*Uses:* [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-4|Def. §29.4]], [[§15 Complex Roots of the Characteristic Equation#^prop-15-1|§15.1]] (complex exponential)
 
 > [!remark]- Connections
 > - See also: [[§38 Applications to Differential Equations#^thm-38-2|235 Thm. §38.2]] (Lay's "eigenfunctions" $\mathbf{v}e^{\lambda t}$, the same statement and proof).
@@ -201,7 +201,7 @@ For $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{A}$ real and $n \times n$
 ^thm-31-2
 
 > [!proof]+ Proof
-> **The hypothesis holds in cases (a) and (b).** (a) Each real eigenvalue has a real eigenvector, since $\mathbf{A} - r\mathbf{I}$ is then a real singular matrix and row reduction stays in real numbers. Distinct eigenvalues have linearly independent eigenvectors ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|Theorem §29.4]]). (b) A real symmetric matrix is Hermitian, so all its eigenvalues are real and it has a full set of $n$ linearly independent eigenvectors ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|Theorem §29.5]], parts 1 and 2), which may be taken real by the same remark.
+> **The hypothesis holds in cases (a) and (b).** (a) Each real eigenvalue has a real eigenvector, since $\mathbf{A} - r\mathbf{I}$ is then a real singular matrix and row reduction stays in real numbers. Distinct eigenvalues have linearly independent eigenvectors ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|Theorem §29.4]]). (b) A real symmetric matrix is Hermitian, so all its eigenvalues are real and it has a full set of $n$ linearly independent eigenvectors ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|Theorem §29.5]], parts 1 and 2). They can be taken real: for each eigenvalue $r$, the real matrix $\mathbf{A} - r\mathbf{I}$ has the same echelon form over $\mathbb{R}$ and over $\mathbb{C}$, so the dimension of its null space is the same in $\mathbb{R}^n$ and in $\mathbb{C}^n$, and a real basis of each real null space is also a basis of the complex one. The real bases for all the eigenvalues together are real eigenvectors whose complex span contains every eigenvector, hence the full set, hence all of $\mathbb{C}^n$; a spanning set contains a basis, so $n$ of them are linearly independent. (Lay proves directly that a real symmetric matrix has $n$ orthonormal real eigenvectors: [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]].)
 >
 > **The conclusion.** Each $\mathbf{x}^{(i)}$ is a solution by Theorem §31.1. Factoring $e^{r_jt}$ out of the $j$th column of the Wronskian,
 >
@@ -221,7 +221,7 @@ For $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{A}$ real and $n \times n$
 > [!remark] Remark: Method — Eigenvector Solutions of x′ = Ax
 > 1. **Eigenvalues.** Solve the characteristic equation $\det(\mathbf{A} - r\mathbf{I}) = 0$. For $2 \times 2$ matrices, $\det(\mathbf{A} - r\mathbf{I}) = r^2 - (\operatorname{tr}\mathbf{A})\,r + \det\mathbf{A}$.
 > 2. **Eigenvectors.** For each eigenvalue, solve $(\mathbf{A} - r\mathbf{I})\boldsymbol{\xi} = \mathbf{0}$. In the $2 \times 2$ case one row suffices: the row $(a, b)$ gives $\boldsymbol{\xi} = (b, -a)^T$ (if not both zero).
-> 3. **General solution.** If there are $n$ independent eigenvectors (Theorem §31.2), $\mathbf{x} = c_1\boldsymbol{\xi}^{(1)}e^{r_1t} + \cdots + c_n\boldsymbol{\xi}^{(n)}e^{r_nt}$. Otherwise see [[§32 Complex-Valued Eigenvalues|§32]] (complex eigenvalues) or [[§34★ Repeated Eigenvalues|§34★]] (too few eigenvectors).
+> 3. **General solution.** If there are $n$ independent eigenvectors (Theorem §31.2), $\mathbf{x} = c_1\boldsymbol{\xi}^{(1)}e^{r_1t} + \cdots + c_n\boldsymbol{\xi}^{(n)}e^{r_nt}$. Otherwise see [[§32 Complex-Valued Eigenvalues#^rem-32-1|the method of §32]] (complex eigenvalues) or [[§34★ Repeated Eigenvalues#^rem-34-1|the method of §34★]] (too few eigenvectors).
 > 4. **Initial value problem.** Setting $t = 0$ gives the linear system $c_1\boldsymbol{\xi}^{(1)} + \cdots + c_n\boldsymbol{\xi}^{(n)} = \mathbf{x}(0)$ for the constants. Check the answer by substituting $t = 0$.
 > 5. **Phase portrait** ($2 \times 2$, by hand). Draw the two eigenvector lines; on each, the motion is outward if its eigenvalue is positive and inward if negative. Then fill in curves using dominance: as $t \to \infty$ trajectories follow the line of the larger eigenvalue, and as $t \to -\infty$ the line of the smaller one. Opposite signs give a saddle, equal signs a node.
 
@@ -246,7 +246,7 @@ For $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{A}$ real and $n \times n$
 > \mathbf{x} = c_1\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}e^{2t} + c_2\begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix}e^{-t} + c_3\begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}e^{-t} . \qquad (34)
 > $$
 >
-> Even though $r = -1$ has algebraic multiplicity $2$, it has two independent eigenvectors, which is all that is needed. (Check with Abel's formula: $\operatorname{tr}\mathbf{A} = 0$, so the Wronskian is constant, $e^{(2 - 1 - 1)t} \cdot 3 = 3$.)
+> Even though $r = -1$ has algebraic multiplicity $2$, it has two independent eigenvectors, which is all that is needed. (Check with Abel's formula, [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3|Theorem §30.3]]: $\operatorname{tr}\mathbf{A} = 0$, so the Wronskian is constant, $e^{(2 - 1 - 1)t} \cdot 3 = 3$.)
 >
 > **Behavior.** If $c_1 \ne 0$, the term with $e^{2t}$ dominates and all components of $\mathbf{x}$ become unbounded as $t \to \infty$. If $c_1 = 0$, only the decaying terms remain and $\mathbf{x} \to \mathbf{0}$. Since $\boldsymbol{\xi}^{(1)}$ is orthogonal to $\boldsymbol{\xi}^{(2)}$ and $\boldsymbol{\xi}^{(3)}$, $c_1 = (\mathbf{x}(0), \boldsymbol{\xi}^{(1)})/3$, so the initial points with $c_1 = 0$ are exactly those in the plane $x_1 + x_2 + x_3 = 0$ spanned by $\boldsymbol{\xi}^{(2)}$ and $\boldsymbol{\xi}^{(3)}$. Solutions that start in this plane approach the origin; all others become unbounded.
 >
@@ -255,7 +255,7 @@ For $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{A}$ real and $n \times n$
 ^ex-31-3
 
 > [!remark] Remark: The Remaining Cases
-> - **Complex eigenvalues** (possibility 2). If all eigenvalues are different there are still $n$ independent solutions of the form (27), but some are complex-valued. As in Chapter 3, real solutions can be extracted from them; this is [[§32 Complex-Valued Eigenvalues|§32]].
+> - **Complex eigenvalues** (possibility 2). If all eigenvalues are different there are still $n$ independent solutions of the form (27), but some are complex-valued. As in Chapter 3, real solutions can be extracted from them; this is [[§32 Complex-Valued Eigenvalues#^thm-32-2|Theorem §32.2]].
 > - **Repeated eigenvalues** (possibility 3). An eigenvalue of algebraic multiplicity $m$ may have fewer than $m$ independent eigenvectors ($q < m$, [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-3|Theorem §29.3]]). Then there are fewer than $n$ solutions of the form $\boldsymbol{\xi}e^{rt}$, and solutions of another form are needed, much as a repeated root of the characteristic equation of an $n$th-order equation gives $e^{rt}, te^{rt}, \ldots$ ([[§16 Repeated Roots; Reduction of Order#^thm-16-1|Theorem §16.1]]). This is [[§34★ Repeated Eigenvalues|§34★]].
 > - **Complex matrices.** If $\mathbf{A}$ itself is complex, the eigenvalues need not come in conjugate pairs and the eigenvectors are usually complex; (29) still holds when there are $n$ independent eigenvectors, but the solutions are complex-valued.
 
@@ -266,9 +266,9 @@ For $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{A}$ real and $n \times n$
 > [!example] Example §31.4: Two Initial Value Problems
 > **(a)** Solve $\mathbf{Y}' = \mathbf{A}\mathbf{Y}$ with $\mathbf{A} = \begin{pmatrix} 1 & 3 \\ 3 & 1 \end{pmatrix}$ and $\mathbf{Y}(0) = \begin{pmatrix} -9 \\ 7 \end{pmatrix}$.
 >
-> **Eigenvalues.** $\det(\mathbf{A} - \lambda\mathbf{I}) = (1 - \lambda)^2 - 9 = \lambda^2 - 2\lambda - 8 = (\lambda - 4)(\lambda + 2)$, so $\lambda_1 = 4$, $\lambda_2 = -2$.
+> **Eigenvalues.** $\det(\mathbf{A} - r\mathbf{I}) = (1 - r)^2 - 9 = r^2 - 2r - 8 = (r - 4)(r + 2)$, so $r_1 = 4$, $r_2 = -2$.
 >
-> **Eigenvectors.** For $\lambda = 4$, the first row of $\mathbf{A}\mathbf{v} = 4\mathbf{v}$ reads $a + 3b = 4a$, so $a = b$ and $\mathbf{v}_1 = (1, 1)^T$. For $\lambda = -2$, $a + 3b = -2a$ gives $b = -a$, so $\mathbf{v}_2 = (1, -1)^T$.
+> **Eigenvectors.** For $r = 4$, the first row of $\mathbf{A}\boldsymbol{\xi} = 4\boldsymbol{\xi}$ reads $a + 3b = 4a$, so $a = b$ and $\boldsymbol{\xi}^{(1)} = (1, 1)^T$. For $r = -2$, $a + 3b = -2a$ gives $b = -a$, so $\boldsymbol{\xi}^{(2)} = (1, -1)^T$.
 >
 > **General solution and initial condition.**
 >
@@ -282,19 +282,19 @@ For $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{A}$ real and $n \times n$
 > \mathbf{Y}(t) = -e^{4t}\begin{pmatrix} 1 \\ 1 \end{pmatrix} - 8e^{-2t}\begin{pmatrix} 1 \\ -1 \end{pmatrix} = \begin{pmatrix} -e^{4t} - 8e^{-2t} \\ -e^{4t} + 8e^{-2t} \end{pmatrix} .
 > $$
 >
-> Check: $\mathbf{Y}(0) = (-1 - 8, -1 + 8)^T = (-9, 7)^T$. The eigenvalues have opposite signs, so the origin is a saddle point; this solution starts near the incoming line of $\mathbf{v}_2$ and leaves along the direction $-\mathbf{v}_1 = (-1, -1)^T$.
+> Check: $\mathbf{Y}(0) = (-1 - 8, -1 + 8)^T = (-9, 7)^T$. The eigenvalues have opposite signs, so the origin is a saddle point; this solution starts near the incoming line of $\boldsymbol{\xi}^{(2)}$ and leaves along the direction $-\boldsymbol{\xi}^{(1)} = (-1, -1)^T$.
 >
 > **(b)** Solve $\mathbf{Y}' = \mathbf{A}\mathbf{Y}$ with $\mathbf{A} = \begin{pmatrix} 4 & 1 \\ 1 & 4 \end{pmatrix}$ and $\mathbf{Y}(0) = \begin{pmatrix} 9 \\ 5 \end{pmatrix}$.
 >
-> $\det(\mathbf{A} - \lambda\mathbf{I}) = (4 - \lambda)^2 - 1 = \lambda^2 - 8\lambda + 15 = (\lambda - 5)(\lambda - 3)$. For $\lambda = 5$, $4a + b = 5a$ gives $\mathbf{v}_1 = (1, 1)^T$; for $\lambda = 3$, $4a + b = 3a$ gives $\mathbf{v}_2 = (1, -1)^T$. Then $\mathbf{Y}(0) = (c_1 + c_2, c_1 - c_2)^T = (9, 5)^T$ gives $c_1 = 7$, $c_2 = 2$:
+> $\det(\mathbf{A} - r\mathbf{I}) = (4 - r)^2 - 1 = r^2 - 8r + 15 = (r - 5)(r - 3)$. For $r = 5$, $4a + b = 5a$ gives $\boldsymbol{\xi}^{(1)} = (1, 1)^T$; for $r = 3$, $4a + b = 3a$ gives $\boldsymbol{\xi}^{(2)} = (1, -1)^T$. Then $\mathbf{Y}(0) = (c_1 + c_2, c_1 - c_2)^T = (9, 5)^T$ gives $c_1 = 7$, $c_2 = 2$:
 >
 > $$
 > \mathbf{Y}(t) = 7e^{5t}\begin{pmatrix} 1 \\ 1 \end{pmatrix} + 2e^{3t}\begin{pmatrix} 1 \\ -1 \end{pmatrix} = \begin{pmatrix} 7e^{5t} + 2e^{3t} \\ 7e^{5t} - 2e^{3t} \end{pmatrix} .
 > $$
 >
-> Both eigenvalues are positive: the origin is an unstable node (a source), and the solution grows without bound in the direction of $\mathbf{v}_1$.
+> Both eigenvalues are positive: the origin is an unstable node (a source), and the solution grows without bound in the direction of $\boldsymbol{\xi}^{(1)}$.
 >
-> In both parts $\mathbf{A}$ is symmetric, so the eigenvectors are orthogonal ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|Theorem §29.5]]) and the constants can be read off without solving a system: $c_i = (\mathbf{Y}(0), \mathbf{v}_i)/(\mathbf{v}_i, \mathbf{v}_i)$, for instance $c_1 = (9 + 5)/2 = 7$ in (b).
+> In both parts $\mathbf{A}$ is symmetric, so the eigenvectors are orthogonal ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|Theorem §29.5]]) and the constants can be read off without solving a system: $c_i = (\mathbf{Y}(0), \boldsymbol{\xi}^{(i)})/(\boldsymbol{\xi}^{(i)}, \boldsymbol{\xi}^{(i)})$, for instance $c_1 = (9 + 5)/2 = 7$ in (b).
 >
 > *Source: 331 Final (Fall 2021), Q6; 331 Final (Fall 2022, alternate), Q5*
 
@@ -303,19 +303,19 @@ For $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{A}$ real and $n \times n$
 > [!example] Example §31.5: Classifying Real-Eigenvalue Systems
 > For each matrix, find the eigenvalues and eigenvectors, the type of the origin for $\mathbf{Y}' = \mathbf{A}\mathbf{Y}$, and the general solution.
 >
-> **(a)** $\mathbf{A} = \begin{pmatrix} -9 & 8 \\ -3 & 1 \end{pmatrix}$. $(-9 - \lambda)(1 - \lambda) + 24 = \lambda^2 + 8\lambda + 15 = (\lambda + 3)(\lambda + 5)$, so $\lambda_1 = -3$, $\lambda_2 = -5$. For $\lambda = -3$, the second row of $\mathbf{A} + 3\mathbf{I} = \begin{pmatrix} -6 & 8 \\ -3 & 4 \end{pmatrix}$ gives $3a = 4b$, $\mathbf{v}_1 = (4, 3)^T$. For $\lambda = -5$, $\mathbf{A} + 5\mathbf{I} = \begin{pmatrix} -4 & 8 \\ -3 & 6 \end{pmatrix}$ gives $a = 2b$, $\mathbf{v}_2 = (2, 1)^T$. Both eigenvalues are negative: an asymptotically stable **node** (a **sink**). Trajectories enter the origin tangent to the line of $\mathbf{v}_1$, the slower eigenvalue $-3$.
+> **(a)** $\mathbf{A} = \begin{pmatrix} -9 & 8 \\ -3 & 1 \end{pmatrix}$. $(-9 - r)(1 - r) + 24 = r^2 + 8r + 15 = (r + 3)(r + 5)$, so $r_1 = -3$, $r_2 = -5$. For $r = -3$, the second row of $\mathbf{A} + 3\mathbf{I} = \begin{pmatrix} -6 & 8 \\ -3 & 4 \end{pmatrix}$ gives $3a = 4b$, $\boldsymbol{\xi}^{(1)} = (4, 3)^T$. For $r = -5$, $\mathbf{A} + 5\mathbf{I} = \begin{pmatrix} -4 & 8 \\ -3 & 6 \end{pmatrix}$ gives $a = 2b$, $\boldsymbol{\xi}^{(2)} = (2, 1)^T$. Both eigenvalues are negative: an asymptotically stable **node** (a **sink**). Trajectories enter the origin tangent to the line of $\boldsymbol{\xi}^{(1)}$, the slower eigenvalue $-3$.
 >
 > $$
 > \mathbf{Y}(t) = c_1e^{-3t}\begin{pmatrix} 4 \\ 3 \end{pmatrix} + c_2e^{-5t}\begin{pmatrix} 2 \\ 1 \end{pmatrix} .
 > $$
 >
-> **(b)** $\mathbf{A} = \begin{pmatrix} 2 & 2 \\ -1 & 5 \end{pmatrix}$. $(2 - \lambda)(5 - \lambda) + 2 = \lambda^2 - 7\lambda + 12 = (\lambda - 3)(\lambda - 4)$. For $\lambda = 3$, $\mathbf{A} - 3\mathbf{I} = \begin{pmatrix} -1 & 2 \\ -1 & 2 \end{pmatrix}$ gives $\mathbf{v}_1 = (2, 1)^T$; for $\lambda = 4$, $\mathbf{A} - 4\mathbf{I} = \begin{pmatrix} -2 & 2 \\ -1 & 1 \end{pmatrix}$ gives $\mathbf{v}_2 = (1, 1)^T$. Both positive: an unstable **node** (a **source**). Trajectories leave the origin tangent to the line of $\mathbf{v}_1$ (as $t \to -\infty$ the term $e^{3t}$ dominates) and far out become parallel to $\mathbf{v}_2$.
+> **(b)** $\mathbf{A} = \begin{pmatrix} 2 & 2 \\ -1 & 5 \end{pmatrix}$. $(2 - r)(5 - r) + 2 = r^2 - 7r + 12 = (r - 3)(r - 4)$. For $r = 3$, $\mathbf{A} - 3\mathbf{I} = \begin{pmatrix} -1 & 2 \\ -1 & 2 \end{pmatrix}$ gives $\boldsymbol{\xi}^{(1)} = (2, 1)^T$; for $r = 4$, $\mathbf{A} - 4\mathbf{I} = \begin{pmatrix} -2 & 2 \\ -1 & 1 \end{pmatrix}$ gives $\boldsymbol{\xi}^{(2)} = (1, 1)^T$. Both positive: an unstable **node** (a **source**). Trajectories leave the origin tangent to the line of $\boldsymbol{\xi}^{(1)}$ (as $t \to -\infty$ the term $e^{3t}$ dominates) and far out become parallel to $\boldsymbol{\xi}^{(2)}$.
 >
 > $$
 > \mathbf{Y}(t) = c_1e^{3t}\begin{pmatrix} 2 \\ 1 \end{pmatrix} + c_2e^{4t}\begin{pmatrix} 1 \\ 1 \end{pmatrix} .
 > $$
 >
-> **(c)** $\mathbf{A} = \begin{pmatrix} 2 & 4 \\ 3 & 1 \end{pmatrix}$. $(2 - \lambda)(1 - \lambda) - 12 = \lambda^2 - 3\lambda - 10 = (\lambda - 5)(\lambda + 2)$. For $\lambda = 5$, $\mathbf{A} - 5\mathbf{I} = \begin{pmatrix} -3 & 4 \\ 3 & -4 \end{pmatrix}$ gives $3a = 4b$, $\mathbf{v}_1 = (4, 3)^T$; for $\lambda = -2$, $\mathbf{A} + 2\mathbf{I} = \begin{pmatrix} 4 & 4 \\ 3 & 3 \end{pmatrix}$ gives $\mathbf{v}_2 = (1, -1)^T$. Opposite signs: a **saddle point**, with outgoing line along $\mathbf{v}_1$ and incoming line along $\mathbf{v}_2$.
+> **(c)** $\mathbf{A} = \begin{pmatrix} 2 & 4 \\ 3 & 1 \end{pmatrix}$. $(2 - r)(1 - r) - 12 = r^2 - 3r - 10 = (r - 5)(r + 2)$. For $r = 5$, $\mathbf{A} - 5\mathbf{I} = \begin{pmatrix} -3 & 4 \\ 3 & -4 \end{pmatrix}$ gives $3a = 4b$, $\boldsymbol{\xi}^{(1)} = (4, 3)^T$; for $r = -2$, $\mathbf{A} + 2\mathbf{I} = \begin{pmatrix} 4 & 4 \\ 3 & 3 \end{pmatrix}$ gives $\boldsymbol{\xi}^{(2)} = (1, -1)^T$. Opposite signs: a **saddle point**, with outgoing line along $\boldsymbol{\xi}^{(1)}$ and incoming line along $\boldsymbol{\xi}^{(2)}$.
 >
 > $$
 > \mathbf{Y}(t) = c_1e^{5t}\begin{pmatrix} 4 \\ 3 \end{pmatrix} + c_2e^{-2t}\begin{pmatrix} 1 \\ -1 \end{pmatrix} .

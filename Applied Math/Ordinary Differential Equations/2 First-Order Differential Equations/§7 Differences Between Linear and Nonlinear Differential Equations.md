@@ -338,7 +338,7 @@ For a linear problem, (8) gives the solution $y = \phi(t)$ explicitly: the value
 
 ^def-7-2
 
-If (26) is simple enough, for instance quadratic in $y$ as in Example §7.2, it can be solved for $y$ analytically. More often it cannot, and the value of $y$ for a given $t$ must be computed numerically; plotting several such pairs $(t, y)$ sketches the integral curve. Examples §7.2–§7.4 are nonlinear problems whose explicit solution is easy to find; BDP's Examples 2.2.1 and 2.2.3 ([[§5 Separable Differential Equations#^ex-5-2|Example §5.2]]) are better left in implicit form, which is the more typical situation. More often than not it is impossible even to find an implicit expression for the solution of a first-order nonlinear equation.
+If (26) is simple enough, for instance quadratic in $y$ as in Example §7.2, it can be solved for $y$ analytically. More often it cannot, and the value of $y$ for a given $t$ must be computed numerically; plotting several such pairs $(t, y)$ sketches the integral curve. Examples §7.2–§7.4 are nonlinear problems whose explicit solution is easy to find; BDP's Examples 2.2.1 and 2.2.3 (in [[§5 Separable Differential Equations|§5]], the second as [[§5 Separable Differential Equations#^ex-5-2|Example §5.2]]) are better left in implicit form, which is the more typical situation. More often than not it is impossible even to find an implicit expression for the solution of a first-order nonlinear equation.
 
 ## Graphical or Numerical Construction of Integral Curves
 

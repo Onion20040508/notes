@@ -30,6 +30,7 @@ Computational courses, each linked to the rigorous treatment of the same results
 |---|---|---|
 | [Calculus](Applied%20Math/Calculus) | MATH 233 (UMass) · Stewart, *Calculus: Early Transcendentals*, 9th ed. | complete |
 | [Applied Linear Algebra](Applied%20Math/Applied%20Linear%20Algebra) | MATH 235 (UMass) · Lay, Lay & McDonald, *Linear Algebra and Its Applications*, 5th ed. | complete (Ch. 1–7; Ch. 7 beyond the course) |
+| [Ordinary Differential Equations](Applied%20Math/Ordinary%20Differential%20Equations) | MATH 331 (UMass) · Boyce, DiPrima & Meade, *Elementary Differential Equations and Boundary Value Problems*, 11th ed. | complete (Ch. 1–3, 6, 7) |
 
 ### Physics
 

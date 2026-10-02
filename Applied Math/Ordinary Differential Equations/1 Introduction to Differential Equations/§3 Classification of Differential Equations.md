@@ -24,7 +24,7 @@ Which method applies to a differential equation depends on what kind of equation
 > L\,\frac{d^2Q(t)}{dt^2} + R\,\frac{dQ(t)}{dt} + \frac{1}{C}\,Q(t) = E(t) \qquad (1)
 > $$
 >
-> (derived in [[§19 Mechanical and Electrical Vibrations|§19]]), while the **heat conduction equation** and the **wave equation**
+> (derived in [[§19 Mechanical and Electrical Vibrations#^prop-19-5|Proposition §19.5]]), while the **heat conduction equation** and the **wave equation**
 >
 > $$
 > \alpha^2\,\frac{\partial^2 u(x, t)}{\partial x^2} = \frac{\partial u(x, t)}{\partial t} , \qquad (2)
@@ -90,7 +90,7 @@ Which method applies to a differential equation depends on what kind of equation
 ^def-3-4
 
 > [!remark]- Connections
-> - The left side of (11) defines a map $y \mapsto a_0 y^{(n)} + \cdots + a_n y$ that is linear in the sense of linear algebra: it respects sums and scalar multiples ([[§8 Introduction to Linear Transformations#^def-8-3|235 Def. §8.3]]; [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]). This is why the solutions of a linear homogeneous equation form a vector space ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian|§14]]).
+> - The left side of (11) defines a map $y \mapsto a_0 y^{(n)} + \cdots + a_n y$ that is linear in the sense of linear algebra: it respects sums and scalar multiples ([[§8 Introduction to Linear Transformations#^def-8-3|235 Def. §8.3]]; [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]). This is why the solutions of a linear homogeneous equation form a vector space (the Principle of Superposition, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-2|Theorem §14.2]]).
 
 > [!example] Example §3.1: Classifying Equations
 > Classify the equations met so far.
@@ -137,7 +137,7 @@ Which method applies to a differential equation depends on what kind of equation
 > \frac{d^2\theta}{dt^2} + \frac{g}{L}\sin\theta = 0 . \qquad (12)
 > $$
 >
-> *BDP: 1.3, Equation (12); derivation in Problems 1.3.22 and 1.3.23*
+> *BDP: 1.3, Equation (12); derivation in Problems 1.3.22–1.3.24*
 
 ^prop-3-1
 
@@ -155,10 +155,16 @@ Which method applies to a differential equation depends on what kind of equation
 > $$
 >
 > Wherever $\theta' \ne 0$ this gives (12). (At isolated instants with $\theta' = 0$ it follows by continuity of $\theta''$ and $\sin\theta$; if $\theta' = 0$ on a whole interval the pendulum is at rest there, which this argument cannot detect. That is why the force derivation is the primary one.)
+>
+> **By angular momentum** (Problem 24). The rate of change of the angular momentum about the support equals the net external moment about it (positive counterclockwise). Place the support at the origin, so the mass is at $(L\sin\theta, -L\cos\theta)$ and has velocity $L\theta'(\cos\theta, \sin\theta)$. Its angular momentum about the support is
+>
+> $$
+> M = m\big[(L\sin\theta)(L\theta'\sin\theta) - (-L\cos\theta)(L\theta'\cos\theta)\big] = mL^2\,\frac{d\theta}{dt} .
+> $$
+>
+> The tension acts along the rod, through the support, so its moment is $0$. The moment of gravity $(0, -mg)$ is $(L\sin\theta)(-mg) - (-L\cos\theta)\cdot 0 = -mgL\sin\theta$. So $\dfrac{dM}{dt} = mL^2\,\theta'' = -mgL\sin\theta$, and dividing by $mL^2$ gives (12).
 
 ^pf-3-1
-
-*Uses:* none
 
 > [!definition] Definition §3.5: Linearization
 > Approximating a nonlinear equation by a linear one is called **linearization**. For the pendulum, if $\theta$ is small then $\sin\theta \approx \theta$, and (12) is approximated by the linear equation
@@ -194,6 +200,9 @@ Which method applies to a differential equation depends on what kind of equation
 
 ^def-3-6
 
+> [!remark]- Connections
+> - See also: [[§57 Modeling with Differential Equations#^def-57-6|Calc Def. §57.6]] (Stewart's definition of a solution) and [[§57 Modeling with Differential Equations#^rem-57-3|Calc Remark: Method — Checking a Proposed Solution]], the substitution check of [[§3 Classification of Differential Equations#^ex-3-3|Example §3.3]].
+
 > [!example] Example §3.3: Verifying a Solution
 > Show that $y_1(t) = \cos t$ and $y_2(t) = \sin t$ are solutions of $y'' + y = 0$ for all $t$.
 >
@@ -210,7 +219,7 @@ Which method applies to a differential equation depends on what kind of equation
 > 2. **Uniqueness.** If solutions exist, how many are there, and what extra conditions single one out? A solution with an arbitrary constant, such as $p = 900 + ce^{t/2}$, is pinned down by an initial condition, but that alone does not rule out *other* solutions with the same initial value. If the problem is known to have a unique solution, then finding one solves it completely.
 > 3. **Determination.** Can a solution actually be found, and how? Finding one also settles existence. But most solutions cannot be expressed in elementary functions, so both exact methods for simple equations and approximation methods for harder ones are needed; without existence theory, a computer might "approximate" a solution that does not exist.
 >
-> The answers for first-order equations are the existence and uniqueness theorems of [[§7 Differences Between Linear and Nonlinear Differential Equations|§7]] (Theorems 2.4.1 and 2.4.2), proved in [[§11 The Existence and Uniqueness Theorem|§11]].
+> The answers for first-order equations are the existence and uniqueness theorems: for linear equations [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] (Theorem 2.4.1), and for nonlinear ones Theorem 2.4.2, stated in [[§7 Differences Between Linear and Nonlinear Differential Equations|§7]] and proved as [[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]].
 
 ^rem-3-2
 

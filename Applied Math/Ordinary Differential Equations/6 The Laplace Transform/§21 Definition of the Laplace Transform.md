@@ -11,7 +11,7 @@ tags: [ordinary-differential-equations, math331]
 
 *Boyce–DiPrima, Section 6.1.*
 
-Mechanical and electrical systems are often driven by discontinuous or impulsive forces, for which the methods of Chapter 3 are awkward. The Laplace transform $\mathcal{L}\{f(t)\} = F(s) = \int_0^\infty e^{-st}f(t)\,dt$ turns such problems into algebra. This section reviews improper integrals, defines the transform, and proves that it exists for every piecewise continuous function of exponential order (for $s$ large enough). It then computes the first transforms ($1$, $e^{at}$, $\sin at$, a pulse) and shows that the transform is linear: the starting entries of the table in [[§22 Solution of Initial Value Problems|§22]].
+Mechanical and electrical systems are often driven by discontinuous or impulsive forces, for which the methods of Chapter 3 are awkward. The Laplace transform $\mathcal{L}\{f(t)\} = F(s) = \int_0^\infty e^{-st}f(t)\,dt$ turns such problems into algebra. This section reviews improper integrals, defines the transform, and proves that it exists for every piecewise continuous function of exponential order (for $s$ large enough). It then computes the first transforms ($1$, $e^{at}$, $\sin at$, a pulse) and shows that the transform is linear: the starting entries of the table of transforms in [[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6]].
 
 ## Improper Integrals
 
@@ -84,7 +84,7 @@ When $f$ cannot be integrated in elementary terms, convergence is tested by comp
 
 ^thm-21-1
 
-*BDP omits the proof ("from calculus"), making it plausible by comparing the areas under $g$ and $|f|$. For nonnegative integrands it is [[§51 Improper Integrals#^thm-51-2|Calc Thm. §51.2]], which rests on [[§36 Improper Integrals#^thm-36-1|451 Thm. §36.1]]: an integral of a nonnegative function, as a function of its upper limit, is increasing, so it converges or tends to $\infty$. The first part reduces to that case through $0 \le f + |f| \le 2g$, writing $f = (f + |f|) - |f|$.*
+*BDP omits the proof ("from calculus"), making it plausible by comparing the areas under $g$ and $|f|$. For continuous nonnegative integrands it is [[§51 Improper Integrals#^thm-51-2|Calc Thm. §51.2]], and the same proof works for piecewise continuous ones: if $0 \le h \le g$ on $[M, \infty)$, then $A \mapsto \int_M^A h\,dt$ is increasing, so by the dichotomy [[§36 Improper Integrals#^thm-36-1|451 Thm. §36.1]] it converges or tends to $\infty$, and the bound $\int_M^\infty g\,dt$ excludes $\infty$. The first part reduces to that case: $\int_M^\infty |f|\,dt$ and $\int_M^\infty (f + |f|)\,dt$ converge because $0 \le |f| \le g$ and $0 \le f + |f| \le 2g$, so $\int_M^\infty f\,dt$ converges as their difference, and $\int_a^M f\,dt$ exists by piecewise continuity.*
 
 ## The Laplace Transform
 
@@ -205,7 +205,7 @@ Functions satisfying the hypotheses of Theorem §21.2 are called **piecewise con
 > \mathcal{L}\{f(t)\} = \int_0^\infty e^{-st}f(t)\,dt = \int_0^1 e^{-st}\,dt = -\frac{e^{-st}}{s}\bigg|_0^1 = \frac{1 - e^{-s}}{s}, \qquad s > 0 .
 > $$
 >
-> The transform does not depend on $k$, the value at the discontinuity; it would be the same if $f$ were undefined at $t = 1$. So functions that differ only at a single point have the same Laplace transform. (This is why the uniqueness statement in [[§22 Solution of Initial Value Problems|§22]] is made for continuous functions.)
+> The transform does not depend on $k$, the value at the discontinuity; it would be the same if $f$ were undefined at $t = 1$. So functions that differ only at a single point have the same Laplace transform. (This is why the uniqueness statement [[§22 Solution of Initial Value Problems#^thm-22-4|Theorem §22.4]] is made for continuous functions.)
 >
 > *BDP: Example 6.1.6*
 
@@ -258,7 +258,7 @@ Functions satisfying the hypotheses of Theorem §21.2 are called **piecewise con
 > \mathcal{L}\{\sin(at)\} = \frac{a}{s^2 + a^2}, \qquad s > 0 .
 > $$
 >
-> (In the same way, $\mathcal{L}\{\cos(at)\} = s/(s^2 + a^2)$ for $s > 0$; BDP, Problem 6.1.5. A shorter derivation is in [[§22 Solution of Initial Value Problems|§22]].)
+> (In the same way, $\mathcal{L}\{\cos(at)\} = s/(s^2 + a^2)$ for $s > 0$; BDP, Problem 6.1.5. A shorter derivation, from the transform of a derivative, is in the proof of [[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6]], entry 6.)
 >
 > **(b)** Find the Laplace transform of $f(t) = 5e^{-2t} - 3\sin(4t)$, $t \ge 0$.
 >

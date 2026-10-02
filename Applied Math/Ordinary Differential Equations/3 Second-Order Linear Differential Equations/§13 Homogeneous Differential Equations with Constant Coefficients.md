@@ -143,7 +143,7 @@ The homogeneous equation is the fundamental one: once it is solved, the nonhomog
 *Uses:* [[§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-4|Def. §13.4]]
 
 > [!remark]- Connections
-> - The same substitution for systems: trying $\mathbf{x} = \mathbf{v}e^{\lambda t}$ in $\mathbf{x}' = A\mathbf{x}$ turns the differential equation into the eigenvalue problem $A\mathbf{v} = \lambda\mathbf{v}$, [[§38 Applications to Differential Equations#^thm-38-2|235 Thm. §38.2]]. In this subject that is [[§31 Homogeneous Linear Systems with Constant Coefficients|§31]] (BDP 7.5), and the second-order equation becomes such a system in [[§27 Introduction to Systems of First-Order Linear Equations|§27]] (BDP 7.1).
+> - The same substitution for systems: trying $\mathbf{x} = \mathbf{v}e^{\lambda t}$ in $\mathbf{x}' = A\mathbf{x}$ turns the differential equation into the eigenvalue problem $A\mathbf{v} = \lambda\mathbf{v}$, [[§38 Applications to Differential Equations#^thm-38-2|235 Thm. §38.2]]. In this subject that is [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-1|Theorem §31.1]] (BDP 7.5), and the second-order equation becomes such a system by [[§27 Introduction to Systems of First-Order Linear Equations#^prop-27-1|Proposition §27.1]] (BDP 7.1).
 
 ## Distinct Real Roots
 

@@ -116,11 +116,11 @@ So $y''$ jumps by $\frac12$ at $t = 5$, and in the same way by $-\frac12$ at $t 
 > y''(t_k^\pm) = g(t_k^\pm) - p(t_k)\,y'(t_k) - q(t_k)\,y(t_k) .
 > $$
 >
-> The last two terms are the same on both sides, since $p, q, y, y'$ are continuous. Subtracting gives $y''(t_k^+) - y''(t_k^-) = g(t_k^+) - g(t_k^-)$. So $y''$ jumps exactly where $g$ does. For order $n$, the same construction makes $y, \ldots, y^{(n-1)}$ continuous, and the equation solved for $y^{(n)}$ transfers the jump of $g$ to $y^{(n)}$.
+> The last two terms are the same on both sides, since $p, q, y, y'$ are continuous. Subtracting gives $y''(t_k^+) - y''(t_k^-) = g(t_k^+) - g(t_k^-)$. So $y''$ jumps exactly where $g$ does. For order $n$, the same construction (with existence and uniqueness from [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]], applied to the system of [[§27 Introduction to Systems of First-Order Linear Equations#^prop-27-1|Proposition §27.1]]) makes $y, \ldots, y^{(n-1)}$ continuous, and the equation solved for $y^{(n)}$ transfers the jump of $g$ to $y^{(n)}$.
 
 ^pf-24-1
 
-*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|§14.1]] (existence and uniqueness, Theorem 3.2.1)
+*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|§14.1]] (existence and uniqueness, Theorem 3.2.1), [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]], [[§27 Introduction to Systems of First-Order Linear Equations#^prop-27-1|§27.1]] (order $n$)
 
 For $ay'' + by' + cy = g$, divide by $a$ first: the jump in $y''$ is the jump in $g$ divided by $a$. In Example §24.1 ($a = 2$) this is $\frac12$ at $t = 5$ and $-\frac12$ at $t = 20$. The more regular $g$ is, the more regular $y$ is: if $g$ is continuous but $g'$ jumps, then $y''$ is continuous and $y'''$ jumps (Example §24.2).
 

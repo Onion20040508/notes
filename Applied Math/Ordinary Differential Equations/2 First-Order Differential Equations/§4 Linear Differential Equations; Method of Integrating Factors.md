@@ -9,7 +9,7 @@ tags: [ordinary-differential-equations, math331]
 ---
 ← [[§3 Classification of Differential Equations]] · ↑ [[· 2 First-Order Differential Equations]] · [[§5 Separable Differential Equations]] →
 
-*Boyce–DiPrima, Section 2.1 · MATH 331 Written HW 1 (Problem 2), Midterm Spring 2020 (Q4).*
+*Boyce–DiPrima, Section 2.1 · MATH 331 Written HW 1 (Problem 2), Midterms Spring 2020 (Q4) and Summer 2023 (Q3).*
 
 Chapter 2 studies first-order equations $dy/dt = f(t, y)$. No single method solves them all, so each section treats one class, and the most important class is the linear equations $y' + p(t)y = g(t)$. Leibniz's idea is to multiply the equation by a function $\mu(t)$, the integrating factor, chosen so that the left side becomes the derivative of the product $\mu(t)y$; then a single integration solves the equation. This gives an explicit formula for every solution, possibly with an integral that has to be left unevaluated. The formula also shows where solutions can fail to exist: only where $p$ or $g$ is discontinuous.
 
@@ -28,7 +28,7 @@ Chapter 2 studies first-order equations $dy/dt = f(t, y)$. No single method solv
 > P(t)\,\frac{dy}{dt} + Q(t)\,y = G(t) \qquad (4)
 > $$
 >
-> is more convenient; where $P(t) \ne 0$ it is converted to (3) by dividing by $P(t)$. The equations $dy/dt = -ay + b$ of [[§2 Solutions of Some Differential Equations|§2]] are the case of constant coefficients.
+> is more convenient; where $P(t) \ne 0$ it is converted to (3) by dividing by $P(t)$. The equations $dy/dt = -ay + b$ of [[§2 Solutions of Some Differential Equations#^thm-2-1|Theorem §2.1]] are the case of constant coefficients.
 >
 > *BDP: 2.1 (text)*
 
@@ -192,7 +192,7 @@ For many simple $g$ the integral in (24) can be evaluated, as in the next exampl
 
 > [!remark]- Connections
 > - Rigorous ingredients: the antiderivative $\int_{t_0}^t \mu g\,ds$ of a continuous function is [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC II), and "same derivative on an interval implies they differ by a constant" is [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]]. The integrating factor itself appears in 451 as a trick for Rolle's Theorem: [[§29 The Mean Value Theorem#^rem-29-2|451 Remark after Ex. §29.4]].
-> - See also: [[§61 Linear Equations#^thm-61-1|Calc Thm. §61.1]] (Stewart's treatment, $I(x) = e^{\int P\,dx}$). With the initial condition $y(t_0) = y_0$, (33) gives the unique solution of the initial value problem on all of $I$: this is Theorem 2.4.1 ([[§7 Differences Between Linear and Nonlinear Differential Equations|§7]]).
+> - See also: [[§61 Linear Equations#^thm-61-1|Calc Thm. §61.1]] (Stewart's treatment, $I(x) = e^{\int P\,dx}$, with the integrating factor [[§61 Linear Equations#^def-61-2|Calc Def. §61.2]]; [[§61 Linear Equations#^ex-61-3|Calc Ex. §61.3]] leaves a non-elementary integral unevaluated, as in [[§4 Linear Differential Equations; Method of Integrating Factors#^ex-4-4|Example §4.4]]). With the initial condition $y(t_0) = y_0$, (33) gives the unique solution of the initial value problem on all of $I$: this is Theorem 2.4.1, [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]].
 
 > [!remark] Remark: Method — Integrating Factors
 > To solve a first-order linear equation:
@@ -204,8 +204,8 @@ For many simple $g$ the integral in (24) can be evaluated, as in the next exampl
 
 ^rem-4-1
 
-> [!example] Example §4.3: A Coefficient with a Singularity
-> Solve the initial value problem $ty' + 2y = 4t^2$, $y(1) = 2$.
+> [!example] Example §4.3: Coefficients with a Singularity
+> **(a)** Solve the initial value problem $ty' + 2y = 4t^2$, $y(1) = 2$.
 >
 > **Standard form.** Divide by $t$: $y' + \dfrac2t\,y = 4t$, so $p(t) = 2/t$ and $g(t) = 4t$. Here $p$ has an infinite discontinuity at $t = 0$.
 >
@@ -227,7 +227,30 @@ For many simple $g$ the integral in (24) can be evaluated, as in the next exampl
 >
 > **A critical initial value.** For $y(1) = y_0$, $c = y_0 - 1$ and $y = t^2 + (y_0 - 1)/t^2$. Solutions with $y_0 > 1$ go to $+\infty$ and those with $y_0 < 1$ go to $-\infty$ as $t \to 0^+$. Only $y_0 = 1$ ($c = 0$) gives $y = t^2$, which stays bounded and differentiable even at $t = 0$.
 >
+> **(b)** Solve the initial value problem $t^5y' = -4t^4y + 2t^2$, $y(1) = 6$.
+>
+> **Standard form.** Move the $y$ term to the left and divide by $t^5$ (for $t \ne 0$): $y' + \dfrac4t\,y = \dfrac{2}{t^3}$, so $p(t) = 4/t$ and $g(t) = 2/t^3$. Both are discontinuous at $t = 0$ and continuous elsewhere; the initial point is $t = 1$, so the solution lives on $t > 0$.
+>
+> **Integrating factor.** $\mu(t) = \exp\displaystyle\int \frac4t\,dt = e^{4\ln|t|} = t^4$.
+>
+> **Integrate.** $(t^4y)' = t^4 \cdot \dfrac{2}{t^3} = 2t$, so $t^4y = t^2 + c$ and
+>
+> $$
+> y = \frac{1}{t^2} + \frac{c}{t^4} .
+> $$
+>
+> **Initial condition.** $y(1) = 1 + c = 6$, so $c = 5$ and
+>
+> $$
+> y = \frac{1}{t^2} + \frac{5}{t^4} , \qquad t > 0 .
+> $$
+>
+> **Check.** $y' = -\dfrac{2}{t^3} - \dfrac{20}{t^5}$, so $t^5y' = -2t^2 - 20$, while $-4t^4y + 2t^2 = -4t^2 - 20 + 2t^2 = -2t^2 - 20$.
+>
+> **No critical value here.** As $t \to 0^+$ every solution $1/t^2 + c/t^4$ is unbounded: $c/t^4$ dominates when $c \ne 0$, and $c = 0$ still leaves $1/t^2$. In (a) the forcing $g(t) = 4t$ was continuous at $0$ and one solution survived there; in (b) $g$ itself blows up at $0$, and no solution extends to $t \le 0$.
+>
 > *BDP: Example 2.1.4*
+> *Source: 331 Midterm (Summer 2023), Q3*
 
 ^ex-4-3
 
@@ -279,7 +302,7 @@ For many simple $g$ the integral in (24) can be evaluated, as in the next exampl
 >
 > **Check.** $y' = \frac32 t + \frac13 t^2 + \frac{C_1}{t}$, $y'' = \frac32 + \frac23 t - \frac{C_1}{t^2}$, and $y'' + \frac{y'}{t} = \frac32 + \frac23 t - \frac{C_1}{t^2} + \frac32 + \frac13 t + \frac{C_1}{t^2} = 3 + t$.
 >
-> The trick works because $y$ itself does not appear in the equation; it reappears for second-order equations in [[§16 Repeated Roots; Reduction of Order|§16]] (reduction of order).
+> The trick works because $y$ itself does not appear in the equation; it reappears for second-order equations in reduction of order, [[§16 Repeated Roots; Reduction of Order#^prop-16-3|Proposition §16.3]].
 >
 > *Source: 331 Midterm (Spring 2020), Q4*
 

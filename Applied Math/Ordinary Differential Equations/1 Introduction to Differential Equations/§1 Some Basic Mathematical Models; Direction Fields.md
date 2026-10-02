@@ -25,7 +25,7 @@ Laws of nature are often statements about rates, and a law about rates written i
 ^def-1-1
 
 > [!remark]- Connections
-> - See also: [[§57 Modeling with Differential Equations#^def-57-5|Calc Def. §57.5]] (Stewart's definition, with the order of an equation; order is [[§3 Classification of Differential Equations#^def-3-3|Definition §3.3]] here) and Stewart's first models, natural growth and the spring ([[§57 Modeling with Differential Equations|Calc §57]]).
+> - See also: [[§57 Modeling with Differential Equations#^def-57-5|Calc Def. §57.5]] (Stewart's definition, with the order of an equation; order is [[§3 Classification of Differential Equations#^def-3-3|Definition §3.3]] here) and Stewart's first models: natural growth, [[§57 Modeling with Differential Equations#^def-57-1|Calc Def. §57.1]], and the spring, [[§57 Modeling with Differential Equations#^def-57-4|Calc Def. §57.4]].
 
 > [!example] Example §1.1: A Falling Object
 > Formulate a differential equation for the motion of an object falling in the atmosphere near sea level.
@@ -72,7 +72,8 @@ Laws of nature are often statements about rates, and a law about rates written i
 ^def-1-2
 
 > [!remark]- Connections
-> - See also: [[§58 Direction Fields and Euler's Method#^def-58-1|Calc Def. §58.1]] (Stewart's treatment, with the direction field of $y' = x^2 + y^2 - 1$) and its [[§58 Direction Fields and Euler's Method#^rem-58-1|Remark: Method — Sketching Solution Curves]]. The same tangent segments, followed step by step, give Euler's method ([[§10 Numerical Approximations꞉ Euler's Method|§10]]).
+> - See also: [[§58 Direction Fields and Euler's Method#^def-58-1|Calc Def. §58.1]] (Stewart's treatment, with the direction field of $y' = x^2 + y^2 - 1$) and its [[§58 Direction Fields and Euler's Method#^rem-58-1|Remark: Method — Sketching Solution Curves]]. The same tangent segments, followed step by step, give Euler's method ([[§10 Numerical Approximations꞉ Euler's Method#^def-10-1|Definition §10.1]]).
+> - Equilibrium solutions ([[§1 Some Basic Mathematical Models; Direction Fields#^def-1-3|Definition §1.3]] below) in Stewart: [[§57 Modeling with Differential Equations#^def-57-3|Calc Def. §57.3]].
 
 > [!definition] Definition §1.3: Equilibrium Solution
 > A constant function $y(t) = y_0$ that satisfies the differential equation is an **equilibrium solution**. For an equation $dy/dt = f(y)$ whose rate function does not depend on $t$, the equilibrium solutions are found by solving the algebraic equation $f(y) = 0$.
@@ -115,7 +116,7 @@ Laws of nature are often statements about rates, and a law about rates written i
 
 ## Field Mice and Owls
 
-In the absence of predators, assume that a population of field mice grows at a rate proportional to its current size. This is not a physical law, but it is a common first hypothesis about population growth (a better model is the logistic equation of [[§8 Autonomous Differential Equations and Population Dynamics|§8]]).
+In the absence of predators, assume that a population of field mice grows at a rate proportional to its current size. This is not a physical law, but it is a common first hypothesis about population growth (a better model is the logistic equation, [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-3|Definition §8.3]]).
 
 > [!definition] Definition §1.4: Rate Constant (Growth Rate)
 > If $p(t)$ is the population at time $t$, the hypothesis is

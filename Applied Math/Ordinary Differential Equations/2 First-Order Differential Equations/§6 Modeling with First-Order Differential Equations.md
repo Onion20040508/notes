@@ -172,11 +172,17 @@ Suppose a sum $S_0$ is deposited at an annual **rate of return** $r$, compounded
 > [!proof]+ Proof
 > **Formula (17).** Each period lasts $1/m$ year and multiplies the value by $1 + \frac rm$. Compounded once a year, the value after $t$ years is $S_0(1 + r)^t$; twice a year, it is $S_0(1 + \frac r2)$ after $6$ months, $S_0(1 + \frac r2)^2$ after a year, and $S_0(1 + \frac r2)^{2t}$ after $t$ years. In general there are $mt$ periods in $t$ years, which gives (17).
 >
-> **The limit.** BDP recalls this from calculus; here is a short argument. For $r > 0$, $\ln\Big(1 + \frac rm\Big)^{mt} = rt \cdot \dfrac{\ln(1 + h)}{h}$ with $h = \frac rm \to 0$, and $\dfrac{\ln(1 + h)}{h} \to 1$, since this is the difference quotient of $\ln$ at $1$, whose derivative there is $1$. So the logarithm tends to $rt$, and by continuity of the exponential function the value tends to $S_0e^{rt}$. (The same argument works for $r < 0$.)
+> **The limit.** BDP recalls this from calculus. If $r = 0$ both sides equal $S_0$. If $r \ne 0$, put $h = \frac rm$, so $h \to 0$ as $m \to \infty$ (through positive values if $r > 0$, negative values if $r < 0$, with $|h| < 1$ for large $m$). Then
+>
+> $$
+> \Big(1 + \frac rm\Big)^{mt} = \Big[(1 + h)^{1/h}\Big]^{rt} .
+> $$
+>
+> The inner expression tends to $e$ as $h \to 0$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|Calc Thm. §19.7]], a two-sided limit), and $u \mapsto u^{rt}$ is continuous at $u = e$, so the value tends to $S_0e^{rt}$.
 
 ^pf-6-2
 
-*Uses:* none
+*Uses:* [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|Calc Thm. §19.7]] ($e$ as a limit)
 
 > [!remark]- Connections
 > - See also: [[§21 Exponential Growth and Decay#^cor-21-3|Calc Cor. §21.3]] (Stewart's treatment, with the table of [[§21 Exponential Growth and Decay#^ex-21-4|Calc Ex. §21.4]]) and the limit $\lim_{x \to 0}(1 + x)^{1/x} = e$, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|Calc Thm. §19.7]].
@@ -356,7 +362,7 @@ $$
 > v_e = \sqrt{2gR} , \qquad (33)
 > $$
 >
-> approximately $11.2$ km/s, or $6.9$–$7.0$ mi/s (BDP: "approximately 6.9 mi/s, or 11.1 km/s").
+> approximately $11.2$ km/s, or about $6.95$ mi/s.
 >
 > *BDP: Example 2.3.4*
 

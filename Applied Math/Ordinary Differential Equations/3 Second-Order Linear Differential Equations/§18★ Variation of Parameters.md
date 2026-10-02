@@ -23,7 +23,7 @@ Variation of parameters is the second way, after undetermined coefficients, to f
 > y'' + 4y = 8\tan t, \qquad -\pi/2 < t < \pi/2 . \qquad (1)
 > $$
 >
-> **Why a new method.** $g(t) = 8\tan t = 8\sin t/\cos t$ is a quotient of $\sin t$ and $\cos t$, not a sum or product of exponentials, polynomials, sines and cosines, so the table of trial forms of undetermined coefficients ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]]) does not apply.
+> **Why a new method.** $g(t) = 8\tan t = 8\sin t/\cos t$ is a quotient of $\sin t$ and $\cos t$, not a sum or product of exponentials, polynomials, sines and cosines, so the table of trial forms of undetermined coefficients ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|Theorem §17.4]]) does not apply.
 >
 > **Homogeneous solution.** $y'' + 4y = 0$ has $r^2 + 4 = 0$, $r = \pm 2i$, so $y_c(t) = c_1\cos(2t) + c_2\sin(2t)$.
 >
@@ -134,7 +134,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 > y = c_1y_1(t) + c_2y_2(t) + Y(t) , \qquad (31)
 > $$
 >
-> as prescribed by Theorem 3.5.2.
+> as prescribed by Theorem 3.5.2 ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|Theorem §17.2]]).
 >
 > *BDP: Theorem 3.6.1*
 
@@ -164,15 +164,15 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 > Y'' + pY' + qY = u_1\big(y_1'' + py_1' + qy_1\big) + u_2\big(y_2'' + py_2' + qy_2\big) + \big(u_1'y_1' + u_2'y_2'\big) = 0 + 0 + g .
 > $$
 >
-> So $Y$ solves (28) on $I$. By Theorem 3.5.2 ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]]), every solution of (28) is $c_1y_1 + c_2y_2 + Y$, which is (31).
+> So $Y$ solves (28) on $I$. By Theorem 3.5.2 ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|Theorem §17.2]]), every solution of (28) is $c_1y_1 + c_2y_2 + Y$, which is (31).
 
 ^pf-18-1
 
-*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|§14.8]] (Abel's theorem), [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Def. §14.3]] (fundamental set), [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]] (Theorem 3.5.2), [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (FTC, Part 1)
+*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|§14.8]] (Abel's theorem), [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Def. §14.3]] (fundamental set), [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|§17.2]] (Theorem 3.5.2), [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (FTC, Part 1)
 
 > [!remark]- Connections
 > - The derivative of $\int_{t_0}^t h(s)\,ds$ for continuous $h$: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC II).
-> - The same method for systems $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$, with a fundamental matrix in place of $y_1, y_2$: [[§35★ Nonhomogeneous Linear Systems|§35★]] (BDP 7.9). BDP's footnote points there (Problems 7.9.17–19) for a more natural derivation of the extra condition (21): it is the first row of the system form.
+> - The same method for systems $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$, with a fundamental matrix in place of $y_1, y_2$: [[§35★ Nonhomogeneous Linear Systems#^thm-35-3|Theorem §35.3]] (BDP 7.9). BDP's footnote points there (Problems 7.9.17–19) for a more natural derivation of the extra condition (21): it is the first row of the system form.
 
 > [!remark] Remark: Method — Variation of Parameters
 > To find a particular solution of $y'' + p(t)y' + q(t)y = g(t)$:
@@ -280,7 +280,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 > y = y_0\cos t + y_0'\sin t + \int_0^{t} \sin(t - s)\,g(s)\,ds .
 > $$
 >
-> **The kernel.** The integrand is $K(t - s)\,g(s)$ with $K(t) = \sin t$: the kernel depends only on $t - s$, not on $t$ and $s$ separately. BDP shows (Problem 3.6.22) that this holds for every constant-coefficient operator $L[y] = y'' + by' + cy$: the solution with zero data is $\int_{t_0}^t K(t - s)g(s)\,ds$, where $K$ depends only on $y_1, y_2$. Such an integral is the **convolution** of $K$ and $g$, and once $K$ is known, every forcing reduces to one integral. Chapter 6 recovers this formula with the Laplace transform, where $K$ appears as the impulse response ([[§26★ The Convolution Integral|§26★]], BDP 6.6).
+> **The kernel.** The integrand is $K(t - s)\,g(s)$ with $K(t) = \sin t$: the kernel depends only on $t - s$, not on $t$ and $s$ separately. BDP's Problem 3.6.22 shows that this holds for every constant-coefficient operator $L[y] = y'' + by' + cy$: the solution with zero data is $\int_{t_0}^t K(t - s)g(s)\,ds$, where $K$ depends only on $y_1, y_2$. Such an integral is the **convolution** of $K$ and $g$, and once $K$ is known, every forcing reduces to one integral. Chapter 6 recovers this formula with the Laplace transform, where $K$ appears as the impulse response ([[§26★ The Convolution Integral#^thm-26-3|Theorem §26.3]], BDP 6.6).
 >
 > *BDP: Problems 3.6.18 and 3.6.22*
 

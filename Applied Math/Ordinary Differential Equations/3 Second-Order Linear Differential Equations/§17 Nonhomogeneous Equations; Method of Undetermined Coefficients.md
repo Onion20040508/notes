@@ -11,7 +11,7 @@ tags: [ordinary-differential-equations, math331]
 
 *Boyce–DiPrima, Section 3.5 · MATH 331 Written HW 4, Final (Fall 2021), Final (Fall 2022, alternate).*
 
-The difference of two solutions of a nonhomogeneous equation $L[y] = g(t)$ solves the homogeneous equation $L[y] = 0$. So the general solution of $L[y] = g$ is the general solution $c_1y_1 + c_2y_2$ of the homogeneous equation plus any one particular solution $Y$. For constant coefficients and forcing terms built from polynomials, exponentials, sines and cosines, a particular solution can be guessed up to constants: assume that $Y$ has the same form as $g$, substitute, and solve for the undetermined coefficients. The one complication is a guess that already solves the homogeneous equation; it is then multiplied by $t$, or by $t^2$, as recorded in BDP's table of trial forms. Variation of parameters ([[§18★ Variation of Parameters|§18★]]) handles every other forcing term.
+The difference of two solutions of a nonhomogeneous equation $L[y] = g(t)$ solves the homogeneous equation $L[y] = 0$. So the general solution of $L[y] = g$ is the general solution $c_1y_1 + c_2y_2$ of the homogeneous equation plus any one particular solution $Y$. For constant coefficients and forcing terms built from polynomials, exponentials, sines and cosines, a particular solution can be guessed up to constants: assume that $Y$ has the same form as $g$, substitute, and solve for the undetermined coefficients. The one complication is a guess that already solves the homogeneous equation; it is then multiplied by $t$, or by $t^2$, as recorded in BDP's table of trial forms. Variation of parameters ([[§18★ Variation of Parameters#^thm-18-1|Theorem §18.1]]) handles every other forcing term.
 
 ## Structure of the Solutions
 
@@ -104,7 +104,7 @@ $$
 
 ^def-17-1
 
-Step 1 is solved for constant coefficients by [[§16 Repeated Roots; Reduction of Order#^thm-16-2|Theorem §16.2]]. For step 2 there are two methods: undetermined coefficients (this section) and variation of parameters ([[§18★ Variation of Parameters|§18★]]).
+Step 1 is solved for constant coefficients by [[§16 Repeated Roots; Reduction of Order#^thm-16-2|Theorem §16.2]]. For step 2 there are two methods: undetermined coefficients (this section) and variation of parameters ([[§18★ Variation of Parameters#^thm-18-1|Theorem §18.1]]).
 
 ## The Method of Undetermined Coefficients
 
@@ -145,8 +145,6 @@ A forcing term that is a sum is split into its terms:
 > For $n$ terms, repeat (or induct). The computation is valid for complex-valued $g_i$ and $Y_i$ as well (used in the proof of Theorem §17.4).
 
 ^pf-17-3
-
-*Uses:* none
 
 > [!example] Example §17.1: Exponential, Trigonometric and Product Forcing
 > Find a particular solution of
@@ -353,7 +351,7 @@ The procedure of Example §17.1 can fail in one way: the assumed form may itself
 > [!remark] Remark: Method — Undetermined Coefficients
 > To solve an initial value problem for $ay'' + by' + cy = g(t)$ (27) with constant $a$, $b$, $c$:
 > 1. Find the general solution of the corresponding homogeneous equation ([[§16 Repeated Roots; Reduction of Order#^thm-16-2|Theorem §16.2]]).
-> 2. Make sure that $g(t)$ belongs to the class of this section: it involves nothing more than exponential functions, sines, cosines, polynomials, or sums or products of such functions. If not, use variation of parameters ([[§18★ Variation of Parameters|§18★]]).
+> 2. Make sure that $g(t)$ belongs to the class of this section: it involves nothing more than exponential functions, sines, cosines, polynomials, or sums or products of such functions. If not, use variation of parameters ([[§18★ Variation of Parameters#^rem-18-1|§18★, Remark: Method — Variation of Parameters]]).
 > 3. If $g(t) = g_1(t) + \cdots + g_n(t)$ is a sum of $n$ terms, form $n$ subproblems $ay'' + by' + cy = g_i(t)$, $i = 1, \ldots, n$, each containing only one of the terms.
 > 4. For the $i$th subproblem assume a particular solution $Y_i(t)$ consisting of the appropriate exponential function, sine, cosine, polynomial, or combination thereof. If there is any duplication in the assumed form of $Y_i(t)$ with the solutions of the homogeneous equation (found in step 1), multiply $Y_i(t)$ by $t$, or (if necessary) by $t^2$, so as to remove the duplication ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|Theorem §17.4]]).
 > 5. Find a particular solution $Y_i(t)$ for each subproblem. Then $Y_1(t) + \cdots + Y_n(t)$ is a particular solution of the full equation (27).

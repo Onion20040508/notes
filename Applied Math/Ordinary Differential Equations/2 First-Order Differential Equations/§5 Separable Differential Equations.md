@@ -9,7 +9,7 @@ tags: [ordinary-differential-equations, math331]
 ---
 ← [[§4 Linear Differential Equations; Method of Integrating Factors]] · ↑ [[· 2 First-Order Differential Equations]] · [[§6 Modeling with First-Order Differential Equations]] →
 
-*Boyce–DiPrima, Section 2.2 · MATH 331 Written HW 1 (Problems 1 and 3), Midterms Fall 2021 (Q2) and Spring 2020 (Q2).*
+*Boyce–DiPrima, Section 2.2 · MATH 331 Written HW 1 (Problems 1 and 3), Midterms Fall 2021 (Q2), Spring 2020 (Q2) and Summer 2023 (Q2).*
 
 The direct integration of [[§2 Solutions of Some Differential Equations|§2]] works for a much larger class of equations, most of them nonlinear: the separable equations $M(x) + N(y)\,dy/dx = 0$, in which the variables can be put on opposite sides. Integrating each side gives an equation $H_1(x) + H_2(y) = c$ that defines the solutions implicitly. Two new features appear that linear equations did not have. The solution is often only implicit, and solving for $y$ may be impossible. And the interval on which a solution exists depends on the initial value, not just on the coefficients; it ends where the integral curve has a vertical tangent or the solution blows up. A change of variable extends the method to homogeneous equations $dy/dx = F(y/x)$. In this section the independent variable is $x$.
 
@@ -97,8 +97,8 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 *Uses:* [[§5 Separable Differential Equations#^def-5-1|Def. §5.1]], [[§29 The Mean Value Theorem#^cor-29-4|451 §29.4]] (zero derivative on an interval), [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1]] (FTC I)
 
 > [!remark]- Connections
-> - See also: [[§59 Separable Equations#^thm-59-1|Calc Thm. §59.1]] (Stewart's treatment, in the form $h(y)\,dy/dx = g(x)$) and its [[§59 Separable Equations#^rem-59-1|Remark: Method]].
-> - When does (16) actually define $y$ as a differentiable function of $x$? Put $F(x, y) = \int_{x_0}^{x} M + \int_{y_0}^{y} N$. Then $F_y = N(y)$, and if $N(y_0) \ne 0$ the [[§12 The Implicit Function Theorem#^thm-12-1|452 Thm. §12.1]] (Implicit Function Theorem) gives a unique differentiable $\phi$ near $x_0$ with $F(x, \phi(x)) = 0$ and $\phi' = -F_x/F_y = -M/N$, which is (4). Where $N(y) = 0$ the integral curve can have a vertical tangent, and the solution ends there (Examples §5.1 and §5.2). The generalization to $M(x, y)\,dx + N(x, y)\,dy = 0$ is the exact equations of [[§9 Exact Differential Equations and Integrating Factors|§9]].
+> - See also: [[§59 Separable Equations#^def-59-1|Calc Def. §59.1]] and [[§59 Separable Equations#^thm-59-1|Calc Thm. §59.1]] (Stewart's treatment, in the form $h(y)\,dy/dx = g(x)$) and its [[§59 Separable Equations#^rem-59-1|Remark: Method]].
+> - When does (16) actually define $y$ as a differentiable function of $x$? Put $F(x, y) = \int_{x_0}^{x} M + \int_{y_0}^{y} N$. Then $F_y = N(y)$, and if $N(y_0) \ne 0$ the [[§12 The Implicit Function Theorem#^thm-12-1|452 Thm. §12.1]] (Implicit Function Theorem) gives a unique differentiable $\phi$ near $x_0$ with $F(x, \phi(x)) = 0$ and $\phi' = -F_x/F_y = -M/N$, which is (4). Where $N(y) = 0$ the integral curve can have a vertical tangent, and the solution ends there (Examples §5.1 and §5.2). The generalization to $M(x, y)\,dx + N(x, y)\,dy = 0$ is the exact equations of [[§9 Exact Differential Equations and Integrating Factors#^def-9-1|Definition §9.1]].
 
 > [!remark] Remark: Method — Separation of Variables
 > 1. **Separate.** Write the equation as $N(y)\,dy = M(x)\,dx$ (move all $y$'s to one side and all $x$'s to the other). If you divide by an expression in $y$, record its zeros $y_0$: if $f(x, y_0) = 0$ for all $x$, the constant function $y = y_0$ is a solution that the division loses (Remark: Constant Solutions below).
@@ -210,13 +210,13 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 >
 > **Check.** $y(0) = 6/(4 - 3) = 6$, and $y' = \dfrac{192e^{-8t}}{(4e^{-8t} - 3)^2}$, while $4y(y + 2) = \dfrac{24}{4e^{-8t} - 3} \cdot \dfrac{8e^{-8t}}{4e^{-8t} - 3}$, the same.
 >
-> **Interval.** The denominator vanishes when $e^{-8t} = \frac34$, that is, at $t^* = \frac18\ln\frac43 \approx 0.036$. So the solution exists on $-\infty < t < \frac18\ln\frac43$: it blows up to $+\infty$ after a very short time, although the right side $4y(y + 2)$ is a polynomial, defined and smooth everywhere. As $t \to -\infty$, $y \to 0$. This is a typically nonlinear phenomenon, impossible for linear equations ([[§7 Differences Between Linear and Nonlinear Differential Equations|§7]]).
+> **Interval.** The denominator vanishes when $e^{-8t} = \frac34$, that is, at $t^* = \frac18\ln\frac43 \approx 0.036$. So the solution exists on $-\infty < t < \frac18\ln\frac43$: it blows up to $+\infty$ after a very short time, although the right side $4y(y + 2)$ is a polynomial, defined and smooth everywhere. As $t \to -\infty$, $y \to 0$. This is a typically nonlinear phenomenon: for a linear equation the solution exists wherever the coefficients are continuous ([[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]]), while for $y' = y^2$ the blow-up time depends on the initial value ([[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-4|Example §7.4]]).
 >
 > *Source: 331 Written HW 1, Problem 1*
 
 ^ex-5-3
 
-> [!example] Example §5.4: Two Exam Problems of the Form y′ = g(x)y²
+> [!example] Example §5.4: Three Exam Problems of the Form y′ = g(x)y²
 > **(a)** Find the explicit solution of $\dfrac{dy}{dx} = -6e^{3x}y^2$, $y(0) = 3$.
 >
 > The constant function $y = 0$ is a solution; ours has $y(0) = 3 \ne 0$. Separate: $y^{-2}\,dy = -6e^{3x}\,dx$, so
@@ -241,10 +241,29 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 > y = \frac{1}{3x^2 - 2x + 1} .
 > $$
 >
-> Here the denominator has discriminant $4 - 12 < 0$, so it is never $0$: this solution exists for all $x$. The two problems look alike, but the interval of existence depends on the data, not on the form of the equation.
+> Here the denominator has discriminant $4 - 12 < 0$, so it is never $0$: this solution exists for all $x$.
+>
+> **(c)** Solve $\dfrac{dy}{dx} = x^5y^2 + 4xy^2$, $y(0) = 1$.
+>
+> Factor: $\dfrac{dy}{dx} = y^2(x^5 + 4x)$. Again $y = 0$ is a constant solution and ours starts at $1$. Separate: $y^{-2}\,dy = (x^5 + 4x)\,dx$, so
+>
+> $$
+> -\frac1y = \frac{x^6}{6} + 2x^2 + C .
+> $$
+>
+> At $x = 0$: $-1 = C$. Then $\frac1y = 1 - \frac{x^6}{6} - 2x^2$ and
+>
+> $$
+> y = \frac{6}{6 - x^6 - 12x^2} .
+> $$
+>
+> Check: with $D = 6 - x^6 - 12x^2$, $y' = -\dfrac{6D'}{D^2} = \dfrac{36x(x^4 + 4)}{D^2} = (x^5 + 4x)\cdot\dfrac{36}{D^2} = (x^5 + 4x)\,y^2$. The denominator is $6$ at $x = 0$ and decreases as $|x|$ grows. With $u = x^2$ it vanishes where $u^3 + 12u - 6 = 0$; the left side is increasing in $u$, so there is exactly one root, $u^* = \sqrt[3]{3 + \sqrt{73}} - \sqrt[3]{\sqrt{73} - 3} \approx 0.4902$ (Cardano's formula). So the solution exists on $|x| < \sqrt{u^*} \approx 0.7001$ and blows up at both ends.
+>
+> The three problems look alike, but the interval of existence depends on the data, not on the form of the equation: the solution in (a) blows up on one side, the one in (b) exists for all $x$, and the one in (c) blows up on both sides. How the interval in (a) moves with the initial value is worked out in [[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-4|Example §7.4]](b).
 >
 > *Source: 331 Midterm (Fall 2021), Q2*
 > *Source: 331 Midterm (Spring 2020), Q2*
+> *Source: 331 Midterm (Summer 2023), Q2*
 
 ^ex-5-4
 
@@ -259,7 +278,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 >
 > For example, $\dfrac{dy}{dx} = \dfrac{y - 4x}{x - y} = \dfrac{(y/x) - 4}{1 - (y/x)}$ is homogeneous. The word has nothing to do with the homogeneous linear equations of Chapter 3 ([[§13 Homogeneous Differential Equations with Constant Coefficients|§13]]).
 >
-> *BDP: 2.2, Problems 2.2.25–2.2.31 (text)*
+> *BDP: 2.2 (text before Problem 2.2.25)*
 
 ^def-5-2
 

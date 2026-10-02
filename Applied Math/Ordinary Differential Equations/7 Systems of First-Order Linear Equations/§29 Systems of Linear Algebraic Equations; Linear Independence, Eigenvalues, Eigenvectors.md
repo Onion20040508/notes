@@ -77,7 +77,7 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 > 2. Use elementary row operations (they correspond to legitimate operations on the equations) to bring $\mathbf{A}$ to **upper triangular** form, with zeros below the main diagonal.
 > 3. A row of the form $(0 \ \cdots \ 0 \mid c)$ with $c \ne 0$ means there is no solution. Otherwise, choose the variables without a pivot arbitrarily and solve for the others by back substitution, from the last equation up.
 >
-> This is the row reduction algorithm of [[§2 Row Reduction and Echelon Forms|235 §2]].
+> This is the row reduction algorithm of [[§2 Row Reduction and Echelon Forms#^rem-2-1|235 §2]].
 
 ^rem-29-1
 
@@ -155,13 +155,13 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 > \mathbf{X}\mathbf{c} = \mathbf{0} . \qquad (18)
 > $$
 >
-> If $\det\mathbf{X} \ne 0$, its only solution is $\mathbf{c} = \mathbf{0}$ (Theorem §29.1(a)), so the vectors are independent. If $\det\mathbf{X} = 0$, it has nonzero solutions (Theorem §29.1(b)), so they are dependent. For rows, apply this to $\mathbf{X}^T$, which has the same determinant.
+> If $\det\mathbf{X} \ne 0$, its only solution is $\mathbf{c} = \mathbf{0}$ (Theorem §29.1(a)), so the vectors are independent. If $\det\mathbf{X} = 0$, it has nonzero solutions (Theorem §29.1(b)), so they are dependent. For rows, apply this to $\mathbf{X}^T$, which has the same determinant ([[§21 Properties of Determinants#^thm-21-6|235 Thm. §21.6]]).
 >
 > **(b)** The product formula is cited, not proved, in BDP; see [[§21 Properties of Determinants#^thm-21-9|235 Thm. §21.9]]. Given it, independent columns of $\mathbf{A}$ and $\mathbf{B}$ mean $\det\mathbf{A} \ne 0 \ne \det\mathbf{B}$ by (a), so $\det\mathbf{C} \ne 0$ and the columns of $\mathbf{C}$ are independent by (a).
 
 ^pf-29-2
 
-*Uses:* [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|§29.1]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2|Def. §29.2]], [[§21 Properties of Determinants#^thm-21-9|235 Thm. §21.9]] (multiplicative property)
+*Uses:* [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|§29.1]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2|Def. §29.2]], [[§21 Properties of Determinants#^thm-21-9|235 Thm. §21.9]] (multiplicative property), [[§21 Properties of Determinants#^thm-21-6|235 Thm. §21.6]] (transpose)
 
 > [!example] Example §29.2: Testing Three Vectors
 > Are $\mathbf{x}^{(1)} = (1, 2, -1)^T$, $\mathbf{x}^{(2)} = (2, 1, 3)^T$, $\mathbf{x}^{(3)} = (-4, 1, -11)^T$ linearly independent? If not, find a linear relation.
@@ -391,4 +391,4 @@ With a repeated eigenvalue there may be fewer than $n$ independent eigenvectors,
 > - Rigorous treatment: real eigenvalues [[§22 Self-Adjoint and Normal Operators#^ladr-7-12|LADR 7.12]], orthogonal eigenvectors [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]], and statements 2 and 4, the spectral theorems [[§23 Spectral Theorem#^ladr-7-29|LADR 7.29]] (real symmetric) and [[§23 Spectral Theorem#^ladr-7-31|LADR 7.31]] (complex; Hermitian matrices are normal).
 > - For real symmetric matrices, with Lay's proof via the Schur factorization: [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]].
 
-These properties are why real symmetric coefficient matrices cause no trouble in [[§31 Homogeneous Linear Systems with Constant Coefficients|§31]]: even with repeated eigenvalues there are always $n$ independent eigenvectors ([[§31 Homogeneous Linear Systems with Constant Coefficients#^ex-31-3|Example §31.3]] uses the matrix of Example §29.4).
+These properties are why real symmetric coefficient matrices cause no trouble in §31 ([[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|Theorem §31.2]](b)): even with repeated eigenvalues there are always $n$ independent eigenvectors ([[§31 Homogeneous Linear Systems with Constant Coefficients#^ex-31-3|Example §31.3]] uses the matrix of Example §29.4).

@@ -61,7 +61,7 @@ This section explains why two solutions are enough. The existence and uniqueness
 
 ^thm-14-1
 
-*BDP omits the proof ("fairly difficult"; it refers to Coddington, Chapter 6, Section 8). The first-order theorem is proved by Picard iteration in [[§11 The Existence and Uniqueness Theorem|§11]] (Theorem 2.8.1); the second-order linear equation is the case $n = 2$ of the existence and uniqueness theorem for linear systems stated in [[§27 Introduction to Systems of First-Order Linear Equations|§27]] (Theorem 7.1.2), which BDP does not prove either.*
+*BDP omits the proof ("fairly difficult"; it refers to Coddington, Chapter 6, Section 8). §11 proves the first-order case by Picard iteration, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|Theorem §11.7]] (Theorem 2.8.1); the second-order linear equation is the case $n = 2$ of the systems version, [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (Theorem 7.1.2), which BDP does not prove either.*
 
 > [!remark] Remark: What the Theorem Says
 > Three things: the problem *has* a solution (existence); it has *only one* (uniqueness); and the solution is defined, and twice differentiable, *throughout* the interval $I$ where the coefficients are continuous. This is the second-order analog of [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] (Theorem 2.4.1) for first-order linear equations. Existence is sometimes visible directly: $y = \frac12e^t + \frac32e^{-t}$ solves $y'' - y = 0$, $y(0) = 2$, $y'(0) = -1$ on $(-\infty, \infty)$ ([[§13 Homogeneous Differential Equations with Constant Coefficients#^ex-13-1|Example §13.1]]). That it is the *only* solution is not obvious; the theorem guarantees it. Unlike first-order linear equations, second-order equations generally have no useful solution formula, so the proof has to work without one.
@@ -234,7 +234,7 @@ $$
 > y'' + p(t)y' + q(t)y = 0, \qquad y(t_0) = y_0, \quad y'(t_0) = y_0' . \qquad (12)
 > $$
 >
-> Since $W[y_1, y_2](t_0) \ne 0$, Theorem §14.3 gives $c_1$, $c_2$ (by (10) or (11)) such that $y = c_1y_1(t) + c_2y_2(t)$ also solves the initial value problem (12). (BDP's text says "(9)" here; the problem meant is (12).) By the uniqueness part of [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]] the two solutions of (12) are the same function:
+> Since $W[y_1, y_2](t_0) \ne 0$, Theorem §14.3 gives $c_1$, $c_2$ (by (10) or (11)) such that $y = c_1y_1(t) + c_2y_2(t)$ also solves the initial value problem (12). By the uniqueness part of [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]] the two solutions of (12) are the same function:
 >
 > $$
 > \phi(t) = c_1y_1(t) + c_2y_2(t) . \qquad (13)
@@ -291,8 +291,7 @@ $$
 >
 > The Summer 2023 midterm asked the same for $y'' - 6y' + 8y = 0$: the roots are $4$ and $2$, and $W[e^{4t}, e^{2t}] = e^{4t} \cdot 2e^{2t} - 4e^{4t} \cdot e^{2t} = -2e^{6t} \ne 0$, so the general solution is $y = c_1e^{4t} + c_2e^{2t}$. The order matters only for the sign: $W[y_2, y_1] = -W[y_1, y_2]$.
 >
-> *Source: 331 Midterm (Fall 2021), Q3*
-> *Source: 331 Midterm (Summer 2023), Q1*
+> *Source: 331 Midterm (Fall 2021), Q3; 331 Midterm (Summer 2023), Q1*
 
 ^ex-14-3
 

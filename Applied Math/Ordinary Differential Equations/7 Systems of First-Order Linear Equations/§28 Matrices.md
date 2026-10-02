@@ -11,7 +11,7 @@ tags: [ordinary-differential-equations, math331]
 
 *Boyce–DiPrima, Section 7.2.*
 
-To write the linear system (14) of [[§27 Introduction to Systems of First-Order Linear Equations#^def-27-2|§27]] as one equation $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$, Chapter 7 uses matrix algebra. This section is BDP's summary of it; the concepts have their home in [[Applied Linear Algebra]] (Lay) and [[Linear Algebra]] (Axler), linked from each box. Two things go beyond a first linear algebra course and are what Chapter 7 needs most: entries may be **complex**, with the conjugate $\overline{\mathbf{A}}$, the adjoint $\mathbf{A}^*$ and the inner product $(\mathbf{x}, \mathbf{y}) = \sum x_i\overline{y_i}$; and entries may be **functions of $t$**, which are differentiated and integrated entry by entry.
+To write the linear system (14) of [[§27 Introduction to Systems of First-Order Linear Equations#^def-27-2|Definition §27.2]] as one equation $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$, Chapter 7 uses matrix algebra. This section is BDP's summary of it; the concepts have their home in [[Applied Linear Algebra]] (Lay) and [[Linear Algebra]] (Axler), linked from each box. Two things go beyond a first linear algebra course and are what Chapter 7 needs most: entries may be **complex**, with the conjugate $\overline{\mathbf{A}}$, the adjoint $\mathbf{A}^*$ and the inner product $(\mathbf{x}, \mathbf{y}) = \sum x_i\overline{y_i}$; and entries may be **functions of $t$**, which are differentiated and integrated entry by entry.
 
 ## Matrices, Conjugates and Adjoints
 
@@ -211,6 +211,7 @@ To write the linear system (14) of [[§27 Introduction to Systems of First-Order
 >
 > The **determinant** $\det\mathbf{A}$ is the sum of the elements of any row or column times their cofactors; along the first row, $\det\mathbf{A} = a_{11}C_{11} + a_{12}C_{12} + \cdots + a_{1n}C_{1n}$.
 >
+> *BDP (p. 290) prints the first-row expansion as $C_{11} + C_{12} + \cdots + C_{1n}$, without the factors $a_{1j}$; the formula above is the correct one.*
 > *BDP: 7.2 (text), Equations (22)–(23)*
 
 ^def-28-4
@@ -340,6 +341,6 @@ Formula (24) is not an efficient way to compute $\mathbf{A}^{-1}$: for large $n$
 > \mathbf{A}^2 = \begin{pmatrix} t^2 & t \\ 0 & 0 \end{pmatrix}, \quad \frac{d}{dt}\mathbf{A}^2 = \begin{pmatrix} 2t & 1 \\ 0 & 0 \end{pmatrix} = \mathbf{A}\mathbf{A}' + \mathbf{A}'\mathbf{A}, \qquad\text{but}\quad 2\mathbf{A}\mathbf{A}' = \begin{pmatrix} 2t & 0 \\ 0 & 0 \end{pmatrix}.
 > $$
 >
-> The same caution applies to $e^{\mathbf{A}t}$ in [[§33★ Fundamental Matrices#^def-33-3|§33★]].
+> The same caution applies to $e^{\mathbf{A}t}$ in [[§33★ Fundamental Matrices#^def-33-3|Definition §33.3]].
 
 ^rem-28-2

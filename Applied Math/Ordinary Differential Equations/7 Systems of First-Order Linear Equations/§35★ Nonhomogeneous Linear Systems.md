@@ -12,7 +12,7 @@ tags: [ordinary-differential-equations, math331, extension]
 *Boyce–DiPrima, Section 7.9.*
 ★ *Beyond MATH 331: the course skipped this section; it is included from Boyce–DiPrima as part of the chapter.*
 
-For the nonhomogeneous system $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$, the general solution is the general solution of the homogeneous system plus one particular solution, as for a single equation in [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]]. The section gives four ways to find the particular solution, each carried over from earlier chapters. Diagonalization uncouples a constant-coefficient system into $n$ first-order linear equations. Undetermined coefficients guesses the form for exponential, polynomial and sinusoidal forcing. Variation of parameters works for any $\mathbf{P}(t)$ once a fundamental matrix is known, and for constant $\mathbf{A}$ it becomes $\mathbf{x} = e^{\mathbf{A}t}\mathbf{x}^0 + \int_0^t e^{\mathbf{A}(t-s)}\mathbf{g}(s)\,ds$. Laplace transforms turn the system into algebra through the transfer matrix $(s\mathbf{I} - \mathbf{A})^{-1}$. BDP applies all four to the same system, so the answers can be compared.
+For the nonhomogeneous system $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$, the general solution is the general solution of the homogeneous system plus one particular solution, as for a single equation in [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|Theorem §17.2]]. The section gives four ways to find the particular solution, each carried over from earlier chapters. Diagonalization uncouples a constant-coefficient system into $n$ first-order linear equations. Undetermined coefficients guesses the form for exponential, polynomial and sinusoidal forcing. Variation of parameters works for any $\mathbf{P}(t)$ once a fundamental matrix is known, and for constant $\mathbf{A}$ it becomes $\mathbf{x} = e^{\mathbf{A}t}\mathbf{x}^0 + \int_0^t e^{\mathbf{A}(t-s)}\mathbf{g}(s)\,ds$. Laplace transforms turn the system into algebra through the transfer matrix $(s\mathbf{I} - \mathbf{A})^{-1}$. BDP applies all four to the same system, so the answers can be compared.
 
 > [!theorem] Theorem §35.1: Structure of the General Solution
 > Let the $n \times n$ matrix $\mathbf{P}(t)$ and the $n \times 1$ vector $\mathbf{g}(t)$ be continuous for $\alpha < t < \beta$. Then the general solution of
@@ -27,7 +27,7 @@ For the nonhomogeneous system $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g
 > \mathbf{x} = c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t) + \mathbf{v}(t), \qquad (2)
 > $$
 >
-> where $c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t)$ is the general solution of the homogeneous system $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ and $\mathbf{v}(t)$ is a particular solution of (1).
+> where $c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t)$ is the general solution of the homogeneous system $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ ([[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Definition §30.3]]) and $\mathbf{v}(t)$ is a particular solution of (1).
 >
 > *BDP: 7.9 (text), Equation (2); Problem 7.9.12*
 
@@ -40,11 +40,11 @@ For the nonhomogeneous system $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g
 > (\boldsymbol{\phi} - \mathbf{v})' = \mathbf{P}\boldsymbol{\phi} + \mathbf{g} - \mathbf{P}\mathbf{v} - \mathbf{g} = \mathbf{P}(\boldsymbol{\phi} - \mathbf{v}),
 > $$
 >
-> so $\mathbf{u} = \boldsymbol{\phi} - \mathbf{v}$ solves the homogeneous system, and by Theorem 7.4.2 ([[§30 Basic Theory of Systems of First-Order Linear Equations|§30]]) $\mathbf{u} = c_1\mathbf{x}^{(1)} + \cdots + c_n\mathbf{x}^{(n)}$ for some constants. Hence $\boldsymbol{\phi}$ has the form (2). Conversely, by the same computation read backwards (and the superposition principle, Theorem 7.4.1), every expression (2) solves (1).
+> so $\mathbf{u} = \boldsymbol{\phi} - \mathbf{v}$ solves the homogeneous system. Since $\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}$ form a fundamental set, [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|Theorem §30.2]] gives $\mathbf{u} = c_1\mathbf{x}^{(1)} + \cdots + c_n\mathbf{x}^{(n)}$ for some constants. Hence $\boldsymbol{\phi}$ has the form (2). Conversely, $\mathbf{u} = c_1\mathbf{x}^{(1)} + \cdots + c_n\mathbf{x}^{(n)}$ solves the homogeneous system by the Principle of Superposition ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|Theorem §30.1]]), so $(\mathbf{u} + \mathbf{v})' = \mathbf{P}\mathbf{u} + \mathbf{P}\mathbf{v} + \mathbf{g} = \mathbf{P}(\mathbf{u} + \mathbf{v}) + \mathbf{g}$: every expression (2) solves (1).
 
 ^pf-35-1
 
-*Uses:* [[§30 Basic Theory of Systems of First-Order Linear Equations|§30]] (Theorems 7.4.1, 7.4.2)
+*Uses:* [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|§30.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|§30.2]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Def. §30.3]]
 
 > [!remark]- Connections
 > - The same structure for linear algebraic systems: [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]] (solutions of $A\mathbf{x} = \mathbf{b}$ are a translate of the solutions of $A\mathbf{x} = \mathbf{0}$). In LADR's terms, the solution set of (1) is a translate $\mathbf{v} + U$ of the $n$-dimensional solution space $U$ of the homogeneous system, [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97]].
@@ -91,17 +91,17 @@ where $\mathbf{A}$ is an $n \times n$ diagonalizable constant matrix. Diagonaliz
 > [!proof]+ Proof
 > Since $\mathbf{T}$ is constant, substituting (4) into (3) gives $\mathbf{T}\mathbf{y}' = \mathbf{A}\mathbf{T}\mathbf{y} + \mathbf{g}(t)$. Multiplying on the left by $\mathbf{T}^{-1}$ and using $\mathbf{T}^{-1}\mathbf{A}\mathbf{T} = \mathbf{D}$ ([[§33★ Fundamental Matrices#^thm-33-7|Theorem §33.7]]) gives (5); since $\mathbf{D}$ is diagonal, row $j$ of (5) is (6), in which $h_j$ is a linear combination of $g_1, \ldots, g_n$ with coefficients from row $j$ of $\mathbf{T}^{-1}$.
 >
-> Each equation (6) is first-order linear ([[§4 Linear Differential Equations; Method of Integrating Factors|§4]], BDP 2.1). With the integrating factor $e^{-r_jt}$,
+> Each equation (6) is first-order linear with a constant coefficient, as in [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-1|Theorem §4.1]] (BDP 2.1); the same computation works for complex $r_j$. With the integrating factor $e^{-r_jt}$,
 >
 > $$
 > \big(e^{-r_jt}y_j\big)' = e^{-r_jt}\big(y_j' - r_jy_j\big) = e^{-r_jt}h_j(t),
 > $$
 >
-> and integrating from $t_0$ to $t$ gives $e^{-r_jt}y_j(t) = \int_{t_0}^t e^{-r_js}h_j(s)\,ds + c_j$ with $c_j = e^{-r_jt_0}y_j(t_0)$; this is (7). Finally $\mathbf{T}\,(c_1e^{r_1t}, \ldots, c_ne^{r_nt})^T = \sum_j c_j\boldsymbol{\xi}^{(j)}e^{r_jt}$ is the general solution of $\mathbf{x}' = \mathbf{A}\mathbf{x}$ ([[§33★ Fundamental Matrices#^thm-33-8|Theorem §33.8]]), and by [[§35★ Nonhomogeneous Linear Systems#^thm-35-1|Theorem §35.1]] the remaining part of $\mathbf{T}\mathbf{y}$ is a particular solution of (3).
+> and integrating from $t_0$ to $t$ gives $e^{-r_jt}y_j(t) = \int_{t_0}^t e^{-r_js}h_j(s)\,ds + c_j$ with $c_j = e^{-r_jt_0}y_j(t_0)$; this is (7). Conversely, every $\mathbf{y}$ of the form (7) solves (5), and then $\mathbf{x} = \mathbf{T}\mathbf{y}$ solves (3), by the same computation read backwards. Finally $\mathbf{T}\,(c_1e^{r_1t}, \ldots, c_ne^{r_nt})^T = \sum_j c_j\boldsymbol{\xi}^{(j)}e^{r_jt} = \mathbf{\Psi}(t)\mathbf{c}$ with the fundamental matrix $\mathbf{\Psi} = \mathbf{T}e^{\mathbf{D}t}$ of [[§33★ Fundamental Matrices#^thm-33-8|Theorem §33.8]](c), so it is the general solution of $\mathbf{x}' = \mathbf{A}\mathbf{x}$ ([[§33★ Fundamental Matrices#^thm-33-1|Theorem §33.1]](a)). The remaining part of $\mathbf{T}\mathbf{y}$ (all $c_j = 0$) is a solution of (3), hence a particular solution, and by [[§35★ Nonhomogeneous Linear Systems#^thm-35-1|Theorem §35.1]] the sum is the general solution of (3).
 
 ^pf-35-2
 
-*Uses:* [[§33★ Fundamental Matrices#^thm-33-7|§33.7]], [[§33★ Fundamental Matrices#^thm-33-8|§33.8]], [[§35★ Nonhomogeneous Linear Systems#^thm-35-1|§35.1]], [[§4 Linear Differential Equations; Method of Integrating Factors|§4]] (integrating factors, BDP 2.1)
+*Uses:* [[§33★ Fundamental Matrices#^thm-33-1|§33.1]], [[§33★ Fundamental Matrices#^thm-33-7|§33.7]], [[§33★ Fundamental Matrices#^thm-33-8|§33.8]], [[§35★ Nonhomogeneous Linear Systems#^thm-35-1|§35.1]], [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-1|§4.1]]
 
 > [!remark]- Connections
 > - The homogeneous case is Lay's decoupling, [[§38 Applications to Differential Equations#^thm-38-3|235 Thm. §38.3]]; each equation (6) is solved by [[§61 Linear Equations#^thm-61-1|Calc Thm. §61.1]] (Stewart's treatment of linear equations).
@@ -130,13 +130,13 @@ where $\mathbf{A}$ is an $n \times n$ diagonalizable constant matrix. Diagonaliz
 > \boldsymbol{\xi}^{(1)} = \begin{pmatrix} 1 \\ -1 \end{pmatrix}, \qquad \boldsymbol{\xi}^{(2)} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}, \qquad (9)
 > $$
 >
-> and the general solution of the homogeneous system is
+> and the general solution of the homogeneous system is ([[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|Theorem §31.2]])
 >
 > $$
 > \mathbf{x} = c_1\begin{pmatrix} 1 \\ -1 \end{pmatrix}e^{-3t} + c_2\begin{pmatrix} 1 \\ 1 \end{pmatrix}e^{-t} . \qquad (10)
 > $$
 >
-> **The transformation.** $\mathbf{A}$ is real and symmetric, so normalizing the eigenvectors (both have length $\sqrt2$) makes $\mathbf{T}^{-1} = \mathbf{T}^T$:
+> **The transformation.** $\mathbf{A}$ is real and symmetric and its eigenvectors (9) are orthogonal, so normalizing them (both have length $\sqrt2$) makes $\mathbf{T}^{-1} = \mathbf{T}^T$ ([[§33★ Fundamental Matrices#^thm-33-7|Theorem §33.7]](b)):
 >
 > $$
 > \mathbf{T} = \frac{1}{\sqrt2}\begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}, \qquad \mathbf{T}^{-1} = \frac{1}{\sqrt2}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix} . \qquad (11)
@@ -185,9 +185,9 @@ where $\mathbf{A}$ is an $n \times n$ diagonalizable constant matrix. Diagonaliz
 ## Undetermined Coefficients
 
 > [!remark] Remark: Method — Undetermined Coefficients for Systems
-> The method of [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]] (BDP 3.5) carries over to $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$. As a practical matter it applies only when $\mathbf{P} = \mathbf{A}$ is a constant matrix and the components of $\mathbf{g}$ are polynomial, exponential or sinusoidal functions, or sums or products of these.
+> The method of [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^rem-17-2|§17]] (BDP 3.5) carries over to $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$. As a practical matter it applies only when $\mathbf{P} = \mathbf{A}$ is a constant matrix and the components of $\mathbf{g}$ are polynomial, exponential or sinusoidal functions, or sums or products of these.
 > 1. **Split $\mathbf{g}$** into terms of the form (constant vector) $\times$ (function), e.g. $\mathbf{g}(t) = \mathbf{u}e^{\lambda t} + \mathbf{w}t$.
-> 2. **Assume a solution** of the same form as in BDP 3.5 for a single equation, but with *vector* coefficients $\mathbf{a}, \mathbf{b}, \ldots$ to be determined.
+> 2. **Assume a solution** of the same form as in BDP 3.5 for a single equation ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|Theorem §17.4]]), but with *vector* coefficients $\mathbf{a}, \mathbf{b}, \ldots$ to be determined.
 > 3. **The main difference:** for a term $\mathbf{u}e^{\lambda t}$ where $\lambda$ is a simple root of the characteristic equation (an eigenvalue of $\mathbf{A}$), assume $\mathbf{a}te^{\lambda t} + \mathbf{b}e^{\lambda t}$, not $\mathbf{a}te^{\lambda t}$ alone.
 > 4. **Substitute** and equate the coefficients of each function ($te^{\lambda t}$, $e^{\lambda t}$, $t$, $1$, …) to get linear algebraic equations for the vectors; solve them in a convenient order.
 > 5. **Add** the general solution of the homogeneous system.
@@ -239,7 +239,7 @@ where $\mathbf{A}$ is an $n \times n$ diagonalizable constant matrix. Diagonaliz
 >
 > **Comparison with Example §35.1.** The $e^{-t}$ term differs from the particular solution in (15). The two differ by $\frac12(1, 1)^Te^{-t}$, a solution of the homogeneous system. Choosing $k = \frac12$ in (20) gives $\mathbf{b} = (\frac12, -\frac12)^T = \frac12(1, -1)^T$, and then the two particular solutions agree.
 >
-> *BDP prints this value as $\mathbf{b} = -\frac12(1, 1)^T$; the value from (20) is $\frac12(1, -1)^T$, which matches (15).*
+> *BDP prints this value as $\mathbf{b} = -\frac12(1, 1)^T$, which is not of the form (20); the value from (20) is $\frac12(1, -1)^T$, which matches (15).*
 >
 > *BDP: Example 7.9.2*
 
@@ -251,7 +251,7 @@ Now let the coefficient matrix be variable, or constant but not diagonalizable:
 $$
 \mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t), \qquad (22)
 $$
-with $\mathbf{P}$ and $\mathbf{g}$ continuous on $\alpha < t < \beta$, and suppose a fundamental matrix $\mathbf{\Psi}(t)$ of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ (23) is known. Since the general solution of (23) is $\mathbf{\Psi}(t)\mathbf{c}$ ([[§33★ Fundamental Matrices#^thm-33-1|Theorem §33.1]]), proceed as in [[§18★ Variation of Parameters|§18★]] (BDP 3.6): replace the constant vector $\mathbf{c}$ by a vector function $\mathbf{u}(t)$.
+with $\mathbf{P}$ and $\mathbf{g}$ continuous on $\alpha < t < \beta$, and suppose a fundamental matrix $\mathbf{\Psi}(t)$ of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ (23) is known. Since the general solution of (23) is $\mathbf{\Psi}(t)\mathbf{c}$ ([[§33★ Fundamental Matrices#^thm-33-1|Theorem §33.1]]), proceed as in [[§18★ Variation of Parameters#^thm-18-1|Theorem §18.1]] (BDP 3.6): replace the constant vector $\mathbf{c}$ by a vector function $\mathbf{u}(t)$.
 
 > [!theorem] Theorem §35.3: Variation of Parameters
 > Let $\mathbf{P}(t)$ and $\mathbf{g}(t)$ be continuous on $\alpha < t < \beta$, and let $\mathbf{\Psi}(t)$ be a fundamental matrix of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$.
@@ -287,27 +287,27 @@ with $\mathbf{P}$ and $\mathbf{g}$ continuous on $\alpha < t < \beta$, and suppo
 ^thm-35-3
 
 > [!proof]+ Proof
-> **(a)** By the product rule for matrix functions ([[§28 Matrices|§28]], BDP 7.2), $\mathbf{x}' = \mathbf{\Psi}'\mathbf{u} + \mathbf{\Psi}\mathbf{u}'$, so (22) becomes
+> **(a)** By the product rule for matrix functions ([[§28 Matrices#^prop-28-4|Proposition §28.4]]), $\mathbf{x}' = \mathbf{\Psi}'\mathbf{u} + \mathbf{\Psi}\mathbf{u}'$, so (22) becomes
 >
 > $$
 > \mathbf{\Psi}'(t)\mathbf{u}(t) + \mathbf{\Psi}(t)\mathbf{u}'(t) = \mathbf{P}(t)\mathbf{\Psi}(t)\mathbf{u}(t) + \mathbf{g}(t) . \qquad (25)
 > $$
 >
-> Since $\mathbf{\Psi}' = \mathbf{P}\mathbf{\Psi}$ ([[§33★ Fundamental Matrices#^thm-33-1|Theorem §33.1]](c)), (25) reduces to (26). $\mathbf{\Psi}(t)$ is nonsingular on $(\alpha, \beta)$, so (26) is equivalent to (27).
+> Since $\mathbf{\Psi}' = \mathbf{P}\mathbf{\Psi}$ ([[§33★ Fundamental Matrices#^thm-33-1|Theorem §33.1]](c)), (25) reduces to (26). $\mathbf{\Psi}(t)$ is nonsingular on $(\alpha, \beta)$ ([[§33★ Fundamental Matrices#^def-33-1|Definition §33.1]]), so (26) is equivalent to (27).
 >
-> **(b)** The entries of $\mathbf{\Psi}^{-1}(t) = \operatorname{adj}\mathbf{\Psi}(t)/\det\mathbf{\Psi}(t)$ are continuous, since $\det\mathbf{\Psi}(t) \ne 0$ (BDP uses this tacitly), so $\mathbf{\Psi}^{-1}\mathbf{g}$ is continuous and, by the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]]) applied entry by entry, the solutions of (27) are exactly
+> **(b)** The entries of $\mathbf{\Psi}^{-1}(t) = \operatorname{adj}\mathbf{\Psi}(t)/\det\mathbf{\Psi}(t)$ are continuous, since $\det\mathbf{\Psi}(t) \ne 0$ (BDP uses this tacitly), so $\mathbf{\Psi}^{-1}\mathbf{g}$ is continuous and, by the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]]) applied entry by entry, together with the fact that two antiderivatives on an interval differ by a constant ([[§26 The Mean Value Theorem#^cor-26-4|Calc Cor. §26.4]]), the solutions of (27) are exactly
 >
 > $$
 > \mathbf{u}(t) = \int_{t_1}^t \mathbf{\Psi}^{-1}(s)\mathbf{g}(s)\,ds + \mathbf{c} . \qquad (28)
 > $$
 >
-> Substituting into (24) gives (29). Its second term (the case $\mathbf{c} = \mathbf{0}$) is therefore a particular solution, and the first term $\mathbf{\Psi}(t)\mathbf{c}$ is the general solution of the homogeneous system ([[§33★ Fundamental Matrices#^thm-33-1|Theorem §33.1]](a)); by Theorem §35.1, (29) is the general solution of (22).
+> Substituting into (24) gives (29), which solves (22) by (a). Its second term (the case $\mathbf{c} = \mathbf{0}$) is therefore a particular solution, and the first term $\mathbf{\Psi}(t)\mathbf{c}$ is the general solution of the homogeneous system ([[§33★ Fundamental Matrices#^thm-33-1|Theorem §33.1]](a)); by [[§35★ Nonhomogeneous Linear Systems#^thm-35-1|Theorem §35.1]], (29) is the general solution of (22).
 >
-> **(c)** Take $t_1 = t_0$ in (29) (31). At $t = t_0$ the integral is zero, so the initial condition becomes $\mathbf{\Psi}(t_0)\mathbf{c} = \mathbf{x}^0$, i.e. $\mathbf{c} = \mathbf{\Psi}^{-1}(t_0)\mathbf{x}^0$ (32); this gives (33). If $\mathbf{\Psi} = \mathbf{\Phi}$, then $\mathbf{\Phi}^{-1}(t_0) = \mathbf{I}$, which gives (34).
+> **(c)** Take $t_1 = t_0$ in (29) (31). At $t = t_0$ the integral is zero, so the initial condition becomes $\mathbf{\Psi}(t_0)\mathbf{c} = \mathbf{x}^0$, i.e. $\mathbf{c} = \mathbf{\Psi}^{-1}(t_0)\mathbf{x}^0$ (32); this gives (33), the only solution of the initial value problem by the uniqueness part of [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]]. If $\mathbf{\Psi} = \mathbf{\Phi}$, then $\mathbf{\Phi}^{-1}(t_0) = \mathbf{I}$, which gives (34).
 
 ^pf-35-3
 
-*Uses:* [[§33★ Fundamental Matrices#^thm-33-1|§33.1]], [[§33★ Fundamental Matrices#^def-33-2|Def. §33.2]], [[§35★ Nonhomogeneous Linear Systems#^thm-35-1|§35.1]], [[§28 Matrices|§28]] (product rule, BDP 7.2), [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]]
+*Uses:* [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]], [[§33★ Fundamental Matrices#^thm-33-1|§33.1]], [[§33★ Fundamental Matrices#^def-33-1|Def. §33.1]], [[§33★ Fundamental Matrices#^def-33-2|Def. §33.2]], [[§35★ Nonhomogeneous Linear Systems#^thm-35-1|§35.1]], [[§28 Matrices#^prop-28-4|§28.4]], [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]], [[§26 The Mean Value Theorem#^cor-26-4|Calc Cor. §26.4]]
 
 > [!remark] Remark: Method — Variation of Parameters for Systems
 > To find a particular solution (or the general solution) of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$:
@@ -366,33 +366,37 @@ with $\mathbf{P}$ and $\mathbf{g}$ continuous on $\alpha < t < \beta$, and suppo
 For a constant coefficient matrix, (34) simplifies, because $\mathbf{\Phi}(t)\mathbf{\Phi}^{-1}(s)$ depends only on $t - s$.
 
 > [!theorem] Corollary §35.4: Variation of Parameters with Constant A
-> Let $\mathbf{A}$ be a constant matrix and $\mathbf{g}$ continuous. The solution of $\mathbf{x}' = \mathbf{A}\mathbf{x} + \mathbf{g}(t)$, $\mathbf{x}(0) = \mathbf{x}^0$ is
+> Let $\mathbf{A}$ be a constant $n \times n$ matrix, $\mathbf{g}$ continuous on an interval containing $0$, and $\mathbf{\Phi}$ the fundamental matrix of $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{\Phi}(0) = \mathbf{I}$. The solution of $\mathbf{x}' = \mathbf{A}\mathbf{x} + \mathbf{g}(t)$, $\mathbf{x}(0) = \mathbf{x}^0$ is
 >
 > $$
-> \mathbf{x} = \mathbf{\Phi}(t)\mathbf{x}^0 + \int_0^t \mathbf{\Phi}(t - s)\mathbf{g}(s)\,ds = e^{\mathbf{A}t}\mathbf{x}^0 + \int_0^t e^{\mathbf{A}(t - s)}\mathbf{g}(s)\,ds,
+> \mathbf{x} = \mathbf{\Phi}(t)\mathbf{x}^0 + \int_0^t \mathbf{\Phi}(t - s)\mathbf{g}(s)\,ds = e^{\mathbf{A}t}\mathbf{x}^0 + \int_0^t e^{\mathbf{A}(t - s)}\mathbf{g}(s)\,ds .
 > $$
->
-> where $\mathbf{\Phi}(0) = \mathbf{I}$.
 >
 > *BDP: Problem 7.9.16*
 
 ^cor-35-4
 
 > [!proof]+ Proof
-> Take $t_0 = 0$ in (34). The matrix $\mathbf{\Phi}(t)$ does not depend on the integration variable $s$, so it can be taken inside the integral (each entry of $\mathbf{\Phi}(t)\int\cdots$ is a fixed linear combination of integrals). By [[§33★ Fundamental Matrices#^prop-33-6|Proposition §33.6]](c), $\mathbf{\Phi}(t)\mathbf{\Phi}^{-1}(s) = \mathbf{\Phi}(t - s)$, and $\mathbf{\Phi}(t) = e^{\mathbf{A}t}$ by [[§33★ Fundamental Matrices#^thm-33-4|Theorem §33.4]].
+> The constant matrix $\mathbf{A}$ is continuous everywhere, so [[§35★ Nonhomogeneous Linear Systems#^thm-35-3|Theorem §35.3]](c) with $t_0 = 0$ gives, by (34),
+>
+> $$
+> \mathbf{x} = \mathbf{\Phi}(t)\mathbf{x}^0 + \mathbf{\Phi}(t)\int_0^t \mathbf{\Phi}^{-1}(s)\mathbf{g}(s)\,ds .
+> $$
+>
+> The matrix $\mathbf{\Phi}(t)$ does not depend on the integration variable $s$, so it can be taken inside the integral: each entry of $\mathbf{\Phi}(t)\int_0^t \mathbf{\Phi}^{-1}(s)\mathbf{g}(s)\,ds$ is a linear combination, with coefficients independent of $s$, of integrals, and the integral is linear. By [[§33★ Fundamental Matrices#^thm-33-4|Theorem §33.4]], $\mathbf{\Phi}(t) = e^{\mathbf{A}t}$, so [[§33★ Fundamental Matrices#^prop-33-6|Proposition §33.6]](c) applies: $\mathbf{\Phi}(t)\mathbf{\Phi}^{-1}(s) = \mathbf{\Phi}(t - s)$. Hence the integral term is $\int_0^t \mathbf{\Phi}(t - s)\mathbf{g}(s)\,ds$, which is the first form; writing $\mathbf{\Phi}(t) = e^{\mathbf{A}t}$ and $\mathbf{\Phi}(t - s) = e^{\mathbf{A}(t - s)}$ gives the second.
 
 ^pf-35-4
 
 *Uses:* [[§35★ Nonhomogeneous Linear Systems#^thm-35-3|§35.3]], [[§33★ Fundamental Matrices#^prop-33-6|§33.6]], [[§33★ Fundamental Matrices#^thm-33-4|§33.4]]
 
-The integral is a convolution of $e^{\mathbf{A}t}$ with $\mathbf{g}$, the system form of the convolution formula for a single equation in [[§26★ The Convolution Integral|§26★]] (BDP 6.6). The analogy with $x' = ax + g(t)$, whose solution is $x = e^{at}x_0 + \int_0^t e^{a(t-s)}g(s)\,ds$, is complete.
+The integral is a convolution of $e^{\mathbf{A}t}$ with $\mathbf{g}$, the system form of the convolution formula for a single equation in [[§26★ The Convolution Integral#^thm-26-3|Theorem §26.3]] (BDP 6.6). The analogy with $x' = ax + g(t)$, whose solution is $x = e^{at}x_0 + \int_0^t e^{a(t-s)}g(s)\,ds$, is complete.
 
 ## Laplace Transforms
 
 The Laplace transform solves systems in very much the same way as single equations of arbitrary order (BDP Ch. 6). Since the transform is an integral, the transform of a vector is computed component by component: $\mathcal{L}\{\mathbf{x}(t)\} = \mathbf{X}(s)$ is the vector of the transforms of the components of $\mathbf{x}(t)$.
 
 > [!theorem] Proposition §35.5: Transform of the Derivative of a Vector Function
-> If each component of $\mathbf{x}(t)$ satisfies the hypotheses of Theorem 6.2.1 ([[§22 Solution of Initial Value Problems|§22]]), then
+> If each component of $\mathbf{x}(t)$ satisfies the hypotheses of Theorem 6.2.1 ([[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1]]), then
 >
 > $$
 > \mathcal{L}\{\mathbf{x}'(t)\} = s\mathbf{X}(s) - \mathbf{x}(0) . \qquad (39)
@@ -403,11 +407,11 @@ The Laplace transform solves systems in very much the same way as single equatio
 ^prop-35-5
 
 > [!proof]+ Proof
-> Component $i$ of $\mathcal{L}\{\mathbf{x}'(t)\}$ is $\mathcal{L}\{x_i'(t)\} = sX_i(s) - x_i(0)$ by Theorem 6.2.1; these are the components of $s\mathbf{X}(s) - \mathbf{x}(0)$.
+> Component $i$ of $\mathcal{L}\{\mathbf{x}'(t)\}$ is $\mathcal{L}\{x_i'(t)\} = sX_i(s) - x_i(0)$ by [[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1]]; these are the components of $s\mathbf{X}(s) - \mathbf{x}(0)$.
 
 ^pf-35-5
 
-*Uses:* [[§22 Solution of Initial Value Problems|§22]] (Theorem 6.2.1)
+*Uses:* [[§22 Solution of Initial Value Problems#^thm-22-1|§22.1]]
 
 > [!definition] Definition §35.1: Transfer Matrix
 > For the system $\mathbf{x}' = \mathbf{A}\mathbf{x} + \mathbf{g}(t)$ with $\mathbf{x}(0) = \mathbf{0}$, transforming gives $(s\mathbf{I} - \mathbf{A})\mathbf{X}(s) = \mathbf{G}(s)$, so
@@ -424,10 +428,10 @@ The Laplace transform solves systems in very much the same way as single equatio
 
 > [!remark] Remark: Method — Laplace Transforms for Systems
 > To solve $\mathbf{x}' = \mathbf{A}\mathbf{x} + \mathbf{g}(t)$, $\mathbf{x}(0) = \mathbf{x}^0$:
-> 1. **Transform** each term, using Proposition §35.5: $s\mathbf{X}(s) - \mathbf{x}^0 = \mathbf{A}\mathbf{X}(s) + \mathbf{G}(s)$.
+> 1. **Transform** each term, using [[§35★ Nonhomogeneous Linear Systems#^prop-35-5|Proposition §35.5]]: $s\mathbf{X}(s) - \mathbf{x}^0 = \mathbf{A}\mathbf{X}(s) + \mathbf{G}(s)$.
 > 2. **Solve the algebraic system:** $\mathbf{X}(s) = (s\mathbf{I} - \mathbf{A})^{-1}\big(\mathbf{x}^0 + \mathbf{G}(s)\big)$. For a $2 \times 2$ matrix, $(s\mathbf{I} - \mathbf{A})^{-1}$ is $1/\det(s\mathbf{I} - \mathbf{A})$ times the matrix with the diagonal entries swapped and the off-diagonal entries negated.
 > 3. **Expand** each component of $\mathbf{X}(s)$ in partial fractions.
-> 4. **Invert** term by term with Table 6.2.1 ([[§22 Solution of Initial Value Problems|§22]]).
+> 4. **Invert** term by term with Table 6.2.1 ([[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6]]).
 >
 > The method is particularly useful when the forcing involves discontinuous or impulsive terms ([[§24 Differential Equations with Discontinuous Forcing Functions|§24]], [[§25 Impulse Functions|§25]]), and it gives the solution of the initial value problem directly.
 
@@ -454,7 +458,7 @@ The Laplace transform solves systems in very much the same way as single equatio
 > s\mathbf{I} - \mathbf{A} = \begin{pmatrix} s + 2 & -1 \\ -1 & s + 2 \end{pmatrix}, \qquad \det(s\mathbf{I} - \mathbf{A}) = (s + 2)^2 - 1 = (s + 1)(s + 3), \qquad (45)
 > $$
 >
-> so the transfer matrix is
+> so the transfer matrix ([[§35★ Nonhomogeneous Linear Systems#^def-35-1|Definition §35.1]]) is
 >
 > $$
 > (s\mathbf{I} - \mathbf{A})^{-1} = \frac{1}{(s + 1)(s + 3)}\begin{pmatrix} s + 2 & 1 \\ 1 & s + 2 \end{pmatrix} . \qquad (46)
@@ -482,7 +486,7 @@ The Laplace transform solves systems in very much the same way as single equatio
 > X_1(s) = \frac{1}{s^2} - \frac{4/3}{s} + \frac{2}{s + 1} + \frac{1}{(s + 1)^2} - \frac{2/3}{s + 3}, \qquad X_2(s) = \frac{2}{s^2} - \frac{5/3}{s} + \frac{1}{s + 1} + \frac{1}{(s + 1)^2} + \frac{2/3}{s + 3} .
 > $$
 >
-> **Inverting** with $\mathcal{L}\{t\} = 1/s^2$, $\mathcal{L}\{1\} = 1/s$, $\mathcal{L}\{e^{at}\} = 1/(s - a)$ and $\mathcal{L}\{te^{at}\} = 1/(s - a)^2$ (Table 6.2.1):
+> **Inverting** with $\mathcal{L}\{t\} = 1/s^2$, $\mathcal{L}\{1\} = 1/s$, $\mathcal{L}\{e^{at}\} = 1/(s - a)$ and $\mathcal{L}\{te^{at}\} = 1/(s - a)^2$ (Table 6.2.1, [[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6]]):
 >
 > $$
 > \mathbf{x}(t) = \begin{pmatrix} 2 \\ 1 \end{pmatrix}e^{-t} - \frac23\begin{pmatrix} 1 \\ -1 \end{pmatrix}e^{-3t} + \begin{pmatrix} 1 \\ 1 \end{pmatrix}te^{-t} + \begin{pmatrix} 1 \\ 2 \end{pmatrix}t - \frac13\begin{pmatrix} 4 \\ 5 \end{pmatrix} . \qquad (48)

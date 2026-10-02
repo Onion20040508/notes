@@ -193,13 +193,13 @@ For quantitative information, solve (7).
 >
 > **Case $y_0 > K$.** (BDP leaves this case to the reader.) Now the solution stays in $y > K$, so $|1 - y/K| = y/K - 1$ and (9) becomes $\ln\big(y/(y/K - 1)\big) = rt + c$, that is, $y/(y/K - 1) = Ce^{rt}$, or $y/(1 - y/K) = -Ce^{rt}$. This is (10) with the constant $-C$, and the initial condition again gives the constant $y_0/(1 - y_0/K)$; the same algebra leads to (11).
 >
-> **Cases $y_0 = 0$ and $y_0 = K$.** Formula (11) gives $y = 0$ and $y = K$, which are the solutions by Definition §8.4 and the uniqueness part of Theorem 2.4.2.
+> **Cases $y_0 = 0$ and $y_0 = K$.** Formula (11) gives $y = 0$ and $y = K$, which are the solutions by Definition §8.4 and the uniqueness part of Theorem 2.4.2 ([[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]]).
 >
 > **Domain and limit.** For $t \ge 0$ the denominator $y_0 + (K - y_0)e^{-rt}$ is positive when $y_0 > 0$: it lies between $y_0$ and $K$. So (11) is defined for all $t \ge 0$, and as $t \to \infty$, $e^{-rt} \to 0$ and $y(t) \to y_0K/y_0 = K$.
 
 ^pf-8-3
 
-*Uses:* [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-3|Def. §8.3]], [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-4|Def. §8.4]], [[§7 Differences Between Linear and Nonlinear Differential Equations#^cor-7-3|§7.3]] (solutions do not cross), [[§5 Separable Differential Equations#^thm-5-1|§5.1]] (separation of variables)
+*Uses:* [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-3|Def. §8.3]], [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-4|Def. §8.4]], [[§7 Differences Between Linear and Nonlinear Differential Equations#^cor-7-3|§7.3]] (solutions do not cross), [[§11 The Existence and Uniqueness Theorem#^thm-11-8|§11.8]] (uniqueness), [[§5 Separable Differential Equations#^thm-5-1|§5.1]] (separation of variables)
 
 So, for each $y_0 > 0$, the solution approaches the equilibrium solution $y = K$ as $t \to \infty$: after a long time the population is close to the saturation level regardless of its initial size, as long as that is positive, and solutions approach $K$ faster as $r$ increases. By contrast, solutions that start very near zero grow and approach $K$: the only way to make a solution remain near zero is to start *exactly* at zero.
 
@@ -370,7 +370,7 @@ with positive constants $r$ and $T$. The graph of $f(y)$ is now a downward-shift
 > -r\Big(1 - \frac yT\Big)y = -r\,\frac{D - y_0}{D}\,\frac{y_0T}{D} = -\frac{r\,(T - y_0)e^{rt}\,y_0T}{D^2} ,
 > $$
 >
-> which agree, and $y(0) = y_0T/T = y_0$. By the uniqueness part of Theorem 2.4.2 this is the solution as long as $D \ne 0$.
+> which agree, and $y(0) = y_0T/T = y_0$. By the uniqueness part of Theorem 2.4.2 ([[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]]) this is the solution as long as $D \ne 0$.
 >
 > If $0 < y_0 < T$, then $D(t) \ge y_0 > 0$ for $t \ge 0$ and $D(t) \to \infty$, so $y \to 0$. If $y_0 > T$, then $D(t) = y_0 - (y_0 - T)e^{rt}$ decreases from $y_0$ and vanishes when $e^{rt^*} = y_0/(y_0 - T)$, which is (16); since $y_0/(y_0 - T) > 1$, $t^* > 0$. As $t \to t^{*-}$, $D \to 0^+$ and $y \to +\infty$. (BDP leaves (16) as Problem 12.)
 

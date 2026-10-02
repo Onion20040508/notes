@@ -86,7 +86,7 @@ Throughout, functions are piecewise continuous and of exponential order, so thei
 >
 > In particular $\mathcal{L}\{u_0(t)\} = 1/s = \mathcal{L}\{1\}$, since $u_0(t) = 1$ for all $t \ge 0$.
 >
-> *BDP: 6.3, Equation (4)*
+> *BDP: 6.3 (text), Equation (4)*
 
 ^thm-23-1
 

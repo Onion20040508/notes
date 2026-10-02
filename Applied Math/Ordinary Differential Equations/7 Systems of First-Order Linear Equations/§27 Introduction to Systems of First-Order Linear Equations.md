@@ -68,7 +68,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 > x_1' = x_2, \qquad x_2' = -\frac{k}{m}x_1 - \frac{\gamma}{m}x_2 + \frac1m F(t) , \qquad (6)
 > $$
 >
-> and the initial conditions $u(0) = u_0$, $u'(0) = u_0'$ become $x_1(0) = u_0$, $x_2(0) = u_0'$. In the matrix notation of [[§28 Matrices#^def-28-2|§28]], (6) reads $\mathbf{x}' = \begin{pmatrix} 0 & 1 \\ -k/m & -\gamma/m \end{pmatrix}\mathbf{x} + \begin{pmatrix} 0 \\ F(t)/m \end{pmatrix}$. The eigenvalues $r$ of this coefficient matrix satisfy $\det\begin{pmatrix} -r & 1 \\ -k/m & -\gamma/m - r \end{pmatrix} = r^2 + \frac{\gamma}{m}r + \frac{k}{m} = 0$, which is the characteristic equation $mr^2 + \gamma r + k = 0$ of (5) ([[§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-4|Definition §13.4]]); this is why the eigenvalue methods of [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-1|§31]] reproduce Chapter 3.
+> and the initial conditions $u(0) = u_0$, $u'(0) = u_0'$ become $x_1(0) = u_0$, $x_2(0) = u_0'$. In the matrix notation of [[§28 Matrices#^def-28-2|Definition §28.2]], (6) reads $\mathbf{x}' = \begin{pmatrix} 0 & 1 \\ -k/m & -\gamma/m \end{pmatrix}\mathbf{x} + \begin{pmatrix} 0 \\ F(t)/m \end{pmatrix}$. The eigenvalues $r$ of this coefficient matrix satisfy $\det\begin{pmatrix} -r & 1 \\ -k/m & -\gamma/m - r \end{pmatrix} = r^2 + \frac{\gamma}{m}r + \frac{k}{m} = 0$, which is the characteristic equation $mr^2 + \gamma r + k = 0$ of (5) ([[§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-4|Definition §13.4]]); this is why the eigenvalue method of [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-1|Theorem §31.1]] reproduces Chapter 3.
 >
 > *BDP: Example 7.1.1 and Equations (5)–(6)*
 
@@ -109,8 +109,6 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 > Conversely, let $(x_1, \ldots, x_n)$ solve (9)–(10) and put $y = x_1$. By (9), $y' = x_2$, $y'' = x_2' = x_3$, and inductively $y^{(k-1)} = x_k$ for $k \le n$; in particular $y$ is $n$ times differentiable and $y^{(n)} = x_n'$. Then (10) says $y^{(n)} = F(t, y, y', \ldots, y^{(n-1)})$. The statement about initial conditions is (8) at $t = t_0$.
 
 ^pf-27-1
-
-*Uses:* none
 
 > [!remark] Remark: Method — Reducing an Equation of Order n to a System
 > 1. Solve the equation for the highest derivative: $y^{(n)} = F(t, y, \ldots, y^{(n-1)})$.
@@ -160,10 +158,10 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 ^thm-27-2
 
-*BDP omits the proof ("it can be constructed by generalizing the argument in Section 2.8"): Picard iteration, as in [[§11 The Existence and Uniqueness Theorem|§11]] (Theorem 2.8.1), with absolute values replaced by a norm on $\mathbb{R}^n$. No subject in the vault proves the $n$-dimensional version.*
+*BDP omits the proof ("it can be constructed by generalizing the argument in Section 2.8"): Picard iteration, as in [[§11 The Existence and Uniqueness Theorem#^thm-11-7|Theorem §11.7]] (BDP Theorem 2.8.1), with absolute values replaced by a norm on $\mathbb{R}^n$. No subject in the vault proves the $n$-dimensional version.*
 
 > [!remark] Remark: Reading Theorem §27.2
-> It is the analogue of Theorem 2.4.2 for a single first-order equation (stated in [[§7 Differences Between Linear and Nonlinear Differential Equations|§7]], proved in [[§11 The Existence and Uniqueness Theorem|§11]]). Note that:
+> It is the analogue of Theorem 2.4.2 for a single first-order equation (stated in [[§7 Differences Between Linear and Nonlinear Differential Equations|§7]], proved as [[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]]). Note that:
 > - nothing is assumed about the partial derivatives of the $F_i$ with respect to $t$;
 > - the length $2h$ of the interval of existence is not specified, and it may be very short;
 > - the hypotheses are sufficient, not necessary: the same conclusion holds under weaker but more complicated hypotheses.
@@ -182,7 +180,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 > \end{aligned} \qquad (14)
 > $$
 >
-> It is **homogeneous** if $g_1(t), \ldots, g_n(t)$ are all zero on $I$, and **nonhomogeneous** otherwise. In matrix notation ([[§28 Matrices#^def-28-2|§28]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-1|§30]]) it is $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$.
+> It is **homogeneous** if $g_1(t), \ldots, g_n(t)$ are all zero on $I$, and **nonhomogeneous** otherwise. In matrix notation ([[§28 Matrices#^def-28-2|Definition §28.2]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-1|Definition §30.1]]) it is $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$.
 >
 > For example, the systems (1) and (2) of Example §27.1 are linear; (1) is nonhomogeneous unless $F_1(t) = F_2(t) = 0$, and (2) is homogeneous.
 >

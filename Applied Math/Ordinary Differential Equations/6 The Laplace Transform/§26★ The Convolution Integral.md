@@ -53,9 +53,9 @@ The Laplace transform turns derivatives into multiplication by $s$, but it does 
 
 ^prop-26-1
 
-*BDP leaves the proofs to the reader (Problem 6.6.1); here they are.*
-
 > [!proof]+ Proof
+> *BDP leaves the proofs to the reader (Problem 6.6.1).*
+>
 > **(4)** is the substitution $\xi = t - \tau$ of Definition §26.1: as $\tau$ runs from $0$ to $t$, $\xi$ runs from $t$ to $0$ and $d\tau = -d\xi$, so
 >
 > $$
@@ -151,7 +151,7 @@ Other properties of ordinary multiplication fail.
 > F(s)G(s) = \int_0^\infty e^{-st}\Big(\int_0^t f(t - \tau)\,g(\tau)\,d\tau\Big)dt = \int_0^\infty e^{-st}h(t)\,dt = \mathcal{L}\{h(t)\} . \qquad (11), (12)
 > $$
 >
-> **The reversal of order.** (BDP assumes that the order of integration can be reversed; here is why, under the standing assumption of Chapter 6 that $f$ and $g$ are piecewise continuous and of exponential order $a$.) A piecewise continuous function is bounded on $[0, M]$, so there are constants $K_1$, $K_2$ with $|f(t)| \le K_1e^{at}$ and $|g(t)| \le K_2e^{at}$ for *all* $t \ge 0$. On the wedge,
+> **The reversal of order.** (BDP assumes that the order of integration can be reversed; here is why, under the standing assumption of Chapter 6 that $f$ and $g$ are piecewise continuous and of exponential order $a$.) Exponential order gives $|f(t)| \le Ke^{at}$ only for $t \ge M$; but a piecewise continuous function is bounded on $[0, M]$, and $e^{at} \ge 1$ there because $a \ge 0$, so there are constants $K_1$, $K_2$ with $|f(t)| \le K_1e^{at}$ and $|g(t)| \le K_2e^{at}$ for *all* $t \ge 0$. On the wedge,
 >
 > $$
 > \big|e^{-st}f(t - \tau)g(\tau)\big| \le K_1K_2\,e^{-st}e^{a(t - \tau)}e^{a\tau} = K_1K_2\,e^{-(s - a)t},
@@ -159,7 +159,7 @@ Other properties of ordinary multiplication fail.
 > \int_0^\infty\!\!\int_0^t K_1K_2\,e^{-(s - a)t}\,d\tau\,dt = K_1K_2\int_0^\infty t\,e^{-(s - a)t}\,dt = \frac{K_1K_2}{(s - a)^2} < \infty
 > $$
 >
-> for $s > a$. So the integrand is absolutely integrable over the wedge, and by Tonelli's and Fubini's theorems ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]]) both iterated integrals equal the double integral. The same bound shows that $h$ is of exponential order (any exponent larger than $a$), so $\mathcal{L}\{h\}$ exists for $s > a$.
+> for $s > a$. So the integrand is absolutely integrable over the wedge, and by Tonelli's and Fubini's theorems ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]]) both iterated integrals equal the double integral. (Each improper integral in (10) and (11) converges absolutely, so it agrees with the corresponding Lebesgue integral.) The same bound gives $|h(t)| \le K_1K_2\,te^{at}$ and $\int_0^\infty e^{-st}|h(t)|\,dt \le K_1K_2/(s - a)^2$, so $\mathcal{L}\{h\}$ exists (absolutely convergent) for $s > a$.
 
 ^pf-26-2
 
@@ -252,7 +252,7 @@ $$
 *Uses:* [[§26★ The Convolution Integral#^def-26-2|Def. §26.2]], [[§26★ The Convolution Integral#^thm-26-2|§26.2]], [[§25 Impulse Functions#^thm-25-2|§25.2]], [[§22 Solution of Initial Value Problems#^prop-22-3|§22.3]] (the transformed equation), [[§22 Solution of Initial Value Problems#^thm-22-4|§22.4]] (uniqueness of the inverse transform)
 
 > [!remark]- Connections
-> - The same splitting $y = \phi + \psi$, for variable coefficients and without transforms: [[§18★ Variation of Parameters#^cor-18-2|Corollary §18.2]], where $\psi(t) = \int_{t_0}^t K(t, \tau)\,g(\tau)\,d\tau$ with the kernel $K(t, \tau) = \big(y_1(\tau)y_2(t) - y_1(t)y_2(\tau)\big)/W[y_1, y_2](\tau)$. For constant coefficients $K(t, \tau) = h(t - \tau)$ depends only on $t - \tau$, and the integral is the convolution (28).
+> - The same splitting $y = \phi + \psi$, for variable coefficients and without transforms: [[§18★ Variation of Parameters#^cor-18-2|Corollary §18.2]] (for the equation divided by $a$), where $\psi(t) = \int_{t_0}^t K(t, \tau)\,g(\tau)/a\,d\tau$ with the kernel $K(t, \tau) = \big(y_1(\tau)y_2(t) - y_1(t)y_2(\tau)\big)/W[y_1, y_2](\tau)$. For constant coefficients $K(t, \tau)/a = h(t - \tau)$ depends only on $t - \tau$, and the integral is the convolution (28).
 
 Once $a$, $b$, $c$ are given, $\phi$ comes from the table, possibly after partial fractions or a translation. The input enters only through the convolution (28), which can be evaluated, numerically if necessary, for any $g$.
 

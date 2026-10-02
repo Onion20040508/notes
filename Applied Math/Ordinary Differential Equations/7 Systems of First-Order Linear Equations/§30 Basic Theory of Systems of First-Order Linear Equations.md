@@ -9,7 +9,7 @@ tags: [ordinary-differential-equations, math331]
 ---
 ← [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors]] · ↑ [[· 7 Systems of First-Order Linear Equations]] · [[§31 Homogeneous Linear Systems with Constant Coefficients]] →
 
-*Boyce–DiPrima, Section 7.4 · MATH 331 Written HW 6.*
+*Boyce–DiPrima, Section 7.4.*
 
 The theory of a system of $n$ first-order linear equations $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ runs parallel to that of a single second-order linear equation in [[§14 Solutions of Linear Homogeneous Equations; the Wronskian|§14]]. Linear combinations of solutions are solutions. Any $n$ solutions that are linearly independent at each point give every solution, each in exactly one way. Their independence is tested by one determinant, the Wronskian, and Abel's formula shows that it is either never zero or identically zero, so it suffices to check a single point. Such fundamental sets always exist, and for a real system, real and imaginary parts of complex solutions are again solutions. Everything in Sections 7.5–7.9 rests on these five theorems.
 
@@ -100,35 +100,7 @@ The theory of a system of $n$ first-order linear equations $\mathbf{x}' = \mathb
 
 ^ex-30-1
 
-> [!example] Example §30.2: The Difference of Two Solutions of a Nonhomogeneous System
-> Let $x = x_1(t)$, $y = y_1(t)$ and $x = x_2(t)$, $y = y_2(t)$ be two solutions of
->
-> $$
-> x' = p_{11}(t)x + p_{12}(t)y + g_1(t), \qquad y' = p_{21}(t)x + p_{22}(t)y + g_2(t) .
-> $$
->
-> Show that $x = x_1(t) - x_2(t)$, $y = y_1(t) - y_2(t)$ solves the corresponding homogeneous system.
->
-> Write out the four equations
->
-> $$
-> \begin{aligned}
-> x_1' &= p_{11}x_1 + p_{12}y_1 + g_1, & y_1' &= p_{21}x_1 + p_{22}y_1 + g_2, \\
-> x_2' &= p_{11}x_2 + p_{12}y_2 + g_1, & y_2' &= p_{21}x_2 + p_{22}y_2 + g_2,
-> \end{aligned}
-> $$
->
-> and subtract the second row from the first. The forcing terms $g_1$, $g_2$ cancel:
->
-> $$
-> (x_1 - x_2)' = p_{11}(x_1 - x_2) + p_{12}(y_1 - y_2), \qquad (y_1 - y_2)' = p_{21}(x_1 - x_2) + p_{22}(y_1 - y_2) .
-> $$
->
-> This is the homogeneous system with $g_1 = g_2 = 0$. In vector form: if $\mathbf{x}_1' = \mathbf{P}\mathbf{x}_1 + \mathbf{g}$ and $\mathbf{x}_2' = \mathbf{P}\mathbf{x}_2 + \mathbf{g}$, then $(\mathbf{x}_1 - \mathbf{x}_2)' = \mathbf{P}(\mathbf{x}_1 - \mathbf{x}_2)$. Consequently every solution of (2) is one particular solution plus a solution of (3), the structure of [[§35★ Nonhomogeneous Linear Systems|§35★]] (BDP's Problem 7.4.11), just as for $\mathbf{A}\mathbf{x} = \mathbf{b}$ in [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|Theorem §29.1]].
->
-> *Source: 331 Written HW 6, Problem 1*
-
-^ex-30-2
+The nonhomogeneous system (2) is tied to (3) as for a single equation: the difference of two solutions of (2) solves (3) ([[§27 Introduction to Systems of First-Order Linear Equations#^ex-27-3|Example §27.3]], Written HW 6, Problem 1). In vector form, if $\mathbf{x}_1' = \mathbf{P}\mathbf{x}_1 + \mathbf{g}$ and $\mathbf{x}_2' = \mathbf{P}\mathbf{x}_2 + \mathbf{g}$, then $(\mathbf{x}_1 - \mathbf{x}_2)' = \mathbf{P}(\mathbf{x}_1 - \mathbf{x}_2)$. Consequently every solution of (2) is one particular solution plus a solution of (3), the structure of [[§35★ Nonhomogeneous Linear Systems|§35★]] (BDP's Problem 7.4.11), just as for $\mathbf{A}\mathbf{x} = \mathbf{b}$ in [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|Theorem §29.1]].
 
 ## Fundamental Sets of Solutions
 
@@ -282,7 +254,7 @@ The theorem means that to decide whether $n$ solutions form a fundamental set, i
 
 Once one fundamental set is known, others are obtained as independent linear combinations of it. For theoretical purposes the set of Theorem §30.4 is usually the simplest; as a matrix it reappears as the fundamental matrix $\mathbf{\Phi}(t)$ with $\mathbf{\Phi}(t_0) = \mathbf{I}$ in [[§33★ Fundamental Matrices#^def-33-2|Definition §33.2]].
 
-> [!example] Example §30.3: The Fundamental Set Normalized at t = 0
+> [!example] Example §30.2: The Fundamental Set Normalized at t = 0
 > For the system (6) of Example §30.1, find the fundamental set of Theorem §30.4 with $t_0 = 0$.
 >
 > Every solution has the form (7), so we choose $c_1, c_2$ to match the initial values. For $\mathbf{x}(0) = \mathbf{e}^{(1)}$: $c_1 + c_2 = 1$ and $2c_1 - 2c_2 = 0$, so $c_1 = c_2 = \frac12$. For $\mathbf{x}(0) = \mathbf{e}^{(2)}$: $c_1 + c_2 = 0$ and $2c_1 - 2c_2 = 1$, so $c_1 = \frac14$, $c_2 = -\frac14$. Thus
@@ -300,7 +272,7 @@ Once one fundamental set is known, others are obtained as independent linear com
 >
 > *BDP: 7.4 (text), applied to Equation (7)*
 
-^ex-30-3
+^ex-30-2
 
 ## Real-Valued Solutions
 

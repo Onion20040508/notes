@@ -59,7 +59,7 @@ The Laplace transform turns differentiation into multiplication by $s$: $\mathca
 
 > [!remark]- Connections
 > - Integration by parts with $f$ only piecewise smooth: [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] requires $u, v$ continuous on $[t_i, t_{i+1}]$, differentiable inside, with integrable derivatives, which is exactly the situation on each piece.
-> - Continuity of $f$ is essential: if $f$ jumps at $t_i$, the boundary terms no longer cancel and each jump contributes $-e^{-st_i}\big(f(t_i^+) - f(t_i^-)\big)$; step functions ([[§23 Step Functions|§23]]) are handled by the shift theorems instead.
+> - Continuity of $f$ is essential: if $f$ jumps at $t_i$, the boundary terms no longer cancel and each jump contributes $-e^{-st_i}\big(f(t_i^+) - f(t_i^-)\big)$; step functions are handled by the shift theorem [[§23 Step Functions#^thm-23-2|Theorem §23.2]] instead.
 
 Applying (1) to $f'$ (if $f'$ and $f''$ satisfy the conditions imposed on $f$ and $f'$) gives
 $$
@@ -222,7 +222,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 > | 13 | $u_c(t)f(t - c)$ | $e^{-cs}F(s)$ | [[§23 Step Functions#^thm-23-2\|Thm. §23.2]] (Theorem 6.3.1) |
 > | 14 | $e^{ct}f(t)$ | $F(s - c)$ | [[§23 Step Functions#^thm-23-3\|Thm. §23.3]] (Theorem 6.3.2) |
 > | 15 | $f(ct)$ | $\dfrac1c F\Big(\dfrac sc\Big)$, $\ c > 0$ | proof below |
-> | 16 | $(f * g)(t) = \displaystyle\int_0^t f(t - \tau)g(\tau)\,d\tau$ | $F(s)G(s)$ | [[§26★ The Convolution Integral\|§26★]] |
+> | 16 | $(f * g)(t) = \displaystyle\int_0^t f(t - \tau)g(\tau)\,d\tau$ | $F(s)G(s)$ | [[§26★ The Convolution Integral#^thm-26-2\|Thm. §26.2]] (Theorem 6.6.1) |
 > | 17 | $\delta(t - c)$ | $e^{-cs}$ | [[§25 Impulse Functions#^thm-25-2\|Thm. §25.2]] |
 > | 18 | $f^{(n)}(t)$ | $s^nF(s) - s^{n-1}f(0) - \cdots - f^{(n-1)}(0)$ | [[§22 Solution of Initial Value Problems#^cor-22-2\|Cor. §22.2]] |
 > | 19 | $(-t)^nf(t)$ | $F^{(n)}(s)$ | proof below |
@@ -275,20 +275,26 @@ So there is essentially a one-to-one correspondence between functions and their 
 >
 > valid when $s/c$ is in the domain of $F$.
 >
-> **19.** (BDP: Problem 6.2.21.) For $f$ satisfying the conditions of Theorem §21.2 it is legitimate to differentiate under the integral sign with respect to $s$ when $s > a$ (BDP asserts this). Then
+> **19.** (BDP: Problem 6.2.21.) Let $f$ satisfy the conditions of Theorem §21.2 and fix $s > a$. BDP asserts that one may differentiate under the integral sign with respect to $s$; here is why. Put $\delta = \frac12(s - a)$ and let $0 < |h| \le \delta$, so that $s + h > a$ and $F(s + h)$ exists. By Taylor's formula with Lagrange remainder, $e^x = 1 + x + \frac12 x^2e^{\xi}$ with $\xi$ between $0$ and $x$, so $|e^x - 1 - x| \le \frac12 x^2e^{|x|}$. With $x = -ht$,
 >
 > $$
-> F'(s) = \int_0^\infty \frac{\partial}{\partial s}\big(e^{-st}\big)f(t)\,dt = \int_0^\infty e^{-st}\big(-tf(t)\big)\,dt = \mathcal{L}\{-tf(t)\} ,
+> \Big|\frac{e^{-(s + h)t} - e^{-st}}{h} + te^{-st}\Big| = \frac{e^{-st}}{|h|}\,\big|e^{-ht} - 1 + ht\big| \le \frac{|h|}{2}\,t^2e^{-(s - \delta)t}, \qquad t \ge 0 .
 > $$
 >
-> and since $-tf(t)$ again satisfies those conditions (for any larger exponent), induction gives $F^{(n)}(s) = \mathcal{L}\{(-t)^nf(t)\}$.
+> Multiplying by $|f(t)|$ and integrating,
+>
+> $$
+> \Big|\frac{F(s + h) - F(s)}{h} - \int_0^\infty e^{-st}\big(-tf(t)\big)\,dt\Big| \le \frac{|h|}{2}\int_0^\infty t^2e^{-(s - \delta)t}|f(t)|\,dt .
+> $$
+>
+> All these integrals converge by Theorem §21.1: the integrands are piecewise continuous, and for $t \ge M$, $t^2e^{-(s - \delta)t}|f(t)| \le Kt^2e^{-\delta t} \le Ce^{-\delta t/2}$ (as $t^2e^{-\delta t/2}$ is bounded), and likewise $t\,e^{-st}|f(t)| \le Ce^{-\delta t/2}$. Letting $h \to 0$ gives $F'(s) = \mathcal{L}\{-tf(t)\}$ for every $s > a$. Finally, $-tf(t)$ is piecewise continuous and $|-tf(t)| \le Kte^{at} \le K'e^{a't}$ for every $a' > a$ and $t \ge M$, so it again satisfies the conditions of Theorem §21.2 (with any exponent $a' > a$), and induction gives $F^{(n)}(s) = \mathcal{L}\{(-t)^nf(t)\}$ for $s > a$.
 
 ^pf-22-6
 
-*Uses:* [[§22 Solution of Initial Value Problems#^thm-22-1|§22.1]], [[§21 Definition of the Laplace Transform#^thm-21-3|§21.3]], [[§21 Definition of the Laplace Transform#^ex-21-2|Ex. §21.2]], [[§21 Definition of the Laplace Transform#^ex-21-4|Ex. §21.4]], [[§21 Definition of the Laplace Transform#^thm-21-1|§21.1]] (comparison)
+*Uses:* [[§22 Solution of Initial Value Problems#^thm-22-1|§22.1]], [[§21 Definition of the Laplace Transform#^thm-21-3|§21.3]], [[§21 Definition of the Laplace Transform#^ex-21-2|Ex. §21.2]], [[§21 Definition of the Laplace Transform#^ex-21-4|Ex. §21.4]], [[§21 Definition of the Laplace Transform#^thm-21-1|§21.1]] (comparison), [[§21 Definition of the Laplace Transform#^thm-21-2|§21.2]], [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]] (Taylor's formula, entry 19)
 
 > [!remark] Remark: The Course Table
-> The table handed out with the course review and printed on the back of the exams lists entries 1, 3 (with $t$ and $t^2$ separately), 2, 11, 5, 6 (with frequency $\omega$ in place of $a$), 7, 8, 9, 10 (as $e^{at}\cos(\omega t)$, $e^{at}\sin(\omega t)$), 12 (as $u_a(t)$), 17, the derivative rules $\mathcal{L}\{y'\} = s\mathcal{L}\{y\} - y(0)$ and $\mathcal{L}\{y''\} = s^2\mathcal{L}\{y\} - sy(0) - y'(0)$ (entry 18 for $n = 1, 2$), the "$t$-shift" $u_a(t)f(t - a) \leftrightarrow e^{-as}F(s)$ (entry 13) and the "$s$-shift" $e^{at}f(t) \leftrightarrow F(s - a)$ (entry 14). It omits entries 4, 15, 16 and 19.
+> The table handed out with the course review and attached to the final exams lists entries 1, 3 (with $t$ and $t^2$ separately), 2, 11, 5, 6 (with frequency $\omega$ in place of $a$), 7, 8, 9, 10 (as $e^{at}\cos(\omega t)$, $e^{at}\sin(\omega t)$), 12 (as $u_a(t)$), 17, the derivative rules $\mathcal{L}\{y'\} = s\mathcal{L}\{y\} - y(0)$ and $\mathcal{L}\{y''\} = s^2\mathcal{L}\{y\} - sy(0) - y'(0)$ (entry 18 for $n = 1, 2$), the "$t$-shift" $u_a(t)f(t - a) \leftrightarrow e^{-as}F(s)$ (entry 13) and the "$s$-shift" $e^{at}f(t) \leftrightarrow F(s - a)$ (entry 14). It omits entries 4, 15, 16 and 19.
 >
 > *Source: 331 Course Review, Table of Laplace Transforms*
 
@@ -412,4 +418,4 @@ So there is essentially a one-to-one correspondence between functions and their 
 
 ## Vibrations and Circuits
 
-The most important elementary applications are the equations of [[§19 Mechanical and Electrical Vibrations|§19]]: the spring–mass system $m\,\dfrac{d^2u}{dt^2} + \gamma\dfrac{du}{dt} + ku = F(t)$ (33), and the series circuit $L\dfrac{d^2Q}{dt^2} + R\dfrac{dQ}{dt} + \dfrac1C Q = E(t)$ (34) or, for the current, $L\dfrac{d^2I}{dt^2} + R\dfrac{dI}{dt} + \dfrac1C I = \dfrac{dE}{dt}$ (35), each with initial conditions. They are the same mathematical problem, and Proposition §22.3 solves all of them at once once $\mathcal{L}\{F\}$ or $\mathcal{L}\{E\}$ is known; most constant-coefficient problems of this chapter can be read as models of one of these systems.
+The most important elementary applications are the equations of [[§19 Mechanical and Electrical Vibrations|§19]]: the spring–mass system ([[§19 Mechanical and Electrical Vibrations#^prop-19-1|Proposition §19.1]]) $m\,\dfrac{d^2u}{dt^2} + \gamma\dfrac{du}{dt} + ku = F(t)$ (33), and the series circuit ([[§19 Mechanical and Electrical Vibrations#^prop-19-5|Proposition §19.5]]) $L\dfrac{d^2Q}{dt^2} + R\dfrac{dQ}{dt} + \dfrac1C Q = E(t)$ (34) or, for the current, $L\dfrac{d^2I}{dt^2} + R\dfrac{dI}{dt} + \dfrac1C I = \dfrac{dE}{dt}$ (35), each with initial conditions. They are the same mathematical problem, and Proposition §22.3 solves all of them at once once $\mathcal{L}\{F\}$ or $\mathcal{L}\{E\}$ is known; most constant-coefficient problems of this chapter can be read as models of one of these systems.

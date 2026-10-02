@@ -32,7 +32,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 >
 > It measures the strength of the forcing. If $g$ is a force, $I(\tau)$ is the total impulse of the force over the interval (the change in momentum it produces). If $y$ is the current in a circuit and $g$ is the time derivative of the voltage, $I(\tau)$ is the total voltage impressed on the circuit during the interval.
 >
-> *BDP: 6.5, Equations (2) and (3)*
+> *BDP: 6.5 (text), Equations (2) and (3)*
 
 ^def-25-1
 
@@ -49,7 +49,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 > \lim_{\tau \to 0^+} d_\tau(t) = 0 \quad (t \ne 0), \qquad \lim_{\tau \to 0^+} I(\tau) = 1 . \qquad (5), (6)
 > $$
 >
-> *BDP: 6.5, Equations (4)–(6)*
+> *BDP: 6.5 (text), Equations (4)–(6)*
 
 ^def-25-2
 
@@ -68,7 +68,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 >
 > No ordinary function satisfies both (7) and (8): a function that vanishes except at one point has integral $0$. $\delta$ is an example of a **generalized function**, usually called the **Dirac delta function**. All statements about it are understood through the pulses $d_\tau$, as in Definition §25.4.
 >
-> *BDP: 6.5, Equations (7)–(10)*
+> *BDP: 6.5 (text), Equations (7)–(10)*
 
 ^def-25-3
 
@@ -91,20 +91,20 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 >
 > (The Dirac delta does not satisfy the hypotheses of the existence theorem for Laplace transforms, [[§21 Definition of the Laplace Transform#^thm-21-2|Theorem §21.2]] (BDP Theorem 6.1.2), so its transform has to be defined.)
 >
-> *BDP: 6.5, Equations (11) and (15)*
+> *BDP: 6.5 (text), Equations (11) and (15)*
 
 ^def-25-4
 
 ## The Laplace Transform of δ
 
 > [!theorem] Theorem §25.1: Transform of a Shifted Pulse
-> If $0 < \tau < t_0$, then
+> If $0 < \tau < t_0$, then, for $s \ne 0$,
 >
 > $$
 > \mathcal{L}\{d_\tau(t - t_0)\} = \frac{\sinh(s\tau)}{s\tau}\,e^{-st_0} . \qquad (12)
 > $$
 >
-> *BDP: 6.5, Equation (12)*
+> *BDP: 6.5 (text), Equation (12)*
 
 ^thm-25-1
 
@@ -115,7 +115,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 > \mathcal{L}\{d_\tau(t - t_0)\} = \int_{t_0 - \tau}^{t_0 + \tau} e^{-st}\,\frac{1}{2\tau}\,dt = -\frac{1}{2s\tau}\,e^{-st}\Big|_{t = t_0 - \tau}^{t = t_0 + \tau} = \frac{1}{2s\tau}\,e^{-st_0}\big(e^{s\tau} - e^{-s\tau}\big) = \frac{\sinh(s\tau)}{s\tau}\,e^{-st_0},
 > $$
 >
-> using $\sinh x = \frac12(e^x - e^{-x})$.
+> using $\sinh x = \frac12(e^x - e^{-x})$. (For $s = 0$ the integral is just the impulse $1$ of the pulse.)
 
 ^pf-25-1
 
@@ -134,7 +134,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 > \mathcal{L}\{\delta(t)\} = \lim_{t_0 \to 0^+} e^{-st_0} = 1 . \qquad (14)
 > $$
 >
-> *BDP: 6.5, Equations (13) and (14)*
+> *BDP: 6.5 (text), Equations (13) and (14)*
 
 ^thm-25-2
 
@@ -145,7 +145,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 > \lim_{\tau \to 0^+} \frac{\sinh(s\tau)}{s\tau} = \lim_{\tau \to 0^+} \frac{s\cosh(s\tau)}{s} = \cosh 0 = 1 .
 > $$
 >
-> This gives (13). Equation (14) is BDP's definition of $\mathcal{L}\{\delta(t)\}$ as the limit of (13) as $t_0 \to 0^+$.
+> This gives (13) for $s \ne 0$; for $s = 0$ both sides of (13) equal $1$, since each pulse has impulse $1$. Equation (14) is BDP's definition of $\mathcal{L}\{\delta(t)\}$ as the limit of (13) as $t_0 \to 0^+$.
 
 ^pf-25-2
 
@@ -160,9 +160,9 @@ The formulas agree with the shift rule of [[§23 Step Functions#^thm-23-2|Theore
 > \int_{-\infty}^{\infty} \delta(t - t_0)\,f(t)\,dt = f(t_0) . \qquad (16)
 > $$
 >
-> The same holds for an integral over any interval that contains $t_0$ in its interior, and the integral is $0$ over an interval that does not contain $t_0$.
+> The same holds for an integral over any interval $[\alpha, \beta]$ that contains $t_0$ in its interior, and here it suffices that $f$ be continuous on $[\alpha, \beta]$; the integral is $0$ over an interval that does not contain $t_0$.
 >
-> *BDP: 6.5, Equation (16)*
+> *BDP: 6.5 (text), Equation (16)*
 
 ^thm-25-3
 
@@ -175,7 +175,7 @@ The formulas agree with the shift rule of [[§23 Step Functions#^thm-23-2|Theore
 >
 > for some $t^*$ with $t_0 - \tau \le t^* \le t_0 + \tau$, by the mean value theorem for integrals applied to the continuous $f$ on $[t_0 - \tau, t_0 + \tau]$. As $\tau \to 0^+$, $t^* \to t_0$, so $f(t^*) \to f(t_0)$ by continuity of $f$ at $t_0$. By (15) the left side of (16) is this limit, $f(t_0)$.
 >
-> For an interval $[\alpha, \beta]$ with $\alpha < t_0 < \beta$, once $\tau$ is small enough that $(t_0 - \tau, t_0 + \tau) \subseteq (\alpha, \beta)$, the integral over $[\alpha, \beta]$ equals the integral over $\mathbb{R}$, so the limit is again $f(t_0)$. If $t_0 \notin [\alpha, \beta]$, then for small $\tau$ the pulse vanishes on $[\alpha, \beta]$ and the integral is $0$.
+> For an interval $[\alpha, \beta]$ with $\alpha < t_0 < \beta$, once $\tau$ is small enough that $(t_0 - \tau, t_0 + \tau) \subseteq (\alpha, \beta)$, the integral of $d_\tau(t - t_0)f(t)$ over $[\alpha, \beta]$ is again $\frac{1}{2\tau}\int_{t_0 - \tau}^{t_0 + \tau} f(t)\,dt$. The argument above uses $f$ only on $[t_0 - \tau, t_0 + \tau]$, so the limit is again $f(t_0)$. If $t_0 \notin [\alpha, \beta]$, then for small $\tau$ the pulse vanishes on $[\alpha, \beta]$ and the integral is $0$.
 
 ^pf-25-3
 

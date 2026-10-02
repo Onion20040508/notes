@@ -109,7 +109,7 @@ The transient lets the solution satisfy any initial conditions. As time goes on,
 > [!proof]+ Proof
 > (BDP calls (11) "straightforward but somewhat lengthy" and leaves it as Problem 3.8.9; here it is.)
 >
-> **Transient.** $u_c$ solves $mu'' + \gamma u' + ku = 0$, so $u_c \to 0$ by [[§19 Mechanical and Electrical Vibrations#^thm-19-3|Theorem §19.3]]. The roots of $mr^2 + \gamma r + k = 0$ have nonzero real part $-\gamma/(2m)$ (complex case) or are negative, so $\pm i\omega$ are not roots and the trial form $U = A\cos\omega t + B\sin\omega t$ needs no factor $t$ ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]]).
+> **Transient.** $u_c$ solves $mu'' + \gamma u' + ku = 0$, so $u_c \to 0$ by [[§19 Mechanical and Electrical Vibrations#^thm-19-3|Theorem §19.3]]. The roots of $mr^2 + \gamma r + k = 0$ have nonzero real part $-\gamma/(2m)$ (complex case) or are negative, so $\pm i\omega$ are not roots and the trial form $U = A\cos\omega t + B\sin\omega t$ needs no factor $t$ ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|Theorem §17.4]]).
 >
 > **Coefficients.** Write $a = k - m\omega^2 = m(\omega_0^2 - \omega^2)$ and $b = \gamma\omega > 0$. Since $U'' = -\omega^2U$ and $U' = \omega(-A\sin\omega t + B\cos\omega t)$,
 >
@@ -127,7 +127,7 @@ The transient lets the solution satisfy any initial conditions. As time goes on,
 
 ^pf-20-1
 
-*Uses:* [[§19 Mechanical and Electrical Vibrations#^thm-19-3|§19.3]], [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]], [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]] (undetermined coefficients)
+*Uses:* [[§19 Mechanical and Electrical Vibrations#^thm-19-3|§19.3]], [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]], [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|§17.4]] (undetermined coefficients)
 
 > [!theorem] Proposition §20.2: Amplitude of the Forced Response
 > In the notation of Theorem §20.1, with $\Gamma = \dfrac{\gamma^2}{mk}$,
@@ -190,7 +190,7 @@ The transient lets the solution satisfy any initial conditions. As time goes on,
 *Uses:* [[§20 Forced Periodic Vibrations#^thm-20-1|§20.1]]
 
 ![[m331-20-2.svg]]
-*The amplitude response (13) against $\omega/\omega_0$ for several damping parameters $\Gamma = \gamma^2/(mk)$. Every curve starts at $1$ (the static displacement $F_0/k$) and tends to $0$. For $\Gamma = 1/64$ (Example §20.2) the peak is $\approx 8.03$, just below $\omega/\omega_0 = 1$; for $\Gamma = 2$ there is no peak. The dashed curve $1/|1 - \omega^2/\omega_0^2|$ is the undamped limit $\Gamma \to 0$.*
+*The amplitude response (13) against $\omega/\omega_0$ for several damping parameters $\Gamma = \gamma^2/(mk)$. Every curve starts at $1$ (the static displacement $F_0/k$) and tends to $0$. For $\Gamma = 1/64$ (Example §20.2) the peak is $\approx 8.02$, just below $\omega/\omega_0 = 1$; for $\Gamma = 2$ there is no peak. The dashed curve $1/|1 - \omega^2/\omega_0^2|$ is the undamped limit $\Gamma \to 0$.*
 
 > [!definition] Definition §20.2: Resonance
 > For a lightly damped system, the amplitude $R$ of the forced response is large when $\omega$ is near $\omega_0$, even for small forces: by (15), $R_{\max} \approx F_0/(\gamma\omega_0)$, and the smaller $\gamma$, the more pronounced the peak. This phenomenon is called **resonance**.
@@ -265,7 +265,7 @@ The form of its general solution depends on whether $\omega$ equals the natural 
 
 ^pf-20-3
 
-*Uses:* [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]], [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]] (undetermined coefficients), [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas)
+*Uses:* [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]], [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|§17.4]] (undetermined coefficients), [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas)
 
 > [!definition] Definition §20.3: Beat
 > If $|\omega_0 - \omega|$ is small, then $\omega_0 + \omega \gg |\omega_0 - \omega|$, and (21) is a rapid oscillation with frequency $\frac12(\omega_0 + \omega)$ whose amplitude
@@ -311,7 +311,7 @@ The form of its general solution depends on whether $\omega$ equals the natural 
 ^prop-20-4
 
 > [!proof]+ Proof
-> Now $F_0\cos\omega_0 t$ solves the homogeneous equation, so the trial form needs the factor $t$ ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]]): $U = t(A\cos\omega_0 t + B\sin\omega_0 t)$. Write $V = A\cos\omega_0 t + B\sin\omega_0 t$, so $V'' = -\omega_0^2V$. Then $U = tV$, $U'' = 2V' + tV'' = 2V' - \omega_0^2 tV$, and
+> Now $F_0\cos\omega_0 t$ solves the homogeneous equation, so the trial form needs the factor $t$ ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|Theorem §17.4]]): $U = t(A\cos\omega_0 t + B\sin\omega_0 t)$. Write $V = A\cos\omega_0 t + B\sin\omega_0 t$, so $V'' = -\omega_0^2V$. Then $U = tV$, $U'' = 2V' + tV'' = 2V' - \omega_0^2 tV$, and
 >
 > $$
 > U'' + \omega_0^2U = 2V' = 2\omega_0(-A\sin\omega_0 t + B\cos\omega_0 t) .
@@ -321,7 +321,7 @@ The form of its general solution depends on whether $\omega$ equals the natural 
 
 ^pf-20-4
 
-*Uses:* [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients|§17]] (undetermined coefficients, the factor $t$), [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]]
+*Uses:* [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|§17.4]] (undetermined coefficients, the factor $t$), [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]]
 
 > [!example] Example §20.4: Resonance
 > **(a)** Solve $u'' + u = \frac12\cos t$, $u(0) = 0$, $u'(0) = 0$.

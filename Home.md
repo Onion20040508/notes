@@ -15,6 +15,7 @@
 **Applied Math**
 - [[Calculus]]
 - [[Applied Linear Algebra]]
+- [[Ordinary Differential Equations]]
 
 **Physics**
 - [[Classical Mechanics]]

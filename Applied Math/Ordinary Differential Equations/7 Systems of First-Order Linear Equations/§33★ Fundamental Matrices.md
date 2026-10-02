@@ -17,7 +17,7 @@ Placing $n$ independent solutions of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ sid
 ## Fundamental Matrices
 
 > [!definition] Definition §33.1: Fundamental Matrix
-> Suppose that $\mathbf{x}^{(1)}(t), \ldots, \mathbf{x}^{(n)}(t)$ form a fundamental set of solutions ([[§30 Basic Theory of Systems of First-Order Linear Equations|§30]], BDP 7.4) of
+> Suppose that $\mathbf{x}^{(1)}(t), \ldots, \mathbf{x}^{(n)}(t)$ form a fundamental set of solutions ([[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Definition §30.3]]) of
 >
 > $$
 > \mathbf{x}' = \mathbf{P}(t)\mathbf{x} \qquad (1)
@@ -42,7 +42,7 @@ Placing $n$ independent solutions of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ sid
 > \mathbf{x}' = \begin{pmatrix} 1 & 1 \\ 4 & 1 \end{pmatrix}\mathbf{x} .
 > $$
 >
-> The eigenvalues of the coefficient matrix are $r_1 = 3$ and $r_2 = -1$, with eigenvectors $(1, 2)^T$ and $(1, -2)^T$ ([[§31 Homogeneous Linear Systems with Constant Coefficients|§31]], Example 7.5.2). So
+> The eigenvalues of the coefficient matrix are $r_1 = 3$ and $r_2 = -1$, with eigenvectors $(1, 2)^T$ and $(1, -2)^T$ ([[§31 Homogeneous Linear Systems with Constant Coefficients#^ex-31-1|Example §31.1]]). So
 >
 > $$
 > \mathbf{x}^{(1)}(t) = \begin{pmatrix} e^{3t} \\ 2e^{3t} \end{pmatrix}, \qquad \mathbf{x}^{(2)}(t) = \begin{pmatrix} e^{-t} \\ -2e^{-t} \end{pmatrix}
@@ -92,7 +92,7 @@ Placing $n$ independent solutions of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ sid
 > \mathbf{\Psi}(t)\mathbf{c} = c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t) . \qquad (5)
 > $$
 >
-> By Theorem 7.4.2 ([[§30 Basic Theory of Systems of First-Order Linear Equations|§30]]), the expressions (5) with arbitrary constants are exactly the solutions of (1).
+> By [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|Theorem §30.2]] (BDP Theorem 7.4.2) and [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|Theorem §30.1]], the expressions (5) with arbitrary constants are exactly the solutions of (1).
 >
 > **(b)** By (a), $\mathbf{x} = \mathbf{\Psi}(t)\mathbf{c}$ satisfies the initial condition if and only if
 >
@@ -100,18 +100,18 @@ Placing $n$ independent solutions of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ sid
 > \mathbf{\Psi}(t_0)\mathbf{c} = \mathbf{x}^0 . \qquad (8)
 > $$
 >
-> Since $\mathbf{\Psi}(t_0)$ is nonsingular (Definition §33.1), (8) has the unique solution $\mathbf{c} = \mathbf{\Psi}^{-1}(t_0)\mathbf{x}^0$. Substituting it into (6) gives (10). By the uniqueness part of Theorem 7.1.2 ([[§27 Introduction to Systems of First-Order Linear Equations|§27]]), this is the only solution of the initial value problem.
+> Since $\mathbf{\Psi}(t_0)$ is nonsingular (Definition §33.1), (8) has the unique solution $\mathbf{c} = \mathbf{\Psi}^{-1}(t_0)\mathbf{x}^0$. Substituting it into (6) gives (10). By the uniqueness part of [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2), this is the only solution of the initial value problem.
 >
-> **(c)** A matrix function is differentiated entry by entry ([[§28 Matrices|§28]], BDP 7.2), so column $j$ of $\mathbf{\Psi}'$ is $\mathbf{x}^{(j)\prime}$. Column $j$ of $\mathbf{P}(t)\mathbf{\Psi}$ is $\mathbf{P}(t)\mathbf{x}^{(j)}$. These agree for every $j$ because each $\mathbf{x}^{(j)}$ solves (1).
+> **(c)** A matrix function is differentiated entry by entry ([[§28 Matrices#^def-28-5|Definition §28.5]]), so column $j$ of $\mathbf{\Psi}'$ is $\mathbf{x}^{(j)\prime}$. Column $j$ of $\mathbf{P}(t)\mathbf{\Psi}$ is $\mathbf{P}(t)\mathbf{x}^{(j)}$. These agree for every $j$ because each $\mathbf{x}^{(j)}$ solves (1).
 
 ^pf-33-1
 
-*Uses:* [[§33★ Fundamental Matrices#^def-33-1|Def. §33.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations|§30]] (Theorem 7.4.2), [[§27 Introduction to Systems of First-Order Linear Equations|§27]] (Theorem 7.1.2), [[§28 Matrices|§28]] (derivatives of matrix functions)
+*Uses:* [[§33★ Fundamental Matrices#^def-33-1|Def. §33.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|§30.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|§30.2]], [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]] (uniqueness), [[§28 Matrices#^def-28-5|Def. §28.5]] (derivatives of matrix functions)
 
 In practice one solves (8) by row reduction and substitutes $\mathbf{c}$ into (6), rather than computing $\mathbf{\Psi}^{-1}(t_0)$ and using (10).
 
 > [!definition] Definition §33.2: The Fundamental Matrix Φ
-> Let $\mathbf{x}^{(1)}(t), \ldots, \mathbf{x}^{(n)}(t)$ be the solutions of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ of Theorem 7.4.4 ([[§30 Basic Theory of Systems of First-Order Linear Equations|§30]]), which satisfy the initial conditions
+> Let $\mathbf{x}^{(1)}(t), \ldots, \mathbf{x}^{(n)}(t)$ be the solutions of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ of [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-4|Theorem §30.4]] (BDP Theorem 7.4.4), which satisfy the initial conditions
 >
 > $$
 > \mathbf{x}^{(j)}(t_0) = \mathbf{e}^{(j)}, \qquad j = 1, \ldots, n, \qquad (12)
@@ -149,11 +149,11 @@ In practice one solves (8) by row reduction and substitutes $\mathbf{c}$ into (6
 > [!proof]+ Proof
 > **(a)** Apply Theorem §33.1(b) with $\mathbf{\Psi} = \mathbf{\Phi}$: since $\mathbf{\Phi}^{-1}(t_0) = \mathbf{I}^{-1} = \mathbf{I}$, (10) becomes (14).
 >
-> **(b)** By Theorem §33.1(b) and part (a), $\mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(t_0)\mathbf{x}^0$ and $\mathbf{\Phi}(t)\mathbf{x}^0$ both solve the same initial value problem, so they are equal for every $t$ (uniqueness, Theorem 7.1.2). Taking $\mathbf{x}^0 = \mathbf{e}^{(j)}$ shows that column $j$ of $\mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(t_0)$ equals column $j$ of $\mathbf{\Phi}(t)$, for each $j$.
+> **(b)** By Theorem §33.1(b) and part (a), $\mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(t_0)\mathbf{x}^0$ and $\mathbf{\Phi}(t)\mathbf{x}^0$ both solve the same initial value problem, so they are equal for every $t$ (uniqueness, [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]]). Taking $\mathbf{x}^0 = \mathbf{e}^{(j)}$ shows that column $j$ of $\mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(t_0)$ equals column $j$ of $\mathbf{\Phi}(t)$, for each $j$.
 
 ^pf-33-2
 
-*Uses:* [[§33★ Fundamental Matrices#^thm-33-1|§33.1]], [[§33★ Fundamental Matrices#^def-33-2|Def. §33.2]], [[§27 Introduction to Systems of First-Order Linear Equations|§27]] (Theorem 7.1.2)
+*Uses:* [[§33★ Fundamental Matrices#^thm-33-1|§33.1]], [[§33★ Fundamental Matrices#^def-33-2|Def. §33.2]], [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]] (uniqueness)
 
 $\mathbf{\Phi}(t)$ is often more complicated than a convenient $\mathbf{\Psi}(t)$, but it pays off when the same system is to be solved for many initial conditions, as for a physical system started from many initial states: each solution is then one matrix multiplication (14). $\mathbf{\Phi}(t)$ is the transformation that carries the initial state $\mathbf{x}^0$ to the state $\mathbf{x}(t)$ at time $t$.
 
@@ -190,7 +190,7 @@ $\mathbf{\Phi}(t)$ is often more complicated than a convenient $\mathbf{\Psi}(t)
 
 > [!remark] Remark: Method — Fundamental Matrices
 > To solve $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ with a fundamental matrix:
-> 1. **Find $n$ linearly independent solutions** (for constant $\mathbf{P} = \mathbf{A}$: eigenvectors as in [[§31 Homogeneous Linear Systems with Constant Coefficients|§31]], complex eigenvalues as in [[§32 Complex-Valued Eigenvalues|§32]], generalized eigenvectors as in [[§34★ Repeated Eigenvalues|§34★]]) and put them in the columns of $\mathbf{\Psi}(t)$.
+> 1. **Find $n$ linearly independent solutions** (for constant $\mathbf{P} = \mathbf{A}$: eigenvectors as in [[§31 Homogeneous Linear Systems with Constant Coefficients#^rem-31-1|§31]], complex eigenvalues as in [[§32 Complex-Valued Eigenvalues#^rem-32-1|§32]], generalized eigenvectors as in [[§34★ Repeated Eigenvalues|§34★]]) and put them in the columns of $\mathbf{\Psi}(t)$.
 > 2. **General solution:** $\mathbf{x} = \mathbf{\Psi}(t)\mathbf{c}$.
 > 3. **Initial value problem:** solve $\mathbf{\Psi}(t_0)\mathbf{c} = \mathbf{x}^0$ by row reduction and substitute.
 > 4. **If many initial conditions are needed**, compute $\mathbf{\Phi}(t)$ once, either column by column from the initial conditions $\mathbf{e}^{(j)}$ or as $\mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(t_0)$; then $\mathbf{x} = \mathbf{\Phi}(t)\mathbf{x}^0$.
@@ -296,11 +296,11 @@ with $\mathbf{A}$ a constant matrix, has the solution $\mathbf{x} = \mathbf{\Phi
 > \mathbf{Z}' = \mathbf{A}\mathbf{Z}, \qquad \mathbf{Z}(0) = \mathbf{I} \qquad (27)
 > $$
 >
-> ($\mathbf{\Phi}$ by Theorem §33.1(c) and Definition §33.2, $e^{\mathbf{A}t}$ by Theorem §33.3). Read column by column, (27) says that column $j$ of $\mathbf{Z}$ solves $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{x}(0) = \mathbf{e}^{(j)}$. The entries of $\mathbf{A}$ are constants, continuous for all $t$, so by the uniqueness part of Theorem 7.1.2 ([[§27 Introduction to Systems of First-Order Linear Equations|§27]]) this problem has only one solution: column $j$ of $\mathbf{\Phi}(t)$ equals column $j$ of $e^{\mathbf{A}t}$ for each $j$. (BDP calls this "the uniqueness part of Theorem 7.1.2 (extended to matrix differential equations)"; the extension is just this column-by-column reading.) Then (28) is Theorem §33.2(a).
+> ($\mathbf{\Phi}$ by Theorem §33.1(c) and Definition §33.2, $e^{\mathbf{A}t}$ by Theorem §33.3). Read column by column, (27) says that column $j$ of $\mathbf{Z}$ solves $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{x}(0) = \mathbf{e}^{(j)}$. The entries of $\mathbf{A}$ are constants, continuous for all $t$, so by the uniqueness part of [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2) this problem has only one solution: column $j$ of $\mathbf{\Phi}(t)$ equals column $j$ of $e^{\mathbf{A}t}$ for each $j$. (BDP calls this "the uniqueness part of Theorem 7.1.2 (extended to matrix differential equations)"; the extension is just this column-by-column reading.) Then (28) is Theorem §33.2(a).
 
 ^pf-33-4
 
-*Uses:* [[§33★ Fundamental Matrices#^thm-33-1|§33.1]], [[§33★ Fundamental Matrices#^def-33-2|Def. §33.2]], [[§33★ Fundamental Matrices#^thm-33-2|§33.2]], [[§33★ Fundamental Matrices#^thm-33-3|§33.3]], [[§27 Introduction to Systems of First-Order Linear Equations|§27]] (Theorem 7.1.2)
+*Uses:* [[§33★ Fundamental Matrices#^thm-33-1|§33.1]], [[§33★ Fundamental Matrices#^def-33-2|Def. §33.2]], [[§33★ Fundamental Matrices#^thm-33-2|§33.2]], [[§33★ Fundamental Matrices#^thm-33-3|§33.3]], [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]] (uniqueness)
 
 To justify the name, $e^{\mathbf{A}t}$ should also have the algebraic properties of the exponential function. BDP outlines this in Problem 12, and uses the diagonal case of Problem 13 in the text.
 
@@ -332,7 +332,7 @@ To justify the name, $e^{\mathbf{A}t}$ should also have the algebraic properties
 ^prop-33-6
 
 > [!proof]+ Proof
-> **(a)** Fix $s$ and regard $t$ as the variable. Let $\mathbf{Z}_1(t) = \mathbf{\Phi}(t)\mathbf{\Phi}(s)$ and $\mathbf{Z}_2(t) = \mathbf{\Phi}(t + s)$. Since $\mathbf{\Phi}(s)$ is a constant matrix, $\mathbf{Z}_1' = \mathbf{\Phi}'(t)\mathbf{\Phi}(s) = \mathbf{A}\mathbf{\Phi}(t)\mathbf{\Phi}(s) = \mathbf{A}\mathbf{Z}_1$, and $\mathbf{Z}_1(0) = \mathbf{I}\,\mathbf{\Phi}(s) = \mathbf{\Phi}(s)$. By the chain rule, $\mathbf{Z}_2'(t) = \mathbf{\Phi}'(t + s) = \mathbf{A}\mathbf{\Phi}(t + s) = \mathbf{A}\mathbf{Z}_2$, and $\mathbf{Z}_2(0) = \mathbf{\Phi}(s)$. So column $j$ of $\mathbf{Z}_1$ and column $j$ of $\mathbf{Z}_2$ solve the same initial value problem $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{x}(0) = $ column $j$ of $\mathbf{\Phi}(s)$; by uniqueness (Theorem 7.1.2) they are equal. Hence $\mathbf{Z}_1 = \mathbf{Z}_2$.
+> **(a)** Fix $s$ and regard $t$ as the variable. Let $\mathbf{Z}_1(t) = \mathbf{\Phi}(t)\mathbf{\Phi}(s)$ and $\mathbf{Z}_2(t) = \mathbf{\Phi}(t + s)$. Since $\mathbf{\Phi}(s)$ is a constant matrix, $\mathbf{Z}_1' = \mathbf{\Phi}'(t)\mathbf{\Phi}(s) = \mathbf{A}\mathbf{\Phi}(t)\mathbf{\Phi}(s) = \mathbf{A}\mathbf{Z}_1$, and $\mathbf{Z}_1(0) = \mathbf{I}\,\mathbf{\Phi}(s) = \mathbf{\Phi}(s)$. By the chain rule, $\mathbf{Z}_2'(t) = \mathbf{\Phi}'(t + s) = \mathbf{A}\mathbf{\Phi}(t + s) = \mathbf{A}\mathbf{Z}_2$, and $\mathbf{Z}_2(0) = \mathbf{\Phi}(s)$. So column $j$ of $\mathbf{Z}_1$ and column $j$ of $\mathbf{Z}_2$ solve the same initial value problem $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{x}(0) = $ column $j$ of $\mathbf{\Phi}(s)$; by uniqueness ([[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]]) they are equal. Hence $\mathbf{Z}_1 = \mathbf{Z}_2$.
 >
 > **(b)** Put $s = -t$ in (a): $\mathbf{\Phi}(t)\mathbf{\Phi}(-t) = \mathbf{\Phi}(0) = \mathbf{I}$. A square matrix with a one-sided inverse is invertible with that inverse, so $\mathbf{\Phi}(-t) = \mathbf{\Phi}^{-1}(t)$.
 >
@@ -340,7 +340,7 @@ To justify the name, $e^{\mathbf{A}t}$ should also have the algebraic properties
 
 ^pf-33-6
 
-*Uses:* [[§33★ Fundamental Matrices#^thm-33-3|§33.3]], [[§33★ Fundamental Matrices#^thm-33-4|§33.4]], [[§27 Introduction to Systems of First-Order Linear Equations|§27]] (Theorem 7.1.2)
+*Uses:* [[§33★ Fundamental Matrices#^thm-33-3|§33.3]], [[§33★ Fundamental Matrices#^thm-33-4|§33.4]], [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]] (uniqueness)
 
 > [!remark] Remark: Starting at t₀ ≠ 0; Sums in the Exponent
 > - **Initial time $t_0$.** For constant $\mathbf{A}$, the fundamental matrix with $\mathbf{\Phi}(t_0) = \mathbf{I}$ is $e^{\mathbf{A}(t - t_0)}$: by Theorem §33.2(b) with $\mathbf{\Psi} = e^{\mathbf{A}t}$ and Proposition §33.6(c), it is $e^{\mathbf{A}t}(e^{\mathbf{A}t_0})^{-1} = e^{\mathbf{A}(t - t_0)}$. So $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{x}(t_0) = \mathbf{x}^0$ has the solution $\mathbf{x} = e^{\mathbf{A}(t - t_0)}\mathbf{x}^0$.
@@ -396,7 +396,7 @@ A system of linear equations, algebraic or differential, is hard mainly because 
 ^thm-33-7
 
 > [!proof]+ Proof
-> **(a)** The parenthetical cases are the results of BDP 7.3 ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors|§29]]): eigenvectors for different eigenvalues are linearly independent, and a Hermitian matrix has a full set of $n$ (mutually orthogonal) eigenvectors. Since the columns of $\mathbf{T}$ are linearly independent, $\det\mathbf{T} \ne 0$, so $\mathbf{T}^{-1}$ exists. Column $k$ of $\mathbf{A}\mathbf{T}$ is $\mathbf{A}\boldsymbol{\xi}^{(k)} = \lambda_k\boldsymbol{\xi}^{(k)}$, and column $k$ of $\mathbf{T}\mathbf{D}$ is $\mathbf{T}(\lambda_k\mathbf{e}^{(k)}) = \lambda_k\boldsymbol{\xi}^{(k)}$. Hence
+> **(a)** The parenthetical cases are results of BDP 7.3: eigenvectors for different eigenvalues are linearly independent ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|Theorem §29.4]]), and a Hermitian matrix has a full set of $n$ (mutually orthogonal) eigenvectors ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|Theorem §29.5]]). Since the columns of $\mathbf{T}$ are linearly independent, $\det\mathbf{T} \ne 0$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|Theorem §29.2]]), so $\mathbf{T}^{-1}$ exists. Column $k$ of $\mathbf{A}\mathbf{T}$ is $\mathbf{A}\boldsymbol{\xi}^{(k)} = \lambda_k\boldsymbol{\xi}^{(k)}$, and column $k$ of $\mathbf{T}\mathbf{D}$ is $\mathbf{T}(\lambda_k\mathbf{e}^{(k)}) = \lambda_k\boldsymbol{\xi}^{(k)}$. Hence
 >
 > $$
 > \mathbf{A}\mathbf{T} = \begin{pmatrix} \lambda_1\xi_1^{(1)} & \cdots & \lambda_n\xi_1^{(n)} \\ \vdots & & \vdots \\ \lambda_1\xi_n^{(1)} & \cdots & \lambda_n\xi_n^{(n)} \end{pmatrix} = \mathbf{T}\mathbf{D}, \qquad (30)
@@ -404,7 +404,7 @@ A system of linear equations, algebraic or differential, is hard mainly because 
 >
 > and multiplying on the left by $\mathbf{T}^{-1}$ gives (32). The eigenvalues of $\mathbf{D}$ are its diagonal entries $\lambda_1, \ldots, \lambda_n$, those of $\mathbf{A}$. Finally $\mathbf{T}\mathbf{e}^{(k)} = \boldsymbol{\xi}^{(k)}$, so $\mathbf{T}^{-1}\boldsymbol{\xi}^{(k)} = \mathbf{e}^{(k)}$.
 >
-> **(b)** (BDP: "it is easy to verify"; here is the verification.) With the inner product $(\mathbf{x}, \mathbf{y}) = \sum_k x_k\overline{y_k}$ of BDP 7.2,
+> **(b)** (BDP: "it is easy to verify"; here is the verification.) With the inner product $(\mathbf{x}, \mathbf{y}) = \sum_k x_k\overline{y_k}$ of [[§28 Matrices#^def-28-3|Definition §28.3]],
 >
 > $$
 > (\mathbf{T}^*\mathbf{T})_{ij} = \sum_{k=1}^n \overline{T_{ki}}\,T_{kj} = \sum_{k=1}^n \xi_k^{(j)}\,\overline{\xi_k^{(i)}} = (\boldsymbol{\xi}^{(j)}, \boldsymbol{\xi}^{(i)}) = \begin{cases} 1, & i = j, \\ 0, & i \ne j. \end{cases}
@@ -416,7 +416,7 @@ A system of linear equations, algebraic or differential, is hard mainly because 
 
 ^pf-33-7
 
-*Uses:* [[§33★ Fundamental Matrices#^def-33-4|Def. §33.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors|§29]] (BDP 7.3: independence of eigenvectors, Hermitian matrices), [[§28 Matrices|§28]] (the inner product, BDP 7.2)
+*Uses:* [[§33★ Fundamental Matrices#^def-33-4|Def. §33.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|§29.2]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|§29.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|§29.5]], [[§28 Matrices#^def-28-3|Def. §28.3]] (inner product)
 
 > [!remark]- Connections
 > - The same theorem in Lay: [[§34 Diagonalization#^thm-34-1|235 Thm. §34.1]] (written $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$, with $\mathbf{P} = \mathbf{T}$); rigorous operator form, [[§17 Diagonalizable Operators#^ladr-5-55|LADR 5.55]].
@@ -463,7 +463,7 @@ Now return to $\mathbf{x}' = \mathbf{A}\mathbf{x}$. Sections 7.5 and 7.6 started
 > [!remark]- Connections
 > - Lay decouples $\mathbf{x}' = A\mathbf{x}$ by the same change of variable: [[§38 Applications to Differential Equations#^thm-38-3|235 Thm. §38.3]].
 
-The columns of $\mathbf{\Psi}(t)$ in (44) are the solutions $\boldsymbol{\xi}^{(k)}e^{r_kt}$ of BDP 7.5 ([[§31 Homogeneous Linear Systems with Constant Coefficients|§31]]). So diagonalization offers no computational advantage over the method of Section 7.5: either way one must find the eigenvalues and eigenvectors of $\mathbf{A}$. What it adds is the formula $e^{\mathbf{A}t} = \mathbf{T}e^{\mathbf{D}t}\mathbf{T}^{-1}$ and the idea of decoupling, which carries over to Jordan forms ([[§34★ Repeated Eigenvalues|§34★]]) and to nonhomogeneous systems ([[§35★ Nonhomogeneous Linear Systems|§35★]]).
+The columns of $\mathbf{\Psi}(t)$ in (44) are the solutions $\boldsymbol{\xi}^{(k)}e^{r_kt}$ of [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|Theorem §31.2]] (BDP 7.5). So diagonalization offers no computational advantage over the method of Section 7.5: either way one must find the eigenvalues and eigenvectors of $\mathbf{A}$. What it adds is the formula $e^{\mathbf{A}t} = \mathbf{T}e^{\mathbf{D}t}\mathbf{T}^{-1}$ and the idea of decoupling, which carries over to Jordan forms ([[§34★ Repeated Eigenvalues|§34★]]) and to nonhomogeneous systems ([[§35★ Nonhomogeneous Linear Systems|§35★]]).
 
 > [!example] Example §33.3: Diagonalizing A and Recovering Ψ and Φ
 > Let $\mathbf{A} = \begin{pmatrix} 1 & 1 \\ 4 & 1 \end{pmatrix}$ (33). Find the similarity transformation matrix $\mathbf{T}$, show that $\mathbf{A}$ can be diagonalized, and use the diagonal system to obtain a fundamental matrix for $\mathbf{x}' = \mathbf{A}\mathbf{x}$.
