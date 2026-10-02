@@ -222,7 +222,7 @@ The condition $ad - bc \ne 0$ is what keeps $T$ from being constant: if $ad = bc
 > [!example] Example §17.3: Unbounded Sets Reach Every Neighborhood of Infinity
 > Show that a set $S$ is unbounded if and only if every neighborhood of the point at infinity contains at least one point of $S$.
 >
-> By [[§12★ Regions in the Complex Plane|§12★]], $S$ is bounded if every point of $S$ lies inside some circle $|z| = R$. So $S$ is unbounded exactly when for every $R > 0$ some point $z \in S$ has $|z| \ge R$.
+> By [[§12★ Regions in the Complex Plane#^def-12-5|Definition §12.5]], $S$ is bounded if every point of $S$ lies inside some circle $|z| = R$. So $S$ is unbounded exactly when for every $R > 0$ some point $z \in S$ has $|z| \ge R$.
 >
 > *If $S$ is unbounded:* given a neighborhood $|z| > 1/\varepsilon$ of $\infty$, apply this with $R = 1/\varepsilon + 1$ to get $z \in S$ with $|z| \ge 1/\varepsilon + 1 > 1/\varepsilon$.
 >

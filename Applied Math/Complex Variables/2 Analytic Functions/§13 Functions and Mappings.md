@@ -24,12 +24,12 @@ Chapter 2 develops a theory of differentiation for functions of a complex variab
 
 ^def-13-1
 
-The domain of definition is often a domain in the sense of [[§12★ Regions in the Complex Plane|§12★]] (an open connected set), but it need not be. It is also not always convenient to distinguish in notation between a function and its values; one speaks of "the function $z^2$".
+The domain of definition is often a domain in the sense of [[§12★ Regions in the Complex Plane#^def-12-4|Definition §12.4]] (an open connected set), but it need not be. It is also not always convenient to distinguish in notation between a function and its values; one speaks of "the function $z^2$".
 
 > [!example] Example §13.1: The Function 1/z
 > If $f$ is defined on the set $z \ne 0$ by $w = 1/z$, it may be referred to simply as the function $w = 1/z$, or the function $1/z$. Its domain of definition is the largest set on which the rule makes sense, the punctured plane $z \ne 0$.
 >
-> Writing $1/z = \bar z/|z|^2$ ([[§6 Complex Conjugates|§6]]) separates the real and imaginary parts:
+> Writing $1/z = \bar z/|z|^2$ ([[§6 Complex Conjugates#^prop-6-3|Proposition §6.3]]) separates the real and imaginary parts:
 >
 > $$
 > \frac{1}{x + iy} = \frac{x - iy}{x^2 + y^2} = \frac{x}{x^2 + y^2} + i\,\frac{-y}{x^2 + y^2} \qquad \big((x, y) \ne (0, 0)\big) .
@@ -108,7 +108,7 @@ B&C states the definition for positive $n$; constants $a_0 \ne 0$ are the polyno
 ^def-13-4
 
 > [!example] Example §13.3: The Principal Square Root
-> Let $z$ be any nonzero complex number. By [[§10 Roots of Complex Numbers|§10]], $z^{1/2}$ has the two values
+> Let $z$ be any nonzero complex number. By [[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]], $z^{1/2}$ has the two values
 >
 > $$
 > z^{1/2} = \pm\sqrt r\exp\Big(i\frac{\Theta}{2}\Big) ,
@@ -122,7 +122,7 @@ B&C states the definition for positive $n$; constants $a_0 \ne 0$ are the polyno
 >
 > well defined on the set of nonzero numbers. Since zero is the only square root of zero, set $f(0) = 0$; then $f$ is well defined on the entire plane.
 >
-> Each value is indeed a square root: $f(z)^2 = r\exp(i\Theta) = z$. For example $f(4i) = 2e^{i\pi/4} = \sqrt2 + i\sqrt2$, and $f(-1) = e^{i\pi/2} = i$. The systematic choice has a price on the negative real axis: points just below $-1$ have $\Theta$ near $-\pi$, so their values $f(z)$ are near $e^{-i\pi/2} = -i$, not near $f(-1) = i$. So $f$ jumps across the negative real axis; such choices are studied as branches in [[§33 Branches and Derivatives of Logarithms|§33]] and [[§35 The Power Function|§35]].
+> Each value is indeed a square root: $f(z)^2 = r\exp(i\Theta) = z$. For example $f(4i) = 2e^{i\pi/4} = \sqrt2 + i\sqrt2$, and $f(-1) = e^{i\pi/2} = i$. The systematic choice has a price on the negative real axis: points just below $-1$ have $\Theta$ near $-\pi$, so their values $f(z)$ are near $e^{-i\pi/2} = -i$, not near $f(-1) = i$. So $f$ jumps across the negative real axis; such choices are studied as branches in [[§33 Branches and Derivatives of Logarithms#^def-33-2|Definition §33.2]] and [[§35 The Power Function#^def-35-2|Definition §35.2]].
 >
 > *B&C: Sec. 13, Example 5*
 

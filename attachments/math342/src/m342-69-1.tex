@@ -1,0 +1,14 @@
+% Figure for Complex Variables §69.
+\begin{tikzpicture}[line cap=round, line join=round]
+  \fill[figG!12] (0,0) circle (1.5);
+  \draw[figB, line width=0.9pt] (0,0) circle (2.4);
+  \draw[figG, line width=0.9pt] (0,0) circle (1.5);
+  \draw[figO, line width=0.6pt] (0,0) -- (35:1.5) node[pos=0.55, above left, font=\scriptsize, black] {$R_1$};
+  \draw[figO, line width=0.6pt] (0,0) -- (-40:2.4) node[pos=0.6, below left, font=\scriptsize, black] {$R$};
+  \fill (0,0) circle (1.4pt) node[left, font=\scriptsize] {$z_0$};
+  \fill[figR] (35:1.5) circle (1.6pt) node[above right, font=\scriptsize] {$z_1$};
+  \fill (150:1.0) circle (1.2pt) node[above, font=\scriptsize] {$z$};
+  \fill[figR] (70:2.75) circle (1.6pt) node[right, font=\scriptsize] {$z_2$};
+  \node[font=\scriptsize, figB] at (-2.55,-1.95) {$|z - z_0| = R$};
+  \node[font=\scriptsize, figG] at (0.15,-0.75) {uniform};
+\end{tikzpicture}

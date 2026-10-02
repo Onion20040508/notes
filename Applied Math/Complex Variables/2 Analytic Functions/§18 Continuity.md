@@ -68,9 +68,9 @@ In (4) the restriction $z \ne z_0$ of the limit definition can be dropped, since
 > \text{(a)}\ \lim_{z\to z_0}\operatorname{Re} z = \operatorname{Re} z_0; \qquad \text{(b)}\ \lim_{z\to z_0}\bar z = \bar z_0; \qquad \text{(c)}\ \lim_{z\to0}\frac{\bar z^{\,2}}{z} = 0 .
 > $$
 >
-> **(a)** For any $z$, $|\operatorname{Re} z - \operatorname{Re} z_0| = |\operatorname{Re}(z - z_0)| \le |z - z_0|$ ([[§4 Vectors and Moduli|§4]]). Given $\varepsilon > 0$, let $\delta = \varepsilon$: then $|\operatorname{Re} z - \operatorname{Re} z_0| \le |z - z_0| < \varepsilon$ whenever $0 < |z - z_0| < \delta$.
+> **(a)** For any $z$, $|\operatorname{Re} z - \operatorname{Re} z_0| = |\operatorname{Re}(z - z_0)| \le |z - z_0|$ ([[§4 Vectors and Moduli#^prop-4-1|Proposition §4.1]]). Given $\varepsilon > 0$, let $\delta = \varepsilon$: then $|\operatorname{Re} z - \operatorname{Re} z_0| \le |z - z_0| < \varepsilon$ whenever $0 < |z - z_0| < \delta$.
 >
-> **(b)** $|\bar z - \bar z_0| = |\overline{z - z_0}| = |z - z_0|$ ([[§6 Complex Conjugates|§6]]). So again $\delta = \varepsilon$ works: $|\bar z - \bar z_0| < \varepsilon$ whenever $0 < |z - z_0| < \varepsilon$.
+> **(b)** $|\bar z - \bar z_0| = |\overline{z - z_0}| = |z - z_0|$ ([[§6 Complex Conjugates#^thm-6-1|Theorem §6.1]] and [[§6 Complex Conjugates#^def-6-1|Definition §6.1]]). So again $\delta = \varepsilon$ works: $|\bar z - \bar z_0| < \varepsilon$ whenever $0 < |z - z_0| < \varepsilon$.
 >
 > **(c)** For $z \ne 0$, $\big|\bar z^{\,2}/z - 0\big| = |\bar z|^2/|z| = |z|^2/|z| = |z|$. So $\delta = \varepsilon$ works: $\big|\bar z^{\,2}/z\big| < \varepsilon$ whenever $0 < |z| < \varepsilon$.
 >
@@ -186,7 +186,7 @@ The modulus of a continuous function is continuous. B&C leaves this as an exerci
 ^prop-18-5
 
 > [!proof]+ Proof
-> By the reverse triangle inequality ([[§5 Triangle Inequality|§5]], inequality (2)),
+> By the reverse triangle inequality ([[§5 Triangle Inequality#^cor-5-2|Corollary §5.2]]),
 >
 > $$
 > \big|\,|f(z)| - |w_0|\,\big| \le |f(z) - w_0| .
@@ -196,11 +196,11 @@ The modulus of a continuous function is continuous. B&C leaves this as an exerci
 
 ^pf-18-5
 
-*Uses:* [[§15 Limits#^def-15-1|Def. §15.1]], [[§5 Triangle Inequality|§5]]
+*Uses:* [[§15 Limits#^def-15-1|Def. §15.1]], [[§5 Triangle Inequality#^cor-5-2|§5.2]]
 
 ## Continuous Functions on Closed Bounded Regions
 
-Recall from [[§12★ Regions in the Complex Plane|§12★]] that a region $R$ is **closed** if it contains all of its boundary points, and **bounded** if it lies inside some circle centered at the origin.
+Recall from [[§12★ Regions in the Complex Plane|§12★]] that a region $R$ is **closed** if it contains all of its boundary points ([[§12★ Regions in the Complex Plane#^def-12-3|Definition §12.3]]), and **bounded** if it lies inside some circle centered at the origin ([[§12★ Regions in the Complex Plane#^def-12-5|Definition §12.5]]).
 
 > [!definition] Definition §18.2: Bounded Function
 > A function $f$ is **bounded on $R$** if there is a nonnegative real number $M$ such that $|f(z)| \le M$ for all points $z$ in $R$.

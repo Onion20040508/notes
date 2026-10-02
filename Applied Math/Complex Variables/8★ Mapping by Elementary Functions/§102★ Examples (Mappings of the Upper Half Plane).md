@@ -72,7 +72,7 @@ The examples here put [[§101★ Mappings of the Upper Half Plane#^thm-101-1|The
 > w = \operatorname{Log}\frac{z - 1}{z + 1} , \qquad (3)
 > $$
 >
-> with the principal branch of the logarithm, maps the half plane $y > 0$ onto the strip $0 < v < \pi$.
+> with the principal branch of the logarithm ([[§31 The Logarithmic Function#^def-31-2|Definition §31.2]]), maps the half plane $y > 0$ onto the strip $0 < v < \pi$.
 >
 > Write (3) as the composition
 >
@@ -138,7 +138,7 @@ The examples here put [[§101★ Mappings of the Upper Half Plane#^thm-101-1|The
 > \log Z = \ln R + i\Theta \qquad (R > 0,\ 0 < \Theta < 2\pi) ,
 > $$
 >
-> whose branch cut is exactly that ray ([[§33 Branches and Derivatives of Logarithms|§33]]). As in Example §102.3, the ray $\Theta = \Theta_0$ goes onto the full line $v = \Theta_0$, and these lines fill $0 < v < 2\pi$ once as $\Theta_0$ runs over $(0, 2\pi)$. So $w = \ln|z - 1| + i\arg(z - 1)$, $0 < \arg(z - 1) < 2\pi$, is the required branch; its inverse is $z = 1 + e^w$.
+> whose branch cut is exactly that ray ([[§33 Branches and Derivatives of Logarithms#^ex-33-2|Example §33.2]]). As in Example §102.3, the ray $\Theta = \Theta_0$ goes onto the full line $v = \Theta_0$, and these lines fill $0 < v < 2\pi$ once as $\Theta_0$ runs over $(0, 2\pi)$. So $w = \ln|z - 1| + i\arg(z - 1)$, $0 < \arg(z - 1) < 2\pi$, is the required branch; its inverse is $z = 1 + e^w$.
 >
 > *B&C: Sec. 102, Exercise 7*
 

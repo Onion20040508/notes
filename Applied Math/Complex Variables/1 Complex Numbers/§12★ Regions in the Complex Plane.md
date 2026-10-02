@@ -184,7 +184,7 @@ Some sets are neither open nor closed. For a set $S$ to be not open there must b
 >
 > **(a)** The closed disk with center $2 - i$ and radius $1$. It contains its boundary circle, so it is closed and not open: not a domain (it is a region). It is bounded.
 >
-> **(b)** By (8) of §6, $|2z + 3| = 2\,|z + \frac32|$, so the set is $|z + \frac32| > 2$, the exterior of the circle with center $-\frac32$ and radius $2$. It is open and connected (any two points can be joined by going around the circle along arcs approximated by polygonal lines, or more simply by moving out radially to a large circle and around a large square): a domain. It is unbounded.
+> **(b)** By (8) of §6, $|2z + 3| = 2\,|z + \frac32|$, so the set is $|z + \frac32| > 2$, the exterior of the circle with center $-\frac32$ and radius $2$. It is open (its complement, the closed disk, contains its boundary circle). It is connected: draw a large square centered at $-\frac32$ that contains the disk $|z + \frac32| \le 2$ in its interior; from any point of the set, the segment pointing directly away from $-\frac32$ stays in the set (the distance to $-\frac32$ only increases) and reaches the square or already starts outside it, in which case a radial segment inward does the same; then move along the edges of the square, which lie in the set. Two such polygonal lines joined at the square connect any two points. So it is a domain. It is unbounded.
 >
 > **(c)** The open half plane above the line $y = 1$: open and convex (segments stay in it), hence a domain; unbounded.
 >
@@ -201,7 +201,7 @@ Some sets are neither open nor closed. For a set $S$ to be not open there must b
 ^ex-12-3
 
 > [!example] Example §12.4: Accumulation Points
-> **(a)** The origin is the only accumulation point of the set $z_n = \dfrac in$ $(n = 1, 2, \ldots)$. Every deleted neighborhood $0 < |z| < \varepsilon$ contains the points $i/n$ with $n > 1/\varepsilon$. If $z_0 \ne 0$, only finitely many $z_n$ satisfy $|z_n - z_0| < \frac12|z_0|$ (for those, $\frac1n = |z_n| > \frac12|z_0|$, so $n < 2/|z_0|$); a deleted neighborhood of $z_0$ with radius smaller than $\frac12|z_0|$ and than the distances from $z_0$ to these finitely many points contains no $z_n$.
+> **(a)** The origin is the only accumulation point of the set $z_n = \dfrac in$ $(n = 1, 2, \ldots)$. Every deleted neighborhood $0 < |z| < \varepsilon$ contains the points $i/n$ with $n > 1/\varepsilon$. If $z_0 \ne 0$, only finitely many $z_n$ satisfy $|z_n - z_0| < \frac12|z_0|$ (for those, $\frac1n = |z_n| > \frac12|z_0|$, so $n < 2/|z_0|$); a deleted neighborhood of $z_0$ with radius smaller than $\frac12|z_0|$ and than the distances from $z_0$ to those of these finitely many points that differ from $z_0$ contains no $z_n$.
 >
 > **(b)** Determine the accumulation points of: (i) $z_n = i^n$; (ii) $z_n = i^n/n$; (iii) $0 \le \arg z < \pi/2$ $(z \ne 0)$; (iv) $z_n = (-1)^n(1 + i)\dfrac{n - 1}{n}$ $(n = 1, 2, \ldots)$.
 >

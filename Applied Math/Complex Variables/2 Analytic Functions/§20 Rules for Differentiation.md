@@ -128,7 +128,7 @@ B&C states the power rule before the sum, product and quotient rules; its proof 
 > \frac{d}{dz}z^{n + 1} = \frac{d}{dz}\big(z^n \cdot z\big) = z^n \cdot 1 + nz^{n - 1}\cdot z = (n + 1)z^n .
 > $$
 >
-> (Exercise 6(b) gives a direct proof: by the binomial formula ([[§3 Further Algebraic Properties|§3]]), $(z + \Delta z)^n - z^n = \sum_{k=1}^{n}\binom nk z^{n - k}(\Delta z)^k$, so $\Delta w/\Delta z = nz^{n - 1} + \sum_{k=2}^{n}\binom nk z^{n - k}(\Delta z)^{k - 1} \to nz^{n - 1}$.)
+> (Exercise 6(b) gives a direct proof: by the binomial formula ([[§3 Further Algebraic Properties#^thm-3-4|Theorem §3.4]]), $(z + \Delta z)^n - z^n = \sum_{k=1}^{n}\binom nk z^{n - k}(\Delta z)^k$, so $\Delta w/\Delta z = nz^{n - 1} + \sum_{k=2}^{n}\binom nk z^{n - k}(\Delta z)^{k - 1} \to nz^{n - 1}$.)
 >
 > **Negative $n$** (B&C's Exercise 7). Let $n = -m$ with $m$ a positive integer, and $z \ne 0$. Then $z^n = 1/z^m$, and by the quotient rule (5) with $f = 1$, $g = z^m$,
 >
@@ -174,7 +174,7 @@ B&C states the power rule before the sum, product and quotient rules; its proof 
 > P^{(m)}(z) = m!\,a_m + (m + 1)!\,a_{m + 1}z + \frac{(m + 2)!}{2!}a_{m + 2}z^2 + \cdots + \frac{n!}{(n - m)!}a_nz^{n - m} .
 > $$
 >
-> At $z = 0$ every term containing $z$ vanishes, leaving $P^{(m)}(0) = m!\,a_m$. These are the Taylor coefficients of $P$ at $0$, a first case of [[§62 Taylor Series|§62]].
+> At $z = 0$ every term containing $z$ vanishes, leaving $P^{(m)}(0) = m!\,a_m$. These are the Taylor coefficients of $P$ at $0$, a first case of [[§62 Taylor Series#^def-62-1|Definition §62.1]].
 >
 > *B&C: Sec. 20, Exercise 3; Source: 342 HW 3*
 

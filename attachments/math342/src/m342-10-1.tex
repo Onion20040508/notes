@@ -1,0 +1,55 @@
+% Figure for Complex Variables §10.
+\begin{tikzpicture}[line cap=round]
+  \begin{scope}[shift={(0,0)}]
+    \draw[->, thin] (-1.90,0) -- (1.90,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, thin] (0,-1.90) -- (0,1.90) node[above, font=\scriptsize] {$y$};
+    \draw[gray] (0,0) circle (1.450);
+    \draw[figB, dashed] (0.725,1.256) -- (-1.450,0.000) -- (0.725,-1.256) -- cycle;
+    \fill[figR] (0.725,1.256) circle (2.2pt);
+    \node[font=\scriptsize, figR] at (0.935,1.619) {$c_0$};
+    \fill[figB] (-1.450,0.000) circle (2.2pt);
+    \node[font=\scriptsize, figB] at (-1.754,-0.781) {$-3$};
+    \fill[figB] (0.725,-1.256) circle (2.2pt);
+    \node[font=\scriptsize, figB] at (0.935,-1.619) {$c_2$};
+    \node[font=\small] at (0,-2.45) {$z^3 = -27$, $|c_k| = 3$};
+  \end{scope}
+  \begin{scope}[shift={(4.6,0)}]
+    \draw[->, thin] (-1.90,0) -- (1.90,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, thin] (0,-1.90) -- (0,1.90) node[above, font=\scriptsize] {$y$};
+    \draw[gray] (0,0) circle (1.450);
+    \draw[figB, dashed] (1.450,0.000) -- (1.025,1.025) -- (0.000,1.450) -- (-1.025,1.025) -- (-1.450,0.000) -- (-1.025,-1.025) -- (-0.000,-1.450) -- (1.025,-1.025) -- cycle;
+    \fill[figR] (1.450,0.000) circle (2.2pt);
+    \node[font=\scriptsize, figR] at (1.754,0.781) {$\sqrt2$};
+    \fill[figB] (1.025,1.025) circle (2.2pt);
+    \node[font=\scriptsize, figB] at (1.322,1.322) {$1+i$};
+    \fill[figB] (0.000,1.450) circle (2.2pt);
+    \node[font=\scriptsize, figB] at (-0.781,1.754) {$\sqrt2\,i$};
+    \fill[figB] (-1.025,1.025) circle (2.2pt);
+    \fill[figB] (-1.450,0.000) circle (2.2pt);
+    \node[font=\scriptsize, figB] at (-1.754,-0.781) {$-\sqrt2$};
+    \fill[figB] (-1.025,-1.025) circle (2.2pt);
+    \fill[figB] (-0.000,-1.450) circle (2.2pt);
+    \node[font=\scriptsize, figB] at (0.781,-1.754) {$-\sqrt2\,i$};
+    \fill[figB] (1.025,-1.025) circle (2.2pt);
+    \node[font=\small] at (0,-2.45) {$z^8 = 16$, $|c_k| = \sqrt2$};
+  \end{scope}
+  \begin{scope}[shift={(9.4,0)}]
+    \draw[->, thin] (-1.90,0) -- (1.90,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, thin] (0,-1.90) -- (0,1.90) node[above, font=\scriptsize] {$y$};
+    \draw[gray] (0,0) circle (1.450);
+    \draw[figB, dashed] (1.432,-0.227) -- (0.658,1.292) -- (-1.025,1.025) -- (-1.292,-0.658) -- (0.227,-1.432) -- cycle;
+    \draw[gray, ->, thin] (0,0) -- (1.3529,-1.3529);
+    \fill[gray] (1.3529,-1.3529) circle (1.8pt) node[right, font=\scriptsize] {{$1-i$}};
+    \fill[figR] (1.432,-0.227) circle (2.2pt);
+    \node[font=\scriptsize, figR] at (1.847,-0.293) {$c_0$};
+    \fill[figB] (0.658,1.292) circle (2.2pt);
+    \node[font=\scriptsize, figB] at (0.849,1.666) {$c_1$};
+    \fill[figB] (-1.025,1.025) circle (2.2pt);
+    \node[font=\scriptsize, figB] at (-1.322,1.322) {$c_2$};
+    \fill[figB] (-1.292,-0.658) circle (2.2pt);
+    \node[font=\scriptsize, figB] at (-1.666,-0.849) {$c_3$};
+    \fill[figB] (0.227,-1.432) circle (2.2pt);
+    \node[font=\scriptsize, figB] at (0.293,-1.847) {$c_4$};
+    \node[font=\small] at (0,-2.45) {$z^5 = 1 - i$, $|c_k| = 2^{1/10}$};
+  \end{scope}
+\end{tikzpicture}

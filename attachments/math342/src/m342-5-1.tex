@@ -1,0 +1,17 @@
+% Figure for Complex Variables §5.
+\begin{tikzpicture}[scale=0.42, line cap=round]
+  \draw[->, thin] (-9.6,0) -- (3.8,0) node[right] {$x$};
+  \draw[->, thin] (0,-4.6) -- (0,8.7) node[above] {$y$};
+  \foreach \x in {-6,-3} \draw[thin] (\x,-0.12) -- (\x,0.12) node[below=2pt, font=\scriptsize] {$\x$};
+  \foreach \y in {-3,3,6} \draw[thin] (-0.12,\y) -- (0.12,\y) node[right, font=\scriptsize] {$\y$};
+  \draw[figB, thick] (-3,2) circle (6);
+  \draw[figR, thick] (0,0) circle (1);
+  \fill[figB] (-3,2) circle (3.5pt) node[above left] {$-3 + 2i$};
+  % farthest point of the unit circle from the center
+  \draw[dashed] (-3,2) -- (0.8321,-0.5547);
+  \fill[figR] (0.8321,-0.5547) circle (3.5pt);
+  \node[figR, font=\scriptsize, right] at (1.0,-1.1) {$\tfrac{3 - 2i}{\sqrt{13}}$};
+  \node[figB, font=\small] at (-7.6,7.0) {$|z + 3 - 2i| = 6$};
+  \node[figR, font=\small, anchor=west] at (1.15,1.25) {$|z| = 1$};
+  \node[font=\scriptsize, rotate=-33.7] at (-1.55,1.72) {$1 + \sqrt{13}$};
+\end{tikzpicture}

@@ -125,7 +125,7 @@ from the $xy$ plane into the $uv$ plane. This form is especially useful for find
 >
 > **The boundary.** By (1), the image of a point $(0, y)$ is $(-y^2, 0)$. So as $(0, y)$ travels downward to the origin along the $y$ axis, its image moves to the right along the negative $u$ axis and reaches the origin of the $w$ plane. The image of a point $(x, 0)$ is $(x^2, 0)$, which moves to the right from the origin along the $u$ axis as $(x, 0)$ moves to the right from the origin along the $x$ axis. The image of the upper branch of $xy = 1$ (that is, $2xy = 2$) is the horizontal line $v = 2$.
 >
-> Hence the closed region $x \ge 0$, $y \ge 0$, $xy \le 1$ is mapped onto the closed strip $0 \le v \le 2$. In the labels of B&C's Figure 20: the boundary path $A$ (far up the $y$ axis) $\to B$ (origin) $\to C$ (far along the $x$ axis) goes to the $u$ axis traversed from left to right, $A' \to B' \to C'$, and the branch $D \to E$ of $xy = 1$ goes to the line $v = 2$, $D' \to E'$. The mapping is one to one on this region, since it lies in the closed first quadrant, on which $z^2$ is one to one (Example §14.2).
+> Hence the closed region $x \ge 0$, $y \ge 0$, $xy \le 1$ is mapped onto the closed strip $0 \le v \le 2$. Traversing the boundary from far up the $y$ axis down to the origin and then out along the $x$ axis, the image runs along the whole $u$ axis from left to right. The mapping is one to one on this region, since it lies in the closed first quadrant, on which $z^2$ is one to one (Example §14.2).
 >
 > *B&C: Sec. 14, Example 1*
 
@@ -171,15 +171,15 @@ When $n$ is a positive integer greater than $2$, the transformation $w = z^n$, o
 ^prop-14-3
 
 > [!proof]+ Proof
-> Write $z = re^{i\theta}$, so that $w = z^n = r^ne^{in\theta}$ ([[§8 Products and Powers in Exponential Form|§8]]).
+> Write $z = re^{i\theta}$, so that $w = z^n = r^ne^{in\theta}$ ([[§8 Products and Powers in Exponential Form#^thm-8-2|Theorem §8.2]]).
 >
-> 1. $w = 0$ has the single preimage $z = 0$. A nonzero $w$ is the image of exactly the $n$th roots of $w$, and by [[§10 Roots of Complex Numbers|§10]] a nonzero complex number has exactly $n$ distinct $n$th roots. In particular every $w$ is an image.
+> 1. $w = 0$ has the single preimage $z = 0$. A nonzero $w$ is the image of exactly the $n$th roots of $w$, and by [[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]] a nonzero complex number has exactly $n$ distinct $n$th roots. In particular every $w$ is an image.
 > 2. If $|z| = r_0$ then $|z^n| = r_0^n$, so the circle maps into the circle $\rho = r_0^n$. Conversely, a point $r_0^ne^{i\phi}$ of that circle is the image of $r_0e^{i\phi/n}$, which lies on the circle $r = r_0$. (As $\theta$ runs once around, $n\theta$ runs $n$ times around: the image circle is traced $n$ times.)
 > 3. For $0 \le r \le r_0$ and $0 \le \theta \le 2\pi/n$, the image $w = r^ne^{in\theta}$ has modulus $r^n \le r_0^n$, so the sector maps into the disk. Conversely, every point $\rho e^{i\phi}$ of the disk with $0 \le \rho \le r_0^n$ and $0 \le \phi < 2\pi$ is the image of $\rho^{1/n}e^{i\phi/n}$, which lies in the sector since $0 \le \phi/n < 2\pi/n$. The mapping is not one to one on the sector, because the two bounding rays $\theta = 0$ and $\theta = 2\pi/n$ both go onto the positive real axis: $r$ and $re^{i2\pi/n}$ have the same image $r^n$.
 
 ^pf-14-3
 
-*Uses:* [[§8 Products and Powers in Exponential Form|§8]], [[§10 Roots of Complex Numbers|§10]] (Theorem on $n$th roots)
+*Uses:* [[§8 Products and Powers in Exponential Form#^thm-8-2|§8.2]], [[§10 Roots of Complex Numbers#^thm-10-2|§10.2]] ($n$th roots)
 
 > [!remark] Remark: Method — Images Under w = z² and w = zⁿ
 > 1. **Choose the coordinates in which the given curves are level sets.** In Cartesian form ($u = x^2 - y^2$, $v = 2xy$), the hyperbolas $x^2 - y^2 = c$ and $xy = c$ go to the lines $u = c$ and $v = 2c$. In polar form ($\rho = r^n$, $\phi = n\theta$), circles $|z| = r_0$ go to circles $|w| = r_0^n$ and rays $\arg z = \alpha$ go to rays $\arg w = n\alpha$.

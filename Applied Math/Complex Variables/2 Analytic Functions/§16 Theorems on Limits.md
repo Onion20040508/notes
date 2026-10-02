@@ -85,7 +85,7 @@ Definition §15.1 tests whether a proposed number is a limit; it does not find l
 > 0 < |(x + iy) - (x_0 + iy_0)| < \delta . \qquad (6)
 > $$
 >
-> But the real and imaginary parts of a complex number are at most its modulus ([[§4 Vectors and Moduli|§4]]):
+> But the real and imaginary parts of a complex number are at most its modulus ([[§4 Vectors and Moduli#^prop-4-1|Proposition §4.1]]):
 >
 > $$
 > |u - u_0| \le |(u - u_0) + i(v - v_0)|, \qquad |v - v_0| \le |(u - u_0) + i(v - v_0)| ,
@@ -101,7 +101,7 @@ Definition §15.1 tests whether a proposed number is a limit; it does not find l
 
 ^pf-16-1
 
-*Uses:* [[§15 Limits#^def-15-1|Def. §15.1]], [[§3 Continuity and Limits of Functions#^def-3-2|452 Def. §3.2]] (limits in two variables), [[§4 Vectors and Moduli|§4]] ($|\operatorname{Re} z|, |\operatorname{Im} z| \le |z|$), [[§5 Triangle Inequality|§5]]
+*Uses:* [[§15 Limits#^def-15-1|Def. §15.1]], [[§3 Continuity and Limits of Functions#^def-3-2|452 Def. §3.2]] (limits in two variables), [[§4 Vectors and Moduli#^prop-4-1|§4.1]] ($|\operatorname{Re} z|, |\operatorname{Im} z| \le |z|$), [[§5 Triangle Inequality#^thm-5-1|§5.1]]
 
 ## Limits of Sums, Products and Quotients
 
@@ -169,10 +169,10 @@ Definition §15.1 tests whether a proposed number is a limit; it does not find l
 
 ^pf-16-2
 
-*Uses:* [[§16 Theorems on Limits#^thm-16-1|§16.1]], [[§91 Limits and Continuity#^thm-91-2|Calc Thm. §91.2]] (limit laws in two variables), [[§5 Triangle Inequality|§5]], [[§6 Complex Conjugates|§6]] ($W\bar W = |W|^2$)
+*Uses:* [[§16 Theorems on Limits#^thm-16-1|§16.1]], [[§91 Limits and Continuity#^thm-91-2|Calc Thm. §91.2]] (limit laws in two variables), [[§5 Triangle Inequality#^thm-5-1|§5.1]], [[§6 Complex Conjugates#^prop-6-3|§6.3]] ($W\bar W = |W|^2$)
 
 > [!remark]- Connections
-> - Theorem §16.1 is the statement that a function into $\mathbb{R}^2$ has a limit exactly when each coordinate does, because $\max(|a|, |b|) \le |a + ib| \le |a| + |b|$; the same comparison of norms is used for sequences in [[§60 Convergence of Sequences|§60]]. The rigorous home of the real limit laws used here is [[§3 Continuity and Limits of Functions|452 §3]] ([[§3 Continuity and Limits of Functions#^thm-3-2|452 Thm. §3.2]] for products, [[§3 Continuity and Limits of Functions#^thm-3-3|452 Thm. §3.3]] for quotients, stated there for continuity).
+> - Theorem §16.1 is the statement that a function into $\mathbb{R}^2$ has a limit exactly when each coordinate does, because $\max(|a|, |b|) \le |a + ib| \le |a| + |b|$; the same comparison of norms is used for sequences in [[§60 Convergence of Sequences#^thm-60-2|Theorem §60.2]]. The rigorous home of the real limit laws used here is [[§3 Continuity and Limits of Functions|452 §3]] ([[§3 Continuity and Limits of Functions#^thm-3-2|452 Thm. §3.2]] for products, [[§3 Continuity and Limits of Functions#^thm-3-3|452 Thm. §3.3]] for quotients, stated there for continuity).
 
 From definition (2) of [[§15 Limits|§15]] it is easy to compute the two basic limits from which all polynomial limits follow.
 

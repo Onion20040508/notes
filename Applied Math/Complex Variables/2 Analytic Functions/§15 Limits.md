@@ -34,7 +34,7 @@ The limit of a function of a complex variable is defined exactly as for a real f
 
 ^def-15-1
 
-Two remarks on the definition. The images of the points of the deleted neighborhood need not fill the $\varepsilon$ neighborhood; if $f$ has the constant value $w_0$, every image is its center. And once a $\delta$ has been found, it can be replaced by any smaller positive number, such as $\delta/2$. The value $f(z_0)$, if there is one, plays no role in (2).
+A deleted neighborhood $0 < |z - z_0| < \delta$ is a disk with its center removed ([[§12★ Regions in the Complex Plane#^def-12-1|Definition §12.1]]). Two remarks on the definition. The images of the points of the deleted neighborhood need not fill the $\varepsilon$ neighborhood; if $f$ has the constant value $w_0$, every image is its center. And once a $\delta$ has been found, it can be replaced by any smaller positive number, such as $\delta/2$. The value $f(z_0)$, if there is one, plays no role in (2).
 
 > [!remark]- Connections
 > - With $z = (x, y)$ and $|z - z_0|$ the Euclidean distance, (2) is word for word the limit of a function of two real variables, [[§3 Continuity and Limits of Functions#^def-3-2|452 Def. §3.2]] (computational version [[§91 Limits and Continuity#^def-91-1|Calc Def. §91.1]]), with values in $\mathbb{R}^2$ instead of $\mathbb{R}$. The one-variable ε–δ version is [[§20 Limits of Functions#^rem-20-1|451 Rem. §20.1]].
@@ -75,12 +75,12 @@ Two remarks on the definition. The images of the points of the deleted neighborh
 
 ^pf-15-1
 
-*Uses:* [[§15 Limits#^def-15-1|Def. §15.1]], [[§5 Triangle Inequality|§5]] (triangle inequality)
+*Uses:* [[§15 Limits#^def-15-1|Def. §15.1]], [[§5 Triangle Inequality#^thm-5-1|§5.1]] (triangle inequality)
 
 > [!remark]- Connections
 > - The same argument for sequences of real numbers, [[§7 Limits of Sequences#^thm-7-1|451 Thm. §7.1]]. It works in any Hausdorff space, the plane being one: [[§8 Hausdorff Spaces#^thm-8-3|590 Thm. §8.3]] (for sequences; disjoint neighborhoods of $w_0 \ne w_1$ cannot both contain $f(z)$).
 
-Definition §15.1 requires $f$ to be defined in a deleted neighborhood of $z_0$, which is always the case when $z_0$ is an interior point of a region ([[§12★ Regions in the Complex Plane|§12★]]) on which $f$ is defined. Points on the edge of the region need a modified definition.
+Definition §15.1 requires $f$ to be defined in a deleted neighborhood of $z_0$, which is always the case when $z_0$ is an interior point ([[§12★ Regions in the Complex Plane#^def-12-2|Definition §12.2]]) of a region on which $f$ is defined. Points on the edge of the region need a modified definition.
 
 > [!definition] Definition §15.2: Limit at a Boundary Point
 > Let $f$ be defined on a region $R$, and let $z_0$ be a boundary point of $R$. Then $\lim_{z\to z_0} f(z) = w_0$ means that condition (2) holds for those points $z$ that lie **both** in $R$ and in the deleted neighborhood $0 < |z - z_0| < \delta$.
@@ -123,7 +123,7 @@ Every deleted neighborhood of a boundary point of a region contains points of th
 If limit (1) exists, the symbol $z \to z_0$ means that $z$ is allowed to approach $z_0$ in an arbitrary manner, not just from some particular direction. Combined with uniqueness, this gives a practical test.
 
 > [!theorem] Corollary §15.2: Two-Path Test
-> Suppose that, as $z$ approaches $z_0$ through the points of a set $A$ (having $z_0$ as an accumulation point), $f(z)$ tends to $a$, and as $z$ approaches $z_0$ through the points of another set $B$, $f(z)$ tends to $b$. If $a \ne b$, then $\lim_{z\to z_0} f(z)$ does not exist.
+> Suppose that, as $z$ approaches $z_0$ through the points of a set $A$ (having $z_0$ as an accumulation point, [[§12★ Regions in the Complex Plane#^def-12-6|Definition §12.6]]), $f(z)$ tends to $a$, and as $z$ approaches $z_0$ through the points of another set $B$, $f(z)$ tends to $b$. If $a \ne b$, then $\lim_{z\to z_0} f(z)$ does not exist.
 >
 > *B&C: Sec. 15 (text before Example 2)*
 

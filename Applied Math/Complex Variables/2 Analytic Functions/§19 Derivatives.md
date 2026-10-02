@@ -177,7 +177,7 @@ The converse does hold.
 >
 > which is $0$ horizontally and $\Delta y/(i\Delta y) = -i$ vertically. So $f'(z)$ exists nowhere.
 >
-> Both functions are real-valued, and their only possible derivative would have to be real along one approach and imaginary along the other; compare [[§21 Cauchy–Riemann Equations#^ex-21-2|Example §21.2]], where a real-valued function with a derivative everywhere turns out to be constant.
+> Both functions are real-valued. For a real-valued function the horizontal difference quotient $\Delta w/\Delta x$ is real and the vertical one $\Delta w/(i\Delta y)$ is purely imaginary, so the only possible value of a derivative is $0$; compare [[§26 Further Examples (Analytic Functions)#^ex-26-5|Example §26.5]], where a real-valued function with a derivative everywhere turns out to be constant.
 >
 > *B&C: Sec. 20, Exercise 8; Source: 342 HW 3 (part (a))*
 

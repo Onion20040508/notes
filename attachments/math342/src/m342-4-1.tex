@@ -1,0 +1,21 @@
+% Figure for Complex Variables §4.
+\begin{tikzpicture}[scale=1.35, line cap=round, >={Stealth[length=2.2mm]}]
+  \draw[->, thin] (-1.5,0) -- (1.7,0) node[right] {$x$};
+  \draw[->, thin] (0,-1.4) -- (0,3.45) node[above] {$y$};
+  \foreach \y in {1,3} \draw[thin] (-0.04,\y) -- (0.04,\y) node[right, font=\scriptsize] {$\y$};
+  \draw[thin] (-0.04,2) -- (0.04,2);
+  \draw[thin] (-0.04,-1) -- (0.04,-1) node[right, font=\scriptsize] {$-1$};
+  % parallelogram for the sum
+  \draw[gray, dashed] (0,2) -- (0.6667,1) -- (0.6667,-1);
+  % parallelogram for the difference
+  \draw[gray, dashed] (0,2) -- (-0.6667,3) -- (-0.6667,1);
+  % z2 to z1 segment
+  \draw[figG, dashed, thick] (0.6667,-1) -- (0,2);
+  % vectors
+  \draw[->, thick] (0,0) -- (0,2) node[right, xshift=2pt, yshift=2pt] {$z_1 = 2i$};
+  \draw[->, thick] (0,0) -- (0.6667,-1) node[right] {$z_2 = \tfrac23 - i$};
+  \draw[->, thick, gray] (0,0) -- (-0.6667,1) node[left] {$-z_2$};
+  \draw[->, very thick, figB] (0,0) -- (0.6667,1) node[right] {$z_1 + z_2 = \tfrac23 + i$};
+  \draw[->, very thick, figR] (0,0) -- (-0.6667,3) node[left] {$z_1 - z_2 = -\tfrac23 + 3i$};
+  \node[below left, font=\scriptsize] at (0,0) {$O$};
+\end{tikzpicture}

@@ -158,7 +158,7 @@ This section proves the extended Cauchy integral formula of [[§55 An Extension 
 *Uses:* [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]], [[§47 Upper Bounds for Moduli of Contour Integrals|§47]] (Theorem), [[§48 Antiderivatives|§48]] (Theorem), [[§25 Analytic Functions|§25]] (analytic at a point means differentiable in a neighborhood), [[§18 Continuity|§18]] (a continuous function on a closed bounded set is bounded)
 
 > [!remark]- Connections
-> - Step 1 is differentiation under the integral sign, justified by a bound that is uniform in $s$ on $C$; the general real-variable form (a parameter-dependent integral whose partial derivative is continuous may be differentiated under the integral sign) is the same mechanism. Steps 4–5 are integration by parts, with the fundamental theorem of calculus replaced by [[§48 Antiderivatives|§48]].
+> - Steps 4–5 are the complex form of integration by parts, [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]]: there the boundary term $[FG]_a^b$ survives, while around a closed contour it vanishes, so $n$ integrations by parts move all $n$ derivatives from $f$ onto $1/(s - z)$ at no cost.
 
 ## Integrals of Cauchy Type
 

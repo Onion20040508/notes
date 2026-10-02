@@ -118,7 +118,7 @@ By Proposition §4.2, the inequality $|z - z_0| < R$ describes the points inside
 ^ex-4-2
 
 ![[m342-4-1.svg]]
-*Example §4.2: the sum $z_1 + z_2$ (blue) is the diagonal of the parallelogram on $z_1 = 2i$ and $z_2 = \frac23 - i$; the difference $z_1 - z_2$ (red) is the diagonal of the parallelogram on $z_1$ and $-z_2$, parallel and equal in length to the dashed segment from $z_2$ to $z_1$.*
+*Example §4.2: the sum $z_1 + z_2$ (blue) is the diagonal of the parallelogram on $z_1 = 2i$ and $z_2 = \frac23 - i$; the difference $z_1 - z_2$ (red) is the diagonal of the parallelogram on $z_1$ and $-z_2$, parallel and equal in length to the green dashed segment from $z_2$ to $z_1$.*
 
 > [!example] Example §4.3: Circles and Disks
 > **(a)** The equation $|z - 1 + 3i| = 2$ is $|z - (1 - 3i)| = 2$: it represents the circle with center $z_0 = (1, -3)$ and radius $R = 2$.

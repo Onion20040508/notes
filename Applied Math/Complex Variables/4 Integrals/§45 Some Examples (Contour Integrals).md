@@ -100,7 +100,13 @@ If $f(z)$ is given as $u(x, y) + iv(x, y)$, it is sometimes convenient to use on
 > [!example] Example §45.3: Two Paths, Two Values
 > Let $f(z) = y - x - i3x^2$ $(z = x + iy)$. Let $C_1$ be the polygonal line $OAB$ from $O = 0$ up to $A = i$ and then across to $B = 1 + i$, and $C_2$ the segment $OB$ of the line $y = x$. Evaluate $I_1 = \int_{C_1} f(z)\,dz$ and $I_2 = \int_{C_2} f(z)\,dz$.
 >
-> **Along $C_1$.** By property (7), $I_1 = \int_{OA} f(z)\,dz + \int_{AB} f(z)\,dz$. (6) The leg $OA$ is $z = 0 + iy$ $(0 \le y \le 1)$; since $x = 0$ there, $f(z) = y$ and $dz = i\,dy$:
+> **Along $C_1$.** By property (7),
+>
+> $$
+> I_1 = \int_{C_1} f(z)\,dz = \int_{OA} f(z)\,dz + \int_{AB} f(z)\,dz . \qquad (6)
+> $$
+>
+> The leg $OA$ is $z = 0 + iy$ $(0 \le y \le 1)$; since $x = 0$ there, $f(z) = y$ and $dz = i\,dy$:
 >
 > $$
 > \int_{OA} f(z)\,dz = \int_0^1 y\,i\,dy = i\int_0^1 y\,dy = \frac i2 .
