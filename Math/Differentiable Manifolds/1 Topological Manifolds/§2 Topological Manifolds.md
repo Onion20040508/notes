@@ -511,3 +511,21 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 
 > [!remark]- Connections
 > - Carried out in [[§13 Differentiable Structures#^def-13-2|Def. §13.2]] (smooth in the sense of a chart), [[§13 Differentiable Structures#^rem-13-3|the problem this creates]] and [[§13 Differentiable Structures#^thm-13-1|§13.1]].
+
+> [!theorem] Proposition §2.13: Manifolds Are Locally Compact
+> Every [[§2 Topological Manifolds#^def-2-2|topological manifold]] $M$ is *[[§17 Local Compactness#^def-17-1|locally compact]]*: every point $q \in M$ has an open neighbourhood $V$ whose closure $\overline V$ is compact.
+>
+> *Lee: Proposition 1.12*
+
+^prop-2-13
+
+> [!proof]+ Proof
+> *(Lecture 14, asking for it to be added to the notes: “that's obviously true, because you go down to Euclidean space. You have an open set. You just take the ball … and pull it up”; filled in.)* Take a [[§2 Topological Manifolds#^def-2-3|chart]] $(U, \varphi)$ at $q$ and $\varepsilon > 0$ with the closed ball $\overline{B}_\varepsilon(\varphi(q)) \subseteq \varphi(U)$. Put $V = \varphi^{-1}\big(B_\varepsilon(\varphi(q))\big)$, open in $U$ and hence in $M$, and $K = \varphi^{-1}\big(\overline{B}_\varepsilon(\varphi(q))\big)$. $K$ is compact, the image of a compact set under the continuous map $\varphi^{-1}$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (2)), hence closed in the [[§1 Point-Set Topology Review#^def-1-7|Hausdorff]] space $M$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (4)). Since $V \subseteq K$, also $\overline V \subseteq K$, and a closed subset of a compact set is compact ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (5)).
+
+^pf-2-13
+
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (1, 2, 4, 5), [[§5 Subspace Topology#^lem-5-2|590 §5.2]], [[Heine–Borel Theorem]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[Closed Subspace of a Compact Space is Compact]]
+
+> [!remark]- Connections
+> - The home of local compactness: [[§17 Local Compactness#^def-17-1|590 Def. §17.1]] (a compact set containing a neighbourhood); for Hausdorff spaces it is equivalent to the form used here by [[§17 Local Compactness#^thm-17-6|590 §17.6]].
+> - The model case, $\mathbb{R}^n$: [[§17 Local Compactness#^ex-17-3|590 Ex. §17.3]].

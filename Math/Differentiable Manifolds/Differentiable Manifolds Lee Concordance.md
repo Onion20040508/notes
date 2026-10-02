@@ -67,6 +67,7 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§30 Fibrations\|§30]] Fibrations | smooth fiber bundles (Chapter 10); Ehresmann's theorem is not in Lee |
 | [[§31 The Tangent Bundle\|§31]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18); Proposition 11.9 (cotangent bundle); Chapter 8 (vector fields); Chapter 10 (sections) |
 | [[§32 Immersions\|§32]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
+| [[§33 Embeddings\|§33]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
 
 ## A.4 Index from Lee to these notes
 
@@ -79,6 +80,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 1.5 | [[§14 Projective Spaces as Smooth Manifolds#^prop-14-6\|Prop. §14.6]] |
 | Example 1.8 | [[§3 Subspaces and Products#^thm-3-12\|Thm. §3.12]] |
 | Proposition 1.11 | [[§2 Topological Manifolds#^prop-2-6\|Prop. §2.6]], [[§2 Topological Manifolds#^thm-2-9\|Thm. §2.9]], [[§2 Topological Manifolds#^cor-2-10\|Cor. §2.10]] |
+| Proposition 1.12 | [[§2 Topological Manifolds#^prop-2-13\|Prop. §2.13]] |
 | Proposition 1.17 | [[§13 Differentiable Structures#^def-13-7\|Def. §13.7]], [[§13 Differentiable Structures#^thm-13-5\|Thm. §13.5]] |
 | Example 1.21 | [[§2 Topological Manifolds#^prop-2-5\|Prop. §2.5]] |
 | Example 1.22 | [[§13 Differentiable Structures#^ex-13-1\|Ex. §13.1]] |
@@ -94,7 +96,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Lemma 1.35 | [[§31 The Tangent Bundle#^prop-31-1\|Prop. §31.1]] |
 | Example 1.36 | [[§12 The Topology of G∕H and Real Grassmannians#^def-12-3\|Def. §12.3]], [[§12 The Topology of G∕H and Real Grassmannians#^cor-12-8\|Cor. §12.8]] |
 | Problem 1-1 | [[§1 Point-Set Topology Review#^ex-1-4\|Ex. §1.4]], [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]], [[§4 Quotient Spaces and Open Maps#^ex-4-1\|Ex. §4.1]] |
-| Problem 1-2 | [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]], [[§2 Topological Manifolds#^ex-2-3\|Ex. §2.3]] |
+| Problem 1-2 | [[§2 Topological Manifolds#^ex-2-3\|Ex. §2.3]], [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]] |
 | Problem 1-6 | [[§15 Smooth Functions and Smooth Maps#^prop-15-6\|Prop. §15.6]], [[§15 Smooth Functions and Smooth Maps#^def-15-5\|Def. §15.5]], [[§15 Smooth Functions and Smooth Maps#^cor-15-7\|Cor. §15.7]] |
 | Problem 1-7 | [[§13 Differentiable Structures#^ex-13-3\|Ex. §13.3]] |
 | Problem 1-9 | [[§6 Open Quotients and Complex Projective Space#^def-6-2\|Def. §6.2]], [[§6 Open Quotients and Complex Projective Space#^prop-6-4\|Prop. §6.4]], [[§6 Open Quotients and Complex Projective Space#^prop-6-5\|Prop. §6.5]], [[§6 Open Quotients and Complex Projective Space#^prop-6-6\|Prop. §6.6]], [[§10 Group Actions and Orbit Spaces#^ex-10-3\|Ex. §10.3]], [[§14 Projective Spaces as Smooth Manifolds#^def-14-1\|Def. §14.1]], [[§14 Projective Spaces as Smooth Manifolds#^def-14-2\|Def. §14.2]], [[§14 Projective Spaces as Smooth Manifolds#^prop-14-1\|Prop. §14.1]], [[§14 Projective Spaces as Smooth Manifolds#^thm-14-2\|Thm. §14.2]] |
@@ -103,8 +105,8 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 2.15 | [[§15 Smooth Functions and Smooth Maps#^prop-15-5\|Prop. §15.5]] |
 | Proposition 2.25 | [[§23 Derivations and the Abstract Tangent Space#^prop-23-3\|Prop. §23.3]] |
 | Lemma 3.1 | [[§23 Derivations and the Abstract Tangent Space#^lem-23-2\|Lem. §23.2]] |
-| Proposition 3.2 | [[§22 Tangent Spaces II꞉ Germs#^def-22-1\|Def. §22.1]], [[§22 Tangent Spaces II꞉ Germs#^prop-22-2\|Prop. §22.2]], [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6\|Thm. §24.6]], [[§24 Coordinate Derivations and the Basis Theorem#^lem-24-2\|Lem. §24.2]], [[§24 Coordinate Derivations and the Basis Theorem#^cor-24-4\|Cor. §24.4]] |
-| Corollary 3.3 | [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5\|Thm. §24.5]], [[§24 Coordinate Derivations and the Basis Theorem#^cor-24-4\|Cor. §24.4]], [[§25 The Differential in Coordinates#^prop-25-5\|Prop. §25.5]] |
+| Proposition 3.2 | [[§22 Tangent Spaces II꞉ Germs#^def-22-1\|Def. §22.1]], [[§22 Tangent Spaces II꞉ Germs#^prop-22-2\|Prop. §22.2]], [[§24 Coordinate Derivations and the Basis Theorem#^lem-24-2\|Lem. §24.2]], [[§24 Coordinate Derivations and the Basis Theorem#^cor-24-4\|Cor. §24.4]], [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6\|Thm. §24.6]] |
+| Corollary 3.3 | [[§24 Coordinate Derivations and the Basis Theorem#^cor-24-4\|Cor. §24.4]], [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5\|Thm. §24.5]], [[§25 The Differential in Coordinates#^prop-25-5\|Prop. §25.5]] |
 | Lemma 3.4 | [[§23 Derivations and the Abstract Tangent Space#^lem-23-2\|Lem. §23.2]] |
 | Proposition 3.6 | [[§23 Derivations and the Abstract Tangent Space#^thm-23-6\|Thm. §23.6]], [[§23 Derivations and the Abstract Tangent Space#^cor-23-7\|Cor. §23.7]] |
 | Proposition 3.8 | [[§23 Derivations and the Abstract Tangent Space#^prop-23-3\|Prop. §23.3]] |
@@ -113,7 +115,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 3.13 | [[§25 The Differential in Coordinates#^prop-25-5\|Prop. §25.5]], [[§25 The Differential in Coordinates#^cor-25-6\|Cor. §25.6]] |
 | Proposition 3.14 | [[§26 Tangent Vectors as Velocities of Curves#^thm-26-4\|Thm. §26.4]], [[§26 Tangent Vectors as Velocities of Curves#^cor-26-5\|Cor. §26.5]], [[§28 Local Diffeomorphisms and Submersions#^ex-28-4\|Ex. §28.4]] |
 | Proposition 3.15 | [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5\|Thm. §24.5]] |
-| Proposition 3.18 | [[§31 The Tangent Bundle#^prop-31-4\|Prop. §31.4]], [[§31 The Tangent Bundle#^def-31-2\|Def. §31.2]], [[§31 The Tangent Bundle#^prop-31-1\|Prop. §31.1]], [[§31 The Tangent Bundle#^prop-31-2\|Prop. §31.2]] |
+| Proposition 3.18 | [[§31 The Tangent Bundle#^def-31-2\|Def. §31.2]], [[§31 The Tangent Bundle#^prop-31-1\|Prop. §31.1]], [[§31 The Tangent Bundle#^prop-31-2\|Prop. §31.2]], [[§31 The Tangent Bundle#^prop-31-4\|Prop. §31.4]] |
 | Proposition 3.23 | [[§26 Tangent Vectors as Velocities of Curves#^thm-26-2\|Thm. §26.2]] |
 | Proposition 3.24 | [[§26 Tangent Vectors as Velocities of Curves#^cor-26-3\|Cor. §26.3]] |
 | Corollary 3.25 | [[§18 The Differential of a Map Between Vector Spaces#^thm-18-3\|Thm. §18.3]], [[§26 Tangent Vectors as Velocities of Curves#^cor-26-3\|Cor. §26.3]] |
@@ -122,8 +124,11 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 4.6 | [[§28 Local Diffeomorphisms and Submersions#^cor-28-3\|Cor. §28.3]] |
 | Proposition 4.8 | [[§28 Local Diffeomorphisms and Submersions#^thm-28-2\|Thm. §28.2]], [[§28 Local Diffeomorphisms and Submersions#^prop-28-4\|Prop. §28.4]] |
 | Theorem 4.12 | [[§28 Local Diffeomorphisms and Submersions#^thm-28-7\|Thm. §28.7]], [[§32 Immersions#^thm-32-1\|Thm. §32.1]] |
+| Example 4.20 | [[§33 Embeddings#^ex-33-1\|Ex. §33.1]] |
+| Proposition 4.22 | [[§33 Embeddings#^thm-33-5\|Thm. §33.5]], [[§33 Embeddings#^cor-33-6\|Cor. §33.6]] |
 | Proposition 4.28 | [[§28 Local Diffeomorphisms and Submersions#^cor-28-9\|Cor. §28.9]] |
 | Problem 4-5 | [[§14 Projective Spaces as Smooth Manifolds#^prop-14-4\|Prop. §14.4]], [[§28 Local Diffeomorphisms and Submersions#^ex-28-5\|Ex. §28.5]], [[§30 Fibrations#^ex-30-1\|Ex. §30.1]] |
+| Proposition 5.2 | [[§33 Embeddings#^thm-33-1\|Thm. §33.1]] |
 | Theorem 5.8 | [[§29 Submanifolds#^def-29-1\|Def. §29.1]], [[§29 Submanifolds#^prop-29-2\|Prop. §29.2]] |
 | Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§16 Manifolds in Euclidean Space#^prop-16-2\|Prop. §16.2]], [[§29 Submanifolds#^thm-29-6\|Thm. §29.6]] |
 | Corollary 5.30 | [[§29 Submanifolds#^lem-29-3\|Lem. §29.3]] |
@@ -173,6 +178,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition A.45 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Proposition A.50 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Lemma A.52 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
+| Theorem A.57 | [[§33 Embeddings#^prop-33-4\|Prop. §33.4]] |
 | Corollary B.21 | [[§17 Linear Algebra Toolkit#^prop-17-1\|Prop. §17.1]] |
 | Proposition B.24 | [[§17 Linear Algebra Toolkit#^prop-17-1\|Prop. §17.1]] |
 | Theorem C.15 | [[§24 Coordinate Derivations and the Basis Theorem#^lem-24-2\|Lem. §24.2]], [[§24 Coordinate Derivations and the Basis Theorem#^lem-24-3\|Lem. §24.3]] |
