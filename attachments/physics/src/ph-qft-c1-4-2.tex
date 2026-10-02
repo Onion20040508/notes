@@ -1,0 +1,25 @@
+% Orbits of SO+(1,1) in the (x,t) plane; adapted from the user's PHY 513 notes, Fig. "orbits"
+\begin{tikzpicture}[>=Stealth, font=\small, scale=0.95]
+  \draw[->, thin, gray] (-3.6,0) -- (3.6,0) node[below] {$x$};
+  \draw[->, thin, gray] (0,-3.4) -- (0,3.4) node[left] {$t$};
+  \draw[dashed, gray] (-3.2,-3.2) -- (3.2,3.2);
+  \draw[dashed, gray] (-3.2,3.2) -- (3.2,-3.2);
+  \draw[figB, line width=1pt, domain=-1.55:1.55, samples=60] plot ({sinh(\x)}, {cosh(\x)});
+  \draw[gray, line width=1pt, domain=-1.55:1.55, samples=60] plot ({sinh(\x)}, {-cosh(\x)});
+  \draw[figO, line width=0.9pt, densely dashed, domain=-1.55:1.55, samples=60] plot ({cosh(\x)}, {sinh(\x)});
+  \draw[figO, line width=0.9pt, densely dashed, domain=-1.55:1.55, samples=60] plot ({-cosh(\x)}, {sinh(\x)});
+  \coordinate (p) at ({sinh(0.9)}, {cosh(0.9)});
+  \coordinate (Pp) at ({-sinh(0.9)}, {cosh(0.9)});
+  \coordinate (Tp) at ({sinh(0.9)}, {-cosh(0.9)});
+  \coordinate (PTp) at ({-sinh(0.9)}, {-cosh(0.9)});
+  \fill[figB] (p) circle (2pt) node[right=3pt, fill=white, inner sep=1pt] {$x$};
+  \fill[figB] (Pp) circle (2pt) node[left=3pt, fill=white, inner sep=1pt] {$Px$};
+  \fill[gray] (Tp) circle (2pt) node[right=3pt, fill=white, inner sep=1pt] {$Tx$};
+  \fill[gray] (PTp) circle (2pt) node[left=3pt, fill=white, inner sep=1pt] {$PTx=-x$};
+  \draw[->] (p) -- node[pos=0.5, above=1pt]{\scriptsize $P$} (Pp);
+  \draw[->] (p) -- node[pos=0.25, right=1pt]{\scriptsize $T$} (Tp);
+  \node[figB, anchor=west] at (2.75,2.85) {\scriptsize future sheet: one orbit};
+  \node[gray, anchor=west] at (2.3,-2.85) {\scriptsize past sheet: another orbit};
+  \node[figO, anchor=west] at (2.55,0.55) {\scriptsize spacelike};
+  \node[gray, anchor=south east] at (-3.0,3.0) {\scriptsize light cone};
+\end{tikzpicture}

@@ -1,0 +1,23 @@
+% Four components of O(1,3) as cosets of SO+(1,3); adapted from the user's PHY 513 notes, Fig. "components"
+\begin{tikzpicture}[>=Stealth, font=\small,
+  cell/.style={draw, rounded corners=4pt, minimum width=4.6cm, minimum height=1.55cm, align=center, line width=0.5pt},
+  idcell/.style={cell, fill=figB!10, draw=figB},
+  gcell/.style={cell, fill=gray!8, draw=gray}]
+  \node[idcell] (pp) at (0,0) {$\mathrm{SO}^{+}(1,3)$\\[1pt] \scriptsize rotations and boosts; contains $\mathbf 1$};
+  \node[gcell]  (pm) at (5.6,0) {$PT\cdot\mathrm{SO}^{+}(1,3)$\\[1pt] \scriptsize contains $PT=-\mathbf 1$};
+  \node[gcell]  (mp) at (0,-2.5) {$P\cdot\mathrm{SO}^{+}(1,3)$\\[1pt] \scriptsize space reflected; contains $P$};
+  \node[gcell]  (mm) at (5.6,-2.5) {$T\cdot\mathrm{SO}^{+}(1,3)$\\[1pt] \scriptsize time reflected; contains $T$};
+  \draw[<->] (pp) -- node[right]{\scriptsize $P$} (mp);
+  \draw[<->] (pm) -- node[right]{\scriptsize $P$} (mm);
+  \draw[<->] (pp) -- node[above]{\scriptsize $PT$} (pm);
+  \draw[<->] (mp) -- node[above]{\scriptsize $PT$} (mm);
+  \draw[<->, figR] (pp.south east) -- node[pos=0.5, fill=white, inner sep=1pt]{\scriptsize $T$} (mm.north west);
+  \node[left=14pt of pp, align=right] {\scriptsize $\det\Lambda=+1$};
+  \node[left=14pt of mp, align=right] {\scriptsize $\det\Lambda=-1$};
+  \node at (0,2.05) {\scriptsize $\Lambda^{0}{}_{0}\ge+1$ (orthochronous)};
+  \node at (5.6,2.05) {\scriptsize $\Lambda^{0}{}_{0}\le-1$ (non-orthochronous)};
+  \draw[dashed, rounded corners=8pt, figB] (-2.6,1.25) rectangle (8.2,-0.95);
+  \node[anchor=west, figB] at (-2.55,1.45) {\scriptsize top row: $\mathrm{SO}(1,3)$, $\det\Lambda=+1$ (a subgroup, not connected)};
+  \draw[dashed, rounded corners=10pt, gray] (-2.8,1.75) rectangle (8.4,-3.55);
+  \node[anchor=west, gray] at (-2.75,-3.8) {\scriptsize all four cells: $\mathrm{O}(1,3)$; only the cell of $\mathbf 1$ is a subgroup};
+\end{tikzpicture}

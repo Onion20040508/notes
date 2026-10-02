@@ -1,0 +1,32 @@
+% QFT §C1.8: the scalar law read actively, phi'(x) = phi(Lambda^{-1} x)
+\begin{tikzpicture}[>=Stealth, font=\small, scale=1.6]
+  \def\g{1.1547}\def\gb{0.5774}
+  % ---------- left panel ----------
+  \begin{scope}
+    \draw[->, thin] (-1.3,0) -- (1.9,0) node[right]{$x^1$};
+    \draw[->, thin] (0,-0.2) -- (0,2.2) node[above]{$t$};
+    \draw[gray, dashed] (-1.2,1.2) -- (0,0) -- (1.9,1.9);
+    \foreach \r/\s/\c in {0.5/0.3/figB!25, 0.34/0.2/figB!50, 0.17/0.1/figB!85}
+      \draw[thick, draw=figB, fill=\c] (0.6,1.0) ellipse ({\r} and {\s});
+    \fill[figR] (0.6,1.0) circle (0.9pt);
+    \draw[figR, thin] (0.6,1.0) -- (1.25,0.55) node[right, text=figR, inner sep=1pt]{$x_0$};
+    \draw[gray, densely dotted, domain=-0.9:1.6, samples=60, variable=\x] plot ({\x},{sqrt(0.64+\x*\x)});
+    \node[align=center, font=\footnotesize] at (0.3,-0.45) {$\phi$: maximum at $x_0$};
+  \end{scope}
+  % ---------- right panel ----------
+  \begin{scope}[xshift=3.6cm]
+    \draw[->, thin] (-1.3,0) -- (1.9,0) node[right]{$x^1$};
+    \draw[->, thin] (0,-0.2) -- (0,2.2) node[above]{$t$};
+    \draw[gray, dashed] (-1.2,1.2) -- (0,0) -- (1.9,1.9);
+    \begin{scope}[cm={\g,\gb,\gb,\g,(0,0)}]
+      \foreach \r/\s/\c in {0.5/0.3/figB!25, 0.34/0.2/figB!50, 0.17/0.1/figB!85}
+        \draw[thick, draw=figB, fill=\c] (0.6,1.0) ellipse ({\r} and {\s});
+    \end{scope}
+    \draw[gray, densely dotted, domain=-0.9:1.6, samples=60, variable=\x] plot ({\x},{sqrt(0.64+\x*\x)});
+    \fill[figR!40] (0.6,1.0) circle (0.9pt) node[left=1pt, text=figR!60]{$x_0$};
+    \draw[->, thick, figR, domain=0.6:1.24, samples=30, variable=\x] plot ({\x},{sqrt(0.64+\x*\x)});
+    \fill[figR] (1.2702,1.5011) circle (0.9pt) node[above left=1pt, text=figR]{$\Lambda x_0$};
+    \node[align=center, font=\footnotesize] at (0.3,-0.45) {$\phi'(x)=\phi(\Lambda^{-1}x)$: maximum at $\Lambda x_0$};
+  \end{scope}
+  \draw[->, thick] (1.75,1.0) -- node[above, font=\footnotesize]{boost $\Lambda$} (2.45,1.0);
+\end{tikzpicture}
