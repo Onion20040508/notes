@@ -1,0 +1,9 @@
+% QFT §C5.4: the Dirac equation in two-component form -- the mass is the only coupling between the Weyl blocks
+\begin{tikzpicture}[>=Stealth, font=\small,
+  blk/.style={draw=figB, fill=figB!8, thick, rounded corners=3pt, minimum width=2.6cm, minimum height=1.1cm, align=center}]
+\node[blk] (L) at (0,0) {$\psi_{L}$\\ {\scriptsize $(\tfrac12,0)$}};
+\node[blk] (R) at (7,0) {$\psi_{R}$\\ {\scriptsize $(0,\tfrac12)$}};
+\draw[->, thick, figO] (L.north east) to[out=25,in=155] node[above, align=center, font=\scriptsize]{coupled by $m$: $i\bar\sigma^{\mu}\partial_{\mu}\psi_{L}=m\,\psi_{R}$} (R.north west);
+\draw[->, thick, figO] (R.south west) to[out=-155,in=-25] node[below, align=center, font=\scriptsize]{coupled by $m$: $i\sigma^{\mu}\partial_{\mu}\psi_{R}=m\,\psi_{L}$} (L.south east);
+\node[font=\scriptsize, align=center, text=black!60] at (3.5,0) {$m=0$: both arrows vanish,\\ two separate Weyl equations};
+\end{tikzpicture}

@@ -1,0 +1,16 @@
+% QFT §C5.3: why psibar i gamma^mu d_mu psi is a scalar -- each slot of gamma^mu is contracted with a neighbour that transforms by the inverse rule
+\begin{tikzpicture}[>=Stealth, font=\small, scale=0.95,
+  fld/.style={draw=figB, fill=figB!8, thick, rounded corners=3pt, minimum height=0.95cm, minimum width=1.45cm, align=center},
+  arc/.style={thick, figO}]
+\node[fld] (pb) at (0,0) {$\bar\psi$};
+\node[fld, minimum width=2.0cm] (g) at (3.9,0) {$\gamma^{\mu}$};
+\node[fld] (d) at (7.8,0) {$\partial_{\mu}$};
+\node[fld] (p) at (11.0,0) {$\psi$};
+\node[font=\scriptsize, align=center, below=3pt of pb] {row spinor\\ $\to\bar\psi\,\Lambda_{1/2}^{-1}$};
+\node[font=\scriptsize, align=center, below=3pt of g] {three slots: row spinor,\\ vector, column spinor;\\ invariant tensor};
+\node[font=\scriptsize, align=center, below=3pt of d] {lower vector\\ $\to(\Lambda^{-1})^{\nu}{}_{\mu}\,\partial_{\nu}$};
+\node[font=\scriptsize, align=center, below=3pt of p] {column spinor\\ $\to\Lambda_{1/2}\,\psi$};
+\draw[arc] (pb.north) to[out=60,in=120] node[above, font=\scriptsize]{spinor: $\Lambda_{1/2}^{-1}\Lambda_{1/2}=1$} ([xshift=-7mm]g.north);
+\draw[arc] ([xshift=7mm]g.north) to[out=45,in=135] node[above, font=\scriptsize]{spinor: $\Lambda_{1/2}^{-1}\Lambda_{1/2}=1$} (p.north);
+\draw[thick, figB, ->] ([yshift=-1.3cm]g.south) to[out=-30,in=-150] node[below, font=\scriptsize]{vector: $\Lambda^{\mu}{}_{\rho}(\Lambda^{-1})^{\nu}{}_{\mu}=\delta^{\nu}{}_{\rho}$} ([yshift=-1.3cm]d.south);
+\end{tikzpicture}
