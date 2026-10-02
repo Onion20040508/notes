@@ -1,0 +1,18 @@
+% Figure for Ordinary Differential Equations §24.
+\begin{tikzpicture}[declare function={
+    h(\t) = (\t>0)*(0.5 - 0.5*exp(-\t/4)*(cos(deg(sqrt(15)*\t/4)) + sin(deg(sqrt(15)*\t/4))/sqrt(15)));}]
+\begin{axis}[nfig, width=12cm, height=6cm, xmin=0, xmax=46, ymin=-0.32, ymax=1.12,
+  xlabel={$t$}, ylabel={$y$}, xtick={0,5,10,20,30,40}, ytick={-0.2,0,0.2,0.5,0.72,1},
+  yticklabels={$-0.2$,$0$,$0.2$,$\tfrac12$,$0.72$,$1$}, clip=false]
+  \fill[figO, opacity=0.12] (axis cs:5,0) rectangle (axis cs:20,1);
+  \draw[figO, thick] (axis cs:0,0) -- (axis cs:5,0) -- (axis cs:5,1) -- (axis cs:20,1) -- (axis cs:20,0) -- (axis cs:46,0);
+  \node[figO, font=\scriptsize, anchor=south] at (axis cs:12.5,1) {forcing $g(t) = u_5(t) - u_{20}(t)$};
+  \addplot[black!40, dashed, thin, domain=5:20] {0.5};
+  \addplot[figB, thick, samples=600, domain=0:46] {h(x-5) - h(x-20)};
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:27.5,0.25) {response $y(t) = u_5(t)h(t-5) - u_{20}(t)h(t-20)$};
+  \fill[figR] (axis cs:8.245,0.7222) circle (1.6pt);
+  \fill[figR] (axis cs:23.267,-0.2229) circle (1.6pt);
+  \node[figR, font=\scriptsize, anchor=south west] at (axis cs:8.3,0.73) {$(8.24,\ 0.722)$};
+  \node[figR, font=\scriptsize, anchor=west] at (axis cs:23.7,-0.23) {$(23.27,\ -0.223)$};
+\end{axis}
+\end{tikzpicture}

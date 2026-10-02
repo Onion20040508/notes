@@ -107,6 +107,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - Linear-algebra home: [[§34 Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
 > - Computational version: [[§21 Properties of Determinants#^thm-21-9|235 Thm. §21.9]] (with a worked check).
+> - Used in Quantum Mechanics: bosons and fermions: the only two ways for permutations to act on a state by a phase are the trivial one and the sign — [[§C12.1★ Permutation Symmetry and the Symmetrization Postulate#^thm-c12-1-5|QM Theorem §C12.1.5]].
 
 > [!theorem] Corollary §20.4: Parity of a Permutation
 > 1. Every transposition is odd: $\operatorname{sgn}((a\ b)) = -1$.

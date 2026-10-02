@@ -1,0 +1,32 @@
+% Figure for Ordinary Differential Equations §23.
+\begin{tikzpicture}
+\begin{axis}[nfig, name=L, width=7.6cm, height=5.2cm, xmin=0, xmax=12.4, ymin=-1.8, ymax=6.2,
+  xlabel={$t$}, ylabel={$y$}, xtick={4,7,9}, ytick={-1,0,1,2,5}, clip=false,
+  title={\small (a) $f = 2 + 3u_4 - 6u_7 + 2u_9$}]
+  \addplot[black!30, thin, domain=0:12.4] {0};
+  \addplot[figB, thick] coordinates {(0,2) (4,2)};
+  \addplot[figB, thick] coordinates {(4,5) (7,5)};
+  \addplot[figB, thick] coordinates {(7,-1) (9,-1)};
+  \addplot[figB, thick] coordinates {(9,1) (12,1)};
+  \foreach \x/\a/\b in {4/2/5, 7/5/-1, 9/-1/1} {
+    \edef\tmp{\noexpand\draw[figB, thick, fill=white] (axis cs:\x,\a) circle (1.8pt);
+      \noexpand\fill[figB] (axis cs:\x,\b) circle (1.8pt);}\tmp }
+  \draw[figR, -stealth, thick] (axis cs:4.35,2.15) -- (axis cs:4.35,4.85) node[midway, right, font=\scriptsize] {$+3$};
+  \draw[figR, -stealth, thick] (axis cs:7.35,4.85) -- (axis cs:7.35,-0.85) node[midway, right, font=\scriptsize] {$-6$};
+  \draw[figR, -stealth, thick] (axis cs:9.35,-0.85) -- (axis cs:9.35,0.85) node[midway, left, font=\scriptsize] {$+2$};
+\end{axis}
+\begin{axis}[nfig, at={(L.east)}, anchor=west, xshift=1.2cm, width=7.6cm, height=5.2cm, xmin=0, xmax=11.4, ymin=-0.35, ymax=2.1,
+  xlabel={$t$}, ylabel={$y$}, xtick={3}, xticklabels={$c$}, ytick={0,1}, yticklabels={$0$,$f(0)$}, clip=false,
+  title={\small (b) $u_c(t)\,f(t-c)$}]
+  \addplot[black!30, thin, domain=0:11.4] {0};
+  \addplot[black!45, dashed, samples=200, domain=0:8.2] {1+0.6*sin(deg(1.1*x))*exp(-0.08*x)};
+  \addplot[figB, thick] coordinates {(0,0) (3,0)};
+  \addplot[figB, thick, samples=200, domain=3:11.2] {1+0.6*sin(deg(1.1*(x-3)))*exp(-0.08*(x-3))};
+  \draw[figB, thick, fill=white] (axis cs:3,0) circle (1.8pt);
+  \fill[figB] (axis cs:3,1) circle (1.8pt);
+  \draw[black!35, dashed] (axis cs:3,0) -- (axis cs:3,1);
+  \draw[figR, -stealth, thick] (axis cs:1.2,1.85) -- (axis cs:4.2,1.85) node[midway, above, font=\scriptsize] {shift by $c$};
+  \node[black!55, font=\scriptsize, anchor=north] at (axis cs:1.6,0.62) {$y = f(t)$};
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:8.6,0.5) {$y = u_c(t) f(t-c)$};
+\end{axis}
+\end{tikzpicture}

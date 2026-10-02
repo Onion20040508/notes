@@ -1,0 +1,18 @@
+% Figure for Ordinary Differential Equations §20.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=11cm, height=6.6cm, xmin=0, xmax=2.05, ymin=0, ymax=10.5,
+  xlabel={$\omega/\omega_0$}, ylabel={$Rk/F_0$}, xtick={0,0.5,1,1.5,2}, ytick={0,2,4,6,8,10}, clip=true]
+  \addplot[black!40, dashed, thin, samples=300, domain=0:0.95] {1/abs(1-x^2)};
+  \addplot[black!40, dashed, thin, samples=300, domain=1.05:2.05] {1/abs(1-x^2)};
+  \addplot[figB, samples=600, domain=0:2.05] {1/sqrt((1-x^2)^2+0.015625*x^2)};
+  \addplot[figG, samples=300, domain=0:2.05] {1/sqrt((1-x^2)^2+0.1*x^2)};
+  \addplot[figO, samples=300, domain=0:2.05] {1/sqrt((1-x^2)^2+0.5*x^2)};
+  \addplot[figR, samples=300, domain=0:2.05] {1/sqrt((1-x^2)^2+2*x^2)};
+  \draw[black!30, dotted] (axis cs:1,0) -- (axis cs:1,10.5);
+  \node[figB, anchor=west, font=\scriptsize] at (axis cs:1.05,8.0) {$\Gamma = 1/64$};
+  \node[figG, anchor=west, font=\scriptsize] at (axis cs:1.12,3.2) {$\Gamma = 0.1$};
+  \node[figO, anchor=south, font=\scriptsize] at (axis cs:0.86,1.58) {$\Gamma = 0.5$};
+  \node[figR, anchor=north, font=\scriptsize] at (axis cs:0.45,0.85) {$\Gamma = 2$};
+  \node[black!55, anchor=east, font=\scriptsize] at (axis cs:0.93,9.6) {$\Gamma \to 0$};
+\end{axis}
+\end{tikzpicture}

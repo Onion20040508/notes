@@ -66,6 +66,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: a complete set of commuting observables labels a basis by their joint eigenvalues. Orthonormal version for normal operators: the spectral theorems [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]].
+> - Used in Quantum Mechanics: a complete set of commuting observables labels a basis of simultaneous eigenkets — [[§C1.3 Measurements, Compatible Observables and Uncertainty#^thm-c1-3-2|QM Theorem §C1.3.2]].
 
 %% ex:5.76-fig %%
 > [!example] Example: The proof of 5.76, pictured

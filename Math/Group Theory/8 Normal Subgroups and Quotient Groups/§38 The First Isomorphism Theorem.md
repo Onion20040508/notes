@@ -40,6 +40,7 @@ tags: [group-theory, math493]
 > - Vector-space version: [[First isomorphism theorem]] (LADR 3.107).
 > - Used in 590 to present a group as $F/N$: [[§21 Algebra Prerequisites꞉ Groups#^def-21-11|Group Presentation]].
 > - Set-level version: [[§22 Partitions and Equivalence Relations#^prop-22-5|250 Prop. §22.5]] (a surjection induces a bijection on the quotient set).
+> - Used in Quantum Mechanics: $SO(3) \cong SU(2)/\{\pm1\}$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
 
 > [!remark] Remark: Images Are Quotients
 > Whenever $G$ is mapped into another group — into some $S_n$, some $GL_n(k)$, by various actions — the image looks like a quotient of $G$, determined entirely by what is sent to the identity. So understanding all possible images of $G$ amounts to understanding its normal subgroups. Note the asymmetry: kernels are always normal, but images are merely subgroups and need not be normal; for example $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$, has image $\langle (1\,2) \rangle$, which is not normal ([[§36 Sources of Normal Subgroups#^prop-36-3|WS 6.5]], §36). This is one way in which groups are harder than vector spaces.

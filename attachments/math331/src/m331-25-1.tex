@@ -1,0 +1,31 @@
+% Figure for Ordinary Differential Equations §25.
+\begin{tikzpicture}[declare function={
+    hs(\t) = (\t>0)*(0.5 - 0.5*exp(-\t/4)*(cos(deg(sqrt(15)*\t/4)) + sin(deg(sqrt(15)*\t/4))/sqrt(15)));
+    pr(\t,\a) = (hs(\t-5+\a) - hs(\t-5-\a))/(2*\a);
+    ir(\t) = (\t>5)*2/sqrt(15)*exp(-(\t-5)/4)*sin(deg(sqrt(15)*(\t-5)/4));}]
+\begin{axis}[nfig, name=L, width=6.6cm, height=5.6cm, xmin=-1.6, xmax=1.6, ymin=0, ymax=2.35,
+  xlabel={$t$}, ylabel={$y$}, xtick={-1,-0.5,0,0.5,1}, xticklabels={$-1$,$-\tfrac12$,$0$,$\tfrac12$,$1$},
+  ytick={0.5,1,2}, yticklabels={$\tfrac12$,$1$,$2$}, clip=false,
+  title={\small (a) $d_\tau(t)$, area $1$ for every $\tau$}]
+  \fill[figG, opacity=0.10] (axis cs:-1,0) rectangle (axis cs:1,0.5);
+  \fill[figO, opacity=0.14] (axis cs:-0.5,0) rectangle (axis cs:0.5,1);
+  \fill[figR, opacity=0.16] (axis cs:-0.25,0) rectangle (axis cs:0.25,2);
+  \draw[figG, thick] (axis cs:-1.6,0) -- (axis cs:-1,0) -- (axis cs:-1,0.5) -- (axis cs:1,0.5) -- (axis cs:1,0) -- (axis cs:1.6,0);
+  \draw[figO, thick] (axis cs:-0.5,0) -- (axis cs:-0.5,1) -- (axis cs:0.5,1) -- (axis cs:0.5,0);
+  \draw[figR, thick] (axis cs:-0.25,0) -- (axis cs:-0.25,2) -- (axis cs:0.25,2) -- (axis cs:0.25,0);
+  \node[figG, font=\scriptsize, anchor=south] at (axis cs:-1.0,0.52) {$\tau=1$};
+  \node[figO, font=\scriptsize, anchor=south east] at (axis cs:-0.5,1.0) {$\tau=\frac12$};
+  \node[figR, font=\scriptsize, anchor=east] at (axis cs:-0.27,1.9) {$\tau=\frac14$};
+\end{axis}
+\begin{axis}[nfig, at={(L.east)}, anchor=west, xshift=1.3cm, width=8.6cm, height=5.6cm, xmin=0, xmax=20.5, ymin=-0.2, ymax=0.42,
+  xlabel={$t$}, ylabel={$y$}, xtick={0,5,10,15,20}, ytick={-0.1,0,0.1,0.2,0.3}, clip=false,
+  title={\small (b) $2y''+y'+2y = d_\tau(t-5)$ and $=\delta(t-5)$}]
+  \addplot[black!25, thin, domain=0:20.5] {0};
+  \addplot[figG, thick, samples=500, domain=0:20.5] {pr(x,1)};
+  \addplot[figO, thick, samples=500, domain=0:20.5] {pr(x,0.5)};
+  \addplot[figB, thick, samples=500, domain=0:20.5] {ir(x)};
+  \node[figG, font=\scriptsize, anchor=west] at (axis cs:13.5,0.33) {$\tau = 1$};
+  \node[figO, font=\scriptsize, anchor=west] at (axis cs:13.5,0.28) {$\tau = \tfrac12$};
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:13.5,0.23) {impulse $\delta(t-5)$};
+\end{axis}
+\end{tikzpicture}

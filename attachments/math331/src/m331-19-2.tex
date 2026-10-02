@@ -1,0 +1,13 @@
+% Figure for Ordinary Differential Equations §19.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=12cm, height=6.2cm, xmin=0, xmax=51, ymin=-2.3, ymax=2.45,
+  xlabel={$t$}, ylabel={$u$}, xtick={0,10,20,30,40,50}, ytick={-2,-1,0,1,2}, clip=true]
+  \addplot[black!25, thin, domain=0:51] {0};
+  \addplot[black!40, dashed, thin, samples=500, domain=0:51] {2*cos(deg(x))};
+  \addplot[figR, dashed, thin, samples=100, domain=0:51] {2.00392*exp(-x/16)};
+  \addplot[figR, dashed, thin, samples=100, domain=0:51] {-2.00392*exp(-x/16)};
+  \addplot[figB, samples=700, domain=0:51] {2.00392*exp(-x/16)*cos(deg(0.998045*x - 0.062541))};
+  \node[figR, anchor=south west, font=\scriptsize] at (axis cs:20,0.95) {$u = \pm\frac{32}{\sqrt{255}}\,e^{-t/16}$};
+  \node[black!55, anchor=south, font=\scriptsize] at (axis cs:44,2.0) {$\gamma = 0$: $u = 2\cos t$};
+\end{axis}
+\end{tikzpicture}

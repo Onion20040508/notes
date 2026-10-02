@@ -48,6 +48,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: the state space of a composite system is $\mathcal{H}_A\otimes\mathcal{H}_B$; product states are $v\otimes w$, entangled states are the rest. Compare the direct sum (dimensions add, [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|3.92]]) with the tensor product (dimensions multiply, [[§35 Tensor Products#^ladr-9-72|9.72]]).
+> - Used in Quantum Mechanics: the state space of a composite system is the tensor product of the parts' spaces, with the product basis of Theorem 9.83 — [[§C1.5 Composite Systems and Tensor Products#^pr-c1-5-1|QM Principle §C1.5.1]]; operators on the parts act on it through Theorem 9.79 — [[§C1.5 Composite Systems and Tensor Products#^def-c1-5-1|QM Def. §C1.5.1]]; a state is entangled when it is not a product tensor (Example 9.76) — [[§C1.5 Composite Systems and Tensor Products#^thm-c1-5-3|QM Theorem §C1.5.3]]; the product of two angular-momentum multiplets decomposed into irreducible ones, the Clebsch–Gordan series — [[§C7.1 Addition of Angular Momenta and Clebsch–Gordan Coefficients#^thm-c7-1-2|QM Theorem §C7.1.2]].
 
 > [!theorem] Theorem 9.72: Dimension of the tensor product of two vector spaces
 > $\dim(V\otimes W)=(\dim V)(\dim W)$.

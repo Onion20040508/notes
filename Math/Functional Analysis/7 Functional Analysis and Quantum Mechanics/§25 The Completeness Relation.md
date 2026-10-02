@@ -31,6 +31,7 @@ As for functionals (Lemma [[§24 Bras, Kets, and the Riesz Map#^lem-24-1|§24.1]
 
 > [!remark]- Connections
 > - Finite-dimensional $Y$ in LADR: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]].
+> - Used in Quantum Mechanics: a selective measurement (filtration) is an orthogonal projection — [[§C1.3 Measurements, Compatible Observables and Uncertainty#^def-c1-3-1|QM Def. §C1.3.1]].
 
 > [!theorem] Proposition §25.1: Finite Sums of Outer Products are Projections
 > Let $e_1, \ldots, e_N$ be orthonormal in a Hilbert space $H$, $Y = \operatorname{span}\{e_1, \ldots, e_N\}$, and
@@ -125,6 +126,7 @@ As for functionals (Lemma [[§24 Bras, Kets, and the Riesz Map#^lem-24-1|§24.1]
 
 > [!remark]- Connections
 > - Parseval's equality, the case $y = x$: [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]](3); in finite dimensions [[§20 Orthonormal Bases#^ladr-6-30|LADR 6.30]].
+> - Used in Quantum Mechanics: the evolution of a state expanded in energy eigenkets, by inserting a complete set of states — [[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-5|QM Theorem §C3.1.5]].
 
 > [!example] Example §25.2: A Particle on a Ring
 > The Fourier basis $e_n(\theta) = e^{in\theta}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, of $L^2[0,2\pi]$ (Theorem [[§20 Orthonormal Sets and Bases#^thm-20-11|§20.11]]) consists of the momentum eigenstates of a particle on a circle: $-i\,\frac{d}{d\theta} e_n = n\,e_n$, and $e_n$ is an eigenfunction of the free Hamiltonian $-\frac12 \frac{d^2}{d\theta^2}$ with energy $n^2/2$. Its completeness relation $\sum_{n \in \mathbb{Z}} |e_n\rangle\langle e_n| = \mathbf{1}$ is the $L^2$ convergence of Fourier series, and Corollary [[§25 The Completeness Relation#^cor-25-4|§25.4]] is Parseval's identity $\int_0^{2\pi} f\,\bar{g} = \sum_n c_n(f)\,\overline{c_n(g)}$. The spectrum is discrete because the configuration space is compact; compare [[§26 Position Eigenstates and Continuous Resolutions|§26]].

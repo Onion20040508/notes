@@ -139,6 +139,7 @@ In each example, associativity is inherited from a known associative operation (
 > - The same groups as topological groups and manifolds in 591: [[§5 Topological Groups and Classical Matrix Groups#^def-5-5|591 Def. §5.5]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-6|591 Def. §5.6]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-7|591 Def. §5.7]], and [[Classical Groups Are Manifolds]] (591 Thm. §5.8; workhorse example [[Classical groups O(n), U(n), SL(n,ℝ)]]).
 > - Used in Relativity: the Lorentz group is defined as $O(n)$ is, with the metric $\eta$ in place of the identity — [[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-1|REL Def. §B1.2.1]]; the rotations sit inside it, with $R^{\mathsf T}R = 1$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]].
 > - Computational version: [[§41 Orthogonal Sets#^def-41-5|235 Def. §41.5]] and [[§41 Orthogonal Sets#^prop-41-6|235 Prop. §41.6]] (orthogonal matrices have orthonormal columns and rows and det ±1, with worked examples).
+> - Used in Quantum Mechanics: the rotation group $SO(3)$ acting on kets — [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]]; it is covered twice by $SU(2)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
 
 > [!example] Example §3.1: Groups and Non-Groups
 > Deciding whether $(G, \cdot)$ is a group usually comes down to identity and inverses; associativity is inherited from arithmetic or composition.

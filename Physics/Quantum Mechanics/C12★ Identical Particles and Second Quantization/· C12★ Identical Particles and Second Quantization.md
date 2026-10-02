@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· C11 Density Matrices and Entanglement]] · ↑ [[Quantum Mechanics]] · [[· C13★ Relativistic Quantum Mechanics]] →
 
 **Builds on:** [[· B6 Spin|B6 Spin]] (2), [[· B7 Identical Particles|B7 Identical Particles]] (3), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (4), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (4), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (5)
-**Used by:** [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (3)
+**Used by:** [[· B7 Identical Particles|B7 Identical Particles]] (1), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (1), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (3)
 
 ## Sections
 - [[§C12.1★ Permutation Symmetry and the Symmetrization Postulate]] — Sakurai 7.1–7.4; Likharev 8.1–8.3

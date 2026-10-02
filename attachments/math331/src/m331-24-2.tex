@@ -1,0 +1,16 @@
+% Figure for Ordinary Differential Equations §24.
+\begin{tikzpicture}[declare function={
+    h(\t) = (\t>0)*(\t/4 - sin(deg(2*\t))/8);
+    g(\t) = (\t>5)*(\t<10)*(\t-5)/5 + (\t>=10);}]
+\begin{axis}[nfig, width=12cm, height=5.6cm, xmin=0, xmax=21, ymin=-0.02, ymax=0.36,
+  xlabel={$t$}, ylabel={$y$}, xtick={0,5,10,15,20}, ytick={0,0.1,0.2,0.25,0.3},
+  yticklabels={$0$,$0.1$,$0.2$,$\tfrac14$,$0.3$}, clip=false]
+  \addplot[figO, thick, dashed, samples=400, domain=0:21] {g(x)/4};
+  \addplot[figB, thick, samples=800, domain=0:21] {(h(x-5) - h(x-10))/5};
+  \addplot[black!40, thin, dotted, domain=10:21.6] {0.25 + sin(deg(5))/20};
+  \addplot[black!40, thin, dotted, domain=10:21.6] {0.25 - sin(deg(5))/20};
+  \node[figO, font=\scriptsize, anchor=north west] at (axis cs:6.2,0.06) {$g(t)/4$};
+  \node[figB, font=\scriptsize, anchor=south east] at (axis cs:7.6,0.16) {$y(t)$};
+  \draw[black!60, <->, >=stealth] (axis cs:21.5,0.2021) -- (axis cs:21.5,0.2979) node[midway, right, font=\scriptsize] {$2A$};
+\end{axis}
+\end{tikzpicture}

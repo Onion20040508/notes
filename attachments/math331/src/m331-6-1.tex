@@ -1,0 +1,18 @@
+% Figure for Ordinary Differential Equations §6.
+\begin{tikzpicture}[font=\scriptsize]
+  \begin{axis}[nfig, width=12cm, height=5.6cm, xmin=0, xmax=21, ymin=0, ymax=25.5,
+      xtick={0,2,...,20}, ytick={0,5,10,15,17.57,20,22.43}, yticklabels={$0$,$5$,$10$,$15$,,$20$,},
+      xlabel={$t$ (years)}, ylabel={$q$}, clip=false,
+      xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south, rotate=-90}]
+    \addplot[black!45, thin, dashed, domain=0:20] {20};
+    \addplot[black!30, thin, dotted, domain=0:20] {20+2.4254};
+    \addplot[black!30, thin, dotted, domain=0:20] {20-2.4254};
+    \addplot[figO, densely dashed, line width=0.8pt, domain=0:20, samples=300] {20-40/17*cos(deg(2*x))+10/17*sin(deg(2*x))};
+    \addplot[figB, domain=0:20, samples=400] {20-40/17*cos(deg(2*x))+10/17*sin(deg(2*x))-300/17*exp(-x/2)};
+    \node[figB, anchor=west] at (axis cs:2.3,8) {$q(t)$};
+    \node[figO, anchor=west] at (axis cs:20.2,23.4) {steady part};
+    \node[black!60, anchor=west] at (axis cs:20.2,20) {$q = 20$};
+    \node[black!60, anchor=west] at (axis cs:20.2,17.2) {$20 \pm 10/\sqrt{17}$};
+  \end{axis}
+\end{tikzpicture}

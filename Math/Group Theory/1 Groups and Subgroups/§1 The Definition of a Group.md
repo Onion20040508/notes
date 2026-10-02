@@ -26,6 +26,9 @@ tags: [group-theory, math493]
 
 ^def-1-2
 
+> [!remark]- Connections
+> - Used in Quantum Mechanics: the translations of space form an abelian group, represented by unitary operators on kets; that they commute gives $[p_i, p_j] = 0$ — [[§C2.2 Translation and Momentum as Its Generator#^thm-c2-2-6|QM Theorem §C2.2.6]].
+
 > [!remark] Remark: Notation
 > Depending on context, we may denote $*$ by $*$, $\times$, $\cdot$, or no symbol at all, and the identity has been written $1$ (Worksheet 1), $e$ (lectures), or $\operatorname{Id}$. These notes write $e$, and $e_G$, $e_H$, … whenever more than one group is in play. When the operation is written additively ($+$), the identity is written $0$ and the inverse of $g$ is written $-g$. Additive notation is used only for abelian groups (Worksheet 3: “we never use these notations for a non-abelian group”), so the symbol $+$ itself signals commutativity.
 

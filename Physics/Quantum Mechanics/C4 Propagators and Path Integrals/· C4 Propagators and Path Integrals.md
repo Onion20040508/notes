@@ -8,7 +8,7 @@ tags: [chapter, quantum-mechanics]
 # C4 Propagators and Path Integrals
 ← [[· C3 Quantum Dynamics]] · ↑ [[Quantum Mechanics]] · [[· C5 Rotations and Angular Momentum]] →
 
-**Builds on:** [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (4), [[· B6 Spin|B6 Spin]] (1), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (10), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (10)
+**Builds on:** [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (4), [[· B6 Spin|B6 Spin]] (1), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (10), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (10), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (2)
 **Used by:** [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (1), [[· C9 Approximation Methods|C9 Approximation Methods]] (3), [[· C10 Scattering Theory|C10 Scattering Theory]] (6), [[· C11 Density Matrices and Entanglement|C11 Density Matrices and Entanglement]] (4), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (7)
 
 ## Sections

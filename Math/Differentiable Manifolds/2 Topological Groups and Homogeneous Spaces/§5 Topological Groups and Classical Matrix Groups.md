@@ -253,6 +253,7 @@ $\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}
 
 > [!remark]- Connections
 > - The group in 493: [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]]; the rotation group of the cube, a finite subgroup of SO(3), is isomorphic to S₄, [[§30 Examples꞉ Linear Groups and the Cube#^thm-30-5|493 Thm. §30.5]].
+> - Used in Quantum Mechanics: the rotation group $SO(3)$ and its action on kets — [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]].
 
 > [!example] Example §5.3: Why $\mathrm{SO}(n)$ Is a Proper Subgroup of $\mathrm{O}(n)$
 > A student asked why one bothers to intersect with $\mathrm{SL}$: does $\mathrm{O}(n)$ not already sit inside $\mathrm{SL}(n)$? No: $\det = \pm 1$, and both signs occur. The reflection
@@ -301,6 +302,7 @@ $\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}
 > [!remark]- Connections
 > - $\mathbb{C} \cong \mathbb{R}^2$ in 590: [[§9 Continuous Functions#^ex-9-5|590 Ex. §9.5]]; unitary matrices in linear algebra: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
 > - $\mathrm{U}(n)$ is a manifold of dimension $n^2$: [[§10 Vector Spaces and Matrix Groups#^ex-10-2|Ex. §10.2]].
+> - Used in Quantum Mechanics: $U(2)$ and $SU(2)$ as the groups of spin-½ rotations, $SU(2) \cong S^3$, a double cover of $SO(3)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
 
 > [!example] Example §5.4: $\mathrm{U}(1)$ Is the Circle
 > A $1 \times 1$ complex matrix is a number $\xi \in \mathbb{C}$, all such matrices are symmetric, and the condition $\xi^{-1} = \bar\xi$ reads $\xi \bar\xi = |\xi|^2 = 1$. So

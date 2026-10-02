@@ -103,6 +103,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-38|6.38]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]], [[§17 Diagonalizable Operators#^ladr-5-55|5.55]]
 
+> [!remark]- Connections
+> - Used in Quantum Mechanics: a change of basis to the eigenbasis of an observable by diagonalizing its matrix, and unitarily equivalent observables with identical spectra — [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-3|QM Theorem §C1.4.3]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-4|QM Theorem §C1.4.4]].
+
 > [!example] Example 7.33: An orthonormal basis of eigenvectors for an operator (p. 247)
 > $T(w,z)=(2w-3z,\ 3w+2z)$ on $\C^2$ is normal ([[§22 Self-Adjoint and Normal Operators#^ladr-7-19|7.19]]). The orthonormal basis $\tfrac1{\sqrt2}(i,1)$, $\tfrac1{\sqrt2}(-i,1)$ consists of eigenvectors (e.g. $T(i,1)=(2i-3,\ 3i+2)=(2+3i)(i,1)$), and
 > $$

@@ -8,7 +8,7 @@ tags: [chapter, quantum-mechanics]
 # C2 Position, Momentum and Translation
 ← [[· C1 Fundamental Concepts]] · ↑ [[Quantum Mechanics]] · [[· C3 Quantum Dynamics]] →
 
-**Builds on:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (18), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (5), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (1)
+**Builds on:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (18), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (5), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (1), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (1), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (1)
 **Used by:** [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (1), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (13), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (10), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (5), [[· C6 Central Potentials|C6 Central Potentials]] (1), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (10), [[· C9 Approximation Methods|C9 Approximation Methods]] (2), [[· C10 Scattering Theory|C10 Scattering Theory]] (4), [[· C11 Density Matrices and Entanglement|C11 Density Matrices and Entanglement]] (2), [[· C12★ Identical Particles and Second Quantization|C12 Identical Particles and Second Quantization]] (2), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (1)
 
 ## Sections

@@ -1,0 +1,19 @@
+% Figure for Ordinary Differential Equations §4.
+\begin{tikzpicture}[font=\scriptsize]
+  \begin{axis}[nfig, width=9cm, height=7cm, xmin=-2.1, xmax=2.1, ymin=-1.6, ymax=4.2,
+      axis lines=middle, xtick={-2,-1,1,2}, ytick={-1,1,2,3,4}, xlabel={$t$}, ylabel={$y$},
+      xlabel style={anchor=west}, ylabel style={anchor=south}, restrict y to domain=-3:6, clip=true]
+    \foreach \c in {-1,-0.5,-0.2,0.2,0.5,2} {
+      \addplot[figB!70, line width=0.7pt, domain=0.05:2.1, samples=200] {x^2+\c/x^2};
+      \addplot[figB!70, line width=0.7pt, domain=-2.1:-0.05, samples=200] {x^2+\c/x^2};
+    }
+    \addplot[figG!45, line width=0.7pt, domain=-2.1:-0.05, samples=200] {x^2+1/x^2};
+    \addplot[figR, line width=1.1pt, domain=-2.1:2.1, samples=100] {x^2};
+    \addplot[figG, line width=1.3pt, domain=0.05:2.1, samples=200] {x^2+1/x^2};
+    \addplot[only marks, mark=*, mark size=1.6pt, black] coordinates {(1,2)};
+    \node[anchor=north west, fill=white, inner sep=1pt] at (axis cs:1.04,1.93) {$(1,2)$};
+    \node[figG, anchor=west] at (axis cs:0.5,4.0) {$c = 1$};
+    \draw[figR, thin, -stealth] (axis cs:1.7,0.75) -- (axis cs:1.27,1.58);
+    \node[figR, anchor=north] at (axis cs:1.72,0.75) {$c = 0$};
+  \end{axis}
+\end{tikzpicture}

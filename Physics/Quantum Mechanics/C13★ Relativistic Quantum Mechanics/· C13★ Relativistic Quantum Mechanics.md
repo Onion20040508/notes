@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· C12★ Identical Particles and Second Quantization]] · ↑ [[Quantum Mechanics]]
 
 **Builds on:** [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B6 Spin|B6 Spin]] (7), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (3), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (1), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (7), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (6), [[· C6 Central Potentials|C6 Central Potentials]] (2), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (2), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (1), [[· C12★ Identical Particles and Second Quantization|C12 Identical Particles and Second Quantization]] (3)
-**Used by:** —
+**Used by:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (2), [[· B6 Spin|B6 Spin]] (2), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (1), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (1), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (2)
 
 ## Sections
 - [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field]] — Sakurai 8.1–8.2; Likharev 9.5

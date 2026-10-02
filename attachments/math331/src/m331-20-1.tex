@@ -1,0 +1,21 @@
+% Figure for Ordinary Differential Equations §20.
+\begin{tikzpicture}
+\begin{axis}[nfig, name=beat, width=8.2cm, height=5.6cm, xmin=0, xmax=66, ymin=-3.2, ymax=4.3,
+  xlabel={$t$}, ylabel={$u$}, xtick={0,20,40,60}, ytick={-2,0,2}, clip=true,
+  title={\small (a) beat}]
+  \addplot[black!25, thin, domain=0:66] {0};
+  \addplot[figR, dashed, thin, samples=200, domain=0:66] {2.7778*sin(deg(0.1*x))};
+  \addplot[figR, dashed, thin, samples=200, domain=0:66] {-2.7778*sin(deg(0.1*x))};
+  \addplot[figB, samples=900, domain=0:66] {2.7778*sin(deg(0.1*x))*sin(deg(0.9*x))};
+  \draw[black!60, |-|, thin] (axis cs:0,3.3) -- node[above, font=\scriptsize] {$10\pi$} (axis cs:31.416,3.3);
+\end{axis}
+\begin{axis}[nfig, at={(beat.east)}, anchor=west, xshift=1.6cm, width=8.2cm, height=5.6cm,
+  xmin=0, xmax=44, ymin=-11.5, ymax=11.5, xlabel={$t$}, ylabel={$u$}, xtick={0,10,20,30,40},
+  ytick={-10,-5,0,5,10}, clip=true, title={\small (b) resonance}]
+  \addplot[black!25, thin, domain=0:44] {0};
+  \addplot[figR, dashed, thin, domain=0:44] {x/4};
+  \addplot[figR, dashed, thin, domain=0:44] {-x/4};
+  \addplot[figB, samples=800, domain=0:44] {x/4*sin(deg(x))};
+  \node[figR, anchor=south east, font=\scriptsize] at (axis cs:30,8.2) {$u = \pm t/4$};
+\end{axis}
+\end{tikzpicture}

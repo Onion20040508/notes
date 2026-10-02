@@ -266,6 +266,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§41 Orthogonal Sets#^prop-41-6|235 Prop. §41.6]] (an orthogonal matrix has $\det U=\pm1$).
+> - Used in Quantum Mechanics: the determinant condition that singles out $SU(2)$ among the unitary $2\times2$ matrices — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]].
 
 > [!theorem] Theorem 9.59: Every positive operator has nonnegative determinant
 > If $T$ is positive, then $\det T\ge0$.

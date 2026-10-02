@@ -155,4 +155,5 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The usual 'full' SVD $A=U\Sigma V^*$ with square unitary $U,V$ is obtained by extending the orthonormal columns to bases.
 > - Computational version: [[§51★ The Singular Value Decomposition#^prop-51-7|235 Prop. §51.7]] (the reduced SVD $A=U_rDV_r^T$, the same form) and [[§51★ The Singular Value Decomposition#^thm-51-4|235 Thm. §51.4]].
+> - Used in Quantum Mechanics: the Schmidt decomposition of a pure state of two systems is the singular value decomposition (Theorem 7.70) of its coefficient matrix — [[§C11.3 Composite Systems and Reduced Density Matrices#^thm-c11-3-2|QM Theorem §C11.3.2]].
 

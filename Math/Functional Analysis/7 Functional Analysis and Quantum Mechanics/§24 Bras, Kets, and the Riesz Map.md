@@ -103,3 +103,6 @@ tags: [functional-analysis, math556, companion]
 > Theorem [[§24 Bras, Kets, and the Riesz Map#^thm-24-2|§24.2]] is the precise content of the physicists' rule that “every bra is the adjoint of a ket, and every linear functional is a bra”: the second half is [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|Riesz's theorem]] and is false without completeness and boundedness. The rule $\langle ca| = \bar{c}\,\langle a|$ is conjugate-linearity of $R$. The outer product $|a\rangle\langle b|$ is linear in $x$, has range in $\operatorname{span}\{a\}$, and satisfies $\|\,|a\rangle\langle b|\,x\| \le \|a\|\,\|b\|\,\|x\|$ by [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|Cauchy–Schwarz]]; it is a bounded operator of rank at most one.
 
 ^rem-24-3
+
+> [!remark]- Connections
+> - Used in Quantum Mechanics: Dirac's axioms for kets, bras and operators, of which Theorem §24.2 and Definition §24.2 are the rigorous content — [[§C1.2 Kets, Bras, Operators and Matrix Representations#^pr-c1-2-1|QM Principle §C1.2.1]], [[§C1.2 Kets, Bras, Operators and Matrix Representations#^rem-c1-2-1|QM Remark: What the axioms add to level B, and what they are rigorously]].

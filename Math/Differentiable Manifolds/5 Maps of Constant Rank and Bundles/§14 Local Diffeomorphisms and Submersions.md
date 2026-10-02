@@ -75,6 +75,7 @@ Three special types of smooth maps $F : M \to N$ are singled out by the linear a
 
 > [!remark]- Connections
 > - Covering maps are defined in [[§24 Covering Spaces#^def-24-2|590 Def. §24.2]]; the same failure for a half-line, $\mathbb{R}_+ \to S^1$, is [[§24 Covering Spaces#^ex-24-2|590 Ex. §24.2]].
+> - Used in Quantum Mechanics: $S^3 \to \mathbb{RP}^3$ is $SU(2) \to SO(3)$; because $SU(2)$ is simply connected and $SO(3)$ is not, the sign of a spinor under a rotation by $2\pi$ cannot be removed — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^rem-c5-2-6|QM ★ Remark: Why the sign cannot be removed]].
 
 The converse direction of the main theorem rests on one theorem from analysis — “that's really what's paying the bills here.”
 

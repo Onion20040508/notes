@@ -1,0 +1,19 @@
+%% Figure for Ordinary Differential Equations §11.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.6cm, height=6.8cm, xmin=-1.6, xmax=1.6, ymin=0, ymax=3.2, clip=true,
+      axis lines=middle, xtick={-1.5,-1,-0.5,0.5,1,1.5}, ytick={0.5,1,1.5,2,2.5,3},
+      xlabel={$t$}, ylabel={$y$}, xlabel style={anchor=west}, ylabel style={anchor=south}]
+    \addplot[figO, domain=-1.6:1.6, samples=80] {x^2};
+    \addplot[figG, domain=-1.6:1.6, samples=80] {x^2+x^4/2};
+    \addplot[figR, domain=-1.6:1.6, samples=80] {x^2+x^4/2+x^6/6};
+    \addplot[figB!60, domain=-1.6:1.6, samples=80] {x^2+x^4/2+x^6/6+x^8/24};
+    \addplot[black, line width=1.2pt, dashed, domain=-1.6:1.6, samples=100] {exp(x^2)-1};
+  \end{axis}
+  \begin{scope}[font=\scriptsize, shift={(6.9cm,3.6cm)}]
+    \draw[figO, line width=0.9pt] (0,0) -- (0.5,0) node[right, black] {$\phi_1 = t^2$};
+    \draw[figG, line width=0.9pt] (0,-0.4) -- (0.5,-0.4) node[right, black] {$\phi_2$};
+    \draw[figR, line width=0.9pt] (0,-0.8) -- (0.5,-0.8) node[right, black] {$\phi_3$};
+    \draw[figB!60, line width=0.9pt] (0,-1.2) -- (0.5,-1.2) node[right, black] {$\phi_4$};
+    \draw[black, line width=1.2pt, dashed] (0,-1.6) -- (0.5,-1.6) node[right] {$\phi = e^{t^2} - 1$};
+  \end{scope}
+\end{tikzpicture}

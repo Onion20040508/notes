@@ -1,0 +1,17 @@
+% Figure for Ordinary Differential Equations §26.
+\begin{tikzpicture}[x=0.9cm, y=0.9cm, font=\scriptsize, >=stealth]
+  \fill[figB, opacity=0.12] (0,0) -- (6.2,6.2) -- (6.2,0) -- cycle;
+  \draw[-stealth, thin, black!70] (-0.3,0) -- (6.8,0) node[right] {$t$};
+  \draw[-stealth, thin, black!70] (0,-0.3) -- (0,6.6) node[above] {$\tau$};
+  \draw[figB, thick] (0,0) -- (6.2,6.2) node[above right] {$\tau = t$};
+  % horizontal slice: fixed tau, t from tau to infinity (equation (10))
+  \draw[figR, very thick, ->] (2,2) -- (6.4,2);
+  \fill[figR] (2,2) circle (1.5pt);
+  \node[figR, anchor=south] at (4.6,2.05) {fixed $\tau$: $\tau \le t < \infty$};
+  \draw[black!40, dashed] (0,2) node[left, black] {$\tau$} -- (2,2);
+  % vertical slice: fixed t, tau from 0 to t (equation (11))
+  \draw[figG, very thick] (4.6,0) -- (4.6,4.6);
+  \fill[figG] (4.6,0) circle (1.5pt); \fill[figG] (4.6,4.6) circle (1.5pt);
+  \node[figG, anchor=west, align=left] at (4.7,3.6) {fixed $t$:\\ $0 \le \tau \le t$};
+  \node[below] at (4.6,0) {$t$};
+\end{tikzpicture}

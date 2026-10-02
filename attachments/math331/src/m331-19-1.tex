@@ -1,0 +1,15 @@
+% Figure for Ordinary Differential Equations §19.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=12cm, height=6.2cm, xmin=0, xmax=10.4, ymin=-1.15, ymax=1.2,
+  xlabel={$t$}, ylabel={$y$}, xtick={0,2,4,6,8,10}, ytick={-1,0,1}, clip=true]
+  \addplot[black!25, thin, domain=0:10.4] {0};
+  \addplot[black!45, dashed, samples=300, domain=0:10.4] {cos(deg(sqrt(2.5)*x))};
+  \addplot[figB, samples=300, domain=0:10.4] {exp(-x/2)*(cos(deg(1.5*x)) + sin(deg(1.5*x))/3)};
+  \addplot[figR, samples=200, domain=0:10.4] {(1+sqrt(2.5)*x)*exp(-sqrt(2.5)*x)};
+  \addplot[figG, samples=200, domain=0:10.4] {1.08835*exp(-0.45049*x) - 0.08835*exp(-5.54951*x)};
+  \node[black!55, anchor=south, font=\scriptsize] at (axis cs:7.3,1.0) {$\gamma = 0$ (undamped)};
+  \node[figB, anchor=north west, font=\scriptsize] at (axis cs:2.3,-0.42) {$\gamma = 2$ (underdamped)};
+  \node[figR, anchor=south west, font=\scriptsize] at (axis cs:1.2,0.52) {$\gamma = 2\sqrt{10}$ (critical)};
+  \node[figG, anchor=south west, font=\scriptsize] at (axis cs:5.0,0.3) {$\gamma = 12$ (overdamped)};
+\end{axis}
+\end{tikzpicture}

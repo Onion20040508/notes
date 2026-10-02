@@ -63,6 +63,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Real case: orthogonal operators. Physics: time evolution $e^{-iHt/\hbar}$ and symmetry transformations are unitary.
+> - Used in Quantum Mechanics: rotations act on kets by unitary operators $e^{-i\mathbf J\cdot\hat n\phi/\hbar}$ — [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-3|QM Theorem §C5.1.3]].
 
 > [!example] Example 7.52: Rotation of R² (p. 260)
 > $\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}$ has orthonormal columns, so it is unitary ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]](e)). Over $\R$ it is rotation by $\theta$, which obviously preserves length. Its eigenvalues over $\C$ are $e^{\pm i\theta}$, of absolute value $1$ ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-54|7.54]]).
@@ -112,6 +113,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]], [[Complex spectral theorem|7.31]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-54|7.54]]
 
+> [!remark]- Connections
+> - Used in Quantum Mechanics: the time-evolution operator of a time-independent Hamiltonian, $\mathscr U = e^{-iHt/\hbar}$, is this description read backwards — [[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]].
+
 > [!definition] Definition 7.56: Unitary matrix
 > An $n$-by-$n$ matrix is *unitary* if its columns form an orthonormal list (equivalently basis) in $\F^n$. For orthonormal bases, $S$ is unitary iff its matrix is ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]](e)).
 
@@ -138,6 +142,7 @@ tags: [linear-algebra]
 > - The real orthogonal matrices form the orthogonal group O(n), [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
 > - The matrices described here form the groups O(n) and U(n) of 591: [[§5 Topological Groups and Classical Matrix Groups#^def-5-6|591 Def. §5.6]], [[§5 Topological Groups and Classical Matrix Groups#^prop-5-7|591 Prop. §5.7]], [[§5 Topological Groups and Classical Matrix Groups#^def-5-8|591 Def. §5.8]]; orthonormal columns make U(n) compact, [[§10 Vector Spaces and Matrix Groups#^cor-10-16|591 Cor. §10.16]].
 > - Computational version: [[§41 Orthogonal Sets#^prop-41-6|235 Prop. §41.6]] and [[§41 Orthogonal Sets#^thm-41-5|235 Thm. §41.5]] (length preservation, as in (c)).
+> - Used in Quantum Mechanics: the $2\times2$ unitary matrices of determinant 1 (with Theorem 9.58) form $SU(2)$, the unit sphere of $\mathbb C^2$, and are exactly the spin-½ rotation matrices — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]].
 
 > [!theorem] Theorem 7.58: QR factorization
 > If $A$ is a square matrix with linearly independent columns, there are unique $Q,R$ with $Q$ unitary, $R$ upper triangular with positive diagonal, and $A=QR$.
@@ -208,4 +213,5 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§49★ Quadratic Forms#^rem-49-3|235 Remark §49.3]] (as a fast test for positive definiteness).
+> - Used in Quantum Mechanics: the Ritz equations $\mathsf H\mathbf c = \varepsilon\mathsf S\mathbf c$ with a positive definite overlap matrix $\mathsf S$ (Definition 7.62), a generalized eigenvalue problem that the Cholesky factorization turns into an ordinary one — [[§C9.3 The Ritz Variational Method#^thm-c9-3-3|QM Theorem §C9.3.3]].
 

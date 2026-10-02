@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # C7 Addition of Angular Momentum and Tensor Operators
 ← [[· C6 Central Potentials]] · ↑ [[Quantum Mechanics]] · [[· C8★ Symmetries in Quantum Mechanics]] →
 
-**Builds on:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2), [[· B6 Spin|B6 Spin]] (9), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (1), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (23)
-**Used by:** [[· C6 Central Potentials|C6 Central Potentials]] (1), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (8), [[· C9 Approximation Methods|C9 Approximation Methods]] (14), [[· C10 Scattering Theory|C10 Scattering Theory]] (3), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (2)
+**Builds on:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2), [[· B6 Spin|B6 Spin]] (9), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (1), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (23), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (2)
+**Used by:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (1), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (1), [[· C6 Central Potentials|C6 Central Potentials]] (1), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (8), [[· C9 Approximation Methods|C9 Approximation Methods]] (14), [[· C10 Scattering Theory|C10 Scattering Theory]] (3), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (2)
 
 ## Sections
 - [[§C7.1 Addition of Angular Momenta and Clebsch–Gordan Coefficients]] — series IV §15; Sakurai 3.8; Fowler addition notes; PDG table

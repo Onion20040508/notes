@@ -46,6 +46,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§33 The Characteristic Equation#^thm-33-6|235 Thm. §33.6]] (similar matrices have the same characteristic polynomial, hence the same trace by [[§33 The Characteristic Equation#^thm-33-5|235 Thm. §33.5]]).
+> - Used in Quantum Mechanics: the trace of an operator on kets, independent of the basis and invariant under unitary change of basis — [[§C1.4 Change of Basis and Unitary Equivalence#^def-c1-4-1|QM Def. §C1.4.1]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-2|QM Theorem §C1.4.2]].
 
 > [!definition] Definition 8.51: Trace of an operator
 > The *trace* of $T\in\Lin(V)$ is $\operatorname{tr}T=\operatorname{tr}\mathcal{M}(T,(v_1,\dots,v_n))$ for any basis (well defined by [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|8.50]]).

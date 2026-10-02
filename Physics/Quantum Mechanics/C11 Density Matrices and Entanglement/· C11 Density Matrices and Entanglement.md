@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· C10 Scattering Theory]] · ↑ [[Quantum Mechanics]] · [[· C12★ Identical Particles and Second Quantization]] →
 
 **Builds on:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (2), [[· B6 Spin|B6 Spin]] (5), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (15), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (9), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (4), [[· C9 Approximation Methods|C9 Approximation Methods]] (1)
-**Used by:** —
+**Used by:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (2)
 
 ## Sections
 - [[§C11.1 Pure and Mixed States and the Density Operator]] — Sakurai 3.4; Likharev 7.1; Griffiths 12.3

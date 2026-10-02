@@ -2304,6 +2304,7 @@ We now demonstrate the change of variables formula with two complete computation
 > [!remark]- Connections
 > - Pays off the debt taken “on credit” in MATH 451: [[§36 Improper Integrals#^ex-36-4|The normal distribution]] (451 Ex. §36.4).
 > - Worked examples: [[§56 Probability#^prop-56-3|Calc Prop. §56.3]] uses this integral to show the normal density integrates to 1.
+> - Used in Quantum Mechanics: the Gaussian integral and its continuation to complex width (the Fresnel integrals) behind the free propagator — [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]].
 
 > [!example] Example §15.8: Area of an Ellipse
 > **Goal:** Compute the area of the ellipse $D = \left\{ (x,y) : \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} \leq 1 \right\}$.

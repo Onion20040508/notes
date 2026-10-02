@@ -1,0 +1,22 @@
+% Figure for Ordinary Differential Equations §8.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.8cm, height=6.6cm, xmin=0, xmax=0.46, ymin=-0.15, ymax=2.3, clip=false,
+      axis lines=left, xtick={0.1,0.2,0.25,0.4}, xticklabels={$0.1$,$0.2$,$\frac14$,$0.4$}, ytick={0,1,1.5,2},
+      xlabel={$\alpha$}, ylabel={$P$}, xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south, rotate=-90}]
+    \fill[figR!8] (axis cs:0.25,-0.15) rectangle (axis cs:0.46,2.3);
+    \addplot[figG, line width=1.3pt] coordinates {(0.000,2.0000) (0.006,1.9937) (0.013,1.9873) (0.019,1.9809) (0.025,1.9743) (0.031,1.9677) (0.037,1.9610) (0.044,1.9541) (0.050,1.9472) (0.056,1.9402) (0.062,1.9330) (0.069,1.9257) (0.075,1.9183) (0.081,1.9108) (0.087,1.9031) (0.094,1.8953) (0.100,1.8873) (0.106,1.8791) (0.113,1.8708) (0.119,1.8623) (0.125,1.8536) (0.131,1.8446) (0.138,1.8354) (0.144,1.8260) (0.150,1.8162) (0.156,1.8062) (0.163,1.7958) (0.169,1.7850) (0.175,1.7739) (0.181,1.7622) (0.188,1.7500) (0.194,1.7372) (0.200,1.7236) (0.206,1.7092) (0.212,1.6936) (0.219,1.6768) (0.225,1.6581) (0.231,1.6369) (0.237,1.6118) (0.244,1.5791) (0.250,1.5000)};
+    \addplot[figR, line width=1.3pt, dashed] coordinates {(0.000,1.0000) (0.006,1.0063) (0.013,1.0127) (0.019,1.0191) (0.025,1.0257) (0.031,1.0323) (0.037,1.0390) (0.044,1.0459) (0.050,1.0528) (0.056,1.0598) (0.062,1.0670) (0.069,1.0743) (0.075,1.0817) (0.081,1.0892) (0.087,1.0969) (0.094,1.1047) (0.100,1.1127) (0.106,1.1209) (0.113,1.1292) (0.119,1.1377) (0.125,1.1464) (0.131,1.1554) (0.138,1.1646) (0.144,1.1740) (0.150,1.1838) (0.156,1.1938) (0.163,1.2042) (0.169,1.2150) (0.175,1.2261) (0.181,1.2378) (0.188,1.2500) (0.194,1.2628) (0.200,1.2764) (0.206,1.2908) (0.212,1.3064) (0.219,1.3232) (0.225,1.3419) (0.231,1.3631) (0.237,1.3882) (0.244,1.4209) (0.250,1.5000)};
+    \addplot[figG, line width=1.3pt] coordinates {(0,0) (0.46,0)};
+    \fill[black] (axis cs:0.25,1.5) circle (1.8pt);
+    \draw[figB, thin, dashed] (axis cs:0.2,-0.15) -- (axis cs:0.2,2.3);
+    \draw[figB, thin, dashed] (axis cs:0.4,-0.15) -- (axis cs:0.4,2.3);
+    \node[figB, font=\scriptsize, anchor=south, fill=white, inner sep=1pt] at (axis cs:0.2,2.3) {IALS};
+    \node[figB, font=\scriptsize, anchor=south, fill=white, inner sep=1pt] at (axis cs:0.4,2.3) {UHA};
+    \node[figG, font=\scriptsize, anchor=south west, fill=white, inner sep=1pt] at (axis cs:0.01,2.0) {$P_+ = \frac32 + \sqrt{\frac14 - \alpha}$ (stable)};
+    \node[figR, font=\scriptsize, anchor=north west, fill=white, inner sep=1pt] at (axis cs:0.01,0.97) {$P_- = \frac32 - \sqrt{\frac14 - \alpha}$ (unstable)};
+    \node[figG, font=\scriptsize, anchor=south west] at (axis cs:0.01,0.02) {$P = 0$ (stable)};
+    \node[font=\scriptsize, anchor=west] at (axis cs:0.255,1.6) {semistable};
+    \node[figR, font=\scriptsize, align=center] at (axis cs:0.345,0.55) {only $P = 0$:\\ extinction};
+  \end{axis}
+\end{tikzpicture}

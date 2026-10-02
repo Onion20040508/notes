@@ -246,24 +246,41 @@ graph TD
   B5 -.->|3| A5
   B6 -.->|3| A5
   B8 -.->|4| A5
+  C13 -.->|2| A5
+  C7 -.->|1| A5
+  C8 -.->|2| A5
+  C9 -.->|2| A5
   B4 -.->|1| A6
   B7 -.->|3| A6
+  C9 -.->|2| A6
   A8 -.->|2| A7
   B2 -.->|3| B1
   B4 -.->|1| B2
   B5 -.->|2| B2
+  C11 -.->|2| B2
   B6 -.->|1| B5
   B8 -.->|2| B5
   B9 -.->|2| B5
+  C7 -.->|1| B5
+  C9 -.->|1| B5
+  C13 -.->|2| B6
+  C12 -.->|1| B7
+  C13 -.->|1| B8
+  C12 -.->|1| C1
   C2 -.->|1| C1
   C5 -.->|2| C1
+  C8 -.->|2| C1
+  C13 -.->|1| C2
   C3 -.->|5| C2
   C4 -.->|1| C2
+  C8 -.->|1| C2
   C5 -.->|1| C3
   C9 -.->|2| C3
+  C13 -.->|2| C4
   C6 -.->|1| C5
   C7 -.->|1| C6
+  C8 -.->|2| C7
 ```
 
 ## Planned
-No chapters planned. Not covered at level C: the general (Racah) formula for Clebsch–Gordan coefficients, Young tableaux and a proof of spin–statistics; quantized fields continue in [[Quantum Field Theory I]].
+No chapters planned. Not covered at level C: the general (Racah) formula for Clebsch–Gordan coefficients, Young tableaux, generalized measurements (POVMs) and a proof of spin–statistics; quantized fields continue in [[Quantum Field Theory I]].

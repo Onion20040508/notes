@@ -1,0 +1,17 @@
+% Figure for Ordinary Differential Equations §10.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.4cm, height=6.8cm, xmin=0, xmax=1.08, ymin=0.9, ymax=2.5, clip=false,
+      xtick={0.2,0.4,0.6,0.8,1}, ytick={1,1.4,1.8,2.2},
+      xlabel={$t$}, ylabel={$y$}, xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south, rotate=-90}]
+    \addplot[figB, domain=0:1, samples=80] {14-4*x-13*exp(-x/2)};
+    \addplot[figR, dashed, mark=*, mark options={solid}, mark size=1.4pt] coordinates {(0.0,1.00000) (0.2,1.50000) (0.4,1.87000) (0.6,2.12300) (0.8,2.27070) (1.0,2.32363)};
+    \draw[decorate, decoration={brace, amplitude=3pt}, thin] (axis cs:1.01,2.32363) -- (axis cs:1.01,2.11510);
+    \node[font=\scriptsize, anchor=west] at (axis cs:1.03,2.22) {error $0.209$};
+    \node[figR, font=\scriptsize, anchor=south east] at (axis cs:0.55,2.13) {Euler, $h = 0.2$};
+    \node[figB, font=\scriptsize, anchor=north west] at (axis cs:0.5,1.85) {$\phi(t) = 14 - 4t - 13e^{-t/2}$};
+    \draw[black!50, thin, dashed] (axis cs:0,1) -- (axis cs:0.2,1) -- (axis cs:0.2,1.5);
+    \node[font=\scriptsize, anchor=north] at (axis cs:0.1,1) {$h$};
+    \node[font=\scriptsize, anchor=west] at (axis cs:0.2,1.2) {$h f_0 = 0.5$};
+  \end{axis}
+\end{tikzpicture}
