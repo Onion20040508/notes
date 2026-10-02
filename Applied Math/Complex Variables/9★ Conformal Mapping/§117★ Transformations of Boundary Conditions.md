@@ -58,7 +58,7 @@ B&C's proof of the main theorem needs an identity it leaves to Exercise 10; here
 > H_x + iH_y = h_u(u_x - iv_x) + h_v(v_x + iu_x) = (h_u + ih_v)(u_x - iv_x) = \nabla h\;\overline{f'(z)} ,
 > $$
 >
-> since $f'(z) = u_x + iv_x$ ([[§21 Cauchy–Riemann Equations|§21]]). Taking moduli gives the identity for $|\operatorname{grad} H|$.
+> since $f'(z) = u_x + iv_x$ ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]). Taking moduli gives the identity for $|\operatorname{grad} H|$.
 >
 > **Tangents.** Let $z = z(s)$ parametrize $C$ by arc length, so $\mathbf t = z'(s)$, $|\mathbf t| = 1$. By the chain rule (§112, (1)) the image $w(s) = f[z(s)]$ has $w'(s) = f'(z)\,\mathbf t \ne 0$; so $d\sigma/ds = |w'(s)| = |f'(z)|$ and
 >
@@ -86,7 +86,7 @@ B&C's proof of the main theorem needs an identity it leaves to Exercise 10; here
 
 ^pf-117-1
 
-*Uses:* [[§21 Cauchy–Riemann Equations|§21]], [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|§112.1]], [[§94 The Chain Rule#^thm-94-2|Calc Thm. §94.2]] (chain rule), [[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|Calc Cor. §95.2]] (directional derivative as a dot product)
+*Uses:* [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|§112.1]], [[§94 The Chain Rule#^thm-94-2|Calc Thm. §94.2]] (chain rule), [[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|Calc Cor. §95.2]] (directional derivative as a dot product)
 
 ## The Theorem
 
@@ -183,7 +183,7 @@ A condition of another type can change substantially (Example §117.3). By Lemma
 *Example §117.1. Left: the wedge $0 < \arg z < \pi/4$ with the level curves $H = x^2 - y^2 + 2 = 2.25, 2.5, \ldots$ (blue), hyperbolas that meet the $x$ axis (where $H_y = 0$) at right angles; the edge $y = x$ (red) is the level curve $H = 2$. Right: under $w = iz^2$ the wedge becomes the second quadrant, the level curves become the horizontal lines $h = v + 2 = $ const, meeting the $v$ axis (where $h_u = 0$) at right angles, and the edge becomes the negative $u$ axis, where $h = 2$.*
 
 > [!example] Example §117.2: The Value 2 on a Semicircle and on a Segment
-> Under $w = e^z$ the segment $0 \le y \le \pi$ of the $y$ axis goes onto the semicircle $u^2 + v^2 = 1$, $v \ge 0$ ([[§103★ Mappings by the Exponential Function|§103]]): $e^{iy}$, $0 \le y \le \pi$. The function
+> Under $w = e^z$ the segment $0 \le y \le \pi$ of the $y$ axis goes onto the semicircle $u^2 + v^2 = 1$, $v \ge 0$ ([[§103★ Mappings by the Exponential Function#^ex-103-1|Example §103.1]]): $e^{iy}$, $0 \le y \le \pi$. The function
 >
 > $$
 > h(u, v) = \operatorname{Re}\Big(2 - w + \frac1w\Big) = 2 - u + \frac{u}{u^2 + v^2}

@@ -58,7 +58,7 @@ The proof uses the Jacobian of the pair of real functions $u$, $v$.
 > [!proof]+ Proof
 > B&C reduces the existence to the inverse function theorem of advanced calculus and leaves the analyticity of $g$ and formula (1) to Exercises 7 and 8; here is the whole argument.
 >
-> **Smoothness of $u$, $v$.** Since $w = f(z)$ is conformal at $z_0$, $f$ is analytic in some neighborhood of $z_0$ ([[§112★ Preservation of Angles and Scale Factors#^prop-112-2|Proposition §112.2]]). Write $z = x + iy$, $z_0 = x_0 + iy_0$, $f(z) = u(x, y) + iv(x, y)$. Then $u$ and $v$, with their partial derivatives of all orders, are continuous in a neighborhood of $(x_0, y_0)$ ([[§57 Some Consequences of the Extension|§57]], Corollary).
+> **Smoothness of $u$, $v$.** Since $w = f(z)$ is conformal at $z_0$, $f$ is analytic in some neighborhood of $z_0$ ([[§112★ Preservation of Angles and Scale Factors#^prop-112-2|Proposition §112.2]]). Write $z = x + iy$, $z_0 = x_0 + iy_0$, $f(z) = u(x, y) + iv(x, y)$. Then $u$ and $v$, with their partial derivatives of all orders, are continuous in a neighborhood of $(x_0, y_0)$ ([[§57 Some Consequences of the Extension#^cor-57-2|Corollary §57.2]]).
 >
 > **The Jacobian.** The pair of equations
 >
@@ -66,7 +66,7 @@ The proof uses the Jacobian of the pair of real functions $u$, $v$.
 > u = u(x, y), \qquad v = v(x, y) \qquad (2)
 > $$
 >
-> is a transformation from that neighborhood into the $uv$ plane. By the Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$ ([[§21 Cauchy–Riemann Equations|§21]]) and $f'(z) = u_x + iv_x$,
+> is a transformation from that neighborhood into the $uv$ plane. By the Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$ ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]) and $f'(z) = u_x + iv_x$,
 >
 > $$
 > J = u_xv_y - v_xu_y = (u_x)^2 + (v_x)^2 = |f'(z)|^2 ,
@@ -100,15 +100,15 @@ The proof uses the Jacobian of the pair of real functions $u$, $v$.
 > x_u = \frac{v_y}{J} = \frac{u_x}{J} = y_v, \qquad x_v = -\frac{u_y}{J} = \frac{v_x}{J} = -y_u ,
 > $$
 >
-> so $x$ and $y$ satisfy the Cauchy–Riemann equations $x_u = y_v$, $x_v = -y_u$ in $N$, and their first partials are continuous there. By the sufficient conditions for differentiability ([[§23 Sufficient Conditions for Differentiability|§23]], Theorem), $g$ is differentiable at every point of the open set $N$, that is, analytic in $N$.
+> so $x$ and $y$ satisfy the Cauchy–Riemann equations $x_u = y_v$, $x_v = -y_u$ in $N$, and their first partials are continuous there. By the sufficient conditions for differentiability ([[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]]), $g$ is differentiable at every point of the open set $N$, that is, analytic in $N$.
 >
-> **Formula (1) (Exercise 8).** Differentiate $f[g(w)] = w$ by the chain rule ([[§20 Rules for Differentiation|§20]]): $f'[g(w)]\,g'(w) = 1$. Hence $f'(z) \ne 0$ at $z = g(w)$ and $g'(w) = 1/f'(z)$. (Directly from (5): $g'(w) = x_u + iy_u = (u_x - iv_x)/J = \overline{f'(z)}/|f'(z)|^2 = 1/f'(z)$.) In particular $g'(w_0) = 1/f'(z_0) \ne 0$, so $g$ is conformal at $w_0$.
+> **Formula (1) (Exercise 8).** Differentiate $f[g(w)] = w$ by the chain rule ([[§20 Rules for Differentiation#^thm-20-4|Theorem §20.4]]): $f'[g(w)]\,g'(w) = 1$. Hence $f'(z) \ne 0$ at $z = g(w)$ and $g'(w) = 1/f'(z)$. (Directly from (5): $g'(w) = x_u + iy_u = (u_x - iv_x)/J = \overline{f'(z)}/|f'(z)|^2 = 1/f'(z)$.) In particular $g'(w_0) = 1/f'(z_0) \ne 0$, so $g$ is conformal at $w_0$.
 >
-> **Uniqueness.** The inverse function theorem also provides a neighborhood $U$ of $z_0$ on which $f$ is one-to-one (B&C's "unique continuous transformation"). If $g_1$ and $g_2$ are continuous on the connected set $N$ with $g_1(w_0) = g_2(w_0) = z_0$ and $f \circ g_1 = f \circ g_2 = \mathrm{id}$, the set where $g_1 = g_2$ is closed in $N$ and nonempty. It is also open: if $g_1(w) = g_2(w) \in U$, then by continuity $g_1$ and $g_2$ take values in $U$ near $w$, and $f(g_1) = f(g_2)$ forces $g_1 = g_2$ there. So $g_1 = g_2$ on $N$.
+> **Uniqueness.** The inverse function theorem also provides a neighborhood $U$ of $z_0$ on which $f$ is one-to-one (B&C's "unique continuous transformation"). Let $g_1$ and $g_2$ be continuous near $w_0$ with $g_1(w_0) = g_2(w_0) = z_0$ and $f[g_1(w)] = f[g_2(w)] = w$. By continuity there is a disk $N'$ about $w_0$ with $g_1(N') \subset U$ and $g_2(N') \subset U$; for $w$ in $N'$ the points $g_1(w)$, $g_2(w)$ of $U$ have the same image $w$, so $g_1(w) = g_2(w)$. Thus two local inverses agree near $w_0$; if both are analytic on a common domain containing $w_0$, they agree on all of it ([[§28★ Uniquely Determined Analytic Functions#^thm-28-2|Theorem §28.2]]).
 
 ^pf-114-1
 
-*Uses:* [[§114★ Local Inverses#^def-114-1|Def. §114.1]], [[§114★ Local Inverses#^def-114-2|Def. §114.2]], [[§112★ Preservation of Angles and Scale Factors#^prop-112-2|§112.2]], [[§57 Some Consequences of the Extension|§57]] (Corollary), [[§21 Cauchy–Riemann Equations|§21]] (Theorem), [[§23 Sufficient Conditions for Differentiability|§23]] (Theorem), [[§20 Rules for Differentiation|§20]] (chain rule), [[§13 The Inverse Function Theorem#^thm-13-2|452 Thm. §13.2]] (inverse function theorem)
+*Uses:* [[§114★ Local Inverses#^def-114-1|Def. §114.1]], [[§114★ Local Inverses#^def-114-2|Def. §114.2]], [[§112★ Preservation of Angles and Scale Factors#^prop-112-2|§112.2]], [[§57 Some Consequences of the Extension#^cor-57-2|§57.2]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]] (chain rule), [[§28★ Uniquely Determined Analytic Functions#^thm-28-2|§28.2]], [[§13 The Inverse Function Theorem#^thm-13-2|452 Thm. §13.2]] (inverse function theorem)
 
 > [!remark]- Connections
 > - The real inverse function theorem in the plane, with the formula $J^{-1}$ for the Jacobian matrix of the inverse used in (5): [[§13 The Inverse Function Theorem#^thm-13-2|452 Thm. §13.2]], and the Jacobian, [[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]]. The complex theorem adds only that for an analytic $f$ the Jacobian is $|f'|^2$ and that the inverse again satisfies the Cauchy–Riemann equations.
@@ -125,7 +125,7 @@ The proof uses the Jacobian of the pair of real functions $u$, $v$.
 > \log w = \ln\rho + i\phi \qquad (\rho > 0,\ \pi < \phi < 3\pi)
 > $$
 >
-> of the logarithm ([[§33 Branches and Derivatives of Logarithms|§33]]), restricted to any neighborhood of $w_0$ that does not contain the origin. Indeed $g(1) = \ln 1 + i2\pi = 2\pi i$, and for $w$ in the neighborhood $f[g(w)] = \exp(\log w) = w$. Also
+> of the logarithm ([[§33 Branches and Derivatives of Logarithms#^def-33-1|Definition §33.1]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]]), restricted to any neighborhood of $w_0$ that does not contain the origin. Indeed $g(1) = \ln 1 + i2\pi = 2\pi i$, and for $w$ in the neighborhood $f[g(w)] = \exp(\log w) = w$. Also
 >
 > $$
 > g'(w) = \frac{d}{dw}\log w = \frac1w = \frac{1}{\exp z} ,
@@ -140,7 +140,7 @@ The proof uses the Jacobian of the pair of real functions $u$, $v$.
 > [!example] Example §114.2: Local Inverses of z²
 > Find the local inverse of $w = z^2$ at $z_0 = 2$, $z_0 = -2$ and $z_0 = -i$.
 >
-> In each case $f'(z_0) = 2z_0 \ne 0$, so Theorem §114.1 applies, and the local inverse is a branch of $w^{1/2} = \sqrt\rho\,e^{i\phi/2}$ ($w = \rho e^{i\phi}$, $\rho > 0$) whose value at $w_0 = z_0^2$ is $z_0$ ([[§108★ Mappings by Branches of z^(1∕2)|§108]]).
+> In each case $f'(z_0) = 2z_0 \ne 0$, so Theorem §114.1 applies, and the local inverse is a branch of $w^{1/2} = \sqrt\rho\,e^{i\phi/2}$ ($w = \rho e^{i\phi}$, $\rho > 0$) whose value at $w_0 = z_0^2$ is $z_0$ ([[§108★ Mappings by Branches of z^(1∕2)#^def-108-2|Definition §108.2]]).
 >
 > **(a) $z_0 = 2$, $w_0 = 4$.** The principal branch, $-\pi < \phi < \pi$: at $w_0 = 4$, $\phi = 0$, and $\sqrt4\,e^{0} = 2$.
 >

@@ -163,7 +163,7 @@ The kernel and the solution can be expanded in the elementary harmonic functions
 ^prop-135-3
 
 > [!proof]+ Proof
-> Let $-1 < a < 1$. (This is the sum in Exercise 7(b) of B&C's Sec. 68, [[§68 Examples (Proof of Laurent's Theorem)|§68]].) The geometric series $\sum_{n\ge1}(ae^{i\psi})^n$ converges since $|ae^{i\psi}| < 1$, and its real part is
+> Let $-1 < a < 1$. (This is the sum in Exercise 7(b) of B&C's Sec. 68; for $0 \le a < 1$ it is [[§61 Convergence of Series#^ex-61-2|Example §61.2]].) The geometric series $\sum_{n\ge1}(ae^{i\psi})^n$ converges since $|ae^{i\psi}| < 1$, and its real part is
 >
 > $$
 > \sum_{n=1}^{\infty}a^n\cos n\psi = \operatorname{Re}\frac{ae^{i\psi}}{1 - ae^{i\psi}} = \operatorname{Re}\frac{ae^{i\psi}(1 - ae^{-i\psi})}{|1 - ae^{i\psi}|^2} = \frac{a\cos\psi - a^2}{1 - 2a\cos\psi + a^2} .
@@ -179,7 +179,7 @@ The kernel and the solution can be expanded in the elementary harmonic functions
 
 ^pf-135-3
 
-*Uses:* [[§134★ Poisson Integral Formula#^def-134-2|Def. §134.2]], [[§61 Convergence of Series|§61]] (geometric series), [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]] (M-test)
+*Uses:* [[§134★ Poisson Integral Formula#^def-134-2|Def. §134.2]], [[§61 Convergence of Series#^ex-61-1|Ex. §61.1]] (geometric series), [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]] (M-test)
 
 > [!theorem] Proposition §135.4: Series for the Solution
 > The Poisson integral transform (1) of a piecewise continuous $F$ is

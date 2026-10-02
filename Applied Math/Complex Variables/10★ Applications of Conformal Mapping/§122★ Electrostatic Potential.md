@@ -63,7 +63,7 @@ For two stationary charged particles, the force of attraction or repulsion is pr
 
 ^pf-122-2
 
-*Uses:* [[§122★ Electrostatic Potential#^def-122-1|Def. §122.1]], [[§122★ Electrostatic Potential#^def-122-2|Def. §122.2]], [[§122★ Electrostatic Potential#^prop-122-1|§122.1]], [[§21 Cauchy–Riemann Equations|§21]], [[§112★ Preservation of Angles and Scale Factors#^ex-112-2|Ex. §112.2]], [[§118★ Steady Temperatures#^prop-118-2|§118.2]]
+*Uses:* [[§122★ Electrostatic Potential#^def-122-1|Def. §122.1]], [[§122★ Electrostatic Potential#^def-122-2|Def. §122.2]], [[§122★ Electrostatic Potential#^prop-122-1|§122.1]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§112★ Preservation of Angles and Scale Factors#^ex-112-2|Ex. §112.2]], [[§118★ Steady Temperatures#^prop-118-2|§118.2]]
 
 > [!remark] Remark: One Mathematical Problem, Several Physical Ones
 > Boundary value problems for the potential $V$ are the same mathematical problems as those for steady temperatures $T$, and, as there, complex variables handle only two-dimensional problems. For instance, the problem of [[§120★ A Related Problem (Steady Temperatures in a Half Plane)#^ex-120-1|Example §120.1]] is also that of the electrostatic potential in the empty space $-\pi/2 < x < \pi/2$, $y > 0$ bounded by the conducting planes $x = \pm\pi/2$ and $y = 0$, insulated from each other at their intersections, when the first two are kept at potential $0$ and the third at potential $1$. The potential in the steady flow of electricity in a plane conducting sheet is also harmonic at points free of sources and sinks, and so is the gravitational potential in empty space.
@@ -108,7 +108,7 @@ For two stationary charged particles, the force of attraction or repulsion is pr
 > [!example] Example §122.3: Two Parallel Planes, Each Split in Half
 > Find the potential $V$ in the space between the planes $y = 0$ and $y = \pi$ when $V = 0$ on the parts of both planes where $x > 0$ and $V = 1$ on the parts where $x < 0$ (B&C's Fig. 170).
 >
-> **Map.** $w = e^z$ maps the strip $0 < y < \pi$ onto the upper half plane ([[§103★ Mappings by the Exponential Function|§103]]): on $y = 0$, $x > 0$ goes to $u > 1$ and $x < 0$ to $0 < u < 1$; on $y = \pi$, $x > 0$ goes to $u < -1$ and $x < 0$ to $-1 < u < 0$. So $V = 1$ on $-1 < u < 1$ and $V = 0$ on $|u| > 1$: the problem of Example §119.1 in the $w$ plane.
+> **Map.** $w = e^z$ maps the strip $0 < y < \pi$ onto the upper half plane ([[§103★ Mappings by the Exponential Function#^ex-103-3|Example §103.3]]): on $y = 0$, $x > 0$ goes to $u > 1$ and $x < 0$ to $0 < u < 1$; on $y = \pi$, $x > 0$ goes to $u < -1$ and $x < 0$ to $-1 < u < 0$. So $V = 1$ on $-1 < u < 1$ and $V = 0$ on $|u| > 1$: the problem of Example §119.1 in the $w$ plane.
 >
 > **Compose.** By (6) of §119, $V = \frac1\pi\arctan\big(\frac{2v}{u^2 + v^2 - 1}\big)$ with $u^2 + v^2 = e^{2x}$ and $v = e^x\sin y$:
 >

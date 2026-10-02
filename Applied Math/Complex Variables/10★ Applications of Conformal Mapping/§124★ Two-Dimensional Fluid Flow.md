@@ -12,7 +12,7 @@ tags: [complex-variables, math342, extension]
 *Brown–Churchill, Section 124 (with Exercise 8 of Section 126).*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
-The third interpretation of harmonic functions: steady two-dimensional flow of an ideal fluid. The velocity is written as a complex number $V = p + iq$. Its circulation around a closed curve measures how much the fluid swirls, and by Green's theorem the swirl per unit area at a point is the rotation $\omega = \frac12(q_x - p_y)$. In an irrotational flow on a simply connected domain the velocity is the gradient of a single-valued velocity potential (the line-integral construction of [[§115★ Harmonic Conjugates|§115]] again), and if the fluid is incompressible this potential is harmonic. [[§125★ The Stream Function|§125]] adds a harmonic conjugate, the stream function, and with it the complex potential.
+The third interpretation of harmonic functions: steady two-dimensional flow of an ideal fluid. The velocity is written as a complex number $V = p + iq$. Its circulation around a closed curve measures how much the fluid swirls, and by Green's theorem the swirl per unit area at a point is the rotation $\omega = \frac12(q_x - p_y)$. In an irrotational flow on a simply connected domain the velocity is the gradient of a single-valued velocity potential (the line-integral construction of [[§115★ Harmonic Conjugates#^lem-115-3|Lemma §115.3]] again), and if the fluid is incompressible this potential is harmonic. [[§125★ The Stream Function|§125]] adds a harmonic conjugate, the stream function, and with it the complex potential.
 
 ## Circulation and Rotation
 
@@ -63,7 +63,7 @@ represents the velocity of the fluid at $(x, y)$; its components are $p(x, y)$ a
 
 ^pf-124-1
 
-*Uses:* [[§124★ Two-Dimensional Fluid Flow#^def-124-1|Def. §124.1]], [[§108 Line Integrals#^def-108-8|Calc Def. §108.8]], [[§108 Line Integrals#^thm-108-7|Calc Thm. §108.7]], [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]] (Green's theorem), [[§52 Simply Connected Domains|§52]]
+*Uses:* [[§124★ Two-Dimensional Fluid Flow#^def-124-1|Def. §124.1]], [[§108 Line Integrals#^def-108-8|Calc Def. §108.8]], [[§108 Line Integrals#^thm-108-7|Calc Thm. §108.7]], [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]] (Green's theorem), [[§52 Simply Connected Domains#^def-52-1|Def. §52.1]]
 
 > [!definition] Definition §124.2: Rotation; Irrotational, Incompressible and Inviscid Flow
 > The function

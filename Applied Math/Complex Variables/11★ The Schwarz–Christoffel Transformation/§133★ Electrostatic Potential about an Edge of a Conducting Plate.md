@@ -104,7 +104,7 @@ Two parallel grounded conducting planes with a semi-infinite plate at potential 
 >
 > with $0 < V < 1$ fixing the branch ($\pi V$ is in $(0, \pi/2)$ where $s > 0$ and in $(\pi/2, \pi)$ where $s < 0$).
 >
-> **Check.** At $w = \pi i/4$, directly below the edge, $u = 0$ and $\cos2v = 0$, so $s = \sqrt2 - 1 = 0.41421$, $\sqrt{1 - s^2} = 0.91018$, $\tan\pi V = 2.19737$ and $V = 0.36406$. Computing instead $z$ from (6), $z^2 = 1 + e^{-\pi i/2} = 1 - i$, with the root in the upper half plane, $z = 2^{1/4}e^{7\pi i/8} = -1.0987 + 0.4551i$ (and (5) indeed returns $w = \pi i/4$), gives $\theta_1 = 2.92805$, $\theta_2 = 1.78435$ and $V = (\theta_1 - \theta_2)/\pi = 0.36406$.
+> **Check.** At $w = \pi i/4$, directly below the edge, $u = 0$ and $\cos2v = 0$, so $s = \sqrt2 - 1 = 0.41421$, $\sqrt{1 - s^2} = 0.91018$, $\tan\pi V = 2.19737$ and $V = 0.36406$. Computing instead $z$ from (6), $z^2 = 1 + e^{-\pi i/2} = 1 - i$, with the root in the upper half plane, $z = 2^{1/4}e^{7\pi i/8} = -1.0987 + 0.4551i$ (and (5) indeed returns $w = \pi i/4$), gives $\theta_1 = 2.92805$, $\theta_2 = 1.78434$ and $V = (\theta_1 - \theta_2)/\pi = 0.36406$.
 >
 > *B&C: Sec. 133 (text), equations (7)–(8)*
 

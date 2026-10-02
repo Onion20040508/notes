@@ -31,7 +31,7 @@ A solved problem becomes the solution of every problem that can be mapped onto i
 >
 > with $T$ bounded.
 >
-> **The map.** By [[§104★ Mapping Vertical Line Segments by w = sin z|§104]] (Example), the transformation
+> **The map.** By [[§104★ Mapping Vertical Line Segments by w = sin z#^ex-104-1|Example §104.1]], the transformation
 >
 > $$
 > w = \sin z \qquad (4)
@@ -43,7 +43,7 @@ A solved problem becomes the solution of every problem that can be mapped onto i
 > T = \frac1\pi\arctan\Big(\frac{2v}{u^2 + v^2 - 1}\Big) \qquad (0 \le \arctan t \le \pi). \qquad (5)
 > $$
 >
-> **Back to $x$ and $y$.** By [[§37 The Trigonometric Functions sin z and cos z|§37]], $u = \sin x\cosh y$ and $v = \cos x\sinh y$, so (5) becomes
+> **Back to $x$ and $y$.** By [[§37 The Trigonometric Functions sin z and cos z#^prop-37-5|Proposition §37.5]], $u = \sin x\cosh y$ and $v = \cos x\sinh y$, so (5) becomes
 >
 > $$
 > T = \frac1\pi\arctan\Big(\frac{2\cos x\sinh y}{\sin^2x\cosh^2y + \cos^2x\sinh^2y - 1}\Big) .
@@ -115,7 +115,7 @@ A solved problem becomes the solution of every problem that can be mapped onto i
 >
 > with $0 \le H \le 1$, by transforming it into the quadrant problem of [[§118★ Steady Temperatures#^ex-118-1|Example §118.1]].
 >
-> **Map.** $w = \sin z$ maps the half strip $0 < x < \pi/2$, $y > 0$ onto the first quadrant $u > 0$, $v > 0$ ([[§104★ Mapping Vertical Line Segments by w = sin z|§104]]): the side $x = 0$ goes to $\sin(iy) = i\sinh y$, the positive $v$ axis; the base goes to $\sin x \in (0, 1)$ and the side $x = \pi/2$ to $\cosh y \in (1, \infty)$, together the positive $u$ axis. So the new problem is: harmonic in the quadrant, $1$ on the positive $v$ axis, $0$ on the positive $u$ axis.
+> **Map.** $w = \sin z$ maps the half strip $0 < x < \pi/2$, $y > 0$ onto the first quadrant $u > 0$, $v > 0$ ([[§104★ Mapping Vertical Line Segments by w = sin z#^ex-104-2|Example §104.2]]): the side $x = 0$ goes to $\sin(iy) = i\sinh y$, the positive $v$ axis; the base goes to $\sin x \in (0, 1)$ and the side $x = \pi/2$ to $\cosh y \in (1, \infty)$, together the positive $u$ axis. So the new problem is: harmonic in the quadrant, $1$ on the positive $v$ axis, $0$ on the positive $u$ axis.
 >
 > **Solve and compose.** By Example §118.1, $H = \frac2\pi\operatorname{Arg} w = \frac2\pi\arctan\frac vu$. With $u = \sin x\cosh y$, $v = \cos x\sinh y$, $\frac vu = \frac{\cos x\sinh y}{\sin x\cosh y} = \frac{\tanh y}{\tan x}$, so
 >

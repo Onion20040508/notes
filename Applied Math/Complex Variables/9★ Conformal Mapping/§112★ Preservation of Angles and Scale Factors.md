@@ -16,25 +16,25 @@ An analytic function with nonzero derivative turns every curve through a point b
 
 ## Angle of Rotation
 
-Let $C$ be a smooth arc ([[§43 Contours|§43]]), $z = z(t)$ $(a \le t \le b)$, and let $f(z)$ be defined at all points of $C$. Then
+Let $C$ be a smooth arc ([[§43 Contours#^def-43-4|Definition §43.4]]), $z = z(t)$ $(a \le t \le b)$, and let $f(z)$ be defined at all points of $C$. Then
 
 $$
 w = f[z(t)] \qquad (a \le t \le b)
 $$
 
-is a parametric representation of the image $\Gamma$ of $C$ under the transformation $w = f(z)$. Suppose that $C$ passes through a point $z_0 = z(t_0)$ $(a < t_0 < b)$ at which $f$ is analytic and $f'(z_0) \ne 0$. By the chain rule ([[§43 Contours|§43]], Exercise 5), $w(t) = f[z(t)]$ satisfies
+is a parametric representation of the image $\Gamma$ of $C$ under the transformation $w = f(z)$. Suppose that $C$ passes through a point $z_0 = z(t_0)$ $(a < t_0 < b)$ at which $f$ is analytic and $f'(z_0) \ne 0$. By the chain rule along an arc ([[§43 Contours#^prop-43-5|Proposition §43.5]]), $w(t) = f[z(t)]$ satisfies
 
 $$
 w'(t_0) = f'[z(t_0)]\,z'(t_0), \qquad (1)
 $$
 
-and so, by the argument of a product ([[§9 Arguments of Products and Quotients|§9]]),
+and so, by the argument of a product ([[§9 Arguments of Products and Quotients#^thm-9-1|Theorem §9.1]]),
 
 $$
 \arg w'(t_0) = \arg f'[z(t_0)] + \arg z'(t_0) . \qquad (2)
 $$
 
-Since $z'(t_0) \ne 0$ and $f'(z_0) \ne 0$, also $w'(t_0) \ne 0$, so $\Gamma$ has a tangent line at $w_0 = f(z_0)$. By the discussion of unit tangent vectors in [[§43 Contours|§43]], a value $\theta_0$ of $\arg z'(t_0)$ is the angle of inclination of the directed tangent line to $C$ at $z_0$, and a value $\phi_0$ of $\arg w'(t_0)$ is that of the directed tangent line to $\Gamma$ at $w_0$.
+Since $z'(t_0) \ne 0$ and $f'(z_0) \ne 0$, also $w'(t_0) \ne 0$, so $\Gamma$ has a tangent line at $w_0 = f(z_0)$. By the discussion of unit tangent vectors in [[§43 Contours#^def-43-4|Definition §43.4]], a value $\theta_0$ of $\arg z'(t_0)$ is the angle of inclination of the directed tangent line to $C$ at $z_0$, and a value $\phi_0$ of $\arg w'(t_0)$ is that of the directed tangent line to $\Gamma$ at $w_0$.
 
 > [!definition] Definition §112.1: Angle of Rotation
 > If $f$ is analytic at $z_0$ and $f'(z_0) \ne 0$, the **angle of rotation** of the transformation $w = f(z)$ at $z_0$ is
@@ -83,7 +83,7 @@ Since $z'(t_0) \ne 0$ and $f'(z_0) \ne 0$, also $w'(t_0) \ne 0$, so $\Gamma$ has
 
 ^pf-112-1
 
-*Uses:* [[§112★ Preservation of Angles and Scale Factors#^def-112-1|Def. §112.1]], [[§43 Contours|§43]] (smooth arcs, unit tangent, chain rule of Exercise 5), [[§9 Arguments of Products and Quotients|§9]] ($\arg(z_1z_2) = \arg z_1 + \arg z_2$)
+*Uses:* [[§112★ Preservation of Angles and Scale Factors#^def-112-1|Def. §112.1]], [[§43 Contours#^def-43-4|Def. §43.4]] (smooth arcs, unit tangent), [[§43 Contours#^prop-43-5|§43.5]] (chain rule), [[§9 Arguments of Products and Quotients#^thm-9-1|§9.1]] ($\arg(z_1z_2) = \arg z_1 + \arg z_2$)
 
 > [!remark]- Connections
 > - Why it works, in matrix form: by the Cauchy–Riemann equations the Jacobian matrix of $(x, y) \mapsto (u, v)$ at $z_0$ is $\begin{bmatrix} u_x & -v_x \\ v_x & u_x \end{bmatrix}$ with $u_x + iv_x = f'(z_0)$, a rotation–scaling matrix: rotation through $\arg f'(z_0)$ followed by scaling by $|f'(z_0)|$, [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]. A linear map of that form preserves angles; the tangent vector $z'(t_0)$ is carried to $w'(t_0)$ by this matrix ([[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]], the Jacobian).
@@ -105,20 +105,20 @@ Because of this angle-preserving property, the following terms are used.
 ^prop-112-2
 
 > [!proof]+ Proof
-> Since $f$ is analytic at $z_0$, it is analytic in some neighborhood of $z_0$ ([[§25 Analytic Functions|§25]]: analyticity at a point is defined that way). In that neighborhood $f'$ is itself analytic ([[§57 Some Consequences of the Extension|§57]], Theorem 1), hence continuous. Since $f'$ is continuous and nonzero at $z_0$, there is a neighborhood of $z_0$ throughout which $f'(z) \ne 0$ ([[§18 Continuity|§18]], Theorem 2). In the smaller of the two neighborhoods, $f$ is analytic with nonzero derivative.
+> Since $f$ is analytic at $z_0$, it is analytic in some neighborhood of $z_0$ ([[§25 Analytic Functions#^def-25-1|Definition §25.1]]: analyticity at a point is defined that way). In that neighborhood $f'$ is itself analytic ([[§57 Some Consequences of the Extension#^thm-57-1|Theorem §57.1]]), hence continuous. Since $f'$ is continuous and nonzero at $z_0$, there is a neighborhood of $z_0$ throughout which $f'(z) \ne 0$ ([[§18 Continuity#^thm-18-3|Theorem §18.3]]). In the smaller of the two neighborhoods, $f$ is analytic with nonzero derivative.
 
 ^pf-112-2
 
-*Uses:* [[§112★ Preservation of Angles and Scale Factors#^def-112-2|Def. §112.2]], [[§25 Analytic Functions|§25]] (definition), [[§57 Some Consequences of the Extension|§57]] (Theorem 1), [[§18 Continuity|§18]] (Theorem 2)
+*Uses:* [[§112★ Preservation of Angles and Scale Factors#^def-112-2|Def. §112.2]], [[§25 Analytic Functions#^def-25-1|Def. §25.1]], [[§57 Some Consequences of the Extension#^thm-57-1|§57.1]], [[§18 Continuity#^thm-18-3|§18.3]]
 
 Each of the elementary functions of Chapter 3 defines a transformation that is conformal in some domain.
 
 > [!example] Example §112.1: The Exponential Map at the Crossing of Two Lines
 > Show that $w = e^z$ is conformal everywhere, and check Theorem §112.1 at the crossing point of the lines $x = c_1$ (directed upward) and $y = c_2$ (directed to the right).
 >
-> **Conformal everywhere.** $(e^z)' = e^z \ne 0$ for every $z$ ([[§30 The Exponential Function|§30]]), and $e^z$ is entire.
+> **Conformal everywhere.** $(e^z)' = e^z \ne 0$ for every $z$ ([[§30 The Exponential Function#^thm-30-3|Theorem §30.3]]), and $e^z$ is entire.
 >
-> **The images** ([[§103★ Mappings by the Exponential Function|§103]], Example 1). The line $x = c_1$ is $z = c_1 + it$, $t$ increasing; its image $w = e^{c_1}e^{it}$ is the circle $|w| = e^{c_1}$, traversed counterclockwise. The line $y = c_2$ is $z = t + ic_2$; its image $w = e^t e^{ic_2}$ is the ray $\arg w = c_2$, traversed outward.
+> **The images** ([[§103★ Mappings by the Exponential Function#^ex-103-1|Example §103.1]]). The line $x = c_1$ is $z = c_1 + it$, $t$ increasing; its image $w = e^{c_1}e^{it}$ is the circle $|w| = e^{c_1}$, traversed counterclockwise. The line $y = c_2$ is $z = t + ic_2$; its image $w = e^t e^{ic_2}$ is the ray $\arg w = c_2$, traversed outward.
 >
 > **Angles at the crossing point** $z_0 = c_1 + ic_2$, $w_0 = e^{c_1}e^{ic_2}$. In the $z$ plane the tangent directions are $i$ (inclination $\theta_1 = \pi/2$) for $x = c_1$ and $1$ ($\theta_2 = 0$) for $y = c_2$, so the angle from the first line to the second is $\theta_2 - \theta_1 = -\pi/2$: a right angle in the negative direction. In the $w$ plane the circle's tangent vector at $w_0$ is $\frac{d}{dt}e^{c_1}e^{it} = ie^{c_1}e^{ic_2}$, with inclination $\phi_1 = c_2 + \pi/2$, and the ray's is $e^{c_1}e^{ic_2}$, with $\phi_2 = c_2$. So $\phi_2 - \phi_1 = -\pi/2$ as well. The angle of rotation is $\arg e^{z_0} = c_2$, and indeed $\phi_1 = c_2 + \theta_1$, $\phi_2 = c_2 + \theta_2$, as (3) requires.
 >
@@ -137,7 +137,7 @@ Each of the elementary functions of Chapter 3 defines a transformation that is c
 > \nabla u \cdot \nabla v = u_xv_x + u_yv_y = -u_xu_y + u_yu_x = 0 ,
 > $$
 >
-> while $|\nabla u| = |\nabla v| = |f'(z_0)| \ne 0$. For instance, for $f(z) = z^2$ ($u = x^2 - y^2$, $v = 2xy$) at $z_0 = 2 + i$, the hyperbolas $x^2 - y^2 = 3$ and $xy = 2$ have normals $\nabla u = (4, -2)$ and $\nabla v = (2, 4)$, and $(4)(2) + (-2)(4) = 0$. (This was verified in exercises of [[§27★ Harmonic Functions|§27]].)
+> while $|\nabla u| = |\nabla v| = |f'(z_0)| \ne 0$. For instance, for $f(z) = z^2$ ($u = x^2 - y^2$, $v = 2xy$) at $z_0 = 2 + i$, the hyperbolas $x^2 - y^2 = 3$ and $xy = 2$ have normals $\nabla u = (4, -2)$ and $\nabla v = (2, 4)$, and $(4)(2) + (-2)(4) = 0$. (This was verified in exercises of §27; see [[§27★ Harmonic Functions#^rem-27-1|Remark: Level Curves Are Orthogonal]].)
 >
 > *B&C: Sec. 112, Example 2*
 
@@ -200,7 +200,7 @@ At a critical point the tangent of the image may degenerate ($w'(t_0) = 0$ in (1
 ^thm-112-3
 
 > [!proof]+ Proof
-> **(a)** By Taylor's theorem ([[§63 Proof of Taylor's Theorem|§63]]) there is a disk $|z - z_0| < R$ in which $f(z) = \sum_{n=0}^{\infty}\frac{f^{(n)}(z_0)}{n!}(z - z_0)^n$. The terms with $1 \le n \le m - 1$ vanish, so
+> **(a)** By Taylor's theorem ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]]) there is a disk $|z - z_0| < R$ in which $f(z) = \sum_{n=0}^{\infty}\frac{f^{(n)}(z_0)}{n!}(z - z_0)^n$. The terms with $1 \le n \le m - 1$ vanish, so
 >
 > $$
 > f(z) - w_0 = (z - z_0)^m\sum_{n=m}^{\infty}\frac{f^{(n)}(z_0)}{n!}(z - z_0)^{n-m} = (z - z_0)^m\,\frac{f^{(m)}(z_0)}{m!}\big[1 + g(z)\big],
@@ -208,9 +208,9 @@ At a critical point the tangent of the image may degenerate ($w'(t_0) = 0$ in (1
 > g(z) = \frac{m!}{f^{(m)}(z_0)}\sum_{n=m+1}^{\infty}\frac{f^{(n)}(z_0)}{n!}(z - z_0)^{n-m} .
 > $$
 >
-> The series for $g$ is the tail of a convergent power series divided by $(z - z_0)^m$, so it converges in the same disk; its sum is continuous there ([[§70★ Continuity of Sums of Power Series|§70]]), and $g(z_0) = 0$ since every term vanishes at $z_0$.
+> The series for $g$ is the tail of a convergent power series divided by $(z - z_0)^m$, so it converges in the same disk; its sum is continuous there ([[§70★ Continuity of Sums of Power Series#^thm-70-1|Theorem §70.1]]), and $g(z_0) = 0$ since every term vanishes at $z_0$.
 >
-> **(b)** Let $z = z(t)$ run along $C$ with $z(t_0) = z_0$, and $t \to t_0^+$. Since $g(z_0) = 0$ and $g$ is continuous, $1 + g(z(t)) \ne 0$ for $t$ near $t_0$, so $f(z(t)) - w_0 \ne 0$ for $t > t_0$ near $t_0$, and by (a) and the argument of a product ([[§9 Arguments of Products and Quotients|§9]]),
+> **(b)** Let $z = z(t)$ run along $C$ with $z(t_0) = z_0$, and $t \to t_0^+$. Since $g(z_0) = 0$ and $g$ is continuous, $1 + g(z(t)) \ne 0$ for $t$ near $t_0$, and $z(t) \ne z_0$ for $t \ne t_0$ near $t_0$ (because $(z(t) - z_0)/(t - t_0) \to z'(t_0) \ne 0$); so $f(z(t)) - w_0 \ne 0$ for $t > t_0$ near $t_0$, and by (a) and the argument of a product ([[§9 Arguments of Products and Quotients#^thm-9-1|Theorem §9.1]]),
 >
 > $$
 > \arg\big[f(z(t)) - w_0\big] = m\arg\big[z(t) - z_0\big] + \arg f^{(m)}(z_0) + \arg\big[1 + g(z(t))\big] \qquad (\text{mod } 2\pi) .
@@ -222,7 +222,7 @@ At a critical point the tangent of the image may degenerate ($w'(t_0) = 0$ in (1
 
 ^pf-112-3
 
-*Uses:* [[§112★ Preservation of Angles and Scale Factors#^def-112-4|Def. §112.4]], [[§63 Proof of Taylor's Theorem|§63]] (Taylor's theorem), [[§70★ Continuity of Sums of Power Series|§70]] (continuity of power series), [[§9 Arguments of Products and Quotients|§9]]
+*Uses:* [[§112★ Preservation of Angles and Scale Factors#^def-112-4|Def. §112.4]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (Taylor's theorem), [[§70★ Continuity of Sums of Power Series#^thm-70-1|§70.1]] (continuity of power series), [[§9 Arguments of Products and Quotients#^thm-9-1|§9.1]]
 
 > [!example] Example §112.4: The Critical Point of 1 + z²
 > Show that $z_0 = 0$ is a critical point of $w = 1 + z^2$, and that angles between curves from $0$ are doubled.
@@ -252,11 +252,11 @@ At a critical point the tangent of the image may degenerate ($w'(t_0) = 0$ in (1
 ^prop-112-4
 
 > [!proof]+ Proof
-> The first equality is the definition of the derivative ([[§19 Derivatives|§19]]). For the second: if $F(z) \to L$ as $z \to z_0$, then $|F(z)| \to |L|$, since $\big||F(z)| - |L|\big| \le |F(z) - L|$ by the triangle inequality ([[§18 Continuity|§18]], Exercise 7). Apply this to $F(z) = (f(z) - f(z_0))/(z - z_0)$, whose modulus is $|f(z) - f(z_0)|/|z - z_0|$.
+> The first equality is the definition of the derivative ([[§19 Derivatives#^def-19-1|Definition §19.1]]). For the second: if $F(z) \to L$ as $z \to z_0$, then $|F(z)| \to |L|$, since $\big||F(z)| - |L|\big| \le |F(z) - L|$ by the reverse triangle inequality ([[§5 Triangle Inequality#^cor-5-2|Corollary §5.2]]; [[§18 Continuity#^prop-18-5|Proposition §18.5]]). Apply this to $F(z) = (f(z) - f(z_0))/(z - z_0)$, whose modulus is $|f(z) - f(z_0)|/|z - z_0|$.
 
 ^pf-112-4
 
-*Uses:* [[§19 Derivatives|§19]] (definition), [[§18 Continuity|§18]] (Exercise 7), [[§5 Triangle Inequality|§5]]
+*Uses:* [[§19 Derivatives#^def-19-1|Def. §19.1]], [[§18 Continuity#^prop-18-5|§18.5]], [[§5 Triangle Inequality#^cor-5-2|§5.2]]
 
 Here $|z - z_0|$ is the length of the segment from $z_0$ to $z$, and $|f(z) - f(z_0)|$ the length of the segment joining their images. So for $z$ near $z_0$ the ratio of the two lengths is approximately $|f'(z_0)|$.
 
@@ -268,6 +268,6 @@ Here $|z - z_0|$ is the length of the segment from $z_0$ to $z$, and $|f(z) - f(
 ^def-112-5
 
 > [!remark] Remark: Small Regions Keep Their Shape
-> The angle of rotation $\arg f'(z)$ and the scale factor $|f'(z)|$ vary in general from point to point, but $f'$ is continuous ([[§57 Some Consequences of the Extension|§57]]), so at points $z$ near $z_0$ they are approximately $\arg f'(z_0)$ and $|f'(z_0)|$. Hence the image of a small region near $z_0$ **conforms** to the original: it is approximately the original region turned through $\arg f'(z_0)$ and scaled by $|f'(z_0)|$, so it has approximately the same shape. A large region may be transformed into one that bears no resemblance to the original (the strip $0 < y < \pi$ becomes a half plane under $e^z$, [[§103★ Mappings by the Exponential Function|§103]]).
+> The angle of rotation $\arg f'(z)$ and the scale factor $|f'(z)|$ vary in general from point to point, but $f'$ is continuous ([[§57 Some Consequences of the Extension#^thm-57-1|Theorem §57.1]]), so at points $z$ near $z_0$ they are approximately $\arg f'(z_0)$ and $|f'(z_0)|$. Hence the image of a small region near $z_0$ **conforms** to the original: it is approximately the original region turned through $\arg f'(z_0)$ and scaled by $|f'(z_0)|$, so it has approximately the same shape. A large region may be transformed into one that bears no resemblance to the original (the strip $0 < y < \pi$ becomes a half plane under $e^z$, [[§103★ Mappings by the Exponential Function#^ex-103-3|Example §103.3]]).
 
 ^rem-112-1

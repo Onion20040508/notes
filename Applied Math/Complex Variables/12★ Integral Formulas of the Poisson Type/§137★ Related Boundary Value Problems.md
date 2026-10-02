@@ -64,13 +64,15 @@ Symmetry and inversion extend the disk formula to three more regions. If the bou
 ^prop-137-2
 
 > [!proof]+ Proof
-> The same substitution as in Proposition §137.1, now with $F(2\pi - \phi') = +F(\phi')$, gives (3); harmonicity and (2) again follow from Theorem §135.1. Differentiating (3) under the integral sign with respect to $\theta$ (justified as in the proof of Theorem §135.1, since $U$ is the real part of an analytic function) and writing $P'$ for the derivative of $P(r_0, r, \cdot)$ in its last argument,
+> The same substitution as in Proposition §137.1, now with $F(2\pi - \phi') = +F(\phi')$, gives (3); harmonicity and (2) again follow from Theorem §135.1, which makes $U$ harmonic in the whole disk $r < r_0$, so $U_\theta$ exists there.
+>
+> *$U$ is even in $\theta$.* (B&C asserts $U_\theta = 0$ on the diameter; here is why.) In (1) of §135, substitute $\phi = 2\pi - \phi'$ and use the evenness and periodicity of $P$ and $F(2\pi - \phi') = F(\phi')$:
 >
 > $$
-> U_\theta(r, \theta) = \frac{1}{2\pi}\int_0^\pi\big[-P'(r_0, r, \phi - \theta) + P'(r_0, r, \phi + \theta)\big]F(\phi)\,d\phi .
+> U(r, -\theta) = \frac{1}{2\pi}\int_0^{2\pi}P(r_0, r, \phi + \theta)F(\phi)\,d\phi = \frac{1}{2\pi}\int_0^{2\pi}P(r_0, r, 2\pi - \phi' + \theta)F(\phi')\,d\phi' = U(r, \theta) .
 > $$
 >
-> At $\theta = 0$ the bracket is $-P'(\phi) + P'(\phi) = 0$; at $\theta = \pi$ it is $-P'(\phi - \pi) + P'(\phi + \pi) = 0$, since $P'$ has period $2\pi$. On the diameter the normal direction is the direction of increasing $\theta$, and the normal derivative is $\frac1rU_\theta = 0$.
+> With the $2\pi$-periodicity of $U$ in $\theta$ this also gives $U(r, \pi + t) = U(r, -\pi - t) = U(r, \pi - t)$. A differentiable function that is even about a point has derivative zero there, so $U_\theta(r, 0) = U_\theta(r, \pi) = 0$. On the diameter the normal direction is the direction of increasing $\theta$, and the normal derivative is $\frac1rU_\theta = 0$.
 
 ^pf-137-2
 

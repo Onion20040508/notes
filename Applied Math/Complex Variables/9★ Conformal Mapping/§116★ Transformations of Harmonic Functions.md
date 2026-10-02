@@ -29,7 +29,7 @@ Boundary value problems for Laplace's equation (Dirichlet and Neumann problems) 
 The domains most frequently met in applications are simply connected, and a harmonic function on a simply connected domain has a harmonic conjugate ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]). So solutions of boundary value problems on such domains are real or imaginary parts of analytic functions.
 
 > [!example] Example §116.1: A Steady Temperature as the Real Part of an Entire Function
-> In [[§27★ Harmonic Functions|§27]] (Example 1), $T(x, y) = e^{-y}\sin x$ was seen to satisfy the Dirichlet problem
+> In [[§27★ Harmonic Functions#^ex-27-1|Example §27.1]], $T(x, y) = e^{-y}\sin x$ was seen to satisfy the Dirichlet problem
 >
 > $$
 > T_{xx} + T_{yy} = 0 \quad (0 < x < \pi,\ y > 0), \qquad T(0, y) = T(\pi, y) = 0, \qquad T(x, 0) = \sin x ,
@@ -73,19 +73,19 @@ Recognizing a solution as the real or imaginary part of a familiar analytic func
 ^thm-116-1
 
 > [!proof]+ Proof
-> **$D_w$ simply connected.** Then $h$ has a harmonic conjugate $g(u, v)$ in $D_w$ ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]; B&C's text cites "Sec. 104" here, but the result is the theorem of Sec. 115). So
+> **$D_w$ simply connected.** Then $h$ has a harmonic conjugate $g(u, v)$ in $D_w$ ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]). So
 >
 > $$
 > \Phi(w) = h(u, v) + ig(u, v) \qquad (1)
 > $$
 >
-> is analytic in $D_w$ ([[§115★ Harmonic Conjugates#^thm-115-1|Theorem §115.1]]). Since $f$ is analytic in $D_z$ with values in $D_w$, the composite $\Phi[f(z)]$ is analytic in $D_z$ (chain rule, [[§20 Rules for Differentiation|§20]]). Its real part $h[u(x, y), v(x, y)] = H(x, y)$ is therefore harmonic in $D_z$ ([[§27★ Harmonic Functions|§27]], Theorem).
+> is analytic in $D_w$ ([[§115★ Harmonic Conjugates#^thm-115-1|Theorem §115.1]]). Since $f$ is analytic in $D_z$ with values in $D_w$, the composite $\Phi[f(z)]$ is analytic in $D_z$ (chain rule, [[§20 Rules for Differentiation#^thm-20-4|Theorem §20.4]]). Its real part $h[u(x, y), v(x, y)] = H(x, y)$ is therefore harmonic in $D_z$ ([[§27★ Harmonic Functions#^thm-27-1|Theorem §27.1]]).
 >
 > **$D_w$ arbitrary.** Each point $w_0$ of $D_w$ has a neighborhood $|w - w_0| < \varepsilon$ lying in $D_w$. A disk is simply connected, so a function $\Phi$ of the type (1) is analytic in it. Let $z_0$ be a point of $D_z$ with $f(z_0) = w_0$. Since $f$ is continuous at $z_0$, there is a neighborhood $|z - z_0| < \delta$ whose image lies in $|w - w_0| < \varepsilon$. So $\Phi[f(z)]$ is analytic in $|z - z_0| < \delta$, and $H$ is harmonic there. Every point $z_0$ of $D_z$ is mapped to some point $w_0$ of $D_w$, so this applies around every point of $D_z$; being harmonic is a local property (continuous second partials and $H_{xx} + H_{yy} = 0$ at each point), so $H$ is harmonic throughout $D_z$.
 
 ^pf-116-1
 
-*Uses:* [[§115★ Harmonic Conjugates#^thm-115-4|§115.4]], [[§115★ Harmonic Conjugates#^thm-115-1|§115.1]], [[§20 Rules for Differentiation|§20]] (chain rule), [[§27★ Harmonic Functions|§27]] (Theorem), [[§18 Continuity|§18]] (continuity of analytic functions)
+*Uses:* [[§115★ Harmonic Conjugates#^thm-115-4|§115.4]], [[§115★ Harmonic Conjugates#^thm-115-1|§115.1]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]] (chain rule), [[§27★ Harmonic Functions#^thm-27-1|§27.1]], [[§19 Derivatives#^thm-19-1|§19.1]] (differentiable implies continuous)
 
 > [!remark] Remark: Onto Is Not Needed
 > The proof uses only that $f$ maps $D_z$ *into* $D_w$, so that $h$ is defined at every $f(z)$. The word "onto" in (a) matters only for the boundary value problems of Chapter 10, where all of $D_w$ must correspond to $D_z$ so that the boundary conditions can be transferred.
@@ -108,7 +108,7 @@ The theorem can also be proved directly by the chain rule for partial derivative
 ^prop-116-2
 
 > [!proof]+ Proof
-> Since $f$ is analytic, $u$ and $v$ have continuous partial derivatives of all orders ([[§57 Some Consequences of the Extension|§57]], Corollary), satisfy the Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$, and are harmonic ([[§27★ Harmonic Functions|§27]], Theorem). By the chain rule,
+> Since $f$ is analytic, $u$ and $v$ have continuous partial derivatives of all orders ([[§57 Some Consequences of the Extension#^cor-57-2|Corollary §57.2]]), satisfy the Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$, and are harmonic ([[§27★ Harmonic Functions#^thm-27-1|Theorem §27.1]]). By the chain rule,
 >
 > $$
 > H_x = h_uu_x + h_vv_x .
@@ -143,7 +143,7 @@ The theorem can also be proved directly by the chain rule for partial derivative
 
 ^pf-116-2
 
-*Uses:* [[§57 Some Consequences of the Extension|§57]] (Corollary), [[§21 Cauchy–Riemann Equations|§21]], [[§27★ Harmonic Functions|§27]] (Theorem), [[§94 The Chain Rule#^thm-94-2|Calc Thm. §94.2]] (chain rule), [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]], [[Schwarz–Clairaut Theorem|452 Schwarz–Clairaut]] ($h_{uv} = h_{vu}$)
+*Uses:* [[§57 Some Consequences of the Extension#^cor-57-2|§57.2]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]], [[§94 The Chain Rule#^thm-94-2|Calc Thm. §94.2]] (chain rule), [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]], [[Schwarz–Clairaut Theorem|452 Schwarz–Clairaut]] ($h_{uv} = h_{vu}$)
 
 > [!remark]- Connections
 > - The polar form of the Laplacian is a special case. With $s = \ln r$, the map $w = \operatorname{Log} z = s + i\theta$ has $|f'(z)|^2 = 1/r^2$, so $H_{xx} + H_{yy} = r^{-2}(h_{ss} + h_{\theta\theta})$, and $r\partial_r = \partial_s$ turns $h_{ss}$ into $r^2h_{rr} + rh_r$: this is $h_{rr} + \frac1rh_r + \frac1{r^2}h_{\theta\theta}$, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]].
@@ -186,7 +186,7 @@ So the source term picks up the factor $|f'(z)|^2$: a charge or heat-source dens
 > w = e^z = e^x\cos y + ie^x\sin y
 > $$
 >
-> maps the horizontal strip $0 < y < \pi$ onto the upper half plane $v > 0$ ([[§103★ Mappings by the Exponential Function|§103]], Example 3). Since $w^2$ is analytic in that half plane, $h(u, v) = \operatorname{Re}(w^2) = u^2 - v^2$ is harmonic there. By Theorem §116.1 the function
+> maps the horizontal strip $0 < y < \pi$ onto the upper half plane $v > 0$ ([[§103★ Mappings by the Exponential Function#^ex-103-3|Example §103.3]]). Since $w^2$ is analytic in that half plane, $h(u, v) = \operatorname{Re}(w^2) = u^2 - v^2$ is harmonic there. By Theorem §116.1 the function
 >
 > $$
 > H(x, y) = (e^x\cos y)^2 - (e^x\sin y)^2 = e^{2x}(\cos^2y - \sin^2y) = e^{2x}\cos 2y
@@ -220,7 +220,7 @@ So the source term picks up the factor $|f'(z)|^2$: a charge or heat-source dens
 ^ex-116-3
 
 > [!example] Example §116.4: A Harmonic Function in the First Quadrant
-> The function $h(u, v) = e^{-v}\sin u$ is harmonic in the whole $uv$ plane (Example §116.1 with $u, v$ in place of $x, y$), in particular in the upper half plane $D_w\colon v > 0$. The map $w = z^2$ takes the quadrant $D_z\colon x > 0,\ y > 0$ onto that half plane ([[§14 The Mapping w = z²|§14]], Example 2). With $u = x^2 - y^2$, $v = 2xy$, Theorem §116.1 gives that
+> The function $h(u, v) = e^{-v}\sin u$ is harmonic in the whole $uv$ plane (Example §116.1 with $u, v$ in place of $x, y$), in particular in the upper half plane $D_w\colon v > 0$. The map $w = z^2$ takes the quadrant $D_z\colon x > 0,\ y > 0$ onto that half plane ([[§14 The Mapping w = z²#^ex-14-2|Example §14.2]]). With $u = x^2 - y^2$, $v = 2xy$, Theorem §116.1 gives that
 >
 > $$
 > H(x, y) = e^{-2xy}\sin(x^2 - y^2)

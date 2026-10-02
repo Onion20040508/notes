@@ -30,11 +30,11 @@ To find a flow in a region of the $z$ plane, map the region conformally onto one
 ^prop-126-1
 
 > [!proof]+ Proof
-> $F[f(z)]$ is analytic as a composition of analytic functions ([[§20 Rules for Differentiation|§20]]), so its real and imaginary parts are harmonic and the second is a harmonic conjugate of the first ([[§115★ Harmonic Conjugates#^thm-115-1|Theorem §115.1]]; equivalently Theorem [[§116★ Transformations of Harmonic Functions#^thm-116-1|§116.1]] applied to $\phi$ and $\psi$). A point $(x, y)$ lies on the curve $\psi[u(x, y), v(x, y)] = c_2$ exactly when its image lies on $\psi(u, v) = c_2$. A natural boundary, across which no fluid flows, has $\psi$ constant on it; its preimage has the composed $\psi$ constant on it, so it is a streamline of the new flow (Theorem [[§117★ Transformations of Boundary Conditions#^thm-117-2|§117.2]], the case $h = h_0$).
+> $F[f(z)]$ is analytic as a composition of analytic functions ([[§20 Rules for Differentiation#^thm-20-4|Theorem §20.4]]), so its real and imaginary parts are harmonic and the second is a harmonic conjugate of the first ([[§115★ Harmonic Conjugates#^thm-115-1|Theorem §115.1]]; equivalently Theorem [[§116★ Transformations of Harmonic Functions#^thm-116-1|§116.1]] applied to $\phi$ and $\psi$). A point $(x, y)$ lies on the curve $\psi[u(x, y), v(x, y)] = c_2$ exactly when its image lies on $\psi(u, v) = c_2$. A natural boundary, across which no fluid flows, has $\psi$ constant on it; its preimage has the composed $\psi$ constant on it, so it is a streamline of the new flow (Theorem [[§117★ Transformations of Boundary Conditions#^thm-117-2|§117.2]], the case $h = h_0$).
 
 ^pf-126-1
 
-*Uses:* [[§20 Rules for Differentiation|§20]], [[§115★ Harmonic Conjugates#^thm-115-1|§115.1]], [[§116★ Transformations of Harmonic Functions#^thm-116-1|§116.1]], [[§117★ Transformations of Boundary Conditions#^thm-117-2|§117.2]], [[§125★ The Stream Function#^def-125-1|Def. §125.1]]
+*Uses:* [[§20 Rules for Differentiation#^thm-20-4|§20.4]], [[§115★ Harmonic Conjugates#^thm-115-1|§115.1]], [[§116★ Transformations of Harmonic Functions#^thm-116-1|§116.1]], [[§117★ Transformations of Boundary Conditions#^thm-117-2|§117.2]], [[§125★ The Stream Function#^def-125-1|Def. §125.1]]
 
 To avoid an excess of notation, the same symbols $F$, $\phi$ and $\psi$ are used for the complex potential, velocity potential and stream function in both planes.
 
@@ -51,7 +51,7 @@ To avoid an excess of notation, the same symbols $F$, $\phi$ and $\psi$ are used
 > [!example] Example §126.1: Flow Around a Corner
 > Find the flow in the first quadrant $x > 0$, $y > 0$ that comes in downward parallel to the $y$ axis but is forced to turn a corner near the origin (B&C's Fig. 173), and the point of the closed quadrant where the pressure is greatest.
 >
-> **Map and potential.** $w = z^2 = x^2 - y^2 + i2xy$ maps the first quadrant onto the upper half plane and its boundary onto the $u$ axis ([[§14 The Mapping w = z²|§14]], Example 2). The complex potential of uniform flow to the right in the upper half of the $w$ plane is $F = Aw$ ($A > 0$; [[§125★ The Stream Function#^ex-125-1|Example §125.1]]). So the potential in the quadrant is
+> **Map and potential.** $w = z^2 = x^2 - y^2 + i2xy$ maps the first quadrant onto the upper half plane and its boundary onto the $u$ axis ([[§14 The Mapping w = z²#^ex-14-2|Example §14.2]]). The complex potential of uniform flow to the right in the upper half of the $w$ plane is $F = Aw$ ($A > 0$; [[§125★ The Stream Function#^ex-125-1|Example §125.1]]). So the potential in the quadrant is
 >
 > $$
 > F = Az^2 = A(x^2 - y^2) + i2Axy , \qquad (1)

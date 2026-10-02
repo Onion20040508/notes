@@ -65,7 +65,7 @@ The integrals in (1) and (2) do not represent elementary functions unless the tr
 > w_1 = \int_1^{-1}(x + 1)^{-2/3}(1 - x)^{-2/3}\exp\Big(-\frac{2\pi i}{3}\Big)\,dx = \exp\Big(\frac{\pi i}{3}\Big)\int_0^1\frac{2\,dx}{(1 - x^2)^{2/3}} , \qquad (4)
 > $$
 >
-> using $-e^{-2\pi i/3} = e^{\pi i/3}$ and the evenness of the integrand. With $x = \sqrt t$ the last integral is a beta integral (as in B&C's Exercise 5 of Sec. 91, [[§91★ Integration Along a Branch Cut|§91★]]); call its value $b$:
+> using $-e^{-2\pi i/3} = e^{\pi i/3}$ and the evenness of the integrand. With $x = \sqrt t$ the last integral is a beta integral (the beta function of B&C's Exercise 5 of Sec. 91, [[§91★ Integration Along a Branch Cut#^ex-91-4|Example §91.4]]); call its value $b$:
 >
 > $$
 > b = \int_0^1\frac{2\,dx}{(1 - x^2)^{2/3}} = \int_0^1 t^{-1/2}(1 - t)^{-2/3}\,dt = B\Big(\frac12, \frac13\Big) \approx 4.20655 . \qquad (5)
@@ -130,13 +130,13 @@ The integrals in (1) and (2) do not represent elementary functions unless the tr
 > [!proof]+ Proof
 > This is [[§128★ Schwarz–Christoffel Transformation#^cor-128-5|Corollary §128.5]] with $n = 4$, all $k_j = \frac12$ (sum $2$) and $A = -1$, $z_0 = 0$, $B = 0$; the branches with $0 \le \arg(z - x_j) \le \pi$ agree with [[§128★ Schwarz–Christoffel Transformation#^def-128-1|Definition §128.1]] on $y \ge 0$. The image is a polygon with four right angles, a rectangle; here $n - 3 = 1$ condition (the ratio of the sides) is governed by the single parameter $a$, which is how one fits a given rectangle up to similarity ([[§129★ Triangles and Rectangles#^ex-129-2|Example §129.2]] computes the sides).
 >
-> **The elliptic integral.** (B&C asserts this; here is why.) For $|s| < \min(1, a)$ in the upper half plane, $(s + a)^{-1/2}(s + 1)^{-1/2}$ is near $a^{-1/2}$ and $(s - 1)^{-1/2}(s - a)^{-1/2}$ is near $e^{-i\pi/2}\cdot a^{-1/2}e^{-i\pi/2} = -a^{-1/2}$. So $g(s)$ is the branch of $\big[(s^2 - a^2)(s^2 - 1)\big]^{-1/2}$ with $g(0) = -1/a$, that is,
+> **The elliptic integral.** (B&C asserts this; here is why.) Let $h(s) = \frac1a(1 - s^2)^{-1/2}\big(1 - \frac{s^2}{a^2}\big)^{-1/2}$ with principal branches; on the half disk $H$: $|s| < \min(1, a)$, $\operatorname{Im} s \ge 0$, the numbers $1 - s^2$ and $1 - s^2/a^2$ have positive real part, so $h$ is continuous there. Both $-g$ and $h$ have square $\big[(s^2 - 1)(s^2 - a^2)\big]^{-1}$, so $-g/h$ is continuous on $H$ with values $\pm1$; since $H$ is connected, it is constant. At $s = 0$, $g(0) = a^{-1/2}\cdot 1\cdot e^{-i\pi/2}\cdot a^{-1/2}e^{-i\pi/2} = -\frac1a = -h(0)$. Hence $-g = h$ on $H$, that is,
 >
 > $$
-> -g(s) = \frac1a(1 - s^2)^{-1/2}\Big(1 - \frac{s^2}{a^2}\Big)^{-1/2}
+> -g(s) = \frac1a(1 - s^2)^{-1/2}\Big(1 - \frac{s^2}{a^2}\Big)^{-1/2} \qquad (s \in H) ,
 > $$
 >
-> with the principal branches near $0$. Hence (9) is $\frac1a$ times the elliptic integral with $k = 1/a$; the form (8) of the integrand shows more clearly which branches are involved.
+> and (9) is $\frac1a$ times the elliptic integral with $k = 1/a$ (beyond $H$, its analytic continuation into the upper half plane); the form (8) of the integrand shows more clearly which branches are involved.
 
 ^pf-129-2
 

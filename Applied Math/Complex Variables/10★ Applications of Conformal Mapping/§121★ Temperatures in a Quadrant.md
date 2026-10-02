@@ -35,7 +35,7 @@ Here the boundary conditions change type along a single edge: part of the edge i
 > z = \sin w \qquad (4)
 > $$
 >
-> is a one to one mapping of the half strip $0 \le u \le \pi/2$, $v \ge 0$ onto the quadrant $x \ge 0$, $y \ge 0$ ([[§104★ Mapping Vertical Line Segments by w = sin z|§104]]–[[§105★ Mapping Horizontal Line Segments by w = sin z|§105]]): the base $0 < u < \pi/2$, $v = 0$ goes onto $0 < x < 1$ ($\sin u$); the side $u = \pi/2$ onto $x > 1$ ($\sin(\frac\pi2 + iv) = \cosh v$); the side $u = 0$ onto the positive $y$ axis ($\sin(iv) = i\sinh v$). Being one to one and onto, it has an inverse. Since (4) is conformal throughout the strip except at $w = \pi/2$ (where $\cos w = 0$), the inverse is conformal throughout the quadrant except at $z = 1$ (Theorem [[§114★ Local Inverses#^thm-114-1|§114.1]]).
+> is a one to one mapping of the half strip $0 \le u \le \pi/2$, $v \ge 0$ onto the quadrant $x \ge 0$, $y \ge 0$ ([[§104★ Mapping Vertical Line Segments by w = sin z#^ex-104-2|Example §104.2]]): the base $0 < u < \pi/2$, $v = 0$ goes onto $0 < x < 1$ ($\sin u$); the side $u = \pi/2$ onto $x > 1$ ($\sin(\frac\pi2 + iv) = \cosh v$); the side $u = 0$ onto the positive $y$ axis ($\sin(iv) = i\sinh v$). Being one to one and onto, it has an inverse. Since (4) is conformal throughout the strip except at $w = \pi/2$ (where $\cos w = 0$), the inverse is conformal throughout the quadrant except at $z = 1$ (Theorem [[§114★ Local Inverses#^thm-114-1|§114.1]]).
 >
 > **The new problem.** So it suffices to find a function harmonic in the strip with: $T_v = 0$ on the base, $T = 1$ on $u = \pi/2$, $T = 0$ on $u = 0$ (B&C's Fig. 157, right). These are conditions of the types $h = h_0$ and $dh/dn = 0$ of Theorem §117.2. The required function is clearly
 >
@@ -45,7 +45,7 @@ Here the boundary conditions change type along a single edge: part of the edge i
 >
 > the real part of the entire function $\frac2\pi w$; its normal derivative on the base is $T_v = 0$.
 >
-> **$u$ in terms of $x$ and $y$.** By (4) and [[§37 The Trigonometric Functions sin z and cos z|§37]],
+> **$u$ in terms of $x$ and $y$.** By (4) and [[§37 The Trigonometric Functions sin z and cos z#^prop-37-5|Proposition §37.5]],
 >
 > $$
 > x = \sin u\cosh v, \qquad y = \cos u\sinh v . \qquad (6)
@@ -99,7 +99,7 @@ Here the boundary conditions change type along a single edge: part of the edge i
 > [!example] Example §121.2: A Half Plane with an Insulated Strip
 > Find the bounded steady temperatures $T(x, y)$ in the semi-infinite solid $y \ge 0$ if $T = 0$ on the part $x < -1$ of the boundary $y = 0$, $T = 1$ on the part $x > 1$, and the strip $-1 < x < 1$ is insulated (B&C's Fig. 161).
 >
-> **Map.** $z = \sin w$ maps the half strip $-\pi/2 \le u \le \pi/2$, $v \ge 0$ one to one onto the half plane $y \ge 0$ ([[§104★ Mapping Vertical Line Segments by w = sin z|§104]]): the base onto $-1 \le x \le 1$, the side $u = \pi/2$ onto $x \ge 1$, the side $u = -\pi/2$ onto $x \le -1$. The new problem: $T = 0$ on $u = -\pi/2$, $T = 1$ on $u = \pi/2$, $T_v = 0$ on the base. Its bounded solution is $T = \frac12 + \frac u\pi$.
+> **Map.** $z = \sin w$ maps the half strip $-\pi/2 \le u \le \pi/2$, $v \ge 0$ one to one onto the half plane $y \ge 0$ ([[§104★ Mapping Vertical Line Segments by w = sin z#^ex-104-1|Example §104.1]]): the base onto $-1 \le x \le 1$, the side $u = \pi/2$ onto $x \ge 1$, the side $u = -\pi/2$ onto $x \le -1$. The new problem: $T = 0$ on $u = -\pi/2$, $T = 1$ on $u = \pi/2$, $T_v = 0$ on the base. Its bounded solution is $T = \frac12 + \frac u\pi$.
 >
 > **Back to $z$.** As in Example §121.1, $x = \sin u\cosh v$, $y = \cos u\sinh v$, and the point lies on the hyperbola with foci $\pm1$ and vertices $\pm\sin u$; now $u$ may be negative, and the signed difference of the focal distances is $\sqrt{(x + 1)^2 + y^2} - \sqrt{(x - 1)^2 + y^2} = 2\sin u$ (negative when $x < 0$). Hence
 >
@@ -116,7 +116,7 @@ Here the boundary conditions change type along a single edge: part of the edge i
 > [!example] Example §121.3: Two Problems That Reduce to Example §121.2
 > **(a) A strip with insulated half edges.** The portions $x < 0$ of both edges of the infinite plate $0 \le y \le \pi$ are insulated, as are the faces; $T(x, 0) = 1$ and $T(x, \pi) = 0$ for $x > 0$ (B&C's Fig. 162). Find $T$.
 >
-> The map $W = e^z$ takes the strip onto the upper half plane ([[§103★ Mappings by the Exponential Function|§103]]): the lower edge $y = 0$ onto the positive real axis, with $x > 0$ going to $U > 1$ and $x < 0$ to $0 < U < 1$; the upper edge $y = \pi$ onto the negative real axis, with $x > 0$ going to $U < -1$ and $x < 0$ to $-1 < U < 0$. So $T = 1$ on $U > 1$, $T = 0$ on $U < -1$, and $-1 < U < 1$ is insulated: the problem of Example §121.2. Since $e^z$ is conformal everywhere,
+> The map $W = e^z$ takes the strip onto the upper half plane ([[§103★ Mappings by the Exponential Function#^ex-103-3|Example §103.3]]): the lower edge $y = 0$ onto the positive real axis, with $x > 0$ going to $U > 1$ and $x < 0$ to $0 < U < 1$; the upper edge $y = \pi$ onto the negative real axis, with $x > 0$ going to $U < -1$ and $x < 0$ to $-1 < U < 0$. So $T = 1$ on $U > 1$, $T = 0$ on $U < -1$, and $-1 < U < 1$ is insulated: the problem of Example §121.2. Since $e^z$ is conformal everywhere,
 >
 > $$
 > T = \frac12 + \frac1\pi\arcsin\Big[\frac{|e^z + 1| - |e^z - 1|}{2}\Big], \qquad |e^z \pm 1| = \sqrt{e^{2x} \pm 2e^x\cos y + 1} .
@@ -129,8 +129,6 @@ Here the boundary conditions change type along a single edge: part of the edge i
 > $$
 > T = \frac12 + \frac1\pi\arcsin\left[\frac{\sqrt{(x^2 - y^2 + 1)^2 + (2xy)^2} - \sqrt{(x^2 - y^2 - 1)^2 + (2xy)^2}}{2}\right] \qquad \Big(-\frac\pi2 \le \arcsin t \le \frac\pi2\Big).
 > $$
->
-> *(B&C's answer to Exercise 7 states the range condition as "$-\pi/2 \le \arctan t \le \pi/2$"; it is the range of the arcsine.)*
 >
 > *B&C: Sec. 121, Exercises 6 and 7*
 

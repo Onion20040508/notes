@@ -598,7 +598,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 > \partial_zG = \frac{1}{2r}\int_{-r}^{r}\frac{ds}{z - s} = \frac{1}{2r}\bigl[\log(z + r) - \log(z - r)\bigr], \qquad \partial_z^2G = \frac{1}{2r}\Bigl[\frac{1}{z + r} - \frac{1}{z - r}\Bigr] = \frac{-1}{z^2 - r^2} = F .
 > $$
 >
-> **Step 3** (the bound on $G$). By Step 2 of [[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]], for $0 < y < 1$, $|\log(t - s - iy)| \le |\ln|t - s|| + \ln(1 + |t| + r) + \pi$. Averaging over $s \in [-r, r]$: $|G(t - iy, r)| \le \frac{1}{2r}\int_{-r}^{r}|\ln|t - s||\,ds + \ln(1 + |t| + r) + \pi \le C\bigl(1 + |\ln r| + \ln(1 + |t| + r)\bigr)$, because the average of $|\ln|u||$ over an interval of length $2r$ is at most $1 + |\ln r|$ up to a constant. This bound is independent of $y$ and locally integrable on $\mathbb R^4$ ($|\ln r|$ is integrable against $d^3x$).
+> **Step 3** (the bound on $G$; sketch — the full estimate is standard and not written out here). By Step 2 of [[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]], for $0 < y < 1$, $|\log(t - s - iy)| \le |\ln|t - s|| + \ln(1 + |t| + r) + \pi$. Averaging over $s \in [-r, r]$: $|G(t - iy, r)| \le \frac{1}{2r}\int_{-r}^{r}|\ln|t - s||\,ds + \ln(1 + |t| + r) + \pi \le C\bigl(1 + |\ln r| + \ln(1 + |t| + r)\bigr)$, because the average of $|\ln|u||$ over an interval of length $2r$ is at most $1 + |\ln r|$ up to a constant. This bound is independent of $y$ and locally integrable on $\mathbb R^4$ ($|\ln r|$ is integrable against $d^3x$).
 >
 > **Step 4** (pair and take the limit). For $\varphi \in \mathcal S(\mathbb R^4)$, integrate by parts twice in $t$ at fixed $\mathbf x$ (boundary terms vanish: $G$ grows logarithmically):
 >

@@ -53,7 +53,7 @@ where $\phi$ is the velocity potential; when $V \ne 0$ it is normal to the equip
 ^prop-125-1
 
 > [!proof]+ Proof
-> Since $F$ is analytic, $F'(z) = \phi_x + i\psi_x$ ([[§21 Cauchy–Riemann Equations|§21]]), and by the Cauchy–Riemann equation $\psi_x = -\phi_y$,
+> Since $F$ is analytic, $F'(z) = \phi_x + i\psi_x$ ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]), and by the Cauchy–Riemann equation $\psi_x = -\phi_y$,
 >
 > $$
 > F'(z) = \phi_x(x, y) - i\phi_y(x, y) .
@@ -63,7 +63,7 @@ where $\phi$ is the velocity potential; when $V \ne 0$ it is normal to the equip
 
 ^pf-125-1
 
-*Uses:* [[§125★ The Stream Function#^def-125-1|Def. §125.1]], [[§124★ Two-Dimensional Fluid Flow#^thm-124-4|§124.4]], [[§21 Cauchy–Riemann Equations|§21]], [[§118★ Steady Temperatures#^prop-118-2|§118.2]], [[§125★ The Stream Function#^prop-125-2|§125.2]]
+*Uses:* [[§125★ The Stream Function#^def-125-1|Def. §125.1]], [[§124★ Two-Dimensional Fluid Flow#^thm-124-4|§124.4]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§118★ Steady Temperatures#^prop-118-2|§118.2]], [[§125★ The Stream Function#^prop-125-2|§125.2]]
 
 By [[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]], equation (9) there, if $\phi$ is harmonic in a simply connected domain $D$, a harmonic conjugate is
 $$
@@ -153,7 +153,7 @@ the integral being independent of path.
 > [!example] Example §125.4: The Pressure Has No Interior Minimum
 > Show that at an interior point of a region of flow (under the assumptions of §124) the fluid pressure cannot be less than the pressure at all other points of a neighborhood of that point.
 >
-> Suppose $P(z_0) < P(z)$ for all $z \ne z_0$ in some neighborhood $|z - z_0| < \varepsilon$ in which the complex potential $F$ is analytic. By Bernoulli's equation ([[§124★ Two-Dimensional Fluid Flow#^prop-124-3|Proposition §124.3]]), $P = \rho\big(c - \frac12|V|^2\big)$, so $|V(z_0)| > |V(z)|$ there, and by (3), $|F'(z)| \le |F'(z_0)|$ throughout the neighborhood. Since $F'$ is analytic ([[§57 Some Consequences of the Extension|§57]]), the lemma of [[§59 Maximum Modulus Principle|§59]] makes $F'$ constant in the neighborhood. Then $|V|$, and with it $P$, is constant there, contradicting $P(z_0) < P(z)$. (The pressure can have an interior maximum: at a stagnation point, where $V = 0$; see [[§126★ Flows Around a Corner and Around a Cylinder#^ex-126-1|Example §126.1]].)
+> Suppose $P(z_0) < P(z)$ for all $z \ne z_0$ in some neighborhood $|z - z_0| < \varepsilon$ in which the complex potential $F$ is analytic. By Bernoulli's equation ([[§124★ Two-Dimensional Fluid Flow#^prop-124-3|Proposition §124.3]]), $P = \rho\big(c - \frac12|V|^2\big)$, so $|V(z_0)| > |V(z)|$ there, and by (3), $|F'(z)| \le |F'(z_0)|$ throughout the neighborhood. Since $F'$ is analytic ([[§57 Some Consequences of the Extension#^thm-57-1|Theorem §57.1]]), [[§59 Maximum Modulus Principle#^lem-59-2|Lemma §59.2]] makes $F'$ constant in the neighborhood. Then $|V|$, and with it $P$, is constant there, contradicting $P(z_0) < P(z)$. (The pressure can have an interior maximum: at a stagnation point, where $V = 0$; see [[§126★ Flows Around a Corner and Around a Cylinder#^ex-126-1|Example §126.1]].)
 >
 > *B&C: Sec. 126, Exercise 2*
 

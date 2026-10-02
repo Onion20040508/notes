@@ -12,7 +12,7 @@ tags: [complex-variables, math342, extension]
 *Brown–Churchill, Section 118 (with Exercises 1, 4 and 13 of Section 121).*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
-Chapter 10 uses conformal mapping to solve physical problems governed by Laplace's equation in two variables: heat conduction, electrostatics and fluid flow. This section sets up the first. Fourier's law says that heat flows down the temperature gradient; a balance of heat for a small element then shows that a steady temperature without sources is harmonic. Its level curves are the isotherms, and the level curves of a harmonic conjugate are the lines along which the heat flows. An insulated edge is a line of flow, which is why the Neumann condition $dT/dN = 0$ of [[§117★ Transformations of Boundary Conditions|§117]] is so common.
+Chapter 10 uses conformal mapping to solve physical problems governed by Laplace's equation in two variables: heat conduction, electrostatics and fluid flow. This section sets up the first. Fourier's law says that heat flows down the temperature gradient; a balance of heat for a small element then shows that a steady temperature without sources is harmonic. Its level curves are the isotherms, and the level curves of a harmonic conjugate are the lines along which the heat flows. An insulated edge is a line of flow, which is why the Neumann condition $dT/dN = 0$ of [[§117★ Transformations of Boundary Conditions#^thm-117-2|Theorem §117.2]] is so common.
 
 ## Fourier's Law and Laplace's Equation
 
@@ -69,7 +69,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 
 ^pf-118-1
 
-*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] (Fubini), [[§27★ Harmonic Functions|§27]] (harmonic functions)
+*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] (Fubini), [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]]
 
 > [!remark]- Connections
 > - The same derivation in its general form, the heat equation $u_t = k\nabla^2u$ whose steady states are harmonic: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]] and the discussion after it. The exact version above is the divergence theorem in the plane for the field $-K\nabla T$, [[§111 Curl and Divergence#^thm-111-5|Calc Thm. §111.5]] (Green's theorem, normal form).
@@ -105,7 +105,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 > [!proof]+ Proof
 > **(a)** The gradient is perpendicular to level curves ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Calc Thm. §95.7]]). By (1) and $dT/dN = \operatorname{grad} T\cdot\mathbf N$, the flux in the direction $\mathbf N$ is $-K\operatorname{grad} T\cdot\mathbf N$, largest when $\mathbf N$ points along $-\operatorname{grad} T$, where it equals $K|\operatorname{grad} T|$.
 >
-> **(b)** By the Cauchy–Riemann equations $S_x = -T_y$, $S_y = T_x$, so $\operatorname{grad} S = (-T_y, T_x)$ is $\operatorname{grad} T$ turned through $+\pi/2$. Where $T + iS$ is conformal its derivative $T_x - iT_y$ ([[§21 Cauchy–Riemann Equations|§21]]) is nonzero, so $\operatorname{grad} S \ne \mathbf 0$ and the level curve $S = c_2$ is a smooth curve with normal $\operatorname{grad} S$ (implicit function theorem). Its tangent is perpendicular to $\operatorname{grad} S$, hence parallel to $\operatorname{grad} T$.
+> **(b)** By the Cauchy–Riemann equations $S_x = -T_y$, $S_y = T_x$, so $\operatorname{grad} S = (-T_y, T_x)$ is $\operatorname{grad} T$ turned through $+\pi/2$. Where $T + iS$ is conformal its derivative $T_x - iT_y$ ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]) is nonzero, so $\operatorname{grad} S \ne \mathbf 0$ and the level curve $S = c_2$ is a smooth curve with normal $\operatorname{grad} S$ (implicit function theorem). Its tangent is perpendicular to $\operatorname{grad} S$, hence parallel to $\operatorname{grad} T$.
 >
 > **(c)** Write vectors as complex numbers, so $\operatorname{grad} S = i\operatorname{grad} T$ by (b), $\mathbf N = i\mathbf t$, and $\alpha\cdot\beta = \operatorname{Re}(\alpha\bar\beta)$. Then
 >
@@ -117,10 +117,10 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 
 ^pf-118-2
 
-*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§118★ Steady Temperatures#^def-118-2|Def. §118.2]], [[§21 Cauchy–Riemann Equations|§21]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Calc Thm. §95.7]], [[Implicit Function Theorem|452 Implicit Function Theorem]]
+*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§118★ Steady Temperatures#^def-118-2|Def. §118.2]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Calc Thm. §95.7]], [[Implicit Function Theorem|452 Implicit Function Theorem]]
 
 > [!remark] Remark: Other Interpretations; the Maximum Principle
-> The function $T$ may also denote the concentration of a substance diffusing through a solid; then $K$ is the diffusion constant, and the derivation of (4) applies as well to steady-state diffusion. The maximum principle has a physical reading here: if $T = \operatorname{Re} f$ for $f$ analytic and not constant in a bounded region, $T$ attains its maximum and minimum only on the boundary ([[§59 Maximum Modulus Principle|§59]], Exercise 5). A steady temperature cannot have a hot spot inside: heat would flow away from it in every direction (Fourier's law), the temperature there would drop, and the state would not be steady (B&C Sec. 121, Exercise 13).
+> The function $T$ may also denote the concentration of a substance diffusing through a solid; then $K$ is the diffusion constant, and the derivation of (4) applies as well to steady-state diffusion. The maximum principle has a physical reading here: if $T = \operatorname{Re} f$ for $f$ analytic and not constant in a bounded region, $T$ attains its maximum and minimum only on the boundary ([[§59 Maximum Modulus Principle#^cor-59-5|Corollary §59.5]] and [[§59 Maximum Modulus Principle#^ex-59-3|Example §59.3]]). A steady temperature cannot have a hot spot inside: heat would flow away from it in every direction (Fourier's law), the temperature there would drop, and the state would not be steady (B&C Sec. 121, Exercise 13).
 
 ^rem-118-1
 

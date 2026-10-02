@@ -37,7 +37,7 @@ The first application of the method of [[§117★ Transformations of Boundary Co
 > w = \log\frac{z - 1}{z + 1} = \ln\frac{r_1}{r_2} + i(\theta_1 - \theta_2) \qquad \Big(\frac{r_1}{r_2} > 0,\ -\frac\pi2 < \theta_1 - \theta_2 < \frac{3\pi}{2}\Big) \qquad (3)
 > $$
 >
-> is defined on the half plane $y \ge 0$ except at $z = \pm1$, since $0 \le \theta_1 - \theta_2 \le \pi$ when $y \ge 0$. There it is the principal logarithm of $(z - 1)/(z + 1)$, and the upper half plane $y > 0$ is mapped onto the horizontal strip $0 < v < \pi$ ([[§102★ Examples (Mappings of the Upper Half Plane)|§102]], Example 3): $\frac{z - 1}{z + 1}$ maps the upper half plane onto itself and $\operatorname{Log}$ maps that onto the strip. The segment $-1 < x < 1$, where $\theta_1 - \theta_2 = \pi$, goes onto the upper edge $v = \pi$; the rest of the $x$ axis, where $\theta_1 - \theta_2 = 0$, goes onto the lower edge $v = 0$. The map is analytic for $y > 0$ and conformal on $y = 0$ except at $\pm1$, since its derivative $\frac{2}{z^2 - 1}$ is never $0$.
+> is defined on the half plane $y \ge 0$ except at $z = \pm1$, since $0 \le \theta_1 - \theta_2 \le \pi$ when $y \ge 0$. There it is the principal logarithm of $(z - 1)/(z + 1)$, and the upper half plane $y > 0$ is mapped onto the horizontal strip $0 < v < \pi$ ([[§102★ Examples (Mappings of the Upper Half Plane)#^ex-102-3|Example §102.3]]): $\frac{z - 1}{z + 1}$ maps the upper half plane onto itself and $\operatorname{Log}$ maps that onto the strip. The segment $-1 < x < 1$, where $\theta_1 - \theta_2 = \pi$, goes onto the upper edge $v = \pi$; the rest of the $x$ axis, where $\theta_1 - \theta_2 = 0$, goes onto the lower edge $v = 0$. The map is analytic for $y > 0$ and conformal on $y = 0$ except at $\pm1$, since its derivative $\frac{2}{z^2 - 1}$ is never $0$.
 >
 > **Solution in the strip.** A bounded harmonic function of $u$ and $v$ that is $0$ on $v = 0$ and $1$ on $v = \pi$ is
 >
@@ -84,7 +84,7 @@ The first application of the method of [[§117★ Transformations of Boundary Co
 ^ex-119-1
 
 > [!remark]- Connections
-> - The same Dirichlet problem by Fourier integrals: the half-plane Poisson formula $u = \frac1\pi\int f(s)\,\frac{y}{y^2 + (x - s)^2}\,ds$, [[§38 Potential in Unbounded Regions#^rem-38-2|341 Rem. §38.2]]; its example with a single jump at $0$ gives $\frac12 + \frac1\pi\arctan(x/y)$, the one-endpoint version of (6). B&C derives the half-plane formula in [[§139★ Dirichlet Problem for a Half Plane|§139]] (Chapter 12).
+> - The same Dirichlet problem by Fourier integrals: the half-plane Poisson formula $u = \frac1\pi\int f(s)\,\frac{y}{y^2 + (x - s)^2}\,ds$, [[§38 Potential in Unbounded Regions#^rem-38-2|341 Rem. §38.2]]; its example with a single jump at $0$ gives $\frac12 + \frac1\pi\arctan(x/y)$, the one-endpoint version of (6). B&C derives the half-plane formula in [[§139★ Dirichlet Problem for a Half Plane#^thm-139-1|Theorem §139.1]] (Chapter 12).
 
 ## Lines of Flow and Uniqueness
 
@@ -123,7 +123,7 @@ The first application of the method of [[§117★ Transformations of Boundary Co
 >
 > $A$ any real constant, so that the Dirichlet problem for the strip (and hence for the half plane) does not have a unique solution.
 >
-> Since $\cosh(u + iv) = \cosh u\cos v + i\sinh u\sin v$ ([[§39★ Hyperbolic Functions|§39]]), the imaginary part is as stated; it is harmonic as the imaginary part of an entire function. On $v = 0$, $\sin v = 0$ and $T = 0$; on $v = \pi$, $\sin v = 0$ and $T = 1$. So every $A$ gives a solution of the strip problem, and composing with (3) a solution of the half-plane problem. For $A \ne 0$ it is unbounded: along $v = \pi/2$, $A\sinh u \to \pm\infty$ as $u \to \pm\infty$, which in the $z$ plane means near the points $z = \mp1$ (where $|(z - 1)/(z + 1)|$ tends to $\infty$ or $0$). The boundedness condition is what singles out (6).
+> Since $\cosh(u + iv) = \cosh u\cos v + i\sinh u\sin v$ ([[§39★ Hyperbolic Functions#^prop-39-3|Proposition §39.3]]), the imaginary part is as stated; it is harmonic as the imaginary part of an entire function. On $v = 0$, $\sin v = 0$ and $T = 0$; on $v = \pi$, $\sin v = 0$ and $T = 1$. So every $A$ gives a solution of the strip problem, and composing with (3) a solution of the half-plane problem. For $A \ne 0$ it is unbounded: along $v = \pi/2$, $A\sinh u \to \pm\infty$ as $u \to \pm\infty$, which in the $z$ plane means near the points $z = \mp1$ (where $|(z - 1)/(z + 1)|$ tends to $\infty$ or $0$). The boundedness condition is what singles out (6).
 >
 > *B&C: Sec. 121, Exercise 10*
 

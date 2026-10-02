@@ -19,7 +19,7 @@ Two potential problems solved by mapping. In the first, a cylinder split lengthw
 > [!example] Example §123.1: Two Halves of a Cylinder at Potentials 0 and 1
 > A long hollow circular cylinder made of a thin conducting sheet is split lengthwise into two equal parts, separated by slender insulating strips and used as electrodes: one is grounded at potential $0$, the other kept at potential $1$. Over any cross section far from the ends, the potential $V(x, y)$ is harmonic inside the circle $x^2 + y^2 = 1$, with $V = 0$ on the upper half of the circle and $V = 1$ on the lower half (B&C's Fig. 165). Find $V$, its equipotentials and its flux lines.
 >
-> **The map.** The linear fractional transformation $z = \dfrac{i - w}{i + w}$ (1) maps the upper half plane onto the disk, the positive real axis onto the upper semicircle and the negative real axis onto the lower semicircle ([[§102★ Examples (Mappings of the Upper Half Plane)|§102]], Exercise 1). Its inverse is
+> **The map.** The linear fractional transformation $z = \dfrac{i - w}{i + w}$ (1) maps the upper half plane onto the disk, the positive real axis onto the upper semicircle and the negative real axis onto the lower semicircle ([[§102★ Examples (Mappings of the Upper Half Plane)#^ex-102-1|Example §102.1]]). Its inverse is
 >
 > $$
 > w = i\,\frac{1 - z}{1 + z} . \qquad (4)
@@ -148,7 +148,7 @@ Two potential problems solved by mapping. In the first, a cylinder split lengthw
 > V = \frac1\pi\operatorname{Arg}\Big(e^{i\pi/4}\,\frac{1 - z}{z - i}\Big) .
 > $$
 >
-> **On the axis**, $z = 0$: $Z = e^{i\pi/4}\cdot\frac{1}{-i} = e^{i\pi/4}e^{i\pi/2} = e^{i3\pi/4}$, so $V = \frac1\pi\cdot\frac{3\pi}{4} = \frac34$. This agrees with the mean value property: the potential at the center of a circle is the average of its boundary values, $\frac{1}{2\pi}\big(0\cdot\frac\pi2 + 1\cdot\frac{3\pi}{2}\big) = \frac34$ ([[§39 Potential in a Disk#^thm-39-4|341 Thm. §39.4]]; B&C's version is the Poisson integral, [[§134★ Poisson Integral Formula|§134]]).
+> **On the axis**, $z = 0$: $Z = e^{i\pi/4}\cdot\frac{1}{-i} = e^{i\pi/4}e^{i\pi/2} = e^{i3\pi/4}$, so $V = \frac1\pi\cdot\frac{3\pi}{4} = \frac34$. This agrees with the mean value property: the potential at the center of a circle is the average of its boundary values, $\frac{1}{2\pi}\big(0\cdot\frac\pi2 + 1\cdot\frac{3\pi}{2}\big) = \frac34$ ([[§39 Potential in a Disk#^thm-39-4|341 Thm. §39.4]]; B&C's version is the Poisson integral, [[§134★ Poisson Integral Formula#^thm-134-1|Theorem §134.1]]).
 >
 > *B&C: Sec. 123, Exercise 8*
 
