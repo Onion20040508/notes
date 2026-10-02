@@ -358,6 +358,9 @@ The resulting formula $u_p = u_c\int f/u_c\,dt$ is the integrating-factor soluti
 
 *Powers obtains it from (22): $u_p(t) = -u_1(t)\int_{t_0}^t \frac{u_2f}{W}\,dz + u_2(t)\int_{t_0}^t \frac{u_1f}{W}\,dz$, and the factors $u_1(t)$, $u_2(t)$ can be moved inside the integrals, which are not with respect to $t$. Proved in ODE: [[§18★ Variation of Parameters#^cor-18-2|331 Cor. §18.2]], which also shows that this $u_p$ is the solution with $u_p(t_0) = 0$, $u_p'(t_0) = 0$.*
 
+> [!remark]- Connections
+> - For constant coefficients $G(t, z)$ depends only on $t - z$ ([[§2★ Nonhomogeneous Linear Equations#^ex-2-5|Example §2.5]](a)), so $u_p$ is a convolution; the Laplace transform produces it as the impulse response, [[§26★ The Convolution Integral#^thm-26-3|331 Thm. §26.3]] (and in this subject [[§52★ Partial Fractions and Convolutions|§52★]], Powers 6.2).
+
 > [!remark] Remark: Reading the Green's Function
 > For fixed $z$, $G(t, z)$ as a function of $t$ is the solution of the homogeneous equation (H) with $G(z, z) = 0$ and $\partial_tG(z, z) = \frac{u_1(z)u_2'(z) - u_2(z)u_1'(z)}{W(z)} = 1$. So $u_p(t) = \int_{t_0}^tG(t, z)f(z)\,dz$ adds up, for each earlier time $z$, the free motion started at time $z$ by a unit kick, weighted by $f(z)\,dz$: the effect of the forcing is a superposition of its effects at each instant. This is the initial-value version of the Green's function; [[§5★ Green's Functions#^def-5-2|Definition §5.2]] builds one that satisfies boundary conditions at both ends of an interval, starting from this formula.
 
@@ -408,5 +411,3 @@ The resulting formula $u_p = u_c\int f/u_c\,dt$ is the integrating-factor soluti
 
 ^ex-2-5
 
-> [!remark]- Connections
-> - The kernel in (a) depends only on $t - z$, so $u_p$ is a convolution; the Laplace transform produces it as the impulse response, [[§26★ The Convolution Integral#^thm-26-3|331 Thm. §26.3]] (and in this subject [[§52★ Partial Fractions and Convolutions|§52★]], Powers 6.2).

@@ -369,13 +369,13 @@ This is the boundary-value version of resonance ([[§2★ Nonhomogeneous Linear 
 
 *Uses:* [[§5★ Green's Functions#^def-5-2|Def. §5.2]], [[§5★ Green's Functions#^lem-5-2|§5.2]]
 
+> [!remark]- Connections
+> - In two and three dimensions the response of $\nabla^2u$ to a point source is the fundamental solution $C\ln r$ in the plane, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]], or $C/r$ in space, [[§19 The Laplacian in Spherical Coordinates#^rem-19-2|452 Remark: Verification: Radial Functions]]; Green's functions of the Laplacian on bounded regions are built from these together with Green's identities, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|452 Thm. §17.3]].
+
 > [!remark] Remark: The Green's Function as Response to a Point Source
 > Properties (i)–(iv) say that $G(\cdot, z)$ is what the system does when the whole inhomogeneity is concentrated at the single point $z$ with total strength $1$. For example, for a cable or string under tension ([[§3★ Boundary Value Problems#^prop-3-1|Proposition §3.1]], $Tu'' = f$), a load concentrated at $z$ leaves the string straight on both sides of $z$, while the force balance at $z$ puts a corner there, a jump in the slope proportional to the load (Example §5.3). Since $f$ is a superposition of point sources $f(z)\,dz$ at all points $z$, linearity gives $u(x) = \int_l^r G(x, z)f(z)\,dz$. In physics notation, $G$ solves $LG = \delta(x - z)$ with the homogeneous boundary conditions, $\delta$ being the Dirac delta; the jump condition (iii) is what integrating $G'' = \delta$ across $z$ gives.
 
 ^rem-5-1
-
-> [!remark]- Connections
-> - In two and three dimensions the response of $\nabla^2u$ to a point source is the fundamental solution $C\ln r$ in the plane, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]], or $C/r$ in space, [[§19 The Laplacian in Spherical Coordinates#^rem-19-2|452 Remark: Verification: Radial Functions]]; Green's functions of the Laplacian on bounded regions are built from these together with Green's identities, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|452 Thm. §17.3]].
 
 > [!remark] Remark: Method — Constructing a Green's Function
 > To solve $u'' + k(x)u' + p(x)u = f(x)$ on $l < x < r$ with homogeneous conditions at both ends:

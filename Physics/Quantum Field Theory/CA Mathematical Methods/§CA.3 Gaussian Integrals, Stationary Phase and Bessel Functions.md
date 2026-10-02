@@ -105,7 +105,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 ^rem-ca-3-2
 
 > [!example] Example §CA.3.1: The Exponent of the Wightman Function Outside the Light Cone
-> For $0 < |t| < r$ write $\rho = \sqrt{r^2 - t^2}$. Find the saddle point, the exponent and the leading prefactor of $D_W(t, r)$ for $m\rho \gg 1$.
+> For $0 < t < r$ write $\rho = \sqrt{r^2 - t^2}$. Find the saddle point, the exponent and the leading prefactor of $D_W(t, r)$ for $m\rho \gg 1$. (For $t < 0$ nothing new: at spacelike separation $D_W(-\xi) = D_W(\xi)$ ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-16|Theorem §C2.5.16]]) and $D_W$ depends on $\boldsymbol\xi$ only through $r$, so $D_W(-t, r) = D_W(t, r)$.)
 >
 > **Step 1** (one-dimensional form). As in Steps 2–3 of the second route of [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], now with the factor $e^{-iE_{\mathbf p}t}$ kept (angular integral, then folding onto the whole line),
 >
@@ -115,7 +115,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 >
 > **Step 2** (stationary points). $S'(p) = r - \frac{pt}{\sqrt{p^2 + m^2}} = 0$ gives $r^2(p^2 + m^2) = p^2t^2$, i.e. $p^2(r^2 - t^2) = -m^2r^2$. Inside the cone ($r < |t|$) the root is real, $r/t = p/E_p$, the classical velocity, and stationary phase reproduces the oscillating amplitude. Outside, no real momentum has velocity $r/t > 1$, and the saddle moves to $p_0 = imr/\rho$.
 >
-> **Step 3** (the branch at the saddle). $p_0^2 + m^2 = m^2(1 - r^2/\rho^2) = -m^2t^2/\rho^2$, and the branch fixed by the Euclidean continuation ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-8|Theorem §C2.5.8]]) is $\sqrt{p_0^2 + m^2} = imt/\rho$.
+> **Step 3** (the branch at the saddle). $p_0^2 + m^2 = m^2(1 - r^2/\rho^2) = -m^2t^2/\rho^2$, and the branch is fixed by the saddle condition itself: $S'(p_0) = r - p_0t/\sqrt{p_0^2 + m^2} = 0$ requires $\sqrt{p_0^2 + m^2} = p_0t/r = imt/\rho$, the value on the right lip of the cut of [[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], second route, Step 5.
 >
 > **Step 4** (the exponent). $S(p_0) = \frac{imr}{\rho}\,r - t\,\frac{imt}{\rho} = \frac{im(r^2 - t^2)}{\rho} = im\rho$, so $e^{iS(p_0)} = e^{-m\rho} = e^{-m\sqrt{r^2 - t^2}}$.
 >

@@ -103,9 +103,6 @@ This situation typically arises when a boundary point is a mathematical boundary
 
 ^rem-4-1
 
-> [!remark]- Connections
-> - The operator $\frac1r\frac{d}{dr}\big(r\frac{du}{dr}\big)$ is the Laplacian of a radial function in the plane, and its homogeneous solutions $1$, $\ln r$ are the constants and the fundamental solution $C\ln r$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]]; the spherical counterpart $\frac1{\rho^2}\frac{d}{d\rho}\big(\rho^2\frac{du}{d\rho}\big)$, with solutions $1$, $1/\rho$, is [[§19 The Laplacian in Spherical Coordinates#^rem-19-2|452 Remark: Verification: Radial Functions]].
-
 ## Semi-Infinite and Infinite Intervals
 
 The other type of singular boundary value problem has an infinite interval of interest, always a mathematical abstraction that cannot be realized physically.
@@ -227,6 +224,9 @@ Problems in a sphere lead to the operator $\frac1{\rho^2}\frac{d}{d\rho}\big(\rh
 > Dividing by $\rho^2$ gives $v''/\rho$. Since $-\mu^2u = -\mu^2v/\rho$, the two equations are equivalent after multiplying by $\rho > 0$.
 
 ^pf-4-2
+
+> [!remark]- Connections
+> - The operator of Lemma §4.2 is the Laplacian of a radial function in space, [[§19 The Laplacian in Spherical Coordinates#^rem-19-2|452 Remark: Verification: Radial Functions]]; with $\mu = 0$ the lemma gives $v = c_1 + c_2\rho$, so the radial harmonic functions are $c_2 + c_1/\rho$, the constants and the fundamental solution $C/r$. The planar counterpart $\frac1r\frac{d}{dr}\big(r\frac{du}{dr}\big)$ of Example §4.2, with homogeneous solutions $1$ and $\ln r$, is the fundamental solution $C\ln r$ of [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]].
 
 > [!example] Example §4.4: The Critical Radius of a Uranium Sphere
 > The neutron flux $u$ in a sphere of uranium of radius $a$ obeys

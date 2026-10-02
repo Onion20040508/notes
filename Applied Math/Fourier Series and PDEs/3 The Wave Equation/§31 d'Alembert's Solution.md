@@ -55,7 +55,7 @@ In the plucked-string example of [[§30 Solution of the Vibrating String Problem
 
 > [!remark]- Connections
 > - The chain rule for a change of variables in the plane, rigorously: [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]]; equality of mixed partials: [[§5 Equality of Mixed Partials#^thm-5-1|452 Thm. §5.1]].
-> - The lecture's version of the same computation: the operator factors as $\partial_t^2 - c^2\partial_x^2 = (\partial_t - c\partial_x)(\partial_t + c\partial_x)$, and the new coordinates are chosen so that the two factors become (multiples of) $\partial/\partial w$ and $\partial/\partial z$. The lines $x \pm ct = \text{const}$ are the **characteristics** of the wave equation; the classification of second-order equations as hyperbolic, parabolic and elliptic is in [[§40★ Classification and Limitations|§40★]] (Powers 4.6).
+> - The lecture's version of the same computation: the operator factors as $\partial_t^2 - c^2\partial_x^2 = (\partial_t - c\partial_x)(\partial_t + c\partial_x)$, and the new coordinates are chosen so that the two factors become (multiples of) $\partial/\partial w$ and $\partial/\partial z$. The lines $x \pm ct = \text{const}$ are the **characteristics** of the wave equation; the classification of second-order equations as hyperbolic, parabolic and elliptic is [[§40★ Classification and Limitations#^def-40-1|Definition §40.1]] (Powers 4.6).
 
 > [!theorem] Theorem §31.2: d'Alembert's General Solution
 > If $\psi$ and $\phi$ are any twice differentiable functions of one variable, then
@@ -217,7 +217,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 
 ^pf-31-3
 
-*Uses:* [[§31 d'Alembert's Solution#^thm-31-2|§31.2]], [[§31 d'Alembert's Solution#^def-31-2|Def. §31.2]], [[§7 Arbitrary Period and Half-Range Expansions|§7]] (odd and even periodic extensions)
+*Uses:* [[§31 d'Alembert's Solution#^thm-31-2|§31.2]], [[§31 d'Alembert's Solution#^def-31-2|Def. §31.2]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|Def. §7.3]] (odd and even periodic extensions)
 
 ![[m341-31-1.svg]]
 *d'Alembert's construction for the plucked string of [[§30 Solution of the Vibrating String Problem#^ex-30-1|Example §30.1]] at $ct = 0.3a$. The odd $2a$-periodic extension $\bar f_o$ is shifted $ct$ to the left (blue) and $ct$ to the right (red, dashed); on $0 < x < a$ (shaded) their average is the string (black), a trapezoid. Outside the string the two waves are reflections of each other through the ends $x = 0$ and $x = a$, which is how the fixed ends act: a wave arriving at an end comes back inverted.*
@@ -276,7 +276,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 
 ^pf-31-4
 
-*Uses:* [[§30 Solution of the Vibrating String Problem#^thm-30-2|§30.2]], [[§31 d'Alembert's Solution#^thm-31-3|§31.3]], [[§7 Arbitrary Period and Half-Range Expansions|§7]]
+*Uses:* [[§30 Solution of the Vibrating String Problem#^thm-30-2|§30.2]], [[§31 d'Alembert's Solution#^thm-31-3|§31.3]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]]
 
 > [!example] Example §31.1: The Midterm Problem by d'Alembert's Method
 > For the problem of [[§30 Solution of the Vibrating String Problem#^ex-30-2|Example §30.2]], $u_{tt} = 4u_{xx}$ on $0 < x < \pi$ with fixed ends, $u(x, 0) = x$ and $u_t(x, 0) = \sin(2x)$: **(d)** express $\psi$ and $\phi$ in terms of the initial conditions, **(e)** expand them in Fourier series and write $u$ as d'Alembert's solution, **(f)** check that the result agrees with the series solution. (The exam names the two functions the other way round.)

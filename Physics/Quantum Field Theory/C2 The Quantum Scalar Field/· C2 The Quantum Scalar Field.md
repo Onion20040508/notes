@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # C2 The Quantum Scalar Field
 ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· CA Mathematical Methods|CA Mathematical Methods]] (116)
+**Builds on:** [[· CA Mathematical Methods|CA Mathematical Methods]] (121)
 **Used by:** [[· CA Mathematical Methods|CA Mathematical Methods]] (23)
 
 ## Sections

@@ -1,0 +1,17 @@
+% Figure for Fourier Series and PDEs §10.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=12cm, height=5.6cm, xmin=-6.6, xmax=13.0, ymin=-2.0, ymax=3.0, axis lines=middle,
+  xtick={-6.2832,3.1416,6.2832,9.4248,12.5664}, xticklabels={$-2\pi$,$\pi$,$2\pi$,$3\pi$,$4\pi$},
+  ytick={-1.5708,1.5708,2.4674}, yticklabels={$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\frac{\pi^2}{4}$}, xlabel={$x$}, xlabel style={anchor=west}]
+  \addplot[figB, samples=2, domain=-6.2832:0.0000] {(pi-(x--6.2832))/2};
+  \addplot[figR, samples=80, domain=-6.2832:0.0000] {(x--6.2832)*(2*pi-(x--6.2832))/4};
+  \addplot[figB, samples=2, domain=0.0000:6.2832] {(pi-(x-0.0000))/2};
+  \addplot[figR, samples=80, domain=0.0000:6.2832] {(x-0.0000)*(2*pi-(x-0.0000))/4};
+  \addplot[figB, samples=2, domain=6.2832:12.5664] {(pi-(x-6.2832))/2};
+  \addplot[figR, samples=80, domain=6.2832:12.5664] {(x-6.2832)*(2*pi-(x-6.2832))/4};
+\end{axis}
+\begin{scope}[font=\scriptsize, shift={(10.6cm,0.55cm)}]
+  \draw[figB, line width=0.9pt] (0,0) -- (0.5,0) node[right, black] {$f$};
+  \draw[figR, line width=0.9pt] (0,-0.4) -- (0.5,-0.4) node[right, black] {$\int_0^x f$};
+\end{scope}
+\end{tikzpicture}

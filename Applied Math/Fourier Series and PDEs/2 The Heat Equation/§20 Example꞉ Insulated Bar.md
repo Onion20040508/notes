@@ -142,7 +142,13 @@ $$
 >
 > Because $\lambda_n = n\pi/a$, this is a Fourier cosine series problem (the Fourier series of the even periodic extension of $f$, [[§7 Arbitrary Period and Half-Range Expansions|§7]], half-range expansions), and the coefficients are given by (10). For sectionally smooth $f$ the series converges to $f(x)$ wherever $f$ is continuous ([[§8 Convergence of Fourier Series|§8]], Theorem).
 >
-> Finally, for $n \ge 1$, $|a_n\cos(\lambda_nx)\exp(-\lambda_n^2kt)| \le |a_n|\exp(-\lambda_n^2kt)$, and the sum of these bounds tends to $0$ as $t \to \infty$ (each term does, and for $t \ge 1$ the sum is dominated by $M\sum e^{-\lambda_n^2k(t-1)}e^{-\lambda_n^2k}$ with $M = \max|a_n|$). So $u(x, t) \to a_0$.
+> Finally, let $M$ bound the $|a_n|$ and fix $t_0 > 0$. For $t \ge t_0$, since $\lambda_n^2 \ge \lambda_1^2$, $e^{-\lambda_n^2kt} \le e^{-\lambda_n^2kt_0}e^{-\lambda_1^2k(t - t_0)}$, so
+>
+> $$
+> \Big|\sum_{n=1}^\infty a_n\cos(\lambda_nx)e^{-\lambda_n^2kt}\Big| \le Me^{-\lambda_1^2k(t - t_0)}\sum_{n=1}^\infty e^{-\lambda_n^2kt_0} \to 0 \qquad (t \to \infty) ,
+> $$
+>
+> uniformly in $x$. So $u(x, t) \to a_0$.
 
 ^pf-20-2
 
@@ -196,7 +202,7 @@ $$
 > [!example] Example §20.2: Prescribed Heat Flow at Both Ends
 > Consider $u_{xx} = \frac1ku_t$, $0 < x < a$, with $u_x(0, t) = S_0$, $u_x(a, t) = S_1$ and $u(x, 0) = f(x)$.
 >
-> **The steady-state problem has a solution if and only if $S_0 = S_1$.** It is $v'' = 0$, $v'(0) = S_0$, $v'(a) = S_1$. With $v = Ax + B$, the conditions say $A = S_0$ and $A = S_1$. So if $S_0 \ne S_1$ there is no solution, and if $S_0 = S_1$ then $v(x) = S_0x + B$ with $B$ arbitrary (take $B = 0$). Physical reason: the heat flux $q = -\kappa u_x$ is $-\kappa S_0$ at the left end and $-\kappa S_1$ at the right, so heat enters the rod at the net rate $A\kappa(S_1 - S_0)$ (Remark: Why the Limit Is the Average). In a steady state nothing changes, so heat in must equal heat out.
+> **The steady-state problem has a solution if and only if $S_0 = S_1$.** It is $v'' = 0$, $v'(0) = S_0$, $v'(a) = S_1$. With $v = Ax + B$, the conditions say $A = S_0$ and $A = S_1$. So if $S_0 \ne S_1$ there is no solution, and if $S_0 = S_1$ then $v(x) = S_0x + B$ with $B$ arbitrary (take $B = 0$). Physical reason: the heat flux $q = -\kappa u_x$ is $-\kappa S_0$ at the left end and $-\kappa S_1$ at the right, so heat enters the rod at the net rate $A\kappa(S_1 - S_0)$ ([[§20 Example꞉ Insulated Bar#^rem-20-1|Remark: Why the Limit Is the Average]]). In a steady state nothing changes, so heat in must equal heat out.
 >
 > **If $S_0 = S_1$**, the transient $w = u - v$ satisfies $w_{xx} = \frac1kw_t$, $w_x(0, t) = w_x(a, t) = 0$, $w(x, 0) = f(x) - S_0x$: the insulated-bar problem, solved by Theorem §20.2.
 >

@@ -1,0 +1,107 @@
+% Figure for Fourier Series and PDEs §59.
+\begin{tikzpicture}[x=0.78cm, y=0.78cm]
+  \begin{scope}[xshift=0.0*0.78cm]
+    \draw[thick] (0,0) rectangle (4,4);
+    \foreach \v in {1,2,3} {\draw[black!20] (\v,0) -- (\v,4); \draw[black!20] (0,\v) -- (4,\v);}
+    \fill[black!50] (1,3) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (1,3) {$0$};
+    \fill[black!50] (2,3) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (2,3) {$0$};
+    \fill[black!50] (3,3) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (3,3) {$0$};
+    \fill[black!50] (1,2) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (1,2) {$0$};
+    \fill[black!50] (2,2) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (2,2) {$0$};
+    \fill[black!50] (3,2) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (3,2) {$0$};
+    \fill[figR!35] (1,1) circle (0.450);
+    \fill[black!50] (1,1) circle (1.3pt);
+    \node[figR, font=\scriptsize, above right, inner sep=1pt] at (1,1) {$64$};
+    \fill[black!50] (2,1) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (2,1) {$0$};
+    \fill[black!50] (3,1) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (3,1) {$0$};
+    \node[font=\small] at (2,-0.55) {$m = 0$};
+  \end{scope}
+  \begin{scope}[xshift=5.0*0.78cm]
+    \draw[thick] (0,0) rectangle (4,4);
+    \foreach \v in {1,2,3} {\draw[black!20] (\v,0) -- (\v,4); \draw[black!20] (0,\v) -- (4,\v);}
+    \fill[figR!35] (1,3) circle (0.237);
+    \fill[black!50] (1,3) circle (1.3pt);
+    \node[figR, font=\scriptsize, above right, inner sep=1pt] at (1,3) {$8$};
+    \fill[black!50] (2,3) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (2,3) {$0$};
+    \fill[black!50] (3,3) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (3,3) {$0$};
+    \fill[black!50] (1,2) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (1,2) {$0$};
+    \fill[figR!35] (2,2) circle (0.285);
+    \fill[black!50] (2,2) circle (1.3pt);
+    \node[figR, font=\scriptsize, above right, inner sep=1pt] at (2,2) {$16$};
+    \fill[black!50] (3,2) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (3,2) {$0$};
+    \fill[figB!35] (1,1) circle (0.406);
+    \fill[black!50] (1,1) circle (1.3pt);
+    \node[figB, font=\scriptsize, above right, inner sep=1pt] at (1,1) {$-48$};
+    \fill[black!50] (2,1) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (2,1) {$0$};
+    \fill[figR!35] (3,1) circle (0.237);
+    \fill[black!50] (3,1) circle (1.3pt);
+    \node[figR, font=\scriptsize, above right, inner sep=1pt] at (3,1) {$8$};
+    \node[font=\small] at (2,-0.55) {$m = 2$};
+  \end{scope}
+  \begin{scope}[xshift=10.0*0.78cm]
+    \draw[thick] (0,0) rectangle (4,4);
+    \foreach \v in {1,2,3} {\draw[black!20] (\v,0) -- (\v,4); \draw[black!20] (0,\v) -- (4,\v);}
+    \fill[figB!35] (1,3) circle (0.285);
+    \fill[black!50] (1,3) circle (1.3pt);
+    \node[figB, font=\scriptsize, above right, inner sep=1pt] at (1,3) {$-16$};
+    \fill[black!50] (2,3) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (2,3) {$0$};
+    \fill[figR!35] (3,3) circle (0.263);
+    \fill[black!50] (3,3) circle (1.3pt);
+    \node[figR, font=\scriptsize, above right, inner sep=1pt] at (3,3) {$12$};
+    \fill[black!50] (1,2) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (1,2) {$0$};
+    \fill[figB!35] (2,2) circle (0.353);
+    \fill[black!50] (2,2) circle (1.3pt);
+    \node[figB, font=\scriptsize, above right, inner sep=1pt] at (2,2) {$-32$};
+    \fill[black!50] (3,2) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (3,2) {$0$};
+    \fill[figR!35] (1,1) circle (0.304);
+    \fill[black!50] (1,1) circle (1.3pt);
+    \node[figR, font=\scriptsize, above right, inner sep=1pt] at (1,1) {$20$};
+    \fill[black!50] (2,1) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (2,1) {$0$};
+    \fill[figB!35] (3,1) circle (0.285);
+    \fill[black!50] (3,1) circle (1.3pt);
+    \node[figB, font=\scriptsize, above right, inner sep=1pt] at (3,1) {$-16$};
+    \node[font=\small] at (2,-0.55) {$m = 4$};
+  \end{scope}
+  \begin{scope}[xshift=15.0*0.78cm]
+    \draw[thick] (0,0) rectangle (4,4);
+    \foreach \v in {1,2,3} {\draw[black!20] (\v,0) -- (\v,4); \draw[black!20] (0,\v) -- (4,\v);}
+    \fill[black!50] (1,3) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (1,3) {$0$};
+    \fill[black!50] (2,3) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (2,3) {$0$};
+    \fill[figR!35] (3,3) circle (0.447);
+    \fill[black!50] (3,3) circle (1.3pt);
+    \node[figR, font=\scriptsize, above right, inner sep=1pt] at (3,3) {$63$};
+    \fill[black!50] (1,2) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (1,2) {$0$};
+    \fill[black!50] (2,2) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (2,2) {$0$};
+    \fill[black!50] (3,2) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (3,2) {$0$};
+    \fill[figR!35] (1,1) circle (0.161);
+    \fill[black!50] (1,1) circle (1.3pt);
+    \node[figR, font=\scriptsize, above right, inner sep=1pt] at (1,1) {$1$};
+    \fill[black!50] (2,1) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (2,1) {$0$};
+    \fill[black!50] (3,1) circle (1.3pt);
+    \node[black!45, font=\scriptsize, above right, inner sep=1pt] at (3,1) {$0$};
+    \node[font=\small] at (2,-0.55) {$m = 8$};
+  \end{scope}
+\end{tikzpicture}

@@ -26,7 +26,7 @@ Turns a linear field equation with a point source into an explicit Green's funct
 
 ## Instances
 
-| Instance | Steps 1–2 | Step 3 | Steps 4–5 | Steps 6–7 |
+| Instance | Steps 1–2 | Step 3 (passing $-E$ / $+E$) | Steps 4–5 | Steps 6–7 |
 | --- | --- | --- | --- | --- |
 | Retarded $D_R$ | [[§C2.6 Green's Functions and the Feynman Propagator#^def-c2-6-2\|Def. §C2.6.2]] | above / above | [[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-4\|Theorem §C2.6.4]], Steps 2–4 | [[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-4\|Theorem §C2.6.4]], Steps 5–7 |
 | Feynman $D_F$ | [[§C2.6 Green's Functions and the Feynman Propagator#^def-c2-6-2\|Def. §C2.6.2]] | below / above | [[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-6\|Theorem §C2.6.6]], Steps 1–3 | [[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-6\|Theorem §C2.6.6]], Steps 4–6 |

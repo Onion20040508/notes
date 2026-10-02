@@ -44,7 +44,7 @@ $$
 \phi(0) = 0, \qquad \phi(a) = 0 . \qquad (7)
 $$
 
-The eigenvalue problem (6)–(7) was solved in [[§19 Example꞉ Fixed End Temperatures|§19]] (Powers 2.3): a positive separation constant ($\phi''/\phi = p^2 > 0$) or zero gives only $\phi \equiv 0$ (Powers' Exercise 3.2.18; the cases are worked in [[§30 Solution of the Vibrating String Problem#^ex-30-2|Example §30.2]]), and the eigenvalues and eigenfunctions are
+The eigenvalue problem (6)–(7) was solved in [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|Theorem §19.2]] (Powers 2.3): a positive separation constant ($\phi''/\phi = p^2 > 0$) or zero gives only $\phi \equiv 0$ (Powers' Exercise 3.2.18; the cases are worked in [[§30 Solution of the Vibrating String Problem#^ex-30-2|Example §30.2]]), and the eigenvalues and eigenfunctions are
 
 $$
 \lambda_n^2 = \Big(\frac{n\pi}{a}\Big)^2, \qquad \phi_n(x) = \sin(\lambda_nx), \qquad n = 1, 2, 3, \ldots .
@@ -97,7 +97,7 @@ where $a_n$ and $b_n$ are arbitrary: there are two independent solutions. This i
 
 ## The Series Solution
 
-By the principle of superposition ([[§19 Example꞉ Fixed End Temperatures|§19]], Powers 2.3), every finite linear combination of the $u_n$ also satisfies (1) and (2); the combination needs no new constants because the $a_n$ and $b_n$ are arbitrary. Taking an infinite series and requiring the initial conditions leads to the solution.
+By the principle of superposition ([[§19 Example꞉ Fixed End Temperatures#^thm-19-4|Theorem §19.4]]), every finite linear combination of the $u_n$ also satisfies (1) and (2); the combination needs no new constants because the $a_n$ and $b_n$ are arbitrary. Taking an infinite series and requiring the initial conditions leads to the solution.
 
 > [!theorem] Theorem §30.2: Series Solution of the Vibrating String Problem
 > Let $f$ and $g$ be sectionally smooth on $0 < x < a$. The solution of the vibrating string problem (1)–(4) is
@@ -140,22 +140,22 @@ By the principle of superposition ([[§19 Example꞉ Fixed End Temperatures|§19
 > \frac{\partial u}{\partial t}(x, 0) = \sum_{n=1}^\infty b_n\frac{n\pi}{a}c\,\sin\Big(\frac{n\pi x}{a}\Big) = g(x), \qquad 0 < x < a .
 > $$
 >
-> Both are Fourier sine series problems: a given function on $0 < x < a$ is to be expanded in a series of $\sin(n\pi x/a)$ ([[§7 Arbitrary Period and Half-Range Expansions|§7]], Powers 1.2, sine series). In each case the constant multiplying $\sin(n\pi x/a)$ must be the Fourier sine coefficient of the given function. So $a_n$ is given by (10), and
+> Both are Fourier sine series problems: a given function on $0 < x < a$ is to be expanded in a series of $\sin(n\pi x/a)$ ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]). In each case the constant multiplying $\sin(n\pi x/a)$ must be the Fourier sine coefficient of the given function. So $a_n$ is given by (10), and
 >
 > $$
 > b_n\frac{n\pi}{a}c = \frac{2}{a}\int_0^a g(x)\sin\Big(\frac{n\pi x}{a}\Big)dx, \qquad\text{that is,}\qquad b_n = \frac{2}{n\pi c}\int_0^a g(x)\sin\Big(\frac{n\pi x}{a}\Big)dx ,
 > $$
 >
-> which is (11). Since $f$ and $g$ are sectionally smooth, their sine series converge to them at every point of $0 < x < a$ where they are continuous ([[§8 Convergence of Fourier Series|§8]], Powers 1.3, Theorem): the initial conditions really are satisfied, except possibly at points of discontinuity of $f$ or $g$.
+> which is (11). Since $f$ and $g$ are sectionally smooth, their sine series converge to them at every point of $0 < x < a$ where they are continuous ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]], for the odd periodic extension): the initial conditions really are satisfied, except possibly at points of discontinuity of $f$ or $g$.
 
 ^pf-30-2
 
-*Uses:* [[§30 Solution of the Vibrating String Problem#^prop-30-1|§30.1]], [[§7 Arbitrary Period and Half-Range Expansions|§7]] (sine series), [[§8 Convergence of Fourier Series|§8]] (convergence theorem)
+*Uses:* [[§30 Solution of the Vibrating String Problem#^prop-30-1|§30.1]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (sine series), [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]] (convergence theorem)
 
-By the nature of the problem one expects $f$, at least, to be continuous, with $f(0) = f(a) = 0$ (the string is attached at the ends). Then the sine series of $f$ converges uniformly ([[§9 Uniform Convergence|§9]], Powers 1.4, Theorem). That the formal series (9) really is a solution is best seen from its d'Alembert form, [[§31 d'Alembert's Solution|§31]].
+By the nature of the problem one expects $f$, at least, to be continuous, with $f(0) = f(a) = 0$ (the string is attached at the ends). Then the sine series of $f$ converges uniformly ([[§9 Uniform Convergence#^thm-9-5|Theorem §9.5]]). That the formal series (9) really is a solution is best seen from its d'Alembert form, [[§31 d'Alembert's Solution|§31]].
 
 > [!remark]- Connections
-> - The coefficients $\lambda_n = n\pi/a$, $\phi_n = \sin(\lambda_nx)$ are the eigenvalues and eigenfunctions of the regular Sturm–Liouville problem (6)–(7), and the sine coefficients (10), (11) are orthogonal projections onto them: [[§23 Sturm–Liouville Problems|§23]], [[§24 Expansion in Series of Eigenfunctions|§24]]. The finite-dimensional picture is the expansion of a vector in an orthogonal basis of eigenvectors of a symmetric matrix, [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]].
+> - The coefficients $\lambda_n = n\pi/a$, $\phi_n = \sin(\lambda_nx)$ are the eigenvalues and eigenfunctions of the regular Sturm–Liouville problem (6)–(7), and the sine coefficients (10), (11) are orthogonal projections onto them: [[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]], [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2]]. The finite-dimensional picture is the expansion of a vector in an orthogonal basis of eigenvectors of a symmetric matrix, [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]].
 > - Uniform convergence of (9) when $\sum(|a_n| + |b_n|) < \infty$ (as for (12) below, where $|a_n| \le 8h/(\pi^2n^2)$) is the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]].
 
 > [!remark] Remark: Method — Separation of Variables for the Vibrating String
@@ -240,11 +240,11 @@ By the nature of the problem one expects $f$, at least, to be continuous, with $
 > u(x, t) = \frac12\Big[\sum_{n=1}^\infty a_n\sin\Big(\frac{n\pi(x - ct)}{a}\Big) + \sum_{n=1}^\infty a_n\sin\Big(\frac{n\pi(x + ct)}{a}\Big)\Big]
 > $$
 >
-> (both series converge, so the sum may be split). The series $\sum a_n\sin(n\pi y/a)$, with $a_n$ the sine coefficients (10) of $f$, is the Fourier series of the odd $2a$-periodic extension $\bar f_o$ ([[§7 Arbitrary Period and Half-Range Expansions|§7]], Powers 1.2). Under the hypotheses $\bar f_o$ is continuous on the whole line (the conditions $f(0) = f(a) = 0$ prevent jumps at multiples of $a$) and sectionally smooth, so its Fourier series converges to $\bar f_o(y)$ at every $y$ ([[§8 Convergence of Fourier Series|§8]], Powers 1.3). Putting $y = x - ct$ and $y = x + ct$ gives (13).
+> (both series converge, so the sum may be split). The series $\sum a_n\sin(n\pi y/a)$, with $a_n$ the sine coefficients (10) of $f$, is the Fourier series of the odd $2a$-periodic extension $\bar f_o$ ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|Definition §7.3]]). Under the hypotheses $\bar f_o$ is continuous on the whole line (the conditions $f(0) = f(a) = 0$ prevent jumps at multiples of $a$) and sectionally smooth, so its Fourier series converges to $\bar f_o(y)$ at every $y$ ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]). Putting $y = x - ct$ and $y = x + ct$ gives (13).
 
 ^pf-30-3
 
-*Uses:* [[§30 Solution of the Vibrating String Problem#^thm-30-2|§30.2]], [[§7 Arbitrary Period and Half-Range Expansions|§7]] (odd periodic extension), [[§8 Convergence of Fourier Series|§8]]
+*Uses:* [[§30 Solution of the Vibrating String Problem#^thm-30-2|§30.2]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|Def. §7.3]] (odd periodic extension), [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]]
 
 Formula (13) gives $u$ without summing a series, for any $f$, as long as $g \equiv 0$. [[§31 d'Alembert's Solution#^thm-31-3|Theorem §31.3]] generalizes it to any $g$.
 

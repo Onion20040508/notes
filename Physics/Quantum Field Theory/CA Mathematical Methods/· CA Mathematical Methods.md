@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ← [[· C2 The Quantum Scalar Field]] · ↑ [[Quantum Field Theory]]
 
 **Builds on:** [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (23)
-**Used by:** [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (116)
+**Used by:** [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (121)
 
 ## Sections
 - [[§CA.1 Generalized Functions and Fourier Transforms]] — 513 notes App. A

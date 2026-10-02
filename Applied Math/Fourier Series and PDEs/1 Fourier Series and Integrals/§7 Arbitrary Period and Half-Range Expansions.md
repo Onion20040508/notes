@@ -91,7 +91,7 @@ $$
 >
 > We will see in [[§9 Uniform Convergence|§9]] that $|\sin(\pi x)|$ is equal to its series, and the series converges uniformly.
 >
-> *Powers: 1.2, Example 1*
+> *Powers: 1.2, first Example*
 
 ^ex-7-1
 
@@ -357,12 +357,12 @@ If the series converge, they represent periodic functions of period $2a$: the co
 > \frac12 - \sum_{n=1}^{\infty}\frac{2(1 - \cos n\pi)}{n^2\pi^2}\cos(n\pi x) \sim \begin{cases} f(x) = x, & 0 < x < 1, \\ f_e(x) = |x|, & -1 < x < 1, \\ \bar f_e(x), & -\infty < x < \infty . \end{cases}
 > $$
 >
-> *Powers: 1.2, Examples 2 and 3; Source: 341 lecture 8.29, Example 2*
+> *Powers: 1.2, second and third Examples; Source: 341 lecture 8.29, Example 2*
 
 ^ex-7-3
 
 ![[m341-7-1.svg]]
-*Example §7.3: the odd periodic extension $\bar f_o$ (top) and the even periodic extension $\bar f_e$ (bottom) of $f(x) = x$, $0 < x < 1$ (heavy). The odd one is a sawtooth with jumps at the odd integers; the even one is a continuous triangle wave with corners. The sine series represents the top function, the cosine series the bottom one, and both equal $x$ on $0 < x < 1$.*
+*Example §7.3: the odd periodic extension $\bar f_o$ (top) and the even periodic extension $\bar f_e$ (bottom) of $f(x) = x$, $0 < x < 1$ (heavy). The odd one is a sawtooth with jumps at the odd integers, where the sine series converges to the midpoint $0$ (dots); the even one is a continuous triangle wave with corners. The sine series represents the top function, the cosine series the bottom one, and both equal $x$ on $0 < x < 1$.*
 
 > [!example] Example §7.4: Odd and Even Extensions of x²
 > Let $f(x) = x^2$, $0 < x < 1$. Find the Fourier series of its odd and even extensions.

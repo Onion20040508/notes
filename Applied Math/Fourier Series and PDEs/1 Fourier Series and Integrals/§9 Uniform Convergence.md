@@ -105,7 +105,7 @@ On the other hand, for the triangle wave $f(x) = |x|$ (Powers calls it a sawtoot
 *Powers omits the proof. It is the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], with $M_n = |a_n| + |b_n|$: for every real $x$, $\big|a_n\cos\frac{n\pi x}{a} + b_n\sin\frac{n\pi x}{a}\big| \le |a_n| + |b_n|$, and $\sum M_n < \infty$. The limit is continuous by [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]].*
 
 > [!remark]- Connections
-> - The M-test with its proof, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], and three applications, [[§25 More on Uniform Convergence#^ex-25-3|451 Ex. §25.3]]. Ross's warning [[§25 More on Uniform Convergence#^ex-25-4|451 Ex. §25.4]] applies here too: the test is sufficient, not necessary, and fails for series like $\sum\sin(nx)/n$ whose coefficients are not absolutely summable.
+> - The M-test with its proof, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]]; the first of Ross's applications, [[§25 More on Uniform Convergence#^ex-25-3|451 Ex. §25.3]](1), is the Fourier series $\sum\cos(nx)/n^2$. The test is sufficient, not necessary; it says nothing about series such as $\sum\sin(nx)/n$, whose coefficients are not absolutely summable.
 
 > [!example] Example §9.2: The Triangle Wave |x|
 > For $f(x) = |x|$, $-\pi < x < \pi$, periodic with period $2\pi$, the Fourier coefficients are
@@ -126,7 +126,7 @@ On the other hand, for the triangle wave $f(x) = |x|$ (Powers calls it a sawtoot
 >
 > **The maximum deviation.** $f(x) - S_N(x) = \frac4\pi\sum_{n\ \text{odd},\ n > N}\frac{\cos nx}{n^2}$ has positive coefficients, so its largest absolute value is at $x = 0$, where all the cosines equal $1$: $\delta_N = \frac4\pi\sum_{n\ \text{odd},\ n > N}\frac{1}{n^2}$. For instance $\delta_1 = \delta_2 = \frac\pi2 - \frac4\pi \approx 0.298$ and $\delta_3 = \delta_4 \approx 0.156$; $\delta_N \to 0$ because it is the tail of a convergent series.
 >
-> *Powers: 1.4, Example 1 and Figure 10; Source: 341 lecture 9.10, Example 1*
+> *Powers: 1.4, first Example; Figure 10; Source: 341 lecture 9.10, Example 1*
 
 ^ex-9-2
 
@@ -168,7 +168,7 @@ While Theorem §9.3 is stated for a periodic function, it may be adapted to a fu
 >
 > **(d)** $f(x) = 1 + 2x - 2x^3$, $-1 < x < 1$. Here $f(-1+) = 1 - 2 + 2 = 1$ and $f(1-) = 1 + 2 - 2 = 1$, so the periodic extension of period $2$ is continuous; $f'(x) = 2 - 6x^2$ is continuous on $(-1, 1)$ with limits $-4$ at both ends, so the derivative of the extension is sectionally continuous (it jumps only where $f'(1-) \ne f'(-1+)$, and here it does not even jump). The series converges uniformly.
 >
-> *Powers: 1.4, Example 2; Exercises 1.4.1(g), 1.4.2; Source: 341 lecture 9.5, Example 2; 341 HW 2, Problem 3(d)*
+> *Powers: 1.4, second Example; Exercises 1.4.1(g), 1.4.2; Source: 341 lecture 9.5, Example 2; 341 HW 2, Problem 3(d)*
 
 ^ex-9-3
 
@@ -228,6 +228,8 @@ For example, $f(x) = x$, $0 < x < 1$ ([[§7 Arbitrary Period and Half-Range Expa
 > 2. **From the coefficients** (when only the series is known): if $\sum(|a_n| + |b_n|) < \infty$, for instance $|a_n|, |b_n| \le C/n^2$, the convergence is uniform (Theorem §9.2). If the coefficients are only $O(1/n)$, this test says nothing.
 >
 > Review of the lecture: *sectionally smooth* gives pointwise convergence to $\frac12(f(x+) + f(x-))$; *continuous and sectionally smooth* gives uniform convergence to $f(x)$.
+>
+> *Source: 341 lecture 9.10 (review)*
 
 ^rem-9-3
 
@@ -247,6 +249,8 @@ For example, $f(x) = x$, $0 < x < 1$ ([[§7 Arbitrary Period and Half-Range Expa
 > **(b)** Yes. $f$ is sectionally smooth ($f' = \cos x$ on $(0, \frac\pi2)$, $-\cos x$ on $(-\frac\pi2, 0)$, a corner at $0$), so the series converges to $\frac12(f(x+) + f(x-))$ (Theorem §8.1). Moreover $f(-\frac\pi2+) = 1 = f(\frac\pi2-)$, so the periodic extension is continuous on $\mathbb{R}$, and the limit is $f(x)$ at every point.
 >
 > **(c)** Yes, for the same reasons: $f$ is continuous on $\mathbb{R}$ with a sectionally continuous derivative (Theorem §9.3). Alternatively, $\sum|a_n| = \frac4\pi\sum\frac{1}{4n^2 - 1}$ converges (Theorem §9.2).
+>
+> *The key writes the integrand of $a_n$ as $\sin x\cos nx$; the computation that follows, and its result, use $\cos 2nx$.*
 >
 > *Powers: Exercise 1.1.1(d); Source: 341 HW 2, Problem 1*
 

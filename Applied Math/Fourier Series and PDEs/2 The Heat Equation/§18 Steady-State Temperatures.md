@@ -9,7 +9,7 @@ tags: [fourier-series-and-pdes, math341]
 ---
 ← [[§17 Derivation and Boundary Conditions]] · ↑ [[· 2 The Heat Equation]] · [[§19 Example꞉ Fixed End Temperatures]] →
 
-*Powers, Section 2.2 · MAT 341 lecture 9.19 · HW 4, HW 5.*
+*Powers, Section 2.2 · MAT 341 lecture 9.19 · HW 4, HW 5 · Practice Midterm 1.*
 
 Before solving a complete heat conduction problem, this section solves a simpler one: the steady state, or equilibrium, temperature $v(x)$ that the rod settles into after a long time. Setting $\partial u/\partial t = 0$ turns the partial differential equation into an ordinary one, and the steady-state problem is a two-point boundary value problem for $v$. Usually it has exactly one solution (a straight line, for fixed or convective ends), but with both ends insulated it has infinitely many. The steady state is also the first step toward the complete solution: the remainder $w = u - v$, the transient, satisfies a problem with homogeneous equation and boundary conditions, which is what separation of variables in [[§19 Example꞉ Fixed End Temperatures|§19]] needs.
 

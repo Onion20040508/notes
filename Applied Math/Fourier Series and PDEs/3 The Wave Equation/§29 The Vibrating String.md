@@ -104,7 +104,7 @@ If $c^2$ is very large (usually on the order of $10^5\ \mathrm{m^2/s^2}$), the l
 > \frac{\partial^2 u}{\partial x^2} = \frac{1}{c^2}\frac{\partial^2 u}{\partial t^2} , \qquad 0 < x < a, \quad 0 < t , \qquad (6)
 > $$
 >
-> or equivalently $u_{tt} = c^2u_{xx}$, is the **wave equation in one dimension**. The positive constant $c$, with $c^2 = T/\rho$, is the **wave speed**. Two- and three-dimensional versions appear in Chapter 5 ([[§41★ Two-Dimensional Wave Equation꞉ Derivation|§41★]]).
+> or equivalently $u_{tt} = c^2u_{xx}$, is the **wave equation in one dimension**. The positive constant $c$, with $c^2 = T/\rho$, is the **wave speed**. Two- and three-dimensional versions appear in Chapter 5 ([[§41★ Two-Dimensional Wave Equation꞉ Derivation#^thm-41-1|Theorem §41.1]]).
 >
 > *Powers: 3.1, Equation (6)*
 
@@ -137,7 +137,7 @@ To describe the motion of an object, one must specify both its equation of motio
 ^def-29-3
 
 > [!remark] Remark: Wave Equation versus Heat Equation
-> The heat equation $u_{xx} = u_t/k$ ([[§17 Derivation and Boundary Conditions|§17]]) is first order in $t$ and needs one initial condition, the initial temperature. The wave equation is second order in $t$, like Newton's law, and needs two. The boundary conditions are of the same kinds in both problems, and the method of solution in [[§30 Solution of the Vibrating String Problem|§30]] is the one used for heat in [[§19 Example꞉ Fixed End Temperatures|§19]]; the difference shows in the time factors, which decay for heat and oscillate for waves. In the lecture the equation is written $u_{tt} = c^2u_{xx}$, and the derivation is done with the horizontal tension $H$ in place of $T$; it is the same computation.
+> The heat equation $u_{xx} = u_t/k$ ([[§17 Derivation and Boundary Conditions#^thm-17-2|Theorem §17.2]]) is first order in $t$ and needs one initial condition, the initial temperature. The wave equation is second order in $t$, like Newton's law, and needs two. The boundary conditions are of the same kinds in both problems, and the method of solution in [[§30 Solution of the Vibrating String Problem|§30]] is the one used for heat in [[§19 Example꞉ Fixed End Temperatures|§19]]; the difference shows in the time factors, which decay for heat and oscillate for waves. In the lecture the equation is written $u_{tt} = c^2u_{xx}$, and the derivation is done with the horizontal tension $H$ in place of $T$; it is the same computation.
 
 ^rem-29-1
 

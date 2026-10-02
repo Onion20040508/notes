@@ -1,0 +1,13 @@
+% Figure for Fourier Series and PDEs §11.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=10cm, height=5.4cm, xmin=0, xmax=21, ymin=0, ymax=0.3, axis lines=left,
+  xtick={1,5,10,15,20}, ytick={0,0.1,0.2,0.3}, yticklabel style={/pgf/number format/fixed},
+  xlabel={$N$}, ylabel={$\min E_N$}]
+  \addplot[figR, samples=100, domain=0.9:21] {4/(pi^2*x)};
+  \addplot[only marks, mark=*, mark size=1.6pt, figB] coordinates {(1,0.26138) (2,0.16006) (3,0.11503) (4,0.08970) (5,0.07349) (6,0.06223) (7,0.05396) (8,0.04763) (9,0.04262) (10,0.03857) (11,0.03522) (12,0.03241) (13,0.03001) (14,0.02794) (15,0.02614) (16,0.02456) (17,0.02315) (18,0.02190) (19,0.02078) (20,0.01977)};
+\end{axis}
+\begin{scope}[font=\scriptsize, shift={(6.4cm,3.4cm)}]
+  \fill[figB] (0.25,0) circle (1.6pt); \node[right] at (0.5,0) {$\min E_N = \frac23 - \sum_{n \le N}\frac{4}{n^2\pi^2}$};
+  \draw[figR, line width=0.9pt] (0,-0.45) -- (0.5,-0.45) node[right, black] {$\frac{4}{\pi^2 N}$};
+\end{scope}
+\end{tikzpicture}

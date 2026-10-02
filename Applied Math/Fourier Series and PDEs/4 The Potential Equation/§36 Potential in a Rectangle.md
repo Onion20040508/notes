@@ -124,6 +124,8 @@ $$
 > 4. **Solve the other factor's equation**, $Y'' - \lambda_n^2Y = 0$ (hyperbolic functions; $A + By$ for $\lambda_0 = 0$), and write the **basic solutions** $X_nY_n$.
 > 5. **Superpose** and fit the two remaining sides: each gives a Fourier series problem that determines one constant per $n$.
 > 6. **Add** the solutions of the split problems.
+>
+> *Source: 341 lecture 11.19*
 
 ^rem-36-1
 

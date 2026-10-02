@@ -83,7 +83,7 @@ $$
 \alpha_1\phi(l) - \alpha_2\phi'(l) = 0, \qquad (13) \qquad\qquad \beta_1\phi(r) + \beta_2\phi'(r) = 0 . \qquad (14)
 $$
 
-The eigenvalue problem (12)–(14) is a regular Sturm–Liouville problem, because of the assumptions on $s$, $p$ and the coefficients. By [[§23 Sturm–Liouville Problems|§23]] (Powers 2.7, Theorem) it has infinitely many nonnegative eigenvalues $\lambda_1^2 < \lambda_2^2 < \cdots$ and eigenfunctions $\phi_1, \phi_2, \ldots$ with the orthogonality property
+The eigenvalue problem (12)–(14) is a regular Sturm–Liouville problem, because of the assumptions on $s$, $p$ and the coefficients. By [[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2]] and [[§23 Sturm–Liouville Problems#^thm-23-5|Theorem §23.5]] it has infinitely many nonnegative eigenvalues $\lambda_1^2 < \lambda_2^2 < \cdots$ and eigenfunctions $\phi_1, \phi_2, \ldots$ with the orthogonality property
 
 $$
 \int_l^r\phi_n(x)\phi_m(x)p(x)\,dx = 0, \qquad n \ne m .
@@ -126,11 +126,11 @@ The solution of (11) is $T_n(t) = a_n\cos(\lambda_nct) + b_n\sin(\lambda_nct)$. 
 > a_mI_m = \int_l^r\big[f(x) - v(x)\big]\phi_m(x)p(x)\,dx ,
 > $$
 >
-> which is (16), since $I_m > 0$ ($p > 0$ and $\phi_m \not\equiv 0$). The same computation with the second equation gives $b_m\lambda_mcI_m = \int_l^rg\phi_mp\,dx$, which is (17) (Powers' Exercise 3.4.1). That these expansions converge to $f - v$ and $g$ is the eigenfunction expansion theorem of [[§24 Expansion in Series of Eigenfunctions|§24]] (Powers 2.8): for sectionally smooth $f$ and $g$, at every point of continuity in $l < x < r$. (Powers divides by $\lambda_n$, so he assumes $\lambda_n > 0$. The eigenvalue $0$ occurs only when $\alpha_1 = \beta_1 = 0$, both ends free; its time factor is $a_0 + b_0t$, as in [[§30 Solution of the Vibrating String Problem#^ex-30-4|Example §30.4]].)
+> which is (16), since $I_m > 0$ ($p > 0$ and $\phi_m \not\equiv 0$). The same computation with the second equation gives $b_m\lambda_mcI_m = \int_l^rg\phi_mp\,dx$, which is (17) (Powers' Exercise 3.4.1). That these expansions converge to $f - v$ and $g$ is the eigenfunction expansion theorem, [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2]]: for sectionally smooth $f$ and $g$, at every point of continuity in $l < x < r$. (Powers divides by $\lambda_n$, so he assumes $\lambda_n > 0$. The eigenvalue $0$ occurs only when $\alpha_1 = \beta_1 = 0$, both ends free; its time factor is $a_0 + b_0t$, as in [[§30 Solution of the Vibrating String Problem#^ex-30-4|Example §30.4]].)
 
 ^pf-32-2
 
-*Uses:* [[§32 One-Dimensional Wave Equation꞉ Generalities#^prop-32-1|§32.1]], [[§23 Sturm–Liouville Problems|§23]] (Theorem), [[§24 Expansion in Series of Eigenfunctions|§24]]
+*Uses:* [[§32 One-Dimensional Wave Equation꞉ Generalities#^prop-32-1|§32.1]], [[§23 Sturm–Liouville Problems#^thm-23-2|§23.2]], [[§23 Sturm–Liouville Problems#^thm-23-5|§23.5]], [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|§24.2]]
 
 > [!remark]- Connections
 > - The formulas (16)–(18) are the coefficients of an orthogonal expansion in the inner product $\langle\phi, \chi\rangle = \int_l^r\phi\chi p\,dx$, exactly as $c_j = \frac{\mathbf{y}\cdot\mathbf{u}_j}{\mathbf{u}_j\cdot\mathbf{u}_j}$ for an orthogonal basis of $\mathbb{R}^n$, [[§41 Orthogonal Sets#^thm-41-2|235 Thm. §41.2]]. The underlying reason the $\phi_n$ are orthogonal is that the Sturm–Liouville operator is self-adjoint in this inner product, the infinite-dimensional analogue of a symmetric matrix, [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]].
