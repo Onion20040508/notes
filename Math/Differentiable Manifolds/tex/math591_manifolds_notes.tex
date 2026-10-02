@@ -223,7 +223,7 @@
 \chapter*{Roadmap}
 \addcontentsline{toc}{chapter}{Roadmap}
 
-These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the \emph{equations} thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\Ugp(n)$. Along the \emph{quotients} thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters~1 and~2 develop the two threads side by side, and in Chapters~3 and~4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the \emph{geometric} stage). A manifold built by quotients has none, and needs the \emph{abstract} tangent space of derivations. Between them sits a \emph{linear} stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first (\ref{sec:special-maps}): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds (\ref{sec:submanifolds}); the submersions that are locally products are the fibrations (\ref{sec:fibrations}); and the tangent spaces themselves assemble into one, the tangent bundle (\ref{sec:tangent-bundle}). Immersions, the maps dual to submersions, begin a new arc (\ref{sec:immersions}).
+These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the \emph{equations} thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\Ugp(n)$. Along the \emph{quotients} thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters~1 and~2 develop the two threads side by side, and in Chapters~3 and~4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the \emph{geometric} stage). A manifold built by quotients has none, and needs the \emph{abstract} tangent space of derivations. Between them sits a \emph{linear} stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first (\ref{sec:special-maps}): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds (\ref{sec:submanifolds}); the submersions that are locally products are the fibrations (\ref{sec:fibrations}); and the tangent spaces themselves assemble into one, the tangent bundle (\ref{sec:tangent-bundle}). Immersions, the maps dual to submersions, begin a new arc (\ref{sec:immersions}), which leads to embeddings, the immersions whose images are submanifolds (\ref{sec:embeddings}).
 
 \begin{center}
 \begin{tikzpicture}[scale=0.92, transform shape]
@@ -263,7 +263,7 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \draw[->, thick, gray!70] (M) -- node[pos=0.55, font=\scriptsize, fill=white, inner sep=1.5pt] {normal form} (SM);
 \draw[->, thick, gray!70] (SM) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {fibres} (BU);
 \draw[->, thick, gray!70] (T2.east) -- ++(0.45,0) |- node[pos=0.25, font=\scriptsize, fill=white, inner sep=1.5pt, rotate=90] {assemble $T_pM$, $T_p^*M$} (BU.east);
-\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (IM) at (9.2,-17.8) {\ref*{sec:immersions}\\ immersions and their images};
+\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (IM) at (9.2,-17.8) {\ref*{sec:immersions}--\ref*{sec:embeddings}\\ immersions and embeddings};
 \draw[->, thick, gray!70] (SM) -- node[pos=0.5, font=\scriptsize, fill=white, inner sep=1.5pt] {images} (IM);
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-6.8) {Ch.~3};
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-10.9) {Ch.~4};
@@ -275,7 +275,7 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \end{tikzpicture}
 \end{center}
 
-The labels on the arrows are the bridges. The regular value theorem (\ref{sec:rvt}) turns equations into manifolds, and graph charts (Proposition~\ref{prop:level-set-smooth}) make them smooth. The differential between vector spaces (\ref{sec:vs-differential}) gives $T^{\geo}_pM = \ker F'(p)$ (Theorem~\ref{thm:tangent-kernel}). For the quotient-built manifolds, atlases are written down by hand (\ref{sec:projective-smooth}), and only the abstract tangent space reaches them. The two tangent spaces are identified by $v \mapsto D_v$ (Theorem~\ref{thm:ambient-abstract}); the abstract differential agrees with the Jacobian (Proposition~\ref{prop:differential-agree}), and on any manifold the matrix of $F_{*p}$ in coordinates \emph{is} the Jacobian of the coordinate representation (Theorem~\ref{lem:differential-matrix}), because partial derivatives upstairs are defined downstairs (Proposition~\ref{prop:upstairs-downstairs}); and every abstract tangent vector is a velocity after all (Theorem~\ref{thm:every-vector-velocity}). At the bottom, the submersion normal form (Theorem~\ref{thm:submersion-normal-form}) proves the regular value theorem for manifolds (Theorem~\ref{thm:rvt-manifolds}), where the equations thread ends; fibrations and the tangent and cotangent spaces follow as bundles (\ref{sec:fibrations}--\ref{sec:tangent-bundle}); and immersions, whose normal form is the twin of the submersion normal form, have images that are locally submanifolds (\ref{sec:immersions}). Each section opens with a line placing it on this map.
+The labels on the arrows are the bridges. The regular value theorem (\ref{sec:rvt}) turns equations into manifolds, and graph charts (Proposition~\ref{prop:level-set-smooth}) make them smooth. The differential between vector spaces (\ref{sec:vs-differential}) gives $T^{\geo}_pM = \ker F'(p)$ (Theorem~\ref{thm:tangent-kernel}). For the quotient-built manifolds, atlases are written down by hand (\ref{sec:projective-smooth}), and only the abstract tangent space reaches them. The two tangent spaces are identified by $v \mapsto D_v$ (Theorem~\ref{thm:ambient-abstract}); the abstract differential agrees with the Jacobian (Proposition~\ref{prop:differential-agree}), and on any manifold the matrix of $F_{*p}$ in coordinates \emph{is} the Jacobian of the coordinate representation (Theorem~\ref{lem:differential-matrix}), because partial derivatives upstairs are defined downstairs (Proposition~\ref{prop:upstairs-downstairs}); and every abstract tangent vector is a velocity after all (Theorem~\ref{thm:every-vector-velocity}). At the bottom, the submersion normal form (Theorem~\ref{thm:submersion-normal-form}) proves the regular value theorem for manifolds (Theorem~\ref{thm:rvt-manifolds}), where the equations thread ends; fibrations and the tangent and cotangent spaces follow as bundles (\ref{sec:fibrations}--\ref{sec:tangent-bundle}); and immersions, whose normal form is the twin of the submersion normal form, have images that are locally submanifolds (\ref{sec:immersions}), and globally so when they are embeddings (\ref{sec:embeddings}). Each section opens with a line placing it on this map.
 
 
 \part{Topological and Smooth Manifolds}
@@ -1036,6 +1036,19 @@ For a topological manifold, transition functions are homeomorphisms between open
 
 Why is this the right move? Differentiability is not a topological notion: it makes no sense to ask whether a map $X \to \mathbb{R}$ on an abstract topological space is differentiable, because $X$ has no linear structure. What \emph{does} make sense is to pull $f$ back to Euclidean space via a chart, $f \circ \varphi^{-1} : A \to \mathbb{R}$, and ask whether \emph{that} is differentiable. For this to be independent of the chart chosen, one needs $f \circ \psi^{-1} = (f \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ to be differentiable whenever $f \circ \varphi^{-1}$ is---which is exactly the requirement that transition functions be differentiable. (He expected to begin this on Wednesday; in the event, Lecture 2 stayed with topology---see \ref{sec:new-spaces}.)
 \end{rembox}
+
+% ============================================================================
+% Lecture 2 (Wed Sep 2, 2026)
+% SECTION 4: NEW SPACES FROM OLD
+% ============================================================================
+\begin{propbox}[Manifolds Are Locally Compact]\thmlabel{prop:locally-compact}
+Every topological manifold $M$ is \emph{locally compact}: every point $q \in M$ has an open neighbourhood $V$ whose closure $\overline V$ is compact.
+\leeref{Proposition 1.12}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~14, asking for it to be added to the notes: ``that's obviously true, because you go down to Euclidean space. You have an open set. You just take the ball \ldots\ and pull it up''; filled in.)} Take a chart $(U, \varphi)$ at $q$ and $\varepsilon > 0$ with the closed ball $\overline{B}_\varepsilon(\varphi(q)) \subseteq \varphi(U)$. Put $V = \varphi^{-1}\big(B_\varepsilon(\varphi(q))\big)$, open in $U$ and hence in $M$, and $K = \varphi^{-1}\big(\overline{B}_\varepsilon(\varphi(q))\big)$. $K$ is compact, the image of a compact set under the continuous map $\varphi^{-1}$, hence closed in the Hausdorff space $M$. Since $V \subseteq K$, also $\overline V \subseteq K$, and a closed subset of a compact set is compact.
+\end{proof}
 
 % ============================================================================
 % Lecture 2 (Wed Sep 2, 2026)
@@ -7821,9 +7834,74 @@ Let $F : M \to N$ be an immersion at $p$, with $\dim M = m \le n = \dim N$. Then
 \leeref{Theorem 4.12, the rank theorem}
 \end{thmbox}
 
-\begin{proof}[Proof (to be filled)]
-Stated in Lecture~13; the proof is due in the next lecture. To be filled.
+\begin{proof}[Proof (Lecture~14)]
+The steps are the lecture's, in the lecture's order; sentences marked \textit{(Completion.)} fill in details. The first half runs as for submersions (Theorem~\ref{thm:submersion-normal-form}); the new step is that here the chart on $N$ changes too.
+
+\emph{1. Start with any coordinates.} Take charts $(U_0, \varphi_0 = (x^1, \ldots, x^m))$ at $p$ and $(V_0, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U_0) \subseteq V_0$, shrinking $U_0$ if necessary, and write $F^j = y^j \circ F$.
+
+\emph{2. The Jacobian is taller than wide.} $J = \big[\partial F^j/\partial x^i(p)\big]$ is the matrix of $F_{*p}$ (Theorem~\ref{lem:differential-matrix}): $n$ rows and $m$ columns, ``fewer columns than rows.'' $F_{*p}$ is injective, so $J$ has rank $m$: it has $m$ linearly independent row vectors.
+
+\emph{3. Relabel the $y$'s.} Reordering the coordinates of $\psi$ --- again a smooth chart, as in step~4 of the proof of Theorem~\ref{thm:submersion-normal-form} --- we may assume the top $m \times m$ block $A$ of $J$ is invertible.
+
+\emph{4. The first $m$ components of $F$ are coordinates on $M$.} $A$ is the Jacobian at $p$, in the $x$-coordinates, of the map $U_0 \to \mathbb{R}^m$ that sends $q$ to the first $m$ components $\big(F^1(q), \ldots, F^m(q)\big)$ (Proposition~\ref{prop:upstairs-downstairs}). It is invertible, so by the inverse function theorem (Theorem~\ref{thm:inverse-function}) --- ``I always say implicit, but in this case I want the inverse function theorem'' --- this map is a local diffeomorphism near $p$, and, possibly after shrinking $U_0$ to some $U \ni p$, it is a chart:
+\[
+\tilde\varphi = \big(F^1, \ldots, F^m\big)\big|_U : U \longrightarrow \tilde\varphi(U) \subseteq \mathbb{R}^m .
+\]
+\textit{(Completion.)} As in step~8 of the proof of Theorem~\ref{thm:submersion-normal-form}: the inverse function theorem gives an open $W \ni \varphi_0(p)$ on which $\tilde\varphi \circ \varphi_0^{-1}$ is a diffeomorphism onto an open set; put $U = \varphi_0^{-1}(W)$; then $\tilde\varphi$ maps $U$ diffeomorphically onto an open set, and is a chart by Lemma~\ref{lem:diffeo-chart}.
+
+\emph{5. In the new chart, $F$ is a graph.} Let $\hat F = \psi \circ F \circ \tilde\varphi^{-1} : \tilde\varphi(U) \to \psi(V_0)$. By the definition of $\tilde\varphi$, the first $m$ components of $\hat F(r)$ are $F^i(\tilde\varphi^{-1}(r)) = r^i$, so
+\[
+\hat F(r) = \big(r, \ G^1(r), \ldots, G^{n-m}(r)\big), \qquad G^k = F^{m+k} \circ \tilde\varphi^{-1} ,
+\]
+with $G = (G^1, \ldots, G^{n-m})$ smooth on $\tilde\varphi(U)$. ``I don't get zeros yet. I get something'': $\hat F$ is the graph of $G$ over $\tilde\varphi(U)$.
+
+\emph{6. Straighten the graph.} ``You can always straighten out a graph to make it zero.'' Define new coordinates on $N$ by keeping the first $m$ and shifting the rest: ``I always mess up my indices \ldots\ so I'm going to cheat''
+\[
+\tilde y^i = y^i \quad (1 \le i \le m), \qquad \tilde y^i = y^i - G^{i-m}\big(y^1, \ldots, y^m\big) \quad (m+1 \le i \le n),
+\]
+and $\tilde\psi = (\tilde y^1, \ldots, \tilde y^n)$. \textit{(Completion.)} This is $\tilde\psi = \Sigma \circ \psi$, where $\Sigma(y_a, y_b) = \big(y_a, \, y_b - G(y_a)\big)$ for $y_a = (y^1, \ldots, y^m)$ and $y_b = (y^{m+1}, \ldots, y^n)$. $\Sigma$ is defined on $\tilde\varphi(U) \times \mathbb{R}^{n-m}$, and is a diffeomorphism of that open set onto itself, with inverse $(y_a, z) \mapsto (y_a, z + G(y_a))$. So on the open set $V = \psi^{-1}\big(\tilde\varphi(U) \times \mathbb{R}^{n-m}\big) \cap V_0$ the map $\tilde\psi$ is a diffeomorphism onto an open subset of $\mathbb{R}^n$, hence a chart (Lemma~\ref{lem:diffeo-chart}). And $F(U) \subseteq V$, because the first $m$ coordinates of $\psi(F(u))$ are $\tilde\varphi(u) \in \tilde\varphi(U)$.
+
+\emph{7. These do the job.} ``We're not changing the first $m$ --- we already have the inclusion here --- but we're fixing the other ones.'' \textit{(Completion.)} For $r \in \tilde\varphi(U)$,
+\[
+\tilde\psi \circ F \circ \tilde\varphi^{-1}(r) = \Sigma\big(\hat F(r)\big) = \Sigma\big(r, G(r)\big) = \big(r, \, G(r) - G(r)\big) = (r, \vec 0) .
+\]
+So in the charts $(U, \tilde\varphi)$ and $(V, \tilde\psi)$, $F$ is the standard inclusion.
 \end{proof}
+
+\begin{center}
+\begin{tikzcd}[column sep=5.4em, row sep=3em]
+U \arrow[r, "F"] \arrow[d, "\tilde\varphi"'] & V \arrow[d, "\psi"'] \arrow[dr, "\tilde\psi"] & \\
+\tilde\varphi(U) \arrow[r, "\hat F"'] \arrow[rr, bend right=24, "{\tilde F :\ r \,\mapsto\, (r, \vec 0)}"'] & \psi(V) \arrow[r, "\Sigma"'] & \tilde\psi(V)
+\end{tikzcd}
+\end{center}
+
+The two changes of chart in one diagram, as on the board. On $M$, the chart $\tilde\varphi$ is made from the first $m$ components of $F$, which turns $F$ into the graph $\hat F$; on $N$, the straightening $\Sigma$ removes the graph, so that $\tilde F = \Sigma \circ \hat F$ is the inclusion.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\draw[->, gray!55] (-1.80,0) -- (1.90,0) node[right, font=\scriptsize, text=gray!70!black] {$y_a$};
+\draw[->, gray!55] (0.00,-1.3) -- (0.00,1.5) node[above, font=\scriptsize, text=gray!70!black] {$y_b$};
+\node[font=\footnotesize] at (0.00,2.3) {$\psi(V)$: the image of $\hat F$ is a graph};
+\draw[->, gray!55] (3.80,0) -- (7.50,0) node[right, font=\scriptsize, text=gray!70!black] {$y_a$};
+\draw[->, gray!55] (5.60,-1.3) -- (5.60,1.5) node[above, font=\scriptsize, text=gray!70!black] {$y_b$};
+\node[font=\footnotesize] at (5.60,2.3) {$\tilde\psi(V)$: straightened};
+\draw[orange!85!black, very thick] (-1.300,-0.805) -- (-1.277,-0.809) -- (-1.255,-0.812) -- (-1.232,-0.815) -- (-1.209,-0.816) -- (-1.187,-0.817) -- (-1.164,-0.818) -- (-1.141,-0.817) -- (-1.118,-0.817) -- (-1.096,-0.815) -- (-1.073,-0.812) -- (-1.050,-0.809) -- (-1.028,-0.805) -- (-1.005,-0.801) -- (-0.982,-0.796) -- (-0.960,-0.790) -- (-0.937,-0.783) -- (-0.914,-0.775) -- (-0.892,-0.767) -- (-0.869,-0.758) -- (-0.846,-0.749) -- (-0.824,-0.738) -- (-0.801,-0.727) -- (-0.778,-0.716) -- (-0.755,-0.703) -- (-0.733,-0.690) -- (-0.710,-0.676) -- (-0.687,-0.662) -- (-0.665,-0.647) -- (-0.642,-0.631) -- (-0.619,-0.615) -- (-0.597,-0.598) -- (-0.574,-0.581) -- (-0.551,-0.562) -- (-0.529,-0.544) -- (-0.506,-0.525) -- (-0.483,-0.505) -- (-0.461,-0.485) -- (-0.438,-0.464) -- (-0.415,-0.443) -- (-0.392,-0.421) -- (-0.370,-0.399) -- (-0.347,-0.377) -- (-0.324,-0.354) -- (-0.302,-0.331) -- (-0.279,-0.307) -- (-0.256,-0.283) -- (-0.234,-0.259) -- (-0.211,-0.235) -- (-0.188,-0.210) -- (-0.166,-0.185) -- (-0.143,-0.160) -- (-0.120,-0.135) -- (-0.097,-0.110) -- (-0.075,-0.084) -- (-0.052,-0.059) -- (-0.029,-0.033) -- (-0.007,-0.008) -- (0.016,0.018) -- (0.039,0.044) -- (0.061,0.069) -- (0.084,0.095) -- (0.107,0.120) -- (0.129,0.145) -- (0.152,0.171) -- (0.175,0.196) -- (0.197,0.220) -- (0.220,0.245) -- (0.243,0.269) -- (0.266,0.293) -- (0.288,0.317) -- (0.311,0.340) -- (0.334,0.363) -- (0.356,0.386) -- (0.379,0.408) -- (0.402,0.430) -- (0.424,0.451) -- (0.447,0.472) -- (0.470,0.493) -- (0.492,0.513) -- (0.515,0.532) -- (0.538,0.551) -- (0.561,0.570) -- (0.583,0.588) -- (0.606,0.605) -- (0.629,0.622) -- (0.651,0.638) -- (0.674,0.653) -- (0.697,0.668) -- (0.719,0.682) -- (0.742,0.696) -- (0.765,0.708) -- (0.787,0.720) -- (0.810,0.732) -- (0.833,0.743) -- (0.855,0.753) -- (0.878,0.762) -- (0.901,0.771) -- (0.924,0.778) -- (0.946,0.786) -- (0.969,0.792) -- (0.992,0.798) -- (1.014,0.803) -- (1.037,0.807) -- (1.060,0.811) -- (1.082,0.813) -- (1.105,0.816) -- (1.128,0.817) -- (1.150,0.818) -- (1.173,0.818) -- (1.196,0.817) -- (1.218,0.816) -- (1.241,0.814) -- (1.264,0.811) -- (1.287,0.808) -- (1.309,0.804) -- (1.332,0.799) -- (1.355,0.794) -- (1.377,0.788) -- (1.400,0.781);
+\draw[orange!85!black, very thick] (4.30,0) -- (7.00,0);
+\draw[orange!85!black, fill=white, thick] (-1.300,-0.805) circle (1.8pt);
+\draw[orange!85!black, fill=white, thick] (1.400,0.781) circle (1.8pt);
+\draw[orange!85!black, fill=white, thick] (4.300,-0.000) circle (1.8pt);
+\draw[orange!85!black, fill=white, thick] (7.000,0.000) circle (1.8pt);
+\draw[teal!60!black, line width=2pt] (-1.30,-1.05) -- (1.40,-1.05); \node[teal!60!black, font=\scriptsize] at (0.05,-1.3) {$\tilde\varphi(U)$};
+\draw[teal!60!black, line width=2pt] (4.30,-1.05) -- (7.00,-1.05); \node[teal!60!black, font=\scriptsize] at (5.65,-1.3) {$\tilde\varphi(U)$};
+\draw[->, thick, violet!70!black] (0.800,0.677) -- (0.800,0.04); \fill (0.800,0.727) circle (1.4pt); \node[violet!75!black, font=\scriptsize, anchor=west] at (0.850,0.363) {$G(y_a)$};
+\node[orange!85!black, font=\scriptsize, anchor=south east] at (-0.55,-0.44) {$y_b = G(y_a)$};
+\draw[->, thick, gray!70] (2.4,0.55) -- node[above, font=\scriptsize, align=center] {$(y_a, y_b) \mapsto$\\ $(y_a,\, y_b - G(y_a))$} (3.6,0.55);
+\end{tikzpicture}
+\end{center}
+
+Step~6 in a picture ($m = n - m = 1$). Before: the image of $\hat F$ is the graph $y_b = G(y_a)$ over $\tilde\varphi(U)$. After: each point is moved straight down by $G(y_a)$, and the graph becomes a piece of the $y_a$-axis --- an open interval, over the same $\tilde\varphi(U)$.
+
+\textbf{Transcription note.} Page~38 of the handwritten notes begins the proof with ``start with any coordinates with $\varphi(U) \subset V$''; the condition is $F(U) \subseteq V$. In the lecture the shifted coordinates were first spoken as $G^{i-m}(y^1, \ldots, y^n)$; the arguments are the first $m$ coordinates, $y^1, \ldots, y^m$, as on page~38.
 
 \begin{center}
 \begin{tikzcd}[column sep=8em, row sep=3em]
@@ -7834,7 +7912,7 @@ U \arrow[r, "F"] \arrow[d, "\varphi"'] & V \arrow[d, "\psi"] \\
 
 The immersion normal form, as on the board: the mirror image of the submersion normal form (Theorem~\ref{thm:submersion-normal-form}). There $\tilde F$ forgot the last $m - n$ coordinates; here it appends $n - m$ zeros.
 
-\textit{Status.} Stated in Lecture~13; the proof --- ``a little bit technical \ldots\ better do it fresh at the beginning of the class'' --- is due in the next lecture. It is the counterpart of Theorem~\ref{thm:submersion-normal-form}: there $F$ was locally a projection, here it is locally an inclusion.
+\textit{Status.} Stated in Lecture~13 --- ``a little bit technical \ldots\ better do it fresh at the beginning of the class'' --- and proved at the start of Lecture~14, above. It is the counterpart of Theorem~\ref{thm:submersion-normal-form}: there $F$ was locally a projection, here it is locally an inclusion.
 
 What the image of an immersion looks like --- locally a submanifold, globally not necessarily --- is taken up next, in \ref{sub:immersion-images}.
 
@@ -7912,8 +7990,229 @@ Let $\gamma : (a, b) \to \mathbb{R}^2$ be an injective immersion that passes thr
 The hook. The domain is an open interval, so neither end is attained: the left end of the image is missing (hollow), and the right end only approaches $P$. But $P$ is in the image, reached at $t_0$ by the strand passing through it --- so points of the image near $P$ come from parameters near $t_0$ \emph{and} from parameters near $b$, which is exactly the failure of continuity of $\gamma^{-1}$. Lee's figure-eight (Example~4.19) is an explicit instance with both ends returning, $\beta(t) = (\sin 2t, \sin t)$ on $(-\pi, \pi)$, where the image near the origin is an X although $\beta$ is injective.
 
 \begin{rembox}[Embeddings --- Next Time]\label{rem:embeddings-next-time}
-To make the image of an immersion a submanifold, ``you have to add a topological condition'': an \emph{embedding} is, roughly, an injective immersion that is a homeomorphism onto its image, and its image will be a submanifold. The definition and the proof of the normal form for immersions are due in the next lecture.
+To make the image of an immersion a submanifold, ``you have to add a topological condition'': an \emph{embedding} is an immersion that is a homeomorphism onto its image, and its image is a submanifold. Both were done in Lecture~14, together with the proof of the normal form above: see \ref{sec:embeddings}.
 \end{rembox}
+
+% ============================================================
+% Lecture 14 (Fri Oct 2, 2026)
+% ============================================================
+
+\section{Embeddings}\label{sec:embeddings}
+
+\roadmark{Stage: maps}{Immersions that are homeomorphisms onto their images --- their images are submanifolds.}
+
+\textit{References: Lee Ch.~4 and Ch.~5. Lecture 14.} The normal form makes every immersion locally an inclusion, but an immersion's image can still fail to be a submanifold (\ref{sub:immersion-images}). Embeddings are the immersions for which it cannot: the normal form is local in the domain, and the topological condition makes it local in the image too.
+
+\subsection{Embeddings and Their Images}\label{sub:embeddings}
+
+\begin{defbox}[Embedding]\deflabel{def:embedding}
+A smooth map $F : M \to N$ is an \textbf{embedding} if it is an immersion and, as a map onto its image, $F : M \to F(M)$ is a homeomorphism, $F(M)$ carrying the subspace topology of $N$. Injectivity is part of being a homeomorphism; Uribe wrote ``(injective) immersion'' and called the word redundant.
+\leeref{Ch.~4, \emph{Embeddings}}
+\end{defbox}
+
+\begin{center}
+\begin{tikzcd}[column sep=4.2em, row sep=2.8em]
+M \arrow[r, "\cong", "F"'] \arrow[dr, "F"'] & F(M) \arrow[d, hook] \\
+& N
+\end{tikzcd}
+\end{center}
+
+An embedding factors through its image as a homeomorphism followed by the inclusion --- ``you're taking the manifold $M$ and you're putting it inside $N$.'' The figure-eight of Lee's Example~4.19 (\ref{sub:immersion-images}) is an injective immersion for which the top arrow is not a homeomorphism.
+
+\begin{exbox}[The Irrational Line on the Torus]\exlabel{ex:irrational-line}
+For $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$, $F(t) = [t, \alpha t]$, is an injective immersion whose image is dense in $T^2$. Its image is not a regular submanifold of $T^2$, so $F$ is not an embedding.
+\leeref{Example 4.20}
+\end{exbox}
+
+\textit{Status.} From the homework, where these properties are proved; given in lecture as ``a very important category: non-examples.'' ``You're wrapping a line, but the slope of the line is irrational, so it never closes \ldots\ like one of those spirographs.'' The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is ``a very nice submanifold.'' But ``it's local in the domain'', while being a submanifold is a statement about the whole image. Points outside $U$ ``contribute segments like this, and they're going to be dense. No matter how you shrink this $V$, you won't be able to isolate only the yellow guy.''
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\draw[gray!60, thick] (0,0) rectangle (3.20,3.20);
+\draw[->, gray!60, thick] (0.5,0) -- (0.9,0); \draw[->, gray!60, thick] (0.5,3.20) -- (0.9,3.20); \draw[->>, gray!60, thick] (0,0.5) -- (0,0.9); \draw[->>, gray!60, thick] (3.20,0.5) -- (3.20,0.9);
+\draw[gray!75] (0.000,0.000) -- (3.200,1.978);
+\draw[gray!75] (0.000,1.978) -- (1.978,3.200);
+\draw[gray!75] (1.978,0.000) -- (3.200,0.755);
+\draw[gray!75] (0.000,0.755) -- (3.200,2.733);
+\draw[gray!75] (0.000,2.733) -- (0.755,3.200);
+\draw[gray!75] (0.755,0.000) -- (3.200,1.511);
+\draw[gray!75] (0.000,1.511) -- (2.733,3.200);
+\draw[gray!75] (2.733,0.000) -- (3.200,0.289);
+\draw[gray!75] (0.000,0.289) -- (3.200,2.266);
+\draw[gray!75] (0.000,2.266) -- (1.511,3.200);
+\draw[gray!75] (1.511,0.000) -- (3.200,1.044);
+\draw[gray!75] (0.000,1.044) -- (3.200,3.022);
+\draw[gray!75] (0.000,3.022) -- (0.289,3.200);
+\draw[gray!75] (0.289,0.000) -- (3.200,1.799);
+\draw[orange!85!black, line width=2.2pt] (1.355,1.593) -- (1.845,1.896);
+\draw[teal!60!black, thick] (1.600,1.744) circle (0.512);
+\fill (1.600,1.744) circle (1.5pt);
+\node[font=\scriptsize, fill=white, inner sep=1pt, anchor=north] at (1.600,1.182) {$F(p)$};
+\node[teal!60!black, font=\scriptsize, fill=white, inner sep=1pt] at (1.056,2.224) {$V$};
+\node[font=\footnotesize, align=center] at (1.60,3.75) {$T^2 = \mathbb{R}^2/\mathbb{Z}^2$, with the first\\ nine turns of $F(\mathbb{R})$};
+\draw[teal!60!black, thick] (5.80,1.60) circle (1.25);
+\begin{scope}\clip (5.80,1.60) circle (1.25);
+\draw[orange!85!black, line width=2pt] (4.439,0.759) -- (7.161,2.441);
+\draw[gray!60] (3.889,1.649) -- (6.611,3.331);
+\draw[gray!60] (4.779,0.209) -- (7.501,1.891);
+\draw[gray!60] (4.229,1.099) -- (6.951,2.781);
+\draw[gray!60] (4.569,0.549) -- (7.291,2.231);
+\draw[gray!60] (4.019,1.439) -- (6.741,3.121);
+\draw[gray!60] (4.909,-0.001) -- (7.631,1.681);
+\draw[gray!60] (4.359,0.889) -- (7.081,2.571);
+\draw[gray!60] (3.809,1.779) -- (6.531,3.461);
+\draw[gray!60] (4.699,0.339) -- (7.421,2.021);
+\draw[gray!60] (4.149,1.229) -- (6.871,2.911);
+\draw[gray!60] (5.039,-0.212) -- (7.761,1.471);
+\draw[gray!60] (4.489,0.679) -- (7.211,2.361);
+\draw[gray!60] (3.938,1.569) -- (6.661,3.251);
+\draw[gray!60] (4.829,0.128) -- (7.551,1.811);
+\draw[gray!60] (4.278,1.019) -- (7.001,2.701);
+\draw[gray!60] (4.618,0.468) -- (7.341,2.151);
+\draw[gray!60] (4.068,1.359) -- (6.790,3.041);
+\draw[gray!60] (4.958,-0.082) -- (7.680,1.601);
+\draw[gray!60] (4.408,0.808) -- (7.130,2.491);
+\draw[gray!60] (3.858,1.699) -- (6.580,3.381);
+\draw[gray!60] (4.748,0.258) -- (7.470,1.941);
+\draw[gray!60] (4.198,1.148) -- (6.920,2.831);
+\draw[gray!60] (5.088,-0.292) -- (7.810,1.391);
+\draw[gray!60] (4.538,0.598) -- (7.260,2.281);
+\draw[gray!60] (3.988,1.488) -- (6.710,3.171);
+\draw[gray!60] (4.878,0.048) -- (7.600,1.731);
+\draw[gray!60] (4.328,0.938) -- (7.050,2.621);
+\draw[gray!60] (3.778,1.828) -- (6.500,3.511);
+\draw[gray!60] (4.668,0.388) -- (7.390,2.071);
+\draw[gray!60] (4.118,1.278) -- (6.840,2.961);
+\draw[gray!60] (5.008,-0.162) -- (7.730,1.520);
+\draw[gray!60] (4.458,0.728) -- (7.180,2.411);
+\draw[gray!60] (3.908,1.618) -- (6.630,3.301);
+\end{scope}
+\fill (5.80,1.60) circle (1.5pt);
+\draw[->, teal!60!black] (2.112,1.904) to[bend left=20] (4.50,1.75);
+\node[font=\footnotesize, align=center] at (5.80,-0.27) {a disc around $F(p)$, 4.6 times\\ smaller: the first 400 turns\\ cross it in 34 strands};
+\end{tikzpicture}
+\end{center}
+
+The irrational line, drawn here with $\alpha = (\sqrt5 - 1)/2$. Left: nine turns of $F(\mathbb{R})$ in the square, whose opposite sides are identified; the orange piece is $F(U)$, and two other strands already cross the neighbourhood $V$. Right: a disc around $F(p)$ about $4.6$ times smaller, and the first 400 turns of the curve, which cross it in 34 strands. Shrinking further only takes more turns: every neighbourhood of $F(p)$ meets infinitely many strands.
+
+\begin{thmbox}[The Image of an Embedding Is a Submanifold]\thmlabel{thm:embedding-image}
+If $F : M \to N$ is an embedding, with $\dim M = m$ and $\dim N = n$, then $F(M)$ is a regular submanifold of $N$ of codimension $n - m$.
+\leeref{Proposition 5.2}
+\end{thmbox}
+
+\begin{proof}
+\textit{(Lecture~14. The final equality is completed with Corollary~\ref{cor:immersion-local-image}; see the remark after the proof.)} Let $q = F(p) \in F(M)$. We need a chart of $N$ at $q$ in which $F(M)$ is cut out by the vanishing of the last $n - m$ coordinates.
+
+\emph{Start with the normal form.} Take the charts $(U, \varphi)$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $q$ of Theorem~\ref{thm:immersion-normal-form}. By Corollary~\ref{cor:immersion-local-image}, after replacing $V$ by the smaller open set
+\[
+V' = \big\{\, x \in V : \big(y^1(x), \ldots, y^m(x)\big) \in \varphi(U) \,\big\},
+\]
+we have
+\[
+F(U) = \{\, x \in V' : y^{m+1}(x) = \cdots = y^n(x) = 0 \,\}. \tag{$*$}
+\]
+This describes $F(U)$, not $F(M) \cap V'$: ``other pieces of the image'' may still pass through $V'$, as in the irrational line.
+
+\emph{The key step: the topological hypothesis.} ``Here's where we use the very strong condition that $F$ is a topological homeomorphism to its image.'' $U$ is open in $M$ and $F : M \to F(M)$ is a homeomorphism, so $F(U)$ is open in $F(M)$: there is an open $W \subseteq N$ with
+\[
+F(U) = W \cap F(M) .
+\]
+
+\emph{Shrink $V'$ to $V' \cap W$, and keep the same coordinates.} Since $F(U) \subseteq V' \cap W$,
+\[
+F(M) \cap (V' \cap W) = F(U) = \{\, x \in V' \cap W : y^{m+1}(x) = \cdots = y^n(x) = 0 \,\},
+\]
+the first equality because $F(M) \cap W = F(U) \subseteq V'$, the second by $(*)$ intersected with $W$. So $(V' \cap W, \psi)$ is an adapted chart at $q$ (Definition~\ref{def:submanifold}), and $F(M)$ is a submanifold of codimension $n - m$.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\draw[teal!60!black, thick] (0,0) circle (1.9); \node[teal!60!black, font=\footnotesize] at (-1.55,1.45) {$V$};
+\fill[orange!12] (-1.250,0.080) -- (-1.208,0.080) -- (-1.165,0.080) -- (-1.123,0.082) -- (-1.081,0.083) -- (-1.038,0.086) -- (-0.996,0.089) -- (-0.953,0.094) -- (-0.911,0.098) -- (-0.869,0.104) -- (-0.826,0.110) -- (-0.784,0.117) -- (-0.742,0.125) -- (-0.699,0.133) -- (-0.657,0.142) -- (-0.614,0.151) -- (-0.572,0.161) -- (-0.530,0.171) -- (-0.487,0.182) -- (-0.445,0.193) -- (-0.403,0.205) -- (-0.360,0.217) -- (-0.318,0.230) -- (-0.275,0.242) -- (-0.233,0.255) -- (-0.191,0.269) -- (-0.148,0.282) -- (-0.106,0.296) -- (-0.064,0.309) -- (-0.021,0.323) -- (0.021,0.337) -- (0.064,0.351) -- (0.106,0.364) -- (0.148,0.378) -- (0.191,0.391) -- (0.233,0.405) -- (0.275,0.418) -- (0.318,0.430) -- (0.360,0.443) -- (0.403,0.455) -- (0.445,0.467) -- (0.487,0.478) -- (0.530,0.489) -- (0.572,0.499) -- (0.614,0.509) -- (0.657,0.518) -- (0.699,0.527) -- (0.742,0.535) -- (0.784,0.543) -- (0.826,0.550) -- (0.869,0.556) -- (0.911,0.562) -- (0.953,0.566) -- (0.996,0.571) -- (1.038,0.574) -- (1.081,0.577) -- (1.123,0.578) -- (1.165,0.580) -- (1.208,0.580) -- (1.250,0.580) -- (1.250,-0.080) -- (1.208,-0.080) -- (1.165,-0.080) -- (1.123,-0.082) -- (1.081,-0.083) -- (1.038,-0.086) -- (0.996,-0.089) -- (0.953,-0.094) -- (0.911,-0.098) -- (0.869,-0.104) -- (0.826,-0.110) -- (0.784,-0.117) -- (0.742,-0.125) -- (0.699,-0.133) -- (0.657,-0.142) -- (0.614,-0.151) -- (0.572,-0.161) -- (0.530,-0.171) -- (0.487,-0.182) -- (0.445,-0.193) -- (0.403,-0.205) -- (0.360,-0.217) -- (0.318,-0.230) -- (0.275,-0.242) -- (0.233,-0.255) -- (0.191,-0.269) -- (0.148,-0.282) -- (0.106,-0.296) -- (0.064,-0.309) -- (0.021,-0.323) -- (-0.021,-0.337) -- (-0.064,-0.351) -- (-0.106,-0.364) -- (-0.148,-0.378) -- (-0.191,-0.391) -- (-0.233,-0.405) -- (-0.275,-0.418) -- (-0.318,-0.430) -- (-0.360,-0.443) -- (-0.403,-0.455) -- (-0.445,-0.467) -- (-0.487,-0.478) -- (-0.530,-0.489) -- (-0.572,-0.499) -- (-0.614,-0.509) -- (-0.657,-0.518) -- (-0.699,-0.527) -- (-0.742,-0.535) -- (-0.784,-0.543) -- (-0.826,-0.550) -- (-0.869,-0.556) -- (-0.911,-0.562) -- (-0.953,-0.566) -- (-0.996,-0.571) -- (-1.038,-0.574) -- (-1.081,-0.577) -- (-1.123,-0.578) -- (-1.165,-0.580) -- (-1.208,-0.580) -- (-1.250,-0.580) -- cycle; \draw[orange!70!black, dashed] (-1.250,0.080) -- (-1.208,0.080) -- (-1.165,0.080) -- (-1.123,0.082) -- (-1.081,0.083) -- (-1.038,0.086) -- (-0.996,0.089) -- (-0.953,0.094) -- (-0.911,0.098) -- (-0.869,0.104) -- (-0.826,0.110) -- (-0.784,0.117) -- (-0.742,0.125) -- (-0.699,0.133) -- (-0.657,0.142) -- (-0.614,0.151) -- (-0.572,0.161) -- (-0.530,0.171) -- (-0.487,0.182) -- (-0.445,0.193) -- (-0.403,0.205) -- (-0.360,0.217) -- (-0.318,0.230) -- (-0.275,0.242) -- (-0.233,0.255) -- (-0.191,0.269) -- (-0.148,0.282) -- (-0.106,0.296) -- (-0.064,0.309) -- (-0.021,0.323) -- (0.021,0.337) -- (0.064,0.351) -- (0.106,0.364) -- (0.148,0.378) -- (0.191,0.391) -- (0.233,0.405) -- (0.275,0.418) -- (0.318,0.430) -- (0.360,0.443) -- (0.403,0.455) -- (0.445,0.467) -- (0.487,0.478) -- (0.530,0.489) -- (0.572,0.499) -- (0.614,0.509) -- (0.657,0.518) -- (0.699,0.527) -- (0.742,0.535) -- (0.784,0.543) -- (0.826,0.550) -- (0.869,0.556) -- (0.911,0.562) -- (0.953,0.566) -- (0.996,0.571) -- (1.038,0.574) -- (1.081,0.577) -- (1.123,0.578) -- (1.165,0.580) -- (1.208,0.580) -- (1.250,0.580) -- (1.250,-0.080) -- (1.208,-0.080) -- (1.165,-0.080) -- (1.123,-0.082) -- (1.081,-0.083) -- (1.038,-0.086) -- (0.996,-0.089) -- (0.953,-0.094) -- (0.911,-0.098) -- (0.869,-0.104) -- (0.826,-0.110) -- (0.784,-0.117) -- (0.742,-0.125) -- (0.699,-0.133) -- (0.657,-0.142) -- (0.614,-0.151) -- (0.572,-0.161) -- (0.530,-0.171) -- (0.487,-0.182) -- (0.445,-0.193) -- (0.403,-0.205) -- (0.360,-0.217) -- (0.318,-0.230) -- (0.275,-0.242) -- (0.233,-0.255) -- (0.191,-0.269) -- (0.148,-0.282) -- (0.106,-0.296) -- (0.064,-0.309) -- (0.021,-0.323) -- (-0.021,-0.337) -- (-0.064,-0.351) -- (-0.106,-0.364) -- (-0.148,-0.378) -- (-0.191,-0.391) -- (-0.233,-0.405) -- (-0.275,-0.418) -- (-0.318,-0.430) -- (-0.360,-0.443) -- (-0.403,-0.455) -- (-0.445,-0.467) -- (-0.487,-0.478) -- (-0.530,-0.489) -- (-0.572,-0.499) -- (-0.614,-0.509) -- (-0.657,-0.518) -- (-0.699,-0.527) -- (-0.742,-0.535) -- (-0.784,-0.543) -- (-0.826,-0.550) -- (-0.869,-0.556) -- (-0.911,-0.562) -- (-0.953,-0.566) -- (-0.996,-0.571) -- (-1.038,-0.574) -- (-1.081,-0.577) -- (-1.123,-0.578) -- (-1.165,-0.580) -- (-1.208,-0.580) -- (-1.250,-0.580) -- cycle;
+\draw[orange!85!black, very thick] (-1.250,-0.250) -- (-1.208,-0.250) -- (-1.165,-0.250) -- (-1.123,-0.248) -- (-1.081,-0.247) -- (-1.038,-0.244) -- (-0.996,-0.241) -- (-0.953,-0.236) -- (-0.911,-0.232) -- (-0.869,-0.226) -- (-0.826,-0.220) -- (-0.784,-0.213) -- (-0.742,-0.205) -- (-0.699,-0.197) -- (-0.657,-0.188) -- (-0.614,-0.179) -- (-0.572,-0.169) -- (-0.530,-0.159) -- (-0.487,-0.148) -- (-0.445,-0.137) -- (-0.403,-0.125) -- (-0.360,-0.113) -- (-0.318,-0.100) -- (-0.275,-0.088) -- (-0.233,-0.075) -- (-0.191,-0.061) -- (-0.148,-0.048) -- (-0.106,-0.034) -- (-0.064,-0.021) -- (-0.021,-0.007) -- (0.021,0.007) -- (0.064,0.021) -- (0.106,0.034) -- (0.148,0.048) -- (0.191,0.061) -- (0.233,0.075) -- (0.275,0.088) -- (0.318,0.100) -- (0.360,0.113) -- (0.403,0.125) -- (0.445,0.137) -- (0.487,0.148) -- (0.530,0.159) -- (0.572,0.169) -- (0.614,0.179) -- (0.657,0.188) -- (0.699,0.197) -- (0.742,0.205) -- (0.784,0.213) -- (0.826,0.220) -- (0.869,0.226) -- (0.911,0.232) -- (0.953,0.236) -- (0.996,0.241) -- (1.038,0.244) -- (1.081,0.247) -- (1.123,0.248) -- (1.165,0.250) -- (1.208,0.250) -- (1.250,0.250);
+\draw[thick] plot[smooth] coordinates {(-1.25,-0.250) (-1.6,-0.400) (-2.15,-0.800)};
+\draw[thick] plot[smooth] coordinates {(1.25,0.250) (1.6,0.400) (2.15,0.800)};
+\fill (0,0) circle (1.5pt) node[below, font=\scriptsize] {$q$};
+\node[orange!85!black, font=\scriptsize, fill=white, inner sep=1pt] at (-0.75,0.62) {$F(U)$};
+\node[orange!70!black, font=\scriptsize] at (0.55,-0.62) {$W$};
+\draw[thick] plot[smooth] coordinates {(-1.2,1.45) (-0.4,1.0) (0.5,1.15) (1.25,1.5)};
+\draw[thick] plot[smooth] coordinates {(-1.5,-1.15) (-0.6,-0.95) (0.3,-1.25) (0.9,-1.7)};
+\node[font=\scriptsize, anchor=west, align=left] at (2.05,1.1) {other parts\\ of $F(M)$};
+\node[font=\scriptsize, anchor=west, align=left] at (2.25,-0.15) {$F(M)$ continues,\\ leaving $W$};
+\draw[->, gray!60] (2.05,1.1) -- (1.2,1.42); \draw[->, gray!60] (2.05,0.95) to[bend left=25] (0.8,-1.45);
+\end{tikzpicture}
+\end{center}
+
+The key step. $V$ may contain other parts of $F(M)$ (black) besides $F(U)$ (orange). Because $F(U)$ is open in $F(M)$, it is $W \cap F(M)$ for an open $W$ (shaded), and $W$ cuts the other parts away; $F(M)$ continues beyond $F(U)$ only by leaving $W$. For the irrational line no such $W$ exists, which is exactly the failure of openness.
+
+\textbf{Transcription note.} Page~39 of the handwritten notes writes the target as $F(M) \cap V = \{0 = y^{n-m+1} = \cdots = y^m\}$; the vanishing coordinates are the last $n - m$ of them, $y^{m+1}, \ldots, y^n$, as the lecture said.
+
+\begin{rembox}[Where Is Injectivity Used?]\label{rem:where-injectivity-used}
+In lecture the last equality caused trouble, and a discussion. Uribe first located the use of injectivity there; a student pointed out that $(*)$ concerns only $F(U)$, and that the proof seems to need only that $F$ be an immersion which is open onto its image. Another student added covering-type examples: maps that are not injective but whose images are manifolds, such as $\mathbb{R} \to S^1$, $t \mapsto (\cos t, \sin t)$, or the two-to-one map $S^2 \to \mathbb{RP}^2$. Uribe agreed --- ``I don't think we're using injectivity'' --- and promised ``a definite conclusion by email.''
+
+\emph{The notes' reading, pending that email.} The students are right. The proof above uses exactly two things: the normal form (the immersion hypothesis), and that $F(U)$ is open in $F(M)$ for the $U$ of the normal form. With the completion via Corollary~\ref{cor:immersion-local-image} nothing else enters, and injectivity in particular is never used. So the proof gives the next proposition.
+\end{rembox}
+
+\begin{propbox}[Immersions That Are Open onto Their Images]\thmlabel{prop:immersion-open-image}
+Let $F : M \to N$ be an immersion such that $F : M \to F(M)$ is an open map, $F(M)$ carrying the subspace topology. Then $F(M)$ is a regular submanifold of $N$ of codimension $n - m$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture: the conclusion of the class discussion, pending Uribe's email.)} The proof of Theorem~\ref{thm:embedding-image}, word for word: openness of $F$ onto its image is all it used to produce $W$. For example, $t \mapsto (\cos t, \sin t)$ is an immersion of $\mathbb{R}$, open onto $S^1$ and far from injective --- every point of $S^1$ has infinitely many preimages --- and its image $S^1$ is a submanifold of $\mathbb{R}^2$. The figure-eight is not open onto its image, consistent with its image not being a submanifold.
+\end{proof}
+
+\begin{corbox}[An Embedding Is a Diffeomorphism onto Its Image]\thmlabel{cor:embedding-diffeo}
+If $F : M \to N$ is an embedding, then $F : M \to F(M)$ is a diffeomorphism, $F(M)$ carrying its induced smooth structure as a submanifold.
+\end{corbox}
+
+\begin{proof}
+\textit{(Stated in Lecture~14 --- ``an embedding restricts to a diffeomorphism between $M$ and the image''; filled in.)} $F : M \to F(M)$ is smooth by Lemma~\ref{lem:maps-into-submanifold}(2), and it is an immersion: its differential followed by the injective $\iota_*$ is the injective $F_*$. Both manifolds have dimension $m$, so it is a local diffeomorphism (Proposition~\ref{prop:dimension-constraints}(3)); being bijective, it is a diffeomorphism, its inverse being smooth near every point.
+\end{proof}
+
+\subsection{Proper Maps}\label{sub:proper-maps}
+
+\textit{Lecture 14. When is an injective immersion an embedding? The homeomorphism condition is point-set topology, and a convenient sufficient condition is properness --- the same hypothesis as in Ehresmann's theorem (Theorem~\ref{thm:ehresmann}).}
+
+\begin{defbox}[Proper Map]\deflabel{def:proper-map}
+A continuous map $F : X \to Y$ is \textbf{proper} if $F^{-1}(K)$ is compact for every compact $K \subseteq Y$.
+\leeref{App.~A, \emph{Proper Maps}}
+\end{defbox}
+
+\begin{propbox}[Proper Maps into Manifolds Are Closed]\thmlabel{prop:proper-closed}
+Let $F : M \to N$ be a continuous proper map, $N$ a topological manifold. Then $F$ is closed: $F(C)$ is closed in $N$ for every closed $C \subseteq M$.
+\leeref{Theorem A.57}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~14 --- ``it's a very funny proof. You go back and forth literally''; the second claim, which Uribe left to check, is completed.)} Let $C \subseteq M$ be closed.
+
+\emph{Claim 1: $F(C) \cap K$ is closed for every compact $K \subseteq N$.} $F^{-1}(K)$ is compact, so $C \cap F^{-1}(K)$, a closed subset of it, is compact; its image $F\big(C \cap F^{-1}(K)\big)$ is compact, hence closed in the Hausdorff space $N$. And $F\big(C \cap F^{-1}(K)\big) = F(C) \cap K$: a point of the left side is $F(c)$ with $c \in C$ and $F(c) \in K$, and conversely.
+
+\emph{Claim 2.} Let $q \in \overline{F(C)}$, and let $V$ be a neighbourhood of $q$ with compact closure (Proposition~\ref{prop:locally-compact}). Then $q \in \overline{F(C) \cap \overline V}$. \textit{(Completion.)} If $O$ is any open set containing $q$, then $O \cap V$ is an open set containing $q$, so it meets $F(C)$; hence $O$ meets $F(C) \cap V \subseteq F(C) \cap \overline V$.
+
+\emph{Conclusion.} By Claim~1 with $K = \overline V$, the set $F(C) \cap \overline V$ is closed, so it equals its closure, and $q \in F(C) \cap \overline V \subseteq F(C)$. Thus $\overline{F(C)} = F(C)$.
+\end{proof}
+
+\begin{thmbox}[Injective Proper Immersions Are Embeddings]\thmlabel{thm:proper-embedding}
+An injective proper immersion $F : M \to N$ is an embedding.
+\leeref{Proposition 4.22}
+\end{thmbox}
+
+\begin{proof}
+\textit{(Lecture~14 reduced this to Proposition~\ref{prop:proper-closed}; the last step is filled in.)} It remains to see that $F : M \to F(M)$ is a homeomorphism. It is a continuous bijection. If $C \subseteq M$ is closed, then $F(C)$ is closed in $N$ by Proposition~\ref{prop:proper-closed}, hence $F(C) = F(C) \cap F(M)$ is closed in $F(M)$. So the inverse $F(M) \to M$ is continuous.
+\end{proof}
+
+\begin{corbox}[Injective Immersions of Compact Manifolds]\thmlabel{cor:compact-embedding}
+If $M$ is compact, every injective immersion $F : M \to N$ is an embedding.
+\leeref{Proposition 4.22}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} $F$ is proper: if $K \subseteq N$ is compact, it is closed, so $F^{-1}(K)$ is closed in the compact $M$, hence compact. Apply Theorem~\ref{thm:proper-embedding}.
+\end{proof}
+
+\textit{An aside from the end of the lecture.} Uribe mentioned that he is developing his own notes for the course, ``based on notes that somebody took a few years ago'', edited ``the night before'', and asked whether they would help, perhaps shared through Overleaf.
+
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -7988,6 +8287,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:fibrations}\ Fibrations & smooth fiber bundles (Chapter 10); Ehresmann's theorem is not in Lee \\
 \ref{sec:tangent-bundle}\ The tangent bundle & Chapter 3, \emph{The Tangent Bundle} (Lemma 1.35, Proposition 3.18); Proposition 11.9 (cotangent bundle); Chapter 8 (vector fields); Chapter 10 (sections) \\
 \ref{sec:immersions}\ Immersions & Chapter 4, \emph{Immersions} (Theorem 4.12); Example 4.19 \\
+\ref{sec:embeddings}\ Embeddings & Chapter 4, \emph{Embeddings} (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 \\
 \bottomrule
 \end{longtable}
 
@@ -8006,6 +8306,7 @@ Example 1.4 & Ex.~\ref{ex:s2-manifold}, Prop.~\ref{prop:sn-manifold}, Ex.~\ref{e
 Example 1.5 & Prop.~\ref{prop:rpn-topologies} \\
 Example 1.8 & Thm.~\ref{thm:product-inherit} \\
 Proposition 1.11 & Prop.~\ref{prop:count-components}, Thm.~\ref{thm:conn-implies-path}, Cor.~\ref{cor:manifold-components} \\
+Proposition 1.12 & Prop.~\ref{prop:locally-compact} \\
 Proposition 1.17 & Def.~\ref{def:compatible-atlases}, Thm.~\ref{thm:maximal-atlas} \\
 Example 1.21 & Prop.~\ref{prop:zero-manifolds} \\
 Example 1.22 & Ex.~\ref{ex:atlas-Rn} \\
@@ -8021,7 +8322,7 @@ Example 1.34 & Prop.~\ref{prop:product-manifold} \\
 Lemma 1.35 & Prop.~\ref{prop:tb-topology} \\
 Example 1.36 & Def.~\ref{def:grassmannian}, Cor.~\ref{cor:grassmannian} \\
 Problem 1-1 & Ex.~\ref{ex:two-origins}, Prop.~\ref{prop:conditions-independent}, Ex.~\ref{ex:two-origins-quotient} \\
-Problem 1-2 & Prop.~\ref{prop:conditions-independent}, Ex.~\ref{ex:rdisc-times-r} \\
+Problem 1-2 & Ex.~\ref{ex:rdisc-times-r}, Prop.~\ref{prop:conditions-independent} \\
 Problem 1-6 & Prop.~\ref{prop:transport-structure}, Def.~\ref{def:transported}, Cor.~\ref{cor:single-chart-Rn} \\
 Problem 1-7 & Ex.~\ref{ex:circle-stereo} \\
 Problem 1-9 & Def.~\ref{def:cpn}, Prop.~\ref{prop:cpn}, Prop.~\ref{prop:cpn-compact}, Prop.~\ref{prop:cpn-lines}, Ex.~\ref{ex:cpn-orbit}, Def.~\ref{def:homogeneous-coords}, Def.~\ref{def:cpn-charts}, Prop.~\ref{prop:cpn-chart}, Thm.~\ref{thm:cpn-atlas} \\
@@ -8030,8 +8331,8 @@ Proposition 2.10 & Lem.~\ref{lem:composition-smooth} \\
 Proposition 2.15 & Prop.~\ref{prop:diffeomorphic-equivalence} \\
 Proposition 2.25 & Prop.~\ref{prop:germ-global} \\
 Lemma 3.1 & Lem.~\ref{lem:derivation-properties} \\
-Proposition 3.2 & Def.~\ref{def:Dv}, Prop.~\ref{prop:Dv-determines-v}, Thm.~\ref{thm:ambient-abstract}, Lem.~\ref{lem:hadamard}, Cor.~\ref{cor:derivations-Rn} \\
-Corollary 3.3 & Thm.~\ref{thm:tangent-basis}, Cor.~\ref{cor:derivations-Rn}, Prop.~\ref{prop:differential-agree} \\
+Proposition 3.2 & Def.~\ref{def:Dv}, Prop.~\ref{prop:Dv-determines-v}, Lem.~\ref{lem:hadamard}, Cor.~\ref{cor:derivations-Rn}, Thm.~\ref{thm:ambient-abstract} \\
+Corollary 3.3 & Cor.~\ref{cor:derivations-Rn}, Thm.~\ref{thm:tangent-basis}, Prop.~\ref{prop:differential-agree} \\
 Lemma 3.4 & Lem.~\ref{lem:derivation-properties} \\
 Proposition 3.6 & Thm.~\ref{prop:pushforward-functorial}, Cor.~\ref{lem:germs-diffeo} \\
 Proposition 3.8 & Prop.~\ref{prop:germ-global} \\
@@ -8040,7 +8341,7 @@ Proposition 3.10 & Cor.~\ref{cor:tangent-basis-consequences} \\
 Proposition 3.13 & Prop.~\ref{prop:differential-agree}, Cor.~\ref{cor:tangent-vs} \\
 Proposition 3.14 & Thm.~\ref{thm:tangent-product}, Cor.~\ref{cor:tangent-product-coords}, Ex.~\ref{ex:product-projection-submersion} \\
 Proposition 3.15 & Thm.~\ref{thm:tangent-basis} \\
-Proposition 3.18 & Prop.~\ref{prop:tangent-bundle-claim}, Def.~\ref{def:tb-charts}, Prop.~\ref{prop:tb-topology}, Prop.~\ref{prop:tb-atlas} \\
+Proposition 3.18 & Def.~\ref{def:tb-charts}, Prop.~\ref{prop:tb-topology}, Prop.~\ref{prop:tb-atlas}, Prop.~\ref{prop:tangent-bundle-claim} \\
 Proposition 3.23 & Thm.~\ref{thm:every-vector-velocity} \\
 Proposition 3.24 & Cor.~\ref{cor:velocity-composite} \\
 Corollary 3.25 & Thm.~\ref{thm:vs-differential-curves}, Cor.~\ref{cor:velocity-composite} \\
@@ -8049,8 +8350,11 @@ Theorem 4.5 & Thm.~\ref{thm:local-diffeo-criterion} \\
 Proposition 4.6 & Cor.~\ref{cor:bijective-local-diffeo} \\
 Proposition 4.8 & Thm.~\ref{thm:local-diffeo-criterion}, Prop.~\ref{prop:dimension-constraints} \\
 Theorem 4.12 & Thm.~\ref{thm:submersion-normal-form}, Thm.~\ref{thm:immersion-normal-form} \\
+Example 4.20 & Ex.~\ref{ex:irrational-line} \\
+Proposition 4.22 & Thm.~\ref{thm:proper-embedding}, Cor.~\ref{cor:compact-embedding} \\
 Proposition 4.28 & Cor.~\ref{cor:submersion-open-map} \\
 Problem 4-5 & Prop.~\ref{prop:cp1-sphere}, Ex.~\ref{ex:hopf-submersion}, Ex.~\ref{ex:hopf-fibration} \\
+Proposition 5.2 & Thm.~\ref{thm:embedding-image} \\
 Theorem 5.8 & Def.~\ref{def:submanifold}, Prop.~\ref{prop:submanifold-structure} \\
 Corollary 5.14 & Thm.~\ref{thm:regular-value}, Prop.~\ref{prop:level-set-smooth}, Thm.~\ref{thm:rvt-manifolds} \\
 Corollary 5.30 & Lem.~\ref{lem:maps-into-submanifold} \\
@@ -8100,6 +8404,7 @@ Proposition A.43 & Prop.~\ref{fact:conn} \\
 Proposition A.45 & Prop.~\ref{fact:compact} \\
 Proposition A.50 & Prop.~\ref{fact:compact} \\
 Lemma A.52 & Prop.~\ref{fact:compact} \\
+Theorem A.57 & Prop.~\ref{prop:proper-closed} \\
 Corollary B.21 & Prop.~\ref{fact:linalg} \\
 Proposition B.24 & Prop.~\ref{fact:linalg} \\
 Theorem C.15 & Lem.~\ref{lem:hadamard}, Lem.~\ref{lem:taylor-hadamard} \\

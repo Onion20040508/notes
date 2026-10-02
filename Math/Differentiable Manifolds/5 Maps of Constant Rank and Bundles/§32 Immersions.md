@@ -5,7 +5,7 @@ chapter: 5
 section: 32
 tags: [differentiable-manifolds, math591]
 ---
-← [[§31 The Tangent Bundle]] · ↑ [[· 5 Maps of Constant Rank and Bundles]]
+← [[§31 The Tangent Bundle]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§33 Embeddings]] →
 
 *Stage: maps — The maps with injective differentials: locally inclusions, globally more subtle.*
 
