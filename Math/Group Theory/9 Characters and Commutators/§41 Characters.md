@@ -56,7 +56,7 @@ tags: [group-theory, math493]
 *Uses:* [[§41 Characters#^def-41-1|Def. §41.1]], [[§31 Conjugacy Classes#^def-31-1|Def. §31.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]]
 
 > [!remark]- Connections
-> - Used in [[§42 Commutators#^thm-42-5|The Commutator Subgroup of Sₙ]] to pin down all characters of $S_n$.
+> - Used in [[§42 Commutators#^thm-42-5|The Commutator Subgroup and Characters of Sₙ]] to pin down all characters of $S_n$.
 > - The model case: the determinant, a character of GLₙ, is a similarity invariant, [[§34 Determinants#^ladr-9-52|LADR 9.52]]; the trace is also constant on conjugacy classes, [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|LADR 8.50]], without being a character.
 
 > [!remark] Remark: Where Commutativity of $A$ Is Needed

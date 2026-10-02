@@ -144,7 +144,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§35 No
 ^prop-37-4
 
 > [!proof]+ Proof
-> The composite is the restriction of the projection $\pi$ ([[§37 Quotient Groups#^prop-37-2|§37.2]]) to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the [[§39 The Second and Third Isomorphism Theorems#^thm-39-2|Second Isomorphism Theorem]], §38.)
+> The composite is the restriction of the projection $\pi$ ([[§37 Quotient Groups#^prop-37-2|§37.2]]) to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the [[§39 The Second and Third Isomorphism Theorems#^thm-39-2|Second Isomorphism Theorem]], §39.2.)
 
 ^pf-37-4
 

@@ -24,7 +24,8 @@ tags: [group-theory, hub]
 - [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-9|Theorem §20.9: Generators of Aₙ]]
 - [[§41 Characters#^ex-41-1|Example §41.1: Characters]]
 - [[§42 Commutators#^prop-42-3|Proposition §42.3: Transpositions Are Not Commutators]]
-- [[§42 Commutators#^thm-42-5|Theorem §42.5: The Commutator Subgroup of Sₙ]]
+- [[§42 Commutators#^thm-42-5|Theorem §42.5: The Commutator Subgroup and Characters of Sₙ]]
+- [[§42 Commutators#^cor-42-7|Corollary §42.7: Every Square Root of e_A Gives a Character]]
 
 ## Used in (Differentiable Manifolds)
 - [[§8 Topological Groups and Classical Matrix Groups#^prop-8-2|Proposition §8.2: Properties of the Sign]]

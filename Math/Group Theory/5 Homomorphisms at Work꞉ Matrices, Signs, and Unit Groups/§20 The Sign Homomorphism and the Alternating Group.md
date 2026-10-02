@@ -225,7 +225,7 @@ tags: [group-theory, math493]
 *Uses:* [[§20 The Sign Homomorphism and the Alternating Group#^lem-20-8|§20.8]], [[§20 The Sign Homomorphism and the Alternating Group#^cor-20-4|§20.4]], [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|§20.3]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§4 Subgroups#^prop-4-7|§4.7]], [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-7|§20.7]], [[§20 The Sign Homomorphism and the Alternating Group#^lem-20-6|§20.6]], [[§11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]]
 
 > [!remark]- Connections
-> - 3-cycles drive the simplicity of $A_n$: [[§40 Simple Groups#^lem-40-8|§40.8]], [[§40 Simple Groups#^thm-40-9|§40.9]]; and they are commutators: [[§42 Commutators#^prop-42-2|§42.2]], [[§42 Commutators#^thm-42-5|The Commutator Subgroup of Sₙ]].
+> - 3-cycles drive the simplicity of $A_n$: [[§40 Simple Groups#^lem-40-8|§40.8]], [[§40 Simple Groups#^thm-40-9|§40.9]]; and they are commutators: [[§42 Commutators#^prop-42-2|§42.2]], [[§42 Commutators#^thm-42-5|The Commutator Subgroup and Characters of Sₙ]].
 
 > [!definition] Definition §20.4: Alternating Polynomial
 > A polynomial $f \in \mathbb{Q}[x_1, \ldots, x_n]$ is **alternating** if $\sigma \cdot f = \operatorname{sgn}(\sigma) f$ for every $\sigma \in S_n$: fixed by even permutations and negated by odd ones. (Compare *symmetric*, $\sigma \cdot f = f$ for all $\sigma$; [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-3|Def. §19.3]].) By the [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-2|Three Formulas for the Sign]], $\Delta$ is alternating.

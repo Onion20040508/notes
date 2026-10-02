@@ -296,11 +296,12 @@ $\operatorname{Conj}(g)$, \ $C_G(g)$, \ $Z(G)$ & Conjugacy class; centralizer (P
 $g \star x$, \ $G \curvearrowright X$, \ $X \curvearrowleft G$ & Action; left action; right action (\ref{sec:action-def}). \\
 $\operatorname{Stab}(x)$, \ $\operatorname{Fix}(g)$, \ $Gx$ & Stabilizer, fixed points, orbit (\ref{sec:stabilizers}, \ref{sec:orbits}). \\
 $G\backslash X$, \ $X/G$ & Orbit spaces of a left and a right action (\ref{sec:orbits}). \\
-$H \trianglelefteq G$, \ $[G, G]$ & Normal subgroup (\ref{sec:normal}); commutator subgroup (\ref{sec:commutators}). \\
+$H \trianglelefteq G$, \ $[G, G]$ & Normal subgroup (\ref{sec:normal}); commutator subgroup, also written $D(G)$ (\ref{sec:commutators}). \\
+$G^{\mathrm{ab}}$ & Abelianization $G/[G,G]$ (\ref{sec:commutators}). \\
 $G/N$, \ $\pi$ & Quotient group by a normal subgroup; canonical projection $g \mapsto gN$ (\ref{sec:quotient}). \\
 $PSL_n(F)$ & Projective special linear group $SL_n(F)/Z$ (\ref{sec:simple}). \\
-$HN$ & Product set $\{hn : h \in H,\ n \in N\}$ (38.1). \\
-$X \sqcup Y$ & Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$ (37.1). \\
+$HN$ & Product set $\{hn : h \in H,\ n \in N\}$ (\ref{sec:second-iso}). \\
+$X \sqcup Y$ & Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$ (\ref{sec:representatives}). \\
 $\hookrightarrow$, \ $\twoheadrightarrow$ & An injective map; a surjective map. \\
 \textit{WS $k.m$}, \textit{PS $k.m$} & Provenance tags: Worksheet $k$ / Problem Set $k$, Problem $m$. \\
 \end{longtable}}
@@ -3569,16 +3570,17 @@ Let $N \trianglelefteq G$.
 
 \proofpending
 
-\begin{thmbox}[{A Normal Subgroup Inside a Subgroup of Finite Index (PS 3.2)}]\label{thm:normal-subgroup-inside-subgroup-finite-index}
+\begin{thmbox}[{A Normal Subgroup Inside a Subgroup of Finite Index (PS 3.2; PS 4.3)}]\label{thm:normal-subgroup-inside-subgroup-finite-index}
 Let $H$ be a subgroup of $G$ with $[G : H] = n$ finite. Then there is a normal subgroup $N$ of $G$ with $N \subseteq H \subseteq G$ and $[G : N] \leq n!$.
 \end{thmbox}
 
 \begin{proof}
-$G$ acts on the $n$-element set $G/H$ by $g \star (xH) = (gx)H$ (\ref{sec:coset-action}), so there is a homomorphism $\varphi: G \to S_{G/H}$ (Actions Are Homomorphisms to $S_X$). Let $N = \operatorname{Ker}\varphi$, which is normal (Kernels Are Normal).
+$G$ acts on the $n$-element set $G/H$ by $g \star (xH) = (gx)H$ (\S 29), so there is a homomorphism $\varphi: G \to S_{G/H}$ (Actions Are Homomorphisms to $S_X$). Let $N = \operatorname{Ker}\varphi$, which is normal (Kernels Are Normal).
 
 \textbf{$N \subseteq H$.} If $g \in N$, then $g$ fixes every coset, in particular $g \star (eH) = gH = H$, so $g = ge \in gH = H$.
 
 \textbf{$[G : N] \leq n!$.} Define $\bar\varphi: G/N \to S_{G/H}$ by $\bar\varphi(gN) = \varphi(g)$. It is well defined: if $gN = g'N$ then $g' = gk$ with $k \in N$, so $\varphi(g') = \varphi(g)\varphi(k) = \varphi(g)$. It is injective: if $\varphi(g) = \varphi(g')$, then $\varphi(g^{-1}g') = e$, so $g^{-1}g' \in N$ and $gN = g'N$. Hence $[G : N] = |G/N| \leq |S_{G/H}| = n!$, the last equality because relabelling the $n$ cosets gives $S_{G/H} \cong S_n$.
+The argument does not require $G$ to be finite.
 \end{proof}
 
 \begin{center}
@@ -3709,7 +3711,7 @@ Let $S$ be a set of representatives for $G/N$ that is also a subgroup of $G$. Th
 \end{propbox}
 
 \begin{proof}
-The composite is the restriction of the projection $\pi$ to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the Second Isomorphism Theorem, 38.1.)
+The composite is the restriction of the projection $\pi$ to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the Second Isomorphism Theorem, \ref{thm:second-isomorphism-theorem}.)
 \end{proof}
 
 \begin{rembox}[{Life Is Especially Nice When $S$ Is a Subgroup}]\label{rem:life-especially-nice-when-s-subgroup}
@@ -3795,14 +3797,18 @@ an injective homomorphism is an isomorphism onto its image, which is exactly the
 For subgroups $H, N$ of $G$, write $HN := \{hn : h \in H,\ n \in N\}$.
 \end{defbox}
 
-\begin{lembox}[{$HN$ Is a Subgroup When $N$ Is Normal (lecture 10/2)}]\label{lem:hn-subgroup-when-n-normal}
+\begin{lembox}[{$HN$ Is a Subgroup When $N$ Is Normal (lecture 10/2; PS 4.1(2))}]\label{lem:hn-subgroup-when-n-normal}
 If $H \leq G$ and $N \trianglelefteq G$, then $HN$ is a subgroup of $G$, and it contains both $H$ and $N$.
 \end{lembox}
 
 \begin{proof}
 \emph{Closure (lecture).} Let $h_1, h_2 \in H$ and $n_1, n_2 \in N$. Since $N$ is normal, $n_1h_2 = h_2n'$ for some $n' \in N$ ($n' = h_2^{-1}n_1h_2$). So $h_1n_1 \cdot h_2n_2 = h_1h_2 \cdot n'n_2 \in HN$. \emph{Containment:} $h = he$ and $n = en$.
 
-\emph{Identity and inverses:} \textcolor{gray}{[To be proved; assigned as homework.]}
+\emph{Identity (PS 4.1(2)).} $e = ee \in HN$, since $e \in H$ and $e \in N$.
+
+\emph{Inverses (PS 4.1(2)).} For $hn \in HN$, $(hn)^{-1} = n^{-1}h^{-1} = h^{-1}\big(hn^{-1}h^{-1}\big)$. Here $h^{-1} \in H$, and $hn^{-1}h^{-1} \in N$ by normality applied to $n^{-1} \in N$; so $(hn)^{-1} \in HN$.
+
+By the symmetric argument, $HN$ is also a subgroup when $H$, rather than $N$, is normal (as PS 4.1(2) notes). Without either hypothesis it can fail: $AB$ Need Not Be a Subgroup, below.
 \end{proof}
 
 \begin{thmbox}[{Second Isomorphism Theorem (lecture 10/2)}]\label{thm:second-isomorphism-theorem}
@@ -3831,7 +3837,7 @@ If a set of representatives $S$ for $G/N$ is a subgroup, then $S \cong G/N$.
 \end{corbox}
 
 \begin{proof}
-Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ (Representatives Forming a Subgroup, 37.1). The theorem gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
+Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ (Representatives Forming a Subgroup, \ref{prop:representatives-forming-subgroup}). The theorem gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
 \end{proof}
 
 \begin{exbox}[{The Second Isomorphism Theorem in Action}]\label{ex:second-isomorphism-theorem-action}
@@ -3850,6 +3856,12 @@ Let $N \subseteq K$ be normal subgroups of $G$. Then $K/N$ is a normal subgroup 
 \begin{rembox}[{The Isomorphism Theorems}]\label{rem:isomorphism-theorems}
 The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The first identifies $G/N$ with an image; the second and third compare quotients of subgroups and quotients of quotients. A worksheet on the second and third theorems is on the course Canvas site; the lecture recommended experimenting with small groups to make them intuitive.
 \end{rembox}
+
+\begin{exbox}[{$AB$ Need Not Be a Subgroup (PS 4.1(1))}]\label{ex:ab-need-not-subgroup}
+Without normality, the product set of two subgroups can fail to be a subgroup. In $S_3$ take $A = \{e, (1\,2)\}$ and $B = \{e, (1\,3)\}$. Then
+\[ AB = \{e,\ (1\,3),\ (1\,2),\ (1\,2)(1\,3)\} = \{e,\ (1\,2),\ (1\,3),\ (1\,3\,2)\}, \]
+since $(1\,2)(1\,3)$ sends $1 \mapsto 3 \mapsto 3$, $3 \mapsto 1 \mapsto 2$, $2 \mapsto 2 \mapsto 1$. But $(1\,3\,2)^{-1} = (1\,2\,3) \notin AB$, so $AB$ is not closed under inverses. (Neither $A$ nor $B$ is normal in $S_3$; compare $HN$ Is a Subgroup When $N$ Is Normal, above. Alternatively: $|AB| = 4$ does not divide $6$.)
+\end{exbox}
 
 
 \section{Simple Groups}\label{sec:simple}
@@ -4178,10 +4190,10 @@ The sign $\sgn: S_n \to \{\pm 1\}$ is a character (the target is abelian). By \r
 \end{proof}
 
 \begin{defbox}[Commutator Subgroup]\label{def:commutator-subgroup}
-The \textbf{commutator subgroup} of $G$, written $[G,G]$, is the subgroup generated by all commutators $aba^{-1}b^{-1}$, $a, b \in G$. (A product of commutators need not itself be a commutator, which is why the generated subgroup is taken.)
+The \textbf{commutator subgroup} of $G$, written $[G,G]$ (PS 4.4 writes $D(G)$), is the subgroup generated by all commutators $aba^{-1}b^{-1}$, $a, b \in G$. (A product of commutators need not itself be a commutator, which is why the generated subgroup is taken.)
 \end{defbox}
 
-\begin{propbox}[Properties of the Commutator Subgroup]\label{prop:properties-commutator-subgroup}
+\begin{propbox}[{Properties of the Commutator Subgroup ((1) is PS 4.4(1))}]\label{prop:properties-commutator-subgroup}
 \begin{enumerate}
     \item $[G,G]$ is a normal subgroup of $G$ (Chapter~\ref{ch:normal}).
     \item Every character $\chi: G \to A$ is trivial on $[G,G]$, i.e.\ $[G,G] \subseteq \operatorname{Ker}\chi$.
@@ -4196,33 +4208,64 @@ The inverse of a commutator is a commutator, $(aba^{-1}b^{-1})^{-1} = bab^{-1}a^
 \[ g(c_1 \cdots c_m)g^{-1} = (gc_1g^{-1}) \cdots (gc_mg^{-1}) \in [G,G]. \] \textbf{(2)} $\chi$ kills every commutator (Characters Kill Commutators), and $\operatorname{Ker}\chi$ is a subgroup, so it contains the subgroup they generate. \textbf{(3)} $G$ is abelian iff every commutator equals $e$, iff $[G,G] = \{e\}$.
 \end{proof}
 
-\begin{thmbox}[{The Commutator Subgroup of $S_n$}]\label{thm:commutator-subgroup-sn}
+\begin{thmbox}[{The Commutator Subgroup and Characters of $S_n$ (PS 4.5)}]\label{thm:commutator-subgroup-sn}
 For $n \geq 2$, $[S_n, S_n] = A_n$. Consequently every character $\chi: S_n \to A$ is trivial on $A_n$ and is determined by its value $c = \chi(\tau)$ on any transposition $\tau$, which satisfies $c^2 = e_A$: $\chi(\sigma) = e_A$ for even $\sigma$ and $\chi(\sigma) = c$ for odd $\sigma$.
 \end{thmbox}
 
 \begin{proof}
-($\subseteq$) The sign $\sgn$ is a character, so by (2) $[S_n, S_n] \subseteq \operatorname{Ker}\sgn = A_n$. ($\supseteq$) For $n = 2$, $A_2 = \{e\}$. For $n \geq 3$, $A_n$ is generated by $3$-cycles (\ref{sec:sign}), each of which is a commutator; so $A_n \subseteq [S_n, S_n]$. For the consequence: $\chi$ is trivial on $[S_n, S_n] = A_n$ by (2). All transpositions are conjugate (\ref{sec:conjugacy}), so $\chi$ takes a single value $c$ on them (Characters Are Constant on Conjugacy Classes), and $c^2 = \chi(\tau^2) = \chi(e) = e_A$. An odd $\sigma$ equals $\tau(\tau\sigma)$ with $\tau\sigma$ even, so $\chi(\sigma) = \chi(\tau)\chi(\tau\sigma) = c$.
+($\subseteq$) The sign $\sgn$ is a character, so by (2) $[S_n, S_n] \subseteq \operatorname{Ker}\sgn = A_n$. ($\supseteq$) For $n = 2$, $A_2 = \{e\}$. For $n \geq 3$, $A_n$ is generated by $3$-cycles (\S 20), each of which is a commutator; so $A_n \subseteq [S_n, S_n]$. For the consequence: $\chi$ is trivial on $[S_n, S_n] = A_n$ by (2). All transpositions are conjugate (\S 31), so $\chi$ takes a single value $c$ on them (Characters Are Constant on Conjugacy Classes), and $c^2 = \chi(\tau^2) = \chi(e) = e_A$. An odd $\sigma$ equals $\tau(\tau\sigma)$ with $\tau\sigma$ even, so $\chi(\sigma) = \chi(\tau)\chi(\tau\sigma) = c$.
+
+\emph{Direct proof of the consequence (PS 4.5).} Let $a = \chi((1\,2))$. \textbf{(1)} For a transposition $(i\,j)$, choose $\sigma \in S_n$ with $\sigma(i) = 1$, $\sigma(j) = 2$, mapping the remaining $n - 2$ points bijectively onto the remaining $n - 2$ points. By Conjugation Relabels the Entries (\S 31), $\sigma(i\,j)\sigma^{-1} = (1\,2)$, so, $A$ being abelian, $a = \chi(\sigma)\chi((i\,j))\chi(\sigma)^{-1} = \chi((i\,j))$. \textbf{(2)} $a^2 = \chi((1\,2)^2) = \chi(e) = e_A$. \textbf{(3)} Write $\sigma = t_1 \cdots t_k$ with each $t_i$ of the form $(1\,j)$ (Generators of $S_n$, \S 20). Then $\sgn(\sigma) = (-1)^k$, so $\sigma \in A_n$ iff $k$ is even, while $\chi(\sigma) = a^k$, which by (2) is $e_A$ for even $k$ and $a$ for odd $k$.
 \end{proof}
 
 \begin{rembox}[{What the Theorem Says About $S_n$}]\label{rem:what-theorem-says-about-sn}
 In $S_n$ all $3$-cycles are commutators and no transposition is, and the theorem shows that characters of $S_n$ can only distinguish even from odd permutations: $\sgn$ is essentially the only nontrivial one.
 \end{rembox}
 
-\begin{defbox}[{Abelianization (not from class)}]\label{def:abelianization}
-The \textbf{abelianization} of $G$ is the quotient group $G/[G,G]$, defined because $[G,G]$ is normal (Properties of the Commutator Subgroup).
+\begin{defbox}[{Abelianization (PS 4.4)}]\label{def:abelianization}
+The \textbf{abelianization} of $G$ is the quotient group $G^{\mathrm{ab}} := G/[G,G]$, defined because $[G,G]$ is normal (Properties of the Commutator Subgroup).
 \end{defbox}
 
-\begin{propbox}[{The Abelianization Is Abelian (not from class)}]\label{prop:abelianization-abelian}
+\begin{propbox}[{The Abelianization Is Abelian (PS 4.4(2))}]\label{prop:abelianization-abelian}
 $G/[G,G]$ is abelian.
 \end{propbox}
 
 \begin{proof}
 Let $N = [G,G]$. For $a, b \in G$, $(aN)(bN)(aN)^{-1}(bN)^{-1} = aba^{-1}b^{-1}N = N$, since the commutator $aba^{-1}b^{-1}$ lies in $N$. So $(aN)(bN) = (bN)(aN)$.
+
+\emph{Second proof, by the coset criterion (PS 4.4(2)).} For $x, y \in G$, $xN = yN$ iff $x^{-1}y \in N$ (\S 26). With $x = ab$ and $y = ba$, $x^{-1}y = b^{-1}a^{-1}ba$, which is the commutator of the pair $(b^{-1}, a^{-1})$ and so lies in $N$. Hence $(ab)N = (ba)N$, i.e.\ $(aN)(bN) = (bN)(aN)$.
 \end{proof}
 
 \begin{exbox}[{The Abelianization of $S_n$ (not from class)}]\label{ex:abelianization-sn}
-For $n \geq 2$, $S_n/[S_n, S_n] = S_n/A_n \cong \{\pm 1\}$: by The Commutator Subgroup of $S_n$, $[S_n, S_n] = A_n$, and the First Isomorphism Theorem applied to the surjective homomorphism $\sgn$, whose kernel is $A_n$, gives $S_n/A_n \cong \{\pm 1\}$ (\ref{sec:first-iso}).
+For $n \geq 2$, $S_n/[S_n, S_n] = S_n/A_n \cong \{\pm 1\}$: by The Commutator Subgroup and Characters of $S_n$, $[S_n, S_n] = A_n$, and the First Isomorphism Theorem applied to the surjective homomorphism $\sgn$, whose kernel is $A_n$, gives $S_n/A_n \cong \{\pm 1\}$ (\S 38).
 \end{exbox}
+
+\begin{corbox}[{Every Square Root of $e_A$ Gives a Character (not from class)}]\label{cor:every-square-root-ea-gives-character}
+Let $n \geq 2$ and let $A$ be abelian. For each $a \in A$ with $a^2 = e_A$, the map
+\[ \chi_a(\sigma) = \begin{cases} e_A & \sigma \in A_n, \\ a & \sigma \notin A_n \end{cases} \]
+is a character of $S_n$, and $a \mapsto \chi_a$ is a bijection from $\{a \in A : a^2 = e_A\}$ onto the set of characters $S_n \to A$, with inverse $\chi \mapsto \chi((1\,2))$.
+\end{corbox}
+
+\begin{proof}
+Define $\iota_a: \{\pm 1\} \to A$ by $\iota_a(1) = e_A$ and $\iota_a(-1) = a$. It is a homomorphism: the only product to check is $\iota_a((-1)(-1)) = \iota_a(1) = e_A = a^2 = \iota_a(-1)\iota_a(-1)$. So $\chi_a = \iota_a \circ \sgn$ is a homomorphism, and $\chi_a((1\,2)) = a$. Conversely, by The Commutator Subgroup and Characters of $S_n$, every character $\chi$ equals $\chi_a$ for $a = \chi((1\,2))$, which satisfies $a^2 = e_A$. So the two assignments are mutually inverse.
+\end{proof}
+
+\begin{rembox}[{The Characters of $S_n$, Completely}]\label{rem:characters-sn-completely}
+PS 4.5 shows every character of $S_n$ is ``trivial or the sign in disguise''; the corollary shows every such candidate actually occurs. For $A = \mathbb{C}^\times$ the square roots of $1$ are $\pm 1$, so $S_n$ ($n \geq 2$) has exactly two characters with values in $\mathbb{C}^\times$: the trivial one and $\sgn$.
+\end{rembox}
+
+\begin{propbox}[{Normal Subgroups with Trivial Intersection Commute (PS 4.2)}]\label{prop:normal-subgroups-trivial-intersection-commute}
+Let $M$ and $N$ be normal subgroups of $G$ with $M \cap N = \{e\}$. Then $mn = nm$ for all $m \in M$ and $n \in N$.
+\end{propbox}
+
+\begin{proof}
+Let $x = mnm^{-1}n^{-1}$. Grouping as $x = (mnm^{-1})\,n^{-1}$: $mnm^{-1} \in N$ because $N$ is normal, and $n^{-1} \in N$, so $x \in N$. Grouping as $x = m\,(nm^{-1}n^{-1})$: $nm^{-1}n^{-1} \in M$ because $M$ is normal, and $m \in M$, so $x \in M$. Hence $x \in M \cap N = \{e\}$, i.e.\ $mnm^{-1}n^{-1} = e$, and then
+\[ mn = mn\,(m^{-1}n^{-1}nm) = (mnm^{-1}n^{-1})\,nm = nm. \]
+\end{proof}
+
+\begin{rembox}[{Commutators of Normal Subgroups}]\label{rem:commutators-normal-subgroups}
+The proof shows more: for normal $M, N$, every commutator $mnm^{-1}n^{-1}$ with $m \in M$, $n \in N$ lies in $M \cap N$. When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$; this is the first step toward recognizing $G$ as a direct product $M \times N$ when also $MN = G$ (not from class).
+\end{rembox}
 
 
 \appendix
@@ -4243,7 +4286,7 @@ For $n \geq 2$, $S_n/[S_n, S_n] = S_n/A_n \cong \{\pm 1\}$: by The Commutator Su
     \item \textbf{To count.} Lagrange, $|G| = |H|\,[G:H]$ (\ref{sec:lagrange}); orbit--stabilizer, $|Gx| = [G : \operatorname{Stab}(x)]$ (\ref{sec:orbit-stabilizer}); Burnside, the number of orbits is the average number of fixed points; the class equation, $|G| = |Z(G)| + \sum_i [G : C_G(g_i)]$ over representatives of the non-central classes (\ref{sec:conjugation-action}).
     \item \textbf{To show $N \trianglelefteq G$.} Any of: $gNg^{-1} \subseteq N$ for all $g$; $[G : N] = 2$; $N$ is a kernel; $N$ is a union of conjugacy classes (in particular any subgroup of $Z(G)$, and any subgroup when $G$ is abelian) (\ref{sec:normal}, \ref{sec:normal-sources}). \emph{Not} normal: find $g$ and $n \in N$ with $gng^{-1} \notin N$, or $g$ with $gN \neq Ng$.
     \item \textbf{To identify a quotient $G/N$.} Find a surjective homomorphism out of $G$ whose kernel is $N$; then $G/N$ is isomorphic to its target (First Isomorphism Theorem, \ref{sec:first-iso}). For finite $G$, $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$.
-    \item \textbf{To compute in $G/N$.} Choose one representative per coset; to multiply, multiply in $G$ and replace the product by its representative. If the representatives form a subgroup $S$, then $G/N \cong S$ (37.1). More generally $H/(H \cap N) \cong HN/N$ (Second Isomorphism Theorem, 38.1).
+    \item \textbf{To compute in $G/N$.} Choose one representative per coset; to multiply, multiply in $G$ and replace the product by its representative. If the representatives form a subgroup $S$, then $G/N \cong S$ (\ref{prop:representatives-forming-subgroup}). More generally $H/(H \cap N) \cong HN/N$ (Second Isomorphism Theorem, \ref{thm:second-isomorphism-theorem}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
     \item \textbf{To show $h$ is not a commutator.} Find a character $\chi$ with $\chi(h) \neq e_A$ (\ref{sec:commutators}); in $S_n$, use $\sgn$.
@@ -4315,7 +4358,8 @@ Thu Sept 24 \newline Problem Set 3 & Cayley's theorem; normal core; Burnside's l
 Fri Sept 25 \newline lecture & Quotient groups; canonical projection; First Isomorphism Theorem; $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$ & \ref{sec:quotient}, \ref{sec:first-iso}; WS 6.5 proved (\ref{sec:normal-sources}) \\
 Mon Sept 28 \newline lecture; Worksheet 7 & The picture so far; simple groups; homomorphisms out of and into simple groups; $C_p$, $A_5$, $A_n$ ($n \geq 5$), $PSL_n(F)$ & \ref{sec:simple} (7.1--7.5) \\
 Wed Sept 30 \newline lecture & Finite fields; WS 7.4 and 7.5 completed; $3$-cycles conjugate in $A_n$; $S_4 \to S_3$ with kernel $V$; why $n \geq 5$ & \ref{sec:simple} \\
-Fri Oct 2 \newline lecture & Computing in $G/N$ with representatives; Second Isomorphism Theorem; Third named & 37.1, 38.1 \\
+Thu Oct 1 \newline Problem Set 4 & Products of subgroups; commuting normal subgroups; normal core (again); abelianization; characters of $S_n$ & \ref{sec:second-iso} (4.1), \ref{sec:commutators} (4.2, 4.4, 4.5), \ref{sec:normal-sources} (4.3) \\
+Fri Oct 2 \newline lecture & Computing in $G/N$ with representatives; Second Isomorphism Theorem; Third named & \ref{sec:representatives}, \ref{sec:second-iso} \\
 \end{longtable}}
 
 \textbf{Material not from class.} A few results were added to fill gaps and are tagged in their titles: those marked \emph{cf.\ Pinter} or \emph{cf.\ MATH 412} come from the textbook or from the MATH 412 worksheets, not from MATH 493, and are not part of the examinable content unless Speyer covers them. Everything tagged with a worksheet number, a problem-set number, or a lecture date is course material.
@@ -4494,6 +4538,45 @@ Let $p$ be a prime and $|G| = p^k$ with $k \geq 1$.
 Let $G$ be a finite group with $3$ conjugacy classes. Show that $|G| \leq 6$. Hint: see Problem 3.4.
 \end{hwbox}
 \textit{Treated in \ref{sec:conjugation-action}.}
+
+\section*{Problem Set 4}
+\phantomsection
+\addcontentsline{toc}{section}{Problem Set 4}
+
+\textit{Submitted. Each problem is treated in the main text, at the location indicated.}
+
+\begin{hwbox}[{Products of Subgroups}]{4.1}\label{hw:4.1}
+Let $A$ and $B$ be subgroups of $G$, and $AB = \{ab : a \in A,\ b \in B\}$.
+\begin{enumerate}
+    \item Give an example to show that $AB$ is not necessarily a subgroup of $G$.
+    \item Suppose that $B$ is a normal subgroup of $G$. Show that $AB$ is a subgroup of $G$. (The same holds if $A$ is normal; only one needs to be written up.)
+\end{enumerate}
+\end{hwbox}
+\textit{Treated in \ref{sec:second-iso} ($HN$ Is a Subgroup When $N$ Is Normal; $AB$ Need Not Be a Subgroup).}
+
+\begin{hwbox}[{Normal Subgroups with Trivial Intersection}]{4.2}\label{hw:4.2}
+Let $M$ and $N$ be normal subgroups of $G$ with $M \cap N = \{e\}$. Show that $mn = nm$ for all $m \in M$, $n \in N$. Hint: write the conclusion as $mnm^{-1}n^{-1} = 1$.
+\end{hwbox}
+\textit{Treated in \ref{sec:commutators}.}
+
+\begin{hwbox}[{A Normal Subgroup Inside a Finite-Index Subgroup}]{4.3}\label{hw:4.3}
+Let $H$ be a subgroup of $G$ with $[G : H] = n$. Show that there is a normal subgroup $N$ of $G$ with $N \subseteq H \subseteq G$ and $[G : N] \leq n!$. (The same problem as PS 3.2.)
+\end{hwbox}
+\textit{Treated in \ref{sec:normal-sources}.}
+
+\begin{hwbox}[{The Commutator Subgroup and the Abelianization}]{4.4}\label{hw:4.4}
+Let $D(G) = \langle ghg^{-1}h^{-1} : g, h \in G \rangle$, the commutator subgroup.
+\begin{enumerate}
+    \item Show that $D(G)$ is normal in $G$.
+    \item Let $G^{\mathrm{ab}} = G/D(G)$, the abelianization. Show that $G^{\mathrm{ab}}$ is abelian.
+\end{enumerate}
+\end{hwbox}
+\textit{Treated in \ref{sec:commutators}.}
+
+\begin{hwbox}[{Characters of the Symmetric Group}]{4.5}\label{hw:4.5}
+Let $\chi: S_n \to A$ be a character and $a = \chi((1\,2))$. Show: (1) $\chi((i\,j)) = a$ for every transposition; (2) $a^2 = 1$; (3) $\chi(\sigma) = 1$ for $\sigma \in A_n$ and $\chi(\sigma) = a$ for $\sigma \notin A_n$. (Problems 1.5 and 2.4 may be used.)
+\end{hwbox}
+\textit{Treated in \ref{sec:commutators}.}
 
 \chapter{Index of Definitions and Results}\label{ch:index}
 

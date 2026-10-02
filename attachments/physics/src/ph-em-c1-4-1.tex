@@ -1,0 +1,25 @@
+% EM §C1.4: counting polarizations for k along z (Lorenz line, residual gauge shift, transverse plane)
+\begin{tikzpicture}[>=Stealth, font=\small, scale=1.0]
+  % left panel: (eps^z, eps^0) plane
+  \draw[->, thin] (-2.4,0) -- (2.6,0) node[right]{$\epsilon^z$};
+  \draw[->, thin] (0,-2.4) -- (0,2.6) node[above]{$\epsilon^0$};
+  \draw[very thick, figB] (-2.2,-2.2) -- (2.2,2.2);
+  \node[figB, anchor=west, align=left, font=\footnotesize] at (2.3,2.05) {Lorenz: $k\cdot\epsilon = 0$\\ $\Leftrightarrow\ \epsilon^0 = \epsilon^z$};
+  % residual gauge shift arrows along the line
+  \draw[->, thick, figR] (0.35,0.35) -- (1.45,1.45);
+  \draw[->, thick, figR] (-0.35,-0.35) -- (-1.45,-1.45);
+  \node[figR, anchor=north west, align=left, font=\footnotesize] at (0.55,-0.45) {residual shift\\ $\epsilon \to \epsilon + \lambda k$,\\ $k \propto (1,0,0,1)$};
+  \fill (0,0) circle (1.6pt);
+  \node[anchor=north east, font=\footnotesize] at (-0.05,-0.05) {$0$};
+  \node[align=center, font=\footnotesize, black!55] at (-1.25,1.3) {off the line:\\ violates the\\ Lorenz condition};
+  \node[font=\footnotesize] at (0.1,-2.85) {the line is one gauge orbit: $\epsilon^0, \epsilon^z$ carry no field};
+  % right panel: transverse plane
+  \begin{scope}[xshift=6.3cm]
+    \draw[->, thin] (-1.9,0) -- (2.1,0) node[right]{$\epsilon^x$};
+    \draw[->, thin] (0,-1.9) -- (0,2.1) node[above]{$\epsilon^y$};
+    \fill[figG!12] (-1.6,-1.6) rectangle (1.6,1.6);
+    \draw[thick, figG] (-1.6,-1.6) rectangle (1.6,1.6);
+    \draw[->, very thick, figG!70!black] (0,0) -- (1.1,0.7) node[above right, font=\footnotesize]{$\vec\epsilon_\perp$};
+    \node[font=\footnotesize, align=center] at (0,-2.45) {transverse: untouched by both,\\ two physical polarizations};
+  \end{scope}
+\end{tikzpicture}

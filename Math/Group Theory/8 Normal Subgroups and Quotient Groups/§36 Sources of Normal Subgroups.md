@@ -98,7 +98,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 > [!theorem] Theorem §36.5: A Normal Subgroup Inside a Subgroup of Finite Index
 > Let $H$ be a subgroup of $G$ with $[G : H] = n$ finite. Then there is a normal subgroup $N$ of $G$ with $N \subseteq H \subseteq G$ and $[G : N] \leq n!$.
 >
-> *Source: PS 3.2*
+> *Source: PS 3.2; PS 4.3*
 
 ^thm-36-5
 
@@ -107,7 +107,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 >
 > **$N \subseteq H$.** If $g \in N$, then $g$ fixes every coset, in particular $g \star (eH) = gH = H$, so $g = ge \in gH = H$.
 >
-> **$[G : N] \leq n!$.** Define $\bar\varphi: G/N \to S_{G/H}$ by $\bar\varphi(gN) = \varphi(g)$. It is well defined: if $gN = g'N$ then $g' = gk$ with $k \in N$, so $\varphi(g') = \varphi(g)\varphi(k) = \varphi(g)$. It is injective: if $\varphi(g) = \varphi(g')$, then $\varphi(g^{-1}g') = e$, so $g^{-1}g' \in N$ and $gN = g'N$. Hence $[G : N] = |G/N| \leq |S_{G/H}| = n!$, the last equality because relabelling the $n$ cosets gives $S_{G/H} \cong S_n$.
+> **$[G : N] \leq n!$.** Define $\bar\varphi: G/N \to S_{G/H}$ by $\bar\varphi(gN) = \varphi(g)$. It is well defined: if $gN = g'N$ then $g' = gk$ with $k \in N$, so $\varphi(g') = \varphi(g)\varphi(k) = \varphi(g)$. It is injective: if $\varphi(g) = \varphi(g')$, then $\varphi(g^{-1}g') = e$, so $g^{-1}g' \in N$ and $gN = g'N$. Hence $[G : N] = |G/N| \leq |S_{G/H}| = n!$, the last equality because relabelling the $n$ cosets gives $S_{G/H} \cong S_n$. The argument does not require $G$ to be finite.
 
 ^pf-36-5
 

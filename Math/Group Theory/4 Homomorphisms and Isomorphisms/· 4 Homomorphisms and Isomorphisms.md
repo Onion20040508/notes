@@ -12,7 +12,7 @@ tags: [chapter, group-theory]
 This chapter studies maps that respect the group operation. After multiplication tables (Worksheet 2), a way of seeing a small group whole, it develops homomorphisms with their kernels and images; isomorphisms and the invariants that detect non-isomorphism; the classification of cyclic groups; and constructions from Problem Set 1 — conjugation, pointwise products of homomorphisms, and direct products with their universal property.
 
 **Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (37), [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (14), [[· 3 Permutations|3 Permutations]] (1), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (1), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (1)
-**Used by:** [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (4), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (6), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (14), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (3), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (15), [[· 9 Characters and Commutators|9 Characters and Commutators]] (5)
+**Used by:** [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (4), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (6), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (14), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (3), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (15), [[· 9 Characters and Commutators|9 Characters and Commutators]] (8)
 **Builds on (other subjects):** [[Linear Algebra]] (1), [[Single Variable Analysis]] (2)
 
 ## Sections
@@ -29,7 +29,7 @@ This chapter studies maps that respect the group operation. After multiplication
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§15 Homomorphisms#^prop-15-1|Proposition §15.1: Homomorphisms Preserve Identity and Inverses]]: 60 later results
-- [[§16 Isomorphisms#^prop-16-1|Proposition §16.1: The Inverse of an Isomorphism Is an Isomorphism]]: 37 later results
-- [[§15 Homomorphisms#^prop-15-2|Proposition §15.2: Image and Kernel Are Subgroups]]: 35 later results
-- [[§16 Isomorphisms#^prop-16-2|Proposition §16.2: Composition; ≅ Is an Equivalence Relation]]: 35 later results
+- [[§15 Homomorphisms#^prop-15-1|Proposition §15.1: Homomorphisms Preserve Identity and Inverses]]: 61 later results
+- [[§16 Isomorphisms#^prop-16-1|Proposition §16.1: The Inverse of an Isomorphism Is an Isomorphism]]: 38 later results
+- [[§15 Homomorphisms#^prop-15-2|Proposition §15.2: Image and Kernel Are Subgroups]]: 36 later results
+- [[§16 Isomorphisms#^prop-16-2|Proposition §16.2: Composition; ≅ Is an Equivalence Relation]]: 36 later results

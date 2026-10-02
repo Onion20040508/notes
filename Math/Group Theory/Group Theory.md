@@ -117,7 +117,7 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Group Theory Conventions and Notation]]: symbols and the course's conventions (right-to-left composition, $e$ for the identity, …), each linked to where it is defined.
 - [[Group Theory Toolkit]]: how to show $H \le G$, well-definedness, (non-)isomorphism, normality; standard examples; exam traps.
 - [[Group Theory Course Log]]: what was taught when, and where it is in these notes.
-- Problem sets: [[493 Problem Set 1|PS 1]], [[493 Problem Set 2|PS 2]], [[493 Problem Set 3|PS 3]].
+- Problem sets: [[493 Problem Set 1|PS 1]], [[493 Problem Set 2|PS 2]], [[493 Problem Set 3|PS 3]], [[493 Problem Set 4|PS 4]].
 
 ## Prerequisites from other subjects
 The results from other subjects that this course's proofs and definitions cite most, with the number of citing items. Each chapter note gives per-chapter counts; each hub note lists its own cross-subject dependencies. The group theory summarized in [[§21 Algebra Prerequisites꞉ Groups|Topology §21]] is developed here in full.

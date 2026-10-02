@@ -1,0 +1,34 @@
+% Figure for Electromagnetism §C2.4 (Theorem §C2.4.2, after Zangwill eqs. (3.98)-(3.99)): the force per area f transmitted across a surface element with outward normal n has the magnitude eps0 E^2/2 and makes the angle 2 theta with n when E makes the angle theta; E bisects the angle between n and f. Small panels: theta = 0 (tension), 45 deg (shear), 90 deg (pressure).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % main panel, theta = 30 deg
+  \fill[black!8] (-2.2,-0.35) rectangle (2.2,0);
+  \draw[black!60, thick] (-2.2,0) -- (2.2,0);
+  \node[font=\scriptsize, black!60] at (-1.75,-0.18) {$dS$};
+  \draw[->, thick, black] (0,0) -- (0,2.2) node[above] {$\hat n$};
+  \draw[->, thick, black!55] (0,0) -- (2.0,0) node[below right, xshift=-3pt] {$\hat t$};
+  \draw[->, very thick, figB] (0,0) -- ({1.9*sin(30)},{1.9*cos(30)}) node[above right, xshift=-2pt] {$\vec E$};
+  \draw[->, very thick, figR] (0,0) -- ({2.1*sin(60)},{2.1*cos(60)}) node[right] {$\vec f = \hat n\cdot\overleftrightarrow{T}$};
+  \draw[figB, thin] (0,0.75) arc (90:60:0.75);
+  \node[figB, font=\scriptsize] at (0.22,0.95) {$\theta$};
+  \draw[figR, thin] (0,1.15) arc (90:30:1.15);
+  \node[figR, font=\scriptsize] at (0.95,1.2) {$2\theta$};
+  \node[font=\scriptsize, align=center] at (0,-0.85) {$|\vec f| = \tfrac{\varepsilon_0}{2}E^2$, \ $\vec f = \tfrac{\varepsilon_0}{2}E^2(\hat n\cos2\theta + \hat t\sin2\theta)$};
+  % three small panels
+  \foreach \x/\th/\lab in {4.4/0/{$\theta = 0$: tension}, 6.9/45/{$\theta = 45^\circ$: shear}, 9.4/90/{$\theta = 90^\circ$: pressure}} {
+    \begin{scope}[xshift=\x cm]
+      \fill[black!8] (-0.95,-0.25) rectangle (0.95,0);
+      \draw[black!60, thick] (-0.95,0) -- (0.95,0);
+      \draw[->, thin, black] (0,0) -- (0,1.35) node[above, font=\scriptsize] {$\hat n$};
+      \draw[->, very thick, figB] (0,0) -- ({1.0*sin(\th)},{1.0*cos(\th)});
+      \pgfmathsetmacro{\fx}{0.95*sin(2*\th)} \pgfmathsetmacro{\fy}{0.95*cos(2*\th)}
+      \ifnum\th=90
+        \draw[->, very thick, figR] (0.12,0) -- (0.12,-0.95);
+      \else
+        \draw[->, very thick, figR] (0.06,0) -- ({0.06+\fx},{\fy});
+      \fi
+      \node[font=\scriptsize, align=center] at (0,-1.25) {\lab};
+    \end{scope}
+  }
+  \node[font=\scriptsize, figB] at (11.0,1.0) {$\vec E$};
+  \node[font=\scriptsize, figR] at (11.0,0.6) {$\vec f$};
+\end{tikzpicture}

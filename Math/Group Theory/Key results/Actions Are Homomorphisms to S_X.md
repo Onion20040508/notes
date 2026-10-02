@@ -12,8 +12,8 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[§3 Basic Examples of Groups#^def-3-5|Definition §3.5: Symmetric Groups S_X and Sₙ]]
-- [[§15 Homomorphisms#^def-15-1|Definition §15.1: Group Homomorphism]]
 - [[§15 Homomorphisms#^prop-15-1|Proposition §15.1: Homomorphisms Preserve Identity and Inverses]]
+- [[§15 Homomorphisms#^def-15-1|Definition §15.1: Group Homomorphism]]
 - [[§23 Actions#^def-23-1|Definition §23.1: Action; Right Action]]
 - [[§23 Actions#^prop-23-2|Proposition §23.2: Each Group Element Acts Bijectively]]
 

@@ -12,7 +12,7 @@ tags: [chapter, group-theory]
 The central chapter of the first half of the course. A group [[§23 Actions#^def-23-1|acting]] on a set is the same thing as a [[§23 Actions#^thm-23-3|homomorphism to a symmetric group]]; from this come [[§24 Stabilizers and Fixed Points#^def-24-1|stabilizers]], [[§25 Orbits#^def-25-1|orbits]], [[§23 Actions#^def-23-3|faithful actions]], and [[§23 Actions#^thm-23-5|Cayley's theorem]]. [[§26 Left and Right Cosets#^prop-26-1|Cosets are the orbits]] of a subgroup acting by multiplication, which yields [[§27 The Index and Lagrange's Theorem#^thm-27-2|Lagrange's theorem]]. [[§28 Orbit–Stabilizer#^thm-28-3|Orbit–stabilizer]] then ties the two threads together, with [[§28 Orbit–Stabilizer#^thm-28-6|Burnside's lemma]], the [[§28 Orbit–Stabilizer#^def-28-1|point stabilizer]] in $S_n$, and the [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-3|rotations of the cube]] as applications.
 
 **Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (19), [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (2), [[· 3 Permutations|3 Permutations]] (1), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (14), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (7), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (1), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (3)
-**Used by:** [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (1), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (11), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (27), [[· 9 Characters and Commutators|9 Characters and Commutators]] (2)
+**Used by:** [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (1), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (11), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (27), [[· 9 Characters and Commutators|9 Characters and Commutators]] (3)
 **Builds on (other subjects):** [[Linear Algebra]] (7), [[Topology]] (1)
 
 ## Sections
@@ -37,7 +37,7 @@ The central chapter of the first half of the course. A group [[§23 Actions#^def
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§22 Equivalence Relations and Partitions#^prop-22-1|Proposition §22.1: Equivalence Classes Partition a Set]]: 48 later results
-- [[Cosets Partition a Group|Proposition §26.2: Cosets Are the Equivalence Classes]]: 46 later results
+- [[§22 Equivalence Relations and Partitions#^prop-22-1|Proposition §22.1: Equivalence Classes Partition a Set]]: 49 later results
+- [[Cosets Partition a Group|Proposition §26.2: Cosets Are the Equivalence Classes]]: 47 later results
 - [[§27 The Index and Lagrange's Theorem#^prop-27-1|Proposition §27.1: All Cosets Have the Same Size]]: 33 later results
 - [[Lagrange's Theorem|Theorem §27.2: Lagrange]]: 32 later results

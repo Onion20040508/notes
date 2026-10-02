@@ -17,18 +17,22 @@ tags: [group-theory, math493]
 > [!theorem] Lemma §39.1: $HN$ Is a Subgroup When $N$ Is Normal
 > If $H \leq G$ and $N \trianglelefteq G$ ([[§35 Normal Subgroups#^def-35-1|Def. §35.1]]), then $HN$ ([[§39 The Second and Third Isomorphism Theorems#^def-39-1|Def. §39.1]]) is a subgroup of $G$, and it contains both $H$ and $N$.
 >
-> *Source: lecture 10/2*
+> *Source: lecture 10/2; PS 4.1(2)*
 
 ^lem-39-1
 
 > [!proof]+ Proof
 > *Closure (lecture).* Let $h_1, h_2 \in H$ and $n_1, n_2 \in N$. Since $N$ is normal, $n_1h_2 = h_2n'$ for some $n' \in N$ ($n' = h_2^{-1}n_1h_2$). So $h_1n_1 \cdot h_2n_2 = h_1h_2 \cdot n'n_2 \in HN$. *Containment:* $h = he$ and $n = en$.
 >
-> *Identity and inverses:* *[To be proved; assigned as homework.]*
+> *Identity (PS 4.1(2)).* $e = ee \in HN$, since $e \in H$ and $e \in N$.
+>
+> *Inverses (PS 4.1(2)).* For $hn \in HN$, $(hn)^{-1} = n^{-1}h^{-1} = h^{-1}\big(hn^{-1}h^{-1}\big)$ ([[§2 First Consequences of the Axioms#^prop-2-4|Inverse of a Product]]). Here $h^{-1} \in H$, and $hn^{-1}h^{-1} \in N$ by [[§35 Normal Subgroups#^def-35-1|normality]] applied to $n^{-1} \in N$; so $(hn)^{-1} \in HN$.
+>
+> By the symmetric argument, $HN$ is also a subgroup when $H$, rather than $N$, is normal (as [[493 Problem Set 4#^hw-4-1|PS 4.1(2)]] notes). Without either hypothesis it can fail: $AB$ Need Not Be a Subgroup ([[§39 The Second and Third Isomorphism Theorems#^ex-39-2|Ex. §39.2]]), below.
 
 ^pf-39-1
 
-*Uses:* [[§39 The Second and Third Isomorphism Theorems#^def-39-1|Def. §39.1]], [[§35 Normal Subgroups#^def-35-1|Def. §35.1]]
+*Uses:* [[§39 The Second and Third Isomorphism Theorems#^def-39-1|Def. §39.1]], [[§35 Normal Subgroups#^def-35-1|Def. §35.1]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
 
 > [!theorem] Theorem §39.2: Second Isomorphism Theorem
 > Let $G$ be a group, $N \trianglelefteq G$, $H \leq G$, and $\pi: G \to G/N$ the [[§37 Quotient Groups#^def-37-1|projection]]. Then $H \cap N \trianglelefteq H$, $N \trianglelefteq HN$ ([[§39 The Second and Third Isomorphism Theorems#^def-39-1|Def. §39.1]], [[§39 The Second and Third Isomorphism Theorems#^lem-39-1|§39.1]]), $\pi(H) = \pi(HN)$, and
@@ -61,7 +65,7 @@ tags: [group-theory, math493]
 ^cor-39-3
 
 > [!proof]+ Proof
-> Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ ([[§37 Quotient Groups#^prop-37-4|Representatives Forming a Subgroup]], §37). The [[§39 The Second and Third Isomorphism Theorems#^thm-39-2|theorem]] gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
+> Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ ([[§37 Quotient Groups#^prop-37-4|Representatives Forming a Subgroup]], §37.4). The [[§39 The Second and Third Isomorphism Theorems#^thm-39-2|theorem]] gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
 
 ^pf-39-3
 
@@ -92,3 +96,14 @@ tags: [group-theory, math493]
 > The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The [[§38 The First Isomorphism Theorem#^thm-38-1|first]] identifies $G/N$ with an image; the [[§39 The Second and Third Isomorphism Theorems#^thm-39-2|second]] and [[§39 The Second and Third Isomorphism Theorems#^thm-39-4|third]] compare quotients of subgroups and quotients of quotients. A worksheet on the second and third theorems is on the course Canvas site; the lecture recommended experimenting with small groups to make them intuitive.
 
 ^rem-39-1
+
+> [!example] Example §39.2: $AB$ Need Not Be a Subgroup
+> Without normality, the [[§39 The Second and Third Isomorphism Theorems#^def-39-1|product set]] of two [[§4 Subgroups#^def-4-1|subgroups]] can fail to be a subgroup. In $S_3$ ([[§10 Cycle Notation and the Group S₃#^ex-10-1|Ex. §10.1]]) take $A = \{e, (1\,2)\}$ and $B = \{e, (1\,3)\}$. Then
+>
+> $$ AB = \{e,\ (1\,3),\ (1\,2),\ (1\,2)(1\,3)\} = \{e,\ (1\,2),\ (1\,3),\ (1\,3\,2)\}, $$
+>
+> since $(1\,2)(1\,3)$ sends $1 \mapsto 3 \mapsto 3$, $3 \mapsto 1 \mapsto 2$, $2 \mapsto 2 \mapsto 1$. But $(1\,3\,2)^{-1} = (1\,2\,3) \notin AB$, so $AB$ is not closed under inverses. (Neither $A$ nor $B$ is [[§35 Normal Subgroups#^def-35-1|normal]] in $S_3$ ([[§35 Normal Subgroups#^ex-35-1|Ex. §35.1]]); compare $HN$ Is a Subgroup When $N$ Is Normal ([[§39 The Second and Third Isomorphism Theorems#^lem-39-1|§39.1]]), above. Alternatively: $|AB| = 4$ does not divide $6$.)
+>
+> *Source: PS 4.1(1)*
+
+^ex-39-2
