@@ -187,4 +187,5 @@ img[src*="attachments/"][src$=".svg"] { max-width: 100%; height: auto; }
     &:hover, &:focus-visible { background: var(--highlight); }
     &[aria-checked="true"]::after { content: "✓"; color: var(--secondary); }
   }
+  & hr { border: none; border-top: 1px solid var(--lightgray); margin: 0.3rem 0.2rem; }
 }

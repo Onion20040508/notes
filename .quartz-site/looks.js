@@ -1,9 +1,15 @@
 // Page-style switcher: a palette button next to the dark-mode button. The chosen look is stored in
 // the reader's browser and applied as <html data-look="...">; the looks themselves are in custom.scss.
+// The same menu turns link previews (Quartz's hover popovers) on or off.
 // postbuild.py adds this script to every page, plus a tiny inline script that applies the saved look
 // before the page is drawn.
 (function () {
   var KEY = "site-look"
+  var PREVIEWS_KEY = "site-previews"
+  var previewsOn = true
+  try {
+    previewsOn = localStorage.getItem(PREVIEWS_KEY) !== "off"
+  } catch (e) {}
   var LOOKS = [
     ["", "Default", "inherit"],
     ["notes", "Course notes", '"Source Serif 4", Georgia, serif'],
@@ -31,6 +37,17 @@
     })
   }
 
+  function setPreviews(on) {
+    previewsOn = on
+    try {
+      if (on) localStorage.removeItem(PREVIEWS_KEY)
+      else localStorage.setItem(PREVIEWS_KEY, "off")
+    } catch (e) {}
+    document.querySelectorAll(".look-menu [data-previews]").forEach(function (b) {
+      b.setAttribute("aria-checked", String(on))
+    })
+  }
+
   function mount() {
     // Quartz replaces the page body on every navigation, so the button is added again each time.
     document.querySelectorAll("button.darkmode").forEach(function (dark) {
@@ -46,7 +63,8 @@
       }).join("")
       wrap.innerHTML =
         '<button class="look-button" aria-label="Page style" aria-haspopup="menu" aria-expanded="false">' + ICON + "</button>" +
-        '<div class="look-menu" role="menu" aria-label="Page style" hidden>' + items + "</div>"
+        '<div class="look-menu" role="menu" aria-label="Page style" hidden>' + items +
+        '<hr><button role="menuitemcheckbox" data-previews aria-checked="' + previewsOn + '">Link previews</button></div>'
       slot.parentElement.insertBefore(wrap, slot)
     })
   }
@@ -59,12 +77,15 @@
   document.addEventListener("click", function (e) {
     var button = e.target.closest && e.target.closest(".look-button")
     var item = e.target.closest && e.target.closest(".look-menu [data-look]")
+    var previews = e.target.closest && e.target.closest(".look-menu [data-previews]")
     if (button) {
       var menu = button.parentElement.querySelector(".look-menu")
       var open = menu.hidden
       closeMenus()
       menu.hidden = !open
       button.setAttribute("aria-expanded", String(open))
+    } else if (previews) {
+      setPreviews(!previewsOn)
     } else if (item) {
       apply(item.getAttribute("data-look"))
       closeMenus()
@@ -72,6 +93,14 @@
       closeMenus()
     }
   })
+  // With previews off, stop the hover before it reaches Quartz's popover handler on the link.
+  document.addEventListener(
+    "mouseenter",
+    function (e) {
+      if (!previewsOn && e.target.matches && e.target.matches("a.internal")) e.stopPropagation()
+    },
+    true,
+  )
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeMenus()
   })
