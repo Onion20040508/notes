@@ -29,8 +29,8 @@ tags: [differentiable-manifolds, hub]
 - [[§16 Manifolds in Euclidean Space#^prop-16-2|Proposition §16.2: Regular Level Sets Are Smooth Manifolds]]
 - [[§16 Manifolds in Euclidean Space#^prop-16-4|Proposition §16.4: The Three Circle Atlases Define One Smooth Structure]]
 - [[§18 The Differential of a Map Between Vector Spaces#^prop-18-2|Proposition §18.2: A Vector Space Is a Smooth Manifold]]
-- [[§28 Local Diffeomorphisms and Submersions#^lem-28-6|Lemma §28.6: Diffeomorphisms onto Open Sets Are Charts]]
-- [[§29 Submanifolds#^prop-29-8|Proposition §29.8: The Old and New Versions Agree]]
+- [[§29 Submersions#^lem-29-3|Lemma §29.3: Diffeomorphisms onto Open Sets Are Charts]]
+- [[§30 Submanifolds#^prop-30-8|Proposition §30.8: The Old and New Versions Agree]]
 
 ## Connections
 - **Used for.** Writing down any atlas specifies a smooth structure ([[§13 Differentiable Structures#^def-13-9|Def. §13.9]]): the standard atlas of ℂPⁿ ([[§14 Projective Spaces as Smooth Manifolds#^thm-14-2|§14.2]]), graph charts on level sets ([[Regular Level Sets Are Smooth Manifolds]]), linear charts on a vector space ([[§18 The Differential of a Map Between Vector Spaces#^prop-18-2|§18.2]]). Two atlases give the same structure exactly when they are compatible, which is how the three circle atlases are compared ([[§16 Manifolds in Euclidean Space#^prop-16-4|§16.4]]).

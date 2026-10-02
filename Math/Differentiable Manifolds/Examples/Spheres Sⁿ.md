@@ -18,7 +18,7 @@ The unit sphere $S^n = \{x \in \mathbb{R}^{n+1} \mid \lvert x \rvert = 1\}$, the
 - $S^n$ is a regular level set of $\sum x_i^2$, with $T_pS^n = p^\perp$ ([[§20 Tangent Spaces I꞉ The Geometric Picture#^ex-20-1|§20]])
 - Dimension checks: $\dim S^2 = 3 - 1$ and $\dim S^{2n+1} = (n+1)^2 - n^2$ ([[§20 Tangent Spaces I꞉ The Geometric Picture#^rem-20-9|§20]])
 - $S^2$ meets the plane $z = c$ transversally exactly when $c \neq \pm 1$ ([[§21 Transversality#^ex-21-1|§21]])
-- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§28 Local Diffeomorphisms and Submersions#^ex-28-2|§28]])
+- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§28 Local Diffeomorphisms#^ex-28-2|§28]])
 
 ## $S^2$ is a topological $2$-manifold, by hemisphere charts
 ![[§2 Topological Manifolds#^ex-2-4]]
@@ -57,4 +57,4 @@ The unit sphere $S^n = \{x \in \mathbb{R}^{n+1} \mid \lvert x \rvert = 1\}$, the
 ![[§21 Transversality#^ex-21-1]]
 
 ## $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism
-![[§28 Local Diffeomorphisms and Submersions#^ex-28-2]]
+![[§28 Local Diffeomorphisms#^ex-28-2]]

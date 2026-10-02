@@ -13,8 +13,8 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§1 Point-Set Topology Review#^def-1-7|Definition §1.7: Hausdorff (T_2)]]
 - [[§3 Subspaces and Products#^prop-3-8|Proposition §3.8: Box Characterization of Open Sets]]
-- [[§6 Open Quotients and Complex Projective Space#^def-6-1|Definition §6.1: Graph of a Relation]]
 - [[§6 Open Quotients and Complex Projective Space#^thm-6-1|Theorem §6.1: Hausdorff Criterion]]
+- [[§6 Open Quotients and Complex Projective Space#^def-6-1|Definition §6.1: Graph of a Relation]]
 - [[§10 Group Actions and Orbit Spaces#^def-10-2|Definition §10.2: Continuous Action]]
 - [[§10 Group Actions and Orbit Spaces#^lem-10-3|Lemma §10.3: Orbit Relations Are Open]]
 

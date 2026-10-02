@@ -150,7 +150,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 ^def-6-2
 
 > [!remark]- Connections
-> - As an orbit space of $\mathrm{U}(1) = S^1$: [[§10 Group Actions and Orbit Spaces#^ex-10-3|Ex. §10.3]] (cf. group actions and orbits, [[§23 Actions#^def-23-1|493 Def. §23.1]], [[§25 Orbits#^def-25-1|493 Def. §25.1]]); charts and smooth structure in [[§14 Projective Spaces as Smooth Manifolds#^def-14-2|Def. §14.2]], [[§14 Projective Spaces as Smooth Manifolds#^thm-14-2|§14.2]]; the projection is a submersion, [[§28 Local Diffeomorphisms and Submersions#^ex-28-5|Ex. §28.5]].
+> - As an orbit space of $\mathrm{U}(1) = S^1$: [[§10 Group Actions and Orbit Spaces#^ex-10-3|Ex. §10.3]] (cf. group actions and orbits, [[§23 Actions#^def-23-1|493 Def. §23.1]], [[§25 Orbits#^def-25-1|493 Def. §25.1]]); charts and smooth structure in [[§14 Projective Spaces as Smooth Manifolds#^def-14-2|Def. §14.2]], [[§14 Projective Spaces as Smooth Manifolds#^thm-14-2|§14.2]]; the projection is a submersion, [[§29 Submersions#^ex-29-3|Ex. §29.3]].
 > - Real analogue in MATH 590: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2 (Projective n-Space)]], [[Projective plane]].
 
 > [!theorem] Proposition §6.4: $\mathbb{CP}^n$ is Hausdorff and Second Countable

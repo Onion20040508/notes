@@ -154,7 +154,7 @@ Throughout, $p = (p_1, p_2) \in M_1 \times M_2$, and $\iota_1 = \iota^{p_2} : M_
 
 > [!remark]- Connections
 > - Linear algebra of products and direct sums: [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|LADR 3.92]] (dimension of a product), [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|LADR 3.93]] (products and direct sums).
-> - The product smooth structure it rests on: [[§15 Smooth Functions and Smooth Maps#^prop-15-8|§15.8]]; projections of products are submersions: [[§28 Local Diffeomorphisms and Submersions#^ex-28-4|Ex. §28.4]].
+> - The product smooth structure it rests on: [[§15 Smooth Functions and Smooth Maps#^prop-15-8|§15.8]]; projections of products are submersions: [[§29 Submersions#^ex-29-2|Ex. §29.2]].
 
 **Partial derivatives in the $M_1$ variables.** For $v \in T_{p_1}M_1$ and a germ $[f]$ at $p$,
 

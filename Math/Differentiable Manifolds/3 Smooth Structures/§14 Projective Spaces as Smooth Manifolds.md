@@ -166,7 +166,7 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 *Uses:* [[§6 Open Quotients and Complex Projective Space#^prop-6-4|§6.4]], [[§6 Open Quotients and Complex Projective Space#^prop-6-5|§6.5]], [[§6 Open Quotients and Complex Projective Space#^prop-6-6|§6.6]], [[§14 Projective Spaces as Smooth Manifolds#^prop-14-1|§14.1]], [[§14 Projective Spaces as Smooth Manifolds#^thm-14-2|§14.2]], [[§10 Group Actions and Orbit Spaces#^cor-10-4|§10.4]]
 
 > [!remark]- Connections
-> - The same space in 590, projective $n$-space: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2]], [[Projective plane]]; the double cover $S^n \to \mathbb{RP}^n$ as a local diffeomorphism: [[§28 Local Diffeomorphisms and Submersions#^ex-28-2|Ex. §28.2]].
+> - The same space in 590, projective $n$-space: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2]], [[Projective plane]]; the double cover $S^n \to \mathbb{RP}^n$ as a local diffeomorphism: [[§28 Local Diffeomorphisms#^ex-28-2|Ex. §28.2]].
 
 ![[m591-8-6.svg]]
 *The chart $U_0$ of $\mathbb{RP}^1$, drawn in the plane of homogeneous coordinates. A point of $\mathbb{RP}^1$ is a line through the origin. A line $L$ with $x_0 \ne 0$ meets the affine line $x_0 = 1$ in exactly one point, $(1, x_1/x_0)$, and the chart $\varphi_0(L) = x_1/x_0$ records where. The one line with $x_0 = 0$ — the $x_1$-axis, the point $[0:1]$ — is parallel to $x_0 = 1$ and never meets it: it is the point at infinity that $U_0$ misses, and the second chart $U_1$ covers it. On the right, $\mathbb{RP}^1$ drawn as a circle, with $U_0$ everything except the top point. In $\mathbb{RP}^n$ the same picture holds with the affine hyperplane $x_0 = 1$ in place of the line.*

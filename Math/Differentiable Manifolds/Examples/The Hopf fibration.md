@@ -9,9 +9,9 @@ The quotient map $\pi : S^{2n+1} \to \mathbb{CP}^n$, $z \mapsto [z]$, whose fibr
 - $\mathbb{CP}^n$ is defined as the quotient of $S^{2n+1}$ whose classes are circles ([[§6 Open Quotients and Complex Projective Space#^def-6-2|§6]])
 - The quotient map is the orbit map of $\mathrm{U}(1)$ acting on $S^{2n+1}$ ([[§10 Group Actions and Orbit Spaces#^ex-10-3|§10]])
 - Every orbit is a circle of the same kind: no special points ([[§10 Group Actions and Orbit Spaces#^rem-10-5|§10]])
-- $S^{2n+1} \to \mathbb{CP}^n$ is a submersion ([[§28 Local Diffeomorphisms and Submersions#^ex-28-5|§28]])
-- $\pi$ is a fibration with fibre $S^1$, trivialized over each chart domain $U_j$ ([[§30 Fibrations#^ex-30-1|§30]])
-- $\pi$ has no continuous section for $n \geq 1$ ([[§31 The Tangent Bundle#^rem-31-3|§31]])
+- $S^{2n+1} \to \mathbb{CP}^n$ is a submersion ([[§29 Submersions#^ex-29-3|§28]])
+- $\pi$ is a fibration with fibre $S^1$, trivialized over each chart domain $U_j$ ([[§31 Fibrations#^ex-31-1|§30]])
+- $\pi$ has no continuous section for $n \geq 1$ ([[§32 The Tangent Bundle#^rem-32-3|§31]])
 
 ## $\mathbb{CP}^n$ is defined as the quotient of $S^{2n+1}$ whose classes are circles
 ![[§6 Open Quotients and Complex Projective Space#^def-6-2]]
@@ -23,10 +23,10 @@ The quotient map $\pi : S^{2n+1} \to \mathbb{CP}^n$, $z \mapsto [z]$, whose fibr
 ![[§10 Group Actions and Orbit Spaces#^rem-10-5]]
 
 ## $S^{2n+1} \to \mathbb{CP}^n$ is a submersion
-![[§28 Local Diffeomorphisms and Submersions#^ex-28-5]]
+![[§29 Submersions#^ex-29-3]]
 
 ## $\pi$ is a fibration with fibre $S^1$, trivialized over each chart domain $U_j$
-![[§30 Fibrations#^ex-30-1]]
+![[§31 Fibrations#^ex-31-1]]
 
 ## $\pi$ has no continuous section for $n \geq 1$
-![[§31 The Tangent Bundle#^rem-31-3]]
+![[§32 The Tangent Bundle#^rem-32-3]]

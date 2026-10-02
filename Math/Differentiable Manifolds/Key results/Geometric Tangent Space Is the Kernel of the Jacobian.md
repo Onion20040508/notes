@@ -13,8 +13,8 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§7 The Regular Value Theorem#^def-7-2|Definition §7.2: Regular Point and Regular Value]]
 - [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3: Regular Value Theorem]]
-- [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-1|Lemma §20.1: Locality of the Geometric Tangent Space]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Definition §20.1: Geometric Tangent Space]]
+- [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-1|Lemma §20.1: Locality of the Geometric Tangent Space]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-2|Lemma §20.2: The Geometric Tangent Space of a Graph]]
 
 ## Its proof uses (other subjects)
@@ -33,8 +33,8 @@ tags: [differentiable-manifolds, hub]
 - [[§21 Transversality#^prop-21-4|Proposition §21.4: Transverse Intersections]]
 - [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|Theorem §24.6: Ambient and Abstract Agree]]
 - [[§24 Coordinate Derivations and the Basis Theorem#^cor-24-7|Corollary §24.7: Consequences]]
-- [[§29 Submanifolds#^thm-29-6|Theorem §29.6: The Regular Value Theorem for Manifolds]]
-- [[§29 Submanifolds#^prop-29-8|Proposition §29.8: The Old and New Versions Agree]]
+- [[§30 Submanifolds#^thm-30-6|Theorem §30.6: The Regular Value Theorem for Manifolds]]
+- [[§30 Submanifolds#^prop-30-8|Proposition §30.8: The Old and New Versions Agree]]
 
 ## Connections
 - **Used for.** The tangent spaces of the classical groups at I: Skew(n) for O(n), skew-Hermitian matrices for U(n), trace-zero matrices for SL(n,ℝ) ([[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5|§20.5]]). It is the input to the [[Transverse Preimage Theorem]], to transverse intersections ([[§21 Transversality#^prop-21-4|§21.4]]) and to [[Ambient and Abstract Tangent Spaces Agree]], and the [[Regular Value Theorem for Manifolds]] generalizes it to ι_*(T_pS) = ker F_*p.

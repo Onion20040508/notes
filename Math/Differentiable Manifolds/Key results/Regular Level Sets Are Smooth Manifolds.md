@@ -15,8 +15,8 @@ tags: [differentiable-manifolds, hub]
 - [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3: Regular Value Theorem]]
 - [[§13 Differentiable Structures#^def-13-4|Definition §13.4: Smoothly Compatible Charts]]
 - [[§13 Differentiable Structures#^thm-13-5|Theorem §13.5: Every Atlas Lies in a Unique Maximal Atlas]]
-- [[§16 Manifolds in Euclidean Space#^ex-16-2|Example §16.2: A Surface in ℝ³]]
 - [[§16 Manifolds in Euclidean Space#^def-16-2|Definition §16.2: Parametrization]]
+- [[§16 Manifolds in Euclidean Space#^ex-16-2|Example §16.2: A Surface in ℝ³]]
 
 ## Its proof uses (other subjects)
 - [[Multivariable Chain Rule]] (Multivariable Analysis)
@@ -29,7 +29,7 @@ tags: [differentiable-manifolds, hub]
 - [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-19-2|Example §19.2: U(n) Is a Smooth Manifold of Dimension n²]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5|Theorem §20.5: The Classical Groups]]
 - [[§21 Transversality#^thm-21-1|Theorem §21.1: Preimages of Transverse Level Sets]]
-- [[§29 Submanifolds#^prop-29-8|Proposition §29.8: The Old and New Versions Agree]]
+- [[§30 Submanifolds#^prop-30-8|Proposition §30.8: The Old and New Versions Agree]]
 
 ## Connections
 - **Used for.** Smooth structures on O(n) and U(n) ([[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-19-1|Ex. §19.1]], [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-19-2|Ex. §19.2]]), on SL(n,ℝ) and on the spheres, hence the smooth half of [[Classical Groups Are Manifolds]] ([[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5|§20.5]]). Maps into and out of a level set are smooth when the ambient formulas are ([[§16 Manifolds in Euclidean Space#^lem-16-3|§16.3]]), which shows that the three circle atlases define one structure ([[§16 Manifolds in Euclidean Space#^prop-16-4|§16.4]]).

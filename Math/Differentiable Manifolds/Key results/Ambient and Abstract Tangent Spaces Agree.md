@@ -20,10 +20,10 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§24 Coordinate Derivations and the Basis Theorem#^cor-24-7|Corollary §24.7: Consequences]]
-- [[§29 Submanifolds#^prop-29-8|Proposition §29.8: The Old and New Versions Agree]]
+- [[§30 Submanifolds#^prop-30-8|Proposition §30.8: The Old and New Versions Agree]]
 
 ## Connections
-- **Used for.** It lets the geometric tangent spaces computed in §20 serve as abstract ones, e.g. T_I O(n) = Skew(n) ([[§20 Tangent Spaces I꞉ The Geometric Picture#^ex-20-2|Ex. §20.2]]) and the table of [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5|§20.5]]. It gives part (2) of [[§29 Submanifolds#^prop-29-8|§29.8]]: for a regular level set S, the submanifold tangent space ι_*(T_pS) is ker F′(p). Read through curves, it says the geometric and the abstract velocity of a curve agree ([[§26 Tangent Vectors as Velocities of Curves#^rem-26-1|The Two Faces Reconciled]]).
+- **Used for.** It lets the geometric tangent spaces computed in §20 serve as abstract ones, e.g. T_I O(n) = Skew(n) ([[§20 Tangent Spaces I꞉ The Geometric Picture#^ex-20-2|Ex. §20.2]]) and the table of [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5|§20.5]]. It gives part (2) of [[§30 Submanifolds#^prop-30-8|§30.8]]: for a regular level set S, the submanifold tangent space ι_*(T_pS) is ker F′(p). Read through curves, it says the geometric and the abstract velocity of a curve agree ([[§26 Tangent Vectors as Velocities of Curves#^rem-26-1|The Two Faces Reconciled]]).
 - **How it is proved.** v ↦ D_v is injective because D_v determines v ([[§22 Tangent Spaces II꞉ Germs#^prop-22-2|§22.2]]). Surjectivity is never constructed: both sides have dimension n, by [[Geometric Tangent Space Is the Kernel of the Jacobian]] and the [[Basis Theorem for Tangent Spaces]], so the injective linear map is onto ([[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]). The proof of [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]] also gets one inclusion from a dimension count.
 - **Same idea elsewhere.** In ℝⁿ the trade v ↔ D_v is the directional derivative of calculus, D_v g = Σ vⁱ ∂g/∂rⁱ ([[§25 The Differential in Coordinates#^prop-25-5|§25.5]]; the two-variable [[Directional Derivative Formula]] of 452).
 - **Looking ahead (not yet announced in the course).** Whitney's embedding theorem puts every manifold inside some ℝᴺ, so every abstract tangent space can be realized as a subspace of ℝᴺ in this way.

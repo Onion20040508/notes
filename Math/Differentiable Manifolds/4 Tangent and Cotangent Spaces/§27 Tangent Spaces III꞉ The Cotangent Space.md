@@ -5,7 +5,7 @@ chapter: 4
 section: 27
 tags: [differentiable-manifolds, math591]
 ---
-← [[§26 Tangent Vectors as Velocities of Curves]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§28 Local Diffeomorphisms and Submersions]] →
+← [[§26 Tangent Vectors as Velocities of Curves]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§28 Local Diffeomorphisms]] →
 
 *Stage: abstract, dual — Differentials of functions and the cotangent space: defined as a dual, then recovered from germs alone.*
 
@@ -34,7 +34,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 > [!remark]- Connections
 > - The linear algebra: the dual space is [[§12 Duality#^ladr-3-110|LADR 3.110]].
 > - In multivariable calculus: [[§8 The Differential#^def-8-1|452 Def. §8.1]] and [[§22 The Algebra of Differential Forms#^prop-22-6|452 §22.6 (gradient = differential = 1-form)]].
-> - Assembled over all of $M$: the cotangent bundle, [[§31 The Tangent Bundle#^def-31-5|Def. §31.5]].
+> - Assembled over all of $M$: the cotangent bundle, [[§32 The Tangent Bundle#^def-32-5|Def. §32.5]].
 > - Used in Relativity: the differential of a scalar field is why its gradient $\partial_\mu\phi$ carries a lower index — [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-5|REL Remark: Why the gradient carries a lower index]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]].
 
 > [!theorem] Proposition §27.1: The Differential Evaluates Derivations
@@ -114,7 +114,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 > [!remark]- Connections
 > - The Calc 3 formula and the gradient it replaces: [[§22 The Algebra of Differential Forms#^prop-22-6|452 §22.6]], [[§8 The Differential#^def-8-1|452 Def. §8.1]].
 > - Converting a covector into a vector with an inner product: [[Riesz representation theorem|LADR 6.42]].
-> - The same point for normal vectors: [[§29 Submanifolds#^rem-29-1|No Normal Vectors Without a Metric]].
+> - The same point for normal vectors: [[§30 Submanifolds#^rem-30-1|No Normal Vectors Without a Metric]].
 
 ## The Cotangent Space from Germs
 

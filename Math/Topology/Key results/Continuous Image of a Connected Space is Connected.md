@@ -23,8 +23,8 @@ tags: [topology, hub]
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7: Connectedness and Components]]
 - [[§13 Differentiable Structures#^prop-13-4|Proposition §13.4: Chart Domains on the Circle]]
-- [[§30 Fibrations#^ex-30-2|Example §30.2: A Submersion That Is Not a Fibration]]
-- [[§32 Immersions#^ex-32-1|Example §32.1: An Immersion That Crosses Itself]]
+- [[§31 Fibrations#^ex-31-2|Example §31.2: A Submersion That Is Not a Fibration]]
+- [[§33 Immersions#^ex-33-1|Example §33.1: An Immersion That Crosses Itself]]
 
 ## Connections
 - **Generalizes.** It is the engine of the [[§14 Connected Subspaces of ℝ#^thm-14-3|Intermediate Value Theorem]] (§14.3), whose MATH 451 case on [a, b] is [[Intermediate Value Theorem]]. Without connectedness IVT fails, e.g. for a map on [0, 1] ∪ [2, 3] taking the values 0 and 2 ([[§14 Connected Subspaces of ℝ#^rem-14-2|IVT: The Power of Connectedness]]).

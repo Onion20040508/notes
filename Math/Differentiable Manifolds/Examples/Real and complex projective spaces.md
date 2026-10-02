@@ -26,8 +26,8 @@ Real projective space $\mathbb{RP}^n = S^n/\{\pm 1\}$ and complex projective spa
 - The quotient and Grassmannian topologies on $\mathbb{RP}^n$ agree, and $\mathbb{RP}^1 \cong S^1$ ([[§14 Projective Spaces as Smooth Manifolds#^prop-14-6|§14]])
 - Dimension check: $\mathbb{CP}^n = \mathrm{U}(n+1)/(\mathrm{U}(1) \times \mathrm{U}(n))$ has dimension $2n$ ([[§20 Tangent Spaces I꞉ The Geometric Picture#^rem-20-9|§20]])
 - Regular level sets of the moment map $\mathbb{CP}^n \to \mathbb{R}^n$, computed in one chart ([[§25 The Differential in Coordinates#^rem-25-5|§25]])
-- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§28 Local Diffeomorphisms and Submersions#^ex-28-2|§28]])
-- $S^n \to \mathbb{RP}^n$ is a covering map ([[§28 Local Diffeomorphisms and Submersions#^rem-28-2|§28]])
+- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§28 Local Diffeomorphisms#^ex-28-2|§28]])
+- $S^n \to \mathbb{RP}^n$ is a covering map ([[§28 Local Diffeomorphisms#^rem-28-2|§28]])
 
 ## Definition: $\mathbb{CP}^n = S^{2n+1}/{\sim}$, with $z \sim \xi z$ for $\xi \in S^1$
 ![[§6 Open Quotients and Complex Projective Space#^def-6-2]]
@@ -90,7 +90,7 @@ Real projective space $\mathbb{RP}^n = S^n/\{\pm 1\}$ and complex projective spa
 ![[§25 The Differential in Coordinates#^rem-25-5]]
 
 ## $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism
-![[§28 Local Diffeomorphisms and Submersions#^ex-28-2]]
+![[§28 Local Diffeomorphisms#^ex-28-2]]
 
 ## $S^n \to \mathbb{RP}^n$ is a covering map
-![[§28 Local Diffeomorphisms and Submersions#^rem-28-2]]
+![[§28 Local Diffeomorphisms#^rem-28-2]]

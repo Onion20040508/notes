@@ -19,9 +19,9 @@ The unit circle $S^1 = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$, which is
 - $\mathbb{RP}^1$ is homeomorphic to $S^1$ ([[§14 Projective Spaces as Smooth Manifolds#^prop-14-6|§14]])
 - The circle in three descriptions: level set, graph, parametrization ([[§16 Manifolds in Euclidean Space#^ex-16-1|§16]])
 - The three circle atlases agree with the level-set structure ([[§16 Manifolds in Euclidean Space#^prop-16-4|§16]])
-- $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism $\mathbb{R} \to S^1$ that is not injective ([[§28 Local Diffeomorphisms and Submersions#^ex-28-1|§28]])
-- $\mathbb{R} \to S^1$ is a covering map, while its restriction to $(0, 4\pi)$ is not ([[§28 Local Diffeomorphisms and Submersions#^rem-28-2|§28]])
-- The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product ([[§30 Fibrations#^ex-30-3|§30]])
+- $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism $\mathbb{R} \to S^1$ that is not injective ([[§28 Local Diffeomorphisms#^ex-28-1|§28]])
+- $\mathbb{R} \to S^1$ is a covering map, while its restriction to $(0, 4\pi)$ is not ([[§28 Local Diffeomorphisms#^rem-28-2|§28]])
+- The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product ([[§31 Fibrations#^ex-31-3|§30]])
 
 ## The torus $T^n = S^1 \times \cdots \times S^1$ inherits $T_2$ and second countability from its factors
 ![[§3 Subspaces and Products#^rem-3-6]]
@@ -63,10 +63,10 @@ The unit circle $S^1 = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$, which is
 ![[§16 Manifolds in Euclidean Space#^prop-16-4]]
 
 ## $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism $\mathbb{R} \to S^1$ that is not injective
-![[§28 Local Diffeomorphisms and Submersions#^ex-28-1]]
+![[§28 Local Diffeomorphisms#^ex-28-1]]
 
 ## $\mathbb{R} \to S^1$ is a covering map, while its restriction to $(0, 4\pi)$ is not
-![[§28 Local Diffeomorphisms and Submersions#^rem-28-2]]
+![[§28 Local Diffeomorphisms#^rem-28-2]]
 
 ## The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product
-![[§30 Fibrations#^ex-30-3]]
+![[§31 Fibrations#^ex-31-3]]

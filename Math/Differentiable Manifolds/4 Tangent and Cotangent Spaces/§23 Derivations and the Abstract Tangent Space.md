@@ -61,7 +61,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The geometric tangent space it replaces: [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Def. §20.1]]; the two agree by [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|§24.6]].
-> - Its dual, the cotangent space: [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|Def. §27.1]]; all the $T_pM$ together: [[§31 The Tangent Bundle#^def-31-1|the tangent bundle, Def. §31.1]].
+> - Its dual, the cotangent space: [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|Def. §27.1]]; all the $T_pM$ together: [[§32 The Tangent Bundle#^def-32-1|the tangent bundle, Def. §32.1]].
 
 > [!definition] Definition §23.3: The Ideal of Germs Vanishing at a Point
 > The **ideal of germs vanishing at $p$** is

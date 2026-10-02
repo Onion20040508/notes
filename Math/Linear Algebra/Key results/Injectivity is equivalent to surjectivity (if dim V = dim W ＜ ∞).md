@@ -24,7 +24,7 @@ tags: [linear-algebra, hub]
 - [[§17 Linear Algebra Toolkit#^thm-17-5|Theorem §17.5: Non-Degenerate Pairings]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^cor-20-4|Corollary §20.4: Three Descriptions of the Geometric Tangent Space]]
 - [[§24 Coordinate Derivations and the Basis Theorem#^cor-24-7|Corollary §24.7: Consequences]]
-- [[§28 Local Diffeomorphisms and Submersions#^prop-28-4|Proposition §28.4: Dimension Constraints]]
+- [[§29 Submersions#^prop-29-1|Proposition §29.1: Dimension Constraints]]
 
 ## Connections
 - Matrix and operator consequences: [[§10 Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I (on vector spaces of the same dimension)]]. Eigenvalue criterion: [[§14 Invariant Subspaces#^ladr-5-7|Equivalent conditions to be an eigenvalue]].

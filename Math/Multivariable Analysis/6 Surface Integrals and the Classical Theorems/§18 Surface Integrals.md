@@ -150,7 +150,7 @@ These are exactly the tangent vectors to the two families of curves that sweep o
 ^rem-18-3
 
 > [!remark]- Connections
-> - A parametrization that is regular at every point is an immersion, [[§32 Immersions#^def-32-1|591 Def. §32.1]], and one that is also a homeomorphism onto its image is the internal description of a manifold, [[§16 Manifolds in Euclidean Space#^def-16-1|591 Def. §16.1]].
+> - A parametrization that is regular at every point is an immersion, [[§33 Immersions#^def-33-1|591 Def. §33.1]], and one that is also a homeomorphism onto its image is the internal description of a manifold, [[§16 Manifolds in Euclidean Space#^def-16-1|591 Def. §16.1]].
 
 ## Surface Area
 

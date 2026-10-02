@@ -39,8 +39,8 @@ tags: [linear-algebra, hub]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-2|Lemma §20.2: The Geometric Tangent Space of a Graph]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|Theorem §20.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
 - [[§21 Transversality#^prop-21-4|Proposition §21.4: Transverse Intersections]]
-- [[§28 Local Diffeomorphisms and Submersions#^prop-28-4|Proposition §28.4: Dimension Constraints]]
-- [[§29 Submanifolds#^thm-29-6|Theorem §29.6: The Regular Value Theorem for Manifolds]]
+- [[§29 Submersions#^prop-29-1|Proposition §29.1: Dimension Constraints]]
+- [[§30 Submanifolds#^thm-30-6|Theorem §30.6: The Regular Value Theorem for Manifolds]]
 
 ## Connections
 - **Immediate consequences.** Comparing dimensions: [[§8 Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]] (3.22), [[§8 Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]] (3.24), [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (3.65).

@@ -171,7 +171,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - A subspace: [[§12 Duality#^ladr-3-124|The annihilator is a subspace]]. Dimension: [[§12 Duality#^ladr-3-125|Dimension of the annihilator]].
-> - The conormal space of a submanifold is the annihilator of its tangent space: [[§29 Submanifolds#^def-29-2|591 Def. §29.2]], of dimension the codimension by [[§29 Submanifolds#^prop-29-5|591 Prop. §29.5]].
+> - The conormal space of a submanifold is the annihilator of its tangent space: [[§30 Submanifolds#^def-30-2|591 Def. §30.2]], of dimension the codimension by [[§30 Submanifolds#^prop-30-5|591 Prop. §30.5]].
 
 > [!example] Example 3.122: Element of an annihilator (p. 109)
 > Let $U\subseteq\Poly(\R)$ be the polynomial multiples of $x^2$ and $\varphi(p)=p'(0)$. For $p=x^2q$, $p'(0)=\big(2xq+x^2q'\big)(0)=0$, so $\varphi\in U^0$.
@@ -316,7 +316,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Explains [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]](c) as $(AB)^t=B^tA^t$. Used in [[§12 Duality#^ladr-3-133|Column rank equals row rank (LADR 3.133)]].
 > - With respect to orthonormal bases the adjoint has the conjugate transpose: [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|Matrix of T (LADR 7.9)]].
-> - This is why covector components change by the transpose of the inverse Jacobian: [[§31 The Tangent Bundle#^prop-31-5|591 Prop. §31.5]].
+> - This is why covector components change by the transpose of the inverse Jacobian: [[§32 The Tangent Bundle#^prop-32-5|591 Prop. §32.5]].
 > - Used in Relativity: because the dual map has the transposed matrix, lower indices transform with the inverse transpose $\Lambda_\mu{}^\nu$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 
 > [!theorem] Theorem 3.133: Column rank equals row rank

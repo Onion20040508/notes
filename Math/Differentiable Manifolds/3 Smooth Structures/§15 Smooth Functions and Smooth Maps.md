@@ -75,7 +75,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 *The top row is the map one cares about, between spaces where “smooth” has no meaning; the bottom row is its coordinate representation, between open subsets of Euclidean spaces where it does. The two vertical arrows are charts, so they are homeomorphisms, and the square commutes by construction. Smoothness of $F$ is defined by smoothness of the bottom arrow, and [[§15 Smooth Functions and Smooth Maps#^prop-15-2|§15.2]] says this does not depend on which charts are used to build it.*
 
 > [!remark]- Connections
-> - The Euclidean notion it generalizes: [[§13 Differentiable Structures#^def-13-3|Def. §13.3]]; local diffeomorphisms and the bijective case: [[§28 Local Diffeomorphisms and Submersions#^def-28-1|Def. §28.1]], [[§28 Local Diffeomorphisms and Submersions#^cor-28-3|§28.3]].
+> - The Euclidean notion it generalizes: [[§13 Differentiable Structures#^def-13-3|Def. §13.3]]; local diffeomorphisms and the bijective case: [[§28 Local Diffeomorphisms#^def-28-1|Def. §28.1]], [[§28 Local Diffeomorphisms#^cor-28-3|§28.3]].
 > - The topological counterpart, homeomorphism: [[§9 Continuous Functions#^def-9-2|590 Def. §9.2]].
 
 > [!theorem] Proposition §15.2: Smoothness of a Map Does Not Depend on the Charts
@@ -129,7 +129,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 *Uses:* [[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]], [[§13 Differentiable Structures#^def-13-3|Def. §13.3]], [[§13 Differentiable Structures#^def-13-4|Def. §13.4]], [[§15 Smooth Functions and Smooth Maps#^def-15-4|Def. §15.4]], [[§13 Differentiable Structures#^ex-13-1|Ex. §13.1]], [[Multivariable Chain Rule|452 §10.2]]
 
 > [!remark] Remark
-> Not stated in lecture. The word is defined twice because the logic needs it twice: [[§13 Differentiable Structures#^def-13-3|Def. §13.3]] must exist before smooth manifolds do, since compatibility of charts is phrased with it, and [[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]] is the general notion. The proposition is what licenses using one word for both. A third notion, the *local* diffeomorphism of [[§28 Local Diffeomorphisms and Submersions|§28]], is genuinely different; [[§28 Local Diffeomorphisms and Submersions#^cor-28-3|§28.3]] relates it to the other two.
+> Not stated in lecture. The word is defined twice because the logic needs it twice: [[§13 Differentiable Structures#^def-13-3|Def. §13.3]] must exist before smooth manifolds do, since compatibility of charts is phrased with it, and [[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]] is the general notion. The proposition is what licenses using one word for both. A third notion, the *local* diffeomorphism of [[§28 Local Diffeomorphisms|§28]], is genuinely different; [[§28 Local Diffeomorphisms#^cor-28-3|§28.3]] relates it to the other two.
 
 ^rem-15-3
 
@@ -379,4 +379,4 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 *Uses:* [[§15 Smooth Functions and Smooth Maps#^def-15-6|Def. §15.6]], [[§15 Smooth Functions and Smooth Maps#^prop-15-8|§15.8]], [[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]], [[§15 Smooth Functions and Smooth Maps#^prop-15-2|§15.2]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1]]
 
 > [!remark]- Connections
-> - Projections are submersions: [[§28 Local Diffeomorphisms and Submersions#^ex-28-4|Ex. §28.4]]; their differentials: [[§26 Tangent Vectors as Velocities of Curves#^thm-26-4|§26.4]].
+> - Projections are submersions: [[§29 Submersions#^ex-29-2|Ex. §29.2]]; their differentials: [[§26 Tangent Vectors as Velocities of Curves#^thm-26-4|§26.4]].

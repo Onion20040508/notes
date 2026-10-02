@@ -130,7 +130,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 *Uses:* [[§21 Transversality#^def-21-2|Def. §21.2]], [[§21 Transversality#^thm-21-1|§21.1]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]]
 
 > [!remark]- Connections
-> - The regular value theorem for maps between manifolds: [[§29 Submanifolds#^thm-29-6|§29.6]], compared with this version in [[§29 Submanifolds#^prop-29-8|§29.8]].
+> - The regular value theorem for maps between manifolds: [[§30 Submanifolds#^thm-30-6|§30.6]], compared with this version in [[§30 Submanifolds#^prop-30-8|§30.8]].
 
 > [!definition] Definition §21.3: Transverse Intersection
 > Regular level sets $S_1, S_2 \subseteq \mathbb{R}^k$ **intersect transversally** if

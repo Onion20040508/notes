@@ -9,15 +9,15 @@ tags: [chapter, differentiable-manifolds]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (26), [[· 3 Smooth Structures|3 Smooth Structures]] (27), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (42)
 **Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (1)
-**Builds on (other subjects):** [[Linear Algebra]] (9), [[Topology]] (23), [[Multivariable Analysis]] (5)
+**Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (24), [[Multivariable Analysis]] (4)
 
 ## Sections
-- [[§28 Local Diffeomorphisms and Submersions]]
-- [[§29 Submanifolds]]
-- [[§30 Fibrations]]
-- [[§31 The Tangent Bundle]]
-- [[§32 Immersions]]
-- [[§33 Embeddings]]
+- [[§28 Local Diffeomorphisms]]
+- [[§30 Submanifolds]]
+- [[§31 Fibrations]]
+- [[§32 The Tangent Bundle]]
+- [[§33 Immersions]]
+- [[§34 Embeddings]]
 
 ## Central results
 - [[Local Diffeomorphism Criterion]] (§28.2)
@@ -30,7 +30,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§28 Local Diffeomorphisms and Submersions#^thm-28-1|Theorem §28.1: Inverse Function Theorem]]: 45 later results
+- [[§28 Local Diffeomorphisms#^thm-28-1|Theorem §28.1: Inverse Function Theorem]]: 45 later results
 - [[Local Diffeomorphism Criterion|Theorem §28.2: Local Diffeomorphisms Are Detected by the Differential]]: 15 later results
-- [[§28 Local Diffeomorphisms and Submersions#^prop-28-4|Proposition §28.4: Dimension Constraints]]: 13 later results
-- [[§28 Local Diffeomorphisms and Submersions#^lem-28-6|Lemma §28.6: Diffeomorphisms onto Open Sets Are Charts]]: 13 later results
+- [[§29 Submersions#^prop-29-1|Proposition §29.1: Dimension Constraints]]: 13 later results
+- [[§29 Submersions#^lem-29-3|Lemma §29.3: Diffeomorphisms onto Open Sets Are Charts]]: 13 later results

@@ -229,7 +229,7 @@ $$
 
 > [!remark]- Connections
 > - The coefficients $D[x^i]$ are the values of the dual basis $dx^i|_p$: [[§27 Tangent Spaces III꞉ The Cotangent Space#^lem-27-2|§27.2]]; cf. [[§12 Duality#^ladr-3-114|LADR 3.114]].
-> - The components in the coordinate basis give the charts of the tangent bundle: [[§31 The Tangent Bundle#^def-31-2|Def. §31.2]].
+> - The components in the coordinate basis give the charts of the tangent bundle: [[§32 The Tangent Bundle#^def-32-2|Def. §32.2]].
 
 **Reconciliation with the lecture.** This is the lecture's proof, in the lecture's order of ideas but with the pushforward defined before it is used rather than after. Two details of the board version. It opens with “$\forall\, [f] \in I_p$”: restricting to germs vanishing at $p$ is harmless, since $D[f] = D[f - f(p)]$ by Lemma [[§23 Derivations and the Abstract Tangent Space#^lem-23-2|§23.2]](1), but the argument works verbatim for every germ. And the notes had filled in a proof of this theorem before Lecture 9, via two reduction lemmas; those were the pushforward by an inclusion and by the chart in disguise, and they now appear as Lemma [[§23 Derivations and the Abstract Tangent Space#^lem-23-8|§23.8]] and Corollary [[§23 Derivations and the Abstract Tangent Space#^cor-23-7|§23.7]].
 

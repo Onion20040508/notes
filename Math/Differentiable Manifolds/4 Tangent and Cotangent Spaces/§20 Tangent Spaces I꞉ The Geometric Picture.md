@@ -140,7 +140,7 @@ It is not obvious from [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-
 *Uses:* [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Def. §20.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-1|§20.1]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-2|§20.2]], [[Multivariable Chain Rule|452 §10.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-39|LADR 2.39]]
 
 > [!remark]- Connections
-> - Identified with the abstract tangent space: [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|Ambient and Abstract Agree, §24.6]]; for submanifolds, [[§29 Submanifolds#^prop-29-4|§29.4]].
+> - Identified with the abstract tangent space: [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|Ambient and Abstract Agree, §24.6]]; for submanifolds, [[§30 Submanifolds#^prop-30-4|§30.4]].
 > - Orthogonality to the gradients is the geometry behind [[Method of Lagrange Multipliers|452 §14.2 (Lagrange multipliers)]].
 
 > [!remark] Remark

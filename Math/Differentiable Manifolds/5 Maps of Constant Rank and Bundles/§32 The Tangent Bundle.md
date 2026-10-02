@@ -2,16 +2,16 @@
 type: section
 subject: "[[Differentiable Manifolds]]"
 chapter: 5
-section: 31
+section: 32
 tags: [differentiable-manifolds, math591]
 ---
-← [[§30 Fibrations]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§32 Immersions]] →
+← [[§31 Fibrations]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§33 Immersions]] →
 
 *Stage: bundles — All the tangent spaces of $M$, assembled into a single manifold that fibres over $M$.*
 
 *Lecture 12. “Again, these constructions, especially the cotangent [bundle], are basic parts of the basic theory.” The tangent bundle was introduced as a set, with its projection and zero section; its topology, smooth structure and charts come next lecture.*
 
-> [!definition] Definition §31.1: The Tangent Bundle as a Set
+> [!definition] Definition §32.1: The Tangent Bundle as a Set
 > Let $M$ be a smooth manifold of dimension $m$. Its **tangent bundle** is the set
 >
 > $$
@@ -22,26 +22,26 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Ch. 3, The Tangent Bundle*
 
-^def-31-1
+^def-32-1
 
 > [!remark] Remark: The Picture Changes
 > “There are several psychological inflection steps that one needs to make. The most important one is that we're going to think of $TM$ as fibering over $M$.” A tangent space is usually drawn touching $M$, lying along it. In the bundle picture it stands *vertically*, as the fibre over its point, and $M$ itself sits horizontally inside $TM$ as the zero section — the tangent spaces become “transversal” to it.
 
-^rem-31-1
+^rem-32-1
 
 ![[m591-17-1.svg]]
 *The tangent bundle as a fibration. Each fibre $\pi^{-1}(p) = T_pM$ is a vertical line over $p$ (in general a copy of $\mathbb{R}^m$); the point $(p, v)$ lies on it, and the zero section $\zeta$ lifts each $p$ straight up to $(p, 0)$, placing a copy of $M$ horizontally inside $TM$.*
 
 ![[m591-17-6.svg]]
-*$TS^1$ as a cylinder. Left: the usual picture, each tangent line touching the circle at its point. Right: the bundle picture of the remark — each tangent line $T_pS^1$ (red) stands upright over $p$, and the zero section $\zeta(S^1)$ (blue) runs around the waist. Here the bundle is a genuine product $S^1 \times \mathbb{R}$: two angle charts ([[§16 Manifolds in Euclidean Space#^prop-16-4|§16.4]]) differ by a constant on each piece of their overlap, so their coordinate vectors $\partial/\partial\theta$ agree, and $c\,\partial/\partial\theta|_p \mapsto (p, c)$ is a global trivialization. The green circle is the vector field $\partial/\partial\theta$ ([[§31 The Tangent Bundle#^def-31-4|Definition §31.4]]), a section that never meets the zero section.*
+*$TS^1$ as a cylinder. Left: the usual picture, each tangent line touching the circle at its point. Right: the bundle picture of the remark — each tangent line $T_pS^1$ (red) stands upright over $p$, and the zero section $\zeta(S^1)$ (blue) runs around the waist. Here the bundle is a genuine product $S^1 \times \mathbb{R}$: two angle charts ([[§16 Manifolds in Euclidean Space#^prop-16-4|§16.4]]) differ by a constant on each piece of their overlap, so their coordinate vectors $\partial/\partial\theta$ agree, and $c\,\partial/\partial\theta|_p \mapsto (p, c)$ is a global trivialization. The green circle is the vector field $\partial/\partial\theta$ ([[§32 The Tangent Bundle#^def-32-4|Definition §32.4]]), a section that never meets the zero section.*
 
-*Status.* [[§31 The Tangent Bundle#^prop-31-4|Proposition §31.4]], below, was stated in Lecture 12 — “the claim, which takes a lot of detail to prove” — and made precise in Lecture 13 ([[§31 The Tangent Bundle#Trivializations and Charts|Trivializations and Charts]]), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; “putting all that together gives us a map” $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
+*Status.* [[§32 The Tangent Bundle#^prop-32-4|Proposition §32.4]], below, was stated in Lecture 12 — “the claim, which takes a lot of detail to prove” — and made precise in Lecture 13 ([[§32 The Tangent Bundle#Trivializations and Charts|Trivializations and Charts]]), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; “putting all that together gives us a map” $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
 
 ## Trivializations and Charts
 
 *Lecture 13. “Back to the tangent bundle.” $TM$ has been defined as a set; its charts come from charts of $M$ and the coordinate bases.*
 
-> [!definition] Definition §31.2: Trivializations and Charts of $TM$
+> [!definition] Definition §32.2: Trivializations and Charts of $TM$
 > Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$, and $TU = \pi^{-1}(U) = \{(p, v) \in TM : p \in U\}$, the tangent vectors at points of $U$. The **local trivialization** over $U$ is
 >
 > $$
@@ -58,22 +58,22 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Proposition 3.18*
 
-^def-31-2
+^def-32-2
 
 ![[m591-17-2.svg]]
-*The trivialization and the chart, as on the board. The triangle commutes, $\mathrm{pr}_1 \circ \Phi = \pi$ — the fibration diagram of [[§30 Fibrations#^def-30-1|Definition §30.1]] — and the chart $\tilde\varphi$ is $\Phi$ followed by $\varphi$ on the first factor.*
+*The trivialization and the chart, as on the board. The triangle commutes, $\mathrm{pr}_1 \circ \Phi = \pi$ — the fibration diagram of [[§31 Fibrations#^def-31-1|Definition §31.1]] — and the chart $\tilde\varphi$ is $\Phi$ followed by $\varphi$ on the first factor.*
 
-> [!theorem] Proposition §31.1: The Topology of $TM$
+> [!theorem] Proposition §32.1: The Topology of $TM$
 > There is a unique topology on $TM$ for which every $TU$ is open and every chart $\tilde\varphi : TU \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $TM$ is a topological manifold of dimension $2m$.
 >
 > *Lee: Lemma 1.35 and Proposition 3.18*
 
-^prop-31-1
+^prop-32-1
 
 > [!proof]+ Proof
 > *(Stated in Lecture 13 without proof — “it's all point-set topology, and of course everything is in Lee … see Lee”; filled in, following Lee's smooth manifold chart lemma.)* Throughout, $(U, \varphi)$ and $(V, \psi)$ denote smooth charts of $M$.
 >
-> *The transition maps.* The computation in the proof of [[§31 The Tangent Bundle#^prop-31-2|Proposition §31.2]] below uses only the definitions of the charts, not any topology on $TM$. It shows that $\tilde\psi \circ \tilde\varphi^{-1}$ maps the open set $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$ bijectively onto the open set $\psi(U \cap V) \times \mathbb{R}^m$, by a smooth map whose inverse, $\tilde\varphi \circ \tilde\psi^{-1}$, is given by the same formula with the two charts exchanged. So each transition map is a homeomorphism between open subsets of $\mathbb{R}^{2m}$.
+> *The transition maps.* The computation in the proof of [[§32 The Tangent Bundle#^prop-32-2|Proposition §32.2]] below uses only the definitions of the charts, not any topology on $TM$. It shows that $\tilde\psi \circ \tilde\varphi^{-1}$ maps the open set $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$ bijectively onto the open set $\psi(U \cap V) \times \mathbb{R}^m$, by a smooth map whose inverse, $\tilde\varphi \circ \tilde\psi^{-1}$, is given by the same formula with the two charts exchanged. So each transition map is a homeomorphism between open subsets of $\mathbb{R}^{2m}$.
 >
 > *The topology.* Declare $W \subseteq TM$ open if $\tilde\varphi(W \cap TU)$ is open in $\mathbb{R}^{2m}$ for every chart $(U, \varphi)$. This is a topology: $\emptyset$ and $TM$ are open, the latter because $\tilde\varphi(TU) = \varphi(U) \times \mathbb{R}^m$ is open; and since each $\tilde\varphi$ is a bijection, it carries unions and finite intersections of subsets of $TU$ to unions and finite intersections of their images.
 >
@@ -93,13 +93,13 @@ tags: [differentiable-manifolds, math591]
 >
 > *Second countable.* Let $\mathcal{B}$ be a countable basis of $M$. For each $B \in \mathcal{B}$ contained in some chart domain, choose one such chart $(U_B, \varphi_B)$. These countably many charts cover $M$: each $p$ lies in some chart domain $U$, and then in some $B \in \mathcal{B}$ with $p \in B \subseteq U$. So the countably many open sets $TU_B$ cover $TM$. Each is homeomorphic to an open subset of $\mathbb{R}^{2m}$, so has a countable basis, whose members are open in $TM$; the union of these countably many bases is countable and is a basis of $TM$, since any open $W \ni (p, v)$ meets some $TU_B$ containing $(p, v)$ in a set open in $TU_B$.
 
-^pf-31-1
+^pf-32-1
 
-*Uses:* [[§31 The Tangent Bundle#^def-31-2|Def. §31.2]], [[§31 The Tangent Bundle#^prop-31-2|§31.2]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^lem-2-11|§2.11]], [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]], [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]], [[§18 Countability Axioms#^def-18-3|590 Def. §18.3]]
+*Uses:* [[§32 The Tangent Bundle#^def-32-2|Def. §32.2]], [[§32 The Tangent Bundle#^prop-32-2|§32.2]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^lem-2-11|§2.11]], [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]], [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]], [[§18 Countability Axioms#^def-18-3|590 Def. §18.3]]
 
-The same argument, word for word, builds the topology of the cotangent bundle ([[§31 The Tangent Bundle#The Cotangent Bundle|The Cotangent Bundle]]), with the dual bases in place of the coordinate bases.
+The same argument, word for word, builds the topology of the cotangent bundle ([[§32 The Tangent Bundle#The Cotangent Bundle|The Cotangent Bundle]]), with the dual bases in place of the coordinate bases.
 
-> [!theorem] Proposition §31.2: The Smooth Atlas of $TM$
+> [!theorem] Proposition §32.2: The Smooth Atlas of $TM$
 > The charts $(TU, \tilde\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on $TM$. For charts $\varphi = (x^i)$ and $\psi = (y^j)$ of $M$, the transition map is
 >
 > $$
@@ -108,7 +108,7 @@ The same argument, word for word, builds the topology of the cotangent bundle ([
 >
 > *Lee: Proposition 3.18*
 
-^prop-31-2
+^prop-32-2
 
 > [!proof]+ Proof
 > *(Lecture 13: “the only thing that I want to have a look at is … the transition functions of the atlas, because this is how people handle tangent vectors.” Completed here.)* The domain is $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$, open in $\mathbb{R}^{2m}$. Let $p \in U \cap V$ and $v \in T_pM$, written in both bases:
@@ -125,9 +125,9 @@ The same argument, word for word, builds the topology of the cotangent bundle ([
 >
 > comparing coefficients in the basis $\partial/\partial y^i|_p$. (In lecture Uribe expanded $\partial/\partial y^j$ in the other basis and first solved for the $v$'s — “I did it backwards” — then took the other direction “by the same argument”.) With $p = \varphi^{-1}(r)$ this is the displayed formula. The coefficients are smooth functions of $r$: by [[§25 The Differential in Coordinates#^prop-25-1|Proposition §25.1]], $\partial y^i/\partial x^j(\varphi^{-1}(r)) = \partial(\psi \circ \varphi^{-1})^i/\partial r^j(r)$, the entries of the Jacobian of the transition map of $M$. So the transition map of $TM$ is $(r, v) \mapsto \big(\psi \circ \varphi^{-1}(r), (\psi \circ \varphi^{-1})'(r)\, v\big)$, smooth.
 
-^pf-31-2
+^pf-32-2
 
-*Uses:* [[§31 The Tangent Bundle#^def-31-2|Def. §31.2]], [[§13 Differentiable Structures#^def-13-4|Def. §13.4]], [[§13 Differentiable Structures#^def-13-6|Def. §13.6]], [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|§24.5]], [[§25 The Differential in Coordinates#^prop-25-1|§25.1]], [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]]
+*Uses:* [[§32 The Tangent Bundle#^def-32-2|Def. §32.2]], [[§13 Differentiable Structures#^def-13-4|Def. §13.4]], [[§13 Differentiable Structures#^def-13-6|Def. §13.6]], [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|§24.5]], [[§25 The Differential in Coordinates#^prop-25-1|§25.1]], [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]]
 
 ![[m591-17-3.svg]]
 *The transition map of the charts $\tilde\varphi$ and $\tilde\psi$ of $TM$, as drawn in lecture over a point $(p, v)$ of $TU \cap TV$.*
@@ -137,50 +137,50 @@ The same argument, word for word, builds the topology of the cotangent bundle ([
 
 The transition map of $TM$, in one line: the base point moves by the transition map of $M$, and the vector by its Jacobian. This is Uribe's identity at work once more — the partials $\partial y^i/\partial x^j$, taken upstairs on $M$, are the Jacobian downstairs.
 
-> [!theorem] Corollary §31.3: The Tangent Bundle Is a Fibration
-> With the smooth structure of [[§31 The Tangent Bundle#^prop-31-2|Proposition §31.2]]:
+> [!theorem] Corollary §32.3: The Tangent Bundle Is a Fibration
+> With the smooth structure of [[§32 The Tangent Bundle#^prop-32-2|Proposition §32.2]]:
 > 1. $TM$ is a smooth manifold of dimension $2m$, and $\pi : TM \to M$ is smooth;
 > 2. the $\Phi$ are local trivializations, so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and each $\Phi$ restricts on the fibre $T_pM$ to a linear isomorphism $T_pM \to \{p\} \times \mathbb{R}^m$;
 > 3. the image $\zeta(M)$ of the zero section is a submanifold of $TM$ of codimension $m$.
 >
-> With [[§31 The Tangent Bundle#^prop-31-1|Proposition §31.1]], this proves [[§31 The Tangent Bundle#^prop-31-4|Proposition §31.4]] below in full.
+> With [[§32 The Tangent Bundle#^prop-32-1|Proposition §32.1]], this proves [[§32 The Tangent Bundle#^prop-32-4|Proposition §32.4]] below in full.
 
-^cor-31-3
+^cor-32-3
 
 > [!proof]+ Proof
-> *((1) and (2) are the lecture's observations — “in these coordinates, the projection is just projection onto the first $m$ components … so we get a beautiful fibration”; the details and (3) are filled in.)* (1) In the charts $\tilde\varphi$ and $\varphi$, $\pi$ is $(r, v) \mapsto r$, which is smooth. (2) $\Phi = (\varphi^{-1} \times \mathrm{id}) \circ \tilde\varphi$ is a composite of diffeomorphisms ([[§23 Derivations and the Abstract Tangent Space#^prop-23-9|Proposition §23.9]]), and $\mathrm{pr}_1 \circ \Phi = \pi$; the $TU$ cover $TM$, the $U$ cover $M$. On $T_pM$, $\Phi$ is $v \mapsto (p, v^1, \ldots, v^m)$, taking components in a basis, which is a linear isomorphism. (3) In the chart $\tilde\varphi$, $\zeta(M) \cap TU = \{v^1 = \cdots = v^m = 0\}$, so the charts $\tilde\varphi$ are adapted to $\zeta(M)$ ([[§29 Submanifolds#^def-29-1|Definition §29.1]]).
+> *((1) and (2) are the lecture's observations — “in these coordinates, the projection is just projection onto the first $m$ components … so we get a beautiful fibration”; the details and (3) are filled in.)* (1) In the charts $\tilde\varphi$ and $\varphi$, $\pi$ is $(r, v) \mapsto r$, which is smooth. (2) $\Phi = (\varphi^{-1} \times \mathrm{id}) \circ \tilde\varphi$ is a composite of diffeomorphisms ([[§23 Derivations and the Abstract Tangent Space#^prop-23-9|Proposition §23.9]]), and $\mathrm{pr}_1 \circ \Phi = \pi$; the $TU$ cover $TM$, the $U$ cover $M$. On $T_pM$, $\Phi$ is $v \mapsto (p, v^1, \ldots, v^m)$, taking components in a basis, which is a linear isomorphism. (3) In the chart $\tilde\varphi$, $\zeta(M) \cap TU = \{v^1 = \cdots = v^m = 0\}$, so the charts $\tilde\varphi$ are adapted to $\zeta(M)$ ([[§30 Submanifolds#^def-30-1|Definition §30.1]]).
 
-^pf-31-3
+^pf-32-3
 
-*Uses:* [[§31 The Tangent Bundle#^def-31-2|Def. §31.2]], [[§31 The Tangent Bundle#^prop-31-1|§31.1]], [[§31 The Tangent Bundle#^prop-31-2|§31.2]], [[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]], [[§15 Smooth Functions and Smooth Maps#^def-15-6|Def. §15.6]], [[§23 Derivations and the Abstract Tangent Space#^prop-23-9|§23.9]], [[§30 Fibrations#^def-30-1|Def. §30.1]], [[§29 Submanifolds#^def-29-1|Def. §29.1]], [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]]
+*Uses:* [[§32 The Tangent Bundle#^def-32-2|Def. §32.2]], [[§32 The Tangent Bundle#^prop-32-1|§32.1]], [[§32 The Tangent Bundle#^prop-32-2|§32.2]], [[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]], [[§15 Smooth Functions and Smooth Maps#^def-15-6|Def. §15.6]], [[§23 Derivations and the Abstract Tangent Space#^prop-23-9|§23.9]], [[§31 Fibrations#^def-31-1|Def. §31.1]], [[§30 Submanifolds#^def-30-1|Def. §30.1]], [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]]
 
-> [!theorem] Proposition §31.4: The Tangent Bundle Is a Manifold (Claim)
+> [!theorem] Proposition §32.4: The Tangent Bundle Is a Manifold (Claim)
 > $TM$ has a natural topology and smooth structure making it a smooth manifold of dimension $2m$, for which $\pi : TM \to M$ is a fibration with fibre $\mathbb{R}^m$, and the image $\zeta(M)$ of the zero section is a submanifold of $TM$.
 >
 > *Lee: Proposition 3.18*
 
-^prop-31-4
+^prop-32-4
 
 > [!proof]+ Proof
-> [[§31 The Tangent Bundle#^prop-31-1|Proposition §31.1]] gives the topology, and [[§31 The Tangent Bundle#^cor-31-3|Corollary §31.3]] the smooth structure, the fibration with fibre $\mathbb{R}^m$, and the zero section as a submanifold.
+> [[§32 The Tangent Bundle#^prop-32-1|Proposition §32.1]] gives the topology, and [[§32 The Tangent Bundle#^cor-32-3|Corollary §32.3]] the smooth structure, the fibration with fibre $\mathbb{R}^m$, and the zero section as a submanifold.
 
-^pf-31-4
+^pf-32-4
 
-*Uses:* [[§31 The Tangent Bundle#^prop-31-1|§31.1]], [[§31 The Tangent Bundle#^prop-31-2|§31.2]], [[§31 The Tangent Bundle#^cor-31-3|§31.3]]
+*Uses:* [[§32 The Tangent Bundle#^prop-32-1|§32.1]], [[§32 The Tangent Bundle#^prop-32-2|§32.2]], [[§32 The Tangent Bundle#^cor-32-3|§32.3]]
 
 > [!remark] Remark: Vector Bundles
 > $TM$ is in fact a *vector bundle*: a fibration whose fibres are vector spaces, with trivializations that are linear isomorphisms on each fibre. Uribe postponed the general definition — “it takes another 10 minutes of axioms” — but these are the two features: “the fibres are abstract vector spaces, and you can find trivializations which restrict to linear isomorphisms fibrewise.” Vector bundles are “fun objects” in their own right; K-theory is built from them.
 
-^rem-31-2
+^rem-32-2
 
 ## Sections and Vector Fields
 
-> [!definition] Definition §31.3: Section
+> [!definition] Definition §32.3: Section
 > Let $\pi : E \to B$ be a fibration. A **section** of $\pi$ is a smooth map $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$: “if you first go up and then down, you get the identity on the base.” It picks, smoothly in $b$, one point $s(b)$ of each fibre $\pi^{-1}(b)$.
 >
 > *Lee: Ch. 10, Sections of Vector Bundles*
 
-^def-31-3
+^def-32-3
 
 ![[m591-17-4.svg]]
 *$\pi \circ s = \mathrm{id}_B$. A section goes up, the projection comes down, and the round trip is the identity on the base.*
@@ -189,16 +189,16 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 *The cartoon of a section. The fibration is drawn as a box over its base, with fibres vertical; a section is a graph over the base, meeting every fibre exactly once — at $s(b)$ in the fibre over $b$ — so its image $s(B)$ is “a copy of $B$” inside $E$.*
 
 > [!remark] Remark: Sections Need Not Exist
-> “A fact”: the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ of [[§30 Fibrations#^ex-30-1|Example §30.1]] — “the fibration that you're working with in homework” — has no continuous section, for $n \ge 1$. (For $n = 0$ the base is a single point.) This is stated, not proved, here; a proof uses the fundamental group. A vector bundle, by contrast, always has sections — the zero section at least — and in fact “a very infinite-dimensional space” of them.
+> “A fact”: the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ of [[§31 Fibrations#^ex-31-1|Example §31.1]] — “the fibration that you're working with in homework” — has no continuous section, for $n \ge 1$. (For $n = 0$ the base is a single point.) This is stated, not proved, here; a proof uses the fundamental group. A vector bundle, by contrast, always has sections — the zero section at least — and in fact “a very infinite-dimensional space” of them.
 
-^rem-31-3
+^rem-32-3
 
-> [!definition] Definition §31.4: Vector Field
+> [!definition] Definition §32.4: Vector Field
 > A **vector field** on $M$ is a section of the tangent bundle $\pi : TM \to M$: a smooth map $X : M \to TM$ with $X(p) \in T_pM$ for every $p$ — “for every point, [it] selects a tangent vector at that point.”
 >
 > *Lee: Ch. 8, Vector Fields*
 
-^def-31-4
+^def-32-4
 
 > [!remark]- Connections
 > - Vector fields on open subsets of $\mathbb{R}^3$ in 452: [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence|452 §11]].
@@ -207,7 +207,7 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 
 ## The Cotangent Bundle
 
-> [!definition] Definition §31.5: The Cotangent Bundle
+> [!definition] Definition §32.5: The Cotangent Bundle
 > The **cotangent bundle** of $M$ is
 >
 > $$
@@ -218,12 +218,12 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 >
 > *Lee: Proposition 11.9*
 
-^def-31-5
+^def-32-5
 
 > [!remark]- Connections
 > - The fibre $T_p^*M$ is a dual space, [[§12 Duality#^ladr-3-110|LADR 3.110]], and the chart uses the dual basis, [[§12 Duality#^ladr-3-112|LADR 3.112]]. Counterpart in 452: differential forms on $\mathbb{R}^n$, [[§21 Introduction to Differential Forms#^def-21-1|452 Def. §21.1]].
 
-> [!theorem] Proposition §31.5: The Cotangent Transition Maps
+> [!theorem] Proposition §32.5: The Cotangent Transition Maps
 > For charts $\varphi = (x^i)$ and $\psi = (y^j)$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
 >
 > $$
@@ -234,17 +234,17 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 >
 > *Lee: Proposition 11.9*
 
-^prop-31-5
+^prop-32-5
 
 > [!proof]+ Proof
-> *(Lecture 13: “completely analogous”, with the change “we use the dual basis”, and the formula for $dx^i$ given; the rest is filled in.)* The formula for $dx^i|_p$ is [[§27 Tangent Spaces III꞉ The Cotangent Space#^lem-27-2|Lemma §27.2]] applied to the function $x^i$ in the chart $\psi$. Substituting it into $\sum_i \xi_i\, dx^i|_p$ and comparing coefficients of $dy^j|_p$ gives $\eta_j$. The matrix $\big[\partial x^i/\partial y^j\big]$ is the inverse of $\big[\partial y^i/\partial x^j\big]$ (chain rule), so the tangent components transform by $A = \big[\partial y^i/\partial x^j\big]$ and the covector components by $(A^{-1})^{\mathsf T}$. Its entries are smooth functions of the base point, so the transition maps are smooth, as in [[§31 The Tangent Bundle#^prop-31-2|Proposition §31.2]]; the fibration and linearity statements follow as in [[§31 The Tangent Bundle#^cor-31-3|Corollary §31.3]].
+> *(Lecture 13: “completely analogous”, with the change “we use the dual basis”, and the formula for $dx^i$ given; the rest is filled in.)* The formula for $dx^i|_p$ is [[§27 Tangent Spaces III꞉ The Cotangent Space#^lem-27-2|Lemma §27.2]] applied to the function $x^i$ in the chart $\psi$. Substituting it into $\sum_i \xi_i\, dx^i|_p$ and comparing coefficients of $dy^j|_p$ gives $\eta_j$. The matrix $\big[\partial x^i/\partial y^j\big]$ is the inverse of $\big[\partial y^i/\partial x^j\big]$ (chain rule), so the tangent components transform by $A = \big[\partial y^i/\partial x^j\big]$ and the covector components by $(A^{-1})^{\mathsf T}$. Its entries are smooth functions of the base point, so the transition maps are smooth, as in [[§32 The Tangent Bundle#^prop-32-2|Proposition §32.2]]; the fibration and linearity statements follow as in [[§32 The Tangent Bundle#^cor-32-3|Corollary §32.3]].
 
-^pf-31-5
+^pf-32-5
 
-*Uses:* [[§31 The Tangent Bundle#^def-31-5|Def. §31.5]], [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|Def. §27.1]], [[§27 Tangent Spaces III꞉ The Cotangent Space#^lem-27-2|§27.2]], [[§25 The Differential in Coordinates#^cor-25-3|§25.3]], [[§31 The Tangent Bundle#^prop-31-2|§31.2]], [[§31 The Tangent Bundle#^cor-31-3|§31.3]], [[Multivariable Chain Rule|452 §10.2]], [[§12 Duality#^ladr-3-132|LADR 3.132]]
+*Uses:* [[§32 The Tangent Bundle#^def-32-5|Def. §32.5]], [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|Def. §27.1]], [[§27 Tangent Spaces III꞉ The Cotangent Space#^lem-27-2|§27.2]], [[§25 The Differential in Coordinates#^cor-25-3|§25.3]], [[§32 The Tangent Bundle#^prop-32-2|§32.2]], [[§32 The Tangent Bundle#^cor-32-3|§32.3]], [[Multivariable Chain Rule|452 §10.2]], [[§12 Duality#^ladr-3-132|LADR 3.132]]
 
 > [!remark]- Connections
 > - The matrix of a dual map in dual bases is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].
 > - The rule for $dx^i$ is the substitution step of the pullback in 452, [[§22 The Algebra of Differential Forms#^def-22-3|452 Def. §22.3]], applied to the transition map.
 
-“We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.” $TM$ and $T^*M$ are isomorphic as vector bundles, “but not naturally isomorphic — we have to make choices to construct an isomorphism” (a metric, for instance, as in the [[§29 Submanifolds#^rem-29-1|remark on conormal spaces]]). This is stated, not proved, here.
+“We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.” $TM$ and $T^*M$ are isomorphic as vector bundles, “but not naturally isomorphic — we have to make choices to construct an isomorphism” (a metric, for instance, as in the [[§30 Submanifolds#^rem-30-1|remark on conormal spaces]]). This is stated, not proved, here.
