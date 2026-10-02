@@ -262,6 +262,9 @@ Recall ([[§1 Four Ways to Represent a Function#^def-1-7|Def. §1.7]]) that $f$ 
 
 ^thm-38-4
 
+> [!remark]- Connections
+> - See also: [[§7 Arbitrary Period and Half-Range Expansions#^thm-7-3|341 Thm. §7.3]] (the same statement), used to show that even functions have cosine series and odd functions sine series, [[§7 Arbitrary Period and Half-Range Expansions#^thm-7-4|341 Thm. §7.4]].
+
 > [!remark] Remark: Why It Works
 > For $f$ positive and even, the area under $y = f(x)$ from $-a$ to $0$ is the mirror image of the area from $0$ to $a$, so the total is twice the area from $0$ to $a$. For $f$ odd, the graph over $[-a, 0]$ is the graph over $[0, a]$ rotated half a turn about the origin: the area above the axis on one side equals the area below the axis on the other, and in the net area $\int_{-a}^{a} f(x)\,dx$ they cancel.
 

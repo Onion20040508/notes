@@ -125,6 +125,7 @@ This section explains why two solutions are enough. The existence and uniqueness
 > [!remark]- Connections
 > - The computation says that $L$ is a linear map, $L[c_1y_1 + c_2y_2] = c_1L[y_1] + c_2L[y_2]$, so the solution set of $L[y] = 0$ is its null space and hence a subspace: [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|235 Thm. §24.5]]. Lay's instance is $y'' + \omega^2y = 0$, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^ex-24-5|235 Ex. §24.5]].
 > - The same principle for systems $\mathbf{x}' = A\mathbf{x}$: [[§38 Applications to Differential Equations#^prop-38-1|235 Prop. §38.1]].
+> - PDE version: [[§19 Example꞉ Fixed End Temperatures#^thm-19-4|341 Thm. §19.4]] (superposition for linear homogeneous partial differential equations and boundary conditions, which lets separation of variables build series solutions); in Powers' review of ODEs, [[§1★ Homogeneous Linear Equations#^thm-1-2|341 Thm. §1.2]].
 
 ## The Wronskian
 
@@ -503,6 +504,9 @@ $$
 > *BDP: Examples 3.2.5 and 3.2.7*
 
 ^ex-14-5
+
+> [!remark]- Connections
+> - See also: [[§1★ Homogeneous Linear Equations#^thm-1-5|341 Thm. §1.5]] (Cauchy–Euler equations $t^2u'' + ktu' + pu = 0$, which MATH 331 did not cover: the trial solution $t^m$ gives the characteristic equation $m(m - 1) + km + p = 0$; for the equation here, divided by $2$, its roots are $\frac12$ and $-1$), with examples in [[§1★ Homogeneous Linear Equations#^ex-1-3|341 Ex. §1.3]].
 
 > [!remark] Remark: Method — Finding the General Solution of y″ + p(t)y′ + q(t)y = 0
 > To find the general solution of $y'' + p(t)y' + q(t)y = 0$ on $\alpha < t < \beta$:

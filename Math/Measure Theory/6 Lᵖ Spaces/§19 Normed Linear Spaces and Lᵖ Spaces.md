@@ -542,6 +542,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 > [!remark]- Connections
 > - The special case of [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3|Def. §19.3]]–[[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-4|Def. §19.4]] for $\|\cdot\|_p$; for $p = 1$ it is [[§16 The L¹ Space and Density Theorems#^def-16-2|Def. §16.2]].
+> - Computational version: for $p=2$ on an interval this is convergence in the mean, [[§11★ Mean Error and Convergence in Mean#^def-11-2|341 Def. §11.2]], in which the Fourier series of every $f$ with $\int f^2<\infty$ converges, [[§11★ Mean Error and Convergence in Mean#^thm-11-6|341 Thm. §11.6]].
 
 > [!remark] Remark
 > The metric $d(f, g) = \|f - g\|_p$ makes $(L^p(E), d)$ a metric space ([[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-1|Proposition §19.1]]; this follows from the norm axioms verified [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|above]]). Completeness of $L^p$ in this metric is the content of the [[Riesz–Fischer Theorem|Riesz–Fischer theorem]] below.
@@ -717,6 +718,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > [!remark]- Connections
 > - The $L^1$ versions: [[§16 The L¹ Space and Density Theorems#^thm-16-5|§16.5]], [[§16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[Continuous Functions of Compact Support are Dense in L¹|§16.7]].
 > - 556 strengthens (iii) to smooth compactly supported approximants, [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-4|556 Thm. §14.4]]; the failure for $p = \infty$ is [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-5|556 Prop. §14.5]].
+> - Used in PDEs: with Weierstrass's approximation theorem, (iii) shows that polynomials are dense in $L^2[-1,1]$, so Legendre series converge in the mean; see the Connections of [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-9|341 Thm. §49.9]].
 
 > [!remark] Remark: The Approximation Chain for $L^p$
 > We have:

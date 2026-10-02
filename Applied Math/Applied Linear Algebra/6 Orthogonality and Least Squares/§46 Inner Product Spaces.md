@@ -154,6 +154,9 @@ From now on, polynomials and other functions in an inner product space are writt
 
 *Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|§40.5]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|§40.4]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]], [[§42 Orthogonal Projections#^thm-42-1|§42.1]], [[§42 Orthogonal Projections#^thm-42-3|§42.3]], [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]], [[§46 Inner Product Spaces#^prop-46-1|§46.1]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]]
 
+> [!remark]- Connections
+> - PDE version: [[§11★ Mean Error and Convergence in Mean#^thm-11-2|341 Thm. §11.2]] (part 3 for the integral inner product: the truncated Fourier series is the best mean-square approximation by trigonometric polynomials); Gram–Schmidt applied to $1, x, x^2, \ldots$ in $C[-1, 1]$ gives, up to scaling, the Legendre polynomials, [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|341 Def. §49.3]], orthogonal by [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-5|341 Prop. §49.5]].
+
 A common problem in applied mathematics is to approximate a function $f$ in a space $V$ of functions by a function $g$ from a specified subspace $W$. How close the approximation is depends on how $\|f - g\|$ is defined. When the distance comes from an inner product, Theorem §46.2(3) says that **the best approximation to $f$ by functions in $W$ is the orthogonal projection of $f$ onto $W$**.
 
 > [!example] Example §46.3: Orthogonal Polynomials and a Best Approximation

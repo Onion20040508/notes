@@ -115,6 +115,9 @@ For instance, for one mole of an ideal gas $P = 8.31\,T/V$ (kPa, K, L). If $T = 
 
 *Uses:* [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§92 Partial Derivatives#^thm-92-1|§92.1]]
 
+> [!remark]- Connections
+> - PDE version: this chain rule, applied twice, gives the Laplacian in polar coordinates, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]], and the wave equation in the characteristic coordinates $x \pm ct$, [[§31 d'Alembert's Solution#^thm-31-1|341 Thm. §31.1]].
+
 > [!remark] Remark: Tree Diagrams
 > Case 2 has three kinds of variables: $s$ and $t$ are **independent** variables, $x$ and $y$ are **intermediate** variables, and $z$ is the **dependent** variable. Theorem §94.2 has one term for each intermediate variable, and each term resembles the one-variable Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]). To remember it, draw a **tree diagram**: branches from the dependent variable $z$ to the intermediate variables $x$ and $y$, then from each of these to the independent variables $s$ and $t$, and write on each branch the corresponding partial derivative. To find $\partial z / \partial s$, multiply the partial derivatives along each path from $z$ to $s$ and add the products:
 >

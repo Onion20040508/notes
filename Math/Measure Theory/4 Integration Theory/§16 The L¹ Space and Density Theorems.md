@@ -197,6 +197,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - Step 1 is the Lebesgue relaxation of Jordan measurability ([[§15 Multivariable Integration#^def-15-5|452 Def. §15.5]]), which demands finite unions of squares approximating from inside *and* outside.
 > - The MATH 451 Riemann integral is itself built from step functions: [[§32 The Definition of the Riemann Integral#^ex-32-2|451 Ex. §32.2]], [[§15 The General Lebesgue Integral#^rem-15-6|Rem. §15.6]].
+> - Used in PDEs: the standard route to the Riemann–Lebesgue lemma (check step functions by direct integration, then approximate); its case of sectionally continuous functions on an interval is [[§12★ Proof of Convergence#^lem-12-3|341 Lemma §12.3]] (proved there from Bessel's inequality), and it is one of the two analytic facts behind the Fourier integral theorem, [[§14 Fourier Integral#^thm-14-1|341 Thm. §14.1]].
 
 ## Density of Compactly Supported Continuous Functions
 

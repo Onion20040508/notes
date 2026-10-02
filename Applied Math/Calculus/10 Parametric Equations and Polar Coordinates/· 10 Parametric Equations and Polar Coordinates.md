@@ -11,7 +11,7 @@ tags: [chapter, calculus]
 
 **Builds on:** [[· 3 Differentiation Rules|3 Differentiation Rules]] (4), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (5), [[· 5 Integrals|5 Integrals]] (9), [[· 7 Techniques of Integration|7 Techniques of Integration]] (1), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (7), [[· 11 Sequences, Series, and Power Series|11 Sequences, Series, and Power Series]] (1), [[· 17 Background from the Appendices|17 Background from the Appendices]] (14)
 **Used by:** [[· 13 Vector Functions|13 Vector Functions]] (3), [[· 15 Multiple Integrals|15 Multiple Integrals]] (2), [[· 17 Background from the Appendices|17 Background from the Appendices]] (4)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Topology]] (1), [[Multivariable Analysis]] (6), [[Differentiable Manifolds]] (2)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Topology]] (1), [[Multivariable Analysis]] (6), [[Differentiable Manifolds]] (2), [[Fourier Series and PDEs]] (2)
 
 ## Sections
 - [[§63 Curves Defined by Parametric Equations]] — Stewart 10.1

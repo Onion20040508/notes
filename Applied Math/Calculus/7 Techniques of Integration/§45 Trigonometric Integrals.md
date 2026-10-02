@@ -316,3 +316,6 @@ The home of these identities is [[§119 Trigonometry#^cor-119-9|Corollary §119.
 > For instance, if $m \ne n$, (b) turns $\sin mx \sin nx$ into $\frac12[\cos(m - n)x - \cos(m + n)x]$, and each cosine integrates to a multiple of $\sin(kx)$ with $k \ne 0$ an integer, which vanishes at $\pm\pi$. If $m = n$, it is $\frac12[1 - \cos 2mx]$, with integral $\pi$. (Stewart's Exercises 75–77.) So the coefficients of a finite Fourier series $f(x) = \sum_{n=1}^N a_n \sin nx$ are recovered as $a_m = \frac1\pi \int_{-\pi}^{\pi} f(x) \sin mx\,dx$ (Exercise 78). In the language of linear algebra, the functions $\sin nx$, $\cos nx$ are orthogonal for the inner product $\langle f, g \rangle = \int_{-\pi}^{\pi} f g\,dx$.
 
 ^rem-45-3
+
+> [!remark]- Connections
+> - See also: [[§6 Periodic Functions and Fourier Series#^prop-6-3|341 Prop. §6.3]] (the same orthogonality relations, including the constant function $1$), which give the coefficients of a Fourier series, [[§6 Periodic Functions and Fourier Series#^prop-6-4|341 Prop. §6.4]].

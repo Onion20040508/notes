@@ -24,3 +24,4 @@ tags: [ordinary-differential-equations, hub]
 
 ## Connections
 - See [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients]] for context and examples.
+- **Also in [[Fourier Series and PDEs]]:** [[§2★ Nonhomogeneous Linear Equations#^thm-2-4|341 Thm. §2.4]] (the same table of trial solutions in Powers' review of ODEs).

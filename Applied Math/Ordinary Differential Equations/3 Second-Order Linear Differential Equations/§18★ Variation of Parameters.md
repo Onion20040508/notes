@@ -173,6 +173,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 > [!remark]- Connections
 > - The derivative of $\int_{t_0}^t h(s)\,ds$ for continuous $h$: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC II).
 > - The same method for systems $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$, with a fundamental matrix in place of $y_1, y_2$: [[§35★ Nonhomogeneous Linear Systems#^thm-35-3|Theorem §35.3]] (BDP 7.9). BDP's footnote points there (Problems 7.9.17–19) for a more natural derivation of the extra condition (21): it is the first row of the system form.
+> - See also: [[§2★ Nonhomogeneous Linear Equations#^thm-2-6|341 Thm. §2.6]] (the same method in Powers' review); it solves the radial equations of Poisson's equation in a disk in [[§39 Potential in a Disk#^ex-39-3|341 Ex. §39.3]].
 
 > [!remark] Remark: Method — Variation of Parameters
 > To find a particular solution of $y'' + p(t)y' + q(t)y = g(t)$:
@@ -256,6 +257,9 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 ^pf-18-2
 
 *Uses:* [[§18★ Variation of Parameters#^thm-18-1|§18.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|§14.1]] (Theorem 3.2.1)
+
+> [!remark]- Connections
+> - See also: [[§2★ Nonhomogeneous Linear Equations#^thm-2-7|341 Thm. §2.7]] (the same integral, with its kernel called the Green's function) and its boundary value version, [[§5★ Green's Functions#^thm-5-1|341 Thm. §5.1]], where the Green's function is built to satisfy conditions at both ends of an interval.
 
 > [!example] Example §18.3: The Forced Equation y″ + y = g(t)
 > Show that the solution of $y'' + y = g(t)$, $y(t_0) = 0$, $y'(t_0) = 0$ is

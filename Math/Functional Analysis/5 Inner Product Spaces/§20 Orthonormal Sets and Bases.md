@@ -21,6 +21,7 @@ tags: [functional-analysis, math556]
 > [!remark]- Connections
 > - The finite-dimensional version (orthonormal lists): [[§20 Orthonormal Bases#^ladr-6-22|LADR 6.22]].
 > - Computational version: [[§41 Orthogonal Sets#^def-41-1|235 Def. §41.1]] (orthogonal sets in ℝⁿ), [[§41 Orthogonal Sets#^def-41-4|235 Def. §41.4]] (orthonormal sets and bases).
+> - Computational version: orthogonal families of functions computed by hand: the trigonometric system, [[§6 Periodic Functions and Fourier Series#^prop-6-3|341 Prop. §6.3]]; the eigenfunctions of a Sturm–Liouville problem, orthogonal with weight $p$, [[§23 Sturm–Liouville Problems#^thm-23-2|341 Thm. §23.2]]; the Bessel functions $J_0(\lambda_nr)$, orthogonal with weight $r$, [[§46★ Temperature in a Cylinder#^prop-46-2|341 Prop. §46.2]].
 
 > [!definition] Definition §20.2: Complete Orthogonal Set
 > An orthogonal set $\{e_\alpha\}_{\alpha \in \Lambda}$ in $X$ is **complete** if the only vector orthogonal to all of its members is $0$:
@@ -88,6 +89,7 @@ tags: [functional-analysis, math556]
 > [!remark]- Connections
 > - Finite-dimensional home: [[§20 Orthonormal Bases#^ladr-6-26|LADR 6.26]] (Bessel's inequality for an orthonormal list).
 > - Computational version: [[§46 Inner Product Spaces#^prop-46-3|235 Prop. §46.3]] (the projection onto a finite-dimensional subspace is shorter, the step to Cauchy–Schwarz there) with [[§42 Orthogonal Projections#^thm-42-4|235 Thm. §42.4]] (projection from an orthonormal basis).
+> - Computational version: [[§11★ Mean Error and Convergence in Mean#^thm-11-2|341 Thm. §11.2]] (the truncated Fourier series has the smallest mean square error, and the minimum is $\int f^2$ minus the weighted sum of the squared coefficients).
 
 ![[m556-20-1.svg]]
 *$x$ split into its component $\sum_j (x, e_j) e_j$ (red) in $\operatorname{span}\{e_1, \ldots, e_k\}$ and the remainder $y$ (blue) perpendicular to it. Pythagoras across the right angle is the identity $\|x\|^2 = \|y\|^2 + \sum_j |(x, e_j)|^2$; dropping the blue leg is Bessel.*
@@ -180,6 +182,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 > [!remark]- Connections
 > - Finite-dimensional home: [[§20 Orthonormal Bases#^ladr-6-26|LADR 6.26]].
 > - Equality holds exactly for complete sets: Parseval, [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]].
+> - Computational version: [[§11★ Mean Error and Convergence in Mean#^thm-11-3|341 Thm. §11.3]] (Bessel's inequality for Fourier series); its consequence that the coefficients tend to 0, [[§11★ Mean Error and Convergence in Mean#^cor-11-5|341 Cor. §11.5]], is the step that proves pointwise convergence, [[§12★ Proof of Convergence#^lem-12-3|341 Lemma §12.3]].
 
 ## Orthonormal Expansions
 
@@ -240,6 +243,9 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 
 *Uses:* [[§20 Orthonormal Sets and Bases#^prop-20-6|§20.6]], [[§18 Projection and Orthogonal Decomposition#^lem-18-1|§18.1]], [[§20 Orthonormal Sets and Bases#^lem-20-1|§20.1]], [[§8 Normed Linear Spaces#^prop-8-4|§8.4]], [[§20 Orthonormal Sets and Bases#^def-20-3|Def. §20.3]]
 
+> [!remark]- Connections
+> - Computational version: [[§24 Expansion in Series of Eigenfunctions#^prop-24-1|341 Prop. §24.1]] (the coefficients of an eigenfunction expansion, found by taking the weighted inner product with $\phi_m$ term by term).
+
 > [!remark] Remark
 > Part (a) is the step Wu flagged as “the only non-trivial part”: taking the inner product with $e_\beta$ term by term through an infinite sum. It is legitimate because the sum is a limit of finite sums and the inner product is continuous; her advice, “if you are not sure, start with a finite sum and take the limit,” is exactly this proof.
 
@@ -263,6 +269,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 > [!remark]- Connections
 > - Finite-dimensional home: [[§20 Orthonormal Bases#^ladr-6-27|LADR 6.27]], where an orthonormal basis is an orthonormal list that is also a basis; here the expansion is a series, not a finite linear combination.
 > - Computational version: [[§41 Orthogonal Sets#^def-41-4|235 Def. §41.4]] (orthonormal basis of a subspace of ℝⁿ, a finite basis).
+> - Computational version: eigenfunction expansions with generalized Fourier coefficients, [[§24 Expansion in Series of Eigenfunctions#^def-24-1|341 Def. §24.1]]; their convergence for a regular Sturm–Liouville problem, [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|341 Thm. §24.2]], is stated there without proof.
 
 > [!theorem] Theorem §20.8: Characterizations of an Orthonormal Basis
 > Let $H$ be a Hilbert space and $\{e_\alpha\}_{\alpha \in \Lambda}$ an orthonormal set. The following are equivalent:
@@ -292,6 +299,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 > - Restated in Dirac notation as the completeness relation: [[§25 The Completeness Relation#^thm-25-2|§25.2]], [[§25 The Completeness Relation#^cor-25-4|§25.4]].
 > - Used in Electromagnetism: the completeness of the Legendre polynomials in $L^2[-1, 1]$, which justifies expanding boundary potentials in Legendre series — [[§B3.4 Separation of Variables in Spherical Coordinates#^thm-b3-4-2|EM Theorem §B3.4.2]].
 > - Computational version: the finite expansion with the same coefficients, [[§41 Orthogonal Sets#^thm-41-2|235 Thm. §41.2]]; why the 235 lectures’ “basis” of harmonics is one only in this series sense, [[§25 Linearly Independent Sets; Bases#^rem-25-4|235 Remark §25.4]].
+> - Computational version: Parseval's equality for Fourier series, [[§11★ Mean Error and Convergence in Mean#^thm-11-4|341 Thm. §11.4]] (used to sum series such as $\sum1/n^4$), and for normalized eigenfunctions, [[§24 Expansion in Series of Eigenfunctions#^rem-24-1|341 Remark §24.1]].
 
 > [!remark] Remark
 > In finite dimensions these are the familiar facts: a complete orthonormal set is a basis, every vector is the sum of its components, and its squared length is the sum of the squared components. The theorem says that all three survive in any Hilbert space once the sums are interpreted correctly — countable support, then convergence — and that [[§20 Orthonormal Sets and Bases#^thm-20-5|Bessel's inequality]] becomes an equality exactly for complete sets.
@@ -386,11 +394,15 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 > - Used in Quantum Mechanics: the completeness of the infinite-well states, proved from this basis — [[§B1.3 Stationary States and Expansion in Energy Eigenstates#^thm-b1-3-3|QM Theorem §B1.3.3]].
 > - The density step it needs (continuous functions vanishing at the endpoints are dense in $L^2[0,2\pi]$) follows from [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 Thm. §19.19]](iii) by cutting the approximant off near the endpoints.
 > - Computational version, real form on C[0, 2π]: orthogonality of the trigonometric system [[§47 Applications of Inner Product Spaces#^prop-47-2|235 Prop. §47.2]], the coefficient formulas [[§47 Applications of Inner Product Spaces#^thm-47-3|235 Thm. §47.3]], and convergence in the mean [[§47 Applications of Inner Product Spaces#^thm-47-4|235 Thm. §47.4]], with worked Fourier approximations.
+> - Computational version: convergence in the mean of the Fourier series of any $f$ with $\int f^2<\infty$, [[§11★ Mean Error and Convergence in Mean#^thm-11-6|341 Thm. §11.6]], and pointwise convergence for sectionally smooth $f$, [[§12★ Proof of Convergence#^thm-12-4|341 Thm. §12.4]], with worked examples.
 
 > [!remark] Remark: Fourier Series
 > Read through Theorem [[§20 Orthonormal Sets and Bases#^thm-20-8|§20.8]], this is the theory of Fourier series in $L^2$: every $f \in L^2[0,2\pi]$ is $f = \sum_{n \in \mathbb{Z}} c_n e_n$ with $c_n = (f, e_n) = \frac{1}{\sqrt{2\pi}} \int_0^{2\pi} f(x)\, e^{-inx}\, dx$, the series converging in the $L^2$ norm (not necessarily pointwise), and Parseval's equality reads $\int_0^{2\pi} |f|^2 = \sum_n |c_n|^2$.
 
 ^rem-20-9
+
+> [!remark]- Connections
+> - Computational version: real Fourier series and their coefficients, [[§6 Periodic Functions and Fourier Series#^def-6-2|341 Def. §6.2]], and the complex coefficients $c_n$, [[§15★ Complex Methods#^def-15-1|341 Def. §15.1]], with worked examples.
 
 ## Existence of Orthonormal Bases and Separability
 
@@ -627,6 +639,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > - Finite-dimensional home: [[Gram–Schmidt procedure|LADR 6.32]].
 > - Used in Electromagnetism: Gram–Schmidt applied to $1, x, x^2, \dots$ in $L^2[-1, 1]$ gives the Legendre polynomials up to normalization — [[§B3.4 Separation of Variables in Spherical Coordinates#^rem-b3-4-1|EM Remark: Legendre polynomials are orthogonalized powers]], with their properties in [[§B3.4 Separation of Variables in Spherical Coordinates#^thm-b3-4-2|EM Theorem §B3.4.2]].
 > - Computational version: [[§43 The Gram–Schmidt Process#^thm-43-1|235 Thm. §43.1]] (with worked examples and the QR factorization), and in inner product spaces [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]].
+> - Computational version: applied to $1, x, x^2, \ldots$ in $L^2[-1,1]$, Gram–Schmidt gives multiples of the Legendre polynomials, [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|341 Def. §49.3]], whose orthogonality is [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-5|341 Prop. §49.5]].
 
 > [!proof]+ Proof of (⇐) in Theorem §20.17
 > Assume $D = \{y_1, y_2, \ldots\}$ is a countable dense subset of $H$. If $H = \{0\}$, the empty set is a countable orthonormal basis; assume $H \neq \{0\}$, so $D$ contains a nonzero element.

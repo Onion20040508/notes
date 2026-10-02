@@ -214,6 +214,7 @@ Continuous functions, such as a sound wave, an electric signal or the motion of 
 
 > [!remark]- Connections
 > - The same system normalized on $[-\pi, \pi]$ is Axler's orthonormal list [[§20 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d); in complex form $e^{int}/\sqrt{2\pi}$ it is the Fourier basis of $L^2[0, 2\pi]$, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]].
+> - See also: [[§6 Periodic Functions and Fourier Series#^prop-6-3|341 Prop. §6.3]] (the same relations on $(-\pi, \pi)$, the starting point of Fourier series).
 
 > [!definition] Definition §47.4: Fourier Approximation; Fourier Coefficients
 > Let $W$ be the subspace of $C[0, 2\pi]$ spanned by the functions (5). For $f \in C[0, 2\pi]$, the best approximation to $f$ by functions in $W$ (for the inner product (6)) is the **$n$th-order Fourier approximation** to $f$ on $[0, 2\pi]$. Since (5) is an orthogonal set, it is the orthogonal projection $\operatorname{proj}_W f$, and its coefficients $a_k$, $b_k$ in the form (4) are the **Fourier coefficients** of $f$.
@@ -253,6 +254,9 @@ Continuous functions, such as a sound wave, an electric signal or the motion of 
 ^pf-47-3
 
 *Uses:* [[§46 Inner Product Spaces#^thm-46-2|§46.2]], [[§47 Applications of Inner Product Spaces#^prop-47-2|§47.2]]
+
+> [!remark]- Connections
+> - See also: [[§6 Periodic Functions and Fourier Series#^prop-6-4|341 Prop. §6.4]] and [[§6 Periodic Functions and Fourier Series#^def-6-2|341 Def. §6.2]] (the same coefficients on $(-\pi, \pi)$; Powers' constant term $a_0$, the mean value of $f$, is Lay's $a_0/2$), followed by worked Fourier series.
 
 > [!example] Example §47.3: Fourier Approximations of f(t) = t
 > Find the $n$th-order Fourier approximation to $f(t) = t$ on $[0, 2\pi]$.
@@ -313,6 +317,7 @@ Continuous functions, such as a sound wave, an electric signal or the motion of 
 > [!remark]- Connections
 > - Fourier series in $L^2$, with Parseval's equality $\int_0^{2\pi}|f|^2 = \sum |c_n|^2$: [[§20 Orthonormal Sets and Bases#^rem-20-9|556 Remark: Fourier Series]]; the finite Bessel inequality $\|\operatorname{proj}_W f\| \le \|f\|$ (Proposition §46.3 here) is [[§20 Orthonormal Sets and Bases#^lem-20-2|556 Lem. §20.2]].
 > - Convergence in the mean does not give convergence at every point: in the figure after Example §47.3 the approximations of $t$ miss the endpoint values $0$ and $2\pi$.
+> - See also: [[§11★ Mean Error and Convergence in Mean#^thm-11-6|341 Thm. §11.6]] (convergence in the mean for every $f$ with $\int f^2$ finite, from the minimum error in [[§11★ Mean Error and Convergence in Mean#^thm-11-2|341 Thm. §11.2]]), with Parseval's equality, [[§11★ Mean Error and Convergence in Mean#^thm-11-4|341 Thm. §11.4]].
 
 > [!definition] Definition §47.6: Fourier Series
 > Because of Theorem §47.4 one writes

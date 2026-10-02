@@ -11,7 +11,7 @@ tags: [chapter, calculus]
 
 **Builds on:** [[· 2 Limits and Derivatives|2 Limits and Derivatives]] (1), [[· 3 Differentiation Rules|3 Differentiation Rules]] (16), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (10), [[· 5 Integrals|5 Integrals]] (3), [[· 7 Techniques of Integration|7 Techniques of Integration]] (3)
 **Used by:** [[· 3 Differentiation Rules|3 Differentiation Rules]] (1), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (1)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (12), [[Multivariable Analysis]] (1)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (12), [[Multivariable Analysis]] (1), [[Ordinary Differential Equations]] (39)
 
 ## Sections
 - [[§57 Modeling with Differential Equations]] — Stewart 9.1

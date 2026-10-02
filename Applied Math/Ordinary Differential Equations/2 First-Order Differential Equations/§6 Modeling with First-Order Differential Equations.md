@@ -322,6 +322,9 @@ Suppose a sum $S_0$ is deposited at an annual **rate of return** $r$, compounded
 
 ^ex-6-5
 
+> [!remark]- Connections
+> - See also: [[§3★ Boundary Value Problems#^def-3-2|341 Def. §3.2]] (Newton's law of cooling for the heat a rod loses through its surface) and [[§17 Derivation and Boundary Conditions#^prop-17-3|341 Prop. §17.3]] (at an end of a rod, Newton's law of cooling becomes a Robin boundary condition for the heat equation).
+
 ## Escape Velocity
 
 A body of constant mass $m$ is projected away from the earth, perpendicular to its surface, with initial velocity $v_0$. Ignore air resistance, but take into account that gravity weakens with distance. Let the $x$-axis point away from the center of the earth along the line of motion, with $x = 0$ on the surface, and let $R$ be the radius of the earth. The weight is inversely proportional to the square of the distance from the center, $w(x) = -K/(x + R)^2$, and $w(0) = -mg$ gives $K = mgR^2$:

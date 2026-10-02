@@ -156,6 +156,7 @@ Dividing both sides by $r^2\sin\theta \, dr \, d\theta \, d\psi$:
 > - The 2D radial analogue: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|Fundamental Solution of the 2D Laplacian]].
 > - Used in Quantum Mechanics: the angular part of the Laplacian is $-L^2/\hbar^2r^2$ — [[§B5.2 Orbital Angular Momentum and Spherical Harmonics#^thm-b5-2-6|QM Theorem §B5.2.6]]; the radial solutions of Remark: Verification: Radial Functions, with $1/r$ excluded at the origin, fix the behaviour of the radial function there — [[§B5.3 Central Potentials and the Radial Equation#^thm-b5-3-2|QM Theorem §B5.3.2]].
 > - Used in Electromagnetism: gradient, divergence, curl and Laplacian in spherical and cylindrical coordinates — [[§B1.1 Fields, Integral Theorems and Curvilinear Coordinates#^thm-b1-1-5|EM Theorem §B1.1.5]]; the radial solution $1/r$ of Remark: Verification: Radial Functions, harmonic away from the origin, has the distributional Laplacian $-4\pi\delta^3$ — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-2|EM Theorem §B1.2.2]].
+> - Computational version: [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-1|341 Prop. §49.1]] (stated there with colatitude $\phi$ and longitude $\theta$), used to separate variables in a ball and reach Legendre's equation, [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-2|341 Prop. §49.2]], [[§50★ Some Applications of Legendre Polynomials#^prop-50-1|341 Prop. §50.1]].
 
 > [!remark] Remark: Reading the Formula
 > Each term has the structure $\frac{1}{\text{volume factor}} \cdot \frac{\partial}{\partial q_i}\!\left(\frac{\text{area of face}_i}{\text{edge length}_i} \cdot v_{q_i}\right)$:
@@ -180,6 +181,9 @@ Dividing both sides by $r^2\sin\theta \, dr \, d\theta \, d\psi$:
 
 ^rem-19-2
 
+> [!remark]- Connections
+> - Computational version: [[§4★ Singular Boundary Value Problems#^lem-4-2|341 Lemma §4.2]] (the substitution $u=v/\rho$ turns the radial part into $v''/\rho$, used for radial heat flow in a sphere).
+
 > [!remark] Remark: General Orthogonal Coordinates
 > The same Divergence Theorem argument works for *any* orthogonal coordinate system $(q_1, q_2, q_3)$ with scale factors $(h_1, h_2, h_3)$. The result is:
 >
@@ -190,3 +194,6 @@ Dividing both sides by $r^2\sin\theta \, dr \, d\theta \, d\psi$:
 > Substituting $h_r = 1$, $h_\theta = r$, $h_\psi = r\sin\theta$ recovers the spherical formula. This general formula also gives the Laplacian in cylindrical coordinates ($h_r = 1$, $h_\theta = r$, $h_z = 1$), ellipsoidal coordinates, and any other orthogonal system.
 
 ^rem-19-3
+
+> [!remark]- Connections
+> - Computational version: the Laplacian in polar and cylindrical coordinates, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]] (derived there by the chain rule).

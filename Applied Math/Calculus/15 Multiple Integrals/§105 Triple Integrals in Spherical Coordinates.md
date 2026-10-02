@@ -41,6 +41,9 @@ Spherical coordinates describe a point by its distance $\rho$ from the origin an
 ![[m233-105-1.svg]]
 *The spherical coordinates of $P$: its distance $\rho$ from the origin, the angle $\phi$ from the positive $z$-axis, and the polar angle $\theta$ of its projection $P'$. The right triangle $OP'P$ shows $r = \rho\sin\phi$ (the distance from the $z$-axis) and $z = \rho\cos\phi$; then $x = r\cos\theta$, $y = r\sin\theta$ give Equations 1.*
 
+> [!remark]- Connections
+> - PDE version: [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-1|341 Prop. §49.1]] (the Laplacian in the same coordinates $\rho, \theta, \phi$), whose separation leads to Legendre's equation, [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-2|341 Prop. §49.2]].
+
 The system is especially useful where there is symmetry about a point, placed at the origin. The sphere with center the origin and radius $c$ is $\rho = c$ (hence the name). The graph of $\theta = c$ is a vertical half-plane, and $\phi = c$ is a half-cone with the $z$-axis as its axis: opening upward if $0 < c < \pi/2$, downward if $\pi/2 < c < \pi$ (and $\phi = \pi/2$ is the $xy$-plane).
 
 > [!remark] Remark: Warning on Notation
@@ -184,6 +187,7 @@ The next lemma makes this exact.
 
 > [!remark]- Connections
 > - Rigorous treatment: $\rho^2\sin\phi$ is the absolute value of the Jacobian of the spherical-coordinate map ([[§15 Multivariable Integration#^ex-15-6|452 Ex. §15.6]]; computed in [[§106 Change of Variables in Multiple Integrals#^ex-106-5|Example §106.5]]), and Formula 3 is the change of variables theorem [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]]. Hub: [[Polar and spherical coordinates]].
+> - PDE version: the factor $\sin\phi$ of the volume element is the weight in the orthogonality of the $P_n(\cos\phi)$, which appears in the coefficients of the potential in a sphere, [[§50★ Some Applications of Legendre Polynomials#^prop-50-1|341 Prop. §50.1]].
 
 > [!remark] Remark: Method — Using Spherical Coordinates
 > Formula 3 says: write $x = \rho\sin\phi\cos\theta$, $y = \rho\sin\phi\sin\theta$, $z = \rho\cos\phi$, use the appropriate limits, and replace $dV$ by $\rho^2\sin\phi\,d\rho\,d\theta\,d\phi$ (the volume of the small wedge with sides $d\rho$, $\rho\,d\phi$, $\rho\sin\phi\,d\theta$).

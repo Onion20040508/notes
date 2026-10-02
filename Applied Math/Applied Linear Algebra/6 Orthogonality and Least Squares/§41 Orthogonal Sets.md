@@ -85,6 +85,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 > [!remark]- Connections
 > - Rigorous treatment: [[§20 Orthonormal Bases#^ladr-6-25|LADR 6.25]] (orthonormal lists are linearly independent) and [[§20 Orthonormal Bases#^ladr-6-30|LADR 6.30]] ($v = \langle v, e_1\rangle e_1 + \cdots + \langle v, e_n\rangle e_n$); Axler works with orthonormal lists, so the denominators $\mathbf{u}_j \cdot \mathbf{u}_j$ are $1$.
 > - In a Hilbert space the same coefficients give infinite expansions: [[§20 Orthonormal Sets and Bases#^prop-20-6|556 Prop. §20.6]], [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]].
+> - PDE version: [[§24 Expansion in Series of Eigenfunctions#^prop-24-1|341 Prop. §24.1]] (the same formula for the coefficients of an expansion in orthogonal eigenfunctions, with $\int f\phi_mp\,dx$ in place of the dot product); the Fourier case is [[§6 Periodic Functions and Fourier Series#^prop-6-4|341 Prop. §6.4]].
 
 > [!example] Example §41.1: An Orthogonal Basis of ℝ³
 > Let

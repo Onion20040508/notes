@@ -25,6 +25,9 @@ Polar coordinates locate a point by its distance $r$ from a fixed point and the 
 
 ^def-65-1
 
+> [!remark]- Connections
+> - PDE version: Laplace's equation in polar coordinates, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]], solved in a disk in [[§39 Potential in a Disk#^thm-39-2|341 Thm. §39.2]].
+
 > [!theorem] Proposition §65.1: Many Representations of a Point
 > The point with polar coordinates $(r, \theta)$ is also represented by
 >

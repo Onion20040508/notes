@@ -114,6 +114,9 @@ When $f$ cannot be integrated in elementary terms, convergence is tested by comp
 
 ^def-21-4
 
+> [!remark]- Connections
+> - PDE version: [[§53★ Partial Differential Equations#^def-53-1|341 Def. §53.1]] (the transform in $t$ of a function $u(x, t)$, which turns heat and wave problems into boundary value problems in $x$, [[§53★ Partial Differential Equations#^rem-53-1|341 Remark: Method — Laplace Transform in t for a Heat or Wave Problem]]); Powers' definition is [[§51★ Definition and Elementary Properties#^def-51-1|341 Def. §51.1]].
+
 > [!remark] Remark: The Idea of the Transform Method
 > Solutions of constant-coefficient linear equations are built from exponentials, which is why the exponential kernel $e^{-st}$ suits them. The plan, carried out in [[§22 Solution of Initial Value Problems|§22]]:
 > 1. Use (4) to transform an initial value problem for an unknown function $f$ in the $t$-domain into a simpler, indeed algebraic, problem for $F$ in the $s$-domain.

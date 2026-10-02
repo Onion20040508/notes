@@ -379,6 +379,7 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 > [!remark]- Connections
 > - MATH 451 exchanges limit and integral only under uniform convergence: [[§25 More on Uniform Convergence#^thm-25-1|451 §25.1]], [[§33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]]. On $[a,b]$, a uniformly convergent sequence of bounded functions is dominated by a constant, so the DCT contains these.
 > - The $L^p$ theory ([[§19 Normed Linear Spaces and Lᵖ Spaces|§19]]) leans on the DCT throughout. [[Fubini's Theorem (Lebesgue)|Fubini's Theorem]] (§17.6) does not: it applies [[Tonelli's Theorem]] to $f^+$ and $f^-$ and subtracts.
+> - Used in PDEs: differentiation under the integral sign, which shows that the Fourier-integral solution of the semi-infinite rod satisfies the heat equation, [[§26 Semi-Infinite Rod#^thm-26-2|341 Thm. §26.2]], and passes $\partial/\partial x$ through the Laplace transform, [[§53★ Partial Differential Equations#^thm-53-1|341 Thm. §53.1]].
 
 > [!remark] Remark: Comparison of Convergence Theorems
 > The three main convergence theorems each trade hypotheses for generality:

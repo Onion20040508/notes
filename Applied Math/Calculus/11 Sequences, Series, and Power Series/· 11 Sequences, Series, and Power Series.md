@@ -11,7 +11,7 @@ tags: [chapter, calculus]
 
 **Builds on:** [[· 1 Functions and Models|1 Functions and Models]] (1), [[· 2 Limits and Derivatives|2 Limits and Derivatives]] (9), [[· 3 Differentiation Rules|3 Differentiation Rules]] (7), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (3), [[· 5 Integrals|5 Integrals]] (5), [[· 7 Techniques of Integration|7 Techniques of Integration]] (4), [[· 17 Background from the Appendices|17 Background from the Appendices]] (1)
 **Used by:** [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (1), [[· 5 Integrals|5 Integrals]] (2), [[· 10 Parametric Equations and Polar Coordinates|10 Parametric Equations and Polar Coordinates]] (1)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (43), [[Applied Linear Algebra]] (5)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (43), [[Applied Linear Algebra]] (5), [[Fourier Series and PDEs]] (3), [[Ordinary Differential Equations]] (4)
 
 ## Sections
 - [[§69 Sequences]] — Stewart 11.1

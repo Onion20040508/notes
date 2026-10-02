@@ -11,7 +11,7 @@ tags: [chapter, ordinary-differential-equations]
 
 **Builds on:** [[· 1 Introduction to Differential Equations|1 Introduction to Differential Equations]] (7), [[· 3 Second-Order Linear Differential Equations|3 Second-Order Linear Differential Equations]] (1)
 **Used by:** [[· 1 Introduction to Differential Equations|1 Introduction to Differential Equations]] (1), [[· 3 Second-Order Linear Differential Equations|3 Second-Order Linear Differential Equations]] (2), [[· 7 Systems of First-Order Linear Equations|7 Systems of First-Order Linear Equations]] (3)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (11), [[Multivariable Analysis]] (7), [[Applied Linear Algebra]] (4), [[Calculus]] (25), [[Functional Analysis]] (1)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (11), [[Multivariable Analysis]] (7), [[Applied Linear Algebra]] (4), [[Calculus]] (25), [[Functional Analysis]] (1), [[Fourier Series and PDEs]] (4)
 
 ## Sections
 - [[§4 Linear Differential Equations; Method of Integrating Factors]] — BDP 2.1

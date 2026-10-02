@@ -60,6 +60,7 @@ The Laplace transform turns differentiation into multiplication by $s$: $\mathca
 > [!remark]- Connections
 > - Integration by parts with $f$ only piecewise smooth: [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] requires $u, v$ continuous on $[t_i, t_{i+1}]$, differentiable inside, with integrable derivatives, which is exactly the situation on each piece.
 > - Continuity of $f$ is essential: if $f$ jumps at $t_i$, the boundary terms no longer cancel and each jump contributes $-e^{-st_i}\big(f(t_i^+) - f(t_i^-)\big)$; step functions are handled by the shift theorem [[§23 Step Functions#^thm-23-2|Theorem §23.2]] instead.
+> - PDE version: [[§53★ Partial Differential Equations#^thm-53-1|341 Thm. §53.1]] (for $u(x, t)$ the $t$-derivatives follow this rule and the $x$-derivatives pass through the transform); the same rule in Powers: [[§51★ Definition and Elementary Properties#^thm-51-4|341 Thm. §51.4]].
 
 Applying (1) to $f'$ (if $f'$ and $f''$ satisfy the conditions imposed on $f$ and $f'$) gives
 $$
@@ -293,6 +294,9 @@ So there is essentially a one-to-one correspondence between functions and their 
 
 *Uses:* [[§22 Solution of Initial Value Problems#^thm-22-1|§22.1]], [[§21 Definition of the Laplace Transform#^thm-21-3|§21.3]], [[§21 Definition of the Laplace Transform#^ex-21-2|Ex. §21.2]], [[§21 Definition of the Laplace Transform#^ex-21-4|Ex. §21.4]], [[§21 Definition of the Laplace Transform#^thm-21-1|§21.1]] (comparison), [[§21 Definition of the Laplace Transform#^thm-21-2|§21.2]], [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]] (Taylor's formula, entry 19)
 
+> [!remark]- Connections
+> - See also: [[§51★ Definition and Elementary Properties#^thm-51-8|341 Thm. §51.8]] (Powers' table, keyed to the entry numbers here); entry 19 is [[§51★ Definition and Elementary Properties#^thm-51-6|341 Thm. §51.6]], together with its counterpart for division by $t$.
+
 > [!remark] Remark: The Course Table
 > The table handed out with the course review and attached to the final exams lists entries 1, 3 (with $t$ and $t^2$ separately), 2, 11, 5, 6 (with frequency $\omega$ in place of $a$), 7, 8, 9, 10 (as $e^{at}\cos(\omega t)$, $e^{at}\sin(\omega t)$), 12 (as $u_a(t)$), 17, the derivative rules $\mathcal{L}\{y'\} = s\mathcal{L}\{y\} - y(0)$ and $\mathcal{L}\{y''\} = s^2\mathcal{L}\{y\} - sy(0) - y'(0)$ (entry 18 for $n = 1, 2$), the "$t$-shift" $u_a(t)f(t - a) \leftrightarrow e^{-as}F(s)$ (entry 13) and the "$s$-shift" $e^{at}f(t) \leftrightarrow F(s - a)$ (entry 14). It omits entries 4, 15, 16 and 19.
 >
@@ -318,6 +322,9 @@ So there is essentially a one-to-one correspondence between functions and their 
 > 4. **Read off** the other terms: $\frac{1}{s - r} \to e^{rt}$, $\frac{n!}{(s - r)^{n+1}} \to t^ne^{rt}$; and for quadratics with $a = 0$, entries 5–8. Choosing the form $\frac{as + b}{s^2 \pm c^2}$ rather than splitting into linear factors matches the table's entries for $\sinh$, $\cosh$, $\sin$, $\cos$ directly.
 
 ^rem-22-4
+
+> [!remark]- Connections
+> - See also: [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]] (Heaviside's formula: when the denominator has only simple roots, real or complex, the inverse transform is $\sum_k \frac{q(r_k)}{p'(r_k)}e^{r_kt}$, with no constants to solve for).
 
 > [!example] Example §22.2: A Forced Undamped Oscillator
 > Solve $y'' + y = \sin(2t)$, $y(0) = 2$, $y'(0) = 1$. (19), (20)

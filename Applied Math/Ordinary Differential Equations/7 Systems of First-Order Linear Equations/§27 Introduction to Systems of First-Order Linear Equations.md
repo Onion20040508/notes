@@ -110,6 +110,9 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 ^pf-27-1
 
+> [!remark]- Connections
+> - See also: [[§1★ Homogeneous Linear Equations#^thm-1-7|341 Thm. §1.7]] and [[§1★ Homogeneous Linear Equations#^thm-1-8|341 Thm. §1.8]] (the $n$th-order linear equation treated directly: the general solution from $n$ independent solutions, and the constant-coefficient case from the roots of the characteristic equation; BDP Ch. 4, not part of this subject).
+
 > [!remark] Remark: Method — Reducing an Equation of Order n to a System
 > 1. Solve the equation for the highest derivative: $y^{(n)} = F(t, y, \ldots, y^{(n-1)})$.
 > 2. Name the unknown and its first $n - 1$ derivatives: $x_1 = y$, $x_2 = y'$, …, $x_n = y^{(n-1)}$.

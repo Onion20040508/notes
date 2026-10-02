@@ -64,6 +64,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]] (the spectral theorem for symmetric matrices) and [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|235 Thm. §48.2]] (orthogonally diagonalizable iff symmetric), with worked orthogonal diagonalizations.
 > - Matrix version: a Hermitian (in particular real symmetric) matrix has $n$ mutually orthogonal eigenvectors, [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]] (2), (4), used to solve $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with symmetric $\mathbf{A}$.
+> - Infinite-dimensional analogue: a regular Sturm–Liouville problem has infinitely many real eigenvalues, [[§23 Sturm–Liouville Problems#^thm-23-5|341 Thm. §23.5]], and every sectionally smooth function expands in its orthogonal eigenfunctions, [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|341 Thm. §24.2]] (stated there without proof).
 
 %% ex:7.29-fig %%
 > [!example] Example: Self-adjoint versus merely diagonalizable

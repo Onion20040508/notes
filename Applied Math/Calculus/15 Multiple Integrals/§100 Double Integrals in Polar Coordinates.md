@@ -84,6 +84,7 @@ $$
 > [!remark]- Connections
 > - Rigorous treatment: [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]], proved there by the same computation with polar rectangles; the factor $r$ is the Jacobian of the polar map ([[§15 Multivariable Integration#^ex-15-4|452 Ex. §15.4]]), the general formula being [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]] (polar coordinates as a special case: [[§106 Change of Variables in Multiple Integrals#^ex-106-2|Example §106.2]]). Hub: [[Polar and spherical coordinates]].
 > - The standard application to an improper integral, $\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt\pi$ (Stewart's Exercise 15.3.50): [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]].
+> - See also: [[§28★ The Error Function#^prop-28-1|341 Prop. §28.1]](d), the same computation of $\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt\pi$, with the passage to the improper integral justified by squeezing between quarter disks; it normalizes the error function.
 
 > [!remark] Remark: Don't Forget the Factor r
 > Formula 2 says: convert by writing $x = r\cos\theta$ and $y = r\sin\theta$, use the appropriate limits for $r$ and $\theta$, and replace $dA$ by $r\,dr\,d\theta$. Forgetting the $r$ is the classic mistake. A way to remember it: the "infinitesimal" polar rectangle is an ordinary rectangle with sides $dr$ and $r\,d\theta$, so it has "area" $dA = r\,dr\,d\theta$.

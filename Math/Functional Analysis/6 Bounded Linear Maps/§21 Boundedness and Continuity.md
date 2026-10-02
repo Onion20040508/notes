@@ -210,6 +210,9 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 
 *Uses:* [[§14 The Function Spaces Lᵖ(Ω)#^def-14-1|Def. §14.1]], [[§21 Boundedness and Continuity#^def-21-2|Def. §21.2]], [[§15 The General Lebesgue Integral#^prop-15-1|551 §15.1]], [[§15 The General Lebesgue Integral#^thm-15-2|551 §15.2]], [[Dominated Convergence Theorem]]
 
+> [!remark]- Connections
+> - Computational version: the Fourier transform in Powers' normalization, [[§15★ Complex Methods#^def-15-2|341 Def. §15.2]], computed for Gaussians and used to solve the heat equation on the line, [[§15★ Complex Methods#^ex-15-4|341 Ex. §15.4]].
+
 > [!theorem] Proposition §21.4: Linear Maps on Finite-Dimensional Spaces are Bounded
 > Let $X$ and $Y$ be normed linear spaces with $\dim X < \infty$. Every linear map $T : X \to Y$ is bounded.
 

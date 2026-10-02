@@ -22,3 +22,4 @@ tags: [applied-linear-algebra, hub]
 
 ## Connections
 - See [[§42 Orthogonal Projections]] for context and examples.
+- **Also in [[Fourier Series and PDEs]]:** [[§11★ Mean Error and Convergence in Mean#^thm-11-2|341 Thm. §11.2]] (the same theorem for the integral inner product: the truncated Fourier series is the best mean-square approximation by trigonometric polynomials, with worked examples).

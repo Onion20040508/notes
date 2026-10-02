@@ -1246,6 +1246,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 
 > [!remark]- Connections
 > - Rigorous version, where measurability of the slices and of the inner integral is proved rather than assumed: [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]] (Tonelli).
+> - Used in PDEs: Tonelli's check of absolute integrability, followed by Fubini, justifies reversing the order of integration in the transform of $f(t)/t$, [[§51★ Definition and Elementary Properties#^thm-51-6|341 Thm. §51.6]], and in the heat-kernel form of the infinite-rod solution, [[§27 Infinite Rod#^thm-27-3|341 Thm. §27.3]].
 
 ## General Change of Variables
 
@@ -2305,6 +2306,7 @@ We now demonstrate the change of variables formula with two complete computation
 > - Pays off the debt taken “on credit” in MATH 451: [[§36 Improper Integrals#^ex-36-4|The normal distribution]] (451 Ex. §36.4).
 > - Worked examples: [[§56 Probability#^prop-56-3|Calc Prop. §56.3]] uses this integral to show the normal density integrates to 1.
 > - Used in Quantum Mechanics: the Gaussian integral and its continuation to complex width (the Fresnel integrals) behind the free propagator — [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]].
+> - Computational version: [[§28★ The Error Function#^prop-28-1|341 Prop. §28.1]] (the same polar-coordinates computation, squeezing the square between quarter disks, gives $\operatorname{erf}(\infty)=1$).
 
 > [!example] Example §15.8: Area of an Ellipse
 > **Goal:** Compute the area of the ellipse $D = \left\{ (x,y) : \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} \leq 1 \right\}$.

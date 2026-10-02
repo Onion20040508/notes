@@ -87,6 +87,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Finite-set analogue, with cardinality in place of dimension: [[§11 Properties of Finite Sets#^thm-11-7|250 Thm. §11.7]].
 > - Matrix version: the Invertible Matrix Theorem, [[§13 Characterizations of Invertible Matrices#^thm-13-1|235 Thm. §13.1]] ((a), (f) and (i) are equivalent for square A).
+> - Analogue for boundary value problems: [[§5★ Green's Functions#^thm-5-3|341 Thm. §5.3]] (a two-point boundary value problem has exactly one solution for every right side unless the homogeneous problem has a nonzero solution, and then it has none or infinitely many).
 
 %% ex:3.65-fig %%
 > [!example] Example: The shifts on $\F^\infty$, pictured

@@ -217,6 +217,7 @@ For $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{A}$ real and $n \times n$
 
 > [!remark]- Connections
 > - See also: [[§38 Applications to Differential Equations#^thm-38-3|235 Thm. §38.3]], the same general solution for diagonalizable $A$ obtained by decoupling: $\mathbf{x} = P\mathbf{y}$ with the eigenvectors as columns of $P$ turns the system into $y_k' = r_ky_k$. Having $n$ independent eigenvectors is exactly diagonalizability, [[§34 Diagonalization#^thm-34-1|235 Thm. §34.1]].
+> - PDE version: [[§25 Generalities on the Heat Conduction Problem#^thm-25-3|341 Thm. §25.3]] (the heat problem solved as $v(x) + \sum a_n\phi_n(x)e^{-\lambda_n^2kt}$, an expansion in eigenfunctions with exponential time factors, as here in eigenvectors).
 
 > [!remark] Remark: Method — Eigenvector Solutions of x′ = Ax
 > 1. **Eigenvalues.** Solve the characteristic equation $\det(\mathbf{A} - r\mathbf{I}) = 0$. For $2 \times 2$ matrices, $\det(\mathbf{A} - r\mathbf{I}) = r^2 - (\operatorname{tr}\mathbf{A})\,r + \det\mathbf{A}$.

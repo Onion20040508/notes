@@ -43,6 +43,8 @@ graph TD
   X3["Linear Algebra (LADR)"]
   X4["Measure Theory (551)"]
   X6["Applied Linear Algebra (235)"]
+  X9["Fourier Series and PDEs (341)"]
+  X8["Ordinary Differential Equations (331)"]
   C1 --> C2
   C2 --> C3
   C3 --> C4
@@ -90,18 +92,24 @@ graph TD
   C1 -.->|12| X1
   C2 -.->|46| X1
   C3 -.->|5| X2
+  C3 -.->|7| X8
   C3 -.->|11| X1
   C4 -.->|15| X1
   C5 -.->|3| X4
   C5 -.->|14| X1
   C6 -.->|3| X2
   C6 -.->|3| X1
+  C7 -.->|4| X9
+  C7 -.->|6| X8
   C7 -.->|6| X1
   C8 -.->|6| X2
   C8 -.->|10| X1
+  C9 -.->|39| X8
   C9 -.->|12| X1
   C10 -.->|6| X2
   C11 -.->|5| X6
+  C11 -.->|3| X9
+  C11 -.->|4| X8
   C11 -.->|43| X1
   C12 -.->|20| X6
   C12 -.->|15| X3
@@ -109,12 +117,15 @@ graph TD
   C13 -.->|6| X2
   C13 -.->|3| X1
   C14 -.->|4| X6
+  C14 -.->|5| X9
   C14 -.->|41| X2
   C14 -.->|3| X1
   C15 -.->|3| X6
+  C15 -.->|8| X9
   C15 -.->|8| X4
   C15 -.->|26| X2
   C16 -.->|56| X2
+  C16 -.->|4| X8
   C17 -.->|4| X6
   C17 -.->|4| X3
   C17 -.->|7| X0
@@ -171,4 +182,4 @@ graph TD
 Prerequisite: MATH 132 (Calculus II); Chapters 1–11 are included as the single-variable foundation.
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each Math subject: [[Single Variable Analysis]] (192), [[Multivariable Analysis]] (161), [[Ordinary Differential Equations]] (62), [[Applied Linear Algebra]] (43), [[Linear Algebra]] (27), [[Logic and Proofs]] (19), [[Measure Theory]] (13), [[Topology]] (6), [[Differentiable Manifolds]] (2).
+Number of *Connections* links from these notes to each Math subject: [[Single Variable Analysis]] (192), [[Multivariable Analysis]] (161), [[Ordinary Differential Equations]] (62), [[Applied Linear Algebra]] (43), [[Fourier Series and PDEs]] (28), [[Linear Algebra]] (27), [[Logic and Proofs]] (19), [[Measure Theory]] (13), [[Topology]] (6), [[Differentiable Manifolds]] (2).

@@ -129,6 +129,9 @@ The transient lets the solution satisfy any initial conditions. As time goes on,
 
 *Uses:* [[§19 Mechanical and Electrical Vibrations#^thm-19-3|§19.3]], [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]], [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|§17.4]] (undetermined coefficients)
 
+> [!remark]- Connections
+> - See also: [[§16★ Applications of Fourier Series and Integrals#^thm-16-1|341 Thm. §16.1]] (the periodic response to any periodic forcing, found term by term from the Fourier series of the force), with a damped oscillator driven by a square wave in [[§16★ Applications of Fourier Series and Integrals#^ex-16-1|341 Ex. §16.1]].
+
 > [!theorem] Proposition §20.2: Amplitude of the Forced Response
 > In the notation of Theorem §20.1, with $\Gamma = \dfrac{\gamma^2}{mk}$,
 >
@@ -322,6 +325,9 @@ The form of its general solution depends on whether $\omega$ equals the natural 
 ^pf-20-4
 
 *Uses:* [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|§17.4]] (undetermined coefficients, the factor $t$), [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]]
+
+> [!remark]- Connections
+> - PDE version: [[§54★ More Difficult Examples#^ex-54-3|341 Ex. §54.3]] (a wire driven at one of its natural frequencies, solved by Laplace transform: the resonant mode grows like $t\cos(\pi t)$).
 
 > [!example] Example §20.4: Resonance
 > **(a)** Solve $u'' + u = \frac12\cos t$, $u(0) = 0$, $u'(0) = 0$.

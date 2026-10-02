@@ -218,6 +218,7 @@ tags: [linear-algebra]
 > - Pseudoinverse version for equations $Tx=b$: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-70|6.70]].
 > - Generalization: in a Hilbert space every nonempty closed convex set has a unique closest point, [[§18 Projection and Orthogonal Decomposition#^thm-18-2|556 Thm. §18.2]].
 > - Computational version: [[§42 Orthogonal Projections#^thm-42-3|235 Thm. §42.3]] (the Best Approximation Theorem in $\mathbb R^n$); with $U=\operatorname{Col}A$ it gives least squares, [[§44 Least-Squares Problems#^thm-44-1|235 Thm. §44.1]].
+> - Computational version: [[§11★ Mean Error and Convergence in Mean#^thm-11-2|341 Thm. §11.2]] (the truncated Fourier series, the projection onto the trigonometric polynomials of degree at most $N$, has the smallest mean square error, with the minimum computed).
 
 %% ex:6.61-fig %%
 > [!example] Example: The closest point, pictured

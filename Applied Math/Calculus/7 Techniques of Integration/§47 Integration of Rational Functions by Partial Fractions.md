@@ -99,6 +99,7 @@ $$
 
 > [!remark]- Connections
 > - See also: [[§22 Solution of Initial Value Problems#^rem-22-4|331 Remark: Method — Inverting a Rational Transform]] (the same decomposition in the variable $s$, used to invert Laplace transforms), worked in [[§22 Solution of Initial Value Problems#^ex-22-2|331 Ex. §22.2]].
+> - See also: [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]] (Heaviside's formula: for distinct linear factors, real or complex, the coefficient of $1/(s - r_k)$ is $q(r_k)/p'(r_k)$, and the decomposition is proved to exist in that case).
 
 > [!remark] Remark: Method — Partial Fractions
 > To find $\int P(x)/Q(x)\,dx$:

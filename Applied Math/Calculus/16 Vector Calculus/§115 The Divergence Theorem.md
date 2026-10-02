@@ -90,6 +90,7 @@ Stewart states and proves the theorem for regions $E$ over which triple integral
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§18 Surface Integrals#^thm-18-2|452 Thm. §18.2]], with the same proof (one component at a time, FTC along vertical segments, the bottom surface with reversed normal); hub [[Divergence Theorem in ℝ³]]. The version in $\mathbb{R}^n$ is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]], and the plane version is [[§16 Line Integrals and Green's Theorem#^thm-16-2|452 Thm. §16.2]] ([[§111 Curl and Divergence#^thm-111-5|Theorem §111.5]] here).
+> - PDE version: applied to the heat flux out of every subregion, it turns the integral heat balance into the local balance $-\nabla\cdot\mathbf{q} + g = \rho c\,u_t$, [[§42 Three-Dimensional Heat Equation#^thm-42-2|341 Thm. §42.2]], and so gives the three-dimensional heat equation, [[§42 Three-Dimensional Heat Equation#^thm-42-3|341 Thm. §42.3]].
 
 > [!remark] Remark: Two Fluxes in One Line
 > - **The unit sphere.** For $\mathbf{F}(x, y, z) = z\,\mathbf{i} + y\,\mathbf{j} + x\,\mathbf{k}$, $\operatorname{div}\mathbf{F} = \frac{\partial z}{\partial x} + \frac{\partial y}{\partial y} + \frac{\partial x}{\partial z} = 1$. The unit sphere $S$ bounds the unit ball $B$, so the flux of $\mathbf{F}$ across $S$ is $\iiint_B 1\,dV = V(B) = \frac43\pi(1)^3 = \frac{4\pi}{3}$ (Stewart Example 16.9.1). Compare the direct computation over the sphere in [[§113 Surface Integrals#^ex-113-3|Example §113.3(b)]].

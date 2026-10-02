@@ -579,6 +579,7 @@ For a closed surface $\partial V$ bounding a volume $V$:
 > - The 2D version: [[§16 Line Integrals and Green's Theorem#^thm-16-2|Divergence Theorem in ℝ²]]; the $n$-dimensional version: [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]].
 > - The 1D case is the [[Fundamental Theorem of Calculus]]; all are instances of the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]] with $d$ on 2-forms giving the divergence ([[§22 The Algebra of Differential Forms#^prop-22-4|Prop. §22.4]]).
 > - Computational version: [[§115 The Divergence Theorem#^thm-115-1|Calc Thm. §115.1]] (with worked examples).
+> - Used in PDEs: the local heat balance and the three-dimensional heat equation, [[§42 Three-Dimensional Heat Equation#^thm-42-2|341 Thm. §42.2]] and [[§42 Three-Dimensional Heat Equation#^thm-42-3|341 Thm. §42.3]].
 
 > [!remark] Remark: Why the Bottom Surface Has Reversed Orientation
 > The parameter reversal for the bottom surface is not a trick — it is the higher-dimensional manifestation of the sign pattern in the [[Fundamental Theorem of Calculus]].

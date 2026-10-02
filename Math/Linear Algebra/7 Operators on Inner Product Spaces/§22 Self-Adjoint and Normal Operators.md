@@ -143,6 +143,7 @@ tags: [linear-algebra]
 > - Physics: Hermitian operators = observables. Structure: [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]].
 > - The self-adjoint matrices form the real vector space of Hermitian matrices, [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-19-2|591 Def. §19.2]], used to show that U(n) is a manifold.
 > - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^def-48-1|235 Def. §48.1]] (symmetric matrices: the real self-adjoint case in the standard basis).
+> - Infinite-dimensional analogue: the Sturm–Liouville operator is self-adjoint for the weighted inner product, [[§23 Sturm–Liouville Problems#^rem-23-3|341 Remark §23.3]].
 
 > [!example] Example 7.11: Determining whether T is self-adjoint from its matrix (p. 233)
 > $\mathcal{M}(T)=\begin{pmatrix}2&c\\3&7\end{pmatrix}$ (standard basis of $\F^2$, orthonormal) has $\mathcal{M}(T^*)=\begin{pmatrix}2&3\\\bar c&7\end{pmatrix}$, so $T$ is self-adjoint iff $c=3$.
@@ -161,6 +162,7 @@ tags: [linear-algebra]
 > - Physics: measured values of an observable are real.
 > - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]](a) (a symmetric matrix has $n$ real eigenvalues, counting multiplicities).
 > - Matrix version: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]] (1), for Hermitian matrices.
+> - Infinite-dimensional analogue: the eigenvalues of a regular Sturm–Liouville problem are real, [[§23 Sturm–Liouville Problems#^prop-23-3|341 Prop. §23.3]], by the same computation.
 
 > [!theorem] Theorem 7.13: Tv is orthogonal to v for all v ⟺ T = 0 (assuming F = C)
 > On a **complex** inner product space, $\langle Tv,v\rangle=0$ for every $v$ iff $T=0$.
@@ -267,6 +269,7 @@ tags: [linear-algebra]
 > - Physics: eigenstates of an observable with different eigenvalues are orthogonal. Compare [[Linearly independent eigenvectors|5.11]] (only independent, for general operators).
 > - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^thm-48-1|235 Thm. §48.1]] (for symmetric matrices).
 > - Matrix version: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]] (3), for Hermitian matrices.
+> - Infinite-dimensional analogue: eigenfunctions of a Sturm–Liouville problem for different eigenvalues are orthogonal, [[§23 Sturm–Liouville Problems#^thm-23-2|341 Thm. §23.2]], and so are those of the Laplacian on a plane region, [[§44★ Problems in Polar Coordinates#^thm-44-3|341 Thm. §44.3]]; concrete cases include the Legendre polynomials, [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-5|341 Prop. §49.5]].
 
 > [!theorem] Theorem 7.23: T is normal ⟺ the real and imaginary parts of T commute
 > Let $\F=\C$. Then $T\in\Lin(V)$ is normal iff $T=A+iB$ for commuting self-adjoint $A,B$.

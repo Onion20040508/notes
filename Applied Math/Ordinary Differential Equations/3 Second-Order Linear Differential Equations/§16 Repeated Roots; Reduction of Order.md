@@ -202,6 +202,9 @@ of $ay'' + by' + cy = 0$ (1). It is not obvious how to find a second solution.
 
 *Uses:* [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|§13.2]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^ex-14-2|Ex. §14.2]], [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|§15.2]], [[§16 Repeated Roots; Reduction of Order#^thm-16-1|§16.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|§14.4]]
 
+> [!remark]- Connections
+> - See also: [[§1★ Homogeneous Linear Equations#^thm-1-4|341 Thm. §1.4]] (the same three cases in Powers' review); in boundary value problems the three cases of $\phi'' - p\phi = 0$ ($p > 0$, $p = 0$, $p < 0$) decide which eigenvalues exist, [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|341 Thm. §19.2]].
+
 > [!remark] Remark: Method — Constant-Coefficient Homogeneous Equations
 > To solve $ay'' + by' + cy = 0$, possibly with $y(t_0) = y_0$, $y'(t_0) = y_0'$:
 > 1. Write down the characteristic equation $ar^2 + br + c = 0$ and find its roots (factor, complete the square, or use the quadratic formula). The sign of $b^2 - 4ac$ tells which case occurs.
@@ -274,6 +277,7 @@ is known.
 
 > [!remark]- Connections
 > - Equation (32) is first-order linear and separable in $w = v'$, so it is solved by Stewart's integrating factor, [[§61 Linear Equations#^thm-61-1|Calc Thm. §61.1]], or by separation of variables, [[§59 Separable Equations#^thm-59-1|Calc Thm. §59.1]]. This subject's treatments: [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2]] and [[§5 Separable Differential Equations#^thm-5-1|Theorem §5.1]].
+> - See also: [[§1★ Homogeneous Linear Equations#^thm-1-6|341 Thm. §1.6]] (the same reduction in Powers' review), applied to a Legendre equation in [[§1★ Homogeneous Linear Equations#^ex-1-4|341 Ex. §1.4]] and to the second solution of Bessel's equation in [[§45★ Bessel's Equation#^thm-45-3|341 Thm. §45.3]].
 
 > [!remark] Remark: Method — Reduction of Order
 > To find a second solution of $y'' + p(t)y' + q(t)y = 0$ from a known solution $y_1$:

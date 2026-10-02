@@ -22,3 +22,4 @@ tags: [ordinary-differential-equations, hub]
 
 ## Connections
 - See [[§16 Repeated Roots; Reduction of Order]] for context and examples.
+- **Also in [[Fourier Series and PDEs]]:** [[§1★ Homogeneous Linear Equations#^thm-1-4|341 Thm. §1.4]] (the same three cases in Powers' review of ODEs).

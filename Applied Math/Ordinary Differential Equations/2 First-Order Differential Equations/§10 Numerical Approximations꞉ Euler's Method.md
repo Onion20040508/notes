@@ -70,6 +70,7 @@ To continue, we do not know $\phi(t_1)$, so we use $y_1$ in its place and constr
 
 > [!remark]- Connections
 > - See also: [[§58 Direction Fields and Euler's Method#^def-58-4|Calc Def. §58.4]] (Stewart's statement of the same formula) and [[§58 Direction Fields and Euler's Method#^rem-58-5|Calc Remark: How Accurate Is Euler's Method?]], where the error is observed to shrink in proportion to $h$; the Connections there explain this with Taylor's theorem, [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]]: one step errs by about $\frac12 h^2 \phi''$, and $1/h$ steps accumulate an error of order $h$.
+> - PDE version: the explicit scheme for the heat equation, [[§56★ Heat Problems#^def-56-1|341 Def. §56.1]], is Euler's method applied to the system of ODEs obtained by discretizing $x$; its time step is limited by stability, [[§56★ Heat Problems#^cor-56-2|341 Cor. §56.2]].
 
 > [!remark] Remark: Method — Euler's Method
 > To approximate the solution of $y' = f(t, y)$, $y(t_0) = y_0$ on $[t_0, t_0 + Nh]$:

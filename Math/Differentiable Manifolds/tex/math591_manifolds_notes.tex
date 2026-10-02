@@ -227,18 +227,18 @@ These notes follow the course, and the course builds manifolds in two ways that 
 
 \begin{center}
 \begin{tikzpicture}[scale=0.92, transform shape]
-\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (F) at (4.6,0) {\textbf{Foundations} \ref*{sec:review}--\ref*{sec:manifolds}\\ topological manifolds};
+\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (F) at (4.6,0) {\textbf{Foundations} \ref*{sec:review}--\ref*{sec:new-spaces}\\ topological manifolds; subspaces and products};
 \node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (E1) at (0,-1.9) {\textbf{Equations} \ref*{sec:rvt}\\ regular value theorem};
-\node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (Q1) at (9.2,-1.9) {\textbf{Quotients} \ref*{sec:new-spaces}\\ quotient spaces, $\mathbb{CP}^n$};
-\node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (E2) at (0,-3.8) {\ref*{sec:topgroups}\\ classical groups as level sets};
-\node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (Q2) at (9.2,-3.8) {\ref*{sec:actions}--\ref*{sec:homogeneous}\\ orbit spaces, $G/H$, Grassmannians};
-\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (S) at (4.6,-5.8) {\textbf{Smooth structures} \ref*{sec:smooth-structures}\\ charts, atlases, smooth maps};
+\node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (Q1) at (9.2,-1.9) {\textbf{Quotients} \ref*{sec:quotient-spaces}--\ref*{sec:open-quotients}\\ quotient spaces, $\mathbb{CP}^n$};
+\node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (E2) at (0,-3.8) {\ref*{sec:topgroups}--\ref*{sec:classical-manifolds}\\ classical groups as level sets};
+\node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (Q2) at (9.2,-3.8) {\ref*{sec:actions}--\ref*{sec:GH-topology}\\ orbit spaces, $G/H$, Grassmannians};
+\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (S) at (4.6,-5.8) {\textbf{Smooth structures} \ref*{sec:smooth-structures}--\ref*{sec:smooth-maps}\\ charts, atlases, smooth maps};
 \node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (G1) at (0,-7.8) {\textbf{Geometric} \ref*{sec:euclidean}\\ manifolds in $\mathbb{R}^N$, graph charts};
-\node[draw=orange!70!black, fill=orange!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (L) at (4.6,-7.8) {\textbf{Linear} \ref*{sec:vector-spaces}\\ vector spaces, differentials, $\Ogp(n)$, $\Ugp(n)$};
-\node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (T1) at (0,-9.9) {\textbf{Geometric} \ref*{sec:tangent}\\ $T^{\geo}_pM = \ker F'(p)$};
-\node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (T2) at (9.2,-9.9) {\textbf{Abstract} \ref*{sec:abstract-tangent}\\ $T_pM$: derivations of germs};
+\node[draw=orange!70!black, fill=orange!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (L) at (4.6,-7.8) {\textbf{Linear} \ref*{sec:vector-spaces}--\ref*{sec:on-un-smooth}\\ vector spaces, differentials, $\Ogp(n)$, $\Ugp(n)$};
+\node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (T1) at (0,-9.9) {\textbf{Geometric} \ref*{sec:tangent}--\ref*{sec:transversality}\\ $T^{\geo}_pM = \ker F'(p)$};
+\node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (T2) at (9.2,-9.9) {\textbf{Abstract} \ref*{sec:abstract-tangent}--\ref*{sec:velocities}\\ $T_pM$: derivations of germs};
 \node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (C) at (4.6,-11.9) {\ref*{sec:cotangent}\\ cotangent space};
-\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (M) at (9.2,-11.9) {\ref*{sec:special-maps}\\ local diffeomorphisms, submersions};
+\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (M) at (9.2,-13.6) {\ref*{sec:special-maps}\\ local diffeomorphisms, submersions};
 \draw[->, thick, gray!70, ] (F) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {} (E1);
 \draw[->, thick, gray!70, ] (F) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {} (Q1);
 \draw[->, thick, gray!70, ] (E1) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {$\SL$, $\Ogp$, $\Ugp$} (E2);
@@ -257,25 +257,25 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \draw[->, thick, gray!70, ] (T2) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {} (M);
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-0.95) {Ch.~1};
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-3.8) {Ch.~2};
-\node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (SM) at (0,-14.1) {\textbf{Submanifolds} \ref*{sec:submanifolds}\\ regular value theorem for manifolds};
-\node[draw=blue!60!black, fill=blue!5, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (BU) at (6.9,-14.1) {\textbf{Bundles} \ref*{sec:fibrations}--\ref*{sec:tangent-bundle}\\ fibrations, $TM$, $T^*M$, vector fields};
+\node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (SM) at (0,-15.6) {\textbf{Submanifolds} \ref*{sec:submanifolds}\\ regular value theorem for manifolds};
+\node[draw=blue!60!black, fill=blue!5, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (BU) at (6.9,-15.6) {\textbf{Bundles} \ref*{sec:fibrations}--\ref*{sec:tangent-bundle}\\ fibrations, $TM$, $T^*M$, vector fields};
 \draw[->, thick, teal!60!black] (T1) -- node[font=\scriptsize, fill=white, inner sep=1.5pt, align=center] {equations,\\ completed} (SM);
 \draw[->, thick, gray!70] (M) -- node[pos=0.55, font=\scriptsize, fill=white, inner sep=1.5pt] {normal form} (SM);
 \draw[->, thick, gray!70] (SM) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {fibres} (BU);
 \draw[->, thick, gray!70] (T2.east) -- ++(0.45,0) |- node[pos=0.25, font=\scriptsize, fill=white, inner sep=1.5pt, rotate=90] {assemble $T_pM$, $T_p^*M$} (BU.east);
-\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (IM) at (9.2,-16.3) {\ref*{sec:immersions}\\ immersions and their images};
+\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (IM) at (9.2,-17.8) {\ref*{sec:immersions}\\ immersions and their images};
 \draw[->, thick, gray!70] (SM) -- node[pos=0.5, font=\scriptsize, fill=white, inner sep=1.5pt] {images} (IM);
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-6.8) {Ch.~3};
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-10.9) {Ch.~4};
-\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-14.6) {Ch.~5};
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-15.6) {Ch.~5};
 \draw[gray!35, dashed] (-2.5,-3.05) -- (11.4,-3.05);
 \draw[gray!35, dashed] (-2.5,-4.8) -- (11.4,-4.8);
 \draw[gray!35, dashed] (-2.5,-8.85) -- (11.4,-8.85);
-\draw[gray!35, dashed] (-2.5,-12.95) -- (6.9,-12.95) -- (6.9,-10.95) -- (11.4,-10.95);
+\draw[gray!35, dashed] (-2.5,-12.75) -- (11.4,-12.75);
 \end{tikzpicture}
 \end{center}
 
-The labels on the arrows are the bridges. The regular value theorem (\ref{sec:rvt}) turns equations into manifolds, and graph charts (Proposition~\ref{prop:level-set-smooth}) make them smooth. The differential between vector spaces (\ref{sec:vector-spaces}) gives $T^{\geo}_pM = \ker F'(p)$ (Theorem~\ref{thm:tangent-kernel}). For the quotient-built manifolds, atlases are written down by hand (\S\ref{sub:projective-atlas}), and only the abstract tangent space reaches them. The two tangent spaces are identified by $v \mapsto D_v$ (Theorem~\ref{thm:ambient-abstract}); the abstract differential agrees with the Jacobian (Proposition~\ref{prop:differential-agree}), and on any manifold the matrix of $F_{*p}$ in coordinates \emph{is} the Jacobian of the coordinate representation (Theorem~\ref{lem:differential-matrix}), because partial derivatives upstairs are defined downstairs (Proposition~\ref{prop:upstairs-downstairs}); and every abstract tangent vector is a velocity after all (Theorem~\ref{thm:every-vector-velocity}). At the bottom, the submersion normal form (Theorem~\ref{thm:submersion-normal-form}) proves the regular value theorem for manifolds (Theorem~\ref{thm:rvt-manifolds}), where the equations thread ends; fibrations and the tangent and cotangent spaces follow as bundles (\ref{sec:fibrations}--\ref{sec:tangent-bundle}); and immersions, whose normal form is the twin of the submersion normal form, have images that are locally submanifolds (\ref{sec:immersions}). Each section opens with a line placing it on this map.
+The labels on the arrows are the bridges. The regular value theorem (\ref{sec:rvt}) turns equations into manifolds, and graph charts (Proposition~\ref{prop:level-set-smooth}) make them smooth. The differential between vector spaces (\ref{sec:vs-differential}) gives $T^{\geo}_pM = \ker F'(p)$ (Theorem~\ref{thm:tangent-kernel}). For the quotient-built manifolds, atlases are written down by hand (\ref{sec:projective-smooth}), and only the abstract tangent space reaches them. The two tangent spaces are identified by $v \mapsto D_v$ (Theorem~\ref{thm:ambient-abstract}); the abstract differential agrees with the Jacobian (Proposition~\ref{prop:differential-agree}), and on any manifold the matrix of $F_{*p}$ in coordinates \emph{is} the Jacobian of the coordinate representation (Theorem~\ref{lem:differential-matrix}), because partial derivatives upstairs are defined downstairs (Proposition~\ref{prop:upstairs-downstairs}); and every abstract tangent vector is a velocity after all (Theorem~\ref{thm:every-vector-velocity}). At the bottom, the submersion normal form (Theorem~\ref{thm:submersion-normal-form}) proves the regular value theorem for manifolds (Theorem~\ref{thm:rvt-manifolds}), where the equations thread ends; fibrations and the tangent and cotangent spaces follow as bundles (\ref{sec:fibrations}--\ref{sec:tangent-bundle}); and immersions, whose normal form is the twin of the submersion normal form, have images that are locally submanifolds (\ref{sec:immersions}). Each section opens with a line placing it on this map.
 
 
 \part{Topological and Smooth Manifolds}

@@ -34,6 +34,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - In L² the Fourier list of (d), continued indefinitely, is an orthonormal basis: [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]] (stated there with complex exponentials on [0, 2π]).
 > - Computational version: [[§47 Applications of Inner Product Spaces#^prop-47-2|235 Prop. §47.2]] (orthogonality of the trigonometric system, as in (d), with $\langle1,1\rangle=2\pi$ and $\langle\cos kt,\cos kt\rangle=\pi$).
+> - Computational version: the orthogonality relations of the trigonometric system on $[-\pi,\pi]$, [[§6 Periodic Functions and Fourier Series#^prop-6-3|341 Prop. §6.3]], which give the Fourier coefficient formulas, [[§6 Periodic Functions and Fourier Series#^prop-6-4|341 Prop. §6.4]].
 
 > [!theorem] Theorem 6.24: Norm of an orthonormal linear combination
 > If $e_1,\dots,e_m$ is orthonormal, then for all $a_1,\dots,a_m\in\F$,
@@ -189,6 +190,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§46 Inner Product Spaces#^ex-46-5|235 Ex. §46.5]] (Gram–Schmidt on $1,2t-1,12t^2$ in $C[0,1]$: the Legendre polynomials moved to $[0,1]$).
+> - Continued in Fourier Series and PDEs: the Legendre polynomials $P_n$ in general, [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|341 Def. §49.3]], orthogonal on $[-1,1]$, [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-5|341 Prop. §49.5]], with norm $2/(2n+1)$, [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-8|341 Prop. §49.8]].
 
 > [!theorem] Theorem 6.35: Existence of orthonormal basis
 > Every finite-dimensional inner product space has an orthonormal basis.

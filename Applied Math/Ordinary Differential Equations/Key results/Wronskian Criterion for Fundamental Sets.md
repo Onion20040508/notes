@@ -24,3 +24,4 @@ tags: [ordinary-differential-equations, hub]
 
 ## Connections
 - See [[§14 Solutions of Linear Homogeneous Equations; the Wronskian]] for context and examples.
+- **Also in [[Fourier Series and PDEs]]:** [[§1★ Homogeneous Linear Equations#^thm-1-3|341 Thm. §1.3]] (the Wronskian test and the general solution, in Powers' review of ODEs).

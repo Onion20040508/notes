@@ -250,6 +250,9 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 ^rem-15-4
 
+> [!remark]- Connections
+> - PDE version: the replacement equations of a two-point boundary value problem, [[§55★ Boundary Value Problems#^def-55-1|341 Def. §55.1]], form a tridiagonal, hence sparse, system, solved by elimination in a number of operations proportional to $n$.
+
 ## A Matrix Factorization in Electrical Engineering
 
 > [!definition] Definition §15.2: Transfer Matrix; Series and Shunt Circuits

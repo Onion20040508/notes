@@ -51,6 +51,9 @@ Throughout, $[a, b]$ is divided into $n$ subintervals of equal length $\Delta x 
 
 ^def-50-3
 
+> [!remark]- Connections
+> - See also: [[§13★ Numerical Determination of Fourier Coefficients#^def-13-1|341 Def. §13.1]] (the trapezoidal rule applied to the Fourier coefficients of a periodic function; over a full period it is far more accurate than the general error bound suggests).
+
 > [!remark] Remark: Where the Trapezoidal Rule Comes From
 > $T_n$ is the average of $L_n$ and $R_n$:
 >

@@ -11,7 +11,7 @@ tags: [chapter, ordinary-differential-equations]
 
 **Builds on:** [[· 2 First-Order Differential Equations|2 First-Order Differential Equations]] (3), [[· 3 Second-Order Linear Differential Equations|3 Second-Order Linear Differential Equations]] (7), [[· 6 The Laplace Transform|6 The Laplace Transform]] (2)
 **Used by:** [[· 6 The Laplace Transform|6 The Laplace Transform]] (2)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Linear Algebra]] (30), [[Applied Linear Algebra]] (45), [[Calculus]] (7), [[Functional Analysis]] (3), [[Differentiable Manifolds]] (2)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Linear Algebra]] (30), [[Applied Linear Algebra]] (45), [[Calculus]] (7), [[Functional Analysis]] (3), [[Differentiable Manifolds]] (2), [[Fourier Series and PDEs]] (6)
 
 ## Sections
 - [[§27 Introduction to Systems of First-Order Linear Equations]] — BDP 7.1

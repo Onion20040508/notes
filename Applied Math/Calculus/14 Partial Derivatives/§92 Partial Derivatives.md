@@ -372,4 +372,7 @@ Using Clairaut's Theorem repeatedly, one shows that $f_{xyy} = f_{yxy} = f_{yyx}
 
 ^def-92-5
 
+> [!remark]- Connections
+> - PDE version: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]] (Laplace's equation and harmonic functions, solved in rectangles and disks), [[§29 The Vibrating String#^def-29-2|341 Def. §29.2]] (the wave equation of a vibrating string) and [[§31 d'Alembert's Solution#^thm-31-2|341 Thm. §31.2]] (every solution of the wave equation has the form $\psi(x + ct) + \phi(x - ct)$, like $\sin(x - at)$ here).
+
 Harmonic functions describe heat conduction, fluid flow and electric potential; the three-dimensional equation (5) governs, for instance, the strength $u(x, y, z)$ of a magnetic field in geophysics. In the wave equation, $u(x, t)$ is the displacement at time $t$ and at distance $x$ from one end of a vibrating violin string, and $a$ depends on the density and the tension of the string.

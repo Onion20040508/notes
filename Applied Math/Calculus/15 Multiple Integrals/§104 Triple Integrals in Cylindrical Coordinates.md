@@ -35,6 +35,9 @@ Cylindrical coordinates are polar coordinates in the $xy$-plane with the height 
 ![[m233-104-1.svg]]
 *The cylindrical coordinates of a point $P$: polar coordinates $(r, \theta)$ of its projection $(r, \theta, 0)$ onto the $xy$-plane (red), together with its height $z$. The point lies on the cylinder $r = \text{const}$ (blue) about the $z$-axis, on the vertical half-plane $\theta = \text{const}$, and on the horizontal plane $z = \text{const}$.*
 
+> [!remark]- Connections
+> - PDE version: [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]] (the Laplacian in polar and cylindrical coordinates), used for the temperature in a cylinder, [[§46★ Temperature in a Cylinder#^prop-46-4|341 Prop. §46.4]], and the potential in a cylinder, [[§48★ Some Applications of Bessel Functions#^prop-48-3|341 Prop. §48.3]].
+
 As with polar coordinates ([[§65 Polar Coordinates#^prop-65-1|Proposition §65.1]], [[§65 Polar Coordinates#^thm-65-2|Theorem §65.2]]), $\theta$ is determined only up to multiples of $2\pi$, and the quadrant of $(x, y)$ must be used to choose $\theta$ from $\tan\theta = y/x$.
 
 The axis of the circular cylinder $x^2 + y^2 = c^2$ is the $z$-axis, and in cylindrical coordinates the cylinder has the very simple equation $r = c$; this is the reason for the name. The graph of $\theta = c$ is a vertical plane through the origin (a half-plane if $r \ge 0$), and the graph of $z = c$ is a horizontal plane.

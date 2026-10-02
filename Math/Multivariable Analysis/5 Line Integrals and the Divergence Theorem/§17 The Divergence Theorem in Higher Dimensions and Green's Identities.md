@@ -164,6 +164,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 > [!remark]- Connections
 > - The gradient was introduced in [[§7 Directional Derivatives|§7]]; the normal derivative is the directional derivative ([[Directional Derivative Formula|Theorem §7.1]]) in the direction $\hat{n}$.
+> - Computational version: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]] (the potential equation $\nabla^2u=0$ and harmonic functions, solved by separation of variables in rectangles and disks); the five-point difference approximation of the Laplacian, [[§58★ Potential Equation#^def-58-1|341 Def. §58.1]].
 
 ## Green's First Identity
 
@@ -221,6 +222,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > - For $n = 1$ this is ordinary [[§34 Fundamental Theorem of Calculus#^thm-34-3|Integration by Parts (451 §34.3)]].
 > - Revisited with surface integrals in $\mathbb{R}^3$: [[§18 Surface Integrals#^rem-18-9|Green's Identities Revisited]].
 > - Its case n = 1 is integration by parts on [a, b]: [[§44 Integration by Parts#^thm-44-2|Calc Thm. §44.2]] (with worked examples).
+> - Used in PDEs: with $u=v=\phi$ an eigenfunction, it shows that the Dirichlet eigenvalues of the Laplacian are positive, [[§44★ Problems in Polar Coordinates#^rem-44-2|341 Remark §44.2]].
 
 > [!remark] Remark: Special Case: $u = v$
 > Setting $u = v$ in Green's first identity:
@@ -277,6 +279,9 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 *Uses:* [[Green's First Identity|§17.2]]
 
+> [!remark]- Connections
+> - Used in PDEs: eigenfunctions of the Laplacian for different eigenvalues are orthogonal, [[§44★ Problems in Polar Coordinates#^thm-44-3|341 Thm. §44.3]], as for the vibrating drum, [[§47★ Vibrations of a Circular Membrane#^prop-47-3|341 Prop. §47.3]].
+
 > [!remark] Remark: Green's Second Identity as Symmetry
 > Green's second identity expresses a kind of **symmetry of the Laplacian**: the “interaction” of $u$ with $\Delta v$ differs from the interaction of $v$ with $\Delta u$ only by a boundary term. This is the $L^2$ analog of integration by parts, and it shows that the Laplacian is a **[[§22 Self-Adjoint and Normal Operators#^ladr-7-10|self-adjoint operator]]** (up to boundary terms).
 >
@@ -286,6 +291,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 > [!remark]- Connections
 > - Finite-dimensional model: an operator $T$ with $\langle Tu, v\rangle = \langle u, Tv\rangle$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]) has an orthonormal eigenbasis by the [[Real spectral theorem]]; Green's second identity with vanishing boundary terms is the analogous statement for $\Delta$ with the $L^2$ inner product.
+> - One-dimensional version: the Sturm–Liouville operator is symmetric in the same way, [[§23 Sturm–Liouville Problems#^rem-23-3|341 Remark §23.3]], which makes its eigenfunctions orthogonal, [[§23 Sturm–Liouville Problems#^thm-23-2|341 Thm. §23.2]].
 
 ## Applications of Green's Identities
 
@@ -307,6 +313,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > [!remark]- Connections
 > - 1D version of “nonnegative continuous integrand with zero integral vanishes”: [[§33 Properties of the Riemann Integral#^thm-33-7|Vanishing Integral of a Nonnegative Function (451 §33.7)]].
 > - Used in Electromagnetism: with [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-2|Ex. §17.2]], the uniqueness of the electrostatic potential for given boundary values or normal derivatives — [[§B3.1 Laplace's Equation and the Uniqueness Theorems#^thm-b3-1-3|EM Theorem §B3.1.3]].
+> - Computational version: [[§39 Potential in a Disk#^cor-39-6|341 Cor. §39.6]] (uniqueness for Dirichlet's problem, proved there from the maximum principle, for the disk solved explicitly).
 
 > [!example] Example §17.2: Uniqueness for the Neumann Problem
 > **Claim:** If $\Delta u_1 = \Delta u_2$ on $D$ and $\dfrac{\partial u_1}{\partial n} = \dfrac{\partial u_2}{\partial n}$ on $\partial D$, then $u_1 - u_2$ is constant on $D$.
@@ -323,6 +330,9 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 *Uses:* [[Green's First Identity|§17.2]], [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]
 
+> [!remark]- Connections
+> - Computational version: [[§35 Potential Equation#^prop-35-1|341 Prop. §35.1]] (adding a constant to a solution of Neumann's problem gives another, and $\oint\partial u/\partial n\,ds=0$ is needed for a solution to exist).
+
 > [!example] Example §17.3: Mean Value Property of Harmonic Functions (Sketch)
 > Green's identities can be used to prove the **mean value property**: if $\Delta u = 0$ on a ball $B_r(x_0) \subseteq \mathbb{R}^n$, then:
 >
@@ -336,6 +346,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 > [!remark]- Connections
 > - Used in Electromagnetism: the mean-value property of the electrostatic potential, proved there in full — [[§B3.1 Laplace's Equation and the Uniqueness Theorems#^thm-b3-1-1|EM Theorem §B3.1.1]].
+> - Computational version: [[§39 Potential in a Disk#^thm-39-4|341 Thm. §39.4]] (the mean value property in the plane, proved in full from the Poisson integral), and the maximum principle it gives, [[§39 Potential in a Disk#^thm-39-5|341 Thm. §39.5]].
 
 > [!remark] Remark: Summary: The Hierarchy of Integral Theorems
 > All the integral theorems in this course are instances of a single pattern:
@@ -419,6 +430,9 @@ Therefore, the integrand vanishes pointwise:
 
 *Uses:* [[§16 Line Integrals and Green's Theorem#^thm-16-2|§16.2]], [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§2 Open and Closed Sets#^def-2-1|Def. §2.1]], [[§15 Multivariable Integration#^thm-15-5|§15.5]]
 
+> [!remark]- Connections
+> - Computational version: the same argument for heat in a solid, [[§42 Three-Dimensional Heat Equation#^lem-42-1|341 Lemma §42.1]] (a continuous function with zero integral over every subregion is zero) and [[§42 Three-Dimensional Heat Equation#^thm-42-2|341 Thm. §42.2]] (the local heat balance).
+
 This is the **continuity equation**: the local form of conservation of mass.
 
 ## Incompressible Flow
@@ -475,6 +489,9 @@ This is **Laplace's equation**. A function satisfying $\Delta \phi = 0$ is calle
 > The problem of finding incompressible irrotational flow reduces to: find a potential function $\phi(x,y)$ satisfying $\Delta \phi = 0$ with appropriate boundary conditions. This is the **Dirichlet problem**, whose [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|uniqueness]] we proved using [[Green's First Identity|Green's first identity]].
 
 ^rem-17-4
+
+> [!remark]- Connections
+> - Computational version: [[§35 Potential Equation#^ex-35-1|341 Ex. §35.1]] (the velocity potential of an ideal fluid satisfies the potential equation).
 
 > [!remark] Remark: Symmetry and Radial Solutions
 > Laplace's equation $\phi_{xx} + \phi_{yy} = 0$ has a symmetric structure: the operator $\Delta$ treats $x$ and $y$ on equal footing. This symmetry motivates looking for **radial solutions**, i.e., solutions depending only on $r = \sqrt{x^2 + y^2}$: $\phi(x,y) = f(r)$.
@@ -582,6 +599,7 @@ Choosing $C' = 0$:
 
 > [!remark]- Connections
 > - The 3D radial computation (giving $f'' + \frac{2}{r} f'$ and the solution $1/r$): [[§19 The Laplacian in Spherical Coordinates#^rem-19-2|Verification: Radial Functions]], from the [[§19 The Laplacian in Spherical Coordinates#^thm-19-1|Laplacian in Spherical Coordinates (§19.1)]].
+> - Computational version: [[§35 Potential Equation#^ex-35-3|341 Ex. §35.3]](b) (the radial harmonic functions $A+B\ln r$, from the polar form of the Laplacian).
 
 > [!remark] Remark: Connection to Other PDEs
 > This fundamental solution is the starting point for solving boundary value problems via Green's functions. The same approach — exploit symmetry to reduce a PDE to an ODE — applies to other equations:
@@ -590,3 +608,6 @@ Choosing $C' = 0$:
 > - **Wave equation** $\phi_{tt} = c^2 \Delta \phi$: vibrations and wave propagation.
 
 ^rem-17-6
+
+> [!remark]- Connections
+> - Worked out in Fourier Series and PDEs: Green's functions for one-dimensional boundary value problems, [[§5★ Green's Functions#^def-5-2|341 Def. §5.2]] and [[§5★ Green's Functions#^thm-5-1|341 Thm. §5.1]]; the heat and wave equations on an interval, solved by separation of variables, [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|341 Thm. §19.5]] and [[§30 Solution of the Vibrating String Problem#^thm-30-2|341 Thm. §30.2]].

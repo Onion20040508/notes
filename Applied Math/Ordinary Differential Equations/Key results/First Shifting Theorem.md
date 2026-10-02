@@ -22,3 +22,4 @@ tags: [ordinary-differential-equations, hub]
 
 ## Connections
 - See [[§23 Step Functions]] for context and examples.
+- **Also in [[Fourier Series and PDEs]]:** [[§51★ Definition and Elementary Properties#^thm-51-3|341 Thm. §51.3]] (the same shift, for real or complex $b$).

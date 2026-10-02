@@ -263,3 +263,6 @@ Some of the most important functions in the sciences are *defined* by power seri
 > *Stewart: Example 11.9.8*
 
 ^ex-77-5
+
+> [!remark]- Connections
+> - PDE version: [[§45★ Bessel's Equation#^def-45-2|341 Def. §45.2]] ($J_0$ and the other $J_\mu$ as power-series solutions of Bessel's equation, found by the method of Frobenius), with this series, the value $J_0(1)$ and $J_0' = -J_1$ in [[§45★ Bessel's Equation#^ex-45-1|341 Ex. §45.1]] and [[§45★ Bessel's Equation#^thm-45-7|341 Thm. §45.7]].

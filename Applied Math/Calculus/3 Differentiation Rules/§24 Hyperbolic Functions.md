@@ -52,6 +52,9 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 
 ^rem-24-1
 
+> [!remark]- Connections
+> - See also: [[§3★ Boundary Value Problems#^ex-3-2|341 Ex. §3.2]] (the catenary derived: for a cable hanging under its own weight the equation of [[§3★ Boundary Value Problems#^prop-3-1|341 Prop. §3.1]] becomes $u'' = \mu\sqrt{1 + (u')^2}$, solved with $\sinh^{-1}$).
+
 > [!theorem] Theorem §24.1: Hyperbolic Identities
 > $$
 > \begin{aligned}

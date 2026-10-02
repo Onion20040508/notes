@@ -137,6 +137,9 @@ Its characteristic equation $mr^2 + k = 0$ has roots $r = \pm i\sqrt{k/m}$.
 
 *Uses:* [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|§15.2]] (general solution for complex roots), [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas)
 
+> [!remark]- Connections
+> - PDE version: [[§30 Solution of the Vibrating String Problem#^def-30-1|341 Def. §30.1]] (standing waves: each mode of a vibrating string oscillates in time as $a_n\cos(\lambda_nct) + b_n\sin(\lambda_nct)$, a simple harmonic motion with the natural frequencies of [[§30 Solution of the Vibrating String Problem#^def-30-2|341 Def. §30.2]]).
+
 > [!definition] Definition §19.3: Natural Frequency, Period, Amplitude, Phase
 > The motion (14) is **simple harmonic motion**: a displaced cosine wave. Its
 > - **natural frequency** is $\omega_0 = \sqrt{k/m}$ (a circular frequency, in radians per unit time);
@@ -239,6 +242,9 @@ $$
 ^pf-19-3
 
 *Uses:* [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|§13.2]], [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|§15.2]], [[§16 Repeated Roots; Reduction of Order#^thm-16-1|§16.1]] (the three root cases), [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]]
+
+> [!remark]- Connections
+> - PDE version: [[§32 One-Dimensional Wave Equation꞉ Generalities#^ex-32-3|341 Ex. §32.3]] (a string in a resisting medium: each mode satisfies $T'' + kT' + \omega_n^2T = 0$, and the three damping cases occur mode by mode).
 
 > [!definition] Definition §19.4: Underdamped, Critically Damped, Overdamped
 > For $mu'' + \gamma u' + ku = 0$:

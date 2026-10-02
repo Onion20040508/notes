@@ -151,9 +151,6 @@ Integration by parts needs a preliminary: products of integrable functions are i
 
 ^thm-34-4
 
-> [!remark]- Connections
-> - Used in PDEs: the integral of a periodic function is the same over every period, [[§6 Periodic Functions and Fourier Series#^prop-6-2|341 Prop. §6.2]] (differentiate in the endpoint).
-
 > [!remark] Remark: Orientation convention
 > For $x < y$ we set $\int_y^x f = -\int_x^y f$; then additivity $\int_a^x = \int_a^y + \int_y^x$ holds for any order of the points, and the estimates below are valid regardless of the side from which $x$ approaches $x_0$.
 
@@ -192,6 +189,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 > - Lebesgue version: for integrable $f$ the integral function is absolutely continuous ([[§18 Differentiation Theory#^thm-18-12|551 Thm. §18.12]]) and $F' = f$ almost everywhere without any continuity ([[§18 Differentiation Theory#^thm-18-26|551 Thm. §18.26]]).
 > - Computational version: [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (Stewart's Part 1 is this FTC II; with worked examples).
 > - Used in ODEs: the variable-limit integrals in the solution formula for $y' + p(t)y = g(t)$, [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]], in variation of parameters, [[§18★ Variation of Parameters#^thm-18-1|331 Thm. §18.1]], and in the integral equation of Picard iteration, [[§11 The Existence and Uniqueness Theorem#^lem-11-2|331 Lemma §11.2]].
+> - Used in PDEs: the integral of a periodic function is the same over every period, [[§6 Periodic Functions and Fourier Series#^prop-6-2|341 Prop. §6.2]] (differentiate in the endpoint).
 
 > [!example] Example §34.1: FTC I from FTC II when the derivative is continuous (HW)
 > The two halves of the FTC are not independent: if $g'$ is *continuous*, FTC I follows from FTC II in three lines. Set $G(x) = \int_a^x g'(t)\,dt$. By FTC II, $G$ is continuous on $[a,b]$ and $G' = g'$ on $(a,b)$; so $G - g$ has vanishing derivative on $(a,b)$ and is constant there (§29), and the constancy extends to the closed interval by continuity of $G - g$. Evaluating the constant at both ends,
