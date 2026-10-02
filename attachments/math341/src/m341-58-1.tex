@@ -1,0 +1,29 @@
+% Figure for Fourier Series and PDEs §58.
+\begin{tikzpicture}
+  \begin{scope}[x=1.3cm, y=1.3cm]
+    \foreach \v in {0,1,2} {\draw[black!25] (-0.4,\v) -- (2.4,\v); \draw[black!25] (\v,-0.4) -- (\v,2.4);}
+    \foreach \i/\j in {1/2,0/1,2/1,1/0} \fill[figB] (\i,\j) circle (2.5pt);
+    \fill[figR] (1,1) circle (3pt);
+    \node[font=\small, above right] at (1,1) {$i$};
+    \node[figB, font=\small, above right] at (1,2) {$N$};
+    \node[figB, font=\small, below right] at (1,0) {$S$};
+    \node[figB, font=\small, above left] at (0,1) {$W$};
+    \node[figB, font=\small, above right] at (2,1) {$E$};
+    \node[font=\scriptsize, below] at (1,-0.5) {$u_N + u_S + u_E + u_W - 4u_i$};
+    \node[font=\small] at (1,2.75) {(a) the five-point stencil};
+  \end{scope}
+  \begin{scope}[xshift=4.6cm, x=1.15cm, y=1.15cm]
+    \draw[thick] (0,0) rectangle (4,4);
+    \foreach \v in {1,2,3} {\draw[black!25] (\v,0) -- (\v,4); \draw[black!25] (0,\v) -- (4,\v);}
+    \foreach \x/\lab in {1/{\tfrac12},2/{1},3/{\tfrac12}} {\node[figB, font=\scriptsize, below] at (\x,0) {$\lab$}; \node[figB, font=\scriptsize, above] at (\x,4) {$\lab$};}
+    \foreach \y in {1,2,3} {\node[figB, font=\scriptsize, left] at (0,\y) {$0$}; \node[figB, font=\scriptsize, right] at (4,\y) {$0$};}
+    \foreach \x/\y/\n/\v in {1/1/1/{\tfrac{5}{16}},2/1/2/{\tfrac12},3/1/3/{\tfrac{5}{16}},1/2/4/{\tfrac14},2/2/5/{\tfrac38},3/2/6/{\tfrac14},1/3/7/{\tfrac{5}{16}},2/3/8/{\tfrac12},3/3/9/{\tfrac{5}{16}}} {
+      \fill[figR] (\x,\y) circle (2.2pt);
+      \node[font=\tiny, black!60, above left, inner sep=1.5pt] at (\x,\y) {\n};
+      \node[figR, font=\scriptsize, below right, inner sep=1.5pt] at (\x,\y) {$\v$};
+    }
+    \draw[thin, -stealth] (0,0) -- (4.5,0) node[right, font=\small] {$x$};
+    \draw[thin, -stealth] (0,0) -- (0,4.5) node[above, font=\small] {$y$};
+    \node[font=\small] at (2,5.0) {(b) numbering and solution, $\Delta x = \frac14$};
+  \end{scope}
+\end{tikzpicture}

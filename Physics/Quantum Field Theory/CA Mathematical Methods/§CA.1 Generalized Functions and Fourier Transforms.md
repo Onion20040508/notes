@@ -28,7 +28,7 @@ Quantum field theory writes integrals that converge for no real value of their a
 > [!derivation]- Derivation
 > **Step 1** (part 1). This is [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]].
 >
-> **Step 2** (difference quotient). For $h \ne 0$, $\frac{F(r + h) - F(r)}{h} = \int\frac{f(p, r + h) - f(p, r)}{h}\,dp$, and by the mean value theorem ([[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]]) the integrand equals $\partial_rf(p, r^*)$ for some $r^*$ between $r$ and $r + h$, so it is bounded by $g(p)$ independently of $h$.
+> **Step 2** (difference quotient). For $h \ne 0$, $\frac{F(r + h) - F(r)}{h} = \int\frac{f(p, r + h) - f(p, r)}{h}\,dp$, and by the mean value theorem ([[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]]), applied separately to the real and imaginary parts of $f$ (the integrands here are complex exponentials), each part of the integrand equals $\partial_rf(p, r^*)$ for some $r^*$ between $r$ and $r + h$ (a different $r^*$ for each part), so the integrand is bounded by $2g(p)$ independently of $h$.
 >
 > **Step 3** (limit). For any sequence $h_n \to 0$ the integrands converge to $\partial_rf(p, r)$, dominated by $g$; by Step 1 the integrals converge to $\int\partial_rf\,dp$.
 >
@@ -72,6 +72,8 @@ Quantum field theory writes integrals that converge for no real value of their a
 > - It does not license exchanging the limit with a derivative: that needs Theorem §CA.1.3.
 
 ^der-ca-1-2
+
+*Uses:* [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (for $H' = h$ and $R' = -f$ in the integrations by parts)
 
 > [!theorem] Theorem §CA.1.3: Limits of Derivatives
 > Let $F_n$ be differentiable on an interval, let $F_n(r_0)$ converge at one point, and let $F_n' \to G$ *uniformly* on the interval. Then $F_n \to F$ uniformly on bounded subintervals and $F' = G$. Pointwise convergence of the derivatives is not enough.

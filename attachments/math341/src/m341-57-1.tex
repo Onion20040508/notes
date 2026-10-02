@@ -1,0 +1,24 @@
+% Figure for Fourier Series and PDEs §57.
+\begin{tikzpicture}[x=1.6cm, y=1.1cm]
+  \fill[figO!15] (2,2) -- (1,1) -- (3,1) -- cycle;
+  \fill[figB!18] (2,2) -- (1.3,1) -- (2.7,1) -- cycle;
+  \foreach \j in {0,1,2} \draw[black!25] (-0.4,\j) -- (4.4,\j);
+  \foreach \i in {0,1,2,3,4} \draw[black!25] (\i,-0.4) -- (\i,2.4);
+  \foreach \i in {0,1,2,3,4} \foreach \j in {0,1,2} \fill[black!35] (\i,\j) circle (1.4pt);
+  \draw[thin, -stealth] (-0.6,-0.4) -- (4.7,-0.4) node[right] {$x$};
+  \draw[thin, -stealth] (-0.6,-0.4) -- (-0.6,2.7) node[above] {$t$};
+  \foreach \i/\lab in {1/{x_{i-1}},2/{x_i},3/{x_{i+1}}} \node[font=\small, below] at (\i,-0.4) {$\lab$};
+  \foreach \j/\lab in {0/{t_{m-1}},1/{t_m},2/{t_{m+1}}} \node[font=\small, left] at (-0.6,\j) {$\lab$};
+  \draw[figO, thick, dashed] (2,2) -- (0.45,0.45);   \draw[figO, thick, dashed] (2,2) -- (3.55,0.45);
+  \draw[figB, thick] (2,2) -- (0.6,0);   \draw[figB, thick] (2,2) -- (3.4,0);
+  \foreach \i in {1,3} \fill[figG] (\i,1) circle (2.6pt);
+  \fill[figG] (2,1) circle (2.6pt);  \fill[figG] (2,0) circle (2.6pt);
+  \fill[figR] (2,2) circle (3pt);
+  \node[figG, font=\scriptsize, above left] at (1,1) {$\rho^2$};
+  \node[figG, font=\scriptsize, below right] at (2,1) {$2 - 2\rho^2$};
+  \node[figG, font=\scriptsize, above right] at (3,1) {$\rho^2$};
+  \node[figG, font=\scriptsize, below right] at (2,0) {$-1$};
+  \node[figR, font=\small, above] at (2,2.08) {$u_i(m + 1)$};
+  \node[figB, font=\scriptsize, anchor=west, align=left] at (3.5,-0.05) {characteristics\\ $x \mp t = $ const};
+  \node[figO, font=\scriptsize, anchor=west, align=left] at (3.62,0.5) {numerical\\ dependence};
+\end{tikzpicture}

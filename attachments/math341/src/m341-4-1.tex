@@ -1,0 +1,19 @@
+% Figure for Fourier Series and PDEs §4.
+\begin{tikzpicture}
+  \begin{axis}[nfig, width=8.6cm, height=6.2cm, xmin=0, xmax=4.4, ymin=-2.6, ymax=2.6, clip=true,
+      axis lines=middle, xtick={1,2,3,4}, ytick={-2,-1,1,2},
+      xlabel={$\mu x$}, ylabel={$\dfrac{u - T}{T_0 - T}$}, xlabel style={anchor=west}, ylabel style={anchor=south}]
+    \addplot[figB!55, domain=0:4.4, samples=100] {cosh(x)-0.8*sinh(x)};
+    \addplot[figB!55, domain=0:4.4, samples=100] {cosh(x)-0.9*sinh(x)};
+    \addplot[figB!55, domain=0:4.4, samples=100] {cosh(x)-0.97*sinh(x)};
+    \addplot[figO, domain=0:4.4, samples=100] {cosh(x)-1.03*sinh(x)};
+    \addplot[figO, domain=0:4.4, samples=100] {cosh(x)-1.1*sinh(x)};
+    \addplot[figO, domain=0:4.4, samples=100] {cosh(x)-1.2*sinh(x)};
+    \addplot[figR, line width=1.4pt, domain=0:4.4, samples=100] {exp(-x)};
+  \end{axis}
+  \begin{scope}[font=\scriptsize, shift={(7.1cm,1.2cm)}]
+    \draw[figB!55, line width=0.9pt] (0,0.8) -- (0.45,0.8) node[right, black] {$c_2 > -c_1$};
+    \draw[figR, line width=1.4pt] (0,0.4) -- (0.45,0.4) node[right, black] {$c_2 = -c_1$: $e^{-\mu x}$};
+    \draw[figO, line width=0.9pt] (0,0) -- (0.45,0) node[right, black] {$c_2 < -c_1$};
+  \end{scope}
+\end{tikzpicture}

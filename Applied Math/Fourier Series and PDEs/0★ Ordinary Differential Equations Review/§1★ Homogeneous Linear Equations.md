@@ -204,7 +204,7 @@ This is [[§24 Hyperbolic Functions#^def-24-1|Calc Def. §24.1]]; the derivative
 > u(t) = c_1'\cosh(\lambda t) + c_2'\sinh(\lambda t) .
 > $$
 >
-> Which form to use depends on the boundary conditions: see [[§4★ Singular Boundary Value Problems#^rem-4-3|Remark: Method — Choosing the Form of the Solution]].
+> Which form to use depends on the boundary conditions: see [[§4★ Singular Boundary Value Problems#^rem-4-2|Remark: Method — Choosing the Form of the Solution]].
 >
 > **$\lambda = 0$.** Both equations become $u'' = 0$, with the double root $m = 0$, and the second case gives $u(t) = c_1 + c_2t$. This case must always be checked separately in eigenvalue problems ([[§3★ Boundary Value Problems#^ex-3-5|Example §3.5]]).
 >

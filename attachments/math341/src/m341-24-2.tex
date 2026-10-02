@@ -1,0 +1,32 @@
+% Figure for Fourier Series and PDEs §24.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=10.5cm, height=6.4cm, xmin=0, xmax=7.3, ymin=-4, ymax=8,
+  axis lines=middle, xlabel={$\lambda$}, ylabel={}, xtick={1.5708,3.1416,4.7124,6.2832},
+  xticklabels={$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$}, ytick={-2,2,4,6},
+  xlabel style={anchor=west}, clip=true]
+  \draw[black!35, dashed, thin] (axis cs:1.5708,-4) -- (axis cs:1.5708,8);
+  \draw[black!35, dashed, thin] (axis cs:3.1416,-4) -- (axis cs:3.1416,8);
+  \draw[black!35, dashed, thin] (axis cs:4.7124,-4) -- (axis cs:4.7124,8);
+  \draw[black!35, dashed, thin] (axis cs:6.2832,-4) -- (axis cs:6.2832,8);
+  \addplot[figB, samples=120, domain=0.0350:1.5358] {cot(deg(2*x))};
+  \addplot[figB, samples=120, domain=1.6058:3.1066] {cot(deg(2*x))};
+  \addplot[figB, samples=120, domain=3.1766:4.6774] {cot(deg(2*x))};
+  \addplot[figB, samples=120, domain=4.7474:6.2482] {cot(deg(2*x))};
+  \addplot[figB, samples=120, domain=6.3182:7.3000] {cot(deg(2*x))};
+  \addplot[figG, domain=0:7.3] {x};
+  \fill[figR] (axis cs:0.5384,0.5384) circle (1.7pt);
+  \node[figR, font=\scriptsize, anchor=north west] at (axis cs:0.5384,-0.05) {$\lambda_1$};
+  \draw[figR, thin, densely dotted] (axis cs:0.5384,0) -- (axis cs:0.5384,0.5384);
+  \fill[figR] (axis cs:1.8218,1.8218) circle (1.7pt);
+  \node[figR, font=\scriptsize, anchor=north west] at (axis cs:1.8218,-0.05) {$\lambda_2$};
+  \draw[figR, thin, densely dotted] (axis cs:1.8218,0) -- (axis cs:1.8218,1.8218);
+  \fill[figR] (axis cs:3.2892,3.2892) circle (1.7pt);
+  \node[figR, font=\scriptsize, anchor=north west] at (axis cs:3.2892,-0.05) {$\lambda_3$};
+  \draw[figR, thin, densely dotted] (axis cs:3.2892,0) -- (axis cs:3.2892,3.2892);
+  \fill[figR] (axis cs:4.8148,4.8148) circle (1.7pt);
+  \node[figR, font=\scriptsize, anchor=north west] at (axis cs:4.8148,-0.05) {$\lambda_4$};
+  \draw[figR, thin, densely dotted] (axis cs:4.8148,0) -- (axis cs:4.8148,4.8148);
+\end{axis}
+\node[figB, font=\scriptsize] at (1.1,4.3) {$\cot 2\lambda$};
+\node[figG, font=\scriptsize] at (8.2,4.0) {$y=\lambda$};
+\end{tikzpicture}

@@ -1,0 +1,16 @@
+% Figure for Fourier Series and PDEs §23.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=10cm, height=5.6cm, xmin=1, xmax=8.4, ymin=-1.25, ymax=1.35,
+  axis lines=middle, xlabel={$x$}, ylabel={$\phi_n(x)$}, xtick={1,2,4,5,6,7,8}, ytick={-1,1},
+  xlabel style={anchor=west}, ylabel style={anchor=south}, clip=false]
+  \addplot[figB, samples=200, domain=1:8] {sin(deg(pi*ln(x)/ln(8)))};
+  \addplot[figR, samples=200, domain=1:8] {sin(deg(2*pi*ln(x)/ln(8)))};
+  \addplot[figG, samples=250, domain=1:8] {sin(deg(3*pi*ln(x)/ln(8)))};
+  \fill[figR] (axis cs:2.8284,0) circle (1.7pt);
+  \fill[figG] (axis cs:2,0) circle (1.7pt); \fill[figG] (axis cs:4,0) circle (1.7pt);
+  \node[figB, font=\scriptsize, anchor=south] at (axis cs:3.3,1.02) {$n=1$};
+  \node[figR, font=\scriptsize, anchor=north] at (axis cs:5.4,-1.02) {$n=2$};
+  \node[figG, font=\scriptsize, anchor=south west] at (axis cs:1.42,1.0) {$n=3$};
+  \node[figR, font=\scriptsize, anchor=north east] at (axis cs:2.83,-0.05) {$2\sqrt2$};
+\end{axis}
+\end{tikzpicture}

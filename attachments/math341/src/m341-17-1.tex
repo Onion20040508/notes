@@ -1,0 +1,28 @@
+% Figure for Fourier Series and PDEs §17.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth]
+  % rod (side view) with insulated lateral surface
+  \fill[black!6] (0,0) rectangle (9,1.2);
+  \draw[thick] (0,0) -- (9,0) (0,1.2) -- (9,1.2);
+  \draw[thin] (0,0) -- (0,1.2) (9,0) -- (9,1.2);
+  \foreach \x in {0.2,0.5,...,8.9} {\draw[black!45, thin] (\x,1.2) -- (\x+0.18,1.38); \draw[black!45, thin] (\x,0) -- (\x+0.18,-0.18);}
+  \node[black!60, anchor=south] at (1.2,1.4) {insulated lateral surface};
+  % the slice
+  \fill[figB!18] (4,0) rectangle (5.4,1.2);
+  \draw[figB, thick] (4,0) -- (4,1.2) (5.4,0) -- (5.4,1.2);
+  \node[figB, anchor=north] at (4,-0.22) {$x$};
+  \node[figB, anchor=north] at (5.4,-0.22) {$x + \Delta x$};
+  \draw[black!60, <->] (4,-0.75) -- node[below] {$\Delta x$} (5.4,-0.75);
+  % fluxes
+  \draw[figR, very thick, ->] (2.6,0.6) -- (3.9,0.6);
+  \node[figR, anchor=south] at (3.0,0.62) {$A\,q(x,t)$};
+  \draw[figR, very thick, ->] (5.5,0.6) -- (6.8,0.6);
+  \node[figR, anchor=south] at (6.4,0.62) {$A\,q(x + \Delta x,t)$};
+  % generation and storage labels
+  \node[figG, align=center] at (4.7,2.25) {generated: $A\,\Delta x\, g$\\ stored: $\rho c A\,\Delta x\, \partial u/\partial t$};
+  \draw[figG, thin, ->] (4.7,1.85) -- (4.7,0.95);
+  % axis
+  \draw[->, black!60] (0,-1.35) -- (9.4,-1.35) node[right] {$x$};
+  \node[anchor=north] at (0,-1.35) {$0$};
+  \node[anchor=north] at (9,-1.35) {$a$};
+  \draw[black!60] (0,-1.3) -- (0,-1.4) (9,-1.3) -- (9,-1.4);
+\end{tikzpicture}

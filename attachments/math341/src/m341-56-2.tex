@@ -1,0 +1,30 @@
+% Figure for Fourier Series and PDEs §56.
+\begin{tikzpicture}
+  \begin{axis}[nfig, name=A, width=6.6cm, height=5.6cm, xmin=0, xmax=1.08, ymin=0, ymax=0.62, clip=false,
+      xtick={0.25,0.5,0.75,1}, ytick={0.1,0.2,0.3,0.4,0.5,0.6}, yticklabel style={/pgf/number format/fixed},
+      xlabel={$x$}, ylabel={$u$}, xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south, rotate=-90},
+      title style={yshift=4pt}, title={\small (a) $r = \frac12$ and $r = \frac14$ against the series}]
+    \addplot[figB, smooth] coordinates {(0.000,0.0000) (0.025,0.0229) (0.050,0.0458) (0.075,0.0685) (0.100,0.0910) (0.125,0.1131) (0.150,0.1349) (0.175,0.1563) (0.200,0.1770) (0.225,0.1972) (0.250,0.2165) (0.275,0.2350) (0.300,0.2525) (0.325,0.2689) (0.350,0.2841) (0.375,0.2980) (0.400,0.3104) (0.425,0.3212) (0.450,0.3302) (0.475,0.3375) (0.500,0.3427) (0.525,0.3459) (0.550,0.3469) (0.575,0.3457) (0.600,0.3421) (0.625,0.3362) (0.650,0.3278) (0.675,0.3170) (0.700,0.3039) (0.725,0.2883) (0.750,0.2705) (0.775,0.2505) (0.800,0.2284) (0.825,0.2044) (0.850,0.1786) (0.875,0.1513) (0.900,0.1227) (0.925,0.0930) (0.950,0.0625) (0.975,0.0314) (1.000,0.0000)};
+    \addplot[figB, smooth] coordinates {(0.000,0.0000) (0.025,0.0106) (0.050,0.0211) (0.075,0.0315) (0.100,0.0417) (0.125,0.0516) (0.150,0.0613) (0.175,0.0706) (0.200,0.0794) (0.225,0.0878) (0.250,0.0956) (0.275,0.1029) (0.300,0.1095) (0.325,0.1155) (0.350,0.1208) (0.375,0.1254) (0.400,0.1291) (0.425,0.1321) (0.450,0.1343) (0.475,0.1357) (0.500,0.1362) (0.525,0.1359) (0.550,0.1347) (0.575,0.1327) (0.600,0.1299) (0.625,0.1263) (0.650,0.1219) (0.675,0.1167) (0.700,0.1108) (0.725,0.1042) (0.750,0.0970) (0.775,0.0891) (0.800,0.0807) (0.825,0.0718) (0.850,0.0624) (0.875,0.0526) (0.900,0.0425) (0.925,0.0321) (0.950,0.0215) (0.975,0.0108) (1.000,0.0000)};
+    \addplot[figR, only marks, mark=*, mark size=1.7pt] coordinates {(0.25,0.25) (0.5,0.5) (0.75,0.25) (0.25,0.125) (0.5,0.125) (0.75,0.125)};
+    \addplot[figG, only marks, mark=triangle*, mark size=2.1pt] coordinates {(0.25,0.234375) (0.5,0.375) (0.75,0.296875) (0.25,0.102081) (0.5,0.145142) (0.75,0.103119)};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.6,0.36) {$t = \frac{2}{32}$};
+    \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.62,0.16) {$t = \frac{5}{32}$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.05,0.58) {$\bullet$ $r = \frac12$};
+    \node[figG, font=\scriptsize, anchor=west] at (axis cs:0.05,0.51) {$\blacktriangle$ $r = \frac14$};
+  \end{axis}
+  \begin{axis}[nfig, at={(A.east)}, anchor=west, xshift=1.4cm, width=6.6cm, height=5.6cm, xmin=0, xmax=1.08, ymin=-4, ymax=3.4, clip=false,
+      xtick={0.25,0.5,0.75,1}, ytick={-3,-2,-1,0,1,2,3},
+      xlabel={$x$}, ylabel={$u$}, xlabel style={at={(axis description cs:1,0)}, anchor=west},
+      ylabel style={at={(axis description cs:0,1)}, anchor=south, rotate=-90},
+      title style={yshift=4pt}, title={\small (b) $r = 1$: instability}]
+    \draw[black!30, thin] (axis cs:0,0) -- (axis cs:1,0);
+    \addplot[figO, mark=*, mark size=1.4pt] coordinates {(0,0) (0.25,0.25) (0.5,-0.5) (0.75,0.75) (1,0)};
+    \addplot[figG, mark=*, mark size=1.4pt] coordinates {(0,0) (0.25,-0.75) (0.5,1.5) (0.75,-1.25) (1,0)};
+    \addplot[figR, mark=*, mark size=1.4pt] coordinates {(0,0) (0.25,2.25) (0.5,-3.5) (0.75,2.75) (1,0)};
+    \node[figO, font=\scriptsize, anchor=north] at (axis cs:0.5,-0.6) {$m = 3$};
+    \node[figG, font=\scriptsize, anchor=north] at (axis cs:0.75,-1.35) {$m = 4$};
+    \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.78,2.75) {$m = 5$};
+  \end{axis}
+\end{tikzpicture}

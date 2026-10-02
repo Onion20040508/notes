@@ -57,6 +57,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 
 ^der-ca-2-1
 
+*Uses:* [[§CA.2 Contour Integration#^def-ca-2-1|Def. §CA.2.1]]
+
 > [!definition] Definition §CA.2.2: Analytic Function
 > $f$ is **analytic** (holomorphic) at $z$ if $f'(z) = \lim_{h\to0}[f(z + h) - f(z)]/h$ exists with the same limit from every direction of $h$. With $f = u + iv$, $z = x + iy$, this implies the **Cauchy–Riemann equations** $\partial_xu = \partial_yv$, $\partial_yu = -\partial_xv$. Polynomials, $e^z$, and rational functions away from the zeros of their denominators are analytic; $\bar z$ and $|z|^2$ are not.
 >
@@ -151,6 +153,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 
 ^der-ca-2-4
 
+*Uses:* [[§CA.2 Contour Integration#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Contour Integration#^thm-ca-2-2|Theorem §CA.2.2]] (Taylor series of $(z - z_0)^kf$)
+
 > [!theorem] Theorem §CA.2.5: Residue Theorem
 > If $f$ is analytic on a closed contour $\Gamma$ and inside it except at finitely many isolated singularities $z_1, \dots, z_N$, then
 >
@@ -211,6 +215,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 > - Jordan needs no rate of decay of $g$ but needs $g \to 0$; for the propagator integrand the faster ML estimate suffices ([[§C2.6 Green's Functions and the Feynman Propagator#^thm-c2-6-4|Theorem §C2.6.4]], Step 2).
 
 ^der-ca-2-6
+
+*Uses:* [[§CA.2 Contour Integration#^thm-ca-2-1|Theorem §CA.2.1]]
 
 > [!caution] Caution: Jordan's lemma needs $g \to 0$
 > No rate of decay is required, but $g$ must tend to zero. For the equal-time Wightman integrand $p\,e^{ipr}/\sqrt{p^2 + m^2}$ the kernel tends to $1$ and the lemma fails; the cure there is to write $p\,e^{ipr} = -i\partial_re^{ipr}$ first ([[§C2.5 Heisenberg Fields, Two-Point Functions and Causality#^thm-c2-5-10|Theorem §C2.5.10]], second route). Nor may a regulator such as $e^{-\varepsilon p}$ be kept on the arc: near $\arg p = \pi$ it grows like $e^{\varepsilon R}$.
@@ -306,7 +312,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2.5 Heis
 *Uses:* [[§CA.2 Contour Integration#^thm-ca-2-1|Theorem §CA.2.1]], [[§CA.2 Contour Integration#^thm-ca-2-2|Theorem §CA.2.2]]
 
 ![[ph-qft-ca-2-1.svg]]
-*The complex $p$-plane for the position-space two-point integrals with phase $pr - t\sqrt{p^2 + m^2}$. $\sqrt{p^2 + m^2}$ has branch points at $\pm im$, with cuts to $\pm i\infty$. For $r > |t|$ the large arc contributes nothing, and the real-line integral equals the integral around the upper cut, down its right lip and up its left lip (Theorem §CA.2.8). The saddle point of [[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-3-1|Example §CA.3.1]] lies on this cut. Adapted from the user's PHY 513 notes, Fig. 2.2.*
+*The complex $p$-plane for the position-space two-point integrals with phase $pr - t\sqrt{p^2 + m^2}$. $\sqrt{p^2 + m^2}$ has branch points at $\pm im$, with cuts to $\pm i\infty$. For $r > |t|$ the large arc contributes nothing, and the real-line integral equals the integral around the upper cut, down its left lip and up its right lip (Theorem §CA.2.8); the closed contour drawn runs the other way round the cut and sums to zero. The saddle point of [[§CA.3 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-3-1|Example §CA.3.1]] lies on this cut. Adapted from the user's PHY 513 notes, Fig. 2.2.*
 
 ## The working rules
 
