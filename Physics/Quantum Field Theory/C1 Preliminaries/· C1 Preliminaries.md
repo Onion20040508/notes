@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ↑ [[Quantum Field Theory]] · [[· C2 The Quantum Scalar Field]] →
 
 **Builds on:** [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (62), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (24), [[· CA Mathematical Methods|CA Mathematical Methods]] (105)
-**Used by:** [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (13), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (103), [[· CA Mathematical Methods|CA Mathematical Methods]] (5)
+**Used by:** [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (13), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (103), [[· C5 The Quantum Spinor Field|C5 The Quantum Spinor Field]] (110), [[· CA Mathematical Methods|CA Mathematical Methods]] (5)
 
 ## Sections
 - [[§C1.1 Why Quantum Field Theory]] — 

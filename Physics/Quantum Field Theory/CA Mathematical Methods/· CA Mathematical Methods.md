@@ -6,10 +6,10 @@ chapter: CA
 tags: [chapter, quantum-field-theory]
 ---
 # CA Mathematical Methods
-← [[· C3 Poincaré Symmetry and Particle States]] · ↑ [[Quantum Field Theory]]
+← [[· C5 The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]]
 
 **Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (5), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (50)
-**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (105), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (572), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (11)
+**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (105), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (572), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (11), [[· C5 The Quantum Spinor Field|C5 The Quantum Spinor Field]] (95)
 
 ## Sections
 - [[§CA.1 Exchanging Limits, Derivatives and Integrals]] — 513 notes App. A §A.1
