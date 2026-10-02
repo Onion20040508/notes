@@ -206,6 +206,9 @@ Our mapping function, whose derivative is (1), can be written $f(z) = F(z) + B$,
 ![[m342-128-1.svg]]
 *The contour $C$ of the proof: the segment $-R \le x \le R$ (blue), indented by small semicircles of radius $\rho_j$ over the prevertices $x_j$ (red), and closed by the semicircle $|z| = R$ (green). The red and green pieces contribute nothing in the limit, because $k_j < 1$ and $k_n < 1$; what is left is the integral of $dw/(w - w_0)$ once around the polygon.*
 
+> [!remark]- Connections
+> - Used in Electromagnetism: maps for polygons and Maxwell's fringing field at the edge of a capacitor — [[§C6.4★ The Complex Potential and the Variational Principle#^rem-c6-4-1|EM Remark: Maxwell's fringing field, and maps for polygons]].
+
 Given a specific polygon $P$, how many constants in (7) must be determined? Write $z_0 = 0$, $A = 1$, $B = 0$ and require only that the $x$ axis be mapped onto some polygon $P'$ similar to $P$; the size and position of $P'$ are then adjusted by choosing $A$ and $B$.
 
 > [!remark] Remark: Counting the Constants

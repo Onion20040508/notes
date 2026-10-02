@@ -213,6 +213,7 @@ The proof (carried out below for two constraints in $\mathbb{R}^4$) uses the imp
 > - The implicit function theorem for systems that the proof needs, not proved in 452, is [[§7 The Regular Value Theorem#^thm-7-1|591 Thm. §7.1]]; the tangent space of the constraint set is the kernel of the constraint Jacobian, [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|591 Thm. §20.3]], and the coordinate-free counterpart of the normal space spanned by the $\nabla g_i$ is the conormal space, [[§30 Submanifolds#^def-30-2|591 Def. §30.2]].
 > - Computational version: [[§97 Lagrange Multipliers#^thm-97-2|Calc Thm. §97.2]] (two constraints, with worked examples).
 > - A worked special case: [[§50★ Constrained Optimization#^thm-50-1|235 Thm. §50.1]] (the extremes of xᵀAx on the unit sphere are the extreme eigenvalues of A; the Lagrange condition there reads Ax = λx) and, with the two constraints xᵀx = 1, xᵀu₁ = 0, [[§50★ Constrained Optimization#^thm-50-3|235 Thm. §50.3]].
+> - Used in Electromagnetism: charges on conductors at fixed total charges minimize the electrostatic energy, and the multiplier of each charge constraint is that conductor's potential (Thomson's theorem) — [[§C4.1 Induced Charge, Screening and Thomson's Theorem#^thm-c4-1-3|EM Theorem §C4.1.3]].
 
 > [!remark] Remark: Why Multiple Constraints?
 > In $\mathbb{R}^3$, a single constraint $g(x, y, z) = 0$ defines a surface (2D object). To get a curve (1D object), we need two constraints.

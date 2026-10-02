@@ -201,6 +201,7 @@ The proof that conjugates exist rests on a fact about line integrals from advanc
 > [!remark]- Connections
 > - In vector language, (9) says that $(-u_y, u_x)$, the gradient of $u$ turned through $+\pi/2$, is a conservative field on $D$, and $v$ is its potential: [[§110 Green's Theorem#^thm-110-5|Calc Thm. §110.5]] (test for conservative fields on simply connected regions) and [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Calc Thm. §109.3]]. In the language of forms, $-u_y\,dx + u_x\,dy$ is closed exactly when $u$ is harmonic, and the conjugate exists when it is exact: [[Poincaré Lemma|452 Poincaré Lemma]].
 > - A second proof inside complex analysis: $g = u_x - iu_y$ satisfies the Cauchy–Riemann equations (they are $u_{xx} = -u_{yy}$ and $u_{xy} = u_{yx}$), so it is analytic in $D$; on a simply connected domain it has an antiderivative $G$ ([[§52 Simply Connected Domains#^cor-52-2|Corollary §52.2]]); then $G' = (\operatorname{Re}G)_x - i(\operatorname{Re}G)_y = u_x - iu_y$, so $\operatorname{Re}G = u + c$, and $G - c = u + iv$.
+> - Used in Electromagnetism: the flux function as the harmonic conjugate of the potential — [[§C6.4★ The Complex Potential and the Variational Principle#^def-c6-4-1|EM Def. §C6.4.1]], [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-1|EM Theorem §C6.4.1]].
 
 > [!example] Example §115.3: The Conjugate of 2x − 2xy by a Line Integral
 > For $u(x, y) = 2x - 2xy$ (Example §115.2), $-u_t(s, t) = 2s$ and $u_s(s, t) = 2 - 2t$, so by (9) with $(x_0, y_0) = (0, 0)$

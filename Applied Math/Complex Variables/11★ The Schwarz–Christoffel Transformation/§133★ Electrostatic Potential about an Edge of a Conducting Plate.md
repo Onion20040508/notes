@@ -113,6 +113,9 @@ Two parallel grounded conducting planes with a semi-infinite plate at potential 
 ![[m342-133-1.svg]]
 *Equipotentials $V = 0.1, 0.2, \ldots, 0.9$ between the grounded planes $v = 0$, $v = \pi$ and the plate $v = \pi/2$, $u \ge 0$, at potential $1$ (red). They are the images under (5) of the circular arcs $\theta_1 - \theta_2 = \pi V$ through $z = \pm1$. Far to the right they become parallel to the plates (the field of two parallel-plate capacitors); around the edge they crowd together, which is the strong fringe field at the edge of a plate.*
 
+> [!remark]- Connections
+> - Used in Electromagnetism: Example §133.2 is Maxwell's fringing field at the edge of a capacitor plate — [[§C6.4★ The Complex Potential and the Variational Principle#^rem-c6-4-1|EM Remark: Maxwell's fringing field, and maps for polygons]].
+
 > [!example] Example §133.3: A Plate at Height hπ
 > Generalize Example §133.1: the semi-infinite plate lies along $v = h\pi$, $u \ge 0$ ($0 < h < 1$), between the planes $v = 0$ and $v = \pi$. Obtain formally the mapping function given with B&C's Fig. 22 (Appendix 2),
 >

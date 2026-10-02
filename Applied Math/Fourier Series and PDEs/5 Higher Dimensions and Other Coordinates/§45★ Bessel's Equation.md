@@ -126,6 +126,7 @@ The series serves for evaluating $J_\mu$ and for obtaining its properties. From 
 > - Stewart defines $J_0$ by the same series and finds its domain by the ratio test and its derivative term by term: [[§77 Representations of Functions as Power Series#^ex-77-5|Calc Ex. §77.5]].
 > - The rigorous facts behind Theorem §45.2: radius of convergence, [[§23 Power Series#^thm-23-2|451 Thm. §23.2]]; a power series may be differentiated term by term inside its interval of convergence, [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]].
 > - See also: [[§66 Laurent Series#^ex-66-2|342 Ex. §66.2]] (the $J_n$ as Laurent coefficients of $\exp\big[\frac z2\big(w - \frac1w\big)\big]$, with the integral formula $J_n(z) = \frac1\pi\int_0^\pi\cos(n\phi - z\sin\phi)\,d\phi$).
+> - Used in Electromagnetism: the four kinds of Bessel function in cylindrical boundary-value problems — [[§C6.3 Separation in Cylindrical and Polar Coordinates#^def-c6-3-1|EM Def. §C6.3.1]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-1|EM Theorem §C6.3.1]].
 
 > [!theorem] Theorem §45.2: J_μ Solves Bessel's Equation
 > For integer $\mu \ge 0$ the series (5) converges for every $r$, and $R = J_\mu(\lambda r)$ is a solution of Bessel's equation (1) on $0 < r < \infty$. It is bounded near $r = 0$, with $J_0(0) = 1$ and $J_\mu(0) = 0$ for $\mu \ge 1$.
@@ -279,6 +280,7 @@ There must be a second, independent solution of Bessel's equation.
 > [!remark]- Connections
 > - The general solution of a second-order linear equation from two independent solutions, and independence as a nonzero Wronskian: [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|331 Thm. §14.4]], with Abel's theorem [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|331 Thm. §14.8]] giving $W[J_\mu, Y_\mu] = C/r$ without computing either function.
 > - The same pattern in the potential problem of [[§39 Potential in a Disk#^thm-39-2|Theorem §39.2]]: the radial equation $r^2R'' + rR' - m^2R = 0$ (Bessel's equation with $\lambda = 0$) has solutions $r^m$ and $r^{-m}$ (or $1$ and $\ln r$), and boundedness at the center discards the second, just as it discards $Y_\mu$ here.
+> - Used in Electromagnetism: separated solutions of Laplace's equation in cylindrical coordinates, and the zeros, asymptotics and orthogonality boundary-value problems need — [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-1|EM Theorem §C6.3.1]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-2|EM Theorem §C6.3.2]].
 
 ![[m341-45-2.svg]]
 *The Bessel functions of the second kind $Y_0$ (blue) and $Y_1$ (red), computed with SciPy. Both tend to $-\infty$ at the origin, $Y_0$ like $\frac{2}{\pi}\ln x$ and $Y_1$ like $-\frac{2}{\pi x}$, which is why they are excluded from problems in a full disk. For large $x$ they oscillate within the envelope $\pm\sqrt{2/(\pi x)}$ (dashed), like $J_0$ and $J_1$ shifted by a quarter period.*

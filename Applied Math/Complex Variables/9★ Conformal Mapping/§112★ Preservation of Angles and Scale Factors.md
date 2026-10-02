@@ -87,6 +87,7 @@ Since $z'(t_0) \ne 0$ and $f'(z_0) \ne 0$, also $w'(t_0) \ne 0$, so $\Gamma$ has
 
 > [!remark]- Connections
 > - Why it works, in matrix form: by the Cauchy–Riemann equations the Jacobian matrix of $(x, y) \mapsto (u, v)$ at $z_0$ is $\begin{bmatrix} u_x & -v_x \\ v_x & u_x \end{bmatrix}$ with $u_x + iv_x = f'(z_0)$, a rotation–scaling matrix: rotation through $\arg f'(z_0)$ followed by scaling by $|f'(z_0)|$, [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]. A linear map of that form preserves angles; the tangent vector $z'(t_0)$ is carried to $w'(t_0)$ by this matrix ([[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]], the Jacobian).
+> - Used in Electromagnetism: analytic maps carry electrostatic solutions to solutions, field lines staying perpendicular to equipotentials — [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-2|EM Theorem §C6.4.2]].
 
 Because of this angle-preserving property, the following terms are used.
 

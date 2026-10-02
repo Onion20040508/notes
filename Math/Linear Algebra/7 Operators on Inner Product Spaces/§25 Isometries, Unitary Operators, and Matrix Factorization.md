@@ -195,6 +195,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Equivalently all eigenvalues $>0$; Gram matrices $\big(\langle v_k,v_j\rangle\big)$ of independent lists are positive definite. Metric tensors $g_{ij}$ in Riemannian geometry are positive definite at each point.
 > - Computational version: [[§49★ Quadratic Forms#^def-49-5|235 Def. §49.5]] (positive definite matrices, real case).
+> - Used in Electromagnetism: the capacitance matrix of a system of conductors is a Gram matrix, and it and the coefficients of potential are positive definite — [[§C4.3 The Capacitance Matrix#^thm-c4-3-2|EM Theorem §C4.3.2]], [[§C4.3 The Capacitance Matrix#^thm-c4-3-5|EM Theorem §C4.3.5]].
 
 > [!theorem] Theorem 7.63: Cholesky factorization
 > If $B$ is positive definite, there is a unique upper-triangular $R$ with positive diagonal such that $B=R^*R$.

@@ -184,6 +184,7 @@ To guarantee that eigenfunctions exist and that the integrations by parts are le
 > [!remark]- Connections
 > - Finite-dimensional version: eigenvectors of a symmetric matrix for distinct eigenvalues are orthogonal, [[§48★ Diagonalization of Symmetric Matrices#^thm-48-1|235 Thm. §48.1]], by the same one-line computation; for self-adjoint operators on an inner product space ([[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]), and more generally normal ones, it is [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]. See the remark below for the dictionary.
 > - $\langle f, g\rangle_p = \int_l^r f(x)g(x)p(x)\,dx$ is an inner product (a weighted version of [[§16 Definition and Examples#^ex-16-3|556 Ex. §16.3]] and [[§46 Inner Product Spaces#^ex-46-4|235 Ex. §46.4]]), and the theorem says that the eigenfunctions form an orthogonal set for it in the sense of [[§20 Orthonormal Sets and Bases#^def-20-1|556 Def. §20.1]].
+> - Used in Electromagnetism: separation of variables in electrostatics — the separated equations as Sturm–Liouville problems, orthonormality, completeness and closure of their eigenfunctions, and the orthogonality of Bessel functions — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^def-c6-2-1|EM Def. §C6.2.1]], [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-2|EM Theorem §C6.3.2]].
 
 > [!remark] Remark: Self-Adjointness
 > The 10.10 lecture labels the key step of the proof "self-adjoint". Write $L[\phi] = (s\phi')' - q\phi$. The integration by parts above shows, for any two twice continuously differentiable functions $\phi$, $\psi$ satisfying the boundary conditions (6) and (7),
@@ -228,6 +229,7 @@ Powers writes the eigenvalue as $\lambda^2$ and orders the eigenvalues, which pr
 
 > [!remark]- Connections
 > - The same argument for a self-adjoint operator, $\lambda\|v\|^2 = \langle Tv, v\rangle = \langle v, Tv\rangle = \bar\lambda\|v\|^2$: [[§22 Self-Adjoint and Normal Operators#^ladr-7-12|LADR 7.12]]. Matrix versions: part (a) of [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]] (real symmetric) and [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]] (Hermitian).
+> - Used in Electromagnetism: the separation constants of electrostatic boundary-value problems are real — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]].
 
 Powers also notes that any constant multiple of an eigenfunction is an eigenfunction, but that apart from a constant multiplier the eigenfunctions are unique.
 

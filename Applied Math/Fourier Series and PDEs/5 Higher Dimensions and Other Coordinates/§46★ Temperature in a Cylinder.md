@@ -189,6 +189,7 @@ The orthogonality relation tells how to choose the coefficients in (11): multipl
 
 > [!remark]- Connections
 > - The Hilbert-space counterpart of the theorem is that the normalized functions $J_0(\lambda_n r)/\|J_0(\lambda_n r)\|$ form an orthonormal basis of $L^2\big((0, a), r\,dr\big)$: every function orthogonal to all of them is $0$, equivalently Parseval's equality holds, [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]]. This completeness is not proved in the vault.
+> - Used in Electromagnetism: Fourier–Bessel series for a cylinder with the potential given on an end face, and the two-tube electron lens — [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-2|EM Theorem §C6.3.2]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-3|EM Theorem §C6.3.3]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^ex-c6-3-1|EM Example §C6.3.1]].
 
 ## Solution of the Heat Problem
 

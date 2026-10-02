@@ -149,6 +149,7 @@ In the [[§16 Line Integrals and Green's Theorem|previous section]] we derived [
 > [!remark]- Connections
 > - $n = 1$ is the [[Fundamental Theorem of Calculus]]; $n = 2$ is [[§16 Line Integrals and Green's Theorem#^thm-16-2|Theorem §16.2]]; the $\mathbb{R}^3$ version with parametrized surfaces is [[Divergence Theorem in ℝ³|Theorem §18.2]].
 > - The same "FTC in one direction" proof, done for forms: [[Generalized Stokes' Theorem|Generalized Stokes' Theorem (§23.1)]].
+> - Used in Electromagnetism: integration by parts in four dimensions turns the variation of the Maxwell action into the field equations and makes the coupling gauge invariant exactly when charge is conserved — [[§C1.1 Building the Maxwell Action#^thm-c1-1-2|EM Theorem §C1.1.2]], [[§C1.2 The Field Equations and the Bianchi Identity#^thm-c1-2-2|EM Theorem §C1.2.2]], [[§C1.3 Gauge Symmetry and Charge Conservation#^thm-c1-3-1|EM Theorem §C1.3.1]].
 
 ## Green's Identities
 
@@ -225,6 +226,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > - Its case n = 1 is integration by parts on [a, b]: [[§44 Integration by Parts#^thm-44-2|Calc Thm. §44.2]] (with worked examples).
 > - Used in PDEs: with $u=v=\phi$ an eigenfunction, it shows that the Dirichlet eigenvalues of the Laplacian are positive, [[§44★ Problems in Polar Coordinates#^rem-44-2|341 Remark §44.2]].
 > - Concrete case: [[§140★ Neumann Problems#^rem-140-1|342 Remark §140.1]] (Neumann data on a circle must have mean zero, the case u = 1).
+> - Used in Electromagnetism: the static action is a minimum, self-capacitance as an energy integral, the capacitance matrix as a Gram matrix, uniqueness with conductors and dielectrics, and the eigenfunction expansion of a Green function — [[§C2.1 The Static Limit and the Field of a Charge Distribution#^thm-c2-1-2|EM Theorem §C2.1.2]], [[§C4.2 Self-Capacitance and Capacitors#^thm-c4-2-1|EM Theorem §C4.2.1]], [[§C4.3 The Capacitance Matrix#^thm-c4-3-2|EM Theorem §C4.3.2]], [[§C6.1 Potential Theory and Uniqueness#^thm-c6-1-1|EM Theorem §C6.1.1]], [[§C7.2 Green Functions for Poisson’s Equation#^thm-c7-2-10|EM Theorem §C7.2.10]].
 
 > [!remark] Remark: Special Case: $u = v$
 > Setting $u = v$ in Green's first identity:
@@ -284,6 +286,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > [!remark]- Connections
 > - Used in PDEs: eigenfunctions of the Laplacian for different eigenvalues are orthogonal, [[§44★ Problems in Polar Coordinates#^thm-44-3|341 Thm. §44.3]], as for the vibrating drum, [[§47★ Vibrations of a Circular Membrane#^prop-47-3|341 Prop. §47.3]].
 > - Concrete case on a disk: [[§134★ Poisson Integral Formula#^thm-134-1|342 Thm. §134.1]] (the Poisson integral formula, which represents a harmonic function by its boundary values).
+> - Used in Electromagnetism: the mean-value theorem with sources, the representation formula of potential theory (single and dipole layers), and the reciprocity of Green functions — [[§C6.1 Potential Theory and Uniqueness#^thm-c6-1-2|EM Theorem §C6.1.2]], [[§C7.2 Green Functions for Poisson’s Equation#^thm-c7-2-2|EM Theorem §C7.2.2]], [[§C7.2 Green Functions for Poisson’s Equation#^thm-c7-2-3|EM Theorem §C7.2.3]].
 
 > [!remark] Remark: Green's Second Identity as Symmetry
 > Green's second identity expresses a kind of **symmetry of the Laplacian**: the “interaction” of $u$ with $\Delta v$ differs from the interaction of $v$ with $\Delta u$ only by a boundary term. This is the $L^2$ analog of integration by parts, and it shows that the Laplacian is a **[[§22 Self-Adjoint and Normal Operators#^ladr-7-10|self-adjoint operator]]** (up to boundary terms).
@@ -315,7 +318,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 > [!remark]- Connections
 > - 1D version of “nonnegative continuous integrand with zero integral vanishes”: [[§33 Properties of the Riemann Integral#^thm-33-7|Vanishing Integral of a Nonnegative Function (451 §33.7)]].
-> - Used in Electromagnetism: with [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-2|Ex. §17.2]], the uniqueness of the electrostatic potential for given boundary values or normal derivatives — [[§B3.1 Laplace's Equation and the Uniqueness Theorems#^thm-b3-1-3|EM Theorem §B3.1.3]].
+> - Used in Electromagnetism: with [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-2|Ex. §17.2]], the uniqueness of the electrostatic potential for given boundary values or normal derivatives — [[§B3.1 Laplace's Equation and the Uniqueness Theorems#^thm-b3-1-3|EM Theorem §B3.1.3]]. At level C: uniqueness with conductors at given potentials or charges and with linear dielectrics — [[§C6.1 Potential Theory and Uniqueness#^thm-c6-1-1|EM Theorem §C6.1.1]].
 > - Computational version: [[§39 Potential in a Disk#^cor-39-6|341 Cor. §39.6]] (uniqueness for Dirichlet's problem, proved there from the maximum principle, for the disk solved explicitly).
 
 > [!example] Example §17.2: Uniqueness for the Neumann Problem
@@ -348,7 +351,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 ^ex-17-3
 
 > [!remark]- Connections
-> - Used in Electromagnetism: the mean-value property of the electrostatic potential, proved there in full — [[§B3.1 Laplace's Equation and the Uniqueness Theorems#^thm-b3-1-1|EM Theorem §B3.1.1]].
+> - Used in Electromagnetism: the mean-value property of the electrostatic potential, proved there in full — [[§B3.1 Laplace's Equation and the Uniqueness Theorems#^thm-b3-1-1|EM Theorem §B3.1.1]]. At level C: the mean value with charges inside the sphere — [[§C6.1 Potential Theory and Uniqueness#^thm-c6-1-2|EM Theorem §C6.1.2]].
 > - Computational version: [[§39 Potential in a Disk#^thm-39-4|341 Thm. §39.4]] (the mean value property in the plane, proved in full from the Poisson integral), and the maximum principle it gives, [[§39 Potential in a Disk#^thm-39-5|341 Thm. §39.5]].
 
 > [!remark] Remark: Summary: The Hierarchy of Integral Theorems
@@ -605,6 +608,7 @@ Choosing $C' = 0$:
 > - The 3D radial computation (giving $f'' + \frac{2}{r} f'$ and the solution $1/r$): [[§19 The Laplacian in Spherical Coordinates#^rem-19-2|Verification: Radial Functions]], from the [[§19 The Laplacian in Spherical Coordinates#^thm-19-1|Laplacian in Spherical Coordinates (§19.1)]].
 > - Computational version: [[§35 Potential Equation#^ex-35-3|341 Ex. §35.3]](b) (the radial harmonic functions $A+B\ln r$, from the polar form of the Laplacian).
 > - Computational version: [[§122★ Electrostatic Potential#^ex-122-1|342 Ex. §122.1]] (the potential A ln r + B between coaxial cylinders) and [[§140★ Neumann Problems#^def-140-1|342 Def. §140.1]] (the Neumann kernel of the disk, a multiple of the fundamental solution).
+> - Used in Electromagnetism: the potential of a line charge, the image of a line charge in a cylinder, and line sources as singularities of the complex potential — [[§C2.2 Gauss's Law and the Solid Angle#^thm-c2-2-4|EM Theorem §C2.2.4]], [[§C7.1 The Method of Images#^thm-c7-1-6|EM Theorem §C7.1.6]], [[§C7.3★ Logarithmic Potentials and the Poisson–Boltzmann Equation#^thm-c7-3-1|EM Theorem §C7.3.1]].
 
 > [!remark] Remark: Connection to Other PDEs
 > This fundamental solution is the starting point for solving boundary value problems via Green's functions. The same approach — exploit symmetry to reduce a PDE to an ODE — applies to other equations:

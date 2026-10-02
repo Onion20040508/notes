@@ -78,6 +78,7 @@ Harmonic functions play an important role in applied mathematics. For example, t
 
 > [!remark]- Connections
 > - Theorem §27.1 is the source of the closed-form solutions of potential problems; the converse direction (every harmonic function on a simply connected domain is the real part of an analytic function, its **harmonic conjugate** being the imaginary part) is [[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]. The separation-of-variables solutions of [[§38 Potential in Unbounded Regions#^thm-38-1|341 Thm. §38.1]] are sums of real parts of analytic functions such as $-ie^{in\pi z/a}$; Example §27.1 is the term $n = 1$, $a = \pi$.
+> - Used in Electromagnetism: the potential and the flux function as real and imaginary parts of the complex potential — [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-1|EM Theorem §C6.4.1]].
 
 > [!example] Example §27.1: Steady Temperatures in a Semi-Infinite Strip
 > The function $T(x, y) = e^{-y}\sin x$ is harmonic in any domain of the $xy$ plane and, in particular, in the semi-infinite vertical strip $0 < x < \pi$, $y > 0$. It also assumes the values indicated on the edges of the strip. More precisely, it satisfies all of the conditions

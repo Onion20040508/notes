@@ -115,6 +115,7 @@ $$
 > [!remark]- Connections
 > - The mean-square counterpart: the normalized eigenfunctions (remark below) form an orthonormal basis of the weighted $L^2$ space in the sense of [[§20 Orthonormal Sets and Bases#^def-20-4|556 Def. §20.4]], characterized by Parseval's equality in [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]]; the case $\phi'' + \lambda^2\phi = 0$ with periodic conditions is the Fourier basis, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]].
 > - The uniform-convergence clause has the form of the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], for the series of normalized eigenfunctions, which are uniformly bounded for a regular problem.
+> - Used in Electromagnetism: expanding boundary potentials in separated eigenfunctions — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]].
 
 Notice the similarity to the Fourier series convergence theorem: at a jump the series converges to the average of the one-sided limits. At an endpoint where the boundary condition is $\phi = 0$, every term vanishes, so the series converges to $0$ there whatever $f$ is ([[§24 Expansion in Series of Eigenfunctions#^ex-24-2|Example §24.2]]).
 
