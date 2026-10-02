@@ -15,8 +15,8 @@ tags: [differentiable-manifolds, hub]
 - [[§23 Derivations and the Abstract Tangent Space#^lem-23-8|Lemma §23.8: Open Subsets Have the Same Abstract Tangent Spaces]]
 - [[§23 Derivations and the Abstract Tangent Space#^prop-23-9|Proposition §23.9: Charts Are Diffeomorphisms]]
 - [[§25 The Differential in Coordinates#^thm-25-2|Theorem §25.2: The Matrix of the Differential]]
-- [[§28 Local Diffeomorphisms#^def-28-1|Definition §28.1: Local Diffeomorphism]]
 - [[§28 Local Diffeomorphisms#^thm-28-1|Theorem §28.1: Inverse Function Theorem]]
+- [[§28 Local Diffeomorphisms#^def-28-1|Definition §28.1: Local Diffeomorphism]]
 
 ## Used in (Differentiable Manifolds)
 - [[§28 Local Diffeomorphisms#^cor-28-3|Corollary §28.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms]]

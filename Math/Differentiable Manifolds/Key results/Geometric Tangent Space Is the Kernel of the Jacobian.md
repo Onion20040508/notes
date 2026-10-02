@@ -13,8 +13,8 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§7 The Regular Value Theorem#^def-7-2|Definition §7.2: Regular Point and Regular Value]]
 - [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3: Regular Value Theorem]]
-- [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Definition §20.1: Geometric Tangent Space]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-1|Lemma §20.1: Locality of the Geometric Tangent Space]]
+- [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Definition §20.1: Geometric Tangent Space]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-2|Lemma §20.2: The Geometric Tangent Space of a Graph]]
 
 ## Its proof uses (other subjects)

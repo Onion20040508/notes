@@ -11,8 +11,8 @@ tags: [differentiable-manifolds, hub]
 - [[§25 The Differential in Coordinates#^thm-25-2|Theorem §25.2: The Matrix of the Differential]], in [[§25 The Differential in Coordinates]]
 
 ## Its proof uses
-- [[§23 Derivations and the Abstract Tangent Space#^def-23-5|Definition §23.5: Pushforward — the Differential]]
 - [[§23 Derivations and the Abstract Tangent Space#^prop-23-5|Proposition §23.5: The Differential Is a Linear Map of Abstract Tangent Spaces]]
+- [[§23 Derivations and the Abstract Tangent Space#^def-23-5|Definition §23.5: Pushforward — the Differential]]
 - [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|Theorem §24.5: Basis Theorem]]
 - [[§25 The Differential in Coordinates#^prop-25-1|Proposition §25.1: Partial Derivatives Upstairs and Downstairs]]
 

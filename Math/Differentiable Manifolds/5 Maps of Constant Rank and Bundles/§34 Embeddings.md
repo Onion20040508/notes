@@ -99,7 +99,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 > [!remark] Remark: Where Is Injectivity Used?
 > In lecture the last equality caused trouble, and a discussion. Uribe first located the use of injectivity there; a student pointed out that $(*)$ concerns only $F(U)$, and that the proof seems to need only that $F$ be an immersion ([[§33 Immersions#^def-33-1|Def. §33.1]]) which is open ([[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]]) onto its image. Another student added covering-type examples: maps that are not injective but whose images are manifolds, such as $\mathbb{R} \to S^1$, $t \mapsto (\cos t, \sin t)$ ([[§28 Local Diffeomorphisms#^ex-28-1|Ex. §28.1]]), or the two-to-one map $S^2 \to \mathbb{RP}^2$ ([[§28 Local Diffeomorphisms#^ex-28-2|Ex. §28.2]]). Uribe agreed — “I don't think we're using injectivity” — and promised “a definite conclusion by email.”
 >
-> *The notes' reading, pending that email.* The students are right. The proof above uses exactly two things: the normal form (the immersion hypothesis), and that $F(U)$ is open in $F(M)$ for the $U$ of the normal form. With the completion via [[§33 Immersions#^cor-33-2|Corollary §33.2]] nothing else enters, and injectivity in particular is never used. So the proof gives the next proposition.
+> *The conclusion, from Uribe's follow-up email.* The students were right: “a proof that we did today does show that for an immersion that is open as a map onto its image (so for all $U$ open in $M$, $F(U)$ is open in $F(M)$), $F(M)$ is a submanifold. The map $F$ does not have to be injective.” The proof uses exactly two things: the normal form (the immersion hypothesis), and that $F(U)$ is open in $F(M)$ for the $U$ of the normal form; with the completion via [[§33 Immersions#^cor-33-2|Corollary §33.2]] nothing else enters. Injectivity belongs to the *idea* of an embedding — “the idea of an embedding is that it is an isomorphism between $M$ and its image” ([[§34 Embeddings#^cor-34-3|Corollary §34.3]]) — not to this proof. He added that “being an immersion and an open map onto its image” is “an unusual class of maps.”
 
 ^rem-34-1
 
@@ -109,7 +109,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ^prop-34-2
 
 > [!proof]+ Proof
-> *(Not from lecture: the conclusion of the class discussion, pending Uribe's email.)* The proof of [[§34 Embeddings#^thm-34-1|Theorem §34.1]], word for word: openness of $F$ onto its image is all it used to produce $W$. For example, $t \mapsto (\cos t, \sin t)$ is an immersion of $\mathbb{R}$, open onto $S^1$ and far from injective — every point of $S^1$ has infinitely many preimages — and its image $S^1$ is a submanifold of $\mathbb{R}^2$. The figure-eight is not open onto its image, consistent with its image not being a submanifold.
+> *(The conclusion of the class discussion, confirmed in Uribe's follow-up email.)* The proof of [[§34 Embeddings#^thm-34-1|Theorem §34.1]], word for word: openness of $F$ onto its image is all it used to produce $W$. For example, $t \mapsto (\cos t, \sin t)$ is an immersion of $\mathbb{R}$, open onto $S^1$ and far from injective — every point of $S^1$ has infinitely many preimages — and its image $S^1$ is a submanifold of $\mathbb{R}^2$. The figure-eight is not open onto its image, consistent with its image not being a submanifold.
 
 ^pf-34-2
 
@@ -150,7 +150,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ^prop-34-4
 
 > [!proof]+ Proof
-> *(Lecture 14 — “it's a very funny proof. You go back and forth literally”; the second claim, which Uribe left to check, is completed.)* Let $C \subseteq M$ be closed.
+> *(Lecture 14 — “it's a very funny proof. You go back and forth literally.” Uribe did not finish Claim 2 in lecture and sent the complete proof in his follow-up email; the completion of Claim 2 below is the notes' own.)* Let $C \subseteq M$ be closed.
 >
 > *Claim 1: $F(C) \cap K$ is closed for every compact $K \subseteq N$.* $F^{-1}(K)$ is compact, so $C \cap F^{-1}(K)$, a closed subset of it, is compact; its image $F\big(C \cap F^{-1}(K)\big)$ is compact, hence closed in the Hausdorff space $N$. And $F\big(C \cap F^{-1}(K)\big) = F(C) \cap K$: a point of the left side is $F(c)$ with $c \in C$ and $F(c) \in K$, and conversely.
 >
@@ -188,7 +188,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ^cor-34-6
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* $F$ is proper: if $K \subseteq N$ is compact, it is closed, so $F^{-1}(K)$ is closed in the compact $M$, hence compact. Apply [[§34 Embeddings#^thm-34-5|Theorem §34.5]].
+> *(Uribe's follow-up email: “Note that $F$ is proper if $M$ is compact, a fact that can be very useful!”; the proof is filled in.)* $F$ is proper: if $K \subseteq N$ is compact, it is closed, so $F^{-1}(K)$ is closed in the compact $M$, hence compact. Apply [[§34 Embeddings#^thm-34-5|Theorem §34.5]].
 
 ^pf-34-6
 
