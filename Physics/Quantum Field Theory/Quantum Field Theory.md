@@ -52,4 +52,4 @@ graph TD
 Chapters without notes yet (Yu's numbering).
 
 **Level C — PHY 513 (Larsen, Fall 2026; Peskin & Schroeder; Yu)**
-C1 Preliminaries: why QFT, natural units, Lorentz group, tensors, action, Noether · C3 Poincaré symmetry and particle states (★ Wigner) · C4 The quantum vector field (★ Proca) · C5 The quantum spinor field · C6 Interactions of quantum fields · C7 Feynman diagrams · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields · C10 The S-matrix and correlation functions · C11 Path-integral quantization
+C6 Interactions of quantum fields · C7 Feynman diagrams · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields · C10 The S-matrix and correlation functions · C11 Path-integral quantization
