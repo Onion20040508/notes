@@ -126,13 +126,13 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 > [!proof]+ Proof
 > Let $\overline{D} = D \cup C$, a closed bounded set. Every point of $C$ has a disk around it in which $f$ is analytic and, by continuity, nonzero.
 >
-> **Poles.** Suppose there were infinitely many distinct poles. By the Bolzano–Weierstrass theorem they have an accumulation point $z^*$ in $\overline{D}$. It is not on $C$, since near points of $C$ there are no poles. So $z^* \in D$, where $f$ is either analytic at $z^*$ (then analytic in a disk around it, which contains no pole) or has a pole at $z^*$ (an isolated singular point, so a punctured disk around it contains no pole). Either way some neighborhood of $z^*$ contains at most one pole, a contradiction.
+> **Poles.** Suppose there were infinitely many distinct poles. By the Bolzano–Weierstrass theorem they have an accumulation point $z^{\ast}$ in $\overline{D}$. It is not on $C$, since near points of $C$ there are no poles. So $z^{\ast} \in D$, where $f$ is either analytic at $z^{\ast}$ (then analytic in a disk around it, which contains no pole) or has a pole at $z^{\ast}$ (an isolated singular point, so a punctured disk around it contains no pole). Either way some neighborhood of $z^{\ast}$ contains at most one pole, a contradiction.
 >
 > **$f$ is not identically zero.** Let $D_0$ be $D$ with the finitely many poles removed; it is open and connected (a polygonal path in $D$ can be rerouted around finitely many points). If $f \equiv 0$ in $D_0$, then by continuity $f = 0$ at the points of $C$, which are limits of points of $D_0$; but $f \ne 0$ on $C$.
 >
 > **Zeros have finite order.** If at a zero $z_0$ all derivatives of $f$ vanished, the Taylor series of $f$ at $z_0$ would be $0$, so $f \equiv 0$ in a disk around $z_0$, and then $f \equiv 0$ in the domain $D_0$ by [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1]], which we have excluded.
 >
-> **Finitely many zeros.** Suppose there were infinitely many. They accumulate at some $z^* \in \overline{D}$. Not on $C$, since $f \ne 0$ near $C$. Not at a pole, since $|f(z)| \to \infty$ at a pole ([[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-4|Theorem §84.4]]), so $f \ne 0$ near it. So $f$ is analytic at $z^*$, $f(z^*) = 0$ by continuity, and $z^*$ is a zero that is not isolated. But a zero of finite order is isolated ([[§82 Zeros of Analytic Functions#^thm-82-2|Theorem §82.2]]): a contradiction.
+> **Finitely many zeros.** Suppose there were infinitely many. They accumulate at some $z^{\ast} \in \overline{D}$. Not on $C$, since $f \ne 0$ near $C$. Not at a pole, since $|f(z)| \to \infty$ at a pole ([[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-4|Theorem §84.4]]), so $f \ne 0$ near it. So $f$ is analytic at $z^{\ast}$, $f(z^{\ast}) = 0$ by continuity, and $z^{\ast}$ is a zero that is not isolated. But a zero of finite order is isolated ([[§82 Zeros of Analytic Functions#^thm-82-2|Theorem §82.2]]): a contradiction.
 
 ^pf-93-3
 

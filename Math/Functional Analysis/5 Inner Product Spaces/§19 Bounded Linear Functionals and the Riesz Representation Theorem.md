@@ -198,13 +198,13 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 ^prop-19-5
 
 > [!proof]+ Proof
-> (HW5, Problem 3.) **(a)** By the Riesz representation theorem (Theorem [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|§19.2]]) there is $u^* \in H$ with $\ell(v) = (v, u^*)$ for all $v \in H$. Since $H$ is real, $(u^*, v) = (v, u^*)$, and for every $v \in K$
+> (HW5, Problem 3.) **(a)** By the Riesz representation theorem (Theorem [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|§19.2]]) there is $u^{\ast} \in H$ with $\ell(v) = (v, u^{\ast})$ for all $v \in H$. Since $H$ is real, $(u^{\ast}, v) = (v, u^{\ast})$, and for every $v \in K$
 >
 > $$
 > \frac12 \|u^* - v\|^2 - \frac12 \|u^*\|^2 = \frac12 \bigl( \|u^*\|^2 - 2(v, u^*) + \|v\|^2 \bigr) - \frac12 \|u^*\|^2 = \frac12 \|v\|^2 - (v, u^*) = f(v).
 > $$
 >
-> **(b)** *Existence.* Let $d = \inf_{v \in K} \|u^* - v\|$. By Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]] there is a unique $u_0 \in K$ with $\|u^* - u_0\| = d$. For every $v \in K$, $\|u^* - v\| \ge d \ge 0$, so $\|u^* - v\|^2 \ge \|u^* - u_0\|^2$, and by (a)
+> **(b)** *Existence.* Let $d = \inf_{v \in K} \|u^{\ast} - v\|$. By Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]] there is a unique $u_0 \in K$ with $\|u^{\ast} - u_0\| = d$. For every $v \in K$, $\|u^{\ast} - v\| \ge d \ge 0$, so $\|u^{\ast} - v\|^2 \ge \|u^{\ast} - u_0\|^2$, and by (a)
 >
 > $$
 > f(v) = \frac12 \|u^* - v\|^2 - \frac12 \|u^*\|^2 \ge \frac12 \|u^* - u_0\|^2 - \frac12 \|u^*\|^2 = f(u_0).
@@ -212,7 +212,7 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 >
 > Since $u_0 \in K$, $f(u_0) = \inf_{v \in K} f(v)$.
 >
-> *Uniqueness.* Let $u_1 \in K$ with $f(u_1) = f(u_0)$. By (a), $\|u^* - u_1\|^2 = \|u^* - u_0\|^2 = d^2$, so $\|u^* - u_1\| = d$: $u_1$ is also a point of $K$ closest to $u^*$, and $u_1 = u_0$ by the uniqueness in Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]].
+> *Uniqueness.* Let $u_1 \in K$ with $f(u_1) = f(u_0)$. By (a), $\|u^{\ast} - u_1\|^2 = \|u^{\ast} - u_0\|^2 = d^2$, so $\|u^{\ast} - u_1\| = d$: $u_1$ is also a point of $K$ closest to $u^{\ast}$, and $u_1 = u_0$ by the uniqueness in Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]].
 
 ^pf-19-5
 

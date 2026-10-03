@@ -78,7 +78,7 @@ The pressure on a *vertical* plate is not constant: it increases with depth. Tha
 ^thm-54-2
 
 > [!proof]+ Proof
-> **Stewart's argument.** Divide $[a, b]$ into $n$ subintervals of length $\Delta x$ with endpoints $x_i$, and choose $x_i^* \in [x_{i-1}, x_i]$. The $i$th horizontal strip of the plate is approximately a rectangle of height $\Delta x$ and width $w(x_i^*)$, so its area is $A_i \approx w(x_i^*)\,\Delta x$. If $\Delta x$ is small, the pressure on the strip is almost constant, $P_i \approx \delta x_i^*$ by Theorem §54.1, and the force on it is $F_i = P_i A_i \approx \delta x_i^* w(x_i^*)\,\Delta x$. Adding,
+> **Stewart's argument.** Divide $[a, b]$ into $n$ subintervals of length $\Delta x$ with endpoints $x_i$, and choose $x_i^{\ast} \in [x_{i-1}, x_i]$. The $i$th horizontal strip of the plate is approximately a rectangle of height $\Delta x$ and width $w(x_i^{\ast})$, so its area is $A_i \approx w(x_i^{\ast})\,\Delta x$. If $\Delta x$ is small, the pressure on the strip is almost constant, $P_i \approx \delta x_i^{\ast}$ by Theorem §54.1, and the force on it is $F_i = P_i A_i \approx \delta x_i^{\ast} w(x_i^{\ast})\,\Delta x$. Adding,
 >
 > $$
 > F = \sum_{i=1}^n F_i \approx \sum_{i=1}^n \delta x_i^* w(x_i^*)\,\Delta x \;\longrightarrow\; \int_a^b \delta x\, w(x)\,dx \qquad (n \to \infty).

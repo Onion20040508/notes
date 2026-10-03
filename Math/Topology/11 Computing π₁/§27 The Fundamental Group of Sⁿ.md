@@ -95,7 +95,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 *Uses:* [[Lebesgue Number Lemma|§16.3]], [[§15 Compact Spaces#^thm-15-10|§15.10]], [[Properties of Path Concatenation|§22.6]]
 
 ![[m590-27-1.svg]]
-*The proof in one picture ($n = 3$). The loop $f$ is cut at $f(a_1), f(a_2) \in U \cap V$ into pieces lying in $U$ (blue: $f_1, f_3$) or in $V$ (green: $f_2$); $U$ and $V$ are open, so their boundaries are dashed. The red paths $\alpha_i$ run inside the path-connected overlap from $x_0$ to the cut points, turning the pieces into loops at $x_0$: $g_1 = f_1 * \bar\alpha_1$ in $U$, $g_2 = \alpha_1 * f_2 * \bar\alpha_2$ in $V$, $g_3 = \alpha_2 * f_3$ in $U$. Each $\alpha_i$ is traversed once each way, so the product $g_1 * g_2 * g_3$ is $f$ again.*
+*The proof in one picture ($n = 3$). The loop $f$ is cut at $f(a_1), f(a_2) \in U \cap V$ into pieces lying in $U$ (blue: $f_1, f_3$) or in $V$ (green: $f_2$); $U$ and $V$ are open, so their boundaries are dashed. The red paths $\alpha_i$ run inside the path-connected overlap from $x_0$ to the cut points, turning the pieces into loops at $x_0$: $g_1 = f_1 \ast  \bar\alpha_1$ in $U$, $g_2 = \alpha_1 \ast  f_2 \ast  \bar\alpha_2$ in $V$, $g_3 = \alpha_2 \ast  f_3$ in $U$. Each $\alpha_i$ is traversed once each way, so the product $g_1 \ast  g_2 \ast  g_3$ is $f$ again.*
 
 > [!remark]- Connections
 > - Upgraded from “generate” to the exact group by the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]], whose surjectivity step is this theorem.

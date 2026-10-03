@@ -126,7 +126,7 @@ In heat conduction and vibration problems $F(s)$ typically has infinitely many i
 ^thm-95-3
 
 > [!proof]+ Proof
-> **Finitely many $s_n$ in each disk.** If infinitely many $s_n$ lay in a bounded set, they would accumulate at some point $s^*$ (Bolzano–Weierstrass). $F$ is not analytic at $s^*$, since every neighborhood of $s^*$ contains singular points; so $s^*$ is one of the singular points, and it is not isolated, contrary to the hypothesis. So only finitely many $s_n$ satisfy $|s_n - \gamma| < R_N$.
+> **Finitely many $s_n$ in each disk.** If infinitely many $s_n$ lay in a bounded set, they would accumulate at some point $s^{\ast}$ (Bolzano–Weierstrass). $F$ is not analytic at $s^{\ast}$, since every neighborhood of $s^{\ast}$ contains singular points; so $s^{\ast}$ is one of the singular points, and it is not isolated, contrary to the hypothesis. So only finitely many $s_n$ satisfy $|s_n - \gamma| < R_N$.
 >
 > **The limit.** For each $N$ the singular points inside the closed contour $L_{R_N} + C_{R_N}$ are exactly those with $|s_n - \gamma| < R_N$ (all have $\operatorname{Re}s_n < \gamma$, and none lies on $C_{R_N}$). As in the proof of Theorem §95.2, the residue theorem gives
 >

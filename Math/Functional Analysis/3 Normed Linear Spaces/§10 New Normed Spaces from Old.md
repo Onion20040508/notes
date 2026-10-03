@@ -105,7 +105,7 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 >
 > **Step 5: the unit sphere of $\|\cdot\|_1$ is sequentially compact.** Let $S = \{x \in X : \|x\|_1 = 1\}$ and let $\{x^{(k)}\} \subset S$, $x^{(k)} = \sum_i a^{(k)}_i e_i$. Each coordinate sequence is bounded, $|a^{(k)}_i| \le \|x^{(k)}\|_1 = 1$. By [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] in $\mathbb{F}$ applied $n$ times — extract a subsequence along which $a^{(k)}_1$ converges, then a further subsequence along which $a^{(k)}_2$ converges, and so on — there is a subsequence $\{x^{(k_r)}\}$ with $a^{(k_r)}_i \to a_i$ for every $i = 1, \ldots, n$. Put $x = \sum_i a_i e_i$. Then $\|x^{(k_r)} - x\|_1 = \sum_i |a^{(k_r)}_i - a_i| \to 0$ (a finite sum of terms tending to $0$), and $\|x\|_1 = \sum_i |a_i| = \lim_r \sum_i |a^{(k_r)}_i| = 1$, so $x \in S$. Thus every sequence in $S$ has a subsequence converging in $\|\cdot\|_1$ to a point of $S$.
 >
-> **Step 6: $\|\cdot\|'$ attains a positive minimum on $S$.** Let $c = \inf_{x \in S} \|x\|' \ge 0$. Choose $x^{(k)} \in S$ with $\|x^{(k)}\|' \to c$, and by Step 5 a subsequence $x^{(k_r)} \to x^* \in S$ in $\|\cdot\|_1$. By Step 4, $\|x^{(k_r)}\|' \to \|x^*\|'$, so $\|x^*\|' = c$. Since $x^* \in S$ we have $x^* \ne 0$, hence $c = \|x^*\|' > 0$ by positivity of $\|\cdot\|'$.
+> **Step 6: $\|\cdot\|'$ attains a positive minimum on $S$.** Let $c = \inf_{x \in S} \|x\|' \ge 0$. Choose $x^{(k)} \in S$ with $\|x^{(k)}\|' \to c$, and by Step 5 a subsequence $x^{(k_r)} \to x^{\ast} \in S$ in $\|\cdot\|_1$. By Step 4, $\|x^{(k_r)}\|' \to \|x^{\ast}\|'$, so $\|x^{\ast}\|' = c$. Since $x^{\ast} \in S$ we have $x^{\ast} \ne 0$, hence $c = \|x^{\ast}\|' > 0$ by positivity of $\|\cdot\|'$.
 >
 > **Step 7: $c\,\|x\|_1 \le \|x\|'$.** For $x = 0$ both sides vanish. For $x \ne 0$, $x/\|x\|_1 \in S$, so by homogeneity
 >
@@ -195,13 +195,13 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 ^prop-10-7
 
 > [!proof]+ Proof
-> (Left as an exercise in lecture.) Write $\|(x,y)\|_*$ for any of the three, and $N_*$ for the corresponding norm on $\mathbb{R}^2$ ($N_2(s,t) = (s^2 + t^2)^{1/2}$, $N_\infty(s,t) = \max\{|s|,|t|\}$, $N_1(s,t) = |s| + |t|$), so that $\|(x,y)\|_* = N_*(\|x\|_X, \|y\|_Y)$. Each $N_*$ is a norm on $\mathbb{R}^2$ (Examples [[§8 Normed Linear Spaces#^ex-8-1|§8.1]] and [[§3 Statement and Motivation#^ex-3-1|Ex. §3.1]]) and is *monotone* on the non-negative quadrant: $0 \le s \le s'$, $0 \le t \le t'$ imply $N_*(s,t) \le N_*(s',t')$, as is clear from the three formulas.
+> (Left as an exercise in lecture.) Write $\|(x,y)\|_{\ast}$ for any of the three, and $N_{\ast}$ for the corresponding norm on $\mathbb{R}^2$ ($N_2(s,t) = (s^2 + t^2)^{1/2}$, $N_\infty(s,t) = \max\{|s|,|t|\}$, $N_1(s,t) = |s| + |t|$), so that $\|(x,y)\|_{\ast} = N_{\ast}(\|x\|_X, \|y\|_Y)$. Each $N_{\ast}$ is a norm on $\mathbb{R}^2$ (Examples [[§8 Normed Linear Spaces#^ex-8-1|§8.1]] and [[§3 Statement and Motivation#^ex-3-1|Ex. §3.1]]) and is *monotone* on the non-negative quadrant: $0 \le s \le s'$, $0 \le t \le t'$ imply $N_{\ast}(s,t) \le N_{\ast}(s',t')$, as is clear from the three formulas.
 >
-> *Positivity.* $\|(x,y)\|_* \ge 0$, and it is $0$ iff $N_*(\|x\|_X, \|y\|_Y) = 0$ iff $\|x\|_X = \|y\|_Y = 0$ iff $x = 0$ and $y = 0$ iff $(x,y) = (0,0)$.
+> *Positivity.* $\|(x,y)\|_{\ast} \ge 0$, and it is $0$ iff $N_{\ast}(\|x\|_X, \|y\|_Y) = 0$ iff $\|x\|_X = \|y\|_Y = 0$ iff $x = 0$ and $y = 0$ iff $(x,y) = (0,0)$.
 >
-> *Homogeneity.* $\|(ax, ay)\|_* = N_*(|a|\,\|x\|_X, |a|\,\|y\|_Y) = |a|\,N_*(\|x\|_X, \|y\|_Y) = |a|\,\|(x,y)\|_*$, by homogeneity of $\|\cdot\|_X$, $\|\cdot\|_Y$ and then of $N_*$ (with the scalar $|a| \ge 0$).
+> *Homogeneity.* $\|(ax, ay)\|_{\ast} = N_{\ast}(|a|\,\|x\|_X, |a|\,\|y\|_Y) = |a|\,N_{\ast}(\|x\|_X, \|y\|_Y) = |a|\,\|(x,y)\|_{\ast}$, by homogeneity of $\|\cdot\|_X$, $\|\cdot\|_Y$ and then of $N_{\ast}$ (with the scalar $|a| \ge 0$).
 >
-> *Subadditivity.* By subadditivity in $X$ and $Y$, $\|x + x'\|_X \le \|x\|_X + \|x'\|_X$ and $\|y + y'\|_Y \le \|y\|_Y + \|y'\|_Y$. By monotonicity and then subadditivity of $N_*$ on $\mathbb{R}^2$,
+> *Subadditivity.* By subadditivity in $X$ and $Y$, $\|x + x'\|_X \le \|x\|_X + \|x'\|_X$ and $\|y + y'\|_Y \le \|y\|_Y + \|y'\|_Y$. By monotonicity and then subadditivity of $N_{\ast}$ on $\mathbb{R}^2$,
 >
 > $$
 > \begin{aligned}

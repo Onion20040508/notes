@@ -23,7 +23,7 @@ tags: [group-theory, math493]
 > (g_1 \star g_2) \star x = g_1 \star (g_2 \star x) \quad\text{and}\quad e \star x = x \qquad \text{for all } g_1, g_2 \in G,\ x \in X,
 > $$
 >
-> where on the left of the first identity $g_1 \star g_2$ is the product in $G$. Depending on context, $\star$ may be written $*$, $\times$, $\cdot$, or omitted. This is also called a **left action**; a **right action** is a map $X \times G \to X$ obeying $x \star (g_2 \star g_1) = (x \star g_2) \star g_1$ (and $x \star e = x$).
+> where on the left of the first identity $g_1 \star g_2$ is the product in $G$. Depending on context, $\star$ may be written $\ast$, $\times$, $\cdot$, or omitted. This is also called a **left action**; a **right action** is a map $X \times G \to X$ obeying $x \star (g_2 \star g_1) = (x \star g_2) \star g_1$ (and $x \star e = x$).
 >
 > *Source: WS 4*
 

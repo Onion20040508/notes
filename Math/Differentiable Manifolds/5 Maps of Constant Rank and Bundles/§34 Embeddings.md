@@ -121,7 +121,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ^cor-34-3
 
 > [!proof]+ Proof
-> *(Stated in Lecture 14 — “an embedding restricts to a diffeomorphism between $M$ and the image”; filled in.)* $F : M \to F(M)$ is smooth by [[§30 Submanifolds#^lem-30-3|Lemma §30.3]](2), and it is an immersion: its differential followed by the injective $\iota_*$ is the injective $F_*$. Both manifolds have dimension $m$, so it is a local diffeomorphism ([[§29 Submersions#^prop-29-1|Proposition §29.1]](3)); being bijective, it is a diffeomorphism, its inverse being smooth near every point.
+> *(Stated in Lecture 14 — “an embedding restricts to a diffeomorphism between $M$ and the image”; filled in.)* $F : M \to F(M)$ is smooth by [[§30 Submanifolds#^lem-30-3|Lemma §30.3]](2), and it is an immersion: its differential followed by the injective $\iota_{\ast}$ is the injective $F_{\ast}$. Both manifolds have dimension $m$, so it is a local diffeomorphism ([[§29 Submersions#^prop-29-1|Proposition §29.1]](3)); being bijective, it is a diffeomorphism, its inverse being smooth near every point.
 
 ^pf-34-3
 

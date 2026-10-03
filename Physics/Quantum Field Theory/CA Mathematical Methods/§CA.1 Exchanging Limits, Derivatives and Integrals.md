@@ -26,7 +26,7 @@ Quantum field theory differentiates under integrals, lets regulators $e^{-\varep
 > [!derivation]- Derivation
 > **Step 1** (part 1). This is [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]].
 >
-> **Step 2** (difference quotient). For $h \ne 0$, $\frac{F(r + h) - F(r)}{h} = \int\frac{f(p, r + h) - f(p, r)}{h}\,dp$, and by the mean value theorem ([[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]]), applied separately to the real and imaginary parts of $f$ (the integrands here are complex exponentials), each part of the integrand equals the same part of $\partial_rf(p, r^*)$ for some $r^*$ between $r$ and $r + h$ (a different $r^*$ for each part), so the integrand is bounded by $2g(p)$ independently of $h$.
+> **Step 2** (difference quotient). For $h \ne 0$, $\frac{F(r + h) - F(r)}{h} = \int\frac{f(p, r + h) - f(p, r)}{h}\,dp$, and by the mean value theorem ([[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]]), applied separately to the real and imaginary parts of $f$ (the integrands here are complex exponentials), each part of the integrand equals the same part of $\partial_rf(p, r^{\ast})$ for some $r^{\ast}$ between $r$ and $r + h$ (a different $r^{\ast}$ for each part), so the integrand is bounded by $2g(p)$ independently of $h$.
 >
 > **Step 3** (limit). For any sequence $h_n \to 0$ the integrands converge to $\partial_rf(p, r)$, dominated by $2g$; by Step 1 the integrals converge to $\int\partial_rf\,dp$.
 >

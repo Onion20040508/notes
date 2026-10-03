@@ -283,7 +283,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 >
 > Conversely, suppose $g$ is a quotient map. By [[Universal Property of Quotient Maps|the theorem]], $f$ is also a quotient map. Since $f$ is bijective, $f^{-1}$ is well defined and continuous. So $f$ is a homeomorphism.
 >
-> **Proof of (2):** Suppose $Z$ is Hausdorff. Let $x, y \in X^*$, $x \neq y$. Since $f$ is injective $\Rightarrow$ $f(x) \neq f(y)$, and there exist disjoint neighborhoods $U$ and $V$ such that $f(x) \in U$ and $f(y) \in V$. Then $f^{-1}(U)$ and $f^{-1}(V)$ are disjoint neighborhoods of $x$ and $y$ in $X^*$.
+> **Proof of (2):** Suppose $Z$ is Hausdorff. Let $x, y \in X^{\ast}$, $x \neq y$. Since $f$ is injective $\Rightarrow$ $f(x) \neq f(y)$, and there exist disjoint neighborhoods $U$ and $V$ such that $f(x) \in U$ and $f(y) \in V$. Then $f^{-1}(U)$ and $f^{-1}(V)$ are disjoint neighborhoods of $x$ and $y$ in $X^{\ast}$.
 
 ^pf-12-4
 

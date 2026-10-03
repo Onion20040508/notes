@@ -123,7 +123,7 @@ Multiplying by a simply connected factor does not change $\pi_1$: $\pi_1(X \time
 ^ex-35-1
 
 > [!remark] Remark: Direct Product vs. Free Product: The Exam Trap
-> The notation matters: $\times$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-5|direct product]], abelian) vs. $*$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]], typically non-abelian) correspond to different space constructions ($\times$ vs. $\vee$). On an exam, $\mathbb{Z}/2 \times \mathbb{Z}/2$ and $\mathbb{Z}/2 * \mathbb{Z}/2$ are *different groups* requiring *different spaces*. Always check which one is being asked for.
+> The notation matters: $\times$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-5|direct product]], abelian) vs. $\ast$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]], typically non-abelian) correspond to different space constructions ($\times$ vs. $\vee$). On an exam, $\mathbb{Z}/2 \times \mathbb{Z}/2$ and $\mathbb{Z}/2 \ast  \mathbb{Z}/2$ are *different groups* requiring *different spaces*. Always check which one is being asked for.
 
 ^rem-35-1
 

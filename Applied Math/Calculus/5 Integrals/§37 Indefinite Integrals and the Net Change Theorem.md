@@ -269,7 +269,7 @@ The most important instance concerns motion along a line, and it settles the gue
 >
 > The energy used was approximately $15{,}840$ megawatt-hours.
 >
-> **Units.** $\int_0^{24} P(t)\,dt$ is a limit of sums of terms $P(t_i^*)\,\Delta t$, megawatts times hours, so it is measured in megawatt-hours. In general, the unit of $\int_a^b f(x)\,dx$ is the unit of $f(x)$ times the unit of $x$.
+> **Units.** $\int_0^{24} P(t)\,dt$ is a limit of sums of terms $P(t_i^{\ast})\,\Delta t$, megawatts times hours, so it is measured in megawatt-hours. In general, the unit of $\int_a^b f(x)\,dx$ is the unit of $f(x)$ times the unit of $x$.
 >
 > *Stewart: Example 5.4.7*
 

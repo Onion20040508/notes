@@ -133,8 +133,8 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 > [!theorem] Proposition §9.1: Basic Properties of Outer Measure
 > The outer measure $m^*$ satisfies:
 > 1. $m^*(\emptyset) = 0$ and $m^*(A) \geq 0$ for all $A \subseteq \mathbb{R}^n$.
-> 2. **Monotonicity:** If $A_1 \subseteq A_2$, then $m^*(A_1) \leq m^*(A_2)$.
-> 3. **Countable subadditivity:** $m^*\left( \bigcup_{i=1}^{\infty} A_i \right) \leq \sum_{i=1}^{\infty} m^*(A_i)$.
+> 2. **Monotonicity:** If $A_1 \subseteq A_2$, then $m^{\ast}(A_1) \leq m^{\ast}(A_2)$.
+> 3. **Countable subadditivity:** $m^{\ast}\left( \bigcup_{i=1}^{\infty} A_i \right) \leq \sum_{i=1}^{\infty} m^{\ast}(A_i)$.
 
 ^prop-9-1
 
@@ -149,7 +149,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 >
 > so taking infimum: $m^*(A_1) \leq m^*(A_2)$.
 >
-> **(3)** If there exists $i$ with $m^*(A_i) = \infty$, the inequality holds trivially.
+> **(3)** If there exists $i$ with $m^{\ast}(A_i) = \infty$, the inequality holds trivially.
 >
 > Assume $m^*(A_i) < \infty$ for all $i$. Let $\epsilon > 0$. For each $i$, there exists an L-covering $\{I_k^{(i)}\}_{k=1}^{\infty}$ of $A_i$ such that
 >

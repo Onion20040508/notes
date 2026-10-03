@@ -28,7 +28,7 @@ Volume is handled like area. Cut the solid by parallel planes into thin slabs, a
 
 ^def-40-1
 
-For a solid $S$ that is not a cylinder, intersect $S$ with a plane: the plane region obtained is a **cross-section** of $S$. Let $A(x)$ be the area of the cross-section of $S$ in the plane $P_x$ perpendicular to the $x$-axis through the point $x$, $a \le x \le b$ (slice $S$ with a knife through $x$). Divide $S$ into $n$ slabs of equal width $\Delta x$ by the planes $P_{x_1}, P_{x_2}, \ldots$, like slices of a loaf of bread. With sample points $x_i^* \in [x_{i-1}, x_i]$, the $i$th slab $S_i$ (between $P_{x_{i-1}}$ and $P_{x_i}$) is approximately a cylinder with base area $A(x_i^*)$ and height $\Delta x$, so
+For a solid $S$ that is not a cylinder, intersect $S$ with a plane: the plane region obtained is a **cross-section** of $S$. Let $A(x)$ be the area of the cross-section of $S$ in the plane $P_x$ perpendicular to the $x$-axis through the point $x$, $a \le x \le b$ (slice $S$ with a knife through $x$). Divide $S$ into $n$ slabs of equal width $\Delta x$ by the planes $P_{x_1}, P_{x_2}, \ldots$, like slices of a loaf of bread. With sample points $x_i^{\ast} \in [x_{i-1}, x_i]$, the $i$th slab $S_i$ (between $P_{x_{i-1}}$ and $P_{x_i}$) is approximately a cylinder with base area $A(x_i^{\ast})$ and height $\Delta x$, so
 
 $$
 V(S_i) \approx A(x_i^*)\,\Delta x \qquad\text{and}\qquad V \approx \sum_{i=1}^{n} A(x_i^*)\,\Delta x .

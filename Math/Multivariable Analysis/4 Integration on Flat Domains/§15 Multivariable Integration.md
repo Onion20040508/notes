@@ -1254,7 +1254,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 
 When we compute $\iint_D f(x,y) \, dx \, dy$, we are summing up $f$-values weighted by infinitesimal areas $dx \, dy$.
 
-Under a coordinate transformation $(x, y) = \Phi(u, v)$, the domain $D$ becomes $D^*$ in the $(u, v)$-plane. But here's the key point: *the infinitesimal areas change*.
+Under a coordinate transformation $(x, y) = \Phi(u, v)$, the domain $D$ becomes $D^{\ast}$ in the $(u, v)$-plane. But here's the key point: *the infinitesimal areas change*.
 
 A small rectangle $du \times dv$ in the $(u,v)$-plane does **not** map to a rectangle of the same area in the $(x,y)$-plane. Instead, it maps to a (curvilinear) region with area approximately $|J| \, du \, dv$, where $J$ is the Jacobian determinant ([[§13 The Inverse Function Theorem#^def-13-1|Def. §13.1]]).
 
@@ -1426,7 +1426,7 @@ We present three different proofs, each offering a distinct perspective:
 > \text{Area} = \left| \det \begin{pmatrix} ah & bk \\ ch & dk \end{pmatrix} \right| = |adhk - bchk| = |ad - bc| \cdot hk = |J| \cdot hk.
 > $$
 >
-> **Part II: General Case $\varphi, \psi \in C^1(D^*)$.**
+> **Part II: General Case $\varphi, \psi \in C^1(D^{\ast})$.**
 >
 > Now consider the general transformation $\Phi(u, v) = (\varphi(u, v), \psi(u, v))$ where $\varphi, \psi$ are $C^1$ on a compact domain $\overline{D^*}$.
 >
@@ -1471,7 +1471,7 @@ We present three different proofs, each offering a distinct perspective:
 >
 > The actual image $\Phi(R)$ is a curvilinear quadrilateral. We need to show the area differs from the parallelogram area by a controllable amount.
 >
-> *Setup:* Divide $D^*$ into small squares of side $1/2^m$. (For the unit square $D^*$ there are $2^m \cdot 2^m = 2^{2m}$ of them; for a general rectangle, see the end of the proof.)
+> *Setup:* Divide $D^{\ast}$ into small squares of side $1/2^m$. (For the unit square $D^{\ast}$ there are $2^m \cdot 2^m = 2^{2m}$ of them; for a general rectangle, see the end of the proof.)
 >
 > Since $\varphi, \psi \in C^1(\overline{D^*})$, the functions $\varphi, \psi, \varphi_u, \varphi_v, \psi_u, \psi_v$ are all [[§15 Compact Spaces#^rem-15-1|uniformly continuous]] on the compact domain. Also, assume these are bounded by some constant $B$:
 >
@@ -1681,24 +1681,24 @@ We present three different proofs, each offering a distinct perspective:
 *Step 3 of the first proof. The linearized map $L$ sends the small square $R$ to the parallelogram $P$ (red, dashed) of area $|J|\,hk$. Each point of $\Phi(R)$ lies within $r = 2\sqrt2\,\varepsilon/2^m$ of the corresponding point of $P$, as at the top corner (dashed circle of radius $r$). So the boundary of $\Phi(R)$ (blue) stays inside the band of width $r$ around $\partial P$ (gray). The two areas can differ only by the area of that band, at most $\text{perimeter}(P) \cdot r + \pi r^2 = O(\varepsilon/2^{2m})$. That is small even compared with $\text{Area}(P) \sim 1/2^{2m}$.*
 
 > [!remark] Remark: Extension to Arbitrary Domains: Jordan Measurability
-> The proof above assumes $D^*$ is a square (or rectangle). For arbitrary domains, we need additional assumptions and a more careful treatment using **Jordan measure**.
+> The proof above assumes $D^{\ast}$ is a square (or rectangle). For arbitrary domains, we need additional assumptions and a more careful treatment using **Jordan measure**.
 >
-> **The Problem:** If $D^*$ is not a rectangle, how do we define the Riemann sum? We can't simply partition $D^*$ into small squares — some squares will partially overlap the boundary $\partial D^*$.
+> **The Problem:** If $D^{\ast}$ is not a rectangle, how do we define the Riemann sum? We can't simply partition $D^{\ast}$ into small squares — some squares will partially overlap the boundary $\partial D^{\ast}$.
 >
 > **Solution: Jordan Measurable Domains.**
 >
-> *Definition:* A bounded set $D^* \subseteq \mathbb{R}^2$ is **Jordan measurable** if its boundary $\partial D^*$ has Jordan measure zero, i.e., for any $\varepsilon > 0$, the boundary can be covered by finitely many rectangles with total area $< \varepsilon$ ([[§15 Multivariable Integration#^def-15-13|Def. §15.13]], [[§15 Multivariable Integration#^def-15-14|Def. §15.14]]).
+> *Definition:* A bounded set $D^{\ast} \subseteq \mathbb{R}^2$ is **Jordan measurable** if its boundary $\partial D^{\ast}$ has Jordan measure zero, i.e., for any $\varepsilon > 0$, the boundary can be covered by finitely many rectangles with total area $< \varepsilon$ ([[§15 Multivariable Integration#^def-15-13|Def. §15.13]], [[§15 Multivariable Integration#^def-15-14|Def. §15.14]]).
 >
-> *Equivalently:* The **inner Jordan measure** (supremum of areas of finite unions of rectangles contained in $D^*$) equals the **outer Jordan measure** (infimum of areas of finite unions of rectangles containing $D^*$) ([[§15 Multivariable Integration#^def-15-4|Def. §15.4]], [[§15 Multivariable Integration#^def-15-5|Def. §15.5]]).
+> *Equivalently:* The **inner Jordan measure** (supremum of areas of finite unions of rectangles contained in $D^{\ast}$) equals the **outer Jordan measure** (infimum of areas of finite unions of rectangles containing $D^{\ast}$) ([[§15 Multivariable Integration#^def-15-4|Def. §15.4]], [[§15 Multivariable Integration#^def-15-5|Def. §15.5]]).
 >
-> **Procedure for Arbitrary Jordan Measurable $D^*$:**
+> **Procedure for Arbitrary Jordan Measurable $D^{\ast}$:**
 >
-> *Step 1:* Enclose $D^*$ in a large rectangle $R = [a, b] \times [c, d]$.
+> *Step 1:* Enclose $D^{\ast}$ in a large rectangle $R = [a, b] \times [c, d]$.
 >
 > *Step 2:* Partition $R$ into small squares of side $1/2^m$. Classify each square $D_{ij}^{(m)}$ as:
-> - **Interior squares:** $D_{ij}^{(m)} \subseteq D^*$ (entirely inside)
-> - **Exterior squares:** $D_{ij}^{(m)} \cap D^* = \emptyset$ (entirely outside)
-> - **Boundary squares:** $D_{ij}^{(m)} \cap \partial D^* \neq \emptyset$ (touch the boundary)
+> - **Interior squares:** $D_{ij}^{(m)} \subseteq D^{\ast}$ (entirely inside)
+> - **Exterior squares:** $D_{ij}^{(m)} \cap D^{\ast} = \emptyset$ (entirely outside)
+> - **Boundary squares:** $D_{ij}^{(m)} \cap \partial D^{\ast} \neq \emptyset$ (touch the boundary)
 >
 > *Step 3:* For the Riemann sum, sum only over interior squares:
 >
@@ -1708,7 +1708,7 @@ We present three different proofs, each offering a distinct perspective:
 >
 > Similarly, define the outer sum including boundary squares.
 >
-> *Step 4:* Since $\partial D^*$ has Jordan measure zero:
+> *Step 4:* Since $\partial D^{\ast}$ has Jordan measure zero:
 >
 > $$
 > \#\{\text{boundary squares}\} \cdot \frac{1}{(2^m)^2} \to 0 \quad \text{as } m \to \infty.
@@ -1720,13 +1720,13 @@ We present three different proofs, each offering a distinct perspective:
 >
 > For the Change of Variables formula, we need both $D^*$ and $D = \Phi(D^*)$ to be Jordan measurable.
 >
-> *Key Lemma* ([[§15 Multivariable Integration#^prop-15-16|Proposition §15.16]]): If $D^*$ is Jordan measurable and $\Phi: D^* \to D$ is a $C^1$ diffeomorphism with $J \neq 0$, then $D = \Phi(D^*)$ is also Jordan measurable.
+> *Key Lemma* ([[§15 Multivariable Integration#^prop-15-16|Proposition §15.16]]): If $D^{\ast}$ is Jordan measurable and $\Phi: D^{\ast} \to D$ is a $C^1$ diffeomorphism with $J \neq 0$, then $D = \Phi(D^{\ast})$ is also Jordan measurable.
 >
-> *Proof sketch:* The boundary $\partial D = \Phi(\partial D^*)$. Since $\Phi$ is $C^1$ and $\partial D^*$ has measure zero, the image $\Phi(\partial D^*)$ also has measure zero (Lipschitz maps preserve measure zero sets). $\square$
+> *Proof sketch:* The boundary $\partial D = \Phi(\partial D^{\ast})$. Since $\Phi$ is $C^1$ and $\partial D^{\ast}$ has measure zero, the image $\Phi(\partial D^{\ast})$ also has measure zero (Lipschitz maps preserve measure zero sets). $\square$
 >
 > **Refined Theorem Statement:**
 >
-> > Let $D^* \subseteq \mathbb{R}^2$ be a **bounded, Jordan measurable** domain. Let $\Phi: \overline{D^*} \to \overline{D}$ be a $C^1$ bijection with $C^1$ inverse and $J \neq 0$ on $D^*$. If $f$ is continuous on $\overline{D}$, then:
+> > Let $D^{\ast} \subseteq \mathbb{R}^2$ be a **bounded, Jordan measurable** domain. Let $\Phi: \overline{D^{\ast}} \to \overline{D}$ be a $C^1$ bijection with $C^1$ inverse and $J \neq 0$ on $D^{\ast}$. If $f$ is continuous on $\overline{D}$, then:
 > >
 > > $$
 > > \iint_D f(x, y) \, dx \, dy = \iint_{D^*} f(\varphi(u, v), \psi(u, v)) \cdot |J(u, v)| \, du \, dv.
@@ -1744,7 +1744,7 @@ We present three different proofs, each offering a distinct perspective:
 
 > [!remark] Remark: Alternative: Lebesgue Integration
 > In Lebesgue integration theory (MATH 551), the situation is cleaner:
-> - The change of variables formula holds for any **Lebesgue measurable** set $D^*$.
+> - The change of variables formula holds for any **Lebesgue measurable** set $D^{\ast}$.
 > - No need for Jordan measurability — Lebesgue measure handles much more general sets.
 > - The assumption “$J \neq 0$ everywhere” can be relaxed to “$J \neq 0$ almost everywhere.”
 >
@@ -2074,9 +2074,9 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 
 > [!proof]+ Proof
 > Enclose $D^*$ in a rectangle $R^* = [a, b] \times [c, d]$. Partition $R^*$ into squares of side $\Delta = 1/2^m$. Classify each square $S_{ij}$ as:
-> - **Interior:** $S_{ij} \subseteq D^*$
-> - **Exterior:** $S_{ij} \cap D^* = \emptyset$
-> - **Boundary:** $S_{ij} \cap \partial D^* \neq \emptyset$ and $S_{ij} \cap D^* \neq \emptyset$
+> - **Interior:** $S_{ij} \subseteq D^{\ast}$
+> - **Exterior:** $S_{ij} \cap D^{\ast} = \emptyset$
+> - **Boundary:** $S_{ij} \cap \partial D^{\ast} \neq \emptyset$ and $S_{ij} \cap D^{\ast} \neq \emptyset$
 >
 > Define the inner and outer Riemann sums:
 >

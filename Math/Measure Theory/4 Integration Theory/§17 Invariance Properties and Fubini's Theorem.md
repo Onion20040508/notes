@@ -564,7 +564,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 ^rem-17-5
 
 ![[m551-17-3.svg]]
-*The layer cake formula for $p = 1$, with $E = [0,1]$. Slicing the region under $|f|$ (blue) horizontally at height $\lambda$ cuts out the superlevel set $\{|f| > \lambda\}$ (red, left); its measure is the value $f^*(\lambda)$ of the distribution function (red segment, right). Integrating the slice lengths over $\lambda$ gives the area under $f^*$, which is the area under $|f|$: Tonelli on the subgraph, sliced the other way.*
+*The layer cake formula for $p = 1$, with $E = [0,1]$. Slicing the region under $|f|$ (blue) horizontally at height $\lambda$ cuts out the superlevel set $\{|f| > \lambda\}$ (red, left); its measure is the value $f^{\ast}(\lambda)$ of the distribution function (red segment, right). Integrating the slice lengths over $\lambda$ gives the area under $f^{\ast}$, which is the area under $|f|$: Tonelli on the subgraph, sliced the other way.*
 
 > [!remark]- Connections
 > - The $p = 1$ case is the [[§17 Invariance Properties and Fubini's Theorem#^thm-17-11|Subgraph Theorem]] read with horizontal slices, i.e. the [[§17 Invariance Properties and Fubini's Theorem#^thm-17-7|Cross-Section Theorem]] applied to $\underline{G}(\vert f\vert)$ in the other variable.

@@ -405,9 +405,9 @@ tags: [topology, math590]
 > [!remark] Remark: Why This Matters for $\pi_1$: Two Directions from a Retraction
 > If $A$ is a [[§26 Deformation Retracts and Homotopy Type#^def-26-1|retract]] of $X$ (with retraction $r$ and inclusion $j$), then $r_* \circ j_* = \operatorname{id}$ on $\pi_1(A)$, giving two [[§23 The Fundamental Group#^def-23-4|induced maps]]:
 >
-> **$j_*: \pi_1(A) \hookrightarrow \pi_1(X)$ (injective):** Embeds $\pi_1(A)$ as a subgroup of $\pi_1(X)$. Conclusion: $\pi_1(X)$ is *at least as complicated* as $\pi_1(A)$.
+> **$j_{\ast}: \pi_1(A) \hookrightarrow \pi_1(X)$ (injective):** Embeds $\pi_1(A)$ as a subgroup of $\pi_1(X)$. Conclusion: $\pi_1(X)$ is *at least as complicated* as $\pi_1(A)$.
 >
-> **$r_*: \pi_1(X) \twoheadrightarrow \pi_1(A)$ (surjective):** Maps $\pi_1(X)$ onto $\pi_1(A)$. Conclusion: $\pi_1(X)$ *cannot be simpler* than $\pi_1(A)$ (an abelian group can only surject onto abelian groups).
+> **$r_{\ast}: \pi_1(X) \twoheadrightarrow \pi_1(A)$ (surjective):** Maps $\pi_1(X)$ onto $\pi_1(A)$. Conclusion: $\pi_1(X)$ *cannot be simpler* than $\pi_1(A)$ (an abelian group can only surject onto abelian groups).
 >
 > Both directions detect non-abelianness:
 > - Via $j_*$: non-abelian $\pi_1(A)$ embeds $\Rightarrow$ non-abelian subgroup $\Rightarrow$ non-abelian $\pi_1(X)$ ([[§21 Algebra Prerequisites꞉ Groups#^prop-21-9|§21.9]]).
@@ -469,7 +469,7 @@ tags: [topology, math590]
 ^ex-21-3
 
 > [!definition] Definition §21.9: Free Product of Groups
-> Let $G$ and $H$ be groups. The **free product** $G * H$ is the group whose elements are **reduced words** — finite alternating sequences of nontrivial elements from $G$ and $H$:
+> Let $G$ and $H$ be groups. The **free product** $G \ast  H$ is the group whose elements are **reduced words** — finite alternating sequences of nontrivial elements from $G$ and $H$:
 >
 > $$
 > g_1 h_1 g_2 h_2 \cdots \qquad \text{or} \qquad h_1 g_1 h_2 g_2 \cdots
@@ -499,7 +499,7 @@ tags: [topology, math590]
 >
 > This is exactly $F_2$: reduced words in $a, a^{-1}, b, b^{-1}$.
 >
-> **Not abelian:** $a * b \neq b * a$ (both are already reduced, and they are different words).
+> **Not abelian:** $a \ast  b \neq b \ast  a$ (both are already reduced, and they are different words).
 >
 > **Compare with $\mathbb{Z} \times \mathbb{Z}$:** In the direct product, $a^{n_1}b^{m_1}a^{n_2}b^{m_2} = a^{n_1+n_2}b^{m_1+m_2}$ (rearrange using commutativity). In the free product, you *cannot* rearrange — order matters.
 
@@ -524,7 +524,7 @@ tags: [topology, math590]
 ^ex-21-5
 
 > [!remark] Remark: Direct Product vs Free Product
-> | | **Direct Product $G \times H$** | **Free Product $G * H$** |
+> | | **Direct Product $G \times H$** | **Free Product $G \ast  H$** |
 > |---|---|---|
 > | Elements | Pairs $(g, h)$ | Reduced alternating words |
 > | Relation | $G$ and $H$ commute: $(g, e)(e, h) = (e, h)(g, e)$ | No relation between $G$ and $H$ |
@@ -572,7 +572,7 @@ tags: [topology, math590]
 ## Group Presentations
 
 > [!definition] Definition §21.10: Free Group on Elements
-> Let $\{a_\alpha\}_{\alpha \in J}$ be an arbitrary indexed family. For each $\alpha$, let $G_\alpha = \{a_\alpha^n \mid n \in \mathbb{Z}\} \cong \mathbb{Z}$. The [[§21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]] $*_{\alpha \in J}\, G_\alpha$ is called the **free group on the elements** $\{a_\alpha\}$, and $\{a_\alpha\}$ is called a **system of free generators**.
+> Let $\{a_\alpha\}_{\alpha \in J}$ be an arbitrary indexed family. For each $\alpha$, let $G_\alpha = \{a_\alpha^n \mid n \in \mathbb{Z}\} \cong \mathbb{Z}$. The [[§21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]] $\ast _{\alpha \in J}\, G_\alpha$ is called the **free group on the elements** $\{a_\alpha\}$, and $\{a_\alpha\}$ is called a **system of free generators**.
 
 ^def-21-10
 
@@ -624,9 +624,9 @@ tags: [topology, math590]
 >
 > *Example:* $\langle a, b \mid aba^{-1}b^{-1}, a \rangle$. The relation $a = e$ lets us substitute $a = e$ everywhere. The other relation becomes $ebe^{-1}b^{-1} = bb^{-1} = e$ (automatic). Result: $\langle b \rangle \cong \mathbb{Z}$.
 >
-> **2. Splitting.** If each relation involves only one generator, the group splits as a free product: $\langle a, b \mid r(a), s(b) \rangle \cong \langle a \mid r(a) \rangle * \langle b \mid s(b) \rangle$.
+> **2. Splitting.** If each relation involves only one generator, the group splits as a free product: $\langle a, b \mid r(a), s(b) \rangle \cong \langle a \mid r(a) \rangle \ast  \langle b \mid s(b) \rangle$.
 >
-> *Example:* $\langle a, b \mid b^4 \rangle$. The relation constrains only $b$; $a$ is free. So $\langle a \rangle * \langle b \mid b^4 \rangle \cong \mathbb{Z} * \mathbb{Z}/4\mathbb{Z}$.
+> *Example:* $\langle a, b \mid b^4 \rangle$. The relation constrains only $b$; $a$ is free. So $\langle a \rangle \ast  \langle b \mid b^4 \rangle \cong \mathbb{Z} \ast  \mathbb{Z}/4\mathbb{Z}$.
 >
 > **3. Abelianization.** If the relation forces all generators to commute (contains $a_i a_j a_i^{-1} a_j^{-1}$ for all pairs $i, j$), the free product becomes a direct product.
 >

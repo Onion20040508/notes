@@ -9,7 +9,7 @@ tags: [linear-algebra]
 ← [[§21 Orthogonal Complements and Minimization Problems]] · ↑ [[· 7 Operators on Inner Product Spaces]] · [[§23 Spectral Theorem]] →
 
 > [!definition] Definition 7.1: Adjoint, T∗
-> For $T\in\Lin(V,W)$ (finite-dimensional inner product spaces), the *adjoint* $T^*:W\to V$ is defined by
+> For $T\in\Lin(V,W)$ (finite-dimensional inner product spaces), the *adjoint* $T^{\ast}:W\to V$ is defined by
 > $$
 > \langle Tv,w\rangle=\langle v,T^*w\rangle\qquad\text{for all }v\in V,\ w\in W .
 > $$
@@ -100,7 +100,7 @@ tags: [linear-algebra]
 > ![[ladr-7.6-four-subspaces.svg|460]]
 
 > [!definition] Definition 7.7: Conjugate transpose, A∗
-> The *conjugate transpose* $A^*$ of an $m$-by-$n$ matrix $A$ is the $n$-by-$m$ matrix with $(A^*)_{j,k}=\overline{A_{k,j}}$. For real $A$, $A^*=A^t$.
+> The *conjugate transpose* $A^{\ast}$ of an $m$-by-$n$ matrix $A$ is the $n$-by-$m$ matrix with $(A^{\ast})_{j,k}=\overline{A_{k,j}}$. For real $A$, $A^{\ast}=A^t$.
 
 ^ladr-7-7
 
@@ -132,7 +132,7 @@ tags: [linear-algebra]
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-30|6.30]]
 
 > [!definition] Definition 7.10: Self-adjoint
-> $T\in\Lin(V)$ is *self-adjoint* if $T=T^*$, i.e. $\langle Tv,w\rangle=\langle v,Tw\rangle$ for all $v,w$. In an orthonormal basis: $\mathcal{M}(T)=\mathcal{M}(T)^*$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]).
+> $T\in\Lin(V)$ is *self-adjoint* if $T=T^{\ast}$, i.e. $\langle Tv,w\rangle=\langle v,Tw\rangle$ for all $v,w$. In an orthonormal basis: $\mathcal{M}(T)=\mathcal{M}(T)^{\ast}$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]).
 
 ^ladr-7-10
 
@@ -207,7 +207,7 @@ tags: [linear-algebra]
 *Uses:* [[§22 Self-Adjoint and Normal Operators#^ladr-7-13|7.13]]
 
 > [!definition] Definition 7.18: Normal
-> $T\in\Lin(V)$ is *normal* if $TT^*=T^*T$. Self-adjoint operators are normal.
+> $T\in\Lin(V)$ is *normal* if $TT^{\ast}=T^{\ast}T$. Self-adjoint operators are normal.
 
 ^ladr-7-18
 

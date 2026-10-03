@@ -210,7 +210,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 >
 > **Check.** $y(0) = 6/(4 - 3) = 6$, and $y' = \dfrac{192e^{-8t}}{(4e^{-8t} - 3)^2}$, while $4y(y + 2) = \dfrac{24}{4e^{-8t} - 3} \cdot \dfrac{8e^{-8t}}{4e^{-8t} - 3}$, the same.
 >
-> **Interval.** The denominator vanishes when $e^{-8t} = \frac34$, that is, at $t^* = \frac18\ln\frac43 \approx 0.036$. So the solution exists on $-\infty < t < \frac18\ln\frac43$: it blows up to $+\infty$ after a very short time, although the right side $4y(y + 2)$ is a polynomial, defined and smooth everywhere. As $t \to -\infty$, $y \to 0$. This is a typically nonlinear phenomenon: for a linear equation the solution exists wherever the coefficients are continuous ([[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]]), while for $y' = y^2$ the blow-up time depends on the initial value ([[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-4|Example §7.4]]).
+> **Interval.** The denominator vanishes when $e^{-8t} = \frac34$, that is, at $t^{\ast} = \frac18\ln\frac43 \approx 0.036$. So the solution exists on $-\infty < t < \frac18\ln\frac43$: it blows up to $+\infty$ after a very short time, although the right side $4y(y + 2)$ is a polynomial, defined and smooth everywhere. As $t \to -\infty$, $y \to 0$. This is a typically nonlinear phenomenon: for a linear equation the solution exists wherever the coefficients are continuous ([[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]]), while for $y' = y^2$ the blow-up time depends on the initial value ([[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-4|Example §7.4]]).
 >
 > *Source: 331 Written HW 1, Problem 1*
 

@@ -49,33 +49,33 @@ To show $A \sim B$ ([[§1 Countability and Set Theory#^def-1-7|Def. §1.7]]), it
 The workhorse inequalities of [[§9 Lebesgue Outer Measure#^def-9-4|outer measure]]. Nearly every outer measure problem uses one or both ([[Properties of Lebesgue Outer Measure|Proposition §9.1]]).
 
 > [!remark] Remark: Strategy
-> - (i) **Upper bound via subadditivity**: $m^*(A \cup B) \leq m^*(A) + m^*(B)$, and more generally $m^*\!\bigl(\bigcup_k A_k\bigr) \leq \sum_k m^*(A_k)$ ([[Properties of Lebesgue Outer Measure|Proposition §9.1]](3)).
-> - (ii) **Lower bound via monotonicity**: If $A \subseteq B$, then $m^*(A) \leq m^*(B)$ ([[Properties of Lebesgue Outer Measure|Proposition §9.1]](2)).
-> - (iii) **Difference estimate**: If $m^*(A) < \infty$, rewrite $B = (B \setminus A) \cup A$ and use subadditivity to get $m^*(B \setminus A) \geq m^*(B) - m^*(A)$.
+> - (i) **Upper bound via subadditivity**: $m^{\ast}(A \cup B) \leq m^{\ast}(A) + m^{\ast}(B)$, and more generally $m^{\ast}\!\bigl(\bigcup_k A_k\bigr) \leq \sum_k m^{\ast}(A_k)$ ([[Properties of Lebesgue Outer Measure|Proposition §9.1]](3)).
+> - (ii) **Lower bound via monotonicity**: If $A \subseteq B$, then $m^{\ast}(A) \leq m^{\ast}(B)$ ([[Properties of Lebesgue Outer Measure|Proposition §9.1]](2)).
+> - (iii) **Difference estimate**: If $m^{\ast}(A) < \infty$, rewrite $B = (B \setminus A) \cup A$ and use subadditivity to get $m^{\ast}(B \setminus A) \geq m^{\ast}(B) - m^{\ast}(A)$.
 
 ^rem-19-7
 
 > [!example] Example §19.10: Applications (HW2 and HW3)
-> - **HW2 P1**: $m^*(B \setminus A) \geq m^*(B) - m^*(A)$ follows from $m^*(B) \leq m^*((B \setminus A) \cup A) \leq m^*(B \setminus A) + m^*(A)$.
-> - **HW2 P2**: $m^*(E) = 0$ for $E = (\mathbb{Q} \times \mathbb{R}) \cup (\mathbb{R} \times \mathbb{Q})$ by bounding each line $\{q\} \times \mathbb{R}$ with shrinking rectangles, then summing over countably many lines (the same $\varepsilon/2^k$ pattern as [[§9 Lebesgue Outer Measure#^ex-9-2|Example §9.2]]).
+> - **HW2 P1**: $m^{\ast}(B \setminus A) \geq m^{\ast}(B) - m^{\ast}(A)$ follows from $m^{\ast}(B) \leq m^{\ast}((B \setminus A) \cup A) \leq m^{\ast}(B \setminus A) + m^{\ast}(A)$.
+> - **HW2 P2**: $m^{\ast}(E) = 0$ for $E = (\mathbb{Q} \times \mathbb{R}) \cup (\mathbb{R} \times \mathbb{Q})$ by bounding each line $\{q\} \times \mathbb{R}$ with shrinking rectangles, then summing over countably many lines (the same $\varepsilon/2^k$ pattern as [[§9 Lebesgue Outer Measure#^ex-9-2|Example §9.2]]).
 > - **HW3 P4**: The intersection bound $m\!\bigl(\bigcap E_j\bigr) > 0$ via De Morgan + subadditivity of the complements.
 
 ^ex-19-10
 
 ## Technique 4: The Carathéodory Splitting Trick
 
-The [[§10 Lebesgue Measurable Sets#^def-10-1|Carathéodory criterion]] $m^*(T) = m^*(T \cap A) + m^*(T \cap A^c)$ is used in two directions: to *prove* measurability by verifying the criterion for all test sets, and to *exploit* known measurability by splitting a test set.
+The [[§10 Lebesgue Measurable Sets#^def-10-1|Carathéodory criterion]] $m^{\ast}(T) = m^{\ast}(T \cap A) + m^{\ast}(T \cap A^c)$ is used in two directions: to *prove* measurability by verifying the criterion for all test sets, and to *exploit* known measurability by splitting a test set.
 
 > [!remark] Remark: Strategy
-> - (i) **Proving measurability**: Show $m^*(T) \geq m^*(T \cap A) + m^*(T \cap A^c)$ for all $T$ (the reverse inequality is always free from subadditivity; [[§10 Lebesgue Measurable Sets#^rem-10-1|Remark §10]]). Often reduce to showing $m^*(T \cap A) \leq m^*(T \cap B)$ for some known measurable $B \supseteq A$ or $B \subseteq A$.
+> - (i) **Proving measurability**: Show $m^{\ast}(T) \geq m^{\ast}(T \cap A) + m^{\ast}(T \cap A^c)$ for all $T$ (the reverse inequality is always free from subadditivity; [[§10 Lebesgue Measurable Sets#^rem-10-1|Remark §10]]). Often reduce to showing $m^{\ast}(T \cap A) \leq m^{\ast}(T \cap B)$ for some known measurable $B \supseteq A$ or $B \subseteq A$.
 > - (ii) **Using measurability**: If $A$ is measurable, split any test set $T$ as $T = (T \cap A) \cup (T \cap A^c)$ and use additivity.
-> - (iii) **Sandwiching via measure-zero differences**: If $A_1 \subseteq A_2$ with $m^*(A_2 \setminus A_1) = 0$, then $m^*(T \cap A_2) \leq m^*(T \cap A_1) + 0$ and the criterion transfers from $A_1$ to $A_2$ (compare [[§10 Lebesgue Measurable Sets#^ex-10-1|Example §10.1]]: null sets are measurable).
+> - (iii) **Sandwiching via measure-zero differences**: If $A_1 \subseteq A_2$ with $m^{\ast}(A_2 \setminus A_1) = 0$, then $m^{\ast}(T \cap A_2) \leq m^{\ast}(T \cap A_1) + 0$ and the criterion transfers from $A_1$ to $A_2$ (compare [[§10 Lebesgue Measurable Sets#^ex-10-1|Example §10.1]]: null sets are measurable).
 
 ^rem-19-8
 
 > [!example] Example §19.11: Applications (HW3 and HW4)
-> - **HW3 P1**: $A_1 \subseteq A_2$, $m^*(A_2) = m(A_1) < \infty$ implies $m^*(A_2 \setminus A_1) = 0$, so the Carathéodory criterion for $A_1$ transfers to $A_2$.
-> - **HW3 P2**: Inclusion–exclusion $m^*(A \cup B) = m^*(A) + m^*(B) - m^*(A \cap B)$ by splitting the test set $A \cup B$ along the measurable set $A$.
+> - **HW3 P1**: $A_1 \subseteq A_2$, $m^{\ast}(A_2) = m(A_1) < \infty$ implies $m^{\ast}(A_2 \setminus A_1) = 0$, so the Carathéodory criterion for $A_1$ transfers to $A_2$.
+> - **HW3 P2**: Inclusion–exclusion $m^{\ast}(A \cup B) = m^{\ast}(A) + m^{\ast}(B) - m^{\ast}(A \cap B)$ by splitting the test set $A \cup B$ along the measurable set $A$.
 > - **HW4 P1**: The [[§11 Borel Sets and Measure Spaces#^def-11-12|Vitali]] counterexample uses a test set $T' \subseteq [0,1]$ to show $A_2 = (-\infty,0) \cup V$ fails the Carathéodory criterion.
 
 ^ex-19-11
@@ -88,14 +88,14 @@ The [[§10 Lebesgue Measurable Sets#^def-10-1|Carathéodory criterion]] $m^*(T) 
 Many results are proved by covering a set with slightly “larger” or “nicer” sets, then taking $\varepsilon \to 0$.
 
 > [!remark] Remark: Strategy
-> - (i) **L-cover shrinking**: Cover $E$ by open rectangles $\{I_k\}$ ([[§9 Lebesgue Outer Measure#^def-9-3|L-covering]]) with $\sum |I_k| < m^*(E) + \varepsilon$, then extract finite subcovers via [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]] when $E$ is compact.
+> - (i) **L-cover shrinking**: Cover $E$ by open rectangles $\{I_k\}$ ([[§9 Lebesgue Outer Measure#^def-9-3|L-covering]]) with $\sum |I_k| < m^{\ast}(E) + \varepsilon$, then extract finite subcovers via [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]] when $E$ is compact.
 > - (ii) **$\varepsilon$-enlargement**: Replace a rectangle $I$ by $I_\varepsilon$ (enlarged by $\varepsilon$ in each direction) to get an open cover; take $\varepsilon \to 0$ at the end.
 > - (iii) **Inner approximation**: Approximate $E$ from inside by compact sets $K \subseteq E$ with $m(E \setminus K) < \varepsilon$ ([[Inner Regularity of Lebesgue Measure|Theorem §11.10]], [[§11 Borel Sets and Measure Spaces#^thm-11-11|Theorem §11.11]](1)); then use Heine–Borel on $K$.
 
 ^rem-19-9
 
 > [!example] Example §19.12: Applications (HW2 and HW4)
-> - **HW2 P3**: Both the upper bound ($m^*(\bar{I}) \leq |I|$ via $\varepsilon$-enlargement) and lower bound ($m^*(\operatorname{int}(I)) \geq |I|$ via inner compact approximation + Heine–Borel + grid lemma); this is [[§9 Lebesgue Outer Measure#^prop-9-2|Proposition §9.2]].
+> - **HW2 P3**: Both the upper bound ($m^{\ast}(\bar{I}) \leq |I|$ via $\varepsilon$-enlargement) and lower bound ($m^{\ast}(\operatorname{int}(I)) \geq |I|$ via inner compact approximation + Heine–Borel + grid lemma); this is [[§9 Lebesgue Outer Measure#^prop-9-2|Proposition §9.2]].
 > - **HW4 P3**: Approximate $E$ by bounded closed $K$ (inner regularity), then cover $K$ by finitely many rectangles via Heine–Borel to get $m(E \triangle G) < \varepsilon$ ([[§11 Borel Sets and Measure Spaces#^thm-11-11|Theorem §11.11]]).
 
 ^ex-19-12
@@ -110,13 +110,13 @@ Continuity from below/above converts infinite problems into limits of finite one
 > [!remark] Remark: Strategy
 > - (i) **Continuity from below** ([[Continuity of Measure|Proposition §11.12]]): For $E_1 \subseteq E_2 \subseteq \cdots$ measurable, $m\!\bigl(\bigcup E_n\bigr) = \lim m(E_n)$.
 > - (ii) **Continuity from above** ([[§11 Borel Sets and Measure Spaces#^prop-11-13|Proposition §11.13]]): For $E_1 \supseteq E_2 \supseteq \cdots$ measurable with $m(E_1) < \infty$, $m\!\bigl(\bigcap E_n\bigr) = \lim m(E_n)$.
-> - (iii) **Measurable exhaustion of outer measure** ([[§11 Borel Sets and Measure Spaces#^thm-11-14|Theorem §11.14]]): If $M_1 \subseteq M_2 \subseteq \cdots$ are measurable with $\bigcup M_n \supseteq E$, then $m^*(E \cap M_n) \to m^*(E)$.
+> - (iii) **Measurable exhaustion of outer measure** ([[§11 Borel Sets and Measure Spaces#^thm-11-14|Theorem §11.14]]): If $M_1 \subseteq M_2 \subseteq \cdots$ are measurable with $\bigcup M_n \supseteq E$, then $m^{\ast}(E \cap M_n) \to m^{\ast}(E)$.
 > - (iv) **Counterexample pattern**: Continuity from above *fails* without $m(E_1) < \infty$ ([[§11 Borel Sets and Measure Spaces#^rem-11-5|Remark §11]]). Standard counterexample: $E_k = \bigcup_{n=1}^\infty (-\frac{1}{2k}+n, \frac{1}{2k}+n)$, each with $m(E_k) = \infty$, but $\bigcap E_k = \mathbb{Z}^+$ has measure zero.
 
 ^rem-19-10
 
 > [!example] Example §19.13: Applications (HW3 and HW4)
-> - **HW3 P3**: The IVT argument for $m^*(A) = a$ uses measurable exhaustion by $M_n = [-n,n]$ to show $g(x) = m^*(E \cap [-x,x]) \to m^*(E)$ ([[§11 Borel Sets and Measure Spaces#^thm-11-14|Theorem §11.14]]; see [[#Technique 10: The Intermediate Value Theorem Bridge|Technique 10]]).
+> - **HW3 P3**: The IVT argument for $m^{\ast}(A) = a$ uses measurable exhaustion by $M_n = [-n,n]$ to show $g(x) = m^{\ast}(E \cap [-x,x]) \to m^{\ast}(E)$ ([[§11 Borel Sets and Measure Spaces#^thm-11-14|Theorem §11.14]]; see [[#Technique 10: The Intermediate Value Theorem Bridge|Technique 10]]).
 > - **HW4 P2**: Counterexample to continuity from above when $m(E_1) = \infty$.
 > - **HW4 P3(a)**: Continuity from above applied to $E_k = E \setminus [-k/2, k/2]^n$ ensures the tail vanishes.
 
@@ -171,7 +171,7 @@ To show $f$ is [[§12 Measurable Functions#^def-12-2|measurable]], one shows $\{
 The [[§11 Borel Sets and Measure Spaces#^def-11-12|Vitali set]] $V \subset [0,1]$ serves as the go-to non-measurable set ([[The Vitali Set is Not Measurable|Theorem §11.20]]) for constructing counterexamples.
 
 > [!remark] Remark: Strategy
-> - (i) **Extending to infinite measure**: $A_2 = (-\infty, 0) \cup V$ has $m^*(A_2) = \infty$ but is non-measurable. This exploits the fact that $\infty = \infty$ gives no information.
+> - (i) **Extending to infinite measure**: $A_2 = (-\infty, 0) \cup V$ has $m^{\ast}(A_2) = \infty$ but is non-measurable. This exploits the fact that $\infty = \infty$ gives no information.
 > - (ii) **Indicator function trick**: $\chi_V$ is non-measurable since $\{\chi_V > 1/2\} = V$ ([[§12 Measurable Functions#^def-12-2|Def. §12.2]]). This builds non-measurable *functions* from non-measurable sets.
 > - (iii) **Uncountable supremum**: Index singletons of $V$ by $\alpha$, let $f_\alpha = \chi_{\{x_\alpha\}}$ (each measurable). Then $\sup_\alpha f_\alpha = \chi_V$ is non-measurable.
 
@@ -190,7 +190,7 @@ When a measure-theoretic quantity depends continuously on a parameter, the IVT (
 ^rem-19-14
 
 > [!example] Example §19.16: Application (HW3)
-> **HW3 P3**: For $E \subset \mathbb{R}$ with $m^*(E) > 0$ and $0 < a < m^*(E)$, the function $g(x) = m^*(E \cap [-x,x])$ is continuous with $g(0) = 0$ and $g \to m^*(E)$. The IVT gives $A = E \cap [-x_a, x_a]$ with $m^*(A) = a$.
+> **HW3 P3**: For $E \subset \mathbb{R}$ with $m^{\ast}(E) > 0$ and $0 < a < m^{\ast}(E)$, the function $g(x) = m^{\ast}(E \cap [-x,x])$ is continuous with $g(0) = 0$ and $g \to m^{\ast}(E)$. The IVT gives $A = E \cap [-x_a, x_a]$ with $m^{\ast}(A) = a$.
 
 ^ex-19-16
 

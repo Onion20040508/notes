@@ -193,7 +193,7 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 > In the spacetime convention of [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]:
 > 1. *(Translation ↔ phase)* $f(x - a)$ has the transform $e^{ip\cdot a}\tilde f(p)$.
 > 2. *(Phase ↔ translation)* $e^{-iq\cdot x}f(x)$ has the transform $\tilde f(p - q)$.
-> 3. *(The rules in $\mathcal S'$)* The derivative rule $\widetilde{\partial_\mu T} = -ip_\mu\tilde T$ holds for every $T \in \mathcal S'$; the convolution rule $\widetilde{D * j} = \tilde D\,\tilde j$ holds for $D \in \mathcal S'$ and $j \in \mathcal S$, where $\tilde D\,\tilde j$ is the product of a distribution with a Schwartz function. Parts 1–2 hold for $T \in \mathcal S'$ with $T(x - a)$ as in [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]].
+> 3. *(The rules in $\mathcal S'$)* The derivative rule $\widetilde{\partial_\mu T} = -ip_\mu\tilde T$ holds for every $T \in \mathcal S'$; the convolution rule $\widetilde{D \ast  j} = \tilde D\,\tilde j$ holds for $D \in \mathcal S'$ and $j \in \mathcal S$, where $\tilde D\,\tilde j$ is the product of a distribution with a Schwartz function. Parts 1–2 hold for $T \in \mathcal S'$ with $T(x - a)$ as in [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]].
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.3 (Derivation "The rules", 2 and 4) · standard (Hörmander I, §7.1)*
 
@@ -210,7 +210,7 @@ Every mode computation of [[· C2 The Quantum Scalar Field|C2]] is a short seque
 > \widetilde{\partial_\mu T}[\varphi] = (\partial_\mu T)[\tilde\varphi] = -T[\partial_\mu\tilde\varphi] = -T\bigl[\mathcal F(ip_\mu\varphi)\,\bigr] = -\tilde T[ip_\mu\varphi] = (-ip_\mu\tilde T)[\varphi] .
 > $$
 >
-> **Step 4** (convolution rule in $\mathcal S'$). With $(D * j)(x) = D[j(x - \cdot)]$, a smooth polynomially bounded function,
+> **Step 4** (convolution rule in $\mathcal S'$). With $(D \ast  j)(x) = D[j(x - \cdot)]$, a smooth polynomially bounded function,
 >
 > $$
 > \widetilde{D * j}[\varphi] = \int d^4x\,D\bigl[j(x - \cdot)\bigr]\tilde\varphi(x) = D\Bigl[\int d^4x\,j(x - \cdot)\,\tilde\varphi(x)\Bigr] ,

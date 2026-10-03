@@ -11,7 +11,7 @@ tags: [ordinary-differential-equations, math331]
 
 *Boyce–DiPrima, Section 7.2.*
 
-To write the linear system (14) of [[§27 Introduction to Systems of First-Order Linear Equations#^def-27-2|Definition §27.2]] as one equation $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$, Chapter 7 uses matrix algebra. This section is BDP's summary of it; the concepts have their home in [[Applied Linear Algebra]] (Lay) and [[Linear Algebra]] (Axler), linked from each box. Two things go beyond a first linear algebra course and are what Chapter 7 needs most: entries may be **complex**, with the conjugate $\overline{\mathbf{A}}$, the adjoint $\mathbf{A}^*$ and the inner product $(\mathbf{x}, \mathbf{y}) = \sum x_i\overline{y_i}$; and entries may be **functions of $t$**, which are differentiated and integrated entry by entry.
+To write the linear system (14) of [[§27 Introduction to Systems of First-Order Linear Equations#^def-27-2|Definition §27.2]] as one equation $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$, Chapter 7 uses matrix algebra. This section is BDP's summary of it; the concepts have their home in [[Applied Linear Algebra]] (Lay) and [[Linear Algebra]] (Axler), linked from each box. Two things go beyond a first linear algebra course and are what Chapter 7 needs most: entries may be **complex**, with the conjugate $\overline{\mathbf{A}}$, the adjoint $\mathbf{A}^{\ast}$ and the inner product $(\mathbf{x}, \mathbf{y}) = \sum x_i\overline{y_i}$; and entries may be **functions of $t$**, which are differentiated and integrated entry by entry.
 
 ## Matrices, Conjugates and Adjoints
 
@@ -25,7 +25,7 @@ To write the linear system (14) of [[§27 Introduction to Systems of First-Order
 > whose elements $a_{ij}$ (row $i$, column $j$) may be **complex numbers**.
 > - The **transpose** of $\mathbf{A} = (a_{ij})$ is $\mathbf{A}^T = (a_{ji})$: rows and columns interchanged.
 > - The **conjugate** of $\mathbf{A}$ is $\overline{\mathbf{A}} = (\overline{a_{ij}})$: every element replaced by its complex conjugate.
-> - The **adjoint** of $\mathbf{A}$ is the transpose of the conjugate, $\mathbf{A}^* = \overline{\mathbf{A}}^T$.
+> - The **adjoint** of $\mathbf{A}$ is the transpose of the conjugate, $\mathbf{A}^{\ast} = \overline{\mathbf{A}}^T$.
 >
 > A **square matrix** has $m = n$ and is said to be of **order** $n$. A (column) **vector** is an $n \times 1$ matrix, denoted by boldface lowercase $\mathbf{x}, \mathbf{y}, \boldsymbol{\xi}, \boldsymbol{\eta}, \ldots$; its transpose $\mathbf{x}^T$ is a $1 \times n$ row vector.
 >

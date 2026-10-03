@@ -307,7 +307,7 @@ The Fourier integral or transform may be used to solve differential equations on
 > \frac{\partial\hat u}{\partial t}(\xi, t) = -\xi^2\hat u(\xi, t), \qquad \hat u(\xi, 0) = \hat f(\xi) .
 > $$
 >
-> **(d) Solve and invert.** Hence $\hat u(\xi, t) = \hat f(\xi)e^{-\xi^2 t}$. By Example §15.3(a) with $\sigma^2 = 2t$, the function $g_t(x) = 2\pi f_{\sqrt{2t}}(x) = \sqrt{\pi/t}\,e^{-x^2/(4t)}$ has $\hat g_t(\xi) = e^{-\xi^2 t}$, so $\hat u = \hat f\,\hat g_t$. In this normalization the convolution theorem reads $\widehat{g_1 * g_2} = 2\pi\,\hat g_1\hat g_2$, where $(g_1 * g_2)(x) = \int g_1(x - y)g_2(y)\,dy$; by Fubini's theorem ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]]; the double integral converges absolutely to $\int|g_1|\int|g_2|$),
+> **(d) Solve and invert.** Hence $\hat u(\xi, t) = \hat f(\xi)e^{-\xi^2 t}$. By Example §15.3(a) with $\sigma^2 = 2t$, the function $g_t(x) = 2\pi f_{\sqrt{2t}}(x) = \sqrt{\pi/t}\,e^{-x^2/(4t)}$ has $\hat g_t(\xi) = e^{-\xi^2 t}$, so $\hat u = \hat f\,\hat g_t$. In this normalization the convolution theorem reads $\widehat{g_1 \ast  g_2} = 2\pi\,\hat g_1\hat g_2$, where $(g_1 \ast  g_2)(x) = \int g_1(x - y)g_2(y)\,dy$; by Fubini's theorem ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]]; the double integral converges absolutely to $\int|g_1|\int|g_2|$),
 >
 > $$
 > \widehat{g_1 * g_2}(\xi) = \frac{1}{2\pi}\int g_2(y)e^{-i\xi y}\Big(\int g_1(x - y)e^{-i\xi(x - y)}\,dx\Big)dy = \frac{1}{2\pi}\cdot 2\pi\hat g_1(\xi)\cdot 2\pi\hat g_2(\xi) .
@@ -321,7 +321,7 @@ The Fourier integral or transform may be used to solve differential equations on
 >
 > The kernel $e^{-y^2/(4t)}/\sqrt{4\pi t}$ has integral $1$ and concentrates at $y = 0$ as $t \to 0+$, so $u(x, t) \to f(x)$; this is the heat kernel of [[§27 Infinite Rod#^thm-27-3|Theorem §27.3]].
 >
-> *The exam states the convolution fact as $(\hat g_1\hat g_2)^\vee = g_1 * g_2$, without the factor $\frac{1}{2\pi}$ that this normalization requires; the key follows the exam's statement, so its final answer $\int f(x - y)\sqrt{\pi/t}\,e^{-y^2/(4t)}\,dy$ is $2\pi$ times the solution above and tends to $2\pi f(x)$, not $f(x)$, as $t \to 0+$.*
+> *The exam states the convolution fact as $(\hat g_1\hat g_2)^\vee = g_1 \ast  g_2$, without the factor $\frac{1}{2\pi}$ that this normalization requires; the key follows the exam's statement, so its final answer $\int f(x - y)\sqrt{\pi/t}\,e^{-y^2/(4t)}\,dy$ is $2\pi$ times the solution above and tends to $2\pi f(x)$, not $f(x)$, as $t \to 0+$.*
 >
 > *Source: 341 Midterm 1, Q3 (bonus)*
 

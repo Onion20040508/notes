@@ -180,7 +180,7 @@ Three-dimensional graphics is used, for instance, in molecular modeling: a biolo
 A three-dimensional object is shown on the two-dimensional screen by projecting it onto a viewing plane. For simplicity let the $xy$-plane be the screen, and put the viewer's eye on the positive $z$-axis at $(0, 0, d)$.
 
 > [!definition] Definition §17.3: Perspective Projection
-> The **perspective projection** with **center of projection** $(0, 0, d)$ maps each point $(x, y, z)$ (with $z \ne d$) onto the image point $(x^*, y^*, 0)$ such that the two points and the center of projection lie on one line.
+> The **perspective projection** with **center of projection** $(0, 0, d)$ maps each point $(x, y, z)$ (with $z \ne d$) onto the image point $(x^{\ast}, y^{\ast}, 0)$ such that the two points and the center of projection lie on one line.
 >
 > *Lay: 2.7 (text)*
 

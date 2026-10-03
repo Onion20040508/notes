@@ -10,7 +10,7 @@ tags: [differentiable-manifolds, math591]
 *Stage: maps — Maps with surjective differentials: locally projections, by the normal form — the tool that makes the regular value theorem work on any manifold ([[§30 Submanifolds|§30]]).*
 
 > [!definition] Definition §29.1: Submersion and Immersion
-> Let $F : M \to N$ be smooth and $p \in M$. $F$ is a **submersion at $p$** if $F_{*p}$ is onto, and a **submersion** if it is a submersion at every point. $F$ is an **immersion at $p$** if $F_{*p}$ is injective, and an **immersion** if it is one at every point.
+> Let $F : M \to N$ be smooth and $p \in M$. $F$ is a **submersion at $p$** if $F_{\ast p}$ is onto, and a **submersion** if it is a submersion at every point. $F$ is an **immersion at $p$** if $F_{\ast p}$ is injective, and an **immersion** if it is one at every point.
 >
 > *Lee: Ch. 4, Maps of Constant Rank*
 
@@ -85,7 +85,7 @@ Stated in lecture as an example (“the projection you worked with from a sphere
 
 > [!definition] Definition §29.2: Regular Points and Critical Points
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$.
-> 1. $p \in M$ is a **regular point** of $F$ if $F$ is a submersion at $p$, i.e. $F_{*p}$ is onto — which forces $n \le m$. Otherwise $p$ is a **critical point**, also called a **singular point**.
+> 1. $p \in M$ is a **regular point** of $F$ if $F$ is a submersion at $p$, i.e. $F_{\ast p}$ is onto — which forces $n \le m$. Otherwise $p$ is a **critical point**, also called a **singular point**.
 > 2. $q \in N$ is a **regular value** of $F$ if $F$ is a submersion at every $p \in F^{-1}(q)$, and a **critical value** otherwise.
 > 3. In particular every $q \notin F(M)$ is a regular value: its preimage is empty, and “everything is true for the empty set.”
 >
@@ -176,7 +176,7 @@ Uribe singled out Lemma [[§29 Submersions#^lem-29-3|§29.3]] as “an intellect
 > J = \Big[\frac{\partial F^j}{\partial x^i}(p)\Big]
 > $$
 >
-> has rank $n$. It “has $m$ columns, which are the $x$'s, and $n$ rows, that are the gradients” of the $F^j$. *(Completion.)* By Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]], $J$ is the matrix of $F_{*p}$ in the coordinate bases, and $F_{*p}$ is onto, so $J$ has rank $n$.
+> has rank $n$. It “has $m$ columns, which are the $x$'s, and $n$ rows, that are the gradients” of the $F^j$. *(Completion.)* By Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]], $J$ is the matrix of $F_{\ast p}$ in the coordinate bases, and $F_{\ast p}$ is onto, so $J$ has rank $n$.
 >
 > *3. “It's the same matrix.”* A student asked whether the matrix should be written with $\tilde F$. Uribe: “It's the same thing… That's how we define partials. We define them by going downstairs and taking the ordinary partial derivative downstairs. So it's the same matrix.” That is Proposition [[§25 The Differential in Coordinates#^prop-25-1|§25.1]]: writing $G = \psi \circ F \circ \varphi_0^{-1}$ for the coordinate representation in these first charts (the lecture's $\tilde F$ at this stage),
 >
@@ -198,7 +198,7 @@ Uribe singled out Lemma [[§29 Submersions#^lem-29-3|§29.3]] as “an intellect
 > \hat\varphi = \big(F^1, \ldots, F^n, x^{n+1}, \ldots, x^m\big) : U_0 \to \mathbb{R}^m .
 > $$
 >
-> *(Completion.)* This makes sense because $n \le m$ — the theorem's “in particular”, true since $F_{*p}$ is onto (Proposition [[§29 Submersions#^prop-29-1|§29.1]]) — so there are $m - n \ge 0$ remaining coordinates. $\hat\varphi$ is smooth because its components are. It has $m$ components, so it maps into $\mathbb{R}^m$ (see the transcription note below).
+> *(Completion.)* This makes sense because $n \le m$ — the theorem's “in particular”, true since $F_{\ast p}$ is onto (Proposition [[§29 Submersions#^prop-29-1|§29.1]]) — so there are $m - n \ge 0$ remaining coordinates. $\hat\varphi$ is smooth because its components are. It has $m$ components, so it maps into $\mathbb{R}^m$ (see the transcription note below).
 >
 > *6. The claim.* $\hat\varphi$ is a local diffeomorphism in a neighbourhood of $p$.
 >

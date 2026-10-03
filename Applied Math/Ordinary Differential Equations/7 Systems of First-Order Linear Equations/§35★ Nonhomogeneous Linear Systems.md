@@ -109,7 +109,7 @@ where $\mathbf{A}$ is an $n \times n$ diagonalizable constant matrix. Diagonaliz
 > [!remark] Remark: Method — Diagonalization
 > To find the general solution of $\mathbf{x}' = \mathbf{A}\mathbf{x} + \mathbf{g}(t)$ with $\mathbf{A}$ constant and diagonalizable:
 > 1. **Find the eigenvalues** $r_j$ and **independent eigenvectors** $\boldsymbol{\xi}^{(j)}$ of $\mathbf{A}$; form $\mathbf{T}$ and $\mathbf{D}$.
-> 2. **Find $\mathbf{T}^{-1}$.** If $\mathbf{A}$ is Hermitian (real symmetric), normalize the eigenvectors so that $(\boldsymbol{\xi}^{(j)}, \boldsymbol{\xi}^{(j)}) = 1$; then $\mathbf{T}^{-1} = \mathbf{T}^*$ ($= \mathbf{T}^T$ for real $\mathbf{T}$) needs no calculation ([[§33★ Fundamental Matrices#^thm-33-7|Theorem §33.7]](b)).
+> 2. **Find $\mathbf{T}^{-1}$.** If $\mathbf{A}$ is Hermitian (real symmetric), normalize the eigenvectors so that $(\boldsymbol{\xi}^{(j)}, \boldsymbol{\xi}^{(j)}) = 1$; then $\mathbf{T}^{-1} = \mathbf{T}^{\ast}$ ($= \mathbf{T}^T$ for real $\mathbf{T}$) needs no calculation ([[§33★ Fundamental Matrices#^thm-33-7|Theorem §33.7]](b)).
 > 3. **Compute** $\mathbf{h} = \mathbf{T}^{-1}\mathbf{g}$ and solve each scalar equation $y_j' - r_jy_j = h_j$ by an integrating factor.
 > 4. **Transform back:** $\mathbf{x} = \mathbf{T}\mathbf{y}$.
 >
@@ -500,7 +500,7 @@ The Laplace transform solves systems in very much the same way as single equatio
 
 > [!remark] Remark: Choosing a Method
 > - **Undetermined coefficients** needs no integration, but it is limited in scope (constant $\mathbf{A}$, special $\mathbf{g}$) and may require solving several sets of algebraic equations.
-> - **Diagonalization** needs the inverse of the transformation matrix, the solution of $n$ uncoupled first-order equations, and a matrix multiplication. Its advantage is that for Hermitian coefficient matrices $\mathbf{T}^{-1} = \mathbf{T}^*$ is written down without calculation, which matters more for large systems.
+> - **Diagonalization** needs the inverse of the transformation matrix, the solution of $n$ uncoupled first-order equations, and a matrix multiplication. Its advantage is that for Hermitian coefficient matrices $\mathbf{T}^{-1} = \mathbf{T}^{\ast}$ is written down without calculation, which matters more for large systems.
 > - **Laplace transforms** need a matrix inversion (the transfer matrix), a multiplication, and the inverse transform of each term. They are particularly useful for discontinuous or impulsive forcing.
 > - **Variation of parameters** is the most general method (variable $\mathbf{P}(t)$, any continuous $\mathbf{g}$), but it involves linear algebraic equations with variable coefficients, an integration and a matrix multiplication, so it can be the most laborious.
 >

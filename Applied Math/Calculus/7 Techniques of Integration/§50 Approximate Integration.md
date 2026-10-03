@@ -18,7 +18,7 @@ Throughout, $[a, b]$ is divided into $n$ subintervals of equal length $\Delta x 
 ## Endpoint, Midpoint and Trapezoidal Approximations
 
 > [!definition] Definition §50.1: Left and Right Endpoint Approximations
-> Taking $x_i^*$ in $\int_a^b f(x)\,dx \approx \sum_{i=1}^n f(x_i^*)\,\Delta x$ to be the left or right endpoint of $[x_{i-1}, x_i]$ gives the **left endpoint approximation** $L_n$ and the **right endpoint approximation** $R_n$:
+> Taking $x_i^{\ast}$ in $\int_a^b f(x)\,dx \approx \sum_{i=1}^n f(x_i^{\ast})\,\Delta x$ to be the left or right endpoint of $[x_{i-1}, x_i]$ gives the **left endpoint approximation** $L_n$ and the **right endpoint approximation** $R_n$:
 >
 > $$
 > \int_a^b f(x)\,dx \approx L_n = \sum_{i=1}^n f(x_{i-1})\,\Delta x \qquad (1) \qquad\qquad \int_a^b f(x)\,dx \approx R_n = \sum_{i=1}^n f(x_i)\,\Delta x \qquad (2)

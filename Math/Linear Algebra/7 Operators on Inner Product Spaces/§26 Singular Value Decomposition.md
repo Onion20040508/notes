@@ -27,7 +27,7 @@ tags: [linear-algebra]
 > - Computational version: [[§51★ The Singular Value Decomposition#^prop-51-1|235 Prop. §51.1]] ($A^TA$ is symmetric with eigenvalues $\|A\mathbf v_i\|^2\ge0$).
 
 > [!definition] Definition 7.65: Singular values
-> The *singular values* of $T\in\Lin(V,W)$ are the nonnegative square roots of the eigenvalues of $T^*T$, in decreasing order, each repeated $\dim E(\lambda,T^*T)$ times. There are exactly $\dim V$ of them.
+> The *singular values* of $T\in\Lin(V,W)$ are the nonnegative square roots of the eigenvalues of $T^{\ast}T$, in decreasing order, each repeated $\dim E(\lambda,T^{\ast}T)$ times. There are exactly $\dim V$ of them.
 
 ^ladr-7-65
 
@@ -128,7 +128,7 @@ tags: [linear-algebra]
 > [!proof]+ Proof
 > **Adjoint.** $\langle Tv,w\rangle=\sum_ks_k\langle v,e_k\rangle\langle f_k,w\rangle=\big\langle v,\sum_ks_k\langle w,f_k\rangle e_k\big\rangle$ ($s_k$ real).
 >
-> **Pseudoinverse.** Let $v=\sum_k\frac{\langle w,f_k\rangle}{s_k}e_k$. Since $Te_k=s_kf_k$, $Tv=\sum_k\langle w,f_k\rangle f_k=P_{\range T}w$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i); $f_1,\dots,f_m$ is an orthonormal basis of $\range T$). Also $v\in\Span(e_1,\dots,e_m)=\range T^*=(\nullsp T)^\perp$ (by the adjoint formula and [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]]). By the definition [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-68|6.68]], $v=T^\dagger w$.
+> **Pseudoinverse.** Let $v=\sum_k\frac{\langle w,f_k\rangle}{s_k}e_k$. Since $Te_k=s_kf_k$, $Tv=\sum_k\langle w,f_k\rangle f_k=P_{\range T}w$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i); $f_1,\dots,f_m$ is an orthonormal basis of $\range T$). Also $v\in\Span(e_1,\dots,e_m)=\range T^{\ast}=(\nullsp T)^\perp$ (by the adjoint formula and [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]]). By the definition [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-68|6.68]], $v=T^\dagger w$.
 
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-68|6.68]]
 

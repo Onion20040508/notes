@@ -509,7 +509,7 @@ The columns of $\mathbf{\Psi}(t)$ in (44) are the solutions $\boldsymbol{\xi}^{(
 > [!remark] Remark: Method — Solving x′ = Ax with the Matrix Exponential
 > For a constant matrix $\mathbf{A}$ with $n$ linearly independent eigenvectors:
 > 1. **Find the eigenvalues** $r_1, \ldots, r_n$ and **independent eigenvectors** $\boldsymbol{\xi}^{(1)}, \ldots, \boldsymbol{\xi}^{(n)}$. If there are fewer than $n$, use generalized eigenvectors and the Jordan form instead ([[§34★ Repeated Eigenvalues|§34★]]).
-> 2. **Form** $\mathbf{T} = (\boldsymbol{\xi}^{(1)} | \cdots | \boldsymbol{\xi}^{(n)})$ and $e^{\mathbf{D}t} = \operatorname{diag}(e^{r_1t}, \ldots, e^{r_nt})$. If $\mathbf{A}$ is Hermitian (real symmetric), normalize orthogonal eigenvectors so that $\mathbf{T}^{-1} = \mathbf{T}^*$.
+> 2. **Form** $\mathbf{T} = (\boldsymbol{\xi}^{(1)} | \cdots | \boldsymbol{\xi}^{(n)})$ and $e^{\mathbf{D}t} = \operatorname{diag}(e^{r_1t}, \ldots, e^{r_nt})$. If $\mathbf{A}$ is Hermitian (real symmetric), normalize orthogonal eigenvectors so that $\mathbf{T}^{-1} = \mathbf{T}^{\ast}$.
 > 3. **Compute** $e^{\mathbf{A}t} = \mathbf{T}e^{\mathbf{D}t}\mathbf{T}^{-1}$.
 > 4. **Solve:** $\mathbf{x} = e^{\mathbf{A}t}\mathbf{x}^0$ for $\mathbf{x}(0) = \mathbf{x}^0$, or $\mathbf{x} = e^{\mathbf{A}(t - t_0)}\mathbf{x}^0$ for $\mathbf{x}(t_0) = \mathbf{x}^0$ ([[§33★ Fundamental Matrices#^rem-33-2|Remark: Starting at t₀]]).
 >

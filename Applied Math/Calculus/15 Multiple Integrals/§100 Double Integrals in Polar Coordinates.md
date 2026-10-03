@@ -62,7 +62,7 @@ $$
 > \Delta A_i = \tfrac12 r_i^2\,\Delta\theta - \tfrac12 r_{i-1}^2\,\Delta\theta = \tfrac12 (r_i + r_{i-1})(r_i - r_{i-1})\,\Delta\theta = r_i^*\,\Delta r\,\Delta\theta .
 > $$
 >
-> **The Riemann sums.** The double integral was defined with ordinary rectangles, but for continuous $f$ the same value is obtained with polar subrectangles (Stewart asserts this: "it can be shown"). Taking the center of $R_{ij}$, whose rectangular coordinates are $(r_i^*\cos\theta_j^*, r_i^*\sin\theta_j^*)$, as sample point, a typical Riemann sum is
+> **The Riemann sums.** The double integral was defined with ordinary rectangles, but for continuous $f$ the same value is obtained with polar subrectangles (Stewart asserts this: "it can be shown"). Taking the center of $R_{ij}$, whose rectangular coordinates are $(r_i^{\ast}\cos\theta_j^{\ast}, r_i^{\ast}\sin\theta_j^{\ast})$, as sample point, a typical Riemann sum is
 >
 > $$
 > \sum_{i=1}^m \sum_{j=1}^n f(r_i^*\cos\theta_j^*, r_i^*\sin\theta_j^*)\,\Delta A_i = \sum_{i=1}^m \sum_{j=1}^n f(r_i^*\cos\theta_j^*, r_i^*\sin\theta_j^*)\,r_i^*\,\Delta r\,\Delta\theta . \qquad (1)
@@ -79,7 +79,7 @@ $$
 *Uses:* [[§100 Double Integrals in Polar Coordinates#^def-100-1|Def. §100.1]], [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§98 Double Integrals Over Rectangles#^thm-98-3|§98.3]], [[§66 Calculus in Polar Coordinates#^thm-66-1|§66.1]] (area of a sector)
 
 ![[m233-100-1.svg]]
-*Dividing a polar rectangle by circles $r = r_i$ and rays $\theta = \theta_j$. The highlighted subrectangle $R_{ij}$ is nearly an ordinary rectangle with sides $\Delta r$ (radial) and $r_i^*\Delta\theta$ (an arc of radius $r_i^*$), and its area is exactly $r_i^*\,\Delta r\,\Delta\theta$. Subrectangles far from the origin are larger: this is the factor $r$ in $dA = r\,dr\,d\theta$.*
+*Dividing a polar rectangle by circles $r = r_i$ and rays $\theta = \theta_j$. The highlighted subrectangle $R_{ij}$ is nearly an ordinary rectangle with sides $\Delta r$ (radial) and $r_i^{\ast}\Delta\theta$ (an arc of radius $r_i^{\ast}$), and its area is exactly $r_i^{\ast}\,\Delta r\,\Delta\theta$. Subrectangles far from the origin are larger: this is the factor $r$ in $dA = r\,dr\,d\theta$.*
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]], proved there by the same computation with polar rectangles; the factor $r$ is the Jacobian of the polar map ([[§15 Multivariable Integration#^ex-15-4|452 Ex. §15.4]]), the general formula being [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]] (polar coordinates as a special case: [[§106 Change of Variables in Multiple Integrals#^ex-106-2|Example §106.2]]). Hub: [[Polar and spherical coordinates]].

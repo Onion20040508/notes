@@ -165,10 +165,10 @@ The unitary group $\mathrm{U}(n)$ is treated the same way, with $F(g) = gg^*$ ma
 
 *Assignment 2, Problem 4. The argument is that of [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds|The Orthogonal Group as a Smooth Manifold]] with one change that is easy to get wrong: the spaces involved are complex, but the map is not complex-linear, so everything must be done over $\mathbb{R}$.*
 
-Write $A^* = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mathrm{U}(n) = \{g \in \operatorname{Mat}(n,\mathbb{C}) \mid g^* g = I\}$. Throughout, $\operatorname{Mat}(n,\mathbb{C})$ is regarded as a *real* vector space of dimension $2n^2$ ([[§8 Topological Groups and Classical Matrix Groups#^def-8-8|Def. §8.8]]).
+Write $A^{\ast} = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mathrm{U}(n) = \{g \in \operatorname{Mat}(n,\mathbb{C}) \mid g^{\ast} g = I\}$. Throughout, $\operatorname{Mat}(n,\mathbb{C})$ is regarded as a *real* vector space of dimension $2n^2$ ([[§8 Topological Groups and Classical Matrix Groups#^def-8-8|Def. §8.8]]).
 
 > [!definition] Definition §19.2: Hermitian Matrices as a Real Vector Space
-> Let $\operatorname{Herm}(n) = \{A \in \operatorname{Mat}(n,\mathbb{C}) \mid A^* = A\}$. It is closed under addition and under multiplication by *real* scalars, so it is a real vector space; it is *not* a complex subspace, since $(iA)^* = -iA$. A Hermitian matrix has real diagonal entries ($a_{jj} = \overline{a_{jj}}$), arbitrary complex entries above the diagonal, and entries below the diagonal determined by $a_{kj} = \overline{a_{jk}}$. Hence
+> Let $\operatorname{Herm}(n) = \{A \in \operatorname{Mat}(n,\mathbb{C}) \mid A^{\ast} = A\}$. It is closed under addition and under multiplication by *real* scalars, so it is a real vector space; it is *not* a complex subspace, since $(iA)^{\ast} = -iA$. A Hermitian matrix has real diagonal entries ($a_{jj} = \overline{a_{jj}}$), arbitrary complex entries above the diagonal, and entries below the diagonal determined by $a_{kj} = \overline{a_{jk}}$. Hence
 >
 > $$
 > \dim_{\mathbb{R}} \operatorname{Herm}(n) = n + 2\binom{n}{2} = n^2 ,
@@ -210,16 +210,16 @@ Write $A^* = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mathrm{U
 ^ex-19-2
 
 ![[m591-10-6.svg]]
-*The map $F(g) = gg^*$ and its coordinate representation $\widehat F$ under the real-linear identifications $\operatorname{Mat}(n,\mathbb{C}) \cong \mathbb{R}^{2n^2}$ and $\operatorname{Herm}(n) \cong \mathbb{R}^{n^2}$.*
+*The map $F(g) = gg^{\ast}$ and its coordinate representation $\widehat F$ under the real-linear identifications $\operatorname{Mat}(n,\mathbb{C}) \cong \mathbb{R}^{2n^2}$ and $\operatorname{Herm}(n) \cong \mathbb{R}^{n^2}$.*
 
 The vertical arrows are the real-linear identifications of [[§8 Topological Groups and Classical Matrix Groups#^def-8-8|Def. §8.8]] and [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-19-2|Def. §19.2]]. This is the square of [[§18 The Differential of a Map Between Vector Spaces|The Differential of a Map Between Vector Spaces]] with $X = \operatorname{Mat}(n,\mathbb{C})$ and $Y = \operatorname{Herm}(n)$ regarded as real vector spaces: $F$ is smooth, and $I$ is a regular value, exactly when the same holds for $\widehat F$ (Lemma [[§18 The Differential of a Map Between Vector Spaces#^lem-18-1|§18.1]], Corollary [[§18 The Differential of a Map Between Vector Spaces#^cor-18-4|§18.4]]). Nothing is computed in the bottom row; it only certifies that the top row may be used.
 
 > [!proof]+ Proof
-> *$F$ is well defined and smooth.* $(gg^*)^* = g^{**}g^* = gg^*$, so $F$ lands in $\operatorname{Herm}(n)$. Each entry $(gg^*)_{jk} = \sum_m g_{jm}\overline{g_{km}}$ has real and imaginary parts that are quadratic polynomials in the real coordinates of $g$, so $F$ is smooth ([[§18 The Differential of a Map Between Vector Spaces#^def-18-2|Def. §18.2]]).
+> *$F$ is well defined and smooth.* $(gg^{\ast})^{\ast} = g^{\ast \ast}g^{\ast} = gg^{\ast}$, so $F$ lands in $\operatorname{Herm}(n)$. Each entry $(gg^{\ast})_{jk} = \sum_m g_{jm}\overline{g_{km}}$ has real and imaginary parts that are quadratic polynomials in the real coordinates of $g$, so $F$ is smooth ([[§18 The Differential of a Map Between Vector Spaces#^def-18-2|Def. §18.2]]).
 >
 > *$\mathrm{U}(n) = F^{-1}(I)$.* Lemma [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-19-3|§19.3]].
 >
-> *The differential.* By Theorem [[§18 The Differential of a Map Between Vector Spaces#^thm-18-3|§18.3]], for $g \in F^{-1}(I)$ and $h \in \operatorname{Mat}(n,\mathbb{C})$, $dF_g(h) = \frac{d}{dt}\big|_{t=0} F(g+th)$ with $t$ *real*. Since $(th)^* = t h^*$ for real $t$,
+> *The differential.* By Theorem [[§18 The Differential of a Map Between Vector Spaces#^thm-18-3|§18.3]], for $g \in F^{-1}(I)$ and $h \in \operatorname{Mat}(n,\mathbb{C})$, $dF_g(h) = \frac{d}{dt}\big|_{t=0} F(g+th)$ with $t$ *real*. Since $(th)^{\ast} = t h^{\ast}$ for real $t$,
 >
 > $$
 > F(g+th) = (g+th)(g^* + th^*) = gg^* + t\big(hg^* + gh^*\big) + t^2\, hh^*,
@@ -229,7 +229,7 @@ The vertical arrows are the real-linear identifications of [[§8 Topological Gro
 >
 > which is Hermitian, as it must be.
 >
-> *$dF_g$ is surjective.* Put $X = hg^*$; then $gh^* = (hg^*)^* = X^*$, so $dF_g(h) = X + X^*$. As $g$ is invertible, $h \mapsto hg^*$ is a real-linear bijection of $\operatorname{Mat}(n,\mathbb{C})$, with inverse $X \mapsto Xg$. Hence $\operatorname{im} dF_g = \{X + X^* \mid X \in \operatorname{Mat}(n,\mathbb{C})\} = \operatorname{Herm}(n)$, since any Hermitian $A$ arises from $X = \tfrac12 A$. Explicitly $h = \tfrac12 Ag$:
+> *$dF_g$ is surjective.* Put $X = hg^{\ast}$; then $gh^{\ast} = (hg^{\ast})^{\ast} = X^{\ast}$, so $dF_g(h) = X + X^{\ast}$. As $g$ is invertible, $h \mapsto hg^{\ast}$ is a real-linear bijection of $\operatorname{Mat}(n,\mathbb{C})$, with inverse $X \mapsto Xg$. Hence $\operatorname{im} dF_g = \{X + X^{\ast} \mid X \in \operatorname{Mat}(n,\mathbb{C})\} = \operatorname{Herm}(n)$, since any Hermitian $A$ arises from $X = \tfrac12 A$. Explicitly $h = \tfrac12 Ag$:
 >
 > $$
 > hg^* = \tfrac12 A gg^* = \tfrac12 A, \qquad gh^* = \tfrac12\, g g^* A^* = \tfrac12 A .
@@ -250,7 +250,7 @@ The vertical arrows are the real-linear identifications of [[§8 Topological Gro
 > - Its tangent spaces: [[§20 Tangent Spaces I꞉ The Geometric Picture#^ex-20-3|Ex. §20.3]].
 
 > [!remark] Remark
-> **Why over $\mathbb{R}$.** The derivative $h \mapsto hg^* + gh^*$ is real-linear but not complex-linear: $dF_g(ih) = i\,hg^* - i\,gh^*$, which differs from $i\,dF_g(h)$ unless $gh^* = 0$. This is the conjugation in $g^*$ at work, and it is why Problem 4 insists that both spaces be regarded as real vector spaces. It is also why the holomorphic regular value theorem of [[§7 The Regular Value Theorem#Holomorphic Level Sets|§7, Holomorphic Level Sets]] does not apply, and why $\dim \mathrm{U}(n) = n^2$ can be odd, which no holomorphic level set can.
+> **Why over $\mathbb{R}$.** The derivative $h \mapsto hg^{\ast} + gh^{\ast}$ is real-linear but not complex-linear: $dF_g(ih) = i\,hg^{\ast} - i\,gh^{\ast}$, which differs from $i\,dF_g(h)$ unless $gh^{\ast} = 0$. This is the conjugation in $g^{\ast}$ at work, and it is why Problem 4 insists that both spaces be regarded as real vector spaces. It is also why the holomorphic regular value theorem of [[§7 The Regular Value Theorem#Holomorphic Level Sets|§7, Holomorphic Level Sets]] does not apply, and why $\dim \mathrm{U}(n) = n^2$ can be odd, which no holomorphic level set can.
 
 ^rem-19-5
 

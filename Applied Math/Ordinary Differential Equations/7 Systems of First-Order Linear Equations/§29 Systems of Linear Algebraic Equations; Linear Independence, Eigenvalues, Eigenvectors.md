@@ -67,7 +67,7 @@ This section collects the linear algebra that Chapter 7 runs on: when $\mathbf{A
 
 ^thm-29-1
 
-*BDP omits the proofs (Problems 7.3.21–25 outline those of (5) and (6)). For real $\mathbf{A}$: part (a) and the first statement of (b) are the Invertible Matrix Theorem, [[§13 Characterizations of Invertible Matrices#^thm-13-1|235 Thm. §13.1]] with [[§21 Properties of Determinants#^thm-21-3|235 Thm. §21.3]]; the form (6) is [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]]; and since $\mathbf{A}^* = \mathbf{A}^T$, condition (5) says $\mathbf{b} \in (\operatorname{Nul}\mathbf{A}^T)^\perp = \operatorname{Col}\mathbf{A}$, by [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|235 Thm. §40.6]].*
+*BDP omits the proofs (Problems 7.3.21–25 outline those of (5) and (6)). For real $\mathbf{A}$: part (a) and the first statement of (b) are the Invertible Matrix Theorem, [[§13 Characterizations of Invertible Matrices#^thm-13-1|235 Thm. §13.1]] with [[§21 Properties of Determinants#^thm-21-3|235 Thm. §21.3]]; the form (6) is [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]]; and since $\mathbf{A}^{\ast} = \mathbf{A}^T$, condition (5) says $\mathbf{b} \in (\operatorname{Nul}\mathbf{A}^T)^\perp = \operatorname{Col}\mathbf{A}$, by [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|235 Thm. §40.6]].*
 
 The resemblance of (6) to the general solution of a nonhomogeneous linear differential equation (a particular solution plus the general solution of the homogeneous equation) is not an accident; it is the same linear-algebra fact.
 
@@ -337,7 +337,7 @@ With a repeated eigenvalue there may be fewer than $n$ independent eigenvectors,
 ^ex-29-4
 
 > [!definition] Definition §29.6: Self-Adjoint (Hermitian) Matrix
-> A matrix $\mathbf{A}$ is **self-adjoint**, or **Hermitian**, if $\mathbf{A}^* = \mathbf{A}$, that is, $\bar a_{ji} = a_{ij}$ for all $i, j$. The real Hermitian matrices are the real **symmetric** matrices, $\mathbf{A}^T = \mathbf{A}$.
+> A matrix $\mathbf{A}$ is **self-adjoint**, or **Hermitian**, if $\mathbf{A}^{\ast} = \mathbf{A}$, that is, $\bar a_{ji} = a_{ij}$ for all $i, j$. The real Hermitian matrices are the real **symmetric** matrices, $\mathbf{A}^T = \mathbf{A}$.
 >
 > *BDP: 7.3 (text)*
 

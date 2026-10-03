@@ -124,7 +124,7 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 ^prop-30-4
 
 > [!proof]+ Proof
-> *(Lecture 12: “immediate from the definitions”; filled in.)* By Lemma [[§30 Submanifolds#^lem-30-3|§30.3]](1) the coordinate representation of $\iota$ is $j$, whose Jacobian is the $m \times (m-k)$ matrix $\binom{I_{m-k}}{0}$. By Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]] this is the matrix of $\iota_{*p}$ in the coordinate bases; its $i$-th column gives the formula, and its columns are independent, so $\iota_{*p}$ is injective. The statement for curves is Corollary [[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|§26.3]].
+> *(Lecture 12: “immediate from the definitions”; filled in.)* By Lemma [[§30 Submanifolds#^lem-30-3|§30.3]](1) the coordinate representation of $\iota$ is $j$, whose Jacobian is the $m \times (m-k)$ matrix $\binom{I_{m-k}}{0}$. By Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]] this is the matrix of $\iota_{\ast p}$ in the coordinate bases; its $i$-th column gives the formula, and its columns are independent, so $\iota_{\ast p}$ is injective. The statement for curves is Corollary [[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|§26.3]].
 
 ^pf-30-4
 
@@ -152,7 +152,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 ^prop-30-5
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Write $\xi = \sum_j \xi_j\, dx^j|_p$ in the dual basis (Proposition [[§17 Linear Algebra Toolkit#^prop-17-2|§17.2]]), so that $\xi(\partial/\partial x^i|_p) = \xi_i$. By Proposition [[§30 Submanifolds#^prop-30-4|§30.4]], $\xi$ vanishes on $\iota_{*p}(T_pS)$ if and only if $\xi_i = 0$ for all $i \le m - k$. So $N_pS$ is spanned by the $dx^j|_p$ with $j > m - k$, which are linearly independent as part of a basis.
+> *(Not from lecture; filled in.)* Write $\xi = \sum_j \xi_j\, dx^j|_p$ in the dual basis (Proposition [[§17 Linear Algebra Toolkit#^prop-17-2|§17.2]]), so that $\xi(\partial/\partial x^i|_p) = \xi_i$. By Proposition [[§30 Submanifolds#^prop-30-4|§30.4]], $\xi$ vanishes on $\iota_{\ast p}(T_pS)$ if and only if $\xi_i = 0$ for all $i \le m - k$. So $N_pS$ is spanned by the $dx^j|_p$ with $j > m - k$, which are linearly independent as part of a basis.
 
 ^pf-30-5
 
@@ -200,7 +200,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 >
 > “These are not of the type $x_b = 0$, but of the type $x_a$ equals a constant”: the first $n$ coordinates equal a constant vector. By the observations after the definition (Proposition [[§30 Submanifolds#^prop-30-1|§30.1]]) — any constant, and any $n$ of the coordinates — $S$ has an adapted chart at $p$, of codimension $n$. *(Completion.)* The second equivalence uses that $\psi$ is injective on $V$, which contains $F(q')$; the last is the normal form.
 >
-> *The tangent space.* *(Completion. In lecture: “I won't bother checking the kernel thing, because everything really reduces to the Euclidean [case].”)* The composite $F \circ \iota : S \to N$ is constant, with value $q$, and the pushforward along a constant map is zero (as in the proof of Theorem [[§26 Tangent Vectors as Velocities of Curves#^thm-26-4|§26.4]]); so $F_{*p} \circ \iota_{*p} = 0$ and $\iota_{*p}(T_pS) \subseteq \ker F_{*p}$. The left side has dimension $m - n$, since $\iota_{*p}$ is injective (Proposition [[§30 Submanifolds#^prop-30-4|§30.4]]); the right side has dimension $m - n$ by rank–nullity, since $F_{*p}$ is onto (Proposition [[§17 Linear Algebra Toolkit#^prop-17-1|§17.1]]). A subspace of the same finite dimension is everything, so the two are equal. This is the argument of Lecture 8 for $T^{\mathrm{geo}}_pM = \ker F'(p)$ (Theorem [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]]), one level up.
+> *The tangent space.* *(Completion. In lecture: “I won't bother checking the kernel thing, because everything really reduces to the Euclidean [case].”)* The composite $F \circ \iota : S \to N$ is constant, with value $q$, and the pushforward along a constant map is zero (as in the proof of Theorem [[§26 Tangent Vectors as Velocities of Curves#^thm-26-4|§26.4]]); so $F_{\ast p} \circ \iota_{\ast p} = 0$ and $\iota_{\ast p}(T_pS) \subseteq \ker F_{\ast p}$. The left side has dimension $m - n$, since $\iota_{\ast p}$ is injective (Proposition [[§30 Submanifolds#^prop-30-4|§30.4]]); the right side has dimension $m - n$ by rank–nullity, since $F_{\ast p}$ is onto (Proposition [[§17 Linear Algebra Toolkit#^prop-17-1|§17.1]]). A subspace of the same finite dimension is everything, so the two are equal. This is the argument of Lecture 8 for $T^{\mathrm{geo}}_pM = \ker F'(p)$ (Theorem [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]]), one level up.
 
 ^pf-30-6
 
@@ -251,7 +251,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 ^prop-30-8
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* First, $c$ is a regular value in both senses, since the matrix of $F_{*p}$ in the standard coordinates is $F'(p)$ (Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]]).
+> *(Not from lecture; filled in.)* First, $c$ is a regular value in both senses, since the matrix of $F_{\ast p}$ in the standard coordinates is $F'(p)$ (Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]]).
 >
 > (1) Let $p \in S$. As in the construction of the graph charts, after reordering the coordinates write the points of $\mathbb{R}^{n+k}$ as $(x, y) \in \mathbb{R}^n \times \mathbb{R}^k$ with $\partial F/\partial y\,(p)$ invertible, so that the graph chart near $p$ is $(x, y) \mapsto x$ on $S$. Let $\Phi(x, y) = (x, F(x, y) - c)$. Its Jacobian at $p$ is $\begin{pmatrix} I_n & 0 \\ \partial F/\partial x & \partial F/\partial y \end{pmatrix}$, which is invertible, so by the inverse function theorem $\Phi$ restricts to a diffeomorphism of an open $U \ni p$ onto an open set, and by Lemma [[§29 Submersions#^lem-29-3|§29.3]] it is a smooth chart of $W$. Its last $k$ components are $F - c$, which vanish exactly on $S \cap U$, so $\Phi$ is adapted, and its induced chart is $\Phi_S = x|_{S \cap U}$: the graph chart. So near each of its points, every graph chart is an induced chart. Induced charts are pairwise compatible, and smoothness of a transition map is local, so every graph chart is compatible with every induced chart, and the two atlases determine the same maximal atlas (Theorem [[§13 Differentiable Structures#^thm-13-5|§13.5]]).
 >

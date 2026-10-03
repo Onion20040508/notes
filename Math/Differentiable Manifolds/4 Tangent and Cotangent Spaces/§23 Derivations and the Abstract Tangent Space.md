@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§22 Tangent Spaces II꞉ Germs]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§24 Coordinate Derivations and the Basis Theorem]] →
 
-*Stage: abstract — The abstract tangent space $T_pM$ as the derivations at $p$, and the differential $F_{*p}$ that pushes them forward. The two notions of tangent space agree wherever both exist (Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|§24.6]]).*
+*Stage: abstract — The abstract tangent space $T_pM$ as the derivations at $p$, and the differential $F_{\ast p}$ that pushes them forward. The two notions of tangent space agree wherever both exist (Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|§24.6]]).*
 
 > [!remark] Remark: Two Faces of a Tangent Vector
 > Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces — “like Janus.” It is a *velocity*, the $\gamma'(0)$ of a curve — an element of the geometric tangent space $T^{\mathrm{geo}}_pM$, which is how [[§22 Tangent Spaces II꞉ Germs#From Tangent Vectors to Derivations|§22, From Tangent Vectors to Derivations]] met it; and it is a *derivation*, an operator that eats germs and returns numbers — an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|§24.6]]). The same split will reappear for vector fields: as velocities attached to every point they *generate dynamics*, and as operators they lead to the *Lie derivative*.
@@ -183,7 +183,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 > F_{*p}D : C^\infty_{F(p)}(N) \longrightarrow \mathbb{R}, \qquad \big(F_{*p}D\big)[g] \;:=\; D\big(F_p^*[g]\big) = D[\,g \circ F\,],
 > $$
 >
-> defined on germs $[g]$ at $F(p)$ on $N$: pull the germ back to $p$, then apply $D$. In one line, $F_{*p}D = D \circ F_p^*$. It is a derivation at $F(p)$, i.e. an element of $T_{F(p)}N$ (Proposition [[§23 Derivations and the Abstract Tangent Space#^prop-23-5|§23.5]]). Letting $D$ vary gives the **pushforward**, or **differential**, of $F$ at $p$,
+> defined on germs $[g]$ at $F(p)$ on $N$: pull the germ back to $p$, then apply $D$. In one line, $F_{\ast p}D = D \circ F_p^{\ast}$. It is a derivation at $F(p)$, i.e. an element of $T_{F(p)}N$ (Proposition [[§23 Derivations and the Abstract Tangent Space#^prop-23-5|§23.5]]). Letting $D$ vary gives the **pushforward**, or **differential**, of $F$ at $p$,
 >
 > $$
 > F_{*p} : T_pM \longrightarrow T_{F(p)}N, \qquad D \longmapsto F_{*p}D,
@@ -198,7 +198,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 ![[m591-12-3.svg]]
 
 ![[m591-12-4.svg]]
-*Above, the definition as a diagram: $F_{*p}D = D \circ F_p^*$, a derivation at $F(p)$ obtained by first pulling the germ back to $p$ and then applying $D$. Below, the directions. Points move forward along $F$; functions move backward, since a function on $N$ composed with $F$ is a function on $M$; and derivations, being dual to functions, reverse the arrow once more and move forward again.*
+*Above, the definition as a diagram: $F_{\ast p}D = D \circ F_p^{\ast}$, a derivation at $F(p)$ obtained by first pulling the germ back to $p$ and then applying $D$. Below, the directions. Points move forward along $F$; functions move backward, since a function on $N$ composed with $F$ is a function on $M$; and derivations, being dual to functions, reverse the arrow once more and move forward again.*
 
 > [!remark]- Connections
 > - Pushforward as the transpose of pullback: [[§12 Duality#^ladr-3-118|LADR 3.118 (dual map)]]; 591's version, [[§17 Linear Algebra Toolkit#^def-17-2|Def. §17.2]].
@@ -243,7 +243,7 @@ Every object of this section, with what it is and where it lives. The rows go in
 | $F_{*p}D$ | a tangent vector at $F(p)$: a derivation, a linear map $C^\infty_{F(p)}(N) \to \mathbb{R}$ | $T_{F(p)}N$ |
 | $(F_{*p}D)[g]$ | a real number, equal to $D[g \circ F]$ | $\mathbb{R}$ |
 
-The board justified the derivation property with “since $F_p^*$ is a ring morphism.” That is one of the two facts used, and not quite enough on its own: the Leibniz rule *at $F(p)$* needs the coefficients $g(F(p))$ and $h(F(p))$, and these appear only because pullback is compatible with evaluation, $(g \circ F)(p) = g(F(p))$ — the third equality above. It is automatic here, but it is a separate property from multiplicativity, and it is the one that moves the base point from $p$ to $F(p)$.
+The board justified the derivation property with “since $F_p^{\ast}$ is a ring morphism.” That is one of the two facts used, and not quite enough on its own: the Leibniz rule *at $F(p)$* needs the coefficients $g(F(p))$ and $h(F(p))$, and these appear only because pullback is compatible with evaluation, $(g \circ F)(p) = g(F(p))$ — the third equality above. It is automatic here, but it is a separate property from multiplicativity, and it is the one that moves the base point from $p$ to $F(p)$.
 
 > [!theorem] Theorem §23.6: The Chain Rule
 > If $F : M \to N$ and $G : N \to P$ are smooth and $p \in M$, then
@@ -257,7 +257,7 @@ The board justified the derivation property with “since $F_p^*$ is a ring morp
 ^thm-23-6
 
 > [!proof]+ Proof
-> *(Lecture 10: “the proof of the chain rule is one line” — pullbacks compose in the opposite order, because composition is associative. The dualization that follows was set as an exercise, “use this to conclude the proof”; it is filled in.)* Pullback reverses composition: $(G\circ F)_p^* = F_p^* \circ G_{F(p)}^*$, since $g \circ (G \circ F) = (g \circ G) \circ F$. Hence for $D \in T_pM$ and a germ $[g]$ at $G(F(p))$,
+> *(Lecture 10: “the proof of the chain rule is one line” — pullbacks compose in the opposite order, because composition is associative. The dualization that follows was set as an exercise, “use this to conclude the proof”; it is filled in.)* Pullback reverses composition: $(G\circ F)_p^{\ast} = F_p^{\ast} \circ G_{F(p)}^{\ast}$, since $g \circ (G \circ F) = (g \circ G) \circ F$. Hence for $D \in T_pM$ and a germ $[g]$ at $G(F(p))$,
 >
 > $$
 > \big((G\circ F)_{*p}D\big)[g] = D\big(F_p^*\, G_{F(p)}^*[g]\big) = \big(F_{*p}D\big)\big(G_{F(p)}^*[g]\big) = \big(G_{*F(p)}\,F_{*p}D\big)[g].
@@ -276,7 +276,7 @@ The board justified the derivation property with “since $F_p^*$ is a ring morp
 > - The chain rule of calculus: [[Multivariable Chain Rule|452 §10.2 (Multivariable Chain Rule)]].
 > - Duals compose in the opposite order, $(ST)' = T'S'$: [[§12 Duality#^ladr-3-120|LADR 3.120]]; 591's version, [[§17 Linear Algebra Toolkit#^prop-17-4|§17.4]].
 
-**Lecture 10.** Uribe stated this as the Chain Rule and proved the pullback identity $(G \circ F)_p^* = F_p^* \circ G_{F(p)}^*$ on the board — “see, you know that this is the right point of view when proofs become one line” — leaving the dualization as an exercise; the displayed computation above is that exercise. Pullbacks compose in the *opposite* order, so pushforwards, being their duals, compose in the *same* order as the maps. (The theorem appeared here, ahead of the lecture, because the two results below depend on it.)
+**Lecture 10.** Uribe stated this as the Chain Rule and proved the pullback identity $(G \circ F)_p^{\ast} = F_p^{\ast} \circ G_{F(p)}^{\ast}$ on the board — “see, you know that this is the right point of view when proofs become one line” — leaving the dualization as an exercise; the displayed computation above is that exercise. Pullbacks compose in the *opposite* order, so pushforwards, being their duals, compose in the *same* order as the maps. (The theorem appeared here, ahead of the lecture, because the two results below depend on it.)
 
 > [!theorem] Corollary §23.7: Diffeomorphisms Induce Isomorphisms
 > If $\Phi : M \to N$ is a diffeomorphism, then $\Phi_{*p} : T_pM \to T_{\Phi(p)}N$ is a linear isomorphism, with inverse $(\Phi^{-1})_{*\Phi(p)}$.

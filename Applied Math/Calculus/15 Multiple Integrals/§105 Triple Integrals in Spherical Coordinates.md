@@ -164,7 +164,7 @@ The next lemma makes this exact.
 ^thm-105-2
 
 > [!proof]+ Proof
-> *Stewart gives this as a sketch.* Although triple integrals were defined by dividing solids into small boxes, dividing a solid into small spherical wedges always gives the same result (Stewart asserts this: "it can be shown"). Divide $E$ into the wedges $E_{ijk}$ of Definition §105.2. By Lemma §105.1, $\Delta V_{ijk} = \tilde\rho_i^{\,2}\sin\tilde\phi_k\,\Delta\rho\,\Delta\theta\,\Delta\phi$ for some point $(\tilde\rho_i, \tilde\theta_j, \tilde\phi_k)$ of $E_{ijk}$ (any $\tilde\theta_j$ in the $\theta$-interval will do). Let $(x_{ijk}^*, y_{ijk}^*, z_{ijk}^*)$ be the rectangular coordinates of this point. Then
+> *Stewart gives this as a sketch.* Although triple integrals were defined by dividing solids into small boxes, dividing a solid into small spherical wedges always gives the same result (Stewart asserts this: "it can be shown"). Divide $E$ into the wedges $E_{ijk}$ of Definition §105.2. By Lemma §105.1, $\Delta V_{ijk} = \tilde\rho_i^{\,2}\sin\tilde\phi_k\,\Delta\rho\,\Delta\theta\,\Delta\phi$ for some point $(\tilde\rho_i, \tilde\theta_j, \tilde\phi_k)$ of $E_{ijk}$ (any $\tilde\theta_j$ in the $\theta$-interval will do). Let $(x_{ijk}^{\ast}, y_{ijk}^{\ast}, z_{ijk}^{\ast})$ be the rectangular coordinates of this point. Then
 >
 > $$
 > \begin{aligned}

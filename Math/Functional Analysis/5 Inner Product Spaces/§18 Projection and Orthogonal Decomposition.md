@@ -430,7 +430,7 @@ For $f(x) = e^x$ the decomposition is $e^x = \cosh x + \sinh x$: the even part i
 > \int_a^b |f''(x)|^2\,dx \ge \frac{4}{L} = \frac{4}{b - a}.
 > $$
 >
-> **Step 4: sharpness.** (Not part of the homework.) Let $f_*(x) = (x - a)\bigl(1 - \frac{x - a}{L}\bigr)^2$. With $t = x - a$, $f_* = t - \frac{2t^2}{L} + \frac{t^3}{L^2}$, so $f_*(a) = 0$ and $f_*(b) = L - 2L + L = 0$; $f_*' = 1 - \frac{4t}{L} + \frac{3t^2}{L^2}$ equals $1$ at $t = 0$ and $1 - 4 + 3 = 0$ at $t = L$; and $f_*'' = -\frac{4}{L} + \frac{6t}{L^2} = -\frac{4}{L}\,g$. Hence, by Step 2,
+> **Step 4: sharpness.** (Not part of the homework.) Let $f_{\ast}(x) = (x - a)\bigl(1 - \frac{x - a}{L}\bigr)^2$. With $t = x - a$, $f_{\ast} = t - \frac{2t^2}{L} + \frac{t^3}{L^2}$, so $f_{\ast}(a) = 0$ and $f_{\ast}(b) = L - 2L + L = 0$; $f_{\ast}' = 1 - \frac{4t}{L} + \frac{3t^2}{L^2}$ equals $1$ at $t = 0$ and $1 - 4 + 3 = 0$ at $t = L$; and $f_{\ast}'' = -\frac{4}{L} + \frac{6t}{L^2} = -\frac{4}{L}\,g$. Hence, by Step 2,
 >
 > $$
 > \int_a^b |f_*''|^2\,dx = \frac{16}{L^2} \int_a^b g^2\,dx = \frac{16}{L^2} \cdot \frac{L}{4} = \frac{4}{L}.

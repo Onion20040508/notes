@@ -200,7 +200,7 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 *Uses:* [[§5 Convex Sets and the Gauge#^def-5-2|Def. §5.2]], [[§5 Convex Sets and the Gauge#^lem-5-4|§5.4]]
 
 > [!remark] Remark: Reading the Cases
-> Positive homogeneity (Proposition [[§5 Convex Sets and the Gauge#^prop-5-6|§5.6]] below, $p_K(tx) = t\,p_K(x)$) says the gauge is not constant along a ray but *linear* along it: what is constant is the exit point $x^* = x / p_K(x)$ at which the ray through $x$ leaves $K$ (when $p_K(x) > 0$), and $p_K(x)$ counts how many copies of $x^*$ make up $x$.
+> Positive homogeneity (Proposition [[§5 Convex Sets and the Gauge#^prop-5-6|§5.6]] below, $p_K(tx) = t\,p_K(x)$) says the gauge is not constant along a ray but *linear* along it: what is constant is the exit point $x^{\ast} = x / p_K(x)$ at which the ray through $x$ leaves $K$ (when $p_K(x) > 0$), and $p_K(x)$ counts how many copies of $x^{\ast}$ make up $x$.
 >
 > The two halves of (b) are the same statement seen from opposite sides. In both, $p_K(x)$ is the scale $a$ at which $x/a$ sits on the boundary of $K$:
 > - *$x$ outside $K$.* Dividing by $a$ must *shrink* $x$, so $a$ increases from $1$; the points $x/a$ move along the ray toward $0$ and enter $K$ at $a = p_K(x) \ge 1$. Every larger $a$ is admissible (Lemma [[§5 Convex Sets and the Gauge#^lem-5-4|§5.4]]); no smaller $a$ is, since shrinking can only bring $x$ into $K$, never take it out. The crossing scale is the infimum.

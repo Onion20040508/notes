@@ -40,7 +40,7 @@ and suppose first that $f(x, y) \ge 0$. Let $S = \{(x, y, z) \in \mathbb{R}^3 \m
 > R_{ij} = [x_{i-1}, x_i] \times [y_{j-1}, y_j] = \{(x, y) \mid x_{i-1} \le x \le x_i,\ y_{j-1} \le y \le y_j\},
 > $$
 >
-> each of area $\Delta A = \Delta x\,\Delta y$. Choose a **sample point** $(x_{ij}^*, y_{ij}^*)$ in each $R_{ij}$. The thin box with base $R_{ij}$ and height $f(x_{ij}^*, y_{ij}^*)$ has volume $f(x_{ij}^*, y_{ij}^*)\,\Delta A$, and the sum of these volumes approximates the volume of $S$:
+> each of area $\Delta A = \Delta x\,\Delta y$. Choose a **sample point** $(x_{ij}^{\ast}, y_{ij}^{\ast})$ in each $R_{ij}$. The thin box with base $R_{ij}$ and height $f(x_{ij}^{\ast}, y_{ij}^{\ast})$ has volume $f(x_{ij}^{\ast}, y_{ij}^{\ast})\,\Delta A$, and the sum of these volumes approximates the volume of $S$:
 >
 > $$
 > V \approx \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*)\,\Delta A . \qquad (3)
@@ -73,7 +73,7 @@ The same limits occur for functions that are not positive (mass, charge, probabi
 > \left| \iint_R f(x, y)\,dA - \sum_{i=1}^m \sum_{j=1}^n f(x_{ij}^*, y_{ij}^*)\,\Delta A \right| < \varepsilon
 > $$
 >
-> for all integers $m, n > N$ and every choice of sample points $(x_{ij}^*, y_{ij}^*)$ in $R_{ij}$. The function $f$ is **integrable** over $R$ if the limit exists, and the sum is a **double Riemann sum**.
+> for all integers $m, n > N$ and every choice of sample points $(x_{ij}^{\ast}, y_{ij}^{\ast})$ in $R_{ij}$. The function $f$ is **integrable** over $R$ if the limit exists, and the sum is a **double Riemann sum**.
 >
 > Since any sample points may be used, choosing the upper right-hand corner $(x_i, y_j)$ of each $R_{ij}$ gives, for integrable $f$,
 >

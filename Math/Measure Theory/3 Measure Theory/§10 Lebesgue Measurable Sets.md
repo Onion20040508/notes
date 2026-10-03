@@ -27,7 +27,7 @@ The answer is **no** in general. [[§9 Lebesgue Outer Measure#^def-9-4|Outer mea
 ^def-10-1
 
 ![[m551-10-1.svg]]
-*The Carathéodory criterion: a test set $T$ (black outline) is cut by $E$ (blue) into $T \cap E$ (dark blue) and $T \cap E^c$ (red). $E$ is measurable when, for every such $T$, the outer measures of the two pieces add up exactly to $m^*(T)$; the inequality $\leq$ is automatic by subadditivity (Remark §10.1).*
+*The Carathéodory criterion: a test set $T$ (black outline) is cut by $E$ (blue) into $T \cap E$ (dark blue) and $T \cap E^c$ (red). $E$ is measurable when, for every such $T$, the outer measures of the two pieces add up exactly to $m^{\ast}(T)$; the inequality $\leq$ is automatic by subadditivity (Remark §10.1).*
 
 > [!remark] Remark
 > By [[Properties of Lebesgue Outer Measure|subadditivity]], $m^*(T) \leq m^*(T \cap E) + m^*(T \cap E^c)$ always holds.
@@ -43,11 +43,11 @@ The answer is **no** in general. [[§9 Lebesgue Outer Measure#^def-9-4|Outer mea
 > [!remark] Remark: Geometric and Topological Motivation for the Carathéodory Criterion
 > At first glance, the Carathéodory criterion appears purely algebraic and unmotivated: why should measurability require testing against *every* subset $T \subseteq \mathbb{R}^n$? The following perspectives reveal its geometric content.
 >
-> **1. The separation principle.** A measurable set $E$ should “cleanly separate” any region of space into the part inside $E$ and the part outside, with no measure lost or created at the boundary. The criterion $m^*(T) = m^*(T \cap E) + m^*(T \cap E^c)$ says precisely this: $E$ splits every test set $T$ additively. If the boundary of $E$ were “fuzzy”—trapping measure in a way that neither side can claim—one would find a test set $T$ straddling that boundary with strict inequality $m^*(T) < m^*(T \cap E) + m^*(T \cap E^c)$.
+> **1. The separation principle.** A measurable set $E$ should “cleanly separate” any region of space into the part inside $E$ and the part outside, with no measure lost or created at the boundary. The criterion $m^{\ast}(T) = m^{\ast}(T \cap E) + m^{\ast}(T \cap E^c)$ says precisely this: $E$ splits every test set $T$ additively. If the boundary of $E$ were “fuzzy”—trapping measure in a way that neither side can claim—one would find a test set $T$ straddling that boundary with strict inequality $m^{\ast}(T) < m^{\ast}(T \cap E) + m^{\ast}(T \cap E^c)$.
 >
 > **2. Analogy with topological separation.** In topology, a *[[§13 Connected Spaces#^def-13-1|separation]]* of $X$ is a decomposition $X = U \cup V$ with $U, V$ open and disjoint—the two pieces do not interfere. The Carathéodory criterion is the measure-theoretic analogue: $E$ “separates” any test set into two pieces whose outer measures do not interfere (they add exactly). Topological separation says the boundary between $U$ and $V$ is empty; measure-theoretic separation says the boundary of $E$ is negligible from the perspective of outer measure.
 >
-> **3. Why quantify over all $T$?** One might hope it suffices to check $m^*(\mathbb{R}^n) = m^*(E) + m^*(E^c)$, but this is trivially satisfied whenever either side is infinite. The universal quantifier over $T$ demands the splitting work *locally*—for arbitrarily small test sets zooming into the boundary of $E$. This is analogous to how closedness in topology is not a global property but a local one ([[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|every convergent sequence]] near the boundary must land inside). It is also precisely this universal quantifier that forces $\mathcal{M}$ to be a [[Lebesgue Measurable Sets Form a σ-Algebra|σ-algebra automatically]].
+> **3. Why quantify over all $T$?** One might hope it suffices to check $m^{\ast}(\mathbb{R}^n) = m^{\ast}(E) + m^{\ast}(E^c)$, but this is trivially satisfied whenever either side is infinite. The universal quantifier over $T$ demands the splitting work *locally*—for arbitrarily small test sets zooming into the boundary of $E$. This is analogous to how closedness in topology is not a global property but a local one ([[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|every convergent sequence]] near the boundary must land inside). It is also precisely this universal quantifier that forces $\mathcal{M}$ to be a [[Lebesgue Measurable Sets Form a σ-Algebra|σ-algebra automatically]].
 >
 > **4. Equivalent “partition wall” formulation.** The Carathéodory criterion is equivalent to: for all $A \subseteq E$ and $B \subseteq E^c$,
 >
@@ -104,11 +104,11 @@ The answer is **no** in general. [[§9 Lebesgue Outer Measure#^def-9-4|Outer mea
 ^thm-10-1
 
 > [!proof]+ Proof
-> **(1)** The Carathéodory criterion is symmetric in $E$ and $E^c$: if $m^*(T) = m^*(T \cap E) + m^*(T \cap E^c)$ for all $T$, then the same equation holds with $E$ replaced by $E^c$.
+> **(1)** The Carathéodory criterion is symmetric in $E$ and $E^c$: if $m^{\ast}(T) = m^{\ast}(T \cap E) + m^{\ast}(T \cap E^c)$ for all $T$, then the same equation holds with $E$ replaced by $E^c$.
 >
 > **(3)** Assuming (1) and (2): $E_1 \cap E_2 = (E_1^c \cup E_2^c)^c \in \mathcal{M}$. Also $E_1 \setminus E_2 = E_1 \cap E_2^c \in \mathcal{M}$.
 >
-> **(2)** Let $E_1, E_2 \in \mathcal{M}$ and $T \subseteq \mathbb{R}^n$. We may assume $m^*(T) < \infty$.
+> **(2)** Let $E_1, E_2 \in \mathcal{M}$ and $T \subseteq \mathbb{R}^n$. We may assume $m^{\ast}(T) < \infty$.
 >
 > We must show $m^*(T) \geq m^*(T \cap (E_1 \cup E_2)) + m^*(T \cap (E_1 \cup E_2)^c)$.
 >

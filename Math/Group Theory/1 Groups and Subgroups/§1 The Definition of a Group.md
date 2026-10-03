@@ -10,10 +10,10 @@ tags: [group-theory, math493]
 *Reference: Pinter Ch. 2 (operations), Ch. 3 (the definition of groups).*
 
 > [!definition] Definition §1.1: Group
-> A **group** $G$ is a set with a binary operation $*: G \times G \to G$ obeying the properties:
-> 1. **(Identity)** There is an element $e \in G$ such that $e * g = g * e = g$ for all $g \in G$.
-> 2. **(Inverses)** For all $g \in G$, there is an element $g^{-1}$ obeying $g * g^{-1} = g^{-1} * g = e$.
-> 3. **(Associativity)** For all $g_1, g_2, g_3 \in G$, we have $(g_1 * g_2) * g_3 = g_1 * (g_2 * g_3)$.
+> A **group** $G$ is a set with a binary operation $\ast : G \times G \to G$ obeying the properties:
+> 1. **(Identity)** There is an element $e \in G$ such that $e \ast  g = g \ast  e = g$ for all $g \in G$.
+> 2. **(Inverses)** For all $g \in G$, there is an element $g^{-1}$ obeying $g \ast  g^{-1} = g^{-1} \ast  g = e$.
+> 3. **(Associativity)** For all $g_1, g_2, g_3 \in G$, we have $(g_1 \ast  g_2) \ast  g_3 = g_1 \ast  (g_2 \ast  g_3)$.
 
 ^def-1-1
 
@@ -22,7 +22,7 @@ tags: [group-theory, math493]
 > - A group with a compatible topology: [[§8 Topological Groups and Classical Matrix Groups#^def-8-1|591 Def. §8.1]] (topological group), the setting of the 591 matrix groups and actions.
 
 > [!definition] Definition §1.2: Abelian Group
-> A group $G$ is **abelian** (or **commutative**) if $a * b = b * a$ for all $a, b \in G$. Commutativity is *not* one of the group axioms; groups such as $S_n$ ($n \geq 3$) and $GL_n(k)$ ($n \geq 2$) are non-abelian.
+> A group $G$ is **abelian** (or **commutative**) if $a \ast  b = b \ast  a$ for all $a, b \in G$. Commutativity is *not* one of the group axioms; groups such as $S_n$ ($n \geq 3$) and $GL_n(k)$ ($n \geq 2$) are non-abelian.
 
 ^def-1-2
 

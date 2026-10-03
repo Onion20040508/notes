@@ -58,10 +58,10 @@ tags: [measure-theory, math551]
 The construction of Lebesgue measure generalizes to abstract settings.
 
 > [!definition] Definition §11.3: Outer Measure (General)
-> Let $X$ be a set. An **outer measure** on $X$ is a function $\mu^*: \mathcal{P}(X) \to [0, \infty]$ satisfying:
+> Let $X$ be a set. An **outer measure** on $X$ is a function $\mu^{\ast}: \mathcal{P}(X) \to [0, \infty]$ satisfying:
 > 1. $\mu^*(\emptyset) = 0$ and $\mu^*(A) \geq 0$ for all $A \subseteq X$
-> 2. **Monotonicity:** $A \subseteq B \Rightarrow \mu^*(A) \leq \mu^*(B)$
-> 3. **Countable subadditivity:** $\mu^*\left( \bigcup_{j=1}^{\infty} A_j \right) \leq \sum_{j=1}^{\infty} \mu^*(A_j)$
+> 2. **Monotonicity:** $A \subseteq B \Rightarrow \mu^{\ast}(A) \leq \mu^{\ast}(B)$
+> 3. **Countable subadditivity:** $\mu^{\ast}\left( \bigcup_{j=1}^{\infty} A_j \right) \leq \sum_{j=1}^{\infty} \mu^{\ast}(A_j)$
 
 ^def-11-3
 
@@ -69,7 +69,7 @@ The construction of Lebesgue measure generalizes to abstract settings.
 > - Lebesgue outer measure is the model: [[§9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]] with [[Properties of Lebesgue Outer Measure|Prop. §9.1]].
 
 > [!definition] Definition §11.4: Measurable Set (General)
-> Given an outer measure $\mu^*$ on $X$, a set $E \subseteq X$ is **$\mu^*$-measurable** if for all $T \subseteq X$:
+> Given an outer measure $\mu^{\ast}$ on $X$, a set $E \subseteq X$ is **$\mu^{\ast}$-measurable** if for all $T \subseteq X$:
 >
 > $$
 > \mu^*(T) = \mu^*(T \cap E) + \mu^*(T \cap E^c).
@@ -569,7 +569,7 @@ The following result, not covered in lecture, extends the classical [[Continuity
 > [!proof]+ Proof
 > Since $E \cap M_n \subseteq E$, [[Properties of Lebesgue Outer Measure|monotonicity]] gives $m^*(E \cap M_n) \leq m^*(E)$ for all $n$, so $\lim_{n \to \infty} m^*(E \cap M_n) \leq m^*(E)$. It remains to show $m^*(E) \leq \lim_{n \to \infty} m^*(E \cap M_n)$.
 >
-> **Case 1: $m^*(E) < \infty$.**
+> **Case 1: $m^{\ast}(E) < \infty$.**
 >
 > It suffices to show that $\lim_{n \to \infty} m^*(E \setminus M_n) = 0$. Fix $\epsilon > 0$ and choose an L-cover $\{I_k\}$ of $E$ with $\sum_k |I_k| < m^*(E) + \epsilon$. Since $E \setminus M_n \subseteq \bigcup_k (I_k \setminus M_n)$, by subadditivity:
 >
@@ -637,7 +637,7 @@ The following result, not covered in lecture, extends the classical [[Continuity
 >
 > Since $\epsilon > 0$ is arbitrary, $\lim_{n \to \infty} m^*(E \cap M_n) = m^*(E)$.
 >
-> **Case 2: $m^*(E) = \infty$.**
+> **Case 2: $m^{\ast}(E) = \infty$.**
 >
 > Suppose for contradiction that $\sup_n m^*(E \cap M_n) = L < \infty$. Define the increments:
 >
@@ -835,7 +835,7 @@ Let $\mathbb{Q} \cap [-1, 1] = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of t
 
 ## The Cantor Set
 
-If $E$ is countable, then $m^*(E) = 0$ ([[§9 Lebesgue Outer Measure#^ex-9-2|Ex. §9.2]]). A natural question: if $E \subseteq \mathbb{R}$ satisfies $m(E) = 0$, must $E$ be countable? The Cantor set shows the answer is **no**.
+If $E$ is countable, then $m^{\ast}(E) = 0$ ([[§9 Lebesgue Outer Measure#^ex-9-2|Ex. §9.2]]). A natural question: if $E \subseteq \mathbb{R}$ satisfies $m(E) = 0$, must $E$ be countable? The Cantor set shows the answer is **no**.
 
 > [!definition] Definition §11.13: The Cantor Set
 > Define a sequence of sets as follows:

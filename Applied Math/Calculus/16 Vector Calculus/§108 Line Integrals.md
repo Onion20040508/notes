@@ -21,7 +21,7 @@ $$
 x = x(t), \qquad y = y(t), \qquad a \le t \le b, \qquad (1)
 $$
 
-or vector equation $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, and assume that $C$ is a **smooth curve**: $\mathbf{r}'$ is continuous and $\mathbf{r}'(t) \ne \mathbf{0}$ ([[§88 Arc Length and Curvature#^def-88-3|Definition §88.3]]). Divide $[a, b]$ into $n$ subintervals $[t_{i-1}, t_i]$ of equal width. The points $P_i = (x(t_i), y(t_i))$ divide $C$ into $n$ subarcs, of lengths $\Delta s_1, \ldots, \Delta s_n$. Choose a point $P_i^*(x_i^*, y_i^*)$ in the $i$th subarc (it corresponds to some $t_i^*$ in $[t_{i-1}, t_i]$).
+or vector equation $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, and assume that $C$ is a **smooth curve**: $\mathbf{r}'$ is continuous and $\mathbf{r}'(t) \ne \mathbf{0}$ ([[§88 Arc Length and Curvature#^def-88-3|Definition §88.3]]). Divide $[a, b]$ into $n$ subintervals $[t_{i-1}, t_i]$ of equal width. The points $P_i = (x(t_i), y(t_i))$ divide $C$ into $n$ subarcs, of lengths $\Delta s_1, \ldots, \Delta s_n$. Choose a point $P_i^{\ast}(x_i^{\ast}, y_i^{\ast})$ in the $i$th subarc (it corresponds to some $t_i^{\ast}$ in $[t_{i-1}, t_i]$).
 
 > [!definition] Definition §108.1: Line Integral with Respect to Arc Length
 > If $f$ is defined on a smooth curve $C$ given by Equations 1, the **line integral of $f$ along $C$** is

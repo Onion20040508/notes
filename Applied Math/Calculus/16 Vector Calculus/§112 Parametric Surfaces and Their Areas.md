@@ -169,7 +169,7 @@ Let $S$ be traced out by $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,\mat
 ## Surface Area
 
 > [!remark] Remark: Why the Surface Area Formula
-> Suppose first that the parameter domain $D$ is a rectangle, divided into subrectangles $R_{ij}$ of size $\Delta u \times \Delta v$, with lower left corners $(u_i^*, v_j^*)$. The part $S_{ij}$ of $S$ corresponding to $R_{ij}$ is a **patch** with corner $P_{ij}$, position vector $\mathbf{r}(u_i^*, v_j^*)$. Let $\mathbf{r}_u^* = \mathbf{r}_u(u_i^*, v_j^*)$ and $\mathbf{r}_v^* = \mathbf{r}_v(u_i^*, v_j^*)$. The two edges of the patch at $P_{ij}$ are approximately the vectors $\Delta u\,\mathbf{r}_u^*$ and $\Delta v\,\mathbf{r}_v^*$, because partial derivatives are approximated by difference quotients. So $S_{ij}$ is approximated by the parallelogram they span, which lies in the tangent plane at $P_{ij}$ and has area
+> Suppose first that the parameter domain $D$ is a rectangle, divided into subrectangles $R_{ij}$ of size $\Delta u \times \Delta v$, with lower left corners $(u_i^{\ast}, v_j^{\ast})$. The part $S_{ij}$ of $S$ corresponding to $R_{ij}$ is a **patch** with corner $P_{ij}$, position vector $\mathbf{r}(u_i^{\ast}, v_j^{\ast})$. Let $\mathbf{r}_u^{\ast} = \mathbf{r}_u(u_i^{\ast}, v_j^{\ast})$ and $\mathbf{r}_v^{\ast} = \mathbf{r}_v(u_i^{\ast}, v_j^{\ast})$. The two edges of the patch at $P_{ij}$ are approximately the vectors $\Delta u\,\mathbf{r}_u^{\ast}$ and $\Delta v\,\mathbf{r}_v^{\ast}$, because partial derivatives are approximated by difference quotients. So $S_{ij}$ is approximated by the parallelogram they span, which lies in the tangent plane at $P_{ij}$ and has area
 >
 > $$
 > |(\Delta u\,\mathbf{r}_u^*) \times (\Delta v\,\mathbf{r}_v^*)| = |\mathbf{r}_u^* \times \mathbf{r}_v^*|\,\Delta u\,\Delta v
@@ -180,7 +180,7 @@ Let $S$ be traced out by $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,\mat
 ^rem-112-1
 
 ![[m233-112-1.svg]]
-*Approximating a patch by a parallelogram. The subrectangle $R_{ij}$ (left) is mapped by $\mathbf{r}$ onto the curved patch $S_{ij}$ (blue). Its edges at $P_{ij}$ are nearly the vectors $\Delta u\,\mathbf{r}_u^*$ and $\Delta v\,\mathbf{r}_v^*$ (red), and the parallelogram they span (red, in the tangent plane) has area $|\mathbf{r}_u^* \times \mathbf{r}_v^*|\,\Delta u\,\Delta v$. So $|\mathbf{r}_u \times \mathbf{r}_v|$ is the factor by which $\mathbf{r}$ stretches small areas.*
+*Approximating a patch by a parallelogram. The subrectangle $R_{ij}$ (left) is mapped by $\mathbf{r}$ onto the curved patch $S_{ij}$ (blue). Its edges at $P_{ij}$ are nearly the vectors $\Delta u\,\mathbf{r}_u^{\ast}$ and $\Delta v\,\mathbf{r}_v^{\ast}$ (red), and the parallelogram they span (red, in the tangent plane) has area $|\mathbf{r}_u^{\ast} \times \mathbf{r}_v^{\ast}|\,\Delta u\,\Delta v$. So $|\mathbf{r}_u \times \mathbf{r}_v|$ is the factor by which $\mathbf{r}$ stretches small areas.*
 
 > [!definition] Definition §112.4: Surface Area
 > If a smooth parametric surface $S$ is given by the equation

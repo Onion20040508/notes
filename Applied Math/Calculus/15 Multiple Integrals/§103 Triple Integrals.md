@@ -28,7 +28,7 @@ Triple integrals of functions $f(x, y, z)$ over solid regions are defined exactl
 > B_{ijk} = [x_{i-1}, x_i] \times [y_{j-1}, y_j] \times [z_{k-1}, z_k] ,
 > $$
 >
-> each of volume $\Delta V = \Delta x\,\Delta y\,\Delta z$. With a sample point $(x_{ijk}^*, y_{ijk}^*, z_{ijk}^*)$ in each $B_{ijk}$ we form the **triple Riemann sum** $\sum_{i=1}^l \sum_{j=1}^m \sum_{k=1}^n f(x_{ijk}^*, y_{ijk}^*, z_{ijk}^*)\,\Delta V$ (2). The **triple integral** of $f$ over the box $B$ is
+> each of volume $\Delta V = \Delta x\,\Delta y\,\Delta z$. With a sample point $(x_{ijk}^{\ast}, y_{ijk}^{\ast}, z_{ijk}^{\ast})$ in each $B_{ijk}$ we form the **triple Riemann sum** $\sum_{i=1}^l \sum_{j=1}^m \sum_{k=1}^n f(x_{ijk}^{\ast}, y_{ijk}^{\ast}, z_{ijk}^{\ast})\,\Delta V$ (2). The **triple integral** of $f$ over the box $B$ is
 >
 > $$
 > \iiint_B f(x, y, z)\,dV = \lim_{l, m, n \to \infty} \sum_{i=1}^l \sum_{j=1}^m \sum_{k=1}^n f(x_{ijk}^*, y_{ijk}^*, z_{ijk}^*)\,\Delta V \qquad (3)
@@ -353,7 +353,7 @@ All the applications of double integrals in [[§101 Applications of Double Integ
 > [!definition] Definition §103.5: Mass, Moments, Center of Mass and Moments of Inertia of a Solid
 > For a solid occupying $E$ with density $\rho(x, y, z)$:
 >
-> - the **mass** is $m = \displaystyle\lim_{l, m, n \to \infty} \sum_{i,j,k} \rho(x_{ijk}^*, y_{ijk}^*, z_{ijk}^*)\,\Delta V = \iiint_E \rho(x, y, z)\,dV$; (13)
+> - the **mass** is $m = \displaystyle\lim_{l, m, n \to \infty} \sum_{i,j,k} \rho(x_{ijk}^{\ast}, y_{ijk}^{\ast}, z_{ijk}^{\ast})\,\Delta V = \iiint_E \rho(x, y, z)\,dV$; (13)
 > - the **moments** about the three coordinate planes are
 >
 > $$

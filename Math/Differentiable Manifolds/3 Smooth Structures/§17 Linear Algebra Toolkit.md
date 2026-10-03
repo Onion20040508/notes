@@ -32,7 +32,7 @@ tags: [differentiable-manifolds, math591]
 ^pf-17-1
 
 > [!definition] Definition §17.1: Dual Space and Dual Basis
-> The **dual space** of $V$ is $V^* = \{\lambda : V \to \mathbb{R} \mid \lambda \text{ linear}\}$, a vector space under pointwise operations; its elements are **linear functionals**, or **covectors**. If $(e_1, \ldots, e_n)$ is a basis of $V$, the **dual basis** $(\varepsilon^1, \ldots, \varepsilon^n)$ consists of the covectors with
+> The **dual space** of $V$ is $V^{\ast} = \{\lambda : V \to \mathbb{R} \mid \lambda \text{ linear}\}$, a vector space under pointwise operations; its elements are **linear functionals**, or **covectors**. If $(e_1, \ldots, e_n)$ is a basis of $V$, the **dual basis** $(\varepsilon^1, \ldots, \varepsilon^n)$ consists of the covectors with
 >
 > $$
 > \varepsilon^i(e_j) = \delta^i_j ,
@@ -60,7 +60,7 @@ tags: [differentiable-manifolds, math591]
 ^prop-17-2
 
 > [!proof]+ Proof
-> If $v = \sum_j v^j e_j$, then $\varepsilon^i(v) = \sum_j v^j \delta^i_j = v^i$, which is the first formula: the dual basis *extracts the components* of a vector. The two sides of the second formula are covectors that agree on each $e_j$, both giving $\lambda(e_j)$, so they are equal by Proposition [[§17 Linear Algebra Toolkit#^prop-17-1|§17.1]](2); hence the $\varepsilon^i$ span $V^*$. If $\sum_i c_i \varepsilon^i = 0$, applying it to $e_j$ gives $c_j = 0$; so they are independent.
+> If $v = \sum_j v^j e_j$, then $\varepsilon^i(v) = \sum_j v^j \delta^i_j = v^i$, which is the first formula: the dual basis *extracts the components* of a vector. The two sides of the second formula are covectors that agree on each $e_j$, both giving $\lambda(e_j)$, so they are equal by Proposition [[§17 Linear Algebra Toolkit#^prop-17-1|§17.1]](2); hence the $\varepsilon^i$ span $V^{\ast}$. If $\sum_i c_i \varepsilon^i = 0$, applying it to $e_j$ gives $c_j = 0$; so they are independent.
 
 ^pf-17-2
 
@@ -93,7 +93,7 @@ tags: [differentiable-manifolds, math591]
 > - In LADR the canonical $V \cong V''$ is mentioned in the remark after [[§12 Duality#^ladr-3-111|LADR 3.111]] (the non-canonical $V \cong V'$ goes through [[Dimension shows whether vector spaces are isomorphic|LADR 3.70]]).
 
 > [!remark] Remark
-> A finite-dimensional $V$ is also isomorphic to $V^*$, for instance by $e_i \mapsto \varepsilon^i$, but that isomorphism depends on the basis: change the basis and it changes. $V$ and $V^{**}$ are identified *canonically*. This is why tangent vectors and covectors must be kept apart, as [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|Lecture 10]] did with $T_pM$ and $T_p^*M$, while the dual of $T_p^*M$ may be silently identified with $T_pM$.
+> A finite-dimensional $V$ is also isomorphic to $V^{\ast}$, for instance by $e_i \mapsto \varepsilon^i$, but that isomorphism depends on the basis: change the basis and it changes. $V$ and $V^{\ast \ast}$ are identified *canonically*. This is why tangent vectors and covectors must be kept apart, as [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|Lecture 10]] did with $T_pM$ and $T_p^{\ast}M$, while the dual of $T_p^{\ast}M$ may be silently identified with $T_pM$.
 
 ^rem-17-1
 
@@ -109,7 +109,7 @@ tags: [differentiable-manifolds, math591]
 ^def-17-2
 
 ![[m591-10-1.svg]]
-*A linear map $A : V \to W$ carries vectors forward; its dual map $A^* : W^* \to V^*$ carries covectors backward.*
+*A linear map $A : V \to W$ carries vectors forward; its dual map $A^{\ast} : W^{\ast} \to V^{\ast}$ carries covectors backward.*
 
 A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual map runs backwards. This is the linear-algebra shadow of the directions in [[§23 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§23, Pushing Derivations Forward]], where germs were pulled back and derivations pushed forward.
 
@@ -176,7 +176,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 > - Bilinear forms on a single space in LADR: [[§32 Bilinear Forms and Quadratic Forms|9A Bilinear Forms and Quadratic Forms]].
 
 > [!remark] Remark
-> Each half of non-degeneracy gives one inequality of dimensions, and it is the *pair* of inequalities that forces the isomorphisms; neither half suffices alone. The finiteness hypothesis cannot be dropped: for an infinite-dimensional $V$, the evaluation pairing $V \times V^* \to \mathbb{R}$, $(v, \lambda) \mapsto \lambda(v)$, is non-degenerate, but its map $B^\flat = \iota : V \to V^{**}$ is injective without being onto. [[§27 Tangent Spaces III꞉ The Cotangent Space#^thm-27-7|Assignment 3, Problem 3]] is exactly a pairing $T_pM \times I_p/I_p^2 \to \mathbb{R}$ to which this theorem applies.
+> Each half of non-degeneracy gives one inequality of dimensions, and it is the *pair* of inequalities that forces the isomorphisms; neither half suffices alone. The finiteness hypothesis cannot be dropped: for an infinite-dimensional $V$, the evaluation pairing $V \times V^{\ast} \to \mathbb{R}$, $(v, \lambda) \mapsto \lambda(v)$, is non-degenerate, but its map $B^\flat = \iota : V \to V^{\ast \ast}$ is injective without being onto. [[§27 Tangent Spaces III꞉ The Cotangent Space#^thm-27-7|Assignment 3, Problem 3]] is exactly a pairing $T_pM \times I_p/I_p^2 \to \mathbb{R}$ to which this theorem applies.
 
 ^rem-17-2
 

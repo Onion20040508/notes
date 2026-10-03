@@ -54,7 +54,7 @@ $$
 $$
 
 ![[m452-20-2.svg]]
-*The graph case: $S$ (red) is the graph of $h$ over $D$ (gray), and its rim $\Gamma = \partial S$ sits directly above $\gamma = \partial D$ — each point $(x(t),y(t))$ of $\gamma$ is lifted to $\Gamma^*(t) = (x(t),y(t),h(x(t),y(t)))$. Both curves run counterclockwise seen from above, matching the upward normal $\mathbf{X}_x\times\mathbf{X}_y = (-h_x,-h_y,1)$. Step 1 pushes the line integral down from $\Gamma$ to $\gamma$; Step 2 is Green's theorem on the flat region $D$.*
+*The graph case: $S$ (red) is the graph of $h$ over $D$ (gray), and its rim $\Gamma = \partial S$ sits directly above $\gamma = \partial D$ — each point $(x(t),y(t))$ of $\gamma$ is lifted to $\Gamma^{\ast}(t) = (x(t),y(t),h(x(t),y(t)))$. Both curves run counterclockwise seen from above, matching the upward normal $\mathbf{X}_x\times\mathbf{X}_y = (-h_x,-h_y,1)$. Step 1 pushes the line integral down from $\Gamma$ to $\gamma$; Step 2 is Green's theorem on the flat region $D$.*
 
 **Step 1: Pull back the line integral to $\gamma$.**
 

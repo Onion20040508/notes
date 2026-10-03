@@ -119,7 +119,7 @@ We can now formalize the computation from [[§21 Introduction to Differential Fo
 > \Phi(u_1, \ldots, u_k) = \big(x_1(u_1, \ldots, u_k),\; \ldots,\; x_n(u_1, \ldots, u_k)\big).
 > $$
 >
-> The **pullback** $\Phi^*\omega$ is the form on $D$ obtained by:
+> The **pullback** $\Phi^{\ast}\omega$ is the form on $D$ obtained by:
 > 1. Replacing each ambient differential $dx_i$ with $\displaystyle\sum_{j=1}^k \frac{\partial x_i}{\partial u_j}\,du_j$ (the [[Multivariable Chain Rule|chain rule]]),
 > 2. Expanding using the wedge product rules.
 >
@@ -132,7 +132,7 @@ We can now formalize the computation from [[§21 Introduction to Differential Fo
 ^def-22-3
 
 ![[m452-22-1.svg]]
-*The two directions of the pullback story. The parametrization $\Phi$ pushes points forward: $(u,v) \mapsto \mathbf{X}(u,v)$. The pullback $\Phi^*$ pulls forms backward: a form written in ambient differentials $dx_i$ becomes a form in parameter differentials $du_j$, via $dx_i = \sum_j (x_i)_{u_j}\,du_j$. Integration always happens at the parameter end — $\int_{\Phi(D)}\omega$ is defined as $\int_D \Phi^*\omega$.*
+*The two directions of the pullback story. The parametrization $\Phi$ pushes points forward: $(u,v) \mapsto \mathbf{X}(u,v)$. The pullback $\Phi^{\ast}$ pulls forms backward: a form written in ambient differentials $dx_i$ becomes a form in parameter differentials $du_j$, via $dx_i = \sum_j (x_i)_{u_j}\,du_j$. Integration always happens at the parameter end — $\int_{\Phi(D)}\omega$ is defined as $\int_D \Phi^{\ast}\omega$.*
 
 > [!remark]- Connections
 > - The coefficients of $\Phi^*\omega$ are $k \times k$ minors of the Jacobian, i.e. determinants ([[§34 Determinants#^ladr-9-46|LADR 9.46]]); in the top-degree case $k = n$ this is the signed volume factor $\det J$, whose absolute value is the volume distortion ([[§34 Determinants#^ladr-9-61|LADR 9.61]], [[§15 Multivariable Integration#^prop-15-19|Proposition §15.19]]).
@@ -509,7 +509,7 @@ With the wedge product, exterior derivative, and $d^2 = 0$ in hand, we can defin
 > \mathbf{X}(\phi, \theta) = (\cos\phi\sin\theta, \;\sin\phi\sin\theta, \;\cos\theta), \qquad \phi \in [0, 2\pi], \;\; \theta \in [0, \pi].
 > $$
 >
-> **Step 2: Pull back.** On the sphere, $z = \cos\theta$, and we need $\mathbf{X}^*(dx \wedge dy)$. Compute:
+> **Step 2: Pull back.** On the sphere, $z = \cos\theta$, and we need $\mathbf{X}^{\ast}(dx \wedge dy)$. Compute:
 >
 > $$
 > \begin{aligned}

@@ -79,7 +79,7 @@ For the construction to stand on its own, however, there is a logical gap in (ii
 > [!proof]+ Proof
 > Note first a consequence of (2): if $a^* \notin A$, then $a < a^*$ for every $a \in A$ — for if $a^* \leq a$ for some $a \in A$, downward closure would force $a^* \in A$.
 >
-> (1) *Proper and nonempty.* $A + B \neq \emptyset$ since $A, B \neq \emptyset$. For properness, choose $a^* \notin A$ and $b^* \notin B$ (possible by (1) for $A$ and $B$). By the observation above, every element $a + b \in A + B$ satisfies $a + b < a^* + b^*$; in particular $a^* + b^* \notin A + B$.
+> (1) *Proper and nonempty.* $A + B \neq \emptyset$ since $A, B \neq \emptyset$. For properness, choose $a^{\ast} \notin A$ and $b^{\ast} \notin B$ (possible by (1) for $A$ and $B$). By the observation above, every element $a + b \in A + B$ satisfies $a + b < a^{\ast} + b^{\ast}$; in particular $a^{\ast} + b^{\ast} \notin A + B$.
 >
 > (2) *Downward closed.* Let $c \in \mathbb{Q}$ with $c \leq a + b$ for some $a \in A$, $b \in B$. Write
 >

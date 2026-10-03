@@ -309,11 +309,11 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 >
 > *Not metric interior.* $(1/n, 1/n^2) \in P$, so $(1/n, 1/n^2) \notin K$, while $\|(1/n, 1/n^2)\| \to 0$; so no ball $B_r(0)$ lies in $K$.
 >
-> *Interior.* For $y = 0$ there is nothing to check. Let $y = (y_1, y_2) \neq 0$. A point $ty$ lies in $P$ iff $t y_1 = s$ and $t y_2 = s^2$ for some $s \neq 0$, which forces $t \neq 0$, $y_1 \neq 0$ and $y_2 = t y_1^2$, i.e. $t = y_2 / y_1^2$. So the line $\{ty : t \in \mathbb{R}\}$ meets $P$ in at most one point, at a parameter $t^* \neq 0$, and $\varepsilon(y) = |t^*|$ works (any $\varepsilon(y)$ works if the line misses $P$).
+> *Interior.* For $y = 0$ there is nothing to check. Let $y = (y_1, y_2) \neq 0$. A point $ty$ lies in $P$ iff $t y_1 = s$ and $t y_2 = s^2$ for some $s \neq 0$, which forces $t \neq 0$, $y_1 \neq 0$ and $y_2 = t y_1^2$, i.e. $t = y_2 / y_1^2$. So the line $\{ty : t \in \mathbb{R}\}$ meets $P$ in at most one point, at a parameter $t^{\ast} \neq 0$, and $\varepsilon(y) = |t^{\ast}|$ works (any $\varepsilon(y)$ works if the line misses $P$).
 >
 > The definition of [[§5 Convex Sets and the Gauge#^def-5-1|interior point]] tests one line at a time, and the parabola approaches $0$ along no single line. The set $K$ is not convex.
 
 ^ex-8-2
 
 ![[m556-8-1.svg]]
-*The parabola $P$ (red) is removed from the plane. A line through $0$ meets $P$ at most once (red dots), so $0$ can move some distance along every line without leaving $K$ (blue: $|t| < |t^*|$ on one line): $0$ is an interior point. But the points $(1/n, 1/n^2)$ of $P$ enter every ball $B_r(0)$ (dashed), so $0$ is not a metric interior point.*
+*The parabola $P$ (red) is removed from the plane. A line through $0$ meets $P$ at most once (red dots), so $0$ can move some distance along every line without leaving $K$ (blue: $|t| < |t^{\ast}|$ on one line): $0$ is an interior point. But the points $(1/n, 1/n^2)$ of $P$ enter every ball $B_r(0)$ (dashed), so $0$ is not a metric interior point.*

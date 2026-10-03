@@ -12,7 +12,7 @@ tags: [ordinary-differential-equations, math331, extension]
 *Boyce–DiPrima, Section 6.6.*
 ★ *Beyond MATH 331: the course skipped this section; it is included from Boyce–DiPrima as part of the chapter.*
 
-The Laplace transform turns derivatives into multiplication by $s$, but it does not turn products into products: $\mathcal{L}\{fg\} \ne \mathcal{L}\{f\}\,\mathcal{L}\{g\}$ in general. The product of two transforms is instead the transform of the convolution $f * g$, an integral that mixes the values of $f$ and $g$ over the whole past. This gives inverse transforms of products without partial fractions. More importantly, it gives a formula for the solution of $ay'' + by' + cy = g(t)$ with *any* forcing $g$: the solution with zero initial values is the convolution of $g$ with the impulse response of [[§25 Impulse Functions|§25]], the response of the system to $\delta(t)$. The transfer function $H(s) = 1/(as^2 + bs + c)$ depends only on the system, not on the input.
+The Laplace transform turns derivatives into multiplication by $s$, but it does not turn products into products: $\mathcal{L}\{fg\} \ne \mathcal{L}\{f\}\,\mathcal{L}\{g\}$ in general. The product of two transforms is instead the transform of the convolution $f \ast  g$, an integral that mixes the values of $f$ and $g$ over the whole past. This gives inverse transforms of products without partial fractions. More importantly, it gives a formula for the solution of $ay'' + by' + cy = g(t)$ with *any* forcing $g$: the solution with zero initial values is the convolution of $g$ with the impulse response of [[§25 Impulse Functions|§25]], the response of the system to $\delta(t)$. The transfer function $H(s) = 1/(as^2 + bs + c)$ depends only on the system, not on the input.
 
 ## The Convolution Theorem
 
@@ -29,7 +29,7 @@ The Laplace transform turns derivatives into multiplication by $s$, but it does 
 > (g * f)(t) = \int_0^t f(\tau)\,g(t - \tau)\,d\tau .
 > $$
 >
-> The value $(f * g)(t)$ depends on $f$ and $g$ on the whole interval $[0, t]$. Convolution integrals describe **hereditary systems**, whose behavior at time $t$ depends on their past history as well as their present state (neutron transport, viscoelasticity, population dynamics).
+> The value $(f \ast  g)(t)$ depends on $f$ and $g$ on the whole interval $[0, t]$. Convolution integrals describe **hereditary systems**, whose behavior at time $t$ depends on their past history as well as their present state (neutron transport, viscoelasticity, population dynamics).
 >
 > *BDP: Theorem 6.6.1 and 6.6 (text), Equations (2) and (3)*
 
@@ -62,7 +62,7 @@ The Laplace transform turns derivatives into multiplication by $s$, but it does 
 > (f * g)(t) = \int_0^t f(t - \tau)g(\tau)\,d\tau = \int_t^0 f(\xi)g(t - \xi)\,(-d\xi) = \int_0^t g(t - \xi)f(\xi)\,d\xi = (g * f)(t) .
 > $$
 >
-> **(5)** and **(7)** follow from linearity of the integral: $\int_0^t f(t - \tau)\big(g_1(\tau) + g_2(\tau)\big)d\tau$ splits into the two convolutions, and an integrand that is identically $0$ gives $0$ (use (4) for $0 * f$).
+> **(5)** and **(7)** follow from linearity of the integral: $\int_0^t f(t - \tau)\big(g_1(\tau) + g_2(\tau)\big)d\tau$ splits into the two convolutions, and an integrand that is identically $0$ gives $0$ (use (4) for $0 \ast  f$).
 >
 > **(6)** Fix $t > 0$. By definition,
 >

@@ -135,7 +135,7 @@ tags: [linear-algebra]
 > $$
 > is a basis of $V_1+V_2$; then $\dim(V_1+V_2)=m+j+k=(m+j)+(m+k)-m$.
 >
-> **Spans.** The span of $(*)$ lies in $V_1+V_2$ and contains both $V_1$ and $V_2$, hence equals $V_1+V_2$ ([[§3 Subspaces#^ladr-1-40|Sum of subspaces is the smallest containing subspace]]).
+> **Spans.** The span of $(\ast )$ lies in $V_1+V_2$ and contains both $V_1$ and $V_2$, hence equals $V_1+V_2$ ([[§3 Subspaces#^ladr-1-40|Sum of subspaces is the smallest containing subspace]]).
 >
 > **Independent.** Suppose $\sum a_iv_i+\sum b_iu_i+\sum c_iw_i=0$. Then $\sum c_iw_i=-\sum a_iv_i-\sum b_iu_i\in V_1$, and also $\in V_2$, so $\sum c_iw_i\in V_1\cap V_2$ and $\sum c_iw_i=\sum d_iv_i$ for some $d_i$. Since $v_1,\dots,v_m,w_1,\dots,w_k$ is independent, all $c_i=0$ (and $d_i=0$). Then $\sum a_iv_i+\sum b_iu_i=0$, and independence of the basis of $V_1$ gives all $a_i=b_i=0$.
 

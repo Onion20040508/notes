@@ -392,7 +392,7 @@ $$
 \begin{pmatrix} \phi_g & \phi_h \\ \psi_g & \psi_h \end{pmatrix} \begin{pmatrix} g_x & g_y \\ h_x & h_y \end{pmatrix} = -\begin{pmatrix} \phi_x & \phi_y \\ \psi_x & \psi_y \end{pmatrix} \tag{**}
 $$
 
-**Combining the equations:** We substitute $(**)$ into $(*)$. Let $A = \begin{pmatrix} \phi_g & \phi_h \\ \psi_g & \psi_h \end{pmatrix}$, which is invertible by the constraint qualification. From $(**)$:
+**Combining the equations:** We substitute $(\ast \ast )$ into $(\ast )$. Let $A = \begin{pmatrix} \phi_g & \phi_h \\ \psi_g & \psi_h \end{pmatrix}$, which is invertible by the constraint qualification. From $(\ast \ast )$:
 
 $$
 \begin{pmatrix} g_x & g_y \\ h_x & h_y \end{pmatrix} = -A^{-1} \begin{pmatrix} \phi_x & \phi_y \\ \psi_x & \psi_y \end{pmatrix}

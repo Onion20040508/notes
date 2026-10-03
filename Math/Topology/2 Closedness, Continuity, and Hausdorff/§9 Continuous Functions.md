@@ -182,7 +182,7 @@ tags: [topology, math590]
 >
 > This is why we freely write $S^1$ without specifying the ambient space. In particular, the [[§24 Covering Spaces#^thm-24-2|covering map]] $p(x) = e^{2\pi i x} \in \mathbb{C}$ and $p(x) = (\cos 2\pi x, \sin 2\pi x) \in \mathbb{R}^2$ are the same map under this identification.
 >
-> **Consequence for $\pi_1$:** Once we compute $\pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$ (via the covering map $p: \mathbb{R} \to S^1_{\mathbb{R}^2}$ in [[Fundamental Group of the Circle|§24]]), we get $\pi_1(S^1_{\mathbb{C}}) \cong \mathbb{Z}$ for free: the homeomorphism $\phi$ induces an isomorphism $\phi_*: \pi_1(S^1_{\mathbb{C}}) \to \pi_1(S^1_{\mathbb{R}^2})$ ([[§23 The Fundamental Group#^cor-23-6|§23]], “$\pi_1$ is a topological invariant”), so $\pi_1(S^1_{\mathbb{C}}) \cong \pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$. No separate computation needed.
+> **Consequence for $\pi_1$:** Once we compute $\pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$ (via the covering map $p: \mathbb{R} \to S^1_{\mathbb{R}^2}$ in [[Fundamental Group of the Circle|§24]]), we get $\pi_1(S^1_{\mathbb{C}}) \cong \mathbb{Z}$ for free: the homeomorphism $\phi$ induces an isomorphism $\phi_{\ast}: \pi_1(S^1_{\mathbb{C}}) \to \pi_1(S^1_{\mathbb{R}^2})$ ([[§23 The Fundamental Group#^cor-23-6|§23]], “$\pi_1$ is a topological invariant”), so $\pi_1(S^1_{\mathbb{C}}) \cong \pi_1(S^1_{\mathbb{R}^2}) \cong \mathbb{Z}$. No separate computation needed.
 
 ^ex-9-5
 

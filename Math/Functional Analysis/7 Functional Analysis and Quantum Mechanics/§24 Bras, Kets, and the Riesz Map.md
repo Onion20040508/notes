@@ -23,7 +23,7 @@ tags: [functional-analysis, math556, companion]
 ## The Dual Space
 
 > [!definition] Definition §24.1: Dual Space and Dual Norm
-> Let $X$ be a normed linear space over $\mathbb{F}$. The **dual space** $X^*$ is the set of bounded linear functionals on $X$ (Definition [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^def-19-1|§19.1]]), with pointwise addition and scalar multiplication. For $\ell \in X^*$, its **norm** is
+> Let $X$ be a normed linear space over $\mathbb{F}$. The **dual space** $X^{\ast}$ is the set of bounded linear functionals on $X$ (Definition [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^def-19-1|§19.1]]), with pointwise addition and scalar multiplication. For $\ell \in X^{\ast}$, its **norm** is
 >
 > $$
 > \|\ell\| = \inf\{ c \ge 0 : |\ell(x)| \le c\,\|x\| \text{ for all } x \in X \} .
@@ -54,7 +54,7 @@ tags: [functional-analysis, math556, companion]
 ## The Riesz Map
 
 > [!theorem] Theorem §24.2: The Riesz Map
-> Let $H$ be a Hilbert space and define $R : H \to H^*$ by $R(a) = \ell_a$, $\ell_a(x) = (x, a)$. Then $R$ is a bijection, it is *conjugate-linear*,
+> Let $H$ be a Hilbert space and define $R : H \to H^{\ast}$ by $R(a) = \ell_a$, $\ell_a(x) = (x, a)$. Then $R$ is a bijection, it is *conjugate-linear*,
 >
 > $$
 > R(ca + b) = \bar{c}\, R(a) + R(b) \qquad (a, b \in H,\ c \in \mathbb{F}),
@@ -85,7 +85,7 @@ tags: [functional-analysis, math556, companion]
 ## Dirac Notation
 
 > [!definition] Definition §24.2: Kets, Bras, and Outer Products
-> Let $H$ be a Hilbert space. For $a \in H$, the **ket** $|a\rangle$ denotes $a$ itself, and the **bra** $\langle a|$ denotes the functional $R(a) = \ell_a \in H^*$, so that
+> Let $H$ be a Hilbert space. For $a \in H$, the **ket** $|a\rangle$ denotes $a$ itself, and the **bra** $\langle a|$ denotes the functional $R(a) = \ell_a \in H^{\ast}$, so that
 >
 > $$
 > \langle a | x \rangle := \langle a|\,(x) = (x, a) .

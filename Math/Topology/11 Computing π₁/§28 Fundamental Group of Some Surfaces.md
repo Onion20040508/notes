@@ -158,7 +158,7 @@ tags: [topology, math590]
 > [!remark] Remark: Wedge Sum vs. Product
 > The wedge sum $X \vee Y$ and the product $X \times Y$ are very different constructions:
 > - **Topologically:** $X \vee Y$ glues $X$ and $Y$ at a single point; $X \times Y$ takes all pairs $(x, y)$. The wedge sum has $\dim(X \vee Y) = \max(\dim X, \dim Y)$, while $\dim(X \times Y) = \dim X + \dim Y$.
-> - **For $\pi_1$:** The product gives $\pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y)$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-5|direct product]], always abelian if the factors are; [[§23 The Fundamental Group#^thm-23-7|proved in §23]]). The wedge sum gives $\pi_1(X \vee Y) \cong \pi_1(X) * \pi_1(Y)$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]], typically non-abelian) when $X$ and $Y$ are “nice” — but proving this requires the [[§29 The Seifert–van Kampen Theorem#^cor-29-2|Seifert-van Kampen theorem (§29)]]. For now, we prove a weaker result: $\pi_1(S^1 \vee S^1)$ is non-abelian ([[§28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]]).
+> - **For $\pi_1$:** The product gives $\pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y)$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-5|direct product]], always abelian if the factors are; [[§23 The Fundamental Group#^thm-23-7|proved in §23]]). The wedge sum gives $\pi_1(X \vee Y) \cong \pi_1(X) \ast  \pi_1(Y)$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]], typically non-abelian) when $X$ and $Y$ are “nice” — but proving this requires the [[§29 The Seifert–van Kampen Theorem#^cor-29-2|Seifert-van Kampen theorem (§29)]]. For now, we prove a weaker result: $\pi_1(S^1 \vee S^1)$ is non-abelian ([[§28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]]).
 
 ^rem-28-3
 
@@ -175,7 +175,7 @@ tags: [topology, math590]
 ![[m590-28-3.svg]]
 *The figure eight $X = A \cup B$: the circles $A$ (blue, traversed by $f$) and $B$ (red, traversed by $g$) meet only at $x_0$. A basic neighborhood of $x_0$ (green, open ends hollow) contains a small open arc of each circle through $x_0$: the cross of Example §28.1.*
 
-We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert–van Kampen Theorem#^ex-29-2|Seifert-van Kampen theorem, §29]]). But using covering spaces, we can prove the key fact that $\pi_1(X)$ is **non-abelian**: $[f] * [g] \neq [g] * [f]$ for the generators.
+We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert–van Kampen Theorem#^ex-29-2|Seifert-van Kampen theorem, §29]]). But using covering spaces, we can prove the key fact that $\pi_1(X)$ is **non-abelian**: $[f] \ast  [g] \neq [g] \ast  [f]$ for the generators.
 
 > [!theorem] Theorem §28.4: $\pi_1$ of the Figure Eight is Non-Abelian
 > Let $X = A \cup B$ be the figure eight, with $A, B$ circles meeting at $x_0$. Let $f$ be a loop traversing $A$ once and $g$ a loop traversing $B$ once. Then $f * g \not\simeq_p g * f$.
@@ -201,7 +201,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 >
 > One can verify that $p$ is a covering map (each point of $X$ has an [[§24 Covering Spaces#^def-24-1|evenly covered]] neighborhood).
 >
-> **Step 3: Lift $f * g$ and $g * f$.**
+> **Step 3: Lift $f \ast  g$ and $g \ast  f$.**
 >
 > *Recall the framework ([[§24 Covering Spaces|§24]]).* We have a covering map $p: E \to B$ (here $B = X$ is the figure eight, $E$ is the grid-with-circles space from Step 1). Two results from §24 do all the work:
 >
@@ -228,7 +228,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 >
 > Endpoint: $\tilde{g}(1) = (0, 1)$.
 >
-> **Lifting $f * g$ from $(0,0)$.** The concatenation $f * g$ first traverses $A$, then $B$. To lift it, we lift each half in sequence — the lift of the second half must *start where the first half ended* (since the lift is a continuous path in $E$).
+> **Lifting $f \ast  g$ from $(0,0)$.** The concatenation $f \ast  g$ first traverses $A$, then $B$. To lift it, we lift each half in sequence — the lift of the second half must *start where the first half ended* (since the lift is a continuous path in $E$).
 >
 > *First half (lifting $f$ from $(0,0)$):* Exactly as above. The lift goes along the $x$-axis from $(0,0)$ to $(1,0)$.
 >
@@ -238,9 +238,9 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 >
 > Note that the $y$-axis also maps to $B$, but it is irrelevant here — the $y$-axis passes through $(0,0)$, not $(1,0)$. The lift starting at $(1,0)$ must stay in the part of $E$ that contains $(1,0)$ and maps to $B$, which is the small tangent circle.
 >
-> **Result:** The lift of $f * g$ starts at $(0,0)$ and ends at $\mathbf{(1,0)}$.
+> **Result:** The lift of $f \ast  g$ starts at $(0,0)$ and ends at $\mathbf{(1,0)}$.
 >
-> **Lifting $g * f$ from $(0,0)$.** Now $g * f$ first traverses $B$, then $A$.
+> **Lifting $g \ast  f$ from $(0,0)$.** Now $g \ast  f$ first traverses $B$, then $A$.
 >
 > *First half (lifting $g$ from $(0,0)$):* The lift goes along the $y$-axis from $(0,0)$ to $(0,1)$.
 >
@@ -248,11 +248,11 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 >
 > Again, the $x$-axis also maps to $A$, but passes through $(0,0)$ not $(0,1)$, so it plays no role here.
 >
-> **Result:** The lift of $g * f$ starts at $(0,0)$ and ends at $\mathbf{(0,1)}$.
+> **Result:** The lift of $g \ast  f$ starts at $(0,0)$ and ends at $\mathbf{(0,1)}$.
 >
-> **Step 4: Conclude.** The lifts of $f * g$ and $g * f$ both start at $e_0 = (0, 0)$ but end at *different points*: $(1, 0) \neq (0, 1)$.
+> **Step 4: Conclude.** The lifts of $f \ast  g$ and $g \ast  f$ both start at $e_0 = (0, 0)$ but end at *different points*: $(1, 0) \neq (0, 1)$.
 >
-> By the **[[§24 Covering Spaces#^thm-24-8|homotopy lifting lemma]]** ([[§24 Covering Spaces|§24]]): if $f * g \simeq_p g * f$, then their lifts starting at the same point $(0,0)$ must end at the same point. But the lift of $f * g$ ends at $(1, 0)$ while the lift of $g * f$ ends at $(0, 1)$. Contradiction.
+> By the **[[§24 Covering Spaces#^thm-24-8|homotopy lifting lemma]]** ([[§24 Covering Spaces|§24]]): if $f \ast  g \simeq_p g \ast  f$, then their lifts starting at the same point $(0,0)$ must end at the same point. But the lift of $f \ast  g$ ends at $(1, 0)$ while the lift of $g \ast  f$ ends at $(0, 1)$. Contradiction.
 >
 > Therefore $f * g \not\simeq_p g * f$, i.e., $[f] * [g] \neq [g] * [f]$ in $\pi_1(X, x_0)$, so $\pi_1(X, x_0)$ is non-abelian.
 
@@ -261,7 +261,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 *Uses:* [[Path Lifting Lemma|§24.6]], [[§24 Covering Spaces#^thm-24-8|§24.8]], [[§24 Covering Spaces#^thm-24-2|§24.2]], [[§24 Covering Spaces#^def-24-1|Def. §24.1]]
 
 ![[m590-28-4.svg]]
-*The covering $p: E \to X$ from the proof. The $x$-axis and the circles on the $y$-axis lie over $A$ (blue); the $y$-axis and the circles on the $x$-axis lie over $B$ (red). The lift of $f*g$ from $e_0$ runs along the $x$-axis to $(1,0)$ and then around the red circle there, so it ends at $(1,0)$. The lift of $g*f$ runs up to $(0,1)$ and around the blue circle, so it ends at $(0,1)$. Different endpoints, so $f*g \not\simeq_p g*f$.*
+*The covering $p: E \to X$ from the proof. The $x$-axis and the circles on the $y$-axis lie over $A$ (blue); the $y$-axis and the circles on the $x$-axis lie over $B$ (red). The lift of $f\ast g$ from $e_0$ runs along the $x$-axis to $(1,0)$ and then around the red circle there, so it ends at $(1,0)$. The lift of $g\ast f$ runs up to $(0,1)$ and around the blue circle, so it ends at $(0,1)$. Different endpoints, so $f\ast g \not\simeq_p g\ast f$.*
 
 > [!remark] Remark
 > This proves $\pi_1(X)$ is non-abelian, which already distinguishes the figure eight from any space with abelian $\pi_1$ (such as the [[§23 The Fundamental Group#^cor-23-8|torus]], $S^1$ ([[Fundamental Group of the Circle|§24.10]]), or any $S^n$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]])). The full result $\pi_1(X) \cong F_2$ (the [[§21 Algebra Prerequisites꞉ Groups#^def-21-8|free group]] on two generators — meaning not only non-abelian, but with *no relations at all* between $[f]$ and $[g]$) requires the [[§29 The Seifert–van Kampen Theorem#^ex-29-2|Seifert-van Kampen theorem (§29)]].
@@ -294,9 +294,9 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 >
 > The composition of these two collapses gives a retraction $r: \Sigma_2 \to S^1 \vee S^1 = X$ with $r|_X = \operatorname{id}_X$ (the two circles are fixed throughout).
 >
-> **Step 2: Retraction gives an injective homomorphism.** Since $X$ is a retract of $\Sigma_2$, the inclusion $j: X \hookrightarrow \Sigma_2$ satisfies $r \circ j = \operatorname{id}_X$, so $r_* \circ j_* = \operatorname{id}$ on $\pi_1(X)$. In particular, $j_*: \pi_1(X, x_0) \to \pi_1(\Sigma_2, x_0)$ is injective (§26, retraction $\Rightarrow$ $j_*$ injective ([[§26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]])).
+> **Step 2: Retraction gives an injective homomorphism.** Since $X$ is a retract of $\Sigma_2$, the inclusion $j: X \hookrightarrow \Sigma_2$ satisfies $r \circ j = \operatorname{id}_X$, so $r_{\ast} \circ j_{\ast} = \operatorname{id}$ on $\pi_1(X)$. In particular, $j_{\ast}: \pi_1(X, x_0) \to \pi_1(\Sigma_2, x_0)$ is injective (§26, retraction $\Rightarrow$ $j_{\ast}$ injective ([[§26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]])).
 >
-> **Step 3: Apply the subgroup machinery.** By the proposition “[[§21 Algebra Prerequisites꞉ Groups#^prop-21-9|Injective Homomorphisms Preserve Subgroup Structure]]” (§21): since $j_*$ is injective, $j_*(\pi_1(X))$ is a subgroup of $\pi_1(\Sigma_2)$ isomorphic to $\pi_1(X)$. Since $\pi_1(X)$ is non-abelian ([[§28 Fundamental Group of Some Surfaces#^thm-28-4|proved above]]), $j_*(\pi_1(X))$ is a non-abelian subgroup of $\pi_1(\Sigma_2)$. By the [[§21 Algebra Prerequisites꞉ Groups#^prop-21-2|contrapositive proposition]] (§21): a group containing a non-abelian subgroup is itself non-abelian. Therefore $\pi_1(\Sigma_2)$ is non-abelian.
+> **Step 3: Apply the subgroup machinery.** By the proposition “[[§21 Algebra Prerequisites꞉ Groups#^prop-21-9|Injective Homomorphisms Preserve Subgroup Structure]]” (§21): since $j_{\ast}$ is injective, $j_{\ast}(\pi_1(X))$ is a subgroup of $\pi_1(\Sigma_2)$ isomorphic to $\pi_1(X)$. Since $\pi_1(X)$ is non-abelian ([[§28 Fundamental Group of Some Surfaces#^thm-28-4|proved above]]), $j_{\ast}(\pi_1(X))$ is a non-abelian subgroup of $\pi_1(\Sigma_2)$. By the [[§21 Algebra Prerequisites꞉ Groups#^prop-21-2|contrapositive proposition]] (§21): a group containing a non-abelian subgroup is itself non-abelian. Therefore $\pi_1(\Sigma_2)$ is non-abelian.
 >
 > **Important caveat:** This proof shows $\pi_1(\Sigma_2)$ is non-abelian, but does NOT compute $\pi_1(\Sigma_2)$ exactly. The retraction is *not* a [[§26 Deformation Retracts and Homotopy Type#^def-26-3|deformation retract]] — $\pi_1(\Sigma_2)$ is strictly larger than $F_2$ (it has 4 generators with one relation, [[§29 The Seifert–van Kampen Theorem#^ex-29-8|computable via van Kampen]]). The retraction only gives a “lower bound” on complexity.
 
@@ -305,16 +305,16 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 *Uses:* [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|§26.3]], [[§21 Algebra Prerequisites꞉ Groups#^prop-21-9|§21.9]], [[§21 Algebra Prerequisites꞉ Groups#^prop-21-2|§21.2]], [[§28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]], [[§26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]]
 
 ![[m590-28-5.svg]]
-*The figure eight $X$ (red) inside $\Sigma_2$: one circle around each hole, meeting at $x_0$ on the neck (dashed). The retraction $r$ collapses the neck to $x_0$ and then each torus onto its red circle, keeping $X$ fixed. This is why $j_*$ is injective and $r_*$ is surjective.*
+*The figure eight $X$ (red) inside $\Sigma_2$: one circle around each hole, meeting at $x_0$ on the neck (dashed). The retraction $r$ collapses the neck to $x_0$ and then each torus onto its red circle, keeping $X$ fixed. This is why $j_{\ast}$ is injective and $r_{\ast}$ is surjective.*
 
 > [!proof]+ Alternative Proof (via surjection)
 > We use $r_*$ instead of $j_*$, applying the surjective direction.
 >
 > **Step 1:** Same as above: $r: \Sigma_2 \to X$ is a retraction onto the figure eight.
 >
-> **Step 2: Retraction gives a surjective homomorphism.** Since $r \circ j = \operatorname{id}_X$, we have $r_* \circ j_* = \operatorname{id}$ on $\pi_1(X)$. In particular, $r_*: \pi_1(\Sigma_2) \to \pi_1(X)$ is [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|surjective]] (it has a right inverse $j_*$: every element of $\pi_1(X)$ is hit, since $r_*(j_*([f])) = [f]$).
+> **Step 2: Retraction gives a surjective homomorphism.** Since $r \circ j = \operatorname{id}_X$, we have $r_{\ast} \circ j_{\ast} = \operatorname{id}$ on $\pi_1(X)$. In particular, $r_{\ast}: \pi_1(\Sigma_2) \to \pi_1(X)$ is [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|surjective]] (it has a right inverse $j_{\ast}$: every element of $\pi_1(X)$ is hit, since $r_{\ast}(j_{\ast}([f])) = [f]$).
 >
-> **Step 3: Contradiction.** Suppose $\pi_1(\Sigma_2)$ is abelian. By the proposition “[[§21 Algebra Prerequisites꞉ Groups#^prop-21-10|Surjective Homomorphisms Preserve Abelianness]]” (§21): since $r_*$ is surjective and $\pi_1(\Sigma_2)$ is abelian, $\operatorname{im}(r_*) = \pi_1(X)$ is abelian. But $\pi_1(X)$ is non-abelian ([[§28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]]). Contradiction.
+> **Step 3: Contradiction.** Suppose $\pi_1(\Sigma_2)$ is abelian. By the proposition “[[§21 Algebra Prerequisites꞉ Groups#^prop-21-10|Surjective Homomorphisms Preserve Abelianness]]” (§21): since $r_{\ast}$ is surjective and $\pi_1(\Sigma_2)$ is abelian, $\operatorname{im}(r_{\ast}) = \pi_1(X)$ is abelian. But $\pi_1(X)$ is non-abelian ([[§28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]]). Contradiction.
 
 ^pf-28-5-2
 

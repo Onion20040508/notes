@@ -48,7 +48,7 @@ Unlike a differential equation, (1) with an initial condition always has exactly
 > y_n = f(y_n) \qquad (4)
 > $$
 >
-> for $y_n$. An equilibrium solution $y_n = y^*$ is **asymptotically stable** if solutions starting sufficiently near $y^*$ converge to $y^*$ as $n \to \infty$, and **unstable** if solutions starting arbitrarily near $y^*$ (other than $y^*$ itself) move away from it.
+> for $y_n$. An equilibrium solution $y_n = y^{\ast}$ is **asymptotically stable** if solutions starting sufficiently near $y^{\ast}$ converge to $y^{\ast}$ as $n \to \infty$, and **unstable** if solutions starting arbitrarily near $y^{\ast}$ (other than $y^{\ast}$ itself) move away from it.
 >
 > *BDP: 2.9 (text)*
 
@@ -266,7 +266,7 @@ Are these equilibrium solutions asymptotically stable? BDP answers by linearizin
 ^lem-12-5
 
 > [!proof]+ Proof
-> **$|g'(u^*)| < 1$.** Choose $\lambda$ with $|g'(u^*)| < \lambda < 1$. By continuity of $g'$ there is $\delta > 0$ with $|g'(u)| \le \lambda$ for $|u - u^*| \le \delta$. If $|u - u^*| \le \delta$, the mean value theorem gives $\xi$ between $u$ and $u^*$ with
+> **$|g'(u^{\ast})| < 1$.** Choose $\lambda$ with $|g'(u^{\ast})| < \lambda < 1$. By continuity of $g'$ there is $\delta > 0$ with $|g'(u)| \le \lambda$ for $|u - u^{\ast}| \le \delta$. If $|u - u^{\ast}| \le \delta$, the mean value theorem gives $\xi$ between $u$ and $u^{\ast}$ with
 >
 > $$
 > |g(u) - u^*| = |g(u) - g(u^*)| = |g'(\xi)|\,|u - u^*| \le \lambda|u - u^*| \le \delta .
@@ -274,7 +274,7 @@ Are these equilibrium solutions asymptotically stable? BDP answers by linearizin
 >
 > So the iterates stay in the interval, and by induction $|u_n - u^*| \le \lambda^n|u_0 - u^*| \to 0$.
 >
-> **$|g'(u^*)| > 1$.** Choose $\lambda$ with $1 < \lambda < |g'(u^*)|$ and $\delta > 0$ with $|g'(u)| \ge \lambda$ for $|u - u^*| \le \delta$. As long as $u_n$ stays in $|u - u^*| \le \delta$, the mean value theorem gives $|u_{n+1} - u^*| \ge \lambda|u_n - u^*|$, so $|u_n - u^*| \ge \lambda^n|u_0 - u^*|$. Since $\lambda^n \to \infty$ and $u_0 \ne u^*$, this cannot continue forever: the solution leaves the interval.
+> **$|g'(u^{\ast})| > 1$.** Choose $\lambda$ with $1 < \lambda < |g'(u^{\ast})|$ and $\delta > 0$ with $|g'(u)| \ge \lambda$ for $|u - u^{\ast}| \le \delta$. As long as $u_n$ stays in $|u - u^{\ast}| \le \delta$, the mean value theorem gives $|u_{n+1} - u^{\ast}| \ge \lambda|u_n - u^{\ast}|$, so $|u_n - u^{\ast}| \ge \lambda^n|u_0 - u^{\ast}|$. Since $\lambda^n \to \infty$ and $u_0 \ne u^{\ast}$, this cannot continue forever: the solution leaves the interval.
 
 ^pf-12-5
 

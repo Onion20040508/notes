@@ -357,7 +357,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 ^rem-7-8
 
 > [!remark] Remark: The Contrast with the Unitary Group
-> The map $F(g) = gg^*$ presenting $\mathrm{U}(n)$ (Assignment 2, Problem 4) involves $\bar g$ and is *not* holomorphic: its derivative $h \mapsto hg^* + gh^*$ satisfies $DF_g(ih) = i\,hg^* - i\,gh^*$, which is not $i\,DF_g(h)$ in general. So [[§7 The Regular Value Theorem#^cor-7-7|Corollary §7.7]] is unavailable, and one is forced to regard $\operatorname{Mat}(n,\mathbb{C})$ and the Hermitian matrices as *real* vector spaces — which is exactly why that problem insists on it. The outcome shows the difference: $\dim \mathrm{U}(n) = n^2$ is odd for odd $n$ (for instance $\mathrm{U}(1) = S^1$ has dimension $1$), which no holomorphic regular level set can be.
+> The map $F(g) = gg^{\ast}$ presenting $\mathrm{U}(n)$ (Assignment 2, Problem 4) involves $\bar g$ and is *not* holomorphic: its derivative $h \mapsto hg^{\ast} + gh^{\ast}$ satisfies $DF_g(ih) = i\,hg^{\ast} - i\,gh^{\ast}$, which is not $i\,DF_g(h)$ in general. So [[§7 The Regular Value Theorem#^cor-7-7|Corollary §7.7]] is unavailable, and one is forced to regard $\operatorname{Mat}(n,\mathbb{C})$ and the Hermitian matrices as *real* vector spaces — which is exactly why that problem insists on it. The outcome shows the difference: $\dim \mathrm{U}(n) = n^2$ is odd for odd $n$ (for instance $\mathrm{U}(1) = S^1$ has dimension $1$), which no holomorphic regular level set can be.
 
 ^rem-7-9
 

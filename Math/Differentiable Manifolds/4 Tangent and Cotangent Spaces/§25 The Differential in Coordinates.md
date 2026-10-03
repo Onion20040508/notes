@@ -7,9 +7,9 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§24 Coordinate Derivations and the Basis Theorem]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§26 Tangent Vectors as Velocities of Curves]] →
 
-*Stage: abstract — In charts the differential $F_{*p}$ is the Jacobian of the coordinate representation, and the chain rule is matrix multiplication.*
+*Stage: abstract — In charts the differential $F_{\ast p}$ is the Jacobian of the coordinate representation, and the chain rule is matrix multiplication.*
 
-*Lecture 9. The differential $F_{*p}$ is defined without coordinates; choosing charts on both sides turns it into a matrix, and the matrix is the Jacobian of the coordinate representation. “This should be very much reminiscent of the things we said about vector spaces — another instance of the same thing.”*
+*Lecture 9. The differential $F_{\ast p}$ is defined without coordinates; choosing charts on both sides turns it into a matrix, and the matrix is the Jacobian of the coordinate representation. “This should be very much reminiscent of the things we said about vector spaces — another instance of the same thing.”*
 
 Let $F : M \to N$ be smooth, $\dim M = m$, $\dim N = n$, and $p \in M$. Choose smooth charts $(U, \varphi)$ of $M$ with $p \in U$ and $(V, \psi)$ of $N$ with $F(U) \subseteq V$ — possible because $F$ is smooth (Definition [[§15 Smooth Functions and Smooth Maps#^def-15-3|§15.3]]) — and write
 
@@ -23,9 +23,7 @@ $$
 \mathcal{B}_M = \Big\{ \frac{\partial}{\partial x^i}\Big|_p \Big\}_{i=1}^m \ \text{ of } T_pM, \qquad \mathcal{B}_N = \Big\{ \frac{\partial}{\partial y^j}\Big|_{F(p)} \Big\}_{j=1}^n \ \text{ of } T_{F(p)}N .
 $$
 
-![[m591-12-9.svg]]
-
-![[m591-12-10.svg]]
+![[m591-12-9.svg]] ![[m591-12-10.svg]]
 *Left, the maps: upstairs $F$ between manifolds, downstairs its coordinate representation $\tilde F$ between open sets of Euclidean space. Right, their linearizations: upstairs the differential, intrinsic; downstairs the Jacobian matrix, and the vertical isomorphisms send $\partial/\partial x^i|_p \mapsto e_i$ and $\partial/\partial y^j|_{F(p)} \mapsto e_j$. Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]] below says the right-hand square commutes. It is the square of [[§18 The Differential of a Map Between Vector Spaces|§18, The Differential of a Map Between Vector Spaces]] again, with abstract tangent spaces in place of abstract vector spaces and coordinate bases in place of linear coordinates.*
 
 > [!theorem] Proposition §25.1: Partial Derivatives Upstairs and Downstairs
@@ -75,7 +73,7 @@ $$
 ^thm-25-2
 
 > [!proof]+ Proof
-> *(Lecture 10 — “once you think about it a little bit, it's a one-line proof.”)* Linearity is Proposition [[§23 Derivations and the Abstract Tangent Space#^prop-23-5|§23.5]]. The $i$-th column of the matrix consists of the coefficients of $F_{*p}(\partial/\partial x^i|_p)$ in the basis $\mathcal{B}_N$, and the universal formula of Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|§24.5]], applied at $F(p)$ with the chart $\psi$, says the $j$-th coefficient of any derivation is its value on $[y^j]$. By the definition of the pushforward,
+> *(Lecture 10 — “once you think about it a little bit, it's a one-line proof.”)* Linearity is Proposition [[§23 Derivations and the Abstract Tangent Space#^prop-23-5|§23.5]]. The $i$-th column of the matrix consists of the coefficients of $F_{\ast p}(\partial/\partial x^i|_p)$ in the basis $\mathcal{B}_N$, and the universal formula of Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|§24.5]], applied at $F(p)$ with the chart $\psi$, says the $j$-th coefficient of any derivation is its value on $[y^j]$. By the definition of the pushforward,
 >
 > $$
 > F_{*p}\Big(\frac{\partial}{\partial x^i}\Big|_p\Big)\big[y^j\big] = \frac{\partial}{\partial x^i}\Big|_p\big[y^j \circ F\big] = \frac{\partial F^j}{\partial x^i}(p).
@@ -217,7 +215,7 @@ $$
 ^rem-25-3
 
 > [!definition] Definition §25.1: Rank and Regular Values of a Smooth Map
-> Let $F : M \to N$ be a smooth map. The **rank** of $F$ at $p$ is the rank of the linear map $F_{*p} : T_pM \to T_{F(p)}N$ of abstract tangent spaces; by Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]] it is the rank of the Jacobian of any coordinate representation. A point $p$ is a **regular point** of $F$ if $F_{*p}$ is surjective, and $c \in N$ is a **regular value** if every $p \in F^{-1}(c)$ is a regular point.
+> Let $F : M \to N$ be a smooth map. The **rank** of $F$ at $p$ is the rank of the linear map $F_{\ast p} : T_pM \to T_{F(p)}N$ of abstract tangent spaces; by Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]] it is the rank of the Jacobian of any coordinate representation. A point $p$ is a **regular point** of $F$ if $F_{\ast p}$ is surjective, and $c \in N$ is a **regular value** if every $p \in F^{-1}(c)$ is a regular point.
 >
 > *Lee: Ch. 4 and Ch. 5, p. 105*
 
@@ -228,7 +226,7 @@ $$
 > - A regular point is a point where $F$ is a submersion: [[§29 Submersions#^def-29-1|Def. §29.1]].
 
 > [!remark] Remark: The Map Is Intrinsic — the Matrix Is Not
-> Uribe's closing point. The linear map $F_{*p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§25 The Differential in Coordinates#^cor-25-4|§25.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. So only properties of $F_{*p}$ that survive such changes — its rank, kernel and image, injectivity and surjectivity — are properties of $F$, which is why the definition above is phrased through $F_{*p}$ rather than through a matrix. By Proposition [[§25 The Differential in Coordinates#^prop-25-5|§25.5]] it agrees with Definition [[§7 The Regular Value Theorem#^def-7-2|§7.2]] in the Euclidean case. A regular point is exactly a point at which $F$ is a *submersion*, in the sense of Definition [[§29 Submersions#^def-29-1|§29.1]]; maps with bijective, surjective and injective differentials are the subject of [[§28 Local Diffeomorphisms|§28]].
+> Uribe's closing point. The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§25 The Differential in Coordinates#^cor-25-4|§25.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. So only properties of $F_{\ast p}$ that survive such changes — its rank, kernel and image, injectivity and surjectivity — are properties of $F$, which is why the definition above is phrased through $F_{\ast p}$ rather than through a matrix. By Proposition [[§25 The Differential in Coordinates#^prop-25-5|§25.5]] it agrees with Definition [[§7 The Regular Value Theorem#^def-7-2|§7.2]] in the Euclidean case. A regular point is exactly a point at which $F$ is a *submersion*, in the sense of Definition [[§29 Submersions#^def-29-1|§29.1]]; maps with bijective, surjective and injective differentials are the subject of [[§28 Local Diffeomorphisms|§28]].
 
 ^rem-25-4
 
@@ -264,7 +262,7 @@ $$
 *Uses:* [[§25 The Differential in Coordinates#^def-25-1|Def. §25.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§25 The Differential in Coordinates#^thm-25-2|§25.2]], [[§17 Linear Algebra Toolkit#^prop-17-1|§17.1]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§9 Continuous Functions#^prop-9-3|590 §9.3]]
 
 ![[m591-12-13.svg]]
-*The proposition in one square. The level set upstairs is carried by the chart onto a level set downstairs, in Euclidean space, and the question “is $c$ regular?” is carried with it: surjectivity of $F_{*p}$ upstairs is the rank of $\tilde F'$ downstairs.*
+*The proposition in one square. The level set upstairs is carried by the chart onto a level set downstairs, in Euclidean space, and the question “is $c$ regular?” is carried with it: surjectivity of $F_{\ast p}$ upstairs is the rank of $\tilde F'$ downstairs.*
 
 > [!remark] Remark: The Strategy
 > To show that $c$ is a regular value of a map between manifolds, and to see its level set:
@@ -292,4 +290,4 @@ $$
 > [!remark]- Connections
 > - The smooth half, $F^{-1}(c)$ a submanifold with tangent space $\ker F_{*p}$: [[§30 Submanifolds#^thm-30-6|§30.6]]; the Euclidean original: [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
 
-This is the topological half of the regular value theorem for manifolds, and it is [[§7 The Regular Value Theorem|§7]] applied chart by chart. The smooth half — that $F^{-1}(c)$ is a smooth *submanifold* of $M$, with tangent space $\ker F_{*p}$ — came in Lecture 12, as Theorem [[§30 Submanifolds#^thm-30-6|§30.6]], proved with the local normal form for submersions (Theorem [[§29 Submersions#^thm-29-4|§29.4]]): near each point of the level set, $F$ is a projection, so the level set is a coordinate slice. It is Lee's Corollary 5.14 and Proposition 5.38. The corollary above is now a consequence of it, a submanifold being in particular a topological manifold, but its proof — [[§7 The Regular Value Theorem|§7]] applied chart by chart — is more elementary.
+This is the topological half of the regular value theorem for manifolds, and it is [[§7 The Regular Value Theorem|§7]] applied chart by chart. The smooth half — that $F^{-1}(c)$ is a smooth *submanifold* of $M$, with tangent space $\ker F_{\ast p}$ — came in Lecture 12, as Theorem [[§30 Submanifolds#^thm-30-6|§30.6]], proved with the local normal form for submersions (Theorem [[§29 Submersions#^thm-29-4|§29.4]]): near each point of the level set, $F$ is a projection, so the level set is a coordinate slice. It is Lee's Corollary 5.14 and Proposition 5.38. The corollary above is now a consequence of it, a submanifold being in particular a topological manifold, but its proof — [[§7 The Regular Value Theorem|§7]] applied chart by chart — is more elementary.

@@ -222,7 +222,7 @@ tags: [topology, math590]
 *Uses:* [[§9 Continuous Functions#^prop-9-2|§9.2]], [[§8 Hausdorff Spaces#^thm-8-1|§8.1]], [[§5 Subspace Topology#^lem-5-2|§5.2]], [[§15 Compact Spaces#^thm-15-2|§15.2]], [[§15 Compact Spaces#^thm-15-4|§15.4]]
 
 > [!definition] Definition §17.3: One-Point Compactification
-> The space $Y$ constructed above is called the **one-point compactification** of $X$, often denoted $X^* = X \cup \{\infty\}$.
+> The space $Y$ constructed above is called the **one-point compactification** of $X$, often denoted $X^{\ast} = X \cup \{\infty\}$.
 
 ^def-17-3
 

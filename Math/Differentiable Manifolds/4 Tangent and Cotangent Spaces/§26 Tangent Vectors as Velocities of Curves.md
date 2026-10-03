@@ -26,7 +26,7 @@ tags: [differentiable-manifolds, math591]
 > - The geometric velocity $\gamma'(0)$ of a curve in $\mathbb{R}^N$: [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Def. §20.1]]; differentials computed by curves between vector spaces: [[§18 The Differential of a Map Between Vector Spaces#^thm-18-3|§18.3]].
 > - In ℝ³ the velocity is $\mathbf r'(t)$: [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Calc Def. §89.1]], [[§87 Derivatives and Integrals of Vector Functions#^def-87-2|Calc Def. §87.2]] (with worked examples).
 
-The explicit formula is the definition of the pushforward: $\gamma_{*0}(d/dt|_0)[f] = d/dt|_0\,[f \circ \gamma]$, the ordinary derivative at $0$ of the function $f \circ \gamma$, which is defined near $0$. Lee writes $\gamma'(0)$ for $D_\gamma$. These notes keep $\gamma'(0)$ for the ordinary derivative of a curve in $\mathbb{R}^N$, which is a *geometric* tangent vector, and write $D_\gamma$ for the abstract one, as Assignment 3 does.
+The explicit formula is the definition of the pushforward: $\gamma_{\ast 0}(d/dt|_0)[f] = d/dt|_0\,[f \circ \gamma]$, the ordinary derivative at $0$ of the function $f \circ \gamma$, which is defined near $0$. Lee writes $\gamma'(0)$ for $D_\gamma$. These notes keep $\gamma'(0)$ for the ordinary derivative of a curve in $\mathbb{R}^N$, which is a *geometric* tangent vector, and write $D_\gamma$ for the abstract one, as Assignment 3 does.
 
 > [!theorem] Proposition §26.1: Velocity in Coordinates
 > $D_\gamma$ is a derivation at $p$. In a chart $(U, \varphi)$ at $p$ with coordinate functions $x^1, \ldots, x^n$,
@@ -135,7 +135,7 @@ Throughout, $p = (p_1, p_2) \in M_1 \times M_2$, and $\iota_1 = \iota^{p_2} : M_
 ^thm-26-4
 
 > [!proof]+ Proof
-> *(Stated in lecture; Uribe left the injectivity as “check”.)* First, the pushforward along a constant map is zero: if $\kappa$ is constant with value $q_0$ and $[g]$ is a germ at $q_0$, then $g \circ \kappa$ is constant, so $(\kappa_* D)[g] = D[g \circ \kappa] = 0$ because derivations kill constants (Lemma [[§23 Derivations and the Abstract Tangent Space#^lem-23-2|§23.2]]). Now $\pi_1 \circ \iota_1 = \mathrm{id}_{M_1}$ and $\pi_2 \circ \iota_2 = \mathrm{id}_{M_2}$, while $\pi_2 \circ \iota_1$ and $\pi_1 \circ \iota_2$ are constant. By the Chain Rule (Theorem [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]]),
+> *(Stated in lecture; Uribe left the injectivity as “check”.)* First, the pushforward along a constant map is zero: if $\kappa$ is constant with value $q_0$ and $[g]$ is a germ at $q_0$, then $g \circ \kappa$ is constant, so $(\kappa_{\ast} D)[g] = D[g \circ \kappa] = 0$ because derivations kill constants (Lemma [[§23 Derivations and the Abstract Tangent Space#^lem-23-2|§23.2]]). Now $\pi_1 \circ \iota_1 = \mathrm{id}_{M_1}$ and $\pi_2 \circ \iota_2 = \mathrm{id}_{M_2}$, while $\pi_2 \circ \iota_1$ and $\pi_1 \circ \iota_2$ are constant. By the Chain Rule (Theorem [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]]),
 >
 > $$
 > \pi_{1*}\iota_{1*} = \mathrm{id}, \qquad \pi_{2*}\iota_{2*} = \mathrm{id}, \qquad \pi_{2*}\iota_{1*} = 0, \qquad \pi_{1*}\iota_{2*} = 0,
@@ -165,7 +165,7 @@ $$
 to push $v$ forward, restrict $f$ to the slice $M_1 \times \{p_2\}$ and differentiate there. So the first summand consists of derivations “only with respect to the $M_1$ variables”, with $p_2$ held fixed — partial derivatives in the direction of $M_1$ — and the second of partial derivatives in the direction of $M_2$.
 
 ![[m591-12-18.svg]]
-*The isomorphism in one picture. Through $p$ run the two slices, $M_1 \times \{p_2\}$ and $\{p_1\} \times M_2$. Pushing $v$ and $w$ forward along the slice inclusions gives tangent vectors along the slices, and every $D \in T_p(M_1 \times M_2)$ is uniquely their sum. The projections take $D$ back to $v$ and $w$: $\Psi(D) = (\pi_{1*}D, \pi_{2*}D) = (v, w)$.*
+*The isomorphism in one picture. Through $p$ run the two slices, $M_1 \times \{p_2\}$ and $\{p_1\} \times M_2$. Pushing $v$ and $w$ forward along the slice inclusions gives tangent vectors along the slices, and every $D \in T_p(M_1 \times M_2)$ is uniquely their sum. The projections take $D$ back to $v$ and $w$: $\Psi(D) = (\pi_{1\ast}D, \pi_{2\ast}D) = (v, w)$.*
 
 > [!theorem] Corollary §26.5: Product Coordinates
 > In product coordinates $(x^1, \ldots, x^{m_1}, y^1, \ldots, y^{m_2})$ at $p$,

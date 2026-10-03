@@ -11,14 +11,14 @@ tags: [calculus]
 
 *Stewart, Section 5.2.*
 
-The limit of sums $\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*)\,\Delta x$ that gave areas and distances in [[§34 The Area and Distance Problems|§34]] is now named the definite integral $\int_a^b f(x)\,dx$, for any function $f$, positive or not. When $f$ changes sign the integral is a *net* area. This section evaluates a few integrals directly from the definition using formulas for sums of powers, introduces the Midpoint Rule for approximating them, and proves the algebraic and comparison properties of the integral. These properties, together with the Fundamental Theorem of the next section, are what one actually computes with.
+The limit of sums $\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^{\ast})\,\Delta x$ that gave areas and distances in [[§34 The Area and Distance Problems|§34]] is now named the definite integral $\int_a^b f(x)\,dx$, for any function $f$, positive or not. When $f$ changes sign the integral is a *net* area. This section evaluates a few integrals directly from the definition using formulas for sums of powers, introduces the Midpoint Rule for approximating them, and proves the algebraic and comparison properties of the integral. These properties, together with the Fundamental Theorem of the next section, are what one actually computes with.
 
 ## The Definite Integral
 
 The same limit occurs for areas, for distances, and (Chapters 6 and 8) for lengths of curves, volumes, centers of mass, force due to water pressure and work. It gets a name.
 
 > [!definition] Definition §35.1: Definite Integral
-> Let $f$ be a function defined for $a \le x \le b$. Divide $[a, b]$ into $n$ subintervals of equal width $\Delta x = (b - a)/n$. Let $x_0 (= a), x_1, x_2, \ldots, x_n (= b)$ be the endpoints of these subintervals, and let $x_1^*, x_2^*, \ldots, x_n^*$ be any **sample points** in them, so $x_i^*$ lies in the $i$th subinterval $[x_{i-1}, x_i]$. The **definite integral of $f$ from $a$ to $b$** is
+> Let $f$ be a function defined for $a \le x \le b$. Divide $[a, b]$ into $n$ subintervals of equal width $\Delta x = (b - a)/n$. Let $x_0 (= a), x_1, x_2, \ldots, x_n (= b)$ be the endpoints of these subintervals, and let $x_1^{\ast}, x_2^{\ast}, \ldots, x_n^{\ast}$ be any **sample points** in them, so $x_i^{\ast}$ lies in the $i$th subinterval $[x_{i-1}, x_i]$. The **definite integral of $f$ from $a$ to $b$** is
 >
 > $$
 > \int_a^b f(x)\,dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*)\,\Delta x ,
@@ -45,7 +45,7 @@ The same limit occurs for areas, for distances, and (Chapters 6 and 8) for lengt
 > [!definition] Definition §35.2: Integrand, Limits of Integration, Riemann Sum
 > In the notation $\int_a^b f(x)\,dx$, the symbol $\int$ (introduced by Leibniz: an elongated S, for "sum") is the **integral sign**, $f(x)$ is the **integrand**, $a$ and $b$ are the **limits of integration**, $a$ is the **lower limit** and $b$ the **upper limit**. For now $dx$ has no meaning by itself: $\int_a^b f(x)\,dx$ is one symbol, and $dx$ only indicates that the independent variable is $x$. Calculating an integral is called **integration**.
 >
-> The sum $\sum_{i=1}^{n} f(x_i^*)\,\Delta x$ is a **Riemann sum** (after Bernhard Riemann, 1826–1866). Definition §35.1 says that the integral of an integrable function can be approximated to any desired accuracy by a Riemann sum.
+> The sum $\sum_{i=1}^{n} f(x_i^{\ast})\,\Delta x$ is a **Riemann sum** (after Bernhard Riemann, 1826–1866). Definition §35.1 says that the integral of an integrable function can be approximated to any desired accuracy by a Riemann sum.
 >
 > *Stewart: 5.2, Notes 1 and 3*
 
@@ -62,7 +62,7 @@ When writing $\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*)\,\Delta x = \int_a^b f
 > [!remark] Remark: The Integral as a Net Area
 > If $f \ge 0$, a Riemann sum is a sum of areas of rectangles, and comparing Definition §35.1 with [[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]] shows that $\int_a^b f(x)\,dx$ is the **area under the curve** $y = f(x)$ from $a$ to $b$.
 >
-> If $f$ takes both signs, the Riemann sum is the sum of the areas of the rectangles above the $x$-axis minus the areas of those below it, since $f(x_i^*)\,\Delta x < 0$ when $f(x_i^*) < 0$. In the limit, the integral is a **net area**:
+> If $f$ takes both signs, the Riemann sum is the sum of the areas of the rectangles above the $x$-axis minus the areas of those below it, since $f(x_i^{\ast})\,\Delta x < 0$ when $f(x_i^{\ast}) < 0$. In the limit, the integral is a **net area**:
 >
 > $$
 > \int_a^b f(x)\,dx = A_1 - A_2 ,

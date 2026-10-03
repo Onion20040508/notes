@@ -24,7 +24,7 @@ In [[§54 Applications to Physics and Engineering#^thm-54-5|Theorem §54.5]] sin
 > \rho(x, y) = \lim \frac{\Delta m}{\Delta A} ,
 > $$
 >
-> where $\Delta m$ and $\Delta A$ are the mass and area of a small rectangle containing $(x, y)$ and the limit is taken as the dimensions of the rectangle approach $0$. Enclose $D$ in a rectangle, divide it into subrectangles $R_{ij}$, and let $\rho = 0$ outside $D$. The mass of the part of the lamina in $R_{ij}$ is approximately $\rho(x_{ij}^*, y_{ij}^*)\,\Delta A$, and the **total mass** of the lamina is
+> where $\Delta m$ and $\Delta A$ are the mass and area of a small rectangle containing $(x, y)$ and the limit is taken as the dimensions of the rectangle approach $0$. Enclose $D$ in a rectangle, divide it into subrectangles $R_{ij}$, and let $\rho = 0$ outside $D$. The mass of the part of the lamina in $R_{ij}$ is approximately $\rho(x_{ij}^{\ast}, y_{ij}^{\ast})\,\Delta A$, and the **total mass** of the lamina is
 >
 > $$
 > m = \lim_{k, l \to \infty} \sum_{i=1}^k \sum_{j=1}^l \rho(x_{ij}^*, y_{ij}^*)\,\Delta A = \iint_D \rho(x, y)\,dA . \qquad (1)

@@ -100,7 +100,7 @@ tags: [measure-theory, math551]
 >
 > Take $I_{n+1} \in \Gamma$ with $I_{n+1} \cap I_j = \emptyset$ for $1 \leq j \leq n$ and $|I_{n+1}| > \frac{1}{2}\delta_n$.
 >
-> **Case 1:** There exists $n$ such that $E \subseteq \bigcup_{j=1}^{n} I_j$. Then $m^*(E \setminus \bigcup_{j=1}^{n} I_j) = 0 < \varepsilon$, done.
+> **Case 1:** There exists $n$ such that $E \subseteq \bigcup_{j=1}^{n} I_j$. Then $m^{\ast}(E \setminus \bigcup_{j=1}^{n} I_j) = 0 < \varepsilon$, done.
 >
 > **Case 2:** $E \not\subseteq \bigcup_{j=1}^{n} I_j$ for all $n$. We obtain an infinite sequence $\{I_j\}_{j=1}^{\infty}$ of mutually disjoint intervals in $\Gamma$ with $\bigcup_{j=1}^{\infty} I_j \subseteq G$. Since the $I_j$ are disjoint ([[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]):
 >
@@ -567,9 +567,9 @@ tags: [measure-theory, math551]
 > f(x) - f(a) = \int_a^x f'(t)\,dt \qquad \text{for all } x \in [a, b]? \tag{*}
 > $$
 >
-> If ($*$) holds, then $f(x) = f(a) + \int_a^x f'(t)\,dt$, and the integral function $G(x) = \int_a^x f'(t)\,dt$ is in $BV([a, b])$ (by the [[§18 Differentiation Theory#^thm-18-8|Total Variation Theorem]]). So $f \in BV([a, b])$ is *necessary* for ($*$).
+> If ($\ast$) holds, then $f(x) = f(a) + \int_a^x f'(t)\,dt$, and the integral function $G(x) = \int_a^x f'(t)\,dt$ is in $BV([a, b])$ (by the [[§18 Differentiation Theory#^thm-18-8|Total Variation Theorem]]). So $f \in BV([a, b])$ is *necessary* for ($\ast$).
 >
-> **Question**: Is $f \in BV([a, b])$ *sufficient* for ($*$)?
+> **Question**: Is $f \in BV([a, b])$ *sufficient* for ($\ast$)?
 >
 > **Answer**: **No.** The [[§18 Differentiation Theory#^ex-18-4|Cantor function]] provides a counterexample.
 
@@ -938,11 +938,11 @@ tags: [measure-theory, math551]
 ^thm-18-22
 
 > [!proof]+ Proof
-> **Case 1: $T$ is not invertible.** Then $\det T = 0$ ([[Invertible ⟺ nonzero determinant|LADR 9.50]]), so $T(\mathbb{R}^n)$ is a proper linear subspace of $\mathbb{R}^n$ (dimension $< n$). A $k$-dimensional subspace of $\mathbb{R}^n$ with $k < n$ has $n$-dimensional Lebesgue measure zero (it is contained in a countable union of “flat” rectangles with one side of length $0$). Since $T(Z) \subseteq T(\mathbb{R}^n)$, we have $m^*(T(Z)) = 0$.
+> **Case 1: $T$ is not invertible.** Then $\det T = 0$ ([[Invertible ⟺ nonzero determinant|LADR 9.50]]), so $T(\mathbb{R}^n)$ is a proper linear subspace of $\mathbb{R}^n$ (dimension $< n$). A $k$-dimensional subspace of $\mathbb{R}^n$ with $k < n$ has $n$-dimensional Lebesgue measure zero (it is contained in a countable union of “flat” rectangles with one side of length $0$). Since $T(Z) \subseteq T(\mathbb{R}^n)$, we have $m^{\ast}(T(Z)) = 0$.
 >
 > **Case 2: $T$ is invertible.** We show $m(T(R)) = |\!\det T|\,m(R)$ for any rectangle $R$, then use L-coverings.
 >
-> *Measure of parallelotopes.* Factor $T$ into elementary row operations (which generate all invertible linear maps): scaling one coordinate by $c$ multiplies volume by $|c|$ and determinant by $c$; adding a multiple of one coordinate to another is a shear with determinant $1$ that preserves volume (by [[Fubini's Theorem (Lebesgue)|Fubini]]: the cross-sectional area at each height is unchanged); swapping two coordinates has determinant $-1$ and preserves volume. Since both $m(T(\cdot))$ and $|\!\det T|\,m(\cdot)$ are multiplicative under composition ([[§34 Determinants#^ladr-9-49|LADR 9.49]]), $m(T(R)) = |\!\det T|\,m(R)$. (Here the composition step needs the volume formula for images of general sets, not only of rectangles, since after the first factor the image of $R$ is no longer a rectangle. What the null-set argument below actually uses is $m^*(E(A)) \leq |\!\det E|\,m^*(A)$ for each elementary map $E$ and every $A \subseteq \mathbb{R}^n$: for scalings and swaps this holds because $E$ maps L-coverings to L-coverings, scaling each volume by $|\!\det E|$, and for a shear one applies the cross-section argument to an open $G \supseteq A$ with $m(G) \leq m^*(A) + \varepsilon$, whose image $E(G)$ is open with the same cross-sectional measures. Composing gives $m^*(T(A)) \leq |\!\det T|\,m^*(A)$; the equality for all measurable sets is [[§34 Determinants#^ladr-9-61|LADR 9.61]].)
+> *Measure of parallelotopes.* Factor $T$ into elementary row operations (which generate all invertible linear maps): scaling one coordinate by $c$ multiplies volume by $|c|$ and determinant by $c$; adding a multiple of one coordinate to another is a shear with determinant $1$ that preserves volume (by [[Fubini's Theorem (Lebesgue)|Fubini]]: the cross-sectional area at each height is unchanged); swapping two coordinates has determinant $-1$ and preserves volume. Since both $m(T(\cdot))$ and $|\!\det T|\,m(\cdot)$ are multiplicative under composition ([[§34 Determinants#^ladr-9-49|LADR 9.49]]), $m(T(R)) = |\!\det T|\,m(R)$. (Here the composition step needs the volume formula for images of general sets, not only of rectangles, since after the first factor the image of $R$ is no longer a rectangle. What the null-set argument below actually uses is $m^{\ast}(E(A)) \leq |\!\det E|\,m^{\ast}(A)$ for each elementary map $E$ and every $A \subseteq \mathbb{R}^n$: for scalings and swaps this holds because $E$ maps L-coverings to L-coverings, scaling each volume by $|\!\det E|$, and for a shear one applies the cross-section argument to an open $G \supseteq A$ with $m(G) \leq m^{\ast}(A) + \varepsilon$, whose image $E(G)$ is open with the same cross-sectional measures. Composing gives $m^{\ast}(T(A)) \leq |\!\det T|\,m^{\ast}(A)$; the equality for all measurable sets is [[§34 Determinants#^ladr-9-61|LADR 9.61]].)
 >
 > *Null sets.* For any $\varepsilon > 0$, choose an [[§9 Lebesgue Outer Measure#^def-9-3|L-covering]] $\{R_j\}_{j=1}^{\infty}$ of $Z$ with $\sum m(R_j) < \varepsilon$. Then $\{T(R_j)\}$ covers $T(Z)$, so by [[Properties of Lebesgue Outer Measure|subadditivity]]:
 >

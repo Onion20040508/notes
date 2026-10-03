@@ -118,7 +118,7 @@ tags: [topology, math590]
 ^thm-23-2
 
 ![[m590-23-3.svg]]
-*The isomorphism $\hat\alpha$ from the proof below. A loop $f$ at $x_0$ (blue) becomes the loop $\bar\alpha * f * \alpha$ at $x_1$: travel $\bar\alpha$ from $x_1$ to $x_0$, run $f$, and return along $\alpha$ (red). So $\hat\alpha([f]) = [\bar\alpha] * [f] * [\alpha]$.*
+*The isomorphism $\hat\alpha$ from the proof below. A loop $f$ at $x_0$ (blue) becomes the loop $\bar\alpha \ast  f \ast  \alpha$ at $x_1$: travel $\bar\alpha$ from $x_1$ to $x_0$, run $f$, and return along $\alpha$ (red). So $\hat\alpha([f]) = [\bar\alpha] \ast  [f] \ast  [\alpha]$.*
 
 > [!proof]+ Proof
 > Define $\hat{\alpha}: \pi_1(X, x_0) \to \pi_1(X, x_1)$ by
@@ -138,7 +138,7 @@ tags: [topology, math590]
 >
 > (Using associativity and $[\alpha] * [\bar{\alpha}] = [e_{x_0}]$, which acts as the identity.)
 >
-> **$\hat{\alpha}$ is bijective:** Let $\beta = \bar{\alpha}$ (the reverse path of $\alpha$, from $x_1$ to $x_0$). Define $\hat{\beta}: \pi_1(X, x_1) \to \pi_1(X, x_0)$ by $\hat{\beta}([g]) = [\bar{\beta}] * [g] * [\beta] = [\alpha] * [g] * [\bar{\alpha}]$.
+> **$\hat{\alpha}$ is bijective:** Let $\beta = \bar{\alpha}$ (the reverse path of $\alpha$, from $x_1$ to $x_0$). Define $\hat{\beta}: \pi_1(X, x_1) \to \pi_1(X, x_0)$ by $\hat{\beta}([g]) = [\bar{\beta}] \ast  [g] \ast  [\beta] = [\alpha] \ast  [g] \ast  [\bar{\alpha}]$.
 >
 > Then for any $[f] \in \pi_1(X, x_0)$:
 >
@@ -160,14 +160,14 @@ tags: [topology, math590]
 *Uses:* [[Basepoint Independence of π₁|§23.2]]
 
 > [!remark] Remark
-> For path-connected spaces, we often write $\pi_1(X)$ (suppressing the basepoint) when we only care about the isomorphism type. However, the isomorphism $\hat{\alpha}$ *depends on the choice of path $\alpha$*: a different path $\alpha'$ from $x_0$ to $x_1$ gives a potentially different isomorphism $\hat{\alpha}'$. The isomorphism is “canonical up to conjugation” in a precise sense: $\hat{\alpha}'([f]) = [\bar{\alpha}' * \alpha] \cdot \hat{\alpha}([f]) \cdot [\bar{\alpha} * \alpha']$. When $\pi_1$ is abelian, all such isomorphisms agree, and the basepoint truly doesn't matter.
+> For path-connected spaces, we often write $\pi_1(X)$ (suppressing the basepoint) when we only care about the isomorphism type. However, the isomorphism $\hat{\alpha}$ *depends on the choice of path $\alpha$*: a different path $\alpha'$ from $x_0$ to $x_1$ gives a potentially different isomorphism $\hat{\alpha}'$. The isomorphism is “canonical up to conjugation” in a precise sense: $\hat{\alpha}'([f]) = [\bar{\alpha}' \ast  \alpha] \cdot \hat{\alpha}([f]) \cdot [\bar{\alpha} \ast  \alpha']$. When $\pi_1$ is abelian, all such isomorphisms agree, and the basepoint truly doesn't matter.
 
 ^rem-23-3
 
 ## The Induced Homomorphism
 
 > [!definition] Definition §23.4: Induced Homomorphism
-> Let $h: (X, x_0) \to (Y, y_0)$ be a continuous map with $h(x_0) = y_0$. The **induced homomorphism** $h_*: \pi_1(X, x_0) \to \pi_1(Y, y_0)$ is defined by
+> Let $h: (X, x_0) \to (Y, y_0)$ be a continuous map with $h(x_0) = y_0$. The **induced homomorphism** $h_{\ast}: \pi_1(X, x_0) \to \pi_1(Y, y_0)$ is defined by
 >
 > $$h_*([f]) = [h \circ f].$$
 
@@ -187,13 +187,13 @@ tags: [topology, math590]
 >
 > So $h \circ f$ is indeed a loop in $Y$ based at $y_0$, and $[h \circ f] \in \pi_1(Y, y_0)$. The hypothesis $h(x_0) = y_0$ is essential: without it, $h \circ f$ would not start and end at $y_0$.
 >
-> **(2) $h_*$ is well-defined on homotopy classes.** We must show: if $f \simeq_p f'$, then $h \circ f \simeq_p h \circ f'$. Let $F: I \times I \to X$ be a path homotopy from $f$ to $f'$. Then $h \circ F: I \times I \to Y$ is a path homotopy from $h \circ f$ to $h \circ f'$:
+> **(2) $h_{\ast}$ is well-defined on homotopy classes.** We must show: if $f \simeq_p f'$, then $h \circ f \simeq_p h \circ f'$. Let $F: I \times I \to X$ be a path homotopy from $f$ to $f'$. Then $h \circ F: I \times I \to Y$ is a path homotopy from $h \circ f$ to $h \circ f'$:
 > - $(h \circ F)(s, 0) = h(f(s)) = (h \circ f)(s)$ and $(h \circ F)(s, 1) = h(f'(s)) = (h \circ f')(s)$.
 > - $(h \circ F)(0, t) = h(F(0,t)) = h(x_0) = y_0$ and $(h \circ F)(1, t) = h(F(1,t)) = h(x_0) = y_0$.
 >
 > So $[f] = [f']$ implies $[h \circ f] = [h \circ f']$, and $h_*$ depends only on the homotopy class.
 >
-> **(3) $h_*$ is a homomorphism.** We verify $h_*([f] * [g]) = h_*([f]) * h_*([g])$:
+> **(3) $h_{\ast}$ is a homomorphism.** We verify $h_{\ast}([f] \ast  [g]) = h_{\ast}([f]) \ast  h_{\ast}([g])$:
 >
 > $$h_*([f] * [g]) = h_*([f * g]) = [h \circ (f * g)] = [(h \circ f) * (h \circ g)] = [h \circ f] * [h \circ g] = h_*([f]) * h_*([g]).$$
 >
@@ -206,8 +206,8 @@ tags: [topology, math590]
 ## Functorial Properties
 
 > [!theorem] Theorem §23.5: Functoriality of $\pi_1$
-> 1. **Composition:** If $h: (X, x_0) \to (Y, y_0)$ and $k: (Y, y_0) \to (Z, z_0)$ are continuous, then $(k \circ h)_* = k_* \circ h_*$.
-> 2. **Identity:** If $\operatorname{id}: (X, x_0) \to (X, x_0)$ is the identity map, then $\operatorname{id}_*$ is the identity homomorphism on $\pi_1(X, x_0)$.
+> 1. **Composition:** If $h: (X, x_0) \to (Y, y_0)$ and $k: (Y, y_0) \to (Z, z_0)$ are continuous, then $(k \circ h)_{\ast} = k_{\ast} \circ h_{\ast}$.
+> 2. **Identity:** If $\operatorname{id}: (X, x_0) \to (X, x_0)$ is the identity map, then $\operatorname{id}_{\ast}$ is the identity homomorphism on $\pi_1(X, x_0)$.
 
 ^thm-23-5
 
@@ -218,7 +218,7 @@ tags: [topology, math590]
 >
 > (Using associativity of function composition.)
 >
-> **(2)** $\operatorname{id}_*([f]) = [\operatorname{id} \circ f] = [f]$.
+> **(2)** $\operatorname{id}_{\ast}([f]) = [\operatorname{id} \circ f] = [f]$.
 
 ^pf-23-5
 
@@ -252,11 +252,11 @@ tags: [topology, math590]
 > [!remark] Remark: Naturality: Structure Transports Across Homeomorphisms
 > Functoriality has a powerful practical consequence: if you compute $\pi_1(X) \cong G$ using a covering map $p: E \to X$ and the [[§24 Covering Spaces#^def-24-7|lifting correspondence]], then for any homeomorphism $h: Y \to X$:
 > 1. The **transported covering** $p' = h^{-1} \circ p: E \to Y$ is a covering map ([[§24 Covering Spaces#^prop-24-5|§24]]).
-> 2. The **transported computation** gives $\pi_1(Y) \cong G$ via $h_*$.
-> 3. The **diagram commutes** by functoriality: the lifting correspondence for $p'$ and the lifting correspondence for $p$ give the same group $G$, connected by $h_*$.
+> 2. The **transported computation** gives $\pi_1(Y) \cong G$ via $h_{\ast}$.
+> 3. The **diagram commutes** by functoriality: the lifting correspondence for $p'$ and the lifting correspondence for $p$ give the same group $G$, connected by $h_{\ast}$.
 >
 > ![[m590-23-1.svg]]
-> *Transporting a covering and its $\pi_1$ computation along a homeomorphism $h: Y \to X$. Left: the transported covering $p' = h^{-1} \circ p$ (red). Right: with $y_0 = h^{-1}(x_0)$, the lifting correspondence $\phi'$ of $p'$ (blue) factors as $\phi' = \phi \circ h_*$ through the lifting correspondence $\phi$ of $p$, because a lift of $g$ through $p'$ is exactly a lift of $h \circ g$ through $p$ (both land in the same fiber $p^{-1}(x_0) = p'^{-1}(y_0)$, identified with $G$).*
+> *Transporting a covering and its $\pi_1$ computation along a homeomorphism $h: Y \to X$. Left: the transported covering $p' = h^{-1} \circ p$ (red). Right: with $y_0 = h^{-1}(x_0)$, the lifting correspondence $\phi'$ of $p'$ (blue) factors as $\phi' = \phi \circ h_{\ast}$ through the lifting correspondence $\phi$ of $p$, because a lift of $g$ through $p'$ is exactly a lift of $h \circ g$ through $p$ (both land in the same fiber $p^{-1}(x_0) = p'^{-1}(y_0)$, identified with $G$).*
 >
 > This means: **compute $\pi_1$ once for one representative of a homeomorphism class, and it transfers for free to every homeomorphic space.** This is why we can freely switch between $S^1_{\mathbb{C}}$ and $S^1_{\mathbb{R}^2}$ ([[§9 Continuous Functions#^ex-9-5|§9]])—the computation via $p: \mathbb{R} \to S^1_{\mathbb{R}^2}$ automatically gives $\pi_1(S^1_{\mathbb{C}}) \cong \mathbb{Z}$ via the [[§24 Covering Spaces#^ex-24-4|transported covering]] $p'(x) = e^{2\pi i x}$.
 
@@ -305,7 +305,7 @@ tags: [topology, math590]
 >
 > So $[p_1 \circ \gamma] = [p_1 \circ \gamma']$. Similarly $[p_2 \circ \gamma] = [p_2 \circ \gamma']$. Hence $\Phi([\gamma]) = \Phi([\gamma'])$.
 >
-> **Step 2: $\Phi$ is a homomorphism.** We need $\Phi([\gamma] * [\gamma']) = \Phi([\gamma]) \cdot \Phi([\gamma'])$.
+> **Step 2: $\Phi$ is a homomorphism.** We need $\Phi([\gamma] \ast  [\gamma']) = \Phi([\gamma]) \cdot \Phi([\gamma'])$.
 >
 > The key observation: projection commutes with concatenation, i.e., $p_1 \circ (\gamma * \gamma') = (p_1 \circ \gamma) * (p_1 \circ \gamma')$. To see this, recall that $(\gamma * \gamma')(s) = \gamma(2s)$ for $s \in [0, 1/2]$ and $\gamma'(2s-1)$ for $s \in [1/2, 1]$. Applying $p_1$:
 >

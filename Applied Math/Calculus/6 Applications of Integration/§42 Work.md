@@ -147,7 +147,7 @@ When different parts of an object move different distances, slice the object ins
 >
 > **(b)** How much work is required to pull up only $20$ ft of the cable?
 >
-> **(a)** Put the origin at the top of the building with the $x$-axis pointing downward. Divide the cable into small parts of length $\Delta x$. If $x_i^*$ is a point in the $i$th part, every point of that part is lifted about the same distance $x_i^*$. The cable weighs $200/100 = 2$ lb/ft, so the $i$th part weighs $(2\ \mathrm{lb/ft})(\Delta x\ \mathrm{ft}) = 2\Delta x$ lb. The work done on it is
+> **(a)** Put the origin at the top of the building with the $x$-axis pointing downward. Divide the cable into small parts of length $\Delta x$. If $x_i^{\ast}$ is a point in the $i$th part, every point of that part is lifted about the same distance $x_i^{\ast}$. The cable weighs $200/100 = 2$ lb/ft, so the $i$th part weighs $(2\ \mathrm{lb/ft})(\Delta x\ \mathrm{ft}) = 2\Delta x$ lb. The work done on it is
 >
 > $$
 > \underbrace{(2\Delta x)}_{\text{force}} \cdot \underbrace{x_i^*}_{\text{distance}} = 2x_i^*\,\Delta x \ \text{ft-lb} .
@@ -182,7 +182,7 @@ When different parts of an object move different distances, slice the object ins
 > [!example] Example §42.4: Pumping Water out of a Conical Tank
 > A tank has the shape of an inverted circular cone with height $10$ m and base radius $4$ m. It is filled with water to a height of $8$ m. Find the work required to empty the tank by pumping all of the water to the top of the tank. (The density of water is $1000\ \mathrm{kg/m^3}$.)
 >
-> **Coordinates.** Measure depth $x$ from the top of the tank. The water extends from depth $2$ m to depth $10$ m. Divide $[2, 10]$ into $n$ subintervals with endpoints $x_0, \ldots, x_n$ and choose $x_i^*$ in the $i$th one. This divides the water into $n$ layers.
+> **Coordinates.** Measure depth $x$ from the top of the tank. The water extends from depth $2$ m to depth $10$ m. Divide $[2, 10]$ into $n$ subintervals with endpoints $x_0, \ldots, x_n$ and choose $x_i^{\ast}$ in the $i$th one. This divides the water into $n$ layers.
 >
 > **One layer.** The $i$th layer is approximately a circular cylinder of radius $r_i$ and height $\Delta x$. By similar triangles (the cone narrows from radius $4$ at depth $0$ to radius $0$ at depth $10$),
 >

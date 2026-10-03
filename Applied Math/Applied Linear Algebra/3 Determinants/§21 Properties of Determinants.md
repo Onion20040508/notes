@@ -117,7 +117,7 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 
 > [!remark] Remark: Method — Computing a Determinant by Row Reduction
 > 1. Row reduce $A$ to an echelon form $U$, using row replacements (no effect on $\det$) and interchanges (each changes the sign). Keep count of the interchanges, $r$.
-> 2. It is often convenient to **factor out a common multiple of one row** (Theorem §21.1(c)): $\begin{vmatrix} * & * & * \\ 5k & -2k & 3k \\ * & * & * \end{vmatrix} = k \begin{vmatrix} * & * & * \\ 5 & -2 & 3 \\ * & * & * \end{vmatrix}$, the starred rows unchanged.
+> 2. It is often convenient to **factor out a common multiple of one row** (Theorem §21.1(c)): $\begin{vmatrix} \ast  & \ast  & \ast  \\ 5k & -2k & 3k \\ \ast  & \ast  & \ast  \end{vmatrix} = k \begin{vmatrix} \ast  & \ast  & \ast  \\ 5 & -2 & 3 \\ \ast  & \ast  & \ast  \end{vmatrix}$, the starred rows unchanged.
 > 3. $\det A = (-1)^r \times (\text{factors pulled out}) \times (\text{product of the diagonal entries of } U)$.
 > 4. Row operations combine with cofactor expansion: once a column has a single nonzero entry, expand down it ([[§20 Introduction to Determinants#^thm-20-1|Theorem §20.1]]) and continue with a smaller matrix.
 > 5. If two rows (or columns) become equal, or a row becomes zero, stop: $\det A = 0$.

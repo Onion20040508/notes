@@ -155,7 +155,7 @@ tags: [linear-algebra]
 > [!proof]+ Proof
 > **Existence.** Let $v_1,\dots,v_n$ be the columns of $A$; Gram–Schmidt ([[Gram–Schmidt procedure|6.32]]) gives an orthonormal basis $e_1,\dots,e_n$ with $\Span(v_1,\dots,v_k)=\Span(e_1,\dots,e_k)$. Put $R_{j,k}=\langle v_k,e_j\rangle$ and let $Q$ have columns $e_1,\dots,e_n$. For $j>k$, $e_j\perp\Span(e_1,\dots,e_k)\ni v_k$, so $R$ is upper triangular. Column $k$ of $QR$ is $\sum_j\langle v_k,e_j\rangle e_j=v_k$ ([[§20 Orthonormal Bases#^ladr-6-30|6.30]](a)), so $QR=A$. From the Gram–Schmidt formulas $v_k=\|f_k\|e_k+(\text{combination of }e_1,\dots,e_{k-1})$, so $R_{k,k}=\|f_k\|>0$.
 >
-> **Uniqueness.** If $A=QR=\hat Q\hat R$, then $U=\hat Q^*Q=\hat RR^{-1}$ is unitary and upper triangular with positive diagonal. Its inverse $U^*$ is lower triangular, but the inverse of an invertible upper-triangular matrix is upper triangular; so $U^*$, hence $U$, is diagonal. A diagonal unitary matrix has $|u_{k,k}|=1$, and $u_{k,k}>0$, so $U=I$: $\hat Q=Q$ and $\hat R=R$.
+> **Uniqueness.** If $A=QR=\hat Q\hat R$, then $U=\hat Q^{\ast}Q=\hat RR^{-1}$ is unitary and upper triangular with positive diagonal. Its inverse $U^{\ast}$ is lower triangular, but the inverse of an invertible upper-triangular matrix is upper triangular; so $U^{\ast}$, hence $U$, is diagonal. A diagonal unitary matrix has $|u_{k,k}|=1$, and $u_{k,k}>0$, so $U=I$: $\hat Q=Q$ and $\hat R=R$.
 
 *Uses:* [[Gram–Schmidt procedure|6.32]], [[§20 Orthonormal Bases#^ladr-6-30|6.30]]
 
@@ -188,7 +188,7 @@ tags: [linear-algebra]
 *Uses:* [[§24 Positive Operators#^ladr-7-43|7.43]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]]
 
 > [!definition] Definition 7.62: Positive definite
-> $B\in\F^{n,n}$ is *positive definite* if $B^*=B$ and $\langle Bx,x\rangle>0$ for every nonzero $x\in\F^n$.
+> $B\in\F^{n,n}$ is *positive definite* if $B^{\ast}=B$ and $\langle Bx,x\rangle>0$ for every nonzero $x\in\F^n$.
 
 ^ladr-7-62
 

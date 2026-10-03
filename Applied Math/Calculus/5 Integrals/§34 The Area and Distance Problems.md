@@ -130,9 +130,9 @@ and the approximation improves as $n \to \infty$.
 ^def-34-1
 
 > [!definition] Definition §34.2: Sample Points; Lower and Upper Sums
-> Instead of an endpoint, the height of the $i$th rectangle may be the value of $f$ at **any** number $x_i^*$ in the $i$th subinterval $[x_{i-1}, x_i]$. The numbers $x_1^*, x_2^*, \ldots, x_n^*$ are called **sample points**.
+> Instead of an endpoint, the height of the $i$th rectangle may be the value of $f$ at **any** number $x_i^{\ast}$ in the $i$th subinterval $[x_{i-1}, x_i]$. The numbers $x_1^{\ast}, x_2^{\ast}, \ldots, x_n^{\ast}$ are called **sample points**.
 >
-> Choosing each $x_i^*$ so that $f(x_i^*)$ is the minimum value of $f$ on $[x_{i-1}, x_i]$ gives a **lower sum**; choosing the maximum value gives an **upper sum**. (These extreme values exist by the Extreme Value Theorem, [[§25 Maximum and Minimum Values#^thm-25-1|Theorem §25.1]], since $f$ is continuous on the closed subinterval.)
+> Choosing each $x_i^{\ast}$ so that $f(x_i^{\ast})$ is the minimum value of $f$ on $[x_{i-1}, x_i]$ gives a **lower sum**; choosing the maximum value gives an **upper sum**. (These extreme values exist by the Extreme Value Theorem, [[§25 Maximum and Minimum Values#^thm-25-1|Theorem §25.1]], since $f$ is continuous on the closed subinterval.)
 >
 > *Stewart: 5.1 (text and Note)*
 
@@ -189,7 +189,7 @@ In Examples §34.1 and §34.2 the function $x^2$ is increasing on $[0, 1]$, so t
 >
 > This limit is hard to evaluate by hand. (It is a geometric sum, and a computer algebra system finds it. In [[§36 The Fundamental Theorem of Calculus#^thm-36-2|Theorem §36.2]] the Fundamental Theorem gives $A = 1 - e^{-2} \approx 0.8647$ at once.)
 >
-> **(b)** With $n = 4$, $\Delta x = 0.5$, the subintervals are $[0, 0.5], [0.5, 1], [1, 1.5], [1.5, 2]$, with midpoints $x_1^* = 0.25$, $x_2^* = 0.75$, $x_3^* = 1.25$, $x_4^* = 1.75$. The **midpoint sum** is
+> **(b)** With $n = 4$, $\Delta x = 0.5$, the subintervals are $[0, 0.5], [0.5, 1], [1, 1.5], [1.5, 2]$, with midpoints $x_1^{\ast} = 0.25$, $x_2^{\ast} = 0.75$, $x_3^{\ast} = 1.25$, $x_4^{\ast} = 1.75$. The **midpoint sum** is
 >
 > $$
 > M_4 = \sum_{i=1}^{4} f(x_i^*)\,\Delta x = 0.5 \big( e^{-0.25} + e^{-0.75} + e^{-1.25} + e^{-1.75} \big) \approx 0.8557 .

@@ -567,29 +567,29 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 >
 > **Step 2: $\phi$ is a bijection.** This follows from properties of $\mathbb{R}$ (the covering space), not $S^1$:
 > - **Surjective** (every integer is hit): $\mathbb{R}$ is path-connected, so for any $n \in \mathbb{Z}$, there is a path in $\mathbb{R}$ from $0$ to $n$. Projecting via $p$ gives a loop in $S^1$ with $\phi([f]) = n$.
-> - **Injective** (different classes hit different integers): $\mathbb{R}$ is simply connected (convex $\Rightarrow$ every loop contracts via [[§22 Homotopy of Paths#^thm-22-1|straight-line homotopy]]). If $\phi([f]) = \phi([g])$, then $\tilde{f}(1) = \tilde{g}(1)$, so $\tilde{f} * \bar{\tilde{g}}$ is a loop in $\mathbb{R}$ which must contract, and projecting the homotopy gives $f \simeq_p g$.
+> - **Injective** (different classes hit different integers): $\mathbb{R}$ is simply connected (convex $\Rightarrow$ every loop contracts via [[§22 Homotopy of Paths#^thm-22-1|straight-line homotopy]]). If $\phi([f]) = \phi([g])$, then $\tilde{f}(1) = \tilde{g}(1)$, so $\tilde{f} \ast  \bar{\tilde{g}}$ is a loop in $\mathbb{R}$ which must contract, and projecting the homotopy gives $f \simeq_p g$.
 >
 > Alternatively, this entire step is a direct application of the [[Properties of the Lifting Correspondence|Lifting Correspondence Properties theorem]]: $\mathbb{R}$ is path-connected and simply connected, so $\phi$ is bijective. The argument above is just that theorem applied to $p: \mathbb{R} \to S^1$.
 >
 > At this point, $\phi$ is a bijection of sets: $\pi_1(S^1, b_0)$ and $\mathbb{Z}$ have the same cardinality. But a bijection of sets is not an isomorphism of groups—we need $\phi$ to respect the operations.
 >
-> **Step 3: $\phi$ is a group homomorphism.** We must show $\phi([f] * [g]) = \phi([f]) + \phi([g])$, i.e., the lift of $f * g$ starting at $0$ ends at $\tilde{f}(1) + \tilde{g}(1)$. This is the only step that uses the specific geometry of $p: \mathbb{R} \to S^1$ (Steps 1–2 used only the general covering space theory).
+> **Step 3: $\phi$ is a group homomorphism.** We must show $\phi([f] \ast  [g]) = \phi([f]) + \phi([g])$, i.e., the lift of $f \ast  g$ starting at $0$ ends at $\tilde{f}(1) + \tilde{g}(1)$. This is the only step that uses the specific geometry of $p: \mathbb{R} \to S^1$ (Steps 1–2 used only the general covering space theory).
 >
 > Let $\tilde{f}$ be the lift of $f$ starting at $0$, with $\tilde{f}(1) = m \in \mathbb{Z}$. Let $\tilde{g}$ be the lift of $g$ starting at $0$, with $\tilde{g}(1) = n \in \mathbb{Z}$.
 >
-> The key question: the lift of $f * g$ follows $\tilde{f}$ on the first half, arriving at $m$. Then it must lift $g$ *starting from $m$*, not from $0$. The lift of $g$ starting at $m$ is $\tilde{g}(s) + m$—a translated copy. This works because $p$ has period $1$: $p(x + m) = p(x)$ for any integer $m$.
+> The key question: the lift of $f \ast  g$ follows $\tilde{f}$ on the first half, arriving at $m$. Then it must lift $g$ *starting from $m$*, not from $0$. The lift of $g$ starting at $m$ is $\tilde{g}(s) + m$—a translated copy. This works because $p$ has period $1$: $p(x + m) = p(x)$ for any integer $m$.
 >
 > Formally, define $\widetilde{f * g}: I \to \mathbb{R}$ by:
 >
 > $$\widetilde{f * g}(s) = \begin{cases} \tilde{f}(2s) & s \in [0, 1/2] \\ \tilde{g}(2s - 1) + m & s \in [1/2, 1]. \end{cases}$$
 >
 > **This is a valid lift:**
-> - **Starts at $0$:** $\widetilde{f * g}(0) = \tilde{f}(0) = 0$. ✓
+> - **Starts at $0$:** $\widetilde{f \ast  g}(0) = \tilde{f}(0) = 0$. ✓
 > - **Well-defined at $s = 1/2$:** $\tilde{f}(1) = m$ and $\tilde{g}(0) + m = 0 + m = m$. ✓
 > - **Continuous:** By the [[Pasting Lemma|pasting lemma]]. ✓
-> - **Projects to $f * g$:** On $[0, 1/2]$: $p(\tilde{f}(2s)) = f(2s) = (f * g)(s)$. On $[1/2, 1]$: $p(\tilde{g}(2s-1) + m) = p(\tilde{g}(2s-1))$ (since $p(x + m) = p(x)$). So $p(\tilde{g}(2s-1) + m) = g(2s-1) = (f * g)(s)$. ✓
+> - **Projects to $f \ast  g$:** On $[0, 1/2]$: $p(\tilde{f}(2s)) = f(2s) = (f \ast  g)(s)$. On $[1/2, 1]$: $p(\tilde{g}(2s-1) + m) = p(\tilde{g}(2s-1))$ (since $p(x + m) = p(x)$). So $p(\tilde{g}(2s-1) + m) = g(2s-1) = (f \ast  g)(s)$. ✓
 >
-> **Endpoint:** $\widetilde{f * g}(1) = \tilde{g}(1) + m = n + m$.
+> **Endpoint:** $\widetilde{f \ast  g}(1) = \tilde{g}(1) + m = n + m$.
 >
 > By [[Path Lifting Lemma|uniqueness of path lifting]], this is the unique lift of $f * g$ starting at $0$. Therefore:
 >
@@ -602,7 +602,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 *Uses:* [[§24 Covering Spaces#^thm-24-2|§24.2]], [[§24 Covering Spaces#^def-24-7|Def. §24.7]], [[§23 The Fundamental Group#^ex-23-1|Ex. §23.1]], [[Properties of the Lifting Correspondence|§24.9]], [[Pasting Lemma|§9.5]], [[Path Lifting Lemma|§24.6]], [[§22 Homotopy of Paths#^thm-22-1|§22.1]]
 
 ![[m590-24-7.svg]]
-*Step 3 in one picture. The lift of $f * g$ starting at $0$ follows $\tilde f(2s)$ up to $m$ (blue). The lift $\tilde g$ starts at $0$ (dashed), so it cannot be used as it is. Translated up by $m$ it starts where $\tilde f$ stopped (red), and it still lies over $g$ because $p(x + m) = p(x)$. The endpoint is $m + n$, which is why $\phi([f] * [g]) = \phi([f]) + \phi([g])$.*
+*Step 3 in one picture. The lift of $f \ast  g$ starting at $0$ follows $\tilde f(2s)$ up to $m$ (blue). The lift $\tilde g$ starts at $0$ (dashed), so it cannot be used as it is. Translated up by $m$ it starts where $\tilde f$ stopped (red), and it still lies over $g$ because $p(x + m) = p(x)$. The endpoint is $m + n$, which is why $\phi([f] \ast  [g]) = \phi([f]) + \phi([g])$.*
 
 > [!remark]- Connections
 > - Consequences: [[Fundamental Theorem of Algebra (topological proof)|Fundamental Theorem of Algebra]], [[No-Retraction Theorem|No-Retraction Theorem]], Brouwer Fixed Point Theorem for $B^2$ ([[Brouwer Fixed Point Theorem|§26.7]]).
@@ -674,7 +674,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 >
 > Check: for $x \in S^1 = \partial B^2$, we have $k(x) = k(\pi(x, 0)) = H(x, 0) = h(x)$, so $k|_{S^1} = h$.
 >
-> **(2) $\Rightarrow$ (3):** If $h = k \circ j$ where $j: S^1 \hookrightarrow B^2$ is the inclusion, then $h_* = k_* \circ j_*$ by [[Functoriality of π₁|functoriality]]. Since $B^2$ is [[§23 The Fundamental Group#^ex-23-2|convex]], $\pi_1(B^2, b_0) = \{e\}$, so $j_*$ maps everything to the identity. Thus $h_* = k_* \circ j_*$ is trivial.
+> **(2) $\Rightarrow$ (3):** If $h = k \circ j$ where $j: S^1 \hookrightarrow B^2$ is the inclusion, then $h_{\ast} = k_{\ast} \circ j_{\ast}$ by [[Functoriality of π₁|functoriality]]. Since $B^2$ is [[§23 The Fundamental Group#^ex-23-2|convex]], $\pi_1(B^2, b_0) = \{e\}$, so $j_{\ast}$ maps everything to the identity. Thus $h_{\ast} = k_{\ast} \circ j_{\ast}$ is trivial.
 >
 > **(3) $\Rightarrow$ (1):** Let $p: \mathbb{R} \to S^1$ be the [[§24 Covering Spaces#^thm-24-2|standard covering map]]. Let $p_0 = p|_{[0,1]}: I \to S^1$. Then $[p_0]$ is a [[§24 Covering Spaces#^thm-24-11|generator]] of $\pi_1(S^1, b_0)$, since $p_0$ is a loop at $b_0 = (1,0)$ whose lift begins at $0$ and ends at $1$.
 >

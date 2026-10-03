@@ -68,7 +68,7 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 > - Rigorous treatment of the minimization: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]] with $U = \operatorname{Col} X$.
 
 > [!definition] Definition §45.3: Mean-Deviation Form
-> Let $\bar{x} = \frac1n(x_1 + \cdots + x_n)$ be the average of the $x$-values. The new variable $x^* = x - \bar{x}$ has data $x_j^* = x_j - \bar{x}$, which are said to be in **mean-deviation form**.
+> Let $\bar{x} = \frac1n(x_1 + \cdots + x_n)$ be the average of the $x$-values. The new variable $x^{\ast} = x - \bar{x}$ has data $x_j^{\ast} = x_j - \bar{x}$, which are said to be in **mean-deviation form**.
 >
 > *Lay: 6.6 (text)*
 
@@ -120,7 +120,7 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 >
 > The least-squares line is $y = \frac27 + \frac{5}{14}x$. Its predicted values at $x = 2, 5, 7, 8$ are $1, \frac{29}{14}, \frac{39}{14}, \frac{44}{14}$, so the residuals are $0, -\frac{1}{14}, \frac{3}{14}, -\frac{2}{14}$ (they sum to $0$), and the minimal sum of squared residuals is $\frac{0 + 1 + 9 + 4}{196} = \frac{1}{14}$.
 >
-> **The same line in mean-deviation form.** Here $\bar{x} = \frac{22}{4} = 5.5$, so $\mathbf{x}^* = (-3.5, -0.5, 1.5, 2.5)$, and $\bar{y} = \frac94$. By Proposition §45.2,
+> **The same line in mean-deviation form.** Here $\bar{x} = \frac{22}{4} = 5.5$, so $\mathbf{x}^{\ast} = (-3.5, -0.5, 1.5, 2.5)$, and $\bar{y} = \frac94$. By Proposition §45.2,
 >
 > $$
 > \beta_1^* = \frac{-3.5 - 1 + 4.5 + 7.5}{12.25 + 0.25 + 2.25 + 6.25} = \frac{7.5}{21} = \frac{5}{14}, \qquad

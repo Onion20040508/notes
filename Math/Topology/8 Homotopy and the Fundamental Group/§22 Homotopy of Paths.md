@@ -156,7 +156,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 ## Path Concatenation
 
 > [!definition] Definition §22.6: Product of Paths
-> Let $f$ be a path from $x_0$ to $x_1$ and $g$ a path from $x_1$ to $x_2$. The **product** $f * g: I \to X$ is:
+> Let $f$ be a path from $x_0$ to $x_1$ and $g$ a path from $x_1$ to $x_2$. The **product** $f \ast  g: I \to X$ is:
 >
 > $$(f * g)(s) = \begin{cases} f(2s) & s \in [0, 1/2] \\ g(2s-1) & s \in [1/2, 1]. \end{cases}$$
 
@@ -168,7 +168,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 ^rem-22-6
 
 ![[m590-22-3.svg]]
-*The product $f * g$: the first half of $I$ runs $f$ at double speed (blue), the second half runs $g$ at double speed (red). The pieces meet at $s = \tfrac12$, where $f(1) = x_1 = g(0)$.*
+*The product $f \ast  g$: the first half of $I$ runs $f$ at double speed (blue), the second half runs $g$ at double speed (red). The pieces meet at $s = \tfrac12$, where $f(1) = x_1 = g(0)$.*
 
 ## Concatenation of Homotopy Classes
 
@@ -246,10 +246,10 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 The following theorem shows that the product of path homotopy classes satisfies the group axioms. This is the foundation for the [[§23 The Fundamental Group#^def-23-2|fundamental group]].
 
 > [!theorem] Theorem §22.6: Properties of Path Concatenation
-> Let $f$, $g$, $h$ be paths in $X$ with compatible endpoints (so $f * g$ and $g * h$ are defined). Let $e_{x}$ denote the constant path at $x$ (i.e., $e_x(s) = x$ for all $s$), and let $\bar{f}(s) = f(1-s)$ (the **reverse path**). Then:
-> 1. **Associativity:** $[f] * ([g] * [h]) = ([f] * [g]) * [h]$.
-> 2. **Identity:** $[f] * [e_{x_1}] = [f] = [e_{x_0}] * [f]$.
-> 3. **Inverse:** $[f] * [\bar{f}] = [e_{x_0}]$ and $[\bar{f}] * [f] = [e_{x_1}]$.
+> Let $f$, $g$, $h$ be paths in $X$ with compatible endpoints (so $f \ast  g$ and $g \ast  h$ are defined). Let $e_{x}$ denote the constant path at $x$ (i.e., $e_x(s) = x$ for all $s$), and let $\bar{f}(s) = f(1-s)$ (the **reverse path**). Then:
+> 1. **Associativity:** $[f] \ast  ([g] \ast  [h]) = ([f] \ast  [g]) \ast  [h]$.
+> 2. **Identity:** $[f] \ast  [e_{x_1}] = [f] = [e_{x_0}] \ast  [f]$.
+> 3. **Inverse:** $[f] \ast  [\bar{f}] = [e_{x_0}]$ and $[\bar{f}] \ast  [f] = [e_{x_1}]$.
 
 ^thm-22-6
 
@@ -288,7 +288,7 @@ The following theorem shows that the product of path homotopy classes satisfies 
 ^rem-22-9
 
 ![[m590-22-4.svg]]
-*The associativity homotopy drawn on its domain $I \times I$. The slice at height $t$ is cut at $s = (t+1)/4$ and $s = (t+2)/4$: it runs $f$ on the left piece, $g$ on the middle (red) and $h$ on the right. The bottom slice is the schedule of $(f*g)*h$, the top slice that of $f*(g*h)$. The red band has constant width $\tfrac14$, so only $f$ and $h$ trade time; the left edge stays at $x_0$ and the right edge at $x_3$.*
+*The associativity homotopy drawn on its domain $I \times I$. The slice at height $t$ is cut at $s = (t+1)/4$ and $s = (t+2)/4$: it runs $f$ on the left piece, $g$ on the middle (red) and $h$ on the right. The bottom slice is the schedule of $(f\ast g)\ast h$, the top slice that of $f\ast (g\ast h)$. The red band has constant width $\tfrac14$, so only $f$ and $h$ trade time; the left edge stays at $x_0$ and the right edge at $x_3$.*
 
 > [!proof]+ Proof of (2a): Right Identity $[f] * [e_{x_1}] = [f]$
 > Define $H: I \times I \to X$ by:
@@ -350,7 +350,7 @@ The following theorem shows that the product of path homotopy classes satisfies 
 *Uses:* [[Pasting Lemma|§9.5]]
 
 ![[m590-22-5.svg]]
-*The inverse homotopy $f * \bar f \simeq_p e_{x_0}$. On the square, the slice at height $t$ runs $f(2s)$ out to $f(1-t)$, pauses there across the red triangle, then comes back along $f(2-2s)$. In $X$ (right) that slice traces only the red initial arc of $f$, out to $f(1-t)$ and back. As $t \to 1$ the arc shrinks to $x_0$ and the slice becomes $e_{x_0}$.*
+*The inverse homotopy $f \ast  \bar f \simeq_p e_{x_0}$. On the square, the slice at height $t$ runs $f(2s)$ out to $f(1-t)$, pauses there across the red triangle, then comes back along $f(2-2s)$. In $X$ (right) that slice traces only the red initial arc of $f$, out to $f(1-t)$ and back. As $t \to 1$ the arc shrinks to $x_0$ and the slice becomes $e_{x_0}$.*
 
 > [!proof]+ Proof of (3): Inverse — $\bar{f} * f \simeq_p e_{x_1}$
 > Define $H: I \times I \to X$ by:
@@ -378,12 +378,12 @@ The following theorem shows that the product of path homotopy classes satisfies 
 *Uses:* [[Pasting Lemma|§9.5]]
 
 > [!remark] Remark: What These Properties Mean
-> These three properties are exactly the group axioms for the operation $*$ on homotopy classes. For general paths (not loops), we don't quite have a group (the product $[f] * [g]$ is only defined when the terminal point of $f$ equals the initial point of $g$—this is a *groupoid*). But if we restrict to **loops at a fixed basepoint $x_0$** (paths with $f(0) = f(1) = x_0$), then all products are defined, and we get a genuine group: the **fundamental group** $\pi_1(X, x_0)$ ([[§23 The Fundamental Group#^def-23-2|Definition §23.2]]).
+> These three properties are exactly the group axioms for the operation $\ast$ on homotopy classes. For general paths (not loops), we don't quite have a group (the product $[f] \ast  [g]$ is only defined when the terminal point of $f$ equals the initial point of $g$—this is a *groupoid*). But if we restrict to **loops at a fixed basepoint $x_0$** (paths with $f(0) = f(1) = x_0$), then all products are defined, and we get a genuine group: the **fundamental group** $\pi_1(X, x_0)$ ([[§23 The Fundamental Group#^def-23-2|Definition §23.2]]).
 
 ^rem-22-10
 
 > [!remark] Remark: Classes vs. Paths: Two Levels of Reasoning
-> The elements of $\pi_1(X, x_0)$ are **homotopy classes** $[f]$, not paths $f$ themselves. This distinction is essential: the concatenation $f * \bar{f}$ is literally not the constant path $e_{x_0}$ (it goes out and comes back), but the *class* $[f * \bar{f}]$ equals $[e_{x_0}]$ because we proved a homotopy between them.
+> The elements of $\pi_1(X, x_0)$ are **homotopy classes** $[f]$, not paths $f$ themselves. This distinction is essential: the concatenation $f \ast  \bar{f}$ is literally not the constant path $e_{x_0}$ (it goes out and comes back), but the *class* $[f \ast  \bar{f}]$ equals $[e_{x_0}]$ because we proved a homotopy between them.
 >
 > However, **proofs always happen at the path level**. To show $[f] = [g]$ in $\pi_1$, you must:
 > 1. Pick representative paths $f$ and $g$.
@@ -393,6 +393,6 @@ The following theorem shows that the product of path homotopy classes satisfies 
 >
 > This is analogous to modular arithmetic: you state “$3 \equiv 7 \pmod{4}$” at the class level but verify it by computing $7 - 3 = 4$ at the representative level.
 >
-> **Well-definedness is the recurring concern.** Any time you define something on classes using representatives—like $[f] * [g] = [f * g]$ or the [[§23 The Fundamental Group#^def-23-4|induced homomorphism]] $f_*([g]) = [f \circ g]$—you must check that the result is independent of which representative you chose. This is why [[§22 Homotopy of Paths#^prop-22-4|Proposition §22.4]] (if $f \simeq_p f'$ and $g \simeq_p g'$, then $f * g \simeq_p f' * g'$) was needed before the group properties could even be stated.
+> **Well-definedness is the recurring concern.** Any time you define something on classes using representatives—like $[f] \ast  [g] = [f \ast  g]$ or the [[§23 The Fundamental Group#^def-23-4|induced homomorphism]] $f_{\ast}([g]) = [f \circ g]$—you must check that the result is independent of which representative you chose. This is why [[§22 Homotopy of Paths#^prop-22-4|Proposition §22.4]] (if $f \simeq_p f'$ and $g \simeq_p g'$, then $f \ast  g \simeq_p f' \ast  g'$) was needed before the group properties could even be stated.
 
 ^rem-22-11

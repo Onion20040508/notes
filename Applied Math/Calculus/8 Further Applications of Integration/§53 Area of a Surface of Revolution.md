@@ -125,7 +125,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 ^rem-53-2
 
 ![[m233-53-2.svg]]
-*Rotating the curve $y = f(x)$ about the $x$-axis. The segment $P_{i-1} P_i$ of the inscribed polygon sweeps out a band (red) with radii $y_{i-1}$ and $y_i$ and slant height $|P_{i-1} P_i| = \sqrt{1 + [f'(x_i^*)]^2}\,\Delta x$. By Theorem §53.1 its area is $2\pi \cdot \frac12(y_{i-1} + y_i) \cdot |P_{i-1} P_i|$, and adding the bands gives a Riemann sum for $\int_a^b 2\pi f(x) \sqrt{1 + [f'(x)]^2}\,dx$.*
+*Rotating the curve $y = f(x)$ about the $x$-axis. The segment $P_{i-1} P_i$ of the inscribed polygon sweeps out a band (red) with radii $y_{i-1}$ and $y_i$ and slant height $|P_{i-1} P_i| = \sqrt{1 + [f'(x_i^{\ast})]^2}\,\Delta x$. By Theorem §53.1 its area is $2\pi \cdot \frac12(y_{i-1} + y_i) \cdot |P_{i-1} P_i|$, and adding the bands gives a Riemann sum for $\int_a^b 2\pi f(x) \sqrt{1 + [f'(x)]^2}\,dx$.*
 
 > [!remark]- Connections
 > - The surface is the parametrized surface $\mathbf{X}(x, \theta) = (x, f(x)\cos\theta, f(x)\sin\theta)$, $a \le x \le b$, $0 \le \theta \le 2\pi$. Here $\mathbf{X}_x = (1, f'\cos\theta, f'\sin\theta)$ and $\mathbf{X}_\theta = (0, -f\sin\theta, f\cos\theta)$, so $E = 1 + f'^2$, $F = 0$, $\tilde G = f^2$. The area element of [[§18 Surface Integrals#^thm-18-1|452 Thm. §18.1]] is $\sqrt{E\tilde G - F^2}\,dx\,d\theta = f\sqrt{1 + f'^2}\,dx\,d\theta$, and integrating over $\theta$ gives the integrand $2\pi f\sqrt{1 + f'^2}$ of Definition §53.2. In Calculus this general formula comes in [[§112 Parametric Surfaces and Their Areas#^def-112-4|Definition §112.4]], and the surface of revolution is worked out there in [[§112 Parametric Surfaces and Their Areas#^thm-112-3|Theorem §112.3]].

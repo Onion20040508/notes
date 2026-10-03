@@ -49,9 +49,9 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > Let $X = \mathbb{R}^{n+1} \setminus \{0\}$ and $b_0 = (1, 0, \ldots, 0)$. Define $r: X \to S^n$ by $r(x) = x / \|x\|$.
 >
-> **$j_*$ is injective:** $r \circ j: S^n \to S^n$ is the identity map, so $(r \circ j)_* = r_* \circ j_* = \operatorname{id}$ on $\pi_1(S^n, b_0)$. If $j_*([f]) = [e]$, then $[f] = r_*(j_*([f])) = r_*([e]) = [e]$. So $j_*$ is injective.
+> **$j_{\ast}$ is injective:** $r \circ j: S^n \to S^n$ is the identity map, so $(r \circ j)_{\ast} = r_{\ast} \circ j_{\ast} = \operatorname{id}$ on $\pi_1(S^n, b_0)$. If $j_{\ast}([f]) = [e]$, then $[f] = r_{\ast}(j_{\ast}([f])) = r_{\ast}([e]) = [e]$. So $j_{\ast}$ is injective.
 >
-> **$j_*$ is surjective:** We show $j \circ r: X \to X$ is homotopic to $\operatorname{id}_X$ with $b_0$ fixed. Define:
+> **$j_{\ast}$ is surjective:** We show $j \circ r: X \to X$ is homotopic to $\operatorname{id}_X$ with $b_0$ fixed. Define:
 >
 > $$
 > H: X \times I \to X, \qquad H(x, t) = (1-t)x + t\frac{x}{\|x\|}.
@@ -96,18 +96,18 @@ tags: [topology, math590]
 > r_* \circ j_* = \operatorname{id}_{\pi_1(A)}.
 > $$
 >
-> **(1)** If $j_*([f]) = j_*([g])$, apply $r_*$ to both sides: $[f] = (r_* \circ j_*)([f]) = (r_* \circ j_*)([g]) = [g]$.
+> **(1)** If $j_{\ast}([f]) = j_{\ast}([g])$, apply $r_{\ast}$ to both sides: $[f] = (r_{\ast} \circ j_{\ast})([f]) = (r_{\ast} \circ j_{\ast})([g]) = [g]$.
 >
-> **(2)** For any $[\gamma] \in \pi_1(A)$, the element $j_*([\gamma]) \in \pi_1(X)$ maps to it: $r_*(j_*([\gamma])) = [\gamma]$.
+> **(2)** For any $[\gamma] \in \pi_1(A)$, the element $j_{\ast}([\gamma]) \in \pi_1(X)$ maps to it: $r_{\ast}(j_{\ast}([\gamma])) = [\gamma]$.
 
 ^pf-26-3
 
 *Uses:* [[Functoriality of π₁|§23.5]]
 
 > [!remark] Remark
-> But that is *all* you get. $\pi_1(A)$ injects into $\pi_1(X)$, and $r_*$ surjects onto $\pi_1(A)$, but $\pi_1(X)$ can be strictly larger than $\pi_1(A)$.
+> But that is *all* you get. $\pi_1(A)$ injects into $\pi_1(X)$, and $r_{\ast}$ surjects onto $\pi_1(A)$, but $\pi_1(X)$ can be strictly larger than $\pi_1(A)$.
 >
-> **Example:** $X = S^1 \vee S^1$, $A$ = one of the two circles. The map $r$ that collapses the other circle to the [[§28 Fundamental Group of Some Surfaces#^def-28-3|wedge point]] is a retraction. Here $\pi_1(A) \cong \mathbb{Z}$ and $\pi_1(X) \cong F_2$. The inclusion $j_*$ embeds $\mathbb{Z}$ as one free factor of $F_2$, and $r_*$ projects $F_2$ onto that factor. But $F_2 \not\cong \mathbb{Z}$ — the retraction does not force the fundamental groups to be isomorphic.
+> **Example:** $X = S^1 \vee S^1$, $A$ = one of the two circles. The map $r$ that collapses the other circle to the [[§28 Fundamental Group of Some Surfaces#^def-28-3|wedge point]] is a retraction. Here $\pi_1(A) \cong \mathbb{Z}$ and $\pi_1(X) \cong F_2$. The inclusion $j_{\ast}$ embeds $\mathbb{Z}$ as one free factor of $F_2$, and $r_{\ast}$ projects $F_2$ onto that factor. But $F_2 \not\cong \mathbb{Z}$ — the retraction does not force the fundamental groups to be isomorphic.
 >
 > **For a full isomorphism $\pi_1(X) \cong \pi_1(A)$, we need the stronger notion of a deformation retract** (see [[§26 Deformation Retracts and Homotopy Type#^def-26-3|below]]).
 
@@ -116,9 +116,9 @@ tags: [topology, math590]
 > [!theorem] Corollary §26.4: What Properties Transfer via Retraction
 > Let $A$ be a retract of $X$. Then $\pi_1(A)$ is simultaneously a subgroup of $\pi_1(X)$ (via $j_*$) and a quotient of $\pi_1(X)$ (via $r_*$).
 >
-> **Up** (from $A$ to $X$, via $j_*$ injective): any property [[§21 Algebra Prerequisites꞉ Groups#^prop-21-9|inherited by subgroups]] transfers upward. If $\pi_1(A)$ is non-abelian, nontrivial, infinite, or has torsion, so does $\pi_1(X)$.
+> **Up** (from $A$ to $X$, via $j_{\ast}$ injective): any property [[§21 Algebra Prerequisites꞉ Groups#^prop-21-9|inherited by subgroups]] transfers upward. If $\pi_1(A)$ is non-abelian, nontrivial, infinite, or has torsion, so does $\pi_1(X)$.
 >
-> **Down** (from $X$ to $A$, via $r_*$ surjective): any property [[§21 Algebra Prerequisites꞉ Groups#^prop-21-10|inherited by quotients]] transfers downward. If $\pi_1(X)$ is abelian or finitely generated, so is $\pi_1(A)$.
+> **Down** (from $X$ to $A$, via $r_{\ast}$ surjective): any property [[§21 Algebra Prerequisites꞉ Groups#^prop-21-10|inherited by quotients]] transfers downward. If $\pi_1(X)$ is abelian or finitely generated, so is $\pi_1(A)$.
 
 ^cor-26-4
 
@@ -186,8 +186,8 @@ tags: [topology, math590]
 > $$
 >
 > (Here $j_*([f]) = [j \circ f]$ and $r_*([g]) = [r \circ g]$—compose loops with the maps.) By the functorial properties ([[Functoriality of π₁|§23]]):
-> - **Composition rule:** $(r \circ j)_* = r_* \circ j_*$.
-> - **Identity rule:** $(\operatorname{id}_{S^1})_* = \operatorname{id}$ on $\pi_1(S^1, b_0)$.
+> - **Composition rule:** $(r \circ j)_{\ast} = r_{\ast} \circ j_{\ast}$.
+> - **Identity rule:** $(\operatorname{id}_{S^1})_{\ast} = \operatorname{id}$ on $\pi_1(S^1, b_0)$.
 >
 > Since $r \circ j = \operatorname{id}_{S^1}$, we combine:
 >
@@ -195,7 +195,7 @@ tags: [topology, math590]
 > r_* \circ j_* = (r \circ j)_* = (\operatorname{id}_{S^1})_* = \operatorname{id}.
 > $$
 >
-> **Step 3: Conclude $j_*$ is injective.** If $j_*([f]) = j_*([g])$, apply $r_*$ to both sides:
+> **Step 3: Conclude $j_{\ast}$ is injective.** If $j_{\ast}([f]) = j_{\ast}([g])$, apply $r_{\ast}$ to both sides:
 >
 > $$
 > [f] = (r_* \circ j_*)([f]) = (r_* \circ j_*)([g]) = [g].
@@ -203,14 +203,14 @@ tags: [topology, math590]
 >
 > So $j_*$ is injective.
 >
-> **Step 4: Contradiction.** We have computed $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|Theorem §24.10]]) and $\pi_1(B^2) = 0$ ([[§26 Deformation Retracts and Homotopy Type#^prop-26-5|the proposition above]]: $B^2$ is convex, so every loop contracts via the straight-line homotopy). The homomorphism $j_*: \mathbb{Z} \to 0$ must send every element to $0$ (the only element of the trivial group). In particular, $j_*(1) = j_*(2) = 0$, so $j_*$ is not injective. This contradicts Step 3.
+> **Step 4: Contradiction.** We have computed $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|Theorem §24.10]]) and $\pi_1(B^2) = 0$ ([[§26 Deformation Retracts and Homotopy Type#^prop-26-5|the proposition above]]: $B^2$ is convex, so every loop contracts via the straight-line homotopy). The homomorphism $j_{\ast}: \mathbb{Z} \to 0$ must send every element to $0$ (the only element of the trivial group). In particular, $j_{\ast}(1) = j_{\ast}(2) = 0$, so $j_{\ast}$ is not injective. This contradicts Step 3.
 
 ^pf-26-6
 
 *Uses:* [[§23 The Fundamental Group#^def-23-4|Def. §23.4]], [[Functoriality of π₁|§23.5]], [[Fundamental Group of the Circle|§24.10]], [[§26 Deformation Retracts and Homotopy Type#^prop-26-5|§26.5]]
 
 ![[m590-26-9.svg]]
-*The blue boundary loop $f$ generates $\pi_1(S^1, b_0) \cong \mathbb{Z}$, but inside the convex disk the straight-line homotopy $(1-t)f(s) + t\,b_0$ shrinks it (lighter circles) to $b_0$. A retraction $r$ fixes $f$, so it would carry this shrinking into $S^1$ and contract a generator of $\mathbb{Z}$. That is the algebraic contradiction “$j_*: \mathbb{Z} \to 0$ is injective”, drawn as a picture.*
+*The blue boundary loop $f$ generates $\pi_1(S^1, b_0) \cong \mathbb{Z}$, but inside the convex disk the straight-line homotopy $(1-t)f(s) + t\,b_0$ shrinks it (lighter circles) to $b_0$. A retraction $r$ fixes $f$, so it would carry this shrinking into $S^1$ and contract a generator of $\mathbb{Z}$. That is the algebraic contradiction “$j_{\ast}: \mathbb{Z} \to 0$ is injective”, drawn as a picture.*
 
 > [!remark] Remark: Why This Matters
 > This is the first real application of $\pi_1$: a purely topological fact (no retraction exists) proved using algebra ($\mathbb{Z} \not\cong 0$). The proof pattern — assume a map exists, apply $\pi_1$, get a contradiction from group theory — is the template for all obstruction arguments. The [[Brouwer Fixed Point Theorem|Brouwer fixed point theorem below]] is a direct consequence.
@@ -424,9 +424,9 @@ A [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]] gives $j
 >
 > Let $r: X \to A$ be the retraction ($r(x) = H(x,1)$) and $j: A \hookrightarrow X$ the inclusion.
 >
-> **$j_*$ is injective:** $r \circ j = \operatorname{id}_A$, so $r_* \circ j_* = \operatorname{id}$ on $\pi_1(A, x_0)$.
+> **$j_{\ast}$ is injective:** $r \circ j = \operatorname{id}_A$, so $r_{\ast} \circ j_{\ast} = \operatorname{id}$ on $\pi_1(A, x_0)$.
 >
-> **$j_*$ is surjective:** $H$ is a homotopy from $\operatorname{id}_X$ to $j \circ r$ that fixes $x_0$ (since $x_0 \in A$ and $H(a, t) = a$ for all $a \in A$). By [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|the lemma]] (homotopic maps with fixed basepoint induce the same homomorphism), $(j \circ r)_* = (\operatorname{id}_X)_* = \operatorname{id}$ on $\pi_1(X, x_0)$. So $j_* \circ r_* = \operatorname{id}$, giving surjectivity of $j_*$.
+> **$j_{\ast}$ is surjective:** $H$ is a homotopy from $\operatorname{id}_X$ to $j \circ r$ that fixes $x_0$ (since $x_0 \in A$ and $H(a, t) = a$ for all $a \in A$). By [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|the lemma]] (homotopic maps with fixed basepoint induce the same homomorphism), $(j \circ r)_{\ast} = (\operatorname{id}_X)_{\ast} = \operatorname{id}$ on $\pi_1(X, x_0)$. So $j_{\ast} \circ r_{\ast} = \operatorname{id}$, giving surjectivity of $j_{\ast}$.
 
 ^pf-26-11
 
@@ -449,7 +449,7 @@ A [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]] gives $j
 > | $r_*$ | surjective | isomorphism |
 > | $\pi_1(X)$ vs $\pi_1(A)$ | $\pi_1(A)$ embeds, $\pi_1(X)$ can be bigger | $\pi_1(X) \cong \pi_1(A)$ |
 >
-> **Exam consequence:** To show $A$ is not a deformation retract of $X$, it suffices to show $\pi_1(X) \not\cong \pi_1(A)$ (easier). To show $A$ is not a retract, you need the stronger argument that $j_*$ injective with left inverse leads to a contradiction (harder, but catches cases where $\pi_1(X) \cong \pi_1(A)$).
+> **Exam consequence:** To show $A$ is not a deformation retract of $X$, it suffices to show $\pi_1(X) \not\cong \pi_1(A)$ (easier). To show $A$ is not a retract, you need the stronger argument that $j_{\ast}$ injective with left inverse leads to a contradiction (harder, but catches cases where $\pi_1(X) \cong \pi_1(A)$).
 
 ^rem-26-7
 
@@ -748,7 +748,7 @@ The [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §26.1]] as
 > In diagram form:
 >
 > ![[m590-26-7.svg]]
-> *The lemma asserts the red arrow: $k_*$ is $h_*$ followed by the basepoint-change isomorphism $\hat\alpha$ along the track $\alpha(t) = H(x_0, t)$ of the basepoint. If the basepoint does not move, $\hat\alpha = \operatorname{id}$ and the triangle collapses to $k_* = h_*$.*
+> *The lemma asserts the red arrow: $k_{\ast}$ is $h_{\ast}$ followed by the basepoint-change isomorphism $\hat\alpha$ along the track $\alpha(t) = H(x_0, t)$ of the basepoint. If the basepoint does not move, $\hat\alpha = \operatorname{id}$ and the triangle collapses to $k_{\ast} = h_{\ast}$.*
 
 ^lem-26-14
 
@@ -780,7 +780,7 @@ The [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §26.1]] as
 *Uses:* [[Basepoint Independence of π₁|§23.2]], [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|§26.1]]
 
 ![[m590-26-14.svg]]
-*The square $I \times I$, each corner labeled by its image under $H \circ (f \times \operatorname{id})$: bottom $h \circ f$, top $k \circ f$, both sides $\alpha$. The blue path (bottom, then right side) and the red path (left side, then top) have the same endpoints in the convex square, so they are path homotopic there (gray). Composing with $H \circ (f \times \operatorname{id})$ gives $(h \circ f) * \alpha \simeq_p \alpha * (k \circ f)$.*
+*The square $I \times I$, each corner labeled by its image under $H \circ (f \times \operatorname{id})$: bottom $h \circ f$, top $k \circ f$, both sides $\alpha$. The blue path (bottom, then right side) and the red path (left side, then top) have the same endpoints in the convex square, so they are path homotopic there (gray). Composing with $H \circ (f \times \operatorname{id})$ gives $(h \circ f) \ast  \alpha \simeq_p \alpha \ast  (k \circ f)$.*
 
 > [!remark] Remark
 > When $H(x_0, t) = y_0$ for all $t$ (the basepoint stays fixed), the path $\alpha$ is constant, so $\hat{\alpha} = \operatorname{id}$ and we recover [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|the earlier lemma]]: $k_* = h_*$.
@@ -805,7 +805,7 @@ The [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §26.1]] as
 >
 > Consider the chain $X \xrightarrow{f} Y \xrightarrow{g} X \xrightarrow{f} Y$.
 >
-> **$f_*$ is surjective (at another basepoint):** Let $y_0 = f(x_0)$ and $x_1 = g(y_0)$. Since $f \circ g \simeq \operatorname{id}_Y$, the [[§26 Deformation Retracts and Homotopy Type#^lem-26-14|general lemma]] (at the basepoint $y_0$) gives
+> **$f_{\ast}$ is surjective (at another basepoint):** Let $y_0 = f(x_0)$ and $x_1 = g(y_0)$. Since $f \circ g \simeq \operatorname{id}_Y$, the [[§26 Deformation Retracts and Homotopy Type#^lem-26-14|general lemma]] (at the basepoint $y_0$) gives
 >
 > $$
 > (\operatorname{id}_Y)_* = \hat{\alpha} \circ (f \circ g)_* = \hat{\alpha} \circ f_* \circ g_*
@@ -813,7 +813,7 @@ The [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §26.1]] as
 >
 > for some path $\alpha$. Since $(\operatorname{id}_Y)_* = \operatorname{id}$ and $\hat{\alpha}$ is an [[Basepoint Independence of π₁|isomorphism]], $f_* \circ g_*$ is an isomorphism. In particular, $f_*$ is surjective (it has a right inverse up to isomorphism), but as a map $\pi_1(X, x_1) \to \pi_1(Y, f(x_1))$, not at $x_0$. What we keep from this step: $g_*: \pi_1(Y, y_0) \to \pi_1(X, x_1)$ is injective.
 >
-> **$f_*$ is injective:** Since $g \circ f \simeq \operatorname{id}_X$, the [[§26 Deformation Retracts and Homotopy Type#^lem-26-14|general lemma]] gives
+> **$f_{\ast}$ is injective:** Since $g \circ f \simeq \operatorname{id}_X$, the [[§26 Deformation Retracts and Homotopy Type#^lem-26-14|general lemma]] gives
 >
 > $$
 > (\operatorname{id}_X)_* = \hat{\beta} \circ (g \circ f)_* = \hat{\beta} \circ g_* \circ f_*
@@ -821,7 +821,7 @@ The [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §26.1]] as
 >
 > for some path $\beta$. So $g_* \circ f_*$ is an isomorphism, hence $f_*: \pi_1(X, x_0) \to \pi_1(Y, y_0)$ is injective (it has a left inverse up to isomorphism), and $g_*: \pi_1(Y, y_0) \to \pi_1(X, x_1)$ is surjective.
 >
-> **Basepoint change:** Thus $g_*: \pi_1(Y, y_0) \to \pi_1(X, x_1)$ is bijective, and $f_* = g_*^{-1} \circ \hat{\beta}^{-1}$ is an isomorphism $\pi_1(X, x_0) \to \pi_1(Y, y_0)$ (Munkres 58.7).
+> **Basepoint change:** Thus $g_{\ast}: \pi_1(Y, y_0) \to \pi_1(X, x_1)$ is bijective, and $f_{\ast} = g_{\ast}^{-1} \circ \hat{\beta}^{-1}$ is an isomorphism $\pi_1(X, x_0) \to \pi_1(Y, y_0)$ (Munkres 58.7).
 
 ^pf-26-15
 

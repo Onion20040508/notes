@@ -18,7 +18,7 @@ The third special type of map, dual to the submersions of [[§29 Submersions|§2
 *Lecture 13. “Next class of special maps”: Lecture 10 listed immersions among the special types of map, and the definition has been on record since ([[§29 Submersions#^def-29-1|Definition §29.1]]); Lecture 13 is where they were first treated seriously, after the tangent bundle ([[§32 The Tangent Bundle|§32]]).*
 
 > [!definition] Definition §33.1: Immersions
-> Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$. $F$ is an **immersion at $p$** if $F_{*p} : T_pM \to T_{F(p)}N$ is injective — which forces $m \le n$, since an injective linear map cannot lower dimension — and an **immersion** if it is an immersion at every point. “Go from a lower-dimensional manifold to a bigger one.”
+> Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$. $F$ is an **immersion at $p$** if $F_{\ast p} : T_pM \to T_{F(p)}N$ is injective — which forces $m \le n$, since an injective linear map cannot lower dimension — and an **immersion** if it is an immersion at every point. “Go from a lower-dimensional manifold to a bigger one.”
 >
 > *Lee: Ch. 4, Immersions*
 
@@ -45,7 +45,7 @@ The third special type of map, dual to the submersions of [[§29 Submersions|§2
 >
 > *1. Start with any coordinates.* Take [[§15 Smooth Functions and Smooth Maps#^def-15-1|charts]] $(U_0, \varphi_0 = (x^1, \ldots, x^m))$ at $p$ and $(V_0, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U_0) \subseteq V_0$, shrinking $U_0$ if necessary, and write $F^j = y^j \circ F$.
 >
-> *2. The Jacobian is taller than wide.* $J = \big[\partial F^j/\partial x^i(p)\big]$ is the matrix of $F_{*p}$ ([[§25 The Differential in Coordinates#^thm-25-2|Theorem §25.2]]): $n$ rows and $m$ columns, “fewer columns than rows.” $F_{*p}$ is injective, so $J$ has rank $m$: it has $m$ linearly independent row vectors.
+> *2. The Jacobian is taller than wide.* $J = \big[\partial F^j/\partial x^i(p)\big]$ is the matrix of $F_{\ast p}$ ([[§25 The Differential in Coordinates#^thm-25-2|Theorem §25.2]]): $n$ rows and $m$ columns, “fewer columns than rows.” $F_{\ast p}$ is injective, so $J$ has rank $m$: it has $m$ linearly independent row vectors.
 >
 > *3. Relabel the $y$'s.* Reordering the coordinates of $\psi$ — again a smooth chart, as in step 4 of the [[§29 Submersions#^pf-29-4|proof of Theorem §29.4]] — we may assume the top $m \times m$ block $A$ of $J$ is invertible.
 >

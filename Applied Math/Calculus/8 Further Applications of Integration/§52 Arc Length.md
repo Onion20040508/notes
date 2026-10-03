@@ -85,7 +85,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 > L = \lim_{n \to \infty} \sum_{i=1}^n |P_{i-1} P_i| = \lim_{n \to \infty} \sum_{i=1}^n \sqrt{1 + [f'(x_i^*)]^2}\,\Delta x .
 > $$
 >
-> The last sum is a Riemann sum of $g(x) = \sqrt{1 + [f'(x)]^2}$ for the equal partition of $[a, b]$ with sample points $x_i^* \in [x_{i-1}, x_i]$. Since $f'$ is continuous, so is $g$; a continuous function is integrable, and then the Riemann sums tend to $\int_a^b g(x)\,dx$ for *every* choice of sample points ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]], [[§35 The Definite Integral#^def-35-1|Definition §35.1]]), in particular for the points $x_i^*$ supplied by the Mean Value Theorem. So the limit in Definition §52.1 exists and
+> The last sum is a Riemann sum of $g(x) = \sqrt{1 + [f'(x)]^2}$ for the equal partition of $[a, b]$ with sample points $x_i^{\ast} \in [x_{i-1}, x_i]$. Since $f'$ is continuous, so is $g$; a continuous function is integrable, and then the Riemann sums tend to $\int_a^b g(x)\,dx$ for *every* choice of sample points ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]], [[§35 The Definite Integral#^def-35-1|Definition §35.1]]), in particular for the points $x_i^{\ast}$ supplied by the Mean Value Theorem. So the limit in Definition §52.1 exists and
 >
 > $$
 > L = \int_a^b \sqrt{1 + [f'(x)]^2}\,dx .
@@ -98,7 +98,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 *Uses:* [[§52 Arc Length#^def-52-1|Def. §52.1]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]] (Mean Value Theorem), [[§35 The Definite Integral#^def-35-1|Def. §35.1]] (Riemann sums), [[§35 The Definite Integral#^thm-35-1|§35.1]] (continuous functions are integrable)
 
 ![[m233-52-2.svg]]
-*One piece of the polygon. The chord $P_{i-1} P_i$ (red) is the hypotenuse of a right triangle with legs $\Delta x$ and $\Delta y_i$. By the Mean Value Theorem, some tangent line between $x_{i-1}$ and $x_i$ (green, at $x_i^*$) is parallel to the chord, so $\Delta y_i = f'(x_i^*)\,\Delta x$ and $|P_{i-1} P_i| = \sqrt{1 + [f'(x_i^*)]^2}\,\Delta x$, one term of a Riemann sum.*
+*One piece of the polygon. The chord $P_{i-1} P_i$ (red) is the hypotenuse of a right triangle with legs $\Delta x$ and $\Delta y_i$. By the Mean Value Theorem, some tangent line between $x_{i-1}$ and $x_i$ (green, at $x_i^{\ast}$) is parallel to the chord, so $\Delta y_i = f'(x_i^{\ast})\,\Delta x$ and $|P_{i-1} P_i| = \sqrt{1 + [f'(x_i^{\ast})]^2}\,\Delta x$, one term of a Riemann sum.*
 
 > [!remark]- Connections
 > - The analysis behind the proof: the Mean Value Theorem [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]]; Riemann sums with arbitrary sample points and their limit for integrable functions, [[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]], with continuous functions integrable by [[§32 The Definition of the Riemann Integral#^thm-32-7|451 Thm. §32.7]].

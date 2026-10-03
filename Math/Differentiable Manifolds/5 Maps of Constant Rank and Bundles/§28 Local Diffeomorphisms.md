@@ -7,11 +7,11 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§27 Tangent Spaces III꞉ The Cotangent Space]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§29 Submersions]] →
 
-*Stage: maps — Properties of the linear maps $F_{*p}$ control the local behaviour of $F$ itself.*
+*Stage: maps — Properties of the linear maps $F_{\ast p}$ control the local behaviour of $F$ itself.*
 
 *References: Lee Ch. 4. Lecture 10.*
 
-Three special types of smooth maps $F : M \to N$ are singled out by the linear algebra of their differentials: *local diffeomorphisms*, whose differentials are bijective; *submersions*, whose differentials are surjective; and *immersions*, whose differentials are injective. The theme of the section is that in each case a property of the linear maps $F_{*p}$ — computable from a Jacobian — controls the behaviour of $F$ itself near $p$. Immersions, listed with the others in Lecture 10, were treated only in Lecture 13, after the tangent bundle, and have their own section, [[§33 Immersions|§33]]; everything up to the tangent bundle is the theory of submersions. “That's why we're discussing them in this context.”
+Three special types of smooth maps $F : M \to N$ are singled out by the linear algebra of their differentials: *local diffeomorphisms*, whose differentials are bijective; *submersions*, whose differentials are surjective; and *immersions*, whose differentials are injective. The theme of the section is that in each case a property of the linear maps $F_{\ast p}$ — computable from a Jacobian — controls the behaviour of $F$ itself near $p$. Immersions, listed with the others in Lecture 10, were treated only in Lecture 13, after the tangent bundle, and have their own section, [[§33 Immersions|§33]]; everything up to the tangent bundle is the theory of submersions. “That's why we're discussing them in this context.”
 
 > [!definition] Definition §28.1: Local Diffeomorphism
 > A smooth map $F : M \to N$ is a **local diffeomorphism** if for every $p \in M$ there are neighbourhoods $U$ of $p$ and $V$ of $F(p)$ with $F(U) = V$ such that $F|_U^V : U \to V$ — the restriction of $F$ to $U$, regarded as a map onto $V$ — has a smooth inverse. Such an inverse $G : V \to U$ is a **local inverse** of $F$ at $p$.
@@ -103,7 +103,7 @@ Lee, Theorem C.34; taken from analysis, not proved in the course. It should not 
 ^thm-28-2
 
 > [!proof]+ Proof
-> *(Lecture 10. The forward direction was supplied by a student at Uribe's prompting — use the local inverse and the chain rule; for the converse the inverse function theorem “is really what's paying the bills here.” The identification of $(F|_U^V)_{*p}$ with $F_{*p}$ is a completion.)* ($\Rightarrow$) Let $G : V \to U$ be a local inverse at $p$, so that $G \circ F|_U^V = \mathrm{id}_U$ and $F|_U^V \circ G = \mathrm{id}_V$. By the Chain Rule (Theorem [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]]),
+> *(Lecture 10. The forward direction was supplied by a student at Uribe's prompting — use the local inverse and the chain rule; for the converse the inverse function theorem “is really what's paying the bills here.” The identification of $(F|_U^V)_{\ast p}$ with $F_{\ast p}$ is a completion.)* ($\Rightarrow$) Let $G : V \to U$ be a local inverse at $p$, so that $G \circ F|_U^V = \mathrm{id}_U$ and $F|_U^V \circ G = \mathrm{id}_V$. By the Chain Rule (Theorem [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]]),
 >
 > $$
 > G_{*F(p)} \circ (F|_U^V)_{*p} = \mathrm{id}, \qquad (F|_U^V)_{*p} \circ G_{*F(p)} = \mathrm{id},
@@ -126,7 +126,7 @@ Lee, Theorem C.34; taken from analysis, not proved in the course. It should not 
 ![[m591-14-2.svg]]
 *The converse in one picture. Downstairs the Inverse Function Theorem supplies $\tilde F^{-1}$; the charts carry it upstairs as the local inverse $G = \varphi^{-1} \circ \tilde F^{-1} \circ \psi$. The only input from the hypothesis is that the bottom arrow has an invertible Jacobian at $\varphi(p)$ — which is where Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]] enters.*
 
-A student asked why $\tilde F'(\varphi(p))$ is invertible; Uribe's answer was the lemma just cited: the Jacobian *is* the matrix of $F_{*p}$ in coordinate bases, and $F_{*p}$ is bijective by hypothesis. The practical content of the theorem is that “being a local diffeomorphism is detectable” by computing one Jacobian at each point, rather than by exhibiting local inverses.
+A student asked why $\tilde F'(\varphi(p))$ is invertible; Uribe's answer was the lemma just cited: the Jacobian *is* the matrix of $F_{\ast p}$ in coordinate bases, and $F_{\ast p}$ is bijective by hypothesis. The practical content of the theorem is that “being a local diffeomorphism is detectable” by computing one Jacobian at each point, rather than by exhibiting local inverses.
 
 > [!theorem] Corollary §28.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms
 > A smooth map $F : M \to N$ is a diffeomorphism if and only if it is a bijective local diffeomorphism. Consequently, a smooth bijection with $F_{*p}$ bijective at every $p \in M$ is a diffeomorphism.
