@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C4 The Quantum Vector Field
 ← [[· C3 Poincaré Symmetry and Particle States]] · ↑ [[Quantum Field Theory]] · [[· C5 The Quantum Spinor Field]] →
 
-**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (65), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (135), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (62), [[· C5 The Quantum Spinor Field|C5 The Quantum Spinor Field]] (9), [[· CA Mathematical Methods|CA Mathematical Methods]] (118)
-**Used by:** —
+**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (104), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (139), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (66), [[· C5 The Quantum Spinor Field|C5 The Quantum Spinor Field]] (10), [[· CA Mathematical Methods|CA Mathematical Methods]] (133)
+**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (5)
 
 ## Sections
 - [[§C4.1 The Vector Field and Its Lorentz Transformation]] — 
@@ -31,6 +31,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-1|§C4.1.1]] The Helicity Matrix of the Vector Representation
 - [[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-2|§C4.1.2]] A Timelike Momentum Splits a Four-Vector into Spin 0 and Spin 1
 - [[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-3|§C4.1.3]] The Transverse Space of a Lightlike Momentum Contains the Momentum
+- [[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-4|§C4.1.4]] The Spin Current of a Vector Field
+- [[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-5|§C4.1.5]] Spin Charges of the Proca and Maxwell Fields
+- [[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-6|§C4.1.6]] Orbital Angular Momentum and the Total
 - [[§C4.2★ The Proca Field#^thm-c4-2-2|§C4.2.2]] Derivatives of the Proca Lagrangian
 - [[§C4.2★ The Proca Field#^thm-c4-2-3|§C4.2.3]] The Proca Equation
 - [[§C4.2★ The Proca Field#^thm-c4-2-4|§C4.2.4]] The Lorenz Condition Is a Consequence of the Field Equation
@@ -64,6 +67,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.4★ Quantizing the Massive Vector Field#^thm-c4-4-10|§C4.4.10]] Rotations Act on the Mode Operators through the Polarization Vectors
 - [[§C4.4★ Quantizing the Massive Vector Field#^thm-c4-4-11|§C4.4.11]] Proca Quanta Have Spin One
 - [[§C4.4★ Quantizing the Massive Vector Field#^thm-c4-4-12|§C4.4.12]] The One-Particle States Are Helicity Eigenstates
+- [[§C4.4★ Quantizing the Massive Vector Field#^thm-c4-4-13|§C4.4.13]] The Proca Spin in Mode Form
+- [[§C4.4★ Quantizing the Massive Vector Field#^thm-c4-4-14|§C4.4.14]] The Proca Spin Alone Is Not Conserved
+- [[§C4.4★ Quantizing the Massive Vector Field#^thm-c4-4-15|§C4.4.15]] Spin One and Helicity from the Noether Spin
 - [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-1|§C4.5.1]] What Survives the Massless Limit
 - [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-3|§C4.5.3]] Gauge Invariance of F and of the Maxwell Lagrangian; the Mass Term Breaks It
 - [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-4|§C4.5.4]] The Maxwell Kinetic Operator Is Singular
@@ -75,6 +81,8 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-10|§C4.5.10]] Only Two Massless Polarizations Can Be Transverse
 - [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-11|§C4.5.11]] Orthonormality and Completeness of the Massless Basis
 - [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-12|§C4.5.12]] The Transverse Polarization Sum
+- [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-13|§C4.5.13]] Spin and Orbital Angular Momentum Are Not Separately Gauge Invariant
+- [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-14|§C4.5.14]] Spin Charges of the Gauge-Fixed Lagrangians
 - [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-2|§C4.6.2]] Hamiltonian Density of the Feynman-Gauge Field
 - [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-4|§C4.6.4]] The Two Feynman-Gauge Lagrangians Give the Same Commutation Relations
 - [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-5|§C4.6.5]] The Lorenz Condition Cannot Hold as an Operator Identity
@@ -94,6 +102,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-7|§C4.7.7]] Helicity Mode Algebra and Expansion
 - [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-8|§C4.7.8]] Photons Have Helicity ±1
 - [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-9|§C4.7.9]] Energy and Momentum of Physical States in Helicity Form
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-10|§C4.7.10]] The Spin of Transverse Photons
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-11|§C4.7.11]] Photon Helicity from the Noether Spin
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-12|§C4.7.12]] Null States Change the Transverse Spin, Not the Helicity
 - [[§C4.8 Vector-Field Propagators#^thm-c4-8-1|§C4.8.1]] The Massive Vector Wightman Function
 - [[§C4.8 Vector-Field Propagators#^thm-c4-8-2|§C4.8.2]] Commutator and Microcausality of the Massive Vector Field
 - [[§C4.8 Vector-Field Propagators#^thm-c4-8-3|§C4.8.3]] The Massive Feynman Propagator and Its Contact Term
