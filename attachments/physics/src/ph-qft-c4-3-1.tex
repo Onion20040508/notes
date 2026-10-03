@@ -1,0 +1,18 @@
+% QFT §C4.3: the helicity triad of a massive vector: e(p,1) = theta-hat, e(p,2) = phi-hat, longitudinal along p-hat
+\begin{tikzpicture}[>=Stealth, font=\small, x={(-0.3cm,-0.6cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}, scale=2.0]
+  \def\th{35} \def\ph{50} \def\R{1.4}
+  \draw[->, thin] (0,0,0) -- (1.9,0,0) node[below left]{$x$};
+  \draw[->, thin] (0,0,0) -- (0,2.3,0) node[right]{$y$};
+  \draw[->, thin] (0,0,0) -- (0,0,2.0) node[above]{$z$};
+  \draw[thin, dashed, gray] plot[domain=0:90, samples=40] ({\R*sin(\x)*cos(\ph)},{\R*sin(\x)*sin(\ph)},{\R*cos(\x)});
+  \draw[thin, dashed, gray] plot[domain=0:90, samples=40] ({\R*sin(\th)*cos(\x)},{\R*sin(\th)*sin(\x)},{\R*cos(\th)});
+  \coordinate (O) at (0,0,0);
+  \coordinate (P) at ({\R*sin(\th)*cos(\ph)},{\R*sin(\th)*sin(\ph)},{\R*cos(\th)});
+  \draw[->, very thick, figR] (O) -- (P);
+  \node[figR, left=1pt] at ($(O)!0.55!(P)$) {$\mathbf p$};
+  \fill (P) circle (0.7pt);
+  \draw[->, very thick, figB] (P) -- ++({0.6*cos(\th)*cos(\ph)},{0.6*cos(\th)*sin(\ph)},{-0.6*sin(\th)}) node[right]{$\mathbf e(p,1) = \hat{\boldsymbol\theta}$};
+  \draw[->, very thick, figG] (P) -- ++({-0.6*sin(\ph)},{0.6*cos(\ph)},0) node[right]{$\mathbf e(p,2) = \hat{\boldsymbol\varphi}$};
+  \draw[->, very thick, figO] (P) -- ++({0.55*sin(\th)*cos(\ph)},{0.55*sin(\th)*sin(\ph)},{0.55*cos(\th)}) node[above]{$\hat{\mathbf p}$};
+  \node[font=\footnotesize, align=left, anchor=north west] at (0,-0.2,-0.55) {transverse, helicity $\pm1$: $\varepsilon(p,\pm) = \bigl(0, \hat{\boldsymbol\theta} \pm i\hat{\boldsymbol\varphi}\bigr)/\sqrt2$\\ longitudinal, helicity $0$: $\varepsilon(p,0) = \bigl(|\mathbf p|, E_{\mathbf p}\hat{\mathbf p}\bigr)/m$};
+\end{tikzpicture}
