@@ -15,6 +15,7 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 - [[· C1 Preliminaries]]
 - [[· C2 The Quantum Scalar Field]]
 - [[· C3 Poincaré Symmetry and Particle States]] (★ §C3.5, §C3.6)
+- [[· C4 The Quantum Vector Field]] (★ §C4.2, §C4.3, §C4.4)
 - [[· C5 The Quantum Spinor Field]]
 - [[· CA Mathematical Methods]]
 
@@ -26,11 +27,15 @@ graph TD
   C1["C1 Preliminaries"]
   C2["C2 The Quantum Scalar Field"]
   C3["C3 Poincaré Symmetry and Particle States"]
+  C4["C4 The Quantum Vector Field"]
   C5["C5 The Quantum Spinor Field"]
   CA["CA Mathematical Methods"]
   C1 -->|13| C2
   C1 -->|103| C3
   C2 -->|48| C3
+  C1 -->|65| C4
+  C2 -->|135| C4
+  C3 -->|62| C4
   C1 -->|116| C5
   C2 -->|138| C5
   C3 -->|91| C5
@@ -45,6 +50,8 @@ graph TD
   CA -.->|572| C2
   C5 -.->|17| C3
   CA -.->|11| C3
+  C5 -.->|9| C4
+  CA -.->|118| C4
   CA -.->|96| C5
 ```
 
