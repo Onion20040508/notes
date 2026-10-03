@@ -17,14 +17,15 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.3★ Massive Polarization Vectors and the Plane-Wave Expansion]] — 
 - [[§C4.4★ Quantizing the Massive Vector Field]] — 
 - [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing]] — 
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition]] — 
-- [[§C4.7 Vector-Field Propagators]] — 
+- [[§C4.6 Covariant Quantization and the Indefinite Metric]] — 
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons]] — 
+- [[§C4.8 Vector-Field Propagators]] — 
 
 ## Principles
 - [[§C4.4★ Quantizing the Massive Vector Field#^pr-c4-4-1|§C4.4.1]] Equal-Time Commutation Relations of the Proca Field
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^pr-c4-6-3|§C4.6.3]] Covariant Equal-Time Commutation Relations
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^pr-c4-6-13|§C4.6.13]] The Vacuum and the Indefinite Fock Space
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^pr-c4-6-15|§C4.6.15]] The Gupta–Bleuler Condition; Physical States
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^pr-c4-6-3|§C4.6.3]] Covariant Equal-Time Commutation Relations
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^pr-c4-6-13|§C4.6.13]] The Vacuum and the Indefinite Fock Space
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^pr-c4-7-1|§C4.7.1]] The Gupta–Bleuler Condition; Physical States
 
 ## Theorems
 - [[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-1|§C4.1.1]] The Helicity Matrix of the Vector Representation
@@ -74,37 +75,37 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-10|§C4.5.10]] Only Two Massless Polarizations Can Be Transverse
 - [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-11|§C4.5.11]] Orthonormality and Completeness of the Massless Basis
 - [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-12|§C4.5.12]] The Transverse Polarization Sum
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-2|§C4.6.2]] Hamiltonian Density of the Feynman-Gauge Field
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-4|§C4.6.4]] The Two Feynman-Gauge Lagrangians Give the Same Commutation Relations
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-5|§C4.6.5]] The Lorenz Condition Cannot Hold as an Operator Identity
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-6|§C4.6.6]] Mode Expansion of the Feynman-Gauge Field
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-7|§C4.6.7]] Mode Extraction
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-8|§C4.6.8]] The Indefinite Mode Algebra
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-9|§C4.6.9]] Hamiltonian in Mode Form
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-10|§C4.6.10]] Zero-Point Energy of the Four Polarizations
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-11|§C4.6.11]] Momentum in Mode Form
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-12|§C4.6.12]] Ladder Relations
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-14|§C4.6.14]] Timelike Photons Have Negative Norm
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-16|§C4.6.16]] Gupta–Bleuler Implies the Weak Lorenz Condition
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-17|§C4.6.17]] The Gupta–Bleuler Condition in Modes
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-18|§C4.6.18]] Physical and Unphysical One-Photon States
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-19|§C4.6.19]] Only Transverse Photons Carry Energy and Momentum
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-20|§C4.6.20]] Null States
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-21|§C4.6.21]] Helicity Mode Algebra and Expansion
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-22|§C4.6.22]] Photons Have Helicity ±1
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^thm-c4-6-23|§C4.6.23]] Energy and Momentum of Physical States in Helicity Form
-- [[§C4.7 Vector-Field Propagators#^thm-c4-7-1|§C4.7.1]] The Massive Vector Wightman Function
-- [[§C4.7 Vector-Field Propagators#^thm-c4-7-2|§C4.7.2]] Commutator and Microcausality of the Massive Vector Field
-- [[§C4.7 Vector-Field Propagators#^thm-c4-7-3|§C4.7.3]] The Massive Feynman Propagator and Its Contact Term
-- [[§C4.7 Vector-Field Propagators#^thm-c4-7-4|§C4.7.4]] The Covariant Part Is the Green's Function of the Proca Operator
-- [[§C4.7 Vector-Field Propagators#^thm-c4-7-5|§C4.7.5]] Wightman and Commutator Functions of the Feynman-Gauge Field
-- [[§C4.7 Vector-Field Propagators#^thm-c4-7-6|§C4.7.6]] The Photon Propagator in the Feynman Gauge
-- [[§C4.7 Vector-Field Propagators#^thm-c4-7-7|§C4.7.7]] The Massless Propagator as a Distribution
-- [[§C4.7 Vector-Field Propagators#^thm-c4-7-8|§C4.7.8]] The Photon Propagator in the ξ Gauges
-- [[§C4.7 Vector-Field Propagators#^thm-c4-7-9|§C4.7.9]] Between Conserved Currents Only −g Survives
-- [[§C4.7 Vector-Field Propagators#^thm-c4-7-10|§C4.7.10]] The Polarization-Sum Replacement
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-2|§C4.6.2]] Hamiltonian Density of the Feynman-Gauge Field
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-4|§C4.6.4]] The Two Feynman-Gauge Lagrangians Give the Same Commutation Relations
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-5|§C4.6.5]] The Lorenz Condition Cannot Hold as an Operator Identity
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-6|§C4.6.6]] Mode Expansion of the Feynman-Gauge Field
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-7|§C4.6.7]] Mode Extraction
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-8|§C4.6.8]] The Indefinite Mode Algebra
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-9|§C4.6.9]] Hamiltonian in Mode Form
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-10|§C4.6.10]] Zero-Point Energy of the Four Polarizations
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-11|§C4.6.11]] Momentum in Mode Form
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-12|§C4.6.12]] Ladder Relations
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-14|§C4.6.14]] Timelike Photons Have Negative Norm
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-2|§C4.7.2]] Gupta–Bleuler Implies the Weak Lorenz Condition
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-3|§C4.7.3]] The Gupta–Bleuler Condition in Modes
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-4|§C4.7.4]] Physical and Unphysical One-Photon States
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-5|§C4.7.5]] Only Transverse Photons Carry Energy and Momentum
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-6|§C4.7.6]] Null States
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-7|§C4.7.7]] Helicity Mode Algebra and Expansion
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-8|§C4.7.8]] Photons Have Helicity ±1
+- [[§C4.7 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-7-9|§C4.7.9]] Energy and Momentum of Physical States in Helicity Form
+- [[§C4.8 Vector-Field Propagators#^thm-c4-8-1|§C4.8.1]] The Massive Vector Wightman Function
+- [[§C4.8 Vector-Field Propagators#^thm-c4-8-2|§C4.8.2]] Commutator and Microcausality of the Massive Vector Field
+- [[§C4.8 Vector-Field Propagators#^thm-c4-8-3|§C4.8.3]] The Massive Feynman Propagator and Its Contact Term
+- [[§C4.8 Vector-Field Propagators#^thm-c4-8-4|§C4.8.4]] The Covariant Part Is the Green's Function of the Proca Operator
+- [[§C4.8 Vector-Field Propagators#^thm-c4-8-5|§C4.8.5]] Wightman and Commutator Functions of the Feynman-Gauge Field
+- [[§C4.8 Vector-Field Propagators#^thm-c4-8-6|§C4.8.6]] The Photon Propagator in the Feynman Gauge
+- [[§C4.8 Vector-Field Propagators#^thm-c4-8-7|§C4.8.7]] The Massless Propagator as a Distribution
+- [[§C4.8 Vector-Field Propagators#^thm-c4-8-8|§C4.8.8]] The Photon Propagator in the ξ Gauges
+- [[§C4.8 Vector-Field Propagators#^thm-c4-8-9|§C4.8.9]] Between Conserved Currents Only −g Survives
+- [[§C4.8 Vector-Field Propagators#^thm-c4-8-10|§C4.8.10]] The Polarization-Sum Replacement
 
 ## Models
 - [[§C4.2★ The Proca Field#^mod-c4-2-1|§C4.2.1]] The Free Proca Field
 - [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-5-2|§C4.5.2]] The Free Maxwell Field
-- [[§C4.6 Covariant Quantization and the Gupta–Bleuler Condition#^mod-c4-6-1|§C4.6.1]] The Feynman-Gauge Field as a Canonical System
+- [[§C4.6 Covariant Quantization and the Indefinite Metric#^mod-c4-6-1|§C4.6.1]] The Feynman-Gauge Field as a Canonical System
