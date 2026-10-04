@@ -28,7 +28,7 @@ Congruence modulo $m$ can be seen in two ways: as a *relation* between integers,
 ^def-22-1
 
 > [!remark]- Connections
-> - [[§22 Equivalence Relations and Partitions#^def-22-3|493 Def. §22.3]] (partition).
+> - [[§24 Equivalence Relations and Partitions#^def-24-3|493 Def. §24.3]] (partition).
 
 > [!example] Example §22.1: Partitions and Non-Partitions
 > (a) By Proposition [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]], the set of congruence classes $\mathbb{Z}_m = \{[a]_m \mid a \in \mathbb{Z}\} = \{[a]_m \mid a \in R_m\}$ is a partition of $\mathbb{Z}$ into $m$ subsets ([[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-2|Proposition §21.2]]). It is the model for everything in this section.
@@ -132,7 +132,7 @@ Compare Proposition [[§19 Congruence of Integers#^prop-19-1|§19.1]]: starting 
 ^def-22-3
 
 > [!remark]- Connections
-> - [[§22 Equivalence Relations and Partitions#^def-22-1|493 Def. §22.1]] (equivalence relation); a non-arithmetic example, $x - y \in \mathbb{Q}$ on $[0,1]$, behind the Vitali set: [[§11 Borel Sets and Measure Spaces#^def-11-10|551 Def. §11.10]].
+> - [[§24 Equivalence Relations and Partitions#^def-24-1|493 Def. §24.1]] (equivalence relation); a non-arithmetic example, $x - y \in \mathbb{Q}$ on $[0,1]$, behind the Vitali set: [[§11 Borel Sets and Measure Spaces#^def-11-10|551 Def. §11.10]].
 
 Each property is a universal statement, so to show that one *fails* a single counterexample suffices.
 
@@ -197,7 +197,7 @@ In [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|Def. §2
 ^def-22-4
 
 > [!remark]- Connections
-> - [[§22 Equivalence Relations and Partitions#^def-22-2|493 Def. §22.2]] (equivalence class); [[§11 Borel Sets and Measure Spaces#^def-11-11|551 Def. §11.11]].
+> - [[§24 Equivalence Relations and Partitions#^def-24-2|493 Def. §24.2]] (equivalence class); [[§11 Borel Sets and Measure Spaces#^def-11-11|551 Def. §11.11]].
 
 The next theorem generalizes Proposition [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]] with the same proof, each property of congruence replaced by the corresponding axiom.
 
@@ -222,7 +222,7 @@ The next theorem generalizes Proposition [[§21 Congruence Classes and the Arith
 *Uses:* [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]]
 
 > [!remark]- Connections
-> - [[§22 Equivalence Relations and Partitions#^prop-22-1|493 Prop. §22.1]] (equivalence classes partition a set), applied to cosets in [[Cosets Partition a Group]].
+> - [[§24 Equivalence Relations and Partitions#^prop-24-1|493 Prop. §24.1]] (equivalence classes partition a set), applied to cosets in [[Cosets Partition a Group]].
 
 > [!theorem] Corollary §22.4: Equivalence Relations Are Partitions
 > Let $\sim$ be an equivalence relation on a non-empty set $X$. Then $\Pi = X/{\sim}$ is a partition of $X$, and the relation $\sim_\Pi$ arising from it (Proposition [[§22 Partitions and Equivalence Relations#^prop-22-2|§22.2]]) is $\sim$. Conversely, for any partition $\Pi$ of $X$, the classes of $\sim_\Pi$ are exactly the members of $\Pi$: $X/{\sim_\Pi} = \Pi$.
@@ -246,7 +246,7 @@ The next theorem generalizes Proposition [[§21 Congruence Classes and the Arith
 *Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^prop-22-2|§22.2]], [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]]
 
 > [!remark]- Connections
-> - [[§22 Equivalence Relations and Partitions#^prop-22-2|493 Prop. §22.2]] (partitions come from equivalence relations).
+> - [[§24 Equivalence Relations and Partitions#^prop-24-2|493 Prop. §24.2]] (partitions come from equivalence relations).
 
 A surjection $f : X \to Y$ partitions $X$ (Proposition [[§22 Partitions and Equivalence Relations#^prop-22-1|§22.1]]); in the language of equivalence relations this becomes:
 
@@ -275,7 +275,7 @@ A surjection $f : X \to Y$ partitions $X$ (Proposition [[§22 Partitions and Equ
 *Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]]
 
 > [!remark]- Connections
-> - The group version: [[§38 The First Isomorphism Theorem#^thm-38-1|493 Thm. §38.1]] (first isomorphism theorem); defining maps on $\mathbb{Z}_n$ by representatives: [[§7 The Group ℤ∕nℤ#^lem-7-2|493 Lemma §7.2]]; the topological version: [[Universal Property of Quotient Maps]].
+> - The group version: [[§41 The First Isomorphism Theorem#^thm-41-1|493 Thm. §41.1]] (first isomorphism theorem); defining maps on $\mathbb{Z}_n$ by representatives: [[§7 The Group ℤ∕nℤ#^lem-7-2|493 Lemma §7.2]]; the topological version: [[Universal Property of Quotient Maps]].
 
 The proof contains the general principle for defining functions on a quotient set: a rule $[x] \mapsto g(x)$, computed from a representative, defines a function $X/{\sim} \to Z$ exactly when $x \sim x' \Rightarrow g(x) = g(x')$. Otherwise it is not *well defined*.
 

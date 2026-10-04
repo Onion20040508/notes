@@ -18,7 +18,7 @@ tags: [linear-algebra, hub]
 - [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-11|8.11 Generalized eigenvector corresponds to a unique eigenvalue]]
 
 ## Used in (Group Theory)
-- [[§31 Conjugacy Classes#^prop-31-4|Proposition §31.4: Conjugacy Class of a Diagonal Matrix]]
+- [[§33 Conjugacy Classes#^prop-33-4|Proposition §33.4: Conjugacy Class of a Diagonal Matrix]]
 
 ## Connections
 - Gives [[§14 Invariant Subspaces#^ladr-5-12|Operator cannot have more eigenvalues than dimension of vector space]], and that eigenspaces form a direct sum ([[§17 Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]]).

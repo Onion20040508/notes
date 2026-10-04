@@ -39,7 +39,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 ^def-9-1
 
 > [!remark]- Connections
-> - As an orbit space of $\mathrm{U}(1) = S^1$: [[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]] (cf. group actions and orbits, [[§23 Actions#^def-23-1|493 Def. §23.1]], [[§25 Orbits#^def-25-1|493 Def. §25.1]]); charts and smooth structure in [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§17 Projective Spaces as Smooth Manifolds#^thm-17-2|§17.2]]; the projection is a submersion, [[§38 Projective Spaces and the Hopf Fibration#^ex-38-2|Ex. §38.2]].
+> - As an orbit space of $\mathrm{U}(1) = S^1$: [[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]] (cf. group actions and orbits, [[§25 Actions#^def-25-1|493 Def. §25.1]], [[§27 Orbits#^def-27-1|493 Def. §27.1]]); charts and smooth structure in [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§17 Projective Spaces as Smooth Manifolds#^thm-17-2|§17.2]]; the projection is a submersion, [[§38 Projective Spaces and the Hopf Fibration#^ex-38-2|Ex. §38.2]].
 > - Real analogue in MATH 590: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2 (Projective n-Space)]], [[Projective plane]].
 
 > [!theorem] Proposition §9.1: $\mathbb{CP}^n$ is Hausdorff and Second Countable

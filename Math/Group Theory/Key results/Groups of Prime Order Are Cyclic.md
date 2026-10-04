@@ -5,10 +5,10 @@ source: "[[Group Theory]]"
 aliases: ["MATH 493 27.7"]
 tags: [group-theory, hub]
 ---
-![[§27 The Index and Lagrange's Theorem#^thm-27-7]]
+![[§29 The Index and Lagrange's Theorem#^thm-29-7]]
 
 ## Treated in
-- [[§27 The Index and Lagrange's Theorem#^thm-27-7|Theorem §27.7: Groups of Prime Order]], in [[§27 The Index and Lagrange's Theorem]]
+- [[§29 The Index and Lagrange's Theorem#^thm-29-7|Theorem §29.7: Groups of Prime Order]], in [[§29 The Index and Lagrange's Theorem]]
 
 ## Its proof uses
 - [[§4 Subgroups#^lem-4-4|Lemma §4.4: Exponent Laws]]
@@ -17,13 +17,13 @@ tags: [group-theory, hub]
 - [[§4 Subgroups#^prop-4-8|Proposition §4.8: Every Element of a Finite Group Has Finite Order]]
 - [[§17 Cyclic Groups#^thm-17-1|Theorem §17.1: Classification of Cyclic Groups]]
 - [[§17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]
-- [[§27 The Index and Lagrange's Theorem#^thm-27-2|Theorem §27.2: Lagrange]]
+- [[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2: Lagrange]]
 
 ## Used in (Group Theory)
-- [[§27 The Index and Lagrange's Theorem#^cor-27-8|Corollary §27.8: Groups of Prime Order Have No Proper Nontrivial Subgroups]]
+- [[§29 The Index and Lagrange's Theorem#^cor-29-8|Corollary §29.8: Groups of Prime Order Have No Proper Nontrivial Subgroups]]
 
 ## Connections
-- **Used for.** [[§27 The Index and Lagrange's Theorem#^cor-27-8|No Proper Nontrivial Subgroups]] (§27.8). The abelian simple groups are exactly the ℤ/pℤ ([[§40 Simple Groups#^thm-40-1|§40.1]]). Every non-identity element is a generator ([[§27 The Index and Lagrange's Theorem#^rem-27-3|A Classification, for Once]]).
-- **Prime is needed.** Order 4 has two groups, ℤ/4ℤ and ℤ/2ℤ × ℤ/2ℤ ≅ U₈ ([[§16 Isomorphisms#^prop-16-8|§16.8]]), though both are abelian ([[§32 Conjugation as an Action and the Class Equation#^prop-32-6|§32.6]]). Order 6 has two, ℤ/6ℤ and S₃.
+- **Used for.** [[§29 The Index and Lagrange's Theorem#^cor-29-8|No Proper Nontrivial Subgroups]] (§27.8). The abelian simple groups are exactly the ℤ/pℤ ([[§43 Simple Groups#^thm-43-1|§43.1]]). Every non-identity element is a generator ([[§29 The Index and Lagrange's Theorem#^rem-29-3|A Classification, for Once]]).
+- **Prime is needed.** Order 4 has two groups, ℤ/4ℤ and ℤ/2ℤ × ℤ/2ℤ ≅ U₈ ([[§16 Isomorphisms#^prop-16-8|§16.8]]), though both are abelian ([[§34 Conjugation as an Action and the Class Equation#^prop-34-6|§34.6]]). Order 6 has two, ℤ/6ℤ and S₃.
 - **Same idea elsewhere.** The 590 computation of π₁(P²) ends with the case p = 2 ([[§28 Fundamental Group of Some Surfaces#^thm-28-2|590 §28.2]]): the lifting correspondence shows |π₁(P²)| = 2 ([[Properties of the Lifting Correspondence]]), and a group of order 2 is ℤ/2ℤ.
 - **Coming later in the course.** The Sylow theorems extend such classifications to other small orders, for example in classifying small simple groups.

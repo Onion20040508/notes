@@ -34,7 +34,7 @@ tags: [differentiable-manifolds, math591]
 ^def-12-1
 
 > [!remark]- Connections
-> - Home of the algebra of actions: [[§23 Actions#^def-23-1|493 Def. §23.1 (Action; Right Action)]]; the permutation picture [[Actions Are Homomorphisms to S_X]].
+> - Home of the algebra of actions: [[§25 Actions#^def-25-1|493 Def. §25.1 (Action; Right Action)]]; the permutation picture [[Actions Are Homomorphisms to S_X]].
 
 > [!example] Example §12.1: Matrix Groups Acting on Column Vectors
 > Each of the groups over $\mathbb{R}$ above ($\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}$, $\mathrm{O}$, $\mathrm{SO}$) acts on $X = \mathbb{R}^n$, regarded as column vectors, by matrix multiplication $g \cdot x = gx$: $Ix = x$, and $g(hx) = (gh)x$ by associativity of matrix multiplication. Likewise the complex groups act on $\mathbb{C}^n$.
@@ -42,7 +42,7 @@ tags: [differentiable-manifolds, math591]
 ^ex-12-1
 
 > [!remark]- Connections
-> - In 493: [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-1|493 §30.1 (GL₃ acting on ℝ³)]], [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|493 §30.2 (O₃ acting on ℝ³)]]; the groups themselves: [[Matrix groups GLₙ, SLₙ and O(n)]].
+> - In 493: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-1|493 §32.1 (GL₃ acting on ℝ³)]], [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2 (O₃ acting on ℝ³)]]; the groups themselves: [[Matrix groups GLₙ, SLₙ and O(n)]].
 
 > [!example] Example §12.2: A Subgroup Acting by Multiplication
 > If $H \le G$ is a subgroup, then $H$ acts on $G$ by group multiplication, $H \times G \to G$, $(h, g) \mapsto hg$: axiom (1) is $eg = g$, axiom (2) is $h_1(h_2 g) = (h_1 h_2) g$. Note the notational clash with Definition [[§12 Group Actions and Orbit Spaces#^def-12-1|§12.1]]: here $H$ plays the role of the acting group and $G$ the role of the set.
@@ -50,7 +50,7 @@ tags: [differentiable-manifolds, math591]
 ^ex-12-2
 
 > [!remark]- Connections
-> - In 493 the orbits of this action are the right cosets: [[§26 Left and Right Cosets#^prop-26-1|493 §26.1 (Cosets Are Orbits)]]; the left-coset version is [[§13 Homogeneous Spaces#^prop-13-4|§13.4]].
+> - In 493 the orbits of this action are the right cosets: [[§28 Left and Right Cosets#^prop-28-1|493 §28.1 (Cosets Are Orbits)]]; the left-coset version is [[§13 Homogeneous Spaces#^prop-13-4|§13.4]].
 
 > [!definition] Definition §12.2: Continuous Action
 > If $G$ is a topological group and $X$ a topological space, an action is **continuous** if the map $G \times X \to X$, $(g,x) \mapsto g \cdot x$, is continuous (product topology on $G \times X$).
@@ -76,7 +76,7 @@ tags: [differentiable-manifolds, math591]
 ^def-12-3
 
 > [!remark]- Connections
-> - Home: [[§25 Orbits#^def-25-1|493 Def. §25.1 (Orbit; Orbit Space)]], where the orbit is written $Gx$.
+> - Home: [[§27 Orbits#^def-27-1|493 Def. §27.1 (Orbit; Orbit Space)]], where the orbit is written $Gx$.
 
 > [!remark] Remark: What an Orbit Is
 > The orbit of $x$ is the set of all places $x$ can be sent by the group: everything *reachable* from $x$ by acting with some $g \in G$. Two questions determine what an orbit looks like: what does the group *preserve*, and what does it *mix*? Whatever quantity is preserved by every $g$ is constant on orbits (so the orbit lies inside a level set of it); whatever the group can mix, it mixes within that level set. For rotations of $\mathbb{R}^n$ the preserved quantity is the norm $|x|$, and rotations mix everything of a given norm; so the orbits are spheres (Example [[§12 Group Actions and Orbit Spaces#^ex-12-4|§12.4]], Example [[§12 Group Actions and Orbit Spaces#^ex-12-5|§12.5]]).
@@ -106,10 +106,10 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-12-1
 
-*Uses:* [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§12 Group Actions and Orbit Spaces#^def-12-3|Def. §12.3]], [[§12 Group Actions and Orbit Spaces#^def-12-4|Def. §12.4]], [[§22 Equivalence Relations and Partitions#^prop-22-1|493 §22.1]]
+*Uses:* [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§12 Group Actions and Orbit Spaces#^def-12-3|Def. §12.3]], [[§12 Group Actions and Orbit Spaces#^def-12-4|Def. §12.4]], [[§24 Equivalence Relations and Partitions#^prop-24-1|493 §24.1]]
 
 > [!remark]- Connections
-> - Home of this result: [[§25 Orbits#^prop-25-2|493 §25.2 (The Orbit Relation)]], with a direct proof in [[§25 Orbits#^prop-25-1|493 §25.1 (Orbits Partition X)]].
+> - Home of this result: [[§27 Orbits#^prop-27-2|493 §27.2 (The Orbit Relation)]], with a direct proof in [[§27 Orbits#^prop-27-1|493 §27.1 (Orbits Partition X)]].
 
 > [!remark] Remark: “Reachable” Is the Equivalence Relation
 > In words: *$x \sim y$ iff $y$ can be reached from $x$ by the action*, and the orbit of $x$ is its equivalence class. The point of the proof is that “reachable” is automatically symmetric and transitive *because $G$ is a group*: if $g$ takes $x$ to $y$ then $g^{-1}$ takes $y$ back to $x$, and if $g$ takes $x$ to $y$ and $h$ takes $y$ to $z$ then $hg$ takes $x$ to $z$. Nothing had to be added by hand. Contrast Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]] in [[§4 Quotient Spaces and Open Maps#Open Maps and Open Relations|§4]], where the relation on $\mathbb{R}$ had to be *generated* by the single identification $0 \sim 1$ to become an equivalence relation. So the mental sequence for any orbit space is:
@@ -133,7 +133,7 @@ tags: [differentiable-manifolds, math591]
 ^def-12-5
 
 > [!remark]- Connections
-> - The underlying set is the orbit set of [[§25 Orbits#^def-25-2|493 Def. §25.2 (Orbit Space Notation)]], written $G \backslash X$ there for a left action.
+> - The underlying set is the orbit set of [[§27 Orbits#^def-27-2|493 Def. §27.2 (Orbit Space Notation)]], written $G \backslash X$ there for a left action.
 > - The topology is the quotient topology of [[§12 Quotient Topology#^def-12-3|590 Def. §12.3 (Quotient Space)]].
 
 > [!example] Example §12.3: $\mathbb{CP}^n$ Is an Orbit Space
@@ -187,7 +187,7 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 *Uses:* [[§12 Group Actions and Orbit Spaces#^ex-12-5|Ex. §12.5]], [[§12 Group Actions and Orbit Spaces#^def-12-5|Def. §12.5]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[Universal Property of Quotient Maps]]
 
 > [!remark]- Connections
-> - The same orbits for $\mathrm{O}_3$, with the orthonormal-basis argument and the bijection with the radius: [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|493 §30.2]], [[§25 Orbits#^def-25-2|493 Def. §25.2]]; extending to an orthonormal basis is [[§20 Orthonormal Bases#^ladr-6-36|LADR 6.36]] ([[Gram–Schmidt procedure]]).
+> - The same orbits for $\mathrm{O}_3$, with the orthonormal-basis argument and the bijection with the radius: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]], [[§27 Orbits#^def-27-2|493 Def. §27.2]]; extending to an orthonormal basis is [[§20 Orthonormal Bases#^ladr-6-36|LADR 6.36]] ([[Gram–Schmidt procedure]]).
 > - With $r = 1$ this is the transitivity used in [[§13 Homogeneous Spaces#^ex-13-3|The Sphere as a Homogeneous Space, §13.3]].
 
 > [!remark] Remark
@@ -229,7 +229,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 *Uses:* [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§12 Group Actions and Orbit Spaces#^def-12-2|Def. §12.2]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§9 Continuous Functions#^thm-9-4|590 §9.4]]
 
 > [!remark]- Connections
-> - The algebraic half (2)–(3) is [[§23 Actions#^prop-23-2|493 §23.2 (Each Group Element Acts Bijectively)]]; (2) says $g \mapsto L_g$ is a homomorphism, as in [[§23 Actions#^thm-23-3|493 §23.3]].
+> - The algebraic half (2)–(3) is [[§25 Actions#^prop-25-2|493 §25.2 (Each Group Element Acts Bijectively)]]; (2) says $g \mapsto L_g$ is a homomorphism, as in [[§25 Actions#^thm-25-3|493 §25.3]].
 
 > [!remark] Remark: A Model Proof
 > Uribe: “the reason I want to do this with simple proofs is because I want to model what is expected of you when you write your homework.” The features to imitate: name the map you are studying ($L_g$); prove continuity by exhibiting it as a composite of maps already known to be continuous; get the inverse from the algebra (the action axioms), not from a separate argument; and say which axiom is used where.

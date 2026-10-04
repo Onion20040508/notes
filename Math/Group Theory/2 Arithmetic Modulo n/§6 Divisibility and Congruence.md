@@ -75,8 +75,8 @@ tags: [group-theory, math493]
 *Uses:* [[§6 Divisibility and Congruence#^lem-6-1|§6.1]], [[§6 Divisibility and Congruence#^def-6-1|Def. §6.1]], [[§6 Divisibility and Congruence#^def-6-2|Def. §6.2]], [[§6 Divisibility and Congruence#^def-6-3|Def. §6.3]]
 
 > [!remark]- Connections
-> - The general notion: [[§22 Equivalence Relations and Partitions#^def-22-1|Equivalence Relation]].
-> - Congruence modulo $n$ is congruence modulo the subgroup $n\mathbb{Z}$: [[§26 Left and Right Cosets#^def-26-1|Congruence Modulo a Subgroup]].
+> - The general notion: [[§24 Equivalence Relations and Partitions#^def-24-1|Equivalence Relation]].
+> - Congruence modulo $n$ is congruence modulo the subgroup $n\mathbb{Z}$: [[§28 Left and Right Cosets#^def-28-1|Congruence Modulo a Subgroup]].
 > - Elementary version: [[§19 Congruence of Integers#^prop-19-5|250 Prop. §19.5]] (part 1) and [[§19 Congruence of Integers#^prop-19-1|250 Prop. §19.1]] (part 2).
 
 > [!definition] Definition §6.4: Residue Classes
@@ -89,7 +89,7 @@ tags: [group-theory, math493]
 ^def-6-4
 
 > [!remark]- Connections
-> - The classes $a + n\mathbb{Z}$ are the cosets of $n\mathbb{Z}$ in $\mathbb{Z}$: [[§26 Left and Right Cosets#^def-26-2|Left and Right Cosets]], [[§22 Equivalence Relations and Partitions#^def-22-2|Equivalence Class]].
+> - The classes $a + n\mathbb{Z}$ are the cosets of $n\mathbb{Z}$ in $\mathbb{Z}$: [[§28 Left and Right Cosets#^def-28-2|Left and Right Cosets]], [[§24 Equivalence Relations and Partitions#^def-24-2|Equivalence Class]].
 > - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^ex-21-7|590 Ex. §21.7]].
 > - Elementary version: [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-1|250 Def. §21.1]] (congruence class), with [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|250 Prop. §21.1]] (classes are equal or disjoint).
 

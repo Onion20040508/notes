@@ -55,7 +55,7 @@ Recall from [[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9
 *Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^thm-21-6|§21.6]], [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-3|Def. §21.3]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-4|§21.4]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§11 Properties of Finite Sets#^thm-11-7|§11.7]], [[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]]
 
 > [!remark]- Connections
-> - Developed further in: [[§27 The Index and Lagrange's Theorem#^cor-27-4|493 Cor. §27.4]] (Fermat's little theorem as $g^{\abs{G}} = e$ in the group $U_p$ of order $p - 1$, via Lagrange's theorem).
+> - Developed further in: [[§29 The Index and Lagrange's Theorem#^cor-29-4|493 Cor. §29.4]] (Fermat's little theorem as $g^{\abs{G}} = e$ in the group $U_p$ of order $p - 1$, via Lagrange's theorem).
 > - The bijection $[x] \mapsto [a][x]$ of the nonzero classes is [[§8 Invertibility and Unit Groups#^prop-8-2|493 Prop. §8.2]].
 
 > [!theorem] Corollary §24.2: $a^p \equiv a$ for Every Integer
@@ -107,7 +107,7 @@ Fermat's theorem need not give the *smallest* power of $a$ that is $\equiv 1$: t
 *Uses:* [[§24★ Congruence Modulo a Prime#^def-24-1|Def. §24.1]], [[§24★ Congruence Modulo a Prime#^thm-24-1|§24.1]], [[§15 The Division Theorem#^thm-15-1|§15.1]]
 
 > [!remark]- Connections
-> - The group version: the order of an element divides $\abs{G}$, [[§27 The Index and Lagrange's Theorem#^cor-27-3|493 Cor. §27.3]]; for $G = U_p$, $\abs{G} = p - 1$.
+> - The group version: the order of an element divides $\abs{G}$, [[§29 The Index and Lagrange's Theorem#^cor-29-3|493 Cor. §29.3]]; for $G = U_p$, $\abs{G} = p - 1$.
 
 ## 24.2 Wilson's Theorem
 
@@ -233,4 +233,4 @@ The converse of [[§24★ Congruence Modulo a Prime#^cor-24-6|Corollary §24.6]]
 ^rem-24-1
 
 > [!remark]- Connections
-> - Developed further in: [[§27 The Index and Lagrange's Theorem#^thm-27-2|493 Thm. §27.2]] (Lagrange's theorem: cosets partition a group into sets of equal size) and [[§27 The Index and Lagrange's Theorem#^cor-27-4|493 Cor. §27.4]] (Fermat as its corollary).
+> - Developed further in: [[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]] (Lagrange's theorem: cosets partition a group into sets of equal size) and [[§29 The Index and Lagrange's Theorem#^cor-29-4|493 Cor. §29.4]] (Fermat as its corollary).

@@ -55,8 +55,8 @@ tags: [group-theory, math493]
 *Uses:* [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[§10 Cycle Notation and the Group S₃#^def-10-1|Def. §10.1]], [[§11 Disjoint Cycle Decomposition#^def-11-1|Def. §11.1]], [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§4 Subgroups#^lem-4-4|§4.4]]
 
 > [!remark]- Connections
-> - The multiset of cycle lengths is the [[§31 Conjugacy Classes#^def-31-2|Cycle Type]], which classifies conjugacy: [[§31 Conjugacy Classes#^thm-31-3|Conjugacy Classes in Sₙ Are Cycle Types]].
-> - The loops are the orbits of $\langle \sigma \rangle$ acting on $\{1, \ldots, n\}$: [[§25 Orbits#^def-25-1|Orbit]].
+> - The multiset of cycle lengths is the [[§33 Conjugacy Classes#^def-33-2|Cycle Type]], which classifies conjugacy: [[§33 Conjugacy Classes#^thm-33-3|Conjugacy Classes in Sₙ Are Cycle Types]].
+> - The loops are the orbits of $\langle \sigma \rangle$ acting on $\{1, \ldots, n\}$: [[§27 Orbits#^def-27-1|Orbit]].
 
 > [!example] Example §11.1: Decomposing a Permutation in $S_7$
 > Let $\sigma \in S_7$ be given by $1\mapsto5,\ 2\mapsto2,\ 3\mapsto7,\ 4\mapsto1,\ 5\mapsto4,\ 6\mapsto3,\ 7\mapsto6$. Starting at $1$: $1 \to 5 \to 4 \to 1$, giving $(1\,5\,4)$. The smallest unvisited element is $2$, which is fixed. Next, $3 \to 7 \to 6 \to 3$, giving $(3\,7\,6)$. All seven elements are now accounted for:

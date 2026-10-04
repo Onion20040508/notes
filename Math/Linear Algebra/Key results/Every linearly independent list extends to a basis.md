@@ -21,7 +21,7 @@ tags: [linear-algebra, hub]
 - [[§20 Orthonormal Bases#^ladr-6-36|6.36 Every orthonormal list extends to an orthonormal basis]]
 
 ## Used in (Group Theory)
-- [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-1|Proposition §30.1: GL_3(ℝ) Acting on ℝ³]]
+- [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-1|Proposition §32.1: GL_3(ℝ) Acting on ℝ³]]
 
 ## Used in (Differentiable Manifolds)
 - [[§20 Linear Algebra Toolkit#^prop-20-3|Proposition §20.3: The Double Dual]]

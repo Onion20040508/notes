@@ -485,7 +485,7 @@ Both examples have *countable* orthonormal bases. Wu announced for next lecture 
 > \Bigl\| \sum_{j=1}^n \bigl( (x, e_j) - a_j \bigr) e_j \Bigr\|^2 = \sum_{j=1}^n |(x, e_j) - a_j|^2 < n \cdot \frac{\varepsilon^2}{4n} = \frac{\varepsilon^2}{4},
 > $$
 >
-> so $\bigl\| x - \sum_{j=1}^n a_j e_j \bigr\| < \varepsilon/2 + \varepsilon/2 = \varepsilon$. The tail of the expansion is small, as for $\ell^p$ ([[§25 Sequence and Function Spaces#^prop-25-1|§25.1]]], below).
+> so $\bigl\| x - \sum_{j=1}^n a_j e_j \bigr\| < \varepsilon/2 + \varepsilon/2 = \varepsilon$. The tail of the expansion is small, as for $\ell^p$ ([[§25 Sequence and Function Spaces#^prop-25-1|§25.1]], below).
 
 ^pf-24-13
 

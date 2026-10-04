@@ -40,13 +40,30 @@ Recall from The Group $S_3$ in Detail ([[§10 Cycle Notation and the Group S₃#
 *Uses:* [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§4 Subgroups#^prop-4-5|§4.5]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§10 Cycle Notation and the Group S₃#^ex-10-1|Ex. §10.1]], [[§11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]]
 
 ![[m493-13-1.svg]]
-*The subgroup lattice of $S_3$, arranged by order; lines denote inclusion. Shaded blue: the normal subgroups ([[§35 Normal Subgroups#^def-35-1|§35]]). Every order divides $6$, and nothing sits at order $4$ or $5$ (see the remark below).*
+*The subgroup lattice of $S_3$, arranged by order; lines denote inclusion. Shaded blue: the normal subgroups ([[§38 Normal Subgroups#^def-38-1|§35]]). Every order divides $6$, and nothing sits at order $4$ or $5$ (see the remark below).*
 
 > [!remark]- Connections
 > - The worksheet summary alongside $\mathbb{Z}$, $\mathbb{Z}^2$, $\mathbb{R}$, $GL_n$: [[§5 A Zoo of Subgroups#^rem-5-3|Summary of WS 1.7]].
-> - Which of these are normal: [[§35 Normal Subgroups#^ex-35-1|A Non-Normal Subgroup of S₃]], [[§36 Sources of Normal Subgroups#^ex-36-3|Normal Subgroups of S₃ and S₄]].
+> - Which of these are normal: [[§38 Normal Subgroups#^ex-38-1|A Non-Normal Subgroup of S₃]], [[§39 Sources of Normal Subgroups#^ex-39-3|Normal Subgroups of S₃ and S₄]].
 
 > [!remark] Remark: Preview of Lagrange
-> The subgroup orders $1, 2, 3, 6$ all divide $|S_3| = 6$ — and $S_3$ has no subgroup of order $4$ or $5$. This is no accident ([[§27 The Index and Lagrange's Theorem#^thm-27-2|Lagrange's theorem]], coming soon), but note that our classification above did *not* use it: everything followed from closure and cancellation.
+> The subgroup orders $1, 2, 3, 6$ all divide $|S_3| = 6$ — and $S_3$ has no subgroup of order $4$ or $5$. This is no accident ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange's theorem]], coming soon), but note that our classification above did *not* use it: everything followed from closure and cancellation.
 
 ^rem-13-1
+
+*Chapter 3 computes $S_3$ in full. This part gathers its earlier appearances in the chapter, in order, and ends with Chapter 1's mixed-hypothesis example redone in cycle notation.*
+
+## S₃ Earlier in This Chapter
+
+Chapter 3 makes $S_3$ explicit: its six elements in two-line and cycle notation, its multiplication table, and the complete list of its subgroups. Cycle notation also explains Chapter 1's mixed-hypothesis example: conjugating a transposition relabels it.
+
+![[§10 Cycle Notation and the Group S₃#^ex-10-1]]
+
+[[§13 The Symmetric Group S₃#^prop-13-1|Subgroups of S₃]] and [[§13 The Symmetric Group S₃#^rem-13-1|Preview of Lagrange]] above complete the picture, with the subgroup lattice. The example below redoes [[§2 First Consequences of the Axioms#^ex-2-1|The Mixed Hypothesis Does Not Cancel]] with [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle]].
+
+> [!example] Example §13.1: The Mixed Hypothesis of WS 1.1, Revisited
+> In [[§2 First Consequences of the Axioms#^ex-2-1|that example]], $g = (1\,2)$ and $h_1 = (2\,3)$ gave $g h_1 g^{-1} = (1\,3)$. By [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle]] this is immediate: apply $g$ to the entries of $(2\,3)$, sending $2 \mapsto 1$ and $3 \mapsto 3$, to get $(1\,3)$. No multiplication needed.
+
+^ex-13-1
+
+*$S_3$ elsewhere:* ← [[§5 A Zoo of Subgroups#The Symmetric Group S₃|Chapter 1]] · [[§19 S₃, ℤ∕nℤ and Uₙ#The Symmetric Group S₃|Chapter 4]] → · [[The symmetric group S₃|all appearances]]

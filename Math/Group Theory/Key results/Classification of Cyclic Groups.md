@@ -22,11 +22,11 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§17 Cyclic Groups#^cor-17-2|Corollary §17.2: Cyclic iff There Is an Element of Order ∣G∣]]
 - [[§17 Cyclic Groups#^cor-17-6|Corollary §17.6: Generators and Subgroups of a Finite Cyclic Group]]
-- [[§27 The Index and Lagrange's Theorem#^thm-27-7|Theorem §27.7: Groups of Prime Order]]
-- [[§40 Simple Groups#^thm-40-1|Theorem §40.1: Abelian Simple Groups]]
+- [[§29 The Index and Lagrange's Theorem#^thm-29-7|Theorem §29.7: Groups of Prime Order]]
+- [[§43 Simple Groups#^thm-43-1|Theorem §43.1: Abelian Simple Groups]]
 
 ## Connections
-- **Used for.** [[§17 Cyclic Groups#^cor-17-2|Cyclic iff There Is an Element of Full Order]] (§17.2), [[Groups of Prime Order Are Cyclic]], and [[§40 Simple Groups#^thm-40-1|Abelian Simple Groups]] (§40.1). Instances: ℤ/4ℤ ≅ U₅ and U₇ ≅ ℤ/6ℤ ([[§17 Cyclic Groups#^rem-17-1|Remark §17.1]]).
+- **Used for.** [[§17 Cyclic Groups#^cor-17-2|Cyclic iff There Is an Element of Full Order]] (§17.2), [[Groups of Prime Order Are Cyclic]], and [[§43 Simple Groups#^thm-43-1|Abelian Simple Groups]] (§40.1). Instances: ℤ/4ℤ ≅ U₅ and U₇ ≅ ℤ/6ℤ ([[§17 Cyclic Groups#^rem-17-1|Remark §17.1]]).
 - **The order classifies cyclic groups only.** U₈ and ℤ/4ℤ both have order 4 but are not isomorphic, because U₈ is not cyclic ([[§16 Isomorphisms#^prop-16-8|§16.8]]). Compare [[Dimension shows whether vector spaces are isomorphic]] (LADR 3.70), where one number classifies all finite-dimensional spaces.
 - **Same idea elsewhere.** The 590 notes state the result without proof ([[§21 Algebra Prerequisites꞉ Groups#^rem-21-9|Remark after §21.7]]). Both kinds appear there as fundamental groups: π₁(S¹) ≅ ℤ ([[Fundamental Group of the Circle]]) and π₁(P²) ≅ ℤ/2ℤ ([[§28 Fundamental Group of Some Surfaces#^thm-28-2|590 §28.2]]).
 - **Coming later in the course.** The structure theorem for finitely generated abelian groups writes each such group as a product of cyclic groups, so this classification is its building block.

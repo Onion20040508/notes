@@ -68,7 +68,7 @@ tags: [linear-algebra]
 %% ex:3.4-fig %%
 
 > [!remark]- Connections
-> - Restated and re-proved in 493 as [[§19 Polynomial Rings, Permutation Matrices, and Representations#^thm-19-2|493 Thm. §19.2]] (Linear Extension), where it turns permutations of a basis into the permutation representation, [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-4|493 Prop. §19.4]].
+> - Restated and re-proved in 493 as [[§20 Polynomial Rings, Permutation Matrices, and Representations#^thm-20-2|493 Thm. §20.2]] (Linear Extension), where it turns permutations of a basis into the permutation representation, [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-4|493 Prop. §20.4]].
 > - The case V = ℝⁿ with the standard basis: [[§9 The Matrix of a Linear Transformation#^thm-9-1|235 Thm. §9.1]] (T is determined by T(e₁), …, T(eₙ), the columns of its standard matrix).
 
 > [!example] Example: The linear map lemma, pictured

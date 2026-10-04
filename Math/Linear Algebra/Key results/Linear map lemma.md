@@ -23,9 +23,9 @@ tags: [linear-algebra, hub]
 - [[§35 Tensor Products#^ladr-9-79|9.79 Converting bilinear maps to linear maps]]
 
 ## Used in (Group Theory)
-- [[§19 Polynomial Rings, Permutation Matrices, and Representations#^cor-19-3|Corollary §19.3: Permutations of the Basis Give Invertible Linear Maps]]
-- [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-4|Proposition §19.4: Permutation Representation of S_X]]
-- [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-4|Proposition §30.4: The Cube Group Embeds in S_6]]
+- [[§20 Polynomial Rings, Permutation Matrices, and Representations#^cor-20-3|Corollary §20.3: Permutations of the Basis Give Invertible Linear Maps]]
+- [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-4|Proposition §20.4: Permutation Representation of S_X]]
+- [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-4|Proposition §32.4: The Cube Group Embeds in S_6]]
 
 ## Used in (Differentiable Manifolds)
 - [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-6|Proposition §14.6: O(n) Acts Transitively on Gr_k(ℝⁿ)]]

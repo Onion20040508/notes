@@ -12,26 +12,30 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 - A zoo of subgroups of $GL_2(\mathbb{R})$ and $GL_3(\mathbb{R})$ ([[§5 A Zoo of Subgroups#^ex-5-4|§5]])
 - $GL_n(\mathbb{R})$ contains copies of essentially every group we meet ([[§5 A Zoo of Subgroups#^rem-5-3|§5]])
 - $\det$ is a homomorphism with kernel $SL_n$ ([[§15 Homomorphisms#^ex-15-1|§15]])
-- Permutation matrices give an injective homomorphism $S_n \to GL_n(k)$ ([[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|§19]])
-- A representation is a homomorphism into $GL_n(k)$ ([[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-6|§19]])
-- The sign factors as $\operatorname{sgn} = \det \circ M$ ([[§20 The Sign Homomorphism and the Alternating Group#^rem-20-2|§20]])
-- $GL_n(k)$ acts on $k^n$ ([[§23 Actions#^ex-23-2|§23]])
-- Every finite group is a matrix group ([[§23 Actions#^cor-23-6|§23]])
-- $GL_3(\mathbb{R})$ acting on $\mathbb{R}^3$: two orbits, and the stabilizer of $e_1$ ([[§30 Examples꞉ Linear Groups and the Cube#^prop-30-1|§30]])
-- $GL_3$ versus $O_3$: orbits and stabilizers compared ([[§30 Examples꞉ Linear Groups and the Cube#^rem-30-1|§30]])
-- $O_3(\mathbb{R})$ acting on $\mathbb{R}^3$: the orbits are spheres ([[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|§30]])
-- Conjugacy in $GL_n(\mathbb{C})$ is similarity ([[§31 Conjugacy Classes#^def-31-3|§31]])
-- The conjugacy class of $\operatorname{diag}(3, 4)$: trace $7$, determinant $12$ ([[§31 Conjugacy Classes#^prop-31-4|§31]])
-- Scalar matrices are central; Jordan form in general ([[§31 Conjugacy Classes#^rem-31-1|§31]])
-- Conjugacy classes of matrices as orbits of $GL_n(\mathbb{C})$ ([[§32 Conjugation as an Action and the Class Equation#^rem-32-2|§32]])
-- $SL_n(\mathbb{R}) = \operatorname{Ker}(\det)$ is normal ([[§36 Sources of Normal Subgroups#^ex-36-2|§36]])
-- Normal and non-normal subgroups of $GL_2(\mathbb{R})$ ([[§36 Sources of Normal Subgroups#^prop-36-8|§36]])
-- $GL_n(k)/SL_n(k) \cong k^\times$ ([[§38 The First Isomorphism Theorem#^ex-38-1|§38]])
-- The projective special linear group $PSL_n(F) = SL_n(F)/Z$ ([[§40 Simple Groups#^def-40-2|§40]])
-- $PSL_n(F)$ is simple, with two exceptions ([[§40 Simple Groups#^thm-40-13|§40]])
-- The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$ ([[§40 Simple Groups#^ex-40-3|§40]])
-- $\det$ is a character of $GL_n(k)$ ([[§41 Characters#^ex-41-1|§41]])
-- Characters are the representations into $GL_1(k) = k^\times$ ([[§41 Characters#^rem-41-4|§41]])
+- Permutation matrices give an injective homomorphism $S_n \to GL_n(k)$ ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§19]])
+- A representation is a homomorphism into $GL_n(k)$ ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|§19]])
+- The sign factors as $\operatorname{sgn} = \det \circ M$ ([[§21 The Sign Homomorphism and the Alternating Group#^rem-21-2|§20]])
+- $GL_n(k)$ acts on $k^n$ ([[§25 Actions#^ex-25-2|§23]])
+- Every finite group is a matrix group ([[§25 Actions#^cor-25-6|§23]])
+- $GL_3(\mathbb{R})$ acting on $\mathbb{R}^3$: two orbits, and the stabilizer of $e_1$ ([[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-1|§30]])
+- $GL_3$ versus $O_3$: orbits and stabilizers compared ([[§32 Linear Groups, the Cube, S₃ and A₄#^rem-32-1|§30]])
+- $O_3(\mathbb{R})$ acting on $\mathbb{R}^3$: the orbits are spheres ([[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|§30]])
+- Conjugacy in $GL_n(\mathbb{C})$ is similarity ([[§33 Conjugacy Classes#^def-33-3|§31]])
+- The conjugacy class of $\operatorname{diag}(3, 4)$: trace $7$, determinant $12$ ([[§33 Conjugacy Classes#^prop-33-4|§31]])
+- Scalar matrices are central; Jordan form in general ([[§33 Conjugacy Classes#^rem-33-1|§31]])
+- Conjugacy classes of matrices as orbits of $GL_n(\mathbb{C})$ ([[§34 Conjugation as an Action and the Class Equation#^rem-34-2|§32]])
+- $SL_n(\mathbb{R}) = \operatorname{Ker}(\det)$ is normal ([[§39 Sources of Normal Subgroups#^ex-39-2|§36]])
+- Normal and non-normal subgroups of $GL_2(\mathbb{R})$ ([[§39 Sources of Normal Subgroups#^prop-39-8|§36]])
+- $GL_n(k)/SL_n(k) \cong k^\times$ ([[§41 The First Isomorphism Theorem#^ex-41-1|§38]])
+- The projective special linear group $PSL_n(F) = SL_n(F)/Z$ ([[§43 Simple Groups#^def-43-2|§40]])
+- $PSL_n(F)$ is simple, with two exceptions ([[§43 Simple Groups#^thm-43-13|§40]])
+- The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$ ([[§43 Simple Groups#^ex-43-3|§40]])
+- $\det$ is a character of $GL_n(k)$ ([[§45 Characters#^ex-45-1|§41]])
+- Characters are the representations into $GL_1(k) = k^\times$ ([[§45 Characters#^rem-45-4|§41]])
+
+## Chapter by chapter
+
+Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SLₙ and O(n)|Chapter 1]] · [[§19 S₃, ℤ∕nℤ and Uₙ#GLₙ, SLₙ and O(n)|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#GLₙ, SLₙ and O(n)|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 7]] · [[§44 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§47 S₃, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 9]].
 
 ## $GL_n(k)$ is a group, non-abelian for $n \geq 2$
 ![[§3 Basic Examples of Groups#^def-3-6]]
@@ -52,61 +56,61 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 ![[§15 Homomorphisms#^ex-15-1]]
 
 ## Permutation matrices give an injective homomorphism $S_n \to GL_n(k)$
-![[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5]]
+![[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5]]
 
 ## A representation is a homomorphism into $GL_n(k)$
-![[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-6]]
+![[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6]]
 
 ## The sign factors as $\operatorname{sgn} = \det \circ M$
-![[§20 The Sign Homomorphism and the Alternating Group#^rem-20-2]]
+![[§21 The Sign Homomorphism and the Alternating Group#^rem-21-2]]
 
 ## $GL_n(k)$ acts on $k^n$
-![[§23 Actions#^ex-23-2]]
+![[§25 Actions#^ex-25-2]]
 
 ## Every finite group is a matrix group
-![[§23 Actions#^cor-23-6]]
+![[§25 Actions#^cor-25-6]]
 
 ## $GL_3(\mathbb{R})$ acting on $\mathbb{R}^3$: two orbits, and the stabilizer of $e_1$
-![[§30 Examples꞉ Linear Groups and the Cube#^prop-30-1]]
+![[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-1]]
 
 ## $GL_3$ versus $O_3$: orbits and stabilizers compared
-![[§30 Examples꞉ Linear Groups and the Cube#^rem-30-1]]
+![[§32 Linear Groups, the Cube, S₃ and A₄#^rem-32-1]]
 
 ## $O_3(\mathbb{R})$ acting on $\mathbb{R}^3$: the orbits are spheres
-![[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2]]
+![[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2]]
 
 ## Conjugacy in $GL_n(\mathbb{C})$ is similarity
-![[§31 Conjugacy Classes#^def-31-3]]
+![[§33 Conjugacy Classes#^def-33-3]]
 
 ## The conjugacy class of $\operatorname{diag}(3, 4)$: trace $7$, determinant $12$
-![[§31 Conjugacy Classes#^prop-31-4]]
+![[§33 Conjugacy Classes#^prop-33-4]]
 
 ## Scalar matrices are central; Jordan form in general
-![[§31 Conjugacy Classes#^rem-31-1]]
+![[§33 Conjugacy Classes#^rem-33-1]]
 
 ## Conjugacy classes of matrices as orbits of $GL_n(\mathbb{C})$
-![[§32 Conjugation as an Action and the Class Equation#^rem-32-2]]
+![[§34 Conjugation as an Action and the Class Equation#^rem-34-2]]
 
 ## $SL_n(\mathbb{R}) = \operatorname{Ker}(\det)$ is normal
-![[§36 Sources of Normal Subgroups#^ex-36-2]]
+![[§39 Sources of Normal Subgroups#^ex-39-2]]
 
 ## Normal and non-normal subgroups of $GL_2(\mathbb{R})$
-![[§36 Sources of Normal Subgroups#^prop-36-8]]
+![[§39 Sources of Normal Subgroups#^prop-39-8]]
 
 ## $GL_n(k)/SL_n(k) \cong k^\times$
-![[§38 The First Isomorphism Theorem#^ex-38-1]]
+![[§41 The First Isomorphism Theorem#^ex-41-1]]
 
 ## The projective special linear group $PSL_n(F) = SL_n(F)/Z$
-![[§40 Simple Groups#^def-40-2]]
+![[§43 Simple Groups#^def-43-2]]
 
 ## $PSL_n(F)$ is simple, with two exceptions
-![[§40 Simple Groups#^thm-40-13]]
+![[§43 Simple Groups#^thm-43-13]]
 
 ## The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$
-![[§40 Simple Groups#^ex-40-3]]
+![[§43 Simple Groups#^ex-43-3]]
 
 ## $\det$ is a character of $GL_n(k)$
-![[§41 Characters#^ex-41-1]]
+![[§45 Characters#^ex-45-1]]
 
 ## Characters are the representations into $GL_1(k) = k^\times$
-![[§41 Characters#^rem-41-4]]
+![[§45 Characters#^rem-45-4]]

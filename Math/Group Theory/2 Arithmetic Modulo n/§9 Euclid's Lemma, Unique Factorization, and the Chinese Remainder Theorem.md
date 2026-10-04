@@ -64,7 +64,7 @@ tags: [group-theory, math493]
 *Uses:* [[§7 The Group ℤ∕nℤ#^def-7-1|Def. §7.1]], [[§7 The Group ℤ∕nℤ#^def-7-2|Def. §7.2]], [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]], [[§5 A Zoo of Subgroups#^cor-5-2|§5.2]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
 
 > [!remark]- Connections
-> - Applied to unit groups in [[§21 The Structure of Uₙ#^thm-21-2|Uₙ as a Product of Prime-Power Unit Groups]] (PS 1.6(3)).
+> - Applied to unit groups in [[§22 The Structure of Uₙ#^thm-22-2|Uₙ as a Product of Prime-Power Unit Groups]] (PS 1.6(3)).
 
 > [!example] Example §9.1: A CRT Computation
 > Solve $x \equiv 2 \pmod 3$, $x \equiv 3 \pmod 5$. [[§5 A Zoo of Subgroups#^cor-5-2|Bézout]]: $2 \cdot 3 - 1 \cdot 5 = 1$, so $u = 2$, $v = -1$ with $m = 3$, $n = 5$. Then $x = s\,mu + r\,nv = 3 \cdot 6 + 2 \cdot (-5) = 8$. Check: $8 \equiv 2 \pmod 3$, $8 \equiv 3 \pmod 5$; all solutions are $8 + 15k$.

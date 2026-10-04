@@ -151,12 +151,12 @@ The results from other subjects that this course's proofs and definitions cite m
 **[[Group Theory]]**
 - [[§15 Homomorphisms#^def-15-1|Definition §15.1: Group Homomorphism]] (4)
 - [[§4 Subgroups#^def-4-1|Definition §4.1: Subgroup]] (3)
-- [[§20 The Sign Homomorphism and the Alternating Group#^cor-20-4|Corollary §20.4: Parity of a Permutation]] (1)
-- [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-2|Theorem §20.2: Three Formulas for the Sign]] (1)
-- [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|Theorem §20.3: The Sign Is a Homomorphism]] (1)
-- [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-7|Theorem §20.7: Generators of Sₙ]] (1)
-- [[§22 Equivalence Relations and Partitions#^prop-22-1|Proposition §22.1: Equivalence Classes Partition a Set]] (1)
-- [[§26 Left and Right Cosets#^def-26-2|Definition §26.2: Left and Right Cosets]] (1)
+- [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Corollary §21.4: Parity of a Permutation]] (1)
+- [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Theorem §21.2: Three Formulas for the Sign]] (1)
+- [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|Theorem §21.3: The Sign Is a Homomorphism]] (1)
+- [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|Theorem §21.7: Generators of Sₙ]] (1)
+- [[§24 Equivalence Relations and Partitions#^prop-24-1|Proposition §24.1: Equivalence Classes Partition a Set]] (1)
+- [[§28 Left and Right Cosets#^def-28-2|Definition §28.2: Left and Right Cosets]] (1)
 
 **[[Single Variable Analysis]]**
 - [[§28 Basic Properties of the Derivative#^thm-28-2|Theorem §28.2: Arithmetic of Derivatives]] (1)

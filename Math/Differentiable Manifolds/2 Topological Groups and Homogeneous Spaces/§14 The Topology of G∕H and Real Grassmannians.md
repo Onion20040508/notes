@@ -102,7 +102,7 @@ Upstairs is the group, downstairs its coset space, and the triangle commutes: $\
 
 > [!remark]- Connections
 > - The same pattern in 590 — a map constant on fibres induces a continuous bijection from the quotient: [[§12 Quotient Topology#^cor-12-4|590 §12.4 (Induced Bijection from Quotient)]].
-> - The underlying bijection is the orbit bijection [[§28 Orbit–Stabilizer#^prop-28-2|493 §28.2]].
+> - The underlying bijection is the orbit bijection [[§30 Orbit–Stabilizer#^prop-30-2|493 §30.2]].
 
 > [!example] Example §14.1: The Circle as $\mathbb{R}/\mathbb{Z}$
 > Let the additive group $\mathbb{R}$ act on $S^1 = \{z \in \mathbb{C} \mid |z| = 1\}$ by
@@ -176,7 +176,7 @@ The same triangle with $G = \mathbb{R}$. The exponential wraps the line around t
 *Uses:* [[§13 Homogeneous Spaces#^def-13-2|Def. §13.2]], [[§14 The Topology of G∕H and Real Grassmannians#^def-14-1|Def. §14.1]], [[§14 The Topology of G∕H and Real Grassmannians#^def-14-2|Def. §14.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|Def. §10.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]]
 
 > [!remark]- Connections
-> - $H_{a \cdot x_0} = aH_{x_0}a^{-1}$ is [[§24 Stabilizers and Fixed Points#^prop-24-2|493 §24.2 (Stabilizers of Points in the Same Orbit Are Conjugate)]].
+> - $H_{a \cdot x_0} = aH_{x_0}a^{-1}$ is [[§26 Stabilizers and Fixed Points#^prop-26-2|493 §26.2 (Stabilizers of Points in the Same Orbit Are Conjugate)]].
 
 > [!remark] Remark: Giving a Set a Topology
 > Theorem [[§14 The Topology of G∕H and Real Grassmannians#^thm-14-3|§14.3]] is also used in reverse: when $X$ is merely a *set* on which $G$ acts transitively, the [[§14 The Topology of G∕H and Real Grassmannians#^def-14-2|definition above]] gives it a topology — “that's a natural way to give a topology to homogeneous spaces.” This is how the Grassmannians below get their topology, and the [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-4|proposition]] says the result is canonical.
@@ -246,7 +246,7 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 *Uses:* [[§14 The Topology of G∕H and Real Grassmannians#^def-14-3|Def. §14.3]], [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§13 Homogeneous Spaces#^def-13-1|Def. §13.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|Def. §10.6]], [[Gram–Schmidt procedure]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]], [[Linear map lemma]]
 
 > [!remark]- Connections
-> - The case $k = 1$ of the orthonormal-basis argument is [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|493 §30.2]] and [[§12 Group Actions and Orbit Spaces#^ex-12-5|Ex. §12.5]]; orthonormal bases in LADR: [[§20 Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]].
+> - The case $k = 1$ of the orthonormal-basis argument is [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]] and [[§12 Group Actions and Orbit Spaces#^ex-12-5|Ex. §12.5]]; orthonormal bases in LADR: [[§20 Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]].
 
 > [!theorem] Proposition §14.7: Isotropy of the Standard $k$-Plane
 > Let $V_0 = \operatorname{span}(e_1, \ldots, e_k) \in \mathrm{Gr}_k(\mathbb{R}^n)$ be the base point. Then
@@ -269,7 +269,7 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 *Uses:* [[§13 Homogeneous Spaces#^def-13-2|Def. §13.2]], [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-6|§14.6]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|Def. §10.6]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-5|§10.5]]
 
 > [!remark]- Connections
-> - The case $k = 1$ (up to reordering) is $\operatorname{Stab}(e_1) \cong \mathrm{O}_2$ in [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|493 §30.2]](2).
+> - The case $k = 1$ (up to reordering) is $\operatorname{Stab}(e_1) \cong \mathrm{O}_2$ in [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]](2).
 
 **Transcription note.** Page 13 of the handwritten notes writes the base point as the span of $e_1$ through $e_n$. A $k$-plane is spanned by $k$ vectors, so the base point is the span of $e_1$ through $e_k$, as above.
 

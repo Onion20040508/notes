@@ -145,7 +145,7 @@ tags: [group-theory, math493]
 ^def-8-3
 
 > [!remark]- Connections
-> - Computed from the prime factorization in [[§21 The Structure of Uₙ#^cor-21-3|Euler's Totient Formula]].
+> - Computed from the prime factorization in [[§22 The Structure of Uₙ#^cor-22-3|Euler's Totient Formula]].
 > - Same definition in 250, with $\varphi(p^k)$ computed: [[§23 The Sequence of Prime Numbers#^ex-23-5|250 Ex. §23.5]].
 
 > [!example] Example §8.5: The Unit Groups for Small $n$
@@ -230,7 +230,7 @@ tags: [group-theory, math493]
 *Uses:* [[§5 A Zoo of Subgroups#^cor-5-2|§5.2]], [[§8 Invertibility and Unit Groups#^prop-8-1|§8.1]], [[§8 Invertibility and Unit Groups#^def-8-1|Def. §8.1]], [[§8 Invertibility and Unit Groups#^def-8-4|Def. §8.4]], [[§7 The Group ℤ∕nℤ#^def-7-2|Def. §7.2]], [[§7 The Group ℤ∕nℤ#^prop-7-1|§7.1]], [[§1 The Definition of a Group#^def-1-1|Def. §1.1]]
 
 > [!remark]- Connections
-> - The structure of $U_n$ via the Chinese Remainder Theorem: [[§21 The Structure of Uₙ#^thm-21-2|Uₙ as a Product of Prime-Power Unit Groups]] (PS 1.6(3)).
+> - The structure of $U_n$ via the Chinese Remainder Theorem: [[§22 The Structure of Uₙ#^thm-22-2|Uₙ as a Product of Prime-Power Unit Groups]] (PS 1.6(3)).
 > - Its multiplication tables for small $n$: [[§14 Multiplication Tables#^ex-14-3|Table of U₇]], [[§14 Multiplication Tables#^ex-14-4|Table of U₈]].
 
 > [!remark] Remark: Computing Inverses in $U_n$
@@ -251,4 +251,4 @@ tags: [group-theory, math493]
 *Uses:* [[§3 Basic Examples of Groups#^def-3-3|Def. §3.3]], [[§7 The Group ℤ∕nℤ#^prop-7-1|§7.1]], [[§8 Invertibility and Unit Groups#^prop-8-3|§8.3]], [[§8 Invertibility and Unit Groups#^prop-8-1|§8.1]], [[§8 Invertibility and Unit Groups#^def-8-1|Def. §8.1]]
 
 > [!remark]- Connections
-> - Finite fields beyond $\mathbb{F}_p$: [[§40 Simple Groups#^ex-40-2|The Field F₉]] and the [[§40 Simple Groups#^thm-40-12|Classification of Finite Fields]].
+> - Finite fields beyond $\mathbb{F}_p$: [[§43 Simple Groups#^ex-43-2|The Field F₉]] and the [[§43 Simple Groups#^thm-43-12|Classification of Finite Fields]].

@@ -72,7 +72,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§12 The Inv
 
 > [!remark]- Connections
 > - Rigorous treatment: Axler defines $\det$ through the one-dimensional space of alternating $n$-linear forms ([[§34 Determinants#^ladr-9-43|LADR 9.43]]) and derives the closed formula $\det A = \sum_{\sigma} \operatorname{sign}(\sigma)\, a_{\sigma(1),1} \cdots a_{\sigma(n),n}$ over all $n!$ permutations ([[§34 Determinants#^ladr-9-46|LADR 9.46]]); unwinding Lay's recursion gives exactly this sum.
-> - The sign of a permutation and the parity of the number of inversions: [[§20 The Sign Homomorphism and the Alternating Group#^def-20-2|493 Def. §20.2]], [[§33 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]]; the sign is $\det$ of the permutation matrix ([[§20 The Sign Homomorphism and the Alternating Group#^thm-20-2|493 Thm. §20.2]]).
+> - The sign of a permutation and the parity of the number of inversions: [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|493 Def. §21.2]], [[§33 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]]; the sign is $\det$ of the permutation matrix ([[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|493 Thm. §21.2]]).
 
 > [!definition] Definition §20.3: Cofactor
 > Given $A = [a_{ij}]$, the **$(i,j)$-cofactor** of $A$ is the number

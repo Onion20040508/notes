@@ -265,7 +265,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 ^def-23-2
 
 > [!remark]- Connections
-> - Conjugation as a group action on the group itself: [[§32 Conjugation as an Action and the Class Equation#^prop-32-1|493 §32.1]]; $\mathrm{Ad}_g$ is conjugation acting on $T^{\mathrm{geo}}_IG$.
+> - Conjugation as a group action on the group itself: [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|493 §34.1]]; $\mathrm{Ad}_g$ is conjugation acting on $T^{\mathrm{geo}}_IG$.
 
 > [!theorem] Proposition §23.6: The Adjoint Action
 > Let $G$ be one of $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{SO}(n)$, $\mathrm{U}(n)$, and $\mathfrak{g} = T^{\mathrm{geo}}_I G$. For $g \in G$ the conjugation

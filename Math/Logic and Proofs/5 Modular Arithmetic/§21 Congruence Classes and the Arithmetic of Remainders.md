@@ -79,7 +79,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 *Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-1|Def. §21.1]], [[§19 Congruence of Integers#^prop-19-1|§19.1]]
 
 > [!remark]- Connections
-> - Residue classes in group theory: [[§6 Divisibility and Congruence#^def-6-4|493 Def. §6.4]]; the general statement for any equivalence relation is [[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]] here, and [[§22 Equivalence Relations and Partitions#^prop-22-1|493 Prop. §22.1]].
+> - Residue classes in group theory: [[§6 Divisibility and Congruence#^def-6-4|493 Def. §6.4]]; the general statement for any equivalence relation is [[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]] here, and [[§24 Equivalence Relations and Partitions#^prop-24-1|493 Prop. §24.1]].
 
 > [!remark] Remark: The Box Model of the Remainder Map
 > Picture the remainder map $r_m : \mathbb{Z} \to R_m$ ([[§19 Congruence of Integers#^def-19-3|Def. §19.3]]) as $m$ boxes labelled $0, 1, \ldots, m - 1$, each integer dropped into the box of its remainder (the box model of a function, [[§8 Functions#^ex-8-1|Example §8.1]]). The contents of box $r$ form the pre-image ([[§9 Injections, Surjections and Bijections#^def-9-4|Def. §9.4]])

@@ -32,7 +32,7 @@ tags: [differentiable-manifolds, math591]
 ^def-13-1
 
 > [!remark]- Connections
-> - Transitivity is defined in [[§25 Orbits#^def-25-1|493 Def. §25.1]]; the model transitive action is $G$ on $G/H$, [[§29 G Acting on Coset Spaces#^prop-29-1|493 §29.1]].
+> - Transitivity is defined in [[§27 Orbits#^def-27-1|493 Def. §27.1]]; the model transitive action is $G$ on $G/H$, [[§31 G Acting on Coset Spaces#^prop-31-1|493 §31.1]].
 
 > [!remark] Remark
 > For a transitive action the orbit space $X/G$ is a single point, “which is not that interesting.” The interesting quotient is a different one: $X$ itself will be exhibited as a quotient $G/H$ of the *group*, by the action of a subgroup $H$ on $G$.
@@ -53,7 +53,7 @@ tags: [differentiable-manifolds, math591]
 ^def-13-2
 
 > [!remark]- Connections
-> - Home: [[§24 Stabilizers and Fixed Points#^def-24-1|493 Def. §24.1 (Stabilizer)]], written $\operatorname{Stab}(x_0)$ there.
+> - Home: [[§26 Stabilizers and Fixed Points#^def-26-1|493 Def. §26.1 (Stabilizer)]], written $\operatorname{Stab}(x_0)$ there.
 > - Used in Quantum Field Theory: the little group of a particle, the isotropy subgroup of its standard momentum in the Lorentz group — [[§C3.5★ Particle States and the Little Group#^def-c3-5-1|QFT Def. §C3.5.1]].
 
 > [!theorem] Proposition §13.1: The Isotropy Is a Subgroup
@@ -69,7 +69,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§13 Homogeneous Spaces#^def-13-2|Def. §13.2]], [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§4 Subgroups#^def-4-1|493 Def. §4.1]]
 
 > [!remark]- Connections
-> - Home of this result: [[§24 Stabilizers and Fixed Points#^prop-24-1|493 §24.1 (The Stabilizer Is a Subgroup)]].
+> - Home of this result: [[§26 Stabilizers and Fixed Points#^prop-26-1|493 §26.1 (The Stabilizer Is a Subgroup)]].
 
 > [!definition] Definition §13.3: Orbit Map
 > Let a topological group $G$ act continuously on $X$, and let $x_0 \in X$. The **orbit map** of $x_0$ is
@@ -136,7 +136,7 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 ^ex-13-2
 
 > [!remark]- Connections
-> - The same column-then-row argument for $\operatorname{Stab}(e_1)$ in $\mathrm{O}_3$: [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|493 §30.2]](2), [[§30 Examples꞉ Linear Groups and the Cube#^rem-30-1|493, GL₃ versus O₃]].
+> - The same column-then-row argument for $\operatorname{Stab}(e_1)$ in $\mathrm{O}_3$: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]](2), [[§32 Linear Groups, the Cube, S₃ and A₄#^rem-32-1|493, GL₃ versus O₃]].
 
 ## The Coset Space $G/H$
 
@@ -158,14 +158,14 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 > G/H \;=\; \{\, gH \mid g \in G \,\}.
 > $$
 >
-> (This is the algebraic quotient from [[§26 Left and Right Cosets#^def-26-2|MATH 493]]. Note that $G/H$ is a *group* only when $H$ is normal, which is not assumed here; for us it is only a set, and shortly a space.)
+> (This is the algebraic quotient from [[§28 Left and Right Cosets#^def-28-2|MATH 493]]. Note that $G/H$ is a *group* only when $H$ is normal, which is not assumed here; for us it is only a set, and shortly a space.)
 >
 > *Lee: proof of Theorem 21.17*
 
 ^def-13-4
 
 > [!remark]- Connections
-> - Home: [[§26 Left and Right Cosets#^def-26-2|493 Def. §26.2 (Left and Right Cosets)]]; the group case (normal $H$) is [[§37 Quotient Groups|493 §37]], and in 590 [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|590 Def. §21.13]].
+> - Home: [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2 (Left and Right Cosets)]]; the group case (normal $H$) is [[§40 Quotient Groups|493 §40]], and in 590 [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|590 Def. §21.13]].
 
 > [!theorem] Lemma §13.3: When Two Cosets Coincide
 > $gH = g'H \iff g^{-1}g' \in H$. Consequently the left cosets partition $G$.
@@ -182,7 +182,7 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 *Uses:* [[§13 Homogeneous Spaces#^def-13-4|Def. §13.4]], [[§4 Subgroups#^def-4-1|493 Def. §4.1]]
 
 > [!remark]- Connections
-> - Home of this result: [[§26 Left and Right Cosets#^prop-26-2|493 §26.2 (Cosets Are the Equivalence Classes)]]; hub [[Cosets Partition a Group]].
+> - Home of this result: [[§28 Left and Right Cosets#^prop-28-2|493 §28.2 (Cosets Are the Equivalence Classes)]]; hub [[Cosets Partition a Group]].
 
 > [!definition] Definition §13.5: The Canonical Projection
 > The **canonical projection** associated with $H \le G$ is the map
@@ -223,7 +223,7 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 *Uses:* [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§12 Group Actions and Orbit Spaces#^def-12-3|Def. §12.3]], [[§12 Group Actions and Orbit Spaces#^def-12-5|Def. §12.5]], [[§13 Homogeneous Spaces#^def-13-4|Def. §13.4]]
 
 > [!remark]- Connections
-> - In 493 the same orbits come from the *right* action $g \star h = gh$: [[§26 Left and Right Cosets#^prop-26-1|493 §26.1 (Cosets Are Orbits)]]; converting it to a left action by inverting is [[§23 Actions#^prop-23-1|493 §23.1 (A Left Action Gives a Right Action)]].
+> - In 493 the same orbits come from the *right* action $g \star h = gh$: [[§28 Left and Right Cosets#^prop-28-1|493 §28.1 (Cosets Are Orbits)]]; converting it to a left action by inverting is [[§25 Actions#^prop-25-1|493 §25.1 (A Left Action Gives a Right Action)]].
 
 > [!remark] Remark
 > The inverse in the formula is not cosmetic. The first thing one writes, $(h,g) \mapsto hg$, is also an action, but its orbits are the *right* cosets $Hg$, giving the other quotient $H \backslash G$. To produce *left* cosets from a *left* action of $H$ one must multiply on the right and invert, and that is exactly what makes the second axiom come out in the correct order, as the proof shows. For non-abelian $H$ the naive formula $(h,g) \mapsto gh$ fails the axiom outright.
@@ -259,8 +259,8 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 *Uses:* [[§13 Homogeneous Spaces#^lem-13-3|§13.3]], [[§13 Homogeneous Spaces#^def-13-1|Def. §13.1]], [[§13 Homogeneous Spaces#^def-13-2|Def. §13.2]], [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§12 Group Actions and Orbit Spaces#^lem-12-2|§12.2]]
 
 > [!remark]- Connections
-> - Home of this bijection: [[§28 Orbit–Stabilizer#^prop-28-2|493 §28.2 (The Orbit Bijection)]], same proof, for any orbit; hub [[Orbit–Stabilizer Theorem]].
-> - Conversely every $G/H$ carries a transitive action with isotropy $H$ at $eH$: [[§29 G Acting on Coset Spaces#^prop-29-1|493 §29.1]].
+> - Home of this bijection: [[§30 Orbit–Stabilizer#^prop-30-2|493 §30.2 (The Orbit Bijection)]], same proof, for any orbit; hub [[Orbit–Stabilizer Theorem]].
+> - Conversely every $G/H$ carries a transitive action with isotropy $H$ at $eH$: [[§31 G Acting on Coset Spaces#^prop-31-1|493 §31.1]].
 > - Used in Quantum Field Theory: the orbit of a particle's momentum as a coset space of the Lorentz group, the mass hyperboloid $SO^+(1,3)/SO(3)$ as the sphere is $SO(3)/SO(2)$ — [[§C3.5★ Particle States and the Little Group#^rem-c3-5-1|QFT Remark: What the definition fixes, and what it leaves free]].
 
 > [!example] Example §13.3: The Sphere as a Homogeneous Space
@@ -283,7 +283,7 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 ^ex-13-3
 
 > [!remark]- Connections
-> - The $\mathrm{O}_3$ version of orbit and stabilizer: [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|493 §30.2]].
+> - The $\mathrm{O}_3$ version of orbit and stabilizer: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]].
 > - Used for dimension counts in [[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9|Dimension Checks through Homogeneous Spaces]].
 
 **Transcription note.** Page 12 of the handwritten notes writes “$X = \mathrm{SO}(3)$ acting on $S^2$”; the group is $G = \mathrm{SO}(3)$ and the space is $X = S^2$.

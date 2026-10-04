@@ -5,7 +5,7 @@ chapter: 3
 section: 12
 tags: [group-theory, math493]
 ---
-← [[§11 Disjoint Cycle Decomposition]] · ↑ [[· 3 Permutations]] · [[§13 Subgroups of S₃]] →
+← [[§11 Disjoint Cycle Decomposition]] · ↑ [[· 3 Permutations]] · [[§13 The Symmetric Group S₃]] →
 
 *Reference: Pinter Ch. 8.*
 
@@ -45,13 +45,8 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Conjugation in general: [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Conjugation; Conjugate Elements; Inner Automorphism]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|Conjugation Is an Automorphism]].
-> - For a whole permutation in disjoint-cycle notation: [[§31 Conjugacy Classes#^lem-31-1|Conjugation Relabels the Entries, §31.1]].
-> - The converse (same cycle type ⇒ conjugate): [[§31 Conjugacy Classes#^thm-31-3|Conjugacy Classes in Sₙ Are Cycle Types]].
-
-> [!example] Example §12.2: The Mixed Hypothesis of WS 1.1, Revisited
-> In [[§2 First Consequences of the Axioms#^ex-2-1|that example]], $g = (1\,2)$ and $h_1 = (2\,3)$ gave $g h_1 g^{-1} = (1\,3)$. By [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle]] this is immediate: apply $g$ to the entries of $(2\,3)$, sending $2 \mapsto 1$ and $3 \mapsto 3$, to get $(1\,3)$. No multiplication needed.
-
-^ex-12-2
+> - For a whole permutation in disjoint-cycle notation: [[§33 Conjugacy Classes#^lem-33-1|Conjugation Relabels the Entries, §33.1]].
+> - The converse (same cycle type ⇒ conjugate): [[§33 Conjugacy Classes#^thm-33-3|Conjugacy Classes in Sₙ Are Cycle Types]].
 
 > [!theorem] Proposition §12.2: Every Permutation Is a Product of Transpositions
 > Every $r$-cycle is a product of $r - 1$ transpositions,
@@ -72,11 +67,11 @@ tags: [group-theory, math493]
 *Uses:* [[§10 Cycle Notation and the Group S₃#^def-10-1|Def. §10.1]], [[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]]
 
 > [!remark]- Connections
-> - Sharper generating sets: [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-7|Generators of Sₙ]] (PS 1.5(3)); the parity of the number of factors: [[§20 The Sign Homomorphism and the Alternating Group#^cor-20-4|Parity of a Permutation]].
+> - Sharper generating sets: [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|Generators of Sₙ]] (PS 1.5(3)); the parity of the number of factors: [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Parity of a Permutation]].
 > - Used in Quantum Mechanics: with Proposition §12.1, in the proof that a permutation can act on a physical state of identical particles only as $+1$ or as its sign — [[§C12.1★ Permutation Symmetry and the Symmetrization Postulate#^thm-c12-1-5|QM Theorem §C12.1.5]].
 
 > [!remark] Remark: Cycles Need Not Be Disjoint
-> Uniqueness in the [[§11 Disjoint Cycle Decomposition#^thm-11-3|decomposition theorem]] depends on disjointness. With overlapping cycles the same permutation has many expressions — e.g. $(1\,2)(2\,3) = (1\,2\,3)$ — and factorizations into transpositions are far from unique; only the *parity* of the number of transpositions is an invariant of the permutation, as proved in [[§20 The Sign Homomorphism and the Alternating Group#^cor-20-4|§20.4]] (Parity of a Permutation).
+> Uniqueness in the [[§11 Disjoint Cycle Decomposition#^thm-11-3|decomposition theorem]] depends on disjointness. With overlapping cycles the same permutation has many expressions — e.g. $(1\,2)(2\,3) = (1\,2\,3)$ — and factorizations into transpositions are far from unique; only the *parity* of the number of transpositions is an invariant of the permutation, as proved in [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]] (Parity of a Permutation).
 
 ^rem-12-1
 

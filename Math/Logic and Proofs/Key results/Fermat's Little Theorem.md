@@ -23,5 +23,5 @@ tags: [logic-and-proofs, hub]
 - [[§24★ Congruence Modulo a Prime#^prop-24-3|Proposition §24.3: The Order Divides p − 1]]
 
 ## Connections
-- Developed further in: [[§27 The Index and Lagrange's Theorem#^cor-27-4|493 Cor. §27.4]] (Fermat's little theorem as $g^{\abs{G}} = e$ in the group $U_p$ of order $p - 1$, via Lagrange's theorem).
+- Developed further in: [[§29 The Index and Lagrange's Theorem#^cor-29-4|493 Cor. §29.4]] (Fermat's little theorem as $g^{\abs{G}} = e$ in the group $U_p$ of order $p - 1$, via Lagrange's theorem).
 - The bijection $[x] \mapsto [a][x]$ of the nonzero classes is [[§8 Invertibility and Unit Groups#^prop-8-2|493 Prop. §8.2]].

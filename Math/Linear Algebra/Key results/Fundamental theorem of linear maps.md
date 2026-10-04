@@ -31,7 +31,7 @@ tags: [linear-algebra, hub]
 - [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-45|8.45 Every nilpotent operator has a Jordan basis]]
 
 ## Used in (Group Theory)
-- [[§38 The First Isomorphism Theorem#^rem-38-2|Remark: Rank–Nullity]]
+- [[§41 The First Isomorphism Theorem#^rem-41-2|Remark: Rank–Nullity]]
 
 ## Used in (Differentiable Manifolds)
 - [[§20 Linear Algebra Toolkit#^prop-20-4|Proposition §20.4: Properties of the Dual Map]]

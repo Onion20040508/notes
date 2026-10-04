@@ -146,11 +146,11 @@ tags: [group-theory, math493]
 > [!proof]+ Proof
 > **(1)** $g^k$ generates $G$ iff $\operatorname{ord}(g^k) = n$ (Cyclic iff There Is an Element of Order $|G|$, [[§17 Cyclic Groups#^cor-17-2|§17.2]]), iff $n/\gcd(n,k) = n$, iff $\gcd(k, n) = 1$. The elements of $G$ are $g^0, \ldots, g^{n-1}$, so the generators correspond to the $k \in \{0, \ldots, n-1\}$ coprime to $n$, of which there are $\varphi(n)$.
 >
-> **(2)** *Existence:* $\operatorname{ord}(g^{n/d}) = n/\gcd(n, n/d) = n/(n/d) = d$, so $\langle g^{n/d} \rangle$ has order $d$. *Uniqueness:* let $H \leq G$ have order $d$. By [[§17 Cyclic Groups#^thm-17-4|Subgroups of Cyclic Groups Are Cyclic]] (above), $H = \langle g^m \rangle$ with $m$ the least positive exponent in $H$, and since $g^n = e \in H$, $m \mid n$. Then $|H| = \operatorname{ord}(g^m) = n/\gcd(n, m) = n/m$, so $|H| = d$ forces $m = n/d$ and $H = \langle g^{n/d} \rangle$. The last clause is [[§27 The Index and Lagrange's Theorem#^thm-27-2|Lagrange]] (§27.2).
+> **(2)** *Existence:* $\operatorname{ord}(g^{n/d}) = n/\gcd(n, n/d) = n/(n/d) = d$, so $\langle g^{n/d} \rangle$ has order $d$. *Uniqueness:* let $H \leq G$ have order $d$. By [[§17 Cyclic Groups#^thm-17-4|Subgroups of Cyclic Groups Are Cyclic]] (above), $H = \langle g^m \rangle$ with $m$ the least positive exponent in $H$, and since $g^n = e \in H$, $m \mid n$. Then $|H| = \operatorname{ord}(g^m) = n/\gcd(n, m) = n/m$, so $|H| = d$ forces $m = n/d$ and $H = \langle g^{n/d} \rangle$. The last clause is [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]] (§27.2).
 
 ^pf-17-6
 
-*Uses:* [[§17 Cyclic Groups#^cor-17-2|§17.2]], [[§17 Cyclic Groups#^prop-17-5|§17.5]], [[§17 Cyclic Groups#^thm-17-1|§17.1]], [[§8 Invertibility and Unit Groups#^def-8-3|Def. §8.3]], [[§17 Cyclic Groups#^thm-17-4|§17.4]], [[§27 The Index and Lagrange's Theorem#^thm-27-2|§27.2]]
+*Uses:* [[§17 Cyclic Groups#^cor-17-2|§17.2]], [[§17 Cyclic Groups#^prop-17-5|§17.5]], [[§17 Cyclic Groups#^thm-17-1|§17.1]], [[§8 Invertibility and Unit Groups#^def-8-3|Def. §8.3]], [[§17 Cyclic Groups#^thm-17-4|§17.4]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
 
 > [!example] Example §17.1: The Subgroups of $\mathbb{Z}/12\mathbb{Z}$
 > The divisors of $12$ are $1, 2, 3, 4, 6, 12$, so $\mathbb{Z}/12\mathbb{Z}$ has exactly six subgroups: $\{[0]\}$, $\langle [6] \rangle$, $\langle [4] \rangle$, $\langle [3] \rangle$, $\langle [2] \rangle$, and the whole group $\langle [1] \rangle$. Its generators are $[1], [5], [7], [11]$, the $\varphi(12) = 4$ classes coprime to $12$.

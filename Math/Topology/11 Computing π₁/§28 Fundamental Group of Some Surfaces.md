@@ -77,7 +77,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Recomputed with van Kampen: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$ via van Kampen ([[§29 The Seifert–van Kampen Theorem#^ex-29-5|Ex. §29.5]]).
-> - The final step is the case p = 2 of [[§27 The Index and Lagrange's Theorem#^thm-27-7|493 Thm. §27.7]] (hub [[Groups of Prime Order Are Cyclic]]); the group itself is [[§7 The Group ℤ∕nℤ#^def-7-1|493 Def. §7.1]].
+> - The final step is the case p = 2 of [[§29 The Index and Lagrange's Theorem#^thm-29-7|493 Thm. §29.7]] (hub [[Groups of Prime Order Are Cyclic]]); the group itself is [[§7 The Group ℤ∕nℤ#^def-7-1|493 Def. §7.1]].
 
 > [!remark] Remark: The Non-Trivial Loop in $P^2$
 > The generator of $\pi_1(P^2)$ is any path in $S^2$ from $x_0$ to $-x_0$ (e.g., half a great circle), projected to $P^2$. This projects to a *loop* in $P^2$ (since $p(x_0) = p(-x_0) = y_0$). It cannot be contracted because its lift in $S^2$ is a path from $x_0$ to $-x_0$, which is not a loop.

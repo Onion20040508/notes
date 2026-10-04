@@ -9,16 +9,16 @@ tags: [chapter, group-theory]
 
 *Source: Worksheet 3 (Wed Sept 9).*
 
-Conjugation is the action of a group on itself that detects non-commutativity. This chapter computes [[§31 Conjugacy Classes#^def-31-1|conjugacy classes]] — in $S_n$ they are [[§31 Conjugacy Classes#^thm-31-3|exactly the cycle types]] — counts them with [[§28 Orbit–Stabilizer#^thm-28-3|orbit–stabilizer]] to obtain the [[§32 Conjugation as an Action and the Class Equation#^thm-32-4|class equation]], and studies the [[§33 The Center#^def-33-1|center]], including the fact that [[§33 The Center#^thm-33-3|groups of prime-power order have nontrivial center]].
+Conjugation is the action of a group on itself that detects non-commutativity. This chapter computes [[§33 Conjugacy Classes#^def-33-1|conjugacy classes]] — in $S_n$ they are [[§33 Conjugacy Classes#^thm-33-3|exactly the cycle types]] — counts them with [[§30 Orbit–Stabilizer#^thm-30-3|orbit–stabilizer]] to obtain the [[§34 Conjugation as an Action and the Class Equation#^thm-34-4|class equation]], and studies the [[§35 The Center#^def-35-1|center]], including the fact that [[§35 The Center#^thm-35-3|groups of prime-power order have nontrivial center]].
 
 **Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (4), [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (2), [[· 3 Permutations|3 Permutations]] (3), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (3), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (11)
 **Used by:** [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (1), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (1), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (4), [[· 9 Characters and Commutators|9 Characters and Commutators]] (3)
 **Builds on (other subjects):** [[Linear Algebra]] (5)
 
 ## Sections
-- [[§31 Conjugacy Classes]]
-- [[§32 Conjugation as an Action and the Class Equation]]
-- [[§33 The Center]]
+- [[§33 Conjugacy Classes]]
+- [[§34 Conjugation as an Action and the Class Equation]]
+- [[§35 The Center]]
 
 ## Central results
 - [[Conjugacy Classes of Sₙ Are Cycle Types]] (§31.3)
@@ -27,7 +27,7 @@ Conjugation is the action of a group on itself that detects non-commutativity. T
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§32 Conjugation as an Action and the Class Equation#^prop-32-1|Proposition §32.1: The Conjugation Action]]: 10 later results
-- [[§32 Conjugation as an Action and the Class Equation#^cor-32-2|Corollary §32.2: Class Sizes Divide the Group Order]]: 6 later results
-- [[§31 Conjugacy Classes#^lem-31-1|Lemma §31.1: Conjugation Relabels the Entries]]: 4 later results
-- [[§31 Conjugacy Classes#^prop-31-2|Proposition §31.2: Conjugacy Class of (1 2) in Sₙ]]: 2 later results
+- [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|Proposition §34.1: The Conjugation Action]]: 10 later results
+- [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Corollary §34.2: Class Sizes Divide the Group Order]]: 6 later results
+- [[§33 Conjugacy Classes#^lem-33-1|Lemma §33.1: Conjugation Relabels the Entries]]: 4 later results
+- [[§33 Conjugacy Classes#^prop-33-2|Proposition §33.2: Conjugacy Class of (1 2) in Sₙ]]: 2 later results

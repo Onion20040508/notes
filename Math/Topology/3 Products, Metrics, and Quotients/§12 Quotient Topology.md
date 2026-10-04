@@ -135,7 +135,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 > [!remark]- Connections
 > - Equivalence relations, equivalence classes and the quotient set in 250: [[§22 Partitions and Equivalence Relations#^def-22-3|250 Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]]; the classes form a partition by [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]].
-> - Algebraic quotients built by the same recipe in 493: the orbit space of an action, [[§25 Orbits#^def-25-1|493 Def. §25.1]], and the quotient group G/N, [[§37 Quotient Groups#^def-37-1|493 Def. §37.1]].
+> - Algebraic quotients built by the same recipe in 493: the orbit space of an action, [[§27 Orbits#^def-27-1|493 Def. §27.1]], and the quotient group G/N, [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]].
 > - When a quotient by an open equivalence relation is Hausdorff or second countable is decided in 591: [[§6 Open Quotients#^thm-6-1|591 Thm. §6.1]] (the graph of the relation is closed) and [[§6 Open Quotients#^thm-6-3|591 Thm. §6.3]].
 
 > [!example] Example §12.2: Circle as Quotient Space
@@ -290,7 +290,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 *Uses:* [[§12 Quotient Topology#^thm-12-3|§12.3]], [[§12 Quotient Topology#^ex-12-4|Ex. §12.4]]
 
 > [!remark]- Connections
-> - Algebraic counterpart: the first isomorphism theorem, [[§38 The First Isomorphism Theorem#^thm-38-1|493 Thm. §38.1]], where the fibres of α are the cosets of its kernel and G/Ker α ≅ Im α.
+> - Algebraic counterpart: the first isomorphism theorem, [[§41 The First Isomorphism Theorem#^thm-41-1|493 Thm. §41.1]], where the fibres of α are the cosets of its kernel and G/Ker α ≅ Im α.
 
 > [!theorem] Theorem §12.5: Product of Quotient Maps (Compact-Hausdorff Case)
 > Let $\pi_1: X_1 \to Y_1$ and $\pi_2: X_2 \to Y_2$ be quotient maps. If $X_1 \times X_2$ is compact and $Y_1 \times Y_2$ is Hausdorff, then

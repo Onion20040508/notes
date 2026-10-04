@@ -20,4 +20,4 @@ tags: [logic-and-proofs, hub]
 - (not cited later in the course)
 
 ## Connections
-- [[§22 Equivalence Relations and Partitions#^prop-22-2|493 Prop. §22.2]] (partitions come from equivalence relations).
+- [[§24 Equivalence Relations and Partitions#^prop-24-2|493 Prop. §24.2]] (partitions come from equivalence relations).

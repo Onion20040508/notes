@@ -166,7 +166,7 @@ tags: [linear-algebra]
 %% ex:3.21-fig %%
 
 > [!remark]- Connections
-> - Group analogue for finite groups: |G| = |Ker α| · |Im α|, [[§38 The First Isomorphism Theorem#^cor-38-2|493 Cor. §38.2]].
+> - Group analogue for finite groups: |G| = |Ker α| · |Im α|, [[§41 The First Isomorphism Theorem#^cor-41-2|493 Cor. §41.2]].
 > - Matrix version: [[§19 Dimension and Rank#^thm-19-2|235 Thm. §19.2]] and [[§28 Rank#^thm-28-3|235 Thm. §28.3]] (the Rank Theorem, rank A + dim Nul A = n, with worked examples).
 
 > [!example] Example: The proof, pictured

@@ -284,7 +284,7 @@ Factorization into primes is not unique as written, since the factors can be reo
 ^ex-23-5
 
 > [!remark]- Connections
-> - The totient in group theory: [[§8 Invertibility and Unit Groups#^def-8-3|493 Def. §8.3]] ($\phi(n) = \abs{U_n}$), and the general formula $\phi(p_1^{a_1} \cdots p_r^{a_r}) = \prod (p_i - 1) p_i^{a_i - 1}$, [[§21 The Structure of Uₙ#^cor-21-3|493 Cor. §21.3]] (Eccles sets it as Problems VI Q10).
+> - The totient in group theory: [[§8 Invertibility and Unit Groups#^def-8-3|493 Def. §8.3]] ($\phi(n) = \abs{U_n}$), and the general formula $\phi(p_1^{a_1} \cdots p_r^{a_r}) = \prod (p_i - 1) p_i^{a_i - 1}$, [[§22 The Structure of Uₙ#^cor-22-3|493 Cor. §22.3]] (Eccles sets it as Problems VI Q10).
 
 > [!example] Example §23.6: No Rational Square or Cube Root of 2
 > **(a) $\sqrt 2$** (a second proof of [[§13 Number Systems#^thm-13-4|Theorem §13.4]], Eccles 13.2.1, which is proved there by parity). Suppose $q \in \mathbb{Q}$ with $q^2 = 2$. Since $(-q)^2 = q^2$ we may assume $q > 0$, and write $q = a/b$ with $a, b \in \mathbb{Z}^+$. Then $a^2 = 2b^2$. Let $2 < p_2 < \cdots < p_r$ be the odd primes occurring in $a$ or $b$, and write $a = 2^{k_1} p_2^{k_2} \cdots p_r^{k_r}$, $b = 2^{l_1} p_2^{l_2} \cdots p_r^{l_r}$ with exponents $\ge 0$. Then
@@ -330,7 +330,7 @@ Factorization into primes is not unique as written, since the factors can be reo
 ^ex-23-7
 
 > [!remark]- Connections
-> - The same statement, proved with Bézout and used for the structure of $U_n$: [[§21 The Structure of Uₙ#^lem-21-1|493 Lemma §21.1]].
+> - The same statement, proved with Bézout and used for the structure of $U_n$: [[§22 The Structure of Uₙ#^lem-22-1|493 Lemma §22.1]].
 
 > [!example] Example §23.8: Coprime Factors of a Square
 > Let $a, b$ be coprime positive integers. Then $ab$ is a perfect square if and only if $a$ and $b$ are both perfect squares. (Positivity matters: $a = b = -1$ are coprime and $ab = 1$ is a square.)

@@ -8,17 +8,23 @@ The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $1
 
 - $\mathbb{Z}/4\mathbb{Z} \not\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ ([[§16 Isomorphisms#^prop-16-3|§16]])
 - $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$: the Klein group as a unit group ([[§16 Isomorphisms#^prop-16-8|§16]])
-- $A_4$ has no subgroup of order $6$: the converse of Lagrange fails ([[§27 The Index and Lagrange's Theorem#^ex-27-1|§27]])
-- Order $4$: exactly two groups, $\mathbb{Z}/4\mathbb{Z}$ and the Klein four-group ([[§27 The Index and Lagrange's Theorem#^rem-27-3|§27]])
-- The rotation group of the cube is $S_4$ ([[§30 Examples꞉ Linear Groups and the Cube#^thm-30-5|§30]])
-- Conjugacy classes of $S_4$ by cycle type, of sizes $1, 6, 3, 8, 6$ ([[§31 Conjugacy Classes#^ex-31-2|§31]])
-- The class equation $24 = 1 + 6 + 3 + 8 + 6$ ([[§32 Conjugation as an Action and the Class Equation#^ex-32-1|§32]])
-- The normal subgroups of $S_4$: $\{e\}$, $V$, $A_4$, $S_4$ ([[§36 Sources of Normal Subgroups#^ex-36-3|§36]])
-- The pair-partition homomorphism $S_4 \to S_3$ has kernel $V$ ([[§40 Simple Groups#^prop-40-10|§40]])
-- $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ ([[§40 Simple Groups#^ex-40-1|§40]])
-- Why the simplicity proof needs $n \geq 5$: $V$ is normal in $A_4$ ([[§40 Simple Groups#^rem-40-6|§40]])
-- $A_4$ is the exception among the $A_n$ with $n \geq 3$: it is not simple ([[§40 Simple Groups#^cor-40-11|§40]])
-- $PSL_2(\mathbb{F}_3) \cong A_4$, which is not simple ([[§40 Simple Groups#^ex-40-3|§40]])
+- $A_4$ has no subgroup of order $6$: the converse of Lagrange fails ([[§29 The Index and Lagrange's Theorem#^ex-29-1|§27]])
+- Order $4$: exactly two groups, $\mathbb{Z}/4\mathbb{Z}$ and the Klein four-group ([[§29 The Index and Lagrange's Theorem#^rem-29-3|§27]])
+- The class sizes $1, 6, 3, 8, 6$ of $S_4$ divide $24$, by orbit–stabilizer ([[§30 Orbit–Stabilizer#^rem-30-2|§28]])
+- The rotation group of the cube is $S_4$ ([[§32 Linear Groups, the Cube, S₃ and A₄#^thm-32-5|§30]])
+- Conjugacy classes of $S_4$ by cycle type, of sizes $1, 6, 3, 8, 6$ ([[§33 Conjugacy Classes#^ex-33-2|§31]])
+- The class equation $24 = 1 + 6 + 3 + 8 + 6$ ([[§34 Conjugation as an Action and the Class Equation#^ex-34-1|§32]])
+- The normal subgroups of $S_4$: $\{e\}$, $V$, $A_4$, $S_4$ ([[§39 Sources of Normal Subgroups#^ex-39-3|§36]])
+- The pair-partition homomorphism $S_4 \to S_3$ has kernel $V$ ([[§43 Simple Groups#^prop-43-10|§40]])
+- $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ ([[§43 Simple Groups#^ex-43-1|§40]])
+- Why the simplicity proof needs $n \geq 5$: $V$ is normal in $A_4$ ([[§43 Simple Groups#^rem-43-6|§40]])
+- $A_4$ is the exception among the $A_n$ with $n \geq 3$: it is not simple ([[§43 Simple Groups#^cor-43-11|§40]])
+- $PSL_2(\mathbb{F}_3) \cong A_4$, which is not simple ([[§43 Simple Groups#^ex-43-3|§40]])
+- $S_4/V \cong S_3$ by the Second Isomorphism Theorem ([[§44 S₃, S₄, A₄ and A₅#^ex-44-1|§39]])
+
+## Chapter by chapter
+
+Revisit parts for $S_4$, $A_4$ and $V$, chapter by chapter: [[§32 Linear Groups, the Cube, S₃ and A₄#S₄, A₄ and the Klein Four-Group V|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group V|Chapter 7]] · [[§44 S₃, S₄, A₄ and A₅#S₄, A₄ and the Klein Four-Group V|Chapter 8]].
 
 ## $\mathbb{Z}/4\mathbb{Z} \not\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$
 ![[§16 Isomorphisms#^prop-16-3]]
@@ -27,34 +33,40 @@ The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $1
 ![[§16 Isomorphisms#^prop-16-8]]
 
 ## $A_4$ has no subgroup of order $6$: the converse of Lagrange fails
-![[§27 The Index and Lagrange's Theorem#^ex-27-1]]
+![[§29 The Index and Lagrange's Theorem#^ex-29-1]]
 
 ## Order $4$: exactly two groups, $\mathbb{Z}/4\mathbb{Z}$ and the Klein four-group
-![[§27 The Index and Lagrange's Theorem#^rem-27-3]]
+![[§29 The Index and Lagrange's Theorem#^rem-29-3]]
+
+## The class sizes $1, 6, 3, 8, 6$ of $S_4$ divide $24$, by orbit–stabilizer
+![[§30 Orbit–Stabilizer#^rem-30-2]]
 
 ## The rotation group of the cube is $S_4$
-![[§30 Examples꞉ Linear Groups and the Cube#^thm-30-5]]
+![[§32 Linear Groups, the Cube, S₃ and A₄#^thm-32-5]]
 
 ## Conjugacy classes of $S_4$ by cycle type, of sizes $1, 6, 3, 8, 6$
-![[§31 Conjugacy Classes#^ex-31-2]]
+![[§33 Conjugacy Classes#^ex-33-2]]
 
 ## The class equation $24 = 1 + 6 + 3 + 8 + 6$
-![[§32 Conjugation as an Action and the Class Equation#^ex-32-1]]
+![[§34 Conjugation as an Action and the Class Equation#^ex-34-1]]
 
 ## The normal subgroups of $S_4$: $\{e\}$, $V$, $A_4$, $S_4$
-![[§36 Sources of Normal Subgroups#^ex-36-3]]
+![[§39 Sources of Normal Subgroups#^ex-39-3]]
 
 ## The pair-partition homomorphism $S_4 \to S_3$ has kernel $V$
-![[§40 Simple Groups#^prop-40-10]]
+![[§43 Simple Groups#^prop-43-10]]
 
 ## $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$
-![[§40 Simple Groups#^ex-40-1]]
+![[§43 Simple Groups#^ex-43-1]]
 
 ## Why the simplicity proof needs $n \geq 5$: $V$ is normal in $A_4$
-![[§40 Simple Groups#^rem-40-6]]
+![[§43 Simple Groups#^rem-43-6]]
 
 ## $A_4$ is the exception among the $A_n$ with $n \geq 3$: it is not simple
-![[§40 Simple Groups#^cor-40-11]]
+![[§43 Simple Groups#^cor-43-11]]
 
 ## $PSL_2(\mathbb{F}_3) \cong A_4$, which is not simple
-![[§40 Simple Groups#^ex-40-3]]
+![[§43 Simple Groups#^ex-43-3]]
+
+## $S_4/V \cong S_3$ by the Second Isomorphism Theorem
+![[§44 S₃, S₄, A₄ and A₅#^ex-44-1]]

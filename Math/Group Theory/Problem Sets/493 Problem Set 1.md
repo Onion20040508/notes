@@ -66,7 +66,7 @@ tags: [group-theory, math493]
 
 ^hw-1-5
 
-*Treated in [[§20 The Sign Homomorphism and the Alternating Group|§20]] (The Sign Homomorphism and the Alternating Group: (1) [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-2|§20.2]], (2) [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|§20.3]], (3) [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-7|§20.7]], (4) [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-9|§20.9]]).*
+*Treated in [[§21 The Sign Homomorphism and the Alternating Group|§21]] (The Sign Homomorphism and the Alternating Group: (1) [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|§21.2]], (2) [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], (3) [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]], (4) [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]]).*
 
 > [!question] Problem 1.6: Structure of $(\mathbb{Z}/n\mathbb{Z})^\times$
 > Many examples of finite groups are built on the structure of $\mathbb{Z}/n\mathbb{Z}$ and $(\mathbb{Z}/n\mathbb{Z})^\times$. You may assume Bézout's Lemma — for any integers $a$ and $b$, there exist integers $x$ and $y$ such that $ax + by = \gcd(a, b)$ — and basic number-theoretic facts like the Chinese Remainder Theorem and Unique Prime Factorization.
@@ -79,4 +79,4 @@ tags: [group-theory, math493]
 
 ^hw-1-6
 
-*(1)–(2) treated in [[§8 Invertibility and Unit Groups|§8]] ([[§8 Invertibility and Unit Groups#^prop-8-1|Invertibility Criterion]]; $U_n$ Is a Group, [[§8 Invertibility and Unit Groups#^prop-8-3|§8.3]]); (3) in [[§21 The Structure of Uₙ|§21]] (The Structure of $U_n$: [[§21 The Structure of Uₙ#^thm-21-2|§21.2]]).*
+*(1)–(2) treated in [[§8 Invertibility and Unit Groups|§8]] ([[§8 Invertibility and Unit Groups#^prop-8-1|Invertibility Criterion]]; $U_n$ Is a Group, [[§8 Invertibility and Unit Groups#^prop-8-3|§8.3]]); (3) in [[§22 The Structure of Uₙ|§22]] (The Structure of $U_n$: [[§22 The Structure of Uₙ#^thm-22-2|§22.2]]).*

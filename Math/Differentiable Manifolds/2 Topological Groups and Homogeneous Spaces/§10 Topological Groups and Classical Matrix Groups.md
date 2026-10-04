@@ -85,7 +85,7 @@ tags: [differentiable-manifolds, math591]
 ^def-10-3
 
 > [!remark]- Connections
-> - Home in 493: inversions [[§20 The Sign Homomorphism and the Alternating Group#^def-20-1|493 Def. §20.1]], the sign [[§20 The Sign Homomorphism and the Alternating Group#^def-20-2|493 Def. §20.2]] (hub: [[The Sign Homomorphism]]).
+> - Home in 493: inversions [[§21 The Sign Homomorphism and the Alternating Group#^def-21-1|493 Def. §21.1]], the sign [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|493 Def. §21.2]] (hub: [[The Sign Homomorphism]]).
 > - In linear algebra: [[§33 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]].
 
 > [!theorem] Proposition §10.2: Properties of the Sign
@@ -103,10 +103,10 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-10-2
 
-*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|Def. §10.3]], [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-2|493 §20.2]], [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|493 §20.3]], [[§20 The Sign Homomorphism and the Alternating Group#^cor-20-4|493 §20.4]], [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-7|493 §20.7]]
+*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|Def. §10.3]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|493 §21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|493 §21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|493 §21.4]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|493 §21.7]]
 
 > [!remark]- Connections
-> - Home in 493: [[The Sign Homomorphism]] ([[§20 The Sign Homomorphism and the Alternating Group#^thm-20-3|493 §20.3]]); parity of factorizations, [[§20 The Sign Homomorphism and the Alternating Group#^cor-20-4|493 §20.4]]; transpositions generate $S_n$, [[§20 The Sign Homomorphism and the Alternating Group#^thm-20-7|493 §20.7]].
+> - Home in 493: [[The Sign Homomorphism]] ([[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|493 §21.3]]); parity of factorizations, [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|493 §21.4]]; transpositions generate $S_n$, [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|493 §21.7]].
 
 > [!example] Example §10.2: Small Cases: Two and Three
 > $S_2 = \{\mathrm{id}, (1\,2)\}$ with signs $+1, -1$, and the Leibniz formula below ([[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]]) reads $\det = x_{11}x_{22} - x_{12}x_{21}$. $S_3$ has six elements: the identity and the two $3$-cycles $(1\,2\,3)$, $(1\,3\,2)$ have sign $+1$ (each $3$-cycle is a product of two transpositions, e.g. $(1\,2\,3) = (1\,3)(1\,2)$), and the three transpositions $(1\,2)$, $(1\,3)$, $(2\,3)$ have sign $-1$; this is the six-term formula for a $3 \times 3$ determinant, with three plus and three minus signs.
@@ -221,7 +221,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 ^def-10-7
 
 > [!remark]- Connections
-> - The group in 493: [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]]; the rotation group of the cube, a finite subgroup of SO(3), is isomorphic to S₄, [[§30 Examples꞉ Linear Groups and the Cube#^thm-30-5|493 Thm. §30.5]].
+> - The group in 493: [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]]; the rotation group of the cube, a finite subgroup of SO(3), is isomorphic to S₄, [[§32 Linear Groups, the Cube, S₃ and A₄#^thm-32-5|493 Thm. §32.5]].
 > - Used in Quantum Mechanics: the rotation group $SO(3)$ and its action on kets — [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]].
 
 > [!definition] Definition §10.8: Complex Matrix Groups

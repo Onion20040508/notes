@@ -56,10 +56,10 @@ tags: [group-theory, math493]
 *Conjugation relabels. The top row is $h_1 = (2\,3)$ (blue); the gray arrows are the relabeling $g = (1\,2)$. Carried along $g$, the swap $2 \leftrightarrow 3$ becomes the swap of $g(2) = 1$ and $g(3) = 3$, i.e. $h_2 = g h_1 g^{-1} = (1\,3)$ (red). Across-then-down equals down-then-across, which is $g h_1 = h_2 g$ — and still $h_1 \neq h_2$.*
 
 > [!remark]- Connections
-> - Revisited with cycle notation: [[§12 Multiplying and Conjugating Cycles#^ex-12-2|The Mixed Hypothesis of WS 1.1, Revisited]]; the general rule: [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle]].
+> - Revisited with cycle notation: [[§13 The Symmetric Group S₃#^ex-13-1|The Mixed Hypothesis of WS 1.1, Revisited]]; the general rule: [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle]].
 
 > [!remark] Remark: Left vs. Right; Conjugation
-> The moral of [[§2 First Consequences of the Axioms#^prop-2-1|part (2)]]: in a non-abelian group, “multiply both sides by $g^{-1}$” is only valid on the *same side* of both expressions; multiplying on opposite sides transports an element to its *conjugate* $g h g^{-1}$ instead of cancelling it. In an abelian group the mixed hypothesis *does* give $h_1 = h_2$. Conjugation — and the way conjugating a permutation “relabels” the objects it moves, as in [[§2 First Consequences of the Axioms#^ex-2-1|The Mixed Hypothesis Does Not Cancel]] — will become a central tool later ([[§35 Normal Subgroups#^def-35-1|normal subgroups]], [[§31 Conjugacy Classes#^def-31-1|conjugacy classes]]).
+> The moral of [[§2 First Consequences of the Axioms#^prop-2-1|part (2)]]: in a non-abelian group, “multiply both sides by $g^{-1}$” is only valid on the *same side* of both expressions; multiplying on opposite sides transports an element to its *conjugate* $g h g^{-1}$ instead of cancelling it. In an abelian group the mixed hypothesis *does* give $h_1 = h_2$. Conjugation — and the way conjugating a permutation “relabels” the objects it moves, as in [[§2 First Consequences of the Axioms#^ex-2-1|The Mixed Hypothesis Does Not Cancel]] — will become a central tool later ([[§38 Normal Subgroups#^def-38-1|normal subgroups]], [[§33 Conjugacy Classes#^def-33-1|conjugacy classes]]).
 
 ^rem-2-1
 

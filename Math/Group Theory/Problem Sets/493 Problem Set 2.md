@@ -18,7 +18,7 @@ tags: [group-theory, math493]
 
 ^hw-2-1
 
-*Treated in [[§28 Orbit–Stabilizer|§28]] (Cosets of a Point Stabilizer in $S_n$: [[§28 Orbit–Stabilizer#^def-28-1|Def. §28.1]], [[§28 Orbit–Stabilizer#^prop-28-4|§28.4]], [[§28 Orbit–Stabilizer#^cor-28-5|§28.5]]).*
+*Treated in [[§30 Orbit–Stabilizer|§30]] (Cosets of a Point Stabilizer in $S_n$: [[§30 Orbit–Stabilizer#^def-30-1|Def. §30.1]], [[§30 Orbit–Stabilizer#^prop-30-4|§30.4]], [[§30 Orbit–Stabilizer#^cor-30-5|§30.5]]).*
 
 > [!question] Problem 2.2: Isomorphisms Preserve Centers and Subgroups
 > Let $\phi: G \to H$ be an isomorphism.
@@ -38,7 +38,7 @@ tags: [group-theory, math493]
 
 ^hw-2-3
 
-*Treated in [[§41 Characters|§41]] ([[§41 Characters#^thm-41-2|A Common Eigenvector Yields a Character]]; (2): [[§41 Characters#^ex-41-2|Ex. §41.2]]).*
+*Treated in [[§45 Characters|§45]] ([[§45 Characters#^thm-45-2|A Common Eigenvector Yields a Character]]; (2): [[§45 Characters#^ex-45-2|Ex. §45.2]]).*
 
 > [!question] Problem 2.4: Characters and Commutators
 > Let $G$ and $A$ be groups with $A$ abelian and $\chi: G \to A$ a homomorphism (a **character**). An element $h \in G$ is a **commutator** if $h = g_1g_2g_1^{-1}g_2^{-1}$ for some $g_1, g_2 \in G$.
@@ -50,11 +50,11 @@ tags: [group-theory, math493]
 
 ^hw-2-4
 
-*Treated in [[§41 Characters|§41]] ([[§41 Characters#^prop-41-1|Characters Are Constant on Conjugacy Classes]]) and [[§42 Commutators|§42]] (Commutators: (2) [[§42 Commutators#^prop-42-1|§42.1]], (3) [[§42 Commutators#^prop-42-2|§42.2]], (4) [[§42 Commutators#^prop-42-3|§42.3]]).*
+*Treated in [[§45 Characters|§45]] ([[§45 Characters#^prop-45-1|Characters Are Constant on Conjugacy Classes]]) and [[§46 Commutators|§46]] (Commutators: (2) [[§46 Commutators#^prop-46-1|§46.1]], (3) [[§46 Commutators#^prop-46-2|§46.2]], (4) [[§46 Commutators#^prop-46-3|§46.3]]).*
 
 > [!question] Problem 2.5: Groups of Prime Order
 > Let $p$ be a prime and $G$ a group of order $p$. Show that $G \cong \mathbb{Z}/p\mathbb{Z}$.
 
 ^hw-2-5
 
-*Treated in [[§27 The Index and Lagrange's Theorem|§27]] ([[§27 The Index and Lagrange's Theorem#^thm-27-7|Groups of Prime Order]]).*
+*Treated in [[§29 The Index and Lagrange's Theorem|§29]] ([[§29 The Index and Lagrange's Theorem#^thm-29-7|Groups of Prime Order]]).*

@@ -185,7 +185,7 @@ Geometrically, adding $\mathbf{p}$ to $\mathbf{v}$ *translates* $\mathbf{v}$ to 
 *Uses:* [[§4 The Matrix Equation Ax = b#^thm-4-5|§4.5]]
 
 > [!remark]- Connections
-> - Rigorous treatment: the solution set is the translate $\mathbf{p} + \operatorname{Nul} A$ of a subspace, [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97]]; Axler shows that two translates of a subspace are equal or disjoint and makes them the points of the quotient space $V/U$. In group language $\mathbf{p} + \operatorname{Nul} A$ is a coset of $\operatorname{Nul} A$ in $(\mathbb{R}^n, +)$, [[§26 Left and Right Cosets#^def-26-2|493 Def. §26.2]].
+> - Rigorous treatment: the solution set is the translate $\mathbf{p} + \operatorname{Nul} A$ of a subspace, [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97]]; Axler shows that two translates of a subspace are equal or disjoint and makes them the points of the quotient space $V/U$. In group language $\mathbf{p} + \operatorname{Nul} A$ is a coset of $\operatorname{Nul} A$ in $(\mathbb{R}^n, +)$, [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2]].
 > - The line $\mathbf{x} = \mathbf{p} + t\mathbf{v}$ is Stewart's vector equation of a line, [[§84 Equations of Lines and Planes#^thm-84-1|Calc Thm. §84.1]].
 > - See also: the same structure for linear differential equations, general solution = solution of the homogeneous equation + one particular solution: [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|331 Thm. §17.2]] (for $ay'' + by' + cy = g$) and [[§35★ Nonhomogeneous Linear Systems#^thm-35-1|331 Thm. §35.1]] (for systems $\mathbf{x}' = P(t)\mathbf{x} + \mathbf{g}$).
 

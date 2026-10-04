@@ -303,7 +303,7 @@ An invertible matrix is row equivalent to an identity matrix, and $A^{-1}$ can b
 ^def-12-4
 
 > [!remark]- Connections
-> - Permutation matrices are the matrices $M(\sigma)$ of the linear maps that permute the standard basis, and $\sigma \mapsto M(\sigma)$ is an injective homomorphism $S_n \to GL_n$: [[§19 Polynomial Rings, Permutation Matrices, and Representations#^def-19-5|493 Def. §19.5]], [[§19 Polynomial Rings, Permutation Matrices, and Representations#^prop-19-5|493 Prop. §19.5]]. The count $n!$ is the order of $S_n$.
+> - Permutation matrices are the matrices $M(\sigma)$ of the linear maps that permute the standard basis, and $\sigma \mapsto M(\sigma)$ is an injective homomorphism $S_n \to GL_n$: [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|493 Def. §20.5]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|493 Prop. §20.5]]. The count $n!$ is the order of $S_n$.
 
 > [!theorem] Proposition §12.6: Row Operations Are Left Multiplications
 > If an elementary row operation is performed on an $m \times n$ matrix $A$, the resulting matrix can be written as $EA$, where the $m \times m$ matrix $E$ is created by performing the same row operation on $I_m$.

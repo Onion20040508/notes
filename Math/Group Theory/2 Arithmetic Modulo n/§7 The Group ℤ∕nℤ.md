@@ -20,7 +20,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^ex-21-1|590 Ex. §21.1]], and $\mathbb{Z}/n\mathbb{Z}$ as a quotient in [[§21 Algebra Prerequisites꞉ Groups#^ex-21-7|590 Ex. §21.7]].
-> - The general construction: [[§37 Quotient Groups#^def-37-1|Quotient Group]]; every cyclic group is one of these: [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]].
+> - The general construction: [[§40 Quotient Groups#^def-40-1|Quotient Group]]; every cyclic group is one of these: [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]].
 > - Elementary version: the set of classes [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|250 Def. §21.2]] and its size [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-2|250 Prop. §21.2]].
 
 > [!definition] Definition §7.2: Well-Defined
@@ -29,7 +29,7 @@ tags: [group-theory, math493]
 ^def-7-2
 
 > [!remark]- Connections
-> - The same issue for cosets of an arbitrary subgroup: [[§34 Multiplying Cosets#^prop-34-1|When Coset Multiplication Is Well Defined]]; 590 version: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-19|Why Normality is Required]].
+> - The same issue for cosets of an arbitrary subgroup: [[§37 Multiplying Cosets#^prop-37-1|When Coset Multiplication Is Well Defined]]; 590 version: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-19|Why Normality is Required]].
 > - In 250: [[§22 Partitions and Equivalence Relations#^ex-22-5|250 Ex. §22.5]] (well defined or not, on residue classes and on ℚ); first met for fractions in [[§13 Number Systems#^prop-13-3|250 Prop. §13.3]].
 
 > [!theorem] Proposition §7.1: Addition of Residue Classes Is Well-Defined; $\mathbb{Z}/n\mathbb{Z}$ Is a Group
@@ -76,7 +76,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Topological analogue: [[Universal Property of Quotient Maps]] (590 §12.3), same factorization triangle.
-> - Generalized to arbitrary normal subgroups by the [[§38 The First Isomorphism Theorem#^thm-38-1|First Isomorphism Theorem]].
+> - Generalized to arbitrary normal subgroups by the [[§41 The First Isomorphism Theorem#^thm-41-1|First Isomorphism Theorem]].
 > - Set-level version: [[§22 Partitions and Equivalence Relations#^prop-22-5|250 Prop. §22.5]] (a surjection induces a bijection on the quotient set).
 
 > [!remark] Remark: Where This Is Used

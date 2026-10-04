@@ -103,7 +103,7 @@ tags: [topology, math590]
 *Uses:* [[§21 Algebra Prerequisites꞉ Groups#^def-21-2|Def. §21.2]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|Def. §21.7]]
 
 > [!remark]- Connections
-> - Proved in 493: (2) is [[§17 Cyclic Groups#^thm-17-4|493 Thm. §17.4]] ([[Subgroups of Cyclic Groups Are Cyclic]]) and (3), stated here without proof, is [[§27 The Index and Lagrange's Theorem#^thm-27-2|493 Thm. §27.2]] ([[Lagrange's Theorem]]).
+> - Proved in 493: (2) is [[§17 Cyclic Groups#^thm-17-4|493 Thm. §17.4]] ([[Subgroups of Cyclic Groups Are Cyclic]]) and (3), stated here without proof, is [[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]] ([[Lagrange's Theorem]]).
 
 > [!theorem] Proposition §21.2: Contrapositive: Detecting Non-Abelian Groups
 > If $G$ contains a non-abelian subgroup $H$, then $G$ is non-abelian.
@@ -179,7 +179,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Linear-algebra version: [[§10 Invertibility and Isomorphisms#^ladr-3-63|Invertibility ⟺ injectivity and surjectivity]].
 > - Elementary version: invertible means bijective, [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]], and inverses via composition, [[§9 Injections, Surjections and Bijections#^prop-9-3|250 Prop. §9.3]].
-> - In 493 this gives that each group element acts bijectively, [[§23 Actions#^prop-23-2|493 Prop. §23.2]], so that an action lands in the symmetric group [[§3 Basic Examples of Groups#^def-3-5|493 Def. §3.5]].
+> - In 493 this gives that each group element acts bijectively, [[§25 Actions#^prop-25-2|493 Prop. §25.2]], so that an action lands in the symmetric group [[§3 Basic Examples of Groups#^def-3-5|493 Def. §3.5]].
 
 > [!remark] Remark
 > This is the standard technique for proving bijectivity in algebraic topology: construct two maps, show they compose to the identity in both orders. It appears repeatedly: the [[Basepoint Independence of π₁|basepoint independence isomorphism]] ([[§23 The Fundamental Group|§23]]), the [[§23 The Fundamental Group#^cor-23-6|functorial corollary]] that $\pi_1$ is a topological invariant ([[§23 The Fundamental Group|§23]]), and the [[Deformation Retract Induces Isomorphism on π₁|deformation retract theorem]] ([[§26 Deformation Retracts and Homotopy Type|§26]]) all use exactly this pattern.
@@ -667,7 +667,7 @@ The notation $\langle a, b \mid r \rangle$ means “force $r = e$.” But what d
 ^def-21-12
 
 > [!remark]- Connections
-> - Developed in full in Group Theory: [[§35 Normal Subgroups#^def-35-1|493 Def. §35.1]], with equivalent forms in [[Characterizations of Normality]]; the kernel fact of the next remark is [[Kernels Are Normal]].
+> - Developed in full in Group Theory: [[§38 Normal Subgroups#^def-38-1|493 Def. §38.1]], with equivalent forms in [[Characterizations of Normality]]; the kernel fact of the next remark is [[Kernels Are Normal]].
 
 > [!remark] Remark
 > Every subgroup of an abelian group is normal ($gng^{-1} = n \in N$, since conjugation does nothing). The [[§21 Algebra Prerequisites꞉ Groups#^def-21-6|kernel]] of any homomorphism is always normal: if $f(n) = e$, then $f(gng^{-1}) = f(g) \cdot e \cdot f(g)^{-1} = e$, so $gng^{-1} \in \ker(f)$.
@@ -682,7 +682,7 @@ The notation $\langle a, b \mid r \rangle$ means “force $r = e$.” But what d
 > [!remark]- Connections
 > - Linear-algebra versions: cosets ↔ [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|Translate]], $G/N$ ↔ [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]], $p$ ↔ [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]].
 > - Topological version: [[§12 Quotient Topology#^def-12-3|Quotient Space]].
-> - Developed in full in Group Theory: cosets in [[§26 Left and Right Cosets#^def-26-2|493 Def. §26.2]] ([[Cosets Partition a Group]]) and quotient groups in [[§37 Quotient Groups#^def-37-1|493 Def. §37.1]] ([[Quotient Groups]]).
+> - Developed in full in Group Theory: cosets in [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2]] ([[Cosets Partition a Group]]) and quotient groups in [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]] ([[Quotient Groups]]).
 
 > [!remark] Remark: What the Slash Means
 > $G/N$ means: take $G$, declare everything in $N$ to be the identity, see what's left. Two elements $g, h \in G$ become “the same” in $G/N$ if they differ by something in $N$ — i.e., $g^{-1}h \in N$. The slash is literally division: you divide $G$ into groups of equivalent elements (cosets). Each coset $gN$ is one element of $G/N$. The elements of $N$ itself all collapse to the identity coset $eN = N$.
@@ -722,7 +722,7 @@ The notation $\langle a, b \mid r \rangle$ means “force $r = e$.” But what d
 ^ex-21-7
 
 > [!remark]- Connections
-> - 493 counterpart: [[§7 The Group ℤ∕nℤ#^def-7-1|493 Def. §7.1]], and ℤ/nℤ as a quotient group in [[§37 Quotient Groups#^ex-37-1|493 Ex. §37.1]].
+> - 493 counterpart: [[§7 The Group ℤ∕nℤ#^def-7-1|493 Def. §7.1]], and ℤ/nℤ as a quotient group in [[§40 Quotient Groups#^ex-40-1|493 Ex. §40.1]].
 
 > [!example] Example §21.8: Forcing Commutativity
 > Start with $F_2 = \langle a, b \rangle$ (all words in $a, b$, no simplification). Force $aba^{-1}b^{-1} = e$, i.e., $ab = ba$. Now every word reduces to $a^m b^n$: for instance, $bab^{-1} = a$, $a^2ba^{-1} = ab$, $baba = a^2b^2$. Result: $\mathbb{Z} \times \mathbb{Z}$.
@@ -741,4 +741,4 @@ The notation $\langle a, b \mid r \rangle$ means “force $r = e$.” But what d
 ^rem-21-20
 
 > [!remark]- Connections
-> - The general construction in 493: the abelianization, the quotient by the commutator subgroup, [[§42 Commutators#^def-42-3|493 Def. §42.3]], which is abelian by [[§42 Commutators#^prop-42-6|493 Prop. §42.6]].
+> - The general construction in 493: the abelianization, the quotient by the commutator subgroup, [[§46 Commutators#^def-46-3|493 Def. §46.3]], which is abelian by [[§46 Commutators#^prop-46-6|493 Prop. §46.6]].

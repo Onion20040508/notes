@@ -2,14 +2,14 @@
 type: section
 subject: "[[Group Theory]]"
 chapter: 7
-section: 31
+section: 33
 tags: [group-theory, math493]
 ---
-← [[§30 Examples꞉ Linear Groups and the Cube]] · ↑ [[· 7 Conjugacy and the Center]] · [[§32 Conjugation as an Action and the Class Equation]] →
+← [[§32 Linear Groups, the Cube, S₃ and A₄]] · ↑ [[· 7 Conjugacy and the Center]] · [[§34 Conjugation as an Action and the Class Equation]] →
 
 *Reference: Pinter Ch. 13, Ex. I.*
 
-> [!definition] Definition §31.1: Conjugacy Class
+> [!definition] Definition §33.1: Conjugacy Class
 > For $g \in G$, the **conjugacy class** of $g$ is the set
 >
 > $$
@@ -20,12 +20,12 @@ tags: [group-theory, math493]
 >
 > *Source: WS 3*
 
-^def-31-1
+^def-33-1
 
 > [!remark]- Connections
-> - Normal subgroups are exactly the subgroups that are unions of classes: [[§36 Sources of Normal Subgroups#^prop-36-7|§36.7]]; characters are constant on classes: [[§41 Characters#^prop-41-1|§41.1]].
+> - Normal subgroups are exactly the subgroups that are unions of classes: [[§39 Sources of Normal Subgroups#^prop-39-7|§39.7]]; characters are constant on classes: [[§45 Characters#^prop-45-1|§45.1]].
 
-> [!theorem] Lemma §31.1: Conjugation Relabels the Entries
+> [!theorem] Lemma §33.1: Conjugation Relabels the Entries
 > Let $\sigma \in S_n$. For any cycle,
 >
 > $$
@@ -38,9 +38,9 @@ tags: [group-theory, math493]
 > \sigma\,(a_{1,1}\ \cdots\ a_{1,r_1}) \cdots (a_{k,1}\ \cdots\ a_{k,r_k})\,\sigma^{-1} = \big(\sigma(a_{1,1})\ \cdots\ \sigma(a_{1,r_1})\big) \cdots \big(\sigma(a_{k,1})\ \cdots\ \sigma(a_{k,r_k})\big),
 > $$
 >
-> and the cycles on the right are again disjoint. In particular a permutation and its conjugate have the same cycle type ([[§31 Conjugacy Classes#^def-31-2|Def. §31.2]]).
+> and the cycles on the right are again disjoint. In particular a permutation and its conjugate have the same cycle type ([[§33 Conjugacy Classes#^def-33-2|Def. §33.2]]).
 
-^lem-31-1
+^lem-33-1
 
 > [!proof]+ Proof
 > *One cycle.* This is [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle, §12.1]]: if $c = (a_1\ \cdots\ a_r)$, then $(\sigma c \sigma^{-1})(\sigma(a_i)) = \sigma(c(a_i)) = \sigma(a_{i+1})$ (indices mod $r$), while a point not of the form $\sigma(a_i)$ is fixed, because $\sigma^{-1}$ of it is not among the $a_i$.
@@ -59,11 +59,11 @@ tags: [group-theory, math493]
 >
 > a cycle of the same length $r_i$. These relabeled cycles are again pairwise disjoint: the entries of $\sigma c_i \sigma^{-1}$ are $\sigma(\{a_{i,1}, \ldots, a_{i,r_i}\})$, and $\sigma$ is injective, so distinct $i$ give disjoint sets.
 
-^pf-31-1
+^pf-33-1
 
 *Uses:* [[§12 Multiplying and Conjugating Cycles#^prop-12-1|§12.1]]
 
-> [!theorem] Proposition §31.2: Conjugacy Class of $(1\,2)$ in $S_n$
+> [!theorem] Proposition §33.2: Conjugacy Class of $(1\,2)$ in $S_n$
 > Let $n \geq 2$, and let $(1\,2) \in S_n$ be the permutation $1 \mapsto 2$, $2 \mapsto 1$, $j \mapsto j$ for $j \geq 3$. The conjugacy class of $(1\,2)$ in $S_n$ is the set of all transpositions:
 >
 > $$
@@ -74,10 +74,10 @@ tags: [group-theory, math493]
 >
 > *Source: WS 3.2*
 
-^prop-31-2
+^prop-33-2
 
 > [!proof]+ Proof
-> By [[§31 Conjugacy Classes#^lem-31-1|Conjugation Relabels the Entries, §31.1]], for any $\tau \in S_n$,
+> By [[§33 Conjugacy Classes#^lem-33-1|Conjugation Relabels the Entries, §33.1]], for any $\tau \in S_n$,
 >
 > $$
 > \tau\,(1\,2)\,\tau^{-1} = \big(\tau(1)\ \ \tau(2)\big),
@@ -85,11 +85,11 @@ tags: [group-theory, math493]
 >
 > a transposition. So every conjugate of $(1\,2)$ is a transposition. Conversely, given a transposition $(i\ j)$, choose any $\tau \in S_n$ with $\tau(1) = i$ and $\tau(2) = j$ (possible since $i \neq j$; e.g. extend arbitrarily to a bijection); then $\tau(1\,2)\tau^{-1} = (i\ j)$. Hence $\operatorname{Conj}((1\,2))$ is exactly the set of transpositions, of which there are $\binom{n}{2}$, one for each $2$-element subset of $\{1, \ldots, n\}$.
 
-^pf-31-2
+^pf-33-2
 
-*Uses:* [[§31 Conjugacy Classes#^def-31-1|Def. §31.1]], [[§31 Conjugacy Classes#^lem-31-1|§31.1]]
+*Uses:* [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§33 Conjugacy Classes#^lem-33-1|§33.1]]
 
-> [!definition] Definition §31.2: Cycle Type
+> [!definition] Definition §33.2: Cycle Type
 > Let $\sigma \in S_n$ have disjoint-cycle decomposition $\sigma = c_1 c_2 \cdots c_k$, where every element of $\{1, \ldots, n\}$ occurs in exactly one $c_i$ (so fixed points are written as $1$-cycles), and let $r_i$ be the length of $c_i$, indexed so that $r_1 \geq r_2 \geq \cdots \geq r_k$. The **cycle type** of $\sigma$ is the sequence
 >
 > $$
@@ -98,15 +98,15 @@ tags: [group-theory, math493]
 >
 > a **partition** of $n$. For example, in $S_5$: $\lambda\big((1\,2\,3)(4\,5)\big) = (3, 2)$; $\lambda\big((1\,2)(3)(4)(5)\big) = (2,1,1,1)$, usually abbreviated $2\,1^3$; $\lambda(e) = (1,1,1,1,1) = 1^5$.
 
-^def-31-2
+^def-33-2
 
-> [!theorem] Theorem §31.3: Conjugacy Classes in $S_n$ Are Cycle Types
+> [!theorem] Theorem §33.3: Conjugacy Classes in $S_n$ Are Cycle Types
 > For $\sigma, \sigma' \in S_n$: $\sigma$ and $\sigma'$ are conjugate in $S_n$ if and only if $\lambda(\sigma) = \lambda(\sigma')$. Hence the conjugacy classes of $S_n$ are in bijection with the partitions of $n$.
 
-^thm-31-3
+^thm-33-3
 
 > [!proof]+ Proof
-> ($\Rightarrow$) Let $\sigma = c_1 c_2 \cdots c_k$ with disjoint cycles of lengths $r_1, \ldots, r_k$, and let $\tau \in S_n$. By [[§31 Conjugacy Classes#^lem-31-1|Conjugation Relabels the Entries, §31.1]], $\tau\sigma\tau^{-1} = (\tau c_1 \tau^{-1}) \cdots (\tau c_k \tau^{-1})$ is a product of disjoint cycles of the same lengths $r_1, \ldots, r_k$; i.e. $\lambda(\tau\sigma\tau^{-1}) = \lambda(\sigma)$.
+> ($\Rightarrow$) Let $\sigma = c_1 c_2 \cdots c_k$ with disjoint cycles of lengths $r_1, \ldots, r_k$, and let $\tau \in S_n$. By [[§33 Conjugacy Classes#^lem-33-1|Conjugation Relabels the Entries, §33.1]], $\tau\sigma\tau^{-1} = (\tau c_1 \tau^{-1}) \cdots (\tau c_k \tau^{-1})$ is a product of disjoint cycles of the same lengths $r_1, \ldots, r_k$; i.e. $\lambda(\tau\sigma\tau^{-1}) = \lambda(\sigma)$.
 >
 > ($\Leftarrow$) Suppose $\lambda(\sigma) = \lambda(\sigma') = (r_1, \ldots, r_k)$. Write both decompositions with their cycles in the same length order:
 >
@@ -124,20 +124,20 @@ tags: [group-theory, math493]
 > \tau(a_{i,j}) = b_{i,j} \qquad (1 \leq i \leq k,\ 1 \leq j \leq r_i);
 > $$
 >
-> this is a well-defined bijection, since it matches the two enumerations entry by entry. By [[§31 Conjugacy Classes#^lem-31-1|Conjugation Relabels the Entries]],
+> this is a well-defined bijection, since it matches the two enumerations entry by entry. By [[§33 Conjugacy Classes#^lem-33-1|Conjugation Relabels the Entries]],
 >
 > $$
 > \tau\sigma\tau^{-1} = \big(\tau(a_{1,1})\ \cdots\ \tau(a_{1,r_1})\big) \cdots \big(\tau(a_{k,1})\ \cdots\ \tau(a_{k,r_k})\big) = (b_{1,1}\ \cdots\ b_{1,r_1}) \cdots (b_{k,1}\ \cdots\ b_{k,r_k}) = \sigma'.
 > $$
 
-^pf-31-3
+^pf-33-3
 
-*Uses:* [[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]], [[§31 Conjugacy Classes#^def-31-2|Def. §31.2]], [[§31 Conjugacy Classes#^lem-31-1|§31.1]]
+*Uses:* [[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]], [[§33 Conjugacy Classes#^def-33-2|Def. §33.2]], [[§33 Conjugacy Classes#^lem-33-1|§33.1]]
 
 > [!remark]- Connections
-> - In $A_n$ a class of $S_n$ can split: [[§40 Simple Groups#^ex-40-1|Ex. §40.1]]; for $3$-cycles and $n \geq 5$ it does not: [[§40 Simple Groups#^lem-40-8|§40.8]].
+> - In $A_n$ a class of $S_n$ can split: [[§43 Simple Groups#^ex-43-1|Ex. §43.1]]; for $3$-cycles and $n \geq 5$ it does not: [[§43 Simple Groups#^lem-43-8|§43.8]].
 
-> [!example] Example §31.1: Conjugating One Permutation to Another
+> [!example] Example §33.1: Conjugating One Permutation to Another
 > In $S_5$, let $\sigma = (1\,2\,3)(4\,5)$ and $\sigma' = (2\,5\,1)(3\,4)$; both have cycle type $(3,2)$. Reading off the entries in order,
 >
 > $$
@@ -146,32 +146,32 @@ tags: [group-theory, math493]
 >
 > i.e. $\tau = (1\,2\,5\,4\,3)$, and then $\tau\sigma\tau^{-1} = (\tau(1)\ \tau(2)\ \tau(3))(\tau(4)\ \tau(5)) = (2\,5\,1)(3\,4) = \sigma'$. The conjugating element is not unique: one may start each cycle of $\sigma'$ at any of its entries, and permute cycles of equal length among themselves.
 
-^ex-31-1
+^ex-33-1
 
 ![[m493-31-1.svg]]
 *Conjugation relabels: $\tau\sigma\tau^{-1}$ has the same arrow diagram as $\sigma$, with each point $i$ renamed $\tau(i)$. In particular it has the same cycle type.*
 
-> [!example] Example §31.2: Conjugacy Classes of $S_3$ and $S_4$
-> $S_3$ has three conjugacy classes, by cycle type: $\{e\}$; the three transpositions $\{(1\,2), (1\,3), (2\,3)\}$; the two $3$-cycles $\{(1\,2\,3), (1\,3\,2)\}$. Sizes $1 + 3 + 2 = 6$. In $S_4$ the cycle types are $1^4$, $2\,1^2$, $2^2$, $3\,1$, $4$, with classes of sizes $1, 6, 3, 8, 6$, summing to $24$. Note that the class sizes need not divide each other, but each divides $|S_n|$ — explained by the orbit–stabilizer theorem in [[§32 Conjugation as an Action and the Class Equation#^cor-32-2|§32.2]].
+> [!example] Example §33.2: Conjugacy Classes of $S_3$ and $S_4$
+> $S_3$ has three conjugacy classes, by cycle type: $\{e\}$; the three transpositions $\{(1\,2), (1\,3), (2\,3)\}$; the two $3$-cycles $\{(1\,2\,3), (1\,3\,2)\}$. Sizes $1 + 3 + 2 = 6$. In $S_4$ the cycle types are $1^4$, $2\,1^2$, $2^2$, $3\,1$, $4$, with classes of sizes $1, 6, 3, 8, 6$, summing to $24$. Note that the class sizes need not divide each other, but each divides $|S_n|$ — explained by the orbit–stabilizer theorem in [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]].
 
-^ex-31-2
+^ex-33-2
 
 ![[m493-31-2.svg]]
-*The $24$ elements of $S_4$ sorted into conjugacy classes, one box per cycle type ([[§31 Conjugacy Classes#^def-31-2|Def. §31.2]]); the class sizes $1, 3, 8, 6, 6$ (red) sum to $24$. Any two elements in one box are conjugate, and no element of one box is conjugate to an element of another ([[§31 Conjugacy Classes#^thm-31-3|Theorem §31.3]]).*
+*The $24$ elements of $S_4$ sorted into conjugacy classes, one box per cycle type ([[§33 Conjugacy Classes#^def-33-2|Def. §33.2]]); the class sizes $1, 3, 8, 6, 6$ (red) sum to $24$. Any two elements in one box are conjugate, and no element of one box is conjugate to an element of another ([[§33 Conjugacy Classes#^thm-33-3|Theorem §33.3]]).*
 
-> [!definition] Definition §31.3: Similar Matrices
+> [!definition] Definition §33.3: Similar Matrices
 > Two matrices $X, Y \in \operatorname{Mat}_{n \times n}(\mathbb{C})$ are called **similar** if $X = SYS^{-1}$ for some $S \in GL_n(\mathbb{C})$. Thus for $Y \in GL_n(\mathbb{C})$, the conjugacy class of $Y$ in $GL_n(\mathbb{C})$ is exactly the set of invertible matrices similar to $Y$. Similar matrices have the same characteristic polynomial: $\det(xI - SYS^{-1}) = \det(S(xI - Y)S^{-1}) = \det(xI - Y)$.
 >
 > *Source: lecture 9/9*
 
-^def-31-3
+^def-33-3
 
 *Uses:* [[§34 Determinants#^ladr-9-49|LADR 9.49]]
 
 > [!remark]- Connections
 > - The operator version: [[§34 Determinants#^ladr-9-52|LADR 9.52 (Determinant is a similarity invariant)]].
 
-> [!theorem] Proposition §31.4: Conjugacy Class of a Diagonal Matrix
+> [!theorem] Proposition §33.4: Conjugacy Class of a Diagonal Matrix
 > Let $D = \begin{pmatrix} 3 & 0 \\ 0 & 4 \end{pmatrix} \in GL_2(\mathbb{C})$. The conjugacy class of $D$ in $GL_2(\mathbb{C})$ is the set of all $2 \times 2$ complex matrices with eigenvalues $3$ and $4$:
 >
 > $$
@@ -180,21 +180,21 @@ tags: [group-theory, math493]
 >
 > *Source: WS 3.3*
 
-^prop-31-4
+^prop-33-4
 
 > [!proof]+ Proof
 > ($\subseteq$) If $A = SDS^{-1}$, then $A$ is similar to $D$, so $\det(xI - A) = \det(xI - D) = (x - 3)(x - 4)$.
 >
 > ($\supseteq$) Suppose $\det(xI - A) = (x - 3)(x - 4)$, so $A$ has the two distinct eigenvalues $3$ and $4$. Choose eigenvectors $v_3, v_4 \in \mathbb{C}^2$ with $Av_3 = 3v_3$, $Av_4 = 4v_4$. [[Linearly independent eigenvectors|Eigenvectors for distinct eigenvalues are linearly independent]] (if $av_3 + bv_4 = 0$, apply $A$ to get $3av_3 + 4bv_4 = 0$; subtracting $3$ times the first relation gives $bv_4 = 0$, so $b = 0$, then $a = 0$), so $S = [\,v_3 \mid v_4\,]$ is invertible. Then $AS = [\,3v_3 \mid 4v_4\,] = SD$, i.e. $A = SDS^{-1} \in \operatorname{Conj}(D)$. Finally, a $2 \times 2$ matrix has characteristic polynomial $x^2 - (\operatorname{tr} A)x + \det A$, so the condition is $\operatorname{tr} A = 7$, $\det A = 12$; such $A$ is automatically invertible since $\det A \neq 0$.
 
-^pf-31-4
+^pf-33-4
 
-*Uses:* [[§31 Conjugacy Classes#^def-31-1|Def. §31.1]], [[§31 Conjugacy Classes#^def-31-3|Def. §31.3]], [[§14 Invariant Subspaces#^ladr-5-11|LADR 5.11]], [[§34 Determinants#^ladr-9-65|LADR 9.65]], [[§34 Determinants#^ladr-9-50|LADR 9.50]]
+*Uses:* [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§33 Conjugacy Classes#^def-33-3|Def. §33.3]], [[§14 Invariant Subspaces#^ladr-5-11|LADR 5.11]], [[§34 Determinants#^ladr-9-65|LADR 9.65]], [[§34 Determinants#^ladr-9-50|LADR 9.50]]
 
 > [!remark] Remark: What the Argument Uses
-> The direction ($\supseteq$) needed the eigenvalues to be *distinct*, which forced diagonalizability. For a diagonal matrix with a repeated eigenvalue, e.g. $\begin{pmatrix} 3 & 0 \\ 0 & 3 \end{pmatrix} = 3I$, the conjugacy class is just $\{3I\}$ (it is [[§33 The Center#^def-33-1|central]]), while $\begin{pmatrix} 3 & 1 \\ 0 & 3 \end{pmatrix}$ has the same characteristic polynomial but is not similar to $3I$. Conjugacy classes in $GL_n(\mathbb{C})$ are classified in general by Jordan normal form, of which this problem is the diagonalizable case.
+> The direction ($\supseteq$) needed the eigenvalues to be *distinct*, which forced diagonalizability. For a diagonal matrix with a repeated eigenvalue, e.g. $\begin{pmatrix} 3 & 0 \\ 0 & 3 \end{pmatrix} = 3I$, the conjugacy class is just $\{3I\}$ (it is [[§35 The Center#^def-35-1|central]]), while $\begin{pmatrix} 3 & 1 \\ 0 & 3 \end{pmatrix}$ has the same characteristic polynomial but is not similar to $3I$. Conjugacy classes in $GL_n(\mathbb{C})$ are classified in general by Jordan normal form, of which this problem is the diagonalizable case.
 
-^rem-31-1
+^rem-33-1
 
 > [!remark]- Connections
 > - Jordan normal form: [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-46|LADR 8.46 (Jordan form)]].

@@ -23,7 +23,7 @@ tags: [group-theory, hub]
 - [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^ex-9-1|Example §9.1: A CRT Computation]]
 - [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|Lemma §9.1: Euclid's Lemma]]
 - [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|Theorem §9.3: Chinese Remainder Theorem]]
-- [[§21 The Structure of Uₙ#^lem-21-1|Lemma §21.1: Coprime to Each Factor, Coprime to the Product]]
+- [[§22 The Structure of Uₙ#^lem-22-1|Lemma §22.1: Coprime to Each Factor, Coprime to the Product]]
 
 ## Connections
 - **Used for.** The [[§8 Invertibility and Unit Groups#^prop-8-1|Invertibility Criterion]] (§8.1), hence that Uₙ is a group ([[§8 Invertibility and Unit Groups#^prop-8-3|§8.3]]); [[Euclid's Lemma]]; the [[Chinese Remainder Theorem]]. The whole chain is in [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^rem-9-1|The Dependency Chain in ℤ]].

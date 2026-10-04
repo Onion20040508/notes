@@ -18,11 +18,11 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§17 Cyclic Groups#^thm-17-1|Theorem §17.1: Classification of Cyclic Groups]]
 - [[§17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]
-- [[§23 Actions#^prop-23-4|Proposition §23.4: Faithful Actions Embed G in S_X]]
-- [[§40 Simple Groups#^prop-40-3|Proposition §40.3: Homomorphisms out of a Simple Group]]
+- [[§25 Actions#^prop-25-4|Proposition §25.4: Faithful Actions Embed G in S_X]]
+- [[§43 Simple Groups#^prop-43-3|Proposition §43.3: Homomorphisms out of a Simple Group]]
 
 ## Connections
-- **Used for.** Proving isomorphisms, such as ⟨g⟩ ≅ ℤ/Nℤ ([[§17 Cyclic Groups#^prop-17-3|§17.3]]) and the [[Classification of Cyclic Groups]]. Also faithful actions embed G in S_X ([[§23 Actions#^prop-23-4|§23.4]]), which gives [[Cayley's Theorem]], and homomorphisms out of a simple group are injective or trivial ([[§40 Simple Groups#^prop-40-3|§40.3]]).
+- **Used for.** Proving isomorphisms, such as ⟨g⟩ ≅ ℤ/Nℤ ([[§17 Cyclic Groups#^prop-17-3|§17.3]]) and the [[Classification of Cyclic Groups]]. Also faithful actions embed G in S_X ([[§25 Actions#^prop-25-4|§25.4]]), which gives [[Cayley's Theorem]], and homomorphisms out of a simple group are injective or trivial ([[§43 Simple Groups#^prop-43-3|§43.3]]).
 - **Homomorphisms only.** For an arbitrary map, the fiber over one point says nothing about the others. The criterion works because φ(g₁) = φ(g₂) can be rewritten as φ(g₁g₂⁻¹) = e ([[§15 Homomorphisms#^rem-15-2|Kernel as the Measure of Non-Injectivity]]).
-- **Same idea elsewhere.** [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]] (LADR 3.15), and its 590 counterpart ([[§21 Algebra Prerequisites꞉ Groups#^prop-21-8|590 §21.8]]). The quantitative version is |G| = |Ker φ| · |Im φ| ([[§38 The First Isomorphism Theorem#^cor-38-2|§38.2]]).
+- **Same idea elsewhere.** [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]] (LADR 3.15), and its 590 counterpart ([[§21 Algebra Prerequisites꞉ Groups#^prop-21-8|590 §21.8]]). The quantitative version is |G| = |Ker φ| · |Im φ| ([[§41 The First Isomorphism Theorem#^cor-41-2|§41.2]]).
 - **Also in [[Applied Linear Algebra]]:** [[§9 The Matrix of a Linear Transformation#^thm-9-2|235 Thm. §9.2]] (linear maps ℝⁿ → ℝᵐ: one-to-one iff T(x) = 0 has only the trivial solution, with worked examples).

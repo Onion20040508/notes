@@ -20,7 +20,7 @@ tags: [linear-algebra, hub]
 - [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|7.58 QR factorization]]
 
 ## Used in (Group Theory)
-- [[§30 Examples꞉ Linear Groups and the Cube#^prop-30-2|Proposition §30.2: O_3(ℝ) Acting on ℝ³]]
+- [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|Proposition §32.2: O_3(ℝ) Acting on ℝ³]]
 
 ## Used in (Differentiable Manifolds)
 - [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-6|Proposition §14.6: O(n) Acts Transitively on Gr_k(ℝⁿ)]]
