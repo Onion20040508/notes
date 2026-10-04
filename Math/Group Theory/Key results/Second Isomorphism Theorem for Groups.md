@@ -23,7 +23,7 @@ tags: [group-theory, hub]
 - [[§42 The Second and Third Isomorphism Theorems#^cor-42-3|Corollary §42.3: Subgroup Representatives, Again]]
 
 ## Connections
-- **How.** Two applications of the [[First Isomorphism Theorem for Groups]] to the projection $\pi : G \to G/N$: restricted to $H$ it has kernel $H \cap N$, restricted to $HN$ kernel $N$, and the two images agree, $\pi(H) = \pi(HN)$ ([[§42 The Second and Third Isomorphism Theorems#^thm-42-2|§42.2]]).
-- **Picture.** The diamond $H \cap N \le H, N \le HN$ ([[m493-38-3.svg|figure]] in [[§42 The Second and Third Isomorphism Theorems|§42]]): the quotients on opposite edges agree, $HN/N \cong H/(H \cap N)$.
-- **Special case.** When a set of representatives for $G/N$ is a subgroup $S$, then $G/N \cong S$ ([[§42 The Second and Third Isomorphism Theorems#^cor-42-3|§42.3]], first proved directly in [[§40 Quotient Groups#^prop-40-4|§40.4]]); with $H = \operatorname{Stab}(4)$ it gives $S_4/V \cong S_3$ ([[§44 S₃, S₄, A₄ and A₅#^ex-44-1|Ex. §44.1]]).
-- **Next.** The Third Isomorphism Theorem, $(G/N)/(K/N) \cong G/K$, was only named ([[§42 The Second and Third Isomorphism Theorems#^thm-42-4|§42.4]]).
+- **How.** Two applications of the [[First Isomorphism Theorem for Groups]] to the projection π : G → G/N: restricted to H it has kernel H ∩ N, restricted to HN kernel N, and the two images agree, π(H) = π(HN) ([[§42 The Second and Third Isomorphism Theorems#^pf-42-2|proof of §42.2]]).
+- **Picture.** The diamond H ∩ N ≤ H, N ≤ HN ([[m493-38-3.svg|figure]] in [[§42 The Second and Third Isomorphism Theorems|§42]]): the quotients on opposite edges agree, HN/N ≅ H/(H ∩ N).
+- **Special case.** When a set of representatives for G/N is a subgroup S, then G/N ≅ S ([[§42 The Second and Third Isomorphism Theorems#^cor-42-3|§42.3]], first proved directly in [[§40 Quotient Groups#^prop-40-4|§40.4]]); with H = Stab(4) it gives S₄/V ≅ S₃ ([[§44 S₃, S₄, A₄ and A₅#^ex-44-1|Ex. §44.1]]).
+- **Next.** The Third Isomorphism Theorem, (G/N)/(K/N) ≅ G/K, was only named in lecture; its proof is still to come ([[§42 The Second and Third Isomorphism Theorems#^thm-42-4|§42.4]]).

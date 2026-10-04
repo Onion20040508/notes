@@ -8,7 +8,7 @@ tags: [functional-analysis, hub]
 ![[§6 Convex Sets and the Gauge#^prop-6-7]]
 
 ## Treated in
-- [[§6 Convex Sets and the Gauge#^prop-6-7|Proposition §6.7: Interior Points of K are Exactly p_K < 1]], in [[§6 Convex Sets and the Gauge]]
+- [[§6 Convex Sets and the Gauge#^prop-6-7|Proposition §6.7: Interior Points of K are Exactly {p_K < 1}]], in [[§6 Convex Sets and the Gauge]]
 
 ## Its proof uses
 - [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3|Definition §2.3: Convex Set]]

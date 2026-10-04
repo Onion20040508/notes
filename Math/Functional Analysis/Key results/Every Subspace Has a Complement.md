@@ -13,6 +13,7 @@ tags: [functional-analysis, hub]
 ## Its proof uses
 - [[§1 Linear Spaces#^lem-1-7|Lemma §1.7: One-Step Enlargement]]
 - [[§1 Linear Spaces#^def-1-8|Definition §1.8: Complement]]
+- [[§4 Statement and Motivation#^thm-4-2|Theorem §4.2: Hahn–Banach]] (the chain argument of its proof)
 - [[§5 Proof of the Hahn–Banach Theorem#^thm-5-2|Theorem §5.2: Zorn's Lemma]]
 
 ## Used in (Functional Analysis)

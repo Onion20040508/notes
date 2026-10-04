@@ -14,7 +14,7 @@ tags: [subject, functional-analysis]
 MATH 556, *Applied Functional Analysis* (Fall 2026, Sijue Wu); text Lax, *Functional Analysis* (Chapters 1, 3, 5, 6 and 15). Prerequisites: linear algebra, some complex analysis, advanced calculus; Lebesgue theory is not assumed. Section numbers §1–§33 are the notes' own; every box with a counterpart in Lax ends with it (*Lax: …*), and [[Functional Analysis Lax Concordance]] reads the two side by side. [[Functional Analysis Problem-Solving Techniques]] collects the recurring proof strategies; [[Functional Analysis Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math556_notes.tex`.
 
 ## Roadmap
-The course moves through three stages of structure on a linear space: pure algebra, with no topology at all (Chapters 1–2); a norm, bringing distance, limits and completeness (Chapters 3–4); and an inner product, bringing angles and orthogonality (Chapter 5). Four threads run across the stages, and most theorems of the course are a step along one of them or a point where two of them meet: [[· 6 Bounded Linear Maps|Chapter 6]] begins the study of linear maps between normed spaces.
+The course moves through three stages of structure on a linear space: pure algebra, with no topology at all (Chapters 1–2); a norm, bringing distance, limits and completeness (Chapters 3–4); and an inner product, bringing angles and orthogonality (Chapter 5); [[· 6 Bounded Linear Maps|Chapter 6]] then begins the study of linear maps between normed spaces. Four threads run across the stages, and most theorems of the course are a step along one of them or a point where two of them meet:
 - **Functionals**: linear functionals are constructed by Hahn–Banach in the algebraic stage and, on a Hilbert space, are all identified by the Riesz representation theorem.
 - **Convexity**: convex sets correspond to positive homogeneous subadditive functions through the gauge; a norm is the gauge of its unit ball; in a Hilbert space a closed convex set has closest points.
 - **Completeness**: limits must be produced, not assumed — the completion, the Banach spaces $\ell^p$ and $L^p$, and the convergence of orthonormal expansions.
@@ -28,7 +28,7 @@ The line under each section heading records its stage and thread. [[· 7 Functio
 The boxes, as links: linear functionals ([[§2 Linear Maps, Convexity, and Linear Functionals|§2]]); [[Hahn–Banach Theorem|Hahn–Banach, §4.2]]; [[Norms Are Gauges|a norm is an admissible p, §10.1]]; [[Riesz Representation Theorem (Hilbert spaces)|Riesz representation, §23.2]]; the gauge ([[§6 Convex Sets and the Gauge|§6]]); [[Hyperplane Separation Theorem|separation, §7.1]]; [[Closest Point in a Closed Convex Set|closest point, §22.2]]; [[Completion of a Normed Space|completion, §11.4]]; [[ℓᵖ Is a Banach Space|§16.5]] and [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|§17.3]]; [[Orthogonal Decomposition Theorem|orthogonal decomposition, §22.4]]; [[§24 Orthonormal Sets and Bases#^prop-24-6|expansions converge, §24.6]]; only finite sums ([[§1 Linear Spaces#Linear Span|§1.4]]); [[All Norms on a Finite-Dimensional Space Are Equivalent|§12.3]]; [[The Unit Ball of an Infinite-Dimensional Space Is Not Compact|§18.5]]; [[Characterizations of an Orthonormal Basis|Bessel, Parseval, orthonormal bases, §24.8]].
 
 ## How the chapters build on each other
-Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved (forward references in the notes). Dashed arrows from other subjects: citations of their results, labelled with the number (only arrows with 2 or more citations are drawn).
+Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved (forward references in the notes). Dashed arrows from other subjects: citations of their results, labelled with the number (only arrows with 2 or more citations are drawn, so [[Topology]], cited once, from Chapter 4, appears as a node without arrows).
 
 ```mermaid
 graph TD
@@ -108,7 +108,7 @@ graph TD
 
 ## Summaries
 - [[Functional Analysis Lax Concordance]]: notation, where the course's route differs from Lax's, the chapter map, and every Lax result cited in these notes with its counterpart here.
-- [[Functional Analysis Problem-Solving Techniques]]: fifteen recurring proof strategies, each with the homework and lecture results that use it.
+- [[Functional Analysis Problem-Solving Techniques]]: eighteen recurring proof strategies, each with the homework and lecture results that use it.
 - [[Functional Analysis Course Log]]: lectures and homework, and where each is in these notes.
 
 ## Prerequisites from other subjects

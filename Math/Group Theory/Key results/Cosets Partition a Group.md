@@ -25,7 +25,7 @@ tags: [group-theory, hub]
 - [[§29 The Index and Lagrange's Theorem#^prop-29-5|Proposition §29.5: The Index Is Multiplicative]]
 - [[§30 Orbit–Stabilizer#^prop-30-1|Proposition §30.1: When Two Group Elements Move x to the Same Place]]
 - [[§30 Orbit–Stabilizer#^prop-30-2|Proposition §30.2: The Orbit Bijection]]
-- [[§30 Orbit–Stabilizer#^prop-30-4|Proposition §30.4: Left Cosets Record alpha(n), Right Cosets Record alpha⁻¹(n)]]
+- [[§30 Orbit–Stabilizer#^prop-30-4|Proposition §30.4: Left Cosets Record α(n), Right Cosets Record α⁻¹(n)]]
 - [[§31 G Acting on Coset Spaces#^prop-31-1|Proposition §31.1: The Action of G on G/H]]
 - [[§37 Multiplying Cosets#^prop-37-1|Proposition §37.1: When Coset Multiplication Is Well Defined]]
 - [[§38 Normal Subgroups#^prop-38-2|Proposition §38.2: Characterizations of Normality]]
@@ -41,3 +41,4 @@ tags: [group-theory, hub]
 - **Left and right differ.** For H = {e, (1 2)} in S₃, (1 3)H ≠ H(1 3) ([[§28 Left and Right Cosets#^ex-28-1|Ex. §28.1]]). So gH ↦ Hg is not well defined ([[§28 Left and Right Cosets#^ex-28-2|Ex. §28.2]]), and the right bijection is gH ↦ Hg⁻¹ ([[§28 Left and Right Cosets#^prop-28-3|§28.3]]). The two partitions agree exactly when H is normal ([[Characterizations of Normality]]).
 - **Cosets are orbits.** They are the orbits of H acting by multiplication ([[§28 Left and Right Cosets#^prop-28-1|Cosets Are Orbits]]), so this is a case of [[§27 Orbits#^prop-27-1|Orbits Partition X]].
 - **Same idea elsewhere.** Translates v + U of a subspace are equal or disjoint ([[§11 Products and Quotients of Vector Spaces#^ladr-3-101|LADR 3.101]]; [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|translates]], 3.97). The Vitali construction partitions [0, 1] by the relation x − y ∈ ℚ, that is, by the traces on [0, 1] of the cosets x + ℚ of ℚ in ℝ ([[§11 Borel Sets and Measure Spaces#^prop-11-17|MATH 551 §11.17]], [[The Vitali Set is Not Measurable]]).
+- **Foundation in [[Logic and Proofs]]:** the general fact behind the proof, that the classes of an equivalence relation are equal or disjoint and so partition the set, is [[§22 Partitions and Equivalence Relations#^thm-22-3|250 Thm. §22.3]] and [[Equivalence Relations Are Partitions]] (250 Cor. §22.4).

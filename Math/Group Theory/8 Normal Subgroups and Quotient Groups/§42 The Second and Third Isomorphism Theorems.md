@@ -52,7 +52,7 @@ tags: [group-theory, math493]
 
 ^pf-42-2
 
-*Uses:* [[§42 The Second and Third Isomorphism Theorems#^def-42-1|Def. §42.1]], [[§42 The Second and Third Isomorphism Theorems#^lem-42-1|§42.1]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First Isomorphism Theorem#^thm-41-1|§41.1]]
+*Uses:* [[§42 The Second and Third Isomorphism Theorems#^def-42-1|Def. §42.1]], [[§42 The Second and Third Isomorphism Theorems#^lem-42-1|§42.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First Isomorphism Theorem#^thm-41-1|§41.1]]
 
 ![[m493-38-3.svg]]
 *The “diamond” picture of the Second Isomorphism Theorem: lines denote inclusion, and the two marked quotients on opposite sides agree, $HN/N \cong H/(H \cap N)$.*

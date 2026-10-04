@@ -22,7 +22,7 @@ tags: [functional-analysis, hub]
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8: Cauchy Implies Convergent]]
 
 ## Used in (Functional Analysis)
-- [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|Theorem §17.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
+- [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|Theorem §17.3: Lᵖ(Ω) and L^∞(Ω) are Banach Spaces]]
 - [[§21 Cauchy–Schwarz and the Induced Norm#^ex-21-1|Example §21.1: Hilbert Spaces]]
 
 ## Connections

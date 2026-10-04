@@ -511,7 +511,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > e_1 = \frac{y_1}{\|y_1\|}, \qquad x_j = y_j - \sum_{i=1}^{j-1} (y_j, e_i)\, e_i, \qquad e_j = \frac{x_j}{\|x_j\|} \quad (j \ge 2),
 > $$
 >
-> exactly as in the informal construction in [[§24 Orthonormal Sets and Bases#^rem-24-10|the remark before Theorem §20.12]]: subtract from $y_j$ its components along the directions already built, and normalize. We check by induction on $j$ that the recursion is well defined and that $\{e_1, \ldots, e_j\}$ is orthonormal with $\operatorname{span}\{e_1, \ldots, e_j\} = \operatorname{span}\{y_1, \ldots, y_j\}$.
+> exactly as in the informal construction in [[§24 Orthonormal Sets and Bases#^rem-24-10|the remark before Theorem §24.12]]: subtract from $y_j$ its components along the directions already built, and normalize. We check by induction on $j$ that the recursion is well defined and that $\{e_1, \ldots, e_j\}$ is orthonormal with $\operatorname{span}\{e_1, \ldots, e_j\} = \operatorname{span}\{y_1, \ldots, y_j\}$.
 >
 > *$j = 1$.* $y_1 \neq 0$ by linear independence, so $e_1$ is defined, $\|e_1\| = 1$, and $\operatorname{span}\{e_1\} = \operatorname{span}\{y_1\}$.
 >

@@ -8,7 +8,7 @@ tags: [functional-analysis, hub]
 ![[§1 Linear Spaces#^thm-1-11]]
 
 ## Treated in
-- [[§1 Linear Spaces#^thm-1-11|Theorem §1.11: X ≅ X/Y oplus Y]], in [[§1 Linear Spaces]]
+- [[§1 Linear Spaces#^thm-1-11|Theorem §1.11: X ≅ X/Y ⊕ Y]], in [[§1 Linear Spaces]]
 
 ## Its proof uses
 - [[§1 Linear Spaces#^def-1-4|Definition §1.4: Direct Sum]]
