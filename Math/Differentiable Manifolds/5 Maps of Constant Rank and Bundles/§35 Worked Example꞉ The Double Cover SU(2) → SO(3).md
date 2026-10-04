@@ -49,11 +49,73 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 ^prop-35-2
 
 > [!proof]+ Proof
-> *(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in.)* $1$ is a regular value of $f(x) = |x|^2$, since $f'(x) = 2x^{\mathsf T} \neq 0$ on $S^3$, so $S^3$ is a submanifold of codimension $1$ ([[§30 Submanifolds#^thm-30-6|Theorem §30.6]]). Multiplication is polynomial in the coordinates and inversion is $q \mapsto \bar q$, linear; both are smooth into $\mathbb{R}^4$ and land in $S^3$, hence are smooth into $S^3$ ([[§30 Submanifolds#^lem-30-3|Lemma §30.3]]). For the polar form, write $q = x_0 + v$ with $v \in \mathbb{H}_0$; if $q \neq \pm 1$ then $v \neq 0$, $x_0^2 + |v|^2 = 1$, and $\theta = \arccos x_0 \in (0, \pi)$, $u = v/|v|$ work, since $|v| = \sin\theta$. The path stays in $S^3$ because $|\cos t + \sin t\, u|^2 = \cos^2 t + \sin^2 t$; and $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$.
+> *(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in; the submitted proof follows.)* $1$ is a regular value of $f(x) = |x|^2$, since $f'(x) = 2x^{\mathsf T} \neq 0$ on $S^3$, so $S^3$ is a submanifold of codimension $1$ ([[§30 Submanifolds#^thm-30-6|Theorem §30.6]]). Multiplication is polynomial in the coordinates and inversion is $q \mapsto \bar q$, linear; both are smooth into $\mathbb{R}^4$ and land in $S^3$, hence are smooth into $S^3$ ([[§30 Submanifolds#^lem-30-3|Lemma §30.3]]). For the polar form, write $q = x_0 + v$ with $v \in \mathbb{H}_0$; if $q \neq \pm 1$ then $v \neq 0$, $x_0^2 + |v|^2 = 1$, and $\theta = \arccos x_0 \in (0, \pi)$, $u = v/|v|$ work, since $|v| = \sin\theta$. The path stays in $S^3$ because $|\cos t + \sin t\, u|^2 = \cos^2 t + \sin^2 t$; and $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$.
 
 ^pf-35-2
 
 *Uses:* [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^def-35-1|Def. §35.1]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-1|§35.1]], [[§30 Submanifolds#^thm-30-6|§30.6]], [[§30 Submanifolds#^lem-30-3|§30.3]], [[§14 Connected Subspaces of ℝ#^thm-14-4|590 §14.4]]
+
+> [!proof]+ Second proof of the submanifold claim: hyperspherical charts (the submitted solution)
+>
+> *(Assignment 4, Problem 3(a), as submitted. Points of $\mathbb{H} = \mathbb{R}^4$ are written $\vec x = (x_0, x_1, x_2, x_3)$, the standard basis vectors are $\vec e_0, \ldots, \vec e_3$, and an “embedded submanifold” is a submanifold in the sense of [[§30 Submanifolds#^def-30-1|Definition §30.1]]. The group and connectedness claims are proved above.)* Throughout, $c_k = \cos\theta_k$ and $s_k = \sin\theta_k$.
+>
+> **$S^3$ is an embedded submanifold of $\mathbb{R}^4$.** By the definition from lecture ([[§30 Submanifolds#^def-30-1|Definition §30.1]]), we must show that every $p \in S^3$ lies in the domain of a chart $(U, \psi = (y^1, y^2, y^3, y^4))$ of $\mathbb{R}^4$ with
+>
+> $$
+> U \cap S^3 = \{ \vec u \in U : y^4(\vec u) = 0 \};
+> $$
+>
+> such a chart is *adapted* to $S^3$. Any [[§15 Smooth Functions and Smooth Maps#^def-15-3|diffeomorphism]] from an open subset of $\mathbb{R}^4$ onto an open subset of $\mathbb{R}^4$ is a chart of the standard smooth structure ([[§29 Submersions#^lem-29-3|Lemma §29.3]]).
+>
+> *(i) Hyperspherical coordinates* (cf. [[Polar and spherical coordinates|452: polar and spherical coordinates]]). Let
+>
+> $$
+> \Phi : (0, \infty) \times \mathbb{R}^3 \to \mathbb{R}^4, \qquad \Phi(r, \theta_1, \theta_2, \theta_3) = \bigl( r c_1,\ r s_1 c_2,\ r s_1 s_2 c_3,\ r s_1 s_2 s_3 \bigr).
+> $$
+>
+> It is smooth, and using $c_k^2 + s_k^2 = 1$ three times, $|\Phi(r, \theta)|^2 = r^2\bigl(c_1^2 + s_1^2 c_2^2 + s_1^2 s_2^2\bigr) = r^2\bigl(c_1^2 + s_1^2\bigr) = r^2$, so $|\Phi(r, \theta)| = r$.
+>
+> *(ii) Its Jacobian.* With columns indexed by $r, \theta_1, \theta_2, \theta_3$,
+>
+> $$
+> \Phi'(r, \theta) = \begin{pmatrix}
+> c_1 & -r s_1 & 0 & 0 \\
+> s_1 c_2 & r c_1 c_2 & -r s_1 s_2 & 0 \\
+> s_1 s_2 c_3 & r c_1 s_2 c_3 & r s_1 c_2 c_3 & -r s_1 s_2 s_3 \\
+> s_1 s_2 s_3 & r c_1 s_2 s_3 & r s_1 c_2 s_3 & r s_1 s_2 c_3
+> \end{pmatrix}.
+> $$
+>
+> Replacing rows $R_3, R_4$ by $c_3 R_3 + s_3 R_4 = (s_1 s_2,\ r c_1 s_2,\ r s_1 c_2,\ 0)$ and $-s_3 R_3 + c_3 R_4 = (0, 0, 0, r s_1 s_2)$ multiplies by a rotation and does not change the determinant; expanding along the last column, then doing the same with rows $2, 3$ of the remaining $3 \times 3$ matrix and the angle $\theta_2$, which turns them into $(s_1, r c_1, 0)$ and $(0, 0, r s_1)$,
+>
+> $$
+> \det \Phi'(r, \theta) = r s_1 s_2 \det \begin{pmatrix} c_1 & -r s_1 & 0 \\ s_1 & r c_1 & 0 \\ 0 & 0 & r s_1 \end{pmatrix} = r s_1 s_2 \cdot r s_1 \cdot r = r^3 \sin^2\theta_1 \, \sin\theta_2 .
+> $$
+>
+> For $r = 1$ it vanishes exactly when $\sin\theta_1 = 0$, where $\Phi(1, \theta) = (\pm 1, 0, 0, 0)$, or $\sin\theta_2 = 0$, where $\Phi(1, \theta) = (c_1, \pm s_1, 0, 0)$. In both cases $\Phi(1, \theta)$ lies on the circle
+>
+> $$
+> B = \{ \vec x \in S^3 : x_2 = x_3 = 0 \}.
+> $$
+>
+> *(iii) Inverting $\Phi$ off $B$.* Let $p = (x_0, x_1, x_2, x_3) \in S^3 \setminus B$, so $x_2^2 + x_3^2 > 0$. Since $x_0^2 = 1 - x_1^2 - x_2^2 - x_3^2 < 1$, there is $\theta_1 \in (0, \pi)$ with $c_1 = x_0$, and then $s_1 = \sqrt{1 - x_0^2} > 0$. Since $(x_1/s_1)^2 = x_1^2 / (x_1^2 + x_2^2 + x_3^2) < 1$, there is $\theta_2 \in (0, \pi)$ with $c_2 = x_1/s_1$, and then $s_2 > 0$. Now $x_2^2 + x_3^2 = 1 - c_1^2 - s_1^2 c_2^2 = s_1^2 s_2^2$, so $(x_2, x_3)/(s_1 s_2)$ lies on the unit circle and equals $(c_3, s_3)$ for some $\theta_3$. Then $\Phi(1, \theta) = p$ and $\det \Phi'(1, \theta) = s_1^2 s_2 \neq 0$.
+>
+> *(iv) Adapted charts off $B$.* With $p$ and $\theta$ as in (iii), the inverse function theorem ([[§28 Local Diffeomorphisms#^thm-28-1|Theorem §28.1]]) gives an open $W \ni (1, \theta)$ in $(0, \infty) \times \mathbb{R}^3$ such that $U_p = \Phi(W)$ is open and $\Phi|_W : W \to U_p$ is a diffeomorphism. Let
+>
+> $$
+> \psi_p = \tau \circ (\Phi|_W)^{-1}, \qquad \tau(r, \theta_1, \theta_2, \theta_3) = (\theta_1, \theta_2, \theta_3, r - 1),
+> $$
+>
+> a diffeomorphism onto the open set $\tau(W)$, hence a chart about $p$, with last component $y^4 = r - 1$. For $\vec u = \Phi(r, \theta') \in U_p$ we have $|\vec u| = r$ by (i), so $\vec u \in S^3 \iff r = 1 \iff y^4(\vec u) = 0$. Thus $\psi_p$ is adapted to $S^3$.
+>
+> *(v) Adapted charts on $B$.* Let $P(x_0, x_1, x_2, x_3) = (x_2, x_3, x_0, x_1)$, a linear [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|isometry]] of $\mathbb{R}^4$ with $\det P = \pm 1$, and $\tilde\Phi = P \circ \Phi$. Then $|\tilde\Phi(r, \theta)| = r$ and $\det \tilde\Phi' = \det P \cdot \det \Phi'$, so (i)–(iv) hold for $\tilde\Phi$ with $B$ replaced by $P(B) = \{ \vec x \in S^3 : x_0 = x_1 = 0 \}$, the angles for $p$ being those of $P^{-1}p$. A point of $B \cap P(B)$ would be $0 \notin S^3$, so $B \cap P(B) = \emptyset$, and every $p \in B$ gets an adapted chart from $\tilde\Phi$.
+>
+> Hence every point of $S^3$ lies in an adapted chart, and $S^3$ is an embedded submanifold of $\mathbb{R}^4$ of codimension $1$.
+
+
+^pf-35-2-2
+
+*Uses:* [[§30 Submanifolds#^def-30-1|Def. §30.1]], [[§29 Submersions#^lem-29-3|§29.3]], [[§28 Local Diffeomorphisms#^thm-28-1|§28.1]], [[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]], [[Polar and spherical coordinates|452 Polar and spherical coordinates]], [[Inverse Function Theorem (several variables)|452 §13.2]], [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]]
 
 > [!remark]- Connections
 > - Topological groups: [[§8 Topological Groups and Classical Matrix Groups#^def-8-1|Def. §8.1]]; the sphere as a level set in 452: [[Unit circle and unit sphere|452 Unit circle and unit sphere]].
@@ -75,7 +137,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 ^prop-35-3
 
 > [!proof]+ Proof
-> *(The submitted warm-up gave the matrix in (1) and (2); the problem stated the rest, and the proof of (3) is new, using [[§34 Embeddings|§34]].)* (1) Left multiplication by $c \in \mathbb{C}$ commutes with right multiplication by $q$ (associativity), so $R_q$ is complex-linear. Using $jc = \bar c\, j$ for $c \in \mathbb{C}$ and $j^2 = -1$,
+> *(The submitted warm-up gave the matrix in (1) and (2); the problem stated the rest, and the proof of (3) is new, using [[§34 Embeddings|§34]]; the submitted proof of (3), with adapted charts, follows.)* (1) Left multiplication by $c \in \mathbb{C}$ commutes with right multiplication by $q$ (associativity), so $R_q$ is complex-linear. Using $jc = \bar c\, j$ for $c \in \mathbb{C}$ and $j^2 = -1$,
 >
 > $$
 > (z + wj)(a + bj) = za + zbj + w\bar a\, j + w \bar b\, j^2 = (az - \bar b w) + (bz + \bar a w)\, j ,
@@ -90,6 +152,67 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 ^pf-35-3
 
 *Uses:* [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^def-35-1|Def. §35.1]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-1|§35.1]], [[§8 Topological Groups and Classical Matrix Groups#^def-8-8|Def. §8.8]], [[§34 Embeddings#^def-34-1|Def. §34.1]], [[§34 Embeddings#^thm-34-1|§34.1]], [[§34 Embeddings#^cor-34-3|§34.3]], [[§18 The Differential of a Map Between Vector Spaces#^thm-18-3|§18.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]]
+
+> [!proof]+ Second proof of (3): adapted charts (the submitted solution)
+>
+> *(Assignment 4, Problem 3, as submitted: its notation and setup, its proof that $\mathrm{SU}(2)$ is a submanifold and $F$ is smooth, and, moved here from its part (b), its proof that $F^{-1}$ is smooth; together they give (3). The adapted charts of $\mathbb{R}^4$ are those of the [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^pf-35-2-2|second proof]] of [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-2|Proposition §35.2]]. What the submitted solution takes from the problem — that $F$ is a bijection onto $\mathrm{SU}(2)$, and that $\SO(3)$ is a submanifold of dimension $3$ — is proved in (2) above and in [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5|Theorem §20.5]].)*
+>
+> **Notation.** The problem writes $dF_p$ for the differential of a smooth map $F$ at a point $p$. As in lecture and in Problem 1 ([[§25 The Differential in Coordinates#^prop-25-9|Proposition §25.9]]), we write $F_{\ast,p}$ instead, so that $dF_p = F_{\ast,p}$. Since we work in $\mathbb{R}^4$ (see below), the problem's point $1 \in S^3$ is $\vec e_0$; thus the problem's $T_1 S^3$, $\sigma_j = dF_1(\vec e_j)$ and $dG_I(\sigma_j)$ are, in our notation, $T_{\vec e_0} S^3$, $\sigma_j = F_{\ast,\vec e_0}(\vec e_j)$ and $G_{\ast,I}(\sigma_j)$.
+>
+> **Setup.** Let $h : \mathbb{R}^4 \to \mathbb{H}$, $h(x_0, x_1, x_2, x_3) = x_0 + x_1 i + x_2 j + x_3 k$, be the $\mathbb{R}$-linear isomorphism of the problem. We work in $\mathbb{R}^4$ throughout, and pass to $\mathbb{H}$ only by plugging in $h$. Since $|h(\vec x)| = |\vec x|$, the sphere is $S^3 = \{ \vec x \in \mathbb{R}^4 : |\vec x| = 1 \}$, the point $1 \in S^3$ of the problem is $\vec e_0 = h^{-1}(1) = (1, 0, 0, 0)$, and $h(\vec e_1), h(\vec e_2), h(\vec e_3) = i, j, k$. Working in $\mathbb{R}^4$ loses nothing: $h$ is an $\mathbb{R}$-linear isomorphism, hence a diffeomorphism whose differential at every point is $h$ itself, and it carries the unit sphere of $\mathbb{R}^4$ onto the unit quaternions and $\vec e_0$ to $1$. So if $\hat F$ denotes the problem's map on unit quaternions, then $F = \hat F \circ h$ and, by the [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|chain rule]], $F_{\ast,\vec e_0} = \hat F_{\ast,1} \circ h$; in particular $F_{\ast,\vec e_0}(\vec e_j) = \hat F_{\ast,1}\bigl(h(\vec e_j)\bigr)$, so computing in $\mathbb{R}^4$ with $\vec e_j$ gives the same $\sigma_j$ as computing in $\mathbb{H}$ with the tangent vectors $i, j, k$ at $1$, and likewise for $C$ and $G$ in part (b) (the [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^pf-35-8-2|second proof]] of [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^thm-35-8|Theorem §35.8]]). Quaternion multiplication enters only through $h$, in the definitions of $F$ and of the conjugation map $C$. In part (b), the $3 \times 3$ matrices are taken with respect to the identification of $\mathbb{R}^3$ with the purely imaginary quaternions fixed in the problem. In this notation
+>
+> $$
+> F : S^3 \to \mathrm{SU}(2), \qquad F(\vec x) = \text{matrix of } R_{h(\vec x)^{-1}} .
+> $$
+>
+> Write $h(\vec x) = a + b\,j$ with $a = x_0 + x_1 i$ and $b = x_2 + x_3 i$, using $ij = k$. Using $j\,c = \bar c\,j$ for $c \in \mathbb{C}$, for $(z, w) \in \mathbb{C}^2$ we have $(z + wj)(a + bj) = (az - \bar b w) + (bz + \bar a w)\,j$, so $R_{h(\vec x)}$ has matrix $\begin{pmatrix} a & -\bar b \\ b & \bar a \end{pmatrix}$. Since $|h(\vec x)| = 1$, we have $h(\vec x)^{-1} = \overline{h(\vec x)} = \bar a - b\,j$, and replacing $(a, b)$ by $(\bar a, -b)$ gives
+>
+> $$
+> F(\vec x) = \begin{pmatrix} \bar a & \bar b \\ -b & a \end{pmatrix} = \begin{pmatrix} x_0 - x_1 i & x_2 - x_3 i \\ -x_2 - x_3 i & x_0 + x_1 i \end{pmatrix}.
+> $$
+>
+> Let $L : \mathbb{R}^4 \to \mathrm{Mat}(2, \mathbb{C})$ be given by the same formula, now for all $\vec x \in \mathbb{R}^4$. Each entry is a real linear combination of $x_0, \ldots, x_3$, so $L$ is $\mathbb{R}$-linear, $F = L|_{S^3}$, and $F(\vec e_0) = I$. Throughout, $c_k = \cos\theta_k$ and $s_k = \sin\theta_k$.
+>
+> **$\mathrm{SU}(2)$ and $\mathrm{SO}(3)$ as submanifolds.** The map $L$ is injective: if $L(\vec x) = 0$, its first row gives $x_0 - x_1 i = 0$ and $x_2 - x_3 i = 0$, so $\vec x = 0$. Hence $V = L(\mathbb{R}^4)$ is a $4$-dimensional real subspace of $\mathrm{Mat}(2, \mathbb{C})$, which has real dimension $8$. Extending the basis $L(\vec e_0), \ldots, L(\vec e_3)$ of $V$ to a basis of $\mathrm{Mat}(2, \mathbb{C})$ ([[§5 Bases#^ladr-2-32|LADR 2.32]]) gives a linear isomorphism
+>
+> $$
+> \Lambda : \mathbb{R}^4 \times \mathbb{R}^4 \to \mathrm{Mat}(2, \mathbb{C}) \qquad \text{with} \qquad \Lambda(\vec x, 0) = L(\vec x).
+> $$
+>
+> By the problem, $F : S^3 \to \mathrm{SU}(2)$ is a bijection, and $F = L|_{S^3}$, so
+>
+> $$
+> \mathrm{SU}(2) = L(S^3) = \Lambda\bigl( S^3 \times \{0\} \bigr).
+> $$
+>
+> Let $M \in \mathrm{SU}(2)$, say $M = L(p)$ with $p \in S^3$, and let $(U, \psi = (y^1, \ldots, y^4))$ be an adapted chart of $\mathbb{R}^4$ at $p$ as constructed above (in the [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^pf-35-2-2|second proof]] of [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-2|Proposition §35.2]]). Then $\Lambda(U \times \mathbb{R}^4)$ is an open neighborhood of $M$, and
+>
+> $$
+> \Psi = (\psi \times \mathrm{id}_{\mathbb{R}^4}) \circ \Lambda^{-1} : \Lambda(U \times \mathbb{R}^4) \to \psi(U) \times \mathbb{R}^4,
+> $$
+>
+> with components $(y^1, y^2, y^3, y^4, w^1, \ldots, w^4)$, is a diffeomorphism onto an open subset of $\mathbb{R}^8$, hence a chart of $\mathrm{Mat}(2, \mathbb{C})$ at $M$ ([[§29 Submersions#^lem-29-3|Lemma §29.3]]). Since $\Lambda$ is bijective, a point $\Lambda(\vec x, \vec w)$ of its domain lies in $\mathrm{SU}(2)$ if and only if $\vec x \in S^3$ and $\vec w = 0$, that is, if and only if $y^4 = 0$ and $w^1 = \cdots = w^4 = 0$. Listing these five components last, $\Psi$ is adapted to $\mathrm{SU}(2)$. Hence $\mathrm{SU}(2)$ is an embedded submanifold of $\mathrm{Mat}(2, \mathbb{C})$ of dimension $8 - 5 = 3$; by the result on tangent spaces ([[§30 Submanifolds#^prop-30-4|Proposition §30.4]]), the differential $\jmath_{\ast I}$ of the inclusion $\jmath : \mathrm{SU}(2) \hookrightarrow \mathrm{Mat}(2, \mathbb{C})$ is injective, and we identify $T_I\,\mathrm{SU}(2)$ with its image, a $3$-dimensional subspace of $\mathrm{Mat}(2, \mathbb{C})$. Moreover $L \circ \iota : S^3 \to \mathrm{Mat}(2, \mathbb{C})$ is smooth, as the composite of the inclusion $\iota$ of the embedded submanifold $S^3$ and the linear map $L$, and its image $F(S^3)$ lies in the embedded submanifold $\mathrm{SU}(2)$; since a smooth map whose image lies in an embedded submanifold is smooth into that submanifold ([[§30 Submanifolds#^lem-30-3|Lemma §30.3]]), $F : S^3 \to \mathrm{SU}(2)$ is smooth.
+>
+> For $\mathrm{SO}(3)$ we have no such parametrization, and we take as given, as is implicit in the problem, that $\mathrm{SO}(3)$ is an embedded submanifold of $\mathrm{Mat}(3, \mathbb{R})$ of dimension $3$. Likewise $T_I\,\mathrm{SO}(3)$ is identified with a $3$-dimensional subspace of $\mathrm{Mat}(3, \mathbb{R})$.
+>
+> **$F^{-1}$ is smooth** (from part (b) of the submitted solution). By the problem, $F : S^3 \to \mathrm{SU}(2)$ is a bijection, so every $M = (m_{kl}) \in \mathrm{SU}(2)$ is $F(\vec x)$ for a unique $\vec x \in S^3$. Comparing the first row of $M$ with the first row of the matrix formula for $F(\vec x)$,
+>
+> $$
+> m_{11} = x_0 - x_1 i, \qquad m_{12} = x_2 - x_3 i,
+> $$
+>
+> and taking real and imaginary parts, $x_0 = \operatorname{Re} m_{11}$, $x_1 = -\operatorname{Im} m_{11}$, $x_2 = \operatorname{Re} m_{12}$, $x_3 = -\operatorname{Im} m_{12}$. Hence
+>
+> $$
+> F^{-1}\begin{pmatrix} m_{11} & m_{12} \\ m_{21} & m_{22} \end{pmatrix} = \bigl( \operatorname{Re} m_{11},\ -\operatorname{Im} m_{11},\ \operatorname{Re} m_{12},\ -\operatorname{Im} m_{12} \bigr),
+> $$
+>
+> which is the restriction to $\mathrm{SU}(2)$ of an $\mathbb{R}$-linear map $\mathrm{Mat}(2, \mathbb{C}) \to \mathbb{R}^4$, hence smooth as a map $\mathrm{SU}(2) \to \mathbb{R}^4$ (composing with the inclusion of $\mathrm{SU}(2)$); since its image lies in the embedded submanifold $S^3$, it is smooth as a map $\mathrm{SU}(2) \to S^3$.
+
+
+^pf-35-3-2
+
+*Uses:* [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^def-35-1|Def. §35.1]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-1|§35.1]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-2|§35.2]], [[§29 Submersions#^lem-29-3|§29.3]], [[§30 Submanifolds#^def-30-1|Def. §30.1]], [[§30 Submanifolds#^prop-30-4|§30.4]], [[§30 Submanifolds#^lem-30-3|§30.3]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5|§20.5]], [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]], [[§5 Bases#^ladr-2-32|LADR 2.32]]
 
 > [!remark]- Connections
 > - $\mathrm{SU}(2)$ in Quantum Mechanics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]]; unitary matrices in LADR: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]].
@@ -109,7 +232,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 ^prop-35-4
 
 > [!proof]+ Proof
-> *(The submitted solution computed the $\sigma_j$ — “use curves, not coordinates”, as the problem's hint said; the identification of the tangent space is filled in.)* By the chain rule for curves ([[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|Corollary §26.3]]), $F_{\ast 1}(\gamma_j'(0)) = (F \circ \gamma_j)'(0)$, the entrywise derivative of
+> *(The submitted solution computed the $\sigma_j$ — “use curves, not coordinates”, as the problem's hint said; the identification of the tangent space is filled in; the submitted computation, with the curves obtained from a hyperspherical chart, follows.)* By the chain rule for curves ([[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|Corollary §26.3]]), $F_{\ast 1}(\gamma_j'(0)) = (F \circ \gamma_j)'(0)$, the entrywise derivative of
 >
 > $$
 > F(\gamma_1(t)) = \begin{pmatrix} e^{-it} & 0 \\ 0 & e^{it} \end{pmatrix}, \quad
@@ -122,6 +245,86 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 ^pf-35-4
 
 *Uses:* [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|§35.3]], [[§26 Tangent Vectors as Velocities of Curves#^def-26-1|Def. §26.1]], [[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|§26.3]], [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-8|§24.8]], [[§30 Submanifolds#^prop-30-4|§30.4]]
+
+> [!proof]+ Second proof of the formulas for the $\sigma_j$: curves from a hyperspherical chart (the submitted solution)
+>
+> *(Assignment 4, Problem 3(a), as submitted, in the notation of the [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^pf-35-3-2|second proof]] of [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|Proposition §35.3]]: $\vec e_0 = 1$ and $\vec e_1, \vec e_2, \vec e_3$ correspond to $i, j, k$, so $\sigma_j = F_{\ast,\vec e_0}(\vec e_j)$ is the $\sigma_j$ of the statement, and the curves $\gamma_j$ below are those of the statement. Items (i)–(v) and the map $\tilde\Phi$ are those of the [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^pf-35-2-2|second proof]] of [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-2|Proposition §35.2]]. That the $\sigma_j$ form a basis is shown in the proof above, and again in the [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^pf-35-8-2|second proof]] of [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^thm-35-8|Theorem §35.8]].)*
+>
+> **The tangent space $T_{\vec e_0} S^3$.** By the result from lecture on tangent spaces of submanifolds ([[§30 Submanifolds#^prop-30-4|Proposition §30.4]]), if $\psi = (y^1, \ldots, y^4)$ is an [[§30 Submanifolds#^def-30-1|adapted chart]] at $p \in S^3$, then $\iota_{\ast p} : T_p S^3 \to T_p\mathbb{R}^4$ is injective and
+>
+> $$
+> \iota_{\ast p}(T_p S^3) = \operatorname{span}\left\{ \frac{\partial}{\partial y^1}\Big|_p, \frac{\partial}{\partial y^2}\Big|_p, \frac{\partial}{\partial y^3}\Big|_p \right\}.
+> $$
+>
+> We identify $T_p\mathbb{R}^4$ with $\mathbb{R}^4$ by $\frac{\partial}{\partial x_a}\big|_p \leftrightarrow \vec e_a$ ([[§25 The Differential in Coordinates#^cor-25-6|Corollary §25.6]]), and $T_p S^3$ with its image under $\iota_{\ast p}$. By the chain rule ([[§25 The Differential in Coordinates#^cor-25-4|Corollary §25.4]]), $\frac{\partial}{\partial y^i}\big|_p = \sum_a \frac{\partial x_a}{\partial y^i}\,\frac{\partial}{\partial x_a}\big|_p$ is then the $i$-th column of the Jacobian of $\psi^{-1}$ at $\psi(p)$.
+>
+> Since $\vec e_0 \in B$, we use $\tilde\Phi$. Applying (iii) to $P^{-1}\vec e_0 = (0, 0, 1, 0)$ gives $\theta = (\pi/2, \pi/2, 0)$, so the adapted chart at $\vec e_0$ from (iv)–(v) has
+>
+> $$
+> \psi^{-1}(y^1, y^2, y^3, y^4) = \tilde\Phi(y^4 + 1, y^1, y^2, y^3), \qquad \psi(\vec e_0) = (\tfrac{\pi}{2}, \tfrac{\pi}{2}, 0, 0).
+> $$
+>
+> For $i = 1, 2, 3$, the $i$-th column of the Jacobian of $\psi^{-1}$ there is $P$ applied to the $\theta_i$-column of $\Phi'(1, \frac{\pi}{2}, \frac{\pi}{2}, 0)$. With $c_1 = 0$, $s_1 = 1$, $c_2 = 0$, $s_2 = 1$, $c_3 = 1$, $s_3 = 0$, these columns are $(-1, 0, 0, 0)$, $(0, -1, 0, 0)$ and $(0, 0, 0, 1)$, so
+>
+> $$
+> \frac{\partial}{\partial y^1}\Big|_{\vec e_0} = -\vec e_2, \qquad \frac{\partial}{\partial y^2}\Big|_{\vec e_0} = -\vec e_3, \qquad \frac{\partial}{\partial y^3}\Big|_{\vec e_0} = \vec e_1 .
+> $$
+>
+> Therefore
+>
+> $$
+> T_{\vec e_0} S^3 = \operatorname{span}\{ \vec e_1, \vec e_2, \vec e_3 \} = \{ \vec x \in \mathbb{R}^4 : x_0 = 0 \}.
+> $$
+>
+> **The vectors $\sigma_j$.** The differential $F_{\ast,\vec e_0} : T_{\vec e_0} S^3 \to T_I\,\mathrm{SU}(2)$ is to be evaluated on the basis $\vec e_1, \vec e_2, \vec e_3$, with $T_I\,\mathrm{SU}(2) \subseteq \mathrm{Mat}(2, \mathbb{C})$ as above:
+>
+> $$
+> \sigma_j = F_{\ast,\vec e_0}(\vec e_j) \in T_I\,\mathrm{SU}(2) \subseteq \mathrm{Mat}(2, \mathbb{C}), \qquad j = 1, 2, 3.
+> $$
+>
+> **Computing $\sigma_j$ with curves.** We use two results from lecture. First, every tangent vector is a velocity ([[§26 Tangent Vectors as Velocities of Curves#^thm-26-2|Theorem §26.2]]): if $D \in T_p M$ and $(U, \psi)$ is a chart at $p$ with $D = \sum_i a^i \frac{\partial}{\partial y^i}\big|_p$, then $\gamma = \psi^{-1} \circ \ell$, where $\ell(t) = \psi(p) + t\,a$, is a smooth curve with $\gamma(0) = p$ and [[§26 Tangent Vectors as Velocities of Curves#^def-26-1|velocity]] $D_\gamma = D$. Second, the chain rule for curves ([[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|Corollary §26.3]]): for a smooth map $G$, $G_{\ast,p}(D_\gamma) = D_{G \circ \gamma}$. For a curve in $\mathbb{R}^4$ or in $\mathrm{Mat}(2, \mathbb{C})$, the velocity is the ordinary derivative at $t = 0$, computed entry by entry.
+>
+> *The curves.* We use the chart at $\vec e_0$ constructed above, restricted to $S^3$, that is, the induced chart $(y^1, y^2, y^3)$ with $\psi(\vec e_0) = (\frac{\pi}{2}, \frac{\pi}{2}, 0)$ and $\psi^{-1}(y^1, y^2, y^3) = \tilde\Phi(1, y^1, y^2, y^3)$, where
+>
+> $$
+> \tilde\Phi(1, \theta_1, \theta_2, \theta_3) = \bigl( s_1 s_2 c_3,\ s_1 s_2 s_3,\ c_1,\ s_1 c_2 \bigr).
+> $$
+>
+> By the computation of $T_{\vec e_0} S^3$ above, $\vec e_1 = \frac{\partial}{\partial y^3}\big|_{\vec e_0}$, $\vec e_2 = -\frac{\partial}{\partial y^1}\big|_{\vec e_0}$ and $\vec e_3 = -\frac{\partial}{\partial y^2}\big|_{\vec e_0}$, so the coefficient vectors are $a = (0, 0, 1)$, $(-1, 0, 0)$ and $(0, -1, 0)$, and the lines in the chart are
+>
+> $$
+> \ell_1(t) = \bigl( \tfrac{\pi}{2}, \tfrac{\pi}{2}, t \bigr), \qquad \ell_2(t) = \bigl( \tfrac{\pi}{2} - t, \tfrac{\pi}{2}, 0 \bigr), \qquad \ell_3(t) = \bigl( \tfrac{\pi}{2}, \tfrac{\pi}{2} - t, 0 \bigr).
+> $$
+>
+> Using $\sin(\frac{\pi}{2} - t) = \cos t$ and $\cos(\frac{\pi}{2} - t) = \sin t$, the curves $\gamma_j = \psi^{-1} \circ \ell_j$ are
+>
+> $$
+> \gamma_1(t) = (\cos t, \sin t, 0, 0), \qquad \gamma_2(t) = (\cos t, 0, \sin t, 0), \qquad \gamma_3(t) = (\cos t, 0, 0, \sin t),
+> $$
+>
+> that is, $\gamma_j(t) = \cos t\,\vec e_0 + \sin t\,\vec e_j$. Each lies on $S^3$, satisfies $\gamma_j(0) = \vec e_0$, and has velocity $D_{\gamma_j} = \vec e_j$; indeed $\gamma_j'(0) = \vec e_j$.
+>
+> *The images under $F$.* Plugging $\gamma_j(t)$ into the matrix formula for $F$,
+>
+> $$
+> F(\gamma_1(t)) = \begin{pmatrix} \cos t - i \sin t & 0 \\ 0 & \cos t + i \sin t \end{pmatrix},
+> $$
+>
+> $$
+> F(\gamma_2(t)) = \begin{pmatrix} \cos t & \sin t \\ -\sin t & \cos t \end{pmatrix}, \qquad
+> F(\gamma_3(t)) = \begin{pmatrix} \cos t & -i \sin t \\ -i \sin t & \cos t \end{pmatrix}.
+> $$
+>
+> *The derivatives.* By the chain rule for curves, applied to $F$ and then to $\jmath$, $\sigma_j = F_{\ast,\vec e_0}(D_{\gamma_j}) = D_{F \circ \gamma_j}$, which under $\jmath_{\ast I}$ is the entrywise derivative of $F(\gamma_j(t))$ at $t = 0$. Hence
+>
+> $$
+> \sigma_1 = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}, \qquad \sigma_2 = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}, \qquad \sigma_3 = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}.
+> $$
+
+
+^pf-35-4-2
+
+*Uses:* [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-2|§35.2]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|§35.3]], [[§30 Submanifolds#^prop-30-4|§30.4]], [[§25 The Differential in Coordinates#^cor-25-6|§25.6]], [[§25 The Differential in Coordinates#^cor-25-4|§25.4]], [[§26 Tangent Vectors as Velocities of Curves#^def-26-1|Def. §26.1]], [[§26 Tangent Vectors as Velocities of Curves#^thm-26-2|§26.2]], [[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|§26.3]]
 
 > [!remark]- Connections
 > - The tangent space of $\mathrm{U}(n)$ at the identity: [[§20 Tangent Spaces I꞉ The Geometric Picture#^ex-20-3|Ex. §20.3]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5|§20.5]].
@@ -138,7 +341,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 ^prop-35-5
 
 > [!proof]+ Proof
-> *(The problem stated (1) and the two-to-one property without proof; filled in. Part (3) contains the submitted computation: for $q = \gamma_j(t)$ it gives the rotation by $2t$ about $e_j$.)* A quaternion $v$ is pure imaginary iff $\bar v = -v$, and then $\overline{q v \bar q} = q \bar v \bar q = -q v \bar q$, so $C_q(v) \in \mathbb{H}_0$; and $|C_q(v)| = |v|$ by [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-1|Proposition §35.1]]. So $C_q$ is a linear isometry of $\mathbb{R}^3$, $C_q \in \mathrm{O}(3)$.
+> *(The problem stated (1) and the two-to-one property without proof; filled in. Part (3) contains the submitted computation: for $q = \gamma_j(t)$ it gives the rotation by $2t$ about $e_j$; the submitted computation itself is in the [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^pf-35-8-2|second proof]] of [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^thm-35-8|Theorem §35.8]].)* A quaternion $v$ is pure imaginary iff $\bar v = -v$, and then $\overline{q v \bar q} = q \bar v \bar q = -q v \bar q$, so $C_q(v) \in \mathbb{H}_0$; and $|C_q(v)| = |v|$ by [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-1|Proposition §35.1]]. So $C_q$ is a linear isometry of $\mathbb{R}^3$, $C_q \in \mathrm{O}(3)$.
 >
 > (1) $C_{pq}(v) = pq v \bar q \bar p = C_p(C_q(v))$. The entries of $C_q$ are quadratic polynomials in the coordinates of $q$, so $C$ is smooth into $\operatorname{Mat}(3, \mathbb{R})$, with values in the submanifold $\mathrm{O}(3)$ ([[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5|Theorem §20.5]]). $\det \circ C : S^3 \to \{\pm 1\}$ is continuous on the connected $S^3$ ([[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-2|Proposition §35.2]]) and equals $1$ at $q = 1$, so $C$ takes values in $\mathrm{SO}(3)$, an open subset of $\mathrm{O}(3)$; hence $C$ is smooth into $\mathrm{SO}(3)$ ([[§30 Submanifolds#^lem-30-3|Lemma §30.3]]).
 >
@@ -191,7 +394,7 @@ The half-angle in (3) is the source of the factor $2$ below: the curve $\gamma_j
 ^lem-35-7
 
 > [!proof]+ Proof
-> *(The submitted solution's argument, isolated as a lemma.)* $L_h$ is the restriction of the linear map $x \mapsto hx$, so it is smooth ([[§30 Submanifolds#^lem-30-3|Lemma §30.3]]), with smooth inverse $L_{h^{-1}}$: a diffeomorphism, so its differentials are isomorphisms ([[§23 Derivations and the Abstract Tangent Space#^thm-23-6|chain rule]]). $G$ is a homomorphism, so $G \circ L_g = L_{G(g)} \circ G$; differentiating at $I$ gives $G_{\ast g} \circ (L_g)_{\ast I} = (L_{G(g)})_{\ast I} \circ G_{\ast I}$, and $(L_g)_{\ast I}^{-1} = (L_{g^{-1}})_{\ast g}$.
+> *(The submitted solution's argument, isolated as a lemma; in its original form it is part of the [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^pf-35-8-2|second proof]] of [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^thm-35-8|Theorem §35.8]].)* $L_h$ is the restriction of the linear map $x \mapsto hx$, so it is smooth ([[§30 Submanifolds#^lem-30-3|Lemma §30.3]]), with smooth inverse $L_{h^{-1}}$: a diffeomorphism, so its differentials are isomorphisms ([[§23 Derivations and the Abstract Tangent Space#^thm-23-6|chain rule]]). $G$ is a homomorphism, so $G \circ L_g = L_{G(g)} \circ G$; differentiating at $I$ gives $G_{\ast g} \circ (L_g)_{\ast I} = (L_{G(g)})_{\ast I} \circ G_{\ast I}$, and $(L_g)_{\ast I}^{-1} = (L_{g^{-1}})_{\ast g}$.
 
 ^pf-35-7
 
@@ -218,7 +421,7 @@ This is the left translation of the [[§20 Tangent Spaces I꞉ The Geometric Pic
 ^thm-35-8
 
 > [!proof]+ Proof
-> *(The submitted solution computed $G_{\ast I}(\sigma_j)$ and proved the local diffeomorphism; surjectivity, the two-to-one property and the identification with $\mathbb{RP}^3$ are filled in.)* $G$ is a smooth homomorphism, as a composite of $F^{-1}$ ([[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|Proposition §35.3]]) and $C$.
+> *(The submitted solution computed $G_{\ast I}(\sigma_j)$ and proved the local diffeomorphism; surjectivity, the two-to-one property and the identification with $\mathbb{RP}^3$ are filled in; the submitted proof follows.)* $G$ is a smooth homomorphism, as a composite of $F^{-1}$ ([[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|Proposition §35.3]]) and $C$.
 >
 > *The differential at $I$.* By the chain rule $G_{\ast I}(\sigma_j) = G_{\ast I}(F_{\ast 1}(\gamma_j'(0))) = C_{\ast 1}(\gamma_j'(0)) = (C \circ \gamma_j)'(0)$, and by [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-5|Proposition §35.5]](3) with $\theta = 2t$, $C(\gamma_j(t))$ is the rotation by $2t$ about $e_j$; for $j = 1$,
 >
@@ -239,6 +442,121 @@ This is the left translation of the [[§20 Tangent Spaces I꞉ The Geometric Pic
 ^pf-35-8
 
 *Uses:* [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|§35.3]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-4|§35.4]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-5|§35.5]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^lem-35-6|§35.6]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^lem-35-7|§35.7]], [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]], [[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|§26.3]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-3|Def. §20.3]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^ex-20-4|Ex. §20.4]], [[§28 Local Diffeomorphisms#^thm-28-2|§28.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[§14 Projective Spaces as Smooth Manifolds#^cor-14-5|§14.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Universal Property of Quotient Maps|590 §12.3]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §15.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]
+
+> [!proof]+ Second proof: the conjugation map computed explicitly (the submitted solution)
+>
+> *(Assignment 4, Problem 3(b), as submitted, in the notation of the second proofs of Propositions [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|§35.3]] and [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-4|§35.4]]; “part (a)” is the [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^pf-35-4-2|second proof]] of [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-4|Proposition §35.4]]. It proves that $G$ is smooth, the formula for $G_{\ast I}(\sigma_j)$ — the three matrices it finds are $2\hat e_1$, $2\hat e_2$, $2\hat e_3$ ([[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-3|Definition §20.3]]) — and that $G$ is a [[§28 Local Diffeomorphisms#^def-28-1|local diffeomorphism]]; surjectivity, the two-to-one property and $\mathbb{RP}^3$ are proved above. What it takes as given from the problem is proved in Propositions [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|§35.3]] and [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-5|§35.5]]. Its proof that $F^{-1}$ is smooth is in the [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^pf-35-3-2|second proof]] of [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|Proposition §35.3]]. In $C(\vec x)$, $\vec x$ is a point of $S^3$; in the proof above, $C_q$ is the same map for $q = h(\vec x)$.)*
+>
+> **Reduction to the conjugation map.** Let $\mathbb{H}_0 = \{ y_1 i + y_2 j + y_3 k : y_1, y_2, y_3 \in \mathbb{R} \}$ be the purely imaginary quaternions, and identify $\mathbb{R}^3$ with $\mathbb{H}_0$ by $h_0(y_1, y_2, y_3) = h(0, y_1, y_2, y_3) = y_1 i + y_2 j + y_3 k$. For $\vec x \in S^3$, conjugation by the unit quaternion $h(\vec x)$, whose inverse is $\overline{h(\vec x)}$, defines the linear map
+>
+> $$
+> C(\vec x) : \mathbb{R}^3 \to \mathbb{R}^3, \qquad C(\vec x)(\vec y) = h_0^{-1}\Bigl( h(\vec x)\; h_0(\vec y)\; \overline{h(\vec x)} \Bigr).
+> $$
+>
+> As stated in the problem, $C(\vec x) \in \mathrm{SO}(3)$, and $C : S^3 \to \mathrm{SO}(3)$ is a $2$–$1$ [[§15 Homomorphisms#^def-15-1|group morphism]]; we take these facts as given.
+>
+> *Smoothness.* Each coordinate of the quaternion $h(\vec x)\, h_0(\vec y)\, \overline{h(\vec x)}$ is a polynomial in the variables $x_0, \ldots, x_3$ and $y_1, y_2, y_3$, quadratic in $\vec x$ and linear in $\vec y$, so each entry of the matrix $C(\vec x)$ is a quadratic polynomial in $x_0, \ldots, x_3$. Hence $C$ is the restriction to $S^3$ of a smooth map $\mathbb{R}^4 \to \mathrm{Mat}(3, \mathbb{R})$, so it is smooth as a map $S^3 \to \mathrm{Mat}(3, \mathbb{R})$ (composing with the inclusion of $S^3$), and since its image lies in the embedded submanifold $\mathrm{SO}(3)$, it is smooth as a map $S^3 \to \mathrm{SO}(3)$ ([[§30 Submanifolds#^lem-30-3|Lemma §30.3]]). [The submitted proof that $F^{-1} : \mathrm{SU}(2) \to S^3$ is smooth stands here; it is now the last paragraph of the [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^pf-35-3-2|second proof]] of [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|Proposition §35.3]].] Thus
+>
+> $$
+> G = C \circ F^{-1} : \mathrm{SU}(2) \to \mathrm{SO}(3)
+> $$
+>
+> is smooth, as a composite of smooth maps.
+>
+> *Reduction.* Since $G \circ F = C$ and $F(\vec e_0) = I$, the [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|chain rule]] gives $G_{\ast,I} \circ F_{\ast,\vec e_0} = C_{\ast,\vec e_0}$. Applying this to $\vec e_j$ and using $\sigma_j = F_{\ast,\vec e_0}(\vec e_j)$ from part (a),
+>
+> $$
+> G_{\ast,I}(\sigma_j) = C_{\ast,\vec e_0}(\vec e_j), \qquad j = 1, 2, 3.
+> $$
+>
+> By the chain rule for curves ([[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|Corollary §26.3]]), with the curves $\gamma_j$ of part (a), which satisfy $\gamma_j(0) = \vec e_0$ and $D_{\gamma_j} = \vec e_j$,
+>
+> $$
+> G_{\ast,I}(\sigma_j) = D_{C \circ \gamma_j} = \frac{d}{dt}\Big|_{t=0} C\bigl(\gamma_j(t)\bigr),
+> $$
+>
+> the entrywise derivative of the matrix $C(\gamma_j(t))$, where $h(\gamma_j(t)) = \cos t + \sin t\, u_j$ with $u_1 = i$, $u_2 = j$, $u_3 = k$.
+>
+> **Computing $C(\gamma_j(t))$.** Let $\vec y \in \mathbb{R}^3$ and $v = h_0(\vec y) = y_1 i + y_2 j + y_3 k$. Since $\overline{h(\gamma_j(t))} = \cos t - \sin t\, u_j$, expanding the four terms gives
+>
+> $$
+> (\cos t + \sin t\, u_j)\, v\, (\cos t - \sin t\, u_j) = \cos^2 t\; v + \sin t \cos t\, (u_j v - v u_j) - \sin^2 t\; u_j v u_j .
+> $$
+>
+> Using $i^2 = j^2 = k^2 = -1$ and $ij = k = -ji$, $jk = i = -kj$, $ki = j = -ik$, the two products needed are:
+> - for $u_1 = i$: $\ iv - vi = -2y_3\, j + 2y_2\, k$ and $ivi = -y_1 i + y_2 j + y_3 k$;
+> - for $u_2 = j$: $\ jv - vj = 2y_3\, i - 2y_1\, k$ and $jvj = y_1 i - y_2 j + y_3 k$;
+> - for $u_3 = k$: $\ kv - vk = -2y_2\, i + 2y_1\, j$ and $kvk = y_1 i + y_2 j - y_3 k$.
+>
+> Substituting, and using $\cos^2 t - \sin^2 t = \cos 2t$ and $2 \sin t \cos t = \sin 2t$,
+>
+> $$
+> \begin{aligned}
+> (\cos t + \sin t\, i)\, v\, (\cos t - \sin t\, i) &= y_1\, i + (\cos 2t\, y_2 - \sin 2t\, y_3)\, j + (\sin 2t\, y_2 + \cos 2t\, y_3)\, k, \\
+> (\cos t + \sin t\, j)\, v\, (\cos t - \sin t\, j) &= (\cos 2t\, y_1 + \sin 2t\, y_3)\, i + y_2\, j + (-\sin 2t\, y_1 + \cos 2t\, y_3)\, k, \\
+> (\cos t + \sin t\, k)\, v\, (\cos t - \sin t\, k) &= (\cos 2t\, y_1 - \sin 2t\, y_2)\, i + (\sin 2t\, y_1 + \cos 2t\, y_2)\, j + y_3\, k .
+> \end{aligned}
+> $$
+>
+> Applying $h_0^{-1}$ and reading off the matrices with respect to $\vec y$,
+>
+> $$
+> C(\gamma_1(t)) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & \cos 2t & -\sin 2t \\ 0 & \sin 2t & \cos 2t \end{pmatrix}, \quad
+> C(\gamma_2(t)) = \begin{pmatrix} \cos 2t & 0 & \sin 2t \\ 0 & 1 & 0 \\ -\sin 2t & 0 & \cos 2t \end{pmatrix},
+> $$
+>
+> $$
+> C(\gamma_3(t)) = \begin{pmatrix} \cos 2t & -\sin 2t & 0 \\ \sin 2t & \cos 2t & 0 \\ 0 & 0 & 1 \end{pmatrix}.
+> $$
+>
+> **The vectors $G_{\ast,I}(\sigma_j)$.** Differentiating entrywise at $t = 0$, the constant entries give $0$, while $\frac{d}{dt}\cos 2t = -2\sin 2t$ and $\frac{d}{dt}\sin 2t = 2\cos 2t$ take the values $0$ and $2$ at $t = 0$. Hence
+>
+> $$
+> G_{\ast,I}(\sigma_1) = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & -2 \\ 0 & 2 & 0 \end{pmatrix}, \qquad
+> G_{\ast,I}(\sigma_2) = \begin{pmatrix} 0 & 0 & 2 \\ 0 & 0 & 0 \\ -2 & 0 & 0 \end{pmatrix}, \qquad
+> G_{\ast,I}(\sigma_3) = \begin{pmatrix} 0 & -2 & 0 \\ 2 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}.
+> $$
+>
+> **$G_{\ast,I}$ is an isomorphism.** The matrices $\sigma_1, \sigma_2, \sigma_3$ are linearly independent: if $a\sigma_1 + b\sigma_2 + c\sigma_3 = 0$ with $a, b, c \in \mathbb{R}$, the $(1,1)$, $(1,2)$ and $(2,1)$ entries give $-ai = 0$, $b - ci = 0$ and $-b - ci = 0$, so $a = b = c = 0$. Since $\dim T_I\,\mathrm{SU}(2) = 3$, they form a basis of $T_I\,\mathrm{SU}(2)$. Their images are also linearly independent: if $a\,G_{\ast,I}(\sigma_1) + b\,G_{\ast,I}(\sigma_2) + c\,G_{\ast,I}(\sigma_3) = 0$, the $(3,2)$, $(1,3)$ and $(2,1)$ entries give $2a = 0$, $2b = 0$ and $2c = 0$. So the linear map $G_{\ast,I} : T_I\,\mathrm{SU}(2) \to T_I\,\mathrm{SO}(3)$ sends a basis to $3$ linearly independent vectors of the $3$-dimensional space $T_I\,\mathrm{SO}(3)$, and is therefore an isomorphism.
+>
+> **$G_{\ast,g}$ is an isomorphism for every $g$.** By the problem, $C$ is a group morphism and $F$ is a group isomorphism; hence $F^{-1}$ is a group morphism, and so is $G = C \circ F^{-1}$. In particular $G(I) = I$.
+>
+> *The translation identity.* For $g \in \mathrm{SU}(2)$ let $L_g : \mathrm{SU}(2) \to \mathrm{SU}(2)$, $L_g(g') = gg'$, and for $A \in \mathrm{SO}(3)$ let $L_A : \mathrm{SO}(3) \to \mathrm{SO}(3)$, $L_A(A') = AA'$. For every $g' \in \mathrm{SU}(2)$,
+>
+> $$
+> G\bigl(L_g(g')\bigr) = G(gg') = G(g)\,G(g') = L_{G(g)}\bigl(G(g')\bigr),
+> $$
+>
+> so $G \circ L_g = L_{G(g)} \circ G$.
+>
+> *Translations are diffeomorphisms.* On $\mathrm{Mat}(2, \mathbb{C})$ the map $M \mapsto gM$ is linear, hence smooth; its restriction to the embedded submanifold $\mathrm{SU}(2)$ is smooth, and it takes values in $\mathrm{SU}(2)$ because $\mathrm{SU}(2)$ is closed under products, so $L_g : \mathrm{SU}(2) \to \mathrm{SU}(2)$ is smooth, since a smooth map whose image lies in an embedded submanifold is smooth into that submanifold ([[§30 Submanifolds#^lem-30-3|Lemma §30.3]]). The same holds for $L_{g^{-1}}$, and $L_g \circ L_{g^{-1}} = L_{g^{-1}} \circ L_g = \mathrm{id}$ by associativity and $g g^{-1} = g^{-1} g = I$. Hence $L_g$ is a diffeomorphism, and by the chain rule ([[§23 Derivations and the Abstract Tangent Space#^thm-23-6|Theorem §23.6]]) $(L_{g^{-1}})_{\ast,g} \circ (L_g)_{\ast,I} = \mathrm{id}$ and $(L_g)_{\ast,I} \circ (L_{g^{-1}})_{\ast,g} = \mathrm{id}$, so $(L_g)_{\ast,I}$ is an isomorphism with inverse $(L_{g^{-1}})_{\ast,g}$. In the same way, using that $\mathrm{SO}(3)$ is an embedded submanifold of $\mathrm{Mat}(3, \mathbb{R})$ closed under products, $L_{G(g)}$ is a diffeomorphism of $\mathrm{SO}(3)$ and $(L_{G(g)})_{\ast,I}$ is an isomorphism.
+>
+> *The chain rule at $I$.* Since $L_g(I) = g$ and $G(I) = I$, applying the chain rule to both sides of $G \circ L_g = L_{G(g)} \circ G$ at $I$ gives
+>
+> $$
+> G_{\ast,g} \circ (L_g)_{\ast,I} = (L_{G(g)})_{\ast,I} \circ G_{\ast,I},
+> $$
+>
+> and therefore
+>
+> $$
+> G_{\ast,g} = (L_{G(g)})_{\ast,I} \circ G_{\ast,I} \circ (L_{g^{-1}})_{\ast,g} .
+> $$
+>
+> Each factor is an isomorphism, so $G_{\ast,g} : T_g\,\mathrm{SU}(2) \to T_{G(g)}\,\mathrm{SO}(3)$ is an isomorphism.
+>
+> **$G$ is a local diffeomorphism.** Let $g \in \mathrm{SU}(2)$. Choose a chart $(V, \chi)$ of $\mathrm{SO}(3)$ at $G(g)$ and, using continuity of $G$, a chart $(U, \varphi)$ of $\mathrm{SU}(2)$ at $g$ with $G(U) \subseteq V$. The coordinate representation $\hat G = \chi \circ G \circ \varphi^{-1} : \varphi(U) \to \chi(V)$ is a smooth map between open subsets of $\mathbb{R}^3$, and its Jacobian at $\varphi(g)$ is the matrix of $G_{\ast,g}$ in the coordinate bases ([[§25 The Differential in Coordinates#^thm-25-2|Theorem §25.2]]), hence invertible. By the inverse function theorem ([[§28 Local Diffeomorphisms#^thm-28-1|Theorem §28.1]]), there are open sets $U_0 \ni \varphi(g)$ in $\varphi(U)$ and $V_0 = \hat G(U_0) \subseteq \chi(V)$ such that $\hat G|_{U_0} : U_0 \to V_0$ is bijective with smooth inverse. Then $\varphi^{-1}(U_0)$ is an open neighborhood of $g$, $\chi^{-1}(V_0)$ is open in $\mathrm{SO}(3)$, and
+>
+> $$
+> G|_{\varphi^{-1}(U_0)} = \chi^{-1} \circ \hat G|_{U_0} \circ \varphi : \varphi^{-1}(U_0) \to \chi^{-1}(V_0)
+> $$
+>
+> is a composite of diffeomorphisms, hence a diffeomorphism. As $g$ was arbitrary, $G$ is a local diffeomorphism.
+
+
+^pf-35-8-2
+
+*Uses:* [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|§35.3]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-4|§35.4]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-5|§35.5]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-3|Def. §20.3]], [[§30 Submanifolds#^lem-30-3|§30.3]], [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]], [[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|§26.3]], [[§25 The Differential in Coordinates#^thm-25-2|§25.2]], [[§28 Local Diffeomorphisms#^thm-28-1|§28.1]], [[§28 Local Diffeomorphisms#^def-28-1|Def. §28.1]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[Inverse Function Theorem (several variables)|452 §13.2]]
 
 > [!remark]- Connections
 > - The same theorem in physics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]]; $\mathrm{SU}(2) \cong S^3$ and $\mathrm{SO}(3) \cong \mathbb{RP}^3$ topologically, with $\pi_1$: [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|QFT Theorem §C3.1.8]].
