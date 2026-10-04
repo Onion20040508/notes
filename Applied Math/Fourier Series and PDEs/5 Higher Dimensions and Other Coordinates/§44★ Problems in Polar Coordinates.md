@@ -146,7 +146,7 @@ Equation (12) is **Bessel's equation** ([[§45★ Bessel's Equation#^def-45-1|De
 > 1. **Steady state.** Solve the potential problem $\nabla^2v_\infty = 0$, $v_\infty(a, \theta) = f(\theta)$, periodic and bounded ([[§39 Potential in a Disk#^thm-39-2|Theorem §39.2]]), and subtract it, which makes the boundary condition homogeneous.
 > 2. **Separate time**, $v = \phi(r, \theta)T(t)$: the eigenvalue problem (1)–(4) and $T'' + \lambda^2c^2T = 0$ or $T' + \lambda^2kT = 0$ (Theorem §44.1).
 > 3. **Separate space**, $\phi = R(r)Q(\theta)$: $Q = 1$, $\cos m\theta$, $\sin m\theta$ with $\mu = m$ (Theorem §44.2).
-> 4. **Radial problem.** For each $m$, the bounded solutions of Bessel's equation (12) are $R = J_m(\lambda r)$; the boundary condition picks out the eigenvalues, $\lambda a = $ a zero of $J_m$ (or of $J_m'$ for an insulated edge).
+> 4. **Radial problem.** For each $m$, the bounded solutions of Bessel's equation (12) are $R = J_m(\lambda r)$; the boundary condition picks out the eigenvalues, $\lambda a =$ a zero of $J_m$ (or of $J_m'$ for an insulated edge).
 > 5. **Superpose** over $m$ and over the zeros, and find the coefficients from the initial conditions by orthogonality (Theorem §44.3); this is carried out for radially symmetric problems in [[§46★ Temperature in a Cylinder|§46]] and for the drum in [[§47★ Vibrations of a Circular Membrane|§47]].
 
 ^rem-44-1

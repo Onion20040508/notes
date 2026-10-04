@@ -145,7 +145,7 @@ B&C's proof of the main theorem needs an identity it leaves to Exercise 10; here
 A condition of another type can change substantially (Example §117.3). By Lemma §117.1, the ratio of a directional derivative of $H$ along $C$ to that of $h$ along $\Gamma$ at the corresponding point is $|f'(z)|$, which in general is not constant along the arc. So $dh/dn = h_0 \ne 0$ becomes $dH/dN = h_0|f'(z)|$, a variable flux; new boundary conditions for the transformed problem can still be written down in any particular case.
 
 > [!remark] Remark: Method — Solving a Boundary Value Problem by Conformal Mapping
-> To solve Laplace's equation in a domain $D_z$ with boundary conditions of the types $H = $ const and $dH/dN = 0$ on pieces of the boundary:
+> To solve Laplace's equation in a domain $D_z$ with boundary conditions of the types $H =$ const and $dH/dN = 0$ on pieces of the boundary:
 > 1. **Find a conformal map** $w = f(z)$ of $D_z$ onto a simple domain $D_w$ (half plane, strip, quadrant, disk), using the elementary maps of Chapter 8 and compositions of them.
 > 2. **Transfer the boundary conditions** piece by piece: each piece of $\partial D_z$ goes to a piece of $\partial D_w$ with the same condition (Theorem §117.2). Points where $f$ is not conformal (corners, critical points) are allowed on the boundary, where the conditions change.
 > 3. **Solve the simpler problem** for $h(u, v)$ in $D_w$, usually as the real or imaginary part of an analytic function such as $A\operatorname{Log} w + B$ or $A w + B$.
@@ -181,7 +181,7 @@ A condition of another type can change substantially (Example §117.3). By Lemma
 ^ex-117-1
 
 ![[m342-117-1.svg]]
-*Example §117.1. Left: the wedge $0 < \arg z < \pi/4$ with the level curves $H = x^2 - y^2 + 2 = 2.25, 2.5, \ldots$ (blue), hyperbolas that meet the $x$ axis (where $H_y = 0$) at right angles; the edge $y = x$ (red) is the level curve $H = 2$. Right: under $w = iz^2$ the wedge becomes the second quadrant, the level curves become the horizontal lines $h = v + 2 = $ const, meeting the $v$ axis (where $h_u = 0$) at right angles, and the edge becomes the negative $u$ axis, where $h = 2$.*
+*Example §117.1. Left: the wedge $0 < \arg z < \pi/4$ with the level curves $H = x^2 - y^2 + 2 = 2.25, 2.5, \ldots$ (blue), hyperbolas that meet the $x$ axis (where $H_y = 0$) at right angles; the edge $y = x$ (red) is the level curve $H = 2$. Right: under $w = iz^2$ the wedge becomes the second quadrant, the level curves become the horizontal lines $h = v + 2 =$ const, meeting the $v$ axis (where $h_u = 0$) at right angles, and the edge becomes the negative $u$ axis, where $h = 2$.*
 
 > [!example] Example §117.2: The Value 2 on a Semicircle and on a Segment
 > Under $w = e^z$ the segment $0 \le y \le \pi$ of the $y$ axis goes onto the semicircle $u^2 + v^2 = 1$, $v \ge 0$ ([[§103★ Mappings by the Exponential Function#^ex-103-1|Example §103.1]]): $e^{iy}$, $0 \le y \le \pi$. The function

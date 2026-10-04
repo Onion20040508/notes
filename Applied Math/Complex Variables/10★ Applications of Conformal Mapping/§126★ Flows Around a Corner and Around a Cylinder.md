@@ -113,7 +113,7 @@ To avoid an excess of notation, the same symbols $F$, $\phi$ and $\psi$ are used
 ^ex-126-2
 
 ![[m342-126-1.svg]]
-*Left: Example §126.1, streamlines $xy = $ const of $F = Az^2$; the fluid comes down along the $y$ axis and turns the corner, with a stagnation point at $0$. Right: Example §126.2, streamlines $(r - 1/r)\sin\theta = c$ of $F = A(z + 1/z)$ around the unit cylinder; the flow divides at the stagnation point $-1$ and rejoins at $1$, and is fastest at $\pm i$.*
+*Left: Example §126.1, streamlines $xy =$ const of $F = Az^2$; the fluid comes down along the $y$ axis and turns the corner, with a stagnation point at $0$. Right: Example §126.2, streamlines $(r - 1/r)\sin\theta = c$ of $F = A(z + 1/z)$ around the unit cylinder; the flow divides at the stagnation point $-1$ and rejoins at $1$, and is fastest at $\pm i$.*
 
 ## Two Variations
 

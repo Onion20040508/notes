@@ -225,7 +225,7 @@ In engineering and physics, (5) is the **superposition principle**. Think of $\m
 >
 > **(c)** $T: \mathbb{R}^2 \to \mathbb{R}$, $T(x_1, x_2) = 2x_1 + x_2 - 2$ is not linear, because $T(0, 0) = -2 \ne 0$, contradicting (3).
 >
-> **(d)** The polar-coordinate map $T(r, \theta) = (r\sin\theta,\ r\cos\theta)$ is not linear: it sends the straight grid lines $\theta = $ const and $r = $ const of the $(r, \theta)$-plane to lines through the origin and to circles. Property (2) fails, for instance: $T\big(2(1, \tfrac{\pi}{2})\big) = T(2, \pi) = (0, -2)$, but $2T(1, \tfrac{\pi}{2}) = 2(1, 0) = (2, 0)$.
+> **(d)** The polar-coordinate map $T(r, \theta) = (r\sin\theta,\ r\cos\theta)$ is not linear: it sends the straight grid lines $\theta =$ const and $r =$ const of the $(r, \theta)$-plane to lines through the origin and to circles. Property (2) fails, for instance: $T\big(2(1, \tfrac{\pi}{2})\big) = T(2, \pi) = (0, -2)$, but $2T(1, \tfrac{\pi}{2}) = 2(1, 0) = (2, 0)$.
 >
 > *Source: 235 lectures Feb-18 and L5*
 

@@ -273,7 +273,7 @@ Powers lists $j_0$, $j_1$, $j_2$ without derivation. Each can be checked by subs
 > J_{n+1/2}(\lambda_{nm}\rho)\,P_n(\cos\phi) = 0 .
 > $$
 >
-> One or the other factor must be $0$, so these surfaces are either concentric spheres $\rho = $ const, determined by $J_{n+1/2}(\lambda_{nm}\rho) = 0$ (there are $m - 1$ of them inside the sphere), or cones $\phi = $ const, determined by $P_n(\cos\phi) = 0$ (the $n$ nodal parallels of the zonal harmonic, [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-5|Definition §49.5]]; for $P_1$ the "cone" is the plane $z = 0$). This is the three-dimensional analogue of the nodal circles and diameters of a drum, [[§47★ Vibrations of a Circular Membrane#^def-47-2|Definition §47.2]].
+> One or the other factor must be $0$, so these surfaces are either concentric spheres $\rho =$ const, determined by $J_{n+1/2}(\lambda_{nm}\rho) = 0$ (there are $m - 1$ of them inside the sphere), or cones $\phi =$ const, determined by $P_n(\cos\phi) = 0$ (the $n$ nodal parallels of the zonal harmonic, [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-5|Definition §49.5]]; for $P_1$ the "cone" is the plane $z = 0$). This is the three-dimensional analogue of the nodal circles and diameters of a drum, [[§47★ Vibrations of a Circular Membrane#^def-47-2|Definition §47.2]].
 >
 > *Powers: 5.10, Part C (text)*
 

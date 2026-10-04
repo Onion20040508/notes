@@ -26,7 +26,7 @@ Separation of variables in a rectangle is not limited to Dirichlet problems. Ins
 > \end{aligned}
 > $$
 >
-> **Separation.** The conditions are homogeneous on the facing sides $x = 0$ and $x = a$. A product $u = X(x)Y(y)$ gives, as expected, $X''/X = -Y''/Y = $ constant, with $X'(0) = 0$, $X'(a) = 0$. With the constant $-\lambda^2$ this is the eigenvalue problem of the insulated bar ([[§20 Example꞉ Insulated Bar#^thm-20-1|Theorem §20.1]]):
+> **Separation.** The conditions are homogeneous on the facing sides $x = 0$ and $x = a$. A product $u = X(x)Y(y)$ gives, as expected, $X''/X = -Y''/Y =$ constant, with $X'(0) = 0$, $X'(a) = 0$. With the constant $-\lambda^2$ this is the eigenvalue problem of the insulated bar ([[§20 Example꞉ Insulated Bar#^thm-20-1|Theorem §20.1]]):
 >
 > $$
 > X_0(x) = 1, \quad \lambda_0 = 0; \qquad X_n(x) = \cos(\lambda_nx), \quad \lambda_n = \frac{n\pi}{a}, \quad n = 1, 2, \ldots
@@ -79,7 +79,7 @@ Separation of variables in a rectangle is not limited to Dirichlet problems. Ins
 >
 > **(a) Separation.** With $u = X(x)Y(y)$, $X''/X = -Y''/Y = p$: $X'' = pX$, $Y'' = -pY$, and the insulated sides give $X'(0) = 0$, $X'(a) = 0$.
 >
-> **(b) Basic solutions.** If $p > 0$, $X = Ae^{\sqrt p x} + Be^{-\sqrt p x}$, $X'(0) = \sqrt p(A - B) = 0$ gives $A = B$, and then $X'(a) = 2A\sqrt p\sinh(\sqrt p a) = 0$ gives $A = 0$. If $p = 0$ (the case to be careful with), $X = A + Bx$, $X'(0) = B = 0$, and $X = $ constant is a nonzero solution; then $Y'' = 0$, $Y = a_0y + b_0$. If $p = -\lambda^2 < 0$, $X = A\sin(\lambda x) + B\cos(\lambda x)$, $X'(0) = A\lambda = 0$, and $X'(a) = -B\lambda\sin(\lambda a) = 0$ gives $\lambda = n\pi/a$. So the basic solutions are
+> **(b) Basic solutions.** If $p > 0$, $X = Ae^{\sqrt p x} + Be^{-\sqrt p x}$, $X'(0) = \sqrt p(A - B) = 0$ gives $A = B$, and then $X'(a) = 2A\sqrt p\sinh(\sqrt p a) = 0$ gives $A = 0$. If $p = 0$ (the case to be careful with), $X = A + Bx$, $X'(0) = B = 0$, and $X =$ constant is a nonzero solution; then $Y'' = 0$, $Y = a_0y + b_0$. If $p = -\lambda^2 < 0$, $X = A\sin(\lambda x) + B\cos(\lambda x)$, $X'(0) = A\lambda = 0$, and $X'(a) = -B\lambda\sin(\lambda a) = 0$ gives $\lambda = n\pi/a$. So the basic solutions are
 >
 > $$
 > u_0(x, y) = a_0y + b_0, \qquad u_n(x, y) = \cos\Big(\frac{n\pi x}{a}\Big)\Big(a_n\sinh\Big(\frac{n\pi y}{a}\Big) + b_n\cosh\Big(\frac{n\pi y}{a}\Big)\Big), \quad n = 1, 2, \ldots

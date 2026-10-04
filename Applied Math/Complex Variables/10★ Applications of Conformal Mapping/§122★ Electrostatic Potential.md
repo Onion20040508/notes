@@ -84,7 +84,7 @@ For two stationary charged particles, the force of attraction or repulsion is pr
 > V = \frac{\ln r}{\ln r_0} = \frac{\ln(x^2 + y^2)}{2\ln r_0} .
 > $$
 >
-> **Field and flux lines.** The field intensity is $-\operatorname{grad} V = -\dfrac{1}{\ln r_0}\,\dfrac{(x, y)}{x^2 + y^2}$, radial, of size $\dfrac{1}{r|\ln r_0|}$; for $r_0 > 1$ it points inward, from the outer conductor at the higher potential toward the inner one. A harmonic conjugate is $U = \theta/\ln r_0$ (on any slit domain), so the flux lines are the rays $\theta = $ const, orthogonal to the equipotential circles. The potential has the form of a line charge on the axis ([[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]], the fundamental solution $\ln r$).
+> **Field and flux lines.** The field intensity is $-\operatorname{grad} V = -\dfrac{1}{\ln r_0}\,\dfrac{(x, y)}{x^2 + y^2}$, radial, of size $\dfrac{1}{r|\ln r_0|}$; for $r_0 > 1$ it points inward, from the outer conductor at the higher potential toward the inner one. A harmonic conjugate is $U = \theta/\ln r_0$ (on any slit domain), so the flux lines are the rays $\theta =$ const, orthogonal to the equipotential circles. The potential has the form of a line charge on the axis ([[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]], the fundamental solution $\ln r$).
 >
 > *B&C: Sec. 123, Exercise 4*
 

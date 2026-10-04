@@ -227,7 +227,7 @@ $$
 >
 > **(d) Basic solutions, three cases.**
 > - $p > 0$, $p = \lambda^2$: $\phi = Ae^{\lambda x} + Be^{-\lambda x}$, $\phi' = \lambda(Ae^{\lambda x} - Be^{-\lambda x})$. $\phi'(0) = \lambda(A - B) = 0$ and $\phi'(1) = \lambda(Ae^\lambda - Be^{-\lambda}) = 0$ give $A = B$ and $A(e^\lambda - e^{-\lambda}) = 0$, so $A = B = 0$: no nonzero solution.
-> - $p = 0$: $\phi = A + Bx$, $\phi' = B = 0$: nonzero solutions $\phi = $ constant, with $T = $ constant.
+> - $p = 0$: $\phi = A + Bx$, $\phi' = B = 0$: nonzero solutions $\phi =$ constant, with $T =$ constant.
 > - $p < 0$, $p = -\lambda^2$: $\phi = A\sin\lambda x + B\cos\lambda x$, $\phi' = \lambda A\cos\lambda x - \lambda B\sin\lambda x$. $\phi'(0) = \lambda A = 0$ gives $A = 0$; $\phi'(1) = -\lambda B\sin\lambda = 0$ gives nonzero solutions when $\lambda = n\pi$: $\phi = \cos(n\pi x)$.
 >
 > In conclusion (Theorem §20.1 with $a = 1$): $p = -(n\pi)^2$, $\phi_n = \cos(n\pi x)$, $T_n = e^{-(n\pi)^2t}$, and the basic solutions are $w_n(x, t) = e^{-(n\pi)^2t}\cos(n\pi x)$, $n = 0, 1, 2, \ldots$.

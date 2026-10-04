@@ -107,7 +107,7 @@ Laws of nature are often statements about rates, and a law about rates written i
 
 > [!remark] Remark: Method — Reading a Direction Field
 > For an equation $dy/dt = f(t, y)$:
-> 1. Evaluate $f$ on a grid of points (or along chosen lines $y = $ const, as in Example §1.2) and draw a short segment of slope $f(t, y)$ at each point.
+> 1. Evaluate $f$ on a grid of points (or along chosen lines $y =$ const, as in Example §1.2) and draw a short segment of slope $f(t, y)$ at each point.
 > 2. Find the curves where $f = 0$. If $f$ depends only on $y$, these are horizontal lines, and each is an equilibrium solution ([[§1 Some Basic Mathematical Models; Direction Fields#^def-1-3|Definition §1.3]]).
 > 3. Determine the sign of $f$ between them: solutions increase where $f > 0$ and decrease where $f < 0$.
 > 4. Sketch solution curves tangent to the segments everywhere, and read off the behavior as $t \to \infty$ and how it depends on the initial value.

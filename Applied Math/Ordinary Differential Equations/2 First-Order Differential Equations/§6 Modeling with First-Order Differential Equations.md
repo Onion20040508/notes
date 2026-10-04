@@ -209,7 +209,7 @@ Suppose a sum $S_0$ is deposited at an annual **rate of return** $r$, compounded
 > S(40) = \frac{2000}{0.08}\big(e^{3.2} - 1\big) = 25{,}000\big(e^{3.2} - 1\big) \approx \$588{,}313 .
 > $$
 >
-> Only $\$80{,}000$ was invested; the remaining $\$508{,}313$ is accumulated return. The result is sensitive to the rate: $S(40) \approx \$508{,}948$ at $r = 7.5\%$ and $\approx \$681{,}508$ at $r = 8.5\%$.
+> Only $\$80{,}000$was invested; the remaining$\$508{,}313$ is accumulated return. The result is sensitive to the rate: $S(40) \approx \$508{,}948$at$r = 7.5\%$and$\approx \$681{,}508$ at $r = 8.5\%$.
 >
 > **(b) Inheritance versus saving.** Two students open retirement accounts at age $22$, both earning a continuous rate of $6\%$, and retire at $65$ (so $t = 43$). Student A deposits an inherited $\$1{,}000{,}000$ at the start and nothing more. Student B starts with $\$0$ and deposits continuously $\$D$ per year. Find $D$ so that both retire with the same amount.
 >

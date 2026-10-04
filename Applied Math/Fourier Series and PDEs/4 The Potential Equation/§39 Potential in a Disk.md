@@ -141,8 +141,8 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 > Lecture 11.26 organizes the work as follows.
 > 1. **Polar form.** Write the problem in $(r, \theta)$, adding the two implicit conditions: periodicity $v(r, \theta + 2\pi) = v(r, \theta)$ and boundedness as $r \to 0^+$.
 > 2. **Separate.** $v = R(r)Q(\theta)$ gives $\dfrac{r^2R'' + rR'}{R} = -\dfrac{Q''}{Q} = p$, with $Q$ periodic and $R$ bounded at $0$.
-> 3. **Solve for $Q$.** $p < 0$: not periodic; $p = 0$: $Q = $ constant; $p = n^2$: $Q = A\cos(n\theta) + B\sin(n\theta)$.
-> 4. **Solve for $R$** (test function $r^\alpha$): $R = r^n$ for $n \ge 1$, $R = $ constant for $n = 0$; discard $r^{-n}$ and $\ln r$.
+> 3. **Solve for $Q$.** $p < 0$: not periodic; $p = 0$: $Q =$ constant; $p = n^2$: $Q = A\cos(n\theta) + B\sin(n\theta)$.
+> 4. **Solve for $R$** (test function $r^\alpha$): $R = r^n$ for $n \ge 1$, $R =$ constant for $n = 0$; discard $r^{-n}$ and $\ln r$.
 > 5. **Fit the boundary values:** $v(c, \theta) = f(\theta)$ is a Fourier series; compute $a_0, a_n, b_n$ by (11).
 > After solving, $v(0, \theta)$ is a constant, as it must be: the center has no direction.
 >
@@ -198,7 +198,7 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 >
 > *Polar form.* $u_{rr} + \frac1ru_r + \frac{1}{r^2}u_{\theta\theta} = 0$ for $0 < r < 2$; $u(r, \theta) = u(r, \theta + 2\pi)$; $u(2, \theta) = \theta$; $u$ bounded as $r \to 0^+$.
 >
-> *Separation and basic solutions.* $u_n = R(r)Q(\theta)$ with $\dfrac{r^2R'' + rR'}{R} = -\dfrac{Q''}{Q} = p$, $R$ bounded as $r \to 0^+$, $Q(\theta) = Q(\theta + 2\pi)$. As in the Method: $-p > 0$ gives no periodic solution; $p = 0$ gives $Q = $ constant and $R = C_0 + D_0\ln r$ with $D_0 = 0$; $p = n^2$ gives $Q_n = A\cos(n\theta) + B\sin(n\theta)$ and $R_n = C_nr^n + D_nr^{-n}$ with $D_n = 0$. So the basic solutions are $1$, $r^n\cos(n\theta)$, $r^n\sin(n\theta)$.
+> *Separation and basic solutions.* $u_n = R(r)Q(\theta)$ with $\dfrac{r^2R'' + rR'}{R} = -\dfrac{Q''}{Q} = p$, $R$ bounded as $r \to 0^+$, $Q(\theta) = Q(\theta + 2\pi)$. As in the Method: $-p > 0$ gives no periodic solution; $p = 0$ gives $Q =$ constant and $R = C_0 + D_0\ln r$ with $D_0 = 0$; $p = n^2$ gives $Q_n = A\cos(n\theta) + B\sin(n\theta)$ and $R_n = C_nr^n + D_nr^{-n}$ with $D_n = 0$. So the basic solutions are $1$, $r^n\cos(n\theta)$, $r^n\sin(n\theta)$.
 >
 > *Coefficients.* $f(\theta) = \theta$ is odd, so $a_0 = a_n = 0$, and by (11) with $c = 2$, integrating by parts,
 >

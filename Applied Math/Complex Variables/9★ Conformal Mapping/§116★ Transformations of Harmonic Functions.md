@@ -208,7 +208,7 @@ So the source term picks up the factor $|f'(z)|^2$: a charge or heat-source dens
 > w = \operatorname{Log} z = \ln r + i\Theta \qquad \Big(r > 0,\ -\frac\pi2 < \Theta < \frac\pi2\Big)
 > $$
 >
-> takes, in rectangular coordinates, the form $w = \ln\sqrt{x^2 + y^2} + i\arctan\big(\frac yx\big)$, where $-\pi/2 < \arctan t < \pi/2$. It maps the right half plane $x > 0$ onto the horizontal strip $-\pi/2 < v < \pi/2$: a point $re^{i\Theta}$ with $|\Theta| < \pi/2$ goes to $\ln r + i\Theta$, and as $r$ runs through $(0, \infty)$ along the ray $\Theta = $ const, $\ln r$ runs through all of $\mathbb{R}$ on the horizontal line $v = \Theta$. Since $h(u, v) = \operatorname{Im} w = v$ is harmonic in the strip, Theorem §116.1 says that
+> takes, in rectangular coordinates, the form $w = \ln\sqrt{x^2 + y^2} + i\arctan\big(\frac yx\big)$, where $-\pi/2 < \arctan t < \pi/2$. It maps the right half plane $x > 0$ onto the horizontal strip $-\pi/2 < v < \pi/2$: a point $re^{i\Theta}$ with $|\Theta| < \pi/2$ goes to $\ln r + i\Theta$, and as $r$ runs through $(0, \infty)$ along the ray $\Theta =$ const, $\ln r$ runs through all of $\mathbb{R}$ on the horizontal line $v = \Theta$. Since $h(u, v) = \operatorname{Im} w = v$ is harmonic in the strip, Theorem §116.1 says that
 >
 > $$
 > H(x, y) = \arctan\Big(\frac yx\Big)

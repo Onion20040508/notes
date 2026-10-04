@@ -311,7 +311,7 @@ Because $f$ depends only on $y/x$, integral curves have the same slope at all po
 > v + x\,\frac{dv}{dx} = v - 2e^{5v} , \qquad x\,\frac{dv}{dx} = -2e^{5v} .
 > $$
 >
-> The right side never vanishes, so there are no constant solutions $v = $ const.
+> The right side never vanishes, so there are no constant solutions $v =$ const.
 >
 > **Separate and integrate.** $e^{-5v}\,dv = -\dfrac{2}{x}\,dx$, so
 >

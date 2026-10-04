@@ -120,7 +120,7 @@ $$
 > [!remark] Remark: Method — Separation of Variables for the Potential Equation in a Rectangle
 > Lecture 11.19 organizes the work into steps:
 > 1. **Split** the problem, if necessary, into problems that each have homogeneous conditions on one pair of parallel sides (Theorem §36.2 below; for other boundary conditions, [[§37 Further Examples for a Rectangle#^rem-37-1|§37]]).
-> 2. **Separate:** set $u = X(x)Y(y)$, get $X''/X = -Y''/Y = $ constant, and turn the homogeneous conditions into conditions on the factor along those sides.
+> 2. **Separate:** set $u = X(x)Y(y)$, get $X''/X = -Y''/Y =$ constant, and turn the homogeneous conditions into conditions on the factor along those sides.
 > 3. **Solve the eigenvalue problem** for that factor, checking the cases constant positive, zero and negative; this gives the eigenvalues $\lambda_n$ and eigenfunctions.
 > 4. **Solve the other factor's equation**, $Y'' - \lambda_n^2Y = 0$ (hyperbolic functions; $A + By$ for $\lambda_0 = 0$), and write the **basic solutions** $X_nY_n$.
 > 5. **Superpose** and fit the two remaining sides: each gives a Fourier series problem that determines one constant per $n$.

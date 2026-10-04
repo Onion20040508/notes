@@ -137,7 +137,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 > T = \frac2\pi\operatorname{Arg} z = \frac2\pi\arctan\Big(\frac yx\Big) \qquad \Big(0 \le \arctan t \le \frac\pi2\Big).
 > $$
 >
-> **Isotherms and lines of flow.** The isotherms $T = c_1$ are the rays $\theta = \pi c_1/2$ from the corner. Since $-\frac{2i}{\pi}\operatorname{Log} z = \frac2\pi\Theta - \frac{2i}{\pi}\ln r$ is analytic, $S = -\frac2\pi\ln r$ is a harmonic conjugate of $T$, and the lines of flow are the quarter circles $r = $ const. Heat flows from the hot edge to the cold edge along quarter circles. By Proposition §118.2(c), the heat crossing the radial segment $a \le r \le b$ of a ray is $K\big|S(b) - S(a)\big| = \frac{2K}{\pi}\ln\frac ba$, which grows without bound as $a \to 0$: the flow concentrates at the corner, where the edge temperatures jump.
+> **Isotherms and lines of flow.** The isotherms $T = c_1$ are the rays $\theta = \pi c_1/2$ from the corner. Since $-\frac{2i}{\pi}\operatorname{Log} z = \frac2\pi\Theta - \frac{2i}{\pi}\ln r$ is analytic, $S = -\frac2\pi\ln r$ is a harmonic conjugate of $T$, and the lines of flow are the quarter circles $r =$ const. Heat flows from the hot edge to the cold edge along quarter circles. By Proposition §118.2(c), the heat crossing the radial segment $a \le r \le b$ of a ray is $K\big|S(b) - S(a)\big| = \frac{2K}{\pi}\ln\frac ba$, which grows without bound as $a \to 0$: the flow concentrates at the corner, where the edge temperatures jump.
 >
 > *B&C: Sec. 121, Exercise 1*
 
@@ -148,7 +148,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 >
 > **Solution.** Try $T = \dfrac{T_0}{\theta_0}\theta = \dfrac{T_0}{\theta_0}\arctan\Big(\dfrac yx\Big)$, the imaginary part of $\frac{T_0}{\theta_0}\log z$ for a branch of $\log z$ containing the wedge. It is harmonic, equals $0$ on $\theta = 0$ and $T_0$ on $\theta = \theta_0$, and on the curved face its normal derivative is $\partial T/\partial r = 0$, since $T$ does not depend on $r$.
 >
-> **Lines of flow.** As in Example §118.1, $S = -\frac{T_0}{\theta_0}\ln r$, and the lines of flow are the arcs $r = $ const. The insulated face $r = r_0$ is one of them, as Proposition §118.2(c) requires.
+> **Lines of flow.** As in Example §118.1, $S = -\frac{T_0}{\theta_0}\ln r$, and the lines of flow are the arcs $r =$ const. The insulated face $r = r_0$ is one of them, as Proposition §118.2(c) requires.
 >
 > *B&C: Sec. 121, Exercise 4*
 

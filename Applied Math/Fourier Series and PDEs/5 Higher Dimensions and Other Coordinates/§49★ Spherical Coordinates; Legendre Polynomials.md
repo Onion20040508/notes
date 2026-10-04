@@ -578,7 +578,7 @@ These formulas are useful if $P_n(x)$ and $P_n'(x)$ can be evaluated easily, and
 *Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-4|§49.4]], [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Def. §49.3]], [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-2|§49.2]], [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-5|§49.5]]
 
 > [!definition] Definition §49.5: Zonal Harmonics
-> The functions $P_n(\cos\phi)$ on the sphere are called **zonal harmonics**, because their nodal lines, the loci of $P_n(\cos\phi) = 0$, are parallels $\phi = $ const that divide the sphere into zones. $P_n(\cos\phi)$ has $n$ nodal parallels, at the colatitudes $\phi = \arccos x_k$ of the $n$ zeros $x_k$ of $P_n$, and the zones between them are alternately positive and negative.
+> The functions $P_n(\cos\phi)$ on the sphere are called **zonal harmonics**, because their nodal lines, the loci of $P_n(\cos\phi) = 0$, are parallels $\phi =$ const that divide the sphere into zones. $P_n(\cos\phi)$ has $n$ nodal parallels, at the colatitudes $\phi = \arccos x_k$ of the $n$ zeros $x_k$ of $P_n$, and the zones between them are alternately positive and negative.
 >
 > *Powers: 5.9 (text), Figure 14*
 

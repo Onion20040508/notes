@@ -170,7 +170,7 @@ tags: [group-theory, math493]
 > - Topological version: for a continuous action each translation is a homeomorphism with inverse the translation by the inverse, [[§12 Group Actions and Orbit Spaces#^lem-12-2|591 Lemma §12.2]], so the homomorphism lands in the homeomorphisms of X.
 
 > [!example] Example §25.3: Seeing the Permutations
-> **Rotating a triangle.** Let $G = \mathbb{Z}/3\mathbb{Z}$ act on the vertices $X = \{1, 2, 3\}$ of a triangle by rotation, $[k] \star i = $ the vertex $k$ steps further around (so $[1] \star 1 = 2$, $[1] \star 2 = 3$, $[1] \star 3 = 1$). Freezing $g$ and reading off where each vertex goes gives an element of $S_3$ in cycle notation:
+> **Rotating a triangle.** Let $G = \mathbb{Z}/3\mathbb{Z}$ act on the vertices $X = \{1, 2, 3\}$ of a triangle by rotation, $[k] \star i =$ the vertex $k$ steps further around (so $[1] \star 1 = 2$, $[1] \star 2 = 3$, $[1] \star 3 = 1$). Freezing $g$ and reading off where each vertex goes gives an element of $S_3$ in cycle notation:
 >
 > $$
 > \varphi([0]) = e, \qquad \varphi([1]) = (1\,2\,3), \qquad \varphi([2]) = (1\,3\,2).

@@ -73,7 +73,7 @@ A proof is a chain of statements, each true because earlier ones are; the link b
 ^prop-2-1
 
 > [!proof]+ Proof
-> (1) Both sides are true in exactly one row of the truth table, the row $P = $ T, $Q = $ F ([[§2 Implications#^def-2-1|Def. §2.1]], [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]).
+> (1) Both sides are true in exactly one row of the truth table, the row $P =$ T, $Q =$ F ([[§2 Implications#^def-2-1|Def. §2.1]], [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]).
 >
 > (2) Negate both sides of (1): by double negation and De Morgan's law, $P \Rightarrow Q \equiv \neg\neg(P \Rightarrow Q) \equiv \neg(P \wedge \neg Q) \equiv \neg P \vee \neg\neg Q \equiv \neg P \vee Q$.
 >
