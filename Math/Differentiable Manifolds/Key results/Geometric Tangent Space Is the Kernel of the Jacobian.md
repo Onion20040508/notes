@@ -13,8 +13,8 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§7 The Regular Value Theorem#^def-7-2|Definition §7.2: Regular Point and Regular Value]]
 - [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3: Regular Value Theorem]]
-- [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-1|Lemma §20.1: Locality of the Geometric Tangent Space]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Definition §20.1: Geometric Tangent Space]]
+- [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-1|Lemma §20.1: Locality of the Geometric Tangent Space]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-2|Lemma §20.2: The Geometric Tangent Space of a Graph]]
 
 ## Its proof uses (other subjects)
@@ -27,6 +27,7 @@ tags: [differentiable-manifolds, hub]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^ex-20-3|Example §20.3: The Unitary Group]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^cor-20-4|Corollary §20.4: Three Descriptions of the Geometric Tangent Space]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5|Theorem §20.5: The Classical Groups]]
+- [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-7|Theorem §20.7: Dimension of the Geometric Tangent Space]]
 - [[§21 Transversality#^thm-21-1|Theorem §21.1: Preimages of Transverse Level Sets]]
 - [[§21 Transversality#^prop-21-2|Proposition §21.2: Transversality Is the Regular Value Condition]]
 - [[§21 Transversality#^cor-21-3|Corollary §21.3: The Regular Value Theorem as a Special Case]]

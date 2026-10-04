@@ -51,7 +51,7 @@ graph TD
   X3 -.->|8| C1
   X3 -.->|18| C2
   X3 -.->|10| C3
-  X3 -.->|14| C4
+  X3 -.->|16| C4
   X3 -.->|8| C5
   X2 -.->|5| C1
   X2 -.->|6| C2
@@ -137,7 +137,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§3 Continuity and Limits of Functions#^thm-3-3|Theorem §3.3: Quotient of Continuous Functions]] (1)
 
 **[[Linear Algebra]]**
-- [[Fundamental theorem of linear maps]] (7)
+- [[Fundamental theorem of linear maps]] (8)
 - [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (6)
 - [[Invertible ⟺ nonzero determinant]] (5)
 - [[§9 Matrices#^ladr-3-57|Theorem 3.57: Column rank equals row rank]] (4)

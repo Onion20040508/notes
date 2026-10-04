@@ -10,7 +10,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (41), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (13), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (31), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (27)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (34), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (27)
 **Builds on (other subjects):** [[Linear Algebra]] (10), [[Topology]] (21), [[Multivariable Analysis]] (14)
 
 ## Sections
@@ -30,7 +30,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§13 Differentiable Structures#^prop-13-2|Proposition §13.2: Compatibility Is Not an Equivalence Relation]]: 82 later results
-- [[Unique Maximal Atlas|Theorem §13.5: Every Atlas Lies in a Unique Maximal Atlas]]: 81 later results
-- [[§15 Smooth Functions and Smooth Maps#^prop-15-3|Proposition §15.3: The Two Notions of Diffeomorphism Agree]]: 73 later results
-- [[§15 Smooth Functions and Smooth Maps#^lem-15-4|Lemma §15.4: Composition of Smooth Maps]]: 54 later results
+- [[§13 Differentiable Structures#^prop-13-2|Proposition §13.2: Compatibility Is Not an Equivalence Relation]]: 85 later results
+- [[Unique Maximal Atlas|Theorem §13.5: Every Atlas Lies in a Unique Maximal Atlas]]: 84 later results
+- [[§15 Smooth Functions and Smooth Maps#^prop-15-3|Proposition §15.3: The Two Notions of Diffeomorphism Agree]]: 76 later results
+- [[§15 Smooth Functions and Smooth Maps#^lem-15-4|Lemma §15.4: Composition of Smooth Maps]]: 57 later results

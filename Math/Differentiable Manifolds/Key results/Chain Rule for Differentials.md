@@ -16,6 +16,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§23 Derivations and the Abstract Tangent Space#^cor-23-7|Corollary §23.7: Diffeomorphisms Induce Isomorphisms]]
+- [[§24 Coordinate Derivations and the Basis Theorem#^cor-24-9|Corollary §24.9: Smooth Invariance of Dimension]]
 - [[§25 The Differential in Coordinates#^cor-25-3|Corollary §25.3: The Chain Rule in Coordinates]]
 - [[§25 The Differential in Coordinates#^cor-25-4|Corollary §25.4: Change of Coordinates]]
 - [[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|Corollary §26.3: Velocity of a Composite — Computing Differentials by Curves]]

@@ -20,7 +20,7 @@ tags: [differentiable-manifolds, hub]
 - [[§27 Tangent Spaces III꞉ The Cotangent Space#^prop-27-6|Proposition §27.6: The Pairing Is Well Defined and Non-Degenerate]]
 
 ## Used in (Differentiable Manifolds)
-- (not cited later in the course)
+- [[§27 Tangent Spaces III꞉ The Cotangent Space#^thm-27-8|Theorem §27.8: Dimension of the Cotangent Space]]
 
 ## Connections
 - **What it gives.** T*_pM, defined as the dual (T_pM)*, also has a description with no dualizing: I_p/I_p², with the class of f going to df_p. So one could define the cotangent space first and the tangent space as its dual, the order Uribe called in some ways more natural ([[§24 Coordinate Derivations and the Basis Theorem#^rem-24-3|A Derivation Sees Only the First Derivatives]]). It is not cited later in the course.

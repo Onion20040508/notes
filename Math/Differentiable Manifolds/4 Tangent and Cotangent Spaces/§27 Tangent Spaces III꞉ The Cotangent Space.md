@@ -250,6 +250,26 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 ![[m591-13-3.svg]]
 *The three spaces and their three bases. $\Phi$ sends the class of a germ to its differential, so the coordinate classes go to the coordinate covectors, and those are the dual basis of the coordinate derivations. Uribe's $dx^i|_p$ of Lecture 10 and the classes ${[}[x^i - x^i(p)]{]}$ of Problem 3 are the same objects, seen through $\Phi$.*
 
+> [!theorem] Theorem §27.8: Dimension of the Cotangent Space
+> Let $M$ be a smooth $m$-manifold and $p \in M$. Then
+>
+> $$
+> \dim T_p^{\ast}M \;=\; \dim \big(I_p/I_p^2\big) \;=\; \dim T_pM \;=\; m .
+> $$
+>
+> The cotangent space ([[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|Def. §27.1]]) has the same dimension as the tangent space, at every point.
+
+^thm-27-8
+
+> [!proof]+ Proof
+> *(Collected from the results above; not stated as a single theorem in lecture.)* $T_p^{\ast}M = (T_pM)^{\ast}$ is the dual of a space of dimension $m$ (Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-8|§24.8]]), and the dual of a finite-dimensional space has the same dimension (Proposition [[§17 Linear Algebra Toolkit#^prop-17-2|§17.2]]); explicitly, the $m$ covectors $dx^i|_p$ form a basis (Lemma [[§27 Tangent Spaces III꞉ The Cotangent Space#^lem-27-2|§27.2]]). And $I_p/I_p^2$ has the basis of $m$ classes ${[}[x^i - x^i(p)]{]}$ (Proposition [[§27 Tangent Spaces III꞉ The Cotangent Space#^prop-27-5|§27.5]]), or equivalently is isomorphic to $T_p^{\ast}M$ by $\Phi$ (Theorem [[§27 Tangent Spaces III꞉ The Cotangent Space#^thm-27-7|§27.7]]).
+
+^pf-27-8
+
+*Uses:* [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-8|§24.8]], [[§17 Linear Algebra Toolkit#^prop-17-2|§17.2]], [[§27 Tangent Spaces III꞉ The Cotangent Space#^lem-27-2|§27.2]], [[§27 Tangent Spaces III꞉ The Cotangent Space#^prop-27-5|§27.5]], [[§27 Tangent Spaces III꞉ The Cotangent Space#^thm-27-7|§27.7]]
+
+Equal dimension is what makes the isomorphisms of Theorem [[§27 Tangent Spaces III꞉ The Cotangent Space#^thm-27-7|§27.7]] possible, but the dimension count alone does not produce them: any two spaces of dimension $m$ are isomorphic, by choosing bases. What Theorem [[§27 Tangent Spaces III꞉ The Cotangent Space#^thm-27-7|§27.7]] adds is that $\Phi$ needs no choice. Between $T_pM$ and $T_p^{\ast}M$ themselves there is no such choice-free isomorphism, which is why the tangent and cotangent bundles are isomorphic “but not naturally” ([[§32 The Tangent Bundle#The Cotangent Bundle|§32]]).
+
 **Assignment 3, Problem 3.** Part (a) is the well-definedness in Proposition [[§27 Tangent Spaces III꞉ The Cotangent Space#^prop-27-6|§27.6]]. Part (b) is its non-degeneracy, and the “therefore” of (b) is Theorem [[§17 Linear Algebra Toolkit#^thm-17-5|§17.5]], which uses *both* halves: right non-degeneracy bounds $\dim I_p/I_p^2 \le n$, left non-degeneracy gives $n \le \dim I_p/I_p^2$. The submitted solution reaches the isomorphism by another route: it shows $\Phi$ injective by right non-degeneracy and surjective by checking that $\Phi({[}[x^i - x^i(p)]{]})$ is the dual basis — which is part (3) of the theorem.
 
 **Comparison with Lee.** In the text of Chapter 11, Lee defines the cotangent space as the dual $(T_pM)^{\ast}$, motivated as the coordinate-independent replacement for the gradient. The description of this subsection is his Problem 11-4. Part (a) is Proposition [[§27 Tangent Spaces III꞉ The Cotangent Space#^prop-27-4|§27.4]], down to the phrase “vanishes to second order”, and part (b) is Theorem [[§27 Tangent Spaces III꞉ The Cotangent Space#^thm-27-7|§27.7]](1)–(2). There are two differences. First, Lee's $I_p$ consists of smooth functions on all of $M$ vanishing at $p$, not germs, so his version needs bump functions to pass between local and global, as everywhere in his treatment (Proposition [[§23 Derivations and the Abstract Tangent Space#^prop-23-3|§23.3]]). Second, Lee proves the isomorphism directly, showing that $f \mapsto df_p$ vanishes on $I_p^2$ and descends to the quotient, where Assignment 3 goes through a non-degenerate pairing and the pairing theorem. His remark to the problem adds two points: some treatments define $T_p^{\ast}M$ first, as $I_p/I_p^2$, and then $T_pM$ as its dual — the order Uribe called in some ways more natural — and covectors, as classes of functions $M \to \mathbb{R}$, are dual to tangent vectors as classes of curves $\mathbb{R} \to M$ (his Problem 3-8; here Theorem [[§26 Tangent Vectors as Velocities of Curves#^thm-26-2|§26.2]]). The quotient $I_p/I_p^2$ is also the manifold analogue of the Zariski cotangent space of algebraic geometry.

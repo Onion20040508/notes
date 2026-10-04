@@ -5117,6 +5117,22 @@ In every homogeneous space met so far, $\dim G/H = \dim G - \dim H$:
 The first two identifications are proved in \ref{sec:homogeneous}--\ref{sec:GH-topology}; the last two are their complex analogues --- $\Ugp(n+1)$ acts transitively on unit vectors of $\mathbb{C}^{n+1}$ and on complex lines --- and are not proved here. The formula itself is heuristic until quotient manifolds are available, when it becomes a theorem; for now it is a consistency check linking four separate computations.
 \end{rembox}
 
+\subsection{The Dimension of the Geometric Tangent Space}\label{sub:geo-dimension}
+
+\begin{thmbox}[Dimension of the Geometric Tangent Space]\thmlabel{thm:geo-tangent-dimension}
+Let $M = F^{-1}(c) \subseteq \mathbb{R}^{n+k}$ be as in Theorem~\ref{thm:tangent-kernel}, a manifold of dimension $n$. Then for every $p \in M$,
+\[
+\dim T^{\geo}_pM = n = \dim M .
+\]
+The geometric tangent space has the same dimension at every point, and it is the dimension of the manifold.
+\end{thmbox}
+
+\begin{proof}
+\textit{(The last sentence of Theorem~\ref{thm:tangent-kernel}, recorded as a theorem in its own right.)} By Theorem~\ref{thm:tangent-kernel}, $T^{\geo}_pM = \ker F'(p)$. Since $c$ is a regular value, the $k \times (n+k)$ matrix $F'(p)$ has rank $k$, so by rank--nullity $\dim \ker F'(p) = (n + k) - k = n$.
+\end{proof}
+
+The count is the geometric meaning of ``$k$ independent equations in $n + k$ unknowns'': each equation removes one tangent direction, and $n$ remain at every point. Theorem~\ref{thm:tangent-dimension} gives the same number for the abstract tangent space, as it must, since the two spaces are isomorphic (Theorem~\ref{thm:ambient-abstract}).
+
 % ============================================================================
 % SECTION: TRANSVERSALITY
 % ============================================================================
@@ -5986,6 +6002,30 @@ The first claim is Theorem~\ref{thm:tangent-basis}. For the second, $v \mapsto D
 The basis theorem showed that, of the whole Taylor expansion of a germ, a derivation sees only the \emph{linear} term --- ``of the entire Taylor series of the germ, all I care about are the first partials.'' \S\ref{sub:cotangent-germs} says this algebraically: $I_p$ is a maximal ideal, being the kernel of evaluation; $I_p^2$ consists exactly of the germs vanishing to \emph{second} order (Proposition~\ref{prop:second-order}); and $I_p/I_p^2$ is canonically the \emph{cotangent space} $T_p^*M$ of Definition~\ref{def:cotangent}, built with no dualizing at all (Theorem~\ref{thm:cotangent-ideal}). This is the sense in which, as Uribe remarked when he first set out to define the abstract tangent space, ``it is more natural to define the dual'': the cotangent space comes first, and the abstract tangent space is its dual. We follow Lee and do not take that route.
 \end{rembox}
 
+\begin{thmbox}[Dimension of the Tangent Space]\thmlabel{thm:tangent-dimension}
+Let $M$ be a smooth $n$-manifold. Then for every $p \in M$,
+\[
+\dim T_pM = n = \dim M ,
+\]
+the same at every point, and independent of the chart used to compute it.
+\end{thmbox}
+
+\begin{proof}
+\textit{(The last clause of the basis theorem, recorded as a theorem in its own right.)} Any chart $(U, \varphi)$ at $p$ has $n$ coordinate functions, and by Theorem~\ref{thm:tangent-basis} the $n$ derivations $\partial/\partial x^i|_p$ form a basis of $T_pM$. A different chart gives a different basis, but every basis of a finite-dimensional vector space has the same number of elements.
+\end{proof}
+
+This is less obvious than it looks: the space of germs $C^\infty_p(M)$ on which the derivations act is infinite-dimensional, and it is the Hadamard lemma behind the basis theorem that cuts the derivations down to exactly $n$ dimensions.
+
+\begin{corbox}[Smooth Invariance of Dimension]\thmlabel{cor:smooth-invariance-dim}
+If $U \subseteq \mathbb{R}^m$ and $V \subseteq \mathbb{R}^n$ are nonempty open sets and $F : U \to V$ is a diffeomorphism, then $m = n$. Consequently two smooth charts of a smooth manifold at the same point have targets of the same dimension.
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Let $p \in U$. By the chain rule (Theorem~\ref{prop:pushforward-functorial}), $(F^{-1})_{*F(p)} \circ F_{*p}$ and $F_{*p} \circ (F^{-1})_{*F(p)}$ are the pushforwards of the identity maps, hence identities, so $F_{*p} : T_pU \to T_{F(p)}V$ is a linear isomorphism. By Theorem~\ref{thm:tangent-dimension}, applied to the open sets $U$ and $V$ with their identity charts, these spaces have dimensions $m$ and $n$, so $m = n$. For two charts $(U_1, \varphi_1)$ and $(U_2, \varphi_2)$ at $p$ with targets $\mathbb{R}^m$ and $\mathbb{R}^n$, apply this to the transition map $\varphi_2 \circ \varphi_1^{-1} : \varphi_1(U_1 \cap U_2) \to \varphi_2(U_1 \cap U_2)$, a diffeomorphism between nonempty open sets.
+\end{proof}
+
+Compare Theorem~\ref{thm:inv-dim}: the same statement for \emph{homeomorphisms} is true but genuinely hard, needing algebraic topology. For diffeomorphisms the derivative linearizes the problem, and linear algebra finishes it --- one of the first payoffs of having tangent spaces.
+
 
 % ============================================================================
 % Lecture 9 (Mon Sep 21, 2026), end
@@ -6644,6 +6684,20 @@ I_p/I_p^2 \arrow[r, "\Phi", "\cong"'] & T_p^*M \arrow[r, dash, "\text{dual to}"]
 \end{center}
 
 The three spaces and their three bases. $\Phi$ sends the class of a germ to its differential, so the coordinate classes go to the coordinate covectors, and those are the dual basis of the coordinate derivations. Uribe's $dx^i|_p$ of Lecture 10 and the classes $[[x^i - x^i(p)]]$ of Problem~3 are the same objects, seen through $\Phi$.
+
+\begin{thmbox}[Dimension of the Cotangent Space]\thmlabel{thm:cotangent-dimension}
+Let $M$ be a smooth $m$-manifold and $p \in M$. Then
+\[
+\dim T_p^*M \;=\; \dim \big(I_p/I_p^2\big) \;=\; \dim T_pM \;=\; m .
+\]
+The cotangent space has the same dimension as the tangent space, at every point.
+\end{thmbox}
+
+\begin{proof}
+\textit{(Collected from the results above; not stated as a single theorem in lecture.)} $T_p^*M = (T_pM)^*$ is the dual of a space of dimension $m$ (Theorem~\ref{thm:tangent-dimension}), and the dual of a finite-dimensional space has the same dimension (Proposition~\ref{prop:dual-basis}); explicitly, the $m$ covectors $dx^i|_p$ form a basis (Lemma~\ref{lem:df-coords}). And $I_p/I_p^2$ has the basis of $m$ classes $[[x^i - x^i(p)]]$ (Proposition~\ref{prop:ideal-basis}), or equivalently is isomorphic to $T_p^*M$ by $\Phi$ (Theorem~\ref{thm:cotangent-ideal}).
+\end{proof}
+
+Equal dimension is what makes the isomorphisms of Theorem~\ref{thm:cotangent-ideal} possible, but the dimension count alone does not produce them: any two spaces of dimension $m$ are isomorphic, by choosing bases. What Theorem~\ref{thm:cotangent-ideal} adds is that $\Phi$ needs no choice. Between $T_pM$ and $T_p^*M$ themselves there is no such choice-free isomorphism, which is why the tangent and cotangent bundles are isomorphic ``but not naturally'' (\ref{sub:cotangent-bundle}).
 
 \textbf{Assignment 3, Problem 3.} Part (a) is the well-definedness in Proposition~\ref{prop:cotangent-pairing}. Part (b) is its non-degeneracy, and the ``therefore'' of (b) is Theorem~\ref{thm:pairing}, which uses \emph{both} halves: right non-degeneracy bounds $\dim I_p/I_p^2 \le n$, left non-degeneracy gives $n \le \dim I_p/I_p^2$. The submitted solution reaches the isomorphism by another route: it shows $\Phi$ injective by right non-degeneracy and surjective by checking that $\Phi([[x^i - x^i(p)]])$ is the dual basis --- which is part (3) of the theorem.
 

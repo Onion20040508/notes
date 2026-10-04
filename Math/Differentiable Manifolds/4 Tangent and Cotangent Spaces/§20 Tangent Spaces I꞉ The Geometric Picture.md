@@ -337,3 +337,25 @@ Left and right multiplication by $g$ both carry $T^{\mathrm{geo}}_IG$ isomorphic
 > The first two identifications are proved in [[§11 Homogeneous Spaces|§11]]–[[§12 The Topology of G∕H and Real Grassmannians|§12]]; the last two are their complex analogues — $\mathrm{U}(n+1)$ acts transitively on unit vectors of $\mathbb{C}^{n+1}$ and on complex lines — and are not proved here. The formula itself is heuristic until quotient manifolds are available, when it becomes a theorem; for now it is a consistency check linking four separate computations.
 
 ^rem-20-9
+
+## The Dimension of the Geometric Tangent Space
+
+> [!theorem] Theorem §20.7: Dimension of the Geometric Tangent Space
+> Let $M = F^{-1}(c) \subseteq \mathbb{R}^{n+k}$ be as in Theorem [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]], a manifold of dimension $n$. Then for every $p \in M$,
+>
+> $$
+> \dim T^{\mathrm{geo}}_pM = n = \dim M .
+> $$
+>
+> The geometric tangent space ([[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Def. §20.1]]) has the same dimension at every point, and it is the dimension of the manifold.
+
+^thm-20-7
+
+> [!proof]+ Proof
+> *(The last sentence of Theorem [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]], recorded as a theorem in its own right.)* By Theorem [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]], $T^{\mathrm{geo}}_pM = \ker F'(p)$. Since $c$ is a regular value, the $k \times (n+k)$ matrix $F'(p)$ has rank $k$, so by rank–nullity ([[Fundamental theorem of linear maps|LADR 3.21]]) $\dim \ker F'(p) = (n + k) - k = n$.
+
+^pf-20-7
+
+*Uses:* [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[Fundamental theorem of linear maps|LADR 3.21]]
+
+The count is the geometric meaning of “$k$ independent equations in $n + k$ unknowns”: each equation removes one tangent direction, and $n$ remain at every point. Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-8|§24.8]] gives the same number for the abstract tangent space, as it must, since the two spaces are isomorphic (Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-6|§24.6]]).

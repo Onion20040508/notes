@@ -13,8 +13,8 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^def-20-1|Definition §20.1: Geometric Tangent Space]]
 - [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|Theorem §20.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
-- [[§22 Tangent Spaces II꞉ Germs#^prop-22-1|Proposition §22.1: Basic Properties of D_v]]
 - [[§22 Tangent Spaces II꞉ Germs#^def-22-1|Definition §22.1: The Directional Derivative Attached to a Tangent Vector]]
+- [[§22 Tangent Spaces II꞉ Germs#^prop-22-1|Proposition §22.1: Basic Properties of D_v]]
 - [[§22 Tangent Spaces II꞉ Germs#^prop-22-2|Proposition §22.2: D_v Determines v]]
 - [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|Theorem §24.5: Basis Theorem]]
 

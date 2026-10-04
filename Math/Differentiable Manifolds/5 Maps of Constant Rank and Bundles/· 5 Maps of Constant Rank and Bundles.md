@@ -31,7 +31,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§28 Local Diffeomorphisms#^thm-28-1|Theorem §28.1: Inverse Function Theorem]]: 45 later results
+- [[§28 Local Diffeomorphisms#^thm-28-1|Theorem §28.1: Inverse Function Theorem]]: 46 later results
 - [[Local Diffeomorphism Criterion|Theorem §28.2: Local Diffeomorphisms Are Detected by the Differential]]: 15 later results
 - [[§29 Submersions#^prop-29-1|Proposition §29.1: Dimension Constraints]]: 13 later results
 - [[§29 Submersions#^lem-29-3|Lemma §29.3: Diffeomorphisms onto Open Sets Are Charts]]: 13 later results

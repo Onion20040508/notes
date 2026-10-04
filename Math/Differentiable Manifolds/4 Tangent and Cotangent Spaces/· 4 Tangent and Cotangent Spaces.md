@@ -7,9 +7,9 @@ tags: [chapter, differentiable-manifolds]
 # 4 Tangent and Cotangent Spaces
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (15), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (4), [[· 3 Smooth Structures|3 Smooth Structures]] (31)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (16), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (4), [[· 3 Smooth Structures|3 Smooth Structures]] (34)
 **Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (42)
-**Builds on (other subjects):** [[Linear Algebra]] (14), [[Topology]] (3), [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (11)
+**Builds on (other subjects):** [[Linear Algebra]] (16), [[Topology]] (3), [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (11)
 
 ## Sections
 - [[§20 Tangent Spaces I꞉ The Geometric Picture]]
@@ -34,7 +34,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§22 Tangent Spaces II꞉ Germs#^prop-22-3|Proposition §22.3: Agreement Near a Point Is an Equivalence Relation]]: 59 later results
-- [[§22 Tangent Spaces II꞉ Germs#^prop-22-4|Proposition §22.4: C_p^∞(M) Is an ℝ-Algebra]]: 59 later results
-- [[§23 Derivations and the Abstract Tangent Space#^prop-23-3|Proposition §23.3: Germ Derivations and Global Derivations]]: 59 later results
-- [[§23 Derivations and the Abstract Tangent Space#^prop-23-4|Proposition §23.4: Properties of the Pullback]]: 53 later results
+- [[§22 Tangent Spaces II꞉ Germs#^prop-22-3|Proposition §22.3: Agreement Near a Point Is an Equivalence Relation]]: 62 later results
+- [[§22 Tangent Spaces II꞉ Germs#^prop-22-4|Proposition §22.4: C_p^∞(M) Is an ℝ-Algebra]]: 62 later results
+- [[§23 Derivations and the Abstract Tangent Space#^prop-23-3|Proposition §23.3: Germ Derivations and Global Derivations]]: 62 later results
+- [[§23 Derivations and the Abstract Tangent Space#^prop-23-4|Proposition §23.4: Properties of the Pullback]]: 56 later results

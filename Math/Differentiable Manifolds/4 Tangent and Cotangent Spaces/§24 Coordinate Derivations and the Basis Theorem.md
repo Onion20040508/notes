@@ -282,3 +282,40 @@ $$
 > The basis theorem showed that, of the whole Taylor expansion of a germ, a derivation sees only the *linear* term — “of the entire Taylor series of the germ, all I care about are the first partials.” [[§27 Tangent Spaces III꞉ The Cotangent Space#The Cotangent Space from Germs|§27, The Cotangent Space from Germs]] says this algebraically: $I_p$ is a maximal ideal, being the kernel of evaluation; $I_p^2$ consists exactly of the germs vanishing to *second* order (Proposition [[§27 Tangent Spaces III꞉ The Cotangent Space#^prop-27-4|§27.4]]); and $I_p/I_p^2$ is canonically the *cotangent space* $T_p^{\ast}M$ of Definition [[§27 Tangent Spaces III꞉ The Cotangent Space#^def-27-1|§27.1]], built with no dualizing at all (Theorem [[§27 Tangent Spaces III꞉ The Cotangent Space#^thm-27-7|§27.7]]). This is the sense in which, as Uribe remarked when he first set out to define the abstract tangent space, “it is more natural to define the dual”: the cotangent space comes first, and the abstract tangent space is its dual. We follow Lee and do not take that route.
 
 ^rem-24-3
+
+> [!theorem] Theorem §24.8: Dimension of the Tangent Space
+> Let $M$ be a smooth $n$-manifold. Then for every $p \in M$,
+>
+> $$
+> \dim T_pM = n = \dim M ,
+> $$
+>
+> the same at every point, and independent of the chart used to compute it.
+
+^thm-24-8
+
+> [!proof]+ Proof
+> *(The last clause of the basis theorem, recorded as a theorem in its own right.)* Any chart $(U, \varphi)$ at $p$ has $n$ coordinate functions ([[§24 Coordinate Derivations and the Basis Theorem#^def-24-1|Def. §24.1]]), and by Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|§24.5]] the $n$ derivations $\partial/\partial x^i|_p$ form a basis of $T_pM$. A different chart gives a different basis, but every basis of a finite-dimensional vector space has the same number of elements ([[§6 Dimension#^ladr-2-34|LADR 2.34]]).
+
+^pf-24-8
+
+*Uses:* [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|§24.5]], [[§24 Coordinate Derivations and the Basis Theorem#^def-24-1|Def. §24.1]], [[§6 Dimension#^ladr-2-34|LADR 2.34]]
+
+This is less obvious than it looks: the space of germs $C^\infty_p(M)$ ([[§22 Tangent Spaces II꞉ Germs#^def-22-3|Def. §22.3]]) on which the derivations act is infinite-dimensional, and it is the Hadamard lemma ([[§24 Coordinate Derivations and the Basis Theorem#^lem-24-2|§24.2]]) behind the basis theorem that cuts the derivations down to exactly $n$ dimensions.
+
+> [!theorem] Corollary §24.9: Smooth Invariance of Dimension
+> If $U \subseteq \mathbb{R}^m$ and $V \subseteq \mathbb{R}^n$ are nonempty open sets and $F : U \to V$ is a diffeomorphism ([[§13 Differentiable Structures#^def-13-3|Def. §13.3]]), then $m = n$. Consequently two smooth charts ([[§15 Smooth Functions and Smooth Maps#^def-15-1|Def. §15.1]]) of a smooth manifold at the same point have targets of the same dimension.
+
+^cor-24-9
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* Let $p \in U$. By the chain rule (Theorem [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]]), $(F^{-1})_{\ast F(p)} \circ F_{\ast p}$ and $F_{\ast p} \circ (F^{-1})_{\ast F(p)}$ are the pushforwards of the identity maps, hence identities, so $F_{\ast p} : T_pU \to T_{F(p)}V$ is a linear isomorphism. By Theorem [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-8|§24.8]], applied to the open sets $U$ and $V$ with their identity charts, these spaces have dimensions $m$ and $n$, so $m = n$. For two charts $(U_1, \varphi_1)$ and $(U_2, \varphi_2)$ at $p$ with targets $\mathbb{R}^m$ and $\mathbb{R}^n$, apply this to the transition map $\varphi_2 \circ \varphi_1^{-1} : \varphi_1(U_1 \cap U_2) \to \varphi_2(U_1 \cap U_2)$, a diffeomorphism between nonempty open sets.
+
+^pf-24-9
+
+*Uses:* [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]], [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-8|§24.8]], [[§13 Differentiable Structures#^def-13-3|Def. §13.3]]
+
+> [!remark]- Connections
+> - The topological statement, true but hard: [[§2 Topological Manifolds#^thm-2-1|Topological Invariance of Dimension, §2.1]].
+
+Compare Theorem [[§2 Topological Manifolds#^thm-2-1|§2.1]]: the same statement for *homeomorphisms* is true but genuinely hard, needing algebraic topology. For diffeomorphisms the derivative linearizes the problem, and linear algebra finishes it — one of the first payoffs of having tangent spaces.
