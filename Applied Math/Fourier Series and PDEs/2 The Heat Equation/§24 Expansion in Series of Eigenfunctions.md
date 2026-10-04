@@ -68,7 +68,7 @@ $$
 *Uses:* [[§23 Sturm–Liouville Problems#^thm-23-2|§23.2]], [[§25 More on Uniform Convergence#^thm-25-1|451 Thm. §25.1]]
 
 > [!remark]- Connections
-> - The same formula in a finite-dimensional inner product space: the coefficient of $\mathbf{y}$ along an orthogonal basis vector $\mathbf{u}_j$ is $\langle\mathbf{y}, \mathbf{u}_j\rangle/\langle\mathbf{u}_j, \mathbf{u}_j\rangle$, [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]]; here the inner product is $\langle f, g\rangle_p = \int_l^r fgp\,dx$. In a Hilbert space, for an orthonormal set: [[§20 Orthonormal Sets and Bases#^lem-20-7|556 Lem. §20.7]].
+> - The same formula in a finite-dimensional inner product space: the coefficient of $\mathbf{y}$ along an orthogonal basis vector $\mathbf{u}_j$ is $\langle\mathbf{y}, \mathbf{u}_j\rangle/\langle\mathbf{u}_j, \mathbf{u}_j\rangle$, [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]]; here the inner product is $\langle f, g\rangle_p = \int_l^r fgp\,dx$. In a Hilbert space, for an orthonormal set: [[§24 Orthonormal Sets and Bases#^lem-24-7|556 Lem. §24.7]].
 
 > [!definition] Definition §24.1: Eigenfunction Expansion; Generalized Fourier Coefficients
 > Let $\phi_1, \phi_2, \ldots$ be the eigenfunctions of a regular Sturm–Liouville problem (1)–(3) and $f$ a sectionally continuous function on $l < x < r$. The numbers
@@ -113,7 +113,7 @@ $$
 *Powers omits the proof. For $s = p = 1$, $q = 0$ the theorem contains the convergence of Fourier sine and cosine series, [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]], proved in [[§12★ Proof of Convergence#^thm-12-4|Theorem §12.4]] and [[§12★ Proof of Convergence#^cor-12-5|Corollary §12.5]]; the general case is not proved in the vault.*
 
 > [!remark]- Connections
-> - The mean-square counterpart: the normalized eigenfunctions (remark below) form an orthonormal basis of the weighted $L^2$ space in the sense of [[§20 Orthonormal Sets and Bases#^def-20-4|556 Def. §20.4]], characterized by Parseval's equality in [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]]; the case $\phi'' + \lambda^2\phi = 0$ with periodic conditions is the Fourier basis, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]].
+> - The mean-square counterpart: the normalized eigenfunctions (remark below) form an orthonormal basis of the weighted $L^2$ space in the sense of [[§24 Orthonormal Sets and Bases#^def-24-4|556 Def. §24.4]], characterized by Parseval's equality in [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]]; the case $\phi'' + \lambda^2\phi = 0$ with periodic conditions is the Fourier basis, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]].
 > - The uniform-convergence clause has the form of the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], for the series of normalized eigenfunctions, which are uniformly bounded for a regular problem.
 > - Used in Electromagnetism: expanding boundary potentials in separated eigenfunctions — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]].
 
@@ -132,7 +132,7 @@ Notice the similarity to the Fourier series convergence theorem: at a jump the s
 > \int_l^r f^2(x)p(x)\,dx = \sum_{n=1}^\infty a_nc_n^2 = \sum_{n=1}^\infty b_n^2 ,
 > $$
 >
-> from which $c_n\sqrt{a_n} = b_n \to 0$. The inequality $\sum b_n^2 \le \int f^2p$ (Bessel's inequality) holds for any orthonormal set and is [[§20 Orthonormal Sets and Bases#^thm-20-5|556 Thm. §20.5]]; equality for every $f$ is the statement that the set is complete. For example, for $\phi'' + \lambda^2\phi = 0$, $\phi'(0) = \phi'(1) = 0$ the normalized eigenfunctions are $\psi_0 = 1$ and $\psi_n = \sqrt2\cos(n\pi x)$, $n \ge 1$.
+> from which $c_n\sqrt{a_n} = b_n \to 0$. The inequality $\sum b_n^2 \le \int f^2p$ (Bessel's inequality) holds for any orthonormal set and is [[§24 Orthonormal Sets and Bases#^thm-24-5|556 Thm. §24.5]]; equality for every $f$ is the statement that the set is complete. For example, for $\phi'' + \lambda^2\phi = 0$, $\phi'(0) = \phi'(1) = 0$ the normalized eigenfunctions are $\psi_0 = 1$ and $\psi_n = \sqrt2\cos(n\pi x)$, $n \ge 1$.
 
 ^rem-24-1
 

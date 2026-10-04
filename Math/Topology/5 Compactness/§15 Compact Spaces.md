@@ -42,7 +42,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 > [!remark]- Connections
 > - MATH 451 versions on $[a,b]$: [[Extreme Value Theorem]], [[§19 Uniform Continuity#^thm-19-1|Uniform Continuity on Closed Bounded Intervals]].
-> - The same definition for subsets of a normed or metric space: [[§15 Compactness and the Unit Ball#^def-15-2|556 Def. §15.2]], shown there to be equivalent to sequential compactness ([[§15 Compactness and the Unit Ball#^thm-15-1|556 Thm. §15.1]]).
+> - The same definition for subsets of a normed or metric space: [[§18 Compactness and the Unit Ball#^def-18-2|556 Def. §18.2]], shown there to be equivalent to sequential compactness ([[§18 Compactness and the Unit Ball#^thm-18-1|556 Thm. §18.1]]).
 
 > [!example] Example §15.1
 > $\mathbb{R}$ is not compact. $\mathcal{A} = \{(n, n+3) \mid n \in \mathbb{Z}\}$ is an open covering of $\mathbb{R}$, but no finite subcover covers $\mathbb{R}$.

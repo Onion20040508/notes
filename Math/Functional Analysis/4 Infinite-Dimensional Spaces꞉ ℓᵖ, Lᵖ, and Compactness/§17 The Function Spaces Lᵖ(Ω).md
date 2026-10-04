@@ -2,10 +2,10 @@
 type: section
 subject: "[[Functional Analysis]]"
 chapter: 4
-section: 14
+section: 17
 tags: [functional-analysis, math556]
 ---
-← [[§13 Minkowski's Inequality and the Spaces ℓᵖ]] · ↑ [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] · [[§15 Compactness and the Unit Ball]] →
+← [[§16 Minkowski's Inequality and the Spaces ℓᵖ]] · ↑ [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] · [[§18 Compactness and the Unit Ball]] →
 
 *Stage: norms — Thread: completeness. Function spaces; $L^p$ as the completion of $C[a,b]$.*
 
@@ -25,9 +25,9 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 > ![[m556-14-1.svg]]
 > *A left-endpoint Riemann sum for $|f|$ on $[a,b]$: rectangles of width $\Delta x_i$ and height $|f(x_i)|$ under the graph $y = |f(x)|$.*
 
-^rem-14-1
+^rem-17-1
 
-> [!definition] Definition §14.1: $L^p(\Omega)$, $L^\infty(\Omega)$ — working definition
+> [!definition] Definition §17.1: $L^p(\Omega)$, $L^\infty(\Omega)$ — working definition
 > Let $\Omega \subset \mathbb{R}^n$ be a domain. For $1 \le p < \infty$,
 >
 > $$
@@ -44,106 +44,106 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 >
 > *Lax: §5.1, example (f)*
 
-^def-14-1
+^def-17-1
 
 > [!remark]- Connections
 > - The rigorous definitions: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5|551 Def. §19.5]] ($L^p$, measurable functions) and [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|551 Def. §19.6]] ($L^\infty$, essential supremum).
-> - The sequence analogue: [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^def-13-1|Def. §13.1]].
+> - The sequence analogue: [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^def-16-1|Def. §16.1]].
 
 > [!remark] Remark: What “Integrable” Means Here
 > On the board the definition read “$f$ integrable on $\Omega$”, and Wu deliberately left “integrable” unspecified. Rigorously the condition is that $f$ be Lebesgue measurable with finite integral of $|f|^p$; for $p > 1$ this does not require $\int_\Omega |f| < \infty$ ($1/x$ on $(1, \infty)$ is in $L^2$ but not in $L^1$). Functions agreeing outside a set of measure zero are identified, and $\|f\|_{L^\infty}$ is the [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|essential supremum]]; without the identification, positivity of the norm fails ($f = 0$ except at one point has $\|f\|_p = 0$). Since MATH 551 is not a prerequisite for this course, she asked us to take “integrable” as “anything you will meet,” with continuous functions as the safe case (continuous on a compact $\Omega$ implies Riemann integrable), and said the theory could be made rigorous later. The full treatment — Lebesgue integral, $L^p$, [[Hölder's Inequality|Hölder]], [[Minkowski's Inequality|Minkowski]], [[Riesz–Fischer Theorem|Riesz–Fischer]], [[Dominated Convergence Theorem|dominated]] and [[Monotone Convergence Theorem (Lebesgue)|monotone convergence]], [[Fatou's Lemma|Fatou]] — is in the MATH 551 notes, Chapters on [[· 4 Integration Theory|Lebesgue integration]] and [[· 6 Lᵖ Spaces|Lᵖ spaces]], and that is the version to rely on. (For those without it: chapter 2 of the posted reference notes.)
 
-^rem-14-2
+^rem-17-2
 
-> [!theorem] Theorem §14.1: Hölder's Inequality for Functions
+> [!theorem] Theorem §17.1: Hölder's Inequality for Functions
 > Let $1 \le p \le \infty$ and $q$ its conjugate. For $f \in L^p(\Omega)$, $g \in L^q(\Omega)$,
 >
 > $$
 > \int_\Omega |f(x) g(x)|\, dx \le \|f\|_{L^p}\, \|g\|_{L^q}.
 > $$
 
-^thm-14-1
+^thm-17-1
 
 > [!proof]+ Proof
-> Not proved in lecture; “the same idea, exactly” as Theorem [[§12 Hölder's Inequality for Sequences#^thm-12-1|§12.1]], with the integral in place of the sum: normalize, apply [[§11 Means and Young's Inequality#^lem-11-3|Young]] pointwise, integrate. A full proof is in the MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *Hölder's Inequality* ([[Hölder's Inequality|Theorem: Hölder's Inequality]]).
+> Not proved in lecture; “the same idea, exactly” as Theorem [[§15 Hölder's Inequality for Sequences#^thm-15-1|§15.1]], with the integral in place of the sum: normalize, apply [[§14 Means and Young's Inequality#^lem-14-3|Young]] pointwise, integrate. A full proof is in the MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *Hölder's Inequality* ([[Hölder's Inequality|Theorem: Hölder's Inequality]]).
 
-^pf-14-1
+^pf-17-1
 
-*Uses:* [[§12 Hölder's Inequality for Sequences#^thm-12-1|§12.1]], [[§11 Means and Young's Inequality#^lem-11-3|§11.3]], [[Hölder's Inequality|551 §19.5]]
+*Uses:* [[§15 Hölder's Inequality for Sequences#^thm-15-1|§15.1]], [[§14 Means and Young's Inequality#^lem-14-3|§14.3]], [[Hölder's Inequality|551 §19.5]]
 
 > [!remark]- Connections
-> - Home: [[Hölder's Inequality|551 §19.5]]. The version for continuous functions on $[a,b]$ is proved here as [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-7|§14.7]] (HW3).
-> - With $p = q = 2$ it makes the $L^2$ inner product converge: [[§16 Definition and Examples#^ex-16-3|Ex. §16.3]].
+> - Home: [[Hölder's Inequality|551 §19.5]]. The version for continuous functions on $[a,b]$ is proved here as [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-7|§17.7]] (HW3).
+> - With $p = q = 2$ it makes the $L^2$ inner product converge: [[§20 Definition and Examples#^ex-20-3|Ex. §20.3]].
 
-> [!theorem] Theorem §14.2: Minkowski's Inequality for Functions
+> [!theorem] Theorem §17.2: Minkowski's Inequality for Functions
 > For $1 \le p \le \infty$ and $f, g \in L^p(\Omega)$,
 >
 > $$
 > \|f + g\|_{L^p} \le \|f\|_{L^p} + \|g\|_{L^p}.
 > $$
 
-^thm-14-2
+^thm-17-2
 
 > [!proof]+ Proof
-> Not proved in lecture; as for Theorem [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-1|§13.1]], with the same truncation issue handled by first assuming $\|f+g\|_p < \infty$ (which follows from $|f+g|^p \le 2^{p-1}(|f|^p + |g|^p)$). A full proof is in the MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *$L^p$ is a Normed Linear Space* ([[Minkowski's Inequality|Theorem: Minkowski's Inequality]], with corollaries for [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-11|finite sums]] and [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-12|series]]).
+> Not proved in lecture; as for Theorem [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1|§16.1]], with the same truncation issue handled by first assuming $\|f+g\|_p < \infty$ (which follows from $|f+g|^p \le 2^{p-1}(|f|^p + |g|^p)$). A full proof is in the MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *$L^p$ is a Normed Linear Space* ([[Minkowski's Inequality|Theorem: Minkowski's Inequality]], with corollaries for [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-11|finite sums]] and [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-12|series]]).
 
-^pf-14-2
+^pf-17-2
 
-*Uses:* [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-1|§13.1]], [[Minkowski's Inequality|551 §19.9]]
+*Uses:* [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1|§16.1]], [[Minkowski's Inequality|551 §19.9]]
 
 > [!remark]- Connections
-> - Home: [[Minkowski's Inequality|551 §19.9]]; with it, $L^p$ is a normed linear space, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|551 §19.10]]. The version for continuous functions on $[a,b]$ is Part 1 of the proof of [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]] (HW3).
+> - Home: [[Minkowski's Inequality|551 §19.9]]; with it, $L^p$ is a normed linear space, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|551 §19.10]]. The version for continuous functions on $[a,b]$ is Part 1 of the proof of [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]] (HW3).
 
 ## Completeness and Density
 
-> [!theorem] Theorem §14.3: $L^p(\Omega)$ and $L^\infty(\Omega)$ are Banach Spaces
+> [!theorem] Theorem §17.3: $L^p(\Omega)$ and $L^\infty(\Omega)$ are Banach Spaces
 > For $1 \le p \le \infty$, $(L^p(\Omega), \|\cdot\|_{L^p})$ is a complete normed linear space.
 
-^thm-14-3
+^thm-17-3
 
 > [!proof]+ Proof
-> Deferred: Wu skipped the proof because it needs real-analysis tools (a candidate limit must be built from an almost-everywhere convergent subsequence, and [[Monotone Convergence Theorem (Lebesgue)|monotone]]/[[Dominated Convergence Theorem|dominated convergence]] used to close the argument). The plan is the same as for $\ell^p$ ([[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|§13.5]]) — find the candidate, then prove convergence — but the candidate is harder to produce. The theorem is Riesz–Fischer; a full proof is in the MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *[[Riesz–Fischer Theorem|The Riesz–Fischer Theorem]]*.
+> Deferred: Wu skipped the proof because it needs real-analysis tools (a candidate limit must be built from an almost-everywhere convergent subsequence, and [[Monotone Convergence Theorem (Lebesgue)|monotone]]/[[Dominated Convergence Theorem|dominated convergence]] used to close the argument). The plan is the same as for $\ell^p$ ([[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|§16.5]]) — find the candidate, then prove convergence — but the candidate is harder to produce. The theorem is Riesz–Fischer; a full proof is in the MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *[[Riesz–Fischer Theorem|The Riesz–Fischer Theorem]]*.
 
-^pf-14-3
+^pf-17-3
 
 *Uses:* [[Riesz–Fischer Theorem|551 §19.18]]
 
 > [!remark]- Connections
 > - Home: [[Riesz–Fischer Theorem|551 §19.18]] (stated there for $1 \le p \le \infty$).
-> - Used in [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]] (R2); $L^2$ is a Hilbert space: [[§17 Cauchy–Schwarz and the Induced Norm#^ex-17-1|Ex. §17.1]].
+> - Used in [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]] (R2); $L^2$ is a Hilbert space: [[§21 Cauchy–Schwarz and the Induced Norm#^ex-21-1|Ex. §21.1]].
 
-> [!theorem] Theorem §14.4: Density of Smooth Functions
+> [!theorem] Theorem §17.4: Density of Smooth Functions
 > For $1 \le p < \infty$, $C_c^\infty(\Omega)$, the smooth functions with compact support in $\Omega$, is dense in $L^p(\Omega)$: for every $f \in L^p(\Omega)$ and $\varepsilon > 0$ there is $\varphi \in C_c^\infty(\Omega)$ with $\|f - \varphi\|_{L^p} < \varepsilon$.
 
-^thm-14-4
+^thm-17-4
 
 > [!proof]+ Proof
 > Deferred. Wu said she would look for a proof that avoids heavy measure theory and present it next lecture if one is available. (The MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *Density and Separability*, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|prove]] that simple functions, step functions, and compactly supported continuous functions are dense in $L^p$ for $1 \le p < \infty$; smoothing by convolution with a $C^\infty$ bump takes it the rest of the way to $C_c^\infty$.)
 
-^pf-14-4
+^pf-17-4
 
 *Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 §19.19]]
 
 > [!remark]- Connections
 > - Home of the density results: [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 §19.19]] — its (iii), $C_c$ dense, is the form needed where compact support matters; the $L^1$ case is [[Continuous Functions of Compact Support are Dense in L¹|551 §16.7]].
-> - Cited in [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]] (R3), [[§17 Cauchy–Schwarz and the Induced Norm#^ex-17-2|Ex. §17.2]], and [[§20 Orthonormal Sets and Bases#^prop-20-16|§20.16]] (separability of $L^p$).
+> - Cited in [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]] (R3), [[§21 Cauchy–Schwarz and the Induced Norm#^ex-21-2|Ex. §21.2]], and [[§25 Sequence and Function Spaces#^prop-25-4|§25.4]] (separability of $L^p$).
 
-> [!theorem] Proposition §14.5: Continuous Functions are Not Dense in $L^\infty$
+> [!theorem] Proposition §17.5: Continuous Functions are Not Dense in $L^\infty$
 > $C(\Omega)$ is not dense in $L^\infty(\Omega)$.
 
-^prop-14-5
+^prop-17-5
 
 > [!proof]+ Proof
 > Take $\Omega = [0,1]$ and the step function $f = \chi_{[1/2, 1]}$, i.e. $f(x) = 0$ for $x < 1/2$ and $f(x) = 1$ for $x \ge 1/2$; $f$ is bounded, so $f \in L^\infty[0,1]$. We claim $\|f - g\|_{L^\infty} \ge 1/2$ for every $g \in C[0,1]$, so no sequence of continuous functions converges to $f$ in $L^\infty$. Suppose instead $\|f - g\|_{L^\infty} = \sup_x |f(x) - g(x)| < 1/2$ for some continuous $g$. Then for $x < 1/2$, $|g(x)| = |f(x) - g(x)| < 1/2$, and for $x \ge 1/2$, $|g(x) - 1| < 1/2$, so $g(x) > 1/2$. By continuity of $g$ at $1/2$, $g(1/2) = \lim_{x \to 1/2^-} g(x) \le 1/2$, while $g(1/2) > 1/2$ from the second condition: a contradiction. (With the Lebesgue definition of $L^\infty$ the same argument works after replacing “for all $x$” by “for almost every $x$” and using that a continuous function satisfying a strict inequality almost everywhere on an interval satisfies the non-strict one everywhere on it.)
 >
-> Alternatively, as Wu suggested: $C[0,1]$ with the supremum norm is complete (Theorem [[§9 Completeness#^thm-9-1|§9.1]]), hence a closed subspace of $L^\infty[0,1]$ (Lemma [[§9 Completeness#^lem-9-2|§9.2]]), and a closed proper subspace is not dense; $f$ above shows the inclusion is proper.
+> Alternatively, as Wu suggested: $C[0,1]$ with the supremum norm is complete (Theorem [[§11 Completeness#^thm-11-1|§11.1]]), hence a closed subspace of $L^\infty[0,1]$ (Lemma [[§11 Completeness#^lem-11-2|§11.2]]), and a closed proper subspace is not dense; $f$ above shows the inclusion is proper.
 
-^pf-14-5
+^pf-17-5
 
-*Uses:* [[§14 The Function Spaces Lᵖ(Ω)#^def-14-1|Def. §14.1]], [[§8 Normed Linear Spaces#^def-8-7|Def. §8.7]], [[§9 Completeness#^thm-9-1|§9.1]], [[§9 Completeness#^lem-9-2|§9.2]]
+*Uses:* [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|Def. §17.1]], [[§10 Normed Linear Spaces#^def-10-7|Def. §10.7]], [[§11 Completeness#^thm-11-1|§11.1]], [[§11 Completeness#^lem-11-2|§11.2]]
 
 ![[m556-14-3.svg]]
-*Why the step $f = \chi_{[1/2,1]}$ has no uniform approximation: a continuous $g$ with $\|f - g\|_{L^\infty} < \tfrac12$ would have to stay in the open gray band around $f$, below $\tfrac12$ on $[0, \tfrac12)$ and above $\tfrac12$ on $[\tfrac12, 1]$. Being continuous, $g$ must reach the level $\tfrac12$, and wherever it does it leaves the band (red). Compare the ramps of [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]], which do approach a step in $L^p$.*
+*Why the step $f = \chi_{[1/2,1]}$ has no uniform approximation: a continuous $g$ with $\|f - g\|_{L^\infty} < \tfrac12$ would have to stay in the open gray band around $f$, below $\tfrac12$ on $[0, \tfrac12)$ and above $\tfrac12$ on $[\tfrac12, 1]$. Being continuous, $g$ must reach the level $\tfrac12$, and wherever it does it leaves the band (red). Compare the ramps of [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]], which do approach a step in $L^p$.*
 
 > [!remark]- Connections
 > - The same example in Measure Theory, where the $L^p$ approximation chain breaks at $p = \infty$: [[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-4|551 Remark §19]] (The Approximation Chain for $L^p$); a uniform limit of continuous functions is continuous, [[§24 Uniform Convergence#^thm-24-2|451 §24.2]].
@@ -151,16 +151,16 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 > [!remark] Remark
 > The failure at $p = \infty$ is the first sign that $L^\infty$ behaves differently from the other $L^p$: uniform approximation cannot smooth out a jump. The pattern “true for $1 \le p < \infty$, false for $p = \infty$” will recur, e.g. in identifying dual spaces.
 
-^rem-14-3
+^rem-17-3
 
 ## The Completion of C[a,b] in the Lᵖ Norm
 
-> [!theorem] Lemma §14.6: A Vanishing Integral
+> [!theorem] Lemma §17.6: A Vanishing Integral
 > Let $\alpha < \beta$ and let $h : [\alpha,\beta] \to [0,\infty)$ be continuous with $\int_\alpha^\beta h(x)\,dx = 0$. Then $h(x) = 0$ for all $x \in [\alpha,\beta]$.
 >
 > *Source: HW3, Problem 1*
 
-^lem-14-6
+^lem-17-6
 
 > [!proof]+ Proof
 > (HW3, Problem 1.) Suppose $h(x_0) = \eta > 0$ for some $x_0 \in [\alpha,\beta]$. By continuity there is $\delta > 0$ with $h(x) > \eta/2$ for all $x \in I := [x_0 - \delta, x_0 + \delta] \cap [\alpha,\beta]$. Since $\alpha < \beta$, $I$ is an interval of some length $\ell > 0$. As $h \geq 0$ on $[\alpha,\beta]$,
@@ -171,14 +171,14 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 >
 > a contradiction.
 
-^pf-14-6
+^pf-17-6
 
 *Uses:* [[§33 Properties of the Riemann Integral#^thm-33-3|451 §33.3]], [[§33 Properties of the Riemann Integral#^thm-33-5|451 §33.5]]
 
 > [!remark]- Connections
 > - Home: [[§33 Properties of the Riemann Integral#^thm-33-7|451 §33.7]] (the same statement); the Lebesgue version, with “almost everywhere”: [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|551 §14.11]].
 
-> [!theorem] Lemma §14.7: Hölder's Inequality for Continuous Functions
+> [!theorem] Lemma §17.7: Hölder's Inequality for Continuous Functions
 > Let $1 < p < \infty$ and $q = p/(p-1)$, so that $\frac1p + \frac1q = 1$. For $u, v \in C([a,b])$,
 >
 > $$
@@ -187,10 +187,10 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 >
 > *Source: HW3, Problem 1*
 
-^lem-14-7
+^lem-17-7
 
 > [!proof]+ Proof
-> (HW3, Problem 1.) Write $A = (\int_a^b |u|^p)^{1/p}$ and $B = (\int_a^b |v|^q)^{1/q}$. If $A = 0$, then $|u|^p \equiv 0$ by Lemma [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-6|§14.6]], so $u \equiv 0$ and both sides vanish; likewise if $B = 0$. Otherwise put $U = u/A$ and $V = v/B$, so that $\int_a^b |U|^p = \int_a^b |V|^q = 1$. [[§11 Means and Young's Inequality#^lem-11-3|Young's inequality from class]], $s^{1-\theta} t^{\theta} \leq (1-\theta)\,s + \theta\, t$ for $s, t \geq 0$ and $\theta \in [0,1]$, applied at each $x \in [a,b]$ with $s = |U(x)|^p$, $t = |V(x)|^q$, $\theta = 1/q$ (so $1 - \theta = 1/p$), gives
+> (HW3, Problem 1.) Write $A = (\int_a^b |u|^p)^{1/p}$ and $B = (\int_a^b |v|^q)^{1/q}$. If $A = 0$, then $|u|^p \equiv 0$ by Lemma [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-6|§17.6]], so $u \equiv 0$ and both sides vanish; likewise if $B = 0$. Otherwise put $U = u/A$ and $V = v/B$, so that $\int_a^b |U|^p = \int_a^b |V|^q = 1$. [[§14 Means and Young's Inequality#^lem-14-3|Young's inequality from class]], $s^{1-\theta} t^{\theta} \leq (1-\theta)\,s + \theta\, t$ for $s, t \geq 0$ and $\theta \in [0,1]$, applied at each $x \in [a,b]$ with $s = |U(x)|^p$, $t = |V(x)|^q$, $\theta = 1/q$ (so $1 - \theta = 1/p$), gives
 >
 > $$
 > |U(x)|\,|V(x)| \leq \frac1p\,|U(x)|^p + \frac1q\,|V(x)|^q.
@@ -204,15 +204,15 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 >
 > and multiplying by $AB$ gives the claim.
 
-^pf-14-7
+^pf-17-7
 
-*Uses:* [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-6|§14.6]], [[§11 Means and Young's Inequality#^lem-11-3|§11.3]], [[§33 Properties of the Riemann Integral#^thm-33-2|451 §33.2]], [[§33 Properties of the Riemann Integral#^thm-33-3|451 §33.3]]
+*Uses:* [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-6|§17.6]], [[§14 Means and Young's Inequality#^lem-14-3|§14.3]], [[§33 Properties of the Riemann Integral#^thm-33-2|451 §33.2]], [[§33 Properties of the Riemann Integral#^thm-33-3|451 §33.3]]
 
 > [!remark]- Connections
-> - Home: [[Hölder's Inequality|551 §19.5]] (measurable functions); the sequence version [[§12 Hölder's Inequality for Sequences#^thm-12-1|§12.1]] has the same proof.
+> - Home: [[Hölder's Inequality|551 §19.5]] (measurable functions); the sequence version [[§15 Hölder's Inequality for Sequences#^thm-15-1|§15.1]] has the same proof.
 > - For $p = q = 2$ and continuous functions: [[§19 Inner Products and Norms#^ladr-6-16|LADR 6.16(b)]].
 
-> [!theorem] Proposition §14.8: $L^p[a,b]$ as a Completion
+> [!theorem] Proposition §17.8: $L^p[a,b]$ as a Completion
 > Let $1 \le p < \infty$ and let $X = C[a,b]$, the continuous functions on $[a,b]$, with the norm
 >
 > $$
@@ -225,17 +225,17 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 >
 > *Lax: §5.1, example (f)*
 
-^prop-14-8
+^prop-17-8
 
 > [!proof]+ Proof
 > (HW3, Problem 1.)
-> Throughout, $\mathbb{F}$ denotes the scalar field ($\mathbb{R}$ or $\mathbb{C}$), $a < b$, and $X = C([a,b])$ is the space of continuous functions $f : [a,b] \to \mathbb{F}$ with pointwise operations; $X$ is a linear space (Theorem [[§9 Completeness#^thm-9-1|§9.1]], Part 1). Integrals of continuous functions are Riemann integrals. We show that $(X, \|\cdot\|_p)$ is a normed linear space, that it is *not* complete, and that its completion is $L^p([a,b])$.
+> Throughout, $\mathbb{F}$ denotes the scalar field ($\mathbb{R}$ or $\mathbb{C}$), $a < b$, and $X = C([a,b])$ is the space of continuous functions $f : [a,b] \to \mathbb{F}$ with pointwise operations; $X$ is a linear space (Theorem [[§11 Completeness#^thm-11-1|§11.1]], Part 1). Integrals of continuous functions are Riemann integrals. We show that $(X, \|\cdot\|_p)$ is a normed linear space, that it is *not* complete, and that its completion is $L^p([a,b])$.
 >
 > **Part 1: $\|\cdot\|_p$ is a norm on $X$.**
 >
 > *Well defined.* For $f \in X$ the function $|f|^p$ is continuous on $[a,b]$, as a composition of continuous maps, hence Riemann integrable with $\int_a^b |f|^p \in [0,\infty)$. So $\|f\|_p$ is a well-defined non-negative real number.
 >
-> *Positivity.* $\|f\|_p \geq 0$. If $\|f\|_p = 0$, then $\int_a^b |f|^p = 0$, so $|f|^p \equiv 0$ by Lemma [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-6|§14.6]], i.e. $f = 0$. Conversely $\|0\|_p = 0$.
+> *Positivity.* $\|f\|_p \geq 0$. If $\|f\|_p = 0$, then $\int_a^b |f|^p = 0$, so $|f|^p \equiv 0$ by Lemma [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-6|§17.6]], i.e. $f = 0$. Conversely $\|0\|_p = 0$.
 >
 > *Homogeneity.* For $c \in \mathbb{F}$,
 >
@@ -249,7 +249,7 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 > |f + g|^p = |f + g|^{p-1}\,|f + g| \leq |f|\,|f + g|^{p-1} + |g|\,|f + g|^{p-1},
 > $$
 >
-> and every function here is continuous. Integrating, and applying Lemma [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-7|§14.7]] to each term with $u = |f|$ (respectively $u = |g|$) and $v = |f + g|^{p-1}$,
+> and every function here is continuous. Integrating, and applying Lemma [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-7|§17.7]] to each term with $u = |f|$ (respectively $u = |g|$) and $v = |f + g|^{p-1}$,
 >
 > $$
 > \|f + g\|_p^p \leq \bigl( \|f\|_p + \|g\|_p \bigr) \Bigl( \int_a^b |f + g|^{(p-1)q} \Bigr)^{1/q} = \bigl( \|f\|_p + \|g\|_p \bigr)\, \|f + g\|_p^{\,p/q}.
@@ -280,31 +280,31 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 >   \int_a^c |f|^p = \int_a^c |f_n - f|^p \leq \|f_n - f\|_p^p.
 >   $$
 >
->   The left side does not depend on $n$ and the right side tends to $0$, so $\int_a^c |f|^p = 0$, and Lemma [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-6|§14.6]] gives $f = 0$ on $[a, c]$. In particular $f(c) = 0$.
+>   The left side does not depend on $n$ and the right side tends to $0$, so $\int_a^c |f|^p = 0$, and Lemma [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-6|§17.6]] gives $f = 0$ on $[a, c]$. In particular $f(c) = 0$.
 > - Fix $\delta \in (0, b - c)$. For $n \geq N_0$ with $n > 1/\delta$ we have $f_n = 1$ on $[c + \delta, b]$, so
 >
 >   $$
 >   \int_{c + \delta}^b |1 - f|^p = \int_{c + \delta}^b |f_n - f|^p \leq \|f_n - f\|_p^p \xrightarrow[n \to \infty]{} 0.
 >   $$
 >
->   Hence $\int_{c + \delta}^b |1 - f|^p = 0$, and Lemma [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-6|§14.6]] gives $f = 1$ on $[c + \delta, b]$. Since $\delta \in (0, b - c)$ was arbitrary, $f = 1$ on $(c, b]$.
+>   Hence $\int_{c + \delta}^b |1 - f|^p = 0$, and Lemma [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-6|§17.6]] gives $f = 1$ on $[c + \delta, b]$. Since $\delta \in (0, b - c)$ was arbitrary, $f = 1$ on $(c, b]$.
 >
 > Then $\lim_{x \to c^+} f(x) = 1 \neq 0 = f(c)$, contradicting the continuity of $f$ at $c$. So $\{f_n\}$ is a Cauchy sequence in $X$ with no limit in $X$, and $(X, \|\cdot\|_p)$ is not complete.
 >
-> **Part 3: the completion is $L^p([a,b])$.** Here $\overline{Y}$ denotes the completion of a normed linear space $Y$ [[§9 Completeness#^thm-9-4|constructed in class]], the space of equivalence classes of Cauchy sequences with $\|[\{y_n\}]\| = \lim_{n} \|y_n\|$, which is a Banach space (Homework 2, Problem 3).
+> **Part 3: the completion is $L^p([a,b])$.** Here $\overline{Y}$ denotes the completion of a normed linear space $Y$ [[§11 Completeness#^thm-11-4|constructed in class]], the space of equivalence classes of Cauchy sequences with $\|[\{y_n\}]\| = \lim_{n} \|y_n\|$, which is a Banach space (Homework 2, Problem 3).
 >
-> By Proposition [[§9 Completeness#^prop-9-5|§9.5]], it suffices to embed $X$ isometrically and densely in a Banach space.
+> By Proposition [[§11 Completeness#^prop-11-5|§11.5]], it suffices to embed $X$ isometrically and densely in a Banach space.
 >
 > Now let $Z = L^p([a,b])$, the Lebesgue measurable functions $F$ on $[a,b]$ with $\int_{[a,b]} |F|^p \, dm < \infty$, modulo equality almost everywhere, normed by $\|F\|_{L^p} = \bigl( \int_{[a,b]} |F|^p\, dm \bigr)^{1/p}$; and let $J : X \to L^p([a,b])$ send $f$ to its class. We use three facts from real analysis, cited from real analysis:
 > - (R1) For continuous $f$ on $[a,b]$, the Riemann and Lebesgue integrals of $|f|^p$ [[Riemann Integrable Implies Lebesgue Integrable|coincide]]; hence $\|Jf\|_{L^p} = \|f\|_p$. Clearly $J$ is linear.
-> - (R2) ([[Riesz–Fischer Theorem|Riesz–Fischer]]) $L^p([a,b])$ is complete for $1 \leq p < \infty$ (Theorem [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-3|§14.3]]).
-> - (R3) $C([a,b])$ is dense in $L^p([a,b])$ for $1 \leq p < \infty$ (Theorem [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-4|§14.4]]).
+> - (R2) ([[Riesz–Fischer Theorem|Riesz–Fischer]]) $L^p([a,b])$ is complete for $1 \leq p < \infty$ (Theorem [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|§17.3]]).
+> - (R3) $C([a,b])$ is dense in $L^p([a,b])$ for $1 \leq p < \infty$ (Theorem [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-4|§17.4]]).
 >
-> By (R1)–(R3), $J$ is a norm-preserving linear map of $X$ onto a dense subspace of the Banach space $L^p([a,b])$. By Proposition [[§9 Completeness#^prop-9-5|§9.5]], the completion of $(C([a,b]), \|\cdot\|_p)$ is $L^p([a,b])$.
+> By (R1)–(R3), $J$ is a norm-preserving linear map of $X$ onto a dense subspace of the Banach space $L^p([a,b])$. By Proposition [[§11 Completeness#^prop-11-5|§11.5]], the completion of $(C([a,b]), \|\cdot\|_p)$ is $L^p([a,b])$.
 
-^pf-14-8
+^pf-17-8
 
-*Uses:* [[§9 Completeness#^thm-9-1|§9.1]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-6|§14.6]], [[§14 The Function Spaces Lᵖ(Ω)#^lem-14-7|§14.7]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[§9 Completeness#^thm-9-4|§9.4]], [[§9 Completeness#^prop-9-5|§9.5]], [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-3|§14.3]], [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-4|§14.4]], [[Riemann Integrable Implies Lebesgue Integrable|551 §15.10]], [[Riesz–Fischer Theorem|551 §19.18]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 §19.19]]
+*Uses:* [[§11 Completeness#^thm-11-1|§11.1]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-6|§17.6]], [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-7|§17.7]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-1|Def. §11.1]], [[§11 Completeness#^thm-11-4|§11.4]], [[§11 Completeness#^prop-11-5|§11.5]], [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|§17.3]], [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-4|§17.4]], [[Riemann Integrable Implies Lebesgue Integrable|551 §15.10]], [[Riesz–Fischer Theorem|551 §19.18]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 §19.19]]
 
 ![[m556-14-2.svg]]
 *The ramps of Step 2 for $n = 2, 4, 8$ on $[a,b]$, with $c$ the midpoint. They differ from one another only near $c$, so they are Cauchy in $L^p$; an $L^p$ limit would have to be $0$ on $[a,c]$ and $1$ on $(c,b]$ — the step function, which is not continuous.*
@@ -316,4 +316,4 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 > [!remark] Remark
 > This is the example to keep in mind for what the abstract construction of the completion does in practice. Started from continuous functions — concrete, classical objects — and measured in the $L^p$ norm, the completion is forced to contain discontinuous and even badly behaved functions, and it is exactly $L^p$. The ramp functions of Step 2 converge in $L^p$ to the class of the step function $\chi_{(c,b]}$, and Step 2 is precisely the statement that this class contains no continuous representative. Read backwards, the proposition says that $L^p[a,b]$ *could* have been *defined* as the completion of $C[a,b]$ in the $L^p$ norm, with no measure theory at all; that is one standard route to the Lebesgue spaces, and it is the definition Lax adopts (§5.1, example (f)), and it explains Wu's remark that “when we write $L^1[a,b]$, intuitively we are taking this norm.”
 
-^rem-14-4
+^rem-17-4

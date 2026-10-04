@@ -131,7 +131,7 @@ By Proposition §6.1 the right side, if it converges, has period $2\pi$. Two que
 
 > [!remark]- Connections
 > - The same computation in Stewart: [[§45 Trigonometric Integrals#^rem-45-3|Calc Remark §45.3]]. On $[0, 2\pi]$, as orthogonality in the inner product space $C[0, 2\pi]$ with $\langle f, g\rangle = \int fg$: [[§47 Applications of Inner Product Spaces#^prop-47-2|235 Prop. §47.2]].
-> - Normalized, $\frac{1}{\sqrt{2\pi}}, \frac{\cos x}{\sqrt\pi}, \frac{\sin x}{\sqrt\pi}, \ldots$ is an orthonormal list in $C[-\pi, \pi]$, [[§20 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d); in complex form it is the Fourier basis of $L^2[0, 2\pi]$, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]]. So "orthogonal" is meant in exactly the sense of these inner products.
+> - Normalized, $\frac{1}{\sqrt{2\pi}}, \frac{\cos x}{\sqrt\pi}, \frac{\sin x}{\sqrt\pi}, \ldots$ is an orthonormal list in $C[-\pi, \pi]$, [[§20 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d); in complex form it is the Fourier basis of $L^2[0, 2\pi]$, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]]. So "orthogonal" is meant in exactly the sense of these inner products.
 > - See also: [[§42 Definite Integrals of Functions w(t)#^ex-42-4|342 Ex. §42.4]] (orthogonality of $e^{im\theta}$ and $e^{in\theta}$; these relations are its real and imaginary parts).
 
 The idea now is that if (1) is a true equality, both sides must give the same result after the same operation. Multiply both sides by one of the functions in the series and integrate from $-\pi$ to $\pi$; the orthogonality relations kill all but one term. This assumes that the series may be integrated term by term, which is sometimes difficult to justify; it is justified in [[§10 Operations on Fourier Series#^thm-10-4|Theorem §10.4]] (Powers 1.5, Theorem 4).
@@ -199,7 +199,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 
 > [!remark]- Connections
 > - With the inner product $\langle f, g\rangle = \int_{-\pi}^{\pi} fg$, (3)–(5) say $a_n = \langle f, \cos nx\rangle/\langle\cos nx, \cos nx\rangle$: each coefficient is the coordinate of $f$ along one orthogonal direction, as for an orthonormal basis in finite dimensions, [[§20 Orthonormal Bases#^ladr-6-30|LADR 6.30]]. Lay derives the same formulas as an orthogonal projection, [[§47 Applications of Inner Product Spaces#^thm-47-3|235 Thm. §47.3]], but writes the constant term as $a_0/2$ with $a_0 = \frac1\pi\int f$; Powers' $a_0$ is that $a_0/2$.
-> - Fourier series as expansions in an orthonormal basis of $L^2$, converging in norm: [[§20 Orthonormal Sets and Bases#^rem-20-9|556 Remark: Fourier Series]].
+> - Fourier series as expansions in an orthonormal basis of $L^2$, converging in norm: [[§24 Orthonormal Sets and Bases#^rem-24-9|556 Remark: Fourier Series]].
 
 > [!theorem] Proposition §6.5: Special Values of Sine and Cosine
 > For $n = 0, \pm1, \pm2, \ldots$,
@@ -302,7 +302,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 > \int_0^1 g(x)f_j(x)\,dx = \sum_{i=1}^{\infty} a_i\int_0^1 f_i(x)f_j(x)\,dx = \sum_{i=1}^{\infty} a_i\delta_{ij} = a_j ,
 > $$
 >
-> where $\delta_{ij} = 1$ if $i = j$ and $0$ otherwise. So $a_j = \int_0^1 g(x)f_j(x)\,dx$. Proposition §6.4 is the case of the system $1, \cos nx, \sin nx$ on $(-\pi, \pi)$, which is orthogonal but not normalized; the factors $\frac{1}{2\pi}$ and $\frac1\pi$ in (3)–(5) are $1/\int\phi^2$ for $\phi = 1$ and $\phi = \cos nx, \sin nx$. In the language of inner products, $\{f_i\}$ is an orthonormal set ([[§20 Orthonormal Sets and Bases#^def-20-1|556 Def. §20.1]]) and $a_j = \langle g, f_j\rangle$. The same computation recurs for every eigenfunction expansion in this subject ([[§24 Expansion in Series of Eigenfunctions#^prop-24-1|Proposition §24.1]]).
+> where $\delta_{ij} = 1$ if $i = j$ and $0$ otherwise. So $a_j = \int_0^1 g(x)f_j(x)\,dx$. Proposition §6.4 is the case of the system $1, \cos nx, \sin nx$ on $(-\pi, \pi)$, which is orthogonal but not normalized; the factors $\frac{1}{2\pi}$ and $\frac1\pi$ in (3)–(5) are $1/\int\phi^2$ for $\phi = 1$ and $\phi = \cos nx, \sin nx$. In the language of inner products, $\{f_i\}$ is an orthonormal set ([[§24 Orthonormal Sets and Bases#^def-24-1|556 Def. §24.1]]) and $a_j = \langle g, f_j\rangle$. The same computation recurs for every eigenfunction expansion in this subject ([[§24 Expansion in Series of Eigenfunctions#^prop-24-1|Proposition §24.1]]).
 >
 > *Source: 341 HW 1, Problem 3*
 

@@ -38,8 +38,8 @@ tags: [real-analysis, hub]
 - [[§27 Coordinate Derivations and the Basis Theorem#^lem-27-2|Lemma §27.2: Hadamard's Lemma]]
 
 ## Used in (Functional Analysis)
-- [[§9 Completeness#^prop-9-7|Proposition §9.7: (C²[a,b], ∣·∣_X) is Not Complete]]
-- [[§18 Projection and Orthogonal Decomposition#^prop-18-8|Proposition §18.8: A Sharp Integral Inequality]]
+- [[§11 Completeness#^prop-11-7|Proposition §11.7: (C²[a,b], ∣·∣_X) is Not Complete]]
+- [[§22 Projection and Orthogonal Decomposition#^prop-22-8|Proposition §22.8: A Sharp Integral Inequality]]
 
 ## Connections
 - Generalized by Stokes's theorem $\int_M d\omega=\int_{\partial M}\omega$ (Lee, *Smooth Manifolds*, Ch. 16; his Example 16.12 recovers FTC as the case $M=[a,b]$).

@@ -42,7 +42,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Basic consequences: [[§19 Inner Products and Norms#^ladr-6-6|6.6]]. Norm: [[§19 Inner Products and Norms#^ladr-6-7|6.7]].
-> - Same definition in 556 ([[§16 Definition and Examples#^def-16-1|556 Def. §16.1]]); a complete inner product space is a Hilbert space ([[§17 Cauchy–Schwarz and the Induced Norm#^def-17-1|556 Def. §17.1]]), and every finite-dimensional one is complete ([[§10 New Normed Spaces from Old#^cor-10-4|556 Cor. §10.4]]).
+> - Same definition in 556 ([[§20 Definition and Examples#^def-20-1|556 Def. §20.1]]); a complete inner product space is a Hilbert space ([[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]), and every finite-dimensional one is complete ([[§12 New Normed Spaces from Old#^cor-12-4|556 Cor. §12.4]]).
 > - Computational version: [[§46 Inner Product Spaces#^def-46-1|235 Def. §46.1]] (real inner products, the same axioms, with worked examples).
 
 > [!example] Example 6.3: Inner products (p. 184)
@@ -97,7 +97,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Properties: [[§19 Inner Products and Norms#^ladr-6-9|6.9]], [[Triangle inequality|6.17]]. Whether a norm comes from an inner product is decided by [[§19 Inner Products and Norms#^ladr-6-21|6.21]].
-> - The general notion of a norm, not necessarily coming from an inner product: [[§8 Normed Linear Spaces#^def-8-1|556 Def. §8.1]]; that this one satisfies those axioms is [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-2|556 Thm. §17.2]].
+> - The general notion of a norm, not necessarily coming from an inner product: [[§10 Normed Linear Spaces#^def-10-1|556 Def. §10.1]]; that this one satisfies those axioms is [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-2|556 Thm. §21.2]].
 > - In ℝ² and ℝ³: the length of a vector, [[§81 Vectors#^def-81-6|Calc Def. §81.6]] and [[§81 Vectors#^thm-81-3|Calc Thm. §81.3]] (with worked examples).
 > - Computational version: [[§40 Inner Product, Length, and Orthogonality#^def-40-2|235 Def. §40.2]] (length in $\mathbb R^n$) and [[§46 Inner Product Spaces#^def-46-2|235 Def. §46.2]] (in an inner product space).
 
@@ -159,7 +159,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in [[Cauchy–Schwarz inequality|6.14]], [[§20 Orthonormal Bases#^ladr-6-24|6.24]], [[§20 Orthonormal Bases#^ladr-6-26|6.26]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|6.61]].
-> - Same statement in 556, together with LADR 6.24: [[§20 Orthonormal Sets and Bases#^lem-20-1|556 Lemma §20.1]].
+> - Same statement in 556, together with LADR 6.24: [[§24 Orthonormal Sets and Bases#^lem-24-1|556 Lemma §24.1]].
 > - The Law of Cosines, [[§119 Trigonometry#^thm-119-11|Calc Thm. §119.11]], reduces to it when the angle is a right angle.
 > - Computational version: [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|235 Thm. §40.4]] (the Pythagorean theorem in $\mathbb R^n$, stated as an iff).
 
@@ -261,7 +261,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Geometry: diagonals of a parallelogram (figure below).
-> - The converse, that a norm satisfying this identity comes from an inner product, is the Jordan–von Neumann theorem: [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-4|556 Thm. §17.4]] (polarization in [[§17 Cauchy–Schwarz and the Induced Norm#^prop-17-3|556 Prop. §17.3]]).
+> - The converse, that a norm satisfying this identity comes from an inner product, is the Jordan–von Neumann theorem: [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-4|556 Thm. §21.4]] (polarization in [[§21 Cauchy–Schwarz and the Induced Norm#^prop-21-3|556 Prop. §21.3]]).
 
 %% ex:6.21-fig %%
 > [!example] Example: The parallelogram

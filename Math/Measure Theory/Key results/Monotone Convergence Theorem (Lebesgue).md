@@ -34,8 +34,8 @@ tags: [measure-theory, hub]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-12|Corollary §19.12: Minkowski for Nonnegative Series]]
 
 ## Used in (Functional Analysis)
-- [[§14 The Function Spaces Lᵖ(Ω)#^rem-14-2|Remark: What “Integrable” Means Here]]
-- [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-3|Theorem §14.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
+- [[§17 The Function Spaces Lᵖ(Ω)#^rem-17-2|Remark: What “Integrable” Means Here]]
+- [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|Theorem §17.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
 
 ## Connections
 - **Not the 451 theorem.** The MATH 451 [[Monotone Convergence Theorem]] says bounded monotone sequences of reals converge. This theorem exchanges limit and integral for 0 ≤ f_k ↑ f. It uses the 451 result in Step 1, to know that lim ∫f_k exists.

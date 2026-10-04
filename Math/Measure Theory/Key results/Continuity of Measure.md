@@ -23,7 +23,7 @@ tags: [measure-theory, hub]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|Theorem §19.21: L^∞ is Not Separable]]
 
 ## Used in (Functional Analysis)
-- [[§20 Orthonormal Sets and Bases#^prop-20-17|Proposition §20.17: L^∞(E) is Not Separable]]
+- [[§25 Sequence and Function Spaces#^prop-25-5|Proposition §25.5: L^∞(E) is Not Separable]]
 
 ## Connections
 - **Proof idea.** Write ⋃Eₙ as the disjoint union of the increments E₁, E₂ ∖ E₁, E₃ ∖ E₂, … . Countable additivity ([[Lebesgue Measurable Sets Form a σ-Algebra]]) turns m(⋃Eₙ) into a limit of partial sums, and [[§10 Lebesgue Measurable Sets#^lem-10-2|finite additivity]] identifies the N-th partial sum with m(E_N).

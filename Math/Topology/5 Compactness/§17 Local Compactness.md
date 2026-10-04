@@ -30,7 +30,7 @@ tags: [topology, math590]
 ^rem-17-1
 
 > [!remark]- Connections
-> - No infinite-dimensional normed space is locally compact: a compact neighborhood of 0 would contain a closed ball, and closed balls are not compact there by [[§15 Compactness and the Unit Ball#^thm-15-5|556 Thm. §15.5]] (compare [[§17 Local Compactness#^ex-17-5|Ex. §17.5]] for the product topology on ℝ^ω).
+> - No infinite-dimensional normed space is locally compact: a compact neighborhood of 0 would contain a closed ball, and closed balls are not compact there by [[§18 Compactness and the Unit Ball#^thm-18-5|556 Thm. §18.5]] (compare [[§17 Local Compactness#^ex-17-5|Ex. §17.5]] for the product topology on ℝ^ω).
 
 > [!example] Example §17.1
 > $\mathbb{R}$ is locally compact. For any $x \in \mathbb{R}$, we have $x \in (a, b) \subseteq [a, b]$, where $[a, b]$ is [[§15 Compact Spaces#^cor-15-11|compact]].

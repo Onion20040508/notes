@@ -2,10 +2,10 @@
 type: section
 subject: "[[Functional Analysis]]"
 chapter: 4
-section: 15
+section: 18
 tags: [functional-analysis, math556]
 ---
-← [[§14 The Function Spaces Lᵖ(Ω)]] · ↑ [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] · [[§16 Definition and Examples]] →
+← [[§17 The Function Spaces Lᵖ(Ω)]] · ↑ [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] · [[§19 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ]] →
 
 *Stage: norms — Thread: dimension. The first structural difference between finite and infinite dimension.*
 
@@ -13,47 +13,47 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 
 ## Sequential Compactness
 
-> [!definition] Definition §15.1: Sequentially Compact
+> [!definition] Definition §18.1: Sequentially Compact
 > A subset $K$ of a normed linear space (or metric space) $X$ is **sequentially compact**, or here simply **compact**, if every sequence $\{x_n\} \subset K$ has a subsequence $\{x_{n_k}\}$ converging to some $x_0 \in K$.
 
-^def-15-1
+^def-18-1
 
 > [!remark]- Connections
 > - The topological definition: [[§16 Limit Point Compactness#^def-16-3|590 Def. §16.3]].
 
-> [!example] Example §15.1: The Closed Unit Ball in $\mathbb{F}^n$
+> [!example] Example §18.1: The Closed Unit Ball in $\mathbb{F}^n$
 > In $\mathbb{F}^n$ ($\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$) with any norm, the closed unit ball
 >
 > $$
 > \overline{B_1(0)} = \{ x \in \mathbb{F}^n : \|x\| \le 1 \}
 > $$
 >
-> is compact. Indeed a sequence in it is coordinatewise bounded, so the diagonal extraction used in [[§10 New Normed Spaces from Old#^pf-10-3|Step 5]] of Theorem [[§10 New Normed Spaces from Old#^thm-10-3|§10.3]] — [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] applied $n$ times — produces a subsequence converging coordinatewise, hence in norm, and the limit still satisfies $\|x_0\| \le 1$ by continuity of the norm (Proposition [[§8 Normed Linear Spaces#^prop-8-4|§8.4]]).
+> is compact. Indeed a sequence in it is coordinatewise bounded, so the diagonal extraction used in [[§12 New Normed Spaces from Old#^pf-12-3|Step 5]] of Theorem [[§12 New Normed Spaces from Old#^thm-12-3|§12.3]] — [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] applied $n$ times — produces a subsequence converging coordinatewise, hence in norm, and the limit still satisfies $\|x_0\| \le 1$ by continuity of the norm (Proposition [[§10 Normed Linear Spaces#^prop-10-4|§10.4]]).
 
-^ex-15-1
+^ex-18-1
 
-*Uses:* [[§10 New Normed Spaces from Old#^thm-10-3|§10.3]], [[Bolzano–Weierstrass Theorem|451 §11.5]], [[§8 Normed Linear Spaces#^prop-8-4|§8.4]]
+*Uses:* [[§12 New Normed Spaces from Old#^thm-12-3|§12.3]], [[Bolzano–Weierstrass Theorem|451 §11.5]], [[§10 Normed Linear Spaces#^prop-10-4|§10.4]]
 
 > [!remark]- Connections
 > - In $\mathbb{R}^n$ with the Euclidean norm: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]] (Bolzano–Weierstrass in $\mathbb{R}^n$), and closed bounded sets are compact by [[Heine–Borel Theorem|Heine–Borel (590 §15.12)]].
 
-> [!definition] Definition §15.2: Open Set; Open Cover; Compact
-> Let $X$ be a normed linear space (or metric space). A subset $U \subset X$ is **open** if every point of $U$ is a metric interior point of $U$ (Definition [[§8 Normed Linear Spaces#^def-8-9|§8.9]]). An **open cover** of $K \subset X$ is a collection of open sets whose union contains $K$. $K$ is **compact** if every open cover of $K$ has a finite subcollection that still covers $K$.
+> [!definition] Definition §18.2: Open Set; Open Cover; Compact
+> Let $X$ be a normed linear space (or metric space). A subset $U \subset X$ is **open** if every point of $U$ is a metric interior point of $U$ (Definition [[§10 Normed Linear Spaces#^def-10-9|§10.9]]). An **open cover** of $K \subset X$ is a collection of open sets whose union contains $K$. $K$ is **compact** if every open cover of $K$ has a finite subcollection that still covers $K$.
 
-^def-15-2
+^def-18-2
 
 > [!remark]- Connections
 > - Topology: open sets of the [[§11 Metric Topology#^def-11-3|metric topology (590 Def. §11.3)]], covers [[§15 Compact Spaces#^def-15-1|590 Def. §15.1]], compactness [[§15 Compact Spaces#^def-15-2|590 Def. §15.2]].
 
-> [!theorem] Theorem §15.1: Compactness in Metric Spaces
+> [!theorem] Theorem §18.1: Compactness in Metric Spaces
 > A subset of a normed linear space (or metric space) is compact if and only if it is sequentially compact.
 
-^thm-15-1
+^thm-18-1
 
 > [!proof]+ Proof
 > Not covered in lecture: the question was raised in class and set aside. This is point-set topology; see J. Munkres, *Topology*, [[§16 Limit Point Compactness#^thm-16-2|§28]].
 
-^pf-15-1
+^pf-18-1
 
 *Uses:* [[§16 Limit Point Compactness#^thm-16-2|590 §16.2]]
 
@@ -61,15 +61,15 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 > - Home: [[§16 Limit Point Compactness#^thm-16-2|590 §16.2]] (compact ⇔ limit point compact ⇔ sequentially compact for metrizable spaces).
 
 > [!remark] Remark: Which Compactness
-> Only the sequential form is used in these notes, and Theorem [[§15 Compactness and the Unit Ball#^thm-15-1|§15.1]] is not needed for anything that follows; it records that “compact” is unambiguous here.
+> Only the sequential form is used in these notes, and Theorem [[§18 Compactness and the Unit Ball#^thm-18-1|§18.1]] is not needed for anything that follows; it records that “compact” is unambiguous here.
 
-^rem-15-1
+^rem-18-1
 
 ## Riesz's Lemma
 
 Without an inner product there is no notion of perpendicularity, so one cannot ask for a unit vector orthogonal to a subspace. The following lemma is the substitute available in a bare normed space: a unit vector that is at least a fixed distance from the subspace.
 
-> [!theorem] Lemma §15.2: Riesz's Lemma
+> [!theorem] Lemma §18.2: Riesz's Lemma
 > Let $(X, \|\cdot\|)$ be a normed linear space and $Y$ a closed proper subspace of $X$. Then there exists $z \in X$ with
 >
 > $$
@@ -78,7 +78,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 >
 > *Lax: §5.2, Lemma 7*
 
-^lem-15-2
+^lem-18-2
 
 > [!proof]+ Proof
 > **Step 1: a point off $Y$, at positive distance.** Since $Y \subsetneq X$, choose $x_0 \in X \setminus Y$ and set
@@ -87,7 +87,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > d = \operatorname{dist}(x_0, Y) = \inf_{y \in Y} \|x_0 - y\|.
 > $$
 >
-> Then $d > 0$. For if $d = 0$, there are $y_n \in Y$ with $\|x_0 - y_n\| \to 0$, i.e. $y_n \to x_0$; since $Y$ is closed (Definition [[§8 Normed Linear Spaces#^def-8-6|§8.6]]) this forces $x_0 \in Y$, contrary to the choice of $x_0$. This is the only place closedness of $Y$ is used, and it is essential.
+> Then $d > 0$. For if $d = 0$, there are $y_n \in Y$ with $\|x_0 - y_n\| \to 0$, i.e. $y_n \to x_0$; since $Y$ is closed (Definition [[§10 Normed Linear Spaces#^def-10-6|§10.6]]) this forces $x_0 \in Y$, contrary to the choice of $x_0$. This is the only place closedness of $Y$ is used, and it is essential.
 >
 > **Step 2: an almost-minimizing $y_0$.** The infimum $d$ need not be attained, but $2d > d$ is not a lower bound for $\{\|x_0 - y\| : y \in Y\}$, so there is $y_0 \in Y$ with
 >
@@ -95,7 +95,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > d \le a := \|x_0 - y_0\| < 2d.
 > $$
 >
-> (Any factor $>1$ would do here; see Corollary [[§15 Compactness and the Unit Ball#^cor-15-3|§15.3]].) Note $a > 0$.
+> (Any factor $>1$ would do here; see Corollary [[§18 Compactness and the Unit Ball#^cor-18-3|§18.3]].) Note $a > 0$.
 >
 > **Step 3: normalize.** Put
 >
@@ -121,29 +121,29 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > \operatorname{dist}(z, Y) \ge \frac{d}{a} > \frac{d}{2d} = \frac{1}{2}.
 > $$
 
-^pf-15-2
+^pf-18-2
 
-*Uses:* [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^def-8-6|Def. §8.6]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
+*Uses:* [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-6|Def. §10.6]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
 
 ![[m556-15-1.svg]]
 *The picture drawn in Lecture 6, for $Y$ a line in $\mathbb{R}^2$: $y_0$ is only an almost-closest point, $d \le a = \|x_0 - y_0\| < 2d$, and $z = (x_0 - y_0)/a$ is the unit vector in the same direction. Every point of $Y$ is at distance at least $d/a > \tfrac12$ from $z$; here $z$ lies above the dashed line.*
 
 > [!remark]- Connections
-> - In an inner product space the closest point exists ([[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]]) and the unit vector can be taken orthogonal: [[§18 Projection and Orthogonal Decomposition#^thm-18-4|§18.4]], and the remark contrasting the two arguments, [[§18 Projection and Orthogonal Decomposition#^rem-18-6|Remark §18]].
+> - In an inner product space the closest point exists ([[§22 Projection and Orthogonal Decomposition#^thm-22-2|§22.2]]) and the unit vector can be taken orthogonal: [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]], and the remark contrasting the two arguments, [[§22 Projection and Orthogonal Decomposition#^rem-22-6|Remark §22]].
 
-> [!theorem] Corollary §15.3: Riesz's Lemma with Any Constant Below One
-> Under the hypotheses of Lemma [[§15 Compactness and the Unit Ball#^lem-15-2|§15.2]], for every $\theta \in (0,1)$ there is $z \in X$ with $\|z\| = 1$ and $\operatorname{dist}(z, Y) \ge \theta$.
+> [!theorem] Corollary §18.3: Riesz's Lemma with Any Constant Below One
+> Under the hypotheses of Lemma [[§18 Compactness and the Unit Ball#^lem-18-2|§18.2]], for every $\theta \in (0,1)$ there is $z \in X$ with $\|z\| = 1$ and $\operatorname{dist}(z, Y) \ge \theta$.
 
-^cor-15-3
+^cor-18-3
 
 > [!proof]+ Proof
-> Repeat the proof of Lemma [[§15 Compactness and the Unit Ball#^lem-15-2|§15.2]], choosing $y_0$ in Step 2 with $d \le a < d/\theta$, which is possible because $d/\theta > d$. Step 3 then gives $\operatorname{dist}(z, Y) \ge d/a > \theta$. (Not covered in lecture.)
+> Repeat the proof of Lemma [[§18 Compactness and the Unit Ball#^lem-18-2|§18.2]], choosing $y_0$ in Step 2 with $d \le a < d/\theta$, which is possible because $d/\theta > d$. Step 3 then gives $\operatorname{dist}(z, Y) \ge d/a > \theta$. (Not covered in lecture.)
 
-^pf-15-3
+^pf-18-3
 
-*Uses:* [[§15 Compactness and the Unit Ball#^lem-15-2|§15.2]]
+*Uses:* [[§18 Compactness and the Unit Ball#^lem-18-2|§18.2]]
 
-> [!theorem] Proposition §15.4: The Constant $\theta = 1$ Cannot Be Attained
+> [!theorem] Proposition §18.4: The Constant $\theta = 1$ Cannot Be Attained
 > Let $X = \{ f \in C[0,1] : f(0) = 0 \}$ with $\|f\| = \max_{[0,1]} |f|$, and
 >
 > $$
@@ -156,14 +156,14 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > \operatorname{dist}(f, Y) < 1 \qquad \text{for every } f \in X \text{ with } \|f\| = 1 .
 > $$
 >
-> In particular Corollary [[§15 Compactness and the Unit Ball#^cor-15-3|§15.3]] fails for $\theta = 1$.
+> In particular Corollary [[§18 Compactness and the Unit Ball#^cor-18-3|§18.3]] fails for $\theta = 1$.
 
-^prop-15-4
+^prop-18-4
 
 > [!proof]+ Proof
 > Write $\varphi(h) = \int_0^1 h(t)\,dt$ for $h \in C[0,1]$. Then $\varphi$ is linear, and $|\varphi(h)| \le \int_0^1 |h| \le \|h\|$.
 >
-> **Step 1: $X$ is a Banach space.** $X$ is a linear subspace of the Banach space $(C[0,1], \|\cdot\|_\infty)$ (Theorem [[§9 Completeness#^thm-9-1|§9.1]]), and it is closed: if $f_n \in X$ and $f_n \to f$ uniformly, then $f(0) = \lim_n f_n(0) = 0$. A Cauchy sequence in $X$ is Cauchy in $C[0,1]$, so it converges there, and by closedness its limit lies in $X$. Hence $X$ is complete.
+> **Step 1: $X$ is a Banach space.** $X$ is a linear subspace of the Banach space $(C[0,1], \|\cdot\|_\infty)$ (Theorem [[§11 Completeness#^thm-11-1|§11.1]]), and it is closed: if $f_n \in X$ and $f_n \to f$ uniformly, then $f(0) = \lim_n f_n(0) = 0$. A Cauchy sequence in $X$ is Cauchy in $C[0,1]$, so it converges there, and by closedness its limit lies in $X$. Hence $X$ is complete.
 >
 > **Step 2: $Y$ is a closed proper subspace.** $Y$ is a subspace by linearity of $\varphi$. If $f_n \in Y$ and $f_n \to f \in X$, then $|\varphi(f)| = |\varphi(f - f_n)| \le \|f - f_n\| \to 0$, so $\varphi(f) = 0$ and $f \in Y$; thus $Y$ is closed. The function $g(t) = t$ lies in $X$ and has $\varphi(g) = \frac12 \neq 0$, so $Y \neq X$.
 >
@@ -197,23 +197,23 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > \operatorname{dist}(f, Y) \le \frac{1 - \delta/2}{1 - 1/(2n)} < 1 .
 > $$
 
-^pf-15-4
+^pf-18-4
 
-*Uses:* [[§9 Completeness#^thm-9-1|§9.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§8 Normed Linear Spaces#^def-8-6|Def. §8.6]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§9 Completeness#^def-9-2|Def. §9.2]], [[§33 Properties of the Riemann Integral#^thm-33-2|451 §33.2]], [[§33 Properties of the Riemann Integral#^thm-33-3|451 §33.3]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§33 Properties of the Riemann Integral#^thm-33-5|451 §33.5]]
+*Uses:* [[§11 Completeness#^thm-11-1|§11.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§10 Normed Linear Spaces#^def-10-6|Def. §10.6]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[§33 Properties of the Riemann Integral#^thm-33-2|451 §33.2]], [[§33 Properties of the Riemann Integral#^thm-33-3|451 §33.3]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§33 Properties of the Riemann Integral#^thm-33-5|451 §33.5]]
 
 ![[m556-15-2.svg]]
 *Why the constant $1$ is not attained. A unit vector $f$ of $X$ (blue) starts at $f(0) = 0$, so it stays below $\tfrac12$ on some $[0, \delta]$, and $\int_0^1 f$ falls short of $1$ by at least the red area $\delta/2$ (Step 4). The ramps $g_n = \min\{nt, 1\}$ (gray) have $\int_0^1 g_n = 1 - \tfrac1{2n}$, which beats $1 - \tfrac\delta2$ once $\tfrac1n < \delta$; subtracting the right multiple of $g_n$ moves $f$ into $Y$ at a cost $|\int_0^1 f| / \int_0^1 g_n < 1$ (Steps 3 and 5).*
 
 > [!remark] Remark: On the Constant
-> Since $0 \in Y$, always $\operatorname{dist}(z, Y) \le \|z - 0\| = 1$ for a unit vector $z$. So Corollary [[§15 Compactness and the Unit Ball#^cor-15-3|§15.3]] says $\sup_{\|z\| = 1} \operatorname{dist}(z, Y) = 1$ for every closed proper subspace, and Proposition [[§15 Compactness and the Unit Ball#^prop-15-4|§15.4]] says the supremum need not be attained. The mechanism is visible in Steps 3–4: letting $n \to \infty$ in Step 3 gives $\operatorname{dist}(f, Y) \le |\int_0^1 f|$, so a unit vector at distance $1$ from $Y$ would need $|\int_0^1 f| = 1 = \max |f|$, which forces $|f| \equiv 1$ and is ruled out by $f(0) = 0$.
+> Since $0 \in Y$, always $\operatorname{dist}(z, Y) \le \|z - 0\| = 1$ for a unit vector $z$. So Corollary [[§18 Compactness and the Unit Ball#^cor-18-3|§18.3]] says $\sup_{\|z\| = 1} \operatorname{dist}(z, Y) = 1$ for every closed proper subspace, and Proposition [[§18 Compactness and the Unit Ball#^prop-18-4|§18.4]] says the supremum need not be attained. The mechanism is visible in Steps 3–4: letting $n \to \infty$ in Step 3 gives $\operatorname{dist}(f, Y) \le |\int_0^1 f|$, so a unit vector at distance $1$ from $Y$ would need $|\int_0^1 f| = 1 = \max |f|$, which forces $|f| \equiv 1$ and is ruled out by $f(0) = 0$.
 >
-> By contrast, in an inner product space the constant $1$ is attained as soon as a unit vector $z$ orthogonal to $Y$ is available (for a closed proper subspace of a Hilbert space, Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-4|§18.4]] provides one: take $x_0 \notin Y$ and normalize its $Y^\perp$-component): then $\|z - y\|^2 = \|z\|^2 - (z,y) - (y,z) + \|y\|^2 = 1 + \|y\|^2 \ge 1$ for every $y \in Y$. In general the picture Wu drew is the right one: $z$ is a unit vector pointing “away from” $Y$, and if a first attempt sits too close to $Y$ one slides along until it does not. (Not covered in lecture.)
+> By contrast, in an inner product space the constant $1$ is attained as soon as a unit vector $z$ orthogonal to $Y$ is available (for a closed proper subspace of a Hilbert space, Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]] provides one: take $x_0 \notin Y$ and normalize its $Y^\perp$-component): then $\|z - y\|^2 = \|z\|^2 - (z,y) - (y,z) + \|y\|^2 = 1 + \|y\|^2 \ge 1$ for every $y \in Y$. In general the picture Wu drew is the right one: $z$ is a unit vector pointing “away from” $Y$, and if a first attempt sits too close to $Y$ one slides along until it does not. (Not covered in lecture.)
 
-^rem-15-2
+^rem-18-2
 
 ## The Theorem
 
-> [!theorem] Theorem §15.5: The Unit Ball of an Infinite-Dimensional Space is Not Compact
+> [!theorem] Theorem §18.5: The Unit Ball of an Infinite-Dimensional Space is Not Compact
 > Let $X$ be an infinite-dimensional normed linear space. Then the closed unit ball
 >
 > $$
@@ -224,7 +224,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 >
 > *Lax: §5.2, Thm 6*
 
-^thm-15-5
+^thm-18-5
 
 > [!proof]+ Proof
 > It suffices to construct a sequence $\{x_n\} \subset X$ with
@@ -246,10 +246,10 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > $$
 >
 > Then:
-> - $Y_m$ is *closed*, because it is finite-dimensional (Corollary [[§10 New Normed Spaces from Old#^cor-10-5|§10.5]]);
+> - $Y_m$ is *closed*, because it is finite-dimensional (Corollary [[§12 New Normed Spaces from Old#^cor-12-5|§12.5]]);
 > - $Y_m$ is a *proper* subspace of $X$, because $\dim Y_m \le m < \infty$ while $X$ is infinite-dimensional, so $X$ cannot equal the span of finitely many vectors.
 >
-> Riesz's lemma (Lemma [[§15 Compactness and the Unit Ball#^lem-15-2|§15.2]]) applied to $Y_m \subsetneq X$ therefore produces $x_{m+1} \in X$ with $\|x_{m+1}\| = 1$ and $\operatorname{dist}(x_{m+1}, Y_m) \ge \tfrac12$.
+> Riesz's lemma (Lemma [[§18 Compactness and the Unit Ball#^lem-18-2|§18.2]]) applied to $Y_m \subsetneq X$ therefore produces $x_{m+1} \in X$ with $\|x_{m+1}\| = 1$ and $\operatorname{dist}(x_{m+1}, Y_m) \ge \tfrac12$.
 >
 > *Conclusion.* This produces $\{x_m\}_{m=1}^\infty \subset X$ with $\|x_m\| = 1$ for all $m$, and for $j < m$ we have $x_j \in Y_{m-1}$, hence
 >
@@ -257,20 +257,20 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > \|x_m - x_j\| \ge \operatorname{dist}(x_m, Y_{m-1}) \ge \tfrac{1}{2}.
 > $$
 
-^pf-15-5
+^pf-18-5
 
-*Uses:* [[§15 Compactness and the Unit Ball#^def-15-1|Def. §15.1]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§10 New Normed Spaces from Old#^cor-10-5|§10.5]], [[§15 Compactness and the Unit Ball#^lem-15-2|§15.2]]
+*Uses:* [[§18 Compactness and the Unit Ball#^def-18-1|Def. §18.1]], [[§10 Normed Linear Spaces#^prop-10-5|§10.5]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§12 New Normed Spaces from Old#^cor-12-5|§12.5]], [[§18 Compactness and the Unit Ball#^lem-18-2|§18.2]]
 
 > [!remark]- Connections
-> - The finite-dimensional contrast: [[§15 Compactness and the Unit Ball#^ex-15-1|Ex. §15.1]], resting on [[Heine–Borel Theorem|Heine–Borel]] / [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]].
+> - The finite-dimensional contrast: [[§18 Compactness and the Unit Ball#^ex-18-1|Ex. §18.1]], resting on [[Heine–Borel Theorem|Heine–Borel]] / [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]].
 > - Hence no infinite-dimensional normed space is locally compact ([[§17 Local Compactness#^def-17-1|590 Def. §17.1]]), since a compact neighborhood of 0 would contain a closed ball; compare ℝ^ω, [[§17 Local Compactness#^ex-17-5|590 Ex. §17.5]].
 
 > [!remark] Remark: Where Infinite-Dimensionality Enters
-> This was asked in lecture. The hypothesis is used at exactly one point: to know that $Y_m = \operatorname{span}\{x_1, \ldots, x_m\}$ is a *proper* subspace, so that Riesz's lemma applies and the construction can continue. In a finite-dimensional space the process halts — at some stage $Y_m = X$, and there is no vector left at distance $\tfrac12$ from everything already chosen. Infinite-dimensionality is what guarantees a genuinely new direction at every step. The other hypothesis doing work is Corollary [[§10 New Normed Spaces from Old#^cor-10-5|§10.5]]: without knowing $Y_m$ closed, Riesz's lemma would not apply either.
+> This was asked in lecture. The hypothesis is used at exactly one point: to know that $Y_m = \operatorname{span}\{x_1, \ldots, x_m\}$ is a *proper* subspace, so that Riesz's lemma applies and the construction can continue. In a finite-dimensional space the process halts — at some stage $Y_m = X$, and there is no vector left at distance $\tfrac12$ from everything already chosen. Infinite-dimensionality is what guarantees a genuinely new direction at every step. The other hypothesis doing work is Corollary [[§12 New Normed Spaces from Old#^cor-12-5|§12.5]]: without knowing $Y_m$ closed, Riesz's lemma would not apply either.
 
-^rem-15-3
+^rem-18-3
 
-> [!example] Example §15.2: The Separated Sequence in $\ell^p$
+> [!example] Example §18.2: The Separated Sequence in $\ell^p$
 > For $\ell^p$ with $1 \le p < \infty$ the construction can be written down without any induction. Let $e_j = (0, \ldots, 0, 1, 0, \ldots)$ with the $1$ in the $j$-th place. Then $\|e_j\|_p = 1$, and for $i \ne j$ the sequence $e_i - e_j$ has exactly two nonzero entries, $\pm 1$, so
 >
 > $$
@@ -279,13 +279,13 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 >
 > Hence $\{e_j\}$ has no convergent subsequence, and the closed unit ball of $\ell^p$ is not compact. (In $\ell^\infty$, $\|e_i - e_j\|_\infty = 1$.) The theorem says that every infinite-dimensional normed space contains a sequence behaving like this one, even when no basis is available to write it down.
 
-^ex-15-2
+^ex-18-2
 
-*Uses:* [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^def-13-1|Def. §13.1]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§15 Compactness and the Unit Ball#^def-15-1|Def. §15.1]]
+*Uses:* [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^def-16-1|Def. §16.1]], [[§10 Normed Linear Spaces#^prop-10-5|§10.5]], [[§18 Compactness and the Unit Ball#^def-18-1|Def. §18.1]]
 
 > [!remark] Remark: Why This Matters: Toward Weak Convergence
-> Compactness is what allows a limit to be produced when no formula for it exists. The model application: to solve an equation $P(x) = 1$ one constructs approximate solutions, $P(x_1) \approx 1$, $P(x_2)$ closer, and so on, with $\|x_j\| \le M$ for all $j$; in finite dimensions the bounded sequence $\{x_j\}$ has a convergent subsequence, and its limit solves the equation provided $P$ is continuous. Theorem [[§15 Compactness and the Unit Ball#^thm-15-5|§15.5]] says this move is unavailable in the function spaces the course is about — $L^p$, $\ell^p$, $C[a,b]$ are all infinite-dimensional.
+> Compactness is what allows a limit to be produced when no formula for it exists. The model application: to solve an equation $P(x) = 1$ one constructs approximate solutions, $P(x_1) \approx 1$, $P(x_2)$ closer, and so on, with $\|x_j\| \le M$ for all $j$; in finite dimensions the bounded sequence $\{x_j\}$ has a convergent subsequence, and its limit solves the equation provided $P$ is continuous. Theorem [[§18 Compactness and the Unit Ball#^thm-18-5|§18.5]] says this move is unavailable in the function spaces the course is about — $L^p$, $\ell^p$, $C[a,b]$ are all infinite-dimensional.
 >
 > The response is not to give up on compactness but to weaken the notion of convergence until it returns. A bounded sequence in a suitable infinite-dimensional space does have a subsequence converging *weakly*, and the closed unit ball is compact in a weaker topology. This is the direction the course takes later; the present theorem is what makes it necessary.
 
-^rem-15-4
+^rem-18-4

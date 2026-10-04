@@ -14,19 +14,20 @@ Linear functionals take values in the scalars. The next objects are linear maps 
 **Builds on (other subjects):** [[Linear Algebra]] (2), [[Measure Theory]] (3), [[Single Variable Analysis]] (2)
 
 ## Sections
-- [[§21 Boundedness and Continuity]]
-- [[§22 Dual Spaces]]
-- [[§23 Sesquilinear Forms and the Lax–Milgram Theorem]]
+- [[§26 Boundedness and Continuity]]
+- [[§27 Dual Spaces]]
+- [[§28 Sesquilinear Forms and the Lax–Milgram Theorem]]
+- [[§29 ℝⁿ, Cᵐ and Lᵖ]]
 
 ## Central results
-- [[Bounded Linear Maps Are Continuous]] (§21.2)
-- [[Bounded Linear Maps into a Banach Space Form a Banach Space]] (§21.5)
-- [[Bounded Sesquilinear Forms Are Bounded Operators]] (§23.1)
-- [[Lax–Milgram Theorem]] (§23.2)
+- [[Bounded Linear Maps Are Continuous]] (§26.2)
+- [[Bounded Linear Maps into a Banach Space Form a Banach Space]] (§26.5)
+- [[Bounded Sesquilinear Forms Are Bounded Operators]] (§28.1)
+- [[Lax–Milgram Theorem]] (§28.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§21 Boundedness and Continuity#^prop-21-1|Proposition §21.1: The Operator Norm]]: 3 later results
-- [[§22 Dual Spaces#^thm-22-2|Theorem §22.2: Riesz Representation Theorem, with Norms]]: 3 later results
-- [[Lax–Milgram Theorem|Theorem §23.2: Lax–Milgram]]: 2 later results
-- [[Bounded Linear Maps into a Banach Space Form a Banach Space|Theorem §21.5: ℒ(X, Y) is a Normed Linear Space]]: 1 later result
+- [[§26 Boundedness and Continuity#^prop-26-1|Proposition §26.1: The Operator Norm]]: 3 later results
+- [[§27 Dual Spaces#^thm-27-2|Theorem §27.2: Riesz Representation Theorem, with Norms]]: 3 later results
+- [[Lax–Milgram Theorem|Theorem §28.2: Lax–Milgram]]: 2 later results
+- [[Bounded Linear Maps into a Banach Space Form a Banach Space|Theorem §26.5: ℒ(X, Y) is a Normed Linear Space]]: 1 later result

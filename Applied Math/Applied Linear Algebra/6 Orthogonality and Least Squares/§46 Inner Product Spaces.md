@@ -28,8 +28,8 @@ Length, distance and orthogonality in $\mathbb{R}^n$ were built from four proper
 ^def-46-1
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]], over $\mathbb{R}$ or $\mathbb{C}$ (over $\mathbb{C}$, axiom 1 becomes $\langle u, v\rangle = \overline{\langle v, u\rangle}$); Axler's examples [[§19 Inner Products and Norms#^ladr-6-3|LADR 6.3]] include the weighted inner product of Example §46.1 and the integral inner product of Example §46.4. Same definition in [[§16 Definition and Examples#^def-16-1|556 Def. §16.1]].
-> - The function-space examples become complete only after enlarging $C[a, b]$ to $L^2[a, b]$: [[§16 Definition and Examples#^ex-16-3|556 Ex. §16.3]]; an inner product space of continuous functions that is not complete is [[§17 Cauchy–Schwarz and the Induced Norm#^ex-17-2|556 Ex. §17.2]].
+> - Rigorous treatment: [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]], over $\mathbb{R}$ or $\mathbb{C}$ (over $\mathbb{C}$, axiom 1 becomes $\langle u, v\rangle = \overline{\langle v, u\rangle}$); Axler's examples [[§19 Inner Products and Norms#^ladr-6-3|LADR 6.3]] include the weighted inner product of Example §46.1 and the integral inner product of Example §46.4. Same definition in [[§20 Definition and Examples#^def-20-1|556 Def. §20.1]].
+> - The function-space examples become complete only after enlarging $C[a, b]$ to $L^2[a, b]$: [[§20 Definition and Examples#^ex-20-3|556 Ex. §20.3]]; an inner product space of continuous functions that is not complete is [[§21 Cauchy–Schwarz and the Induced Norm#^ex-21-2|556 Ex. §21.2]].
 
 > [!example] Example §46.1: A Weighted Inner Product on ℝ²
 > Fix two positive numbers, say $4$ and $5$, and for $\mathbf{u} = (u_1, u_2)$, $\mathbf{v} = (v_1, v_2)$ in $\mathbb{R}^2$ set
@@ -278,7 +278,7 @@ In $\mathbb{R}^n$ this is the Cauchy inequality $(u_1v_1 + \cdots + u_nv_n)^2 \l
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§19 Inner Products and Norms#^ladr-6-14|LADR 6.14]] (Cauchy–Schwarz, with equality iff one vector is a multiple of the other; Axler's proof uses the orthogonal decomposition [[§19 Inner Products and Norms#^ladr-6-13|LADR 6.13]], the same projection idea) and [[§19 Inner Products and Norms#^ladr-6-17|LADR 6.17]] (triangle inequality).
-> - In 556: [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|556 Thm. §17.1]] and [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-2|556 Thm. §17.2]] (the inner product induces a norm); the parallelogram law characterizes the norms that come from inner products, [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-4|556 Thm. §17.4]].
+> - In 556: [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|556 Thm. §21.1]] and [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-2|556 Thm. §21.2]] (the inner product induces a norm); the parallelogram law characterizes the norms that come from inner products, [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-4|556 Thm. §21.4]].
 
 ## An Inner Product for C[a, b] (Calculus Required)
 

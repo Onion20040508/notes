@@ -242,7 +242,7 @@ Solutions are found by the power series method: assume $y(x) = a_0 + a_1x + \cdo
 *Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Def. §49.3]], [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-4|§49.4]], [[§23 Sturm–Liouville Problems#^thm-23-2|§23.2]] (its argument)
 
 > [!remark]- Connections
-> - Gram–Schmidt applied to $1, x, x^2, \ldots$ in the inner product $\int_{-1}^{1} fg\,dx$ produces multiples of $P_0, P_1, P_2, \ldots$, by part (b) and uniqueness of the orthogonalization: [[§20 Orthonormal Bases#^ladr-6-34|LADR 6.34]] (worked to degree $2$), [[§46 Inner Product Spaces#^ex-46-5|235 Ex. §46.5]] (the same polynomials moved to $[0, 1]$), and in Hilbert space [[§20 Orthonormal Sets and Bases#^lem-20-19|556 Lem. §20.19]].
+> - Gram–Schmidt applied to $1, x, x^2, \ldots$ in the inner product $\int_{-1}^{1} fg\,dx$ produces multiples of $P_0, P_1, P_2, \ldots$, by part (b) and uniqueness of the orthogonalization: [[§20 Orthonormal Bases#^ladr-6-34|LADR 6.34]] (worked to degree $2$), [[§46 Inner Product Spaces#^ex-46-5|235 Ex. §46.5]] (the same polynomials moved to $[0, 1]$), and in Hilbert space [[§24 Orthonormal Sets and Bases#^lem-24-14|556 Lem. §24.14]].
 > - The self-adjoint form is what makes the operator $y \mapsto -\big((1 - x^2)y'\big)'$ symmetric; its eigenvectors for different eigenvalues are orthogonal as in [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]].
 
 > [!theorem] Theorem §49.6: Rodrigues' Formula
@@ -404,7 +404,7 @@ To use Legendre polynomials in boundary value problems, a given function $f(x)$ 
 *Powers omits the proof.* It is the analogue of the Fourier convergence theorem, [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]].
 
 > [!remark]- Connections
-> - Convergence in the mean (in $L^2[-1, 1]$) has a short proof from results in the vault. The normalized polynomials $\sqrt{(2n+1)/2}\,P_n$ are an orthonormal set (Propositions §49.5 and §49.8) whose span is all polynomials. Polynomials are dense in $C[-1, 1]$ for the maximum norm by Weierstrass's approximation theorem ([[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27]], a heading only: the theorem was not covered), and continuous functions are dense in $L^2[-1, 1]$ ([[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 Thm. §19.19]](iii)). So the set is complete, hence an orthonormal basis with Parseval's equality: [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]]. The pointwise statement of the theorem needs more.
+> - Convergence in the mean (in $L^2[-1, 1]$) has a short proof from results in the vault. The normalized polynomials $\sqrt{(2n+1)/2}\,P_n$ are an orthonormal set (Propositions §49.5 and §49.8) whose span is all polynomials. Polynomials are dense in $C[-1, 1]$ for the maximum norm by Weierstrass's approximation theorem ([[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27]], a heading only: the theorem was not covered), and continuous functions are dense in $L^2[-1, 1]$ ([[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 Thm. §19.19]](iii)). So the set is complete, hence an orthonormal basis with Parseval's equality: [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]]. The pointwise statement of the theorem needs more.
 
 > [!theorem] Proposition §49.10: Legendre Series of Odd, Even and Half-Range Functions
 > If $f$ is odd on $-1 < x < 1$, only the odd-indexed coefficients $b_n$ can be nonzero; if $f$ is even, only the even-indexed ones. Consequently a function $f$ given on $0 < x < 1$ is represented there both by

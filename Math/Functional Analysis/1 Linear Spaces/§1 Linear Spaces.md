@@ -7,7 +7,7 @@ tags: [functional-analysis, math556]
 ---
 ↑ [[· 1 Linear Spaces]] · [[§2 Linear Maps, Convexity, and Linear Functionals]] →
 
-*Stage: algebra — Threads: dimension. The vocabulary of the course; only finite sums exist ([[§1 Linear Spaces#Linear Span|§1]]), and the quotient stands in for an orthogonal complement until [[§18 Projection and Orthogonal Decomposition|§18]].*
+*Stage: algebra — Threads: dimension. The vocabulary of the course; only finite sums exist ([[§1 Linear Spaces#Linear Span|§1]]), and the quotient stands in for an orthogonal complement until [[§22 Projection and Orthogonal Decomposition|§22]].*
 
 ## Definition and Examples
 
@@ -412,11 +412,11 @@ Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material i
 ^prop-1-8
 
 > [!proof]+ Proof
-> Let $P = \{ W \subset X \text{ a linear subspace} : W \cap Y = \{0\} \}$, partially ordered by inclusion; $\{0\} \in P$. Chains in $P$ have upper bounds: the union of a chain of subspaces is a subspace (the argument in the [[§4 Proof of the Hahn–Banach Theorem#^pf-3-2|proof]] of Theorem [[§3 Statement and Motivation#^thm-3-2|§3.2]]), and it meets $Y$ only in $0$ since each member does. By Zorn's lemma (Theorem [[§4 Proof of the Hahn–Banach Theorem#^thm-4-2|§4.2]]) $P$ has a maximal element $W$. If $W + Y \neq X$, pick $x_0 \in X \setminus (W + Y)$; Lemma [[§1 Linear Spaces#^lem-1-7|§1.7]] gives a strictly larger element of $P$, contradicting maximality. Hence $W + Y = X$, and $W$ is a complement.
+> Let $P = \{ W \subset X \text{ a linear subspace} : W \cap Y = \{0\} \}$, partially ordered by inclusion; $\{0\} \in P$. Chains in $P$ have upper bounds: the union of a chain of subspaces is a subspace (the argument in the [[§5 Proof of the Hahn–Banach Theorem#^pf-4-2|proof]] of Theorem [[§4 Statement and Motivation#^thm-4-2|§4.2]]), and it meets $Y$ only in $0$ since each member does. By Zorn's lemma (Theorem [[§5 Proof of the Hahn–Banach Theorem#^thm-5-2|§5.2]]) $P$ has a maximal element $W$. If $W + Y \neq X$, pick $x_0 \in X \setminus (W + Y)$; Lemma [[§1 Linear Spaces#^lem-1-7|§1.7]] gives a strictly larger element of $P$, contradicting maximality. Hence $W + Y = X$, and $W$ is a complement.
 
 ^pf-1-8
 
-*Uses:* [[§1 Linear Spaces#^def-1-8|Def. §1.8]], [[§3 Statement and Motivation#^thm-3-2|§3.2]], [[§4 Proof of the Hahn–Banach Theorem#^thm-4-2|§4.2]], [[§1 Linear Spaces#^lem-1-7|§1.7]]
+*Uses:* [[§1 Linear Spaces#^def-1-8|Def. §1.8]], [[§4 Statement and Motivation#^thm-4-2|§4.2]], [[§5 Proof of the Hahn–Banach Theorem#^thm-5-2|§5.2]], [[§1 Linear Spaces#^lem-1-7|§1.7]]
 
 > [!remark]- Connections
 > - The finite-dimensional version, by extending a basis: [[§5 Bases#^ladr-2-33|LADR 2.33]].
@@ -516,7 +516,7 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 
 > [!remark]- Connections
 > - In finite dimensions it gives the dimension count of [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105]].
-> - The orthogonal version for Hilbert spaces: [[§18 Projection and Orthogonal Decomposition#^thm-18-4|§18.4]].
+> - The orthogonal version for Hilbert spaces: [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]].
 
 > [!theorem] Corollary §1.12: A Complement is a Model of the Quotient
 > If $W$ is a complement of $Y$, then the restricted quotient map $W \to X/Y$, $w \mapsto [w]$, is an isomorphism. In particular all complements of $Y$ are isomorphic to one another.
@@ -552,13 +552,13 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 
 ^pf-1-13
 
-*Uses:* [[§16 Definition and Examples#^def-16-1|Def. §16.1]], [[§1 Linear Spaces#^def-1-8|Def. §1.8]], [[§1 Linear Spaces#^cor-1-12|§1.12]], [[§1 Linear Spaces#^thm-1-11|§1.11]]
+*Uses:* [[§20 Definition and Examples#^def-20-1|Def. §20.1]], [[§1 Linear Spaces#^def-1-8|Def. §1.8]], [[§1 Linear Spaces#^cor-1-12|§1.12]], [[§1 Linear Spaces#^thm-1-11|§1.11]]
 
 > [!remark]- Connections
-> - The inner product and $Y^\perp$ in this course: [[§16 Definition and Examples#^def-16-1|Def. §16.1]], [[§18 Projection and Orthogonal Decomposition#^thm-18-4|§18.4]] (the orthogonal decomposition, which supplies $X = Y + Y^\perp$ for closed $Y$ in a Hilbert space).
+> - The inner product and $Y^\perp$ in this course: [[§20 Definition and Examples#^def-20-1|Def. §20.1]], [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]] (the orthogonal decomposition, which supplies $X = Y + Y^\perp$ for closed $Y$ in a Hilbert space).
 > - In finite dimensions: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], and $V = U \oplus U^\perp$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]]).
 
 > [!remark] Remark
-> The hypothesis $X = Y + Y^\perp$ holds automatically in finite dimensions, and in infinite dimensions it holds when $X$ is complete and $Y$ is closed (the orthogonal decomposition theorem, Theorem [[§18 Projection and Orthogonal Decomposition#^thm-18-4|§18.4]]). It can fail for a general subspace: in $\ell^2$ with the inner product of [[· 5 Inner Product Spaces|Chapter 5]], the finitely supported sequences form a subspace $Y$ with $Y^\perp = \{0\}$, since $(z, e_i) = z_i$, so $Y + Y^\perp = Y \neq \ell^2$. Then $Y^\perp$ is *not* a complement — although by Proposition [[§1 Linear Spaces#^prop-1-8|§1.8]] some other complement always exists. This is why the orthogonal version is only “roughly” true, while the algebraic version (Theorem [[§1 Linear Spaces#^thm-1-11|§1.11]]) is unconditional.
+> The hypothesis $X = Y + Y^\perp$ holds automatically in finite dimensions, and in infinite dimensions it holds when $X$ is complete and $Y$ is closed (the orthogonal decomposition theorem, Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]]). It can fail for a general subspace: in $\ell^2$ with the inner product of [[· 5 Inner Product Spaces|Chapter 5]], the finitely supported sequences form a subspace $Y$ with $Y^\perp = \{0\}$, since $(z, e_i) = z_i$, so $Y + Y^\perp = Y \neq \ell^2$. Then $Y^\perp$ is *not* a complement — although by Proposition [[§1 Linear Spaces#^prop-1-8|§1.8]] some other complement always exists. This is why the orthogonal version is only “roughly” true, while the algebraic version (Theorem [[§1 Linear Spaces#^thm-1-11|§1.11]]) is unconditional.
 
 ^rem-1-10

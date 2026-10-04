@@ -94,7 +94,7 @@ $$
 *Uses:* [[§15★ Complex Methods#^def-15-1|Def. §15.1]], [[§12★ Proof of Convergence#^thm-12-4|§12.4]], [[§12★ Proof of Convergence#^cor-12-5|§12.5]], [[§6 Periodic Functions and Fourier Series#^def-6-2|Def. §6.2]], [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] (the complex exponential and Euler's formula)
 
 > [!remark]- Connections
-> - The normalized exponentials $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of the complex space $L^2[0, 2\pi]$, [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]]: (2) says $c_n\sqrt{2\pi}$ is the inner product of $f$ with the $n$th basis vector, and Parseval's equality reads $\frac{1}{2\pi}\int|f|^2 = \sum|c_n|^2$ ([[§20 Orthonormal Sets and Bases#^rem-20-9|556 Rem. §20.9]]). In quantum mechanics they are the momentum eigenstates of a particle on a ring.
+> - The normalized exponentials $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of the complex space $L^2[0, 2\pi]$, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]]: (2) says $c_n\sqrt{2\pi}$ is the inner product of $f$ with the $n$th basis vector, and Parseval's equality reads $\frac{1}{2\pi}\int|f|^2 = \sum|c_n|^2$ ([[§24 Orthonormal Sets and Bases#^rem-24-9|556 Rem. §24.9]]). In quantum mechanics they are the momentum eigenstates of a particle on a ring.
 > - Complex-variables version: [[§42 Definite Integrals of Functions w(t)#^ex-42-4|342 Ex. §42.4]] (orthogonality of the $e^{in\theta}$) and [[§66 Laurent Series#^ex-66-3|342 Ex. §66.3]] (for boundary values of a function analytic in an annulus, this series is the Laurent series [[§66 Laurent Series#^def-66-1|342 Def. §66.1]] on the unit circle).
 
 The complex form is used especially in physics and electrical engineering. Sometimes the function corresponding to a Fourier series can be recognized by use of the complex form.
@@ -154,7 +154,7 @@ The Fourier integral of a function $f(x)$ defined on the entire line $-\infty < 
 ^def-15-2
 
 > [!remark]- Connections
-> - Normalizations differ between books. Powers puts $\frac{1}{2\pi}$ in the transform; Lax's (and 556's) $\mathcal{F}(f)(x) = \int e^{-ix\cdot\xi}f(\xi)\,d\xi$ is $2\pi C$, and many physics texts split the factor as $\frac{1}{\sqrt{2\pi}}$ in both directions. In any normalization, $|C(\lambda)| \le \frac{1}{2\pi}\int|f|$: the transform is a bounded linear map from $L^1$ to $L^\infty$, [[§21 Boundedness and Continuity#^ex-21-2|556 Ex. §21.2]].
+> - Normalizations differ between books. Powers puts $\frac{1}{2\pi}$ in the transform; Lax's (and 556's) $\mathcal{F}(f)(x) = \int e^{-ix\cdot\xi}f(\xi)\,d\xi$ is $2\pi C$, and many physics texts split the factor as $\frac{1}{\sqrt{2\pi}}$ in both directions. In any normalization, $|C(\lambda)| \le \frac{1}{2\pi}\int|f|$: the transform is a bounded linear map from $L^1$ to $L^\infty$, [[§26 Boundedness and Continuity#^ex-26-2|556 Ex. §26.2]].
 
 The lecture reached (5) and (6) as Powers reached (7) of §14 ([[§14 Fourier Integral#^rem-14-1|Remark: Why It Works]]): on $-a < x < a$ the complex series of Theorem §15.1 reads $f(x) = \sum_n \frac\pi a C_a\big(\frac{n\pi}a\big)e^{in\pi x/a}$ with $C_a(\lambda) = \frac{1}{2\pi}\int_{-a}^{a} f(x)e^{-i\lambda x}\,dx$, a Riemann sum with spacing $\Delta\lambda = \pi/a$, which suggests (5) as $a \to \infty$. The real theorem makes this precise.
 

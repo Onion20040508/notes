@@ -16,6 +16,7 @@ Functional analysis is, in short, infinite-dimensional linear algebra. In finite
 ## Sections
 - [[§1 Linear Spaces]]
 - [[§2 Linear Maps, Convexity, and Linear Functionals]]
+- [[§3 ℝⁿ and ℓ²]]
 
 ## Central results
 - [[Every Subspace Has a Complement]] (§1.8)

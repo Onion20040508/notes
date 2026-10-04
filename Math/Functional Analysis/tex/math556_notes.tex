@@ -783,6 +783,27 @@ On $\mathbb{R}^n$ linear functionals are completely explicit because a basis is 
 \end{rembox}
 
 % ============================================================================
+% SECTION 3: R^n AND ELL^2 (EXAMPLES REVISITED)
+% ============================================================================
+
+\section{$\mathbb{R}^n$ and $\ell^2$}\label{sec:rev-ch1}
+
+\roadmark{Stage: algebra}{Examples revisited. Where $\mathbb{R}^n$ and $\ell^2$ appear in Chapter~1; each part ends with the space's other appearances.}
+
+\subsection{$\mathbb{R}^n$ and the Plane}
+
+Chapter~1 uses $\mathbb{R}^n$, mostly the plane, as the picture for each algebraic notion. Example~\ref{ex:rn} is the model linear space and Example~\ref{ex:r-oplus-r2-r3} the model direct sum. In $\mathbb{R}^2$ a span is a line (Example~\ref{ex:span-single-vector}), a quotient is the family of parallel translates of a line (Example~\ref{ex:geometry-equivalence-classes}, read as an orthogonal complement in Remark~\ref{rem:quotients-orthogonal-complements}), a complement is any other line (Example~\ref{ex:complements-line-plane}), and a convex hull fills in a star (Example~\ref{ex:convex-hull-star}). Example~\ref{ex:functionals-rn} shows that every linear functional on $\mathbb{R}^n$ is a dot product; Remark~\ref{rem:why-abstract-tools-needed} says why a general space needs Hahn--Banach instead.
+
+\noindent\textit{Chain:} Chapter~2 (\ref{sec:rev-ch2}) $\rightarrow$
+
+\subsection{$\ell^2$}
+
+$\ell^2$ appears once, before it is defined: in Remark~\ref{rem:lin-spaces-5} the finitely supported sequences have orthogonal complement $\{0\}$, so the orthogonal form of $X \cong X/Y \oplus Y$ (Corollary~\ref{cor:orth}) needs a closed subspace of a complete space, which is what Theorem~\ref{thm:orth-decomp} will assume.
+
+\noindent\textit{Chain:} Chapter~3 (\ref{sec:rev-ch3}) $\rightarrow$
+
+
+% ============================================================================
 % CHAPTER 2: THE HAHN-BANACH THEOREM
 % ============================================================================
 
@@ -1649,6 +1670,21 @@ Step 5 is the only place the complex structure does real work. For an arbitrary 
 % Lecture 2 was cut short by a tornado warning during a second gauge example
 % (a non-standard convex set K with vertices at (+-2,0), (0,+-2) drawn on the board).
 % That example was not completed and is omitted here; to be picked up next lecture.
+
+
+% ============================================================================
+% SECTION 9: R^n AND ITS UNIT BALLS (EXAMPLES REVISITED)
+% ============================================================================
+
+\section{$\mathbb{R}^n$ and Its Unit Balls}\label{sec:rev-ch2}
+
+\roadmark{Stage: algebra}{Examples revisited. $\mathbb{R}^n$ in Chapter~2: the three norms before norms are defined.}
+
+\subsection{$\mathbb{R}^n$ and Its Unit Balls}
+
+Chapter~2 meets the three standard norms of $\mathbb{R}^n$ before norms are defined, as the positive homogeneous subadditive functions $p_1, p_2, p_3$ of Example~\ref{ex:three-p}; their sets $\{p < 1\}$ in the plane are the disk, the square and the diamond (Example~\ref{ex:p-sets}). The level sets of $\ell(x) = a \cdot x$ are the hyperplanes and half-spaces of the separation theorem (Example~\ref{ex:level-sets-linear-functionals-rn}). The gauge reads the picture backwards: the gauge of a half-plane vanishes on a whole half-plane (Example~\ref{ex:gauge-vanishing-off-origin}), the gauge of the unit disk is the Euclidean length (Example~\ref{ex:gauge-unit-disk}), and the gauge of a square is a multiple of the maximum norm (Example~\ref{ex:gauge-square}).
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~1 (\ref{sec:rev-ch1}) $\cdot$ Chapter~3 (\ref{sec:rev-ch3}) $\rightarrow$
 
 
 % ============================================================================
@@ -2564,6 +2600,33 @@ Well-definedness, homogeneity and subadditivity were proved in Theorem~\ref{thm:
 \end{proof}
 
 % ============================================================================
+% SECTION 13: R^n, C[a,b] AND ELL^p (EXAMPLES REVISITED)
+% ============================================================================
+
+\section{$\mathbb{R}^n$, $C[a,b]$ and $\ell^p$}\label{sec:rev-ch3}
+
+\roadmark{Stage: norms}{Examples revisited. $\mathbb{R}^n$, $C[a,b]$ and, ahead of its definition, $\ell^p$ in Chapter~3.}
+
+\subsection{$\mathbb{R}^n$}
+
+The functions $p_1, p_2, p_3$ of Chapter~2 become the norms $\|\cdot\|_2$, $\|\cdot\|_\infty$, $\|\cdot\|_1$, joined by $\|\cdot\|_p$ (Example~\ref{ex:norms-rn}); their unit balls are the pictures of the norms (Remark~\ref{rem:relation-functions-p-chapter-2}). The plane separates algebraic from metric interior points (Example~\ref{ex:interior-point-not-metric-interior-point}) and shows completion as closure (Example~\ref{ex:completions-subsets-rn}). Theorem~\ref{prop:norms-equiv} makes all norms on $\mathbb{R}^n$ equivalent and Corollary~\ref{cor:findim-complete} makes $\mathbb{R}^n$ complete under each: the two facts that fail in infinite dimensions.
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~2 (\ref{sec:rev-ch2}) $\cdot$ Chapter~4 (\ref{sec:rev-ch4}) $\rightarrow$
+
+\subsection{$C[a,b]$ and $C^k[a,b]$}
+
+$C[a,b]$ with the maximum norm is the first infinite-dimensional Banach space (Theorem~\ref{thm:Cab-banach}). The same set with an $L^p$ norm, $1 \le p < \infty$, is a different normed space, with completion $L^p[a,b]$ (Remark~\ref{rem:norm-decides-not-set}; proved in Chapter~4). Likewise $C^2[a,b]$ with a $C^1$ norm (Example~\ref{ex:c2-a-b-c1-norm}) is not complete, and its completion is $C^1[a,b]$ (Proposition~\ref{prop:C2-incomplete}). Remark~\ref{rem:new-from-old} draws the consequence: $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ on $C[a,b]$ are not equivalent.
+
+\noindent\textit{Chain:} Chapter~4 (\ref{sec:rev-ch4}) $\rightarrow$
+
+\subsection{$\ell^p$}
+
+$\ell^p$ is defined only in Chapter~4, but Chapter~3 already uses it. Remark~\ref{rem:comparison-l-p-proof} compares the completion proof with the completeness proof for $\ell^p$; on $\ell^1$ the norms $\|\cdot\|_1$ and $\|\cdot\|_2$ are not equivalent (Remark~\ref{rem:finite-dimension-necessary}); and the finitely supported sequences $c_{00}$ form a subspace of $\ell^p$ that is not closed (Remark~\ref{rem:finite-dimension-necessary-2}).
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~1 (\ref{sec:rev-ch1}) $\cdot$ Chapter~4 (\ref{sec:rev-ch4}) $\rightarrow$
+
+
+% ============================================================================
 % CHAPTER 4: INFINITE-DIMENSIONAL SPACES
 % ============================================================================
 
@@ -3365,6 +3428,49 @@ Compactness is what allows a limit to be produced when no formula for it exists.
 
 The response is not to give up on compactness but to weaken the notion of convergence until it returns. A bounded sequence in a suitable infinite-dimensional space does have a subsequence converging \emph{weakly}, and the closed unit ball is compact in a weaker topology. This is the direction the course takes later; the present theorem is what makes it necessary.
 \end{rembox}
+
+% ============================================================================
+% SECTION 19: R^n, C[a,b], ELL^p AND L^p (EXAMPLES REVISITED)
+% ============================================================================
+
+\section{$\mathbb{R}^n$, $C[a,b]$, $\ell^p$ and $L^p$}\label{sec:rev-ch4}
+
+\roadmark{Stage: norms}{Examples revisited. $\ell^p$ and $L^p$ side by side, and what Chapter~4 adds about $\mathbb{R}^n$ and $C[a,b]$.}
+
+\subsection{$\mathbb{R}^n$}
+
+Chapter~4 starts and ends in $\mathbb{R}^n$. Cauchy--Schwarz in $\mathbb{R}^n$ (Proposition~\ref{prop:cs}) opens the chain Young--H\"older--Minkowski, and H\"older on $\mathbb{R}^n$ or $\mathbb{C}^n$ is the finitely supported case of H\"older for sequences (Remark~\ref{rem:holder-2}). The closed unit ball of $\mathbb{F}^n$ is compact under any norm (Example~\ref{ex:closed-unit-ball-fn}), and by Theorem~\ref{thm:ball-noncompact} this happens only in finite dimension.
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~3 (\ref{sec:rev-ch3}) $\cdot$ Chapter~5 (\ref{sec:rev-ch5}) $\rightarrow$
+
+\subsection{$C[a,b]$}
+
+Here $C[a,b]$ is the space from which $L^p$ is built. Continuous functions are not dense in $L^\infty$ (Proposition~\ref{prop:C-not-dense}), but for $1 \le p < \infty$ the completion of $C[a,b]$ in the $L^p$ norm is $L^p[a,b]$ (Proposition~\ref{prop:completion-L1}), which proves the claim of Chapter~3. In Riesz's lemma, the functions in $C[0,1]$ vanishing at $0$ show that the constant $\theta = 1$ cannot be attained (Proposition~\ref{prop:riesz-sharp}).
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~3 (\ref{sec:rev-ch3}) $\cdot$ Chapter~5 (\ref{sec:rev-ch5}) $\rightarrow$
+
+\subsection{$\ell^p$}
+
+\ref{sec:holder}--\ref{sec:minkowski} build $\ell^p$ from the inequalities for sequences. The spaces are nested, with norms that are not equivalent (Proposition~\ref{prop:lp-nested}); each is a Banach space (Theorem~\ref{thm:lp-complete}); and the unit vectors $e_j$ show that the closed unit ball of $\ell^p$ is not compact (Example~\ref{ex:separated-sequence-l-p}).
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~3 (\ref{sec:rev-ch3}) $\cdot$ Chapter~5 (\ref{sec:rev-ch5}) $\rightarrow$
+
+\subsection{$L^p$}
+
+\ref{sec:completion-L1-sec} repeats the construction for functions, with the integral as a weighted sum (Remark~\ref{rem:integral-sum}), and the results pair off:
+\begin{center}
+\begin{tabular}{lll}
+ & sequences & functions \\ \hline
+H\"older & Theorem~\ref{thm:holder-seq} & Theorem~\ref{thm:holder-fn} \\
+Minkowski & Theorem~\ref{thm:minkowski-seq} & Theorem~\ref{thm:minkowski-fn} \\
+the space & Definition~\ref{def:lp} & Definition~\ref{def:Lp} \\
+Banach & Theorem~\ref{thm:lp-complete} & Theorem~\ref{thm:Lp-complete}
+\end{tabular}
+\end{center}
+What has no sequence counterpart is density (Theorem~\ref{thm:density}), and with it the first case of the pattern ``true for $p < \infty$, false for $p = \infty$'' (Remark~\ref{rem:completion-L1-sec}).
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~3 (\ref{sec:rev-ch3}) $\cdot$ Chapter~5 (\ref{sec:rev-ch5}) $\rightarrow$
+
 
 % ============================================================================
 % CHAPTER 5: INNER PRODUCT SPACES
@@ -4555,200 +4661,6 @@ A normed linear space $X$ is \textbf{separable} if it has a countable dense subs
 \laxref{\S5.1, definition of separable space}
 \end{defbox}
 
-\subsubsection*{Examples of Separable and Non-Separable Spaces}
-
-\begin{propbox}[{{$\ell^p$ is Separable for $1 \le p < \infty$}}]\boxlabel{prop:lp-separable}
-Let $1 \le p < \infty$, and let $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q}$ if $\mathbb{F} = \mathbb{R}$ and $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q} + i\mathbb{Q}$ if $\mathbb{F} = \mathbb{C}$. The set
-\[
-D = \bigcup_{J = 1}^\infty \bigl\{ (p_1, \ldots, p_J, 0, 0, \ldots) : p_j \in \mathbb{Q}_{\mathbb{F}} \bigr\}
-\]
-is countable and dense in $\ell^p$. Hence $\ell^p$ is separable.
-\end{propbox}
-
-\begin{proof}
-\emph{Countable.} For fixed $J$ the $J$-th set is in bijection with $\mathbb{Q}_{\mathbb{F}}^J$, a finite product of countable sets, hence countable; a countable union of countable sets is countable.
-
-\emph{Dense.} Let $a = (a_j) \in \ell^p$ and $\varepsilon > 0$. Since $\sum_j |a_j|^p < \infty$, its tail is small: there is $J$ with $\sum_{j > J} |a_j|^p < (\varepsilon/2)^p$. Since $\mathbb{Q}_{\mathbb{F}}$ is dense in $\mathbb{F}$, choose $p_j \in \mathbb{Q}_{\mathbb{F}}$ with $|a_j - p_j| < \frac{\varepsilon}{2} J^{-1/p}$ for $j = 1, \ldots, J$, and let $d = (p_1, \ldots, p_J, 0, \ldots) \in D$. Then
-\[
-\|a - d\|_p^p = \sum_{j=1}^J |a_j - p_j|^p + \sum_{j > J} |a_j|^p < J \cdot \frac{(\varepsilon/2)^p}{J} + \Bigl(\frac{\varepsilon}{2}\Bigr)^p \le \varepsilon^p,
-\]
-so $\|a - d\|_p < \varepsilon$.
-\end{proof}
-
-\begin{center}
-\begin{tikzpicture}[x=0.55cm, y=2.4cm, >=stealth]
-    \draw[->] (0.3,0) -- (16.6,0) node[right] {$j$};
-    \draw[->] (0.3,0) -- (0.3,1.1) node[above] {$|a_j|$};
-    \foreach \j in {1,...,16} {
-        \pgfmathsetmacro{\h}{0.95/(1+0.35*(\j-1)^1.3)}
-        \ifnum\j<8
-            \fill[gray!35] (\j-0.3,0) rectangle (\j+0.3,\h);
-            \fill[red!75!black] (\j,{\h+0.04*sin(97*\j)}) circle (1.6pt);
-        \else
-            \fill[blue!25] (\j-0.3,0) rectangle (\j+0.3,\h);
-        \fi
-    }
-    \draw[dashed] (7.5,0) -- (7.5,1.0) node[above] {$J$};
-    \node[red!75!black, anchor=west] at (1.2,1.05) {rational $p_j$ close to $a_j$};
-    \node[blue!60!black] at (12,0.45) {tail $\sum_{j > J} |a_j|^p < (\varepsilon/2)^p$, replaced by $0$};
-\end{tikzpicture}
-\end{center}
-The two moves of the proof: cut off the tail, which is small because the series converges, and replace the finitely many remaining coordinates by nearby rationals. Both need $p < \infty$: the tail of a convergent series is small, but a bounded sequence need not have a small tail in the supremum norm.
-
-%% >>> ADDED: result (from HW5, Problem 1(a))
-\begin{propbox}[{{$c_0$ is a Separable Banach Space}}]\boxlabel{prop:c0}
-Let $c_0 = \ell^\infty_0 = \{ a = \{a_n\}_{n \in \mathbb{N}} : a_n \in \mathbb{F},\ \lim_{n \to \infty} a_n = 0 \}$ with $|a| = \max_n |a_n|$. Then $(c_0, |\cdot|)$ is a Banach space, and it is separable.
-\end{propbox}
-
-\begin{proof}
-(HW5, Problem 1(a).) \textbf{Step 1: the maximum exists.} Let $a \in c_0$. If $a_n = 0$ for all $n$, then $\max_n |a_n| = 0$. Otherwise choose $m$ with $\delta = |a_m| > 0$. Since $a_n \to 0$, there is $N$ with $|a_n| < \delta$ for all $n > N$. The finite set $\{|a_1|, \ldots, |a_N|\}$ contains $|a_m| = \delta$ (as $m \le N$), so it has a maximum $M \ge \delta$, and $|a_n| < \delta \le M$ for $n > N$. Hence $\max_n |a_n| = M$ exists, and $|a_n| \le |a|$ for every $n$.
-
-\textbf{Step 2: $c_0$ is a linear space.} The set of all sequences in $\mathbb{F}$ with termwise operations is a linear space: each axiom, evaluated at an index $n$, is the corresponding axiom of $\mathbb{F}$. $c_0$ is a linear subspace of it: the zero sequence tends to $0$, and if $a_n \to 0$, $b_n \to 0$ and $\alpha, \beta \in \mathbb{F}$, then $|\alpha a_n + \beta b_n| \le |\alpha|\,|a_n| + |\beta|\,|b_n| \to 0$.
-
-\textbf{Step 3: $|\cdot|$ is a norm.} \emph{Positivity:} $|a| \ge 0$, and if $|a| = 0$ then $0 \le |a_n| \le |a| = 0$ for all $n$, so $a = 0$. \emph{Homogeneity:} for $\alpha \in \mathbb{F}$, $|\alpha a_n| = |\alpha|\,|a_n| \le |\alpha|\,|a|$ for all $n$, with equality at an index where $|a_n| = |a|$; so $|\alpha a| = |\alpha|\,|a|$. \emph{Triangle inequality:} for every $n$, $|a_n + b_n| \le |a_n| + |b_n| \le |a| + |b|$; taking the maximum over $n$, $|a + b| \le |a| + |b|$.
-
-\textbf{Step 4: completeness.} Let $\{a^{(k)}\}_{k \ge 1}$ be a Cauchy sequence in $c_0$, $a^{(k)} = \{a^{(k)}_n\}_n$. For each $n$ and all $k, m$, $|a^{(k)}_n - a^{(m)}_n| \le |a^{(k)} - a^{(m)}|$, so $\{a^{(k)}_n\}_k$ is a Cauchy sequence in $\mathbb{F}$; since $\mathbb{F}$ is complete it converges, and we put $a_n = \lim_{k \to \infty} a^{(k)}_n$ and $a = \{a_n\}$.
-
-\emph{A uniform estimate.} Let $\varepsilon > 0$ and choose $N$ with $|a^{(k)} - a^{(m)}| < \varepsilon$ for all $k, m \ge N$. Then $|a^{(k)}_n - a^{(m)}_n| < \varepsilon$ for all $n$ and all $k, m \ge N$. Fix $n$ and $k \ge N$ and let $m \to \infty$; since $a^{(m)}_n \to a_n$ and non-strict inequalities survive limits,
-\begin{equation}\label{eq:c0-unif}
-|a^{(k)}_n - a_n| \le \varepsilon \qquad \text{for all } n \text{ and all } k \ge N.
-\end{equation}
-
-\emph{$a \in c_0$.} With $\varepsilon$ and $N$ as above, $a^{(N)} \in c_0$, so there is $n_0$ with $|a^{(N)}_n| < \varepsilon$ for $n > n_0$. By \eqref{eq:c0-unif}, for $n > n_0$,
-\[
-|a_n| \le |a_n - a^{(N)}_n| + |a^{(N)}_n| < \varepsilon + \varepsilon = 2\varepsilon .
-\]
-As $\varepsilon > 0$ was arbitrary, $a_n \to 0$, i.e.\ $a \in c_0$.
-
-\emph{Convergence.} For $k \ge N$, $a^{(k)} - a \in c_0$ by Step 2, and by \eqref{eq:c0-unif} every term of it has modulus at most $\varepsilon$; so $|a^{(k)} - a| \le \varepsilon$. Hence $a^{(k)} \to a$ in $c_0$, and $(c_0, |\cdot|)$ is a Banach space.
-
-\textbf{Step 5: $c_0$ is separable.} Let
-\[
-D = \bigcup_{J=1}^\infty \bigl\{ (q_1, \ldots, q_J, 0, 0, \ldots) : q_j \in \mathbb{Q}_{\mathbb{F}} \bigr\}.
-\]
-Each element of $D$ is eventually $0$, so $D \subset c_0$. For fixed $J$ the $J$-th set is in bijection with $\mathbb{Q}_{\mathbb{F}}^J$, which is countable, and a countable union of countable sets is countable; so $D$ is countable.
-
-Let $a \in c_0$ and $\varepsilon > 0$. Choose $J$ with $|a_n| < \varepsilon$ for all $n > J$, and, since $\mathbb{Q}_{\mathbb{F}}$ is dense in $\mathbb{F}$, choose $q_j \in \mathbb{Q}_{\mathbb{F}}$ with $|a_j - q_j| < \varepsilon$ for $j = 1, \ldots, J$. For $d = (q_1, \ldots, q_J, 0, \ldots) \in D$, every term of $a - d$ has modulus $< \varepsilon$: $|a_j - q_j| < \varepsilon$ for $j \le J$ and $|a_n - 0| < \varepsilon$ for $n > J$. Since the maximum in Step 1 is attained at some index, $|a - d| < \varepsilon$. Hence $D$ is dense, and $c_0$ is separable.
-\end{proof}
-
-\begin{rembox}\label{rem:onb-10}
-$c_0$ sits inside $\ell^\infty$ with the same norm (on $c_0$ the supremum is a maximum), and it is closed there: Step 4 is exactly the statement that a uniform limit of sequences tending to $0$ tends to $0$. The truncation argument of Technique~15 works for $c_0$ because the tail of an element of $c_0$ is small in the supremum norm --- which is precisely what fails for a general bounded sequence.
-\end{rembox}
-%% <<< END ADDED
-
-
-\begin{propbox}[{{$\ell^\infty$ is Not Separable}}]\boxlabel{prop:linfty-nonsep}
-$\ell^\infty$ is not separable.
-\end{propbox}
-
-\begin{proof}
-%% >>> ADDED: proof not covered in lecture (the argument of HW5, Problem 1(b), transplanted to sequences)
-(Not covered in lecture; the argument of HW5, Problem 1(b).) For a subset $S \subset \mathbb{N}$ let $\chi_S \in \ell^\infty$ be the sequence with $n$-th term $1$ if $n \in S$ and $0$ otherwise. If $S \neq T$, some $n$ lies in exactly one of them, so $|(\chi_S)_n - (\chi_T)_n| = 1$, while every term of $\chi_S - \chi_T$ has modulus at most $1$; hence $\|\chi_S - \chi_T\|_\infty = 1$. The set of subsets of $\mathbb{N}$ is uncountable (Cantor). If $D$ were a countable dense subset of $\ell^\infty$, choose for each $S$ some $d_S \in D$ with $\|\chi_S - d_S\|_\infty < \frac12$. For $S \neq T$, $d_S = d_T$ would give $1 = \|\chi_S - \chi_T\|_\infty < \frac12 + \frac12$, which is impossible; so $S \mapsto d_S$ would map an uncountable set one-to-one into the countable set $D$. Hence $\ell^\infty$ is not separable.
-%% <<< END ADDED
-\end{proof}
-
-
-\begin{propbox}[{{$L^p(E)$ is Separable for $1 \le p < \infty$}}]\boxlabel{prop:Lp-separable}
-Let $E \subset \mathbb{R}^n$ be measurable and $1 \le p < \infty$. Let $D$ be the set of functions on $E$ of the form
-\[
-\varphi = \sum_{j=1}^N a_j\, \chi_{R_j \cap E}, \qquad N \in \mathbb{N},\ a_j \in \mathbb{Q}_{\mathbb{F}},\ R_j \text{ a rectangle with rational endpoints},
-\]
-where a rectangle is a product $\prod_{i=1}^n [\alpha_i, \beta_i)$. Then $D$ is countable and dense in $L^p(E)$. Hence $L^p(E)$ is separable.
-\end{propbox}
-
-\begin{proof}
-Wu's route: continuous functions are dense in $L^p$ (taken for granted), a continuous function is approximated by step functions, and the step functions can be taken with rational heights and rational rectangles. The details:
-
-\emph{Countable.} A rectangle with rational endpoints is determined by $2n$ rationals, so there are countably many; for fixed $N$ the choices of $(a_1, \ldots, a_N, R_1, \ldots, R_N)$ form a finite product of countable sets; take the union over $N$.
-
-\emph{Dense.} Let $f \in L^p(E)$ and $\varepsilon > 0$. Extend $f$ by $0$ to $\tilde{f}$ on $\mathbb{R}^n$; then $\tilde{f} \in L^p(\mathbb{R}^n)$ with the same norm.
-
-\emph{Step 1: a continuous function.} By Theorem~\ref{thm:density} (with $\Omega = \mathbb{R}^n$) there is a continuous $g$ with compact support and $\|\tilde{f} - g\|_{L^p(\mathbb{R}^n)} < \varepsilon/3$. Choose $K \in \mathbb{N}$ with the support of $g$ inside $Q = [-K, K)^n$.
-
-\emph{Step 2: a step function.} $g$ is uniformly continuous on the compact set $[-K,K]^n$. Let $\eta > 0$ with $\eta\,(2K)^{n/p} < \varepsilon/3$, and choose $\delta > 0$ with $|g(x) - g(y)| < \eta$ whenever $|x - y| < \delta$. Choose $m$ with $\sqrt{n}\,2^{-m} < \delta$ and partition $Q$ into the cubes $C_1, \ldots, C_M$ of the form $\prod_i [k_i 2^{-m}, (k_i + 1) 2^{-m})$, $k_i \in \mathbb{Z}$; they have rational endpoints. Let $c_k = g(z_k)$, $z_k$ the lower corner of $C_k$, and $\psi = \sum_k c_k \chi_{C_k}$. For $x \in C_k$, $|x - z_k| < \delta$, so $|g(x) - \psi(x)| < \eta$; outside $Q$ both vanish. Hence
-\[
-\|g - \psi\|_{L^p(\mathbb{R}^n)}^p = \int_Q |g - \psi|^p < \eta^p (2K)^n, \qquad \|g - \psi\|_{L^p(\mathbb{R}^n)} < \eta\,(2K)^{n/p} < \frac{\varepsilon}{3}.
-\]
-
-\emph{Step 3: rational heights.} Choose $q_k \in \mathbb{Q}_{\mathbb{F}}$ with $|c_k - q_k| < \eta$ and let $\tilde{\varphi} = \sum_k q_k \chi_{C_k}$. As in Step 2, $|\psi - \tilde{\varphi}| < \eta$ on $Q$ and $0$ outside, so $\|\psi - \tilde{\varphi}\|_{L^p(\mathbb{R}^n)} < \varepsilon/3$.
-
-\emph{Step 4: restrict to $E$.} $\varphi = \tilde{\varphi}|_E = \sum_k q_k \chi_{C_k \cap E} \in D$, and since $\tilde{f} = f$ on $E$,
-\[
-\|f - \varphi\|_{L^p(E)} \le \|\tilde{f} - \tilde{\varphi}\|_{L^p(\mathbb{R}^n)} \le \|\tilde{f} - g\| + \|g - \psi\| + \|\psi - \tilde{\varphi}\| < \varepsilon. \qedhere
-\]
-\end{proof}
-
-\begin{center}
-\begin{tikzpicture}[x=1.6cm, y=1.3cm, >=stealth]
-    \draw[->] (-0.1,0) -- (4.3,0) node[right] {$x$};
-    \draw[->] (0,-0.1) -- (0,2.3);
-    \foreach \k in {0,...,7} {
-        \pgfmathsetmacro{\xa}{0.5*\k}
-        \pgfmathsetmacro{\c}{1.2+0.5*sin(deg(0.5*\k*1.3))+0.15*(0.5*\k)}
-        \pgfmathsetmacro{\q}{round(\c*4)/4}
-        \fill[red!15] (\xa,0) rectangle (\xa+0.5,\q);
-        \draw[red!75!black, thick] (\xa,\q) -- (\xa+0.5,\q);
-        \draw[red!75!black] (\xa,0) -- (\xa,\q);
-    }
-    \draw[red!75!black] (4,0) -- (4,{round((1.2+0.5*sin(deg(3.5*1.3))+0.15*3.5)*4)/4});
-    \draw[thick, domain=0:4, samples=80] plot (\x, {1.2+0.5*sin(deg(\x*1.3))+0.15*\x});
-    \node[anchor=west] at (4.05,1.85) {$g$};
-    \node[red!75!black, anchor=west] at (4.05,1.25) {$\varphi = \sum q_k \chi_{C_k}$};
-    \foreach \x in {0,0.5,...,4} \draw (\x,0) -- (\x,-0.05);
-\end{tikzpicture}
-\end{center}
-A continuous $g$ and a step function on cubes with rational endpoints and rational heights (here $n = 1$, heights rounded to quarters). The $L^p$ distance is small because it is an \emph{integral} of a small difference over a bounded set. In $L^\infty$ the distance is a supremum, and this argument breaks down.
-
-\begin{propbox}[{{$L^\infty(E)$ is Not Separable}}]\boxlabel{prop:Linfty-nonsep}
-If $E \subset \mathbb{R}^n$ is measurable with $m(E) > 0$, then $L^\infty(E)$ is not separable.
-\end{propbox}
-
-\begin{proof}
-(Stated in lecture without proof. HW5, Problem 1(b) is the case $E = [0,1]$; the general case below is Claude's.) Here $\|f\|_\infty = \inf\{M \ge 0 : |f| \le M \text{ a.e.}\}$, functions equal almost everywhere being identified.
-
-\textbf{Step 1: the case $E = [0,1]$ (HW5).} For $t \in (0,1]$ let $f_t = \chi_{[0,t]}$. Let $0 < s < t \le 1$. Then $|f_t - f_s| = \chi_{(s,t]}$, which is at most $1$ everywhere, so $\|f_t - f_s\|_\infty \le 1$. It equals $1$ on $(s,t]$, a set of measure $t - s > 0$; so for any $M < 1$ the inequality $|f_t - f_s| \le M$ fails on a set of positive measure, and $\|f_t - f_s\|_\infty \ge 1$. Hence $\|f_t - f_s\|_\infty = 1$ for $s \neq t$.
-
-Suppose $D$ is dense. For each $t \in (0,1]$ choose $d_t \in D$ with $\|f_t - d_t\|_\infty < \frac12$. If $s \neq t$ and $d_s = d_t$, then
-\[
-1 = \|f_s - f_t\|_\infty \le \|f_s - d_s\|_\infty + \|d_t - f_t\|_\infty < \tfrac12 + \tfrac12 = 1,
-\]
-a contradiction. So $t \mapsto d_t$ is one-to-one from the uncountable set $(0,1]$ into $D$, and $D$ is uncountable.
-
-%% >>> ADDED: general measurable E (Claude; not part of the homework)
-\textbf{Step 2: general $E$ with $m(E) > 0$.} (Not part of the homework.) Let $Q_t = [-t,t]^n$ and $\varphi(t) = m(E \cap Q_t)$ for $t \ge 0$. $\varphi$ is non-decreasing and finite. It is continuous: if $t_k \uparrow t$, then $\bigcup_k Q_{t_k} = (-t,t)^n$, which differs from $Q_t$ by a null set, so $\varphi(t_k) \to \varphi(t)$ by continuity of measure from below; if $t_k \downarrow t$, then $\bigcap_k Q_{t_k} = Q_t$ and the measures are finite, so $\varphi(t_k) \to \varphi(t)$ from above. Also $\varphi(0) = 0$ and $\varphi(t) \to m(E) > 0$ as $t \to \infty$. Let $\gamma = m(E)$ if $m(E) < \infty$ and $\gamma = 1$ otherwise. By the intermediate value theorem, for each $c \in (0, \gamma)$ there is $t_c$ with $\varphi(t_c) = c$; let $f_c = \chi_{E \cap Q_{t_c}}$. For $c < c'$, $\varphi(t_c) < \varphi(t_{c'})$ forces $t_c < t_{c'}$, so $f_{c'} - f_c = \chi_{E \cap (Q_{t_{c'}} \setminus Q_{t_c})}$, the indicator of a set of measure $c' - c > 0$. As in Step 1, $\|f_{c'} - f_c\|_\infty = 1$, and the argument of Step 1, with the uncountable index set $(0, \gamma)$, shows that no countable set is dense in $L^\infty(E)$.
-%% <<< END ADDED
-
-With the working definition of $L^\infty$ in Definition~\ref{def:Lp} (bounded functions with the supremum norm) the same families work verbatim, since then $\|\chi_A\| = 1$ for every nonempty $A$.
-\end{proof}
-
-
-%% >>> ADDED: figure (not drawn in lecture)
-\begin{center}
-\begin{tikzpicture}[x=8cm, y=1.8cm, >=stealth]
-    \draw[->] (-0.03,0) -- (1.1,0) node[right] {$x$};
-    \draw[->] (0,-0.05) -- (0,1.35);
-    \node[left] at (0,1) {$1$};
-    \fill[red!15] (0.45,0) rectangle (0.7,1);
-    \draw[thick, blue!70!black] (0,1.03) -- (0.45,1.03);
-    \draw[thick, blue!70!black] (0.45,0.02) -- (1,0.02);
-    \draw[thick] (0,0.97) -- (0.7,0.97);
-    \draw[thick] (0.7,0) -- (1,0);
-    \draw[dotted] (0.45,0) -- (0.45,1); \draw[dotted] (0.7,0) -- (0.7,1);
-    \node[below] at (0.45,0) {$s$}; \node[below] at (0.7,0) {$t$}; \node[below] at (1,0) {$1$};
-    \node[blue!70!black, anchor=south] at (0.2,1.05) {$f_s = \chi_{[0,s]}$};
-    \node[anchor=south] at (0.62,1.1) {$f_t = \chi_{[0,t]}$};
-    \draw[->, red!75!black] (0.86,0.55) -- (0.6,0.5);
-    \node[red!75!black, anchor=west] at (0.86,0.55) {$|f_t - f_s| = 1$ on $(s,t]$};
-\end{tikzpicture}
-\end{center}
-Any two of the functions $f_t = \chi_{[0,t]}$ differ by $1$ on an interval of positive length, so they are at $L^\infty$-distance $1$: uncountably many points, pairwise $1$ apart. Balls of radius $\frac12$ about them are disjoint, and a dense set would need a point in each. In $L^p$, $p < \infty$, the same two functions are at distance $(t-s)^{1/p}$, which is small when $t$ is close to $s$.
-%% <<< END ADDED
-
-
-\begin{rembox}\label{rem:onb-7}
-The hypothesis $m(E) > 0$ is added here: if $m(E) = 0$, then $L^\infty(E) = \{0\}$, which is separable. Wu stressed that measure theory supplies the examples of functional analysis (``I would suggest you really study real methods \ldots\ measure theory is becoming very useful now''): without $L^p$ the course has few examples beyond sequence spaces.
-\end{rembox}
-
 \subsubsection*{Countable Orthonormal Bases}
 
 \begin{thmbox}[Separable Hilbert Spaces and Countable Bases]\boxlabel{thm:sep-countable-onb}
@@ -4767,7 +4679,7 @@ the union over $n = 1, 2, \ldots$ (only up to the number of basis vectors if the
 \[
 \Bigl\| \sum_{j=1}^n \bigl( (x, e_j) - a_j \bigr) e_j \Bigr\|^2 = \sum_{j=1}^n |(x, e_j) - a_j|^2 < n \cdot \frac{\varepsilon^2}{4n} = \frac{\varepsilon^2}{4},
 \]
-so $\bigl\| x - \sum_{j=1}^n a_j e_j \bigr\| < \varepsilon/2 + \varepsilon/2 = \varepsilon$. The tail of the expansion is small, as for $\ell^p$.
+so $\bigl\| x - \sum_{j=1}^n a_j e_j \bigr\| < \varepsilon/2 + \varepsilon/2 = \varepsilon$. The tail of the expansion is small, as for $\ell^p$ (Proposition~\ref{prop:lp-separable} below).
 \end{proof}
 
 For the converse, the countable dense set has to be turned into an orthonormal set, which is the Gram--Schmidt process.
@@ -4878,6 +4790,246 @@ The isomorphism is ``take coordinates'': $x \mapsto ((x, e_j))_j$. Every result 
 \begin{rembox}\label{rem:onb-9}
 On the board: ``isomorphic either to $\mathbb{R}^n$, $n \in \mathbb{N}$, or $\ell^2$'' --- the real case. Over $\mathbb{C}$ the finite-dimensional models are $\mathbb{C}^n$, and $n = 0$ covers $H = \{0\}$. By Theorem~\ref{thm:sep-countable-onb} a separable $H$ has a countable orthonormal basis; the finite case gives $\mathbb{F}^n$ and the infinite case $\ell^2$.
 \end{rembox}
+
+% ============================================================================
+% SECTION 25: SEQUENCE AND FUNCTION SPACES (EXAMPLES REVISITED)
+% ============================================================================
+
+\section{Sequence and Function Spaces}\label{sec:rev-ch5}
+
+\roadmark{Stage: inner products}{Examples revisited. The spaces of Chapter~5, with the separable and non-separable examples.}
+
+\subsection{$\mathbb{R}^n$ and $\mathbb{C}^n$}
+
+The dot product is the model inner product, with the conjugate on the second slot over $\mathbb{C}$ (Example~\ref{ex:euclidean-spaces}). Being finite-dimensional, $\mathbb{R}^n$ and $\mathbb{C}^n$ are Hilbert spaces (Example~\ref{ex:hilbert-spaces}), and for $n \ge 2$ the norm $\|\cdot\|_p$ comes from an inner product only for $p = 2$ (Corollary~\ref{cor:only-p2}). In $\mathbb{R}^n$ a complete orthonormal set is a basis (Remark~\ref{rem:onb}); \ref{sec:onb} asks what replaces this in a Hilbert space.
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
+
+\subsection{$C[a,b]$ and $C^2[a,b]$}
+
+The $L^2$ inner product restricted to $C[a,b]$ proves a sharp integral inequality for $C^2$ functions by Cauchy--Schwarz (Proposition~\ref{prop:sharp-integral}); Remark~\ref{rem:where-g-comes} finds the test function by orthogonal projection onto $\operatorname{span}\{1, x\}$.
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
+
+\subsection{$\ell^p$, $\ell^2$, $\ell^\infty$ and $c_0$}
+
+$\ell^2$ is the one $\ell^p$ whose norm comes from an inner product (Example~\ref{ex:box}, Corollary~\ref{cor:only-p2}), and it is a Hilbert space (Example~\ref{ex:hilbert-spaces}). The sequence spaces supply the counterexamples: in $\ell^1$ closest points need not be unique (Remark~\ref{rem:where-each-hypothesis-enters}); $c_{00} \subset \ell^2$ shows that orthogonal decomposition needs a closed subspace (Remark~\ref{rem:promise-lecture-1-kept}); and the shifted vectors $e_{n+1}$ are orthonormal but not complete (Remark~\ref{rem:onb-6}), while the standard basis is an orthonormal basis (Example~\ref{ex:standard-basis-l-2}).
+
+Separability (Definition~\ref{def:separable}) sorts the sequence spaces: $\ell^p$ for $p < \infty$ and $c_0$ are separable, $\ell^\infty$ is not.
+
+\begin{propbox}[{{$\ell^p$ is Separable for $1 \le p < \infty$}}]\boxlabel{prop:lp-separable}
+Let $1 \le p < \infty$, and let $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q}$ if $\mathbb{F} = \mathbb{R}$ and $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q} + i\mathbb{Q}$ if $\mathbb{F} = \mathbb{C}$. The set
+\[
+D = \bigcup_{J = 1}^\infty \bigl\{ (p_1, \ldots, p_J, 0, 0, \ldots) : p_j \in \mathbb{Q}_{\mathbb{F}} \bigr\}
+\]
+is countable and dense in $\ell^p$. Hence $\ell^p$ is separable.
+\end{propbox}
+
+\begin{proof}
+\emph{Countable.} For fixed $J$ the $J$-th set is in bijection with $\mathbb{Q}_{\mathbb{F}}^J$, a finite product of countable sets, hence countable; a countable union of countable sets is countable.
+
+\emph{Dense.} Let $a = (a_j) \in \ell^p$ and $\varepsilon > 0$. Since $\sum_j |a_j|^p < \infty$, its tail is small: there is $J$ with $\sum_{j > J} |a_j|^p < (\varepsilon/2)^p$. Since $\mathbb{Q}_{\mathbb{F}}$ is dense in $\mathbb{F}$, choose $p_j \in \mathbb{Q}_{\mathbb{F}}$ with $|a_j - p_j| < \frac{\varepsilon}{2} J^{-1/p}$ for $j = 1, \ldots, J$, and let $d = (p_1, \ldots, p_J, 0, \ldots) \in D$. Then
+\[
+\|a - d\|_p^p = \sum_{j=1}^J |a_j - p_j|^p + \sum_{j > J} |a_j|^p < J \cdot \frac{(\varepsilon/2)^p}{J} + \Bigl(\frac{\varepsilon}{2}\Bigr)^p \le \varepsilon^p,
+\]
+so $\|a - d\|_p < \varepsilon$.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[x=0.55cm, y=2.4cm, >=stealth]
+    \draw[->] (0.3,0) -- (16.6,0) node[right] {$j$};
+    \draw[->] (0.3,0) -- (0.3,1.1) node[above] {$|a_j|$};
+    \foreach \j in {1,...,16} {
+        \pgfmathsetmacro{\h}{0.95/(1+0.35*(\j-1)^1.3)}
+        \ifnum\j<8
+            \fill[gray!35] (\j-0.3,0) rectangle (\j+0.3,\h);
+            \fill[red!75!black] (\j,{\h+0.04*sin(97*\j)}) circle (1.6pt);
+        \else
+            \fill[blue!25] (\j-0.3,0) rectangle (\j+0.3,\h);
+        \fi
+    }
+    \draw[dashed] (7.5,0) -- (7.5,1.0) node[above] {$J$};
+    \node[red!75!black, anchor=west] at (1.2,1.05) {rational $p_j$ close to $a_j$};
+    \node[blue!60!black] at (12,0.45) {tail $\sum_{j > J} |a_j|^p < (\varepsilon/2)^p$, replaced by $0$};
+\end{tikzpicture}
+\end{center}
+The two moves of the proof: cut off the tail, which is small because the series converges, and replace the finitely many remaining coordinates by nearby rationals. Both need $p < \infty$: the tail of a convergent series is small, but a bounded sequence need not have a small tail in the supremum norm.
+
+%% >>> ADDED: result (from HW5, Problem 1(a))
+\begin{propbox}[{{$c_0$ is a Separable Banach Space}}]\boxlabel{prop:c0}
+Let $c_0 = \ell^\infty_0 = \{ a = \{a_n\}_{n \in \mathbb{N}} : a_n \in \mathbb{F},\ \lim_{n \to \infty} a_n = 0 \}$ with $|a| = \max_n |a_n|$. Then $(c_0, |\cdot|)$ is a Banach space, and it is separable.
+\end{propbox}
+
+\begin{proof}
+(HW5, Problem 1(a).) \textbf{Step 1: the maximum exists.} Let $a \in c_0$. If $a_n = 0$ for all $n$, then $\max_n |a_n| = 0$. Otherwise choose $m$ with $\delta = |a_m| > 0$. Since $a_n \to 0$, there is $N$ with $|a_n| < \delta$ for all $n > N$. The finite set $\{|a_1|, \ldots, |a_N|\}$ contains $|a_m| = \delta$ (as $m \le N$), so it has a maximum $M \ge \delta$, and $|a_n| < \delta \le M$ for $n > N$. Hence $\max_n |a_n| = M$ exists, and $|a_n| \le |a|$ for every $n$.
+
+\textbf{Step 2: $c_0$ is a linear space.} The set of all sequences in $\mathbb{F}$ with termwise operations is a linear space: each axiom, evaluated at an index $n$, is the corresponding axiom of $\mathbb{F}$. $c_0$ is a linear subspace of it: the zero sequence tends to $0$, and if $a_n \to 0$, $b_n \to 0$ and $\alpha, \beta \in \mathbb{F}$, then $|\alpha a_n + \beta b_n| \le |\alpha|\,|a_n| + |\beta|\,|b_n| \to 0$.
+
+\textbf{Step 3: $|\cdot|$ is a norm.} \emph{Positivity:} $|a| \ge 0$, and if $|a| = 0$ then $0 \le |a_n| \le |a| = 0$ for all $n$, so $a = 0$. \emph{Homogeneity:} for $\alpha \in \mathbb{F}$, $|\alpha a_n| = |\alpha|\,|a_n| \le |\alpha|\,|a|$ for all $n$, with equality at an index where $|a_n| = |a|$; so $|\alpha a| = |\alpha|\,|a|$. \emph{Triangle inequality:} for every $n$, $|a_n + b_n| \le |a_n| + |b_n| \le |a| + |b|$; taking the maximum over $n$, $|a + b| \le |a| + |b|$.
+
+\textbf{Step 4: completeness.} Let $\{a^{(k)}\}_{k \ge 1}$ be a Cauchy sequence in $c_0$, $a^{(k)} = \{a^{(k)}_n\}_n$. For each $n$ and all $k, m$, $|a^{(k)}_n - a^{(m)}_n| \le |a^{(k)} - a^{(m)}|$, so $\{a^{(k)}_n\}_k$ is a Cauchy sequence in $\mathbb{F}$; since $\mathbb{F}$ is complete it converges, and we put $a_n = \lim_{k \to \infty} a^{(k)}_n$ and $a = \{a_n\}$.
+
+\emph{A uniform estimate.} Let $\varepsilon > 0$ and choose $N$ with $|a^{(k)} - a^{(m)}| < \varepsilon$ for all $k, m \ge N$. Then $|a^{(k)}_n - a^{(m)}_n| < \varepsilon$ for all $n$ and all $k, m \ge N$. Fix $n$ and $k \ge N$ and let $m \to \infty$; since $a^{(m)}_n \to a_n$ and non-strict inequalities survive limits,
+\begin{equation}\label{eq:c0-unif}
+|a^{(k)}_n - a_n| \le \varepsilon \qquad \text{for all } n \text{ and all } k \ge N.
+\end{equation}
+
+\emph{$a \in c_0$.} With $\varepsilon$ and $N$ as above, $a^{(N)} \in c_0$, so there is $n_0$ with $|a^{(N)}_n| < \varepsilon$ for $n > n_0$. By \eqref{eq:c0-unif}, for $n > n_0$,
+\[
+|a_n| \le |a_n - a^{(N)}_n| + |a^{(N)}_n| < \varepsilon + \varepsilon = 2\varepsilon .
+\]
+As $\varepsilon > 0$ was arbitrary, $a_n \to 0$, i.e.\ $a \in c_0$.
+
+\emph{Convergence.} For $k \ge N$, $a^{(k)} - a \in c_0$ by Step 2, and by \eqref{eq:c0-unif} every term of it has modulus at most $\varepsilon$; so $|a^{(k)} - a| \le \varepsilon$. Hence $a^{(k)} \to a$ in $c_0$, and $(c_0, |\cdot|)$ is a Banach space.
+
+\textbf{Step 5: $c_0$ is separable.} Let
+\[
+D = \bigcup_{J=1}^\infty \bigl\{ (q_1, \ldots, q_J, 0, 0, \ldots) : q_j \in \mathbb{Q}_{\mathbb{F}} \bigr\}.
+\]
+Each element of $D$ is eventually $0$, so $D \subset c_0$. For fixed $J$ the $J$-th set is in bijection with $\mathbb{Q}_{\mathbb{F}}^J$, which is countable, and a countable union of countable sets is countable; so $D$ is countable.
+
+Let $a \in c_0$ and $\varepsilon > 0$. Choose $J$ with $|a_n| < \varepsilon$ for all $n > J$, and, since $\mathbb{Q}_{\mathbb{F}}$ is dense in $\mathbb{F}$, choose $q_j \in \mathbb{Q}_{\mathbb{F}}$ with $|a_j - q_j| < \varepsilon$ for $j = 1, \ldots, J$. For $d = (q_1, \ldots, q_J, 0, \ldots) \in D$, every term of $a - d$ has modulus $< \varepsilon$: $|a_j - q_j| < \varepsilon$ for $j \le J$ and $|a_n - 0| < \varepsilon$ for $n > J$. Since the maximum in Step 1 is attained at some index, $|a - d| < \varepsilon$. Hence $D$ is dense, and $c_0$ is separable.
+\end{proof}
+
+\begin{rembox}\label{rem:onb-10}
+$c_0$ sits inside $\ell^\infty$ with the same norm (on $c_0$ the supremum is a maximum), and it is closed there: Step 4 is exactly the statement that a uniform limit of sequences tending to $0$ tends to $0$. The truncation argument of Technique~15 works for $c_0$ because the tail of an element of $c_0$ is small in the supremum norm --- which is precisely what fails for a general bounded sequence.
+\end{rembox}
+%% <<< END ADDED
+
+
+\begin{propbox}[{{$\ell^\infty$ is Not Separable}}]\boxlabel{prop:linfty-nonsep}
+$\ell^\infty$ is not separable.
+\end{propbox}
+
+\begin{proof}
+%% >>> ADDED: proof not covered in lecture (the argument of HW5, Problem 1(b), transplanted to sequences)
+(Not covered in lecture; the argument of HW5, Problem 1(b).) For a subset $S \subset \mathbb{N}$ let $\chi_S \in \ell^\infty$ be the sequence with $n$-th term $1$ if $n \in S$ and $0$ otherwise. If $S \neq T$, some $n$ lies in exactly one of them, so $|(\chi_S)_n - (\chi_T)_n| = 1$, while every term of $\chi_S - \chi_T$ has modulus at most $1$; hence $\|\chi_S - \chi_T\|_\infty = 1$. The set of subsets of $\mathbb{N}$ is uncountable (Cantor). If $D$ were a countable dense subset of $\ell^\infty$, choose for each $S$ some $d_S \in D$ with $\|\chi_S - d_S\|_\infty < \frac12$. For $S \neq T$, $d_S = d_T$ would give $1 = \|\chi_S - \chi_T\|_\infty < \frac12 + \frac12$, which is impossible; so $S \mapsto d_S$ would map an uncountable set one-to-one into the countable set $D$. Hence $\ell^\infty$ is not separable.
+%% <<< END ADDED
+\end{proof}
+
+The shift on $\ell^2$ preserves the inner product without being onto (Example~\ref{ex:isometry-not-isomorphism}), and every infinite-dimensional separable Hilbert space is isomorphic to $\ell^2$ (Theorem~\ref{thm:sep-classification}).
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
+
+\subsection{$L^p$ and $L^2$}
+
+$L^2(\Omega)$ carries the integral inner product (Example~\ref{ex:l2}) and is a Hilbert space. $C_c(\mathbb{R}^n)$ with the same inner product is not complete, and its completion is $L^2(\mathbb{R}^n)$ (Example~\ref{ex:an-inner-product-space}); the Sobolev spaces complete $C_c^\infty(\Omega)$ in a norm that adds the $L^2$ norms of derivatives (Example~\ref{ex:sobolev}). Separability splits the $L^p$ as it split the $\ell^p$:
+
+\begin{propbox}[{{$L^p(E)$ is Separable for $1 \le p < \infty$}}]\boxlabel{prop:Lp-separable}
+Let $E \subset \mathbb{R}^n$ be measurable and $1 \le p < \infty$. Let $D$ be the set of functions on $E$ of the form
+\[
+\varphi = \sum_{j=1}^N a_j\, \chi_{R_j \cap E}, \qquad N \in \mathbb{N},\ a_j \in \mathbb{Q}_{\mathbb{F}},\ R_j \text{ a rectangle with rational endpoints},
+\]
+where a rectangle is a product $\prod_{i=1}^n [\alpha_i, \beta_i)$. Then $D$ is countable and dense in $L^p(E)$. Hence $L^p(E)$ is separable.
+\end{propbox}
+
+\begin{proof}
+Wu's route: continuous functions are dense in $L^p$ (taken for granted), a continuous function is approximated by step functions, and the step functions can be taken with rational heights and rational rectangles. The details:
+
+\emph{Countable.} A rectangle with rational endpoints is determined by $2n$ rationals, so there are countably many; for fixed $N$ the choices of $(a_1, \ldots, a_N, R_1, \ldots, R_N)$ form a finite product of countable sets; take the union over $N$.
+
+\emph{Dense.} Let $f \in L^p(E)$ and $\varepsilon > 0$. Extend $f$ by $0$ to $\tilde{f}$ on $\mathbb{R}^n$; then $\tilde{f} \in L^p(\mathbb{R}^n)$ with the same norm.
+
+\emph{Step 1: a continuous function.} By Theorem~\ref{thm:density} (with $\Omega = \mathbb{R}^n$) there is a continuous $g$ with compact support and $\|\tilde{f} - g\|_{L^p(\mathbb{R}^n)} < \varepsilon/3$. Choose $K \in \mathbb{N}$ with the support of $g$ inside $Q = [-K, K)^n$.
+
+\emph{Step 2: a step function.} $g$ is uniformly continuous on the compact set $[-K,K]^n$. Let $\eta > 0$ with $\eta\,(2K)^{n/p} < \varepsilon/3$, and choose $\delta > 0$ with $|g(x) - g(y)| < \eta$ whenever $|x - y| < \delta$. Choose $m$ with $\sqrt{n}\,2^{-m} < \delta$ and partition $Q$ into the cubes $C_1, \ldots, C_M$ of the form $\prod_i [k_i 2^{-m}, (k_i + 1) 2^{-m})$, $k_i \in \mathbb{Z}$; they have rational endpoints. Let $c_k = g(z_k)$, $z_k$ the lower corner of $C_k$, and $\psi = \sum_k c_k \chi_{C_k}$. For $x \in C_k$, $|x - z_k| < \delta$, so $|g(x) - \psi(x)| < \eta$; outside $Q$ both vanish. Hence
+\[
+\|g - \psi\|_{L^p(\mathbb{R}^n)}^p = \int_Q |g - \psi|^p < \eta^p (2K)^n, \qquad \|g - \psi\|_{L^p(\mathbb{R}^n)} < \eta\,(2K)^{n/p} < \frac{\varepsilon}{3}.
+\]
+
+\emph{Step 3: rational heights.} Choose $q_k \in \mathbb{Q}_{\mathbb{F}}$ with $|c_k - q_k| < \eta$ and let $\tilde{\varphi} = \sum_k q_k \chi_{C_k}$. As in Step 2, $|\psi - \tilde{\varphi}| < \eta$ on $Q$ and $0$ outside, so $\|\psi - \tilde{\varphi}\|_{L^p(\mathbb{R}^n)} < \varepsilon/3$.
+
+\emph{Step 4: restrict to $E$.} $\varphi = \tilde{\varphi}|_E = \sum_k q_k \chi_{C_k \cap E} \in D$, and since $\tilde{f} = f$ on $E$,
+\[
+\|f - \varphi\|_{L^p(E)} \le \|\tilde{f} - \tilde{\varphi}\|_{L^p(\mathbb{R}^n)} \le \|\tilde{f} - g\| + \|g - \psi\| + \|\psi - \tilde{\varphi}\| < \varepsilon. \qedhere
+\]
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[x=1.6cm, y=1.3cm, >=stealth]
+    \draw[->] (-0.1,0) -- (4.3,0) node[right] {$x$};
+    \draw[->] (0,-0.1) -- (0,2.3);
+    \foreach \k in {0,...,7} {
+        \pgfmathsetmacro{\xa}{0.5*\k}
+        \pgfmathsetmacro{\c}{1.2+0.5*sin(deg(0.5*\k*1.3))+0.15*(0.5*\k)}
+        \pgfmathsetmacro{\q}{round(\c*4)/4}
+        \fill[red!15] (\xa,0) rectangle (\xa+0.5,\q);
+        \draw[red!75!black, thick] (\xa,\q) -- (\xa+0.5,\q);
+        \draw[red!75!black] (\xa,0) -- (\xa,\q);
+    }
+    \draw[red!75!black] (4,0) -- (4,{round((1.2+0.5*sin(deg(3.5*1.3))+0.15*3.5)*4)/4});
+    \draw[thick, domain=0:4, samples=80] plot (\x, {1.2+0.5*sin(deg(\x*1.3))+0.15*\x});
+    \node[anchor=west] at (4.05,1.85) {$g$};
+    \node[red!75!black, anchor=west] at (4.05,1.25) {$\varphi = \sum q_k \chi_{C_k}$};
+    \foreach \x in {0,0.5,...,4} \draw (\x,0) -- (\x,-0.05);
+\end{tikzpicture}
+\end{center}
+A continuous $g$ and a step function on cubes with rational endpoints and rational heights (here $n = 1$, heights rounded to quarters). The $L^p$ distance is small because it is an \emph{integral} of a small difference over a bounded set. In $L^\infty$ the distance is a supremum, and this argument breaks down.
+
+\begin{propbox}[{{$L^\infty(E)$ is Not Separable}}]\boxlabel{prop:Linfty-nonsep}
+If $E \subset \mathbb{R}^n$ is measurable with $m(E) > 0$, then $L^\infty(E)$ is not separable.
+\end{propbox}
+
+\begin{proof}
+(Stated in lecture without proof. HW5, Problem 1(b) is the case $E = [0,1]$; the general case below is Claude's.) Here $\|f\|_\infty = \inf\{M \ge 0 : |f| \le M \text{ a.e.}\}$, functions equal almost everywhere being identified.
+
+\textbf{Step 1: the case $E = [0,1]$ (HW5).} For $t \in (0,1]$ let $f_t = \chi_{[0,t]}$. Let $0 < s < t \le 1$. Then $|f_t - f_s| = \chi_{(s,t]}$, which is at most $1$ everywhere, so $\|f_t - f_s\|_\infty \le 1$. It equals $1$ on $(s,t]$, a set of measure $t - s > 0$; so for any $M < 1$ the inequality $|f_t - f_s| \le M$ fails on a set of positive measure, and $\|f_t - f_s\|_\infty \ge 1$. Hence $\|f_t - f_s\|_\infty = 1$ for $s \neq t$.
+
+Suppose $D$ is dense. For each $t \in (0,1]$ choose $d_t \in D$ with $\|f_t - d_t\|_\infty < \frac12$. If $s \neq t$ and $d_s = d_t$, then
+\[
+1 = \|f_s - f_t\|_\infty \le \|f_s - d_s\|_\infty + \|d_t - f_t\|_\infty < \tfrac12 + \tfrac12 = 1,
+\]
+a contradiction. So $t \mapsto d_t$ is one-to-one from the uncountable set $(0,1]$ into $D$, and $D$ is uncountable.
+
+%% >>> ADDED: general measurable E (Claude; not part of the homework)
+\textbf{Step 2: general $E$ with $m(E) > 0$.} (Not part of the homework.) Let $Q_t = [-t,t]^n$ and $\varphi(t) = m(E \cap Q_t)$ for $t \ge 0$. $\varphi$ is non-decreasing and finite. It is continuous: if $t_k \uparrow t$, then $\bigcup_k Q_{t_k} = (-t,t)^n$, which differs from $Q_t$ by a null set, so $\varphi(t_k) \to \varphi(t)$ by continuity of measure from below; if $t_k \downarrow t$, then $\bigcap_k Q_{t_k} = Q_t$ and the measures are finite, so $\varphi(t_k) \to \varphi(t)$ from above. Also $\varphi(0) = 0$ and $\varphi(t) \to m(E) > 0$ as $t \to \infty$. Let $\gamma = m(E)$ if $m(E) < \infty$ and $\gamma = 1$ otherwise. By the intermediate value theorem, for each $c \in (0, \gamma)$ there is $t_c$ with $\varphi(t_c) = c$; let $f_c = \chi_{E \cap Q_{t_c}}$. For $c < c'$, $\varphi(t_c) < \varphi(t_{c'})$ forces $t_c < t_{c'}$, so $f_{c'} - f_c = \chi_{E \cap (Q_{t_{c'}} \setminus Q_{t_c})}$, the indicator of a set of measure $c' - c > 0$. As in Step 1, $\|f_{c'} - f_c\|_\infty = 1$, and the argument of Step 1, with the uncountable index set $(0, \gamma)$, shows that no countable set is dense in $L^\infty(E)$.
+%% <<< END ADDED
+
+With the working definition of $L^\infty$ in Definition~\ref{def:Lp} (bounded functions with the supremum norm) the same families work verbatim, since then $\|\chi_A\| = 1$ for every nonempty $A$.
+\end{proof}
+
+
+%% >>> ADDED: figure (not drawn in lecture)
+\begin{center}
+\begin{tikzpicture}[x=8cm, y=1.8cm, >=stealth]
+    \draw[->] (-0.03,0) -- (1.1,0) node[right] {$x$};
+    \draw[->] (0,-0.05) -- (0,1.35);
+    \node[left] at (0,1) {$1$};
+    \fill[red!15] (0.45,0) rectangle (0.7,1);
+    \draw[thick, blue!70!black] (0,1.03) -- (0.45,1.03);
+    \draw[thick, blue!70!black] (0.45,0.02) -- (1,0.02);
+    \draw[thick] (0,0.97) -- (0.7,0.97);
+    \draw[thick] (0.7,0) -- (1,0);
+    \draw[dotted] (0.45,0) -- (0.45,1); \draw[dotted] (0.7,0) -- (0.7,1);
+    \node[below] at (0.45,0) {$s$}; \node[below] at (0.7,0) {$t$}; \node[below] at (1,0) {$1$};
+    \node[blue!70!black, anchor=south] at (0.2,1.05) {$f_s = \chi_{[0,s]}$};
+    \node[anchor=south] at (0.62,1.1) {$f_t = \chi_{[0,t]}$};
+    \draw[->, red!75!black] (0.86,0.55) -- (0.6,0.5);
+    \node[red!75!black, anchor=west] at (0.86,0.55) {$|f_t - f_s| = 1$ on $(s,t]$};
+\end{tikzpicture}
+\end{center}
+Any two of the functions $f_t = \chi_{[0,t]}$ differ by $1$ on an interval of positive length, so they are at $L^\infty$-distance $1$: uncountably many points, pairwise $1$ apart. Balls of radius $\frac12$ about them are disjoint, and a dense set would need a point in each. In $L^p$, $p < \infty$, the same two functions are at distance $(t-s)^{1/p}$, which is small when $t$ is close to $s$.
+%% <<< END ADDED
+
+
+\begin{rembox}\label{rem:onb-7}
+The hypothesis $m(E) > 0$ is added here: if $m(E) = 0$, then $L^\infty(E) = \{0\}$, which is separable. Wu stressed that measure theory supplies the examples of functional analysis (``I would suggest you really study real methods \ldots\ measure theory is becoming very useful now''): without $L^p$ the course has few examples beyond sequence spaces.
+\end{rembox}
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
+
+\subsection{Even and Odd Functions}
+
+In $L^2[-1,1]$ the even and the odd functions are closed subspaces, each the orthogonal complement of the other, and $f = f_e + f_o$ is the orthogonal decomposition (Proposition~\ref{prop:even-odd}).
+
+\noindent\textit{Chain:} Chapter~7, parity (Example~\ref{ex:parity}) $\rightarrow$
+
+\subsection{The Fourier Basis}
+
+The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of $L^2[0,2\pi]$ (Theorem~\ref{thm:fourier}). Read through Theorem~\ref{thm:onbasis-equiv}, this is the $L^2$ theory of Fourier series (Remark~\ref{rem:fourier-series}), and taking coefficients identifies $L^2[0,2\pi]$ with $\ell^2(\mathbb{Z})$ (Remark~\ref{rem:onb-11}).
+
+\noindent\textit{Chain:} Chapter~6, the Fourier transform (Example~\ref{ex:fourier-L1}, \ref{sec:rev-ch6}) $\cdot$ Chapter~7, a particle on a ring (Example~\ref{ex:particle-ring}) $\rightarrow$
+
 
 % ============================================================================
 % CHAPTER 6: BOUNDED LINEAR MAPS
@@ -5399,6 +5551,33 @@ If $B$ satisfies (1)--(4) of Theorem~\ref{thm:lax-milgram} and $B(x, y) = \overl
 \]
 by coercivity and boundedness. So $|||\cdot|||$ and $\|\cdot\|$ are equivalent, they have the same Cauchy sequences and the same limits (Proposition~\ref{prop:equiv-same}), and $(H, ((\cdot,\cdot)))$ is a Hilbert space. Given $\ell \in H'$, $|\ell(x)| \le \|\ell\|\,\|x\| \le \|\ell\|\, \beta^{-1/2}\, |||x|||$, so $\ell$ is bounded for the new norm as well. The Riesz representation theorem in $(H, ((\cdot,\cdot)))$ gives a unique $y$ with $\ell(x) = ((x, y)) = B(x, y)$ for all $x$.
 \end{proof}
+
+% ============================================================================
+% SECTION 29: R^n, C^m AND L^p (EXAMPLES REVISITED)
+% ============================================================================
+
+\section{$\mathbb{R}^n$, $C^m$ and $L^p$}\label{sec:rev-ch6}
+
+\roadmark{Stage: maps}{Examples revisited. Which maps between the course's spaces are bounded, and the duals of $L^p$ and $\ell^2$.}
+
+\subsection{$\mathbb{R}^n$}
+
+Every linear map out of a finite-dimensional space is bounded (Proposition~\ref{prop:findim-bounded}), so on $\mathbb{R}^n$ boundedness is automatic; a bilinear form on $\mathbb{R}^n$ is a matrix, $B(x, y) = (x, Ay)$ (Example~\ref{ex:bilinear-matrix}), the finite-dimensional model of Theorem~\ref{thm:form-operator}.
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~5 (\ref{sec:rev-ch5})
+
+\subsection{$C^m$ and $C^\infty$}
+
+Differentiation is the test case for boundedness. With the $C^m$ norm on the domain and the $C^{m-1}$ norm on the target it is bounded, with norm at most $1$ (Example~\ref{ex:diff-bounded}); Remark~\ref{rem:bounded-maps-2} relates the completeness of $C^1$ to Proposition~\ref{prop:C2-incomplete}. Proposition~\ref{prop:diff-unbounded} states the case of $C^\infty(\overline{\Omega})$ with the maximum norm on both sides (homework; proof to be added after submission).
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~5 (\ref{sec:rev-ch5})
+
+\subsection{$L^p$, $L^2$ and $\ell^2$}
+
+The Fourier transform is a bounded map $L^1(\mathbb{R}^n) \to L^\infty(\mathbb{R}^n)$ with norm at most $1$ (Example~\ref{ex:fourier-L1}). By the Riesz representation theorem, $(L^2)' = L^2$ and $(\ell^2)' = \ell^2$ (Example~\ref{ex:L2-dual}); this is a Hilbert-space phenomenon (Remark~\ref{rem:not-every-space-own-dual}), and for $1 \le p < \infty$ the dual of $L^p$ is $L^{p'}$ (Theorem~\ref{thm:Lp-dual}).
+
+\noindent\textit{Chain:} $\leftarrow$ Chapter~5 (\ref{sec:rev-ch5}) $\cdot$ Chapter~7, $L^2(\mathbb{R}^n)$ as a state space (Theorem~\ref{thm:L2-separable}) $\rightarrow$
+
 
 % ============================================================================
 % CHAPTER 7: FUNCTIONAL ANALYSIS AND QUANTUM MECHANICS

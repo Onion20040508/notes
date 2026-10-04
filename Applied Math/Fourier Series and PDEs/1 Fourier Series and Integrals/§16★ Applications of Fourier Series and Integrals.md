@@ -295,10 +295,10 @@ $$
 
 ^pf-16-3
 
-*Uses:* [[§16★ Applications of Fourier Series and Integrals#^def-16-1|Def. §16.1]], [[§15★ Complex Methods#^thm-15-1|§15.1]], [[§15★ Complex Methods#^def-15-2|Def. §15.2]], [[§11★ Mean Error and Convergence in Mean#^thm-11-6|§11.6]], [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|556 Thm. §17.1]] (Cauchy–Schwarz in the complex $L^2(-\Omega, \Omega)$)
+*Uses:* [[§16★ Applications of Fourier Series and Integrals#^def-16-1|Def. §16.1]], [[§15★ Complex Methods#^thm-15-1|§15.1]], [[§15★ Complex Methods#^def-15-2|Def. §15.2]], [[§11★ Mean Error and Convergence in Mean#^thm-11-6|§11.6]], [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|556 Thm. §21.1]] (Cauchy–Schwarz in the complex $L^2(-\Omega, \Omega)$)
 
 > [!remark]- Connections
-> - The proof is Hilbert-space geometry: $e^{-in\pi\omega/\Omega}/\sqrt{2\Omega}$ is an orthonormal basis of $L^2(-\Omega, \Omega)$ (the Fourier basis of [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]], rescaled), the inverse transform carries it to the functions $\frac{\sin(\Omega t - n\pi)}{\Omega t - n\pi}$, and (3) is the expansion of $f$ in this basis of band-limited signals, with the samples as coordinates.
+> - The proof is Hilbert-space geometry: $e^{-in\pi\omega/\Omega}/\sqrt{2\Omega}$ is an orthonormal basis of $L^2(-\Omega, \Omega)$ (the Fourier basis of [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]], rescaled), the inverse transform carries it to the functions $\frac{\sin(\Omega t - n\pi)}{\Omega t - n\pi}$, and (3) is the expansion of $f$ in this basis of band-limited signals, with the samples as coordinates.
 
 This is the main result of the sampling theorem: a band-limited function $f(t)$ may be reconstructed from its samples at $t = 0, \pm\pi/\Omega, \dots$, two samples per period $2\pi/\Omega$ of the highest frequency present. It is difficult to determine which functions are actually band limited; however, the process usually works quite well. In practice a finite series must be used,
 

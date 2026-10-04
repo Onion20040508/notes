@@ -13,7 +13,7 @@ tags: [functional-analysis, hub]
 ## Its proof uses
 - [[§1 Linear Spaces#^lem-1-7|Lemma §1.7: One-Step Enlargement]]
 - [[§1 Linear Spaces#^def-1-8|Definition §1.8: Complement]]
-- [[§4 Proof of the Hahn–Banach Theorem#^thm-4-2|Theorem §4.2: Zorn's Lemma]]
+- [[§5 Proof of the Hahn–Banach Theorem#^thm-5-2|Theorem §5.2: Zorn's Lemma]]
 
 ## Used in (Functional Analysis)
 - [[§1 Linear Spaces#^prop-1-9|Proposition §1.9: When the Complement is Unique]]

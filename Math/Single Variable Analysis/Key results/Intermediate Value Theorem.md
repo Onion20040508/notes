@@ -33,8 +33,8 @@ tags: [real-analysis, hub]
 - [[§18 Differentiation Theory#^lem-18-18|Lemma §18.18: Image Measure Bounded by Total Variation]]
 
 ## Used in (Functional Analysis)
-- [[§20 Orthonormal Sets and Bases#^prop-20-17|Proposition §20.17: L^∞(E) is Not Separable]]
-- [[§23 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-23-3|Lemma §23.3: A Symmetric Coercive Form Has a Sign]]
+- [[§25 Sequence and Function Spaces#^prop-25-5|Proposition §25.5: L^∞(E) is Not Separable]]
+- [[§28 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-28-3|Lemma §28.3: A Symmetric Coercive Form Has a Sign]]
 
 ## Connections
 - Abstract form: the continuous image of a connected set is connected; see [[§22 More on Metric Spaces꞉ Connectedness]].

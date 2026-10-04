@@ -19,7 +19,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: $\langle e_j|e_k\rangle=\delta_{jk}$.
-> - Same definition for possibly infinite sets: [[§20 Orthonormal Sets and Bases#^def-20-1|556 Def. §20.1]].
+> - Same definition for possibly infinite sets: [[§24 Orthonormal Sets and Bases#^def-24-1|556 Def. §24.1]].
 > - Computational version: [[§41 Orthogonal Sets#^def-41-4|235 Def. §41.4]] (orthonormal sets in $\mathbb R^n$).
 
 > [!example] Example 6.23: Orthonormal lists (p. 197)
@@ -32,7 +32,7 @@ tags: [linear-algebra]
 ^ladr-6-23
 
 > [!remark]- Connections
-> - In L² the Fourier list of (d), continued indefinitely, is an orthonormal basis: [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]] (stated there with complex exponentials on [0, 2π]).
+> - In L² the Fourier list of (d), continued indefinitely, is an orthonormal basis: [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]] (stated there with complex exponentials on [0, 2π]).
 > - Computational version: [[§47 Applications of Inner Product Spaces#^prop-47-2|235 Prop. §47.2]] (orthogonality of the trigonometric system, as in (d), with $\langle1,1\rangle=2\pi$ and $\langle\cos kt,\cos kt\rangle=\pi$).
 > - Computational version: the orthogonality relations of the trigonometric system on $[-\pi,\pi]$, [[§6 Periodic Functions and Fourier Series#^prop-6-3|341 Prop. §6.3]], which give the Fourier coefficient formulas, [[§6 Periodic Functions and Fourier Series#^prop-6-4|341 Prop. §6.4]].
 
@@ -84,7 +84,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: the probabilities $|\langle e_k|\psi\rangle|^2$ over any orthonormal set of outcomes sum to at most $\|\psi\|^2=1$.
-> - Same inequality in 556 ([[§20 Orthonormal Sets and Bases#^lem-20-2|556 Lemma §20.2]]), extended to arbitrary orthonormal families in [[§20 Orthonormal Sets and Bases#^thm-20-5|556 Thm. §20.5]].
+> - Same inequality in 556 ([[§24 Orthonormal Sets and Bases#^lem-24-2|556 Lemma §24.2]]), extended to arbitrary orthonormal families in [[§24 Orthonormal Sets and Bases#^thm-24-5|556 Thm. §24.5]].
 
 > [!definition] Definition 6.27: Orthonormal basis
 > An *orthonormal basis* of $V$ is an orthonormal list that is also a basis of $V$. Example: the standard basis of $\F^n$.
@@ -92,7 +92,7 @@ tags: [linear-algebra]
 ^ladr-6-27
 
 > [!remark]- Connections
-> - In a Hilbert space an orthonormal basis is defined by the series expansion of every vector ([[§20 Orthonormal Sets and Bases#^def-20-4|556 Def. §20.4]]); in infinite dimensions it is never a basis in the sense of this definition, since some vectors need infinitely many terms.
+> - In a Hilbert space an orthonormal basis is defined by the series expansion of every vector ([[§24 Orthonormal Sets and Bases#^def-24-4|556 Def. §24.4]]); in infinite dimensions it is never a basis in the sense of this definition, since some vectors need infinitely many terms.
 > - Computational version: [[§41 Orthogonal Sets#^def-41-4|235 Def. §41.4]] (orthonormal basis of a subspace of $\mathbb R^n$).
 
 > [!theorem] Theorem 6.28: Orthonormal lists of the right length are orthonormal bases
@@ -128,7 +128,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: (a) is the completeness relation $\sum_k|e_k\rangle\langle e_k|=I$; (c) in Dirac order reads $\langle u|v\rangle=\sum_k\langle u|e_k\rangle\langle e_k|v\rangle$ (conjugate on the other factor, per the convention remark in [[§19 Inner Products and Norms#^ladr-6-2|6.2]]).
-> - Hilbert-space version: [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]], where the expansion and Parseval characterize orthonormal bases; (a) as an operator identity is the completeness relation, [[§25 The Completeness Relation#^thm-25-2|556 Thm. §25.2]].
+> - Hilbert-space version: [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]], where the expansion and Parseval characterize orthonormal bases; (a) as an operator identity is the completeness relation, [[§31 The Completeness Relation#^thm-31-2|556 Thm. §31.2]].
 > - Computational version: [[§41 Orthogonal Sets#^thm-41-2|235 Thm. §41.2]] (the weights $c_j=\mathbf y\cdot\mathbf u_j/\mathbf u_j\cdot\mathbf u_j$ in an orthogonal basis, as in (a)).
 
 > [!example] Example 6.31: Finding coefficients for a linear combination (p. 200)
@@ -203,7 +203,7 @@ tags: [linear-algebra]
 *Uses:* [[Gram–Schmidt procedure|6.32]], [[§20 Orthonormal Bases#^ladr-6-28|6.28]]
 
 > [!remark]- Connections
-> - Every Hilbert space has an orthonormal basis ([[§20 Orthonormal Sets and Bases#^thm-20-12|556 Thm. §20.12]], by Zorn's lemma), and a countable one exactly when it is separable ([[§20 Orthonormal Sets and Bases#^thm-20-18|556 Thm. §20.18]]).
+> - Every Hilbert space has an orthonormal basis ([[§24 Orthonormal Sets and Bases#^thm-24-12|556 Thm. §24.12]], by Zorn's lemma), and a countable one exactly when it is separable ([[§24 Orthonormal Sets and Bases#^thm-24-13|556 Thm. §24.13]]).
 > - Computational version: [[§43 The Gram–Schmidt Process#^cor-43-2|235 Cor. §43.2]] (every nonzero subspace of $\mathbb R^n$ has an orthonormal basis).
 
 > [!theorem] Theorem 6.36: Every orthonormal list extends to an orthonormal basis

@@ -151,7 +151,7 @@ $$
 *Uses:* [[§11★ Mean Error and Convergence in Mean#^thm-11-2|§11.2]]
 
 > [!remark]- Connections
-> - [[§20 Orthonormal Sets and Bases#^lem-20-2|556 Lem. §20.2]] (finite Bessel inequality, with the same Pythagoras picture) and [[§20 Orthonormal Sets and Bases#^thm-20-5|556 Thm. §20.5]] (Bessel's inequality for any orthonormal set in an inner product space); in finite dimensions, [[§20 Orthonormal Bases#^ladr-6-26|LADR 6.26]]. Here the orthonormal set is $\frac{1}{\sqrt{2a}}, \frac{1}{\sqrt a}\cos\frac{n\pi x}{a}, \frac{1}{\sqrt a}\sin\frac{n\pi x}{a}$, and the coefficients of $f$ along it are $\sqrt{2a}\,a_0$, $\sqrt a\,a_n$, $\sqrt a\,b_n$, which turns (7) into $\sum|(f, e_k)|^2 \le \|f\|^2$.
+> - [[§24 Orthonormal Sets and Bases#^lem-24-2|556 Lem. §24.2]] (finite Bessel inequality, with the same Pythagoras picture) and [[§24 Orthonormal Sets and Bases#^thm-24-5|556 Thm. §24.5]] (Bessel's inequality for any orthonormal set in an inner product space); in finite dimensions, [[§20 Orthonormal Bases#^ladr-6-26|LADR 6.26]]. Here the orthonormal set is $\frac{1}{\sqrt{2a}}, \frac{1}{\sqrt a}\cos\frac{n\pi x}{a}, \frac{1}{\sqrt a}\sin\frac{n\pi x}{a}$, and the coefficients of $f$ along it are $\sqrt{2a}\,a_0$, $\sqrt a\,a_n$, $\sqrt a\,b_n$, which turns (7) into $\sum|(f, e_k)|^2 \le \|f\|^2$.
 
 The actual fact is that, in the limit, the inequality becomes an equality.
 
@@ -166,10 +166,10 @@ The actual fact is that, in the limit, the inequality becomes an equality.
 
 ^thm-11-4
 
-*Powers omits the proof; see [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]] ((1) ⇔ (3): Parseval's equality holds for every vector exactly when the orthonormal set is complete), applied to the trigonometric system, which is complete by [[§20 Orthonormal Sets and Bases#^thm-20-11|556 Thm. §20.11]] (whose completeness step is itself quoted there, via Fejér's theorem).*
+*Powers omits the proof; see [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]] ((1) ⇔ (3): Parseval's equality holds for every vector exactly when the orthonormal set is complete), applied to the trigonometric system, which is complete by [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]] (whose completeness step is itself quoted there, via Fejér's theorem).*
 
 > [!remark]- Connections
-> - In complex form, $\int_0^{2\pi}|f|^2 = \sum_n|c_n|^2$: [[§20 Orthonormal Sets and Bases#^rem-20-9|556 Remark: Fourier Series]]. Lay states the consequence for continuous $f$ (convergence in the mean) without proof, [[§47 Applications of Inner Product Spaces#^thm-47-4|235 Thm. §47.4]].
+> - In complex form, $\int_0^{2\pi}|f|^2 = \sum_n|c_n|^2$: [[§24 Orthonormal Sets and Bases#^rem-24-9|556 Remark: Fourier Series]]. Lay states the consequence for continuous $f$ (convergence in the mean) without proof, [[§47 Applications of Inner Product Spaces#^thm-47-4|235 Thm. §47.4]].
 
 > [!theorem] Corollary §11.5: The Coefficients Tend to Zero
 > If $\int_{-a}^{a}f^2(x)\,dx$ is finite, the two series $\sum a_n^2$ and $\sum b_n^2$ converge, and therefore

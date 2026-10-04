@@ -831,7 +831,7 @@ Let $\mathbb{Q} \cap [-1, 1] = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of t
 ^rem-11-6
 
 > [!remark]- Connections
-> - The axiom of choice, in the form of Zorn's lemma, also drives the existence theorems of 556 (Hahn–Banach, complements, orthonormal bases): [[§4 Proof of the Hahn–Banach Theorem#^thm-4-2|556 Thm. §4.2]].
+> - The axiom of choice, in the form of Zorn's lemma, also drives the existence theorems of 556 (Hahn–Banach, complements, orthonormal bases): [[§5 Proof of the Hahn–Banach Theorem#^thm-5-2|556 Thm. §5.2]].
 
 ## The Cantor Set
 

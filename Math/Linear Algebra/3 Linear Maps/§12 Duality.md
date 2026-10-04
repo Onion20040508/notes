@@ -19,7 +19,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - They form [[§12 Duality#^ladr-3-110|Dual space, V′]]. On inner product spaces every functional is $v\mapsto\ip{v}{w}$: [[Riesz representation theorem]].
 > - Physics: bras $\langle\psi|$ are linear functionals on kets.
-> - 556 starts from the same definition ([[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5|556 Def. §2.5]]); in infinite dimensions functionals need not be continuous, so it singles out the bounded ones ([[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^def-19-1|556 Def. §19.1]]) and produces them with Hahn–Banach ([[§3 Statement and Motivation#^thm-3-2|556 Thm. §3.2]]).
+> - 556 starts from the same definition ([[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5|556 Def. §2.5]]); in infinite dimensions functionals need not be continuous, so it singles out the bounded ones ([[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^def-23-1|556 Def. §23.1]]) and produces them with Hahn–Banach ([[§4 Statement and Motivation#^thm-4-2|556 Thm. §4.2]]).
 > - Used in Relativity: covariant components $a_\mu$ are the components of a linear functional, and the metric lowers indices — [[§B1.1 The Metric and Index Notation#^rem-b1-1-1|REL Remark: Why two index positions]]; covectors and tensors of type (m, n) — [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 
 > [!example] Example 3.109: Linear functionals (p. 105)
@@ -38,7 +38,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Dimension: [[§12 Duality#^ladr-3-111|Dim V′ = dim V]]. Basis: [[§12 Duality#^ladr-3-112|Dual basis]], [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]]. Maps induce dual maps: [[§12 Duality#^ladr-3-118|Dual map, T′]].
-> - For a normed space 556 keeps only the bounded functionals and adds the dual norm: [[§24 Bras, Kets, and the Riesz Map#^def-24-1|556 Def. §24.1]].
+> - For a normed space 556 keeps only the bounded functionals and adds the dual norm: [[§30 Bras, Kets, and the Riesz Map#^def-30-1|556 Def. §30.1]].
 > - Same definition in 591 ([[§20 Linear Algebra Toolkit#^def-20-1|591 Def. §20.1]]); the dual of a tangent space is the cotangent space, [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-1|591 Def. §30.1]].
 
 > [!theorem] Theorem 3.111: Dim V′ = dim V

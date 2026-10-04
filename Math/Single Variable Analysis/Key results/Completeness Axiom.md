@@ -24,7 +24,7 @@ tags: [real-analysis, hub]
 - [[§7 Structure of Open Sets#^lem-7-2|Lemma §7.2]]
 
 ## Used in (Functional Analysis)
-- [[§4 Proof of the Hahn–Banach Theorem#^lem-4-1|Lemma §4.1: One-Step Extension]]
+- [[§5 Proof of the Hahn–Banach Theorem#^lem-5-1|Lemma §5.1: One-Step Extension]]
 
 ## Connections
 - This is the axiom that separates $\mathbb{R}$ from $\mathbb{Q}$ (§4 shows $\mathbb{Q}$ fails it). §6 constructs a model of it with Dedekind cuts.

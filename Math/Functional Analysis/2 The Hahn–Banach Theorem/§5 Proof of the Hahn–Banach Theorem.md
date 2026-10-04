@@ -2,10 +2,10 @@
 type: section
 subject: "[[Functional Analysis]]"
 chapter: 2
-section: 4
+section: 5
 tags: [functional-analysis, math556]
 ---
-← [[§3 Statement and Motivation]] · ↑ [[· 2 The Hahn–Banach Theorem]] · [[§5 Convex Sets and the Gauge]] →
+← [[§4 Statement and Motivation]] · ↑ [[· 2 The Hahn–Banach Theorem]] · [[§6 Convex Sets and the Gauge]] →
 
 *Stage: algebra — Thread: functionals. One-step extension, then Zorn's lemma.*
 
@@ -16,44 +16,44 @@ Before the proof, two remarks on why the set of linear functionals on $X$ is wor
 > [!remark] Remark: Linear Functionals Replace the Dot Product
 > On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique $a \in \mathbb{R}^n$, so vectors and linear functionals are in one-to-one correspondence $a \leftrightarrow \ell_a$. Statements about the dot product translate into statements about linear functionals: $a \cdot x = 0$ says $x$ is perpendicular to $a$, and “$a \cdot x = 0$ for every $a$ implies $x = 0$” (take $a = x$) says that a vector perpendicular to everything is zero.
 >
-> A general linear space has no dot product. But it does have linear functionals, and the correspondence above suggests using them as the substitute: “$x$ is perpendicular to $\ell$” means $\ell(x) = 0$, and the question of whether “$\ell(x) = 0$ for all $\ell$ forces $x = 0$” becomes a question about how many linear functionals exist. The [[§3 Statement and Motivation#^thm-3-2|Hahn–Banach theorem]] is what guarantees there are enough of them.
+> A general linear space has no dot product. But it does have linear functionals, and the correspondence above suggests using them as the substitute: “$x$ is perpendicular to $\ell$” means $\ell(x) = 0$, and the question of whether “$\ell(x) = 0$ for all $\ell$ forces $x = 0$” becomes a question about how many linear functionals exist. The [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach theorem]] is what guarantees there are enough of them.
 
-^rem-4-1
+^rem-5-1
 
 > [!remark]- Connections
-> - Every functional on $\mathbb{R}^n$ is a dot product: [[§2 Linear Maps, Convexity, and Linear Functionals#^ex-2-2|Ex. §2.2]]; on finite-dimensional inner product spaces [[Riesz representation theorem|LADR 6.42]]; on Hilbert spaces (bounded functionals) [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|§19.2]].
+> - Every functional on $\mathbb{R}^n$ is a dot product: [[§2 Linear Maps, Convexity, and Linear Functionals#^ex-2-2|Ex. §2.2]]; on finite-dimensional inner product spaces [[Riesz representation theorem|LADR 6.42]]; on Hilbert spaces (bounded functionals) [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|§23.2]].
 
 > [!remark] Remark: Convergence Without Topology
-> A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement “$x_n \to x$” has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This will be developed later in the course ([[§15 Compactness and the Unit Ball#^rem-15-4|weak convergence]]).
+> A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement “$x_n \to x$” has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This will be developed later in the course ([[§18 Compactness and the Unit Ball#^rem-18-4|weak convergence]]).
 
-^rem-4-2
+^rem-5-2
 
 ## A First Application: One Functional per Vector
 
 The theorem is a *construction* device. The simplest use:
 
-> [!example] Example §4.1: Extending from a Line
+> [!example] Example §5.1: Extending from a Line
 > Let $y_0 \in X$, $y_0 \neq 0$, and let $Y = \operatorname{span}\{y_0\} = \{ a y_0 \mid a \in \mathbb{R} \}$. Define $\ell$ on $Y$ by
 >
 > $$
 > \ell(a y_0) = a, \qquad \text{i.e. } \ell(y_0) = 1.
 > $$
 >
-> This is a linear functional on the one-dimensional subspace $Y$. Given any positive homogeneous subadditive $p$ on $X$ with $\ell(y) \le p(y)$ on $Y$, [[§3 Statement and Motivation#^thm-3-2|Hahn–Banach]] extends $\ell$ to a linear functional $L : X \to \mathbb{R}$ with $L \le p$ on all of $X$. (One can prescribe any value at $y_0$, not only $1$; the normalization is a convenience.)
+> This is a linear functional on the one-dimensional subspace $Y$. Given any positive homogeneous subadditive $p$ on $X$ with $\ell(y) \le p(y)$ on $Y$, [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] extends $\ell$ to a linear functional $L : X \to \mathbb{R}$ with $L \le p$ on all of $X$. (One can prescribe any value at $y_0$, not only $1$; the normalization is a convenience.)
 >
 > Thus associated to every nonzero vector of $X$ there is at least one linear functional on $X$ taking a prescribed nonzero value there. The extension is not unique.
 
-^ex-4-1
+^ex-5-1
 
 > [!remark]- Connections
-> - The same construction, with $p$ the gauge of a convex set, is Steps 2–3 of the separation theorem: [[§6 The Hyperplane Separation Theorem#^pf-6-1|§6.1]].
+> - The same construction, with $p$ the gauge of a convex set, is Steps 2–3 of the separation theorem: [[§7 The Hyperplane Separation Theorem#^pf-7-1|§7.1]].
 
 ## The One-Step Extension
 
 The whole proof is a single computation: extend $\ell$ by one dimension while keeping $\ell \le p$. Everything else is bookkeeping.
 
-> [!theorem] Lemma §4.1: One-Step Extension
-> Let $X$, $p$, $Y$, $\ell$ be as in Theorem [[§3 Statement and Motivation#^thm-3-2|§3.2]], and suppose $Y \subsetneq X$. Fix $x_0 \in X \setminus Y$ and let
+> [!theorem] Lemma §5.1: One-Step Extension
+> Let $X$, $p$, $Y$, $\ell$ be as in Theorem [[§4 Statement and Motivation#^thm-4-2|§4.2]], and suppose $Y \subsetneq X$. Fix $x_0 \in X \setminus Y$ and let
 >
 > $$
 > Z = \operatorname{span}\{x_0, Y\} = \{ a x_0 + y \mid a \in \mathbb{R},\ y \in Y \}.
@@ -66,7 +66,7 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 >
 > *Lax: §3.1, proof of Thm 1*
 
-^lem-4-1
+^lem-5-1
 
 > [!proof]+ Proof
 > **Step 1: Reduction to a single number.** First, $Z$ is as described: sums and scalar multiples of elements $a x_0 + y$ are again of that form, so the set of such elements is a subspace containing $x_0$ and $Y$, and it is clearly the smallest one. Moreover the representation $z = a x_0 + y$ is unique: if $a x_0 + y = a' x_0 + y'$ then $(a - a') x_0 = y' - y \in Y$, and since $x_0 \notin Y$ this forces $a = a'$, hence $y = y'$.
@@ -162,9 +162,9 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 >
 > This proves (2.1), and $\ell$ has been extended to $L$ on $Z$, one dimension larger than $Y$.
 
-^pf-4-1
+^pf-5-1
 
-*Uses:* [[§3 Statement and Motivation#^def-3-1|Def. §3.1]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[Completeness Axiom|451 §4.4]]
+*Uses:* [[§4 Statement and Motivation#^def-4-1|Def. §4.1]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[Completeness Axiom|451 §4.4]]
 
 ![[m556-4-2.svg]]
 *Steps 3–4 on the real line. Each red number $\ell(y') - p(-x_0 + y')$ is a lower bound for $c = L(x_0)$ and each blue number $p(x_0 + y) - \ell(y)$ an upper bound. Inequality (4) says every red number lies to the left of every blue one, so the supremum of the red numbers is at most the infimum of the blue ones, and the green interval between them is nonempty; any $c$ in it satisfies (3). The proof takes the left endpoint.*
@@ -177,34 +177,34 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 >
 > Also note the discipline in Step 3: the conditions (1), (2) were converted to conditions on $c$ by *equivalences*, not by one-sided estimates. Applying subadditivity too early would have thrown away information and made the interval for $c$ harder to see.
 
-^rem-4-3
+^rem-5-3
 
 ## Completing the Proof: Zorn's Lemma
 
-> [!theorem] Theorem §4.2: Zorn's Lemma
+> [!theorem] Theorem §5.2: Zorn's Lemma
 > Let $(P, \le)$ be a nonempty partially ordered set in which every chain (totally ordered subset) has an upper bound in $P$. Then $P$ has a maximal element, i.e. an $m \in P$ with no $x \in P$ satisfying $m < x$.
 >
 > *Lax: §3.1, proof of Thm 1*
 
-^thm-4-2
+^thm-5-2
 
 > [!remark]- Connections
-> - Also used for complements, [[§1 Linear Spaces#^prop-1-8|§1.8]], and for orthonormal bases, [[§20 Orthonormal Sets and Bases#^thm-20-12|§20.12]]; the pattern: [[Functional Analysis Problem-Solving Techniques#^rem-t3|Technique 3]].
+> - Also used for complements, [[§1 Linear Spaces#^prop-1-8|§1.8]], and for orthonormal bases, [[§24 Orthonormal Sets and Bases#^thm-24-12|§24.12]]; the pattern: [[Functional Analysis Problem-Solving Techniques#^rem-t3|Technique 3]].
 
 Zorn's lemma is equivalent to the axiom of choice and is taken as an axiom; no proof is given. Wu stated in lecture that the partial-order argument would not be carried out on the board; it is written out here.
 
-> [!proof]+ Proof of Theorem [[§3 Statement and Motivation#^thm-3-2|§3.2]]
+> [!proof]+ Proof of Theorem [[§4 Statement and Motivation#^thm-4-2|§4.2]]
 > (Wu: “By Zorn's lemma, we're done.” The argument is written out here.) If $Y = X$ there is nothing to do, so assume $Y \subsetneq X$. Let $P$ be the set of pairs $(Z, \ell_Z)$ with $Y \subset Z \subset X$ a linear subspace and $\ell_Z : Z \to \mathbb{R}$ a linear functional extending $\ell$ with $\ell_Z \le p$ on $Z$, ordered by extension: $(Z, \ell_Z) \le (Z', \ell_{Z'})$ iff $Z \subset Z'$ and $\ell_{Z'}|_Z = \ell_Z$. Then $(Y, \ell) \in P$, so $P \neq \varnothing$.
 >
 > *Chains have upper bounds.* Given a chain $\{(Z_i, \ell_i)\}_{i \in I}$, let $Z^{\ast} = \bigcup_i Z_i$ and define $\ell^{\ast}(z) = \ell_i(z)$ for any $i$ with $z \in Z_i$. Since the chain is nested, any two elements of $Z^{\ast}$ lie in a common $Z_i$, so $Z^{\ast}$ is a subspace and $\ell^{\ast}$ is well defined and linear; $\ell^{\ast} \le p$ on $Z^{\ast}$ because it holds on each $Z_i$. Thus $(Z^{\ast}, \ell^{\ast}) \in P$ is an upper bound.
 >
-> *Conclusion.* By Zorn's lemma $P$ has a maximal element $(Z_m, \ell_m)$. If $Z_m \neq X$, Lemma [[§4 Proof of the Hahn–Banach Theorem#^lem-4-1|§4.1]] (with $Z_m$ in place of $Y$) extends $\ell_m$ to a strictly larger subspace keeping $\ell \le p$, contradicting maximality. Hence $Z_m = X$, and $L := \ell_m$ is the required extension.
+> *Conclusion.* By Zorn's lemma $P$ has a maximal element $(Z_m, \ell_m)$. If $Z_m \neq X$, Lemma [[§5 Proof of the Hahn–Banach Theorem#^lem-5-1|§5.1]] (with $Z_m$ in place of $Y$) extends $\ell_m$ to a strictly larger subspace keeping $\ell \le p$, contradicting maximality. Hence $Z_m = X$, and $L := \ell_m$ is the required extension.
 
-^pf-3-2
+^pf-4-2
 
-*Uses:* [[§4 Proof of the Hahn–Banach Theorem#^thm-4-2|§4.2]], [[§4 Proof of the Hahn–Banach Theorem#^lem-4-1|§4.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
+*Uses:* [[§5 Proof of the Hahn–Banach Theorem#^thm-5-2|§5.2]], [[§5 Proof of the Hahn–Banach Theorem#^lem-5-1|§5.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
 
 > [!remark] Remark
-> Lemma [[§4 Proof of the Hahn–Banach Theorem#^lem-4-1|§4.1]] contains all the analysis; Zorn's lemma only says “repeat until finished” in a way that is legitimate when $X$ has uncountable dimension. In [[§20 Orthonormal Sets and Bases#^def-20-5|separable]] normed spaces (later) the extension can instead be built by ordinary induction along a countable dense sequence.
+> Lemma [[§5 Proof of the Hahn–Banach Theorem#^lem-5-1|§5.1]] contains all the analysis; Zorn's lemma only says “repeat until finished” in a way that is legitimate when $X$ has uncountable dimension. In [[§24 Orthonormal Sets and Bases#^def-24-5|separable]] normed spaces (later) the extension can instead be built by ordinary induction along a countable dense sequence.
 
-^rem-4-4
+^rem-5-4

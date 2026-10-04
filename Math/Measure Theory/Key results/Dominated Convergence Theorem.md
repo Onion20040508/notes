@@ -34,10 +34,10 @@ tags: [measure-theory, hub]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|Theorem §19.19: Density in Lᵖ]]
 
 ## Used in (Functional Analysis)
-- [[§14 The Function Spaces Lᵖ(Ω)#^rem-14-2|Remark: What “Integrable” Means Here]]
-- [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-3|Theorem §14.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
-- [[§21 Boundedness and Continuity#^ex-21-2|Example §21.2: The Fourier Transform from L¹ to L^∞]]
-- [[§26 Position Eigenstates and Continuous Resolutions#^prop-26-5|Proposition §26.5: The Spectral Projections of Position]]
+- [[§17 The Function Spaces Lᵖ(Ω)#^rem-17-2|Remark: What “Integrable” Means Here]]
+- [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|Theorem §17.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
+- [[§26 Boundedness and Continuity#^ex-26-2|Example §26.2: The Fourier Transform from L¹ to L^∞]]
+- [[§32 Position Eigenstates and Continuous Resolutions#^prop-32-5|Proposition §32.5: The Spectral Projections of Position]]
 
 ## Connections
 - **Proof idea.** Fatou applied to F + f_k and F − f_k gives the [[§15 The General Lebesgue Integral#^thm-15-6|dominated]] (§15.6) and [[§15 The General Lebesgue Integral#^thm-15-7|reverse]] (§15.7) Fatou lemmas. Together they give ∫f ≤ liminf ∫f_k ≤ limsup ∫f_k ≤ ∫f, and [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|451 §10.6]] finishes. The alternative proof applies [[Fatou's Lemma]] to 2F − |f_k − f| and gets ∫|f_k − f| → 0 ([[§15 The General Lebesgue Integral#^rem-15-4|Rem. §15.4]]). It is the last link of MCT → Fatou → DCT.

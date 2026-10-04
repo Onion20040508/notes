@@ -155,7 +155,7 @@ The eigenvalue problem of Proposition §46.1 is not a regular Sturm–Liouville 
 
 > [!remark]- Connections
 > - Finite-dimensional analogue: eigenvectors of a self-adjoint (indeed of any normal) operator for distinct eigenvalues are orthogonal, [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]. Here the operator is $\phi \mapsto -\frac{1}{r}(r\phi')'$ on functions with $\phi(a) = 0$, bounded at $0$, and the computation above shows that it is symmetric for the weighted inner product $\langle f, g\rangle = \int_0^a f(r)g(r)\,r\,dr$.
-> - In that inner product the functions $J_0(\lambda_n r)$ form an orthogonal set in the sense of [[§20 Orthonormal Sets and Bases#^def-20-1|556 Def. §20.1]]. The weight $r$ is the polar area element: $\int_0^a\!\int_{-\pi}^{\pi} F\,r\,d\theta\,dr$ is the integral over the disk, [[§100 Double Integrals in Polar Coordinates#^thm-100-1|Calc Thm. §100.1]].
+> - In that inner product the functions $J_0(\lambda_n r)$ form an orthogonal set in the sense of [[§24 Orthonormal Sets and Bases#^def-24-1|556 Def. §24.1]]. The weight $r$ is the polar area element: $\int_0^a\!\int_{-\pi}^{\pi} F\,r\,d\theta\,dr$ is the integral over the disk, [[§100 Double Integrals in Polar Coordinates#^thm-100-1|Calc Thm. §100.1]].
 
 The orthogonality relation tells how to choose the coefficients in (11): multiply both sides by $J_0(\lambda_m r)\,r$ and integrate from $0$ to $a$. All terms but the one with $n = m$ vanish, which leaves $\int_0^a f(r)J_0(\lambda_m r)\,r\,dr = a_m\int_0^a J_0^2(\lambda_m r)\,r\,dr$.
 
@@ -188,7 +188,7 @@ The orthogonality relation tells how to choose the coefficients in (11): multipl
 *Powers omits the proof.* It is the analogue of the Fourier convergence theorem, [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]], and of the eigenfunction expansion theorem, [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2]], which Powers states for regular Sturm–Liouville problems only.
 
 > [!remark]- Connections
-> - The Hilbert-space counterpart of the theorem is that the normalized functions $J_0(\lambda_n r)/\|J_0(\lambda_n r)\|$ form an orthonormal basis of $L^2\big((0, a), r\,dr\big)$: every function orthogonal to all of them is $0$, equivalently Parseval's equality holds, [[§20 Orthonormal Sets and Bases#^thm-20-8|556 Thm. §20.8]]. This completeness is not proved in the vault.
+> - The Hilbert-space counterpart of the theorem is that the normalized functions $J_0(\lambda_n r)/\|J_0(\lambda_n r)\|$ form an orthonormal basis of $L^2\big((0, a), r\,dr\big)$: every function orthogonal to all of them is $0$, equivalently Parseval's equality holds, [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]]. This completeness is not proved in the vault.
 > - Used in Electromagnetism: Fourier–Bessel series for a cylinder with the potential given on an end face, and the two-tube electron lens — [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-2|EM Theorem §C6.3.2]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-3|EM Theorem §C6.3.3]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^ex-c6-3-1|EM Example §C6.3.1]].
 
 ## Solution of the Heat Problem

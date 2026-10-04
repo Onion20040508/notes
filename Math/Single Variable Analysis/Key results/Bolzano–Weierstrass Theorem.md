@@ -27,8 +27,8 @@ tags: [real-analysis, hub]
 - [[§5 Topology of ℝⁿ#^thm-5-1|Theorem §5.1: Bolzano–Weierstrass]]
 
 ## Used in (Functional Analysis)
-- [[§10 New Normed Spaces from Old#^thm-10-3|Theorem §10.3: All Norms on a Finite-Dimensional Space are Equivalent]]
-- [[§15 Compactness and the Unit Ball#^ex-15-1|Example §15.1: The Closed Unit Ball in 𝔽ⁿ]]
+- [[§12 New Normed Spaces from Old#^thm-12-3|Theorem §12.3: All Norms on a Finite-Dimensional Space are Equivalent]]
+- [[§18 Compactness and the Unit Ball#^ex-18-1|Example §18.1: The Closed Unit Ball in 𝔽ⁿ]]
 
 ## Connections
 - Sequential compactness of bounded sets; the $\mathbb{R}^n$ version is in §13.

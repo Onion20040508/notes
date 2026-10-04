@@ -2,10 +2,10 @@
 type: section
 subject: "[[Functional Analysis]]"
 chapter: 5
-section: 17
+section: 21
 tags: [functional-analysis, math556]
 ---
-← [[§16 Definition and Examples]] · ↑ [[· 5 Inner Product Spaces]] · [[§18 Projection and Orthogonal Decomposition]] →
+← [[§20 Definition and Examples]] · ↑ [[· 5 Inner Product Spaces]] · [[§22 Projection and Orthogonal Decomposition]] →
 
 *Stage: inner products — Thread: convexity. Every inner product induces a norm, and the parallelogram law says which norms arise.*
 
@@ -18,11 +18,11 @@ tags: [functional-analysis, math556]
 > \|x\| := (x,x)^{1/2},
 > $$
 >
-> which is well defined since $(x,x) \ge 0$. Calling it a norm is an abuse of language until Theorem [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-2|§17.2]] below; Wu flagged this explicitly while writing the proof.
+> which is well defined since $(x,x) \ge 0$. Calling it a norm is an abuse of language until Theorem [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-2|§21.2]] below; Wu flagged this explicitly while writing the proof.
 
-^rem-17-1
+^rem-21-1
 
-> [!theorem] Theorem §17.1: Cauchy–Schwarz
+> [!theorem] Theorem §21.1: Cauchy–Schwarz
 > For all $x, y$ in an inner product space $X$,
 >
 > $$
@@ -31,7 +31,7 @@ tags: [functional-analysis, math556]
 >
 > *Lax: §6.1, Thm 1*
 
-^thm-17-1
+^thm-21-1
 
 > [!proof]+ Proof
 > **Step 1: expand a square.** For $t \in \mathbb{F}$, positivity gives $(x + ty,\, x + ty) \ge 0$. Expanding by sesquilinearity,
@@ -90,12 +90,12 @@ tags: [functional-analysis, math556]
 >
 > Finally $|(x,y)| = |\overline{(y,x)}| = |(y,x)|$, so the bound holds in the stated order as well.
 
-^pf-17-1
+^pf-21-1
 
-*Uses:* [[§16 Definition and Examples#^def-16-1|Def. §16.1]]
+*Uses:* [[§20 Definition and Examples#^def-20-1|Def. §20.1]]
 
 > [!remark]- Connections
-> - The same inequality in $\mathbb{R}^n$, stated without proof in Chapter 4: [[§11 Means and Young's Inequality#^prop-11-1|§11.1]].
+> - The same inequality in $\mathbb{R}^n$, stated without proof in Chapter 4: [[§14 Means and Young's Inequality#^prop-14-1|§14.1]].
 > - The finite-dimensional home: [[Cauchy–Schwarz inequality|LADR 6.14]].
 > - The rotation $e^{i\theta}$ that makes a complex number real: [[Functional Analysis Problem-Solving Techniques#^rem-t8|Technique 8]].
 > - In $L^2$ it is the case $p = q = 2$ of Hölder's inequality, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|551 Thm. §19.5]].
@@ -103,12 +103,12 @@ tags: [functional-analysis, math556]
 
 ## The Induced Norm and Hilbert Spaces
 
-> [!theorem] Theorem §17.2: The Inner Product Induces a Norm
+> [!theorem] Theorem §21.2: The Inner Product Induces a Norm
 > Let $(X, (\cdot,\cdot))$ be an inner product space. Then $\|x\| = (x,x)^{1/2}$ is a norm on $X$, so $(X, \|\cdot\|)$ is a normed linear space.
 >
 > *Lax: §6.1, (3)*
 
-^thm-17-2
+^thm-21-2
 
 > [!proof]+ Proof
 > *Positivity* is axiom (3): $\|x\| = (x,x)^{1/2} \ge 0$, and $\|x\| = 0$ iff $(x,x) = 0$ iff $x = 0$.
@@ -121,17 +121,17 @@ tags: [functional-analysis, math556]
 >
 > and taking non-negative square roots gives $\|ax\| = |a|\,\|x\|$.
 >
-> *Subadditivity.* This is the only part needing Cauchy–Schwarz. Expanding as in [[§17 Cauchy–Schwarz and the Induced Norm#^pf-17-1|(5.1)]] with $t = 1$ and $y$ in place of $ty$,
+> *Subadditivity.* This is the only part needing Cauchy–Schwarz. Expanding as in [[§21 Cauchy–Schwarz and the Induced Norm#^pf-21-1|(5.1)]] with $t = 1$ and $y$ in place of $ty$,
 >
 > $$
 > \|x + y\|^2 = \|x\|^2 + 2\operatorname{Re}(x,y) + \|y\|^2 \le \|x\|^2 + 2\,|(x,y)| + \|y\|^2 \le \|x\|^2 + 2\|x\|\,\|y\| + \|y\|^2,
 > $$
 >
-> using $\operatorname{Re} w \le |w|$ and then Theorem [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|§17.1]]. The right-hand side is $\bigl( \|x\| + \|y\| \bigr)^2$, so taking square roots gives $\|x + y\| \le \|x\| + \|y\|$.
+> using $\operatorname{Re} w \le |w|$ and then Theorem [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|§21.1]]. The right-hand side is $\bigl( \|x\| + \|y\| \bigr)^2$, so taking square roots gives $\|x + y\| \le \|x\| + \|y\|$.
 
-^pf-17-2
+^pf-21-2
 
-*Uses:* [[§16 Definition and Examples#^def-16-1|Def. §16.1]], [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|§17.1]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]]
+*Uses:* [[§20 Definition and Examples#^def-20-1|Def. §20.1]], [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|§21.1]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]]
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[§19 Inner Products and Norms#^ladr-6-7|LADR 6.7]], [[§19 Inner Products and Norms#^ladr-6-9|LADR 6.9]], [[Triangle inequality|LADR 6.17]].
@@ -139,45 +139,45 @@ tags: [functional-analysis, math556]
 > - Computational version: length from an inner product, [[§46 Inner Product Spaces#^def-46-2|235 Def. §46.2]], and the triangle inequality, [[§46 Inner Product Spaces#^thm-46-5|235 Thm. §46.5]].
 
 > [!remark] Remark
-> So every inner product space is a normed linear space, and all of Chapters [[· 3 Normed Linear Spaces|3]] and [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4]] applies to it. The converse question — which norms come from an inner product — is answered in [[§17 Cauchy–Schwarz and the Induced Norm#Which Norms Come from an Inner Product|§17]].
+> So every inner product space is a normed linear space, and all of Chapters [[· 3 Normed Linear Spaces|3]] and [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4]] applies to it. The converse question — which norms come from an inner product — is answered in [[§21 Cauchy–Schwarz and the Induced Norm#Which Norms Come from an Inner Product|§21]].
 
-^rem-17-2
+^rem-21-2
 
-> [!definition] Definition §17.1: Hilbert Space
+> [!definition] Definition §21.1: Hilbert Space
 > An inner product space that is complete in the induced norm $\|x\| = (x,x)^{1/2}$ is a **Hilbert space**.
 >
 > *Lax: §6.1, definition of Hilbert space*
 
-^def-17-1
+^def-21-1
 
 > [!remark]- Connections
-> - Complete normed spaces: [[§9 Completeness#^def-9-2|Def. §9.2]] (Banach space); in 551, [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-4|551 Def. §19.4]], where $L^2$ is noted to be a Hilbert space ([[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|551 Remark §19.1]]).
+> - Complete normed spaces: [[§11 Completeness#^def-11-2|Def. §11.2]] (Banach space); in 551, [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-4|551 Def. §19.4]], where $L^2$ is noted to be a Hilbert space ([[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|551 Remark §19.1]]).
 
-> [!example] Example §17.1: Hilbert Spaces
-> $\mathbb{R}^n$ and $\mathbb{C}^n$ with the dot product are Hilbert spaces, being finite-dimensional (Corollary [[§10 New Normed Spaces from Old#^cor-10-4|§10.4]]); so are $\ell^2$ and $L^2(\Omega)$ with the inner products of [[§16 Definition and Examples|§16]], complete by Theorems [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|§13.5]] and [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-3|§14.3]]. Wu: “I proved all $L^p$ is complete; I should at some point put my proof online.”
+> [!example] Example §21.1: Hilbert Spaces
+> $\mathbb{R}^n$ and $\mathbb{C}^n$ with the dot product are Hilbert spaces, being finite-dimensional (Corollary [[§12 New Normed Spaces from Old#^cor-12-4|§12.4]]); so are $\ell^2$ and $L^2(\Omega)$ with the inner products of [[§20 Definition and Examples|§20]], complete by Theorems [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|§16.5]] and [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|§17.3]]. Wu: “I proved all $L^p$ is complete; I should at some point put my proof online.”
 
-^ex-17-1
+^ex-21-1
 
 > [!remark]- Connections
 > - Completeness of $L^p$ in 551: [[Riesz–Fischer Theorem|551 §19.18]].
 
-> [!example] Example §17.2: An Inner Product Space that is Not a Hilbert Space
+> [!example] Example §21.2: An Inner Product Space that is Not a Hilbert Space
 > Let $X = C_c(\mathbb{R}^n)$, the continuous functions with compact support (the set where $f \neq 0$ is contained in a bounded set, so $f$ is integrable), with
 >
 > $$
 > (f, g) = \int_{\mathbb{R}^n} f(x)\,\overline{g(x)}\,dx .
 > $$
 >
-> This is the inner product of $L^2(\mathbb{R}^n)$ restricted to $X$, so $(X, (\cdot,\cdot))$ is an inner product space. It is not complete: $C_c(\mathbb{R}^n)$ is dense in $L^2(\mathbb{R}^n)$ (Theorem [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-4|§14.4]]), so any $F \in L^2 \setminus C_c$ is the $L^2$-limit of a sequence in $X$, which is then Cauchy in $X$ with no limit in $X$. By Proposition [[§9 Completeness#^prop-9-5|§9.5]], $\overline{X} = L^2(\mathbb{R}^n)$. (The same argument, with the same conclusion, applies to $C_c^\infty$.)
+> This is the inner product of $L^2(\mathbb{R}^n)$ restricted to $X$, so $(X, (\cdot,\cdot))$ is an inner product space. It is not complete: $C_c(\mathbb{R}^n)$ is dense in $L^2(\mathbb{R}^n)$ (Theorem [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-4|§17.4]]), so any $F \in L^2 \setminus C_c$ is the $L^2$-limit of a sequence in $X$, which is then Cauchy in $X$ with no limit in $X$. By Proposition [[§11 Completeness#^prop-11-5|§11.5]], $\overline{X} = L^2(\mathbb{R}^n)$. (The same argument, with the same conclusion, applies to $C_c^\infty$.)
 >
 > *Lax: §6.1, Example 1*
 
-^ex-17-2
+^ex-21-2
 
 > [!remark]- Connections
 > - Density of $C_c$ in $L^p$: [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 §19.19]] (iii); for $L^1$, [[Continuous Functions of Compact Support are Dense in L¹|551 §16]].
 
-> [!example] Example §17.3: Sobolev Spaces
+> [!example] Example §21.3: Sobolev Spaces
 > Let $\Omega \subset \mathbb{R}^n$ be a domain, $k \ge 0$ an integer, and $X = C_c^\infty(\Omega)$, the smooth functions whose support is a compact subset of $\Omega$. For a multi-index $\alpha = (\alpha_1, \ldots, \alpha_n)$ write $|\alpha| = \alpha_1 + \cdots + \alpha_n$ and
 >
 > $$
@@ -196,11 +196,11 @@ tags: [functional-analysis, math556]
 >
 > *Lax: §5.1, example (g)*
 
-^ex-17-3
+^ex-21-3
 
 ## Which Norms Come from an Inner Product
 
-> [!theorem] Proposition §17.3: Parallelogram Law and Polarization
+> [!theorem] Proposition §21.3: Parallelogram Law and Polarization
 > Let $(X, (\cdot,\cdot))$ be an inner product space and $\|x\| = (x,x)^{1/2}$. For all $x, y \in X$:
 > - (a) (parallelogram law) $\|x + y\|^2 + \|x - y\|^2 = 2\|x\|^2 + 2\|y\|^2$;
 > - (b) (polarization) if $\mathbb{F} = \mathbb{R}$, $(x,y) = \frac14\bigl( \|x+y\|^2 - \|x-y\|^2 \bigr)$; if $\mathbb{F} = \mathbb{C}$,
@@ -213,10 +213,10 @@ tags: [functional-analysis, math556]
 >
 > *Lax: §6.1, (6)*
 
-^prop-17-3
+^prop-21-3
 
 > [!proof]+ Proof
-> (Part (b) not covered in lecture.) By [[§17 Cauchy–Schwarz and the Induced Norm#^pf-17-1|(5.1)]] with $t = \pm 1$, and since $(x,y)$ and $(y,x)$ are conjugate and so have the same real part,
+> (Part (b) not covered in lecture.) By [[§21 Cauchy–Schwarz and the Induced Norm#^pf-21-1|(5.1)]] with $t = \pm 1$, and since $(x,y)$ and $(y,x)$ are conjugate and so have the same real part,
 >
 > $$
 > \|x \pm y\|^2 = \|x\|^2 \pm 2\operatorname{Re}(x,y) + \|y\|^2 .
@@ -230,9 +230,9 @@ tags: [functional-analysis, math556]
 >
 > and $(x,y) = \operatorname{Re}(x,y) + i\operatorname{Im}(x,y)$ is the formula in (b).
 
-^pf-17-3
+^pf-21-3
 
-*Uses:* [[§17 Cauchy–Schwarz and the Induced Norm#^pf-17-1|§17.1 (5.1)]], [[§16 Definition and Examples#^def-16-1|Def. §16.1]]
+*Uses:* [[§21 Cauchy–Schwarz and the Induced Norm#^pf-21-1|§21.1 (5.1)]], [[§20 Definition and Examples#^def-20-1|Def. §20.1]]
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[§19 Inner Products and Norms#^ladr-6-21|LADR 6.21]] (parallelogram equality).
@@ -245,17 +245,17 @@ The parallelogram law is a statement of plane geometry: in the parallelogram spa
 
 The next theorem says it is the *only* obstruction.
 
-> [!theorem] Theorem §17.4: Jordan–von Neumann
-> Let $(X, \|\cdot\|)$ be a normed linear space. There is an inner product $(\cdot,\cdot)$ on $X$ with $(x,x) = \|x\|^2$ for all $x \in X$ if and only if $\|\cdot\|$ satisfies the parallelogram law. The inner product is then unique, given by the polarization formula of Proposition [[§17 Cauchy–Schwarz and the Induced Norm#^prop-17-3|§17.3]](b).
+> [!theorem] Theorem §21.4: Jordan–von Neumann
+> Let $(X, \|\cdot\|)$ be a normed linear space. There is an inner product $(\cdot,\cdot)$ on $X$ with $(x,x) = \|x\|^2$ for all $x \in X$ if and only if $\|\cdot\|$ satisfies the parallelogram law. The inner product is then unique, given by the polarization formula of Proposition [[§21 Cauchy–Schwarz and the Induced Norm#^prop-21-3|§21.3]](b).
 >
 > *Source: HW3, Problem 3*
 >
 > *Lax: §6.1, Exercise 1*
 
-^thm-17-4
+^thm-21-4
 
 > [!proof]+ Proof
-> Necessity and uniqueness are Proposition [[§17 Cauchy–Schwarz and the Induced Norm#^prop-17-3|§17.3]]. (HW3, Problem 3.)
+> Necessity and uniqueness are Proposition [[§21 Cauchy–Schwarz and the Induced Norm#^prop-21-3|§21.3]]. (HW3, Problem 3.)
 > For sufficiency, assume the parallelogram law
 >
 > $$
@@ -397,30 +397,30 @@ The next theorem says it is the *only* obstruction.
 >
 > By Steps 3–6, $(\cdot,\cdot)$ is sesquilinear, skew-symmetric and positive, i.e. a scalar product on $X$, and $(x, x) = \|x\|^2$ for all $x \in X$.
 
-^pf-17-4
+^pf-21-4
 
-*Uses:* [[§17 Cauchy–Schwarz and the Induced Norm#^prop-17-3|§17.3]], [[§16 Definition and Examples#^def-16-1|Def. §16.1]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^lem-8-3|§8.3]], [[§8 Normed Linear Spaces#^prop-8-4|§8.4]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]]
+*Uses:* [[§21 Cauchy–Schwarz and the Induced Norm#^prop-21-3|§21.3]], [[§20 Definition and Examples#^def-20-1|Def. §20.1]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^lem-10-3|§10.3]], [[§10 Normed Linear Spaces#^prop-10-4|§10.4]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]]
 
 > [!remark]- Connections
 > - The finite-dimensional parallelogram equality, whose remark names Jordan–von Neumann: [[§19 Inner Products and Norms#^ladr-6-21|LADR 6.21]].
-> - Used to rule out $p \neq 2$: [[§17 Cauchy–Schwarz and the Induced Norm#^cor-17-5|§17.5]]; and as an application of [[Functional Analysis Problem-Solving Techniques#^ex-t10|Technique 10]].
+> - Used to rule out $p \neq 2$: [[§21 Cauchy–Schwarz and the Induced Norm#^cor-21-5|§21.5]]; and as an application of [[Functional Analysis Problem-Solving Techniques#^ex-t10|Technique 10]].
 
 > [!remark] Remark
-> Two points about the proof. First, the only genuinely analytic step is real homogeneity: additivity yields it for rational scalars by pure algebra, and continuity of the norm extends it to the reals. Additivity alone would not suffice — there exist additive functions $\mathbb{R} \to \mathbb{R}$ that are not linear, constructed from a Hamel basis — which is why continuity must be invoked. Second, the complex case is reduced to the real one exactly as in the [[§7 The Complex Hahn–Banach Theorem#^thm-7-1|complex Hahn–Banach theorem]]: the real part determines everything, because $\operatorname{Im}(x,y) = \operatorname{Re}(x, iy)$, just as $\operatorname{Im}\ell(x) = -\operatorname{Re}\ell(ix)$ there.
+> Two points about the proof. First, the only genuinely analytic step is real homogeneity: additivity yields it for rational scalars by pure algebra, and continuity of the norm extends it to the reals. Additivity alone would not suffice — there exist additive functions $\mathbb{R} \to \mathbb{R}$ that are not linear, constructed from a Hamel basis — which is why continuity must be invoked. Second, the complex case is reduced to the real one exactly as in the [[§8 The Complex Hahn–Banach Theorem#^thm-8-1|complex Hahn–Banach theorem]]: the real part determines everything, because $\operatorname{Im}(x,y) = \operatorname{Re}(x, iy)$, just as $\operatorname{Im}\ell(x) = -\operatorname{Re}\ell(ix)$ there.
 
-^rem-17-3
+^rem-21-3
 
-> [!theorem] Corollary §17.5: Only $p = 2$ Gives an Inner Product
+> [!theorem] Corollary §21.5: Only $p = 2$ Gives an Inner Product
 > Let $1 \le p \le \infty$ with $p \neq 2$. The norm $\|\cdot\|_p$ on $\mathbb{F}^n$ ($n \ge 2$), on $\ell^p$, and on $L^p(\Omega)$ does not come from an inner product.
 
-^cor-17-5
+^cor-21-5
 
 > [!proof]+ Proof
-> By Theorem [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-4|§17.4]] it suffices to exhibit $x, y$ violating the parallelogram law. In $\mathbb{F}^n$ and $\ell^p$ take $x = e_1$, $y = e_2$. In $L^p(\Omega)$ take disjoint $A, B \subset \Omega$ of positive measure (two disjoint small balls) and $x = \chi_A / m(A)^{1/p}$, $y = \chi_B / m(B)^{1/p}$, or $x = \chi_A$, $y = \chi_B$ if $p = \infty$. In each case $\|x\|_p = \|y\|_p = 1$ and $x, y$ have disjoint supports, so $|x \pm y|^p = |x|^p + |y|^p$ pointwise and $\|x \pm y\|_p = 2^{1/p}$ for $p < \infty$, while $\|x \pm y\|_\infty = 1$. The parallelogram law would require $\|x+y\|_p^2 + \|x-y\|_p^2 = 2 \cdot 2^{2/p}$ to equal $2(\|x\|_p^2 + \|y\|_p^2) = 4$, i.e. $2^{2/p} = 2$, i.e. $p = 2$; for $p = \infty$ it would require $2 = 4$. (Not covered in lecture.)
+> By Theorem [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-4|§21.4]] it suffices to exhibit $x, y$ violating the parallelogram law. In $\mathbb{F}^n$ and $\ell^p$ take $x = e_1$, $y = e_2$. In $L^p(\Omega)$ take disjoint $A, B \subset \Omega$ of positive measure (two disjoint small balls) and $x = \chi_A / m(A)^{1/p}$, $y = \chi_B / m(B)^{1/p}$, or $x = \chi_A$, $y = \chi_B$ if $p = \infty$. In each case $\|x\|_p = \|y\|_p = 1$ and $x, y$ have disjoint supports, so $|x \pm y|^p = |x|^p + |y|^p$ pointwise and $\|x \pm y\|_p = 2^{1/p}$ for $p < \infty$, while $\|x \pm y\|_\infty = 1$. The parallelogram law would require $\|x+y\|_p^2 + \|x-y\|_p^2 = 2 \cdot 2^{2/p}$ to equal $2(\|x\|_p^2 + \|y\|_p^2) = 4$, i.e. $2^{2/p} = 2$, i.e. $p = 2$; for $p = \infty$ it would require $2 = 4$. (Not covered in lecture.)
 
-^pf-17-5
+^pf-21-5
 
-*Uses:* [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-4|§17.4]], [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^def-13-1|Def. §13.1]], [[§14 The Function Spaces Lᵖ(Ω)#^def-14-1|Def. §14.1]]
+*Uses:* [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-4|§21.4]], [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^def-16-1|Def. §16.1]], [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|Def. §17.1]]
 
 ![[m556-17-2.svg]]
 *The proof in $\mathbb{R}^2$: the unit spheres of $\|\cdot\|_1$ (red), $\|\cdot\|_2$ (blue) and $\|\cdot\|_\infty$ (black). The sides $e_1$, $e_2$ of the square have norm $1$ in all three, but the diagonals $e_1 \pm e_2$ (dashed) cross the three spheres at $\tfrac12$, $\tfrac{1}{\sqrt2}$ and $1$ of their length, so their norms are $2$, $\sqrt2$ and $1$. The parallelogram law needs $\|e_1 + e_2\|^2 + \|e_1 - e_2\|^2 = 4$, which only the round sphere delivers.*

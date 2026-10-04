@@ -19,7 +19,7 @@ tags: [measure-theory, hub]
 - (not cited later in the course)
 
 ## Used in (Functional Analysis)
-- [[§20 Orthonormal Sets and Bases#^prop-20-15|Proposition §20.15: ℓ^∞ is Not Separable]]
+- [[§25 Sequence and Function Spaces#^prop-25-3|Proposition §25.3: ℓ^∞ is Not Separable]]
 
 ## Connections
 - **Proof idea.** The diagonal set A = {x : x ∉ f(x)} differs from every f(y), so no map X → 𝒫(X) is onto. It is the same diagonal trick that shows the [[§4 Uncountability#^ex-4-1|binary sequences are uncountable]] (Ex. §4.1).

@@ -36,7 +36,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - The norm of an inner product space, $\|v\| = \sqrt{\langle v, v\rangle}$ ([[§19 Inner Products and Norms#^ladr-6-7|LADR 6.7]]), satisfies (i), (iii) by [[§19 Inner Products and Norms#^ladr-6-9|LADR 6.9]] and (ii) by the [[Triangle inequality|triangle inequality (LADR 6.17)]].
 > - Which norms come from an inner product is decided by the [[§19 Inner Products and Norms#^ladr-6-21|parallelogram equality (LADR 6.21)]]; among the $L^p$ norms only $p = 2$ does.
-> - 556 version over ℝ or ℂ, alongside seminorms: [[§8 Normed Linear Spaces#^def-8-1|556 Def. §8.1]], [[§8 Normed Linear Spaces#^def-8-2|556 Def. §8.2]]; that among the $L^p$ norms only $p = 2$ comes from an inner product is [[§17 Cauchy–Schwarz and the Induced Norm#^cor-17-5|556 Cor. §17.5]].
+> - 556 version over ℝ or ℂ, alongside seminorms: [[§10 Normed Linear Spaces#^def-10-1|556 Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-2|556 Def. §10.2]]; that among the $L^p$ norms only $p = 2$ comes from an inner product is [[§21 Cauchy–Schwarz and the Induced Norm#^cor-21-5|556 Cor. §21.5]].
 
 > [!example] Example §19.2: Norms on $\mathbb{R}^n$
 > For $\mathbf{x} = (x_1, \ldots, x_n) \in \mathbb{R}^n$: $\|\mathbf{x}\|_2 = \left(\sum_{i=1}^{n} x_i^2\right)^{1/2}$ is the Euclidean norm, and $\|\mathbf{x}\|_1 = \sum_{i=1}^{n} |x_i|$ is the $\ell^1$ norm. Both are norms on $\mathbb{R}^n$.
@@ -75,7 +75,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - Metric axioms: [[§11 Metric Topology#^def-11-1|590 Def. §11.1]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-1|451 Def. §13.1]]. The same observation for inner product spaces: [[Triangle inequality|LADR 6.17]].
 > - The $L^1$ case was [[§16 The L¹ Space and Density Theorems#^def-16-2|Def. §16.2]].
-> - Same statement and proof in 556: [[§8 Normed Linear Spaces#^prop-8-2|556 Prop. §8.2]].
+> - Same statement and proof in 556: [[§10 Normed Linear Spaces#^prop-10-2|556 Prop. §10.2]].
 
 ## Completeness and Banach Spaces
 
@@ -88,7 +88,7 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - These are the metric-space notions of [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]] for $d(x,y) = \|x - y\|$; on $\mathbb{R}$: [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|451 Def. §10.4]].
-> - 556 versions: [[§8 Normed Linear Spaces#^def-8-4|556 Def. §8.4]] (convergence) and [[§8 Normed Linear Spaces#^def-8-5|556 Def. §8.5]] (Cauchy sequence).
+> - 556 versions: [[§10 Normed Linear Spaces#^def-10-4|556 Def. §10.4]] (convergence) and [[§10 Normed Linear Spaces#^def-10-5|556 Def. §10.5]] (Cauchy sequence).
 
 > [!definition] Definition §19.4: Banach Space
 > A normed linear space $(X, \|\cdot\|)$ is **complete** if every Cauchy sequence in $X$ converges to a limit in $X$. A complete normed linear space is called a **Banach space**.
@@ -97,7 +97,7 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - A Banach space is a normed space that is a [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|complete metric space (451 Def. §13.3)]] under $d(x,y) = \|x - y\|$ ([[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-1|Proposition §19.1]]).
-> - 556 version: [[§9 Completeness#^def-9-2|556 Def. §9.2]]; every normed space has a Banach completion ([[§9 Completeness#^thm-9-4|556 Thm. §9.4]]), and $L^p[a,b]$ is the completion of $C[a,b]$ in the $p$-norm ([[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|556 Prop. §14.8]]).
+> - 556 version: [[§11 Completeness#^def-11-2|556 Def. §11.2]]; every normed space has a Banach completion ([[§11 Completeness#^thm-11-4|556 Thm. §11.4]]), and $L^p[a,b]$ is the completion of $C[a,b]$ in the $p$-norm ([[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|556 Prop. §17.8]]).
 
 > [!example] Example §19.4: Banach Spaces
 > $(\mathbb{R}^n, \|\cdot\|_1)$ and $(\mathbb{R}^n, \|\cdot\|_2)$ are Banach spaces (completeness of $\mathbb{R}^n$ in any norm; [[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]). The [[Riesz–Fischer Theorem|Riesz–Fischer theorem]] states that $(L^1(E), \|\cdot\|_1)$ is a Banach space.
@@ -136,7 +136,7 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - The Riemann-integral prototype of this inner product and norm: [[§19 Inner Products and Norms#^ladr-6-3|LADR 6.3(c)]], [[§19 Inner Products and Norms#^ladr-6-8|LADR 6.8(b)]].
-> - 556's working definition on open sets of ℝⁿ: [[§14 The Function Spaces Lᵖ(Ω)#^def-14-1|556 Def. §14.1]]; with counting measure on ℕ ([[§11 Borel Sets and Measure Spaces#^ex-11-2|Ex. §11.2]]) this definition gives the sequence spaces of [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^def-13-1|556 Def. §13.1]].
+> - 556's working definition on open sets of ℝⁿ: [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|556 Def. §17.1]]; with counting measure on ℕ ([[§11 Borel Sets and Measure Spaces#^ex-11-2|Ex. §11.2]]) this definition gives the sequence spaces of [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^def-16-1|556 Def. §16.1]].
 
 > [!example] Example §19.5: $L^p$ Membership Depends on $p$
 > Let $E = (0, 1)$ and $g(x) = 1/\sqrt{x}$. Then $g \in L^p((0,1))$ iff $\int_0^1 x^{-p/2}\,dx < \infty$ iff $p/2 < 1$ iff $p < 2$. So $g \in L^1$ but $g \notin L^2$.
@@ -232,7 +232,7 @@ tags: [measure-theory, math551]
 ^def-19-7
 
 > [!remark]- Connections
-> - Same definition in 556: [[§12 Hölder's Inequality for Sequences#^def-12-2|556 Def. §12.2]].
+> - Same definition in 556: [[§15 Hölder's Inequality for Sequences#^def-15-2|556 Def. §15.2]].
 
 > [!theorem] Lemma §19.4: Young's Inequality
 > For $a, b > 0$ and $0 < \theta < 1$: $a^\theta\,b^{1-\theta} \leq \theta\,a + (1 - \theta)\,b$.
@@ -248,7 +248,7 @@ tags: [measure-theory, math551]
 *Young's inequality is the concavity of $\ln$ (shown with $\theta = 0.35$). The chord from $(a, \ln a)$ to $(b, \ln b)$ (red) lies below the graph, so at $\theta a + (1-\theta)b$ the chord height $\theta\ln a + (1-\theta)\ln b = \ln(a^\theta b^{1-\theta})$ is below $\ln(\theta a + (1-\theta)b)$. Carrying the chord height across to the graph (dashed) locates $a^\theta b^{1-\theta}$ on the axis, to the left of $\theta a + (1-\theta)b$ because $\ln$ is increasing.*
 
 > [!remark]- Connections
-> - Same inequality in 556, proved by the same concavity argument: [[§11 Means and Young's Inequality#^lem-11-3|556 Lemma §11.3]].
+> - Same inequality in 556, proved by the same concavity argument: [[§14 Means and Young's Inequality#^lem-14-3|556 Lemma §14.3]].
 
 > [!theorem] Theorem §19.5: Hölder's Inequality
 > Let $f, g$ be measurable functions on $E$. Let $1 \leq p \leq \infty$ and $p'$ its [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|conjugate]]. Then:
@@ -299,7 +299,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - $p = 2$ is the [[Cauchy–Schwarz inequality|Cauchy–Schwarz inequality (LADR 6.14)]] for the $L^2$ inner product of [[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|the remark above]]; its Riemann-integral form for continuous functions is [[§19 Inner Products and Norms#^ladr-6-16|LADR 6.16(b)]].
 > - Used to prove [[Minkowski's Inequality|Minkowski's inequality]], the $L^p$ inclusions ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-6|Corollary §19.6]]) and [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-7|interpolation]].
-> - Sequence version (counting measure), with the same proof: [[§12 Hölder's Inequality for Sequences#^thm-12-1|556 Thm. §12.1]]; the case $p = 2$ is the $L^2$ instance of the Cauchy–Schwarz inequality of every inner product space, [[§17 Cauchy–Schwarz and the Induced Norm#^thm-17-1|556 Thm. §17.1]].
+> - Sequence version (counting measure), with the same proof: [[§15 Hölder's Inequality for Sequences#^thm-15-1|556 Thm. §15.1]]; the case $p = 2$ is the $L^2$ instance of the Cauchy–Schwarz inequality of every inner product space, [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|556 Thm. §21.1]].
 
 > [!theorem] Corollary §19.6: $L^p$ Inclusion for Finite Measure Spaces
 > Assume $m(E) < \infty$. Then for $1 \leq p_1 < p_2 \leq \infty$, $L^{p_2}(E) \subseteq L^{p_1}(E)$, and:
@@ -347,7 +347,7 @@ tags: [measure-theory, math551]
 ^rem-19-2
 
 > [!remark]- Connections
-> - For sequences the inclusion runs the other way, $\ell^p \subset \ell^q$ for $p < q$: [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^prop-13-4|556 Prop. §13.4]].
+> - For sequences the inclusion runs the other way, $\ell^p \subset \ell^q$ for $p < q$: [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^prop-16-4|556 Prop. §16.4]].
 
 > [!theorem] Proposition §19.7: Interpolation of $L^p$ Norms
 > Let $1 \leq r < s \leq \infty$ and $f \in L^r(E) \cap L^s(E)$. Then $f \in L^t(E)$ for all $r < t < s$, with:
@@ -437,7 +437,7 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - For $p = 2$ the norm comes from the $L^2$ inner product, and Minkowski is the inner-product [[Triangle inequality|triangle inequality (LADR 6.17)]]; the case $p = 1$ is [[§15 The General Lebesgue Integral#^prop-15-3|Proposition §15.3]].
-> - Sequence version, proved by the same split-and-Hölder computation: [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-1|556 Thm. §13.1]].
+> - Sequence version, proved by the same split-and-Hölder computation: [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1|556 Thm. §16.1]].
 
 > [!theorem] Theorem §19.10: $L^p$ is a Normed Linear Space
 > Let $1 \leq p \leq \infty$. Then $(L^p(E), \|\cdot\|_p)$ is a [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|normed linear space]].
@@ -457,7 +457,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - The case $p = 1$: [[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]].
 > - Passing to equivalence classes mod a.e. equality is a quotient by the subspace of null functions, as in [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]].
-> - Sequence analogue: [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^prop-13-3|556 Prop. §13.3]] ($\ell^p$ is a normed linear space).
+> - Sequence analogue: [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^prop-16-3|556 Prop. §16.3]] ($\ell^p$ is a normed linear space).
 
 > [!theorem] Corollary §19.11: Minkowski for Finite Sums
 > Let $\{f_k\}_{k=1}^m \subseteq L^p(E)$. Then $\left\|\sum_{k=1}^{m} f_k\right\|_p \leq \sum_{k=1}^{m} \|f_k\|_p$.
@@ -650,7 +650,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > [!remark]- Connections
 > - $L^p(E)$ is thus a [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|complete metric space (451 Def. §13.3)]], like $\mathbb{R}^n$ ([[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]); for $p = 2$, a complete inner product space (Hilbert space) extending [[§19 Inner Products and Norms#^ladr-6-4|LADR 6.4]].
 > - The engine is the absolute series test ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|§19.14]]), itself built on [[Monotone Convergence Theorem (Lebesgue)|MCT]]; the upgrade from subsequence to full sequence is [[Fatou's Lemma|Fatou]].
-> - Sequence analogue: [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|556 Thm. §13.5]] ($\ell^p$ is a Banach space); for $p = 2$ it makes $L^2$ a Hilbert space in the sense of [[§17 Cauchy–Schwarz and the Induced Norm#^def-17-1|556 Def. §17.1]].
+> - Sequence analogue: [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|556 Thm. §16.5]] ($\ell^p$ is a Banach space); for $p = 2$ it makes $L^2$ a Hilbert space in the sense of [[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]].
 
 ## Density and Separability
 
@@ -662,7 +662,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > [!remark]- Connections
 > - Topological versions: [[§18 Countability Axioms#^def-18-4|dense (590 Def. §18.4)]] and [[§18 Countability Axioms#^def-18-5|separable (590 Def. §18.5)]]; the sequential form agrees with $\overline{\mathcal{D}} = X$ in a metric space by [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|451 §13.6]].
 > - In metric spaces, separable $\iff$ second countable: [[§18 Countability Axioms#^prop-18-4|590 §18.4]].
-> - 556 versions: [[§8 Normed Linear Spaces#^def-8-7|556 Def. §8.7]] (dense, via the closure) and [[§20 Orthonormal Sets and Bases#^def-20-5|556 Def. §20.5]] (separable).
+> - 556 versions: [[§10 Normed Linear Spaces#^def-10-7|556 Def. §10.7]] (dense, via the closure) and [[§24 Orthonormal Sets and Bases#^def-24-5|556 Def. §24.5]] (separable).
 
 > [!example] Example §19.7
 > $\mathbb{R}^n$ is separable: $\mathbb{Q}^n$ is a countable dense subset.
@@ -717,7 +717,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 > [!remark]- Connections
 > - The $L^1$ versions: [[§16 The L¹ Space and Density Theorems#^thm-16-5|§16.5]], [[§16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[Continuous Functions of Compact Support are Dense in L¹|§16.7]].
-> - 556 strengthens (iii) to smooth compactly supported approximants, [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-4|556 Thm. §14.4]]; the failure for $p = \infty$ is [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-5|556 Prop. §14.5]].
+> - 556 strengthens (iii) to smooth compactly supported approximants, [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-4|556 Thm. §17.4]]; the failure for $p = \infty$ is [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-5|556 Prop. §17.5]].
 > - Used in PDEs: with Weierstrass's approximation theorem, (iii) shows that polynomials are dense in $L^2[-1,1]$, so Legendre series converge in the mean; see the Connections of [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-9|341 Thm. §49.9]].
 
 > [!remark] Remark: The Approximation Chain for $L^p$
@@ -747,7 +747,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 *Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Countable Union of Countable Sets is Countable|§3.1]], [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|§19.19]]
 
 > [!remark]- Connections
-> - Same result in 556, proved with rational rectangles in ℝⁿ: [[§20 Orthonormal Sets and Bases#^prop-20-16|556 Prop. §20.16]]; the case $L^2(\mathbb{R}^n)$ is [[§26 Position Eigenstates and Continuous Resolutions#^thm-26-2|556 Thm. §26.2]].
+> - Same result in 556, proved with rational rectangles in ℝⁿ: [[§25 Sequence and Function Spaces#^prop-25-4|556 Prop. §25.4]]; the case $L^2(\mathbb{R}^n)$ is [[§32 Position Eigenstates and Continuous Resolutions#^thm-32-2|556 Thm. §32.2]].
 
 > [!theorem] Theorem §19.21: $L^\infty$ is Not Separable
 > $L^\infty(E)$ is not separable (when $E$ has positive measure).

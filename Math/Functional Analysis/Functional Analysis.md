@@ -11,7 +11,7 @@ tags: [subject, functional-analysis]
 ---
 # Functional Analysis
 
-MATH 556, *Applied Functional Analysis* (Fall 2026, Sijue Wu); text Lax, *Functional Analysis* (Chapters 1, 3, 5, 6 and 15). Prerequisites: linear algebra, some complex analysis, advanced calculus; Lebesgue theory is not assumed. Section numbers §1–§27 are the notes' own; every box with a counterpart in Lax ends with it (*Lax: …*), and [[Functional Analysis Lax Concordance]] reads the two side by side. [[Functional Analysis Problem-Solving Techniques]] collects the recurring proof strategies; [[Functional Analysis Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math556_notes.tex`.
+MATH 556, *Applied Functional Analysis* (Fall 2026, Sijue Wu); text Lax, *Functional Analysis* (Chapters 1, 3, 5, 6 and 15). Prerequisites: linear algebra, some complex analysis, advanced calculus; Lebesgue theory is not assumed. Section numbers §1–§33 are the notes' own; every box with a counterpart in Lax ends with it (*Lax: …*), and [[Functional Analysis Lax Concordance]] reads the two side by side. [[Functional Analysis Problem-Solving Techniques]] collects the recurring proof strategies; [[Functional Analysis Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math556_notes.tex`.
 
 ## Roadmap
 The course moves through three stages of structure on a linear space: pure algebra, with no topology at all (Chapters 1–2); a norm, bringing distance, limits and completeness (Chapters 3–4); and an inner product, bringing angles and orthogonality (Chapter 5). Four threads run across the stages, and most theorems of the course are a step along one of them or a point where two of them meet: [[· 6 Bounded Linear Maps|Chapter 6]] begins the study of linear maps between normed spaces.
@@ -25,7 +25,7 @@ The line under each section heading records its stage and thread. [[· 7 Functio
 ![[m556-0-1.svg]]
 *The roadmap: the four threads (rows) through the three stages (columns). Solid arrows follow a thread from one stage to the next; dashed red arrows mark where threads meet: the separation theorem (Hahn–Banach applied to a gauge), the projection theorem (convexity needing completeness), and the Riesz representation theorem (built on the orthogonal decomposition).*
 
-The boxes, as links: linear functionals ([[§2 Linear Maps, Convexity, and Linear Functionals|§2]]); [[Hahn–Banach Theorem|Hahn–Banach, §3.2]]; [[Norms Are Gauges|a norm is an admissible p, §8.1]]; [[Riesz Representation Theorem (Hilbert spaces)|Riesz representation, §19.2]]; the gauge ([[§5 Convex Sets and the Gauge|§5]]); [[Hyperplane Separation Theorem|separation, §6.1]]; [[Closest Point in a Closed Convex Set|closest point, §18.2]]; [[Completion of a Normed Space|completion, §9.3]]; [[ℓᵖ Is a Banach Space|§13.5]] and [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-3|§14.3]]; [[Orthogonal Decomposition Theorem|orthogonal decomposition, §18.4]]; [[§20 Orthonormal Sets and Bases#^prop-20-6|expansions converge, §20.6]]; only finite sums ([[§1 Linear Spaces#Linear Span|§1.4]]); [[All Norms on a Finite-Dimensional Space Are Equivalent|§10.3]]; [[The Unit Ball of an Infinite-Dimensional Space Is Not Compact|§15.5]]; [[Characterizations of an Orthonormal Basis|Bessel, Parseval, orthonormal bases, §20.8]].
+The boxes, as links: linear functionals ([[§2 Linear Maps, Convexity, and Linear Functionals|§2]]); [[Hahn–Banach Theorem|Hahn–Banach, §4.2]]; [[Norms Are Gauges|a norm is an admissible p, §10.1]]; [[Riesz Representation Theorem (Hilbert spaces)|Riesz representation, §23.2]]; the gauge ([[§6 Convex Sets and the Gauge|§6]]); [[Hyperplane Separation Theorem|separation, §7.1]]; [[Closest Point in a Closed Convex Set|closest point, §22.2]]; [[Completion of a Normed Space|completion, §11.4]]; [[ℓᵖ Is a Banach Space|§16.5]] and [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|§17.3]]; [[Orthogonal Decomposition Theorem|orthogonal decomposition, §22.4]]; [[§24 Orthonormal Sets and Bases#^prop-24-6|expansions converge, §24.6]]; only finite sums ([[§1 Linear Spaces#Linear Span|§1.4]]); [[All Norms on a Finite-Dimensional Space Are Equivalent|§12.3]]; [[The Unit Ball of an Infinite-Dimensional Space Is Not Compact|§18.5]]; [[Characterizations of an Orthonormal Basis|Bessel, Parseval, orthonormal bases, §24.8]].
 
 ## How the chapters build on each other
 Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved (forward references in the notes). Dashed arrows from other subjects: citations of their results, labelled with the number (only arrows with 2 or more citations are drawn).
@@ -78,33 +78,33 @@ graph TD
 ## Central results
 - [[Every Subspace Has a Complement]] (§1.8)
 - [[X ≅ X∕Y ⊕ Y]] (§1.11)
-- [[Hahn–Banach Theorem]] (§3.2)
-- [[One-Step Extension Lemma]] (§4.1)
-- [[Zorn's Lemma]] (§4.2)
-- [[The Gauge Is Positive Homogeneous and Subadditive]] (§5.6)
-- [[Interior Points via the Gauge]] (§5.7)
-- [[Hyperplane Separation Theorem]] (§6.1)
-- [[Complex Hahn–Banach Theorem]] (§7.1)
-- [[Norms Are Gauges]] (§8.1)
-- [[Continuous Functions with the Sup Norm Form a Banach Space]] (§9.1)
-- [[Completion of a Normed Space]] (§9.4)
-- [[All Norms on a Finite-Dimensional Space Are Equivalent]] (§10.3)
-- [[Quotient Norm]] (§10.8)
-- [[ℓᵖ Is a Banach Space]] (§13.5)
-- [[Riesz's Lemma]] (§15.2)
-- [[The Unit Ball of an Infinite-Dimensional Space Is Not Compact]] (§15.5)
-- [[Jordan–von Neumann Theorem]] (§17.4)
-- [[Closest Point in a Closed Convex Set]] (§18.2)
-- [[Orthogonal Decomposition Theorem]] (§18.4)
-- [[Riesz Representation Theorem (Hilbert spaces)]] (§19.2)
-- [[Bessel's Inequality]] (§20.5)
-- [[Characterizations of an Orthonormal Basis]] (§20.8)
-- [[Existence of Orthonormal Bases]] (§20.12)
-- [[Separable Hilbert Spaces Have Countable Orthonormal Bases]] (§20.18)
-- [[Bounded Linear Maps Are Continuous]] (§21.2)
-- [[Bounded Linear Maps into a Banach Space Form a Banach Space]] (§21.5)
-- [[Bounded Sesquilinear Forms Are Bounded Operators]] (§23.1)
-- [[Lax–Milgram Theorem]] (§23.2)
+- [[Hahn–Banach Theorem]] (§4.2)
+- [[One-Step Extension Lemma]] (§5.1)
+- [[Zorn's Lemma]] (§5.2)
+- [[The Gauge Is Positive Homogeneous and Subadditive]] (§6.6)
+- [[Interior Points via the Gauge]] (§6.7)
+- [[Hyperplane Separation Theorem]] (§7.1)
+- [[Complex Hahn–Banach Theorem]] (§8.1)
+- [[Norms Are Gauges]] (§10.1)
+- [[Continuous Functions with the Sup Norm Form a Banach Space]] (§11.1)
+- [[Completion of a Normed Space]] (§11.4)
+- [[All Norms on a Finite-Dimensional Space Are Equivalent]] (§12.3)
+- [[Quotient Norm]] (§12.8)
+- [[ℓᵖ Is a Banach Space]] (§16.5)
+- [[Riesz's Lemma]] (§18.2)
+- [[The Unit Ball of an Infinite-Dimensional Space Is Not Compact]] (§18.5)
+- [[Jordan–von Neumann Theorem]] (§21.4)
+- [[Closest Point in a Closed Convex Set]] (§22.2)
+- [[Orthogonal Decomposition Theorem]] (§22.4)
+- [[Riesz Representation Theorem (Hilbert spaces)]] (§23.2)
+- [[Bessel's Inequality]] (§24.5)
+- [[Characterizations of an Orthonormal Basis]] (§24.8)
+- [[Existence of Orthonormal Bases]] (§24.12)
+- [[Separable Hilbert Spaces Have Countable Orthonormal Bases]] (§24.13)
+- [[Bounded Linear Maps Are Continuous]] (§26.2)
+- [[Bounded Linear Maps into a Banach Space Form a Banach Space]] (§26.5)
+- [[Bounded Sesquilinear Forms Are Bounded Operators]] (§28.1)
+- [[Lax–Milgram Theorem]] (§28.2)
 
 ## Summaries
 - [[Functional Analysis Lax Concordance]]: notation, where the course's route differs from Lax's, the chapter map, and every Lax result cited in these notes with its counterpart here.
@@ -136,9 +136,9 @@ The results from other subjects that this course's proofs and definitions cite m
 **[[Single Variable Analysis]]**
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8: Cauchy Implies Convergent]] (7)
 - [[§33 Properties of the Riemann Integral#^thm-33-3|Theorem §33.3: Monotonicity of the Integral]] (3)
-- [[Bolzano–Weierstrass Theorem]] (2)
 - [[Fundamental Theorem of Calculus]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-4|Theorem §33.4: Absolute Values]] (2)
+- [[Bolzano–Weierstrass Theorem]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-5|Theorem §33.5: Additivity over Subintervals]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-2|Theorem §33.2: Linearity]] (2)
 - [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7: Density of ℚ in ℝ]] (2)

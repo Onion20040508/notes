@@ -2,18 +2,18 @@
 type: section
 subject: "[[Functional Analysis]]"
 chapter: 3
-section: 10
+section: 12
 tags: [functional-analysis, math556]
 ---
-← [[§9 Completeness]] · ↑ [[· 3 Normed Linear Spaces]] · [[§11 Means and Young's Inequality]] →
+← [[§11 Completeness]] · ↑ [[· 3 Normed Linear Spaces]] · [[§13 ℝⁿ, C［a,b］ and ℓᵖ]] →
 
-*Stage: norms — Thread: dimension. In finite dimensions all norms are equivalent (Theorem [[§10 New Normed Spaces from Old#^thm-10-3|§10.3]]); subspaces, direct sums and quotients acquire norms.*
+*Stage: norms — Thread: dimension. In finite dimensions all norms are equivalent (Theorem [[§12 New Normed Spaces from Old#^thm-12-3|§12.3]]); subspaces, direct sums and quotients acquire norms.*
 
 The constructions of [[· 1 Linear Spaces|Chapter 1]] — subspaces, direct sums, quotients — each acquire a natural norm. The first two are immediate; the quotient requires a hypothesis and a proof.
 
 ## Equivalent Norms
 
-> [!definition] Definition §10.1: Equivalent Norms
+> [!definition] Definition §12.1: Equivalent Norms
 > Let $X$ be a linear space with two norms $\|\cdot\|_1$ and $\|\cdot\|_2$. They are **equivalent** if there are constants $c_1, c_2 > 0$ such that
 >
 > $$
@@ -22,7 +22,7 @@ The constructions of [[· 1 Linear Spaces|Chapter 1]] — subspaces, direct sums
 >
 > *Lax: §5.1, (5)*
 
-^def-10-1
+^def-12-1
 
 > [!remark]- Connections
 > - The prototype on $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]] (Euclidean vs. max distance), and in topological terms [[§11 Metric Topology#^lem-11-1|590 §11.1]], [[§11 Metric Topology#^thm-11-2|590 §11.2]].
@@ -30,47 +30,47 @@ The constructions of [[· 1 Linear Spaces|Chapter 1]] — subspaces, direct sums
 If $B_1$ and $B_2$ denote the closed unit balls of $\|\cdot\|_1$ and $\|\cdot\|_2$, the definition says exactly that $\tfrac{1}{c_2} B_2 \subset B_1 \subset \tfrac{1}{c_1} B_2$: if $\|x\|_1 \le 1$ then $\|x\|_2 \le 1/c_1$, and if $\|x\|_2 \le 1/c_2$ then $\|x\|_1 \le 1$. Each unit ball is squeezed between two scaled copies of the other.
 
 ![[m556-10-1.svg]]
-*For the maximum and Euclidean norms on $\mathbb{R}^2$ ([[§8 Normed Linear Spaces#^ex-8-1|Ex. §8.1]]), $\|x\|_\infty \le \|x\|_2 \le \sqrt{2}\,\|x\|_\infty$: the disk contains the dashed square and lies inside the solid one.*
+*For the maximum and Euclidean norms on $\mathbb{R}^2$ ([[§10 Normed Linear Spaces#^ex-10-1|Ex. §10.1]]), $\|x\|_\infty \le \|x\|_2 \le \sqrt{2}\,\|x\|_\infty$: the disk contains the dashed square and lies inside the solid one.*
 
 The constants must work for all $x$ at once: the condition says that the ratio $\|x\|_1 / \|x\|_2$ is bounded above and below on $X \setminus \{0\}$. Its meaning is topological.
 
-> [!theorem] Proposition §10.1: Equivalent Norms Have the Same Convergence
+> [!theorem] Proposition §12.1: Equivalent Norms Have the Same Convergence
 > Let $\|\cdot\|_1$ and $\|\cdot\|_2$ be equivalent norms on $X$. Then a sequence converges to $x$ in $\|\cdot\|_1$ iff it converges to $x$ in $\|\cdot\|_2$; a sequence is Cauchy for $\|\cdot\|_1$ iff it is Cauchy for $\|\cdot\|_2$; a subset of $X$ is closed for $\|\cdot\|_1$ iff it is closed for $\|\cdot\|_2$; and $(X, \|\cdot\|_1)$ is complete iff $(X, \|\cdot\|_2)$ is.
 
-^prop-10-1
+^prop-12-1
 
 > [!proof]+ Proof
-> (Not covered in lecture.) With $c_1\|x\|_2 \le \|x\|_1 \le c_2\|x\|_2$, we have $\|x_n - x\|_1 \le c_2\|x_n - x\|_2$ and $\|x_n - x\|_2 \le c_1^{-1}\|x_n - x\|_1$, so the two notions of convergence coincide; the same inequalities applied to $x_m - x_k$ give the statement about Cauchy sequences. Closedness (Definition [[§8 Normed Linear Spaces#^def-8-6|§8.6]]) and completeness are defined through convergent and Cauchy sequences alone, so they coincide as well.
+> (Not covered in lecture.) With $c_1\|x\|_2 \le \|x\|_1 \le c_2\|x\|_2$, we have $\|x_n - x\|_1 \le c_2\|x_n - x\|_2$ and $\|x_n - x\|_2 \le c_1^{-1}\|x_n - x\|_1$, so the two notions of convergence coincide; the same inequalities applied to $x_m - x_k$ give the statement about Cauchy sequences. Closedness (Definition [[§10 Normed Linear Spaces#^def-10-6|§10.6]]) and completeness are defined through convergent and Cauchy sequences alone, so they coincide as well.
 
-^pf-10-1
+^pf-12-1
 
-*Uses:* [[§10 New Normed Spaces from Old#^def-10-1|Def. §10.1]], [[§8 Normed Linear Spaces#^def-8-4|Def. §8.4]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§8 Normed Linear Spaces#^def-8-6|Def. §8.6]], [[§9 Completeness#^def-9-1|Def. §9.1]]
+*Uses:* [[§12 New Normed Spaces from Old#^def-12-1|Def. §12.1]], [[§10 Normed Linear Spaces#^def-10-4|Def. §10.4]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§10 Normed Linear Spaces#^def-10-6|Def. §10.6]], [[§11 Completeness#^def-11-1|Def. §11.1]]
 
-> [!theorem] Proposition §10.2: Continuity of One Norm with Respect to Another
+> [!theorem] Proposition §12.2: Continuity of One Norm with Respect to Another
 > Let $\|\cdot\|_1$ and $\|\cdot\|_2$ be norms on $X$. Then $\|x_n - x\|_2 \to 0$ implies $\|x_n\|_1 \to \|x\|_1$ for all sequences if and only if there is a constant $C$ with $\|x\|_1 \le C\|x\|_2$ for all $x \in X$. Consequently the two norms are equivalent iff each is continuous with respect to the other in this sense.
 
-^prop-10-2
+^prop-12-2
 
 > [!proof]+ Proof
 > ($\Leftarrow$) By the reverse triangle inequality, $\bigl|\,\|x_n\|_1 - \|x\|_1\,\bigr| \le \|x_n - x\|_1 \le C\|x_n - x\|_2 \to 0$.
 >
 > ($\Rightarrow$) Suppose no such $C$ exists. Then for each $n$ there is $x_n$ with $\|x_n\|_1 > n\|x_n\|_2$; necessarily $x_n \neq 0$, so $\|x_n\|_2 > 0$. Put $z_n = x_n / (n\|x_n\|_2)$. Then $\|z_n\|_2 = 1/n \to 0$, so $z_n \to 0$ in $\|\cdot\|_2$, while $\|z_n\|_1 = \|x_n\|_1 / (n\|x_n\|_2) > 1$, so $\|z_n\|_1 \not\to 0 = \|0\|_1$. This contradicts the continuity. (Not covered in lecture.)
 
-^pf-10-2
+^pf-12-2
 
-*Uses:* [[§8 Normed Linear Spaces#^lem-8-3|§8.3]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§10 New Normed Spaces from Old#^def-10-1|Def. §10.1]]
+*Uses:* [[§10 Normed Linear Spaces#^lem-10-3|§10.3]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§12 New Normed Spaces from Old#^def-12-1|Def. §12.1]]
 
 > [!remark] Remark
 > Anything defined in terms of convergence cannot tell equivalent norms apart. Conversely, two norms on one set for which the space is complete under one and not under the other cannot be equivalent — as for $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ on $C[a,b]$.
 
-^rem-10-1
+^rem-12-1
 
-> [!theorem] Theorem §10.3: All Norms on a Finite-Dimensional Space are Equivalent
+> [!theorem] Theorem §12.3: All Norms on a Finite-Dimensional Space are Equivalent
 > Let $X$ be a finite-dimensional linear space over $\mathbb{F}$. Any two norms on $X$ are equivalent.
 >
 > *Source: HW2, Problem 2(a)*
 
-^thm-10-3
+^thm-12-3
 
 > [!proof]+ Proof
 > (HW2, Problem 2(a).) Since $X$ is finite dimensional, it has a basis $\{e_1, \ldots, e_n\}$, and every $x \in X$ can be written uniquely as $x = \sum_{i=1}^n a_i e_i$ with $a_i \in \mathbb{F}$. Two norms $\|\cdot\|_a$ and $\|\cdot\|_b$ on $X$ are equivalent, written $\|\cdot\|_a \sim \|\cdot\|_b$, if there are constants $c, C > 0$ with $c\,\|x\|_a \le \|x\|_b \le C\,\|x\|_a$ for all $x$.
@@ -115,73 +115,73 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 >
 > With Step 3, $c\|x\|_1 \le \|x\|' \le C_1^{-1}\|x\|_1$ for all $x$, i.e. $\|\cdot\|' \sim \|\cdot\|_1$. By Step 1, any two norms on $X$ are equivalent.
 
-^pf-10-3
+^pf-12-3
 
-*Uses:* [[§10 New Normed Spaces from Old#^def-10-1|Def. §10.1]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^lem-8-3|§8.3]], [[Bolzano–Weierstrass Theorem|451 Bolzano–Weierstrass]]
+*Uses:* [[§12 New Normed Spaces from Old#^def-12-1|Def. §12.1]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^lem-10-3|§10.3]], [[Bolzano–Weierstrass Theorem|451 Bolzano–Weierstrass]]
 
 > [!remark]- Connections
 > - The case $X = \mathbb{R}^n$ with the Euclidean and max norms: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]], [[§11 Metric Topology#^thm-11-2|590 §11.2]]; coordinatewise Bolzano–Weierstrass in $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]].
-> - Used later: the $p$-norms on $\mathbb{R}^2$ after [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^prop-13-4|§13.4]], the compact unit ball [[§15 Compactness and the Unit Ball#^ex-15-1|Ex. §15.1]]; through [[§10 New Normed Spaces from Old#^cor-10-4|§10.4]], completeness of $\ell^p$ ([[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|§13.5]]).
+> - Used later: the $p$-norms on $\mathbb{R}^2$ after [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^prop-16-4|§16.4]], the compact unit ball [[§18 Compactness and the Unit Ball#^ex-18-1|Ex. §18.1]]; through [[§12 New Normed Spaces from Old#^cor-12-4|§12.4]], completeness of $\ell^p$ ([[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|§16.5]]).
 
 > [!remark] Remark: Finite Dimension is Necessary
-> The two inequalities are of different depth. $C_1\|x\|' \le \|x\|_1$ is pure algebra (Step 3): a norm is controlled by its values on a basis. The reverse inequality needs compactness of the unit sphere, which is exactly what fails in infinite dimensions — the unit sphere of $\ell^1$ contains $e_1, e_2, \ldots$ with $\|e_i - e_j\|_1 = 2$, no convergent subsequence — and correspondingly the theorem fails there: on $\ell^1$ the norms $\|\cdot\|_1$ and $\|\cdot\|_2$ are not equivalent (Proposition [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^prop-13-4|§13.4]](c)). Note also what Step 4 shows: an arbitrary norm is continuous for the $\|\cdot\|_1$-topology before we know the two are equivalent; this is the easy direction of Proposition [[§10 New Normed Spaces from Old#^prop-10-2|§10.2]].
+> The two inequalities are of different depth. $C_1\|x\|' \le \|x\|_1$ is pure algebra (Step 3): a norm is controlled by its values on a basis. The reverse inequality needs compactness of the unit sphere, which is exactly what fails in infinite dimensions — the unit sphere of $\ell^1$ contains $e_1, e_2, \ldots$ with $\|e_i - e_j\|_1 = 2$, no convergent subsequence — and correspondingly the theorem fails there: on $\ell^1$ the norms $\|\cdot\|_1$ and $\|\cdot\|_2$ are not equivalent (Proposition [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^prop-16-4|§16.4]](c)). Note also what Step 4 shows: an arbitrary norm is continuous for the $\|\cdot\|_1$-topology before we know the two are equivalent; this is the easy direction of Proposition [[§12 New Normed Spaces from Old#^prop-12-2|§12.2]].
 
-^rem-10-2
+^rem-12-2
 
-> [!theorem] Corollary §10.4: Finite-Dimensional Normed Spaces are Complete
+> [!theorem] Corollary §12.4: Finite-Dimensional Normed Spaces are Complete
 > Every finite-dimensional normed linear space is a Banach space.
 
-^cor-10-4
+^cor-12-4
 
 > [!proof]+ Proof
-> (Not covered in lecture.) Let $(Y, \|\cdot\|)$ be finite-dimensional with basis $e_1, \ldots, e_n$, and let $\|\cdot\|_1$ be the coordinate norm of Step 2 above. By Theorem [[§10 New Normed Spaces from Old#^thm-10-3|§10.3]] the two norms are equivalent, so by Proposition [[§10 New Normed Spaces from Old#^prop-10-1|§10.1]] it suffices to show that $(Y, \|\cdot\|_1)$ is complete. If $y_k = \sum_i a^{(k)}_i e_i$ is Cauchy for $\|\cdot\|_1$, then $|a^{(k)}_i - a^{(m)}_i| \le \|y_k - y_m\|_1$, so each coordinate sequence is Cauchy in $\mathbb{F}$ and converges to some $a_i$. Put $y = \sum_i a_i e_i \in Y$; then $\|y_k - y\|_1 = \sum_{i=1}^n |a^{(k)}_i - a_i| \to 0$.
+> (Not covered in lecture.) Let $(Y, \|\cdot\|)$ be finite-dimensional with basis $e_1, \ldots, e_n$, and let $\|\cdot\|_1$ be the coordinate norm of Step 2 above. By Theorem [[§12 New Normed Spaces from Old#^thm-12-3|§12.3]] the two norms are equivalent, so by Proposition [[§12 New Normed Spaces from Old#^prop-12-1|§12.1]] it suffices to show that $(Y, \|\cdot\|_1)$ is complete. If $y_k = \sum_i a^{(k)}_i e_i$ is Cauchy for $\|\cdot\|_1$, then $|a^{(k)}_i - a^{(m)}_i| \le \|y_k - y_m\|_1$, so each coordinate sequence is Cauchy in $\mathbb{F}$ and converges to some $a_i$. Put $y = \sum_i a_i e_i \in Y$; then $\|y_k - y\|_1 = \sum_{i=1}^n |a^{(k)}_i - a_i| \to 0$.
 
-^pf-10-4
+^pf-12-4
 
-*Uses:* [[§10 New Normed Spaces from Old#^thm-10-3|§10.3]], [[§10 New Normed Spaces from Old#^prop-10-1|§10.1]], [[§9 Completeness#^def-9-2|Def. §9.2]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]] (completeness of the scalars)
+*Uses:* [[§12 New Normed Spaces from Old#^thm-12-3|§12.3]], [[§12 New Normed Spaces from Old#^prop-12-1|§12.1]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]] (completeness of the scalars)
 
 > [!remark]- Connections
 > - Completeness of $\mathbb{R}^n$ with the Euclidean metric: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]; with $\|\cdot\|_1$, $\|\cdot\|_2$: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-4|551 Ex. §19.4]].
 
-> [!theorem] Corollary §10.5: Finite-Dimensional Subspaces are Closed
+> [!theorem] Corollary §12.5: Finite-Dimensional Subspaces are Closed
 > Every finite-dimensional linear subspace $Y$ of a normed linear space $(X, \|\cdot\|)$ is closed in $X$.
 >
 > *Source: HW2, Problem 2(b)*
 
-^cor-10-5
+^cor-12-5
 
 > [!proof]+ Proof
-> (HW2, Problem 2(b).) By Corollary [[§10 New Normed Spaces from Old#^cor-10-4|§10.4]], $Y$ with the restricted norm is complete, and a complete subset of a normed space is closed (Lemma [[§9 Completeness#^lem-9-2|§9.2]]).
+> (HW2, Problem 2(b).) By Corollary [[§12 New Normed Spaces from Old#^cor-12-4|§12.4]], $Y$ with the restricted norm is complete, and a complete subset of a normed space is closed (Lemma [[§11 Completeness#^lem-11-2|§11.2]]).
 
-^pf-10-5
+^pf-12-5
 
-*Uses:* [[§10 New Normed Spaces from Old#^cor-10-4|§10.4]], [[§9 Completeness#^lem-9-2|§9.2]], [[§10 New Normed Spaces from Old#^prop-10-6|§10.6]]
+*Uses:* [[§12 New Normed Spaces from Old#^cor-12-4|§12.4]], [[§11 Completeness#^lem-11-2|§11.2]], [[§12 New Normed Spaces from Old#^prop-12-6|§12.6]]
 
 > [!remark] Remark: Finite Dimension is Necessary
-> The corollary fails for infinite-dimensional subspaces. The finitely supported sequences $c_{00} = \{ a \in \ell : a_i = 0 \text{ for all but finitely many } i \}$ form a subspace of $\ell^p$, $1 \le p < \infty$, which is not closed: for $a \in \ell^p$ the truncations $(a_1, \ldots, a_n, 0, \ldots)$ lie in $c_{00}$ and converge to $a$, since $\sum_{i > n} |a_i|^p \to 0$, while $a = (2^{-i})_{i \ge 1}$, say, is not finitely supported. This is why Theorem [[§10 New Normed Spaces from Old#^thm-10-8|§10.8]] had to assume $Y$ closed.
+> The corollary fails for infinite-dimensional subspaces. The finitely supported sequences $c_{00} = \{ a \in \ell : a_i = 0 \text{ for all but finitely many } i \}$ form a subspace of $\ell^p$, $1 \le p < \infty$, which is not closed: for $a \in \ell^p$ the truncations $(a_1, \ldots, a_n, 0, \ldots)$ lie in $c_{00}$ and converge to $a$, since $\sum_{i > n} |a_i|^p \to 0$, while $a = (2^{-i})_{i \ge 1}$, say, is not finitely supported. This is why Theorem [[§12 New Normed Spaces from Old#^thm-12-8|§12.8]] had to assume $Y$ closed.
 
-^rem-10-3
+^rem-12-3
 
 ## Subspaces and Direct Sums
 
-> [!theorem] Proposition §10.6: Subspace Norm
+> [!theorem] Proposition §12.6: Subspace Norm
 > Let $(X, \|\cdot\|)$ be a normed linear space and $Y$ a linear subspace of $X$. Then $(Y, \|\cdot\|)$, with the norm restricted to $Y$, is a normed linear space.
 >
 > *Lax: §5.1, construction (i)*
 
-^prop-10-6
+^prop-12-6
 
 > [!proof]+ Proof
 > The three axioms hold for all $x, y \in X$, hence for all $x, y \in Y$; nothing to prove.
 
-^pf-10-6
+^pf-12-6
 
-*Uses:* [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
+*Uses:* [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
 
 > [!remark]- Connections
 > - The restricted norm gives the restricted metric, whose topology is the subspace topology: [[§11 Metric Topology#^thm-11-6|590 Thm. §11.6]].
 
-> [!theorem] Proposition §10.7: Norms on a Direct Sum
+> [!theorem] Proposition §12.7: Norms on a Direct Sum
 > Let $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ be normed linear spaces. Each of the following is a norm on $X \oplus Y$:
 >
 > $$\begin{aligned}
@@ -192,10 +192,10 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 >
 > *Lax: §5.1, construction (ii) and Exercise 1*
 
-^prop-10-7
+^prop-12-7
 
 > [!proof]+ Proof
-> (Left as an exercise in lecture.) Write $\|(x,y)\|_{\ast}$ for any of the three, and $N_{\ast}$ for the corresponding norm on $\mathbb{R}^2$ ($N_2(s,t) = (s^2 + t^2)^{1/2}$, $N_\infty(s,t) = \max\{|s|,|t|\}$, $N_1(s,t) = |s| + |t|$), so that $\|(x,y)\|_{\ast} = N_{\ast}(\|x\|_X, \|y\|_Y)$. Each $N_{\ast}$ is a norm on $\mathbb{R}^2$ (Examples [[§8 Normed Linear Spaces#^ex-8-1|§8.1]] and [[§3 Statement and Motivation#^ex-3-1|Ex. §3.1]]) and is *monotone* on the non-negative quadrant: $0 \le s \le s'$, $0 \le t \le t'$ imply $N_{\ast}(s,t) \le N_{\ast}(s',t')$, as is clear from the three formulas.
+> (Left as an exercise in lecture.) Write $\|(x,y)\|_{\ast}$ for any of the three, and $N_{\ast}$ for the corresponding norm on $\mathbb{R}^2$ ($N_2(s,t) = (s^2 + t^2)^{1/2}$, $N_\infty(s,t) = \max\{|s|,|t|\}$, $N_1(s,t) = |s| + |t|$), so that $\|(x,y)\|_{\ast} = N_{\ast}(\|x\|_X, \|y\|_Y)$. Each $N_{\ast}$ is a norm on $\mathbb{R}^2$ (Examples [[§10 Normed Linear Spaces#^ex-10-1|§10.1]] and [[§4 Statement and Motivation#^ex-4-1|Ex. §4.1]]) and is *monotone* on the non-negative quadrant: $0 \le s \le s'$, $0 \le t \le t'$ imply $N_{\ast}(s,t) \le N_{\ast}(s',t')$, as is clear from the three formulas.
 >
 > *Positivity.* $\|(x,y)\|_{\ast} \ge 0$, and it is $0$ iff $N_{\ast}(\|x\|_X, \|y\|_Y) = 0$ iff $\|x\|_X = \|y\|_Y = 0$ iff $x = 0$ and $y = 0$ iff $(x,y) = (0,0)$.
 >
@@ -210,9 +210,9 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 > \end{aligned}
 > $$
 
-^pf-10-7
+^pf-12-7
 
-*Uses:* [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^ex-8-1|Ex. §8.1]], [[§3 Statement and Motivation#^ex-3-1|Ex. §3.1]], [[§1 Linear Spaces#^def-1-4|Def. §1.4]]
+*Uses:* [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^ex-10-1|Ex. §10.1]], [[§4 Statement and Motivation#^ex-4-1|Ex. §4.1]], [[§1 Linear Spaces#^def-1-4|Def. §1.4]]
 
 > [!remark]- Connections
 > - The underlying linear space $X \oplus Y = X \times Y$: [[§1 Linear Spaces#^prop-1-3|§1.3]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|LADR 3.87]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-89|LADR 3.89]].
@@ -223,7 +223,7 @@ These three norms are equivalent to one another (the constants are the ones comp
 
 For a quotient $X / Y$, an equivalence class $[x] = x + Y$ contains many elements, each with its own norm. The natural choice of a norm for the class is the smallest length available in it.
 
-> [!theorem] Theorem §10.8: Quotient Norm
+> [!theorem] Theorem §12.8: Quotient Norm
 > Let $(X, \|\cdot\|)$ be a normed linear space and $Y$ a *closed* linear subspace of $X$. For $[x] \in X / Y$ define
 >
 > $$
@@ -234,7 +234,7 @@ For a quotient $X / Y$, an equivalence class $[x] = x + Y$ contains many element
 >
 > *Lax: §5.1, Thm 1*
 
-^thm-10-8
+^thm-12-8
 
 ![[m556-10-2.svg]]
 *The quotient norm in the plane: the classes are the translates of $Y$ (gray, with $[x]$ in red), and $\|[x]\|$ is the norm of the point $x'$ of $[x]$ closest to $0$.*
@@ -280,22 +280,22 @@ The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from t
 >
 > so the sequence $\{x_n - x\} \subset Y$ converges to $-x$. Because $Y$ is closed, $-x \in Y$, hence $x \in Y$ (subspace), hence $[x] = [0]$.
 
-^pf-10-8
+^pf-12-8
 
-*Uses:* [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§1 Linear Spaces#^def-1-7|Def. §1.7]], [[§1 Linear Spaces#^prop-1-6|§1.6]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^def-8-6|Def. §8.6]], [[Characterization of the Supremum|451 Characterization of the Supremum]]
+*Uses:* [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§1 Linear Spaces#^def-1-7|Def. §1.7]], [[§1 Linear Spaces#^prop-1-6|§1.6]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-6|Def. §10.6]], [[Characterization of the Supremum|451 Characterization of the Supremum]]
 
 > [!remark]- Connections
 > - The quotient space itself: [[§1 Linear Spaces#^prop-1-6|§1.6]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103]]; a seminorm made into a norm by passing to a quotient: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-3|551 Ex. §19.3]] ($BV$ modulo constants).
-> - With an inner product the infimum is attained at the foot of the perpendicular: [[§18 Projection and Orthogonal Decomposition#^thm-18-2|§18.2]], [[§18 Projection and Orthogonal Decomposition#^thm-18-4|§18.4]].
+> - With an inner product the infimum is attained at the foot of the perpendicular: [[§22 Projection and Orthogonal Decomposition#^thm-22-2|§22.2]], [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]].
 
-> [!theorem] Proposition §10.9: The Quotient Seminorm; Closedness is Necessary
+> [!theorem] Proposition §12.9: The Quotient Seminorm; Closedness is Necessary
 > Let $Y$ be any linear subspace of a normed linear space $X$, closed or not. Then $\|[x]\| = \inf_{y \in Y}\|x + y\|$ is a seminorm on $X/Y$, and it is a norm if and only if $Y$ is closed.
 
-^prop-10-9
+^prop-12-9
 
 > [!proof]+ Proof
-> Well-definedness, homogeneity and subadditivity were proved in Theorem [[§10 New Normed Spaces from Old#^thm-10-8|§10.8]] without using closedness, so $\|\cdot\|$ is a seminorm; if $Y$ is closed it is a norm by that theorem. Conversely, suppose $Y$ is not closed: there are $y_n \in Y$ with $y_n \to x$ for some $x \notin Y$. Then $x - y_n \in [x]$, so $\|[x]\| \le \|x - y_n\| \to 0$, i.e. $\|[x]\| = 0$, while $[x] \neq [0]$ because $x \notin Y$. So positivity fails. (Not stated in lecture.)
+> Well-definedness, homogeneity and subadditivity were proved in Theorem [[§12 New Normed Spaces from Old#^thm-12-8|§12.8]] without using closedness, so $\|\cdot\|$ is a seminorm; if $Y$ is closed it is a norm by that theorem. Conversely, suppose $Y$ is not closed: there are $y_n \in Y$ with $y_n \to x$ for some $x \notin Y$. Then $x - y_n \in [x]$, so $\|[x]\| \le \|x - y_n\| \to 0$, i.e. $\|[x]\| = 0$, while $[x] \neq [0]$ because $x \notin Y$. So positivity fails. (Not stated in lecture.)
 
-^pf-10-9
+^pf-12-9
 
-*Uses:* [[§10 New Normed Spaces from Old#^thm-10-8|§10.8]], [[§8 Normed Linear Spaces#^def-8-2|Def. §8.2]], [[§8 Normed Linear Spaces#^def-8-6|Def. §8.6]]
+*Uses:* [[§12 New Normed Spaces from Old#^thm-12-8|§12.8]], [[§10 Normed Linear Spaces#^def-10-2|Def. §10.2]], [[§10 Normed Linear Spaces#^def-10-6|Def. §10.6]]

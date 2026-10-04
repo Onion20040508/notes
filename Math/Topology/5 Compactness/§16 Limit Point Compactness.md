@@ -99,7 +99,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - MATH 451: [[Bolzano–Weierstrass Theorem]] (every bounded sequence in $\mathbb{R}$ has a convergent subsequence) and Bolzano–Weierstrass in $\mathbb{R}^n$ ([[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|§13.3]]).
-> - The same definition in a normed space: [[§15 Compactness and the Unit Ball#^def-15-1|556 Def. §15.1]]; the closed unit ball of an infinite-dimensional space fails it ([[§15 Compactness and the Unit Ball#^thm-15-5|556 Thm. §15.5]]).
+> - The same definition in a normed space: [[§18 Compactness and the Unit Ball#^def-18-1|556 Def. §18.1]]; the closed unit ball of an infinite-dimensional space fails it ([[§18 Compactness and the Unit Ball#^thm-18-5|556 Thm. §18.5]]).
 
 > [!example] Example §16.2
 > In $\mathbb{R}$: $x_n = (1, 0, 1, 0, 1, 0, \ldots)$ has a convergent subsequence $y_n = (0, 0, 0, \ldots)$.
@@ -137,7 +137,7 @@ tags: [topology, math590]
 To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas.
 
 > [!remark]- Connections
-> - Restated for normed and metric spaces as [[§15 Compactness and the Unit Ball#^thm-15-1|556 Thm. §15.1]] (compact iff sequentially compact), which cites this theorem for its proof.
+> - Restated for normed and metric spaces as [[§18 Compactness and the Unit Ball#^thm-18-1|556 Thm. §18.1]] (compact iff sequentially compact), which cites this theorem for its proof.
 
 > [!theorem] Lemma §16.3: Lebesgue Number Lemma
 > Let $(X, d)$ be a sequentially compact metric space and let $\{U_\alpha\}$ be an open cover of $X$. Then there exists $\delta > 0$ (called a **Lebesgue number** for the cover) such that for every subset $A \subseteq X$ with $\text{diam}(A) < \delta$, there exists some $U_\alpha$ containing $A$.

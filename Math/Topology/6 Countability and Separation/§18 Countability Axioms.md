@@ -135,7 +135,7 @@ tags: [topology, math590]
 *Uses:* [[§5 Subspace Topology#^def-5-1|Def. §5.1]], [[§2 Basis for a Topology#^def-2-1|Def. §2.1]]
 
 > [!remark]- Connections
-> - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable ([[§26 Position Eigenstates and Continuous Resolutions#^prop-26-1|556 Prop. §26.1]]).
+> - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable ([[§32 Position Eigenstates and Continuous Resolutions#^prop-32-1|556 Prop. §32.1]]).
 > - The same argument shows L^∞ is not separable: the indicators of (0, t) form an uncountable family at mutual distance 1, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 Thm. §19.21]].
 
 ## Inheritance Properties
@@ -182,7 +182,7 @@ tags: [topology, math590]
 ^def-18-5
 
 > [!remark]- Connections
-> - Separability of sequence and function spaces: [[§20 Orthonormal Sets and Bases#^def-20-5|556 Def. §20.5]], with ℓᵖ and Lᵖ separable for p < ∞ and ℓ^∞, L^∞ not ([[§20 Orthonormal Sets and Bases#^prop-20-13|556 Prop. §20.13]]–[[§20 Orthonormal Sets and Bases#^prop-20-17|556 Prop. §20.17]]).
+> - Separability of sequence and function spaces: [[§24 Orthonormal Sets and Bases#^def-24-5|556 Def. §24.5]], with ℓᵖ and Lᵖ separable for p < ∞ and ℓ^∞, L^∞ not ([[§25 Sequence and Function Spaces#^prop-25-1|556 Prop. §25.1]]–[[§25 Sequence and Function Spaces#^prop-25-5|556 Prop. §25.5]]).
 > - The metric-space form, with density by sequences: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|551 Def. §19.9]]; Lᵖ is separable for p < ∞ ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 Cor. §19.20]]) and L^∞ is not ([[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 Thm. §19.21]]).
 
 > [!example] Example §18.8: Standard Examples

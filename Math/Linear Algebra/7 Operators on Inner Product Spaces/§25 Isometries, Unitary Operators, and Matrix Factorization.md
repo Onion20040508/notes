@@ -15,7 +15,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Characterizations [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]]; singular values all $1$ ([[§26 Singular Value Decomposition#^ladr-7-69|7.69]]).
-> - Infinite-dimensional counterpart: isomorphic Hilbert spaces are related by an inner-product-preserving bijection ([[§20 Orthonormal Sets and Bases#^def-20-6|556 Def. §20.6]]), and there an isometry of a space into itself need not be onto ([[§20 Orthonormal Sets and Bases#^ex-20-2|556 Ex. §20.2]]).
+> - Infinite-dimensional counterpart: isomorphic Hilbert spaces are related by an inner-product-preserving bijection ([[§24 Orthonormal Sets and Bases#^def-24-6|556 Def. §24.6]]), and there an isometry of a space into itself need not be onto ([[§24 Orthonormal Sets and Bases#^ex-24-2|556 Ex. §24.2]]).
 > - Computational version: [[§41 Orthogonal Sets#^thm-41-5|235 Thm. §41.5]] (a matrix with orthonormal columns preserves lengths and inner products).
 
 > [!example] Example 7.45: Orthonormal basis maps to orthonormal list ⟹ isometry (p. 258)

@@ -35,7 +35,7 @@ tags: [linear-algebra]
 > This operator norm generally does not come from an inner product on $\Lin(V,W)$ (it fails the parallelogram law, [[§19 Inner Products and Norms#^ladr-6-21|6.21]]). The Frobenius norm $\sqrt{\operatorname{tr}T^*T}$ does.
 
 > [!remark]- Connections
-> - Same as the operator norm in functional analysis ([[§21 Boundedness and Continuity#^def-21-2|556 Def. §21.2]]): there the max becomes a sup.
+> - Same as the operator norm in functional analysis ([[§26 Boundedness and Continuity#^def-26-2|556 Def. §26.2]]): there the max becomes a sup.
 
 > [!theorem] Theorem 7.87: Basic properties of norms of linear maps
 > For $S,T\in\Lin(V,W)$: (a) $\|T\|\ge0$; (b) $\|T\|=0\iff T=0$; (c) $\|\lambda T\|=|\lambda|\|T\|$; (d) $\|S+T\|\le\|S\|+\|T\|$.
@@ -49,7 +49,7 @@ tags: [linear-algebra]
 > (a) clear. (b) If $\|T\|=0$ then $T$ kills the unit ball, so $Tu=\|u\|T(u/\|u\|)=0$ for $u\ne0$. (c) $\max\|\lambda Tv\|=|\lambda|\max\|Tv\|$. (d) Pick $v$, $\|v\|\le1$, with $\|S+T\|=\|(S+T)v\|\le\|Sv\|+\|Tv\|\le\|S\|+\|T\|$.
 
 > [!remark]- Connections
-> - Same properties for bounded maps between normed spaces, which make ℒ(X, Y) a normed space: [[§21 Boundedness and Continuity#^thm-21-5|556 Thm. §21.5]].
+> - Same properties for bounded maps between normed spaces, which make ℒ(X, Y) a normed space: [[§26 Boundedness and Continuity#^thm-26-5|556 Thm. §26.5]].
 
 > [!theorem] Theorem 7.88: Alternative formulas for ‖T‖
 > For $T\in\Lin(V,W)$:
@@ -68,7 +68,7 @@ tags: [linear-algebra]
 *Uses:* [[§27 Consequences of Singular Value Decomposition#^ladr-7-82|7.82]]
 
 > [!remark]- Connections
-> - Parts (b) and (c) are [[§21 Boundedness and Continuity#^prop-21-1|556 Prop. §21.1]] (a) and (c), with max replaced by sup.
+> - Parts (b) and (c) are [[§26 Boundedness and Continuity#^prop-26-1|556 Prop. §26.1]] (a) and (c), with max replaced by sup.
 > - Computational version: [[§51★ The Singular Value Decomposition#^prop-51-2|235 Prop. §51.2]] (formula (b) for matrices, via [[§50★ Constrained Optimization#^thm-50-1|235 Thm. §50.1]] applied to $A^TA$).
 
 > [!example] Example 7.90: Norms (p. 283)

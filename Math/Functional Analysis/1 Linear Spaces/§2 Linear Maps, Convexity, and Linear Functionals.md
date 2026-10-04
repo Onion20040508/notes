@@ -5,7 +5,7 @@ chapter: 1
 section: 2
 tags: [functional-analysis, math556]
 ---
-← [[§1 Linear Spaces]] · ↑ [[· 1 Linear Spaces]] · [[§3 Statement and Motivation]] →
+← [[§1 Linear Spaces]] · ↑ [[· 1 Linear Spaces]] · [[§3 ℝⁿ and ℓ²]] →
 
 *Stage: algebra — Threads: functionals, convexity. Introduces the two objects that [[· 2 The Hahn–Banach Theorem|Chapter 2]] connects.*
 
@@ -26,7 +26,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - Linear maps in linear algebra: [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]].
-> - With norms, the bounded ones: [[§21 Boundedness and Continuity#^def-21-2|Def. §21.2]].
+> - With norms, the bounded ones: [[§26 Boundedness and Continuity#^def-26-2|Def. §26.2]].
 > - Computational version: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4|235 Def. §24.4]] (linear transformations between vector spaces, with kernel and range computed), and the matrix case [[§8 Introduction to Linear Transformations#^def-8-3|235 Def. §8.3]].
 
 > [!definition] Definition §2.2: Isomorphism
@@ -82,7 +82,7 @@ tags: [functional-analysis, math556]
 ^def-2-3
 
 > [!remark]- Connections
-> - Convex sets return through the gauge, [[§5 Convex Sets and the Gauge#^def-5-2|Def. §5.2]], and the separation theorem, [[§6 The Hyperplane Separation Theorem#^thm-6-1|§6.1]].
+> - Convex sets return through the gauge, [[§6 Convex Sets and the Gauge#^def-6-2|Def. §6.2]], and the separation theorem, [[§7 The Hyperplane Separation Theorem#^thm-7-1|§7.1]].
 > - Convex subsets of ℝⁿ are simply connected, by the straight-line homotopy: [[§23 The Fundamental Group#^ex-23-2|590 Ex. §23.2]].
 
 > [!remark] Remark
@@ -130,7 +130,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - Linear functionals in linear algebra: [[§12 Duality#^ladr-3-108|LADR 3.108]].
-> - With a norm, the bounded ones: [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^def-19-1|Def. §19.1]].
+> - With a norm, the bounded ones: [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^def-23-1|Def. §23.1]].
 
 Here $\mathbb{F}$ is regarded as a one-dimensional linear space over itself, so a linear functional is simply a linear map into the scalars.
 
@@ -152,9 +152,9 @@ Here $\mathbb{F}$ is regarded as a one-dimensional linear space over itself, so 
 ^ex-2-2
 
 > [!remark]- Connections
-> - The finite-dimensional Riesz representation: [[Riesz representation theorem|LADR 6.42]]; for bounded functionals on a Hilbert space: [[§19 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-19-2|§19.2]].
+> - The finite-dimensional Riesz representation: [[Riesz representation theorem|LADR 6.42]]; for bounded functionals on a Hilbert space: [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|§23.2]].
 
 > [!remark] Remark: Why Abstract Tools are Needed
-> On $\mathbb{R}^n$ linear functionals are completely explicit because a basis is available. On a general linear space $X$ there is no such description: we do not even know the dimension, and there is no canonical way to write down a linear functional. The [[§3 Statement and Motivation#^thm-3-2|Hahn–Banach theorem]] below is the basic tool for *constructing* linear functionals on a general $X$.
+> On $\mathbb{R}^n$ linear functionals are completely explicit because a basis is available. On a general linear space $X$ there is no such description: we do not even know the dimension, and there is no canonical way to write down a linear functional. The [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach theorem]] below is the basic tool for *constructing* linear functionals on a general $X$.
 
 ^rem-2-3

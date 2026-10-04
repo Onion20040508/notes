@@ -229,7 +229,7 @@ Working from the representation (16), Powers draws three conclusions about the s
 *Uses:* [[§25 Generalities on the Heat Conduction Problem#^thm-25-3|§25.3]], [[§23 Sturm–Liouville Problems#^thm-23-5|§23.5]], [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], [[§24 Uniform Convergence#^thm-24-2|451 Thm. §24.2]]
 
 > [!remark]- Connections
-> - The Bessel step is the finite Bessel inequality for the orthonormal set $\phi_n/N_n^{1/2}$ in the weighted inner product, [[§20 Orthonormal Sets and Bases#^lem-20-2|556 Lem. §20.2]].
+> - The Bessel step is the finite Bessel inequality for the orthonormal set $\phi_n/N_n^{1/2}$ in the weighted inner product, [[§24 Orthonormal Sets and Bases#^lem-24-2|556 Lem. §24.2]].
 
 > [!remark] Remark: Method — Solving a Heat Problem with Variable Coefficients
 > 1. **Steady state.** Solve $(\kappa v')' = 0$ with the boundary conditions (Proposition §25.1); this reduces the problem to one with homogeneous boundary conditions. If the boundary conditions are already homogeneous, $v = 0$.

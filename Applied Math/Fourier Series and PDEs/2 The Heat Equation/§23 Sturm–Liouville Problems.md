@@ -183,7 +183,7 @@ To guarantee that eigenfunctions exist and that the integrations by parts are le
 
 > [!remark]- Connections
 > - Finite-dimensional version: eigenvectors of a symmetric matrix for distinct eigenvalues are orthogonal, [[§48★ Diagonalization of Symmetric Matrices#^thm-48-1|235 Thm. §48.1]], by the same one-line computation; for self-adjoint operators on an inner product space ([[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]), and more generally normal ones, it is [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]. See the remark below for the dictionary.
-> - $\langle f, g\rangle_p = \int_l^r f(x)g(x)p(x)\,dx$ is an inner product (a weighted version of [[§16 Definition and Examples#^ex-16-3|556 Ex. §16.3]] and [[§46 Inner Product Spaces#^ex-46-4|235 Ex. §46.4]]), and the theorem says that the eigenfunctions form an orthogonal set for it in the sense of [[§20 Orthonormal Sets and Bases#^def-20-1|556 Def. §20.1]].
+> - $\langle f, g\rangle_p = \int_l^r f(x)g(x)p(x)\,dx$ is an inner product (a weighted version of [[§20 Definition and Examples#^ex-20-3|556 Ex. §20.3]] and [[§46 Inner Product Spaces#^ex-46-4|235 Ex. §46.4]]), and the theorem says that the eigenfunctions form an orthogonal set for it in the sense of [[§24 Orthonormal Sets and Bases#^def-24-1|556 Def. §24.1]].
 > - Used in Electromagnetism: separation of variables in electrostatics — the separated equations as Sturm–Liouville problems, orthonormality, completeness and closure of their eigenfunctions, and the orthogonality of Bessel functions — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^def-c6-2-1|EM Def. §C6.2.1]], [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-2|EM Theorem §C6.3.2]].
 
 > [!remark] Remark: Self-Adjointness
@@ -286,7 +286,7 @@ Powers also notes that any constant multiple of an eigenfunction is an eigenfunc
 ^rem-23-4
 
 > [!remark]- Connections
-> - Finite-dimensional analogue: a real symmetric $n \times n$ matrix has $n$ real eigenvalues and an orthonormal basis of eigenvectors, [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]]; for self-adjoint operators this is the real spectral theorem, [[§23 Spectral Theorem#^ladr-7-29|LADR 7.29]]. Theorems §23.2 and §23.5 with the expansion theorem of [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|§24]] are the infinite-dimensional version, in which "basis" means orthonormal basis in the sense of [[§20 Orthonormal Sets and Bases#^def-20-4|556 Def. §20.4]] and there are infinitely many eigenvalues, increasing to $\infty$.
+> - Finite-dimensional analogue: a real symmetric $n \times n$ matrix has $n$ real eigenvalues and an orthonormal basis of eigenvectors, [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]]; for self-adjoint operators this is the real spectral theorem, [[§23 Spectral Theorem#^ladr-7-29|LADR 7.29]]. Theorems §23.2 and §23.5 with the expansion theorem of [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|§24]] are the infinite-dimensional version, in which "basis" means orthonormal basis in the sense of [[§24 Orthonormal Sets and Bases#^def-24-4|556 Def. §24.4]] and there are infinitely many eigenvalues, increasing to $\infty$.
 
 ## Examples
 

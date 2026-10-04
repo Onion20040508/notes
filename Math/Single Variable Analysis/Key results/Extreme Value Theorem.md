@@ -37,7 +37,7 @@ tags: [real-analysis, hub]
 - [[§15 Compact Spaces#^rem-15-1|Remark: Why Compactness Matters]]
 
 ## Used in (Functional Analysis)
-- [[§9 Completeness#^thm-9-1|Theorem §9.1: C[a,b] with the Supremum Norm is a Banach Space]]
+- [[§11 Completeness#^thm-11-1|Theorem §11.1: C[a,b] with the Supremum Norm is a Banach Space]]
 
 ## Connections
 - Abstract form: the continuous image of a compact set is compact. The same fact gives extrema of continuous functions on compact manifolds.

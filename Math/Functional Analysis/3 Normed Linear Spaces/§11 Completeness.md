@@ -2,34 +2,34 @@
 type: section
 subject: "[[Functional Analysis]]"
 chapter: 3
-section: 9
+section: 11
 tags: [functional-analysis, math556]
 ---
-← [[§8 Normed Linear Spaces]] · ↑ [[· 3 Normed Linear Spaces]] · [[§10 New Normed Spaces from Old]] →
+← [[§10 Normed Linear Spaces]] · ↑ [[· 3 Normed Linear Spaces]] · [[§12 New Normed Spaces from Old]] →
 
 *Stage: norms — Thread: completeness. Cauchy sequences, Banach spaces, and the completion.*
 
 ## Complete Spaces and Banach Spaces
 
-> [!definition] Definition §9.1: Complete Metric Space
+> [!definition] Definition §11.1: Complete Metric Space
 > A metric space $(M, d)$ is **complete** if every Cauchy sequence in $M$ converges to a point of $M$.
 
-^def-9-1
+^def-11-1
 
 > [!remark]- Connections
 > - Home of the definition: [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|451 Def. §13.3]]; $\mathbb{R}^n$ is complete: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]].
 
-> [!definition] Definition §9.2: Banach Space
+> [!definition] Definition §11.2: Banach Space
 > A complete normed linear space is called a **Banach space**.
 >
 > *Lax: §5.1, definition of Banach space*
 
-^def-9-2
+^def-11-2
 
 > [!remark]- Connections
 > - In 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-4|551 Def. §19.4]], with examples [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-4|551 Ex. §19.4]] and the [[Riesz–Fischer Theorem]] ($L^p$ is Banach).
 
-> [!theorem] Theorem §9.1: $C[a,b]$ with the Supremum Norm is a Banach Space
+> [!theorem] Theorem §11.1: $C[a,b]$ with the Supremum Norm is a Banach Space
 > Let $X = C([a,b])$ be the set of continuous functions $f : [a,b] \to \mathbb{F}$, with pointwise operations and
 >
 > $$
@@ -41,7 +41,7 @@ tags: [functional-analysis, math556]
 > *Source: HW2, Problem 1*
 > *Lax: §5.1, examples (c)–(e)*
 
-^thm-9-1
+^thm-11-1
 
 > [!proof]+ Proof
 > (HW2, Problem 1.) Throughout, $\mathbb{F}$ denotes the scalar field, $\mathbb{R}$ or $\mathbb{C}$, and $|\cdot|$ its absolute value. We show in turn that $X$ is a linear space, that $\|\cdot\|_\infty$ is a norm on $X$, and that $(X, \|\cdot\|_\infty)$ is complete.
@@ -128,9 +128,9 @@ tags: [functional-analysis, math556]
 >
 > Hence $\|f_n - f\|_\infty \to 0$, and every Cauchy sequence in $X$ converges in $X$. With Parts 1 and 2, $(X, \|\cdot\|_\infty)$ is a Banach space.
 
-^pf-9-1
+^pf-11-1
 
-*Uses:* [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§9 Completeness#^def-9-2|Def. §9.2]], [[Extreme Value Theorem|451 Extreme Value Theorem]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]] (completeness of the scalars)
+*Uses:* [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[Extreme Value Theorem|451 Extreme Value Theorem]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]] (completeness of the scalars)
 
 > [!remark]- Connections
 > - Steps 2–3 re-prove the 451 results on uniform convergence: [[§24 Uniform Convergence#^thm-24-1|451 §24.1]] (supremum criterion), [[§24 Uniform Convergence#^thm-24-2|451 §24.2]] (uniform limits preserve continuity).
@@ -138,43 +138,43 @@ tags: [functional-analysis, math556]
 > - Used in ODEs: the Picard iterates for $y' = f(t, y)$ form a Cauchy sequence in $C[-h, h]$ with the supremum norm, and their limit is the solution, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
 
 > [!remark] Remark
-> The proof is the “candidate, then close” pattern ([[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]]) in its simplest form, with one extra step that has no analogue in $\ell^p$ ([[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|§13.5]]): the candidate must be shown to lie in the space, and here that is a genuine theorem (a uniform limit of continuous functions is continuous), not a bookkeeping check. The $3\varepsilon$ argument in Step 3 is exactly where uniformity, not just pointwise convergence, is used.
+> The proof is the “candidate, then close” pattern ([[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]]) in its simplest form, with one extra step that has no analogue in $\ell^p$ ([[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|§16.5]]): the candidate must be shown to lie in the space, and here that is a genuine theorem (a uniform limit of continuous functions is continuous), not a bookkeeping check. The $3\varepsilon$ argument in Step 3 is exactly where uniformity, not just pointwise convergence, is used.
 
-^rem-9-1
+^rem-11-1
 
 > [!remark] Remark
 > The hierarchy so far: a linear space has only algebra; a normed linear space adds length and hence topology; a Banach space adds the guarantee that limits exist. Most of the course is about Banach spaces, because that is where analysis — limits of sequences, sums of series, solutions of equations obtained as limits of approximations — can actually be carried out.
 
-^rem-9-2
+^rem-11-2
 
-> [!theorem] Lemma §9.2: Complete Subsets are Closed
+> [!theorem] Lemma §11.2: Complete Subsets are Closed
 > Let $S$ be a subset of a normed linear space (or metric space) $X$ which is complete with the restricted norm (metric). Then $S$ is closed in $X$.
 
-^lem-9-2
+^lem-11-2
 
 > [!proof]+ Proof
-> (Not covered in lecture.) Let $s_n \in S$ with $s_n \to x \in X$. By Proposition [[§8 Normed Linear Spaces#^prop-8-5|§8.5]](b), $\{s_n\}$ is Cauchy, so by completeness of $S$ it converges to some $s \in S$. By uniqueness of limits (Proposition [[§8 Normed Linear Spaces#^prop-8-5|§8.5]](a)), $x = s \in S$.
+> (Not covered in lecture.) Let $s_n \in S$ with $s_n \to x \in X$. By Proposition [[§10 Normed Linear Spaces#^prop-10-5|§10.5]](b), $\{s_n\}$ is Cauchy, so by completeness of $S$ it converges to some $s \in S$. By uniqueness of limits (Proposition [[§10 Normed Linear Spaces#^prop-10-5|§10.5]](a)), $x = s \in S$.
 
-^pf-9-2
+^pf-11-2
 
-*Uses:* [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§8 Normed Linear Spaces#^def-8-6|Def. §8.6]], [[§9 Completeness#^def-9-1|Def. §9.1]]
+*Uses:* [[§10 Normed Linear Spaces#^prop-10-5|§10.5]], [[§10 Normed Linear Spaces#^def-10-6|Def. §10.6]], [[§11 Completeness#^def-11-1|Def. §11.1]]
 
 ## Completion of a Metric Space
 
 A metric space that is not complete can be enlarged to one that is, by adjoining the missing limits. Since a missing limit is not an element of $M$, it is represented by the Cauchy sequences that “should” converge to it.
 
-> [!definition] Definition §9.3: Equivalent Cauchy Sequences
+> [!definition] Definition §11.3: Equivalent Cauchy Sequences
 > Two Cauchy sequences $\{x_n\}, \{y_n\}$ in a metric space $(M, d)$ are **equivalent**, written $\{x_n\} \sim \{y_n\}$, if
 >
 > $$
 > \lim_{n \to \infty} d(x_n, y_n) = 0.
 > $$
 
-^def-9-3
+^def-11-3
 
 Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit in $M$: both terms lie in $M$. The relation says the two sequences are heading for the same place. If one of them converges in $M$, so does the other, to the same limit.
 
-> [!definition] Definition §9.4: Completion
+> [!definition] Definition §11.4: Completion
 > The **completion** $\overline{M}$ of a metric space $M$ is the set of equivalence classes of Cauchy sequences in $M$ under $\sim$:
 >
 > $$
@@ -185,21 +185,21 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 >
 > *Lax: §5.1, completion of a metric space*
 
-^def-9-4
+^def-11-4
 
 > [!remark]- Connections
 > - The model: $\mathbb{R}$ as classes of Cauchy sequences of rationals, [[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark (Cauchy sequences and the construction of the reals)]].
-> - For normed spaces: [[§9 Completeness#^thm-9-4|§9.4]]; concrete completions: [[§9 Completeness#^prop-9-5|§9.5]], [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]].
+> - For normed spaces: [[§11 Completeness#^thm-11-4|§11.4]]; concrete completions: [[§11 Completeness#^prop-11-5|§11.5]], [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]].
 
 > [!remark] Remark: Why Classes, and Why the Objects Look Different
 > Two points were raised in lecture. First, why equivalence classes: a point $x \in M$ is the limit of many Cauchy sequences (on the real line, $(x, x, \ldots)$ and $(x + 1/n)$ both converge to $x$), and different sequences with the same destination must not be counted as different elements of $\overline{M}$. Second, the elements of $\overline{M}$ are sets of sequences, not points of $M$, so how is $M$ a subset? By the identification $x \leftrightarrow [(x, x, \ldots)]$, which is one-to-one; $M$ is not literally contained in $\overline{M}$ but is embedded in it. This is the same kind of identification as $\mathbb{R} \subset \mathbb{R} \oplus \mathbb{R}^2 = \mathbb{R}^3$ ([[§1 Linear Spaces#^ex-1-2|Ex. §1.2]]).
 
-^rem-9-3
+^rem-11-3
 
 ![[m556-9-2.svg]]
-*Equivalent Cauchy sequences in the open disk $M$ of [[§9 Completeness#^ex-9-1|Ex. §9.1]]: $x_n$ (blue dots) and $y_n$ (blue squares) both head for the boundary point $p \notin M$, and $d(x_n, y_n) \to 0$ (dotted), so they are one element $[\{x_n\}] = [\{y_n\}]$ of $\overline{M}$, which plays the role of $p$. The sequence $z_n$ (red), heading for $q$, is a different class; a point $x \in M$ is the class of its constant sequence.*
+*Equivalent Cauchy sequences in the open disk $M$ of [[§11 Completeness#^ex-11-1|Ex. §11.1]]: $x_n$ (blue dots) and $y_n$ (blue squares) both head for the boundary point $p \notin M$, and $d(x_n, y_n) \to 0$ (dotted), so they are one element $[\{x_n\}] = [\{y_n\}]$ of $\overline{M}$, which plays the role of $p$. The sequence $z_n$ (red), heading for $q$, is a different class; a point $x \in M$ is the class of its constant sequence.*
 
-> [!theorem] Proposition §9.3: The Completion is a Complete Metric Space, and $M$ is Dense in It
+> [!theorem] Proposition §11.3: The Completion is a Complete Metric Space, and $M$ is Dense in It
 > Let $(M, d)$ be a metric space. For Cauchy sequences $\{x_n\}, \{y_n\}$ in $M$ put
 >
 > $$
@@ -211,10 +211,10 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 > - (c) $M$ is dense in $\overline{M}$: if $\xi = [\{x_n\}]$, then $x_k \to \xi$ in $\overline{M}$ as $k \to \infty$.
 > - (d) $(\overline{M}, \bar d)$ is complete.
 
-^prop-9-3
+^prop-11-3
 
 > [!proof]+ Proof
-> (Not covered in lecture; added because [[§9 Completeness#^ex-9-1|Example §9.1]], [[§9 Completeness#^rem-9-8|Remark “How Do We Know We Have Not Added Too Much?”]] and the normed case below rely on these facts.)
+> (Not covered in lecture; added because [[§11 Completeness#^ex-11-1|Example §11.1]], [[§11 Completeness#^rem-11-8|Remark “How Do We Know We Have Not Added Too Much?”]] and the normed case below rely on these facts.)
 >
 > (a) By the triangle inequality, applied twice, $|d(x_n, y_n) - d(x_m, y_m)| \le d(x_n, x_m) + d(y_n, y_m)$, so $\{d(x_n, y_n)\}$ is a Cauchy sequence of real numbers and converges. If $\{x_n\} \sim \{x_n'\}$ and $\{y_n\} \sim \{y_n'\}$, the same estimate gives $|d(x_n, y_n) - d(x_n', y_n')| \le d(x_n, x_n') + d(y_n, y_n') \to 0$, so the limit depends only on the classes. Symmetry and the triangle inequality hold termwise and pass to the limit, and $\bar d \ge 0$. Finally $\bar d([\{x_n\}], [\{y_n\}]) = 0$ iff $d(x_n, y_n) \to 0$ iff $\{x_n\} \sim \{y_n\}$ iff the two classes are equal.
 >
@@ -230,17 +230,17 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 >
 > so $\{z_m\}$ is Cauchy in $M$; let $\xi = [\{z_m\}] \in \overline{M}$. Then $\bar d(\xi_m, \xi) \le 1/m + \bar d(z_m, \xi)$, and $\bar d(z_m, \xi) \to 0$ as $m \to \infty$ by (c) applied to the representative $\{z_k\}$ of $\xi$. Hence $\xi_m \to \xi$.
 >
-> For a normed linear space $X$ with the norm of Theorem [[§9 Completeness#^thm-9-4|§9.4]], $\bigl\| [\{x_n\}] - [\{y_n\}] \bigr\|_{\overline{X}} = \lim_n \|x_n - y_n\| = \bar d\bigl([\{x_n\}], [\{y_n\}]\bigr)$ for the metric $d(x, y) = \|x - y\|$ of $X$, so (c) says that $X$ is dense in $\overline{X}$.
+> For a normed linear space $X$ with the norm of Theorem [[§11 Completeness#^thm-11-4|§11.4]], $\bigl\| [\{x_n\}] - [\{y_n\}] \bigr\|_{\overline{X}} = \lim_n \|x_n - y_n\| = \bar d\bigl([\{x_n\}], [\{y_n\}]\bigr)$ for the metric $d(x, y) = \|x - y\|$ of $X$, so (c) says that $X$ is dense in $\overline{X}$.
 
-^pf-9-3
+^pf-11-3
 
-*Uses:* [[§9 Completeness#^def-9-3|Def. §9.3]], [[§9 Completeness#^def-9-4|Def. §9.4]], [[§8 Normed Linear Spaces#^def-8-3|Def. §8.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]], [[§9 Completeness#^thm-9-4|§9.4]]
+*Uses:* [[§11 Completeness#^def-11-3|Def. §11.3]], [[§11 Completeness#^def-11-4|Def. §11.4]], [[§10 Normed Linear Spaces#^def-10-3|Def. §10.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]], [[§11 Completeness#^thm-11-4|§11.4]]
 
 > [!remark]- Connections
 > - The same construction one level down: ℝ as Cauchy classes of ℚ ([[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark §10.4]]).
-> - The normed version, where the linear structure and the norm are added: Theorem [[§9 Completeness#^thm-9-4|§9.4]]; uniqueness: Corollary [[§9 Completeness#^cor-9-6|§9.6]].
+> - The normed version, where the linear structure and the norm are added: Theorem [[§11 Completeness#^thm-11-4|§11.4]]; uniqueness: Corollary [[§11 Completeness#^cor-11-6|§11.6]].
 
-> [!example] Example §9.1: Completions of Subsets of $\mathbb{R}^n$
+> [!example] Example §11.1: Completions of Subsets of $\mathbb{R}^n$
 > For subsets of $\mathbb{R}^n$ with the usual metric, completion is closure:
 > - $M = (0, 1)$ with $d(x,y) = |x - y|$: $\overline{M} = [0, 1]$. The missing limits are the endpoints, each the limit of Cauchy sequences such as $(1/n)$ and $(1 - 1/n)$.
 > - $M = B_1(0) = \{ x \in \mathbb{R}^2 : \|x\| < 1 \}$, the open unit disk: $\overline{M} = \{ \|x\| \le 1 \}$, the closed disk.
@@ -250,13 +250,13 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 > ![[m556-9-1.svg]]
 > *In $M = (0,1)$ the Cauchy sequence $x_n = 1/n$ ($n \ge 2$) heads for $0$, which is not in $M$; the completion supplies the missing point.*
 
-^ex-9-1
+^ex-11-1
 
 ## Completion of a Normed Linear Space
 
 For a normed linear space $X$, the completion $\overline{X}$ as a metric space should again be a normed linear space, with $X$ sitting inside it as a subspace and with the original norm. The natural candidate for the norm of a class is the limit of the norms of a representative.
 
-> [!theorem] Theorem §9.4: The Completion of a Normed Space is a Banach Space
+> [!theorem] Theorem §11.4: The Completion of a Normed Space is a Banach Space
 > Let $(X, \|\cdot\|)$ be a normed linear space and $\overline{X}$ its completion. For a Cauchy sequence $\{x_n\}$ in $X$, write $[\{x_n\}] \in \overline{X}$ for its class, and define
 >
 > $$
@@ -268,17 +268,17 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 > *Source: HW2, Problem 3*
 > *Lax: §5.1, Thm 3*
 
-^thm-9-4
+^thm-11-4
 
 > [!remark] Note: Notation for the Proof
 > The norm of $X$ is written $\|\cdot\|$ and the candidate norm on $\overline{X}$ is written $\|\cdot\|_{\overline{X}}$. A sequence in $\overline{X}$ is a sequence of classes; its $m$-th term is written $[\{x^{(m)}_n\}_n]$, where $\{x^{(m)}_n\}_n$ is a Cauchy sequence in $X$ (superscript: which class; subscript: which term of the representative).
 
-^rem-9-4
+^rem-11-4
 
 > [!proof]+ Proof
 > (HW2, Problem 3.) Throughout, $\{x_n\}$ denotes a Cauchy sequence in $(X, \|\cdot\|)$ and $[\{x_n\}]$ its class in $\overline{X}$; two Cauchy sequences are equivalent iff $\lim_n \|x_n - y_n\| = 0$.
 >
-> **Step 1: the limit $\lim_n \|x_n\|$ exists.** For all $m, k$, the reverse triangle inequality (Lemma [[§8 Normed Linear Spaces#^lem-8-3|§8.3]]) gives $\bigl|\,\|x_m\| - \|x_k\|\,\bigr| \le \|x_m - x_k\|$. Given $\varepsilon > 0$, choose $N$ with $\|x_m - x_k\| < \varepsilon$ for all $m, k > N$; then $\bigl|\,\|x_m\| - \|x_k\|\,\bigr| < \varepsilon$ for all $m, k > N$. So $\{\|x_n\|\}$ is a Cauchy sequence of real numbers, and since $\mathbb{R}$ is complete, $\lim_n \|x_n\|$ exists.
+> **Step 1: the limit $\lim_n \|x_n\|$ exists.** For all $m, k$, the reverse triangle inequality (Lemma [[§10 Normed Linear Spaces#^lem-10-3|§10.3]]) gives $\bigl|\,\|x_m\| - \|x_k\|\,\bigr| \le \|x_m - x_k\|$. Given $\varepsilon > 0$, choose $N$ with $\|x_m - x_k\| < \varepsilon$ for all $m, k > N$; then $\bigl|\,\|x_m\| - \|x_k\|\,\bigr| < \varepsilon$ for all $m, k > N$. So $\{\|x_n\|\}$ is a Cauchy sequence of real numbers, and since $\mathbb{R}$ is complete, $\lim_n \|x_n\|$ exists.
 >
 > **Step 2: $\sim$ is an equivalence relation.** *Reflexive:* $\lim_n \|x_n - x_n\| = \lim_n 0 = 0$. *Symmetric:* since $\|y_n - x_n\| = \|x_n - y_n\|$ for every $n$, $\lim_n \|x_n - y_n\| = 0$ implies $\lim_n \|y_n - x_n\| = 0$. *Transitive:* if $\lim_n \|x_n - y_n\| = 0$ and $\lim_n \|y_n - z_n\| = 0$, then by the triangle inequality
 >
@@ -394,29 +394,29 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 >
 > *Conclusion.* By (3.3), for every $m \ge M_j$, $\|[\{x^{(m)}_n\}] - [\{y_n\}]\|_{\overline{X}} < 1/j + 2/j = 3/j < \varepsilon$. So the Cauchy sequence converges in $\overline{X}$ to $[\{y_n\}]$, and $(\overline{X}, \|\cdot\|_{\overline{X}})$ is complete; with Steps 5 and 6 it is a Banach space.
 
-^pf-9-4
+^pf-11-4
 
-*Uses:* [[§8 Normed Linear Spaces#^lem-8-3|§8.3]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^def-8-5|Def. §8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[§9 Completeness#^def-9-3|Def. §9.3]], [[§9 Completeness#^def-9-4|Def. §9.4]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]] (completeness of $\mathbb{R}$)
+*Uses:* [[§10 Normed Linear Spaces#^lem-10-3|§10.3]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-1|Def. §11.1]], [[§11 Completeness#^def-11-3|Def. §11.3]], [[§11 Completeness#^def-11-4|Def. §11.4]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]] (completeness of $\mathbb{R}$)
 
 > [!remark]- Connections
 > - The same construction for $\mathbb{Q} \subset \mathbb{R}$: [[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark (construction of the reals)]].
 > - The pattern of the proof: [[Functional Analysis Problem-Solving Techniques#^ex-t5|Technique 5, applications]].
 
 > [!remark] Remark: Comparison with the $\ell^p$ Proof
-> The structure is the one from Theorem [[§13 Minkowski's Inequality and the Spaces ℓᵖ#^thm-13-5|§13.5]], with the roles shifted. In $\ell^p$ the candidate came from coordinates and the closing step needed a uniform tail estimate obtained by truncating. Here the candidate is a *diagonal* sequence $y_j = x^{(M_j)}_{N_j}$: one term from each representative, chosen far enough out that within-representative fluctuations (3.2) and between-representative distances (3.1) are both below $1/j$. The closing step is the same three-term triangle inequality used twice, with an auxiliary index $n'$ that is sent far out after everything else is fixed and then disappears. The two monotone index sequences $M_j, N_j$ are what make “$m = M_n \ge M_j$ when $n \ge j$” available; without the $\max$ in their definition the comparisons in (3.1) could not be applied in the direction needed.
+> The structure is the one from Theorem [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|§16.5]], with the roles shifted. In $\ell^p$ the candidate came from coordinates and the closing step needed a uniform tail estimate obtained by truncating. Here the candidate is a *diagonal* sequence $y_j = x^{(M_j)}_{N_j}$: one term from each representative, chosen far enough out that within-representative fluctuations (3.2) and between-representative distances (3.1) are both below $1/j$. The closing step is the same three-term triangle inequality used twice, with an auxiliary index $n'$ that is sent far out after everything else is fixed and then disappears. The two monotone index sequences $M_j, N_j$ are what make “$m = M_n \ge M_j$ when $n \ge j$” available; without the $\max$ in their definition the comparisons in (3.1) could not be applied in the direction needed.
 
-^rem-9-5
+^rem-11-5
 
 > [!remark] Remark
-> A student asked whether one could define the norm of a class as the norm of its limit. There is no limit in $X$ to speak of — that is the whole reason for the construction — so the definition must be phrased in terms of the sequence itself, and existence of $\lim \|x_n\|$ is then a claim to prove, not a definition. The relevant estimate is the reverse triangle inequality (Lemma [[§8 Normed Linear Spaces#^lem-8-3|§8.3]]), $\bigl|\,\|x_m\| - \|x_k\|\,\bigr| \le \|x_m - x_k\|$, which makes $\{\|x_n\|\}$ a Cauchy sequence of real numbers.
+> A student asked whether one could define the norm of a class as the norm of its limit. There is no limit in $X$ to speak of — that is the whole reason for the construction — so the definition must be phrased in terms of the sequence itself, and existence of $\lim \|x_n\|$ is then a claim to prove, not a definition. The relevant estimate is the reverse triangle inequality (Lemma [[§10 Normed Linear Spaces#^lem-10-3|§10.3]]), $\bigl|\,\|x_m\| - \|x_k\|\,\bigr| \le \|x_m - x_k\|$, which makes $\{\|x_n\|\}$ a Cauchy sequence of real numbers.
 
-^rem-9-6
+^rem-11-6
 
 ## Identifying a Completion
 
 The construction by equivalence classes is abstract, but in practice the completion of a concrete space can almost always be written down as a concrete space. The following proposition is the tool: if the space is already sitting densely inside something complete, that something *is* the completion.
 
-> [!theorem] Proposition §9.5: Identifying a Completion
+> [!theorem] Proposition §11.5: Identifying a Completion
 > Let $(X, \|\cdot\|_X)$ be a normed linear space, $(Z, \|\cdot\|_Z)$ a Banach space, and $J : X \to Z$ a linear map with $\|Jx\|_Z = \|x\|_X$ for all $x \in X$, such that $J(X)$ is dense in $Z$. Then
 >
 > $$
@@ -425,7 +425,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > is an isometric isomorphism of $\overline{X}$ onto $Z$, and it sends the class of the constant sequence $(x, x, \ldots)$ to $Jx$. In particular, if $X \subset Z$ is a dense linear subspace carrying the restricted norm ($J$ the inclusion), then $\overline{X}$ is isometrically isomorphic to $Z$ by an isomorphism that is the identity on $X$.
 
-^prop-9-5
+^prop-11-5
 
 > [!proof]+ Proof
 > (Not covered in lecture.) *The limit exists.* If $\{x_n\}$ is Cauchy in $X$, then $\|Jx_n - Jx_m\|_Z = \|J(x_n - x_m)\|_Z = \|x_n - x_m\|_X$, so $\{Jx_n\}$ is Cauchy in $Z$, and it converges because $Z$ is complete.
@@ -434,7 +434,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > *Linear.* The operations on $\overline{X}$ are termwise, $J$ is linear, and limits in $Z$ are linear.
 >
-> *Isometric.* By continuity of the norm (Proposition [[§8 Normed Linear Spaces#^prop-8-4|§8.4]]),
+> *Isometric.* By continuity of the norm (Proposition [[§10 Normed Linear Spaces#^prop-10-4|§10.4]]),
 >
 > $$
 > \|\Phi([\{x_n\}])\|_Z = \lim_n \|Jx_n\|_Z = \lim_n \|x_n\|_X = \|[\{x_n\}]\|,
@@ -442,58 +442,58 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > the last equality being the definition of the norm on $\overline{X}$. An isometry is injective: $\Phi(\xi) = 0$ forces $\|\xi\| = 0$, hence $\xi = 0$.
 >
-> *Surjective.* Let $z \in Z$. By density there are $x_n \in X$ with $Jx_n \to z$. A convergent sequence is Cauchy (Proposition [[§8 Normed Linear Spaces#^prop-8-5|§8.5]]), and $\|x_n - x_m\|_X = \|Jx_n - Jx_m\|_Z$, so $\{x_n\}$ is Cauchy in $X$ and $\Phi([\{x_n\}]) = z$.
+> *Surjective.* Let $z \in Z$. By density there are $x_n \in X$ with $Jx_n \to z$. A convergent sequence is Cauchy (Proposition [[§10 Normed Linear Spaces#^prop-10-5|§10.5]]), and $\|x_n - x_m\|_X = \|Jx_n - Jx_m\|_Z$, so $\{x_n\}$ is Cauchy in $X$ and $\Phi([\{x_n\}]) = z$.
 >
 > Finally $\Phi([(x, x, \ldots)]) = \lim_n Jx = Jx$.
 
-^pf-9-5
+^pf-11-5
 
-*Uses:* [[§9 Completeness#^thm-9-4|§9.4]], [[§9 Completeness#^def-9-3|Def. §9.3]], [[§9 Completeness#^def-9-4|Def. §9.4]], [[§8 Normed Linear Spaces#^prop-8-4|§8.4]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§8 Normed Linear Spaces#^def-8-7|Def. §8.7]], [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1|Def. §2.1]]
+*Uses:* [[§11 Completeness#^thm-11-4|§11.4]], [[§11 Completeness#^def-11-3|Def. §11.3]], [[§11 Completeness#^def-11-4|Def. §11.4]], [[§10 Normed Linear Spaces#^prop-10-4|§10.4]], [[§10 Normed Linear Spaces#^prop-10-5|§10.5]], [[§10 Normed Linear Spaces#^def-10-7|Def. §10.7]], [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1|Def. §2.1]]
 
 > [!remark]- Connections
-> - Used for concrete completions: [[§9 Completeness#^prop-9-7|§9.7]] ($C^1$), [[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]] ($L^p$).
+> - Used for concrete completions: [[§11 Completeness#^prop-11-7|§11.7]] ($C^1$), [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]] ($L^p$).
 
 > [!remark] Remark
 > The embedding form is needed in practice: an element of $L^p[a,b]$ is a class of functions equal almost everywhere, so $C[a,b]$ is not literally a subset of $L^p[a,b]$; it sits inside via $f \mapsto [f]$. The proposition is the precise meaning of “$Z$ *is* the completion of $X$”: the abstract $\overline{X}$ and the concrete $Z$ are the same Banach space, with $X$ corresponding to $J(X)$.
 
-^rem-9-7
+^rem-11-7
 
-> [!theorem] Corollary §9.6: Uniqueness of the Completion
+> [!theorem] Corollary §11.6: Uniqueness of the Completion
 > Let $X$ be a normed linear space. If $Z_1$ and $Z_2$ are Banach spaces each containing $X$ as a dense subspace with the same norm, then $Z_1$ and $Z_2$ are isometrically isomorphic by a map fixing $X$. In this sense the completion of $X$ is unique.
 
-^cor-9-6
+^cor-11-6
 
 > [!proof]+ Proof
-> (Stated in lecture without proof; the proof is not from lecture.) Both are isometrically isomorphic to $\overline{X}$ by Proposition [[§9 Completeness#^prop-9-5|§9.5]]; compose one isomorphism with the inverse of the other (Lemma [[§2 Linear Maps, Convexity, and Linear Functionals#^lem-2-1|§2.1]]).
+> (Stated in lecture without proof; the proof is not from lecture.) Both are isometrically isomorphic to $\overline{X}$ by Proposition [[§11 Completeness#^prop-11-5|§11.5]]; compose one isomorphism with the inverse of the other (Lemma [[§2 Linear Maps, Convexity, and Linear Functionals#^lem-2-1|§2.1]]).
 
-^pf-9-6
+^pf-11-6
 
-*Uses:* [[§9 Completeness#^prop-9-5|§9.5]], [[§2 Linear Maps, Convexity, and Linear Functionals#^lem-2-1|§2.1]]
+*Uses:* [[§11 Completeness#^prop-11-5|§11.5]], [[§2 Linear Maps, Convexity, and Linear Functionals#^lem-2-1|§2.1]]
 
 > [!remark] Remark: “How Do We Know We Have Not Added Too Much?”
-> This was asked in lecture, and Corollary [[§9 Completeness#^cor-9-6|§9.6]] is the answer: there is no freedom. The construction adds only limits of Cauchy sequences in $X$ and identifies two sequences whenever they head for the same place, so nothing extra can appear.
+> This was asked in lecture, and Corollary [[§11 Completeness#^cor-11-6|§11.6]] is the answer: there is no freedom. The construction adds only limits of Cauchy sequences in $X$ and identifies two sequences whenever they head for the same place, so nothing extra can appear.
 >
 > A larger complete space containing $X$ need not be the completion. A student's example: with the usual absolute value, the completion of $\mathbb{Q}$ is $\mathbb{R}$, and $\mathbb{R} \subset \mathbb{C}$ with $\mathbb{C}$ complete — but $\mathbb{C}$ is not the completion of $\mathbb{Q}$, because a Cauchy sequence of rationals cannot converge to a non-real number. Equivalently in Wu's version, $\mathbb{R} \subset \mathbb{R}^2$ is a complete space containing $\mathbb{R}$, and is not its completion. The condition that fails is density.
 >
 > Also worth separating: the definition of $\overline{X}$ is by equivalence classes, and the description “$X$ together with all its limit points” is a way of thinking, not a definition — before the construction there is no ambient space in which those limit points live. Wu: “the previous one is more precise; the later one is a way of thinking. What is the limit when you don't even have a point?”
 
-^rem-9-8
+^rem-11-8
 
 > [!remark] Remark: The Norm Decides, Not the Set
-> A second trap. As *sets*, $C[a,b] \subset L^1[a,b]$, and $L^1[a,b]$ is complete; but $L^1[a,b]$ is not the completion of $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$, which is already complete (Theorem [[§9 Completeness#^thm-9-1|§9.1]]) and is therefore its own completion. The two norms $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ are not [[§10 New Normed Spaces from Old#^def-10-1|equivalent]], so they give different topologies, different Cauchy sequences, and different completions. A normed linear space is the pair $(X, \|\cdot\|)$, never the set alone; the completion is determined by the norm. The same set $C[a,b]$ with the $L^p$ norm, $1 \le p < \infty$, does have completion $L^p[a,b]$ ([[§14 The Function Spaces Lᵖ(Ω)#^prop-14-8|§14.8]]).
+> A second trap. As *sets*, $C[a,b] \subset L^1[a,b]$, and $L^1[a,b]$ is complete; but $L^1[a,b]$ is not the completion of $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$, which is already complete (Theorem [[§11 Completeness#^thm-11-1|§11.1]]) and is therefore its own completion. The two norms $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ are not [[§12 New Normed Spaces from Old#^def-12-1|equivalent]], so they give different topologies, different Cauchy sequences, and different completions. A normed linear space is the pair $(X, \|\cdot\|)$, never the set alone; the completion is determined by the norm. The same set $C[a,b]$ with the $L^p$ norm, $1 \le p < \infty$, does have completion $L^p[a,b]$ ([[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]]).
 
-^rem-9-9
+^rem-11-9
 
 ## An Incomplete Normed Space
 
-> [!example] Example §9.2: $C^2[a,b]$ with a $C^1$ Norm
+> [!example] Example §11.2: $C^2[a,b]$ with a $C^1$ Norm
 > Let $C^k[a,b]$ denote the $k$ times continuously differentiable functions on $[a,b]$. The natural norm on $C^2[a,b]$ is
 >
 > $$
 > \|f\|_{C^2[a,b]} = \max_{[a,b]} |f| + \max_{[a,b]} |f'| + \max_{[a,b]} |f''|,
 > $$
 >
-> and $(C^2[a,b], \|\cdot\|_{C^2})$ is complete, by the same argument as for $C[a,b]$ (Theorem [[§9 Completeness#^thm-9-1|§9.1]]) applied to $f$, $f'$, $f''$ simultaneously. But the set $X = C^2[a,b]$ may also be given the smaller norm
+> and $(C^2[a,b], \|\cdot\|_{C^2})$ is complete, by the same argument as for $C[a,b]$ (Theorem [[§11 Completeness#^thm-11-1|§11.1]]) applied to $f$, $f'$, $f''$ simultaneously. But the set $X = C^2[a,b]$ may also be given the smaller norm
 >
 > $$
 > \|f\|_X = \max_{[a,b]} |f| + \max_{[a,b]} |f'|,
@@ -501,18 +501,18 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > which omits the second derivative, and $(X, \|\cdot\|_X)$ is a normed linear space that is *not* complete. This is another instance of the previous remark: the same set, two inequivalent norms, one complete and one not.
 
-^ex-9-2
+^ex-11-2
 
-> [!theorem] Proposition §9.7: $(C^2[a,b], \|\cdot\|_X)$ is Not Complete
+> [!theorem] Proposition §11.7: $(C^2[a,b], \|\cdot\|_X)$ is Not Complete
 > With $\|f\|_X = \max |f| + \max |f'|$, the space $X = C^2[a,b]$ is not complete, and its completion is $C^1[a,b]$ with the same norm.
 >
 > *Source: HW3, Problem 2*
 
-^prop-9-7
+^prop-11-7
 
 > [!proof]+ Proof
 > (HW3, Problem 2.)
-> Throughout, $C^k([a,b])$ ($k = 1, 2$) denotes the functions $f : [a,b] \to \mathbb{F}$ that are $k$ times differentiable on $[a,b]$ (one-sided at the endpoints) with $f^{(k)}$ continuous, and $\|g\|_\infty = \max_{[a,b]} |g|$ for $g \in C([a,b])$; $(C([a,b]), \|\cdot\|_\infty)$ is a Banach space (Theorem [[§9 Completeness#^thm-9-1|§9.1]]). Write $\|f\| = \|f\|_X = \|f\|_\infty + \|f'\|_\infty$. For complex-valued functions, differentiation and integration act on real and imaginary parts, so the fundamental theorem of calculus holds, and $\bigl|\int_\alpha^\beta h\bigr| \leq \int_\alpha^\beta |h|$ for continuous $h$. We show that $(X, \|\cdot\|)$ is a normed linear space, that it is *not* complete, and that its completion is $C^1([a,b])$ with the same norm.
+> Throughout, $C^k([a,b])$ ($k = 1, 2$) denotes the functions $f : [a,b] \to \mathbb{F}$ that are $k$ times differentiable on $[a,b]$ (one-sided at the endpoints) with $f^{(k)}$ continuous, and $\|g\|_\infty = \max_{[a,b]} |g|$ for $g \in C([a,b])$; $(C([a,b]), \|\cdot\|_\infty)$ is a Banach space (Theorem [[§11 Completeness#^thm-11-1|§11.1]]). Write $\|f\| = \|f\|_X = \|f\|_\infty + \|f'\|_\infty$. For complex-valued functions, differentiation and integration act on real and imaginary parts, so the fundamental theorem of calculus holds, and $\bigl|\int_\alpha^\beta h\bigr| \leq \int_\alpha^\beta |h|$ for continuous $h$. We show that $(X, \|\cdot\|)$ is a normed linear space, that it is *not* complete, and that its completion is $C^1([a,b])$ with the same norm.
 >
 > **Part 1: $(X, \|\cdot\|)$ is a normed linear space.** If $f, g \in X$ and $c \in \mathbb{F}$, then $(f + g)' = f' + g'$, $(f+g)'' = f'' + g''$, $(cf)' = cf'$ and $(cf)'' = cf''$, all continuous; so $X$ is a linear subspace of $C([a,b])$, hence a linear space. The norm is well defined because $f$ and $f'$ are continuous on $[a,b]$, so both maxima exist.
 >
@@ -578,10 +578,10 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > *$X$ is not complete.* By Part 3 there are $q_n \in X$ with $\|q_n - \varphi\| \to 0$. The sequence $\{q_n\}$ is Cauchy in $X$, since $\|q_n - q_m\| \leq \|q_n - \varphi\| + \|\varphi - q_m\|$. If it converged in $X$ to some $h \in X$, then, as $X$ carries the norm of $Z$, it would converge in $Z$ to both $h$ and $\varphi$. Limits in a metric space are unique, so $\varphi = h \in X$, contradicting Part 4. Hence $(X, \|\cdot\|)$ is not complete.
 >
-> *The completion.* The inclusion $J : X \to Z$ is linear and norm-preserving, $J(X) = X$ is dense in $Z$ by Part 3, and $Z$ is a Banach space by Part 2. By Proposition [[§9 Completeness#^prop-9-5|§9.5]], the completion of $(X, \|\cdot\|)$ is
+> *The completion.* The inclusion $J : X \to Z$ is linear and norm-preserving, $J(X) = X$ is dense in $Z$ by Part 3, and $Z$ is a Banach space by Part 2. By Proposition [[§11 Completeness#^prop-11-5|§11.5]], the completion of $(X, \|\cdot\|)$ is
 >
 > $$\Bigl( C^1([a,b]),\ \|f\| = \max_{t \in [a,b]} |f(t)| + \max_{t \in [a,b]} |f'(t)| \Bigr).$$
 
-^pf-9-7
+^pf-11-7
 
-*Uses:* [[§9 Completeness#^thm-9-1|§9.1]], [[§9 Completeness#^prop-9-5|§9.5]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§8 Normed Linear Spaces#^def-8-1|Def. §8.1]], [[§8 Normed Linear Spaces#^prop-8-5|§8.5]], [[§9 Completeness#^def-9-1|Def. §9.1]], [[Fundamental Theorem of Calculus|451 Fundamental Theorem of Calculus]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27 (Weierstrass approximation)]]
+*Uses:* [[§11 Completeness#^thm-11-1|§11.1]], [[§11 Completeness#^prop-11-5|§11.5]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^prop-10-5|§10.5]], [[§11 Completeness#^def-11-1|Def. §11.1]], [[Fundamental Theorem of Calculus|451 Fundamental Theorem of Calculus]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27 (Weierstrass approximation)]]

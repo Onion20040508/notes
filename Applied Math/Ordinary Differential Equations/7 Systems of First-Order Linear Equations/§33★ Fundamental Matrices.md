@@ -268,7 +268,7 @@ with $\mathbf{A}$ a constant matrix, has the solution $\mathbf{x} = \mathbf{\Phi
 
 > [!remark]- Connections
 > - Rigorous treatment of the two steps: comparison, [[§14 Series#^thm-14-7|451 Thm. §14.7]], and term-by-term differentiation of a power series, [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]]. The scalar series is [[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]].
-> - Norm viewpoint: with the operator norm ([[§27 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]], [[§21 Boundedness and Continuity#^def-21-2|556 Def. §21.2]]) one has $\|\mathbf{A}^k\| \le \|\mathbf{A}\|^k$, so (23) converges absolutely in the Banach space of $n \times n$ matrices ([[§21 Boundedness and Continuity#^thm-21-5|556 Thm. §21.5]](2), [[§10 New Normed Spaces from Old#^cor-10-4|556 Cor. §10.4]]). No other subject in the vault defines the exponential of a matrix or operator; this note is its home.
+> - Norm viewpoint: with the operator norm ([[§27 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]], [[§26 Boundedness and Continuity#^def-26-2|556 Def. §26.2]]) one has $\|\mathbf{A}^k\| \le \|\mathbf{A}\|^k$, so (23) converges absolutely in the Banach space of $n \times n$ matrices ([[§26 Boundedness and Continuity#^thm-26-5|556 Thm. §26.5]](2), [[§12 New Normed Spaces from Old#^cor-12-4|556 Cor. §12.4]]). No other subject in the vault defines the exponential of a matrix or operator; this note is its home.
 
 > [!theorem] Theorem §33.4: The Exponential Is the Fundamental Matrix Φ
 > Let $\mathbf{A}$ be a constant matrix and $\mathbf{\Phi}(t)$ the fundamental matrix of $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{\Phi}(0) = \mathbf{I}$. Then

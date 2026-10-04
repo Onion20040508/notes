@@ -25,11 +25,11 @@ tags: [measure-theory, hub]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|Corollary §19.20: Lᵖ is Separable for 1 ≤ p < ∞]]
 
 ## Used in (Functional Analysis)
-- [[§20 Orthonormal Sets and Bases#^prop-20-4|Proposition §20.4: Only Countably Many Coefficients are Nonzero]]
-- [[§20 Orthonormal Sets and Bases#^prop-20-13|Proposition §20.13: ℓ^p is Separable for 1 ≤ p < ∞]]
-- [[§20 Orthonormal Sets and Bases#^prop-20-14|Proposition §20.14: c_0 is a Separable Banach Space]]
-- [[§20 Orthonormal Sets and Bases#^prop-20-16|Proposition §20.16: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
-- [[§20 Orthonormal Sets and Bases#^thm-20-18|Theorem §20.18: Separable Hilbert Spaces and Countable Bases]]
+- [[§24 Orthonormal Sets and Bases#^prop-24-4|Proposition §24.4: Only Countably Many Coefficients are Nonzero]]
+- [[§24 Orthonormal Sets and Bases#^thm-24-13|Theorem §24.13: Separable Hilbert Spaces and Countable Bases]]
+- [[§25 Sequence and Function Spaces#^prop-25-1|Proposition §25.1: ℓ^p is Separable for 1 ≤ p < ∞]]
+- [[§25 Sequence and Function Spaces#^prop-25-2|Proposition §25.2: c_0 is a Separable Banach Space]]
+- [[§25 Sequence and Function Spaces#^prop-25-4|Proposition §25.4: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
 
 ## Connections
 - **Proof idea.** List the n-th set as aₙ,₁, aₙ,₂, … and send aₙ,ₘ to (n, m). This puts the union in bijection with a subset of ℕ × ℕ, which is countable by the diagonal listing of [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]].

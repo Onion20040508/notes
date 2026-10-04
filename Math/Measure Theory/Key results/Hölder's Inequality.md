@@ -25,9 +25,9 @@ tags: [measure-theory, hub]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9|Theorem §19.9: Minkowski's Inequality]]
 
 ## Used in (Functional Analysis)
-- [[§11 Means and Young's Inequality#^prop-11-1|Proposition §11.1: Cauchy–Schwarz in ℝⁿ]]
-- [[§14 The Function Spaces Lᵖ(Ω)#^thm-14-1|Theorem §14.1: Hölder's Inequality for Functions]]
-- [[§14 The Function Spaces Lᵖ(Ω)#^rem-14-2|Remark: What “Integrable” Means Here]]
+- [[§14 Means and Young's Inequality#^prop-14-1|Proposition §14.1: Cauchy–Schwarz in ℝⁿ]]
+- [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-1|Theorem §17.1: Hölder's Inequality for Functions]]
+- [[§17 The Function Spaces Lᵖ(Ω)#^rem-17-2|Remark: What “Integrable” Means Here]]
 
 ## Connections
 - **Proof idea.** Normalize both norms to 1 and apply [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|Young's inequality]] a^θ b^(1−θ) ≤ θa + (1 − θ)b pointwise, with θ = 1/p, a = |f|ᵖ and b = |g|^p′, then integrate. For p = 1, p′ = ∞, use |g| ≤ ‖g‖∞ a.e. ([[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]]).
