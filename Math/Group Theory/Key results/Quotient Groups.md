@@ -15,6 +15,8 @@ tags: [group-theory, hub]
 - [[§29 The Index and Lagrange's Theorem#^def-29-1|Definition §29.1: Index]]
 - [[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2: Lagrange]]
 - [[§37 Multiplying Cosets#^prop-37-1|Proposition §37.1: When Coset Multiplication Is Well Defined]]
+- [[§38 Normal Subgroups#^rem-38-2|Remark: Multiplying Sets]]
+- [[§38 Normal Subgroups#^rem-38-3|Remark: Second Proof of (⇐) in Proposition §37.1 (lecture 9/25)]]
 
 ## Used in (Group Theory)
 - [[§40 Quotient Groups#^prop-40-2|Proposition §40.2: Every Normal Subgroup Is a Kernel]]

@@ -41,7 +41,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 ^thm-40-1
 
 > [!proof]+ Proof
-> The operation is well defined by [[§37 Multiplying Cosets#^prop-37-1|When Coset Multiplication Is Well Defined]] (§37), where the lecture's set-product proof is recorded as a second proof. Every property reduces to the corresponding property of $G$ by computing with representatives: *associativity*, $(g_1N\,g_2N)\,g_3N = (g_1g_2)g_3N = g_1(g_2g_3)N = g_1N\,(g_2N\,g_3N)$; *identity*, $(eN)(gN) = gN = (gN)(eN)$; *inverses*, $(gN)(g^{-1}N) = eN = (g^{-1}N)(gN)$. The count is the definition of the index together with Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]).
+> The operation is well defined by [[§37 Multiplying Cosets#^prop-37-1|When Coset Multiplication Is Well Defined]] (§37); the lecture's set-product proof is recorded as a remark after [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets]] ([[§38 Normal Subgroups#^rem-38-3|§38]]). Every property reduces to the corresponding property of $G$ by computing with representatives: *associativity*, $(g_1N\,g_2N)\,g_3N = (g_1g_2)g_3N = g_1(g_2g_3)N = g_1N\,(g_2N\,g_3N)$; *identity*, $(eN)(gN) = gN = (gN)(eN)$; *inverses*, $(gN)(g^{-1}N) = eN = (g^{-1}N)(gN)$. The count is the definition of the index together with Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]).
 
 ^pf-40-1
 

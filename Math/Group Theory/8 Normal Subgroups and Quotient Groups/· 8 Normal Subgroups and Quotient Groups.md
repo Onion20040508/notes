@@ -36,6 +36,6 @@ Normal subgroups are exactly the subgroups for which multiplication of cosets is
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[Characterizations of Normality|Proposition §38.2: Characterizations of Normality]]: 15 later results
+- [[§37 Multiplying Cosets#^prop-37-1|Proposition §37.1: When Coset Multiplication Is Well Defined]]: 10 later results
 - [[Kernels Are Normal|Proposition §39.2: Kernels Are Normal]]: 10 later results
-- [[§37 Multiplying Cosets#^prop-37-1|Proposition §37.1: When Coset Multiplication Is Well Defined]]: 9 later results
 - [[Quotient Groups|Theorem §40.1: G/N Is a Group]]: 8 later results

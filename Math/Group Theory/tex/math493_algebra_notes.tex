@@ -3625,8 +3625,7 @@ Since the second factor lies in $H$, the conclusion holds if and only if $v_1^{-
 
 ($\Rightarrow$) Suppose the operation is well defined, and let $g \in G$, $h \in H$. Take $u_1 = e$, $u_2 = h$, and $v_1 = v_2 = g^{-1}$. The hypotheses hold ($u_1^{-1}u_2 = h \in H$, $v_1^{-1}v_2 = e \in H$), so the conclusion gives $v_1^{-1}(u_1^{-1}u_2)v_1 = ghg^{-1} \in H$.
 
-\emph{Second proof of ($\Leftarrow$) (lecture 9/25).} Using products of subsets and $g_2'N = Ng_2'$ for normal $N$ (Characterizations of Normality, \ref{sec:normal}): if $g_1N = g_1'N$ and $g_2N = g_2'N$, then
-\[ g_1g_2N = g_1g_2'N = g_1Ng_2' = g_1'Ng_2' = g_1'g_2'N. \]
+A second proof of ($\Leftarrow$), from lecture 9/25, multiplies cosets as sets; it needs Section~\ref{sec:normal} and is given there, after Remark~\ref{rem:multiplying-sets}.
 \end{proof}
 
 \section{Normal Subgroups}\label{sec:normal}
@@ -3680,6 +3679,11 @@ For a subgroup $H$ of a group $G$, the following are equivalent:
 
 \begin{rembox}[Multiplying Sets]\label{rem:multiplying-sets}
 Here $gH$, $Hg$, $gHg^{-1}$ are subsets of $G$, and ``multiplying an equality of subsets by $g$'' means applying the bijection $x \mapsto xg$ of $G$ to both sides; this is legitimate for equalities of sets, and preserves inclusions as well.
+\end{rembox}
+
+\begin{rembox}[{Second Proof of ($\Leftarrow$) in Proposition~\ref{prop:when-coset-multiplication-well-defined} (lecture 9/25)}]\label{rem:second-proof-proposition}
+Using products of subsets and $g_2'N = Ng_2'$ for normal $N$ (Characterizations of Normality, \ref{sec:normal}): if $g_1N = g_1'N$ and $g_2N = g_2'N$, then
+\[ g_1g_2N = g_1g_2'N = g_1Ng_2' = g_1'Ng_2' = g_1'g_2'N. \]
 \end{rembox}
 
 \begin{thmbox}[{Five Characterizations of Normality (WS 6.1)}]\label{thm:five-characterizations-normality}
@@ -3856,7 +3860,7 @@ Let $N \trianglelefteq G$. With coset multiplication, $G/N$ is a group, with ide
 \end{thmbox}
 
 \begin{proof}
-The operation is well defined by When Coset Multiplication Is Well Defined (\ref{sec:multiplying-cosets}), where the lecture's set-product proof is recorded as a second proof. Every property reduces to the corresponding property of $G$ by computing with representatives: \emph{associativity}, $(g_1N\,g_2N)\,g_3N = (g_1g_2)g_3N = g_1(g_2g_3)N = g_1N\,(g_2N\,g_3N)$; \emph{identity}, $(eN)(gN) = gN = (gN)(eN)$; \emph{inverses}, $(gN)(g^{-1}N) = eN = (g^{-1}N)(gN)$. The count is the definition of the index together with Lagrange (\ref{sec:lagrange}).
+The operation is well defined by When Coset Multiplication Is Well Defined (\ref{sec:multiplying-cosets}); the lecture's set-product proof is recorded as a remark after Remark~\ref{rem:multiplying-sets}. Every property reduces to the corresponding property of $G$ by computing with representatives: \emph{associativity}, $(g_1N\,g_2N)\,g_3N = (g_1g_2)g_3N = g_1(g_2g_3)N = g_1N\,(g_2N\,g_3N)$; \emph{identity}, $(eN)(gN) = gN = (gN)(eN)$; \emph{inverses}, $(gN)(g^{-1}N) = eN = (g^{-1}N)(gN)$. The count is the definition of the index together with Lagrange (\ref{sec:lagrange}).
 \end{proof}
 
 \begin{propbox}[{Every Normal Subgroup Is a Kernel (lecture)}]\label{prop:every-normal-subgroup-kernel}

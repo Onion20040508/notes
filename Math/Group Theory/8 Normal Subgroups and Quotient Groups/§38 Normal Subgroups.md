@@ -77,6 +77,15 @@ tags: [group-theory, math493]
 
 ^rem-38-2
 
+> [!remark] Remark: Second Proof of (⇐) in Proposition §37.1 (lecture 9/25)
+> Using products of subsets and $g_2'N = Ng_2'$ for normal $N$ ([[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]]): if $g_1N = g_1'N$ and $g_2N = g_2'N$, then
+>
+> $$ g_1g_2N = g_1g_2'N = g_1Ng_2' = g_1'Ng_2' = g_1'g_2'N. $$
+
+^rem-38-3
+
+*Uses:* [[§37 Multiplying Cosets#^prop-37-1|§37.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets]]
+
 > [!theorem] Theorem §38.3: Five Characterizations of Normality
 > Let $G$ be a group and $N$ a subgroup. The following are equivalent:
 > 1. for all $g \in G$, $gNg^{-1} = N$;
@@ -102,7 +111,7 @@ tags: [group-theory, math493]
 > [!remark] Remark: Relation to the Lecture
 > Four of the five conditions have already appeared: (1) is characterization (2) of [[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]] (lecture), (4) is its characterization (4), (5) is the well-definedness of coset multiplication ([[§37 Multiplying Cosets#^prop-37-1|§37.1]]), and (2) is [[§39 Sources of Normal Subgroups#^prop-39-7|Normal Subgroups Are Unions of Conjugacy Classes]] (§39). Condition (3) is new: it phrases normality through the action of $G$ on $G/N$ from Worksheet 5 ([[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]]).
 
-^rem-38-3
+^rem-38-4
 
 > [!example] Example §38.1: A Non-Normal Subgroup of $S_3$
 > Let $G = S_3$ and $H = \{e, (1\,2)\}$. As computed in [[§28 Left and Right Cosets#^ex-28-1|Ex. §28.1]],
