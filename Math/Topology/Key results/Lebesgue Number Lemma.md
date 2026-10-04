@@ -14,6 +14,7 @@ tags: [topology, hub]
 - (only definitions)
 
 ## Used in (Topology)
+- [[§16 Limit Point Compactness#^thm-16-2|Theorem §16.2: Equivalence for Metrizable Spaces]]
 - [[§24 Covering Spaces#^ex-24-5|Example §24.5: Lifting Loops on S¹ to Paths in ℝ]]
 - [[§24 Covering Spaces#^lem-24-6|Lemma §24.6: Path Lifting Lemma]]
 - [[§24 Covering Spaces#^lem-24-7|Lemma §24.7: Homotopy Lifting Lemma]]

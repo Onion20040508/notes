@@ -21,6 +21,7 @@ tags: [differentiable-manifolds, hub]
 - [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84 Change-of-basis formula]]
 
 ## Used in (Differentiable Manifolds)
+- [[§35 The Tangent Bundle#^prop-35-1|Proposition §35.1: The Topology of TM]]
 - [[§35 The Tangent Bundle#^cor-35-3|Corollary §35.3: The Tangent Bundle Is a Fibration]]
 - [[§35 The Tangent Bundle#^prop-35-4|Proposition §35.4: The Tangent Bundle Is a Manifold (Claim)]]
 - [[§35 The Tangent Bundle#^prop-35-5|Proposition §35.5: The Cotangent Transition Maps]]

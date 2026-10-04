@@ -64,6 +64,7 @@ tags: [linear-algebra]
 ^ladr-6-4
 
 > [!remark] Notation 6.5: V, W (p. 185)
+> In this chapter and the next, $V$ and $W$ denote inner product spaces over $\F$.
 
 ^ladr-6-5
 
@@ -202,6 +203,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§46 Inner Product Spaces#^thm-46-4|235 Thm. §46.4]] (Cauchy–Schwarz in a real inner product space).
+> - For integrals: the case $p=2$ of [[Hölder's Inequality|551 Thm. §19.5]], which extends it to $L^p$. In several variables its equality case gives the direction of steepest ascent, $D_{\mathbf u}f=\nabla f\cdot\mathbf u\le|\nabla f|$, [[Directional Derivative Formula|452 Thm. §7.1]].
 
 %% ex:6.14-fig %%
 
@@ -244,6 +246,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Used in Relativity: for timelike vectors in spacetime the inequality reverses, and the straight worldline is the longest — [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-2|REL Theorem §B1.3.2]].
 > - Computational version: [[§46 Inner Product Spaces#^thm-46-5|235 Thm. §46.5]] (the triangle inequality in a real inner product space).
+> - The case $V=\R$ is the absolute-value triangle inequality, [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 Thm. §3.3]](i). It is axiom 3 of a metric ([[§13 Some Topological Concepts in Metric Spaces#^def-13-1|451 Def. §13.1]]), so $d(u,v)=\|u-v\|$ makes every inner product space a metric space. For the $L^p$ norms it is [[Minkowski's Inequality|551 Thm. §19.9]].
 
 > [!theorem] Theorem 6.21: Parallelogram equality
 > For $u,v\in V$,

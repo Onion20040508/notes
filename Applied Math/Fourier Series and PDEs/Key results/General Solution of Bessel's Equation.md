@@ -14,6 +14,9 @@ tags: [fourier-series-and-pdes, hub]
 - [[§45★ Bessel's Equation#^thm-45-2|Theorem §45.2: J_μ Solves Bessel's Equation]]
 - [[§45★ Bessel's Equation#^thm-45-4|Theorem §45.4: The Second Solution Is Unbounded at the Origin]]
 
+## Its proof uses (other subjects)
+- [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4: The General Solution]] (Ordinary Differential Equations)
+
 ## Used in (Fourier Series and PDEs)
 - [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1: Eigenvalues and Eigenfunctions of the Radial Problem]]
 - [[§47★ Vibrations of a Circular Membrane#^prop-47-2|Proposition §47.2: Eigenfunctions of the Disk]]

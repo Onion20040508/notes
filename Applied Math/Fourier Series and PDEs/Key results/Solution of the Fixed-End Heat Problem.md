@@ -19,6 +19,12 @@ tags: [fourier-series-and-pdes, hub]
 - [[§19 Example꞉ Fixed End Temperatures#^prop-19-3|Proposition §19.3: The Product Solutions]]
 - [[§19 Example꞉ Fixed End Temperatures#^thm-19-4|Theorem §19.4: Principle of Superposition]]
 
+## Its proof uses (other subjects)
+- [[§25 More on Uniform Convergence#^thm-25-2|Theorem §25.2: Continuity of Uniformly Convergent Series]] (Single Variable Analysis)
+- [[§25 More on Uniform Convergence#^thm-25-3|Theorem §25.3: Weierstrass M-Test]] (Single Variable Analysis)
+- [[§26 Differentiation and Integration of Power Series#^thm-26-3|Theorem §26.3: Integrating a Uniformly Convergent Series]] (Single Variable Analysis)
+- [[§34 Fundamental Theorem of Calculus#^thm-34-4|Theorem §34.4: Fundamental Theorem of Calculus II]] (Single Variable Analysis)
+
 ## Used in (Fourier Series and PDEs)
 - [[§10 Operations on Fourier Series#^ex-10-5|Example §10.5: Rapidly Decaying Coefficients; a Heat Series]]
 - [[§20 Example꞉ Insulated Bar#^thm-20-2|Theorem §20.2: Solution of the Insulated-Bar Problem]]

@@ -85,6 +85,7 @@ tags: [linear-algebra]
 > - Computational version: [[§53 Complex Numbers#^def-53-2|235 Def. §53.2]] (subtraction) and [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]] (reciprocals and quotients, with worked examples).
 
 > [!remark] Notation 1.6: F (p. 4)
+> Throughout, $\F$ stands for either $\R$ or $\C$; elements of $\F$ are called *scalars*.
 
 ^ladr-1-6
 
@@ -111,7 +112,8 @@ tags: [linear-algebra]
 
 ^ladr-1-9
 
-> [!remark] Notation 1.10: N (p. 6)
+> [!remark] Notation 1.10: n (p. 6)
+> Fix a positive integer $n$ for the rest of the chapter.
 
 ^ladr-1-10
 
@@ -139,7 +141,7 @@ tags: [linear-algebra]
 ^ladr-1-13
 
 > [!remark]- Connections
-> - Commutative: [[§1 Rⁿ and Cⁿ#^ladr-1-14|Commutativity of addition in F]]. Inverses: [[§1 Rⁿ and Cⁿ#^ladr-1-17|Additive inverse in Fⁿ, −x]].
+> - Commutative: [[§1 Rⁿ and Cⁿ#^ladr-1-14|Commutativity of addition in Fⁿ]]. Inverses: [[§1 Rⁿ and Cⁿ#^ladr-1-17|Additive inverse in Fⁿ, −x]].
 > - In ℝ² and ℝ³: [[§81 Vectors#^thm-81-4|Calc Thm. §81.4]] (with worked examples).
 > - In ℝⁿ: [[§3 Vector Equations#^def-3-2|235 Def. §3.2]] (entrywise sum, with examples).
 
@@ -161,6 +163,7 @@ tags: [linear-algebra]
 > - In ℝⁿ: property (i) of [[§3 Vector Equations#^thm-3-2|235 Thm. §3.2]], which lists all the vector-space laws of ℝⁿ.
 
 > [!remark] Notation 1.15: 0 (p. 6)
+> $0$ also denotes the list of length $n$ whose coordinates are all $0$: $0=(0,\dots,0)$.
 
 ^ladr-1-15
 

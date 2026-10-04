@@ -85,9 +85,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 > [!remark]- Connections
 > - The general form for compact groups acting on compact Hausdorff spaces: [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]], of which this is a special case ([[§12 Group Actions and Orbit Spaces#^rem-12-9|§12, Remark]]).
 
-**Transcription note.** Page 7 of the handwritten notes writes the map in this argument as $S^1 \times S^{2n+1} \to S^{2n+2} \times S^{2n+2}$; the target is $S^{2n+1} \times S^{2n+1}$, where the graph of the relation lives.
-
-**Transcription note.** On the board (and in the handwritten notes) the target of $\Phi$ was written with superscripts $2n+2$; the target must be $S^{2n+1} \times S^{2n+1}$ — pairs of points of the sphere being quotiented — as recorded here.
+**Transcription note.** On the board, and on page 7 of the handwritten notes, the map in this argument was written $S^1 \times S^{2n+1} \to S^{2n+2} \times S^{2n+2}$, with superscripts $2n+2$ on the target; the target must be $S^{2n+1} \times S^{2n+1}$ — pairs of points of the sphere being quotiented, where the graph of the relation lives — as recorded here.
 
 > [!proof]+ A direct proof that $\mathbb{CP}^n$ is Hausdorff (Assignment 2)
 > This bypasses the Hausdorff criterion and exhibits the separating sets. Let $u \neq v$ in $S^{2n+1}/S^1$, with representatives $\vec u, \vec v \in S^{2n+1}$. Their orbits $S^1 \vec u$ and $S^1 \vec v$ are disjoint (distinct orbits), and compact, being images of the compact $S^1$ under $\mu \mapsto \mu\vec u$, $\mu \mapsto \mu \vec v$.

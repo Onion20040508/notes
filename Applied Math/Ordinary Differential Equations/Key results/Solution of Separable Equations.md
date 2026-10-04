@@ -13,6 +13,10 @@ tags: [ordinary-differential-equations, hub]
 ## Its proof uses
 - [[§5 Separable Differential Equations#^def-5-1|Definition §5.1: Separable Equation]]
 
+## Its proof uses (other subjects)
+- [[§29 The Mean Value Theorem#^cor-29-4|Corollary §29.4: Vanishing Derivative Means Constant]] (Single Variable Analysis)
+- [[§34 Fundamental Theorem of Calculus#^thm-34-1|Theorem §34.1: Fundamental Theorem of Calculus I]] (Single Variable Analysis)
+
 ## Used in (Ordinary Differential Equations)
 - [[§6 Modeling with First-Order Differential Equations#^prop-6-3|Proposition §6.3: Velocity, Maximum Altitude and Escape Velocity]]
 - [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-3|Proposition §8.3: Solution of the Logistic Equation]]

@@ -72,6 +72,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - (f) gives the positivity of $T^*T$ that SVD rests on ([[§26 Singular Value Decomposition#^ladr-7-64|Properties of T∗T]]).
 > - Computational version: [[§49★ Quadratic Forms#^prop-49-5|235 Prop. §49.5]] ((a)⟺(b) for symmetric matrices; the definite case is [[§49★ Quadratic Forms#^thm-49-4|235 Thm. §49.4]]) and [[§52★ Applications to Image Processing and Statistics#^prop-52-1|235 Prop. §52.1]] ($BB^T$ is positive semidefinite, as in (f)).
+> - Positive definite Hessians give strict local minima: [[Second Derivative Test in Several Variables|452 Thm. §14.4]].
 
 > [!theorem] Theorem 7.39: Each positive operator has only one positive square root
 > Every positive operator has a unique positive square root, denoted $\sqrt T$.
@@ -92,6 +93,7 @@ tags: [linear-algebra]
 > - Used in Quantum Field Theory: the positive square roots $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ that boost a Dirac spinor from rest to momentum $p$, and the positive factor in the polar decomposition of $SL(2, \mathbb C)$ — [[§C5.5 Plane-Wave Solutions#^def-c5-5-4|QFT Def. §C5.5.4]], [[§C5.5 Plane-Wave Solutions#^thm-c5-5-7|QFT Theorem §C5.5.7]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-4|QFT Theorem §C5.1.4]].
 
 > [!remark] Notation 7.40: √T (p. 253)
+> For a positive operator $T$, $\sqrt T$ denotes its unique positive square root ([[§24 Positive Operators#^ladr-7-39|7.39]]).
 
 ^ladr-7-40
 

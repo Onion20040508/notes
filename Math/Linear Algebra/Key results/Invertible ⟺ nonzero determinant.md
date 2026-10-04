@@ -10,11 +10,12 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§34 Determinants#^ladr-9-50|Axler 9.50]], in [[§34 Determinants]]
 
-## Proof uses
-- [[§34 Determinants#^ladr-9-49|9.49]], [[§33 Alternating Multilinear Forms#^ladr-9-39|9.39]], [[§10 Invertibility and Isomorphisms#^ladr-3-80|3.80]]
+## Its proof uses
+- [[§34 Determinants#^ladr-9-49|9.49]], [[§33 Alternating Multilinear Forms#^ladr-9-39|9.39]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]]
 
 ## Used in (Linear Algebra)
 - [[§34 Determinants#^ladr-9-51|9.51 Eigenvalues and determinants]]
+- [[§34 Determinants#^ladr-9-56|9.56 Determinant of transpose, dual, or adjoint]]
 
 ## Used in (Measure Theory)
 - [[§18 Differentiation Theory#^thm-18-22|Theorem §18.22: Linear Maps Preserve Null Sets]]

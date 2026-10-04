@@ -72,7 +72,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - (d) is the reversal familiar from $(AB)^t=B^tA^t$ ([[§9 Matrices#^ladr-3-55|3.55]]) and $(ST)'=T'S'$ ([[§12 Duality#^ladr-3-120|3.120]]).
 
-> [!theorem] Theorem 7.6: Null space and range of T
+> [!theorem] Theorem 7.6: Null space and range of T∗
 > For $T\in\Lin(V,W)$:
 > - (a) $\nullsp T^*=(\range T)^\perp$;
 > - (b) $\range T^*=(\nullsp T)^\perp$;
@@ -115,7 +115,7 @@ tags: [linear-algebra]
 
 ^ladr-7-8
 
-> [!theorem] Theorem 7.9: Matrix of T
+> [!theorem] Theorem 7.9: Matrix of T∗
 > If $e_1,\dots,e_n$ and $f_1,\dots,f_m$ are **orthonormal** bases of $V$ and $W$, then
 > $$
 > \mathcal{M}\big(T^*,(f),(e)\big)=\mathcal{M}\big(T,(e),(f)\big)^* .
@@ -212,7 +212,7 @@ tags: [linear-algebra]
 ^ladr-7-18
 
 > [!remark]- Connections
-> - Characterized by $\|Tv\|=\|T^*v\|$ (7.20, below [[§22 Self-Adjoint and Normal Operators#^ladr-7-19|7.19]]). Over $\C$: exactly the orthonormally diagonalizable operators ([[Complex spectral theorem|7.31]]). Unitary operators are normal.
+> - Characterized by $\|Tv\|=\|T^*v\|$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]]). Over $\C$: exactly the orthonormally diagonalizable operators ([[Complex spectral theorem|7.31]]). Unitary operators are normal.
 
 > [!example] Example 7.19: An operator that is normal but not self-adjoint (p. 235)
 > $\mathcal{M}(T)=\begin{pmatrix}2&-3\\3&2\end{pmatrix}$, i.e. $T(w,z)=(2w-3z,\ 3w+2z)$. Not self-adjoint ($3\ne\overline{-3}$), but
@@ -224,13 +224,15 @@ tags: [linear-algebra]
 ^ladr-7-19
 
 %% ex:7.19-normal %%
-> [!theorem] Theorem 7.20: T is normal if and only if Tv and T*v have the same norm
+> [!theorem] Theorem 7.20: T is normal if and only if Tv and T∗v have the same norm
 > $T\in\Lin(V)$ is normal $\iff\|Tv\|=\|T^*v\|$ for every $v\in V$.
->
-> > [!proof]+
-> > $T^*T-TT^*$ is self-adjoint, so by [[§22 Self-Adjoint and Normal Operators#^ladr-7-16|7.16]] it is $0$ iff $\langle(T^*T-TT^*)v,v\rangle=0$ for all $v$, i.e. iff $\langle Tv,Tv\rangle=\langle T^*v,T^*v\rangle$ for all $v$.
 
 ^ladr-7-20
+
+> [!proof]+ Proof
+> $T^*T-TT^*$ is self-adjoint, so by [[§22 Self-Adjoint and Normal Operators#^ladr-7-16|7.16]] it is $0$ iff $\langle(T^*T-TT^*)v,v\rangle=0$ for all $v$, i.e. iff $\langle Tv,Tv\rangle=\langle T^*v,T^*v\rangle$ for all $v$.
+
+*Uses:* [[§22 Self-Adjoint and Normal Operators#^ladr-7-16|7.16]]
 
 > [!theorem] Theorem 7.21: Range, null space, and eigenvectors of a normal operator
 > If $T\in\Lin(V)$ is normal, then
@@ -246,11 +248,11 @@ tags: [linear-algebra]
 > For $T=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, $\nullsp T=\range T=\Span(e_1)$.
 
 > [!proof]+ Proof
-> Write 7.20 for "$T$ normal $\iff\|Tv\|=\|T^*v\|$ for all $v$" (box after [[§22 Self-Adjoint and Normal Operators#^ladr-7-19|7.19]]).
+> Write 7.20 for "$T$ normal $\iff\|Tv\|=\|T^*v\|$ for all $v$" ([[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]]).
 >
 > (a) $Tv=0\iff\|Tv\|=0\iff\|T^*v\|=0$. (b) $\range T=(\nullsp T^*)^\perp=(\nullsp T)^\perp=\range T^*$ by [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]]. (c) $V=\nullsp T\oplus(\nullsp T)^\perp=\nullsp T\oplus\range T^*=\nullsp T\oplus\range T$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]]). (d) Expanding, $(T-\lambda I)(T-\lambda I)^*=TT^*-\bar\lambda T-\lambda T^*+|\lambda|^2I$, symmetric under $TT^*\leftrightarrow T^*T$. (e) By (d) and 7.20, $\|(T-\lambda I)v\|=\|(T^*-\bar\lambda I)v\|$.
 
-*Uses:* [[§22 Self-Adjoint and Normal Operators#^ladr-7-19|7.19]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]]
+*Uses:* [[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]]
 
 > [!theorem] Theorem 7.22: Orthogonal eigenvectors for normal operators
 > For normal $T$, eigenvectors for distinct eigenvalues are orthogonal.

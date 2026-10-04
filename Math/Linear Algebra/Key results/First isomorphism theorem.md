@@ -10,7 +10,7 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§11 Products and Quotients of Vector Spaces#^ladr-3-107|Axler 3.107]], in [[§11 Products and Quotients of Vector Spaces]]
 
-## Proof uses
+## Its proof uses
 - [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|3.101]]
 
 ## Connections

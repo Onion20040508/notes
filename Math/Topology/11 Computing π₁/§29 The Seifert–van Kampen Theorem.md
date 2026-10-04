@@ -106,7 +106,7 @@ tags: [topology, math590]
 
 ^pf-29-1
 
-*Uses:* [[§27 The Fundamental Group of Sⁿ#^thm-27-1|§27.1]], [[Lebesgue Number Lemma|§16.3]], [[First Isomorphism Theorem for Groups|493 §38.1]]
+*Uses:* [[§27 The Fundamental Group of Sⁿ#^thm-27-1|§27.1]], [[Lebesgue Number Lemma|§16.3]], [[First Isomorphism Theorem for Groups|493 §41.1]]
 
 > [!remark] Remark: How to Find $N$: The Recipe
 > Given $X = A \cup B$ with [[Seifert–van Kampen Theorem|van Kampen]] hypotheses, finding $N$ is a three-step process:

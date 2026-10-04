@@ -9,6 +9,8 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: bundles — All the tangent spaces of $M$, assembled into a single manifold that fibres over $M$.*
 
+*References: Lee Ch. 3, Ch. 8, Ch. 10 and Ch. 11. Lectures 12–13.*
+
 *Lecture 12. “Again, these constructions, especially the cotangent [bundle], are basic parts of the basic theory.” The tangent bundle was introduced as a set, with its projection and zero section; its topology, smooth structure and charts come next lecture.*
 
 > [!definition] Definition §35.1: The Tangent Bundle as a Set

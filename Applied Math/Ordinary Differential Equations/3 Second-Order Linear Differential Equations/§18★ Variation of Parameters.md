@@ -10,7 +10,7 @@ tags: [ordinary-differential-equations, math331, extension]
 ← [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients]] · ↑ [[· 3 Second-Order Linear Differential Equations]] · [[§19 Mechanical and Electrical Vibrations]] →
 
 *Boyce–DiPrima, Section 3.6 · MATH 331 Written HW 4.*
-★ *Beyond MATH 331: the course skipped this section; it is included from Boyce–DiPrima as part of the chapter.*
+★ *Beyond MATH 331: the course skipped this section; it is included from Boyce–DiPrima as part of the chapter. Example §18.2 re-solves a Written HW 4 problem that was set for undetermined coefficients.*
 
 Variation of parameters is the second way, after undetermined coefficients, to find a particular solution of $y'' + p(t)y' + q(t)y = g(t)$. Its idea, due to Lagrange, is to replace the constants $c_1, c_2$ in the homogeneous solution $c_1 y_1 + c_2 y_2$ by functions $u_1(t), u_2(t)$ and to impose one extra condition that turns the problem into two linear *algebraic* equations for $u_1'$ and $u_2'$. Unlike undetermined coefficients, it works for any continuous forcing $g$ and for variable coefficients, once a fundamental set $y_1, y_2$ is known. The price is a pair of integrals, which may be hard to evaluate; in exchange the particular solution comes as an explicit integral formula in $g$, the starting point for the convolution and impulse-response picture of Chapter 6.
 

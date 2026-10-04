@@ -73,9 +73,9 @@ tags: [linear-algebra]
 ^ladr-7-69
 
 > [!proof]+ Proof
-> $S$ isometry $\iff S^*S=I$ ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]]) $\iff$ all eigenvalues of the self-adjoint $S^*S$ are $1$ (spectral theorem) $\iff$ all singular values are $1$.
+> $S$ isometry $\iff S^*S=I$ ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]]) $\iff$ all eigenvalues of the self-adjoint $S^*S$ are $1$ (spectral theorem, [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]: $S^*S$ is diagonal in an orthonormal basis) $\iff$ all singular values are $1$.
 
-*Uses:* [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]]
+*Uses:* [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]], [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]
 
 > [!theorem] Theorem 7.70: Singular value decomposition
 > Let $T\in\Lin(V,W)$ with positive singular values $s_1\ge\dots\ge s_m$. There are orthonormal lists $e_1,\dots,e_m$ in $V$ and $f_1,\dots,f_m$ in $W$ with

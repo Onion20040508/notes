@@ -109,7 +109,8 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Used to show eigenspace and generalized-eigenspace decompositions fill $V$: [[§17 Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]], [[Generalized eigenspace decomposition]].
 
-> [!remark] Notation 3.95: V + U (p. 98)
+> [!remark] Notation 3.95: v + U (p. 98)
+> For $v\in V$ and a subset $U\subseteq V$, $v+U$ is the subset $\{v+u : u\in U\}$ of $V$.
 
 ^ladr-3-95
 
@@ -182,6 +183,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The key to well-definedness in [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]] and to $\nullsp\pi=U$ in [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
 > - Group version: the cosets of a subgroup partition the group, [[§28 Left and Right Cosets#^prop-28-2|493 Prop. §28.2]] (hub [[Cosets Partition a Group]]).
+> - Measure-theory use: the translates $x+\mathbb Q$ of the $\mathbb Q$-subspace $\mathbb Q\subseteq\R$ partition $\R$, and the Vitali set picks one point from each, [[§11 Borel Sets and Measure Spaces#^def-11-12|551 Def. §11.12]] ([[The Vitali Set is Not Measurable]]).
 
 > [!definition] Definition 3.102: Addition and scalar multiplication on V∕U
 > For a subspace $U$ of $V$, define on $V/U$:
@@ -250,7 +252,8 @@ tags: [linear-algebra]
 > - Counting analogue: for V over a finite field, |V/U| = |V|/|U| is Lagrange's theorem for (V, +), [[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]], and taking logarithms gives this formula.
 > - Without counting dimensions: [[§1 Linear Spaces#^thm-1-11|556 Thm. §1.11]] gives X ≅ X∕Y ⊕ Y for every linear space, via a complement.
 
-> [!remark] Notation 3.106: ̃T (p. 102)
+> [!remark] Notation 3.106: $\tilde T$ (p. 102)
+> For $T\in\Lin(V,W)$, $\tilde T:V/(\nullsp T)\to W$ is the map defined by $\tilde T(v+\nullsp T)=Tv$.
 
 ^ladr-3-106
 

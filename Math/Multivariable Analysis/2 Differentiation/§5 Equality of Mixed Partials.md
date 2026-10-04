@@ -15,7 +15,7 @@ tags: [multivariable-analysis, math452]
 > [!proof]+ Proof
 > Let $(x_0, y_0) \in R$. Since $R$ is [[§2 Open and Closed Sets#^def-2-4|open]], there exists $r > 0$ such that $B((x_0, y_0), r) \subseteq R$.
 >
-> **Motivation for $I(h,k)$:** By [[§4 Partial Derivatives#^def-4-1|definition of partial derivatives]],
+> **Motivation for $I(h,k)$:** (In this proof $f_{xy}$ means $\partial_x(\partial_y f)$ and $f_{yx}$ means $\partial_y(\partial_x f)$, as in the display below; [[§8 The Differential#^def-8-2|§8]] reads the subscripts in the other order, $f_{xy} = (f_x)_y$. Under the hypotheses of the theorem the two readings agree, which is exactly what is being proved.) By [[§4 Partial Derivatives#^def-4-1|definition of partial derivatives]],
 >
 > $$
 > f_{xy}(x_0, y_0) = \frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)\bigg|_{(x_0,y_0)} = \lim_{h \to 0} \frac{f_y(x_0 + h, y_0) - f_y(x_0, y_0)}{h}.

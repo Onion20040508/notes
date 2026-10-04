@@ -7,7 +7,7 @@ tags: [chapter, linear-algebra]
 # 9 Multilinear Algebra and Determinants
 ↑ [[Linear Algebra]]
 
-**Builds on:** [[· 1 Vector Spaces|1 Vector Spaces]] (1 citations), [[· 2 Finite-Dimensional Vector Spaces|2 Finite-Dimensional Vector Spaces]] (4 citations), [[· 3 Linear Maps|3 Linear Maps]] (14 citations), [[· 5 Eigenvalues and Eigenvectors|5 Eigenvalues and Eigenvectors]] (3 citations), [[· 7 Operators on Inner Product Spaces|7 Operators on Inner Product Spaces]] (13 citations), [[· 8 Operators on Complex Vector Spaces|8 Operators on Complex Vector Spaces]] (6 citations)
+**Builds on:** [[· 1 Vector Spaces|1 Vector Spaces]] (1 citation), [[· 2 Finite-Dimensional Vector Spaces|2 Finite-Dimensional Vector Spaces]] (4 citations), [[· 3 Linear Maps|3 Linear Maps]] (14 citations), [[· 5 Eigenvalues and Eigenvectors|5 Eigenvalues and Eigenvectors]] (3 citations), [[· 7 Operators on Inner Product Spaces|7 Operators on Inner Product Spaces]] (13 citations), [[· 8 Operators on Complex Vector Spaces|8 Operators on Complex Vector Spaces]] (6 citations)
 **Used by:** no later chapter.
 
 ## Sections

@@ -71,6 +71,7 @@ tags: [linear-algebra]
 ^ladr-1-23
 
 > [!remark] Notation 1.24: F^S (p. 13)
+> For a set $S$, $\F^S$ is the set of functions from $S$ to $\F$, with $(f+g)(x)=f(x)+g(x)$ and $(\lambda f)(x)=\lambda f(x)$ for $f,g\in\F^S$, $\lambda\in\F$, $x\in S$.
 
 ^ladr-1-24
 
@@ -121,10 +122,12 @@ tags: [linear-algebra]
 > - Computational version: [[§23 Vector Spaces and Subspaces#^prop-23-1|235 Prop. §23.1]] (uniqueness of the negative −u).
 
 > [!remark] Notation 1.28: −v, w − v (p. 15)
+> For $v,w\in V$, $-v$ is the additive inverse of $v$ (unique by [[§2 Definition of Vector Space#^ladr-1-27|1.27]]), and $w-v$ means $w+(-v)$.
 
 ^ladr-1-28
 
 > [!remark] Notation 1.29: V (p. 15)
+> From now on $V$ denotes a vector space over $\F$.
 
 ^ladr-1-29
 

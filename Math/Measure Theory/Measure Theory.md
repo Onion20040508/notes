@@ -11,7 +11,7 @@ tags: [subject, measure-theory]
 ---
 # Measure Theory
 
-MATH 551, *Introduction to Real Analysis* (Winter 2026, Sijue Wu), following Axler, *Measure, Integration & Real Analysis* (chapters 1–5); references Royden–Fitzpatrick, Tao *An Introduction to Measure Theory*, Stein–Shakarchi *Real Analysis*. Section numbers §1–§19 are the notes' own. LaTeX source: `tex/math551_notes.tex`.
+MATH 551, *Introduction to Real Analysis* (Winter 2026, Sijue Wu), with Axler, *Measure, Integration & Real Analysis* as the main text: the Riemann-integral motivation, measure, integration and product measures (§8–§17) correspond to Axler's Chapters 1–3 and 5, and the Lᵖ spaces (§19) to his Chapter 7. The countability prerequisites (§1–§4) are not from Axler, and the differentiation theory of §18 (Vitali covering theorem, Dini derivatives, bounded variation and the Jordan decomposition, absolute continuity) follows the route of Royden–Fitzpatrick, Ch. 6, rather than Axler's Chapter 4 (Hardy–Littlewood maximal function). Further references: Royden–Fitzpatrick, Tao *An Introduction to Measure Theory*, Stein–Shakarchi *Real Analysis*. Section numbers §1–§19 are the notes' own. LaTeX source: `tex/math551_notes.tex`.
 
 ## How the chapters build on each other
 Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved. Dashed arrows from other subjects: citations of their results, labelled with the number (only arrows with 2 or more citations are drawn).

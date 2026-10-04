@@ -11,7 +11,7 @@ tags: [multivariable-analysis, hub]
 - [[§23 The Generalized Stokes' Theorem#^thm-23-1|Theorem §23.1: Generalized Stokes' Theorem]], in [[§23 The Generalized Stokes' Theorem]]
 
 ## Its proof uses
-- (no proof in the notes)
+- (no proof in the notes: §23 checks the four classical cases and states the general theorem; a proof is in Lee, *Introduction to Smooth Manifolds*, Ch. 16, the textbook of [[Differentiable Manifolds]], and nowhere else in the vault yet)
 
 ## Used in (Multivariable Analysis)
 - (not cited later in the course)

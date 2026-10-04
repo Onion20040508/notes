@@ -25,3 +25,5 @@ tags: [applied-linear-algebra, hub]
 
 ## Connections
 - See [[§26 Coordinate Systems]] for context and examples.
+- Rigorous treatment: isomorphisms [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]], and [[Dimension shows whether vector spaces are isomorphic]] ([[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]): finite-dimensional spaces are isomorphic exactly when they have the same dimension, the fact behind Lay's question at the end of 4.4 (answered in [[§27 The Dimension of a Vector Space#^thm-27-2|Theorem §27.2]]).
+- One-to-one and onto, and an invertible function is a bijection: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]].

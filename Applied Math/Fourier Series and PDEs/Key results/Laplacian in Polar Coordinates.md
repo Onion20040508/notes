@@ -11,7 +11,11 @@ tags: [fourier-series-and-pdes, hub]
 - [[§35 Potential Equation#^thm-35-3|Theorem §35.3: The Laplacian in Polar and Cylindrical Coordinates]], in [[§35 Potential Equation]]
 
 ## Its proof uses
-- (only definitions)
+- (none in this subject)
+
+## Its proof uses (other subjects)
+- [[§5 Equality of Mixed Partials#^thm-5-1|Theorem §5.1: Schwarz–Clairaut]] (Multivariable Analysis)
+- [[§10 Composition of Functions and the Chain Rule#^thm-10-2|Theorem §10.2: Multivariable Chain Rule]] (Multivariable Analysis)
 
 ## Used in (Fourier Series and PDEs)
 - [[§39 Potential in a Disk#^thm-39-4|Theorem §39.4: Mean Value Property]]

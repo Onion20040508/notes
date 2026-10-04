@@ -148,7 +148,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > [!proof]+ Proof
 > *Well defined and bijective.* $\overline{F}$ is well defined because $a \sim b$ means $F(a) = F(b)$, and injective because $F(a) = F(b)$ means $a \sim b$, i.e. $[a] = [b]$; it is surjective because $F$ is. The factorization $F = \overline{F} \circ \pi$ holds by construction.
 >
-> *Continuity of $\overline{F}$.* $\overline{F} \circ \pi = F$ is continuous, so $\overline{F}$ is continuous by the universal property of the quotient (Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]]).
+> *Continuity of $\overline{F}$.* $\overline{F} \circ \pi = F$ is continuous, so $\overline{F}$ is continuous by the universal property of the quotient (Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]]).
 >
 > *Continuity of $\overline{F}^{-1}$.* Let $W \subseteq X/{\sim}$ be open; we show $\overline{F}(W)$ is open in $Y$, which is exactly continuity of $\overline{F}^{-1}$. Since $F$ is a quotient map it suffices to show $F^{-1}(\overline{F}(W))$ is open in $X$. But
 >

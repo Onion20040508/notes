@@ -18,7 +18,7 @@ tags: [multivariable-analysis, hub]
 - [[§19 Inner Products and Norms#^ladr-6-1|LADR 6.1 Dot product]]
 
 ## Used in (Multivariable Analysis)
-- (not cited later in the course)
+- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|Theorem §17.1: Divergence Theorem in ℝⁿ]] (cited on credit, ahead of §18, for the area element of a graph)
 
 ## Connections
 - **Proof.** In ℝ³, det G = |X_u × X_v|² by direct expansion (Lagrange's identity). The entries of G are [[§19 Inner Products and Norms#^ladr-6-1|dot products]] (LADR 6.1) of the tangent vectors.

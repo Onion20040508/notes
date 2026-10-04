@@ -14,6 +14,10 @@ tags: [ordinary-differential-equations, hub]
 - [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-1|Definition §4.1: First-Order Linear Equation]]
 - [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|Definition §4.2: Integrating Factor]]
 
+## Its proof uses (other subjects)
+- [[§29 The Mean Value Theorem#^cor-29-5|Corollary §29.5: Equal Derivatives Differ by a Constant]] (Single Variable Analysis)
+- [[§34 Fundamental Theorem of Calculus#^thm-34-4|Theorem §34.4: Fundamental Theorem of Calculus II]] (Single Variable Analysis)
+
 ## Used in (Ordinary Differential Equations)
 - [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1: Existence and Uniqueness for First-Order Linear Equations]]
 - [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-1|Proposition §8.1: Solution of the Exponential Growth Model]]

@@ -14,7 +14,7 @@ tags: [multivariable-analysis, math452]
 
 Let $\gamma$ be a smooth curve in $\mathbb{R}^2$ parametrized by $x = x(t)$, $y = y(t)$ for $t \in [a, b]$.
 
-## The Scalar Line Integral (Type I)
+### The Scalar Line Integral (Type I)
 
 > [!definition] Definition §16.1: Scalar Line Integral
 > Let $f: \mathbb{R}^2 \to \mathbb{R}$ be continuous and let $\gamma$ be a piecewise smooth curve. The **scalar line integral** of $f$ along $\gamma$ is:
@@ -58,7 +58,7 @@ $$
 
 **Physical interpretation:** If $f$ represents a density (mass per unit length), then $\int_\gamma f \, ds$ gives the total mass of a wire shaped like $\gamma$.
 
-## The Work Line Integral (Type II)
+### The Work Line Integral (Type II)
 
 > [!definition] Definition §16.2: Work Line Integral
 > Let $\mathbf{F} = (f(x,y), g(x,y))$ be a continuous vector field. The **work done by $\mathbf{F}$** along $\gamma$ is:
@@ -111,7 +111,7 @@ $$
 
 For this and the [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities|next section]], we study the relationship between line integrals and double integrals.
 
-## Setup and Orientation Convention
+### Setup and Orientation Convention
 
 Let $\gamma$ be a closed curve in $\mathbb{R}^2$ enclosing a bounded domain $D$. The **positive orientation** of $\gamma$ is defined so that $D$ lies on the left side of $\gamma$ as you traverse it. Equivalently, $\gamma$ is traversed **counterclockwise**.
 
@@ -120,7 +120,7 @@ Let $\gamma$ be a closed curve in $\mathbb{R}^2$ enclosing a bounded domain $D$.
 
 Suppose $(f(x,y), g(x,y))$ is a vector field (force field) in the plane. We want to relate $\oint_\gamma f \, dx + g \, dy$ to a double integral over $D$.
 
-## Assumption on the Domain
+### Assumption on the Domain
 
 For convenience, assume $D$ can be represented simultaneously as:
 - **[[§15 Multivariable Integration#^def-15-12|Type I]]** (upper and lower graphs in $x$): $D = \{(x,y) : a \leq x \leq b, \; \phi(x) \leq y \leq \psi(x)\}$
@@ -131,7 +131,7 @@ If $D$ cannot be represented this way (e.g., if $D$ is not convex), we subdivide
 ![[m452-16-3.svg]]
 *Why the integral theorems glue: apply the theorem to each cell with its own counterclockwise boundary. The shared internal edge is traversed in opposite directions by the two cells, so its two line-integral contributions cancel exactly, leaving only the outer boundary. This is how the proof extends from simple (Type I and II) pieces to arbitrary decomposable regions — and, in [[§23 The Generalized Stokes' Theorem|§23]], how Stokes' theorem passes from one parameter patch to a whole manifold.*
 
-## Derivation: The $\oint f \, dx$ Term
+### Derivation: The $\oint f \, dx$ Term
 
 Consider $\oint_\gamma f \, dx$ using the Type I representation. The boundary $\gamma$ consists of two pieces:
 - $\gamma_1$: the lower curve $y = \phi(x)$, traversed from $x = a$ to $x = b$ (left to right).
@@ -166,7 +166,7 @@ $$
 \oint_\gamma f \, dx = -\int_a^b \int_{\phi(x)}^{\psi(x)} f_y(x, y) \, dy \, dx = -\iint_D f_y \, dy \, dx.
 $$
 
-## Derivation: The $\oint g \, dy$ Term
+### Derivation: The $\oint g \, dy$ Term
 
 Similarly, consider $\oint_\gamma g \, dy$ using the Type II representation. The boundary consists of:
 - $\gamma_3$: the left curve $x = \alpha(y)$, traversed from $y = d$ to $y = c$ (top to bottom).
@@ -186,7 +186,7 @@ $$
 
 (Iterated = double integral: Fubini, [[§15 Multivariable Integration#^thm-15-9|§15.9]] and [[§15 Multivariable Integration#^thm-15-10|§15.10]].)
 
-## Combining the Two Terms
+### Combining the Two Terms
 
 Adding the results:
 
@@ -257,7 +257,7 @@ which indeed points radially outward. Equivalently, the rotation $(x, y) \mapsto
 
 We now derive the 2D Divergence Theorem by rewriting [[Green's Theorem|Green's theorem]] in terms of the outward normal.
 
-## Rewriting the Line Integral as a Flux Integral
+### Rewriting the Line Integral as a Flux Integral
 
 Parametrize $\gamma$ with $(x(t), y(t))$. The Type II line integral is:
 
@@ -279,7 +279,7 @@ $$
 
 This rewrites a work integral as a **flux integral** of the rotated field $(g, -f)$.
 
-## Deriving the Divergence Theorem
+### Deriving the Divergence Theorem
 
 By [[Green's Theorem|Green's theorem]]:
 

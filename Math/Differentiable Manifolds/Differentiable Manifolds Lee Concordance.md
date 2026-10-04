@@ -53,9 +53,12 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§2 Topological Manifolds\|§2]] Topological manifolds | Chapter 1, *Topological Manifolds*; Problems 1-1 and 1-2 |
 | [[§3 Subspaces and Products\|§3]]–[[§6 Open Quotients\|§6]] Subspaces, products, quotients | Appendix A, *Subspaces, Products, Disjoint Unions, and Quotients*; Problem 1-9 |
 | [[§7 The Regular Value Theorem\|§7]] Regular value theorem | Appendix C (Theorem C.40); Example 1.32; Corollary 5.14 |
-| [[§10 Topological Groups and Classical Matrix Groups\|§10]]–[[§11 The Classical Groups Are Topological Manifolds\|§11]] Topological and matrix groups | Chapter 7, Examples 7.27–7.30; Propositions 21.34 and 21.35; Problem 7-4 |
+| [[§8 Spheres\|§8]] Spheres | Example 1.4 |
+| [[§9 Complex Projective Space\|§9]] Complex projective space | Problem 1-9; Example 1.5 for $\mathbb{RP}^n$ |
+| [[§10 Topological Groups and Classical Matrix Groups\|§10]]–[[§11 The Classical Groups Are Topological Manifolds\|§11]] Topological and matrix groups | Chapter 7, Examples 7.27–7.30; Problem 7-4 |
 | [[§12 Group Actions and Orbit Spaces\|§12]] Actions and orbit spaces | Chapter 7, *Group Actions and Equivariant Maps*; Lemma 21.1, Proposition 21.4 |
 | [[§13 Homogeneous Spaces\|§13]]–[[§14 The Topology of G∕H and Real Grassmannians\|§14]] Homogeneous spaces | Theorems 21.17–21.20; Examples 1.36 and 21.21 |
+| [[§15 The Classical Groups\|§15]] The classical groups as examples | Propositions 21.34 and 21.35 |
 | [[§16 Differentiable Structures\|§16]]–[[§18 Smooth Functions and Smooth Maps\|§18]] Differentiable structures | Chapter 1, *Smooth Structures*, Examples 1.22–1.34; Chapter 2 |
 | [[§19 Manifolds in Euclidean Space\|§19]] Manifolds in Euclidean space | Example 1.32; Chapter 5 |
 | [[§20 Linear Algebra Toolkit\|§20]]–[[§22 The Orthogonal and Unitary Groups as Smooth Manifolds\|§22]] Vector spaces and matrix groups | Appendix B; Chapter 11 (dual spaces); Example 1.24; Examples 7.27 and 7.29 |
@@ -68,6 +71,7 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§35 The Tangent Bundle\|§35]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18); Proposition 11.9 (cotangent bundle); Chapter 8 (vector fields); Chapter 10 (sections) |
 | [[§36 Immersions\|§36]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
 | [[§37 Embeddings\|§37]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
+| [[§38 Projective Spaces and the Hopf Fibration\|§38]] Projective spaces and the Hopf fibration | Problem 4-5(a); the Hopf map of Chapter 21; Example 10.18 and Proposition 10.19 (local sections and frames) |
 | [[§39 SU(2) → SO(3)꞉ The Double Cover\|§39]] The double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
 
 ## A.4 Index from Lee to these notes

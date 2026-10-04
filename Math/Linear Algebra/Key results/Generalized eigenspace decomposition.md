@@ -10,7 +10,7 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§29 Generalized Eigenspace Decomposition#^ladr-8-22|Axler 8.22]], in [[§29 Generalized Eigenspace Decomposition]]
 
-## Proof uses
+## Its proof uses
 - [[§29 Generalized Eigenspace Decomposition#^ladr-8-20|8.20]], [[§14 Invariant Subspaces#^ladr-5-18|5.18]], [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-12|8.12]], [[Condition for a direct sum|1.45]], [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-9|8.9]]
 
 ## Used in (Linear Algebra)

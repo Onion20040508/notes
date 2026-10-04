@@ -256,7 +256,7 @@ $$
 *Uses:* [[§23 Tangent Spaces I꞉ The Geometric Picture#^def-23-1|Def. §23.1]], [[§25 Tangent Spaces II꞉ Germs#^def-25-1|Def. §25.1]], [[§25 Tangent Spaces II꞉ Germs#^prop-25-1|§25.1]], [[§25 Tangent Spaces II꞉ Germs#^prop-25-2|§25.2]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]]
 
 > [!remark]- Connections
-> - Proved in detail in [[§27 Coordinate Derivations and the Basis Theorem#^cor-27-7|Consequences, §27.7]], once the basis theorem gives $\dim T_pM = n$.
+> - The same argument, with both dimension counts cited ([[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]] for $T^{\mathrm{geo}}_pM$, the basis theorem for $T_pM$), is recorded as [[§27 Coordinate Derivations and the Basis Theorem#^cor-27-7|Consequences, §27.7]].
 > - The same identification read through velocities of curves: [[§29 Tangent Vectors as Velocities of Curves#^rem-29-1|The Two Faces Reconciled]].
 
 > [!theorem] Corollary §27.7: Consequences

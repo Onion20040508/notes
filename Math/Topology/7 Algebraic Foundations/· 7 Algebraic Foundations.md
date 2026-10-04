@@ -9,7 +9,7 @@ tags: [chapter, topology]
 
 **Builds on:** —
 **Used by:** [[· 8 Homotopy and the Fundamental Group|8 Homotopy and the Fundamental Group]] (7), [[· 9 Covering Spaces and Lifting|9 Covering Spaces and Lifting]] (1), [[· 10 Applications of π₁|10 Applications of π₁]] (3), [[· 11 Computing π₁|11 Computing π₁]] (7)
-**Builds on (other subjects):** [[Linear Algebra]] (1)
+**Builds on (other subjects):** [[Group Theory]] (1)
 
 ## Sections
 - [[§21 Algebra Prerequisites꞉ Groups]]

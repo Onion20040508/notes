@@ -14,7 +14,6 @@ tags: [differentiable-manifolds, hub]
 - [[§31 Local Diffeomorphisms#^thm-31-1|Theorem §31.1: Inverse Function Theorem]]
 
 ## Its proof uses (other subjects)
-- [[Implicit Function Theorem]] (Multivariable Analysis)
 - [[Inverse Function Theorem (several variables)]] (Multivariable Analysis)
 
 ## Used in (Differentiable Manifolds)

@@ -20,6 +20,7 @@ tags: [topology, hub]
 - [[§24 Covering Spaces#^thm-24-9|Theorem §24.9: Properties of the Lifting Correspondence]]
 
 ## Used in (Topology)
+- [[§23 The Fundamental Group#^cor-23-8|Corollary §23.8: Fundamental Group of the Torus]]
 - [[§24 Covering Spaces#^thm-24-11|Theorem §24.11: The Generator of π₁(S¹)]]
 - [[§24 Covering Spaces#^lem-24-12|Lemma §24.12: Equivalent Conditions for Nullhomotopy]]
 - [[§25 The Fundamental Theorem of Algebra#^thm-25-1|Theorem §25.1: Fundamental Theorem of Algebra]]

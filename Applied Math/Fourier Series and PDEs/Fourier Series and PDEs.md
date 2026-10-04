@@ -10,7 +10,7 @@ tags: [subject, fourier-series-and-pdes]
 ---
 # Fourier Series and PDEs
 
-Fourier series and the classical partial differential equations — the heat equation, the wave equation and the potential (Laplace) equation, solved by separation of variables, eigenfunction expansions, Fourier integrals and transforms — following David L. Powers, *Boundary Value Problems and Partial Differential Equations*, 5th edition (Elsevier Academic Press, 2006), section by section through all of Chapters 0–7 (each note's alias gives the Powers section, e.g. "Powers 2.3"). The course, MAT 341 at Stony Brook (Qi Yao, Fall 2024), used the 6th edition and covered 1.1–1.5, 1.9, 2.1–2.10, 3.1–3.4, 4.1–4.5 and 5.2–5.3; everything else is included because it underlies the physics subjects, and is marked ★ (whole chapters 0, 6 and 7 among it).
+Fourier series and the classical partial differential equations — the heat equation, the wave equation and the potential (Laplace) equation, solved by separation of variables, eigenfunction expansions, Fourier integrals and transforms — following David L. Powers, *Boundary Value Problems and Partial Differential Equations*, 5th edition (Elsevier Academic Press, 2006), section by section through all of Chapters 0–7 (each note's alias gives the Powers section, e.g. "Powers 2.3"). The course, MAT 341 at Stony Brook (Qi Yao, Fall 2024), used the 6th edition and covered 1.1–1.5, 1.9, 2.1–2.10, 3.1–3.4, 4.1–4.5 and 5.2–5.3, and its lectures also solved the infinite rod, 2.11 (lectures 10.22 and 10.24, HW 9, Midterm 2), which is therefore not starred. Everything else is included because it underlies the physics subjects, and is marked ★ (whole chapters 0, 6 and 7 among it). A starred section can still have been touched on in a lecture (0.1, 1.6, 1.10) or supply course problems as worked examples (1.10, 2.12, 3.6, 6.2); its header records which.
 
 These are computational notes: every definition and result Powers states, every proof he gives (including the proof of pointwise convergence of Fourier series, 1.7), the solution methods, and a lean selection of worked problems, many from the course's lectures, homework and exams. The Hilbert-space view of Fourier series is [[Functional Analysis]]; the convergence tools are in [[Single Variable Analysis]] and [[Measure Theory]]; the ODE background and the Laplace transform are in [[Ordinary Differential Equations]].
 
@@ -117,13 +117,13 @@ graph TD
 - [[Heaviside's Expansion Formula]] (§52.2)
 
 ## Course record (MAT 341, Fall 2024)
-Two lectures a week (handwritten lecture notes, weeks 1–13; week 11 missing), weekly homework (30%), two midterms (20% each: 1.1–1.5, 2.1–2.3; and 2.4–2.10, 1.9, 3.1–3.4), final (30%, cumulative).
+Two lectures a week (handwritten lecture notes, weeks 1–13; week 11 missing), weekly homework (30%), two midterms (20% each: 1.1–1.5, 2.1–2.3; and 2.4–2.10, 1.9, 3.1–3.4, with an infinite-rod problem from 2.11), final (30%, cumulative).
 
 | Weeks | Sections | Notes |
 |---|---|---|
 | 1–3 | 1.1–1.5 Fourier series, 2.1 | §6–§10, §17 |
 | 3–6 | 2.1–2.6 heat equation, 1.9 Fourier integral | §17–§22, §14 |
-| 7–8 | 2.7–2.10 Sturm–Liouville, eigenfunction series, semi-infinite rod | §23–§26 |
+| 7–8 | 2.7–2.10 Sturm–Liouville, eigenfunction series, semi-infinite rod; 2.11 infinite rod | §23–§27 |
 | 9–10 | 3.1–3.4 wave equation, d'Alembert | §29–§32 |
 | 10–13 | 4.1–4.5 potential equation, 5.2–5.3 two-dimensional heat | §35–§39, §42–§43 |
 

@@ -13,6 +13,10 @@ tags: [fourier-series-and-pdes, hub]
 ## Its proof uses
 - [[§39 Potential in a Disk#^thm-39-4|Theorem §39.4: Mean Value Property]]
 
+## Its proof uses (other subjects)
+- [[§96 Maximum and Minimum Values#^thm-96-3|Theorem §96.3: Extreme Value Theorem for Functions of Two Variables]] (Calculus)
+- [[§13 Connected Spaces#^def-13-1|Definition §13.1: Separation and Connected Space]] (Topology)
+
 ## Used in (Fourier Series and PDEs)
 - [[§39 Potential in a Disk#^cor-39-6|Corollary §39.6: Uniqueness for Dirichlet's Problem]]
 

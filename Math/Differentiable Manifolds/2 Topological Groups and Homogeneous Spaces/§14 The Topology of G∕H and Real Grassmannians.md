@@ -58,7 +58,7 @@ Definitions [[§13 Homogeneous Spaces#^def-13-4|§13.4]] and [[§13 Homogeneous 
 ^cor-14-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* $\pi$ is a continuous open surjection by Proposition [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|§14.1]], hence a quotient map by Proposition [[§5 Quotient Maps#^prop-5-5|§5.5]]. (It is also one directly from Definition [[§14 The Topology of G∕H and Real Grassmannians#^def-14-1|§14.1]], which is the defining property.) The second statement is the universal property, Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]].
+> *(Not from lecture; filled in.)* $\pi$ is a continuous open surjection by Proposition [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|§14.1]], hence a quotient map by Proposition [[§5 Quotient Maps#^prop-5-5|§5.5]]. (It is also one directly from Definition [[§14 The Topology of G∕H and Real Grassmannians#^def-14-1|§14.1]], which is the defining property.) The second statement is the universal property, Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]].
 
 ^pf-14-2
 
@@ -90,7 +90,7 @@ Upstairs is the group, downstairs its coset space, and the triangle commutes: $\
 
 > [!proof]+ Proof
 > *(Stated in Lecture 4, with a hypothesis missing — the board said “$G$ compact $\Rightarrow$ $G/H \cong X$”, and $X$ must also be Hausdorff; filled in.)*
-> (1) Bijectivity is Lemma [[§13 Homogeneous Spaces#^lem-13-5|§13.5]]. The composite $\Phi \circ \pi : G \to X$ is the orbit map $g \mapsto g \cdot x_0$, which is continuous: it is $G \to G \times X \to X$, $g \mapsto (g, x_0) \mapsto g \cdot x_0$, a composite of a map continuous by Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]] with the action. By the universal property of the quotient (Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]]), $\Phi$ is continuous.
+> (1) Bijectivity is Lemma [[§13 Homogeneous Spaces#^lem-13-5|§13.5]]. The composite $\Phi \circ \pi : G \to X$ is the orbit map $g \mapsto g \cdot x_0$, which is continuous: it is $G \to G \times X \to X$, $g \mapsto (g, x_0) \mapsto g \cdot x_0$, a composite of a map continuous by Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]] with the action. By the universal property of the quotient (Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]]), $\Phi$ is continuous.
 >
 > (2) By (1), $\Phi$ is a continuous bijection from the compact space $G/H$ onto the Hausdorff space $X$, hence a homeomorphism (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](6)). Spelled out: if $C \subseteq G/H$ is closed, then $C$ is compact by Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5), so $\Phi(C)$ is compact by (2) of that proposition, hence closed in $X$ by (4); so $\Phi$ is a closed map, and the inverse of a closed continuous bijection is continuous, since $(\Phi^{-1})^{-1}(C) = \Phi(C)$ for every $C$.
 >
@@ -195,7 +195,7 @@ The same triangle with $G = \mathbb{R}$. The exponential wraps the line around t
 
 ^pf-14-5
 
-*Uses:* [[§13 Homogeneous Spaces#^prop-13-4|§13.4]], [[§14 The Topology of G∕H and Real Grassmannians#^rem-14-1|Remark after §12.2]], [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]], [[§12 Group Actions and Orbit Spaces#^lem-12-3|§12.3]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]
+*Uses:* [[§13 Homogeneous Spaces#^prop-13-4|§13.4]], [[§14 The Topology of G∕H and Real Grassmannians#^rem-14-1|Remark after §14.2]], [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]], [[§12 Group Actions and Orbit Spaces#^lem-12-3|§12.3]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]
 
 The classical groups through the course: defined in [[§10 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§15 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§11 The Classical Groups Are Topological Manifolds#^thm-11-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§12 Group Actions and Orbit Spaces#^ex-12-4|the rotations of the plane]] and [[§12 Group Actions and Orbit Spaces#^ex-12-5|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§13 Homogeneous Spaces#^ex-13-2|the isotropy of the north pole]] and [[§13 Homogeneous Spaces#^ex-13-3|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|the orthogonal group]] and [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|the unitary group]]; their tangent spaces at the identity in [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5|The Classical Groups]], with [[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-4|the infinitesimal rotations]]; and the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§39 SU(2) → SO(3)꞉ The Double Cover#^thm-39-10|The Double Cover]].
 

@@ -136,7 +136,7 @@ $$
 ^cor-28-4
 
 > [!proof]+ Proof
-> Apply Theorem [[§28 The Differential in Coordinates#^thm-28-2|§28.2]] to $F = \mathrm{id}_M$, with the chart $\tilde\varphi$ on the source and $\varphi$ on the target. Then $F^i = x^i$, the coordinate representation is the transition $\varphi \circ \tilde\varphi^{-1}$, and $(\mathrm{id}_M)_{*p} = \mathrm{id}$ by Proposition [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]].
+> Apply Theorem [[§28 The Differential in Coordinates#^thm-28-2|§28.2]] to $F = \mathrm{id}_M$, with the chart $\tilde\varphi$ on the source and $\varphi$ on the target. Then $F^i = x^i$, the coordinate representation is the transition $\varphi \circ \tilde\varphi^{-1}$, and $(\mathrm{id}_M)_{*p} = \mathrm{id}$ by Theorem [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]].
 
 ^pf-28-4
 

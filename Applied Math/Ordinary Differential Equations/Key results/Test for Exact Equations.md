@@ -13,6 +13,14 @@ tags: [ordinary-differential-equations, hub]
 ## Its proof uses
 - [[§9 Exact Differential Equations and Integrating Factors#^def-9-1|Definition §9.1: Exact Differential Equation]]
 
+## Its proof uses (other subjects)
+- [[§5 Equality of Mixed Partials#^thm-5-1|Theorem §5.1: Schwarz–Clairaut]] (Multivariable Analysis)
+- [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|Theorem §13.3: Bolzano–Weierstrass in ℝⁿ]] (Single Variable Analysis)
+- [[§19 Uniform Continuity#^thm-19-1|Theorem §19.1: Uniform Continuity on Closed Bounded Intervals]] (Single Variable Analysis)
+- [[§29 The Mean Value Theorem#^thm-29-3|Theorem §29.3: Mean Value Theorem]] (Single Variable Analysis)
+- [[§29 The Mean Value Theorem#^cor-29-4|Corollary §29.4: Vanishing Derivative Means Constant]] (Single Variable Analysis)
+- [[§34 Fundamental Theorem of Calculus#^thm-34-4|Theorem §34.4: Fundamental Theorem of Calculus II]] (Single Variable Analysis)
+
 ## Used in (Ordinary Differential Equations)
 - [[§9 Exact Differential Equations and Integrating Factors#^prop-9-3|Proposition §9.3: The Equation for an Integrating Factor]]
 

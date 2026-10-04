@@ -10,11 +10,11 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§15 The Minimal Polynomial#^ladr-5-19|Axler 5.19]], in [[§15 The Minimal Polynomial]]
 
-## Proof uses
+## Its proof uses
 - [[Fundamental theorem of algebra, first version|4.12]], [[§13 Polynomials#^ladr-4-6|4.6]], [[§14 Invariant Subspaces#^ladr-5-17|5.17]]
 
 ## Used in (Linear Algebra)
-- [[§18 Commuting Operators#^ladr-5-76|5.76 Simultaneous diagonalizablity ⟺ commutativity]]
+- [[§15 The Minimal Polynomial#^ladr-5-34|5.34 Operators on odd-dimensional vector spaces have eigenvalues]]
 - [[§18 Commuting Operators#^ladr-5-78|5.78 Common eigenvector for commuting operators]]
 
 ## Connections

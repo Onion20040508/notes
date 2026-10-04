@@ -101,7 +101,7 @@ The inverse $\varphi_J^{-1}$ is a parametrization of that piece of $M$, in the f
 > [!definition] Definition §19.2: Parametrization
 > Let $(U, \varphi)$ be a chart of a manifold $M$. The inverse $\varphi^{-1} : \varphi(U) \to U$ is the **parametrization** of $U$ determined by the chart. When $M \subseteq \mathbb{R}^N$, it is also regarded as a map $\varphi(U) \to \mathbb{R}^N$.
 >
-> *Lee: Ch. 1, Coordinate Charts (“local parametrization)*
+> *Lee: Ch. 1, Coordinate Charts (“local parametrization”)*
 
 ^def-19-2
 

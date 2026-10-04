@@ -28,4 +28,4 @@ Ranked by how many later results depend on them (via Axler's citations).
 - [[Linearly independent eigenvectors|5.11 Linearly independent eigenvectors]]: 46 later results
 - [[§14 Invariant Subspaces#^ladr-5-18|5.18 Null space and range of p(T) are invariant under T]]: 39 later results
 - [[§14 Invariant Subspaces#^ladr-5-12|5.12 Operator cannot have more eigenvalues than dimension of vector space]]: 31 later results
-- [[§15 The Minimal Polynomial#^ladr-5-29|5.29 Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]: 31 later results
+- [[§15 The Minimal Polynomial#^ladr-5-29|5.29 q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]: 31 later results

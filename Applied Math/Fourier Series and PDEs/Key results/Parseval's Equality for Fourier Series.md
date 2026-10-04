@@ -11,7 +11,7 @@ tags: [fourier-series-and-pdes, hub]
 - [[§11★ Mean Error and Convergence in Mean#^thm-11-4|Theorem §11.4: Parseval's Equality]], in [[§11★ Mean Error and Convergence in Mean]]
 
 ## Its proof uses
-- (no proof in the notes)
+- (Powers omits the proof. It is [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]] (Parseval's equality holds for every vector exactly when the orthonormal set is complete) applied to the trigonometric system, which is complete by [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]].)
 
 ## Used in (Fourier Series and PDEs)
 - [[§11★ Mean Error and Convergence in Mean#^thm-11-6|Theorem §11.6: Convergence in the Mean]]

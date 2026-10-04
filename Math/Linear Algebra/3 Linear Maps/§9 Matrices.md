@@ -8,7 +8,7 @@ tags: [linear-algebra]
 ---
 ← [[§8 Null Spaces and Ranges]] · ↑ [[· 3 Linear Maps]] · [[§10 Invertibility and Isomorphisms]] →
 
-> [!definition] Definition 3.29: Matrix, Aj,k
+> [!definition] Definition 3.29: Matrix, $A_{j,k}$
 > For integers $m,n\ge0$, an *$m$-by-$n$ matrix* $A$ is a rectangular array of elements of $\F$ with $m$ rows and $n$ columns:
 > $$
 > A=\begin{pmatrix}A_{1,1}&\cdots&A_{1,n}\\ \vdots&&\vdots\\ A_{m,1}&\cdots&A_{m,n}\end{pmatrix}.
@@ -128,11 +128,12 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - With [[§9 Matrices#^ladr-3-35|Matrix of the sum of linear maps]]: $\mathcal{M}:\Lin(V,W)\to\F^{m,n}$ is linear ([[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]]).
 
-> [!remark] Notation 3.39: Fᵐ,n (p. 72)
+> [!remark] Notation 3.39: $\F^{m,n}$ (p. 72)
+> For positive integers $m,n$, $\F^{m,n}$ denotes the set of all $m$-by-$n$ matrices with entries in $\F$.
 
 ^ladr-3-39
 
-> [!theorem] Theorem 3.40: Dim Fᵐ’ⁿ = mn
+> [!theorem] Theorem 3.40: $\dim\F^{m,n}=mn$
 > For positive integers $m,n$, $\F^{m,n}$ with entrywise addition and scalar multiplication is a vector space of dimension $mn$.
 
 ^ladr-3-40
@@ -191,8 +192,10 @@ tags: [linear-algebra]
 > - Restated with explicit bases in [[§10 Invertibility and Isomorphisms#^ladr-3-81|Matrix of product of linear maps (LADR 3.81)]]; used for change of basis [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]] and [[§10 Invertibility and Isomorphisms#^ladr-3-86|Matrix of inverse equals inverse of matrix]].
 > - Applied to differentials it is the chain rule in coordinates: [[§28 The Differential in Coordinates#^cor-28-3|591 Cor. §28.3]].
 > - In ℝⁿ: [[§11 Matrix Operations#^thm-11-2|235 Thm. §11.2]] (multiplication of matrices is composition).
+> - Applied to derivatives in $\R^n$ it is the matrix form of the [[Multivariable Chain Rule|452 Thm. §10.2]], $J_{g\circ f}=J_g\,J_f$.
 
-> [!remark] Notation 3.44: Aj,⋅, A⋅,k (p. 74)
+> [!remark] Notation 3.44: $A_{j,\cdot}$, $A_{\cdot,k}$ (p. 74)
+> For an $m$-by-$n$ matrix $A$: $A_{j,\cdot}$ is the $1$-by-$n$ matrix formed by row $j$ of $A$ ($1\le j\le m$), and $A_{\cdot,k}$ is the $m$-by-$1$ matrix formed by column $k$ of $A$ ($1\le k\le n$).
 
 ^ladr-3-44
 

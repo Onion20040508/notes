@@ -119,7 +119,7 @@ tags: [linear-algebra]
 >
 > ![[ladr-5.28-roots.svg|320]]
 
-> [!theorem] Theorem 5.29: Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial
+> [!theorem] Theorem 5.29: q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial
 > Let $V$ be finite-dimensional, $T\in\Lin(V)$, $q\in\Poly(\F)$. Then $q(T)=0$ iff $q$ is a polynomial multiple of the minimal polynomial $p$ of $T$.
 
 ^ladr-5-29

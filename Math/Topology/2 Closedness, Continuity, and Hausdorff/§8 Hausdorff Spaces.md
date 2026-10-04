@@ -3,6 +3,7 @@ type: section
 subject: "[[Topology]]"
 chapter: 2
 section: 8
+munkres: "§17"
 tags: [topology, math590]
 ---
 ← [[§7 Interior and Closure]] · ↑ [[· 2 Closedness, Continuity, and Hausdorff]] · [[§9 Continuous Functions]] →

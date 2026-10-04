@@ -14,9 +14,13 @@ tags: [fourier-series-and-pdes, hub]
 - [[§35 Potential Equation#^thm-35-3|Theorem §35.3: The Laplacian in Polar and Cylindrical Coordinates]]
 - [[§39 Potential in a Disk#^thm-39-2|Theorem §39.2: Solution of Dirichlet's Problem in a Disk]]
 
+## Its proof uses (other subjects)
+- [[§25 More on Uniform Convergence#^thm-25-1|Theorem §25.1: Uniform Convergence Allows Exchanging Limit and Integral]] (Single Variable Analysis)
+- [[§25 More on Uniform Convergence#^thm-25-3|Theorem §25.3: Weierstrass M-Test]] (Single Variable Analysis)
+
 ## Used in (Fourier Series and PDEs)
 - [[§39 Potential in a Disk#^thm-39-5|Theorem §39.5: Maximum Principle]]
 
 ## Connections
-- The mean value property in $\mathbb{R}^n$, from Green's second identity with the fundamental solution: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-3|452 Ex. §17.3]] (given there as a sketch; the proof of (b) above is a complete two-dimensional version).
+- The mean value property in $\mathbb{R}^n$, from Green's second identity with the fundamental solution: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-3|452 Ex. §17.3]] (given there as a sketch; the [[§39 Potential in a Disk#^pf-39-4|proof of (b) in §39]] is a complete two-dimensional version).
 - **Also in [[Complex Variables]]:** [[§59 Maximum Modulus Principle#^thm-59-1|342 Thm. §59.1]] (Gauss's mean value theorem for analytic functions, with worked examples).

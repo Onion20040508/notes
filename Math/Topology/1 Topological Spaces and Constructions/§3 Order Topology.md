@@ -47,7 +47,7 @@ tags: [topology, math590]
 > The **dictionary order** (or **lexicographic order**) $<$ on $A \times B$, where $(A, <_A)$ and $(B, <_B)$ are ordered sets, is defined by:
 >
 > $$
-> a_1 \times b_1 < a_2 \times b_2 \quad \text{if} \quad a_1 < a_2 \quad \text{or} \quad (a_1 = a_2 \text{ and } b_1 <_B b_2)
+> a_1 \times b_1 < a_2 \times b_2 \quad \text{if} \quad a_1 <_A a_2 \quad \text{or} \quad (a_1 = a_2 \text{ and } b_1 <_B b_2)
 > $$
 
 ^def-3-3
@@ -94,7 +94,7 @@ tags: [topology, math590]
 > ![[m590-3-4.svg]]
 > *The ray $(-\infty, c \times d)$: every full vertical line to the left of $c$ (hatched, continuing forever to the left), together with the part of the line $x = c$ below $d$ (hollow endpoint excluded).*
 >
-> **Key insight:** Unlike the standard topology on $\mathbb{R}^2$ (where open sets are “blobs”), open sets in the dictionary order topology are unions of vertical line segments and rays. The topology is much finer in the horizontal direction.
+> **Key insight:** Unlike the standard topology on $\mathbb{R}^2$ (where open sets are “blobs”), every open set in the dictionary order topology is a union of open vertical segments $\{a\} \times (b, d)$: each interval above is such a union. Horizontally the topology is discrete: the segment $\{a\} \times (b-1, b+1) = (a \times (b-1),\ a \times (b+1))$ is an open set containing $a \times b$ that meets no other vertical line. In fact it is the product topology $\mathbb{R}_{\text{discrete}} \times \mathbb{R}_{\text{std}}$ ([[§4 Product Topology#^ex-4-3|Example §4.3]]), which is strictly finer than the standard topology on $\mathbb{R}^2$.
 
 ^ex-3-4
 

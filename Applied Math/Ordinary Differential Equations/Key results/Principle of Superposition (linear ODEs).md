@@ -12,7 +12,6 @@ tags: [ordinary-differential-equations, hub]
 
 ## Its proof uses
 - [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-1|Definition §14.1: The Differential Operator L]]
-- [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^cor-14-7|Corollary §14.7: The Conjugate of a Solution]]
 
 ## Used in (Ordinary Differential Equations)
 - [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-3|Theorem §14.3: Solvability of the Initial Conditions]]

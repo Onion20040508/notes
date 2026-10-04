@@ -9,7 +9,7 @@ tags: [chapter, topology]
 
 **Builds on:** [[· 2 Closedness, Continuity, and Hausdorff|2 Closedness, Continuity, and Hausdorff]] (8), [[· 3 Products, Metrics, and Quotients|3 Products, Metrics, and Quotients]] (6), [[· 4 Connectedness|4 Connectedness]] (1), [[· 5 Compactness|5 Compactness]] (4), [[· 7 Algebraic Foundations|7 Algebraic Foundations]] (7), [[· 8 Homotopy and the Fundamental Group|8 Homotopy and the Fundamental Group]] (12), [[· 9 Covering Spaces and Lifting|9 Covering Spaces and Lifting]] (13), [[· 10 Applications of π₁|10 Applications of π₁]] (7)
 **Used by:** [[· 10 Applications of π₁|10 Applications of π₁]] (5)
-**Builds on (other subjects):** [[Linear Algebra]] (1)
+**Builds on (other subjects):** [[Group Theory]] (1)
 
 ## Sections
 - [[§27 The Fundamental Group of Sⁿ]]

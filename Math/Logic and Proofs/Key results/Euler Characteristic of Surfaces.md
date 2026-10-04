@@ -14,8 +14,8 @@ tags: [logic-and-proofs, hub]
 - [[§5 The Induction Principle#^thm-5-3|Theorem §5.3: Induction from Any Base Case]]
 - [[§25 Surfaces and the Euler Characteristic#^ex-25-1|Example §25.1: Sphere, Disk and Circle]]
 - [[§25 Surfaces and the Euler Characteristic#^thm-25-2|Theorem §25.2: Invariance of the Euler Characteristic]]
-- [[§25 Surfaces and the Euler Characteristic#^prop-25-3|Proposition §25.3: Removing a Disk Lowers chi by 1]]
-- [[§25 Surfaces and the Euler Characteristic#^cor-25-5|Corollary §25.5: Attaching a Handle Lowers chi by 2]]
+- [[§25 Surfaces and the Euler Characteristic#^prop-25-3|Proposition §25.3: Removing a Disk Lowers χ by 1]]
+- [[§25 Surfaces and the Euler Characteristic#^cor-25-5|Corollary §25.5: Attaching a Handle Lowers χ by 2]]
 
 ## Used in (Logic and Proofs)
 - (not cited later in the course)

@@ -10,7 +10,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 ← [[§14 Fourier Integral]] · ↑ [[· 1 Fourier Series and Integrals]] · [[§16★ Applications of Fourier Series and Integrals]] →
 
 *Powers, Section 1.10 · MAT 341 lecture 10.3 · Midterm 1 · Midterm 2.*
-★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
+★ *Beyond MAT 341: the course did not cover this section, apart from presenting the complex form as a bonus topic in lecture 10.3, which the bonus questions of both midterms used; it is included in full from Powers.*
 
 Euler's formula $e^{i\theta} = \cos\theta + i\sin\theta$ packs a cosine and a sine of the same frequency into one exponential. Fourier series and integrals then take a single compact form, $f(x) = \sum c_ne^{inx}$ and $f(x) = \int C(\lambda)e^{i\lambda x}\,d\lambda$, with one coefficient formula valid for all frequencies, positive and negative. The complex coefficient function $C(\lambda)$ is the Fourier transform of $f$. This is the form used in physics and electrical engineering: momentum-space wave functions in quantum mechanics, spectra of signals and AC circuits, and the solution of differential equations on the whole line, where differentiation becomes multiplication by $i\lambda$. The lecture of 10.3 presented the complex form as a bonus topic, and the bonus questions of both midterms used the transform.
 
@@ -155,6 +155,7 @@ The Fourier integral of a function $f(x)$ defined on the entire line $-\infty < 
 
 > [!remark]- Connections
 > - Normalizations differ between books. Powers puts $\frac{1}{2\pi}$ in the transform; Lax's (and 556's) $\mathcal{F}(f)(x) = \int e^{-ix\cdot\xi}f(\xi)\,d\xi$ is $2\pi C$, and many physics texts split the factor as $\frac{1}{\sqrt{2\pi}}$ in both directions. In any normalization, $|C(\lambda)| \le \frac{1}{2\pi}\int|f|$: the transform is a bounded linear map from $L^1$ to $L^\infty$, [[§26 Boundedness and Continuity#^ex-26-2|556 Ex. §26.2]].
+> - For a rational function $f$ the transform can be computed by residues: [[§87 Improper Integrals from Fourier Analysis#^prop-87-1|342 Prop. §87.1]].
 
 The lecture reached (5) and (6) as Powers reached (7) of §14 ([[§14 Fourier Integral#^rem-14-1|Remark: Why It Works]]): on $-a < x < a$ the complex series of Theorem §15.1 reads $f(x) = \sum_n \frac\pi a C_a\big(\frac{n\pi}a\big)e^{in\pi x/a}$ with $C_a(\lambda) = \frac{1}{2\pi}\int_{-a}^{a} f(x)e^{-i\lambda x}\,dx$, a Riemann sum with spacing $\Delta\lambda = \pi/a$, which suggests (5) as $a \to \infty$. The real theorem makes this precise.
 

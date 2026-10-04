@@ -143,7 +143,7 @@ tags: [linear-algebra]
 > Only $V$ is assumed finite-dimensional; $W$ may be infinite-dimensional. That is why "$\range T$ is finite-dimensional" is part of the conclusion rather than automatic.
 
 > [!proof]+ Proof
-> *(Filled in; implicit in Axler.)* $\nullsp T$ is a subspace of the finite-dimensional space $V$, hence finite-dimensional by [[§4 Span and Linear Independence#^ladr-2-25|Finite-dimensional subspaces]]. Let $u_1, \dots, u_m$ be a basis of $\nullsp T$, so $\dim \nullsp T = m$.
+> *(First step filled in: Axler takes the finite-dimensionality of $\nullsp T$ for granted; the rest follows Axler's proof.)* $\nullsp T$ is a subspace of the finite-dimensional space $V$, hence finite-dimensional by [[§4 Span and Linear Independence#^ladr-2-25|Finite-dimensional subspaces]]. Let $u_1, \dots, u_m$ be a basis of $\nullsp T$, so $\dim \nullsp T = m$.
 >
 > By [[Every linearly independent list extends to a basis]], extend it to a basis $u_1, \dots, u_m, v_1, \dots, v_n$ of $V$, so $\dim V = m + n$. It remains to show that $Tv_1, \dots, Tv_n$ is a basis of $\range T$.
 >
@@ -161,7 +161,7 @@ tags: [linear-algebra]
 >
 > Therefore $\dim \range T = n$, and $\dim V = m + n = \dim \nullsp T + \dim \range T$.
 
-*Uses:* [[Every linearly independent list extends to a basis|2.32]]
+*Uses:* [[§4 Span and Linear Independence#^ladr-2-25|2.25]], [[Every linearly independent list extends to a basis|2.32]]
 
 %% ex:3.21-fig %%
 

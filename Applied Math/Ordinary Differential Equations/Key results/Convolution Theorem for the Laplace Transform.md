@@ -15,6 +15,10 @@ tags: [ordinary-differential-equations, hub]
 - [[§21 Definition of the Laplace Transform#^def-21-5|Definition §21.5: Exponential Order]]
 - [[§26★ The Convolution Integral#^def-26-1|Definition §26.1: Convolution]]
 
+## Its proof uses (other subjects)
+- [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|Theorem §17.3: Tonelli's Theorem]] (Measure Theory)
+- [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|Theorem §17.6: Fubini's Theorem]] (Measure Theory)
+
 ## Used in (Ordinary Differential Equations)
 - [[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6: Table of Elementary Laplace Transforms]]
 - [[§26★ The Convolution Integral#^thm-26-3|Theorem §26.3: Structure of the Solution of an Input–Output Problem]]

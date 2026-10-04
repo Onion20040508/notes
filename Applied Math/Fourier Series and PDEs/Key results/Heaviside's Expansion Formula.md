@@ -14,6 +14,9 @@ tags: [fourier-series-and-pdes, hub]
 - [[§51★ Definition and Elementary Properties#^ex-51-1|Example §51.1: Transforms from the Exponential]]
 - [[§52★ Partial Fractions and Convolutions#^thm-52-1|Theorem §52.1: Linearity of the Inverse Transform]]
 
+## Its proof uses (other subjects)
+- [[§30 L'Hospital's Rule#^thm-30-1|Theorem §30.1: L'Hospital's Rule]] (Single Variable Analysis)
+
 ## Used in (Fourier Series and PDEs)
 - (not cited later in the course)
 

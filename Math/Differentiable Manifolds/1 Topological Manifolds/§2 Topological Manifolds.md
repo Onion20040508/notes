@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§1 Point-Set Topology Review]] · ↑ [[· 1 Topological Manifolds]] · [[§3 Subspaces and Products]] →
 
-*Foundations — The definition of a topological manifold and the role of each axiom. The two ways of building examples begin next: by quotients ([[§4 Quotient Spaces and Open Maps|§4]]–[[§6 Open Quotients|§6]]) and by equations ([[§7 The Regular Value Theorem|§7]]).*
+*Stage: foundations — The definition of a topological manifold and the role of each axiom. The two ways of building examples begin next: by quotients ([[§4 Quotient Spaces and Open Maps|§4]]–[[§6 Open Quotients|§6]]) and by equations ([[§7 The Regular Value Theorem|§7]]).*
 
 *Reference: Lee Ch. 1, “Topological Manifolds.”*
 

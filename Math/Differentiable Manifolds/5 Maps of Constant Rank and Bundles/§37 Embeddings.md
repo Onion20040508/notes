@@ -23,7 +23,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ^def-37-1
 
 > [!remark]- Connections
-> - Announced at the end of Lecture 13: [[§36 Immersions#^rem-36-1|Remark: Embeddings — Next Time (§33)]]; the two ways an immersion's image can fail to be a submanifold: [[§36 Immersions#^ex-36-1|Ex. §36.1]], [[§36 Immersions#^ex-36-2|Ex. §36.2]].
+> - Announced at the end of Lecture 13: [[§36 Immersions#^rem-36-1|Remark: Embeddings — Next Time (§36)]]; the two ways an immersion's image can fail to be a submanifold: [[§36 Immersions#^ex-36-1|Ex. §36.1]], [[§36 Immersions#^ex-36-2|Ex. §36.2]].
 > - Homeomorphisms in 590: [[§9 Continuous Functions#^def-9-2|590 Def. §9.2]].
 
 ![[m591-33-1.svg]]

@@ -20,7 +20,6 @@ tags: [applied-linear-algebra, hub]
 - [[§11 Matrix Operations#^thm-11-7|Theorem §11.7: Properties of the Transpose]]
 - [[§12 The Inverse of a Matrix#^thm-12-4|Theorem §12.4: Properties of Invertible Matrices]]
 - [[§12 The Inverse of a Matrix#^thm-12-8|Theorem §12.8: Invertibility and Row Reduction]]
-- [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3: The Invertible Matrix Theorem (Continued)]]
 
 ## Used in (Applied Linear Algebra)
 - [[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2: A One-Sided Inverse Is an Inverse]]

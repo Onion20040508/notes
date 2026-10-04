@@ -17,12 +17,9 @@ tags: [ordinary-differential-equations, hub]
 - [[§21 Definition of the Laplace Transform#^thm-21-3|Theorem §21.3: Linearity of the Laplace Transform]]
 - [[§21 Definition of the Laplace Transform#^ex-21-4|Example §21.4: The Transform of a Sine, and a Linear Combination]]
 - [[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1: Transform of a Derivative]]
-- [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2: Transform of the nth Derivative]]
-- [[§23 Step Functions#^thm-23-1|Theorem §23.1: Transform of the Unit Step]]
-- [[§23 Step Functions#^thm-23-2|Theorem §23.2: Laplace Transform of a Translation]]
-- [[§23 Step Functions#^thm-23-3|Theorem §23.3: Multiplication by an Exponential]]
-- [[§25 Impulse Functions#^thm-25-2|Theorem §25.2: Transform of the Delta Function]]
-- [[§26★ The Convolution Integral#^thm-26-2|Theorem §26.2: The Convolution Theorem]]
+
+## Its proof uses (other subjects)
+- [[§31 Taylor's Theorem#^thm-31-2|Theorem §31.2: Taylor's Theorem with Lagrange Remainder]] (Single Variable Analysis)
 
 ## Used in (Ordinary Differential Equations)
 - [[§21 Definition of the Laplace Transform#^ex-21-4|Example §21.4: The Transform of a Sine, and a Linear Combination]]

@@ -9,6 +9,7 @@ tags: [linear-algebra]
 ← [[§3 Subspaces]] · ↑ [[· 2 Finite-Dimensional Vector Spaces]] · [[§5 Bases]] →
 
 > [!remark] Notation 2.1: List of vectors (p. 28)
+> Lists of vectors are usually written without surrounding parentheses: $v_1,\dots,v_m$ rather than $(v_1,\dots,v_m)$.
 
 ^ladr-2-1
 
@@ -125,6 +126,7 @@ tags: [linear-algebra]
 > - Computational version: ℙₙ and its degree convention in [[§23 Vector Spaces and Subspaces#^ex-23-1|235 Ex. §23.1]](d).
 
 > [!remark] Notation 2.12: Pm(F) (p. 31)
+> For a nonnegative integer $m$, $\Poly_m(\F)$ is the set of all polynomials with coefficients in $\F$ and degree at most $m$.
 
 ^ladr-2-12
 

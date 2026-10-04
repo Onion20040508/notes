@@ -282,6 +282,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-35|6.35]], [[§20 Orthonormal Bases#^ladr-6-30|6.30]]
 
+> [!remark]- Connections
+> - In several variables the gradient is the Riesz representer of the derivative, $Df_{\mathbf p}(\mathbf u)=\nabla f(\mathbf p)\cdot\mathbf u$: [[Directional Derivative Formula|452 Thm. §7.1]].
+
 > [!example] Example 6.44: Computation illustrating Riesz representation theorem (p. 206)
 > Find $q\in\Poly_2(\R)$ with $\int_{-1}^1p(t)\cos(\pi t)\,dt=\int_{-1}^1pq$ for all $p\in\Poly_2(\R)$. Use the orthonormal basis $e_1,e_2,e_3$ of [[§20 Orthonormal Bases#^ladr-6-34|6.34]] and the formula $q=\sum_k\varphi(e_k)e_k$ from the proof of [[Riesz representation theorem|6.42]]:
 > $$

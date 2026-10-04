@@ -15,6 +15,7 @@ tags: [topology, hub]
 - [[§15 Compact Spaces#^lem-15-1|Lemma §15.1: Compactness in Subspaces]]
 
 ## Used in (Topology)
+- [[§12 Quotient Topology#^thm-12-5|Theorem §12.5: Product of Quotient Maps (Compact-Hausdorff Case)]]
 - [[§15 Compact Spaces#^thm-15-7|Theorem §15.7: Bijection from Compact to Hausdorff]]
 - [[§15 Compact Spaces#^thm-15-8|Theorem §15.8: Finite Product of Compact Spaces]]
 - [[§24 Covering Spaces#^lem-24-12|Lemma §24.12: Equivalent Conditions for Nullhomotopy]]

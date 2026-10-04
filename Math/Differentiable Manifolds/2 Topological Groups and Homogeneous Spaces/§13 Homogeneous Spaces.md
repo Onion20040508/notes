@@ -87,12 +87,12 @@ tags: [differentiable-manifolds, math591]
 > [!theorem] Theorem §13.2: Isotropy Subgroups Are Closed
 > Let $G$ be a topological group acting continuously on a topological space $X$ in which points are closed (for instance, $X$ Hausdorff). Then for every $x_0 \in X$ the isotropy subgroup $H_{x_0}$ is a *closed* subgroup of $G$.
 >
-> *Lee: proof of Theorem 21.18 (“closed by continuity)*
+> *Lee: proof of Theorem 21.18 (“closed by continuity”)*
 
 ^thm-13-2
 
 > [!proof]+ Exercise
-> *(Claimed in Lecture 4 — “this is a closed subgroup”; filled in.)* Consider the orbit map $\theta_{x_0} : G \to X$, $\theta_{x_0}(g) = g \cdot x_0$, of Definition [[§13 Homogeneous Spaces#^def-13-3|§13.3]], and identify $H_{x_0}$ as a preimage under it. Two things are to be checked: that $\theta_{x_0}$ is continuous, and that the relevant subset of $X$ is closed. Uribe stated the result and said the closedness “may be the next assignment”; it was not proved in lecture, and the argument is left here.
+> *(Claimed in Lecture 4 — “this is a closed subgroup”; outline only.)* Consider the orbit map $\theta_{x_0} : G \to X$, $\theta_{x_0}(g) = g \cdot x_0$, of Definition [[§13 Homogeneous Spaces#^def-13-3|§13.3]], and identify $H_{x_0}$ as a preimage under it. Two things are to be checked: that $\theta_{x_0}$ is continuous, and that the relevant subset of $X$ is closed. Uribe stated the result and said the closedness “may be the next assignment”; it was not proved in lecture, and the argument is left here.
 
 ^pf-13-2
 

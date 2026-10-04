@@ -188,13 +188,13 @@ tags: [topology, math590]
 > [!example] Example §18.8: Standard Examples
 > 1. $\mathbb{R}$ is separable: $D = \mathbb{Q}$.
 > 2. $\mathbb{R}^n$ is separable: $D = \mathbb{Q}^n$.
-> 3. $\mathbb{R}_l$ ([[§2 Basis for a Topology#^ex-2-3|lower limit topology]]) is separable: $D = \mathbb{Q}$. Every $[a, b)$ contains a rational.
+> 3. $\mathbb{R}_\ell$ ([[§2 Basis for a Topology#^ex-2-3|lower limit topology]]) is separable: $D = \mathbb{Q}$. Every $[a, b)$ contains a rational.
 
 ^ex-18-8
 
 > [!theorem] Proposition §18.4: Relationships Between Countability and Separability
 > 1. Second countable $\Rightarrow$ separable (pick one point from each basis element).
-> 2. Separable does NOT imply second countable in general ($\mathbb{R}_l$ is separable but not second countable).
+> 2. Separable does NOT imply second countable in general ($\mathbb{R}_\ell$ is separable but not second countable).
 > 3. In metrizable spaces: separable $\iff$ second countable.
 
 ^prop-18-4
@@ -202,7 +202,7 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > **(1)** is part (a) of [[§18 Countability Axioms#^thm-18-6|the theorem below]].
 >
-> **(2)** $\mathbb{R}_l$ is separable ($\mathbb{Q}$ is dense). To see it is not second countable: suppose $\{B_n\}$ were a countable basis. For each $x \in \mathbb{R}$, the set $[x, x+1)$ is open, so some $B_{n_x}$ satisfies $x \in B_{n_x} \subseteq [x, x+1)$. Then $\inf B_{n_x} = x$, so different $x$'s give different $B_{n_x}$'s. But there are uncountably many $x$'s and only countably many $B_n$'s — contradiction.
+> **(2)** $\mathbb{R}_\ell$ is separable ($\mathbb{Q}$ is dense). To see it is not second countable: suppose $\{B_n\}$ were a countable basis. For each $x \in \mathbb{R}$, the set $[x, x+1)$ is open, so some $B_{n_x}$ satisfies $x \in B_{n_x} \subseteq [x, x+1)$. Then $\inf B_{n_x} = x$, so different $x$'s give different $B_{n_x}$'s. But there are uncountably many $x$'s and only countably many $B_n$'s — contradiction.
 >
 > **(3)** $(\Rightarrow)$: Let $D = \{d_1, d_2, \ldots\}$ be a countable dense subset of a metric space $(X, d)$. The collection $\{B(d_i, 1/n) \mid i \in \mathbb{Z}_+, n \in \mathbb{Z}_+\}$ is countable. It is a basis: given $x \in U$ open, choose $\varepsilon > 0$ with $B(x, \varepsilon) \subseteq U$. Pick $d_i \in D$ with $d(x, d_i) < \varepsilon/2$ (density), and $n$ with $1/n < \varepsilon/2$. Then $x \in B(d_i, 1/n) \subseteq B(x, \varepsilon) \subseteq U$.
 >

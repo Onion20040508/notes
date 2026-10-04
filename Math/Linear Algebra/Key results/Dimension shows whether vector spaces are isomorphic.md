@@ -10,11 +10,12 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§10 Invertibility and Isomorphisms#^ladr-3-70|Axler 3.70]], in [[§10 Invertibility and Isomorphisms]]
 
-## Proof uses
+## Its proof uses
 - [[Fundamental theorem of linear maps|3.21]], [[Linear map lemma|3.4]], [[§10 Invertibility and Isomorphisms#^ladr-3-63|3.63]]
 
 ## Used in (Linear Algebra)
 - [[§10 Invertibility and Isomorphisms#^ladr-3-72|3.72 Dim L(V, W) = (dim V)(dim W)]]
+- [[§10 Invertibility and Isomorphisms#^ladr-3-78|3.78 Dimension of range T equals column rank of M(T)]]
 
 ## Connections
 - Coordinates as the isomorphism $v\mapsto\mathcal{M}(v)$: [[§10 Invertibility and Isomorphisms#^ladr-3-73|Matrix of a vector, M(v)]]. Dimension of $\Lin(V,W)$: [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]].
