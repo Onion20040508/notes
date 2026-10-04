@@ -37,4 +37,6 @@ tags: [differentiable-manifolds, hub]
 - (not cited later in the course)
 
 ## Connections
-- TODO
+- **How.** Identify $S^3$ with the unit quaternions and with $\mathrm{SU}(2)$ ([[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-3|§35.3]]); conjugation on the imaginary quaternions $\cong \mathbb{R}^3$ gives a homomorphism onto $\mathrm{SO}(3)$ with kernel $\{\pm 1\}$ ([[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-5|§35.5]], [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^lem-35-6|§35.6]]), and a homomorphism of Lie groups is a local diffeomorphism once its differential at the identity is invertible ([[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^lem-35-7|§35.7]]).
+- **Topology.** So $\mathrm{SO}(3) \cong S^3/\{\pm 1\} = \mathbb{RP}^3$, and $S^3 \to \mathrm{SO}(3)$ is a two-sheeted covering ([[§28 Local Diffeomorphisms#^ex-28-2|§28.2]] for $S^n \to \mathbb{RP}^n$).
+- **Used in physics.** The same double cover is why spin-½ states change sign under a $2\pi$ rotation: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].

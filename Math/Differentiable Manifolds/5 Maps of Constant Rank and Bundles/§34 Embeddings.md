@@ -46,6 +46,9 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ![[m591-33-2.svg]]
 *The irrational line, drawn here with $\alpha = (\sqrt5 - 1)/2$. Left: nine turns of $F(\mathbb{R})$ in the square, whose opposite sides are identified; the orange piece is $F(U)$, and two other strands already cross the neighbourhood $V$. Right: a disc around $F(p)$ about $4.6$ times smaller, and the first 400 turns of the curve, which cross it in 34 strands. Shrinking further only takes more turns: every neighbourhood of $F(p)$ meets infinitely many strands.*
 
+![[m591-34-1.svg]]
+*The irrational line on a torus in $\mathbb{R}^3$, drawn with the slope $\alpha = (5 - \sqrt5)/10 \approx 0.28$ so that the stripes run steeply: the horizontal direction of the square goes around the tube, the vertical one around the hole, and strands on the far side are drawn faintly. Left: $t \in [0, 9]$, starting at $F(0)$. Right: $t \in [0, 40]$ — the curve never closes up, and its strands fill in the torus, as [[§34 Embeddings#^prop-34-11|Proposition §34.11]] proves for every irrational $\alpha$. (Drawn for these notes in the vault; not in the course tex.)*
+
 > [!theorem] Theorem §34.1: The Image of an Embedding Is a Submanifold
 > If $F : M \to N$ is an embedding ([[§34 Embeddings#^def-34-1|Def. §34.1]]), with $\dim M = m$ and $\dim N = n$, then $F(M)$ is a regular submanifold ([[§30 Submanifolds#^def-30-1|Def. §30.1]]) of $N$ of codimension $n - m$.
 >
