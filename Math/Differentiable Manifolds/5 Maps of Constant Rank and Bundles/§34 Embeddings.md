@@ -5,7 +5,7 @@ chapter: 5
 section: 34
 tags: [differentiable-manifolds, math591]
 ---
-← [[§33 Immersions]] · ↑ [[· 5 Maps of Constant Rank and Bundles]]
+← [[§33 Immersions]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)]] →
 
 *Stage: maps — Immersions that are homeomorphisms onto their images — their images are submanifolds.*
 

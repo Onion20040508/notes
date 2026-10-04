@@ -6270,6 +6270,18 @@ Hausdorffness and second countability are inherited from $M$ (Theorem~\ref{thm:s
 
 This is the topological half of the regular value theorem for manifolds, and it is \ref{sec:rvt} applied chart by chart. The smooth half --- that $F^{-1}(c)$ is a smooth \emph{submanifold} of $M$, with tangent space $\ker F_{*p}$ --- came in Lecture~12, as Theorem~\ref{thm:rvt-manifolds}, proved with the local normal form for submersions (Theorem~\ref{thm:submersion-normal-form}): near each point of the level set, $F$ is a projection, so the level set is a coordinate slice. It is Lee's Corollary~5.14 and Proposition~5.38. The corollary above is now a consequence of it, a submanifold being in particular a topological manifold, but its proof --- \ref{sec:rvt} applied chart by chart --- is more elementary.
 
+\begin{propbox}[Maps with Zero Differential Are Constant]\thmlabel{prop:zero-differential}
+Let $F : M \to N$ be smooth, with $M$ connected. If $F_{*p} = 0$ for every $p \in M$, then $F$ is constant.
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~4, Problem~1: the submitted solution, condensed.)} \emph{$F$ is locally constant.} Fix $p_0 \in M$. Take a chart $(V, \psi)$ at $F(p_0)$ and a chart at $p_0$ whose domain $U_0$ satisfies $F(U_0) \subseteq V$ and whose image is an open ball $B$ --- shrink by continuity of $F$, then to a ball. The coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1} : B \to \mathbb{R}^n$ has Jacobian $\tilde F'(\varphi(p))$, the matrix of $F_{*p}$ (Theorem~\ref{lem:differential-matrix}), so $\tilde F' \equiv 0$ on $B$. For $p \in U_0$, the segment from $\varphi(p_0)$ to $\varphi(p)$ stays in the convex $B$, and the mean value theorem applied to each component of $\tilde F$ along it gives $\tilde F(\varphi(p)) = \tilde F(\varphi(p_0))$; since $\psi$ is injective, $F(p) = F(p_0)$.
+
+\emph{$F$ is constant.} Let $c = F(p_0)$. The set $F^{-1}(c)$ is closed, since $F$ is continuous, and open, since $F$ is locally constant; it is nonempty. As $M$ is connected, $F^{-1}(c) = M$.
+\end{proof}
+
+The hypothesis that $M$ is connected cannot be dropped: on a disconnected $M$, a map that takes different constant values on different components has zero differential everywhere. Locally, the proposition is the familiar fact from calculus that a function with zero derivative on an interval is constant.
+
 % ============================================================================
 % SECTION: TANGENT VECTORS AS VELOCITIES OF CURVES
 % ============================================================================
@@ -6729,7 +6741,7 @@ $F : \mathbb{R} \to S^1$, $F(t) = (\cos t, \sin t)$, is a local diffeomorphism, 
 \end{exbox}
 
 \begin{proof}
-\textit{(Stated in Lecture~10 as an example, without proof --- the covering-map distinction was ``postponed''; filled in.)} $F$ is smooth into $\mathbb{R}^2$ with values in $S^1$, hence smooth into $S^1$ by Lemma~\ref{lem:level-set-maps}(2). Fix $t_0$ and let $U = (t_0 - \pi, t_0 + \pi)$ and $V = S^1 \setminus \{F(t_0 + \pi)\}$. Then $F$ maps $U$ bijectively onto $V$, and its inverse is the angle chart $\theta : V \to U$ taking values in $U$, which belongs to the smooth structure of $S^1$ (Proposition~\ref{prop:circle-atlases-same} and the remark on ranges in its proof). So $F|_U^V = \theta^{-1}$ is a diffeomorphism by Proposition~\ref{prop:chart-diffeo}. For $t_0 \in (0,4\pi)$, replace $U$ by $U \cap (0, 4\pi)$ and $V$ by its image, which is open because $F|_U^V$ is a homeomorphism. Finally $F(t + 2\pi) = F(t)$.
+\textit{(Stated in Lecture~10 as an example, without proof --- the covering-map distinction was ``postponed''; filled in.)} $F$ is smooth into $\mathbb{R}^2$ with values in $S^1$; by Lemma~\ref{lem:level-set-maps}(2) it is therefore smooth into $S^1$. Fix $t_0$ and let $U = (t_0 - \pi, t_0 + \pi)$ and $V = S^1 \setminus \{F(t_0 + \pi)\}$. Then $F$ maps $U$ bijectively onto $V$, and its inverse is the angle chart $\theta : V \to U$ taking values in $U$, which belongs to the smooth structure of $S^1$ (Proposition~\ref{prop:circle-atlases-same} and the remark on ranges in its proof). So $F|_U^V = \theta^{-1}$ is a diffeomorphism by Proposition~\ref{prop:chart-diffeo}. For $t_0 \in (0,4\pi)$, replace $U$ by $U \cap (0, 4\pi)$ and $V$ by its image, which is open because $F|_U^V$ is a homeomorphism. Finally $F(t + 2\pi) = F(t)$.
 \end{proof}
 
 \begin{center}
@@ -7086,6 +7098,24 @@ If $F : M \to N$ is a submersion, then $F(W)$ is open in $N$ for every open $W \
 \begin{proof}
 Let $q = F(p)$ with $p \in W$, and take the charts of the theorem at $p$, shrinking $U$ to $U \cap W$. Then $F(U) = \psi^{-1}\big(\mathrm{pr}(\hat\varphi(U))\big)$, where $\mathrm{pr} : \mathbb{R}^m \to \mathbb{R}^n$ is the projection onto the first $n$ coordinates. Projections are open (Example~\ref{ex:proj-open}), and $\hat\varphi(U)$ is open, so $\mathrm{pr}(\hat\varphi(U))$ is an open subset of $\psi(V)$, and $F(U)$ is open in $N$. It contains $q$ and lies in $F(W)$.
 \end{proof}
+
+\begin{thmbox}[Submersions from Compact Manifolds]\thmlabel{thm:compact-submersion}
+Let $M$ be compact and nonempty, $N$ connected, and $F : M \to N$ a submersion. Then $F$ is surjective, and $N$ is compact.
+\end{thmbox}
+
+\begin{proof}
+\textit{(Assignment~4, Problem~2, where $N = \mathbb{R}^k$; the same argument gives the general statement.)} $F(M)$ is open in $N$ because a submersion is an open map (Corollary~\ref{cor:submersion-open-map}), and compact, hence closed in the Hausdorff space $N$, because $M$ is compact. It is nonempty, and $N$ is connected, so $F(M) = N$. Then $N = F(M)$ is compact.
+\end{proof}
+
+\begin{corbox}[No Submersions from Compact Manifolds to Euclidean Space]\thmlabel{cor:no-submersion-Rk}
+If $M$ is compact and nonempty and $k \ge 1$, there is no submersion $M \to \mathbb{R}^k$.
+\end{corbox}
+
+\begin{proof}
+\textit{(Assignment~4, Problem~2.)} $\mathbb{R}^k$ is connected but not compact, since it is unbounded; apply Theorem~\ref{thm:compact-submersion}.
+\end{proof}
+
+The submitted solution also noted the edge cases: for $k = 0$ the constant map $M \to \mathbb{R}^0$ is a submersion, since every differential maps onto the zero space; and for $M = \emptyset$ the empty map is vacuously one. In particular, a compact manifold carries no nonconstant submersion to $\mathbb{R}$ --- the maximum of any smooth function $f : M \to \mathbb{R}$ is a critical point.
 
 \section{Submanifolds}\label{sec:submanifolds-fibrations}\label{sec:submanifolds}
 
@@ -7636,6 +7666,58 @@ The fibres over a few values of $t$. The origin, grey, is missing from every fib
 
 \textbf{Transcription note.} Page~35 of the handwritten notes labels the second missing point over $t = 0$ as $(1, 1)$; it is $(1, 0)$.
 
+\subsection{Local Sections}\label{sub:local-sections}
+
+\textit{From Assignment~4, Problem~4, whose hint --- ``declare that $\Phi_i \circ s_i$ includes $U_i \to U_i \times \{1\}$, and extend the definition of $\Phi_i$ by equivariance'' --- contains a general principle: local trivializations and local sections are two descriptions of the same thing.}
+
+\begin{defbox}[Local Section]\deflabel{def:local-section}
+Let $\pi : E \to B$ be smooth and $U \subseteq B$ open. A \textbf{local section} of $\pi$ over $U$ is a smooth map $s : U \to E$ with $\pi \circ s = \mathrm{id}_U$.
+\leeref{Ch.~10, \emph{Local and Global Sections of Vector Bundles}}
+\end{defbox}
+
+The \emph{global} sections of \ref{sub:sections}, below, are the local sections over $U = B$.
+
+\begin{propbox}[Local Trivializations Give Local Sections]\thmlabel{prop:trivialization-section}
+Let $\pi : E \to B$ be a fibration with fibre $F$, and $\phi : \pi^{-1}(U) \to U \times F$ a local trivialization. For every $f_0 \in F$, the map $s(u) = \phi^{-1}(u, f_0)$ is a local section over $U$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} $s$ is smooth, a composite of $u \mapsto (u, f_0)$ and the diffeomorphism $\phi^{-1}$; and $\pi(s(u)) = \mathrm{pr}_1\big(\phi(s(u))\big) = \mathrm{pr}_1(u, f_0) = u$, because $\pi = \mathrm{pr}_1 \circ \phi$.
+\end{proof}
+
+For the Hopf fibration the converse holds: the circle acting on the fibres turns any local section into a local trivialization.
+
+\begin{propbox}[Local Sections of the Hopf Fibration Give Trivializations]\thmlabel{prop:hopf-section-trivialization}
+Let $\pi : S^{2n+1} \to \mathbb{CP}^n$ be the Hopf fibration, on which $S^1$ acts by $\lambda \cdot z = \lambda z$, and let $s : U \to \pi^{-1}(U)$ be a local section. Then
+\[
+\Psi_s : U \times S^1 \longrightarrow \pi^{-1}(U), \qquad \Psi_s(u, \lambda) = \lambda\, s(u),
+\]
+is a diffeomorphism with $\pi \circ \Psi_s = \mathrm{pr}_1$ and $\Psi_s(u, 1) = s(u)$, equivariant for the actions $\lambda \cdot (u, \mu) = (u, \lambda\mu)$ and $\lambda \cdot z = \lambda z$. Its inverse is
+\[
+\Psi_s^{-1}(z) = \Big( \pi(z),\ \big\langle z, s(\pi(z)) \big\rangle \Big), \qquad \langle z, w \rangle = \textstyle\sum_k z_k \bar w_k .
+\]
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~4, Problem~4 did this for the explicit sections $s_i$ of the corollary below; the inner-product formula for the inverse, which works for every local section, is filled in.)} $\Psi_s$ lands in $\pi^{-1}(U)$: $|\lambda s(u)| = 1$, and $\lambda s(u)$ spans the same complex line as $s(u)$, so $\pi(\lambda s(u)) = \pi(s(u)) = u$. This also gives $\pi \circ \Psi_s = \mathrm{pr}_1$, and equivariance is $\mu\,(\lambda s(u)) = (\mu\lambda)\, s(u)$. Both maps are smooth: $\Psi_s$ is a product of smooth maps into $\mathbb{C}^{n+1}$ landing in $S^{2n+1}$ (Lemma~\ref{lem:level-set-maps}), and the proposed inverse is built from $\pi$, $s$ and the polynomial $\langle \cdot, \cdot \rangle$, with second component of modulus~$1$. They are mutually inverse. If $z \in \pi^{-1}(U)$, then $z$ and the unit vector $s(\pi(z))$ span the same complex line, so $z = \lambda s(\pi(z))$ for some $\lambda$, and $\lambda = \lambda \langle s, s \rangle = \langle z, s(\pi(z)) \rangle$; hence $\Psi_s(\Psi_s^{-1}(z)) = z$. Conversely $\Psi_s^{-1}(\lambda s(u)) = (u, \lambda \langle s(u), s(u) \rangle) = (u, \lambda)$.
+\end{proof}
+
+\begin{corbox}[Local but Not Global Sections of the Hopf Fibration]\thmlabel{cor:hopf-local-sections}
+Over each chart domain $U_i = \{[z] : z_i \neq 0\}$ of $\mathbb{CP}^n$, the Hopf fibration has the local section
+\[
+s_i([z]) = \frac{\hat z}{|\hat z|}, \qquad \hat z = \frac{z}{z_i} ,
+\]
+and the trivialization $\Psi_{s_i}^{-1}$ it gives is the one of Example~\ref{ex:hopf-fibration}, $z \mapsto ([z], z_i/|z_i|)$. For $n \ge 1$ there is no global section.
+\end{corbox}
+
+\begin{proof}
+\textit{(Assignment~4, Problem~4; the global statement is the fact recorded in \ref{sub:sections}, stated there without proof.)} $\hat z$ is independent of the representative $z$, smooth in the chart $\varphi_i$ (it is $\varphi_i([z])$ with a $1$ inserted in slot~$i$), and nonzero, so $s_i$ is smooth and lands in $S^{2n+1}$; it spans the line of $z$, so $\pi \circ s_i = \mathrm{id}$. For $|z| = 1$ with $z_i \neq 0$, $s_i([z]) = \bar z_i z / |z_i|$, so $\langle z, s_i([z]) \rangle = z_i \langle z, z \rangle / |z_i| = z_i/|z_i|$. By Proposition~\ref{prop:hopf-section-trivialization} a global section would make $\pi$ globally trivial, $S^{2n+1} \cong \mathbb{CP}^n \times S^1$; that this is impossible for $n \ge 1$ is the fact of Remark~\ref{rem:sections-need-not-exist}.
+\end{proof}
+
+\begin{rembox}[The Same Principle Elsewhere]\label{rem:same-principle-elsewhere}
+For the tangent bundle the dictionary is between trivializations and \emph{frames}: the trivialization $\Phi$ of a chart (Definition~\ref{def:tb-charts}) corresponds to the $m$ local sections $u \mapsto \partial/\partial x^i|_u$, since $\Phi^{-1}(u, e_i) = \partial/\partial x^i|_u$; for a vector bundle of rank $m$ one local section is not enough, and it takes $m$ sections that are linearly independent at every point (Lee, Example~10.18 and Proposition~10.19). For the Hopf fibration one section suffices because the fibre is a single orbit of the free $S^1$-action. That is the general pattern of \emph{principal bundles}, where a group acts freely and transitively on each fibre; it is stated here, not proved.
+\end{rembox}
+
 \section{The Tangent Bundle}\label{sec:tangent-bundle}
 
 \roadmark{Stage: bundles}{All the tangent spaces of $M$, assembled into a single manifold that fibres over $M$.}
@@ -8084,7 +8166,7 @@ For $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$, $
 \leeref{Example 4.20}
 \end{exbox}
 
-\textit{Status.} From the homework, where these properties are proved; given in lecture as ``a very important category: non-examples.'' ``You're wrapping a line, but the slope of the line is irrational, so it never closes \ldots\ like one of those spirographs.'' The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is ``a very nice submanifold.'' But ``it's local in the domain'', while being a submanifold is a statement about the whole image. Points outside $U$ ``contribute segments like this, and they're going to be dense. No matter how you shrink this $V$, you won't be able to isolate only the yellow guy.''
+\textit{Status.} Given in lecture as ``a very important category: non-examples''; the properties are proved in Proposition~\ref{prop:irrational-line} below, from Assignment~4, Problem~5. ``You're wrapping a line, but the slope of the line is irrational, so it never closes \ldots\ like one of those spirographs.'' The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is ``a very nice submanifold.'' But ``it's local in the domain'', while being a submanifold is a statement about the whole image. Points outside $U$ ``contribute segments like this, and they're going to be dense. No matter how you shrink this $V$, you won't be able to isolate only the yellow guy.''
 
 \begin{center}
 \begin{tikzpicture}[scale=0.9]
@@ -8273,6 +8355,252 @@ If $M$ is compact, every injective immersion $F : M \to N$ is an embedding.
 
 \textit{An aside from the end of the lecture.} Uribe mentioned that he is developing his own notes for the course, ``based on notes that somebody took a few years ago'', edited ``the night before'', and asked whether they would help, perhaps shared through Overleaf.
 
+\subsection{Closedness and Density}\label{sub:closedness-density}
+
+\textit{Why does density of the irrational line rule out an embedding? Because the image of an embedding is always closed \emph{locally}, and a dense set that is locally closed is open. Prompted by Assignment~4, Problem~5.}
+
+\begin{defbox}[Locally Closed Subset]\deflabel{def:locally-closed}
+A subset $S$ of a topological space $N$ is \textbf{locally closed} if every point of $S$ has an open neighbourhood $V$ in $N$ such that $S \cap V$ is closed in $V$. Equivalently, $S$ is closed in some open subset of $N$ containing it, namely the union $U$ of these $V$'s.
+\end{defbox}
+
+\begin{propbox}[Images of Embeddings Are Locally Closed]\thmlabel{prop:embedding-locally-closed}
+Every regular submanifold of $N$ --- in particular the image of an embedding (Theorem~\ref{thm:embedding-image}) --- is locally closed in $N$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} At each point of the submanifold $S$ there is an adapted chart $(V, \psi)$, in which $S \cap V = \{x \in V : y^{m+1}(x) = \cdots = y^n(x) = 0\}$, a closed subset of $V$ as the zero set of continuous functions. For the equivalence in the definition: if $U$ is the union of these $V$, a point of $U \setminus S$ lies in some $V \setminus S$, which is open, so $U \setminus S$ is open and $S$ is closed in $U$.
+\end{proof}
+
+\begin{corbox}[Dense Submanifolds Are Open]\thmlabel{cor:dense-submanifold}
+A dense regular submanifold $S$ of $N$ is an open subset of $N$, and has codimension $0$. In particular, the image of an embedding $F : M \to N$ with $\dim M < \dim N$ is never dense.
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} By Proposition~\ref{prop:embedding-locally-closed}, $S$ is closed in an open $U \supseteq S$. $S$ is dense in $N$, hence in $U$, and a closed dense subset of $U$ is all of $U$; so $S = U$ is open. If $S$ had codimension $k \ge 1$, take an adapted chart $(V, \psi)$ at a point of $S$: then $\psi(S \cap V)$ would be a nonempty subset of $\mathbb{R}^{n-k} \times \{0\}$, open in $\mathbb{R}^n$ because $S \cap V$ is open in $V$ --- impossible, since no nonempty open subset of $\mathbb{R}^n$ lies in a hyperplane.
+\end{proof}
+
+This is the precise form of Uribe's ``no matter how you shrink $V$, you won't be able to isolate only the yellow guy'': at every point of the irrational line, local closedness fails.
+
+\begin{propbox}[Closed Embeddings Are the Proper Ones]\thmlabel{prop:proper-iff-closed}
+An embedding $F : M \to N$ is proper if and only if its image $F(M)$ is closed in $N$. In particular, an injective proper immersion is exactly an embedding with closed image.
+\leeref{Proposition 5.5}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} If $F$ is proper, it is closed (Proposition~\ref{prop:proper-closed}), so $F(M)$ is closed. Conversely, let $F(M)$ be closed and $K \subseteq N$ compact. Then $K \cap F(M)$ is a closed subset of $K$, hence compact, and $F^{-1}(K) = F^{-1}\big(K \cap F(M)\big)$ is its image under the inverse of the homeomorphism $F : M \to F(M)$, hence compact. The last sentence combines this with Theorem~\ref{thm:proper-embedding}.
+\end{proof}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{0.27\textwidth} p{0.33\textwidth} p{0.3\textwidth}}
+\hline
+Map & Image & Example separating it from the row above \\
+\hline
+injective proper immersion & closed regular submanifold & --- \\
+embedding & locally closed regular submanifold & an open interval embedded in $\mathbb{R}^2$ \\
+injective immersion & possibly not locally closed, even dense & the irrational line \\
+\hline
+\end{tabular}
+\end{center}
+
+Closedness of the image alone is not enough: the image of the figure-eight (Lee's Example~4.19) is compact, hence closed, but the figure-eight is not an embedding. Local closedness is necessary for an embedding, not sufficient.
+
+\begin{lembox}[Dirichlet's Approximation Theorem]\thmlabel{lem:dirichlet}
+For every $\alpha \in \mathbb{R}$ and every integer $N \ge 1$ there are integers $n, m$ with $1 \le n \le N$ and $|n\alpha - m| < 1/N$.
+\leeref{Lemma 4.21}
+\end{lembox}
+
+\textit{Status.} Used in Assignment~4, Problem~5, citing Lee; not proved here. (Lee's proof is a pigeonhole argument on the fractional parts of $0, \alpha, \ldots, N\alpha$.)
+
+\begin{propbox}[The Irrational Line Revisited]\thmlabel{prop:irrational-line}
+Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $\gamma(t) = (e^{2\pi i t}, e^{2\pi i \alpha t})$ --- the curve of Example~\ref{ex:irrational-line} under the identification $[x, y] \mapsto (e^{2\pi i x}, e^{2\pi i y})$. Then $\gamma$ is an injective immersion, its image is dense in $T^2$, and $\gamma$ is not an embedding.
+\leeref{Example 4.20}
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~4, Problem~5: the submitted solution, condensed; the second proof of the last claim is new.)} \emph{Immersion.} $\gamma$ is smooth into $\mathbb{C}^2$ with values in the submanifold $T^2$, hence smooth into $T^2$. Its velocity in $\mathbb{C}^2$, $\big(2\pi i e^{2\pi i t}, 2\pi i\alpha e^{2\pi i \alpha t}\big)$, has first entry of modulus $2\pi \ne 0$, so by the chain rule $\gamma_{*t}$ is nonzero, hence injective.
+
+\emph{Injective.} If $\gamma(t_1) = \gamma(t_2)$, then $t_1 - t_2 \in \mathbb{Z}$ and $\alpha(t_1 - t_2) \in \mathbb{Z}$; if $t_1 \ne t_2$ this makes $\alpha$ rational.
+
+\emph{Dense.} Using $|e^{is} - e^{it}| \le |s - t|$: by Lemma~\ref{lem:dirichlet} there are $n_N \ge 1$ and $m_N$ with $|n_N\alpha - m_N| < 1/N$, so $w_N = e^{2\pi i \alpha n_N} = e^{i\theta_N}$ with $\theta_N = 2\pi(n_N\alpha - m_N)$, $0 < |\theta_N| < 2\pi/N$ (nonzero by injectivity). The powers $w_N^k = e^{2\pi i \alpha (k n_N)}$ are $2\pi/N$-dense in $S^1$, since consecutive ones differ in angle by $|\theta_N|$. So $D = \{e^{2\pi i\alpha k} : k \in \mathbb{Z}\}$ is dense in $S^1$. Given $(e^{2\pi i a}, e^{2\pi i b}) \in T^2$, the points $\gamma(a + k) = (e^{2\pi i a}, e^{2\pi i \alpha a} e^{2\pi i \alpha k})$ have the right first coordinate, and their second coordinates come arbitrarily close to $e^{2\pi i b}$ because $D$ is dense.
+
+\emph{Not an embedding: the submitted proof.} $\gamma(n_N) \to \gamma(0)$, since $|\gamma(n_N) - \gamma(0)| \le 2\pi|n_N\alpha - m_N| < 2\pi/N$. If $\gamma^{-1} : \gamma(\mathbb{R}) \to \mathbb{R}$ were continuous, then $n_N \to 0$, which is false because $n_N \ge 1$.
+
+\emph{Not an embedding: via density.} The image is dense and $\dim \mathbb{R} = 1 < 2 = \dim T^2$, so by Corollary~\ref{cor:dense-submanifold} it is not the image of an embedding.
+\end{proof}
+
+\section{Worked Example: The Double Cover \texorpdfstring{$\mathrm{SU}(2) \to \SO(3)$}{SU(2) -> SO(3)}}\label{sec:double-cover}
+
+\roadmark{Stage: maps}{One example that uses everything so far: submanifolds, embeddings, local diffeomorphisms, and translation in a group.}
+
+\textit{From Assignment~4, Problem~3: the submitted solution, reorganized, with every claim the problem allowed us to assume now proved. References: Lee, Problems~7-22 and 7-23 (quaternions).} The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify it with $\mathrm{SU}(2)$, and acting by conjugation on the pure imaginary quaternions $\mathbb{R}^3$ they give rotations. The result is a two-to-one local diffeomorphism $\mathrm{SU}(2) \to \SO(3)$, and with it $\SO(3) \cong \mathbb{RP}^3$.
+
+\begin{center}
+\begin{tikzcd}[column sep=5em, row sep=3em]
+S^3 \arrow[r, "F", "\cong"'] \arrow[dr, "C"'] & \mathrm{SU}(2) \arrow[d, "G"] \\
+& \SO(3)
+\end{tikzcd}
+\end{center}
+
+The three maps of the section: $F$ identifies unit quaternions with matrices in $\mathrm{SU}(2)$ (Proposition~\ref{prop:s3-su2}); $C$ is conjugation (Proposition~\ref{prop:conjugation-so3}); and $G = C \circ F^{-1}$ is the double cover (Theorem~\ref{thm:double-cover}).
+
+\subsection{Quaternions and the Unit Sphere}\label{sub:quaternions}
+
+\begin{defbox}[Quaternions]\deflabel{def:quaternions}
+The \textbf{quaternions} are $\mathbb{H} = \{ q = x_0 + x_1 i + x_2 j + x_3 k : x_a \in \mathbb{R} \} \cong \mathbb{R}^4$, with the associative, bilinear multiplication determined by
+\[
+i^2 = j^2 = k^2 = -1, \qquad ij = -ji = k, \quad jk = -kj = i, \quad ki = -ik = j .
+\]
+The \textbf{conjugate} of $q$ is $\bar q = x_0 - x_1 i - x_2 j - x_3 k$, its \textbf{norm} is the Euclidean norm $|q|$ of $(x_0, \ldots, x_3)$, and $q$ is \textbf{pure imaginary} if $x_0 = 0$; the pure imaginary quaternions form $\mathbb{H}_0 \cong \mathbb{R}^3$. We identify $\mathbb{C}$ with $\{x_2 = x_3 = 0\}$.
+\leeref{Problem 7-22}
+\end{defbox}
+
+\begin{propbox}[Norm and Conjugation]\thmlabel{prop:quaternion-norm}
+For $p, q \in \mathbb{H}$: $\overline{pq} = \bar q\, \bar p$, $\ q \bar q = \bar q q = |q|^2$, and $|pq| = |p|\,|q|$. Hence every $q \neq 0$ has inverse $q^{-1} = \bar q / |q|^2$, and $S^3 = \{|q| = 1\}$ is a group, with $q^{-1} = \bar q$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not proved in the submitted solution, where the problem stated it; filled in.)} Both sides of $\overline{pq} = \bar q \bar p$ are real-bilinear in $(p, q)$, so it suffices to check basis elements, where it reads, for instance, $\overline{ij} = \bar k = -k$ and $\bar j \bar i = (-j)(-i) = ji = -k$. Expanding $q \bar q$, the cross terms cancel in pairs ($x_1 x_2 (-ij - ji) = 0$, and so on) and the squares give $x_0^2 + x_1^2 + x_2^2 + x_3^2$. Then $|pq|^2 = pq\, \overline{pq} = p\, q \bar q\, \bar p = |q|^2 p \bar p = |p|^2 |q|^2$, using that the real number $|q|^2$ commutes with everything. The rest follows.
+\end{proof}
+
+\begin{propbox}[The Unit Quaternions]\thmlabel{prop:s3-lie-group}
+$S^3 \subseteq \mathbb{H} = \mathbb{R}^4$ is a regular submanifold of dimension $3$ and a group whose multiplication and inversion are smooth. It is connected: every $q \in S^3$ other than $\pm 1$ can be written $q = \cos\theta + \sin\theta\, u$ with $\theta \in (0, \pi)$ and $u \in \mathbb{H}_0$, $|u| = 1$, and $t \mapsto \cos t + \sin t\, u$ joins $1$ to $q$ in $S^3$.
+\end{propbox}
+
+\begin{proof}
+\textit{(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in.)} $1$ is a regular value of $f(x) = |x|^2$, since $f'(x) = 2x^{\mathsf T} \neq 0$ on $S^3$, so $S^3$ is a submanifold of codimension $1$ (Theorem~\ref{thm:rvt-manifolds}). Multiplication is polynomial in the coordinates and inversion is $q \mapsto \bar q$, linear; both are smooth into $\mathbb{R}^4$ and land in $S^3$, hence are smooth into $S^3$ (Lemma~\ref{lem:maps-into-submanifold}). For the polar form, write $q = x_0 + v$ with $v \in \mathbb{H}_0$; if $q \neq \pm 1$ then $v \neq 0$, $x_0^2 + |v|^2 = 1$, and $\theta = \arccos x_0 \in (0, \pi)$, $u = v/|v|$ work, since $|v| = \sin\theta$. The path stays in $S^3$ because $|\cos t + \sin t\, u|^2 = \cos^2 t + \sin^2 t$; and $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$.
+\end{proof}
+
+\subsection{\texorpdfstring{$S^3$ and $\mathrm{SU}(2)$}{S3 and SU(2)}}\label{sub:s3-su2}
+
+\begin{propbox}[$S^3$ Is $\mathrm{SU}(2)$]\thmlabel{prop:s3-su2}
+Identify $\mathbb{C}^2$ with $\mathbb{H}$ by $(z, w) \mapsto z + wj$, so that $\mathbb{C}$ acts by left multiplication.
+\begin{enumerate}
+    \item For $q = a + bj$ ($a, b \in \mathbb{C}$), right multiplication $R_q(x) = xq$ is complex-linear, with matrix $\begin{pmatrix} a & -\bar b \\ b & \bar a \end{pmatrix}$; for $q \in S^3$ this matrix lies in $\mathrm{SU}(2)$.
+    \item $F : S^3 \to \mathrm{SU}(2)$, $F(q) = $ the matrix of $R_{q^{-1}}$, is a group isomorphism, explicitly
+    \[
+    F(x_0 + x_1 i + x_2 j + x_3 k) = \begin{pmatrix} x_0 - x_1 i & x_2 - x_3 i \\ -x_2 - x_3 i & x_0 + x_1 i \end{pmatrix}.
+    \]
+    \item $\mathrm{SU}(2)$ is a regular submanifold of $\Mat(2, \mathbb{C}) \cong \mathbb{R}^8$ of dimension $3$, and $F$ is a diffeomorphism.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(The submitted warm-up gave the matrix in (1) and (2); the problem stated the rest, and the proof of (3) is new, using \ref{sec:embeddings}.)} (1) Left multiplication by $c \in \mathbb{C}$ commutes with right multiplication by $q$ (associativity), so $R_q$ is complex-linear. Using $jc = \bar c\, j$ for $c \in \mathbb{C}$ and $j^2 = -1$,
+\[
+(z + wj)(a + bj) = za + zbj + w\bar a\, j + w \bar b\, j^2 = (az - \bar b w) + (bz + \bar a w)\, j ,
+\]
+which is the matrix shown. Its determinant is $|a|^2 + |b|^2 = |q|^2$; and $R_q$ preserves norms when $|q| = 1$ (Proposition~\ref{prop:quaternion-norm}), and the norm of $\mathbb{H}$ is the Hermitian norm of $\mathbb{C}^2$, so the matrix is unitary. Hence it lies in $\mathrm{SU}(2)$.
+
+(2) $q^{-1} = \bar q = \bar a - bj$, so (1) with $(a, b)$ replaced by $(\bar a, -b)$ gives the formula. $F$ is a homomorphism because $R_{(pq)^{-1}}(x) = x q^{-1} p^{-1} = R_{p^{-1}}(R_{q^{-1}}(x))$ --- the inverse is there to make the order come out right. It is injective, since $R_{q^{-1}} = \mathrm{id}$ forces $q^{-1} = 1 \cdot q^{-1} = 1$. It is surjective: a matrix $\begin{pmatrix} \alpha & \beta \\ \gamma & \delta \end{pmatrix} \in \mathrm{SU}(2)$ has inverse $\begin{pmatrix} \delta & -\beta \\ -\gamma & \alpha \end{pmatrix}$ (determinant $1$) equal to its conjugate transpose $\begin{pmatrix} \bar\alpha & \bar\gamma \\ \bar\beta & \bar\delta \end{pmatrix}$, so $\delta = \bar\alpha$ and $\gamma = -\bar\beta$, with $|\alpha|^2 + |\beta|^2 = 1$; this is $F(a + bj)$ for $a = \bar\alpha$, $b = \bar\beta$.
+
+(3) The formula defines an $\mathbb{R}$-linear map $L : \mathbb{R}^4 \to \Mat(2, \mathbb{C})$ with $F = L|_{S^3}$, and $L$ is injective (its first row determines $x$). An injective linear map is an embedding --- an immersion, and a homeomorphism onto its image, with the inverse a restriction of a linear map --- and so is $L|_{S^3}$, as the composite of the embeddings $S^3 \hookrightarrow \mathbb{R}^4 \xrightarrow{L} \Mat(2, \mathbb{C})$. Its image is $F(S^3) = \mathrm{SU}(2)$ by (2), so $\mathrm{SU}(2)$ is a regular submanifold of dimension $3$ (Theorem~\ref{thm:embedding-image}) and $F$ is a diffeomorphism onto it (Corollary~\ref{cor:embedding-diffeo}).
+\end{proof}
+
+\begin{propbox}[The Tangent Space of $\mathrm{SU}(2)$ at the Identity]\thmlabel{prop:su2-tangent}
+The curves $\gamma_1(t) = \cos t + \sin t\, i$, $\gamma_2(t) = \cos t + \sin t\, j$, $\gamma_3(t) = \cos t + \sin t\, k$ in $S^3$ pass through $1$ with velocities $i, j, k$, and
+\[
+\sigma_1 = F_{*1}(i) = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}, \qquad
+\sigma_2 = F_{*1}(j) = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}, \qquad
+\sigma_3 = F_{*1}(k) = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}.
+\]
+They form a basis of $T_I\,\mathrm{SU}(2) = \mathfrak{su}(2) = \{ X \in \Mat(2, \mathbb{C}) : X^* = -X,\ \tr X = 0 \}$.
+\end{propbox}
+
+\begin{proof}
+\textit{(The submitted solution computed the $\sigma_j$ --- ``use curves, not coordinates'', as the problem's hint said; the identification of the tangent space is filled in.)} By the chain rule for curves, $F_{*1}(\gamma_j'(0)) = (F \circ \gamma_j)'(0)$, the entrywise derivative of
+\[
+F(\gamma_1(t)) = \begin{pmatrix} e^{-it} & 0 \\ 0 & e^{it} \end{pmatrix}, \quad
+F(\gamma_2(t)) = \begin{pmatrix} \cos t & \sin t \\ -\sin t & \cos t \end{pmatrix}, \quad
+F(\gamma_3(t)) = \begin{pmatrix} \cos t & -i\sin t \\ -i\sin t & \cos t \end{pmatrix}
+\]
+at $t = 0$. The three matrices are linearly independent (compare the $(1,1)$, $(1,2)$ and $(2,1)$ entries), and $T_I\,\mathrm{SU}(2)$ has dimension $3$ (Theorem~\ref{thm:tangent-dimension}), so they are a basis. Each lies in $\mathfrak{su}(2)$, which has real dimension $3$: a skew-Hermitian $2 \times 2$ matrix has imaginary diagonal and $x_{21} = -\bar x_{12}$, four real parameters, and $\tr X = 0$ removes one. So $T_I\,\mathrm{SU}(2) = \Span\{\sigma_j\} = \mathfrak{su}(2)$.
+\end{proof}
+
+\subsection{Conjugation and Rotations}\label{sub:conjugation}
+
+\begin{propbox}[Conjugation by Unit Quaternions Is Rotation]\thmlabel{prop:conjugation-so3}
+For $q \in S^3$, the map $C_q(v) = q v \bar q$ sends $\mathbb{H}_0 \cong \mathbb{R}^3$ to itself, and:
+\begin{enumerate}
+    \item $C_q \in \SO(3)$, and $C : S^3 \to \SO(3)$, $q \mapsto C_q$, is a smooth group homomorphism;
+    \item $\ker C = \{\pm 1\}$, so $C_p = C_q$ if and only if $p = \pm q$;
+    \item if $u \in \mathbb{H}_0$ is a unit vector and $\theta \in \mathbb{R}$, then $C_q$ for $q = \cos\frac\theta2 + \sin\frac\theta2\, u$ is the rotation by the angle $\theta$ about the axis $u$.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(The problem stated (1) and the two-to-one property without proof; filled in. Part (3) contains the submitted computation: for $q = \gamma_j(t)$ it gives the rotation by $2t$ about $e_j$.)} A quaternion $v$ is pure imaginary iff $\bar v = -v$, and then $\overline{q v \bar q} = q \bar v \bar q = -q v \bar q$, so $C_q(v) \in \mathbb{H}_0$; and $|C_q(v)| = |v|$ by Proposition~\ref{prop:quaternion-norm}. So $C_q$ is a linear isometry of $\mathbb{R}^3$, $C_q \in \Ogp(3)$.
+
+(1) $C_{pq}(v) = pq v \bar q \bar p = C_p(C_q(v))$. The entries of $C_q$ are quadratic polynomials in the coordinates of $q$, so $C$ is smooth into $\Mat(3, \mathbb{R})$, with values in the submanifold $\Ogp(3)$ (Theorem~\ref{thm:classical-summary}). $\det \circ C : S^3 \to \{\pm 1\}$ is continuous on the connected $S^3$ (Proposition~\ref{prop:s3-lie-group}) and equals $1$ at $q = 1$, so $C$ takes values in $\SO(3)$, an open subset of $\Ogp(3)$; hence $C$ is smooth into $\SO(3)$ (Lemma~\ref{lem:maps-into-submanifold}).
+
+(2) If $C_q = \mathrm{id}$, then $q$ commutes with $i$, $j$ and $k$. Writing $q = x_0 + x_1 i + x_2 j + x_3 k$, $qi = iq$ forces $x_2 = x_3 = 0$, and $qj = jq$ forces $x_1 = 0$; so $q = x_0$ is real, and $|q| = 1$ gives $q = \pm 1$. Conversely $C_{\pm 1} = \mathrm{id}$. Then $C_p = C_q$ iff $C_{p\bar q} = \mathrm{id}$ iff $p = \pm q$.
+
+(3) Write $c = \cos\frac\theta2$, $s = \sin\frac\theta2$. For pure imaginary $u, v$ one has $uv = -u\cdot v + u \times v$, so $u$ commutes with $q$ and $C_q(u) = u q \bar q = u$. If $v \perp u$, then $vu = -uv$, hence $v\bar q = (c + su) v = qv$, and
+\[
+C_q(v) = q^2 v = \big(\cos\theta + \sin\theta\, u\big) v = \cos\theta\, v + \sin\theta\, (u \times v) .
+\]
+That is the rotation by $\theta$ about $u$: it fixes $u$ and turns the plane $u^\perp$ through $\theta$.
+\end{proof}
+
+The half-angle in (3) is the source of the factor $2$ below: the curve $\gamma_j(t)$ through $1$ moves at unit speed in $S^3$, but its image rotates by $2t$.
+
+\begin{lembox}[Every Rotation Has an Axis]\thmlabel{lem:euler-axis}
+Every $A \in \SO(3)$ is the rotation by some angle $\theta$ about some unit axis $u$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} $\det(A - I) = \det(A - A A^{\mathsf T}) = \det A \, \det(I - A^{\mathsf T}) = \det(I - A) = -\det(A - I)$, the last step because $3$ is odd. So $\det(A - I) = 0$, and $Au = u$ for some unit $u$. $A$ preserves $u^\perp$ and restricts to an orientation-preserving isometry of that plane, a rotation by some $\theta$.
+\end{proof}
+
+\subsection{The Double Cover}\label{sub:double-cover}
+
+\begin{lembox}[Translating the Differential]\thmlabel{lem:group-morphism-translation}
+Let $G : H \to K$ be a smooth group homomorphism between groups of matrices that are regular submanifolds, closed under products and inverses. For $h \in H$ let $L_h(x) = hx$. Then for every $g \in H$,
+\[
+G_{*g} = (L_{G(g)})_{*I} \circ G_{*I} \circ (L_{g^{-1}})_{*g} ,
+\]
+and each $(L_h)_{*}$ is an isomorphism. In particular, if $G_{*I}$ is an isomorphism, so is every $G_{*g}$.
+\end{lembox}
+
+\begin{proof}
+\textit{(The submitted solution's argument, isolated as a lemma.)} $L_h$ is the restriction of the linear map $x \mapsto hx$, so it is smooth (Lemma~\ref{lem:maps-into-submanifold}), with smooth inverse $L_{h^{-1}}$: a diffeomorphism, so its differentials are isomorphisms (chain rule). $G$ is a homomorphism, so $G \circ L_g = L_{G(g)} \circ G$; differentiating at $I$ gives $G_{*g} \circ (L_g)_{*I} = (L_{G(g)})_{*I} \circ G_{*I}$, and $(L_g)_{*I}^{-1} = (L_{g^{-1}})_{*g}$.
+\end{proof}
+
+This is the left translation of the discussion of moving base points: in a group, translation carries the tangent space at $I$ to the tangent space at every $g$, so what happens at the identity happens everywhere.
+
+\begin{thmbox}[The Double Cover $\mathrm{SU}(2) \to \SO(3)$]\thmlabel{thm:double-cover}
+$G = C \circ F^{-1} : \mathrm{SU}(2) \to \SO(3)$ is a surjective smooth group homomorphism and a local diffeomorphism, with
+\[
+G_{*I}(\sigma_j) = 2\,\hat e_j \qquad (j = 1, 2, 3),
+\]
+twice the basis of $\Skew(3, \mathbb{R}) = T_I\,\SO(3)$ given by the hat map. It is two-to-one: $G(g) = G(h)$ iff $h = \pm g$. Consequently $G$ induces a homeomorphism
+\[
+\SO(3) \;\cong\; \mathrm{SU}(2)/\{\pm I\} \;\cong\; S^3/\{\pm 1\} \;=\; \mathbb{RP}^3 .
+\]
+\end{thmbox}
+
+\begin{proof}
+\textit{(The submitted solution computed $G_{*I}(\sigma_j)$ and proved the local diffeomorphism; surjectivity, the two-to-one property and the identification with $\mathbb{RP}^3$ are filled in.)} $G$ is a smooth homomorphism, as a composite of $F^{-1}$ (Proposition~\ref{prop:s3-su2}) and $C$.
+
+\emph{The differential at $I$.} By the chain rule $G_{*I}(\sigma_j) = G_{*I}(F_{*1}(\gamma_j'(0))) = C_{*1}(\gamma_j'(0)) = (C \circ \gamma_j)'(0)$, and by Proposition~\ref{prop:conjugation-so3}(3) with $\theta = 2t$, $C(\gamma_j(t))$ is the rotation by $2t$ about $e_j$; for $j = 1$,
+\[
+C(\gamma_1(t)) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & \cos 2t & -\sin 2t \\ 0 & \sin 2t & \cos 2t \end{pmatrix}, \qquad \frac{d}{dt}\Big|_{t=0} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & -2 \\ 0 & 2 & 0 \end{pmatrix} = 2\,\hat e_1 ,
+\]
+and likewise for $j = 2, 3$ (Definition~\ref{def:hat-map}). The $\hat e_j$ are a basis of $T_I\,\SO(3) = \Skew(3, \mathbb{R})$ (Example~\ref{ex:so3-infinitesimal}), so $G_{*I}$ is an isomorphism.
+
+\emph{Local diffeomorphism.} By Lemma~\ref{lem:group-morphism-translation} every $G_{*g}$ is an isomorphism, so $G$ is a local diffeomorphism (Theorem~\ref{thm:local-diffeo-criterion}).
+
+\emph{Surjective.} By Lemma~\ref{lem:euler-axis}, an element of $\SO(3)$ is a rotation by some $\theta$ about some $u$, which is $C_q = G(F(q))$ for $q = \cos\frac\theta2 + \sin\frac\theta2\, u$ by Proposition~\ref{prop:conjugation-so3}(3).
+
+\emph{Two-to-one.} $G(g) = G(h)$ iff $C_{F^{-1}(g)} = C_{F^{-1}(h)}$ iff $F^{-1}(h) = \pm F^{-1}(g)$ (Proposition~\ref{prop:conjugation-so3}(2)) iff $h = \pm g$, since $F$ is a homomorphism with $F(-1) = -I$.
+
+\emph{$\mathbb{RP}^3$.} $C$ is constant on the classes $\{\pm q\}$, so it induces a map $\bar C : S^3/\{\pm 1\} \to \SO(3)$, continuous by the universal property of the quotient, and bijective by the last two steps. $S^3/\{\pm 1\} = \mathbb{RP}^3$ (Corollary~\ref{cor:rpn-atlas}) is compact as the image of $S^3$, and $\SO(3)$ is Hausdorff, so $\bar C$ is a homeomorphism (Fact~\ref{fact:compact}); and $F$ identifies $S^3/\{\pm 1\}$ with $\mathrm{SU}(2)/\{\pm I\}$.
+\end{proof}
+
+\begin{rembox}[What the Example Shows]\label{rem:what-example-shows-2}
+$G$ is a local diffeomorphism that is not a diffeomorphism: locally $\mathrm{SU}(2)$ and $\SO(3)$ are indistinguishable --- their tangent spaces at $I$ are isomorphic, and $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ --- but globally $\mathrm{SU}(2) \cong S^3$ wraps twice around $\SO(3) \cong \mathbb{RP}^3$. Every fibre $G^{-1}(A) = \{\pm g\}$ is two points, and $G$ is a proper surjective submersion onto the connected $\SO(3)$, so Ehresmann's theorem (Theorem~\ref{thm:ehresmann}, stated without proof) makes it a fibration whose fibre is two points: a double cover. The smooth version of the last statement --- that $\bar C$ is a diffeomorphism for the smooth structure of $\mathbb{RP}^3$ --- needs the quotient map $S^3 \to \mathbb{RP}^3$ to be a local diffeomorphism, and is not proved here.
+\end{rembox}
+
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
 
@@ -8347,6 +8675,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:tangent-bundle}\ The tangent bundle & Chapter 3, \emph{The Tangent Bundle} (Lemma 1.35, Proposition 3.18); Proposition 11.9 (cotangent bundle); Chapter 8 (vector fields); Chapter 10 (sections) \\
 \ref{sec:immersions}\ Immersions & Chapter 4, \emph{Immersions} (Theorem 4.12); Example 4.19 \\
 \ref{sec:embeddings}\ Embeddings & Chapter 4, \emph{Embeddings} (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 \\
+\ref{sec:double-cover}\ The double cover $\mathrm{SU}(2) \to \SO(3)$ & Problems 7-22 and 7-23 (quaternions); Examples 7.27--7.30 (matrix groups) \\
 \bottomrule
 \end{longtable}
 
@@ -8409,11 +8738,13 @@ Theorem 4.5 & Thm.~\ref{thm:local-diffeo-criterion} \\
 Proposition 4.6 & Cor.~\ref{cor:bijective-local-diffeo} \\
 Proposition 4.8 & Thm.~\ref{thm:local-diffeo-criterion}, Prop.~\ref{prop:dimension-constraints} \\
 Theorem 4.12 & Thm.~\ref{thm:submersion-normal-form}, Thm.~\ref{thm:immersion-normal-form} \\
-Example 4.20 & Ex.~\ref{ex:irrational-line} \\
+Example 4.20 & Ex.~\ref{ex:irrational-line}, Prop.~\ref{prop:irrational-line} \\
+Lemma 4.21 & Lem.~\ref{lem:dirichlet} \\
 Proposition 4.22 & Thm.~\ref{thm:proper-embedding}, Cor.~\ref{cor:compact-embedding} \\
 Proposition 4.28 & Cor.~\ref{cor:submersion-open-map} \\
 Problem 4-5 & Prop.~\ref{prop:cp1-sphere}, Ex.~\ref{ex:hopf-submersion}, Ex.~\ref{ex:hopf-fibration} \\
 Proposition 5.2 & Thm.~\ref{thm:embedding-image} \\
+Proposition 5.5 & Prop.~\ref{prop:proper-iff-closed} \\
 Theorem 5.8 & Def.~\ref{def:submanifold}, Prop.~\ref{prop:submanifold-structure} \\
 Corollary 5.14 & Thm.~\ref{thm:regular-value}, Prop.~\ref{prop:level-set-smooth}, Thm.~\ref{thm:rvt-manifolds} \\
 Corollary 5.30 & Lem.~\ref{lem:maps-into-submanifold} \\
@@ -8428,6 +8759,7 @@ Example 7.28 & Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summa
 Example 7.29 & Def.~\ref{def:complex-groups}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:Un-smooth}, Cor.~\ref{cor:Un-compact}, Thm.~\ref{thm:classical-summary} \\
 Example 7.30 & Def.~\ref{def:complex-groups}, Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summary} \\
 Problem 7-4 & Prop.~\ref{prop:jacobi}, Cor.~\ref{cor:jacobi-gradient} \\
+Problem 7-22 & Def.~\ref{def:quaternions} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\
@@ -8474,5 +8806,6 @@ Theorem C.40 & Thm.~\ref{thm:ift-general}, Cor.~\ref{thm:ift} \\
 \bottomrule
 \end{longtable}
 }
+
 
 \end{document}
