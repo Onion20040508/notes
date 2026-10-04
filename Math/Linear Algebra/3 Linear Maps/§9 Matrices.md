@@ -46,7 +46,7 @@ tags: [linear-algebra]
 > - Well defined and bijective in $T$ because of [[Linear map lemma]] and [[§5 Bases#^ladr-2-28|Criterion for basis]].
 > - Compatible with the algebra: [[§9 Matrices#^ladr-3-35|Matrix of the sum of linear maps]], [[§9 Matrices#^ladr-3-38|The matrix of a scalar times a linear map]], [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps (LADR 3.43)]]. Acts on coordinates: [[§10 Invertibility and Isomorphisms#^ladr-3-76|Linear maps act like matrix multiplication]].
 > - Depends on the bases: [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]]. Much of Chapters 5–8 is about choosing bases that make $\mathcal{M}(T)$ simple.
-> - For the differential of a smooth map in coordinate bases this matrix is the Jacobian: [[§25 The Differential in Coordinates#^thm-25-2|591 Thm. §25.2]].
+> - For the differential of a smooth map in coordinate bases this matrix is the Jacobian: [[§28 The Differential in Coordinates#^thm-28-2|591 Thm. §28.2]].
 > - Computational version: [[§35 Eigenvectors and Linear Transformations#^def-35-1|235 Def. §35.1]] and [[§35 Eigenvectors and Linear Transformations#^thm-35-1|235 Thm. §35.1]] (column j is [T(b_j)]_C); for ℝⁿ → ℝᵐ with the standard bases, [[§9 The Matrix of a Linear Transformation#^def-9-1|235 Def. §9.1]].
 
 %% ex:3.31-fig %%
@@ -144,7 +144,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Combined with $\Lin(V,W)\cong\F^{m,n}$: [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]].
-> - 591 uses this to identify square matrices with a Euclidean space and so give them a topology: [[§8 Topological Groups and Classical Matrix Groups#^def-8-2|591 Def. §8.2]].
+> - 591 uses this to identify square matrices with a Euclidean space and so give them a topology: [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|591 Def. §10.2]].
 > - Computational version: [[§11 Matrix Operations#^thm-11-1|235 Thm. §11.1]] (the vector-space laws for matrices), and the standard basis of the m × n matrices in [[§25 Linearly Independent Sets; Bases#^ex-25-2|235 Ex. §25.2]](d).
 
 > [!definition] Definition 3.41: Matrix multiplication
@@ -189,7 +189,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Restated with explicit bases in [[§10 Invertibility and Isomorphisms#^ladr-3-81|Matrix of product of linear maps (LADR 3.81)]]; used for change of basis [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]] and [[§10 Invertibility and Isomorphisms#^ladr-3-86|Matrix of inverse equals inverse of matrix]].
-> - Applied to differentials it is the chain rule in coordinates: [[§25 The Differential in Coordinates#^cor-25-3|591 Cor. §25.3]].
+> - Applied to differentials it is the chain rule in coordinates: [[§28 The Differential in Coordinates#^cor-28-3|591 Cor. §28.3]].
 > - In ℝⁿ: [[§11 Matrix Operations#^thm-11-2|235 Thm. §11.2]] (multiplication of matrices is composition).
 
 > [!remark] Notation 3.44: Aj,⋅, A⋅,k (p. 74)
@@ -353,5 +353,5 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Rank–nullity for matrices: [[Fundamental theorem of linear maps]] with [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]] gives $n=\dim\nullsp A+\operatorname{rank}A$.
-> - The rank of a smooth map at a point is the rank of its Jacobian, equivalently of its differential: [[§7 The Regular Value Theorem#^def-7-1|591 Def. §7.1]], [[§25 The Differential in Coordinates#^def-25-1|591 Def. §25.1]].
+> - The rank of a smooth map at a point is the rank of its Jacobian, equivalently of its differential: [[§7 The Regular Value Theorem#^def-7-1|591 Def. §7.1]], [[§28 The Differential in Coordinates#^def-28-1|591 Def. §28.1]].
 > - Computational version: [[§28 Rank#^def-28-1|235 Def. §28.1]] (also [[§19 Dimension and Rank#^def-19-3|235 Def. §19.3]]: the number of pivot columns).

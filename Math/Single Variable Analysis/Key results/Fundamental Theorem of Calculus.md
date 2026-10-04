@@ -35,7 +35,7 @@ tags: [real-analysis, hub]
 - [[§17 Invariance Properties and Fubini's Theorem#^thm-17-13|Theorem §17.13: Layer Cake Formula (Cavalieri's Principle)]]
 
 ## Used in (Differentiable Manifolds)
-- [[§24 Coordinate Derivations and the Basis Theorem#^lem-24-2|Lemma §24.2: Hadamard's Lemma]]
+- [[§27 Coordinate Derivations and the Basis Theorem#^lem-27-2|Lemma §27.2: Hadamard's Lemma]]
 
 ## Used in (Functional Analysis)
 - [[§9 Completeness#^prop-9-7|Proposition §9.7: (C²[a,b], ∣·∣_X) is Not Complete]]

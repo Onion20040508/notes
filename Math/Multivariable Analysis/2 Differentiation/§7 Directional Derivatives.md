@@ -52,7 +52,7 @@ A basic property of [[§6 Differentiability#^def-6-1|differentiable]] functions 
 ^rem-7-1
 
 > [!remark]- Connections
-> - On a manifold, tangent vectors are built from this operation: the directional derivative $D_v$ attached to a tangent vector, [[§22 Tangent Spaces II꞉ Germs#^def-22-1|591 Def. §22.1]], abstracted to derivations at a point, [[§23 Derivations and the Abstract Tangent Space#^def-23-1|591 Def. §23.1]].
+> - On a manifold, tangent vectors are built from this operation: the directional derivative $D_v$ attached to a tangent vector, [[§25 Tangent Spaces II꞉ Germs#^def-25-1|591 Def. §25.1]], abstracted to derivations at a point, [[§26 Derivations and the Abstract Tangent Space#^def-26-1|591 Def. §26.1]].
 > - Computational version: [[§95 Directional Derivatives and the Gradient Vector#^def-95-1|Calc Def. §95.1]] (with worked examples).
 
 > [!theorem] Theorem §7.1: Directional Derivative Formula

@@ -134,7 +134,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: second countability of subspaces is [[§18 Countability Axioms#^thm-18-3|590 §18.3]]; Hausdorff is [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]].
-> - Already used ad hoc for spheres in [[§2 Topological Manifolds#^ex-2-4|Ex. §2.4]] and [[§2 Topological Manifolds#^prop-2-7|§2.7]]; reused for level sets in [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
+> - Used ad hoc for spheres in [[§8 Example꞉ Spheres#^ex-8-1|Ex. §8.1]] and [[§8 Example꞉ Spheres#^prop-8-1|§8.1]]; reused for level sets in [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
 
 > [!theorem] Proposition §3.6: Open Subsets of Manifolds Are Manifolds
 > An open subset $S$ of a topological $n$-manifold $X$, with the subspace topology, is a topological $n$-manifold.
@@ -144,11 +144,11 @@ This completes the pattern: each of the three constructions — subspace, produc
 ^prop-3-6
 
 > [!proof]+ Proof
-> $S$ is Hausdorff and second countable by [[§3 Subspaces and Products#^thm-3-5|Theorem §3.5]]. For $p \in S$ choose a chart $(U, \varphi)$ of $X$ at $p$. Then $U \cap S$ is open in $X$, hence in $S$, and $(U \cap S, \varphi|_{U \cap S})$ is a chart by [[§2 Topological Manifolds#^lem-2-11|Lemma §2.11]](1). [[§2 Topological Manifolds#^prop-2-3|Proposition §2.3]] finishes. ([[§3 Subspaces and Products#^lem-3-2|Lemma §3.2]] is what makes “open in $S$” and “open in $X$” interchangeable here.)
+> $S$ is Hausdorff and second countable by [[§3 Subspaces and Products#^thm-3-5|Theorem §3.5]]. For $p \in S$ choose a chart $(U, \varphi)$ of $X$ at $p$. Then $U \cap S$ is open in $X$, hence in $S$, and $(U \cap S, \varphi|_{U \cap S})$ is a chart by [[§2 Topological Manifolds#^lem-2-10|Lemma §2.10]](1). [[§2 Topological Manifolds#^prop-2-3|Proposition §2.3]] finishes. ([[§3 Subspaces and Products#^lem-3-2|Lemma §3.2]] is what makes “open in $S$” and “open in $X$” interchangeable here.)
 
 ^pf-3-6
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§2 Topological Manifolds#^lem-2-11|§2.11]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 
 > [!definition] Definition §3.2: Open Submanifold
 > An **open submanifold** of a topological $n$-manifold $X$ is an open subset $S \subseteq X$ with the subspace topology — a topological $n$-manifold by [[§3 Subspaces and Products#^prop-3-6|Proposition §3.6]].
@@ -177,7 +177,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: [[§4 Product Topology#^def-4-1|590 Def. §4.1]]; arbitrary products in [[§10 Product Topology on Arbitrary Products#^def-10-1|590 Def. §10.1]].
-> - Smooth version: [[§15 Smooth Functions and Smooth Maps#^prop-15-8|The Product Smooth Structure, §15.8]].
+> - Smooth version: [[§18 Smooth Functions and Smooth Maps#^prop-18-8|The Product Smooth Structure, §18.8]].
 
 > [!theorem] Proposition §3.7: The Product Basis Generates a Topology
 > The collection $\mathcal{B}$ of products $U \times V$ of open sets satisfies the axioms of [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]], so it is a basis for a topology on $X \times Y$.
@@ -222,7 +222,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 *Uses:* [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§3 Subspaces and Products#^prop-3-7|§3.7]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^prop-1-1|§1.1]]
 
 > [!remark] Remark: Cartoons
-> Uribe on the figure above: diagrams of this kind are “incredibly important and useful”—an open set in a product is one in which every point can be surrounded by a *box*. The box picture is what actually gets used in proofs (it reappears in the second-countability part of [[§3 Subspaces and Products#^thm-3-12|Theorem §3.12]] and in the proof of the [[§6 Open Quotients and Complex Projective Space#^pf-6-1|Hausdorff Criterion]] below), and he encourages drawing it every time.
+> Uribe on the figure above: diagrams of this kind are “incredibly important and useful”—an open set in a product is one in which every point can be surrounded by a *box*. The box picture is what actually gets used in proofs (it reappears in the second-countability part of [[§3 Subspaces and Products#^thm-3-12|Theorem §3.12]] and in the proof of the [[§6 Open Quotients#^pf-6-1|Hausdorff Criterion]] below), and he encourages drawing it every time.
 
 ^rem-3-4
 
@@ -268,7 +268,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1 (Continuity into Product Spaces)]]; imported in [[§1 Point-Set Topology Review#^prop-1-5|§1.5]].
-> - Smooth version: [[§15 Smooth Functions and Smooth Maps#^prop-15-8|§15.8]], [[§15 Smooth Functions and Smooth Maps#^prop-15-9|§15.9]].
+> - Smooth version: [[§18 Smooth Functions and Smooth Maps#^prop-18-8|§18.8]], [[§18 Smooth Functions and Smooth Maps#^prop-18-9|§18.9]].
 
 > [!remark] Remark: Why the Universal Property Matters
 > “To check that $F$ is continuous, you just check component by component.” Uribe flagged that the same pattern will reappear for *differentiability*: a map into a product of manifolds will be smooth iff its components are. In Lee's language this is the *characteristic property* of the product topology (Lee Prop. A.16), and it characterizes the product topology uniquely ([[§3 Subspaces and Products#^cor-3-11|Corollary §3.11]] below). Together with the previous proposition this gives two independent abstract descriptions of the same topology—“coarsest making projections continuous” and “the one that lets you check maps componentwise.”
@@ -310,7 +310,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: second countability of products is [[§18 Countability Axioms#^thm-18-3|590 §18.3]].
-> - Gives product manifolds their point-set hygiene: [[§15 Smooth Functions and Smooth Maps#^prop-15-8|§15.8]].
+> - Gives product manifolds their point-set hygiene: [[§18 Smooth Functions and Smooth Maps#^prop-18-8|§18.8]].
 
 > [!remark] Remark
 > Both statements extend to finite products by induction. For *infinite* products the story is subtler (product vs. box topology, 590 [[§10 Product Topology on Arbitrary Products#^def-10-2|§10]]), but finite products are all we need: they are how product manifolds like the torus $T^n = S^1 \times \cdots \times S^1$ will get their point-set hygiene for free, leaving only local Euclideanness to check.

@@ -33,7 +33,7 @@ tags: [group-theory, math493]
 ^rem-30-1
 
 > [!remark]- Connections
-> - The same action for all real matrix groups in 591: [[§10 Group Actions and Orbit Spaces#^ex-10-1|591 Ex. §10.1]].
+> - The same action for all real matrix groups in 591: [[§12 Group Actions and Orbit Spaces#^ex-12-1|591 Ex. §12.1]].
 
 > [!theorem] Proposition §30.2: $O_3(\mathbb{R})$ Acting on $\mathbb{R}^3$
 > Let $O_3(\mathbb{R}) = \{A : A^{\mathsf{T}}A = I\}$ act on $\mathbb{R}^3$ by matrix multiplication.
@@ -57,7 +57,7 @@ tags: [group-theory, math493]
 *Left: $GL_3(\mathbb{R})$ has two orbits on $\mathbb{R}^3$, the origin (red) and everything else (blue); any $v \neq 0$ is reached from $e_1$ by an invertible $P$ with first column $v$. Right: $O_3(\mathbb{R})$ preserves length, so its orbits are the origin and the spheres $S_r$ (blue), and $e_1$ reaches only the vectors $w$ with $|w| = 1$. The stabilizer of $e_1$ acts as $O_2(\mathbb{R})$ on the plane $e_1^\perp$, moving the great circle $e_1^\perp \cap S_1$ (red) within itself.*
 
 > [!remark]- Connections
-> - In 591 the rotation version makes the unit sphere a homogeneous space, SO(3)/SO(2) ≅ S², [[§11 Homogeneous Spaces#^ex-11-3|591 Ex. §11.3]] (orbits as in [[§10 Group Actions and Orbit Spaces#^ex-10-5|591 Ex. §10.5]]); O(n) also acts transitively on the Grassmannians, [[§12 The Topology of G∕H and Real Grassmannians#^prop-12-6|591 Prop. §12.6]].
+> - In 591 the rotation version makes the unit sphere a homogeneous space, SO(3)/SO(2) ≅ S², [[§13 Homogeneous Spaces#^ex-13-3|591 Ex. §13.3]] (orbits as in [[§12 Group Actions and Orbit Spaces#^ex-12-5|591 Ex. §12.5]]); O(n) also acts transitively on the Grassmannians, [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-6|591 Prop. §14.6]].
 > - Used in Relativity: the orbits of the Lorentz group are hyperboloids and light cones, where those of the rotations are spheres — [[§B1.3 Causal Structure and Proper Time#^rem-b1-3-1|REL Remark: Normal forms, and the orbits of the Lorentz group]].
 
 > [!theorem] Proposition §30.3: Rotational Symmetries of the Cube

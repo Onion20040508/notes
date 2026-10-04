@@ -34,14 +34,14 @@ tags: [linear-algebra, hub]
 - [[§38 The First Isomorphism Theorem#^rem-38-2|Remark: Rank–Nullity]]
 
 ## Used in (Differentiable Manifolds)
-- [[§17 Linear Algebra Toolkit#^prop-17-4|Proposition §17.4: Properties of the Dual Map]]
-- [[§17 Linear Algebra Toolkit#^prop-17-6|Proposition §17.6: Quotient Spaces and Their Universal Property]]
-- [[§20 Tangent Spaces I꞉ The Geometric Picture#^lem-20-2|Lemma §20.2: The Geometric Tangent Space of a Graph]]
-- [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|Theorem §20.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
-- [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-7|Theorem §20.7: Dimension of the Geometric Tangent Space]]
-- [[§21 Transversality#^prop-21-4|Proposition §21.4: Transverse Intersections]]
-- [[§29 Submersions#^prop-29-1|Proposition §29.1: Dimension Constraints]]
-- [[§30 Submanifolds#^thm-30-6|Theorem §30.6: The Regular Value Theorem for Manifolds]]
+- [[§20 Linear Algebra Toolkit#^prop-20-4|Proposition §20.4: Properties of the Dual Map]]
+- [[§20 Linear Algebra Toolkit#^prop-20-6|Proposition §20.6: Quotient Spaces and Their Universal Property]]
+- [[§23 Tangent Spaces I꞉ The Geometric Picture#^lem-23-2|Lemma §23.2: The Geometric Tangent Space of a Graph]]
+- [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|Theorem §23.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
+- [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-7|Theorem §23.7: Dimension of the Geometric Tangent Space]]
+- [[§24 Transversality#^prop-24-4|Proposition §24.4: Transverse Intersections]]
+- [[§32 Submersions#^prop-32-1|Proposition §32.1: Dimension Constraints]]
+- [[§33 Submanifolds#^thm-33-6|Theorem §33.6: The Regular Value Theorem for Manifolds]]
 
 ## Connections
 - **Immediate consequences.** Comparing dimensions: [[§8 Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]] (3.22), [[§8 Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]] (3.24), [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (3.65).

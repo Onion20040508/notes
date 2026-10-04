@@ -13,7 +13,7 @@ The real line with its origin doubled, $X = (-\infty, 0) \cup \{0_1, 0_2\} \cup 
 - How to read a quotient, worked out for the line with two origins ([[§4 Quotient Spaces and Open Maps#^rem-4-1|§4]])
 - As a quotient of two lines: a quotient of a Hausdorff space need not be Hausdorff ([[§4 Quotient Spaces and Open Maps#^ex-4-1|§4]])
 - The quotient and the neighborhood-basis constructions give homeomorphic spaces ([[§4 Quotient Spaces and Open Maps#^prop-4-2|§4]])
-- Via the Hausdorff criterion: the relation is open but its graph is not closed ([[§6 Open Quotients and Complex Projective Space#^ex-6-1|§6]])
+- Via the Hausdorff criterion: the relation is open but its graph is not closed ([[§6 Open Quotients#^ex-6-1|§6]])
 
 ## Definition by neighborhood bases; the two origins cannot be separated
 ![[§1 Point-Set Topology Review#^ex-1-4]]
@@ -37,4 +37,4 @@ The real line with its origin doubled, $X = (-\infty, 0) \cup \{0_1, 0_2\} \cup 
 ![[§4 Quotient Spaces and Open Maps#^prop-4-2]]
 
 ## Via the Hausdorff criterion: the relation is open but its graph is not closed
-![[§6 Open Quotients and Complex Projective Space#^ex-6-1]]
+![[§6 Open Quotients#^ex-6-1]]

@@ -26,11 +26,11 @@ tags: [linear-algebra, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5: Regular Points When N ≤ m]]
-- [[§8 Topological Groups and Classical Matrix Groups#^def-8-4|Definition §8.4: General Linear Group]]
-- [[§8 Topological Groups and Classical Matrix Groups#^def-8-8|Definition §8.8: Complex Matrix Groups]]
-- [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-19-3|Lemma §19.3: A One-Sided Inverse Suffices]]
-- [[§29 Submersions#^thm-29-4|Theorem §29.4: Local Normal Form for Submersions]]
-- [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^lem-35-6|Lemma §35.6: Every Rotation Has an Axis]]
+- [[§10 Topological Groups and Classical Matrix Groups#^def-10-4|Definition §10.4: General Linear Group]]
+- [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Definition §10.8: Complex Matrix Groups]]
+- [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-22-3|Lemma §22.3: A One-Sided Inverse Suffices]]
+- [[§32 Submersions#^thm-32-4|Theorem §32.4: Local Normal Form for Submersions]]
+- [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^lem-39-6|Lemma §39.6: Every Rotation Has an Axis]]
 
 ## Connections
 - Characteristic polynomial: $\lambda$ is an eigenvalue iff $\det(\lambda I-T)=0$ ([[§34 Determinants#^ladr-9-51|9.51]]).

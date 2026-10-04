@@ -28,13 +28,13 @@ tags: [topology, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
-- [[§2 Topological Manifolds#^prop-2-13|Proposition §2.13: Manifolds Are Locally Compact]]
-- [[§6 Open Quotients and Complex Projective Space#^prop-6-4|Proposition §6.4: ℂPⁿ is Hausdorff and Second Countable]]
-- [[§10 Group Actions and Orbit Spaces#^cor-10-4|Corollary §10.4: Compact Group and Compact Hausdorff Space]]
-- [[§13 Differentiable Structures#^prop-13-3|Proposition §13.3: The Circle Needs More Than One Chart]]
-- [[§29 Submersions#^thm-29-7|Theorem §29.7: Submersions from Compact Manifolds]]
-- [[§34 Embeddings#^prop-34-4|Proposition §34.4: Proper Maps into Manifolds Are Closed]]
-- [[§34 Embeddings#^cor-34-6|Corollary §34.6: Injective Immersions of Compact Manifolds]]
+- [[§2 Topological Manifolds#^prop-2-12|Proposition §2.12: Manifolds Are Locally Compact]]
+- [[§9 Example꞉ Complex Projective Space#^prop-9-1|Proposition §9.1: ℂPⁿ is Hausdorff and Second Countable]]
+- [[§12 Group Actions and Orbit Spaces#^cor-12-4|Corollary §12.4: Compact Group and Compact Hausdorff Space]]
+- [[§16 Differentiable Structures#^prop-16-3|Proposition §16.3: The Circle Needs More Than One Chart]]
+- [[§32 Submersions#^thm-32-7|Theorem §32.7: Submersions from Compact Manifolds]]
+- [[§37 Embeddings#^prop-37-4|Proposition §37.4: Proper Maps into Manifolds Are Closed]]
+- [[§37 Embeddings#^cor-37-6|Corollary §37.6: Injective Immersions of Compact Manifolds]]
 
 ## Connections
 - **Technique.** First separate x from each point of Y, then pass to a finite subcover. The same local-then-global argument, applied twice, proves [[§20 Normal Spaces#^thm-20-2|Every Compact Hausdorff Space is Normal]] ([[§20 Normal Spaces#^rem-20-4|The Two-Stage Pattern]]).

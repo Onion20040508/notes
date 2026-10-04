@@ -5,14 +5,14 @@ chapter: 1
 section: 7
 tags: [differentiable-manifolds, math591]
 ---
-← [[§6 Open Quotients and Complex Projective Space]] · ↑ [[· 1 Topological Manifolds]] · [[§8 Topological Groups and Classical Matrix Groups]] →
+← [[§6 Open Quotients]] · ↑ [[· 1 Topological Manifolds]] · [[§8 Example꞉ Spheres]] →
 
 *Thread: equations — Manifolds cut out as level sets. It sits in this chapter because the next one needs it: $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$ and $\mathrm{U}(n)$ are level sets.*
 
 *Reference: Lee Appendix C (Inverse and Implicit Function Theorems); MATH 452. The theorem itself is PSet 1, Problem 6.*
 
 > [!remark] Remark: Why This Section
-> [[§3 Subspaces and Products|§3]]–[[§6 Open Quotients and Complex Projective Space|§6]] built manifolds out of manifolds. This section builds them out of *equations*: given a smooth map $F$ on an open subset of $\mathbb{R}^{n+k}$, when is the solution set $\{F = c\}$ a topological manifold, and of what dimension? The answer — whenever the $k$ equations are independent at every solution — is the single most productive source of examples in the course. It produces the spheres, every classical matrix group ([[§8 Topological Groups and Classical Matrix Groups|§8]]), and in its smooth form every example of [[· 3 Smooth Structures|Chapter 3]]. The machinery is multivariable calculus, and the one theorem taken on faith is the [[§7 The Regular Value Theorem#^thm-7-1|implicit function theorem]].
+> [[§3 Subspaces and Products|§3]]–[[§6 Open Quotients|§6]] built manifolds out of manifolds. This section builds them out of *equations*: given a smooth map $F$ on an open subset of $\mathbb{R}^{n+k}$, when is the solution set $\{F = c\}$ a topological manifold, and of what dimension? The answer — whenever the $k$ equations are independent at every solution — is the single most productive source of examples in the course. It produces the spheres, every classical matrix group ([[§10 Topological Groups and Classical Matrix Groups|§10]]), and in its smooth form every example of [[· 3 Smooth Structures|Chapter 3]]. The machinery is multivariable calculus, and the one theorem taken on faith is the [[§7 The Regular Value Theorem#^thm-7-1|implicit function theorem]].
 
 ^rem-7-1
 
@@ -41,7 +41,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - Home in 452: the total derivative and Jacobian, [[§6 Differentiability#^def-6-2|452 Def. §6.2]] and [[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]]; the differential, [[§8 The Differential#^def-8-1|452 Def. §8.1]].
 > - Rank: [[§9 Matrices#^ladr-3-58|LADR 3.58]]; row rank equals column rank, [[§9 Matrices#^ladr-3-57|LADR 3.57]].
-> - Coordinate-free differential: [[§18 The Differential of a Map Between Vector Spaces#^def-18-4|Def. §18.4]].
+> - Coordinate-free differential: [[§21 The Differential of a Map Between Vector Spaces#^def-21-4|Def. §21.4]].
 
 ## Regular Points and Regular Values
 
@@ -57,7 +57,7 @@ tags: [differentiable-manifolds, math591]
 ^def-7-2
 
 > [!remark]- Connections
-> - The same notion defined again later: without coordinates, [[§18 The Differential of a Map Between Vector Spaces#^cor-18-4|§18.4]]; for smooth maps of manifolds, [[§25 The Differential in Coordinates#^def-25-1|Def. §25.1]] and [[§29 Submersions#^def-29-2|Def. §29.2]].
+> - The same notion defined again later: without coordinates, [[§21 The Differential of a Map Between Vector Spaces#^cor-21-4|§21.4]]; for smooth maps of manifolds, [[§28 The Differential in Coordinates#^def-28-1|Def. §28.1]] and [[§32 Submersions#^def-32-2|Def. §32.2]].
 
 > [!remark] Remark: The Constraint $N \ge m$
 > Regular points can exist only when $N \ge m$, and the case $N = m$ is special; both facts are made precise in [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5]], once the regular value theorem is available. Geometrically, one cannot cut an $N$-dimensional space down by more than $N$ independent constraints and have anything left — the dimension count $N - m$ would be negative. The boundary case $N = m$ belongs to the *inverse* function theorem rather than the implicit one. The situation of interest below is $N = n^2$, $m = 1$.
@@ -73,7 +73,7 @@ tags: [differentiable-manifolds, math591]
 > - The circle as a level set in 452: [[Unit circle and unit sphere]], [[§12 The Implicit Function Theorem#^ex-12-1|452 Ex. §12.1]].
 
 > [!remark] Remark: Why the Notion Matters
-> The definition is tailored to the Implicit Function Theorem: at a regular point of $F : \mathbb{R}^N \to \mathbb{R}^m$, the $m$ independent gradients $\nabla F_a(p)$ span an $m$-dimensional space of “constraint directions,” and one can solve the $m$ equations $F = c$ for $m$ of the coordinates as functions of the remaining $N - m$, so $F^{-1}(c)$ is locally a graph over the complementary $N - m$ directions. That is where the dimension $N - m$ comes from. For $\mathrm{O}(n)$ the constraint is $gg^{\mathsf T} = I$, which is $m = \tfrac{n(n+1)}{2}$ scalar equations (the independent entries of a symmetric matrix), and the task is precisely to show these $m$ gradients are independent at every orthogonal $g$; this is done in [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-19-1|Example §19.1]]. The general statement—*if $c$ is a regular value of $F$, then $F^{-1}(c)$ is a topological (indeed smooth) manifold of dimension $N - m$*—is [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]] (PSet 1, Problem 6); the $m = 1$ case is carried out for $\det$ in Proposition [[§9 The Classical Groups Are Topological Manifolds#^cor-9-5|§9.5]] below.
+> The definition is tailored to the Implicit Function Theorem: at a regular point of $F : \mathbb{R}^N \to \mathbb{R}^m$, the $m$ independent gradients $\nabla F_a(p)$ span an $m$-dimensional space of “constraint directions,” and one can solve the $m$ equations $F = c$ for $m$ of the coordinates as functions of the remaining $N - m$, so $F^{-1}(c)$ is locally a graph over the complementary $N - m$ directions. That is where the dimension $N - m$ comes from. For $\mathrm{O}(n)$ the constraint is $gg^{\mathsf T} = I$, which is $m = \tfrac{n(n+1)}{2}$ scalar equations (the independent entries of a symmetric matrix), and the task is precisely to show these $m$ gradients are independent at every orthogonal $g$; this is done in [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Example §22.1]]. The general statement—*if $c$ is a regular value of $F$, then $F^{-1}(c)$ is a topological (indeed smooth) manifold of dimension $N - m$*—is [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]] (PSet 1, Problem 6); the $m = 1$ case is carried out for $\det$ in Proposition [[§11 The Classical Groups Are Topological Manifolds#^cor-11-5|§11.5]] below.
 
 ^rem-7-3
 
@@ -108,18 +108,18 @@ has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the
 ^thm-7-1
 
 > [!proof]+ Proof (sketch)
-> Lee deduces this from the Inverse Function Theorem ([[§28 Local Diffeomorphisms#^thm-28-1|Theorem §28.1]]; Lee, Theorem C.34), applied to the auxiliary map $(x,y) \mapsto (x, \Phi(x,y))$, whose total derivative is block lower triangular with nonsingular diagonal blocks $I_n$ and $(\partial\Phi^i/\partial y^j)$. Special cases are proved in MATH 452 (one equation: [[Implicit Function Theorem|452 §12]]; two variables: [[Inverse Function Theorem (several variables)|452 §13]]); Lee's proofs are in Appendix C.
+> Lee deduces this from the Inverse Function Theorem ([[§31 Local Diffeomorphisms#^thm-31-1|Theorem §31.1]]; Lee, Theorem C.34), applied to the auxiliary map $(x,y) \mapsto (x, \Phi(x,y))$, whose total derivative is block lower triangular with nonsingular diagonal blocks $I_n$ and $(\partial\Phi^i/\partial y^j)$. Special cases are proved in MATH 452 (one equation: [[Implicit Function Theorem|452 §12]]; two variables: [[Inverse Function Theorem (several variables)|452 §13]]); Lee's proofs are in Appendix C.
 
 ^pf-7-1
 
-*Uses:* [[§28 Local Diffeomorphisms#^thm-28-1|§28.1]], [[Inverse Function Theorem (several variables)|452 §13.2]]
+*Uses:* [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[Inverse Function Theorem (several variables)|452 §13.2]]
 
 > [!remark]- Connections
 > - The one-equation version is proved in 452: [[§12 The Implicit Function Theorem#^thm-12-2|452 §12.2]] (hub: [[Implicit Function Theorem]]); this vector-valued version has its home here.
-> - Deduced from the inverse function theorem: [[§28 Local Diffeomorphisms#^thm-28-1|§28.1]] in this course (452 proves only the two-variable case, [[Inverse Function Theorem (several variables)]]).
+> - Deduced from the inverse function theorem: [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]] in this course (452 proves only the two-variable case, [[Inverse Function Theorem (several variables)]]).
 
 > [!remark] Remark: Which Variables Are Solved For
-> The theorem does not say the level set is a graph over some canonical set of coordinates: it says that *if* the $k$ coordinates $y$ are ones for which the square block $(\partial\Phi^i/\partial y^j)$ is invertible, *then* those $y$ can be solved for in terms of the remaining $n$. Since $D\Phi_{(a,b)}$ has rank $k$ exactly when *some* $k$ of its $n + k$ columns are independent, a regular point always admits such a splitting—after permuting coordinates. That permutation is the “WLOG” step in the proof of Proposition [[§9 The Classical Groups Are Topological Manifolds#^cor-9-5|§9.5]] below.
+> The theorem does not say the level set is a graph over some canonical set of coordinates: it says that *if* the $k$ coordinates $y$ are ones for which the square block $(\partial\Phi^i/\partial y^j)$ is invertible, *then* those $y$ can be solved for in terms of the remaining $n$. Since $D\Phi_{(a,b)}$ has rank $k$ exactly when *some* $k$ of its $n + k$ columns are independent, a regular point always admits such a splitting—after permuting coordinates. That permutation is the “WLOG” step in the proof of Proposition [[§11 The Classical Groups Are Topological Manifolds#^cor-11-5|§11.5]] below.
 
 ^rem-7-4
 
@@ -187,8 +187,8 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 *Uses:* [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §10.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
 
 > [!remark]- Connections
-> - The smooth structure on $X$: [[§16 Manifolds in Euclidean Space#^prop-16-2|§16.2]]; for level sets of maps between manifolds: [[§25 The Differential in Coordinates#^cor-25-8|§25.8]] and [[§30 Submanifolds#^thm-30-6|§30.6]].
-> - Recovered as a special case of transversality: [[§21 Transversality#^cor-21-3|§21.3]].
+> - The smooth structure on $X$: [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]]; for level sets of maps between manifolds: [[§28 The Differential in Coordinates#^cor-28-8|§28.8]] and [[§33 Submanifolds#^thm-33-6|§33.6]].
+> - Recovered as a special case of transversality: [[§24 Transversality#^cor-24-3|§24.3]].
 
 > [!theorem] Corollary §7.4: Open Domains and Arbitrary Values
 > Let $W \subseteq \mathbb{R}^{n+k}$ be open, $F : W \to \mathbb{R}^k$ smooth, and $c \in \mathbb{R}^k$ a regular value of $F$ — [[§7 The Regular Value Theorem#^def-7-2|Definition §7.2]], applied to $F$ on $W$: the Jacobian $F'(p)$ has rank $k$ at every $p \in F^{-1}(c)$. Then $F^{-1}(c)$, with the subspace topology, is a topological manifold of dimension $n$.
@@ -202,17 +202,17 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 
 *Uses:* [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§3 Subspaces and Products#^thm-3-5|§3.5]]
 
-This is the form needed on manifolds, where a chart has an open subset of Euclidean space as its image, not the whole space. The general version, for maps between manifolds and with the smooth structure and the tangent space included, is [[§30 Submanifolds#^thm-30-6|Theorem §30.6]] (Lecture 12).
+This is the form needed on manifolds, where a chart has an open subset of Euclidean space as its image, not the whole space. The general version, for maps between manifolds and with the smooth structure and the tangent space included, is [[§33 Submanifolds#^thm-33-6|Theorem §33.6]] (Lecture 12).
 
-**Comparison with Lee.** Lee meets level sets twice. Example 1.32 builds graph charts for the level set of a single function with nonvanishing gradient, and Corollary 5.14 proves, via the constant-rank theorem, that every regular level set is a properly embedded submanifold. The course takes the direct route of Example 1.32 in every codimension, using the implicit function theorem, and obtains the smooth structure separately ([[§16 Manifolds in Euclidean Space#^prop-16-2|Proposition §16.2]]).
+**Comparison with Lee.** Lee meets level sets twice. Example 1.32 builds graph charts for the level set of a single function with nonvanishing gradient, and Corollary 5.14 proves, via the constant-rank theorem, that every regular level set is a properly embedded submanifold. The course takes the direct route of Example 1.32 in every codimension, using the implicit function theorem, and obtains the smooth structure separately ([[§19 Manifolds in Euclidean Space#^prop-19-2|Proposition §19.2]]).
 
 ![[m591-4-2.svg]]
 *The scalar case in $\mathbb{R}^2$: the circle as a graph over $x$ (left) and over $y$ (middle), and the crossing lines $x^2 = y^2$ at a critical point (right).*
 
-The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at once. *Left:* $F = x^2+y^2-1$; at a point off the horizontal axis $\partial F/\partial y \neq 0$, so the implicit function theorem solves $y = h(x) = \sqrt{1-x^2}$ and the thick arc is the graph over the $x$-interval beneath it — the chart is “project to $x$,” which is exactly $\varphi_2$ of [[§13 Differentiable Structures#^ex-13-2|Example §13.2]]. *Middle:* at $(1,0)$ that partial vanishes and the curve is vertical, so no interval of $x$ works; but $\partial F/\partial x \neq 0$, so one solves $x = h(y)$ and projects to $y$ instead. That switch is the permutation-of-coordinates step in the proof, and the picture shows it is not a technicality: which coordinate can be solved for changes from point to point. *Right:* at a critical point the conclusion fails — near the origin $\{x^2 = y^2\}$ is two crossing lines, a graph over neither axis.
+The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at once. *Left:* $F = x^2+y^2-1$; at a point off the horizontal axis $\partial F/\partial y \neq 0$, so the implicit function theorem solves $y = h(x) = \sqrt{1-x^2}$ and the thick arc is the graph over the $x$-interval beneath it — the chart is “project to $x$,” which is exactly $\varphi_2$ of [[§16 Differentiable Structures#^ex-16-2|Example §16.2]]. *Middle:* at $(1,0)$ that partial vanishes and the curve is vertical, so no interval of $x$ works; but $\partial F/\partial x \neq 0$, so one solves $x = h(y)$ and projects to $y$ instead. That switch is the permutation-of-coordinates step in the proof, and the picture shows it is not a technicality: which coordinate can be solved for changes from point to point. *Right:* at a critical point the conclusion fails — near the origin $\{x^2 = y^2\}$ is two crossing lines, a graph over neither axis.
 
 > [!remark] Remark: Reading the Dimension
-> The level set of $k$ independent equations in $\mathbb{R}^{n+k}$ has dimension $(n+k) - k = n$: each independent constraint costs one dimension. The independence is exactly the rank condition, and it is needed at every point of the level set, not just at one — that is what “regular *value*” means ([[§7 The Regular Value Theorem#^def-7-2|Definition §7.2]]). The theorem is the general form of the computation carried out for $\mathrm{SL}(n,\mathbb{R})$ in [[§9 The Classical Groups Are Topological Manifolds|§9, The Classical Groups Are Topological Manifolds]], the case $k = 1$, $n + k = n^2$; the smooth version, giving $X$ a smooth structure rather than just a topology, comes in [[· 3 Smooth Structures|Chapter 3]].
+> The level set of $k$ independent equations in $\mathbb{R}^{n+k}$ has dimension $(n+k) - k = n$: each independent constraint costs one dimension. The independence is exactly the rank condition, and it is needed at every point of the level set, not just at one — that is what “regular *value*” means ([[§7 The Regular Value Theorem#^def-7-2|Definition §7.2]]). The theorem is the general form of the computation carried out for $\mathrm{SL}(n,\mathbb{R})$ in [[§11 The Classical Groups Are Topological Manifolds|§11, The Classical Groups Are Topological Manifolds]], the case $k = 1$, $n + k = n^2$; the smooth version, giving $X$ a smooth structure rather than just a topology, comes in [[· 3 Smooth Structures|Chapter 3]].
 
 ^rem-7-5
 
@@ -257,7 +257,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 >
 > *Step 3: the bad point misses the level set.* $F(p_0) = (0 - 0 - 1 + 0 + 2,\ 0) = (1,0) \neq (-1,0)$, so $p_0 \notin M$ and $F'(p)$ has rank $2$ at every $p \in M$: $(-1,0)$ is a regular value.
 >
-> *Step 4: the manifold.* By [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]], $M$ is a topological manifold of dimension $4 - 2 = 2$, smooth by [[§16 Manifolds in Euclidean Space#^prop-16-2|Proposition §16.2]].
+> *Step 4: the manifold.* By [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]], $M$ is a topological manifold of dimension $4 - 2 = 2$, smooth by [[§19 Manifolds in Euclidean Space#^prop-19-2|Proposition §19.2]].
 >
 > *Step 5: the kernel at $x_0$.* First $F(0,1,0,0) = (-1,0)$, so $x_0 \in M$. At $x_0$,
 >
@@ -267,14 +267,14 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 > F'(x_0)\begin{pmatrix} x \\ y \\ u \\ v \end{pmatrix} = \begin{pmatrix} -2y + 2u \\ 2x + 2v \end{pmatrix},
 > $$
 >
-> which vanishes iff $u = y$ and $v = -x$. So $\ker F'(x_0) = \{(x, y, y, -x)\}$, spanned by the two displayed vectors, of dimension $2 = \dim M$ as it must be. By [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|Theorem §20.3]] this kernel is the geometric tangent space $T^{\mathrm{geo}}_{x_0}M$.
+> which vanishes iff $u = y$ and $v = -x$. So $\ker F'(x_0) = \{(x, y, y, -x)\}$, spanned by the two displayed vectors, of dimension $2 = \dim M$ as it must be. By [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|Theorem §23.3]] this kernel is the geometric tangent space $T^{\mathrm{geo}}_{x_0}M$.
 
 ^pf-ex-7-2
 
-*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§16 Manifolds in Euclidean Space#^prop-16-2|§16.2]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|§20.3]]
+*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]]
 
 > [!remark]- Connections
-> - The notion of submanifold the problem asks about: [[§30 Submanifolds#^def-30-1|Def. §30.1]]; regular level sets are submanifolds by [[§30 Submanifolds#^thm-30-6|§30.6]].
+> - The notion of submanifold the problem asks about: [[§33 Submanifolds#^def-33-1|Def. §33.1]]; regular level sets are submanifolds by [[§33 Submanifolds#^thm-33-6|§33.6]].
 
 > [!remark] Remark
 > **The workflow.** Every problem of this type runs the same five steps: (i) compute the Jacobian; (ii) find the locus where its rank drops; (iii) check that this locus *misses the level set*; (iv) read off the dimension; (v) compute the kernel. Step (iii) is the one most often skipped, and it is the point of the definition: the rank may drop anywhere at all, so long as it does not drop *on* $F^{-1}(c)$. Here it drops at exactly one point of $\mathbb{R}^4$, which happens to lie on a different level set.
@@ -291,7 +291,7 @@ $$
 F = (\operatorname{Re} f,\ \operatorname{Im} f), \qquad f(z,w) = z^2 - w^2 + 2w,
 $$
 
-as expanding $f$ shows; so $F$ is a complex polynomial in disguise, and its rank behaviour is forced by the complex structure. This subsection makes that precise. Throughout, $\mathbb{C}^m \cong \mathbb{R}^{2m}$ as in [[§8 Topological Groups and Classical Matrix Groups#^def-8-8|Definition §8.8]].
+as expanding $f$ shows; so $F$ is a complex polynomial in disguise, and its rank behaviour is forced by the complex structure. This subsection makes that precise. Throughout, $\mathbb{C}^m \cong \mathbb{R}^{2m}$ as in [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Definition §10.8]].
 
 ![[m591-4-3.svg]]
 *The map: $f$ on $\mathbb{C}^2$ and $F$ on $\mathbb{R}^4$, related by the identifications $\mathbb{C}^m \cong \mathbb{R}^{2m}$.*
@@ -299,7 +299,7 @@ as expanding $f$ shows; so $F$ is a complex polynomial in disguise, and its rank
 ![[m591-4-4.svg]]
 *Its derivative at a point: the complex gradient $f'(p)$ and the real Jacobian $F'(p)$.*
 
-Left, the map; right, its derivative at a point. The vertical arrows are the identifications of [[§8 Topological Groups and Classical Matrix Groups#^def-8-8|Definition §8.8]]. On the right, the top arrow is the complex gradient $(2z,\ 2-2w)$, a $1 \times 2$ complex matrix, and the bottom arrow is the real $2 \times 4$ Jacobian of [[§7 The Regular Value Theorem#^ex-7-2|Example §7.2]]. Everything that follows is about what the top row forces on the bottom one.
+Left, the map; right, its derivative at a point. The vertical arrows are the identifications of [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Definition §10.8]]. On the right, the top arrow is the complex gradient $(2z,\ 2-2w)$, a $1 \times 2$ complex matrix, and the bottom arrow is the real $2 \times 4$ Jacobian of [[§7 The Regular Value Theorem#^ex-7-2|Example §7.2]]. Everything that follows is about what the top row forces on the bottom one.
 
 > [!definition] Definition §7.3: Holomorphic Map
 > Let $W \subseteq \mathbb{C}^N$ be open. A map $F : W \to \mathbb{C}^m$ is **holomorphic** if it is $C^1$ as a map between open subsets of $\mathbb{R}^{2N}$ and $\mathbb{R}^{2m}$ and its real derivative $DF_p : \mathbb{C}^N \to \mathbb{C}^m$ is $\mathbb{C}$-linear at every $p \in W$. The $\mathbb{C}$-linear map $DF_p$ is then written $F'(p)$, the **complex Jacobian**, an $m \times N$ complex matrix of partial derivatives $\partial F_a / \partial z_b$.
@@ -330,7 +330,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 *Uses:* [[§8 Null Spaces and Ranges#^ladr-3-18|LADR 3.18]], [[§5 Bases#^ladr-2-26|LADR 2.26]], [[§9 Matrices#^ladr-3-58|LADR 3.58]]
 
 > [!theorem] Corollary §7.7: Holomorphic Regular Value Theorem
-> Let $W \subseteq \mathbb{C}^{n+k}$ be open, $F : W \to \mathbb{C}^k$ holomorphic, and $c \in \mathbb{C}^k$ such that the complex Jacobian $F'(p)$ has complex rank $k$ at every $p \in F^{-1}(c)$. Then $F^{-1}(c)$ is a manifold of *real* dimension $2n$, smooth by [[§16 Manifolds in Euclidean Space#^prop-16-2|Proposition §16.2]]. Moreover, for any holomorphic $F$ the real rank of $DF_p$ is even at every point; for $k = 1$ it is $0$ or $2$. And for $p \in F^{-1}(c)$ the kernel of $F'(p)$ is a complex subspace of $\mathbb{C}^{n+k}$; by [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-3|Theorem §20.3]] it is the geometric tangent space $T^{\mathrm{geo}}_p F^{-1}(c)$.
+> Let $W \subseteq \mathbb{C}^{n+k}$ be open, $F : W \to \mathbb{C}^k$ holomorphic, and $c \in \mathbb{C}^k$ such that the complex Jacobian $F'(p)$ has complex rank $k$ at every $p \in F^{-1}(c)$. Then $F^{-1}(c)$ is a manifold of *real* dimension $2n$, smooth by [[§19 Manifolds in Euclidean Space#^prop-19-2|Proposition §19.2]]. Moreover, for any holomorphic $F$ the real rank of $DF_p$ is even at every point; for $k = 1$ it is $0$ or $2$. And for $p \in F^{-1}(c)$ the kernel of $F'(p)$ is a complex subspace of $\mathbb{C}^{n+k}$; by [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|Theorem §23.3]] it is the geometric tangent space $T^{\mathrm{geo}}_p F^{-1}(c)$.
 >
 > *Lee: no counterpart; from Assignment 2*
 
@@ -362,7 +362,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 ^rem-7-9
 
 > [!remark]- Connections
-> - Assignment 2, Problem 4 worked out: [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-19-2|Ex. §19.2]] ($\dim \mathrm{U}(n) = n^2$); $\mathrm{U}(1) = S^1$ is [[§8 Topological Groups and Classical Matrix Groups#^ex-8-4|Ex. §8.4]].
+> - Assignment 2, Problem 4 worked out: [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|Ex. §22.2]] ($\dim \mathrm{U}(n) = n^2$); $\mathrm{U}(1) = S^1$ is [[§10 Topological Groups and Classical Matrix Groups#^ex-10-3|Ex. §10.3]].
 
 > [!example] Example §7.3: The Level Set Is a Cylinder
 > The regular value theorem says that $M$ of [[§7 The Regular Value Theorem#^ex-7-2|Example §7.2]] is a $2$-manifold, but not which one. In fact $M$ is homeomorphic to $\mathbb{C}^\times$, hence to the cylinder $S^1 \times \mathbb{R}$.

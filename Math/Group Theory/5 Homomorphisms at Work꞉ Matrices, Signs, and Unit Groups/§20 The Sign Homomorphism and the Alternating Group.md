@@ -88,7 +88,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Linear algebra defines the sign by inversions: [[§33 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]].
-> - Restated in 591 for the Leibniz formula and continuity of the determinant: [[§8 Topological Groups and Classical Matrix Groups#^def-8-3|591 Def. §8.3]], properties in [[§8 Topological Groups and Classical Matrix Groups#^prop-8-2|591 Prop. §8.2]].
+> - Restated in 591 for the Leibniz formula and continuity of the determinant: [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|591 Def. §10.3]], properties in [[§10 Topological Groups and Classical Matrix Groups#^prop-10-2|591 Prop. §10.2]].
 
 > [!theorem] Theorem §20.3: The Sign Is a Homomorphism
 > $\operatorname{sgn}: S_n \to \{\pm 1\}$ is a group [[§15 Homomorphisms#^def-15-1|homomorphism]], where $\{\pm 1\}$ is a group under multiplication.

@@ -24,7 +24,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - The same space in the companion chapter, with the norm as an infimum: [[§24 Bras, Kets, and the Riesz Map#^def-24-1|Def. §24.1]], [[§24 Bras, Kets, and the Riesz Map#^lem-24-1|§24.1]]; the other special case of [[§21 Boundedness and Continuity#^def-21-3|Def. §21.3]] used there, bounded operators on $H$: [[§25 The Completeness Relation#^def-25-1|Def. §25.1]].
-> - The algebraic dual in finite dimensions: [[§12 Duality#^ladr-3-108|LADR 3.108]], [[§12 Duality#^ladr-3-109|LADR 3.109]], [[§12 Duality#^ladr-3-110|LADR 3.110]]; [[§17 Linear Algebra Toolkit#^def-17-1|591 Def. §17.1]].
+> - The algebraic dual in finite dimensions: [[§12 Duality#^ladr-3-108|LADR 3.108]], [[§12 Duality#^ladr-3-109|LADR 3.109]], [[§12 Duality#^ladr-3-110|LADR 3.110]]; [[§20 Linear Algebra Toolkit#^def-20-1|591 Def. §20.1]].
 
 > [!theorem] Corollary §22.1: The Dual is Always a Banach Space
 > For any normed linear space $X$ over $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$, $X'$ is a Banach space, whether or not $X$ is complete.

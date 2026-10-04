@@ -2190,7 +2190,7 @@ The proof follows the same structure as the 2D case ([[§15 Multivariable Integr
 > [!remark]- Connections
 > - Linear-algebra core: [[§34 Determinants#^ladr-9-61|LADR 9.61]] for the local volume factor and [[§34 Determinants#^ladr-9-49|LADR 9.49]] (det is multiplicative) for composing primitive transformations.
 > - In $\mathbb{R}^3$: the spherical volume element used in [[§19 The Laplacian in Spherical Coordinates|§19]]; for general dimension it underlies the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] and, as pullback of $n$-forms, the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]].
-> - The smooth version of the diffeomorphisms allowed here is [[§13 Differentiable Structures#^def-13-3|591 Def. §13.3]], where diffeomorphisms of open subsets of ℝⁿ are the transition maps between charts.
+> - The smooth version of the diffeomorphisms allowed here is [[§16 Differentiable Structures#^def-16-3|591 Def. §16.3]], where diffeomorphisms of open subsets of ℝⁿ are the transition maps between charts.
 > - Computational version: [[§106 Change of Variables in Multiple Integrals#^thm-106-2|Calc Thm. §106.2]] (n = 3, with worked examples), with cylindrical and spherical coordinates in [[§104 Triple Integrals in Cylindrical Coordinates#^thm-104-1|Calc Thm. §104.1]] and [[§105 Triple Integrals in Spherical Coordinates#^thm-105-2|Calc Thm. §105.2]].
 > - The linear case, where the Jacobian is constant: [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-6|235 Thm. §22.6]] (with worked areas, n = 2, 3).
 

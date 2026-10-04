@@ -8,20 +8,20 @@ The unit circle $S^1 = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$, which is
 
 - The torus $T^n = S^1 \times \cdots \times S^1$ inherits $T_2$ and second countability from its factors ([[§3 Subspaces and Products#^rem-3-6|§3]])
 - Every $c > 0$ is a regular value of $x^2 + y^2$, with a circle as level set ([[§7 The Regular Value Theorem#^ex-7-1|§7]])
-- $\mathrm{U}(1)$ is the circle ([[§8 Topological Groups and Classical Matrix Groups#^ex-8-4|§8]])
-- $S^1 \cong \mathbb{R}/\mathbb{Z}$ as a homogeneous space of $\mathbb{R}$ ([[§12 The Topology of G∕H and Real Grassmannians#^ex-12-1|§12]])
-- The four-chart atlas of half-circles ([[§13 Differentiable Structures#^ex-13-2|§13]])
-- The circle needs more than one chart ([[§13 Differentiable Structures#^prop-13-3|§13]])
-- The chart domains are exactly the open arcs, the connected open sets other than $S^1$ ([[§13 Differentiable Structures#^prop-13-4|§13]])
-- The stereographic atlas, with transition $u \mapsto 1/u$ ([[§13 Differentiable Structures#^ex-13-3|§13]])
-- The angle atlas, with translations as transition maps ([[§13 Differentiable Structures#^ex-13-4|§13]])
-- Three atlases, one smooth structure ([[§13 Differentiable Structures#^rem-13-9|§13]])
-- $\mathbb{RP}^1$ is homeomorphic to $S^1$ ([[§14 Projective Spaces as Smooth Manifolds#^prop-14-6|§14]])
-- The circle in three descriptions: level set, graph, parametrization ([[§16 Manifolds in Euclidean Space#^ex-16-1|§16]])
-- The three circle atlases agree with the level-set structure ([[§16 Manifolds in Euclidean Space#^prop-16-4|§16]])
-- $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism $\mathbb{R} \to S^1$ that is not injective ([[§28 Local Diffeomorphisms#^ex-28-1|§28]])
-- $\mathbb{R} \to S^1$ is a covering map, while its restriction to $(0, 4\pi)$ is not ([[§28 Local Diffeomorphisms#^rem-28-2|§28]])
-- The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product ([[§31 Fibrations#^ex-31-3|§31]])
+- $\mathrm{U}(1)$ is the circle ([[§10 Topological Groups and Classical Matrix Groups#^ex-10-3|§10]])
+- $S^1 \cong \mathbb{R}/\mathbb{Z}$ as a homogeneous space of $\mathbb{R}$ ([[§14 The Topology of G∕H and Real Grassmannians#^ex-14-1|§14]])
+- The four-chart atlas of half-circles ([[§16 Differentiable Structures#^ex-16-2|§16]])
+- The circle needs more than one chart ([[§16 Differentiable Structures#^prop-16-3|§16]])
+- The chart domains are exactly the open arcs, the connected open sets other than $S^1$ ([[§16 Differentiable Structures#^prop-16-4|§16]])
+- The stereographic atlas, with transition $u \mapsto 1/u$ ([[§16 Differentiable Structures#^ex-16-3|§16]])
+- The angle atlas, with translations as transition maps ([[§16 Differentiable Structures#^ex-16-4|§16]])
+- Three atlases, one smooth structure ([[§16 Differentiable Structures#^rem-16-9|§16]])
+- $\mathbb{RP}^1$ is homeomorphic to $S^1$ ([[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|§17]])
+- The circle in three descriptions: level set, graph, parametrization ([[§19 Manifolds in Euclidean Space#^ex-19-1|§19]])
+- The three circle atlases agree with the level-set structure ([[§19 Manifolds in Euclidean Space#^prop-19-4|§19]])
+- $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism $\mathbb{R} \to S^1$ that is not injective ([[§31 Local Diffeomorphisms#^ex-31-1|§31]])
+- $\mathbb{R} \to S^1$ is a covering map, while its restriction to $(0, 4\pi)$ is not ([[§31 Local Diffeomorphisms#^rem-31-2|§31]])
+- The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product ([[§34 Fibrations#^ex-34-2|§34]])
 
 ## The torus $T^n = S^1 \times \cdots \times S^1$ inherits $T_2$ and second countability from its factors
 ![[§3 Subspaces and Products#^rem-3-6]]
@@ -30,43 +30,43 @@ The unit circle $S^1 = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$, which is
 ![[§7 The Regular Value Theorem#^ex-7-1]]
 
 ## $\mathrm{U}(1)$ is the circle
-![[§8 Topological Groups and Classical Matrix Groups#^ex-8-4]]
+![[§10 Topological Groups and Classical Matrix Groups#^ex-10-3]]
 
 ## $S^1 \cong \mathbb{R}/\mathbb{Z}$ as a homogeneous space of $\mathbb{R}$
-![[§12 The Topology of G∕H and Real Grassmannians#^ex-12-1]]
+![[§14 The Topology of G∕H and Real Grassmannians#^ex-14-1]]
 
 ## The four-chart atlas of half-circles
-![[§13 Differentiable Structures#^ex-13-2]]
+![[§16 Differentiable Structures#^ex-16-2]]
 
 ## The circle needs more than one chart
-![[§13 Differentiable Structures#^prop-13-3]]
+![[§16 Differentiable Structures#^prop-16-3]]
 
 ## The chart domains are exactly the open arcs, the connected open sets other than $S^1$
-![[§13 Differentiable Structures#^prop-13-4]]
+![[§16 Differentiable Structures#^prop-16-4]]
 
 ## The stereographic atlas, with transition $u \mapsto 1/u$
-![[§13 Differentiable Structures#^ex-13-3]]
+![[§16 Differentiable Structures#^ex-16-3]]
 
 ## The angle atlas, with translations as transition maps
-![[§13 Differentiable Structures#^ex-13-4]]
+![[§16 Differentiable Structures#^ex-16-4]]
 
 ## Three atlases, one smooth structure
-![[§13 Differentiable Structures#^rem-13-9]]
+![[§16 Differentiable Structures#^rem-16-9]]
 
 ## $\mathbb{RP}^1$ is homeomorphic, indeed diffeomorphic, to $S^1$
-![[§14 Projective Spaces as Smooth Manifolds#^prop-14-6]]
+![[§17 Projective Spaces as Smooth Manifolds#^prop-17-6]]
 
 ## The circle in three descriptions: level set, graph, parametrization
-![[§16 Manifolds in Euclidean Space#^ex-16-1]]
+![[§19 Manifolds in Euclidean Space#^ex-19-1]]
 
 ## The three circle atlases agree with the level-set structure
-![[§16 Manifolds in Euclidean Space#^prop-16-4]]
+![[§19 Manifolds in Euclidean Space#^prop-19-4]]
 
 ## $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism $\mathbb{R} \to S^1$ that is not injective
-![[§28 Local Diffeomorphisms#^ex-28-1]]
+![[§31 Local Diffeomorphisms#^ex-31-1]]
 
 ## $\mathbb{R} \to S^1$ is a covering map, while its restriction to $(0, 4\pi)$ is not
-![[§28 Local Diffeomorphisms#^rem-28-2]]
+![[§31 Local Diffeomorphisms#^rem-31-2]]
 
 ## The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product
-![[§31 Fibrations#^ex-31-3]]
+![[§34 Fibrations#^ex-34-2]]

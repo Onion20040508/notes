@@ -19,10 +19,10 @@ tags: [topology, hub]
 - [[§11 Metric Topology#^thm-11-9|Theorem §11.9: Continuity and Sequences]]
 
 ## Used in (Differentiable Manifolds)
-- [[§8 Topological Groups and Classical Matrix Groups#^def-8-5|Definition §8.5: Special Linear Group]]
-- [[§25 The Differential in Coordinates#^prop-25-9|Proposition §25.9: Maps with Zero Differential Are Constant]]
-- [[§34 Embeddings#^thm-34-5|Theorem §34.5: Injective Proper Immersions Are Embeddings]]
-- [[§34 Embeddings#^prop-34-7|Proposition §34.7: Images of Embeddings Are Locally Closed]]
+- [[§10 Topological Groups and Classical Matrix Groups#^def-10-5|Definition §10.5: Special Linear Group]]
+- [[§28 The Differential in Coordinates#^prop-28-9|Proposition §28.9: Maps with Zero Differential Are Constant]]
+- [[§37 Embeddings#^thm-37-5|Theorem §37.5: Injective Proper Immersions Are Embeddings]]
+- [[§37 Embeddings#^prop-37-7|Proposition §37.7: Images of Embeddings Are Locally Closed]]
 
 ## Connections
 - **Generalizes ε-δ.** Condition (4) is the topological form of the ε-δ definition ([[§9 Continuous Functions#^ex-9-1|Example §9.1]]; MATH 451: [[§17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]]). It is recovered for metric spaces in [[§11 Metric Topology#^thm-11-7|ε-δ Characterization of Continuity]] (§11.7).

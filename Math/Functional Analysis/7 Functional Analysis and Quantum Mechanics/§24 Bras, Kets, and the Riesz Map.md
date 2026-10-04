@@ -33,7 +33,7 @@ tags: [functional-analysis, math556, companion]
 
 > [!remark]- Connections
 > - The same space in Chapter 6: $X^* = \mathcal{L}(X, \mathbb{F})$, [[§21 Boundedness and Continuity#^def-21-3|Def. §21.3]] with [[§21 Boundedness and Continuity#^def-21-2|Def. §21.2]].
-> - The algebraic dual (no boundedness) in finite dimensions: [[§12 Duality#^ladr-3-110|LADR 3.110]]; [[§17 Linear Algebra Toolkit#^def-17-1|591 Def. §17.1]].
+> - The algebraic dual (no boundedness) in finite dimensions: [[§12 Duality#^ladr-3-110|LADR 3.110]]; [[§20 Linear Algebra Toolkit#^def-20-1|591 Def. §20.1]].
 
 > [!theorem] Lemma §24.1: The Dual Norm
 > For $\ell \in X^*$, the infimum $\|\ell\|$ is itself an admissible constant: $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$. Moreover $X^*$ is a linear space and $\|\cdot\|$ is a norm on it.
@@ -75,12 +75,12 @@ tags: [functional-analysis, math556, companion]
 > - Finite-dimensional version: [[Riesz representation theorem]] ([[§20 Orthonormal Bases#^ladr-6-42|LADR 6.42]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]]).
 
 > [!remark] Remark
-> The Riesz map needs no basis, only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast [[§17 Linear Algebra Toolkit#^prop-17-2|MATH 591]]: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis — the inner product is exactly the extra structure that removes the choice. The price is that $R$ is conjugate-linear, so over $\mathbb{C}$ the identification is with the complex conjugate space $\overline{H}$. In finite dimensions this is the familiar fact that the functional corresponding to a column vector $a$ is the conjugate transpose $a^\dagger$. For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object; this is where the course is heading.
+> The Riesz map needs no basis, only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast [[§20 Linear Algebra Toolkit#^prop-20-2|MATH 591]]: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis — the inner product is exactly the extra structure that removes the choice. The price is that $R$ is conjugate-linear, so over $\mathbb{C}$ the identification is with the complex conjugate space $\overline{H}$. In finite dimensions this is the familiar fact that the functional corresponding to a column vector $a$ is the conjugate transpose $a^\dagger$. For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object; this is where the course is heading.
 
 ^rem-24-2
 
 > [!remark]- Connections
-> - The basis-dependent isomorphism $V \cong V^*$: [[§17 Linear Algebra Toolkit#^prop-17-2|591 §17.2]] (dual basis), [[§12 Duality#^ladr-3-110|LADR 3.110]]; isomorphisms from non-degenerate pairings: [[§17 Linear Algebra Toolkit#^thm-17-5|591 §17.5]].
+> - The basis-dependent isomorphism $V \cong V^*$: [[§20 Linear Algebra Toolkit#^prop-20-2|591 §20.2]] (dual basis), [[§12 Duality#^ladr-3-110|LADR 3.110]]; isomorphisms from non-degenerate pairings: [[§20 Linear Algebra Toolkit#^thm-20-5|591 §20.5]].
 
 ## Dirac Notation
 

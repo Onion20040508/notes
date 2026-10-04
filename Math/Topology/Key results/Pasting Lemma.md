@@ -26,7 +26,7 @@ tags: [topology, hub]
 - [[§27 The Fundamental Group of Sⁿ#^ex-27-1|Example §27.1: Wedge of Two Spheres is Simply Connected]]
 
 ## Used in (Differentiable Manifolds)
-- [[§2 Topological Manifolds#^lem-2-8|Lemma §2.8: Concatenation and Reversal of Paths]]
+- [[§2 Topological Manifolds#^lem-2-7|Lemma §2.7: Concatenation and Reversal of Paths]]
 
 ## Connections
 - **Proof.** It uses the closed-set criterion (3) of [[Equivalent Conditions for Continuity]], together with the fact that a set closed in a closed subspace is closed in X ([[§6 Closed Sets and Limit Points#^thm-6-3|Theorem §6.3]]).

@@ -121,7 +121,7 @@ tags: [linear-algebra]
 > An operator can be symmetric in some bases and not others; a bilinear form is symmetric in all bases or in none ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-12|9.12]]).
 
 > [!remark]- Connections
-> - The symmetric matrices form a Euclidean space of dimension n(n + 1)∕2, [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-19-1|591 Def. §19.1]], the target of A ↦ AAᵗ when O(n) is shown to be a manifold ([[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-19-1|591 Ex. §19.1]]).
+> - The symmetric matrices form a Euclidean space of dimension n(n + 1)∕2, [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-22-1|591 Def. §22.1]], the target of A ↦ AAᵗ when O(n) is shown to be a manifold ([[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|591 Ex. §22.1]]).
 > - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^def-48-1|235 Def. §48.1]] (symmetric matrices, with examples).
 
 > [!theorem] Theorem 9.12: Symmetric bilinear forms are diagonalizable

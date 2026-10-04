@@ -249,7 +249,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Home in 590: [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]].
-> - For quotients, Hausdorffness is decided by the [[§6 Open Quotients and Complex Projective Space#^thm-6-1|Hausdorff criterion, §6.1]].
+> - For quotients, Hausdorffness is decided by the [[§6 Open Quotients#^thm-6-1|Hausdorff criterion, §6.1]].
 
 > [!remark] Remark
 > There is a whole hierarchy of separation axioms ($T_0, T_1, T_{2\frac12}, T_3, T_{3\frac12}, \ldots$; see [[§19 Separation Axioms#^rem-19-2|590 §19]]). Uribe's editorial: learning all of them is mostly a waste of time. For manifolds, $T_2$ is the one that matters.
@@ -331,7 +331,7 @@ tags: [differentiable-manifolds, math591]
 *The basic neighbourhoods $N_1(\varepsilon)$ and $N_2(\varepsilon)$ of the two origins share the punctured interval $(-\varepsilon,0)\cup(0,\varepsilon)$, so no neighbourhoods of $0_1$ and $0_2$ are disjoint.*
 
 > [!remark]- Connections
-> - The other two manifold conditions are verified in [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; the quotient description is [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], and non-Hausdorffness via the diagonal criterion is [[§6 Open Quotients and Complex Projective Space#^ex-6-1|Ex. §6.1]].
+> - The other two manifold conditions are verified in [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; the quotient description is [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], and non-Hausdorffness via the diagonal criterion is [[§6 Open Quotients#^ex-6-1|Ex. §6.1]].
 > - Limits are not unique here, since $1/n$ converges to both $0_1$ and $0_2$; Hausdorff spaces rule this out, [[§8 Hausdorff Spaces#^thm-8-3|590 Thm. §8.3]].
 
 > [!remark] Remark: The Line with Two Origins as a Quotient

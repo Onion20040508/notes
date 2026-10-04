@@ -140,7 +140,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The real orthogonal matrices form the orthogonal group O(n), [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
-> - The matrices described here form the groups O(n) and U(n) of 591: [[§8 Topological Groups and Classical Matrix Groups#^def-8-6|591 Def. §8.6]], [[§8 Topological Groups and Classical Matrix Groups#^prop-8-7|591 Prop. §8.7]], [[§8 Topological Groups and Classical Matrix Groups#^def-8-8|591 Def. §8.8]]; orthonormal columns make U(n) compact, [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-19-5|591 Cor. §19.5]].
+> - The matrices described here form the groups O(n) and U(n) of 591: [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|591 Def. §10.6]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-5|591 Prop. §10.5]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|591 Def. §10.8]]; orthonormal columns make U(n) compact, [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-5|591 Cor. §22.5]].
 > - Computational version: [[§41 Orthogonal Sets#^prop-41-6|235 Prop. §41.6]] and [[§41 Orthogonal Sets#^thm-41-5|235 Thm. §41.5]] (length preservation, as in (c)).
 > - Used in Quantum Mechanics: the $2\times2$ unitary matrices of determinant 1 (with Theorem 9.58) form $SU(2)$, the unit sphere of $\mathbb C^2$, and are exactly the spin-½ rotation matrices — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]].
 

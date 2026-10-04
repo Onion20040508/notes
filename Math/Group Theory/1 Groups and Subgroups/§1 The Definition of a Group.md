@@ -19,7 +19,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 counterpart (same axioms, different order): [[§21 Algebra Prerequisites꞉ Groups#^def-21-1|590 Definition §21.1: Group]].
-> - A group with a compatible topology: [[§8 Topological Groups and Classical Matrix Groups#^def-8-1|591 Def. §8.1]] (topological group), the setting of the 591 matrix groups and actions.
+> - A group with a compatible topology: [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|591 Def. §10.1]] (topological group), the setting of the 591 matrix groups and actions.
 
 > [!definition] Definition §1.2: Abelian Group
 > A group $G$ is **abelian** (or **commutative**) if $a \ast  b = b \ast  a$ for all $a, b \in G$. Commutativity is *not* one of the group axioms; groups such as $S_n$ ($n \geq 3$) and $GL_n(k)$ ($n \geq 2$) are non-abelian.

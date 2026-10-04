@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§1 Point-Set Topology Review]] · ↑ [[· 1 Topological Manifolds]] · [[§3 Subspaces and Products]] →
 
-*Foundations — The definition of a topological manifold and the role of each axiom. The two ways of building examples begin next: by quotients ([[§4 Quotient Spaces and Open Maps|§4]]–[[§6 Open Quotients and Complex Projective Space|§6]]) and by equations ([[§7 The Regular Value Theorem|§7]]).*
+*Foundations — The definition of a topological manifold and the role of each axiom. The two ways of building examples begin next: by quotients ([[§4 Quotient Spaces and Open Maps|§4]]–[[§6 Open Quotients|§6]]) and by equations ([[§7 The Regular Value Theorem|§7]]).*
 
 *Reference: Lee Ch. 1, “Topological Manifolds.”*
 
@@ -40,7 +40,7 @@ tags: [differentiable-manifolds, math591]
 ^def-2-2
 
 > [!remark]- Connections
-> - The three conditions: [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]]; the smooth version is [[§13 Differentiable Structures#^def-13-9|Smooth Manifold Structure, Def. §13.9]].
+> - The three conditions: [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]]; the smooth version is [[§16 Differentiable Structures#^def-16-9|Smooth Manifold Structure, Def. §16.9]].
 > - Concrete example: [[§110★ Riemann Surfaces#^ex-110-1|342 Ex. §110.1]] (the Riemann surface of log z, a 2-manifold built from infinitely many cut planes glued along their slits, on which log z becomes single-valued).
 
 > [!remark] Remark: Why These Three Conditions?
@@ -129,7 +129,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 *Uses:* [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (3), [[§5 Subspace Topology#^lem-5-2|590 §5.2]], [[§9 Continuous Functions#^prop-9-3|590 §9.3]]
 
 > [!remark] Remark
-> Lee takes the “open subset” version as the *definition* of locally Euclidean and leaves the equivalence as Exercise 1.1. The practical upshot: to verify that a space is locally Euclidean, it is enough to exhibit, around each point, a homeomorphism onto an open ball, or onto an open disk, or onto any open subset of $\mathbb{R}^n$—one never needs to hit all of $\mathbb{R}^n$. This is used immediately in the $S^2$ example ([[§2 Topological Manifolds#^ex-2-4|Ex. §2.4]]) below.
+> Lee takes the “open subset” version as the *definition* of locally Euclidean and leaves the equivalence as Exercise 1.1. The practical upshot: to verify that a space is locally Euclidean, it is enough to exhibit, around each point, a homeomorphism onto an open ball, or onto an open disk, or onto any open subset of $\mathbb{R}^n$—one never needs to hit all of $\mathbb{R}^n$. This is used in the $S^2$ example ([[§8 Example꞉ Spheres#^ex-8-1|Ex. §8.1]]).
 
 ^rem-2-4
 
@@ -195,7 +195,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 *Uses:* [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§5 Subspace Topology#^lem-5-1|590 §5.1]]
 
 > [!remark]- Connections
-> - The same space as a quotient: [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§6 Open Quotients and Complex Projective Space#^ex-6-1|Ex. §6.1]].
+> - The same space as a quotient: [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§6 Open Quotients#^ex-6-1|Ex. §6.1]].
 
 > [!example] Example §2.2: Fails Locally Euclidean: $\mathbb{Q}$
 > $X = \mathbb{Q}$ with the subspace topology from $\mathbb{R}$ is second countable (subspace of a second countable space) and $T_2$ (metric space), but is not locally Euclidean of any dimension.
@@ -284,66 +284,7 @@ The failure of second countability in the last example is detected by counting c
 
 **Rigor flag.** “Second countable $\Rightarrow$ countably many components” is *false* without local connectedness: the Cantor set is a compact metric (hence second countable) space with uncountably many components (each a point). The proposition uses locally Euclidean only through “components are open,” i.e. local connectedness.
 
-## The Sphere
-
-> [!example] Example §2.4: $S^2$ is a Topological $2$-Manifold
-> Let $S^2 = \{x \in \mathbb{R}^3 \mid |x| = 1\}$ with the subspace topology.
-> - *$T_2$ and second countable:* $S^2$ is a metric space (restriction of the Euclidean metric), hence $T_2$; and a subspace of a second countable space is second countable (intersect a countable basis of $\mathbb{R}^3$ with $S^2$).
-> - *Locally Euclidean:* let $p = (p_1, p_2, p_3) \in S^2$. Since $|p| = 1$, some coordinate of $p$ is nonzero. Upon relabeling coordinates (and possibly replacing $z$ by $-z$), we may assume **WLOG that the $z$-coordinate of $p$ is positive**. Let
->
->   $$
->   U = \{(x, y, z) \in S^2 \mid z > 0\} \quad \text{(the open northern hemisphere)},
->   $$
->
->   $$
->   \varphi : U \to \mathbb{R}^2, \qquad (x, y, z) \mapsto (x, y).
->   $$
->
->   $U$ is open in $S^2$ (preimage of $(0, \infty)$ under the continuous coordinate function $z$), and $p \in U$.
->
->   **Claim:** $\varphi$ is a homeomorphism of $U$ onto the open unit disk $D = \{(x, y) \mid x^2 + y^2 < 1\} \subseteq \mathbb{R}^2$.
->
-> *Lee: Example 1.4*
-
-^ex-2-4
-
-> [!proof]+ Proof of Claim (not given in lecture)
-> *Image:* for $(x, y, z) \in U$, $x^2 + y^2 = 1 - z^2 < 1$ since $0 < z \le 1$, so $\varphi(U) \subseteq D$. Conversely, for $(x, y) \in D$, the point $(x, y, \sqrt{1 - x^2 - y^2})$ lies in $U$ and maps to $(x, y)$; so $\varphi(U) = D$.
->
-> *Injective:* if $(x, y, z), (x, y, z') \in U$, then $z = \sqrt{1 - x^2 - y^2} = z'$, using $z, z' > 0$.
->
-> *Continuous with continuous inverse:* $\varphi$ is the restriction of the projection $\mathbb{R}^3 \to \mathbb{R}^2$, hence continuous. The inverse $\varphi^{-1} : D \to U$, $(x, y) \mapsto (x, y, \sqrt{1 - x^2 - y^2})$, is continuous as a map into $\mathbb{R}^3$ (each component is continuous on $D$), hence continuous into the subspace $U$.
->
-> Since $D$ is open in $\mathbb{R}^2$, [[§2 Topological Manifolds#^prop-2-3|Proposition §2.3]] shows $S^2$ is locally Euclidean of dimension $2$ at $p$.
-
-^pf-ex-2-4
-
-*Uses:* [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (4), [[§9 Continuous Functions#^thm-9-4|590 §9.4]], [[§18 Countability Axioms#^thm-18-3|590 §18.3]]
-
-![[m591-2-1.svg]]
-*The hemisphere chart: projection $(x,y,z) \mapsto (x,y)$ carries the open northern hemisphere $U = \{z > 0\}$ homeomorphically onto the open unit disk in $\mathbb{R}^2$.*
-
-> [!theorem] Proposition §2.7: Spheres Are Topological Manifolds
-> $S^n = \{x \in \mathbb{R}^{n+1} \mid |x| = 1\}$ is a topological $n$-manifold.
->
-> *Lee: Example 1.4*
-
-^prop-2-7
-
-> [!proof]+ Proof
-> As in [[§2 Topological Manifolds#^ex-2-4|Example §2.4]], $S^n$ is a metric space (restriction of the Euclidean metric), hence Hausdorff, and second countable: intersecting a countable basis of $\mathbb{R}^{n+1}$ with $S^n$ gives a countable basis. The $2(n+1)$ open hemispheres $U_i^{\pm} = \{x \in S^n \mid \pm x_i > 0\}$ cover $S^n$, since every point has a nonzero coordinate. On $U_i^\pm$, the map $\varphi_i^\pm$ forgetting the $i$-th coordinate is continuous and lands in the open unit ball $B^n$, because the remaining coordinates satisfy $\sum_{j \ne i} x_j^2 = 1 - x_i^2 < 1$. Its inverse inserts $\pm\sqrt{1 - |y|^2}$ in slot $i$ and is continuous. So each $\varphi_i^\pm$ is a homeomorphism onto the open set $B^n \subseteq \mathbb{R}^n$, and [[§2 Topological Manifolds#^prop-2-3|Proposition §2.3]] applies.
-
-^pf-2-7
-
-*Uses:* [[§2 Topological Manifolds#^ex-2-4|Ex. §2.4]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§18 Countability Axioms#^thm-18-3|590 §18.3]]
-
-> [!remark]- Connections
-> - The hemisphere charts as an atlas: [[§13 Differentiable Structures#^def-13-6|Def. §13.6]]; the circle case with its smooth atlases is [[§13 Differentiable Structures#^ex-13-2|Ex. §13.2]].
-
-> [!remark] Remark
-> This is the argument of [[§2 Topological Manifolds#^ex-2-4|Example §2.4]], for every $n$ (Lee, Example 1.4). The hemisphere charts will be our first example of an *atlas*, and the maps between overlapping charts ([[§2 Topological Manifolds#Charts and Transition Functions|§2, Charts and Transition Functions]]) will turn out to be smooth.
-
-^rem-2-8
+The sphere $S^2$ with its hemisphere charts, and the spheres $S^n$ as topological manifolds, are collected in [[§8 Example꞉ Spheres|§8]].
 
 Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone point, a closed disk—the last of these is a manifold *with boundary*). There was no time to discuss these in lecture; the homework is where such examples live. Uribe emphasized that the most interesting examples of the course are in the homework, which is a reason to do it without AI.
 
@@ -352,31 +293,31 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 > [!remark] Remark
 > For general topological spaces, path connectedness is strictly stronger than connectedness (the topologist's sine curve is the standard counterexample, [[§14 Connected Subspaces of ℝ#^ex-14-7|590 §14]]). For manifolds the two coincide, because being locally Euclidean makes the space locally path connected. This is PSet 1, Problem 1.
 
-^rem-2-9
+^rem-2-8
 
-> [!theorem] Lemma §2.8: Concatenation and Reversal of Paths
+> [!theorem] Lemma §2.7: Concatenation and Reversal of Paths
 > Let $X$ be a topological space. If $\alpha$ is a path from $a$ to $b$ and $\beta$ a path from $b$ to $c$, then there is a path from $a$ to $c$. If $\alpha$ is a path from $a$ to $b$, there is a path from $b$ to $a$.
 >
 > *Lee: App. A, “Connectedness and Compactness”*
 
-^lem-2-8
+^lem-2-7
 
 > [!proof]+ Proof
 > Define $\gamma : [0,1] \to X$ by $\gamma(t) = \alpha(2t)$ for $t \in [0, \tfrac12]$ and $\gamma(t) = \beta(2t-1)$ for $t \in [\tfrac12, 1]$. The two formulas agree at $t = \tfrac12$, where both give $\alpha(1) = b = \beta(0)$, so $\gamma$ is well defined. The sets $[0,\tfrac12]$ and $[\tfrac12,1]$ are closed and cover $[0,1]$, and $\gamma$ is continuous on each (a composite of an affine map with $\alpha$, resp. $\beta$), so $\gamma$ is continuous by the [[Pasting Lemma|pasting lemma]] ([[§9 Continuous Functions#^thm-9-5|590 §9]]). Finally $\gamma(0) = a$, $\gamma(1) = c$. For the reversal, $t \mapsto \alpha(1-t)$ is continuous and runs from $b$ to $a$.
 
-^pf-2-8
+^pf-2-7
 
 *Uses:* [[Pasting Lemma|590 §9.5 (Pasting Lemma)]], [[§14 Connected Subspaces of ℝ#^def-14-3|590 Def. §14.3]]
 
 > [!remark]- Connections
 > - The same concatenation is the product of paths in 590: [[§22 Homotopy of Paths#^def-22-6|590 Def. §22.6]], with its algebra in [[Properties of Path Concatenation]].
 
-> [!theorem] Theorem §2.9: Connected Manifolds Are Path Connected
+> [!theorem] Theorem §2.8: Connected Manifolds Are Path Connected
 > A connected topological manifold is path connected.
 >
 > *Lee: Proposition 1.11(b)*
 
-^thm-2-9
+^thm-2-8
 
 > [!proof]+ Proof
 > Let $M$ be a connected topological manifold; we may assume $M \neq \emptyset$, the empty space being vacuously path connected.
@@ -389,32 +330,32 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 > S = \{\, x \in M \mid \text{there is a path in } M \text{ from } x_0 \text{ to } x \,\}.
 > $$
 >
-> $S \neq \emptyset$: the constant path shows $x_0 \in S$. Both openness and closedness follow from one observation: *if $U$ is a path-connected set and $U \cap S \neq \emptyset$, then $U \subseteq S$*—for $z \in U \cap S$ and $y \in U$, concatenate a path from $x_0$ to $z$ with one from $z$ to $y$ ([[§2 Topological Manifolds#^lem-2-8|Lemma §2.8]]). Now: if $x \in S$, then $U_x \cap S \ni x$, so $U_x \subseteq S$ and $S$ is open; if $y \notin S$, then $U_y \cap S = \emptyset$ (else $U_y \subseteq S \ni y$), so $U_y \subseteq M \setminus S$ and $M \setminus S$ is open.
+> $S \neq \emptyset$: the constant path shows $x_0 \in S$. Both openness and closedness follow from one observation: *if $U$ is a path-connected set and $U \cap S \neq \emptyset$, then $U \subseteq S$*—for $z \in U \cap S$ and $y \in U$, concatenate a path from $x_0$ to $z$ with one from $z$ to $y$ ([[§2 Topological Manifolds#^lem-2-7|Lemma §2.7]]). Now: if $x \in S$, then $U_x \cap S \ni x$, so $U_x \subseteq S$ and $S$ is open; if $y \notin S$, then $U_y \cap S = \emptyset$ (else $U_y \subseteq S \ni y$), so $U_y \subseteq M \setminus S$ and $M \setminus S$ is open.
 >
-> *Step 3.* $S$ is a nonempty subset of the connected space $M$ that is both open and closed, so $S = M$. Given $x, y \in M$, reverse a path from $x_0$ to $x$ and concatenate with one from $x_0$ to $y$ ([[§2 Topological Manifolds#^lem-2-8|Lemma §2.8]]) to get a path from $x$ to $y$.
+> *Step 3.* $S$ is a nonempty subset of the connected space $M$ that is both open and closed, so $S = M$. Given $x, y \in M$, reverse a path from $x_0$ to $x$ and concatenate with one from $x_0$ to $y$ ([[§2 Topological Manifolds#^lem-2-7|Lemma §2.7]]) to get a path from $x$ to $y$.
 
-^pf-2-9
+^pf-2-8
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^lem-2-8|§2.8]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]], [[§14 Connected Subspaces of ℝ#^def-14-3|590 Def. §14.3]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^lem-2-7|§2.7]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]], [[§14 Connected Subspaces of ℝ#^def-14-3|590 Def. §14.3]]
 
-> [!theorem] Corollary §2.10: Components of a Manifold
+> [!theorem] Corollary §2.9: Components of a Manifold
 > Let $M$ be a topological manifold. Then the connected components of $M$ are open, coincide with its path components, and each is itself a topological manifold of the same dimension.
 >
 > *Lee: Proposition 1.11(c) and (d)*
 
-^cor-2-10
+^cor-2-9
 
 > [!proof]+ Proof
-> A component $C$ is open: for $p \in C$ the connected set $U_p$ (homeomorphic to $\mathbb{R}^n$, connected by [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7]](4)) contains $p$, hence lies in $C$. Being open in $M$, $C$ is a manifold of the same dimension by the open-submanifold remark of [[§3 Subspaces and Products#^prop-3-6|§3.6]], and it is connected, hence path connected by [[§2 Topological Manifolds#^thm-2-9|Theorem §2.9]]; so $C$ is contained in the path component of any of its points. Conversely a path-connected set is connected, so the path component of $p$ is contained in $C$.
+> A component $C$ is open: for $p \in C$ the connected set $U_p$ (homeomorphic to $\mathbb{R}^n$, connected by [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7]](4)) contains $p$, hence lies in $C$. Being open in $M$, $C$ is a manifold of the same dimension by the open-submanifold remark of [[§3 Subspaces and Products#^prop-3-6|§3.6]], and it is connected, hence path connected by [[§2 Topological Manifolds#^thm-2-8|Theorem §2.8]]; so $C$ is contained in the path component of any of its points. Conversely a path-connected set is connected, so the path component of $p$ is contained in $C$.
 
-^pf-2-10
+^pf-2-9
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^thm-2-9|§2.9]], [[§14 Connected Subspaces of ℝ#^thm-14-4|590 §14.4]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^thm-2-8|§2.8]], [[§14 Connected Subspaces of ℝ#^thm-14-4|590 §14.4]]
 
 > [!remark] Remark
 > This is the mechanism behind [[§2 Topological Manifolds#^prop-2-6|Proposition §2.6]]: openness of the components is what turns second countability into a bound on their number. It is also the reason [[§2 Topological Manifolds#^cor-2-2|Corollary §2.2]] can speak of the dimension being constant on components.
 
-^rem-2-10
+^rem-2-9
 
 ## Charts and Transition Functions
 
@@ -430,28 +371,28 @@ Suppose $X$ is a topological manifold of dimension $n$, and let $p \in X$. By de
 ^def-2-3
 
 > [!remark]- Connections
-> - Restated at the start of Chapter 3: [[§13 Differentiable Structures#^def-13-1|Def. §13.1]]; the smooth version is [[§15 Smooth Functions and Smooth Maps#^def-15-1|Smooth Chart, Def. §15.1]].
+> - Restated at the start of Chapter 3: [[§16 Differentiable Structures#^def-16-1|Def. §16.1]]; the smooth version is [[§18 Smooth Functions and Smooth Maps#^def-18-1|Smooth Chart, Def. §18.1]].
 
-> [!theorem] Lemma §2.11: Restricting and Recomposing Charts
+> [!theorem] Lemma §2.10: Restricting and Recomposing Charts
 > Let $(U, \varphi)$ be a chart on a topological $n$-manifold: $\varphi$ is a homeomorphism of the open set $U$ onto an open subset of $\mathbb{R}^n$.
 > 1. If $U' \subseteq U$ is open, then $(U', \varphi|_{U'})$ is a chart.
 > 2. If $h$ is a homeomorphism of an open set $W \supseteq \varphi(U)$ onto an open subset of $\mathbb{R}^n$, then $(U, h \circ \varphi)$ is a chart.
 >
 > *Lee: Ch. 1, “Coordinate Charts”*
 
-^lem-2-11
+^lem-2-10
 
 > [!proof]+ Proof
 > (1) By [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5]](3), $\varphi|_{U'}$ is a homeomorphism onto $\varphi(U')$, which is open in $\varphi(U)$. An open subset of the open set $\varphi(U)$ has the form $V \cap \varphi(U)$ with $V$ open in $\mathbb{R}^n$, an intersection of two open sets, so $\varphi(U')$ is open in $\mathbb{R}^n$. (2) $h \circ \varphi$ is a homeomorphism onto $h(\varphi(U))$, which is open in $h(W)$ by the same fact, hence in $\mathbb{R}^n$ by the same argument.
 
-^pf-2-11
+^pf-2-10
 
 *Uses:* [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§5 Subspace Topology#^lem-5-2|590 §5.2]]
 
 > [!remark] Remark: Charts Are Not Unique
 > Nothing in the definition pins down $U$ or $\varphi$: by the lemma, a chart can be shrunk or recomposed at will. Consequently, the fundamental picture of the first weeks of the course is: *two* charts at the same point, and the map that compares them.
 
-^rem-2-11
+^rem-2-10
 
 Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \subseteq \mathbb{R}^n$ open. The overlap $U \cap V$ is an open neighborhood of $p$, and it appears in both charts as the open sets $\varphi(U \cap V) \subseteq A$ and $\psi(U \cap V) \subseteq B$.
 
@@ -470,59 +411,46 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 ^def-2-4
 
 > [!remark]- Connections
-> - Chapter 3 asks these maps to be smooth: [[§13 Differentiable Structures#^def-13-4|Smoothly Compatible Charts, Def. §13.4]].
+> - Chapter 3 asks these maps to be smooth: [[§16 Differentiable Structures#^def-16-4|Smoothly Compatible Charts, Def. §16.4]].
 
-> [!theorem] Proposition §2.12: Transition Functions Are Homeomorphisms
+> [!theorem] Proposition §2.11: Transition Functions Are Homeomorphisms
 > For a topological manifold, $\varphi(U \cap V)$ and $\psi(U \cap V)$ are open subsets of $\mathbb{R}^n$, and $\psi \circ \varphi^{-1}$ is a homeomorphism between them, with inverse $\varphi \circ \psi^{-1}$.
 >
 > *Lee: Ch. 1, “Smooth Structures”*
 
-^prop-2-12
+^prop-2-11
 
 > [!proof]+ Proof
 > *(Stated in Lecture 1 — “for a topological manifold, this will be a continuous map, homeomorphism actually”; filled in.)* $U \cap V$ is open in $U$, so $\varphi(U \cap V)$ is open in $A$ ($\varphi$ is a homeomorphism, hence an open map), and therefore open in $\mathbb{R}^n$ since $A$ is; likewise for $\psi(U \cap V)$. The map $\varphi^{-1}|_{\varphi(U \cap V)} : \varphi(U \cap V) \to U \cap V$ is a homeomorphism (restriction of one), as is $\psi|_{U \cap V} : U \cap V \to \psi(U \cap V)$; their composite is a homeomorphism.
 
-^pf-2-12
+^pf-2-11
 
 *Uses:* [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§2 Topological Manifolds#^def-2-4|Def. §2.4]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§5 Subspace Topology#^lem-5-2|590 §5.2]]
 
 ![[m591-2-3.svg]]
-*Two charts on the same manifold. On the overlap $U \cap V$ (orange) both charts apply, and the two pictures of it, $\varphi(U \cap V)$ and $\psi(U \cap V)$, are compared by the transition map $\psi \circ \varphi^{-1}$ — a homeomorphism between open subsets of $\mathbb{R}^n$ by [[§2 Topological Manifolds#^prop-2-12|Proposition §2.12]]. [[· 3 Smooth Structures|Chapter 3]] defines smooth structures by asking these maps to be smooth.*
-
-> [!example] Example §2.5: Two Hemisphere Charts on $S^2$
-> Take $U = \{z > 0\}$ with $\varphi(x, y, z) = (x, y)$ and $V = \{x > 0\}$ with $\psi(x, y, z) = (y, z)$, both charts onto the open unit disk. Then $U \cap V = \{x > 0, z > 0\}$, $\varphi(U \cap V) = \{(x, y) \in D \mid x > 0\}$, and
->
-> $$
-> \psi \circ \varphi^{-1}(x, y) = \psi\big(x, y, \sqrt{1 - x^2 - y^2}\big) = \big(y, \sqrt{1 - x^2 - y^2}\big).
-> $$
->
-> Note that this map is not merely continuous but $C^\infty$ on its (open) domain, since $1 - x^2 - y^2 > 0$ there. This is no accident, and it is the point of the [[§13 Differentiable Structures#^def-13-4|next definition]].
-
-^ex-2-5
-
-*Uses:* [[§2 Topological Manifolds#^ex-2-4|Ex. §2.4]], [[§2 Topological Manifolds#^def-2-4|Def. §2.4]]
+*Two charts on the same manifold. On the overlap $U \cap V$ (orange) both charts apply, and the two pictures of it, $\varphi(U \cap V)$ and $\psi(U \cap V)$, are compared by the transition map $\psi \circ \varphi^{-1}$ — a homeomorphism between open subsets of $\mathbb{R}^n$ by [[§2 Topological Manifolds#^prop-2-11|Proposition §2.11]]. [[· 3 Smooth Structures|Chapter 3]] defines smooth structures by asking these maps to be smooth.*
 
 > [!remark] Remark: Preview: What Makes a Manifold *Differentiable*
 > For a topological manifold, transition functions are homeomorphisms between open subsets of $\mathbb{R}^n$—and that is all one can say. To speak of *differentiable* manifolds, we will **require** that all transition functions be differentiable (in fact $C^\infty$).
 >
 > Why is this the right move? Differentiability is not a topological notion: it makes no sense to ask whether a map $X \to \mathbb{R}$ on an abstract topological space is differentiable, because $X$ has no linear structure. What *does* make sense is to pull $f$ back to Euclidean space via a chart, $f \circ \varphi^{-1} : A \to \mathbb{R}$, and ask whether *that* is differentiable. For this to be independent of the chart chosen, one needs $f \circ \psi^{-1} = (f \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ to be differentiable whenever $f \circ \varphi^{-1}$ is—which is exactly the requirement that transition functions be differentiable. (He expected to begin this on Wednesday; in the event, Lecture 2 stayed with topology—see [[§3 Subspaces and Products|§3]].)
 
-^rem-2-12
+^rem-2-11
 
 > [!remark]- Connections
-> - Carried out in [[§13 Differentiable Structures#^def-13-2|Def. §13.2]] (smooth in the sense of a chart), [[§13 Differentiable Structures#^rem-13-3|the problem this creates]] and [[§13 Differentiable Structures#^thm-13-1|§13.1]].
+> - Carried out in [[§16 Differentiable Structures#^def-16-2|Def. §16.2]] (smooth in the sense of a chart), [[§16 Differentiable Structures#^rem-16-3|the problem this creates]] and [[§16 Differentiable Structures#^thm-16-1|§16.1]].
 
-> [!theorem] Proposition §2.13: Manifolds Are Locally Compact
+> [!theorem] Proposition §2.12: Manifolds Are Locally Compact
 > Every [[§2 Topological Manifolds#^def-2-2|topological manifold]] $M$ is *[[§17 Local Compactness#^def-17-1|locally compact]]*: every point $q \in M$ has an open neighbourhood $V$ whose closure $\overline V$ is compact.
 >
 > *Lee: Proposition 1.12*
 
-^prop-2-13
+^prop-2-12
 
 > [!proof]+ Proof
 > *(Lecture 14, asking for it to be added to the notes: “that's obviously true, because you go down to Euclidean space. You have an open set. You just take the ball … and pull it up”; filled in.)* Take a [[§2 Topological Manifolds#^def-2-3|chart]] $(U, \varphi)$ at $q$ and $\varepsilon > 0$ with the closed ball $\overline{B}_\varepsilon(\varphi(q)) \subseteq \varphi(U)$. Put $V = \varphi^{-1}\big(B_\varepsilon(\varphi(q))\big)$, open in $U$ and hence in $M$, and $K = \varphi^{-1}\big(\overline{B}_\varepsilon(\varphi(q))\big)$. $K$ is compact, the image of a compact set under the continuous map $\varphi^{-1}$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (2)), hence closed in the [[§1 Point-Set Topology Review#^def-1-7|Hausdorff]] space $M$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (4)). Since $V \subseteq K$, also $\overline V \subseteq K$, and a closed subset of a compact set is compact ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (5)).
 
-^pf-2-13
+^pf-2-12
 
 *Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (1, 2, 4, 5), [[§5 Subspace Topology#^lem-5-2|590 §5.2]], [[Heine–Borel Theorem]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[Closed Subspace of a Compact Space is Compact]]
 

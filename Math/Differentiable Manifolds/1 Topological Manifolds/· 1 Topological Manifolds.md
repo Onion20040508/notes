@@ -19,17 +19,19 @@ tags: [chapter, differentiable-manifolds]
 - [[§3 Subspaces and Products]]
 - [[§4 Quotient Spaces and Open Maps]]
 - [[§5 Quotient Maps]]
-- [[§6 Open Quotients and Complex Projective Space]]
+- [[§6 Open Quotients]]
 - [[§7 The Regular Value Theorem]]
+- [[§8 Example꞉ Spheres]]
+- [[§9 Example꞉ Complex Projective Space]]
 
 ## Central results
 - [[Topological Invariance of Dimension]] (§2.1)
-- [[Connected Manifolds Are Path Connected]] (§2.9)
+- [[Connected Manifolds Are Path Connected]] (§2.8)
 - [[Hausdorff Criterion for Open Quotients]] (§6.1)
 - [[Second Countability of Open Quotients]] (§6.3)
-- [[ℂPⁿ Is Hausdorff and Second Countable]] (§6.4)
 - [[Implicit Function Theorem (vector-valued)]] (§7.1)
 - [[Regular Value Theorem (Euclidean)]] (§7.3)
+- [[ℂPⁿ Is Hausdorff and Second Countable]] (§9.1)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

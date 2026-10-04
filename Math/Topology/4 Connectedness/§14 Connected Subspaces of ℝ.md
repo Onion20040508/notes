@@ -203,7 +203,7 @@ tags: [topology, math590]
 ^rem-14-4
 
 > [!remark]- Connections
-> - The converse fails in general ([[§14 Connected Subspaces of ℝ#^ex-14-7|Ex. §14.7]], the topologist's sine curve) but holds for manifolds: [[§2 Topological Manifolds#^thm-2-9|591 Thm. §2.9]].
+> - The converse fails in general ([[§14 Connected Subspaces of ℝ#^ex-14-7|Ex. §14.7]], the topologist's sine curve) but holds for manifolds: [[§2 Topological Manifolds#^thm-2-8|591 Thm. §2.8]].
 
 > [!example] Example §14.7: Topologist's Sine Curve
 > $S \subseteq \mathbb{R}^2$, $S = \{(x, \sin(\frac{1}{x})) \mid 0 < x \leq 1\}$.

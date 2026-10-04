@@ -726,7 +726,7 @@ Thus $h$ is a bijection with continuous inverse $g$, i.e.\ a homeomorphism $B \t
 \end{proof}
 
 \begin{rembox}\label{rem:manifolds}
-Lee takes the ``open subset'' version as the \emph{definition} of locally Euclidean and leaves the equivalence as Exercise 1.1. The practical upshot: to verify that a space is locally Euclidean, it is enough to exhibit, around each point, a homeomorphism onto an open ball, or onto an open disk, or onto any open subset of $\mathbb{R}^n$---one never needs to hit all of $\mathbb{R}^n$. This is used immediately in the $S^2$ example below.
+Lee takes the ``open subset'' version as the \emph{definition} of locally Euclidean and leaves the equivalence as Exercise 1.1. The practical upshot: to verify that a space is locally Euclidean, it is enough to exhibit, around each point, a homeomorphism onto an open ball, or onto an open disk, or onto any open subset of $\mathbb{R}^n$---one never needs to hit all of $\mathbb{R}^n$. This is used in the $S^2$ example, Example~\ref{ex:s2-manifold}.
 \end{rembox}
 
 \subsection{Independence of the Three Conditions}
@@ -840,68 +840,10 @@ Now let $\{U_\alpha\}_{\alpha \in A}$ be a countable basis. For each component $
 
 \textbf{Rigor flag.} ``Second countable $\Rightarrow$ countably many components'' is \emph{false} without local connectedness: the Cantor set is a compact metric (hence second countable) space with uncountably many components (each a point). The proposition uses locally Euclidean only through ``components are open,'' i.e.\ local connectedness.
 
-\subsection{The Sphere}
-
-\begin{exbox}[$S^2$ is a Topological $2$-Manifold]\exlabel{ex:s2-manifold}
-Let $S^2 = \{x \in \mathbb{R}^3 \mid |x| = 1\}$ with the subspace topology.
-\begin{itemize}
-    \item \textit{$T_2$ and second countable:} $S^2$ is a metric space (restriction of the Euclidean metric), hence $T_2$; and a subspace of a second countable space is second countable (intersect a countable basis of $\mathbb{R}^3$ with $S^2$).
-    \item \textit{Locally Euclidean:} let $p = (p_1, p_2, p_3) \in S^2$. Since $|p| = 1$, some coordinate of $p$ is nonzero. Upon relabeling coordinates (and possibly replacing $z$ by $-z$), we may assume \textbf{WLOG that the $z$-coordinate of $p$ is positive}. Let
-    \[
-    U = \{(x, y, z) \in S^2 \mid z > 0\} \quad \text{(the open northern hemisphere)},
-    \]
-    \[
-    \varphi : U \to \mathbb{R}^2, \qquad (x, y, z) \mapsto (x, y).
-    \]
-    $U$ is open in $S^2$ (preimage of $(0, \infty)$ under the continuous coordinate function $z$), and $p \in U$.
-
-    \textbf{Claim:} $\varphi$ is a homeomorphism of $U$ onto the open unit disk $D = \{(x, y) \mid x^2 + y^2 < 1\} \subseteq \mathbb{R}^2$.
-\end{itemize}
-\leeref{Example 1.4}
-\end{exbox}
-
-\begin{proof}[Proof of Claim (not given in lecture)]
-\emph{Image:} for $(x, y, z) \in U$, $x^2 + y^2 = 1 - z^2 < 1$ since $0 < z \le 1$, so $\varphi(U) \subseteq D$. Conversely, for $(x, y) \in D$, the point $(x, y, \sqrt{1 - x^2 - y^2})$ lies in $U$ and maps to $(x, y)$; so $\varphi(U) = D$.
-
-\emph{Injective:} if $(x, y, z), (x, y, z') \in U$, then $z = \sqrt{1 - x^2 - y^2} = z'$, using $z, z' > 0$.
-
-\emph{Continuous with continuous inverse:} $\varphi$ is the restriction of the projection $\mathbb{R}^3 \to \mathbb{R}^2$, hence continuous. The inverse $\varphi^{-1} : D \to U$, $(x, y) \mapsto (x, y, \sqrt{1 - x^2 - y^2})$, is continuous as a map into $\mathbb{R}^3$ (each component is continuous on $D$), hence continuous into the subspace $U$.
-
-Since $D$ is open in $\mathbb{R}^2$, Proposition~\ref{prop:open-charts} shows $S^2$ is locally Euclidean of dimension $2$ at $p$.
-\end{proof}
-\begin{center}
-\begin{tikzpicture}[scale=0.95]
-\draw[gray!70] (0,0) circle (1.3);
-\fill[violet!22] (-1.3,0) arc (180:0:1.3) -- cycle;
-\fill[violet!22] (0,0) ellipse (1.3 and 0.42);
-\draw[violet!75!black,very thick] (-1.3,0) arc (180:0:1.3);
-\draw[gray!50,dashed] (0,0) ellipse (1.3 and 0.42);
-\node[violet!75!black,font=\footnotesize] at (0,0.6) {$U=\{z>0\}$};
-\draw[->,thick,gray!70] (1.75,0) -- (2.95,0);
-\node[font=\footnotesize,above] at (2.35,0.06) {$\varphi$};
-\node[font=\scriptsize,below] at (2.35,-0.1) {$(x,y,z)\mapsto(x,y)$};
-\begin{scope}[xshift=4.7cm]
-\fill[violet!22] (0,0) circle (1.05);
-\draw[violet!75!black,thick,dashed] (0,0) circle (1.05);
-\draw[gray!45,->] (-1.4,0)--(1.4,0); \draw[gray!45,->] (0,-1.4)--(0,1.4);
-\node[font=\footnotesize] at (0,-1.65) {open unit disk in $\mathbb{R}^2$};
-\end{scope}
-\end{tikzpicture}
-\end{center}
 
 
-\begin{propbox}[Spheres Are Topological Manifolds]\thmlabel{prop:sn-manifold}
-$S^n = \{x \in \mathbb{R}^{n+1} \mid |x| = 1\}$ is a topological $n$-manifold.
-\leeref{Example 1.4}
-\end{propbox}
+The sphere $S^2$ with its hemisphere charts, and the spheres $S^n$ as topological manifolds, are collected in Section~\ref{sec:ex-spheres}.
 
-\begin{proof}
-As in Example~\ref{ex:s2-manifold}, $S^n$ is a metric space (restriction of the Euclidean metric), hence Hausdorff, and second countable: intersecting a countable basis of $\mathbb{R}^{n+1}$ with $S^n$ gives a countable basis. The $2(n+1)$ open hemispheres $U_i^{\pm} = \{x \in S^n \mid \pm x_i > 0\}$ cover $S^n$, since every point has a nonzero coordinate. On $U_i^\pm$, the map $\varphi_i^\pm$ forgetting the $i$-th coordinate is continuous and lands in the open unit ball $B^n$, because the remaining coordinates satisfy $\sum_{j \ne i} x_j^2 = 1 - x_i^2 < 1$. Its inverse inserts $\pm\sqrt{1 - |y|^2}$ in slot $i$ and is continuous. So each $\varphi_i^\pm$ is a homeomorphism onto the open set $B^n \subseteq \mathbb{R}^n$, and Proposition~\ref{prop:open-charts} applies.
-\end{proof}
-
-\begin{rembox}\label{rem:manifolds-2}
-This is the argument of Example~\ref{ex:s2-manifold}, for every $n$ (Lee, Example 1.4). The hemisphere charts will be our first example of an \emph{atlas}, and the maps between overlapping charts (\S\ref{sub:charts}) will turn out to be smooth.
-\end{rembox}
 
 Many spaces are \emph{not} topological manifolds (e.g.\ two lines crossing, a cone point, a closed disk---the last of these is a manifold \emph{with boundary}). There was no time to discuss these in lecture; the homework is where such examples live. Uribe emphasized that the most interesting examples of the course are in the homework, which is a reason to do it without AI.
 
@@ -1023,13 +965,6 @@ For a topological manifold, $\varphi(U \cap V)$ and $\psi(U \cap V)$ are open su
 
 Two charts on the same manifold. On the overlap $U \cap V$ (orange) both charts apply, and the two pictures of it, $\varphi(U \cap V)$ and $\psi(U \cap V)$, are compared by the transition map $\psi \circ \varphi^{-1}$ --- a homeomorphism between open subsets of $\mathbb{R}^n$ by Proposition~\ref{prop:transition-homeo}. Chapter~3 defines smooth structures by asking these maps to be smooth.
 
-\begin{exbox}[Two Hemisphere Charts on $S^2$]\exlabel{ex:two-hemisphere-charts-s2}
-Take $U = \{z > 0\}$ with $\varphi(x, y, z) = (x, y)$ and $V = \{x > 0\}$ with $\psi(x, y, z) = (y, z)$, both charts onto the open unit disk. Then $U \cap V = \{x > 0, z > 0\}$, $\varphi(U \cap V) = \{(x, y) \in D \mid x > 0\}$, and
-\[
-\psi \circ \varphi^{-1}(x, y) = \psi\big(x, y, \sqrt{1 - x^2 - y^2}\big) = \big(y, \sqrt{1 - x^2 - y^2}\big).
-\]
-Note that this map is not merely continuous but $C^\infty$ on its (open) domain, since $1 - x^2 - y^2 > 0$ there. This is no accident, and it is the point of the next definition.
-\end{exbox}
 
 \begin{rembox}[Preview: What Makes a Manifold \emph{Differentiable}]\label{rem:preview-what-makes-manifold-differentiable}
 For a topological manifold, transition functions are homeomorphisms between open subsets of $\mathbb{R}^n$---and that is all one can say. To speak of \emph{differentiable} manifolds, we will \textbf{require} that all transition functions be differentiable (in fact $C^\infty$).
@@ -1683,9 +1618,9 @@ Both hypotheses are used, at different steps: that $W$ is a full preimage gives 
 % SECTION: OPEN QUOTIENTS AND COMPLEX PROJECTIVE SPACE
 % ============================================================================
 
-\section{Open Quotients and Complex Projective Space}\label{sec:open-quotients}
+\section{Open Quotients}\label{sec:open-quotients}
 
-\roadmark{Thread: quotients}{When is a quotient Hausdorff? For open relations, exactly when the graph is closed (Theorem~\ref{thm:hausdorff-criterion}); $\mathbb{CP}^n$ is the first manifold built this way. The question returns for orbit spaces (\ref{sec:actions}) and coset spaces (\ref{sec:homogeneous}).}
+\roadmark{Thread: quotients}{When is a quotient Hausdorff? For open relations, exactly when the graph is closed (Theorem~\ref{thm:hausdorff-criterion}). Complex projective space, the first manifold built this way, is worked out at the end of the chapter (\ref{sec:ex-cpn}); the question returns for orbit spaces (\ref{sec:actions}) and coset spaces (\ref{sec:homogeneous}).}
 
 \begin{defbox}[Graph of a Relation]\deflabel{def:graph-relation}
 The \textbf{graph} of a relation $\sim$ on a set $X$ is
@@ -1776,136 +1711,10 @@ The relation is open: the saturation of an open $U \subseteq X$ is $U \cup \sigm
 
 PSet 1, Problem 2 asks for the non-closedness of $\Gamma$ directly. The sequence argument above needs no metrizability: in any topological space, if $z_n \to z$ with all $z_n$ in a closed set $C$, then $z \in C$ (otherwise the open set $X \setminus C$ would eventually contain the $z_n$).
 
-\subsection{Application: Complex Projective Space}\label{sub:cpn}
-
-The following was set up in the last four minutes of lecture; the proof of the claim was given verbally, chalk down. \textbf{Uribe: ``I'll write this again next time''} --- so expect a careful reprise; the details below reconstruct the verbal argument.
-
-\begin{defbox}[Complex Projective Space $\mathbb{CP}^n$]\deflabel{def:cpn}
-Consider the sphere $S^{2n+1} \subseteq \mathbb{R}^{2n+2}$, and identify $\mathbb{R}^{2n+2} \cong \mathbb{C}^{n+1}$ by
-\[
-(x, y) \longmapsto x + iy, \qquad x, y \in \mathbb{R}^{n+1}
-\]
-(any such identification works). So points of $S^{2n+1}$ are complex vectors $z = (z_1, \dots, z_{n+1}) \in \mathbb{C}^{n+1}$ with $|z| = 1$. Let $S^1 = \{\xi \in \mathbb{C} \mid |\xi| = 1\}$ be the unit circle, and define a relation $\sim$ on $S^{2n+1}$ by
-\[
-z \sim w \iff \exists\, \xi \in S^1 \text{ such that } w = \xi z
-\]
-(componentwise complex multiplication: all entries of $w$ are obtained by rotating the entries of $z$ through the \emph{same} angle). This is an equivalence relation ($\xi = 1$ gives reflexivity; $\xi^{-1} \in S^1$ gives symmetry; products give transitivity). The quotient
-\[
-\mathbb{CP}^n \;:=\; S^{2n+1}/{\sim}
-\]
-is the \textbf{complex projective space} of complex dimension $n$. Explicitly: a point of $\mathbb{CP}^n$ is a class $[z] = \{\, \xi z \mid \xi \in S^1 \,\}$, a circle inside $S^{2n+1}$; $\pi(z) = [z]$; and $W \subseteq \mathbb{CP}^n$ is open iff the union of the circles belonging to $W$ is open in $S^{2n+1}$. The class $[z]$ is the same as the complex line $\mathbb{C} z \subseteq \mathbb{C}^{n+1}$ through $z$ (a line meets the unit sphere in exactly the circle $\{\xi z\}$), so $\mathbb{CP}^n$ is the space of complex lines through the origin in $\mathbb{C}^{n+1}$; the identification is $[z] \mapsto \mathbb{C} z$, with inverse $\ell \mapsto \ell \cap S^{2n+1}$.
-\leeref{Problem 1-9}
-\end{defbox}
-
-\begin{propbox}[$\mathbb{CP}^n$ is Hausdorff and Second Countable]\thmlabel{prop:cpn}
-The quotient topology on $\mathbb{CP}^n$ is $T_2$ and second countable.
-\leeref{Problem 1-9}
-\end{propbox}
-
-\begin{proof}[Proof (verbal sketch in Lecture 2; the general form is Corollary~\ref{cor:orbit-T2})]
-\textit{(Lecture~4: the graph of the orbit relation is the continuous image of the compact $G \times X$, hence compact, hence closed in the Hausdorff $X \times X$.)} We verify the two hypotheses of the Hausdorff Criterion.
-
-\emph{The relation is open.} For $\xi \in S^1$ define $R_\xi : S^{2n+1} \to S^{2n+1}$, $R_\xi(z) = \xi z$. This is well defined: $|\xi z| = |\xi|\,|z| = |z| = 1$. It is continuous, being the restriction to $S^{2n+1}$ of the $\mathbb{C}$-linear (hence $\mathbb{R}$-linear, hence continuous) map $z \mapsto \xi z$ on $\mathbb{C}^{n+1} \cong \mathbb{R}^{2n+2}$. Since $\xi^{-1} \in S^1$ and $R_{\xi^{-1}} \circ R_\xi = R_\xi \circ R_{\xi^{-1}} = \mathrm{id}$, $R_\xi$ is a homeomorphism; in particular $R_\xi(U)$ is open for every open $U \subseteq S^{2n+1}$. Now let $U \subseteq S^{2n+1}$ be open. For $w \in S^{2n+1}$,
-\begin{align*}
-w \in \pi^{-1}(\pi(U)) &\iff \exists\, z \in U \text{ with } w \sim z \\
-&\iff \exists\, z \in U,\ \xi \in S^1 \text{ with } w = \xi z \iff w \in \bigcup_{\xi \in S^1} R_\xi(U),
-\end{align*}
-so the saturation $\pi^{-1}(\pi(U)) = \bigcup_{\xi \in S^1} R_\xi(U)$ is a union of open sets, hence open. By Proposition~\ref{prop:saturation}, $\sim$ is open.
-
-\emph{The graph is closed.} Define
-\[
-\Phi : S^1 \times S^{2n+1} \longrightarrow S^{2n+1} \times S^{2n+1}, \qquad \Phi(\xi, z) = (z, \xi z).
-\]
-By Theorem~\ref{thm:univ-product}, $\Phi$ is continuous because its two components are: $(\xi, z) \mapsto z$ is the projection, and $(\xi, z) \mapsto \xi z$ is the restriction of the map $\mathbb{C} \times \mathbb{C}^{n+1} \to \mathbb{C}^{n+1}$, $(\xi, z) \mapsto \xi z$, whose real and imaginary parts are polynomial in the real coordinates. Its image is $\Gamma$: for $(z, w) \in S^{2n+1} \times S^{2n+1}$,
-\begin{align*}
-(z, w) \in \Phi\big(S^1 \times S^{2n+1}\big) &\iff \exists\, \xi \in S^1 \text{ with } (z, w) = (z, \xi z) \\
-&\iff \exists\, \xi \in S^1 \text{ with } w = \xi z \iff z \sim w \iff (z,w) \in \Gamma.
-\end{align*}
-$S^1 \subseteq \mathbb{R}^2$ and $S^{2n+1} \subseteq \mathbb{R}^{2n+2}$ are closed and bounded, hence compact, and a finite product of compact spaces is compact (Proposition~\ref{fact:compact}); so $S^1 \times S^{2n+1}$ is compact and its continuous image $\Gamma$ is compact. The space $S^{2n+1} \times S^{2n+1}$ is a subspace of $\mathbb{R}^{4n+4}$, hence metrizable, hence Hausdorff (Proposition~\ref{fact:metric}), and a compact subset of a Hausdorff space is closed (Proposition~\ref{fact:compact}). Therefore $\Gamma$ is closed in $S^{2n+1} \times S^{2n+1}$.
-
-By the Hausdorff Criterion, $\mathbb{CP}^n$ is $T_2$; and since $S^{2n+1}$ is second countable (subspace of $\mathbb{R}^{2n+2}$) and $\sim$ is open, Theorem~\ref{thm:2c-quotient} gives second countability.
-\end{proof}
-
-\textbf{Transcription note.} Page~7 of the handwritten notes writes the map in this argument as $S^1 \times S^{2n+1} \to S^{2n+2} \times S^{2n+2}$; the target is $S^{2n+1} \times S^{2n+1}$, where the graph of the relation lives.
-
-\textbf{Transcription note.} On the board (and in the handwritten notes) the target of $\Phi$ was written with superscripts $2n+2$; the target must be $S^{2n+1} \times S^{2n+1}$ --- pairs of points of the sphere being quotiented --- as recorded here.
-
-\begin{proof}[A direct proof that $\mathbb{CP}^n$ is Hausdorff (Assignment 2)]
-This bypasses the Hausdorff criterion and exhibits the separating sets. Let $u \neq v$ in $S^{2n+1}/S^1$, with representatives $\vec u, \vec v \in S^{2n+1}$. Their orbits $S^1 \vec u$ and $S^1 \vec v$ are disjoint (distinct orbits), and compact, being images of the compact $S^1$ under $\mu \mapsto \mu\vec u$, $\mu \mapsto \mu \vec v$.
-
-\emph{The orbits are at positive distance.} Let $d = \inf\{|\vec a - \vec b| : \vec a \in S^1\vec u,\ \vec b \in S^1 \vec v\}$. If $d = 0$, choose $\vec a_k \in S^1\vec u$, $\vec b_k \in S^1\vec v$ with $|\vec a_k - \vec b_k| \to 0$; by compactness a subsequence $\vec a_{k_j} \to \vec a \in S^1\vec u$, whence $\vec b_{k_j} \to \vec a$ too, and $\vec a \in S^1 \vec v$ since that orbit is closed. This contradicts disjointness, so $d > 0$.
-
-\emph{Thickened orbits.} Put $r = d/3$ and $A = \bigcup_{\lambda \in S^1} \lambda\, B(\vec u, r)$, $B = \bigcup_{\lambda \in S^1} \lambda\, B(\vec v, r)$, with balls taken in $S^{2n+1}$. Each is open (a union of images of an open set under the homeomorphisms $\vec z \mapsto \lambda\vec z$) and saturated (a union of orbits). If $\lambda\vec z_1 = \lambda'\vec z_2$ with $\vec z_1 \in B(\vec u, r)$, $\vec z_2 \in B(\vec v, r)$, then
-\[
-d \le |\lambda\vec u - \lambda'\vec v| \le |\lambda\vec u - \lambda \vec z_1| + |\lambda\vec z_1 - \lambda'\vec z_2| + |\lambda'\vec z_2 - \lambda'\vec v| < r + 0 + r = \tfrac23 d,
-\]
-using $|\lambda| = |\lambda'| = 1$; a contradiction, so $A \cap B = \emptyset$. Since $\pi$ is open and $A$, $B$ are disjoint and saturated, $\pi(A)$ and $\pi(B)$ are disjoint open neighbourhoods of $u$ and $v$.
-\end{proof}
-
-\begin{rembox}\label{rem:new-spaces-6}
-The one place the group enters the direct proof is $|\lambda \vec u - \lambda \vec z_1| = |\vec u - \vec z_1|$: every $\lambda \in S^1$ is an \emph{isometry}, so the thickening by $r$ is uniform over the whole group. That uniformity --- a compact group acting by isometries --- is the concrete mechanism behind Corollary~\ref{cor:orbit-T2}, and it is exactly what fails for $\mathbb{R}^+$ in Example~\ref{ex:nonhausdorff-orbit}, where $t \cdot (x,y) = (tx, y/t)$ distorts distances without bound.
-\end{rembox}
-
-\begin{propbox}[$\mathbb{CP}^n$ Is Compact]\thmlabel{prop:cpn-compact}
-$\mathbb{CP}^n$ is compact.
-\leeref{Problem 1-9}
-\end{propbox}
-
-\begin{proof}
-\textit{(Not from lecture; filled in.)} $S^{2n+1} \subseteq \mathbb{R}^{2n+2}$ is closed and bounded, hence compact (Proposition~\ref{fact:compact}(1)), and $\mathbb{CP}^n = \pi(S^{2n+1})$ is its image under the continuous surjection $\pi$.
-\end{proof}
-
-\begin{propbox}[$\mathbb{CP}^n$ as the Space of Complex Lines]\thmlabel{prop:cpn-lines}
-Let the multiplicative group $\mathbb{C}^\times = \mathbb{C} \setminus \{0\}$ act on $\mathbb{C}^{n+1} \setminus \{0\}$ by scalar multiplication, $\lambda \cdot \vec z = \lambda \vec z$. Then:
-\begin{enumerate}
-    \item this is a continuous action, and the orbit of $\vec z$ is the punctured complex line $\operatorname{span}_{\mathbb{C}}(\vec z) \setminus \{0\}$; so the orbit space $(\mathbb{C}^{n+1} \setminus \{0\})/\mathbb{C}^\times$ is in natural bijection with the set of complex lines through the origin in $\mathbb{C}^{n+1}$;
-    \item the map
-    \[
-    \Theta : \big(\mathbb{C}^{n+1} \setminus \{0\}\big)/\mathbb{C}^\times \longrightarrow S^{2n+1}/S^1, \qquad \mathbb{C}^\times\vec z \longmapsto S^1 \cdot \frac{\vec z}{|\vec z|},
-    \]
-    is a homeomorphism.
-\end{enumerate}
-Consequently the two natural quotient topologies on the set of lines agree, and either may be taken as the topology of $\mathbb{CP}^n$.
-\leeref{Problem 1-9}
-\end{propbox}
-
-\begin{center}
-\begin{tikzcd}[row sep=3.2em, column sep=4.6em]
-\mathbb{C}^{n+1}\setminus\{0\} \arrow[r, shift left=0.8ex, "g"] \arrow[d, "\pi_1"'] & S^{2n+1} \arrow[l, shift left=0.8ex, hook', "\iota"] \arrow[d, "\pi_2"] \\
-\big(\mathbb{C}^{n+1}\setminus\{0\}\big)/\mathbb{C}^\times \arrow[r, shift left=0.8ex, "\Theta"] & S^{2n+1}/S^1 \arrow[l, shift left=0.8ex, "\Psi"]
-\end{tikzcd}
-\end{center}
-
-Here $g(\vec z) = \vec z/|\vec z|$ and $\iota$ is the inclusion. Both squares commute: $\Theta \circ \pi_1 = \pi_2 \circ g$ and $\Psi \circ \pi_2 = \pi_1 \circ \iota$. Upstairs, $g$ and $\iota$ are \emph{not} mutually inverse --- $g \circ \iota = \mathrm{id}$, but $\iota \circ g$ replaces $\vec z$ by $\vec z/|\vec z|$. Downstairs they become inverse, because passing to the quotient forgets exactly the scale that $\iota \circ g$ changes. The proof below is the chase around these two squares.
 
 
-\begin{proof}
-Write $\pi_1 : \mathbb{C}^{n+1}\setminus\{0\} \to (\mathbb{C}^{n+1}\setminus\{0\})/\mathbb{C}^\times$ and $\pi_2 : S^{2n+1} \to S^{2n+1}/S^1$ for the two projections, both quotient maps.
+The application of these criteria to complex projective space $\mathbb{CP}^n$ is collected in Section~\ref{sec:ex-cpn}.
 
-(1) If $\lambda \neq 0$ and $\vec z \neq 0$ then $\lambda\vec z \neq 0$, so the action preserves $\mathbb{C}^{n+1}\setminus\{0\}$. The axioms are $1 \cdot \vec z = \vec z$ and associativity of multiplication in $\mathbb{C}$, coordinatewise. Continuity: each component $(\lambda, \vec z) \mapsto \lambda z_k$ is polynomial in the real and imaginary parts (Definition~\ref{def:complex-groups}), and the action is the restriction of this map to a subspace. The orbit $\{\lambda\vec z : \lambda \neq 0\}$ is $\operatorname{span}_{\mathbb{C}}(\vec z) \setminus \{0\}$, and a line $\ell$ is recovered from $\ell \setminus \{0\}$ by adjoining $0$.
-
-(2) \emph{$\Theta$ is well defined and continuous.} Let $g(\vec z) = \vec z/|\vec z|$, continuous on $\mathbb{C}^{n+1} \setminus \{0\}$ with values in $S^{2n+1}$. For $\lambda \in \mathbb{C}^\times$,
-\[
-g(\lambda\vec z) = \frac{\lambda}{|\lambda|}\, g(\vec z), \qquad \Big|\frac{\lambda}{|\lambda|}\Big| = 1,
-\]
-so $g(\lambda\vec z)$ and $g(\vec z)$ lie in the same $S^1$-orbit: $\pi_2 \circ g$ is constant on the fibres of $\pi_1$, although $g$ itself is not. By the universal property (Theorem~\ref{thm:univ-quotient-full}), $\pi_2 \circ g$ descends to a unique continuous map on the $\mathbb{C}^\times$-quotient, which is $\Theta$.
-
-\emph{The inverse is continuous.} Let $\iota : S^{2n+1} \hookrightarrow \mathbb{C}^{n+1}\setminus\{0\}$ be the inclusion. Then $\pi_1 \circ \iota$ is continuous and constant on $S^1$-orbits, since $S^1 \subseteq \mathbb{C}^\times$; so it descends to a continuous $\Psi : S^{2n+1}/S^1 \to (\mathbb{C}^{n+1}\setminus\{0\})/\mathbb{C}^\times$, $S^1\vec z \mapsto \mathbb{C}^\times \vec z$.
-
-\emph{They are mutually inverse.} For $|\vec z| = 1$, $\Theta(\Psi(S^1\vec z)) = S^1 \vec z$; for $\vec z \neq 0$, $\Psi(\Theta(\mathbb{C}^\times\vec z)) = \mathbb{C}^\times(\vec z/|\vec z|) = \mathbb{C}^\times\vec z$, the vector $\vec z/|\vec z|$ lying in the $\mathbb{C}^\times$-orbit of $\vec z$.
-\end{proof}
-
-\begin{rembox}\label{rem:new-spaces-7}
-The key identity behind (2) is that for a unit vector $\vec z$ the part of its $\mathbb{C}^\times$-orbit lying on the sphere is exactly its $S^1$-orbit: $|\lambda\vec z| = |\lambda|$, which equals $1$ iff $\lambda \in S^1$. So each punctured line meets the unit sphere in precisely one circle, and normalizing $\vec z \mapsto \vec z/|\vec z|$ is the bridge between the two descriptions --- a point downstairs, a whole line upstairs in one, a circle upstairs in the other.
-\end{rembox}
-
-\begin{exbox}[Why the Origin Must Be Removed]\exlabel{ex:cpn-origin}
-Let $\mathbb{C}^\times$ act instead on all of $\mathbb{C}^{n+1}$ by scalar multiplication. The action is still continuous, but the orbit space acquires one extra point, the orbit $\{\lambda \cdot 0\} = \{0\}$, which is not a line; and that point cannot be separated from any other. Indeed, let $U$ be an open set of the quotient containing $\{0\}$. Its preimage is open, saturated, and contains $0$, hence contains a ball $B(0,\varepsilon)$. For every $\vec z \neq 0$ the vector $\frac{\varepsilon}{2|\vec z|}\vec z$ lies in that ball and in the orbit of $\vec z$, so by saturation the preimage contains every orbit. Thus $U$ is the whole quotient: every neighbourhood of $\{0\}$ contains every point, and the quotient is not Hausdorff. Deleting the origin removes exactly this one orbit. Every orbit accumulates at $0$ --- the same pathology as Example~\ref{ex:nonhausdorff-orbit}, where orbits accumulate on other orbits, here concentrated at a single point.
-\end{exbox}
-
-\begin{rembox}[Where This Is Going]\label{rem:where-this-going}
-$\mathbb{CP}^n$ is ``one of the main examples of manifolds'' and will recur throughout the course. With $T_2$ and second countability now secured, what is missing from manifold status is the locally Euclidean condition --- charts on $\mathbb{CP}^n$ --- which is supplied in \S\ref{sub:projective-atlas}, together with the smooth structure. The same two-step pattern ($\sim$ open via a group acting by homeomorphisms + graph closed via compactness) is the template for many quotient constructions to come: real projective space $\mathbb{RP}^n$ (Lee Example 1.5), Grassmannians, tori, and lens spaces all fit it.
-\end{rembox}
 
 
 % ============================================================================
@@ -2260,6 +2069,222 @@ M \arrow[r, shift left=0.8ex, "{(z,w) \,\mapsto\, z-w+1}"] & \mathbb{C}^\times \
 $M$ upstairs in $\mathbb{C}^2$, the parameter $s$ downstairs in $\mathbb{C}^\times$, and polar coordinates $s \mapsto (s/|s|, \log|s|)$ to the cylinder. The two arrows on the left are mutually inverse, so $s$ is a single chart covering all of $M$ --- something the regular value theorem, whose charts are local graphs, never promises.
 
 
+% ============================================================================
+% SECTION: EXAMPLE: SPHERES
+% ============================================================================
+
+\section{Example: Spheres}\label{sec:ex-spheres}
+
+\roadmark{Thread: examples}{The sphere, the first manifold of the course, in one place: $S^2$ by hemisphere charts, every $S^n$ by the same argument, and two overlapping charts whose transition map is already smooth.}
+
+The sphere through the course: a topological manifold with hemisphere charts in Section~\ref{sec:ex-spheres}; the homogeneous space $\SO(3)/\SO(2)$ in Example~\ref{ex:s2-homogeneous}; the Riemann sphere $\mathbb{CP}^1$ in Proposition~\ref{prop:cp1-sphere}; its geometric tangent spaces in Example~\ref{ex:tangent-sphere} and its transverse intersection with a plane in Example~\ref{ex:sphere-plane-transverse}; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in Section~\ref{sec:ex-hopf}; and $S^3 = \mathrm{SU}(2)$ in Proposition~\ref{prop:s3-su2}.
+
+\begin{exbox}[$S^2$ is a Topological $2$-Manifold]\exlabel{ex:s2-manifold}
+Let $S^2 = \{x \in \mathbb{R}^3 \mid |x| = 1\}$ with the subspace topology.
+\begin{itemize}
+    \item \textit{$T_2$ and second countable:} $S^2$ is a metric space (restriction of the Euclidean metric), hence $T_2$; and a subspace of a second countable space is second countable (intersect a countable basis of $\mathbb{R}^3$ with $S^2$).
+    \item \textit{Locally Euclidean:} let $p = (p_1, p_2, p_3) \in S^2$. Since $|p| = 1$, some coordinate of $p$ is nonzero. Upon relabeling coordinates (and possibly replacing $z$ by $-z$), we may assume \textbf{WLOG that the $z$-coordinate of $p$ is positive}. Let
+    \[
+    U = \{(x, y, z) \in S^2 \mid z > 0\} \quad \text{(the open northern hemisphere)},
+    \]
+    \[
+    \varphi : U \to \mathbb{R}^2, \qquad (x, y, z) \mapsto (x, y).
+    \]
+    $U$ is open in $S^2$ (preimage of $(0, \infty)$ under the continuous coordinate function $z$), and $p \in U$.
+
+    \textbf{Claim:} $\varphi$ is a homeomorphism of $U$ onto the open unit disk $D = \{(x, y) \mid x^2 + y^2 < 1\} \subseteq \mathbb{R}^2$.
+\end{itemize}
+\leeref{Example 1.4}
+\end{exbox}
+
+\begin{proof}[Proof of Claim (not given in lecture)]
+\emph{Image:} for $(x, y, z) \in U$, $x^2 + y^2 = 1 - z^2 < 1$ since $0 < z \le 1$, so $\varphi(U) \subseteq D$. Conversely, for $(x, y) \in D$, the point $(x, y, \sqrt{1 - x^2 - y^2})$ lies in $U$ and maps to $(x, y)$; so $\varphi(U) = D$.
+
+\emph{Injective:} if $(x, y, z), (x, y, z') \in U$, then $z = \sqrt{1 - x^2 - y^2} = z'$, using $z, z' > 0$.
+
+\emph{Continuous with continuous inverse:} $\varphi$ is the restriction of the projection $\mathbb{R}^3 \to \mathbb{R}^2$, hence continuous. The inverse $\varphi^{-1} : D \to U$, $(x, y) \mapsto (x, y, \sqrt{1 - x^2 - y^2})$, is continuous as a map into $\mathbb{R}^3$ (each component is continuous on $D$), hence continuous into the subspace $U$.
+
+Since $D$ is open in $\mathbb{R}^2$, Proposition~\ref{prop:open-charts} shows $S^2$ is locally Euclidean of dimension $2$ at $p$.
+\end{proof}
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[gray!70] (0,0) circle (1.3);
+\fill[violet!22] (-1.3,0) arc (180:0:1.3) -- cycle;
+\fill[violet!22] (0,0) ellipse (1.3 and 0.42);
+\draw[violet!75!black,very thick] (-1.3,0) arc (180:0:1.3);
+\draw[gray!50,dashed] (0,0) ellipse (1.3 and 0.42);
+\node[violet!75!black,font=\footnotesize] at (0,0.6) {$U=\{z>0\}$};
+\draw[->,thick,gray!70] (1.75,0) -- (2.95,0);
+\node[font=\footnotesize,above] at (2.35,0.06) {$\varphi$};
+\node[font=\scriptsize,below] at (2.35,-0.1) {$(x,y,z)\mapsto(x,y)$};
+\begin{scope}[xshift=4.7cm]
+\fill[violet!22] (0,0) circle (1.05);
+\draw[violet!75!black,thick,dashed] (0,0) circle (1.05);
+\draw[gray!45,->] (-1.4,0)--(1.4,0); \draw[gray!45,->] (0,-1.4)--(0,1.4);
+\node[font=\footnotesize] at (0,-1.65) {open unit disk in $\mathbb{R}^2$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+
+\begin{propbox}[Spheres Are Topological Manifolds]\thmlabel{prop:sn-manifold}
+$S^n = \{x \in \mathbb{R}^{n+1} \mid |x| = 1\}$ is a topological $n$-manifold.
+\leeref{Example 1.4}
+\end{propbox}
+
+\begin{proof}
+As in Example~\ref{ex:s2-manifold}, $S^n$ is a metric space (restriction of the Euclidean metric), hence Hausdorff, and second countable: intersecting a countable basis of $\mathbb{R}^{n+1}$ with $S^n$ gives a countable basis. The $2(n+1)$ open hemispheres $U_i^{\pm} = \{x \in S^n \mid \pm x_i > 0\}$ cover $S^n$, since every point has a nonzero coordinate. On $U_i^\pm$, the map $\varphi_i^\pm$ forgetting the $i$-th coordinate is continuous and lands in the open unit ball $B^n$, because the remaining coordinates satisfy $\sum_{j \ne i} x_j^2 = 1 - x_i^2 < 1$. Its inverse inserts $\pm\sqrt{1 - |y|^2}$ in slot $i$ and is continuous. So each $\varphi_i^\pm$ is a homeomorphism onto the open set $B^n \subseteq \mathbb{R}^n$, and Proposition~\ref{prop:open-charts} applies.
+\end{proof}
+
+\begin{rembox}\label{rem:manifolds-2}
+This is the argument of Example~\ref{ex:s2-manifold}, for every $n$ (Lee, Example 1.4). The hemisphere charts will be our first example of an \emph{atlas}, and the maps between overlapping charts (\S\ref{sub:charts}) will turn out to be smooth.
+\end{rembox}
+\begin{exbox}[Two Hemisphere Charts on $S^2$]\exlabel{ex:two-hemisphere-charts-s2}
+Take $U = \{z > 0\}$ with $\varphi(x, y, z) = (x, y)$ and $V = \{x > 0\}$ with $\psi(x, y, z) = (y, z)$, both charts onto the open unit disk. Then $U \cap V = \{x > 0, z > 0\}$, $\varphi(U \cap V) = \{(x, y) \in D \mid x > 0\}$, and
+\[
+\psi \circ \varphi^{-1}(x, y) = \psi\big(x, y, \sqrt{1 - x^2 - y^2}\big) = \big(y, \sqrt{1 - x^2 - y^2}\big).
+\]
+Note that this map is not merely continuous but $C^\infty$ on its (open) domain, since $1 - x^2 - y^2 > 0$ there. This is no accident, and it is the point of Definition~\ref{def:compatible}.
+\end{exbox}
+% ============================================================================
+% SECTION: EXAMPLE: COMPLEX PROJECTIVE SPACE
+% ============================================================================
+
+\section{Example: Complex Projective Space}\label{sec:ex-cpn}
+
+\roadmark{Thread: quotients}{$\mathbb{CP}^n$, the first manifold built as a quotient: the open quotient $S^{2n+1}/S^1$ is Hausdorff, second countable (\ref{sec:open-quotients}) and compact, and it is the space of complex lines. Its charts come in \ref{sec:projective-smooth}.}
+
+Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in Section~\ref{sec:ex-cpn}; the circle group $\Ugp(1)$ acting there in Example~\ref{ex:1-circle}; an orbit space in Example~\ref{ex:cpn-orbit}; a smooth and complex manifold through its standard atlas in Section~\ref{sec:projective-smooth}; a homogeneous space of $\Ugp(n+1)$ in Remark~\ref{rem:dimension-checks-through-homogeneous-spaces}; the domain of the moment map in Remark~\ref{rem:strategy}; and the base of the Hopf fibration in Section~\ref{sec:ex-hopf}.
+
+\label{sub:cpn}
+The following was set up in the last four minutes of lecture; the proof of the claim was given verbally, chalk down. \textbf{Uribe: ``I'll write this again next time''} --- so expect a careful reprise; the details below reconstruct the verbal argument.
+
+\begin{defbox}[Complex Projective Space $\mathbb{CP}^n$]\deflabel{def:cpn}
+Consider the sphere $S^{2n+1} \subseteq \mathbb{R}^{2n+2}$, and identify $\mathbb{R}^{2n+2} \cong \mathbb{C}^{n+1}$ by
+\[
+(x, y) \longmapsto x + iy, \qquad x, y \in \mathbb{R}^{n+1}
+\]
+(any such identification works). So points of $S^{2n+1}$ are complex vectors $z = (z_1, \dots, z_{n+1}) \in \mathbb{C}^{n+1}$ with $|z| = 1$. Let $S^1 = \{\xi \in \mathbb{C} \mid |\xi| = 1\}$ be the unit circle, and define a relation $\sim$ on $S^{2n+1}$ by
+\[
+z \sim w \iff \exists\, \xi \in S^1 \text{ such that } w = \xi z
+\]
+(componentwise complex multiplication: all entries of $w$ are obtained by rotating the entries of $z$ through the \emph{same} angle). This is an equivalence relation ($\xi = 1$ gives reflexivity; $\xi^{-1} \in S^1$ gives symmetry; products give transitivity). The quotient
+\[
+\mathbb{CP}^n \;:=\; S^{2n+1}/{\sim}
+\]
+is the \textbf{complex projective space} of complex dimension $n$. Explicitly: a point of $\mathbb{CP}^n$ is a class $[z] = \{\, \xi z \mid \xi \in S^1 \,\}$, a circle inside $S^{2n+1}$; $\pi(z) = [z]$; and $W \subseteq \mathbb{CP}^n$ is open iff the union of the circles belonging to $W$ is open in $S^{2n+1}$. The class $[z]$ is the same as the complex line $\mathbb{C} z \subseteq \mathbb{C}^{n+1}$ through $z$ (a line meets the unit sphere in exactly the circle $\{\xi z\}$), so $\mathbb{CP}^n$ is the space of complex lines through the origin in $\mathbb{C}^{n+1}$; the identification is $[z] \mapsto \mathbb{C} z$, with inverse $\ell \mapsto \ell \cap S^{2n+1}$.
+\leeref{Problem 1-9}
+\end{defbox}
+
+\begin{propbox}[$\mathbb{CP}^n$ is Hausdorff and Second Countable]\thmlabel{prop:cpn}
+The quotient topology on $\mathbb{CP}^n$ is $T_2$ and second countable.
+\leeref{Problem 1-9}
+\end{propbox}
+
+\begin{proof}[Proof (verbal sketch in Lecture 2; the general form is Corollary~\ref{cor:orbit-T2})]
+\textit{(Lecture~4: the graph of the orbit relation is the continuous image of the compact $G \times X$, hence compact, hence closed in the Hausdorff $X \times X$.)} We verify the two hypotheses of the Hausdorff Criterion.
+
+\emph{The relation is open.} For $\xi \in S^1$ define $R_\xi : S^{2n+1} \to S^{2n+1}$, $R_\xi(z) = \xi z$. This is well defined: $|\xi z| = |\xi|\,|z| = |z| = 1$. It is continuous, being the restriction to $S^{2n+1}$ of the $\mathbb{C}$-linear (hence $\mathbb{R}$-linear, hence continuous) map $z \mapsto \xi z$ on $\mathbb{C}^{n+1} \cong \mathbb{R}^{2n+2}$. Since $\xi^{-1} \in S^1$ and $R_{\xi^{-1}} \circ R_\xi = R_\xi \circ R_{\xi^{-1}} = \mathrm{id}$, $R_\xi$ is a homeomorphism; in particular $R_\xi(U)$ is open for every open $U \subseteq S^{2n+1}$. Now let $U \subseteq S^{2n+1}$ be open. For $w \in S^{2n+1}$,
+\begin{align*}
+w \in \pi^{-1}(\pi(U)) &\iff \exists\, z \in U \text{ with } w \sim z \\
+&\iff \exists\, z \in U,\ \xi \in S^1 \text{ with } w = \xi z \iff w \in \bigcup_{\xi \in S^1} R_\xi(U),
+\end{align*}
+so the saturation $\pi^{-1}(\pi(U)) = \bigcup_{\xi \in S^1} R_\xi(U)$ is a union of open sets, hence open. By Proposition~\ref{prop:saturation}, $\sim$ is open.
+
+\emph{The graph is closed.} Define
+\[
+\Phi : S^1 \times S^{2n+1} \longrightarrow S^{2n+1} \times S^{2n+1}, \qquad \Phi(\xi, z) = (z, \xi z).
+\]
+By Theorem~\ref{thm:univ-product}, $\Phi$ is continuous because its two components are: $(\xi, z) \mapsto z$ is the projection, and $(\xi, z) \mapsto \xi z$ is the restriction of the map $\mathbb{C} \times \mathbb{C}^{n+1} \to \mathbb{C}^{n+1}$, $(\xi, z) \mapsto \xi z$, whose real and imaginary parts are polynomial in the real coordinates. Its image is $\Gamma$: for $(z, w) \in S^{2n+1} \times S^{2n+1}$,
+\begin{align*}
+(z, w) \in \Phi\big(S^1 \times S^{2n+1}\big) &\iff \exists\, \xi \in S^1 \text{ with } (z, w) = (z, \xi z) \\
+&\iff \exists\, \xi \in S^1 \text{ with } w = \xi z \iff z \sim w \iff (z,w) \in \Gamma.
+\end{align*}
+$S^1 \subseteq \mathbb{R}^2$ and $S^{2n+1} \subseteq \mathbb{R}^{2n+2}$ are closed and bounded, hence compact, and a finite product of compact spaces is compact (Proposition~\ref{fact:compact}); so $S^1 \times S^{2n+1}$ is compact and its continuous image $\Gamma$ is compact. The space $S^{2n+1} \times S^{2n+1}$ is a subspace of $\mathbb{R}^{4n+4}$, hence metrizable, hence Hausdorff (Proposition~\ref{fact:metric}), and a compact subset of a Hausdorff space is closed (Proposition~\ref{fact:compact}). Therefore $\Gamma$ is closed in $S^{2n+1} \times S^{2n+1}$.
+
+By the Hausdorff Criterion, $\mathbb{CP}^n$ is $T_2$; and since $S^{2n+1}$ is second countable (subspace of $\mathbb{R}^{2n+2}$) and $\sim$ is open, Theorem~\ref{thm:2c-quotient} gives second countability.
+\end{proof}
+
+\textbf{Transcription note.} Page~7 of the handwritten notes writes the map in this argument as $S^1 \times S^{2n+1} \to S^{2n+2} \times S^{2n+2}$; the target is $S^{2n+1} \times S^{2n+1}$, where the graph of the relation lives.
+
+\textbf{Transcription note.} On the board (and in the handwritten notes) the target of $\Phi$ was written with superscripts $2n+2$; the target must be $S^{2n+1} \times S^{2n+1}$ --- pairs of points of the sphere being quotiented --- as recorded here.
+
+\begin{proof}[A direct proof that $\mathbb{CP}^n$ is Hausdorff (Assignment 2)]
+This bypasses the Hausdorff criterion and exhibits the separating sets. Let $u \neq v$ in $S^{2n+1}/S^1$, with representatives $\vec u, \vec v \in S^{2n+1}$. Their orbits $S^1 \vec u$ and $S^1 \vec v$ are disjoint (distinct orbits), and compact, being images of the compact $S^1$ under $\mu \mapsto \mu\vec u$, $\mu \mapsto \mu \vec v$.
+
+\emph{The orbits are at positive distance.} Let $d = \inf\{|\vec a - \vec b| : \vec a \in S^1\vec u,\ \vec b \in S^1 \vec v\}$. If $d = 0$, choose $\vec a_k \in S^1\vec u$, $\vec b_k \in S^1\vec v$ with $|\vec a_k - \vec b_k| \to 0$; by compactness a subsequence $\vec a_{k_j} \to \vec a \in S^1\vec u$, whence $\vec b_{k_j} \to \vec a$ too, and $\vec a \in S^1 \vec v$ since that orbit is closed. This contradicts disjointness, so $d > 0$.
+
+\emph{Thickened orbits.} Put $r = d/3$ and $A = \bigcup_{\lambda \in S^1} \lambda\, B(\vec u, r)$, $B = \bigcup_{\lambda \in S^1} \lambda\, B(\vec v, r)$, with balls taken in $S^{2n+1}$. Each is open (a union of images of an open set under the homeomorphisms $\vec z \mapsto \lambda\vec z$) and saturated (a union of orbits). If $\lambda\vec z_1 = \lambda'\vec z_2$ with $\vec z_1 \in B(\vec u, r)$, $\vec z_2 \in B(\vec v, r)$, then
+\[
+d \le |\lambda\vec u - \lambda'\vec v| \le |\lambda\vec u - \lambda \vec z_1| + |\lambda\vec z_1 - \lambda'\vec z_2| + |\lambda'\vec z_2 - \lambda'\vec v| < r + 0 + r = \tfrac23 d,
+\]
+using $|\lambda| = |\lambda'| = 1$; a contradiction, so $A \cap B = \emptyset$. Since $\pi$ is open and $A$, $B$ are disjoint and saturated, $\pi(A)$ and $\pi(B)$ are disjoint open neighbourhoods of $u$ and $v$.
+\end{proof}
+
+\begin{rembox}\label{rem:new-spaces-6}
+The one place the group enters the direct proof is $|\lambda \vec u - \lambda \vec z_1| = |\vec u - \vec z_1|$: every $\lambda \in S^1$ is an \emph{isometry}, so the thickening by $r$ is uniform over the whole group. That uniformity --- a compact group acting by isometries --- is the concrete mechanism behind Corollary~\ref{cor:orbit-T2}, and it is exactly what fails for $\mathbb{R}^+$ in Example~\ref{ex:nonhausdorff-orbit}, where $t \cdot (x,y) = (tx, y/t)$ distorts distances without bound.
+\end{rembox}
+
+\begin{propbox}[$\mathbb{CP}^n$ Is Compact]\thmlabel{prop:cpn-compact}
+$\mathbb{CP}^n$ is compact.
+\leeref{Problem 1-9}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} $S^{2n+1} \subseteq \mathbb{R}^{2n+2}$ is closed and bounded, hence compact (Proposition~\ref{fact:compact}(1)), and $\mathbb{CP}^n = \pi(S^{2n+1})$ is its image under the continuous surjection $\pi$.
+\end{proof}
+
+\begin{propbox}[$\mathbb{CP}^n$ as the Space of Complex Lines]\thmlabel{prop:cpn-lines}
+Let the multiplicative group $\mathbb{C}^\times = \mathbb{C} \setminus \{0\}$ act on $\mathbb{C}^{n+1} \setminus \{0\}$ by scalar multiplication, $\lambda \cdot \vec z = \lambda \vec z$. Then:
+\begin{enumerate}
+    \item this is a continuous action, and the orbit of $\vec z$ is the punctured complex line $\operatorname{span}_{\mathbb{C}}(\vec z) \setminus \{0\}$; so the orbit space $(\mathbb{C}^{n+1} \setminus \{0\})/\mathbb{C}^\times$ is in natural bijection with the set of complex lines through the origin in $\mathbb{C}^{n+1}$;
+    \item the map
+    \[
+    \Theta : \big(\mathbb{C}^{n+1} \setminus \{0\}\big)/\mathbb{C}^\times \longrightarrow S^{2n+1}/S^1, \qquad \mathbb{C}^\times\vec z \longmapsto S^1 \cdot \frac{\vec z}{|\vec z|},
+    \]
+    is a homeomorphism.
+\end{enumerate}
+Consequently the two natural quotient topologies on the set of lines agree, and either may be taken as the topology of $\mathbb{CP}^n$.
+\leeref{Problem 1-9}
+\end{propbox}
+
+\begin{center}
+\begin{tikzcd}[row sep=3.2em, column sep=4.6em]
+\mathbb{C}^{n+1}\setminus\{0\} \arrow[r, shift left=0.8ex, "g"] \arrow[d, "\pi_1"'] & S^{2n+1} \arrow[l, shift left=0.8ex, hook', "\iota"] \arrow[d, "\pi_2"] \\
+\big(\mathbb{C}^{n+1}\setminus\{0\}\big)/\mathbb{C}^\times \arrow[r, shift left=0.8ex, "\Theta"] & S^{2n+1}/S^1 \arrow[l, shift left=0.8ex, "\Psi"]
+\end{tikzcd}
+\end{center}
+
+Here $g(\vec z) = \vec z/|\vec z|$ and $\iota$ is the inclusion. Both squares commute: $\Theta \circ \pi_1 = \pi_2 \circ g$ and $\Psi \circ \pi_2 = \pi_1 \circ \iota$. Upstairs, $g$ and $\iota$ are \emph{not} mutually inverse --- $g \circ \iota = \mathrm{id}$, but $\iota \circ g$ replaces $\vec z$ by $\vec z/|\vec z|$. Downstairs they become inverse, because passing to the quotient forgets exactly the scale that $\iota \circ g$ changes. The proof below is the chase around these two squares.
+
+
+\begin{proof}
+Write $\pi_1 : \mathbb{C}^{n+1}\setminus\{0\} \to (\mathbb{C}^{n+1}\setminus\{0\})/\mathbb{C}^\times$ and $\pi_2 : S^{2n+1} \to S^{2n+1}/S^1$ for the two projections, both quotient maps.
+
+(1) If $\lambda \neq 0$ and $\vec z \neq 0$ then $\lambda\vec z \neq 0$, so the action preserves $\mathbb{C}^{n+1}\setminus\{0\}$. The axioms are $1 \cdot \vec z = \vec z$ and associativity of multiplication in $\mathbb{C}$, coordinatewise. Continuity: each component $(\lambda, \vec z) \mapsto \lambda z_k$ is polynomial in the real and imaginary parts (Definition~\ref{def:complex-groups}), and the action is the restriction of this map to a subspace. The orbit $\{\lambda\vec z : \lambda \neq 0\}$ is $\operatorname{span}_{\mathbb{C}}(\vec z) \setminus \{0\}$, and a line $\ell$ is recovered from $\ell \setminus \{0\}$ by adjoining $0$.
+
+(2) \emph{$\Theta$ is well defined and continuous.} Let $g(\vec z) = \vec z/|\vec z|$, continuous on $\mathbb{C}^{n+1} \setminus \{0\}$ with values in $S^{2n+1}$. For $\lambda \in \mathbb{C}^\times$,
+\[
+g(\lambda\vec z) = \frac{\lambda}{|\lambda|}\, g(\vec z), \qquad \Big|\frac{\lambda}{|\lambda|}\Big| = 1,
+\]
+so $g(\lambda\vec z)$ and $g(\vec z)$ lie in the same $S^1$-orbit: $\pi_2 \circ g$ is constant on the fibres of $\pi_1$, although $g$ itself is not. By the universal property (Theorem~\ref{thm:univ-quotient-full}), $\pi_2 \circ g$ descends to a unique continuous map on the $\mathbb{C}^\times$-quotient, which is $\Theta$.
+
+\emph{The inverse is continuous.} Let $\iota : S^{2n+1} \hookrightarrow \mathbb{C}^{n+1}\setminus\{0\}$ be the inclusion. Then $\pi_1 \circ \iota$ is continuous and constant on $S^1$-orbits, since $S^1 \subseteq \mathbb{C}^\times$; so it descends to a continuous $\Psi : S^{2n+1}/S^1 \to (\mathbb{C}^{n+1}\setminus\{0\})/\mathbb{C}^\times$, $S^1\vec z \mapsto \mathbb{C}^\times \vec z$.
+
+\emph{They are mutually inverse.} For $|\vec z| = 1$, $\Theta(\Psi(S^1\vec z)) = S^1 \vec z$; for $\vec z \neq 0$, $\Psi(\Theta(\mathbb{C}^\times\vec z)) = \mathbb{C}^\times(\vec z/|\vec z|) = \mathbb{C}^\times\vec z$, the vector $\vec z/|\vec z|$ lying in the $\mathbb{C}^\times$-orbit of $\vec z$.
+\end{proof}
+
+\begin{rembox}\label{rem:new-spaces-7}
+The key identity behind (2) is that for a unit vector $\vec z$ the part of its $\mathbb{C}^\times$-orbit lying on the sphere is exactly its $S^1$-orbit: $|\lambda\vec z| = |\lambda|$, which equals $1$ iff $\lambda \in S^1$. So each punctured line meets the unit sphere in precisely one circle, and normalizing $\vec z \mapsto \vec z/|\vec z|$ is the bridge between the two descriptions --- a point downstairs, a whole line upstairs in one, a circle upstairs in the other.
+\end{rembox}
+
+\begin{exbox}[Why the Origin Must Be Removed]\exlabel{ex:cpn-origin}
+Let $\mathbb{C}^\times$ act instead on all of $\mathbb{C}^{n+1}$ by scalar multiplication. The action is still continuous, but the orbit space acquires one extra point, the orbit $\{\lambda \cdot 0\} = \{0\}$, which is not a line; and that point cannot be separated from any other. Indeed, let $U$ be an open set of the quotient containing $\{0\}$. Its preimage is open, saturated, and contains $0$, hence contains a ball $B(0,\varepsilon)$. For every $\vec z \neq 0$ the vector $\frac{\varepsilon}{2|\vec z|}\vec z$ lies in that ball and in the orbit of $\vec z$, so by saturation the preimage contains every orbit. Thus $U$ is the whole quotient: every neighbourhood of $\{0\}$ contains every point, and the quotient is not Hausdorff. Deleting the origin removes exactly this one orbit. Every orbit accumulates at $0$ --- the same pathology as Example~\ref{ex:nonhausdorff-orbit}, where orbits accumulate on other orbits, here concentrated at a single point.
+\end{exbox}
+
+\begin{rembox}[Where This Is Going]\label{rem:where-this-going}
+$\mathbb{CP}^n$ is ``one of the main examples of manifolds'' and will recur throughout the course. With $T_2$ and second countability now secured, what is missing from manifold status is the locally Euclidean condition --- charts on $\mathbb{CP}^n$ --- which is supplied in \S\ref{sub:projective-atlas}, together with the smooth structure. The same two-step pattern ($\sim$ open via a group acting by homeomorphisms + graph closed via compactness) is the template for many quotient constructions to come: real projective space $\mathbb{RP}^n$ (Lee Example 1.5), Grassmannians, tori, and lens spaces all fit it.
+\end{rembox}
 \chapter{Topological Groups and Homogeneous Spaces}
 
 % ============================================================================
@@ -2369,25 +2394,7 @@ $\GL(n,\mathbb{R})$ with the subspace topology is a topological group.
 \textit{(Lecture~3: the formulas are algebraic --- the product in the coordinates, the inverse ``using cofactors and determinants'' --- ``so one and two are algebraic maps, hence continuous.'' The details are filled in below.)} Multiplication: $(gh)_{ik} = \sum_j g_{ij} h_{jk}$ is a polynomial in the entries of $(g,h) \in \mathbb{R}^{n^2} \times \mathbb{R}^{n^2} = \mathbb{R}^{2n^2}$, so $\Mat \times \Mat \to \Mat$ is continuous; its restriction to $\GL \times \GL$ (subspace of the product, which is the product of the subspaces) is continuous and lands in $\GL$, hence is continuous into $\GL$ by Proposition~\ref{prop:univ-subspace}. Inversion: by the cofactor formula, $g^{-1} = \adj(g)/\det(g)$, where each entry of the adjugate $\adj(g)$ is a polynomial in the entries of $g$ and $\det(g) \neq 0$ on $\GL$; so each entry of $g^{-1}$ is a rational function with nonvanishing denominator, hence continuous on $\GL$. Uribe's summary: ``one and two are algebraic maps, hence continuous.''
 \end{proof}
 
-\begin{propbox}[$\GL({n,\mathbb{R}})$ Is Disconnected]\thmlabel{prop:GL-disconnected}
-$\GL(n,\mathbb{R}) = \det^{-1}(0,\infty) \sqcup \det^{-1}(-\infty,0)$ is a disjoint union of two nonempty open sets, hence disconnected.
-\leeref{Proposition 21.35}
-\end{propbox}
-
-\begin{proof}
-\textit{(Not from lecture; filled in.)} Both sets are open as preimages of open sets under the continuous $\det$ (Proposition~\ref{prop:det-cont}), they are disjoint, their union is $\GL(n,\mathbb{R})$ since $\det \neq 0$ there, and both are nonempty ($I$ and $\mathrm{diag}(1,\ldots,1,-1)$).
-\end{proof}
-
-\begin{thmbox}[Exactly Two Components]\thmlabel{thm:GL-two-components}
-Each of $\det^{-1}(0,\infty)$ and $\det^{-1}(-\infty,0)$ is connected, so $\GL(n,\mathbb{R})$ has exactly two connected components.
-\leeref{Proposition 21.35, via Proposition 21.34}
-\end{thmbox}
-
-\begin{proof}[Proof (to be filled)]
-Not proved here (stated in lecture; Lee, Proposition 21.35). To be filled.
-\end{proof}
-
-\textbf{Not proved here.} Stated in lecture with ``we'll say more about that.'' The usual argument reduces a matrix of positive determinant to the identity by a path, using Gaussian elimination or the polar decomposition together with connectedness of $\SO(n)$. Only Proposition~\ref{prop:GL-disconnected} is needed below.
+The disconnectedness of $\GL(n,\mathbb{R})$ and of $\Ogp(n)$, why $\SO(n)$ is a proper subgroup of $\Ogp(n)$, and $\Ugp(1) = S^1$ are collected in Section~\ref{sec:ex-classical}.
 
 \begin{defbox}[Special Linear Group]\deflabel{def:special-linear-group}
 $\SL(n,\mathbb{R}) = \det^{-1}(1) \subseteq \GL(n,\mathbb{R})$, the matrices of determinant $1$. It is a subgroup ($\det$ is multiplicative), hence a topological group with the subspace topology (Proposition~\ref{prop:subgroup-topgroup}), and it is closed in $\Mat(n,\mathbb{R})$ (preimage of the closed set $\{1\}$).
@@ -2409,36 +2416,9 @@ For $g \in \GL(n,\mathbb{R})$ the following are equivalent: (i) $g \in \Ogp(n,\m
 \begin{proof}
 \textit{(Stated in Lecture~3 --- ``$g \in \Ogp(n) \iff g^{-1} = g^{\mathsf T}$''; filled in.)} Writing the dot product as $x \cdot y = x^T y$, we have $(gx)\cdot(gy) = x^T g^T g\, y$. If $g^T g = I$ this equals $x^T y$, so (ii) $\Rightarrow$ (i). Conversely, if (i) holds, take $x = e_i$, $y = e_j$: then $(g^T g)_{ij} = e_i^T g^T g\, e_j = e_i \cdot e_j = \delta_{ij}$, so $g^T g = I$. (ii) $\iff$ (iii) since for square matrices a one-sided inverse is two-sided. Finally $1 = \det(I) = \det(g^T g) = \det(g^T)\det(g) = \det(g)^2$.
 \end{proof}
-
-\begin{center}
-\begin{tikzpicture}
-\draw[very thick, teal!70!black] (0.00,0) circle (0.95);
-\fill[teal!70!black] (0.95,0) circle (1.7pt) node[anchor=west, font=\scriptsize] {$I$};
-\node[teal!70!black, font=\scriptsize] at (0.00,1.25) {$\SO(2) = \{R_\theta\}$};
-\draw[->, teal!70!black] (0.00,0) ++(60:0.62) arc (60:150:0.62); \node[font=\scriptsize, teal!70!black] at (0.00,0) {$\theta$};
-\draw[very thick, violet!75!black] (3.60,0) circle (0.95);
-\fill[violet!75!black] (4.55,0) circle (1.7pt) node[anchor=west, font=\scriptsize] {$S$};
-\node[violet!75!black, font=\scriptsize] at (3.60,1.25) {$\{R_\theta S\}$, reflections};
-\draw[->, violet!75!black] (3.60,0) ++(60:0.62) arc (60:150:0.62); \node[font=\scriptsize, violet!75!black] at (3.60,0) {$\theta$};
-\draw[gray!60] (-0.6,-2.2) -- (4.2,-2.2); \fill[teal!70!black] (0,-2.2) circle (1.7pt) node[below, font=\scriptsize] {$+1$}; \fill[violet!75!black] (3.6,-2.2) circle (1.7pt) node[below, font=\scriptsize] {$-1$};
-\draw[->, thick, gray!70] (0,-1.05) -- node[left, font=\scriptsize] {$\det$} (0,-2.0); \draw[->, thick, gray!70] (3.6,-1.05) -- node[right, font=\scriptsize] {$\det$} (3.6,-2.0);
-\node[font=\scriptsize] at (1.8,0) {$\sqcup$};
-\end{tikzpicture}
-\end{center}
-
-$\Ogp(2)$ drawn as two circles. The rotations $R_\theta$ form $\SO(2)$, the matrices of determinant $1$, a circle through $I$. The matrices of determinant $-1$ are the reflections $R_\theta S$ with $S = \mathrm{diag}(1, -1)$ --- if $\det A = -1$ then $AS \in \SO(2)$ --- a second circle. The determinant is continuous with only the values $\pm 1$ on $\Ogp(n)$, so it splits $\Ogp(n)$ into two disjoint open and closed pieces, by the argument that disconnects $\GL(n,\mathbb{R})$ (Proposition~\ref{prop:GL-disconnected}). That each piece is connected, so that $\Ogp(n)$ has exactly two components, is Lee's Proposition~21.34.
-
 \begin{defbox}[Special Orthogonal Group]\deflabel{def:special-orthogonal-group}
 $\SO(n,\mathbb{R}) = \Ogp(n,\mathbb{R}) \cap \SL(n,\mathbb{R}) = \{\, g \in \Ogp(n,\mathbb{R}) \mid \det g = 1 \,\}$.
 \end{defbox}
-
-\begin{exbox}[Why $\SO(n)$ Is a Proper Subgroup of $\Ogp(n)$]\exlabel{ex:why-n-proper-subgroup-n}
-A student asked why one bothers to intersect with $\SL$: does $\Ogp(n)$ not already sit inside $\SL(n)$? No: $\det = \pm 1$, and both signs occur. The reflection
-\[
-g = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-\]
-across the $x$-axis is orthogonal ($g^T g = I$) with $\det g = -1$, so $g \in \Ogp(2,\mathbb{R}) \setminus \SO(2,\mathbb{R})$. The same works in every dimension with $\mathrm{diag}(1, \ldots, 1, -1)$.
-\end{exbox}
 
 \begin{defbox}[Complex Matrix Groups]\deflabel{def:complex-groups}
 Once and for all, fix the $\mathbb{R}$-linear identification $\mathbb{C} \cong \mathbb{R}^2$, $x + iy \mapsto (x, y)$, and hence $\mathbb{C}^n \cong \mathbb{R}^{2n}$: explicitly, writing $z_j = x_j + i y_j$,
@@ -2605,6 +2585,9 @@ Each of $\GL(n,\mathbb{R})$, $\SL(n,\mathbb{R})$, $\Ogp(n,\mathbb{R})$, $\SO(n,\
 The proof has two parts of very different difficulty. The point-set part is free: each group is a subspace of $\mathbb{R}^{n^2}$ or $\mathbb{R}^{2n^2}$, hence $T_2$ and second countable by Theorem~\ref{thm:subspace-inherit}. Local Euclideanness is the real content, and it is established in stages. $\GL(n,\mathbb{R})$ and $\GL(n,\mathbb{C})$ are open subsets of Euclidean space and hence locally Euclidean of dimensions $n^2$ and $2n^2$ (Proposition~\ref{prop:open-submanifold}). $\SL(n,\mathbb{R})$ is done above, in this section. $\Ogp(n)$, $\SO(n)$ and $\Ugp(n)$ need the coordinate-free differential and are done in \S\ref{sub:on-smooth} and \S\ref{sub:un-smooth}; Theorem~\ref{thm:classical-summary} collects all six, with their dimensions and geometric tangent spaces.
 \end{proof}
 
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+
+
 
 % ============================================================================
 % Lecture 3 (Fri Sep 4, 2026), last part, and Lecture 4 (Wed Sep 9, 2026), first part
@@ -2704,6 +2687,9 @@ The relation of \S\ref{sub:cpn} on $S^{2n+1}$, $z \sim w \iff w = \xi z$ for som
 \leeref{cf.\ Problem 1-9}
 \end{exbox}
 
+Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in Section~\ref{sec:ex-cpn}; the circle group $\Ugp(1)$ acting there in Example~\ref{ex:1-circle}; an orbit space in Example~\ref{ex:cpn-orbit}; a smooth and complex manifold through its standard atlas in Section~\ref{sec:projective-smooth}; a homogeneous space of $\Ugp(n+1)$ in Remark~\ref{rem:dimension-checks-through-homogeneous-spaces}; the domain of the moment map in Remark~\ref{rem:strategy}; and the base of the Hopf fibration in Section~\ref{sec:ex-hopf}.
+
+
 \begin{exbox}[$\SO(2)$ Acting on $\mathbb{R}^2$ --- the Picture]\exlabel{ex:so2-orbits}
 Let $\SO(2,\mathbb{R})$, the rotations of the plane, act on $\mathbb{R}^2$ by matrix multiplication. A rotation preserves $|x|$, so $g \cdot x$ stays on the circle of radius $|x|$; and a rotation through the right angle takes $x$ to any prescribed point of that circle. Hence
 \[
@@ -2761,6 +2747,9 @@ So the orbits are the concentric spheres together with the origin, and the orbit
 \begin{rembox}\label{rem:actions-2}
 This example was Uribe's last-minute illustration, given verbally; the proof above supplies the details. Compare it with $\mathbb{CP}^n$: there $S^1$ acts on $S^{2n+1}$ by $z \mapsto \xi z$, the orbit of $z$ is the circle $\{\xi z \mid |\xi| = 1\}$ traced inside the big sphere, and \emph{every} orbit is a circle of the same kind---no special points. That uniformity is part of why $\mathbb{CP}^n$ comes out a manifold. The rotation examples already show one thing the coming theory must accommodate: orbits can have different ``sizes'' (a point and $2$-spheres), and the orbit space can have boundary ($[0,\infty)$ is a manifold \emph{with boundary}, not a manifold). Conditions ruling this out---free actions, properness---are where the theory of quotient manifolds (Lee Ch.\ 21) is headed.
 \end{rembox}
+
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+
 
 % ---- Lecture 4 (Wed Sep 9, 2026) begins here ----
 \subsection{Orbit Relations Are Open}
@@ -2975,6 +2964,9 @@ H_{[0]} = \{\, t \in \mathbb{R} \mid [t] = [0] \,\} = \mathbb{Q},
 \]
 which is dense in $\mathbb{R}$ and not closed.
 \end{proof}
+
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+
 
 \begin{exbox}[Isotropy of the North Pole under $\SO(3)$]\exlabel{ex:so3-isotropy}
 Let $\SO(3)$ act on $S^2 = \{x \in \mathbb{R}^3 \mid |x| = 1\}$ by rotations (matrix multiplication; it preserves the sphere since orthogonal matrices preserve norms). For $x_0 = (0,0,1)$, the answer from the floor: the isotropy consists of the rotations about the $z$-axis. In matrices, $g \cdot e_3 = e_3$ says the third column of $g$ is $e_3$; orthogonality then forces the third row to be $e_3^T$ as well (the columns are orthonormal, so the first two columns are orthogonal to $e_3$, i.e.\ have zero third entry), and the remaining $2 \times 2$ block is orthogonal with determinant $1$:
@@ -3232,6 +3224,9 @@ Let $G$ be a compact Hausdorff topological group and $H \le G$ a compact subgrou
 \textit{(Not from lecture; filled in.)} Everything is an application of \ref{sec:actions} to the continuous action of $H$ on $G$ of Proposition~\ref{prop:GH-orbit-space}, whose orbit space is $G/H$ with its quotient topology. Apply Corollary~\ref{cor:orbit-T2}: $H$ and $G$ compact, $G$ Hausdorff, so the orbit space $G/H$ is Hausdorff; it is compact as $\pi(G)$. Second countability is Theorem~\ref{thm:2c-quotient}, the orbit relation being open by Lemma~\ref{lem:orbit-open}.
 \end{proof}
 
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+
+
 \subsection{Real Grassmannians}
 
 \begin{defbox}[Grassmannian]\deflabel{def:grassmannian}
@@ -3297,6 +3292,64 @@ Heuristically, $\dim G/H = \dim G - \dim H$, which with $\dim \Ogp(m) = \tfrac{m
 This is correct, but nothing proved so far shows $\Gr_k(\mathbb{R}^n)$ is locally Euclidean at all: the corollary only supplies the two point-set conditions. Charts on Grassmannians (graphs of linear maps $V_0 \to V_0^\perp$) are Lee Example 1.36, and will make $\Gr_k(\mathbb{R}^n)$ a $k(n-k)$-manifold. For $k = 1$ this is $\mathbb{RP}^{n-1}$, of dimension $n - 1$, consistent with the index remark above. The picture Uribe drew is $n = 3$, $k = 2$: $V_0$ is the $xy$-plane, $\Gr_2(\mathbb{R}^3)$ is the space of planes through the origin in $\mathbb{R}^3$, and $k(n-k) = 2$.
 \end{rembox}
 
+% ============================================================================
+% SECTION: EXAMPLE: THE CLASSICAL GROUPS
+% ============================================================================
+
+\section{Example: The Classical Groups}\label{sec:ex-classical}
+
+\roadmark{Thread: equations}{The classical matrix groups of \ref{sec:topgroups} as examples: the determinant disconnects $\GL(n,\mathbb{R})$ and $\Ogp(n)$, $\SO(n)$ is a proper subgroup of $\Ogp(n)$, and $\Ugp(1)$ is the circle.}
+
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+
+
+\begin{propbox}[$\GL({n,\mathbb{R}})$ Is Disconnected]\thmlabel{prop:GL-disconnected}
+$\GL(n,\mathbb{R}) = \det^{-1}(0,\infty) \sqcup \det^{-1}(-\infty,0)$ is a disjoint union of two nonempty open sets, hence disconnected.
+\leeref{Proposition 21.35}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Both sets are open as preimages of open sets under the continuous $\det$ (Proposition~\ref{prop:det-cont}), they are disjoint, their union is $\GL(n,\mathbb{R})$ since $\det \neq 0$ there, and both are nonempty ($I$ and $\mathrm{diag}(1,\ldots,1,-1)$).
+\end{proof}
+
+\begin{thmbox}[Exactly Two Components]\thmlabel{thm:GL-two-components}
+Each of $\det^{-1}(0,\infty)$ and $\det^{-1}(-\infty,0)$ is connected, so $\GL(n,\mathbb{R})$ has exactly two connected components.
+\leeref{Proposition 21.35, via Proposition 21.34}
+\end{thmbox}
+
+\begin{proof}[Proof (to be filled)]
+Not proved here (stated in lecture; Lee, Proposition 21.35). To be filled.
+\end{proof}
+
+\textbf{Not proved here.} Stated in lecture with ``we'll say more about that.'' The usual argument reduces a matrix of positive determinant to the identity by a path, using Gaussian elimination or the polar decomposition together with connectedness of $\SO(n)$. Only Proposition~\ref{prop:GL-disconnected} is needed below.
+
+
+\begin{center}
+\begin{tikzpicture}
+\draw[very thick, teal!70!black] (0.00,0) circle (0.95);
+\fill[teal!70!black] (0.95,0) circle (1.7pt) node[anchor=west, font=\scriptsize] {$I$};
+\node[teal!70!black, font=\scriptsize] at (0.00,1.25) {$\SO(2) = \{R_\theta\}$};
+\draw[->, teal!70!black] (0.00,0) ++(60:0.62) arc (60:150:0.62); \node[font=\scriptsize, teal!70!black] at (0.00,0) {$\theta$};
+\draw[very thick, violet!75!black] (3.60,0) circle (0.95);
+\fill[violet!75!black] (4.55,0) circle (1.7pt) node[anchor=west, font=\scriptsize] {$S$};
+\node[violet!75!black, font=\scriptsize] at (3.60,1.25) {$\{R_\theta S\}$, reflections};
+\draw[->, violet!75!black] (3.60,0) ++(60:0.62) arc (60:150:0.62); \node[font=\scriptsize, violet!75!black] at (3.60,0) {$\theta$};
+\draw[gray!60] (-0.6,-2.2) -- (4.2,-2.2); \fill[teal!70!black] (0,-2.2) circle (1.7pt) node[below, font=\scriptsize] {$+1$}; \fill[violet!75!black] (3.6,-2.2) circle (1.7pt) node[below, font=\scriptsize] {$-1$};
+\draw[->, thick, gray!70] (0,-1.05) -- node[left, font=\scriptsize] {$\det$} (0,-2.0); \draw[->, thick, gray!70] (3.6,-1.05) -- node[right, font=\scriptsize] {$\det$} (3.6,-2.0);
+\node[font=\scriptsize] at (1.8,0) {$\sqcup$};
+\end{tikzpicture}
+\end{center}
+
+$\Ogp(2)$ drawn as two circles. The rotations $R_\theta$ form $\SO(2)$, the matrices of determinant $1$, a circle through $I$. The matrices of determinant $-1$ are the reflections $R_\theta S$ with $S = \mathrm{diag}(1, -1)$ --- if $\det A = -1$ then $AS \in \SO(2)$ --- a second circle. The determinant is continuous with only the values $\pm 1$ on $\Ogp(n)$, so it splits $\Ogp(n)$ into two disjoint open and closed pieces, by the argument that disconnects $\GL(n,\mathbb{R})$ (Proposition~\ref{prop:GL-disconnected}). That each piece is connected, so that $\Ogp(n)$ has exactly two components, is Lee's Proposition~21.34.
+
+
+\begin{exbox}[Why $\SO(n)$ Is a Proper Subgroup of $\Ogp(n)$]\exlabel{ex:why-n-proper-subgroup-n}
+A student asked why one bothers to intersect with $\SL$: does $\Ogp(n)$ not already sit inside $\SL(n)$? No: $\det = \pm 1$, and both signs occur. The reflection
+\[
+g = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+\]
+across the $x$-axis is orthogonal ($g^T g = I$) with $\det g = -1$, so $g \in \Ogp(2,\mathbb{R}) \setminus \SO(2,\mathbb{R})$. The same works in every dimension with $\mathrm{diag}(1, \ldots, 1, -1)$.
+\end{exbox}
 \chapter{Smooth Structures}
 
 % ============================================================================
@@ -3636,6 +3689,9 @@ The board wrote ``let $M$ be a topological manifold (connected).'' Nothing in th
 \section{Projective Spaces as Smooth Manifolds}\label{sec:projective-smooth}\label{sub:projective-atlas}
 
 \roadmark{Stage: foundations}{The quotient-built manifolds get their smooth structures from atlases written down by hand: $\mathbb{CP}^n$, with holomorphic transition functions.}
+
+The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through the course: the second is the quotient map that defines $\mathbb{CP}^n$ in Section~\ref{sec:ex-cpn}, an orbit map in Example~\ref{ex:cpn-orbit}; the first is the quotient map of Proposition~\ref{prop:rpn-topologies}, and both are read in the standard atlases of Section~\ref{sec:projective-smooth}; Section~\ref{sec:ex-hopf} shows the first is a two-to-one local diffeomorphism and the second a submersion and a fibration, the Hopf fibration, with local but no global sections; and for $n = 3$ the first returns as $S^3 = \mathrm{SU}(2) \to \SO(3) \cong \mathbb{RP}^3$ in Theorem~\ref{thm:double-cover}.
+
 
 \textit{Assignment 2, Problem 2(b)--(c). This completes the construction begun in \S\ref{sub:cpn}: there $\mathbb{CP}^n$ was shown to be compact, Hausdorff and second countable; here it acquires charts, and the charts turn out to be smoothly --- indeed holomorphically --- compatible.}
 
@@ -4631,6 +4687,9 @@ Read together, Theorem~\ref{thm:vs-differential-curves} and Corollary~\ref{cor:v
 
 \roadmark{Stage: linear}{The matrix groups become smooth level sets: $\Ogp(n)$ and $\Ugp(n)$ by the regular value theorem, with the differential computed along straight lines.}
 
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+
+
 The promise of \S\ref{sub:classical-manifolds} can now be kept, with \S\ref{sub:vs-differential} supplying the meaning of every step.
 
 \begin{defbox}[Symmetric Matrices as a Euclidean Space]\deflabel{def:sym}
@@ -4997,6 +5056,9 @@ T^{\geo}_pS^n = \ker\big(2p^{\mathsf T}\big) = \{\, v \in \mathbb{R}^{n+1} \mid 
 the hyperplane orthogonal to the position vector --- the tangent plane of calculus, now as a theorem. Directly from the definition: any curve $\gamma$ on the sphere satisfies $\gamma(t)\cdot\gamma(t) = 1$, so $2\,\gamma(t)\cdot\gamma'(t) = 0$, and at $t = 0$ this is $p \cdot v = 0$.
 \end{exbox}
 
+The sphere through the course: a topological manifold with hemisphere charts in Section~\ref{sec:ex-spheres}; the homogeneous space $\SO(3)/\SO(2)$ in Example~\ref{ex:s2-homogeneous}; the Riemann sphere $\mathbb{CP}^1$ in Proposition~\ref{prop:cp1-sphere}; its geometric tangent spaces in Example~\ref{ex:tangent-sphere} and its transverse intersection with a plane in Example~\ref{ex:sphere-plane-transverse}; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in Section~\ref{sec:ex-hopf}; and $S^3 = \mathrm{SU}(2)$ in Proposition~\ref{prop:s3-su2}.
+
+
 \begin{exbox}[The Orthogonal Group]\exlabel{ex:tangent-On}
 For $\Ogp(n) = F^{-1}(I)$ with $F : \Mat(n,\mathbb{R}) \to \Sym(n,\mathbb{R})$, $F(g) = gg^{\mathsf T}$, Theorem~\ref{thm:tangent-kernel} applies after identifying both spaces with Euclidean spaces by linear coordinates, under which the Jacobian corresponds to the differential $dF_g$ of Definition~\ref{def:vs-differential}. Proposition~\ref{prop:On-kernel} then gives
 \[
@@ -5105,6 +5167,9 @@ For a unit vector $n$, choose $Q \in \SO(3)$ with $Qe_3 = n$ (possible by Exampl
 \begin{rembox}\label{rem:tangent-6}
 This connects the $\SO(3)$ material of \ref{sec:actions} and \ref{sec:homogeneous} with the geometric tangent space. The three dimensions of $\SO(3)$ are the two needed to specify an axis, a point of $S^2$, and one for the angle about it --- matching $S^2 \cong \SO(3)/\SO(2)$ of Example~\ref{ex:s2-homogeneous}, with the isotropy $\SO(2)$ being exactly the rotations about the fixed axis.
 \end{rembox}
+
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+
 
 \begin{rembox}[Dimension Checks through Homogeneous Spaces]\label{rem:dimension-checks-through-homogeneous-spaces}
 In every homogeneous space met so far, $\dim G/H = \dim G - \dim H$:
@@ -5273,6 +5338,9 @@ The figure in \S\ref{sub:regular-values} was a transversality picture. Let $S_1 
     \item $|c| > 1$: the intersection is empty, and transversality holds vacuously.
 \end{itemize}
 \end{exbox}
+
+The sphere through the course: a topological manifold with hemisphere charts in Section~\ref{sec:ex-spheres}; the homogeneous space $\SO(3)/\SO(2)$ in Example~\ref{ex:s2-homogeneous}; the Riemann sphere $\mathbb{CP}^1$ in Proposition~\ref{prop:cp1-sphere}; its geometric tangent spaces in Example~\ref{ex:tangent-sphere} and its transverse intersection with a plane in Example~\ref{ex:sphere-plane-transverse}; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in Section~\ref{sec:ex-hopf}; and $S^3 = \mathrm{SU}(2)$ in Proposition~\ref{prop:s3-su2}.
+
 
 \begin{exbox}[Two Ways Transversality Can Fail]\exlabel{ex:transverse-failures}
 Let $S$ be the $x$-axis in $\mathbb{R}^2$, cut out by $G(x,y) = y$, so $T^{\geo}_qS$ is the $x$-axis at every $q \in S$, and $\ell = 1$. For $F : \mathbb{R} \to \mathbb{R}^2$ the theorem predicts $\dim F^{-1}(S) = 1 - 1 = 0$.
@@ -6260,6 +6328,9 @@ To show that $c$ is a regular value of a map between manifolds, and to see its l
 Assignment~3, Problem~4 is exactly this. For the moment map $F : \mathbb{CP}^n \to \mathbb{R}^n$ and $c$ in the interior of the simplex, every point of $F^{-1}(c)$ has all homogeneous coordinates nonzero, so $F^{-1}(c) \subseteq U_0$ (step 1). The target chart is the identity of $\mathbb{R}^n$, and $\varphi_0(U_0) = \mathbb{C}^n \cong \mathbb{R}^{2n}$, so $\tilde F$ is an explicit rational map $\mathbb{R}^{2n} \to \mathbb{R}^n$ (step 2). Its Jacobian has rank $n$ on the level set (step 3). So the fibre is an $n$-dimensional manifold (step 4) --- in this case a regular level set of $\mathbb{R}^{2n}$ itself, exactly the situation of \ref{sec:rvt}. When a level set does not fit in one chart, the same argument applies around each of its points separately, as the next corollary shows.
 \end{rembox}
 
+Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in Section~\ref{sec:ex-cpn}; the circle group $\Ugp(1)$ acting there in Example~\ref{ex:1-circle}; an orbit space in Example~\ref{ex:cpn-orbit}; a smooth and complex manifold through its standard atlas in Section~\ref{sec:projective-smooth}; a homogeneous space of $\Ugp(n+1)$ in Remark~\ref{rem:dimension-checks-through-homogeneous-spaces}; the domain of the moment map in Remark~\ref{rem:strategy}; and the base of the Hopf fibration in Section~\ref{sec:ex-hopf}.
+
+
 \begin{corbox}[Regular Level Sets Are Topological Manifolds]\thmlabel{cor:manifold-level-sets}
 Let $F : M \to N$ be a smooth map between smooth manifolds of dimensions $m$ and $n$, and $c \in N$ a regular value of $F$. Then $F^{-1}(c)$, with the subspace topology, is a topological manifold of dimension $m - n$ (or empty).
 \end{corbox}
@@ -6776,17 +6847,9 @@ $F : \mathbb{R} \to S^1$, $F(t) = (\cos t, \sin t)$, is a local diffeomorphism, 
 
 The helix is the interval $(0, 4\pi)$, lifted so that $F$ becomes the vertical projection onto the circle. On the orange interval $U$ the projection is a diffeomorphism onto the arc $V$; but the point $q \in V$ has a second preimage $t_1 + 2\pi$, on the other turn and outside $U$. Local invertibility does not see it.
 
-\begin{exbox}[Spheres Cover Projective Spaces]\exlabel{ex:sn-rpn}
-The projection $\pi : S^n \to \mathbb{RP}^n$, $x \mapsto [x]$, is a local diffeomorphism, exactly two-to-one.
-\end{exbox}
 
-\begin{proof}
-\textit{(Stated in Lecture~10 as an example, without proof --- the covering-map distinction was ``postponed''; filled in.)} Use coordinates $x_0, \ldots, x_n$ on $\mathbb{R}^{n+1}$, matching the charts $(U_i, \varphi_i)$ of Corollary~\ref{cor:rpn-atlas}, and give $S^n = \{|x|^2 = 1\}$ its level-set structure. For each $i$ and $\varepsilon = \pm 1$, the open hemisphere $U_i^\varepsilon = \{x \in S^n \mid \varepsilon x_i > 0\}$ is mapped by $\pi$ bijectively onto $U_i = \{[x] \mid x_i \neq 0\}$, since a line not contained in $\{x_i = 0\}$ meets $U_i^\varepsilon$ exactly once. In the chart $\varphi_i$,
-\[
-\varphi_i \circ \pi(x) = (x_k/x_i)_{k \neq i},
-\]
-the restriction of a smooth map on the open set $\{x_i \neq 0\} \subseteq \mathbb{R}^{n+1}$, hence smooth by Lemma~\ref{lem:level-set-maps}(1). Its inverse is $y \mapsto \varepsilon\,\hat y/|\hat y|$, where $\hat y$ is $y$ with a $1$ inserted in slot $i$. This is smooth into $\mathbb{R}^{n+1}$ with values in $U_i^\varepsilon$, hence smooth into $S^n$ by Lemma~\ref{lem:level-set-maps}(2). So $\varphi_i \circ \pi$ is a diffeomorphism of $U_i^\varepsilon$ onto $\mathbb{R}^n$, and $\pi|_{U_i^\varepsilon} = \varphi_i^{-1} \circ (\varphi_i \circ \pi)$ is a diffeomorphism onto $U_i$ by Proposition~\ref{prop:chart-diffeo}. The hemispheres cover $S^n$, and $\pi(x) = \pi(-x)$.
-\end{proof}
+The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is collected in Section~\ref{sec:ex-hopf}.
+
 
 \begin{rembox}[Covering Maps]\label{rem:covering-maps}
 Uribe noted that $\mathbb{R} \to S^1$ and $S^n \to \mathbb{RP}^n$ are \emph{covering maps}, while $(0, 4\pi) \to S^1$ is a local diffeomorphism that is not: over the point $F(0) = (1,0)$ it has a single preimage, $2\pi$, where every other point of the circle has two. Covering maps were not defined in lecture and the distinction was postponed (``we're running a little bit behind schedule''); it is Lee Ch.\ 4.
@@ -6898,12 +6961,7 @@ The projection $\pi_1 : M_1 \times M_2 \to M_1$ is a submersion, and so is $\pi_
 $\pi_{1*}\big(\Theta(v, w)\big) = \pi_{1*}\iota_{1*}v + \pi_{1*}\iota_{2*}w = v$, by the proof of Theorem~\ref{thm:tangent-product}; so $\pi_{1*}$ is onto $T_{p_1}M_1$.
 \end{proof}
 
-\begin{exbox}[The Projection $S^{2n+1} \to \mathbb{CP}^n$]\exlabel{ex:hopf-submersion}
-The projection $S^{2n+1} \to \mathbb{CP}^n$ of \S\ref{sub:cpn} is a submersion.
-\leeref{Problem 4-5(a)}
-\end{exbox}
-
-Stated in lecture as an example (``the projection you worked with from a sphere to complex projective space''); not yet proved. The dimensions are consistent, $2n \le 2n+1$. A proof needs the differential of a map \emph{out of} a level set in terms of the ambient Jacobian, which Lemma~\ref{lem:level-set-maps} makes available for smoothness but not yet for differentials.
+The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in Section~\ref{sec:ex-hopf}.
 
 \begin{defbox}[Regular Points and Critical Points]\deflabel{def:regular-critical}
 Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$.
@@ -7452,20 +7510,7 @@ Let $\pi : M \to B$ be a fibration with fibre $F$.
 \textit{(Stated in lecture; (2) as ``chain rule and stuff''.)} (1) Choose $\alpha$ with $b \in U_\alpha$. Because the diagram commutes and $\phi_\alpha$ is a bijection, $\phi_\alpha$ maps $\pi^{-1}(b)$ onto $\mathrm{pr}_1^{-1}(b) = \{b\} \times F$; it restricts to a homeomorphism with the subspace topologies. And $\{b\} \times F \to F$, $(b, f) \mapsto f$, is a homeomorphism, with inverse $f \mapsto (b, f)$. (2) On the open set $\pi^{-1}(U_\alpha)$, $\pi = \mathrm{pr}_1 \circ \phi_\alpha$; by the Chain Rule $\pi_{*p} = (\mathrm{pr}_1)_{*} \circ (\phi_\alpha)_{*p}$, a composite of an isomorphism and a surjection (Example~\ref{ex:product-projection-submersion}), hence onto. Every $b$ lies in some $U_\alpha$, and its fibre is a copy of $F$, nonempty if $F$ is. (3) Corollary~\ref{cor:submersion-open-map}.
 \end{proof}
 
-\begin{exbox}[The Hopf Fibration $S^{2n+1} \to \mathbb{CP}^n$]\exlabel{ex:hopf-fibration}
-The projection $\pi : S^{2n+1} \to \mathbb{CP}^n$, $\pi(z) = [z]$, is a fibration with fibre $S^1$. Over the chart domain $U_j = \{z_j \ne 0\}$ a local trivialization is
-\[
-\phi_j : \pi^{-1}(U_j) \to U_j \times S^1, \qquad \phi_j(z) = \Big(\, [z],\ \frac{z_j}{|z_j|} \,\Big),
-\]
-with inverse $([w], \lambda) \mapsto \lambda\, \hat w / |\hat w|$, where $\hat w$ is the representative of $[w]$ with $\hat w_j = 1$.
-\leeref{Problem 4-5(a) and the Hopf map of Ch.~21}
-\end{exbox}
-
-\begin{proof}
-\textit{(Claimed in lecture --- a student supplied the fibre, $S^1$; the trivialization is filled in.)} The sets $U_j$ cover $\mathbb{CP}^n$, and $\pi^{-1}(U_j) = S^{2n+1} \cap \{z_j \ne 0\}$ is open. $\phi_j$ is smooth: in the chart $\varphi_j$ of Definition~\ref{def:cpn-charts} its first component is $z \mapsto (z_k/z_j)_{k \ne j}$, and its second is $z \mapsto z_j/|z_j|$, both smooth on $\{z_j \ne 0\}$, with the second taking values in $S^1$ (Lemma~\ref{lem:level-set-maps}). The proposed inverse is smooth, since in the chart it is $(u, \lambda) \mapsto \lambda \hat w(u)/|\hat w(u)|$ with $\hat w(u)$ the vector $u$ with the entry $1$ inserted in slot $j$, a smooth map into $\mathbb{C}^{n+1} \setminus \{0\}$ landing in $S^{2n+1}$ (Lemma~\ref{lem:level-set-maps}). They are mutually inverse: for $z \in S^{2n+1}$ with $z_j \ne 0$, $\hat w = z/z_j$ and $\lambda = z_j/|z_j|$ give $\lambda \hat w/|\hat w| = z/|z| = z$; conversely $z = \lambda \hat w/|\hat w|$ has $[z] = [\hat w]$ and $z_j/|z_j| = \lambda$. Finally $\mathrm{pr}_1 \circ \phi_j = \pi$ by definition. So each $\phi_j$ is a local trivialization.
-\end{proof}
-
-With Proposition~\ref{prop:fibration-properties}(2), this also proves Example~\ref{ex:hopf-submersion}, which Lecture~10 stated without proof: the projection $S^{2n+1} \to \mathbb{CP}^n$ is a submersion. Its fibres are the circles $\{\lambda z : |\lambda| = 1\}$.
+The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibration, and its local but not global sections are collected in Section~\ref{sec:ex-hopf}.
 
 \begin{rembox}[What Comes Next]\label{rem:what-comes-next}
 Tangent bundles, cotangent bundles and vector bundles are fibrations ``with additional structure, where the fibres are vector spaces.'' The basic notion of fibration is more general: its fibre $F$ is any manifold.
@@ -7685,39 +7730,6 @@ Let $\pi : E \to B$ be a fibration with fibre $F$, and $\phi : \pi^{-1}(U) \to U
 \textit{(Not from lecture; filled in.)} $s$ is smooth, a composite of $u \mapsto (u, f_0)$ and the diffeomorphism $\phi^{-1}$; and $\pi(s(u)) = \mathrm{pr}_1\big(\phi(s(u))\big) = \mathrm{pr}_1(u, f_0) = u$, because $\pi = \mathrm{pr}_1 \circ \phi$.
 \end{proof}
 
-For the Hopf fibration the converse holds: the circle acting on the fibres turns any local section into a local trivialization.
-
-\begin{propbox}[Local Sections of the Hopf Fibration Give Trivializations]\thmlabel{prop:hopf-section-trivialization}
-Let $\pi : S^{2n+1} \to \mathbb{CP}^n$ be the Hopf fibration, on which $S^1$ acts by $\lambda \cdot z = \lambda z$, and let $s : U \to \pi^{-1}(U)$ be a local section. Then
-\[
-\Psi_s : U \times S^1 \longrightarrow \pi^{-1}(U), \qquad \Psi_s(u, \lambda) = \lambda\, s(u),
-\]
-is a diffeomorphism with $\pi \circ \Psi_s = \mathrm{pr}_1$ and $\Psi_s(u, 1) = s(u)$, equivariant for the actions $\lambda \cdot (u, \mu) = (u, \lambda\mu)$ and $\lambda \cdot z = \lambda z$. Its inverse is
-\[
-\Psi_s^{-1}(z) = \Big( \pi(z),\ \big\langle z, s(\pi(z)) \big\rangle \Big), \qquad \langle z, w \rangle = \textstyle\sum_k z_k \bar w_k .
-\]
-\end{propbox}
-
-\begin{proof}
-\textit{(Assignment~4, Problem~4 did this for the explicit sections $s_i$ of the corollary below; the inner-product formula for the inverse, which works for every local section, is filled in.)} $\Psi_s$ lands in $\pi^{-1}(U)$: $|\lambda s(u)| = 1$, and $\lambda s(u)$ spans the same complex line as $s(u)$, so $\pi(\lambda s(u)) = \pi(s(u)) = u$. This also gives $\pi \circ \Psi_s = \mathrm{pr}_1$, and equivariance is $\mu\,(\lambda s(u)) = (\mu\lambda)\, s(u)$. Both maps are smooth: $\Psi_s$ is a product of smooth maps into $\mathbb{C}^{n+1}$ landing in $S^{2n+1}$ (Lemma~\ref{lem:level-set-maps}), and the proposed inverse is built from $\pi$, $s$ and the polynomial $\langle \cdot, \cdot \rangle$, with second component of modulus~$1$. They are mutually inverse. If $z \in \pi^{-1}(U)$, then $z$ and the unit vector $s(\pi(z))$ span the same complex line, so $z = \lambda s(\pi(z))$ for some $\lambda$, and $\lambda = \lambda \langle s, s \rangle = \langle z, s(\pi(z)) \rangle$; hence $\Psi_s(\Psi_s^{-1}(z)) = z$. Conversely $\Psi_s^{-1}(\lambda s(u)) = (u, \lambda \langle s(u), s(u) \rangle) = (u, \lambda)$.
-\end{proof}
-
-\begin{corbox}[Local but Not Global Sections of the Hopf Fibration]\thmlabel{cor:hopf-local-sections}
-Over each chart domain $U_i = \{[z] : z_i \neq 0\}$ of $\mathbb{CP}^n$, the Hopf fibration has the local section
-\[
-s_i([z]) = \frac{\hat z}{|\hat z|}, \qquad \hat z = \frac{z}{z_i} ,
-\]
-and the trivialization $\Psi_{s_i}^{-1}$ it gives is the one of Example~\ref{ex:hopf-fibration}, $z \mapsto ([z], z_i/|z_i|)$. For $n \ge 1$ there is no global section.
-\end{corbox}
-
-\begin{proof}
-\textit{(Assignment~4, Problem~4; the global statement is the fact recorded in \ref{sub:sections}, stated there without proof.)} $\hat z$ is independent of the representative $z$, smooth in the chart $\varphi_i$ (it is $\varphi_i([z])$ with a $1$ inserted in slot~$i$), and nonzero, so $s_i$ is smooth and lands in $S^{2n+1}$; it spans the line of $z$, so $\pi \circ s_i = \mathrm{id}$. For $|z| = 1$ with $z_i \neq 0$, $s_i([z]) = \bar z_i z / |z_i|$, so $\langle z, s_i([z]) \rangle = z_i \langle z, z \rangle / |z_i| = z_i/|z_i|$. By Proposition~\ref{prop:hopf-section-trivialization} a global section would make $\pi$ globally trivial, $S^{2n+1} \cong \mathbb{CP}^n \times S^1$; that this is impossible for $n \ge 1$ is the fact of Remark~\ref{rem:sections-need-not-exist}.
-\end{proof}
-
-\begin{rembox}[The Same Principle Elsewhere]\label{rem:same-principle-elsewhere}
-For the tangent bundle the dictionary is between trivializations and \emph{frames}: the trivialization $\Phi$ of a chart (Definition~\ref{def:tb-charts}) corresponds to the $m$ local sections $u \mapsto \partial/\partial x^i|_u$, since $\Phi^{-1}(u, e_i) = \partial/\partial x^i|_u$; for a vector bundle of rank $m$ one local section is not enough, and it takes $m$ sections that are linearly independent at every point (Lee, Example~10.18 and Proposition~10.19). For the Hopf fibration one section suffices because the fibre is a single orbit of the free $S^1$-action. That is the general pattern of \emph{principal bundles}, where a group acts freely and transitively on each fibre; it is stated here, not proved.
-\end{rembox}
-
 \section{The Tangent Bundle}\label{sec:tangent-bundle}
 
 \roadmark{Stage: bundles}{All the tangent spaces of $M$, assembled into a single manifold that fibres over $M$.}
@@ -7916,9 +7928,9 @@ A section goes up, the projection comes down, and the round trip is the identity
 
 The cartoon of a section. The fibration is drawn as a box over its base, with fibres vertical; a section is a graph over the base, meeting every fibre exactly once --- at $s(b)$ in the fibre over $b$ --- so its image $s(B)$ is ``a copy of $B$'' inside $E$.
 
-\begin{rembox}[Sections Need Not Exist]\label{rem:sections-need-not-exist}
-``A fact'': the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ of Example~\ref{ex:hopf-fibration} --- ``the fibration that you're working with in homework'' --- has no continuous section, for $n \ge 1$. (For $n = 0$ the base is a single point.) This is stated, not proved, here; a proof uses the fundamental group. A vector bundle, by contrast, always has sections --- the zero section at least --- and in fact ``a very infinite-dimensional space'' of them.
-\end{rembox}
+
+That the Hopf fibration has no global section is recorded in Section~\ref{sec:ex-hopf}.
+
 
 \begin{defbox}[Vector Field]\deflabel{def:vector-field}
 A \textbf{vector field} on $M$ is a section of the tangent bundle $\pi : TM \to M$: a smooth map $X : M \to TM$ with $X(p) \in T_pM$ for every $p$ --- ``for every point, [it] selects a tangent vector at that point.''
@@ -8426,6 +8438,87 @@ Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $
 \emph{Not an embedding: via density.} The image is dense and $\dim \mathbb{R} = 1 < 2 = \dim T^2$, so by Corollary~\ref{cor:dense-submanifold} it is not the image of an embedding.
 \end{proof}
 
+% ============================================================================
+% SECTION: EXAMPLE: PROJECTIVE SPACES AND THE HOPF FIBRATION
+% ============================================================================
+
+\section{Example: Projective Spaces and the Hopf Fibration}\label{sec:ex-hopf}
+
+\roadmark{Stage: bundles}{The maps of this chapter on projective spaces: $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism, and $S^{2n+1} \to \mathbb{CP}^n$ is a submersion and a fibration, the Hopf fibration, with local sections but no global one.}
+
+The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through the course: the second is the quotient map that defines $\mathbb{CP}^n$ in Section~\ref{sec:ex-cpn}, an orbit map in Example~\ref{ex:cpn-orbit}; the first is the quotient map of Proposition~\ref{prop:rpn-topologies}, and both are read in the standard atlases of Section~\ref{sec:projective-smooth}; Section~\ref{sec:ex-hopf} shows the first is a two-to-one local diffeomorphism and the second a submersion and a fibration, the Hopf fibration, with local but no global sections; and for $n = 3$ the first returns as $S^3 = \mathrm{SU}(2) \to \SO(3) \cong \mathbb{RP}^3$ in Theorem~\ref{thm:double-cover}.
+
+\begin{exbox}[Spheres Cover Projective Spaces]\exlabel{ex:sn-rpn}
+The projection $\pi : S^n \to \mathbb{RP}^n$, $x \mapsto [x]$, is a local diffeomorphism, exactly two-to-one.
+\end{exbox}
+
+\begin{proof}
+\textit{(Stated in Lecture~10 as an example, without proof --- the covering-map distinction was ``postponed''; filled in.)} Use coordinates $x_0, \ldots, x_n$ on $\mathbb{R}^{n+1}$, matching the charts $(U_i, \varphi_i)$ of Corollary~\ref{cor:rpn-atlas}, and give $S^n = \{|x|^2 = 1\}$ its level-set structure. For each $i$ and $\varepsilon = \pm 1$, the open hemisphere $U_i^\varepsilon = \{x \in S^n \mid \varepsilon x_i > 0\}$ is mapped by $\pi$ bijectively onto $U_i = \{[x] \mid x_i \neq 0\}$, since a line not contained in $\{x_i = 0\}$ meets $U_i^\varepsilon$ exactly once. In the chart $\varphi_i$,
+\[
+\varphi_i \circ \pi(x) = (x_k/x_i)_{k \neq i},
+\]
+the restriction of a smooth map on the open set $\{x_i \neq 0\} \subseteq \mathbb{R}^{n+1}$, hence smooth by Lemma~\ref{lem:level-set-maps}(1). Its inverse is $y \mapsto \varepsilon\,\hat y/|\hat y|$, where $\hat y$ is $y$ with a $1$ inserted in slot $i$. This is smooth into $\mathbb{R}^{n+1}$ with values in $U_i^\varepsilon$, hence smooth into $S^n$ by Lemma~\ref{lem:level-set-maps}(2). So $\varphi_i \circ \pi$ is a diffeomorphism of $U_i^\varepsilon$ onto $\mathbb{R}^n$, and $\pi|_{U_i^\varepsilon} = \varphi_i^{-1} \circ (\varphi_i \circ \pi)$ is a diffeomorphism onto $U_i$ by Proposition~\ref{prop:chart-diffeo}. The hemispheres cover $S^n$, and $\pi(x) = \pi(-x)$.
+\end{proof}
+
+\begin{exbox}[The Projection $S^{2n+1} \to \mathbb{CP}^n$]\exlabel{ex:hopf-submersion}
+The projection $S^{2n+1} \to \mathbb{CP}^n$ of \S\ref{sub:cpn} is a submersion.
+\leeref{Problem 4-5(a)}
+\end{exbox}
+
+Stated in lecture as an example (``the projection you worked with from a sphere to complex projective space''); not proved in that lecture; the proof follows Example~\ref{ex:hopf-fibration} below. The dimensions are consistent, $2n \le 2n+1$. A proof needs the differential of a map \emph{out of} a level set in terms of the ambient Jacobian, which Lemma~\ref{lem:level-set-maps} makes available for smoothness but not yet for differentials.
+
+
+\begin{exbox}[The Hopf Fibration $S^{2n+1} \to \mathbb{CP}^n$]\exlabel{ex:hopf-fibration}
+The projection $\pi : S^{2n+1} \to \mathbb{CP}^n$, $\pi(z) = [z]$, is a fibration with fibre $S^1$. Over the chart domain $U_j = \{z_j \ne 0\}$ a local trivialization is
+\[
+\phi_j : \pi^{-1}(U_j) \to U_j \times S^1, \qquad \phi_j(z) = \Big(\, [z],\ \frac{z_j}{|z_j|} \,\Big),
+\]
+with inverse $([w], \lambda) \mapsto \lambda\, \hat w / |\hat w|$, where $\hat w$ is the representative of $[w]$ with $\hat w_j = 1$.
+\leeref{Problem 4-5(a) and the Hopf map of Ch.~21}
+\end{exbox}
+
+\begin{proof}
+\textit{(Claimed in lecture --- a student supplied the fibre, $S^1$; the trivialization is filled in.)} The sets $U_j$ cover $\mathbb{CP}^n$, and $\pi^{-1}(U_j) = S^{2n+1} \cap \{z_j \ne 0\}$ is open. $\phi_j$ is smooth: in the chart $\varphi_j$ of Definition~\ref{def:cpn-charts} its first component is $z \mapsto (z_k/z_j)_{k \ne j}$, and its second is $z \mapsto z_j/|z_j|$, both smooth on $\{z_j \ne 0\}$, with the second taking values in $S^1$ (Lemma~\ref{lem:level-set-maps}). The proposed inverse is smooth, since in the chart it is $(u, \lambda) \mapsto \lambda \hat w(u)/|\hat w(u)|$ with $\hat w(u)$ the vector $u$ with the entry $1$ inserted in slot $j$, a smooth map into $\mathbb{C}^{n+1} \setminus \{0\}$ landing in $S^{2n+1}$ (Lemma~\ref{lem:level-set-maps}). They are mutually inverse: for $z \in S^{2n+1}$ with $z_j \ne 0$, $\hat w = z/z_j$ and $\lambda = z_j/|z_j|$ give $\lambda \hat w/|\hat w| = z/|z| = z$; conversely $z = \lambda \hat w/|\hat w|$ has $[z] = [\hat w]$ and $z_j/|z_j| = \lambda$. Finally $\mathrm{pr}_1 \circ \phi_j = \pi$ by definition. So each $\phi_j$ is a local trivialization.
+\end{proof}
+
+With Proposition~\ref{prop:fibration-properties}(2), this also proves Example~\ref{ex:hopf-submersion}, which Lecture~10 stated without proof: the projection $S^{2n+1} \to \mathbb{CP}^n$ is a submersion. Its fibres are the circles $\{\lambda z : |\lambda| = 1\}$.
+
+\begin{rembox}[Sections Need Not Exist]\label{rem:sections-need-not-exist}
+``A fact'': the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ of Example~\ref{ex:hopf-fibration} --- ``the fibration that you're working with in homework'' --- has no continuous section, for $n \ge 1$. (For $n = 0$ the base is a single point.) This is stated, not proved, here; a proof uses the fundamental group. A vector bundle, by contrast, always has sections --- the zero section at least --- and in fact ``a very infinite-dimensional space'' of them.
+\end{rembox}
+
+For the Hopf fibration the converse of Proposition~\ref{prop:trivialization-section} holds: the circle acting on the fibres turns any local section into a local trivialization.
+
+\begin{propbox}[Local Sections of the Hopf Fibration Give Trivializations]\thmlabel{prop:hopf-section-trivialization}
+Let $\pi : S^{2n+1} \to \mathbb{CP}^n$ be the Hopf fibration, on which $S^1$ acts by $\lambda \cdot z = \lambda z$, and let $s : U \to \pi^{-1}(U)$ be a local section. Then
+\[
+\Psi_s : U \times S^1 \longrightarrow \pi^{-1}(U), \qquad \Psi_s(u, \lambda) = \lambda\, s(u),
+\]
+is a diffeomorphism with $\pi \circ \Psi_s = \mathrm{pr}_1$ and $\Psi_s(u, 1) = s(u)$, equivariant for the actions $\lambda \cdot (u, \mu) = (u, \lambda\mu)$ and $\lambda \cdot z = \lambda z$. Its inverse is
+\[
+\Psi_s^{-1}(z) = \Big( \pi(z),\ \big\langle z, s(\pi(z)) \big\rangle \Big), \qquad \langle z, w \rangle = \textstyle\sum_k z_k \bar w_k .
+\]
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~4, Problem~4 did this for the explicit sections $s_i$ of the corollary below; the inner-product formula for the inverse, which works for every local section, is filled in.)} $\Psi_s$ lands in $\pi^{-1}(U)$: $|\lambda s(u)| = 1$, and $\lambda s(u)$ spans the same complex line as $s(u)$, so $\pi(\lambda s(u)) = \pi(s(u)) = u$. This also gives $\pi \circ \Psi_s = \mathrm{pr}_1$, and equivariance is $\mu\,(\lambda s(u)) = (\mu\lambda)\, s(u)$. Both maps are smooth: $\Psi_s$ is a product of smooth maps into $\mathbb{C}^{n+1}$ landing in $S^{2n+1}$ (Lemma~\ref{lem:level-set-maps}), and the proposed inverse is built from $\pi$, $s$ and the polynomial $\langle \cdot, \cdot \rangle$, with second component of modulus~$1$. They are mutually inverse. If $z \in \pi^{-1}(U)$, then $z$ and the unit vector $s(\pi(z))$ span the same complex line, so $z = \lambda s(\pi(z))$ for some $\lambda$, and $\lambda = \lambda \langle s, s \rangle = \langle z, s(\pi(z)) \rangle$; hence $\Psi_s(\Psi_s^{-1}(z)) = z$. Conversely $\Psi_s^{-1}(\lambda s(u)) = (u, \lambda \langle s(u), s(u) \rangle) = (u, \lambda)$.
+\end{proof}
+
+\begin{corbox}[Local but Not Global Sections of the Hopf Fibration]\thmlabel{cor:hopf-local-sections}
+Over each chart domain $U_i = \{[z] : z_i \neq 0\}$ of $\mathbb{CP}^n$, the Hopf fibration has the local section
+\[
+s_i([z]) = \frac{\hat z}{|\hat z|}, \qquad \hat z = \frac{z}{z_i} ,
+\]
+and the trivialization $\Psi_{s_i}^{-1}$ it gives is the one of Example~\ref{ex:hopf-fibration}, $z \mapsto ([z], z_i/|z_i|)$. For $n \ge 1$ there is no global section.
+\end{corbox}
+
+\begin{proof}
+\textit{(Assignment~4, Problem~4; the global statement is the fact of Remark~\ref{rem:sections-need-not-exist} above, stated there without proof.)} $\hat z$ is independent of the representative $z$, smooth in the chart $\varphi_i$ (it is $\varphi_i([z])$ with a $1$ inserted in slot~$i$), and nonzero, so $s_i$ is smooth and lands in $S^{2n+1}$; it spans the line of $z$, so $\pi \circ s_i = \mathrm{id}$. For $|z| = 1$ with $z_i \neq 0$, $s_i([z]) = \bar z_i z / |z_i|$, so $\langle z, s_i([z]) \rangle = z_i \langle z, z \rangle / |z_i| = z_i/|z_i|$. By Proposition~\ref{prop:hopf-section-trivialization} a global section would make $\pi$ globally trivial, $S^{2n+1} \cong \mathbb{CP}^n \times S^1$; that this is impossible for $n \ge 1$ is the fact of Remark~\ref{rem:sections-need-not-exist}.
+\end{proof}
+
+\begin{rembox}[The Same Principle Elsewhere]\label{rem:same-principle-elsewhere}
+For the tangent bundle the dictionary is between trivializations and \emph{frames}: the trivialization $\Phi$ of a chart (Definition~\ref{def:tb-charts}) corresponds to the $m$ local sections $u \mapsto \partial/\partial x^i|_u$, since $\Phi^{-1}(u, e_i) = \partial/\partial x^i|_u$; for a vector bundle of rank $m$ one local section is not enough, and it takes $m$ sections that are linearly independent at every point (Lee, Example~10.18 and Proposition~10.19). For the Hopf fibration one section suffices because the fibre is a single orbit of the free $S^1$-action. That is the general pattern of \emph{principal bundles}, where a group acts freely and transitively on each fibre; it is stated here, not proved.
+\end{rembox}
 \section{Worked Example: The Double Cover \texorpdfstring{$\mathrm{SU}(2) \to \SO(3)$}{SU(2) -> SO(3)}}\label{sec:double-cover}
 
 \roadmark{Stage: maps}{One example that uses everything so far: submanifolds, embeddings, local diffeomorphisms, and translation in a group.}
@@ -8581,6 +8674,9 @@ F^{-1}\begin{pmatrix} m_{11} & m_{12} \\ m_{21} & m_{22} \end{pmatrix} = \bigl( 
 \]
 which is the restriction to $\mathrm{SU}(2)$ of an $\mathbb{R}$-linear map $\mathrm{Mat}(2, \mathbb{C}) \to \mathbb{R}^4$, hence smooth as a map $\mathrm{SU}(2) \to \mathbb{R}^4$ (composing with the inclusion of $\mathrm{SU}(2)$); since its image lies in the embedded submanifold $S^3$, it is smooth as a map $\mathrm{SU}(2) \to S^3$.
 \end{proof}
+
+The sphere through the course: a topological manifold with hemisphere charts in Section~\ref{sec:ex-spheres}; the homogeneous space $\SO(3)/\SO(2)$ in Example~\ref{ex:s2-homogeneous}; the Riemann sphere $\mathbb{CP}^1$ in Proposition~\ref{prop:cp1-sphere}; its geometric tangent spaces in Example~\ref{ex:tangent-sphere} and its transverse intersection with a plane in Example~\ref{ex:sphere-plane-transverse}; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in Section~\ref{sec:ex-hopf}; and $S^3 = \mathrm{SU}(2)$ in Proposition~\ref{prop:s3-su2}.
+
 
 \begin{propbox}[The Tangent Space of $\mathrm{SU}(2)$ at the Identity]\thmlabel{prop:su2-tangent}
 The curves $\gamma_1(t) = \cos t + \sin t\, i$, $\gamma_2(t) = \cos t + \sin t\, j$, $\gamma_3(t) = \cos t + \sin t\, k$ in $S^3$ pass through $1$ with velocities $i, j, k$, and
@@ -8825,6 +8921,11 @@ G|_{\varphi^{-1}(U_0)} = \chi^{-1} \circ \hat G|_{U_0} \circ \varphi : \varphi^{
 \]
 is a composite of diffeomorphisms, hence a diffeomorphism. As $g$ was arbitrary, $G$ is a local diffeomorphism.
 \end{proof}
+
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+
+The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through the course: the second is the quotient map that defines $\mathbb{CP}^n$ in Section~\ref{sec:ex-cpn}, an orbit map in Example~\ref{ex:cpn-orbit}; the first is the quotient map of Proposition~\ref{prop:rpn-topologies}, and both are read in the standard atlases of Section~\ref{sec:projective-smooth}; Section~\ref{sec:ex-hopf} shows the first is a two-to-one local diffeomorphism and the second a submersion and a fibration, the Hopf fibration, with local but no global sections; and for $n = 3$ the first returns as $S^3 = \mathrm{SU}(2) \to \SO(3) \cong \mathbb{RP}^3$ in Theorem~\ref{thm:double-cover}.
+
 
 \begin{rembox}[What the Example Shows]\label{rem:what-example-shows-2}
 $G$ is a local diffeomorphism that is not a diffeomorphism: locally $\mathrm{SU}(2)$ and $\SO(3)$ are indistinguishable --- their tangent spaces at $I$ are isomorphic, and $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ --- but globally $\mathrm{SU}(2) \cong S^3$ wraps twice around $\SO(3) \cong \mathbb{RP}^3$. Every fibre $G^{-1}(A) = \{\pm g\}$ is two points, and $G$ is a proper surjective submersion onto the connected $\SO(3)$, so Ehresmann's theorem (Theorem~\ref{thm:ehresmann}, stated without proof) makes it a fibration whose fibre is two points: a double cover. The smooth version of the last statement --- that $\bar C$ is a diffeomorphism for the smooth structure of $\mathbb{RP}^3$ --- needs the quotient map $S^3 \to \mathbb{RP}^3$ to be a local diffeomorphism, and is not proved here.

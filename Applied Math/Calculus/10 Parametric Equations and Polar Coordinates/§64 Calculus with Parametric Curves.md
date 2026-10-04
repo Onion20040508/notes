@@ -47,7 +47,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 *Uses:* [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|§19.1]] (derivative of an inverse function)
 
 > [!remark]- Connections
-> - The inverse function step, rigorously: [[§29 The Mean Value Theorem#^thm-29-10|451 Thm. §29.10]]. The tangent line is the image of the derivative of the map $t \mapsto (f(t), g(t))$; on manifolds this is the velocity of a curve, [[§26 Tangent Vectors as Velocities of Curves#^def-26-1|591 Def. §26.1]].
+> - The inverse function step, rigorously: [[§29 The Mean Value Theorem#^thm-29-10|451 Thm. §29.10]]. The tangent line is the image of the derivative of the map $t \mapsto (f(t), g(t))$; on manifolds this is the velocity of a curve, [[§29 Tangent Vectors as Velocities of Curves#^def-29-1|591 Def. §29.1]].
 
 > [!theorem] Theorem §64.2: Second Derivative of a Parametric Curve
 > Where $dx/dt \ne 0$ and $dy/dx$ is a differentiable function of $t$,

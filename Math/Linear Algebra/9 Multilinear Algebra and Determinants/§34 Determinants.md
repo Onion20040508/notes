@@ -86,7 +86,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Index form: $\det A=\varepsilon_{i_1\cdots i_n}A_{i_11}\cdots A_{i_nn}$ with the Levi-Civita symbol.
-> - Since this formula is a polynomial in the entries, det is continuous ([[§8 Topological Groups and Classical Matrix Groups#^prop-8-3|591 Prop. §8.3]]) and smooth, with derivative given by Jacobi's formula ([[§9 The Classical Groups Are Topological Manifolds#^prop-9-1|591 Prop. §9.1]]).
+> - Since this formula is a polynomial in the entries, det is continuous ([[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|591 Prop. §10.3]]) and smooth, with derivative given by Jacobi's formula ([[§11 The Classical Groups Are Topological Manifolds#^prop-11-1|591 Prop. §11.1]]).
 > - Used in Relativity: by the Leibniz formula the Levi-Civita symbol is an invariant pseudotensor — [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]]; it gives the second field invariant $\vec E\cdot\vec B$ — [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-3|REL Theorem §B4.2.3]].
 > - Determinants of order 2 and 3, computed by cofactor expansion: [[§83 The Cross Product#^def-83-2|Calc Def. §83.2]] (with worked examples).
 > - Computational version: [[§20 Introduction to Determinants#^thm-20-1|235 Thm. §20.1]] (cofactor expansion along any row or column, the formula used by hand in place of the permutation sum).
