@@ -113,6 +113,8 @@ The fundamental theorem tells us that any polynomial $P(z)$ of degree $n$ ($n \g
 
 ^pf-58-3
 
+*Uses:* [[§13 Functions and Mappings#^def-13-3|Def. §13.3]] (polynomials and their degree)
+
 > [!remark]- Connections
 > - The same statement and proof over any field: [[§13 Polynomials#^ladr-4-6|LADR 4.6]]; the resulting factorization is [[§13 Polynomials#^ladr-4-13|LADR 4.13]], with a uniqueness statement that B&C does not include.
 

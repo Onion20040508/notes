@@ -117,7 +117,7 @@ With several branch points, a Riemann surface is built from cuts that join branc
 > |g_0(z)| = \sqrt{g_0(z)\overline{g_0(z)}} = \frac12\Big|\sqrt{r_1}e^{i\theta_1/2} + \sqrt{r_2}e^{i\theta_2/2}\Big|^2 = \frac12\Big[r_1 + r_2 + 2\sqrt{r_1r_2}\cos\frac{\theta_1 - \theta_2}{2}\Big] .
 > $$
 >
-> Now $r_1 + r_2 \ge 2$ (triangle inequality, as in Definition §109.1), and $|\theta_1 - \theta_2| \le \pi$ because $\theta_1 - \theta_2$ is the angle at $z$ subtended by the segment $[-1, 1]$, so $\cos\frac{\theta_1 - \theta_2}{2} \ge 0$. Therefore $|g_0(z)| \ge 1$, with equality only when $r_1 + r_2 = 2$ and $|\theta_1 - \theta_2| = \pi$, that is, on the edges of the cut.
+> Now $r_1 + r_2 \ge 2$ (triangle inequality, as in [[§109★ Square Roots of Polynomials#^def-109-1|Definition §109.1]]), and $|\theta_1 - \theta_2| \le \pi$ because $\theta_1 - \theta_2$ is the angle at $z$ subtended by the segment $[-1, 1]$, so $\cos\frac{\theta_1 - \theta_2}{2} \ge 0$. Therefore $|g_0(z)| \ge 1$, with equality only when $r_1 + r_2 = 2$ and $|\theta_1 - \theta_2| = \pi$, that is, on the edges of the cut.
 >
 > **(c) The mapping.** By (a) and (b), $|g_1| = 1/|g_0| \le 1$. So $w = z + (z^2 - 1)^{1/2}$ maps the sheet $R_0$ into $|w| \ge 1$, the sheet $R_1$ into $|w| \le 1$, and the cut onto the circle $|w| = 1$ (the upper edge of the slit in $R_0$ at $x$ goes to $x + i\sqrt{1 - x^2}$, the lower edge to $x - i\sqrt{1 - x^2}$). It maps $R_0$ **onto** $|w| \ge 1$: given $|w| > 1$, put $z = \frac12(w + 1/w)$. The numbers $g_0(z)$, $g_1(z)$ are the roots of $t^2 - 2zt + 1 = 0$ (their sum is $2z$ and product $1$), and so are $w$, $1/w$; the root of modulus $> 1$ is $g_0(z) = w$. Likewise $R_1$ goes onto $|w| \le 1$. So $w = z + (z^2 - 1)^{1/2}$ is an inverse of the transformation
 >

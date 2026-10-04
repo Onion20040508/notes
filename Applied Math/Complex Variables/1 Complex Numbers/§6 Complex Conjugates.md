@@ -154,7 +154,7 @@ Identity (7) explains the [[§3 Further Algebraic Properties#^rem-3-1|Method —
 > z_1\bar z_2 + \overline{z_1\bar z_2} = 2\operatorname{Re}(z_1\bar z_2) \le 2|z_1\bar z_2| = 2|z_1||z_2| .
 > $$
 >
-> Hence $|z_1 + z_2|^2 \le |z_1|^2 + 2|z_1||z_2| + |z_2|^2 = (|z_1| + |z_2|)^2$, and the triangle inequality follows by taking square roots. In coordinates, $\operatorname{Re}(z_1\bar z_2) = x_1x_2 + y_1y_2$ is the dot product of the two vectors, which is how the proof of Theorem §5.1 was written.
+> Hence $|z_1 + z_2|^2 \le |z_1|^2 + 2|z_1||z_2| + |z_2|^2 = (|z_1| + |z_2|)^2$, and the triangle inequality follows by taking square roots. In coordinates, $\operatorname{Re}(z_1\bar z_2) = x_1x_2 + y_1y_2$ is the dot product of the two vectors, which is how the proof of [[§5 Triangle Inequality#^thm-5-1|Theorem §5.1]] was written.
 
 ^rem-6-1
 

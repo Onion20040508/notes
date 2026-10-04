@@ -185,7 +185,7 @@ The proof in §51 takes $C$ positively oriented; the other orientation follows a
 > \int_{OABO} f(z)\,dz = -\Big[\Big(1 - \frac12\Big) - \frac i2\Big] = \frac{-1 + i}{2} ,
 > $$
 >
-> which is $I_1 - I_2$ of Example §45.3. The nonzero value measures, through (4), how far $f$ is from satisfying the Cauchy–Riemann equations inside $C$.
+> which is $I_1 - I_2$ of [[§45 Some Examples (Contour Integrals)#^ex-45-3|Example §45.3]]. The nonzero value measures, through (4), how far $f$ is from satisfying the Cauchy–Riemann equations inside $C$.
 >
 > *B&C: Sec. 45, Example 3*
 

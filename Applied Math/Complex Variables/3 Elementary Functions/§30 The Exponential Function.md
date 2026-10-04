@@ -36,7 +36,7 @@ Chapter 3 defines analytic functions of $z$ that reduce to the elementary functi
 
 > [!remark]- Connections
 > - [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] defines $e^{(\lambda + i\mu)t} = e^{\lambda t}(\cos\mu t + i\sin\mu t)$ in exactly the same way, motivated by substituting $it$ into the series $e^t = \sum t^n/n!$ ([[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]]) and splitting off the series of $\cos t$ and $\sin t$ ([[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]]); the same computation from the complex-numbers side is [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]].
-> - Here the series is a theorem, not a motivation: $e^z = \sum_{n=0}^{\infty} z^n/n!$ for every $z$ is the Maclaurin series of the entire function $e^z$, [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]].
+> - Here the series is a theorem, not a motivation: $e^z = \sum_{n=0}^{\infty} z^n/n!$ for every $z$ is the Maclaurin series of the entire function $e^z$, [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|Proposition §64.1]].
 
 Since the *positive* $n$th root $\sqrt[n]{e}$ is assigned to $e^x$ when $x = 1/n$ $(n = 2, 3, \ldots)$, definition (1) says that $e^{1/n} = \sqrt[n]{e}$. This is an exception to the convention of [[§10 Roots of Complex Numbers#^def-10-1|Definition §10.1]], which would read $e^{1/n}$ as the *set* of $n$th roots of $e$: the symbol $e^z$ always means the single number (1). (The power $c^z$ of [[§35 The Power Function#^def-35-3|Definition §35.3]] is in general multiple-valued, and $e^z$ is the value given by the principal logarithm of $e$.)
 

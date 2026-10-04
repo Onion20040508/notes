@@ -38,6 +38,8 @@ This section proves the key geometric fact about $w = 1/z$: **it carries circles
 
 ^pf-98-1
 
+*Uses:* [[§6 Complex Conjugates#^prop-6-3|§6.3]] ($z\bar z = |z|^2$)
+
 > [!theorem] Proposition §98.2: One Equation for All Circles and Lines
 > Let $A$, $B$, $C$, $D$ be real numbers with
 >
@@ -73,6 +75,8 @@ This section proves the key geometric fact about $w = 1/z$: **it carries circles
 > Finally, $(0, 0)$ satisfies (4) if and only if $D = 0$.
 
 ^pf-98-2
+
+*Uses:* [[§4 Vectors and Moduli#^prop-4-2|§4.2]], [[§4 Vectors and Moduli#^def-4-2|Def. §4.2]] (the circle $|z - z_0| = R$)
 
 > [!theorem] Theorem §98.3: w = 1/z Maps Circles and Lines onto Circles and Lines
 > If $x$ and $y$ satisfy (4), then $u$ and $v$ satisfy

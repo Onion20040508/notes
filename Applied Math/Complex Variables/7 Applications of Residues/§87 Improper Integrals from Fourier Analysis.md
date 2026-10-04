@@ -55,7 +55,7 @@ $$
 > \int_{-R}^{R} f(x)e^{iax}\,dx = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k}\big[f(z)e^{iaz}\big] - \int_{C_R} f(z)e^{iaz}\,dz .
 > $$
 >
-> By [[§85 Evaluation of Improper Integrals#^prop-85-4|Proposition §85.4]], $|f(z)| \le K/|z|^2$ for $|z| \ge R_1$, and $|e^{iaz}| \le 1$ on $C_R$; so $\big|\int_{C_R} f(z)e^{iaz}\,dz\big| \le \pi K/R \to 0$ ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]). On the real axis $|f(x)e^{iax}| = |f(x)| \le K/x^2$ for $|x| \ge R_1$, so the real and imaginary parts $f(x)\cos ax$ and $f(x)\sin ax$ have absolutely convergent improper integrals (comparison, as in the proof of Proposition §85.4). The integral therefore converges, equals its principal value, and that is the limit of the residue identity. Since $f(x)$ is real, taking real and imaginary parts gives the last two formulas.
+> By [[§85 Evaluation of Improper Integrals#^prop-85-4|Proposition §85.4]], $|f(z)| \le K/|z|^2$ for $|z| \ge R_1$, and $|e^{iaz}| \le 1$ on $C_R$; so $\big|\int_{C_R} f(z)e^{iaz}\,dz\big| \le \pi K/R \to 0$ ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]). On the real axis $|f(x)e^{iax}| = |f(x)| \le K/x^2$ for $|x| \ge R_1$, so the real and imaginary parts $f(x)\cos ax$ and $f(x)\sin ax$ have absolutely convergent improper integrals (comparison, as in the proof of [[§85 Evaluation of Improper Integrals#^prop-85-4|Proposition §85.4]]). The integral therefore converges, equals its principal value, and that is the limit of the residue identity. Since $f(x)$ is real, taking real and imaginary parts gives the last two formulas.
 
 ^pf-87-1
 
@@ -123,7 +123,7 @@ When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argumen
 > \operatorname{Res}_{z=i}\frac{e^{iaz}}{z^2 + 1} = \frac{e^{iaz}}{2z}\Big|_{z=i} = \frac{e^{-a}}{2i}, \qquad 2\pi i\cdot\frac{e^{-a}}{2i} = \pi e^{-a} .
 > $$
 >
-> **The arc.** For $R > 1$ and $z$ on $C_R$: $|e^{iaz}| \le 1$ and $|z^2 + 1| \ge R^2 - 1$, so $\big|\int_{C_R}\frac{e^{iaz}}{z^2 + 1}dz\big| \le \frac{\pi R}{R^2 - 1} \to 0$. (The length factor $\pi R$ matters: $M_R = 1/(R^2 - 1) \to 0$ alone would not suffice for the bound of Theorem §47.2; it suffices only through Jordan's lemma, [[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]].)
+> **The arc.** For $R > 1$ and $z$ on $C_R$: $|e^{iaz}| \le 1$ and $|z^2 + 1| \ge R^2 - 1$, so $\big|\int_{C_R}\frac{e^{iaz}}{z^2 + 1}dz\big| \le \frac{\pi R}{R^2 - 1} \to 0$. (The length factor $\pi R$ matters: $M_R = 1/(R^2 - 1) \to 0$ alone would not suffice for the bound of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]; it suffices only through Jordan's lemma, [[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]].)
 >
 > **Conclusion.** $\int_{-\infty}^{\infty}\frac{\cos ax}{x^2 + 1}\,dx = \operatorname{Re}(\pi e^{-a}) = \pi e^{-a}$, and halving the even integrand, $\int_0^\infty = \frac\pi2e^{-a}$ (for $a = 2$: $0.212584$, as quadrature confirms). The imaginary part gives $\int_{-\infty}^{\infty}\frac{\sin ax}{x^2 + 1}\,dx = 0$, as it must for an odd integrand.
 >

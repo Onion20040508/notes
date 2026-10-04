@@ -116,7 +116,7 @@ This section evaluates powers $z^c = e^{c\log z}$ ([[§35 The Power Function#^de
 > ru_r = \frac23 r^{2/3}\cos\frac{2\Theta}{3} = v_\Theta, \qquad u_\Theta = -\frac23 r^{2/3}\sin\frac{2\Theta}{3} = -rv_r
 > $$
 >
-> are continuous and satisfy the polar Cauchy–Riemann equations throughout the domain. Theorem §35.2 also gives the derivative, $\frac{d}{dz}z^{2/3} = \frac23 z^{-1/3}$ (principal branches on both sides).
+> are continuous and satisfy the polar Cauchy–Riemann equations throughout the domain. [[§35 The Power Function#^thm-35-2|Theorem §35.2]] also gives the derivative, $\frac{d}{dz}z^{2/3} = \frac23 z^{-1/3}$ (principal branches on both sides).
 >
 > *B&C: Sec. 36, Example 3*
 

@@ -67,7 +67,7 @@ The first consequence of uniform convergence is that the sum of a power series i
 *Uses:* [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|§69.3]], [[§61 Convergence of Series#^def-61-3|Def. §61.3]], [[§18 Continuity#^prop-18-1|§18.1]] (polynomials are continuous)
 
 > [!remark]- Connections
-> - This is the special case for power series of "a uniform limit of continuous functions is continuous", [[§24 Uniform Convergence#^thm-24-2|451 Thm. §24.2]] and [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]]; the real power-series version is [[§26 Differentiation and Integration of Power Series#^cor-26-2|451 Cor. §26.2]]. The $\varepsilon/3$ argument above is the same proof, with the uniformity supplied by Theorem §69.3 on a slightly larger closed disk.
+> - This is the special case for power series of "a uniform limit of continuous functions is continuous", [[§24 Uniform Convergence#^thm-24-2|451 Thm. §24.2]] and [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]]; the real power-series version is [[§26 Differentiation and Integration of Power Series#^cor-26-2|451 Cor. §26.2]]. The $\varepsilon/3$ argument above is the same proof, with the uniformity supplied by [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|Theorem §69.3]] on a slightly larger closed disk.
 
 ## Series in Negative Powers
 
@@ -115,7 +115,7 @@ B&C goes on to state, without separate proof, that both halves of a Laurent seri
 > [!proof]+ Proof
 > **The nonnegative powers.** The power series $\sum a_n(z - z_0)^n$ converges at every point of the annulus, so at points at distance arbitrarily close to $R_2$ from $z_0$; hence its circle of convergence has radius at least $R_2$ ([[§69★ Absolute and Uniform Convergence of Power Series#^def-69-1|Definition §69.1]]). A point $z_1$ with $|z_1 - z_0| = r_2 < R_2$ is inside it, so by [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|Theorem §69.3]] the series converges uniformly on the closed disk $|z - z_0| \le r_2$, which contains the closed annulus.
 >
-> **The negative powers.** With $w = 1/(z - z_0)$, the series $\sum b_nw^n$ converges whenever $1/R_2 < |w| < 1/R_1$, so its circle of convergence has radius at least $1/R_1$. By Theorem §69.3 it converges uniformly on $|w| \le 1/r_1$: for each $\varepsilon$ there is $N_\varepsilon$ such that its remainders satisfy $|\tau_N(w)| < \varepsilon$ for $N > N_\varepsilon$ and all $|w| \le 1/r_1$. The remainders of $\sum b_n/(z - z_0)^n$ are $\tau_N\big(1/(z - z_0)\big)$, and $|z - z_0| \ge r_1$ exactly when $|1/(z - z_0)| \le 1/r_1$. So the same $N_\varepsilon$ works for all $z$ with $|z - z_0| \ge r_1$, in particular on the closed annulus.
+> **The negative powers.** With $w = 1/(z - z_0)$, the series $\sum b_nw^n$ converges whenever $1/R_2 < |w| < 1/R_1$, so its circle of convergence has radius at least $1/R_1$. By [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|Theorem §69.3]] it converges uniformly on $|w| \le 1/r_1$: for each $\varepsilon$ there is $N_\varepsilon$ such that its remainders satisfy $|\tau_N(w)| < \varepsilon$ for $N > N_\varepsilon$ and all $|w| \le 1/r_1$. The remainders of $\sum b_n/(z - z_0)^n$ are $\tau_N\big(1/(z - z_0)\big)$, and $|z - z_0| \ge r_1$ exactly when $|1/(z - z_0)| \le 1/r_1$. So the same $N_\varepsilon$ works for all $z$ with $|z - z_0| \ge r_1$, in particular on the closed annulus.
 
 ^pf-70-3
 

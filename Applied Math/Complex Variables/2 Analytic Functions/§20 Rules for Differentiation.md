@@ -219,7 +219,7 @@ B&C states the power rule before the sum, product and quotient rules; its proof 
 > g(w) - g(w_0) = \big[g'(w_0) + \Phi(w)\big](w - w_0) \qquad (|w - w_0| < \varepsilon) , \qquad (9)
 > $$
 >
-> which is valid even when $w = w_0$ (both sides are $0$). Since $f'(z_0)$ exists, $f$ is continuous at $z_0$ (Theorem §19.1), so we can choose a positive number $\delta$ such that the point $f(z)$ lies in the neighborhood $|w - w_0| < \varepsilon$ whenever $|z - z_0| < \delta$. So it is legitimate to replace $w$ in (9) by $f(z)$ for any $z$ with $|z - z_0| < \delta$. With that substitution, and with $w_0 = f(z_0)$, dividing by $z - z_0$ gives
+> which is valid even when $w = w_0$ (both sides are $0$). Since $f'(z_0)$ exists, $f$ is continuous at $z_0$ ([[§19 Derivatives#^thm-19-1|Theorem §19.1]]), so we can choose a positive number $\delta$ such that the point $f(z)$ lies in the neighborhood $|w - w_0| < \varepsilon$ whenever $|z - z_0| < \delta$. So it is legitimate to replace $w$ in (9) by $f(z)$ for any $z$ with $|z - z_0| < \delta$. With that substitution, and with $w_0 = f(z_0)$, dividing by $z - z_0$ gives
 >
 > $$
 > \frac{g[f(z)] - g[f(z_0)]}{z - z_0} = \big\{g'[f(z_0)] + \Phi[f(z)]\big\}\,\frac{f(z) - f(z_0)}{z - z_0} \qquad (0 < |z - z_0| < \delta) , \qquad (10)
@@ -300,7 +300,7 @@ B&C states the power rule before the sum, product and quotient rules; its proof 
 > \frac{f(z)}{g(z)} = \frac{\dfrac{f(z) - f(z_0)}{z - z_0}}{\dfrac{g(z) - g(z_0)}{z - z_0}} ,
 > $$
 >
-> whenever $g(z) \ne 0$. The function $q(z) = \big(g(z) - g(z_0)\big)/(z - z_0)$, extended by $q(z_0) = g'(z_0)$, is continuous at $z_0$ by definition (1) of §19, and $q(z_0) \ne 0$; so by Theorem §18.3, $q(z) \ne 0$ for $|z - z_0| < \delta$, that is, $g(z) = (z - z_0)q(z) \ne 0$ for $0 < |z - z_0| < \delta$. So $f/g$ is defined in a deleted neighborhood of $z_0$ and equals the quotient above, whose numerator tends to $f'(z_0)$ and denominator to $g'(z_0) \ne 0$. The quotient rule for limits gives the result.
+> whenever $g(z) \ne 0$. The function $q(z) = \big(g(z) - g(z_0)\big)/(z - z_0)$, extended by $q(z_0) = g'(z_0)$, is continuous at $z_0$ by definition (1) of §19, and $q(z_0) \ne 0$; so by [[§18 Continuity#^thm-18-3|Theorem §18.3]], $q(z) \ne 0$ for $|z - z_0| < \delta$, that is, $g(z) = (z - z_0)q(z) \ne 0$ for $0 < |z - z_0| < \delta$. So $f/g$ is defined in a deleted neighborhood of $z_0$ and equals the quotient above, whose numerator tends to $f'(z_0)$ and denominator to $g'(z_0) \ne 0$. The quotient rule for limits gives the result.
 >
 > For example, with $f(z) = z^4 - 1$ and $g(z) = z - i$, which both vanish at $i$,
 >

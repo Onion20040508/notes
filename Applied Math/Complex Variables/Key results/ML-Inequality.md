@@ -16,6 +16,9 @@ tags: [complex-variables, hub]
 - [[§44 Contour Integrals#^def-44-1|Definition §44.1: Contour Integral]]
 - [[§47 Upper Bounds for Moduli of Contour Integrals#^lem-47-1|Lemma §47.1: Modulus of an Integral of w(t)]]
 
+## Its proof uses (other subjects)
+- [[§33 Properties of the Riemann Integral#^thm-33-7|451 §33.7: Vanishing Integral of a Nonnegative Function]]
+
 ## Used in (Complex Variables)
 - [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1: Antiderivatives and Independence of Path]]
 - [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3: Cauchy–Goursat Theorem]]
