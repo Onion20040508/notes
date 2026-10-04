@@ -292,3 +292,6 @@ Uribe singled out Lemma [[§29 Submersions#^lem-29-3|§29.3]] as “an intellect
 > - Compact subsets of $\mathbb{R}^k$ are bounded: [[Heine–Borel Theorem]].
 
 The submitted solution also noted the edge cases: for $k = 0$ the constant map $M \to \mathbb{R}^0$ is a submersion, since every differential maps onto the zero space; and for $M = \emptyset$ the empty map is vacuously one. In particular, a compact manifold carries no nonconstant submersion to $\mathbb{R}$ — the maximum of any smooth function $f : M \to \mathbb{R}$ is a [[§29 Submersions#^def-29-2|critical point]].
+
+![[m591-29-1.svg]]
+*A compact $M$ (a sphere) and its height function $h : M \to \mathbb{R}$. The image $h(M) = [a, b]$ is compact and nonempty but not open in $\mathbb{R}$. At the top and bottom points $p_{\max}$ and $p_{\min}$ (red) the tangent planes are horizontal, so $dh = 0$ there: they are [[§29 Submersions#^def-29-2|critical points]] ([[§29 Submersions#^prop-29-2|§29.2]]), and $h$ is not a submersion. The box is the proof of [[§29 Submersions#^thm-29-7|Theorem §29.7]] and [[§29 Submersions#^cor-29-8|Corollary §29.8]]: the image of a submersion would be open ([[§29 Submersions#^cor-29-6|§29.6]]) as well as compact, hence closed, hence all of the connected $\mathbb{R}^k$, which is not compact. (Drawn for these notes in the vault; not in the course tex.)*

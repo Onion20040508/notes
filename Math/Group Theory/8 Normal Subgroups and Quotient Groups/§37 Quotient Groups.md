@@ -136,6 +136,9 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§35 No
 
 ^ex-37-3
 
+![[m493-37-2.svg]]
+*Computing in $G/N$ through a [[§37 Quotient Groups#^def-37-2|set of representatives]] $S$ (blue strip: one blue element in each coset box). (a) [[§37 Quotient Groups#^ex-37-2|Ex. §37.2]]: $G = \mathbb{Z}/4\mathbb{Z}$ splits into the cosets $0 + N = \{0, 2\}$ and $1 + N = \{1, 3\}$, with $S = \{0, 1\}$; the pair $(1, 1)$ is added in $G$ (red arrow) and lands on $2$, outside $S$ but in the box of $0$, so it is replaced by the representative $0$ (dashed arrow). This is [[§37 Quotient Groups#^prop-37-3|§37.3]] with $1 + 1 = 0 + 2$, i.e. $s_3 = 0$, $n = 2$; and since $1 + 1 \notin S$, $S$ is not a subgroup. (b) [[§37 Quotient Groups#^ex-37-3|Ex. §37.3]]: $S_3 = A_3 \sqcup (2\,3)A_3$ with $S = \{e, (2\,3)\}$; the product $(2\,3)(2\,3) = e$ (red arrow) lands directly on a representative, as every product of elements of $S$ does because $S$ is a subgroup (green line), so $S \cong S_3/A_3$ by [[§37 Quotient Groups#^prop-37-4|§37.4]]. (Drawn for these notes in the vault; not in the course tex.)*
+
 > [!theorem] Proposition §37.4: Representatives Forming a Subgroup
 > Let $S$ be a [[§37 Quotient Groups#^def-37-2|set of representatives]] for $G/N$ that is also a [[§4 Subgroups#^def-4-1|subgroup]] of $G$. Then $S \cap N = \{e\}$, and the composite $S \hookrightarrow G \twoheadrightarrow G/N$, $s \mapsto sN$, is an [[§16 Isomorphisms#^def-16-1|isomorphism]]. So $G/N \cong S$, and products in $G/N$ can be computed inside $S$.
 >

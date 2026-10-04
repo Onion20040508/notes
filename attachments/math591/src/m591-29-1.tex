@@ -1,0 +1,38 @@
+% Vault-only figure for MATH 591 §29 (not in the course tex), 2026-10-04.
+% Thm. §29.7 / Cor. §29.8: the height function on a sphere is not a submersion at its max and min; h(M) = [a,b] is compact but not open.
+\begin{tikzpicture}[>=Stealth, font=\footnotesize]
+  \def\R{1.4}
+  % the sphere M
+  \begin{scope} \clip (0,0) circle (\R); \shade[inner color=white, outer color=figB!22] (-0.5,0.55) circle (2.1); \end{scope}
+  \draw[figB, thick] (0,0) circle (\R);
+  \draw[figB!60, densely dashed] (\R,0) arc[start angle=0, end angle=180, x radius=\R, y radius=0.35];
+  \draw[figB!80] (-\R,0) arc[start angle=180, end angle=360, x radius=\R, y radius=0.35];
+  \node[figB] at (-1.25,-1.25) {$M$};
+  % horizontal tangent planes at the top and bottom
+  \foreach \y/\s in {\R/1, -\R/-1} {
+    \fill[gray!25, opacity=0.8] (-1.05,\y-0.16) -- (0.65,\y-0.16) -- (1.05,\y+0.16) -- (-0.65,\y+0.16) -- cycle;
+    \draw[gray!60] (-1.05,\y-0.16) -- (0.65,\y-0.16) -- (1.05,\y+0.16) -- (-0.65,\y+0.16) -- cycle;
+  }
+  \fill[figR] (0,\R) circle (1.6pt);
+  \fill[figR] (0,-\R) circle (1.6pt);
+  \node[figR, anchor=south] at (0,\R+0.17) {$p_{\max}$:\ $dh_{p_{\max}} = 0$};
+  \node[figR, anchor=north] at (0,-\R-0.17) {$p_{\min}$:\ $dh_{p_{\min}} = 0$};
+  % the map h and the target R
+  \draw[->, thick] (1.75,0) -- node[above] {$h$} (2.75,0);
+  \draw[->] (3.4,-2.3) -- (3.4,2.35) node[above] {$\mathbb{R}$};
+  \draw[gray, densely dotted] (0.15,\R) -- (3.4,\R);
+  \draw[gray, densely dotted] (0.15,-\R) -- (3.4,-\R);
+  \draw[figB, line width=2.2pt] (3.4,-\R) -- (3.4,\R);
+  \fill[figR] (3.4,\R) circle (1.8pt) node[right, xshift=1pt] {$b = h(p_{\max})$};
+  \fill[figR] (3.4,-\R) circle (1.8pt) node[right, xshift=1pt] {$a = h(p_{\min})$};
+  \node[figB, right] at (3.5,0) {$h(M) = [a, b]$};
+  % the proof idea
+  \node[draw=gray!60, rounded corners=2pt, align=left, anchor=west, inner sep=4pt, font=\scriptsize] at (5.55,0) {%
+    \textbf{If} $F : M \to \mathbb{R}^k$ \textbf{were a submersion:}\\[2pt]
+    $F(M)$ is open \hfill (Cor.~\S29.6: submersions are open)\\
+    $F(M)$ is compact, hence closed \hfill ($M$ compact)\\
+    $F(M) \neq \emptyset$ and $\mathbb{R}^k$ connected $\Rightarrow F(M) = \mathbb{R}^k$\\[2pt]
+    \textcolor{figR}{impossible: $\mathbb{R}^k$ is not compact.}\\[4pt]
+    For $F = h$: $h(M) = [a,b]$ is not open, and indeed\\
+    \textcolor{figR}{$h$ is not a submersion at $p_{\max}$ and $p_{\min}$.}};
+\end{tikzpicture}

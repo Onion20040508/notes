@@ -1,0 +1,47 @@
+% Vault-only figure for MATH 493 §37 (not in the course tex), 2026-10-04.
+\begin{tikzpicture}[
+  el/.style={font=\footnotesize, inner sep=1.5pt, minimum size=0.5cm},
+  rep/.style={el, rectangle, rounded corners=3pt, draw=figB, thick, fill=figB!18},
+  coset/.style={draw=black!45, rounded corners=4pt},
+  strip/.style={fill=figB!9, rounded corners=6pt},
+  lab/.style={font=\scriptsize, black!70},
+  mul/.style={-{Stealth[length=2mm]}, thick, figR, rounded corners=5pt},
+  repl/.style={-{Stealth[length=2mm]}, thick, dashed, figR}]
+% ================= (a) Z/4Z, N = {0,2} =================
+\begin{scope}
+  \node[font=\small, anchor=west] at (-2.6,1.6) {(a)\ \ $G = \mathbb{Z}/4\mathbb{Z}$,\ \ $N = \{0, 2\}$};
+  \fill[strip] (-0.45,0.48) rectangle (0.45,-2.08);
+  \draw[coset] (-0.6,0.38) rectangle (1.95,-0.38);
+  \draw[coset] (-0.6,-1.22) rectangle (1.95,-1.98);
+  \node[rep] (a0) at (0,0) {$0$};
+  \node[el, figR] (a2) at (1.4,0) {$2$};
+  \node[rep] (a1) at (0,-1.6) {$1$};
+  \node[el] (a3) at (1.4,-1.6) {$3$};
+  \node[lab, anchor=west] at (2.05,0) {$0 + N = N$};
+  \node[lab, anchor=west] at (2.05,-1.6) {$1 + N$};
+  \node[font=\scriptsize, figB, below] at (0,-2.08) {$S = \{0, 1\}$};
+  \node[font=\footnotesize, figR] (ap) at (-1.7,-0.8) {$(1, 1)$};
+  \draw[mul] (ap.east) -| node[pos=0.33, below, font=\scriptsize] {$1 + 1$} (a2.south);
+  \draw[repl] (a2.north) to[bend right=55] node[above, font=\scriptsize] {replace by representative} (a0.north);
+  \node[font=\scriptsize, figR, anchor=west] at (-2.6,-2.75) {$1 + 1 = 2 \notin S$: \ $S$ is not a subgroup};
+\end{scope}
+% ================= (b) S3, N = A3 =================
+\begin{scope}[yshift=-4.3cm]
+  \node[font=\small, anchor=west] at (-2.6,0.95) {(b)\ \ $G = S_3$,\ \ $N = A_3$};
+  \fill[strip] (-0.55,0.48) rectangle (0.55,-2.08);
+  \draw[coset] (-0.7,0.38) rectangle (3.55,-0.38);
+  \draw[coset] (-0.7,-1.22) rectangle (3.55,-1.98);
+  \node[rep] (be) at (0,0) {$e$};
+  \node[el] at (1.55,0) {$(1\,2\,3)$};
+  \node[el] at (2.85,0) {$(1\,3\,2)$};
+  \node[rep] (b23) at (0,-1.6) {$(2\,3)$};
+  \node[el] at (1.55,-1.6) {$(1\,2)$};
+  \node[el] at (2.85,-1.6) {$(1\,3)$};
+  \node[lab, anchor=west] at (3.65,0) {$A_3$};
+  \node[lab, anchor=west] at (3.65,-1.6) {$(2\,3)A_3$};
+  \node[font=\scriptsize, figB, below] at (0,-2.08) {$S = \{e, (2\,3)\}$};
+  \node[font=\footnotesize, figR] (bp) at (-1.75,-0.8) {$((2\,3), (2\,3))$};
+  \draw[mul] (bp.east) -| (be.south);
+  \node[font=\scriptsize, figG, anchor=west] at (-2.6,-2.75) {$(2\,3)(2\,3) = e \in S$: \ $S$ is a subgroup, \ $S \cong S_3/A_3$};
+\end{scope}
+\end{tikzpicture}
