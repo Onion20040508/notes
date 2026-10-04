@@ -8161,12 +8161,9 @@ M \arrow[r, "\cong", "F"'] \arrow[dr, "F"'] & F(M) \arrow[d, hook] \\
 
 An embedding factors through its image as a homeomorphism followed by the inclusion --- ``you're taking the manifold $M$ and you're putting it inside $N$.'' The figure-eight of Lee's Example~4.19 (\ref{sub:immersion-images}) is an injective immersion for which the top arrow is not a homeomorphism.
 
-\begin{exbox}[The Irrational Line on the Torus]\exlabel{ex:irrational-line}
-For $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$, $F(t) = [t, \alpha t]$, is an injective immersion whose image is dense in $T^2$. Its image is not a regular submanifold of $T^2$, so $F$ is not an embedding.
-\leeref{Example 4.20}
-\end{exbox}
+The standard non-example is the \emph{irrational line on the torus}: for $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$, $F(t) = [t, \alpha t]$. It is an injective immersion whose image is dense in $T^2$, and it is not an embedding (Proposition~\ref{prop:irrational-line} below, from Assignment~4, Problem~5; Lee, Example~4.20). In lecture its image was also said not to be a regular submanifold of $T^2$.
 
-\textit{Status.} Given in lecture as ``a very important category: non-examples''; the properties are proved in Proposition~\ref{prop:irrational-line} below, from Assignment~4, Problem~5. ``You're wrapping a line, but the slope of the line is irrational, so it never closes \ldots\ like one of those spirographs.'' The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is ``a very nice submanifold.'' But ``it's local in the domain'', while being a submanifold is a statement about the whole image. Points outside $U$ ``contribute segments like this, and they're going to be dense. No matter how you shrink this $V$, you won't be able to isolate only the yellow guy.''
+\textit{In lecture.} Given as ``a very important category: non-examples.'' ``You're wrapping a line, but the slope of the line is irrational, so it never closes \ldots\ like one of those spirographs.'' The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is ``a very nice submanifold.'' But ``it's local in the domain'', while being a submanifold is a statement about the whole image. Points outside $U$ ``contribute segments like this, and they're going to be dense. No matter how you shrink this $V$, you won't be able to isolate only the yellow guy.''
 
 \begin{center}
 \begin{tikzpicture}[scale=0.9]
@@ -8412,8 +8409,8 @@ For every $\alpha \in \mathbb{R}$ and every integer $N \ge 1$ there are integers
 
 \textit{Status.} Used in Assignment~4, Problem~5, citing Lee; not proved here. (Lee's proof is a pigeonhole argument on the fractional parts of $0, \alpha, \ldots, N\alpha$.)
 
-\begin{propbox}[The Irrational Line Revisited]\thmlabel{prop:irrational-line}
-Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $\gamma(t) = (e^{2\pi i t}, e^{2\pi i \alpha t})$ --- the curve of Example~\ref{ex:irrational-line} under the identification $[x, y] \mapsto (e^{2\pi i x}, e^{2\pi i y})$. Then $\gamma$ is an injective immersion, its image is dense in $T^2$, and $\gamma$ is not an embedding.
+\begin{propbox}[The Irrational Line on the Torus]\thmlabel{prop:irrational-line}
+Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $\gamma(t) = (e^{2\pi i t}, e^{2\pi i \alpha t})$ --- the curve $F(t) = [t, \alpha t]$ introduced before Theorem~\ref{thm:embedding-image}, under the identification $[x, y] \mapsto (e^{2\pi i x}, e^{2\pi i y})$. Then $\gamma$ is an injective immersion, its image is dense in $T^2$, and $\gamma$ is not an embedding.
 \leeref{Example 4.20}
 \end{propbox}
 
@@ -8738,7 +8735,7 @@ Theorem 4.5 & Thm.~\ref{thm:local-diffeo-criterion} \\
 Proposition 4.6 & Cor.~\ref{cor:bijective-local-diffeo} \\
 Proposition 4.8 & Thm.~\ref{thm:local-diffeo-criterion}, Prop.~\ref{prop:dimension-constraints} \\
 Theorem 4.12 & Thm.~\ref{thm:submersion-normal-form}, Thm.~\ref{thm:immersion-normal-form} \\
-Example 4.20 & Ex.~\ref{ex:irrational-line}, Prop.~\ref{prop:irrational-line} \\
+Example 4.20 & Prop.~\ref{prop:irrational-line} \\
 Lemma 4.21 & Lem.~\ref{lem:dirichlet} \\
 Proposition 4.22 & Thm.~\ref{thm:proper-embedding}, Cor.~\ref{cor:compact-embedding} \\
 Proposition 4.28 & Cor.~\ref{cor:submersion-open-map} \\

@@ -28,5 +28,5 @@ tags: [differentiable-manifolds, hub]
 ## Connections
 - **Used for.** On a compact manifold every injective immersion is an embedding ([[§34 Embeddings#^cor-34-6|§34.6]]), and then its image is a submanifold by [[Images of Embeddings Are Submanifolds]].
 - **How.** Proper maps into manifolds are closed ([[§34 Embeddings#^prop-34-4|§34.4]]), by an argument that uses that manifolds are locally compact ([[§2 Topological Manifolds#^prop-2-13|§2.13]]). So F is a closed continuous bijection onto F(M), hence a homeomorphism onto its image.
-- **Properness is needed.** The hook is an injective immersion that is not proper, since a compact disc around P has non-compact preimage, and it is not an embedding ([[§33 Immersions#^ex-33-2|Ex. §33.2]]). The irrational line on the torus is another such example ([[§34 Embeddings#^ex-34-1|Ex. §34.1]]).
+- **Properness is needed.** The hook is an injective immersion that is not proper, since a compact disc around P has non-compact preimage, and it is not an embedding ([[§33 Immersions#^ex-33-2|Ex. §33.2]]). The irrational line on the torus is another such example ([[§34 Embeddings#^prop-34-11|Prop. §34.11]]).
 - **Same idea elsewhere.** The point-set prototype is [[Bijection from Compact to Hausdorff is a Homeomorphism]] (590 §15.7). Properness is also the hypothesis of Ehresmann's theorem ([[§31 Fibrations#^thm-31-3|§31.3]]).

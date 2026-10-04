@@ -125,7 +125,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 4.6 | [[§28 Local Diffeomorphisms#^cor-28-3\|Cor. §28.3]] |
 | Proposition 4.8 | [[§28 Local Diffeomorphisms#^thm-28-2\|Thm. §28.2]], [[§29 Submersions#^prop-29-1\|Prop. §29.1]] |
 | Theorem 4.12 | [[§29 Submersions#^thm-29-4\|Thm. §29.4]], [[§33 Immersions#^thm-33-1\|Thm. §33.1]] |
-| Example 4.20 | [[§34 Embeddings#^ex-34-1\|Ex. §34.1]], [[§34 Embeddings#^prop-34-11\|Prop. §34.11]] |
+| Example 4.20 | [[§34 Embeddings#^prop-34-11\|Prop. §34.11]] |
 | Lemma 4.21 | [[§34 Embeddings#^lem-34-10\|Lem. §34.10]] |
 | Proposition 4.22 | [[§34 Embeddings#^thm-34-5\|Thm. §34.5]], [[§34 Embeddings#^cor-34-6\|Cor. §34.6]] |
 | Proposition 4.28 | [[§29 Submersions#^cor-29-6\|Cor. §29.6]] |

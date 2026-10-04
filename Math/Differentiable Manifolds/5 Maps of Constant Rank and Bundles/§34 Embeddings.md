@@ -29,25 +29,12 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ![[m591-33-1.svg]]
 *An embedding factors through its image as a homeomorphism followed by the inclusion — “you're taking the manifold $M$ and you're putting it inside $N$.” The figure-eight of Lee's Example 4.19 ([[§33 Immersions#Images of Immersions|§33]]) is an injective immersion for which the top arrow is not a homeomorphism.*
 
-> [!example] Example §34.1: The Irrational Line on the Torus
-> For $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$ (the [[Torus|torus]]), $F(t) = [t, \alpha t]$, is an injective immersion ([[§33 Immersions#^def-33-1|Def. §33.1]]) whose image is dense in $T^2$. Its image is not a regular submanifold ([[§30 Submanifolds#^def-30-1|Def. §30.1]]) of $T^2$, so $F$ is not an embedding ([[§34 Embeddings#^def-34-1|Def. §34.1]]).
->
-> *Lee: Example 4.20*
+The standard non-example is the *irrational line on the torus*: for $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$ (the [[Torus|torus]]), $F(t) = [t, \alpha t]$. It is an injective immersion ([[§33 Immersions#^def-33-1|Def. §33.1]]) whose image is dense in $T^2$, and it is not an embedding ([[§34 Embeddings#^prop-34-11|Proposition §34.11]] below, from Assignment 4, Problem 5; Lee, Example 4.20). In lecture its image was also said not to be a regular submanifold of $T^2$ ([[§30 Submanifolds#^def-30-1|Def. §30.1]]).
 
-^ex-34-1
-
-> [!remark]- Connections
-> - The torus as a quotient of the square in 590: [[§12 Quotient Topology#^ex-12-3|590 Ex. §12.3]]; the covering $\mathbb{R}^2 \to T^2$, through which $F$ factors: [[§24 Covering Spaces#^ex-24-3|590 Ex. §24.3]]; all the torus's uses: [[Torus|590 Torus]].
-> - Locally the image is still a submanifold: [[§33 Immersions#^cor-33-2|§33.2]].
-> - The properties proved: [[§34 Embeddings#^prop-34-11|§34.11]].
-
-*Status.* Given in lecture as “a very important category: non-examples”; the properties are proved in [[§34 Embeddings#^prop-34-11|Proposition §34.11]] below, from Assignment 4, Problem 5. “You're wrapping a line, but the slope of the line is irrational, so it never closes … like one of those spirographs.” The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is “a very nice submanifold.” But “it's local in the domain”, while being a submanifold is a statement about the whole image. Points outside $U$ “contribute segments like this, and they're going to be dense. No matter how you shrink this $V$, you won't be able to isolate only the yellow guy.”
+*In lecture.* Given as “a very important category: non-examples.” “You're wrapping a line, but the slope of the line is irrational, so it never closes … like one of those spirographs.” The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is “a very nice submanifold.” But “it's local in the domain”, while being a submanifold is a statement about the whole image. Points outside $U$ “contribute segments like this, and they're going to be dense. No matter how you shrink this $V$, you won't be able to isolate only the yellow guy.”
 
 ![[m591-33-2.svg]]
 *The irrational line, drawn here with $\alpha = (\sqrt5 - 1)/2$. Left: nine turns of $F(\mathbb{R})$ in the square, whose opposite sides are identified; the orange piece is $F(U)$, and two other strands already cross the neighbourhood $V$. Right: a disc around $F(p)$ about $4.6$ times smaller, and the first 400 turns of the curve, which cross it in 34 strands. Shrinking further only takes more turns: every neighbourhood of $F(p)$ meets infinitely many strands.*
-
-![[m591-34-1.svg]]
-*The irrational line on a torus in $\mathbb{R}^3$, drawn with the slope $\alpha = (5 - \sqrt5)/10 \approx 0.28$ so that the stripes run steeply: the horizontal direction of the square goes around the tube, the vertical one around the hole, and strands on the far side are drawn faintly. Left: $t \in [0, 9]$, starting at $F(0)$. Right: $t \in [0, 40]$ — the curve never closes up, and its strands fill in the torus, as [[§34 Embeddings#^prop-34-11|Proposition §34.11]] proves for every irrational $\alpha$. (Drawn for these notes in the vault; not in the course tex.)*
 
 > [!theorem] Theorem §34.1: The Image of an Embedding Is a Submanifold
 > If $F : M \to N$ is an embedding ([[§34 Embeddings#^def-34-1|Def. §34.1]]), with $\dim M = m$ and $\dim N = n$, then $F(M)$ is a regular submanifold ([[§30 Submanifolds#^def-30-1|Def. §30.1]]) of $N$ of codimension $n - m$.
@@ -242,7 +229,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 > [!remark]- Connections
 > - Dense subsets in 590: [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]], with the [[Closure Characterization|590 closure characterization]].
 
-This is the precise form of Uribe's “no matter how you shrink $V$, you won't be able to isolate only the yellow guy”: at every point of [[§34 Embeddings#^ex-34-1|the irrational line]], local closedness fails.
+This is the precise form of Uribe's “no matter how you shrink $V$, you won't be able to isolate only the yellow guy”: at every point of [[§34 Embeddings#^prop-34-11|the irrational line]], local closedness fails.
 
 > [!theorem] Proposition §34.9: Closed Embeddings Are the Proper Ones
 > An embedding ([[§34 Embeddings#^def-34-1|Def. §34.1]]) $F : M \to N$ is proper ([[§34 Embeddings#^def-34-2|Def. §34.2]]) if and only if its image $F(M)$ is closed in $N$. In particular, an injective proper immersion ([[§33 Immersions#^def-33-1|Def. §33.1]]) is exactly an embedding with closed image.
@@ -278,8 +265,8 @@ Closedness of the image alone is not enough: the image of the [[§33 Immersions#
 
 *Status.* Used in Assignment 4, Problem 5, citing Lee; not proved here. (Lee's proof is a [[Pigeonhole Principle|pigeonhole]] argument on the fractional parts of $0, \alpha, \ldots, N\alpha$.)
 
-> [!theorem] Proposition §34.11: The Irrational Line Revisited
-> Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $\gamma(t) = (e^{2\pi i t}, e^{2\pi i \alpha t})$ — the curve of [[§34 Embeddings#^ex-34-1|Example §34.1]] under the identification $[x, y] \mapsto (e^{2\pi i x}, e^{2\pi i y})$. Then $\gamma$ is an injective immersion ([[§33 Immersions#^def-33-1|Def. §33.1]]), its image is dense ([[§18 Countability Axioms#^def-18-4|590 Def. §18.4]]) in $T^2$, and $\gamma$ is not an embedding ([[§34 Embeddings#^def-34-1|Def. §34.1]]).
+> [!theorem] Proposition §34.11: The Irrational Line on the Torus
+> Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $\gamma(t) = (e^{2\pi i t}, e^{2\pi i \alpha t})$ — the curve $F(t) = [t, \alpha t]$ introduced before [[§34 Embeddings#^thm-34-1|Theorem §34.1]], under the identification $[x, y] \mapsto (e^{2\pi i x}, e^{2\pi i y})$. Then $\gamma$ is an injective immersion ([[§33 Immersions#^def-33-1|Def. §33.1]]), its image is dense ([[§18 Countability Axioms#^def-18-4|590 Def. §18.4]]) in $T^2$, and $\gamma$ is not an embedding ([[§34 Embeddings#^def-34-1|Def. §34.1]]).
 >
 > *Lee: Example 4.20*
 
@@ -298,7 +285,11 @@ Closedness of the image alone is not enough: the image of the [[§33 Immersions#
 
 ^pf-34-11
 
-*Uses:* [[§33 Immersions#^def-33-1|Def. §33.1]], [[§34 Embeddings#^def-34-1|Def. §34.1]], [[§34 Embeddings#^ex-34-1|Ex. §34.1]], [[§30 Submanifolds#^lem-30-3|§30.3]], [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]], [[§34 Embeddings#^lem-34-10|§34.10]], [[§34 Embeddings#^cor-34-8|§34.8]], [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]]
+*Uses:* [[§33 Immersions#^def-33-1|Def. §33.1]], [[§34 Embeddings#^def-34-1|Def. §34.1]], [[§30 Submanifolds#^lem-30-3|§30.3]], [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]], [[§34 Embeddings#^lem-34-10|§34.10]], [[§34 Embeddings#^cor-34-8|§34.8]], [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]]
 
 > [!remark]- Connections
-> - The same curve, stated in lecture: [[§34 Embeddings#^ex-34-1|Ex. §34.1]]; the torus in 590: [[Torus|590 Torus]], its covering by the plane: [[§24 Covering Spaces#^ex-24-3|590 Ex. §24.3]].
+> - The torus as a quotient of the square in 590: [[§12 Quotient Topology#^ex-12-3|590 Ex. §12.3]]; the covering $\mathbb{R}^2 \to T^2$, through which $F$ factors: [[§24 Covering Spaces#^ex-24-3|590 Ex. §24.3]]; all the torus's uses: [[Torus|590 Torus]].
+> - Locally the image is still a submanifold: [[§33 Immersions#^cor-33-2|§33.2]].
+
+![[m591-34-3.svg]]
+*The irrational line on a torus in $\mathbb{R}^3$, drawn with the slope $\alpha = (5 - \sqrt5)/10 \approx 0.28$ so that the stripes run steeply: the horizontal direction of the square goes around the tube, the vertical one around the hole, and strands on the far side are drawn faintly. Left: $t \in [0, 9]$, starting at $F(0)$. Middle: $t \in [0, 40]$. Right: $t \in [0, 150]$ — the curve never closes up, and its strands fill in the torus, as [[§34 Embeddings#^prop-34-11|Proposition §34.11]] proves for every irrational $\alpha$. (Drawn for these notes in the vault; not in the course tex.)*

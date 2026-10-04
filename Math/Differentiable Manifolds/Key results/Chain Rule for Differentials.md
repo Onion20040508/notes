@@ -25,7 +25,7 @@ tags: [differentiable-manifolds, hub]
 - [[§30 Submanifolds#^thm-30-6|Theorem §30.6: The Regular Value Theorem for Manifolds]]
 - [[§31 Fibrations#^prop-31-1|Proposition §31.1: Fibres and Fibrations]]
 - [[§34 Embeddings#^cor-34-3|Corollary §34.3: An Embedding Is a Diffeomorphism onto Its Image]]
-- [[§34 Embeddings#^prop-34-11|Proposition §34.11: The Irrational Line Revisited]]
+- [[§34 Embeddings#^prop-34-11|Proposition §34.11: The Irrational Line on the Torus]]
 - [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^lem-35-7|Lemma §35.7: Translating the Differential]]
 - [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^thm-35-8|Theorem §35.8: The Double Cover SU(2) → SO(3)]]
 

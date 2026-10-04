@@ -1,6 +1,6 @@
 # Figure for MATH 591 §34, Example "The Irrational Line on the Torus": the curve F(t) = [t, αt] drawn on a torus in R^3.
 # Not from the notes' tex (added in the vault at the student's request, 2026-10-04). α = (5 − √5)/10, smaller than in m591-33-2 so the stripes run more vertically.
-# Run: python3 m591-34-1.py  -> ../m591-34-1.svg (surface rasterized) and a PNG preview next to it.
+# Run: python3 m591-34-3.py  -> ../m591-34-3.svg (surface rasterized) and a PNG preview next to it.
 import os, warnings, numpy as np, matplotlib
 warnings.filterwarnings('ignore', category=RuntimeWarning)
 matplotlib.use('Agg')
@@ -40,13 +40,15 @@ def panel(ax, T, n, lw, title, mark_start=False):
     lim = R + r; ax.set_xlim(-lim, lim); ax.set_ylim(-lim, lim); ax.set_zlim(-r * 1.6, r * 1.6)
     ax.set_axis_off(); ax.set_title(title, fontsize=11, pad=-10)
 
-fig = plt.figure(figsize=(9.4, 3.4))
-ax1 = fig.add_subplot(1, 2, 1, projection='3d', computed_zorder=False)
+fig = plt.figure(figsize=(13.2, 3.4))
+ax1 = fig.add_subplot(1, 3, 1, projection='3d', computed_zorder=False)
 panel(ax1, 9, 6000, 1.2, r'$t \in [0, 9]$', mark_start=True)
-ax2 = fig.add_subplot(1, 2, 2, projection='3d', computed_zorder=False)
+ax2 = fig.add_subplot(1, 3, 2, projection='3d', computed_zorder=False)
 panel(ax2, 40, 30000, 0.7, r'$t \in [0, 40]$')
+ax3 = fig.add_subplot(1, 3, 3, projection='3d', computed_zorder=False)
+panel(ax3, 150, 90000, 0.35, r'$t \in [0, 150]$')
 plt.subplots_adjust(left=0, right=1, top=0.93, bottom=0, wspace=-0.05)
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'm591-34-1')
+out = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'm591-34-3')
 fig.savefig(out + '.svg', bbox_inches='tight', pad_inches=0.02, dpi=200)
 fig.savefig(out + '.png', bbox_inches='tight', pad_inches=0.02, dpi=110)
 print('ok', os.path.getsize(out + '.svg'))
