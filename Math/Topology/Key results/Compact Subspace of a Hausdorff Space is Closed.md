@@ -29,7 +29,7 @@ tags: [topology, hub]
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
 - [[§2 Topological Manifolds#^prop-2-12|Proposition §2.12: Manifolds Are Locally Compact]]
-- [[§9 Example꞉ Complex Projective Space#^prop-9-1|Proposition §9.1: ℂPⁿ is Hausdorff and Second Countable]]
+- [[§9 Complex Projective Space#^prop-9-1|Proposition §9.1: ℂPⁿ is Hausdorff and Second Countable]]
 - [[§12 Group Actions and Orbit Spaces#^cor-12-4|Corollary §12.4: Compact Group and Compact Hausdorff Space]]
 - [[§16 Differentiable Structures#^prop-16-3|Proposition §16.3: The Circle Needs More Than One Chart]]
 - [[§32 Submersions#^thm-32-7|Theorem §32.7: Submersions from Compact Manifolds]]

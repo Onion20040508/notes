@@ -51,7 +51,7 @@ tags: [topology, math590]
 *The evenly covered neighborhood from the proof: $U = B(x,\varepsilon)\cap S^2$ (dark red) and its antipodal copy $a(U)$ (light red, on the far side of the sphere) are disjoint because $\varepsilon < 1$ while $d(x,-x) = 2$ (dotted diameter). $p$ maps each of them homeomorphically onto the same set $p(U) \subseteq P^2$: two sheets over $p(U)$.*
 
 > [!remark]- Connections
-> - In every dimension the quotient Sⁿ → ℝPⁿ is a two-to-one local diffeomorphism: [[§38 Example꞉ Projective Spaces and the Hopf Fibration#^ex-38-1|591 Ex. §38.1]].
+> - In every dimension the quotient Sⁿ → ℝPⁿ is a two-to-one local diffeomorphism: [[§38 Projective Spaces and the Hopf Fibration#^ex-38-1|591 Ex. §38.1]].
 
 > [!theorem] Theorem §28.2: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$
 > The fundamental group of the projective plane is the cyclic group of order $2$.
@@ -99,7 +99,7 @@ tags: [topology, math590]
 [[§28 Fundamental Group of Some Surfaces#^pf-28-1|The same proof]] shows: $p: S^n \to P^n$ is a $2$-sheeted covering map (the antipodal map is a homeomorphism in any dimension, and the $\varepsilon$-ball argument is dimension-independent).
 
 > [!remark]- Connections
-> - In 591 ℝPⁿ gets a smooth atlas, [[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|591 Cor. §17.5]], and this quotient topology is shown to agree with its Grassmannian description, [[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|591 Prop. §17.6]]; the complex analogue ℂPⁿ is [[§9 Example꞉ Complex Projective Space#^def-9-1|591 Def. §9.1]].
+> - In 591 ℝPⁿ gets a smooth atlas, [[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|591 Cor. §17.5]], and this quotient topology is shown to agree with its Grassmannian description, [[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|591 Prop. §17.6]]; the complex analogue ℂPⁿ is [[§9 Complex Projective Space#^def-9-1|591 Def. §9.1]].
 
 > [!theorem] Theorem §28.3: $\pi_1(P^n)$ for all $n$
 > $$

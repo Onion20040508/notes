@@ -9,18 +9,18 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: foundations — The quotient-built manifolds get their smooth structures from atlases written down by hand: $\mathbb{CP}^n$, with holomorphic transition functions.*
 
-The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through the course: the second is the quotient map that defines $\mathbb{CP}^n$ in [[§9 Example꞉ Complex Projective Space|Example: Complex Projective Space]], an orbit map in [[§12 Group Actions and Orbit Spaces#^ex-12-3|projective space as an orbit space]]; the first is the quotient map of [[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|The Two Topologies on RPⁿ Agree]], and both are read in the standard atlases of [[§17 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; [[§38 Example꞉ Projective Spaces and the Hopf Fibration|Example: Projective Spaces and the Hopf Fibration]] shows the first is a two-to-one local diffeomorphism and the second a submersion and a fibration, the Hopf fibration, with local but no global sections; and for $n = 3$ the first returns as $S^3 = \mathrm{SU}(2) \to \mathrm{SO}(3) \cong \mathbb{RP}^3$ in [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^thm-39-10|The Double Cover]].
+The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through the course: the second is the quotient map that defines $\mathbb{CP}^n$ in [[§9 Complex Projective Space|Complex Projective Space]], an orbit map in [[§12 Group Actions and Orbit Spaces#^ex-12-3|projective space as an orbit space]]; the first is the quotient map of [[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|The Two Topologies on RPⁿ Agree]], and both are read in the standard atlases of [[§17 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; [[§38 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]] shows the first is a two-to-one local diffeomorphism and the second a submersion and a fibration, the Hopf fibration, with local but no global sections; and for $n = 3$ the first returns as $S^3 = \mathrm{SU}(2) \to \mathrm{SO}(3) \cong \mathbb{RP}^3$ in [[§39 SU(2) → SO(3)꞉ The Double Cover#^thm-39-10|The Double Cover]].
 
-*Assignment 2, Problem 2(b)–(c). This completes the construction begun in [[§9 Example꞉ Complex Projective Space|§9]]: there $\mathbb{CP}^n$ was shown to be compact, Hausdorff and second countable; here it acquires charts, and the charts turn out to be smoothly — indeed holomorphically — compatible.*
+*Assignment 2, Problem 2(b)–(c). This completes the construction begun in [[§9 Complex Projective Space|§9]]: there $\mathbb{CP}^n$ was shown to be compact, Hausdorff and second countable; here it acquires charts, and the charts turn out to be smoothly — indeed holomorphically — compatible.*
 
 > [!definition] Definition §17.1: Homogeneous Coordinates
-> For $\vec z = (z_0, \ldots, z_n) \in \mathbb{C}^{n+1} \setminus \{0\}$, write $[z_0 : z_1 : \cdots : z_n] \in \mathbb{CP}^n$ for the complex line through $\vec z$ ([[§9 Example꞉ Complex Projective Space#^prop-9-3|§9.3]]). The $z_i$ are **homogeneous coordinates** of that point; they are determined only up to a common nonzero factor, $[\vec z] = [\lambda\vec z]$ for every $\lambda \in \mathbb{C}^\times$.
+> For $\vec z = (z_0, \ldots, z_n) \in \mathbb{C}^{n+1} \setminus \{0\}$, write $[z_0 : z_1 : \cdots : z_n] \in \mathbb{CP}^n$ for the complex line through $\vec z$ ([[§9 Complex Projective Space#^prop-9-3|§9.3]]). The $z_i$ are **homogeneous coordinates** of that point; they are determined only up to a common nonzero factor, $[\vec z] = [\lambda\vec z]$ for every $\lambda \in \mathbb{C}^\times$.
 >
 > *Lee: Problem 1-9*
 
 ^def-17-1
 
-Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection $\vec z \mapsto [\vec z]$ of [[§9 Example꞉ Complex Projective Space#^prop-9-3|§9.3]]. Throughout, $\mathbb{C}^m \cong \mathbb{R}^{2m}$ by [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]].
+Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection $\vec z \mapsto [\vec z]$ of [[§9 Complex Projective Space#^prop-9-3|§9.3]]. Throughout, $\mathbb{C}^m \cong \mathbb{R}^{2m}$ by [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]].
 
 > [!definition] Definition §17.2: The Standard Charts on $\mathbb{CP}^n$
 > For $i \in \{0, 1, \ldots, n\}$ let
@@ -49,7 +49,7 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 ^prop-17-1
 
 ![[m591-8-4.svg]]
-*Here $p = \pi|_{\pi^{-1}(U_i)}$, the map $\tilde\varphi_i(\vec z) = (z_k/z_i)_{k\neq i}$ divides by the $i$-th coordinate, and $s_i$ inserts a $1$ in slot $i$. The pattern of [[§9 Example꞉ Complex Projective Space#^prop-9-3|§9.3]] recurs: upstairs $\tilde\varphi_i \circ s_i = \mathrm{id}$ but $s_i \circ \tilde\varphi_i$ rescales $\vec z$ to $\vec z/z_i$; downstairs $\varphi_i$ and $\psi_i = p \circ s_i$ are mutually inverse. The triangle $\varphi_i \circ p = \tilde\varphi_i$ is where the universal property is applied — to $p$, not to $\pi$, which is the job of [[§5 Quotient Maps#^lem-5-7|§5.7]].*
+*Here $p = \pi|_{\pi^{-1}(U_i)}$, the map $\tilde\varphi_i(\vec z) = (z_k/z_i)_{k\neq i}$ divides by the $i$-th coordinate, and $s_i$ inserts a $1$ in slot $i$. The pattern of [[§9 Complex Projective Space#^prop-9-3|§9.3]] recurs: upstairs $\tilde\varphi_i \circ s_i = \mathrm{id}$ but $s_i \circ \tilde\varphi_i$ rescales $\vec z$ to $\vec z/z_i$; downstairs $\varphi_i$ and $\psi_i = p \circ s_i$ are mutually inverse. The triangle $\varphi_i \circ p = \tilde\varphi_i$ is where the universal property is applied — to $p$, not to $\pi$, which is the job of [[§5 Quotient Maps#^lem-5-7|§5.7]].*
 
 > [!proof]+ Proof
 > *$U_i$ is well defined and open.* Every nonzero vector on a line $\ell$ is a scalar multiple $\lambda\vec z$, $\lambda \neq 0$, of any one of them, and $(\lambda\vec z)_i = \lambda z_i$; so “$z_i \neq 0$” holds for one representative iff for all. Hence
@@ -70,7 +70,7 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 
 ^pf-17-1
 
-*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^def-17-1|Def. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§9 Example꞉ Complex Projective Space#^prop-9-3|§9.3]], [[§5 Quotient Maps#^lem-5-7|§5.7]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[Universal Property of Quotient Maps|590 §12.3]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1]]
+*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^def-17-1|Def. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§9 Complex Projective Space#^prop-9-3|§9.3]], [[§5 Quotient Maps#^lem-5-7|§5.7]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[Universal Property of Quotient Maps|590 §12.3]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1]]
 
 > [!remark]- Connections
 > - $\mathbb{CP}^n$ as the orbit space of $\mathbb{C}^\times$: [[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]]; the home of quotient maps and their universal property: [[§12 Quotient Topology|590 §12]].
@@ -112,11 +112,11 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 >
 > so both real components are rational functions with nonvanishing denominator $|w_i|^2$, hence $C^\infty$. Exchanging $i$ and $j$ gives the inverse transition, also $C^\infty$; so any two charts are compatible.
 >
-> *Conclusion.* The $U_i$ are open and cover, the $\varphi_i$ are homeomorphisms onto the open set $\mathbb{C}^n \cong \mathbb{R}^{2n}$, and all transitions are diffeomorphisms: this is a smooth atlas, determining a smooth structure by [[§16 Differentiable Structures#^thm-16-5|§16.5]]. Hausdorffness, second countability and compactness are [[§9 Example꞉ Complex Projective Space#^prop-9-1|§9.1]] and [[§9 Example꞉ Complex Projective Space#^prop-9-2|§9.2]].
+> *Conclusion.* The $U_i$ are open and cover, the $\varphi_i$ are homeomorphisms onto the open set $\mathbb{C}^n \cong \mathbb{R}^{2n}$, and all transitions are diffeomorphisms: this is a smooth atlas, determining a smooth structure by [[§16 Differentiable Structures#^thm-16-5|§16.5]]. Hausdorffness, second countability and compactness are [[§9 Complex Projective Space#^prop-9-1|§9.1]] and [[§9 Complex Projective Space#^prop-9-2|§9.2]].
 
 ^pf-17-2
 
-*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^prop-17-1|§17.1]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^def-16-6|Def. §16.6]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§9 Example꞉ Complex Projective Space#^prop-9-1|§9.1]], [[§9 Example꞉ Complex Projective Space#^prop-9-2|§9.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§6 Differentiability#^thm-6-8|452 §6.8]]
+*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^prop-17-1|§17.1]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^def-16-6|Def. §16.6]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§9 Complex Projective Space#^prop-9-1|§9.1]], [[§9 Complex Projective Space#^prop-9-2|§9.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§6 Differentiability#^thm-6-8|452 §6.8]]
 
 > [!theorem] Corollary §17.3: $\mathbb{CP}^n$ Is a Complex Manifold
 > The transition functions of the standard atlas are holomorphic. Hence $\mathbb{CP}^n$ is a complex manifold of complex dimension $n$, in the sense of [[§16 Differentiable Structures#^def-16-5|Def. §16.5]].
@@ -138,11 +138,11 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 ^prop-17-4
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* For $(x,y,z) \in S^2$ the identity $(x+iy)(x-iy) = x^2 + y^2 = (1-z)(1+z)$ shows that $[x+iy : 1-z]$, defined when $z \ne 1$, and $[1+z : x-iy]$, defined when $z \ne -1$, are the same point of $\mathbb{CP}^1$ wherever both are defined. So there is a well-defined map $\Phi : S^2 \to \mathbb{CP}^1$, continuous on each of the two open sets $\{z \ne 1\}$ and $\{z \ne -1\}$ covering $S^2$, hence continuous. On $S^2 \setminus \{N\}$ it is $p \mapsto [\sigma(p) : 1]$, where $\sigma(x,y,z) = (x+iy)/(1-z)$ is the stereographic projection. This is a bijection onto $\mathbb{C}$, with inverse $w \mapsto \big(2\operatorname{Re} w,\, 2\operatorname{Im} w,\, |w|^2 - 1\big)/(|w|^2+1)$. So $\Phi$ maps $S^2 \setminus \{N\}$ bijectively onto $U_1 = \{[w : 1]\}$, and $\Phi(N) = [2 : 0] = [1:0]$ is the one point outside $U_1$. Thus $\Phi$ is a continuous bijection from the compact $S^2$ onto the Hausdorff $\mathbb{CP}^1$ ([[§9 Example꞉ Complex Projective Space#^prop-9-1|§9.1]]), hence a homeomorphism.
+> *(Not from lecture; filled in.)* For $(x,y,z) \in S^2$ the identity $(x+iy)(x-iy) = x^2 + y^2 = (1-z)(1+z)$ shows that $[x+iy : 1-z]$, defined when $z \ne 1$, and $[1+z : x-iy]$, defined when $z \ne -1$, are the same point of $\mathbb{CP}^1$ wherever both are defined. So there is a well-defined map $\Phi : S^2 \to \mathbb{CP}^1$, continuous on each of the two open sets $\{z \ne 1\}$ and $\{z \ne -1\}$ covering $S^2$, hence continuous. On $S^2 \setminus \{N\}$ it is $p \mapsto [\sigma(p) : 1]$, where $\sigma(x,y,z) = (x+iy)/(1-z)$ is the stereographic projection. This is a bijection onto $\mathbb{C}$, with inverse $w \mapsto \big(2\operatorname{Re} w,\, 2\operatorname{Im} w,\, |w|^2 - 1\big)/(|w|^2+1)$. So $\Phi$ maps $S^2 \setminus \{N\}$ bijectively onto $U_1 = \{[w : 1]\}$, and $\Phi(N) = [2 : 0] = [1:0]$ is the one point outside $U_1$. Thus $\Phi$ is a continuous bijection from the compact $S^2$ onto the Hausdorff $\mathbb{CP}^1$ ([[§9 Complex Projective Space#^prop-9-1|§9.1]]), hence a homeomorphism.
 
 ^pf-17-4
 
-*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^def-17-1|Def. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§9 Example꞉ Complex Projective Space#^prop-9-1|§9.1]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§9 Continuous Functions#^thm-9-4|590 §9.4 (local formulation of continuity)]], [[Heine–Borel Theorem|590 §15.12 (Heine–Borel)]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §15.7]]
+*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^def-17-1|Def. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§9 Complex Projective Space#^prop-9-1|§9.1]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§9 Continuous Functions#^thm-9-4|590 §9.4 (local formulation of continuity)]], [[Heine–Borel Theorem|590 §15.12 (Heine–Borel)]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §15.7]]
 
 > [!remark] Remark
 > For $n = 1$ there are two standard charts and a single transition function, $w \mapsto 1/w$ on $\mathbb{C} \setminus \{0\}$ — the complex counterpart of the stereographic transition $u \mapsto 1/u$ of [[§16 Differentiable Structures#^ex-16-3|Ex. §16.3]].
@@ -161,14 +161,14 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 ^cor-17-5
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Every argument of [[§9 Example꞉ Complex Projective Space|§9]] and of this section goes through verbatim with $\mathbb{R}$, $\mathbb{R}^\times$, $\{\pm1\}$ and $S^n$ in place of $\mathbb{C}$, $\mathbb{C}^\times$, $S^1$ and $S^{2n+1}$: the group $\{\pm 1\}$ is finite, hence compact, and acts on $S^n$ by isometries; the transition maps are the real rational functions $x_k/x_i$. Hausdorffness can alternatively be read off from [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]].
+> *(Not from lecture; filled in.)* Every argument of [[§9 Complex Projective Space|§9]] and of this section goes through verbatim with $\mathbb{R}$, $\mathbb{R}^\times$, $\{\pm1\}$ and $S^n$ in place of $\mathbb{C}$, $\mathbb{C}^\times$, $S^1$ and $S^{2n+1}$: the group $\{\pm 1\}$ is finite, hence compact, and acts on $S^n$ by isometries; the transition maps are the real rational functions $x_k/x_i$. Hausdorffness can alternatively be read off from [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]].
 
 ^pf-17-5
 
-*Uses:* [[§9 Example꞉ Complex Projective Space#^prop-9-1|§9.1]], [[§9 Example꞉ Complex Projective Space#^prop-9-2|§9.2]], [[§9 Example꞉ Complex Projective Space#^prop-9-3|§9.3]], [[§17 Projective Spaces as Smooth Manifolds#^prop-17-1|§17.1]], [[§17 Projective Spaces as Smooth Manifolds#^thm-17-2|§17.2]], [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]]
+*Uses:* [[§9 Complex Projective Space#^prop-9-1|§9.1]], [[§9 Complex Projective Space#^prop-9-2|§9.2]], [[§9 Complex Projective Space#^prop-9-3|§9.3]], [[§17 Projective Spaces as Smooth Manifolds#^prop-17-1|§17.1]], [[§17 Projective Spaces as Smooth Manifolds#^thm-17-2|§17.2]], [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]]
 
 > [!remark]- Connections
-> - The same space in 590, projective $n$-space: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2]], [[Projective plane]]; the double cover $S^n \to \mathbb{RP}^n$ as a local diffeomorphism: [[§38 Example꞉ Projective Spaces and the Hopf Fibration#^ex-38-1|Ex. §38.1]].
+> - The same space in 590, projective $n$-space: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2]], [[Projective plane]]; the double cover $S^n \to \mathbb{RP}^n$ as a local diffeomorphism: [[§38 Projective Spaces and the Hopf Fibration#^ex-38-1|Ex. §38.1]].
 
 ![[m591-8-6.svg]]
 *The chart $U_0$ of $\mathbb{RP}^1$, drawn in the plane of homogeneous coordinates. A point of $\mathbb{RP}^1$ is a line through the origin. A line $L$ with $x_0 \ne 0$ meets the affine line $x_0 = 1$ in exactly one point, $(1, x_1/x_0)$, and the chart $\varphi_0(L) = x_1/x_0$ records where. The one line with $x_0 = 0$ — the $x_1$-axis, the point $[0:1]$ — is parallel to $x_0 = 1$ and never meets it: it is the point at infinity that $U_0$ misses, and the second chart $U_1$ covers it. On the right, $\mathbb{RP}^1$ drawn as a circle, with $U_0$ everything except the top point. In $\mathbb{RP}^n$ the same picture holds with the affine hyperplane $x_0 = 1$ in place of the line.*

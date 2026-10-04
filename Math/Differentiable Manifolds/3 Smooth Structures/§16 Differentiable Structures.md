@@ -5,7 +5,7 @@ chapter: 3
 section: 16
 tags: [differentiable-manifolds, math591]
 ---
-← [[§15 Example꞉ The Classical Groups]] · ↑ [[· 3 Smooth Structures]] · [[§17 Projective Spaces as Smooth Manifolds]] →
+← [[§15 The Classical Groups]] · ↑ [[· 3 Smooth Structures]] · [[§17 Projective Spaces as Smooth Manifolds]] →
 
 *Stage: foundations — Charts, compatibility, atlases and maximal atlases: what a smooth structure is, for every manifold. The projective spaces get theirs next ([[§17 Projective Spaces as Smooth Manifolds|§17]]), then smooth maps ([[§18 Smooth Functions and Smooth Maps|§18]]).*
 

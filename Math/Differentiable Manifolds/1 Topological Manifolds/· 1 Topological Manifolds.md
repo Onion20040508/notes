@@ -21,8 +21,8 @@ tags: [chapter, differentiable-manifolds]
 - [[§5 Quotient Maps]]
 - [[§6 Open Quotients]]
 - [[§7 The Regular Value Theorem]]
-- [[§8 Example꞉ Spheres]]
-- [[§9 Example꞉ Complex Projective Space]]
+- [[§8 Spheres]]
+- [[§9 Complex Projective Space]]
 
 ## Central results
 - [[Topological Invariance of Dimension]] (§2.1)

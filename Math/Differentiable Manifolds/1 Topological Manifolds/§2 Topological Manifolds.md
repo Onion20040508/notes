@@ -129,7 +129,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 *Uses:* [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (3), [[§5 Subspace Topology#^lem-5-2|590 §5.2]], [[§9 Continuous Functions#^prop-9-3|590 §9.3]]
 
 > [!remark] Remark
-> Lee takes the “open subset” version as the *definition* of locally Euclidean and leaves the equivalence as Exercise 1.1. The practical upshot: to verify that a space is locally Euclidean, it is enough to exhibit, around each point, a homeomorphism onto an open ball, or onto an open disk, or onto any open subset of $\mathbb{R}^n$—one never needs to hit all of $\mathbb{R}^n$. This is used in the $S^2$ example ([[§8 Example꞉ Spheres#^ex-8-1|Ex. §8.1]]).
+> Lee takes the “open subset” version as the *definition* of locally Euclidean and leaves the equivalence as Exercise 1.1. The practical upshot: to verify that a space is locally Euclidean, it is enough to exhibit, around each point, a homeomorphism onto an open ball, or onto an open disk, or onto any open subset of $\mathbb{R}^n$—one never needs to hit all of $\mathbb{R}^n$. This is used in the $S^2$ example ([[§8 Spheres#^ex-8-1|Ex. §8.1]]).
 
 ^rem-2-4
 
@@ -284,7 +284,7 @@ The failure of second countability in the last example is detected by counting c
 
 **Rigor flag.** “Second countable $\Rightarrow$ countably many components” is *false* without local connectedness: the Cantor set is a compact metric (hence second countable) space with uncountably many components (each a point). The proposition uses locally Euclidean only through “components are open,” i.e. local connectedness.
 
-The sphere $S^2$ with its hemisphere charts, and the spheres $S^n$ as topological manifolds, are collected in [[§8 Example꞉ Spheres|§8]].
+The sphere $S^2$ with its hemisphere charts, and the spheres $S^n$ as topological manifolds, are collected in [[§8 Spheres|§8]].
 
 Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone point, a closed disk—the last of these is a manifold *with boundary*). There was no time to discuss these in lecture; the homework is where such examples live. Uribe emphasized that the most interesting examples of the course are in the homework, which is a reason to do it without AI.
 

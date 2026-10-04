@@ -5,7 +5,7 @@ chapter: 5
 section: 37
 tags: [differentiable-manifolds, math591]
 ---
-← [[§36 Immersions]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§38 Example꞉ Projective Spaces and the Hopf Fibration]] →
+← [[§36 Immersions]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§38 Projective Spaces and the Hopf Fibration]] →
 
 *Stage: maps — Immersions that are homeomorphisms onto their images — their images are submanifolds.*
 
@@ -88,7 +88,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 **Transcription note.** Page 39 of the handwritten notes writes the target as $F(M) \cap V = \{0 = y^{n-m+1} = \cdots = y^m\}$; the vanishing coordinates are the last $n - m$ of them, $y^{m+1}, \ldots, y^n$, as the lecture said.
 
 > [!remark] Remark: Where Is Injectivity Used?
-> In lecture the last equality caused trouble, and a discussion. Uribe first located the use of injectivity there; a student pointed out that $(*)$ concerns only $F(U)$, and that the proof seems to need only that $F$ be an immersion ([[§36 Immersions#^def-36-1|Def. §36.1]]) which is open ([[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]]) onto its image. Another student added covering-type examples: maps that are not injective but whose images are manifolds, such as $\mathbb{R} \to S^1$, $t \mapsto (\cos t, \sin t)$ ([[§31 Local Diffeomorphisms#^ex-31-1|Ex. §31.1]]), or the two-to-one map $S^2 \to \mathbb{RP}^2$ ([[§38 Example꞉ Projective Spaces and the Hopf Fibration#^ex-38-1|Ex. §38.1]]). Uribe agreed — “I don't think we're using injectivity” — and promised “a definite conclusion by email.”
+> In lecture the last equality caused trouble, and a discussion. Uribe first located the use of injectivity there; a student pointed out that $(*)$ concerns only $F(U)$, and that the proof seems to need only that $F$ be an immersion ([[§36 Immersions#^def-36-1|Def. §36.1]]) which is open ([[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]]) onto its image. Another student added covering-type examples: maps that are not injective but whose images are manifolds, such as $\mathbb{R} \to S^1$, $t \mapsto (\cos t, \sin t)$ ([[§31 Local Diffeomorphisms#^ex-31-1|Ex. §31.1]]), or the two-to-one map $S^2 \to \mathbb{RP}^2$ ([[§38 Projective Spaces and the Hopf Fibration#^ex-38-1|Ex. §38.1]]). Uribe agreed — “I don't think we're using injectivity” — and promised “a definite conclusion by email.”
 >
 > *The conclusion, from Uribe's follow-up email.* The students were right: “a proof that we did today does show that for an immersion that is open as a map onto its image (so for all $U$ open in $M$, $F(U)$ is open in $F(M)$), $F(M)$ is a submanifold. The map $F$ does not have to be injective.” The proof uses exactly two things: the normal form (the immersion hypothesis), and that $F(U)$ is open in $F(M)$ for the $U$ of the normal form; with the completion via [[§36 Immersions#^cor-36-2|Corollary §36.2]] nothing else enters. Injectivity belongs to the *idea* of an embedding — “the idea of an embedding is that it is an isomorphism between $M$ and its image” ([[§37 Embeddings#^cor-37-3|Corollary §37.3]]) — not to this proof. He added that “being an immersion and an open map onto its image” is “an unusual class of maps.”
 

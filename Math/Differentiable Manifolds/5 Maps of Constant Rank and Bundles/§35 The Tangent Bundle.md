@@ -188,7 +188,7 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 ![[m591-17-5.svg]]
 *The cartoon of a section. The fibration is drawn as a box over its base, with fibres vertical; a section is a graph over the base, meeting every fibre exactly once — at $s(b)$ in the fibre over $b$ — so its image $s(B)$ is “a copy of $B$” inside $E$.*
 
-That the Hopf fibration has no global section is recorded in [[§38 Example꞉ Projective Spaces and the Hopf Fibration|§38]].
+That the Hopf fibration has no global section is recorded in [[§38 Projective Spaces and the Hopf Fibration|§38]].
 
 > [!definition] Definition §35.4: Vector Field
 > A **vector field** on $M$ is a section of the tangent bundle $\pi : TM \to M$: a smooth map $X : M \to TM$ with $X(p) \in T_pM$ for every $p$ — “for every point, [it] selects a tangent vector at that point.”

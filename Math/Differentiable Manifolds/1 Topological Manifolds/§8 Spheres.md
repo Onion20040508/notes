@@ -5,11 +5,11 @@ chapter: 1
 section: 8
 tags: [differentiable-manifolds, math591]
 ---
-← [[§7 The Regular Value Theorem]] · ↑ [[· 1 Topological Manifolds]] · [[§9 Example꞉ Complex Projective Space]] →
+← [[§7 The Regular Value Theorem]] · ↑ [[· 1 Topological Manifolds]] · [[§9 Complex Projective Space]] →
 
 *Thread: examples — The sphere, the first manifold of the course, in one place: $S^2$ by hemisphere charts, every $S^n$ by the same argument, and two overlapping charts whose transition map is already smooth.*
 
-The sphere through the course: a topological manifold with hemisphere charts in *this section*; the homogeneous space $\mathrm{SO}(3)/\mathrm{SO}(2)$ in [[§13 Homogeneous Spaces#^ex-13-3|the sphere as a homogeneous space]]; the Riemann sphere $\mathbb{CP}^1$ in [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|the Riemann sphere]]; its geometric tangent spaces in [[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-1|the tangent space of the sphere]] and its transverse intersection with a plane in [[§24 Transversality#^ex-24-1|the sphere and the plane re-read]]; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in [[§38 Example꞉ Projective Spaces and the Hopf Fibration|Example: Projective Spaces and the Hopf Fibration]]; and $S^3 = \mathrm{SU}(2)$ in [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-39-5|the unit quaternions as SU(2)]].
+The sphere through the course: a topological manifold with hemisphere charts in *this section*; the homogeneous space $\mathrm{SO}(3)/\mathrm{SO}(2)$ in [[§13 Homogeneous Spaces#^ex-13-3|the sphere as a homogeneous space]]; the Riemann sphere $\mathbb{CP}^1$ in [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|the Riemann sphere]]; its geometric tangent spaces in [[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-1|the tangent space of the sphere]] and its transverse intersection with a plane in [[§24 Transversality#^ex-24-1|the sphere and the plane re-read]]; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in [[§38 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]]; and $S^3 = \mathrm{SU}(2)$ in [[§39 SU(2) → SO(3)꞉ The Double Cover#^prop-39-5|the unit quaternions as SU(2)]].
 
 > [!example] Example §8.1: $S^2$ is a Topological $2$-Manifold
 > Let $S^2 = \{x \in \mathbb{R}^3 \mid |x| = 1\}$ with the subspace topology.
@@ -56,17 +56,17 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 ^prop-8-1
 
 > [!proof]+ Proof
-> As in [[§8 Example꞉ Spheres#^ex-8-1|Example §8.1]], $S^n$ is a metric space (restriction of the Euclidean metric), hence Hausdorff, and second countable: intersecting a countable basis of $\mathbb{R}^{n+1}$ with $S^n$ gives a countable basis. The $2(n+1)$ open hemispheres $U_i^{\pm} = \{x \in S^n \mid \pm x_i > 0\}$ cover $S^n$, since every point has a nonzero coordinate. On $U_i^\pm$, the map $\varphi_i^\pm$ forgetting the $i$-th coordinate is continuous and lands in the open unit ball $B^n$, because the remaining coordinates satisfy $\sum_{j \ne i} x_j^2 = 1 - x_i^2 < 1$. Its inverse inserts $\pm\sqrt{1 - |y|^2}$ in slot $i$ and is continuous. So each $\varphi_i^\pm$ is a homeomorphism onto the open set $B^n \subseteq \mathbb{R}^n$, and [[§2 Topological Manifolds#^prop-2-3|Proposition §2.3]] applies.
+> As in [[§8 Spheres#^ex-8-1|Example §8.1]], $S^n$ is a metric space (restriction of the Euclidean metric), hence Hausdorff, and second countable: intersecting a countable basis of $\mathbb{R}^{n+1}$ with $S^n$ gives a countable basis. The $2(n+1)$ open hemispheres $U_i^{\pm} = \{x \in S^n \mid \pm x_i > 0\}$ cover $S^n$, since every point has a nonzero coordinate. On $U_i^\pm$, the map $\varphi_i^\pm$ forgetting the $i$-th coordinate is continuous and lands in the open unit ball $B^n$, because the remaining coordinates satisfy $\sum_{j \ne i} x_j^2 = 1 - x_i^2 < 1$. Its inverse inserts $\pm\sqrt{1 - |y|^2}$ in slot $i$ and is continuous. So each $\varphi_i^\pm$ is a homeomorphism onto the open set $B^n \subseteq \mathbb{R}^n$, and [[§2 Topological Manifolds#^prop-2-3|Proposition §2.3]] applies.
 
 ^pf-8-1
 
-*Uses:* [[§8 Example꞉ Spheres#^ex-8-1|Ex. §8.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§18 Countability Axioms#^thm-18-3|590 §18.3]]
+*Uses:* [[§8 Spheres#^ex-8-1|Ex. §8.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§18 Countability Axioms#^thm-18-3|590 §18.3]]
 
 > [!remark]- Connections
 > - The hemisphere charts as an atlas: [[§16 Differentiable Structures#^def-16-6|Def. §16.6]]; the circle case with its smooth atlases is [[§16 Differentiable Structures#^ex-16-2|Ex. §16.2]].
 
 > [!remark] Remark
-> This is the argument of [[§8 Example꞉ Spheres#^ex-8-1|Example §8.1]], for every $n$ (Lee, Example 1.4). The hemisphere charts will be our first example of an *atlas*, and the maps between overlapping charts ([[§2 Topological Manifolds#Charts and Transition Functions|§2, Charts and Transition Functions]]) will turn out to be smooth.
+> This is the argument of [[§8 Spheres#^ex-8-1|Example §8.1]], for every $n$ (Lee, Example 1.4). The hemisphere charts will be our first example of an *atlas*, and the maps between overlapping charts ([[§2 Topological Manifolds#Charts and Transition Functions|§2, Charts and Transition Functions]]) will turn out to be smooth.
 
 ^rem-8-1
 
@@ -81,4 +81,4 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ^ex-8-2
 
-*Uses:* [[§8 Example꞉ Spheres#^ex-8-1|Ex. §8.1]], [[§2 Topological Manifolds#^def-2-4|Def. §2.4]]
+*Uses:* [[§8 Spheres#^ex-8-1|Ex. §8.1]], [[§2 Topological Manifolds#^def-2-4|Def. §2.4]]

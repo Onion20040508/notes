@@ -68,7 +68,7 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§35 The Tangent Bundle\|§35]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18); Proposition 11.9 (cotangent bundle); Chapter 8 (vector fields); Chapter 10 (sections) |
 | [[§36 Immersions\|§36]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
 | [[§37 Embeddings\|§37]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
-| [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)\|§39]] The double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
+| [[§39 SU(2) → SO(3)꞉ The Double Cover\|§39]] The double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
 
 ## A.4 Index from Lee to these notes
 
@@ -77,7 +77,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Lee | These notes |
 |---|---|
 | Theorem 1.2 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]], [[§2 Topological Manifolds#^cor-2-2\|Cor. §2.2]] |
-| Example 1.4 | [[§8 Example꞉ Spheres#^ex-8-1\|Ex. §8.1]], [[§8 Example꞉ Spheres#^prop-8-1\|Prop. §8.1]], [[§16 Differentiable Structures#^ex-16-2\|Ex. §16.2]] |
+| Example 1.4 | [[§8 Spheres#^ex-8-1\|Ex. §8.1]], [[§8 Spheres#^prop-8-1\|Prop. §8.1]], [[§16 Differentiable Structures#^ex-16-2\|Ex. §16.2]] |
 | Example 1.5 | [[§17 Projective Spaces as Smooth Manifolds#^prop-17-6\|Prop. §17.6]] |
 | Example 1.8 | [[§3 Subspaces and Products#^thm-3-12\|Thm. §3.12]] |
 | Proposition 1.11 | [[§2 Topological Manifolds#^prop-2-6\|Prop. §2.6]], [[§2 Topological Manifolds#^thm-2-8\|Thm. §2.8]], [[§2 Topological Manifolds#^cor-2-9\|Cor. §2.9]] |
@@ -100,7 +100,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 1-2 | [[§2 Topological Manifolds#^ex-2-3\|Ex. §2.3]], [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]] |
 | Problem 1-6 | [[§18 Smooth Functions and Smooth Maps#^prop-18-6\|Prop. §18.6]], [[§18 Smooth Functions and Smooth Maps#^def-18-5\|Def. §18.5]], [[§18 Smooth Functions and Smooth Maps#^cor-18-7\|Cor. §18.7]] |
 | Problem 1-7 | [[§16 Differentiable Structures#^ex-16-3\|Ex. §16.3]] |
-| Problem 1-9 | [[§9 Example꞉ Complex Projective Space#^def-9-1\|Def. §9.1]], [[§9 Example꞉ Complex Projective Space#^prop-9-1\|Prop. §9.1]], [[§9 Example꞉ Complex Projective Space#^prop-9-2\|Prop. §9.2]], [[§9 Example꞉ Complex Projective Space#^prop-9-3\|Prop. §9.3]], [[§12 Group Actions and Orbit Spaces#^ex-12-3\|Ex. §12.3]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-1\|Def. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-2\|Def. §17.2]], [[§17 Projective Spaces as Smooth Manifolds#^prop-17-1\|Prop. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^thm-17-2\|Thm. §17.2]] |
+| Problem 1-9 | [[§9 Complex Projective Space#^def-9-1\|Def. §9.1]], [[§9 Complex Projective Space#^prop-9-1\|Prop. §9.1]], [[§9 Complex Projective Space#^prop-9-2\|Prop. §9.2]], [[§9 Complex Projective Space#^prop-9-3\|Prop. §9.3]], [[§12 Group Actions and Orbit Spaces#^ex-12-3\|Ex. §12.3]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-1\|Def. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-2\|Def. §17.2]], [[§17 Projective Spaces as Smooth Manifolds#^prop-17-1\|Prop. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^thm-17-2\|Thm. §17.2]] |
 | Proposition 2.5 | [[§18 Smooth Functions and Smooth Maps#^prop-18-2\|Prop. §18.2]] |
 | Proposition 2.10 | [[§18 Smooth Functions and Smooth Maps#^lem-18-4\|Lem. §18.4]] |
 | Proposition 2.15 | [[§18 Smooth Functions and Smooth Maps#^prop-18-5\|Prop. §18.5]] |
@@ -129,7 +129,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Lemma 4.21 | [[§37 Embeddings#^lem-37-10\|Lem. §37.10]] |
 | Proposition 4.22 | [[§37 Embeddings#^thm-37-5\|Thm. §37.5]], [[§37 Embeddings#^cor-37-6\|Cor. §37.6]] |
 | Proposition 4.28 | [[§32 Submersions#^cor-32-6\|Cor. §32.6]] |
-| Problem 4-5 | [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4\|Prop. §17.4]], [[§38 Example꞉ Projective Spaces and the Hopf Fibration#^ex-38-2\|Ex. §38.2]], [[§38 Example꞉ Projective Spaces and the Hopf Fibration#^ex-38-3\|Ex. §38.3]] |
+| Problem 4-5 | [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4\|Prop. §17.4]], [[§38 Projective Spaces and the Hopf Fibration#^ex-38-2\|Ex. §38.2]], [[§38 Projective Spaces and the Hopf Fibration#^ex-38-3\|Ex. §38.3]] |
 | Proposition 5.2 | [[§37 Embeddings#^thm-37-1\|Thm. §37.1]] |
 | Proposition 5.5 | [[§37 Embeddings#^prop-37-9\|Prop. §37.9]] |
 | Theorem 5.8 | [[§33 Submanifolds#^def-33-1\|Def. §33.1]], [[§33 Submanifolds#^prop-33-2\|Prop. §33.2]] |
@@ -146,7 +146,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 7.29 | [[§10 Topological Groups and Classical Matrix Groups#^def-10-8\|Def. §10.8]], [[§11 The Classical Groups Are Topological Manifolds#^thm-11-6\|Thm. §11.6]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2\|Ex. §22.2]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-5\|Cor. §22.5]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5\|Thm. §23.5]] |
 | Example 7.30 | [[§10 Topological Groups and Classical Matrix Groups#^def-10-8\|Def. §10.8]], [[§11 The Classical Groups Are Topological Manifolds#^thm-11-6\|Thm. §11.6]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5\|Thm. §23.5]] |
 | Problem 7-4 | [[§11 The Classical Groups Are Topological Manifolds#^prop-11-1\|Prop. §11.1]], [[§11 The Classical Groups Are Topological Manifolds#^cor-11-2\|Cor. §11.2]] |
-| Problem 7-22 | [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^def-39-1\|Def. §39.1]] |
+| Problem 7-22 | [[§39 SU(2) → SO(3)꞉ The Double Cover#^def-39-1\|Def. §39.1]] |
 | Example 10.3 | [[§34 Fibrations#^ex-34-2\|Ex. §34.2]] |
 | Proposition 11.1 | [[§20 Linear Algebra Toolkit#^def-20-1\|Def. §20.1]], [[§20 Linear Algebra Toolkit#^prop-20-2\|Prop. §20.2]] |
 | Proposition 11.4 | [[§20 Linear Algebra Toolkit#^def-20-2\|Def. §20.2]], [[§20 Linear Algebra Toolkit#^prop-20-4\|Prop. §20.4]] |
@@ -166,8 +166,8 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 21.19 | [[§13 Homogeneous Spaces#^ex-13-3\|Ex. §13.3]] |
 | Theorem 21.20 | [[§14 The Topology of G∕H and Real Grassmannians#^def-14-2\|Def. §14.2]], [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-4\|Prop. §14.4]] |
 | Example 21.21 | [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-6\|Prop. §14.6]], [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-7\|Prop. §14.7]], [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8\|Cor. §14.8]] |
-| Proposition 21.34 | [[§15 Example꞉ The Classical Groups#^thm-15-2\|Thm. §15.2]] |
-| Proposition 21.35 | [[§15 Example꞉ The Classical Groups#^prop-15-1\|Prop. §15.1]], [[§15 Example꞉ The Classical Groups#^thm-15-2\|Thm. §15.2]] |
+| Proposition 21.34 | [[§15 The Classical Groups#^thm-15-2\|Thm. §15.2]] |
+| Proposition 21.35 | [[§15 The Classical Groups#^prop-15-1\|Prop. §15.1]], [[§15 The Classical Groups#^thm-15-2\|Thm. §15.2]] |
 | Example A.4 | [[§1 Point-Set Topology Review#^ex-1-2\|Ex. §1.2]] |
 | Example A.5 | [[§1 Point-Set Topology Review#^ex-1-3\|Ex. §1.3]], [[§1 Point-Set Topology Review#^prop-1-6\|Prop. §1.6]] |
 | Proposition A.17 | [[§3 Subspaces and Products#^prop-3-3\|Prop. §3.3]], [[§3 Subspaces and Products#^cor-3-4\|Cor. §3.4]] |

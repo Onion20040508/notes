@@ -19,8 +19,8 @@ tags: [chapter, differentiable-manifolds]
 - [[§35 The Tangent Bundle]]
 - [[§36 Immersions]]
 - [[§37 Embeddings]]
-- [[§38 Example꞉ Projective Spaces and the Hopf Fibration]]
-- [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)]]
+- [[§38 Projective Spaces and the Hopf Fibration]]
+- [[§39 SU(2) → SO(3)꞉ The Double Cover]]
 
 ## Central results
 - [[Local Diffeomorphism Criterion]] (§31.2)

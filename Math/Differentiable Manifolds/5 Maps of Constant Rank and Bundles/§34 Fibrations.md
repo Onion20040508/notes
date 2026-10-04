@@ -57,7 +57,7 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 
 *Uses:* [[§34 Fibrations#^def-34-1|Def. §34.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§26 Derivations and the Abstract Tangent Space#^cor-26-7|§26.7]], [[§32 Submersions#^def-32-1|Def. §32.1]], [[§32 Submersions#^ex-32-2|Ex. §32.2]], [[§32 Submersions#^cor-32-6|§32.6]], [[§9 Continuous Functions#^prop-9-3|590 §9.3]]
 
-The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibration, and its local but not global sections are collected in [[§38 Example꞉ Projective Spaces and the Hopf Fibration|§38]].
+The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibration, and its local but not global sections are collected in [[§38 Projective Spaces and the Hopf Fibration|§38]].
 
 > [!remark] Remark: What Comes Next
 > Tangent bundles, cotangent bundles and vector bundles are fibrations “with additional structure, where the fibres are vector spaces.” The basic notion of fibration is more general: its fibre $F$ is any manifold.

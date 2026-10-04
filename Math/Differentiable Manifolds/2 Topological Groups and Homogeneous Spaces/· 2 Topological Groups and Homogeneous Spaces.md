@@ -19,7 +19,7 @@ tags: [chapter, differentiable-manifolds]
 - [[§12 Group Actions and Orbit Spaces]]
 - [[§13 Homogeneous Spaces]]
 - [[§14 The Topology of G∕H and Real Grassmannians]]
-- [[§15 Example꞉ The Classical Groups]]
+- [[§15 The Classical Groups]]
 
 ## Central results
 - [[Jacobi's Formula]] (§11.1)

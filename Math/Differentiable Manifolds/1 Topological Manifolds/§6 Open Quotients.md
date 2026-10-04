@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§5 Quotient Maps]] · ↑ [[· 1 Topological Manifolds]] · [[§7 The Regular Value Theorem]] →
 
-*Thread: quotients — When is a quotient Hausdorff? For open relations, exactly when the graph is closed (Theorem [[§6 Open Quotients#^thm-6-1|§6.1]]). Complex projective space, the first manifold built this way, is worked out at the end of the chapter ([[§9 Example꞉ Complex Projective Space|§9]]); the question returns for orbit spaces ([[§12 Group Actions and Orbit Spaces|§12]]) and coset spaces ([[§13 Homogeneous Spaces|§13]]).*
+*Thread: quotients — When is a quotient Hausdorff? For open relations, exactly when the graph is closed (Theorem [[§6 Open Quotients#^thm-6-1|§6.1]]). Complex projective space, the first manifold built this way, is worked out at the end of the chapter ([[§9 Complex Projective Space|§9]]); the question returns for orbit spaces ([[§12 Group Actions and Orbit Spaces|§12]]) and coset spaces ([[§13 Homogeneous Spaces|§13]]).*
 
 > [!definition] Definition §6.1: Graph of a Relation
 > The **graph** of a relation $\sim$ on a set $X$ is
@@ -77,7 +77,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§6 Open Quotients#^thm-6-1|§6.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (2), [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]]
 
 > [!remark] Remark: This Is the Tool
-> Uribe (emphasized): “this is going to be our tool for figuring out whether a quotient space is $T_2$.” The workflow it suggests, and which the [[§9 Example꞉ Complex Projective Space#^prop-9-1|ℂPⁿ example below]] executes: (i) show the relation is open — usually via the saturation slogan; (ii) show the graph is closed — often by exhibiting $\Gamma$ as a preimage of a closed set, or as a compact set inside a Hausdorff space.
+> Uribe (emphasized): “this is going to be our tool for figuring out whether a quotient space is $T_2$.” The workflow it suggests, and which the [[§9 Complex Projective Space#^prop-9-1|ℂPⁿ example below]] executes: (i) show the relation is open — usually via the saturation slogan; (ii) show the graph is closed — often by exhibiting $\Gamma$ as a preimage of a closed set, or as a compact set inside a Hausdorff space.
 
 ^rem-6-2
 
@@ -120,5 +120,5 @@ tags: [differentiable-manifolds, math591]
 
 PSet 1, Problem 2 asks for the non-closedness of $\Gamma$ directly. The sequence argument above needs no metrizability: in any topological space, if $z_n \to z$ with all $z_n$ in a closed set $C$, then $z \in C$ (otherwise the open set $X \setminus C$ would eventually contain the $z_n$).
 
-The application of these criteria to complex projective space $\mathbb{CP}^n$ is collected in [[§9 Example꞉ Complex Projective Space|§9]].
+The application of these criteria to complex projective space $\mathbb{CP}^n$ is collected in [[§9 Complex Projective Space|§9]].
 

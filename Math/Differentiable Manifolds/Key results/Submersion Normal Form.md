@@ -17,8 +17,8 @@ tags: [differentiable-manifolds, hub]
 - [[§28 The Differential in Coordinates#^prop-28-1|Proposition §28.1: Partial Derivatives Upstairs and Downstairs]]
 - [[§28 The Differential in Coordinates#^thm-28-2|Theorem §28.2: The Matrix of the Differential]]
 - [[§31 Local Diffeomorphisms#^thm-31-1|Theorem §31.1: Inverse Function Theorem]]
-- [[§32 Submersions#^prop-32-1|Proposition §32.1: Dimension Constraints]]
 - [[§32 Submersions#^def-32-1|Definition §32.1: Submersion and Immersion]]
+- [[§32 Submersions#^prop-32-1|Proposition §32.1: Dimension Constraints]]
 - [[§32 Submersions#^lem-32-3|Lemma §32.3: Diffeomorphisms onto Open Sets Are Charts]]
 
 ## Its proof uses (other subjects)

@@ -14,12 +14,12 @@ tags: [differentiable-manifolds, hub]
 - [[§18 Smooth Functions and Smooth Maps#^def-18-3|Definition §18.3: Smooth Map and Diffeomorphism]]
 - [[§27 Coordinate Derivations and the Basis Theorem#^def-27-1|Definition §27.1: Coordinate Functions of a Chart]]
 - [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|Theorem §27.5: Basis Theorem]]
-- [[§29 Tangent Vectors as Velocities of Curves#^def-29-1|Definition §29.1: Smooth Curve and Its Velocity]]
 - [[§29 Tangent Vectors as Velocities of Curves#^prop-29-1|Proposition §29.1: Velocity in Coordinates]]
+- [[§29 Tangent Vectors as Velocities of Curves#^def-29-1|Definition §29.1: Smooth Curve and Its Velocity]]
 
 ## Used in (Differentiable Manifolds)
 - [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|Corollary §29.3: Velocity of a Composite — Computing Differentials by Curves]]
-- [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-39-6|Proposition §39.6: The Tangent Space of SU(2) at the Identity]]
+- [[§39 SU(2) → SO(3)꞉ The Double Cover#^prop-39-6|Proposition §39.6: The Tangent Space of SU(2) at the Identity]]
 
 ## Connections
 - **Used for.** Computing differentials by curves: F_*p(D) is the velocity of F ∘ γ for any curve γ with velocity D ([[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]]). This is how the tangent spaces of submanifolds ([[§33 Submanifolds#^prop-33-4|§33.4]]) and of products ([[§29 Tangent Vectors as Velocities of Curves#^cor-29-6|§29.6]]) are read off, and it enters the comparison of the old and new regular value theorems ([[§33 Submanifolds#^prop-33-8|§33.8]]).

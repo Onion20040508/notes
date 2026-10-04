@@ -5,7 +5,7 @@ chapter: 1
 section: 7
 tags: [differentiable-manifolds, math591]
 ---
-← [[§6 Open Quotients]] · ↑ [[· 1 Topological Manifolds]] · [[§8 Example꞉ Spheres]] →
+← [[§6 Open Quotients]] · ↑ [[· 1 Topological Manifolds]] · [[§8 Spheres]] →
 
 *Thread: equations — Manifolds cut out as level sets. It sits in this chapter because the next one needs it: $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$ and $\mathrm{U}(n)$ are level sets.*
 

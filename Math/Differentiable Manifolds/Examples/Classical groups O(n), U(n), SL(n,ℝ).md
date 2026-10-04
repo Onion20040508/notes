@@ -8,9 +8,9 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 
 - $\mathrm{U}(n)$ is not a holomorphic level set, so it must be treated over $\mathbb{R}$ ([[§7 The Regular Value Theorem#^rem-7-9|§7]])
 - $\mathrm{GL}(n,\mathbb{R})$ is a topological group ([[§10 Topological Groups and Classical Matrix Groups#^prop-10-4|§10]])
-- $\mathrm{GL}(n,\mathbb{R})$ has exactly two components ([[§15 Example꞉ The Classical Groups#^thm-15-2|§15]])
+- $\mathrm{GL}(n,\mathbb{R})$ has exactly two components ([[§15 The Classical Groups#^thm-15-2|§15]])
 - $g \in \mathrm{O}(n)$ iff $g^{\mathsf T}g = I$, so $\det g = \pm 1$ ([[§10 Topological Groups and Classical Matrix Groups#^prop-10-5|§10]])
-- $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$: reflections ([[§15 Example꞉ The Classical Groups#^ex-15-1|§15]])
+- $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$: reflections ([[§15 The Classical Groups#^ex-15-1|§15]])
 - The complex groups $\mathrm{GL}(n,\mathbb{C})$ and $\mathrm{U}(n)$ ([[§10 Topological Groups and Classical Matrix Groups#^def-10-8|§10]])
 - $\mathrm{U}(1)$ is the circle ([[§10 Topological Groups and Classical Matrix Groups#^ex-10-3|§10]])
 - The classical groups are topological manifolds ([[§11 The Classical Groups Are Topological Manifolds#^thm-11-6|§11]])
@@ -44,13 +44,13 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 ![[§10 Topological Groups and Classical Matrix Groups#^prop-10-4]]
 
 ## $\mathrm{GL}(n,\mathbb{R})$ has exactly two components
-![[§15 Example꞉ The Classical Groups#^thm-15-2]]
+![[§15 The Classical Groups#^thm-15-2]]
 
 ## $g \in \mathrm{O}(n)$ iff $g^{\mathsf T}g = I$, so $\det g = \pm 1$
 ![[§10 Topological Groups and Classical Matrix Groups#^prop-10-5]]
 
 ## $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$: reflections
-![[§15 Example꞉ The Classical Groups#^ex-15-1]]
+![[§15 The Classical Groups#^ex-15-1]]
 
 ## The complex groups $\mathrm{GL}(n,\mathbb{C})$ and $\mathrm{U}(n)$
 ![[§10 Topological Groups and Classical Matrix Groups#^def-10-8]]

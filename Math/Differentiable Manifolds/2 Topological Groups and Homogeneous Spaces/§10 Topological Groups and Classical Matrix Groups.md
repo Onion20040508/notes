@@ -5,7 +5,7 @@ chapter: 2
 section: 10
 tags: [differentiable-manifolds, math591]
 ---
-← [[§9 Example꞉ Complex Projective Space]] · ↑ [[· 2 Topological Groups and Homogeneous Spaces]] · [[§11 The Classical Groups Are Topological Manifolds]] →
+← [[§9 Complex Projective Space]] · ↑ [[· 2 Topological Groups and Homogeneous Spaces]] · [[§11 The Classical Groups Are Topological Manifolds]] →
 
 *Thread: equations — Topological groups and the classical matrix groups. That the classical groups are manifolds, as level sets of polynomial maps ([[§7 The Regular Value Theorem|§7]]), is [[§11 The Classical Groups Are Topological Manifolds|§11]]; acting on spaces, they then feed the quotient thread.*
 
@@ -170,7 +170,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - The smooth structure on $\operatorname{Mat}(n,\mathbb{R})$, of which $\mathrm{GL}(n,\mathbb{R})$ is an open subset: [[§21 The Differential of a Map Between Vector Spaces#^prop-21-2|§21.2]]; all the classical groups together: [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5|§23.5]].
 
-The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$, and $\mathrm{U}(1) = S^1$ are collected in [[§15 Example꞉ The Classical Groups|§15]].
+The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$, and $\mathrm{U}(1) = S^1$ are collected in [[§15 The Classical Groups|§15]].
 
 > [!definition] Definition §10.5: Special Linear Group
 > $\mathrm{SL}(n,\mathbb{R}) = \det^{-1}(1) \subseteq \mathrm{GL}(n,\mathbb{R})$, the matrices of determinant $1$. It is a subgroup ($\det$ is multiplicative), hence a topological group with the subspace topology ([[§10 Topological Groups and Classical Matrix Groups#^prop-10-1|Proposition §10.1]]), and it is closed in $\operatorname{Mat}(n,\mathbb{R})$ (preimage of the closed set $\{1\}$).
@@ -231,7 +231,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 > (z_1, \ldots, z_n) \longmapsto (x_1, y_1, x_2, y_2, \ldots, x_n, y_n).
 > $$
 >
-> (Any other ordering of the real coordinates, e.g. all $x$'s first, differs by a linear homeomorphism and changes nothing topologically; the choice made in [[§9 Example꞉ Complex Projective Space|§9]] was of the latter kind.) Applying this to each entry of a complex matrix, in the row-by-row order of [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|Definition §10.2]], gives the coordinate map
+> (Any other ordering of the real coordinates, e.g. all $x$'s first, differs by a linear homeomorphism and changes nothing topologically; the choice made in [[§9 Complex Projective Space|§9]] was of the latter kind.) Applying this to each entry of a complex matrix, in the row-by-row order of [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|Definition §10.2]], gives the coordinate map
 >
 > $$
 > \operatorname{Mat}(n,\mathbb{C}) \longrightarrow \mathbb{R}^{2n^2}, \qquad g \longmapsto \big(\operatorname{Re} g_{11}, \operatorname{Im} g_{11},\ \operatorname{Re} g_{12}, \operatorname{Im} g_{12},\ \ldots,\ \operatorname{Re} g_{nn}, \operatorname{Im} g_{nn}\big),
@@ -270,7 +270,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 > \mathrm{U}(1) = \{\, \xi \in \mathbb{C} \setminus \{0\} \mid |\xi| = 1 \,\} = S^1,
 > $$
 >
-> the unit circle, which is the notation “everybody uses.” This is the group acting in the construction of $\mathbb{CP}^n$ ([[§9 Example꞉ Complex Projective Space|§9]]).
+> the unit circle, which is the notation “everybody uses.” This is the group acting in the construction of $\mathbb{CP}^n$ ([[§9 Complex Projective Space|§9]]).
 
 ^ex-10-3
 

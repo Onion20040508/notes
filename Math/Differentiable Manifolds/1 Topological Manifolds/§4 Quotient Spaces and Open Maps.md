@@ -208,7 +208,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi(U))$ appearing in it; the notion is worth having on its own (it recurs for orbit spaces in [[§12 Group Actions and Orbit Spaces|§12]]), which is why it is defined first here, with its elementary properties.
 
 > [!remark] Remark: In Words
-> The saturation of $U$ is $U$ together with everything equivalent to something in $U$ — “you push forward and then take the preimage.” [[§4 Quotient Spaces and Open Maps#^prop-4-5|Proposition §4.5]] then reads as a slogan: *$\sim$ is open iff the saturation of every open set is open.* In the [[§4 Quotient Spaces and Open Maps#^ex-4-3|non-example above]], saturating $\left(-\tfrac12,\tfrac12\right)$ adjoined the isolated point $1$ and destroyed openness. In the [[§9 Example꞉ Complex Projective Space#^prop-9-1|ℂPⁿ example below]], saturating an open set means rotating it in every possible way, which *preserves* openness — that contrast is the whole point of the definition.
+> The saturation of $U$ is $U$ together with everything equivalent to something in $U$ — “you push forward and then take the preimage.” [[§4 Quotient Spaces and Open Maps#^prop-4-5|Proposition §4.5]] then reads as a slogan: *$\sim$ is open iff the saturation of every open set is open.* In the [[§4 Quotient Spaces and Open Maps#^ex-4-3|non-example above]], saturating $\left(-\tfrac12,\tfrac12\right)$ adjoined the isolated point $1$ and destroyed openness. In the [[§9 Complex Projective Space#^prop-9-1|ℂPⁿ example below]], saturating an open set means rotating it in every possible way, which *preserves* openness — that contrast is the whole point of the definition.
 
 ^rem-4-3
 

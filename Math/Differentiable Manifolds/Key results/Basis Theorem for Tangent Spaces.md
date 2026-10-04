@@ -13,8 +13,8 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§26 Derivations and the Abstract Tangent Space#^def-26-5|Definition §26.5: Pushforward — the Differential]]
 - [[§26 Derivations and the Abstract Tangent Space#^prop-26-9|Proposition §26.9: Charts Are Diffeomorphisms]]
-- [[§27 Coordinate Derivations and the Basis Theorem#^prop-27-1|Proposition §27.1: Coordinate Derivations Are Derivations]]
 - [[§27 Coordinate Derivations and the Basis Theorem#^def-27-1|Definition §27.1: Coordinate Functions of a Chart]]
+- [[§27 Coordinate Derivations and the Basis Theorem#^prop-27-1|Proposition §27.1: Coordinate Derivations Are Derivations]]
 - [[§27 Coordinate Derivations and the Basis Theorem#^def-27-2|Definition §27.2: Coordinate Derivations]]
 - [[§27 Coordinate Derivations and the Basis Theorem#^cor-27-4|Corollary §27.4: Derivations on ℝⁿ]]
 

@@ -195,7 +195,7 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 > [!remark]- Connections
 > - The same statement for embedded submanifolds of any manifold: [[§33 Submanifolds#^lem-33-3|§33.3]].
 
-Not stated in lecture; filled in because it is used repeatedly — tacitly in the next proof, and explicitly for $S^n \to \mathbb{RP}^n$ in [[§38 Example꞉ Projective Spaces and the Hopf Fibration#^ex-38-1|Ex. §38.1]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
+Not stated in lecture; filled in because it is used repeatedly — tacitly in the next proof, and explicitly for $S^n \to \mathbb{RP}^n$ in [[§38 Projective Spaces and the Hopf Fibration#^ex-38-1|Ex. §38.1]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
 
 > [!theorem] Proposition §19.4: The Three Circle Atlases Define One Smooth Structure
 > The four-chart atlas ([[§16 Differentiable Structures#^ex-16-2|Ex. §16.2]]), the angle atlas ([[§16 Differentiable Structures#^ex-16-4|Ex. §16.4]]) and the stereographic atlas ([[§16 Differentiable Structures#^ex-16-3|Ex. §16.3]]) on $S^1$ are pairwise compatible. All three generate the smooth structure that Proposition [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]] gives $S^1 = F^{-1}(1)$, $F(x,y) = x^2 + y^2$.

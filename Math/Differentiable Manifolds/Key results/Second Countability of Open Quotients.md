@@ -15,7 +15,7 @@ tags: [differentiable-manifolds, hub]
 - [[§5 Quotient Maps#^lem-5-6|Lemma §5.6: Open Surjections Push Bases Forward]]
 
 ## Used in (Differentiable Manifolds)
-- [[§9 Example꞉ Complex Projective Space#^prop-9-1|Proposition §9.1: ℂPⁿ is Hausdorff and Second Countable]]
+- [[§9 Complex Projective Space#^prop-9-1|Proposition §9.1: ℂPⁿ is Hausdorff and Second Countable]]
 - [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-5|Corollary §14.5: When G/H Is Hausdorff and Second Countable]]
 
 ## Connections

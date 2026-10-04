@@ -25,7 +25,7 @@ tags: [linear-algebra, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§20 Linear Algebra Toolkit#^prop-20-3|Proposition §20.3: The Double Dual]]
-- [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-39-5|Proposition §39.5: S³ Is SU(2)]]
+- [[§39 SU(2) → SO(3)꞉ The Double Cover#^prop-39-5|Proposition §39.5: S³ Is SU(2)]]
 
 ## Connections
 - The key step of [[Fundamental theorem of linear maps]], [[§5 Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]], [[§6 Dimension#^ladr-2-43|Dimension of a sum]], [[§6 Dimension#^ladr-2-38|Linearly independent list of the right length is a basis]].

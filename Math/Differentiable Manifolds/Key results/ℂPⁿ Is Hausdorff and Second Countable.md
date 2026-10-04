@@ -5,10 +5,10 @@ source: "[[Differentiable Manifolds]]"
 aliases: ["MATH 591 9.1", "complex projective space is a manifold", "Lee Problem 1-9"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§9 Example꞉ Complex Projective Space#^prop-9-1]]
+![[§9 Complex Projective Space#^prop-9-1]]
 
 ## Treated in
-- [[§9 Example꞉ Complex Projective Space#^prop-9-1|Proposition §9.1: ℂPⁿ is Hausdorff and Second Countable]], in [[§9 Example꞉ Complex Projective Space]]
+- [[§9 Complex Projective Space#^prop-9-1|Proposition §9.1: ℂPⁿ is Hausdorff and Second Countable]], in [[§9 Complex Projective Space]]
 
 ## Its proof uses
 - [[§1 Point-Set Topology Review#^ex-1-1|Example §1.1: ℝⁿ with the Usual Topology is Second Countable]]
@@ -22,7 +22,7 @@ tags: [differentiable-manifolds, hub]
 - [[§6 Open Quotients#^def-6-1|Definition §6.1: Graph of a Relation]]
 - [[§6 Open Quotients#^thm-6-1|Theorem §6.1: Hausdorff Criterion]]
 - [[§6 Open Quotients#^thm-6-3|Theorem §6.3: Second Countability of Open Quotients]]
-- [[§9 Example꞉ Complex Projective Space#^def-9-1|Definition §9.1: Complex Projective Space ℂPⁿ]]
+- [[§9 Complex Projective Space#^def-9-1|Definition §9.1: Complex Projective Space ℂPⁿ]]
 - [[§12 Group Actions and Orbit Spaces#^cor-12-4|Corollary §12.4: Compact Group and Compact Hausdorff Space]]
 
 ## Its proof uses (other subjects)
@@ -40,7 +40,7 @@ tags: [differentiable-manifolds, hub]
 - [[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|Corollary §17.5: Real Projective Space]]
 
 ## Connections
-- **Used for.** With the standard charts, ℂPⁿ becomes a compact smooth manifold of dimension 2n, indeed a complex manifold ([[§17 Projective Spaces as Smooth Manifolds#^thm-17-2|§17.2]], [[§17 Projective Spaces as Smooth Manifolds#^cor-17-3|§17.3]]), and ℂP¹ is homeomorphic to S² ([[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|§17.4]]). The same argument gives ℝPⁿ ([[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|§17.5]]), and S²ⁿ⁺¹ → ℂPⁿ is the Hopf fibration ([[§38 Example꞉ Projective Spaces and the Hopf Fibration#^ex-38-3|Ex. §38.3]]).
-- **The pattern, and where it breaks.** The relation is open because S¹ acts by homeomorphisms, and the graph is closed by compactness ([[§9 Example꞉ Complex Projective Space#^rem-9-3|Where This Is Going]]). The origin must be removed: if ℂ^× scales all of ℂⁿ⁺¹, every neighbourhood of the orbit {0} is the whole quotient ([[§9 Example꞉ Complex Projective Space#^ex-9-1|Ex. §9.1]]). The action is by isometries, uniformly over the group, which is what fails for the hyperbola action of ℝ⁺ ([[§9 Example꞉ Complex Projective Space#^rem-9-1|§9, Remark]], [[§12 Group Actions and Orbit Spaces#^ex-12-6|Ex. §12.6]]).
+- **Used for.** With the standard charts, ℂPⁿ becomes a compact smooth manifold of dimension 2n, indeed a complex manifold ([[§17 Projective Spaces as Smooth Manifolds#^thm-17-2|§17.2]], [[§17 Projective Spaces as Smooth Manifolds#^cor-17-3|§17.3]]), and ℂP¹ is homeomorphic to S² ([[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|§17.4]]). The same argument gives ℝPⁿ ([[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|§17.5]]), and S²ⁿ⁺¹ → ℂPⁿ is the Hopf fibration ([[§38 Projective Spaces and the Hopf Fibration#^ex-38-3|Ex. §38.3]]).
+- **The pattern, and where it breaks.** The relation is open because S¹ acts by homeomorphisms, and the graph is closed by compactness ([[§9 Complex Projective Space#^rem-9-3|Where This Is Going]]). The origin must be removed: if ℂ^× scales all of ℂⁿ⁺¹, every neighbourhood of the orbit {0} is the whole quotient ([[§9 Complex Projective Space#^ex-9-1|Ex. §9.1]]). The action is by isometries, uniformly over the group, which is what fails for the hyperbola action of ℝ⁺ ([[§9 Complex Projective Space#^rem-9-1|§9, Remark]], [[§12 Group Actions and Orbit Spaces#^ex-12-6|Ex. §12.6]]).
 - **Same idea elsewhere.** It is the case of U(1) acting on S²ⁿ⁺¹ ([[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]]) of [[Orbit Spaces of Compact Groups Are Hausdorff]]. The real analogue is 590's projective space Pⁿ = Sⁿ/(x ∼ −x) ([[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2]], [[Projective plane]]), where S² → P² is a 2-sheeted covering map ([[§28 Fundamental Group of Some Surfaces#^thm-28-1|590 §28.1]]).
 - **Coming later in the course.** In the Lie group part of the course, ℂPⁿ is the homogeneous space U(n + 1)/(U(1) × U(n)), which so far has only been checked by counting dimensions ([[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9|Dimension Checks through Homogeneous Spaces]]).

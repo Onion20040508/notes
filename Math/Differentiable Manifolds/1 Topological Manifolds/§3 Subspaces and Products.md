@@ -134,7 +134,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: second countability of subspaces is [[§18 Countability Axioms#^thm-18-3|590 §18.3]]; Hausdorff is [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]].
-> - Used ad hoc for spheres in [[§8 Example꞉ Spheres#^ex-8-1|Ex. §8.1]] and [[§8 Example꞉ Spheres#^prop-8-1|§8.1]]; reused for level sets in [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
+> - Used ad hoc for spheres in [[§8 Spheres#^ex-8-1|Ex. §8.1]] and [[§8 Spheres#^prop-8-1|§8.1]]; reused for level sets in [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
 
 > [!theorem] Proposition §3.6: Open Subsets of Manifolds Are Manifolds
 > An open subset $S$ of a topological $n$-manifold $X$, with the subspace topology, is a topological $n$-manifold.

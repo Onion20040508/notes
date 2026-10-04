@@ -5,11 +5,11 @@ chapter: 1
 section: 9
 tags: [differentiable-manifolds, math591]
 ---
-← [[§8 Example꞉ Spheres]] · ↑ [[· 1 Topological Manifolds]] · [[§10 Topological Groups and Classical Matrix Groups]] →
+← [[§8 Spheres]] · ↑ [[· 1 Topological Manifolds]] · [[§10 Topological Groups and Classical Matrix Groups]] →
 
 *Thread: quotients — $\mathbb{CP}^n$, the first manifold built as a quotient: the open quotient $S^{2n+1}/S^1$ is Hausdorff, second countable ([[§6 Open Quotients|§6]]) and compact, and it is the space of complex lines. Its charts come in [[§17 Projective Spaces as Smooth Manifolds|§17]].*
 
-Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in *this section*; the circle group $\mathrm{U}(1)$ acting there in [[§10 Topological Groups and Classical Matrix Groups#^ex-10-3|U(1) is the circle]]; an orbit space in [[§12 Group Actions and Orbit Spaces#^ex-12-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§17 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§28 The Differential in Coordinates#^rem-28-5|Remark: The Strategy]]; and the base of the Hopf fibration in [[§38 Example꞉ Projective Spaces and the Hopf Fibration|Example: Projective Spaces and the Hopf Fibration]].
+Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in *this section*; the circle group $\mathrm{U}(1)$ acting there in [[§10 Topological Groups and Classical Matrix Groups#^ex-10-3|U(1) is the circle]]; an orbit space in [[§12 Group Actions and Orbit Spaces#^ex-12-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§17 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§28 The Differential in Coordinates#^rem-28-5|Remark: The Strategy]]; and the base of the Hopf fibration in [[§38 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
 
 The following was set up in the last four minutes of lecture; the proof of the claim was given verbally, chalk down. **Uribe: “I'll write this again next time”** — so expect a [[§12 Group Actions and Orbit Spaces#^cor-12-4|careful reprise]]; the details below reconstruct the verbal argument.
 
@@ -39,7 +39,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 ^def-9-1
 
 > [!remark]- Connections
-> - As an orbit space of $\mathrm{U}(1) = S^1$: [[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]] (cf. group actions and orbits, [[§23 Actions#^def-23-1|493 Def. §23.1]], [[§25 Orbits#^def-25-1|493 Def. §25.1]]); charts and smooth structure in [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§17 Projective Spaces as Smooth Manifolds#^thm-17-2|§17.2]]; the projection is a submersion, [[§38 Example꞉ Projective Spaces and the Hopf Fibration#^ex-38-2|Ex. §38.2]].
+> - As an orbit space of $\mathrm{U}(1) = S^1$: [[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]] (cf. group actions and orbits, [[§23 Actions#^def-23-1|493 Def. §23.1]], [[§25 Orbits#^def-25-1|493 Def. §25.1]]); charts and smooth structure in [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§17 Projective Spaces as Smooth Manifolds#^thm-17-2|§17.2]]; the projection is a submersion, [[§38 Projective Spaces and the Hopf Fibration#^ex-38-2|Ex. §38.2]].
 > - Real analogue in MATH 590: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2 (Projective n-Space)]], [[Projective plane]].
 
 > [!theorem] Proposition §9.1: $\mathbb{CP}^n$ is Hausdorff and Second Countable
@@ -80,7 +80,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 
 ^pf-9-1
 
-*Uses:* [[§9 Example꞉ Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§1 Point-Set Topology Review#^ex-1-1|Ex. §1.1]], [[Heine–Borel Theorem]], [[§15 Compact Spaces#^thm-15-8|590 §15.8]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§11 Metric Topology#^thm-11-4|590 §11.4]]
+*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§1 Point-Set Topology Review#^ex-1-1|Ex. §1.1]], [[Heine–Borel Theorem]], [[§15 Compact Spaces#^thm-15-8|590 §15.8]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§11 Metric Topology#^thm-11-4|590 §11.4]]
 
 > [!remark]- Connections
 > - The general form for compact groups acting on compact Hausdorff spaces: [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]], of which this is a special case ([[§12 Group Actions and Orbit Spaces#^rem-12-9|§12, Remark]]).
@@ -104,7 +104,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 
 ^pf-9-1-2
 
-*Uses:* [[§9 Example꞉ Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§9 Example꞉ Complex Projective Space#^pf-9-1|§9.1 (openness of the relation)]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§16 Limit Point Compactness#^thm-16-2|590 §16.2]]
+*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§9 Complex Projective Space#^pf-9-1|§9.1 (openness of the relation)]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§16 Limit Point Compactness#^thm-16-2|590 §16.2]]
 
 > [!remark] Remark
 > The one place the group enters the direct proof is $|\lambda \vec u - \lambda \vec z_1| = |\vec u - \vec z_1|$: every $\lambda \in S^1$ is an *isometry*, so the thickening by $r$ is uniform over the whole group. That uniformity — a compact group acting by isometries — is the concrete mechanism behind [[§12 Group Actions and Orbit Spaces#^cor-12-4|Corollary §12.4]], and it is exactly what fails for $\mathbb{R}^+$ in [[§12 Group Actions and Orbit Spaces#^ex-12-6|Example §12.6]], where $t \cdot (x,y) = (tx, y/t)$ distorts distances without bound.
@@ -123,7 +123,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 
 ^pf-9-2
 
-*Uses:* [[§9 Example꞉ Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem]], [[Continuous Image of a Compact Space is Compact]]
+*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem]], [[Continuous Image of a Compact Space is Compact]]
 
 > [!theorem] Proposition §9.3: $\mathbb{CP}^n$ as the Space of Complex Lines
 > Let the multiplicative group $\mathbb{C}^\times = \mathbb{C} \setminus \{0\}$ act on $\mathbb{C}^{n+1} \setminus \{0\}$ by scalar multiplication, $\lambda \cdot \vec z = \lambda \vec z$. Then:
@@ -164,7 +164,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 
 ^pf-9-3
 
-*Uses:* [[§9 Example꞉ Complex Projective Space#^def-9-1|Def. §9.1]], [[§5 Quotient Maps#^ex-5-1|Ex. §5.1]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§12 Group Actions and Orbit Spaces#^def-12-2|Def. §12.2]], [[§12 Group Actions and Orbit Spaces#^def-12-5|Def. §12.5]]
+*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§5 Quotient Maps#^ex-5-1|Ex. §5.1]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§12 Group Actions and Orbit Spaces#^def-12-2|Def. §12.2]], [[§12 Group Actions and Orbit Spaces#^def-12-5|Def. §12.5]]
 
 > [!remark]- Connections
 > - The $\mathbb{C}^\times$-description gives homogeneous coordinates: [[§17 Projective Spaces as Smooth Manifolds#^def-17-1|Def. §17.1]]; the real analogue is [[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|§17.6]].
